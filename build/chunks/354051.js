@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 }), n(47120), n(266796);
 var r = n(200651);
 n(192379);
@@ -11,41 +11,41 @@ var i = n(442837),
   l = n(434404),
   o = n(845377),
   c = n(981631),
-  d = n(388032),
-  u = n(601652);
-let m = e => {
+  A = n(388032),
+  d = n(601652);
+let u = e => {
   let {
     guild: t
-  } = e, n = (0, i.e7)([a.Z], () => a.Z.can(c.Plq.ADMINISTRATOR, t), [t]), m = t.hasFeature(c.oNc.DISCOVERABLE), g = () => {
+  } = e, n = (0, i.e7)([a.Z], () => a.Z.can(c.Plq.ADMINISTRATOR, t), [t]), u = t.hasFeature(c.oNc.DISCOVERABLE), g = () => {
     let e = new Set(t.features);
     t.hasFeature(c.oNc.DISCOVERABLE) && e.delete(c.oNc.DISCOVERABLE), l.Z.updateGuild({
       features: e
     })
   };
   return (0, r.jsxs)(s.hjN, {
-    title: d.NW.string(d.t.oGaVGx),
+    title: A.NW.string(A.t.oGaVGx),
     tag: "h2",
     children: [(0, r.jsx)("div", {
-      className: u.background
+      className: d.background
     }), (0, r.jsxs)("div", {
-      className: u.discoverySettings,
+      className: d.discoverySettings,
       children: [(0, r.jsx)("div", {
-        className: u.image
+        className: d.image
       }), (0, r.jsx)(s.X6q, {
-        className: u.header,
+        className: d.header,
         variant: "heading-xl/semibold",
-        children: d.NW.string(d.t.rSBQU1)
+        children: A.NW.string(A.t.rSBQU1)
       }), (0, r.jsx)(s.Text, {
-        className: u.description,
+        className: d.description,
         variant: "text-md/normal",
-        children: d.NW.format(d.t["6+lwSU"], {})
+        children: A.NW.format(A.t["6+lwSU"], {})
       }), (0, r.jsx)(o.Z, {
-        className: u.checklist,
+        className: d.checklist,
         guild: t,
         guildId: t.id,
         failedItemsOnly: !0
-      }), m && (0, r.jsx)(s.ua7, {
-        text: n ? null : d.NW.string(d.t["5VbUBw"]),
+      }), u && (0, r.jsx)(s.ua7, {
+        text: n ? null : A.NW.string(A.t["5VbUBw"]),
         children: e => {
           var t, i;
           return (0, r.jsx)(s.zxk, (t = function(e) {
@@ -69,10 +69,10 @@ let m = e => {
             size: s.zxk.Sizes.SMALL,
             onClick: g,
             color: s.zxk.Colors.PRIMARY,
-            className: u.disableDiscoveryButton,
+            className: d.disableDiscoveryButton,
             disabled: !n
           }, e), i = i = {
-            children: d.NW.string(d.t.RPfFQk)
+            children: A.NW.string(A.t.RPfFQk)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

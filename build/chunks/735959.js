@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(481060),
   u = n(665149),
   m = n(706454),
-  x = n(428530),
-  h = n(257785),
+  h = n(428530),
+  x = n(257785),
   p = n(388032);
 
 function b() {
@@ -29,20 +29,20 @@ function b() {
       }), (0, r.jsx)(u.ZP.Title, {
         children: "Locale"
       })]
-    }), (0, r.jsxs)(h.E, {
-      children: [(0, r.jsx)(h.Z9, {
+    }), (0, r.jsxs)(x.E, {
+      children: [(0, r.jsx)(x.Z9, {
         name: "Active System",
         children: "@discord/intl"
-      }), (0, r.jsx)(h.Z9, {
+      }), (0, r.jsx)(x.Z9, {
         name: "App",
         children: e
-      }), (0, r.jsx)(h.Z9, {
+      }), (0, r.jsx)(x.Z9, {
         name: "@discord/intl",
         children: p.NW.currentLocale
-      }), (0, r.jsx)(h.Z9, {
+      }), (0, r.jsx)(x.Z9, {
         name: "common i18n",
         children: s.Z.getLocale()
-      }), (0, r.jsx)(h.Z9, {
+      }), (0, r.jsx)(x.Z9, {
         name: "Moment",
         children: o().locale()
       })]
@@ -53,8 +53,8 @@ function b() {
       }), (0, r.jsx)(u.ZP.Title, {
         children: "New System Messages"
       })]
-    }), (0, r.jsx)(h.E, {
-      children: (0, r.jsx)(h.Z9, {
+    }), (0, r.jsx)(x.E, {
+      children: (0, r.jsx)(x.Z9, {
         name: "Unique Rendered Main Messages",
         children: Object.keys(p.t).length
       })
@@ -67,15 +67,15 @@ function b() {
         margin: 16
       },
       placeholder: "Find a message"
-    }), (0, r.jsxs)(h.E, {
-      children: [(0, r.jsx)(h.Z9, {
+    }), (0, r.jsxs)(x.E, {
+      children: [(0, r.jsx)(x.Z9, {
         name: "Hashed key",
         children: i
-      }), (0, r.jsx)(h.Z9, {
+      }), (0, r.jsx)(x.Z9, {
         name: "Exists?",
         children: null != b ? "yes" : "no"
       })]
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(h.Z, {
       data: null == b ? void 0 : b(e)
     })]
   })

@@ -1,82 +1,82 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => E
 }), n(47120);
 var r, i, s, a = n(442837),
   l = n(570140),
   o = n(45966),
   c = n(734893),
-  d = n(999382),
-  u = n(392885),
-  m = n(740903),
+  A = n(999382),
+  d = n(392885),
+  u = n(740903),
   g = n(889369),
-  p = n(969632),
-  h = n(208665),
-  f = n(84658),
-  b = n(142961),
-  x = n(981631);
-let j = new Set,
-  N = f.PG.LANDING,
-  v = null;
+  f = n(969632),
+  m = n(208665),
+  p = n(84658),
+  h = n(142961),
+  C = n(981631);
+let b = new Set,
+  v = p.PG.LANDING,
+  x = null;
 
-function _(e) {
+function N(e) {
   let {
     subsection: t
   } = e;
-  if (d.Z.getGuildId() === v) return !1;
-  N = t === x.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, v = d.Z.getGuildId()
+  if (A.Z.getGuildId() === x) return !1;
+  v = t === C.KsC.SERVER_GUIDE ? p.PG.HOME_SETTINGS : p.PG.LANDING, x = A.Z.getGuildId()
 }
-class y extends(r = a.ZP.Store) {
+class j extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(o.Z, g.Z, h.Z, p.Z, u.Z), this.syncWith([o.Z, g.Z, h.Z, p.Z, u.Z], () => !0)
+    this.waitFor(o.Z, g.Z, m.Z, f.Z, d.Z), this.syncWith([o.Z, g.Z, m.Z, f.Z, d.Z], () => !0)
   }
   isEducationUpsellDismissed(e) {
-    return j.has(e)
+    return b.has(e)
   }
   getCurrentPage() {
-    return N
+    return v
   }
   hasChanges() {
-    if (null == v) return !1;
-    let e = o.Z.isAdvancedMode(v);
-    return N === f.PG.DEFAULT_CHANNELS ? e ? g.Z.hasChanges() || h.Z.hasChanges() : g.Z.hasChanges() : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.hasChanges() : N === f.PG.HOME_SETTINGS && p.Z.hasChanges()
+    if (null == x) return !1;
+    let e = o.Z.isAdvancedMode(x);
+    return v === p.PG.DEFAULT_CHANNELS ? e ? g.Z.hasChanges() || m.Z.hasChanges() : g.Z.hasChanges() : v === p.PG.CUSTOMIZATION_QUESTIONS ? m.Z.hasChanges() : v === p.PG.HOME_SETTINGS && f.Z.hasChanges()
   }
   hasConfiguredAnythingForCurrentStep() {
-    return null != v && (N === f.PG.SAFETY_CHECK || (N === f.PG.DEFAULT_CHANNELS ? g.Z.editedDefaultChannelIds.size > 0 : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.editedOnboardingPrompts.length > 0 : N === f.PG.HOME_SETTINGS && !(0, c.av)(p.Z.getSettings())))
+    return null != x && (v === p.PG.SAFETY_CHECK || (v === p.PG.DEFAULT_CHANNELS ? g.Z.editedDefaultChannelIds.size > 0 : v === p.PG.CUSTOMIZATION_QUESTIONS ? m.Z.editedOnboardingPrompts.length > 0 : v === p.PG.HOME_SETTINGS && !(0, c.av)(f.Z.getSettings())))
   }
   hasErrors() {
-    return N === f.PG.CUSTOMIZATION_QUESTIONS && null != h.Z.errors.find(e => null != e)
+    return v === p.PG.CUSTOMIZATION_QUESTIONS && null != m.Z.errors.find(e => null != e)
   }
   showNotice() {
-    if (null == v) return !1;
-    if ((0, b.C)(v)) return this.hasChanges();
-    let e = u.Z.getCurrentPage();
-    return (N !== f.PG.SAFETY_CHECK || e === m.u.OVERVIEW) && null != N && N !== f.PG.LANDING
+    if (null == x) return !1;
+    if ((0, h.C)(x)) return this.hasChanges();
+    let e = d.Z.getCurrentPage();
+    return (v !== p.PG.SAFETY_CHECK || e === u.u.OVERVIEW) && null != v && v !== p.PG.LANDING
   }
   canCloseEarly() {
-    return null == v || !this.hasErrors() && (!(0, b.C)(v) || !this.hasChanges())
+    return null == x || !this.hasErrors() && (!(0, h.C)(x) || !this.hasChanges())
   }
 }
-s = "GuildSettingsOnboardingStore", (i = "displayName") in y ? Object.defineProperty(y, i, {
+s = "GuildSettingsOnboardingStore", (i = "displayName") in j ? Object.defineProperty(j, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : y[i] = s;
-let O = new y(l.Z, {
-  GUILD_SETTINGS_INIT: _,
-  GUILD_SETTINGS_SET_SECTION: _,
+}) : j[i] = s;
+let E = new j(l.Z, {
+  GUILD_SETTINGS_INIT: N,
+  GUILD_SETTINGS_SET_SECTION: N,
   GUILD_SETTINGS_ONBOARDING_STEP: function(e) {
     let {
       step: t
     } = e;
-    N = t
+    v = t
   },
   GUILD_SETTINGS_ONBOARDING_EDUCATION_UPSELL_DISMISSED: function(e) {
     let {
       upsellType: t
     } = e;
-    j.add(t)
+    b.add(t)
   }
 })

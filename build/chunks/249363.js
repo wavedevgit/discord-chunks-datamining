@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  A: () => m
+  A: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,42 +11,42 @@ var i = n(481060),
   l = n(594980),
   o = n(515025),
   c = n(981631),
-  d = n(388032),
-  u = n(50388);
+  A = n(388032),
+  d = n(50388);
 
-function m(e) {
+function u(e) {
   let {
     guild: t,
     canManageGuild: n
   } = e;
   return (0, r.jsxs)(i.hjN, {
-    className: u.container,
+    className: d.container,
     children: [(0, r.jsxs)("div", {
-      className: u.column,
+      className: d.column,
       children: [(0, r.jsxs)(i.vwX, {
-        className: u.title,
-        children: [d.NW.string(d.t.tzGY0t), (0, r.jsx)(a.hH, {
+        className: d.title,
+        children: [A.NW.string(A.t.tzGY0t), (0, r.jsx)(a.hH, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: u.text,
-        children: d.NW.string(d.t.F7bbrq)
+        className: d.text,
+        children: A.NW.string(A.t.F7bbrq)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: u.text,
-        children: d.NW.format(d.t.ZYA9PT, {
+        className: d.text,
+        children: A.NW.format(A.t.ZYA9PT, {
           articleURL: s.Z.getArticleURL(c.BhN.GUILD_INVITE_SPLASH)
         })
       }), (0, r.jsx)(l.c, {
         guild: t,
         canManageGuild: n,
-        buttonClassName: u.button
+        buttonClassName: d.button
       })]
     }), (0, r.jsx)("div", {
-      className: u.column,
+      className: d.column,
       children: (0, r.jsx)(o.h, {
         guild: t,
         canManageGuild: n

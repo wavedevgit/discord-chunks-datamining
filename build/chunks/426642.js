@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u,
-  d: () => d
+  Z: () => d,
+  d: () => A
 }), n(266796);
 var r, i = n(200651);
 n(192379);
@@ -11,17 +11,17 @@ var s = n(692547),
   l = n(752657),
   o = n(388032),
   c = n(703272),
-  d = ((r = {})[r.TOO_BIG = 0] = "TOO_BIG", r[r.RATE_LIMIT = 1] = "RATE_LIMIT", r[r.TOO_MANY_EMOJI = 2] = "TOO_MANY_EMOJI", r[r.TOO_MANY_ANIMATED_EMOJI = 3] = "TOO_MANY_ANIMATED_EMOJI", r[r.WRONG_TYPE = 4] = "WRONG_TYPE", r[r.RESIZE_GIF = 5] = "RESIZE_GIF", r);
-let u = e => {
+  A = ((r = {})[r.TOO_BIG = 0] = "TOO_BIG", r[r.RATE_LIMIT = 1] = "RATE_LIMIT", r[r.TOO_MANY_EMOJI = 2] = "TOO_MANY_EMOJI", r[r.TOO_MANY_ANIMATED_EMOJI = 3] = "TOO_MANY_ANIMATED_EMOJI", r[r.WRONG_TYPE = 4] = "WRONG_TYPE", r[r.RESIZE_GIF = 5] = "RESIZE_GIF", r);
+let d = e => {
   let {
     error: t
   } = e, {
     type: n,
     filename: r
   } = t, {
-    icon: d,
-    description: u,
-    color: m,
+    icon: A,
+    description: d,
+    color: u,
     tooltip: g
   } = {
     0: {
@@ -63,7 +63,7 @@ let u = e => {
   } [n];
   return (0, i.jsxs)("div", {
     className: c.emojiErrorItem,
-    children: [(0, i.jsx)(d, {
+    children: [(0, i.jsx)(A, {
       className: c.fileIcon,
       color: s.Z.unsafe_rawColors.PRIMARY_300.css
     }), (0, i.jsxs)(a.hjN, {
@@ -73,7 +73,7 @@ let u = e => {
         children: r
       }), (0, i.jsx)(a.R94, {
         type: a.geA.DESCRIPTION,
-        children: u
+        children: d
       })]
     }), (0, i.jsx)(a.DY3, {
       position: "right",
@@ -82,7 +82,7 @@ let u = e => {
         size: "custom",
         width: 20,
         height: 20,
-        color: m
+        color: u
       })
     })]
   })

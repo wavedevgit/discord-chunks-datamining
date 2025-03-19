@@ -17,10 +17,10 @@ let a = new Map,
         return null !== (o = r.get(n)) && void 0 !== o ? o : {}
       }
       let c = await (0, s.MA)(n),
-        d = new Map(r);
-      return d.set(n, c), (0, i.j)(() => {
+        A = new Map(r);
+      return A.set(n, c), (0, i.j)(() => {
         e({
-          topGames: d
+          topGames: A
         })
       }), a.set(n, Date.now()), c
     }

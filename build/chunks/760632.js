@@ -10,16 +10,16 @@ var r = n(200651),
   l = n(388032);
 let o = "".concat(60),
   c = "".concat(300),
-  d = "".concat(900),
-  u = "".concat(1800),
-  m = "".concat(3600);
+  A = "".concat(900),
+  d = "".concat(1800),
+  u = "".concat(3600);
 
 function g(e) {
   let {
     canManageGuild: t,
     afkTimeout: n,
     afkChannelId: g
-  } = e, p = i.useMemo(() => [{
+  } = e, f = i.useMemo(() => [{
     value: o,
     label: l.NW.formatToPlainString(l.t.iXLF9f, {
       minutes: 1
@@ -30,29 +30,29 @@ function g(e) {
       minutes: 5
     })
   }, {
-    value: d,
+    value: A,
     label: l.NW.formatToPlainString(l.t.iXLF9f, {
       minutes: 15
     })
   }, {
-    value: u,
+    value: d,
     label: l.NW.formatToPlainString(l.t.iXLF9f, {
       minutes: 30
     })
   }, {
-    value: m,
+    value: u,
     label: l.NW.formatToPlainString(l.t.xCjYxM, {
       hours: 1
     })
-  }], []), h = i.useCallback(e => {
+  }], []), m = i.useCallback(e => {
     a.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
   }, []);
   return (0, r.jsx)(s.q4e, {
     value: null == n ? null : "".concat(n),
-    options: p,
+    options: f,
     isDisabled: null == g || !t,
-    onChange: h
+    onChange: m
   })
 }

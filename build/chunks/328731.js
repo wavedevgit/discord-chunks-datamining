@@ -56,14 +56,14 @@ function m(e) {
     displayParticipants: m,
     participant1: j,
     participant2: g,
-    numOtherParticipants: h,
-    orderedParticipants: v
+    numOtherParticipants: v,
+    orderedParticipants: h
   } = (0, s.Z)(t), P = [j, g];
   return (0, n.jsxs)("div", {
     className: i()(f.container, l),
     children: [m.length > 0 ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(p.Z, {
-        participants: v,
+        participants: h,
         channel: r,
         children: e => (0, n.jsx)(o.P3F, y(O({
           className: f.clickable
@@ -89,7 +89,7 @@ function m(e) {
       children: b.NW.format(b.t.rH95Gh, {
         user0: c.ZP.getName(r.guild_id, r.id, P[0]),
         user1: c.ZP.getName(r.guild_id, r.id, P[1]),
-        countOthers: h,
+        countOthers: v,
         name0Hook: (e, t) => (0, n.jsx)(d.Z, {
           text: e,
           user: P[0],
@@ -101,7 +101,7 @@ function m(e) {
           channel: r
         }, t),
         countOthersHook: (e, t) => (0, n.jsx)(p.Z, {
-          participants: v,
+          participants: h,
           channel: r,
           children: t => (0, n.jsx)(u.Z, y(O({}, t), {
             tag: "span",

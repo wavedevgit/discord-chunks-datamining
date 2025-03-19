@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => G
+  Z: () => M
 }), n(47120), n(266796), n(566702), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -10,34 +10,34 @@ var r = n(200651),
   l = n(348327),
   o = n.n(l),
   c = n(999153),
-  d = n(584922),
-  u = n(442837),
-  m = n(481060),
+  A = n(584922),
+  d = n(442837),
+  u = n(481060),
   g = n(239091),
-  p = n(596454),
-  h = n(493773),
-  f = n(607070),
-  b = n(933557),
-  x = n(471445),
-  j = n(339085),
-  N = n(565138),
-  v = n(372769),
-  _ = n(690221),
-  y = n(524329),
-  O = n(575258),
-  C = n(514698),
-  I = n(592125),
-  E = n(4912),
-  S = n(626135),
-  T = n(700785),
-  P = n(434404),
-  w = n(92160),
-  R = n(981631),
-  Z = n(231338),
-  D = n(388032),
-  k = n(216793);
+  f = n(596454),
+  m = n(493773),
+  p = n(607070),
+  h = n(933557),
+  C = n(471445),
+  b = n(339085),
+  v = n(565138),
+  x = n(372769),
+  N = n(690221),
+  j = n(524329),
+  E = n(575258),
+  I = n(514698),
+  O = n(592125),
+  y = n(4912),
+  w = n(626135),
+  P = n(700785),
+  B = n(434404),
+  D = n(92160),
+  T = n(981631),
+  S = n(231338),
+  L = n(388032),
+  R = n(216793);
 
-function A(e) {
+function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function A(e) {
   return e
 }
 
-function W(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,313 +68,313 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = "WELCOME_CHANNEL",
-  M = e => {
+let W = "WELCOME_CHANNEL",
+  k = e => {
     var t;
     let s, {
         guildId: l,
         welcomeChannel: o,
-        onEdit: h,
-        onChannelReorder: f,
-        isDropHovered: N,
-        index: v
+        onEdit: m,
+        onChannelReorder: p,
+        isDropHovered: v,
+        index: x
       } = e,
-      [_, y] = i.useState(!1),
-      O = i.useRef(null),
-      S = (0, u.e7)([I.Z], () => I.Z.getChannel(o.channel_id)),
-      P = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
-      w = null != S && T.Uu(R.Plq.VIEW_CHANNEL, S),
-      M = null !== (t = (0, x.KS)(S)) && void 0 !== t ? t : m.VL1,
-      G = (0, b.ZP)(S, !1),
-      [, U] = (0, c.c)({
-        type: L,
+      [N, j] = i.useState(!1),
+      E = i.useRef(null),
+      w = (0, d.e7)([O.Z], () => O.Z.getChannel(o.channel_id)),
+      B = (0, d.e7)([b.ZP], () => null != o.emoji_id ? b.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
+      D = null != w && P.Uu(T.Plq.VIEW_CHANNEL, w),
+      k = null !== (t = (0, C.KS)(w)) && void 0 !== t ? t : u.VL1,
+      M = (0, h.ZP)(w, !1),
+      [, _] = (0, c.c)({
+        type: W,
         item: {
           channel: o,
-          index: v
+          index: x
         },
         end: (e, t) => {
-          null == e || t.didDrop() || f(e.channel, null, !0)
+          null == e || t.didDrop() || p(e.channel, null, !0)
         }
       }),
-      [, B] = (0, d.L)({
-        accept: L,
+      [, G] = (0, A.L)({
+        accept: W,
         hover: e => {
-          f(e.channel, v, !1)
+          p(e.channel, x, !1)
         },
         drop: e => {
-          f(e.channel, v, !0)
+          p(e.channel, x, !0)
         }
       });
-    return i.useLayoutEffect(() => (U(B(O)), () => {
-      U(null), B(null)
-    }), [U, B]), s = w ? null != P || null != o.emoji_name ? (0, r.jsx)(p.Z, {
-      emojiId: null == P ? void 0 : P.id,
-      emojiName: null != P ? P.name : o.emoji_name,
-      animated: !!(null == P ? void 0 : P.animated)
-    }) : (0, r.jsx)(M, {
+    return i.useLayoutEffect(() => (_(G(E)), () => {
+      _(null), G(null)
+    }), [_, G]), s = D ? null != B || null != o.emoji_name ? (0, r.jsx)(f.Z, {
+      emojiId: null == B ? void 0 : B.id,
+      emojiName: null != B ? B.name : o.emoji_name,
+      animated: !!(null == B ? void 0 : B.animated)
+    }) : (0, r.jsx)(k, {
       size: "md",
       color: "currentColor",
-      className: k.channelIcon
-    }) : (0, r.jsx)(E.Z, {
+      className: R.channelIcon
+    }) : (0, r.jsx)(y.Z, {
       width: 24,
       height: 24,
-      className: k.warningIcon
+      className: R.warningIcon
     }), (0, r.jsxs)("div", {
-      className: a()(k.welcomeChannel, {
-        [k.dragging]: N
+      className: a()(R.welcomeChannel, {
+        [R.dragging]: v
       }),
-      ref: O,
+      ref: E,
       "data-dnd-name": o.description,
       onContextMenu: e => {
         (0, g.jW)(e, async () => {
           let {
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
-          return t => (0, r.jsx)(e, W(A({}, t), {
+          return t => (0, r.jsx)(e, Z(Q({}, t), {
             guildId: l,
             welcomeChannel: o,
-            onChannelReorder: f,
-            setShowConfirmModal: y,
-            onEdit: h,
-            index: v
+            onChannelReorder: p,
+            setShowConfirmModal: j,
+            onEdit: m,
+            index: x
           }))
         })
       },
       children: [s, (0, r.jsxs)("div", {
-        className: k.channelDescriptionWrapper,
-        children: [(0, r.jsx)(m.Text, {
+        className: R.channelDescriptionWrapper,
+        children: [(0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: o.description
-        }), (0, r.jsxs)(m.Text, {
-          className: w ? void 0 : k.channelWarning,
+        }), (0, r.jsxs)(u.Text, {
+          className: D ? void 0 : R.channelWarning,
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: [(0, r.jsx)(M, {
-            className: k.channelTitleIcon,
+          children: [(0, r.jsx)(k, {
+            className: R.channelTitleIcon,
             size: "xxs",
             color: "currentColor"
           }), (0, r.jsx)("span", {
-            children: w ? G : D.NW.string(D.t.zFuCsL)
+            children: D ? M : L.NW.string(L.t.zFuCsL)
           })]
         })]
-      }), (0, r.jsx)(m.zxk, {
-        color: m.zxk.Colors.PRIMARY,
-        size: m.zxk.Sizes.SMALL,
+      }), (0, r.jsx)(u.zxk, {
+        color: u.zxk.Colors.PRIMARY,
+        size: u.zxk.Sizes.SMALL,
         disabled: !0,
-        onClick: () => (0, m.ZDy)(async () => {
+        onClick: () => (0, u.ZDy)(async () => {
           let {
             default: e
           } = await n.e("39143").then(n.bind(n, 737868));
-          return t => (0, r.jsx)(e, W(A({}, t), {
+          return t => (0, r.jsx)(e, Z(Q({}, t), {
             welcomeChannel: o,
             guildId: l,
-            onSave: h
+            onSave: m
           }))
         }, {
-          onCloseRequest: () => Z.Vq
+          onCloseRequest: () => S.Vq
         }),
-        children: D.NW.string(D.t.bt75u7)
-      }), _ && (0, r.jsx)(C.Z, {
-        onConfirm: () => h(),
-        onCancel: () => y(!1),
+        children: L.NW.string(L.t.bt75u7)
+      }), N && (0, r.jsx)(I.Z, {
+        onConfirm: () => m(),
+        onCancel: () => j(!1),
         channelId: o.channel_id
       })]
     })
   },
-  G = e => {
+  M = e => {
     let {
       guild: t,
       showCreateModal: s
     } = e, {
       welcomeSettings: a,
       originalWelcomeSettings: l
-    } = (0, u.e7)([O.Z], () => O.Z.getSettingsProps()), c = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [d, g] = i.useState(null), [p, b] = i.useState(!1), [x, j] = i.useState(!1), {
-      description: C,
-      channels: I,
-      enabled: T
-    } = a, L = () => {
-      null != t && C !== l.description && ((0, y.Es)(t.id, {
-        description: null == C ? void 0 : C.trim()
-      }), b(!0))
-    }, G = e => {
-      null != t && (o()(e, l.channels) || ((0, y.Es)(t.id, {
+    } = (0, d.e7)([E.Z], () => E.Z.getSettingsProps()), c = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), [A, g] = i.useState(null), [f, h] = i.useState(!1), [C, b] = i.useState(!1), {
+      description: I,
+      channels: O,
+      enabled: P
+    } = a, W = () => {
+      null != t && I !== l.description && ((0, j.Es)(t.id, {
+        description: null == I ? void 0 : I.trim()
+      }), h(!0))
+    }, M = e => {
+      null != t && (o()(e, l.channels) || ((0, j.Es)(t.id, {
         channels: e
-      }), b(!0)))
-    }, U = e => {
-      null != t && e !== l.enabled && ((0, y.Es)(t.id, {
+      }), h(!0)))
+    }, _ = e => {
+      null != t && e !== l.enabled && ((0, j.Es)(t.id, {
         enabled: e
-      }), j(!c), b(!0))
-    }, B = e => {
+      }), b(!c), h(!0))
+    }, G = e => {
       if (null == e) return;
-      let t = [...null != I ? I : [], e];
-      (0, y.VP)({
+      let t = [...null != O ? O : [], e];
+      (0, j.VP)({
         channels: t
-      }), G(t)
+      }), M(t)
     }, F = e => t => {
-      let n = [...null != I ? I : []];
-      null == t ? n.splice(e, 1) : n[e] = t, (0, y.VP)({
+      let n = [...null != O ? O : []];
+      null == t ? n.splice(e, 1) : n[e] = t, (0, j.VP)({
         channels: n
-      }), G(n), 0 === n.length && T && ((0, y.VP)({
+      }), M(n), 0 === n.length && P && ((0, j.VP)({
         enabled: !1
-      }), U(!1))
-    }, z = (e, t, n) => {
-      if (null == I) return;
-      let r = I.indexOf(e),
-        i = [...I];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, y.VP)({
+      }), _(!1))
+    }, U = (e, t, n) => {
+      if (null == O) return;
+      let r = O.indexOf(e),
+        i = [...O];
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, j.VP)({
         channels: i
-      })), n ? (G(i), g(null)) : g(t)
+      })), n ? (M(i), g(null)) : g(t)
     }, H = i.useRef(!1);
-    (0, h.ZP)(() => (null != t && s && (0, m.ZDy)(async () => {
+    (0, m.ZP)(() => (null != t && s && (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("39143").then(n.bind(n, 737868));
-      return n => (0, r.jsx)(e, W(A({}, n), {
+      return n => (0, r.jsx)(e, Z(Q({}, n), {
         guildId: t.id,
-        onSave: B
+        onSave: G
       }))
     }, {
-      onCloseRequest: () => Z.Vq
+      onCloseRequest: () => S.Vq
     }), () => {
       H.current = !0
     })), i.useEffect(() => () => {
-      if (H.current && p) {
+      if (H.current && f) {
         let e = [],
           n = [],
           r = !1;
-        null == I || I.forEach(t => {
+        null == O || O.forEach(t => {
           e.push(t.description), n.push(t.channel_id), null != t.emoji_id && (r = !0)
-        }), S.default.track(R.rMx.GUILD_WELCOME_SCREEN_SETTINGS_UPDATED, {
+        }), w.default.track(T.rMx.GUILD_WELCOME_SCREEN_SETTINGS_UPDATED, {
           guild_id: null == t ? void 0 : t.id,
           options: e,
           options_channel_ids: n,
-          guild_description: C,
+          guild_description: I,
           has_custom_emojis: r,
-          is_enabled: T
+          is_enabled: P
         })
       }
-    }, [p, I, C, T, t, H]), i.useEffect(() => () => (0, y.sm)(), []);
-    let V = i.useCallback(() => {
-      null != t && P.Z.open(t.id, R.pNK.ONBOARDING)
+    }, [f, O, I, P, t, H]), i.useEffect(() => () => (0, j.sm)(), []);
+    let z = i.useCallback(() => {
+      null != t && B.Z.open(t.id, T.pNK.ONBOARDING)
     }, [t]);
-    return null == t ? null : (0, r.jsxs)(m.hjN, {
-      title: D.NW.string(D.t["2rkmDg"]),
-      tag: m.RB0.H1,
+    return null == t ? null : (0, r.jsxs)(u.hjN, {
+      title: L.NW.string(L.t["2rkmDg"]),
+      tag: u.RB0.H1,
       children: [(0, r.jsx)("div", {
-        className: k.notice,
-        children: (0, r.jsxs)(m.Text, {
+        className: R.notice,
+        children: (0, r.jsxs)(u.Text, {
           variant: "text-md/normal",
-          children: [(0, r.jsx)(E.Z, {
-            className: k.noticeIcon
-          }), D.NW.format(D.t.oj2vi4, {
-            onboardingLink: e => (0, r.jsx)(_.Z, {
-              onClick: V,
+          children: [(0, r.jsx)(y.Z, {
+            className: R.noticeIcon
+          }), L.NW.format(L.t.oj2vi4, {
+            onboardingLink: e => (0, r.jsx)(N.Z, {
+              onClick: z,
               children: e
             })
           })]
         })
-      }), (0, r.jsx)(m.Text, {
+      }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
-        children: D.NW.string(D.t["w2d74+"])
-      }), (0, r.jsx)(w.Z, {
-        enabled: T,
-        onPreview: (null == I ? void 0 : I.length) === 0 ? void 0 : () => {
-          null != t && (0, m.ZDy)(async () => {
+        children: L.NW.string(L.t["w2d74+"])
+      }), (0, r.jsx)(D.Z, {
+        enabled: P,
+        onPreview: (null == O ? void 0 : O.length) === 0 ? void 0 : () => {
+          null != t && (0, u.ZDy)(async () => {
             let {
               default: e
             } = await n.e("90542").then(n.bind(n, 184782));
-            return n => (0, r.jsx)(e, W(A({}, n), {
+            return n => (0, r.jsx)(e, Z(Q({}, n), {
               guildId: t.id,
               isPreview: !0
             }))
           })
         },
-        onToggle: T || (null == I ? void 0 : I.length) !== 0 ? () => {
-          U(!T)
+        onToggle: P || (null == O ? void 0 : O.length) !== 0 ? () => {
+          _(!P)
         } : void 0,
-        animateStatus: x,
-        firstLine: T ? D.NW.string(D.t.JbB7Qk) : D.NW.string(D.t["/bd0Qk"]),
-        secondLine: T ? D.NW.string(D.t["TA1g7+"]) : D.NW.string(D.t.nc6r1N)
+        animateStatus: C,
+        firstLine: P ? L.NW.string(L.t.JbB7Qk) : L.NW.string(L.t["/bd0Qk"]),
+        secondLine: P ? L.NW.string(L.t["TA1g7+"]) : L.NW.string(L.t.nc6r1N)
       }), (0, r.jsxs)("div", {
-        className: k.previewContainer,
+        className: R.previewContainer,
         children: [(0, r.jsxs)("div", {
-          className: k.welcomeHeader,
-          children: [(0, r.jsx)(N.Z, {
-            size: N.Z.Sizes.LARGER,
-            className: k.icon,
+          className: R.welcomeHeader,
+          children: [(0, r.jsx)(v.Z, {
+            size: v.Z.Sizes.LARGER,
+            className: R.icon,
             guild: t,
             animate: !0,
             tabIndex: -1
-          }), (0, r.jsx)(m.X6q, {
-            className: k.welcomeTitle,
+          }), (0, r.jsx)(u.X6q, {
+            className: R.welcomeTitle,
             variant: "heading-xl/semibold",
-            children: D.NW.format(D.t["0aydCA"], {
+            children: L.NW.format(L.t["0aydCA"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
-                children: [(0, r.jsx)(v.Z, {
+                children: [(0, r.jsx)(x.Z, {
                   guild: t,
-                  className: k.headerGuildBadge,
-                  flowerStarClassName: k.flowerStar
+                  className: R.headerGuildBadge,
+                  flowerStarClassName: R.flowerStar
                 }), (0, r.jsx)("strong", {
                   children: e
                 })]
               }, n)
             })
           }), (0, r.jsx)("div", {
-            className: k.descriptionWrapper,
-            children: (0, r.jsx)(m.Kx8, {
-              className: k.descriptionInput,
-              placeholder: D.NW.string(D.t.qzZHaW),
+            className: R.descriptionWrapper,
+            children: (0, r.jsx)(u.Kx8, {
+              className: R.descriptionInput,
+              placeholder: L.NW.string(L.t.qzZHaW),
               onChange: e => {
-                (0, y.VP)({
+                (0, j.VP)({
                   description: e
                 })
               },
               onBlur: () => {
-                L()
+                W()
               },
               onKeyDown: e => {
-                e.keyCode === R.yXg.ENTER && e.preventDefault()
+                e.keyCode === T.yXg.ENTER && e.preventDefault()
               },
-              value: C,
+              value: I,
               maxLength: 140,
               disabled: !0
             })
           })]
-        }), (0, r.jsx)(m.$i$, {
-          className: k.divider
+        }), (0, r.jsx)(u.$i$, {
+          className: R.divider
         }), (0, r.jsxs)("div", {
-          className: k.welcomeChannels,
-          children: [(0, r.jsx)(m.vwX, {
-            children: D.NW.string(D.t.euJXzc)
-          }), (0, r.jsx)(m.Text, {
+          className: R.welcomeChannels,
+          children: [(0, r.jsx)(u.vwX, {
+            children: L.NW.string(L.t.euJXzc)
+          }), (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
-            className: k.addChannelSubtext,
-            children: D.NW.string(D.t.VOnnn5)
-          }), null == I ? void 0 : I.map((e, n) => (0, r.jsx)(M, {
+            className: R.addChannelSubtext,
+            children: L.NW.string(L.t.VOnnn5)
+          }), null == O ? void 0 : O.map((e, n) => (0, r.jsx)(k, {
             guildId: t.id,
             welcomeChannel: e,
             onEdit: F(n),
-            onChannelReorder: z,
-            isDropHovered: n === d,
+            onChannelReorder: U,
+            isDropHovered: n === A,
             index: n
-          }, n)), (null == I || I.length < 5) && (0, r.jsx)(m.zxk, {
-            onClick: () => (0, m.ZDy)(async () => {
+          }, n)), (null == O || O.length < 5) && (0, r.jsx)(u.zxk, {
+            onClick: () => (0, u.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("39143").then(n.bind(n, 737868));
-              return n => (0, r.jsx)(e, W(A({}, n), {
+              return n => (0, r.jsx)(e, Z(Q({}, n), {
                 guildId: t.id,
-                onSave: B
+                onSave: G
               }))
             }, {
-              onCloseRequest: () => Z.Vq
+              onCloseRequest: () => S.Vq
             }),
-            className: k.addChannelButton,
+            className: R.addChannelButton,
             disabled: !0,
-            color: m.zxk.Colors.PRIMARY,
-            children: D.NW.string(D.t.U1BDe3)
+            color: u.zxk.Colors.PRIMARY,
+            children: L.NW.string(L.t.U1BDe3)
           })]
         })]
       })]

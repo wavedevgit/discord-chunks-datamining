@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => B
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -10,29 +10,29 @@ var r = n(200651),
   l = n(442837),
   o = n(481060),
   c = n(274136),
-  d = n(2052),
-  u = n(906732),
-  m = n(678558),
+  A = n(2052),
+  d = n(906732),
+  u = n(678558),
   g = n(852679),
-  p = n(357156),
-  h = n(626135),
-  f = n(267642),
-  b = n(268350),
-  x = n(926491),
-  j = n(386937),
-  N = n(316350),
-  v = n(863562),
-  _ = n(981631),
-  y = n(388032),
-  O = n(800488);
-let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.TIER_1) ? _.Eu4.TIER_1 : e < (0, f.A3)(_.Eu4.TIER_2) ? _.Eu4.TIER_2 : e < (0, f.A3)(_.Eu4.TIER_3) || null != t && t.hasFeature(_.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? _.Eu4.TIER_3 : _.Eu4.NONE,
-  I = e => {
+  f = n(357156),
+  m = n(626135),
+  p = n(267642),
+  h = n(268350),
+  C = n(926491),
+  b = n(386937),
+  v = n(316350),
+  x = n(863562),
+  N = n(981631),
+  j = n(388032),
+  E = n(800488);
+let I = (e, t) => e < (0, p.A3)(N.Eu4.NONE) ? N.Eu4.NONE : e < (0, p.A3)(N.Eu4.TIER_1) ? N.Eu4.TIER_1 : e < (0, p.A3)(N.Eu4.TIER_2) ? N.Eu4.TIER_2 : e < (0, p.A3)(N.Eu4.TIER_3) || null != t && t.hasFeature(N.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? N.Eu4.TIER_3 : N.Eu4.NONE,
+  O = e => {
     let {
       children: t,
       currentGuildTier: n,
       guildStickers: i,
       tier: s
-    } = e, a = n < s, l = (0, f.ig)(s);
+    } = e, a = n < s, l = (0, p.ig)(s);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.X6q, {
         color: "header-primary",
@@ -40,14 +40,14 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
         children: t
       }), !a && (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        children: y.NW.format(y.t.ZLoNtr, {
+        children: j.NW.format(j.t.ZLoNtr, {
           numTotal: l,
-          numAvailable: (0, f.Qi)(i, s)
+          numAvailable: (0, p.Qi)(i, s)
         })
       })]
     })
   },
-  E = e => {
+  y = e => {
     let {
       guildId: t
     } = e;
@@ -77,193 +77,193 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
       }, n))
     })
   },
-  S = () => (0, r.jsx)("div", {
-    className: O.placeholderCard,
+  w = () => (0, r.jsx)("div", {
+    className: E.placeholderCard,
     children: (0, r.jsx)("img", {
-      className: O.placeholderImg,
-      alt: y.NW.string(y.t.wl4ntL),
+      className: E.placeholderImg,
+      alt: j.NW.string(j.t.wl4ntL),
       src: n(872732)
     })
   }),
-  T = e => {
+  P = e => {
     let {
       guild: t
     } = e, {
       location: n
-    } = (0, d.O)(), {
+    } = (0, A.O)(), {
       canCreateExpressions: i
-    } = (0, p.XJ)(t);
+    } = (0, f.XJ)(t);
     return (0, r.jsx)(o.zxk, {
       size: o.zxk.Sizes.SMALL,
       color: o.zxk.Colors.BRAND,
       onClick: () => {
-        h.default.track(_.rMx.OPEN_MODAL, {
-          type: _.jXE.CREATE_STICKER_MODAL,
+        m.default.track(N.rMx.OPEN_MODAL, {
+          type: N.jXE.CREATE_STICKER_MODAL,
           location: n
-        }), E({
+        }), y({
           guildId: t.id
         })
       },
       disabled: !i,
-      children: y.NW.string(y.t.O1REe3)
+      children: j.NW.string(j.t.O1REe3)
     })
   },
-  P = e => {
+  B = e => {
     let {
       guild: t
-    } = e, [s, c] = i.useState(!0), d = (0, l.e7)([x.Z], () => {
+    } = e, [s, c] = i.useState(!0), A = (0, l.e7)([C.Z], () => {
       var e;
-      return null !== (e = x.Z.getStickersByGuildId(t.id)) && void 0 !== e ? e : []
+      return null !== (e = C.Z.getStickersByGuildId(t.id)) && void 0 !== e ? e : []
     }, [t]), {
-      analyticsLocations: h
-    } = (0, u.ZP)(), E = t.hasFeature(_.oNc.MORE_STICKERS) ? _.Eu4.TIER_3 : t.premiumTier, P = t.hasFeature(_.oNc.MORE_STICKERS) ? (0, f.vn)(t.id)[_.Eu4.TIER_3] : t.premiumSubscriberCount;
+      analyticsLocations: m
+    } = (0, d.ZP)(), y = t.hasFeature(N.oNc.MORE_STICKERS) ? N.Eu4.TIER_3 : t.premiumTier, B = t.hasFeature(N.oNc.MORE_STICKERS) ? (0, p.vn)(t.id)[N.Eu4.TIER_3] : t.premiumSubscriberCount;
     if (i.useEffect(() => {
         let e = !1;
         return (async () => {
-          c(!0), await (0, b.pk)(t.id), e || c(!1)
+          c(!0), await (0, h.pk)(t.id), e || c(!1)
         })(), () => {
           e = !0
         }
       }, [t]), i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
-      }, [d]), s) return (0, r.jsx)(o.$jN, {});
-    let w = (e, n) => {
+      }, [A]), s) return (0, r.jsx)(o.$jN, {});
+    let D = (e, n) => {
         let r = null;
-        n === _.Eu4.TIER_1 ? r = _.Qqv.TIER_1 : n === _.Eu4.TIER_2 ? r = _.Qqv.TIER_2 : n === _.Eu4.TIER_3 && (r = _.Qqv.TIER_3), (0, g.Z)({
-          analyticsLocations: h,
+        n === N.Eu4.TIER_1 ? r = N.Qqv.TIER_1 : n === N.Eu4.TIER_2 ? r = N.Qqv.TIER_2 : n === N.Eu4.TIER_3 && (r = N.Qqv.TIER_3), (0, g.Z)({
+          analyticsLocations: m,
           analyticsLocation: {
-            page: _.ZY5.GUILD_SETTINGS,
-            section: _.jXE.GUILD_SETTINGS_STICKERS,
-            object: _.qAy.BOOST_LEVEL_UPSELL_BUTTON,
+            page: N.ZY5.GUILD_SETTINGS,
+            section: N.jXE.GUILD_SETTINGS_STICKERS,
+            object: N.qAy.BOOST_LEVEL_UPSELL_BUTTON,
             objectType: r
           },
           guildId: t.id,
           totalNumberOfSlotsToAssign: e
         })
       },
-      R = [{
-        tier: _.Eu4.NONE,
-        title: (0, r.jsx)(I, {
-          guildStickers: d,
-          currentGuildTier: E,
-          tier: _.Eu4.NONE,
-          children: y.NW.string(y.t.tfVXhI)
+      T = [{
+        tier: N.Eu4.NONE,
+        title: (0, r.jsx)(O, {
+          guildStickers: A,
+          currentGuildTier: y,
+          tier: N.Eu4.NONE,
+          children: j.NW.string(j.t.tfVXhI)
         })
       }, {
-        tier: _.Eu4.TIER_1,
-        title: (0, r.jsx)(I, {
-          guildStickers: d,
-          currentGuildTier: E,
-          tier: _.Eu4.TIER_1,
-          children: y.NW.string(y.t.nzXtaW)
+        tier: N.Eu4.TIER_1,
+        title: (0, r.jsx)(O, {
+          guildStickers: A,
+          currentGuildTier: y,
+          tier: N.Eu4.TIER_1,
+          children: j.NW.string(j.t.nzXtaW)
         })
       }, {
-        tier: _.Eu4.TIER_2,
-        title: (0, r.jsx)(I, {
-          guildStickers: d,
-          currentGuildTier: E,
-          tier: _.Eu4.TIER_2,
-          children: y.NW.string(y.t["h33/ub"])
+        tier: N.Eu4.TIER_2,
+        title: (0, r.jsx)(O, {
+          guildStickers: A,
+          currentGuildTier: y,
+          tier: N.Eu4.TIER_2,
+          children: j.NW.string(j.t["h33/ub"])
         })
       }, {
-        tier: _.Eu4.TIER_3,
-        title: (0, r.jsx)(I, {
-          guildStickers: d,
-          currentGuildTier: E,
-          tier: _.Eu4.TIER_3,
-          children: y.NW.string(y.t.BfF6EB)
+        tier: N.Eu4.TIER_3,
+        title: (0, r.jsx)(O, {
+          guildStickers: A,
+          currentGuildTier: y,
+          tier: N.Eu4.TIER_3,
+          children: j.NW.string(j.t.BfF6EB)
         })
       }];
-    return (0, r.jsx)(j.Z, {
-      tiers: R,
+    return (0, r.jsx)(b.Z, {
+      tiers: T,
       renderTier: e => {
         let i, {
             isAnimatedTo: s,
             onSetRef: l,
             tier: c,
-            tiers: u,
+            tiers: d,
             tierIndex: g
           } = e,
           {
-            canCreateExpressions: h,
-            canManageGuildExpression: b
-          } = (0, p.Gw)(t),
-          x = u[g - 1],
-          j = null != x ? (0, f.A3)(x.tier) : 0,
-          I = (0, f.A3)(c.tier, t),
-          R = (0, f.ig)(c.tier),
-          Z = d.slice(j, I),
-          D = Z.length > 0,
-          k = E < c.tier,
-          A = C(d.length, t),
-          W = h && !k && A === c.tier && I !== Z.length,
-          L = W || Z.length > 0,
-          M = I - j,
-          G = n(872732),
-          U = R - Z.length,
-          B = W ? Math.min(5 - (Z.length + 0) % 5, U) : 0,
+            canCreateExpressions: m,
+            canManageGuildExpression: h
+          } = (0, f.Gw)(t),
+          C = d[g - 1],
+          b = null != C ? (0, p.A3)(C.tier) : 0,
+          O = (0, p.A3)(c.tier, t),
+          T = (0, p.ig)(c.tier),
+          S = A.slice(b, O),
+          L = S.length > 0,
+          R = y < c.tier,
+          Q = I(A.length, t),
+          Z = m && !R && Q === c.tier && O !== S.length,
+          W = Z || S.length > 0,
+          k = O - b,
+          M = n(872732),
+          _ = T - S.length,
+          G = Z ? Math.min(5 - (S.length + 0) % 5, _) : 0,
           F = [];
-        for (let e = 0; e < B; e++) F.push((0, r.jsx)(S, {}, "placeholder-".concat(e)));
-        let z = A === g + 1 && A > E,
-          H = W || z || g > E;
-        return z ? i = (0, r.jsx)(m.Z, {
+        for (let e = 0; e < G; e++) F.push((0, r.jsx)(w, {}, "placeholder-".concat(e)));
+        let U = Q === g + 1 && Q > y,
+          H = Z || U || g > y;
+        return U ? i = (0, r.jsx)(u.Z, {
           guild: t,
           size: o.zxk.Sizes.SMALL,
           color: o.zxk.Colors.GREEN,
-          buttonText: y.NW.string(y.t.Vbkh2t),
-          targetBoostedGuildTier: E + 1,
+          buttonText: j.NW.string(j.t.Vbkh2t),
+          targetBoostedGuildTier: y + 1,
           analyticsLocation: {
-            page: _.ZY5.GUILD_SETTINGS,
-            section: _.jXE.GUILD_SETTINGS_STICKERS,
-            object: _.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
-            objectType: (0, f.ge)(c.tier)
+            page: N.ZY5.GUILD_SETTINGS,
+            section: N.jXE.GUILD_SETTINGS_STICKERS,
+            object: N.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
+            objectType: (0, p.ge)(c.tier)
           }
-        }) : W && (i = (0, r.jsx)(T, {
+        }) : Z && (i = (0, r.jsx)(P, {
           guild: t
-        })), (0, r.jsxs)(N.Z, {
-          subscriptionCount: P,
+        })), (0, r.jsxs)(v.Z, {
+          subscriptionCount: B,
           tier: c,
           onSetRef: l,
           isAnimatedTo: s,
-          hasBottomMargin: g !== u.length - 1,
-          withCardBody: !L,
+          hasBottomMargin: g !== d.length - 1,
+          withCardBody: !W,
           headerButton: i,
           showHeaderLockStatus: H,
           guildId: t.id,
-          children: [L && (0, r.jsxs)("div", {
-            className: O.grid,
-            children: [Z.map(e => (0, r.jsx)(v.Z, {
-              isDisabled: k,
+          children: [W && (0, r.jsxs)("div", {
+            className: E.grid,
+            children: [S.map(e => (0, r.jsx)(x.Z, {
+              isDisabled: R,
               sticker: e,
-              canManageSticker: b(e)
+              canManageSticker: h(e)
             }, e.id)), F]
-          }), !k && !W && 0 === Z.length && (0, r.jsx)("div", {
-            className: a()(O.emptyTierWrapper, O.unusedTierWrapper),
+          }), !R && !Z && 0 === S.length && (0, r.jsx)("div", {
+            className: a()(E.emptyTierWrapper, E.unusedTierWrapper),
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
-              children: y.NW.string(y.t.lqwv0N)
+              children: j.NW.string(j.t.lqwv0N)
             })
-          }), k && !D && (0, r.jsxs)("div", {
-            className: O.emptyTierWrapper,
+          }), R && !L && (0, r.jsxs)("div", {
+            className: E.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
-              alt: y.NW.string(y.t.BAhsws),
-              className: O.emptyTierImage,
-              src: G
+              alt: j.NW.string(j.t.BAhsws),
+              className: E.emptyTierImage,
+              src: M
             }), (0, r.jsx)(o.Text, {
-              className: O.unlockTierCtaHeading,
+              className: E.unlockTierCtaHeading,
               variant: "text-md/normal",
               color: "header-secondary",
-              children: c.tier === _.Eu4.TIER_1 ? y.NW.formatToPlainString(y.t.psMYu7, {
-                numAdditional: M
-              }) : y.NW.formatToPlainString(y.t.bLykER, {
-                numAdditional: M,
-                numTotal: I
+              children: c.tier === N.Eu4.TIER_1 ? j.NW.formatToPlainString(j.t.psMYu7, {
+                numAdditional: k
+              }) : j.NW.formatToPlainString(j.t.bLykER, {
+                numAdditional: k,
+                numTotal: O
               })
             }), (0, r.jsx)(o.zxk, {
               color: o.zxk.Colors.GREEN,
-              onClick: () => w((0, f.vn)(t.id)[c.tier] - t.premiumSubscriberCount, c.tier),
-              children: y.NW.string(y.t.dtFw5e)
+              onClick: () => D((0, p.vn)(t.id)[c.tier] - t.premiumSubscriberCount, c.tier),
+              children: j.NW.string(j.t.dtFw5e)
             })]
           })]
         }, c.tier)

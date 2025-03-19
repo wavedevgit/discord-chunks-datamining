@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => C
 });
 var r = n(200651);
 n(192379);
@@ -11,27 +11,27 @@ var i = n(852229),
   l = n(674180),
   o = n(495437),
   c = n(267101),
-  d = n(863663),
-  u = n(676651),
-  m = n(613810),
+  A = n(863663),
+  d = n(676651),
+  u = n(613810),
   g = n(391181),
-  p = n(388032),
-  h = n(770);
-let f = "guild-product-listings-header";
+  f = n(388032),
+  m = n(770);
+let p = "guild-product-listings-header";
 
-function b(e) {
+function h(e) {
   let {
     guildId: t,
-    handleCreateOrEditProduct: u
-  } = e, b = (0, c.ue)(t, {
+    handleCreateOrEditProduct: d
+  } = e, h = (0, c.ue)(t, {
     publishedOnly: !1
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: x
-  } = (0, l.gX)(t), j = e => {
+    shouldRestrictUpdatingCreatorMonetizationSettings: C
+  } = (0, l.gX)(t), b = e => {
     (0, o.Je)(t, e, {
       published: !1
     })
-  }, N = (e, i) => {
+  }, v = (e, i) => {
     (0, s.ZDy)(async () => {
       let {
         default: s
@@ -59,31 +59,31 @@ function b(e) {
         productName: i
       }, n))
     })
-  }, v = (e, t) => {
-    (0, i.J)((0, d.ar)(e, t))
-  }, _ = b.length > 0;
+  }, x = (e, t) => {
+    (0, i.J)((0, A.ar)(e, t))
+  }, N = h.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.vwX, {
-      className: h.productListingsHeader,
-      id: f,
-      children: _ ? p.NW.string(p.t.RwuStb) : p.NW.string(p.t.WKMcMT)
-    }), _ ? (0, r.jsx)("ul", {
-      className: h.productListings,
-      "aria-labelledby": f,
-      children: b.map(e => (0, r.jsx)("li", {
+      className: m.productListingsHeader,
+      id: p,
+      children: N ? f.NW.string(f.t.RwuStb) : f.NW.string(f.t.WKMcMT)
+    }), N ? (0, r.jsx)("ul", {
+      className: m.productListings,
+      "aria-labelledby": p,
+      children: h.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(g.Z, {
           guildId: t,
           product: e,
-          onEditProduct: () => u(e.id),
-          onUnpublishProduct: () => j(e.id),
-          onDeleteProduct: () => N(e.id, e.name),
-          onCopyProductLink: () => v(t, e.id),
-          onTestDownload: () => m.Z.open({
+          onEditProduct: () => d(e.id),
+          onUnpublishProduct: () => b(e.id),
+          onDeleteProduct: () => v(e.id, e.name),
+          onCopyProductLink: () => x(t, e.id),
+          onTestDownload: () => u.Z.open({
             guildId: t,
             productId: e.id
           }),
           onReportProduct: () => {},
-          disabled: x
+          disabled: C
         })
       }, e.id))
     }) : (0, r.jsx)(a.Z, {
@@ -94,18 +94,18 @@ function b(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     guildId: t
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
   } = (0, l.gX)(t), i = e => {
-    u.h(t, e)
+    d.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.zxk, {
-      className: h.addButton,
-      innerClassName: h.addButtonInner,
+      className: m.addButton,
+      innerClassName: m.addButtonInner,
       onClick: () => i(null),
       disabled: n,
       children: [(0, r.jsx)(s.qJs, {
@@ -117,10 +117,10 @@ function x(e) {
       }), (0, r.jsx)(s.LZC, {
         size: 6,
         horizontal: !0
-      }), p.NW.string(p.t.riG6DQ)]
+      }), f.NW.string(f.t.riG6DQ)]
     }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(h, {
       guildId: t,
       handleCreateOrEditProduct: i
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   o = n(388032),
   c = n(97895);
 
-function d(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function d(e) {
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,26 +43,26 @@ function u(e, t) {
   }), e
 }
 
-function m(e) {
+function u(e) {
   var t;
   let {
     rule: n,
-    onChangeRule: m,
+    onChangeRule: u,
     collapsed: g = !1
-  } = e, [p, h] = i.useState(!g), f = i.useCallback(() => {
-    h(!p)
-  }, [p, h]), b = i.useCallback(e => {
-    m(u(d({}, n), {
-      triggerMetadata: u(d({}, n.triggerMetadata), {
+  } = e, [f, m] = i.useState(!g), p = i.useCallback(() => {
+    m(!f)
+  }, [f, m]), h = i.useCallback(e => {
+    u(d(A({}, n), {
+      triggerMetadata: d(A({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))
-  }, [m, n]);
+  }, [u, n]);
   return (0, a.S)(n.triggerType) ? (0, r.jsx)(s.zF9, {
-    isExpanded: p,
+    isExpanded: f,
     collapsibleContent: (0, r.jsx)(l.Z, {
       rule: n,
-      onChangeText: b,
+      onChangeText: h,
       className: c.textAreaContainer,
       initialValue: null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.regexPatterns
     }),
@@ -73,14 +73,14 @@ function m(e) {
       } = e;
       return (0, r.jsx)(s.P3F, {
         onClick: e => {
-          f(), t(e)
+          p(), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: c.header,
           children: [(0, r.jsx)(s.X6q, {
             variant: "text-sm/medium",
             children: o.NW.string(o.t.dnunm5)
-          }), p ? (0, r.jsx)(s.u04, {
+          }), f ? (0, r.jsx)(s.u04, {
             size: "md",
             color: "currentColor",
             className: c.arrow

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(201895),
   i = n(933557),
@@ -10,9 +10,9 @@ var r = n(201895),
   l = n(594174),
   o = n(293810),
   c = n(981631),
-  d = n(388032);
+  A = n(388032);
 
-function u(e) {
+function d(e) {
   switch (e.ref_type) {
     case o.Qs.CHANNEL: {
       let t = s.Z.getChannel(e.ref_id);
@@ -20,11 +20,11 @@ function u(e) {
         let t = (0, i.F6)(e, l.default, a.Z);
         switch (e.type) {
           case c.d4z.GUILD_VOICE:
-            return d.NW.formatToPlainString(d.t.bkpadH, {
+            return A.NW.formatToPlainString(A.t.bkpadH, {
               channelName: t
             });
           case c.d4z.GUILD_STAGE_VOICE:
-            return d.NW.formatToPlainString(d.t.TPPk2d, {
+            return A.NW.formatToPlainString(A.t.TPPk2d, {
               channelName: t
             });
           default:

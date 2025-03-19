@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(798769),
   f = n(474936),
   x = n(981631),
-  N = n(388032),
-  b = n(413803),
+  b = n(388032),
+  N = n(413803),
   _ = n(982404),
   E = n(299156);
 let j = function(e) {
@@ -50,34 +50,34 @@ let j = function(e) {
       premiumType: n,
       onClose: s
     }), (0, r.jsx)(c.hzk, {
-      className: b.body,
+      className: N.body,
       children: (0, r.jsxs)("div", {
-        className: b.confirmDiscountContent,
+        className: N.confirmDiscountContent,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-xl/bold",
-          children: N.NW.format(N.t.q9Vxu7, {
+          children: b.NW.format(b.t.q9Vxu7, {
             percent: C.discount.amount
           })
         }), (0, r.jsxs)("div", {
-          className: b.confirmDiscountDescription,
+          className: N.confirmDiscountDescription,
           children: [(0, r.jsx)("img", {
             alt: "",
             src: A,
-            className: b.confirmDiscountIcon
+            className: N.confirmDiscountIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
-            children: N.NW.format(N.t.Eq1RHB, {
+            children: b.NW.format(b.t.Eq1RHB, {
               percent: C.discount.amount,
               numMonths: C.discount.user_usage_limit,
               price: D
             })
           })]
         }), (0, r.jsx)("div", {
-          className: b.confirmDiscountLegalese,
+          className: N.confirmDiscountLegalese,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
-            className: b.confirmDiscountLegaleseText,
-            children: N.NW.format(N.t.hrGTjI, {
+            className: N.confirmDiscountLegaleseText,
+            children: b.NW.format(b.t.hrGTjI, {
               discountedPrice: P,
               billingPeriod: (0, m.JP)(C.discount.user_usage_limit_interval),
               numMonths: C.discount.user_usage_limit,
@@ -86,26 +86,26 @@ let j = function(e) {
             })
           })
         }), O && (0, r.jsx)("div", {
-          className: b.redemptionFailedMessage,
+          className: N.redemptionFailedMessage,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
-            className: b.redemptionFailedMessageCopy,
-            children: N.NW.string(N.t.AD6odn)
+            className: N.redemptionFailedMessageCopy,
+            children: b.NW.string(b.t.AD6odn)
           })
         }), (0, r.jsxs)("div", {
-          className: a()(b.confirmDiscountButtons, {
-            [b.confrimDiscountsButtonsError]: O,
-            [b.confrimDiscountsButtonsNoError]: !O
+          className: a()(N.confirmDiscountButtons, {
+            [N.confrimDiscountsButtonsError]: O,
+            [N.confrimDiscountsButtonsNoError]: !O
           }),
           children: [(0, r.jsx)(c.zxk, {
             look: c.iLD.LINK,
             onClick: () => s(),
-            children: N.NW.string(N.t.zl7LZm)
+            children: b.NW.string(b.t.zl7LZm)
           }), (0, r.jsx)(c.zxk, {
             size: c.PhG.SMALL,
             submitting: S,
             onClick: () => I(C.id),
-            children: N.NW.string(N.t.CKSuZG)
+            children: b.NW.string(b.t.CKSuZG)
           })]
         })]
       })

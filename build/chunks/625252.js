@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -17,9 +17,9 @@ var r = n(200651),
   h = n(981631),
   f = n(388032),
   x = n(920617),
-  N = n(66094);
+  b = n(66094);
 
-function b() {
+function N() {
   let e = (0, s.wj)((0, o.ZP)()),
     t = (0, m.y)({
       location: p.dr.USER_SETTINGS_GIFT_INVENTORY
@@ -27,7 +27,7 @@ function b() {
     n = i.useMemo(() => ({
       backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
     }), []),
-    b = i.useCallback(() => {
+    N = i.useCallback(() => {
       (0, l.xf)(), (0, g.navigateToQuestHome)({
         fromContent: u.jn.QUEST_HOME_MOVE_CALLOUT
       }), c.default.track(h.rMx.QUEST_CONTENT_CLICKED, function(e) {
@@ -60,7 +60,7 @@ function b() {
         className: x.headerContainer,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: N,
+          src: b,
           className: x.icon
         }), (0, r.jsx)(a.X6q, {
           variant: "heading-lg/bold",
@@ -75,7 +75,7 @@ function b() {
         size: "large",
         color: e ? a.Ttl.BRAND : a.Ttl.WHITE,
         className: x.button,
-        onClick: b,
+        onClick: N,
         innerClassName: x.innerButton,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/medium",

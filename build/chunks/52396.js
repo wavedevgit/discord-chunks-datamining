@@ -1,7 +1,7 @@
 /** Chunk was on 30243 **/
 r.d(t, {
   B: () => j,
-  r: () => h
+  r: () => v
 }), r(411104);
 var n = r(200651),
   l = r(192379),
@@ -89,7 +89,7 @@ function g(e) {
         entry: t
       }, l));
     case a.s.LAUNCHED_ACTIVITY:
-      return (0, n.jsx)(v, O({
+      return (0, n.jsx)(h, O({
         entry: t
       }, l));
     default:
@@ -97,7 +97,7 @@ function g(e) {
   }
 }
 
-function h(e) {
+function v(e) {
   var {
     errorFallback: t
   } = e, r = y(e, ["errorFallback"]);
@@ -107,7 +107,7 @@ function h(e) {
   })
 }
 
-function v(e) {
+function h(e) {
   var {
     entry: t,
     children: r

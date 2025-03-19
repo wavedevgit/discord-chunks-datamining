@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(47120), n(266796), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -11,9 +11,9 @@ var a = n(723047),
   l = n(727843),
   o = n(290348),
   c = n(764163),
-  d = n(861345),
-  u = n(293810),
-  m = n(388032);
+  A = n(861345),
+  d = n(293810),
+  u = n(388032);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -34,7 +34,7 @@ function g(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,13 +47,13 @@ function p(e, t) {
   }), e
 }
 
-function h() {
+function m() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, l.N)(), [n, h] = o.UE(e), f = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
+  } = (0, l.N)(), [n, m] = o.UE(e), p = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
 
-  function b(e, t) {
+  function h(e, t) {
     let {
       channelId: r,
       description: i,
@@ -64,45 +64,45 @@ function h() {
       description: i,
       emoji_id: s,
       emoji_name: a,
-      ref_type: u.Qs.CHANNEL,
+      ref_type: d.Qs.CHANNEL,
       ref_id: r
     };
-    null != t ? l[t] = o : l.push(o), h(l)
+    null != t ? l[t] = o : l.push(o), m(l)
   }
-  let x = (0, a.mY)();
+  let C = (0, a.mY)();
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.p, {
+    children: [(0, r.jsx)(A.p, {
       benefits: n,
       onEdit: function(e) {
-        (0, s.h7j)(i => (0, r.jsx)(c.x3, p(g({}, i), {
+        (0, s.h7j)(i => (0, r.jsx)(c.x3, f(g({}, i), {
           guildId: t,
-          omitChannelIds: f,
+          omitChannelIds: p,
           initialData: n[e],
-          onSave: t => b(t, e),
+          onSave: t => h(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
-            t.splice(e, 1), h(t)
+            t.splice(e, 1), m(t)
           })(e)
         })))
       },
       onMove: function(e, t) {
         let r = [...n],
           [i] = r.splice(e, 1);
-        r.splice(t, 0, i), h(r)
+        r.splice(t, 0, i), m(r)
       },
       guildId: t
     }), n.length > 0 && (0, r.jsx)(s.LZC, {
       size: 8
-    }), (0, r.jsx)(d.s, {
+    }), (0, r.jsx)(A.s, {
       onClick: function() {
-        (0, s.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
+        (0, s.h7j)(e => (0, r.jsx)(c.x3, f(g({}, e), {
           guildId: t,
-          omitChannelIds: f,
-          onSave: e => b(e)
+          omitChannelIds: p,
+          onSave: e => h(e)
         })))
       },
-      disabled: x,
-      children: m.NW.string(m.t.PLSCUl)
+      disabled: C,
+      children: u.NW.string(u.t.PLSCUl)
     })]
   })
 }

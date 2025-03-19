@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   S: () => c,
-  w: () => f
+  w: () => p
 });
 var r = n(481060),
   i = n(925221),
@@ -19,7 +19,7 @@ let c = e => {
         return !1
     }
   },
-  d = e => {
+  A = e => {
     switch (e) {
       case l.fX.KEYWORD:
       case l.fX.ML_SPAM:
@@ -32,11 +32,11 @@ let c = e => {
         return !1
     }
   },
-  u = (e, t) => {
+  d = (e, t) => {
     var n;
     return null !== (n = null == t ? void 0 : t.name) && void 0 !== n ? n : a.I6[e].getDefaultRuleName()
   },
-  m = (e, t) => {
+  u = (e, t) => {
     if ((0, s.Vb)(t) && (0, s.DO)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.NW.formatToPlainString(o.t.xZUvxc, {
       keywordCount: t.triggerMetadata.keywordFilter.length,
       regexPatternCount: t.triggerMetadata.regexPatterns.length
@@ -60,10 +60,10 @@ let c = e => {
         return null
     }
   },
-  p = e => {
+  f = e => {
     if (e === l.fX.KEYWORD) return o.NW.formatToPlainString(o.t.yNec2t, {})
   },
-  h = e => {
+  m = e => {
     switch (e) {
       case l.fX.MENTION_SPAM:
         return r.lOy;
@@ -77,13 +77,13 @@ let c = e => {
     }
   };
 
-function f(e, t) {
+function p(e, t) {
   var n, i, s, a, l;
-  return null != e && d(e) ? {
-    headerText: null !== (n = u(e, t)) && void 0 !== n ? n : "",
-    headerSubtext: null !== (i = m(e, t)) && void 0 !== i ? i : "",
+  return null != e && A(e) ? {
+    headerText: null !== (n = d(e, t)) && void 0 !== n ? n : "",
+    headerSubtext: null !== (i = u(e, t)) && void 0 !== i ? i : "",
     descriptionText: null !== (s = g(e)) && void 0 !== s ? s : "",
-    descriptionSubtext: null !== (a = p(e)) && void 0 !== a ? a : "",
-    icon: null !== (l = h(e)) && void 0 !== l ? l : r.xPt
+    descriptionSubtext: null !== (a = f(e)) && void 0 !== a ? a : "",
+    icon: null !== (l = m(e)) && void 0 !== l ? l : r.xPt
   } : null
 }

@@ -178,9 +178,8 @@ function J(e) {
   l()(null != eP, "Price option has to be set");
   let ew = (0, _.Z)(),
     eD = ew.fractionalState !== F.a$.NONE,
-    eL = null != eS && F.nG[eS.trial_id].skus.includes(b);
-  l()(!(eD && eL), "Cannot redeem trial with active fractional premium");
-  let ex = null != eN && q.some(e => null == eA ? void 0 : eA.includes(e)) && null != eN.discount,
+    eL = null != eS && F.nG[eS.trial_id].skus.includes(b),
+    ex = null != eN && q.some(e => null == eA ? void 0 : eA.includes(e)) && null != eN.discount,
     eM = (0, O.aS)(F.Xh.PREMIUM_MONTH_TIER_2, !1, eu, eP);
   i.useEffect(() => {
     J && S.ZP.trackExposure({

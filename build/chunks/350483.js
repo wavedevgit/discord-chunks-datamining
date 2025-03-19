@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -27,13 +27,13 @@ function x(e, t) {
     withCurrentVoiceChannel: !0
   }).map(e => e.id)]
 }
-let N = s().throttle(function(e, t) {
+let b = s().throttle(function(e, t) {
   var i, s;
   let l, {
       channelPredicate: m = () => !0,
       guildPredicate: f = () => !0,
-      guildFeaturePredicate: N = () => !1,
-      ensureChatIsVisible: b = () => !1,
+      guildFeaturePredicate: b = () => !1,
+      ensureChatIsVisible: N = () => !1,
       withVoiceChannels: _ = !1
     } = t,
     E = null !== (i = o.Z.getState().guildId) && void 0 !== i ? i : h.ME,
@@ -50,8 +50,8 @@ let N = s().throttle(function(e, t) {
     if (l = v[S], f(E))
       for (; null != l && "" !== l;) {
         if ("string" == typeof l) {
-          if (m(E, l)) return (0, p.K)(E, l, !1, b(E, l))
-        } else if ("object" == typeof l && N(l.resourceId, l.type)) return E !== d.Z.getGuildId() && (0, p.K)(E, null === (s = c.ZP.getDefaultChannel(E)) || void 0 === s ? void 0 : s.id), (0, a.ZDy)(async () => {
+          if (m(E, l)) return (0, p.K)(E, l, !1, N(E, l))
+        } else if ("object" == typeof l && b(l.resourceId, l.type)) return E !== d.Z.getGuildId() && (0, p.K)(E, null === (s = c.ZP.getDefaultChannel(E)) || void 0 === s ? void 0 : s.id), (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("77699")]).then(n.bind(n, 17671));

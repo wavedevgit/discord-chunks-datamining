@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Io: () => c,
-  cZ: () => d,
-  g6: () => u,
+  cZ: () => A,
+  g6: () => d,
   j7: () => o
 });
 var r = n(200651);
@@ -67,7 +67,7 @@ function c() {
   })
 }
 
-function d() {
+function A() {
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)(i.Text, {
@@ -94,7 +94,7 @@ function d() {
   })
 }
 
-function u() {
+function d() {
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)(i.Text, {

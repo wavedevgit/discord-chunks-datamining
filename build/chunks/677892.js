@@ -1,10 +1,10 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  $$: () => x,
-  P_: () => v,
-  ap: () => N,
-  ku: () => j
+  $$: () => C,
+  P_: () => x,
+  ap: () => v,
+  ku: () => b
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,14 +13,14 @@ var r = n(200651),
   l = n(45966),
   o = n(637853),
   c = n(734893),
-  d = n(8426),
-  u = n(969632),
-  m = n(974513),
+  A = n(8426),
+  d = n(969632),
+  u = n(974513),
   g = n(290511),
-  p = n(388032),
-  h = n(702534);
+  f = n(388032),
+  m = n(702534);
 
-function f(e) {
+function p(e) {
   let t, {
     title: n,
     description: i,
@@ -28,7 +28,7 @@ function f(e) {
     hasStarted: l,
     status: o,
     onEdit: c,
-    extra: d
+    extra: A
   } = e;
   switch (o) {
     case "good":
@@ -36,12 +36,12 @@ function f(e) {
         children: [(0, r.jsx)(a.dz2, {
           size: "xs",
           color: "currentColor",
-          className: h.checkmark
+          className: m.checkmark
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "status-positive",
-          className: h.statusText,
-          children: p.NW.string(p.t.rPnzRU)
+          className: m.statusText,
+          children: f.NW.string(f.t.rPnzRU)
         })]
       });
       break;
@@ -50,12 +50,12 @@ function f(e) {
         children: [(0, r.jsx)(a.P4T, {
           size: "xs",
           color: "currentColor",
-          className: h.warning
+          className: m.warning
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "status-warning",
-          className: h.statusText,
-          children: p.NW.string(p.t["yTa+dn"])
+          className: m.statusText,
+          children: f.NW.string(f.t["yTa+dn"])
         })]
       });
       break;
@@ -64,24 +64,24 @@ function f(e) {
         children: [(0, r.jsx)(a.P4T, {
           size: "xs",
           color: "currentColor",
-          className: h.danger
+          className: m.danger
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "status-danger",
-          className: h.statusText,
-          children: p.NW.string(p.t.EkokLy)
+          className: m.statusText,
+          children: f.NW.string(f.t.EkokLy)
         })]
       })
   }
   return (0, r.jsxs)("div", {
-    className: h.onboardingStepContainer,
+    className: m.onboardingStepContainer,
     children: [(0, r.jsxs)("div", {
-      className: h.leftContainer,
+      className: m.leftContainer,
       children: [(0, r.jsx)("div", {
-        className: h.iconContainer,
+        className: m.iconContainer,
         children: s
       }), (0, r.jsxs)("div", {
-        className: h.onboardingStepText,
+        className: m.onboardingStepText,
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           children: n
@@ -92,21 +92,21 @@ function f(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: h.rightContainer,
-      children: [t, d, l ? (0, r.jsx)(a.zxk, {
-        className: h.cta,
+      className: m.rightContainer,
+      children: [t, A, l ? (0, r.jsx)(a.zxk, {
+        className: m.cta,
         size: a.zxk.Sizes.SMALL,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.OUTLINED,
         onClick: c,
-        children: p.NW.string(p.t.bt75u7)
+        children: f.NW.string(f.t.bt75u7)
       }) : (0, r.jsxs)(a.zxk, {
-        className: h.cta,
-        innerClassName: h.ctaInner,
+        className: m.cta,
+        innerClassName: m.ctaInner,
         size: a.zxk.Sizes.SMALL,
         color: a.zxk.Colors.PRIMARY,
         onClick: c,
-        children: [p.NW.string(p.t["0GWElZ"]), (0, r.jsx)(a.ZSh, {
+        children: [f.NW.string(f.t["0GWElZ"]), (0, r.jsx)(a.ZSh, {
           size: "xxs",
           color: "currentColor"
         })]
@@ -115,72 +115,43 @@ function f(e) {
   })
 }
 
-function b(e) {
+function h(e) {
   let t = (0, s.e7)([l.Z], () => l.Z.getDefaultChannelIds(e)),
     n = i.useMemo(() => new Set(t), [t]),
     [r, a] = (0, o.VF)(e, n);
   return a.length >= g.md && r.length >= g.X
 }
 
-function x(e) {
-  let t = b(e),
-    n = (0, m.O4)(e);
+function C(e) {
+  let t = h(e),
+    n = (0, u.O4)(e);
   return t || n
 }
 
-function j(e) {
+function b(e) {
   let {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), u = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), N = j.length, v = b(t), _ = (0, m.O4)(t), y = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), O = y ? p.NW.formatToPlainString(p.t.nHwnLC, {
-    numDefaultChannels: N,
-    numFromQuestions: u - N
-  }) : v ? p.NW.formatToPlainString(p.t.HxEwSk, {
-    numDefaultChannels: N
-  }) : p.NW.formatToPlainString(p.t.ey3uVV, {
+  } = e, A = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), d = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), C = i.useMemo(() => new Set(A), [A]), [, b] = (0, o.VF)(t, C), v = b.length, x = h(t), N = (0, u.O4)(t), j = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), E = j ? f.NW.formatToPlainString(f.t.nHwnLC, {
+    numDefaultChannels: v,
+    numFromQuestions: d - v
+  }) : x ? f.NW.formatToPlainString(f.t.HxEwSk, {
+    numDefaultChannels: v
+  }) : f.NW.formatToPlainString(f.t.ey3uVV, {
     numDefaultChannels: g.md,
     numChattableChannels: g.X
   });
-  return (0, r.jsx)(f, {
-    title: y ? p.NW.string(p.t.YZookZ) : p.NW.string(p.t["4GSygo"]),
-    description: O,
+  return (0, r.jsx)(p, {
+    title: j ? f.NW.string(f.t.YZookZ) : f.NW.string(f.t["4GSygo"]),
+    description: E,
     icon: (0, r.jsx)(a.VL1, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: m.channelIcon
     }),
-    hasStarted: N > 0 || y,
-    status: v || _ ? c ? "none" : "good" : "required",
-    onEdit: n
-  })
-}
-
-function N(e) {
-  let {
-    guildId: t,
-    onEdit: n,
-    disableGoodStatus: i
-  } = e, c = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), d = (0, s.Wu)([l.Z], () => l.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), b = m.length, x = m.length + g.length, j = b / x * 100, N = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), v = u > 0, _ = "none";
-  return v && (j >= 85 && !i ? _ = "good" : j < 85 && (_ = "warning")), (0, r.jsx)(f, {
-    title: N ? p.NW.string(p.t.AGjtFh) : p.NW.string(p.t.dqCzoa),
-    description: p.NW.format(p.t.iuNisr, {
-      numChannels: b,
-      numTotalChannels: x,
-      channelsHook: (e, t) => (0, r.jsx)("span", {
-        style: {
-          color: j > 85 ? "var(--header-primary)" : "var(--status-warning)"
-        },
-        children: e
-      }, t)
-    }),
-    icon: (0, r.jsx)(a.iFz, {
-      size: "md",
-      color: "currentColor",
-      className: h.channelIcon
-    }),
-    hasStarted: v,
-    status: _,
+    hasStarted: v > 0 || j,
+    status: x || N ? c ? "none" : "good" : "required",
     onEdit: n
   })
 }
@@ -189,30 +160,59 @@ function v(e) {
   let {
     guildId: t,
     onEdit: n,
+    disableGoodStatus: i
+  } = e, c = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), A = (0, s.Wu)([l.Z], () => l.Z.getOnboardingPrompts(t)), d = A.length, [u, g] = (0, o.dF)(t, A, c), h = u.length, C = u.length + g.length, b = h / C * 100, v = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), x = d > 0, N = "none";
+  return x && (b >= 85 && !i ? N = "good" : b < 85 && (N = "warning")), (0, r.jsx)(p, {
+    title: v ? f.NW.string(f.t.AGjtFh) : f.NW.string(f.t.dqCzoa),
+    description: f.NW.format(f.t.iuNisr, {
+      numChannels: h,
+      numTotalChannels: C,
+      channelsHook: (e, t) => (0, r.jsx)("span", {
+        style: {
+          color: b > 85 ? "var(--header-primary)" : "var(--status-warning)"
+        },
+        children: e
+      }, t)
+    }),
+    icon: (0, r.jsx)(a.iFz, {
+      size: "md",
+      color: "currentColor",
+      className: m.channelIcon
+    }),
+    hasStarted: x,
+    status: N,
+    onEdit: n
+  })
+}
+
+function x(e) {
+  let {
+    guildId: t,
+    onEdit: n,
     disableGoodStatus: o
-  } = e, m = (0, s.e7)([u.Z], () => u.Z.getSettings()), g = (0, s.e7)([l.Z], () => l.Z.getEnabled(t)), b = (0, c.uo)(m), x = m.enabled, j = i.useCallback(() => {
-    (0, d.To)(t, !x)
-  }, [t, x]), N = !(0, c.av)(m), v = "none";
-  N && (b && !o ? v = "good" : b || (v = "required"));
-  let _ = p.NW.string(p.t.GMOwOD);
-  b ? N || (_ = p.NW.string(p.t.wHOoyM)) : _ = p.NW.string(p.t.wXFbgY);
-  let y = null;
-  return N && g && (y = (0, r.jsx)(a.rsf, {
-    className: h.inlineSwitch,
-    checked: x,
-    onChange: j,
-    disabled: !b
-  })), (0, r.jsx)(f, {
-    title: p.NW.string(p.t.mRHqsr),
-    description: _,
+  } = e, u = (0, s.e7)([d.Z], () => d.Z.getSettings()), g = (0, s.e7)([l.Z], () => l.Z.getEnabled(t)), h = (0, c.uo)(u), C = u.enabled, b = i.useCallback(() => {
+    (0, A.To)(t, !C)
+  }, [t, C]), v = !(0, c.av)(u), x = "none";
+  v && (h && !o ? x = "good" : h || (x = "required"));
+  let N = f.NW.string(f.t.GMOwOD);
+  h ? v || (N = f.NW.string(f.t.wHOoyM)) : N = f.NW.string(f.t.wXFbgY);
+  let j = null;
+  return v && g && (j = (0, r.jsx)(a.rsf, {
+    className: m.inlineSwitch,
+    checked: C,
+    onChange: b,
+    disabled: !h
+  })), (0, r.jsx)(p, {
+    title: f.NW.string(f.t.mRHqsr),
+    description: N,
     icon: (0, r.jsx)(a.Vy8, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: m.channelIcon
     }),
-    hasStarted: N,
-    status: v,
+    hasStarted: v,
+    status: x,
     onEdit: n,
-    extra: y
+    extra: j
   })
 }

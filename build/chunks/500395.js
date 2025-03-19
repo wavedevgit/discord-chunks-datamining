@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -11,12 +11,12 @@ var i = n(990547),
   l = n(787051),
   o = n(696936),
   c = n(539290),
-  d = n(975464),
-  u = n(388032),
-  m = n(128281),
+  A = n(975464),
+  d = n(388032),
+  u = n(128281),
   g = n(270395);
 
-function p(e) {
+function f(e) {
   let {
     config: t
   } = e, {
@@ -26,47 +26,47 @@ function p(e) {
     onCtaClicked: l
   } = t;
   return (0, r.jsxs)("div", {
-    className: m.__invalid_ctaContainer,
+    className: u.__invalid_ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: m.__invalid_heroBanner,
+      className: u.__invalid_heroBanner,
       src: g,
-      alt: u.NW.string(u.t.Af4klJ)
+      alt: d.NW.string(d.t.Af4klJ)
     }), (0, r.jsxs)("div", {
-      className: m.__invalid_ctaContent,
+      className: u.__invalid_ctaContent,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: u.NW.string(u.t.PqYfh4)
+        children: d.NW.string(d.t.PqYfh4)
       }), (0, r.jsx)(s.LZC, {
         size: 12
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: u.NW.string(u.t["41wkMT"])
+        children: d.NW.string(d.t["41wkMT"])
       }), (0, r.jsx)(s.LZC, {
         size: 24
       }), (0, r.jsx)(c.Z, {
-        className: m.waitlist,
+        className: u.waitlist,
         color: o.W.BROWN,
         buttonPosition: c.E.RIGHT,
         notice: n,
         ctaLabel: i,
         ctaDisabled: !a,
-        ctaClassName: m.waitlistCtaButton,
+        ctaClassName: u.waitlistCtaButton,
         onClick: l
       })]
     })]
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     guild: t,
     config: n
   } = e, {
     isLoading: o,
     error: c,
-    creatorMonetizationOnboardingMarketing: u
+    creatorMonetizationOnboardingMarketing: d
   } = (0, l.Z)(t.id);
   return ((0, a.Z)({
     type: i.ImpressionTypes.PANE,
@@ -75,11 +75,11 @@ function h(e) {
       guild_id: t.id
     }
   }), o) ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)("div", {
-    className: m.__invalid_container,
-    children: [(0, r.jsx)(p, {
+    className: u.__invalid_container,
+    children: [(0, r.jsx)(f, {
       config: n
-    }), (0, r.jsx)(d.C, {
-      onboardingMarketing: u,
+    }), (0, r.jsx)(A.C, {
+      onboardingMarketing: d,
       onboardingMarketingError: c
     })]
   })

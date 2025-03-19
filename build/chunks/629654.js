@@ -33,22 +33,22 @@ function h(e) {
       avatarDecoration: null != h.avatarDecorationSkuId ? null === (e = o.Z.getProduct(h.avatarDecorationSkuId)) || void 0 === e ? void 0 : e.items[0] : void 0
     })
   }, [h, x]);
-  let N = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
-    b = (0, c.g2)({
-      useReducedMotion: N
+  let b = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
+    N = (0, c.g2)({
+      useReducedMotion: b
     });
   return (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)(a.P3F, {
       onClick: () => {
-        f(), b.startAnimation(!1)
+        f(), N.startAnimation(!1)
       },
       className: p.button,
       "aria-label": "Shuffle Preset",
-      children: b.render()
+      children: N.render()
     }), (0, r.jsxs)(a.P3F, {
       onClick: () => {
-        f(), b.startAnimation(!1)
+        f(), N.startAnimation(!1)
       },
       "aria-label": "".concat((0, m._h)(h.presetName), " - Click to Shuffle Preset"),
       className: p.select,

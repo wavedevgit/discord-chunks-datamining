@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => h
+  Z: () => x
 }), n(47120), n(653041);
 var r = n(200651),
   a = n(192379),
@@ -29,18 +29,18 @@ let m = a.forwardRef(function(e, t) {
   })
 });
 
-function x(e) {
+function h(e) {
   let {
     tabs: t,
     selectedTabId: n,
     onSelectTab: l
-  } = e, i = a.useRef(null), x = a.useRef(0), h = a.useRef(new Map), [p, b] = a.useState([]), f = a.useCallback(() => {
+  } = e, i = a.useRef(null), h = a.useRef(0), x = a.useRef(new Map), [p, b] = a.useState([]), f = a.useCallback(() => {
     var e, r, a, l;
     if (null == i.current) return;
     let o = [],
       s = i.current.getBoundingClientRect().width;
-    if (s !== x.current) {
-      for (let i of (x.current = s, s -= null !== (r = null === (e = h.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) i.id !== n && (s -= null !== (l = null === (a = h.current.get(i.id)) || void 0 === a ? void 0 : a.width) && void 0 !== l ? l : 0) < 0 && o.push(i.id);
+    if (s !== h.current) {
+      for (let i of (h.current = s, s -= null !== (r = null === (e = x.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) i.id !== n && (s -= null !== (l = null === (a = x.current.get(i.id)) || void 0 === a ? void 0 : a.width) && void 0 !== l ? l : 0) < 0 && o.push(i.id);
       b(o)
     }
   }, [t, n]), _ = a.useRef(null);
@@ -86,8 +86,8 @@ function x(e) {
           selected: n === t,
           ref: e => {
             var n, r, a;
-            let l = null !== (r = null === (n = h.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
-            h.current.set(t, {
+            let l = null !== (r = null === (n = x.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
+            x.current.set(t, {
               node: e,
               width: null !== (a = null == e ? void 0 : e.getBoundingClientRect().width) && void 0 !== a ? a : l
             })
@@ -148,7 +148,7 @@ function x(e) {
   })
 }
 
-function h(e, t) {
+function x(e, t) {
   var n, l, i;
   let {
     tabs: o,
@@ -156,7 +156,7 @@ function h(e, t) {
     onChangeTab: c
   } = e, [d, u] = a.useState(null != s ? s : null === (n = o[0]) || void 0 === n ? void 0 : n.id);
   return {
-    TabBar: a.useCallback(() => (0, r.jsx)(x, {
+    TabBar: a.useCallback(() => (0, r.jsx)(h, {
       tabs: o,
       selectedTabId: d,
       onSelectTab: e => {

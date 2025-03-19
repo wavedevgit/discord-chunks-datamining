@@ -28,8 +28,8 @@ function g(e) {
       onAction: f
     } = i,
     x = h && !a,
-    N = a ? "header-primary" : "text-muted",
-    b = a ? "header-secondary" : "text-muted",
+    b = a ? "header-primary" : "text-muted",
+    N = a ? "header-secondary" : "text-muted",
     _ = l()(n),
     E = null != f && a,
     j = E ? o.P3F : "div";
@@ -54,11 +54,11 @@ function g(e) {
         children: (0, c.Y4)(_)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: N,
+        color: b,
         children: g()
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        color: b,
+        color: N,
         children: x ? "?????" : p()
       })]
     })]

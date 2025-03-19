@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(266796);
 var r, i, s, a = n(200651),
   l = n(192379),
@@ -14,8 +14,8 @@ var r, i, s, a = n(200651),
   h = n(122289),
   f = n(624138),
   x = n(388032),
-  N = n(579933);
-class b extends(r = l.PureComponent) {
+  b = n(579933);
+class N extends(r = l.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -55,7 +55,7 @@ class b extends(r = l.PureComponent) {
       descriptionClassName: t
     } = this.props;
     return (0, a.jsx)(d.Text, {
-      className: c()(N.description, t),
+      className: c()(b.description, t),
       variant: "text-md/semibold",
       children: this.getLabel(e)
     })
@@ -84,21 +84,21 @@ class b extends(r = l.PureComponent) {
         type: this.typeString
       }), (0, a.jsxs)(m.Z, {
         direction: m.Z.Direction.VERTICAL,
-        className: N.descriptionWrapper,
+        className: b.descriptionWrapper,
         children: [(0, a.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [this.renderDescription(), s && e ? (0, a.jsx)("div", {
-            className: N.defaultIndicator,
+            className: b.defaultIndicator,
             children: x.NW.string(x.t.bBvAEB)
           }) : null, r ? (0, a.jsx)("div", {
-            className: N.premiumIndicator,
+            className: b.premiumIndicator,
             children: x.NW.string(x.t.YCrcPD)
           }) : null, s && t.invalid ? (0, a.jsx)("div", {
-            className: N.invalidIndicator,
+            className: b.invalidIndicator,
             children: x.NW.string(x.t["851k9/"])
           }) : null]
         }), n && null != l ? (0, a.jsx)("div", {
-          className: N.subText,
+          className: b.subText,
           children: l
         }) : null]
       })]
@@ -111,9 +111,9 @@ s = {
   showSubtext: !1,
   showPaymentSourceIcon: !1,
   showLabels: !1
-}, (i = "defaultProps") in b ? Object.defineProperty(b, i, {
+}, (i = "defaultProps") in N ? Object.defineProperty(N, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : b[i] = s
+}) : N[i] = s

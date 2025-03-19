@@ -10,28 +10,28 @@ var r = n(200651),
   l = n(434404),
   o = n(999382),
   c = n(621319),
-  d = n(44550),
-  u = n(770270),
-  m = n(203377);
+  A = n(44550),
+  d = n(770270),
+  u = n(203377);
 
 function g() {
   let {
     vanityURLCode: e,
     hasChanges: t,
     errorDetails: n
-  } = (0, s.cj)([d.Z], () => ({
-    vanityURLCode: d.Z.vanityURLCode,
-    hasChanges: d.Z.hasChanges(),
-    errorDetails: d.Z.errorDetails
+  } = (0, s.cj)([A.Z], () => ({
+    vanityURLCode: A.Z.vanityURLCode,
+    hasChanges: A.Z.hasChanges(),
+    errorDetails: A.Z.errorDetails
   })), {
     guild: g,
-    submitting: p,
-    errors: h,
-    hasChanges: f
-  } = (0, s.cj)([o.Z], () => o.Z.getProps()), b = i.useMemo(() => null != n ? (0, u.i)(null == n ? void 0 : n.code) : (0, m.LG)(h), [h, n]), x = i.useCallback(async () => {
+    submitting: f,
+    errors: m,
+    hasChanges: p
+  } = (0, s.cj)([o.Z], () => o.Z.getProps()), h = i.useMemo(() => null != n ? (0, d.i)(null == n ? void 0 : n.code) : (0, u.LG)(m), [m, n]), C = i.useCallback(async () => {
     if (null != g && (t && await (0, c.en)(g.id, e, {
         throwErr: !0
-      }), f)) {
+      }), p)) {
       let e = {
         premiumProgressBarEnabled: g.premiumProgressBarEnabled,
         banner: g.banner,
@@ -41,13 +41,13 @@ function g() {
         throwErr: !0
       })
     }
-  }, [g, f, t, e]), j = i.useCallback(() => {
+  }, [g, p, t, e]), b = i.useCallback(() => {
     null != g && (l.Z.init(g.id), (0, c.H7)())
   }, [g]);
   return (0, r.jsx)(a.Z, {
-    submitting: p,
-    errorMessage: b,
-    onSave: x,
-    onReset: j
+    submitting: f,
+    errorMessage: h,
+    onSave: C,
+    onReset: b
   })
 }

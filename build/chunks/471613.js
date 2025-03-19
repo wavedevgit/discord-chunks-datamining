@@ -1,28 +1,28 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r, i, s, a = n(442837),
   l = n(570140),
   o = n(40572),
   c = n(914010);
-let d = {},
-  u = {},
-  m = 0;
+let A = {},
+  d = {},
+  u = 0;
 class g extends(s = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
   isUploadingEmoji() {
-    return m > 0
+    return u > 0
   }
   getEmojiRevision(e) {
     var t;
-    return null !== (t = d[e]) && void 0 !== t ? t : 0
+    return null !== (t = A[e]) && void 0 !== t ? t : 0
   }
   getEmojis(e) {
-    return u[e]
+    return d[e]
   }
 }
 i = "GuildSettingsEmojiStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
@@ -31,38 +31,38 @@ i = "GuildSettingsEmojiStore", (r = "displayName") in g ? Object.defineProperty(
   configurable: !0,
   writable: !0
 }) : g[r] = i;
-let p = new g(l.Z, {
+let f = new g(l.Z, {
   EMOJI_DELETE: function(e) {
     let {
       guildId: t,
       emojiId: n
     } = e;
-    u[t] = u[t].filter(e => e.id !== n)
+    d[t] = d[t].filter(e => e.id !== n)
   },
   EMOJI_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,
       emojis: n
     } = e;
-    u[t] = n.map(e => new o.Z(e))
+    d[t] = n.map(e => new o.Z(e))
   },
   EMOJI_FETCH_FAILURE: function(e) {
     let {
       guildId: t
     } = e;
-    u[t] = []
+    d[t] = []
   },
   EMOJI_UPLOAD_START: function() {
-    m++
+    u++
   },
   EMOJI_UPLOAD_STOP: function() {
-    m--
+    u--
   },
   GUILD_EMOJIS_UPDATE: function(e) {
     var t;
     let {
       guildId: n
     } = e;
-    d[n] = (null !== (t = d[n]) && void 0 !== t ? t : 0) + 1
+    A[n] = (null !== (t = A[n]) && void 0 !== t ? t : 0) + 1
   }
 })

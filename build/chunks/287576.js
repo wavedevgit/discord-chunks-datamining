@@ -16,32 +16,32 @@ function c(e) {
     application: n,
     loading: c
   } = (0, i.Z)(e, l.wW.GUILD_ROLE_SUBSCRIPTIONS), {
-    payoutsByPeriod: d,
-    loading: u
+    payoutsByPeriod: A,
+    loading: d
   } = (0, a.Z)(null == n ? void 0 : n.id, {
     groupType: o.uw.GUILD_PRODUCT,
     teamId: null == n ? void 0 : null === (t = n.team) || void 0 === t ? void 0 : t.id
   }), {
-    currentPeriod: m,
+    currentPeriod: u,
     previousPeriods: g,
-    metrics: p
+    metrics: f
   } = r.useMemo(() => {
     let {
       currentPeriod: e,
       previousPeriods: t
-    } = (0, s.Br)(d), n = (0, s.Uj)(e, t[0]);
+    } = (0, s.Br)(A), n = (0, s.Uj)(e, t[0]);
     return {
       currentPeriod: e,
       previousPeriods: t,
       metrics: n
     }
-  }, [d]);
+  }, [A]);
   return {
-    loading: c || u,
-    payoutsByPeriod: d,
-    currentPeriod: m,
+    loading: c || d,
+    payoutsByPeriod: A,
+    currentPeriod: u,
     previousPeriods: g,
-    metrics: p,
+    metrics: f,
     application: n
   }
 }

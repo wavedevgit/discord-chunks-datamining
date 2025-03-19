@@ -18,8 +18,8 @@ var i = n(120356),
   h = n(105759),
   f = n(346497),
   x = n(422034),
-  N = n(710220),
-  b = n(318747),
+  b = n(710220),
+  N = n(318747),
   _ = n(635921),
   E = n(474936),
   j = n(388032),
@@ -67,7 +67,7 @@ let O = e => {
             variant: "display-sm",
             color: "header-primary",
             children: j.NW.string(j.t.YCZldH)
-          }), B ? (0, r.jsx)(N.Z, {
+          }), B ? (0, r.jsx)(b.Z, {
             referrer: L,
             isMarketingPageV2Enabled: !0
           }) : M && (0, r.jsx)("div", {
@@ -81,7 +81,7 @@ let O = e => {
             className: s()(C.buttonContainer, C.marketingPageV2CTAContainer, {
               [C.marketingPageV2CTAMargin]: !(M || B)
             }),
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(N.Z, {
               className: s()(C.button, S),
               forceWhite: !0
             })

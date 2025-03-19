@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -18,9 +18,9 @@ var i = n(100527),
   h = n(154784),
   f = n(267006),
   x = n(726985),
-  N = n(388032);
+  b = n(388032);
 
-function b() {
+function N() {
   let e = (0, o.Z)(),
     {
       analyticsLocations: t
@@ -33,7 +33,7 @@ function b() {
         children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(u.Z, {})]
       }), (0, r.jsx)(h.Z, {})]
     }), (0, r.jsx)(a.Z, {
-      title: N.NW.string(N.t.KDdjoq),
+      title: b.NW.string(b.t.KDdjoq),
       webSetting: x.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
       children: (0, r.jsxs)(l.Z, {
         children: [(0, r.jsx)(p.Z, {
@@ -45,7 +45,7 @@ function b() {
         })]
       })
     }), (0, r.jsx)(a.Z, {
-      title: N.NW.string(N.t["8/udY2"]),
+      title: b.NW.string(b.t["8/udY2"]),
       webSetting: x.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED,
       children: (0, r.jsx)(l.Z, {
         children: (0, r.jsx)(f.Z, {

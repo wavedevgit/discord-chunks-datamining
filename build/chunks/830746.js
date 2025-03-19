@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -18,27 +18,27 @@ var i = n(399606),
   h = n(292352),
   f = n(635357),
   x = n(388032),
-  N = n(28472);
-let b = () => {
+  b = n(28472);
+let N = () => {
   let e = (0, c.mq)(h.ne.ACTIVE),
     t = (0, o.c)(),
     n = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
-    b = (0, l.o)(x.NW.string(f.Z["5RZ8Tk"]), x.NW.string(f.Z.bmhCnJ)),
+    N = (0, l.o)(x.NW.string(f.Z["5RZ8Tk"]), x.NW.string(f.Z.bmhCnJ)),
     _ = (0, l.o)(x.NW.string(f.Z.XKnFFh), x.NW.string(f.Z["68zfxM"])),
     E = (0, l.o)(x.NW.string(f.Z["Rm/6a2"]), x.NW.string(f.Z["1xPTwM"])),
     j = (0, s.bWb)().enabled;
   return void 0 === n ? null : (0, r.jsxs)("div", {
-    className: N.container,
+    className: b.container,
     children: [(0, r.jsx)("div", {
-      className: N.banner,
+      className: b.banner,
       children: (0, r.jsx)(d.Z, {})
     }), (0, r.jsxs)("div", {
-      className: N.featureCards,
+      className: b.featureCards,
       children: [(0, r.jsx)(g.Z, {
-        iconClassName: N.chatCheckIcon,
+        iconClassName: b.chatCheckIcon,
         icon: s.eQA,
         header: x.NW.string(f.Z["001l3t"]),
-        description: b
+        description: N
       }), (0, r.jsx)(g.Z, {
         icon: s.tEF,
         header: x.NW.string(f.Z.yipAeH),

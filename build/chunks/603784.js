@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => T
 });
 var r = n(200651),
   i = n(192379),
@@ -10,26 +10,26 @@ var r = n(200651),
   l = n(91192),
   o = n(442837),
   c = n(780384),
-  d = n(481060),
-  u = n(726542),
-  m = n(100527),
+  A = n(481060),
+  d = n(726542),
+  u = n(100527),
   g = n(933557),
-  p = n(184301),
-  h = n(347475),
-  f = n(210887),
-  b = n(598077),
-  x = n(699516),
-  j = n(594174),
-  N = n(259580),
-  v = n(51144),
-  _ = n(426563),
-  y = n(909746),
-  O = n(501801),
-  C = n(981631),
-  I = n(388032),
-  E = n(152041);
+  f = n(184301),
+  m = n(347475),
+  p = n(210887),
+  h = n(598077),
+  C = n(699516),
+  b = n(594174),
+  v = n(259580),
+  x = n(51144),
+  N = n(426563),
+  j = n(909746),
+  E = n(501801),
+  I = n(981631),
+  O = n(388032),
+  y = n(152041);
 
-function S(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class P extends i.PureComponent {
+class B extends i.PureComponent {
   render() {
     let {
       user: e,
@@ -68,28 +68,28 @@ class P extends i.PureComponent {
     } = this.props;
     return (0, r.jsxs)("span", {
       onContextMenu: t,
-      className: E.userHook,
-      children: [(0, r.jsx)(d.Text, {
+      className: y.userHook,
+      children: [(0, r.jsx)(A.Text, {
         variant: "text-md/normal",
-        children: v.ZP.getUserTag(e, {
+        children: x.ZP.getUserTag(e, {
           mode: "username"
         })
-      }), "0" !== e.discriminator && (0, r.jsxs)(d.Text, {
+      }), "0" !== e.discriminator && (0, r.jsxs)(A.Text, {
         variant: "text-xs/normal",
-        className: E.discrim,
+        className: y.discrim,
         children: ["#", e.discriminator]
       })]
     })
   }
 }
-class w extends i.PureComponent {
+class D extends i.PureComponent {
   hasChangesToRender() {
     let {
       log: e
     } = this.props, {
       changes: t
     } = e;
-    return (e.actionType !== C.vB8.DELETE || e.action === C.rsA.MEMBER_BAN_ADD || e.action === C.rsA.MEMBER_KICK || e.action === C.rsA.MEMBER_PRUNE) && null != t && t.some(t => !(0, O.xO)(e, t))
+    return (e.actionType !== I.vB8.DELETE || e.action === I.rsA.MEMBER_BAN_ADD || e.action === I.rsA.MEMBER_KICK || e.action === I.rsA.MEMBER_PRUNE) && null != t && t.some(t => !(0, E.xO)(e, t))
   }
   renderTitle() {
     let {
@@ -101,25 +101,25 @@ class w extends i.PureComponent {
       user: s,
       target: a,
       options: l
-    } = e, o = y.N5(e);
+    } = e, o = j.N5(e);
     return null != o ? (0, r.jsx)("div", {
-      className: E.overflowEllipsis,
-      children: I.NW.format(o, {
+      className: y.overflowEllipsis,
+      children: O.NW.format(o, {
         user: s,
         target: a.toString(),
         userHook: (n, i) => {
-          if (null != e.user) return (0, r.jsx)(P, {
+          if (null != e.user) return (0, r.jsx)(B, {
             user: e.user,
             onContextMenu: t
           }, i);
           if (null != e.options.integration_type) {
             var s;
-            let t = u.Z.get(e.options.integration_type);
-            return null !== (s = null == t ? void 0 : t.name) && void 0 !== s ? s : I.NW.string(I.t["n+olu7"])
+            let t = d.Z.get(e.options.integration_type);
+            return null !== (s = null == t ? void 0 : t.name) && void 0 !== s ? s : O.NW.string(O.t["n+olu7"])
           }
-          return I.NW.string(I.t["30mdIy"])
+          return O.NW.string(O.t["30mdIy"])
         },
-        targetHook: (t, i) => e.targetType === C.KFR.USER && e.target instanceof b.Z ? (0, r.jsx)(P, {
+        targetHook: (t, i) => e.targetType === I.KFR.USER && e.target instanceof h.Z ? (0, r.jsx)(B, {
           user: e.target,
           onContextMenu: n
         }, i) : (0, r.jsx)("span", {
@@ -127,7 +127,7 @@ class w extends i.PureComponent {
           children: t
         }, i),
         count: l.count,
-        channel: null == l.channel || "string" == typeof l.channel ? l.channel : (0, g.F6)(l.channel, j.default, x.Z, !0),
+        channel: null == l.channel || "string" == typeof l.channel ? l.channel : (0, g.F6)(l.channel, b.default, C.Z, !0),
         channelHook: (e, t) => (0, r.jsx)("span", {
           onContextMenu: i,
           children: e
@@ -143,7 +143,7 @@ class w extends i.PureComponent {
       guild: n,
       onContentClick: i
     } = this.props;
-    return e && null != n ? (0, r.jsx)(O.tP, {
+    return e && null != n ? (0, r.jsx)(E.tP, {
       log: t,
       guild: n,
       onContentClick: i
@@ -163,37 +163,37 @@ class w extends i.PureComponent {
         integration_type: a
       }
     } = e;
-    if (null != i && null != s) return (0, r.jsx)(d.yRy, {
-      preload: () => (0, p.Z)(s, i.getAvatarURL(t, 80), {
+    if (null != i && null != s) return (0, r.jsx)(A.yRy, {
+      preload: () => (0, f.Z)(s, i.getAvatarURL(t, 80), {
         guildId: t
       }),
-      renderPopout: e => (0, r.jsx)(h.Z, T(S({}, e), {
+      renderPopout: e => (0, r.jsx)(m.Z, P(w({}, e), {
         userId: s,
         guildId: t,
-        newAnalyticsLocations: [m.Z.AVATAR]
+        newAnalyticsLocations: [u.Z.AVATAR]
       })),
       children: n => {
         var i;
-        return (0, r.jsx)(d.qEK, T(S({}, n), {
+        return (0, r.jsx)(A.qEK, P(w({}, n), {
           onClick: e => {
             e.stopPropagation(), n.onClick(e)
           },
-          className: E.avatar,
-          src: e.action === C.rsA.AUTO_MODERATION_BLOCK_MESSAGE || e.action === C.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || e.action === C.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || e.action === C.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, _.j)() : null === (i = e.user) || void 0 === i ? void 0 : i.getAvatarURL(t, 40),
+          className: y.avatar,
+          src: e.action === I.rsA.AUTO_MODERATION_BLOCK_MESSAGE || e.action === I.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || e.action === I.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || e.action === I.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, N.j)() : null === (i = e.user) || void 0 === i ? void 0 : i.getAvatarURL(t, 40),
           "aria-hidden": !0,
-          size: d.EFr.SIZE_40
+          size: A.EFr.SIZE_40
         }))
       }
     });
     if (null != a) {
-      let e = u.Z.get(a);
+      let e = d.Z.get(a);
       if (null != e) {
         let t = (0, c.wj)(n) ? e.icon.darkSVG : e.icon.lightSVG;
-        return (0, r.jsx)(d.qEK, {
-          className: E.avatar,
+        return (0, r.jsx)(A.qEK, {
+          className: y.avatar,
           src: t,
           "aria-hidden": !0,
-          size: d.EFr.SIZE_40
+          size: A.EFr.SIZE_40
         })
       }
     }
@@ -206,52 +206,52 @@ class w extends i.PureComponent {
       className: n,
       expanded: i,
       onHeaderClick: s
-    } = this.props, o = this.hasChangesToRender(), c = E.headerDefault;
-    i ? c = E.headerExpanded : o && (c = E.headerClickable);
-    let u = t.timestampStart.calendar(),
-      m = t.timestampEnd.calendar();
-    e = u === m ? (0, r.jsx)(d.Text, {
-      className: E.timestamp,
+    } = this.props, o = this.hasChangesToRender(), c = y.headerDefault;
+    i ? c = y.headerExpanded : o && (c = y.headerClickable);
+    let d = t.timestampStart.calendar(),
+      u = t.timestampEnd.calendar();
+    e = d === u ? (0, r.jsx)(A.Text, {
+      className: y.timestamp,
       variant: "text-sm/normal",
-      children: u
-    }) : (0, r.jsxs)(d.Text, {
-      className: E.timestamp,
+      children: d
+    }) : (0, r.jsxs)(A.Text, {
+      className: y.timestamp,
       variant: "text-sm/normal",
-      children: [u, "—", m]
+      children: [d, "—", u]
     });
-    let g = o ? s : C.dG4;
+    let g = o ? s : I.dG4;
     return (0, r.jsx)(l.mh, {
       id: t.id,
       children: s => (0, r.jsxs)("div", {
-        className: a()(E.auditLog, n),
-        children: [(0, r.jsxs)(d.P3F, T(S({
+        className: a()(y.auditLog, n),
+        children: [(0, r.jsxs)(A.P3F, P(w({
           className: c,
           "aria-expanded": i,
           onClick: g
         }, s), {
-          children: [(0, r.jsx)(O.mp, {
+          children: [(0, r.jsx)(E.mp, {
             action: t.action,
             actionType: t.actionType,
             targetType: t.targetType
           }), this.renderEntryAvatar(), (0, r.jsxs)("div", {
-            className: E.timeWrap,
+            className: y.timeWrap,
             children: [(0, r.jsx)("div", {
-              className: E.title,
+              className: y.title,
               children: this.renderTitle()
             }), e]
-          }), o ? (0, r.jsx)(N.Z, {
-            className: E.expand,
-            foreground: E.expandForeground,
+          }), o ? (0, r.jsx)(v.Z, {
+            className: y.expand,
+            foreground: y.expandForeground,
             expanded: i,
             "aria-hidden": !0
           }) : null]
         })), i ? (0, r.jsx)("div", {
-          className: E.divider
+          className: y.divider
         }) : null, this.renderChangeSummary()]
       })
     })
   }
 }
-let R = o.ZP.connectStores([f.Z], () => ({
-  theme: f.Z.theme
-}))(w)
+let T = o.ZP.connectStores([p.Z], () => ({
+  theme: p.Z.theme
+}))(D)

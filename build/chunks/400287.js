@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -18,14 +18,14 @@ var i = n(120356),
   h = n(726985),
   f = n(981631),
   x = n(388032),
-  N = n(802138);
+  b = n(802138);
 
-function b() {
+function N() {
   let e = (0, c.pR)(),
     t = (0, c.Ju)(),
     n = p.fq.useSetting(),
     i = p.eR.useSetting(),
-    b = (0, u.V2)({
+    N = (0, u.V2)({
       location: "UserSettingsTextImages"
     }),
     _ = p.R$.useSetting(),
@@ -46,12 +46,12 @@ function b() {
     children: [(0, r.jsxs)(m.F, {
       setting: h.s6.CHAT_INLINE_MEDIA,
       children: [(0, r.jsx)(a.vwX, {
-        className: N.marginBottom8,
+        className: b.marginBottom8,
         children: x.NW.string(x.t.U68Dgo)
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_INLINE_MEDIA_LINKS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(N.marginTop8, N.marginBottom20),
+          className: s()(b.marginTop8, b.marginBottom20),
           value: S,
           onChange: p.RS.updateSetting,
           children: x.NW.string(x.t.U47N1t)
@@ -59,7 +59,7 @@ function b() {
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_INLINE_MEDIA_UPLOADS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(N.marginTop8, N.marginBottom20),
+          className: s()(b.marginTop8, b.marginBottom20),
           value: v,
           note: x.NW.formatToPlainString(x.t.qjjvqK, {
             maxSize: 10
@@ -70,7 +70,7 @@ function b() {
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(N.marginTop8, N.marginBottom40),
+          className: s()(b.marginTop8, b.marginBottom40),
           value: C,
           note: x.NW.string(x.t.T0rbtL),
           onChange: p.H1.updateSetting,
@@ -80,12 +80,12 @@ function b() {
     }), (0, r.jsxs)(m.F, {
       setting: h.s6.CHAT_EMBEDS,
       children: [(0, r.jsx)(a.vwX, {
-        className: N.marginBottom8,
+        className: b.marginBottom8,
         children: x.NW.string(x.t.PWZOn5)
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_EMBEDS_LINK_PREVIEWS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(N.marginTop8, N.marginBottom40),
+          className: s()(b.marginTop8, b.marginBottom40),
           value: T,
           onChange: p.NA.updateSetting,
           children: x.NW.string(x.t.xX0ZTE)
@@ -94,12 +94,12 @@ function b() {
     }), (0, r.jsxs)(m.F, {
       setting: h.s6.CHAT_EMOJI,
       children: [(0, r.jsx)(a.vwX, {
-        className: N.marginBottom8,
+        className: b.marginBottom8,
         children: x.NW.string(x.t.sMOuub)
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_EMOJI_REACTIONS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(N.marginTop8, N.marginBottom20),
+          className: s()(b.marginTop8, b.marginBottom20),
           value: I,
           onChange: p.nc.updateSetting,
           children: x.NW.string(x.t.Iv24sr)
@@ -107,7 +107,7 @@ function b() {
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_EMOJI_EMOTICONS,
         children: (0, r.jsx)(a.j7V, {
-          className: N.marginBottom40,
+          className: b.marginBottom40,
           value: O,
           note: d.Z.parse(x.NW.string(x.t["20dvub"])),
           onChange: p.ev.updateSetting,
@@ -117,14 +117,14 @@ function b() {
     }), (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_STICKERS,
       children: (0, r.jsxs)(a.hjN, {
-        className: N.marginBottom8,
+        className: b.marginBottom8,
         children: [(0, r.jsx)(a.vwX, {
-          className: N.marginBottom8,
+          className: b.marginBottom8,
           children: x.NW.string(x.t["6NtAuL"])
         }), t ? null : (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_STICKERS_SUGGESTIONS,
           children: (0, r.jsx)(a.j7V, {
-            className: s()(N.marginTop8, N.marginBottom20),
+            className: s()(b.marginTop8, b.marginBottom20),
             value: e,
             note: x.NW.string(x.t.r3uQUV),
             onChange: t => {
@@ -141,7 +141,7 @@ function b() {
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_STICKERS_AUTOCOMPLETE,
           children: (0, r.jsx)(a.j7V, {
-            className: N.marginBottom40,
+            className: b.marginBottom40,
             value: n,
             note: x.NW.string(x.t["/eVrj4"]),
             onChange: e => {
@@ -157,17 +157,17 @@ function b() {
           })
         })]
       })
-    }), b && (0, r.jsx)(m.F, {
+    }), N && (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_SOUNDMOJI,
       children: (0, r.jsxs)(a.hjN, {
-        className: N.marginBottom8,
+        className: b.marginBottom8,
         children: [(0, r.jsx)(a.vwX, {
-          className: N.marginBottom8,
+          className: b.marginBottom8,
           children: x.NW.string(x.t.EHlAMT)
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_SOUNDMOJI_AUTOCOMPLETE,
           children: (0, r.jsx)(a.j7V, {
-            className: N.marginBottom40,
+            className: b.marginBottom40,
             value: i,
             note: x.NW.string(x.t.hrSIhI),
             onChange: e => {
@@ -185,14 +185,14 @@ function b() {
     }), (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_TEXT_BOX,
       children: (0, r.jsxs)(a.hjN, {
-        className: N.marginBottom8,
+        className: b.marginBottom8,
         children: [(0, r.jsx)(a.vwX, {
-          className: N.marginBottom8,
+          className: b.marginBottom8,
           children: x.NW.string(x.t.afR0pK)
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_TEXT_BOX_PREVIEW,
           children: (0, r.jsx)(a.j7V, {
-            className: s()(N.marginTop8, N.marginBottom40),
+            className: s()(b.marginTop8, b.marginBottom40),
             value: _,
             onChange: e => {
               g.default.track(f.rMx.PREVIEW_MARKDOWN_TOGGLED, {
@@ -209,14 +209,14 @@ function b() {
     }), (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_THREADS,
       children: (0, r.jsxs)(a.hjN, {
-        className: N.marginBottom40,
+        className: b.marginBottom40,
         children: [(0, r.jsx)(a.vwX, {
-          className: N.marginBottom8,
+          className: b.marginBottom8,
           children: x.NW.string(x.t.B2panJ)
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_THREADS_SPLIT_VIEW,
           children: (0, r.jsx)(a.j7V, {
-            className: N.marginTop8,
+            className: b.marginTop8,
             value: j,
             onChange: p.vF.updateSetting,
             children: x.NW.string(x.t.AInv5u)
@@ -229,7 +229,7 @@ function b() {
         title: x.NW.string(x.t.QgwmV1),
         children: [(0, r.jsx)(a.R94, {
           type: a.R94.Types.DESCRIPTION,
-          className: N.marginBottom8,
+          className: b.marginBottom8,
           children: x.NW.string(x.t.TYnRkZ)
         }), (0, r.jsx)(a.FXm, {
           options: [{

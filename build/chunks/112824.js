@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  R: () => x,
-  Z: () => j
+  R: () => C,
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -12,14 +12,14 @@ var i = n(120356),
   l = n(442837),
   o = n(481060),
   c = n(430824),
-  d = n(496675),
-  u = n(700785),
-  m = n(647086),
+  A = n(496675),
+  d = n(700785),
+  u = n(647086),
   g = n(135899),
-  p = n(388032),
-  h = n(713401);
+  f = n(388032),
+  m = n(713401);
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,53 +51,53 @@ function b(e, t) {
   }), e
 }
 
-function x(e) {
-  return g.$X.filter(t => (null == e ? void 0 : e.id) !== m._ && u.oz(t, e))
+function C(e) {
+  return g.$X.filter(t => (null == e ? void 0 : e.id) !== u._ && d.oz(t, e))
 }
 
-function j(e) {
+function b(e) {
   let {
     guild: t
-  } = e, i = (0, l.e7)([c.Z], () => c.Z.getRole(t.id, t.getEveryoneRoleId())), u = x(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
-    [i.id]: b(f({}, i), {
+  } = e, i = (0, l.e7)([c.Z], () => c.Z.getRole(t.id, t.getEveryoneRoleId())), d = C(t), u = d.length > 0, b = g.$X.some(e => !A.Z.can(e, t, null, {
+    [i.id]: h(p({}, i), {
       permissions: a.Od(i.permissions, e)
     })
-  })), N = (0, r.jsxs)(r.Fragment, {
+  })), v = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: h.itemContent,
+      className: m.itemContent,
       children: [(0, r.jsx)(o.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: p.NW.string(p.t["+vaUlJ"])
+        children: f.NW.string(f.t["+vaUlJ"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: p.NW.format(p.t.RXAtdH, {
-          numPerms: u.length
+        children: f.NW.format(f.t.RXAtdH, {
+          numPerms: d.length
         })
       })]
-    }), m ? (0, r.jsx)(o.P4T, {
+    }), u ? (0, r.jsx)(o.P4T, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: h.warning,
-      "aria-label": p.NW.string(p.t.bG7Gu7)
+      className: m.warning,
+      "aria-label": f.NW.string(f.t.bG7Gu7)
     }) : (0, r.jsx)(o.owK, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: h.check,
-      "aria-label": p.NW.string(p.t["YQix8/"])
+      className: m.check,
+      "aria-label": f.NW.string(f.t["YQix8/"])
     })]
   });
-  return m ? j ? (0, r.jsx)(o.ua7, {
-    text: p.NW.string(p.t["E5v/a2"]),
-    children: e => (0, r.jsx)("div", b(f({
-      className: s()(h.simpleItemWrapper, h.disabled)
+  return u ? b ? (0, r.jsx)(o.ua7, {
+    text: f.NW.string(f.t["E5v/a2"]),
+    children: e => (0, r.jsx)("div", h(p({
+      className: s()(m.simpleItemWrapper, m.disabled)
     }, e), {
-      children: N
+      children: v
     }))
   }) : (0, r.jsx)(o.P3F, {
     onClick: () => {
@@ -105,15 +105,15 @@ function j(e) {
         let {
           default: e
         } = await n.e("39627").then(n.bind(n, 193845));
-        return n => (0, r.jsx)(e, f({
+        return n => (0, r.jsx)(e, p({
           guild: t
         }, n))
       })
     },
-    className: s()(h.simpleItemWrapper, h.clickable),
-    children: N
+    className: s()(m.simpleItemWrapper, m.clickable),
+    children: v
   }) : (0, r.jsx)("div", {
-    className: h.simpleItemWrapper,
-    children: N
+    className: m.simpleItemWrapper,
+    children: v
   })
 }

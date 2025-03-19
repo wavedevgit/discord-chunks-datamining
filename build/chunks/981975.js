@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120), n(653041), n(86693), n(536091);
 var r = n(200651),
   i = n(192379),
@@ -10,25 +10,25 @@ var r = n(200651),
   l = n(392711),
   o = n.n(l),
   c = n(442837),
-  d = n(481060),
-  u = n(570140),
-  m = n(275759),
+  A = n(481060),
+  d = n(570140),
+  u = n(275759),
   g = n(313201),
-  p = n(63063),
-  h = n(243730),
-  f = n(764260),
-  b = n(946724),
-  x = n(95242),
-  j = n(530198),
-  N = n(420966),
-  v = n(203377),
-  _ = n(981631),
-  y = n(856651),
-  O = n(388032),
-  C = n(85177),
-  I = n(104978);
+  f = n(63063),
+  m = n(243730),
+  p = n(764260),
+  h = n(946724),
+  C = n(95242),
+  b = n(530198),
+  v = n(420966),
+  x = n(203377),
+  N = n(981631),
+  j = n(856651),
+  E = n(388032),
+  I = n(85177),
+  O = n(104978);
 
-function E(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,44 +46,44 @@ function E(e) {
   }
   return e
 }
-let S = (0, g.hQ)();
+let w = (0, g.hQ)();
 
-function T(e, t) {
-  return t !== m.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
+function P(e, t) {
+  return t !== u.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
     [...e]
   ]
 }
 
-function P(e) {
+function B(e) {
   let {
     handleAddVerificationClicked: t,
     locked: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: C.headerNoConfigContainer,
-    children: [(0, r.jsx)(d.X6q, {
-      className: C.headerHeading,
+    className: I.headerNoConfigContainer,
+    children: [(0, r.jsx)(A.X6q, {
+      className: I.headerHeading,
       variant: "eyebrow",
-      children: O.NW.string(O.t.nMir29)
-    }), (0, r.jsx)(d.Text, {
+      children: E.NW.string(E.t.nMir29)
+    }), (0, r.jsx)(A.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: O.NW.format(O.t.q5f7tL, {
-        helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+      children: E.NW.format(E.t.q5f7tL, {
+        helpdeskArticleUrl: f.Z.getArticleURL(N.BhN.CONNECTION_DETAILS_ADMIN)
       })
-    }), (0, r.jsx)(d.zxk, {
+    }), (0, r.jsx)(A.zxk, {
       disabled: n,
-      className: C.addVerificationButton,
-      size: d.zxk.Sizes.MEDIUM,
-      look: d.zxk.Looks.FILLED,
-      color: d.zxk.Colors.BRAND,
+      className: I.addVerificationButton,
+      size: A.zxk.Sizes.MEDIUM,
+      look: A.zxk.Looks.FILLED,
+      color: A.zxk.Colors.BRAND,
       onClick: t,
-      children: O.NW.string(O.t["OSvW5+"])
+      children: E.NW.string(E.t["OSvW5+"])
     })]
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     guild: t,
     role: n,
@@ -92,109 +92,109 @@ function w(e) {
     integrations: o
   } = e, {
     headerHeight: g,
-    headerRef: w
-  } = (0, x.Z)(0), {
-    scrolledToTop: R,
-    handleScroll: Z
-  } = (0, N.V)(), D = (0, c.e7)([h.Z], () => {
+    headerRef: D
+  } = (0, C.Z)(0), {
+    scrolledToTop: T,
+    handleScroll: S
+  } = (0, v.V)(), L = (0, c.e7)([m.Z], () => {
     var e;
-    return null === (e = h.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[n.id]
-  }, [n.id, t.id]), k = (0, c.Wu)([b.Z], () => {
+    return null === (e = m.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[n.id]
+  }, [n.id, t.id]), R = (0, c.Wu)([h.Z], () => {
     var e;
-    return null !== (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) && void 0 !== e ? e : []
-  }), A = k.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => A === m.O1.OR ? k.flat() : null != k && k.length > 0 ? k[0] : [], [A, k]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
+    return null !== (e = h.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) && void 0 !== e ? e : []
+  }), Q = R.length > 1 ? u.O1.OR : u.O1.AND, Z = i.useMemo(() => Q === u.O1.OR ? R.flat() : null != R && R.length > 0 ? R[0] : [], [Q, R]), W = i.useMemo(() => new Set(Z.map(e => e.connectionType)), [Z]);
 
-  function M(e) {
+  function k(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
-      r = [...W];
+      r = [...Z];
     r.push({
       connectionType: e,
       connectionMetadataField: void 0,
       applicationId: t,
       operator: void 0,
       value: void 0
-    }), (0, f.d_)(n.id, T(r, A))
+    }), (0, p.d_)(n.id, P(r, Q))
   }
 
-  function G() {
-    u.Z.dispatch({
+  function M() {
+    d.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: e => M(e),
-      excludedPlatformTypes: L,
+      onComplete: e => k(e),
+      excludedPlatformTypes: W,
       integrations: o,
-      onCompleteApplication: e => M(y.Kt, e)
+      onCompleteApplication: e => k(j.Kt, e)
     })
   }
-  let U = null;
-  if (0 === W.length) U = (0, r.jsx)(P, {
-    handleAddVerificationClicked: G,
+  let _ = null;
+  if (0 === Z.length) _ = (0, r.jsx)(B, {
+    handleAddVerificationClicked: M,
     locked: s
   });
-  else if (W.length > 0) {
-    var B;
+  else if (Z.length > 0) {
+    var G;
     let e = null;
-    W.length < 10 && (e = (0, r.jsx)(d.zxk, {
-      className: a()(C.addVerificationButton, C.addVerificationButtonAppend),
-      size: d.zxk.Sizes.LARGE,
-      look: d.zxk.Looks.BLANK,
-      color: d.zxk.Colors.LINK,
-      onClick: G,
+    Z.length < 10 && (e = (0, r.jsx)(A.zxk, {
+      className: a()(I.addVerificationButton, I.addVerificationButtonAppend),
+      size: A.zxk.Sizes.LARGE,
+      look: A.zxk.Looks.BLANK,
+      color: A.zxk.Colors.LINK,
+      onClick: M,
       disabled: s,
       children: (0, r.jsxs)("div", {
-        className: C.addVerificationButtonAppendTextContainer,
-        children: [(0, r.jsx)(d.oFk, {
+        className: I.addVerificationButtonAppendTextContainer,
+        children: [(0, r.jsx)(A.oFk, {
           size: "xs",
           color: "currentColor"
-        }), O.NW.string(O.t["OSvW5+"])]
+        }), E.NW.string(E.t["OSvW5+"])]
       })
-    })), U = (0, r.jsxs)(r.Fragment, {
-      children: [(B = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
+    })), _ = (0, r.jsxs)(r.Fragment, {
+      children: [(G = () => (0, p.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: C.headerTitleContainer,
+          className: I.headerTitleContainer,
           children: [(0, r.jsx)("div", {
-            className: C.headerTitleTextContainer,
-            children: (0, r.jsx)(d.X6q, {
+            className: I.headerTitleTextContainer,
+            children: (0, r.jsx)(A.X6q, {
               variant: "eyebrow",
-              children: O.NW.string(O.t.nMir29)
+              children: E.NW.string(E.t.nMir29)
             })
-          }), (0, r.jsx)(d.zxk, {
-            className: C.headerTitleButton,
-            size: d.zxk.Sizes.TINY,
-            look: d.zxk.Looks.LINK,
-            color: d.zxk.Colors.LINK,
-            onClick: B,
+          }), (0, r.jsx)(A.zxk, {
+            className: I.headerTitleButton,
+            size: A.zxk.Sizes.TINY,
+            look: A.zxk.Looks.LINK,
+            color: A.zxk.Colors.LINK,
+            onClick: G,
             disabled: s,
-            children: O.NW.string(O.t.ntW1cX)
+            children: E.NW.string(E.t.ntW1cX)
           })]
-        }), (0, r.jsx)(d.Text, {
+        }), (0, r.jsx)(A.Text, {
           variant: "text-sm/normal",
-          children: O.NW.format(O.t.q5f7tL, {
-            helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+          children: E.NW.format(E.t.q5f7tL, {
+            helpdeskArticleUrl: f.Z.getArticleURL(N.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, s) {
-        let a = T(i, m.O1.OR);
-        return (0, r.jsx)(d.xJW, {
-          className: C.operatorContainer,
-          title: O.NW.string(O.t.Xs7PHR),
-          children: (0, r.jsx)(d.FXm, {
+        let a = P(i, u.O1.OR);
+        return (0, r.jsx)(A.xJW, {
+          className: I.operatorContainer,
+          title: E.NW.string(E.t.Xs7PHR),
+          children: (0, r.jsx)(A.FXm, {
             options: [{
-              name: O.NW.string(O.t["W3iY5+"]),
-              value: m.O1.OR
+              name: E.NW.string(E.t["W3iY5+"]),
+              value: u.O1.OR
             }, {
-              name: O.NW.string(O.t.gHXS9P),
-              value: m.O1.AND
+              name: E.NW.string(E.t.gHXS9P),
+              value: u.O1.AND
             }],
             onChange: e => s(i, e.value),
             value: n,
             disabled: e || a.length < 2,
-            "aria-labelledby": S
+            "aria-labelledby": w
           })
         })
-      }(s, n.id, A, W, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
+      }(s, n.id, Q, Z, (e, t) => (0, p.d_)(n.id, P(e, t))), function(e, t, n, i, s) {
         function a(n, r) {
           let i = [];
-          for (let t of e) i.push(E({}, t));
+          for (let t of e) i.push(y({}, t));
           if (null == n) {
             let t = e[r];
             null !== t && null == t.connectionMetadataField && null == t.operator && null == t.value ? i = i.filter(e => null == t.applicationId ? e.connectionType !== t.connectionType : e.connectionType !== t.connectionType && e.applicationId !== t.applicationId) : i.splice(r, 1)
@@ -232,7 +232,7 @@ function w(e) {
               })(Object(t)).forEach(function(n) {
                 Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
               }), e
-            }(E({}, t[0].configuration), {
+            }(y({}, t[0].configuration), {
               connectionMetadataField: void 0,
               operator: void 0,
               value: void 0
@@ -244,50 +244,50 @@ function w(e) {
           })
         }
         return (0, r.jsx)("div", {
-          className: C.configurationsContainer,
-          children: Array.from(l.values()).map(e => (0, r.jsx)(j.Z, {
+          className: I.configurationsContainer,
+          children: Array.from(l.values()).map(e => (0, r.jsx)(b.Z, {
             configurationItems: e,
             onConfigurationChange: a,
             locked: n,
             integrations: s
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(W, e => (0, f.d_)(n.id, T(e, A)), s, n.id, o), e]
+      }(Z, e => (0, p.d_)(n.id, P(e, Q)), s, n.id, o), e]
     })
   }
-  return (0, r.jsx)(d.yWw, {
-    className: C.scroller,
+  return (0, r.jsx)(A.yWw, {
+    className: I.scroller,
     style: {
       scrollPaddingTop: g
     },
-    onScroll: Z,
+    onScroll: S,
     children: (0, r.jsxs)("div", {
-      className: I.contentWidth,
+      className: O.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: a()(I.header, I.stickyHeader, {
-          [I.stickyHeaderElevated]: !R
+        className: a()(O.header, O.stickyHeader, {
+          [O.stickyHeaderElevated]: !T
         }),
-        ref: w,
-        children: (0, r.jsx)(N.Z, {
+        ref: D,
+        children: (0, r.jsx)(v.Z, {
           guild: t,
           role: n,
-          selectedSection: v.ZI.VERIFICATIONS,
+          selectedSection: x.ZI.VERIFICATIONS,
           setSelectedSection: l
         })
-      }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
-        className: C.warningContainer,
-        children: [(0, r.jsx)(d.P4T, {
+      }), (null != L ? L : 0) > 0 ? (0, r.jsxs)("div", {
+        className: I.warningContainer,
+        children: [(0, r.jsx)(A.P4T, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
-          className: C.warningIcon
-        }), (0, r.jsx)(d.Text, {
+          className: I.warningIcon
+        }), (0, r.jsx)(A.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: O.NW.string(O.t["2aFeeX"])
+          children: E.NW.string(E.t["2aFeeX"])
         })]
-      }) : null, U]
+      }) : null, _]
     })
   })
 }

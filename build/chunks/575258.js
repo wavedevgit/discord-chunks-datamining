@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(266796);
 var r, i = n(442837),
   s = n(570140),
@@ -21,27 +21,27 @@ let c = {
     channels: [],
     enabled: !1
   },
-  d = c,
+  A = c,
+  d = !1,
   u = !1,
-  m = !1,
   g = c;
 
-function p(e) {
+function f(e) {
   let {
     welcomeScreen: t,
     guildId: n
   } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, s;
-    g = d = {
+    g = A = {
       description: null !== (i = t.description) && void 0 !== i ? i : "",
       channels: null !== (s = t.welcome_channels) && void 0 !== s ? s : [],
       enabled: null == r ? void 0 : r.hasFeature(l.oNc.WELCOME_SCREEN_ENABLED)
     }
-  } else g = d = c;
-  m = !1
+  } else g = A = c;
+  u = !1
 }
-class h extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(a.Z)
   }
@@ -49,26 +49,26 @@ class h extends(r = i.ZP.Store) {
     return g
   }
   showNotice() {
-    return m
+    return u
   }
   getSettingsProps() {
     return {
-      submitting: u,
-      hasErrors: m,
+      submitting: d,
+      hasErrors: u,
       welcomeSettings: g,
-      originalWelcomeSettings: d
+      originalWelcomeSettings: A
     }
   }
 }
-o(h, "displayName", "WelcomeScreenSettingsStore");
-let f = new h(s.Z, {
-  WELCOME_SCREEN_FETCH_SUCCESS: p,
-  WELCOME_SCREEN_UPDATE: p,
+o(m, "displayName", "WelcomeScreenSettingsStore");
+let p = new m(s.Z, {
+  WELCOME_SCREEN_FETCH_SUCCESS: f,
+  WELCOME_SCREEN_UPDATE: f,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
-    g = d, m = !1
+    g = A, u = !1
   },
   WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-    g = c, d = c
+    g = c, A = c
   },
   WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
     let {
@@ -88,12 +88,12 @@ let f = new h(s.Z, {
     }({}, g, t)
   },
   WELCOME_SCREEN_SUBMIT: function() {
-    u = !0
+    d = !0
   },
   WELCOME_SCREEN_SUBMIT_SUCCESS: function(e) {
-    p(e), u = !1
+    f(e), d = !1
   },
   WELCOME_SCREEN_SUBMIT_FAILURE: function() {
-    m = !0, u = !1
+    u = !0, d = !1
   }
 })

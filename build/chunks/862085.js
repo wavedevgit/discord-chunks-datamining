@@ -16,18 +16,18 @@ function o(e) {
     triggerType: n,
     toggled: o,
     onToggleAction: c
-  } = e, d = e => () => c(e), u = (0, s.c)(t.type, t, n);
-  if (null == u) return null;
+  } = e, A = e => () => c(e), d = (0, s.c)(t.type, t, n);
+  if (null == d) return null;
   let {
-    headerText: m,
+    headerText: u,
     descriptionText: g,
-    icon: p
-  } = u;
+    icon: f
+  } = d;
   return (0, r.jsxs)("div", {
     className: l.actionContainer,
     children: [(0, r.jsx)("div", {
       className: l.actionIconContainer,
-      children: (0, r.jsx)(p, {
+      children: (0, r.jsx)(f, {
         size: "custom",
         color: "currentColor",
         className: l.actionIcon
@@ -36,7 +36,7 @@ function o(e) {
       className: l.actionTextContainer,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-sm/semibold",
-        children: m
+        children: u
       }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
@@ -45,7 +45,7 @@ function o(e) {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [a.NW.string(a.t.Oa9oWF), (0, r.jsx)(i.P3F, {
-          onClick: d(!0),
+          onClick: A(!0),
           className: l.editChannel,
           tag: "span",
           role: "link",
@@ -56,7 +56,7 @@ function o(e) {
       children: (0, r.jsx)(i.XZJ, {
         type: i.XZJ.Types.INVERTED,
         value: o,
-        onChange: d(!1),
+        onChange: A(!1),
         className: l.__invalid_actionCheckbox
       })
     })]

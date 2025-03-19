@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  h: () => h
+  h: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -10,43 +10,43 @@ var r = n(200651),
   l = n(442837),
   o = n(481060),
   c = n(496675),
-  d = n(63063),
-  u = n(384632),
-  m = n(981631),
+  A = n(63063),
+  d = n(384632),
+  u = n(981631),
   g = n(388032),
-  p = n(987708);
+  f = n(987708);
 
-function h(e) {
+function m(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: s
-  } = e, h = s.hasFeature(m.oNc.COMMUNITY), f = (0, l.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, s)), b = i.useMemo(() => {
-    let e = t === u.A.DISCOVERABLE && !f,
-      n = h && (t === u.A.DISCOVERABLE || f);
+  } = e, m = s.hasFeature(u.oNc.COMMUNITY), p = (0, l.e7)([c.Z], () => c.Z.can(u.Plq.ADMINISTRATOR, s)), h = i.useMemo(() => {
+    let e = t === d.A.DISCOVERABLE && !p,
+      n = m && (t === d.A.DISCOVERABLE || p);
     return [{
-      id: u.A.INVITE,
+      id: d.A.INVITE,
       title: g.NW.string(g.t["HQVS/P"]),
       body: g.NW.string(g.t.KzXzFR),
       icon: o.mBM,
       enabled: !e,
       ineligibleText: g.NW.string(g.t.LIZgwM)
     }, {
-      id: u.A.APPLY,
+      id: d.A.APPLY,
       title: g.NW.string(g.t.LrFEYW),
       body: g.NW.string(g.t.kJj2oK),
       icon: o._XJ,
       enabled: !e,
       ineligibleText: g.NW.string(g.t.LIZgwM)
     }, {
-      id: u.A.DISCOVERABLE,
+      id: d.A.DISCOVERABLE,
       title: g.NW.string(g.t.lhOHLy),
       body: g.NW.string(g.t.pqQylZ),
       icon: o.enf,
       enabled: n,
-      ineligibleText: h ? g.NW.string(g.t.iBpXPj) : g.NW.string(g.t["5TQ+eH"])
+      ineligibleText: m ? g.NW.string(g.t.iBpXPj) : g.NW.string(g.t["5TQ+eH"])
     }]
-  }, [t, h, f]);
+  }, [t, m, p]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.X6q, {
       color: "header-primary",
@@ -55,22 +55,22 @@ function h(e) {
     }), (0, r.jsx)(o.Text, {
       color: "text-secondary",
       variant: "text-sm/medium",
-      className: p.bodyText,
+      className: f.bodyText,
       children: g.NW.format(g.t["Y/jYws"], {
-        helpdeskArticle: d.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
+        helpdeskArticle: A.Z.getArticleURL(u.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(o.njP, {
       selectedItem: t,
       onItemSelect: n,
       orientation: "horizontal",
-      className: p.joinOptions,
-      children: b.map(e => {
+      className: f.joinOptions,
+      children: h.map(e => {
         let n = e.id === t;
         return (0, r.jsx)(o.njP.Item, {
           id: e.id,
           selectedItem: t,
           disableItemStyles: !0,
-          className: p.joinOptionTab,
+          className: f.joinOptionTab,
           disabled: !e.enabled,
           "aria-label": e.title,
           children: (0, r.jsx)(o.DY3, {
@@ -79,12 +79,12 @@ function h(e) {
             shouldShow: !e.enabled,
             spacing: 16,
             hideOnClick: !1,
-            className: p.tooltipContainer,
-            tooltipClassName: p.tooltip,
+            className: f.tooltipContainer,
+            tooltipClassName: f.tooltip,
             children: (0, r.jsxs)("div", {
-              className: a()(p.joinOptionContent, {
-                [p.active]: n,
-                [p.uninteractive]: !e.enabled
+              className: a()(f.joinOptionContent, {
+                [f.active]: n,
+                [f.uninteractive]: !e.enabled
               }),
               children: [(0, r.jsx)(e.icon, {
                 size: "md",

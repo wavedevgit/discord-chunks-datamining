@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -10,75 +10,75 @@ var r = n(200651),
   l = n(481060),
   o = n(605236),
   c = n(874993),
-  d = n(768762),
-  u = n(430824),
-  m = n(999382),
+  A = n(768762),
+  d = n(430824),
+  u = n(999382),
   g = n(84613),
-  p = n(392885),
-  h = n(740903),
-  f = n(464610),
-  b = n(733629),
-  x = n(598622),
-  j = n(921944),
-  N = n(388032),
-  v = n(713401);
+  f = n(392885),
+  m = n(740903),
+  p = n(464610),
+  h = n(733629),
+  C = n(598622),
+  b = n(921944),
+  v = n(388032),
+  x = n(713401);
 
-function _() {
+function N() {
   let e;
-  let t = (0, s.e7)([m.Z], () => m.Z.getGuildId()),
-    n = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
-    _ = (0, s.e7)([p.Z], () => p.Z.getCurrentPage());
+  let t = (0, s.e7)([u.Z], () => u.Z.getGuildId()),
+    n = (0, s.e7)([d.Z], () => d.Z.getGuild(t)),
+    N = (0, s.e7)([f.Z], () => f.Z.getCurrentPage());
   if (i.useEffect(() => {
       (0, o.EW)(a.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
-        dismissAction: j.L.AUTO
+        dismissAction: b.L.AUTO
       })
     }, []), null == n) return null;
-  let y = (0, x.Q)(n);
-  switch (_) {
-    case h.u.OVERVIEW:
-      e = (0, r.jsx)(f.Z, {
+  let j = (0, C.Q)(n);
+  switch (N) {
+    case m.u.OVERVIEW:
+      e = (0, r.jsx)(p.Z, {
         guild: n
       });
       break;
-    case h.u.CAPTCHA_AND_RAID_PROTECTION:
-      e = (0, r.jsx)(b.Z, {
-        title: N.NW.string(N.t["53eF5u"]),
-        settings: y[h.u.CAPTCHA_AND_RAID_PROTECTION]
+    case m.u.CAPTCHA_AND_RAID_PROTECTION:
+      e = (0, r.jsx)(h.Z, {
+        title: v.NW.string(v.t["53eF5u"]),
+        settings: j[m.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
-    case h.u.DM_AND_SPAM_PROTECTION:
-      e = (0, r.jsx)(b.Z, {
-        title: N.NW.string(N.t.O0SfFx),
-        settings: y[h.u.DM_AND_SPAM_PROTECTION]
+    case m.u.DM_AND_SPAM_PROTECTION:
+      e = (0, r.jsx)(h.Z, {
+        title: v.NW.string(v.t.O0SfFx),
+        settings: j[m.u.DM_AND_SPAM_PROTECTION]
       });
       break;
-    case h.u.AUTOMOD:
+    case m.u.AUTOMOD:
       e = (0, r.jsx)(c.Z, {
         guildId: n.id
       });
       break;
-    case h.u.PERMISSIONS:
-      e = (0, r.jsx)(b.Z, {
-        title: N.NW.string(N.t.BXoNiY),
-        settings: y[h.u.PERMISSIONS]
+    case m.u.PERMISSIONS:
+      e = (0, r.jsx)(h.Z, {
+        title: v.NW.string(v.t.BXoNiY),
+        settings: j[m.u.PERMISSIONS]
       })
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [_ !== h.u.OVERVIEW && (0, r.jsxs)(l.zxk, {
-      className: v.back,
-      innerClassName: v.backButton,
+    children: [N !== m.u.OVERVIEW && (0, r.jsxs)(l.zxk, {
+      className: x.back,
+      innerClassName: x.backButton,
       look: l.zxk.Looks.BLANK,
       size: l.zxk.Sizes.MIN,
       onClick: () => {
-        (0, g.K)(h.u.OVERVIEW)
+        (0, g.K)(m.u.OVERVIEW)
       },
-      children: [(0, r.jsx)(d.Z, {
-        className: v.__invalid_arrow,
-        direction: d.Z.Directions.LEFT
+      children: [(0, r.jsx)(A.Z, {
+        className: x.__invalid_arrow,
+        direction: A.Z.Directions.LEFT
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "interactive-normal",
-        children: N.NW.string(N.t["13/7kZ"])
+        children: v.NW.string(v.t["13/7kZ"])
       })]
     }), e]
   })

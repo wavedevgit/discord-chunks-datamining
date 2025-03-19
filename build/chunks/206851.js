@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -11,8 +11,8 @@ var i = n(249849),
   l = n(924936);
 let o = ["#1e349e", "#4d61de", "#7887e2", "#92a6e4"],
   c = ["#fc6e4e"],
-  d = [.05, .15, .26, .4],
-  u = [{
+  A = [.05, .15, .26, .4],
+  d = [{
     base: 8,
     tint: 1
   }, {
@@ -25,20 +25,20 @@ let o = ["#1e349e", "#4d61de", "#7887e2", "#92a6e4"],
     base: 8,
     tint: 1
   }],
-  m = [.35],
+  u = [.35],
   g = [{
     base: 4,
     tint: 1
   }];
 
-function p(e) {
+function f(e) {
   var t, n, {
-      width: p,
-      height: h,
-      primaryTintColor: f,
-      secondaryTintColor: b
+      width: f,
+      height: m,
+      primaryTintColor: p,
+      secondaryTintColor: h
     } = e,
-    x = function(e, t) {
+    C = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -54,21 +54,21 @@ function p(e) {
       return i
     }(e, ["width", "height", "primaryTintColor", "secondaryTintColor"]);
   let {
-    primaryColorsTransformed: j,
-    secondaryColorsTransformed: N
+    primaryColorsTransformed: b,
+    secondaryColorsTransformed: v
   } = (0, i.s)({
     primaryBaseColors: o,
-    primaryTintColor: f,
-    primaryTintLuminances: d,
-    primaryLuminanceWeights: u,
+    primaryTintColor: p,
+    primaryTintLuminances: A,
+    primaryLuminanceWeights: d,
     secondaryBaseColors: c,
-    secondaryTintColor: b,
-    secondaryTintLuminances: m,
+    secondaryTintColor: h,
+    secondaryTintLuminances: u,
     secondaryLuminanceWeights: g
   }), {
-    styleContent: v,
-    containerId: _
-  } = (0, s.bC)(j, N);
+    styleContent: x,
+    containerId: N
+  } = (0, s.bC)(b, v);
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -86,18 +86,18 @@ function p(e) {
       })
     }
     return e
-  }({}, x), n = n = {
+  }({}, C), n = n = {
     "aria-label": a.NW.string(a.t.nH6S2d),
-    width: p,
-    height: h,
+    width: f,
+    height: m,
     viewBox: "0 0 ".concat(s.Km, " ").concat(s.md),
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsx)("style", {
-        children: v
+        children: x
       })
     }), (0, r.jsx)("use", {
       href: "".concat(l, "#wrapper-layer"),
-      id: _
+      id: N
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

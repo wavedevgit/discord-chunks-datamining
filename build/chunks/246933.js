@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -11,15 +11,15 @@ var i = n(249849),
   l = n(409814);
 let o = ["#cc99ff", "#ffffff"],
   c = ["#2d3dee", "#ffffff"],
-  d = [.3, 1],
-  u = [{
+  A = [.3, 1],
+  d = [{
     base: 2,
     tint: 1
   }, {
     base: 5,
     tint: 1
   }],
-  m = [.3, 1],
+  u = [.3, 1],
   g = [{
     base: 2,
     tint: 1
@@ -28,14 +28,14 @@ let o = ["#cc99ff", "#ffffff"],
     tint: 1
   }];
 
-function p(e) {
+function f(e) {
   var t, n, {
-      width: p,
-      height: h,
-      primaryTintColor: f,
-      secondaryTintColor: b
+      width: f,
+      height: m,
+      primaryTintColor: p,
+      secondaryTintColor: h
     } = e,
-    x = function(e, t) {
+    C = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -51,21 +51,21 @@ function p(e) {
       return i
     }(e, ["width", "height", "primaryTintColor", "secondaryTintColor"]);
   let {
-    primaryColorsTransformed: j,
-    secondaryColorsTransformed: N
+    primaryColorsTransformed: b,
+    secondaryColorsTransformed: v
   } = (0, i.s)({
     primaryBaseColors: o,
-    primaryTintColor: f,
-    primaryTintLuminances: d,
-    primaryLuminanceWeights: u,
+    primaryTintColor: p,
+    primaryTintLuminances: A,
+    primaryLuminanceWeights: d,
     secondaryBaseColors: c,
-    secondaryTintColor: b,
-    secondaryTintLuminances: m,
+    secondaryTintColor: h,
+    secondaryTintLuminances: u,
     secondaryLuminanceWeights: g
   }), {
-    styleContent: v,
-    containerId: _
-  } = (0, s.bC)(j, N);
+    styleContent: x,
+    containerId: N
+  } = (0, s.bC)(b, v);
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -83,10 +83,10 @@ function p(e) {
       })
     }
     return e
-  }({}, x), n = n = {
+  }({}, C), n = n = {
     "aria-label": a.NW.string(a.t.nH6S2d),
-    width: p,
-    height: h,
+    width: f,
+    height: m,
     viewBox: "0 0 ".concat(s.Km, " ").concat(s.md),
     children: [(0, r.jsxs)("defs", {
       children: [(0, r.jsxs)("defs", {
@@ -99,10 +99,10 @@ function p(e) {
           fy: ".33",
           spreadMethod: "pad",
           children: [(0, r.jsx)("stop", {
-            stopColor: j[1],
+            stopColor: b[1],
             offset: "0%"
           }), (0, r.jsx)("stop", {
-            stopColor: j[0],
+            stopColor: b[0],
             offset: "70%"
           })]
         }), (0, r.jsxs)("radialGradient", {
@@ -114,19 +114,19 @@ function p(e) {
           fy: ".33",
           spreadMethod: "pad",
           children: [(0, r.jsx)("stop", {
-            stopColor: N[1],
+            stopColor: v[1],
             offset: "0%"
           }), (0, r.jsx)("stop", {
-            stopColor: N[0],
+            stopColor: v[0],
             offset: "70%"
           })]
         })]
       }), (0, r.jsx)("style", {
-        children: v
+        children: x
       })]
     }), (0, r.jsx)("use", {
       href: "".concat(l, "#wrapper-layer"),
-      id: _
+      id: N
     }), (0, r.jsx)("use", {
       href: "".concat(l, "#clan-banner-warp-tunnel-secondary"),
       style: {

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,34 +11,34 @@ var i = n(399606),
   l = n(267101),
   o = n(430824),
   c = n(584825),
-  d = n(198139),
-  u = n(388032);
+  A = n(198139),
+  d = n(388032);
 
-function m(e) {
+function u(e) {
   let {
     guildId: t,
-    allPeriods: m
-  } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
+    allPeriods: u
+  } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), f = (0, c.qi)(t, {
     includeSoftDeleted: !0
-  }), h = (0, l.ue)(t, {
+  }), m = (0, l.ue)(t, {
     publishedOnly: !1
   }), {
-    allowSelfRemoveMonetization: f
-  } = (0, a.gX)(t), b = m.filter(e => {
+    allowSelfRemoveMonetization: p
+  } = (0, a.gX)(t), h = u.filter(e => {
     var t;
     let n = Object.values(null !== (t = e.ppgs) && void 0 !== t ? t : {})[0];
-    return (null == n ? void 0 : n.status) === d.x_.OPEN || (null == n ? void 0 : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = p.length > 0, j = h.length > 0, N = b.length > 0;
+    return (null == n ? void 0 : n.status) === A.x_.OPEN || (null == n ? void 0 : n.status) === A.x_.PAYOUT_DEFERRED
+  }), C = f.length > 0, b = m.length > 0, v = h.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
-      children: u.NW.format(u.t.fvOn6O, {
+      children: d.NW.format(d.t.fvOn6O, {
         guildName: g.toString()
       })
     }), (0, r.jsx)(s.LZC, {
       size: 16
     }), (0, r.jsx)(s.zxk, {
-      disabled: !f || x || j || N,
+      disabled: !p || C || b || v,
       look: s.zxk.Looks.FILLED,
       color: s.zxk.Colors.RED,
       onClick: () => {
@@ -80,7 +80,7 @@ function m(e) {
           }
         })
       },
-      children: u.NW.string(u.t.FrOFSk)
+      children: d.NW.string(d.t.FrOFSk)
     })]
   })
 }

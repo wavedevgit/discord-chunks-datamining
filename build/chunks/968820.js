@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,37 +11,37 @@ var i = n(481060),
   l = n(217597),
   o = n(685389),
   c = n(981631),
-  d = n(388032),
-  u = n(787340);
+  A = n(388032),
+  d = n(787340);
 
-function m(e) {
+function u(e) {
   let {
     children: t,
     revenue: n,
-    revenueTrend: m,
+    revenueTrend: u,
     summaryMetricLabel: g,
-    summaryMetricValue: p,
-    summaryMetricTrend: h,
-    summaryMetricTrendIsPercent: f
+    summaryMetricValue: f,
+    summaryMetricTrend: m,
+    summaryMetricTrendIsPercent: p
   } = e;
   return (0, r.jsx)(i.hjN, {
-    title: d.NW.string(d.t.ofmOzc),
+    title: A.NW.string(A.t.ofmOzc),
     children: (0, r.jsxs)("div", {
-      className: u.paymentInfoGroup,
+      className: d.paymentInfoGroup,
       children: [(0, r.jsxs)(o.H, {
         children: [(0, r.jsx)(l.Z, {
-          label: d.NW.string(d.t.iY1jW1),
+          label: A.NW.string(A.t.iY1jW1),
           value: (0, a.T4)(null != n ? n : 0, c.pKx.USD),
           additionalContent: (0, r.jsx)(s.H, {
-            value: m,
+            value: u,
             isPercent: !0
           })
         }), (0, r.jsx)(l.Z, {
           label: g,
-          value: p,
+          value: f,
           additionalContent: (0, r.jsx)(s.H, {
-            value: h,
-            isPercent: f
+            value: m,
+            isPercent: p
           })
         })]
       }), t]

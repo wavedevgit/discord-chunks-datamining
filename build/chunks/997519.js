@@ -14,17 +14,17 @@ function c(e, t) {
   let n = null == t ? void 0 : t.team,
     {
       payoutsByPeriod: c,
-      loading: d
+      loading: A
     } = (0, s.Z)(null == t ? void 0 : t.id, {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? void 0 : n.id
     }),
-    u = (0, a.f)("useEarningMetrics"),
-    m = (0, l.Z)(e),
+    d = (0, a.f)("useEarningMetrics"),
+    u = (0, l.Z)(e),
     {
       currentPeriod: g,
-      previousPeriods: p,
-      metrics: h
+      previousPeriods: f,
+      metrics: m
     } = r.useMemo(() => {
       var e, t;
       let {
@@ -52,7 +52,7 @@ function c(e, t) {
           }
           return e
         }({}, s), t = t = {
-          subscribers: m,
+          subscribers: u,
           subscriberChange: s.paymentsCountChange
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -65,13 +65,13 @@ function c(e, t) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)
       }
-    }, [c, m]);
+    }, [c, u]);
   return {
-    loading: d || !u,
+    loading: A || !d,
     team: n,
     currentPeriod: g,
-    previousPeriods: p,
+    previousPeriods: f,
     allPeriods: c,
-    metrics: h
+    metrics: m
   }
 }

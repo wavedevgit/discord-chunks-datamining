@@ -17,8 +17,8 @@ var r = n(399606),
   h = n(101732),
   f = n(450598),
   x = n(633030),
-  N = n(97942),
-  b = n(269987),
+  b = n(97942),
+  N = n(269987),
   _ = n(548629),
   E = n(507084),
   j = n(680313),
@@ -95,7 +95,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
             onTryItOutClick: t
           })
         },
-        imageSource: N,
+        imageSource: b,
         imageClassName: t.perGuildProfilesImage
       },
       longerMessages: {
@@ -119,7 +119,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       remix: {
         title: g.NW.string(g.t.ZvulDg),
         description: g.NW.string(g.t["8GwCPT"]),
-        imageSource: B(n, b, _),
+        imageSource: B(n, N, _),
         imageClassName: t.remixingImage,
         isEarlyAccess: !0
       },

@@ -1,6 +1,6 @@
 /** Chunk was on 95682 **/
 n.d(t, {
-  P: () => P
+  P: () => C
 });
 var r = n(200651),
   i = n(192379),
@@ -84,16 +84,16 @@ let y = s()(e => {
       onLeave: b,
       minimal: _
     } = e, {
-      isPurchased: P
-    } = (0, f.L)(n), C = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(o)), {
+      isPurchased: C
+    } = (0, f.L)(n), P = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(o)), {
       onFocus: j
-    } = C, x = E(C, ["onFocus"]), N = i.useCallback(e => {
+    } = P, x = E(P, ["onFocus"]), N = i.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, p.$)(t, o), j()
     }, [j, t, o]);
     return (0, r.jsx)(h.ua7, {
       text: g.NW.string(g.t["/bUsx8"]),
       "aria-label": !1,
-      shouldShow: !_ && P,
+      shouldShow: !_ && C,
       children: e => (0, r.jsx)(h.P3F, m(O({}, x), {
         tag: "li",
         onMouseEnter: () => {
@@ -126,7 +126,7 @@ let y = s()(e => {
             backgroundColor: n.variantValue,
             zIndex: a - o
           },
-          children: P ? (0, r.jsx)(h.kSu, {
+          children: C ? (0, r.jsx)(h.kSu, {
             className: v.purchasedIndicator,
             color: y(n.variantValue)
           }) : null
@@ -134,7 +134,7 @@ let y = s()(e => {
       }))
     })
   },
-  P = e => {
+  C = e => {
     var t, n;
     let {
       variantGroupProduct: i,
@@ -144,7 +144,7 @@ let y = s()(e => {
       minimal: d,
       purchases: f,
       alternativeBackgroundColor: y
-    } = e, P = (0, p.o)(i, f), C = a.previewingVariantIndex, j = null === (t = i.variants) || void 0 === t ? void 0 : t[P], x = null !== C ? null === (n = i.variants) || void 0 === n ? void 0 : n[C] : void 0, N = (0, b.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
+    } = e, C = (0, p.o)(i, f), P = a.previewingVariantIndex, j = null === (t = i.variants) || void 0 === t ? void 0 : t[C], x = null !== P ? null === (n = i.variants) || void 0 === n ? void 0 : n[P] : void 0, N = (0, b.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
     if (null == j) return null;
     let L = null != x ? x.variantLabel : null == j ? void 0 : j.variantLabel;
     return (0, r.jsx)(c.bG, {
@@ -172,7 +172,7 @@ let y = s()(e => {
                   variantGroupProduct: i,
                   variant: e,
                   variantIndex: t,
-                  selectedVariantIndex: P,
+                  selectedVariantIndex: C,
                   totalVariants: null !== (o = null === (n = i.variants) || void 0 === n ? void 0 : n.length) && void 0 !== o ? o : 0,
                   onEnter: () => a.handleEntering(t),
                   onLeave: a.handleLeaving,

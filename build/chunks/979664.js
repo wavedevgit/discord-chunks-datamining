@@ -10,23 +10,23 @@ var r = n(200651),
   l = n(813197),
   o = n(999382),
   c = n(388032),
-  d = n(293775),
-  u = n(659116);
+  A = n(293775),
+  d = n(659116);
 
-function m(e) {
+function u(e) {
   let {
     profile: t,
     handleIconChange: n,
     canManageGuild: s
   } = e, o = i.useCallback(() => {
     n(null)
-  }, [n]), u = i.useMemo(() => ({
+  }, [n]), d = i.useMemo(() => ({
     within: !0
   }), []);
   return (0, r.jsxs)("div", {
-    className: d.buttons,
+    className: A.buttons,
     children: [(0, r.jsxs)(a.zxk, {
-      focusProps: u,
+      focusProps: d,
       tabIndex: -1,
       size: a.zxk.Sizes.SMALL,
       color: a.zxk.Colors.BRAND,
@@ -53,24 +53,24 @@ function g(e) {
     onIconChange: i
   } = e, l = (0, s.e7)([o.Z], () => o.Z.getError("icon"));
   return (0, r.jsxs)("section", {
-    className: d.container,
+    className: A.container,
     children: [(0, r.jsxs)(a.hjN, {
-      className: u.section,
+      className: d.section,
       children: [(0, r.jsxs)("div", {
-        className: u.sectionHeader,
+        className: d.sectionHeader,
         children: [(0, r.jsx)(a.vwX, {
           children: c.NW.string(c.t.FkQnxM)
         }), (0, r.jsx)(a.R94, {
           type: "description",
           children: c.NW.string(c.t.KjkA0d)
         })]
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(u, {
         profile: t,
         canManageGuild: n,
         handleIconChange: i
       })]
     }), null != l ? (0, r.jsx)("div", {
-      className: d.iconError,
+      className: A.iconError,
       children: l
     }) : null]
   })

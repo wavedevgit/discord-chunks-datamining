@@ -19,11 +19,11 @@ function o(e) {
   } = e, {
     isUserMFAEnabled: o,
     isModerationMFAEnabled: c
-  } = (0, a.N)(), d = i.useCallback(async () => {
+  } = (0, a.N)(), A = i.useCallback(async () => {
     await t(), null == n || n()
-  }, [t, n]), u = i.useCallback(e => (0, r.jsx)(s.Z, {
-    onClick: d,
+  }, [t, n]), d = i.useCallback(e => (0, r.jsx)(s.Z, {
+    onClick: A,
     children: e
-  }), [d]);
-  return o && c ? l : u
+  }), [A]);
+  return o && c ? l : d
 }

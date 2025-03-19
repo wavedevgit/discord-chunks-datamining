@@ -10,37 +10,36 @@ var r = n(200651),
   l = n(550271),
   o = n(434404),
   c = n(254925),
-  d = n(502936),
-  u = n(388032),
-  m = n(935921);
+  A = n(502936),
+  d = n(388032),
+  u = n(935921);
 let g = function(e) {
   let {
     className: t,
-    guildId: n,
-    guildProfile: i
+    guildId: n
   } = e;
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(a.vwX, {
-      className: m.sectionTitle,
-      children: u.NW.string(d.Z.pb7lpK)
+      className: u.sectionTitle,
+      children: d.NW.string(A.Z.pb7lpK)
     }), (0, r.jsx)("div", {
-      className: m.pickerGrid,
-      children: c.QV.map(e => (0, r.jsx)(a.P3F, {
-        className: s()(m.pickerItem, {
-          [m.pickerItemSelected]: e === i.badge
+      className: u.pickerGrid,
+      children: c.QV.map(t => (0, r.jsx)(a.P3F, {
+        className: s()(u.pickerItem, {
+          [u.pickerItemSelected]: t === e.badge
         }),
         onClick: () => {
           o.Z.updateGuildProfile(n, {
-            badge: e
+            badge: t
           })
         },
         children: (0, r.jsx)(l.A, {
-          badge: e,
+          badge: t,
           width: 32,
           height: 32
         })
-      }, e))
+      }, t))
     })]
   })
 }

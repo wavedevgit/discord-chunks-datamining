@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -10,31 +10,31 @@ var r = n(200651),
   l = n(596454),
   o = n(318766),
   c = n(907040),
-  d = n(456268),
-  u = n(999382),
-  m = n(185923),
+  A = n(456268),
+  d = n(999382),
+  u = n(185923),
   g = n(388032),
-  p = n(56080);
-let h = e => {
+  f = n(56080);
+let m = e => {
     var t;
     let {
       reason: n = "",
-      emoji_name: d,
+      emoji_name: A,
       onSetReason: g,
-      onSelectEmoji: h,
-      onClearPressed: f,
-      reasonMinLength: b,
-      reasonMaxLength: x,
-      placeholder: j,
-      position: N
-    } = e, [v, _] = i.useState(!1), y = (0, s.e7)([u.Z], () => u.Z.isGuildMetadataLoaded());
+      onSelectEmoji: m,
+      onClearPressed: p,
+      reasonMinLength: h,
+      reasonMaxLength: C,
+      placeholder: b,
+      position: v
+    } = e, [x, N] = i.useState(!1), j = (0, s.e7)([d.Z], () => d.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
-      className: p.reasonContainer,
+      className: f.reasonContainer,
       children: [(0, r.jsx)(a.yRy, {
         onRequestClose: () => {
-          _(!1)
+          N(!1)
         },
-        shouldShow: v,
+        shouldShow: x,
         position: "right",
         align: "top",
         animation: a.yRy.Animation.NONE,
@@ -43,42 +43,42 @@ let h = e => {
             closePopout: t
           } = e;
           return (0, r.jsx)(c.Z, {
-            pickerIntention: m.Hz.COMMUNITY_CONTENT,
+            pickerIntention: u.Hz.COMMUNITY_CONTENT,
             closePopout: t,
             onSelectEmoji: (e, n) => {
-              null != e && h(e), n && t()
+              null != e && m(e), n && t()
             }
           })
         },
         children: () => (0, r.jsx)("div", {
-          className: p.background,
+          className: f.background,
           children: (0, r.jsx)(o.Z, {
             active: !1,
             onClick: () => {
-              _(!0)
+              N(!0)
             },
             tabIndex: 0,
-            renderButtonContents: null != d ? () => (0, r.jsx)(l.Z, {
-              emojiName: d,
+            renderButtonContents: null != A ? () => (0, r.jsx)(l.Z, {
+              emojiName: A,
               animated: !1
             }) : null
           })
         })
       }), (0, r.jsxs)("div", {
-        className: p.inputContainer,
+        className: f.inputContainer,
         children: [(0, r.jsx)(a.oil, {
-          inputClassName: p.reason,
-          placeholder: j,
+          inputClassName: f.reason,
+          placeholder: b,
           value: n,
-          minLength: b,
-          maxLength: x,
+          minLength: h,
+          maxLength: C,
           onChange: e => {
             g(e)
           },
           defaultDirty: (null == n ? void 0 : n.length) > 0
-        }, "text-input-".concat(N, "-").concat(y)), (null !== (t = null == n ? void 0 : n.length) && void 0 !== t ? t : 0) > 0 || null != d ? (0, r.jsx)(a.zxk, {
-          className: p.clearStatusButton,
-          onClick: f,
+        }, "text-input-".concat(v, "-").concat(j)), (null !== (t = null == n ? void 0 : n.length) && void 0 !== t ? t : 0) > 0 || null != A ? (0, r.jsx)(a.zxk, {
+          className: f.clearStatusButton,
+          onClick: p,
           look: a.zxk.Looks.BLANK,
           size: a.zxk.Sizes.NONE,
           tabIndex: -1,
@@ -86,20 +86,20 @@ let h = e => {
           children: (0, r.jsx)(a.k$p, {
             size: "md",
             color: "currentColor",
-            className: p.clearStatusIcon
+            className: f.clearStatusIcon
           })
         }) : null]
       })]
     })
   },
-  f = e => {
+  p = e => {
     let {
       reasonMinLength: t,
       reasonMaxLength: n,
       guildId: i,
       reasons: s
     } = e, a = [g.NW.string(g.t["9dhBGh"]), g.NW.string(g.t["8RmhKC"]), g.NW.string(g.t["2t0V8/"]), g.NW.string(g.t.l8WqCQ)], l = [];
-    for (let e = 0; e < 4; e++) l.push((0, r.jsx)(h, function(e, t) {
+    for (let e = 0; e < 4; e++) l.push((0, r.jsx)(m, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -136,14 +136,14 @@ let h = e => {
           r = Object.assign({}, s[e], {
             reason: t
           });
-        n[e] = r, (0, d.P$)(i, n)
+        n[e] = r, (0, A.P$)(i, n)
       },
       onSelectEmoji: t => {
         let n = [...s],
           r = Object.assign({}, s[e], {
             emoji_name: t.optionallyDiverseSequence
           });
-        n[e] = r, (0, d.P$)(i, n)
+        n[e] = r, (0, A.P$)(i, n)
       },
       onClearPressed: () => {
         let t = [...s],
@@ -151,7 +151,7 @@ let h = e => {
             reason: "",
             emoji_name: null
           };
-        t[e] = n, (0, d.P$)(i, t)
+        t[e] = n, (0, A.P$)(i, t)
       },
       reasonMinLength: t,
       reasonMaxLength: n

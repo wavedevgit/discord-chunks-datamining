@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Nv: () => b,
+  Nv: () => N,
   pd: () => f,
   uX: () => _,
   wk: () => x
@@ -54,12 +54,12 @@ let g = (e, t) => {
       }), !1
     }
   },
-  N = (e, t) => o.ZP.getMentionCount(t) > 0,
-  b = {
+  b = (e, t) => o.ZP.getMentionCount(t) > 0,
+  N = {
     binds: ["mod+shift+alt+down"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(1, {
-      channelPredicate: N,
+      channelPredicate: b,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)
@@ -68,7 +68,7 @@ let g = (e, t) => {
     binds: ["mod+shift+alt+up"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(-1, {
-      channelPredicate: N,
+      channelPredicate: b,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)

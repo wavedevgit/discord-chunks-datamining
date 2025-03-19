@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -10,7 +10,7 @@ var r = n(200651),
   l = n(642128),
   o = n(481060),
   c = n(750263);
-class d extends i.Component {
+class A extends i.Component {
   render() {
     var e, t;
     let n = this.props,
@@ -65,8 +65,8 @@ class d extends i.Component {
     }), e))
   }
 }
-let u = (0, l.animated)(d),
-  m = function(e) {
+let d = (0, l.animated)(A),
+  u = function(e) {
     let {
       className: t,
       name: n,
@@ -96,7 +96,7 @@ let u = (0, l.animated)(d),
           icon: n,
           iconClassName: i
         } = t;
-        return (0, r.jsx)(u, {
+        return (0, r.jsx)(d, {
           icon: n,
           className: a()(c.icon, i),
           style: e

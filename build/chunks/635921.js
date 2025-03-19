@@ -20,8 +20,8 @@ var i = n(120356),
   h = n(639119),
   f = n(105759),
   x = n(346497),
-  N = n(422034),
-  b = n(206127),
+  b = n(422034),
+  N = n(206127),
   _ = n(710220),
   E = n(318747),
   j = n(409100),
@@ -74,7 +74,7 @@ function I(e) {
     variant: t = "text-lg/normal",
     withBottomMargin: n = !0,
     isMarketingPageV2Enabled: i
-  } = e, a = (0, b.$)();
+  } = e, a = (0, N.$)();
   return (0, r.jsx)(l.Text, {
     variant: t,
     color: i ? "header-secondary" : "always-white",
@@ -92,7 +92,7 @@ let y = e => {
   let {
     isFullscreen: i,
     className: d,
-    buttonClassName: b,
+    buttonClassName: N,
     subscriptionTier: j,
     entrypoint: y,
     isDarkMode: A
@@ -117,20 +117,20 @@ let y = e => {
           referrer: B
         }) : U ? (0, r.jsx)("div", {
           className: v.affinityDescription,
-          children: (0, r.jsx)(N.Z, {
+          children: (0, r.jsx)(b.Z, {
             textColor: "always-white",
             smallerText: !i
           })
         }) : (0, r.jsx)(I, {}), W || R ? (0, r.jsx)("div", {
           className: v.buttonContainer,
           children: (0, r.jsx)(E.Z, {
-            className: s()(v.button, b),
+            className: s()(v.button, N),
             forceWhite: !0
           })
         }) : (0, r.jsx)(S, {
           subscriptionTier: null !== (n = null != j ? j : null == w ? void 0 : null === (t = w.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : Z,
           inOfferExperience: k,
-          buttonClassName: b,
+          buttonClassName: N,
           isDarkMode: A
         }), U && !M && (0, r.jsx)(I, {
           variant: "text-md/normal",

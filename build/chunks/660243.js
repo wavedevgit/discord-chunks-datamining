@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  r: () => b
+  r: () => N
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -19,7 +19,7 @@ var i = n(120356),
   f = n(146036),
   x = n(510176);
 
-function N(e) {
+function b(e) {
   let {
     headerAssetSrc: t,
     headerText: n,
@@ -79,7 +79,7 @@ function N(e) {
   })
 }
 
-function b() {
+function N() {
   let e = !c.G6.useSetting(),
     {
       assets: t,
@@ -91,7 +91,7 @@ function b() {
     } = (0, u.hs)();
   return (0, r.jsxs)("div", {
     className: h.cardsContainer,
-    children: [(0, r.jsx)(N, {
+    children: [(0, r.jsx)(b, {
       headerAssetSrc: f,
       headerText: p.NW.string(p.t.CQkyMj),
       description: p.NW.string(g.Z.ctRS3d),
@@ -99,7 +99,7 @@ function b() {
       assetCount: n,
       onClick: () => o.Z.open(m.oAB.REGISTERED_GAMES),
       disabled: e
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(b, {
       headerAssetSrc: x,
       headerText: p.NW.string(p.t["3fe7U1"]),
       description: p.NW.string(g.Z.DU5UXF),

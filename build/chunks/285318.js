@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -29,7 +29,7 @@ function c(e) {
   return e
 }
 
-function d(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,14 +42,14 @@ function d(e, t) {
   }), e
 }
 
-function u(e) {
+function d(e) {
   let {
     preset: t,
     toggled: n,
     onToggle: i
   } = e, {
     headerText: c,
-    subtitleText: d
+    subtitleText: A
   } = function(e) {
     let t = null,
       n = null;
@@ -87,7 +87,7 @@ function u(e) {
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: d
+        children: A
       })]
     }), (0, r.jsx)(s.XZJ, {
       className: o.toggle,
@@ -98,31 +98,31 @@ function u(e) {
   })
 }
 
-function m(e) {
+function u(e) {
   var t;
   let {
     rule: n,
     onChangeRule: s
-  } = e, [l, o] = i.useState(new Set(null == n ? void 0 : null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.presets)), m = i.useMemo(() => e => {
-    s(d(c({}, n), {
-      triggerMetadata: d(c({}, n.triggerMetadata), {
+  } = e, [l, o] = i.useState(new Set(null == n ? void 0 : null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.presets)), u = i.useMemo(() => e => {
+    s(A(c({}, n), {
+      triggerMetadata: A(c({}, n.triggerMetadata), {
         presets: e
       })
     }))
   }, [s, n]), g = e => {
     let t = new Set(l);
-    t.has(e) ? t.delete(e) : t.add(e), o(t), m(Array.from(t))
+    t.has(e) ? t.delete(e) : t.add(e), o(t), u(Array.from(t))
   };
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(u, {
+    children: [(0, r.jsx)(d, {
       preset: a.Ux.PROFANITY,
       toggled: l.has(a.Ux.PROFANITY),
       onToggle: g
-    }), (0, r.jsx)(u, {
+    }), (0, r.jsx)(d, {
       preset: a.Ux.SLURS,
       toggled: l.has(a.Ux.SLURS),
       onToggle: g
-    }), (0, r.jsx)(u, {
+    }), (0, r.jsx)(d, {
       preset: a.Ux.SEXUAL_CONTENT,
       toggled: l.has(a.Ux.SEXUAL_CONTENT),
       onToggle: g

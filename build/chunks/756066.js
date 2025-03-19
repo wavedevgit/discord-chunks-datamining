@@ -15,15 +15,15 @@ function l(e) {
     resubmissionError: l,
     createEnableRequest: o,
     requestRejectedNoticeText: c,
-    reapplyNoticeText: d,
-    isApplicationPending: u
+    reapplyNoticeText: A,
+    isApplicationPending: d
   } = e;
   if (null != l) return (0, r.jsx)(i.Z, {
     children: l.getAnyErrorMessage()
   });
-  let m = null;
-  return u ? m = a.NW.string(a.t.OrkTBg) : null != c ? m = c : null != d && (m = d, t = a.NW.string(a.t["YKw/NT"])), null != m ? (0, r.jsx)(s.Z, {
-    notice: m,
+  let u = null;
+  return d ? u = a.NW.string(a.t.OrkTBg) : null != c ? u = c : null != A && (u = A, t = a.NW.string(a.t["YKw/NT"])), null != u ? (0, r.jsx)(s.Z, {
+    notice: u,
     ctaLabel: t,
     ctaLoading: n,
     onClick: o

@@ -27,13 +27,13 @@ let u = e => {
     g(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
   }, [f, p]);
   let x = m > 0,
-    N = i.useCallback(e => ({
+    b = i.useCallback(e => ({
       x: (e - m) * 100
     }), [m]),
-    [b, _] = (0, o.bYB)(t.length, N);
+    [N, _] = (0, o.bYB)(t.length, b);
   return i.useEffect(() => {
-    _(N)
-  }, [_, N]), (0, r.jsx)("div", {
+    _(b)
+  }, [_, b]), (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsxs)("div", {
       className: d.cardContainer,
@@ -51,7 +51,7 @@ let u = e => {
         })
       }), (0, r.jsx)("div", {
         className: d.cardInnerContainer,
-        children: b.map((e, n) => {
+        children: N.map((e, n) => {
           var i, a;
           let {
             x: o

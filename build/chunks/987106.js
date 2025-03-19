@@ -40,25 +40,26 @@ function j(e) {
 }
 
 function g(e) {
-  let t;
+  var t, r;
+  let l;
   let {
-    label: r,
-    style: l,
-    disabled: p,
-    emoji: y,
-    url: g,
-    skuId: h
+    label: p,
+    style: y,
+    disabled: g,
+    emoji: v,
+    url: h,
+    skuId: P
   } = e, {
-    executeStateUpdate: v,
-    visualState: P,
-    isDisabled: x
-  } = (0, f.Ee)(e), w = (0, d.s)(h), S = null != h && l === u.ZJ.PREMIUM, C = S && (null == w ? void 0 : w.disabled), E = S ? null == w ? void 0 : w.label : r, N = null != y, I = null != E && E.length > 0, k = l === u.ZJ.LINK && null != g && g.length > 0, Z = P === O.gH.LOADING || S && null == w;
-  return t = k ? () => {
+    executeStateUpdate: x,
+    visualState: w,
+    isDisabled: S
+  } = (0, f.Ee)(e), C = (0, f.CJ)(), E = (0, d.s)(P, null !== (r = null == C ? void 0 : null === (t = C.message) || void 0 === t ? void 0 : t.applicationId) && void 0 !== r ? r : void 0), N = null != P && y === u.ZJ.PREMIUM, I = N && (null == E ? void 0 : E.disabled), k = N ? null == E ? void 0 : E.label : p, Z = null != v, T = null != k && k.length > 0, D = y === u.ZJ.LINK && null != h && h.length > 0, L = w === O.gH.LOADING || N && null == E;
+  return l = D ? () => {
     (0, b.q)({
-      href: null != g ? g : "",
+      href: null != h ? h : "",
       shouldConfirm: !0
     })
-  } : S ? null != w && !1 === w.disabled ? w.onClick : o.noop : () => v(), (0, n.jsxs)(a.zxk, {
+  } : N ? null != E && !1 === E.disabled ? E.onClick : o.noop : () => x(), (0, n.jsxs)(a.zxk, {
     color: function(e) {
       switch (e) {
         case u.ZJ.PRIMARY:
@@ -71,12 +72,12 @@ function g(e) {
         default:
           return a.zxk.Colors.PRIMARY
       }
-    }(l),
+    }(y),
     size: a.zxk.Sizes.SMALL,
-    disabled: p || P === O.gH.DISABLED || x || C,
-    onClick: t,
+    disabled: g || w === O.gH.DISABLED || S || I,
+    onClick: l,
     onContextMenu: e => {
-      k && (0, c.vq)(e, e => {
+      D && (0, c.vq)(e, e => {
         var t, r;
         return (0, n.jsx)(j, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -96,7 +97,7 @@ function g(e) {
           }
           return e
         }({}, e), r = r = {
-          url: g
+          url: h
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -109,36 +110,36 @@ function g(e) {
         }), t))
       })
     },
-    role: k ? "link" : "button",
+    role: D ? "link" : "button",
     children: [(0, n.jsxs)("div", {
       className: i()(m.content, {
-        [m.hidden]: Z,
-        [m.premium]: S
+        [m.hidden]: L,
+        [m.premium]: N
       }),
-      "aria-hidden": Z,
-      children: [S ? (0, n.jsx)("div", {
+      "aria-hidden": L,
+      children: [N ? (0, n.jsx)("div", {
         className: m.shopIcon,
         children: (0, n.jsx)(a.EOn, {
           size: "xs",
           color: "white"
         })
-      }) : null, N ? (0, n.jsx)(s.Z, {
+      }) : null, Z ? (0, n.jsx)(s.Z, {
         className: i()({
-          [m.textEmoji]: I
+          [m.textEmoji]: T
         }),
-        src: y.src,
-        emojiId: y.id,
-        emojiName: y.name,
-        animated: y.animated
-      }) : null, I ? (0, n.jsx)("div", {
+        src: v.src,
+        emojiId: v.id,
+        emojiName: v.name,
+        animated: v.animated
+      }) : null, T ? (0, n.jsx)("div", {
         className: m.label,
-        children: E
-      }) : null, k ? (0, n.jsx)(a.rgF, {
+        children: k
+      }) : null, D ? (0, n.jsx)(a.rgF, {
         size: "xs",
         color: "currentColor",
         className: m.launchIcon
       }) : null]
-    }), Z ? (0, n.jsx)("div", {
+    }), L ? (0, n.jsx)("div", {
       className: m.loading,
       children: (0, n.jsx)(a.bbz, {
         dotRadius: 3.5,

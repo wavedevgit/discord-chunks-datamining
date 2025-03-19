@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(388032),
   x = n(10314);
 
-function N(e) {
+function b(e) {
   let {
     onSelect: t
   } = e, [n, a] = i.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o);
@@ -90,7 +90,7 @@ function N(e) {
   })
 }
 
-function b(e) {
+function N(e) {
   let {
     sound: t
   } = e, {
@@ -137,7 +137,7 @@ function _(e) {
             children: e
           })
         }) : t.name
-      }), s ? (0, r.jsx)(b, {
+      }), s ? (0, r.jsx)(N, {
         sound: t
       }) : (0, r.jsx)(l.gj8, {
         size: "md",
@@ -146,7 +146,7 @@ function _(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: x.container,
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(b, {
         onSelect: i
       }), s && !n && (0, r.jsx)(p.hU, {
         onClick: () => i(null),

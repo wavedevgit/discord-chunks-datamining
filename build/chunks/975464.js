@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  C: () => x,
-  Z: () => j
+  C: () => C,
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -12,16 +12,16 @@ var i = n(990547),
   l = n(605288),
   o = n(787051),
   c = n(346163),
-  d = n(587431),
-  u = n(271267),
-  m = n(320893),
+  A = n(587431),
+  d = n(271267),
+  u = n(320893),
   g = n(81509),
-  p = n(662379),
-  h = n(385910),
-  f = n(581050),
-  b = n(290534);
+  f = n(662379),
+  m = n(385910),
+  p = n(581050),
+  h = n(290534);
 
-function x(e) {
+function C(e) {
   let {
     onboardingMarketing: t,
     onboardingMarketingError: n
@@ -31,45 +31,45 @@ function x(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.$i$, {
-        className: b.sectionDivider
+        className: h.sectionDivider
       }), t]
     })
   }, a = (0, r.jsx)(i, {
-    children: (0, r.jsx)(p.Z, {})
-  }, f.q.HOW_IT_WORKS), l = (0, r.jsx)(i, {
-    children: (0, r.jsx)(m.Z, {})
-  }, f.q.BENEFITS);
+    children: (0, r.jsx)(f.Z, {})
+  }, p.q.HOW_IT_WORKS), l = (0, r.jsx)(i, {
+    children: (0, r.jsx)(u.Z, {})
+  }, p.q.BENEFITS);
   return null != n || (null == t ? void 0 : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
     children: [a, l]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case f.q.HOW_IT_WORKS:
+        case p.q.HOW_IT_WORKS:
           return a;
-        case f.q.BENEFITS:
+        case p.q.BENEFITS:
           return l;
-        case f.q.OTHER_CREATORS:
+        case p.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
             children: (0, r.jsx)(g.Z, {
               highlightedCreators: e.creators
             })
-          }, f.q.OTHER_CREATORS)
+          }, p.q.OTHER_CREATORS)
       }
     })
   })
 }
 
-function j(e) {
+function b(e) {
   let {
     guild: t
   } = e, n = (0, c.Z)(t), {
-    eligibilityLoading: m,
+    eligibilityLoading: u,
     eligibilityError: g,
-    eligibility: p
-  } = n, f = (0, l.j)(p), {
-    isLoading: j,
-    error: N,
-    creatorMonetizationOnboardingMarketing: v
+    eligibility: f
+  } = n, p = (0, l.j)(f), {
+    isLoading: b,
+    error: v,
+    creatorMonetizationOnboardingMarketing: x
   } = (0, o.Z)(t.id);
   return ((0, a.Z)({
     type: i.ImpressionTypes.PANE,
@@ -78,22 +78,22 @@ function j(e) {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: f
+      ineligible_reasons: p
     }
   }, {
-    disableTrack: null == t.id || null == p
-  }), m || null == p || j) ? (0, r.jsx)(s.$jN, {}) : p.actionRequired ? (0, r.jsx)(h.Z, {
+    disableTrack: null == t.id || null == f
+  }), u || null == f || b) ? (0, r.jsx)(s.$jN, {}) : f.actionRequired ? (0, r.jsx)(m.Z, {
     guild: t
-  }) : null != g ? (0, r.jsx)(d.Z, {
+  }) : null != g ? (0, r.jsx)(A.Z, {
     children: g.message
   }) : (0, r.jsxs)("div", {
-    className: b.container,
-    children: [(0, r.jsx)(u.Z, {
+    className: h.container,
+    children: [(0, r.jsx)(d.Z, {
       guild: t,
       monetizationEligibility: n
-    }), (0, r.jsx)(x, {
-      onboardingMarketing: v,
-      onboardingMarketingError: N
+    }), (0, r.jsx)(C, {
+      onboardingMarketing: x,
+      onboardingMarketingError: v
     })]
   })
 }

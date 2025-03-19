@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(266796), n(47120);
 var r = n(200651);
 n(192379);
@@ -11,52 +11,52 @@ var i = n(120356),
   l = n(18100),
   o = n(308083),
   c = n(388032),
-  d = n(154662);
-let u = e => {
+  A = n(154662);
+let d = e => {
   var t, n, i;
   let {
-    guildId: u,
-    handleUpdate: m,
+    guildId: d,
+    handleUpdate: u,
     progress: g,
-    errors: p
+    errors: f
   } = e, {
-    wildcardDescriptors: h,
-    description: f
-  } = g, b = (e, t) => {
-    let n = [...h];
-    n[t] = e, m({
+    wildcardDescriptors: m,
+    description: p
+  } = g, h = (e, t) => {
+    let n = [...m];
+    n[t] = e, u({
       wildcardDescriptors: n
     })
   };
   return (0, r.jsxs)("div", {
-    className: d.slideContent,
+    className: A.slideContent,
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xxl/medium",
-      className: d.title,
+      className: A.title,
       children: c.NW.string(c.t.pdVsBA)
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: d.subtitle,
+      className: A.subtitle,
       children: c.NW.string(c.t.E1L1o6)
-    }), (null == p ? void 0 : p.description) != null && (0, r.jsx)(a.Text, {
+    }), (null == f ? void 0 : f.description) != null && (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "status-danger",
-      className: d.errorText,
-      children: p.description
+      className: A.errorText,
+      children: f.description
     }), (0, r.jsxs)("div", {
-      className: d.content,
+      className: A.content,
       children: [(0, r.jsxs)("div", {
-        className: d.mainPanelContainer,
+        className: A.mainPanelContainer,
         children: [(0, r.jsx)("div", {
-          className: d.maxWidthContainer,
+          className: A.maxWidthContainer,
           children: (0, r.jsx)(a.Kx8, {
-            className: d.input,
+            className: A.input,
             maxLength: o.Us,
-            onChange: e => m({
+            onChange: e => u({
               description: e
             }),
-            value: null != f ? f : "",
+            value: null != p ? p : "",
             rows: 5,
             autoFocus: !0,
             autosize: !0,
@@ -65,44 +65,44 @@ let u = e => {
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          className: d.optionalTag,
+          className: A.optionalTag,
           children: c.NW.string(c.t["vWEL6+"])
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          className: d.title,
+          className: A.title,
           children: c.NW.string(c.t["2g9zfX"])
-        }), (null == p ? void 0 : p.wildcardDescriptors) != null && (0, r.jsx)(a.Text, {
+        }), (null == f ? void 0 : f.wildcardDescriptors) != null && (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "status-danger",
-          className: d.errorText,
-          children: p.wildcardDescriptors
+          className: A.errorText,
+          children: f.wildcardDescriptors
         }), (0, r.jsxs)("div", {
-          className: d.wildcardRow,
+          className: A.wildcardRow,
           children: [(0, r.jsx)(a.oil, {
-            inputClassName: s()(d.input, d.wildcardInput),
-            value: null !== (t = h[0]) && void 0 !== t ? t : "",
-            onChange: e => b(e, 0),
+            inputClassName: s()(A.input, A.wildcardInput),
+            value: null !== (t = m[0]) && void 0 !== t ? t : "",
+            onChange: e => h(e, 0),
             maxLength: o.TY,
             placeholder: o.LK["0"]
           }), (0, r.jsx)(a.oil, {
-            inputClassName: s()(d.input, d.wildcardInput),
-            value: null !== (n = h[1]) && void 0 !== n ? n : "",
-            onChange: e => b(e, 1),
+            inputClassName: s()(A.input, A.wildcardInput),
+            value: null !== (n = m[1]) && void 0 !== n ? n : "",
+            onChange: e => h(e, 1),
             maxLength: o.TY,
             placeholder: o.LK["1"]
           }), (0, r.jsx)(a.oil, {
-            inputClassName: s()(d.input, d.wildcardInput),
-            value: null !== (i = h[2]) && void 0 !== i ? i : "",
-            onChange: e => b(e, 2),
+            inputClassName: s()(A.input, A.wildcardInput),
+            value: null !== (i = m[2]) && void 0 !== i ? i : "",
+            onChange: e => h(e, 2),
             maxLength: o.TY,
             placeholder: o.LK["2"]
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: d.fixedWidthSidebar,
+        className: A.fixedWidthSidebar,
         children: (0, r.jsx)(l.Z, {
-          guildId: u,
+          guildId: d,
           progress: g,
           maskTraits: !0
         })

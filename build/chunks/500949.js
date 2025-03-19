@@ -2,21 +2,21 @@
 n.d(t, {
   $R: () => X,
   A0: () => et,
-  GU: () => K,
+  GU: () => J,
   H8: () => q,
-  HI: () => J,
-  HW: () => F,
+  HI: () => K,
+  HW: () => G,
   Ib: () => es,
   KB: () => eu,
   S2: () => H,
   W6: () => er,
   XM: () => ea,
-  YC: () => ex,
+  YC: () => eh,
   YE: () => ei,
   h9: () => eo,
   iw: () => en,
   jC: () => U,
-  jQ: () => G,
+  jQ: () => F,
   lT: () => Y,
   rd: () => ed,
   t4: () => ec,
@@ -31,8 +31,8 @@ var r, a, l = n(192379),
   d = n(694626),
   u = n(855930),
   m = n(385787),
-  x = n(566162),
-  h = n(567027),
+  h = n(566162),
+  x = n(567027),
   p = n(461195),
   b = n(857702),
   f = n(20450),
@@ -43,14 +43,14 @@ var r, a, l = n(192379),
   y = n(81011),
   C = n(981613),
   T = n(762399),
-  S = n(232112),
-  N = n(53796),
-  O = n(723757),
+  O = n(232112),
+  S = n(53796),
+  N = n(723757),
   k = n(375924),
   E = n(596136),
   w = n(341901),
-  I = n(856308),
-  P = n(665352),
+  P = n(856308),
+  I = n(665352),
   Z = n(394900),
   R = n(661105),
   L = n(525169),
@@ -89,7 +89,7 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = {
+let G = {
     sRGB: i.Z,
     A98RGB: o.Z,
     ACEScc: s.Z,
@@ -97,8 +97,8 @@ let F = {
     HPLuv: d.Z,
     HSL: u.Z,
     HSLuv: m.Z,
-    HSV: x.Z,
-    HWB: h.Z,
+    HSV: h.Z,
+    HWB: x.Z,
     ICTCP: p.Z,
     JzCzHz: b.Z,
     Jzazbz: f.Z,
@@ -109,16 +109,16 @@ let F = {
     Luv: y.Z,
     OKLCH: C.Z,
     OKLab: T.Z,
-    P3: S.Z,
-    ProPhoto: N.Z,
-    REC_2020: O.Z,
+    P3: O.Z,
+    ProPhoto: S.Z,
+    REC_2020: N.Z,
     REC_2100_HLG: k.Z,
     REC_2100_PQ: E.Z,
     XYZ_D50: w.Z,
-    XYZ_D65: I.Z
+    XYZ_D65: P.Z
   },
-  G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
-Object.values(F).forEach(e => P.Z.register(e));
+  F = Object.fromEntries(Object.keys(G).map(e => [e, e]));
+Object.values(G).forEach(e => I.Z.register(e));
 let {
   SemanticColors: W
 } = A.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -158,13 +158,13 @@ function Y(e, t, n, r, a) {
   }
 }
 
-function K(e) {
+function J(e) {
   return M(z({}, e), {
     highlight: !e.highlight
   })
 }
 
-function J(e) {
+function K(e) {
   return (0, Z.Z)((0, R.Z)(e, i.Z), {
     format: "hex"
   })
@@ -216,30 +216,30 @@ function ea(e) {
     darkness: a,
     lightness: l,
     easingStrength: o = 1
-  } = e, s = F[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
+  } = e, s = G[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
     space: s,
     outputSpace: i.Z
   }), u = (0, L.CD)(c, "black", 1 - l, {
     space: s,
     outputSpace: i.Z
-  }), m = Math.floor(r / 2), x = r - m, h = (0, L.w6)(d, c, {
+  }), m = Math.floor(r / 2), h = r - m, x = (0, L.w6)(d, c, {
     steps: m,
     outputSpace: s,
     space: s,
     progression: e => e ** o
   }), p = (0, L.w6)(u, c, {
-    steps: x,
+    steps: h,
     outputSpace: s,
     space: s,
     progression: e => e ** o
   }), b = [];
   for (let e = 0; e < m; e++) {
-    let t = h(e / m);
+    let t = x(e / m);
     b.push(t)
   }
   b.push(c);
-  for (let e = 1; e < x; e++) {
-    let t = p(1 - e / x);
+  for (let e = 1; e < h; e++) {
+    let t = p(1 - e / h);
     b.push(t)
   }
   return Object.fromEntries(b.map((e, n) => ["".concat(t, "-").concat(n), e]))
@@ -293,7 +293,7 @@ function em(e, t, n) {
   }), n)
 }
 
-function ex(e, t, n) {
+function eh(e, t, n) {
   el(e, e => M(z({}, e), {
     steps: t
   }), n)

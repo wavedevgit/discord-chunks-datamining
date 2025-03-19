@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(853872),
   f = n(78839),
   x = n(783739),
-  N = n(981631),
-  b = n(778893);
+  b = n(981631),
+  N = n(778893);
 
 function _() {
   i.useEffect(() => {
     c.Z.wait(() => {
-      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, N.JjL.DISCOVERY), (0, u.tH)(!0)
+      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, b.JjL.DISCOVERY), (0, u.tH)(!0)
     })
   }, []);
   let {
@@ -34,17 +34,17 @@ function _() {
     premiumSubscription: f.ZP.getPremiumTypeSubscription()
   })), n = (0, g.V)(), s = (0, l.e7)([h.Z], () => h.Z.hasFetchedPaymentSources), _ = (0, l.e7)([p.Z], () => p.Z.isFetchingCurrentUserAppliedBoosts);
   return e && n && s && !_ ? (0, r.jsxs)("div", {
-    className: b.container,
+    className: N.container,
     children: [(0, r.jsx)("div", {
-      className: b.background
+      className: N.background
     }), (0, r.jsx)("div", {
-      className: b.content,
+      className: N.content,
       children: (0, r.jsx)(x.Z, {
         premiumSubscription: t
       })
     })]
   }) : (0, r.jsx)("div", {
-    className: a()(b.container, b.loading),
+    className: a()(N.container, N.loading),
     children: (0, r.jsx)(o.$jN, {})
   })
 }

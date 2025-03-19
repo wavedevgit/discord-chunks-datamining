@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -11,14 +11,14 @@ var r = n(200651),
   o = n(717251),
   c = n(503238);
 
-function d(e) {
+function A(e) {
   var {
     action: t,
     children: n,
     className: s,
-    onExpandChange: d,
-    loading: u
-  } = e, m = function(e, t) {
+    onExpandChange: A,
+    loading: d
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -33,8 +33,8 @@ function d(e) {
     }
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
-  let [g, p] = i.useState(!1), h = e => {
-    p(e), null == d || d(e)
+  let [g, f] = i.useState(!1), m = e => {
+    f(e), null == A || A(e)
   };
   return (0, r.jsx)(l.zF9, {
     className: a()(c.groupContainer, s),
@@ -67,13 +67,13 @@ function d(e) {
           })
         }
         return e
-      }({}, m), i = i = {
+      }({}, u), i = i = {
         className: c.groupHeaderRow,
-        action: u ? (0, r.jsx)(l.$jN, {
+        action: d ? (0, r.jsx)(l.$jN, {
           type: l.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
-          h(!g), s(e)
+          m(!g), s(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

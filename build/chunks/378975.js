@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => h
+  Z: () => v
 }), r(266796), r(47120);
 var n = r(200651),
   l = r(192379),
@@ -126,15 +126,15 @@ function g(e) {
   })
 }
 
-function h(e) {
+function v(e) {
   let {
     type: t,
     options: r,
     id: i,
     placeholder: o,
     maxValues: c,
-    minValues: h,
-    disabled: v
+    minValues: v,
+    disabled: h
   } = e, P = l.useMemo(() => r.filter(e => e.default).map(e => e.value), [r]), {
     state: x,
     executeStateUpdate: w,
@@ -164,7 +164,7 @@ function h(e) {
     !(k || T.size === L.size && Array.from(L).every(e => T.has(e))) && A()
   }, [k, T, L, A]);
   let M = a.UNb;
-  N ? M = a.gzz : 0 === h && (M = a.s6k);
+  N ? M = a.gzz : 0 === v && (M = a.s6k);
   let U = (0, a.cYr)({
     value: T,
     onChange: e => D(e),
@@ -174,7 +174,7 @@ function h(e) {
     children: [(0, n.jsxs)("div", {
       className: f.container,
       children: [(0, n.jsx)(a.PhF, O({
-        isDisabled: v || C,
+        isDisabled: h || C,
         className: f.select,
         options: r.map(e => y(O({}, e), {
           disabled: N && !T.has(e.value) && T.size === c

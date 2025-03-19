@@ -58,20 +58,20 @@ function g(e) {
     queryOptions: o,
     renderIcon: j,
     renderOptionLabel: g,
-    defaultValues: h
+    defaultValues: v
   } = e, {
-    type: v,
+    type: h,
     placeholder: P,
     maxValues: x,
     disabled: w
-  } = n, [S, C] = i.useState(!1), [E, N] = i.useState(!1), [I, k] = i.useState(new Map(null == h ? void 0 : h.map(e => [e.value, e]))), [Z, T] = i.useState(new Set(I.keys())), [D, L] = i.useState(() => (null != h ? h : []).map(e => e.value)), [_, R] = i.useState(0);
+  } = n, [S, C] = i.useState(!1), [E, N] = i.useState(!1), [I, k] = i.useState(new Map(null == v ? void 0 : v.map(e => [e.value, e]))), [Z, T] = i.useState(new Set(I.keys())), [D, L] = i.useState(() => (null != v ? v : []).map(e => e.value)), [_, R] = i.useState(0);
   i.useEffect(() => {
-    let e = (null != h ? h : []).map(e => e.value);
+    let e = (null != v ? v : []).map(e => e.value);
     if (e.every(e => D.includes(e)) && D.every(t => e.includes(t))) return;
     L(e);
-    let t = new Map(null == h ? void 0 : h.map(e => [e.value, e]));
+    let t = new Map(null == v ? void 0 : v.map(e => [e.value, e]));
     k(t), T(new Set(t.keys())), R(e => e + 1)
-  }, [h, D]);
+  }, [v, D]);
   let {
     state: A,
     executeStateUpdate: M,
@@ -79,7 +79,7 @@ function g(e) {
     isDisabled: W,
     error: F
   } = (0, d.Ee)(n, {
-    type: v,
+    type: h,
     selectedOptions: Array.from(I.values())
   }), H = U === p.gH.LOADING;
   i.useEffect(() => {
@@ -90,10 +90,10 @@ function g(e) {
   }, [A]);
   let G = i.useCallback(() => {
     M({
-      type: v,
+      type: h,
       selectedOptions: Array.from(I.values())
     }) && T(new Set(I.keys()))
-  }, [M, v, I]);
+  }, [M, h, I]);
   i.useEffect(() => {
     !(S || E || I.size === Z.size && Array.from(I.keys()).every(e => Z.has(e))) && G()
   }, [S, E, Z, I, G]);

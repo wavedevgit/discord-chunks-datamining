@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => C
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -10,14 +10,14 @@ var r = n(200651),
   l = n(481060),
   o = n(603211),
   c = n(734893),
-  d = n(592125),
-  u = n(768581),
-  m = n(8426),
+  A = n(592125),
+  d = n(768581),
+  u = n(8426),
   g = n(969632),
-  p = n(388032),
-  h = n(668813);
+  f = n(388032),
+  m = n(668813);
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,120 +48,120 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = function(e) {
+let C = function(e) {
   let {
     guildId: t,
     resourceChannel: s,
-    index: x,
-    onDragComplete: j,
-    onDragStart: N,
-    onDragReset: v
+    index: C,
+    onDragComplete: b,
+    onDragStart: v,
+    onDragReset: x
   } = e, {
-    title: _,
-    channelId: y,
-    description: O
-  } = s, C = d.Z.getChannel(y), I = null;
-  null != C && (0, c.k3)(C) || (I = p.NW.string(p.t.kTdL8f));
-  let E = null == O || 0 === O.length,
-    S = u.ZP.getResourceChannelIconURL({
+    title: N,
+    channelId: j,
+    description: E
+  } = s, I = A.Z.getChannel(j), O = null;
+  null != I && (0, c.k3)(I) || (O = f.NW.string(f.t.kTdL8f));
+  let y = null == E || 0 === E.length,
+    w = d.ZP.getResourceChannelIconURL({
       channelId: s.channelId,
       icon: s.icon
     }),
     {
-      drag: T,
-      dragSourcePosition: P,
-      drop: w,
-      setIsDraggable: R
+      drag: P,
+      dragSourcePosition: B,
+      drop: D,
+      setIsDraggable: T
     } = (0, o.Z)({
       type: "RESOURCE_CHANNEL",
       optionId: s.channelId,
-      index: x,
-      onDragStart: N,
-      onDragComplete: j,
-      onDragReset: v
+      index: C,
+      onDragStart: v,
+      onDragComplete: b,
+      onDragReset: x
     }),
-    Z = i.useCallback(e => {
-      (0, m.XG)(s.channelId, e)
+    S = i.useCallback(e => {
+      (0, u.XG)(s.channelId, e)
     }, [s.channelId]),
-    D = i.useCallback((e, n) => {
+    L = i.useCallback((e, n) => {
       let r = g.Z.getSettings();
-      null != r && ((0, m.XG)(s.channelId, e), (0, m.oo)(t, r).then(() => {
-        (0, m.mM)(t, e.channelId, n)
+      null != r && ((0, u.XG)(s.channelId, e), (0, u.oo)(t, r).then(() => {
+        (0, u.mM)(t, e.channelId, n)
       }))
     }, [t, s]),
-    k = i.useCallback(() => (0, l.ZDy)(async () => {
+    R = i.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
-      return n => (0, r.jsx)(e, b(f({}, n), {
+      return n => (0, r.jsx)(e, h(p({}, n), {
         guildId: t,
         resourceChannel: s,
-        onSave: Z,
-        onDelete: () => (0, m.Hz)(s.channelId),
-        onIconUpload: D
+        onSave: S,
+        onDelete: () => (0, u.Hz)(s.channelId),
+        onIconUpload: L
       }))
-    }), [t, s, Z, D]);
-  return null == C ? null : (0, r.jsxs)("div", {
-    className: h.resourceChannelContainer,
+    }), [t, s, S, L]);
+  return null == I ? null : (0, r.jsxs)("div", {
+    className: m.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
-      className: a()(h.resourceChannel, {
-        [h.dropIndicatorBefore]: null != P && x < P,
-        [h.dropIndicatorAfter]: null != P && x > P,
-        [h.resourceChannelError]: null != I
+      className: a()(m.resourceChannel, {
+        [m.dropIndicatorBefore]: null != B && C < B,
+        [m.dropIndicatorAfter]: null != B && C > B,
+        [m.resourceChannelError]: null != O
       }),
-      ref: e => T(w(e)),
+      ref: e => P(D(e)),
       children: [(0, r.jsx)("div", {
-        className: h.dragContainer,
-        onMouseEnter: () => R(!0),
-        onMouseLeave: () => R(!1),
+        className: m.dragContainer,
+        onMouseEnter: () => T(!0),
+        onMouseLeave: () => T(!1),
         children: (0, r.jsx)(l.Vni, {
           size: "xs",
           color: "currentColor",
-          className: h.dragIcon
+          className: m.dragIcon
         })
-      }), null != S && (0, r.jsx)("div", {
-        className: h.iconWrapper,
+      }), null != w && (0, r.jsx)("div", {
+        className: m.iconWrapper,
         children: (0, r.jsx)("img", {
-          src: S,
-          className: h.icon,
+          src: w,
+          className: m.icon,
           width: 32,
           height: 32,
           alt: "",
           "aria-hidden": !0
         })
       }), (0, r.jsxs)("div", {
-        className: h.resourceChannelContent,
+        className: m.resourceChannelContent,
         children: [(0, r.jsx)(l.Text, {
-          className: h.resourceChannelTitle,
+          className: m.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: _
-        }), !E && (0, r.jsx)(l.Text, {
-          className: h.resourceChannelDescription,
+          children: N
+        }), !y && (0, r.jsx)(l.Text, {
+          className: m.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: O
+          children: E
         })]
       }), (0, r.jsx)(l.ua7, {
-        text: p.NW.string(p.t.bt75u7),
-        children: e => (0, r.jsxs)(l.zxk, b(f({}, e), {
-          className: h.resourceChannelEditButton,
-          innerClassName: h.resourceChannelEditButtonInner,
+        text: f.NW.string(f.t.bt75u7),
+        children: e => (0, r.jsxs)(l.zxk, h(p({}, e), {
+          className: m.resourceChannelEditButton,
+          innerClassName: m.resourceChannelEditButtonInner,
           size: l.zxk.Sizes.MIN,
-          onClick: k,
+          onClick: R,
           children: [(0, r.jsx)(l.vdY, {
             size: "md",
             color: "currentColor"
           }), (0, r.jsx)(l.nn4, {
-            children: p.NW.string(p.t.bt75u7)
+            children: f.NW.string(f.t.bt75u7)
           })]
         }))
       })]
-    }), null != I && (0, r.jsx)(l.Text, {
+    }), null != O && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: I
+      children: O
     })]
   })
 }

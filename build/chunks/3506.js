@@ -18,8 +18,8 @@ var i = n(512722),
   h = n(212632),
   f = n(444295),
   x = n(809357),
-  N = n(371651),
-  b = n(957148),
+  b = n(371651),
+  N = n(957148),
   _ = n(556296),
   E = n(808506),
   j = n(237997),
@@ -68,7 +68,7 @@ function P(e) {
   } = e, {
     oopEnabled: i,
     legacyEnabled: a
-  } = (0, o.cj)([N.default], () => N.default.getGlobalEnabledStatus()), {
+  } = (0, o.cj)([b.default], () => b.default.getGlobalEnabledStatus()), {
     avatarSizeMode: E,
     displayNameMode: O,
     displayUserMode: P,
@@ -108,7 +108,7 @@ function P(e) {
               var t, n;
               u.Z.setEnabled(e, i);
               let r = null !== (n = null === (t = p.ZP.getCurrentGameForAnalytics()) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null;
-              (0, f.ou)(e, f.AE.LEGACY, r), !e && a && (0, b.l)(f.AE.LEGACY, r)
+              (0, f.ou)(e, f.AE.LEGACY, r), !e && a && (0, N.l)(f.AE.LEGACY, r)
             },
             children: S.NW.string(S.t.vSP6c3)
           })

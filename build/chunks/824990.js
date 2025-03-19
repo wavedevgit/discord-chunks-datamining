@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -10,12 +10,12 @@ var r = n(200651),
   l = n(8426),
   o = n(388032),
   c = n(668813);
-let d = function(e) {
+let A = function(e) {
   var t;
   let {
     channel: n,
-    end: d
-  } = e, u = i.useCallback(() => {
+    end: A
+  } = e, d = i.useCallback(() => {
     (0, l.r2)({
       channelId: n.id,
       title: n.name,
@@ -23,11 +23,11 @@ let d = function(e) {
       emoji: null,
       icon: null
     })
-  }, [n]), m = null !== (t = (0, a.KS)(n)) && void 0 !== t ? t : s.VL1;
+  }, [n]), u = null !== (t = (0, a.KS)(n)) && void 0 !== t ? t : s.VL1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: c.suggestedChannel,
-      children: [(0, r.jsx)(m, {
+      children: [(0, r.jsx)(u, {
         className: c.suggestedChannelIcon
       }), (0, r.jsx)(s.Text, {
         className: c.suggestedChannelText,
@@ -36,14 +36,14 @@ let d = function(e) {
       }), (0, r.jsx)(s.zxk, {
         className: c.suggestedChannelButton,
         size: s.zxk.Sizes.MIN,
-        onClick: u,
+        onClick: d,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "always-white",
           children: o.NW.string(o.t.OYkgVl)
         })
       })]
-    }), d && (0, r.jsx)("div", {
+    }), A && (0, r.jsx)("div", {
       className: c.suggestedSeparator
     })]
   })

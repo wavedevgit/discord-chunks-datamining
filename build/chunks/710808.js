@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(857192),
   f = n(131951),
   x = n(226961),
-  N = n(12647),
-  b = n(569550),
+  b = n(12647),
+  N = n(569550),
   _ = n(726985),
   E = n(981631),
   j = n(65154),
@@ -91,7 +91,7 @@ function y(e) {
   async function D() {
     d(!0);
     try {
-      await f.Z.getMediaEngine().writeAudioDebugState(), await N.Z.submitLiveCrashReport({
+      await f.Z.getMediaEngine().writeAudioDebugState(), await b.Z.submitLiveCrashReport({
           message: {
             message: "User Live Dump"
           }
@@ -152,7 +152,7 @@ function y(e) {
       children: (0, r.jsx)(a.j7V, {
         value: P,
         onChange: e => {
-          (0, b.Z)("stream_info_overlay_enabled", e, P), (0, o.y)({
+          (0, N.Z)("stream_info_overlay_enabled", e, P), (0, o.y)({
             isStreamInfoOverlayEnabled: e
           })
         },

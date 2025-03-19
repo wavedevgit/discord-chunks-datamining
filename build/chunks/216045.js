@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(100527),
   f = n(906732),
   x = n(475977),
-  N = n(605236),
-  b = n(957730),
+  b = n(605236),
+  N = n(957730),
   _ = n(53691),
   E = n(267717),
   j = n(296810),
@@ -72,7 +72,7 @@ function M() {
       image: V
     }),
     H = (0, l.e7)([y.Z], () => y.Z.showNotice()),
-    z = Z.dN.useSetting() && null != U ? b.ZP.parse(void 0, U).content : U,
+    z = Z.dN.useSetting() && null != U ? N.ZP.parse(void 0, U).content : U,
     Y = R.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: K
@@ -81,10 +81,10 @@ function M() {
     let e = (0, T.Tq)({
         location: "UserSettingsProfileCustomization"
       }),
-      t = (0, N.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+      t = (0, b.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
       n = e && !t;
     i.useEffect(() => {
-      n && (0, N.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+      n && (0, b.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
         forceTrack: !0
       })
     }, [n])

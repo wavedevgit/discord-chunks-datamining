@@ -1,13 +1,13 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(47120);
 var r, i, s, a = n(442837),
   l = n(570140),
   o = n(430824);
 let c = new Map;
-class d extends(r = a.ZP.Store) {
+class A extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(o.Z)
   }
@@ -15,13 +15,13 @@ class d extends(r = a.ZP.Store) {
     return c.get(e)
   }
 }
-s = "GuildRoleConnectionsConfigurationStore", (i = "displayName") in d ? Object.defineProperty(d, i, {
+s = "GuildRoleConnectionsConfigurationStore", (i = "displayName") in A ? Object.defineProperty(A, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : d[i] = s;
-let u = new d(l.Z, {
+}) : A[i] = s;
+let d = new A(l.Z, {
   GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: e => {
     let {
       roleId: t,

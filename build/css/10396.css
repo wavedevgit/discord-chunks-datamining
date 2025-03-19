@@ -1,6 +1,6 @@
 /**
   Module ID: 10396
-  Original File Name: 25bde31f06443338
+  Original File Name: 93b54f8531956858
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -14194,8 +14194,14 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     width: 100%
 }
 
+.container__69ef9 {
+    display: flex;
+    flex-direction: row
+}
+
 .leftContent__69ef9 {
-    max-width: 352px
+    max-width: 352px;
+    margin-right: 40px
 }
 
 .description__69ef9,.title__69ef9 {
@@ -14307,6 +14313,67 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     border-color: var(--border-subtle)
 }
 
+.container__11014 {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-12);
+    padding: var(--spacing-12);
+    border-radius: var(--radius-xs);
+    background-color: var(--bg-base-secondary)
+}
+
+.unfocusedMessage__11014 {
+    opacity: .2
+}
+
+.badgeContainer__11014 {
+    height: 100%
+}
+
+.badgeContainer__11014,.tagText__11014 {
+    display: flex;
+    align-items: center
+}
+
+.tagText__11014 {
+    flex-direction: row;
+    gap: 2px
+}
+
+.badgePreview__11014 {
+    margin-right: 2px
+}
+
+.messageContainer__11014 {
+    display: flex;
+    flex-direction: row
+}
+
+.avatarContainer__11014 {
+    margin-right: var(--spacing-12);
+    border-radius: var(--radius-round);
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-brand)
+}
+
+.contentContainer__11014 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.usernameContainer__11014 {
+    display: flex;
+    flex-direction: row
+}
+
+.decorationsContainer__11014 {
+    margin-left: var(--spacing-4)
+}
+
 .serverBoostTabItem_cbe0b4[aria-selected=true] {
     color: var(--white-500)!important;
     background-color: var(--brand-500)!important
@@ -14333,4 +14400,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=25bde31f06443338.css.map*/
+/*# sourceMappingURL=93b54f8531956858.css.map*/

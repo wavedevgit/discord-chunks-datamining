@@ -23,16 +23,16 @@ function d(e) {
     m = p.extra.media_title,
     j = p.extra.media_subtitle,
     g = (0, a.Jg)(p) ? u.t["LH+Z39"] : u.t.YuKgmp,
-    h = {
+    v = {
       type: c.kG.CRUNCHYROLL
     },
-    v = n.useMemo(() => {
+    h = n.useMemo(() => {
       if (null == p.extra.url) return;
       let e = o.Z.safeParseWithQuery(p.extra.url);
       if (null != e && null != e.protocol && null != e.hostname) return e
     }, [p.extra.url]);
-  return null != v && (d = {
-    href: o.Z.format(v),
+  return null != h && (d = {
+    href: o.Z.format(h),
     ariaDescription: u.NW.formatToPlainString(u.t.aFFQ3t, {
       title: m
     })
@@ -60,7 +60,7 @@ function d(e) {
     thumbnailClickable: d,
     subtitle: j,
     userDescription: g,
-    providerIconProps: h
+    providerIconProps: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

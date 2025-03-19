@@ -21,8 +21,8 @@ var l = r(120356),
   m = r(861529),
   j = r(568248),
   g = r(770009),
-  h = r(889515),
-  v = r(985184),
+  v = r(889515),
+  h = r(985184),
   P = r(892519),
   x = r(16141);
 
@@ -62,7 +62,7 @@ function C(e) {
   return e.map((e, t) => (function(e, t) {
     switch (e.type) {
       case o.re.ACTION_ROW:
-        return (0, n.jsx)(h.Z, S(w({}, e), {
+        return (0, n.jsx)(v.Z, S(w({}, e), {
           renderComponents: C
         }), t);
       case o.re.BUTTON:
@@ -92,7 +92,7 @@ function C(e) {
       case o.re.CONTENT_INVENTORY_ENTRY:
         return (0, n.jsx)(g.Z, w({}, e), t);
       case o.re.CONTAINER:
-        return (0, n.jsx)(v.ZP, S(w({}, e), {
+        return (0, n.jsx)(h.ZP, S(w({}, e), {
           renderComponents: C
         }), t)
     }

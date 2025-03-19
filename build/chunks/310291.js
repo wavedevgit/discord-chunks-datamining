@@ -27,8 +27,8 @@ let l = e => {
     let {
       groupType: n,
       teamId: i
-    } = t, [s, o] = r.useState(!0), [c, d] = r.useState([]), u = r.useCallback(async () => {
-      if (d([]), null == e) {
+    } = t, [s, o] = r.useState(!0), [c, A] = r.useState([]), d = r.useCallback(async () => {
+      if (A([]), null == e) {
         o(!1);
         return
       }
@@ -37,14 +37,14 @@ let l = e => {
         let t = await a.C(e, {
           grouping_type: n
         });
-        d(t)
+        A(t)
       } catch (e) {} finally {
         o(!1)
       }
     }, [e, n]);
     return r.useEffect(() => {
-      u()
-    }, [u]), {
+      d()
+    }, [d]), {
       payoutsByPeriod: r.useMemo(() => l(null != i ? c.filter(e => e.user_id === i) : c), [c, i]),
       loading: s
     }

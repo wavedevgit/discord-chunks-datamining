@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  R: () => u
+  R: () => d
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,15 +10,15 @@ var r = n(200651),
   l = n(823379),
   o = n(434404),
   c = n(999382),
-  d = n(203377);
+  A = n(203377);
 
-function u() {
+function d() {
   let {
     guild: e,
     originalGuild: t,
     submitting: n,
-    errors: u
-  } = (0, s.cj)([c.Z], () => c.Z.getProps()), m = i.useMemo(() => (0, d.LG)(u), [u]), g = i.useCallback(async () => {
+    errors: d
+  } = (0, s.cj)([c.Z], () => c.Z.getProps()), u = i.useMemo(() => (0, A.LG)(d), [d]), g = i.useCallback(async () => {
     if (null == e) return Promise.resolve();
     let n = {
       systemChannelFlags: e.systemChannelFlags,
@@ -35,13 +35,13 @@ function u() {
       await o.Z.updateEmbed(e.id, t, n)
     }
     return Promise.resolve()
-  }, [e, t]), p = i.useCallback(() => {
+  }, [e, t]), f = i.useCallback(() => {
     null != e && o.Z.init(e.id)
   }, [e]);
   return (0, r.jsx)(a.Z, {
     submitting: n,
-    errorMessage: m,
+    errorMessage: u,
     onSave: g,
-    onReset: p
+    onReset: f
   })
 }

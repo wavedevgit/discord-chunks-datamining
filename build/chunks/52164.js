@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -26,15 +26,15 @@ function x(e) {
     {
       analyticsLocations: x
     } = (0, o.ZP)(),
-    [N] = (0, m.ED)({
+    [b] = (0, m.ED)({
       subscriptionId: n.id,
       renewal: !0,
       analyticsLocations: x,
       analyticsLocation: l.Z.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
     });
-  if (null == N) return null;
-  let b = i ? f.finePrintWithOverheadSeparator : f.finePrint,
-    _ = N.invoiceItems.find(e => {
+  if (null == b) return null;
+  let N = i ? f.finePrintWithOverheadSeparator : f.finePrint,
+    _ = b.invoiceItems.find(e => {
       let {
         subscriptionPlanId: t
       } = e;
@@ -44,7 +44,7 @@ function x(e) {
   let E = _.subscriptionPlanId,
     j = c.Z.get(E);
   s()(null != j, "Missing plan");
-  let C = (0, u.T4)(N.total, N.currency);
+  let C = (0, u.T4)(b.total, b.currency);
   return j.interval === g.rV.YEAR ? t = h.NW.format(h.t["jPz/39"], {
     price: C,
     termsUrl: p.EYA.TERMS,
@@ -63,13 +63,13 @@ function x(e) {
     intervalCount: j.intervalCount
   })), (0, r.jsx)(a.Text, {
     color: "text-muted",
-    className: b,
+    className: N,
     variant: "text-xs/normal",
     children: t
   })
 }
 
-function N(e) {
+function b(e) {
   let {
     subscription: t,
     withOverheadSeparator: n

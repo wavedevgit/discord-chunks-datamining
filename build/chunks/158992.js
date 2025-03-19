@@ -9,12 +9,12 @@ var r = n(192379),
   a = n(581050);
 
 function l(e) {
-  let [t, n] = r.useState(null != e), [l, o] = r.useState(), [c, d] = r.useState(), u = r.useCallback(async e => {
+  let [t, n] = r.useState(null != e), [l, o] = r.useState(), [c, A] = r.useState(), d = r.useCallback(async e => {
     n(!0), o(void 0);
     try {
-      var t, r, l, c, u;
+      var t, r, l, c, d;
       let n = await s.yk(e);
-      d({
+      A({
         isEligibleForMonetization: n.sufficient,
         hasSufficientMembers: n.size,
         hasEnabled2FA: n.mfa,
@@ -34,7 +34,7 @@ function l(e) {
         rejection: n.rejection,
         guildMemberCount: null === (l = n.health_score) || void 0 === l ? void 0 : l.guild_size,
         communicatorCount: null === (c = n.health_score) || void 0 === c ? void 0 : c.communicators,
-        retentionScore: null === (u = n.health_score) || void 0 === u ? void 0 : u.perc_ret_w1
+        retentionScore: null === (d = n.health_score) || void 0 === d ? void 0 : d.perc_ret_w1
       })
     } catch (e) {
       o(new i.Z(e))
@@ -47,7 +47,7 @@ function l(e) {
     loading: t,
     eligibility: c,
     refresh: r.useCallback(() => {
-      null != e && u(e)
-    }, [e, u])
+      null != e && d(e)
+    }, [e, d])
   }
 }

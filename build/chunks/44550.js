@@ -1,18 +1,18 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r, i, s, a = n(442837),
   l = n(570140);
 let o = null,
   c = 0,
+  A = null,
   d = null,
-  u = null,
-  m = !1;
+  u = !1;
 class g extends(s = a.ZP.Store) {
   hasChanges() {
-    return o !== d
+    return o !== A
   }
   showNotice() {
     return this.hasChanges()
@@ -21,19 +21,19 @@ class g extends(s = a.ZP.Store) {
     return o
   }
   get originalVanityURLCode() {
-    return d
+    return A
   }
   get vanityURLUses() {
     return c
   }
   hasError() {
-    return null != u
+    return null != d
   }
   get errorDetails() {
-    return u
+    return d
   }
   get fetchedVanityURL() {
-    return m
+    return u
   }
 }
 i = "GuildSettingsVanityURLStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
@@ -42,21 +42,21 @@ i = "GuildSettingsVanityURLStore", (r = "displayName") in g ? Object.definePrope
   configurable: !0,
   writable: !0
 }) : g[r] = i;
-let p = new g(l.Z, {
+let f = new g(l.Z, {
   GUILD_SETTINGS_SET_VANITY_URL: function(e) {
     var t, n;
-    d = o = null !== (t = e.code) && void 0 !== t ? t : "", c = e.uses, u = null !== (n = e.error) && void 0 !== n ? n : null, m = !0
+    A = o = null !== (t = e.code) && void 0 !== t ? t : "", c = e.uses, d = null !== (n = e.error) && void 0 !== n ? n : null, u = !0
   },
   GUILD_SETTINGS_CLOSE: function() {
-    d = o = null, c = 0, u = null, m = !1
+    A = o = null, c = 0, d = null, u = !1
   },
   GUILD_SETTINGS_VANITY_URL_RESET: function() {
-    o = d, c = 0, u = null
+    o = A, c = 0, d = null
   },
   GUILD_SETTINGS_VANITY_URL_SET: function(e) {
     o = e.code, c = 0
   },
   GUILD_SETTINGS_VANITY_URL_ERROR: function(e) {
-    u = e.error
+    d = e.error
   }
 })

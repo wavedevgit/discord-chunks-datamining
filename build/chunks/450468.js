@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(906732),
   f = n(600164),
   x = n(431369),
-  N = n(210887),
-  b = n(78839),
+  b = n(210887),
+  N = n(78839),
   _ = n(74538),
   E = n(388032),
   j = n(241534);
@@ -34,7 +34,7 @@ function O(e) {
     guildBoostSlotId: n,
     onNext: s,
     onClose: d
-  } = e, [u, p] = i.useState(!1), b = (0, l.e7)([N.Z], () => N.Z.theme), {
+  } = e, [u, p] = i.useState(!1), N = (0, l.e7)([b.Z], () => b.Z.theme), {
     analyticsLocations: O
   } = (0, h.ZP)(), [v, S] = i.useState(null);
   return (0, r.jsxs)(r.Fragment, {
@@ -69,7 +69,7 @@ function O(e) {
         children: E.NW.string(E.t.etZP4O)
       }), (0, r.jsx)(c.zxk, {
         look: c.zxk.Looks.LINK,
-        color: (0, o.ap)(b) ? c.zxk.Colors.PRIMARY : c.zxk.Colors.WHITE,
+        color: (0, o.ap)(N) ? c.zxk.Colors.PRIMARY : c.zxk.Colors.WHITE,
         onClick: d,
         disabled: u,
         children: E.NW.string(E.t.oEAioK)
@@ -117,9 +117,9 @@ function S(e) {
       analyticsLocations: o
     } = (0, h.ZP)(p.Z.GUILD_BOOST_UNCANCELLATION_MODAL);
   i.useEffect(() => {
-    b.ZP.hasFetchedSubscriptions() || (0, d.jg)()
+    N.ZP.hasFetchedSubscriptions() || (0, d.jg)()
   }, []);
-  let u = (0, l.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()),
+  let u = (0, l.e7)([N.ZP], () => N.ZP.getPremiumTypeSubscription()),
     [m, g] = i.useState(1);
   if (null == u) t = (0, r.jsx)(c.hzk, {
     children: (0, r.jsx)(c.$jN, {})

@@ -17,15 +17,15 @@ var r = n(200651),
   h = n(821629),
   f = n(114625),
   x = n(711896),
-  N = n(780525),
-  b = n(474936),
+  b = n(780525),
+  N = n(474936),
   _ = n(388032),
   E = n(537363);
 let j = e => {
   let {
     isFullScreen: t,
     analyticsLocations: n
-  } = e, i = (0, l.e7)([g.default], () => g.default.getCurrentUser()), j = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), C = (0, p.M5)(i, b.p9.TIER_0) || (0, p.M5)(i, b.p9.TIER_1), O = new Date(N.Lk);
+  } = e, i = (0, l.e7)([g.default], () => g.default.getCurrentUser()), j = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), C = (0, p.M5)(i, N.p9.TIER_0) || (0, p.M5)(i, N.p9.TIER_1), O = new Date(b.Lk);
   return (0, r.jsx)(u.O, {
     newLocations: [d.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsx)("div", {
@@ -51,7 +51,7 @@ let j = e => {
           variant: "text-sm/medium",
           color: "always-white",
           children: _.NW.format(_.t.ESckJy, {
-            termsLink: N.Ps
+            termsLink: b.Ps
           })
         }), (0, r.jsx)(o.gtL, {
           color: "white",
@@ -60,7 +60,7 @@ let j = e => {
           onClick: () => {
             (0, m.Z)({
               analyticsLocations: n,
-              subscriptionTier: b.Si.TIER_2,
+              subscriptionTier: N.Si.TIER_2,
               confirmationFooter: (0, r.jsx)(f.Z, {}),
               planSelectBanner: (0, r.jsx)(x.Z, {})
             })

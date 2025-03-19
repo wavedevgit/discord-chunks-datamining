@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(136097),
   f = n(605236),
   x = n(246946),
-  N = n(594174),
-  b = n(460562),
+  b = n(594174),
+  N = n(460562),
   _ = n(823379),
   E = n(981631),
   j = n(921944),
@@ -30,7 +30,7 @@ function v() {
   let {
     currentSession: t,
     otherSessions: n
-  } = (0, h.h)(), s = (0, l.e7)([x.Z], () => x.Z.hidePersonalInformation), a = (0, l.e7)([N.default], () => N.default.getCurrentUser()), [u, g] = i.useState(!1);
+  } = (0, h.h)(), s = (0, l.e7)([x.Z], () => x.Z.hidePersonalInformation), a = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [u, g] = i.useState(!1);
   i.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: j.L.AUTO
@@ -40,7 +40,7 @@ function v() {
       clearTimeout(e), (0, p.$Z)()
     }
   }, []);
-  let b = () => {
+  let N = () => {
       o.tn.post({
         url: E.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
@@ -123,7 +123,7 @@ function v() {
           return (0, r.jsx)(d.zxk, {
             size: d.zxk.Sizes.SMALL,
             color: d.zxk.Colors.PRIMARY,
-            onClick: b,
+            onClick: N,
             onMouseEnter: t,
             onMouseLeave: n,
             children: "Trigger Suspicious Sessions Notification"
@@ -143,8 +143,8 @@ function S(e) {
     checked: m,
     useChecks: g
   } = e, f = null !== (l = null === (t = o.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== l ? l : null === (n = o.client_info) || void 0 === n ? void 0 : n.ip, x = null === (i = o.client_info) || void 0 === i ? void 0 : i.platform, {
-    text: N,
-    icon: b
+    text: b,
+    icon: N
   } = function(e) {
     switch (null == e ? void 0 : e.toLowerCase().trim()) {
       case null:
@@ -163,12 +163,12 @@ function S(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [N, x].filter(_.lm), v = [f, E].filter(_.lm);
+  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [b, x].filter(_.lm), v = [f, E].filter(_.lm);
   return (0, r.jsxs)("div", {
     className: a()(O.session, c ? O.currentSession : null),
     children: [(0, r.jsx)("div", {
       className: O.sessionIcon,
-      children: (0, r.jsx)(b, {
+      children: (0, r.jsx)(N, {
         size: "md",
         color: "currentColor"
       })
@@ -226,7 +226,7 @@ function T() {
     className: a()(O.session, O.legacySession),
     children: [(0, r.jsx)("div", {
       className: O.sessionIcon,
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(N.Z, {
         width: "32",
         height: "32"
       })

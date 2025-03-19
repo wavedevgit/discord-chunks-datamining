@@ -38,7 +38,7 @@ function O(e) {
   }
   o = s.content_type === n.s.PLAYED_GAME && (0, c.kr)(s) && !(0, c.n2)(s) ? p.t.vPg1JS : p.t.rPqqtr;
   let g = f[u],
-    h = {
+    v = {
       onClick: (0, a.Z)({
         location: g,
         applicationId: s.extra.application_id,
@@ -70,8 +70,8 @@ function O(e) {
   }({}, O), r = r = {
     thumbnailUrl: m,
     title: j,
-    titleClickable: h,
-    thumbnailClickable: h,
+    titleClickable: v,
+    thumbnailClickable: v,
     userDescription: o,
     providerIconProps: l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

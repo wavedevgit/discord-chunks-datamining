@@ -11,10 +11,10 @@ var i = n(120356),
   l = n(768581),
   o = n(723047),
   c = n(570533),
-  d = n(388032),
-  u = n(534139);
+  A = n(388032),
+  d = n(534139);
 
-function m(e) {
+function u(e) {
   let {
     emoji: t,
     onRemoveEmoji: n,
@@ -25,29 +25,29 @@ function m(e) {
     size: 32
   });
   return (0, r.jsxs)("div", {
-    className: s()(u.emojiRow, {
-      [u.disabled]: i
+    className: s()(d.emojiRow, {
+      [d.disabled]: i
     }),
     children: [(0, r.jsx)("img", {
-      className: u.emojiImage,
+      className: d.emojiImage,
       src: o,
       alt: t.name
     }), (0, r.jsx)(a.Text, {
       color: "header-primary",
       variant: "text-md/medium",
-      className: u.emojiAlias,
+      className: d.emojiAlias,
       children: t.name
     }), (0, r.jsx)(a.zxk, {
       look: a.zxk.Looks.BLANK,
       size: a.zxk.Sizes.ICON,
-      className: u.deleteButton,
+      className: d.deleteButton,
       onClick: () => n(t),
-      "aria-label": d.NW.string(d.t.dVS92d),
+      "aria-label": A.NW.string(A.t.dVS92d),
       disabled: i,
       children: (0, r.jsx)(a.XHJ, {
         size: "md",
         color: "currentColor",
-        className: u.trashIcon
+        className: d.trashIcon
       })
     })]
   })
@@ -60,8 +60,8 @@ function g(e) {
     onRemoveEmoji: i
   } = e, s = (0, c.Z)(n), a = null != t ? s.filter(e => t.has(e.id)) : [], l = (0, o.mY)();
   return (0, r.jsx)("div", {
-    className: u.container,
-    children: a.map(e => (0, r.jsx)(m, {
+    className: d.container,
+    children: a.map(e => (0, r.jsx)(u, {
       emoji: e,
       onRemoveEmoji: () => i(e),
       disabled: l

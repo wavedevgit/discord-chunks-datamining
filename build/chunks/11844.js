@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(388032),
   x = n(194072);
 
-function N(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function N(e) {
   return e
 }
 
-function b(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ let _ = function() {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
-      return t => (0, r.jsx)(e, b(N({}, t), {
+      return t => (0, r.jsx)(e, N(b({}, t), {
         onSelectGuild: C
       }))
     }, {
@@ -113,7 +113,7 @@ let _ = function() {
           return n ? (0, r.jsx)(c.Z, {
             text: v,
             "aria-label": v.toString(),
-            children: e => (0, r.jsx)("span", b(N({}, e), {
+            children: e => (0, r.jsx)("span", N(b({}, e), {
               children: i
             }))
           }, t) : i

@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(714338),
   f = n(857595),
   x = n(607070),
-  N = n(627845),
-  b = n(514361),
+  b = n(627845),
+  N = n(514361),
   _ = n(600164),
   E = n(313201),
   j = n(540059),
@@ -122,7 +122,7 @@ let Y = {
   },
   $ = () => {
     let e = (0, j.Q3)("ThemeTitle"),
-      t = (0, l.e7)([b.Z], () => b.Z.isPreview),
+      t = (0, l.e7)([N.Z], () => N.Z.isPreview),
       {
         enabled: n
       } = I.Z.useExperiment({
@@ -291,7 +291,7 @@ class ee extends i.Component {
       children: (0, r.jsx)(u.R94, {
         type: u.R94.Types.DEFAULT,
         className: V.forcedColorsWarning,
-        children: (0, N.b)() ? U.NW.format(U.t.Jae48P, {
+        children: (0, b.b)() ? U.NW.format(U.t.Jae48P, {
           onClick: () => {
             g.Z.open(L.oAB.ACCESSIBILITY)
           }
@@ -649,7 +649,7 @@ function er() {
   (0, p.ZP)(() => {
     en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, l.cj)([R.Z, D.ZP, x.Z, A.default, b.Z], () => {
+  let c = (0, l.cj)([R.Z, D.ZP, x.Z, A.default, N.Z], () => {
       var e, t;
       return {
         theme: R.Z.theme,
@@ -661,7 +661,7 @@ function er() {
         messageGroupSpacing: x.Z.messageGroupSpacing,
         displayCompactAvatars: D.ZP.displayCompactAvatars,
         isStaff: null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
-        gradientPreset: b.Z.gradientPreset
+        gradientPreset: N.Z.gradientPreset
       }
     }),
     d = (0, j.nm)("UserSettingsAppearance"),

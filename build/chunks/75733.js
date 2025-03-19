@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,17 +10,17 @@ var r = n(200651),
   l = n(481060),
   o = n(596454),
   c = n(225433),
-  d = n(318766),
-  u = n(907040),
-  m = n(273039),
+  A = n(318766),
+  d = n(907040),
+  u = n(273039),
   g = n(176354),
-  p = n(434404),
-  h = n(185923),
-  f = n(388032),
-  b = n(501968),
-  x = n(659116);
+  f = n(434404),
+  m = n(185923),
+  p = n(388032),
+  h = n(501968),
+  C = n(659116);
 
-function j(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,26 +38,26 @@ function j(e) {
   }
   return e
 }
-let N = {
+let v = {
   label: ""
 };
 
-function v(e) {
+function x(e) {
   let {
     guildId: t,
     trait: n,
     index: s,
-    onTraitUpdate: p,
-    disabled: f
-  } = e, x = i.useCallback(() => {
-    p(t, s, {
+    onTraitUpdate: f,
+    disabled: p
+  } = e, C = i.useCallback(() => {
+    f(t, s, {
       emoji: void 0
     })
-  }, [t, s, p]), N = i.useCallback(e => (n, r) => {
-    p(t, s, {
+  }, [t, s, f]), v = i.useCallback(e => (n, r) => {
+    f(t, s, {
       emoji: null != n ? n : void 0
     }), r && e()
-  }, [t, s, p]), v = i.useMemo(() => {
+  }, [t, s, f]), x = i.useMemo(() => {
     let e = n.emoji,
       t = null == e || null == e.name ? null : () => {
         var t;
@@ -68,26 +68,26 @@ function v(e) {
           emojiName: n
         })
       };
-    return f ? (0, r.jsx)(d.Z, {
+    return p ? (0, r.jsx)(A.Z, {
       tabIndex: -1,
       active: !1,
       renderButtonContents: t
-    }) : (0, r.jsx)(m.Z, {
-      className: b.emojiWrapper,
-      buttonClassName: b.removeButton,
+    }) : (0, r.jsx)(u.Z, {
+      className: h.emojiWrapper,
+      buttonClassName: h.removeButton,
       look: c.Z.Looks.FILLED,
       hasSetEmoji: null != e && null != e.name,
-      onClick: x,
+      onClick: C,
       children: (0, r.jsx)(l.yRy, {
         position: "bottom",
         renderPopout: e => {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(u.Z, {
+          return (0, r.jsx)(d.Z, {
             closePopout: t,
-            onSelectEmoji: N(t),
-            pickerIntention: h.Hz.GUILD_PROFILE
+            onSelectEmoji: v(t),
+            pickerIntention: m.Hz.GUILD_PROFILE
           })
         },
         children: (e, n) => {
@@ -95,7 +95,7 @@ function v(e) {
           let {
             isShown: a
           } = n;
-          return (0, r.jsx)(d.Z, (i = j({}, e), s = s = {
+          return (0, r.jsx)(A.Z, (i = b({}, e), s = s = {
             tabIndex: 0,
             active: a,
             renderButtonContents: t
@@ -112,55 +112,55 @@ function v(e) {
         }
       })
     })
-  }, [n.emoji, f, x, N]), [_, y] = i.useState(!1), O = i.useCallback(() => y(!0), []), C = i.useCallback(() => y(!1), []), I = i.useCallback(e => {
-    p(t, s, {
+  }, [n.emoji, p, C, v]), [N, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), I = i.useCallback(() => j(!1), []), O = i.useCallback(e => {
+    f(t, s, {
       label: e
     })
-  }, [t, s, p]);
+  }, [t, s, f]);
   return (0, r.jsx)(l.oil, {
-    "aria-disabled": f,
-    disabled: f,
+    "aria-disabled": p,
+    disabled: p,
     value: n.label,
-    onChange: I,
+    onChange: O,
     maxLength: 24,
-    prefixElement: v,
-    className: a()(b.traitContainer, {
-      [b.traitContainerFocused]: _
+    prefixElement: x,
+    className: a()(h.traitContainer, {
+      [h.traitContainerFocused]: N
     }),
-    inputClassName: b.traitInput,
-    onFocus: O,
-    onBlur: C
+    inputClassName: h.traitInput,
+    onFocus: E,
+    onBlur: I
   })
 }
-let _ = [0, 1, 2, 3, 4];
+let N = [0, 1, 2, 3, 4];
 
-function y(e) {
+function j(e) {
   let {
     profile: t,
     canManageGuild: n
   } = e, s = i.useMemo(() => t.traits, [t]), a = i.useCallback((e, t, n) => {
     let r = [...s];
-    r[t] = j({}, s[t], n), p.Z.updateGuildProfile(e, {
+    r[t] = b({}, s[t], n), f.Z.updateGuildProfile(e, {
       traits: r
     })
   }, [s]);
   return (0, r.jsxs)(l.hjN, {
-    className: x.section,
+    className: C.section,
     children: [(0, r.jsxs)("div", {
-      className: x.sectionHeader,
+      className: C.sectionHeader,
       children: [(0, r.jsx)(l.vwX, {
-        children: f.NW.string(f.t.S6JNrq)
+        children: p.NW.string(p.t.S6JNrq)
       }), (0, r.jsx)(l.R94, {
         type: "description",
-        children: f.NW.string(f.t.l7Ig5e)
+        children: p.NW.string(p.t.l7Ig5e)
       })]
     }), (0, r.jsx)("div", {
-      className: b.grid,
-      children: _.map(e => {
+      className: h.grid,
+      children: N.map(e => {
         var i;
-        return (0, r.jsx)(v, {
+        return (0, r.jsx)(x, {
           guildId: t.id,
-          trait: null !== (i = s[e]) && void 0 !== i ? i : N,
+          trait: null !== (i = s[e]) && void 0 !== i ? i : v,
           index: e,
           onTraitUpdate: a,
           disabled: !n

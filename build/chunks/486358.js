@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -11,70 +11,70 @@ var i = n(793030),
   l = n(100527),
   o = n(906732),
   c = n(34586),
-  d = n(496675),
-  u = n(999382),
-  m = n(723914),
+  A = n(496675),
+  d = n(999382),
+  u = n(723914),
   g = n(30818),
-  p = n(997698),
-  h = n(354031),
-  f = n(335438),
-  b = n(166805),
-  x = n(981631),
-  j = n(388032),
-  N = n(80281);
-let v = function() {
+  f = n(997698),
+  m = n(354031),
+  p = n(335438),
+  h = n(166805),
+  C = n(981631),
+  b = n(388032),
+  v = n(80281);
+let x = function() {
   let {
     analyticsLocations: e
-  } = (0, o.ZP)(l.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, s.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, s.e7)([d.Z], () => null != t && d.Z.can(x.Plq.MANAGE_GUILD, t)), v = (0, c.E)(t), _ = (0, a.l9)(null != t ? t : void 0);
+  } = (0, o.ZP)(l.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, s.e7)([d.Z], () => d.Z.getProps().guild, []), n = (0, s.e7)([A.Z], () => null != t && A.Z.can(C.Plq.MANAGE_GUILD, t)), x = (0, c.E)(t), N = (0, a.l9)(null != t ? t : void 0);
   return null == t ? null : (0, r.jsx)(o.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
-      className: N.container,
+      className: v.container,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(i.X6, {
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: j.NW.string(j.t["6TAHb2"])
+          children: b.NW.string(b.t["6TAHb2"])
         }), (0, r.jsx)(i.xv, {
           variant: "text-sm/medium",
           color: "header-secondary",
           tag: "p",
-          className: N.description,
-          children: j.NW.string(j.t.XCGZFh)
+          className: v.description,
+          children: b.NW.string(b.t.XCGZFh)
         })]
-      }), !0 === _ && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h.P, {
+      }), !0 === N && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(m.P, {
           canManageGuild: n,
           features: t.features
         }), (0, r.jsx)("div", {
-          className: N.divider
+          className: v.divider
         })]
-      }), (0, r.jsx)(f.l, {
+      }), (0, r.jsx)(p.l, {
         canManageGuild: n,
         guild: t
-      }), void 0 !== v && (0, r.jsxs)(r.Fragment, {
+      }), void 0 !== x && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: N.divider
-        }), (0, r.jsx)(m.q, {
-          isInventoryFeedEnabled: v,
+          className: v.divider
+        }), (0, r.jsx)(u.q, {
+          isInventoryFeedEnabled: x,
           canManageGuild: n,
           features: t.features
         })]
       }), (0, r.jsx)("div", {
-        className: N.divider
+        className: v.divider
       }), (0, r.jsx)(g.z, {
         guildId: t.id,
         defaultSettings: t.defaultMessageNotifications,
         canManageGuild: n
       }), (0, r.jsx)("div", {
-        className: N.divider
-      }), (0, r.jsx)(p.L, {
+        className: v.divider
+      }), (0, r.jsx)(f.L, {
         canManageGuild: n,
         guild: t
       }), !0 === n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: N.divider
-        }), (0, r.jsx)(b.P, {
+          className: v.divider
+        }), (0, r.jsx)(h.P, {
           guildId: t.id
         })]
       })]

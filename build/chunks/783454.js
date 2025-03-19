@@ -10,9 +10,9 @@ var r = n(200651),
   l = n(481060),
   o = n(313201),
   c = n(259580),
-  d = n(404203),
-  u = n(388032),
-  m = n(64288);
+  A = n(404203),
+  d = n(388032),
+  u = n(64288);
 
 function g(e) {
   let {
@@ -20,14 +20,14 @@ function g(e) {
     title: n,
     description: s,
     children: g
-  } = e, [p, h] = i.useState(t), f = () => h(e => !e), b = (0, o.Dt)();
+  } = e, [f, m] = i.useState(t), p = () => m(e => !e), h = (0, o.Dt)();
   return (0, r.jsxs)("div", {
-    className: m.container,
-    children: [(0, r.jsx)(d.Z, {
-      className: a()(m.header, {
-        [m.headerWithDescription]: p && null != s
+    className: u.container,
+    children: [(0, r.jsx)(A.Z, {
+      className: a()(u.header, {
+        [u.headerWithDescription]: f && null != s
       }),
-      onClick: f,
+      onClick: p,
       children: e => {
         let {
           areaRef: t,
@@ -38,30 +38,30 @@ function g(e) {
             variant: "heading-md/semibold",
             children: n
           }), (0, r.jsx)(l.P3F, {
-            onClick: i(f),
-            "aria-label": u.NW.string(u.t.e5eQOz),
-            "aria-controls": b,
-            "aria-expanded": p,
+            onClick: i(p),
+            "aria-label": d.NW.string(d.t.e5eQOz),
+            "aria-controls": h,
+            "aria-expanded": f,
             focusProps: {
               ringTarget: t
             },
             children: (0, r.jsx)(c.Z, {
-              className: m.caret,
-              direction: p ? c.Z.Directions.UP : c.Z.Directions.DOWN
+              className: u.caret,
+              direction: f ? c.Z.Directions.UP : c.Z.Directions.DOWN
             })
           })]
         })
       }
-    }), p && (0, r.jsxs)("div", {
-      id: b,
+    }), f && (0, r.jsxs)("div", {
+      id: h,
       children: [null != s && (0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
-        className: m.description,
+        className: u.description,
         children: s
       }), (0, r.jsx)("div", {
-        className: m.divider
+        className: u.divider
       }), (0, r.jsx)("div", {
-        className: m.content,
+        className: u.content,
         children: g
       })]
     })]

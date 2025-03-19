@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -11,13 +11,13 @@ var i = n(120356),
   l = n(73346),
   o = n(169903),
   c = n(67152),
-  d = n(388032),
-  u = n(24651),
-  m = n(379866);
+  A = n(388032),
+  d = n(24651),
+  u = n(379866);
 let g = [{
     key: "tier_name",
-    cellClassName: u.tierNameColumn,
-    renderHeader: () => d.NW.string(d.t["2Uiha2"]),
+    cellClassName: d.tierNameColumn,
+    renderHeader: () => A.NW.string(A.t["2Uiha2"]),
     render(e) {
       let t, {
         subscriptionListing: n
@@ -28,26 +28,26 @@ let g = [{
           children: [(0, r.jsx)("img", {
             src: e,
             alt: "",
-            className: u.tierImage
+            className: d.tierImage
           }), n.name]
         })
       }
       return (0, r.jsx)(c.bL, {
-        className: u.tierNameCell,
+        className: d.tierNameCell,
         children: t
       })
     }
   }, {
     key: "subscribers",
-    cellClassName: s()(u.subscribersColumn, m.cellAlignRight),
-    renderHeader: () => d.NW.string(d.t.zu8go6),
+    cellClassName: s()(d.subscribersColumn, u.cellAlignRight),
+    renderHeader: () => A.NW.string(A.t.zu8go6),
     render: e => (0, r.jsx)(c.av, {
       children: e.roleMemberCount
     })
   }, {
     key: "price",
-    cellClassName: s()(u.priceColumn, m.cellAlignRight),
-    renderHeader: () => d.NW.string(d.t.NcrbWF),
+    cellClassName: s()(d.priceColumn, u.cellAlignRight),
+    renderHeader: () => A.NW.string(A.t.NcrbWF),
     render(e) {
       let {
         subscriptionListing: t
@@ -57,20 +57,20 @@ let g = [{
       })
     }
   }],
-  p = e => {
+  f = e => {
     let {
       totalPayoutsForPeriod: t,
       guildId: n,
       className: i
     } = e, l = (0, o.Z)(n, t);
     return (0, r.jsx)("div", {
-      className: s()(m.tableContainer, i),
+      className: s()(u.tableContainer, i),
       children: (0, r.jsx)(a.Z, {
         columns: g,
         data: l,
-        className: s()(m.table, u.table),
-        rowClassName: u.row,
-        headerClassName: s()(m.header, u.header)
+        className: s()(u.table, d.table),
+        rowClassName: d.row,
+        headerClassName: s()(u.header, d.header)
       })
     })
   }

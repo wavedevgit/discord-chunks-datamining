@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,50 +10,50 @@ var r = n(200651),
   l = n(65912),
   o = n(572456),
   c = n(59192),
-  d = n(11265),
-  u = n(495892);
-let m = i.memo(function(e) {
+  A = n(11265),
+  d = n(495892);
+let u = i.memo(function(e) {
   let {
     rule: t,
     persistEdit: n = !1,
-    initWithEdit: m = !1
+    initWithEdit: u = !1
   } = e, {
     hasChanges: g,
-    editingRule: p,
-    createNewEditingRule: h,
-    setEditingRule: f
+    editingRule: f,
+    createNewEditingRule: m,
+    setEditingRule: p
   } = (0, l.V)(), {
-    isLoading: b
-  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), v = j && null != p ? p : t, _ = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), y = i.useCallback(() => {
-    h(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, h]), O = i.useCallback(e => {
-    !b && f(e, !0)
-  }, [b, f]);
+    isLoading: h
+  } = (0, l.w)(), [C] = i.useState(() => !(0, s.Vb)(t)), b = (null == f ? void 0 : f.id) === t.id || n, v = (0, a.U)(null == t ? void 0 : t.id), x = b && null != f ? f : t, N = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), j = i.useCallback(() => {
+    m(t.guildId, t.triggerType)
+  }, [t.guildId, t.triggerType, m]), E = i.useCallback(e => {
+    !h && p(e, !0)
+  }, [h, p]);
   i.useEffect(() => {
-    m && f(t, !0)
-  }, [m, t, f]);
-  let C = i.useCallback(() => {
-    j ? g || f(null) : g ? _(() => {
-      f(t)
-    }) : f(t)
-  }, [j, g, _, t, f]);
-  return (0, r.jsx)(d.Z, {
-    renderHeader: (0, r.jsx)(u.Z, {
-      rule: v,
-      forceSetup: x && !j && !N,
+    u && p(t, !0)
+  }, [u, t, p]);
+  let I = i.useCallback(() => {
+    b ? g || p(null) : g ? N(() => {
+      p(t)
+    }) : p(t)
+  }, [b, g, N, t, p]);
+  return (0, r.jsx)(A.Z, {
+    renderHeader: (0, r.jsx)(d.Z, {
+      rule: x,
+      forceSetup: C && !b && !v,
       triggerType: t.triggerType,
-      isEditMode: j,
-      isDefaultRule: N,
-      onChangeRule: O,
-      onSetupRule: y
+      isEditMode: b,
+      isDefaultRule: v,
+      onChangeRule: E,
+      onSetupRule: j
     }),
-    isStuck: j && g,
-    isExpanded: j,
-    onExpand: C,
-    children: j && (0, r.jsx)(c.Z, {
-      rule: v,
-      isLoading: b,
-      onChangeRule: O
+    isStuck: b && g,
+    isExpanded: b,
+    onExpand: I,
+    children: b && (0, r.jsx)(c.Z, {
+      rule: x,
+      isLoading: h,
+      onChangeRule: E
     })
   })
 })

@@ -9,8 +9,8 @@ var r, a, l, i = n(772848),
   d = n(314897),
   u = n(906467);
 let m = 0,
-  x = [],
-  h = 0,
+  h = [],
+  x = 0,
   p = [],
   b = !1;
 class f extends(r = s.ZP.Store) {
@@ -18,10 +18,10 @@ class f extends(r = s.ZP.Store) {
     this.waitFor(u.Z)
   }
   get loggedEvents() {
-    return x
+    return h
   }
   get loggedEventsVersion() {
-    return h
+    return x
   }
   get loggedTriggers() {
     return p
@@ -43,13 +43,13 @@ let _ = new f(c.Z, {
       properties: n,
       fingerprint: r
     } = e;
-    if (u.Z.isDeveloper) x.push({
+    if (u.Z.isDeveloper) h.push({
       key: (m++).toString(),
       event: t,
       properties: n,
       fingerprint: null != r ? (0, o.s)(r) : d.default.getId(),
       timestamp: new Date
-    }), h++, x.length > 500 && (x = x.slice(-Math.floor(250)))
+    }), x++, h.length > 500 && (h = h.slice(-Math.floor(250)))
   },
   TRACK_TRIGGER: function(e) {
     let {
@@ -78,6 +78,6 @@ let _ = new f(c.Z, {
     b = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    x = [], h++, p = []
+    h = [], x++, p = []
   }
 })

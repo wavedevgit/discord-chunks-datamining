@@ -31,7 +31,7 @@ function u(e) {
       }
       return i
     }(e, ["children", "lineClamp"]);
-  let [p, h] = i.useState(!1), [f, x] = i.useState(null), N = null != f && (0, r.jsx)("button", {
+  let [p, h] = i.useState(!1), [f, x] = i.useState(null), b = null != f && (0, r.jsx)("button", {
     className: d.button,
     onClick: () => h(e => !e),
     children: (0, r.jsxs)(o.Text, {
@@ -46,17 +46,17 @@ function u(e) {
         size: "xs"
       })]
     })
-  }), [b, _] = i.useState(null), E = i.useCallback(() => {
-    if (null == b) return;
+  }), [N, _] = i.useState(null), E = i.useCallback(() => {
+    if (null == N) return;
     let {
       scrollHeight: e,
       clientHeight: t
-    } = b;
+    } = N;
     e > t && x({
       truncatedHeight: t,
       expandedHeight: e
     })
-  }, [b]);
+  }, [N]);
   i.useEffect(() => {
     requestAnimationFrame(E)
   }, [E, u, m]);
@@ -96,6 +96,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), N]
+    }), t)), b]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,93 +10,93 @@ var r = n(200651),
   l = n(252759),
   o = n(442837),
   c = n(481060),
-  d = n(650774),
-  u = n(21297),
-  m = n(118215),
+  A = n(650774),
+  d = n(21297),
+  u = n(118215),
   g = n(30766),
-  p = n(166184),
-  h = n(654351),
-  f = n(259674),
-  b = n(845377),
-  x = n(981631),
-  j = n(388032),
-  N = n(72397),
-  v = n(716455);
-let _ = ["322850917248663552", "172018499005317120", "414234792121597953", "228406572756369408"],
-  y = ["620723483965653003", "662246299369734154", "181970867549503489", "102860784329052160"],
-  O = e => {
+  f = n(166184),
+  m = n(654351),
+  p = n(259674),
+  h = n(845377),
+  C = n(981631),
+  b = n(388032),
+  v = n(72397),
+  x = n(716455);
+let N = ["322850917248663552", "172018499005317120", "414234792121597953", "228406572756369408"],
+  j = ["620723483965653003", "662246299369734154", "181970867549503489", "102860784329052160"],
+  E = e => {
     let {
       guild: t,
       onEnableDiscovery: n,
       isGuildAdmin: s
-    } = e, [O, C] = (0, l.Z)(() => [a().sample(_), a().sample(y)], []);
+    } = e, [E, I] = (0, l.Z)(() => [a().sample(N), a().sample(j)], []);
     i.useEffect(() => {
-      (0, u.z)([O, C])
-    }, [O, C]);
-    let [I, E] = (0, o.Wu)([g.Z], () => [g.Z.getGuild(O), g.Z.getGuild(C)], [O, C]), {
-      canEnableDiscovery: S,
-      isPendingSuccess: T
-    } = (0, o.cj)([m.ZP], () => ({
-      canEnableDiscovery: m.ZP.passesChecklist(t.id),
-      isPendingSuccess: m.ZP.isPendingSuccess(t.id)
-    }), [t.id]), [P, w] = (0, o.Wu)([d.Z], () => [null, d.Z.getMemberCount(t.id)], [t.id]), R = i.useCallback(() => {
+      (0, d.z)([E, I])
+    }, [E, I]);
+    let [O, y] = (0, o.Wu)([g.Z], () => [g.Z.getGuild(E), g.Z.getGuild(I)], [E, I]), {
+      canEnableDiscovery: w,
+      isPendingSuccess: P
+    } = (0, o.cj)([u.ZP], () => ({
+      canEnableDiscovery: u.ZP.passesChecklist(t.id),
+      isPendingSuccess: u.ZP.isPendingSuccess(t.id)
+    }), [t.id]), [B, D] = (0, o.Wu)([A.Z], () => [null, A.Z.getMemberCount(t.id)], [t.id]), T = i.useCallback(() => {
       null != n && n()
-    }, [n]), Z = null;
-    return s ? T ? Z = j.NW.string(j.t.zP8DFx) : S || (Z = j.NW.string(j.t.ABFu19)) : Z = j.NW.string(j.t["5VbUBw"]), (0, r.jsxs)("div", {
-      className: N.container,
+    }, [n]), S = null;
+    return s ? P ? S = b.NW.string(b.t.zP8DFx) : w || (S = b.NW.string(b.t.ABFu19)) : S = b.NW.string(b.t["5VbUBw"]), (0, r.jsxs)("div", {
+      className: v.container,
       children: [(0, r.jsx)("img", {
         alt: "",
-        src: v,
-        className: N.sparkles
+        src: x,
+        className: v.sparkles
       }), (0, r.jsxs)("div", {
-        className: N.discoverPreview,
-        children: [(0, r.jsx)(p.Z, {
-          className: N.placeholderCard,
+        className: v.discoverPreview,
+        children: [(0, r.jsx)(f.Z, {
+          className: v.placeholderCard,
           disabled: !0,
           small: !0,
-          loading: null == I,
-          guild: I
-        }), (0, r.jsx)(p.Z, {
-          className: N.previewCard,
+          loading: null == O,
+          guild: O
+        }), (0, r.jsx)(f.Z, {
+          className: v.previewCard,
           guild: t,
-          description: j.NW.string(j.t["0k7fyM"]),
-          presenceCount: P,
-          memberCount: w
-        }), (0, r.jsx)(p.Z, {
-          className: N.placeholderCard,
+          description: b.NW.string(b.t["0k7fyM"]),
+          presenceCount: B,
+          memberCount: D
+        }), (0, r.jsx)(f.Z, {
+          className: v.placeholderCard,
           disabled: !0,
           small: !0,
-          loading: null == E,
-          guild: E
+          loading: null == y,
+          guild: y
         })]
       }), (0, r.jsx)(c.X6q, {
-        className: N.header,
+        className: v.header,
         variant: "heading-xl/semibold",
-        children: j.NW.string(j.t.UwPrKS)
+        children: b.NW.string(b.t.UwPrKS)
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: N.valueProp,
+        className: v.valueProp,
         color: "header-secondary",
-        children: j.NW.format(j.t.BhkgBg, {
-          onLinkClick: () => (0, f.lW)({
-            articleId: x.BhN.SERVER_DISCOVERY,
+        children: b.NW.format(b.t.BhkgBg, {
+          onLinkClick: () => (0, p.lW)({
+            articleId: C.BhN.SERVER_DISCOVERY,
             guildId: t.id,
-            pageView: h.d5.INTRO
+            pageView: m.d5.INTRO
           })
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: N.byline,
+        className: v.byline,
         color: "header-secondary",
-        children: j.NW.format(j.t.ALSi8v, {
-          onGuidelinesClick: () => (0, f.lW)({
-            articleId: x.BhN.SERVER_DISCOVERY_GUIDELINES,
+        children: b.NW.format(b.t.ALSi8v, {
+          onGuidelinesClick: () => (0, p.lW)({
+            articleId: C.BhN.SERVER_DISCOVERY_GUIDELINES,
             guildId: t.id,
-            pageView: h.d5.INTRO
+            pageView: m.d5.INTRO
           })
         })
       }), (0, r.jsx)(c.ua7, {
-        text: Z,
+        text: S,
         children: e => {
           var t, n;
           return (0, r.jsx)(c.zxk, (t = function(e) {
@@ -117,12 +117,12 @@ let _ = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
             }
             return e
           }({}, e), n = n = {
-            className: N.enableButton,
+            className: v.enableButton,
             color: c.zxk.Colors.BRAND,
             size: c.zxk.Sizes.LARGE,
-            disabled: !S || !s,
-            onClick: R,
-            children: j.NW.string(j.t.oBIZwc)
+            disabled: !w || !s,
+            onClick: T,
+            children: b.NW.string(b.t.oBIZwc)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -134,15 +134,15 @@ let _ = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
           }), t))
         }
-      }), (0, r.jsx)(b.Z, {
-        className: N.checklist,
+      }), (0, r.jsx)(h.Z, {
+        className: v.checklist,
         guild: t,
         guildId: t.id,
         headerContent: (0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
-          children: S ? j.NW.string(j.t.XAgDU1) : j.NW.format(j.t["+6Hylp"], {
+          children: w ? b.NW.string(b.t.XAgDU1) : b.NW.format(b.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
-              className: N.doesNot,
+              className: v.doesNot,
               children: e
             }, t)
           })

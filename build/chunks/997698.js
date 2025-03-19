@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  L: () => d
+  L: () => A
 });
 var r = n(200651);
 n(192379);
@@ -12,7 +12,7 @@ var i = n(793030),
   o = n(388032),
   c = n(328785);
 
-function d(e) {
+function A(e) {
   let {
     canManageGuild: t,
     guild: n

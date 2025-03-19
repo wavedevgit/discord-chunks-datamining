@@ -10,59 +10,59 @@ var r = n(200651),
   l = n(999382),
   o = n(845377),
   c = n(976288),
-  d = n(386885),
-  u = n(388032),
-  m = n(62475);
+  A = n(386885),
+  d = n(388032),
+  u = n(62475);
 
 function g(e) {
   let {
     fetchDiscoveryData: t,
     settingsView: n,
     requireTerms: g,
-    rules: p
-  } = e, h = (0, s.e7)([l.Z], () => l.Z.getProps().guild);
+    rules: f
+  } = e, m = (0, s.e7)([l.Z], () => l.Z.getProps().guild);
   if (i.useEffect(() => {
-      null != h && t(h.id)
-    }, [t, h]), null == h) return null;
+      null != m && t(m.id)
+    }, [t, m]), null == m) return null;
   switch (n) {
-    case d.U.DISQUALIFIED:
+    case A.U.DISQUALIFIED:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: m,
+        guildId: m.id,
         headerContent: (0, r.jsxs)("div", {
           children: [(0, r.jsx)(a.X6q, {
             variant: "text-md/semibold",
             color: "header-primary",
-            className: m.header,
-            children: u.NW.format(u.t.n1LDQE, {
+            className: u.header,
+            children: d.NW.format(d.t.n1LDQE, {
               removedHook: (e, t) => (0, r.jsx)("strong", {
-                className: m.danger,
+                className: u.danger,
                 children: e
               }, t)
             })
           }), (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: u.NW.string(u.t.Qgaw3d)
+            children: d.NW.string(d.t.Qgaw3d)
           })]
         })
       });
-    case d.U.ELIGIBLE_DISABLED:
-    case d.U.ELIGIBLE_ENABLED:
+    case A.U.ELIGIBLE_DISABLED:
+    case A.U.ELIGIBLE_ENABLED:
       return (0, r.jsx)(c.d, {
         requireTerms: g,
-        rules: p,
+        rules: f,
         settingsView: n
       });
-    case d.U.INELIGIBLE:
+    case A.U.INELIGIBLE:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: m,
+        guildId: m.id,
         headerContent: (0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
-          children: u.NW.format(u.t["+6Hylp"], {
+          children: d.NW.format(d.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
-              className: m.danger,
+              className: u.danger,
               children: e
             }, t)
           })

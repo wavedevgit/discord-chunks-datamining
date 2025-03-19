@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 }), n(47120);
 var r, i, s = n(748780);
 
@@ -55,7 +55,7 @@ class c {
     a(this, "animations", void 0), this.animations = e
   }
 }
-class d {
+class A {
   async start() {
     for (let e of (this.stopped = !1, this.animations)) {
       if (this.stopped) return;
@@ -70,21 +70,21 @@ class d {
   }
 }
 
-function u(e, t, n) {
+function d(e, t, n) {
   return new o(n(e, l({}, t)))
 }
-let m = (r = l({}, s.Z), i = i = {
+let u = (r = l({}, s.Z), i = i = {
   timing: function(e, t) {
-    return u(e, t, s.Z.timing)
+    return d(e, t, s.Z.timing)
   },
   spring: function(e, t) {
-    return u(e, t, s.Z.spring)
+    return d(e, t, s.Z.spring)
   },
   parallel: function(e) {
     return new c(e)
   },
   sequence: function(e) {
-    return new d(e)
+    return new A(e)
   }
 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
   var n = Object.keys(e);

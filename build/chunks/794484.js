@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(32173),
   f = n(391110),
   x = n(75077),
-  N = n(320319),
-  b = n(730313);
+  b = n(320319),
+  N = n(730313);
 let _ = e => {
     let {
       showAllPerksButton: t,
@@ -28,19 +28,19 @@ let _ = e => {
     } = e, a = (0, r.jsx)(o.X6q, {
       variant: "heading-xxl/extrabold",
       color: "header-primary",
-      className: null != s ? s : b.heading,
+      className: null != s ? s : N.heading,
       children: i
     });
     return null == t ? a : n ? (0, r.jsxs)("div", {
-      className: b.sectionHeader,
+      className: N.sectionHeader,
       children: [a, null != t && (0, r.jsx)("div", {
-        className: b.showAllPerksButton,
+        className: N.showAllPerksButton,
         children: t
       })]
     }) : (0, r.jsx)("div", {
-      className: b.container,
+      className: N.container,
       children: (0, r.jsx)("div", {
-        className: b.sectionHeaderSeeAll,
+        className: N.sectionHeaderSeeAll,
         children: a
       })
     })
@@ -92,13 +92,13 @@ let _ = e => {
     return (0, r.jsxs)(r.Fragment, {
       children: [(null == k ? void 0 : null === (t = k.tenureRewardCollectible) || void 0 === t ? void 0 : t.name) === h.u.TENURE_REWARD_COLLECTIBLE && (0, r.jsx)(l.O_, {
         ref: G,
-        className: b.confettiCanvas,
+        className: N.confettiCanvas,
         environment: F.current
       }), (0, r.jsxs)("div", {
         ref: T,
-        className: a()(b.section, {
-          [b.centerAlignSection]: !j,
-          [b.leftAlignSection]: j
+        className: a()(N.section, {
+          [N.centerAlignSection]: !j,
+          [N.leftAlignSection]: j
         }, n),
         children: [(0, r.jsx)(_, {
           showAllPerksButton: C,
@@ -108,26 +108,26 @@ let _ = e => {
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
-          className: a()(b.subtitle, {
-            [b.subtitle]: null == C || j,
-            [b.subtitleWithButton]: null != C && !j,
-            [b.fullWidth]: A || j,
-            [b.moreSubtitleMargin]: U,
-            [b.leftAlignSubtitle]: j,
-            [b.centerAlignSubtitle]: !j
+          className: a()(N.subtitle, {
+            [N.subtitle]: null == C || j,
+            [N.subtitleWithButton]: null != C && !j,
+            [N.fullWidth]: A || j,
+            [N.moreSubtitleMargin]: U,
+            [N.leftAlignSubtitle]: j,
+            [N.centerAlignSubtitle]: !j
           }),
           children: w.subtitle
         }), !j && null != C && (0, r.jsx)("div", {
-          className: b.showAllPerksButtonCenter,
+          className: N.showAllPerksButtonCenter,
           children: C
         }), (0, r.jsx)("div", {
           className: a()({
-            [b.cardContainer]: v,
-            [b.cardContainerNarrowWidth]: !v
+            [N.cardContainer]: v,
+            [N.cardContainerNarrowWidth]: !v
           }),
           children: M.map((e, t) => {
             var n, i;
-            return (0, r.jsx)(N.Z, (n = function(e) {
+            return (0, r.jsx)(b.Z, (n = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);

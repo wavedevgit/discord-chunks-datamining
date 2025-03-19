@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => v
+  Z: () => h
 });
 var n = r(200651);
 r(192379);
@@ -92,7 +92,7 @@ function g(e) {
   })
 }
 
-function h(e) {
+function v(e) {
   var {
     clickable: t
   } = e, r = function(e, t) {
@@ -118,14 +118,14 @@ function h(e) {
   }))
 }
 
-function v(e) {
+function h(e) {
   let {
     entry: t,
     channel: r,
     title: l,
     subtitle: y,
     thumbnailUrl: j,
-    titleClickable: v,
+    titleClickable: h,
     subtitleClickable: P,
     thumbnailClickable: x,
     providerIconProps: w,
@@ -160,8 +160,8 @@ function v(e) {
           className: O.users
         }), (0, n.jsx)(o.LZC, {
           size: 2
-        }), (0, n.jsx)(h, {
-          clickable: v,
+        }), (0, n.jsx)(v, {
+          clickable: h,
           className: O.clickableText,
           children: (0, n.jsx)(o.X6q, {
             id: C,
@@ -174,7 +174,7 @@ function v(e) {
         }), null != y ? (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(o.LZC, {
             size: 2
-          }), (0, n.jsx)(h, {
+          }), (0, n.jsx)(v, {
             clickable: P,
             className: O.clickableText,
             children: (0, n.jsx)(o.Text, {

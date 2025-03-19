@@ -1,9 +1,9 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  O4: () => b,
-  OA: () => f,
-  Wu: () => x
+  O4: () => h,
+  OA: () => p,
+  Wu: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,12 +12,12 @@ var r = n(200651),
   l = n(312913),
   o = n(45966),
   c = n(637853),
-  d = n(983135),
-  u = n(208665),
-  m = n(290511),
+  A = n(983135),
+  d = n(208665),
+  u = n(290511),
   g = n(388032);
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,58 +49,58 @@ function h(e, t) {
   }), e
 }
 
-function f(e, t) {
-  let n = (0, s.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
-  return [(0, s.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
+function p(e, t) {
+  let n = (0, s.Wu)([d.Z], () => (0, c.kl)(e, t, d.Z.editedOnboardingPrompts));
+  return [(0, s.Wu)([d.Z], () => (0, c.kl)(e, t, d.Z.editedOnboardingPrompts, c.V7)), n]
 }
 
-function b(e) {
+function h(e) {
   let t = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(e)),
     [n, r] = function(e) {
       let t = (0, s.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
       return [(0, s.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), c.V7)), t]
     }(e);
-  return !!t && r.length >= m.md && n.length >= m.X
+  return !!t && r.length >= u.md && n.length >= u.X
 }
 
-function x(e) {
+function C(e) {
   let {
     guildId: t,
     className: n
-  } = e, c = (0, l.UQ)(t).advancedModeAllowed, u = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), f = i.useCallback(() => {
-    let e = u ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
-    u ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
+  } = e, c = (0, l.UQ)(t).advancedModeAllowed, d = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), p = i.useCallback(() => {
+    let e = d ? u.Un.ONBOARDING_DEFAULT : u.Un.ONBOARDING_ADVANCED;
+    d ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, m(f({
       header: g.NW.string(g.t["49+ONj"]),
       confirmText: g.NW.string(g.t.R9GHyc),
       cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
-      onConfirm: () => (0, d.Ts)(t, e)
+      onConfirm: () => (0, A.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: g.NW.string(g.t.TLkoOj)
       })
-    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
+    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, m(f({
       header: g.NW.string(g.t.YB9xUF),
       confirmText: g.NW.string(g.t.ts6u6u),
       cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
-      onConfirm: () => (0, d.Ts)(t, e)
+      onConfirm: () => (0, A.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: g.NW.string(g.t.BcGGVl)
       })
     })))
-  }, [t, u]);
+  }, [t, d]);
   return c ? (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(a.eee, {
-      onClick: f,
+      onClick: p,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-link",
-        children: u ? g.NW.string(g.t.OmpxW1) : g.NW.string(g.t.ozsQBA)
+        children: d ? g.NW.string(g.t.OmpxW1) : g.NW.string(g.t.ozsQBA)
       })
     })
   }) : null

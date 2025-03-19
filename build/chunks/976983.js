@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  B: () => v,
-  Z: () => N
+  B: () => x,
+  Z: () => v
 }), n(266796), n(47120);
 var r = n(200651);
 n(192379);
@@ -12,16 +12,16 @@ var i = n(120356),
   l = n.n(a),
   o = n(481060),
   c = n(668781),
-  d = n(603211),
-  u = n(107862),
-  m = n(307707),
+  A = n(603211),
+  d = n(107862),
+  u = n(307707),
   g = n(216701),
-  p = n(570961),
-  h = n(290511),
-  f = n(388032),
-  b = n(597435);
+  f = n(570961),
+  m = n(290511),
+  p = n(388032),
+  h = n(597435);
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,120 +53,120 @@ function j(e, t) {
   }), e
 }
 
-function N(e) {
+function v(e) {
   var t, i, a, c;
   let {
-    guild: u,
-    prompt: N,
-    singleColumn: v,
-    promptIndex: _,
-    option: y,
-    hasError: O,
-    onDragStart: C,
-    onDragComplete: I,
-    onDragReset: E
-  } = e, S = null, T = l().findIndex(N.options, e => e.id === y.id), {
-    drag: P,
-    dragSourcePosition: w,
-    drop: R,
-    setIsDraggable: Z
-  } = (0, d.Z)({
-    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(N.id),
-    index: T,
-    optionId: y.id,
-    onDragStart: C,
-    onDragComplete: I,
-    onDragReset: E
+    guild: d,
+    prompt: v,
+    singleColumn: x,
+    promptIndex: N,
+    option: j,
+    hasError: E,
+    onDragStart: I,
+    onDragComplete: O,
+    onDragReset: y
+  } = e, w = null, P = l().findIndex(v.options, e => e.id === j.id), {
+    drag: B,
+    dragSourcePosition: D,
+    drop: T,
+    setIsDraggable: S
+  } = (0, A.Z)({
+    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
+    index: P,
+    optionId: j.id,
+    onDragStart: I,
+    onDragComplete: O,
+    onDragReset: y
   }), {
-    customEmoji: D,
-    unicodeEmoji: k
-  } = (0, m.Z)(null === (t = y.emoji) || void 0 === t ? void 0 : t.id, null === (i = y.emoji) || void 0 === i ? void 0 : i.name);
-  return (0, h.Oq)(y.emoji) || null != D || null != k || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
-    className: s()(b.optionCard, {
-      [b.hasError]: O || null != S,
-      [b.dropIndicatorBefore]: null != w && T < w,
-      [b.dropIndicatorAfter]: null != w && T > w,
-      [b.singleColumn]: v
+    customEmoji: L,
+    unicodeEmoji: R
+  } = (0, u.Z)(null === (t = j.emoji) || void 0 === t ? void 0 : t.id, null === (i = j.emoji) || void 0 === i ? void 0 : i.name);
+  return (0, m.Oq)(j.emoji) || null != L || null != R || (w = p.NW.string(p.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+    className: s()(h.optionCard, {
+      [h.hasError]: E || null != w,
+      [h.dropIndicatorBefore]: null != D && P < D,
+      [h.dropIndicatorAfter]: null != D && P > D,
+      [h.singleColumn]: x
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return t => (0, r.jsx)(e, j(x({}, t), {
-        guild: u,
-        prompt: N,
-        option: y,
-        index: _,
+      return t => (0, r.jsx)(e, b(C({}, t), {
+        guild: d,
+        prompt: v,
+        option: j,
+        index: N,
         onSave: e => {
-          (0, p.Kk)(u, N.id, {
-            options: N.options.map(t => t.id === y.id ? e : t)
+          (0, f.Kk)(d, v.id, {
+            options: v.options.map(t => t.id === j.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, p.Kk)(u, N.id, {
-            options: N.options.filter(e => e.id !== y.id)
+          (0, f.Kk)(d, v.id, {
+            options: v.options.filter(e => e.id !== j.id)
           })
         }
       }))
     }),
-    onMouseEnter: () => Z(!0),
-    onMouseLeave: () => Z(!1),
-    innerRef: e => P(R(e)),
+    onMouseEnter: () => S(!0),
+    onMouseLeave: () => S(!1),
+    innerRef: e => B(T(e)),
     children: [(0, r.jsx)("div", {
-      className: b.dragContainer,
+      className: h.dragContainer,
       children: (0, r.jsx)(o.Vni, {
         size: "xs",
         color: "currentColor",
-        className: b.__invalid_dragIcon
+        className: h.__invalid_dragIcon
       })
     }), (0, r.jsxs)("div", {
-      className: b.optionCardRow,
+      className: h.optionCardRow,
       children: [(0, r.jsx)("div", {
-        className: b.emoji,
+        className: h.emoji,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null === (a = y.emoji) || void 0 === a ? void 0 : a.id,
-          emojiName: null === (c = y.emoji) || void 0 === c ? void 0 : c.name,
+          emojiId: null === (a = j.emoji) || void 0 === a ? void 0 : a.id,
+          emojiName: null === (c = j.emoji) || void 0 === c ? void 0 : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
-        className: b.text,
+        className: h.text,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
-          children: y.title
-        }), "" !== y.description && (0, r.jsx)(o.Text, {
-          className: b.description,
+          children: j.title
+        }), "" !== j.description && (0, r.jsx)(o.Text, {
+          className: h.description,
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: y.description
+          children: j.description
         })]
       })]
-    }), null != S && (0, r.jsx)(o.Text, {
+    }), null != w && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: S
+      children: w
     })]
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     guild: t,
     prompt: i,
     promptIndex: a,
     singleColumn: l
   } = e, {
-    dropdownsAllowed: d
-  } = (0, u.Ug)(t.id), m = () => {
+    dropdownsAllowed: A
+  } = (0, d.Ug)(t.id), u = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return n => (0, r.jsx)(e, j(x({}, n), {
+      return n => (0, r.jsx)(e, b(C({}, n), {
         guild: t,
         prompt: i,
-        onSave: e => (0, p.Kk)(t, i.id, {
+        onSave: e => (0, f.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},
@@ -175,31 +175,31 @@ function v(e) {
     })
   };
   return (0, r.jsx)(o.P3F, {
-    className: s()(b.optionCard, b.addOptionCard, {
-      [b.addFirstOptionCard]: 0 === i.options.length,
-      [b.singleColumn]: l
+    className: s()(h.optionCard, h.addOptionCard, {
+      [h.addFirstOptionCard]: 0 === i.options.length,
+      [h.singleColumn]: l
     }),
     onClick: () => {
-      d && i.options.length + 1 === h.fY ? c.Z.show({
-        title: f.NW.string(f.t.TggC7u),
-        body: f.NW.formatToPlainString(f.t.kPQKam, {
-          thresholdCount: h.fY
+      A && i.options.length + 1 === m.fY ? c.Z.show({
+        title: p.NW.string(p.t.TggC7u),
+        body: p.NW.formatToPlainString(p.t.kPQKam, {
+          thresholdCount: m.fY
         }),
-        confirmText: f.NW.string(f.t.BddRzc),
-        cancelText: f.NW.string(f.t["ETE/oK"]),
-        onConfirm: m
-      }) : m()
+        confirmText: p.NW.string(p.t.BddRzc),
+        cancelText: p.NW.string(p.t["ETE/oK"]),
+        onConfirm: u
+      }) : u()
     },
     children: (0, r.jsxs)("div", {
-      className: b.optionCardRow,
+      className: h.optionCardRow,
       children: [(0, r.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
-        className: b.plusIcon
+        className: h.plusIcon
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: f.NW.string(f.t.Ty3lgo)
+        children: p.NW.string(p.t.Ty3lgo)
       })]
     })
   })

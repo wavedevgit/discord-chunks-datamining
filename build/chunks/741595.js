@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -11,14 +11,14 @@ var r = n(200651),
   o = n(308083),
   c = n(154662);
 
-function d(e) {
+function A(e) {
   let {
     playstyle: t,
     onUpdatePlaystyle: n
-  } = e, s = (0, l.dQu)(l.TVs.colors.WHITE), d = i.useMemo(() => Object.values((0, o.f4)()), []);
+  } = e, s = (0, l.dQu)(l.TVs.colors.WHITE), A = i.useMemo(() => Object.values((0, o.f4)()), []);
   return (0, r.jsx)("div", {
     className: c.playstyleSelect,
-    children: d.map(e => (0, r.jsxs)(l.P3F, {
+    children: A.map(e => (0, r.jsxs)(l.P3F, {
       className: a()(c.playstyleOption, c.selectableOption, {
         [c.selectedOption]: e.type === t
       }),
@@ -43,7 +43,7 @@ function d(e) {
     }, e.type))
   })
 }
-let u = e => {
+let d = e => {
   let {
     title: t,
     description: n,
@@ -67,7 +67,7 @@ let u = e => {
       color: "status-danger",
       className: c.errorText,
       children: a
-    }), (0, r.jsx)(d, {
+    }), (0, r.jsx)(A, {
       playstyle: s,
       onUpdatePlaystyle: i
     })]

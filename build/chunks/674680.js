@@ -59,11 +59,11 @@ function f(e) {
       color: y
     } = (0, c.F7)(E),
     _ = (0, i.wj)(g) ? b : p,
-    P = (O.size - O.offset - 2 * O.stroke) * .8,
-    C = O.size - O.stroke,
+    C = (O.size - O.offset - 2 * O.stroke) * .8,
+    P = O.size - O.stroke,
     j = {
-      width: .4 * P,
-      height: .4 * P
+      width: .4 * C,
+      height: .4 * C
     },
     x = {
       width: j.width + 1,
@@ -75,8 +75,8 @@ function f(e) {
   return (0, r.jsxs)("div", {
     className: d.container,
     style: {
-      width: C,
-      height: C,
+      width: P,
+      height: P,
       padding: O.stroke
     },
     "aria-label": "".concat(null !== (t = m()) && void 0 !== t ? t : ""),
@@ -85,8 +85,8 @@ function f(e) {
       children: (0, r.jsx)(o.rm8, {
         size: "custom",
         color: u ? y : (0, a.Lq)(_.trophy),
-        width: P,
-        height: P
+        width: C,
+        height: C
       })
     }), !u && (0, r.jsx)("div", {
       className: d.lockContainer,

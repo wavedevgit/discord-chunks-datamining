@@ -17,16 +17,16 @@ function o(e) {
     triggerType: o,
     initWithEdit: c
   } = e, {
-    perGuildMaxCount: d
-  } = i.I6[o], u = 0 === n.length, m = d > n.length && !u;
+    perGuildMaxCount: A
+  } = i.I6[o], d = 0 === n.length, u = A > n.length && !d;
   return (0, r.jsxs)(r.Fragment, {
-    children: [u && (0, r.jsx)(a.Z, {
+    children: [d && (0, r.jsx)(a.Z, {
       guildId: t,
       triggerType: o
     }), n.map(e => (0, r.jsx)(l.Z, {
       rule: e,
       initWithEdit: c
-    }, e.id)), m && (0, r.jsx)(s.Z, {
+    }, e.id)), u && (0, r.jsx)(s.Z, {
       guildId: t,
       triggerType: o
     })]

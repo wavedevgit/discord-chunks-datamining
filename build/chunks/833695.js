@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -11,63 +11,63 @@ var i = n(399606),
   l = n(755930),
   o = n(909667),
   c = n(968820),
-  d = n(200472),
-  u = n(489028),
-  m = n(277369),
+  A = n(200472),
+  d = n(489028),
+  u = n(277369),
   g = n(215124),
-  p = n(999382),
-  h = n(267101),
-  f = n(287576),
-  b = n(894610),
-  x = n(388032);
+  f = n(999382),
+  m = n(267101),
+  p = n(287576),
+  h = n(894610),
+  C = n(388032);
 
-function j(e) {
+function b(e) {
   let {
     listingId: t
-  } = e, n = (0, h.r)(t);
+  } = e, n = (0, m.r)(t);
   return null == n ? null : (0, r.jsx)(l.bL, {
     children: n.name
   })
 }
 
-function N(e) {
+function v(e) {
   var t, n, l;
   let {
-    guildId: h
-  } = e, N = (0, f.Z)(h), v = (0, a.f3)(), _ = (0, i.e7)([p.Z], () => p.Z.getGuild());
-  return N.loading || null == _ ? (0, r.jsx)(s.$jN, {}) : null == N.application ? (0, r.jsx)(u.Z, {
-    guild: _
-  }) : (0, r.jsxs)(d.Z, {
+    guildId: m
+  } = e, v = (0, p.Z)(m), x = (0, a.f3)(), N = (0, i.e7)([f.Z], () => f.Z.getGuild());
+  return v.loading || null == N ? (0, r.jsx)(s.$jN, {}) : null == v.application ? (0, r.jsx)(d.Z, {
+    guild: N
+  }) : (0, r.jsxs)(A.Z, {
     children: [(0, r.jsx)(c.Z, {
-      revenue: N.metrics.revenue,
-      revenueTrend: N.metrics.revenuePctChange,
-      summaryMetricLabel: x.NW.string(x.t.R3PCmZ),
-      summaryMetricValue: null !== (n = N.metrics.paymentsCount) && void 0 !== n ? n : "-",
-      summaryMetricTrend: null !== (l = N.metrics.paymentsCountChange) && void 0 !== l ? l : 0,
+      revenue: v.metrics.revenue,
+      revenueTrend: v.metrics.revenuePctChange,
+      summaryMetricLabel: C.NW.string(C.t.R3PCmZ),
+      summaryMetricValue: null !== (n = v.metrics.paymentsCount) && void 0 !== n ? n : "-",
+      summaryMetricTrend: null !== (l = v.metrics.paymentsCountChange) && void 0 !== l ? l : 0,
       summaryMetricTrendIsPercent: !1,
-      children: (0, r.jsx)(b.Z, {
-        guildId: h,
-        earningsData: N
+      children: (0, r.jsx)(h.Z, {
+        guildId: m,
+        earningsData: v
       })
     }), (0, r.jsx)(s.hjN, {
-      title: x.NW.string(x.t["+5Rmho"]),
+      title: C.NW.string(C.t["+5Rmho"]),
       children: (0, r.jsx)(o.Z, {
-        ListingIdLabel: j,
-        payoutsByPeriod: N.payoutsByPeriod,
-        team: null === (t = N.application) || void 0 === t ? void 0 : t.team
+        ListingIdLabel: b,
+        payoutsByPeriod: v.payoutsByPeriod,
+        team: null === (t = v.application) || void 0 === t ? void 0 : t.team
       })
     }), (0, r.jsx)(s.hjN, {
-      title: x.NW.string(x.t.O8cDAA),
-      disabled: v,
-      children: (0, r.jsx)(m.Z, {
-        guildId: h,
-        application: N.application
+      title: C.NW.string(C.t.O8cDAA),
+      disabled: x,
+      children: (0, r.jsx)(u.Z, {
+        guildId: m,
+        application: v.application
       })
     }), (0, r.jsx)(s.hjN, {
-      title: x.NW.string(x.t["0n7R2d"]),
+      title: C.NW.string(C.t["0n7R2d"]),
       children: (0, r.jsx)(g.Z, {
-        guildId: h,
-        allPeriods: N.payoutsByPeriod
+        guildId: m,
+        allPeriods: v.payoutsByPeriod
       })
     })]
   })

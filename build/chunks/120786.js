@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  L: () => N
+  L: () => b
 });
 var r = n(200651);
 n(192379);
@@ -40,7 +40,7 @@ let x = () => {
       })
     })
   },
-  N = e => {
+  b = e => {
     let {
       ctaText: t,
       ctaOnClick: n,

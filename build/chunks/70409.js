@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -11,16 +11,16 @@ var i = n(481060),
   l = n(981631),
   o = n(474936),
   c = n(388032),
-  d = n(201038);
+  A = n(201038);
 
-function u(e) {
+function d(e) {
   let {
     guild: t,
     numSounds: n,
-    isOutOfSlots: u
-  } = e, m = t.premiumTier, g = (0, a.FZ)(m, t.id), p = o._k[m] - 2;
-  if (null == g || m === l.Eu4.TIER_3 || n < p) return null;
-  let h = u ? {
+    isOutOfSlots: d
+  } = e, u = t.premiumTier, g = (0, a.FZ)(u, t.id), f = o._k[u] - 2;
+  if (null == g || u === l.Eu4.TIER_3 || n < f) return null;
+  let m = d ? {
     color: i.Ttl.GREEN,
     look: i.iLD.FILLED,
     text: c.NW.string(c.t.cYzxGh)
@@ -33,7 +33,7 @@ function u(e) {
     }),
     headerColor: "header-primary",
     textColor: "text-normal",
-    buttonProps: h,
+    buttonProps: m,
     guild: t,
     analyticsLocation: {
       page: l.ZY5.GUILD_SETTINGS,
@@ -41,6 +41,6 @@ function u(e) {
       object: l.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL,
       objectType: (0, a.ge)(g)
     },
-    className: d.container
+    className: A.container
   })
 }

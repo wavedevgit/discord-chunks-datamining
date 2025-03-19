@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -12,7 +12,7 @@ var i = n(456677),
   o = n(388032),
   c = n(617185);
 
-function d(e) {
+function A(e) {
   let {
     rule: t,
     onChangeRule: n

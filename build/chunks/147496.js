@@ -22,11 +22,11 @@ function m(e) {
   var t, r, m, j;
   let {
     onClose: g,
-    transitionState: h,
-    skuId: v,
+    transitionState: v,
+    skuId: h,
     appId: P,
     onHeaderTitleClick: x
-  } = e, w = (0, i.e7)([c.Z], () => c.Z.getForSKU(v), [v]), S = (0, i.e7)([a.Z], () => a.Z.get(v), [v]), C = (0, d.M)(v);
+  } = e, w = (0, i.e7)([c.Z], () => c.Z.getForSKU(h), [h]), S = (0, i.e7)([a.Z], () => a.Z.get(h), [h]), C = (0, d.M)(h);
   if (null == S) return null;
   let E = null !== (r = S.name) && void 0 !== r ? r : "",
     N = null !== (m = null == w ? void 0 : null === (t = w.description) || void 0 === t ? void 0 : t.trim()) && void 0 !== m ? m : void 0,
@@ -39,7 +39,7 @@ function m(e) {
   return null == T ? null : (0, n.jsx)(p.A, {
     appId: P,
     skuId: S.id,
-    transitionState: h,
+    transitionState: v,
     onHeaderTitleClick: null != x ? x : g,
     onClose: g,
     footer: (0, n.jsx)(b.YG, {

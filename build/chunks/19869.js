@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  O: () => S
+  O: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,55 +14,62 @@ var r = n(200651),
   m = n(751648),
   g = n(511050),
   p = n(52647),
-  h = n(317257),
-  f = n(120786),
-  x = n(775451),
+  h = n(822857),
+  f = n(317257),
+  x = n(120786),
+  b = n(775451),
   N = n(970815),
-  b = n(720463),
-  _ = n(931928),
-  E = n(450272),
-  j = n(981631),
-  C = n(388032),
-  O = n(747431),
-  v = n(701905);
+  _ = n(275388),
+  E = n(720463),
+  j = n(931928),
+  C = n(450272),
+  O = n(981631),
+  v = n(388032),
+  S = n(747431),
+  T = n(701905);
 
-function S() {
+function I() {
+  let {
+    enabled: e
+  } = (0, h.W)({
+    location: "revenue_storybook"
+  });
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(I, {})]
+    children: [e && (0, r.jsx)(A, {}), (0, r.jsx)(y, {}), (0, r.jsx)(P, {})]
   })
 }
 
-function T() {
+function y() {
   let {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, g.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = i.useState(150), [p, b] = i.useState(150), [_, v] = i.useState(500), [S, T] = i.useState(h.b.DEFAULT), I = () => {
-    switch (S) {
-      case h.b.DEFAULT:
-        T(h.b.HIGHLIGHTED);
+  }), [t, n] = i.useState(150), [p, h] = i.useState(150), [_, E] = i.useState(500), [j, T] = i.useState(f.b.DEFAULT), I = () => {
+    switch (j) {
+      case f.b.DEFAULT:
+        T(f.b.HIGHLIGHTED);
         break;
-      case h.b.HIGHLIGHTED:
-        T(h.b.SELECTED);
+      case f.b.HIGHLIGHTED:
+        T(f.b.SELECTED);
         break;
-      case h.b.SELECTED:
-        T(h.b.DEFAULT)
+      case f.b.SELECTED:
+        T(f.b.DEFAULT)
     }
   }, {
     analyticsLocations: y
   } = (0, c.ZP)(o.Z.PAYMENT_FLOW_TEST_PAGE);
-  return (0, r.jsxs)(E.$0, {
+  return (0, r.jsxs)(C.$0, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
       children: "Balance Widget Components"
-    }), (0, r.jsx)(E.E_, {
+    }), (0, r.jsx)(C.E_, {
       label: "Balance Widget Menu",
-      children: (0, r.jsx)(x.V9, {
-        ctaText: C.NW.string(C.t["J+vlIS"]),
-        ctaOnClick: j.dG4,
+      children: (0, r.jsx)(b.V9, {
+        ctaText: v.NW.string(v.t["J+vlIS"]),
+        ctaOnClick: O.dG4,
         isCoachmarkEnabled: !1
       })
-    }), (0, r.jsxs)(E.E_, {
+    }), (0, r.jsxs)(C.E_, {
       label: "Open Balance Widget Pill Overlay in Shop",
       direction: "vertical",
       children: [(0, r.jsx)("div", {
@@ -75,7 +82,7 @@ function T() {
         })
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(j.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(O.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
@@ -85,7 +92,7 @@ function T() {
         },
         children: "Open Balance Pill Overlay"
       })]
-    }), (0, r.jsxs)(E.E_, {
+    }), (0, r.jsxs)(C.E_, {
       label: "Open Balance Widget Coachmark in Shop",
       direction: "vertical",
       children: [(0, r.jsxs)("div", {
@@ -105,7 +112,7 @@ function T() {
         })]
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(j.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(O.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
@@ -116,26 +123,26 @@ function T() {
         },
         children: "Open Balance Widget Coachmark"
       })]
-    }), (0, r.jsxs)(E.E_, {
+    }), (0, r.jsxs)(C.E_, {
       label: "Balance Widget Pill",
       children: [(0, r.jsx)(N.A4, {
         balance: 150,
-        balanceWidgetMode: h.b.DEFAULT
+        balanceWidgetMode: f.b.DEFAULT
       }), (0, r.jsx)(N.A4, {
         balance: 150,
-        balanceWidgetMode: h.b.HIGHLIGHTED
+        balanceWidgetMode: f.b.HIGHLIGHTED
       }), (0, r.jsx)(N.A4, {
         balance: 150,
-        balanceWidgetMode: h.b.SELECTED
+        balanceWidgetMode: f.b.SELECTED
       }), (0, r.jsx)(N.A4, {
         balance: 0,
-        balanceWidgetMode: h.b.DEFAULT,
+        balanceWidgetMode: f.b.DEFAULT,
         showNotificationBadge: !0
       }), (0, r.jsx)(N.A4, {
         balance: null,
-        balanceWidgetMode: h.b.DEFAULT
+        balanceWidgetMode: f.b.DEFAULT
       })]
-    }), (0, r.jsxs)(E.E_, {
+    }), (0, r.jsxs)(C.E_, {
       label: "Balance Widget Pill Interactive (click to change mode)",
       direction: "vertical",
       children: [(0, r.jsx)(a.Text, {
@@ -145,17 +152,17 @@ function T() {
         },
         children: "Enter a number and click Set Balance to see the balance widget pill update:"
       }), (0, r.jsx)(a.FiK, {
-        className: O.numberInput,
+        className: S.numberInput,
         value: t,
         onChange: e => n(e)
       }), (0, r.jsx)(s.zx, {
-        onClick: () => b(t),
+        onClick: () => h(t),
         children: "Set Balance"
       }), (0, r.jsx)("div", {
-        className: O.interactivePillContainer,
+        className: S.interactivePillContainer,
         children: (0, r.jsx)(N.A4, {
           balance: p,
-          balanceWidgetMode: S,
+          balanceWidgetMode: j,
           onClick: () => I()
         })
       }), (0, r.jsx)(a.Text, {
@@ -165,44 +172,76 @@ function T() {
         },
         children: "Enter a number (loading time in milliseconds) and click Simulate Loading State to see the balance widget pill update:"
       }), (0, r.jsx)(a.FiK, {
-        className: O.numberInput,
+        className: S.numberInput,
         value: _,
-        onChange: e => v(e)
+        onChange: e => E(e)
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          b(null), setTimeout(() => {
-            b(t)
+          h(null), setTimeout(() => {
+            h(t)
           }, _)
         },
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
-        className: O.interactivePillContainer,
+        className: S.interactivePillContainer,
         children: (0, r.jsx)(N.A4, {
           balance: p,
-          balanceWidgetMode: S,
+          balanceWidgetMode: j,
           onClick: () => I()
         })
       })]
-    }), (0, r.jsx)(E.E_, {
+    }), (0, r.jsx)(C.E_, {
       label: "Balance Widget Card",
-      children: (0, r.jsx)(f.L, {
-        ctaText: C.NW.string(C.t["H57f4+"]),
-        linkText: C.NW.string(C.t["7f4H7O"]),
-        ctaOnClick: j.dG4
+      children: (0, r.jsx)(x.L, {
+        ctaText: v.NW.string(v.t["H57f4+"]),
+        linkText: v.NW.string(v.t["7f4H7O"]),
+        ctaOnClick: O.dG4
       })
     })]
   })
 }
 
-function I() {
+function A() {
+  let [e, t] = i.useState("1144308439720394944");
+  return (0, r.jsxs)(C.$0, {
+    children: [(0, r.jsx)(a.X6q, {
+      variant: "heading-xl/semibold",
+      children: "Orb Checkout Components"
+    }), (0, r.jsxs)(C.E_, {
+      label: "Orb Checkout Modal",
+      direction: "vertical",
+      children: [(0, r.jsx)(a.Text, {
+        variant: "text-md/normal",
+        children: "Enter SKU ID here:"
+      }), (0, r.jsx)(a.oil, {
+        placeholder: "SKU ID",
+        value: e,
+        onChange: e => t(e)
+      }), (0, r.jsx)(a.Text, {
+        variant: "text-md/normal",
+        color: "info-help-text",
+        children: "The Orb Checkout Modal will open with the orb price of the product, if it exists"
+      }), (0, r.jsx)(s.zx, {
+        onClick: () => {
+          (0, _.q)({
+            skuId: e
+          })
+        },
+        children: "Open Orb Checkout Integrated with Payment Modal"
+      })]
+    })]
+  })
+}
+
+function P() {
   let {
     resetOnboardingAnnouncementModal: e
   } = (0, p.Z)();
-  return (0, r.jsxs)(E.$0, {
+  return (0, r.jsxs)(C.$0, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
       children: "Onboarding Components"
-    }), (0, r.jsx)(E.E_, {
+    }), (0, r.jsx)(C.E_, {
       label: "Announcement Modal",
       children: (0, r.jsx)(s.zx, {
         onClick: () => {
@@ -264,7 +303,7 @@ function I() {
         },
         children: "Open Announcement Modal"
       })
-    }), (0, r.jsxs)(E.E_, {
+    }), (0, r.jsxs)(C.E_, {
       label: "Announcement Modal [Reset Dismissible Content]",
       direction: "vertical",
       children: [(0, r.jsx)(a.Text, {
@@ -278,29 +317,29 @@ function I() {
         onClick: () => e(),
         children: "Reset Announcement Modal State"
       })]
-    }), (0, r.jsxs)(E.E_, {
+    }), (0, r.jsxs)(C.E_, {
       label: "Onboarding Coachmark",
       direction: "vertical",
-      children: [(0, r.jsx)(_.ED, {
-        onClose: j.dG4,
+      children: [(0, r.jsx)(j.ED, {
+        onClose: O.dG4,
         renderTail: !1
       }), (0, r.jsxs)("div", {
-        className: v.horizontalContainer,
-        children: [(0, r.jsx)(_.ED, {
-          onClose: j.dG4,
+        className: T.horizontalContainer,
+        children: [(0, r.jsx)(j.ED, {
+          onClose: O.dG4,
           renderTail: !0
-        }), (0, r.jsx)(_.ED, {
-          onClose: j.dG4,
+        }), (0, r.jsx)(j.ED, {
+          onClose: O.dG4,
           renderTail: !0,
           invertCoachmark: !0
         })]
       })]
-    }), (0, r.jsx)(E.E_, {
+    }), (0, r.jsx)(C.E_, {
       label: "Balance Widget Coachmark",
-      children: (0, r.jsx)(b.E, {
+      children: (0, r.jsx)(E.E, {
         earnedOrbsQuantity: 200,
-        ctaOnClick: j.dG4,
-        linkOnClick: j.dG4
+        ctaOnClick: O.dG4,
+        linkOnClick: O.dG4
       })
     })]
   })

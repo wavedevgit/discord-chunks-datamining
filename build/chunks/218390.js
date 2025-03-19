@@ -18,8 +18,8 @@ var r = n(200651),
   h = n(37234),
   f = n(821849),
   x = n(230711),
-  N = n(497321),
-  b = n(634894),
+  b = n(497321),
+  N = n(634894),
   _ = n(410030),
   E = n(607070),
   j = n(100527),
@@ -296,10 +296,10 @@ let es = function() {
     x = null == h ? void 0 : h.countryCode,
     _ = (0, c.e7)([A.Z], () => A.Z.enabled),
     E = "PremiumManagementSettings";
-  (0, b.j)({
+  (0, N.j)({
     location: E + " auto on",
     autoTrackExposure: !0
-  }), (0, b.j)({
+  }), (0, N.j)({
     location: E + " auto off",
     autoTrackExposure: !1
   }), (0, U.B)(E);
@@ -310,7 +310,7 @@ let es = function() {
     })
   }, [x, _, e]);
   let [R, Z] = i.useState(!1);
-  if (_) return (0, r.jsx)(N.Z, {});
+  if (_) return (0, r.jsx)(b.Z, {});
   if (e) return (0, r.jsx)(T.c8, {});
   let w = s && null !== n && a,
     k = u !== Y.a$.NONE;

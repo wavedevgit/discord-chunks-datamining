@@ -18,8 +18,8 @@ var i = n(392711),
   h = n(210887),
   f = n(962100),
   x = n(65154),
-  N = n(388032),
-  b = n(910415),
+  b = n(388032),
+  N = n(910415),
   _ = n(802138);
 
 function E() {
@@ -40,13 +40,13 @@ function E() {
   j || (e = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
-    children: N.NW.format(N.t["1iK6UV"], {
+    children: b.NW.format(b.t["1iK6UV"], {
       onDownloadClick: () => (0, f.y)("Help Text Input Devices")
     })
   })), C || (t = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
-    children: N.NW.format(N.t.Ow0dbG, {
+    children: b.NW.format(b.t.Ow0dbG, {
       onDownloadClick: () => (0, f.y)("Help Text Output Devices")
     })
   }));
@@ -65,13 +65,13 @@ function E() {
       t = (0, r.jsx)("img", {
         src: e,
         alt: "Certified",
-        className: b.deviceOptionCertified
+        className: N.deviceOptionCertified
       })
     }
     return (0, r.jsxs)("span", {
-      className: b.deviceOption,
+      className: N.deviceOption,
       children: [(0, r.jsx)("span", {
-        className: b.deviceOptionLabel,
+        className: N.deviceOptionLabel,
         children: g.Z.getCertifiedDeviceName(s, i)
       }), t]
     }, s)
@@ -81,11 +81,11 @@ function E() {
     return R(e[0])
   }
   return (0, r.jsxs)("div", {
-    className: b.devices,
+    className: N.devices,
     children: [(0, r.jsx)("div", {
-      className: b.column,
+      className: N.column,
       children: (0, r.jsxs)(o.xJW, {
-        title: N.NW.string(N.t.hHMYbW),
+        title: b.NW.string(b.t.hHMYbW),
         children: [(0, r.jsx)(o.q4e, {
           value: O,
           onChange: e => c.Z.setInputDevice(e, {
@@ -108,9 +108,9 @@ function E() {
         }), e]
       })
     }), (0, r.jsx)("div", {
-      className: b.column,
+      className: N.column,
       children: (0, r.jsxs)(o.xJW, {
-        title: N.NW.string(N.t.dl18zc),
+        title: b.NW.string(b.t.dl18zc),
         children: [(0, r.jsx)(o.q4e, {
           value: v,
           onChange: e => c.Z.setOutputDevice(e, {

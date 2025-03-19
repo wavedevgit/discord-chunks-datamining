@@ -19,8 +19,8 @@ function p(e) {
   let {
     transitionState: f,
     onSuccess: x,
-    onClose: N,
-    requirementsUpdated: b,
+    onClose: b,
+    requirementsUpdated: N,
     noSkip: _ = !1
   } = e, [E, j] = i.useState(""), [C, O] = i.useState(""), [v, S] = i.useState(""), [T, I] = i.useState(null), [y, A] = i.useState(null), P = (0, s.e7)([c.Z], () => c.Z.getErrors()), R = (0, s.e7)([c.Z], () => c.Z.getFormState()), D = i.useRef(null);
   async function Z(e) {
@@ -56,9 +56,9 @@ function p(e) {
         color: "header-secondary",
         variant: "text-md/normal",
         className: g.subtitle,
-        children: b ? m.NW.string(m.t["37iHbW"]) : m.NW.string(m.t.iOurYm)
+        children: N ? m.NW.string(m.t["37iHbW"]) : m.NW.string(m.t.iOurYm)
       }), !0 !== _ && (0, r.jsx)(a.olH, {
-        onClick: N,
+        onClick: b,
         className: g.modalCloseButton
       })]
     }), (0, r.jsxs)("form", {
@@ -104,7 +104,7 @@ function p(e) {
           className: g.cancel,
           look: a.zxk.Looks.LINK,
           color: a.zxk.Colors.PRIMARY,
-          onClick: N,
+          onClick: b,
           children: m.NW.string(m.t["ETE/oK"])
         })]
       })]

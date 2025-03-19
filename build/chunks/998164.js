@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -10,12 +10,12 @@ var r = n(200651),
   l = n(710344),
   o = n(734893),
   c = n(8426),
-  d = n(969632),
-  u = n(430677),
-  m = n(388032),
+  A = n(969632),
+  d = n(430677),
+  u = n(388032),
   g = n(668813);
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,9 +46,9 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = [];
+let p = [];
 
-function b() {
+function h() {
   return (0, r.jsx)("div", {
     className: g.actionItemContainer,
     children: (0, r.jsxs)("div", {
@@ -66,14 +66,14 @@ function b() {
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: m.NW.string(m.t["K/i3iY"])
+          children: u.NW.string(u.t["K/i3iY"])
         })
       })]
     })
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     guildId: t,
     onAddAction: s
@@ -82,7 +82,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("14653").then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, h(p({}, n), {
+      return n => (0, r.jsx)(e, m(f({}, n), {
         guildId: t,
         onSave: s
       }))
@@ -97,19 +97,19 @@ function x(e) {
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "none",
-      children: m.NW.string(m.t.qce3EB)
+      children: u.NW.string(u.t.qce3EB)
     })]
   })
 }
-let j = function(e) {
+let b = function(e) {
   let {
     guildId: t
-  } = e, n = (0, s.Wu)([d.Z], () => {
+  } = e, n = (0, s.Wu)([A.Z], () => {
     var e;
-    return null !== (e = d.Z.getSettings().newMemberActions) && void 0 !== e ? e : f
+    return null !== (e = A.Z.getSettings().newMemberActions) && void 0 !== e ? e : p
   }), a = i.useCallback((e, n) => {
     (0, c.vR)(e);
-    let r = d.Z.getSettings();
+    let r = A.Z.getSettings();
     if (null == r) return;
     let {
       channelId: i
@@ -117,41 +117,41 @@ let j = function(e) {
     (0, c.oo)(t, r, !0).then(() => {
       null != n && (0, c.ad)(t, i, n, !0)
     })
-  }, [t]), m = i.useCallback((e, r, i, s) => {
+  }, [t]), u = i.useCallback((e, r, i, s) => {
     var a;
     let l = null === (a = n[e]) || void 0 === a ? void 0 : a.channelId;
     if (null == l) return;
-    let o = d.Z.getSettings();
+    let o = A.Z.getSettings();
     null != o && ((0, c.el)(l, r), (0, c.oo)(t, o, !0).then(() => {
       (0, c.ad)(t, l, i, s)
     }))
-  }, [n, t]), j = i.useCallback(e => {
+  }, [n, t]), b = i.useCallback(e => {
     var t;
     let r = null === (t = n[e]) || void 0 === t ? void 0 : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), N = n.map(e => h(p({}, e), {
+  }, [n]), v = n.map(e => m(f({}, e), {
     id: e.channelId
-  })), v = i.useCallback(e => {
+  })), x = i.useCallback(e => {
     (0, c.hS)(e);
-    let n = d.Z.getSettings();
+    let n = A.Z.getSettings();
     null != n && (0, c.oo)(t, n, !0)
   }, [t]), {
-    handleDragStart: _,
-    handleDragReset: y,
-    handleDragComplete: O
-  } = (0, l.Z)(N, v);
+    handleDragStart: N,
+    handleDragReset: j,
+    handleDragComplete: E
+  } = (0, l.Z)(v, x);
   return (0, r.jsxs)("div", {
     className: g.section,
-    children: [n.map((e, n) => (0, r.jsx)(u.Z, {
+    children: [n.map((e, n) => (0, r.jsx)(d.Z, {
       guildId: t,
       action: e,
       actionIndex: n,
-      onChange: m,
-      onDelete: j,
-      onDragStart: _,
-      onDragReset: y,
-      onDragComplete: O
-    }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
+      onChange: u,
+      onDelete: b,
+      onDragStart: N,
+      onDragReset: j,
+      onDragComplete: E
+    }, e.channelId)), (0, r.jsx)(h, {}), n.length < o.O9 && (0, r.jsx)(C, {
       guildId: t,
       onAddAction: a
     })]

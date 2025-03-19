@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  h: () => b
+  h: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -10,50 +10,50 @@ var r = n(200651),
   l = n(884858),
   o = n(516129),
   c = n(768581),
-  d = n(434404),
-  u = n(949640),
-  m = n(981631),
+  A = n(434404),
+  d = n(949640),
+  u = n(981631),
   g = n(30513),
-  p = n(200299),
-  h = n(388032),
-  f = n(908906);
+  f = n(200299),
+  m = n(388032),
+  p = n(908906);
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.hasFeature(m.oNc.INVITE_SPLASH), x = n && b, {
-    analyticsLocations: j
-  } = (0, a.ZP)(), N = i.useCallback(e => {
-    d.Z.updateGuild({
+  } = e, h = t.hasFeature(u.oNc.INVITE_SPLASH), C = n && h, {
+    analyticsLocations: b
+  } = (0, a.ZP)(), v = i.useCallback(e => {
+    A.Z.updateGuild({
       splash: e
     })
-  }, []), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
+  }, []), x = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, d.E6)({
       guild: t,
-      analyticsLocations: j,
-      analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
-      analyticsObject: m.qAy.UPLOAD_IMAGE,
+      analyticsLocations: b,
+      analyticsSection: u.jXE.GUILD_INVITE_BACKGROUND,
+      analyticsObject: u.qAy.UPLOAD_IMAGE,
       perks: (0, g.o9)()
     })
-  }, [j, t]), _ = (0, r.jsx)(o.Z, {
+  }, [b, t]), N = (0, r.jsx)(o.Z, {
     image: t.splash,
     makeURL: e => null != e ? c.ZP.getGuildSplashURL({
       id: t.id,
       splash: e
     }) : null,
-    disabled: !x,
-    onChange: N,
-    hint: h.NW.string(h.t.uPvxqK),
-    enabled: x,
-    maxFileSizeBytes: p.B,
-    onFileSizeError: () => (0, l.Z)(p.B)
+    disabled: !C,
+    onChange: v,
+    hint: m.NW.string(m.t.uPvxqK),
+    enabled: C,
+    maxFileSizeBytes: f.B,
+    onFileSizeError: () => (0, l.Z)(f.B)
   });
-  return b ? _ : (0, r.jsx)(s.P3F, {
+  return h ? N : (0, r.jsx)(s.P3F, {
     "aria-hidden": !0,
     tabIndex: -1,
-    className: f.upsell,
-    onClick: v,
-    children: _
+    className: p.upsell,
+    onClick: x,
+    children: N
   })
 }

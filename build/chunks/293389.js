@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(297700),
   f = n(77498),
   x = n(283595),
-  N = n(626135),
-  b = n(251625),
+  b = n(626135),
+  N = n(251625),
   _ = n(358085),
   E = n(210887),
   j = n(981631),
@@ -116,36 +116,36 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: p
-  } = e, b = (0, l.cj)([g.ZP, f.Z, x.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, x.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = b.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
+  } = e, N = (0, l.cj)([g.ZP, f.Z, x.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, x.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = N.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
     [O.game]: !s,
     [O.activeGame]: s,
     [T.card]: !s,
-    [O.nowPlaying]: null != b && s
+    [O.nowPlaying]: null != N && s
   });
 
   function D() {
-    d.Z.toggleDetection(b)
+    d.Z.toggleDetection(N)
   }
 
   function Z() {
     if (_) return;
-    let e = null != b.id ? f.Z.getDetectableGame(b.id) : null;
-    N.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    let e = null != N.id ? f.Z.getDetectableGame(N.id) : null;
+    b.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? void 0 : e.id,
-      game_name: b.name
+      game_name: N.name
     }), (0, c.showToast)((0, c.createToast)(C.NW.formatToPlainString(C.t["6klMOj"], {
-      gameName: b.name
+      gameName: N.name
     }), c.ToastType.SUCCESS)), E(!0)
   }
   return (0, r.jsxs)("div", {
     className: P,
     children: [(0, r.jsxs)("div", {
       className: a()(O.gameNameLastPlayed, S.vertical),
-      children: [b.verified && !p ? (0, r.jsxs)("div", {
+      children: [N.verified && !p ? (0, r.jsxs)("div", {
         className: O.detectedApplication,
         children: [(0, r.jsx)("div", {
           className: O.gameName,
-          children: b.name
+          children: N.name
         }), (0, r.jsx)(c.ua7, {
           text: C.NW.string(C.t["4PJP5u"]),
           children: e => (0, r.jsx)(h.Z, A(y({
@@ -167,7 +167,7 @@ function Z(e) {
         maxLength: 128,
         value: v,
         onBlur: function() {
-          b.name !== v && d.Z.editName(b, v)
+          N.name !== v && d.Z.editName(N, v)
         },
         onKeyDown: function(e) {
           13 === e.keyCode && (e.currentTarget.blur(), e.preventDefault())
@@ -178,7 +178,7 @@ function Z(e) {
         let {
           played: t,
           exePath: n
-        } = b;
+        } = N;
         return s ? e = C.NW.string(C.t.VbV5dn) : null != t && "" !== t && (e = C.NW.format(C.t.gGeOEx, {
           when: t
         })), (0, r.jsx)("div", {
@@ -216,7 +216,7 @@ function Z(e) {
     }), function() {
       let {
         detectable: e
-      } = b, t = e ? (0, r.jsx)(c.tEF, {
+      } = N, t = e ? (0, r.jsx)(c.tEF, {
         size: "md",
         color: "currentColor",
         className: O.toggleIconOn,
@@ -252,7 +252,7 @@ function Z(e) {
       let {
         overlay: e,
         overlayWarn: t
-      } = b, n = e ? (0, r.jsx)(c.pzj, {
+      } = N, n = e ? (0, r.jsx)(c.pzj, {
         size: "md",
         color: "currentColor",
         className: O.toggleIconOn,
@@ -282,7 +282,7 @@ function Z(e) {
               className: O.toggleIcon,
               onClick: () => {
                 var t;
-                return t = !e, void d.Z.toggleOverlay(b, t, t)
+                return t = !e, void d.Z.toggleOverlay(N, t, t)
               },
               onMouseEnter: i,
               onMouseLeave: s,
@@ -294,7 +294,7 @@ function Z(e) {
     }(), !s || p ? (0, r.jsx)(u.Z, {
       className: O.removeGame,
       onClick: function() {
-        d.Z.deleteEntry(b)
+        d.Z.deleteEntry(N)
       }
     }) : null]
   })
@@ -330,7 +330,7 @@ function k(e) {
     }), t]
   })
 }
-let W = (0, b.oH)(function() {
+let W = (0, N.oH)(function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     return new Set(t.map(e => e.exePath))
   }),

@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(43267),
   u = n(933557),
   m = n(258732),
-  x = n(592125),
-  h = n(699516),
+  h = n(592125),
+  x = n(699516),
   p = n(594174),
   b = n(55589),
   f = n(630388),
@@ -30,13 +30,13 @@ function C() {
     {
       selectedChannel: i,
       options: _
-    } = (0, s.cj)([x.Z, p.default, h.Z], () => ({
-      selectedChannel: x.Z.getChannel(n),
+    } = (0, s.cj)([h.Z, p.default, x.Z], () => ({
+      selectedChannel: h.Z.getChannel(n),
       options: t.map(e => {
-        let t = x.Z.getChannel(e.channelId);
+        let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, u.F6)(t, p.default, h.Z) : e.channelId
+          label: null != t ? (0, u.F6)(t, p.default, x.Z) : e.channelId
         }
       })
     })),
@@ -61,7 +61,7 @@ function C() {
         onChange: l,
         renderOptionPrefix: e => {
           if (null == e) return null;
-          let t = x.Z.getChannel(e.value);
+          let t = h.Z.getChannel(e.value);
           return null == t ? null : (0, r.jsx)(c.qEK, {
             src: (0, d.x)(t),
             "aria-hidden": !0,

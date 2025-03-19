@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => g,
-  j: () => p
+  j: () => f
 });
 var r = n(200651);
 n(192379);
@@ -12,22 +12,22 @@ var i = n(442837),
   l = n(490655),
   o = n(434404),
   c = n(360606),
-  d = n(999382),
-  u = n(821864),
-  m = n(905753);
+  A = n(999382),
+  d = n(821864),
+  u = n(905753);
 
 function g(e) {
   let {
     refToScroller: t
-  } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild()), {
+  } = e, n = (0, i.e7)([A.Z], () => A.Z.getGuild()), {
     section: s,
     sectionId: a,
     integrations: o,
-    editedIntegration: u,
-    webhooks: m,
+    editedIntegration: d,
+    webhooks: u,
     editedWebhook: g,
-    isFetching: p,
-    errors: h
+    isFetching: f,
+    errors: m
   } = (0, i.cj)([c.default], () => ({
     editedIntegration: c.default.editedIntegration,
     editedWebhook: c.default.editedWebhook,
@@ -43,28 +43,28 @@ function g(e) {
     section: s,
     sectionId: a,
     integrations: o,
-    webhooks: m,
-    editedIntegration: u,
+    webhooks: u,
+    editedIntegration: d,
     editedWebhook: g,
-    isFetchingWebhooks: p,
+    isFetchingWebhooks: f,
     hasChanges: c.default.hasChanges,
-    errors: h,
+    errors: m,
     refToScroller: t
   })
 }
 
-function p() {
+function f() {
   let {
     guild: e,
     submitting: t
-  } = (0, i.cj)([d.Z], () => ({
-    guild: d.Z.getGuild(),
-    submitting: d.Z.isSubmitting()
+  } = (0, i.cj)([A.Z], () => ({
+    guild: A.Z.getGuild(),
+    submitting: A.Z.isSubmitting()
   }));
   return (0, r.jsx)(a.Z, {
     submitting: t,
     onReset: () => {
-      s.Z.init(), u.Ui(), null != e && o.Z.init(e.id)
+      s.Z.init(), d.Ui(), null != e && o.Z.init(e.id)
     },
     onSave: () => {
       if (null != e) {
@@ -72,11 +72,11 @@ function p() {
         else if (null != c.default.editedWebhook) s.Z.saveWebhook(e.id, c.default.editedWebhook);
         else if (null != c.default.editedCommandId) {
           let t = c.default.getSectionId(),
-            n = m.Z.getEditedApplication();
+            n = u.Z.getEditedApplication();
           if (null == t || null == n) return;
           s.Z.saveApplicationPermissions(t, e.id, Object.values(n))
         }
-        d.Z.hasChanges() && o.Z.saveGuild(e.id, {
+        A.Z.hasChanges() && o.Z.saveGuild(e.id, {
           features: e.features
         })
       }

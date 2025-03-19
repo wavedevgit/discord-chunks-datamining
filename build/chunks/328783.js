@@ -28,7 +28,7 @@ let f = (0, l.hQ)(),
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), N = i.useCallback(e => {
+    }, []), [t]), b = i.useCallback(e => {
       var t, i;
       if (null == e) return null;
       let s = n.get(e.value);
@@ -42,12 +42,12 @@ let f = (0, l.hQ)(),
         guildIcon: s.icon,
         guildIconSize: 32
       })
-    }, [n]), b = i.useCallback(e => {
+    }, [n]), N = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: N(t)
+        children: b(t)
       })
-    }, [N]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
+    }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
     return (0, r.jsxs)(o.Z, {
       title: p.NW.string(p.t.Pdd1nZ),
       titleId: f,
@@ -61,8 +61,8 @@ let f = (0, l.hQ)(),
         isSelected: E,
         options: x,
         select: _,
-        renderOptionValue: b,
-        renderOptionLabel: N,
+        renderOptionValue: N,
+        renderOptionLabel: b,
         serialize: j,
         clear: C,
         clearable: null != l

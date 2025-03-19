@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(706140),
   f = n(626135),
   x = n(314684),
-  N = n(715627),
-  b = n(404615),
+  b = n(715627),
+  N = n(404615),
   _ = n(238108),
   E = n(32173),
   j = n(391110),
@@ -72,7 +72,7 @@ let R = {
       name: t,
       canReveal: n = !0,
       dismissibleContentType: s,
-      forceShadow: b,
+      forceShadow: N,
       cardType: C,
       confettiCanvas: O
     } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, x.Er)(), V = (0, x.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
@@ -139,7 +139,7 @@ let R = {
       }
     }), n) ? t === E.u.UPCOMING_DROP_UNTIMED ? (0, r.jsx)("div", {
       className: a()(y.flipCardContainer, {
-        [y.forceShadow]: b
+        [y.forceShadow]: N
       }),
       onMouseEnter: ee,
       onFocus: ee,
@@ -168,12 +168,12 @@ let R = {
       className: a()({
         [y.noFlipCardContainer]: !K,
         [y.noFlipCardContainerCarousel]: K,
-        [y.forceShadow]: b,
+        [y.forceShadow]: N,
         [y.reducedMotion]: k
       }),
       children: [(0, r.jsx)(Z, P(A({}, e), {
         ref: t === E.u.TENURE_REWARD_COLLECTIBLE ? ei : void 0
-      })), H && (0, r.jsx)(N.Z, {
+      })), H && (0, r.jsx)(b.Z, {
         speedValues: R,
         numBursts: 3,
         particlesPerBurst: 15,
@@ -188,7 +188,7 @@ let R = {
       })]
     }) : (0, r.jsx)("div", {
       className: a()(y.flipCardContainer, {
-        [y.forceShadow]: b
+        [y.forceShadow]: N
       }),
       children: (0, r.jsxs)(u.P3F, {
         onClick: () => L(!0),
@@ -225,7 +225,7 @@ let R = {
         })]
       })
     }) : (0, r.jsx)(D, P(A({}, q.upcomingDropUntimed), {
-      forceShadow: b
+      forceShadow: N
     }))
   });
 D.displayName = "PerkDiscoverabilityCard";
@@ -244,22 +244,22 @@ let Z = i.forwardRef((e, t) => {
     perkComponent: h,
     cardVariant: f,
     cardType: x,
-    onClick: N,
+    onClick: b,
     backgroundImage: _,
     pillText: E,
     perkImage: v,
     imageOverlayText: S
-  } = e, T = x === j.R0.CARD_CAROUSEL_FIRST_ROW || x === j.R0.CARD_CAROUSEL_SECOND_ROW || x === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, b._)(f);
+  } = e, T = x === j.R0.CARD_CAROUSEL_FIRST_ROW || x === j.R0.CARD_CAROUSEL_SECOND_ROW || x === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, N._)(f);
   return (0, r.jsxs)(u.P3F, {
     className: a()(y.card, p, null === (n = A.cardContainer) || void 0 === n ? void 0 : n.className, {
-      [y.clickable]: null != N,
+      [y.clickable]: null != b,
       [y.hideOverflow]: T
     }),
     onMouseEnter: g,
     style: {
       backgroundImage: null != _ ? "url(".concat(_, ")") : void 0
     },
-    onClick: N,
+    onClick: b,
     children: [null != E && (0, r.jsx)(u.Text, {
       variant: "text-xs/semibold",
       className: y.pill,

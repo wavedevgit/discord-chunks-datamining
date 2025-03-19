@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(47120), n(13667), n(390547), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -10,12 +10,12 @@ var r = n(200651),
   l = n(642128),
   o = n(692547),
   c = n(481060),
-  d = n(259580),
-  u = n(293810),
-  m = n(388032),
+  A = n(259580),
+  d = n(293810),
+  u = n(388032),
   g = n(820279);
 
-function p(e) {
+function f(e) {
   let {
     checked: t,
     children: n
@@ -38,21 +38,21 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     children: t
-  } = e, [n, s] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, h = 1 === o, f = (0, c.q_F)({
+  } = e, [n, s] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, m = 1 === o, p = (0, c.q_F)({
     width: "".concat(100 * o, "%")
-  }), b = [m.NW.format(m.t.wtQtXl, {
-    promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
-  }), m.NW.format(m.t["0Fo0wc"], {
-    caseStudiesUrl: u.iv.CASE_STUDIES
-  }), m.NW.format(m.t["7JdzjI"], {
-    subscriptionOfferingGuideUrl: u.iv.SUBSCRIPTION_OFFERING_GUIDE
-  }), m.NW.format(m.t.zkXN6O, {
-    tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
-  })], x = n ? null : (0, r.jsxs)(r.Fragment, {
-    children: [!h && t.map((e, t) => {
+  }), h = [u.NW.format(u.t.wtQtXl, {
+    promoPageGuideUrl: d.iv.PROMO_PAGE_GUIDE
+  }), u.NW.format(u.t["0Fo0wc"], {
+    caseStudiesUrl: d.iv.CASE_STUDIES
+  }), u.NW.format(u.t["7JdzjI"], {
+    subscriptionOfferingGuideUrl: d.iv.SUBSCRIPTION_OFFERING_GUIDE
+  }), u.NW.format(u.t.zkXN6O, {
+    tierStructureGuideUrl: d.iv.TIER_STRUCTURE_GUIDE
+  })], C = n ? null : (0, r.jsxs)(r.Fragment, {
+    children: [!m && t.map((e, t) => {
       let {
         title: n,
         items: s
@@ -63,7 +63,7 @@ function h(e) {
         }), (0, r.jsx)(c.vwX, {
           className: g.categoryTitle,
           children: n
-        }), s.map((e, t) => (0, r.jsx)(p, {
+        }), s.map((e, t) => (0, r.jsx)(f, {
           children: e.description,
           checked: e.completed
         }, t))]
@@ -72,8 +72,8 @@ function h(e) {
       className: g.divider
     }), (0, r.jsx)(c.vwX, {
       className: g.categoryTitle,
-      children: m.NW.string(m.t.FO0AIS)
-    }), b.map((e, t) => (0, r.jsx)("div", {
+      children: u.NW.string(u.t.FO0AIS)
+    }), h.map((e, t) => (0, r.jsx)("div", {
       className: g.row,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -91,18 +91,18 @@ function h(e) {
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           className: g.headerText,
-          children: m.NW.string(m.t["2Xbd/P"])
-        }), (0, r.jsx)(d.Z, {
-          direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
+          children: u.NW.string(u.t["2Xbd/P"])
+        }), (0, r.jsx)(A.Z, {
+          direction: n ? A.Z.Directions.DOWN : A.Z.Directions.UP,
           className: g.headerCaret
         })]
-      }), !h && (0, r.jsx)("div", {
+      }), !m && (0, r.jsx)("div", {
         className: g.progressBarOuter,
         children: (0, r.jsx)(l.animated.div, {
           className: g.progressBarInner,
-          style: f
+          style: p
         })
-      }), x]
+      }), C]
     })
   })
 }

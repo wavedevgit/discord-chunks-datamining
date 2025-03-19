@@ -15,7 +15,7 @@ function a(e) {
       disabledTooltip: o,
       id: c
     } = e,
-    d = function(e, t) {
+    A = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -53,7 +53,7 @@ function a(e) {
       className: s.tabBarItem,
       id: c,
       disabled: l
-    }, d), n = n = {
+    }, A), n = n = {
       children: a
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,18 +10,18 @@ var r = n(200651),
   l = n(481060),
   o = n(700582),
   c = n(330726),
-  d = n(51144),
-  u = n(268350),
-  m = n(419922),
+  A = n(51144),
+  d = n(268350),
+  u = n(419922),
   g = n(388032),
-  p = n(662815);
-let h = e => {
+  f = n(662815);
+let m = e => {
   let {
     className: t,
     isDisabled: s,
-    sticker: h,
-    canManageSticker: f
-  } = e, [b, x] = i.useState(!1), [j, N] = (0, c.Z)(null, 4e3), v = () => {
+    sticker: m,
+    canManageSticker: p
+  } = e, [h, C] = i.useState(!1), [b, v] = (0, c.Z)(null, 4e3), x = () => {
     (0, l.ZDy)(async () => {
       let {
         default: e
@@ -44,76 +44,76 @@ let h = e => {
         }
         return e
       }({
-        sticker: h,
-        guildId: h.guild_id
+        sticker: m,
+        guildId: m.guild_id
       }, t))
     })
-  }, _ = async () => {
-    N(null), x(!0);
+  }, N = async () => {
+    v(null), C(!0);
     try {
-      await (0, u.Um)(h)
+      await (0, d.Um)(m)
     } catch (e) {
-      N(e.body.message), x(!1)
+      v(e.body.message), C(!1)
     }
-  }, y = d.ZP.useUserTag(h.user);
+  }, j = A.ZP.useUserTag(m.user);
   return (0, r.jsx)(l.ua7, {
     color: l.ua7.Colors.RED,
-    forceOpen: null != j,
-    text: j,
+    forceOpen: null != b,
+    text: b,
     children: () => (0, r.jsxs)("div", {
-      className: a()(p.wrapper, t, {
-        [p.wrapperDisabled]: s
+      className: a()(f.wrapper, t, {
+        [f.wrapperDisabled]: s
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(p.content, {
-          [p.contentRemoving]: b
+        className: a()(f.content, {
+          [f.contentRemoving]: h
         }),
-        children: [(0, r.jsx)(m.ZP, {
-          className: p.sticker,
+        children: [(0, r.jsx)(u.ZP, {
+          className: f.sticker,
           size: 72,
-          sticker: h
+          sticker: m
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(l.Text, {
             color: "header-primary",
             variant: "text-xs/semibold",
-            className: p.stickerName,
-            children: h.name
-          }), null != h.user && (0, r.jsxs)("div", {
-            className: p.user,
+            className: f.stickerName,
+            children: m.name
+          }), null != m.user && (0, r.jsxs)("div", {
+            className: f.user,
             children: [(0, r.jsx)(o.Z, {
-              className: p.userAvatar,
+              className: f.userAvatar,
               size: l.EFr.SIZE_16,
-              user: h.user
+              user: m.user
             }), (0, r.jsx)(l.Text, {
               color: "header-secondary",
               variant: "text-xs/normal",
-              children: y
+              children: j
             })]
           })]
-        }), f ? (0, r.jsxs)("div", {
-          className: p.actions,
+        }), p ? (0, r.jsxs)("div", {
+          className: f.actions,
           children: [(0, r.jsx)(l.P3F, {
-            className: p.action,
-            onClick: v,
+            className: f.action,
+            onClick: x,
             "aria-label": g.NW.string(g.t.bt75u7),
             children: (0, r.jsx)(l.vdY, {
               size: "xs",
               color: "currentColor",
-              className: p.icon
+              className: f.icon
             })
           }), (0, r.jsx)(l.P3F, {
-            className: a()(p.action, p.actionRemove),
-            onClick: _,
+            className: a()(f.action, f.actionRemove),
+            onClick: N,
             "aria-label": g.NW.string(g.t.N86XcH),
             children: (0, r.jsx)(l.Dio, {
               size: "md",
               color: "currentColor",
-              className: p.icon
+              className: f.icon
             })
           })]
         }) : null]
-      }), b && (0, r.jsx)(l.$jN, {
-        className: p.spinner
+      }), h && (0, r.jsx)(l.$jN, {
+        className: f.spinner
       })]
     })
   })

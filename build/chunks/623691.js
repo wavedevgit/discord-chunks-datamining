@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,13 +10,13 @@ var r = n(200651),
   l = n(481060),
   o = n(749210),
   c = n(63063),
-  d = n(714939),
-  u = n(494831),
-  m = n(981631),
+  A = n(714939),
+  d = n(494831),
+  u = n(981631),
   g = n(388032),
-  p = n(785441);
+  f = n(785441);
 
-function h(e) {
+function m(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -24,111 +24,111 @@ function h(e) {
     setEditRoleId: a,
     query: o,
     setQuery: c,
-    setHeaderHeight: d
-  } = e, m = i.useRef(null);
+    setHeaderHeight: A
+  } = e, u = i.useRef(null);
   i.useEffect(() => {
     var e, t;
-    d(null !== (t = null === (e = m.current) || void 0 === e ? void 0 : e.offsetHeight) && void 0 !== t ? t : u.Cl)
-  }, [d]);
-  let h = i.useCallback(() => {
+    A(null !== (t = null === (e = u.current) || void 0 === e ? void 0 : e.offsetHeight) && void 0 !== t ? t : d.Cl)
+  }, [A]);
+  let m = i.useCallback(() => {
     a(n.id)
   }, [a, n.id]);
   return (0, r.jsxs)("div", {
-    ref: m,
+    ref: u,
     children: [(0, r.jsx)(l.vwX, {
       tag: l.RB0.H1,
       children: g.NW.string(g.t.LPJmLy)
     }), (0, r.jsx)(l.Text, {
-      className: p.description,
+      className: f.description,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: g.NW.string(g.t["1ydhVl"])
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(p, {
       guild: t,
       everyoneRole: n,
       filteredRoles: s,
       query: o,
       setQuery: c,
-      onEveryoneRoleClick: h
+      onEveryoneRoleClick: m
     })]
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     guild: t,
     everyoneRole: n,
     filteredRoles: i,
     query: s,
     setQuery: o,
-    onEveryoneRoleClick: u
+    onEveryoneRoleClick: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.Z, {
+    children: [(0, r.jsx)(A.Z, {
       role: n,
-      onClick: u
-    }), (0, r.jsx)(b, {
+      onClick: d
+    }), (0, r.jsx)(h, {
       guild: t,
       query: s,
       setQuery: o
     }), (0, r.jsx)(l.Text, {
-      className: p.helpText,
+      className: f.helpText,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: g.NW.format(g.t.xkC3YW, {
-        articleURL: c.Z.getArticleURL(m.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: c.Z.getArticleURL(u.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
-      className: p.rolesTable,
+      className: f.rolesTable,
       children: (0, r.jsxs)("div", {
-        className: p.tableHeader,
+        className: f.tableHeader,
         children: [(0, r.jsx)("div", {
-          className: p.dragSpacing
+          className: f.dragSpacing
         }), (0, r.jsx)(l.Text, {
-          className: a()(p.tableTitle, p.roleNameSpacing),
+          className: a()(f.tableTitle, f.roleNameSpacing),
           variant: "text-sm/normal",
           children: g.NW.format(g.t["38N3V1"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(l.Text, {
-          className: a()(p.tableTitle, p.memberSpacing),
+          className: a()(f.tableTitle, f.memberSpacing),
           variant: "text-sm/normal",
           children: g.NW.string(g.t["9Oq93t"])
         }), (0, r.jsx)("div", {
-          className: p.buttonsSpacing
+          className: f.buttonsSpacing
         })]
       })
     })]
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     query: n,
     setQuery: s
-  } = e, [a, c] = i.useState(!1), d = i.useCallback(e => {
+  } = e, [a, c] = i.useState(!1), A = i.useCallback(e => {
     s(e)
-  }, [s]), u = i.useCallback(() => {
+  }, [s]), d = i.useCallback(() => {
     s("")
-  }, [s]), m = async () => {
+  }, [s]), u = async () => {
     c(!0), await o.Z.createRole(t.id), c(!1)
   };
   return (0, r.jsx)("div", {
-    className: p.__invalid_rolesList,
+    className: f.__invalid_rolesList,
     children: (0, r.jsxs)("div", {
-      className: p.searchContainer,
+      className: f.searchContainer,
       children: [(0, r.jsx)(l.E1j, {
         size: l.E1j.Sizes.MEDIUM,
         query: n,
-        onChange: d,
-        onClear: u,
+        onChange: A,
+        onClear: d,
         placeholder: g.NW.string(g.t.Sojqsr),
         "aria-label": g.NW.string(g.t.Sojqsr)
       }), (0, r.jsx)(l.zxk, {
-        className: p.createButton,
+        className: f.createButton,
         size: l.zxk.Sizes.SMALL,
-        onClick: m,
+        onClick: u,
         submitting: a,
         children: g.NW.string(g.t.JZZjQE)
       })]

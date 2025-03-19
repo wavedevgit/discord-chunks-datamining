@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,75 +10,75 @@ var r = n(200651),
   l = n(481060),
   o = n(313201),
   c = n(584825),
-  d = n(723047),
-  u = n(727843),
-  m = n(290348),
+  A = n(723047),
+  d = n(727843),
+  u = n(290348),
   g = n(518470),
-  p = n(22902),
-  h = n(783454),
-  f = n(388032),
-  b = n(174032);
+  f = n(22902),
+  m = n(783454),
+  p = n(388032),
+  h = n(174032);
 
-function x() {
+function C() {
   var e;
   let {
     editStateId: t
-  } = (0, u.N)(), [n, s] = m.TT(t), [x, j] = m.F2(t), N = (0, c.oC)(t), {
-    options: v
-  } = (0, p.Z)(null !== (e = null == N ? void 0 : N.active_trial) && void 0 !== e ? e : null), _ = (0, g.Z)(), y = null != n, O = i.useCallback(e => {
-    let t = v.find(e => e.isDefault);
+  } = (0, d.N)(), [n, s] = u.TT(t), [C, b] = u.F2(t), v = (0, c.oC)(t), {
+    options: x
+  } = (0, f.Z)(null !== (e = null == v ? void 0 : v.active_trial) && void 0 !== e ? e : null), N = (0, g.Z)(), j = null != n, E = i.useCallback(e => {
+    let t = x.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), s(e ? t.value : null)
-  }, [s, v]), C = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
-  return (0, r.jsxs)(h.Z, {
-    title: f.NW.string(f.t["6antoq"]),
-    description: f.NW.string(f.t.urVijY),
+  }, [s, x]), I = (0, A.mY)(), O = (0, o.Dt)(), y = (0, o.Dt)();
+  return (0, r.jsxs)(m.Z, {
+    title: p.NW.string(p.t["6antoq"]),
+    description: p.NW.string(p.t.urVijY),
     children: [(0, r.jsx)(l.j7V, {
-      onChange: (e, t) => O(e),
-      value: y,
-      disabled: C,
+      onChange: (e, t) => E(e),
+      value: j,
+      disabled: I,
       hideBorder: !0,
-      children: f.NW.string(f.t["+hTmdX"])
+      children: p.NW.string(p.t["+hTmdX"])
     }), (0, r.jsxs)(l.hjN, {
-      title: f.NW.string(f.t.m1KuWV),
-      titleId: I,
-      disabled: !y || C,
+      title: p.NW.string(p.t.m1KuWV),
+      titleId: O,
+      disabled: !j || I,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
-        className: b.formDescription,
-        disabled: !y || C,
-        children: f.NW.string(f.t.NB9NLC)
+        className: h.formDescription,
+        disabled: !j || I,
+        children: p.NW.string(p.t.NB9NLC)
       }), (0, r.jsx)(l.LZC, {
         size: 8
       }), (0, r.jsx)(l.q4e, {
-        "aria-labelledby": I,
-        options: v,
-        className: b.formInput,
-        placeholder: f.NW.string(f.t.WZG1BQ),
+        "aria-labelledby": O,
+        options: x,
+        className: h.formInput,
+        placeholder: p.NW.string(p.t.WZG1BQ),
         value: n,
         onChange: s,
         maxVisibleItems: 5,
-        isDisabled: !y || C,
+        isDisabled: !j || I,
         look: l.qQH.CUSTOM
       })]
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
-      title: f.NW.string(f.t["/JD9oa"]),
-      titleId: E,
-      disabled: !y || C,
+      title: p.NW.string(p.t["/JD9oa"]),
+      titleId: y,
+      disabled: !j || I,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
-        className: b.formDescription,
-        disabled: !y || C,
-        children: f.NW.string(f.t.Cg5eBg)
+        className: h.formDescription,
+        disabled: !j || I,
+        children: p.NW.string(p.t.Cg5eBg)
       }), (0, r.jsx)(l.q4e, {
-        "aria-labelledby": E,
-        options: _,
-        className: b.formInput,
-        value: x,
-        onChange: j,
+        "aria-labelledby": y,
+        options: N,
+        className: h.formInput,
+        value: C,
+        onChange: b,
         maxVisibleItems: 5,
-        isDisabled: !y || C,
+        isDisabled: !j || I,
         look: l.qQH.CUSTOM
       })]
     })]

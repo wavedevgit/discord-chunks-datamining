@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -11,26 +11,26 @@ var i = n(442837),
   l = n(45966),
   o = n(637853),
   c = n(889369),
-  d = n(974513),
-  u = n(290511),
-  m = n(388032),
+  A = n(974513),
+  d = n(290511),
+  u = n(388032),
   g = n(652212);
 
-function p(e) {
+function f(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, v = p ? x.length : f.length, _ = N < u.md, y = v >= u.X, O = j.length - b.length, C = (0, r.jsx)(a.owK, {
+  } = e, f = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), m = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [p, h] = (0, o.VF)(t, m), [C, b] = (0, A.OA)(t, [...m]), v = f ? b.length : h.length, x = f ? C.length : p.length, N = v < d.md, j = x >= d.X, E = b.length - h.length, I = (0, r.jsx)(a.owK, {
     size: "sm",
     color: s.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: s.Z.unsafe_rawColors.WHITE_100.css,
     className: g.icon
-  }), I = (0, r.jsx)(a.k$p, {
+  }), O = (0, r.jsx)(a.k$p, {
     size: "sm",
     className: g.icon,
     color: s.Z.colors.WHITE.css,
     secondaryColor: s.Z.colors.BACKGROUND_ACCENT.css
-  }), E = [Math.min(u.X, v) / u.md * 100, Math.min(u.md, N) / u.md * 100], S = !_ && y ? [s.Z.colors.TEXT_POSITIVE.css, s.Z.colors.TEXT_POSITIVE.css] : [s.Z.colors.TEXT_BRAND.css, s.Z.colors.TEXT_MUTED.css];
+  }), y = [Math.min(d.X, x) / d.md * 100, Math.min(d.md, v) / d.md * 100], w = !N && j ? [s.Z.colors.TEXT_POSITIVE.css, s.Z.colors.TEXT_POSITIVE.css] : [s.Z.colors.TEXT_BRAND.css, s.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsxs)("div", {
@@ -38,39 +38,39 @@ function p(e) {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "text-brand",
-        children: m.NW.format(m.t.kvroKC, {
-          count: v
+        children: u.NW.format(u.t.kvroKC, {
+          count: x
         })
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "text-muted",
-        children: m.NW.format(m.t["0MjxJy"], {
-          count: N
+        children: u.NW.format(u.t["0MjxJy"], {
+          count: v
         })
       })]
     }), (0, r.jsx)(a.yGy, {
-      foregroundColors: S,
-      percents: E,
+      foregroundColors: w,
+      percents: y,
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [_ ? I : C, (0, r.jsx)(a.Text, {
+      children: [N ? O : I, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: m.NW.format(m.t.k0COZW, {
-          count: u.md
+        children: u.NW.format(u.t.k0COZW, {
+          count: d.md
         })
       })]
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [y ? C : I, (0, r.jsx)(a.Text, {
+      children: [j ? I : O, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: m.NW.format(m.t.PwXgS0, {
-          count: u.X
+        children: u.NW.format(u.t.PwXgS0, {
+          count: d.X
         })
       })]
-    }), p && (0, r.jsxs)(r.Fragment, {
+    }), f && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: g.requiredItem,
         children: [(0, r.jsx)(a.d3s, {
@@ -81,7 +81,7 @@ function p(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: m.NW.string(m.t.AyvkOD)
+          children: u.NW.string(u.t.AyvkOD)
         })]
       }), (0, r.jsxs)("div", {
         className: g.requiredItem,
@@ -93,8 +93,8 @@ function p(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: m.NW.format(m.t["8Geut7"], {
-            count: O,
+          children: u.NW.format(u.t["8Geut7"], {
+            count: E,
             prejoinHook: e => (0, r.jsx)(a.eee, {
               onClick: n,
               children: (0, r.jsx)(a.Text, {

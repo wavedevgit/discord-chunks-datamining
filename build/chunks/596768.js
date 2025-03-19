@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => O
+  Z: () => N
 }), n(47120), n(230036);
 var r = n(200651),
   a = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   d = n.n(c),
   u = n(442837),
   m = n(481060),
-  x = n(570140),
-  h = n(665149),
+  h = n(570140),
+  x = n(665149),
   p = n(55935),
   b = n(120816),
   f = n(31336),
@@ -24,7 +24,7 @@ var r = n(200651),
   y = n(388032),
   C = n(871133),
   T = n(710662);
-let S = [{
+let O = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -52,7 +52,7 @@ let S = [{
       return t.toLocaleString()
     }
   }],
-  N = [{
+  S = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -68,12 +68,12 @@ let S = [{
         }
       } = e, u = d()(o);
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(h.ZP, {
+        children: [(0, r.jsxs)(x.ZP, {
           className: i()(T.headerBar, C.subPanelHeaderBar),
-          children: [(0, r.jsx)(h.ZP.Icon, {
+          children: [(0, r.jsx)(x.ZP.Icon, {
             icon: m.IeX,
             tooltip: t
-          }), (0, r.jsx)(h.ZP.Title, {
+          }), (0, r.jsx)(x.ZP.Title, {
             children: t
           })]
         }), (0, r.jsxs)(_.E, {
@@ -131,14 +131,14 @@ let S = [{
     }
   }];
 
-function O() {
-  let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), h = o.find(e => e.key === c), {
+function N() {
+  let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), x = o.find(e => e.key === c), {
     TabBar: p,
     renderSelectedTab: _
   } = (0, j.Z)({
-    tabs: N
-  }, []), O = (0, u.e7)([b.Z], () => b.Z.trackTriggers), k = a.useCallback(e => {
-    x.Z.dispatch({
+    tabs: S
+  }, []), N = (0, u.e7)([b.Z], () => b.Z.trackTriggers), k = a.useCallback(e => {
+    h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
@@ -152,7 +152,7 @@ function O() {
         title: "Enables tracking of all triggers",
         className: C.triggersEnable,
         children: (0, r.jsx)(m.rsf, {
-          checked: O,
+          checked: N,
           onChange: k,
           className: C.__invalid_toolbarSwitch
         })
@@ -177,16 +177,16 @@ function O() {
         placeholder: "Search by experiment id"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: S,
+      columns: O,
       data: o,
       selectedRowKey: c,
       onClickRow: e => d(e.key)
-    }), null != h && (0, r.jsxs)(g.Z, {
+    }), null != x && (0, r.jsxs)(g.Z, {
       className: C.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
       children: [(0, r.jsx)(p, {}), _({
-        loggedTrigger: h
+        loggedTrigger: x
       })]
     })]
   })

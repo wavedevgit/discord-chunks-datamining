@@ -17,9 +17,9 @@ var r = n(200651),
   h = n(450272),
   f = n(388032),
   x = n(311514),
-  N = n(518732);
+  b = n(518732);
 
-function b(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -126,7 +126,7 @@ function C(e) {
         look: o.zxk.Looks.LINK
       })
     };
-  return e.renderStepBody ? (0, r.jsx)(p.t, b({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(d.Ch, b({}, n, e)) : (0, r.jsx)(d.Tr, b({}, n, e))
+  return e.renderStepBody ? (0, r.jsx)(p.t, N({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(d.Ch, N({}, n, e)) : (0, r.jsx)(d.Tr, N({}, n, e))
 }
 
 function O(e) {
@@ -136,7 +136,7 @@ function O(e) {
     className: i
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(N.root, N.focusLock, N.small, N.rootWithShadow, x.modal, i),
+    className: l()(b.root, b.focusLock, b.small, b.rootWithShadow, x.modal, i),
     "aria-label": f.NW.string(f.t.eQ2bLi),
     children: (0, r.jsxs)("form", {
       className: x.form,
@@ -203,7 +203,7 @@ function T() {
     }), (0, r.jsx)(h.E_, {
       label: "All Payment Request Wallets Enabled",
       children: (0, r.jsx)(S, {
-        children: (0, r.jsx)(c.ZP, _(b({}, e), {
+        children: (0, r.jsx)(c.ZP, _(N({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
         }))
@@ -211,7 +211,7 @@ function T() {
     }), (0, r.jsx)(h.E_, {
       label: "No Payment Wallets Enabled",
       children: (0, r.jsx)(S, {
-        children: (0, r.jsx)(c.ZP, _(b({}, e), {
+        children: (0, r.jsx)(c.ZP, _(N({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: []
         }))
@@ -219,7 +219,7 @@ function T() {
     }), (0, r.jsx)(h.E_, {
       label: "Is Eligible for Trial",
       children: (0, r.jsx)(S, {
-        children: (0, r.jsx)(c.ZP, _(b({}, e), {
+        children: (0, r.jsx)(c.ZP, _(N({}, e), {
           isEligibleForTrial: !0,
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -278,7 +278,7 @@ let I = {
   R = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function D() {
-  let [e, t] = i.useState(R(A)), [n, a] = i.useState(A), [l, c] = i.useState(R(P)), [d, m] = i.useState(P), [g, p] = i.useState(null), [f, N] = i.useState((0, r.jsx)(h.DS, {
+  let [e, t] = i.useState(R(A)), [n, a] = i.useState(A), [l, c] = i.useState(R(P)), [d, m] = i.useState(P), [g, p] = i.useState(null), [f, b] = i.useState((0, r.jsx)(h.DS, {
     errorLabel: I.CONFIGURABLE,
     elementOptions: A,
     children: (0, r.jsx)(s.ExpressCheckoutElement, {
@@ -336,7 +336,7 @@ function D() {
         try {
           let t = JSON.parse(e),
             n = JSON.parse(l);
-          N(null), N((0, r.jsxs)(r.Fragment, {
+          b(null), b((0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(o.Text, {
               variant: "text-md/normal",
               className: x.labelSpacing,

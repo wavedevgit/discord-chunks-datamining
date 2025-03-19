@@ -20,8 +20,8 @@ n(729345);
 var g = n(981631);
 n.p = (null !== (r = window.GLOBAL_ENV.STATIC_ENDPOINT) && void 0 !== r ? r : "") + window.GLOBAL_ENV.PUBLIC_PATH, !0 === window.__METICULOUS_ENABLED && n.e("19083").then(n.bind(n, 353182)).then(e => e.init()), (0, c.yR)(d.Z), (0, a.Y)(o, f.Z), l.ZP.Emitter.injectBatchEmitChanges(s.j), l.ZP.PersistedStore.disableWrites = __OVERLAY__, l.ZP.initialize();
 let E = window.GLOBAL_ENV.RELEASE_CHANNEL,
-  b = "379836",
-  v = "51c618b7b9fd0bb14e8f793c43979a112f999356";
+  b = "379897",
+  v = "b26f87c70934df8d773e461d08fbf9356e75547b";
 new m.Z().log("[BUILD INFO] Release Channel: ".concat(E, ", Build Number: ").concat(b, ", Version Hash: ").concat(v)), i.Z.setTags({
   appContext: g.e3s
 }), _.Z.initBasic(), p.Z.init(), u.d.init(), h.S1()

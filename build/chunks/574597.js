@@ -19,8 +19,8 @@ var n = r(200651),
   m = r(280501),
   j = r(811654),
   g = r(344991),
-  h = r(981631),
-  v = r(444907);
+  v = r(981631),
+  h = r(444907);
 
 function P(e) {
   var t;
@@ -69,7 +69,7 @@ function P(e) {
           return e
         }({}, a)) : (0, n.jsx)(o.lZ8, {
           size: "custom",
-          color: null !== (l = r.colorString) && void 0 !== l ? l : (0, i.Rf)(h.p6O),
+          color: null !== (l = r.colorString) && void 0 !== l ? l : (0, i.Rf)(v.p6O),
           height: t,
           width: t
         })
@@ -80,10 +80,10 @@ function P(e) {
       if (e.type === m.tM.USER) {
         let r = O.default.getUser(e.value);
         null != r && (t = (0, n.jsx)(a.Z, {
-          className: v.tag,
-          usernameClass: v.username,
-          discriminatorClass: v.discriminator,
-          botClass: v.bot,
+          className: h.tag,
+          usernameClass: h.username,
+          discriminatorClass: h.discriminator,
+          botClass: h.bot,
           user: r,
           forceUsername: !0
         }))
@@ -91,21 +91,21 @@ function P(e) {
         let r = null != w ? b.Z.getRole(w.id, e.value) : void 0,
           l = null == r ? null : null == S ? void 0 : S[r.id];
         null != l && (t = (0, n.jsxs)("div", {
-          className: v.roleCountContainer,
+          className: h.roleCountContainer,
           children: [(0, n.jsx)(o.tBG, {
             size: "sm",
             color: "currentColor",
-            className: v.roleCountIcon
+            className: h.roleCountIcon
           }), (0, n.jsx)("span", {
-            className: v.roleCountText,
+            className: h.roleCountText,
             children: l
           })]
         }))
       }
       return (0, n.jsxs)("span", {
-        className: v.label,
+        className: h.label,
         children: [(0, n.jsx)("span", {
-          className: v.labelText,
+          className: h.labelText,
           children: e.label
         }), t]
       })

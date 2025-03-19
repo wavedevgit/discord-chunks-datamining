@@ -18,8 +18,8 @@ var i = n(442837),
   h = n(823087),
   f = n(232388),
   x = n(716210),
-  N = n(459674),
-  b = n(803567),
+  b = n(459674),
+  N = n(803567),
   _ = n(269876),
   E = n(976758),
   j = n(726985),
@@ -65,7 +65,7 @@ function T() {
     }), (0, r.jsx)(c.Z, {
       webSetting: j.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
       title: v.NW.string(v.t["6I6GUl"]),
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(N.Z, {
         refreshStyles: !0
       })
     }), (0, r.jsx)(c.Z, {
@@ -74,7 +74,7 @@ function T() {
       children: (0, r.jsxs)(d.Z, {
         children: [(0, r.jsx)(x.Z, {
           refreshStyles: !0
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(b.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(u.Z, {
           refreshStyles: !0

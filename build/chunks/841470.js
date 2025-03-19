@@ -15,13 +15,13 @@ let c = e => {
     title: t,
     subtext: n = l.NW.string(l.t.jHpxws),
     localizedNumber: c,
-    isTrendingUp: d,
-    isTrendingDown: u,
-    tooltipText: m
-  } = e, g = null != m ? (0, r.jsx)(s.ua7, {
-    text: m,
+    isTrendingUp: A,
+    isTrendingDown: d,
+    tooltipText: u
+  } = e, g = null != u ? (0, r.jsx)(s.ua7, {
+    text: u,
     position: "top",
-    "aria-label": "string" == typeof m ? m : t,
+    "aria-label": "string" == typeof u ? u : t,
     children: e => {
       var t, n;
       return (0, r.jsx)(s.d3s, (t = function(e) {
@@ -72,13 +72,13 @@ let c = e => {
       })
     }), (0, r.jsxs)("div", {
       className: o.analyticsCardArrowSubText,
-      children: [d ? (0, r.jsx)(a.Z, {
+      children: [A ? (0, r.jsx)(a.Z, {
         className: o.trendingArrow,
         color: i.Z.unsafe_rawColors.GREEN_360.css,
         "aria-label": l.NW.string(l.t["8mcccX"]),
         width: 14,
         height: 12
-      }) : null, u ? (0, r.jsx)(a.Z, {
+      }) : null, d ? (0, r.jsx)(a.Z, {
         className: o.trendingArrowIconDown,
         color: i.Z.unsafe_rawColors.RED_400.css,
         "aria-label": l.NW.string(l.t.NLl6Q0),

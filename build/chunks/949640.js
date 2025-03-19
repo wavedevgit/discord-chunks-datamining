@@ -1,9 +1,9 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  E6: () => m,
+  E6: () => u,
   f4: () => g,
-  mw: () => u
+  mw: () => d
 });
 var r = n(200651),
   i = n(481060),
@@ -12,9 +12,9 @@ var r = n(200651),
   l = n(26323),
   o = n(267642),
   c = n(434404),
-  d = n(981631);
+  A = n(981631);
 
-function u(e) {
+function d(e) {
   let {
     uploadType: t,
     maxFileSizeBytes: s,
@@ -55,7 +55,7 @@ function u(e) {
   })
 }
 
-function m(e) {
+function u(e) {
   let {
     guild: t,
     analyticsLocations: n,
@@ -64,10 +64,10 @@ function m(e) {
     perks: a,
     targetPremiumGuildTier: c
   } = e;
-  (0, s.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  (0, s.yw)(A.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
     location: {
       section: r,
-      object: d.qAy.LEARN_MORE,
+      object: A.qAy.LEARN_MORE,
       objectType: c ? (0, o.ge)(c) : void 0
     },
     guild_id: t.id,
@@ -77,7 +77,7 @@ function m(e) {
     analyticsSourceLocation: {
       section: r,
       object: i,
-      page: d.ZY5.GUILD_SETTINGS
+      page: A.ZY5.GUILD_SETTINGS
     },
     guild: t,
     perks: a
@@ -87,14 +87,14 @@ function m(e) {
 function g(e, t, n, r) {
   let i = null == r ? void 0 : r.type,
     s = {
-      page: d.ZY5.GUILD_SETTINGS,
-      section: d.jXE.ANIMATED_GUILD_BANNER_UPSELL,
+      page: A.ZY5.GUILD_SETTINGS,
+      section: A.jXE.ANIMATED_GUILD_BANNER_UPSELL,
       object: "temp"
     };
   if (null != i && null != n) {
-    if ("image/gif" !== i || e.hasFeature(d.oNc.ANIMATED_BANNER)) {
-      if (!e.hasFeature(d.oNc.BANNER)) {
-        s.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
+    if ("image/gif" !== i || e.hasFeature(A.oNc.ANIMATED_BANNER)) {
+      if (!e.hasFeature(A.oNc.BANNER)) {
+        s.object = A.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
           guild: e,
           analyticsLocations: t,
           analyticsLocation: s,
@@ -104,7 +104,7 @@ function g(e, t, n, r) {
         return
       }
     } else {
-      s.object = d.qAy.GIF_CROPPING_MODAL, (0, a.c)({
+      s.object = A.qAy.GIF_CROPPING_MODAL, (0, a.c)({
         guild: e,
         analyticsLocations: t,
         analyticsLocation: s,

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  c: () => d
+  c: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   o = n(388032),
   c = n(514149);
 
-function d(e) {
+function A(e) {
   let {
     guildId: t
   } = e, n = i.useCallback(() => {

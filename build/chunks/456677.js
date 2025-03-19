@@ -14,7 +14,7 @@ function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, c = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), d = l.km(t.guildId), u = i.useMemo(() => (0, s.U5)(), []), m = (e, r) => {
+  } = e, c = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), A = l.km(t.guildId), d = i.useMemo(() => (0, s.U5)(), []), u = (e, r) => {
     var i, s;
     if (null == r) return;
     let a = t.actions.some(e => e.type === r.type),
@@ -55,12 +55,12 @@ function c(e) {
   }, g = e => async n => {
     let r = t.actions.find(t => t.type === e),
       i = null != r,
-      s = u[e],
+      s = d[e],
       a = n ? r : s;
     if (null != a && (!i || n)) {
-      let n = d[e];
-      null != n ? m(!0, await n(t, a)) : m(!0, a)
-    } else m(!1, i ? r : s)
+      let n = A[e];
+      null != n ? u(!0, await n(t, a)) : u(!0, a)
+    } else u(!1, i ? r : s)
   };
   return (0, r.jsx)(r.Fragment, {
     children: c.map(e => {
@@ -68,7 +68,7 @@ function c(e) {
       return (0, r.jsx)(o.Z, {
         guildId: t.guildId,
         triggerType: t.triggerType,
-        action: null != n ? n : u[e],
+        action: null != n ? n : d[e],
         toggled: null != n,
         onToggleAction: g(e)
       }, e)

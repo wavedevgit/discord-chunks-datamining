@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(281494),
   f = n(276444),
   x = n(520540),
-  N = n(796634),
-  b = n(197115),
+  b = n(796634),
+  N = n(197115),
   _ = n(119269),
   E = n(938736),
   j = n(981631),
@@ -134,7 +134,7 @@ let I = e => {
       isInSettings: t = !1
     } = e, s = (0, l.e7)([f.Z], () => f.Z.getRecipientStatus()), {
       referralSentUsers: u
-    } = (0, N.G)(), I = i.useMemo(() => u.map(e => new m.Z(e)), [u]), {
+    } = (0, b.G)(), I = i.useMemo(() => u.map(e => new m.Z(e)), [u]), {
       subscriberHomeVariant: y
     } = x.g.useExperiment({
       location: "ReferralProgramProgressBar"
@@ -148,13 +148,13 @@ let I = e => {
     s.forEach(e => {
       e === h.Fe.REDEEMED && R.redeemed++, e === h.Fe.CONVERTED && (R.redeemed++, R.converted++)
     });
-    let D = R.sent === N.Q,
+    let D = R.sent === b.Q,
       Z = p.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: w
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       k = i.useRef(null),
-      W = R.sent / N.Q * 100,
+      W = R.sent / b.Q * 100,
       L = (0, r.jsxs)("div", {
         className: O.referralInfoContent,
         children: [(0, r.jsx)(_.ZP, {
@@ -184,7 +184,7 @@ let I = e => {
             className: a()(O.expandedProgressBarButtonContainer, {
               [O.expandedProgressBarButtonContainerLayout]: !t
             }),
-            children: [!t && !P && (0, r.jsx)(b.Z, {
+            children: [!t && !P && (0, r.jsx)(N.Z, {
               color: o.Ttl.CUSTOM,
               buttonText: C.NW.string(C.t.Ve9Ge3),
               className: a()(O.expandedProgressBarGiftingCTA, {
@@ -220,7 +220,7 @@ let I = e => {
           })]
         })]
       }),
-      B = R.redeemed === N.Q;
+      B = R.redeemed === b.Q;
     return (0, r.jsx)(d.Gt, {
       value: w,
       children: (0, r.jsx)("div", {

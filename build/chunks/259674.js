@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Nx: () => d,
-  lW: () => u,
+  Nx: () => A,
+  lW: () => d,
   tK: () => c
 });
 var r, i = n(367907),
@@ -29,14 +29,14 @@ function o(e) {
   return e
 }
 var c = ((r = {}).DESCRIPTION = "description", r.CATEGORIES = "categories", r.TAGS = "tags", r.AGREE_TO_RULES = "agree_to_rules", r);
-let d = (e, t, n) => {
+let A = (e, t, n) => {
     s.default.track(l.rMx.USER_FLOW_TRANSITION, o({
       flow_type: l.jXE.DISCOVERY_SETUP_MODAL,
       from_step: e,
       to_step: t
     }, (0, i.hH)(n)))
   },
-  u = e => {
+  d = e => {
     let {
       articleId: t,
       guildId: n,

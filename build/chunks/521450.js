@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(981631),
   f = n(930441),
   x = n(635357),
-  N = n(388032),
-  b = n(302859),
+  b = n(388032),
+  N = n(302859),
   _ = n(802138);
 let E = () => {
   let e = p.Ex.useSetting(),
@@ -29,20 +29,20 @@ let E = () => {
   return i.useEffect(() => {
     null == n && (0, m.Y7)()
   }, [n]), (0, r.jsxs)("div", {
-    className: b.container,
+    className: N.container,
     children: [(0, r.jsx)(d.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: N.NW.string(x.Z.USIXU1)
+      children: b.NW.string(x.Z.USIXU1)
     }), (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop8, _.marginBottom20),
       value: e,
-      note: N.NW.string(x.Z["5MdB3t"]),
+      note: b.NW.string(x.Z["5MdB3t"]),
       hideBorder: !0,
       onChange: p.Ex.updateSetting,
-      children: N.NW.string(x.Z.zkEceX)
+      children: b.NW.string(x.Z.zkEceX)
     }), e ? (0, r.jsx)(d.Zbd, {
-      className: b.enableCard,
+      className: N.enableCard,
       type: d.Zbd.Types.CUSTOM,
       outline: !0,
       children: (0, r.jsxs)(o.k, {
@@ -51,7 +51,7 @@ let E = () => {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: N.NW.string(x.Z.xAVm7O)
+            children: b.NW.string(x.Z.xAVm7O)
           })
         }), (0, r.jsx)(d.P3F, {
           children: (0, r.jsx)(l.rU, {
@@ -62,23 +62,23 @@ let E = () => {
                 scrollRestoration: !1
               }
             },
-            children: N.NW.string(x.Z.cUIXFR)
+            children: b.NW.string(x.Z.cUIXFR)
           })
         }), (0, r.jsx)(d.G2e, {
           icon: d.ZSh,
-          className: b.arrow,
+          className: N.arrow,
           disableColor: !0
         })]
       })
     }) : null, (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop20, _.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
-      note: N.NW.string(x.Z["y34S4+"]),
+      note: b.NW.string(x.Z["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
         (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
-      children: N.NW.string(x.Z.irvJKS)
+      children: b.NW.string(x.Z.irvJKS)
     })]
   })
 }

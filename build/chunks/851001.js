@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(635921),
   f = n(474936),
   x = n(869783),
-  N = n(388032),
-  b = n(761675),
+  b = n(388032),
+  N = n(761675),
   _ = n(839526),
   E = n(4046),
   j = n(423741);
@@ -37,25 +37,25 @@ let C = e => {
   }, [C, v, D]), (0, r.jsx)(c.Gt, {
     value: S,
     children: (0, r.jsxs)("div", {
-      className: a()(b.container, s),
+      className: a()(N.container, s),
       children: [(0, r.jsx)(l.X6q, {
-        className: b.footerHeader,
+        className: N.footerHeader,
         variant: "display-md",
         color: "header-primary",
-        children: N.NW.string(N.t.lEw32t)
+        children: b.NW.string(b.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
         subscriptionTier: null !== (n = null == y ? void 0 : null === (t = y.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : I,
         inOfferExperience: A,
-        containerClassName: b.footerCTAContainer,
+        containerClassName: N.footerCTAContainer,
         isMarketingPageV2Enabled: !0,
         isDarkMode: O
       }), (0, r.jsx)("div", {
-        className: b.footerArtContainer,
+        className: N.footerArtContainer,
         children: (0, r.jsx)(d.Z, {
           playsInline: !0,
           preload: "auto",
           poster: E.Z,
-          className: b.footerArt,
+          className: N.footerArt,
           onEnded: () => {
             Z(!0)
           },
@@ -66,9 +66,9 @@ let C = e => {
           })
         })
       }), (0, r.jsx)("div", {
-        className: b.leftGradient
+        className: N.leftGradient
       }), (0, r.jsx)("div", {
-        className: b.rightGradient
+        className: N.rightGradient
       })]
     })
   })

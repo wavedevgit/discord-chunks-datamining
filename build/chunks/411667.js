@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -12,30 +12,30 @@ var i = n(346163),
   o = n(388032),
   c = n(11923);
 
-function d(e) {
+function A(e) {
   let t, {
       guild: n
     } = e,
     {
-      resubmittingEnableRequest: d,
-      resubmissionError: u,
-      createEnableRequest: m,
+      resubmittingEnableRequest: A,
+      resubmissionError: d,
+      createEnableRequest: u,
       resubmittedRequest: g,
-      requestRejectedNoticeText: p,
-      reapplyNoticeText: h
+      requestRejectedNoticeText: f,
+      reapplyNoticeText: m
     } = (0, i.Z)(n),
-    f = n.hasFeature(l.oNc.CREATOR_MONETIZABLE_RESTRICTED),
-    b = n.hasFeature(l.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
-  if (null != u) return (0, r.jsx)(s.Z, {
+    p = n.hasFeature(l.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    h = n.hasFeature(l.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+  if (null != d) return (0, r.jsx)(s.Z, {
     className: c.noticeContainer,
-    children: u.getAnyErrorMessage()
+    children: d.getAnyErrorMessage()
   });
-  let x = null;
-  return null != p ? x = p : g ? x = o.NW.string(o.t.MyJpJS) : null != h ? (x = h, t = o.NW.string(o.t["YKw/NT"])) : b ? x = o.NW.string(o.t.e2g9sb) : f && (x = o.NW.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(a.Z, {
+  let C = null;
+  return null != f ? C = f : g ? C = o.NW.string(o.t.MyJpJS) : null != m ? (C = m, t = o.NW.string(o.t["YKw/NT"])) : h ? C = o.NW.string(o.t.e2g9sb) : p && (C = o.NW.string(o.t.rxI9sr)), null != C ? (0, r.jsx)(a.Z, {
     className: c.noticeContainer,
-    notice: x,
+    notice: C,
     ctaLabel: t,
-    ctaLoading: d,
-    onClick: m
+    ctaLoading: A,
+    onClick: u
   }) : null
 }

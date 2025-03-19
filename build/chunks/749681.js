@@ -10,9 +10,9 @@ n.r(t), n.d(t, {
         let _ = t.selectedServersTab;
         return null != _ ? l.Z.setState({
           selectedTab: _,
-          entrypoint: null !== (n = t.entrypoint) && void 0 !== n ? n : h.Qq.UNKNOWN
+          entrypoint: null !== (n = t.entrypoint) && void 0 !== n ? n : x.Qq.UNKNOWN
         }) : l.Z.setState({
-          entrypoint: null !== (p = t.entrypoint) && void 0 !== p ? p : h.Qq.UNKNOWN
+          entrypoint: null !== (p = t.entrypoint) && void 0 !== p ? p : x.Qq.UNKNOWN
         }), (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra);
       case u.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
@@ -56,9 +56,9 @@ n.r(t), n.d(t, {
           }())
         }
         if (null != t.applicationId) {
-          if (t.section === x.GlobalDiscoveryAppsSections.STORE) {
+          if (t.section === h.GlobalDiscoveryAppsSections.STORE) {
             if (null != t.skuId) return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
-            return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, x.GlobalDiscoveryAppsSections.STORE))
+            return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, h.GlobalDiscoveryAppsSections.STORE))
           }
           return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
         }
@@ -90,5 +90,5 @@ var r = n(258971),
   d = n(836768),
   u = n(49898),
   m = n(981631),
-  x = n(979007),
-  h = n(128449)
+  h = n(979007),
+  x = n(128449)

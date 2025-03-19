@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => T
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -10,38 +10,38 @@ var r = n(200651),
   l = n(512722),
   o = n.n(l),
   c = n(392711),
-  d = n.n(c),
-  u = n(442837),
-  m = n(692547),
+  A = n.n(c),
+  d = n(442837),
+  u = n(692547),
   g = n(215569),
-  p = n(481060),
-  h = n(484614),
-  f = n(852860),
-  b = n(782568),
-  x = n(367907),
-  j = n(674180),
-  N = n(999382),
-  v = n(626135),
-  _ = n(730647),
-  y = n(584825),
-  O = n(981631),
-  C = n(388032),
-  I = n(260229);
-let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
-  S = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
-  T = E[4],
-  P = e => {
+  f = n(481060),
+  m = n(484614),
+  p = n(852860),
+  h = n(782568),
+  C = n(367907),
+  b = n(674180),
+  v = n(999382),
+  x = n(626135),
+  N = n(730647),
+  j = n(584825),
+  E = n(981631),
+  I = n(388032),
+  O = n(260229);
+let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
+  w = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
+  P = y[4],
+  B = e => {
     var t, n;
     let {
       guild: s,
       canEnable: l
-    } = e, c = (0, y.YB)(s.id), {
-      loading: u,
-      updateSubscriptionsSettings: N
-    } = (0, y.QV)(), [_, P] = i.useState(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null !== (t = null == c ? void 0 : c.store_page_primary_color) && void 0 !== t ? t : T), [Z, D] = i.useState(null == c ? void 0 : c.store_page_trailer_url), k = null == Z || null != Z.match(S), [A, W] = i.useState(null !== (n = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== n && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, M = _ !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || Z !== (null == c ? void 0 : c.store_page_trailer_url) || null != A && A !== (null == c ? void 0 : c.store_page_show_subscriber_count), G = async () => {
+    } = e, c = (0, j.YB)(s.id), {
+      loading: d,
+      updateSubscriptionsSettings: v
+    } = (0, j.QV)(), [N, B] = i.useState(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), [D, T] = i.useState(null !== (t = null == c ? void 0 : c.store_page_primary_color) && void 0 !== t ? t : P), [S, L] = i.useState(null == c ? void 0 : c.store_page_trailer_url), R = null == S || null != S.match(w), [Q, Z] = i.useState(null !== (n = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== n && n), W = i.useRef(null == c ? void 0 : c.store_page_slug).current, k = N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && D !== P || (null == c ? void 0 : c.store_page_primary_color) != null && D !== (null == c ? void 0 : c.store_page_primary_color) || S !== (null == c ? void 0 : c.store_page_trailer_url) || null != Q && Q !== (null == c ? void 0 : c.store_page_show_subscriber_count), M = async () => {
       o()(null != c, "Settings must be defined");
       let e = {};
-      _ !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = _), ((null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = w), Z !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = Z), A !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = A), !d().isEmpty(e) && (await N(s.id, e), "store_page_enabled" in e && v.default.track(O.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+      N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = N), ((null == c ? void 0 : c.store_page_primary_color) == null && D !== P || (null == c ? void 0 : c.store_page_primary_color) != null && D !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = D), S !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = S), Q !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = Q), !A().isEmpty(e) && (await v(s.id, e), "store_page_enabled" in e && x.default.track(E.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -59,172 +59,172 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         }
         return e
       }({
-        enabled: _
-      }, (0, x.hH)(s.id))))
-    }, U = O.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), B = null != Z && Z === (null == c ? void 0 : c.store_page_trailer_url), {
+        enabled: N
+      }, (0, C.hH)(s.id))))
+    }, _ = E.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(W), G = null != S && S === (null == c ? void 0 : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: F
-    } = (0, j.gX)(s.id), z = F || !k;
+    } = (0, b.gX)(s.id), U = F || !R;
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(p.vwX, {
+      children: [(0, r.jsx)(f.vwX, {
         tag: "h1",
-        children: C.NW.string(C.t.N6Tg9P)
-      }), (0, r.jsx)(p.R94, {
-        type: p.R94.Types.DESCRIPTION,
-        children: C.NW.string(C.t["uU/69/"])
-      }), (0, r.jsx)(p.j7V, {
-        className: I.enableSwitch,
-        value: _,
-        disabled: F || !_ && !l,
-        tooltipNote: _ || l ? void 0 : C.NW.string(C.t.mIgfEh),
+        children: I.NW.string(I.t.N6Tg9P)
+      }), (0, r.jsx)(f.R94, {
+        type: f.R94.Types.DESCRIPTION,
+        children: I.NW.string(I.t["uU/69/"])
+      }), (0, r.jsx)(f.j7V, {
+        className: O.enableSwitch,
+        value: N,
+        disabled: F || !N && !l,
+        tooltipNote: N || l ? void 0 : I.NW.string(I.t.mIgfEh),
         hideBorder: !0,
-        onChange: e => P(e),
-        children: (0, r.jsx)(p.Text, {
+        onChange: e => B(e),
+        children: (0, r.jsx)(f.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: C.NW.string(C.t.lwvl1t)
+          children: I.NW.string(I.t.lwvl1t)
         })
-      }), (0, r.jsxs)(p.xJW, {
-        title: C.NW.string(C.t.N46WOj),
+      }), (0, r.jsxs)(f.xJW, {
+        title: I.NW.string(I.t.N46WOj),
         disabled: F,
-        children: [(0, r.jsx)(h.Z, {
-          value: U,
+        children: [(0, r.jsx)(m.Z, {
+          value: _,
           className: a()({
-            [I.disabled]: F
+            [O.disabled]: F
           })
-        }), (0, r.jsx)(p.zxk, {
-          onClick: () => (0, b.Z)(U),
-          className: I.openPageButton,
+        }), (0, r.jsx)(f.zxk, {
+          onClick: () => (0, h.Z)(_),
+          className: O.openPageButton,
           disabled: F,
-          children: C.NW.string(C.t.CaOYqa)
+          children: I.NW.string(I.t.CaOYqa)
         })]
-      }), (0, r.jsx)(p.$i$, {
-        className: I.divider
-      }), (0, r.jsxs)(p.xJW, {
-        title: C.NW.string(C.t.W39uIC),
+      }), (0, r.jsx)(f.$i$, {
+        className: O.divider
+      }), (0, r.jsxs)(f.xJW, {
+        title: I.NW.string(I.t.W39uIC),
         disabled: F,
-        children: [(0, r.jsx)(p.R94, {
+        children: [(0, r.jsx)(f.R94, {
           disabled: F,
-          children: C.NW.string(C.t.B6XtEx)
+          children: I.NW.string(I.t.B6XtEx)
         }), (0, r.jsxs)("div", {
-          className: I.accentColorContainer,
-          children: [(0, r.jsx)(p.zxk, {
+          className: O.accentColorContainer,
+          children: [(0, r.jsx)(f.zxk, {
             onClick: () => null,
-            color: p.zxk.Colors.CUSTOM,
+            color: f.zxk.Colors.CUSTOM,
             style: {
-              backgroundColor: "#".concat(w.toString(16).padStart(6, "0"))
+              backgroundColor: "#".concat(D.toString(16).padStart(6, "0"))
             },
-            className: I.buttonPreview,
+            className: O.buttonPreview,
             disabled: F,
-            children: C.NW.string(C.t.l6iM39)
-          }), (0, r.jsx)(p.zH8, {
-            colors: E,
+            children: I.NW.string(I.t.l6iM39)
+          }), (0, r.jsx)(f.zH8, {
+            colors: y,
             customColor: null,
-            defaultColor: T,
-            value: w,
-            onChange: e => R(e),
+            defaultColor: P,
+            value: D,
+            onChange: e => T(e),
             renderDefaultButton: () => null,
             renderCustomButton: () => null,
-            colorContainerClassName: I.hideColorButtons,
+            colorContainerClassName: O.hideColorButtons,
             disabled: F
           })]
         })]
-      }), (0, r.jsx)(p.$i$, {
-        className: I.divider
-      }), (0, r.jsxs)(p.xJW, {
-        title: C.NW.string(C.t.k2yRvb),
+      }), (0, r.jsx)(f.$i$, {
+        className: O.divider
+      }), (0, r.jsxs)(f.xJW, {
+        title: I.NW.string(I.t.k2yRvb),
         disabled: F,
-        children: [(0, r.jsx)(p.R94, {
+        children: [(0, r.jsx)(f.R94, {
           disabled: F,
-          children: C.NW.string(C.t["amd99/"])
-        }), (0, r.jsx)(p.oil, {
-          value: null != Z ? Z : void 0,
-          onChange: e => D("" === e ? null : e),
-          error: k ? null : C.NW.string(C.t["1kL79f"]),
-          placeholder: C.NW.string(C.t["+I4gdX"]),
-          className: I.trailerInputWrapper,
-          inputClassName: a()(I.trailerInput, {
-            [I.error]: !k,
-            [I.trailerInputWithCheckmark]: B || !k
+          children: I.NW.string(I.t["amd99/"])
+        }), (0, r.jsx)(f.oil, {
+          value: null != S ? S : void 0,
+          onChange: e => L("" === e ? null : e),
+          error: R ? null : I.NW.string(I.t["1kL79f"]),
+          placeholder: I.NW.string(I.t["+I4gdX"]),
+          className: O.trailerInputWrapper,
+          inputClassName: a()(O.trailerInput, {
+            [O.error]: !R,
+            [O.trailerInputWithCheckmark]: G || !R
           }),
-          prefixElement: k && B && (0, r.jsx)(p.owK, {
+          prefixElement: R && G && (0, r.jsx)(f.owK, {
             size: "md",
-            color: m.Z.unsafe_rawColors.BRAND_500.css,
-            secondaryColor: m.Z.unsafe_rawColors.WHITE_500.css,
-            className: I.inputCheckmark
+            color: u.Z.unsafe_rawColors.BRAND_500.css,
+            secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css,
+            className: O.inputCheckmark
           }),
           disabled: F
         })]
-      }), (0, r.jsx)(p.$i$, {
-        className: I.divider
-      }), (0, r.jsxs)(p.xJW, {
-        title: C.NW.string(C.t.AU2HU1),
+      }), (0, r.jsx)(f.$i$, {
+        className: O.divider
+      }), (0, r.jsxs)(f.xJW, {
+        title: I.NW.string(I.t.AU2HU1),
         disabled: F,
-        children: [(0, r.jsx)(p.R94, {
+        children: [(0, r.jsx)(f.R94, {
           disabled: F,
-          children: C.NW.string(C.t.iWBt3d)
-        }), (0, r.jsx)(p.j7V, {
-          className: I.premiumMemberCountSwitchContainer,
-          value: A,
+          children: I.NW.string(I.t.iWBt3d)
+        }), (0, r.jsx)(f.j7V, {
+          className: O.premiumMemberCountSwitchContainer,
+          value: Q,
           hideBorder: !0,
-          onChange: e => W(e),
+          onChange: e => Z(e),
           disabled: F,
           children: (0, r.jsxs)("div", {
-            className: I.iconSwitchLabel,
+            className: O.iconSwitchLabel,
             children: [(0, r.jsx)("div", {
-              className: I.iconContainer,
-              children: (0, r.jsx)(p.tBG, {
+              className: O.iconContainer,
+              children: (0, r.jsx)(f.tBG, {
                 size: "custom",
                 color: "currentColor",
                 width: 28,
                 height: 28,
-                className: I.premiumMemberCountIcon
+                className: O.premiumMemberCountIcon
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(p.Text, {
+              children: [(0, r.jsx)(f.Text, {
                 variant: "text-md/medium",
                 color: "header-primary",
-                children: C.NW.string(C.t.hJsAPj)
-              }), (0, r.jsx)(p.Text, {
+                children: I.NW.string(I.t.hJsAPj)
+              }), (0, r.jsx)(f.Text, {
                 variant: "text-sm/normal",
                 color: "header-secondary",
-                children: C.NW.string(C.t.hn65ER)
+                children: I.NW.string(I.t.hn65ER)
               })]
             })]
           })
         })]
       }), (0, r.jsx)(g.W, {
         component: "div",
-        className: I.contentRegion,
-        children: M && (0, r.jsx)(p.oXn, {
-          children: (0, r.jsx)(f.Z, {
-            submitting: u,
+        className: O.contentRegion,
+        children: k && (0, r.jsx)(f.oXn, {
+          children: (0, r.jsx)(p.Z, {
+            submitting: d,
             onReset: () => {
               var e, t;
-              P(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), R(null !== (e = null == c ? void 0 : c.store_page_primary_color) && void 0 !== e ? e : T), D(null == c ? void 0 : c.store_page_trailer_url), W(null !== (t = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== t && t)
+              B(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), T(null !== (e = null == c ? void 0 : c.store_page_primary_color) && void 0 !== e ? e : P), L(null == c ? void 0 : c.store_page_trailer_url), Z(null !== (t = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== t && t)
             },
-            onSave: G,
-            disabled: z
+            onSave: M,
+            disabled: U
           })
         })
       })]
     })
   };
 
-function w() {
-  let e = (0, u.e7)([N.Z], () => N.Z.getGuild()),
-    t = (0, _.f)(),
-    n = (0, y.qi)(null == e ? void 0 : e.id).some(e => e.published);
-  return null != e && t ? (0, r.jsx)(P, {
+function D() {
+  let e = (0, d.e7)([v.Z], () => v.Z.getGuild()),
+    t = (0, N.f)(),
+    n = (0, j.qi)(null == e ? void 0 : e.id).some(e => e.published);
+  return null != e && t ? (0, r.jsx)(B, {
     guild: e,
     canEnable: n
-  }) : (0, r.jsx)(p.$jN, {})
+  }) : (0, r.jsx)(f.$jN, {})
 }
 
-function R() {
-  let e = (0, u.e7)([N.Z], () => N.Z.getGuild());
-  return (0, r.jsx)(_.l, {
+function T() {
+  let e = (0, d.e7)([v.Z], () => v.Z.getGuild());
+  return (0, r.jsx)(N.l, {
     guildId: null == e ? void 0 : e.id,
     refetchOnMount: !0,
-    children: (0, r.jsx)(w, {})
+    children: (0, r.jsx)(D, {})
   })
 }

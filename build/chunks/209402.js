@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651),
   i = n(192379),
@@ -10,32 +10,32 @@ var r = n(200651),
   l = n(699553),
   o = n(314852),
   c = n(434404),
-  d = n(999382);
+  A = n(999382);
 
-function u() {
-  let e = (0, s.e7)([d.Z], () => d.Z.getGuild()),
+function d() {
+  let e = (0, s.e7)([A.Z], () => A.Z.getGuild()),
     t = null == e ? void 0 : e.id,
-    n = (0, s.e7)([d.Z], () => d.Z.getProfileError()),
-    u = (0, s.e7)([d.Z], () => d.Z.getGuildProfile()),
-    m = (0, s.e7)([o.Z], () => o.Z.getIsUpdating(t)),
+    n = (0, s.e7)([A.Z], () => A.Z.getProfileError()),
+    d = (0, s.e7)([A.Z], () => A.Z.getGuildProfile()),
+    u = (0, s.e7)([o.Z], () => o.Z.getIsUpdating(t)),
     g = i.useMemo(() => null == n ? void 0 : n.getAnyErrorMessage(), [n]),
-    p = i.useCallback(() => {
-      if (null == e || null == u) return;
+    f = i.useCallback(() => {
+      if (null == e || null == d) return;
       let t = {
-        tag: u.tag,
-        badge: u.badge,
-        badgeColorPrimary: u.badgeColorPrimary,
-        badgeColorSecondary: u.badgeColorSecondary
+        tag: d.tag,
+        badge: d.badge,
+        badgeColorPrimary: d.badgeColorPrimary,
+        badgeColorSecondary: d.badgeColorSecondary
       };
       (0, l.pV)(e.id, t)
-    }, [e, u]),
-    h = i.useCallback(() => {
+    }, [e, d]),
+    m = i.useCallback(() => {
       null != t && c.Z.init(t)
     }, [t]);
   return (0, r.jsx)(a.Z, {
-    submitting: m,
+    submitting: u,
     errorMessage: g,
-    onSave: p,
-    onReset: h
+    onSave: f,
+    onReset: m
   })
 }

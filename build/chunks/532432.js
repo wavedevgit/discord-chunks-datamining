@@ -18,8 +18,8 @@ var i = n(120356),
   h = n(921944),
   f = n(486324),
   x = n(388032),
-  N = n(50719);
-let b = [{
+  b = n(50719);
+let N = [{
   name: "gif",
   extensions: ["gif"]
 }];
@@ -48,7 +48,7 @@ function _(e) {
     className: C,
     title: _,
     titleIcon: D ? (0, r.jsx)(m.Z, {
-      className: N.newBadge
+      className: b.newBadge
     }) : void 0,
     description: y ? x.NW.format(x.t["+CyJu7"], {
       recentAvatarsLimit: w
@@ -57,18 +57,18 @@ function _(e) {
     disabled: O,
     forcedDivider: S,
     children: (0, r.jsxs)("div", {
-      className: N.buttonsContainer,
+      className: b.buttonsContainer,
       children: [(0, r.jsx)(I, {
         className: s()({
-          [N.buttonHighlighted]: T
+          [b.buttonHighlighted]: T
         }),
         size: l.zxk.Sizes.SMALL,
         onClick: () => {
-          R(h.L.TAKE_ACTION), (0, g.$r)(f.pC.AVATAR, j, v, v ? b : void 0)
+          R(h.L.TAKE_ACTION), (0, g.$r)(f.pC.AVATAR, j, v, v ? N : void 0)
         },
         children: null != E ? E : x.NW.string(x.t["4OynCA"])
       }), t && (0, r.jsx)(l.zxk, {
-        className: N.removeButton,
+        className: b.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,

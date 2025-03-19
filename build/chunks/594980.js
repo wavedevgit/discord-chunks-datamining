@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  c: () => f
+  c: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -10,45 +10,45 @@ var r = n(200651),
   l = n(884858),
   o = n(813197),
   c = n(434404),
-  d = n(70086),
-  u = n(949640),
-  m = n(981631),
+  A = n(70086),
+  d = n(949640),
+  u = n(981631),
   g = n(30513),
-  p = n(200299),
-  h = n(388032);
+  f = n(200299),
+  m = n(388032);
 
-function f(e) {
+function p(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: f
+    buttonClassName: p
   } = e, {
-    analyticsLocations: b
-  } = (0, a.ZP)(), x = t.hasFeature(m.oNc.INVITE_SPLASH), j = n && x, N = i.useCallback(e => {
+    analyticsLocations: h
+  } = (0, a.ZP)(), C = t.hasFeature(u.oNc.INVITE_SPLASH), b = n && C, v = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
-  }, []), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
+  }, []), x = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, d.E6)({
       guild: t,
-      analyticsLocations: b,
-      analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
-      analyticsObject: m.qAy.BUTTON_CTA,
+      analyticsLocations: h,
+      analyticsSection: u.jXE.GUILD_INVITE_BACKGROUND,
+      analyticsObject: u.qAy.BUTTON_CTA,
       perks: (0, g.o9)()
     })
-  }, [b, t]);
-  return x ? (0, r.jsxs)(s.zxk, {
-    disabled: !j,
+  }, [h, t]);
+  return C ? (0, r.jsxs)(s.zxk, {
+    disabled: !b,
     color: s.Ttl.BRAND,
-    className: f,
-    children: [h.NW.string(h.t.yG2pUl), (0, r.jsx)(o.ZP, {
-      disabled: !j,
-      onChange: N,
-      maxFileSizeBytes: p.B,
-      onFileSizeError: () => (0, l.Z)(p.B)
+    className: p,
+    children: [m.NW.string(m.t.yG2pUl), (0, r.jsx)(o.ZP, {
+      disabled: !b,
+      onChange: v,
+      maxFileSizeBytes: f.B,
+      onFileSizeError: () => (0, l.Z)(f.B)
     })]
-  }) : (0, r.jsx)(d.P, {
-    className: f,
-    onClick: v
+  }) : (0, r.jsx)(A.P, {
+    className: p,
+    onClick: x
   })
 }

@@ -11,27 +11,27 @@ var i = n(120356),
   l = n(100527),
   o = n(906732),
   c = n(678558),
-  d = n(388032),
-  u = n(92386);
-let m = e => {
+  A = n(388032),
+  d = n(92386);
+let u = e => {
   let {
     guild: t,
     analyticsLocation: n,
     className: i,
     buttonProps: s = {
       color: a.Ttl.BRAND_INVERTED,
-      text: d.NW.string(d.t.oqweNz)
+      text: A.NW.string(A.t.oqweNz)
     }
   } = e, {
     color: l,
     text: o
-  } = s, u = t.premiumTier + 1;
+  } = s, d = t.premiumTier + 1;
   return (0, r.jsx)(c.Z, {
     color: l,
     analyticsLocation: n,
     guild: t,
     buttonText: o,
-    targetBoostedGuildTier: u,
+    targetBoostedGuildTier: d,
     className: i
   })
 };
@@ -41,41 +41,41 @@ function g(e) {
     header: t,
     text: i,
     analyticsLocation: c,
-    guild: d,
+    guild: A,
     className: g,
-    textColor: p,
-    headerColor: h,
-    buttonProps: f
+    textColor: f,
+    headerColor: m,
+    buttonProps: p
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: h
   } = (0, o.ZP)(l.Z.GUILD_BOOSTING_UPSELL_BANNER);
   return (0, r.jsx)(o.Gt, {
-    value: b,
+    value: h,
     children: (0, r.jsxs)("div", {
-      className: s()(u.banner, g),
+      className: s()(d.banner, g),
       children: [(0, r.jsx)("img", {
-        className: u.__invalid_headerGraphic,
+        className: d.__invalid_headerGraphic,
         alt: "",
         src: n(322393)
       }), (0, r.jsxs)("div", {
-        className: u.content,
+        className: d.content,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-lg/semibold",
-          color: null != h ? h : "always-white",
-          className: u.header,
+          color: null != m ? m : "always-white",
+          className: d.header,
           children: t
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: null != p ? p : "always-white",
+          color: null != f ? f : "always-white",
           children: i
         })]
       }), (0, r.jsx)("div", {
-        className: u.ctaContainer,
-        children: (0, r.jsx)(m, {
-          guild: d,
+        className: d.ctaContainer,
+        children: (0, r.jsx)(u, {
+          guild: A,
           analyticsLocation: c,
-          className: u.button,
-          buttonProps: f
+          className: d.button,
+          buttonProps: p
         })
       })]
     })

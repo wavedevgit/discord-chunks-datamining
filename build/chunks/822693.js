@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  m: () => j
+  m: () => b
 }), n(47120), n(733860);
 var r = n(200651),
   i = n(192379),
@@ -10,25 +10,25 @@ var r = n(200651),
   l = n(481060),
   o = n(933557),
   c = n(984933),
-  d = n(496675),
-  u = n(699516),
-  m = n(594174),
+  A = n(496675),
+  d = n(699516),
+  u = n(594174),
   g = n(434404),
-  p = n(800223),
-  h = n(981631),
-  f = n(388032);
-let b = "NO_CHANNEL",
-  x = s.$e(h.Plq.VIEW_CHANNEL, h.Plq.CREATE_INSTANT_INVITE);
+  f = n(800223),
+  m = n(981631),
+  p = n(388032);
+let h = "NO_CHANNEL",
+  C = s.$e(m.Plq.VIEW_CHANNEL, m.Plq.CREATE_INSTANT_INVITE);
 
-function j(e) {
+function b(e) {
   let {
     guildId: t,
     widgetEnabled: n,
     widgetChannelId: s,
-    className: h,
-    enableLocalUpdate: j
-  } = e, N = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), v = i.useMemo(() => {
-    let e = [...N[c.sH], ...N[c.Zb]].filter(e => {
+    className: m,
+    enableLocalUpdate: b
+  } = e, v = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), x = i.useMemo(() => {
+    let e = [...v[c.sH], ...v[c.Zb]].filter(e => {
       let {
         channel: n
       } = e;
@@ -37,27 +37,27 @@ function j(e) {
       let {
         channel: t
       } = e;
-      return t.id === s || d.Z.can(x, t)
+      return t.id === s || A.Z.can(C, t)
     }).map(e => {
       let {
         channel: t
       } = e;
       return {
         value: t.id,
-        label: (0, o.F6)(t, m.default, u.Z, !0)
+        label: (0, o.F6)(t, u.default, d.Z, !0)
       }
     });
     return e.unshift({
-      value: b,
-      label: f.NW.string(f.t.u197b2)
+      value: h,
+      label: p.NW.string(p.t.u197b2)
     }), e
-  }, [N, t, s]), _ = i.useCallback(e => {
-    j ? (0, p.c)(t, n, e !== b ? e : null) : g.Z.updateEmbed(t, n, e !== b ? e : null)
-  }, [t, n, j]);
+  }, [v, t, s]), N = i.useCallback(e => {
+    b ? (0, f.c)(t, n, e !== h ? e : null) : g.Z.updateEmbed(t, n, e !== h ? e : null)
+  }, [t, n, b]);
   return (0, r.jsx)(l.q4e, {
-    options: v,
+    options: x,
     value: s,
-    onChange: _,
-    className: h
+    onChange: N,
+    className: m
   })
 }

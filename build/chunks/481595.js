@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => B
+  Z: () => G
 }), n(789020);
 var r = n(200651),
   i = n(192379),
@@ -30,58 +30,16 @@ var r = n(200651),
   A = n(4912),
   C = n(630388),
   R = n(669079),
-  P = n(937615),
-  w = n(987209),
-  D = n(563132),
-  L = n(45572),
-  x = n(119226),
+  P = n(987209),
+  w = n(563132),
+  D = n(45572),
+  L = n(119226),
+  x = n(982204),
   M = n(981631),
   k = n(388032),
   j = n(664279);
 
 function U(e) {
-  let {
-    sku: t,
-    skuPricePreview: n
-  } = e;
-  a()(null != n.amount, "SKU must have a price set.");
-  let i = n.amount - n.tax,
-    o = (0, m.ed)("SKUInvoice"),
-    s = t.productLine === M.POd.COLLECTIBLES && o;
-  return !n.tax_inclusive && n.tax > 0 ? (0, r.jsxs)(b.PO, {
-    className: j.invoice,
-    children: [s ? (0, r.jsx)(E.C, {
-      sku: t,
-      value: (0, P.T4)(i, n.currency),
-      className: j.subscriptionCostRow
-    }) : (0, r.jsx)(b.R$, {
-      label: t.name,
-      value: (0, P.T4)(i, n.currency),
-      className: j.subscriptionCostRow
-    }), (0, r.jsx)(b.R$, {
-      label: k.NW.string(k.t["/I8zmJ"]),
-      value: (0, P.T4)(n.tax, n.currency),
-      className: j.subscriptionCostRow
-    }), (0, r.jsx)(b.KU, {}), (0, r.jsx)(b.Ji, {
-      label: k.NW.format(k.t["+B5KfH"], {}),
-      value: (0, P.T4)(n.amount, n.currency),
-      className: j.subscriptionCostRow
-    })]
-  }) : (0, r.jsx)(b.PO, {
-    className: j.invoice,
-    children: s ? (0, r.jsx)(E.C, {
-      sku: t,
-      value: (0, P.T4)(n.amount, n.currency),
-      className: j.subscriptionCostRow
-    }) : (0, r.jsx)(b.R$, {
-      label: t.name,
-      value: (0, P.T4)(n.amount, n.currency),
-      className: j.subscriptionCostRow
-    })
-  })
-}
-
-function G(e) {
   let {
     application: t,
     sku: n,
@@ -99,14 +57,14 @@ function G(e) {
   })
 }
 
-function B(e) {
+function G(e) {
   let {
     hasLegalTermsFlash: t,
     legalTermsNodeRef: n,
     onPaymentSourceChange: o,
     handlePaymentSourceAdd: g
   } = e, {
-    application: P,
+    application: G,
     purchaseState: B,
     paymentSources: F,
     paymentSourceId: V,
@@ -119,10 +77,10 @@ function B(e) {
     purchasePreviewError: q,
     devShelfFetchState: Q,
     setPurchasePreviewError: X
-  } = (0, D.JL)(), {
+  } = (0, w.JL)(), {
     isGift: J,
     giftRecipient: $
-  } = (0, w.wD)(), ee = J && (0, R.pO)($), {
+  } = (0, P.wD)(), ee = J && (0, R.pO)($), {
     defaultPaymentSourceId: et,
     hasFetchedPaymentSources: en
   } = (0, l.cj)([S.Z], () => ({
@@ -134,13 +92,13 @@ function B(e) {
     ei = W[Y],
     eo = null != V ? V : T.c,
     ea = null != ei ? ei[eo] : null;
-  a()(null != er, "SKU must exist and be fetched."), a()(null != P, "Application must exist.");
-  let es = (0, l.e7)([h.Z, N.Z], () => N.Z.inTestModeForApplication(P.id) || h.Z.inDevModeForApplication(P.id), [P.id]),
+  a()(null != er, "SKU must exist and be fetched."), a()(null != G, "Application must exist.");
+  let es = (0, l.e7)([h.Z, N.Z], () => N.Z.inTestModeForApplication(G.id) || h.Z.inDevModeForApplication(G.id), [G.id]),
     el = (0, l.e7)([O.Z], () => O.Z.enabled),
     ec = s.M.EEA_COUNTRIES.has(I.Z.ipCountryCodeWithFallback),
-    eu = B === L.A.PURCHASING || B === L.A.COMPLETED,
+    eu = B === D.A.PURCHASING || B === D.A.COMPLETED,
     ed = null != V ? F[V].type : null,
-    ef = (0, m.ed)("SKUInvoice"),
+    ef = (0, m.ed)("SKUInvoicePreview"),
     e_ = er.productLine === M.POd.COLLECTIBLES && ef;
   return i.useEffect(() => {
     en && V === et && et !== T.c && null == ea && (0, u.x2)(er.applicationId, er.id, et, {
@@ -158,24 +116,24 @@ function B(e) {
       color: f.Z.Colors.WARNING,
       className: j.errorBlock,
       children: k.NW.string(k.t.OvMyMT)
-    }, "TEST_MODE") : null, (0, C.yE)(P.flags, M.udG.EMBEDDED) && Q === h.O.ERROR ? (0, r.jsx)(f.Z, {
+    }, "TEST_MODE") : null, (0, C.yE)(G.flags, M.udG.EMBEDDED) && Q === h.O.ERROR ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(A.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
       className: j.errorBlock,
       children: k.NW.string(k.t.tAmECg)
-    }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(G, {
-      application: P,
+    }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(U, {
+      application: G,
       sku: er,
       isEmbeddedIAP: K
-    }), ee && (0, r.jsx)(x.Z, {
+    }), ee && (0, r.jsx)(L.Z, {
       sku: er
     }), null != $ ? (0, r.jsx)(y.s, {
       giftRecipient: $
     }) : null, (0, r.jsx)(c.vwX, {
       tag: c.RB0.H5,
       children: J ? k.NW.string(k.t.PEjaCw) : k.NW.string(k.t.sail9P)
-    }), null != ea ? (0, r.jsx)(U, {
+    }), null != ea ? (0, r.jsx)(x.B, {
       sku: er,
       skuPricePreview: ea
     }) : null == q ? (0, r.jsx)(c.$jN, {

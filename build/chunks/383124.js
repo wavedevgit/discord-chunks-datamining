@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -10,61 +10,61 @@ var r = n(200651),
   l = n(481060),
   o = n(442837),
   c = n(210753),
-  d = n(77498),
-  u = n(488558);
+  A = n(77498),
+  d = n(488558);
 
-function m(e) {
+function u(e) {
   let {
     applicationId: t,
     selected: n,
     onClick: s,
-    disabled: m
+    disabled: u
   } = e, {
     isFetching: g,
-    coverImageUrl: p
+    coverImageUrl: f
   } = (0, c.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), h = (0, o.e7)([d.Z], () => {
+  }), m = (0, o.e7)([A.Z], () => {
     var e, n;
-    return null !== (n = null === (e = d.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
-  }), f = i.useCallback(() => {
+    return null !== (n = null === (e = A.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
+  }), p = i.useCallback(() => {
     null == s || s(t)
-  }, [t, s]), b = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
-    className: u.gameUnknownImage,
+  }, [t, s]), h = i.useMemo(() => g ? null : null == f ? (0, r.jsx)("div", {
+    className: d.gameUnknownImage,
     children: (0, r.jsx)(l.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
-    className: u.gameImage,
-    alt: h,
-    src: p
-  }), [p, g, h]);
+    className: d.gameImage,
+    alt: m,
+    src: f
+  }), [f, g, m]);
   return (0, r.jsxs)("div", {
-    className: a()(u.selectedGame, {
-      [u.dimmed]: !n,
-      [u.disabled]: m
+    className: a()(d.selectedGame, {
+      [d.dimmed]: !n,
+      [d.disabled]: u
     }),
     children: [(0, r.jsxs)(l.P3F, {
-      "aria-disabled": m,
-      tabIndex: m ? -1 : 0,
-      onClick: m ? void 0 : f,
-      className: a()(u.gameImageBackground, {
-        [u.gameImageLoading]: g,
-        [u.disabled]: m
+      "aria-disabled": u,
+      tabIndex: u ? -1 : 0,
+      onClick: u ? void 0 : p,
+      className: a()(d.gameImageBackground, {
+        [d.gameImageLoading]: g,
+        [d.disabled]: u
       }),
       children: [n && (0, r.jsx)("div", {
-        className: u.checkBackground,
+        className: d.checkBackground,
         children: (0, r.jsx)(l.XZJ, {
           displayOnly: !0,
           value: n
         })
-      }), b]
+      }), h]
     }), (0, r.jsx)(l.Text, {
-      className: u.gameName,
+      className: d.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
-      children: h
+      children: m
     })]
   })
 }

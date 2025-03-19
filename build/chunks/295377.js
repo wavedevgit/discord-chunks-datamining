@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(358085),
   f = n(88658),
   x = n(660243),
-  N = n(981631),
-  b = n(703115),
+  b = n(981631),
+  N = n(703115),
   _ = n(526761),
   E = n(329720),
   j = n(388032),
@@ -59,10 +59,10 @@ function v(e, t) {
 function S(e) {
   let {
     guildId: t
-  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), x = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), S = (0, s.Ie)(null != t ? t : N.lds), T = i.useCallback(e => {
+  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), x = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), S = (0, s.Ie)(null != t ? t : b.lds), T = i.useCallback(e => {
     let n = (0, f._o)();
-    e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), p.default.track(N.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: b.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
+    e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), p.default.track(b.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+      action: N.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: _.f4.USER_SETTINGS_ACTIVITY_PRIVACY,
       guild_id: t
     })
@@ -242,8 +242,8 @@ function P() {
     children: (0, r.jsx)(o.ToO, {
       type: o.ToO.Types.PRIMARY,
       body: j.NW.format(j.t.xvCsx8, {
-        termsLink: N.EYA.TERMS,
-        privacyLink: N.EYA.PRIVACY
+        termsLink: b.EYA.TERMS,
+        privacyLink: b.EYA.PRIVACY
       })
     })
   })

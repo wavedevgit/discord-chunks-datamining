@@ -25,10 +25,10 @@ function y(e) {
     shouldRedactExplicitContent: m,
     gifAutoPlay: j,
     getGifFavButton: g,
-    getOnMediaItemContextMenu: h
+    getOnMediaItemContextMenu: v
   } = (0, s.c)();
   if (null == t || null == r) return null;
-  let v = e.items.map(e => {
+  let h = e.items.map(e => {
       var t, r;
       return t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ function y(e) {
     {
       srcToOnClickOverride: P,
       srcToHandlePreloadImage: x
-    } = v.length > 1 ? (0, d.J)(v, {
+    } = h.length > 1 ? (0, d.J)(h, {
       shouldHideMediaOptions: y,
       shouldRedactExplicitContent: m
     }, "Media Mosaic") : {
@@ -79,7 +79,7 @@ function y(e) {
   }
   let S = e.items.map((e, r) => {
     let n = e.media,
-      l = null == h ? void 0 : h(n),
+      l = null == v ? void 0 : v(n),
       i = {
         message: t,
         item: {

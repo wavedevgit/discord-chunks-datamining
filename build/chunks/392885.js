@@ -1,53 +1,53 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 });
 var r, i, s, a = n(442837),
   l = n(570140),
   o = n(999382),
   c = n(740903),
-  d = n(981631);
-let u = c.u.OVERVIEW,
-  m = null;
+  A = n(981631);
+let d = c.u.OVERVIEW,
+  u = null;
 
 function g(e) {
   let {
     subsection: t
   } = e;
   switch (t) {
-    case d.KsC.SAFETY_AUTOMOD:
-      u = c.u.AUTOMOD;
+    case A.KsC.SAFETY_AUTOMOD:
+      d = c.u.AUTOMOD;
       break;
-    case d.KsC.SAFETY_DM_AND_SPAM_PROTECTION:
-      u = c.u.DM_AND_SPAM_PROTECTION;
+    case A.KsC.SAFETY_DM_AND_SPAM_PROTECTION:
+      d = c.u.DM_AND_SPAM_PROTECTION;
       break;
-    case d.KsC.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
-      u = c.u.CAPTCHA_AND_RAID_PROTECTION;
+    case A.KsC.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
+      d = c.u.CAPTCHA_AND_RAID_PROTECTION;
       break;
-    case d.KsC.SAFETY_PERMISSIONS:
-      u = c.u.PERMISSIONS;
+    case A.KsC.SAFETY_PERMISSIONS:
+      d = c.u.PERMISSIONS;
       break;
-    case d.KsC.SAFETY_OVERVIEW:
+    case A.KsC.SAFETY_OVERVIEW:
     default:
-      u = c.u.OVERVIEW
+      d = c.u.OVERVIEW
   }
 }
-class p extends(s = a.ZP.Store) {
+class f extends(s = a.ZP.Store) {
   getCurrentPage() {
-    return u
+    return d
   }
 }
-i = "GuildSettingsSafetyStore", (r = "displayName") in p ? Object.defineProperty(p, r, {
+i = "GuildSettingsSafetyStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : p[r] = i;
-let h = new p(l.Z, {
+}) : f[r] = i;
+let m = new f(l.Z, {
   GUILD_SETTINGS_INIT: function() {
-    if (o.Z.getGuildId() === m) return !1;
-    m = o.Z.getGuildId()
+    if (o.Z.getGuildId() === u) return !1;
+    u = o.Z.getGuildId()
   },
   GUILD_SETTINGS_SET_SECTION: g,
   GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,
@@ -55,6 +55,6 @@ let h = new p(l.Z, {
     let {
       page: t
     } = e;
-    u = t
+    d = t
   }
 })

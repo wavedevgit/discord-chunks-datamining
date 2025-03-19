@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,12 +10,12 @@ var r = n(200651),
   l = n(481060),
   o = n(236413),
   c = n(85960),
-  d = n(65912),
-  u = n(564488),
-  m = n(388032),
+  A = n(65912),
+  d = n(564488),
+  u = n(388032),
   g = n(591024);
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,53 +47,53 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function p(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, f = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(f), [x, j] = i.useState(!1), {
-    editingRule: N,
-    createNewEditingRule: v
-  } = (0, d.V)(), {
-    getDefaultRuleName: _
-  } = c.I6[n], y = !(0, o.Vb)(N) && (null == N ? void 0 : N.triggerType) === n, [O, C] = i.useState(y ? N : b), I = (0, l.q_F)({
-    opacity: +!y,
-    pointerEvents: y ? "none" : "all",
-    config: h(p({}, s.config.stiff), {
+  } = e, p = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [h] = i.useState(p), [C, b] = i.useState(!1), {
+    editingRule: v,
+    createNewEditingRule: x
+  } = (0, A.V)(), {
+    getDefaultRuleName: N
+  } = c.I6[n], j = !(0, o.Vb)(v) && (null == v ? void 0 : v.triggerType) === n, [E, I] = i.useState(j ? v : h), O = (0, l.q_F)({
+    opacity: +!j,
+    pointerEvents: j ? "none" : "all",
+    config: m(f({}, s.config.stiff), {
       clamp: !0
     })
-  }), E = (0, l.q_F)({
-    opacity: +!!y,
-    pointerEvents: y ? "all" : "none",
-    config: h(p({}, s.config.stiff), {
+  }), y = (0, l.q_F)({
+    opacity: +!!j,
+    pointerEvents: j ? "all" : "none",
+    config: m(f({}, s.config.stiff), {
       clamp: !0
     }),
     onStart: () => {
-      C(y ? N : b)
+      I(j ? v : h)
     },
     onRest: () => {
-      C(y ? N : b), j(y)
+      I(j ? v : h), b(j)
     }
   });
-  return null == N || y ? (0, r.jsxs)("div", {
+  return null == v || j ? (0, r.jsxs)("div", {
     className: g.mainRuleContainer,
     style: {
-      height: y ? "auto" : "60px"
+      height: j ? "auto" : "60px"
     },
     children: [(0, r.jsx)(s.animated.div, {
       className: g.animatedRuleCardContainer,
-      style: E,
-      children: (0, r.jsx)(u.Z, {
-        rule: O,
-        persistEdit: x
+      style: y,
+      children: (0, r.jsx)(d.Z, {
+        rule: E,
+        persistEdit: C
       })
     }), (0, r.jsx)(s.animated.div, {
       className: g.animatedNewRuleContainer,
-      style: I,
+      style: O,
       children: (0, r.jsxs)(l.P3F, {
         className: g.addAnotherRuleCardContainer,
         onClick: () => {
-          v(t, n)
+          x(t, n)
         },
         children: [(0, r.jsx)(l.oFk, {
           size: "custom",
@@ -104,8 +104,8 @@ function f(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "text-link",
-          children: m.NW.format(m.t.dNjRAQ, {
-            ruleName: _()
+          children: u.NW.format(u.t.dNjRAQ, {
+            ruleName: N()
           })
         })]
       })

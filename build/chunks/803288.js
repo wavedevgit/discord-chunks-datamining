@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  T: () => v,
-  Z: () => y
+  T: () => x,
+  Z: () => j
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -11,32 +11,32 @@ var r = n(200651),
   l = n(497321),
   o = n(852860),
   c = n(100527),
-  d = n(906732),
-  u = n(246946),
-  m = n(63063),
+  A = n(906732),
+  d = n(246946),
+  u = n(63063),
   g = n(999382),
-  p = n(621319),
-  h = n(44550),
-  f = n(586382),
-  b = n(859481),
-  x = n(981631),
-  j = n(388032),
-  N = n(696964);
-let v = s.ZP.connectStores([g.Z, h.Z], () => {
-  let e = h.Z.vanityURLCode,
+  f = n(621319),
+  m = n(44550),
+  p = n(586382),
+  h = n(859481),
+  C = n(981631),
+  b = n(388032),
+  v = n(696964);
+let x = s.ZP.connectStores([g.Z, m.Z], () => {
+  let e = m.Z.vanityURLCode,
     t = g.Z.getGuildId();
   return {
     vanityURLCode: e,
     guildId: t,
     onReset() {
-      (0, p.H7)()
+      (0, f.H7)()
     },
     onSave() {
-      null != t && (0, p.en)(t, e)
+      null != t && (0, f.en)(t, e)
     }
   }
 })(o.Z);
-class _ extends i.PureComponent {
+class N extends i.PureComponent {
   render() {
     let {
       hide: e,
@@ -45,23 +45,23 @@ class _ extends i.PureComponent {
       vanityURLUses: i,
       originalVanityURLCode: s,
       errorDetails: o
-    } = this.props, c = m.Z.getArticleURL(x.BhN.GUILD_VANITY_URL);
+    } = this.props, c = u.Z.getArticleURL(C.BhN.GUILD_VANITY_URL);
     return null == t ? null : e ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
       children: [(0, r.jsxs)(a.vwX, {
         tag: a.RB0.H1,
-        className: N.flexFormTitle,
+        className: v.flexFormTitle,
         children: [(0, r.jsx)("div", {
-          children: j.NW.string(j.t["5XZKy8"])
-        }), (0, r.jsx)(f.xl, {
+          children: b.NW.string(b.t["5XZKy8"])
+        }), (0, r.jsx)(p.xl, {
           guild: t
         })]
       }), (0, r.jsx)(a.R94, {
         type: a.geA.DESCRIPTION,
-        className: N.description,
-        children: j.NW.format(j.t.koklFB, {
+        className: v.description,
+        children: b.NW.format(b.t.koklFB, {
           helpCenterArticle: c
         })
-      }), (0, r.jsx)(b.z, {
+      }), (0, r.jsx)(h.z, {
         guild: t,
         vanityURLCode: n,
         vanityURLUses: i,
@@ -72,22 +72,22 @@ class _ extends i.PureComponent {
   }
 }
 
-function y() {
+function j() {
   var e, t;
   let n = (0, s.e7)([g.Z], () => g.Z.getGuild()),
-    i = (0, s.cj)([h.Z], () => ({
-      vanityURLCode: h.Z.vanityURLCode,
-      vanityURLUses: h.Z.vanityURLUses,
-      originalVanityURLCode: h.Z.originalVanityURLCode,
-      errorDetails: h.Z.errorDetails
+    i = (0, s.cj)([m.Z], () => ({
+      vanityURLCode: m.Z.vanityURLCode,
+      vanityURLUses: m.Z.vanityURLUses,
+      originalVanityURLCode: m.Z.originalVanityURLCode,
+      errorDetails: m.Z.errorDetails
     })),
-    a = (0, s.e7)([u.Z], () => u.Z.hideInstantInvites),
+    a = (0, s.e7)([d.Z], () => d.Z.hideInstantInvites),
     {
       analyticsLocations: l
-    } = (0, d.ZP)(c.Z.VANITY_URL);
-  return (0, r.jsx)(d.Gt, {
+    } = (0, A.ZP)(c.Z.VANITY_URL);
+  return (0, r.jsx)(A.Gt, {
     value: l,
-    children: (0, r.jsx)(_, (e = function(e) {
+    children: (0, r.jsx)(N, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

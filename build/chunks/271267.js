@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Q: () => g,
-  Z: () => b
+  Z: () => h
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -11,10 +11,10 @@ var r = n(200651),
   l = n(587431),
   o = n(756066),
   c = n(388032),
-  d = n(105168),
-  u = n(270395);
+  A = n(105168),
+  d = n(270395);
 
-function m(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function m(e) {
 }
 let g = "role_subscriptions_eligibility_modal";
 
-function p(e) {
+function f(e) {
   let {
     guild: t,
     eligibility: i,
@@ -44,8 +44,8 @@ function p(e) {
   } = e;
   return (0, r.jsxs)(s.zxk, {
     color: s.Ttl.CUSTOM,
-    className: d.ineligibleButton,
-    innerClassName: d.ineligibleButtonContent,
+    className: A.ineligibleButton,
+    innerClassName: A.ineligibleButtonContent,
     grow: !0,
     onClick: function() {
       (0, s.ZDy)(async () => {
@@ -54,7 +54,7 @@ function p(e) {
         } = await n.e("21863").then(n.bind(n, 466501));
         return n => {
           var s, c;
-          return (0, r.jsx)(e, (s = m({}, n), c = c = {
+          return (0, r.jsx)(e, (s = u({}, n), c = c = {
             eligibility: i,
             eligibilityLoading: a,
             eligibilityError: l,
@@ -83,24 +83,24 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     guild: t,
     checkboxText: n
   } = e, {
     canSubmitAcceptance: o,
-    error: u,
-    loading: m,
+    error: d,
+    loading: u,
     submitAcceptTermsRequest: g
-  } = (0, a.Z)(t.id), [p, h] = i.useState(!1);
+  } = (0, a.Z)(t.id), [f, m] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.XZJ, {
       onChange: function() {
-        h(e => !e)
+        m(e => !e)
       },
       size: 20,
       type: s.XZJ.Types.INVERTED,
-      value: p,
+      value: f,
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -109,24 +109,24 @@ function h(e) {
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsx)(s.zxk, {
-      className: d.ctaButton,
-      disabled: !p || !o,
+      className: A.ctaButton,
+      disabled: !f || !o,
       grow: !0,
       onClick: g,
       size: s.zxk.Sizes.LARGE,
-      submitting: m,
+      submitting: u,
       children: c.NW.string(c.t.NL5ZNT)
-    }), null != u && (0, r.jsxs)(r.Fragment, {
+    }), null != d && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.LZC, {
         size: 24
       }), (0, r.jsx)(l.Z, {
-        children: u.getAnyErrorMessage()
+        children: d.getAnyErrorMessage()
       })]
     })]
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -136,13 +136,13 @@ function f(e) {
     refreshEligibility: a,
     eligibility: l,
     eligibleForMonetization: c,
-    acceptTermsCheckboxText: d,
-    wasRejectedInV1: u
+    acceptTermsCheckboxText: A,
+    wasRejectedInV1: d
   } = n;
-  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(h, {
+  return c ? d ? (0, r.jsx)(o.Z, u({}, n)) : (0, r.jsx)(m, {
     guild: t,
-    checkboxText: d
-  }) : (0, r.jsx)(p, {
+    checkboxText: A
+  }) : (0, r.jsx)(f, {
     guild: t,
     eligibility: l,
     eligibilityLoading: i,
@@ -151,19 +151,19 @@ function f(e) {
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     monetizationEligibility: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: d.ctaContainer,
+    className: A.ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: d.heroBanner,
-      src: u,
+      className: A.heroBanner,
+      src: d,
       alt: c.NW.string(c.t.Af4klJ)
     }), (0, r.jsxs)("div", {
-      className: d.ctaContent,
+      className: A.ctaContent,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -176,7 +176,7 @@ function b(e) {
         children: c.NW.string(c.t["41wkMT"])
       }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(f, {
+      }), (0, r.jsx)(p, {
         guild: t,
         monetizationEligibility: n
       })]

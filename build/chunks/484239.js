@@ -21,8 +21,8 @@ let h = e => {
       title: h,
       titleClassName: f,
       buttonClassName: x,
-      perkImage: N,
-      isCarousel: b,
+      perkImage: b,
+      isCarousel: N,
       onCtaClick: _,
       perkComponent: E,
       subtitle: j = "",
@@ -58,14 +58,14 @@ let h = e => {
       titleClassName: f,
       subtitle: j,
       subtitleClassName: v
-    }), null != N && (0, r.jsxs)("div", {
+    }), null != b && (0, r.jsxs)("div", {
       className: s()(u.relative, {
-        [u.cardImage]: !b
+        [u.cardImage]: !N
       }),
       children: [(0, r.jsx)("img", {
-        src: N,
+        src: b,
         alt: "",
-        className: b ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+        className: N ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
       }), A ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(a.Text, {

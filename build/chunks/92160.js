@@ -17,11 +17,11 @@ function c(e) {
     enabled: n,
     previewCTA: i,
     onPreview: c,
-    onToggle: d,
-    animateStatus: u,
-    firstLine: m,
+    onToggle: A,
+    animateStatus: d,
+    firstLine: u,
     secondLine: g,
-    disabled: p
+    disabled: f
   } = e;
   return (0, r.jsxs)("div", {
     className: s()(t, o.enableContainer),
@@ -31,7 +31,7 @@ function c(e) {
       width: 24,
       height: 24,
       className: s()(o.activeCircle, {
-        [o.animate]: u
+        [o.animate]: d
       })
     }) : (0, r.jsx)(a.vdY, {
       size: "custom",
@@ -39,13 +39,13 @@ function c(e) {
       width: 24,
       height: 24,
       className: s()(o.editCircle, {
-        [o.animate]: u
+        [o.animate]: d
       })
     }), (0, r.jsxs)("div", {
       className: o.enableDescription,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: m
+        children: u
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: g
@@ -57,14 +57,14 @@ function c(e) {
         look: a.zxk.Looks.LINK,
         size: a.zxk.Sizes.SMALL,
         onClick: c,
-        disabled: p,
+        disabled: f,
         color: a.zxk.Colors.PRIMARY,
         children: null != i ? i : l.NW.string(l.t["5U0kLy"])
       }), (0, r.jsx)(a.zxk, {
-        disabled: null == d || p,
+        disabled: null == A || f,
         size: a.zxk.Sizes.SMALL,
         color: n ? a.zxk.Colors.RED : a.zxk.Colors.BRAND,
-        onClick: d,
+        onClick: A,
         children: n ? l.NW.string(l.t.R9GHyc) : l.NW.string(l.t.JFfinp)
       })]
     })]

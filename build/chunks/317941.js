@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(981632),
   f = n(314897),
   x = n(82142),
-  N = n(246946),
-  b = n(509545),
+  b = n(246946),
+  N = n(509545),
   _ = n(55563),
   E = n(259580),
   j = n(572004),
@@ -249,7 +249,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let P = l.ZP.connectStores([_.Z, N.Z, x.Z, m.Z, b.Z, f.default], e => {
+let P = l.ZP.connectStores([_.Z, b.Z, x.Z, m.Z, N.Z, f.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
@@ -259,7 +259,7 @@ let P = l.ZP.connectStores([_.Z, N.Z, x.Z, m.Z, b.Z, f.default], e => {
   let s = x.Z.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
     sku: i,
-    hideCodes: N.Z.enabled,
+    hideCodes: b.Z.enabled,
     isFetching: x.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: x.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: m.Z.getApplication(i.applicationId),

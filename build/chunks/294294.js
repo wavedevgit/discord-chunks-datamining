@@ -11,21 +11,21 @@ var i = n(512722),
   l = n(481060),
   o = n(395586),
   c = n(825055),
-  d = n(909656),
-  u = n(430824),
-  m = n(388032);
+  A = n(909656),
+  d = n(430824),
+  u = n(388032);
 
 function g(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([u.Z], () => u.Z.getGuild(t));
+  } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t));
   return s()(null != n, "Guild not found"), (0, r.jsxs)(o.AL, {
     guildId: t,
     children: [(0, r.jsx)(c.Z, {
-      children: m.NW.string(m.t.WMyX29)
+      children: u.NW.string(u.t.WMyX29)
     }), (0, r.jsx)(l.LZC, {
       size: 32
-    }), (0, r.jsx)(d.Z, {
+    }), (0, r.jsx)(A.Z, {
       guild: n,
       isGuildProducts: !0
     })]

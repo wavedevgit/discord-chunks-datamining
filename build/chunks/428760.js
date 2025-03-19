@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651),
   i = n(192379),
@@ -10,45 +10,45 @@ var r = n(200651),
   l = n(481060),
   o = n(730671),
   c = n(388032),
-  d = n(994357);
+  A = n(994357);
 
-function u(e) {
+function d(e) {
   let {
     onChangeText: t,
     maxWordCount: n,
     className: s,
-    textAreaClassName: u,
-    subtitleText: m,
+    textAreaClassName: d,
+    subtitleText: u,
     initialValue: g
-  } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
-    value: h,
-    onChange: f,
-    errorMessage: b
+  } = e, f = i.useMemo(() => null != g ? g : [], [g]), {
+    value: m,
+    onChange: p,
+    errorMessage: h
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(d.keywordsContainer, s),
+      className: a()(A.keywordsContainer, s),
       children: [(0, r.jsx)(l.lcI, {
-        className: a()(d.keywordsTextArea, u),
-        value: h,
-        onChange: f,
+        className: a()(A.keywordsTextArea, d),
+        value: m,
+        onChange: p,
         placeholder: c.NW.string(c.t.UyaxJy)
       }), (0, r.jsx)(l.Text, {
-        className: d.keywordsCounter,
+        className: A.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
-        children: "".concat(p.length, " / ").concat(n)
+        children: "".concat(f.length, " / ").concat(n)
       })]
-    }), null != b ? (0, r.jsx)(l.Text, {
-      className: a()(d.paddingTop, d.errorText),
+    }), null != h ? (0, r.jsx)(l.Text, {
+      className: a()(A.paddingTop, A.errorText),
       variant: "text-xs/medium",
       color: "text-danger",
-      children: b
+      children: h
     }) : (0, r.jsx)(l.Text, {
-      className: d.paddingTop,
+      className: A.paddingTop,
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: null != m ? m : c.NW.string(c.t["Gm6G5+"])
+      children: null != u ? u : c.NW.string(c.t["Gm6G5+"])
     })]
   })
 }

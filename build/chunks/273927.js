@@ -19,8 +19,8 @@ var r = n(200651),
   h = n(838436),
   f = n(526761),
   x = n(726985),
-  N = n(981631),
-  b = n(388032),
+  b = n(981631),
+  N = n(388032),
   _ = n(460722);
 
 function E(e) {
@@ -38,13 +38,13 @@ function E(e) {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
-        children: b.NW.string(i ? b.t.PFOUKS : b.t["93ZDWF"])
+        children: N.NW.string(i ? N.t.PFOUKS : N.t["93ZDWF"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: i ? b.NW.format(b.t["r91W/v"], {
+        children: i ? N.NW.format(N.t["r91W/v"], {
           numberOfBlockedUsers: n
-        }) : b.NW.format(b.t.rXUeOj, {
+        }) : N.NW.format(N.t.rXUeOj, {
           numberOfIgnoredUsers: n
         })
       })]
@@ -57,7 +57,7 @@ function j(e) {
   let {
     userId: n,
     last: s
-  } = e, p = (0, l.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, l.e7)([g.default], () => g.default.getUser(n)), [f, x] = i.useState(!1), N = i.useCallback(() => {
+  } = e, p = (0, l.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, l.e7)([g.default], () => g.default.getUser(n)), [f, x] = i.useState(!1), b = i.useCallback(() => {
     x(!0), p ? c.Z.unblockUser(n).catch(() => {
       x(!1)
     }) : c.Z.unignoreUser(n, u.Z.USER_SETTINGS).catch(() => {
@@ -87,9 +87,9 @@ function j(e) {
       })]
     }), (0, r.jsx)(o.zxk, {
       color: o.Ttl.PRIMARY,
-      onClick: N,
+      onClick: b,
       submitting: f,
-      children: b.NW.string(p ? b.t.XyHpKC : b.t["8wXU9P"])
+      children: N.NW.string(p ? N.t.XyHpKC : N.t["8wXU9P"])
     })]
   })
 }
@@ -123,7 +123,7 @@ function C(e) {
           children: (0, r.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: b.NW.format(b.t.jULEDg, {
+            children: N.NW.format(N.t.jULEDg, {
               numberOfUsers: a + 5 < n.length ? 5 : n.length - a
             })
           })
@@ -157,9 +157,9 @@ function S() {
     scrollPosition: f.FY.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
     children: [(0, r.jsx)(h.H, {
-      header: b.NW.string(b.t["3wRorq"]),
-      description: b.NW.format(b.t["0aNQo6"], {
-        helpArticle: p.Z.getArticleURL(N.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+      header: N.NW.string(N.t["3wRorq"]),
+      description: N.NW.format(N.t["0aNQo6"], {
+        helpArticle: p.Z.getArticleURL(b.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
     }), (0, r.jsx)(O, {}), (0, r.jsx)(v, {})]
   })

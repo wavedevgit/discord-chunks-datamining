@@ -17,25 +17,25 @@ function c(e) {
     description: n,
     action: i,
     highlightColor: c = l.q.NONE,
-    selected: d = !1,
-    subsection: u = null,
-    onClick: m,
+    selected: A = !1,
+    subsection: d = null,
+    onClick: u,
     className: g,
-    disabled: p
+    disabled: f
   } = e;
   return (0, r.jsxs)("div", {
     className: s()(o.container, g),
     children: [(0, r.jsx)(a.P3F, {
       className: s()(o.clickableContainer, {
-        [o.noAction]: null == m,
-        [o.disabled]: p
+        [o.noAction]: null == u,
+        [o.disabled]: f
       }, g),
-      onClick: p ? void 0 : m,
+      onClick: f ? void 0 : u,
       children: (0, r.jsxs)("div", {
         className: s()(o.backgroundModifierContainer, o[c], {
-          [o.selected]: d,
-          [o.disabled]: p,
-          [o.noAction]: null == m
+          [o.selected]: A,
+          [o.disabled]: f,
+          [o.noAction]: null == u
         }),
         children: [(0, r.jsxs)("div", {
           className: o.settingsDescriptionContainer,
@@ -54,9 +54,9 @@ function c(e) {
           children: i
         })]
       })
-    }), null != u && (0, r.jsx)("div", {
+    }), null != d && (0, r.jsx)("div", {
       className: o.subsectionContainer,
-      children: u
+      children: d
     })]
   })
 }

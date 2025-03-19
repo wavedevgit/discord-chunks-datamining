@@ -1,20 +1,14 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 10396 **/
+"use strict";
 e.exports = {
-  container: "container__956c6",
-  rewardDescriptionContainer: "rewardDescriptionContainer__956c6",
-  pulse: "pulse__956c6",
-  confetti: "confetti__956c6",
-  completionAnimation: "completionAnimation__956c6",
-  progressWrapper: "progressWrapper__956c6",
-  circularRewardTileWrapper: "circularRewardTileWrapper__956c6",
-  circularQuestRewardTileAsset: "circularQuestRewardTileAsset__956c6",
-  questRewardTileAsset: "questRewardTileAsset__956c6",
-  assetWrapper: "assetWrapper__956c6",
-  textContainer: "textContainer__956c6",
-  justifyCenter: "justifyCenter__956c6",
-  questName: "questName__956c6",
-  header: "header__956c6",
-  headerWithoutMargin: "headerWithoutMargin__956c6",
-  description: "description__956c6",
-  textOverflowBlur: "textOverflowBlur__956c6"
+  container: "container__11014",
+  unfocusedMessage: "unfocusedMessage__11014",
+  badgeContainer: "badgeContainer__11014",
+  tagText: "tagText__11014",
+  badgePreview: "badgePreview__11014",
+  messageContainer: "messageContainer__11014",
+  avatarContainer: "avatarContainer__11014",
+  contentContainer: "contentContainer__11014",
+  usernameContainer: "usernameContainer__11014",
+  decorationsContainer: "decorationsContainer__11014"
 }

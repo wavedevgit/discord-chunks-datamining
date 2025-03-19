@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,9 +11,9 @@ var i = n(481060),
   l = n(769998),
   o = n(671066),
   c = n(273504),
-  d = n(15470);
+  A = n(15470);
 
-function u(e) {
+function d(e) {
   let {
     action: t,
     triggerType: n,
@@ -23,27 +23,27 @@ function u(e) {
   if (null == o) return null;
   let {
     headerText: c,
-    descriptionText: u,
-    icon: m
+    descriptionText: d,
+    icon: u
   } = o;
   return (0, r.jsxs)("div", {
-    className: d.actionContainer,
+    className: A.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: d.actionIconContainer,
-      children: (0, r.jsx)(m, {
+      className: A.actionIconContainer,
+      children: (0, r.jsx)(u, {
         size: "md",
         color: "currentColor",
-        className: d.actionIcon
+        className: A.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: d.actionTextContainer,
+      className: A.actionTextContainer,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-sm/semibold",
         children: c
       }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: u
+        children: d
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(i.XZJ, {
@@ -51,19 +51,19 @@ function u(e) {
         type: i.XZJ.Types.INVERTED,
         value: a,
         onChange: () => l(!1),
-        className: d.__invalid_actionCheckbox
+        className: A.__invalid_actionCheckbox
       })
     })]
   })
 }
 
-function m(e) {
+function u(e) {
   let {
     action: t,
     guildId: n,
     triggerType: i,
     toggled: s,
-    onToggleAction: d
+    onToggleAction: A
   } = e;
   switch (t.type) {
     case c.jj.FLAG_TO_CHANNEL:
@@ -71,7 +71,7 @@ function m(e) {
         action: t,
         triggerType: i,
         toggled: s,
-        onToggleAction: d
+        onToggleAction: A
       });
     case c.jj.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(l.Z, {
@@ -79,22 +79,22 @@ function m(e) {
         guildId: n,
         triggerType: i,
         toggled: s,
-        onToggleAction: d
+        onToggleAction: A
       });
     case c.jj.BLOCK_MESSAGE:
       return (0, r.jsx)(a.Z, {
         action: t,
         triggerType: i,
         toggled: s,
-        onToggleAction: d
+        onToggleAction: A
       });
     default:
-      return (0, r.jsx)(u, {
+      return (0, r.jsx)(d, {
         action: t,
         guildId: n,
         toggled: s,
         triggerType: i,
-        onToggleAction: d
+        onToggleAction: A
       })
   }
 }

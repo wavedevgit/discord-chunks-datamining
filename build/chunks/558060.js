@@ -77,11 +77,11 @@ function g(e) {
     _ = (0, a.x6)(t) && n ? f(p({}, m), {
       amount: i.original
     }) : m,
-    P = O && n,
-    C = O && !n;
+    C = O && n,
+    P = O && !n;
   return (0, r.jsxs)("div", {
     className: o()(h.priceTagsContainer, g),
-    children: [!P && (0, r.jsx)(s.F, {
+    children: [!C && (0, r.jsx)(s.F, {
       price: _,
       discount: n ? a.f_ : i,
       className: o()(h.price, {
@@ -89,7 +89,7 @@ function g(e) {
         [h.dimmed]: n,
         [h.fullPrice]: y
       })
-    }), null != E && !C && (0, r.jsx)(s.F, {
+    }), null != E && !P && (0, r.jsx)(s.F, {
       price: E,
       discount: n ? i : a.f_,
       renderPrice: v ? e => (0, r.jsx)(l.Text, {

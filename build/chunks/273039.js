@@ -16,9 +16,9 @@ function c(e) {
     onClick: n,
     children: s,
     className: c,
-    buttonClassName: d,
-    look: u
-  } = e, [m, g] = i.useState(!1), p = i.useCallback(() => {
+    buttonClassName: A,
+    look: d
+  } = e, [u, g] = i.useState(!1), f = i.useCallback(() => {
     n(), g(!1)
   }, [n, g]);
   return (0, r.jsxs)("div", {
@@ -33,10 +33,10 @@ function c(e) {
     onMouseLeave: () => {
       g(!1)
     },
-    children: [s, t && m ? (0, r.jsx)(l.Z, {
-      onClick: p,
-      className: a()(o.removeButton, d),
-      look: u
+    children: [s, t && u ? (0, r.jsx)(l.Z, {
+      onClick: f,
+      className: a()(o.removeButton, A),
+      look: d
     }) : null]
   })
 }

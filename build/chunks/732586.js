@@ -41,16 +41,16 @@ function d(e) {
     required: y,
     value: m
   } = e, [j, g] = l.useState(null != m ? m : ""), {
-    state: h,
-    executeStateUpdate: v,
+    state: v,
+    executeStateUpdate: h,
     error: P
   } = (0, a.Ee)(e, null != m ? {
     type: r,
     value: m
   } : void 0), x = (0, c.hz)(e.id);
   l.useEffect(() => {
-    (null == h ? void 0 : h.type) === r && g(h.value)
-  }, [r, h]);
+    (null == v ? void 0 : v.type) === r && g(v.value)
+  }, [r, v]);
   let w = {
     name: p,
     value: j,
@@ -59,7 +59,7 @@ function d(e) {
     maxLength: O,
     required: y,
     onChange: e => {
-      g(e), v({
+      g(e), h({
         type: r,
         value: e
       })

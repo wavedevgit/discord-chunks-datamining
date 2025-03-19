@@ -10,38 +10,38 @@ var r = n(200651),
   l = n(279542),
   o = n(496675),
   c = n(140031),
-  d = n(981631),
-  u = n(388032),
-  m = n(542252);
+  A = n(981631),
+  d = n(388032),
+  u = n(542252);
 
 function g(e) {
   let {
     guild: t
-  } = e, n = i.useId(), g = (0, s.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), p = t.hasFeature(d.oNc.COMMUNITY), [h, f] = i.useState(t.hasFeature(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
-    f(e), await (0, l.fp)(t, e)
+  } = e, n = i.useId(), g = (0, s.e7)([o.Z], () => null != t && o.Z.can(A.Plq.MANAGE_GUILD, t), [t]), f = t.hasFeature(A.oNc.COMMUNITY), [m, p] = i.useState(t.hasFeature(A.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), h = i.useCallback(async e => {
+    p(e), await (0, l.fp)(t, e)
   }, [t]);
-  return p ? null : (0, r.jsxs)("div", {
-    className: m.bannerContainer,
+  return f ? null : (0, r.jsxs)("div", {
+    className: u.bannerContainer,
     children: [(0, r.jsx)(c.Z, {
       width: 64,
       height: 64
     }), (0, r.jsxs)("div", {
-      className: m.headingContainer,
+      className: u.headingContainer,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: u.NW.string(u.t.jDarm5)
+        children: d.NW.string(d.t.jDarm5)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: u.NW.string(u.t["/ee7yM"])
+        children: d.NW.string(d.t["/ee7yM"])
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: u.buttonContainer,
       children: (0, r.jsx)(a.rsf, {
         id: n,
-        checked: h,
-        onChange: b,
+        checked: m,
+        onChange: h,
         disabled: !g
       })
     })]

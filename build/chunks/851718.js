@@ -56,11 +56,11 @@ function p(e) {
     h({
       route: c.j.HOME
     })
-  }, N = e => {
+  }, b = e => {
     h(m({
       route: c.j.SWITCH_APP_PLANS
     }, e)), n(u.NW.string(u.t.VFqtkJ), x)
-  }, [b, _] = i.useState({});
+  }, [N, _] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {
       var e;
@@ -88,8 +88,8 @@ function p(e) {
           var t;
           return (0, r.jsx)(o.Z, {
             subscription: e,
-            navigateToSwitchPlan: N,
-            loadingState: j ? o.G.LOADING : null !== (t = b[e.id]) && void 0 !== t ? t : o.G.LOADING
+            navigateToSwitchPlan: b,
+            loadingState: j ? o.G.LOADING : null !== (t = N[e.id]) && void 0 !== t ? t : o.G.LOADING
           }, e.id)
         })
       });

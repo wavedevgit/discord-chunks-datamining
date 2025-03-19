@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -11,7 +11,7 @@ var i = n(442837),
   l = n(524329),
   o = n(575258),
   c = n(388032);
-let d = () => {
+let A = () => {
   let {
     guild: e
   } = (0, i.e7)([a.Z], () => a.Z.getProps()), {

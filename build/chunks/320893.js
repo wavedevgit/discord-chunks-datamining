@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => I
 });
 var r = n(200651);
 n(192379);
@@ -11,21 +11,21 @@ var i = n(780384),
   l = n(293810),
   o = n(388032),
   c = n(939922),
-  d = n(934961),
-  u = n(568294),
-  m = n(867861),
+  A = n(934961),
+  d = n(568294),
+  u = n(867861),
   g = n(860790),
-  p = n(268953),
-  h = n(487703),
-  f = n(458050),
-  b = n(334364),
-  x = n(431712);
+  f = n(268953),
+  m = n(487703),
+  p = n(458050),
+  h = n(334364),
+  C = n(431712);
 
-function j(e) {
+function b(e) {
   return (0, i.wj)(e) ? c.revenueSharePercentageDark : c.revenueSharePercentageLight
 }
 
-function N() {
+function v() {
   let e = (0, a.ZP)(),
     t = {
       backgroundColor: (0, i.wj)(e) ? "#2e3638" : "var(--background-primary)"
@@ -42,18 +42,18 @@ function N() {
         size: 8
       }), (0, r.jsx)(s.X6q, {
         variant: "heading-md/bold",
-        className: j(e),
+        className: b(e),
         children: o.NW.string(o.t.LdjJGx)
       })]
     }), (0, r.jsx)("img", {
       className: c.roundAvatar,
-      src: h,
+      src: m,
       alt: o.NW.string(o.t.NgjpTE)
     })]
   })
 }
 
-function v() {
+function x() {
   let e = (0, a.ZP)();
 
   function t(e) {
@@ -108,7 +108,7 @@ function v() {
         length: 24
       }), (0, r.jsx)("img", {
         className: c.roundAvatar,
-        src: (0, i.wj)(e) ? d : u,
+        src: (0, i.wj)(e) ? A : d,
         alt: ""
       }), (0, r.jsx)(t, {
         horizontal: !0,
@@ -120,7 +120,7 @@ function v() {
         length: 24
       }), (0, r.jsx)("img", {
         className: c.roundAvatar,
-        src: m,
+        src: u,
         alt: ""
       })]
     }), (0, r.jsxs)("div", {
@@ -141,14 +141,14 @@ function v() {
         length: 12
       }), (0, r.jsx)("img", {
         className: c.roundAvatar,
-        src: p,
+        src: f,
         alt: ""
       })]
     })]
   })
 }
 
-function _() {
+function N() {
   return (0, r.jsxs)("div", {
     className: c.earningBenefitCard,
     children: [(0, r.jsx)(s.Text, {
@@ -157,13 +157,13 @@ function _() {
       children: o.NW.string(o.t["9CdmS0"])
     }), (0, r.jsx)(s.LZC, {
       size: 32
-    }), (0, r.jsx)(N, {}), (0, r.jsx)(s.LZC, {
+    }), (0, r.jsx)(v, {}), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(v, {})]
+    }), (0, r.jsx)(x, {})]
   })
 }
 
-function y() {
+function j() {
   return (0, r.jsxs)("div", {
     className: c.followerBenefitCard,
     children: [(0, r.jsx)(s.Text, {
@@ -173,23 +173,23 @@ function y() {
       children: o.NW.string(o.t.qsKRUV)
     }), (0, r.jsx)("img", {
       className: c.roleSubscriptionSocial,
-      src: x,
+      src: C,
       alt: o.NW.string(o.t.yTPpra)
     }), (0, r.jsx)("img", {
       className: c.roleSubscriptionLanyardIllo,
-      src: b,
+      src: h,
       alt: o.NW.string(o.t["+gd9QU"])
     })]
   })
 }
 
-function O() {
+function E() {
   let e = (0, a.ZP)();
   return (0, r.jsxs)("div", {
     className: c.revenueShareBenefitCard,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsxs)(s.X6q, {
-        className: j(e),
+        className: b(e),
         style: {
           fontSize: "50px",
           lineHeight: "52px"
@@ -203,13 +203,13 @@ function O() {
       })]
     }), (0, r.jsx)("img", {
       className: c.roleSubscriptionEarningIllo,
-      src: f,
+      src: p,
       alt: o.NW.string(o.t.fD9Wv7)
     })]
   })
 }
 
-function C() {
+function I() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-lg/semibold",
@@ -219,7 +219,7 @@ function C() {
       size: 24
     }), (0, r.jsxs)("div", {
       className: c.creatorBenefitsContainer,
-      children: [(0, r.jsx)(_, {}), (0, r.jsx)(y, {}), (0, r.jsx)(O, {})]
+      children: [(0, r.jsx)(N, {}), (0, r.jsx)(j, {}), (0, r.jsx)(E, {})]
     })]
   })
 }
