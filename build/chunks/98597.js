@@ -116,51 +116,53 @@ function w(e) {
   let {
     channel: t,
     isDefaultChannel: r = !1,
-    locked: l,
-    tabIndex: o,
-    forceShowButtons: u,
-    hasChannelInfo: h = !1
-  } = e, m = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), _ = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), O = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), S = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, m, t, _)), N = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
-  if (l || !S) return null;
+    locked: o,
+    tabIndex: u,
+    forceShowButtons: h,
+    hasChannelInfo: m = !1
+  } = e, _ = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), S = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, _, t, O)), Z = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8)), E = l.useRef(null);
+  if (o || !N) return null;
 
-  function Z() {
-    if (null != m) {
+  function w() {
+    if (null != _) {
       let e = b.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("41348")]).then(n.bind(n, 560114));
         return n => (0, i.jsx)(r, I(P({}, n), {
-          guild: m,
+          guild: _,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
           source: j.t4x.GUILD_CHANNELS,
-          guildScheduledEvent: O
+          guildScheduledEvent: S
         }))
       })
     }
   }
-  let E = (0, i.jsx)(c.ejJ, {
+  let T = (0, i.jsx)(c.ejJ, {
     size: "xs",
     className: x.actionIcon,
     "aria-hidden": !0,
     color: "currentColor"
   });
-  return r && (E = (0, i.jsx)(g.Z, {
+  return r && (T = (0, i.jsx)(g.Z, {
+    childRef: E,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      children: E
+      ref: E,
+      children: T
     })
   })), (0, i.jsx)(c.ua7, {
-    text: N,
+    text: Z,
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: a()(x.iconItem, u ? x.alwaysShown : void 0, h ? x.iconWithChannelInfo : x.iconNoChannelInfo)
+      className: a()(x.iconItem, h ? x.alwaysShown : void 0, m ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
-      onClick: Z,
-      tabIndex: o,
-      "aria-label": N,
-      children: E
+      onClick: w,
+      tabIndex: u,
+      "aria-label": Z,
+      children: T
     }))
   })
 }

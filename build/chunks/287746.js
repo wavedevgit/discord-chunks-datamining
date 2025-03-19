@@ -1,6 +1,6 @@
 /** Chunk was on 78114 **/
 n.d(t, {
-  Z: () => e7
+  Z: () => e4
 }), n(47120), n(301563), n(566702), n(789020);
 var r = n(200651),
   i = n(192379),
@@ -166,7 +166,11 @@ function e1(e) {
     role: "complementary"
   })) : (0, r.jsx)("main", eQ({}, n))
 }
-class e2 extends i.PureComponent {
+let e2 = i.forwardRef((e, t) => (0, r.jsx)(e3, eJ(eQ({}, e), {
+  refInstance: t
+})));
+e2.displayName = "ChannelTextAreaForm";
+class e3 extends i.PureComponent {
   componentDidMount() {
     ex.Z.addChangeListener(this.draftDidChange)
   }
@@ -248,6 +252,7 @@ class e2 extends i.PureComponent {
     } = this.props, {
       contentWarningProps: C
     } = this.state, y = (0, r.jsx)(F.Z, {
+      ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: t,
@@ -546,7 +551,7 @@ class e2 extends i.PureComponent {
     }))
   }
 }
-class e3 extends i.PureComponent {
+class e7 extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       channel: n
@@ -604,10 +609,12 @@ class e3 extends i.PureComponent {
       w = (0, r.jsxs)("div", {
         className: eq.channelBottomBarArea,
         children: [(0, r.jsx)(eC.Z, {
+          childRef: this.channelTextAreaFormRef,
           tutorialId: "writing-messages",
           position: "left",
           offsetX: 75,
           children: (0, r.jsx)(e2, {
+            ref: this.channelTextAreaFormRef,
             focused: S,
             highlighted: Z,
             channel: n,
@@ -716,7 +723,7 @@ class e3 extends i.PureComponent {
     }, "messages-".concat(n.id))
   }
   constructor(...e) {
-    super(...e), eX(this, "inputFormRef", i.createRef()), eX(this, "state", {
+    super(...e), eX(this, "channelTextAreaFormRef", i.createRef()), eX(this, "inputFormRef", i.createRef()), eX(this, "state", {
       textAreaFocused: !1,
       textAreaHighlighted: !1,
       currentChannelId: this.props.channel.id
@@ -827,7 +834,7 @@ class e3 extends i.PureComponent {
     })
   }
 }
-let e7 = i.memo(function(e) {
+let e4 = i.memo(function(e) {
   let {
     channel: t,
     guild: n,
@@ -869,7 +876,7 @@ let e7 = i.memo(function(e) {
     M = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
     k = (0, Y.R6)("ChannelChat"),
     L = (0, Y.Q3)("ChannelChat");
-  return (0, r.jsx)(e3, {
+  return (0, r.jsx)(e7, {
     channel: t,
     isEditing: null != (0, d.e7)([ej.Z], () => ej.Z.getEditingMessageId(t.id)),
     hasModalOpen: (0, p.s9z)(p.JQI),

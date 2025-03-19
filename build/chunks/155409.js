@@ -1,18 +1,17 @@
 /** Chunk was on 78114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(200651),
   l = n(192379),
-  o = n(995295),
-  a = n(374470),
-  s = n(442837),
-  c = n(260300),
-  u = n(451478),
-  d = n(5560),
-  p = n(10401);
+  o = n(374470),
+  a = n(442837),
+  s = n(260300),
+  c = n(451478),
+  u = n(5560),
+  d = n(10401);
 
-function h(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,19 +20,19 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
-class m extends(r = l.Component) {
+class f extends(r = l.Component) {
   componentDidMount() {
     let {
       visible: e,
@@ -56,42 +55,43 @@ class m extends(r = l.Component) {
       visible: l,
       windowSize: o
     } = e;
-    i !== this.props.tutorialId ? c.Z.hide(i) : (l !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || o !== this.props.windowSize) && this.show(this.props.visible)
+    i !== this.props.tutorialId ? s.Z.hide(i) : (l !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || o !== this.props.windowSize) && this.show(this.props.visible)
   }
   show(e) {
     let {
-      tutorialId: t,
-      position: n,
-      offsetX: r,
-      offsetY: i,
-      visible: l,
-      inlineSpecs: s,
+      childRef: t,
+      tutorialId: n,
+      position: r,
+      offsetX: i,
+      offsetY: l,
+      visible: a,
+      inlineSpecs: c,
       autoInvert: u
     } = this.props;
-    if (e && null == s) {
-      let e = (0, o.findDOMNode)(this);
-      if (!(0, a.k)(e)) return;
+    if (e && null == c) {
+      let e = null == t ? void 0 : t.current;
+      if (!(0, o.k)(e)) return;
       let {
-        top: l,
-        left: s,
+        top: a,
+        left: c,
         right: d,
         bottom: p
       } = e.getBoundingClientRect();
-      c.Z.show(t, {
-        position: n,
-        targetWidth: d - s,
-        targetHeight: p - l,
+      s.Z.show(n, {
+        position: r,
+        targetWidth: d - c,
+        targetHeight: p - a,
         autoInvert: u,
         origin: {
-          x: s,
-          y: l
+          x: c,
+          y: a
         },
         offset: {
-          x: r,
-          y: i
+          x: i,
+          y: l
         }
       })
-    } else l && c.Z.hide(t)
+    } else a && s.Z.hide(n)
   }
   render() {
     let {
@@ -102,9 +102,9 @@ class m extends(r = l.Component) {
       windowFocused: o,
       position: a,
       autoInvert: s
-    } = this.props, c = p.Z.getData()[t];
+    } = this.props, c = d.Z.getData()[t];
     return null != e && null != c ? (0, i.jsxs)(i.Fragment, {
-      children: [n, r && (0, i.jsx)(d.V, f({
+      children: [n, r && (0, i.jsx)(u.V, h({
         autoInvert: s,
         position: a,
         tutorialId: t,
@@ -115,15 +115,15 @@ class m extends(r = l.Component) {
   }
 }
 
-function g(e) {
+function m(e) {
   var t, n;
   let {
     tutorialId: r
-  } = e, l = (0, s.e7)([p.Z], () => p.Z.shouldShow(r), [r]), o = (0, s.e7)([u.Z], () => u.Z.isFocused()), a = (0, s.e7)([u.Z], () => u.Z.windowSize(), []);
-  return (0, i.jsx)(m, (t = f({}, e), n = n = {
+  } = e, l = (0, a.e7)([d.Z], () => d.Z.shouldShow(r), [r]), o = (0, a.e7)([c.Z], () => c.Z.isFocused()), s = (0, a.e7)([c.Z], () => c.Z.windowSize(), []);
+  return (0, i.jsx)(f, (t = h({}, e), n = n = {
     visible: l,
     windowFocused: o,
-    windowSize: a
+    windowSize: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -135,7 +135,7 @@ function g(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
-h(m, "defaultProps", {
+p(f, "defaultProps", {
   position: "top",
   offsetX: 0,
   offsetY: 0,

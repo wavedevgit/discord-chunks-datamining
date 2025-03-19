@@ -136,7 +136,7 @@ function $(e) {
     };
   R && null != L && x.set(L.applicationId, A({}, L, Z));
   let H = !D;
-  null != L && c.id === L.location.id && d === (null == L ? void 0 : L.applicationId) && (!R && Array.from(L.userIds).some(e => e === C) || H) ? (x.delete(d), p.S.dispatch(T.CkL.RELEASE_ACTIVITY_WEB_VIEW)) : R && (null == L || L.applicationId !== d || L.location.id !== c.id) && P === u.default.getSessionId() && eo({
+  null != L && c.id === L.location.id && d === (null == L ? void 0 : L.applicationId) && (!R && Array.from(L.userIds).some(e => e === C) || H) ? (x.delete(d), p.S.dispatch(T.CkL.RELEASE_ACTIVITY_WEB_VIEW)) : R && (null == L || L.applicationId !== d || L.location.id !== c.id) && (P === u.default.getSessionId() && eo({
     applicationId: d,
     launchId: f,
     compositeInstanceId: _,
@@ -147,7 +147,10 @@ function $(e) {
     referrerId: Z.referrerId,
     customId: Z.customId,
     inviterUserId: null == F ? void 0 : F.inviterUserId
-  });
+  }), eE({
+    channelId: null != g ? g : null,
+    applicationId: d
+  }));
   let W = I.filter(e => e.applicationId !== d);
   N.length > 0 && W.push(Z), U.set(c.id, W);
   let Y = (0, v.wq)(c);
@@ -399,13 +402,9 @@ function eh(e) {
 
 function em(e) {
   let {
-    applicationId: t,
-    channelId: n
+    applicationId: t
   } = e;
-  P.everLaunchedActivities.add(t), eE({
-    applicationId: t,
-    channelId: n
-  })
+  P.everLaunchedActivities.add(t)
 }
 
 function eg(e) {
