@@ -35,7 +35,7 @@ function h(e) {
   } = (0, d.KZ)(), N = (0, o.e7)([c.Z], () => (null == x ? void 0 : x.guildId) != null ? c.Z.getGuild(x.guildId) : null), P = (0, o.e7)([u.Z], () => {
     var e;
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-  }), E = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId())), S = (0, f.kc)({
+  }), E = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId())), S = (0, f.k)({
     location: "BotUserProfileModalInfo"
   }) ? I.NW.string(I.t["mQKv+v"]) : I.NW.string(I.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {

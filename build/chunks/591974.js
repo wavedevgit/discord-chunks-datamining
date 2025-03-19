@@ -17,7 +17,7 @@ function m() {
   let t = (0, i.e7)([l.Z], () => l.Z.getStatus()),
     n = null !== (e = (0, o.u5)(t)) && void 0 !== e ? e : "",
     m = t === c.Sk.INVISIBLE || t === c.Sk.OFFLINE,
-    g = (0, a.Vm)({
+    g = (0, a.V)({
       location: "AccountProfilePopoutMenuItemStatusLabel"
     });
   return (0, r.jsxs)("div", {

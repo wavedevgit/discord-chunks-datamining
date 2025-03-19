@@ -62,21 +62,21 @@ function T(e) {
   let {
     transitionState: T,
     onClose: E,
-    sourceAnalyticsContext: I,
-    sourceAnalyticsLocations: w,
-    prompt: P = null
+    sourceAnalyticsContext: P,
+    sourceAnalyticsLocations: I,
+    prompt: w = null
   } = e, k = (0, h.p)({
     location: "CustomStatusModalWithPreview"
   }), D = (0, l.e7)([m.default], () => {
     var e;
     return null !== (e = m.default.getCurrentUser()) && void 0 !== e ? e : null
-  }), B = (0, j.a)(), [A, Z] = a.useState(null !== (t = null == B ? void 0 : B.state) && void 0 !== t ? t : ""), [W, R] = a.useState(null !== (n = null == B ? void 0 : B.emoji) && void 0 !== n ? n : null), [z, L] = a.useState((0, b.Z)()), [U, M] = a.useState(null), H = a.useRef(null), Y = k && (null != U || null != P) ? null != U ? U : P : O.NW.string(O.t["xod36+"]);
+  }), B = (0, j.a)(), [A, Z] = a.useState(null !== (t = null == B ? void 0 : B.state) && void 0 !== t ? t : ""), [W, R] = a.useState(null !== (n = null == B ? void 0 : B.emoji) && void 0 !== n ? n : null), [z, L] = a.useState((0, b.Z)()), [U, M] = a.useState(null), H = a.useRef(null), Y = k && (null != U || null != w) ? null != U ? U : w : O.NW.string(O.t["xod36+"]);
   a.useEffect(() => {
     p.default.track(x.rMx.OPEN_MODAL, {
       type: u.Z.CUSTOM_STATUS_MODAL,
-      location_stack: w
+      location_stack: I
     })
-  }, [w]), (0, s.ZP)(() => {
+  }, [I]), (0, s.ZP)(() => {
     var e, t;
     null === (e = H.current) || void 0 === e || e.focus(), null === (t = H.current) || void 0 === t || t.setSelection(A.length, A.length)
   });
@@ -92,7 +92,7 @@ function T(e) {
       })
     },
     q = () => {
-      (0, f.Z)(A, W, z, I), E()
+      (0, f.Z)(A, W, z, P), E()
     },
     G = () => null == W ? null : () => (0, r.jsx)(o.Z, {
       className: _.emoji,

@@ -44,7 +44,7 @@ function s(e) {
     }
     return a
   }(e, ["location"]);
-  return (0, a.DX)({
+  return (0, a.D)({
     location: t
   }) ? (0, r.jsx)(i.Z, o({}, n)) : (0, r.jsx)(l.Z, o({}, n))
 }

@@ -49,7 +49,7 @@ function E(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function I(e, t) {
   }), e
 }
 
-function w(e) {
+function I(e) {
   return (0, r.jsxs)("div", {
     className: y.statusOptionItem,
     children: [(0, r.jsx)(s.qbd, {
@@ -72,7 +72,7 @@ function w(e) {
     }), e.label]
   })
 }
-class P extends a.PureComponent {
+class w extends a.PureComponent {
   componentDidMount() {
     let {
       sourceAnalyticsLocations: e,
@@ -131,7 +131,7 @@ class P extends a.PureComponent {
               let {
                 isShown: n
               } = t;
-              return (0, r.jsx)(d.Z, I(E({}, e), {
+              return (0, r.jsx)(d.Z, P(E({}, e), {
                 active: n,
                 className: y.emojiButton,
                 tabIndex: 0,
@@ -180,7 +180,7 @@ class P extends a.PureComponent {
         placeholder: C.NW.string(C.t.E45wvL),
         maxVisibleItems: 5,
         value: e,
-        options: N.wS.map(e => I(E({}, e), {
+        options: N.wS.map(e => P(E({}, e), {
           value: e.value,
           key: e.value,
           label: e.label()
@@ -199,13 +199,13 @@ class P extends a.PureComponent {
       children: (0, r.jsx)(s.q4e, {
         maxVisibleItems: 4,
         value: e,
-        options: N.Df.map(e => I(E({}, e), {
+        options: N.Df.map(e => P(E({}, e), {
           value: e.value,
           key: e.value,
           label: e.label()
         })),
         onChange: this.handleChangeStatus,
-        renderOptionLabel: w
+        renderOptionLabel: I
       })
     })
   }
@@ -214,7 +214,7 @@ class P extends a.PureComponent {
       transitionState: e,
       onClose: t
     } = this.props;
-    return (0, r.jsx)(c.Z, I(E({}, this.analyticsLocation), {
+    return (0, r.jsx)(c.Z, P(E({}, this.analyticsLocation), {
       children: (0, r.jsxs)(s.Y0X, {
         transitionState: e,
         className: y.modalRoot,
@@ -331,4 +331,4 @@ let k = o.ZP.connectStores([b.Z, S.default], () => {
   }
 }, {
   forwardRef: !0
-})(P)
+})(w)

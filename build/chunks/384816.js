@@ -41,7 +41,7 @@ function N(e) {
   } = (0, f.KZ)(), C = null == N ? void 0 : N.guildId, A = (0, o.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), w = (0, o.e7)([u.Z], () => u.Z.getGuildId()), L = (0, s.Y)({
     userId: n.id,
     location: "UserProfileModalInfo"
-  }), M = (0, o.e7)([a.default], () => a.default.locale), R = (0, m.Z)(n.id), U = (0, b.Z)(n.id), B = (0, p.kc)({
+  }), M = (0, o.e7)([a.default], () => a.default.locale), R = (0, m.Z)(n.id), U = (0, b.Z)(n.id), B = (0, p.k)({
     location: "UserProfileModalInfo"
   }) ? O.NW.string(O.t["mQKv+v"]) : O.NW.string(O.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {

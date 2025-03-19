@@ -29,7 +29,7 @@ function N(e) {
     note: O
   } = (0, s.Z)(v), j = !p && null != O && O.length > 0, x = m === f.IlC.POPOUT || m === f.IlC.OVERLAY, h = i.useContext(g.AnalyticsContext), {
     analyticsLocations: y
-  } = (0, a.ZP)(), _ = (0, o.kc)({
+  } = (0, a.ZP)(), _ = (0, o.k)({
     location: "useAddNoteItem"
   });
   return v === c.default.getId() || d.Z.hidePersonalInformation || x ? null : (0, l.jsx)(r.sNh, {

@@ -24,7 +24,7 @@ function f(e) {
     onOpenProfile: c
   } = e, {
     note: f
-  } = (0, a.Z)(t), _ = null != f && "" !== f, p = (0, o.kc)({
+  } = (0, a.Z)(t), _ = null != f && "" !== f, p = (0, o.k)({
     location: "UserProfileNoteButton"
   });
   return (0, r.jsx)(s.y, {
