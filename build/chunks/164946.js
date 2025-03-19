@@ -14,9 +14,9 @@ function i(e) {
 
 function o(e) {
   let t = {};
-  if (void 0 !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), void 0 !== e.pendingAvatar && (t.avatar = e.pendingAvatar), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingAvatarV2) {
+  if (void 0 !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingAvatar) {
     let {
-      pendingAvatarV2: n
+      pendingAvatar: n
     } = e;
     null === n ? t.avatar = null : n.assetOrigin === r.q.ARCHIVED_ASSET ? t.avatarId = n.originalAsset.id : (t.avatar = n.imageUri, t.avatarDescription = n.description)
   }
@@ -25,9 +25,9 @@ function o(e) {
 
 function a(e) {
   let t = {};
-  if (void 0 !== e.pendingAvatar && (t.avatar = e.pendingAvatar), void 0 !== e.pendingAvatarV2) {
+  if (void 0 !== e.pendingAvatar) {
     let {
-      pendingAvatarV2: n
+      pendingAvatar: n
     } = e;
     null === n ? t.avatar = null : n.assetOrigin === r.q.ARCHIVED_ASSET ? t.avatarId = n.originalAsset.id : (t.avatar = n.imageUri, t.avatarDescription = n.description)
   }

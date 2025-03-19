@@ -21,13 +21,13 @@ function m(e) {
   } = e, {
     reducedMotion: h
   } = i.useContext(a.Sfi), {
-    pendingAvatarV2: f,
+    pendingAvatar: f,
     pendingBanner: x,
     pendingThemeColors: b,
     pendingPronouns: N,
     pendingBio: _,
     tryItOutThemeColors: E,
-    tryItOutAvatarV2: j,
+    tryItOutAvatar: j,
     tryItOutBanner: C,
     tryItOutAvatarDecoration: O,
     tryItOutProfileEffectId: v

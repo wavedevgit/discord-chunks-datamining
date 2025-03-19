@@ -4,16 +4,15 @@ n.d(t, {
   CM: () => O,
   Cf: () => v,
   ID: () => y,
-  US: () => T,
-  Xz: () => N,
+  Xz: () => T,
   Z: () => m,
   c_: () => S,
-  f4: () => A,
+  f4: () => N,
   g_: () => b,
   ho: () => E,
   pG: () => g,
-  rf: () => C,
-  x3: () => R,
+  rf: () => A,
+  x3: () => C,
   z5: () => I
 });
 var r = n(544891),
@@ -153,33 +152,26 @@ function S(e) {
 
 function T(e) {
   i.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_V2",
-    avatar: e
-  }), h(f.QP.ANIMATED_AVATAR)
-}
-
-function N(e) {
-  i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION",
     avatarDecoration: e
   }), h(f.QP.AVATAR_DECORATION)
 }
 
-function A(e) {
+function N(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
     banner: e
   }), h(f.QP.PROFILE_BANNER)
 }
 
-function C(e) {
+function A(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
     themeColors: e
   }), h(f.QP.PROFILE_THEME_COLOR)
 }
 
-function R(e) {
+function C(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET",
     preset: e

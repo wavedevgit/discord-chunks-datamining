@@ -7,15 +7,15 @@ var n = r(200651),
   o = r(990547),
   c = r(481060),
   s = r(194359),
-  l = r(819557),
-  a = r(138201),
+  a = r(819557),
+  l = r(138201),
   d = r(626135),
   u = r(63063),
   f = r(5192),
   O = r(478923),
   m = r(858380),
-  N = r(981631),
-  j = r(388032),
+  j = r(981631),
+  N = r(388032),
   p = r(894200);
 
 function x(t) {
@@ -51,18 +51,18 @@ function g(t, e) {
 }
 
 function b() {
-  return (0, n.jsxs)(l.z, {
-    children: [(0, n.jsx)(l.q, {
-      title: j.NW.string(j.t.ruhGkp),
-      description: j.NW.string(j.t["/FWKKC"]),
+  return (0, n.jsxs)(a.z, {
+    children: [(0, n.jsx)(a.q, {
+      title: N.NW.string(N.t.ruhGkp),
+      description: N.NW.string(N.t["/FWKKC"]),
       icon: c.owK
-    }), (0, n.jsx)(l.q, {
-      title: j.NW.string(j.t.N9v3en),
-      description: j.NW.string(j.t.ddpuJi),
+    }), (0, n.jsx)(a.q, {
+      title: N.NW.string(N.t.N9v3en),
+      description: N.NW.string(N.t.ddpuJi),
       icon: c.owK
-    }), (0, n.jsx)(l.q, {
-      title: j.NW.string(j.t["4ycGEx"]),
-      description: j.NW.string(j.t["5yfN+v"]),
+    }), (0, n.jsx)(a.q, {
+      title: N.NW.string(N.t["4ycGEx"]),
+      description: N.NW.string(N.t["5yfN+v"]),
       icon: c.d3s
     })]
   })
@@ -72,7 +72,7 @@ function I(t) {
   var {
     user: e,
     guildId: r,
-    channelId: l,
+    channelId: a,
     onIgnore: I,
     onBlock: h,
     location: E = "ContextMenu"
@@ -92,18 +92,18 @@ function I(t) {
     return i
   }(t, ["user", "guildId", "channelId", "onIgnore", "onBlock", "location"]);
   return i.useLayoutEffect(() => () => {
-    d.default.track(N.rMx.USER_REMEDIATION_ACTION, {
+    d.default.track(j.rMx.USER_REMEDIATION_ACTION, {
       action: m.l.DISMISS_IGNORE,
       location: E
     })
   }, [E]), (0, n.jsx)(c.ConfirmModal, g(x({
-    confirmText: j.NW.string(j.t.ytCpKi),
-    cancelText: j.NW.string(j.t["ETE/oK"]),
+    confirmText: N.NW.string(N.t.ytCpKi),
+    cancelText: N.NW.string(N.t["ETE/oK"]),
     onConfirm: () => {
-      null == I || I(), s.Z.ignoreUser(e.id, E, null != l ? l : void 0), d.default.track(N.rMx.IGNORE_USER_CONFIRMED)
+      null == I || I(), s.Z.ignoreUser(e.id, E, null != a ? a : void 0), d.default.track(j.rMx.IGNORE_USER_CONFIRMED)
     },
     onCancel: () => {
-      d.default.track(N.rMx.USER_REMEDIATION_ACTION, {
+      d.default.track(j.rMx.USER_REMEDIATION_ACTION, {
         action: m.l.CANCEL_IGNORE,
         location: E
       })
@@ -131,34 +131,34 @@ function I(t) {
           children: [(0, n.jsx)(c.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",
-            children: j.NW.format(j.t["WrQD/f"], {
-              username: f.ZP.getName(r, l, e)
+            children: N.NW.format(N.t["WrQD/f"], {
+              username: f.ZP.getName(r, a, e)
             })
           }), (0, n.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-secondary",
-            children: j.NW.string(j.t.JKL1u7)
+            children: N.NW.string(N.t.JKL1u7)
           })]
         })]
       }), (0, n.jsx)(b, {}), (0, n.jsxs)("div", {
         className: p.otherOptions,
-        children: [(0, n.jsx)(a.rT, {
-          title: j.NW.string(j.t["1v01go"]),
-          children: (0, n.jsx)(a.ZP, {
-            title: j.NW.string(j.t.bwxY39),
-            description: j.NW.string(j.t.NTnf1d),
+        children: [(0, n.jsx)(l.rT, {
+          title: N.NW.string(N.t["1v01go"]),
+          children: (0, n.jsx)(l.ZP, {
+            title: N.NW.string(N.t.bwxY39),
+            description: N.NW.string(N.t.NTnf1d),
             titleVariant: "text-md/medium",
             descriptionVariant: "text-xs/medium",
-            buttonText: j.NW.string(j.t.QdfUHB),
+            buttonText: N.NW.string(N.t.QdfUHB),
             buttonColor: c.Ttl.PRIMARY,
             onButtonPress: () => {
-              d.default.track(N.rMx.USER_REMEDIATION_ACTION, {
+              d.default.track(j.rMx.USER_REMEDIATION_ACTION, {
                 action: m.l.GOTO_BLOCK,
                 location: E
               }), (0, c.pTH)(), (0, c.h7j)(t => (0, n.jsx)(O.default, g(x({}, t), {
                 user: e,
                 guildId: r,
-                channelId: l,
+                channelId: a,
                 onBlock: h,
                 onIgnore: I,
                 location: E
@@ -168,8 +168,8 @@ function I(t) {
         }), (0, n.jsx)(c.Text, {
           variant: "text-sm/medium",
           className: p.featureGuide,
-          children: j.NW.format(j.t.Hjvqr6, {
-            articleLink: u.Z.getArticleURL(N.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+          children: N.NW.format(N.t.Hjvqr6, {
+            articleLink: u.Z.getArticleURL(j.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
           })
         })]
       })]

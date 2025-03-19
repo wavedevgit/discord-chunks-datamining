@@ -43,7 +43,7 @@ function Z() {
     }),
     B = (0, a.e7)([T.Z], () => T.Z.getUserProfile(L.id)),
     {
-      pendingAvatarV2: M,
+      pendingAvatar: M,
       pendingGlobalName: U,
       pendingBanner: V,
       pendingBio: G,
@@ -91,7 +91,7 @@ function Z() {
     }),
     q = (0, u.gS)(),
     X = P.ZP.canUsePremiumProfileCustomization(L),
-    J = (0, g.GH)(M, L.avatar),
+    J = (0, g.gd)(M, L.avatar),
     Q = (0, g.f$)(V, null == B ? void 0 : B.banner),
     $ = "DefaultCustomizationSections";
   (0, o.j)({
@@ -122,7 +122,7 @@ function Z() {
       pendingPronouns: F,
       currentPronouns: null !== (k = null == B ? void 0 : B.pronouns) && void 0 !== k ? k : ""
     }, "pronouns"), (0, r.jsx)(f.Z, {
-      onAvatarChange: l.Re,
+      onAvatarChange: l.I5,
       showRemoveAvatarButton: J,
       errors: Y.avatar,
       sectionTitle: R.NW.string(R.t.lqaIxM),

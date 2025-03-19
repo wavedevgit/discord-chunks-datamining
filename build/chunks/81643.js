@@ -63,16 +63,17 @@ function v(e) {
     initiateAgeVerification: r.useCallback(async () => {
       n(!0);
       try {
-        let t = await (0, f.K)();
         o.Z.dispatch({
           type: "INITIATE_AGE_VERIFICATION"
-        }), d.Z.showAgeVerification({
+        });
+        let t = await (0, f.K)();
+        d.Z.showAgeVerification({
           webviewUrl: t.verification_webview_url,
           onComplete: e,
           onClose: c
         })
       } catch (e) {
-        l.Z.showFailedToast(p.w.TIGGER_PAWTECT_ERROR)
+        l.Z.showFailedToast(p.w.TIGGER_PAWTECT_ERROR), c()
       } finally {
         n(!1)
       }

@@ -50,7 +50,7 @@ function M() {
     M = (0, l.cj)([y.Z], () => y.Z.getAllPending()),
     {
       pendingBio: U,
-      pendingAvatarV2: V
+      pendingAvatar: V
     } = M,
     G = function(e, t) {
       if (null == e) return {};
@@ -66,7 +66,7 @@ function M() {
         for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(M, ["pendingBio", "pendingAvatarV2"]),
+    }(M, ["pendingBio", "pendingAvatar"]),
     F = (0, S.SD)({
       userId: n.id,
       image: V

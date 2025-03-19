@@ -96,7 +96,7 @@ var i = n(990547),
   eB = n(46140),
   eM = n(65154),
   eU = n(388032),
-  eV = n(635357),
+  eV = n(917566),
   eG = n(156564);
 let eF = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BADGE],
   eH = () => {

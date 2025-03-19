@@ -49,10 +49,10 @@ function V(e) {
     isVisible: G,
     shouldShow: F
   } = e, H = I.ZP.isPremium(V), {
-    pendingAvatarV2: z,
+    pendingAvatar: z,
     pendingThemeColors: Y,
     tryItOutThemeColors: K,
-    tryItOutAvatarV2: q,
+    tryItOutAvatar: q,
     tryItOutBanner: X,
     tryItOutProfileEffectId: J,
     tryItOutAvatarDecoration: Q
@@ -96,7 +96,7 @@ function V(e) {
     sourceAnalyticsLocations: en
   } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), [er, ei] = i.useState(Math.floor(Math.random() * b.J2.length)), es = e => {
     if (e) {
-      if ((0, l.Re)(q), (0, O.z5)(K), (0, O.ho)(X), null != Q) {
+      if ((0, l.I5)(q), (0, O.z5)(K), (0, O.ho)(X), null != Q) {
         let e = m.Z.getProduct(Q.skuId);
         null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, l.cV)(Q)) : null != g.Z.getPurchase(Q.skuId) && (0, l.cV)(Q)
       }
@@ -180,7 +180,7 @@ function V(e) {
           }), (0, r.jsx)(P.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
-            onAvatarChange: O.US,
+            onAvatarChange: O.c_,
             showRemoveAvatarButton: !1,
             changeAvatarButtonText: M.NW.string(M.t["7z0D1d"]),
             sectionTitle: M.NW.string(M.t.vtFfPT)

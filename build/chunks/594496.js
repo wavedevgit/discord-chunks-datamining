@@ -71,7 +71,7 @@ function R(e) {
     let e = _.default.getCurrentUser();
     return s()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), {
-    pendingAvatarV2: w,
+    pendingAvatar: w,
     pendingNickname: k,
     pendingBanner: W,
     pendingBio: L,
@@ -81,7 +81,7 @@ function R(e) {
     guild: V
   } = (0, a.cj)([O.Z], () => {
     let {
-      pendingAvatarV2: e,
+      pendingAvatar: e,
       pendingNickname: t,
       pendingBio: n,
       pendingPronouns: r,
@@ -89,7 +89,7 @@ function R(e) {
       pendingThemeColors: s
     } = O.Z.getAllPending();
     return {
-      pendingAvatarV2: e,
+      pendingAvatar: e,
       pendingNickname: t,
       pendingBanner: i,
       pendingBio: n,
@@ -107,7 +107,7 @@ function R(e) {
     z = (0, a.e7)([N.ZP], () => null == F.id ? null : N.ZP.getMember(F.id, Z.id)),
     Y = (0, a.e7)([b.Z], () => b.Z.getGuildMemberProfile(Z.id, F.id)),
     K = E.ZP.canUsePremiumProfileCustomization(Z),
-    q = (0, c.GH)(w, null == z ? void 0 : z.avatar),
+    q = (0, c.gd)(w, null == z ? void 0 : z.avatar),
     X = (0, c.f$)(W, null == Y ? void 0 : Y.banner),
     J = (0, v.p)(M, null == Y ? void 0 : Y.themeColors),
     Q = null !== (t = null == Y ? void 0 : Y.bio) && void 0 !== t ? t : "",
@@ -147,7 +147,7 @@ function R(e) {
           })]
         }),
         showRemoveAvatarButton: q,
-        onAvatarChange: e => ee(e, null == z ? void 0 : z.avatar, C.Re),
+        onAvatarChange: e => ee(e, null == z ? void 0 : z.avatar, C.I5),
         errors: null == U ? void 0 : U.avatar,
         guildId: F.id,
         disabled: !K

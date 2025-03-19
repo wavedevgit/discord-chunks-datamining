@@ -18,7 +18,7 @@ let f = e => {
   let {
     user: f
   } = e, v = d.ZP.canUsePremiumProfileCustomization(f), h = (0, a.cj)([u.Z], () => u.Z.getAllPending()), {
-    pendingAvatarV2: b
+    pendingAvatar: b
   } = h, x = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -33,7 +33,7 @@ let f = e => {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(h, ["pendingAvatarV2"]), P = (0, s.SD)({
+  }(h, ["pendingAvatar"]), P = (0, s.SD)({
     userId: f.id,
     image: b
   }), [g, C] = (0, i.useState)(!1);

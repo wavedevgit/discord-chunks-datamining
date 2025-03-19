@@ -26,12 +26,12 @@ let x = e => {
     root_node_id: v,
     success_node_id: j,
     fail_node_id: N
-  } = n, [y, O] = l.useState(v), [Z, I] = l.useState(void 0), [C, T] = l.useState(void 0), [S, P] = l.useState([]), [k, E] = l.useState(void 0), [W, w] = l.useState(void 0), L = e => {
+  } = n, [y, O] = l.useState(v), [Z, I] = l.useState(void 0), [C, T] = l.useState(void 0), [S, P] = l.useState([]), [k, E] = l.useState(void 0), [W, L] = l.useState(void 0), w = e => {
     var n, r, l;
     let {
       destination: i
     } = e, [, o] = i, c = g[o];
-    if (c.elements.some(e => "skip" === e.type) && (null === (n = c.button) || void 0 === n ? void 0 : n.type) === "next") return L((r = function(e) {
+    if (c.elements.some(e => "skip" === e.type) && (null === (n = c.button) || void 0 === n ? void 0 : n.type) === "next") return w((r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -75,7 +75,7 @@ let x = e => {
     var r;
     let l = h ? await (0, c.ZD)(n, t, [...S, e]) : await (0, c.fw)(n, t, [...S, e], b),
       i = null == l ? void 0 : null === (r = l.body) || void 0 === r ? void 0 : r.report_id;
-    null != i && E(i), w(g[e.nodeRef].report_type), null == p || p(i)
+    null != i && E(i), L(g[e.nodeRef].report_type), null == p || p(i)
   }, A = () => {
     var e, n;
     if (S.length < 1) return;
@@ -129,7 +129,7 @@ let x = e => {
             reportSubType: W,
             history: S,
             onModalClose: x.onClose,
-            onSelectChild: L,
+            onSelectChild: w,
             onNavigateBack: A,
             multiSelect: Z,
             textInput: C,

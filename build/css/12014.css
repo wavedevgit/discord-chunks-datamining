@@ -1,6 +1,6 @@
 /**
   Module ID: 12014
-  Original File Name: 40cd326288ef828e
+  Original File Name: bf96dc555c4e9250
 **/
 .root__10a0c {
     min-width: -moz-fit-content;
@@ -13,6 +13,10 @@
     align-items: center;
     gap: 16px;
     padding: 16px 16px 20px
+}
+
+.fullbleed__10a0c {
+    padding: 0
 }
 
 .iframe__10a0c {
@@ -31,4 +35,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=40cd326288ef828e.css.map*/
+/*# sourceMappingURL=bf96dc555c4e9250.css.map*/

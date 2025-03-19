@@ -86,7 +86,7 @@ function R(e) {
     source: C.Z.getSource()
   })), {
     source: w,
-    pendingAvatarV2: k
+    pendingAvatar: k
   } = Z, W = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -101,7 +101,7 @@ function R(e) {
       for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(Z, ["source", "pendingAvatarV2"]), L = (0, f.SD)({
+  }(Z, ["source", "pendingAvatar"]), L = (0, f.SD)({
     userId: s.id,
     image: k
   });

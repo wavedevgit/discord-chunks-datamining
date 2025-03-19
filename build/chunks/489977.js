@@ -20,11 +20,11 @@ let h = e => {
       isTryItOutFlow: l
     } = e;
     if (l) {
-      (0, c.US)(t);
+      (0, c.c_)(t);
       return
     }
     let h = u.default.getCurrentUser(),
-      f = null != r ? o.Re : i.Re,
+      f = null != r ? o.I5 : i.I5,
       g = d.ZP.canUseAnimatedAvatar(h);
     if (g || "image/gif" !== n.type) {
       f(t);

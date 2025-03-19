@@ -529,7 +529,7 @@ let eS = {
       product: t,
       user: n
     } = e, i = W.ZP.canUsePremiumProfileCustomization(n), a = (0, m.cj)([A.Z], () => A.Z.getAllPending()), {
-      pendingAvatarV2: l
+      pendingAvatar: l
     } = a, o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
@@ -544,7 +544,7 @@ let eS = {
         for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(a, ["pendingAvatarV2"]), s = (0, S.SD)({
+    }(a, ["pendingAvatar"]), s = (0, S.SD)({
       userId: n.id,
       image: l
     }), c = t.type === d.Z.AVATAR_DECORATION, [u] = t.items, {

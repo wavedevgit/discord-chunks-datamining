@@ -3,20 +3,19 @@
 n.d(t, {
   FD: () => g,
   I5: () => I,
-  KP: () => A,
+  KP: () => N,
   Mn: () => y,
-  P6: () => D,
-  Re: () => S,
+  P6: () => w,
   S2: () => v,
-  UZ: () => T,
+  UZ: () => S,
   V3: () => O,
-  W3: () => w,
+  W3: () => P,
   Zy: () => E,
-  b9: () => R,
-  cV: () => N,
-  si: () => P,
+  b9: () => C,
+  cV: () => T,
+  si: () => R,
   ss: () => b,
-  xn: () => C
+  xn: () => A
 });
 var r = n(544891),
   i = n(433517),
@@ -195,58 +194,51 @@ function I(e) {
 
 function S(e) {
   a.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2",
-    avatar: e
-  }), null == e ? o.uv.announce(p.NW.string(p.t["f1+oNj"])) : o.uv.announce(p.NW.string(p.t.NstziY))
-}
-
-function T(e) {
-  a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME",
     globalName: e
   })
 }
 
-function N(e) {
+function T(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION",
     avatarDecoration: e
   })
 }
 
-function A(e) {
+function N(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE",
     nameplate: e
   })
 }
 
-function C(e) {
+function A(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
     profileEffectId: e
   })
 }
 
-function R() {
+function C() {
   a.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
-function P() {
+function R() {
   a.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
-function w() {
+function P() {
   a.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function D() {
+function w() {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })

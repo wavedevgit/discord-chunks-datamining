@@ -24,7 +24,7 @@ function u(e) {
     onMouseLeave: h,
     shouldAnimate: m
   } = (0, c.Z)(f), {
-    pendingAvatarV2: g
+    pendingAvatar: g
   } = (0, l.Z)({}), E = d && null != t ? (0, a.SD)({
     userId: t.id,
     image: g,

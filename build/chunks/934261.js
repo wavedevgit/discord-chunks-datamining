@@ -118,7 +118,7 @@ let C = e => {
       pendingPronouns: _,
       pendingBio: I,
       pendingBanner: S,
-      pendingAvatarV2: w,
+      pendingAvatar: w,
       pendingAvatarDecoration: Z,
       pendingThemeColors: k,
       pendingAccentColor: D

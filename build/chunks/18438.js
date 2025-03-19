@@ -4,10 +4,10 @@ n.d(t, {
   Cf: () => m,
   Fq: () => u,
   HP: () => c,
+  I5: () => f,
   ID: () => g,
   IO: () => v,
   It: () => d,
-  Re: () => f,
   W3: () => O,
   b9: () => I,
   cV: () => _,
@@ -98,7 +98,7 @@ function d() {
 
 function f(e) {
   i.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_V2",
+    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR",
     avatar: e
   })
 }
