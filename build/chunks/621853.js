@@ -372,7 +372,7 @@ function Q(e) {
 }
 
 function X(e) {
-  return A.keys().reduce((e, t) => et(t) || e, !1)
+  return [...A.keys()].reduce((e, t) => et(t) || e, !1)
 }
 
 function J(e) {

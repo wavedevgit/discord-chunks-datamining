@@ -1,37 +1,37 @@
 /** Chunk was on 67110 **/
-n.d(t, {
-  Z: () => l
+a.d(t, {
+  Z: () => p
 });
-var a, i, o, c = n(442837),
-  d = n(570140);
-let s = {
+var n, i, c, o = a(442837),
+  s = a(570140);
+let d = {
   canPlayWowMoment: !1,
   isFetchingWowMomentMedia: !1,
   wowMomentWumpusMediaUrl: null
 };
-class r extends(o = c.ZP.Store) {
+class r extends(c = o.ZP.Store) {
   getState() {
-    return s
+    return d
   }
   get canPlayWowMoment() {
-    return s.canPlayWowMoment
+    return d.canPlayWowMoment
   }
   get isFetchingWowMomentMedia() {
-    return s.isFetchingWowMomentMedia
+    return d.isFetchingWowMomentMedia
   }
   get wowMomentWumpusMedia() {
-    return s.wowMomentWumpusMediaUrl
+    return d.wowMomentWumpusMediaUrl
   }
 }
-i = "PurchasedItemsFestivityStore", (a = "displayName") in r ? Object.defineProperty(r, a, {
+i = "PurchasedItemsFestivityStore", (n = "displayName") in r ? Object.defineProperty(r, n, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : r[a] = i;
-let l = new r(d.Z, {
+}) : r[n] = i;
+let p = new r(s.Z, {
   LOGOUT: function() {
-    s = {
+    d = {
       canPlayWowMoment: !1,
       isFetchingWowMomentMedia: !1,
       wowMomentWumpusMediaUrl: null
@@ -41,18 +41,18 @@ let l = new r(d.Z, {
     let {
       value: t
     } = e;
-    s.canPlayWowMoment = t
+    d.canPlayWowMoment = t
   },
   PURCHASED_ITEMS_FESTIVITY_IS_FETCHING_WOW_MOMENT_MEDIA: function() {
-    s.isFetchingWowMomentMedia = !0
+    d.isFetchingWowMomentMedia = !0
   },
   PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_SUCCESS: function(e) {
     let {
       wumpusMedia: t
     } = e;
-    s.wowMomentWumpusMediaUrl = t, s.isFetchingWowMomentMedia = !1
+    d.wowMomentWumpusMediaUrl = t, d.isFetchingWowMomentMedia = !1
   },
   PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_FAILURE: function() {
-    s.isFetchingWowMomentMedia = !1, s.canPlayWowMoment = !1
+    d.isFetchingWowMomentMedia = !1, d.canPlayWowMoment = !1
   }
 })

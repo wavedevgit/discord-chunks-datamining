@@ -1,6 +1,6 @@
 /**
   Module ID: 92457
-  Original File Name: ae9848df09d39680
+  Original File Name: 06dde8521b3d31a9
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -447,6 +447,30 @@
     cursor: pointer
 }
 
+.container__7c626 {
+    margin-bottom: var(--spacing-24)
+}
+
+.guildContainer__7c626 {
+    padding: var(--spacing-16);
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: var(--radius-sm)
+}
+
+.header__7c626 {
+    margin-bottom: var(--spacing-8);
+    color: var(--header-secondary)
+}
+
+.guildInfo__7c626 {
+    display: flex;
+    align-items: center
+}
+
+.guildIcon__7c626 {
+    margin-right: var(--spacing-8)
+}
+
 .container__631c2 {
     margin-bottom: 24px
 }
@@ -688,4 +712,4 @@
     max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=ae9848df09d39680.css.map*/
+/*# sourceMappingURL=06dde8521b3d31a9.css.map*/
