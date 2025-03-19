@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 54835 **/
 e.exports = {
   collapseable: "collapseable__9d98d",
   mainCollapseableContainer: "mainCollapseableContainer__9d98d",

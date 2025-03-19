@@ -1,65 +1,49 @@
 /** Chunk was on 78114 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   l = n(120356),
   o = n.n(l),
   a = n(481060),
-  s = n(566898),
-  c = n(785717),
-  u = n(448941);
+  s = n(785717),
+  c = n(448941);
 
-function d(e) {
+function u(e) {
   let {
     section: t,
     header: n,
     items: l,
-    minItems: d = 0,
-    isLoading: p,
-    listClassName: h
+    listClassName: u,
+    onExpand: d
   } = e, {
-    trackUserProfileAction: f
-  } = (0, c.KZ)(), m = i.useId(), [g, b] = i.useState(!1), _ = g ? a.CJ0 : a.Fbu;
+    trackUserProfileAction: p
+  } = (0, s.KZ)(), h = i.useId(), [f, m] = i.useState(!1), g = f ? a.CJ0 : a.Fbu;
   return (0, r.jsxs)("section", {
-    className: u.section,
-    children: [p ? (0, r.jsxs)("div", {
-      className: o()(u.header, u.loading),
-      children: [(0, r.jsx)(s.ZT, {
-        width: 135,
-        opacity: .08
-      }), (0, r.jsx)(s.ZT, {
-        width: 34,
-        opacity: .08
-      })]
-    }) : l.length <= d ? (0, r.jsxs)(a.X6q, {
-      variant: "text-sm/medium",
-      color: "text-normal",
-      className: u.header,
-      children: [n, " — ", l.length]
-    }) : (0, r.jsxs)(a.P3F, {
-      className: o()(u.header, u.clickable),
-      "aria-controls": m,
-      "aria-expanded": g,
+    className: c.section,
+    children: [(0, r.jsxs)(a.P3F, {
+      className: o()(c.header, c.clickable),
+      "aria-controls": h,
+      "aria-expanded": f,
       onClick: () => {
-        b(!g), g || f({
+        m(!f), f || (p({
           action: "PRESS_SECTION",
           section: t
-        })
+        }), null == d || d())
       },
       children: [(0, r.jsxs)(a.X6q, {
         variant: "text-sm/medium",
         color: "text-normal",
         children: [n, " — ", l.length]
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(g, {
         size: "md"
       })]
     }), l.length > 0 && (0, r.jsx)("ul", {
-      id: m,
-      hidden: !g && d <= 0,
-      className: o()(u.list, h),
-      children: g || l.length <= d ? l : l.slice(0, d)
+      id: h,
+      hidden: !f,
+      className: o()(c.list, u),
+      children: l
     })]
   })
 }

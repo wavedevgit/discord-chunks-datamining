@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function x(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,8 +55,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = "-:--",
-  D = {
+let x = "-:--",
+  N = {
     [O.rq.PLAYING]: {
       icon: d.fpf,
       label: h.NW.string(h.t.ZcgDJS)
@@ -71,11 +71,11 @@ let _ = "-:--",
     }
   };
 
-function N(e) {
+function D(e) {
   let {
     current: t,
     duration: n
-  } = e, o = null != t ? (0, S.yv)(t) : _, l = null != n ? (0, S.yv)(n) : _;
+  } = e, o = null != t ? (0, S.yv)(t) : x, l = null != n ? (0, S.yv)(n) : x;
   return o = o.padStart(l.length, "0"), (0, r.jsxs)("div", {
     className: i()(j.durationTimeWrapper, j.controlsBarItem),
     children: [(0, r.jsx)(d.Text, {
@@ -105,7 +105,7 @@ let P = o.forwardRef(function(e, t) {
     tooltipDelayMs: v = 1500,
     shortcut: f,
     onClick: E
-  } = e, g = e => (0, r.jsx)(d.P3F, x(y({}, e), {
+  } = e, g = e => (0, r.jsx)(d.P3F, _(y({}, e), {
     onClick: !0 === m ? void 0 : E,
     className: i()(j.videoControlsBtnCont, {
       [j.videoControlsBtnContDisabled]: m
@@ -153,7 +153,7 @@ function T(e) {
   let {
     videoRef: l,
     quest: S,
-    playerState: _,
+    playerState: x,
     animSpring: T,
     visible: I,
     seekForwardEnabled: w,
@@ -164,8 +164,8 @@ function T(e) {
     handleFullScreenBtnClick: M,
     handleSeekBackBtnClick: q,
     handleSeekForwardBtnClick: B,
-    handleControlBarPendingInteraction: U
-  } = e, F = (0, p.Q3)("ListSectionItem"), V = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), Y = (0, f.km)(e => e.muted), W = (0, f.km)(e => e.setMuted), z = (0, f.km)(e => e.transcriptEnabled), G = (0, f.km)(e => e.captionEnabled), H = (0, f.km)(e => e.fullScreenEnabled), K = (0, a.e7)([m.Z], () => m.Z.useReducedMotion), Q = (0, a.e7)([m.Z], () => m.Z.keyboardModeEnabled), [X, $] = o.useState(Y ? 0 : V), [J, ee] = o.useState(!1), [et, en] = o.useState(!1), [{
+    handleControlBarPendingInteraction: F
+  } = e, U = (0, p.Q3)("ListSectionItem"), V = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), Y = (0, f.km)(e => e.muted), W = (0, f.km)(e => e.setMuted), z = (0, f.km)(e => e.transcriptEnabled), G = (0, f.km)(e => e.captionEnabled), H = (0, f.km)(e => e.fullScreenEnabled), K = (0, a.e7)([m.Z], () => m.Z.useReducedMotion), Q = (0, a.e7)([m.Z], () => m.Z.keyboardModeEnabled), [X, $] = o.useState(Y ? 0 : V), [J, ee] = o.useState(!1), [et, en] = o.useState(!1), [{
     volumeAnimSpring: er
   }, eo] = (0, d.q_F)(() => ({
     from: {
@@ -230,7 +230,7 @@ function T(e) {
     {
       icon: ev,
       label: ef
-    } = D[_];
+    } = N[x];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: j.videoControlsGroup,
@@ -296,9 +296,9 @@ function T(e) {
               output: [0, 100]
             })], e => "".concat(e, "px"))
           },
-          children: (0, r.jsx)(u.i, x(y({
+          children: (0, r.jsx)(u.i, _(y({
             mini: !0
-          }, F ? {} : {
+          }, U ? {} : {
             barStyles: {
               height: "5px",
               top: "10px"
@@ -317,10 +317,10 @@ function T(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              es(e), Z(e), ea(S.id, e), et && (en(!1), U(!1)), Y && e > 0 && W(!1)
+              es(e), Z(e), ea(S.id, e), et && (en(!1), F(!1)), Y && e > 0 && W(!1)
             },
             asValueChanges: e => {
-              es(e), et || (en(!0), U(!0))
+              es(e), et || (en(!0), F(!0))
             },
             fillStyles: {
               backgroundColor: c.Z.colors.WHITE.css
@@ -329,7 +329,7 @@ function T(e) {
             "aria-label": h.NW.string(h.t["eIl+AA"])
           }))
         })]
-      }), (0, r.jsx)(N, {
+      }), (0, r.jsx)(D, {
         current: null == l ? void 0 : null === (t = l.current) || void 0 === t ? void 0 : t.currentTime,
         duration: null == l ? void 0 : null === (n = l.current) || void 0 === n ? void 0 : n.duration
       })]
@@ -340,8 +340,8 @@ function T(e) {
         animationTime: T,
         visible: I,
         onClick: k,
-        active: z && _ !== O.rq.ENDED,
-        disabled: _ === O.rq.ENDED,
+        active: z && x !== O.rq.ENDED,
+        disabled: x === O.rq.ENDED,
         ariaLabel: h.NW.string(h.t.KCzjTk),
         tooltipLabel: h.NW.string(h.t.KCzjTk)
       }), !A && (0, r.jsx)(P, {

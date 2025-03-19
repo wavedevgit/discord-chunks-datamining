@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 5336ac6397052dc9
+  Original File Name: c805f8827a558fd7
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4905,6 +4905,44 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     border-color: var(--bg-brand)
 }
 
+.upsellFooter__5e07c {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px
+}
+
+.upsellFooterIcon__5e07c {
+    flex-shrink: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px
+}
+
+.reverseTrialUpsellContainer__5e07c {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
+}
+
+.unlockIcon__5e07c {
+    height: 46px;
+    width: 46px;
+    pointer-events: none;
+    position: absolute;
+    left: 7px;
+    top: -14px
+}
+
+.upsellText__5e07c {
+    padding-left: 48px
+}
+
 .container__6e9b4 {
     position: relative;
     pointer-events: all;
@@ -5710,4 +5748,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=5336ac6397052dc9.css.map*/
+/*# sourceMappingURL=c805f8827a558fd7.css.map*/

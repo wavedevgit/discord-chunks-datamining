@@ -660,27 +660,38 @@ function eS(e, t) {
   }), [i, t, e, null == n ? void 0 : n.config.cosponsorMetadata, o])
 }
 
-function eT(e) {
-  let t = w.r.build(e).defaultReward.messages.name,
-    n = (0, A.Kr)(e),
-    r = (0, A.f$)(e),
-    i = (0, d.e7)([m.default], () => m.default.getCurrentUser()),
-    o = null != i && y.ZP.isPremium(i, x.p9.TIER_2);
-  if (null == n) return M.NW.formatToPlainString(M.t.l9uXLy, {
-    decorationName: t
+function eT(e, t) {
+  let n = w.r.build(e).defaultReward.messages.name,
+    r = (0, A.Kr)(e),
+    i = (0, A.FX)(e),
+    o = (0, A._p)(e),
+    a = (0, A.f$)(e),
+    s = (0, d.e7)([m.default], () => m.default.getCurrentUser()),
+    l = (0, y.yd)(null == s ? void 0 : s.premiumType, x.p9.TIER_2);
+  if (null == r) return M.NW.formatToPlainString(M.t.l9uXLy, {
+    decorationName: n
   });
-  let a = M.NW.formatToPlainString(M.t.gWlmFR, {
-      duration: n,
-      rewardName: t
+  let c = M.NW.formatToPlainString(M.t.o97tNj, {
+      rewardName: n
     }),
-    s = M.NW.formatToPlainString(M.t.NpQ80d, {
-      duration: n,
-      rewardName: t
+    u = M.NW.formatToPlainString(M.t.PkyRZm, {
+      rewardName: n,
+      expirationDate: i
     }),
-    l = r && o ? a : s;
-  return r ? l : M.NW.formatToPlainString(M.t.tTlItr, {
-    duration: n,
-    decorationName: t
+    f = M.NW.formatToPlainString(M.t.ie4YKy, {
+      rewardName: n,
+      duration: r
+    }),
+    _ = M.NW.formatToPlainString(M.t.yCpc0d, {
+      duration: r,
+      rewardName: n
+    }),
+    p = l && !t ? c : f,
+    h = l && !t ? u : _,
+    g = o ? p : h;
+  return a ? g : M.NW.formatToPlainString(M.t.tTlItr, {
+    duration: r,
+    decorationName: n
   })
 }
 

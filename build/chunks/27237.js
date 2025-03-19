@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  ZP: () => h
+  ZP: () => g
 }), t(47120);
 var r = t(200651),
   i = t(192379),
@@ -11,49 +11,49 @@ var r = t(200651),
   c = t(808189),
   d = t(413335),
   u = t(690786),
-  x = t(838968),
-  p = t(969867),
-  m = t(279604),
-  v = t(610881),
+  p = t(838968),
+  _ = t(969867),
+  x = t(279604),
+  m = t(610881),
   b = t(709435);
 
-function _(e) {
+function v(e) {
   let n, {
     active: t,
     nextActive: i,
     position: o
   } = e;
   return n = t && !1 !== i ? "full" : t && !1 === i ? "half" : "none", (0, r.jsxs)("div", {
-    className: v.progressContainer,
+    className: m.progressContainer,
     children: [(0, r.jsx)("div", {
-      className: s()(v.progress, v[o], v[n])
+      className: s()(m.progress, m[o], m[n])
     }), (0, r.jsx)("div", {
-      className: s()(v.boostContainer, {
-        [v.boostContainerActive]: t
+      className: s()(m.boostContainer, {
+        [m.boostContainerActive]: t
       }),
       children: (0, r.jsx)(d.Z, {
         size: "sm",
-        className: v.boost,
+        className: m.boost,
         fill: "white"
       })
     })]
   })
 }
 
-function j(e) {
+function f(e) {
   var n, t;
   let {
     index: i
   } = e;
   return (0, r.jsx)("div", {
-    className: v.perkRowContainer,
+    className: m.perkRowContainer,
     children: null === (t = c.C[i]) || void 0 === t ? void 0 : null === (n = t.perks) || void 0 === n ? void 0 : n.map((e, n) => (0, r.jsxs)("div", {
-      className: v.perkRow,
+      className: m.perkRow,
       children: [(0, r.jsx)(e.icon, {
         color: l.TVs.colors.TEXT_MUTED,
         size: "sm"
       }), (0, r.jsx)(a.xv, {
-        className: v.perkText,
+        className: m.perkText,
         color: "text-muted",
         variant: "text-sm/medium",
         children: e.getCopy()
@@ -62,7 +62,7 @@ function j(e) {
   })
 }
 
-function h(e) {
+function g(e) {
   let n, {
       guildId: t,
       index: o,
@@ -71,12 +71,12 @@ function h(e) {
     } = e,
     c = null != (0, u.Z)(t, s),
     d = null != (0, u.Z)(t, l),
-    [h, g] = i.useState(void 0);
-  return (0, m.KT)(h), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(x.Z, {
+    [g, h] = i.useState(void 0);
+  return (0, x.KT)(g), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(p.Z, {
     guildId: t,
     powerup: s,
-    className: v.card,
-    children: [(0, r.jsx)(_, {
+    className: m.card,
+    children: [(0, r.jsx)(v, {
       position: n,
       active: c,
       nextActive: d
@@ -85,19 +85,19 @@ function h(e) {
       children: [(0, r.jsx)(a.X6, {
         variant: "heading-md/bold",
         children: s.title
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(f, {
         index: o
-      }), (0, r.jsx)(x.Y, {
-        className: v.footer,
+      }), (0, r.jsx)(p.Y, {
+        className: m.footer,
         guildId: t,
         powerup: s
       })]
     }), (0, r.jsx)("div", {
       className: b.buttonContainer,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(_.Z, {
         guildId: t,
         powerup: s,
-        onError: g
+        onError: h
       })
     })]
   })

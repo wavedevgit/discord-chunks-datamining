@@ -1,18 +1,18 @@
-/** Chunk was on 36149 **/
+/** Chunk was on 54835 **/
 n.d(t, {
   $: () => i,
-  C: () => c
+  C: () => s
 });
-var l = n(570140);
+var r = n(570140);
 
 function i() {
-  l.Z.dispatch({
+  r.Z.dispatch({
     type: "SHOW_KEYBOARD_SHORTCUTS"
   })
 }
 
-function c() {
-  l.Z.dispatch({
+function s() {
+  r.Z.dispatch({
     type: "HIDE_KEYBOARD_SHORTCUTS"
   })
 }

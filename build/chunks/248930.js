@@ -16,8 +16,8 @@ var o = t(120356),
   p = t(652853),
   b = t(64621),
   m = t(382405),
-  v = t(386019),
-  g = t(228168),
+  g = t(386019),
+  v = t(228168),
   y = t(203396);
 
 function I(e) {
@@ -26,8 +26,8 @@ function I(e) {
     entry: t,
     profileGuildId: o,
     className: I,
-    onClose: h,
-    hideContextMenu: j = !1
+    onClose: j,
+    hideContextMenu: h = !1
   } = e, {
     analyticsLocations: x
   } = (0, s.ZP)(l.Z.USER_PROFILE_RECENT_ACTIVITY_CARD), {
@@ -44,7 +44,7 @@ function I(e) {
   return null != _ && (0, c.Rh)(t) ? (0, r.jsx)(s.Gt, {
     value: x,
     children: (0, r.jsx)(b.Z, {
-      sourceType: g.n_.ACTIVITY,
+      sourceType: v.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(u.Z, {
         user: n,
@@ -53,29 +53,29 @@ function I(e) {
         sourceId: t.id,
         entry: t,
         onAction: N,
-        sourceType: g.n_.ACTIVITY,
+        sourceType: v.n_.ACTIVITY,
         children: () => (0, r.jsx)(f.Z, {
           user: n,
           className: y.toolbarContainer,
           interactionSourceId: t.id,
-          sourceType: g.n_.ACTIVITY,
+          sourceType: v.n_.ACTIVITY,
           onAction: N,
           onShowToolbar: () => N({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: j ? void 0 : e => (0, r.jsx)(v.Z, {
+          renderMoreButtonPopout: h ? void 0 : e => (0, r.jsx)(g.Z, {
             display: "recent",
             entry: t,
             user: n,
-            onClose: h,
+            onClose: j,
             children: e
           }),
           children: (0, r.jsx)(m.Z, {
             entry: t,
             user: n,
-            onClose: h,
+            onClose: j,
             className: i()(I, {
-              [y.hoisted]: O === g.n_.ACTIVITY && Z === t.id
+              [y.hoisted]: O === v.n_.ACTIVITY && Z === t.id
             })
           })
         })

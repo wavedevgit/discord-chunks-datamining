@@ -16,12 +16,12 @@ var o = t(442837),
   p = t(91433),
   b = t(944043),
   m = t(502762),
-  v = t(530),
-  g = t(740628),
+  g = t(530),
+  v = t(740628),
   y = t(643518),
   I = t(228168),
-  h = t(981631),
-  j = t(835145);
+  j = t(981631),
+  h = t(835145);
 
 function x(e) {
   var n;
@@ -50,8 +50,8 @@ function x(e) {
     initialSubsection: P
   });
   return (0, r.jsxs)("div", {
-    className: j.body,
-    children: [(0, r.jsx)(v.Z, {
+    className: h.body,
+    children: [(0, r.jsx)(g.Z, {
       user: t,
       profileType: I.y0.FULL_SIZE,
       nickname: R,
@@ -65,24 +65,24 @@ function x(e) {
         profileType: I.y0.FULL_SIZE,
         onClose: S
       })
-    }), T === h.OGo.PENDING_INCOMING && (0, r.jsx)(m.Z.Overlay, {
-      className: j.friendRequestBannerOverlay,
+    }), T === j.OGo.PENDING_INCOMING && (0, r.jsx)(m.Z.Overlay, {
+      className: h.friendRequestBannerOverlay,
       children: (0, r.jsx)(p.Z, {
         user: t,
         applicationId: w ? C : void 0,
         guildId: null !== (n = null == Z ? void 0 : Z.guildId) && void 0 !== n ? n : void 0,
         channelId: O,
         friendToken: E,
-        className: j.friendRequestBanner
+        className: h.friendRequestBanner
       })
     }), w && A.map(e => (0, r.jsx)(m.Z.Overlay, {
-      className: j.friendRequestBannerOverlay,
+      className: h.friendRequestBannerOverlay,
       children: (0, r.jsx)(p.Z, {
         user: t,
         channelId: O,
         isGameRelationship: !0,
         applicationId: e.applicationId,
-        className: j.friendRequestBanner
+        className: h.friendRequestBanner
       })
     }, e.applicationId)), (0, r.jsx)(b.Z, {
       user: t,
@@ -91,8 +91,8 @@ function x(e) {
       isPremiumUser: M,
       onInteraction: S
     }), (0, r.jsx)(m.Z.Overlay, {
-      className: j.overlay,
-      children: (0, r.jsx)(g.Z, {
+      className: h.overlay,
+      children: (0, r.jsx)(v.Z, {
         user: t,
         currentUser: x,
         displayProfile: Z,

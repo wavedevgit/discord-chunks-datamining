@@ -64,7 +64,8 @@ function v(e) {
   o()(null != x, "UserProfilePanelWrapper: currentUser cannot be undefined"), i.useEffect(() => {
     (0, m.Z)(y, {
       type: "panel",
-      withMutualFriends: !y.bot,
+      withMutualFriendsCount: !y.bot,
+      withMutualFriends: !1,
       withMutualGuilds: !0,
       channelId: t.id
     })

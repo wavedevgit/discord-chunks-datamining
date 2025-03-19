@@ -1,51 +1,51 @@
-/** Chunk was on 59645 **/
-t.d(n, {
+/** Chunk was on 46371 **/
+n.d(t, {
   default: () => N
 });
-var i = t(200651);
-t(192379);
-var o = t(481060),
-  r = t(239091),
-  a = t(883385),
-  c = t(108843),
-  l = t(947440),
-  d = t(100527),
-  u = t(299206),
-  _ = t(916069),
-  s = t(895563),
-  p = t(212205),
-  b = t(478035),
-  f = t(62420),
-  m = t(423589),
-  h = t(398048),
-  x = t(109764),
-  g = t(3689),
-  v = t(323597),
-  y = t(852245),
-  C = t(367722),
-  O = t(461535),
-  P = t(776568),
-  S = t(218035),
-  Z = t(775666),
-  I = t(593589),
-  j = t(442754),
-  k = t(981631),
-  w = t(388032);
+var i = n(200651);
+n(192379);
+var o = n(481060),
+  a = n(239091),
+  r = n(883385),
+  c = n(108843),
+  l = n(947440),
+  d = n(100527),
+  u = n(299206),
+  _ = n(916069),
+  s = n(895563),
+  p = n(212205),
+  b = n(478035),
+  f = n(62420),
+  m = n(423589),
+  h = n(398048),
+  x = n(109764),
+  g = n(3689),
+  v = n(323597),
+  y = n(852245),
+  C = n(367722),
+  O = n(461535),
+  P = n(776568),
+  S = n(218035),
+  Z = n(775666),
+  I = n(593589),
+  j = n(442754),
+  k = n(981631),
+  w = n(388032);
 
 function E(e) {
-  for (var n = 1; n < arguments.length; n++) {
-    var t = null != arguments[n] ? arguments[n] : {},
-      i = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), i.forEach(function(n) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), i.forEach(function(t) {
       var i;
-      i = t[n], n in e ? Object.defineProperty(e, n, {
+      i = n[t], t in e ? Object.defineProperty(e, t, {
         value: i,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[n] = i
+      }) : e[t] = i
     })
   }
   return e
@@ -53,19 +53,19 @@ function E(e) {
 
 function T(e) {
   let {
-    channel: n,
-    onSelect: t
-  } = e, a = (0, O.Z)(n), c = (0, x.Z)(n), d = (0, s.l)(n), _ = (0, s.P)(n), h = (0, p.Z)(n), g = (0, b.Z)(n), v = (0, f.Z)(n), C = (0, P.ZP)(n), I = (0, S.Z)(n), j = (0, y.Z)(n), k = (0, u.Z)({
-    id: n.id,
+    channel: t,
+    onSelect: n
+  } = e, r = (0, O.Z)(t), c = (0, x.Z)(t), d = (0, s.l)(t), _ = (0, s.P)(t), h = (0, p.Z)(t), g = (0, b.Z)(t), v = (0, f.Z)(t), C = (0, P.ZP)(t), I = (0, S.Z)(t), j = (0, y.Z)(t), k = (0, u.Z)({
+    id: t.id,
     label: w.NW.string(w.t.gFHI3t)
-  }), E = (0, l.Z)(n), T = (0, Z.ZP)(n), L = (0, m.Mn)("ChannelContextFavoritesMenu");
+  }), E = (0, l.Z)(t), T = (0, Z.ZP)(t), L = (0, m.Mn)("ChannelContextFavoritesMenu");
   return (0, i.jsxs)(o.v2r, {
     navId: "channel-context",
-    onClose: r.Zy,
+    onClose: a.Zy,
     "aria-label": w.NW.string(w.t.Xm41aW),
-    onSelect: t,
+    onSelect: n,
     children: [(0, i.jsx)(o.kSQ, {
-      children: a
+      children: r
     }), (0, i.jsxs)(o.kSQ, {
       children: [g, v, h, d]
     }), (0, i.jsxs)(o.kSQ, {
@@ -86,18 +86,18 @@ function T(e) {
 
 function L(e) {
   let {
-    channel: n,
-    guild: t,
-    onSelect: a
-  } = e, c = (0, O.Z)(n), d = (0, x.Z)(n), _ = (0, s.l)(n), p = (0, s.P)(n), b = (0, j.Z)(n), f = (0, P.ZP)(n), k = (0, y.Z)(n), E = (0, C.Z)(n, t), T = (0, h.Z)(n, t), L = (0, g.Z)(n, t), N = (0, v.Z)(n), A = (0, u.Z)({
-    id: n.id,
+    channel: t,
+    guild: n,
+    onSelect: r
+  } = e, c = (0, O.Z)(t), d = (0, x.Z)(t), _ = (0, s.l)(t), p = (0, s.P)(t), b = (0, j.Z)(t), f = (0, P.ZP)(t), k = (0, y.Z)(t), E = (0, C.Z)(t, n), T = (0, h.Z)(t, n), L = (0, g.Z)(t, n), N = (0, v.Z)(t), A = (0, u.Z)({
+    id: t.id,
     label: w.NW.string(w.t.gFHI3t)
-  }), B = (0, l.Z)(n), U = (0, I.Z)(n, "list_text_channel_context_menu"), M = (0, S.Z)(n), D = (0, Z.ZP)(n), G = (0, m.Mn)("ChannelContextMenuNormal");
+  }), B = (0, l.Z)(t), U = (0, I.Z)(t, "list_text_channel_context_menu"), M = (0, S.Z)(t), D = (0, Z.ZP)(t), G = (0, m.Mn)("ChannelContextMenuNormal");
   return (0, i.jsxs)(o.v2r, {
     navId: "channel-context",
-    onClose: r.Zy,
+    onClose: a.Zy,
     "aria-label": w.NW.string(w.t.Xm41aW),
-    onSelect: a,
+    onSelect: r,
     children: [(0, i.jsxs)(o.kSQ, {
       children: [c, _]
     }, "mark-as-read-or-favorite"), (0, i.jsxs)(o.kSQ, {
@@ -115,7 +115,7 @@ function L(e) {
     }, "developer-actions")]
   })
 }
-let N = (0, c.Z)((0, a.Z)(function(e) {
+let N = (0, c.Z)((0, r.Z)(function(e) {
   return (0, _.Z)() ? (0, i.jsx)(T, E({}, e)) : (0, i.jsx)(L, E({}, e))
 }, {
   object: k.qAy.CONTEXT_MENU

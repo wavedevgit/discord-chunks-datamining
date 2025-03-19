@@ -10,10 +10,7 @@ var r = t(278074),
 function s(e) {
   let {
     mutualGuilds: n
-  } = (0, o.Z)(e, {
-    fetch: !0,
-    type: "modal"
-  }), t = null == n ? void 0 : n.length;
+  } = (0, o.Z)(e), t = null == n ? void 0 : n.length;
   return [{
     section: i.oh.BOT_INFO,
     text: l.NW.string(l.t.jGoPJS)

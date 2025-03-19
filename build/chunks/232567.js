@@ -4,6 +4,7 @@ n.d(t, {
   In: () => y,
   Lr: () => E,
   PR: () => v,
+  Sr: () => O,
   k: () => g,
   mB: () => b
 }), n(789020);
@@ -118,7 +119,8 @@ async function y(e) {
   l.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
-    guildId: a
+    guildId: a,
+    withMutualFriends: o
   });
   try {
     let c = await s.tn.get({
@@ -152,6 +154,30 @@ async function y(e) {
       apiError: new c.Hx(t),
       userId: e,
       guildId: a
+    }), t
+  }
+}
+async function O(e, t) {
+  l.Z.dispatch({
+    type: "MUTUAL_FRIENDS_FETCH_START",
+    userId: e
+  });
+  try {
+    let n = await s.tn.get({
+      url: _.ANM.USER_RELATIONSHIPS(e),
+      oldFormErrors: !0,
+      signal: t,
+      rejectWithError: !1
+    });
+    l.Z.dispatch({
+      type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
+      userId: e,
+      mutualFriends: n.body
+    })
+  } catch (t) {
+    throw (null == t ? void 0 : t.body) != null && m.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
+      type: "MUTUAL_FRIENDS_FETCH_FAILURE",
+      userId: e
     }), t
   }
 }

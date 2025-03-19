@@ -16,12 +16,12 @@ var o = t(481060),
   p = t(681837),
   b = t(502762),
   m = t(530),
-  v = t(871604),
-  g = t(952124),
+  g = t(871604),
+  v = t(952124),
   y = t(53558),
   I = t(544989),
-  h = t(934861),
-  j = t(4517),
+  j = t(934861),
+  h = t(4517),
   x = t(740628),
   _ = t(398145),
   O = t(228168),
@@ -69,7 +69,7 @@ function E(e) {
           profileType: O.y0.FULL_SIZE,
           children: [(0, r.jsx)(I.Z, {
             profileType: O.y0.FULL_SIZE,
-            children: (0, r.jsx)(g.Z, {
+            children: (0, r.jsx)(v.Z, {
               user: n,
               guildId: B,
               onCloseProfile: R
@@ -87,7 +87,7 @@ function E(e) {
                 guildId: B,
                 channelId: S,
                 profileType: O.y0.FULL_SIZE
-              }), (0, r.jsx)(j.Z, {
+              }), (0, r.jsx)(h.Z, {
                 location: "BotUserProfileModal",
                 user: n,
                 profileType: O.y0.FULL_SIZE,
@@ -95,18 +95,18 @@ function E(e) {
                 onCloseProfile: R
               }), (0, r.jsxs)("div", {
                 className: P.headerButtons,
-                children: [(0, r.jsx)(h.c, {
+                children: [(0, r.jsx)(j.c, {
                   userId: n.id,
                   onClose: R,
                   className: P.messageTextButton
-                }), (0, r.jsx)(h.v, {
+                }), (0, r.jsx)(j.v, {
                   userId: n.id,
                   onClose: R,
                   tooltipContainerClassName: P.messageIconButton
                 }), (0, r.jsx)(y.Z, {
                   user: n,
                   guildId: B
-                }), (0, r.jsx)(v.Z, {
+                }), (0, r.jsx)(g.Z, {
                   user: n
                 })]
               })]

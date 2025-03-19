@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => x
+  Z: () => p
 }), t(978209);
 var r = t(200651),
   i = t(192379),
@@ -12,7 +12,7 @@ var r = t(200651),
   d = t(388032),
   u = t(549564);
 
-function x(e) {
+function p(e) {
   let {
     guildId: n
   } = e, t = (0, s.e7)([l.Z], () => {
@@ -21,7 +21,7 @@ function x(e) {
   }, [n]);
   return (i.useEffect(() => {
     (0, a.C0)(n)
-  }, [n]), null == t) ? null : (0, r.jsxs)("div", {
+  }, [n]), null == t || 0 === t.length) ? null : (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(o.X6, {
       variant: "eyebrow",

@@ -1,15 +1,15 @@
-/** Chunk was on 15066 **/
+/** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => h,
-  n: () => p
+  Z: () => f,
+  n: () => g
 });
-var i, r = n(200651),
-  o = n(192379),
+var r, i = n(200651),
+  s = n(192379),
   a = n(120356),
-  s = n.n(a),
-  l = n(748780),
-  d = n(215569),
-  c = n(315806);
+  l = n.n(a),
+  o = n(748780),
+  c = n(215569),
+  d = n(315806);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,27 +20,27 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
+    }))), r.forEach(function(t) {
       u(e, t, n[t])
     })
   }
   return e
 }
-var p = ((i = {})[i.RIGHT = -1] = "RIGHT", i[i.LEFT = 1] = "LEFT", i);
-let m = {
+var g = ((r = {})[r.RIGHT = -1] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+let p = {
   friction: 7,
   tension: 40,
   clamp: !0
 };
-class b extends o.PureComponent {
+class h extends s.PureComponent {
   componentWillEnter(e) {
-    this._animated.setValue(-this.props.direction), l.Z.spring(this._animated, _({
+    this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
       toValue: 0
     }, this.props.springSettings)).start(e)
   }
@@ -48,12 +48,12 @@ class b extends o.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    l.Z.spring(this._animated, _({
+    o.Z.spring(this._animated, m({
       toValue: this.props.direction
     }, this.props.springSettings)).start(e)
   }
   getStyle() {
-    let e = l.Z.accelerate({
+    let e = o.Z.accelerate({
       transform: [{
         translateX: this._animated.interpolate({
           inputRange: [0, 1],
@@ -67,32 +67,32 @@ class b extends o.PureComponent {
     })), e
   }
   render() {
-    return (0, r.jsx)(l.Z.div, {
+    return (0, i.jsx)(o.Z.div, {
       style: this.getStyle(),
-      className: c.item,
+      className: d.item,
       children: this.props.children
     })
   }
   constructor(e) {
-    super(e), u(this, "_animated", void 0), this._animated = new l.Z.Value(-1 * e.direction)
+    super(e), u(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
   }
 }
-let h = e => {
+let f = e => {
   let {
     children: t,
     step: n,
-    direction: i,
-    className: o,
-    springSettings: a = m,
-    fadeInOut: l = !1
+    direction: r,
+    className: s,
+    springSettings: a = p,
+    fadeInOut: o = !1
   } = e;
-  return (0, r.jsx)(d.W, {
+  return (0, i.jsx)(c.W, {
     component: "div",
-    className: s()(c.animator, o),
-    children: (0, r.jsx)(b, {
-      direction: i,
+    className: l()(d.animator, s),
+    children: (0, i.jsx)(h, {
+      direction: r,
       springSettings: a,
-      fadeInOut: l,
+      fadeInOut: o,
       children: t
     }, n)
   })

@@ -1,26 +1,26 @@
-/** Chunk was on 60662 **/
+/** Chunk was on 44640 **/
 n.d(t, {
-  Z: () => b
+  Z: () => m
 }), n(47120);
 var l, o, r, i = n(442837),
   a = n(570140);
-let _ = {},
-  c = null,
+let c = {},
+  _ = null,
   d = [],
   s = !1,
   u = !1,
   p = null,
   S = null;
 
-function C() {
+function f() {
   u = !0
 }
-class f extends(l = i.ZP.Store) {
+class C extends(l = i.ZP.Store) {
   getAppliedGuildBoostsForGuild(e) {
-    return null != _[e] ? _[e].subscriptions : null
+    return null != c[e] ? c[e].subscriptions : null
   }
   getLastFetchedAtForGuild(e) {
-    return null != _[e] ? _[e].lastFetchedAt : null
+    return null != c[e] ? c[e].lastFetchedAt : null
   }
   getCurrentUserAppliedBoosts() {
     return d
@@ -38,25 +38,25 @@ class f extends(l = i.ZP.Store) {
     return S
   }
   get cooldownEndsAt() {
-    return c
+    return _
   }
   get isFetchingCurrentUserAppliedBoosts() {
     return s
   }
 }
-r = "AppliedGuildBoostStore", (o = "displayName") in f ? Object.defineProperty(f, o, {
+r = "AppliedGuildBoostStore", (o = "displayName") in C ? Object.defineProperty(C, o, {
   value: r,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[o] = r;
-let b = new f(a.Z, {
+}) : C[o] = r;
+let m = new C(a.Z, {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,
       appliedBoosts: n
     } = e;
-    _[t] = {
+    c[t] = {
       subscriptions: n,
       lastFetchedAt: Date.now()
     }
@@ -71,10 +71,10 @@ let b = new f(a.Z, {
     let {
       endsAt: t
     } = e;
-    c = t
+    _ = t
   },
-  GUILD_UNAPPLY_BOOST_START: C,
-  GUILD_APPLY_BOOST_START: C,
+  GUILD_UNAPPLY_BOOST_START: f,
+  GUILD_APPLY_BOOST_START: f,
   GUILD_APPLY_BOOST_SUCCESS: function(e) {
     let {
       appliedGuildBoost: t

@@ -24,10 +24,10 @@ var r = n(200651),
   h = n(602667),
   j = n(644646),
   y = n(880199),
-  x = n(604162),
-  _ = n(747717),
-  D = n(963123),
-  N = n(281055),
+  _ = n(604162),
+  x = n(747717),
+  N = n(963123),
+  D = n(281055),
   P = n(46140),
   T = n(981631),
   I = n(388032),
@@ -68,26 +68,26 @@ function L(e, t) {
 function k(e) {
   var t, n, l, f;
   let h, {
-      transitionState: N,
+      transitionState: D,
       onClose: k,
       quest: R,
       autoplay: M,
       videoSessionId: q,
       impressionRef: B,
-      parentModalOpenStartClockTime: U
+      parentModalOpenStartClockTime: F
     } = e,
-    F = (0, g.il)(R),
+    U = (0, g.il)(R),
     V = (0, s.e7)([d.Z], () => d.Z.getState().theme),
     Z = (0, a.wj)(V) ? T.BRd.DARK : T.BRd.LIGHT,
     Y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     W = (0, p.aM)(),
-    [z, G] = o.useState(F.progressSeconds),
+    [z, G] = o.useState(U.progressSeconds),
     [H, K] = o.useState(!1),
     {
       completedRatio: Q,
       completedRatioDisplay: X
     } = (0, v.I)(R),
-    [$, J] = (0, x.G6)(I.NW.string(I.t.RDE0SU), I.NW.string(I.t["+5kSoa"]), 1700);
+    [$, J] = (0, _.G6)(I.NW.string(I.t.RDE0SU), I.NW.string(I.t["+5kSoa"]), 1700);
   if ((0, g.xN)(R.config) && (null === (t = R.userStatus) || void 0 === t ? void 0 : t.claimedAt) == null) {
     let e = (0, g.LM)(R.config);
     h = (0, r.jsx)(y.Z, {
@@ -106,7 +106,7 @@ function k(e) {
       rewardName: et
     });
   return (0, r.jsx)(c.Y0X, {
-    transitionState: N,
+    transitionState: D,
     size: c.CgR.DYNAMIC,
     className: w.modalRoot,
     children: (0, r.jsx)("div", {
@@ -133,7 +133,7 @@ function k(e) {
                 alt: R.config.messages.gameTitle,
                 className: i()(w.contentHeaderLogotype, w.accentOnHover),
                 src: (0, b.fh)(R, b.eC.LOGO_TYPE, Z).url
-              }), (0, r.jsx)(_.Z, {}), (0, r.jsxs)("div", {
+              }), (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
                 className: w.questHeading,
                 children: [(0, r.jsx)(c.X6q, {
                   variant: "heading-md/semibold",
@@ -175,13 +175,13 @@ function k(e) {
                 })
               }))
             })]
-          }), (0, r.jsx)(D.Z, {
+          }), (0, r.jsx)(N.Z, {
             quest: R,
             videoSessionId: q,
-            parentTransitionState: N,
+            parentTransitionState: D,
             onOptimisticProgressUpdate: G,
             autoplay: M,
-            performanceClockStartTime: U
+            performanceClockStartTime: F
           }), (0, r.jsxs)("div", {
             className: w.contentFooter,
             children: [(0, r.jsx)(c.zxk, {
@@ -244,7 +244,7 @@ function R(e) {
   return null != c ? (0, r.jsx)(h.A, {
     questOrQuests: c,
     questContent: E.jn.VIDEO_MODAL,
-    minViewTimeSeconds: N.zw,
+    minViewTimeSeconds: D.zw,
     trackGuildAndChannelMetadata: !0,
     children: e => (0, r.jsx)(k, L(A({}, i), {
       parentModalOpenStartClockTime: l,

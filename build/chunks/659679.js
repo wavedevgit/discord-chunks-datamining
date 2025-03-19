@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => m
+  Z: () => x
 });
 var r = t(200651);
 t(192379);
@@ -12,15 +12,15 @@ var i = t(793030),
   c = t(709586),
   d = t(709054),
   u = t(730621),
-  x = t(388032),
-  p = t(652754);
+  p = t(388032),
+  _ = t(652754);
 
-function m(e) {
+function x(e) {
   let {
     boost: n
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
-    username: m,
-    roleColor: v
+    username: x,
+    roleColor: m
   } = (0, o.cj)([l.ZP], () => {
     var e, t, r;
     return {
@@ -29,28 +29,28 @@ function m(e) {
     }
   }, [n]);
   return (0, r.jsx)(a.Z, {
-    className: p.systemMessageContainer,
-    contentClassName: p.systemMessageContent,
+    className: _.systemMessageContainer,
+    contentClassName: _.systemMessageContent,
     iconNode: (0, r.jsx)(c.Z, {
-      className: p.icon,
+      className: _.icon,
       width: 16,
       height: 16
     }),
-    iconContainerClassName: p.iconContainer,
-    timestampClassName: p.timestamp,
+    iconContainerClassName: _.iconContainer,
+    timestampClassName: _.timestamp,
     timestamp: t,
     compact: !0,
     children: (0, r.jsxs)("span", {
-      className: p.boostMessage,
+      className: _.boostMessage,
       children: [(0, r.jsx)(i.xv, {
         variant: "text-md/semibold",
         children: (0, r.jsx)(s.PUh, {
-          name: m,
-          color: null != v ? v : void 0
+          name: x,
+          color: null != m ? m : void 0
         })
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",
-        children: x.NW.string(u.Z.plwH8f)
+        children: p.NW.string(u.Z.plwH8f)
       })]
     })
   })

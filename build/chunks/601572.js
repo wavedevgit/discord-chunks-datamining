@@ -1,6 +1,6 @@
-/** Chunk was on 44070 **/
+/** Chunk was on 68121 **/
 n.d(t, {
-  default: () => k
+  default: () => O
 }), n(47120);
 var o = n(200651),
   a = n(192379),
@@ -8,8 +8,8 @@ var o = n(200651),
   i = n(846027),
   c = n(410575),
   l = n(2052),
-  d = n(100527),
-  _ = n(906732),
+  _ = n(100527),
+  d = n(906732),
   s = n(600164),
   u = n(313201),
   b = n(695346),
@@ -23,17 +23,17 @@ var o = n(200651),
   S = n(747545),
   T = n(981631),
   I = n(388032),
-  O = n(262474);
+  k = n(262474);
 
-function k(e) {
+function O(e) {
   let {
     transitionState: t,
     videoEnabled: n,
-    onEnable: k,
-    onClose: B
-  } = e, x = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
+    onEnable: O,
+    onClose: x
+  } = e, B = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
     analyticsLocations: N
-  } = (0, _.ZP)(d.Z.CAMERA_PREVIEW), R = a.useRef(null);
+  } = (0, d.ZP)(_.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
     C.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
@@ -43,7 +43,7 @@ function k(e) {
     null === (e = R.current) || void 0 === e || e.scrollToTop()
   }, []);
   let D = async () => {
-    await W(), i.Z.setVideoEnabled(!0), null == k || k()
+    await W(), i.Z.setVideoEnabled(!0), null == O || O()
   }, W = async () => {
     try {
       await (0, g.wG)(A, {
@@ -69,23 +69,23 @@ function k(e) {
         }, E.location)
       })
     } catch (e) {}
-    await B(), (0, f.Up)(A)
+    await x(), (0, f.Up)(A)
   };
-  return (0, o.jsx)(_.Gt, {
+  return (0, o.jsx)(d.Gt, {
     value: N,
     children: (0, o.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, o.jsxs)(r.Y0X, {
-        className: O.modalRoot,
+        className: k.modalRoot,
         size: r.CgR.DYNAMIC,
         "aria-labelledby": y,
         transitionState: t,
         children: [(0, o.jsxs)(r.hzk, {
-          className: P ? O.contentWithVideoBackgrounds : O.content,
+          className: P ? k.contentWithVideoBackgrounds : k.content,
           scrollerRef: R,
           children: [(0, o.jsx)(r.X6q, {
             id: y,
-            className: O.header,
+            className: k.header,
             variant: "heading-xl/semibold",
             children: n ? I.NW.string(I.t.LAwwbW) : I.NW.string(I.t["/HITVF"])
           }), (0, o.jsx)(S.Z, {
@@ -97,10 +97,10 @@ function k(e) {
             onSelectBackgroundOption: L,
             hideDeviceSelector: n,
             renderCamera: e => (0, o.jsxs)("div", {
-              className: O.cameraPreview,
+              className: k.cameraPreview,
               children: [(0, o.jsx)("div", {
-                className: O.camera,
-                children: (0, o.jsx)(x, {
+                className: k.camera,
+                children: (0, o.jsx)(B, {
                   disabled: !1,
                   deviceId: e,
                   width: 368,
@@ -108,7 +108,7 @@ function k(e) {
                 })
               }), (0, o.jsx)(S.S, {})]
             }),
-            onLearnMore: B
+            onLearnMore: x
           })]
         }), (0, o.jsxs)(r.mzw, {
           justify: s.Z.Justify.BETWEEN,
@@ -135,8 +135,8 @@ function k(e) {
             })
           })]
         }), (0, o.jsx)(r.olH, {
-          onClick: B,
-          className: O.modalClose
+          onClick: x,
+          className: k.modalClose
         })]
       })
     })

@@ -1,6 +1,6 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  Z: () => j
+  Z: () => h
 });
 var r = t(200651);
 t(192379);
@@ -16,17 +16,17 @@ var o = t(442837),
   p = t(172351),
   b = t(280885),
   m = t(900927),
-  v = t(678738),
-  g = t(179828),
+  g = t(678738),
+  v = t(179828),
   y = t(228168),
   I = t(388032),
-  h = t(330724);
+  j = t(330724);
 
-function j(e) {
+function h(e) {
   var n;
   let {
     user: t,
-    currentUser: j,
+    currentUser: h,
     displayProfile: x,
     subsection: _,
     onClose: O
@@ -40,7 +40,7 @@ function j(e) {
   }) ? I.NW.string(I.t["mQKv+v"]) : I.NW.string(I.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
-    className: h.scroller,
+    className: j.scroller,
     children: [(null == x ? void 0 : x.bio) != null && (null == x ? void 0 : x.bio) !== "" && (0, r.jsx)(b.Z, {
       userBio: x.bio,
       setLineClamp: !1
@@ -50,24 +50,24 @@ function j(e) {
       channel: E,
       guildId: null !== (n = null == x ? void 0 : x.guildId) && void 0 !== n ? n : void 0,
       onClick: O
-    }), null != N && (0, r.jsx)(g.Z, {
+    }), null != N && (0, r.jsx)(v.Z, {
       user: t,
-      currentUser: j,
+      currentUser: h,
       guild: N,
       scrollIntoView: _ === y.Tb.ROLES
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(g.Z, {
       heading: I.NW.string(I.t["A//N4u"]),
       children: (0, r.jsx)(m.Z, {
         userId: t.id,
         guildId: null == x ? void 0 : x.guildId,
         tooltipDelay: y.vB
       })
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(g.Z, {
       heading: S,
       scrollIntoView: _ === y.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: t.id,
-        className: h.note,
+        className: j.note,
         autoFocus: _ === y.Tb.NOTE,
         onUpdate: () => Z({
           action: "SET_NOTE"

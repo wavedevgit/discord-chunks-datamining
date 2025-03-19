@@ -1,65 +1,39 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => u
 }), n(47120), n(977457);
 var r = n(192379),
   i = n(392711),
   o = n(442837),
-  a = n(881052),
-  s = n(699682),
-  l = n(81897),
-  c = n(752048),
-  u = n(771845),
-  d = n(621853),
-  f = n(484459);
+  a = n(699682),
+  s = n(752048),
+  l = n(771845),
+  c = n(621853);
 
-function _(e) {
-  let {
-    fetch: t,
-    type: n
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-    fetch: !1
-  }, [_, p, h] = (0, o.Wu)([d.Z], () => [d.Z.getMutualFriends(e.id), d.Z.getMutualGuilds(e.id), d.Z.isFetchingProfile(e.id)]), m = (0, l.Z)(), [g, E] = (0, r.useState)(null), b = t && null == g && !h, v = !e.bot && null == _, y = null == p, O = b && (v || y);
-  (0, r.useEffect)(() => {
-    O && (async () => {
-      try {
-        await (0, f.Z)(e.id, void 0, {
-          withMutualFriends: !e.bot,
-          withMutualGuilds: !0,
-          type: n,
-          abortSignal: m
-        })
-      } catch (e) {
-        E(new a.Hx(e))
-      }
-    })()
-  }, [O, e.id, e.bot, n, m]);
-  let I = (0, o.e7)([c.Z], () => c.Z.getUserAffinitiesMap()),
-    S = (0, o.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()),
-    T = (0, r.useMemo)(() => null == _ || _.length < 2 ? _ : (0, i.sortBy)(_, e => {
-      var t, n;
+function u(e) {
+  let [t, n, u, d, f] = (0, o.Wu)([c.Z], () => [c.Z.getMutualFriendsCount(e.id), c.Z.getMutualFriends(e.id), c.Z.getMutualGuilds(e.id), c.Z.isFetchingProfile(e.id), c.Z.isFetchingFriends(e.id)]), _ = (0, o.e7)([s.Z], () => s.Z.getUserAffinitiesMap()), p = (0, o.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), h = (0, r.useMemo)(() => null == n || n.length < 2 ? n : (0, i.sortBy)(n, e => {
+    var t, n;
+    let {
+      user: r
+    } = e;
+    return -((null !== (n = null === (t = _.get(r.id)) || void 0 === t ? void 0 : t.communicationProbability) && void 0 !== n ? n : -1) * 1)
+  }), [n, _]), m = (0, r.useMemo)(() => {
+    if (null == u || u.length < 2) return u;
+    let e = Object.fromEntries(p.map((e, t) => [e, t]));
+    return (0, i.sortBy)(u, t => {
+      var n;
       let {
-        user: r
-      } = e;
-      return -((null !== (n = null === (t = I.get(r.id)) || void 0 === t ? void 0 : t.communicationProbability) && void 0 !== n ? n : -1) * 1)
-    }), [_, I]),
-    N = (0, r.useMemo)(() => {
-      if (null == p || p.length < 2) return p;
-      let e = Object.fromEntries(S.map((e, t) => [e, t]));
-      return (0, i.sortBy)(p, t => {
-        var n;
-        let {
-          guild: r
-        } = t;
-        return null !== (n = e[r.id]) && void 0 !== n ? n : S.length
-      })
-    }, [p, S]),
-    A = (0, s.Z)(T),
-    C = (0, s.Z)(N);
+        guild: r
+      } = t;
+      return null !== (n = e[r.id]) && void 0 !== n ? n : p.length
+    })
+  }, [u, p]), g = (0, a.Z)(t), E = (0, a.Z)(h), b = (0, a.Z)(m);
   return {
-    mutualFriends: null != T ? T : A,
-    mutualGuilds: null != N ? N : C,
-    isFetching: h
+    mutualFriendsCount: null != t ? t : g,
+    mutualFriends: null != h ? h : E,
+    mutualGuilds: null != m ? m : b,
+    isFetching: d,
+    isFetchingFriends: f
   }
 }

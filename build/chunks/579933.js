@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 54835 **/
 e.exports = {
   descriptionWrapper: "descriptionWrapper__43963",
   subText: "subText__43963",

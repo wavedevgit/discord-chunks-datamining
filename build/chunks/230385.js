@@ -109,18 +109,19 @@ class v extends i.Z {
     }
   }
   handleVoiceFilterDownloadFailed(e) {
-    var t;
+    var t, n;
     let {
-      modelId: n,
-      voiceFilterId: r,
-      error: i
-    } = e;
+      modelId: r,
+      voiceFilterId: i,
+      error: o
+    } = e, a = (null !== (t = null == o ? void 0 : o.message) && void 0 !== t ? t : String(o)).substring(0, 200);
     l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
-      active_voice_filter_id: null !== (t = s.Z.getActiveVoiceFilter()) && void 0 !== t ? t : null,
+      active_voice_filter_id: null !== (n = s.Z.getActiveVoiceFilter()) && void 0 !== n ? n : null,
       success: !1,
-      canceled: null != i && "USER_CANCELED_DOWNLOAD" in i,
-      voice_filter_id: r,
-      model_id: n
+      canceled: null != o && "USER_CANCELED_DOWNLOAD" in o,
+      voice_filter_id: i,
+      model_id: r,
+      error_message: a
     })
   }
   handleVoiceFilterApplied(e) {

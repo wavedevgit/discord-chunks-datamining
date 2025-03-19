@@ -49,15 +49,17 @@ async function h(e) {
   p(t), null == O ? await (0, a.In)(t, {
     type: "modal",
     guildId: g && null != n ? n : void 0,
+    withMutualFriendsCount: !0,
+    withMutualFriends: !1,
     withMutualGuilds: !0,
-    withMutualFriends: !0,
     friendToken: m,
     joinRequestId: u
   }) : (0, d.Z)(O.id, O.getAvatarURL(void 0, f), {
     type: "modal",
     guildId: g && null != n ? n : void 0,
+    withMutualFriendsCount: !O.bot,
+    withMutualFriends: !1,
     withMutualGuilds: !0,
-    withMutualFriends: !0,
     friendToken: m,
     joinRequestId: u
   }), o.Z.dispatch({

@@ -1,6 +1,6 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  Z: () => j
+  Z: () => h
 }), t(47120);
 var r = t(200651),
   o = t(192379),
@@ -15,12 +15,12 @@ var r = t(200651),
   p = t(384816),
   b = t(389190),
   m = t(428927),
-  v = t(228168),
-  g = t(388032),
+  g = t(228168),
+  v = t(388032),
   y = t(658266),
   I = t(363899);
 
-function h(e) {
+function j(e) {
   let {
     section: n,
     subsection: t,
@@ -30,21 +30,21 @@ function h(e) {
     guildId: s,
     onClose: c
   } = e;
-  return n === v.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return n === g.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: o,
     currentUser: i,
     displayProfile: l,
     guildId: s,
     onClose: c
-  }) : n === v.oh.MUTUAL_FRIENDS ? (0, r.jsx)(b.Z, {
+  }) : n === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(b.Z, {
     user: o,
     onClose: c
-  }) : n === v.oh.MUTUAL_GUILDS ? (0, r.jsx)(m.Z, {
+  }) : n === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(m.Z, {
     user: o,
     onClose: c
-  }) : n === v.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : n === g.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: o
-  }) : n === v.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : n === g.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: o,
     currentUser: i,
     displayProfile: l,
@@ -59,7 +59,7 @@ function h(e) {
   })
 }
 
-function j(e) {
+function h(e) {
   var n, t, d;
   let {
     user: u,
@@ -67,7 +67,7 @@ function j(e) {
     displayProfile: p,
     guildId: b,
     items: m,
-    initialSection: j = v.oh.USER_INFO,
+    initialSection: h = g.oh.USER_INFO,
     initialSubsection: x,
     onClose: _
   } = e, {
@@ -80,7 +80,7 @@ function j(e) {
       let {
         section: n
       } = e;
-      return n === j
+      return n === h
     })) || void 0 === n ? void 0 : n.section) && void 0 !== d ? d : null === (t = m[0]) || void 0 === t ? void 0 : t.section,
     subsection: x
   });
@@ -107,7 +107,7 @@ function j(e) {
         className: y.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
         className: y.emptyText,
-        children: g.NW.string(g.t.Br1ls7)
+        children: v.NW.string(v.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {
@@ -132,7 +132,7 @@ function j(e) {
           })
         }, n)
       })
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(j, {
       items: m,
       section: N,
       subsection: P,

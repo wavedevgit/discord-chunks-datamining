@@ -15,12 +15,12 @@ var r = t(200651),
   p = t(429467),
   b = t(680295),
   m = t(699516),
-  v = t(5192),
-  g = t(785717),
+  g = t(5192),
+  v = t(785717),
   y = t(221292),
   I = t(687158),
-  h = t(510659),
-  j = t(113557),
+  j = t(510659),
+  h = t(113557),
   x = t(867176),
   _ = t(451834),
   O = t(502762),
@@ -88,7 +88,7 @@ function D(e) {
     sourceAnalyticsLocations: H = []
   } = e, {
     analyticsLocations: Q
-  } = (0, u.ZP)([...H, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, g.ZB)({
+  } = (0, u.ZP)([...H, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, v.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: G,
@@ -97,7 +97,7 @@ function D(e) {
     messageId: F,
     roleId: k,
     showGuildProfile: q
-  }), ee = (0, h.$m)(), en = (0, s.q_F)({
+  }), ee = (0, j.$m)(), en = (0, s.q_F)({
     opacity: +(null != ee.interactionType),
     config: {
       duration: 150
@@ -112,9 +112,9 @@ function D(e) {
     ed = (0, c.Z)(ea);
   return (0, r.jsx)(u.Gt, {
     value: Q,
-    children: (0, r.jsx)(g.Mt, {
+    children: (0, r.jsx)(v.Mt, {
       value: $,
-      children: (0, r.jsx)(h.NJ, {
+      children: (0, r.jsx)(j.NJ, {
         value: ee,
         children: (0, r.jsxs)(s.Y0X, {
           transitionState: X,
@@ -146,7 +146,7 @@ function D(e) {
                   id: "view-main-profile",
                   label: M.NW.string(M.t.GISTtb),
                   subtext: M.NW.formatToPlainString(M.t["mn/nW1"], {
-                    displayName: v.ZP.getName(void 0, void 0, n)
+                    displayName: g.ZP.getName(void 0, void 0, n)
                   }),
                   action: () => {
                     J(), (0, C.openUserProfileModal)(B(U({}, $), {
@@ -162,7 +162,7 @@ function D(e) {
                   id: "view-server-profile",
                   label: M.NW.string(M.t.DisZzM),
                   subtext: M.NW.formatToPlainString(M.t["mn/nW1"], {
-                    displayName: v.ZP.getName(D, W, n)
+                    displayName: g.ZP.getName(D, W, n)
                   }),
                   action: () => {
                     J(), (0, C.openUserProfileModal)(B(U({}, $), {
@@ -190,7 +190,7 @@ function D(e) {
                 className: R.backdrop
               }), (0, r.jsxs)("div", {
                 className: R.headerInner,
-                children: [(0, r.jsx)(j.Z, {
+                children: [(0, r.jsx)(h.Z, {
                   location: "UserProfileModal",
                   user: n,
                   displayProfile: et,

@@ -154,31 +154,32 @@ function z(e) {
   s = t, G()
 }
 
-function q(e, t) {
+function q(e, t, n) {
   if (j.delete(e), null == t) {
     let n = S.Z.getGuildId();
     x[U(n)] === e && (t = n)
   }
-  let n = null != O.Z.getGuild(t) ? t : null,
-    r = !1;
-  s === e && (s = null, r = !0), x[U(n)] === e && (x[U(n)] = B(U(n)), S.Z.getGuildId() === n && (0, m.dL)(T.Z5c.CHANNEL(t, x[U(n)])), r = !0), null != n && k[n] === e && (delete k[n], r = !0), r && G()
+  let r = null != O.Z.getGuild(t) ? t : null,
+    i = !1;
+  s === e && (s = null, i = !0), x[U(r)] === e && (x[U(r)] = null != n ? n : B(U(r)), S.Z.getGuildId() === r && (0, m.dL)(T.Z5c.CHANNEL(t, x[U(r)])), i = !0), null != r && k[r] === e && (delete k[r], i = !0), i && G()
 }
 
 function Q(e) {
   let {
     channel: {
       id: t,
-      guild_id: n
+      guild_id: n,
+      parent_id: r
     }
   } = e;
-  q(t, n)
+  q(t, n, r)
 }
 
 function X(e) {
   let {
     channels: t
   } = e;
-  for (let e of t) e.isScheduledForDeletion() && q(e.id, e.guild_id)
+  for (let e of t) e.isScheduledForDeletion() && q(e.id, e.guild_id, e.parent_id)
 }
 
 function J(e) {

@@ -32,11 +32,11 @@ function v(e) {
     onClick: b,
     onScrubBack: O,
     onScrubForward: S
-  } = e, [C, h] = o.useState(null), [j, y] = o.useState(null), [x, _] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
+  } = e, [C, h] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [N, D] = o.useState(!1), P = o.useRef(null), T = e => {
     P.current = e, h(e)
   };
   o.useEffect(() => {
-    null != C && (null == g ? _(null) : _(p(g, E, C)))
+    null != C && (null == g ? x(null) : x(p(g, E, C)))
   }, [C, g, E]);
   let I = (0, a.y)(() => {
     null != I.current && T(I.current.getBoundingClientRect())
@@ -62,7 +62,7 @@ function v(e) {
     k = (0, c.yv)(L),
     R = null != C ? C.right - p(t / 100 * E, E, C) : null,
     M = null != j && null != C ? C.right - j : null,
-    q = null != x && null != C ? C.right - x : null;
+    q = null != _ && null != C ? C.right - _ : null;
   return (0, r.jsxs)("div", {
     className: d.cont,
     ref: I,
@@ -75,13 +75,13 @@ function v(e) {
         l && null != b && b(m(e.clientX, e.currentTarget.getBoundingClientRect(), E))
       },
       onMouseEnter: e => {
-        l && (null != I.current && T(I.current.getBoundingClientRect()), N(!0), w(e))
+        l && (null != I.current && T(I.current.getBoundingClientRect()), D(!0), w(e))
       },
       onMouseLeave: e => {
-        l && (N(!1), y(null))
+        l && (D(!1), y(null))
       },
       onMouseMove: e => {
-        l && D && w(e)
+        l && N && w(e)
       },
       onKeyDown: A,
       tabIndex: l ? void 0 : -1,
@@ -93,7 +93,7 @@ function v(e) {
       },
       children: [null == f ? void 0 : f.map(e => (0, r.jsx)("div", {
         className: i()(d.buffer, {
-          [d.bufferHovered]: D
+          [d.bufferHovered]: N
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
@@ -110,9 +110,9 @@ function v(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : void 0,
-        size: D ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
+        size: N ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != k && (0, r.jsx)(s.Text, {
+      }), N && null != k && (0, r.jsx)(s.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -120,7 +120,7 @@ function v(e) {
           color: "#FFFFFF"
         },
         children: k
-      }), D && l && null != R && (0, r.jsx)("div", {
+      }), N && l && null != R && (0, r.jsx)("div", {
         className: d.grabber,
         style: {
           right: "".concat(R - 6, "px")

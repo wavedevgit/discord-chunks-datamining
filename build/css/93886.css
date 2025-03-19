@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 4a0a7403e60ff868
+  Original File Name: 646dc468b9a36f30
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -4988,6 +4988,44 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     border-color: var(--bg-brand)
 }
 
+.upsellFooter__5e07c {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px
+}
+
+.upsellFooterIcon__5e07c {
+    flex-shrink: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px
+}
+
+.reverseTrialUpsellContainer__5e07c {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
+}
+
+.unlockIcon__5e07c {
+    height: 46px;
+    width: 46px;
+    pointer-events: none;
+    position: absolute;
+    left: 7px;
+    top: -14px
+}
+
+.upsellText__5e07c {
+    padding-left: 48px
+}
+
 .container__6e9b4 {
     position: relative;
     pointer-events: all;
@@ -5382,4 +5420,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=4a0a7403e60ff868.css.map*/
+/*# sourceMappingURL=646dc468b9a36f30.css.map*/

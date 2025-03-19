@@ -15,12 +15,12 @@ var r = t(200651),
   p = t(899007),
   b = t(648052),
   m = t(867176),
-  v = t(280885),
-  g = t(900927),
+  g = t(280885),
+  v = t(900927),
   y = t(678738),
   I = t(502762),
-  h = t(530),
-  j = t(679332),
+  j = t(530),
+  h = t(679332),
   x = t(544989),
   _ = t(228168),
   O = t(981631),
@@ -67,7 +67,7 @@ function S(e) {
           ref: W,
           children: [(0, r.jsx)(x.Z, {
             profileType: _.y0.FULL_SIZE,
-            children: (0, r.jsx)(j.Z, {
+            children: (0, r.jsx)(h.Z, {
               user: n
             })
           }), (0, r.jsxs)("header", {
@@ -87,7 +87,7 @@ function S(e) {
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
-            children: [(0, r.jsx)(h.Z, {
+            children: [(0, r.jsx)(j.Z, {
               user: n,
               profileType: _.y0.FULL_SIZE,
               nickname: d.ZP.getName(R, S, n),
@@ -119,13 +119,13 @@ function S(e) {
                 }), (0, r.jsxs)(i.zJl, {
                   fade: !0,
                   className: P.scroller,
-                  children: [(0, r.jsx)(v.Z, {
+                  children: [(0, r.jsx)(g.Z, {
                     userId: n.id,
                     userBio: null == U ? void 0 : U.bio,
                     setLineClamp: !1
                   }), (0, r.jsx)(y.Z, {
                     heading: Z.NW.string(Z.t["A//N4u"]),
-                    children: (0, r.jsx)(g.Z, {
+                    children: (0, r.jsx)(v.Z, {
                       userId: n.id,
                       guildId: R,
                       tooltipDelay: _.vB

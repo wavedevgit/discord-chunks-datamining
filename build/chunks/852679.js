@@ -25,24 +25,26 @@ async function p(e) {
     onCloseModal: E,
     totalNumberOfSlotsToAssign: b = 1,
     disablePremiumUpsell: v,
-    onSubscriptionConfirmation: y,
-    inPopout: O,
-    applicationId: I
-  } = e, S = O ? i.u1M : i.z1l, T = l.ZP.getPremiumTypeSubscription();
-  if (null != T && T.isPurchasedExternally && null != T.paymentGateway) {
+    onSubscribeComplete: y,
+    onSubscriptionConfirmation: O,
+    inPopout: I,
+    applicationId: S,
+    intent: T
+  } = e, N = I ? i.u1M : i.z1l, A = l.ZP.getPremiumTypeSubscription();
+  if (null != A && A.isPurchasedExternally && null != A.paymentGateway) {
     null != g && g(), o.Z.show({
       title: f.NW.formatToPlainString(f.t.rTk9v7, {
-        paymentGatewayName: d.Vzj[T.paymentGateway]
+        paymentGatewayName: d.Vzj[A.paymentGateway]
       }),
       body: f.NW.format(f.t.NY03WF, {
-        paymentGatewayName: d.Vzj[T.paymentGateway],
-        subscriptionManagementLink: (0, u.JE)(T.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
+        paymentGatewayName: d.Vzj[A.paymentGateway],
+        subscriptionManagementLink: (0, u.JE)(A.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
       })
     });
     return
   }
   Promise.all([(0, a.tZ)(), (0, s.Y2)()]);
-  let N = () => {
+  let C = () => {
     c.default.track(d.rMx.MODAL_DISMISSED, {
       type: d.jXE.PREMIUM_GUILD_PURCHASE_MODAL,
       location: p
@@ -51,7 +53,7 @@ async function p(e) {
   await (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("22646"), n.e("63844")]).then(n.bind(n, 343649));
+    } = await Promise.all([n.e("22646"), n.e("24920"), n.e("13409")]).then(n.bind(n, 343649));
     return n => {
       let {
         transitionState: i,
@@ -69,16 +71,18 @@ async function p(e) {
         totalNumberOfSlotsToAssign: b,
         closeGuildPerksModal: g,
         disablePremiumUpsell: v,
-        onSubscriptionConfirmation: y,
-        applicationId: I
+        onSubscriptionConfirmation: O,
+        onSubscribeComplete: y,
+        applicationId: S,
+        intent: T
       })
     }
   }, {
     modalKey: _,
-    onCloseCallback: N,
+    onCloseCallback: C,
     onCloseRequest: () => {
       (0, i.Mr3)(_), null == E || E(!1)
     },
-    contextKey: S
+    contextKey: N
   })
 }

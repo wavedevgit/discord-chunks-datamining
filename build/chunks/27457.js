@@ -1,4 +1,4 @@
-/** Chunk was on 53469 **/
+/** Chunk was on 23354 **/
 n.d(t, {
   BP: () => em,
   ZP: () => eb
@@ -186,8 +186,8 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
         return () => clearTimeout(e)
       }
     }, [e$, e0, eb.hdStreamingUntil]);
-    let e4 = (0, P.o)(F, eG),
-      e1 = (0, v.lL)("CallTile", !0, eG, e4),
+    let e1 = (0, P.o)(F, eG),
+      e4 = (0, v.lL)("CallTile", !0, eG, e1),
       e3 = (0, a.e7)([j.Z], () => F.type === en.fO.USER && null != eW ? j.Z.getEffectForUserId(eW) : null),
       e6 = (0, a.e7)([V.Z], () => V.Z.getVoicePlatformForChannel(eb.id, null != eW ? eW : et.lds)),
       {
@@ -202,9 +202,9 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       }, {
         autoTrackExposure: !1
       }),
-      e8 = (0, a.e7)([U.Z], () => e9 && null != eW ? U.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e9, eW]),
-      e7 = (0, a.e7)([M.Z], () => (null == e8 ? void 0 : e8.application_id) != null ? M.Z.getDetectableGame(e8.application_id) : null),
-      e5 = (0, a.e7)([p.Z], () => null != e7 && (null == e8 ? void 0 : e8.application_id) != null ? p.Z.getApplication(null == e8 ? void 0 : e8.application_id) : void 0),
+      e7 = (0, a.e7)([U.Z], () => e9 && null != eW ? U.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e9, eW]),
+      e8 = (0, a.e7)([M.Z], () => (null == e7 ? void 0 : e7.application_id) != null ? M.Z.getDetectableGame(e7.application_id) : null),
+      e5 = (0, a.e7)([p.Z], () => null != e8 && (null == e7 ? void 0 : e7.application_id) != null ? p.Z.getApplication(null == e7 ? void 0 : e7.application_id) : void 0),
       te = (0, R.wV)({
         userId: eW,
         channelId: eb.id
@@ -254,7 +254,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
           width: eO,
           focused: ey,
           idle: eL,
-          premiumIndicator: e1.enabled
+          premiumIndicator: e4.enabled
         }), t_ = el.NW.formatToPlainString(el.t.gHPz3d, {
           streamerName: F.user.username
         });

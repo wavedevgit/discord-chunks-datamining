@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 54835 **/
 e.exports = {
   cardDescriptionTenureReward: "cardDescriptionTenureReward__1f069",
   descriptionCTATenureReward: "descriptionCTATenureReward__1f069",

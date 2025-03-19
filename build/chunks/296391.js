@@ -16,12 +16,12 @@ var o = t(442837),
   p = t(29899),
   b = t(678738),
   m = t(151545),
-  v = t(744802),
-  g = t(493043),
+  g = t(744802),
+  v = t(493043),
   y = t(864141),
   I = t(228168),
-  h = t(981631),
-  j = t(388032),
+  j = t(981631),
+  h = t(388032),
   x = t(559215),
   _ = t(658266);
 
@@ -64,7 +64,7 @@ function O(e) {
         user: n,
         voiceChannel: w,
         onClose: P
-      }), null != A && (0, r.jsx)(g.Z, {
+      }), null != A && (0, r.jsx)(v.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
@@ -79,15 +79,15 @@ function O(e) {
         profileGuildId: null == O ? void 0 : O.guildId
       }, "live-".concat(o)))]
     }) : null, W ? (0, r.jsx)(b.Z, {
-      heading: j.NW.string(j.t.M0zgnZ),
-      subheading: R ? j.NW.format(j.t["4bk9Ag"], {
+      heading: h.NW.string(h.t.M0zgnZ),
+      subheading: R ? h.NW.format(h.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
-          href: d.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(j.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : void 0,
       scrollIntoView: N === I.Tb.RECENT_ACTIVITY,
-      children: C.map(e => (0, r.jsx)(v.Z, {
+      children: C.map(e => (0, r.jsx)(g.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,

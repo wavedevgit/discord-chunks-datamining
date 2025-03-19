@@ -138,9 +138,9 @@ function F(e) {
 }
 
 function V(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, I, N, x, j, U, G, F, V, Z, H, W, Y, K, z, q;
-  let Q = null !== (x = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== x ? x : y;
-  if (null === (n = O.get(e.user.id)) || void 0 === n || n.delete(Q), null != e.mutual_guilds) {
+  var t, n, r, i, s, l, c, d, f, h, g, b, N, x, j, U, G, F, V, Z, H, W, Y, K, z, q, Q;
+  let X = null !== (j = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== j ? j : y;
+  if (null === (n = O.get(e.user.id)) || void 0 === n || n.delete(X), I.delete(e.user.id), null != e.mutual_guilds) {
     let t = {};
     e.mutual_guilds.forEach(e => {
       let {
@@ -161,56 +161,56 @@ function V(e) {
     D.set(e.user.id, t)
   }
   null != e.mutual_friends && (w.set(e.user.id, B(e.mutual_friends)), D.set(e.user.id, e.mutual_friends.length));
-  let X = null != e.premium_since ? new Date(e.premium_since) : null,
-    J = null != e.premium_guild_since ? new Date(e.premium_guild_since) : null,
-    $ = e.application;
+  let J = null != e.premium_since ? new Date(e.premium_since) : null,
+    $ = null != e.premium_guild_since ? new Date(e.premium_guild_since) : null,
+    ee = e.application;
   if (A.set(e.user.id, {
       userId: e.user.id,
       banner: null === (r = e.user_profile) || void 0 === r ? void 0 : r.banner,
       accentColor: null === (i = e.user_profile) || void 0 === i ? void 0 : i.accent_color,
       themeColors: null === (s = e.user_profile) || void 0 === s ? void 0 : s.theme_colors,
       popoutAnimationParticleType: null === (l = e.user_profile) || void 0 === l ? void 0 : l.popout_animation_particle_type,
-      bio: null !== (j = null === (c = e.user_profile) || void 0 === c ? void 0 : c.bio) && void 0 !== j ? j : "",
+      bio: null !== (U = null === (c = e.user_profile) || void 0 === c ? void 0 : c.bio) && void 0 !== U ? U : "",
       profileEffectId: null === (f = e.user_profile) || void 0 === f ? void 0 : null === (d = f.profile_effect) || void 0 === d ? void 0 : d.id,
       profileEffectExpiresAt: null === (g = e.user_profile) || void 0 === g ? void 0 : null === (h = g.profile_effect) || void 0 === h ? void 0 : h.expires_at,
-      pronouns: null !== (U = null === (b = e.user_profile) || void 0 === b ? void 0 : b.pronouns) && void 0 !== U ? U : "",
-      connectedAccounts: null !== (G = e.connected_accounts.filter(e => a.Z.isSupported(e.type))) && void 0 !== G ? G : [],
-      applicationRoleConnections: null !== (F = e.application_role_connections) && void 0 !== F ? F : [],
-      premiumSince: X,
+      pronouns: null !== (G = null === (b = e.user_profile) || void 0 === b ? void 0 : b.pronouns) && void 0 !== G ? G : "",
+      connectedAccounts: null !== (F = e.connected_accounts.filter(e => a.Z.isSupported(e.type))) && void 0 !== F ? F : [],
+      applicationRoleConnections: null !== (V = e.application_role_connections) && void 0 !== V ? V : [],
+      premiumSince: J,
       premiumType: e.premium_type,
-      premiumGuildSince: J,
+      premiumGuildSince: $,
       lastFetched: Date.now(),
       legacyUsername: e.legacy_username,
-      application: null != $ ? {
-        id: $.id,
-        primarySkuId: $.primary_sku_id,
-        customInstallUrl: $.custom_install_url,
-        installParams: $.install_params,
-        integrationTypesConfig: $.integration_types_config,
-        flags: $.flags,
-        popularApplicationCommandIds: $.popular_application_command_ids,
-        storefront_available: $.storefront_available,
-        name: $.name
+      application: null != ee ? {
+        id: ee.id,
+        primarySkuId: ee.primary_sku_id,
+        customInstallUrl: ee.custom_install_url,
+        installParams: ee.install_params,
+        integrationTypesConfig: ee.integration_types_config,
+        flags: ee.flags,
+        popularApplicationCommandIds: ee.popular_application_command_ids,
+        storefront_available: ee.storefront_available,
+        name: ee.name
       } : null,
       badges: null != e.badges ? e.badges.map(e => {
         let t = (0, p.fv)(e.id);
-        if ((e.id === S || null != t) && null != X) {
+        if ((e.id === S || null != t) && null != J) {
           let n = m.NW.formatToPlainString(m.t["8zbGNT"], {
-            date: X
+            date: J
           });
           return null != t && (n = 2 === t.badgeVersion ? m.NW.formatToPlainString(m.t.Hu4jfn, {
-            date: X
-          }) : (0, p.sZ)(t.id, X)), v(E({}, e), {
+            date: J
+          }) : (0, p.sZ)(t.id, J)), v(E({}, e), {
             description: n
           })
         }
-        return e.id.startsWith(T) && null != J ? v(E({}, e), {
+        return e.id.startsWith(T) && null != $ ? v(E({}, e), {
           description: m.NW.formatToPlainString(m.t.IWkAq6, {
-            date: J
+            date: $
           })
         }) : e
       }) : e.badges
-    }), (null === (N = e.user_profile) || void 0 === N ? void 0 : null === (I = N.profile_effect) || void 0 === I ? void 0 : I.expires_at) != null) {
+    }), (null === (x = e.user_profile) || void 0 === x ? void 0 : null === (N = x.profile_effect) || void 0 === N ? void 0 : N.expires_at) != null) {
     let t = new o.V7;
     R.set(e.user.id, t), M(e.user.id)
   }
@@ -220,10 +220,10 @@ function V(e) {
         guildId: e.guild_member_profile.guild_id,
         banner: e.guild_member_profile.banner,
         accentColor: e.guild_member_profile.accent_color,
-        themeColors: null === (V = e.guild_member_profile) || void 0 === V ? void 0 : V.theme_colors,
-        popoutAnimationParticleType: null === (Z = e.guild_member_profile) || void 0 === Z ? void 0 : Z.popout_animation_particle_type,
-        profileEffectId: null === (W = e.guild_member_profile) || void 0 === W ? void 0 : null === (H = W.profile_effect) || void 0 === H ? void 0 : H.id,
-        profileEffectExpiresAt: null === (K = e.guild_member_profile) || void 0 === K ? void 0 : null === (Y = K.profile_effect) || void 0 === Y ? void 0 : Y.expires_at,
+        themeColors: null === (Z = e.guild_member_profile) || void 0 === Z ? void 0 : Z.theme_colors,
+        popoutAnimationParticleType: null === (H = e.guild_member_profile) || void 0 === H ? void 0 : H.popout_animation_particle_type,
+        profileEffectId: null === (Y = e.guild_member_profile) || void 0 === Y ? void 0 : null === (W = Y.profile_effect) || void 0 === W ? void 0 : W.id,
+        profileEffectExpiresAt: null === (z = e.guild_member_profile) || void 0 === z ? void 0 : null === (K = z.profile_effect) || void 0 === K ? void 0 : K.expires_at,
         bio: e.guild_member_profile.bio,
         pronouns: e.guild_member_profile.pronouns,
         badges: e.guild_badges
@@ -234,7 +234,7 @@ function V(e) {
       let n = new Map;
       n.set(e.guild_member_profile.guild_id, t), C.set(e.user.id, n)
     }
-    if ((null === (q = e.guild_member_profile) || void 0 === q ? void 0 : null === (z = q.profile_effect) || void 0 === z ? void 0 : z.expires_at) != null) {
+    if ((null === (Q = e.guild_member_profile) || void 0 === Q ? void 0 : null === (q = Q.profile_effect) || void 0 === q ? void 0 : q.expires_at) != null) {
       let t = new o.V7,
         n = P.get(e.user.id);
       if (null != n) n.set(e.guild_member_profile.guild_id, t);
@@ -250,13 +250,15 @@ function V(e) {
 function Z(e) {
   let {
     userId: t,
-    guildId: n
-  } = e, r = null != n ? n : y, i = O.get(t);
-  if (null != i) i.add(r);
+    guildId: n,
+    withMutualFriends: r
+  } = e, i = null != n ? n : y, o = O.get(t);
+  if (null != o) o.add(i);
   else {
     let e = new Set;
-    e.add(r), O.set(t, e)
+    e.add(i), O.set(t, e)
   }
+  r && I.add(t)
 }
 
 function H(e) {
@@ -266,7 +268,7 @@ function H(e) {
     guildId: i,
     apiError: o
   } = e;
-  null === (t = O.get(r)) || void 0 === t || t.delete(null != i ? i : y);
+  null === (t = O.get(r)) || void 0 === t || t.delete(null != i ? i : y), I.delete(r);
   let a = null !== (n = A.get(r)) && void 0 !== n ? n : {
     connectedAccounts: [],
     applicationRoleConnections: [],
@@ -283,7 +285,7 @@ function H(e) {
     lastFetched: 0,
     fetchError: void 0
   };
-  a.lastFetched = Date.now(), a.fetchError = o, A.set(r, a)
+  a.lastFetched = Date.now(), a.fetchError = o, A.set(r, a), (null == o ? void 0 : o.status) === 404 && (D.set(r, 0), w.set(r, []), L.set(r, []))
 }
 
 function W(e) {
@@ -391,7 +393,7 @@ function $(e) {
 }
 
 function ee() {
-  O.clear(), A.clear(), C.clear()
+  O.clear(), I.clear(), A.clear(), C.clear()
 }
 
 function et(e) {

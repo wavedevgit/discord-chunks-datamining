@@ -1,150 +1,150 @@
 /** Chunk was on 89839 **/
-a.d(t, {
-  default: () => R
+t.d(a, {
+  default: () => U
 });
-var n = a(200651);
-a(192379);
-var r = a(120356),
-  i = a.n(r),
-  s = a(793030),
-  l = a(481060),
-  d = a(100527),
-  o = a(906732),
-  c = a(313201),
-  u = a(703656),
-  N = a(594174),
-  _ = a(111361),
-  m = a(409100),
-  T = a(943180),
-  b = a(553896),
-  E = a(848572),
-  v = a(787528),
-  g = a(474936),
-  x = a(981631),
-  M = a(388032),
-  h = a(319438);
-let R = e => {
-  var t, a;
+var s = t(200651);
+t(192379);
+var d = t(120356),
+  n = t.n(d),
+  r = t(793030),
+  i = t(481060),
+  c = t(100527),
+  l = t(906732),
+  N = t(313201),
+  _ = t(703656),
+  o = t(594174),
+  u = t(111361),
+  E = t(409100),
+  m = t(943180),
+  T = t(553896),
+  M = t(848572),
+  g = t(787528),
+  x = t(474936),
+  b = t(981631),
+  R = t(388032),
+  v = t(319438);
+let U = e => {
+  var a, t;
   let {
-    transitionState: r,
-    onClose: R,
-    displayProfile: f
+    transitionState: d,
+    onClose: U,
+    displayProfile: h
   } = e, {
     analyticsLocations: I
-  } = (0, o.ZP)(d.Z.TIERED_TENURE_BADGES_MODAL), O = (0, c.Dt)(), S = (0, E.j_)(), p = (0, E.SI)(null == f ? void 0 : f.userId), P = (0, E.Rw)(), j = N.default.getCurrentUser(), U = null !== (a = (0, E.a1)(null !== (t = null == f ? void 0 : f.userId) && void 0 !== t ? t : null == j ? void 0 : j.id)) && void 0 !== a ? a : new Date, y = (0, _.yd)(null == j ? void 0 : j.premiumType, g.p9.TIER_2), {
-    isBadgeVersion2: B
-  } = (0, T.D)(), H = S.map(e => {
+  } = (0, l.ZP)(c.Z.TIERED_TENURE_BADGES_MODAL), j = (0, N.Dt)(), P = (0, M.j_)(), O = (0, M.SI)(null == h ? void 0 : h.userId), H = (0, M.Rw)(), S = o.default.getCurrentUser(), B = null !== (t = (0, M.a1)(null !== (a = null == h ? void 0 : h.userId) && void 0 !== a ? a : null == S ? void 0 : S.id)) && void 0 !== t ? t : new Date, f = (0, u.yd)(null == S ? void 0 : S.premiumType, x.p9.TIER_2), {
+    isBadgeVersion2: p
+  } = (0, m.D)(), L = P.map(e => {
     let {
-      id: t,
-      nameUnformatted: a,
-      tenureReqNumMonths: r
-    } = e, l = M.NW.string(a), d = (0, v.J)(t), o = (0, b.q)(t, r), c = null == f, u = c && (null == P ? void 0 : P.id) === t, N = !c && (null == p ? void 0 : p.id) === t, _ = u && (null == P ? void 0 : P.status) === E.Vq.EARNED, m = u && (null == P ? void 0 : P.status) === E.Vq.UPCOMING, T = (N || _) && B, g = m && B;
-    return (0, n.jsxs)("div", {
-      className: i()(h.badge, {
-        [h.badgeV2]: B,
-        [h.earnedBadge]: T || g
+      id: a,
+      nameUnformatted: t,
+      tenureReqNumMonths: d
+    } = e, i = R.NW.string(t), c = (0, g.J)(a), l = (0, T.q)(a, d), N = null == h, _ = N && (null == H ? void 0 : H.id) === a, o = !N && (null == O ? void 0 : O.id) === a, u = _ && (null == H ? void 0 : H.status) === M.Vq.EARNED, E = _ && (null == H ? void 0 : H.status) === M.Vq.UPCOMING, m = (o || u) && p, x = E && p;
+    return (0, s.jsxs)("div", {
+      className: n()(v.badge, {
+        [v.badgeV2]: p,
+        [v.earnedBadge]: m || x
       }),
-      children: [(0, n.jsx)("img", {
-        src: d,
-        alt: l,
-        className: h.badgeImage
-      }), (0, n.jsxs)("div", {
-        className: i()(h.badgeText, {
-          [h.badgeTextV2]: B
+      children: [(0, s.jsx)("img", {
+        src: c,
+        alt: i,
+        className: v.badgeImage
+      }), (0, s.jsxs)("div", {
+        className: n()(v.badgeText, {
+          [v.badgeTextV2]: p
         }),
-        children: [(0, n.jsx)(s.xv, {
+        children: [(0, s.jsx)(r.xv, {
           variant: "text-md/semibold",
-          className: h.badgeName,
+          className: v.badgeName,
+          children: i
+        }), (0, s.jsx)(r.xv, {
+          variant: "text-xs/normal",
           children: l
-        }), (0, n.jsx)(s.xv, {
-          variant: "text-xs/normal",
-          children: o
-        }), T && (0, n.jsx)(s.xv, {
+        }), m && (0, s.jsx)(r.xv, {
           variant: "text-xs/normal",
           color: "text-muted",
-          className: h.earnedBadgeSubSince,
-          children: M.NW.formatToPlainString(M.t.Hu4jfn, {
-            date: U
+          className: v.earnedBadgeSubSince,
+          children: R.NW.formatToPlainString(R.t.Hu4jfn, {
+            date: B
           })
-        }), g && (0, n.jsx)(s.xv, {
+        }), x && (0, s.jsx)(r.xv, {
           variant: "text-xs/normal",
           color: "text-muted",
-          className: h.earnedBadgeSubSince,
-          children: M.NW.formatToPlainString(M.t.PPL1Ii, {
-            days: null == P ? void 0 : P.daysLeft
+          className: v.earnedBadgeSubSince,
+          children: R.NW.formatToPlainString(R.t.PPL1Ii, {
+            days: null == H ? void 0 : H.daysLeft
           })
         })]
       })]
-    }, t)
+    }, a)
   }), w = () => {
-    (0, u.uL)(x.Z5c.APPLICATION_STORE, {
-      source: d.Z.TIERED_TENURE_BADGES_MODAL,
+    (0, _.uL)(b.Z5c.APPLICATION_STORE, {
+      source: c.Z.TIERED_TENURE_BADGES_MODAL,
       sourceLocationStack: I
-    }), null == R || R()
-  }, W = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(s.xv, {
+    }), null == U || U()
+  }, W = (0, s.jsxs)(s.Fragment, {
+    children: [(0, s.jsx)(r.xv, {
       variant: "display-md",
-      className: h.header,
-      children: M.NW.string(M.t["rmUN7+"])
-    }), (0, n.jsx)(s.xv, {
+      className: v.header,
+      children: R.NW.string(R.t["rmUN7+"])
+    }), (0, s.jsx)(r.xv, {
       variant: "text-md/medium",
-      className: h.subHeader,
-      children: M.NW.string(M.t.OI50am)
-    }), (0, n.jsx)("div", {
-      className: h.badgeList,
-      children: H
+      className: v.subHeader,
+      children: R.NW.string(R.t.OI50am)
+    }), (0, s.jsx)("div", {
+      className: v.badgeList,
+      children: L
     })]
-  }), A = y ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(s.xv, {
+  }), D = f ? (0, s.jsxs)(s.Fragment, {
+    children: [(0, s.jsx)(r.xv, {
       variant: "display-md",
-      className: h.header,
-      children: M.NW.string(M.t.Og62j4)
-    }), (0, n.jsx)(s.xv, {
+      className: v.header,
+      children: R.NW.string(R.t.Og62j4)
+    }), (0, s.jsx)(r.xv, {
       variant: "text-md/medium",
-      className: h.subHeader,
-      children: M.NW.string(M.t["IdAP9/"])
-    }), (0, n.jsx)("div", {
-      className: h.badgeList,
-      children: H
-    }), null != f && f.userId !== (null == j ? void 0 : j.id) && (0, n.jsx)(l.gtL, {
-      className: h.learnMoreButton,
+      className: v.subHeader,
+      children: R.NW.string(R.t["IdAP9/"])
+    }), (0, s.jsx)("div", {
+      className: v.badgeList,
+      children: L
+    }), null != h && h.userId !== (null == S ? void 0 : S.id) && (0, s.jsx)(i.gtL, {
+      className: v.learnMoreButton,
       onClick: w,
-      children: M.NW.string(M.t.hvVgAQ)
+      children: R.NW.string(R.t.hvVgAQ)
     })]
-  }) : (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(s.xv, {
+  }) : (0, s.jsxs)(s.Fragment, {
+    children: [(0, s.jsx)(r.xv, {
       variant: "display-md",
-      className: h.header,
-      children: M.NW.string(M.t.RtGeFR)
-    }), (0, n.jsx)(s.xv, {
+      className: v.header,
+      children: R.NW.string(R.t.RtGeFR)
+    }), (0, s.jsx)(r.xv, {
       variant: "text-md/medium",
-      className: h.subHeader,
-      children: M.NW.format(M.t.ffatnZ, {
+      className: v.subHeader,
+      children: R.NW.format(R.t.ffatnZ, {
         onClick: w
       })
-    }), (0, n.jsx)("div", {
-      className: h.badgeList,
-      children: H
-    }), (0, n.jsx)(m.Z, {
-      className: h.subscribeButton,
+    }), (0, s.jsx)("div", {
+      className: v.badgeList,
+      children: L
+    }), (0, s.jsx)(E.Z, {
+      className: v.subscribeButton,
       premiumModalAnalyticsLocation: {
-        page: x.ZY5.TIERED_TENURE_BADGES_MODAL
+        page: b.ZY5.TIERED_TENURE_BADGES_MODAL
       },
-      subscribeButtonText: M.NW.string(M.t.JST6jo),
-      subscriptionTier: g.Si.TIER_2,
+      subscribeButtonText: R.NW.string(R.t.JST6jo),
+      subscriptionTier: x.Si.TIER_2,
       showGradient: !0
     })]
   });
-  return (0, n.jsxs)(l.Y0X, {
-    transitionState: r,
-    "aria-labelledby": O,
-    className: i()(h.container, "theme-dark"),
-    children: [(0, n.jsx)(l.olH, {
-      onClick: R,
-      className: h.closeButton
-    }), (0, n.jsx)(l.hzk, {
-      className: h.content,
-      children: B ? A : W
+  return (0, s.jsxs)(i.Y0X, {
+    transitionState: d,
+    "aria-labelledby": j,
+    className: n()(v.container, "theme-dark"),
+    children: [(0, s.jsx)(i.olH, {
+      onClick: U,
+      className: v.closeButton
+    }), (0, s.jsx)(i.hzk, {
+      className: v.content,
+      children: p ? D : W
     })]
   })
 }
