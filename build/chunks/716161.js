@@ -19,14 +19,21 @@ var r = n(544891),
   u = n(901757),
   d = n(981631);
 async function f() {
-  let e = await r.tn.get({
-    url: d.ANM.VIDEO_FILTER_ASSETS,
-    rejectWithError: !1
-  });
-  return i.Z.dispatch({
-    type: "VIDEO_FILTER_ASSETS_FETCH_SUCCESS",
-    assets: e.body
-  }), e
+  try {
+    let e = await r.tn.get({
+      url: d.ANM.VIDEO_FILTER_ASSETS,
+      rejectWithError: !1
+    });
+    return i.Z.dispatch({
+      type: "VIDEO_FILTER_ASSETS_FETCH_SUCCESS",
+      assets: e.body
+    }), e
+  } catch (e) {
+    throw i.Z.dispatch({
+      type: "VIDEO_FILTER_ASSETS_FETCH_FAILURE",
+      error: e
+    }), e
+  }
 }
 async function _(e, t, n) {
   try {

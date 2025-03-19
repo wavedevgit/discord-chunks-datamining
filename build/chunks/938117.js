@@ -61,11 +61,19 @@ function C(e) {
     currentDeviceId: v,
     smallerBackgroundOptions: S,
     className: T
-  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I), D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}), Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]), w = (0, l.O)(), k = {
-    isVideoBackgroundSupported: P,
-    onSelectBackgroundOption: O,
-    selectedBackgroundOption: C
-  }, W = i.useRef(k);
+  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
+  i.useEffect(() => {
+    (0, d.XV)()
+  }, []);
+  let D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}),
+    Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]),
+    w = (0, l.O)(),
+    k = {
+      isVideoBackgroundSupported: P,
+      onSelectBackgroundOption: O,
+      selectedBackgroundOption: C
+    },
+    W = i.useRef(k);
   i.useEffect(() => {
     W.current = k
   }), i.useEffect(() => {

@@ -58,10 +58,8 @@ let m = !1,
 function v(e) {
   let {
     assets: t
-  } = e;
-  b = t.reduce((e, t) => h(_({}, e), {
-    [t.id]: t
-  }), {})
+  } = e, n = {};
+  t.forEach(e => n[e.id] = e), b = n
 }
 
 function y(e) {
