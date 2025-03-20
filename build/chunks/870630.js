@@ -19,7 +19,8 @@ var r = n(200651),
 let m = function(e) {
   let t = (0, l.ZP)(),
     n = i.useRef(null),
-    [m, g] = i.useState({});
+    [m, g] = i.useState({}),
+    E = (0, s.dQu)(s.TVs.colors.BG_BASE_SECONDARY).hex();
   switch (i.useLayoutEffect(() => {
       let {
         current: e
@@ -28,22 +29,22 @@ let m = function(e) {
       let t = window.getComputedStyle(e),
         r = window.getComputedStyle(e, "::placeholder"),
         i = t.getPropertyValue("font-family"),
-        o = t.getPropertyValue("font-weight"),
-        a = t.getPropertyValue("color");
+        o = t.getPropertyValue("font-weight");
       g({
         base: {
           fontFamily: i,
           fontWeight: o,
-          color: a,
+          color: t.getPropertyValue("color"),
           fontSize: t.getPropertyValue("font-size"),
-          backgroundColor: t.getPropertyValue("background-color"),
+          backgroundColor: E,
           padding: "12px",
           "::placeholder": {
             color: r.getPropertyValue("color")
-          }
+          },
+          borderRadius: s.TVs.radii.xs
         }
       })
-    }, [n]), e.type) {
+    }, [n, E]), e.type) {
     case c.He.PRZELEWY24: {
       let i = (0, a.wj)(t) ? p : h,
         {
@@ -127,25 +128,6 @@ let m = function(e) {
             })
           })]
         })]
-      })
-    }
-    case c.He.IDEAL: {
-      let {
-        onAccountHolderNameChange: t,
-        billingAddressInfo: i
-      } = e;
-      return (0, r.jsx)("div", {
-        className: d.body,
-        children: (0, r.jsx)(s.hjN, {
-          title: u.NW.string(u.t.sN3wra),
-          children: (0, r.jsx)(s.oil, {
-            inputRef: n,
-            name: u.NW.string(u.t.sN3wra),
-            placeholder: u.NW.string(u.t.sN3wra),
-            onChange: e => t(e),
-            value: i.name
-          })
-        })
       })
     }
     default:

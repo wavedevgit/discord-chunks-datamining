@@ -68,7 +68,7 @@ function c(e) {
   } = a.getCurrentConfig({
     location: e
   }, {
-    autoTrackExposure: !0
+    autoTrackExposure: !1
   });
   return t && !0 === n
 }

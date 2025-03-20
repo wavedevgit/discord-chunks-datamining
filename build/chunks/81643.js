@@ -1,12 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F5: () => y,
+  F5: () => I,
   Jm: () => g,
+  L0: () => b,
   L5: () => m,
-  WD: () => v,
-  l6: () => b,
-  pY: () => E,
+  WD: () => O,
+  g0: () => E,
+  l6: () => y,
+  pY: () => v,
   sf: () => h
 }), n(301563), n(47120);
 var r = n(192379),
@@ -36,20 +38,26 @@ function g() {
   let e = (0, i.e7)([u.default], () => u.default.getCurrentUser());
   return (null == e ? void 0 : e.ageVerificationStatus) === a.F$.VERIFIED_TEEN
 }
+var E = function(e) {
+    return e.CTAS = "ctas", e.CONTENT_TYPE = "content_type", e
+  }({}),
+  b = function(e) {
+    return e.VERIFIED_ADULT = "verified_adult", e.VERIFIED_TEEN = "verified_teen", e.ERROR = "error", e
+  }({});
 
-function E(e, t) {
+function v(e, t) {
   let n = c.Z.getMessage(e, t);
   if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== _.hBH.AGE_VERIFICATION_SYSTEM_NOTIFICATION) return !1;
   let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
   return null == r ? void 0 : r.rawValue.split(",").includes("retry")
 }
 
-function b() {
+function y() {
   let e = (0, i.e7)([u.default], () => u.default.getCurrentUser());
   return (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.UNVERIFIED
 }
 
-function v(e) {
+function O(e) {
   let [t, n] = r.useState(!1), a = (0, i.e7)([u.default], () => u.default.getCurrentUser()), {
     current: s
   } = r.useRef(null == a ? void 0 : a.ageVerificationStatus), c = r.useCallback(() => {
@@ -81,7 +89,7 @@ function v(e) {
   }
 }
 
-function y(e) {
+function I(e) {
   let t = (0, i.e7)([u.default], () => {
       var e;
       return null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.ageVerificationStatus

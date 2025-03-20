@@ -356,7 +356,7 @@ let eo = 880,
       }), (0, r.jsx)(_.zxk, {
         color: _.Ttl.PRIMARY,
         onClick: () => {
-          (0, T.navigateToQuestHome)()
+          a(), (0, T.navigateToQuestHome)()
         },
         children: $.NW.string($.t["H57f4+"])
       })]

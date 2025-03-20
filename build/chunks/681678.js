@@ -28,6 +28,9 @@ let a = {
   showReportSuccessToast(e, t) {
     (0, r.showToast)((0, r.createToast)((0, i.o)(o.w.REPORT_SUCCESS, e, t), r.ToastType.SUCCESS))
   },
+  showSuccessToast(e) {
+    (0, r.showToast)((0, r.createToast)((0, i.o)(e), r.ToastType.SUCCESS))
+  },
   showFailedToast(e) {
     (0, r.showToast)((0, r.createToast)((0, i.o)(null != e ? e : o.w.GENERIC_ERROR), r.ToastType.FAILURE))
   }
