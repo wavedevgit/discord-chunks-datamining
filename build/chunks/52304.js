@@ -1,4 +1,5 @@
 /** Chunk was on 6382 **/
 e.exports = {
-  section: "section__25879"
+  section: "section__25879",
+  newBadge: "newBadge__25879"
 }

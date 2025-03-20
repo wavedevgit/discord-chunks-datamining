@@ -1,6 +1,6 @@
 /** Chunk was on 6382 **/
 n.d(t, {
-  Z: () => M
+  Z: () => G
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -18,41 +18,44 @@ var r = n(200651),
   f = n(906732),
   x = n(475977),
   N = n(605236),
-  b = n(957730),
-  _ = n(53691),
-  E = n(267717),
-  j = n(296810),
-  C = n(921813),
-  O = n(610794),
-  v = n(935147),
-  S = n(643879),
-  T = n(373230),
-  I = n(246946),
-  y = n(25990),
-  A = n(594174),
-  P = n(626135),
-  R = n(74538),
-  D = n(413182),
-  Z = n(695346),
-  w = n(265159),
-  k = n(532495),
-  W = n(981631),
-  L = n(388032),
-  B = n(355530);
+  b = n(243778),
+  _ = n(957730),
+  E = n(309351),
+  j = n(53691),
+  C = n(267717),
+  O = n(296810),
+  v = n(921813),
+  S = n(610794),
+  T = n(935147),
+  I = n(643879),
+  y = n(373230),
+  A = n(246946),
+  P = n(25990),
+  R = n(594174),
+  D = n(626135),
+  Z = n(74538),
+  w = n(413182),
+  k = n(695346),
+  W = n(265159),
+  L = n(532495),
+  B = n(981631),
+  M = n(921944),
+  U = n(388032),
+  V = n(355530);
 
-function M() {
+function G() {
   var e, t;
-  let n = (0, l.e7)([A.default], () => {
-      let e = A.default.getCurrentUser();
+  let n = (0, l.e7)([R.default], () => {
+      let e = R.default.getCurrentUser();
       return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    s = (0, l.e7)([I.Z], () => I.Z.hidePersonalInformation),
-    M = (0, l.cj)([y.Z], () => y.Z.getAllPending()),
+    s = (0, l.e7)([A.Z], () => A.Z.hidePersonalInformation),
+    G = (0, l.cj)([P.Z], () => P.Z.getAllPending()),
     {
-      pendingBio: U,
-      pendingAvatar: V
-    } = M,
-    G = function(e, t) {
+      pendingBio: F,
+      pendingAvatar: H
+    } = G,
+    z = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -66,19 +69,19 @@ function M() {
         for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(M, ["pendingBio", "pendingAvatar"]),
-    F = (0, S.SD)({
+    }(G, ["pendingBio", "pendingAvatar"]),
+    Y = (0, I.SD)({
       userId: n.id,
-      image: V
+      image: H
     }),
-    H = (0, l.e7)([y.Z], () => y.Z.showNotice()),
-    z = Z.dN.useSetting() && null != U ? b.ZP.parse(void 0, U).content : U,
-    Y = R.ZP.canUsePremiumProfileCustomization(n),
+    K = (0, l.e7)([P.Z], () => P.Z.showNotice()),
+    q = k.dN.useSetting() && null != F ? _.ZP.parse(void 0, F).content : F,
+    X = Z.ZP.canUsePremiumProfileCustomization(n),
     {
-      analyticsLocations: K
+      analyticsLocations: J
     } = (0, f.ZP)(h.Z.PROFILE);
   ! function() {
-    let e = (0, T.Tq)({
+    let e = (0, y.Tq)({
         location: "UserSettingsProfileCustomization"
       }),
       t = (0, N.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
@@ -88,24 +91,32 @@ function M() {
         forceTrack: !0
       })
     }, [n])
+  }(),
+  function() {
+    let e = (0, E.H)("UserSettingsProfileCustomization"),
+      [t, n] = (0, b.US)(e ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
+      r = t === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
+    i.useEffect(() => {
+      r && n(M.L.TAKE_ACTION)
+    }, [r, n])
   }(), i.useEffect(() => () => u.Z.wait(m.W3), []);
-  let q = "UserSettingsProfileCustomization";
+  let Q = "UserSettingsProfileCustomization";
   (0, p.j)({
-    location: q + " auto on",
+    location: Q + " auto on",
     autoTrackExposure: !0
   }), (0, p.j)({
-    location: q + " auto off",
+    location: Q + " auto off",
     autoTrackExposure: !1
   });
-  let [X, J] = i.useState(!1), {
-    showRedesign: Q
-  } = D.b.useExperiment({
+  let [$, ee] = i.useState(!1), {
+    showRedesign: et
+  } = w.b.useExperiment({
     location: "profile customization"
-  }), $ = !Y, ee = i.useRef(null);
+  }), en = !X, er = i.useRef(null);
   return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
-    value: K,
-    children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)(j.Z, {
-      profilePreview: (0, r.jsx)(C.Z, (e = function(e) {
+    value: J,
+    children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)(O.Z, {
+      profilePreview: (0, r.jsx)(v.Z, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -124,11 +135,11 @@ function M() {
         return e
       }({
         user: n,
-        canUsePremiumCustomization: Y,
-        onUpsellClick: w.Z,
-        pendingBio: z
-      }, G), t = t = {
-        pendingAvatar: F,
+        canUsePremiumCustomization: X,
+        onUpsellClick: W.Z,
+        pendingBio: q
+      }, z), t = t = {
+        pendingAvatar: Y,
         showNameplatePreview: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
@@ -140,34 +151,34 @@ function M() {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)),
-      children: (0, r.jsx)(k.Z, {})
-    }), Q && (0, r.jsx)(O.Z, {}), (0, r.jsx)(c.$, {
-      onChange: e => J(e),
+      children: (0, r.jsx)(L.Z, {})
+    }), et && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.$, {
+      onChange: e => ee(e),
       threshold: .25,
-      active: $,
+      active: en,
       children: (0, r.jsx)("div", {
-        ref: ee,
-        children: (0, r.jsx)(v.Z, {
+        ref: er,
+        children: (0, r.jsx)(T.Z, {
           user: n,
-          shouldShow: $,
-          isVisible: X
+          shouldShow: en,
+          isVisible: $
         })
       })
-    }), $ && !H && (0, r.jsx)(_.p, {
-      className: B.floatingNitroUpsell,
-      showUpsell: $ && !X,
-      text: L.NW.format(L.t.TmfgIy, {
-        onClick: () => (0, E.y)()
+    }), en && !K && (0, r.jsx)(j.p, {
+      className: V.floatingNitroUpsell,
+      showUpsell: en && !$,
+      text: U.NW.format(U.t.TmfgIy, {
+        onClick: () => (0, C.y)()
       }),
       textVariant: "heading-md/medium",
       button: (0, r.jsxs)(d.gtL, {
-        className: B.floatingNitroButton,
-        innerClassName: B.floatingNitroButtonInner,
+        className: V.floatingNitroButton,
+        innerClassName: V.floatingNitroButtonInner,
         onClick: () => {
           var e;
-          P.default.track(W.rMx.TRY_IT_OUT_PRESET_CLICKED, {
+          D.default.track(B.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
-          }), null == ee || null === (e = ee.current) || void 0 === e || e.scrollIntoView({
+          }), null == er || null === (e = er.current) || void 0 === e || e.scrollIntoView({
             behavior: "smooth"
           })
         },
@@ -179,7 +190,7 @@ function M() {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "currentColor",
-          children: L.NW.string(L.t.uw9zIy)
+          children: U.NW.string(U.t.uw9zIy)
         })]
       })
     })]
