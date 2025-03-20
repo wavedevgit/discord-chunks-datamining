@@ -12,14 +12,14 @@ var t = n(200651),
   d = n(313201),
   u = n(455708),
   g = n(222062),
-  _ = n(530329),
-  f = n(626135),
+  f = n(530329),
+  _ = n(626135),
   b = n(488499),
   p = n(58384),
   N = n(981631),
   m = n(486324),
-  T = n(388032),
-  h = n(762641);
+  h = n(388032),
+  T = n(762641);
 
 function E(e) {
   let {
@@ -28,16 +28,16 @@ function E(e) {
     onComplete: E,
     uploadType: x,
     showUpsellHeader: j,
-    analyticsPage: P
-  } = e, [I, O] = o.useState(!1), B = (0, l.vRw)(), C = (0, d.Dt)(), {
-    analyticsLocations: y
+    analyticsPage: I
+  } = e, [P, v] = o.useState(!1), C = (0, l.vRw)(), O = (0, d.Dt)(), {
+    analyticsLocations: R
   } = (0, s.ZP)(c.Z.GIF_PICKER);
-  async function v(e) {
+  async function B(e) {
     let {
       gifSrc: i
     } = e;
-    if (null == i || I) return;
-    O(!0);
+    if (null == i || P) return;
+    v(!0);
     let o = (0, p.Q)(i),
       a = await fetch(o),
       c = await a.blob();
@@ -72,58 +72,58 @@ function E(e) {
         showUpsellHeader: j
       }, i))
     }, {
-      contextKey: B
+      contextKey: C
     })
   }
   o.useEffect(() => {
-    f.default.track(N.rMx.OPEN_MODAL, {
+    _.default.track(N.rMx.OPEN_MODAL, {
       type: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
       location: {
-        page: P
+        page: I
       }
     })
-  }, [P]);
-  let R = x === m.pC.AVATAR || x === m.pC.BANNER,
-    A = (0, g.M)(!R);
+  }, [I]);
+  let y = x === m.pC.AVATAR || x === m.pC.BANNER,
+    k = (0, g.M)(!y);
   return (0, t.jsx)(s.Gt, {
-    value: y,
+    value: R,
     children: (0, t.jsxs)(l.Y0X, {
-      "aria-labelledby": C,
+      "aria-labelledby": O,
       transitionState: i,
       size: l.CgR.SMALL,
-      children: [j && !A && (0, t.jsx)(b.Z, {
+      children: [j && !k && (0, t.jsx)(b.Z, {
         type: x,
-        analyticsPage: P,
+        analyticsPage: I,
         analyticsSection: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
         isGIF: !0
       }), (0, t.jsxs)(l.xBx, {
-        className: h.modalHeader,
+        className: T.modalHeader,
         separator: !1,
         children: [(0, t.jsx)(l.vwX, {
-          className: h.titleCase,
+          className: T.titleCase,
           tag: l.RB0.H1,
-          children: T.NW.string(T.t["xsC+//"])
+          children: h.NW.string(h.t["xsC+//"])
         }), (0, t.jsx)(l.olH, {
           onClick: r,
-          className: h.modalCloseButton
+          className: T.modalCloseButton
         })]
       }), (0, t.jsxs)("div", {
         children: [(0, t.jsx)(u.Z, {
           contentClassName: a()({
-            [h.gifPickerContent]: j && A
+            [T.gifPickerContent]: j && k
           }),
-          className: a()(h.gifPicker, {
-            [h.loadingOverlay]: I
+          className: a()(T.gifPicker, {
+            [T.loadingOverlay]: P
           }),
-          onSelectGIF: v,
+          onSelectGIF: B,
           hideFavorites: !0
-        }), I && (0, t.jsx)(l.$jN, {
-          className: h.spinner
+        }), P && (0, t.jsx)(l.$jN, {
+          className: T.spinner
         })]
-      }), j && A && (0, t.jsx)(_.Z, {
+      }), j && k && (0, t.jsx)(f.Z, {
         uploadType: x,
         showUpsell: !0,
-        className: h.nitroUpsell
+        className: T.nitroUpsell
       })]
     })
   })

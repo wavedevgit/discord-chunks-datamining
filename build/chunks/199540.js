@@ -146,16 +146,16 @@ function P(e) {
     c || E(!0), null == P || P(!0)
   }, [c, P]), A = i.useCallback(() => {
     c || E(!1), null == P || P(!1)
-  }, [c, P]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
+  }, [c, P]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), k = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, L = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
     style: D ? {
-      width: k,
-      height: k
+      width: L,
+      height: L
     } : void 0,
     selected: !!D || !a,
     upperBadge: R,
-    lowerBadge: L,
+    lowerBadge: k,
     lowerBadgeSize: {
       width: (0, d.OVM)(f)
     },

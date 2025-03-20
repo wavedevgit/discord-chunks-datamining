@@ -15,8 +15,8 @@ var l = n(200651),
   h = n(751771),
   g = n(699516),
   v = n(594174),
-  m = n(768581),
-  x = n(624138),
+  x = n(768581),
+  m = n(624138),
   p = n(51144),
   N = n(388032),
   I = n(724897);
@@ -43,11 +43,11 @@ class f extends i.Component {
     if (null != i) t = i.getAvatarURL(null == s ? void 0 : s.guild_id, 32), n = p.ZP.getName(i);
     else if (null != s && (t = (0, o.x)(s), n = (0, d.F6)(s, v.default, g.Z), null == t && null != s.guild_id)) {
       let n = c.Z.getGuild(s.guild_id);
-      null != n && (null != n.icon ? t = m.ZP.getGuildIconURL({
+      null != n && (null != n.icon ? t = x.ZP.getGuildIconURL({
         id: s.guild_id,
         icon: n.icon,
         size: 32
-      }) : e = (0, x.Zg)(n.name))
+      }) : e = (0, m.Zg)(n.name))
     }
     return null == t || null == n ? null != e ? (0, l.jsx)(r.Text, {
       variant: "text-md/medium",

@@ -1,6 +1,6 @@
 /** Chunk was on 92196 **/
 n.d(t, {
-  Z: () => k
+  Z: () => L
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -242,9 +242,9 @@ class R extends S.ZP {
     })
   }
 }
-let L = (0, u.B)(R);
+let k = (0, u.B)(R);
 
-function k(e) {
+function L(e) {
   let {
     channel: t,
     guild: n,
@@ -281,8 +281,8 @@ function k(e) {
     muted: a,
     enableActivities: T,
     resolvedUnreadSetting: f
-  }), k = (0, p.ZP)(t);
-  return (0, r.jsx)(L, D(A({}, h, y, e), {
+  }), L = (0, p.ZP)(t);
+  return (0, r.jsx)(k, D(A({}, h, y, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: I,
@@ -291,7 +291,7 @@ function k(e) {
     isFavoriteSuggestion: o && !N,
     canShowThreadPreviewForUser: E,
     channelInfo: R,
-    embeddedApps: k,
+    embeddedApps: L,
     resolvedUnreadSetting: f,
     hasChannelInfo: null != R,
     enableActivities: T

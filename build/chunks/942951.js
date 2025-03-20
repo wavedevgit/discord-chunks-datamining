@@ -68,7 +68,7 @@ function b(e) {
         "aria-label": h
       })),
       d = e => t => {
-        g && t.stopPropagation(), e(t)
+        g && null != t && t.stopPropagation(), e(t)
       };
     return (0, r.jsx)(u.Gt, {
       value: O,

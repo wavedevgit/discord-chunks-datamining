@@ -43,7 +43,7 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -275,7 +275,7 @@ class G extends(r = o.Component) {
           return i
         }(r, ["ref", "role"]);
         return (0, i.jsx)(p.Wdt, {
-          children: r => (0, i.jsx)(p.aVo, L({
+          children: r => (0, i.jsx)(p.aVo, k({
             fade: !0,
             innerRole: l,
             innerAriaLabel: A.NW.string(A.t.YUU0RE),
@@ -324,7 +324,7 @@ class G extends(r = o.Component) {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, k(L({}, u, (0, m.X)()), {
+      this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, L(k({}, u, (0, m.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -488,7 +488,7 @@ let B = e => {
     });
   return (0, i.jsx)(s.bG, {
     navigator: B,
-    children: (0, i.jsx)(G, L(k(L({
+    children: (0, i.jsx)(G, k(L(k({
       density: r,
       isVisualRefreshEnabled: n,
       channels: b,

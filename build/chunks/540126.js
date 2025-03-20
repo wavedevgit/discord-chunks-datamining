@@ -72,7 +72,7 @@ function H(e) {
   return e
 }
 
-function B(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,7 +84,7 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = "placeholder-channel-id",
+let B = "placeholder-channel-id",
   W = 2,
   V = 0,
   Y = 1,
@@ -204,7 +204,7 @@ class $ {
     }
   }
   isPlaceholderRow(e, t) {
-    return r()(e > Y, "Invalid section"), e !== this.recentsSectionNumber && this.getRows()[e][t] === k
+    return r()(e > Y, "Invalid section"), e !== this.recentsSectionNumber && this.getRows()[e][t] === B
   }
   getFirstVoiceChannel(e) {
     if (void 0 === this.firstVoiceChannel) {
@@ -372,7 +372,7 @@ class ee {
   }
   getRows() {
     let e = this.getShownChannelIds();
-    return 0 === e.length && this.shouldShowEmptyCategory() ? [k] : e
+    return 0 === e.length && this.shouldShowEmptyCategory() ? [B] : e
   }
   shouldShowEmptyCategory() {
     return o().some(this.channels, e => e.renderLevel >= 3)
@@ -421,7 +421,7 @@ class ei extends ee {
   updateChannel(e, t) {
     let n = e.id in this.channels && w.ZP.isFavorite(e.guild_id, e.id),
       i = g.Z.getSuggestedChannelId(e.guild_id);
-    return (e.id !== i || n || (t = B(H({}, t), {
+    return (e.id !== i || n || (t = k(H({}, t), {
       activeJoinedRelevantThreads: {},
       activeJoinedUnreadThreads: {}
     })), e.id in this.channels && this.channels[e.id].updateChannel(e, t)) ? (this.invalidate(), !0) : e.id in this.channels && e.id !== i && !n && (delete this.channels[e.id], this.invalidate(), !0)
@@ -435,7 +435,7 @@ class ei extends ee {
     this.channels = o()(null !== (n = w.ZP.getGuildFavorites(e.id)) && void 0 !== n ? n : []).map(e => I.Z.getChannel(e)).filter(j.lm).map(e => new ec(this, e, t)).keyBy(e => e.id).value();
     let i = g.Z.getSuggestedChannelId(e.id),
       r = I.Z.getChannel(i);
-    null != r && null != i && (this.channels[i] = new ec(this, r, B(H({}, t), {
+    null != r && null != i && (this.channels[i] = new ec(this, r, k(H({}, t), {
       activeJoinedRelevantThreads: {},
       activeJoinedUnreadThreads: {}
     })))
@@ -557,7 +557,7 @@ class eo extends ee {
   getRows() {
     if (!this.guild.optInEnabled) return [];
     let e = this.getShownChannelIds();
-    return 0 === e.length && this.getHiddenChannelIds().length > 0 ? [k] : e
+    return 0 === e.length && this.getHiddenChannelIds().length > 0 ? [B] : e
   }
   getShownChannelIds() {
     if (!this.guild.optInEnabled) return [];

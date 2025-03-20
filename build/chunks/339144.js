@@ -40,8 +40,8 @@ let I = i.memo(function(e) {
       canStream: A,
       runningGame: D,
       embeddedActivity: R,
-      activity: L,
-      application: k,
+      activity: k,
+      application: L,
       analyticsContext: M
     } = e,
     {
@@ -53,14 +53,14 @@ let I = i.memo(function(e) {
     {
       parentAnalyticsLocation: B
     } = (0, h.ZP)(),
-    U = P(k, L, R),
+    U = P(L, k, R),
     W = i.useCallback(() => {
-      l()(null != L, "Received null activity"), (0, f.v)(B, f.d.INVITE), O.default.track(C.rMx.OPEN_MODAL, {
+      l()(null != k, "Received null activity"), (0, f.v)(B, f.d.INVITE), O.default.track(C.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
-        application_id: L.application_id,
+        application_id: k.application_id,
         location: M.location
-      }), (0, c.h7)(L, !1)
-    }, [L, M, B]),
+      }), (0, c.h7)(k, !1)
+    }, [k, M, B]),
     V = i.useCallback((e, t) => () => {
       (0, f.v)(B, f.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
         location: t,

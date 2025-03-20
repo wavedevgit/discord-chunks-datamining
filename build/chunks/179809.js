@@ -43,8 +43,8 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       sorting: A = !1,
       onDragStart: D,
       onDragEnd: R,
-      onExpandCollapse: L,
-      onContextMenu: k,
+      onExpandCollapse: k,
+      onContextMenu: L,
       renderChildNode: M,
       folderIconContent: G,
       folderIconContentClassName: B
@@ -73,8 +73,8 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), X = i.useCallback(e => {
       q(e)
     }, []), $ = i.useCallback(e => {
-      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
-    }, [L, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
+      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && k()
+    }, [k, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
       let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE);
       return e * (t + ((0, h.Q3)("FolderItem.useHeight") ? 4 : 8))
     }(V.length), ei = (0, d.Yzy)(!K && s, {
@@ -118,8 +118,8 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             isMentionLowImportance: N,
             tooltipName: ee,
             folderGroupId: en,
-            onClick: L,
-            onContextMenu: k,
+            onClick: k,
+            onContextMenu: L,
             onHoverChange: z,
             onKeyDown: $,
             treeItemProps: et,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var u, c, h, g = n(442837),
   v = n(570140),
-  m = n(823385),
-  x = n(814443),
+  x = n(823385),
+  m = n(814443),
   p = n(823379),
   N = n(971130),
   I = n(592125),
@@ -22,9 +22,9 @@ function y(e) {
   let t = new Set,
     n = null == r || d === E.Iq.EMBEDDED_APPLICATION ? void 0 : r.id,
     l = (0, N.rh)(C, n);
-  for (let e of (null == l || j.Z.isBlocked(l.id) || t.add(l.id), x.Z.getUserAffinitiesUserIds())) t.add(e);
+  for (let e of (null == l || j.Z.isBlocked(l.id) || t.add(l.id), m.Z.getUserAffinitiesUserIds())) t.add(e);
   let i = new Set;
-  return d === E.Iq.EMBEDDED_APPLICATION && m.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === f.d4z.GUILD_TEXT).filter(e => S.Z.can(f.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, N.an)({
+  return d === E.Iq.EMBEDDED_APPLICATION && x.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === f.d4z.GUILD_TEXT).filter(e => S.Z.can(f.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, N.an)({
     query: e,
     omitUserIds: C,
     suggestedUserIds: t,
@@ -44,7 +44,7 @@ function b(e) {
 }
 class Z extends(u = g.ZP.Store) {
   initialize() {
-    this.waitFor(j.Z, x.Z)
+    this.waitFor(j.Z, m.Z)
   }
   getInviteSuggestionRows() {
     return _
@@ -57,7 +57,7 @@ class Z extends(u = g.ZP.Store) {
   }
   getSelectedInviteMetadata(e) {
     let t = T.get(e),
-      n = x.Z.getUserAffinitiesUserIds();
+      n = m.Z.getUserAffinitiesUserIds();
     return null != t ? {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,

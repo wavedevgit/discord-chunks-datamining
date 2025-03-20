@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 302bf7fb2d862671
+  Original File Name: c2716305da7cdeb2
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -4197,6 +4197,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: var(--interactive-active)
 }
 
+.invitesRefresh__85d16.guildIconContainer__85d16,.invitesRefresh__85d16.guildIconV2Container__85d16 {
+    margin-right: 0
+}
+
 .container_b2d72f {
     align-items: center;
     display: flex;
@@ -5611,4 +5615,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=302bf7fb2d862671.css.map*/
+/*# sourceMappingURL=c2716305da7cdeb2.css.map*/

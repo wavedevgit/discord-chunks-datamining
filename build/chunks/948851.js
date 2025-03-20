@@ -21,8 +21,8 @@ function h(e) {
     maxUses: h,
     temporary: g,
     onGenerateNewLink: v,
-    onToggleTemporary: m,
-    onSelectMaxAge: x,
+    onToggleTemporary: x,
+    onSelectMaxAge: m,
     onSelectMaxUses: p,
     isGuestInviteCreationToggleEnabled: N,
     inviteFlags: I,
@@ -38,7 +38,7 @@ function h(e) {
         children: (0, l.jsx)(s.VcW, {
           options: u,
           value: null !== (t = null == j ? void 0 : j.value) && void 0 !== t ? t : u[0].value,
-          onChange: x
+          onChange: m
         })
       }), (0, l.jsx)(s.xJW, {
         title: o.NW.string(o.t.jDqWHR),
@@ -51,7 +51,7 @@ function h(e) {
         children: (0, l.jsx)(s.j7V, {
           className: d.switch,
           value: g,
-          onChange: e => m(e),
+          onChange: e => x(e),
           note: o.NW.string(o.t.UN5IRU),
           hideBorder: !0,
           children: (0, l.jsx)(s.Text, {

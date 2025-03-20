@@ -33,18 +33,18 @@ function B(e) {
     onClose: k
   } = e, O = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
     analyticsLocations: N
-  } = (0, d.ZP)(_.Z.CAMERA_PREVIEW), W = a.useRef(null);
+  } = (0, d.ZP)(_.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
     S.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []), a.useEffect(() => {
     var e;
-    null === (e = W.current) || void 0 === e || e.scrollToTop()
+    null === (e = R.current) || void 0 === e || e.scrollToTop()
   }, []);
-  let D = async () => {
-    await R(), i.Z.setVideoEnabled(!0), null == B || B()
-  }, R = async () => {
+  let W = async () => {
+    await D(), i.Z.setVideoEnabled(!0), null == B || B()
+  }, D = async () => {
     try {
       await (0, g.wG)(A, {
         location: function(e) {
@@ -82,7 +82,7 @@ function B(e) {
         transitionState: t,
         children: [(0, o.jsxs)(r.hzk, {
           className: P ? I.contentWithVideoBackgrounds : I.content,
-          scrollerRef: W,
+          scrollerRef: R,
           children: [(0, o.jsx)(r.X6q, {
             id: y,
             className: I.header,
@@ -115,7 +115,7 @@ function B(e) {
           children: [(() => {
             let e = n ? x.NW.string(x.t.KQENho) : x.NW.string(x.t.kgIe9f);
             return (0, o.jsx)(r.zxk, {
-              onClick: n ? R : D,
+              onClick: n ? D : W,
               size: r.zxk.Sizes.SMALL,
               autoFocus: !n,
               children: e

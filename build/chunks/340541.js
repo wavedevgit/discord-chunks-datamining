@@ -1,8 +1,9 @@
-/** Chunk was on 7654 **/
+/** Chunk was on 81288 **/
 n.d(t, {
-  _k: () => i
+  _k: () => r,
+  jW: () => o
 });
-let l = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2025-03_invites_refresh",
   label: "Invites Refresh",
@@ -18,13 +19,26 @@ let l = (0, n(818083).B)({
   }]
 });
 
-function i() {
+function o(e) {
   let {
-    enabled: e
-  } = l.useExperiment({
-    location: "instant_invite_modal"
+    location: t
+  } = e, {
+    enabled: n
+  } = i.getCurrentConfig({
+    location: t
+  });
+  return n
+}
+
+function r(e) {
+  let {
+    location: t
+  } = e, {
+    enabled: n
+  } = i.useExperiment({
+    location: t
   });
   return {
-    enabled: e
+    enabled: n
   }
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 81288 **/
 n.d(t, {
-  Z: () => f
+  Z: () => m
 });
 var i = n(200651);
 n(192379);
@@ -14,51 +14,51 @@ var o = n(442837),
   u = n(709586),
   _ = n(981631),
   g = n(30513),
-  m = n(388032),
-  b = n(150059);
+  b = n(388032),
+  f = n(150059);
 
-function f(e) {
+function m(e) {
   let {
     analyticsSection: t,
     analyticsPage: n,
-    isGIF: f,
+    isGIF: m,
     banner: p
-  } = e, h = (0, o.e7)([d.Z], () => d.Z.getGuildId()), N = (0, o.e7)([s.Z], () => s.Z.getGuild(h)), {
-    analyticsLocations: v
+  } = e, h = (0, o.e7)([d.Z], () => d.Z.getGuildId()), v = (0, o.e7)([s.Z], () => s.Z.getGuild(h)), {
+    analyticsLocations: N
   } = (0, a.ZP)();
-  return null == N || N.hasFeature(_.oNc.ANIMATED_BANNER) || !f && N.hasFeature(_.oNc.BANNER) ? null : (0, i.jsxs)("div", {
-    className: b.container,
+  return null == v || v.hasFeature(_.oNc.ANIMATED_BANNER) || !m && v.hasFeature(_.oNc.BANNER) ? null : (0, i.jsxs)("div", {
+    className: f.container,
     children: [(0, i.jsx)(u.Z, {
-      className: b.guildBoostingIcon
+      className: f.guildBoostingIcon
     }), (0, i.jsx)(r.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: m.NW.string(m.t["56M7xc"])
+      children: b.NW.string(b.t["56M7xc"])
     }), (0, i.jsx)(r.zxk, {
       look: r.zxk.Looks.LINK,
       color: r.zxk.Colors.LINK,
-      className: b.subscribeButton,
+      className: f.subscribeButton,
       onClick: () => {
-        if (null == N) return;
+        if (null == v) return;
         let e = {
           section: t,
           page: n,
           object: _.qAy.UPSELL_HEADER
         };
         null != p ? (0, l.c)({
-          analyticsLocations: v,
+          analyticsLocations: N,
           analyticsLocation: e,
-          guild: N,
-          isGIF: f,
+          guild: v,
+          isGIF: m,
           banner: p
         }) : (0, c.Z)({
-          analyticsLocations: v,
+          analyticsLocations: N,
           analyticsSourceLocation: e,
-          guild: N,
-          perks: f ? (0, g.zC)() : (0, g.XO)()
+          guild: v,
+          perks: m ? (0, g.zC)() : (0, g.XO)()
         })
       },
-      children: m.NW.string(m.t.WUHdZW)
+      children: b.NW.string(b.t.WUHdZW)
     })]
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: 90db29694532c43c
+  Original File Name: 957c0dc9933e2099
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4267,10 +4267,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .headerButton_f37cb1 {
     position: absolute;
-    left: 0;
-    right: 0;
     top: 0;
+    right: 0;
     bottom: 0;
+    left: 0;
     pointer-events: none
 }
 
@@ -4436,6 +4436,43 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .bannerVisible_f37cb1 .header_f37cb1 {
     border-bottom-color: transparent
+}
+
+.invitesRefresh_f37cb1 .header_f37cb1 {
+    padding: var(--space-xs)
+}
+
+.invitesRefresh_f37cb1 .headerContent_f37cb1 {
+    justify-content: space-between;
+    gap: var(--space-xxs)
+}
+
+.invitesRefresh_f37cb1 .clickable_f37cb1 .header_f37cb1:hover,.invitesRefresh_f37cb1 .selected_f37cb1 .header_f37cb1 {
+    background-color: transparent;
+    background-color: initial
+}
+
+.invitesRefresh_f37cb1 .guildDropdown_f37cb1 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xxs);
+    cursor: pointer;
+    padding: var(--space-xxs) var(--space-xxs) var(--space-xxs) var(--space-xs);
+    border-radius: 8px
+}
+
+.invitesRefresh_f37cb1 .guildDropdown_f37cb1:hover {
+    background-color: var(--bg-mod-faint)
+}
+
+.invitesRefresh_f37cb1 .inviteButton_f37cb1 {
+    width: 32px;
+    height: 32px
+}
+
+.invitesRefresh_f37cb1 .inviteButton_f37cb1:hover {
+    background-color: var(--bg-mod-faint)
 }
 
 @keyframes pulse__3b43f {
@@ -5702,4 +5739,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=90db29694532c43c.css.map*/
+/*# sourceMappingURL=957c0dc9933e2099.css.map*/

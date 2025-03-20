@@ -35,7 +35,7 @@ function g(e) {
   let g = o.useCallback(() => {
       (0, c.s)(t, void 0)
     }, [t]),
-    m = o.useMemo(() => {
+    b = o.useMemo(() => {
       switch (t) {
         case d.pC.AVATAR:
           return u.NW.format(u.t["pvw/HB"], {
@@ -67,7 +67,7 @@ function g(e) {
     }
     return e
   }({
-    text: m,
+    text: b,
     button: u.NW.string(u.t.BmJkbW),
     buttonAnalyticsObject: {
       section: s.jXE.USER_PROFILE

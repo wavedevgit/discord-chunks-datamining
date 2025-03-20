@@ -35,8 +35,8 @@ var r, i = n(200651),
   A = n(984933),
   D = n(914010),
   R = n(540126),
-  L = n(734307),
-  k = n(854444),
+  k = n(734307),
+  L = n(854444),
   M = n(761091),
   G = n(301342),
   B = n(906817),
@@ -848,7 +848,7 @@ let eg = e => {
 };
 
 function em(e) {
-  let t = (0, k.o)(),
+  let t = (0, L.o)(),
     {
       isFavoritesPerk: n
     } = (0, _.z)("favorites-channel-list"),
@@ -865,7 +865,7 @@ function em(e) {
 
 function eb(e) {
   let t = (0, M.Z)(e.guild),
-    n = (0, u.cj)([L.Z], () => L.Z.getGuild(e.guildId, {
+    n = (0, u.cj)([k.Z], () => k.Z.getGuild(e.guildId, {
       guildActionRows: t
     })),
     r = (0, y.Q3)("GuildChannelList"),

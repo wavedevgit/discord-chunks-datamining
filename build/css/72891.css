@@ -1,6 +1,6 @@
 /**
   Module ID: 72891
-  Original File Name: 62e357a0a4f13fd3
+  Original File Name: f70aa57ac146596d
 **/
 .boostedGuildIconGem__97677 {
     transition: color .1s linear;
@@ -70,6 +70,10 @@
 
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
     color: var(--interactive-active)
+}
+
+.invitesRefresh__85d16.guildIconContainer__85d16,.invitesRefresh__85d16.guildIconV2Container__85d16 {
+    margin-right: 0
 }
 
 .header__6e6ad {
@@ -228,4 +232,4 @@
     left: var(--spacing-12)
 }
 
-/*# sourceMappingURL=62e357a0a4f13fd3.css.map*/
+/*# sourceMappingURL=f70aa57ac146596d.css.map*/

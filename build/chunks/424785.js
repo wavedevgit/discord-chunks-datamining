@@ -36,8 +36,8 @@ var i = n(120356),
   A = n(934415),
   D = n(98597),
   R = n(648501),
-  L = n(473403),
-  k = n(207055),
+  k = n(473403),
+  L = n(207055),
   M = n(981631),
   G = n(647086),
   B = n(388032),
@@ -108,7 +108,7 @@ class z extends D.ZP {
       speakerVoiceStates: i,
       numAudience: o
     } = this.props;
-    return (0, r.jsx)(k.Z, {
+    return (0, r.jsx)(L.Z, {
       channel: e,
       voiceStates: i,
       collapsed: t,
@@ -173,7 +173,7 @@ class z extends D.ZP {
               }
               return i
             }(l, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(L.ZP, H(F({
+            return (0, r.jsxs)(k.ZP, H(F({
               className: U.iconVisibility,
               iconClassName: o()({
                 [W.iconLive]: null != f

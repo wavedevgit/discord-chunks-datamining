@@ -1,6 +1,6 @@
 /**
   Module ID: 23170
-  Original File Name: f48a11d42c9e341a
+  Original File Name: 34e543232e55601d
 **/
 @value minColumnWidth: 460px;
 
@@ -2990,6 +2990,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: var(--interactive-active)
 }
 
+.invitesRefresh__85d16.guildIconContainer__85d16,.invitesRefresh__85d16.guildIconV2Container__85d16 {
+    margin-right: 0
+}
+
 .container_b2d72f {
     align-items: center;
     display: flex;
@@ -4145,4 +4149,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=f48a11d42c9e341a.css.map*/
+/*# sourceMappingURL=34e543232e55601d.css.map*/

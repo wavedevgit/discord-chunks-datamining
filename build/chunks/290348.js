@@ -10,7 +10,7 @@ n.d(t, {
   PK: () => Z,
   R7: () => W,
   TT: () => K,
-  UE: () => B,
+  UE: () => k,
   XZ: () => z,
   Xo: () => en,
   _T: () => D,
@@ -179,14 +179,14 @@ function F(e, t) {
 }
 let H = [];
 
-function B(e) {
+function k(e) {
   let t = j(e, e => null == e ? H : e.role_benefits.benefits.filter(v.rC));
   return L(e, "channelBenefits", t)
 }
-let k = [];
+let B = [];
 
 function W(e) {
-  let t = j(e, e => null == e ? k : e.role_benefits.benefits.filter(v.lL));
+  let t = j(e, e => null == e ? B : e.role_benefits.benefits.filter(v.lL));
   return L(e, "intangibleBenefits", t)
 }
 let V = new Set;

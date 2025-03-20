@@ -209,7 +209,7 @@ class T extends(r = o.Component) {
         onRequestOpen: r,
         onRequestClose: i
       } = this.props;
-      if (e.shiftKey && null != t) {
+      if ((null == e ? void 0 : e.shiftKey) && null != t) {
         t(e);
         return
       }

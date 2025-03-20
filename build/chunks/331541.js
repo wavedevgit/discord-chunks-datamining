@@ -71,71 +71,72 @@ function q(e) {
   let {
     currentUser: t,
     onClose: n,
-    setPopoutRef: q
-  } = e, X = __OVERLAY__, J = (0, b.ZP)(t.id), {
-    analyticsLocations: Q
-  } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), $ = (0, N.ZB)({
+    setPopoutRef: q,
+    highlightBadge: X
+  } = e, J = __OVERLAY__, Q = (0, b.ZP)(t.id), {
+    analyticsLocations: $
+  } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), ee = (0, N.ZB)({
     layout: "SIMPLIFIED_ACCOUNT_POPOUT",
     userId: t.id
   }), {
-    ref: ee
-  } = (0, c.Z)(), et = (0, d.Z)(ee);
+    ref: et
+  } = (0, c.Z)(), en = (0, d.Z)(et);
   i.useEffect(() => {
-    null == q || q(ee.current)
-  }, [ee, q]);
-  let en = (0, l.e7)([D.Z], () => D.Z.getStatus(t.id)),
-    er = (0, l.e7)([Z.Z], () => Z.Z.hidePersonalInformation),
-    ei = (0, h.p)(),
-    es = R.Sb.useSetting(),
-    ea = (0, U.I)(en),
-    el = (0, L.g)(n),
-    eo = (0, f.Z)({
-      analyticsLocations: Q
+    null == q || q(et.current)
+  }, [et, q]);
+  let er = (0, l.e7)([D.Z], () => D.Z.getStatus(t.id)),
+    ei = (0, l.e7)([Z.Z], () => Z.Z.hidePersonalInformation),
+    es = (0, h.p)(),
+    ea = R.Sb.useSetting(),
+    el = (0, U.I)(er),
+    eo = (0, L.g)(n),
+    ec = (0, f.Z)({
+      analyticsLocations: $
     }),
-    ec = (0, W.I5)(t),
-    ed = (0, g.p)({
+    ed = (0, W.I5)(t),
+    eu = (0, g.p)({
       location: "AccountProfilePopout"
     }),
-    eu = i.useMemo(() => (0, p.Z)(), []),
-    em = e => {
+    em = i.useMemo(() => (0, p.Z)(), []),
+    eg = e => {
       null == n || n(), (0, A.openUserProfileModal)(K({
-        customStatusPrompt: eu,
-        sourceAnalyticsLocations: Q
-      }, $, e))
+        customStatusPrompt: em,
+        sourceAnalyticsLocations: $
+      }, ee, e))
     };
   return (0, r.jsx)(m.Gt, {
-    value: Q,
+    value: $,
     children: (0, r.jsx)(N.Mt, {
-      value: $,
+      value: ee,
       children: (0, r.jsx)(o.VqE, {
-        ref: ee,
+        ref: et,
         "aria-label": t.username,
         children: (0, r.jsxs)(S.Z, {
           className: z.themeContainer,
           user: t,
-          displayProfile: J,
+          displayProfile: Q,
           profileType: F.y0.BITE_SIZE,
           children: [(0, r.jsxs)("header", {
             className: Y.header,
             children: [(0, r.jsx)(j.Z, {
               user: t,
-              displayProfile: J,
+              displayProfile: Q,
               profileType: F.y0.BITE_SIZE
             }), (0, r.jsx)(_.Z, {
               user: t,
-              displayProfile: J,
+              displayProfile: Q,
               profileType: F.y0.BITE_SIZE,
-              onOpenProfile: X ? void 0 : em
+              onOpenProfile: J ? void 0 : eg
             }), (0, r.jsx)(y.Z, {
               location: "AccountProfilePopout",
               user: t,
               profileType: F.y0.BITE_SIZE,
               onCloseProfile: n,
-              prompt: ed ? eu : null
+              prompt: eu ? em : null
             })]
-          }), (null == J ? void 0 : J.profileEffectId) != null && (0, r.jsx)(x.Z, {
-            profileEffectId: null == J ? void 0 : J.profileEffectId,
-            isHovering: et
+          }), (null == Q ? void 0 : Q.profileEffectId) != null && (0, r.jsx)(x.Z, {
+            profileEffectId: null == Q ? void 0 : Q.profileEffectId,
+            isHovering: en
           }), (0, r.jsxs)(o.Ttm, {
             className: z.body,
             children: [(0, r.jsx)(T.Z, {
@@ -143,33 +144,34 @@ function q(e) {
               className: z.username,
               profileType: F.y0.BITE_SIZE,
               nickname: k.ZP.getName(null, null, t),
-              onOpenProfile: X ? void 0 : em,
-              pronouns: null == J ? void 0 : J.pronouns,
+              onOpenProfile: J ? void 0 : eg,
+              pronouns: null == Q ? void 0 : Q.pronouns,
               tags: (0, r.jsx)(E.Z, {
-                displayProfile: J,
+                displayProfile: Q,
                 profileType: F.y0.BITE_SIZE,
-                onClose: n
+                onClose: n,
+                shouldOpenBadgeTooltip: null != X ? e => e === X : void 0
               }),
               nicknameIcons: (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(v.Z, {
                   userId: t.id
                 }), (0, r.jsx)(I.Z, {
                   user: t,
-                  isHovering: et
+                  isHovering: en
                 })]
               })
             }), (0, r.jsx)(P.Z, {
               user: t,
-              bio: null == J ? void 0 : J.bio,
-              hidePersonalInformation: er,
+              bio: null == Q ? void 0 : Q.bio,
+              hidePersonalInformation: ei,
               onClose: n
             }), (0, r.jsx)(C.Z, {
-              isPremiumUser: ec,
+              isPremiumUser: ed,
               onInteraction: n
             }), (0, r.jsx)(O.Z, {
               user: t,
               currentUser: t,
-              displayProfile: J,
+              displayProfile: Q,
               onClose: n
             }), (0, r.jsxs)("div", {
               className: z.menus,
@@ -183,7 +185,7 @@ function q(e) {
                     label: H.NW.string(H.t.s5vZlZ),
                     icon: o.vdY,
                     onClick: () => {
-                      eo(), n()
+                      ec(), n()
                     }
                   }), (0, r.jsx)("div", {
                     className: z.menuDivider
@@ -192,10 +194,10 @@ function q(e) {
                     action: "PRESS_SET_STATUS",
                     label: (0, r.jsx)(M.Z, {}),
                     icon: () => (0, r.jsx)(o.qbd, {
-                      status: en,
+                      status: er,
                       size: 12
                     }),
-                    hint: (ei || en === G.Skl.DND) && (0, r.jsx)(o.owu, {
+                    hint: (es || er === G.Skl.DND) && (0, r.jsx)(o.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: s.tq ? void 0 : e => {
@@ -207,7 +209,7 @@ function q(e) {
                         className: z.statusPickerModalMenu,
                         "aria-label": H.NW.string(H.t.E13trK),
                         onClose: t,
-                        children: ea
+                        children: el
                       })
                     },
                     onClick: s.tq ? () => {
@@ -242,7 +244,7 @@ function q(e) {
                             hideScroller: !0,
                             onClose: i,
                             onSelect: void 0,
-                            children: ea
+                            children: el
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -278,10 +280,10 @@ function q(e) {
                         navId: "switch-accounts-submenu",
                         "aria-label": H.NW.string(H.t.wFhVqK),
                         onClose: t,
-                        children: el
+                        children: eo
                       })
                     }
-                  }), !__OVERLAY__ && w.wS && es && (0, r.jsxs)(r.Fragment, {
+                  }), !__OVERLAY__ && w.wS && ea && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)("div", {
                       className: z.menuDivider
                     }), (0, r.jsx)(B.Mv, {

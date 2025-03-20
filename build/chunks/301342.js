@@ -80,10 +80,10 @@ let N = i.memo(function(e) {
       D = (0, s.e7)([m.Z], () => m.Z.isCollapsed(o.id)),
       R = (0, s.e7)([v.Z], () => v.Z.can(j.Plq.MANAGE_CHANNELS, o));
     t = null != Z ? N > Z ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
-    let L = i.useCallback(() => {
+    let k = i.useCallback(() => {
         D ? (0, u.mJ)(o.id) : (0, u.c4)(o.id)
       }, [o.id, D]),
-      k = i.useCallback(e => {
+      L = i.useCallback(e => {
         if ("null" !== o.id) {
           let t = b.Z.getGuild(o.getGuildId());
           null != t && (0, d.jW)(e, async () => {
@@ -150,13 +150,13 @@ let N = i.memo(function(e) {
               [x.muted]: A,
               [x.clickable]: !0
             }),
-            onContextMenu: k,
+            onContextMenu: L,
             children: [(0, r.jsxs)(c.P3F, P(S({
               innerRef: V,
               className: x.mainContent,
               tabIndex: U
             }, W), {
-              onClick: L,
+              onClick: k,
               "aria-label": C.NW.formatToPlainString(C.t.y5l3Jy, {
                 categoryName: o.name
               }),
