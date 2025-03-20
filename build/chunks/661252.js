@@ -1,4 +1,4 @@
-/** Chunk was on 98933 **/
+/** Chunk was on 98650 **/
 e.exports = {
   shopCard: "shopCard_c3d04b",
   cardButtonInner: "cardButtonInner_c3d04b",

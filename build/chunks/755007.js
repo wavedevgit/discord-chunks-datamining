@@ -1,4 +1,4 @@
-/** Chunk was on 23354 **/
+/** Chunk was on 98650 **/
 n.d(t, {
   Z: () => d
 });
@@ -41,7 +41,7 @@ function d(e) {
         }
         return e
       }({
-        variant: "text-lg/bold",
+        variant: "text-md/semibold",
         className: o()(u.orbPriceTag, {
           [u.insufficientBalance]: !d
         })

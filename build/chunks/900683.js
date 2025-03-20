@@ -1,44 +1,44 @@
-/** Chunk was on 98933 **/
+/** Chunk was on 98650 **/
 n.d(t, {
-  Z: () => s,
-  e: () => d
+  Z: () => d,
+  e: () => u
 });
-var a = n(200651);
+var r = n(200651);
 n(192379);
 var i = n(120356),
   o = n.n(i),
-  r = n(481060),
-  c = n(388032),
-  l = n(531977),
-  _ = n(531599);
+  l = n(481060),
+  a = n(388032),
+  s = n(531977),
+  c = n(531599);
 
-function d() {
-  return (0, a.jsxs)("div", {
-    className: o()(l.upsellFooter, l.reverseTrialUpsellContainer),
-    children: [(0, a.jsx)("img", {
-      src: _.Z,
+function u() {
+  return (0, r.jsxs)("div", {
+    className: o()(s.upsellFooter, s.reverseTrialUpsellContainer),
+    children: [(0, r.jsx)("img", {
+      src: c.Z,
       alt: "reverse trial unlock",
-      className: l.unlockIcon
-    }), (0, a.jsx)(r.Text, {
+      className: s.unlockIcon
+    }), (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
-      className: l.upsellText,
-      children: c.NW.format(c.t.f5VHKi, {})
+      className: s.upsellText,
+      children: a.NW.format(a.t.f5VHKi, {})
     })]
   })
 }
 
-function s(e) {
+function d(e) {
   let {
     text: t,
     color: n
   } = e;
-  return (0, a.jsxs)("div", {
-    className: l.upsellFooter,
-    children: [(0, a.jsx)(r.SrA, {
+  return (0, r.jsxs)("div", {
+    className: s.upsellFooter,
+    children: [(0, r.jsx)(l.SrA, {
       size: "md",
-      className: l.upsellFooterIcon,
+      className: s.upsellFooterIcon,
       color: n
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       children: t
     })]
   })

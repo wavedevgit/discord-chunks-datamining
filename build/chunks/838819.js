@@ -37,8 +37,8 @@ var r = n(200651),
   N = n(223143),
   Z = n(298228),
   A = n(937510),
-  W = n(309956),
-  H = n(853748),
+  H = n(309956),
+  W = n(853748),
   R = n(426171),
   F = n(823941),
   M = n(752053),
@@ -49,8 +49,8 @@ var r = n(200651),
   G = n(373113),
   q = n(681435),
   $ = n(566564),
-  K = n(531864),
-  Y = n(302800),
+  Y = n(531864),
+  K = n(302800),
   X = n(215023),
   Q = n(981631),
   J = n(921944),
@@ -153,7 +153,7 @@ function ea(e) {
     setIsGiftEasterEggEnabled: i,
     showEasterEggToggle: c,
     isFullScreen: d
-  } = e, u = l.useRef(10 + 70 * Math.random()), [h, m] = l.useState(!1), p = (0, Y.M7)(t.skuId), b = (0, f.O)(e => {
+  } = e, u = l.useRef(10 + 70 * Math.random()), [h, m] = l.useState(!1), p = (0, K.M7)(t.skuId), b = (0, f.O)(e => {
     m(e && null != p)
   }, d ? .13 : .15);
   return (0, r.jsxs)("div", {
@@ -179,7 +179,7 @@ function ea(e) {
       initialItemCardRef: a,
       isPremiumUser: n,
       isGiftEasterEggEnabled: s
-    }), null != p && null != t.unpublishedAt && (0, r.jsx)(H.$, {
+    }), null != p && null != t.unpublishedAt && (0, r.jsx)(W.$, {
       unpublishedAt: t.unpublishedAt,
       isVisible: h,
       displayOptions: p,
@@ -201,13 +201,13 @@ let eo = function(e) {
     analyticsLocations: x
   } = (0, p.ZP)([...k, m.Z.COLLECTIBLES_SHOP]), {
     sessionId: A,
-    scrollerRef: H,
+    scrollerRef: W,
     scrollHandler: F
   } = (0, b._)(Q.rMx.COLLECTIBLES_SHOP_SCROLLED, f), {
     selectedTab: U,
-    transitionState: Y,
+    transitionState: K,
     transitionToTab: er
-  } = (0, W.B)(H, a, n), [el, eo] = l.useState(!1), es = (0, P.R)("CollectiblesShop"), [ei, ec] = l.useState(X.IV), [ed, eu] = l.useState(), [eg, eh] = l.useState(), {
+  } = (0, H.B)(W, a, n), [el, eo] = l.useState(!1), es = (0, P.R)("CollectiblesShop"), [ei, ec] = l.useState(X.IV), [ed, eu] = l.useState(), [eg, eh] = l.useState(), {
     closeIntroToOrbsClaimedCoachmark: ef
   } = (0, S.Z)({
     location: "CollectiblesShop"
@@ -242,7 +242,7 @@ let eo = function(e) {
     isLayer: em,
     initialItemCardRef: eI
   }), l.useEffect(() => {
-    if (Y === X.f7.VISIBLE) {
+    if (K === X.f7.VISIBLE) {
       var e;
       let t;
       t = U === X.AW.CATALOG ? eg : f, E.default.track(Q.rMx.COLLECTIBLES_SHOP_VIEWED, {
@@ -257,7 +257,7 @@ let eo = function(e) {
       type: et.cd.COLLECTIBLES_SHOP,
       location_stack: x
     })
-  }, [e_, x, f, A, ed, eu, eg, Y, U]);
+  }, [e_, x, f, A, ed, eu, eg, K, U]);
   let {
     dismissShopButtonDC: eL
   } = (0, q.Z)();
@@ -286,19 +286,19 @@ let eo = function(e) {
     {
       setCategoryRef: eP,
       handleScrollToCategory: eN
-    } = (0, R.xV)(H.current),
+    } = (0, R.xV)(W.current),
     {
       reducedMotion: eZ
     } = l.useContext(g.Sfi),
     eA = l.useRef(null),
-    eW = l.useRef(null);
+    eH = l.useRef(null);
   (0, g.Tbt)(eA), l.useEffect(() => {
     if (!n) {
       var e;
-      null === (e = eW.current) || void 0 === e || e.focus()
+      null === (e = eH.current) || void 0 === e || e.focus()
     }
   }, [n]);
-  let eH = l.useCallback(async (e, t, r) => {
+  let eW = l.useCallback(async (e, t, r) => {
       let l = r && !n && !eZ.enabled;
       eh(e), eu(t), t === s.T.ORB ? await er(X.AW.ORBS, r) : (await er(X.AW.CATALOG, l), t && eN(t))
     }, [eN, n, eZ.enabled, er]),
@@ -315,22 +315,22 @@ let eo = function(e) {
       },
       children: [(0, r.jsx)("div", {
         className: en.shop,
-        ref: n ? eA : eW,
+        ref: n ? eA : eH,
         tabIndex: -1,
         children: (0, r.jsx)(g.Den, {
           className: en.shopScroll,
-          ref: H,
+          ref: W,
           onScroll: () => {
-            if (F(), null != H.current) {
-              let e = H.current.getDistanceFromBottom();
+            if (F(), null != W.current) {
+              let e = W.current.getDistanceFromBottom();
               ei >= es ? eo(e < 20) : e <= 200 && ec(ei + X.IV)
             }
           },
           children: (0, r.jsxs)("div", {
             className: o()(en.shopViewWrapper, {
-              [en.visible]: Y === X.f7.VISIBLE,
-              [en.in]: Y === X.f7.IN,
-              [en.out]: Y === X.f7.OUT
+              [en.visible]: K === X.f7.VISIBLE,
+              [en.in]: K === X.f7.IN,
+              [en.out]: K === X.f7.OUT
             }),
             children: [(0, r.jsx)(V.I, {
               isFullScreen: n,
@@ -344,7 +344,7 @@ let eo = function(e) {
                 case X.AW.ORBS:
                   return (0, r.jsx)($.Z, {
                     isFullScreen: n,
-                    handleTransition: eH,
+                    handleTransition: eW,
                     numVisibleItems: ei,
                     tab: e
                   });
@@ -391,15 +391,15 @@ let eo = function(e) {
           })
         })
       }), eB && (0, r.jsx)(G.Z, {}), !n && U === X.AW.HOME && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(K.Z, {
+        children: [(0, r.jsx)(Y.Z, {
           peaking: el,
-          transitioning: Y === X.f7.OUT
-        }), (0, r.jsx)(K.Z, {
+          transitioning: K === X.f7.OUT
+        }), (0, r.jsx)(Y.Z, {
           style: {
             left: 1850
           },
           peaking: el,
-          transitioning: Y === X.f7.OUT
+          transitioning: K === X.f7.OUT
         })]
       })]
     })

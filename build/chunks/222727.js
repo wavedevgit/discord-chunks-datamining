@@ -1,17 +1,17 @@
-/** Chunk was on 61697 **/
-n.d(e, {
-  U: () => l
+/** Chunk was on 98650 **/
+n.d(t, {
+  U: () => o
 });
 var r = n(990547),
   i = n(213609);
 
-function l(t, e) {
+function o(e, t) {
   (0, i.Z)({
     type: r.ImpressionTypes.VIEW,
     name: r.ImpressionNames.LOCALIZED_PRICING_UPSELL_VIEWED,
     properties: {
-      country_code: e,
-      action_location: t
+      country_code: t,
+      action_location: e
     }
   })
 }

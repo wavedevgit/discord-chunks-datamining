@@ -1,4 +1,4 @@
-/** Chunk was on 23354 **/
+/** Chunk was on 98650 **/
 n.d(t, {
   Z: () => b
 });
@@ -70,10 +70,10 @@ let m = {
       onSuccess: O,
       tooltipDelay: g,
       isGiftEasterEggEnabled: N,
-      disableCustomColor: I = !1
+      color: I = o.Ttl.BRAND
     } = e, {
       analyticsLocations: T
-    } = (0, a.ZP)(), C = i.useRef(null), S = (0, l.Z)(C), y = I ? E.BR.DARK : E.BR.LIGHT, v = (0, d.hv)("CollectiblesShopGiftButton");
+    } = (0, a.ZP)(), C = i.useRef(null), S = (0, l.Z)(C), y = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(o.ua7, {
       text: f.NW.string(f.t["JCFN//"]),
       delay: g,
@@ -99,7 +99,7 @@ let m = {
         }({}, e), l = l = {
           buttonRef: C,
           className: h.giftButton,
-          color: I ? o.Ttl.BRAND : o.Ttl.CUSTOM,
+          color: I,
           look: o.zxk.Looks.FILLED,
           size: o.PhG.ICON,
           innerClassName: h.giftButtonInner,
@@ -114,7 +114,7 @@ let m = {
               giftingOrigin: p.Wt.SHOP_PAGE,
               analyticsLocations: T,
               returnRef: b,
-              variantsReturnStyle: v,
+              variantsReturnStyle: y,
               onClose: null != O ? e => {
                 e && O()
               } : void 0
@@ -123,7 +123,7 @@ let m = {
           children: N ? (0, r.jsx)(c.Z, {
             hovered: S,
             isContentDismissed: !0,
-            themeOverride: y,
+            themeOverride: E.BR.DARK,
             boxColors: m
           }) : (0, r.jsx)(o.OgN, {
             size: "md",

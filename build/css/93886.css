@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: c2716305da7cdeb2
+  Original File Name: e15ad48cf804068c
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -3258,13 +3258,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: 2px
 }
 
-.priceTag_cb53f6 {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    align-items: center
-}
-
 .orbPriceTag__5dbac {
     display: flex;
     flex-direction: row;
@@ -3276,12 +3269,16 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .5
 }
 
-.priceLine__37ae9 {
+.priceLine__132c6 {
     margin-top: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center
+}
+
+.nitroIcon__132c6 {
+    margin-right: 4px
 }
 
 .variantsPanel__6f029 {
@@ -5615,4 +5612,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=c2716305da7cdeb2.css.map*/
+/*# sourceMappingURL=e15ad48cf804068c.css.map*/

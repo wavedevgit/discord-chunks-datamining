@@ -1,4 +1,4 @@
-/** Chunk was on 98933 **/
+/** Chunk was on 98650 **/
 e.exports = {
   upsellFooter: "upsellFooter__5e07c",
   upsellFooterIcon: "upsellFooterIcon__5e07c",

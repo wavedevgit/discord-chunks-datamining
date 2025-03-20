@@ -1,0 +1,6 @@
+/** Chunk was on 2026 **/
+e.exports = {
+  priceLine: "priceLine__05bc9",
+  orbText: "orbText__05bc9",
+  nitroUpsell: "nitroUpsell__05bc9"
+}

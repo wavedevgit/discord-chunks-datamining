@@ -14,8 +14,8 @@ var n = r(200651),
   f = r(272008),
   m = r(497505),
   b = r(918701),
-  y = r(642145),
-  p = r(215023),
+  p = r(642145),
+  y = r(215023),
   O = r(388032),
   g = r(435696),
   j = r(557256),
@@ -125,11 +125,11 @@ function w(e) {
     w = function(e, t, r) {
       let [n, o] = a.useState("loading"), [l, i] = a.useState(!1), {
         balance: u
-      } = (0, s.A)(), d = (0, c.Z)(u), [b, y] = a.useState(!1);
+      } = (0, s.A)(), d = (0, c.Z)(u), [b, p] = a.useState(!1);
       return (a.useEffect(() => {
         let e = null;
         return "success" === n && t && (e = setTimeout(() => {
-          y(!0)
+          p(!0)
         }, 1e3)), () => {
           null != e && clearTimeout(e)
         }
@@ -161,9 +161,9 @@ function w(e) {
     S = a.useCallback(() => {
       x(!0), (0, i.mK)({
         openInLayer: !1,
-        tab: p.AW.ORBS,
+        tab: y.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: o.id === y.V ? l.Z.INTRO_TO_ORBS_QUEST : l.Z.QUEST_HOME_PAGE
+        analyticsSource: o.id === p.V ? l.Z.INTRO_TO_ORBS_QUEST : l.Z.QUEST_HOME_PAGE
       }), v({
         delayMS: 300
       })

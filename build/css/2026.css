@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: e56c177960b1054f
+  Original File Name: 7c7b7f7e000a6fd3
 **/
 .buttonContent_a83ec9 {
     width: 24px;
@@ -54,19 +54,26 @@
     pointer-events: none
 }
 
-.priceLine__794a8 {
+.priceLine__05bc9 {
     margin-top: 12px;
     justify-content: space-between;
     align-items: center
 }
 
-.orbText__794a8,.priceLine__794a8 {
+.orbText__05bc9,.priceLine__05bc9 {
     display: flex;
     flex-direction: row
 }
 
-.orbText__794a8 {
+.orbText__05bc9 {
     gap: 8px
+}
+
+.nitroUpsell__05bc9 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px
 }
 
 .modalRoot_c50f62 {
@@ -332,7 +339,14 @@
 }
 
 .button_c50f62 {
-    width: 100%
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center
+}
+
+.primaryButton_c50f62 {
+    flex: 1
 }
 
 .enabledButton_c50f62 {
@@ -409,7 +423,7 @@
     gap: 8px
 }
 
-.primaryButtons_c50f62 {
+.checkoutButtonsRow_c50f62 {
     display: flex;
     flex-direction: row;
     gap: 8px
@@ -472,4 +486,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=e56c177960b1054f.css.map*/
+/*# sourceMappingURL=7c7b7f7e000a6fd3.css.map*/

@@ -282,8 +282,11 @@ let C = e => {
 };
 
 function R(e) {
-  let t = A(e);
-  return e.withoutMarkdown ? C(t) : t
+  var t;
+  let n = A(g(h({}, e), {
+    currentUser: null !== (t = e.currentUser) && void 0 !== t ? t : o.default.getCurrentUser()
+  }));
+  return e.withoutMarkdown ? C(n) : n
 }
 
 function P(e) {
