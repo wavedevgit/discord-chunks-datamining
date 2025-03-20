@@ -19,8 +19,8 @@ var o = n(200651),
   m = n(898531),
   h = n(131951),
   v = n(594174),
-  S = n(626135),
-  C = n(747545),
+  C = n(626135),
+  S = n(747545),
   T = n(981631),
   x = n(388032),
   I = n(262474);
@@ -35,7 +35,7 @@ function B(e) {
     analyticsLocations: N
   } = (0, d.ZP)(_.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
-    S.default.track(T.rMx.OPEN_MODAL, {
+    C.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []), a.useEffect(() => {
@@ -88,7 +88,7 @@ function B(e) {
             className: I.header,
             variant: "heading-xl/semibold",
             children: n ? x.NW.string(x.t.LAwwbW) : x.NW.string(x.t["/HITVF"])
-          }), (0, o.jsx)(C.Z, {
+          }), (0, o.jsx)(S.Z, {
             hidePreviewToggle: !0,
             showSmallBackgroundOptions: !0,
             hideDeviceHeader: !0,
@@ -106,7 +106,7 @@ function B(e) {
                   width: 368,
                   height: 207
                 })
-              }), (0, o.jsx)(C.S, {})]
+              }), (0, o.jsx)(S.S, {})]
             }),
             onLearnMore: k
           })]
@@ -125,7 +125,7 @@ function B(e) {
             type: r.XZJ.Types.INVERTED,
             value: w,
             onChange: () => {
-              b.qF.updateSetting(!w), S.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+              b.qF.updateSetting(!w), C.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
                 always_preview_video: !w
               })
             },

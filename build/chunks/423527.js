@@ -23,8 +23,8 @@ var r, i = n(200651),
   E = n(481230),
   I = n(388905),
   j = n(853268),
-  S = n(639946),
-  C = n(616952),
+  C = n(639946),
+  S = n(616952),
   O = n(792766),
   y = n(692483),
   T = n(100159),
@@ -317,7 +317,7 @@ class eu extends(r = o.PureComponent) {
     return (null == e ? void 0 : e.stage_instance) != null && null != e.guild ? (0, i.jsx)(O.Z, {
       stageInstance: e.stage_instance,
       guild: e.guild
-    }) : (null == e ? void 0 : e.guild_scheduled_event) != null ? (0, i.jsx)(S.r, {
+    }) : (null == e ? void 0 : e.guild_scheduled_event) != null ? (0, i.jsx)(C.r, {
       channel: e.channel,
       guildScheduledEvent: e.guild_scheduled_event
     }) : (0, i.jsx)(Y.Z, {
@@ -452,7 +452,7 @@ class eu extends(r = o.PureComponent) {
         date_of_birth: j
       } = {}
     } = this.state, {
-      consentRequired: S,
+      consentRequired: C,
       isMobileWebInviteRegistration: O,
       uniqueUsernameRegistrationConfig: {
         suggestions: y
@@ -463,7 +463,7 @@ class eu extends(r = o.PureComponent) {
       subText: A,
       consentText: Z
     } = this.renderConsentComponents(), R = this.renderErrorMessage(), D = (0, i.jsx)(h.ua7, {
-      text: !c && S ? en.NW.string(en.t.AY4IVF) : null,
+      text: !c && C ? en.NW.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", es(ea({
         className: ei.marginTop20
       }, e), {
@@ -578,7 +578,7 @@ class eu extends(r = o.PureComponent) {
         error: null != m ? m : ec(j),
         value: u,
         required: !0
-      }), (0, i.jsx)(C.Z, {}), D, R, Z, A, $.a ? null : (0, i.jsx)(I.zx, {
+      }), (0, i.jsx)(S.Z, {}), D, R, Z, A, $.a ? null : (0, i.jsx)(I.zx, {
         look: O ? I.zx.Looks.FILLED : I.zx.Looks.LINK,
         color: O ? I.zx.Colors.PRIMARY : I.zx.Colors.LINK,
         onClick: this.handleGotoLogin,

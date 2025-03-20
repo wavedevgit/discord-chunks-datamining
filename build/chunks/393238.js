@@ -29,10 +29,11 @@ function i() {
 function o(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
   r.useLayoutEffect(() => {
-    let n = e.current,
-      r = null == n ? void 0 : n.ownerDocument.defaultView;
-    if (null != n && null != r) {
-      let i = new r.ResizeObserver(n => {
+    var n;
+    let r = e.current,
+      i = null == r ? void 0 : null === (n = r.ownerDocument) || void 0 === n ? void 0 : n.defaultView;
+    if (null != r && null != i) {
+      let n = new i.ResizeObserver(n => {
         var r, i, o, a, s, l;
         let c = n[0],
           u = null == c ? void 0 : null === (i = c.borderBoxSize) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.inlineSize,
@@ -51,7 +52,7 @@ function o(e, t) {
           scrollWidth: c.target.scrollWidth
         })
       });
-      return i.observe(n), () => i.disconnect()
+      return n.observe(r), () => n.disconnect()
     }
   }, [e.current, ...n])
 }

@@ -24,8 +24,8 @@ var r = n(200651),
   E = n(63063),
   I = n(51144),
   j = n(481153),
-  S = n(781428),
-  C = n(423527),
+  C = n(781428),
+  S = n(423527),
   O = n(981631),
   y = n(388032),
   T = n(802138);
@@ -212,12 +212,12 @@ class A extends i.PureComponent {
         let e = this.state.currentUser;
         return c || null == e ? this.renderSpinner(y.NW.string(y.t.bYb2nZ)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(i, e)
       }
-      return "login" === this.getMode() ? (0, r.jsx)(S.Z, {
+      return "login" === this.getMode() ? (0, r.jsx)(C.Z, {
         giftCodeSKU: t,
         giftCode: i,
         transitionTo: s,
         location: l
-      }) : (0, r.jsx)(C.Z, {
+      }) : (0, r.jsx)(S.Z, {
         giftCodeSKU: t,
         giftCode: i,
         transitionTo: s,

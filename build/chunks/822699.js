@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.r(t), n.d(t, {
-  default: () => eC
+  default: () => eS
 }), n(301563), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -24,8 +24,8 @@ var r = n(200651),
   E = n(637776),
   I = n(264229),
   j = n(677760),
-  S = n(893607),
-  C = n(314897),
+  C = n(893607),
+  S = n(314897),
   O = n(82142),
   y = n(701190),
   T = n(626135),
@@ -111,7 +111,7 @@ let eo = (0, L.Z)(V.Z),
   eE = (0, L.Z)(X.Z),
   eI = (0, L.Z)(Y.Z),
   ej = (0, L.Z)(g.Z);
-class eS extends i.PureComponent {
+class eC extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -325,7 +325,7 @@ class eS extends i.PureComponent {
         path: $.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         render: e => (0, r.jsx)(ev, er({}, e))
       }), (0, r.jsx)(_.Z, {
-        path: $.Z5c.CHANNEL(S.Hw.guildId(), S.Hw.channelId({
+        path: $.Z5c.CHANNEL(C.Hw.guildId(), C.Hw.channelId({
           optional: !0
         }), ":messageId?"),
         render: e => (0, r.jsx)(eN, er({}, e))
@@ -349,7 +349,7 @@ class eS extends i.PureComponent {
     })
   }
 }
-let eC = l.ZP.connectStores([C.default, y.Z, O.Z, x.Z, N.Z], e => {
+let eS = l.ZP.connectStores([S.default, y.Z, O.Z, x.Z, N.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -357,7 +357,7 @@ let eC = l.ZP.connectStores([C.default, y.Z, O.Z, x.Z, N.Z], e => {
   } = e, a = null == i ? void 0 : null === (t = i.params) || void 0 === t ? void 0 : t.inviteCode, s = ee.a ? ee.Y : void 0, l = null != a ? (0, I.mb)(a, o.search) : s, c = null == i ? void 0 : null === (n = i.params) || void 0 === n ? void 0 : n.giftCode, u = null == i ? void 0 : null === (r = i.params) || void 0 === r ? void 0 : r.guildTemplateCode;
   return {
     inviteKey: l,
-    isAuthenticated: C.default.isAuthenticated(),
+    isAuthenticated: S.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
     gift: null != c ? O.Z.get(c) : null,
@@ -365,4 +365,4 @@ let eC = l.ZP.connectStores([C.default, y.Z, O.Z, x.Z, N.Z], e => {
     guildTemplate: null != u ? N.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: x.Z.hasLoadedExperiments
   }
-})(eS)
+})(eC)

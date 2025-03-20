@@ -24,7 +24,7 @@ function b(e) {
     setSlide: o,
     ready: b,
     token: x
-  } = e, [N, v] = i.useState(!1), [E, I] = i.useState(null), [j, S] = i.useState(null), [C, O] = i.useState(""), y = i.useRef(null);
+  } = e, [N, v] = i.useState(!1), [E, I] = i.useState(null), [j, C] = i.useState(null), [S, O] = i.useState(""), y = i.useRef(null);
   return i.useEffect(() => {
     if (b) {
       var e;
@@ -48,7 +48,7 @@ function b(e) {
         label: _.NW.string(_.t["8dM4FB"]),
         setRef: y,
         className: f.marginBottom20,
-        value: C,
+        value: S,
         onChange: O,
         error: E,
         autoComplete: "new-password",
@@ -58,15 +58,15 @@ function b(e) {
         className: f.marginTop8,
         onClick: () => {
           if (!N) {
-            if (0 === C.length) {
+            if (0 === S.length) {
               I(_.NW.string(_.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != j && S(null), null != E && I(null), t(""), v(!0), p.Z.post({
+            return null != j && C(null), null != E && I(null), t(""), v(!0), p.Z.post({
               url: g.ANM.ACCOUNT_REVERT,
               body: {
                 token: x,
-                password: C
+                password: S
               },
               trackedActionData: {
                 event: s.NetworkActionNames.ACCOUNT_REVERT
@@ -80,12 +80,12 @@ function b(e) {
               } = e;
               O(""), t(n), o(h.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) S(_.NW.formatToPlainString(_.t.aTVNen, {
+              if (e instanceof Error) C(_.NW.formatToPlainString(_.t.aTVNen, {
                 statusPageURL: g.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
+                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : C((function(e) {
                   switch (e) {
                     case g.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                       return _.NW.string(_.t["11zzGR"]);

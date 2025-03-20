@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
   GB: () => y,
-  JI: () => C,
+  JI: () => S,
   UM: () => A,
   V6: () => T,
   WT: () => E,
@@ -45,14 +45,14 @@ let x = 100,
     let n = N(e);
     return (null !== (t = null == n ? void 0 : n.memberCount) && void 0 !== t ? t : 0) > x
   },
-  S = e => e.state === _.r2o.ACCEPTED,
-  C = e => {
+  C = e => e.state === _.r2o.ACCEPTED,
+  S = e => {
     let {
       guild_scheduled_event: t
     } = e;
     return null != t
   },
-  O = e => !C(e) && (!!I(e) || null != e.inviter && !S(e) && !j(e)),
+  O = e => !S(e) && (!!I(e) || null != e.inviter && !C(e) && !j(e)),
   y = e => {
     let {
       guild: t,
@@ -103,7 +103,7 @@ function P(e) {
     }) : f.NW.string(f.t.OsdY8P)
   } else v(t) && null != t.target_user ? a = f.NW.formatToPlainString(f.t.x2L32d, {
     username: t.target_user.username
-  }) : S(t) ? a = f.NW.string(f.t["FDsl+P"]) : O(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
+  }) : C(t) ? a = f.NW.string(f.t["FDsl+P"]) : O(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {

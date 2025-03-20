@@ -1,55 +1,55 @@
 /** Chunk was on 88712 **/
-r.d(t, {
+n.d(t, {
   E: () => c
 });
-var n = r(200651),
-  i = r(192379),
-  l = r(120356),
-  o = r.n(l),
-  a = r(481060),
-  s = r(964981);
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  l = n.n(o),
+  a = n(481060),
+  s = n(964981);
 let c = i.memo(function(e) {
   let {
     emptyText: t,
-    icon: r,
+    icon: n,
     absolute: i = !1
   } = e;
-  return (0, n.jsx)("div", {
-    className: o()(s.emptyWidgetContainer, i && s.absolute),
-    children: (0, n.jsx)(a.ua7, {
+  return (0, r.jsx)("div", {
+    className: l()(s.emptyWidgetContainer, i && s.absolute),
+    children: (0, r.jsx)(a.ua7, {
       text: t,
       children: e => {
         var t, i;
-        return (0, n.jsx)("div", (t = function(e) {
+        return (0, r.jsx)("div", (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
         }({}, e), i = i = {
-          children: (0, n.jsx)(r, {
+          children: (0, r.jsx)(n, {
             size: "md",
             color: a.TVs.colors.WHITE,
             className: s.emptyWidgetIcon
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-          var r = Object.keys(e);
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
+          return n
         })(Object(i)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
         }), t))

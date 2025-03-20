@@ -87,25 +87,27 @@ function C(e, t, n) {
   return N(n, T(e, t), t)
 }
 
-function R(e, t, n) {
-  let r = _.default.getUser(n),
-    i = null == r;
-  null == r && (r = new c.Z({
+function R(e, t, n, r) {
+  var i;
+  let o = _.default.getUser(n),
+    a = null == o;
+  null == o && (o = new c.Z({
     id: n,
     username: "...",
     discriminator: n.slice(-5, -1)
   }));
   let {
-    member: o,
-    comparator: a
-  } = C(t, r, e), s = {
+    member: s,
+    comparator: l
+  } = C(t, o, e), u = {
     voiceState: e,
-    user: r,
-    member: o,
-    comparator: a,
-    nick: null == o ? void 0 : o.nick
+    user: o,
+    member: s,
+    comparator: l,
+    nick: null == s ? void 0 : s.nick,
+    connectedOn: null !== (i = null == r ? void 0 : r.connectedOn) && void 0 !== i ? i : Date.now()
   };
-  return i && (s._isPlaceholder = !0), s
+  return a && (u._isPlaceholder = !0), u
 }
 class P {
   updateVoiceState(e) {
@@ -152,7 +154,7 @@ class P {
   updateUsers() {
     return null == this._pending && this._voiceStates.values().reduce((e, t) => {
       let n = _.default.getUser(t.user.id);
-      return null != n && t.user !== n ? (this._voiceStates.set(n.id, R(t.voiceState, this.guildId, n.id)), !0) : e
+      return null != n && t.user !== n ? (this._voiceStates.set(n.id, R(t.voiceState, this.guildId, n.id, t)), !0) : e
     }, !1)
   }
   getUserIds() {

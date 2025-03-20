@@ -24,8 +24,8 @@ var r = n(200651),
   E = n(998502),
   I = n(981631),
   j = n(231338),
-  S = n(388032),
-  C = n(280069),
+  C = n(388032),
+  S = n(280069),
   O = n(802138);
 let y = n(515695),
   T = new m.Z("LoginQRSocket");
@@ -38,27 +38,27 @@ function P(e) {
     let e = new Image;
     e.src = y, e.onload = () => o(!0), e.onerror = () => o(!0)
   }, [y]), i.useEffect(() => {
-    n && c.uvj.announce(S.NW.string(S.t.j2p129))
+    n && c.uvj.announce(C.NW.string(C.t.j2p129))
   }, [n]), (0, r.jsx)("div", {
-    className: C.qrCodeContainer,
+    className: S.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(_.ZP, {
-        className: C.qrCode,
+        className: S.qrCode,
         size: 160,
         text: t
       }), (0, r.jsx)("div", {
-        className: C.qrCodeOverlay,
+        className: S.qrCodeOverlay,
         children: (0, r.jsx)("img", {
           src: y,
           alt: ""
         })
       })]
     }) : (0, r.jsx)("div", {
-      className: C.qrCodeOverlay,
-      "aria-label": S.NW.string(S.t.BUGkVF),
+      className: S.qrCodeOverlay,
+      "aria-label": C.NW.string(C.t.BUGkVF),
       "aria-busy": !0,
       children: (0, r.jsx)(c.$jN, {
-        className: C.qrCode,
+        className: S.qrCode,
         type: c.$jN.Type.WANDERING_CUBES,
         "aria-hidden": !0
       })
@@ -94,11 +94,11 @@ function Z(e) {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(g.Dx, {
           className: O.marginBottom8,
-          children: S.NW.string(S.t.UPiHaG)
+          children: C.NW.string(C.t.UPiHaG)
         }), null != i ? (0, r.jsx)(A, {
           children: i
         }) : (0, r.jsx)(g.DK, {
-          children: S.NW.format(S.t["Qq+A6u"], {})
+          children: C.NW.format(C.t["Qq+A6u"], {})
         }), (0, r.jsx)(c.zxk, {
           size: c.PhG.LARGE,
           look: c.iLD.LINK,
@@ -114,7 +114,7 @@ function Z(e) {
               conditionalMediationAbortController: e
             }).catch(() => {})
           })(a),
-          children: S.NW.string(S.t["/kpMDg"])
+          children: C.NW.string(C.t["/kpMDg"])
         })]
       });
     case 3:
@@ -124,16 +124,16 @@ function Z(e) {
       } = t;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
-          className: C.qrAvatar,
+          className: S.qrAvatar,
           user: e,
           size: c.EFr.SIZE_120,
           isMobile: !0,
           status: j.Sk.ONLINE
         }), (0, r.jsx)(g.Dx, {
           className: O.marginBottom8,
-          children: S.NW.string(S.t.apGCUV)
+          children: C.NW.string(C.t.apGCUV)
         }), (0, r.jsx)(g.DK, {
-          children: S.NW.format(S.t.Cbl5JC, {
+          children: C.NW.format(C.t.Cbl5JC, {
             username: "".concat(v.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zxk, {
@@ -141,8 +141,8 @@ function Z(e) {
           color: c.zxk.Colors.LINK,
           size: c.zxk.Sizes.MIN,
           onClick: n,
-          className: C.startOverButton,
-          children: S.NW.string(S.t.nOOhws)
+          className: S.startOverButton,
+          children: C.NW.string(C.t.nOOhws)
         })]
       })
     }
@@ -323,14 +323,14 @@ function R(e) {
     })
   }, [u, t, d, _]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: C.verticalSeparator
+      className: S.verticalSeparator
     }), (0, r.jsx)(c.qBt, {
       fillParent: !0,
-      className: C.qrLogin,
+      className: S.qrLogin,
       step: m,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
-        className: C.qrLoginInner,
+        className: S.qrLoginInner,
         children: (0, r.jsx)(Z, {
           state: u,
           cancel: g,

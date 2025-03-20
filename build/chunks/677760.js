@@ -25,7 +25,7 @@ var r = n(200651),
   I = n(388032),
   j = n(496397);
 
-function S(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function S(e) {
   return e
 }
 
-function C(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -158,7 +158,7 @@ function A(e) {
   let n = e => null == t ? null : 1 === e ? (0, r.jsx)(v.X, {
     invite: t
   }) : null;
-  return (0, r.jsx)(P, C(S({
+  return (0, r.jsx)(P, S(C({
     startAnimHeightPx: 0,
     innerStyle: () => j.guildInfoInner
   }, e), {
@@ -173,11 +173,11 @@ function Z(e) {
     if (null == t) return (0, r.jsx)(O, {});
     switch (n) {
       case 1:
-        return (0, r.jsx)(N.Z, C(S({}, e), {
+        return (0, r.jsx)(N.Z, S(C({}, e), {
           invite: t
         }));
       case 2:
-        return (0, r.jsx)(T, C(S({}, e), {
+        return (0, r.jsx)(T, S(C({}, e), {
           invite: t
         }));
       default:
@@ -188,7 +188,7 @@ function Z(e) {
     2: j.inviteCardInnerError,
     0: j.inviteCardInnerLoading
   };
-  return (0, r.jsx)(P, C(S({
+  return (0, r.jsx)(P, S(C({
     startAnimHeightPx: 200,
     innerStyle: e => i[e]
   }, e), {
@@ -215,9 +215,9 @@ function R(e) {
     className: j.splashBackground,
     style: o,
     contentClassName: j.centerAuthBoxContent,
-    children: [(0, r.jsx)(Z, C(S({}, e), {
+    children: [(0, r.jsx)(Z, S(C({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(A, S({}, e))]
+    })), (0, r.jsx)(A, C({}, e))]
   })
 }
 

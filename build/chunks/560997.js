@@ -102,17 +102,18 @@ function p(e) {
     isEligible: n,
     useIsEligible: r,
     eligibleDefault: i,
-    ineligibleDefault: o
+    ineligibleDefault: o,
+    onUseDefault: a
   } = e;
   return {
     getSetting: () => {
       let e = t.getSetting();
-      return null != e ? e : n() ? i() : o
+      return null != e ? e : (null == a || a(), n() ? i() : o)
     },
     useSetting: () => {
       let e = t.useSetting(),
         n = r();
-      return null != e ? e : n ? i() : o
+      return null != e ? e : (null == a || a(), n ? i() : o)
     },
     updateSetting: e => t.updateSetting(e)
   }

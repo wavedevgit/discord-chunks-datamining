@@ -1,25 +1,25 @@
 /** Chunk was on 88712 **/
-r.d(t, {
+n.d(t, {
   Z: () => a,
   o: () => s
 });
-var n = r(442837),
-  i = r(522474),
-  l = r(658785),
-  o = r(981631);
+var r = n(442837),
+  i = n(522474),
+  o = n(658785),
+  l = n(981631);
 
 function a(e) {
   let {
     location: t,
-    options: r
-  } = e, n = s(), {
+    options: n
+  } = e, r = s(), {
     showKeybindIndicators: i
-  } = l.Z.useExperiment({
+  } = o.Z.useExperiment({
     location: t
-  }, r);
-  return i && n
+  }, n);
+  return i && r
 }
 
 function s() {
-  return !(0, n.e7)([i.Z], () => i.Z.getWindowVisible(o.KJ3.ACTIVITY_POPOUT))
+  return !(0, r.e7)([i.Z], () => i.Z.getWindowVisible(l.KJ3.ACTIVITY_POPOUT))
 }
