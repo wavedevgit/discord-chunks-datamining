@@ -1,6 +1,6 @@
 /**
   Module ID: 89001
-  Original File Name: edb3aeac09397f68
+  Original File Name: 9c7ba725d1b954c9
 **/
 .stepBody__42615 {
     padding-top: 16px
@@ -8,6 +8,10 @@
 
 .visual-refresh .stepBody__42615 {
     padding-top: var(--space-8)
+}
+
+.formErrorContainer__42615 {
+    margin: 8px 0
 }
 
 .paymentSourceWrapper__42615 {
@@ -48,4 +52,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=edb3aeac09397f68.css.map*/
+/*# sourceMappingURL=9c7ba725d1b954c9.css.map*/

@@ -29,7 +29,7 @@ let m = l.memo(function(e) {
   l.useEffect(() => {
     h || (y ? O.onSpinnerStarted() : null != t && O.trackSpinnerDuration(b, g, t))
   }, [y, h, t, O, b, g]);
-  let x = l.useCallback(() => {
+  let S = l.useCallback(() => {
     E(!1)
   }, []);
   return (0, i.jsxs)("div", {
@@ -40,7 +40,7 @@ let m = l.memo(function(e) {
       }, f),
       streamId: t,
       onResize: n,
-      onReady: x,
+      onReady: S,
       paused: h
     }), h ? null : (0, i.jsx)("div", {
       className: a()(d.previewWrapper, {

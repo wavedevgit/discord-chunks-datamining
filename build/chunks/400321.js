@@ -42,7 +42,7 @@ function o(e) {
       fillColor: E,
       outlineColor: O
     } = (0, r.bg)(t.userId, c, u, s),
-    x = y(O, 6 + l.q2),
-    S = null != x && b(x);
-  S && (0, i.I)(n, x.x, x.y, O, l.q2), y(E, 6), S && (0, i.T)(n, x.x, x.y, t.userId)
+    S = y(O, 6 + l.q2),
+    x = null != S && b(S);
+  x && (0, i.I)(n, S.x, S.y, O, l.q2), y(E, 6), x && (0, i.T)(n, S.x, S.y, t.userId)
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 12416 **/
 n.d(t, {
   Y: () => E,
-  Z: () => S
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -33,11 +33,11 @@ let E = i.memo(function(e) {
     onCancelClick: h,
     onNotificationClick: E,
     hint: O,
-    cancelText: x,
-    confirmText: S,
+    cancelText: S,
+    confirmText: x,
     icon: j,
-    body: Z,
-    title: w,
+    body: w,
+    title: Z,
     renderFooter: C,
     contentOpacity: P,
     status: N,
@@ -98,12 +98,12 @@ let E = i.memo(function(e) {
                   color: "interactive-normal",
                   variant: "text-sm/semibold",
                   lineClamp: 2,
-                  children: w
-                }), null != Z ? (0, r.jsx)(c.Text, {
+                  children: Z
+                }), null != w ? (0, r.jsx)(c.Text, {
                   color: "interactive-normal",
                   variant: "text-sm/normal",
                   lineClamp: null != t ? t * (D ? 2 : 1) : void 0,
-                  children: Z
+                  children: w
                 }) : null, function() {
                   let e = "function" == typeof O ? O(D, k) : O;
                   return null != O ? (0, r.jsx)(c.Text, {
@@ -119,14 +119,14 @@ let E = i.memo(function(e) {
                     size: c.zxk.Sizes.SMALL,
                     color: c.zxk.Colors.GREEN,
                     onClick: L,
-                    children: null != S ? S : b.NW.string(b.t.BddRzc)
+                    children: null != x ? x : b.NW.string(b.t.BddRzc)
                   }) : null, null != h ? (0, r.jsx)(c.zxk, {
                     className: g.button,
                     size: c.zxk.Sizes.SMALL,
                     look: c.zxk.Looks.OUTLINED,
                     color: c.zxk.Colors.PRIMARY,
                     onClick: W,
-                    children: null != x ? x : b.NW.string(b.t["ETE/oK"])
+                    children: null != S ? S : b.NW.string(b.t["ETE/oK"])
                   }) : null]
                 })]
               })]
@@ -175,7 +175,7 @@ function O(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     observe: t,
     children: n
@@ -186,7 +186,7 @@ function x(e) {
   }) : n
 }
 
-function S(e) {
+function x(e) {
   var t, n;
   let {
     notification: l,
@@ -205,13 +205,13 @@ function S(e) {
       renderFooter: g,
       animationWrapperClassName: y
     }
-  } = l, S = i.useCallback(() => {
+  } = l, x = i.useCallback(() => {
     f(d)
   }, [f, d]), j = i.useCallback(e => {
     u.Z.updateNotificationStatus(d), null == m || m(e, d)
-  }, [d, m]), Z = i.useCallback(e => {
+  }, [d, m]), w = i.useCallback(e => {
     null == p || p(e, d)
-  }, [p, d]), w = i.useCallback(e => {
+  }, [p, d]), Z = i.useCallback(e => {
     null == v || v(e, d)
   }, [v, d]), C = i.useCallback(e => {
     null == b || b(e, d)
@@ -250,7 +250,7 @@ function S(e) {
     index: o,
     locked: a,
     animationWrapperClassName: y,
-    children: (0, r.jsx)(x, {
+    children: (0, r.jsx)(S, {
       observe: 0 === o && !D,
       children: (0, r.jsx)(E, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -273,10 +273,10 @@ function S(e) {
         title: "function" == typeof M.title ? M.title(j) : M.title,
         containerRef: L,
         notificationId: l.id,
-        onNotificationShow: 0 === o ? S : void 0,
+        onNotificationShow: 0 === o ? x : void 0,
         onDismissClick: j,
-        onNotificationClick: null != p ? Z : void 0,
-        onConfirmClick: null != v ? w : void 0,
+        onNotificationClick: null != p ? w : void 0,
+        onConfirmClick: null != v ? Z : void 0,
         onCancelClick: null != b ? C : void 0,
         renderFooter: P,
         expand: !1,

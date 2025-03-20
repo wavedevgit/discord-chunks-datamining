@@ -22,11 +22,11 @@ var r = n(200651),
   y = n(271383),
   E = n(131951),
   O = n(451478),
-  x = n(5192),
-  S = n(44136),
+  S = n(5192),
+  x = n(44136),
   j = (n(351483), n(981631)),
-  Z = n(65154),
-  w = n(388032),
+  w = n(65154),
+  Z = n(388032),
   C = n(454698);
 let P = s.EFr.SIZE_80,
   N = s.EFr.SIZE_40;
@@ -37,7 +37,7 @@ function I(e) {
     userId: n
   } = e;
   return (0, b.Eu)(t, n) ? (0, r.jsx)(s.ua7, {
-    text: w.NW.string(w.t.HFwRpq),
+    text: Z.NW.string(Z.t.HFwRpq),
     position: "bottom",
     color: s.FGA.GREY,
     children: e => {
@@ -97,7 +97,7 @@ function _(e) {
     user: U,
     streamId: z,
     speaking: F
-  } = t, V = U.id === W, Y = (0, S.ZP)(t), H = (0, a.e7)([O.Z], () => O.Z.isFocused()), K = (0, a.e7)([h.Z], () => h.Z.getWindowFocused(j.KJ3.CHANNEL_CALL_POPOUT)), G = (0, a.e7)([E.Z], () => null != U.id && E.Z.isLocalVideoDisabled(U.id, (0, f.Z)(t.type)), [U.id, t.type]), B = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, U.id)), q = x.ZP.getName(n.getGuildId(), n.id, U) + (B ? " ".concat(w.NW.string(w.t["pFO/Pj"])) : ""), J = F && (K || H), X = s < 124 ? N : P, {
+  } = t, V = U.id === W, Y = (0, x.ZP)(t), H = (0, a.e7)([O.Z], () => O.Z.isFocused()), K = (0, a.e7)([h.Z], () => h.Z.getWindowFocused(j.KJ3.CHANNEL_CALL_POPOUT)), G = (0, a.e7)([E.Z], () => null != U.id && E.Z.isLocalVideoDisabled(U.id, (0, f.Z)(t.type)), [U.id, t.type]), B = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, U.id)), q = S.ZP.getName(n.getGuildId(), n.id, U) + (B ? " ".concat(Z.NW.string(Z.t["pFO/Pj"])) : ""), J = F && (K || H), X = s < 124 ? N : P, {
     avatarSrc: Q,
     avatarDecorationSrc: $
   } = (0, v.Z)({
@@ -119,7 +119,7 @@ function _(e) {
       user: n
     } = en.current;
     e.isGuildStageVoice() && !Y && (null == t ? void 0 : t.id) === n.id && c.Z.selectParticipant(e.id, null)
-  }, [Y]), l && !G && !D && Y && !I && null != L && E.Z.supports(Z.AN.VIDEO)) ? (0, r.jsx)(p.Z, {
+  }, [Y]), l && !G && !D && Y && !I && null != L && E.Z.supports(w.AN.VIDEO)) ? (0, r.jsx)(p.Z, {
     onResize: R,
     wrapperClassName: C.videoWrapper,
     className: C.content,

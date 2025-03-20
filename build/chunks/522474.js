@@ -264,6 +264,11 @@ class z extends(r = c.ZP.PersistedStore) {
   isWindowFullyInitialized(e) {
     return null != T[e] && null != N[e] && null != A[e]
   }
+  isWindowFullScreen(e) {
+    var t, n;
+    let r = T[e];
+    return (null == r ? void 0 : null === (n = r.document) || void 0 === n ? void 0 : null === (t = n.fullscreenElement) || void 0 === t ? void 0 : t.id) === R
+  }
   unmountWindow(e) {
     return this.isWindowFullyInitialized(e) || O.warn("Attempted to unmount partially initialized window ".concat(e)), F(e)
   }

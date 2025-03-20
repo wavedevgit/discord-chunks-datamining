@@ -1,6 +1,6 @@
 /**
   Module ID: 6382
-  Original File Name: 9aebfe87619fecde
+  Original File Name: 86a93289236844db
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -12920,6 +12920,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     background-color: rgba(0,0,0,.72)
 }
 
+.animationObj__6b4ea {
+    width: var(--animation-size);
+    height: var(--animation-size)
+}
+
 .root__6fdb8 {
     padding-bottom: 48px
 }
@@ -16954,4 +16959,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=9aebfe87619fecde.css.map*/
+/*# sourceMappingURL=86a93289236844db.css.map*/

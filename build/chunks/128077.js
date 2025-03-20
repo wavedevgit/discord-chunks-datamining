@@ -37,7 +37,7 @@ function c() {
       return (0, a.df)({
         skuId: e,
         onRedeemStart: () => {
-          u(!0)
+          u(!0), i(null)
         },
         onRedeemSucceed: e => {
           c(e), u(!1), null == t || t(e)

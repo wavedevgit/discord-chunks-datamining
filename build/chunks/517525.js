@@ -21,12 +21,12 @@ var r = n(200651),
   y = n(74538),
   E = n(557457),
   O = n(475674),
-  x = n(981631),
-  S = n(474936),
+  S = n(981631),
+  x = n(474936),
   j = n(388032),
-  Z = n(41997);
+  w = n(41997);
 
-function w(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -115,20 +115,20 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         location: k
       } = (0, m.O)(),
       M = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
-      L = s && !y.ZP.isPremium(M, S.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
+      L = s && !y.ZP.isPremium(M, x.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
       W = i.useCallback(() => {
         L && D && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, C(w({}, t), {
+          return t => (0, r.jsx)(e, C(Z({}, t), {
             analyticsSource: k
           }))
         })
       }, [L, D, k]);
     if (i.useEffect(() => {
-        !P && D && (g.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
-          type: S.cd.STREAM_QUALITY_INDICATOR,
+        !P && D && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+          type: x.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: T
@@ -138,17 +138,17 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       text: A ? j.NW.string(j.t.q8TiVl) : D ? j.NW.string(j.t.IHgpEh) : j.NW.string(j.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, C(w({}, e), {
+      children: e => (0, r.jsxs)(f.P3F, C(Z({}, e), {
         onClick: W,
-        className: o()(Z.qualityIndicator, v, h.eE[d], A ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
-          [Z.clickable]: L && D
+        className: o()(w.qualityIndicator, v, h.eE[d], A ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
+          [w.clickable]: L && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: Z.premiumStreamIcon
+          className: w.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
-          className: Z.qualityResolution,
+          className: w.qualityResolution,
           children: (0, E.ml)(R.maxResolution)
         }), (0, r.jsx)("span", {
           children: (0, E.bp)(R.maxFrameRate)
@@ -157,8 +157,8 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, r.jsx)(f.IGR, {
       text: U,
-      className: o()(I, Z.qualityIndicatorBadge, {
-        [Z.qualityIndicatorBadgePremium]: D && _
+      className: o()(I, w.qualityIndicatorBadge, {
+        [w.qualityIndicatorBadgePremium]: D && _
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: d
@@ -197,13 +197,13 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", C(w({
-        className: o()(Z.streamQualityIndicator, n)
+      return (0, r.jsxs)("div", C(Z({
+        className: o()(w.streamQualityIndicator, n)
       }, i), {
         children: [y((e, n) => n ? (0, r.jsx)(a.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
-            className: Z.liveQualityIndicator,
+            className: w.liveQualityIndicator,
             participant: t,
             size: s,
             shape: f.Dv2.ROUND_LEFT,
@@ -214,7 +214,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           })
         }) : null), (0, r.jsx)(a.animated.div, {
           style: O,
-          className: Z.liveIndicator,
+          className: w.liveIndicator,
           children: (0, r.jsx)(h.ZP, {
             look: h.jZ.RED,
             size: s,

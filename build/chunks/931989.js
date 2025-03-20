@@ -13,7 +13,7 @@ var r = n(200651),
 
 function u(e) {
   let {
-    src: t,
+    buffer: t,
     autoplay: n = !0,
     className: o,
     fit: l,
@@ -25,7 +25,7 @@ function u(e) {
     RiveComponent: b
   } = (0, a.useRive)({
     eventTarget: null == _ ? void 0 : _.current,
-    src: t,
+    buffer: t,
     autoplay: n,
     stateMachines: m,
     layout: new a.Layout({
@@ -40,7 +40,7 @@ function u(e) {
     }), E.setupRiveListeners())
   }, [E, n, m]);
   let v = i.useRef(0);
-  return i.useEffect(() => {
+  i.useEffect(() => {
     if (null == E) return;
     E.play();
     let e = t => {
@@ -49,8 +49,12 @@ function u(e) {
     return E.on(a.EventType.Advance, e), () => {
       E.off(a.EventType.Advance, e)
     }
-  }, [E, p.reducedMotion.enabled]), i.useEffect(() => {
-    null != E && (E.isPlaying && !h && v.current > 0 ? E.pause() : E.isPaused && h && E.play())
+  }, [E, p.reducedMotion.enabled]);
+  let y = i.useRef(!1);
+  return i.useEffect(() => {
+    if (null != E) return !h && y.current && E.isPlaying && v.current > 0 ? E.pause() : h && !E.isPlaying && y.current && E.play(), () => {
+      null != E && h && (y.current = null != E.frameRequestId)
+    }
   }, [E, h]), (0, r.jsx)(b, {
     className: o,
     style: f

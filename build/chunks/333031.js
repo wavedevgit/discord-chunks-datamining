@@ -30,7 +30,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e, t) {
+function S(e, t) {
   return {
     name: e,
     left: Math.ceil(t.left),
@@ -39,7 +39,7 @@ function x(e, t) {
     bottom: Math.ceil(t.bottom)
   }
 }
-let S = i.createContext(new class {
+let x = i.createContext(new class {
   observe(e) {
     var t;
     if (null == this.resizeObserver && (this.resizeObserver = new this.window.ResizeObserver(this.handleResize)), null == this.mutationObserver) {
@@ -55,7 +55,7 @@ let S = i.createContext(new class {
     let r = e.getBoundingClientRect();
     this.zones.set(e, {
       element: e,
-      zone: x(null !== (t = null == n ? void 0 : n.zone.name) && void 0 !== t ? t : (0, c.Z)(), r)
+      zone: S(null !== (t = null == n ? void 0 : n.zone.name) && void 0 !== t ? t : (0, c.Z)(), r)
     }), this.elements.add(e), this.resizeObserver.observe(e), this.updateZones()
   }
   unobserve(e) {
@@ -91,7 +91,7 @@ let S = i.createContext(new class {
       let e = !1;
       for (let [t, n] of this.zones) {
         let r = t.getBoundingClientRect(),
-          i = x(n.zone.name, r);
+          i = S(n.zone.name, r);
         !(0, d.Z)(i, n.zone) && (e = !0, n = {
           element: n.element,
           zone: i
@@ -111,7 +111,7 @@ function j(e) {
     className: n,
     style: l,
     children: a
-  } = e, s = i.useContext(S), c = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), d = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
+  } = e, s = i.useContext(x), c = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), d = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
     refHandler: f,
     setObserve: m
   }] = i.useState(() => {

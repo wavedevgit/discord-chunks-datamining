@@ -1569,6 +1569,7 @@ let tG = {
     DESIGN_SYSTEMS: "Design System",
     DESIGN_SYSTEMS_COLORS: "Design System",
     INTL_TESTING: "Intl Testing",
+    ANIMATION_TESTING: "Design System",
     OVERVIEW: "Overview",
     BROWSER: "Browser",
     CHANGE_LOG: "Change Log",

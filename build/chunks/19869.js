@@ -224,7 +224,13 @@ function A() {
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
           (0, _.q)({
-            skuId: e
+            skuId: e,
+            onCheckoutSuccess: e => {
+              console.log("Orb Checkout Success for SKU: ".concat(e))
+            },
+            onCloseCallback: () => {
+              console.log("Orb Checkout Closed")
+            }
           })
         },
         children: "Open Orb Checkout Integrated with Payment Modal"
