@@ -1,4 +1,4 @@
-/** Chunk was on 98650 **/
+/** Chunk was on 69002 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -35,8 +35,8 @@ let E = i.forwardRef(function(e, t) {
     art: R,
     isPremiumEarlyAccess: A = !1,
     maxWidth: x = 280,
-    hideDismissButton: D = !1,
-    pointerClassName: j,
+    hideDismissButton: j = !1,
+    pointerClassName: D,
     dismissIconClassName: L,
     dismissIcon: k,
     onDismissIconClick: M,
@@ -114,7 +114,7 @@ let E = i.forwardRef(function(e, t) {
             },
             color: null != Z ? Z : T || A ? a.zxk.Colors.BRAND_INVERTED : a.zxk.Colors.WHITE,
             children: null != m ? m : _.NW.string(_.t.IHf1RE)
-          }), !D && (0, r.jsx)(a.zxk, {
+          }), !j && (0, r.jsx)(a.zxk, {
             className: p.button,
             size: U,
             onClick: e => {
@@ -134,7 +134,7 @@ let E = i.forwardRef(function(e, t) {
           children: _.NW.string(_.t.HU2IR0)
         })
       }), (0, r.jsx)("div", {
-        className: l()(p.pointer, j, {
+        className: l()(p.pointer, D, {
           [p.bottomPointer]: "top" === v,
           [p.centerLeftPointer]: "right" === v && "center" === P,
           [p.topLeftPointer]: "right" === v && "top" === P

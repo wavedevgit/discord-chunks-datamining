@@ -1,4 +1,4 @@
-/** Chunk was on 98650 **/
+/** Chunk was on 69002 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -62,15 +62,15 @@ function C(e) {
       leaderboardId: P.extra.leaderboard_id,
       intervalStart: null !== (g = null == A ? void 0 : A.interval_start) && void 0 !== g ? g : ""
     }),
-    D = (0, o.e7)([u.default], () => u.default.getId()),
-    [j, L] = i.useMemo(() => {
-      let e = x.find(e => e.userId === D),
+    j = (0, o.e7)([u.default], () => u.default.getId()),
+    [D, L] = i.useMemo(() => {
+      let e = x.find(e => e.userId === j),
         t = x[0],
         n = null != e ? e : t,
         r = null == A ? void 0 : A.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
       return [n, r]
-    }, [A, x, D]),
-    k = (0, o.e7)([d.default], () => d.default.getUser(null == j ? void 0 : j.userId)),
+    }, [A, x, j]),
+    k = (0, o.e7)([d.default], () => d.default.getUser(null == D ? void 0 : D.userId)),
     M = p.ZP.getName(R, void 0, k);
   ! function(e) {
     let {
@@ -89,7 +89,7 @@ function C(e) {
   });
   let Z = (0, a.q)(null == A ? void 0 : null === (t = A.settings) || void 0 === t ? void 0 : t.application_id);
   if (null == A || null == Z) return null;
-  if (0 === A.users.length || null == j || null == k) return (0, r.jsx)(S, {
+  if (0 === A.users.length || null == D || null == k) return (0, r.jsx)(S, {
     application: Z,
     selected: y
   });
@@ -97,8 +97,8 @@ function C(e) {
     sort_by_statistic_id: U
   } = A.guild_settings, w = null !== (I = null == L ? void 0 : null === (b = L.statistics) || void 0 === b ? void 0 : null === (n = b[U]) || void 0 === n ? void 0 : n.value) && void 0 !== I ? I : 0, {
     currentRank: V
-  } = j;
-  return C = j.userId === D ? N.NW.formatToPlainString(N.t["eU+JxM"], {
+  } = D;
+  return C = D.userId === j ? N.NW.formatToPlainString(N.t["eU+JxM"], {
     rank: V
   }) : N.NW.formatToPlainString(N.t["8BLSQ0"], {
     rank: V,

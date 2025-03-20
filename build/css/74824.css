@@ -1,6 +1,6 @@
 /**
   Module ID: 74824
-  Original File Name: fccba345ef7a97a6
+  Original File Name: 42828d6ffd39d47c
 **/
 .title_fb71d6 {
     margin-top: var(--space-16);
@@ -9,7 +9,7 @@
 }
 
 .modalContent_fb71d6 {
-    padding-left: 0
+    padding: 0
 }
 
 .content_fb71d6,.selectionPane_fb71d6 {
@@ -40,4 +40,8 @@
     right: 0
 }
 
-/*# sourceMappingURL=fccba345ef7a97a6.css.map*/
+.visual-refresh .modalContent_fb71d6,.visual-refresh .selectionItem_fb71d6 {
+    border-top-left-radius: var(--radius-md)
+}
+
+/*# sourceMappingURL=42828d6ffd39d47c.css.map*/

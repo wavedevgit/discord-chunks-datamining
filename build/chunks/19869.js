@@ -226,7 +226,11 @@ function A() {
           (0, _.q)({
             skuId: e,
             onCheckoutSuccess: e => {
-              console.log("Orb Checkout Success for SKU: ".concat(e))
+              let {
+                skuId: t,
+                entitlements: n
+              } = e;
+              console.log("Orb Checkout Success for SKU: ".concat(t, ". Entitlement(s): "), n, Date.now())
             },
             onCloseCallback: () => {
               console.log("Orb Checkout Closed")

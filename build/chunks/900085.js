@@ -1,4 +1,4 @@
-/** Chunk was on 98650 **/
+/** Chunk was on 69002 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -30,8 +30,8 @@ var r, i = n(200651),
   R = n(51596),
   A = n(823385),
   x = n(415795),
-  D = n(670512),
-  j = n(558631),
+  j = n(670512),
+  D = n(558631),
   L = n(981631),
   k = n(388032),
   M = n(567508);
@@ -263,7 +263,7 @@ class K extends o.PureComponent {
       seenTutorial: t,
       results: n
     } = this.props;
-    return t ? null : (0, i.jsx)(D.Z, {
+    return t ? null : (0, i.jsx)(j.Z, {
       hasQuery: e.length > 0 && n.length > 0
     })
   }
@@ -567,7 +567,7 @@ class K extends o.PureComponent {
 function X(e) {
   let t = (0, c.cj)([A.Z], () => A.Z.getProps()),
     n = (0, O.Pt)(),
-    r = j.Z.useExperiment({
+    r = D.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,
     l = o.useMemo(() => r ? Object.values(n).filter(e => null != e.url).filter(e => null == e.predicate || e.predicate()) : [], [n, r]);

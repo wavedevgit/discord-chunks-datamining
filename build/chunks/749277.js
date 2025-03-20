@@ -1,4 +1,4 @@
-/** Chunk was on 98650 **/
+/** Chunk was on 69002 **/
 n.d(t, {
   A: () => A
 });
@@ -34,7 +34,7 @@ let A = e => {
   let {
     dismissibleContent: t,
     noticeType: A
-  } = e, x = (0, i.e7)([g.ZP], () => g.ZP.getNotice()), D = (0, i.e7)([O.default], () => O.default.locale);
+  } = e, x = (0, i.e7)([g.ZP], () => g.ZP.getNotice()), j = (0, i.e7)([O.default], () => O.default.locale);
   return (0, r.jsx)(T.ZP, {
     contentTypes: [t],
     groupName: C.R.NOTICE_BAR,
@@ -238,7 +238,7 @@ let A = e => {
               onClick: () => i(C.L.UNKNOWN),
               noticeType: A
             }), P.NW.format(P.t.zT1hgo, {
-              date: (0, E.IE)(D)
+              date: (0, E.IE)(j)
             }), (0, r.jsx)(l.NoS, {
               onClick: () => (0, f.Z)(y.Kq.NOTICE),
               noticeType: A,

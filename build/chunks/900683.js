@@ -1,40 +1,40 @@
-/** Chunk was on 98650 **/
+/** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => d,
-  e: () => u
+  Z: () => u,
+  e: () => d
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  o = n.n(i),
-  l = n(481060),
-  a = n(388032),
+var a = n(120356),
+  l = n.n(a),
+  i = n(481060),
+  o = n(388032),
   s = n(531977),
   c = n(531599);
 
-function u() {
+function d() {
   return (0, r.jsxs)("div", {
-    className: o()(s.upsellFooter, s.reverseTrialUpsellContainer),
+    className: l()(s.upsellFooter, s.reverseTrialUpsellContainer),
     children: [(0, r.jsx)("img", {
       src: c.Z,
       alt: "reverse trial unlock",
       className: s.unlockIcon
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
       className: s.upsellText,
-      children: a.NW.format(a.t.f5VHKi, {})
+      children: o.NW.format(o.t.f5VHKi, {})
     })]
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     text: t,
     color: n
   } = e;
   return (0, r.jsxs)("div", {
     className: s.upsellFooter,
-    children: [(0, r.jsx)(l.SrA, {
+    children: [(0, r.jsx)(i.SrA, {
       size: "md",
       className: s.upsellFooterIcon,
       color: n
