@@ -57,8 +57,9 @@ function N(e) {
   let {
     profile: t,
     canManageGuild: n,
-    handleClick: i
-  } = e, s = (0, c.dQu)(o.Z.colors.BG_BASE_TERTIARY), l = (0, A.q)(t, s.hex());
+    handleClick: i,
+    hasCustomBanner: s
+  } = e, l = (0, c.dQu)(o.Z.colors.BG_BASE_TERTIARY), d = (0, A.q)(t, l.hex());
   return (0, r.jsx)(c.ua7, {
     text: C.NW.string(C.t.W4Nd7e),
     children: e => (0, r.jsx)(c.P3F, x(v({}, e), {
@@ -67,14 +68,14 @@ function N(e) {
       "aria-label": C.NW.string(C.t.W4Nd7e),
       onClick: n ? i : void 0,
       style: {
-        background: (0, A.d)(l)
+        background: (0, A.d)(d)
       },
       className: a()(b.itemContainer, {
         [b.disabled]: !n
       }),
       children: (0, r.jsx)("div", {
         className: a()({
-          [b.itemSelected]: null == t.brandColorPrimary
+          [b.itemSelected]: !s && null == t.brandColorPrimary
         })
       })
     }))
@@ -156,7 +157,8 @@ function E(e) {
       children: [(0, r.jsx)(N, {
         profile: n,
         canManageGuild: o,
-        handleClick: E(null)
+        handleClick: E(null),
+        hasCustomBanner: g && null != n.customBanner
       }), h.cb.map(e => {
         let {
           name: t,
