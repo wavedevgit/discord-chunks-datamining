@@ -128,7 +128,7 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get useSystemTheme() {
     var e;
-    return null !== (e = v.useSystemTheme) && void 0 !== e ? e : u.K.UNSET
+    return null !== (e = v.useSystemTheme) && void 0 !== e ? e : u.KW.UNSET
   }
   get activityPanelHeight() {
     return v.activityPanelHeight

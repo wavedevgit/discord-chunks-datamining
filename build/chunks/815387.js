@@ -754,7 +754,9 @@ let ew = Object.freeze({
         channel: n,
         compact: i
       })
-    }
+    },
+    [eN.uaV.CHAT_WALLPAPER_SET]: void 0,
+    [eN.uaV.CHAT_WALLPAPER_REMOVED]: void 0
   }),
   eZ = i.memo(function(e) {
     let {

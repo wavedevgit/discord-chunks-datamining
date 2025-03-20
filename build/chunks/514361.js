@@ -104,7 +104,7 @@ let j = () => {
   G = () => {
     if (!u.Z.shouldSync("appearance")) return !1;
     let e = p.L1.getSetting().backgroundGradientPresetId;
-    if (_.ZP.useSystemTheme === I.K.ON && null != e && (0, d.hi)(I.K.OFF), null == e) {
+    if (_.ZP.useSystemTheme === I.KW.ON && null != e && (0, d.hi)(I.KW.OFF), null == e) {
       null != r && (r = void 0);
       return
     }

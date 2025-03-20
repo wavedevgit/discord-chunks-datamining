@@ -123,7 +123,7 @@ function _(e) {
   let {
     transitionState: t,
     onClose: s
-  } = e, [i] = n.useState(() => h.Z.gradientPreset), b = (0, l.e7)([g.Z], () => g.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === x.K.ON), [w, k] = n.useState(() => _ ? "system" : null != i ? "gradient" : b), {
+  } = e, [i] = n.useState(() => h.Z.gradientPreset), b = (0, l.e7)([g.Z], () => g.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === x.KW.ON), [w, k] = n.useState(() => _ ? "system" : null != i ? "gradient" : b), {
     density: P
   } = (0, c.TCT)(), C = n.useMemo(() => {
     if (null == i && !_) return f;

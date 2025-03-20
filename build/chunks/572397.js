@@ -18,12 +18,12 @@ var r = n(192379),
   p = n(874893);
 let h = () => {
     let e = (0, i.e7)([d.Z], () => d.Z.gradientPreset),
-      t = (0, i.e7)([s.ZP], () => s.ZP.useSystemTheme === p.K.ON),
+      t = (0, i.e7)([s.ZP], () => s.ZP.useSystemTheme === p.KW.ON),
       [n, o] = (0, r.useState)(t);
     return (0, r.useEffect)(() => {
       null == e && o(t)
     }, [e, t]), (0, r.useCallback)(() => {
-      if (null != e)(0, u.kj)(), n && (0, a.hi)(p.K.ON)
+      if (null != e)(0, u.kj)(), n && (0, a.hi)(p.KW.ON)
     }, [e, n])
   },
   m = () => {

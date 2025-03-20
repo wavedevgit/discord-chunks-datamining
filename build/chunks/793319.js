@@ -569,10 +569,6 @@ let eR = function(e) {
                 onClick: () => (0, N.Z)(W, k, ey.jXE.VOICE_CONTROL_TRAY)
               })
             }
-          }), !V && (0, r.jsx)("div", {
-            className: eO.avSpacing,
-            "aria-hidden": "true",
-            role: "presentation"
           }), !V && (0, r.jsx)(p.yRy, {
             renderPopout: e => {
               let {

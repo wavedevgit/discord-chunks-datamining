@@ -129,11 +129,10 @@ function y(e) {
   })
 }
 
-function O(e, t) {
+function O(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED",
-    systemPrefersColorScheme: e,
-    systemForcedColors: t
+    systemForcedColors: e
   })
 }
 

@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V1: () => p,
-  ZI: () => g,
-  ZP: () => E
+  V1: () => h,
+  ZI: () => E,
+  ZP: () => b
 });
 var r = n(524437),
   i = n(381499),
-  o = n(570140),
-  a = n(514361),
-  s = n(238514),
-  l = n(781391),
-  c = n(210887),
-  u = n(695346),
-  d = n(675478),
-  f = n(981631),
-  _ = n(874893);
+  o = n(780384),
+  a = n(570140),
+  s = n(514361),
+  l = n(238514),
+  c = n(781391),
+  u = n(210887),
+  d = n(695346),
+  f = n(675478),
+  _ = n(981631),
+  p = n(874893);
 
-function p(e) {
-  return d.hW.updateAsync("guildFolders", t => {
+function h(e) {
+  return f.hW.updateAsync("guildFolders", t => {
     t.folders = e.map(e => {
       let t = r.yX.create({
         guildIds: e.guildIds
@@ -31,25 +32,25 @@ function p(e) {
         value: String(e.folderName)
       })), t
     })
-  }, d.fy.FREQUENT_USER_ACTION)
+  }, f.fy.FREQUENT_USER_ACTION)
 }
 
-function h(e) {
+function m(e) {
   switch (e) {
-    case f.BRd.DARK:
+    case _.BRd.DARK:
       return r.Q2.DARK;
-    case f.BRd.LIGHT:
+    case _.BRd.LIGHT:
       return r.Q2.LIGHT;
-    case f.BRd.DARKER:
+    case _.BRd.DARKER:
       return r.Q2.DARKER;
-    case f.BRd.MIDNIGHT:
+    case _.BRd.MIDNIGHT:
       return r.Q2.MIDNIGHT;
     default:
       return r.Q2.DARK
   }
 }
 
-function m(e) {
+function g(e) {
   return {
     backgroundGradientPresetId: null != e.backgroundGradientPresetId ? i.yC.create({
       value: e.backgroundGradientPresetId
@@ -57,18 +58,20 @@ function m(e) {
   }
 }
 
-function g(e) {
+function E(e) {
   let {
     backgroundGradientPresetId: t,
     theme: n,
     useSystemTheme: r
-  } = e, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.fy.INFREQUENT_USER_ACTION, a = "system" === n ? _.K.ON : _.K.OFF, c = null != r ? r : a;
-  if (o.Z.dispatch({
+  } = e, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, s = "system" === n ? p.KW.ON : p.KW.OFF, u = null != r ? r : s;
+  if (a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
-        useSystemTheme: c
+        useSystemTheme: u
       }
-    }), null == t && (n === f.BRd.DARK || n === f.BRd.DARKER) && (0, l.F8)(n), o.Z.dispatch({
+    }), null == t && "system" !== n && (0, o.wj)(n) && (0, c.Ag)({
+      [p.zd.DARK]: n
+    }), a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
@@ -80,39 +83,39 @@ function g(e) {
           }
         }
       }
-    }), s.Z.shouldSync("appearance")) return d.hW.updateAsync("appearance", e => {
-    e.theme = h(n), e.clientThemeSettings = m({
+    }), l.Z.shouldSync("appearance")) return f.hW.updateAsync("appearance", e => {
+    e.theme = m(n), e.clientThemeSettings = g({
       backgroundGradientPresetId: t
     })
   }, i)
 }
-let E = {
+let b = {
   overrideLocale(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_LOCALE_OVERRIDE",
       locale: e
     })
   },
   updatedUnsyncedSettings(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: e
     })
   },
   setShouldSyncTextSettings(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         text: {
           shouldSync: e,
           settings: e ? {} : {
-            inlineAttachmentMedia: u.x4.getSetting(),
-            inlineEmbedMedia: u.RS.getSetting(),
-            renderEmbeds: u.NA.getSetting(),
-            renderReactions: u.nc.getSetting(),
-            animateEmoji: u.Yk.getSetting(),
-            animateStickers: u.Wp.getSetting(),
-            gifAutoPlay: u.QK.getSetting()
+            inlineAttachmentMedia: d.x4.getSetting(),
+            inlineEmbedMedia: d.RS.getSetting(),
+            renderEmbeds: d.NA.getSetting(),
+            renderReactions: d.nc.getSetting(),
+            animateEmoji: d.Yk.getSetting(),
+            animateStickers: d.Wp.getSetting(),
+            gifAutoPlay: d.QK.getSetting()
           }
         }
       }
@@ -120,42 +123,42 @@ let E = {
   },
   setShouldSyncAppearanceSettings(e) {
     var t;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
           shouldSync: e,
           settings: e ? {} : {
-            theme: c.Z.theme,
+            theme: u.Z.theme,
             clientThemeSettings: {
-              backgroundGradientPresetId: null === (t = a.Z.gradientPreset) || void 0 === t ? void 0 : t.id
+              backgroundGradientPresetId: null === (t = s.Z.gradientPreset) || void 0 === t ? void 0 : t.id
             },
-            developerMode: u.Sb.getSetting()
+            developerMode: d.Sb.getSetting()
           }
         }
       }
     })
   },
   applySettingsOverride(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_APPLY",
       settings: e
     })
   },
   clearSettingsOverride() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
       settings: t
     })
   },
-  updateLocale: e => d.hW.updateAsync("localization", t => {
+  updateLocale: e => f.hW.updateAsync("localization", t => {
     t.locale = i.Gm.create({
       value: e
     })
-  }, d.fy.INFREQUENT_USER_ACTION),
+  }, f.fy.INFREQUENT_USER_ACTION),
   updateTheme(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
@@ -164,8 +167,8 @@ let E = {
           }
         }
       }
-    }), s.Z.shouldSync("appearance") && d.hW.updateAsync("appearance", t => {
-      t.theme = h(e)
-    }, d.fy.INFREQUENT_USER_ACTION)
+    }), l.Z.shouldSync("appearance") && f.hW.updateAsync("appearance", t => {
+      t.theme = m(e)
+    }, f.fy.INFREQUENT_USER_ACTION)
   }
 }

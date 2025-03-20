@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-
-function r() {
-  return null
-}
 n.d(t, {
-  Z: () => r
-})
+  Z: () => i
+});
+var r = n(874893);
+
+function i() {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? r.zd.DARK : r.zd.LIGHT
+}
