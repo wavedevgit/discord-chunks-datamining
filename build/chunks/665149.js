@@ -75,8 +75,9 @@ let h = 24,
       "aria-hidden": R,
       "aria-checked": P,
       "aria-expanded": w,
-      "aria-haspopup": D
-    } = e, L = (0, f.Q3)("BaseHeaderBar"), x = (0, r.jsx)(E, {
+      "aria-haspopup": D,
+      "data-jump-section": L
+    } = e, x = (0, f.Q3)("BaseHeaderBar"), M = (0, r.jsx)(E, {
       x: 0,
       y: 0,
       width: b,
@@ -86,8 +87,8 @@ let h = 24,
       colorClass: null != m ? m : void 0,
       secondaryColorClass: null != g ? g : void 0,
       color: null != _ ? _ : "currentColor"
-    }), M = C;
-    return null == M && "string" == typeof O && (M = O), (0, r.jsx)(c.ua7, {
+    }), k = C;
+    return null == k && "string" == typeof O && (k = O), (0, r.jsx)(c.ua7, {
       text: O,
       color: I,
       position: S,
@@ -135,18 +136,19 @@ let h = 24,
             [p.iconDisabled]: s
           }),
           role: A,
-          "aria-label": M,
+          "aria-label": k,
           "aria-hidden": R,
           "aria-checked": P,
           "aria-haspopup": D,
           "aria-expanded": w,
           tabIndex: s || null == v ? -1 : 0,
+          "data-jump-section": L,
           children: [l ? (0, r.jsx)(d.ZP, {
             mask: "top" === u ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-            height: L ? b : void 0,
-            width: L ? b : void 0,
-            children: x
-          }) : x, l ? (0, r.jsx)("span", {
+            height: x ? b : void 0,
+            width: x ? b : void 0,
+            children: M
+          }) : M, l ? (0, r.jsx)("span", {
             className: a()(p.iconBadge, "top" === u ? p.iconBadgeTop : p.iconBadgeBottom)
           }) : null, i]
         })

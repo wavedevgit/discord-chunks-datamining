@@ -442,7 +442,7 @@ let eC = () => {
           dismissAction: U.L.TAKE_ACTION
         }), eM()
       } : void 0,
-      pillText: eL || !eI || eW ? void 0 : F.NW.string(F.t.y2b7CA).toLocaleUpperCase(),
+      pillText: eL || !eI ? void 0 : F.NW.string(F.t.y2b7CA).toLocaleUpperCase(),
       perkImage: et
     }
   };

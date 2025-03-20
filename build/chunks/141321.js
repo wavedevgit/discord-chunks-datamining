@@ -23,29 +23,30 @@ function v(e) {
   let {
     onOpen: t,
     onClose: n,
-    className: v
-  } = e, y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, l.Q3)("RecentsButton"), E = i.useRef(null), j = (0, a.e7)([p.ZP], () => (null == y ? void 0 : y.id) != null && p.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
-    enabled: O
+    className: v,
+    "data-jump-section": y
+  } = e, x = (0, a.e7)([m.default], () => m.default.getCurrentUser()), E = (0, l.Q3)("RecentsButton"), j = i.useRef(null), O = (0, a.e7)([p.ZP], () => (null == x ? void 0 : x.id) != null && p.ZP.getMentionCount(x.id, g.W.NOTIFICATION_CENTER) > 0), {
+    enabled: N
   } = c.Z.useExperiment({
     location: "RecentsButton"
   }, {
     autoTrackExposure: !1
-  }), N = (0, a.e7)([s.Z], () => O && s.Z.getUnseenInviteCount() > 0), C = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
+  }), C = (0, a.e7)([s.Z], () => N && s.Z.getUnseenInviteCount() > 0), I = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: j
+      badgeForYou: O
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
       var a, l;
       return (0, r.jsxs)("div", {
-        ref: E,
+        ref: j,
         className: b.recentsIcon,
-        children: [O && (0, r.jsx)(h.Z, {
-          inboxIconRef: E,
+        children: [N && (0, r.jsx)(h.Z, {
+          inboxIconRef: j,
           recentsPopoutShown: t
         }), (0, r.jsx)(u.U, {
           location: "inbox-button",
@@ -70,11 +71,12 @@ function v(e) {
             className: v,
             onClick: e,
             icon: o.xx7,
-            iconSize: x ? C : void 0,
+            iconSize: E ? I : void 0,
             "aria-label": _.NW.string(_.t.GSmTKC),
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,
-            showBadge: j || N || i
+            showBadge: O || C || i,
+            "data-jump-section": y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

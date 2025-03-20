@@ -193,6 +193,10 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
     var e;
     return null !== (e = v.listDensity) && void 0 !== e ? e : _.fx.COZY
   }
+  get chatScrollRefactorEnabled() {
+    var e;
+    return null === (e = v.chatScrollRefactorEnabled) || void 0 === e || e
+  }
 }
 p(A, "displayName", "UnsyncedUserSettingsStore"), p(A, "persistKey", "UnsyncedUserSettingsStore"), p(A, "migrations", [() => {
   let e = s.K.get("UserSettingsStore");

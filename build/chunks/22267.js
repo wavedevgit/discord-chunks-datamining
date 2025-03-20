@@ -44,7 +44,7 @@ let y = e => {
       nameplate: A,
       hovered: O,
       placement: d.i.SHOP_PREVIEW
-    }), (0, r.jsxs)("div", {
+    }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
       className: E.overlayContainer,
       children: [(0, r.jsx)("div", {
         className: o()(E.avatarContainer, !S && E.avatarVisible),

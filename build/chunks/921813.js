@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => C
-}), n(47120);
+});
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -150,23 +150,18 @@ function R() {
     o = i.useMemo(() => {
       var e;
       return null == t || null === (e = t.collectibles) || void 0 === e || e.nameplate, N.NW.string(N.t.ziaxGh)
-    }, [null == t ? void 0 : null === (e = t.collectibles) || void 0 === e ? void 0 : e.nameplate, n]),
-    [a, u] = i.useState(!1);
+    }, [null == t ? void 0 : null === (e = t.collectibles) || void 0 === e ? void 0 : e.nameplate, n]);
   return null == t ? null : (0, r.jsxs)("div", {
     className: A.nameplatePreviewSection,
     children: [(0, r.jsx)(l.Text, {
       variant: "eyebrow",
       children: o.toLocaleUpperCase()
-    }), (0, r.jsx)("div", {
-      className: A.nameplate,
-      onMouseEnter: () => u(!0),
-      onMouseLeave: () => u(!1),
-      children: (0, r.jsx)(c.Z, {
-        user: t,
-        nameplate: n,
-        nameplateData: void 0 === n ? t.nameplate : void 0,
-        isHighlighted: a
-      })
+    }), (0, r.jsx)(c.Z, {
+      user: t,
+      nameplate: n,
+      nameplateData: void 0 === n ? t.nameplate : void 0,
+      isHighlighted: !0,
+      className: A.nameplate
     })]
   })
 }

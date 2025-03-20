@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.r(t), n.d(t, {
-  default: () => k,
-  useAppSidebarState: () => R
+  default: () => U,
+  useAppSidebarState: () => k
 });
 var r = n(200651),
   i = n(192379),
@@ -35,11 +35,43 @@ var r = n(200651),
   x = n(388032),
   w = n(917566),
   L = n(963981);
-let R = (0, o.U)(() => ({
+
+function R(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let k = (0, o.U)(() => ({
   isOpen: !0
 }));
 
-function D() {
+function M() {
   let e;
   let t = (0, l.TH)(),
     n = (0, a.e7)([I.Z], () => I.Z.getChannelId()),
@@ -76,12 +108,12 @@ function D() {
     })]
   })
 }
-let k = i.memo(function() {
+let U = i.memo(function() {
   i.useLayoutEffect(() => {
     T.ZP.setMinimumSize(Z.J, Z.N)
   }, []);
   let e = (0, p.TH)("AppTitleBar"),
-    t = !R(e => e.isOpen) && e,
+    t = !k(e => e.isOpen) && e,
     {
       hasBugReporterAccess: n
     } = u.Z.useExperiment({
@@ -93,52 +125,54 @@ let k = i.memo(function() {
     T.ZP.setMinimumSize(Z.J, Z.N)
   }, []);
   let l = (0, a.e7)([N.Z], () => N.Z.darkSidebar ? A.BRd.DARK : void 0);
-  return (0, a.e7)([S.Z, E.Z], () => (0, P.rB)()) ? null : (0, r.jsx)(s.f6W, {
-    theme: l,
-    children: e => (0, r.jsx)(j.T, {
-      className: e,
-      leading: t && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.P3F, {
-          className: L.button,
-          onClick: () => {
-            R.setState({
-              isOpen: !R.getState().isOpen
+  return (0, a.e7)([S.Z, E.Z], () => (0, P.rB)()) ? null : (0, r.jsx)(s.Wdt, {
+    children: e => (0, r.jsx)(s.f6W, {
+      theme: l,
+      children: i => (0, r.jsx)(j.T, {
+        className: i,
+        leading: t && (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(s.P3F, D(R({}, e), {
+            className: L.button,
+            onClick: () => {
+              k.setState({
+                isOpen: !k.getState().isOpen
+              })
+            },
+            children: (0, r.jsx)(G, {})
+          })), (0, r.jsx)(s.P3F, {
+            className: L.button,
+            onClick: () => {
+              c.Z.open(A.oAB.ACCOUNT)
+            },
+            children: (0, r.jsx)(s.ewm, {
+              size: "xs",
+              color: "currentColor"
             })
-          },
-          children: (0, r.jsx)(M, {})
-        }), (0, r.jsx)(s.P3F, {
-          className: L.button,
-          onClick: () => {
-            c.Z.open(A.oAB.ACCOUNT)
-          },
-          children: (0, r.jsx)(s.ewm, {
-            size: "xs",
-            color: "currentColor"
-          })
-        })]
-      }),
-      title: (0, r.jsx)(D, {}),
-      trailing: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(f.Z, {
-          className: L.button
-        }), (0, r.jsx)(d.Z, {
-          canShowReminder: !0,
-          className: L.button
-        }), (0, r.jsx)(O.Z, {
-          className: L.button
-        }), n ? (0, r.jsx)(b.Z, {
-          className: L.button
-        }) : (0, r.jsx)(m.Z, {
-          className: L.button
-        }), (0, r.jsx)(_.Z, {
-          className: L.button
-        })]
+          })]
+        }),
+        title: (0, r.jsx)(M, {}),
+        trailing: (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(f.Z, {
+            className: L.button
+          }), (0, r.jsx)(d.Z, {
+            canShowReminder: !0,
+            className: L.button
+          }), (0, r.jsx)(O.Z, D(R({}, t ? {} : e), {
+            className: L.button
+          })), n ? (0, r.jsx)(b.Z, {
+            className: L.button
+          }) : (0, r.jsx)(m.Z, {
+            className: L.button
+          }), (0, r.jsx)(_.Z, {
+            className: L.button
+          })]
+        })
       })
     })
   })
 });
 
-function M() {
+function G() {
   return (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     className: L.icon,
