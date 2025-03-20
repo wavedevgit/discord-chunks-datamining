@@ -1,23 +1,27 @@
-/** Chunk was on 1272 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  G: () => o
+  G: () => l
 });
 var r = n(772848),
   i = n(70956),
-  l = n(686325);
-let a = null;
+  o = n(686325);
+let a = 12,
+  s = null;
 
-function o() {
+function l() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
     t = Date.now();
-  return null == a || function(e) {
-    let t = Date.now(),
-      n = t - e.lastUsed > l.iP * i.Z.Millis.MINUTE,
-      r = t - e.initialized > 12 * i.Z.Millis.HOUR;
-    return n || r
-  }(a) ? a = {
+  return null == s || c(s) ? s = {
     uuid: (0, r.Z)(),
     initialized: t,
     lastUsed: t
-  } : (e && (a.lastUsed = t), a)
+  } : (e && (s.lastUsed = t), s)
+}
+
+function c(e) {
+  let t = Date.now(),
+    n = t - e.lastUsed > o.iP * i.Z.Millis.MINUTE,
+    r = t - e.initialized > a * i.Z.Millis.HOUR;
+  return n || r
 }
