@@ -29,7 +29,7 @@ function E(e) {
     uploadType: x,
     showUpsellHeader: j,
     analyticsPage: I
-  } = e, [P, v] = o.useState(!1), C = (0, l.vRw)(), O = (0, d.Dt)(), {
+  } = e, [P, C] = o.useState(!1), v = (0, l.vRw)(), O = (0, d.Dt)(), {
     analyticsLocations: R
   } = (0, s.ZP)(c.Z.GIF_PICKER);
   async function B(e) {
@@ -37,7 +37,7 @@ function E(e) {
       gifSrc: i
     } = e;
     if (null == i || P) return;
-    v(!0);
+    C(!0);
     let o = (0, p.Q)(i),
       a = await fetch(o),
       c = await a.blob();
@@ -72,7 +72,7 @@ function E(e) {
         showUpsellHeader: j
       }, i))
     }, {
-      contextKey: C
+      contextKey: v
     })
   }
   o.useEffect(() => {

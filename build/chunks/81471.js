@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(95398),
   u = n(905405),
@@ -32,10 +32,10 @@ let y = i.memo(function(e) {
   } = (0, b.a)(t), I = (0, u.p)(), {
     isBlocked: C,
     isIgnored: S
-  } = (0, o.cj)([m.Z], () => ({
+  } = (0, a.cj)([m.Z], () => ({
     isBlocked: null != y && m.Z.isBlockedForMessage(y),
     isIgnored: null != y && m.Z.isIgnoredForMessage(y)
-  }), [y]), T = (0, o.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), P = f.cC.useSetting(), {
+  }), [y]), T = (0, a.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), P = f.cC.useSetting(), {
     content: j
   } = i.useMemo(() => (null == y ? void 0 : y.content) != null && "" !== y.content ? (0, p.ZP)(y, {
     formatInline: !0,
@@ -67,7 +67,7 @@ let y = i.memo(function(e) {
       let {
         contentPlaceholder: e,
         renderedContent: t
-      } = (0, h.f)(y, j, C, S, a()(N.messageContent, v.inlineFormat), {
+      } = (0, h.f)(y, j, C, S, o()(N.messageContent, v.inlineFormat), {
         leadingIconClass: N.messageContentIcon,
         trailingIconClass: N.messageContentIcon,
         iconSize: E.WW

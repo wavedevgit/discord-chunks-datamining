@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   EH: () => u,
-  Mf: () => A,
+  Mf: () => c,
   lL: () => g,
   t4: () => d
 });
@@ -12,9 +12,9 @@ var r = n(442837),
   a = n(700785),
   l = n(889369),
   o = n(981631),
-  c = n(388032);
+  A = n(388032);
 
-function A(e, t) {
+function c(e, t) {
   return (0, r.e7)([l.Z], () => l.Z.editedDefaultChannelIds.has(e) || null != t && l.Z.editedDefaultChannelIds.has(t))
 }
 
@@ -23,7 +23,7 @@ function d(e, t) {
 }
 
 function u(e, t) {
-  return (0, r.e7)([l.Z, i.Z], () => null != t && l.Z.editedDefaultChannelIds.has(t) ? c.NW.string(c.t.Lz94y8) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? void 0 : c.NW.string(c.t["031cXl"]))
+  return (0, r.e7)([l.Z, i.Z], () => null != t && l.Z.editedDefaultChannelIds.has(t) ? A.NW.string(A.t.Lz94y8) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? void 0 : A.NW.string(A.t["031cXl"]))
 }
 
 function g(e, t) {
@@ -35,5 +35,5 @@ function g(e, t) {
       var e;
       return null === (e = i.Z.getChannel(t)) || void 0 === e ? void 0 : e.isGuildVocal()
     });
-  return n ? c.NW.string(c.t["2XWEKy"]) : a ? c.NW.string(c.t.t6iJLS) : void 0
+  return n ? A.NW.string(A.t["2XWEKy"]) : a ? A.NW.string(A.t.t6iJLS) : void 0
 }

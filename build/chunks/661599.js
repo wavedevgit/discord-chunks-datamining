@@ -5,19 +5,19 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(230711),
-  a = n(324262),
-  o = n(981631),
+  o = n(324262),
+  a = n(981631),
   s = n(388032),
   c = n(510342);
 class u extends i.PureComponent {
   render() {
-    return (0, r.jsx)(a.Z, {
+    return (0, r.jsx)(o.Z, {
       guild: this.props.guild,
-      onClick: () => l.Z.open(o.oAB.ACCOUNT),
+      onClick: () => l.Z.open(a.oAB.ACCOUNT),
       message: s.NW.format(s.t["oCd+am"], {}),
       cta: s.NW.string(s.t["8dCrV1"]),
-      trackingSource: o.PsQ.GUILD_MFA_WARNING,
-      type: o.vID.MFA_WARNING,
+      trackingSource: a.PsQ.GUILD_MFA_WARNING,
+      type: a.vID.MFA_WARNING,
       image: c,
       imageMarginX: 54,
       undismissable: !0

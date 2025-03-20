@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(586382),
   l = n(594980),
   o = n(515025),
-  c = n(981631),
-  A = n(388032),
+  A = n(981631),
+  c = n(388032),
   d = n(50388);
 
 function u(e) {
@@ -25,20 +25,20 @@ function u(e) {
       className: d.column,
       children: [(0, r.jsxs)(i.vwX, {
         className: d.title,
-        children: [A.NW.string(A.t.tzGY0t), (0, r.jsx)(a.hH, {
+        children: [c.NW.string(c.t.tzGY0t), (0, r.jsx)(a.hH, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: d.text,
-        children: A.NW.string(A.t.F7bbrq)
+        children: c.NW.string(c.t.F7bbrq)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: d.text,
-        children: A.NW.format(A.t.ZYA9PT, {
-          articleURL: s.Z.getArticleURL(c.BhN.GUILD_INVITE_SPLASH)
+        children: c.NW.format(c.t.ZYA9PT, {
+          articleURL: s.Z.getArticleURL(A.BhN.GUILD_INVITE_SPLASH)
         })
       }), (0, r.jsx)(l.c, {
         guild: t,

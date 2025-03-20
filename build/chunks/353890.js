@@ -10,8 +10,8 @@ var i = n(120356),
   a = n(442837),
   l = n(481060),
   o = n(471445),
-  c = n(977258),
-  A = n(637853),
+  A = n(977258),
+  c = n(637853),
   d = n(816436),
   u = n(259580),
   g = n(889369),
@@ -23,7 +23,7 @@ function h(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, a.e7)([g.Z], () => g.Z.editedDefaultChannelIds), s = (0, d.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
+  } = e, i = (0, a.e7)([g.Z], () => g.Z.editedDefaultChannelIds), s = (0, d.b)(t.id, i).filter(e => e.isCategory() || (0, A.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)("div", {
@@ -102,7 +102,7 @@ function N(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, A.iF)(n), a = null !== (t = (0, o.KS)(n)) && void 0 !== t ? t : l.VL1;
+  } = e, i = (0, c.iF)(n), a = null !== (t = (0, o.KS)(n)) && void 0 !== t ? t : l.VL1;
   return (0, r.jsxs)("div", {
     className: p.channel,
     children: [(0, r.jsx)(a, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: b3fa46641fc73853
+  Original File Name: 60a2de41e89419f7
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -2190,10 +2190,6 @@ strong {
 }
 
 .localMuteStrikethrough__2f4f7 {
-    color: var(--red-400)
-}
-
-.show-redesigned-icons .localMuteStrikethrough__2f4f7 {
     color: currentColor
 }
 
@@ -11752,10 +11748,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-right: 4px
 }
 
-.strikethrough__69a26 {
-    color: var(--status-danger)
-}
-
 .chat_f02135 {
     min-width: 0;
     min-height: 0;
@@ -12702,10 +12694,6 @@ div.profileThemedContainer__656be {
     display: flex;
     flex-direction: row;
     gap: 16px
-}
-
-.strikethrough__4c6bf {
-    color: var(--status-danger)
 }
 
 .tooltip__54b48 {
@@ -15276,4 +15264,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=b3fa46641fc73853.css.map*/
+/*# sourceMappingURL=60a2de41e89419f7.css.map*/

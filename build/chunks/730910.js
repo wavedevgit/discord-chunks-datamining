@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => W
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(642128),
   o = n(442837),
-  c = n(692547),
-  A = n(215569),
+  A = n(692547),
+  c = n(215569),
   d = n(780384),
   u = n(481060),
   g = n(410030),
@@ -68,18 +68,18 @@ function Q(e, t) {
   }), e
 }
 
-function Z() {
+function W() {
   let e = (0, o.e7)([C.Z], () => C.Z.getGuild());
-  return null == e ? null : (0, r.jsx)(W, {
+  return null == e ? null : (0, r.jsx)(Z, {
     guild: e
   })
 }
 
-function W(e) {
+function Z(e) {
   let {
     guild: t
-  } = e, s = t.id, C = (0, o.e7)([I.Z], () => I.Z.getCurrentPage()), Z = (0, y.Z)(s), {
-    hasChanges: W,
+  } = e, s = t.id, C = (0, o.e7)([I.Z], () => I.Z.getCurrentPage()), W = (0, y.Z)(s), {
+    hasChanges: Z,
     hasConfiguredAnythingForCurrentStep: k,
     hasErrors: M
   } = (0, o.cj)([I.Z], () => ({
@@ -109,18 +109,18 @@ function W(e) {
       h.S.unsubscribe(T.CkL.EMPHASIZE_NOTICE, e)
     }
   }, [H]);
-  let z = (0, u.dQu)(c.Z.colors.BACKGROUND_FLOATING).hex(),
-    X = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_160).hex(),
+  let z = (0, u.dQu)(A.Z.colors.BACKGROUND_FLOATING).hex(),
+    X = (0, u.dQu)(A.Z.unsafe_rawColors.PRIMARY_160).hex(),
     Y = (0, d.wj)(G) ? z : X,
     K = U.to({
       range: [0, 1],
-      output: [(0, u.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(), (0, u.dQu)(c.Z.colors.TEXT_NORMAL).hex()]
+      output: [(0, u.dQu)(A.Z.unsafe_rawColors.WHITE_500).hex(), (0, u.dQu)(A.Z.colors.TEXT_NORMAL).hex()]
     }),
     V = U.to({
       range: [0, 1],
-      output: [Y, (0, u.dQu)(c.Z.colors.STATUS_DANGER).hex()]
+      output: [Y, (0, u.dQu)(A.Z.colors.STATUS_DANGER).hex()]
     });
-  if (Z) {
+  if (W) {
     if (C === O.PG.DEFAULT_CHANNELS) return (0, r.jsx)(P.j, {});
     if (C === O.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(B.Zm, {});
     if (C === O.PG.HOME_SETTINGS) return (0, r.jsx)(D.Z, {})
@@ -128,7 +128,7 @@ function W(e) {
   let J = C === O.xh[O.xh.length - 1],
     q = async () => {
       let e = E.Z.advancedMode;
-      if (W) try {
+      if (Z) try {
         if (C === O.PG.DEFAULT_CHANNELS) await (0, b.DO)(t).then(() => e ? (0, j.rS)(t, {
           ignoreDefaultPrompt: !0
         }) : Promise.resolve());
@@ -147,7 +147,7 @@ function W(e) {
       p.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Q(R({}, (0, f.hH)(s)), {
         step: O.PG[C],
         back: !1,
-        skip: !W
+        skip: !Z
       })), (0, v.Nb)((0, O.lg)(C)), await q() && (0, v.IG)(s, C)
     }, ee = async () => {
       p.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Q(R({}, (0, f.hH)(s)), {
@@ -192,7 +192,7 @@ function W(e) {
         })]
       })
     });
-  return (0, r.jsx)(A.W, {
+  return (0, r.jsx)(c.W, {
     component: "div",
     children: (0, r.jsx)(u.oXn, {
       className: L.noticeRegion,

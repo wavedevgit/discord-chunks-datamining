@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(727843),
   l = n(290348),
   o = n(783454),
-  c = n(893729),
-  A = n(619326),
+  A = n(893729),
+  c = n(619326),
   d = n(553204),
   u = n(388032),
   g = n(174032),
@@ -77,7 +77,7 @@ function m() {
     children: [(0, r.jsx)(i.hjN, {
       title: u.NW.string(u.t["6OUqDQ"]),
       disabled: v,
-      children: (0, r.jsx)(A.Z, {
+      children: (0, r.jsx)(c.Z, {
         value: p,
         onChange: h,
         disabled: v
@@ -117,12 +117,12 @@ function m() {
       children: (0, r.jsxs)("div", {
         className: f.previewContainer,
         "aria-hidden": !0,
-        children: [(0, r.jsx)(c.Z, {
+        children: [(0, r.jsx)(A.Z, {
           guildId: t,
           role: C,
           className: f.messageContainer,
           theme: "light"
-        }), (0, r.jsx)(c.Z, {
+        }), (0, r.jsx)(A.Z, {
           guildId: t,
           role: C,
           className: f.messageContainer,

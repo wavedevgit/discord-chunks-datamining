@@ -23,6 +23,7 @@ class x extends r.PureComponent {
         className: m.tierPillStar,
         children: (0, l.jsx)(c.Z, {
           tier: e,
+          color: "currentColor",
           className: m.tierPillGem
         })
       }), (0, u.nW)(e)]

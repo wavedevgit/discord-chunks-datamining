@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(704215),
   l = n(481060),
   o = n(605236),
-  c = n(874993),
-  A = n(768762),
+  A = n(874993),
+  c = n(768762),
   d = n(430824),
   u = n(999382),
   g = n(84613),
@@ -53,7 +53,7 @@ function N() {
       });
       break;
     case m.u.AUTOMOD:
-      e = (0, r.jsx)(c.Z, {
+      e = (0, r.jsx)(A.Z, {
         guildId: n.id
       });
       break;
@@ -72,9 +72,9 @@ function N() {
       onClick: () => {
         (0, g.K)(m.u.OVERVIEW)
       },
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(c.Z, {
         className: x.__invalid_arrow,
-        direction: A.Z.Directions.LEFT
+        direction: c.Z.Directions.LEFT
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "interactive-normal",

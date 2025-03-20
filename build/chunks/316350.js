@@ -7,8 +7,8 @@ var r, i, s = n(200651),
   a = n(192379),
   l = n(120356),
   o = n.n(l),
-  c = n(642128),
-  A = n(481060),
+  A = n(642128),
+  c = n(481060),
   d = n(205641),
   u = n(119331),
   g = n(902807),
@@ -63,7 +63,7 @@ function x(e) {
   if (!(!(r >= i) && r / i >= .8) || g) return null;
   let m = f || g ? C.hidden : null,
     p = f ? d.Z.Stages.FLYING : d.Z.Stages.HOVERING;
-  return (0, s.jsx)(A.AMe, {
+  return (0, s.jsx)(c.AMe, {
     from: {
       opacity: 0
     },
@@ -72,7 +72,7 @@ function x(e) {
     },
     config: v,
     shouldAnimate: "animate-always",
-    children: e => (0, s.jsxs)(c.animated.div, {
+    children: e => (0, s.jsxs)(A.animated.div, {
       className: C.tierClose,
       style: e,
       children: [(0, s.jsx)(d.Z, {
@@ -84,10 +84,10 @@ function x(e) {
         children: h.NW.format(h.t.qV3Erq, {
           numLeft: i - r
         })
-      }), (0, s.jsx)(A.P3F, {
+      }), (0, s.jsx)(c.P3F, {
         onClick: l,
         className: o()(C.tierCloseClose, m),
-        children: (0, s.jsx)(A.k$p, {
+        children: (0, s.jsx)(c.k$p, {
           size: "md",
           color: "currentColor",
           className: C.tierCloseCloseIcon
@@ -104,7 +104,7 @@ function N(e) {
     hasAnimatedUnlocked: r,
     onSetRef: i,
     tier: l,
-    showHeaderLockStatus: c,
+    showHeaderLockStatus: A,
     headerButton: d = null,
     subscriptionsRequired: u,
     subscriptionCount: g,
@@ -114,7 +114,7 @@ function N(e) {
   }, [h, v] = a.useState(0);
   return a.useLayoutEffect(() => {
     n && v(1)
-  }, [n]), (0, s.jsx)(A.AMe, {
+  }, [n]), (0, s.jsx)(c.AMe, {
     from: {
       unlockedTranslateY: 50
     },
@@ -133,6 +133,7 @@ function N(e) {
         className: C.tierHeaderContent,
         children: [(0, s.jsx)(f.Z, {
           tier: l.tier,
+          color: "currentColor",
           className: o()(C.tierIcon, {
             [C.tierIconLocked]: !r
           })
@@ -141,7 +142,7 @@ function N(e) {
             [C.tierTitleActive]: r
           }),
           children: l.title
-        }), c ? (0, s.jsx)(E, {
+        }), A ? (0, s.jsx)(E, {
           transform: null == e ? void 0 : e.unlockedTranslateY.to(e => "translate3d(0, ".concat(e, "px, 0)")),
           headerButton: d,
           subscriptionsRequired: u,
@@ -163,7 +164,7 @@ function j(e) {
     tier: i,
     isAnimatedTo: a,
     hasBottomMargin: l,
-    headerButton: c = null,
+    headerButton: A = null,
     withCardBody: d = !0,
     guildId: f,
     showHeaderLockStatus: b = !0
@@ -184,7 +185,7 @@ function j(e) {
         className: C.perkText,
         children: [(0, s.jsxs)("div", {
           className: C.perkTitle,
-          children: [e.title, e.isNew ? (0, s.jsx)(A.IGR, {
+          children: [e.title, e.isNew ? (0, s.jsx)(c.IGR, {
             className: C.newBadge,
             text: h.NW.string(h.t.y2b7CA)
           }) : null]
@@ -202,7 +203,7 @@ function j(e) {
     children: [(0, s.jsx)(N, {
       subscriptionCount: n,
       tier: i,
-      headerButton: c,
+      headerButton: A,
       showHeaderLockStatus: b,
       onSetRef: e => {
         null != r && r(e, i)
@@ -246,7 +247,7 @@ let E = e => {
     let {
       transform: t
     } = e;
-    return (0, s.jsx)(c.animated.div, {
+    return (0, s.jsx)(A.animated.div, {
       style: {
         transform: t
       },
@@ -264,7 +265,7 @@ let E = e => {
         children: h.NW.format(h.t.t2Wbo6, {
           required: t
         })
-      }), (0, s.jsx)(A.mBM, {
+      }), (0, s.jsx)(c.mBM, {
         size: "md",
         color: "currentColor",
         className: C.tierLock

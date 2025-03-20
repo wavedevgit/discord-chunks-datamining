@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(313201),
-  o = n(540059),
+  o = n(313201),
+  a = n(540059),
   s = n(703656),
   c = n(769654),
   u = n(430824),
@@ -16,7 +16,7 @@ var r = n(200651),
   f = n(981631),
   g = n(388032),
   m = n(359577);
-let b = (0, a.hQ)(),
+let b = (0, o.hQ)(),
   _ = "".concat(b, "-decription");
 
 function E(e, t, n) {
@@ -45,7 +45,7 @@ function E(e, t, n) {
 
 function O() {
   let e = Object.values(u.Z.getGuilds()).filter(e => e.hasFeature(f.oNc.HUB)),
-    t = (0, o.Q3)("AddFriendOtherPlaces"),
+    t = (0, a.Q3)("AddFriendOtherPlaces"),
     n = e => {
       d.default.track(f.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
         guild_id: e

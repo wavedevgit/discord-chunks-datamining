@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r),
   l = n(317381),
-  a = n(16609),
-  o = n(594174),
+  o = n(16609),
+  a = n(594174),
   s = n(823379),
   c = n(5192),
   u = n(863141),
@@ -19,14 +19,14 @@ function p() {
   if (null == e) return {
     participants: []
   };
-  let t = (0, a.jS)(e.location),
-    n = (0, a.pY)(e.location);
+  let t = (0, o.jS)(e.location),
+    n = (0, o.pY)(e.location);
   return {
     participants: Array.from(e.userIds, e => {
       var r, i;
-      let l = o.default.getUser(e);
+      let l = a.default.getUser(e);
       if (null == l) return;
-      let a = (0, c.y)(t, n, l);
+      let o = (0, c.y)(t, n, l);
       return r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -45,7 +45,7 @@ function p() {
         }
         return e
       }({}, (0, u.Z)(l)), i = i = {
-        nickname: null != a ? a : void 0
+        nickname: null != o ? o : void 0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

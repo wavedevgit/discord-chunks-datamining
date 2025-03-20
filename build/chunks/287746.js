@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(541716),
   U = n(752305),
   B = n(516887),
-  H = n(974251),
-  F = n(893718),
+  F = n(974251),
+  H = n(893718),
   G = n(436660),
   V = n(131565),
   z = n(603009),
@@ -95,8 +95,8 @@ var r = n(200651),
   eW = n(165540),
   eU = n(583027),
   eB = n(25007),
-  eH = n(685006),
-  eF = n(685722),
+  eF = n(685006),
+  eH = n(685722),
   eG = n(199649),
   eV = n(1397),
   ez = n(981631),
@@ -251,7 +251,7 @@ class e3 extends i.PureComponent {
       pendingScheduledMessage: _
     } = this.props, {
       contentWarningProps: C
-    } = this.state, y = (0, r.jsx)(F.Z, {
+    } = this.state, y = (0, r.jsx)(H.Z, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
@@ -536,7 +536,7 @@ class e3 extends i.PureComponent {
       var t, n;
       let r = null === (t = this.editorRef) || void 0 === t ? void 0 : t.getSlateEditor();
       null != r && (G.Q.select(r, []), r.insertText(e), null === (n = this.editorRef) || void 0 === n || n.focus())
-    }), eX(this, "renderAttachButton", (e, t) => (0, r.jsx)(H.Z, {
+    }), eX(this, "renderAttachButton", (e, t) => (0, r.jsx)(F.Z, {
       className: t,
       channel: this.props.channel,
       draftType: ex.d.ChannelMessage,
@@ -604,7 +604,7 @@ class e7 extends i.PureComponent {
     t = T && n.type === ez.d4z.GUILD_VOICE ? eY.t.pnnyFR : T && n.type === ez.d4z.GUILD_STAGE_VOICE ? eY.t.YInSkp : u.T.THREADS.has(n.type) ? eY.t["OkzL+f"] : eY.t.UbNmGR;
     let A = (0, r.jsx)("div", {
         className: eq.channelBottomBarArea,
-        children: (0, r.jsx)(eF.Z, {})
+        children: (0, r.jsx)(eH.Z, {})
       }),
       w = (0, r.jsxs)("div", {
         className: eq.channelBottomBarArea,
@@ -822,7 +822,7 @@ class e7 extends i.PureComponent {
       } = this.props;
       return e && !t ? (0, r.jsx)("div", {
         className: eq.entryPointButtonContainer,
-        children: (0, r.jsx)(eH.ZP, {
+        children: (0, r.jsx)(eF.ZP, {
           context: {
             channel: n,
             type: "channel"

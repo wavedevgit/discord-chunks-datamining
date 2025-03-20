@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(367907),
   l = n(807582),
   o = n(26323),
-  c = n(516129),
-  A = n(345861),
+  A = n(516129),
+  c = n(345861),
   d = n(709586),
   u = n(768581),
   g = n(434404),
@@ -82,7 +82,7 @@ let v = function(e) {
       guild: t,
       perks: (0, m.XO)()
     })
-  }, [t]), j = (0, r.jsx)(c.Z, {
+  }, [t]), j = (0, r.jsx)(A.Z, {
     image: t.homeHeader,
     makeURL: e => null != e ? u.ZP.getGuildHomeHeaderURL({
       id: t.id,
@@ -115,7 +115,7 @@ let v = function(e) {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: C.NW.string(C.t.Vwintr)
-        }), (0, r.jsx)(A.Z, {
+        }), (0, r.jsx)(c.Z, {
           color: s.Ttl.BRAND,
           className: b.uploadButton,
           buttonCTA: C.NW.string(C.t.yG2pUl),

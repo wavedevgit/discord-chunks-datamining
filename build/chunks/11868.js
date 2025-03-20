@@ -1,6 +1,6 @@
 /** Chunk was on 98650 **/
 n.d(t, {
-  Qt: () => D,
+  Qt: () => j,
   ZP: () => Z
 }), n(266796);
 var r = n(200651),
@@ -34,14 +34,14 @@ var r = n(200651),
 let x = (e, t) => n => {
     n.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, !1), null == t || t(n)
   },
-  j = (e, t) => n => {
+  D = (e, t) => n => {
     let r = f.Z.getChannel(e.channel_id);
     null != r && (n.stopPropagation(), (0, p.Cq)(r), null == t || t(n))
   },
-  D = (e, t) => {
+  j = (e, t) => {
     switch (null == e ? void 0 : e.entity_type) {
       case P.WX.STAGE_INSTANCE:
-        return j(e, t);
+        return D(e, t);
       case P.WX.VOICE:
         return x(e, t)
     }
@@ -61,7 +61,7 @@ let x = (e, t) => n => {
     }, [n]), f = (0, y.u)(o, l), m = i.useCallback(e => {
       u && null != o && (e.stopPropagation(), (0, c.Bk)(o))
     }, [u, o]), b = i.useCallback(e => {
-      D(o)(e)
+      j(o)(e)
     }, [o]);
     if (null == p) return null;
     let g = null == f ? void 0 : f.IconComponent,

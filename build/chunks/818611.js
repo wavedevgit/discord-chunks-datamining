@@ -177,7 +177,7 @@ let N = 3,
         children: [(0, r.jsx)(u.t6m, {
           size: "md",
           color: "currentColor",
-          className: b.notAllowedIcon
+          className: b.icon
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "header-primary",

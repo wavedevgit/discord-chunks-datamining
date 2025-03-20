@@ -9,8 +9,8 @@ var r, i = n(200651),
   a = n(120356),
   l = n.n(a),
   o = n(642128),
-  c = n(772848),
-  A = n(374470),
+  A = n(772848),
+  c = n(374470),
   d = n(477690),
   u = n(481060),
   g = n(624138),
@@ -118,8 +118,8 @@ class j extends(r = s.Component) {
     let {
       progress: a,
       tiers: l
-    } = this.props, c = l[n], A = a >= e.numRequired, d = null != c && e.key === c.key, g = e.key === l[0].key;
-    s = g ? p.tierFirst : d ? p.tierCurrent : A ? p.tierAccomplished : p.tierInProgress;
+    } = this.props, A = l[n], c = a >= e.numRequired, d = null != A && e.key === A.key, g = e.key === l[0].key;
+    s = g ? p.tierFirst : d ? p.tierCurrent : c ? p.tierAccomplished : p.tierInProgress;
     let f = e.y - (g ? 0 : v / 2),
       m = this.state.tierMarkerActive === t,
       C = !g && d && m;
@@ -257,12 +257,12 @@ class j extends(r = s.Component) {
       foregroundTooltipY: 0,
       tierMarkerActive: 0,
       finishedInitialAnimation: !1
-    }), h(this, "foregroundTooltipElementRef", s.createRef()), h(this, "tierMarkerMaskId", (0, c.Z)()), h(this, "handleForegroundMouseEnter", e => {
+    }), h(this, "foregroundTooltipElementRef", s.createRef()), h(this, "tierMarkerMaskId", (0, A.Z)()), h(this, "handleForegroundMouseEnter", e => {
       this.setState({
         showForegroundTooltip: !0
       }), this.handleForegroundMouseMove(e)
     }), h(this, "handleForegroundMouseMove", e => {
-      if (!(0, A.k)(e.target)) return;
+      if (!(0, c.k)(e.target)) return;
       let t = e.target.getBoundingClientRect(),
         n = e.clientY - t.top;
       n !== this.state.foregroundTooltipY && this.setState({

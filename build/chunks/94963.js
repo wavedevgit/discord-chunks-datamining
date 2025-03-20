@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(120356),
   o = n.n(l),
-  c = n(97028),
-  A = n(866442),
+  A = n(97028),
+  c = n(866442),
   d = n(442837),
   u = n(481060),
   g = n(650774),
@@ -136,7 +136,7 @@ let O = [{
       for (let e = 0; e < v.ym.length; e++)
         if (v.ym[e].primary === s.brandPrimaryColor && v.ym[e].secondary === s.brandSecondaryColor) return 2 + e;
       return 0
-    }, [P, B, D, T, s.brandPrimaryColor, s.brandSecondaryColor]), [Z, W] = i.useState(!1), k = 0 === Q, M = 1 === Q, _ = i.useMemo(() => {
+    }, [P, B, D, T, s.brandPrimaryColor, s.brandSecondaryColor]), [W, Z] = i.useState(!1), k = 0 === Q, M = 1 === Q, _ = i.useMemo(() => {
       if (k) return R;
       if (M) return {
         primary: null != D ? D : b.Nh,
@@ -184,7 +184,7 @@ let O = [{
           secondaryColor: null !== (n = _.secondary) && void 0 !== n ? n : v.K_
         },
         gameActivity: Array.from(s.gameApplicationIds).reduce((e, t) => (e[t] = {
-          level: c.m.HIGH,
+          level: A.m.HIGH,
           score: 0
         }, e), {})
       })
@@ -221,19 +221,19 @@ let O = [{
                   palette: R,
                   onPrimaryColorChange: e => {
                     n({
-                      brandPrimaryColor: (0, A.Rf)(e)
+                      brandPrimaryColor: (0, c.Rf)(e)
                     })
                   },
                   onSecondaryColorChange: e => {
                     n({
-                      brandSecondaryColor: (0, A.Rf)(e)
+                      brandSecondaryColor: (0, c.Rf)(e)
                     })
                   },
-                  shouldShow: Z,
-                  onRequestClose: () => W(!1),
+                  shouldShow: W,
+                  onRequestClose: () => Z(!1),
                   children: e => (0, r.jsx)(u.P3F, I(E({}, e), {
                     onClick: () => {
-                      W(e => !e)
+                      Z(e => !e)
                     },
                     className: o()(N.brandItemContainer, {
                       [N.brandItemContainerSelected]: 0 === Q

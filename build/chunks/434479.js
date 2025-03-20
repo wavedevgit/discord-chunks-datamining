@@ -54,9 +54,10 @@ function f(e) {
       text: m,
       selected: b,
       trailing: v,
-      showUnread: y = !1
+      background: y,
+      showUnread: _ = !1
     } = e,
-    _ = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -70,17 +71,17 @@ function f(e) {
         for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "showUnread"]);
-  let O = (0, l.JA)(n),
-    j = null !== (t = (0, a.qg)(m)) && void 0 !== t ? t : "";
+    }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread"]);
+  let j = (0, l.JA)(n),
+    C = null !== (t = (0, a.qg)(m)) && void 0 !== t ? t : "";
   return (0, r.jsx)("li", {
-    children: (0, r.jsxs)(s.kL8, h(p({}, _), {
-      buttonProps: h(p({}, O), {
+    children: (0, r.jsxs)(s.kL8, h(p({}, O), {
+      buttonProps: h(p({}, j), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": j,
+      "aria-label": C,
       focusProps: {
         offset: {
           top: 1,
@@ -88,13 +89,13 @@ function f(e) {
           right: 4
         }
       },
-      onContextMenu: null != _.onContextMenu ? _.onContextMenu : e => {
+      onContextMenu: null != O.onContextMenu ? O.onContextMenu : e => {
         e.stopPropagation()
       },
       className: o()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [y ? (0, r.jsx)("div", {
+      children: [y, _ ? (0, r.jsx)("div", {
         className: o()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: o()([d.link, d.basicChannelRowLink, f]),

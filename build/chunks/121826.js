@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(230487),
   i = n(998502),
   l = n(914946),
-  a = n(452426);
-let o = {
+  o = n(452426);
+let a = {
   [n(981631).Etm.ENCOURAGE_HW_ACCELERATION]: {
-    validation: e => (0, a.Z)(e),
+    validation: e => (0, o.Z)(e),
     handler(e) {
       let {
         socket: t

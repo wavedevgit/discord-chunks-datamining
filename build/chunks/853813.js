@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  c = n(367907),
-  A = n(605436),
+  A = n(367907),
+  c = n(605436),
   d = n(228643),
   u = n(496675),
   g = n(626135),
@@ -55,15 +55,15 @@ function y(e) {
       role: B,
       editRoleId: n
     },
-    Z = i.useRef(Q);
+    W = i.useRef(Q);
   if (i.useEffect(() => {
-      Z.current = Q
+      W.current = Q
     }), i.useEffect(() => {
       var e, t;
       let {
         role: n,
         editRoleId: r
-      } = Z.current, i = (0, C.UT)(y), s = null !== (t = null === (e = m.Z.getRoleMemberCount(P.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
+      } = W.current, i = (0, C.UT)(y), s = null !== (t = null === (e = m.Z.getRoleMemberCount(P.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
       g.default.track(I.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -83,13 +83,13 @@ function y(e) {
         return e
       }({
         tab_opened: i,
-        is_everyone: (0, A.pM)(P.id, r),
+        is_everyone: (0, c.pM)(P.id, r),
         role_id: r,
         role_mentionable: null == n ? void 0 : n.mentionable,
         role_hoist: null == n ? void 0 : n.hoist,
         role_permissions: null == n ? void 0 : n.permissions.toString(),
         role_num_members: s
-      }, (0, c.hH)(P.id)))
+      }, (0, A.hH)(P.id)))
     }, [y, P.id, null == B ? void 0 : B.id]), i.useEffect(() => {
       (null == B ? void 0 : B.id) != null && (0, d.sE)(P.id, B.id)
     }, [P.id, null == B ? void 0 : B.id]), null == B) return null;

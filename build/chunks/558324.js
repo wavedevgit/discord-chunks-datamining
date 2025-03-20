@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(981631),
-  c = n(388032),
-  A = n(962877);
+  A = n(388032),
+  c = n(962877);
 let d = e => {
   var t, n, {
       className: s,
@@ -40,21 +40,21 @@ let d = e => {
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
   let [x, N] = i.useState(null != u ? u : ""), j = d.map((e, t) => (0, r.jsxs)("span", {
-    className: A.tag,
+    className: c.tag,
     children: [e, !C && (0, r.jsx)(l.P3F, {
-      className: A.closeWrapper,
+      className: c.closeWrapper,
       onClick: () => g(t),
       children: (0, r.jsx)(l.Dio, {
         size: "xs",
         color: "currentColor",
-        className: A.close
+        className: c.close
       })
     })]
   }, t)), E = i.useCallback(() => {
     let e = x.trim();
     if (0 !== e.length) {
       if (null != h && d.length >= h) {
-        null == m || m(c.NW.string(c.t.Xx7XeH));
+        null == m || m(A.NW.string(A.t.Xx7XeH));
         return
       }
       f(e), N("")
@@ -71,8 +71,8 @@ let d = e => {
     }
   }, [E, x.length, g, d.length]);
   return (0, r.jsxs)("div", {
-    className: a()(s, A.inputWrapper, {
-      [A.disabled]: C
+    className: a()(s, c.inputWrapper, {
+      [c.disabled]: C
     }),
     children: [j, (0, r.jsx)(l.oil, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -92,8 +92,8 @@ let d = e => {
       }
       return e
     }({
-      className: A.inputOuter,
-      inputClassName: A.inputInner
+      className: c.inputOuter,
+      inputClassName: c.inputInner
     }, v), n = n = {
       value: x,
       onKeyDown: I,

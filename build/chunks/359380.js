@@ -9,33 +9,33 @@ var r = n(200651),
   a = n(214715),
   l = n(18100),
   o = n(308083),
-  c = n(388032),
-  A = n(154662);
+  A = n(388032),
+  c = n(154662);
 let d = e => {
   let {
     title: t,
     icon: n,
     availableTraits: l,
-    selectedTraits: c,
+    selectedTraits: A,
     onUpdateTraits: d
   } = e, u = i.useCallback(e => {
-    let t = new Set(c);
+    let t = new Set(A);
     t.delete(e), d(t)
-  }, [d, c]), g = i.useCallback(e => {
-    if (c.size === o.c4) return;
-    let t = new Set(c);
+  }, [d, A]), g = i.useCallback(e => {
+    if (A.size === o.c4) return;
+    let t = new Set(A);
     t.add(e), d(t)
-  }, [d, c]);
+  }, [d, A]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Text, {
-      className: A.interestsCategoryTitle,
+      className: c.interestsCategoryTitle,
       variant: "text-xs/semibold",
       color: "text-muted",
       children: t
     }), (0, r.jsx)("div", {
-      className: A.utilityTraits,
+      className: c.utilityTraits,
       children: l.map(e => {
-        let t = c.has(e);
+        let t = A.has(e);
         return (0, r.jsx)(a.Z, {
           variant: "text-xs/semibold",
           color: "interactive-normal",
@@ -72,39 +72,39 @@ function u(e) {
     t.delete(e), n(t)
   }, [n, m]);
   return (0, r.jsxs)("div", {
-    className: A.content,
+    className: c.content,
     children: [(0, r.jsxs)("div", {
-      className: A.mainPanelContainer,
+      className: c.mainPanelContainer,
       children: [(0, r.jsx)(d, {
-        title: c.NW.string(c.t.SXqVqq),
+        title: A.NW.string(A.t.SXqVqq),
         icon: s.tBG,
         availableTraits: o.jK,
         selectedTraits: m,
         onUpdateTraits: n
       }), (0, r.jsx)(d, {
-        title: c.NW.string(c.t["7uZoaG"]),
+        title: A.NW.string(A.t["7uZoaG"]),
         icon: s.tBG,
         availableTraits: o.CT,
         selectedTraits: m,
         onUpdateTraits: n
       }), (0, r.jsx)(s.Text, {
-        className: A.interestsCategoryTitle,
+        className: c.interestsCategoryTitle,
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: c.NW.string(c.t.rU5dUV)
+        children: A.NW.string(A.t.rU5dUV)
       }), (0, r.jsx)("div", {
-        className: A.languageSelect,
+        className: c.languageSelect,
         children: (0, r.jsx)(s.VcW, {
-          wrapperClassName: A.input,
+          wrapperClassName: c.input,
           options: f,
           value: h,
           onChange: C,
-          placeholder: c.NW.string(c.t.GA91en),
+          placeholder: A.NW.string(A.t.GA91en),
           multi: !0
         })
       })]
     }), (0, r.jsx)("div", {
-      className: A.fixedWidthSidebar,
+      className: c.fixedWidthSidebar,
       children: null != a && p.length > 0 && !g && (0, r.jsx)(l.Z, {
         guildId: t,
         progress: a,
@@ -127,20 +127,20 @@ let g = e => {
     hidePreview: g = !1
   } = e;
   return (0, r.jsxs)("div", {
-    className: A.slideContent,
+    className: c.slideContent,
     children: [d && (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "header-secondary",
-      className: A.optionalTag,
-      children: c.NW.string(c.t["vWEL6+"])
+      className: c.optionalTag,
+      children: A.NW.string(A.t["vWEL6+"])
     }), (0, r.jsx)(s.X6q, {
       variant: "heading-xxl/medium",
-      className: A.title,
+      className: c.title,
       children: n
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: A.subtitle,
+      className: c.subtitle,
       children: i
     }), (0, r.jsx)(u, {
       guildId: t,

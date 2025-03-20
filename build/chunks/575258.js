@@ -16,15 +16,15 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let c = {
+let A = {
     description: "",
     channels: [],
     enabled: !1
   },
-  A = c,
+  c = A,
   d = !1,
   u = !1,
-  g = c;
+  g = A;
 
 function f(e) {
   let {
@@ -33,12 +33,12 @@ function f(e) {
   } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, s;
-    g = A = {
+    g = c = {
       description: null !== (i = t.description) && void 0 !== i ? i : "",
       channels: null !== (s = t.welcome_channels) && void 0 !== s ? s : [],
       enabled: null == r ? void 0 : r.hasFeature(l.oNc.WELCOME_SCREEN_ENABLED)
     }
-  } else g = A = c;
+  } else g = c = A;
   u = !1
 }
 class m extends(r = i.ZP.Store) {
@@ -56,7 +56,7 @@ class m extends(r = i.ZP.Store) {
       submitting: d,
       hasErrors: u,
       welcomeSettings: g,
-      originalWelcomeSettings: A
+      originalWelcomeSettings: c
     }
   }
 }
@@ -65,10 +65,10 @@ let p = new m(s.Z, {
   WELCOME_SCREEN_FETCH_SUCCESS: f,
   WELCOME_SCREEN_UPDATE: f,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
-    g = A, u = !1
+    g = c, u = !1
   },
   WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-    g = c, A = c
+    g = A, c = A
   },
   WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
     let {

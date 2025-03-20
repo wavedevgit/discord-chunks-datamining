@@ -1,9 +1,9 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  P5: () => A,
+  P5: () => c,
   TJ: () => o,
-  UA: () => c,
+  UA: () => A,
   d5: () => l
 });
 var r, i = n(626135),
@@ -21,7 +21,7 @@ function o(e, t) {
   return t.sufficient || s || !r ? t.sufficient || s ? "settings" : "intro" : "disqualified"
 }
 
-function c(e, t) {
+function A(e, t) {
   let n = !1,
     r = {
       guild_id: e.id,
@@ -30,7 +30,7 @@ function c(e, t) {
   (null == t || e.discoverySplash !== t.discoverySplash) && (r.discovery_splash_edit_type = null == e.discoverySplash ? "removed" : "uploaded", n = !0), (null == t || e.features.has(a.oNc.DISCOVERABLE) !== t.features.has(a.oNc.DISCOVERABLE)) && (r.is_discoverable = e.features.has(a.oNc.DISCOVERABLE), n = !0), (null == t || e.rulesChannelId !== t.rulesChannelId) && (r.rules_channel_id = e.rulesChannelId, n = !0), n && i.default.track(a.rMx.GUILD_SETTINGS_DISCOVERY_UPDATED, r)
 }
 
-function A(e) {
+function c(e) {
   var t, n;
   return null !== (n = null === (t = s.U2[e]) || void 0 === t ? void 0 : t.map(e => e())) && void 0 !== n ? n : []
 }

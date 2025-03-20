@@ -9,9 +9,9 @@ var r = n(200651),
   a = n(457414),
   l = n(311173),
   o = n(388032),
-  c = n(97895);
+  A = n(97895);
 
-function A(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,8 +52,8 @@ function u(e) {
   } = e, [f, m] = i.useState(!g), p = i.useCallback(() => {
     m(!f)
   }, [f, m]), h = i.useCallback(e => {
-    u(d(A({}, n), {
-      triggerMetadata: d(A({}, n.triggerMetadata), {
+    u(d(c({}, n), {
+      triggerMetadata: d(c({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))
@@ -63,10 +63,10 @@ function u(e) {
     collapsibleContent: (0, r.jsx)(l.Z, {
       rule: n,
       onChangeText: h,
-      className: c.textAreaContainer,
+      className: A.textAreaContainer,
       initialValue: null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.regexPatterns
     }),
-    className: c.collapseable,
+    className: A.collapseable,
     children: e => {
       let {
         onClick: t
@@ -76,18 +76,18 @@ function u(e) {
           p(), t(e)
         },
         children: (0, r.jsxs)("div", {
-          className: c.header,
+          className: A.header,
           children: [(0, r.jsx)(s.X6q, {
             variant: "text-sm/medium",
             children: o.NW.string(o.t.dnunm5)
           }), f ? (0, r.jsx)(s.u04, {
             size: "md",
             color: "currentColor",
-            className: c.arrow
+            className: A.arrow
           }) : (0, r.jsx)(s.CJ0, {
             size: "md",
             color: "currentColor",
-            className: c.arrow
+            className: A.arrow
           })]
         })
       })

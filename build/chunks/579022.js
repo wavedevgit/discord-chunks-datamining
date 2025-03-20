@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(388032),
-  a = n(915960);
-let o = Math.ceil(2 * Math.PI * 20),
+  o = n(915960);
+let a = Math.ceil(2 * Math.PI * 20),
   s = e => {
     let {
       total: t,
@@ -37,7 +37,7 @@ let o = Math.ceil(2 * Math.PI * 20),
           }
           return e
         }({
-          className: a.wrapper,
+          className: o.wrapper,
           role: "progressbar",
           "aria-label": l.NW.formatToPlainString(l.t["2eoRMj"], {
             used: c
@@ -45,15 +45,15 @@ let o = Math.ceil(2 * Math.PI * 20),
         }, e), n = n = {
           children: [(0, r.jsxs)("svg", {
             viewBox: "25 25 50 50",
-            className: a.svg,
+            className: o.svg,
             "aria-hidden": !0,
             children: [(0, r.jsx)("circle", {
-              className: a.background,
+              className: o.background,
               cx: "50",
               cy: "50",
               r: 20
             }), (0, r.jsx)("circle", {
-              className: a.foreground,
+              className: o.foreground,
               cx: "50",
               cy: "50",
               r: 20,
@@ -64,12 +64,12 @@ let o = Math.ceil(2 * Math.PI * 20),
                 return "rgb(".concat(t, ", ").concat(n, ", ").concat(r, ")")
               }(s),
               strokeDasharray: function(e) {
-                let t = Math.floor(o * e);
-                return "".concat(t, ", ").concat(o)
+                let t = Math.floor(a * e);
+                return "".concat(t, ", ").concat(a)
               }(s)
             })]
           }), (0, r.jsx)("aside", {
-            className: a.usageInfo,
+            className: o.usageInfo,
             "aria-hidden": !0,
             children: c
           })]

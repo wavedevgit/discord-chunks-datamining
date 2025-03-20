@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(970731),
-  a = n(388032),
-  o = n(984661);
+  o = n(388032),
+  a = n(984661);
 
 function s(e) {
   let {
@@ -15,19 +15,19 @@ function s(e) {
     markAsDismissed: s
   } = e;
   return (0, r.jsx)(l.ZP, {
-    className: o.container,
+    className: a.container,
     asset: (0, r.jsx)("img", {
-      className: o.image,
+      className: a.image,
       src: n(297806),
       alt: ""
     }),
-    header: a.NW.string(a.t["2l9beX"]),
-    headerClassName: o.header,
-    content: a.NW.string(a.t.gdqdND),
-    buttonCTA: a.NW.string(a.t.RzWDqa),
+    header: o.NW.string(o.t["2l9beX"]),
+    headerClassName: a.header,
+    content: o.NW.string(o.t.gdqdND),
+    buttonCTA: o.NW.string(o.t.RzWDqa),
     buttonProps: {
       color: i.Ttl.WHITE,
-      innerClassName: o.primaryButton
+      innerClassName: a.primaryButton
     },
     onClick: () => {
       (0, i.ZDy)(async () => {
@@ -68,7 +68,7 @@ function s(e) {
         }
       })
     },
-    secondaryButtonCTA: a.NW.string(a.t.TulDPj),
+    secondaryButtonCTA: o.NW.string(o.t.TulDPj),
     secondaryButtonProps: {
       look: i.iLD.LINK,
       color: i.Ttl.WHITE

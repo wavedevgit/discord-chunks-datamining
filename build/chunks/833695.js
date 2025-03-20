@@ -10,8 +10,8 @@ var i = n(399606),
   a = n(395586),
   l = n(755930),
   o = n(909667),
-  c = n(968820),
-  A = n(200472),
+  A = n(968820),
+  c = n(200472),
   d = n(489028),
   u = n(277369),
   g = n(215124),
@@ -37,8 +37,8 @@ function v(e) {
   } = e, v = (0, p.Z)(m), x = (0, a.f3)(), N = (0, i.e7)([f.Z], () => f.Z.getGuild());
   return v.loading || null == N ? (0, r.jsx)(s.$jN, {}) : null == v.application ? (0, r.jsx)(d.Z, {
     guild: N
-  }) : (0, r.jsxs)(A.Z, {
-    children: [(0, r.jsx)(c.Z, {
+  }) : (0, r.jsxs)(c.Z, {
+    children: [(0, r.jsx)(A.Z, {
       revenue: v.metrics.revenue,
       revenueTrend: v.metrics.revenuePctChange,
       summaryMetricLabel: C.NW.string(C.t.R3PCmZ),

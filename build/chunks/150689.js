@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 }), n(47120), n(566702);
 var r = n(200651),
   i = n(192379),
@@ -10,27 +10,27 @@ var r = n(200651),
   l = n(623691),
   o = n(494831);
 
-function c(e) {
+function A(e) {
   let {
     setEditRoleId: t,
     guild: n,
-    everyoneRole: c,
-    otherRoles: A,
+    everyoneRole: A,
+    otherRoles: c,
     setSelectedSection: d
-  } = e, [u, g] = i.useState(""), [f, m] = i.useState(o.Cl), p = u.trim(), h = i.useMemo(() => A.filter(e => (0, s.uo)(e, p)), [A, p]), C = i.useCallback(() => (0, r.jsx)(l.Z, {
+  } = e, [u, g] = i.useState(""), [f, m] = i.useState(o.Cl), p = u.trim(), h = i.useMemo(() => c.filter(e => (0, s.uo)(e, p)), [c, p]), C = i.useCallback(() => (0, r.jsx)(l.Z, {
     guild: n,
-    everyoneRole: c,
+    everyoneRole: A,
     filteredRoles: h,
     setEditRoleId: t,
     query: u,
     setQuery: g,
     setHeaderHeight: m
-  }, "header"), [n, c, h, t, u]);
+  }, "header"), [n, A, h, t, u]);
   return (0, r.jsx)(a.Z, {
     setEditRoleId: t,
     guild: n,
-    everyoneRole: c,
-    otherRoles: A,
+    everyoneRole: A,
+    otherRoles: c,
     setSelectedSection: d,
     renderHeader: C,
     headerHeight: f,

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(399606),
   l = n(481060),
   o = n(76535),
-  c = n(395586),
-  A = n(204875),
+  A = n(395586),
+  c = n(204875),
   d = n(715796),
   u = n(411667),
   g = n(434404),
@@ -68,19 +68,19 @@ function w(e) {
         })
       })]
     }),
-    Z = (0, r.jsxs)(l.njP, {
+    W = (0, r.jsxs)(l.njP, {
       type: "top",
       look: "brand",
       className: y.tabBar,
       "aria-label": O.NW.string(O.t.X6h2g4),
       selectedItem: S,
       onItemSelect: L,
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(c.Z, {
         id: "basic_info",
         disabledTooltip: O.NW.string(O.t.NVDuUV),
         disabled: !n,
         children: O.NW.string(O.t.w27QAQ)
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(c.Z, {
         id: "manage_listings",
         disabledTooltip: O.NW.string(O.t.NVDuUV),
         disabled: !n,
@@ -100,7 +100,7 @@ function w(e) {
         })
       }) : null]
     }),
-    W = (0, s.EQ)(S).with("basic_info", () => (0, r.jsx)(x.Z, {
+    Z = (0, s.EQ)(S).with("basic_info", () => (0, r.jsx)(x.Z, {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(N.Z, {
       guildId: t
@@ -109,15 +109,15 @@ function w(e) {
     })).exhaustive(),
     k = w ? (0, r.jsx)(l.njP.Panel, {
       id: S,
-      children: W
+      children: Z
     }) : (0, r.jsx)(l.$jN, {});
-  return (0, r.jsxs)(c.AL, {
+  return (0, r.jsxs)(A.AL, {
     guildId: t,
     children: [Q, (0, r.jsx)(u.Z, {
       guild: P
     }), (0, r.jsx)("div", {
       className: y.tabBarContainer,
-      children: Z
+      children: W
     }), k]
   })
 }

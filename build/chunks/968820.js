@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(937615),
   l = n(217597),
   o = n(685389),
-  c = n(981631),
-  A = n(388032),
+  A = n(981631),
+  c = n(388032),
   d = n(787340);
 
 function u(e) {
@@ -25,13 +25,13 @@ function u(e) {
     summaryMetricTrendIsPercent: p
   } = e;
   return (0, r.jsx)(i.hjN, {
-    title: A.NW.string(A.t.ofmOzc),
+    title: c.NW.string(c.t.ofmOzc),
     children: (0, r.jsxs)("div", {
       className: d.paymentInfoGroup,
       children: [(0, r.jsxs)(o.H, {
         children: [(0, r.jsx)(l.Z, {
-          label: A.NW.string(A.t.iY1jW1),
-          value: (0, a.T4)(null != n ? n : 0, c.pKx.USD),
+          label: c.NW.string(c.t.iY1jW1),
+          value: (0, a.T4)(null != n ? n : 0, A.pKx.USD),
           additionalContent: (0, r.jsx)(s.H, {
             value: u,
             isPercent: !0

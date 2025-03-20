@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(836560),
   i = n(317381),
   l = n(16609),
-  a = n(626135),
-  o = n(585483),
+  o = n(626135),
+  a = n(585483),
   s = n(70956),
   c = n(996106),
   u = n(631467),
@@ -75,7 +75,7 @@ class E extends r.EventEmitter {
       b.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
         Array.from(i.ZP.getSelfEmbeddedActivities().entries()).forEach(e => {
           let [t, n] = e;
-          a.default.track(h.rMx.ACTIVITY_HANDSHAKE_TIMED_OUT, {
+          o.default.track(h.rMx.ACTIVITY_HANDSHAKE_TIMED_OUT, {
             application_id: t,
             channel_id: (0, l.pY)(n.location),
             guild_id: (0, l.jS)(n.location),
@@ -142,11 +142,11 @@ class E extends r.EventEmitter {
           closeCode: h.$VG.CLOSE_UNSUPPORTED
         }, e.message)
       }
-      let o = t.frame_id;
-      if (!b.has(o)) throw this.logger.error("Unrecognized frame ID ".concat(o)), new c.Z({
+      let a = t.frame_id;
+      if (!b.has(a)) throw this.logger.error("Unrecognized frame ID ".concat(a)), new c.Z({
         closeCode: h.$VG.CLOSE_UNSUPPORTED
-      }, "Unrecognized frame ID ".concat(o));
-      null != t.sdk_version && a.default.track(h.rMx.ACTIVITY_HANDSHAKE, {
+      }, "Unrecognized frame ID ".concat(a));
+      null != t.sdk_version && o.default.track(h.rMx.ACTIVITY_HANDSHAKE, {
         application_id: t.client_id,
         sdk_version: t.sdk_version
       });
@@ -155,7 +155,7 @@ class E extends r.EventEmitter {
         i = this.createPostMessageProxySocket({
           origin: e,
           postMessageToRPCClient: r,
-          frameId: o,
+          frameId: a,
           version: Number(t.v),
           logger: this.logger,
           postClose: _,
@@ -166,10 +166,10 @@ class E extends r.EventEmitter {
       }
       this.logger.info("Socket Opened: ".concat(i.id));
       try {
-        if (await this.validateSocketClient(i, e, t.client_id), !b.has(o)) throw this.logger.error("Frame ID ".concat(o, " no longer exists")), new c.Z({
+        if (await this.validateSocketClient(i, e, t.client_id), !b.has(a)) throw this.logger.error("Frame ID ".concat(a, " no longer exists")), new c.Z({
           closeCode: h.$VG.CLOSE_UNSUPPORTED
-        }, "Unrecognized frame ID ".concat(o));
-        m.set(e, i), b.delete(o), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        }, "Unrecognized frame ID ".concat(a));
+        m.set(e, i), b.delete(a), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }
@@ -186,6 +186,6 @@ class E extends r.EventEmitter {
         }, e.message)
       }
       this.disconnectSocket(e, t)
-    }), o.S.subscribe(h.CkL.IFRAME_MOUNT, this.handleIFrameMount), o.S.subscribe(h.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = s
+    }), a.S.subscribe(h.CkL.IFRAME_MOUNT, this.handleIFrameMount), a.S.subscribe(h.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = s
   }
 }

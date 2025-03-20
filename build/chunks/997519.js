@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(192379),
   i = n(766434),
@@ -10,11 +10,11 @@ var r = n(192379),
   l = n(495298),
   o = n(198139);
 
-function c(e, t) {
+function A(e, t) {
   let n = null == t ? void 0 : t.team,
     {
-      payoutsByPeriod: c,
-      loading: A
+      payoutsByPeriod: A,
+      loading: c
     } = (0, s.Z)(null == t ? void 0 : t.id, {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? void 0 : n.id
@@ -30,7 +30,7 @@ function c(e, t) {
       let {
         currentPeriod: n,
         previousPeriods: r
-      } = (0, i.Br)(c), s = (0, i.Uj)(n, r[0]);
+      } = (0, i.Br)(A), s = (0, i.Uj)(n, r[0]);
       return {
         currentPeriod: n,
         previousPeriods: r,
@@ -65,13 +65,13 @@ function c(e, t) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)
       }
-    }, [c, u]);
+    }, [A, u]);
   return {
-    loading: A || !d,
+    loading: c || !d,
     team: n,
     currentPeriod: g,
     previousPeriods: f,
-    allPeriods: c,
+    allPeriods: A,
     metrics: m
   }
 }

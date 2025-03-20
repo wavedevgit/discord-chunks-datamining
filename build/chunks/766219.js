@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  I: () => o,
-  s: () => a
+  I: () => a,
+  s: () => o
 });
 var r = n(823379),
   i = n(49898),
   l = n(388032);
 
-function a(e) {
+function o(e) {
   switch (e) {
     case i.GlobalDiscoveryTab.SERVERS:
       return l.NW.string(l.t["+Anbp6"]);
@@ -20,7 +20,7 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   if (e.startsWith("/discovery/applications")) return i.GlobalDiscoveryTab.APPS;
   switch (e) {
     case "/discovery/quests":

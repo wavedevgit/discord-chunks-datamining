@@ -14,15 +14,15 @@ function l(e) {
     resubmittingEnableRequest: n,
     resubmissionError: l,
     createEnableRequest: o,
-    requestRejectedNoticeText: c,
-    reapplyNoticeText: A,
+    requestRejectedNoticeText: A,
+    reapplyNoticeText: c,
     isApplicationPending: d
   } = e;
   if (null != l) return (0, r.jsx)(i.Z, {
     children: l.getAnyErrorMessage()
   });
   let u = null;
-  return d ? u = a.NW.string(a.t.OrkTBg) : null != c ? u = c : null != A && (u = A, t = a.NW.string(a.t["YKw/NT"])), null != u ? (0, r.jsx)(s.Z, {
+  return d ? u = a.NW.string(a.t.OrkTBg) : null != A ? u = A : null != c && (u = c, t = a.NW.string(a.t["YKw/NT"])), null != u ? (0, r.jsx)(s.Z, {
     notice: u,
     ctaLabel: t,
     ctaLoading: n,

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(279881),
-  c = n(510231),
-  A = n(92373),
+  A = n(510231),
+  c = n(92373),
   d = n(308083),
   u = n(388032),
   g = n(416786),
@@ -26,7 +26,7 @@ function m(e) {
   } = e, {
     options: p,
     matchSorterOptions: h
-  } = (0, c.h)(), C = i.useMemo(() => Array.from(t), [t]), b = i.useCallback(e => {
+  } = (0, A.h)(), C = i.useMemo(() => Array.from(t), [t]), b = i.useCallback(e => {
     !(e.length < o) && s(new Set(e))
   }, [o, s]), v = i.useCallback(e => {
     if (n) return;
@@ -83,7 +83,7 @@ function m(e) {
                 }
                 return e
               }({}, i), a = a = {
-                children: (0, r.jsx)(A.Z, {
+                children: (0, r.jsx)(c.Z, {
                   applicationId: e,
                   imageContainerClassName: t.size > o ? g.clickableGame : void 0,
                   selected: !0,
@@ -115,13 +115,13 @@ function p(e) {
     onUpdateGames: s
   } = e, {
     topGames: a,
-    tryFetchTopGames: c
+    tryFetchTopGames: A
   } = (0, o.I)(), d = a.get(t), [f, m] = i.useState(!1);
   i.useEffect(() => {
-    m(!0), c(t).finally(() => {
+    m(!0), A(t).finally(() => {
       m(!1)
     })
-  }, [t, c]);
+  }, [t, A]);
   let p = i.useMemo(() => null == d ? [] : Object.keys(d).sort((e, t) => d[t].score - d[e].score), [d]),
     h = i.useCallback(e => {
       let t = new Set(n);
@@ -140,7 +140,7 @@ function p(e) {
         children: u.NW.string(u.t["0wEQQ0"])
       }), (0, r.jsx)("div", {
         className: g.gamesList,
-        children: p.map(e => (0, r.jsx)(A.Z, {
+        children: p.map(e => (0, r.jsx)(c.Z, {
           applicationId: e,
           imageContainerClassName: g.clickableGame,
           selected: n.has(e),
@@ -157,8 +157,8 @@ let h = e => {
     onUpdateGames: i,
     gameApplicationIds: s,
     minGames: o = 1,
-    error: c,
-    guildId: A,
+    error: A,
+    guildId: c,
     includeSuggestedGames: d
   } = e, u = s.size <= o;
   return (0, r.jsxs)("div", {
@@ -177,9 +177,9 @@ let h = e => {
       gameApplicationIds: s,
       preventGameRemoval: u,
       onUpdateGames: i,
-      error: c
-    }), d && null != A && (0, r.jsx)(p, {
-      guildId: A,
+      error: A
+    }), d && null != c && (0, r.jsx)(p, {
+      guildId: c,
       selectedGameApplicationIds: s,
       onUpdateGames: i
     })]

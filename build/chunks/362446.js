@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => f
 });
-var r, l, o, i = n(442837),
+var r, l, i, o = n(442837),
   a = n(570140),
   s = n(981631);
 let c = {};
@@ -22,7 +22,7 @@ function d(e, t, n) {
   let r = c[e = null != e ? e : "null"];
   return null != r ? t(r) : n
 }
-class h extends(o = i.ZP.Store) {
+class h extends(i = o.ZP.Store) {
   getConnectionState(e) {
     return d(e, e => {
       let {

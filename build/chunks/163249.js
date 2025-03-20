@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(749210),
-  c = n(493544),
-  A = n(607070),
+  A = n(493544),
+  c = n(607070),
   d = n(714939),
   u = n(981631),
   g = n(388032),
@@ -156,7 +156,7 @@ function h() {
   return i.useEffect(() => {
     a.current = e
   }), i.useEffect(() => {
-    if (A.Z.useReducedMotion) return;
+    if (c.Z.useReducedMotion) return;
     let e = setTimeout(() => s((t + 1) % a.current.length), 6332);
     return () => clearTimeout(e)
   }, [t]), (0, r.jsx)("div", {
@@ -174,12 +174,12 @@ function C(e) {
     guild: t,
     everyoneRole: n,
     setEditRoleId: s
-  } = e, [a, A] = i.useState(!1), u = async () => {
-    A(!0), await o.Z.createRole(t.id), A(!1)
+  } = e, [a, c] = i.useState(!1), u = async () => {
+    c(!0), await o.Z.createRole(t.id), c(!1)
   }, m = i.useCallback(() => {
     s(n.id)
   }, [s, n.id]);
-  return (0, r.jsx)(c.NM, {
+  return (0, r.jsx)(A.NM, {
     children: (0, r.jsxs)(l.hjN, {
       className: f.section,
       title: g.NW.string(g.t.LPJmLy),

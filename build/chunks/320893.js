@@ -10,8 +10,8 @@ var i = n(780384),
   a = n(410030),
   l = n(293810),
   o = n(388032),
-  c = n(939922),
-  A = n(934961),
+  A = n(939922),
+  c = n(934961),
   d = n(568294),
   u = n(867861),
   g = n(860790),
@@ -22,7 +22,7 @@ var i = n(780384),
   C = n(431712);
 
 function b(e) {
-  return (0, i.wj)(e) ? c.revenueSharePercentageDark : c.revenueSharePercentageLight
+  return (0, i.wj)(e) ? A.revenueSharePercentageDark : A.revenueSharePercentageLight
 }
 
 function v() {
@@ -31,7 +31,7 @@ function v() {
       backgroundColor: (0, i.wj)(e) ? "#2e3638" : "var(--background-primary)"
     };
   return (0, r.jsxs)("div", {
-    className: c.earningsPreviewContainer,
+    className: A.earningsPreviewContainer,
     style: t,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.Text, {
@@ -46,7 +46,7 @@ function v() {
         children: o.NW.string(o.t.LdjJGx)
       })]
     }), (0, r.jsx)("img", {
-      className: c.roundAvatar,
+      className: A.roundAvatar,
       src: m,
       alt: o.NW.string(o.t.NgjpTE)
     })]
@@ -63,7 +63,7 @@ function x() {
       horizontal: s
     } = e;
     return (0, r.jsx)("div", {
-      className: s ? c.horizontalConnector : c.verticalConnector,
+      className: s ? A.horizontalConnector : A.verticalConnector,
       style: (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -100,35 +100,35 @@ function x() {
     })
   }
   return (0, r.jsxs)("div", {
-    className: c.avatarGridContainer,
+    className: A.avatarGridContainer,
     "aria-label": o.NW.string(o.t["P2B/0d"]),
     children: [(0, r.jsxs)("div", {
-      className: c.avatarCard,
+      className: A.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 24
       }), (0, r.jsx)("img", {
-        className: c.roundAvatar,
-        src: (0, i.wj)(e) ? A : d,
+        className: A.roundAvatar,
+        src: (0, i.wj)(e) ? c : d,
         alt: ""
       }), (0, r.jsx)(t, {
         horizontal: !0,
         length: 12
       })]
     }), (0, r.jsxs)("div", {
-      className: c.avatarCard,
+      className: A.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 24
       }), (0, r.jsx)("img", {
-        className: c.roundAvatar,
+        className: A.roundAvatar,
         src: u,
         alt: ""
       })]
     }), (0, r.jsxs)("div", {
-      className: c.avatarCard,
+      className: A.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 12
       }), (0, r.jsx)("img", {
-        className: c.roundAvatar,
+        className: A.roundAvatar,
         src: g,
         alt: ""
       }), (0, r.jsx)(t, {
@@ -136,11 +136,11 @@ function x() {
         length: 12
       })]
     }), (0, r.jsxs)("div", {
-      className: c.avatarCard,
+      className: A.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 12
       }), (0, r.jsx)("img", {
-        className: c.roundAvatar,
+        className: A.roundAvatar,
         src: f,
         alt: ""
       })]
@@ -150,7 +150,7 @@ function x() {
 
 function N() {
   return (0, r.jsxs)("div", {
-    className: c.earningBenefitCard,
+    className: A.earningBenefitCard,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
@@ -165,18 +165,18 @@ function N() {
 
 function j() {
   return (0, r.jsxs)("div", {
-    className: c.followerBenefitCard,
+    className: A.followerBenefitCard,
     children: [(0, r.jsx)(s.Text, {
-      className: c.followerBenefitText,
+      className: A.followerBenefitText,
       variant: "text-md/normal",
       color: "header-secondary",
       children: o.NW.string(o.t.qsKRUV)
     }), (0, r.jsx)("img", {
-      className: c.roleSubscriptionSocial,
+      className: A.roleSubscriptionSocial,
       src: C,
       alt: o.NW.string(o.t.yTPpra)
     }), (0, r.jsx)("img", {
-      className: c.roleSubscriptionLanyardIllo,
+      className: A.roleSubscriptionLanyardIllo,
       src: h,
       alt: o.NW.string(o.t["+gd9QU"])
     })]
@@ -186,7 +186,7 @@ function j() {
 function E() {
   let e = (0, a.ZP)();
   return (0, r.jsxs)("div", {
-    className: c.revenueShareBenefitCard,
+    className: A.revenueShareBenefitCard,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsxs)(s.X6q, {
         className: b(e),
@@ -202,7 +202,7 @@ function E() {
         children: o.NW.string(o.t.AewsXF)
       })]
     }), (0, r.jsx)("img", {
-      className: c.roleSubscriptionEarningIllo,
+      className: A.roleSubscriptionEarningIllo,
       src: p,
       alt: o.NW.string(o.t.fD9Wv7)
     })]
@@ -218,7 +218,7 @@ function I() {
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: c.creatorBenefitsContainer,
+      className: A.creatorBenefitsContainer,
       children: [(0, r.jsx)(N, {}), (0, r.jsx)(j, {}), (0, r.jsx)(E, {})]
     })]
   })

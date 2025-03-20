@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(692547),
   l = n(481060),
   o = n(225433),
-  c = n(484614),
-  A = n(852860),
+  A = n(484614),
+  c = n(852860),
   d = n(688465),
   u = n(970061),
   g = n(456268),
@@ -41,7 +41,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       guild: x.Z.getGuild(),
       guildMetadata: x.Z.getMetadata()
     }));
-    return (0, r.jsx)(A.Z, {
+    return (0, r.jsx)(c.Z, {
       submitting: n,
       onReset: () => {
         null != e && v.Z.init(e.id)
@@ -69,15 +69,15 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     var e;
     let t = i.useRef(null),
       n = (0, s.e7)([x.Z], () => x.Z.getGuild()),
-      [A, B] = i.useState(!1);
+      [c, B] = i.useState(!1);
     i.useEffect(() => {
-      A || null == n || ((0, g.le)(), (0, g.aC)(n.id), (0, g.i3)(n.id), B(!0))
-    }, [n, A]);
+      c || null == n || ((0, g.le)(), (0, g.aC)(n.id), (0, g.i3)(n.id), B(!0))
+    }, [n, c]);
     let {
       canManageGuild: D
     } = (0, s.cj)([h.Z], () => ({
       canManageGuild: h.Z.can(O.Plq.MANAGE_GUILD, n)
-    })), T = (0, s.e7)([x.Z], () => x.Z.isGuildMetadataLoaded()), S = (0, s.e7)([x.Z], () => null != n ? x.Z.getMetadata() : null), L = (0, s.e7)([x.Z], () => null != n && (null == S ? void 0 : S.isPublished) ? x.Z.getSlug() : null), [R, Q] = i.useState([!0]), [Z, W] = i.useState(!0), [k, M] = i.useState([!1]), [_, G] = i.useState([""]), F = e => {
+    })), T = (0, s.e7)([x.Z], () => x.Z.isGuildMetadataLoaded()), S = (0, s.e7)([x.Z], () => null != n ? x.Z.getMetadata() : null), L = (0, s.e7)([x.Z], () => null != n && (null == S ? void 0 : S.isPublished) ? x.Z.getSlug() : null), [R, Q] = i.useState([!0]), [W, Z] = i.useState(!0), [k, M] = i.useState([!1]), [_, G] = i.useState([""]), F = e => {
       let t = Object.entries(I.z).filter(e => !_.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
@@ -107,7 +107,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             let i = U(n);
             null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
           } else e[r] = !0
-        }), G(t), Q(e), W(e.every(e => !0 === e))
+        }), G(t), Q(e), Z(e.every(e => !0 === e))
       }
     }, [S]);
     let H = (0, s.e7)([x.Z], () => null != n ? x.Z.getErrors() : null);
@@ -149,7 +149,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         let r = [...S.socialLinks],
           i = [..._],
           s = [...R];
-        i[t] = e, r[t] = I.z[e].baseUrl, s[t] = !0, Q(s), G(i), W(s.every(e => !0 === e)), (0, g.t$)(n.id, r)
+        i[t] = e, r[t] = I.z[e].baseUrl, s[t] = !0, Q(s), G(i), Z(s.every(e => !0 === e)), (0, g.t$)(n.id, r)
       },
       K = (e, t) => {
         let r = [...S.socialLinks],
@@ -238,7 +238,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       children: [(0, r.jsx)(l.vwX, {
                         className: w.formTitle,
                         children: y.NW.string(y.t.safBZ2)
-                      }), (0, r.jsx)(c.Z, {
+                      }), (0, r.jsx)(A.Z, {
                         value: e
                       }), (0, r.jsx)(l.zxk, {
                         className: w.viewPageButton,
@@ -497,7 +497,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     children: $,
                     buttonLabel: y.NW.string(y.t.tVK6S0),
                     buttonCallback: () => X(!0),
-                    disabled: !D || !Z
+                    disabled: !D || !W
                   })
                 })]
               })

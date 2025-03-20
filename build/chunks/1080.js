@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => W
+  Z: () => Z
 }), n(47120), n(566702), n(266796), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(399606),
   o = n(481060),
-  c = n(239091),
-  A = n(749210),
+  A = n(239091),
+  c = n(749210),
   d = n(479531),
   u = n(110924),
   g = n(410030),
@@ -74,7 +74,7 @@ function L(e) {
     guild: s,
     user: a,
     ban: l,
-    hideDiscriminator: c,
+    hideDiscriminator: A,
     onClose: u
   } = e, [g, h] = i.useState(!1), [C, b] = i.useState(null), {
     analyticsLocations: v
@@ -83,7 +83,7 @@ function L(e) {
     if (null != s) {
       b(null), h(!0);
       try {
-        await A.Z.unbanUser(s.id, a.id), u(), x.default.track(w.rMx.GUILD_BAN_REMOVED, S(T({}, (0, f.hH)(s.id)), {
+        await c.Z.unbanUser(s.id, a.id), u(), x.default.track(w.rMx.GUILD_BAN_REMOVED, S(T({}, (0, f.hH)(s.id)), {
           target_user_id: a.id,
           reason: l.reason,
           location: N
@@ -104,9 +104,9 @@ function L(e) {
         className: B.userUsername,
         children: j.ZP.getUserTag(a, {
           mode: "username",
-          identifiable: c ? "never" : "always"
+          identifiable: A ? "never" : "always"
         })
-      }), c || a.isPomelo() ? null : (0, r.jsxs)(p.Z, {
+      }), A || a.isPomelo() ? null : (0, r.jsxs)(p.Z, {
         size: p.Z.Sizes.SIZE_24,
         className: B.userDiscrim,
         children: ["#", a.discriminator]
@@ -187,7 +187,7 @@ class R extends i.PureComponent {
         hideDiscriminator: n
       })))
     }), D(this, "handleContextMenu", e => {
-      (0, c.jW)(e, async () => {
+      (0, A.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
@@ -203,7 +203,7 @@ let Q = i.forwardRef(function(e, t) {
     guild: n,
     sortedBans: s,
     bans: a
-  } = e, c = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation, []), A = i.useCallback(e => {
+  } = e, A = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation, []), c = i.useCallback(e => {
     var t;
     if (null == a && 0 === e) return 60;
     let n = s[e],
@@ -220,25 +220,25 @@ let Q = i.forwardRef(function(e, t) {
     if (null != i && null != l) return (0, r.jsx)(R, {
       user: i,
       ban: l,
-      hideDiscriminator: c,
+      hideDiscriminator: A,
       guild: n
     }, i.id)
-  }, [a, n, s, c]);
+  }, [a, n, s, A]);
   return (0, r.jsx)(h.Z, {
     role: "listbox",
     listPadding: [8, 8, 8, 8],
     rowCount: s.length,
-    rowHeight: A,
+    rowHeight: c,
     renderRow: d,
     ref: t
   })
 });
 
-function Z(e) {
+function W(e) {
   let {
     guildId: t,
     storedSearchQuery: n
-  } = e, [s, a] = i.useState(null != n ? n : ""), [l, c] = i.useState(!1), d = i.useCallback(() => {
+  } = e, [s, a] = i.useState(null != n ? n : ""), [l, A] = i.useState(!1), d = i.useCallback(() => {
     E.Z.setSection(w.pNK.SAFETY), (0, O.K)(y.u.DM_AND_SPAM_PROTECTION)
   }, []), u = i.useCallback(e => {
     a(e), 0 === e.trim().length && E.Z.setSearchQuery(e)
@@ -246,15 +246,15 @@ function Z(e) {
     a(""), E.Z.setSearchQuery("")
   }, []), f = i.useCallback(async () => {
     if (0 === s.trim().length) {
-      E.Z.setSearchQuery(s), c(!1);
+      E.Z.setSearchQuery(s), A(!1);
       return
     }
     if (!l) try {
-      c(!0);
+      A(!0);
       let [e, n] = (0, C.C)(s), r = e[0];
-      E.Z.setSearchQuery(s), await A.Z.searchGuildBans(t, r, n), c(!1)
+      E.Z.setSearchQuery(s), await c.Z.searchGuildBans(t, r, n), A(!1)
     } catch (e) {
-      c(!1)
+      A(!1)
     }
   }, [t, l, s]), m = i.useCallback(e => {
     "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), f())
@@ -296,12 +296,12 @@ function Z(e) {
   }, "bans-header")
 }
 
-function W() {
+function Z() {
   var e, t;
   let {
-    guild: c,
+    guild: A,
     searchQuery: d
-  } = (0, l.e7)([I.Z], () => I.Z.getProps(), [], s.isEqual), f = null != d && d.trim().length > 0, m = (0, u.Z)(f), p = f !== m, [h] = (0, l.e7)([I.Z], () => I.Z.getBans(), [], N.Q), b = null !== (e = null == h ? void 0 : h.size) && void 0 !== e ? e : 0, x = (0, g.ZP)(), j = null !== (t = null == c ? void 0 : c.id) && void 0 !== t ? t : w.lds, E = i.useRef(null), O = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, l.e7)([I.Z], () => I.Z.getProps(), [], s.isEqual), f = null != d && d.trim().length > 0, m = (0, u.Z)(f), p = f !== m, [h] = (0, l.e7)([I.Z], () => I.Z.getBans(), [], N.Q), b = null !== (e = null == h ? void 0 : h.size) && void 0 !== e ? e : 0, x = (0, g.ZP)(), j = null !== (t = null == A ? void 0 : A.id) && void 0 !== t ? t : w.lds, E = i.useRef(null), O = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) return !1;
     let [
       [n], r
@@ -315,7 +315,7 @@ function W() {
       null != e && O(t)(e) && r.push(e)
     }
     return r
-  }, [O]), D = i.useMemo(() => y(h, d, b), [h, y, d, b]), L = null != h, R = D.length % 1e3 == 0 && D.length > 0 && L, W = 0 === D.length, [k, M] = i.useState({
+  }, [O]), D = i.useMemo(() => y(h, d, b), [h, y, d, b]), L = null != h, R = D.length % 1e3 == 0 && D.length > 0 && L, Z = 0 === D.length, [k, M] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
@@ -325,7 +325,7 @@ function W() {
     }))
   }, [p, k.currentPage]);
   let _ = i.useCallback(e => {
-      A.Z.fetchGuildBansBatch(j, 1e3, e)
+      c.Z.fetchGuildBansBatch(j, 1e3, e)
     }, [j]),
     G = i.useMemo(() => a().chunk(D, k.pageSize), [k.pageSize, D]),
     F = i.useCallback(e => {
@@ -342,19 +342,19 @@ function W() {
     var e;
     return null !== (e = G[k.currentPage - 1]) && void 0 !== e ? e : []
   }, [G, k.currentPage]);
-  return null == c ? null : (0, r.jsxs)("div", {
+  return null == A ? null : (0, r.jsxs)("div", {
     className: B.container,
-    children: [(0, r.jsx)(Z, {
+    children: [(0, r.jsx)(W, {
       guildId: j,
       storedSearchQuery: d
     }), (0, r.jsxs)("div", {
       className: B.scrollerContainer,
-      children: [!W && (0, r.jsx)(Q, {
-        guild: c,
+      children: [!Z && (0, r.jsx)(Q, {
+        guild: A,
         bans: h,
         sortedBans: H,
         ref: E
-      }), !R && W && (0, r.jsxs)(o.ubH, {
+      }), !R && Z && (0, r.jsxs)(o.ubH, {
         theme: x,
         className: B.emptyState,
         children: [(0, r.jsx)(o.oxh, {

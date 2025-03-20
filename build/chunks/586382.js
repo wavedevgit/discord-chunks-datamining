@@ -11,15 +11,15 @@ var r = n(200651),
   a = n(807582),
   l = n(949640),
   o = n(981631),
-  c = n(30513),
-  A = n(531489);
+  A = n(30513),
+  c = n(531489);
 
 function d(e) {
   let {
     guild: t,
     guildFeature: n,
     analyticsSection: o,
-    analyticsObject: c,
+    analyticsObject: A,
     getPerks: d,
     targetPremiumGuildTier: u
   } = e, {
@@ -29,15 +29,15 @@ function d(e) {
       guild: t,
       analyticsLocations: g,
       analyticsSection: o,
-      analyticsObject: c,
+      analyticsObject: A,
       perks: d(),
       targetPremiumGuildTier: u
     })
-  }, [g, c, o, t, d, u]);
+  }, [g, A, o, t, d, u]);
   return (0, r.jsx)(a.Z, {
     guild: t,
     guildFeature: n,
-    className: A.guildFeatureAvailabilityIndicator,
+    className: c.guildFeatureAvailabilityIndicator,
     onClick: f
   })
 }
@@ -51,7 +51,7 @@ function u(e) {
     guildFeature: o.oNc.BANNER,
     analyticsSection: o.jXE.GUILD_BANNER,
     analyticsObject: o.qAy.BADGE,
-    getPerks: c.XO
+    getPerks: A.XO
   })
 }
 
@@ -64,7 +64,7 @@ function g(e) {
     guildFeature: o.oNc.INVITE_SPLASH,
     analyticsSection: o.jXE.GUILD_INVITE_BACKGROUND,
     analyticsObject: o.qAy.BADGE,
-    getPerks: c.o9
+    getPerks: A.o9
   })
 }
 
@@ -77,7 +77,7 @@ function f(e) {
     guildFeature: o.oNc.VANITY_URL,
     analyticsSection: o.jXE.GUILD_SETTINGS_VANITY_URL,
     analyticsObject: o.qAy.BADGE,
-    getPerks: c.WW,
+    getPerks: A.WW,
     targetPremiumGuildTier: o.Eu4.TIER_3
   })
 }

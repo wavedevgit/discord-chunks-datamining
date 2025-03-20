@@ -464,8 +464,7 @@ function K() {
       onComplete: Y
     })
   }
-  let t = (0, b.fq)(),
-    n = (0, u.bWb)().enabled ? 24 : 18;
+  let t = (0, b.fq)();
   return (0, r.jsxs)("div", {
     className: U.connectionsContainer,
     children: [t.slice(0, 10).map(e => (0, r.jsx)(h.Z, {
@@ -476,24 +475,22 @@ function K() {
       text: M.NW.string(M.t.QqTz8f),
       children: t => {
         let {
-          onMouseEnter: i,
-          onMouseLeave: s
+          onMouseEnter: n,
+          onMouseLeave: i
         } = t;
         return (0, r.jsx)("div", {
           className: a()(U.accountAddWrapper, U.__invalid_accountButton),
           children: (0, r.jsx)(u.tEY, {
             children: (0, r.jsx)("button", {
-              onMouseEnter: i,
-              onMouseLeave: s,
+              onMouseEnter: n,
+              onMouseLeave: i,
               className: a()(U.accountAddInner, U.accountButtonInner),
               type: "button",
               onClick: e,
               "aria-label": M.NW.string(M.t.Zhcj9f),
               children: (0, r.jsx)(u.Fbu, {
-                size: "custom",
                 color: "currentColor",
-                height: n,
-                width: n,
+                size: "md",
                 "aria-label": M.NW.string(M.t.QqTz8f)
               })
             })

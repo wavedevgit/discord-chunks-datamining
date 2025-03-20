@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(596454),
-  c = n(225433),
-  A = n(318766),
+  A = n(225433),
+  c = n(318766),
   d = n(907040),
   u = n(273039),
   g = n(176354),
@@ -68,14 +68,14 @@ function x(e) {
           emojiName: n
         })
       };
-    return p ? (0, r.jsx)(A.Z, {
+    return p ? (0, r.jsx)(c.Z, {
       tabIndex: -1,
       active: !1,
       renderButtonContents: t
     }) : (0, r.jsx)(u.Z, {
       className: h.emojiWrapper,
       buttonClassName: h.removeButton,
-      look: c.Z.Looks.FILLED,
+      look: A.Z.Looks.FILLED,
       hasSetEmoji: null != e && null != e.name,
       onClick: C,
       children: (0, r.jsx)(l.yRy, {
@@ -95,7 +95,7 @@ function x(e) {
           let {
             isShown: a
           } = n;
-          return (0, r.jsx)(A.Z, (i = b({}, e), s = s = {
+          return (0, r.jsx)(c.Z, (i = b({}, e), s = s = {
             tabIndex: 0,
             active: a,
             renderButtonContents: t

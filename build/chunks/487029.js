@@ -1,11 +1,11 @@
 /** Chunk was on 38542 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(47120), n(230036), n(653041);
 var r = n(200651),
   l = n(192379),
-  o = n(990547),
-  i = n(442837),
+  i = n(990547),
+  o = n(442837),
   a = n(100527),
   s = n(906732),
   c = n(213609),
@@ -15,52 +15,52 @@ var r = n(200651),
   f = n(208049),
   p = n(763296),
   g = n(242291),
-  y = n(174470),
-  v = n(549771),
-  O = n(964398),
-  b = n(409673),
-  N = n(710111),
+  v = n(174470),
+  N = n(549771),
+  y = n(964398),
+  O = n(409673),
+  x = n(710111),
   m = n(749416);
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     channel: n,
-    width: x,
-    height: C,
-    keepOpen: E,
+    width: b,
+    height: E,
+    keepOpen: C,
     interactive: j = !0,
     analyticsSource: I,
-    onClose: P
-  } = e, S = function(e) {
-    let [t, n] = (0, i.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
+    onClose: S
+  } = e, P = function(e) {
+    let [t, n] = (0, o.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
-        l = [...e, N.X8],
-        o = (e, l) => {
-          var o, i;
-          for (let a of null !== (i = null === (o = t.get(e)) || void 0 === o ? void 0 : o.sort((e, t) => h.default.compare(e.soundId, t.soundId))) && void 0 !== i ? i : []) {
+        l = [...e, x.X8],
+        i = (e, l) => {
+          var i, o;
+          for (let a of null !== (o = null === (i = t.get(e)) || void 0 === i ? void 0 : i.sort((e, t) => h.default.compare(e.soundId, t.soundId))) && void 0 !== o ? o : []) {
             let e = n.has(a.soundId);
             (e && l || !e && !l) && a.available && r.push(a)
           }
         };
-      return l.forEach(e => o(e, !0)), l.forEach(e => o(e, !1)), r
+      return l.forEach(e => i(e, !0)), l.forEach(e => i(e, !1)), r
     }, [t, n, e])
-  }((0, v.h)(n, !0)), w = (0, y.j)(), T = l.useRef(null), [Z, _] = l.useState(void 0), R = (0, i.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+  }((0, N.h)(n, !0)), T = (0, v.j)(), w = l.useRef(null), [Z, _] = l.useState(void 0), R = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: A
   } = (0, s.ZP)(a.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
-    (0, g.GN)(e, n.id, A), P()
-  }, [A, n.id, P]);
+    (0, g.GN)(e, n.id, A), S()
+  }, [A, n.id, S]);
   l.useEffect(() => {
     f.w(), u.DZ.loadIfNecessary()
   }, []), l.useEffect(() => {
-    0 === S.length && 0 === w.length && P()
-  }, [S.length, w, P]), l.useEffect(() => () => {
-    let e = T.current;
-    E || null == e || D(e)
-  }, [E, D]), (0, c.Z)({
-    type: o.ImpressionTypes.POPOUT,
-    name: o.ImpressionNames.SOUNDBOARD_POPOUT,
+    0 === P.length && 0 === T.length && S()
+  }, [P.length, T, S]), l.useEffect(() => () => {
+    let e = w.current;
+    C || null == e || D(e)
+  }, [C, D]), (0, c.Z)({
+    type: i.ImpressionTypes.POPOUT,
+    name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
       source: I,
       guild_id: t,
@@ -70,42 +70,42 @@ function x(e) {
     disableTrack: !j
   });
   let W = l.useCallback(e => {
-      T.current = e, _(null == e ? void 0 : e.soundId)
+      w.current = e, _(null == e ? void 0 : e.soundId)
     }, []),
     k = l.useCallback(e => {
       if (null == e) {
         W(null);
         return
       }
-      let t = S[e];
+      let t = P[e];
       null != t && W(t)
-    }, [W, S]),
-    M = l.useCallback(e => {
+    }, [W, P]),
+    B = l.useCallback(e => {
       if (null == e) return;
-      let t = S[e];
+      let t = P[e];
       null != t && D(t)
-    }, [S, D]),
-    B = l.useMemo(() => S.map(e => (0, r.jsx)(b.ZP, {
+    }, [P, D]),
+    M = l.useMemo(() => P.map(e => (0, r.jsx)(O.ZP, {
       interactive: j,
       className: m.soundButton,
       sound: e,
       focused: Z === e.soundId,
       channel: n
-    }, e.soundId)), [Z, n, j, S]);
-  return 0 === S.length ? null : (0, r.jsx)(s.Gt, {
+    }, e.soundId)), [Z, n, j, P]);
+  return 0 === P.length ? null : (0, r.jsx)(s.Gt, {
     value: A,
-    children: (0, r.jsx)(O.Z, {
-      wheelWidth: x,
-      wheelHeight: C,
+    children: (0, r.jsx)(y.Z, {
+      wheelWidth: b,
+      wheelHeight: E,
       itemWidth: 96,
       itemHeight: 52,
-      showDeadZoneIndicator: !E,
+      showDeadZoneIndicator: !C,
       activeItem: Z,
       onItemSelect: k,
-      onItemAction: M,
-      onClose: P,
+      onItemAction: B,
+      onClose: S,
       interactive: j,
-      children: B
+      children: M
     })
   })
 }

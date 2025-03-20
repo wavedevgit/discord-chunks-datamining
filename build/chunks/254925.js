@@ -11,8 +11,8 @@ var r = n(200651),
   a = n(481060),
   l = n(314852),
   o = n(65361),
-  c = n(434404),
-  A = n(999382),
+  A = n(434404),
+  c = n(999382),
   d = n(835887),
   u = n(388661),
   g = n(500230),
@@ -66,8 +66,8 @@ let v = [p.ZD.LEAF, p.ZD.SWORD, p.ZD.HEART, p.ZD.FIRE, p.ZD.WATER_DROP, p.ZD.SKU
   N = function() {
     var e, t, n, p;
     (0, C.j1)(h.M);
-    let N = (0, s.e7)([A.Z], () => A.Z.getGuild()),
-      j = (0, s.e7)([A.Z], () => A.Z.getGuildProfile()),
+    let N = (0, s.e7)([c.Z], () => c.Z.getGuild()),
+      j = (0, s.e7)([c.Z], () => c.Z.getGuildProfile()),
       {
         fetchGuildProfile: E,
         fetchStatus: I
@@ -133,13 +133,13 @@ let v = [p.ZD.LEAF, p.ZD.SWORD, p.ZD.HEART, p.ZD.FIRE, p.ZD.WATER_DROP, p.ZD.SKU
               onChange: () => {
                 if (O) {
                   var e;
-                  c.Z.updateGuildProfile(N.id, {
+                  A.Z.updateGuildProfile(N.id, {
                     tag: null !== (e = j.tag) && void 0 !== e ? e : "",
                     badge: y,
                     badgeColorPrimary: w,
                     badgeColorSecondary: P
                   })
-                } else c.Z.updateGuildProfile(N.id, {
+                } else A.Z.updateGuildProfile(N.id, {
                   tag: null
                 })
               }
@@ -172,7 +172,7 @@ let v = [p.ZD.LEAF, p.ZD.SWORD, p.ZD.HEART, p.ZD.FIRE, p.ZD.WATER_DROP, p.ZD.SKU
         className: b.memberApplicationsInfo,
         children: C.NW.format(h.Z.WUACVF, {
           onClick: () => {
-            c.Z.setSection(m.pNK.ACCESS)
+            A.Z.setSection(m.pNK.ACCESS)
           }
         })
       }), O ? (0, r.jsx)(a.nuw, {

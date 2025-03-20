@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(525654),
   o = n.n(l),
-  c = n(442837),
-  A = n(846519),
+  A = n(442837),
+  c = n(846519),
   d = n(481060),
   u = n(232567),
   g = n(596454),
@@ -56,7 +56,7 @@ function Q(e) {
   return e
 }
 
-function Z(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,10 +68,10 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = w.isPlatformEmbedded || "Safari" !== o().name && "Firefox" !== o().name;
+let Z = w.isPlatformEmbedded || "Safari" !== o().name && "Firefox" !== o().name;
 
 function k() {
-  let e = (0, c.e7)([B.Z], () => B.Z.getProps().guild);
+  let e = (0, A.e7)([B.Z], () => B.Z.getProps().guild);
   return null == e ? null : (0, r.jsx)(d.hjN, {
     tag: d.RB0.H1,
     title: L.NW.string(L.t.OWQNYm),
@@ -149,16 +149,16 @@ let G = e => {
       }
       return i
     }(e, ["renderPopoutBody", "renderPopoutChildren"]);
-    let [a, l] = i.useState(!1), o = i.useMemo(() => new A.V7, []), c = i.useCallback(() => {
+    let [a, l] = i.useState(!1), o = i.useMemo(() => new c.V7, []), A = i.useCallback(() => {
       o.stop(), l(!0)
     }, [o]), u = i.useCallback(() => {
       o.start(200, () => l(!1))
     }, [o]);
-    return (0, r.jsx)(d.yRy, Z(Q({
+    return (0, r.jsx)(d.yRy, W(Q({
       shouldShow: a,
       renderPopout: e => (0, r.jsx)(d.VqE, {
         className: R.browserUnsupportedDialog,
-        onMouseEnter: c,
+        onMouseEnter: A,
         onMouseLeave: u,
         children: t(e)
       })
@@ -172,7 +172,7 @@ let G = e => {
       color: "header-secondary",
       children: L.NW.format(L.t.bGXPVl, {})
     }),
-    renderPopoutChildren: e => (0, r.jsx)(d.zxk, Z(Q({}, e), {
+    renderPopoutChildren: e => (0, r.jsx)(d.zxk, W(Q({}, e), {
       disabled: !0,
       children: L.NW.string(L.t["/uNYPD"])
     }))
@@ -181,12 +181,12 @@ let G = e => {
 function U(e) {
   let {
     guild: t
-  } = e, [s, a] = (0, c.Wu)([C.Z], () => {
+  } = e, [s, a] = (0, A.Wu)([C.Z], () => {
     var e;
     return [null !== (e = C.Z.getSoundsForGuild(t.id)) && void 0 !== e ? e : S.Hy, C.Z.isFetchingSounds() || C.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: l
-  } = (0, p.XJ)(t), o = i.useRef(null), A = (0, f.ZP)(), u = t.premiumTier, g = (0, y.yw)(t, s, u);
+  } = (0, p.XJ)(t), o = i.useRef(null), c = (0, f.ZP)(), u = t.premiumTier, g = (0, y.yw)(t, s, u);
   i.useEffect(() => {
     (0, h.w)()
   }, []);
@@ -203,13 +203,13 @@ function U(e) {
       var e;
       null === (e = o.current) || void 0 === e || e.pause()
     }, []), a) return (0, r.jsx)(d.$jN, {});
-  let j = W ? (0, r.jsx)(d.zxk, {
+  let j = Z ? (0, r.jsx)(d.zxk, {
     onClick: function() {
       (0, d.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
-        return n => (0, r.jsx)(e, Z(Q({}, n), {
+        return n => (0, r.jsx)(e, W(Q({}, n), {
           guildId: t.id
         }))
       })
@@ -229,7 +229,7 @@ function U(e) {
         children: !x && j
       })]
     }), x ? (0, r.jsxs)(d.ubH, {
-      theme: A,
+      theme: c,
       className: R.empty,
       children: [(0, r.jsx)(d.oxh, {
         darkSrc: n(458601),
@@ -286,20 +286,20 @@ function H(e) {
     onPlaySound: l,
     guild: o
   } = e, {
-    soundId: A,
+    soundId: c,
     name: f,
     user: m,
     userId: C,
     emojiId: b,
     emojiName: v
-  } = t, j = (0, c.e7)([E.default], () => null != m ? m : E.default.getUser(C), [C, m]), {
+  } = t, j = (0, A.e7)([E.default], () => null != m ? m : E.default.getUser(C), [C, m]), {
     canManageGuildExpression: I
   } = (0, p.XJ)(o), y = i.useMemo(() => I(t), [t, I]), w = null != b || null != v, [B, D] = i.useState(!1), S = (0, x.z)(t, o.id);
-  async function W() {
+  async function Z() {
     if (!B) {
       D(!0);
       try {
-        await (0, h.AA)(o.id, A)
+        await (0, h.AA)(o.id, c)
       } catch (e) {
         D(!1)
       }
@@ -370,7 +370,7 @@ function H(e) {
             let {
               default: e
             } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
-            return n => (0, r.jsx)(e, Z(Q({}, n), {
+            return n => (0, r.jsx)(e, W(Q({}, n), {
               guildId: o.id,
               existingSound: t
             }))
@@ -385,13 +385,13 @@ function H(e) {
       }), (0, r.jsx)(d.P3F, {
         className: R.soundRemove,
         onClick: function(e) {
-          e.stopPropagation(), (0, d.h7j)(e => (0, r.jsx)(d.ConfirmModal, Z(Q({
+          e.stopPropagation(), (0, d.h7j)(e => (0, r.jsx)(d.ConfirmModal, W(Q({
             header: L.NW.formatToPlainString(L.t["PR/VbG"], {
               soundName: f
             }),
             confirmText: L.NW.string(L.t.oyYWHB),
             cancelText: L.NW.string(L.t["ETE/oK"]),
-            onConfirm: W
+            onConfirm: Z
           }, e), {
             children: (0, r.jsx)(d.Text, {
               variant: "text-md/normal",

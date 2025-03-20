@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(710344),
   o = n(734893),
-  c = n(8426),
-  A = n(969632),
+  A = n(8426),
+  c = n(969632),
   d = n(922112),
   u = n(388032),
   g = n(668813);
@@ -50,19 +50,19 @@ let p = [],
   h = function(e) {
     let {
       guildId: t
-    } = e, h = (0, s.Wu)([A.Z], () => {
+    } = e, h = (0, s.Wu)([c.Z], () => {
       var e;
-      return null !== (e = A.Z.getSettings().resourceChannels) && void 0 !== e ? e : p
+      return null !== (e = c.Z.getSettings().resourceChannels) && void 0 !== e ? e : p
     }), C = i.useMemo(() => h.map(e => m(f({}, e), {
       id: e.channelId
     })), [h]), {
       handleDragStart: b,
       handleDragReset: v,
       handleDragComplete: x
-    } = (0, l.Z)(C, c.lq), N = i.useCallback((e, n) => {
-      let r = A.Z.getSettings();
-      null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
-        (0, c.mM)(t, e.channelId, n)
+    } = (0, l.Z)(C, A.lq), N = i.useCallback((e, n) => {
+      let r = c.Z.getSettings();
+      null != r && ((0, A.r2)(e), (0, A.oo)(t, r).then(() => {
+        (0, A.mM)(t, e.channelId, n)
       }))
     }, [t]), j = i.useCallback(() => {
       if (null != t) return (0, a.ZDy)(async () => {
@@ -71,7 +71,7 @@ let p = [],
         } = await n.e("84725").then(n.bind(n, 462499));
         return n => (0, r.jsx)(e, m(f({}, n), {
           guildId: t,
-          onSave: c.r2,
+          onSave: A.r2,
           onIconUpload: N
         }))
       })

@@ -9,8 +9,8 @@ var r = n(192379),
   a = n(594174),
   l = n(63063),
   o = n(223892),
-  c = n(58259),
-  A = n(158992),
+  A = n(58259),
+  c = n(158992),
   d = n(159361),
   u = n(377176),
   g = n(981631),
@@ -30,13 +30,13 @@ function m(e) {
       loading: b,
       createEnableRequest: v,
       submittedRequest: x
-    } = (0, c.Z)(null == e ? void 0 : e.id),
+    } = (0, A.Z)(null == e ? void 0 : e.id),
     {
       loading: N,
       error: j,
       refresh: E,
       eligibility: I
-    } = (0, A.Z)(null == e ? void 0 : e.id),
+    } = (0, c.Z)(null == e ? void 0 : e.id),
     {
       isApplicationRejected: O,
       requestCooldownDuration: y

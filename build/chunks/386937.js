@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(392711),
   o = n.n(l),
-  c = n(442837),
-  A = n(477690),
+  A = n(442837),
+  c = n(477690),
   d = n(481060),
   u = n(179360),
   g = n(129861),
@@ -60,7 +60,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = (0, x.Mg)(A.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
+let w = (0, x.Mg)(c.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
 class P extends i.Component {
   componentDidMount() {
     this.measure();
@@ -251,7 +251,7 @@ class P extends i.Component {
     }, n))
   }
 }
-let B = c.ZP.connectStores([f.Z, b.default, h.Z, C.ZP], () => {
+let B = A.ZP.connectStores([f.Z, b.default, h.Z, C.ZP], () => {
   let e = f.Z.getGuildId(),
     t = null != e ? h.Z.getAppliedGuildBoostsForGuild(e) : null,
     n = o()(null != t ? t : []).uniqBy(e => e.userId),

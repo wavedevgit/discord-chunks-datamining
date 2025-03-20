@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(392711),
   o = n.n(l),
-  c = n(442837),
-  A = n(780384),
+  A = n(442837),
+  c = n(780384),
   d = n(481060),
   u = n(605436),
   g = n(663993),
@@ -62,7 +62,7 @@ function Q(e) {
   })
 }
 
-function Z(e) {
+function W(e) {
   let {
     role: t,
     disabled: n
@@ -88,7 +88,7 @@ function Z(e) {
   })
 }
 
-function W(e) {
+function Z(e) {
   var t, s;
   let {
     role: a,
@@ -134,7 +134,7 @@ function W(e) {
       discriminator: "0000",
       bot: !1
     }), r.author.getAvatarURL = () => n(52008), r
-  }, [s])), c = {
+  }, [s])), A = {
     nick: o.author.username,
     colorString: null !== (t = a.colorString) && void 0 !== t ? t : void 0
   }, u = {
@@ -156,9 +156,9 @@ function W(e) {
           children: (0, r.jsx)("div", {
             className: B.messageContainer,
             children: (0, r.jsx)(C.Z, {
-              author: c,
+              author: A,
               message: o,
-              roleIcon: null != v ? v : (0, A.ap)(e) ? g : u,
+              roleIcon: null != v ? v : (0, c.ap)(e) ? g : u,
               isGroupStart: !0
             })
           })
@@ -199,7 +199,7 @@ function M(e) {
     role: n,
     locked: i,
     setSelectedSection: s
-  } = e, l = (0, u.pM)(null == t ? void 0 : t.id, n.id), o = i || l, A = (0, c.e7)([v.Z], () => v.Z.canImpersonateRole(t, n)), {
+  } = e, l = (0, u.pM)(null == t ? void 0 : t.id, n.id), o = i || l, c = (0, A.e7)([v.Z], () => v.Z.canImpersonateRole(t, n)), {
     headerHeight: g,
     headerRef: f
   } = (0, N.Z)(0), {
@@ -235,14 +235,14 @@ function M(e) {
         })
       }), (0, r.jsx)(d.$i$, {
         className: B.divider
-      }), (0, r.jsx)(Z, {
+      }), (0, r.jsx)(W, {
         role: n,
         disabled: o
       }), (0, r.jsx)(j.Z, {
         guild: t,
         disabled: o,
         role: n
-      }), (0, r.jsx)(W, {
+      }), (0, r.jsx)(Z, {
         role: n,
         guildId: t.id
       }), (0, r.jsx)(d.$i$, {
@@ -250,7 +250,7 @@ function M(e) {
       }), (0, r.jsx)(k, {
         role: n,
         disabled: o
-      }), A ? (0, r.jsxs)(r.Fragment, {
+      }), c ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.$i$, {
           className: B.divider
         }), (0, r.jsx)(I.L, {

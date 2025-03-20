@@ -9,9 +9,9 @@ var r = n(200651),
   a = n.n(s),
   l = n(600164),
   o = n(334442),
-  c = n(802138);
+  A = n(802138);
 
-function A(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ class d extends i.PureComponent {
       placeholder: n,
       error: i,
       className: s,
-      maxLength: A,
+      maxLength: c,
       autoFocus: d,
       prefix: u,
       disabled: g
@@ -46,13 +46,13 @@ class d extends i.PureComponent {
         className: o.prefixInputPrefix,
         children: u
       }), (0, r.jsx)(l.Z.Child, {
-        className: c.marginReset,
+        className: A.marginReset,
         children: (0, r.jsx)("input", {
           ref: this.setInputRef,
           className: o.prefixInputInput,
           value: t,
           placeholder: n,
-          maxLength: A,
+          maxLength: c,
           onChange: this.handleChange,
           onFocus: this.handleFocus,
           onBlur: this.handleBlur,
@@ -63,22 +63,22 @@ class d extends i.PureComponent {
     })
   }
   constructor(e) {
-    super(e), A(this, "_inputRef", void 0), A(this, "setInputRef", e => {
+    super(e), c(this, "_inputRef", void 0), c(this, "setInputRef", e => {
       this._inputRef = e
-    }), A(this, "handleChange", e => {
+    }), c(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;
       t(e.currentTarget.value)
-    }), A(this, "handleFocus", () => {
+    }), c(this, "handleFocus", () => {
       this.setState({
         focused: !0
       })
-    }), A(this, "handleBlur", () => {
+    }), c(this, "handleBlur", () => {
       this.setState({
         focused: !1
       })
-    }), A(this, "handleFocusInput", () => {
+    }), c(this, "handleFocusInput", () => {
       null != this._inputRef && this._inputRef.focus()
     });
     let {

@@ -10,8 +10,8 @@ n(674180);
 var a = n(723047),
   l = n(727843),
   o = n(290348),
-  c = n(764163),
-  A = n(861345),
+  A = n(764163),
+  c = n(861345),
   d = n(293810),
   u = n(388032);
 
@@ -71,10 +71,10 @@ function m() {
   }
   let C = (0, a.mY)();
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(A.p, {
+    children: [(0, r.jsx)(c.p, {
       benefits: n,
       onEdit: function(e) {
-        (0, s.h7j)(i => (0, r.jsx)(c.x3, f(g({}, i), {
+        (0, s.h7j)(i => (0, r.jsx)(A.x3, f(g({}, i), {
           guildId: t,
           omitChannelIds: p,
           initialData: n[e],
@@ -93,9 +93,9 @@ function m() {
       guildId: t
     }), n.length > 0 && (0, r.jsx)(s.LZC, {
       size: 8
-    }), (0, r.jsx)(A.s, {
+    }), (0, r.jsx)(c.s, {
       onClick: function() {
-        (0, s.h7j)(e => (0, r.jsx)(c.x3, f(g({}, e), {
+        (0, s.h7j)(e => (0, r.jsx)(A.x3, f(g({}, e), {
           guildId: t,
           omitChannelIds: p,
           onSave: e => h(e)

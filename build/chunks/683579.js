@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(862085),
   l = n(769998),
   o = n(671066),
-  c = n(273504),
-  A = n(15470);
+  A = n(273504),
+  c = n(15470);
 
 function d(e) {
   let {
@@ -22,24 +22,24 @@ function d(e) {
   } = e, o = (0, s.c)(t.type, t, n);
   if (null == o) return null;
   let {
-    headerText: c,
+    headerText: A,
     descriptionText: d,
     icon: u
   } = o;
   return (0, r.jsxs)("div", {
-    className: A.actionContainer,
+    className: c.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: A.actionIconContainer,
+      className: c.actionIconContainer,
       children: (0, r.jsx)(u, {
         size: "md",
         color: "currentColor",
-        className: A.actionIcon
+        className: c.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: A.actionTextContainer,
+      className: c.actionTextContainer,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-sm/semibold",
-        children: c
+        children: A
       }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
@@ -51,7 +51,7 @@ function d(e) {
         type: i.XZJ.Types.INVERTED,
         value: a,
         onChange: () => l(!1),
-        className: A.__invalid_actionCheckbox
+        className: c.__invalid_actionCheckbox
       })
     })]
   })
@@ -63,30 +63,30 @@ function u(e) {
     guildId: n,
     triggerType: i,
     toggled: s,
-    onToggleAction: A
+    onToggleAction: c
   } = e;
   switch (t.type) {
-    case c.jj.FLAG_TO_CHANNEL:
+    case A.jj.FLAG_TO_CHANNEL:
       return (0, r.jsx)(o.Z, {
         action: t,
         triggerType: i,
         toggled: s,
-        onToggleAction: A
+        onToggleAction: c
       });
-    case c.jj.USER_COMMUNICATION_DISABLED:
+    case A.jj.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(l.Z, {
         action: t,
         guildId: n,
         triggerType: i,
         toggled: s,
-        onToggleAction: A
+        onToggleAction: c
       });
-    case c.jj.BLOCK_MESSAGE:
+    case A.jj.BLOCK_MESSAGE:
       return (0, r.jsx)(a.Z, {
         action: t,
         triggerType: i,
         toggled: s,
-        onToggleAction: A
+        onToggleAction: c
       });
     default:
       return (0, r.jsx)(d, {
@@ -94,7 +94,7 @@ function u(e) {
         guildId: n,
         toggled: s,
         triggerType: i,
-        onToggleAction: A
+        onToggleAction: c
       })
   }
 }

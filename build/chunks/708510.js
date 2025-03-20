@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(456268),
   o = n(863249),
-  c = n(999382),
-  A = n(209054),
+  A = n(999382),
+  c = n(209054),
   d = n(96788),
   u = n(217472),
   g = n(202905),
@@ -27,7 +27,7 @@ function x(e) {
     pendingState: t
   } = e, n = i.useRef(!1), s = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, A.k)(e), (0, d.V)(e), (0, l.le)(), (0, l.aC)(e)
+      await (0, c.k)(e), (0, d.V)(e), (0, l.le)(), (0, l.aC)(e)
     } finally {
       n.current = !0
     }
@@ -53,7 +53,7 @@ function x(e) {
 }
 
 function N() {
-  let e = (0, s.e7)([c.Z], () => c.Z.getProps().guild),
+  let e = (0, s.e7)([A.Z], () => A.Z.getProps().guild),
     t = (0, s.e7)([p.Z], () => p.Z.pendingState);
   i.useEffect(() => {
     (null == e ? void 0 : e.id) != null && o.ZP.fetchVerificationForm(e.id)

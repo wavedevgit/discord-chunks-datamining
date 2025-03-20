@@ -6,9 +6,9 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140),
-  a = n(317770);
-let o = "CONNECTIONS_GRID_MODAL_KEY";
-class s extends a.Z {
+  o = n(317770);
+let a = "CONNECTIONS_GRID_MODAL_KEY";
+class s extends o.Z {
   _initialize() {
     l.Z.subscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), l.Z.subscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
   }
@@ -19,11 +19,11 @@ class s extends a.Z {
     let {
       onComplete: t,
       excludedPlatformTypes: l,
-      includedPlatformTypes: a,
+      includedPlatformTypes: o,
       integrations: s,
       onCompleteApplication: c
     } = e;
-    (0, i.nfh)(o) || (0, i.ZDy)(async () => {
+    (0, i.nfh)(a) || (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("28538").then(n.bind(n, 51299));
@@ -47,14 +47,14 @@ class s extends a.Z {
       }({
         onComplete: t,
         excludedPlatformTypes: l,
-        includedPlatformTypes: a,
+        includedPlatformTypes: o,
         integrations: s,
         onCompleteApplication: c
       }, n))
     })
   }
   handleHide() {
-    (0, i.Mr3)(o)
+    (0, i.Mr3)(a)
   }
 }
 let c = new s

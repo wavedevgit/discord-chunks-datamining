@@ -1,12 +1,12 @@
 /** Chunk was on 38542 **/
 n.d(t, {
-  Z: () => o
+  Z: () => i
 }), n(301563);
 var r = n(981631),
   l = n(388032);
-let o = {
+let i = {
   getStatus: function(e) {
-    let t, n, o = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t, n, i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     switch (e) {
       case r.hes.CONNECTING:
         t = r.QKv.CONNECTING, n = l.NW.string(l.t.MzW9sL);
@@ -18,7 +18,7 @@ let o = {
         t = r.QKv.CONNECTING, n = l.NW.string(l.t.xEbu0d);
         break;
       case r.hes.RTC_CONNECTED:
-        t = r.QKv.CONNECTED, n = o ? l.NW.string(l.t.HtVOdX) : l.NW.string(l.t["daXg4+"]);
+        t = r.QKv.CONNECTED, n = i ? l.NW.string(l.t.HtVOdX) : l.NW.string(l.t["daXg4+"]);
         break;
       case r.hes.RTC_CONNECTING:
         t = r.QKv.CONNECTING, n = l.NW.string(l.t.Gp51dn);

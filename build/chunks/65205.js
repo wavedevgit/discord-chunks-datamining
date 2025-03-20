@@ -7,7 +7,7 @@ function l(e, t, n, l) {
   return r(e, n, l) !== r(t, n, l) && r(e, t, n) !== r(e, t, l)
 }
 
-function o(e, t, n) {
+function i(e, t, n) {
   let r = Math.sqrt(Math.pow(e.x - t.x, 2) + Math.pow(e.y - t.y, 2));
   return {
     x: t.x + (t.x - e.x) / r * n,
@@ -15,16 +15,16 @@ function o(e, t, n) {
   }
 }
 
-function i(e, t, n) {
+function o(e, t, n) {
   let r = {
       x: n.x,
       y: n.y
     },
-    o = {
+    i = {
       x: n.x + n.width,
       y: n.y
     },
-    i = {
+    o = {
       x: n.x,
       y: n.y + n.height
     },
@@ -32,9 +32,9 @@ function i(e, t, n) {
       x: n.x + n.width,
       y: n.y + n.height
     };
-  return l(e, t, r, o) || l(e, t, o, a) || l(e, t, a, i) || l(e, t, i, r)
+  return l(e, t, r, i) || l(e, t, i, a) || l(e, t, a, o) || l(e, t, o, r)
 }
 n.d(t, {
-  Vr: () => i,
-  ld: () => o
+  Vr: () => o,
+  ld: () => i
 })

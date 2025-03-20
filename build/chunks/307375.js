@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  c = n(496675),
-  A = n(63063),
+  A = n(496675),
+  c = n(63063),
   d = n(384632),
   u = n(981631),
   g = n(388032),
@@ -21,7 +21,7 @@ function m(e) {
     activeType: t,
     onTypePicked: n,
     guild: s
-  } = e, m = s.hasFeature(u.oNc.COMMUNITY), p = (0, l.e7)([c.Z], () => c.Z.can(u.Plq.ADMINISTRATOR, s)), h = i.useMemo(() => {
+  } = e, m = s.hasFeature(u.oNc.COMMUNITY), p = (0, l.e7)([A.Z], () => A.Z.can(u.Plq.ADMINISTRATOR, s)), h = i.useMemo(() => {
     let e = t === d.A.DISCOVERABLE && !p,
       n = m && (t === d.A.DISCOVERABLE || p);
     return [{
@@ -57,7 +57,7 @@ function m(e) {
       variant: "text-sm/medium",
       className: f.bodyText,
       children: g.NW.format(g.t["Y/jYws"], {
-        helpdeskArticle: A.Z.getArticleURL(u.BhN.MEMBER_APPLICATIONS)
+        helpdeskArticle: c.Z.getArticleURL(u.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(o.njP, {
       selectedItem: t,

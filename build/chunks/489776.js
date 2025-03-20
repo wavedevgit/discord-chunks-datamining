@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(722770),
   l = n(481060),
   o = n(236413),
-  c = n(85960),
-  A = n(65912),
+  A = n(85960),
+  c = n(65912),
   d = n(564488),
   u = n(388032),
   g = n(591024);
@@ -54,9 +54,9 @@ function p(e) {
   } = e, p = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [h] = i.useState(p), [C, b] = i.useState(!1), {
     editingRule: v,
     createNewEditingRule: x
-  } = (0, A.V)(), {
+  } = (0, c.V)(), {
     getDefaultRuleName: N
-  } = c.I6[n], j = !(0, o.Vb)(v) && (null == v ? void 0 : v.triggerType) === n, [E, I] = i.useState(j ? v : h), O = (0, l.q_F)({
+  } = A.I6[n], j = !(0, o.Vb)(v) && (null == v ? void 0 : v.triggerType) === n, [E, I] = i.useState(j ? v : h), O = (0, l.q_F)({
     opacity: +!j,
     pointerEvents: j ? "none" : "all",
     config: m(f({}, s.config.stiff), {

@@ -10,8 +10,8 @@ var i = n(120356),
   a = n(481060),
   l = n(957537),
   o = n(737770),
-  c = n(839008),
-  A = n(685184),
+  A = n(839008),
+  c = n(685184),
   d = n(979264),
   u = n(550271),
   g = n(308083),
@@ -70,7 +70,7 @@ let C = function(e) {
       },
       message: m.NW.string(f.Z["rnpv7+"])
     }), (0, r.jsx)(h, {
-      avatar: c.Z,
+      avatar: A.Z,
       username: "Lily",
       usernameStyle: {
         color: "var(--orange-300)"
@@ -94,7 +94,7 @@ let C = function(e) {
       })
     }), (0, r.jsx)(h, {
       className: p.unfocusedMessage,
-      avatar: A.Z,
+      avatar: c.Z,
       username: "sharon",
       usernameStyle: {
         color: "var(--brand-400)"
@@ -102,7 +102,7 @@ let C = function(e) {
       message: m.NW.string(f.Z.GlWVJC)
     }), (0, r.jsx)(h, {
       className: p.unfocusedMessage,
-      avatar: c.Z,
+      avatar: A.Z,
       username: "Lily",
       usernameStyle: {
         color: "var(--orange-300)"

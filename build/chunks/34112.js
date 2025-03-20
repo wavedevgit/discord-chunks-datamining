@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(999153),
   o = n(584922),
-  c = n(866442),
-  A = n(442837),
+  A = n(866442),
+  c = n(442837),
   d = n(481060),
   u = n(239091),
   g = n(493544),
@@ -74,9 +74,9 @@ function R(e) {
     otherRoles: a,
     setSelectedSection: l,
     renderHeader: o,
-    headerHeight: c,
+    headerHeight: A,
     query: d
-  } = e, u = (0, A.e7)([j.Z], () => j.Z.getRoleMemberCount(n.id), [n.id]), f = (0, A.e7)([v.Z], () => v.Z.getHighestRole(n), [n]), m = d.trim();
+  } = e, u = (0, c.e7)([j.Z], () => j.Z.getRoleMemberCount(n.id), [n.id]), f = (0, c.e7)([v.Z], () => v.Z.getHighestRole(n), [n]), m = d.trim();
   i.useEffect(() => {
     (0, N.E)(n.id)
   }, [n.id]);
@@ -101,7 +101,7 @@ function R(e) {
       } = e;
       if (0 === h.length) return (0, r.jsx)(Q, {}, "empty-role");
       let o = h[s];
-      return (0, r.jsx)(Z, {
+      return (0, r.jsx)(W, {
         role: o,
         guild: n,
         highestRole: f,
@@ -118,7 +118,7 @@ function R(e) {
     }, [h, n, f, u, I, y, P, b, a, t, l]);
   return (0, r.jsx)(g.Xi, {
     sections: [Math.max(h.length, 1)],
-    sectionHeight: c,
+    sectionHeight: A,
     renderSection: o,
     rowHeight: 61,
     renderRow: B
@@ -142,10 +142,10 @@ function Q() {
   })
 }
 
-function Z(e) {
-  var t, s, c;
+function W(e) {
+  var t, s, A;
   let {
-    role: A,
+    role: c,
     guild: g,
     highestRole: m,
     currentPosition: C,
@@ -157,13 +157,13 @@ function Z(e) {
     disableDrag: O,
     setEditRoleId: w,
     setSelectedSection: R
-  } = e, Q = (0, I.T)(g, m, A), Z = null != Q, [k, M] = i.useState(!1), _ = i.useMemo(() => ({
+  } = e, Q = (0, I.T)(g, m, c), W = null != Q, [k, M] = i.useState(!1), _ = i.useMemo(() => ({
     type: L,
-    item: () => (x(A.id), {
-      id: A.id,
+    item: () => (x(c.id), {
+      id: c.id,
       position: C
     }),
-    canDrag: () => k && !Z,
+    canDrag: () => k && !W,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -175,11 +175,11 @@ function Z(e) {
       }
       j(n.roleId)
     }
-  }), [A, x, N, j, Z, k, C]), [{
+  }), [c, x, N, j, W, k, C]), [{
     isDragging: G
   }, F] = (0, l.c)(_), U = i.useMemo(() => ({
     accept: L,
-    canDrop: () => !Z,
+    canDrop: () => !W,
     collect: e => {
       let t = e.getItem();
       return null != t && e.isOver() && e.canDrop() ? {
@@ -189,9 +189,9 @@ function Z(e) {
       }
     },
     drop: () => ({
-      roleId: A.id
+      roleId: c.id
     })
-  }), [Z, A]), [{
+  }), [W, c]), [{
     dragSourcePosition: H
   }, z] = (0, o.L)(U), X = i.useCallback(e => {
     (0, u.jW)(e, async () => {
@@ -199,18 +199,18 @@ function Z(e) {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
       return t => (0, r.jsx)(e, S(T({}, t), {
-        role: A,
+        role: c,
         guild: g
       }))
     })
-  }, [g, A]), Y = (0, h.e)(g, A);
+  }, [g, c]), Y = (0, h.e)(g, c);
   if (G) return (0, r.jsx)("div", {
     ref: F,
     className: a()(B.roleRow, B.roleRowDragging)
   });
 
   function K() {
-    w(A.id)
+    w(c.id)
   }
 
   function V() {
@@ -225,14 +225,14 @@ function Z(e) {
     onClick: K,
     onContextMenu: X,
     innerRef: e => F(z(e)),
-    "data-dnd-name": A.name,
+    "data-dnd-name": c.name,
     "aria-label": P.NW.formatToPlainString(P.t.Vu0AcX, {
-      name: A.name,
+      name: c.name,
       count: "".concat(v)
     }),
     children: [(0, r.jsx)("div", {
       className: a()(B.dragIcon, D.dragSpacing, {
-        [B.dragIconHidden]: Z || O
+        [B.dragIconHidden]: W || O
       }),
       onMouseEnter: () => M(!0),
       onMouseLeave: () => M(!1),
@@ -242,13 +242,13 @@ function Z(e) {
       })
     }), (0, r.jsxs)("div", {
       className: a()(B.roleNameContainer, D.roleNameSpacing),
-      children: [(null === (t = A.tags) || void 0 === t ? void 0 : t.guild_connections) === null ? (0, r.jsx)(f.Z, {
+      children: [(null === (t = c.tags) || void 0 === t ? void 0 : t.guild_connections) === null ? (0, r.jsx)(f.Z, {
         className: B.roleFlowerStar,
-        color: A.colorString,
+        color: c.colorString,
         size: 24
-      }) : (0, r.jsx)(W, {
+      }) : (0, r.jsx)(Z, {
         guildId: g.id,
-        role: A,
+        role: c,
         size: 24,
         className: B.roleIcon,
         defaultIconClassName: B.shield
@@ -259,11 +259,11 @@ function Z(e) {
         className: B.roleName,
         color: "header-primary",
         variant: "text-md/medium",
-        children: A.name
-      }), (null === (s = A.tags) || void 0 === s ? void 0 : s.subscription_listing_id) != null && (0, r.jsx)(b.Z, {
+        children: c.name
+      }), (null === (s = c.tags) || void 0 === s ? void 0 : s.subscription_listing_id) != null && (0, r.jsx)(b.Z, {
         className: B.subscriptionRoleIcon,
         "aria-label": P.NW.string(P.t.a2Ak8f)
-      }), (null === (c = A.tags) || void 0 === c ? void 0 : c.is_guild_product_role) === !0 && (0, r.jsx)(p.Z, {})]
+      }), (null === (A = c.tags) || void 0 === A ? void 0 : A.is_guild_product_role) === !0 && (0, r.jsx)(p.Z, {})]
     }), (0, r.jsx)(d.ua7, {
       text: P.NW.string(P.t.CW75t7),
       "aria-label": P.NW.formatToPlainString(P.t.Fgs8fH, {
@@ -289,10 +289,10 @@ function Z(e) {
       className: a()(B.buttonsContainer, D.buttonsSpacing),
       children: [(0, r.jsx)(d.M0o, {
         className: a()(B.circleButton, B.editButton),
-        tooltip: Z ? P.NW.string(P.t["HO/oXl"]) : P.NW.string(P.t.bt75u7),
+        tooltip: W ? P.NW.string(P.t["HO/oXl"]) : P.NW.string(P.t.bt75u7),
         color: d.YX$.SECONDARY,
         size: d.tT7.SIZE_36,
-        icon: Z ? (0, r.jsx)(d.tEF, {
+        icon: W ? (0, r.jsx)(d.tEF, {
           size: "custom",
           color: "currentColor",
           width: 20,
@@ -322,7 +322,7 @@ function Z(e) {
   })
 }
 
-function W(e) {
+function Z(e) {
   var t;
   let {
     guildId: n,
@@ -330,7 +330,7 @@ function W(e) {
     size: s,
     enableTooltip: l,
     className: o,
-    defaultIconClassName: A
+    defaultIconClassName: c
   } = e, u = (0, C.p9)({
     guildId: n,
     roleId: i.id,
@@ -341,8 +341,8 @@ function W(e) {
     enableTooltip: l
   })) : (0, r.jsx)(d.lZ8, {
     size: "custom",
-    className: a()(o, A),
-    color: null !== (t = i.colorString) && void 0 !== t ? t : (0, c.Rf)(w.p6O),
+    className: a()(o, c),
+    color: null !== (t = i.colorString) && void 0 !== t ? t : (0, A.Rf)(w.p6O),
     width: s,
     height: s
   })

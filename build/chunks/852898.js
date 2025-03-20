@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(442837),
   l = n(139387),
   o = n(726542),
-  c = n(690221),
-  A = n(434404),
+  A = n(690221),
+  c = n(434404),
   d = n(999382),
   u = n(981631),
   g = n(388032);
@@ -41,11 +41,11 @@ function f(e) {
         t = f.name;
       [s.b.TWITCH, s.b.YOUTUBE].includes(f.type) && (t = "".concat(o.Z.get(f.type).name, " - ").concat(t));
       let n = () => {
-        A.Z.setSection(u.pNK.INTEGRATIONS), l.Z.setSection(u.b4C.APPLICATION, e)
+        c.Z.setSection(u.pNK.INTEGRATIONS), l.Z.setSection(u.b4C.APPLICATION, e)
       };
       return g.NW.format(g.t.FuXsWl, {
         name: t,
-        integrationNameHook: (e, t) => (0, r.jsx)(c.Z, {
+        integrationNameHook: (e, t) => (0, r.jsx)(A.Z, {
           onClick: n,
           children: e
         }, t)

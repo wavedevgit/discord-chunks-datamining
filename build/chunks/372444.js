@@ -10,8 +10,8 @@ var i = n(120356),
   a = n(481060),
   l = n(100527),
   o = n(906732),
-  c = n(678558),
-  A = n(388032),
+  A = n(678558),
+  c = n(388032),
   d = n(92386);
 let u = e => {
   let {
@@ -20,13 +20,13 @@ let u = e => {
     className: i,
     buttonProps: s = {
       color: a.Ttl.BRAND_INVERTED,
-      text: A.NW.string(A.t.oqweNz)
+      text: c.NW.string(c.t.oqweNz)
     }
   } = e, {
     color: l,
     text: o
   } = s, d = t.premiumTier + 1;
-  return (0, r.jsx)(c.Z, {
+  return (0, r.jsx)(A.Z, {
     color: l,
     analyticsLocation: n,
     guild: t,
@@ -40,8 +40,8 @@ function g(e) {
   let {
     header: t,
     text: i,
-    analyticsLocation: c,
-    guild: A,
+    analyticsLocation: A,
+    guild: c,
     className: g,
     textColor: f,
     headerColor: m,
@@ -72,8 +72,8 @@ function g(e) {
       }), (0, r.jsx)("div", {
         className: d.ctaContainer,
         children: (0, r.jsx)(u, {
-          guild: A,
-          analyticsLocation: c,
+          guild: c,
+          analyticsLocation: A,
           className: d.button,
           buttonProps: p
         })

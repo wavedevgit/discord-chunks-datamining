@@ -13,9 +13,9 @@ var i = n(481060),
 function o(e) {
   var t, n, {
       className: o,
-      color: c = (0, s.Lq)(a.Ilk.BRAND_500)
+      color: A = (0, s.Lq)(a.Ilk.BRAND_500)
     } = e,
-    A = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -47,9 +47,9 @@ function o(e) {
       })
     }
     return e
-  }({}, A), n = n = {
+  }({}, c), n = n = {
     text: l.NW.string(l.t.G6GWZ2),
-    color: c,
+    color: A,
     className: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

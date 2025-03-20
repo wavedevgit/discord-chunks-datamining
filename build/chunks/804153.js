@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(497321),
   o = n(484614),
-  c = n(246946),
-  A = n(434404),
+  A = n(246946),
+  c = n(434404),
   d = n(999382),
   u = n(24318),
   g = n(822693),
@@ -127,11 +127,11 @@ class h extends i.PureComponent {
       } = this.props;
       null != t && (this.setState({
         internalEnabled: e
-      }), A.Z.updateEmbed(t.id, e, n))
+      }), c.Z.updateEmbed(t.id, e, n))
     })
   }
 }
-let C = s.ZP.connectStores([d.Z, c.Z], () => {
+let C = s.ZP.connectStores([d.Z, A.Z], () => {
   let {
     guild: e,
     embedChannelId: t,
@@ -141,6 +141,6 @@ let C = s.ZP.connectStores([d.Z, c.Z], () => {
     guild: e,
     widgetChannelId: t,
     widgetEnabled: n,
-    hide: c.Z.enabled
+    hide: A.Z.enabled
   }
 })(h)

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(640358),
   l = n(442837),
   o = n(544891),
-  c = n(481060),
-  A = n(497321),
+  A = n(481060),
+  c = n(497321),
   d = n(841470),
   u = n(142497),
   g = n(706454),
@@ -58,19 +58,19 @@ let O = function(e, t, n) {
   },
   y = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return t || e === x.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
-      icon: c.d3s,
+    return t || e === x.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(A.kzN, {
+      icon: A.d3s,
       className: E.notEnoughMembersError,
-      backgroundColor: c.mTc.BACKGROUND_ACCENT,
+      backgroundColor: A.mTc.BACKGROUND_ACCENT,
       children: j.NW.string(j.t["FsgE/P"])
-    }) : null == e ? null : (0, r.jsx)(c.kzN, {
-      backgroundColor: c.mTc.BACKGROUND_ACCENT,
+    }) : null == e ? null : (0, r.jsx)(A.kzN, {
+      backgroundColor: A.mTc.BACKGROUND_ACCENT,
       children: j.NW.string(j.t.Iju63d)
     })
   },
   w = () => {
     let [e, t] = i.useState(!1), n = (0, l.e7)([v.Z], () => v.Z.getGuildId());
-    return (0, r.jsx)(c.zxk, {
+    return (0, r.jsx)(A.zxk, {
       className: E.developerPortalCta,
       onClick: () => {
         t(!0), (function(e) {
@@ -137,24 +137,24 @@ let O = function(e, t, n) {
         }, O(a.pctRetained, a.pctRetainedChange, s, !0)))]
       })
     }) : null;
-    return (0, r.jsxs)(c.hjN, {
-      tag: c.RB0.H1,
+    return (0, r.jsxs)(A.hjN, {
+      tag: A.RB0.H1,
       title: j.NW.string(j.t["0wWfUF"]),
-      children: [(0, r.jsx)(c.R94, {
-        type: c.geA.DESCRIPTION,
+      children: [(0, r.jsx)(A.R94, {
+        type: A.geA.DESCRIPTION,
         children: j.NW.format(j.t.NIZ60d, {})
       }), y(o, P), (0, r.jsxs)("div", {
         className: E.developerPortalCtaWrapper,
         children: [(0, r.jsx)("div", {
           className: E.placeholderImage
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(A.Text, {
           className: E.developerPortalCtaText,
           variant: "text-sm/normal",
           children: j.NW.string(j.t.A5vsws)
         }), (0, r.jsx)(w, {})]
       }), h ? (0, r.jsx)("div", {
         className: E.streamerMode,
-        children: (0, r.jsx)(A.Z, {})
+        children: (0, r.jsx)(c.Z, {})
       }) : B]
     })
   }

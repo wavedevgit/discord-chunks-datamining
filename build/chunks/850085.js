@@ -1,6 +1,6 @@
 /** Chunk was on 48017 **/
 n.d(t, {
-  default: () => C
+  default: () => x
 }), n(47120), n(411104);
 var i = n(200651),
   r = n(192379),
@@ -20,12 +20,12 @@ var i = n(200651),
   b = n(981631),
   E = n(678916),
   N = n(388032),
-  x = n(140956);
-let C = e => {
+  C = n(140956);
+let x = e => {
   let {
     file: t,
     imageUri: n,
-    transitionState: C,
+    transitionState: x,
     allowSkip: R = !1,
     onCrop: A,
     onClose: v,
@@ -162,7 +162,7 @@ let C = e => {
     value: V,
     children: (0, i.jsxs)(l.Y0X, {
       onAnimationEnd: Q,
-      transitionState: C,
+      transitionState: x,
       size: l.CgR.MEDIUM,
       children: [T && !ei && (0, i.jsx)(d.Z, {
         type: w,
@@ -173,14 +173,14 @@ let C = e => {
       }), (0, i.jsx)(l.xBx, {
         separator: !1,
         children: (0, i.jsx)(l.vwX, {
-          className: x.titleCase,
+          className: C.titleCase,
           tag: l.RB0.H1,
           children: N.NW.string(N.t.DxAYCA)
         })
       }), (0, i.jsxs)(l.hzk, {
-        className: x.modalContent,
+        className: C.modalContent,
         children: [(0, i.jsxs)("div", {
-          className: x.editingContainer,
+          className: C.editingContainer,
           children: [(0, i.jsx)("img", {
             style: function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -212,7 +212,7 @@ let C = e => {
                 height: G.height * M * t
               }
             })()),
-            className: U ? x.imageDisabled : x.imageEnabled,
+            className: U ? C.imageDisabled : C.imageEnabled,
             src: n,
             alt: "avatar",
             ref: F,
@@ -224,7 +224,7 @@ let C = e => {
             },
             draggable: !1
           }), (0, i.jsx)("div", {
-            className: w === p.pC.AVATAR ? x.overlayAvatar : x.overlayBanner,
+            className: w === p.pC.AVATAR ? C.overlayAvatar : C.overlayBanner,
             style: {
               opacity: +(null != G),
               width: I.width,
@@ -232,11 +232,11 @@ let C = e => {
             }
           })]
         }), (0, i.jsxs)("div", {
-          className: x.sliderContainer,
+          className: C.sliderContainer,
           children: [(0, i.jsx)(l.XBm, {
             size: "md",
             color: "currentColor",
-            className: x.icon
+            className: C.icon
           }), (0, i.jsx)(l.iRW, {
             initialValue: 1,
             minValue: 1,
@@ -260,7 +260,7 @@ let C = e => {
           }), (0, i.jsx)(l.XBm, {
             size: "custom",
             color: "currentColor",
-            className: x.icon,
+            className: C.icon,
             width: 48,
             height: 48
           })]
@@ -269,14 +269,14 @@ let C = e => {
             uploadType: w,
             showUpsell: !0,
             position: "inline",
-            className: x.nitroUpsell,
+            className: C.nitroUpsell,
             showShadow: !1
           })
         })]
       }), (0, i.jsxs)(l.mzw, {
-        className: x.modalFooter,
+        className: C.modalFooter,
         children: [R ? (0, i.jsx)(l.zxk, {
-          className: x.cancelButton,
+          className: C.cancelButton,
           look: l.zxk.Looks.LINK,
           color: l.zxk.Colors.PRIMARY,
           size: l.PhG.SMALL,
@@ -288,9 +288,9 @@ let C = e => {
           },
           children: N.NW.string(N.t.B944ys)
         }) : null, (0, i.jsxs)("div", {
-          className: x.buttonsRight,
+          className: C.buttonsRight,
           children: [(0, i.jsx)(l.zxk, {
-            className: x.cancelButton,
+            className: C.cancelButton,
             look: l.zxk.Looks.LINK,
             color: l.zxk.Colors.PRIMARY,
             size: l.PhG.SMALL,

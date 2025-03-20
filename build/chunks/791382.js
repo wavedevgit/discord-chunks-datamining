@@ -11,8 +11,8 @@ var i = n(120356),
   a = n(481060),
   l = n(264451),
   o = n(75775),
-  c = n(388032),
-  A = n(971966);
+  A = n(388032),
+  c = n(971966);
 let d = e => {
     let {
       value: t,
@@ -24,15 +24,15 @@ let d = e => {
       isPositive: d
     } = (0, l.m5)(t, n);
     return (0, r.jsxs)("div", {
-      className: A.trendContainer,
+      className: c.trendContainer,
       children: [(0, r.jsx)(o.Z, {
-        className: s()(A.chartLineIcon, {
-          [A.chartLineIconNegative]: !d
+        className: s()(c.chartLineIcon, {
+          [c.chartLineIconNegative]: !d
         })
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        className: A.trendDescription,
-        children: c.NW.format(c.t.OTHOvb, {
+        className: c.trendDescription,
+        children: A.NW.format(A.t.OTHOvb, {
           value: i
         })
       })]
@@ -47,13 +47,13 @@ let d = e => {
       tooltip: l
     } = e;
     return (0, r.jsxs)("div", {
-      className: A.container,
+      className: c.container,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
-          className: A.labelContainer,
+          className: c.labelContainer,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/medium",
-            className: A.label,
+            className: c.label,
             children: t
           }), null != l && (0, r.jsx)(a.ua7, {
             text: l,
@@ -77,15 +77,15 @@ let d = e => {
             }({
               size: "xs",
               color: "currentColor",
-              className: A.labelTooltipIcon
+              className: c.labelTooltipIcon
             }, e))
           }), null != n ? (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
-            className: A.sublabel,
+            className: c.sublabel,
             children: n
           }) : null]
         }), (0, r.jsx)(a.Text, {
-          className: A.value,
+          className: c.value,
           variant: "text-sm/normal",
           children: i
         })]

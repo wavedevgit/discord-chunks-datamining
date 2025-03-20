@@ -8,8 +8,8 @@ var r, i = n(392711),
   a = n(906280),
   l = n.n(a),
   o = n(442837),
-  c = n(570140),
-  A = n(944163),
+  A = n(570140),
+  c = n(944163),
   d = n(77498),
   u = n(116175),
   g = n(308083);
@@ -46,7 +46,7 @@ let h = () => ({
     description: "",
     wildcardDescriptors: [g.U6, g.U6, g.U6],
     tag: "",
-    verificationForm: m({}, A.t),
+    verificationForm: m({}, c.t),
     badgeKind: u.ZD.SWORD,
     badgePrimaryColor: u.sg["0"].primary,
     badgeSecondaryColor: u.sg["0"].secondary,
@@ -71,7 +71,7 @@ class j extends(r = o.ZP.Store) {
   }
 }
 f(j, "displayName", "ClanSettingsStore");
-let E = new j(c.Z, {
+let E = new j(A.Z, {
   CLAN_SETTINGS_FETCH_START: function() {
     x = !1, C = h(), b = l()(C), v = !1, N = {}
   },

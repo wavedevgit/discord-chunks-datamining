@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(399606),
   o = n(481060),
-  c = n(471445),
-  A = n(603211),
+  A = n(471445),
+  c = n(603211),
   d = n(307707),
   u = n(734893),
   g = n(216701),
@@ -65,17 +65,17 @@ let x = function(e) {
   } = e, T = (0, l.e7)([f.Z], () => f.Z.getChannel(I.channelId)), S = (0, l.e7)([m.Z], () => m.Z.getGuild(E)), {
     customEmoji: L,
     unicodeEmoji: R
-  } = (0, d.Z)(null === (t = I.emoji) || void 0 === t ? void 0 : t.id, null === (s = I.emoji) || void 0 === s ? void 0 : s.name), Q = null == I.emoji || null != L || null != R, Z = p.ZP.getNewMemberActionIconURL({
+  } = (0, d.Z)(null === (t = I.emoji) || void 0 === t ? void 0 : t.id, null === (s = I.emoji) || void 0 === s ? void 0 : s.name), Q = null == I.emoji || null != L || null != R, W = p.ZP.getNewMemberActionIconURL({
     channelId: I.channelId,
     icon: I.icon
-  }), W = null;
-  null != T && (0, u.kb)(T) ? Q || (W = h.NW.string(h.t.wAkIZW)) : W = h.NW.string(h.t.CbTEKC);
+  }), Z = null;
+  null != T && (0, u.kb)(T) ? Q || (Z = h.NW.string(h.t.wAkIZW)) : Z = h.NW.string(h.t.CbTEKC);
   let {
     drag: k,
     dragSourcePosition: M,
     drop: _,
     setIsDraggable: G
-  } = (0, A.Z)({
+  } = (0, c.Z)({
     type: "NEW_MEMBER_ACTION",
     index: O,
     optionId: I.channelId,
@@ -96,14 +96,14 @@ let x = function(e) {
     })
   }, [E, I, O, y, w]);
   if (null == T || null == S) return null;
-  let U = null !== (j = (0, c.KS)(T)) && void 0 !== j ? j : o.VL1;
+  let U = null !== (j = (0, A.KS)(T)) && void 0 !== j ? j : o.VL1;
   return (0, r.jsxs)("div", {
     className: C.actionItemContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(C.actionItem, {
         [C.dropIndicatorBefore]: null != M && O < M,
         [C.dropIndicatorAfter]: null != M && O > M,
-        [C.actionItemError]: null != W
+        [C.actionItemError]: null != Z
       }),
       ref: e => k(_(e)),
       children: [(0, r.jsx)("div", {
@@ -115,10 +115,10 @@ let x = function(e) {
           color: "currentColor",
           className: C.dragIcon
         })
-      }), null != Z ? (0, r.jsx)("div", {
+      }), null != W ? (0, r.jsx)("div", {
         className: C.iconWrapper,
         children: (0, r.jsx)("img", {
-          src: Z,
+          src: W,
           className: C.icon,
           width: 48,
           height: 48,
@@ -161,10 +161,10 @@ let x = function(e) {
           })]
         }))
       })]
-    }), null != W && (0, r.jsx)(o.Text, {
+    }), null != Z && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: W
+      children: Z
     })]
   })
 }

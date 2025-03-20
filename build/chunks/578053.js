@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(442837),
   l = n(481060),
   o = n(740504),
-  c = n(933557),
-  A = n(471445),
+  A = n(933557),
+  c = n(471445),
   d = n(592125),
   u = n(324067),
   g = n(699516),
@@ -23,7 +23,7 @@ let h = "NO_CHANNEL";
 function C(e) {
   return {
     value: e.id,
-    label: (0, c.F6)(e, f.default, g.Z),
+    label: (0, A.F6)(e, f.default, g.Z),
     channel: e,
     category: d.Z.getChannel(e.parent_id)
   }
@@ -36,7 +36,7 @@ function b(e) {
     label: n,
     channel: s,
     category: a
-  } = t, o = i.useMemo(() => (0, A.KS)(s), [s]), d = (0, c.ZP)(s);
+  } = t, o = i.useMemo(() => (0, c.KS)(s), [s]), d = (0, A.ZP)(s);
   return (0, r.jsx)(l.ZZ$, {
     title: n,
     icon: o,
@@ -49,8 +49,8 @@ function v(e) {
     canManageGuild: t,
     guildId: n,
     afkChannelId: l
-  } = e, c = (0, a.e7)([u.Z], () => u.Z.getCategories(n)), A = i.useMemo(() => {
-    let e = (0, o.Z)(c._categories, c).filter(e => {
+  } = e, A = (0, a.e7)([u.Z], () => u.Z.getCategories(n)), c = i.useMemo(() => {
+    let e = (0, o.Z)(A._categories, A).filter(e => {
       let {
         channel: t
       } = e;
@@ -65,7 +65,7 @@ function v(e) {
       value: h,
       label: p.NW.string(p.t.wGiHkJ)
     }), e
-  }, [c]), d = i.useCallback(e => {
+  }, [A]), d = i.useCallback(e => {
     let t = e === h ? null : e;
     m.Z.updateGuild({
       afkChannelId: t
@@ -73,7 +73,7 @@ function v(e) {
   }, []);
   return (0, r.jsx)(N, {
     value: null != l ? l : h,
-    options: A,
+    options: c,
     canManageGuild: t,
     onChange: d
   })
@@ -84,8 +84,8 @@ function x(e) {
     canManageGuild: t,
     guildId: n,
     systemChannelId: l
-  } = e, c = (0, a.e7)([u.Z], () => u.Z.getCategories(n)), A = i.useMemo(() => {
-    let e = (0, o.Z)(c._categories, c).filter(e => {
+  } = e, A = (0, a.e7)([u.Z], () => u.Z.getCategories(n)), c = i.useMemo(() => {
+    let e = (0, o.Z)(A._categories, A).filter(e => {
       let {
         channel: t
       } = e;
@@ -100,7 +100,7 @@ function x(e) {
       value: h,
       label: p.NW.string(p.t.ibUhoa)
     }), e
-  }, [c]), d = i.useCallback(e => {
+  }, [A]), d = i.useCallback(e => {
     let t = e === h ? null : e;
     m.Z.updateGuild({
       systemChannelId: t
@@ -108,7 +108,7 @@ function x(e) {
   }, []);
   return (0, r.jsx)(N, {
     value: null != l ? l : h,
-    options: A,
+    options: c,
     canManageGuild: t,
     onChange: d
   })
@@ -124,13 +124,13 @@ function N(e) {
     if (null != e) return (0, r.jsx)(b, {
       option: e
     })
-  }, []), c = i.useCallback(e => o(e[0]), [o]);
+  }, []), A = i.useCallback(e => o(e[0]), [o]);
   return (0, r.jsx)(l.q4e, {
     value: t,
     options: n,
     isDisabled: !s,
     onChange: a,
     renderOptionLabel: o,
-    renderOptionValue: c
+    renderOptionValue: A
   })
 }

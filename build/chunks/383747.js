@@ -1,25 +1,25 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651),
   i = n(481060),
   l = n(410030),
-  a = n(388032);
+  o = n(388032);
 
-function o(e) {
+function a(e) {
   let {
     onClick: t
-  } = e, o = (0, l.ZP)();
+  } = e, a = (0, l.ZP)();
   return (0, r.jsxs)(i.ubH, {
-    theme: o,
+    theme: a,
     children: [(0, r.jsx)(i.oxh, {
       lightSrc: n(979770),
       darkSrc: n(138715),
       width: 415,
       height: 200
     }), (0, r.jsx)(i.OZU, {
-      note: a.NW.format(a.t.Pv8u2t, {
+      note: o.NW.format(o.t.Pv8u2t, {
         onClick: t
       })
     })]

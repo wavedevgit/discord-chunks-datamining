@@ -9,13 +9,13 @@ var r = n(200651),
   a = n(852860),
   l = n(999382),
   o = n(8426),
-  c = n(969632),
-  A = n(388032);
+  A = n(969632),
+  c = n(388032);
 
 function d(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([c.Z], () => c.Z.getSettings()), l = (0, s.e7)([c.Z], () => c.Z.getSubmitting()), d = i.useCallback(() => {
+  } = e, n = (0, s.e7)([A.Z], () => A.Z.getSettings()), l = (0, s.e7)([A.Z], () => A.Z.getSubmitting()), d = i.useCallback(() => {
     try {
       (0, o.oo)(t, n)
     } catch (e) {}
@@ -24,7 +24,7 @@ function d(e) {
     onSave: d,
     onReset: o.bj,
     submitting: l,
-    onSaveText: A.NW.string(A.t.R3BPHx)
+    onSaveText: c.NW.string(c.t.R3BPHx)
   })
 }
 let u = function() {

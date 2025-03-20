@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(512722),
   l = n.n(i),
-  a = n(841784),
-  o = n(503438),
+  o = n(841784),
+  a = n(503438),
   s = n(802856),
   c = n(810568),
   u = n(168524),
@@ -36,19 +36,19 @@ function _(e) {
         user: t
       } = e;
       return t.id
-    })), i = n.filter(e => !r.has(e.id)), l = p.ZP.getName(t[0].user), a = null != t[1] ? p.ZP.getName(t[1].user) : null != i[0] ? p.ZP.getName(i[0]) : null;
+    })), i = n.filter(e => !r.has(e.id)), l = p.ZP.getName(t[0].user), o = null != t[1] ? p.ZP.getName(t[1].user) : null != i[0] ? p.ZP.getName(i[0]) : null;
     switch (n.length) {
       case 1:
         return l;
       case 2:
         return b.NW.format(b.t.t1DyCw, {
           user1: l,
-          user2: a
+          user2: o
         });
       default:
         return b.NW.format(b.t["5CSEcH"], {
           user1: l,
-          user2: a,
+          user2: o,
           extras: n.length - 2
         })
     }
@@ -65,7 +65,7 @@ function _(e) {
     } = e, _ = i.length, E = c.length - _, O = p[0], N = null == O ? void 0 : O.activity, v = null == O ? void 0 : O.startedPlayingTime, y = {
       name: null !== (t = null == N ? void 0 : N.name) && void 0 !== t ? t : ""
     };
-    if ((0, a.Z)(N) && null != N) return {
+    if ((0, o.Z)(N) && null != N) return {
       subtitle: (0, r.jsx)(d.ZP, {
         start: v,
         location: d.ZP.Locations.ACTIVITY_FEED_NEW,
@@ -108,7 +108,7 @@ function _(e) {
           };
         case m.IIU.LISTENING:
           let i;
-          return i = (0, o.Z)(N) ? (0, r.jsx)(f.Z.Header.Icon, {
+          return i = (0, a.Z)(N) ? (0, r.jsx)(f.Z.Header.Icon, {
             src: f.Z.Header.Icon.Src.SPOTIFY
           }) : null != e.getIconURL(g.Z) ? (0, r.jsx)(f.Z.Header.Icon, {
             src: e.getIconURL(g.Z)

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(498607),
   o = n.n(l),
-  c = n(913527),
-  A = n.n(c),
+  A = n(913527),
+  c = n.n(A),
   d = n(442837),
   u = n(692547),
   g = n(481060),
@@ -63,33 +63,33 @@ let E = e => {
     pending: a,
     pendingDescription: l,
     failingDescription: o
-  } = e, c = t, A = null, d = null;
-  return a ? (A = (0, r.jsx)(g.P4T, {
+  } = e, A = t, c = null, d = null;
+  return a ? (c = (0, r.jsx)(g.P4T, {
     size: "custom",
     color: u.Z.unsafe_rawColors.YELLOW_300.css,
     width: 20,
     height: 20
-  }), d = null != l ? l : i) : s ? (A = (0, r.jsx)(g.XZJ, {
+  }), d = null != l ? l : i) : s ? (c = (0, r.jsx)(g.XZJ, {
     readOnly: !0,
     shape: g.XZJ.Shapes.ROUND,
     size: 20,
     type: g.XZJ.Types.INVERTED,
     value: !0
-  }), d = i) : (A = (0, r.jsx)(g.k$p, {
+  }), d = i) : (c = (0, r.jsx)(g.k$p, {
     size: "custom",
     color: u.Z.unsafe_rawColors.RED_400.css,
     width: 20,
     height: 20
-  }), c = null != n ? n : t, d = null != o ? o : i), (0, r.jsxs)("div", {
+  }), A = null != n ? n : t, d = null != o ? o : i), (0, r.jsxs)("div", {
     className: x.checklistItem,
     children: [(0, r.jsx)("div", {
       className: x.checklistIcon,
-      children: A
+      children: c
     }), (0, r.jsxs)("div", {
       className: x.checklistText,
       children: [(0, r.jsx)(g.X6q, {
         variant: "heading-md/semibold",
-        children: c
+        children: A
       }), (0, r.jsx)(g.Text, {
         color: "text-muted",
         variant: "text-sm/normal",
@@ -114,7 +114,7 @@ let O = e => {
     guildId: s,
     className: l,
     headerContent: o,
-    failedItemsOnly: c = !1
+    failedItemsOnly: A = !1
   } = e, [u, O] = (0, d.Wu)([C.ZP], () => [C.ZP.getDiscoveryChecklist(s), C.ZP.isLoading()], [s]), {
     nsfwProperties: y
   } = null != u ? u : {}, w = null == t ? void 0 : t.hasFeature(b.oNc.PARTNERED), P = null == y ? void 0 : y.channels_banned_keywords, B = (0, d.e7)([f.ZP], () => {
@@ -170,7 +170,7 @@ let O = e => {
       }),
       failingDescription: v.NW.formatToPlainString(v.t.jYwM1d, {
         minimumGuildAge: Math.ceil(u.minimumGuildAge / 7),
-        passDate: A()(p.default.extractTimestamp(s)).add(u.minimumGuildAge, "days").format("LL")
+        passDate: c()(p.default.extractTimestamp(s)).add(u.minimumGuildAge, "days").format("LL")
       }),
       checked: null == u ? void 0 : u.age
     }, {
@@ -296,7 +296,7 @@ let O = e => {
           width: 40
         }), o]
       })
-    })(), T.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
+    })(), T.filter(e => !A || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(E, N({}, e)), t < T.length - 1 ? (0, r.jsx)("hr", {
         className: x.separator
       }) : null]

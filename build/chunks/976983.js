@@ -11,8 +11,8 @@ var i = n(120356),
   a = n(392711),
   l = n.n(a),
   o = n(481060),
-  c = n(668781),
-  A = n(603211),
+  A = n(668781),
+  c = n(603211),
   d = n(107862),
   u = n(307707),
   g = n(216701),
@@ -54,7 +54,7 @@ function b(e, t) {
 }
 
 function v(e) {
-  var t, i, a, c;
+  var t, i, a, A;
   let {
     guild: d,
     prompt: v,
@@ -70,7 +70,7 @@ function v(e) {
     dragSourcePosition: D,
     drop: T,
     setIsDraggable: S
-  } = (0, A.Z)({
+  } = (0, c.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
     index: P,
     optionId: j.id,
@@ -125,7 +125,7 @@ function v(e) {
         className: h.emoji,
         children: (0, r.jsx)(g.Z, {
           emojiId: null === (a = j.emoji) || void 0 === a ? void 0 : a.id,
-          emojiName: null === (c = j.emoji) || void 0 === c ? void 0 : c.name,
+          emojiName: null === (A = j.emoji) || void 0 === A ? void 0 : A.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ function x(e) {
     promptIndex: a,
     singleColumn: l
   } = e, {
-    dropdownsAllowed: A
+    dropdownsAllowed: c
   } = (0, d.Ug)(t.id), u = () => {
     (0, o.ZDy)(async () => {
       let {
@@ -180,7 +180,7 @@ function x(e) {
       [h.singleColumn]: l
     }),
     onClick: () => {
-      A && i.options.length + 1 === m.fY ? c.Z.show({
+      c && i.options.length + 1 === m.fY ? A.Z.show({
         title: p.NW.string(p.t.TggC7u),
         body: p.NW.formatToPlainString(p.t.kPQKam, {
           thresholdCount: m.fY

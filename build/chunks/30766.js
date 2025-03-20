@@ -6,8 +6,8 @@ n.d(t, {
 var r, i, s, a = n(392711),
   l = n.n(a),
   o = n(442837),
-  c = n(570140),
-  A = n(314897),
+  A = n(570140),
+  c = n(314897),
   d = n(823379);
 
 function u(e) {
@@ -31,7 +31,7 @@ let g = {},
   f = 0;
 class m extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(A.default)
+    this.waitFor(c.default)
   }
   isFetching() {
     return f > 0
@@ -49,7 +49,7 @@ s = "DiscoverGuildsStore", (i = "displayName") in m ? Object.defineProperty(m, i
   configurable: !0,
   writable: !0
 }) : m[i] = s;
-let p = new m(c.Z, {
+let p = new m(A.Z, {
   DISCOVER_GUILDS_FETCH_START: function(e) {
     f += 1
   },

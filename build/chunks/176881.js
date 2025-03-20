@@ -1,19 +1,19 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(626135),
   i = n(188471),
   l = n(360347),
-  a = n(981631);
+  o = n(981631);
 
-function o(e) {
-  var t, n, o;
+function a(e) {
+  var t, n, a;
   let {
     tab_opened: s,
     source: c
   } = e, u = (0, l.Z)();
-  r.default.track(a.rMx.FRIENDS_LIST_VIEWED, function(e) {
+  r.default.track(o.rMx.FRIENDS_LIST_VIEWED, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -33,10 +33,10 @@ function o(e) {
   }({
     tab_opened: s,
     source: c
-  }, u)), (0, i.a)(a.rMx.FRIENDS_LIST_VIEWED_CLICKSTREAM, {
+  }, u)), (0, i.a)(o.rMx.FRIENDS_LIST_VIEWED_CLICKSTREAM, {
     tab_opened: null != s ? s : "tabless",
     num_friends: null !== (t = u.num_friends) && void 0 !== t ? t : 0,
     now_playing_visible: null !== (n = u.now_playing_visible) && void 0 !== n && n,
-    now_playing_num_cards: null !== (o = u.now_playing_num_cards) && void 0 !== o ? o : 0
+    now_playing_num_cards: null !== (a = u.now_playing_num_cards) && void 0 !== a ? a : 0
   })
 }

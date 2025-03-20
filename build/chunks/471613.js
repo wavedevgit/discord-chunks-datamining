@@ -6,20 +6,20 @@ n.d(t, {
 var r, i, s, a = n(442837),
   l = n(570140),
   o = n(40572),
-  c = n(914010);
-let A = {},
+  A = n(914010);
+let c = {},
   d = {},
   u = 0;
 class g extends(s = a.ZP.Store) {
   initialize() {
-    this.waitFor(c.Z)
+    this.waitFor(A.Z)
   }
   isUploadingEmoji() {
     return u > 0
   }
   getEmojiRevision(e) {
     var t;
-    return null !== (t = A[e]) && void 0 !== t ? t : 0
+    return null !== (t = c[e]) && void 0 !== t ? t : 0
   }
   getEmojis(e) {
     return d[e]
@@ -63,6 +63,6 @@ let f = new g(l.Z, {
     let {
       guildId: n
     } = e;
-    A[n] = (null !== (t = A[n]) && void 0 !== t ? t : 0) + 1
+    c[n] = (null !== (t = c[n]) && void 0 !== t ? t : 0) + 1
   }
 })

@@ -15,13 +15,13 @@ function l(e) {
     selectedChannelIds: n,
     selectedRoleIds: l,
     onChange: o,
-    placeholder: c,
-    disableEveryoneRole: A,
+    placeholder: A,
+    disableEveryoneRole: c,
     includeRoleRestrictedPrivateChannels: d = !1,
     includeStageVoiceChannels: u = !1,
     helperText: g,
     className: f
-  } = e, m = (0, s.r)(t, n, d, u), p = (0, a.h)(t, l, A);
+  } = e, m = (0, s.r)(t, n, d, u), p = (0, a.h)(t, l, c);
   return (0, r.jsx)(i.ZP, {
     channelRows: m,
     roleRows: p,
@@ -29,7 +29,7 @@ function l(e) {
     selectedChannelIds: n,
     selectedRoleIds: l,
     onChange: o,
-    placeholder: c,
+    placeholder: A,
     helperText: g,
     className: f
   })

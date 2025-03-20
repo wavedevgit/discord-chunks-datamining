@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(710344),
   o = n(734893),
-  c = n(8426),
-  A = n(969632),
+  A = n(8426),
+  c = n(969632),
   d = n(430677),
   u = n(388032),
   g = n(668813);
@@ -104,37 +104,37 @@ function C(e) {
 let b = function(e) {
   let {
     guildId: t
-  } = e, n = (0, s.Wu)([A.Z], () => {
+  } = e, n = (0, s.Wu)([c.Z], () => {
     var e;
-    return null !== (e = A.Z.getSettings().newMemberActions) && void 0 !== e ? e : p
+    return null !== (e = c.Z.getSettings().newMemberActions) && void 0 !== e ? e : p
   }), a = i.useCallback((e, n) => {
-    (0, c.vR)(e);
-    let r = A.Z.getSettings();
+    (0, A.vR)(e);
+    let r = c.Z.getSettings();
     if (null == r) return;
     let {
       channelId: i
     } = e;
-    (0, c.oo)(t, r, !0).then(() => {
-      null != n && (0, c.ad)(t, i, n, !0)
+    (0, A.oo)(t, r, !0).then(() => {
+      null != n && (0, A.ad)(t, i, n, !0)
     })
   }, [t]), u = i.useCallback((e, r, i, s) => {
     var a;
     let l = null === (a = n[e]) || void 0 === a ? void 0 : a.channelId;
     if (null == l) return;
-    let o = A.Z.getSettings();
-    null != o && ((0, c.el)(l, r), (0, c.oo)(t, o, !0).then(() => {
-      (0, c.ad)(t, l, i, s)
+    let o = c.Z.getSettings();
+    null != o && ((0, A.el)(l, r), (0, A.oo)(t, o, !0).then(() => {
+      (0, A.ad)(t, l, i, s)
     }))
   }, [n, t]), b = i.useCallback(e => {
     var t;
     let r = null === (t = n[e]) || void 0 === t ? void 0 : t.channelId;
-    null != r && (0, c.Hr)(r)
+    null != r && (0, A.Hr)(r)
   }, [n]), v = n.map(e => m(f({}, e), {
     id: e.channelId
   })), x = i.useCallback(e => {
-    (0, c.hS)(e);
-    let n = A.Z.getSettings();
-    null != n && (0, c.oo)(t, n, !0)
+    (0, A.hS)(e);
+    let n = c.Z.getSettings();
+    null != n && (0, A.oo)(t, n, !0)
   }, [t]), {
     handleDragStart: N,
     handleDragReset: j,

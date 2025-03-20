@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(481060),
   l = n(852860),
   o = n(111028),
-  c = n(977258),
-  A = n(45966),
+  A = n(977258),
+  c = n(45966),
   d = n(473403),
   u = n(454585),
   g = n(323502),
@@ -35,7 +35,7 @@ var r = n(200651),
 function B(e) {
   let {
     guild: t
-  } = e, l = (0, s.e7)([A.Z], () => A.Z.getEnabled(t.id)), m = (0, s.e7)([f.Z], () => f.Z.hasFetched(t.id)), p = (0, j.Z)(t), h = (0, s.e7)([v.Z], () => v.Z.editedDefaultChannelIds), C = p.filter(e => !h.has(e.id)), [x, N] = i.useState(!1);
+  } = e, l = (0, s.e7)([c.Z], () => c.Z.getEnabled(t.id)), m = (0, s.e7)([f.Z], () => f.Z.hasFetched(t.id)), p = (0, j.Z)(t), h = (0, s.e7)([v.Z], () => v.Z.editedDefaultChannelIds), C = p.filter(e => !h.has(e.id)), [x, N] = i.useState(!1);
   i.useEffect(() => {
     m || l || (0, g.S)(t.id)
   }, [t.id, m, l]);
@@ -136,7 +136,7 @@ function B(e) {
                 })
               })
             }, "topic") : null]
-          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(a.zxk, {
+          }), (0, A.s)(t.id, e.id) ? (0, r.jsx)(a.zxk, {
             color: a.zxk.Colors.BRAND,
             size: a.zxk.Sizes.SMALL,
             className: P.addChannelCTA,
@@ -169,7 +169,7 @@ function B(e) {
 function D(e) {
   let {
     saveOnClose: t = !1
-  } = e, n = (0, s.e7)([C.Z], () => C.Z.getGuild()), l = (0, s.e7)([A.Z], () => A.Z.isLoading()), o = (0, s.e7)([p.ZP], () => p.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([m.Z], () => m.Z.getCategories(null == n ? void 0 : n.id)), d = (0, s.e7)([N.Z], () => N.Z.advancedMode), u = i.useRef(null), [g, f] = i.useState(!1), v = i.useRef(n);
+  } = e, n = (0, s.e7)([C.Z], () => C.Z.getGuild()), l = (0, s.e7)([c.Z], () => c.Z.isLoading()), o = (0, s.e7)([p.ZP], () => p.ZP.getChannels(null == n ? void 0 : n.id)), A = (0, s.e7)([m.Z], () => m.Z.getCategories(null == n ? void 0 : n.id)), d = (0, s.e7)([N.Z], () => N.Z.advancedMode), u = i.useRef(null), [g, f] = i.useState(!1), v = i.useRef(n);
   return (i.useEffect(() => {
     v.current = n
   }), i.useEffect(() => {
@@ -214,7 +214,7 @@ function D(e) {
         }), (0, r.jsx)(I.Z, {
           className: P.channelBrowserOuter,
           guild: n,
-          categories: c,
+          categories: A,
           channels: o,
           hasSidebar: !1
         })]

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(979233),
-  o = n(88693),
+  o = n(979233),
+  a = n(88693),
   s = n(611928),
   c = n(922122),
   u = n(680180),
@@ -30,7 +30,7 @@ function I() {
       onScroll: t,
       scrollPosition: n,
       resetScrollPosition: I
-    } = (0, a.M)(),
+    } = (0, o.M)(),
     {
       tabs: C,
       selectedTab: S,
@@ -53,7 +53,7 @@ function I() {
       onCollapsedSearchBarClick: k,
       onSearchBarBlur: M,
       tabsClassName: U
-    } = (0, o.U)({
+    } = (0, a.U)({
       isSearchBarVisible: j,
       isSearchBarEmpty: "" === A.trim(),
       searchBarState: R,

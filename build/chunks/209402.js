@@ -9,14 +9,14 @@ var r = n(200651),
   a = n(852860),
   l = n(699553),
   o = n(314852),
-  c = n(434404),
-  A = n(999382);
+  A = n(434404),
+  c = n(999382);
 
 function d() {
-  let e = (0, s.e7)([A.Z], () => A.Z.getGuild()),
+  let e = (0, s.e7)([c.Z], () => c.Z.getGuild()),
     t = null == e ? void 0 : e.id,
-    n = (0, s.e7)([A.Z], () => A.Z.getProfileError()),
-    d = (0, s.e7)([A.Z], () => A.Z.getGuildProfile()),
+    n = (0, s.e7)([c.Z], () => c.Z.getProfileError()),
+    d = (0, s.e7)([c.Z], () => c.Z.getGuildProfile()),
     u = (0, s.e7)([o.Z], () => o.Z.getIsUpdating(t)),
     g = i.useMemo(() => null == n ? void 0 : n.getAnyErrorMessage(), [n]),
     f = i.useCallback(() => {
@@ -30,7 +30,7 @@ function d() {
       (0, l.pV)(e.id, t)
     }, [e, d]),
     m = i.useCallback(() => {
-      null != t && c.Z.init(t)
+      null != t && A.Z.init(t)
     }, [t]);
   return (0, r.jsx)(a.Z, {
     submitting: u,

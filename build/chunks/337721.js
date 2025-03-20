@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(434404),
   l = n(970731),
-  a = n(981631),
-  o = n(388032),
+  o = n(981631),
+  a = n(388032),
   s = n(465686),
   c = n(930128);
 
@@ -17,8 +17,8 @@ function u(e) {
     markAsDismissed: n
   } = e;
   return (0, r.jsx)(l.ZP, {
-    header: o.NW.string(o.t.Hgd22t),
-    content: o.NW.string(o.t.SorTPD),
+    header: a.NW.string(a.t.Hgd22t),
+    content: a.NW.string(a.t.SorTPD),
     asset: (0, r.jsx)("div", {
       className: s.image,
       children: (0, r.jsx)("img", {
@@ -26,11 +26,11 @@ function u(e) {
         src: c
       })
     }),
-    buttonCTA: o.NW.string(o.t["9l+df3"]),
+    buttonCTA: a.NW.string(a.t["9l+df3"]),
     onClick: e => {
-      i.Z.open(t.id, a.pNK.DISCOVERY_LANDING_PAGE)
+      i.Z.open(t.id, o.pNK.DISCOVERY_LANDING_PAGE)
     },
-    secondaryButtonCTA: o.NW.string(o.t.duVdqq),
+    secondaryButtonCTA: a.NW.string(a.t.duVdqq),
     onSecondaryClick: () => {},
     markAsDismissed: n
   })

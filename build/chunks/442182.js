@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  ZP: () => Z
+  ZP: () => W
 }), n(566702), n(230036), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  c = n(239091),
-  A = n(479531),
+  A = n(239091),
+  c = n(479531),
   d = n(616780),
   u = n(100527),
   g = n(906732),
@@ -67,7 +67,7 @@ async function T(e, t, n) {
   try {
     await b.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
-    let e = new A.Z(t);
+    let e = new c.Z(t);
     (0, o.h7j)(t => (0, r.jsx)(o.ConfirmModal, D(B({}, t), {
       header: y.NW.string(y.t.R0RpRU),
       confirmText: y.NW.string(y.t.BddRzc),
@@ -86,13 +86,13 @@ function S(e) {
     member: t,
     guildId: s,
     roleId: l,
-    locked: A
+    locked: c
   } = e, u = i.useMemo(() => ({
     [s]: [t.id]
   }), [s, t.id]);
 
   function g(e) {
-    if (e.stopPropagation(), !A) {
+    if (e.stopPropagation(), !c) {
       if (e.shiftKey) {
         T(t, s, l);
         return
@@ -123,7 +123,7 @@ function S(e) {
 
   function h(e) {
     let i = p.default.getUser(t.id);
-    null != i && (0, c.jW)(e, async () => {
+    null != i && (0, A.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("26976"), n.e("2427")]).then(n.bind(n, 415118));
@@ -159,11 +159,11 @@ function S(e) {
         }), (0, r.jsx)("div", {
           className: w.removeButtonContainer,
           children: (0, r.jsx)(o.ua7, {
-            text: A ? y.NW.string(y.t.wkrQaG) : y.NW.string(y.t["7sFNfX"]),
+            text: c ? y.NW.string(y.t.wkrQaG) : y.NW.string(y.t["7sFNfX"]),
             position: "top",
             children: e => (0, r.jsx)(o.P3F, D(B({}, e), {
               className: a()(w.removeButton, {
-                [w.removeButtonDisabled]: A
+                [w.removeButtonDisabled]: c
               }),
               onClick: g,
               children: (0, r.jsx)(o.k$p, {
@@ -214,14 +214,14 @@ function R(e) {
     query: s,
     headerHeight: a,
     locked: l,
-    onScroll: c,
-    roleMembers: A,
+    onScroll: A,
+    roleMembers: c,
     handleAddClick: d
   } = e, {
     analyticsLocations: f
   } = (0, g.ZP)(u.Z.MEMBER_LIST), m = i.useMemo(() => s.trim().toLowerCase(), [s]);
   (0, x.rY)(t, m);
-  let p = i.useMemo(() => A.filter(e => (0, x.eg)(m, e)), [A, m]),
+  let p = i.useMemo(() => c.filter(e => (0, x.eg)(m, e)), [c, m]),
     h = i.useMemo(() => p.sort((e, t) => e.name.localeCompare(t.name)), [p]);
   return (0, r.jsx)(g.Gt, {
     value: f,
@@ -254,7 +254,7 @@ function R(e) {
           locked: l
         }, s.id)
       },
-      onScroll: c
+      onScroll: A
     })
   })
 }
@@ -285,19 +285,19 @@ function Q(e) {
   })
 }
 
-function Z(e) {
+function W(e) {
   let {
     guild: t,
     role: s,
-    locked: c,
-    setSelectedSection: A
+    locked: A,
+    setSelectedSection: c
   } = e, [d, u] = i.useState(""), {
     headerHeight: g,
     headerRef: f
   } = (0, N.Z)(0), {
     scrolledToTop: m,
     handleScroll: p
-  } = (0, j.V)(), b = s.managed || c, v = (0, x.e)(t.id, s.id), E = (0, l.e7)([C.Z], () => {
+  } = (0, j.V)(), b = s.managed || A, v = (0, x.e)(t.id, s.id), E = (0, l.e7)([C.Z], () => {
     var e, n;
     return null !== (n = null === (e = C.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[s.id]) && void 0 !== n ? n : 0
   }) > v.length, T = () => {
@@ -330,7 +330,7 @@ function Z(e) {
             guild: t,
             role: s,
             selectedSection: I.ZI.MEMBERS,
-            setSelectedSection: A
+            setSelectedSection: c
           }), (0, r.jsx)(Q, {
             query: d,
             setQuery: u,

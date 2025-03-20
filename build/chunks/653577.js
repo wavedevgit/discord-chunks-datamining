@@ -26,17 +26,15 @@ function v(e) {
     subtitle: v,
     onClick: y
   } = e, _ = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), O = null != _ && _.length > 0, j = (0, c.ZP)(t, !0), C = null != v && v.length > 0;
-  i.useEffect(() => {
-    O && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
-      guild_id: t.guild_id,
-      channel_id: t.id
-    })
-  }, [t.id, O, t.guild_id]);
-  let x = (0, s.bWb)().enabled ? 12 : 14;
-  if (null == t.guild_id) return null;
-  let S = l()(m.statusDiv, n && j ? m.hoverable : null);
+  if (i.useEffect(() => {
+      O && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+        guild_id: t.guild_id,
+        channel_id: t.id
+      })
+    }, [t.id, O, t.guild_id]), null == t.guild_id) return null;
+  let x = l()(m.statusDiv, n && j ? m.hoverable : null);
   return O ? (0, r.jsx)(s.P3F, {
-    className: S,
+    className: x,
     onClick: j ? y : void 0,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
@@ -48,18 +46,16 @@ function v(e) {
       })
     })
   }) : n && j && (!C || o) ? (0, r.jsxs)(s.P3F, {
-    className: S,
+    className: x,
     onClick: y,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
       children: g.NW.string(g.t.Mgpxi4)
     }), (0, r.jsx)(s.vdY, {
-      size: "custom",
       color: "currentColor",
       className: m.pencilIcon,
-      width: x,
-      height: x
+      size: "xxs"
     })]
   }) : C ? (0, r.jsx)(d.Z, {
     children: v

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(512722),
   o = n.n(l),
-  c = n(392711),
-  A = n.n(c),
+  A = n(392711),
+  c = n.n(A),
   d = n(442837),
   u = n(692547),
   g = n(215569),
@@ -35,13 +35,13 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
     let {
       guild: s,
       canEnable: l
-    } = e, c = (0, j.YB)(s.id), {
+    } = e, A = (0, j.YB)(s.id), {
       loading: d,
       updateSubscriptionsSettings: v
-    } = (0, j.QV)(), [N, B] = i.useState(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), [D, T] = i.useState(null !== (t = null == c ? void 0 : c.store_page_primary_color) && void 0 !== t ? t : P), [S, L] = i.useState(null == c ? void 0 : c.store_page_trailer_url), R = null == S || null != S.match(w), [Q, Z] = i.useState(null !== (n = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== n && n), W = i.useRef(null == c ? void 0 : c.store_page_slug).current, k = N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && D !== P || (null == c ? void 0 : c.store_page_primary_color) != null && D !== (null == c ? void 0 : c.store_page_primary_color) || S !== (null == c ? void 0 : c.store_page_trailer_url) || null != Q && Q !== (null == c ? void 0 : c.store_page_show_subscriber_count), M = async () => {
-      o()(null != c, "Settings must be defined");
+    } = (0, j.QV)(), [N, B] = i.useState(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), [D, T] = i.useState(null !== (t = null == A ? void 0 : A.store_page_primary_color) && void 0 !== t ? t : P), [S, L] = i.useState(null == A ? void 0 : A.store_page_trailer_url), R = null == S || null != S.match(w), [Q, W] = i.useState(null !== (n = null == A ? void 0 : A.store_page_show_subscriber_count) && void 0 !== n && n), Z = i.useRef(null == A ? void 0 : A.store_page_slug).current, k = N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) || (null == A ? void 0 : A.store_page_primary_color) == null && D !== P || (null == A ? void 0 : A.store_page_primary_color) != null && D !== (null == A ? void 0 : A.store_page_primary_color) || S !== (null == A ? void 0 : A.store_page_trailer_url) || null != Q && Q !== (null == A ? void 0 : A.store_page_show_subscriber_count), M = async () => {
+      o()(null != A, "Settings must be defined");
       let e = {};
-      N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = N), ((null == c ? void 0 : c.store_page_primary_color) == null && D !== P || (null == c ? void 0 : c.store_page_primary_color) != null && D !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = D), S !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = S), Q !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = Q), !A().isEmpty(e) && (await v(s.id, e), "store_page_enabled" in e && x.default.track(E.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+      N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = N), ((null == A ? void 0 : A.store_page_primary_color) == null && D !== P || (null == A ? void 0 : A.store_page_primary_color) != null && D !== (null == A ? void 0 : A.store_page_primary_color)) && (e.store_page_primary_color = D), S !== (null == A ? void 0 : A.store_page_trailer_url) && (e.store_page_trailer_url = S), Q !== (null == A ? void 0 : A.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = Q), !c().isEmpty(e) && (await v(s.id, e), "store_page_enabled" in e && x.default.track(E.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -61,7 +61,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }({
         enabled: N
       }, (0, C.hH)(s.id))))
-    }, _ = E.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(W), G = null != S && S === (null == c ? void 0 : c.store_page_trailer_url), {
+    }, _ = E.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(Z), G = null != S && S === (null == A ? void 0 : A.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: F
     } = (0, b.gX)(s.id), U = F || !R;
     return (0, r.jsxs)("div", {
@@ -166,7 +166,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           className: O.premiumMemberCountSwitchContainer,
           value: Q,
           hideBorder: !0,
-          onChange: e => Z(e),
+          onChange: e => W(e),
           disabled: F,
           children: (0, r.jsxs)("div", {
             className: O.iconSwitchLabel,
@@ -200,7 +200,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             submitting: d,
             onReset: () => {
               var e, t;
-              B(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), T(null !== (e = null == c ? void 0 : c.store_page_primary_color) && void 0 !== e ? e : P), L(null == c ? void 0 : c.store_page_trailer_url), Z(null !== (t = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== t && t)
+              B(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), T(null !== (e = null == A ? void 0 : A.store_page_primary_color) && void 0 !== e ? e : P), L(null == A ? void 0 : A.store_page_trailer_url), W(null !== (t = null == A ? void 0 : A.store_page_show_subscriber_count) && void 0 !== t && t)
             },
             onSave: M,
             disabled: U

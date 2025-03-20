@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(866894),
   l = n(65912),
   o = n(572456),
-  c = n(59192),
-  A = n(11265),
+  A = n(59192),
+  c = n(11265),
   d = n(495892);
 let u = i.memo(function(e) {
   let {
@@ -37,7 +37,7 @@ let u = i.memo(function(e) {
       p(t)
     }) : p(t)
   }, [b, g, N, t, p]);
-  return (0, r.jsx)(A.Z, {
+  return (0, r.jsx)(c.Z, {
     renderHeader: (0, r.jsx)(d.Z, {
       rule: x,
       forceSetup: C && !b && !v,
@@ -50,7 +50,7 @@ let u = i.memo(function(e) {
     isStuck: b && g,
     isExpanded: b,
     onExpand: I,
-    children: b && (0, r.jsx)(c.Z, {
+    children: b && (0, r.jsx)(A.Z, {
       rule: x,
       isLoading: h,
       onChangeRule: E

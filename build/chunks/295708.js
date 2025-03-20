@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(273504),
   l = n(981631),
   o = n(388032),
-  c = n(706930),
-  A = n(302126);
+  A = n(706930),
+  c = n(302126);
 
 function d(e) {
   let {
@@ -19,11 +19,11 @@ function d(e) {
   } = e, [d, u] = i.useState(t.name);
   return (0, r.jsxs)(s.xJW, {
     children: [(0, r.jsx)(s.Text, {
-      className: A.triggerHeader,
+      className: c.triggerHeader,
       variant: "text-sm/semibold",
       children: o.NW.string(o.t.WVAHxM)
     }), (0, r.jsx)(s.oil, {
-      className: c.ruleNameInput,
+      className: A.ruleNameInput,
       onChange: e => {
         var r, i;
         u(e), n((r = function(e) {

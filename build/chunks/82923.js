@@ -41,7 +41,7 @@ class o {
     a(this, "animation", void 0), this.animation = e
   }
 }
-class c {
+class A {
   _map(e) {
     return this.animations.map(e)
   }
@@ -55,7 +55,7 @@ class c {
     a(this, "animations", void 0), this.animations = e
   }
 }
-class A {
+class c {
   async start() {
     for (let e of (this.stopped = !1, this.animations)) {
       if (this.stopped) return;
@@ -81,10 +81,10 @@ let u = (r = l({}, s.Z), i = i = {
     return d(e, t, s.Z.spring)
   },
   parallel: function(e) {
-    return new c(e)
+    return new A(e)
   },
   sequence: function(e) {
-    return new A(e)
+    return new c(e)
   }
 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
   var n = Object.keys(e);

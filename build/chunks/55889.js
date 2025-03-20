@@ -9,9 +9,9 @@ var r = n(200651),
   a = n(941524),
   l = n(563115),
   o = n(388032),
-  c = n(367899);
+  A = n(367899);
 
-function A(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ let u = i.memo(function(e) {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
-    onChange: (e, n) => i(d(A({}, t), {
+    onChange: (e, n) => i(d(c({}, t), {
       exemptChannels: e,
       exemptRoles: n
     })),
@@ -61,7 +61,7 @@ let u = i.memo(function(e) {
   return n && (u = (0, r.jsx)(l.Z, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
-    onChange: e => i(d(A({}, t), {
+    onChange: e => i(d(c({}, t), {
       exemptRoles: e
     })),
     placeholder: o.NW.string(o.t.aFO1Iy),
@@ -70,7 +70,7 @@ let u = i.memo(function(e) {
     children: [u, (0, r.jsx)(s.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",
-      className: c.exemptionHint,
+      className: A.exemptionHint,
       children: o.NW.string(o.t.GKlYaW)
     })]
   })

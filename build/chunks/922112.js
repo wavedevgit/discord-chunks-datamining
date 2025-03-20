@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(603211),
-  c = n(734893),
-  A = n(592125),
+  A = n(734893),
+  c = n(592125),
   d = n(768581),
   u = n(8426),
   g = n(969632),
@@ -60,8 +60,8 @@ let C = function(e) {
     title: N,
     channelId: j,
     description: E
-  } = s, I = A.Z.getChannel(j), O = null;
-  null != I && (0, c.k3)(I) || (O = f.NW.string(f.t.kTdL8f));
+  } = s, I = c.Z.getChannel(j), O = null;
+  null != I && (0, A.k3)(I) || (O = f.NW.string(f.t.kTdL8f));
   let y = null == E || 0 === E.length,
     w = d.ZP.getResourceChannelIconURL({
       channelId: s.channelId,

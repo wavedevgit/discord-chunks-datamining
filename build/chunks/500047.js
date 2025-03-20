@@ -18,12 +18,12 @@ function o(e) {
     onMFAEnabled: n
   } = e, {
     isUserMFAEnabled: o,
-    isModerationMFAEnabled: c
-  } = (0, a.N)(), A = i.useCallback(async () => {
+    isModerationMFAEnabled: A
+  } = (0, a.N)(), c = i.useCallback(async () => {
     await t(), null == n || n()
   }, [t, n]), d = i.useCallback(e => (0, r.jsx)(s.Z, {
-    onClick: A,
+    onClick: c,
     children: e
-  }), [A]);
-  return o && c ? l : d
+  }), [c]);
+  return o && A ? l : d
 }

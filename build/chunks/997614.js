@@ -78,9 +78,9 @@ function T(e) {
   } = (0, a.j)(), D = t.getGuildId(), {
     mute: W,
     suppress: U
-  } = (0, _.Z)(t), B = (0, l.e7)([y.Z], () => y.Z.isDeaf()), H = W || U || B, F = (0, p.sR)({
-    isSoundboardButtonDisabled: H
-  }), [G, V] = (0, d.cv)(F), {
+  } = (0, _.Z)(t), B = (0, l.e7)([y.Z], () => y.Z.isDeaf()), F = W || U || B, H = (0, p.sR)({
+    isSoundboardButtonDisabled: F
+  }), [G, V] = (0, d.cv)(H), {
     mode: z
   } = (0, m.ZP)({
     location: "ActionBarSoundboardButton"
@@ -127,7 +127,7 @@ function T(e) {
       let {
         closePopout: n
       } = e;
-      return H ? null : (0, r.jsx)(C.Z, {
+      return F ? null : (0, r.jsx)(C.Z, {
         children: (0, r.jsx)(f.Z, {
           guildId: D,
           channel: t,
@@ -144,7 +144,7 @@ function T(e) {
       themeable: T,
       label: X(),
       iconComponent: M,
-      disabled: H,
+      disabled: F,
       onContextMenu: Q
     }, e), {
       onClick: t => {
@@ -162,7 +162,7 @@ function T(e) {
       themeable: T,
       label: X(),
       iconComponent: s.KY1,
-      disabled: H,
+      disabled: F,
       onContextMenu: Q
     }, e), {
       onClick: t => {

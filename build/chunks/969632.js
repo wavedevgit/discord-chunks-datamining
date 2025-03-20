@@ -8,9 +8,9 @@ var r, i = n(392711),
   a = n(442837),
   l = n(570140),
   o = n(563534),
-  c = n(999382);
+  A = n(999382);
 
-function A(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,7 +26,7 @@ function d(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
@@ -40,7 +40,7 @@ let u = {
   p = {};
 
 function h() {
-  g = null, f = Object.assign({}, u), m = !1, g = c.Z.getGuildId(), f = s().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
+  g = null, f = Object.assign({}, u), m = !1, g = A.Z.getGuildId(), f = s().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
 }
 
 function C(e, t) {
@@ -62,7 +62,7 @@ function v() {
 }
 class x extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (p = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
+    null != e && (p = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(A.Z, o.Z)
   }
   getState() {
     return {
@@ -95,7 +95,7 @@ class x extends(r = a.ZP.PersistedStore) {
     return null == n ? null : n
   }
 }
-A(x, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), A(x, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
+c(x, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), c(x, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
 let N = new x(l.Z, {
   GUILD_SETTINGS_INIT: h,
   GUILD_SETTINGS_SET_SECTION: h,

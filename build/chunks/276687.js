@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 });
 var r = n(200651);
 n(192379);
@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(999382),
   l = n(524329),
   o = n(575258),
-  c = n(388032);
-let A = () => {
+  A = n(388032);
+let c = () => {
   let {
     guild: e
   } = (0, i.e7)([a.Z], () => a.Z.getProps()), {
@@ -22,7 +22,7 @@ let A = () => {
     onSave: () => (0, l.Es)(e.id, n),
     onReset: l.Xb,
     submitting: t,
-    onSaveText: c.NW.string(c.t["7NqTJi"]),
-    message: c.NW.string(c.t["Z0/WmZ"])
+    onSaveText: A.NW.string(A.t["7NqTJi"]),
+    message: A.NW.string(A.t["Z0/WmZ"])
   })
 }

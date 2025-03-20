@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(512722),
   o = n.n(l),
-  c = n(780384),
-  A = n(481060),
+  A = n(780384),
+  c = n(481060),
   d = n(99690),
   u = n(410030),
   g = n(726542),
@@ -48,12 +48,12 @@ function b(e) {
     locked: f
   } = e;
   if ((null == u ? void 0 : u.application) != null) o()(null != u.application.bot, "bot is null"), i = (0, r.jsx)(d.Z, {
-    size: A.EFr.SIZE_24,
+    size: c.EFr.SIZE_24,
     user: u.application.bot,
     className: h.verifiedIcon
   });
   else if (null != l) {
-    let e = (0, c.ap)(s) ? l.icon.lightSVG : l.icon.darkSVG;
+    let e = (0, A.ap)(s) ? l.icon.lightSVG : l.icon.darkSVG;
     i = (0, r.jsx)("img", {
       className: h.verifiedIcon,
       src: e,
@@ -64,22 +64,22 @@ function b(e) {
   }
   return (0, r.jsxs)("div", {
     className: a()(h.verifiedRow, (null == l ? void 0 : l.hasMetadata) === !0 || (null == u ? void 0 : u.role_connections_metadata) != null && (null == u ? void 0 : u.role_connections_metadata.length) > 0 ? h.verifiedRowWithMetadata : null),
-    children: [i, (0, r.jsx)(A.Text, {
+    children: [i, (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       className: h.verifiedText,
       children: p.NW.format(p.t.Nj0a3t, {
         platformName: null !== (n = null == l ? void 0 : l.name) && void 0 !== n ? n : null == u ? void 0 : null === (t = u.application) || void 0 === t ? void 0 : t.name
       })
-    }), (0, r.jsx)(A.zxk, {
+    }), (0, r.jsx)(c.zxk, {
       "aria-label": p.NW.string(p.t.N86XcH),
-      size: A.zxk.Sizes.TINY,
-      look: A.zxk.Looks.BLANK,
+      size: c.zxk.Sizes.TINY,
+      look: c.zxk.Looks.BLANK,
       onClick: g,
       disabled: f,
       className: h.closeButton,
-      children: (0, r.jsx)(A.ua7, {
+      children: (0, r.jsx)(c.ua7, {
         text: p.NW.string(p.t.N86XcH),
-        children: e => (0, r.jsx)(A.Dio, C({
+        children: e => (0, r.jsx)(c.Dio, C({
           size: "md",
           color: "currentColor",
           className: h.closeIcon
@@ -95,7 +95,7 @@ function v(e) {
     inputRef: a,
     existingPendingConfiguration: l,
     locked: o,
-    onConfigurationChange: c,
+    onConfigurationChange: A,
     platform: d,
     applicationId: u,
     metadataField: g,
@@ -105,18 +105,18 @@ function v(e) {
   let [v, x] = i.useState(b.toString());
   return i.useEffect(() => {
     x(v)
-  }, [v]), (0, r.jsx)(A.oil, {
+  }, [v]), (0, r.jsx)(c.oil, {
     inputRef: a,
     type: "number",
     className: h.numericalRuleInput,
-    size: A.oil.Sizes.MINI,
+    size: c.oil.Sizes.MINI,
     value: v,
     onChange: e => {
       if (null != l) {
         if ("" !== e) {
           var t;
           let n = Math.round(Number(e));
-          C === m.iO.GREATER_THAN ? n = Math.max(0, n - 1) : C === m.iO.LESS_THAN && (n = Math.max(1, n + 1)), c({
+          C === m.iO.GREATER_THAN ? n = Math.max(0, n - 1) : C === m.iO.LESS_THAN && (n = Math.max(1, n + 1)), A({
             connectionType: null !== (t = null == d ? void 0 : d.type) && void 0 !== t ? t : m.Kt,
             applicationId: u,
             connectionMetadataField: g,
@@ -140,24 +140,24 @@ function x(e) {
     platform: a,
     applicationId: l,
     onConfigurationChange: o,
-    locked: c
+    locked: A
   } = e;
   return (0, r.jsxs)("div", {
     className: h.ruleContainer,
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(A.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-md/bold",
         className: h.ruleItemHeader,
         children: t
       }), (0, r.jsx)("div", {
         className: h.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(A.Text, {
+        children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           className: h.numericalRuleSubText,
           children: n
         })
       })]
-    }), (0, r.jsx)(A.rsf, {
+    }), (0, r.jsx)(c.rsf, {
       className: h.ruleItemSwitch,
       checked: (null == s ? void 0 : s.configuration.value) === "1",
       onChange: e => {
@@ -171,7 +171,7 @@ function x(e) {
           value: "1"
         }), o(r, null !== (n = null == s ? void 0 : s.index) && void 0 !== n ? n : -1)
       },
-      disabled: c
+      disabled: A
     })]
   }, i)
 }
@@ -184,7 +184,7 @@ function N(e) {
     metadataField: a,
     existingPendingConfiguration: l,
     platform: o,
-    applicationId: c,
+    applicationId: A,
     onConfigurationChange: d,
     locked: u,
     operator: g
@@ -196,7 +196,7 @@ function N(e) {
     onConfigurationChange: d,
     platform: o,
     operator: g,
-    applicationId: c
+    applicationId: A
   }, a), x = null != s ? p.NW.format(s, {
     metadataHook: () => b
   }) : (0, r.jsxs)(r.Fragment, {
@@ -209,19 +209,19 @@ function N(e) {
     className: h.ruleContainer,
     children: [(0, r.jsxs)("div", {
       className: h.ruleContainerLabel,
-      children: [(0, r.jsx)(A.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-md/bold",
         className: h.ruleItemHeader,
         children: t
       }), (0, r.jsx)("div", {
         className: h.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(A.Text, {
+        children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           className: h.numericalRuleSubText,
           children: x
         })
       })]
-    }), (0, r.jsx)(A.rsf, {
+    }), (0, r.jsx)(c.rsf, {
       className: h.ruleItemSwitch,
       checked: C,
       onChange: e => {
@@ -232,7 +232,7 @@ function N(e) {
             r = Math.round(Number(null === (t = f.current) || void 0 === t ? void 0 : t.value));
           e === m.iO.GREATER_THAN ? r = Math.max(0, r - 1) : e === m.iO.LESS_THAN && (r = Math.max(1, r + 1)), i = {
             connectionType: null !== (n = null == o ? void 0 : o.type) && void 0 !== n ? n : m.Kt,
-            applicationId: c,
+            applicationId: A,
             connectionMetadataField: a,
             operator: e,
             value: r.toString()
@@ -575,14 +575,14 @@ function B(e) {
     l = (0, u.ZP)();
   if (n.length < 1) return null;
   let o = n[0].configuration.applicationId,
-    c = null != o ? null == a ? void 0 : a.find(e => {
+    A = null != o ? null == a ? void 0 : a.find(e => {
       var t;
       return (null === (t = e.application) || void 0 === t ? void 0 : t.id) === o
     }) : void 0;
-  if (null != o && null == c) return null;
-  let A = null;
+  if (null != o && null == A) return null;
+  let c = null;
   try {
-    A = g.Z.get(n[0].configuration.connectionType)
+    c = g.Z.get(n[0].configuration.connectionType)
   } catch (e) {}
   let d = new Map;
   n.forEach(e => {
@@ -594,7 +594,7 @@ function B(e) {
       locked: s
     },
     p = null;
-  switch (null == A ? void 0 : A.type) {
+  switch (null == c ? void 0 : c.type) {
     case f.ABu.STEAM:
       p = (0, r.jsx)(j, C({}, m));
       break;
@@ -616,7 +616,7 @@ function B(e) {
     default:
       var v, x;
       p = (0, r.jsx)(P, (v = C({}, m), x = x = {
-        integration: c
+        integration: A
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(v, Object.getOwnPropertyDescriptors(x)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -632,8 +632,8 @@ function B(e) {
     className: h.container,
     children: [(0, r.jsx)(b, {
       theme: l,
-      platform: A,
-      integration: c,
+      platform: c,
+      integration: A,
       onRemove: () => i(null, t.index),
       locked: s
     }), p]

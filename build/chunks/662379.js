@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(388032),
   l = n(635395),
   o = n(961618),
-  c = n(217684),
-  A = n(174618);
+  A = n(217684),
+  c = n(174618);
 
 function d(e) {
   let {
@@ -40,13 +40,13 @@ function d(e) {
 
 function u() {
   let e = [{
-    imageSrc: A,
+    imageSrc: c,
     description: a.NW.string(a.t.lT0ZNT)
   }, {
     imageSrc: o,
     description: a.NW.string(a.t.ihN2WV)
   }, {
-    imageSrc: c,
+    imageSrc: A,
     description: a.NW.string(a.t.c8krDQ)
   }];
   return (0, r.jsxs)("div", {

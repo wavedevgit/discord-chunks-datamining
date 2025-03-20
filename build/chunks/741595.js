@@ -9,18 +9,18 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(308083),
-  c = n(154662);
+  A = n(154662);
 
-function A(e) {
+function c(e) {
   let {
     playstyle: t,
     onUpdatePlaystyle: n
-  } = e, s = (0, l.dQu)(l.TVs.colors.WHITE), A = i.useMemo(() => Object.values((0, o.f4)()), []);
+  } = e, s = (0, l.dQu)(l.TVs.colors.WHITE), c = i.useMemo(() => Object.values((0, o.f4)()), []);
   return (0, r.jsx)("div", {
-    className: c.playstyleSelect,
-    children: A.map(e => (0, r.jsxs)(l.P3F, {
-      className: a()(c.playstyleOption, c.selectableOption, {
-        [c.selectedOption]: e.type === t
+    className: A.playstyleSelect,
+    children: c.map(e => (0, r.jsxs)(l.P3F, {
+      className: a()(A.playstyleOption, A.selectableOption, {
+        [A.selectedOption]: e.type === t
       }),
       onClick: () => n(e.type),
       children: [(0, r.jsx)(l.X6q, {
@@ -28,7 +28,7 @@ function A(e) {
         children: e.emoji
       }), (0, r.jsx)(l.X6q, {
         variant: "heading-md/medium",
-        className: c.playstyleTitle,
+        className: A.playstyleTitle,
         children: e.title
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
@@ -38,7 +38,7 @@ function A(e) {
         size: "md",
         color: "currentColor",
         secondaryColor: s.hex(),
-        className: c.checkmark
+        className: A.checkmark
       })]
     }, e.type))
   })
@@ -52,22 +52,22 @@ let d = e => {
     error: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: c.slideContent,
+    className: A.slideContent,
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-xxl/medium",
-      className: c.title,
+      className: A.title,
       children: t
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: c.subtitle,
+      className: A.subtitle,
       children: n
     }), null != a && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "status-danger",
-      className: c.errorText,
+      className: A.errorText,
       children: a
-    }), (0, r.jsx)(A, {
+    }), (0, r.jsx)(c, {
       playstyle: s,
       onUpdatePlaystyle: i
     })]

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r),
   l = n(243814),
-  a = n(447543),
-  o = n(287734),
+  o = n(447543),
+  a = n(287734),
   s = n(703656),
   c = n(131704),
   u = n(592125),
@@ -111,10 +111,10 @@ let v = {
           channel_id: r,
           timeout: i = 0,
           force: l = !1,
-          navigate: a = !1
+          navigate: o = !1
         }
       } = e;
-      if (!r) return o.default.selectVoiceChannel(null), null;
+      if (!r) return a.default.selectVoiceChannel(null), null;
       let _ = h.Z.getVoiceChannelId();
       if (null != _ && _ !== r && !1 === l) throw new m.Z({
         errorCode: N.lTL.SELECT_VOICE_FORCE_REQUIRED
@@ -141,7 +141,7 @@ let v = {
             errorCode: N.lTL.INVALID_PERMISSIONS
           }, "Connect permission required to join channel")
         }
-        return o.default.selectVoiceChannel(t.id), a && (0, s.dL)(N.Z5c.CHANNEL(t.guild_id, t.id)), n
+        return a.default.selectVoiceChannel(t.id), o && (0, s.dL)(N.Z5c.CHANNEL(t.guild_id, t.id)), n
       })
     }
   },
@@ -188,7 +188,7 @@ let v = {
         if (n.guild_id && !p.Z.can(N.Plq.VIEW_CHANNEL, t)) throw new m.Z({
           errorCode: N.lTL.INVALID_CHANNEL
         }, "No permission to see channel");
-        return n.guild_id ? (0, s.dL)(N.Z5c.CHANNEL(n.guild_id, t.id)) : o.default.selectPrivateChannel(t.id), n
+        return n.guild_id ? (0, s.dL)(N.Z5c.CHANNEL(n.guild_id, t.id)) : a.default.selectPrivateChannel(t.id), n
       }) : ((0, s.uL)(N.Z5c.ME), null)
     }
   },
@@ -214,7 +214,7 @@ let v = {
         }
         return i
       }(e.args, ["channel_id"]);
-      return a.ZP.createInvite(t, n, "RPC").catch(() => {
+      return o.ZP.createInvite(t, n, "RPC").catch(() => {
         throw new m.Z({
           errorCode: N.lTL.INVALID_PERMISSIONS
         }, "Unable to generate an invite for ".concat(t, ". Does this user have permissions?"))

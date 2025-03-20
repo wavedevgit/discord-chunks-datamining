@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(192379),
   i = n(725803),
@@ -10,13 +10,13 @@ var r = n(192379),
   l = n(674563),
   o = n(198139);
 
-function c(e) {
+function A(e) {
   var t;
   let {
     application: n,
-    loading: c
+    loading: A
   } = (0, i.Z)(e, l.wW.GUILD_ROLE_SUBSCRIPTIONS), {
-    payoutsByPeriod: A,
+    payoutsByPeriod: c,
     loading: d
   } = (0, a.Z)(null == n ? void 0 : n.id, {
     groupType: o.uw.GUILD_PRODUCT,
@@ -29,16 +29,16 @@ function c(e) {
     let {
       currentPeriod: e,
       previousPeriods: t
-    } = (0, s.Br)(A), n = (0, s.Uj)(e, t[0]);
+    } = (0, s.Br)(c), n = (0, s.Uj)(e, t[0]);
     return {
       currentPeriod: e,
       previousPeriods: t,
       metrics: n
     }
-  }, [A]);
+  }, [c]);
   return {
-    loading: c || d,
-    payoutsByPeriod: A,
+    loading: A || d,
+    payoutsByPeriod: c,
     currentPeriod: u,
     previousPeriods: g,
     metrics: f,

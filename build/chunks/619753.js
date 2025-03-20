@@ -143,7 +143,7 @@ function D(e) {
     focusedIndex: 0,
     setFocus: D,
     onSelect: W
-  }), H = P.Z.getQuery(l), F = P.Z.getSearchType(l) === w.aib.FAVORITES, G = (0, p.nC)(null !== (t = null == H ? void 0 : H.content) && void 0 !== t ? t : ""), V = S.map(e => {
+  }), F = P.Z.getQuery(l), H = P.Z.getSearchType(l) === w.aib.FAVORITES, G = (0, p.nC)(null !== (t = null == F ? void 0 : F.content) && void 0 !== t ? t : ""), V = S.map(e => {
     let {
       channel: t,
       results: n,
@@ -162,7 +162,7 @@ function D(e) {
       offset: C,
       jumpToMessage: N,
       listNavigator: B,
-      favoriteSearch: F
+      favoriteSearch: H
     }, "".concat(t.id, "-").concat(i))
   });
   V.push();
@@ -200,7 +200,7 @@ function D(e) {
           count: b
         })
       })]
-    }) : null, !x && !F && (0, r.jsx)(T.Z, {
+    }) : null, !x && !H && (0, r.jsx)(T.Z, {
       changePage: E,
       offset: C,
       totalResults: y,
@@ -257,14 +257,14 @@ function U(e) {
     jumpToMessage: T,
     listNavigator: R,
     favoriteSearch: D
-  } = e, U = x.cC.useSetting(), B = (0, b.p)(), H = i.useCallback(e => {
+  } = e, U = x.cC.useSetting(), B = (0, b.p)(), F = i.useCallback(e => {
     if (e === S.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
     null != t && N.Z.can(w.Plq.VIEW_CHANNEL, t) && (0, y.Kh)(t.id)
-  }, []), F = null != o ? (0, f.F6)(o, Z.default, I.Z, !1) : "???", G = D && null != o.guild_id ? null === (t = E.Z.getGuild(o.guild_id)) || void 0 === t ? void 0 : t.name : null, V = (null == o ? void 0 : o.parent_id) != null ? O.Z.getChannel(o.parent_id) : null, z = null !== (n = null == V ? void 0 : V.name) && void 0 !== n ? n : null, Y = null !== (l = (0, m.KS)(o)) && void 0 !== l ? l : s.VL1, q = N.Z.can(w.Plq.MANAGE_MESSAGES, o), {
+  }, []), H = null != o ? (0, f.F6)(o, Z.default, I.Z, !1) : "???", G = D && null != o.guild_id ? null === (t = E.Z.getGuild(o.guild_id)) || void 0 === t ? void 0 : t.name : null, V = (null == o ? void 0 : o.parent_id) != null ? O.Z.getChannel(o.parent_id) : null, z = null !== (n = null == V ? void 0 : V.name) && void 0 !== n ? n : null, Y = null !== (l = (0, m.KS)(o)) && void 0 !== l ? l : s.VL1, q = N.Z.can(w.Plq.MANAGE_MESSAGES, o), {
     content: K
   } = (0, C.ZP)({
-    content: F,
+    content: H,
     embeds: []
   }, {
     postProcessor: c,
@@ -274,7 +274,7 @@ function U(e) {
     let e = X.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && J(e.offsetWidth < e.scrollWidth)
   }, []);
-  let $ = [F, z, G].filter(e => null != e).join(", ");
+  let $ = [H, z, G].filter(e => null != e).join(", ");
   return (0, r.jsx)(g.aQ.Provider, {
     value: (0, _.Z)(U, q),
     children: (0, r.jsxs)("ul", {
@@ -282,7 +282,7 @@ function U(e) {
       className: M.searchResultGroup,
       "aria-label": $,
       children: [(0, r.jsx)(s.P3F, {
-        onClick: () => H(o.id),
+        onClick: () => F(o.id),
         children: (0, r.jsxs)("div", {
           className: M.channelNameContainer,
           children: [(0, r.jsx)(Y, {
@@ -290,7 +290,7 @@ function U(e) {
             size: "xs",
             color: "currentColor"
           }), (0, r.jsx)(s.ua7, {
-            text: F,
+            text: H,
             shouldShow: Q,
             children: e => (0, r.jsxs)("span", L(k({}, e), {
               ref: X,
@@ -299,7 +299,7 @@ function U(e) {
             }))
           }), (0, r.jsx)(W, {
             parentChannel: V,
-            onSelectChannel: H
+            onSelectChannel: F
           })]
         })
       }), a.map((e, t) => {

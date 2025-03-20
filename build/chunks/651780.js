@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(570140),
   o = n(355467),
-  c = n(37234),
-  A = n(821849),
+  A = n(37234),
+  c = n(821849),
   d = n(774078),
   u = n(15640),
   g = n(774380),
@@ -90,7 +90,7 @@ let P = e => {
 function B() {
   i.useEffect(() => {
     l.Z.wait(() => {
-      (0, o.tZ)(), (0, A.Y2)()
+      (0, o.tZ)(), (0, c.Y2)()
     })
   }, []);
   let e = (0, s.e7)([j.Z], () => j.Z.getGuild()),
@@ -114,7 +114,7 @@ function B() {
     }), null != e && (0, r.jsx)(p.Z, {
       guild: e,
       onButtonClick: function() {
-        null != e && ((0, c.xf)(), (0, m.Z)(e.id))
+        null != e && ((0, A.xf)(), (0, m.Z)(e.id))
       }
     }), (0, r.jsx)(h.Z, {
       tiers: (0, x.cP)(null != e && e.hasFeature(E.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= E.B9o),

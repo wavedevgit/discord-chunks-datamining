@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(863249),
   l = n(122051),
   o = n(430824),
-  c = n(389134),
-  A = n(650461),
+  A = n(389134),
+  c = n(650461),
   d = n(388032),
   u = n(154662);
 let g = e => {
@@ -19,9 +19,9 @@ let g = e => {
     guildId: t,
     error: n,
     inSettings: g = !1
-  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, i.e7)([c.Z, A.ZP], () => {
+  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, i.e7)([A.Z, c.ZP], () => {
     var e, n;
-    return g ? c.Z.getState().settings.verificationForm : null === (n = A.ZP.getStateForGuild(t)) || void 0 === n ? void 0 : null === (e = n.progress) || void 0 === e ? void 0 : e.verificationForm
+    return g ? A.Z.getState().settings.verificationForm : null === (n = c.ZP.getStateForGuild(t)) || void 0 === n ? void 0 : null === (e = n.progress) || void 0 === e ? void 0 : e.verificationForm
   });
   return null == f ? null : (0, r.jsxs)("div", {
     className: u.slideContent,

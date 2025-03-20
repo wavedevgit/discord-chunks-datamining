@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(37234),
   o = n(493544),
-  c = n(353093),
-  A = n(593128),
+  A = n(353093),
+  c = n(593128),
   d = n(979264),
   u = n(688465),
   g = n(749681),
@@ -37,8 +37,8 @@ var r = n(200651),
   L = n(946724),
   R = n(999382),
   Q = n(44550),
-  Z = n(853714),
-  W = n(359191),
+  W = n(853714),
+  Z = n(359191),
   k = n(84658),
   M = n(142961),
   _ = n(730910),
@@ -63,8 +63,8 @@ var r = n(200651),
   ea = n(208150),
   el = n(353398),
   eo = n(365774),
-  ec = n(803288),
-  eA = n(804153),
+  eA = n(803288),
+  ec = n(804153),
   ed = n(178387),
   eu = n(993097),
   eg = n(486358),
@@ -134,7 +134,7 @@ let eD = {
         ariaLabel: ey.NW.string(ey.t["KzCF//"])
       },
       eR = t.guild.hasFeature(ej.oNc.COMMUNITY) && t.canViewGuildAnalytics,
-      eQ = (null === (eD = t.guild.profile) || void 0 === eD ? void 0 : eD.badge) != null ? (0, c.ky)(t.guild.id, t.guild.profile.badge, eE.NC.SIZE_16) : null;
+      eQ = (null === (eD = t.guild.profile) || void 0 === eD ? void 0 : eD.badge) != null ? (0, A.ky)(t.guild.id, t.guild.profile.badge, eE.NC.SIZE_16) : null;
     switch (e) {
       case ej.pNK.PROFILE:
         return {
@@ -196,7 +196,7 @@ let eD = {
         };
       case ej.pNK.WIDGET:
         return {
-          section: ej.pNK.WIDGET, impressionName: i.ImpressionNames.GUILD_SETTINGS_WIDGET, label: ey.NW.string(ey.t.ACjbTk), element: eA.Z, predicate: () => t.canManageGuild
+          section: ej.pNK.WIDGET, impressionName: i.ImpressionNames.GUILD_SETTINGS_WIDGET, label: ey.NW.string(ey.t.ACjbTk), element: ec.Z, predicate: () => t.canManageGuild
         };
       case ej.pNK.GUILD_TEMPLATES:
         return {
@@ -209,9 +209,9 @@ let eD = {
         };
       case ej.pNK.VANITY_URL:
         return {
-          section: ej.pNK.VANITY_URL, impressionName: i.ImpressionNames.GUILD_SETTINGS_VANITY_URL, label: ey.NW.string(ey.t["5XZKy8"]), element: ec.Z, notice: {
+          section: ej.pNK.VANITY_URL, impressionName: i.ImpressionNames.GUILD_SETTINGS_VANITY_URL, label: ey.NW.string(ey.t["5XZKy8"]), element: eA.Z, notice: {
             stores: [Q.Z],
-            element: ec.T
+            element: eA.T
           }, predicate: () => t.isGuildAdmin
         };
       case ej.pNK.ACCESS:
@@ -260,7 +260,7 @@ let eD = {
         };
       case ej.pNK.AUDIT_LOG:
         return {
-          section: ej.pNK.AUDIT_LOG, impressionName: i.ImpressionNames.GUILD_SETTINGS_AUDIT_LOG, label: ey.NW.string(ey.t.SPWLyc), element: Z.Z, type: o.bT.CUSTOM, predicate: () => t.canViewAuditLog
+          section: ej.pNK.AUDIT_LOG, impressionName: i.ImpressionNames.GUILD_SETTINGS_AUDIT_LOG, label: ey.NW.string(ey.t.SPWLyc), element: W.Z, type: o.bT.CUSTOM, predicate: () => t.canViewAuditLog
         };
       case ej.pNK.BANS:
         return {
@@ -273,7 +273,7 @@ let eD = {
               let {
                 closeLayer: n
               } = e;
-              return (0, r.jsx)(A.Z, {
+              return (0, r.jsx)(c.Z, {
                 onClose: n,
                 guildId: t.guild.id
               })
@@ -288,13 +288,13 @@ let eD = {
           }) : null
         };
       case ej.pNK.COMMUNITY:
-        let eZ = ey.NW.string(ey.t.ElKTeX);
-        return t.guild.hasFeature(ej.oNc.COMMUNITY) && (eZ = t.isGuildSettingsFoundationEnabled ? ey.NW.string(ey.t["8nY2LC"]) : ey.NW.string(ey.t["/dp6yc"])), {
+        let eW = ey.NW.string(ey.t.ElKTeX);
+        return t.guild.hasFeature(ej.oNc.COMMUNITY) && (eW = t.isGuildSettingsFoundationEnabled ? ey.NW.string(ey.t["8nY2LC"]) : ey.NW.string(ey.t["/dp6yc"])), {
           section: ej.pNK.COMMUNITY,
           impressionName: t.guild.hasFeature(ej.oNc.COMMUNITY) ? i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : i.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
-          label: eZ,
+          label: eW,
           element: z.Z,
-          ariaLabel: eZ,
+          ariaLabel: eW,
           newIndicator: !t.guild.hasFeature(ej.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= eO.U3 && I.qc.hasHotspot(I.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
             stores: [R.Z],
@@ -304,7 +304,7 @@ let eD = {
       case ej.pNK.ONBOARDING:
         return {
           section: ej.pNK.ONBOARDING, label: ey.NW.string(ey.t.LdxCKy), element: ee.Z, ariaLabel: ey.NW.string(ey.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [s.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
-            stores: [W.Z],
+            stores: [Z.Z],
             element: _.Z
           }, predicate: () => (0, C.wC)(t.guild.id), decoration: function(e, t) {
             if (h.Z.getEnabled(e)) return ey.NW.string(ey.t.pPSmxs).toUpperCase();

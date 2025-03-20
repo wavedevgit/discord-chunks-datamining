@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(120356),
   o = n.n(l),
-  c = n(866442),
-  A = n(481060),
+  A = n(866442),
+  c = n(481060),
   d = n(550271),
   u = n(688298),
   g = n(995119),
@@ -64,11 +64,11 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
       })
     }, [t, E.primary, E.secondary, N, s, l, j]), (0, r.jsxs)("div", {
       className: C.slideContent,
-      children: [(0, r.jsx)(A.X6q, {
+      children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/medium",
         className: C.title,
         children: p.NW.string(p.t.ZcHHvr)
-      }), (0, r.jsx)(A.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         className: C.subtitle,
@@ -81,13 +81,13 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
           className: h.badgesContainer,
           children: [(0, r.jsxs)("div", {
             className: h.pickerContainer,
-            children: [(0, r.jsx)(A.Text, {
+            children: [(0, r.jsx)(c.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
               children: p.NW.string(p.t.eyPefn)
             }), (0, r.jsx)("div", {
               className: h.pickerGrid,
-              children: b.map(e => (0, r.jsx)(A.P3F, {
+              children: b.map(e => (0, r.jsx)(c.P3F, {
                 onClick: () => t({
                   badgeKind: e
                 }),
@@ -103,7 +103,7 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
             })]
           }), (0, r.jsxs)("div", {
             className: h.pickerContainer,
-            children: [(0, r.jsx)(A.Text, {
+            children: [(0, r.jsx)(c.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
               children: p.NW.string(p.t["93wr6e"])
@@ -114,19 +114,19 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
                 palette: E,
                 onPrimaryColorChange: e => {
                   t({
-                    badgePrimaryColor: (0, c.Rf)(e)
+                    badgePrimaryColor: (0, A.Rf)(e)
                   })
                 },
                 onSecondaryColorChange: e => {
                   t({
-                    badgeSecondaryColor: (0, c.Rf)(e)
+                    badgeSecondaryColor: (0, A.Rf)(e)
                   })
                 },
                 shouldShow: O,
                 onRequestClose: () => y(!1),
                 children: e => {
                   var t, n;
-                  return (0, r.jsx)(A.P3F, (t = function(e) {
+                  return (0, r.jsx)(c.P3F, (t = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                       var n = null != arguments[t] ? arguments[t] : {},
                         r = Object.keys(n);
@@ -150,7 +150,7 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
                     className: o()(h.badgeAssetContainer, {
                       [h.badgeAssetContainerSelected]: 0 === I
                     }),
-                    children: (0, r.jsx)(A.V3v, {
+                    children: (0, r.jsx)(c.V3v, {
                       size: "custom",
                       width: 20,
                       height: 20
@@ -166,7 +166,7 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
                   }), t))
                 }
-              }), f.sg.map((e, i) => (0, r.jsx)(A.P3F, {
+              }), f.sg.map((e, i) => (0, r.jsx)(c.P3F, {
                 onClick: () => {
                   t({
                     badgePrimaryColor: f.sg[i].primary,
@@ -188,16 +188,16 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
           })]
         }), (0, r.jsxs)("div", {
           className: h.tagContainer,
-          children: [(0, r.jsx)(A.Text, {
+          children: [(0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
             color: "text-muted",
             children: p.NW.string(p.t["3eZP8/"])
-          }), null != x && (0, r.jsx)(A.Text, {
+          }), null != x && (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "status-danger",
             className: C.errorText,
             children: x
-          }), (0, r.jsx)(A.oil, {
+          }), (0, r.jsx)(c.oil, {
             className: h.tagInputWrapper,
             inputClassName: h.tagInput,
             value: null != v ? v : "",
@@ -214,7 +214,7 @@ let b = [f.ZD.SWORD, f.ZD.WATER_DROP, f.ZD.SKULL, f.ZD.TOADSTOOL, f.ZD.MOON, f.Z
               primaryTintColor: E.primary,
               secondaryTintColor: E.secondary
             })
-          }), (0, r.jsx)(A.Text, {
+          }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
             className: h.tagValidationText,

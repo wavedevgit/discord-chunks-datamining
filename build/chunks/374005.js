@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(928873),
-  a = n(393238),
-  o = n(100527),
+  o = n(393238),
+  a = n(100527),
   s = n(906732),
   c = n(540059),
   u = n(720734),
@@ -25,7 +25,7 @@ function N(e) {
   var t, n;
   let {
     analyticsLocations: i
-  } = (0, s.ZP)(o.Z.ACTIVITY_PANEL), l = (0, g.Z)(e => {
+  } = (0, s.ZP)(a.Z.ACTIVITY_PANEL), l = (0, g.Z)(e => {
     let {
       guildId: t
     } = e;
@@ -67,7 +67,7 @@ function N(e) {
 let v = i.memo(function() {
   let e = (0, c.Q3)("AppPanels"),
     t = i.useRef(null);
-  return (0, a.P)(t, e => {
+  return (0, o.P)(t, e => {
     let {
       height: t
     } = e;

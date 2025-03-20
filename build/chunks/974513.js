@@ -11,8 +11,8 @@ var r = n(200651),
   a = n(481060),
   l = n(312913),
   o = n(45966),
-  c = n(637853),
-  A = n(983135),
+  A = n(637853),
+  c = n(983135),
   d = n(208665),
   u = n(290511),
   g = n(388032);
@@ -50,15 +50,15 @@ function m(e, t) {
 }
 
 function p(e, t) {
-  let n = (0, s.Wu)([d.Z], () => (0, c.kl)(e, t, d.Z.editedOnboardingPrompts));
-  return [(0, s.Wu)([d.Z], () => (0, c.kl)(e, t, d.Z.editedOnboardingPrompts, c.V7)), n]
+  let n = (0, s.Wu)([d.Z], () => (0, A.kl)(e, t, d.Z.editedOnboardingPrompts));
+  return [(0, s.Wu)([d.Z], () => (0, A.kl)(e, t, d.Z.editedOnboardingPrompts, A.V7)), n]
 }
 
 function h(e) {
   let t = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(e)),
     [n, r] = function(e) {
-      let t = (0, s.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
-      return [(0, s.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), c.V7)), t]
+      let t = (0, s.Wu)([o.Z], () => (0, A.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
+      return [(0, s.Wu)([o.Z], () => (0, A.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), A.V7)), t]
     }(e);
   return !!t && r.length >= u.md && n.length >= u.X
 }
@@ -67,14 +67,14 @@ function C(e) {
   let {
     guildId: t,
     className: n
-  } = e, c = (0, l.UQ)(t).advancedModeAllowed, d = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), p = i.useCallback(() => {
+  } = e, A = (0, l.UQ)(t).advancedModeAllowed, d = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), p = i.useCallback(() => {
     let e = d ? u.Un.ONBOARDING_DEFAULT : u.Un.ONBOARDING_ADVANCED;
     d ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, m(f({
       header: g.NW.string(g.t["49+ONj"]),
       confirmText: g.NW.string(g.t.R9GHyc),
       cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
-      onConfirm: () => (0, A.Ts)(t, e)
+      onConfirm: () => (0, c.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
@@ -85,7 +85,7 @@ function C(e) {
       confirmText: g.NW.string(g.t.ts6u6u),
       cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
-      onConfirm: () => (0, A.Ts)(t, e)
+      onConfirm: () => (0, c.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
@@ -93,7 +93,7 @@ function C(e) {
       })
     })))
   }, [t, d]);
-  return c ? (0, r.jsx)("div", {
+  return A ? (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(a.eee, {
       onClick: p,

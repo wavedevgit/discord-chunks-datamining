@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(98278),
   l = n(823188),
   o = n(594174),
-  c = n(74538),
-  A = n(474936),
+  A = n(74538),
+  c = n(474936),
   d = n(388032),
   u = n(378649);
 let g = e => {
@@ -44,7 +44,7 @@ let g = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, i.e7)([o.default], () => o.default.getCurrentUser());
-    return c.ZP.isPremium(n, A.p9.TIER_2) ? null : (0, r.jsx)(g, {
+    return A.ZP.isPremium(n, c.p9.TIER_2) ? null : (0, r.jsx)(g, {
       onOpenPremiumClick: t
     })
   }

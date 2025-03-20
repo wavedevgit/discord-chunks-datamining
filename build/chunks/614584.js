@@ -118,7 +118,7 @@ let E = i.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), U = (0, v.wq)(null == w ? void 0 : w.author.id, N.id), B = (0, v.$3)(n, w, D, W), H = (0, v.Wl)(w, N, P, Z), F = (0, v.rY)(S, Z), G = i.useCallback(() => {
+  }), [w]), U = (0, v.wq)(null == w ? void 0 : w.author.id, N.id), B = (0, v.$3)(n, w, D, W), F = (0, v.Wl)(w, N, P, Z), H = (0, v.rY)(S, Z), G = i.useCallback(() => {
     Z({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
@@ -137,8 +137,8 @@ let E = i.memo(function(e) {
     showAvatarPopout: S,
     showUsernamePopout: P,
     renderPopout: C.Z,
-    onClickAvatar: F,
-    onClickUsername: H,
+    onClickAvatar: H,
+    onClickUsername: F,
     onClickReply: B,
     onContextMenu: U,
     onPopoutRequestClose: G,

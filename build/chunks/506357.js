@@ -31,7 +31,7 @@ function N(e) {
     isUnderLockdown: R
   } = (0, E.mI)(S), A = (0, s.n2)(null !== (t = null == y ? void 0 : y.id) && void 0 !== t ? t : m.lds), x = i.useCallback(() => null != y && (0, c._X)(y.id), [y]);
   if (null == y || null == P || !v) return null;
-  let j = e => {
+  let D = e => {
       if (e && A && C !== b.oC.MEMBER_SAFETY && x()) {
         p.default.track(m.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
           notice_type: m.kVF.GUILD_RAID_NOTIFICATION,
@@ -81,7 +81,7 @@ function N(e) {
         }
       })
     },
-    D = (0, r.jsx)(a.Z, {
+    j = (0, r.jsx)(a.Z, {
       className: g.guildIcon,
       guild: y,
       size: a.Z.Sizes.MINI
@@ -93,9 +93,9 @@ function N(e) {
     children: [(0, r.jsx)(l.RyX, {
       onClick: I,
       noticeType: m.kVF.GUILD_RAID_NOTIFICATION
-    }), D, L, (0, r.jsx)(l.EyT, {
+    }), j, L, (0, r.jsx)(l.EyT, {
       className: g.actionButton,
-      onClick: () => j(!1),
+      onClick: () => D(!1),
       children: (0, r.jsxs)("div", {
         className: g.actionButtonInner,
         children: [(0, r.jsx)(l.mBM, {
@@ -121,9 +121,9 @@ function N(e) {
     children: [(0, r.jsx)(l.RyX, {
       onClick: I,
       noticeType: m.kVF.GUILD_RAID_NOTIFICATION
-    }), D, k, !M && (0, r.jsx)(l.EyT, {
+    }), j, k, !M && (0, r.jsx)(l.EyT, {
       className: g.actionButton,
-      onClick: () => j(!0),
+      onClick: () => D(!0),
       children: (0, r.jsx)("div", {
         className: g.actionButtonInner,
         children: (0, r.jsx)("span", {

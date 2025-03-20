@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(906732),
   l = n(884858),
   o = n(813197),
-  c = n(434404),
-  A = n(70086),
+  A = n(434404),
+  c = n(70086),
   d = n(949640),
   u = n(981631),
   g = n(30513),
@@ -25,7 +25,7 @@ function p(e) {
   } = e, {
     analyticsLocations: h
   } = (0, a.ZP)(), C = t.hasFeature(u.oNc.INVITE_SPLASH), b = n && C, v = i.useCallback(e => {
-    c.Z.updateGuild({
+    A.Z.updateGuild({
       splash: e
     })
   }, []), x = i.useCallback(e => {
@@ -47,7 +47,7 @@ function p(e) {
       maxFileSizeBytes: f.B,
       onFileSizeError: () => (0, l.Z)(f.B)
     })]
-  }) : (0, r.jsx)(A.P, {
+  }) : (0, r.jsx)(c.P, {
     className: p,
     onClick: x
   })

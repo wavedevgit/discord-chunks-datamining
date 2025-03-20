@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(813197),
   o = n(999382),
-  c = n(388032),
-  A = n(293775),
+  A = n(388032),
+  c = n(293775),
   d = n(659116);
 
 function u(e) {
@@ -24,14 +24,14 @@ function u(e) {
     within: !0
   }), []);
   return (0, r.jsxs)("div", {
-    className: A.buttons,
+    className: c.buttons,
     children: [(0, r.jsxs)(a.zxk, {
       focusProps: d,
       tabIndex: -1,
       size: a.zxk.Sizes.SMALL,
       color: a.zxk.Colors.BRAND,
       disabled: !s,
-      children: [c.NW.string(c.t.r3Jdsb), (0, r.jsx)(l.ZP, {
+      children: [A.NW.string(A.t.r3Jdsb), (0, r.jsx)(l.ZP, {
         tabIndex: 0,
         onChange: n
       })]
@@ -41,7 +41,7 @@ function u(e) {
       look: a.zxk.Looks.LINK,
       onClick: o,
       disabled: !s,
-      children: c.NW.string(c.t.x8AlTk)
+      children: A.NW.string(A.t.x8AlTk)
     }) : null]
   })
 }
@@ -53,16 +53,16 @@ function g(e) {
     onIconChange: i
   } = e, l = (0, s.e7)([o.Z], () => o.Z.getError("icon"));
   return (0, r.jsxs)("section", {
-    className: A.container,
+    className: c.container,
     children: [(0, r.jsxs)(a.hjN, {
       className: d.section,
       children: [(0, r.jsxs)("div", {
         className: d.sectionHeader,
         children: [(0, r.jsx)(a.vwX, {
-          children: c.NW.string(c.t.FkQnxM)
+          children: A.NW.string(A.t.FkQnxM)
         }), (0, r.jsx)(a.R94, {
           type: "description",
-          children: c.NW.string(c.t.KjkA0d)
+          children: A.NW.string(A.t.KjkA0d)
         })]
       }), (0, r.jsx)(u, {
         profile: t,
@@ -70,7 +70,7 @@ function g(e) {
         handleIconChange: i
       })]
     }), null != l ? (0, r.jsx)("div", {
-      className: A.iconError,
+      className: c.iconError,
       children: l
     }) : null]
   })

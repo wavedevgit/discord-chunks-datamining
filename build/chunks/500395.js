@@ -10,8 +10,8 @@ var i = n(990547),
   a = n(213609),
   l = n(787051),
   o = n(696936),
-  c = n(539290),
-  A = n(975464),
+  A = n(539290),
+  c = n(975464),
   d = n(388032),
   u = n(128281),
   g = n(270395);
@@ -45,10 +45,10 @@ function f(e) {
         children: d.NW.string(d.t["41wkMT"])
       }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(c.Z, {
+      }), (0, r.jsx)(A.Z, {
         className: u.waitlist,
         color: o.W.BROWN,
-        buttonPosition: c.E.RIGHT,
+        buttonPosition: A.E.RIGHT,
         notice: n,
         ctaLabel: i,
         ctaDisabled: !a,
@@ -65,7 +65,7 @@ function m(e) {
     config: n
   } = e, {
     isLoading: o,
-    error: c,
+    error: A,
     creatorMonetizationOnboardingMarketing: d
   } = (0, l.Z)(t.id);
   return ((0, a.Z)({
@@ -78,9 +78,9 @@ function m(e) {
     className: u.__invalid_container,
     children: [(0, r.jsx)(f, {
       config: n
-    }), (0, r.jsx)(A.C, {
+    }), (0, r.jsx)(c.C, {
       onboardingMarketing: d,
-      onboardingMarketingError: c
+      onboardingMarketingError: A
     })]
   })
 }

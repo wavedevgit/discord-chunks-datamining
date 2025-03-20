@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(650774),
   o = n(434404),
-  c = n(981631),
-  A = n(388032);
+  A = n(981631),
+  c = n(388032);
 
 function d(e) {
   let {
@@ -18,12 +18,12 @@ function d(e) {
     defaultSettings: n,
     canManageGuild: d
   } = e, u = (0, s.e7)([l.Z], () => l.Z.getMemberCount(t)), g = i.useMemo(() => [{
-    name: A.NW.string(A.t["n/bTaW"]),
-    value: c.bL.ALL_MESSAGES,
-    desc: null != u && u >= c.qWG ? A.NW.string(A.t["L+P4t7"]) : null
+    name: c.NW.string(c.t["n/bTaW"]),
+    value: A.bL.ALL_MESSAGES,
+    desc: null != u && u >= A.qWG ? c.NW.string(c.t["L+P4t7"]) : null
   }, {
-    name: A.NW.string(A.t["6fQPho"]),
-    value: c.bL.ONLY_MENTIONS
+    name: c.NW.string(c.t["6fQPho"]),
+    value: A.bL.ONLY_MENTIONS
   }], [u]), f = i.useCallback(e => {
     let {
       value: t

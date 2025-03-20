@@ -10,8 +10,8 @@ var i = n(63568),
   a = n(740903),
   l = n(426434),
   o = n(112824),
-  c = n(181339),
-  A = n(195189),
+  A = n(181339),
+  c = n(195189),
   d = n(122051),
   u = n(3896),
   g = n(981631),
@@ -35,41 +35,41 @@ let m = e => {
     }, "member-verification"),
     enabled: (0, s.Dc)(e)
   }, {
-    renderComponent: () => (0, r.jsx)(A.Z, {
+    renderComponent: () => (0, r.jsx)(c.Z, {
       title: f.NW.string(f.t.QiONLy),
       details: f.NW.string(f.t.dSRTMD)
     }, "hide-suspicious-dms"),
     enabled: !0
   }, {
-    renderComponent: () => (0, r.jsx)(A.Z, {
+    renderComponent: () => (0, r.jsx)(c.Z, {
       title: f.NW.string(f.t["f+8F8P"]),
       details: f.NW.string(f.t.qChrIy)
     }, "filter-unknown-dms"),
     enabled: !0
   }, {
-    renderComponent: () => (0, r.jsx)(A.Z, {
+    renderComponent: () => (0, r.jsx)(c.Z, {
       title: f.NW.string(f.t.EkSAHR)
     }, "outbound-links-warn"),
     enabled: !0
   }, {
-    renderComponent: () => (0, r.jsx)(A.Z, {
+    renderComponent: () => (0, r.jsx)(c.Z, {
       title: f.NW.string(f.t["7cAQmp"])
     }, "delete-spam"),
     enabled: !0
   }].filter(e => null != e);
   return {
     [a.u.CAPTCHA_AND_RAID_PROTECTION]: [{
-      renderComponent: () => (0, r.jsx)(c.Z, {
+      renderComponent: () => (0, r.jsx)(A.Z, {
         guild: e
       }, "raid-alerts"),
       enabled: !e.hasFeature(g.oNc.RAID_ALERTS_DISABLED)
     }, {
-      renderComponent: () => (0, r.jsx)(A.Z, {
+      renderComponent: () => (0, r.jsx)(c.Z, {
         title: f.NW.string(f.t.gOkFfH)
       }, "captcha-suspicious-joins"),
       enabled: !0
     }, {
-      renderComponent: () => (0, r.jsx)(A.Z, {
+      renderComponent: () => (0, r.jsx)(c.Z, {
         title: f.NW.string(f.t.r3esyM)
       }, "captcha-raid-joins"),
       enabled: !0

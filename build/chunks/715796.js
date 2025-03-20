@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  P: () => c
+  P: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -10,11 +10,11 @@ var r = n(200651),
   l = n(594174),
   o = n(981631);
 
-function c(e) {
+function A(e) {
   let t = (null == e ? void 0 : e.hasFeature(o.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === !0,
-    c = (null == e ? void 0 : e.hasFeature(o.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0,
-    A = (0, s.e7)([l.default], () => l.default.getCurrentUser()),
-    d = (null == e ? void 0 : e.isOwner(A)) === !0;
+    A = (null == e ? void 0 : e.hasFeature(o.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0,
+    c = (0, s.e7)([l.default], () => l.default.getCurrentUser()),
+    d = (null == e ? void 0 : e.isOwner(c)) === !0;
   i.useEffect(() => {
     null != e && t && d && (0, a.ZDy)(async () => {
       let {
@@ -41,7 +41,7 @@ function c(e) {
           return e
         }({}, n), s = s = {
           guildId: e.id,
-          requireTeamSetup: c
+          requireTeamSetup: A
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -54,5 +54,5 @@ function c(e) {
         }), i))
       }
     })
-  }, [t, c, e, d])
+  }, [t, A, e, d])
 }

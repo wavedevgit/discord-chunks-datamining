@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(313201),
-  c = n(259580),
-  A = n(404203),
+  A = n(259580),
+  c = n(404203),
   d = n(388032),
   u = n(64288);
 
@@ -23,7 +23,7 @@ function g(e) {
   } = e, [f, m] = i.useState(t), p = () => m(e => !e), h = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: u.container,
-    children: [(0, r.jsx)(A.Z, {
+    children: [(0, r.jsx)(c.Z, {
       className: a()(u.header, {
         [u.headerWithDescription]: f && null != s
       }),
@@ -45,9 +45,9 @@ function g(e) {
             focusProps: {
               ringTarget: t
             },
-            children: (0, r.jsx)(c.Z, {
+            children: (0, r.jsx)(A.Z, {
               className: u.caret,
-              direction: f ? c.Z.Directions.UP : c.Z.Directions.DOWN
+              direction: f ? A.Z.Directions.UP : A.Z.Directions.DOWN
             })
           })]
         })

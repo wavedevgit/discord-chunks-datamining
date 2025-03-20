@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(100527),
   l = n(906732),
   o = n(623624),
-  c = n(372444),
-  A = n(852679),
+  A = n(372444),
+  c = n(852679),
   d = n(926491),
   u = n(145499),
   g = n(424218),
@@ -49,7 +49,7 @@ let x = {
           className: v.upsellButtonPrimary,
           innerClassName: v.upsellButton,
           color: s.zxk.Colors.WHITE,
-          onClick: () => (0, A.Z)({
+          onClick: () => (0, c.Z)({
             analyticsLocations: n,
             analyticsLocation: x,
             guildId: t.id,
@@ -93,17 +93,17 @@ let x = {
       } = e,
       l = s.premiumTier,
       o = (0, f.Qi)(a, l),
-      A = (0, f.FZ)(l, s.id),
+      c = (0, f.FZ)(l, s.id),
       d = (0, f.A3)(l),
       u = a.length;
-    return null == A || l === h.Eu4.TIER_3 || o > 0 ? null : (u > d ? (t = b.NW.formatToPlainString(b.t.ZtAY1d, {
-      level: A
+    return null == c || l === h.Eu4.TIER_3 || o > 0 ? null : (u > d ? (t = b.NW.formatToPlainString(b.t.ZtAY1d, {
+      level: c
     }), n = b.NW.formatToPlainString(b.t["13hOWl"], {
-      level: A
+      level: c
     }), i = h.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = b.NW.string(b.t.zT9Sxc), n = b.NW.formatToPlainString(b.t.YaW9wM, {
-      level: A,
-      numAdditional: (0, f.ig)(A)
-    }), i = h.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
+      level: c,
+      numAdditional: (0, f.ig)(c)
+    }), i = h.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(A.Z, {
       header: t,
       text: n,
       guild: s,
@@ -111,7 +111,7 @@ let x = {
         page: h.ZY5.GUILD_SETTINGS,
         section: h.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, f.ge)(A)
+        objectType: (0, f.ge)(c)
       }
     }))
   },

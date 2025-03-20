@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  c = n(430824),
-  A = n(900681),
+  A = n(430824),
+  c = n(900681),
   d = n(214715),
   u = n(308083),
   g = n(388032),
@@ -21,7 +21,7 @@ function m(e) {
     trait: t,
     selected: n,
     onClick: s
-  } = e, [l, o] = i.useState(!1), c = i.useCallback(() => o(!0), []), A = i.useCallback(() => o(!1), []);
+  } = e, [l, o] = i.useState(!1), A = i.useCallback(() => o(!0), []), c = i.useCallback(() => o(!1), []);
   return (0, r.jsx)(d.Z, {
     variant: "text-xs/semibold",
     color: l ? "text-muted" : "interactive-active",
@@ -30,8 +30,8 @@ function m(e) {
     }),
     text: t,
     selected: n,
-    onMouseEnter: n ? c : void 0,
-    onMouseLeave: n ? A : void 0,
+    onMouseEnter: n ? A : void 0,
+    onMouseLeave: n ? c : void 0,
     onClick: n ? s : void 0
   }, t)
 }
@@ -45,7 +45,7 @@ function p(e) {
     maskDescription: p,
     maskTraits: h,
     onTraitClick: C
-  } = e, b = (0, l.e7)([c.Z], () => c.Z.getGuild(n)), {
+  } = e, b = (0, l.e7)([A.Z], () => A.Z.getGuild(n)), {
     interests: v,
     description: x,
     playstyle: N,
@@ -77,7 +77,7 @@ function p(e) {
           color: "text-secondary",
           className: f.clanInfoItem,
           children: null !== (t = (0, u.mv)(N)) && void 0 !== t ? t : g.NW.string(g.t.JijC4O)
-        }), null != b && (0, r.jsx)(A.c, {
+        }), null != b && (0, r.jsx)(c.c, {
           wildcardDescriptors: j,
           primaryColor: null != E ? E : I.hex()
         })]

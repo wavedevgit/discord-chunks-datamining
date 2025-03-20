@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(906732),
   l = n(70086),
   o = n(949640),
-  c = n(981631),
-  A = n(30513),
+  A = n(981631),
+  c = n(30513),
   d = n(486324),
   u = n(200299),
   g = n(388032);
@@ -22,7 +22,7 @@ function f(e) {
     buttonClassName: f
   } = e, {
     analyticsLocations: m
-  } = (0, a.ZP)(), p = t.hasFeature(c.oNc.BANNER), h = i.useCallback(e => {
+  } = (0, a.ZP)(), p = t.hasFeature(A.oNc.BANNER), h = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
@@ -32,9 +32,9 @@ function f(e) {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
       analyticsLocations: m,
-      analyticsSection: c.jXE.GUILD_BANNER,
-      analyticsObject: c.qAy.BUTTON_CTA,
-      perks: (0, A.XO)()
+      analyticsSection: A.jXE.GUILD_BANNER,
+      analyticsObject: A.qAy.BUTTON_CTA,
+      perks: (0, c.XO)()
     })
   }, [m, t]);
   return p ? (0, r.jsx)(s.zxk, {
@@ -46,8 +46,8 @@ function f(e) {
       maxFileSizeBytes: u.B,
       onComplete: h,
       analyticsLocation: {
-        page: c.ZY5.GUILD_SETTINGS,
-        section: c.jXE.GUILD_BANNER
+        page: A.ZY5.GUILD_SETTINGS,
+        section: A.jXE.GUILD_BANNER
       },
       analyticsLocations: m
     }),

@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(594174),
   U = n(358221),
   B = n(887012),
-  H = n(444253),
-  F = n(355827),
+  F = n(444253),
+  H = n(355827),
   G = n(185935),
   V = n(795318),
   z = n(354459),
@@ -178,7 +178,7 @@ function $(e) {
   }, "live-indicator"))), ee && !ec && eg.push((0, r.jsx)(u.yRy, {
     position: "bottom",
     renderPopout: () => (0, r.jsx)(Z.Z, {
-      children: (0, r.jsx)(F.Z, {
+      children: (0, r.jsx)(H.Z, {
         channel: n
       })
     }),
@@ -215,7 +215,7 @@ function $(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(Z.Z, {
-        children: (0, r.jsx)(H.Z, {
+        children: (0, r.jsx)(F.Z, {
           channelId: $,
           onClose: t,
           appContext: l,

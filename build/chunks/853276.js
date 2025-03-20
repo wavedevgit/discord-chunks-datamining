@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  c = n(393238),
-  A = n(607070),
+  A = n(393238),
+  c = n(607070),
   d = n(596390),
   u = n(651095);
 
@@ -49,8 +49,8 @@ let m = i.forwardRef(function(e, t) {
   var n, s;
   let {
     value: l,
-    isSelected: c,
-    isEditing: A,
+    isSelected: A,
+    isEditing: c,
     forceShowErrorTooltip: d = !1,
     error: m
   } = e, [p, h, C] = i.useMemo(() => {
@@ -63,8 +63,8 @@ let m = i.forwardRef(function(e, t) {
   }, [l, m]);
   return null == m ? (0, r.jsx)("div", {
     className: a()(u.chipletValue, {
-      [u.isEditing]: A,
-      [u.isSelected]: c
+      [u.isEditing]: c,
+      [u.isSelected]: A
     }),
     ref: t,
     children: l
@@ -84,9 +84,9 @@ let m = i.forwardRef(function(e, t) {
     children: e => (0, r.jsxs)("div", f(g({
       ref: t,
       className: a()(u.chipletValue, {
-        [u.isEditing]: A,
-        [u.isError]: null != m && !A,
-        [u.isOverflowing]: null != m && !A
+        [u.isEditing]: c,
+        [u.isError]: null != m && !c,
+        [u.isOverflowing]: null != m && !c
       })
     }, e), {
       children: [(0, r.jsx)("span", {
@@ -101,8 +101,8 @@ let m = i.forwardRef(function(e, t) {
   }) : (0, r.jsxs)("div", {
     ref: t,
     className: a()(u.chipletValue, {
-      [u.isEditing]: A,
-      [u.isError]: null != m && !A
+      [u.isEditing]: c,
+      [u.isError]: null != m && !c
     }),
     children: [(0, r.jsx)("span", {
       children: p
@@ -135,10 +135,10 @@ function p(e) {
   } = e, v = i.useRef(null), x = i.useRef(null), [N, j] = i.useState(!1), {
     ref: E,
     width: I = 0
-  } = (0, c.Z)(N), {
+  } = (0, A.Z)(N), {
     ref: O,
     width: y = 0
-  } = (0, c.Z)(N), w = (0, l.e7)([A.Z], () => A.Z.useReducedMotion), [P, B] = i.useState(b), D = i.useRef(null), T = I > y ? I : y;
+  } = (0, A.Z)(N), w = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), [P, B] = i.useState(b), D = i.useRef(null), T = I > y ? I : y;
   i.useEffect(() => {
     b ? (B(!0), D.current = setTimeout(() => {
       B(!1), D.current = null
@@ -165,7 +165,7 @@ function p(e) {
       let t = e.metaKey || e.ctrlKey;
       g(t), t ? e.preventDefault() : j(!0), e.stopPropagation()
     }, [g]),
-    Z = i.useCallback(e => {
+    W = i.useCallback(e => {
       f()
     }, [f]);
   return (0, r.jsx)("div", {
@@ -213,7 +213,7 @@ function p(e) {
         })]
       }), !N && (0, r.jsx)(o.P3F, {
         className: u.closeIconContainer,
-        onClick: Z,
+        onClick: W,
         children: (0, r.jsx)(o.Dio, {
           size: "xxs",
           color: "currentColor",

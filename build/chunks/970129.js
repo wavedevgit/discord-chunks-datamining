@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  T: () => c,
-  Z: () => A
+  T: () => A,
+  Z: () => c
 });
 var r = n(200651),
   i = n(192379),
@@ -11,12 +11,12 @@ var r = n(200651),
   l = n(496675),
   o = n(388032);
 
-function c(e, t, n) {
+function A(e, t, n) {
   let r = (0, s.e7)([l.Z], () => !l.Z.isRoleHigher(e, t, n), [e, t, n]);
   return i.useMemo(() => r && n.id === (null == t ? void 0 : t.id), [r, n, t]) ? o.NW.string(o.t.PQylOT) : r ? o.NW.string(o.t.UGIjx8) : null
 }
 
-function A(e) {
+function c(e) {
   let {
     className: t,
     tooltipText: n,

@@ -10,7 +10,7 @@ var r = n(200651),
   l = n(388032),
   o = n(866507);
 
-function c(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function c(e) {
   return e
 }
 
-function A(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,8 +48,8 @@ function d(e) {
     toggled: n,
     onToggle: i
   } = e, {
-    headerText: c,
-    subtitleText: A
+    headerText: A,
+    subtitleText: c
   } = function(e) {
     let t = null,
       n = null;
@@ -83,11 +83,11 @@ function d(e) {
       className: o.keywordListTextContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
-        children: c
+        children: A
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: A
+        children: c
       })]
     }), (0, r.jsx)(s.XZJ, {
       className: o.toggle,
@@ -104,8 +104,8 @@ function u(e) {
     rule: n,
     onChangeRule: s
   } = e, [l, o] = i.useState(new Set(null == n ? void 0 : null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.presets)), u = i.useMemo(() => e => {
-    s(A(c({}, n), {
-      triggerMetadata: A(c({}, n.triggerMetadata), {
+    s(c(A({}, n), {
+      triggerMetadata: c(A({}, n.triggerMetadata), {
         presets: e
       })
     }))

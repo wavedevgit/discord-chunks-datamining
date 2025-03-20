@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(110924),
-  c = n(347469),
-  A = n(853276),
+  A = n(347469),
+  c = n(853276),
   d = n(596390),
   u = n(870472),
   g = n(224669);
@@ -20,12 +20,12 @@ function f(e) {
     resizableNode: t,
     onResize: n,
     onResizeEnd: i
-  } = e, s = (0, c.Z)({
+  } = e, s = (0, A.Z)({
     minDimension: d.tq,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: i,
-    orientation: c.y.VERTICAL_BOTTOM,
+    orientation: A.y.VERTICAL_BOTTOM,
     throttleDuration: 16
   });
   return (0, r.jsx)("div", {
@@ -39,26 +39,26 @@ let m = i.forwardRef(function(e, t) {
     onFocus: s,
     onBlur: a,
     onClick: o
-  } = e, c = i.useRef(null), [A, u] = i.useState(d.tq);
+  } = e, A = i.useRef(null), [c, u] = i.useState(d.tq);
   return (0, r.jsxs)(l.P3F, {
     className: g.textArea,
     onFocus: s,
     onBlur: a,
     onClick: o,
-    innerRef: c,
+    innerRef: A,
     ignoreKeyPress: !0,
     style: {
-      minHeight: A
+      minHeight: c
     },
     children: [(0, r.jsx)(l.Den, {
       className: g.innerScroller,
       style: {
-        minHeight: A - 2
+        minHeight: c - 2
       },
       ref: t,
       children: n
     }), (0, r.jsx)(f, {
-      resizableNode: c,
+      resizableNode: A,
       onResize: u,
       onResizeEnd: e => {
         u(e), null == s || s()
@@ -72,7 +72,7 @@ function p(e) {
   let {
     initialValue: n,
     onChangeTags: s,
-    onChangeNewTagValue: c,
+    onChangeNewTagValue: A,
     tagErrors: d = {},
     placeholder: f,
     className: p,
@@ -99,20 +99,20 @@ function p(e) {
       selections: L,
       isSelecting: R
     }
-  } = x, Q = (0, o.Z)(S), [Z, W] = i.useState(!1), k = i.useCallback(() => {
+  } = x, Q = (0, o.Z)(S), [W, Z] = i.useState(!1), k = i.useCallback(() => {
     var e;
-    W(!1), B(), null === (e = C.current) || void 0 === e || e.focus({
+    Z(!1), B(), null === (e = C.current) || void 0 === e || e.focus({
       preventScroll: !0
     })
   }, [B]);
   i.useEffect(() => {
-    !Z && Q !== S && s(S)
-  }, [s, Q, S, Z]), i.useEffect(() => {
-    !Z && c(T)
-  }, [c, T, Z]);
+    !W && Q !== S && s(S)
+  }, [s, Q, S, W]), i.useEffect(() => {
+    !W && A(T)
+  }, [A, T, W]);
   let M = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      e && k(), W(!1)
+      e && k(), Z(!1)
     }, [k]),
     _ = i.useCallback(e => t => {
       if (t) {
@@ -125,7 +125,7 @@ function p(e) {
             return null === (e = b.current) || void 0 === e ? void 0 : e.focus()
           }, 16)
         }))
-      } else P(e, !0), W(!0)
+      } else P(e, !0), Z(!0)
     }, [w, P, L, S]);
   return (0, r.jsxs)("div", {
     className: a()(g.mainContainer, p),
@@ -135,7 +135,7 @@ function p(e) {
     children: [(0, r.jsxs)(m, {
       ref: v,
       onClick: k,
-      children: [S.map((e, t) => (0, r.jsx)(A.Z, {
+      children: [S.map((e, t) => (0, r.jsx)(c.Z, {
         value: e,
         onChange: y(t),
         onBlur: M,
@@ -144,10 +144,10 @@ function p(e) {
         isSelected: L.includes(e),
         isSelecting: R,
         error: d[e],
-        forceShowErrorTooltip: !Z && t === S.length - 1
+        forceShowErrorTooltip: !W && t === S.length - 1
       }, t)), (0, r.jsx)("input", {
         className: a()(g.mainTextInput, {
-          [g.isEditingOtherNodes]: Z
+          [g.isEditingOtherNodes]: W
         }),
         ref: C,
         onChange: j,

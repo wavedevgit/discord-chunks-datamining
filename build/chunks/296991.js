@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(97613),
   o = n.n(l),
-  c = n(999153),
-  A = n(584922),
+  A = n(999153),
+  c = n(584922),
   d = n(442837),
   u = n(481060),
   g = n(541716),
@@ -75,7 +75,7 @@ function y(e) {
   } = e, I = i.useRef(null), y = i.useRef(null), [{
     textValue: w,
     richValue: P
-  }, B] = i.useState((0, f.eK)(t.value)), [, D, T] = (0, c.c)({
+  }, B] = i.useState((0, f.eK)(t.value)), [, D, T] = (0, A.c)({
     type: O,
     item: {
       rule: t,
@@ -84,7 +84,7 @@ function y(e) {
     end: (e, t) => {
       null == e || t.didDrop() || p(e.rule, null, !0)
     }
-  }), [, S] = (0, A.L)({
+  }), [, S] = (0, c.L)({
     accept: O,
     hover: (e, t) => {
       var n;
@@ -169,7 +169,7 @@ function w(e) {
     rules: t,
     setRules: n,
     guild: s
-  } = e, a = s.rulesChannelId, l = s.hasFeature(x.oNc.PREVIEW_ENABLED), c = (0, d.e7)([p.Z], () => null != a ? p.Z.getChannel(a) : null), A = (0, d.e7)([h.ZP], () => h.ZP.getDefaultChannel(s.id)), [g, f] = i.useState(null), [m, O] = i.useState(null), w = i.useCallback(e => {
+  } = e, a = s.rulesChannelId, l = s.hasFeature(x.oNc.PREVIEW_ENABLED), A = (0, d.e7)([p.Z], () => null != a ? p.Z.getChannel(a) : null), c = (0, d.e7)([h.ZP], () => h.ZP.getDefaultChannel(s.id)), [g, f] = i.useState(null), [m, O] = i.useState(null), w = i.useCallback(e => {
     if (t.length !== v.X2) {
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -232,7 +232,7 @@ function w(e) {
     children: [(0, r.jsx)("div", {
       className: j.rulesContainer,
       children: t.map((e, n) => (0, r.jsx)(y, {
-        rulesChannel: null != c ? c : A,
+        rulesChannel: null != A ? A : c,
         rule: e,
         index: n,
         onChange: e => B(e, n),

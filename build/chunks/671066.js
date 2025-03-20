@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(933557),
   l = n(592125),
   o = n(699516),
-  c = n(594174),
-  A = n(556012),
+  A = n(594174),
+  c = n(556012),
   d = n(388032),
   u = n(15470);
 
@@ -22,9 +22,9 @@ function g(e) {
     triggerType: g,
     toggled: f,
     onToggleAction: m
-  } = e, p = e => () => m(e), h = (0, A.c)(n.type, n, g), C = null === (t = n.metadata) || void 0 === t ? void 0 : t.channelId, b = (0, i.e7)([c.default, o.Z, l.Z], () => {
+  } = e, p = e => () => m(e), h = (0, c.c)(n.type, n, g), C = null === (t = n.metadata) || void 0 === t ? void 0 : t.channelId, b = (0, i.e7)([A.default, o.Z, l.Z], () => {
     let e = l.Z.getChannel(C);
-    return null == e ? null : (0, a.F6)(e, c.default, o.Z)
+    return null == e ? null : (0, a.F6)(e, A.default, o.Z)
   }, [C]);
   if (null == h) return null;
   let {

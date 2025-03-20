@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(442837),
   l = n(215569),
   o = n(481060),
-  c = n(224706),
-  A = n(425493),
+  A = n(224706),
+  c = n(425493),
   d = n(852860),
   u = n(493544),
   g = n(585483),
@@ -121,12 +121,12 @@ let S = e => [{
       guildId: t,
       onClose: s,
       dirty: a
-    } = e, [l, c] = i.useState(!1), A = async () => {
-      c(!0);
+    } = e, [l, A] = i.useState(!1), c = async () => {
+      A(!0);
       try {
         await (0, f.nr)(t), s()
       } catch (e) {
-        throw c(!1), e
+        throw A(!1), e
       }
     };
     return (0, r.jsxs)(o.njP.Item, {
@@ -146,7 +146,7 @@ let S = e => [{
             confirmText: P.NW.string(P.t["cY+Ooa"]),
             cancelText: P.NW.string(P.t["ETE/oK"]),
             loading: l,
-            onConfirm: A,
+            onConfirm: c,
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               children: P.NW.string(P.t.OsRkMz)
@@ -198,8 +198,8 @@ let S = e => [{
       onClose: n
     } = e, [w, L] = i.useState(O.Wy.GAMES), {
       initialSettings: Q,
-      settings: Z,
-      errors: W,
+      settings: W,
+      errors: Z,
       submitting: k,
       dirty: M
     } = (0, a.cj)([p.Z], () => {
@@ -222,7 +222,7 @@ let S = e => [{
     }, [t, w]), i.useEffect(() => (window.addEventListener("keydown", F), () => {
       window.removeEventListener("keydown", F)
     }), [F]), i.useEffect(() => {
-      c.Z.getDetectableGames()
+      A.Z.getDetectableGames()
     }, []), i.useEffect(() => {
       (0, f.aH)(t)
     }, [t]);
@@ -240,10 +240,10 @@ let S = e => [{
         M ? g.S.dispatch(y.CkL.EMPHASIZE_NOTICE) : n()
       }, [M, n]),
       K = async () => {
-        await (0, f.Ii)(t, Z), (0, m.Af)(t)
-      }, V = i.useMemo(() => null != W && Object.values(W).some(e => null != e), [W]);
-    if (null == Z) return null;
-    let J = S(W);
+        await (0, f.Ii)(t, W), (0, m.Af)(t)
+      }, V = i.useMemo(() => null != Z && Object.values(Z).some(e => null != e), [Z]);
+    if (null == W) return null;
+    let J = S(Z);
     return (0, r.jsxs)(s.animated.div, {
       style: G,
       className: B.modal,
@@ -257,7 +257,7 @@ let S = e => [{
         "aria-label": null != V ? P.NW.string(P.t.M6w76e) : void 0,
         shouldShow: V,
         forceOpen: V,
-        children: e => (0, r.jsx)(A.Z, T(D({}, e), {
+        children: e => (0, r.jsx)(c.Z, T(D({}, e), {
           className: B.closeButton,
           closeAction: Y,
           keybind: "ESC"
@@ -319,8 +319,8 @@ let S = e => [{
                     title: P.NW.string(P.t.t6Mbq6),
                     description: P.NW.string(P.t.E7Ymwc),
                     onUpdateGames: U,
-                    gameApplicationIds: null !== (e = Z.gameApplicationIds) && void 0 !== e ? e : new Set,
-                    error: W.gameApplicationIds,
+                    gameApplicationIds: null !== (e = W.gameApplicationIds) && void 0 !== e ? e : new Set,
+                    error: Z.gameApplicationIds,
                     guildId: t,
                     includeSuggestedGames: !0
                   });
@@ -329,8 +329,8 @@ let S = e => [{
                     title: P.NW.string(P.t.W0h7pa),
                     description: P.NW.string(P.t.JHYekZ),
                     onUpdatePlaystyle: H,
-                    playstyle: Z.playstyle,
-                    error: W.playstyle
+                    playstyle: W.playstyle,
+                    error: Z.playstyle
                   });
                 case O.Wy.UTILITY_TRAITS:
                   return (0, r.jsx)(I.Z, {
@@ -338,30 +338,30 @@ let S = e => [{
                     title: P.NW.string(P.t.G4tP09),
                     description: P.NW.string(P.t["6Eos19"]),
                     onUpdateTraits: z,
-                    progress: Z
+                    progress: W
                   });
                 case O.Wy.INTERESTS:
                   return (0, r.jsx)(x.Z, {
                     guildId: t,
                     handleUpdate: X,
-                    progress: Z,
-                    error: W.interests
+                    progress: W,
+                    error: Z.interests
                   });
                 case O.Wy.DESCRIPTION:
                   return (0, r.jsx)(b.Z, {
                     guildId: t,
                     handleUpdate: X,
-                    progress: Z,
-                    errors: W
+                    progress: W,
+                    errors: Z
                   });
                 case O.Wy.CUSTOMIZE_TAG_BADGE:
                   return (0, r.jsx)(E.Z, {
                     handleUpdate: X,
-                    tag: Z.tag,
-                    error: W.tag,
-                    badge: Z.badgeKind,
-                    primaryColor: Z.badgePrimaryColor,
-                    secondaryColor: Z.badgeSecondaryColor,
+                    tag: W.tag,
+                    error: Z.tag,
+                    badge: W.badgeKind,
+                    primaryColor: W.badgePrimaryColor,
+                    secondaryColor: W.badgeSecondaryColor,
                     furthestStep: O.Wy.CUSTOMIZE_TAG_BADGE,
                     inSettings: !0
                   });
@@ -369,13 +369,13 @@ let S = e => [{
                   return (0, r.jsx)(N.Z, {
                     guildId: t,
                     inSettings: !0,
-                    error: W.verificationForm
+                    error: Z.verificationForm
                   });
                 case O.Wy.CUSTOMIZE_BANNER:
                   return (0, r.jsx)(C.Z, {
                     guildId: t,
                     handleUpdate: X,
-                    progress: Z
+                    progress: W
                   });
                 default:
                   return null
@@ -391,7 +391,7 @@ let S = e => [{
                 onReset: () => {
                   (0, f.mf)(t, Q)
                 },
-                errorMessage: Object.values(W).find(e => null != e)
+                errorMessage: Object.values(Z).find(e => null != e)
               })
             })
           })]

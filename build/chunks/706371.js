@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => A,
-  r: () => c
+  Z: () => c,
+  r: () => A
 }), n(47120), n(653041), n(230036);
 var r = n(200651);
 n(192379);
@@ -12,36 +12,36 @@ var i = n(442837),
   l = n(512508),
   o = n(981631);
 
-function c(e, t) {
+function A(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
   return (0, i.Wu)([a.ZP], () => {
     let i = a.ZP.getChannels(e)[o.d4z.GUILD_CATEGORY],
-      c = [...a.ZP.getChannels(e)[a.sH], ...a.ZP.getChannels(e)[a.Zb]],
-      A = [],
+      A = [...a.ZP.getChannels(e)[a.sH], ...a.ZP.getChannels(e)[a.Zb]],
+      c = [],
       d = {};
     return i.forEach(e => {
       let {
         channel: t,
         comparator: n
       } = e;
-      "null" !== t.id && (d[t.id] = [], A.push({
+      "null" !== t.id && (d[t.id] = [], c.push({
         channel: t,
         comparator: n
       }))
-    }), c.forEach(e => {
+    }), A.forEach(e => {
       let {
         channel: i,
         comparator: a
       } = e;
-      !(i.isThread() || t.has(i.id) || i.isGuildStageVoice() && !r || !n && (0, s.Z)(i)) && (null == i.parent_id ? A.push({
+      !(i.isThread() || t.has(i.id) || i.isGuildStageVoice() && !r || !n && (0, s.Z)(i)) && (null == i.parent_id ? c.push({
         channel: i,
         comparator: a
       }) : (null == d[i.parent_id] && (d[i.parent_id] = []), d[i.parent_id].push({
         channel: i,
         comparator: a
       })))
-    }), A.sort((e, t) => {
+    }), c.sort((e, t) => {
       let {
         comparator: n,
         channel: r
@@ -67,7 +67,7 @@ function c(e, t) {
   }, [e, n, r, t])
 }
 
-function A(e) {
+function c(e) {
   let {
     guildId: t,
     selectedChannelIds: n,
@@ -75,16 +75,16 @@ function A(e) {
     placeholder: s,
     includeRoleRestrictedPrivateChannels: a = !1,
     includeStageVoiceChannels: o = !1,
-    helperText: A,
+    helperText: c,
     className: d
-  } = e, u = c(t, n, a, o);
+  } = e, u = A(t, n, a, o);
   return (0, r.jsx)(l.ZP, {
     channelRows: u,
     guildId: t,
     selectedChannelIds: n,
     onChange: (e, t) => i(e),
     placeholder: s,
-    helperText: A,
+    helperText: c,
     className: d
   })
 }

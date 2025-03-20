@@ -152,13 +152,13 @@ let D = i.forwardRef(function(e, t) {
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: !0
-  }), H = i.useCallback(() => {
+  }), F = i.useCallback(() => {
     (0, T.Z)({
       channel: a,
       openInPopout: W,
       analyticsLocations: D
     }), b(), _()
-  }, [D, a, _, b, W]), F = i.useCallback(e => {
+  }, [D, a, _, b, W]), H = i.useCallback(e => {
     u(), E.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: a.id,
       guild_id: a.getGuildId()
@@ -181,7 +181,7 @@ let D = i.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: R.container,
-          onMouseEnter: F,
+          onMouseEnter: H,
           onMouseLeave: b,
           children: [(0, r.jsxs)("div", {
             className: R.titleContainer,
@@ -197,7 +197,7 @@ let D = i.forwardRef(function(e, t) {
               })]
             }), (0, r.jsxs)(p.P3F, {
               className: R.titleRight,
-              onClick: H,
+              onClick: F,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.NW.string(w.t["K8+z4e"])

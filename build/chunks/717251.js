@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -11,13 +11,13 @@ var i = n(120356),
   l = n(2150),
   o = n(301581);
 
-function c(e) {
+function A(e) {
   let {
     title: t,
     description: n,
     action: i,
-    highlightColor: c = l.q.NONE,
-    selected: A = !1,
+    highlightColor: A = l.q.NONE,
+    selected: c = !1,
     subsection: d = null,
     onClick: u,
     className: g,
@@ -32,8 +32,8 @@ function c(e) {
       }, g),
       onClick: f ? void 0 : u,
       children: (0, r.jsxs)("div", {
-        className: s()(o.backgroundModifierContainer, o[c], {
-          [o.selected]: A,
+        className: s()(o.backgroundModifierContainer, o[A], {
+          [o.selected]: c,
           [o.disabled]: f,
           [o.noAction]: null == u
         }),

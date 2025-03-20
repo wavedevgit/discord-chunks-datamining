@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(442837),
-  c = n(210753),
-  A = n(77498),
+  A = n(210753),
+  c = n(77498),
   d = n(488558);
 
 function u(e) {
@@ -22,12 +22,12 @@ function u(e) {
   } = e, {
     isFetching: g,
     coverImageUrl: f
-  } = (0, c.$)(t, {
+  } = (0, A.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), m = (0, o.e7)([A.Z], () => {
+  }), m = (0, o.e7)([c.Z], () => {
     var e, n;
-    return null !== (n = null === (e = A.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
+    return null !== (n = null === (e = c.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
   }), p = i.useCallback(() => {
     null == s || s(t)
   }, [t, s]), h = i.useMemo(() => g ? null : null == f ? (0, r.jsx)("div", {

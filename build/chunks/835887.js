@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(550271),
   o = n(434404),
-  c = n(254925),
-  A = n(976260),
+  A = n(254925),
+  c = n(976260),
   d = n(388032),
   u = n(935921);
 let g = function(e) {
@@ -22,10 +22,10 @@ let g = function(e) {
     className: t,
     children: [(0, r.jsx)(a.vwX, {
       className: u.sectionTitle,
-      children: d.NW.string(A.Z.pb7lpK)
+      children: d.NW.string(c.Z.pb7lpK)
     }), (0, r.jsx)("div", {
       className: u.pickerGrid,
-      children: c.QV.map(t => (0, r.jsx)(a.P3F, {
+      children: A.QV.map(t => (0, r.jsx)(a.P3F, {
         className: s()(u.pickerItem, {
           [u.pickerItemSelected]: t === e.badge
         }),

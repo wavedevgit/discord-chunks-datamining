@@ -10,8 +10,8 @@ var i = n(108930),
   a = n(146068),
   l = n(308545),
   o = n(397697),
-  c = n(129871),
-  A = n(206851),
+  A = n(129871),
+  c = n(206851),
   d = n(246933),
   u = n(995414),
   g = n(308083);
@@ -61,7 +61,7 @@ function m(e) {
     case g.qC.WORLD_MAP:
       return (0, r.jsx)(u.Z, f({}, n));
     case g.qC.SEA_FOAM:
-      return (0, r.jsx)(c.Z, f({}, n));
+      return (0, r.jsx)(A.Z, f({}, n));
     case g.qC.WARP_TUNNEL:
       return (0, r.jsx)(d.Z, f({}, n));
     case g.qC.HOUSE:
@@ -71,7 +71,7 @@ function m(e) {
     case g.qC.MESH:
       return (0, r.jsx)(l.Z, f({}, n));
     case g.qC.SPATTER:
-      return (0, r.jsx)(A.Z, f({}, n))
+      return (0, r.jsx)(c.Z, f({}, n))
   }
   return null
 }

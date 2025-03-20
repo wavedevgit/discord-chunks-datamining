@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(497321),
   o = n(246946),
-  c = n(63063),
-  A = n(621319),
+  A = n(63063),
+  c = n(621319),
   d = n(44550),
   u = n(586382),
   g = n(859481),
@@ -35,7 +35,7 @@ function h(e) {
     fetched: d.Z.fetchedVanityURL
   })), N = null == t ? void 0 : t.id;
   return (i.useEffect(() => {
-    null == N || x || (0, A.U5)(N)
+    null == N || x || (0, c.U5)(N)
   }, [x, N]), null == t) ? null : n ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
     children: [(0, r.jsxs)(a.vwX, {
       className: p.title,
@@ -47,7 +47,7 @@ function h(e) {
       color: "text-secondary",
       className: p.description,
       children: m.NW.format(m.t.koklFB, {
-        helpCenterArticle: c.Z.getArticleURL(f.BhN.GUILD_VANITY_URL)
+        helpCenterArticle: A.Z.getArticleURL(f.BhN.GUILD_VANITY_URL)
       })
     }), (0, r.jsx)(g.z, {
       guild: t,

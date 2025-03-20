@@ -6,8 +6,8 @@ n.d(t, {
 }), n(47120), n(978209), n(266796);
 var a, l = n(392711),
   o = n.n(l),
-  c = n(149765),
-  A = n(866442),
+  A = n(149765),
+  c = n(866442),
   d = n(442837),
   u = n(570140),
   g = n(561654),
@@ -123,7 +123,7 @@ function Q(e) {
   })
 }
 
-function Z(e) {
+function W(e) {
   let {
     guildId: t
   } = e;
@@ -146,7 +146,7 @@ function Z(e) {
     }) || null == t ? x.delete(e) : n[r] = t
   }), 0 === x.size && (j = !1), E = !1, I = [...n]
 }
-class W extends(a = d.ZP.Store) {
+class Z extends(a = d.ZP.Store) {
   initialize() {
     this.waitFor(C.Z, g.Z, f.Z)
   }
@@ -193,8 +193,8 @@ class W extends(a = d.ZP.Store) {
     return B
   }
 }
-v(W, "displayName", "GuildSettingsRolesStore");
-let k = new W(u.Z, __OVERLAY__ ? {} : {
+v(Z, "displayName", "GuildSettingsRolesStore");
+let k = new Z(u.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_INIT: () => S(),
     GUILD_SETTINGS_INIT: T,
     GUILD_SETTINGS_SET_SECTION: T,
@@ -216,7 +216,7 @@ let k = new W(u.Z, __OVERLAY__ ? {} : {
         permissions: s
       } = i;
       return R(i, {
-        permissions: s = r ? c.IH(s, n) : c.Od(s, n)
+        permissions: s = r ? A.IH(s, n) : A.Od(s, n)
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSION_SET: function(e) {
@@ -258,7 +258,7 @@ let k = new W(u.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, A.Rf)(n), i = Q(t);
+      } = e, r = 0 === n ? null : (0, c.Rf)(n), i = Q(t);
       return null != i && R(i, {
         color: n,
         colorString: r
@@ -320,10 +320,10 @@ let k = new W(u.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_CLOSE: function() {
       r = null, O = I = [], P.clear(), x.clear(), B.clear(), w = new Set, j = !1, E = !1, y = !1, N = b.QZA.CLOSED
     },
-    GUILD_ROLE_CREATE: Z,
-    GUILD_ROLE_UPDATE: Z,
+    GUILD_ROLE_CREATE: W,
+    GUILD_ROLE_UPDATE: W,
     GUILD_ROLE_DELETE: function(e) {
-      return w.has(e.roleId) && (w.delete(e.roleId), P.delete(e.roleId), B.delete(e.roleId), y = !1), Z(e)
+      return w.has(e.roleId) && (w.delete(e.roleId), P.delete(e.roleId), B.delete(e.roleId), y = !1), W(e)
     },
     GUILD_SETTINGS_ROLES_SUBMITTING: function() {
       N = b.QZA.SUBMITTING

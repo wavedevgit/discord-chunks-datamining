@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => ep
 }), n(47120), n(653041), n(627341);
 var r, l = n(392711),
-  o = n.n(l),
-  i = n(278074),
+  i = n.n(l),
+  o = n(278074),
   a = n(442837),
   s = n(570140),
   c = n(782769),
@@ -14,21 +14,21 @@ var r, l = n(392711),
   f = n(802856),
   p = n(420660),
   g = n(728345),
-  y = n(812206),
-  v = n(750881),
-  O = n(710845),
-  b = n(38618),
-  N = n(656063),
+  v = n(812206),
+  N = n(750881),
+  y = n(710845),
+  O = n(38618),
+  x = n(656063),
   m = n(761282),
-  x = n(814443),
-  C = n(789407),
-  E = n(630186),
+  b = n(814443),
+  E = n(789407),
+  C = n(630186),
   j = n(250889),
   I = n(199902),
-  P = n(592125),
-  S = n(480294),
-  w = n(831506),
-  T = n(731290),
+  S = n(592125),
+  P = n(480294),
+  T = n(831506),
+  w = n(731290),
   Z = n(430824),
   _ = n(496675),
   R = n(158776),
@@ -36,8 +36,8 @@ var r, l = n(392711),
   D = n(594174),
   W = n(979651),
   k = n(626135),
-  M = n(823379),
-  B = n(981631);
+  B = n(823379),
+  M = n(981631);
 
 function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,7 +61,7 @@ function L(e) {
   return e
 }
 
-function V(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,10 +73,10 @@ function V(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let G = !1,
+let V = !1,
   F = !1,
-  H = [],
   K = [],
+  H = [],
   Q = {},
   Y = {},
   z = new Set,
@@ -84,15 +84,15 @@ let G = !1,
 
 function J() {
   let e = A.Z.getFriendIDs();
-  return new Set(S.Z.hasConsented(B.pjP.PERSONALIZATION) ? [...x.Z.getUserAffinitiesUserIds(), ...e] : e)
+  return new Set(P.Z.hasConsented(M.pjP.PERSONALIZATION) ? [...b.Z.getUserAffinitiesUserIds(), ...e] : e)
 }
 
 function q(e) {
-  return R.Z.findActivity(e, e => e.type !== B.IIU.CUSTOM_STATUS)
+  return R.Z.findActivity(e, e => e.type !== M.IIU.CUSTOM_STATUS)
 }
 
 function $(e) {
-  return null == Q[e] && (Q = V(L({}, Q), {
+  return null == Q[e] && (Q = G(L({}, Q), {
     [e]: new j.Z({
       name: e
     })
@@ -100,8 +100,8 @@ function $(e) {
 }
 
 function ee(e) {
-  return null == Y[e] && (Y = V(L({}, Y), {
-    [e]: new E.Z({
+  return null == Y[e] && (Y = G(L({}, Y), {
+    [e]: new C.Z({
       url: e
     })
   })), Y[e]
@@ -112,14 +112,14 @@ function et(e) {
 }
 
 function en(e) {
-  if ((0, h.Z)(e)) return C.r9;
-  let t = null != e.application_id ? y.Z.getApplication(e.application_id) : null;
+  if ((0, h.Z)(e)) return E.r9;
+  let t = null != e.application_id ? v.Z.getApplication(e.application_id) : null;
   return null != t ? t : (0, f.Z)(e) ? $(e.name) : (0, p.Z)(e) && null != e.url ? ee(e.url) : (null != e.application_id && et(e.application_id), t)
 }
 
 function er(e) {
   let t = W.Z.getVoiceStateForUser(e);
-  return (null == t ? void 0 : t.channelId) != null && _.Z.canWithPartialContext(B.Plq.VIEW_CHANNEL, {
+  return (null == t ? void 0 : t.channelId) != null && _.Z.canWithPartialContext(M.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
 }
@@ -128,94 +128,94 @@ function el(e) {
   return A.Z.isFriend(e.id)
 }
 
-function eo(e, t, n) {
-  var r, l, i, a, s, h;
+function ei(e, t, n) {
+  var r, l, o, a, s, h;
   let f;
   let p = D.default.getCurrentUser(),
     g = null !== (r = null == p ? void 0 : p.nsfwAllowed) && void 0 !== r && r,
-    v = t.map(e => e.id),
-    b = t.filter(t => e.has(t.id)),
-    x = !1,
-    S = [],
+    N = t.map(e => e.id),
+    O = t.filter(t => e.has(t.id)),
+    b = !1,
+    P = [],
     A = new Set,
     k = !1,
-    B = [];
+    M = [];
   for (let e of t) {
     let n = I.Z.getAnyStreamForUser(e.id),
-      r = P.Z.getChannel(null == n ? void 0 : n.channelId);
-    if ((null == r ? void 0 : r.isNSFW()) && (!g || !T.Z.didAgree(null == r ? void 0 : r.getGuildId()))) continue;
+      r = S.Z.getChannel(null == n ? void 0 : n.channelId);
+    if ((null == r ? void 0 : r.isNSFW()) && (!g || !w.Z.didAgree(null == r ? void 0 : r.getGuildId()))) continue;
     let h = q(e.id);
-    if (null != n && B.push({
+    if (null != n && M.push({
         stream: n,
         streamUser: e,
         activity: h
       }), null == h) continue;
-    let f = (0, N.Z)(h);
+    let f = (0, x.Z)(h);
     if (null == f) continue;
-    k = f === C.XB;
-    let v = function(e) {
-      let t = y.Z.getApplication(e);
-      return null != t ? t : "string" != typeof e ? (new O.Z("NowPlayingViewStore").error("Unknown type for applicationId: ".concat(typeof e, ", value: ").concat(e), {
+    k = f === E.XB;
+    let N = function(e) {
+      let t = v.Z.getApplication(e);
+      return null != t ? t : "string" != typeof e ? (new y.Z("NowPlayingViewStore").error("Unknown type for applicationId: ".concat(typeof e, ", value: ").concat(e), {
         tags: {
           source: "ACTIVITIES"
         }
-      }), null) : e === C.XB ? C.r9 : e.startsWith(j.H) ? $(e.slice(j.H.length)) : e.startsWith(E._) ? ee(e.slice(E._.length)) : (et(e), null)
+      }), null) : e === E.XB ? E.r9 : e.startsWith(j.H) ? $(e.slice(j.H.length)) : e.startsWith(C._) ? ee(e.slice(C._.length)) : (et(e), null)
     }(f);
     if ((0, d.Z)(h)) {
       let t = (0, c.a)();
       if ((0, u.ZP)({
           activity: h,
           userId: e.id,
-          application: v,
-          channelId: null === (i = W.Z.getVoiceStateForUser(e.id)) || void 0 === i ? void 0 : i.channelId,
+          application: N,
+          channelId: null === (o = W.Z.getVoiceStateForUser(e.id)) || void 0 === o ? void 0 : o.channelId,
           currentUser: p,
           isActivitiesEnabledForCurrentPlatform: t,
-          ChannelStore: P.Z,
+          ChannelStore: S.Z,
           VoiceStateStore: W.Z,
           PermissionStore: _.Z,
           GuildStore: Z.Z
         }) !== u.Fw.CAN_JOIN) continue
     }
-    if (!m.JE(h) || null == v || A.has(v.id)) continue;
-    let b = null != h ? en(h) : null;
-    (null == b || b.id !== v.id) && (h = null);
+    if (!m.JE(h) || null == N || A.has(N.id)) continue;
+    let O = null != h ? en(h) : null;
+    (null == O || O.id !== N.id) && (h = null);
     let R = [];
-    R = null != h && null != h.party && null != h.party.id ? Array.from(null !== (a = w.Z.getParty(h.party.id)) && void 0 !== a ? a : []).reduce((e, t) => {
+    R = null != h && null != h.party && null != h.party.id ? Array.from(null !== (a = T.Z.getParty(h.party.id)) && void 0 !== a ? a : []).reduce((e, t) => {
       let n = D.default.getUser(t);
       return null != n && e.push(n), e
     }, []) : t.filter(e => {
       let t = q(e.id),
         n = null != t ? en(t) : null;
-      return null != n && n.id === v.id
-    }), (R = o().orderBy(R, [el], ["desc"])).length !== t.length && (x = !0), A.add(v.id), S.push({
-      game: v,
+      return null != n && n.id === N.id
+    }), (R = i().orderBy(R, [el], ["desc"])).length !== t.length && (b = !0), A.add(N.id), P.push({
+      game: N,
       activity: h,
       activityUser: e,
       startedPlayingTime: null !== (s = null == h ? void 0 : null === (l = h.timestamps) || void 0 === l ? void 0 : l.start) && void 0 !== s ? s : null == h ? void 0 : h.created_at,
       playingMembers: R
     })
   }
-  let U = 1 === b.length,
+  let U = 1 === O.length,
     L = [],
-    V = new Set,
-    G = new Set;
+    G = new Set,
+    V = new Set;
   for (let e of t) {
     let n = er(e.id),
-      r = P.Z.getChannel(n),
+      r = S.Z.getChannel(n),
       l = null != r ? r.getGuildId() : null,
-      i = Z.Z.getGuild(l);
-    if (G.has(l) && V.has(n) || null == r || null == i || r.id === i.afkChannelId) null == r && (f = null, U = !0);
+      o = Z.Z.getGuild(l);
+    if (V.has(l) && G.has(n) || null == r || null == o || r.id === o.afkChannelId) null == r && (f = null, U = !0);
     else {
       let e = W.Z.getVoiceStatesForChannel(r.id),
-        a = o()(e).map(e => {
+        a = i()(e).map(e => {
           let {
             userId: t
           } = e;
           return D.default.getUser(t)
-        }).filter(M.lm).orderBy([el], ["desc"]).value();
-      a.filter(e => !v.includes(e.id)).forEach(e => t.push(e)), U ? G.has(l) || (f = null) : (f = i, U = !0), G.add(l), V.add(n), L.push({
+        }).filter(B.lm).orderBy([el], ["desc"]).value();
+      a.filter(e => !N.includes(e.id)).forEach(e => t.push(e)), U ? V.has(l) || (f = null) : (f = o, U = !0), V.add(l), G.add(n), L.push({
         channel: r,
-        guild: i,
+        guild: o,
         members: a,
         voiceStates: e
       })
@@ -225,23 +225,23 @@ function eo(e, t, n) {
     id: n,
     voiceChannels: L,
     isSpotifyActivity: k,
-    priorityMembers: b.map(e => ({
+    priorityMembers: O.map(e => ({
       user: e,
       status: R.Z.getStatus(e.id)
     })),
     partiedMembers: t,
-    showPlayingMembers: x,
+    showPlayingMembers: b,
     guildContext: f,
     currentActivities: (h = e => {
       var t;
       return null !== (t = e.startedPlayingTime) && void 0 !== t ? t : 0
-    }, o()(S).orderBy([h, e => e.game.name], ["desc", "asc"])).value(),
-    applicationStreams: B
+    }, i()(P).orderBy([h, e => e.game.name], ["desc", "asc"])).value(),
+    applicationStreams: M
   }
 }
 
-function ei(e) {
-  return !!(0 !== e.voiceChannels.length && (0, v.$W)("now-playing-view-store")) && e.voiceChannels.length > 0 && e.voiceChannels.some(e => {
+function eo(e) {
+  return !!(0 !== e.voiceChannels.length && (0, N.$W)("now-playing-view-store")) && e.voiceChannels.length > 0 && e.voiceChannels.some(e => {
     let {
       voiceStates: t
     } = e;
@@ -250,7 +250,7 @@ function ei(e) {
 }
 
 function ea(e) {
-  return !!(0 !== e.voiceChannels.length && (0, v.$W)("now-playing-view-store")) && e.voiceChannels.length > 0 && e.voiceChannels.every(e => {
+  return !!(0 !== e.voiceChannels.length && (0, N.$W)("now-playing-view-store")) && e.voiceChannels.length > 0 && e.voiceChannels.every(e => {
     let {
       voiceStates: t
     } = e;
@@ -259,72 +259,72 @@ function ea(e) {
 }
 
 function es(e) {
-  return !!(0, v.sb)("now-playing-view-store") && e.partiedMembers.some(e => A.Z.isBlocked(e.id))
+  return !!(0, N.sb)("now-playing-view-store") && e.partiedMembers.some(e => A.Z.isBlocked(e.id))
 }
 
 function ec() {
-  return G && b.Z.isConnected()
+  return V && O.Z.isConnected()
 }
-let eu = o().throttle(() => {
+let eu = i().throttle(() => {
   ! function() {
     var e;
     if (!ec()) return;
     z.clear();
     let t = (function(e) {
         let t = J(),
-          n = eo.bind(null, t);
-        return o()(e).mapValues(n)
+          n = ei.bind(null, t);
+        return i()(e).mapValues(n)
       })((e = Array.from(J()).reduce((e, t) => {
         let n = D.default.getUser(t);
         return null == n || n.bot || e.push(n), e
-      }, []), o()(e).groupBy(e => {
+      }, []), i()(e).groupBy(e => {
         var t;
         let n = er(e.id),
           r = q(e.id);
         return null != n ? "".concat("channel-").concat(n) : (null == r ? void 0 : null === (t = r.party) || void 0 === t ? void 0 : t.id) != null ? "".concat("party-").concat(r.party.id) : "".concat("user-").concat(e.id)
-      }))).values().orderBy([ei, e => e.partiedMembers.length > 1, e => e.applicationStreams.length > 0, e => e.voiceChannels.length > 0, e => e.currentActivities.length > 0, e => e.isSpotifyActivity, e => e.priorityMembers.map(e => e.user.username.toLowerCase()).join(" ")], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value(),
+      }))).values().orderBy([eo, e => e.partiedMembers.length > 1, e => e.applicationStreams.length > 0, e => e.voiceChannels.length > 0, e => e.currentActivities.length > 0, e => e.isSpotifyActivity, e => e.priorityMembers.map(e => e.user.username.toLowerCase()).join(" ")], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value(),
       {
         blockeeExperimentEnabled: n,
         blockerExperimentEnabled: r,
         analyticsEligible: l
-      } = (0, v.p7)("now-playing-view-store");
+      } = (0, N.p7)("now-playing-view-store");
     l && t.forEach(e => {
-        let t = (0, i.EQ)({
+        let t = (0, o.EQ)({
           party: e,
           blockeeExperimentEnabled: n,
           blockerExperimentEnabled: r
         }).returnType().with({
           blockerExperimentEnabled: !0,
-          party: i.P.when(es)
-        }, () => v.h9.HIDE).with({
+          party: o.P.when(es)
+        }, () => N.h9.HIDE).with({
           blockeeExperimentEnabled: !0,
-          party: i.P.when(ea)
-        }, () => v.h9.HIDE).with({
+          party: o.P.when(ea)
+        }, () => N.h9.HIDE).with({
           blockeeExperimentEnabled: !0,
-          party: i.P.when(ei)
-        }, () => v.h9.DERANK).otherwise(() => v.h9.SHOW);
+          party: o.P.when(eo)
+        }, () => N.h9.DERANK).otherwise(() => N.h9.SHOW);
         e.voiceChannels.forEach(e => {
           let {
             voiceStates: n,
             channel: r
-          } = e, l = o().map(n, "userId"), i = o().map(n, "discoverable"), a = o().map(n, e => A.Z.getRelationshipType(e.userId));
-          k.default.track(B.rMx.PARTY_VOICE_ACTIVITY_VIEWED, {
+          } = e, l = i().map(n, "userId"), o = i().map(n, "discoverable"), a = i().map(n, e => A.Z.getRelationshipType(e.userId));
+          k.default.track(M.rMx.PARTY_VOICE_ACTIVITY_VIEWED, {
             activity_user_ids: l,
-            discoverable: i,
+            discoverable: o,
             relationship_types: a,
             voice_channel_id: r.id,
             treatment: t,
             surface: "now-playing"
           })
         })
-      }), K = (H = t.filter(e => {
+      }), H = (K = t.filter(e => {
         let {
           blockeeExperimentEnabled: t,
           blockerExperimentEnabled: n
-        } = (0, v.p7)("now-playing-view-store"), r = n && es(e), l = t && ea(e);
+        } = (0, N.p7)("now-playing-view-store"), r = n && es(e), l = t && ea(e);
         return (e.voiceChannels.length >= 1 || e.currentActivities.length > 0 || e.applicationStreams.length > 0) && !r && !l
       })).map(e => ({
-        type: B.GOo.USER,
+        type: M.GOo.USER,
         party: e
       })),
       function() {
@@ -341,16 +341,16 @@ function ed() {
 }
 class eh extends(r = a.ZP.Store) {
   initialize() {
-    this.syncWith([D.default, y.Z, R.Z, w.Z, W.Z, I.Z, A.Z, S.Z, x.Z], ed), this.waitFor(b.Z, Z.Z, y.Z, D.default, x.Z)
+    this.syncWith([D.default, v.Z, R.Z, T.Z, W.Z, I.Z, A.Z, P.Z, b.Z], ed), this.waitFor(O.Z, Z.Z, v.Z, D.default, b.Z)
   }
   get currentActivityParties() {
-    return H
-  }
-  get nowPlayingCards() {
     return K
   }
+  get nowPlayingCards() {
+    return H
+  }
   get isMounted() {
-    return G
+    return V
   }
   get loaded() {
     return F
@@ -359,13 +359,13 @@ class eh extends(r = a.ZP.Store) {
 U(eh, "displayName", "NowPlayingViewStore");
 let ef = new eh(s.Z, {
     LOGOUT: function() {
-      G = !1, H = [], K = [], z.clear()
+      V = !1, K = [], H = [], z.clear()
     },
     NOW_PLAYING_MOUNTED: function() {
-      G = !0, eu()
+      V = !0, eu()
     },
     NOW_PLAYING_UNMOUNTED: function() {
-      G = !1
+      V = !1
     }
   }),
   ep = ef

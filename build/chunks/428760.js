@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(730671),
-  c = n(388032),
-  A = n(994357);
+  A = n(388032),
+  c = n(994357);
 
 function d(e) {
   let {
@@ -27,28 +27,28 @@ function d(e) {
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(A.keywordsContainer, s),
+      className: a()(c.keywordsContainer, s),
       children: [(0, r.jsx)(l.lcI, {
-        className: a()(A.keywordsTextArea, d),
+        className: a()(c.keywordsTextArea, d),
         value: m,
         onChange: p,
-        placeholder: c.NW.string(c.t.UyaxJy)
+        placeholder: A.NW.string(A.t.UyaxJy)
       }), (0, r.jsx)(l.Text, {
-        className: A.keywordsCounter,
+        className: c.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
         children: "".concat(f.length, " / ").concat(n)
       })]
     }), null != h ? (0, r.jsx)(l.Text, {
-      className: a()(A.paddingTop, A.errorText),
+      className: a()(c.paddingTop, c.errorText),
       variant: "text-xs/medium",
       color: "text-danger",
       children: h
     }) : (0, r.jsx)(l.Text, {
-      className: A.paddingTop,
+      className: c.paddingTop,
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: null != u ? u : c.NW.string(c.t["Gm6G5+"])
+      children: null != u ? u : A.NW.string(A.t["Gm6G5+"])
     })]
   })
 }

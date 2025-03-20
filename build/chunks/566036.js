@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(510231),
-  c = n(434404),
-  A = n(383124),
+  A = n(434404),
+  c = n(383124),
   d = n(795691),
   u = n(388032),
   g = n(636477),
@@ -50,7 +50,7 @@ function h(e) {
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: g.selectedGames,
-    children: t.map(e => (0, r.jsx)(A.Z, {
+    children: t.map(e => (0, r.jsx)(c.Z, {
       applicationId: e,
       selected: !0,
       onClick: n,
@@ -65,16 +65,16 @@ function b(e) {
   let {
     profile: n,
     canManageGuild: s
-  } = e, o = n.id, A = null !== (t = null == n ? void 0 : n.gameApplicationIds) && void 0 !== t ? t : C, m = i.useCallback(e => {
-    c.Z.updateGuildProfile(o, {
+  } = e, o = n.id, c = null !== (t = null == n ? void 0 : n.gameApplicationIds) && void 0 !== t ? t : C, m = i.useCallback(e => {
+    A.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
   }, [o]), b = i.useCallback(e => {
-    let t = A.filter(t => t !== e);
-    c.Z.updateGuildProfile(o, {
+    let t = c.filter(t => t !== e);
+    A.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, A]), v = i.useRef(A), x = i.useMemo(() => (a().isEqual(new Set(A), new Set(v.current)) || (v.current = [...A]), v.current), [A]);
+  }, [o, c]), v = i.useRef(c), x = i.useMemo(() => (a().isEqual(new Set(c), new Set(v.current)) || (v.current = [...c]), v.current), [c]);
   return (0, r.jsxs)(l.hjN, {
     className: f.section,
     children: [(0, r.jsxs)("div", {
@@ -88,7 +88,7 @@ function b(e) {
     }), (0, r.jsxs)("div", {
       className: g.sectionBody,
       children: [(0, r.jsx)(p, {
-        gameApplicationIds: A,
+        gameApplicationIds: c,
         handleChange: m,
         disabled: !s
       }), (0, r.jsx)(h, {
@@ -97,7 +97,7 @@ function b(e) {
         disabled: !s
       }), (0, r.jsx)(d.Z, {
         guildId: o,
-        selectedGameApplicationIds: A,
+        selectedGameApplicationIds: c,
         onUpdateGames: m,
         disabled: !s
       })]

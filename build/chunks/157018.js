@@ -9,8 +9,8 @@ var r = n(201895),
   a = n(699516),
   l = n(594174),
   o = n(293810),
-  c = n(981631),
-  A = n(388032);
+  A = n(981631),
+  c = n(388032);
 
 function d(e) {
   switch (e.ref_type) {
@@ -19,12 +19,12 @@ function d(e) {
       return null != t ? function(e) {
         let t = (0, i.F6)(e, l.default, a.Z);
         switch (e.type) {
-          case c.d4z.GUILD_VOICE:
-            return A.NW.formatToPlainString(A.t.bkpadH, {
+          case A.d4z.GUILD_VOICE:
+            return c.NW.formatToPlainString(c.t.bkpadH, {
               channelName: t
             });
-          case c.d4z.GUILD_STAGE_VOICE:
-            return A.NW.formatToPlainString(A.t.TPPk2d, {
+          case A.d4z.GUILD_STAGE_VOICE:
+            return c.NW.formatToPlainString(c.t.TPPk2d, {
               channelName: t
             });
           default:

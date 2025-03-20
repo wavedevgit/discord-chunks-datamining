@@ -266,39 +266,37 @@ function eu() {
     !em && eb && s.Z.notifyContentInventoryReady(ep)
   }, [ep, eb, em]), m || a) ? null : (0, r.jsx)(p.Gt, {
     value: z,
-    children: (0, r.jsx)(_.vWI, {
-      children: (0, r.jsxs)("div", {
-        className: Q.overlay,
-        children: [(0, r.jsx)(U.Z, {}), j && (0, r.jsx)("header", {
-          className: Q.previewingInGameHeader,
-          children: q.NW.string(q.t.iOq96u)
-        }), ee, (!t || Z.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
-          locked: t,
-          keybind: k,
-          onClick: ei
-        }), u ? (0, r.jsx)(F.Z, {
-          className: i()({
-            [Q.layoutLocked]: t,
-            [Q.layoutUnlocked]: !t
-          })
-        }) : t ? null : (0, r.jsx)("div", {
-          className: Q.invalidContainer,
-          children: (0, r.jsx)("div", {
-            className: Q.inactiveContainer,
-            children: q.NW.format(q.t.ketnW1, D.OVERLAY_MIN_RESOLUTION)
-          })
-        }), $ && (0, r.jsx)(ea, {
-          locked: t,
-          focused: n
-        }), null != es && null != er && (0, r.jsx)(R.Z, {
-          streamerId: ed,
-          guildId: es.id,
-          channelId: er
-        }), (0, r.jsx)(G.Z, {
-          locked: M,
-          keybind: k
-        }), (0, r.jsx)(B.Z, {})]
-      })
+    children: (0, r.jsxs)("div", {
+      className: Q.overlay,
+      children: [(0, r.jsx)(U.Z, {}), j && (0, r.jsx)("header", {
+        className: Q.previewingInGameHeader,
+        children: q.NW.string(q.t.iOq96u)
+      }), ee, (!t || Z.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
+        locked: t,
+        keybind: k,
+        onClick: ei
+      }), u ? (0, r.jsx)(F.Z, {
+        className: i()({
+          [Q.layoutLocked]: t,
+          [Q.layoutUnlocked]: !t
+        })
+      }) : t ? null : (0, r.jsx)("div", {
+        className: Q.invalidContainer,
+        children: (0, r.jsx)("div", {
+          className: Q.inactiveContainer,
+          children: q.NW.format(q.t.ketnW1, D.OVERLAY_MIN_RESOLUTION)
+        })
+      }), $ && (0, r.jsx)(ea, {
+        locked: t,
+        focused: n
+      }), null != es && null != er && (0, r.jsx)(R.Z, {
+        streamerId: ed,
+        guildId: es.id,
+        channelId: er
+      }), (0, r.jsx)(G.Z, {
+        locked: M,
+        keybind: k
+      }), (0, r.jsx)(B.Z, {})]
     })
   })
 }

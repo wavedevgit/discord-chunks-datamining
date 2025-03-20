@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(700582),
-  c = n(330726),
-  A = n(51144),
+  A = n(330726),
+  c = n(51144),
   d = n(268350),
   u = n(419922),
   g = n(388032),
@@ -21,7 +21,7 @@ let m = e => {
     isDisabled: s,
     sticker: m,
     canManageSticker: p
-  } = e, [h, C] = i.useState(!1), [b, v] = (0, c.Z)(null, 4e3), x = () => {
+  } = e, [h, C] = i.useState(!1), [b, v] = (0, A.Z)(null, 4e3), x = () => {
     (0, l.ZDy)(async () => {
       let {
         default: e
@@ -55,7 +55,7 @@ let m = e => {
     } catch (e) {
       v(e.body.message), C(!1)
     }
-  }, j = A.ZP.useUserTag(m.user);
+  }, j = c.ZP.useUserTag(m.user);
   return (0, r.jsx)(l.ua7, {
     color: l.ua7.Colors.RED,
     forceOpen: null != b,

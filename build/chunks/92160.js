@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -11,13 +11,13 @@ var i = n(120356),
   l = n(388032),
   o = n(460449);
 
-function c(e) {
+function A(e) {
   let {
     className: t,
     enabled: n,
     previewCTA: i,
-    onPreview: c,
-    onToggle: A,
+    onPreview: A,
+    onToggle: c,
     animateStatus: d,
     firstLine: u,
     secondLine: g,
@@ -52,19 +52,19 @@ function c(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: o.buttonContainer,
-      children: [null == c ? null : (0, r.jsx)(a.zxk, {
+      children: [null == A ? null : (0, r.jsx)(a.zxk, {
         className: o.previewButton,
         look: a.zxk.Looks.LINK,
         size: a.zxk.Sizes.SMALL,
-        onClick: c,
+        onClick: A,
         disabled: f,
         color: a.zxk.Colors.PRIMARY,
         children: null != i ? i : l.NW.string(l.t["5U0kLy"])
       }), (0, r.jsx)(a.zxk, {
-        disabled: null == A || f,
+        disabled: null == c || f,
         size: a.zxk.Sizes.SMALL,
         color: n ? a.zxk.Colors.RED : a.zxk.Colors.BRAND,
-        onClick: A,
+        onClick: c,
         children: n ? l.NW.string(l.t.R9GHyc) : l.NW.string(l.t.JFfinp)
       })]
     })]

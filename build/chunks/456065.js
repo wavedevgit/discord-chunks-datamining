@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => g
 }), n(47120);
-var r, i, l, a = n(442837),
-  o = n(570140),
+var r, i, l, o = n(442837),
+  a = n(570140),
   s = n(810788),
   c = n(430824),
   u = n(981631);
@@ -17,7 +17,7 @@ function p(e) {
 function h() {
   return !0
 }
-class f extends(r = a.ZP.Store) {
+class f extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, s.Z), this.syncWith([s.Z], h)
   }
@@ -31,7 +31,7 @@ l = "HubLinkNoticeStore", (i = "displayName") in f ? Object.defineProperty(f, i,
   configurable: !0,
   writable: !0
 }) : f[i] = l;
-let g = new f(o.Z, {
+let g = new f(a.Z, {
   CONNECTION_OPEN: function(e) {
     for (let t of e.guilds)
       if (p(t.id)) return !0;

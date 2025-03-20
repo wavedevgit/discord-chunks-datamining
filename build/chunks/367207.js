@@ -32,9 +32,9 @@ var i = n(392711),
   R = n(981631),
   A = n(354459),
   x = n(37113),
-  j = n(388032);
+  D = n(388032);
 
-function D(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -119,7 +119,7 @@ class M extends s.Z {
     })
   }
   constructor(...e) {
-    super(...e), D(this, "_premiumPaymentModalCloseResolve", null), D(this, "_premiumPaymentModalCloseReject", null), D(this, "_maybeFetchPremiumOffer", async () => {
+    super(...e), j(this, "_premiumPaymentModalCloseResolve", null), j(this, "_premiumPaymentModalCloseReject", null), j(this, "_maybeFetchPremiumOffer", async () => {
       let e = E.default.getCurrentUser();
       if (null != e && e.verified) {
         let t = !(0, m.I5)(e) && f.Z.shouldFetchOffer();
@@ -128,10 +128,10 @@ class M extends s.Z {
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
-    }), D(this, "_maybeFetchCheckoutRecovery", async () => {
+    }), j(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = E.default.getCurrentUser();
       null != e && e.verified && !(0, m.I5)(e) && g.Z.shouldFetchCheckoutRecovery() && await (0, O.o)()
-    }), D(this, "_maybeFetchUserAffinities", () => {
+    }), j(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
       } = y.w.getCurrentConfig({
@@ -140,11 +140,11 @@ class M extends s.Z {
         autoTrackExposure: !1
       });
       e && (0, _.W)()
-    }), D(this, "_trackCustomNotificationSoundsExposure", () => {
+    }), j(this, "_trackCustomNotificationSoundsExposure", () => {
       v.Y.trackExposure({
         location: "PremiumManager"
       })
-    }), D(this, "_handlePremiumPaymentModalOpen", e => {
+    }), j(this, "_handlePremiumPaymentModalOpen", e => {
       (0, d.Z)(k(L({}, e), {
         analyticsLocations: [c.Z.OVERLAY],
         onClose: e => {
@@ -154,15 +154,15 @@ class M extends s.Z {
           })
         }
       }))
-    }), D(this, "_handlePremiumPaymentModalClose", e => {
+    }), j(this, "_handlePremiumPaymentModalClose", e => {
       let {
         didSucceed: t
       } = e;
       t && null != this._premiumPaymentModalCloseResolve ? this._premiumPaymentModalCloseResolve() : null != this._premiumPaymentModalCloseReject && this._premiumPaymentModalCloseReject(), this._premiumPaymentModalCloseResolve = null, this._premiumPaymentModalCloseReject = null
-    }), D(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
+    }), j(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
       let t = E.default.getCurrentUser();
       (null == t ? void 0 : t.id) !== e.senderUserId && this._maybeSendViewerUpsellMessage(e.channelId, e.guildId, t)
-    }), D(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
+    }), j(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;
       let o = u.Z.getSelectedParticipant(e),
         l = (0, C.o)(o, n),
@@ -172,7 +172,7 @@ class M extends s.Z {
         c = null !== (i = null === (r = p.Z.getGuild(t)) || void 0 === r ? void 0 : r.premiumTier) && void 0 !== i ? i : R.Eu4.NONE;
       if (T.Z.cooldownIsActive() || !s || c >= R.Eu4.TIER_2 || (null == o ? void 0 : o.type) !== A.fO.STREAM || (null == o ? void 0 : o.id) === (null == n ? void 0 : n.id) || null == o.maxResolution || null == o.maxFrameRate) return;
       N.I();
-      let d = j.NW.formatToPlainString(j.t.AbyeZG, {
+      let d = D.NW.formatToPlainString(D.t.AbyeZG, {
         nickname: o.userNick,
         resolution: (0, x.o6)(o.maxResolution.height),
         fps: (0, b.bp)(o.maxFrameRate)

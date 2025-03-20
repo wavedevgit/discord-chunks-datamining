@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(906732),
   l = n(263145),
   o = n(366980),
-  c = n(621319),
-  A = n(770270),
+  A = n(621319),
+  c = n(770270),
   d = n(70086),
   u = n(949640),
   g = n(981631),
@@ -27,7 +27,7 @@ function h(e) {
     variant: "text-md/normal",
     color: "text-danger",
     className: p.vanityInfo,
-    children: (0, A.i)(null == t ? void 0 : t.code)
+    children: (0, c.i)(null == t ? void 0 : t.code)
   });
   if (null != n && n.length > 0) {
     let e = (0, o.Z)(n);
@@ -50,11 +50,11 @@ function C(e) {
     vanityURLCode: n,
     vanityURLUses: a,
     originalVanityURLCode: o,
-    hasError: A
+    hasError: c
   } = e, d = (null == t ? void 0 : t.hasFeature(g.oNc.VANITY_URL)) === !0, u = i.useCallback(() => {
-    (0, c.Gy)("")
+    (0, A.Gy)("")
   }, []), f = i.useCallback(e => {
-    (0, c.Gy)(e.replace(/ /g, "-"))
+    (0, A.Gy)(e.replace(/ /g, "-"))
   }, []);
   return null == n ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)(s.Zbd, {
     editable: !0,
@@ -77,7 +77,7 @@ function C(e) {
       value: n,
       onChange: f,
       maxLength: 25,
-      error: A,
+      error: c,
       disabled: !d
     }), null != o && o.length > 0 ? (0, r.jsx)(s.zxk, {
       className: p.removeVanityUrlButton,
@@ -98,19 +98,19 @@ function b(e) {
     originalVanityURLCode: l,
     errorDetails: o
   } = e, {
-    analyticsLocations: c
+    analyticsLocations: A
   } = (0, a.ZP)(), m = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
-      analyticsLocations: c,
+      analyticsLocations: A,
       analyticsSection: g.jXE.GUILD_SETTINGS_VANITY_URL,
       analyticsObject: g.qAy.BUTTON_CTA,
       perks: (0, f.WW)(),
       targetPremiumGuildTier: g.Eu4.TIER_3
     })
-  }, [c, t]);
+  }, [A, t]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, A.p)(t) ? (0, r.jsx)(C, {
+    children: [(0, c.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: s,

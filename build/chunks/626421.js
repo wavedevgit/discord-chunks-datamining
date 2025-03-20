@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(399606),
+  o = n.n(l),
+  a = n(399606),
   s = n(243778),
   c = n(914010),
   u = n(566840),
@@ -18,14 +18,14 @@ let h = i.memo(function(e) {
     markAsDismissed: n
   } = e, {
     name: l,
-    guildId: o,
+    guildId: a,
     boundingRect: s
   } = t, c = i.useMemo(() => {
     var e, t, n;
     return e = 0, t = 0, n = 0, null
-  }, [l, o, n]);
+  }, [l, a, n]);
   return null == c ? null : (0, r.jsx)("div", {
-    className: a()(p.upsell, (null == s || s.y < 0) && p.hidden),
+    className: o()(p.upsell, (null == s || s.y < 0) && p.hidden),
     style: null == s ? {} : {
       top: s.top,
       left: s.right - s.x
@@ -35,7 +35,7 @@ let h = i.memo(function(e) {
 });
 
 function f() {
-  let e = (0, o.e7)([c.Z], () => c.Z.getGuildId()),
+  let e = (0, a.e7)([c.Z], () => c.Z.getGuildId()),
     t = (0, u.Eg)(e),
     [n, i] = (0, s.US)(Object.values(t).filter(e => {
       let {

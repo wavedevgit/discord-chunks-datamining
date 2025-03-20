@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  S: () => c,
+  S: () => A,
   w: () => p
 });
 var r = n(481060),
@@ -10,7 +10,7 @@ var r = n(481060),
   a = n(85960),
   l = n(273504),
   o = n(388032);
-let c = e => {
+let A = e => {
     switch (e) {
       case l.fX.KEYWORD:
       case l.fX.USER_PROFILE:
@@ -19,7 +19,7 @@ let c = e => {
         return !1
     }
   },
-  A = e => {
+  c = e => {
     switch (e) {
       case l.fX.KEYWORD:
       case l.fX.ML_SPAM:
@@ -79,7 +79,7 @@ let c = e => {
 
 function p(e, t) {
   var n, i, s, a, l;
-  return null != e && A(e) ? {
+  return null != e && c(e) ? {
     headerText: null !== (n = d(e, t)) && void 0 !== n ? n : "",
     headerSubtext: null !== (i = u(e, t)) && void 0 !== i ? i : "",
     descriptionText: null !== (s = g(e)) && void 0 !== s ? s : "",

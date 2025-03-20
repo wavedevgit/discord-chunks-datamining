@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(192379),
   i = n(442837),
   l = n(846027),
-  a = n(230711),
-  o = n(91896),
+  o = n(230711),
+  a = n(91896),
   s = n(849862),
   c = n(888369),
   u = n(131951),
@@ -54,11 +54,11 @@ let O = () => null;
 g.isPlatformEmbedded && (m.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => l.Z.toggleSelfMute({
   location: "System Tray"
 })), m.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => l.Z.toggleSelfDeaf()), m.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
-  a.Z.open(b.oAB.VOICE)
-}), O = i.ZP.connectStores([p.Z, u.Z, f.Z, c.default, h.Z, d.Z, o.Z], () => {
+  o.Z.open(b.oAB.VOICE)
+}), O = i.ZP.connectStores([p.Z, u.Z, f.Z, c.default, h.Z, d.Z, a.Z], () => {
   let e = c.default.getTotalMentionCount(),
     t = c.default.hasAnyUnread(),
-    n = (0, s.m$)([h.Z, o.Z]),
+    n = (0, s.m$)([h.Z, a.Z]),
     r = !d.Z.getDisableUnreadBadge() && !!(t || e + n > 0);
   return {
     connected: p.Z.isConnected(),

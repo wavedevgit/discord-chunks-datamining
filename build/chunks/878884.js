@@ -13,8 +13,8 @@ var r, l, i, o = n(442837),
   m = n(594174),
   g = n(979651),
   y = n(938475),
-  b = n(981631),
-  O = n(354459);
+  O = n(981631),
+  b = n(354459);
 let h = new c.Z,
   v = new c.Z,
   j = new Set;
@@ -24,10 +24,10 @@ function S(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    l = (0, y.PH)(r, null != t ? t : b.ME, e.id);
+    l = (0, y.PH)(r, null != t ? t : O.ME, e.id);
   h.set(e.id, l);
   let i = {
-    type: O.fO.USER,
+    type: b.fO.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -102,7 +102,7 @@ let x = new I(s.Z, {
       state: t,
       context: n
     } = e;
-    if (n !== a.Yn.DEFAULT || t !== b.hes.DISCONNECTED) return !1;
+    if (n !== a.Yn.DEFAULT || t !== O.hes.DISCONNECTED) return !1;
     E()
   },
   VOICE_STATE_UPDATES: function(e) {

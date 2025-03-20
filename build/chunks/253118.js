@@ -11,30 +11,28 @@ var i = n(481060),
   s = n(388032);
 
 function c(e) {
-  var t, c;
+  var t, n;
   let {
-    message: d,
-    usernameHook: u,
-    onClickPins: p,
-    compact: m
-  } = e, f = (0, o.ZP)(d), h = f.nick, g = u(f), _ = () => {
-    if (null == d.messageReference) return;
+    message: c,
+    usernameHook: d,
+    onClickPins: u,
+    compact: p
+  } = e, m = (0, o.ZP)(c), f = m.nick, h = d(m), g = () => {
+    if (null == c.messageReference) return;
     let {
       channel_id: e,
       message_id: t
-    } = d.messageReference;
+    } = c.messageReference;
     a.Z.jumpToMessage({
       channelId: e,
       messageId: t,
       flash: !0
     })
-  }, b = (0, i.bWb)().enabled ? {
+  }, _ = {
     iconNode: (0, r.jsx)(i.qQX, {
       size: "sm",
       color: "currentColor"
     })
-  } : {
-    icon: n(879066)
   };
   return (0, r.jsx)(l.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -53,34 +51,34 @@ function c(e) {
       })
     }
     return e
-  }({}, b), c = c = {
-    timestamp: d.timestamp,
-    compact: m,
-    children: null != d.messageReference ? null == p ? s.NW.format(s.t.lD5tur, {
-      usernameHook: g,
-      username: h,
-      messageOnClick: _
+  }({}, _), n = n = {
+    timestamp: c.timestamp,
+    compact: p,
+    children: null != c.messageReference ? null == u ? s.NW.format(s.t.lD5tur, {
+      usernameHook: h,
+      username: f,
+      messageOnClick: g
     }) : s.NW.format(s.t.yIDvPD, {
-      usernameHook: g,
-      username: h,
-      pinsActionOnClick: p,
-      messageOnClick: _
-    }) : null == p ? s.NW.format(s.t.vfkjq6, {
-      usernameHook: g,
-      username: h
+      usernameHook: h,
+      username: f,
+      pinsActionOnClick: u,
+      messageOnClick: g
+    }) : null == u ? s.NW.format(s.t.vfkjq6, {
+      usernameHook: h,
+      username: f
     }) : s.NW.format(s.t.R7vZGR, {
-      usernameHook: g,
-      username: h,
-      pinsActionOnClick: p
+      usernameHook: h,
+      username: f,
+      pinsActionOnClick: u
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(c)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(c, e))
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }

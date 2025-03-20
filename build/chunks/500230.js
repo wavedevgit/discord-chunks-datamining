@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(866442),
   o = n(481060),
-  c = n(550271),
-  A = n(688298),
+  A = n(550271),
+  c = n(688298),
   d = n(434404),
   u = n(254925),
   g = n(116175),
@@ -42,14 +42,14 @@ let h = function(e) {
           [p.pickerItemSelected]: e.primary === h && e.secondary === C
         }),
         onClick: () => N(e),
-        children: (0, r.jsx)(c.A, {
+        children: (0, r.jsx)(A.A, {
           badge: u.QV["0"],
           width: 32,
           height: 32,
           primaryTintColor: e.primary,
           secondaryTintColor: e.secondary
         })
-      }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(A.Z, {
+      }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(c.Z, {
         showSecondaryColor: g.ME[s] >= 2,
         palette: {
           primary: h,

@@ -7,8 +7,8 @@ var r, i, s = n(200651),
   a = n(192379),
   l = n(512722),
   o = n.n(l),
-  c = n(913527),
-  A = n.n(c),
+  A = n(913527),
+  c = n.n(A),
   d = n(481060),
   u = n(264451),
   g = n(759178),
@@ -46,7 +46,7 @@ let j = e => {
   return (0, s.jsx)(d.Text, {
     variant: "text-md/medium",
     color: "interactive-active",
-    children: A()(t).utc().format("MMMM YYYY")
+    children: c()(t).utc().format("MMMM YYYY")
   })
 };
 
@@ -58,7 +58,7 @@ function E(e) {
     payoutStatus: r,
     ppgDeferralReasons: i,
     periodEndDate: a
-  } = (0, p.j0)(t), l = null != a ? A()(a).add(15, "days").toISOString() : void 0, o = (0, u.Zo)(l, "MMM D");
+  } = (0, p.j0)(t), l = null != a ? c()(a).add(15, "days").toISOString() : void 0, o = (0, u.Zo)(l, "MMM D");
   switch (n) {
     case b.x_.OPEN:
       return (0, s.jsxs)(s.Fragment, {

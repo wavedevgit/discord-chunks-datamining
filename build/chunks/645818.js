@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  a = n(846519),
-  o = n(481060),
+  o = n(846519),
+  a = n(481060),
   s = n(293245),
   c = n(863969),
   u = n(563593),
@@ -21,15 +21,15 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = (0, o.GSL)(c.Z),
-  g = (0, o.GSL)(u.Z),
+let f = (0, a.GSL)(c.Z),
+  g = (0, a.GSL)(u.Z),
   m = new Set([d.TzF.PUSHING, d.TzF.PULLING]),
   b = Object.freeze({
     [d.TzF.DONE]: f,
     [d.TzF.PLANNING]: f,
     [d.TzF.PREPARING]: f,
-    [d.TzF.PUSHING]: o.rG2,
-    [d.TzF.PULLING]: o._8t,
+    [d.TzF.PUSHING]: a.rG2,
+    [d.TzF.PULLING]: a._8t,
     [d.TzF.CONFLICT]: f,
     [d.TzF.ERROR]: f
   });
@@ -94,15 +94,15 @@ class _ extends i.PureComponent {
       className: n
     } = this.props, i = null == e ? {
       type: d.TzF.DONE
-    } : e, l = this.getIsRecentlySynced(), a = {};
-    (m.has(i.type) || l) && (a.gradientConfig = {
+    } : e, l = this.getIsRecentlySynced(), o = {};
+    (m.has(i.type) || l) && (o.gradientConfig = {
       id: t.id,
       startColor: "rgba(199, 208, 240, 1)",
       stopColor: "rgba(114, 137, 218, 1)",
       stop: this.getStop(i, l)
     });
     let s = l ? g : b[i.type];
-    return (0, r.jsx)(o.ua7, {
+    return (0, r.jsx)(a.ua7, {
       text: this.getTooltip(i, l),
       children: e => (0, r.jsx)(s, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -117,11 +117,11 @@ class _ extends i.PureComponent {
         return e
       }({
         className: n
-      }, a, e))
+      }, o, e))
     })
   }
   constructor(...e) {
-    super(...e), h(this, "_doneTimer", new a.V7)
+    super(...e), h(this, "_doneTimer", new o.V7)
   }
 }
 let E = l.ZP.connectStores([s.Z], e => {

@@ -2,13 +2,13 @@
 n.d(t, {
   Z: () => d
 });
-var r, i, l, a = n(873546),
-  o = n(442837),
+var r, i, l, o = n(873546),
+  a = n(442837),
   s = n(570140);
 let c = !1;
-class u extends(l = o.ZP.Store) {
+class u extends(l = a.ZP.Store) {
   getIsOpen() {
-    return !a.tq || c
+    return !o.tq || c
   }
 }
 i = "MobileWebSidebarStore", (r = "displayName") in u ? Object.defineProperty(u, r, {

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 }), n(47120);
 var r = n(192379),
   i = n(442837),
@@ -9,19 +9,19 @@ var r = n(192379),
   a = n(430824),
   l = n(594174),
   o = n(53365),
-  c = n(223892);
+  A = n(223892);
 
-function A(e, t) {
+function c(e, t) {
   let n = (0, i.e7)([a.Z], () => a.Z.getGuild(e)),
-    [A, d] = r.useState(),
+    [c, d] = r.useState(),
     [u, g] = r.useState(!1),
-    f = (0, c.Ob)(n);
+    f = (0, A.Ob)(n);
   return {
     canSubmitAcceptance: (0, i.e7)([l.default], () => {
       let e = l.default.getCurrentUser();
       return (null == n ? void 0 : n.isOwner(e)) === !0
     }, [n]),
-    error: A,
+    error: c,
     loading: u,
     submitAcceptTermsRequest: r.useCallback(async () => {
       if (null != e && (f || null != t)) {

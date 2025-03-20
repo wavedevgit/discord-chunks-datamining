@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,18 +10,18 @@ var r = n(200651),
   l = n(388032),
   o = n(533788);
 
-function c(e) {
+function A(e) {
   let {
     onChange: t,
     initialValue: n,
-    maxWordCount: c,
-    collapsed: A = !1
-  } = e, [d, u] = i.useState(!A);
+    maxWordCount: A,
+    collapsed: c = !1
+  } = e, [d, u] = i.useState(!c);
   return (0, r.jsx)(s.zF9, {
     isExpanded: d,
     collapsibleContent: (0, r.jsx)(a.Z, {
       onChangeText: t,
-      maxWordCount: c,
+      maxWordCount: A,
       className: o.keywordTextAreaContainer,
       textAreaClassName: o.keywordTextArea,
       subtitleText: l.NW.formatToMarkdownString(l.t.qm7UZ2, {}),

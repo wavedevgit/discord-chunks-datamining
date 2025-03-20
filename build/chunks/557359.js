@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(793030),
   o = n(442837),
-  c = n(481060),
-  A = n(296991),
+  A = n(481060),
+  c = n(296991),
   d = n(999382),
   u = n(217472),
   g = n(651390),
@@ -30,7 +30,7 @@ function h(e) {
     u.Z.setPendingInviteRules(h, t, e)
   }, [h, t]);
   if (null == s) return null;
-  if (null == n) return (0, r.jsx)(c.$jN, {});
+  if (null == n) return (0, r.jsx)(A.$jN, {});
   let v = !s.hasFeature(f.oNc.CLAN);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -48,7 +48,7 @@ function h(e) {
           className: p.bodyText,
           children: m.NW.string(m.t.SzpUBA)
         })]
-      }), v && (0, r.jsx)(c.rsf, {
+      }), v && (0, r.jsx)(A.rsf, {
         onChange: C,
         checked: t
       })]
@@ -65,7 +65,7 @@ function h(e) {
           color: "text-muted",
           className: p.rulesHeader,
           children: m.NW.string(m.t.XcAzbm)
-        }), (0, r.jsx)(A.k, {
+        }), (0, r.jsx)(c.k, {
           guild: s,
           rules: n,
           setRules: b

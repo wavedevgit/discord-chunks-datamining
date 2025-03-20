@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(593473),
+  o = n.n(l),
+  a = n(593473),
   s = n(512969),
   c = n(990547),
   u = n(608787),
@@ -59,8 +59,8 @@ var r = n(200651),
   er = n(944486),
   ei = n(933429),
   el = n(626135),
-  ea = n(823379),
-  eo = n(709054),
+  eo = n(823379),
+  ea = n(709054),
   es = n(374005),
   ec = n(409292),
   eu = n(316173),
@@ -152,8 +152,8 @@ let ey = (0, u.Un)({
       return ee.Z.getChannel(e)
     }), {
       guildId: l,
-      channelId: a,
-      messageId: o
+      channelId: o,
+      messageId: a
     } = t.params, c = (0, p.e7)([en.Z], () => en.Z.getGuild(l)), u = (0, p.e7)([et.ZP], () => null == l ? null : et.ZP.getSelfMember(l)), d = (0, p.e7)([V.Z], () => {
       if (null == l) return;
       let e = V.Z.getData(l);
@@ -166,7 +166,7 @@ let ey = (0, u.Un)({
           return
       }
     }), h = (0, P.C4)(l, "channel_renderer"), f = (0, L.jS)(l, "ChannelRenderer");
-    if (null != l && null != a && (0, eb.AB)(a)) switch (a) {
+    if (null != l && null != o && (0, eb.AB)(o)) switch (o) {
       case eb.oC.ROLE_SUBSCRIPTIONS:
         return h ? (0, r.jsx)(eC, {
           guildId: l,
@@ -177,7 +177,7 @@ let ey = (0, u.Un)({
       case eb.oC.GUILD_SHOP:
         return (0, r.jsx)(eC, {
           guildId: l,
-          productId: o,
+          productId: a,
           initialTab: d
         });
       case eb.oC.MEMBER_APPLICATIONS:
@@ -214,14 +214,14 @@ let ey = (0, u.Un)({
           powerupSkuId: n.get("powerupSkuId")
         });
       default:
-        (0, ea.vE)(a)
+        (0, eo.vE)(o)
     }
     if ((0, D.p3)(c, u)) return (0, r.jsx)(k.Z, {
       guildId: l,
-      channelId: a
+      channelId: o
     });
     if ((null == i ? void 0 : i.type) === em.d4z.GUILD_STORE) {
-      let e = eo.default.cast(t.params.messageId);
+      let e = ea.default.cast(t.params.messageId);
       return (0, r.jsx)(ec.Z, {
         channel: i,
         inputSkuId: e
@@ -278,7 +278,7 @@ let ey = (0, u.Un)({
     return function(t) {
       let {
         tab: n
-      } = (0, o.parse)(t.location.search);
+      } = (0, a.parse)(t.location.search);
       return Object.values(e_.AW).includes(n) ? (0, r.jsx)(g.Z, {
         deepLinkType: eO.jE.SHOP,
         path: t.location.pathname,
@@ -380,7 +380,7 @@ function eK(e) {
     hasNotice: t,
     sidebarTheme: n,
     hideSidebar: l,
-    hideChannelList: o,
+    hideChannelList: a,
     isSidebarOpen: s,
     isOnFullScreenCollectiblesShopRoute: c
   } = e;
@@ -456,10 +456,10 @@ function eK(e) {
     }, []);
   if (i.useLayoutEffect(() => {
       N && eY(eh.p8)
-    }, [N]), l || !O && o) return null;
+    }, [N]), l || !O && a) return null;
   let Z = O ? "div" : i.Fragment,
     x = O ? {
-      className: a()(eN.sidebarList, {
+      className: o()(eN.sidebarList, {
         [eN.sidebarListRounded]: !t
       })
     } : {};
@@ -470,16 +470,16 @@ function eK(e) {
       return (0, r.jsxs)("div", {
         ref: O ? v : void 0,
         "data-collapsed": N,
-        className: a()(eN.sidebar, e, {
+        className: o()(eN.sidebar, e, {
           [eN.hasNotice]: t,
           [eN.fullWidth]: d.tq,
           [eN.hidden]: g,
-          [eN.channelListHidden]: o
+          [eN.channelListHidden]: a
         }),
         children: [O && s && !c && (0, r.jsx)(G.Z, {
           className: eN.guilds,
           themeOverride: n
-        }), !o && (0, r.jsxs)(r.Fragment, {
+        }), !a && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(Z, (i = ev({}, x), l = l = {
             children: (0, r.jsx)(ew, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -513,13 +513,13 @@ function eq() {
         t(e.pathname.startsWith(em.Z5c.GUILD_MEMBER_VERIFICATION("")))
       }), []), e
     }(),
-    a = function() {
+    o = function() {
       let [e, t] = i.useState(() => window.location.pathname.startsWith(em.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")));
       return i.useEffect(() => X.Z.addRouteChangeListener(e => {
         t(e.pathname.startsWith(em.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")))
       }), []), e
     }(),
-    o = function() {
+    a = function() {
       var e;
       let t = (0, s.TH)();
       return (null === (e = (0, s.LX)(t.pathname, em.Z5c.GUILD_BOOSTING_MARKETING(J.Hw.guildId()))) || void 0 === e ? void 0 : e.isExact) === !0
@@ -534,7 +534,7 @@ function eq() {
       optional: !0
     }), ":messageId?")]),
     g = (null == f ? void 0 : null === (e = f.params) || void 0 === e ? void 0 : e.channelId) === eb.oC.GUILD_ONBOARDING,
-    m = l || a || o || u || g,
+    m = l || o || a || u || g,
     b = i.useCallback(() => F.Z.openSidebar(), []),
     _ = (0, A.Q3)("AppView"),
     E = (0, A.TH)("AppView"),

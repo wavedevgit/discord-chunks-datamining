@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(944537),
   l = n(290348),
   o = n(91354),
-  c = n(662961),
-  A = n(388032),
+  A = n(662961),
+  c = n(388032),
   d = n(174032);
 
 function u(e) {
@@ -34,12 +34,12 @@ function u(e) {
       return m(t)
     },
     options: [{
-      name: A.NW.string(A.t["vs2T+P"]),
+      name: c.NW.string(c.t["vs2T+P"]),
       value: a.I.SOME_CHANNELS_ACCESS,
-      icon: (0, i.GSL)(c.Z),
+      icon: (0, i.GSL)(A.Z),
       radioBarClassName: d.__invalid_channelAccessSelectRadioBar
     }, {
-      name: A.NW.string(A.t.l4Tr7e),
+      name: c.NW.string(c.t.l4Tr7e),
       value: a.I.ALL_CHANNELS_ACCESS,
       icon: (0, i.GSL)(o.Z),
       radioBarClassName: d.__invalid_channelAccessSelectRadioBar

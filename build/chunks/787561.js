@@ -10,8 +10,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(544891),
-  c = n(433517),
-  A = n(481060),
+  A = n(433517),
+  c = n(481060),
   d = n(852860),
   u = n(493773),
   g = n(933557),
@@ -98,7 +98,7 @@ let T = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: s
-    } = e, [a, d] = i.useState(!0 === c.K.get(T)), g = (0, l.e7)([h.Z], () => {
+    } = e, [a, d] = i.useState(!0 === A.K.get(T)), g = (0, l.e7)([h.Z], () => {
       var e;
       return null !== (e = h.Z.getMemberCount(s.id)) && void 0 !== e ? e : 0
     }), [f, p] = i.useState(!1);
@@ -133,56 +133,56 @@ let T = "dismissedCommunityFeaturesUpsell",
           width: 60,
           className: w.upsellImage
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(A.X6q, {
+          children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",
             className: w.upsellHeader,
             children: y.NW.string(y.t["pR/BgY"])
-          }), (0, r.jsx)(A.Text, {
+          }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             children: y.NW.string(y.t["V+Yo1t"])
           })]
         })]
-      }), (0, r.jsx)(A.zxk, {
+      }), (0, r.jsx)(c.zxk, {
         "aria-label": y.NW.string(y.t.cpT0Cg),
-        look: A.zxk.Looks.BLANK,
-        size: A.zxk.Sizes.NONE,
+        look: c.zxk.Looks.BLANK,
+        size: c.zxk.Sizes.NONE,
         className: w.upsellClose,
         onClick: () => {
-          c.K.set(T, !0), d(!0)
+          A.K.set(T, !0), d(!0)
         },
-        children: (0, r.jsx)(A.Dio, {
+        children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor"
         })
       }), (0, r.jsxs)("div", {
         className: w.upsellFooter,
-        children: [v && (0, r.jsx)(A.zxk, {
-          size: A.zxk.Sizes.SMALL,
+        children: [v && (0, r.jsx)(c.zxk, {
+          size: c.zxk.Sizes.SMALL,
           onClick: x,
           className: w.upsellButton,
           children: y.NW.string(y.t.iF1Asr)
-        }), n ? null : (0, r.jsx)(A.zxk, {
-          size: A.zxk.Sizes.SMALL,
+        }), n ? null : (0, r.jsx)(c.zxk, {
+          size: c.zxk.Sizes.SMALL,
           onClick: () => {
             N.Z.setSection(O.pNK.ONBOARDING)
           },
           className: w.upsellButton,
           children: y.NW.string(y.t["S/DfiY"])
-        }), t ? null : (0, r.jsx)(A.zxk, {
-          size: A.zxk.Sizes.SMALL,
+        }), t ? null : (0, r.jsx)(c.zxk, {
+          size: c.zxk.Sizes.SMALL,
           onClick: () => {
             N.Z.setSection(O.pNK.DISCOVERY)
           },
           className: w.upsellButton,
-          color: A.zxk.Colors.PRIMARY,
+          color: c.zxk.Colors.PRIMARY,
           children: y.NW.string(y.t["0kmJd3"])
-        }), (0, r.jsx)(A.zxk, {
-          size: A.zxk.Sizes.SMALL,
+        }), (0, r.jsx)(c.zxk, {
+          size: c.zxk.Sizes.SMALL,
           onClick: () => {
             N.Z.setSection(O.pNK.ANALYTICS)
           },
           className: w.upsellButton,
-          color: A.zxk.Colors.PRIMARY,
+          color: c.zxk.Colors.PRIMARY,
           children: y.NW.string(y.t.BQIYTU)
         })]
       })]
@@ -199,7 +199,7 @@ let T = "dismissedCommunityFeaturesUpsell",
       })),
       s = (0, l.e7)([p.ZP], () => null != e ? p.ZP.getChannels(e.id) : null),
       o = i.useMemo(I.jb, []),
-      d = !0 !== c.K.get(T);
+      d = !0 !== A.K.get(T);
     if (null == e) return null;
     let u = [];
     null != s && s[p.sH].forEach(e => {
@@ -230,67 +230,67 @@ let T = "dismissedCommunityFeaturesUpsell",
       },
       E = () => {
         let t = (0, f.K2)(e.id, "GuildSettingsCommunity");
-        e.features.has(O.oNc.DISCOVERABLE) && e.features.has(O.oNc.PARTNERED) ? (0, A.h7j)(e => (0, r.jsx)(A.ConfirmModal, D(B({}, e), {
+        e.features.has(O.oNc.DISCOVERABLE) && e.features.has(O.oNc.PARTNERED) ? (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, D(B({}, e), {
           header: y.NW.string(y.t.iBnVHR),
           confirmText: y.NW.string(y.t["cY+Ooa"]),
           cancelText: y.NW.string(y.t.oEAioK),
           onConfirm: h,
-          children: (0, r.jsx)(A.Text, {
+          children: (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             children: y.NW.string(y.t["P+Sh8f"])
           })
-        }))) : e.features.has(O.oNc.DISCOVERABLE) ? (0, A.h7j)(e => (0, r.jsx)(A.ConfirmModal, D(B({}, e), {
+        }))) : e.features.has(O.oNc.DISCOVERABLE) ? (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, D(B({}, e), {
           header: y.NW.string(y.t.iBnVHR),
           confirmText: y.NW.string(y.t["cY+Ooa"]),
           cancelText: y.NW.string(y.t.oEAioK),
           onConfirm: h,
-          children: (0, r.jsx)(A.Text, {
+          children: (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             children: y.NW.string(y.t["eMx/ub"])
           })
-        }))) : e.features.has(O.oNc.PARTNERED) ? (0, A.h7j)(e => (0, r.jsx)(A.ConfirmModal, D(B({}, e), {
+        }))) : e.features.has(O.oNc.PARTNERED) ? (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, D(B({}, e), {
           header: y.NW.string(y.t.iBnVHR),
           confirmText: y.NW.string(y.t["cY+Ooa"]),
           cancelText: y.NW.string(y.t.oEAioK),
           onConfirm: h,
-          children: (0, r.jsx)(A.Text, {
+          children: (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             children: y.NW.string(y.t.l1wLeX)
           })
-        }))) : !e.features.has(O.oNc.MEMBER_VERIFICATION_GATE_ENABLED) || t || e.features.has(O.oNc.CLAN) ? h() : (0, A.h7j)(e => (0, r.jsx)(A.ConfirmModal, D(B({}, e), {
+        }))) : !e.features.has(O.oNc.MEMBER_VERIFICATION_GATE_ENABLED) || t || e.features.has(O.oNc.CLAN) ? h() : (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, D(B({}, e), {
           header: y.NW.string(y.t.iBnVHR),
-          confirmButtonColor: A.zxk.Colors.BRAND,
+          confirmButtonColor: c.zxk.Colors.BRAND,
           confirmText: y.NW.string(y.t.izNBMz),
           cancelText: y.NW.string(y.t.oEAioK),
           onConfirm: m,
-          children: (0, r.jsx)(A.Text, {
+          children: (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             children: y.NW.string(y.t.kQzUNj)
           })
         })))
       };
-    return (0, r.jsxs)(A.hjN, {
+    return (0, r.jsxs)(c.hjN, {
       title: y.NW.string(y.t.nRtNqq),
-      tag: A.RB0.H1,
+      tag: c.RB0.H1,
       children: [d ? (0, r.jsx)(L, {
         discoveryEnabled: e.features.has(O.oNc.DISCOVERABLE),
         onboardingEnabled: e.features.has(O.oNc.GUILD_ONBOARDING),
         guild: e
-      }) : null, (0, r.jsxs)(A.hjN, {
+      }) : null, (0, r.jsxs)(c.hjN, {
         className: a()(w.twoColumnFormSection, w.firstSection),
         children: [(0, r.jsxs)("div", {
           className: w.descriptionColumn,
-          children: [(0, r.jsx)(A.vwX, {
+          children: [(0, r.jsx)(c.vwX, {
             className: w.formTitle,
             children: y.NW.string(y.t.otcXPz)
-          }), (0, r.jsx)(A.R94, {
-            type: A.geA.DESCRIPTION,
+          }), (0, r.jsx)(c.R94, {
+            type: c.geA.DESCRIPTION,
             className: w.__invalid_formDescription,
             children: y.NW.string(y.t.BtwmYG)
           })]
         }), (0, r.jsx)("div", {
           className: w.selectColumn,
-          children: (0, r.jsx)(A.VcW, {
+          children: (0, r.jsx)(c.VcW, {
             value: e.rulesChannelId,
             options: u,
             onChange: e => {
@@ -301,23 +301,23 @@ let T = "dismissedCommunityFeaturesUpsell",
             isDisabled: !t
           })
         })]
-      }), (0, r.jsx)(A.$i$, {
+      }), (0, r.jsx)(c.$i$, {
         className: w.divider
-      }), (0, r.jsxs)(A.hjN, {
+      }), (0, r.jsxs)(c.hjN, {
         className: a()(w.twoColumnFormSection, w.firstSection),
         children: [(0, r.jsxs)("div", {
           className: w.descriptionColumn,
-          children: [(0, r.jsx)(A.vwX, {
+          children: [(0, r.jsx)(c.vwX, {
             className: w.formTitle,
             children: y.NW.string(y.t.vAyDGR)
-          }), (0, r.jsx)(A.R94, {
-            type: A.geA.DESCRIPTION,
+          }), (0, r.jsx)(c.R94, {
+            type: c.geA.DESCRIPTION,
             className: w.__invalid_formDescription,
             children: y.NW.string(y.t.ZFeonp)
           })]
         }), (0, r.jsx)("div", {
           className: w.selectColumn,
-          children: (0, r.jsx)(A.VcW, {
+          children: (0, r.jsx)(c.VcW, {
             value: e.publicUpdatesChannelId,
             options: u,
             onChange: e => {
@@ -328,23 +328,23 @@ let T = "dismissedCommunityFeaturesUpsell",
             isDisabled: !n
           })
         })]
-      }), (0, r.jsx)(A.$i$, {
+      }), (0, r.jsx)(c.$i$, {
         className: w.divider
-      }), (0, r.jsxs)(A.hjN, {
+      }), (0, r.jsxs)(c.hjN, {
         className: a()(w.twoColumnFormSection, w.firstSection),
         children: [(0, r.jsxs)("div", {
           className: w.descriptionColumn,
-          children: [(0, r.jsx)(A.vwX, {
+          children: [(0, r.jsx)(c.vwX, {
             className: w.formTitle,
             children: y.NW.string(y.t.sMkYEx)
-          }), (0, r.jsx)(A.R94, {
-            type: A.geA.DESCRIPTION,
+          }), (0, r.jsx)(c.R94, {
+            type: c.geA.DESCRIPTION,
             className: w.__invalid_formDescription,
             children: y.NW.string(y.t.htioQk)
           })]
         }), (0, r.jsx)("div", {
           className: w.selectColumn,
-          children: (0, r.jsx)(A.VcW, {
+          children: (0, r.jsx)(c.VcW, {
             value: e.safetyAlertsChannelId,
             options: u,
             onChange: e => {
@@ -355,23 +355,23 @@ let T = "dismissedCommunityFeaturesUpsell",
             isDisabled: !t
           })
         })]
-      }), (0, r.jsx)(A.$i$, {
+      }), (0, r.jsx)(c.$i$, {
         className: w.divider
-      }), (0, r.jsxs)(A.hjN, {
+      }), (0, r.jsxs)(c.hjN, {
         className: w.twoColumnFormSection,
         children: [(0, r.jsxs)("div", {
           className: w.descriptionColumn,
-          children: [(0, r.jsx)(A.vwX, {
+          children: [(0, r.jsx)(c.vwX, {
             className: w.formTitle,
             children: y.NW.string(y.t.pO60f3)
-          }), (0, r.jsx)(A.R94, {
-            type: A.geA.DESCRIPTION,
+          }), (0, r.jsx)(c.R94, {
+            type: c.geA.DESCRIPTION,
             className: w.__invalid_formDescription,
             children: y.NW.string(y.t.aIR73d)
           })]
         }), (0, r.jsx)("div", {
           className: w.selectColumn,
-          children: (0, r.jsx)(A.VcW, {
+          children: (0, r.jsx)(c.VcW, {
             value: e.preferredLocale,
             options: o,
             onChange: e => {
@@ -382,19 +382,19 @@ let T = "dismissedCommunityFeaturesUpsell",
             isDisabled: !t
           })
         })]
-      }), (0, r.jsx)(A.$i$, {
+      }), (0, r.jsx)(c.$i$, {
         className: w.divider
       }), (() => {
         var n;
-        if (null != e) return (0, r.jsxs)(A.hjN, {
-          children: [(0, r.jsx)(A.vwX, {
+        if (null != e) return (0, r.jsxs)(c.hjN, {
+          children: [(0, r.jsx)(c.vwX, {
             className: w.formTitle,
             children: y.NW.string(y.t["RSfm+v"])
-          }), (0, r.jsx)(A.R94, {
+          }), (0, r.jsx)(c.R94, {
             className: w.description,
-            type: A.geA.DESCRIPTION,
+            type: c.geA.DESCRIPTION,
             children: y.NW.string(y.t["/B6PR0"])
-          }), (0, r.jsx)(A.Kx8, {
+          }), (0, r.jsx)(c.Kx8, {
             value: null !== (n = e.description) && void 0 !== n ? n : "",
             placeholder: y.NW.string(y.t.Nvfows),
             onChange: C,
@@ -402,27 +402,27 @@ let T = "dismissedCommunityFeaturesUpsell",
             disabled: !t
           })]
         })
-      })(), (0, r.jsx)(A.$i$, {
+      })(), (0, r.jsx)(c.$i$, {
         className: w.divider
-      }), (0, r.jsxs)(A.hjN, {
+      }), (0, r.jsxs)(c.hjN, {
         className: w.twoColumnFormSection,
         children: [(0, r.jsxs)("div", {
           className: w.descriptionColumn,
-          children: [(0, r.jsx)(A.vwX, {
+          children: [(0, r.jsx)(c.vwX, {
             className: w.formTitle,
             children: y.NW.string(y.t.c1BmbG)
-          }), (0, r.jsx)(A.R94, {
-            type: A.geA.DESCRIPTION,
+          }), (0, r.jsx)(c.R94, {
+            type: c.geA.DESCRIPTION,
             className: w.__invalid_formDescription,
             children: y.NW.string(y.t.aQzVFx)
           })]
-        }), (0, r.jsx)(A.ua7, {
+        }), (0, r.jsx)(c.ua7, {
           text: n ? null : y.NW.string(y.t["pjG+T0"]),
           "aria-label": n ? void 0 : y.NW.string(y.t["pjG+T0"]),
-          children: e => (0, r.jsx)(A.zxk, D(B({
-            size: A.zxk.Sizes.SMALL,
+          children: e => (0, r.jsx)(c.zxk, D(B({
+            size: c.zxk.Sizes.SMALL,
             onClick: E,
-            color: A.zxk.Colors.RED,
+            color: c.zxk.Colors.RED,
             disabled: !n
           }, e), {
             children: y.NW.string(y.t.c1BmbG)

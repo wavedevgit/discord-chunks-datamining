@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(392711),
   o = n.n(l),
-  c = n(442837),
-  A = n(481060),
+  A = n(442837),
+  c = n(481060),
   d = n(570140),
   u = n(275759),
   g = n(313201),
@@ -61,22 +61,22 @@ function B(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: I.headerNoConfigContainer,
-    children: [(0, r.jsx)(A.X6q, {
+    children: [(0, r.jsx)(c.X6q, {
       className: I.headerHeading,
       variant: "eyebrow",
       children: E.NW.string(E.t.nMir29)
-    }), (0, r.jsx)(A.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: E.NW.format(E.t.q5f7tL, {
         helpdeskArticleUrl: f.Z.getArticleURL(N.BhN.CONNECTION_DETAILS_ADMIN)
       })
-    }), (0, r.jsx)(A.zxk, {
+    }), (0, r.jsx)(c.zxk, {
       disabled: n,
       className: I.addVerificationButton,
-      size: A.zxk.Sizes.MEDIUM,
-      look: A.zxk.Looks.FILLED,
-      color: A.zxk.Colors.BRAND,
+      size: c.zxk.Sizes.MEDIUM,
+      look: c.zxk.Looks.FILLED,
+      color: c.zxk.Colors.BRAND,
       onClick: t,
       children: E.NW.string(E.t["OSvW5+"])
     })]
@@ -96,17 +96,17 @@ function D(e) {
   } = (0, C.Z)(0), {
     scrolledToTop: T,
     handleScroll: S
-  } = (0, v.V)(), L = (0, c.e7)([m.Z], () => {
+  } = (0, v.V)(), L = (0, A.e7)([m.Z], () => {
     var e;
     return null === (e = m.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[n.id]
-  }, [n.id, t.id]), R = (0, c.Wu)([h.Z], () => {
+  }, [n.id, t.id]), R = (0, A.Wu)([h.Z], () => {
     var e;
     return null !== (e = h.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) && void 0 !== e ? e : []
-  }), Q = R.length > 1 ? u.O1.OR : u.O1.AND, Z = i.useMemo(() => Q === u.O1.OR ? R.flat() : null != R && R.length > 0 ? R[0] : [], [Q, R]), W = i.useMemo(() => new Set(Z.map(e => e.connectionType)), [Z]);
+  }), Q = R.length > 1 ? u.O1.OR : u.O1.AND, W = i.useMemo(() => Q === u.O1.OR ? R.flat() : null != R && R.length > 0 ? R[0] : [], [Q, R]), Z = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
 
   function k(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
-      r = [...Z];
+      r = [...W];
     r.push({
       connectionType: e,
       connectionMetadataField: void 0,
@@ -120,29 +120,29 @@ function D(e) {
     d.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
       onComplete: e => k(e),
-      excludedPlatformTypes: W,
+      excludedPlatformTypes: Z,
       integrations: o,
       onCompleteApplication: e => k(j.Kt, e)
     })
   }
   let _ = null;
-  if (0 === Z.length) _ = (0, r.jsx)(B, {
+  if (0 === W.length) _ = (0, r.jsx)(B, {
     handleAddVerificationClicked: M,
     locked: s
   });
-  else if (Z.length > 0) {
+  else if (W.length > 0) {
     var G;
     let e = null;
-    Z.length < 10 && (e = (0, r.jsx)(A.zxk, {
+    W.length < 10 && (e = (0, r.jsx)(c.zxk, {
       className: a()(I.addVerificationButton, I.addVerificationButtonAppend),
-      size: A.zxk.Sizes.LARGE,
-      look: A.zxk.Looks.BLANK,
-      color: A.zxk.Colors.LINK,
+      size: c.zxk.Sizes.LARGE,
+      look: c.zxk.Looks.BLANK,
+      color: c.zxk.Colors.LINK,
       onClick: M,
       disabled: s,
       children: (0, r.jsxs)("div", {
         className: I.addVerificationButtonAppendTextContainer,
-        children: [(0, r.jsx)(A.oFk, {
+        children: [(0, r.jsx)(c.oFk, {
           size: "xs",
           color: "currentColor"
         }), E.NW.string(E.t["OSvW5+"])]
@@ -153,20 +153,20 @@ function D(e) {
           className: I.headerTitleContainer,
           children: [(0, r.jsx)("div", {
             className: I.headerTitleTextContainer,
-            children: (0, r.jsx)(A.X6q, {
+            children: (0, r.jsx)(c.X6q, {
               variant: "eyebrow",
               children: E.NW.string(E.t.nMir29)
             })
-          }), (0, r.jsx)(A.zxk, {
+          }), (0, r.jsx)(c.zxk, {
             className: I.headerTitleButton,
-            size: A.zxk.Sizes.TINY,
-            look: A.zxk.Looks.LINK,
-            color: A.zxk.Colors.LINK,
+            size: c.zxk.Sizes.TINY,
+            look: c.zxk.Looks.LINK,
+            color: c.zxk.Colors.LINK,
             onClick: G,
             disabled: s,
             children: E.NW.string(E.t.ntW1cX)
           })]
-        }), (0, r.jsx)(A.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: E.NW.format(E.t.q5f7tL, {
             helpdeskArticleUrl: f.Z.getArticleURL(N.BhN.CONNECTION_DETAILS_ADMIN)
@@ -174,10 +174,10 @@ function D(e) {
         })]
       })), function(e, t, n, i, s) {
         let a = P(i, u.O1.OR);
-        return (0, r.jsx)(A.xJW, {
+        return (0, r.jsx)(c.xJW, {
           className: I.operatorContainer,
           title: E.NW.string(E.t.Xs7PHR),
-          children: (0, r.jsx)(A.FXm, {
+          children: (0, r.jsx)(c.FXm, {
             options: [{
               name: E.NW.string(E.t["W3iY5+"]),
               value: u.O1.OR
@@ -191,7 +191,7 @@ function D(e) {
             "aria-labelledby": w
           })
         })
-      }(s, n.id, Q, Z, (e, t) => (0, p.d_)(n.id, P(e, t))), function(e, t, n, i, s) {
+      }(s, n.id, Q, W, (e, t) => (0, p.d_)(n.id, P(e, t))), function(e, t, n, i, s) {
         function a(n, r) {
           let i = [];
           for (let t of e) i.push(y({}, t));
@@ -252,10 +252,10 @@ function D(e) {
             integrations: s
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(Z, e => (0, p.d_)(n.id, P(e, Q)), s, n.id, o), e]
+      }(W, e => (0, p.d_)(n.id, P(e, Q)), s, n.id, o), e]
     })
   }
-  return (0, r.jsx)(A.yWw, {
+  return (0, r.jsx)(c.yWw, {
     className: I.scroller,
     style: {
       scrollPaddingTop: g
@@ -276,13 +276,13 @@ function D(e) {
         })
       }), (null != L ? L : 0) > 0 ? (0, r.jsxs)("div", {
         className: I.warningContainer,
-        children: [(0, r.jsx)(A.P4T, {
+        children: [(0, r.jsx)(c.P4T, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
           className: I.warningIcon
-        }), (0, r.jsx)(A.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
           children: E.NW.string(E.t["2aFeeX"])

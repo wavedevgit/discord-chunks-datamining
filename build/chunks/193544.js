@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(186523),
-  c = n(553826),
-  A = n(2150),
+  A = n(553826),
+  c = n(2150),
   d = n(992249),
   u = n(717251),
   g = n(388032),
@@ -39,7 +39,7 @@ function m(e) {
   return (0, r.jsx)(d.Z, {
     title: N ? m : null !== (t = null == y ? void 0 : y.title) && void 0 !== t ? t : m,
     description: N ? "(".concat(null !== (n = null == y ? void 0 : y.title) && void 0 !== n ? n : g.NW.string(g.t.PoWNfX), ")") : null !== (s = null == y ? void 0 : y.description) && void 0 !== s ? s : "",
-    highlightColor: N ? A.q.NONE : null == y ? void 0 : y.highlightColor,
+    highlightColor: N ? c.q.NONE : null == y ? void 0 : y.highlightColor,
     action: (0, r.jsx)(l.zxk, {
       look: l.zxk.Looks.LINK,
       size: l.zxk.Sizes.MIN,
@@ -54,7 +54,7 @@ function m(e) {
       highlightColor: e.highlightColor,
       className: a()(f.groupCollapsedRow, v === e.value && f.selected),
       selected: v === e.value,
-      action: v === e.value ? (0, r.jsx)(c.Z, {
+      action: v === e.value ? (0, r.jsx)(A.Z, {
         className: f.radioItem
       }) : (0, r.jsx)(o.Z, {
         className: f.radioItem

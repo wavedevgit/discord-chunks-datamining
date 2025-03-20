@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(846519),
   c = n(780384),
   u = n(481060),
@@ -59,8 +59,8 @@ var r = n(200651),
   er = n(843445),
   ei = n(981631),
   el = n(186901),
-  ea = n(388032),
-  eo = n(390950);
+  eo = n(388032),
+  ea = n(390950);
 
 function es(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ class ed extends i.PureComponent {
       shouldFetchStatistics: r,
       didFetchEntitlements: i,
       location: l,
-      fetchStoreListing: a
+      fetchStoreListing: o
     } = this.props;
     if (null != l.state) {
       let {
@@ -117,7 +117,7 @@ class ed extends i.PureComponent {
       } = l.state;
       this._analyticsSource = e, this._extraAnalyticsProperties = t
     } else this._analyticsSource = ei.SaU;
-    (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, h.yD)(e.applicationId), r && d.Z.wait(() => (0, p.$)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
+    (null == t || t.isSlimDirectoryVersion()) && o(), null != e && (n || i || (0, h.yD)(e.applicationId), r && d.Z.wait(() => (0, p.$)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentDidUpdate(e) {
     let {
@@ -126,13 +126,13 @@ class ed extends i.PureComponent {
       shouldFetchStatistics: r,
       skuId: i,
       storeListingId: l,
-      slug: a,
-      storeListing: o,
+      slug: o,
+      storeListing: a,
       fetchStoreListing: s
     } = this.props;
-    if (o !== e.storeListing && null != o && (0, H.s)(el.jE.STORE_LISTING, {
+    if (a !== e.storeListing && null != a && (0, H.s)(el.jE.STORE_LISTING, {
         skuId: i,
-        slug: a
+        slug: o
       }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
       d.Z.wait(() => (0, p.$)(n.applicationId))
@@ -185,21 +185,21 @@ class ed extends i.PureComponent {
       children: null != n ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(T.Z.Icon, {
           icon: u.lO_,
-          "aria-label": ea.NW.string(ea.t["P1/Erq"])
+          "aria-label": eo.NW.string(eo.t["P1/Erq"])
         }), (0, r.jsx)(T.Z.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(T.Z.Icon, {
           icon: u.SrA,
-          "aria-label": ea.NW.string(ea.t.Ipxkoq)
+          "aria-label": eo.NW.string(eo.t.Ipxkoq)
         }), (0, r.jsx)($.Z, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(T.Z.Icon, {
           icon: u.lO_,
-          "aria-label": ea.NW.string(ea.t["P1/Erq"])
+          "aria-label": eo.NW.string(eo.t["P1/Erq"])
         }), (0, r.jsx)(T.Z.Title, {
           children: t.name
         })]
@@ -242,19 +242,19 @@ class ed extends i.PureComponent {
   renderHeaderAssets(e, t, n) {
     let {
       theme: i
-    } = this.props, l = t.headerBackground, a = (0, c.ap)(i) ? t.headerLogoLightTheme : t.headerLogoDarkTheme;
-    return null == l || null == a ? (0, r.jsx)("div", {
-      className: eo.noHeaderSpacer
+    } = this.props, l = t.headerBackground, o = (0, c.ap)(i) ? t.headerLogoLightTheme : t.headerLogoDarkTheme;
+    return null == l || null == o ? (0, r.jsx)("div", {
+      className: ea.noHeaderSpacer
     }) : (0, r.jsxs)("div", {
-      className: eo.headerAssets,
+      className: ea.headerAssets,
       children: [(0, r.jsx)("div", {
-        className: eo.headerBackground,
+        className: ea.headerBackground,
         style: {
           backgroundImage: "url(".concat((0, B._W)(e.id, l, 1024, "png"), ")")
         }
       }), (0, r.jsx)("img", {
-        className: eo.headerLogo,
-        src: (0, B._W)(e.id, a, 1024, "png"),
+        className: ea.headerLogo,
+        src: (0, B._W)(e.id, o, 1024, "png"),
         alt: n.name
       })]
     })
@@ -263,7 +263,7 @@ class ed extends i.PureComponent {
     return (0, r.jsx)(J.Z, {
       sku: e,
       storeListing: t,
-      className: eo.whyYouMightLikeIt
+      className: ea.whyYouMightLikeIt
     })
   }
   renderVerifiedGuildInvite(e, t) {
@@ -275,7 +275,7 @@ class ed extends i.PureComponent {
     return (0, r.jsx)(en.Z, {
       skuId: t.id,
       guild: e.guild,
-      className: eo.guildInvite,
+      className: ea.guildInvite,
       inChannel: null != n,
       pageSize: i
     })
@@ -287,7 +287,7 @@ class ed extends i.PureComponent {
   }
   renderSystemRequirements(e) {
     return null == e.systemRequirements || 0 === Object.keys(e.systemRequirements).length ? null : (0, r.jsx)(ee.Z, {
-      className: eo.systemRequirements,
+      className: ea.systemRequirements,
       systemRequirements: e.systemRequirements,
       pageSize: this.props.pageSize
     })
@@ -300,14 +300,14 @@ class ed extends i.PureComponent {
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(N.Z, {
         tag: "h1",
-        children: ea.NW.format(ea.t.tluX4O, {
+        children: eo.NW.format(eo.t.tluX4O, {
           name: n.name
         })
       }), (0, r.jsx)(m.Z, {}), (0, r.jsx)(z.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
-        className: eo.description,
+        className: ea.description,
         assets: t.assets
       })]
     })
@@ -315,13 +315,13 @@ class ed extends i.PureComponent {
   renderApplicationContentRating(e) {
     return (0, r.jsx)(F.Z, {
       sku: e,
-      className: eo.contentRating
+      className: ea.contentRating
     })
   }
   renderApplicationLegalInfo(e) {
     return (0, r.jsx)(K.Z, {
       sku: e,
-      className: eo.legalInfo
+      className: ea.legalInfo
     })
   }
   renderJsonLD() {
@@ -334,19 +334,19 @@ class ed extends i.PureComponent {
     let i = [],
       l = n.getSplashURL(1024);
     null != l && i.push(l), null != t.headerLogoLightTheme && i.unshift((0, B._W)(n.id, t.headerLogoLightTheme, 1024, "jpg"));
-    let a = y.Z.Product({
+    let o = y.Z.Product({
         name: e.name,
         description: null != e.summary && "" !== e.summary ? e.summary : t.tagline,
         image: y.Z.Product.Image(i),
         sku: e.id
       }),
-      o = e.getPrice();
-    if (null != o) {
+      a = e.getPrice();
+    if (null != a) {
       let {
         amount: e,
         currency: t
-      } = o;
-      a.offers = y.Z.Offer({
+      } = a;
+      o.offers = y.Z.Offer({
         priceCurrency: t.toUpperCase(),
         price: (0, V.T4)(e, t, {
           style: "decimal"
@@ -354,7 +354,7 @@ class ed extends i.PureComponent {
       })
     }
     let s = y.Z.ItemPage({
-      mainEntity: a
+      mainEntity: o
     });
     return (0, r.jsx)(y.Z, {
       data: s
@@ -362,22 +362,22 @@ class ed extends i.PureComponent {
   }
   renderSmall(e, t, n) {
     return (0, r.jsxs)("div", {
-      className: a()(eo.listing, eo.listingSmall),
+      className: o()(ea.listing, ea.listingSmall),
       children: [this.renderHeaderAssets(e, t, n), this.renderCarousel(e, t), this.renderWhyYouMightLikeThis(n, t), this.renderDescription(e, t, n), this.renderVerifiedGuildInvite(t, n), this.renderFeatures(n), this.renderSystemRequirements(n), this.renderApplicationContentRating(n), this.renderApplicationLegalInfo(n)]
     })
   }
   renderLarge(e, t, n) {
     return (0, r.jsxs)("div", {
-      className: eo.listing,
+      className: ea.listing,
       children: [this.renderHeaderAssets(e, t, n), this.renderCarousel(e, t), (0, r.jsx)("div", {
-        className: eo.listingLarge,
+        className: ea.listingLarge,
         children: (0, r.jsxs)("div", {
-          className: eo.body,
+          className: ea.body,
           children: [(0, r.jsxs)("div", {
-            className: eo.leftColumn,
+            className: ea.leftColumn,
             children: [this.renderWhyYouMightLikeThis(n, t), this.renderDescription(e, t, n), this.renderSystemRequirements(n), this.renderApplicationContentRating(n), this.renderApplicationLegalInfo(n)]
           }), (0, r.jsxs)("div", {
-            className: eo.rightColumn,
+            className: ea.rightColumn,
             children: [this.renderVerifiedGuildInvite(t, n), this.renderFeatures(n)]
           })]
         })
@@ -390,20 +390,20 @@ class ed extends i.PureComponent {
       sku: t,
       storeListing: n,
       matureAgree: l,
-      isAuthenticated: a
+      isAuthenticated: o
     } = this.props;
     if (null == e || null == t || null == n || n.isSlimDirectoryVersion()) return (0, r.jsxs)(i.Fragment, {
       children: [this.renderHeader(e, t), (0, r.jsx)(v.Z, {
         align: v.Z.Align.CENTER,
         justify: v.Z.Justify.CENTER,
         children: (0, r.jsx)(u.$jN, {
-          className: eo.spinner
+          className: ea.spinner
         })
       })]
     });
     if (!l && t.showAgeGate) {
-      let n = a ? null : (0, r.jsx)("div", {
-        className: eo.gatedListing,
+      let n = o ? null : (0, r.jsx)("div", {
+        className: ea.gatedListing,
         children: this.renderListing()
       });
       return (0, r.jsxs)(i.Fragment, {
@@ -414,8 +414,8 @@ class ed extends i.PureComponent {
         }), n]
       })
     }
-    return a ? (0, r.jsxs)("div", {
-      className: eo.listingWrapper,
+    return o ? (0, r.jsxs)("div", {
+      className: ea.listingWrapper,
       children: [(0, r.jsx)(I.yY, {
         location: e.name
       }), this.renderJsonLD(), (0, r.jsx)(g.Z, {
@@ -478,15 +478,15 @@ class ed extends i.PureComponent {
         guild: t
       } = this.props;
       return null != e && null != t && (Z.Z.can(ei.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(u.zxk, {
-        "aria-label": ea.NW.string(ea.t.zJrgTE),
+        "aria-label": eo.NW.string(eo.t.zJrgTE),
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.NONE,
         onClick: this.handleCreateInstantInvite,
-        className: eo.link,
+        className: ea.link,
         children: (0, r.jsx)(u.xPt, {
           size: "md",
           color: "currentColor",
-          className: eo.linkIcon
+          className: ea.linkIcon
         })
       }) : null
     }), es(this, "renderCopyLink", () => {
@@ -494,7 +494,7 @@ class ed extends i.PureComponent {
         showLinkCopied: e
       } = this.state;
       return this.isChannelType ? this.renderInviteLink() : (0, r.jsx)(u.ua7, {
-        text: e ? ea.NW.string(ea.t.uvTCOT) : null,
+        text: e ? eo.NW.string(eo.t.uvTCOT) : null,
         position: "left",
         forceOpen: e,
         children: t => {
@@ -503,17 +503,17 @@ class ed extends i.PureComponent {
             onMouseLeave: i
           } = t;
           return (0, r.jsx)(u.zxk, {
-            "aria-label": e ? ea.NW.string(ea.t.uvTCOT) : ea.NW.string(ea.t.WqhZsr),
+            "aria-label": e ? eo.NW.string(eo.t.uvTCOT) : eo.NW.string(eo.t.WqhZsr),
             look: u.zxk.Looks.BLANK,
             size: u.zxk.Sizes.NONE,
             onClick: this.copyCurrentUrl,
             onMouseEnter: n,
             onMouseLeave: i,
-            className: eo.link,
+            className: ea.link,
             children: (0, r.jsx)(u.xPt, {
               size: "md",
               color: "currentColor",
-              className: eo.linkIcon
+              className: ea.linkIcon
             })
           })
         }
@@ -524,28 +524,28 @@ class ed extends i.PureComponent {
         slug: i,
         storeListing: l,
         analyticsContext: {
-          location: o
+          location: a
         }
       } = this.props, {
         showHeaderPurchaseUnit: s
       } = this.state;
       return (0, r.jsxs)("div", {
-        className: eo.headerBarListing,
+        className: ea.headerBarListing,
         children: [(0, r.jsx)("div", {
-          className: eo.headerSection,
+          className: ea.headerSection,
           children: n && null != t ? (0, r.jsx)(et.Z, {
             size: et.y.Sizes.MIN,
             dropdownSize: et.y.DropdownSizes.MEDIUM,
             look: et.y.Looks.OUTLINED,
             color: et.y.Colors.RED,
             skuId: t.id,
-            className: eo.testModeSelectButton,
+            className: ea.testModeSelectButton,
             currentStoreListingId: null != l ? l.id : null,
             onStoreListingSelect: e => {
               null != t && (0, f.yt)(t.id, {
                 slug: i,
                 analyticsSource: {
-                  page: o.page,
+                  page: a.page,
                   section: ei.jXE.NAVIGATION,
                   object: null
                 },
@@ -554,16 +554,16 @@ class ed extends i.PureComponent {
             }
           }) : null
         }), (0, r.jsx)("div", {
-          className: eo.headerSection,
+          className: ea.headerSection,
           children: (0, r.jsxs)("div", {
-            className: a()(eo.headerPurchase, {
-              [eo.active]: s
+            className: o()(ea.headerPurchase, {
+              [ea.active]: s
             }),
             children: [null != t ? (0, S.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
             }) : null, (0, r.jsx)(X.Z, {
               messageStyle: X.G.SHORT,
-              className: eo.purchaseError
+              className: ea.purchaseError
             })]
           })
         }), this.renderCopyLink()]
@@ -599,12 +599,12 @@ class ed extends i.PureComponent {
     })
   }
 }
-let ep = (0, b.Z)((0, _.Z)(o.ZP.connectStores([w.Z, j.Z, P.default, M.Z, D.Z, R.Z, k.Z, E.Z, O.Z, x.Z, A.Z, L.Z], e => {
+let ep = (0, b.Z)((0, _.Z)(a.ZP.connectStores([w.Z, j.Z, P.default, M.Z, D.Z, R.Z, k.Z, E.Z, O.Z, x.Z, A.Z, L.Z], e => {
   let t, n, r, {
     inputSkuId: i,
     applicationId: l,
-    storeListingId: a,
-    isAuthenticated: o,
+    storeListingId: o,
+    isAuthenticated: a,
     channel: s
   } = e;
   if (null == l) {
@@ -620,11 +620,11 @@ let ep = (0, b.Z)((0, _.Z)(o.ZP.connectStores([w.Z, j.Z, P.default, M.Z, D.Z, R.
     application: null != l ? O.Z.getApplication(l) : null,
     isFetchingEntitlements: null != l && L.Z.applicationIdsFetching.has(l),
     didFetchEntitlements: null != l && L.Z.applicationIdsFetched.has(l),
-    shouldFetchStatistics: o && null != l && x.Z.shouldFetchStatisticsForApplication(l),
+    shouldFetchStatistics: a && null != l && x.Z.shouldFetchStatisticsForApplication(l),
     sku: n,
     isFocused: M.Z.isFocused(),
     storeListing: D.Z.getStoreListing({
-      storeListingId: a,
+      storeListingId: o,
       skuId: t,
       channelId: null != s ? s.id : null,
       isTestMode: c

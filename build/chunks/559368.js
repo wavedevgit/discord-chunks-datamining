@@ -16,8 +16,8 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let c = ["pct_retained", "new_members", "visitors", "communicators"],
-  A = {},
+let A = ["pct_retained", "new_members", "visitors", "communicators"],
+  c = {},
   d = null;
 
 function u(e) {
@@ -30,12 +30,12 @@ function u(e) {
     i = {},
     a = n[0],
     l = n[1];
-  null != a && c.forEach(e => {
+  null != a && A.forEach(e => {
     if (null != a[e]) {
       let t = s()(e);
       null != l && 0 !== l[e] && (r["".concat(t, "Change")] = (a[e] - l[e]) * 100 / l[e]), i[t] = a[e]
     }
-  }), A[t] = function(e) {
+  }), c[t] = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -46,7 +46,7 @@ function u(e) {
       })
     }
     return e
-  }({}, i, r, A[t])
+  }({}, i, r, c[t])
 }
 
 function g(e) {
@@ -57,7 +57,7 @@ function g(e) {
 }
 class f extends(r = a.ZP.Store) {
   getOverviewAnalytics(e) {
-    return A[e]
+    return c[e]
   }
   getError() {
     return d

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(392711),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(493683),
   u = n(239091),
@@ -66,7 +66,7 @@ function j(e) {
     user: t,
     applicationId: n,
     isGameRelationship: l,
-    onSelect: a
+    onSelect: o
   } = e, d = i.useCallback(() => {
     c.Z.openPrivateChannel(t.id, !0)
   }, [t.id]), p = i.useCallback(() => {
@@ -94,12 +94,12 @@ function j(e) {
         })
       })
     })))
-  }, [h, l, t]), _ = (0, o.e7)([f.Z], () => f.Z.supports(y.AN.VIDEO)), E = t.isProvisional, O = l ? I.NW.string(I.t["RLcE6+"]) : I.NW.string(I.t.cvSt1N);
+  }, [h, l, t]), _ = (0, a.e7)([f.Z], () => f.Z.supports(y.AN.VIDEO)), E = t.isProvisional, O = l ? I.NW.string(I.t["RLcE6+"]) : I.NW.string(I.t.cvSt1N);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": I.NW.string(I.t.liqwPD),
     onClose: u.Zy,
-    onSelect: a,
+    onSelect: o,
     children: [!E && _ ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
       label: I.NW.string(I.t.oCqlGB),
@@ -130,8 +130,8 @@ class A extends i.PureComponent {
       activities: n,
       applicationStream: i,
       status: l,
-      isMobile: a,
-      isGameRelationship: o,
+      isMobile: o,
+      isGameRelationship: a,
       giftIntentType: c
     } = this.props, {
       isActiveRow: p
@@ -148,7 +148,7 @@ class A extends i.PureComponent {
         children: [(0, r.jsx)(N.Z, {
           user: e,
           status: l,
-          isMobile: a,
+          isMobile: o,
           subText: (0, r.jsx)(O.Z, {
             hovered: t,
             activities: n,
@@ -158,7 +158,7 @@ class A extends i.PureComponent {
             userIgnored: g.Z.isIgnored(e.id)
           }),
           hovered: t,
-          showAccountIdentifier: !o && !e.isProvisional
+          showAccountIdentifier: !a && !e.isProvisional
         }), (0, r.jsxs)("div", {
           className: C.actions,
           children: [null != c && (0, r.jsx)(d.Z, {
@@ -189,7 +189,7 @@ class A extends i.PureComponent {
         user: t
       } = this.props;
       e.stopPropagation();
-      let n = a().find(h.Z.getMutablePrivateChannels(), e => e.type === v.d4z.DM && e.getRecipientId() === t.id);
+      let n = o().find(h.Z.getMutablePrivateChannels(), e => e.type === v.d4z.DM && e.getRecipientId() === t.id);
       null != n ? (0, p.uL)(v.Z5c.CHANNEL(v.ME, n.id)) : c.Z.openPrivateChannel(t.id)
     }), S(this, "handleOpenActionsMenu", e => {
       let {

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(704215),
-  c = n(481060),
-  A = n(605236),
+  A = n(481060),
+  c = n(605236),
   d = n(768762),
   u = n(999382),
   g = n(743475),
@@ -48,7 +48,7 @@ function P(e) {
     p = (0, b.Z)(n),
     w = !p && u;
   switch (i.useEffect(() => {
-      (0, A.EW)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
+      (0, c.EW)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), s) {
     case C.PG.LANDING:
       t = p ? (0, r.jsx)(N.Z, {
@@ -89,17 +89,17 @@ function P(e) {
       page: s,
       homeSettingsEnabled: !0
     }), p && s !== C.PG.LANDING && (0, r.jsx)("div", {
-      children: (0, r.jsxs)(c.zxk, {
+      children: (0, r.jsxs)(A.zxk, {
         innerClassName: y.backButton,
-        look: c.zxk.Looks.BLANK,
-        size: c.zxk.Sizes.MIN,
+        look: A.zxk.Looks.BLANK,
+        size: A.zxk.Sizes.MIN,
         onClick: () => {
           (0, m.NB)(), (0, g.BG)(), (0, f.$K)(C.PG.LANDING)
         },
         children: [(0, r.jsx)(d.Z, {
           className: y.arrow,
           direction: d.Z.Directions.LEFT
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(A.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
           children: O.NW.string(O.t["13/7kZ"])
@@ -118,63 +118,63 @@ function B(e) {
     homeSettingsEnabled: i
   } = e, s = (0, l.e7)([h.Z], () => h.Z.hasErrors()), o = e => {
     if (!s) return () => n(e)
-  }, A = (0, l.e7)([p.Z], () => p.Z.advancedMode);
+  }, c = (0, l.e7)([p.Z], () => p.Z.advancedMode);
   return (0, r.jsxs)("div", {
     className: y.progressContainer,
-    children: [(0, r.jsxs)(c.P3F, {
+    children: [(0, r.jsxs)(A.P3F, {
       className: a()(y.progressBarContainer, y.clickableProgressBar),
       onClick: o(C.PG.SAFETY_CHECK),
       children: [(0, r.jsx)("div", {
         className: a()(y.progressBar, {
           [y.progressBarCurrent]: t === C.PG.SAFETY_CHECK
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: t === C.PG.SAFETY_CHECK ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: O.NW.format(O.t.Me5MmZ, {
           stepNumber: 1
         })
       })]
-    }), (0, r.jsxs)(c.P3F, {
+    }), (0, r.jsxs)(A.P3F, {
       className: a()(y.progressBarContainer, y.clickableProgressBar),
       onClick: o(C.PG.DEFAULT_CHANNELS),
       children: [(0, r.jsx)("div", {
         className: a()(y.progressBar, {
           [y.progressBarCurrent]: t === C.PG.DEFAULT_CHANNELS
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: t === C.PG.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: A ? O.NW.formatToPlainString(O.t["8mGhOz"], {
+        children: c ? O.NW.formatToPlainString(O.t["8mGhOz"], {
           stepNumber: 2
         }) : O.NW.formatToPlainString(O.t.vxpuTU, {
           stepNumber: 2
         })
       })]
-    }), (0, r.jsxs)(c.P3F, {
+    }), (0, r.jsxs)(A.P3F, {
       className: a()(y.progressBarContainer, y.clickableProgressBar),
       onClick: o(C.PG.CUSTOMIZATION_QUESTIONS),
       children: [(0, r.jsx)("div", {
         className: a()(y.progressBar, {
           [y.progressBarCurrent]: t === C.PG.CUSTOMIZATION_QUESTIONS
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: t === C.PG.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: A ? O.NW.formatToPlainString(O.t.vb6J5u, {
+        children: c ? O.NW.formatToPlainString(O.t.vb6J5u, {
           stepNumber: 3
         }) : O.NW.formatToPlainString(O.t.ZpdQqK, {
           stepNumber: 3
         })
       })]
-    }), i && (0, r.jsxs)(c.P3F, {
+    }), i && (0, r.jsxs)(A.P3F, {
       className: a()(y.progressBarContainer, y.clickableProgressBar),
       onClick: o(C.PG.HOME_SETTINGS),
       children: [(0, r.jsx)("div", {
         className: a()(y.progressBar, {
           [y.progressBarCurrent]: t === C.PG.HOME_SETTINGS
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: t === C.PG.HOME_SETTINGS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: O.NW.format(O.t.KVOukp, {
@@ -187,7 +187,7 @@ function B(e) {
         className: a()(y.progressBar, {
           [y.progressBarCurrent]: t === C.PG.REVIEW
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: t === C.PG.REVIEW ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: O.NW.format(O.t.oVzkiI, {

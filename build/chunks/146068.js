@@ -10,8 +10,8 @@ var i = n(249849),
   a = n(388032),
   l = n(585025);
 let o = ["#0fa3dd", "#a7e4e4", "#a2ccdd"],
-  c = ["#0b3215", "#a6b51a", "#35748a", "#65a88f", "#621c12", "#f96748", "#ffbbbb"],
-  A = [.25, .9, .9],
+  A = ["#0b3215", "#a6b51a", "#35748a", "#65a88f", "#621c12", "#f96748", "#ffbbbb"],
+  c = [.25, .9, .9],
   d = [{
     base: 8,
     tint: 1
@@ -74,9 +74,9 @@ function f(e) {
   } = (0, i.s)({
     primaryBaseColors: o,
     primaryTintColor: p,
-    primaryTintLuminances: A,
+    primaryTintLuminances: c,
     primaryLuminanceWeights: d,
-    secondaryBaseColors: c,
+    secondaryBaseColors: A,
     secondaryTintColor: h,
     secondaryTintLuminances: u,
     secondaryLuminanceWeights: g

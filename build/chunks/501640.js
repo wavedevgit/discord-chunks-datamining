@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(149765),
   i = n(442837),
   l = n(984933),
-  a = n(496675),
-  o = n(981631);
+  o = n(496675),
+  a = n(981631);
 
 function s(e) {
   let t = (0, i.e7)([l.ZP], () => {
@@ -17,6 +17,6 @@ function s(e) {
     let {
       channel: t
     } = e;
-    return a.Z.can(r.$e(o.Plq.SEND_MESSAGES, o.Plq.VIEW_CHANNEL), t)
+    return o.Z.can(r.$e(a.Plq.SEND_MESSAGES, a.Plq.VIEW_CHANNEL), t)
   }).length
 }

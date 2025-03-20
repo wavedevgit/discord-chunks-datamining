@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(793030),
   l = n(442837),
   o = n(481060),
-  c = n(497321),
-  A = n(484614),
+  A = n(497321),
+  c = n(484614),
   d = n(314852),
   u = n(65361),
   g = n(246946),
@@ -27,7 +27,7 @@ function N(e) {
   let {
     guildId: t
   } = e, {
-    guildProfile: c,
+    guildProfile: A,
     fetchGuildProfile: g,
     fetchStatus: N
   } = (0, u.u)(t), j = N !== d.a.FETCHED, {
@@ -45,7 +45,7 @@ function N(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), y = i.useMemo(() => (0, C.S)(t), [t]), w = i.useMemo(() => (0, C.a)(t), [t]), [P, B] = i.useState(!1), D = null != c && s.Y.VISIBLE.has(c.visibility), T = !j && !D && !I, S = (0, m.Dj)({
+  }), y = i.useMemo(() => (0, C.S)(t), [t]), w = i.useMemo(() => (0, C.a)(t), [t]), [P, B] = i.useState(!1), D = null != A && s.Y.VISIBLE.has(A.visibility), T = !j && !D && !I, S = (0, m.Dj)({
     guildId: t,
     location: "widget settings"
   });
@@ -90,14 +90,14 @@ function N(e) {
           className: x.column,
           children: [(0, r.jsx)(o.vwX, {
             children: v.NW.string(v.t.TRyLUl)
-          }), (0, r.jsx)(A.Z, {
+          }), (0, r.jsx)(c.Z, {
             value: t
           })]
         }), (0, r.jsxs)("div", {
           className: x.column,
           children: [(0, r.jsx)(o.vwX, {
             children: v.NW.string(v.t.VECJcH)
-          }), (0, r.jsx)(A.Z, {
+          }), (0, r.jsx)(c.Z, {
             value: y
           })]
         })]
@@ -109,7 +109,7 @@ function N(e) {
           className: x.column,
           children: [(0, r.jsx)(o.vwX, {
             children: v.NW.string(v.t.XVGbn5)
-          }), (0, r.jsx)(A.Z, {
+          }), (0, r.jsx)(c.Z, {
             value: w
           }), (0, r.jsx)(a.xv, {
             variant: "text-sm/medium",
@@ -139,7 +139,7 @@ function j(e) {
       color: "text-secondary",
       className: x.description,
       children: v.NW.string(v.t["dNn/1t"])
-    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(N, {
+    }), n ? (0, r.jsx)(A.Z, {}) : (0, r.jsx)(N, {
       guildId: t
     })]
   })

@@ -1,17 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
-  s = n(325767),
-  l = n(826301);
+var i = n(481060),
+  o = n(826301);
 
-function c(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,20 +17,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function l(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,15 +41,15 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function u(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,66 +57,45 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = {
-    UP: l.directionUp,
-    RIGHT: l.directionRight,
-    DOWN: l.directionDown,
-    LEFT: l.directionLeft
+let f = {
+    UP: o.directionUp,
+    RIGHT: o.directionRight,
+    DOWN: o.directionDown,
+    LEFT: o.directionLeft
   },
-  m = e => {
+  _ = e => {
     var {
-      direction: t = h.DOWN,
+      direction: t = f.DOWN,
       width: n = 24,
-      height: i = 24,
-      color: c = "currentColor",
-      transition: d = l.transition,
-      className: p,
-      foreground: m,
-      expanded: g
-    } = e, E = _(e, ["direction", "width", "height", "color", "transition", "className", "foreground", "expanded"]);
-    let {
-      enabled: b
-    } = (0, a.bWb)(), v = t;
-    if (!0 === g ? v = h.DOWN : !1 === g && (v = h.RIGHT), b) {
-      let e = {
-        [h.UP]: a.u04,
-        [h.DOWN]: a.CJ0,
-        [h.LEFT]: a.V7D,
-        [h.RIGHT]: a.Fbu
-      } [v];
-      return (0, r.jsx)(e, f(u({}, E), {
-        className: p,
-        size: "custom",
-        width: n,
-        height: i,
-        color: null != c ? c : "currentColor",
-        colorClass: m
-      }))
-    }
-    return (0, r.jsx)("svg", f(u({
-      className: o()(p, d, v),
+      height: o = 24,
+      color: a = "currentColor",
+      className: l,
+      foreground: d,
+      expanded: _
+    } = e, p = u(e, ["direction", "width", "height", "color", "className", "foreground", "expanded"]);
+    let h = t;
+    !0 === _ ? h = f.DOWN : !1 === _ && (h = f.RIGHT);
+    let m = {
+      [f.UP]: i.u04,
+      [f.DOWN]: i.CJ0,
+      [f.LEFT]: i.V7D,
+      [f.RIGHT]: i.Fbu
+    } [h];
+    return (0, r.jsx)(m, c(s({}, p), {
+      className: l,
+      size: "custom",
       width: n,
-      height: i,
-      viewBox: "0 0 24 24"
-    }, (0, s.Z)(E)), {
-      children: (0, r.jsx)("path", {
-        className: m,
-        fill: "none",
-        stroke: c,
-        strokeWidth: "2",
-        strokeLinecap: "round",
-        strokeLinejoin: "round",
-        d: "M7 10L12 15 17 10",
-        "aria-hidden": !0
-      })
+      height: o,
+      color: null != a ? a : "currentColor",
+      colorClass: d
     }))
   };
-m.Directions = h;
-let g = m
+_.Directions = f;
+let p = _

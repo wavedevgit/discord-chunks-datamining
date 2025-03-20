@@ -35,6 +35,7 @@ function _(e) {
     size: c,
     children: (0, i.jsx)(l.Z, {
       tier: t,
+      color: "currentColor",
       className: r()(o, s.boostedGuildIconGem, u[t])
     })
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 });
 var r = n(200651);
 n(192379);
@@ -10,15 +10,15 @@ var i = n(456677),
   a = n(300453),
   l = n(620436),
   o = n(388032),
-  c = n(617185);
+  A = n(617185);
 
-function A(e) {
+function c(e) {
   let {
     rule: t,
     onChangeRule: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: c.cardContentsContainer,
+    className: A.cardContentsContainer,
     children: [(0, r.jsx)(a.Z, {
       step: 1,
       header: o.NW.string(o.t["1YgPj4"])

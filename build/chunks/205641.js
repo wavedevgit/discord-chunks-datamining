@@ -7,8 +7,8 @@ var r, i, s = n(200651),
   a = n(192379),
   l = n(120356),
   o = n.n(l),
-  c = n(392711),
-  A = n.n(c),
+  A = n(392711),
+  c = n.n(A),
   d = n(82923),
   u = n(310734);
 
@@ -61,7 +61,7 @@ let m = Object.freeze({
 });
 
 function p(e, t, n, r) {
-  return d.Z.sequence(A().times(t, i => d.Z.timing(e, {
+  return d.Z.sequence(c().times(t, i => d.Z.timing(e, {
     toValue: r(i),
     duration: n / t
   })))
@@ -91,7 +91,7 @@ class h extends(r = a.Component) {
     this.resetAnimation(), this.hoverAnimate(m.HOVERING.Y_VALUE)
   }
   createFireAnimation(e, t, n, r) {
-    return p(this.fireScale, e, t, () => A().random(n, r))
+    return p(this.fireScale, e, t, () => c().random(n, r))
   }
   async hoverAnimate(e) {
     var t;
@@ -108,7 +108,7 @@ class h extends(r = a.Component) {
     this.currentAnimation = d.Z.parallel([a, s]), await (null === (t = this.currentAnimation) || void 0 === t ? void 0 : t.start()), this.hoverAnimate(e * m.HOVERING.Y_VALUE_MODIFIER)
   }
   createShakeAnimation(e, t, n) {
-    return p(this.x, e, t, e => A().random(1, n) * (e % 2 == 0 ? 1 : -1))
+    return p(this.x, e, t, e => c().random(1, n) * (e % 2 == 0 ? 1 : -1))
   }
   async flyAnimate() {
     var e;
@@ -133,18 +133,18 @@ class h extends(r = a.Component) {
         duration: m.FLYING.DURATION,
         easing: m.FLYING.Y_EASING
       }),
-      c = d.Z.timing(this.x, {
+      A = d.Z.timing(this.x, {
         toValue: m.FLYING.X_VALUE,
         duration: m.FLYING.DURATION,
         easing: m.FLYING.X_EASING
       }),
-      A = d.Z.timing(this.opacity, {
+      c = d.Z.timing(this.opacity, {
         toValue: m.FLYING.OPACITY_VALUE,
         duration: m.FLYING.DURATION / m.FLYING.OPACITY_DURATION_DIVIDEND,
         delay: m.FLYING.DURATION / m.FLYING.OPACITY_DURATION_DIVIDEND
       }),
       u = this.createFireAnimation(m.FLYING.FIRE_COUNT, m.FLYING.DURATION, m.FLYING.FIRE_MIN_INTENSITY, m.FLYING.FIRE_MAX_INTENSITY),
-      g = d.Z.parallel([o, c, A, u]);
+      g = d.Z.parallel([o, A, c, u]);
     if (this.currentAnimation = d.Z.sequence([r, l, g]), await (null === (e = this.currentAnimation) || void 0 === e ? void 0 : e.start()), !this.isUnmounted) {
       let {
         onFlyingComplete: e

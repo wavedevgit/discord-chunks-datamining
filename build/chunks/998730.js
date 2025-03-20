@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  N: () => o
+  N: () => a
 }), n(47120);
 var r = n(192379),
   i = n(302221),
   l = n(956664);
-async function a(e) {
+async function o(e) {
   return (await new Promise((t, n) => {
     let r = new Image;
     r.crossOrigin = "Anonymous", r.onerror = e => {
@@ -19,9 +19,9 @@ async function a(e) {
   })
 }
 
-function o(e) {
+function a(e) {
   let [t, n] = r.useState(), i = r.useRef(!1);
-  return null == e || null != t || i.current || (i.current = !0, a(e).then(e => {
+  return null == e || null != t || i.current || (i.current = !0, o(e).then(e => {
     n(e[0])
   })), t
 }

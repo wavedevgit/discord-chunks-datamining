@@ -9,8 +9,8 @@ var r, i = n(200651),
   a = n(120356),
   l = n.n(a),
   o = n(748780),
-  c = n(215569),
-  A = n(77754);
+  A = n(215569),
+  c = n(77754);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,7 +70,7 @@ class m extends s.PureComponent {
   render() {
     return (0, i.jsx)(o.Z.div, {
       style: this.getStyle(),
-      className: A.item,
+      className: c.item,
       children: this.props.children
     })
   }
@@ -87,9 +87,9 @@ let p = e => {
     onAnimationStart: a,
     onAnimationEnd: o
   } = e;
-  return (0, i.jsx)(c.W, {
+  return (0, i.jsx)(A.W, {
     component: "div",
-    className: l()(A.animator, s),
+    className: l()(c.animator, s),
     children: (0, i.jsx)(m, {
       direction: r,
       onAnimationStart: a,

@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(481060),
   l = n(497321),
   o = n(852860),
-  c = n(100527),
-  A = n(906732),
+  A = n(100527),
+  c = n(906732),
   d = n(246946),
   u = n(63063),
   g = n(999382),
@@ -45,7 +45,7 @@ class N extends i.PureComponent {
       vanityURLUses: i,
       originalVanityURLCode: s,
       errorDetails: o
-    } = this.props, c = u.Z.getArticleURL(C.BhN.GUILD_VANITY_URL);
+    } = this.props, A = u.Z.getArticleURL(C.BhN.GUILD_VANITY_URL);
     return null == t ? null : e ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
       children: [(0, r.jsxs)(a.vwX, {
         tag: a.RB0.H1,
@@ -59,7 +59,7 @@ class N extends i.PureComponent {
         type: a.geA.DESCRIPTION,
         className: v.description,
         children: b.NW.format(b.t.koklFB, {
-          helpCenterArticle: c
+          helpCenterArticle: A
         })
       }), (0, r.jsx)(h.z, {
         guild: t,
@@ -84,8 +84,8 @@ function j() {
     a = (0, s.e7)([d.Z], () => d.Z.hideInstantInvites),
     {
       analyticsLocations: l
-    } = (0, A.ZP)(c.Z.VANITY_URL);
-  return (0, r.jsx)(A.Gt, {
+    } = (0, c.ZP)(A.Z.VANITY_URL);
+  return (0, r.jsx)(c.Gt, {
     value: l,
     children: (0, r.jsx)(N, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {

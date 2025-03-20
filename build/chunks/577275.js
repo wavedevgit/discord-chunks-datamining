@@ -19,9 +19,9 @@ let s = function() {
         s(e.body)
       } catch (e) {}
       l(!1)
-    }, c = r.useRef(!0);
+    }, A = r.useRef(!0);
   return r.useEffect(() => {
-    (c.current || t) && (c.current = !1, o())
+    (A.current || t) && (A.current = !1, o())
   }, [t]), {
     teams: n,
     loading: a,

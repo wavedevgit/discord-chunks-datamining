@@ -9,8 +9,8 @@ var r = n(192379),
   a = n(63063),
   l = n(500047),
   o = n(431516),
-  c = n(981631),
-  A = n(388032);
+  A = n(981631),
+  c = n(388032);
 
 function d(e) {
   let {
@@ -33,56 +33,56 @@ function d(e) {
       minimumSize: r
     } = e, l = !e.noRecentViolations, o = [{
       key: "no_violations_requirement",
-      checkedLabel: A.NW.string(A.t["1lGNPT"]),
-      uncheckedLabel: A.NW.string(A.t["D+gTJi"]),
-      description: A.NW.format(A.t.HFY0m5, {
-        communityGuidelinesUrl: a.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
+      checkedLabel: c.NW.string(c.t["1lGNPT"]),
+      uncheckedLabel: c.NW.string(c.t["D+gTJi"]),
+      description: c.NW.format(c.t.HFY0m5, {
+        communityGuidelinesUrl: a.Z.getArticleURL(A.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: e.noRecentViolations,
-      actionLabel: l ? A.NW.string(A.t.xU2fl5) : void 0,
+      actionLabel: l ? c.NW.string(c.t.xU2fl5) : void 0,
       actionHandler: l ? () => (0, i.Z)(a.Z.getSubmitRequestURL()) : void 0
     }];
     if (null != t && null != e.meetsOwnerAgeRequirement && o.push({
         key: "owner_age_requirement",
-        checkedLabel: A.NW.string(A.t["+F8haG"]),
-        uncheckedLabel: A.NW.string(A.t["5BwC/P"]),
-        description: A.NW.formatToPlainString(A.t.DW1VaW, {
+        checkedLabel: c.NW.string(c.t["+F8haG"]),
+        uncheckedLabel: c.NW.string(c.t["5BwC/P"]),
+        description: c.NW.formatToPlainString(c.t.DW1VaW, {
           minimumOwnerAgeInYears: t
         }),
         checked: e.meetsOwnerAgeRequirement
       }), null != r && null != e.hasSufficientMembers && o.push({
         key: "member_count_requirement",
-        checkedLabel: A.NW.string(A.t.j7wXWl),
-        uncheckedLabel: A.NW.string(A.t.W0suNz),
-        description: A.NW.formatToPlainString(A.t.up53zc, {
+        checkedLabel: c.NW.string(c.t.j7wXWl),
+        uncheckedLabel: c.NW.string(c.t.W0suNz),
+        description: c.NW.formatToPlainString(c.t.up53zc, {
           minimumSize: r
         }),
         checked: e.hasSufficientMembers
       }), null != e.minimumAgeInDays && null != e.meetsServerAgeRequirement && o.push({
         key: "server_age_requirement",
-        checkedLabel: A.NW.string(A.t.mjbvW1),
-        uncheckedLabel: A.NW.string(A.t["9BV6Ly"]),
-        description: A.NW.formatToPlainString(A.t.Zwv84O, {
+        checkedLabel: c.NW.string(c.t.mjbvW1),
+        uncheckedLabel: c.NW.string(c.t["9BV6Ly"]),
+        description: c.NW.formatToPlainString(c.t.Zwv84O, {
           minimumAge: (0, s.Z)(e.minimumAgeInDays)
         }),
         checked: e.meetsServerAgeRequirement
       }), null != e.weeklyCommunicators && o.push({
         key: "weekly_communicator_count_requirement",
-        checkedLabel: A.NW.string(A.t.Qw7qv7),
-        uncheckedLabel: A.NW.string(A.t.b45kGB),
-        description: A.NW.string(A.t.NbtjEB),
+        checkedLabel: c.NW.string(c.t.Qw7qv7),
+        uncheckedLabel: c.NW.string(c.t.b45kGB),
+        description: c.NW.string(c.t.NbtjEB),
         checked: e.weeklyCommunicators
       }), null != e.hasMemberRetention && o.push({
         key: "member_retention_requirement",
-        checkedLabel: A.NW.string(A.t.Qvq39P),
-        uncheckedLabel: A.NW.string(A.t.azHboK),
-        description: A.NW.string(A.t.u4rCYG),
+        checkedLabel: c.NW.string(c.t.Qvq39P),
+        uncheckedLabel: c.NW.string(c.t.azHboK),
+        description: c.NW.string(c.t.u4rCYG),
         checked: e.hasMemberRetention
       }), o.push({
         key: "nsfw_requirement",
-        checkedLabel: A.NW.string(A.t.bymfTU),
-        uncheckedLabel: A.NW.string(A.t["718pRE"]),
-        description: A.NW.string(A.t["5ZqX+v"]),
+        checkedLabel: c.NW.string(c.t.bymfTU),
+        uncheckedLabel: c.NW.string(c.t["718pRE"]),
+        description: c.NW.string(c.t["5ZqX+v"]),
         checked: e.notNSFW
       }), null != e.hasEnabled2FA) {
       let t = !e.hasEnabled2FA && !u && (null == n ? void 0 : n.onEnableMFAClick) != null,
@@ -90,13 +90,13 @@ function d(e) {
         i = t || r;
       o.push({
         key: "2fa_requirement",
-        checkedLabel: A.NW.string(A.t.NqVyFh),
-        uncheckedLabel: A.NW.string(A.t.VcDNIS),
-        description: A.NW.format(A.t["7NzkfX"], {
+        checkedLabel: c.NW.string(c.t.NqVyFh),
+        uncheckedLabel: c.NW.string(c.t.VcDNIS),
+        description: c.NW.format(c.t["7NzkfX"], {
           enableMFAHook: m
         }),
         checked: e.hasEnabled2FA,
-        actionLabel: i ? A.NW.string(A.t.BU4Dio) : void 0,
+        actionLabel: i ? c.NW.string(c.t.BU4Dio) : void 0,
         actionHandler: i ? f : void 0
       })
     }

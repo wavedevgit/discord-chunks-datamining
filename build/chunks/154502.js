@@ -15,13 +15,13 @@ function l(e) {
     action: n,
     actionType: l,
     triggerType: o
-  } = e, c = (0, s.c)(null !== (t = null == n ? void 0 : n.type) && void 0 !== t ? t : l, n, o);
-  if (null == c) return null;
+  } = e, A = (0, s.c)(null !== (t = null == n ? void 0 : n.type) && void 0 !== t ? t : l, n, o);
+  if (null == A) return null;
   let {
-    headerText: A,
+    headerText: c,
     helperText: d,
     icon: u
-  } = c;
+  } = A;
   return (0, r.jsxs)("div", {
     className: a.actionContainer,
     children: [(0, r.jsx)("div", {
@@ -39,7 +39,7 @@ function l(e) {
         className: a.actionTextHeader,
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: [A, null != d && (0, r.jsx)(i.Text, {
+        children: [c, null != d && (0, r.jsx)(i.Text, {
           className: a.actionTextHelper,
           variant: "text-xs/medium",
           color: "text-muted",

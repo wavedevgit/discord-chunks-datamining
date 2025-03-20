@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(782568),
   o = n(223892),
-  c = n(203498),
-  A = n(641806),
+  A = n(203498),
+  c = n(641806),
   d = n(690221),
   u = n(30624),
   g = n(577275),
@@ -52,16 +52,16 @@ function P(e) {
     eligibleTeams: n,
     isGuildOwner: s
   } = e, [l, o] = i.useState(), {
-    enableGuildMonetizationForTeam: A,
+    enableGuildMonetizationForTeam: c,
     submitting: d,
     error: u
-  } = (0, c.Z)(), {
+  } = (0, A.Z)(), {
     fetchSubscriptionsSettings: g
   } = (0, h.JH)(), f = (0, C.mY)(), m = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
   })), [n]), p = async () => {
-    await A(t, l, E.wW.GUILD_ROLE_SUBSCRIPTIONS) && (g(t.id), (0, b.B)({
+    await c(t, l, E.wW.GUILD_ROLE_SUBSCRIPTIONS) && (g(t.id), (0, b.B)({
       Icon: N.Z,
       title: O.NW.string(O.t["AP/2qa"]),
       body: O.NW.string(O.t.kHMgaG)
@@ -95,7 +95,7 @@ function P(e) {
 let B = e => {
   let {
     guild: t
-  } = e, n = (0, s.e7)([f.default], () => f.default.getCurrentUser()), c = t.isOwner(n), h = (0, o.Ob)(t), C = (0, s.e7)([m.Z], () => m.Z.isFocused()), {
+  } = e, n = (0, s.e7)([f.default], () => f.default.getCurrentUser()), A = t.isOwner(n), h = (0, o.Ob)(t), C = (0, s.e7)([m.Z], () => m.Z.isFocused()), {
     teams: b,
     loading: N
   } = (0, g.Z)({
@@ -108,35 +108,35 @@ let B = e => {
       is_onboarding_v2: h,
       has_eligible_team: B,
       guild_id: t.id,
-      is_owner: c
+      is_owner: A
     });
-    let e = await (0, A.$)(j.E07.DEVELOPER_PORTAL_TEAMS);
+    let e = await (0, c.$)(j.E07.DEVELOPER_PORTAL_TEAMS);
     (0, l.Z)(e)
-  }, [t, c, h, B]), T = i.useCallback(e => c ? (0, r.jsx)(d.Z, {
+  }, [t, A, h, B]), T = i.useCallback(e => A ? (0, r.jsx)(d.Z, {
     onClick: D,
     children: e
-  }) : e, [D, c]);
+  }) : e, [D, A]);
   return N ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [!c && (0, r.jsx)(v.Z, {
+    children: [!A && (0, r.jsx)(v.Z, {
       className: y.nonOwnerNotice,
       children: O.NW.string(O.t.t56qWF)
     }), (0, r.jsxs)(a.hjN, {
       title: O.NW.string(O.t.sYLCY2),
-      disabled: !c,
+      disabled: !A,
       children: [(0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
         className: y.description,
-        disabled: !c,
+        disabled: !A,
         children: O.NW.format(O.t["5mfqpa"], {
           onCreateTeamHook: T
         })
       }), B ? (0, r.jsx)(P, {
         guild: t,
         eligibleTeams: E,
-        isGuildOwner: c
+        isGuildOwner: A
       }) : (0, r.jsx)(w, {
         onCreateTeamClick: D,
-        isGuildOwner: c
+        isGuildOwner: A
       })]
     }), (0, r.jsx)(a.hjN, {
       title: O.NW.string(O.t["0n7R2d"]),

@@ -5,15 +5,15 @@ n.d(t, {
 var r, i = n(200651);
 n(192379);
 var l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(700582),
   u = n(451478),
   d = n(388032),
   p = n(734213),
   h = ((r = h || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
-let f = o.ZP.connectStores([u.Z], () => ({
+let f = a.ZP.connectStores([u.Z], () => ({
     animate: u.Z.isFocused()
   }))(e => {
     let {
@@ -22,7 +22,7 @@ let f = o.ZP.connectStores([u.Z], () => ({
       animate: r
     } = e;
     return (0, i.jsxs)("div", {
-      className: a()(p.staffReviewHeader, n),
+      className: o()(p.staffReviewHeader, n),
       children: [(0, i.jsx)(c.Z, {
         size: s.EFr.SIZE_32,
         user: t,

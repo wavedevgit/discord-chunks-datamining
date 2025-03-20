@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(348327),
   o = n.n(l),
-  c = n(999153),
-  A = n(584922),
+  A = n(999153),
+  c = n(584922),
   d = n(442837),
   u = n(481060),
   g = n(239091),
@@ -56,7 +56,7 @@ function Q(e) {
   return e
 }
 
-function Z(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = "WELCOME_CHANNEL",
+let Z = "WELCOME_CHANNEL",
   k = e => {
     var t;
     let s, {
@@ -86,8 +86,8 @@ let W = "WELCOME_CHANNEL",
       D = null != w && P.Uu(T.Plq.VIEW_CHANNEL, w),
       k = null !== (t = (0, C.KS)(w)) && void 0 !== t ? t : u.VL1,
       M = (0, h.ZP)(w, !1),
-      [, _] = (0, c.c)({
-        type: W,
+      [, _] = (0, A.c)({
+        type: Z,
         item: {
           channel: o,
           index: x
@@ -96,8 +96,8 @@ let W = "WELCOME_CHANNEL",
           null == e || t.didDrop() || p(e.channel, null, !0)
         }
       }),
-      [, G] = (0, A.L)({
-        accept: W,
+      [, G] = (0, c.L)({
+        accept: Z,
         hover: e => {
           p(e.channel, x, !1)
         },
@@ -130,7 +130,7 @@ let W = "WELCOME_CHANNEL",
           let {
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
-          return t => (0, r.jsx)(e, Z(Q({}, t), {
+          return t => (0, r.jsx)(e, W(Q({}, t), {
             guildId: l,
             welcomeChannel: o,
             onChannelReorder: p,
@@ -166,7 +166,7 @@ let W = "WELCOME_CHANNEL",
           let {
             default: e
           } = await n.e("39143").then(n.bind(n, 737868));
-          return t => (0, r.jsx)(e, Z(Q({}, t), {
+          return t => (0, r.jsx)(e, W(Q({}, t), {
             welcomeChannel: o,
             guildId: l,
             onSave: m
@@ -189,11 +189,11 @@ let W = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: a,
       originalWelcomeSettings: l
-    } = (0, d.e7)([E.Z], () => E.Z.getSettingsProps()), c = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), [A, g] = i.useState(null), [f, h] = i.useState(!1), [C, b] = i.useState(!1), {
+    } = (0, d.e7)([E.Z], () => E.Z.getSettingsProps()), A = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), [c, g] = i.useState(null), [f, h] = i.useState(!1), [C, b] = i.useState(!1), {
       description: I,
       channels: O,
       enabled: P
-    } = a, W = () => {
+    } = a, Z = () => {
       null != t && I !== l.description && ((0, j.Es)(t.id, {
         description: null == I ? void 0 : I.trim()
       }), h(!0))
@@ -204,7 +204,7 @@ let W = "WELCOME_CHANNEL",
     }, _ = e => {
       null != t && e !== l.enabled && ((0, j.Es)(t.id, {
         enabled: e
-      }), b(!c), h(!0))
+      }), b(!A), h(!0))
     }, G = e => {
       if (null == e) return;
       let t = [...null != O ? O : [], e];
@@ -230,7 +230,7 @@ let W = "WELCOME_CHANNEL",
       let {
         default: e
       } = await n.e("39143").then(n.bind(n, 737868));
-      return n => (0, r.jsx)(e, Z(Q({}, n), {
+      return n => (0, r.jsx)(e, W(Q({}, n), {
         guildId: t.id,
         onSave: G
       }))
@@ -284,7 +284,7 @@ let W = "WELCOME_CHANNEL",
             let {
               default: e
             } = await n.e("90542").then(n.bind(n, 184782));
-            return n => (0, r.jsx)(e, Z(Q({}, n), {
+            return n => (0, r.jsx)(e, W(Q({}, n), {
               guildId: t.id,
               isPreview: !0
             }))
@@ -332,7 +332,7 @@ let W = "WELCOME_CHANNEL",
                 })
               },
               onBlur: () => {
-                W()
+                Z()
               },
               onKeyDown: e => {
                 e.keyCode === T.yXg.ENTER && e.preventDefault()
@@ -357,14 +357,14 @@ let W = "WELCOME_CHANNEL",
             welcomeChannel: e,
             onEdit: F(n),
             onChannelReorder: U,
-            isDropHovered: n === A,
+            isDropHovered: n === c,
             index: n
           }, n)), (null == O || O.length < 5) && (0, r.jsx)(u.zxk, {
             onClick: () => (0, u.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("39143").then(n.bind(n, 737868));
-              return n => (0, r.jsx)(e, Z(Q({}, n), {
+              return n => (0, r.jsx)(e, W(Q({}, n), {
                 guildId: t.id,
                 onSave: G
               }))

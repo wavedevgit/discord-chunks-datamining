@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(63063),
-  c = n(256569),
-  A = n(858457),
+  A = n(256569),
+  c = n(858457),
   d = n(273504),
   u = n(981631),
   g = n(388032),
@@ -53,7 +53,7 @@ function h(e) {
     errors: C,
     validatePatternsChanged: b,
     validateEditingValueChanged: v
-  } = (0, A.Z)(s, l), [x] = i.useState(() => ({
+  } = (0, c.Z)(s, l), [x] = i.useState(() => ({
     tags: u,
     value: "",
     selections: [],
@@ -79,7 +79,7 @@ function h(e) {
   }, [v]);
   return (0, r.jsxs)("div", {
     className: a()(f.keywordsContainer, o),
-    children: [(0, r.jsx)(c.Z, {
+    children: [(0, r.jsx)(A.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: x,
       onChangeTags: j,
@@ -95,7 +95,7 @@ function h(e) {
         let {
           pattern: t
         } = e;
-        return t === A.r
+        return t === c.r
       })) || void 0 === t ? void 0 : t.message) && void 0 !== n ? n : null == h ? void 0 : h.message
     })]
   })

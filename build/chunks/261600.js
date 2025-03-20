@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   l = n(192379),
-  o = n(399606),
-  i = n(481060),
+  i = n(399606),
+  o = n(481060),
   a = n(592125),
   s = n(922482),
   c = n(750154),
@@ -18,22 +18,22 @@ function h(e) {
     activity: h
   } = e, {
     channelId: f
-  } = null !== (t = (0, c.rq)(h)) && void 0 !== t ? t : {}, p = (0, o.e7)([u.Z], () => u.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), y = l.useCallback(() => {
+  } = null !== (t = (0, c.rq)(h)) && void 0 !== t ? t : {}, p = (0, i.e7)([u.Z], () => u.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), v = l.useCallback(() => {
     let e = a.Z.getChannel(f);
     null != e && s.Cq(e)
-  }, [f]), v = null !== (n = null == p ? void 0 : p.topic) && void 0 !== n ? n : h.name, O = d.NW.formatToPlainString(d.t["T+DNAA"], {
-    channel: v
+  }, [f]), N = null !== (n = null == p ? void 0 : p.topic) && void 0 !== n ? n : h.name, y = d.NW.formatToPlainString(d.t["T+DNAA"], {
+    channel: N
   });
   return (0, r.jsx)("div", {
     ref: g,
-    children: (0, r.jsx)(i.P3F, {
-      onClick: y,
+    children: (0, r.jsx)(o.P3F, {
+      onClick: v,
       focusProps: {
         ringTarget: g
       },
-      children: (0, r.jsx)(i.X6q, {
+      children: (0, r.jsx)(o.X6q, {
         variant: "heading-sm/semibold",
-        children: O
+        children: y
       })
     })
   })

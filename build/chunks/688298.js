@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -14,9 +14,9 @@ function o(e) {
     showSecondaryColor: t,
     palette: n,
     onPrimaryColorChange: o,
-    onSecondaryColorChange: c
-  } = e, A = i.useRef(null);
-  return (0, s.Tbt)(A), (0, r.jsxs)("div", {
+    onSecondaryColorChange: A
+  } = e, c = i.useRef(null);
+  return (0, s.Tbt)(c), (0, r.jsxs)("div", {
     className: l.popoutContainer,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
@@ -24,7 +24,7 @@ function o(e) {
       className: l.customColorsHeader,
       children: a.NW.string(a.t.lfYWW1)
     }), (0, r.jsxs)("div", {
-      ref: A,
+      ref: c,
       className: l.colorPickersContainer,
       children: [(0, r.jsxs)("div", {
         className: l.colorColumn,
@@ -62,29 +62,29 @@ function o(e) {
           eagerUpdate: !0,
           wrapperComponentType: "div",
           showEyeDropper: !0,
-          onChange: c
+          onChange: A
         })]
       })]
     })]
   })
 }
 
-function c(e) {
+function A(e) {
   let {
     shouldShow: t,
     showSecondaryColor: n,
     onRequestClose: i,
     children: a,
     palette: l,
-    onPrimaryColorChange: c,
-    onSecondaryColorChange: A
+    onPrimaryColorChange: A,
+    onSecondaryColorChange: c
   } = e;
   return (0, r.jsx)(s.yRy, {
     renderPopout: () => (0, r.jsx)(o, {
       showSecondaryColor: n,
       palette: l,
-      onPrimaryColorChange: c,
-      onSecondaryColorChange: A
+      onPrimaryColorChange: A,
+      onSecondaryColorChange: c
     }),
     position: "left",
     shouldShow: t,

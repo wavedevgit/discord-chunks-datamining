@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(442837),
   l = n(481060),
   o = n(933557),
-  c = n(984933),
-  A = n(496675),
+  A = n(984933),
+  c = n(496675),
   d = n(699516),
   u = n(594174),
   g = n(434404),
@@ -27,8 +27,8 @@ function b(e) {
     widgetChannelId: s,
     className: m,
     enableLocalUpdate: b
-  } = e, v = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), x = i.useMemo(() => {
-    let e = [...v[c.sH], ...v[c.Zb]].filter(e => {
+  } = e, v = (0, a.e7)([A.ZP], () => A.ZP.getChannels(t)), x = i.useMemo(() => {
+    let e = [...v[A.sH], ...v[A.Zb]].filter(e => {
       let {
         channel: n
       } = e;
@@ -37,7 +37,7 @@ function b(e) {
       let {
         channel: t
       } = e;
-      return t.id === s || A.Z.can(C, t)
+      return t.id === s || c.Z.can(C, t)
     }).map(e => {
       let {
         channel: t

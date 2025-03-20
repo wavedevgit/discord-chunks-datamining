@@ -11,8 +11,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(512722),
   o = n.n(l),
-  c = n(481060),
-  A = n(755930),
+  A = n(481060),
+  c = n(755930),
   d = n(536528);
 
 function u(e) {
@@ -50,7 +50,7 @@ function g(e, t) {
 function f(e, t) {
   let {
     expandableToggleColumnKey: n
-  } = t, i = (0, A.Yn)(e.map(e => g(u({}, e), {
+  } = t, i = (0, c.Yn)(e.map(e => g(u({}, e), {
     sort: !1,
     renderHeader() {
       var t;
@@ -75,11 +75,11 @@ function f(e, t) {
           expandedRows: n,
           onToggleExpandRow: i
         } = t, s = n.has(e.key);
-        return (0, r.jsx)(c.P3F, {
+        return (0, r.jsx)(A.P3F, {
           className: d.toggleExpandCell,
           onClick: () => i(e.key),
-          children: (0, r.jsx)(A.bL, {
-            children: (0, r.jsx)(c.Fbu, {
+          children: (0, r.jsx)(c.bL, {
+            children: (0, r.jsx)(A.Fbu, {
               size: "md",
               color: "currentColor",
               className: a()(d.caretIcon, {
@@ -113,7 +113,7 @@ function m(e) {
     }
     return i
   }(e, ["renderExpandedContent"]);
-  return g(u({}, (0, A.wy)(n)), {
+  return g(u({}, (0, c.wy)(n)), {
     renderExpandedContent: t
   })
 }

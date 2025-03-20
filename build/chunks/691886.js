@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  c = n(933557),
-  A = n(471445),
+  A = n(933557),
+  c = n(471445),
   d = n(131704),
   u = n(324067),
   g = n(699516),
@@ -68,9 +68,9 @@ function N(e) {
     channelId: n
   } = e, i = (0, m.m7)(n), s = (0, m.m7)(null !== (t = null == i ? void 0 : i.parent_id) && void 0 !== t ? t : p.lds);
   if (null == i) return null;
-  let a = (0, A.KS)(i),
-    l = (0, c.F6)(i, f.default, g.Z),
-    o = null != s ? (0, c.F6)(s, f.default, g.Z) : void 0;
+  let a = (0, c.KS)(i),
+    l = (0, A.F6)(i, f.default, g.Z),
+    o = null != s ? (0, A.F6)(s, f.default, g.Z) : void 0;
   return (0, r.jsx)(v, {
     icon: null != a && (0, r.jsx)(a, {
       className: C.labelIcon
@@ -94,7 +94,7 @@ function E(e) {
     guildId: t,
     value: s,
     initialChannelId: a,
-    omitChannelIds: A,
+    omitChannelIds: c,
     "aria-labelledby": C,
     onChange: v
   } = e, x = h.NW.string(h.t.d7YJMD), N = (0, l.e7)([u.Z], () => u.Z.getCategories(t), [t]), E = (0, m.m7)(null != s ? s : p.lds), I = i.useMemo(() => {
@@ -107,15 +107,15 @@ function E(e) {
       for (let {
           channel: r
         }
-        of N[n.channel.id])((0, d.r8)(r.type) || (0, d.bw)(r.type)) && (r.id !== s && (null == A ? void 0 : A.has(r.id)) && (r.id !== a || s === a) || (s === r.id && (t = !0), e.push({
+        of N[n.channel.id])((0, d.r8)(r.type) || (0, d.bw)(r.type)) && (r.id !== s && (null == c ? void 0 : c.has(r.id)) && (r.id !== a || s === a) || (s === r.id && (t = !0), e.push({
         value: r.id,
-        label: (0, c.F6)(r, f.default, g.Z)
+        label: (0, A.F6)(r, f.default, g.Z)
       })));
     return null == s || t || null == E || e.push({
       value: s,
       label: E.name
     }), e
-  }, [x, s, E, N, A, a]);
+  }, [x, s, E, N, c, a]);
   return (0, r.jsx)(o.PhF, {
     placeholder: h.NW.string(h.t.r2pts7),
     options: I,

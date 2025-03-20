@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(434404),
   l = n(388032);
 let o = "".concat(60),
-  c = "".concat(300),
-  A = "".concat(900),
+  A = "".concat(300),
+  c = "".concat(900),
   d = "".concat(1800),
   u = "".concat(3600);
 
@@ -25,12 +25,12 @@ function g(e) {
       minutes: 1
     })
   }, {
-    value: c,
+    value: A,
     label: l.NW.formatToPlainString(l.t.iXLF9f, {
       minutes: 5
     })
   }, {
-    value: A,
+    value: c,
     label: l.NW.formatToPlainString(l.t.iXLF9f, {
       minutes: 15
     })

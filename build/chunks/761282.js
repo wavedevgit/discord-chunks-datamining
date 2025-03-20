@@ -7,10 +7,10 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var l = n(261600),
-  o = n(157925),
-  i = n(480858);
+  i = n(157925),
+  o = n(480858);
 let a = {
-  [o.gD]: new l.U
+  [i.gD]: new l.U
 };
 
 function s(e) {
@@ -29,7 +29,7 @@ function c(e) {
   if ((null == l ? void 0 : l.body) != null && (null === (t = l.shouldShow) || void 0 === t ? void 0 : t.call(l, e)) !== !1) {
     let t = l.body;
     return (0, r.jsx)("section", {
-      className: i.section,
+      className: o.section,
       children: (0, r.jsx)(t, {
         activity: e
       })

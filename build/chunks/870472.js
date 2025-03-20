@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Q: () => c,
+  Q: () => A,
   V: () => o
 }), n(47120), n(653041), n(301563), n(566702), n(177593);
 var r = n(192379),
@@ -33,7 +33,7 @@ function o(e) {
   }
 }
 
-function c(e, t) {
+function A(e, t) {
   let {
     scrollerRef: n,
     mainInputRef: i,
@@ -41,8 +41,8 @@ function c(e, t) {
   } = t, {
     state: {
       value: o,
-      tags: c,
-      selections: A
+      tags: A,
+      selections: c
     },
     setState: d,
     goBack: u,
@@ -215,7 +215,7 @@ function c(e, t) {
     }, [n, d, o]),
     N = r.useCallback(e => {
       let t = o.trim().length <= 0;
-      if (A.length > 0) {
+      if (c.length > 0) {
         var n;
         (0, a.flushSync)(() => {
           d(e => {
@@ -245,7 +245,7 @@ function c(e, t) {
           }
         })
       }), e.preventDefault(), e.stopPropagation())
-    }, [i, A.length, d, o]),
+    }, [i, c.length, d, o]),
     j = r.useCallback(e => {
       var t, n, r, s;
       let a = e.metaKey || e.ctrlKey;
@@ -258,7 +258,7 @@ function c(e, t) {
           selectionStart: r = 0,
           selectionEnd: l = 0
         } = null !== (t = i.current) && void 0 !== t ? t : {};
-      0 !== c.length && (!n || r !== l) && ((0, a.flushSync)(() => {
+      0 !== A.length && (!n || r !== l) && ((0, a.flushSync)(() => {
         d(e => {
           let {
             tags: t,
@@ -278,7 +278,7 @@ function c(e, t) {
           null === (e = s.current) || void 0 === e || e.focus()
         }, 16)
       }), e.preventDefault(), e.stopPropagation())
-    }, [s, i, d, c.length, o]),
+    }, [s, i, d, A.length, o]),
     I = r.useCallback(e => {
       e.relatedTarget !== e.currentTarget && x(e, !1, !1)
     }, [x]);

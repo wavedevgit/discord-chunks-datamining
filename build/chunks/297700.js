@@ -1,17 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(481060),
-  l = n(189798),
-  c = n(973089);
+  s = n(189798),
+  l = n(973089);
 
-function u(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,20 +19,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function d(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,15 +43,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +59,7 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -68,26 +67,26 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     size: n = 16,
     className: o,
-    flowerStarClassName: u
-  } = e, f = p(e, ["children", "size", "className", "flowerStarClassName"]), h = i.Children.only(t), m = {
+    flowerStarClassName: c
+  } = e, d = _(e, ["children", "size", "className", "flowerStarClassName"]), p = i.Children.only(t), h = {
     width: n,
     height: n
-  }, g = (0, s.bWb)().enabled && !e.allowFullSizedIcon;
+  }, m = !e.allowFullSizedIcon;
   return (0, r.jsxs)("div", {
-    className: a()(c.flowerStarContainer, o),
-    style: m,
-    children: [(0, r.jsx)(l.Z, _(d({}, f), {
-      className: a()(u, c.flowerStar)
+    className: a()(l.flowerStarContainer, o),
+    style: h,
+    children: [(0, r.jsx)(s.Z, f(u({}, d), {
+      className: a()(c, l.flowerStar)
     })), (0, r.jsx)("div", {
-      className: a()(c.childContainer, {
-        [c.redesignIconChildContainer]: g
+      className: a()(l.childContainer, {
+        [l.redesignIconChildContainer]: m
       }),
-      children: h
+      children: p
     })]
   })
 }

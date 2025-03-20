@@ -3,7 +3,7 @@
 n.d(t, {
   SR: () => o,
   Vk: () => l,
-  xl: () => c
+  xl: () => A
 });
 var r = n(544891),
   i = n(570140),
@@ -60,7 +60,7 @@ function o(e) {
   })
 }
 
-function c(e) {
+function A(e) {
   return a(e, s.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION).then(t => {
     let {
       body: n

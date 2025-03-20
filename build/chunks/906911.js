@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r),
   l = n(243814),
-  a = n(45792),
-  o = n(699516),
+  o = n(45792),
+  a = n(699516),
   s = n(594174),
   c = n(823379),
   u = n(914946),
   d = n(186901),
   p = n(981631);
 let h = {
-  [p.Etm.GET_RELATIONSHIPS]: (0, a.S)(p.Etm.GET_RELATIONSHIPS, {
+  [p.Etm.GET_RELATIONSHIPS]: (0, o.S)(p.Etm.GET_RELATIONSHIPS, {
     scope: {
       [d.Gp.ANY]: [l.x.RELATIONSHIPS_READ]
     },
@@ -35,7 +35,7 @@ let h = {
           })
         }
         return e
-      }({}, o.Z.getRelationships()), e => e !== p.OGo.NONE);
+      }({}, a.Z.getRelationships()), e => e !== p.OGo.NONE);
       return {
         relationships: i().map(t, (t, n) => {
           let r = s.default.getUser(n);

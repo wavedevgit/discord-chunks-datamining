@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(399606),
   o = n(481060),
-  c = n(100527),
-  A = n(906732),
+  A = n(100527),
+  c = n(906732),
   d = n(434404),
   u = n(171368),
   g = n(430824),
@@ -34,7 +34,7 @@ function w(e) {
     guildId: t
   } = e, n = (0, l.e7)([g.Z], () => g.Z.getGuild(t)), {
     analyticsLocations: s
-  } = (0, A.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), w = !1 == !!(null == n ? void 0 : n.hasFeature(E.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), P = (0, l.e7)([f.Z], () => f.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), B = i.useCallback(e => {
+  } = (0, c.ZP)(A.Z.GUILD_SETTINGS_MEMBERS_PAGE), w = !1 == !!(null == n ? void 0 : n.hasFeature(E.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), P = (0, l.e7)([f.Z], () => f.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), B = i.useCallback(e => {
     null != e && (0, u.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,
@@ -49,7 +49,7 @@ function w(e) {
   }, []);
   if (null == n) return null;
   let S = (0, b.xb)(!1, !1, P);
-  return (0, r.jsx)(A.Gt, {
+  return (0, r.jsx)(c.Gt, {
     value: s,
     children: (0, r.jsx)("div", {
       className: a()(y.customColumn, O.override, O.settingsColumn),

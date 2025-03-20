@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(442837),
   l = n(339085),
   o = n(231053),
-  c = n(183023),
-  A = n(650774),
+  A = n(183023),
+  c = n(650774),
   d = n(231338);
 
 function u(e) {
@@ -20,11 +20,11 @@ function u(e) {
   } = e, u = null == t ? void 0 : t.id, {
     memberCount: g,
     onlineCount: f
-  } = (0, a.cj)([A.Z], () => {
+  } = (0, a.cj)([c.Z], () => {
     var e, t;
     return {
-      memberCount: null !== (e = A.Z.getMemberCount(u)) && void 0 !== e ? e : 1234,
-      onlineCount: null !== (t = A.Z.getOnlineCount(u)) && void 0 !== t ? t : 1234
+      memberCount: null !== (e = c.Z.getMemberCount(u)) && void 0 !== e ? e : 1234,
+      onlineCount: null !== (t = c.Z.getOnlineCount(u)) && void 0 !== t ? t : 1234
     }
   }, [u]), m = i.useRef((0, s.Z)()), p = i.useMemo(() => {
     var e, r;
@@ -74,7 +74,7 @@ function u(e) {
       jumboable: !0
     } : {}
   }, [null == p ? void 0 : p.emojis]);
-  return null != p && p.isDiscoverable() ? (0, r.jsx)(c.UA, {
+  return null != p && p.isDiscoverable() ? (0, r.jsx)(A.UA, {
     sourceType: o.w6.GUILD,
     expressionSourceApplication: null,
     expressionSourceGuild: p,

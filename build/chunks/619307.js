@@ -209,14 +209,12 @@ function L(e) {
       e.stopPropagation(), null == G || G()
     }, [G]),
     $ = t.filter(e => j(e.value));
-  i.useLayoutEffect(() => {
+  return i.useLayoutEffect(() => {
     if (u) {
       var e;
       null === (e = W.current) || void 0 === e || e.focus()
     }
-  }, [u, W]);
-  let ee = (0, _.bWb)().enabled;
-  return (0, r.jsx)(d.y, {
+  }, [u, W]), (0, r.jsx)(d.y, {
     spacing: 0,
     animation: d.y.Animation.NONE,
     shouldShow: Z,
@@ -259,8 +257,7 @@ function L(e) {
         isShown: d,
         position: f
       } = t;
-      let p = d ? _.u04 : _.CJ0,
-        h = ee ? 18 : 24;
+      let p = d ? _.u04 : _.CJ0;
       return (0, r.jsxs)(c.P, I(y({
         role: "button",
         "aria-disabled": s,
@@ -305,9 +302,7 @@ function L(e) {
             })
           }) : null, B ? null : (0, r.jsx)(p, {
             color: "currentColor",
-            size: "custom",
-            width: h,
-            height: h
+            size: "sm"
           })]
         })]
       }))

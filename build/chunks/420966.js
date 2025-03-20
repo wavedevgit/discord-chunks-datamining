@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(481060),
   l = n(239091),
   o = n(605436),
-  c = n(741247),
-  A = n(243730),
+  A = n(741247),
+  c = n(243730),
   d = n(852898),
   u = n(203377),
   g = n(388032),
@@ -35,14 +35,14 @@ function p(e) {
     setSelectedSection: h
   } = e, C = i.useCallback(e => {
     h(e)
-  }, [h]), b = (0, s.e7)([A.Z], () => {
+  }, [h]), b = (0, s.e7)([c.Z], () => {
     var e;
-    return null === (e = A.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[m.id]
+    return null === (e = c.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[m.id]
   }, [m.id, t.id]), v = (0, o.pM)(t.id, m.id), x = (0, d.Z)(m);
   i.useEffect(() => {
     v && h(u.ZI.PERMISSIONS)
   }, [v, h]);
-  let N = (0, c.e)(t, m);
+  let N = (0, A.e)(t, m);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: f.titleContainer,

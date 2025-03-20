@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(456268),
   o = n(526429),
-  c = n(128449),
-  A = n(388032);
+  A = n(128449),
+  c = n(388032);
 
 function d(e) {
   let {
@@ -19,7 +19,7 @@ function d(e) {
     isDisabled: d,
     clearable: u = !0
   } = e, g = (0, s.Wu)([o.Z], () => o.Z.getPrimaryCategories()), f = i.useCallback(e => {
-    (0, l.TA)(t, null != e ? e : c.o3)
+    (0, l.TA)(t, null != e ? e : A.o3)
   }, [t]), m = i.useMemo(() => g.map(e => {
     let {
       categoryId: t,
@@ -31,8 +31,8 @@ function d(e) {
     }
   }), [g]);
   return 0 === g.length ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(a.VcW, {
-    value: n.primaryCategoryId === c.o3 ? null : n.primaryCategoryId,
-    placeholder: A.NW.string(A.t.XqMe3N),
+    value: n.primaryCategoryId === A.o3 ? null : n.primaryCategoryId,
+    placeholder: c.NW.string(c.t.XqMe3N),
     options: m,
     onChange: f,
     isDisabled: d,

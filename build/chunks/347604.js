@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(252759),
   o = n(442837),
-  c = n(481060),
-  A = n(650774),
+  A = n(481060),
+  c = n(650774),
   d = n(21297),
   u = n(118215),
   g = n(30766),
@@ -39,7 +39,7 @@ let N = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
     } = (0, o.cj)([u.ZP], () => ({
       canEnableDiscovery: u.ZP.passesChecklist(t.id),
       isPendingSuccess: u.ZP.isPendingSuccess(t.id)
-    }), [t.id]), [B, D] = (0, o.Wu)([A.Z], () => [null, A.Z.getMemberCount(t.id)], [t.id]), T = i.useCallback(() => {
+    }), [t.id]), [B, D] = (0, o.Wu)([c.Z], () => [null, c.Z.getMemberCount(t.id)], [t.id]), T = i.useCallback(() => {
       null != n && n()
     }, [n]), S = null;
     return s ? P ? S = b.NW.string(b.t.zP8DFx) : w || (S = b.NW.string(b.t.ABFu19)) : S = b.NW.string(b.t["5VbUBw"]), (0, r.jsxs)("div", {
@@ -69,11 +69,11 @@ let N = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
           loading: null == y,
           guild: y
         })]
-      }), (0, r.jsx)(c.X6q, {
+      }), (0, r.jsx)(A.X6q, {
         className: v.header,
         variant: "heading-xl/semibold",
         children: b.NW.string(b.t.UwPrKS)
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         variant: "text-md/normal",
         className: v.valueProp,
         color: "header-secondary",
@@ -84,7 +84,7 @@ let N = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
             pageView: m.d5.INTRO
           })
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         variant: "text-md/normal",
         className: v.byline,
         color: "header-secondary",
@@ -95,11 +95,11 @@ let N = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
             pageView: m.d5.INTRO
           })
         })
-      }), (0, r.jsx)(c.ua7, {
+      }), (0, r.jsx)(A.ua7, {
         text: S,
         children: e => {
           var t, n;
-          return (0, r.jsx)(c.zxk, (t = function(e) {
+          return (0, r.jsx)(A.zxk, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -118,8 +118,8 @@ let N = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
             return e
           }({}, e), n = n = {
             className: v.enableButton,
-            color: c.zxk.Colors.BRAND,
-            size: c.zxk.Sizes.LARGE,
+            color: A.zxk.Colors.BRAND,
+            size: A.zxk.Sizes.LARGE,
             disabled: !w || !s,
             onClick: T,
             children: b.NW.string(b.t.oBIZwc)
@@ -138,7 +138,7 @@ let N = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
         className: v.checklist,
         guild: t,
         guildId: t.id,
-        headerContent: (0, r.jsx)(c.X6q, {
+        headerContent: (0, r.jsx)(A.X6q, {
           variant: "heading-md/semibold",
           children: w ? b.NW.string(b.t.XAgDU1) : b.NW.format(b.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {

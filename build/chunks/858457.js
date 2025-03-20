@@ -29,7 +29,7 @@ function o(e) {
   return e
 }
 
-function c(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,7 +42,7 @@ function c(e, t) {
   }), e
 }
 
-function A(e) {
+function c(e) {
   var t = function(e, t) {
     if ("object" !== d(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
@@ -92,7 +92,7 @@ async function f(e, t) {
             for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
           }
           return i
-        }(e, [u].map(A))).map(e => {
+        }(e, [u].map(c))).map(e => {
           var t;
           let [n, r] = e, i = r[u], {
             code: s,
@@ -131,9 +131,9 @@ let m = (0, i.throttle)(f, 1e3, {
 
 function p(e, t) {
   var n, s;
-  let [a, l] = r.useState([]), [A, d] = r.useState(null), [u, g] = r.useState(null !== (s = null == e ? void 0 : null === (n = e.triggerMetadata) || void 0 === n ? void 0 : n.regexPatterns) && void 0 !== s ? s : []), p = r.useCallback(t => {
-    !(t.length < 3) && m(c(o({}, e), {
-      triggerMetadata: c(o({}, e.triggerMetadata), {
+  let [a, l] = r.useState([]), [c, d] = r.useState(null), [u, g] = r.useState(null !== (s = null == e ? void 0 : null === (n = e.triggerMetadata) || void 0 === n ? void 0 : n.regexPatterns) && void 0 !== s ? s : []), p = r.useCallback(t => {
+    !(t.length < 3) && m(A(o({}, e), {
+      triggerMetadata: A(o({}, e.triggerMetadata), {
         regexPatterns: [t]
       })
     }), e => {
@@ -144,10 +144,10 @@ function p(e, t) {
   return {
     patterns: u,
     errors: a,
-    valueError: A,
+    valueError: c,
     validatePatternsChanged: r.useCallback((n, r) => {
-      !(0, i.isEqual)(n, r) && (m.cancel(), f(c(o({}, e), {
-        triggerMetadata: c(o({}, e.triggerMetadata), {
+      !(0, i.isEqual)(n, r) && (m.cancel(), f(A(o({}, e), {
+        triggerMetadata: A(o({}, e.triggerMetadata), {
           regexPatterns: n
         })
       }), e => {

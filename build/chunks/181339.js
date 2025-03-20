@@ -10,8 +10,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(106351),
   o = n(442837),
-  c = n(481060),
-  A = n(367907),
+  A = n(481060),
+  c = n(367907),
   d = n(933557),
   u = n(369994),
   g = n(162157),
@@ -48,29 +48,29 @@ function O(e) {
           guild_id: t.id,
           channel_id: n
         };
-        (0, A.yw)(j.rMx.GUILD_RAID_ALERTS_SETUP, e)
+        (0, c.yw)(j.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.NW.string(E.t["46Rs3t"]), c.ToastType.FAILURE)), b(!h)
+      (0, A.showToast)((0, A.createToast)(E.NW.string(E.t["46Rs3t"]), A.ToastType.FAILURE)), b(!h)
     }
   };
   return (0, r.jsxs)("div", {
     className: a()(I.itemWrapper, l),
     children: [(0, r.jsxs)("div", {
       className: I.itemContent,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(A.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: E.NW.string(E.t.Qp98s7)
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: E.NW.string(E.t.Mg843t)
-      }), n || null == s ? null : (0, r.jsxs)(c.Text, {
+      }), n || null == s ? null : (0, r.jsxs)(A.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         className: I.valuePill,
-        children: [(0, r.jsx)(c.VL1, {
+        children: [(0, r.jsx)(A.VL1, {
           size: "xxs",
           color: "currentColor"
         }), " ", x]
@@ -123,25 +123,25 @@ function y(e) {
           guild_id: n.id,
           channel_id: e
         };
-        (0, A.yw)(j.rMx.GUILD_RAID_ALERTS_SETUP, t)
+        (0, c.yw)(j.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.NW.string(E.t["46Rs3t"]), c.ToastType.FAILURE)), s(g)
+      (0, A.showToast)((0, A.createToast)(E.NW.string(E.t["46Rs3t"]), A.ToastType.FAILURE)), s(g)
     }
   };
   return (0, r.jsx)("div", {
     className: a()(I.itemBodyContainer, u),
     children: (0, r.jsxs)("div", {
       className: I.itemBodyInner,
-      children: [(0, r.jsx)(c.vwX, {
+      children: [(0, r.jsx)(A.vwX, {
         children: E.NW.string(E.t.sMkYEx)
-      }), (0, r.jsx)(c.VcW, {
+      }), (0, r.jsx)(A.VcW, {
         wrapperClassName: I.bringToFront,
         options: m,
         onChange: p,
         value: i,
         maxVisibleItems: 5
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         variant: "text-sm/medium",
         color: "interactive-normal",
         children: E.NW.string(E.t["1QxN9P"])
@@ -154,19 +154,19 @@ function w(e) {
   var t, n;
   let {
     guild: s
-  } = e, [a, l] = i.useState(!1), o = null !== (t = s.safetyAlertsChannelId) && void 0 !== t ? t : null, [c, A] = i.useState(null != o ? o : null !== (n = null == s ? void 0 : s.publicUpdatesChannelId) && void 0 !== n ? n : null);
+  } = e, [a, l] = i.useState(!1), o = null !== (t = s.safetyAlertsChannelId) && void 0 !== t ? t : null, [A, c] = i.useState(null != o ? o : null !== (n = null == s ? void 0 : s.publicUpdatesChannelId) && void 0 !== n ? n : null);
   return (0, r.jsx)(m.Z, {
     renderHeader: (0, r.jsx)(O, {
       isExpanded: a,
       guild: s,
-      selectedChannelId: c
+      selectedChannelId: A
     }),
     isExpanded: a,
     onExpand: () => l(!a),
     children: (0, r.jsx)(y, {
       guild: s,
-      selectedChannelId: c,
-      setSelectedChannelId: A
+      selectedChannelId: A,
+      setSelectedChannelId: c
     })
   })
 }

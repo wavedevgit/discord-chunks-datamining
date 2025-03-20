@@ -3,14 +3,14 @@ let r, i, l;
 n.d(t, {
   Z: () => h
 }), n(47120);
-var a, o, s, c = n(442837),
+var o, a, s, c = n(442837),
   u = n(570140);
 
 function d() {
   i = {}, r = {}, l = new Set
 }
 d();
-class p extends(a = c.ZP.Store) {
+class p extends(o = c.ZP.Store) {
   getStatisticsForApplication(e) {
     return r[e]
   }
@@ -19,12 +19,12 @@ class p extends(a = c.ZP.Store) {
     return !l.has(e) && (null == t || Date.now() - t > 36e5)
   }
 }
-s = "ApplicationStatisticsStore", (o = "displayName") in p ? Object.defineProperty(p, o, {
+s = "ApplicationStatisticsStore", (a = "displayName") in p ? Object.defineProperty(p, a, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : p[o] = s;
+}) : p[a] = s;
 let h = new p(u.Z, {
   APPLICATION_ACTIVITY_STATISTICS_FETCH_START: function(e) {
     let {

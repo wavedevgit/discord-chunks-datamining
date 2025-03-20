@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(658722),
-  a = n.n(l),
-  o = n(512969),
+  o = n.n(l),
+  a = n(512969),
   s = n(91192),
   c = n(442837),
   u = n(481060),
@@ -100,8 +100,8 @@ let V = u.EFr.SIZE_32,
     let {
       user: t,
       activities: l = [],
-      gameProfileEntry: a,
-      index: o,
+      gameProfileEntry: o,
+      index: a,
       closeParentPopout: h,
       isSuggestion: g,
       isIncomingRequest: N = !1
@@ -114,7 +114,7 @@ let V = u.EFr.SIZE_32,
       size: V,
       animateOnHover: !0,
       guildId: null
-    }), R = (0, s.JA)("".concat(o)), [W, B] = i.useState(!1), {
+    }), R = (0, s.JA)("".concat(a)), [W, B] = i.useState(!1), {
       voiceChannel: F
     } = (0, _.Z)({
       userId: t.id,
@@ -143,9 +143,9 @@ let V = u.EFr.SIZE_32,
     }, []), $ = i.useCallback(() => {
       B(!1)
     }, []), ee = i.useCallback(() => {
-      if (null != a) {
-        let e = a.traits,
-          t = G(U({}, a), {
+      if (null != o) {
+        let e = o.traits,
+          t = G(U({}, o), {
             traits: e.slice(0, 3)
           });
         return (0, r.jsx)(O.Gk, {
@@ -182,7 +182,7 @@ let V = u.EFr.SIZE_32,
         hasQuest: !1,
         textClassName: M.activityText
       })
-    }, [t, l, K, q, F, a]), et = i.useCallback(e => {
+    }, [t, l, K, q, F, o]), et = i.useCallback(e => {
       (0, p.jW)(e, async () => {
         let {
           default: e
@@ -202,7 +202,7 @@ let V = u.EFr.SIZE_32,
       })
     }, [t.id]), el = i.useCallback(e => (0, r.jsx)(A.Z, G(U({}, e), {
       userId: t.id
-    })), [t.id]), ea = () => N || z === D.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
+    })), [t.id]), eo = () => N || z === D.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(C.sF, {
         label: k.NW.string(k.t.MMlhsr),
         icon: u.dz2,
@@ -278,7 +278,7 @@ let V = u.EFr.SIZE_32,
               label: k.NW.string(k.t["g33r/P"]),
               icon: u.kBi,
               onClick: er
-            }), ea(), (0, r.jsx)(C.sF, {
+            }), eo(), (0, r.jsx)(C.sF, {
               label: k.NW.string(k.t.UKOtz8),
               icon: u.xhG,
               onClick: et
@@ -345,9 +345,9 @@ let z = () => (0, c.e7)([w.Z, R.default, x.Z], () => {
         }), w.Z.getFriendIDs())) {
         let n = R.default.getUser(e);
         if (null == n) continue;
-        let a = x.Z.getStatus(e),
-          o = x.Z.getActivities(e),
-          s = o.filter(e => e.type === D.IIU.PLAYING || e.type === D.IIU.LISTENING || e.type === D.IIU.WATCHING || e.type === D.IIU.STREAMING),
+        let o = x.Z.getStatus(e),
+          a = x.Z.getActivities(e),
+          s = a.filter(e => e.type === D.IIU.PLAYING || e.type === D.IIU.LISTENING || e.type === D.IIU.WATCHING || e.type === D.IIU.STREAMING),
           c = s.filter(e => e.application_id === t);
         r && c.length > 0 ? (i.sameActivity.push({
           user: n,
@@ -355,25 +355,25 @@ let z = () => (0, c.e7)([w.Z, R.default, x.Z], () => {
         }), l.delete(e)) : s.length > 0 ? i.activities.push({
           user: n,
           activities: s
-        }) : a === D.Skl.ONLINE || a === D.Skl.IDLE || a === D.Skl.DND ? i.online.push({
+        }) : o === D.Skl.ONLINE || o === D.Skl.IDLE || o === D.Skl.DND ? i.online.push({
           user: n,
-          activities: o
+          activities: a
         }) : i.offline.push({
           user: n,
-          activities: o
+          activities: a
         })
       }
-      let a = (e, t) => {
+      let o = (e, t) => {
         var n, r;
         let i = (null !== (n = e.user.globalName) && void 0 !== n ? n : e.user.username).toLowerCase(),
           l = (null !== (r = t.user.globalName) && void 0 !== r ? r : t.user.username).toLowerCase();
         return i.localeCompare(l)
       };
-      if (i.sameActivity.sort(a), l.size > 0) {
-        let e = Array.from(l.values()).sort(a);
+      if (i.sameActivity.sort(o), l.size > 0) {
+        let e = Array.from(l.values()).sort(o);
         i.sameActivity.push(...e)
       }
-      return i.activities.sort(a), i.online.sort(a), i.offline.sort(a), i
+      return i.activities.sort(o), i.online.sort(o), i.offline.sort(o), i
     }, [n, e, t])
   },
   q = () => {
@@ -403,7 +403,7 @@ let z = () => (0, c.e7)([w.Z, R.default, x.Z], () => {
           user: t,
           activities: r
         } = e;
-        return !!(a()(n, t.username.toLowerCase()) || null != t.globalName && a()(n, t.globalName.toLowerCase())) || (null == r ? void 0 : r.some(e => null != e.name && a()(n, e.name.toLowerCase())))
+        return !!(o()(n, t.username.toLowerCase()) || null != t.globalName && o()(n, t.globalName.toLowerCase())) || (null == r ? void 0 : r.some(e => null != e.name && o()(n, e.name.toLowerCase())))
       })
     }, [t]), l = i.useMemo(() => ({
       incoming: r(e.incoming),
@@ -412,11 +412,11 @@ let z = () => (0, c.e7)([w.Z, R.default, x.Z], () => {
       sameActivity: r(e.sameActivity),
       online: r(e.online),
       offline: r(e.offline)
-    }), [e, r]), o = i.useCallback(() => n(""), []);
+    }), [e, r]), a = i.useCallback(() => n(""), []);
     return G(U({}, l), {
       searchQuery: t,
       setSearchQuery: n,
-      handleSearchClear: o
+      handleSearchClear: a
     })
   };
 
@@ -425,9 +425,9 @@ function X(e) {
     onOpen: t,
     onClose: n,
     children: l,
-    popoutPosition: a,
+    popoutPosition: o,
     popoutAlign: c
-  } = e, [d, p] = i.useState(!1), f = i.useRef(null), m = (0, g.Z)("friends-popout", f), b = (0, o.k6)(), _ = q(), E = Q(_), {
+  } = e, [d, p] = i.useState(!1), f = i.useRef(null), m = (0, g.Z)("friends-popout", f), b = (0, a.k6)(), _ = q(), E = Q(_), {
     searchQuery: O,
     setSearchQuery: v,
     handleSearchClear: y
@@ -555,7 +555,7 @@ function X(e) {
   }, [O, v, y, m, T, P, j, b, C, I]);
   return (0, r.jsx)(u.yRy, {
     animation: u.yRy.Animation.NONE,
-    position: a,
+    position: o,
     align: c,
     autoInvert: !1,
     shouldShow: d,

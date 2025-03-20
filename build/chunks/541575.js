@@ -10,8 +10,8 @@ var i = n(780384),
   a = n(410030),
   l = n(367907),
   o = n(906732),
-  c = n(91218),
-  A = n(807582),
+  A = n(91218),
+  c = n(807582),
   d = n(518738),
   u = n(26323),
   g = n(764260),
@@ -86,7 +86,7 @@ let v = function(e) {
       guild: t,
       perks: (0, m.Yp)()
     }))
-  }, w = (0, r.jsx)(A.Z, {
+  }, w = (0, r.jsx)(c.Z, {
     className: h.availabilityIndicator,
     guild: t,
     guildFeature: f.oNc.ROLE_ICONS,
@@ -111,7 +111,7 @@ let v = function(e) {
       className: h.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: h.previewContainer,
-        children: null != j ? (0, r.jsx)(c.Z, b(C({}, j), {
+        children: null != j ? (0, r.jsx)(A.Z, b(C({}, j), {
           className: h.roleIconPreview,
           enableTooltip: !1
         })) : (0, r.jsx)(s.FmF, {

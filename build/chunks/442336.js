@@ -1,6 +1,6 @@
 /** Chunk was on 78114 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,10 +13,9 @@ var r = n(200651),
   d = n(665149),
   p = n(110255),
   h = n(981631),
-  f = n(388032),
-  m = n(445745);
+  f = n(388032);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +34,7 @@ function g(e) {
   return e
 }
 
-function b(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,30 +47,30 @@ function b(e, t) {
   }), e
 }
 
-function _(e) {
+function b(e) {
   let {
     channel: t
-  } = e, n = (0, o.bWb)().enabled, [_, C] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [v, y] = i.useState(!1);
+  } = e, [n, b] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [_, C] = i.useState(!1);
   i.useEffect(() => {
-    let e = () => y(!0);
+    let e = () => C(!0);
     return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let x = e => {
+  let v = e => {
       e.shiftKey ? a.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
-        muted: !_
-      }, u.UE.muted(!_)) : y(e => !e)
+        muted: !n
+      }, u.UE.muted(!n)) : C(e => !e)
     },
-    j = f.NW.string(f.t.h850Sk);
+    y = f.NW.string(f.t.h850Sk);
   return (0, r.jsx)(o.yRy, {
-    shouldShow: v,
+    shouldShow: _,
     animation: o.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
-    onRequestClose: () => y(!1),
-    renderPopout: e => (0, r.jsx)(p.Z, b(g({}, e), {
+    onRequestClose: () => C(!1),
+    renderPopout: e => (0, r.jsx)(p.Z, g(m({}, e), {
       channel: t,
       navId: "channel-context",
       label: f.NW.string(f.t.Xm41aW)
@@ -81,12 +80,11 @@ function _(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(d.ZP.Icon, b(g({}, e), {
-        onClick: x,
-        tooltip: i ? null : j,
-        icon: _ || C !== h.bL.ALL_MESSAGES ? o.owu : o.Dkj,
-        foreground: _ && !n ? m.strikethrough : null,
-        "aria-label": j,
+      return (0, r.jsx)(d.ZP.Icon, g(m({}, e), {
+        onClick: v,
+        tooltip: i ? null : y,
+        icon: n || b !== h.bL.ALL_MESSAGES ? o.owu : o.Dkj,
+        "aria-label": y,
         selected: i
       }))
     }

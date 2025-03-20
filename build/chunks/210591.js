@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(642128),
   o = n(692547),
-  c = n(481060),
-  A = n(259580),
+  A = n(481060),
+  c = n(259580),
   d = n(293810),
   u = n(388032),
   g = n(820279);
@@ -22,12 +22,12 @@ function f(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: g.row,
-    children: [(0, r.jsx)(c.Text, {
+    children: [(0, r.jsx)(A.Text, {
       variant: "text-md/normal",
       color: "interactive-active",
       className: g.rowText,
       children: n
-    }), t ? (0, r.jsx)(c.owK, {
+    }), t ? (0, r.jsx)(A.owK, {
       size: "md",
       color: "currentColor",
       secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
@@ -41,7 +41,7 @@ function f(e) {
 function m(e) {
   let {
     children: t
-  } = e, [n, s] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, m = 1 === o, p = (0, c.q_F)({
+  } = e, [n, s] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, m = 1 === o, p = (0, A.q_F)({
     width: "".concat(100 * o, "%")
   }), h = [u.NW.format(u.t.wtQtXl, {
     promoPageGuideUrl: d.iv.PROMO_PAGE_GUIDE
@@ -58,9 +58,9 @@ function m(e) {
         items: s
       } = e;
       return (0, r.jsxs)(i.Fragment, {
-        children: [t > 0 && (0, r.jsx)(c.$i$, {
+        children: [t > 0 && (0, r.jsx)(A.$i$, {
           className: g.divider
-        }), (0, r.jsx)(c.vwX, {
+        }), (0, r.jsx)(A.vwX, {
           className: g.categoryTitle,
           children: n
         }), s.map((e, t) => (0, r.jsx)(f, {
@@ -68,14 +68,14 @@ function m(e) {
           checked: e.completed
         }, t))]
       }, t)
-    }), (0, r.jsx)(c.$i$, {
+    }), (0, r.jsx)(A.$i$, {
       className: g.divider
-    }), (0, r.jsx)(c.vwX, {
+    }), (0, r.jsx)(A.vwX, {
       className: g.categoryTitle,
       children: u.NW.string(u.t.FO0AIS)
     }), h.map((e, t) => (0, r.jsx)("div", {
       className: g.row,
-      children: (0, r.jsx)(c.Text, {
+      children: (0, r.jsx)(A.Text, {
         variant: "text-md/normal",
         children: e
       })
@@ -85,15 +85,15 @@ function m(e) {
     className: g.checklist,
     children: (0, r.jsxs)("div", {
       className: g.container,
-      children: [(0, r.jsxs)(c.P3F, {
+      children: [(0, r.jsxs)(A.P3F, {
         className: g.headerBar,
         onClick: () => s(e => !e),
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(A.X6q, {
           variant: "heading-md/semibold",
           className: g.headerText,
           children: u.NW.string(u.t["2Xbd/P"])
-        }), (0, r.jsx)(A.Z, {
-          direction: n ? A.Z.Directions.DOWN : A.Z.Directions.UP,
+        }), (0, r.jsx)(c.Z, {
+          direction: n ? c.Z.Directions.DOWN : c.Z.Directions.UP,
           className: g.headerCaret
         })]
       }), !m && (0, r.jsx)("div", {

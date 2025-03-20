@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -11,12 +11,12 @@ var i = n(442837),
   l = n(592125),
   o = n(388032);
 
-function c(e) {
+function A(e) {
   let {
     onConfirm: t,
     onCancel: n,
-    channelId: c
-  } = e, A = (0, i.e7)([l.Z], () => null != c ? l.Z.getChannel(c) : null), d = (0, a.ZP)(A, !0);
+    channelId: A
+  } = e, c = (0, i.e7)([l.Z], () => null != A ? l.Z.getChannel(A) : null), d = (0, a.ZP)(c, !0);
   return (0, r.jsx)(s.sYh, {
     dismissable: !0,
     header: o.NW.string(o.t.S2eoq6),
@@ -26,7 +26,7 @@ function c(e) {
     onCancel: n,
     children: (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: null != A ? o.NW.format(o.t["1KT3Fh"], {
+      children: null != c ? o.NW.format(o.t["1KT3Fh"], {
         channelName: d
       }) : o.NW.string(o.t.VOPUV1)
     })

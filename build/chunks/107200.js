@@ -16,13 +16,13 @@ var r = n(442837),
   h = n(713087);
 
 function p() {
-  let [e, t] = (0, r.Wu)([o.Z], () => [o.Z.enabled, o.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), p = (0, r.e7)([a.Z], () => a.Z.getChannel(n), [n]), v = null == p ? void 0 : p.getGuildId();
+  let [e, t] = (0, r.Wu)([o.Z], () => [o.Z.enabled, o.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), p = (0, r.e7)([a.Z], () => a.Z.getChannel(n), [n]), f = null == p ? void 0 : p.getGuildId();
   return e && null != p ? (0, i.jsx)("div", {
     className: h.widget,
     children: (0, i.jsx)(s.Z, {
       width: u.FW.width,
       height: u.FW.height,
-      guildId: v,
+      guildId: f,
       channel: p,
       keepOpen: t,
       onClose: function() {

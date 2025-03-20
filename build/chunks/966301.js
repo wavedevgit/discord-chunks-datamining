@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(481060),
   l = n(852860),
   o = n(471445),
-  c = n(45966),
-  A = n(637853),
+  A = n(45966),
+  c = n(637853),
   d = n(999382),
   u = n(889369),
   g = n(983135),
@@ -28,7 +28,7 @@ function N(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, l = (0, s.e7)([u.Z], () => u.Z.editedDefaultChannelIds), [c, d] = (0, A.dF)(t, n, [...l]), g = c.length, f = c.length + d.length, m = g / f * 100, p = Math.max(Math.ceil(85 * f / 100) - g, 0), [h, C] = i.useState(!1), b = h ? a.CJ0 : a.u04;
+  } = e, l = (0, s.e7)([u.Z], () => u.Z.editedDefaultChannelIds), [A, d] = (0, c.dF)(t, n, [...l]), g = A.length, f = A.length + d.length, m = g / f * 100, p = Math.max(Math.ceil(85 * f / 100) - g, 0), [h, C] = i.useState(!1), b = h ? a.CJ0 : a.u04;
   return (0, r.jsxs)("div", {
     className: x.channelCoverage,
     children: [(0, r.jsxs)(a.P3F, {
@@ -121,9 +121,9 @@ function E(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, l = (0, s.e7)([c.Z], () => c.Z.isLoading()), o = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), A = (0, s.e7)([m.Z], () => m.Z.advancedMode), d = i.useRef(!1);
+  } = e, l = (0, s.e7)([A.Z], () => A.Z.isLoading()), o = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), c = (0, s.e7)([m.Z], () => m.Z.advancedMode), d = i.useRef(!1);
   i.useEffect(() => {
-    l || d.current || 0 !== o.length || (d.current = !0, A || (0, f.tS)(t, [(0, b.ae)()], !1))
+    l || d.current || 0 !== o.length || (d.current = !0, c || (0, f.tS)(t, [(0, b.ae)()], !1))
   });
   let u = i.useRef(t);
   if (i.useEffect(() => {
@@ -144,7 +144,7 @@ function E(e) {
     children: [(0, r.jsx)(a.X6q, {
       className: x.header,
       variant: "heading-lg/extrabold",
-      children: A ? v.NW.string(v.t.AGjtFh) : v.NW.string(v.t.dqCzoa)
+      children: c ? v.NW.string(v.t.AGjtFh) : v.NW.string(v.t.dqCzoa)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
@@ -179,7 +179,7 @@ function E(e) {
     }), (0, r.jsx)("div", {
       className: x.prompts,
       children: l ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(h.Z, {
-        postjoinOnly: A,
+        postjoinOnly: c,
         guildId: t.id
       })
     })]

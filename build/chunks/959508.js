@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  c = n(603211),
-  A = n(710344),
+  A = n(603211),
+  c = n(710344),
   d = n(637853),
   u = n(107862),
   g = n(259580),
@@ -31,7 +31,7 @@ function j(e) {
   let {
     guild: n,
     prompt: s,
-    disableAutofocus: A,
+    disableAutofocus: c,
     promptIndex: C,
     dragIndex: j,
     includeCount: O,
@@ -45,28 +45,28 @@ function j(e) {
     drag: L,
     dragSourcePosition: R,
     drop: Q,
-    setIsDraggable: Z
-  } = (0, c.Z)({
+    setIsDraggable: W
+  } = (0, A.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: j,
     optionId: s.id,
     onDragStart: P,
     onDragComplete: w,
     onDragReset: B
-  }), W = (0, l.cj)([h.Z], () => {
+  }), Z = (0, l.cj)([h.Z], () => {
     var e;
     return null !== (e = h.Z.errors[C]) && void 0 !== e ? e : N
-  }), [k, M] = i.useState(!1), [_, G] = i.useState(!1), F = null !== (t = W.options) && void 0 !== t ? t : W.optionErrors.filter(f.lm)[0], U = W.config, H = D && s.options.length >= b.fY, z = (0, d.kl)(n.id, Array.from(T), [s]).length - T.size, X = i.useRef(null), Y = i.useRef(C);
+  }), [k, M] = i.useState(!1), [_, G] = i.useState(!1), F = null !== (t = Z.options) && void 0 !== t ? t : Z.optionErrors.filter(f.lm)[0], U = Z.config, H = D && s.options.length >= b.fY, z = (0, d.kl)(n.id, Array.from(T), [s]).length - T.size, X = i.useRef(null), Y = i.useRef(C);
   return (i.useEffect(() => {
     Y.current = C
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === Y.current && !A) {
+      if (0 === Y.current && !c) {
         var e;
         null === (e = X.current) || void 0 === e || e.focus()
       }
     }, 0)
-  }, [A]), k) ? (0, r.jsx)(o.tEY, {
+  }, [c]), k) ? (0, r.jsx)(o.tEY, {
     children: (0, r.jsxs)("div", {
       tabIndex: 0,
       onFocus: () => G(!0),
@@ -80,8 +80,8 @@ function j(e) {
       ref: e => L(Q(e)),
       children: [(0, r.jsx)("div", {
         className: x.dragContainer,
-        onMouseEnter: () => Z(!0),
-        onMouseLeave: () => Z(!1),
+        onMouseEnter: () => W(!0),
+        onMouseLeave: () => W(!1),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -132,8 +132,8 @@ function j(e) {
       ref: e => L(Q(e)),
       children: [(0, r.jsx)("div", {
         className: x.dragContainer,
-        onMouseEnter: () => Z(!0),
-        onMouseLeave: () => Z(!1),
+        onMouseEnter: () => W(!0),
+        onMouseLeave: () => W(!1),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -156,7 +156,7 @@ function j(e) {
         }),
         placeholder: v.NW.string(v.t.QMCuCg),
         maxLength: b.iU,
-        error: W.title
+        error: Z.title
       }), (0, r.jsx)(E, {
         prompt: s,
         guild: n
@@ -175,7 +175,7 @@ function j(e) {
         guild: n,
         prompt: s,
         promptIndex: C,
-        errors: W,
+        errors: Z,
         singleColumn: y
       }), null != F ? (0, r.jsx)(o.pdY, {
         error: F
@@ -282,10 +282,10 @@ function I(e) {
   } = e, {
     dropdownsAllowed: l
   } = (0, u.Ug)(t.id), o = l ? b.qm : b.M$, {
-    handleDragStart: c,
+    handleDragStart: A,
     handleDragReset: d,
     handleDragComplete: g
-  } = (0, A.Z)(n.options, e => (0, p.Kk)(t, n.id, {
+  } = (0, c.Z)(n.options, e => (0, p.Kk)(t, n.id, {
     options: e
   }));
   return (0, r.jsxs)("div", {
@@ -296,7 +296,7 @@ function I(e) {
       promptIndex: i,
       singleColumn: s,
       option: e,
-      onDragStart: c,
+      onDragStart: A,
       onDragComplete: g,
       onDragReset: d,
       hasError: null != a.optionErrors[l]

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(399606),
   l = n(481060),
   o = n(734893),
-  c = n(984933),
-  A = n(430824),
+  A = n(984933),
+  c = n(430824),
   d = n(700785),
   u = n(8426),
   g = n(969632),
@@ -22,10 +22,10 @@ let C = [],
   b = function(e) {
     let {
       guildId: t
-    } = e, n = (0, a.e7)([A.Z], () => A.Z.getGuild(t)), b = (0, a.Wu)([g.Z], () => {
+    } = e, n = (0, a.e7)([c.Z], () => c.Z.getGuild(t)), b = (0, a.Wu)([g.Z], () => {
       var e, t;
       return null !== (t = null === (e = g.Z.getSettings().resourceChannels) || void 0 === e ? void 0 : e.map(e => e.channelId)) && void 0 !== t ? t : C
-    }), v = (0, a.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), x = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), N = i.useMemo(() => (0, s.chain)(x).filter(e => e.channel.type === m.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !v.includes(e.channel.id) && !b.includes(e.channel.id) && d.Uu(m.Plq.VIEW_CHANNEL, e.channel) && !d.Uu(m.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [x, v, null == n ? void 0 : n.rulesChannelId, b]), j = i.useCallback(() => {
+    }), v = (0, a.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), x = (0, a.e7)([A.ZP], () => A.ZP.getSelectableChannels(t)), N = i.useMemo(() => (0, s.chain)(x).filter(e => e.channel.type === m.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !v.includes(e.channel.id) && !b.includes(e.channel.id) && d.Uu(m.Plq.VIEW_CHANNEL, e.channel) && !d.Uu(m.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [x, v, null == n ? void 0 : n.rulesChannelId, b]), j = i.useCallback(() => {
       let e = N.map(e => e.channel.id);
       (0, u.q6)(t, e)
     }, [t, N]);

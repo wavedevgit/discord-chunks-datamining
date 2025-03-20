@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(999382),
   o = n(845377),
-  c = n(976288),
-  A = n(386885),
+  A = n(976288),
+  c = n(386885),
   d = n(388032),
   u = n(62475);
 
@@ -25,7 +25,7 @@ function g(e) {
       null != m && t(m.id)
     }, [t, m]), null == m) return null;
   switch (n) {
-    case A.U.DISQUALIFIED:
+    case c.U.DISQUALIFIED:
       return (0, r.jsx)(o.Z, {
         guild: m,
         guildId: m.id,
@@ -47,14 +47,14 @@ function g(e) {
           })]
         })
       });
-    case A.U.ELIGIBLE_DISABLED:
-    case A.U.ELIGIBLE_ENABLED:
-      return (0, r.jsx)(c.d, {
+    case c.U.ELIGIBLE_DISABLED:
+    case c.U.ELIGIBLE_ENABLED:
+      return (0, r.jsx)(A.d, {
         requireTerms: g,
         rules: f,
         settingsView: n
       });
-    case A.U.INELIGIBLE:
+    case c.U.INELIGIBLE:
       return (0, r.jsx)(o.Z, {
         guild: m,
         guildId: m.id,

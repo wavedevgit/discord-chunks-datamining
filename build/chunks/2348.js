@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(692547),
   o = n(481060),
-  c = n(239091),
-  A = n(111028),
+  A = n(239091),
+  c = n(111028),
   d = n(977258),
   u = n(637853),
   g = n(473403),
@@ -73,7 +73,7 @@ function j(e) {
       [v.uncategorized]: "null" === i.id
     }),
     onContextMenu: e => {
-      (0, c.jW)(e, async () => {
+      (0, A.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("58059"), n.e("38902"), n.e("8965"), n.e("98350")]).then(n.bind(n, 139035));
@@ -141,7 +141,7 @@ let E = i.memo(function() {
         }))
       }), !0
     }, L = e => {
-      t.isGuildVocal() ? (0, c.jW)(e, async () => {
+      t.isGuildVocal() ? (0, A.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("58059"), n.e("38902"), n.e("42743"), n.e("17024"), n.e("18320"), n.e("83331"), n.e("5038")]).then(n.bind(n, 213202));
@@ -149,7 +149,7 @@ let E = i.memo(function() {
           channel: t,
           guild: s
         }))
-      }) : (0, c.jW)(e, async () => {
+      }) : (0, A.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("50506"), n.e("68880"), n.e("99152"), n.e("79695"), n.e("22878"), n.e("13351"), n.e("66711"), n.e("97349"), n.e("53937"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("18895"), n.e("86546"), n.e("30243"), n.e("99393"), n.e("85574"), n.e("59160"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("19948"), n.e("7590"), n.e("78447"), n.e("98254"), n.e("22356"), n.e("35755"), n.e("94458"), n.e("12416"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("78114"), n.e("18320"), n.e("397"), n.e("45260"), n.e("46371")]).then(n.bind(n, 373651));
@@ -180,7 +180,7 @@ let E = i.memo(function() {
               children: [(0, r.jsx)(g._W, {
                 channel: t,
                 guild: s
-              }), (0, r.jsx)(A.Z, {
+              }), (0, r.jsx)(c.Z, {
                 className: v.__invalid_name,
                 children: (0, r.jsx)(o.Text, {
                   className: v.channelText,
@@ -254,10 +254,10 @@ function y(e) {
       isLastChannel: t[s.channel.id].length - 1 === i,
       tooltipDirection: a ? "right" : "top"
     }, l.channel.id)
-  }, [t, n, a]), c = (0, f.tn)(n.id, t, 64);
+  }, [t, n, a]), A = (0, f.tn)(n.id, t, 64);
   return (0, r.jsx)("div", {
     className: s,
-    children: c.map((e, t) => {
+    children: A.map((e, t) => {
       let n = l(t),
         i = [],
         s = e.rowCount;

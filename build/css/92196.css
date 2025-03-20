@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: 37d940cd3b67fdaa
+  Original File Name: 35576090b9794443
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2917,6 +2917,17 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-top: var(--spacing-4)
 }
 
+.container__877f0 {
+    position: relative
+}
+
+.lottie__877f0 {
+    position: absolute;
+    height: 32px;
+    border-radius: var(--radius-xs);
+    overflow: hidden
+}
+
 .textImportant__877f0 {
     color: var(--text-primary)
 }
@@ -5803,4 +5814,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=37d940cd3b67fdaa.css.map*/
+/*# sourceMappingURL=35576090b9794443.css.map*/

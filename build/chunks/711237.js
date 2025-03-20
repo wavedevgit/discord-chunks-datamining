@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  J_: () => o,
+  J_: () => a,
   R6: () => l
 });
 var r = n(818083),
@@ -20,7 +20,7 @@ let l = (0, r.B)({
       }
     }]
   }),
-  a = (0, r.B)({
+  o = (0, r.B)({
     kind: "guild",
     id: i.nz,
     label: "Trigger Debugging Guild AA Experiment",
@@ -35,15 +35,15 @@ let l = (0, r.B)({
       }
     }]
   }),
-  o = e => {
+  a = e => {
     let t = "guild trigger debug",
       n = "user trigger debug";
-    a.useExperiment({
+    o.useExperiment({
       location: t,
       guildId: e
     }, {
       autoTrackExposure: !1
-    }), a.trackExposure({
+    }), o.trackExposure({
       location: t,
       guildId: e
     }), l.useExperiment({

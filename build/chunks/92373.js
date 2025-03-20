@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(442837),
-  c = n(210753),
-  A = n(77498),
+  A = n(210753),
+  c = n(77498),
   d = n(388032),
   u = n(564918);
 let g = function(e) {
@@ -24,12 +24,12 @@ let g = function(e) {
   } = e, p = (0, l.dQu)(l.TVs.colors.WHITE), {
     isFetching: h,
     coverImageUrl: C
-  } = (0, c.$)(t, {
+  } = (0, A.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), b = (0, o.e7)([A.Z], () => {
+  }), b = (0, o.e7)([c.Z], () => {
     var e, n;
-    return null !== (n = null === (e = A.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
+    return null !== (n = null === (e = c.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
   }), v = i.useCallback(() => {
     null == s || s(t)
   }, [t, s]), x = i.useMemo(() => h ? null : null == C ? (0, r.jsx)("div", {

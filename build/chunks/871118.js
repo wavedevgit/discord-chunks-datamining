@@ -47,16 +47,16 @@ function y(e) {
     noText: i = !1,
     noImage: o = !1
   } = e, s = (0, a.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), y = (0, a.e7)([u.Z], () => null != s && u.Z.canBasicChannel(f.S7T.CONNECT, s)), {
-    previewUrl: b,
-    isLoading: O
-  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), h = l.useRef(O ? null : b);
+    previewUrl: O,
+    isLoading: b
+  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), h = l.useRef(b ? null : O);
   l.useEffect(() => {
-    O || (h.current = b)
-  }, [b, O]);
-  let v = null == b || O ? h.current : b;
+    b || (h.current = O)
+  }, [O, b]);
+  let v = null == O || b ? h.current : O;
   return null == v ? (0, r.jsx)(g, {
     className: n,
-    isLoading: O,
+    isLoading: b,
     noText: i,
     noImage: o,
     previewText: y ? void 0 : p.NW.string(p.t.pgUTZG)

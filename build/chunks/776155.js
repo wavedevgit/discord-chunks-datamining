@@ -7,7 +7,7 @@ var r = n(192379),
   i = n(295141);
 
 function s(e) {
-  let [t, n] = r.useState(!0), [s, a] = r.useState(), [l, o] = r.useState(), c = r.useCallback(async e => {
+  let [t, n] = r.useState(!0), [s, a] = r.useState(), [l, o] = r.useState(), A = r.useCallback(async e => {
     n(!0), a(void 0);
     try {
       let t = await i.HT(e);
@@ -19,8 +19,8 @@ function s(e) {
     }
   }, []);
   return r.useEffect(() => {
-    c(e)
-  }, [e, c]), {
+    A(e)
+  }, [e, A]), {
     isLoading: t,
     error: s,
     highlightedCreatorDetails: l

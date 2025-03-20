@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 });
 var r = n(200651);
 n(192379);
@@ -10,22 +10,22 @@ var i = n(399606),
   a = n(430824),
   l = n(594174),
   o = n(723047),
-  c = n(388032);
+  A = n(388032);
 
-function A(e) {
+function c(e) {
   let {
     guildId: t,
-    application: A
+    application: c
   } = e, d = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), u = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, o.mY)();
   if (null == d || !d.isOwner(u)) return null;
-  let f = A.team;
+  let f = c.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
       disabled: g,
-      children: null != f ? c.NW.format(c.t.erxwWF, {
+      children: null != f ? A.NW.format(A.t.erxwWF, {
         teamName: f.name
-      }) : c.NW.string(c.t.FGzLkJ)
+      }) : A.NW.string(A.t.FGzLkJ)
     }), (0, r.jsx)(s.LZC, {
       size: 16
     }), (0, r.jsx)(s.zxk, {
@@ -56,7 +56,7 @@ function A(e) {
               }
               return e
             }({}, t), i = i = {
-              application: A
+              application: c
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -71,7 +71,7 @@ function A(e) {
         })
       },
       disabled: g,
-      children: null != f ? c.NW.string(c.t["/Fjq5O"]) : c.NW.string(c.t["6ih+b2"])
+      children: null != f ? A.NW.string(A.t["/Fjq5O"]) : A.NW.string(A.t["6ih+b2"])
     })]
   })
 }

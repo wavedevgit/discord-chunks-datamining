@@ -14,8 +14,8 @@ var i = n(192379),
   u = n(984933),
   h = n(271383),
   p = n(430824),
-  v = n(496675),
-  f = n(944486),
+  f = n(496675),
+  v = n(944486),
   m = n(914010),
   y = n(594174),
   O = n(237997),
@@ -81,10 +81,10 @@ class Z extends i.Component {
     return null
   }
 }
-let b = o.ZP.connectStores([m.Z, f.Z, p.Z, y.default, O.default, u.ZP, v.Z, h.ZP], () => {
+let b = o.ZP.connectStores([m.Z, v.Z, p.Z, y.default, O.default, u.ZP, f.Z, h.ZP], () => {
   var e, t, n;
   let i = m.Z.getGuildId(),
-    o = f.Z.getChannelId(i),
+    o = v.Z.getChannelId(i),
     l = p.Z.getGuild(i),
     s = y.default.getCurrentUser(),
     a = null !== (t = u.ZP.getChannels(null == l ? void 0 : l.id)[u.sH]) && void 0 !== t ? t : [],
@@ -92,7 +92,7 @@ let b = o.ZP.connectStores([m.Z, f.Z, p.Z, y.default, O.default, u.ZP, v.Z, h.ZP
       let {
         channel: t
       } = e;
-      return v.Z.can(r.$e(g.Plq.SEND_MESSAGES, g.Plq.VIEW_CHANNEL), t)
+      return f.Z.can(r.$e(g.Plq.SEND_MESSAGES, g.Plq.VIEW_CHANNEL), t)
     }).length : 0,
     d = null != s && null != i && null !== (n = null === (e = h.ZP.getMember(i, s.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== n && n;
   return {

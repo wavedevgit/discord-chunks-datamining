@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(550271),
   o = n(434404),
-  c = n(976260),
-  A = n(388032),
+  A = n(976260),
+  c = n(388032),
   d = n(935921);
 let u = function(e) {
   let {
@@ -26,7 +26,7 @@ let u = function(e) {
     className: t,
     children: [(0, r.jsx)(a.vwX, {
       className: d.sectionTitle,
-      children: A.NW.string(c.Z["tN+8pK"])
+      children: c.NW.string(A.Z["tN+8pK"])
     }), (0, r.jsxs)("div", {
       className: d.tagContainer,
       children: [(0, r.jsx)("div", {
@@ -57,7 +57,7 @@ let u = function(e) {
         children: (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: A.NW.string(c.Z.UbC8y8)
+          children: c.NW.string(A.Z.UbC8y8)
         })
       })]
     })]

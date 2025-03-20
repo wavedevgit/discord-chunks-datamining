@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(442837),
   l = n(481060),
   o = n(558324),
-  c = n(456268),
-  A = n(681460),
+  A = n(456268),
+  c = n(681460),
   d = n(345861),
   u = n(650774),
   g = n(434404),
@@ -42,11 +42,11 @@ function y(e) {
   let {
     guild: n,
     requireDescription: o
-  } = e, c = i.useCallback(e => {
+  } = e, A = i.useCallback(e => {
     g.Z.updateGuild({
       discoverySplash: e
     })
-  }, []), A = i.useCallback(() => {
+  }, []), c = i.useCallback(() => {
     g.Z.updateGuild({
       discoverySplash: null
     })
@@ -93,13 +93,13 @@ function y(e) {
             color: l.zxk.Colors.PRIMARY,
             className: I.editableSection,
             buttonCTA: E.NW.string(E.t["3UB9aW"]),
-            onChange: c
+            onChange: A
           }), null != n.discoverySplash ? (0, r.jsx)(l.zxk, {
             size: l.zxk.Sizes.SMALL,
             color: l.zxk.Colors.RED,
             look: l.zxk.Looks.LINK,
             className: I.editableSection,
-            onClick: A,
+            onClick: c,
             children: E.NW.string(E.t.N86XcH)
           }) : null]
         })]
@@ -201,12 +201,12 @@ function P(e) {
     error: a
   } = e, [d, u] = i.useState(null), g = i.useCallback(e => {
     let r = [...n.keywords];
-    r.splice(e, 1), u(null), (0, c.zH)(t, r)
+    r.splice(e, 1), u(null), (0, A.zH)(t, r)
   }, [t, n]), f = i.useCallback(e => {
     let {
       keywords: r
     } = n;
-    r.length >= N.G7 || (u(null), (0, c.zH)(t, [...r, e]))
+    r.length >= N.G7 || (u(null), (0, A.zH)(t, [...r, e]))
   }, [t, n]), m = i.useMemo(() => (0, b.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= N.G7;
     return {
@@ -251,7 +251,7 @@ function P(e) {
         children: E.NW.string(E.t.sF28Oj)
       }), (0, r.jsx)("div", {
         className: I.editableSection,
-        children: (0, r.jsx)(A.j, {
+        children: (0, r.jsx)(c.j, {
           pills: m
         })
       })]
@@ -266,7 +266,7 @@ function B(e) {
   } = e, {
     emojiDiscoverabilityEnabled: s
   } = n, a = t.id, o = i.useCallback(() => {
-    (0, c.J9)(a, !s)
+    (0, A.J9)(a, !s)
   }, [a, s]);
   return (0, r.jsxs)("div", {
     className: I.twoColumns,
@@ -356,21 +356,21 @@ function S(e) {
     }
   });
   if (null == o) return null;
-  let c = i === x.U.ELIGIBLE_DISABLED;
+  let A = i === x.U.ELIGIBLE_DISABLED;
   return (0, r.jsxs)("div", {
     className: I.settings,
     children: [(0, r.jsx)(y, {
       guild: o,
-      requireDescription: c
+      requireDescription: A
     }), (0, r.jsx)(T, {}), (0, r.jsx)(w, {
       guild: o,
       guildMetadata: l,
-      requirePrimaryCategory: c,
+      requirePrimaryCategory: A,
       error: s.discovery_splash
     }), (0, r.jsx)(T, {}), (0, r.jsx)(P, {
       guildId: o.id,
       guildMetadata: l,
-      requireTag: c,
+      requireTag: A,
       error: s.keywords
     }), (0, r.jsx)(T, {}), (0, r.jsx)(B, {
       guild: o,

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -10,12 +10,12 @@ var i = n(692547),
   a = n(355011),
   l = n(388032),
   o = n(391803);
-let c = e => {
+let A = e => {
   let {
     title: t,
     subtext: n = l.NW.string(l.t.jHpxws),
-    localizedNumber: c,
-    isTrendingUp: A,
+    localizedNumber: A,
+    isTrendingUp: c,
     isTrendingDown: d,
     tooltipText: u
   } = e, g = null != u ? (0, r.jsx)(s.ua7, {
@@ -66,13 +66,13 @@ let c = e => {
     }), (0, r.jsx)("div", {
       className: o.analyticsCardContent,
       children: (0, r.jsx)(s.X6q, {
-        className: null != c ? o.analyticsCardNumber : o.analyticsCardNumberNotAvailable,
+        className: null != A ? o.analyticsCardNumber : o.analyticsCardNumberNotAvailable,
         variant: "heading-xl/semibold",
-        children: null != c ? c : l.NW.string(l.t.jHpxws)
+        children: null != A ? A : l.NW.string(l.t.jHpxws)
       })
     }), (0, r.jsxs)("div", {
       className: o.analyticsCardArrowSubText,
-      children: [A ? (0, r.jsx)(a.Z, {
+      children: [c ? (0, r.jsx)(a.Z, {
         className: o.trendingArrow,
         color: i.Z.unsafe_rawColors.GREEN_360.css,
         "aria-label": l.NW.string(l.t["8mcccX"]),

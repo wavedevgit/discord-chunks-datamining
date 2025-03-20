@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r, i = n(192379),
   l = n(442837),
-  a = n(179360),
-  o = n(897285),
+  o = n(179360),
+  a = n(897285),
   s = n(300213),
   c = n(554747),
   u = n(499137),
@@ -59,11 +59,11 @@ function I(e) {
     U = (0, c.Vm)(n),
     G = (0, l.e7)([f.Z], () => null != f.Z.getActiveGuildSignUp(n));
   if (i.useEffect(() => {
-      o.Z.getGuildEventsForCurrentUser(n)
+      a.Z.getGuildEventsForCurrentUser(n)
     }, [n]), i.useEffect(() => {
       let e = -1;
       return Z && (e = window.setTimeout(() => {
-        null != n && (0, a.C0)(n)
+        null != n && (0, o.C0)(n)
       }, 30 * Math.random() * O.Z.Millis.SECOND)), () => {
         window.clearTimeout(e)
       }

@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(481060),
   l = n(45966),
   o = n(637853),
-  c = n(889369),
-  A = n(974513),
+  A = n(889369),
+  c = n(974513),
   d = n(290511),
   u = n(388032),
   g = n(652212);
@@ -20,7 +20,7 @@ function f(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, f = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), m = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [p, h] = (0, o.VF)(t, m), [C, b] = (0, A.OA)(t, [...m]), v = f ? b.length : h.length, x = f ? C.length : p.length, N = v < d.md, j = x >= d.X, E = b.length - h.length, I = (0, r.jsx)(a.owK, {
+  } = e, f = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), m = (0, i.e7)([A.Z], () => A.Z.editedDefaultChannelIds), [p, h] = (0, o.VF)(t, m), [C, b] = (0, c.OA)(t, [...m]), v = f ? b.length : h.length, x = f ? C.length : p.length, N = v < d.md, j = x >= d.X, E = b.length - h.length, I = (0, r.jsx)(a.owK, {
     size: "sm",
     color: s.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: s.Z.unsafe_rawColors.WHITE_100.css,

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(456935),
-  c = n(259580),
-  A = n(981631),
+  A = n(259580),
+  c = n(981631),
   d = n(388032),
   u = n(713401);
 
@@ -74,7 +74,7 @@ function g(e) {
           variant: "text-xs/medium",
           color: "interactive-normal",
           className: u.valuePill,
-          children: [s === A.sFg.VERY_HIGH ? (0, r.jsx)(l.AtH, {
+          children: [s === c.sFg.VERY_HIGH ? (0, r.jsx)(l.AtH, {
             size: "custom",
             color: "currentColor",
             width: 16,
@@ -87,10 +87,10 @@ function g(e) {
           }), g]
         })
       })]
-    }), (0, r.jsx)(c.Z, {
+    }), (0, r.jsx)(A.Z, {
       height: 24,
       width: 24,
-      direction: c.Z.Directions.RIGHT,
+      direction: A.Z.Directions.RIGHT,
       className: u.caret
     })]
   })

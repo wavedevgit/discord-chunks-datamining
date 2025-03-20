@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(91192),
   o = n(442837),
-  c = n(780384),
-  A = n(481060),
+  A = n(780384),
+  c = n(481060),
   d = n(726542),
   u = n(100527),
   g = n(933557),
@@ -69,12 +69,12 @@ class B extends i.PureComponent {
     return (0, r.jsxs)("span", {
       onContextMenu: t,
       className: y.userHook,
-      children: [(0, r.jsx)(A.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         children: x.ZP.getUserTag(e, {
           mode: "username"
         })
-      }), "0" !== e.discriminator && (0, r.jsxs)(A.Text, {
+      }), "0" !== e.discriminator && (0, r.jsxs)(c.Text, {
         variant: "text-xs/normal",
         className: y.discrim,
         children: ["#", e.discriminator]
@@ -96,32 +96,32 @@ let D = i.forwardRef((e, t) => {
     onTargetContextMenu: L,
     onUserContextMenu: R,
     theme: Q
-  } = e, Z = function() {
+  } = e, W = function() {
     let {
       changes: e
     } = i;
     return (i.actionType !== I.vB8.DELETE || i.action === I.rsA.MEMBER_BAN_ADD || i.action === I.rsA.MEMBER_KICK || i.action === I.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, E.xO)(i, e))
-  }(), W = y.headerDefault;
-  o ? W = y.headerExpanded : Z && (W = y.headerClickable);
+  }(), Z = y.headerDefault;
+  o ? Z = y.headerExpanded : W && (Z = y.headerClickable);
   let k = i.timestampStart.calendar(),
     M = i.timestampEnd.calendar();
-  n = k === M ? (0, r.jsx)(A.Text, {
+  n = k === M ? (0, r.jsx)(c.Text, {
     className: y.timestamp,
     variant: "text-sm/normal",
     children: k
-  }) : (0, r.jsxs)(A.Text, {
+  }) : (0, r.jsxs)(c.Text, {
     className: y.timestamp,
     variant: "text-sm/normal",
     children: [k, "—", M]
   });
-  let _ = Z ? S : I.dG4;
+  let _ = W ? S : I.dG4;
   return (0, r.jsx)(l.mh, {
     id: i.id,
     children: e => (0, r.jsxs)("div", {
       ref: t,
       className: a()(y.auditLog, s),
-      children: [(0, r.jsxs)(A.P3F, P(w({
-        className: W,
+      children: [(0, r.jsxs)(c.P3F, P(w({
+        className: Z,
         "aria-expanded": o,
         onClick: _
       }, e), {
@@ -137,7 +137,7 @@ let D = i.forwardRef((e, t) => {
               integration_type: n
             }
           } = i;
-          if (null != e && null != t) return (0, r.jsx)(A.yRy, {
+          if (null != e && null != t) return (0, r.jsx)(c.yRy, {
             preload: () => (0, f.Z)(t, e.getAvatarURL(p, 80), {
               guildId: p
             }),
@@ -148,26 +148,26 @@ let D = i.forwardRef((e, t) => {
             })),
             children: e => {
               var t;
-              return (0, r.jsx)(A.qEK, P(w({}, e), {
+              return (0, r.jsx)(c.qEK, P(w({}, e), {
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: y.avatar,
                 src: i.action === I.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === I.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === I.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === I.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, N.j)() : null === (t = i.user) || void 0 === t ? void 0 : t.getAvatarURL(p, 40),
                 "aria-hidden": !0,
-                size: A.EFr.SIZE_40
+                size: c.EFr.SIZE_40
               }))
             }
           });
           if (null != n) {
             let e = d.Z.get(n);
             if (null != e) {
-              let t = (0, c.wj)(Q) ? e.icon.darkSVG : e.icon.lightSVG;
-              return (0, r.jsx)(A.qEK, {
+              let t = (0, A.wj)(Q) ? e.icon.darkSVG : e.icon.lightSVG;
+              return (0, r.jsx)(c.qEK, {
                 className: y.avatar,
                 src: t,
                 "aria-hidden": !0,
-                size: A.EFr.SIZE_40
+                size: c.EFr.SIZE_40
               })
             }
           }
@@ -217,7 +217,7 @@ let D = i.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), Z ? (0, r.jsx)(v.Z, {
+        }), W ? (0, r.jsx)(v.Z, {
           className: y.expand,
           foreground: y.expandForeground,
           expanded: o,

@@ -195,10 +195,7 @@ let S = i.memo(function(e) {
       src: n
     })
   });
-  let eu = (0, s.e7)([c.Z], () => c.Z.useReducedMotion),
-    {
-      enabled: ed
-    } = (0, l.bWb)();
+  let eu = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: a()(b.container, {
       [b.playing]: j
@@ -216,13 +213,9 @@ let S = i.memo(function(e) {
       onClick: z,
       "aria-label": ec,
       children: (0, r.jsx)(el, {
-        className: a()(b.playIcon, {
-          [b.oldPlayIconSpacing]: !ed && !j
-        }),
-        size: "custom",
+        className: b.playIcon,
         color: "currentColor",
-        width: 18,
-        height: 18
+        size: "sm"
       })
     }), (0, r.jsx)(m.Z, {
       className: b.waveform,

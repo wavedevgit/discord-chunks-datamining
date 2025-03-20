@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => W
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(204875),
   l = n(715796),
   o = n(434404),
-  c = n(999382),
-  A = n(962086),
+  A = n(999382),
+  c = n(962086),
   d = n(225675),
   u = n(703656),
   g = n(577275),
@@ -41,7 +41,7 @@ function R(e) {
   let {
     application: t,
     guild: n
-  } = e, s = (0, C.YB)(n.id), a = (0, C.qi)(n.id), l = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.e7)([f.Z], () => f.Z.getRoles(n.id)), c = a.map(e => o[e.role_id]).some(e => null != e && 0 !== e.color), A = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.hasFeature(B.oNc.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+  } = e, s = (0, C.YB)(n.id), a = (0, C.qi)(n.id), l = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.e7)([f.Z], () => f.Z.getRoles(n.id)), A = a.map(e => o[e.role_id]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.hasFeature(B.oNc.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: S.NW.string(S.t.p2Rsdn),
     items: [{
       description: S.NW.string(S.t.zbO7fX),
@@ -66,10 +66,10 @@ function R(e) {
       completed: l
     }, {
       description: S.NW.string(S.t["+amv5e"]),
-      completed: c
+      completed: A
     }, {
       description: S.NW.string(S.t["/P03Cw"]),
-      completed: A
+      completed: c
     }]
   }];
   return (0, r.jsx)(O.Z, {
@@ -101,12 +101,12 @@ function Q(e) {
   }) : null
 }
 
-function Z(e) {
+function W(e) {
   let t, {
       guild: n,
       application: s
     } = e,
-    a = (0, i.e7)([c.Z], () => c.Z.getProps().subsection),
+    a = (0, i.e7)([A.Z], () => A.Z.getProps().subsection),
     o = null != s && n.hasFeature(B.oNc.ROLE_SUBSCRIPTIONS_ENABLED);
   return (0, l.P)(n), t = o ? a === B.KsC.ROLE_SUBSCRIPTION_EMOJI ? w.ue.EMOJIS : w.ue.TIERS : w.ue.PAYMENT, (0, r.jsx)(h.l, {
     guildId: n.id,
@@ -115,7 +115,7 @@ function Z(e) {
       guildId: n.id,
       children: (0, r.jsx)(w.M7, {
         initialTab: t,
-        children: (0, r.jsx)(W, {
+        children: (0, r.jsx)(Z, {
           guild: n,
           application: s
         })
@@ -124,12 +124,12 @@ function Z(e) {
   })
 }
 
-function W(e) {
+function Z(e) {
   let t, {
       guild: n,
       application: l
     } = e,
-    c = null != l && n.hasFeature(B.oNc.ROLE_SUBSCRIPTIONS_ENABLED),
+    A = null != l && n.hasFeature(B.oNc.ROLE_SUBSCRIPTIONS_ENABLED),
     {
       currentTab: g,
       setCurrentTab: C
@@ -138,14 +138,14 @@ function W(e) {
     j = (0, i.e7)([m.default], () => m.default.getCurrentUser()),
     O = (0, x.Z)(n.id),
     T = n.isOwner(j),
-    Z = () => {
+    W = () => {
       let e = f.Z.getRole(n.id, n.getEveryoneRoleId());
       if (null == e) return;
       o.Z.close();
       let t = {
         [e.id]: e
       };
-      (0, A.iD)(n.id, {
+      (0, c.iD)(n.id, {
         type: d.z.SERVER_SHOP,
         roles: t,
         initialTab: "role_subscriptions",
@@ -189,7 +189,7 @@ function W(e) {
         children: S.NW.string(S.t.KyGv0t)
       }), (0, r.jsx)(N.Z, {
         guild: n
-      }), c && (0, r.jsx)(Q, {
+      }), A && (0, r.jsx)(Q, {
         application: l
       }), (0, r.jsxs)("div", {
         className: L.tabBarContainer,
@@ -203,24 +203,24 @@ function W(e) {
           children: [(0, r.jsx)(a.Z, {
             id: w.ue.BASIC_INFO,
             disabledTooltip: S.NW.string(S.t.NVDuUV),
-            disabled: !c,
+            disabled: !A,
             children: S.NW.string(S.t["/CfKoK"])
           }), (0, r.jsx)(a.Z, {
             id: w.ue.TIERS,
             disabledTooltip: S.NW.string(S.t.NVDuUV),
-            disabled: !c,
+            disabled: !A,
             children: S.NW.string(S.t.pXbGYW)
           }), (0, r.jsx)(a.Z, {
             id: w.ue.EMOJIS,
             disabledTooltip: S.NW.string(S.t.NVDuUV),
-            disabled: !c,
+            disabled: !A,
             children: S.NW.string(S.t.XBkDoK)
           }), T ? (0, r.jsx)(s.njP.Item, {
             className: L.__invalid_tabBarItem,
             id: w.ue.PAYMENT,
             children: S.NW.string(S.t.p2Rsdn)
           }) : null]
-        }), c && (0, r.jsx)("div", {
+        }), A && (0, r.jsx)("div", {
           className: L.previewButton,
           children: (0, r.jsx)(s.ua7, {
             text: S.NW.string(S.t["1wCH4O"]),
@@ -233,7 +233,7 @@ function W(e) {
                 disabled: O,
                 onMouseEnter: O ? t : void 0,
                 onMouseLeave: O ? n : void 0,
-                onClick: Z,
+                onClick: W,
                 color: s.zxk.Colors.PRIMARY,
                 size: s.zxk.Sizes.SMALL,
                 grow: !O,

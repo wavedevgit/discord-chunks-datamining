@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(468363),
   l = n(297369),
-  a = n(956221),
-  o = n(771173),
+  o = n(956221),
+  a = n(771173),
   s = n(51144),
   c = n(388032),
   u = n(64064);
@@ -25,7 +25,7 @@ let d = function(e) {
     location: "StatusText"
   }), {
     voiceChannel: m
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     userId: null == h ? void 0 : h.id,
     surface: "status-text"
   }), b = g ? m : void 0;
@@ -37,7 +37,7 @@ let d = function(e) {
     status: p,
     applicationStream: d,
     voiceChannel: b
-  }) ? (0, r.jsx)(o.Z, {
+  }) ? (0, r.jsx)(a.Z, {
     location: "StatusText",
     textClassName: u.text,
     emojiClassName: u.customStatusEmoji,

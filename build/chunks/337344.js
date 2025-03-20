@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(225675),
   l = n(671533),
   o = n(434404),
-  c = n(981631),
-  A = n(388032),
+  A = n(981631),
+  c = n(388032),
   d = n(464303);
 
 function u(e) {
@@ -20,11 +20,11 @@ function u(e) {
     role: n
   } = e;
   return (0, r.jsxs)(i.xJW, {
-    title: A.NW.string(A.t.arFPfH),
+    title: c.NW.string(c.t.arFPfH),
     className: d.container,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: A.NW.string(A.t["IT/0AA"])
+      children: c.NW.string(c.t["IT/0AA"])
     }), (0, r.jsxs)(i.zxk, {
       className: d.button,
       innerClassName: d.buttonInner,
@@ -36,10 +36,10 @@ function u(e) {
           roles: {
             [n.id]: n
           },
-          returnToSection: c.pNK.ROLES
+          returnToSection: A.pNK.ROLES
         })
       },
-      children: [A.NW.string(A.t.arFPfH), (0, r.jsx)(l.Z, {
+      children: [c.NW.string(c.t.arFPfH), (0, r.jsx)(l.Z, {
         width: 16,
         height: 16,
         direction: l.Z.Directions.RIGHT,

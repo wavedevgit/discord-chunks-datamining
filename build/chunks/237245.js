@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(852860),
   o = n(881052),
-  c = n(456268),
-  A = n(863249),
+  A = n(456268),
+  c = n(863249),
   d = n(246364),
   u = n(983736),
   g = n(571728),
@@ -70,13 +70,13 @@ function O(e) {
     guildId: O.id
   })) && void 0 !== t ? t : 0, Q = i.useCallback(() => {
     S(null), m.Z.init(P, x.pNK.ACCESS)
-  }, [P]), Z = i.useCallback(async e => {
+  }, [P]), W = i.useCallback(async e => {
     try {
       D(!0), await e(), S(null)
     } finally {
       D(!1)
     }
-  }, []), W = i.useCallback(async e => {
+  }, []), Z = i.useCallback(async e => {
     try {
       await m.Z.saveGuild(P, e, {
         throwErr: !0
@@ -88,7 +88,7 @@ function O(e) {
     }
   }, [P]), k = i.useCallback(async (e, t) => {
     try {
-      await A.ZP.updateVerificationForm(P, e, t)
+      await c.ZP.updateVerificationForm(P, e, t)
     } catch (e) {
       throw S(new o.Hx(e).getAnyErrorMessage()), e
     }
@@ -106,10 +106,10 @@ function O(e) {
         requireTerms: e,
         termRules: t = []
       } = s, n = t.map(e => e.value.trim()).filter(e => "" !== e);
-      Z(async () => {
+      W(async () => {
         if (O.hasFeature(x.oNc.DISCOVERABLE)) {
           let e = new Set(O.features);
-          e.delete(x.oNc.DISCOVERABLE), await W({
+          e.delete(x.oNc.DISCOVERABLE), await Z({
             features: e
           })
         }
@@ -120,10 +120,10 @@ function O(e) {
         pendingVerificationFields: e
       } = s;
       if (null == e) return;
-      Z(async () => {
+      W(async () => {
         if (O.hasFeature(x.oNc.DISCOVERABLE)) {
           let e = new Set(O.features);
-          e.delete(x.oNc.DISCOVERABLE), await W({
+          e.delete(x.oNc.DISCOVERABLE), await Z({
             features: e
           })
         }
@@ -136,18 +136,18 @@ function O(e) {
         requireTerms: e,
         termRules: t = []
       } = s, n = t.map(e => e.value.trim()).filter(e => "" !== e);
-      Z(async () => {
+      W(async () => {
         if (p.verificationDirty && await M(e, n), p.guildDirty) {
           (0, h.UA)(O, C);
           let e = new Set(O.features);
-          e.add(x.oNc.DISCOVERABLE), e.delete(x.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await W({
+          e.add(x.oNc.DISCOVERABLE), e.delete(x.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await Z({
             features: e,
             discoverySplash: O.discoverySplash,
             description: O.description,
             preferredLocale: O.preferredLocale
           });
           try {
-            await (0, c.Vv)(E({
+            await (0, A.Vv)(E({
               guildId: O.id
             }, y))
           } catch (e) {
@@ -156,7 +156,7 @@ function O(e) {
         }
       })
     }
-  }, [s, Z, O, p, W, M, w, k, C, y]), G = i.useCallback(() => {
+  }, [s, W, O, p, Z, M, w, k, C, y]), G = i.useCallback(() => {
     let e = e => {
         if (s.joinType === b.A.DISCOVERABLE && s.settingsView === v.U.ELIGIBLE_DISABLED) {
           (0, a.ZDy)(async () => {

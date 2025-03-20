@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(529103),
   u = n(194359),
@@ -98,10 +98,10 @@ let k = function(e) {
   } = (0, h.ZP)(p.Z.FRIENDS_LIST), {
     rows: l,
     section: c
-  } = (0, o.cj)([_.ZP], () => _.ZP.getState()), L = (0, o.e7)([E.Z], () => E.Z.isFocused()), {
+  } = (0, a.cj)([_.ZP], () => _.ZP.getState()), L = (0, a.e7)([E.Z], () => E.Z.isFocused()), {
     relationshipCount: k,
     hasBlockedOrIgnored: M
-  } = (0, o.cj)([b.Z], () => ({
+  } = (0, a.cj)([b.Z], () => ({
     relationshipCount: b.Z.getRelationshipCount(),
     hasBlockedOrIgnored: b.Z.getBlockedOrIgnoredIDs().length > 0
   })), U = (0, g.wn)({
@@ -238,7 +238,7 @@ let k = function(e) {
     children: (0, r.jsxs)(d.Z, {
       section: P.jXE.FRIENDS_LIST,
       children: [M && (0, r.jsx)(I.R, {}), (0, r.jsx)(s.E1j, {
-        className: a()(A.searchBar, et ? A.searchEmptyState : null),
+        className: o()(A.searchBar, et ? A.searchEmptyState : null),
         query: G[c],
         onChange: B,
         onClear: H,

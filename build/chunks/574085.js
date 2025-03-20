@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(727843),
   l = n(290348),
   o = n(764163),
-  c = n(861345),
-  A = n(293810),
+  A = n(861345),
+  c = n(293810),
   d = n(388032);
 
 function u(e) {
@@ -63,14 +63,14 @@ function f() {
       description: i,
       emoji_id: s,
       emoji_name: a,
-      ref_type: A.Qs.INTANGIBLE,
+      ref_type: c.Qs.INTANGIBLE,
       ref_id: void 0
     };
     null != t ? l[t] = o : l.push(o), f(l)
   }
   let p = (0, s.mY)();
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.p, {
+    children: [(0, r.jsx)(A.p, {
       benefits: n,
       onEdit: function(e) {
         (0, i.h7j)(i => (0, r.jsx)(o.DI, g(u({}, i), {
@@ -91,7 +91,7 @@ function f() {
       guildId: t
     }), n.length > 0 ? (0, r.jsx)(i.LZC, {
       size: 8
-    }) : null, (0, r.jsx)(c.s, {
+    }) : null, (0, r.jsx)(A.s, {
       onClick: function() {
         (0, i.h7j)(e => (0, r.jsx)(o.DI, g(u({}, e), {
           guildId: t,

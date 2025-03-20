@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(727072),
   l = n(85960),
   o = n(676317),
-  c = n(823379),
-  A = n(84613),
+  A = n(823379),
+  c = n(84613),
   d = n(740903),
   u = n(598622),
   g = n(388032),
@@ -47,7 +47,7 @@ function m(e) {
       size: s.zxk.Sizes.SMALL,
       color: s.zxk.Colors.PRIMARY,
       look: s.zxk.Looks.OUTLINED,
-      onClick: () => (0, A.K)(a),
+      onClick: () => (0, c.K)(a),
       children: g.NW.string(g.t.bt75u7)
     })]
   })
@@ -58,7 +58,7 @@ function p(e) {
     guild: t
   } = e;
   (0, a.RD)(t.id);
-  let A = (0, l.Z6)(t.id),
+  let c = (0, l.Z6)(t.id),
     {
       rulesByTriggerType: p
     } = (0, a.pH)(t.id),
@@ -68,9 +68,9 @@ function p(e) {
     } = i.useMemo(() => {
       let e = 0,
         t = 0;
-      return null == p || Object.values(A).flat().forEach(n => {
+      return null == p || Object.values(c).flat().forEach(n => {
         var r;
-        let i = null === (r = p[n]) || void 0 === r ? void 0 : r.filter(c.lm);
+        let i = null === (r = p[n]) || void 0 === r ? void 0 : r.filter(A.lm);
         if (null == i || 0 === i.length) {
           t++;
           return
@@ -82,7 +82,7 @@ function p(e) {
         numEnabledRules: e,
         numRules: t
       }
-    }, [A, p]),
+    }, [c, p]),
     b = (0, u.Q)(t),
     v = b[d.u.CAPTCHA_AND_RAID_PROTECTION],
     x = b[d.u.DM_AND_SPAM_PROTECTION],

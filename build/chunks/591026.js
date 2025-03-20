@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(467319),
   l = n(456677),
   o = n(55889),
-  c = n(300453),
-  A = n(620436),
+  A = n(300453),
+  c = n(620436),
   d = n(273504),
   u = n(388032),
   g = n(94575);
@@ -55,7 +55,7 @@ function p(e) {
   } = e, [C, b] = i.useState(null === (t = p.triggerMetadata) || void 0 === t ? void 0 : t.mentionTotalLimit), v = (0, a.a)(p.guildId, !1);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
-    children: [(0, r.jsxs)(c.Z, {
+    children: [(0, r.jsxs)(A.Z, {
       step: 1,
       header: u.NW.string(u.t.IGfuTU),
       children: [(0, r.jsxs)("div", {
@@ -129,18 +129,18 @@ function p(e) {
           })
         })]
       }) : null]
-    }), (0, r.jsx)(A.Z, {
-      type: A.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
+      type: c.Z.Type.ARROW_DOWN
+    }), (0, r.jsx)(A.Z, {
       step: 2,
       header: u.NW.string(u.t["18TOiY"]),
       children: (0, r.jsx)(l.Z, {
         rule: p,
         onChangeRule: h
       })
-    }), (0, r.jsx)(A.Z, {
-      type: A.Z.Type.CROSS
     }), (0, r.jsx)(c.Z, {
+      type: c.Z.Type.CROSS
+    }), (0, r.jsx)(A.Z, {
       step: 3,
       header: u.NW.string(u.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {

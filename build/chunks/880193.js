@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(313201),
   o = n(345861),
-  c = n(208567),
-  A = n(937615),
+  A = n(208567),
+  c = n(937615),
   d = n(289393),
   u = n(723047),
   g = n(727843),
@@ -38,7 +38,7 @@ function x(e) {
     var e;
     return null !== (e = null == t ? void 0 : t.map(e => ({
       value: e,
-      label: (0, A.T4)(e, h.pKx.USD)
+      label: (0, c.T4)(e, h.pKx.USD)
     }))) && void 0 !== e ? e : []
   }, [t]);
 
@@ -47,8 +47,8 @@ function x(e) {
   }
   let R = (0, u.mY)(),
     Q = (0, l.Dt)(),
-    Z = (0, l.Dt)(),
-    W = (0, l.Dt)();
+    W = (0, l.Dt)(),
+    Z = (0, l.Dt)();
   return (0, r.jsxs)(p.Z, {
     title: C.NW.string(C.t.iHU439),
     intiallyExpanded: !0,
@@ -73,7 +73,7 @@ function x(e) {
         className: v.formSplitHalf,
         children: (0, r.jsx)(a.hjN, {
           title: C.NW.string(C.t.Ibl4BQ),
-          titleId: Z,
+          titleId: W,
           disabled: R,
           children: (0, r.jsx)(a.q4e, {
             options: S,
@@ -84,7 +84,7 @@ function x(e) {
             onChange: I,
             maxVisibleItems: 5,
             look: a.qQH.CUSTOM,
-            "aria-labelledby": Z
+            "aria-labelledby": W
           })
         })
       })]
@@ -92,7 +92,7 @@ function x(e) {
       size: 24
     }), (0, r.jsx)(a.hjN, {
       title: C.NW.string(C.t["1w2WcX"]),
-      titleId: W,
+      titleId: Z,
       disabled: R,
       children: (0, r.jsx)(a.Kx8, {
         placeholder: C.NW.string(C.t.p7Jr4O),
@@ -101,7 +101,7 @@ function x(e) {
         autosize: !0,
         className: b.formInput,
         onChange: y,
-        "aria-labelledby": W,
+        "aria-labelledby": Z,
         disabled: R
       })
     }), (0, r.jsx)(a.LZC, {
@@ -125,7 +125,7 @@ function x(e) {
           look: a.zxk.Looks.OUTLINED,
           color: a.zxk.Colors.PRIMARY
         })]
-      }), (0, r.jsx)(c.Z, {
+      }), (0, r.jsx)(A.Z, {
         image: w,
         hint: B,
         showIcon: !0,

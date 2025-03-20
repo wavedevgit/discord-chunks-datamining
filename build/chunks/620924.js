@@ -5,18 +5,18 @@ n.d(t, {
 var r = n(442837),
   i = n(91159),
   l = n(306680),
-  a = n(709054),
-  o = n(868807);
+  o = n(709054),
+  a = n(868807);
 
 function s(e) {
-  let t = (0, o.a)(e),
+  let t = (0, a.a)(e),
     n = function(e) {
       let {
         lastMessageId: t,
         message: n,
         loaded: r
       } = e;
-      return r && null != n ? a.default.extractTimestamp(n.id) : null != t ? a.default.extractTimestamp(t) : null
+      return r && null != n ? o.default.extractTimestamp(n.id) : null != t ? o.default.extractTimestamp(t) : null
     }(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

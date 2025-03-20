@@ -11,8 +11,8 @@ var r = n(192379),
 function l(e, t, n) {
   var l, o;
   let {
-    isLoading: c,
-    error: A,
+    isLoading: A,
+    error: c,
     highlightedCreatorDetails: d
   } = (0, s.Z)(e), u = null == d ? void 0 : d.store_page, g = r.useMemo(() => {
     var e, t;
@@ -31,10 +31,10 @@ function l(e, t, n) {
     id: e,
     icon: f,
     size: n
-  }), p = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), h = null != g && g.length > t ? g.length - t : null, C = null == d ? void 0 : d.slug, b = null != C ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(C) : void 0, v = null == u ? void 0 : null === (l = u.guild) || void 0 === l ? void 0 : l.name, x = null == u ? void 0 : null === (o = u.role_subscription) || void 0 === o ? void 0 : o.subscriber_count, N = !c && null != v && null != f && null != m;
+  }), p = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), h = null != g && g.length > t ? g.length - t : null, C = null == d ? void 0 : d.slug, b = null != C ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(C) : void 0, v = null == u ? void 0 : null === (l = u.guild) || void 0 === l ? void 0 : l.name, x = null == u ? void 0 : null === (o = u.role_subscription) || void 0 === o ? void 0 : o.subscriber_count, N = !A && null != v && null != f && null != m;
   return N ? {
     hasAllImperativeDetails: N,
-    isLoading: c,
+    isLoading: A,
     details: {
       guildName: v,
       guildIcon: f,
@@ -46,7 +46,7 @@ function l(e, t, n) {
     }
   } : {
     hasAllImperativeDetails: N,
-    isLoading: c,
-    error: A
+    isLoading: A,
+    error: c
   }
 }

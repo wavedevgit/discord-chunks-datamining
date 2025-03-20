@@ -2,7 +2,6 @@
 "use strict";
 var r = {
   icon: "icon_dfa67d",
-  notAllowedIcon: "notAllowedIcon_dfa67d icon_dfa67d",
   shopIcon: "shopIcon_dfa67d icon_dfa67d",
   presetDecorationImg: "presetDecorationImg_dfa67d",
   decorationGridItem: "decorationGridItem_dfa67d",

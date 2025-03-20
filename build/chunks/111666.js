@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(642128),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(570140),
   c = n(868781),
   u = n(540059),
@@ -23,33 +23,33 @@ var r = n(200651),
 function O(e) {
   let {
     className: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.getPendingCount() > 0), g = (0, u.Q3)("FriendsButton"), O = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), N = function() {
+  } = e, n = (0, o.e7)([h.Z], () => h.Z.getPendingCount() > 0), g = (0, u.Q3)("FriendsButton"), O = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE), N = function() {
     let [e, t] = i.useState(null), n = i.useRef({}), r = i.useRef(null);
     return i.useEffect(() => {
       let e = e => {
         if ("PRESENCE_UPDATES" !== e.type) return;
         let i = null;
         for (let t of e.updates) {
-          var l, a;
+          var l, o;
           let e = t.user.id;
           if (!h.Z.isFriend(e)) continue;
           let r = f.default.getUser(e);
           if (null == r) continue;
-          let o = p.Z.getPrimaryActivity(e);
-          if (null == o) {
+          let a = p.Z.getPrimaryActivity(e);
+          if (null == a) {
             null != n.current[e] && delete n.current[e];
             continue
           }
-          let s = o.type;
-          if (null != s && (a = s) !== b.IIU.PLAYING && a !== b.IIU.LISTENING && a !== b.IIU.WATCHING) {
+          let s = a.type;
+          if (null != s && (o = s) !== b.IIU.PLAYING && o !== b.IIU.LISTENING && o !== b.IIU.WATCHING) {
             null != n.current[e] && delete n.current[e];
             continue
           }
-          let c = "".concat(s, "-").concat(null !== (l = o.name) && void 0 !== l ? l : "");
+          let c = "".concat(s, "-").concat(null !== (l = a.name) && void 0 !== l ? l : "");
           if (n.current[e] !== c) {
             n.current[e] = c, i = {
               user: r,
-              activity: o
+              activity: a
             };
             break
           }
@@ -62,7 +62,7 @@ function O(e) {
         s.Z.unsubscribe("PRESENCE_UPDATES", e), null != r.current && (window.clearTimeout(r.current), r.current = null)
       }
     }, []), e
-  }(), v = (0, o.Yzy)(N, {
+  }(), v = (0, a.Yzy)(N, {
     keys: e => null != e ? "".concat(e.user.id, "-").concat(e.activity.state, ":").concat(e.activity.details, ":").concat(e.activity.name) : "none",
     from: {
       opacity: 0,
@@ -89,7 +89,7 @@ function O(e) {
         return null == t ? null : (0, r.jsxs)(l.animated.div, {
           className: E.activityWrapper,
           style: e,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",
             children: null !== (n = t.user.globalName) && void 0 !== n ? n : t.user.username
           }), (0, r.jsx)(c.Z, {
@@ -102,8 +102,8 @@ function O(e) {
       popoutPosition: "bottom",
       popoutAlign: "left",
       children: (e, i, l) => {
-        var a, s;
-        return (0, r.jsx)(d.JO, (a = function(e) {
+        var o, s;
+        return (0, r.jsx)(d.JO, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -123,13 +123,13 @@ function O(e) {
         }({}, l), s = s = {
           className: t,
           onClick: e,
-          icon: o.iFz,
+          icon: a.iFz,
           iconSize: g ? O : void 0,
           "aria-label": _.NW.string(_.t.TdEu5e),
           tooltip: i ? null : _.NW.string(_.t.TdEu5e),
           selected: i,
           showBadge: n
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -137,8 +137,8 @@ function O(e) {
           }
           return n
         })(Object(s)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
-        }), a))
+          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
+        }), o))
       }
     })]
   })

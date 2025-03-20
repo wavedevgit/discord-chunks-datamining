@@ -11,8 +11,8 @@ var r = n(570140),
   a = n(45966),
   l = n(637853),
   o = n(592125),
-  c = n(823379),
-  A = n(889369),
+  A = n(823379),
+  c = n(889369),
   d = n(570961),
   u = n(208665),
   g = n(290511),
@@ -31,7 +31,7 @@ function p(e) {
   })
 }
 async function h(e) {
-  let t = Array.from(A.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
+  let t = Array.from(c.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = u.Z.advancedMode,
     [m, p] = (0, l.d9)(e.id, [...t]),
     h = (0, l.kl)(e.id, t, u.Z.editedOnboardingPrompts),
@@ -43,7 +43,7 @@ async function h(e) {
     });
     return
   }
-  if (A.Z.hasChanges()) {
+  if (c.Z.hasChanges()) {
     r.Z.dispatch({
       type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SUBMIT"
     });
@@ -63,7 +63,7 @@ async function h(e) {
       } = null !== (b = new s.Hx(n).getAnyErrorMessageAndField()) && void 0 !== b ? b : {};
       i.Z.show({
         title: f.NW.string(f.t.iLdiqa),
-        body: [e, t].filter(c.lm).join(": ")
+        body: [e, t].filter(A.lm).join(": ")
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"
       })

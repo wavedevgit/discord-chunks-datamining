@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(692547),
-  c = n(481060),
-  A = n(142497),
+  A = n(481060),
+  c = n(142497),
   d = n(338327),
   u = n(496675),
   g = n(63063),
@@ -59,7 +59,7 @@ function y(e, t) {
   }), e
 }
 let w = () => [{
-    icon: c.IeX,
+    icon: A.IeX,
     color: o.Z.unsafe_rawColors.GREEN_360.css,
     header: p.NW.string(p.t.oVQF29),
     body: p.NW.format(p.t.A6G7am, {
@@ -69,14 +69,14 @@ let w = () => [{
       }, t)
     })
   }, {
-    icon: c.IeX,
+    icon: A.IeX,
     color: o.Z.unsafe_rawColors.PARTNER.css,
     header: p.NW.string(p.t["0rJl9/"]),
     body: p.NW.format(p.t.XsCNk5, {
-      infoHook: () => (0, r.jsx)(c.ua7, {
+      infoHook: () => (0, r.jsx)(A.ua7, {
         text: p.NW.string(p.t.kPJlTk),
         "aria-label": p.NW.string(p.t.kPJlTk),
-        children: e => (0, r.jsx)(c.d3s, O({
+        children: e => (0, r.jsx)(A.d3s, O({
           size: "xs",
           color: "currentColor",
           className: h.infoIcon
@@ -88,7 +88,7 @@ let w = () => [{
       }, t)
     })
   }, {
-    icon: c.d3s,
+    icon: A.d3s,
     color: o.Z.unsafe_rawColors.RED_360.css,
     header: p.NW.string(p.t.W2kLJC),
     body: p.NW.string(p.t.hyNkHx)
@@ -142,11 +142,11 @@ let w = () => [{
           height: i,
           size: "custom"
         })
-      }), (0, r.jsx)(c.X6q, {
+      }), (0, r.jsx)(A.X6q, {
         variant: "heading-md/semibold",
         className: h.featureHeader,
         children: s
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: a
@@ -161,7 +161,7 @@ let w = () => [{
       faded: s,
       rightAlign: l,
       imageCoordinates: o
-    } = e, A = {
+    } = e, c = {
       [l ? "right" : "left"]: o[0] + i[0],
       top: o[1] + i[1]
     };
@@ -169,7 +169,7 @@ let w = () => [{
       className: a()(h.guildDetails, {
         [h.faded]: s
       }),
-      style: A,
+      style: c,
       children: [(0, r.jsx)("div", {
         className: h.guildIcon,
         children: (0, r.jsx)("img", {
@@ -178,7 +178,7 @@ let w = () => [{
           width: 24,
           height: 24
         })
-      }), (0, r.jsx)(c.X6q, {
+      }), (0, r.jsx)(A.X6q, {
         variant: "heading-deprecated-12/semibold",
         children: n
       })]
@@ -191,7 +191,7 @@ let w = () => [{
     i.useEffect(() => {
       null != j && s(j / 2), null != E && o(E / 2)
     }, [j, E, s, o]), i.useEffect(() => {
-      (0, A.Kw)(m.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
+      (0, c.Kw)(m.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []);
     let I = () => {
       d.Z.open()
@@ -213,20 +213,20 @@ let w = () => [{
           src: b,
           className: h.sparkles
         })]
-      }), (0, r.jsx)(c.X6q, {
+      }), (0, r.jsx)(A.X6q, {
         variant: "heading-xl/semibold",
         children: p.NW.string(p.t["M/gBcH"])
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
         className: h.body,
         children: p.NW.format(p.t["52EgsL"], {
           helpdeskArticle: g.Z.getArticleURL(f.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
-      }), (0, r.jsx)(c.ua7, {
+      }), (0, r.jsx)(A.ua7, {
         text: N ? null : p.NW.string(p.t["pjG+T0"]),
         "aria-label": N ? void 0 : p.NW.string(p.t["pjG+T0"]),
-        children: e => (0, r.jsx)(c.zxk, y(O({
+        children: e => (0, r.jsx)(A.zxk, y(O({
           onClick: I,
           className: h.button,
           disabled: !N
@@ -235,11 +235,11 @@ let w = () => [{
         }))
       }), (0, r.jsx)("hr", {
         className: h.separator
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: p.NW.string(p.t.OzLWLC)
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: "header-secondary",
         className: h.body,
         variant: "text-sm/normal",

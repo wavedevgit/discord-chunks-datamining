@@ -17,7 +17,7 @@ function s(e, t, n, s) {
     collect: e => ({
       isDragging: e.isDragging()
     })
-  }), [, c] = (0, i.L)({
+  }), [, A] = (0, i.L)({
     accept: t,
     hover(t, r) {
       if (null == e.current) return;
@@ -32,7 +32,7 @@ function s(e, t, n, s) {
   return {
     drag: l,
     dragPreview: o,
-    drop: c,
+    drop: A,
     isDragging: a
   }
 }

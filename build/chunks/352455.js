@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  a = n(481060),
-  o = n(924628),
+  o = n(481060),
+  a = n(924628),
   s = n(230711),
   c = n(548816),
   u = n(981631),
@@ -22,11 +22,11 @@ function f(e) {
   } = e;
   return (0, r.jsxs)(c.Z, {
     className: l()(h.card, t),
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-md/semibold",
       className: h.header,
       children: p.NW.string(p.t.HcbnMD)
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: p.NW.format(p.t.NkFrzM, {
         onPrivacyClick: () => {
@@ -35,15 +35,15 @@ function f(e) {
       })
     }), (0, r.jsxs)("div", {
       className: h.buttonContainer,
-      children: [(0, r.jsx)(a.zxk, {
-        size: a.zxk.Sizes.SMALL,
-        onClick: () => (0, o.g)([u.pjP.PERSONALIZATION], []),
+      children: [(0, r.jsx)(o.zxk, {
+        size: o.zxk.Sizes.SMALL,
+        onClick: () => (0, a.g)([u.pjP.PERSONALIZATION], []),
         children: p.NW.string(p.t.ebojgI)
-      }), (0, r.jsx)(a.zxk, {
-        color: a.zxk.Colors.PRIMARY,
-        size: a.zxk.Sizes.SMALL,
+      }), (0, r.jsx)(o.zxk, {
+        color: o.zxk.Colors.PRIMARY,
+        size: o.zxk.Sizes.SMALL,
         onClick: () => n(d.L.DISMISS),
-        look: a.zxk.Looks.LINK,
+        look: o.zxk.Looks.LINK,
         children: p.NW.string(p.t.f3Pet7)
       })]
     })]

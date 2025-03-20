@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(906732),
   l = n(884858),
   o = n(516129),
-  c = n(768581),
-  A = n(434404),
+  A = n(768581),
+  c = n(434404),
   d = n(949640),
   u = n(981631),
   g = n(30513),
@@ -25,7 +25,7 @@ function h(e) {
   } = e, h = t.hasFeature(u.oNc.INVITE_SPLASH), C = n && h, {
     analyticsLocations: b
   } = (0, a.ZP)(), v = i.useCallback(e => {
-    A.Z.updateGuild({
+    c.Z.updateGuild({
       splash: e
     })
   }, []), x = i.useCallback(e => {
@@ -38,7 +38,7 @@ function h(e) {
     })
   }, [b, t]), N = (0, r.jsx)(o.Z, {
     image: t.splash,
-    makeURL: e => null != e ? c.ZP.getGuildSplashURL({
+    makeURL: e => null != e ? A.ZP.getGuildSplashURL({
       id: t.id,
       splash: e
     }) : null,

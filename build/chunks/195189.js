@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -11,7 +11,7 @@ var i = n(481060),
   l = n(388032),
   o = n(713401);
 
-function c(e) {
+function A(e) {
   let {
     title: t,
     details: n

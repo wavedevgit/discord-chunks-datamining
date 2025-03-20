@@ -11,8 +11,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(392711),
   o = n(442837),
-  c = n(481060),
-  A = n(230711),
+  A = n(481060),
+  c = n(230711),
   d = n(497321),
   u = n(688465),
   g = n(241559),
@@ -75,7 +75,7 @@ function w(e) {
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.NW.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, A.showToast)((0, A.createToast)(E.NW.string(E.t["46Rs3t"]), A.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
     let e = (0, C.IF)(null == t ? void 0 : t.hasFeature(j.oNc.COMMUNITY)).map(e => y(O({}, e), {
@@ -87,11 +87,11 @@ function w(e) {
     className: I.setupContainer,
     children: [(0, r.jsxs)("div", {
       className: I.switchItemTextContent,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(A.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
         children: E.NW.string(E.t.DpRdYG)
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: E.NW.format(E.t.iuRk2t, {})
@@ -111,7 +111,7 @@ function P(e) {
     guild: t,
     className: n,
     withDivider: s = !0
-  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(j.Plq.MANAGE_GUILD, t), [t]), A = i.useCallback(async e => {
+  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(j.Plq.MANAGE_GUILD, t), [t]), c = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -122,7 +122,7 @@ function P(e) {
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.NW.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, A.showToast)((0, A.createToast)(E.NW.string(E.t["46Rs3t"]), A.ToastType.FAILURE))
     }
   }, [t.id]), d = i.useMemo(() => {
     let e = (0, C.MF)(null == t ? void 0 : t.hasFeature(j.oNc.COMMUNITY)).map(e => y(O({}, e), {
@@ -131,17 +131,17 @@ function P(e) {
     return (0, C.LJ)(e)
   }, [t]), u = i.useMemo(() => d.find(e => e.value === (null == t ? void 0 : t.explicitContentFilter)), [t, d]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [s && (0, r.jsx)(c.$i$, {
+    children: [s && (0, r.jsx)(A.$i$, {
       className: I.divider
     }), (0, r.jsxs)("div", {
       className: a()(I.setupContainer, n),
       children: [(0, r.jsxs)("div", {
         className: I.switchItemTextContent,
-        children: [(0, r.jsx)(c.Text, {
+        children: [(0, r.jsx)(A.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
           children: E.NW.string(E.t.Kd6OQU)
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(A.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: E.NW.format(E.t.zOmxND, {
@@ -153,7 +153,7 @@ function P(e) {
         value: null == u ? void 0 : u.value,
         options: d,
         disabled: !l,
-        onChange: A
+        onChange: c
       })]
     })]
   })
@@ -169,13 +169,13 @@ async function B(e, t) {
 function D(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(j.Plq.MANAGE_GUILD, t), [t]), s = t.hasFeature(j.oNc.COMMUNITY), a = (0, g.n2)(t.id), [l, A] = i.useState(t.hasFeature(j.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), d = i.useCallback(async e => {
-    A(e), await B(t, e)
+  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(j.Plq.MANAGE_GUILD, t), [t]), s = t.hasFeature(j.oNc.COMMUNITY), a = (0, g.n2)(t.id), [l, c] = i.useState(t.hasFeature(j.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), d = i.useCallback(async e => {
+    c(e), await B(t, e)
   }, [t]);
   return s || !a ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: I.setupContainer,
-      children: [(0, r.jsx)(c.j7V, {
+      children: [(0, r.jsx)(A.j7V, {
         value: l,
         onChange: d,
         className: I.switchItem,
@@ -183,24 +183,24 @@ function D(e) {
         hideBorder: !0,
         children: (0, r.jsxs)("div", {
           className: I.switchItemTextContent,
-          children: [(0, r.jsxs)(c.Text, {
+          children: [(0, r.jsxs)(A.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
             children: [E.NW.string(E.t.jDarm5), (0, r.jsx)(u.Z, {
               className: I.betaTag
             })]
-          }), (0, r.jsx)(c.Text, {
+          }), (0, r.jsx)(A.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
             children: E.NW.string(E.t["/ee7yM"])
           })]
         })
-      }), (0, r.jsx)(c.Wn, {
-        messageType: c.QYI.INFO,
+      }), (0, r.jsx)(A.Wn, {
+        messageType: A.QYI.INFO,
         textVariant: "text-xs/normal",
         children: E.NW.string(E.t.JxO639)
       })]
-    }), (0, r.jsx)(c.$i$, {
+    }), (0, r.jsx)(A.$i$, {
       className: I.divider
     })]
   })
@@ -227,11 +227,11 @@ function T(e) {
     })
   }, 1e3);
   return s ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.$i$, {
+    children: [(0, r.jsx)(A.$i$, {
       className: I.divider
     }), (0, r.jsxs)("div", {
       className: I.setupContainer,
-      children: [(0, r.jsx)(c.j7V, {
+      children: [(0, r.jsx)(A.j7V, {
         value: g,
         onChange: m,
         className: I.switchItem,
@@ -239,22 +239,22 @@ function T(e) {
         hideBorder: !0,
         children: (0, r.jsxs)("div", {
           className: I.switchItemTextContent,
-          children: [(0, r.jsx)(c.Text, {
+          children: [(0, r.jsx)(A.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
             children: E.NW.string(E.t.lbBfER)
-          }), (0, r.jsx)(c.Text, {
+          }), (0, r.jsx)(A.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
             children: E.NW.string(E.t.REr5AA)
           })]
         })
-      }), u && (0, r.jsx)(c.Wn, {
-        messageType: c.QYI.INFO,
+      }), u && (0, r.jsx)(A.Wn, {
+        messageType: A.QYI.INFO,
         textVariant: "text-xs/normal",
         children: E.NW.format(E.t.Xz1O0d, {
           onClick: function() {
-            A.Z.open(j.oAB.ACCOUNT)
+            c.Z.open(j.oAB.ACCOUNT)
           }
         })
       })]
@@ -267,9 +267,9 @@ function S() {
     guild: e,
     mfaLevel: t
   } = (0, o.cj)([v.Z], () => v.Z.getProps(), []), n = (0, o.e7)([m.Z], () => m.Z.enabled, []);
-  return null == e ? null : n ? (0, r.jsx)(d.Z, {}) : (0, r.jsxs)(c.hjN, {
+  return null == e ? null : n ? (0, r.jsx)(d.Z, {}) : (0, r.jsxs)(A.hjN, {
     title: E.NW.string(E.t["suhY+f"]),
-    tag: c.RB0.H1,
+    tag: A.RB0.H1,
     titleClassName: I.headerContainer,
     children: [(0, r.jsx)(D, {
       guild: e
@@ -280,7 +280,7 @@ function S() {
       mfaLevel: t
     }), (0, r.jsx)(P, {
       guild: e
-    }), (0, r.jsx)(c.$i$, {
+    }), (0, r.jsx)(A.$i$, {
       className: I.divider
     }), (0, r.jsx)("div", {
       className: I.setupContainer,

@@ -54,9 +54,9 @@ let x = e => {
     P || N()
   }, [N, P]), B = i.useCallback((e, t) => {
     I(), S(!P), l === C.D.EMOJI ? null == x || x(void 0) : null == x || x(C.D.EMOJI), (!j || P) && (null == t || t(e))
-  }, [I, P, j, x, l]), H = (j || P) && (l === C.D.EMOJI || null == l);
+  }, [I, P, j, x, l]), F = (j || P) && (l === C.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
-    shouldShow: H,
+    shouldShow: F,
     animation: M ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
     animationPosition: M ? "top" : "bottom",
     position: "bottom",
@@ -70,7 +70,7 @@ let x = e => {
         closePopout: n
       } = e;
       return (0, r.jsx)(_.Z, {
-        isHovered: H,
+        isHovered: F,
         channel: t,
         closePopout: n,
         onMouseEnter: E,

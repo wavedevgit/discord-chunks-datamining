@@ -111,6 +111,7 @@ let I = {
         }
       }), T !== p.Eu4.NONE && (0, r.jsx)(u.Z, {
         tier: T,
+        color: "currentColor",
         className: g.boostedTierIcon
       })]
     });

@@ -6,8 +6,8 @@ n.d(t, {
 var r, i, s, a = n(442837),
   l = n(570140),
   o = n(45966),
-  c = n(734893),
-  A = n(999382),
+  A = n(734893),
+  c = n(999382),
   d = n(392885),
   u = n(740903),
   g = n(889369),
@@ -24,8 +24,8 @@ function N(e) {
   let {
     subsection: t
   } = e;
-  if (A.Z.getGuildId() === x) return !1;
-  v = t === C.KsC.SERVER_GUIDE ? p.PG.HOME_SETTINGS : p.PG.LANDING, x = A.Z.getGuildId()
+  if (c.Z.getGuildId() === x) return !1;
+  v = t === C.KsC.SERVER_GUIDE ? p.PG.HOME_SETTINGS : p.PG.LANDING, x = c.Z.getGuildId()
 }
 class j extends(r = a.ZP.Store) {
   initialize() {
@@ -43,7 +43,7 @@ class j extends(r = a.ZP.Store) {
     return v === p.PG.DEFAULT_CHANNELS ? e ? g.Z.hasChanges() || m.Z.hasChanges() : g.Z.hasChanges() : v === p.PG.CUSTOMIZATION_QUESTIONS ? m.Z.hasChanges() : v === p.PG.HOME_SETTINGS && f.Z.hasChanges()
   }
   hasConfiguredAnythingForCurrentStep() {
-    return null != x && (v === p.PG.SAFETY_CHECK || (v === p.PG.DEFAULT_CHANNELS ? g.Z.editedDefaultChannelIds.size > 0 : v === p.PG.CUSTOMIZATION_QUESTIONS ? m.Z.editedOnboardingPrompts.length > 0 : v === p.PG.HOME_SETTINGS && !(0, c.av)(f.Z.getSettings())))
+    return null != x && (v === p.PG.SAFETY_CHECK || (v === p.PG.DEFAULT_CHANNELS ? g.Z.editedDefaultChannelIds.size > 0 : v === p.PG.CUSTOMIZATION_QUESTIONS ? m.Z.editedOnboardingPrompts.length > 0 : v === p.PG.HOME_SETTINGS && !(0, A.av)(f.Z.getSettings())))
   }
   hasErrors() {
     return v === p.PG.CUSTOMIZATION_QUESTIONS && null != m.Z.errors.find(e => null != e)

@@ -1,7 +1,7 @@
 /** Chunk was on 98650 **/
 n.d(t, {
   Z: () => x,
-  d: () => j
+  d: () => D
 });
 var r = n(200651);
 n(192379);
@@ -85,8 +85,8 @@ function x() {
           return v.NW.string(v.t.MTIXho)
       }
     }(i),
-    j = i === T.pNK.ROLE_SUBSCRIPTIONS ? v.NW.string(v.t.hZUCzc) : v.NW.string(v.t["/djIh4"]),
-    D = t === C.oC.GUILD_ONBOARDING,
+    D = i === T.pNK.ROLE_SUBSCRIPTIONS ? v.NW.string(v.t.hZUCzc) : v.NW.string(v.t["/djIh4"]),
+    j = t === C.oC.GUILD_ONBOARDING,
     L = t => {
       let {
         backToSettings: n
@@ -107,7 +107,7 @@ function x() {
         direction: m.Z.Directions.LEFT,
         className: P.backArrow
       }), x]
-    }), D && o ? (0, r.jsx)("div", {
+    }), j && o ? (0, r.jsx)("div", {
       className: P.noticeContents,
       children: (0, r.jsx)("div", {
         className: P.noticeText,
@@ -133,7 +133,7 @@ function x() {
           } = e;
           return (0, r.jsxs)(R, {
             onClick: t,
-            children: [j, (0, r.jsx)(b.Z, {
+            children: [D, (0, r.jsx)(b.Z, {
               width: 16,
               height: 16,
               direction: b.Z.Directions.DOWN,
@@ -167,7 +167,7 @@ function x() {
   })
 }
 
-function j(e) {
+function D(e) {
   let {
     guildId: t
   } = e;

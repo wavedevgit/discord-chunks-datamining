@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(749210),
-  c = n(63063),
-  A = n(714939),
+  A = n(63063),
+  c = n(714939),
   d = n(494831),
   u = n(981631),
   g = n(388032),
@@ -23,13 +23,13 @@ function m(e) {
     filteredRoles: s,
     setEditRoleId: a,
     query: o,
-    setQuery: c,
-    setHeaderHeight: A
+    setQuery: A,
+    setHeaderHeight: c
   } = e, u = i.useRef(null);
   i.useEffect(() => {
     var e, t;
-    A(null !== (t = null === (e = u.current) || void 0 === e ? void 0 : e.offsetHeight) && void 0 !== t ? t : d.Cl)
-  }, [A]);
+    c(null !== (t = null === (e = u.current) || void 0 === e ? void 0 : e.offsetHeight) && void 0 !== t ? t : d.Cl)
+  }, [c]);
   let m = i.useCallback(() => {
     a(n.id)
   }, [a, n.id]);
@@ -48,7 +48,7 @@ function m(e) {
       everyoneRole: n,
       filteredRoles: s,
       query: o,
-      setQuery: c,
+      setQuery: A,
       onEveryoneRoleClick: m
     })]
   })
@@ -64,7 +64,7 @@ function p(e) {
     onEveryoneRoleClick: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(A.Z, {
+    children: [(0, r.jsx)(c.Z, {
       role: n,
       onClick: d
     }), (0, r.jsx)(h, {
@@ -76,7 +76,7 @@ function p(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: g.NW.format(g.t.xkC3YW, {
-        articleURL: c.Z.getArticleURL(u.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: A.Z.getArticleURL(u.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: f.rolesTable,
@@ -107,12 +107,12 @@ function h(e) {
     guild: t,
     query: n,
     setQuery: s
-  } = e, [a, c] = i.useState(!1), A = i.useCallback(e => {
+  } = e, [a, A] = i.useState(!1), c = i.useCallback(e => {
     s(e)
   }, [s]), d = i.useCallback(() => {
     s("")
   }, [s]), u = async () => {
-    c(!0), await o.Z.createRole(t.id), c(!1)
+    A(!0), await o.Z.createRole(t.id), A(!1)
   };
   return (0, r.jsx)("div", {
     className: f.__invalid_rolesList,
@@ -121,7 +121,7 @@ function h(e) {
       children: [(0, r.jsx)(l.E1j, {
         size: l.E1j.Sizes.MEDIUM,
         query: n,
-        onChange: A,
+        onChange: c,
         onClear: d,
         placeholder: g.NW.string(g.t.Sojqsr),
         "aria-label": g.NW.string(g.t.Sojqsr)

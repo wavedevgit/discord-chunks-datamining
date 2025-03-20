@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(232713),
+  o = n.n(l),
+  a = n(232713),
   s = n(990547),
   c = n(91192),
   u = n(873546),
@@ -90,7 +90,7 @@ function el(e, t) {
   }), e
 }
 
-function ea(e, t) {
+function eo(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -105,13 +105,13 @@ function ea(e, t) {
   }
   return i
 }
-let eo = e => {
+let ea = e => {
     var {
       selected: t
-    } = e, n = ea(e, ["selected"]);
+    } = e, n = eo(e, ["selected"]);
     let l = (0, c.JA)("friends"),
-      a = (0, A.If)(),
-      o = (0, d.e7)([w.Z], () => w.Z.canShowFriendsTabBadge()),
+      o = (0, A.If)(),
+      a = (0, d.e7)([w.Z], () => w.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
       {
         enabled: p
@@ -120,7 +120,7 @@ let eo = e => {
       }, {
         autoTrackExposure: !1
       }),
-      h = o && p;
+      h = a && p;
     i.useEffect(() => {
       h && (0, _.h)({
         name: s.ImpressionNames.GIFT_INTENT_BADGE,
@@ -151,8 +151,8 @@ let eo = e => {
           E(!1)
         }
       }, n, l), {
-        children: a > 0 ? (0, r.jsx)(f.mAB, {
-          count: a
+        children: o > 0 ? (0, r.jsx)(f.mAB, {
+          count: o
         }) : null
       })), h && !u && (0, r.jsx)(R.Z, {
         className: er.confetti,
@@ -180,7 +180,7 @@ let eo = e => {
     var {
       selected: t,
       hideGameUpdateProgressIndicator: n
-    } = e, i = ea(e, ["selected", "hideGameUpdateProgressIndicator"]);
+    } = e, i = eo(e, ["selected", "hideGameUpdateProgressIndicator"]);
     let l = (0, c.JA)("library");
     return (0, r.jsx)(q.Qj, el(ei({
       selected: t,
@@ -189,7 +189,7 @@ let eo = e => {
       text: et.NW.string(et.t.cw57am)
     }, i, l), {
       children: (0, r.jsx)(X.Z, {
-        className: a()(er.downloadProgressCircle, {
+        className: o()(er.downloadProgressCircle, {
           [er.hideGameUpdateProgressIndicator]: n
         })
       })
@@ -222,22 +222,22 @@ let eo = e => {
   ed = e => {
     let {
       selected: t
-    } = e, n = et.NW.string(en.Z.Rkdixs), l = (0, c.JA)("family-center"), [a, o] = i.useState(!0);
+    } = e, n = et.NW.string(en.Z.Rkdixs), l = (0, c.JA)("family-center"), [o, a] = i.useState(!0);
     return (0, r.jsx)(q.Qj, el(ei({
       selected: t,
       route: J.Z5c.FAMILY_CENTER,
       icon: f.BFJ,
       text: n,
       onMouseEnter: () => {
-        o(!0)
+        a(!0)
       },
       onMouseLeave: () => {
-        o(!1)
+        a(!1)
       },
       interactiveClassName: er.familyCenterLinkButton
     }, l), {
       children: (0, r.jsx)(ep, {
-        isParentHovered: a
+        isParentHovered: o
       })
     }))
   },
@@ -291,7 +291,7 @@ let eg = i.memo(function(e) {
     showLibrary: t,
     hasLibraryApplication: n,
     homeLink: l,
-    premiumTabSelected: o,
+    premiumTabSelected: a,
     isVisualRefreshEnabled: s,
     shouldShowNitroTab: c,
     shouldShowMessageRequestsRow: d,
@@ -311,7 +311,7 @@ let eg = i.memo(function(e) {
     closeCoachmarkIfOpen: C,
     onHandleScroll: S,
     offsetControlRef: T
-  } = y, P = ea(y, ["shouldShow", "closeCoachmarkIfOpen", "onHandleScroll", "offsetControlRef"]);
+  } = y, P = eo(y, ["shouldShow", "closeCoachmarkIfOpen", "onHandleScroll", "offsetControlRef"]);
   return (0, r.jsxs)("nav", {
     className: er.privateChannels,
     "aria-label": et.NW.string(et.t.ZH9aPz),
@@ -322,7 +322,7 @@ let eg = i.memo(function(e) {
       offsetX: -52,
       children: (0, r.jsx)("div", {
         ref: _,
-        className: a()(er.searchBar, {
+        className: o()(er.searchBar, {
           [er.themedHeaderMobile]: u.tq
         }),
         children: s ? (0, r.jsx)(f.zxk, {
@@ -334,7 +334,7 @@ let eg = i.memo(function(e) {
           children: et.NW.string(et.t.LzcpeX)
         }) : (0, r.jsx)("button", {
           type: "button",
-          className: a()(er.searchBarComponent, {
+          className: o()(er.searchBarComponent, {
             [er.themedSearchBarMobile]: u.tq
           }),
           onClick: eh,
@@ -347,7 +347,7 @@ let eg = i.memo(function(e) {
       showDMHeader: !0,
       listScrollerRef: v,
       onHandleScroll: I ? S : void 0,
-      children: [(0, r.jsx)(eo, {
+      children: [(0, r.jsx)(ea, {
         selected: null != m ? m === J.Z5c.FRIENDS : l === J.Z5c.FRIENDS
       }, "friends"), n && t ? (0, r.jsx)(es, {
         selected: null == m ? null != l && l.startsWith(J.Z5c.APPLICATION_LIBRARY) : m.startsWith(J.Z5c.APPLICATION_LIBRARY),
@@ -355,7 +355,7 @@ let eg = i.memo(function(e) {
       }, "library") : null, d ? (0, r.jsx)(eu, {
         selected: null == m ? null != l && l.startsWith(J.Z5c.MESSAGE_REQUESTS) : m === J.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, c ? (0, r.jsx)(L.g, {
-        selected: null == m ? o : m.startsWith(J.Z5c.APPLICATION_STORE),
+        selected: null == m ? a : m.startsWith(J.Z5c.APPLICATION_STORE),
         route: J.Z5c.APPLICATION_STORE,
         locationState: {
           analyticsSource: {
@@ -411,7 +411,7 @@ function eb() {
       theme: U.Z.theme
     })),
     l = (0, d.e7)([B.Z], () => B.Z.hasLibraryApplication()),
-    a = (0, d.e7)([H.Z], () => H.Z.getCurrentPath()),
+    o = (0, d.e7)([H.Z], () => H.Z.getCurrentPath()),
     s = (0, y.Q3)("PrivateChannels"),
     [c, u] = (0, k.Z)(e => {
       let {
@@ -419,7 +419,7 @@ function eb() {
         path: n
       } = e;
       return [t, n]
-    }, o.X),
+    }, a.X),
     p = (0, L.i)({
       selected: null == u ? t : u.startsWith(J.Z5c.APPLICATION_STORE)
     }),
@@ -434,7 +434,7 @@ function eb() {
     theme: i,
     showLibrary: n,
     hasLibraryApplication: l,
-    storeLink: a,
+    storeLink: o,
     homeLink: e,
     premiumTabSelected: t,
     isVisualRefreshEnabled: s,

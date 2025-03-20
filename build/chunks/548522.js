@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(246364),
   l = n(571728),
   o = n(446945),
-  c = n(681460),
-  A = n(700833),
+  A = n(681460),
+  c = n(700833),
   d = n(217472),
   u = n(592286),
   g = n(388032),
@@ -20,9 +20,9 @@ function m(e) {
   var t;
   let {
     guild: n,
-    formFields: c
-  } = e, [m, h] = i.useState(c);
-  i.useEffect(() => h(c), [c]);
+    formFields: A
+  } = e, [m, h] = i.useState(A);
+  i.useEffect(() => h(A), [A]);
   let C = null !== (t = (0, l.A)({
       guildId: n.id
     })) && void 0 !== t ? t : 0,
@@ -57,7 +57,7 @@ function m(e) {
         currentCount: m.length,
         maxCount: u.nx
       })
-    }), m.map(e => (0, A.a0)({
+    }), m.map(e => (0, c.a0)({
       dropHoveredIndex: b,
       formField: e,
       guild: n,
@@ -120,7 +120,7 @@ function p(e) {
       color: "text-muted",
       className: f.examplesHeader,
       children: g.NW.string(g.t.ID04cH)
-    }), (0, r.jsx)(c.j, {
+    }), (0, r.jsx)(A.j, {
       pills: n
     })]
   })

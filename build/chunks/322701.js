@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(924826),
-  a = n(91192),
-  o = n(442837),
+  o = n(91192),
+  a = n(442837),
   s = n(215569),
   c = n(481060),
   u = n(607070),
@@ -20,7 +20,7 @@ let h = function(e) {
     hasSearchQuery: f,
     sectionFilter: g,
     footer: m
-  } = e, b = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
+  } = e, b = (0, a.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
     id: "people",
     isEnabled: b,
     async scrollToStart() {},
@@ -32,9 +32,9 @@ let h = function(e) {
     component: "div",
     children: [h(t), e.map(n)]
   }, t)), [n, h, t, N]);
-  return (0, r.jsx)(a.bG, {
+  return (0, r.jsx)(o.bG, {
     navigator: E,
-    children: (0, r.jsx)(a.SJ, {
+    children: (0, r.jsx)(o.SJ, {
       children: e => {
         var t, n, {
             ref: i

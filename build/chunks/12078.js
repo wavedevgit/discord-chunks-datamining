@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(692547),
-  c = n(481060),
-  A = n(686369),
+  A = n(481060),
+  c = n(686369),
   d = n(813197),
   u = n(430824),
   g = n(768581),
@@ -59,16 +59,16 @@ function N(e) {
     canManageGuild: n,
     handleClick: i,
     hasCustomBanner: s
-  } = e, l = (0, c.dQu)(o.Z.colors.BG_BASE_TERTIARY), d = (0, A.q)(t, l.hex());
-  return (0, r.jsx)(c.ua7, {
+  } = e, l = (0, A.dQu)(o.Z.colors.BG_BASE_TERTIARY), d = (0, c.q)(t, l.hex());
+  return (0, r.jsx)(A.ua7, {
     text: C.NW.string(C.t.W4Nd7e),
-    children: e => (0, r.jsx)(c.P3F, x(v({}, e), {
+    children: e => (0, r.jsx)(A.P3F, x(v({}, e), {
       "aria-disabled": !n,
       tabIndex: n ? 0 : -1,
       "aria-label": C.NW.string(C.t.W4Nd7e),
       onClick: n ? i : void 0,
       style: {
-        background: (0, A.d)(d)
+        background: (0, c.d)(d)
       },
       className: a()(b.itemContainer, {
         [b.disabled]: !n
@@ -88,7 +88,7 @@ function j(e) {
     profile: n,
     onCustomBannerChange: s,
     canManageGuild: l
-  } = e, o = null != n.customBanner, A = i.useMemo(() => {
+  } = e, o = null != n.customBanner, c = i.useMemo(() => {
     if (null == n.customBanner) return null;
     let e = n.customBanner;
     return g.ff.test(e) ? e : g.ZP.getGuildDiscoverySplashURL({
@@ -98,17 +98,17 @@ function j(e) {
     })
   }, [n]);
   if (!t) return null;
-  let u = null != A ? (0, r.jsx)("img", {
+  let u = null != c ? (0, r.jsx)("img", {
     className: b.uploadedImage,
-    src: A,
+    src: c,
     alt: "",
     "aria-hidden": !0
-  }) : (0, r.jsx)(c.dZu, {
+  }) : (0, r.jsx)(A.dZu, {
     size: "md"
   });
   return (0, r.jsx)("div", {
     className: b.uploadItemContainer,
-    children: (0, r.jsx)(c.tEY, {
+    children: (0, r.jsx)(A.tEY, {
       within: !0,
       children: (0, r.jsx)("div", {
         className: a()(b.uploadItemWrapper, {
@@ -120,7 +120,7 @@ function j(e) {
           }),
           children: [u, (0, r.jsx)("div", {
             className: b.overlay
-          }), (0, r.jsx)(c.vdY, {
+          }), (0, r.jsx)(A.vdY, {
             size: "custom",
             className: b.overlayIcon,
             width: 20,
@@ -150,7 +150,7 @@ function E(e) {
       customBanner: null
     })
   }, [f]), I = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
-  return (0, r.jsx)(c.hjN, {
+  return (0, r.jsx)(A.hjN, {
     title: C.NW.string(C.t.BSVog4),
     children: (0, r.jsxs)("div", {
       className: b.grid,
@@ -164,15 +164,15 @@ function E(e) {
           name: t,
           color: n
         } = e;
-        return (0, r.jsx)(c.ua7, {
+        return (0, r.jsx)(A.ua7, {
           text: t,
-          children: e => (0, r.jsx)(c.P3F, x(v({}, e), {
+          children: e => (0, r.jsx)(A.P3F, x(v({}, e), {
             "aria-disabled": !o,
             tabIndex: o ? 0 : -1,
             "aria-label": t,
             onClick: o ? E(n) : void 0,
             style: {
-              background: (0, A.d)(n)
+              background: (0, c.d)(n)
             },
             className: a()(b.itemContainer, {
               [b.disabled]: !o

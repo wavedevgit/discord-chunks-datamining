@@ -8,15 +8,15 @@ var r = n(192379),
   s = n(53365);
 
 function a(e) {
-  let [t, n] = r.useState(), [a, l] = r.useState(!1), [o, c] = r.useState(!1);
+  let [t, n] = r.useState(), [a, l] = r.useState(!1), [o, A] = r.useState(!1);
   return {
     error: t,
     loading: a,
     createEnableRequest: r.useCallback(async () => {
       if (null != e) {
-        l(!0), n(void 0), c(!1);
+        l(!0), n(void 0), A(!1);
         try {
-          await s.He(e), c(!0)
+          await s.He(e), A(!0)
         } catch (e) {
           n(new i.Z(e))
         } finally {

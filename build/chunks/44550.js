@@ -6,13 +6,13 @@ n.d(t, {
 var r, i, s, a = n(442837),
   l = n(570140);
 let o = null,
-  c = 0,
-  A = null,
+  A = 0,
+  c = null,
   d = null,
   u = !1;
 class g extends(s = a.ZP.Store) {
   hasChanges() {
-    return o !== A
+    return o !== c
   }
   showNotice() {
     return this.hasChanges()
@@ -21,10 +21,10 @@ class g extends(s = a.ZP.Store) {
     return o
   }
   get originalVanityURLCode() {
-    return A
+    return c
   }
   get vanityURLUses() {
-    return c
+    return A
   }
   hasError() {
     return null != d
@@ -45,16 +45,16 @@ i = "GuildSettingsVanityURLStore", (r = "displayName") in g ? Object.definePrope
 let f = new g(l.Z, {
   GUILD_SETTINGS_SET_VANITY_URL: function(e) {
     var t, n;
-    A = o = null !== (t = e.code) && void 0 !== t ? t : "", c = e.uses, d = null !== (n = e.error) && void 0 !== n ? n : null, u = !0
+    c = o = null !== (t = e.code) && void 0 !== t ? t : "", A = e.uses, d = null !== (n = e.error) && void 0 !== n ? n : null, u = !0
   },
   GUILD_SETTINGS_CLOSE: function() {
-    A = o = null, c = 0, d = null, u = !1
+    c = o = null, A = 0, d = null, u = !1
   },
   GUILD_SETTINGS_VANITY_URL_RESET: function() {
-    o = A, c = 0, d = null
+    o = c, A = 0, d = null
   },
   GUILD_SETTINGS_VANITY_URL_SET: function(e) {
-    o = e.code, c = 0
+    o = e.code, A = 0
   },
   GUILD_SETTINGS_VANITY_URL_ERROR: function(e) {
     d = e.error

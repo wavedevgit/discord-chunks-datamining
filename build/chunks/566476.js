@@ -10,8 +10,8 @@ var i = n(120356),
   a = n(399606),
   l = n(481060),
   o = n(385499),
-  c = n(246946),
-  A = n(480276);
+  A = n(246946),
+  c = n(480276);
 
 function d(e) {
   let {
@@ -21,29 +21,29 @@ function d(e) {
     bot: d,
     verifiedBot: u,
     userTag: g
-  } = e, f = (0, a.e7)([c.Z], () => c.Z.hidePersonalInformation);
+  } = e, f = (0, a.e7)([A.Z], () => A.Z.hidePersonalInformation);
   return (0, r.jsxs)("div", {
-    className: s()(A.container, t),
+    className: s()(c.container, t),
     children: [(0, r.jsx)(l.qEK, {
-      className: A.avatar,
+      className: c.avatar,
       src: n,
       size: l.EFr.SIZE_24,
       "aria-label": i
     }), (0, r.jsxs)("div", {
-      className: A.textContainer,
+      className: c.textContainer,
       children: [(0, r.jsx)(l.Text, {
         tag: "span",
-        className: A.name,
+        className: c.name,
         color: "header-primary",
         variant: "text-sm/semibold",
         children: i
       }), d ? (0, r.jsx)(o.Z, {
-        className: A.botTag,
+        className: c.botTag,
         verified: u
       }) : null, f ? null : (0, r.jsx)(l.Text, {
         tag: "span",
         color: "interactive-normal",
-        className: A.userTag,
+        className: c.userTag,
         variant: "text-sm/normal",
         children: g
       })]

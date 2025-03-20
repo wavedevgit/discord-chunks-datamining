@@ -42,8 +42,8 @@ var r = n(200651),
   W = n(594174),
   U = n(358085),
   B = n(998502),
-  H = n(922482),
-  F = n(431328),
+  F = n(922482),
+  H = n(431328),
   G = n(501655),
   V = n(427679),
   z = n(513449),
@@ -147,7 +147,7 @@ function ed(e) {
     j = (0, f.bp)(),
     E = (0, s.e7)([D.Z], () => D.Z.getVoiceChannelId() === c.id, [c.id]),
     N = (0, s.e7)([L.Z], () => L.Z.can(et.Plq.CONNECT, c)),
-    I = (0, F.w8)(c.id, G.pV.SPEAKER),
+    I = (0, H.w8)(c.id, G.pV.SPEAKER),
     P = (0, s.e7)([b.Z], () => b.Z.getSelectedParticipant(c.id)),
     T = v && j !== et.IlC.POPOUT,
     A = (0, O.Q3)("StageChannelCallContent"),
@@ -163,7 +163,7 @@ function ed(e) {
   return U && B && (Y = "0px"), l = B ? (0, r.jsx)(J.Z, {
     channel: c,
     onContinueClick: () => {
-      (0, z.Ku)(!1), E || (0, H.TM)(c)
+      (0, z.Ku)(!1), E || (0, F.TM)(c)
     }
   }) : E ? (0, r.jsx)(X.Z, {
     channel: c,

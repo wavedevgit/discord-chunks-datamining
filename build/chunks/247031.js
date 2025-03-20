@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => W
+  Z: () => Z
 }), n(47120), n(474991), n(398202), n(301563), n(653041), n(230036), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(392711),
   o = n(442837),
-  c = n(481060),
-  A = n(239091),
+  A = n(481060),
+  c = n(239091),
   d = n(749210),
   u = n(493544),
   g = n(479531),
@@ -75,7 +75,7 @@ function L(e) {
     ban: a,
     hideDiscriminator: l,
     onClose: o
-  } = e, [A, u] = i.useState(!1), [m, p] = i.useState(null);
+  } = e, [c, u] = i.useState(!1), [m, p] = i.useState(null);
   async function h() {
     if (null != n) {
       p(null), u(!0);
@@ -86,10 +86,10 @@ function L(e) {
       }
     }
   }
-  return (0, r.jsxs)(c.Y0X, {
+  return (0, r.jsxs)(A.Y0X, {
     className: P.bannedUserModal,
     transitionState: t,
-    children: [(0, r.jsxs)(c.xBx, {
+    children: [(0, r.jsxs)(A.xBx, {
       className: P.header,
       separator: !1,
       children: [(0, r.jsx)(f.Z, {
@@ -104,30 +104,30 @@ function L(e) {
         className: P.userDiscrim,
         children: ["#", s.discriminator]
       })]
-    }), (0, r.jsxs)(c.hzk, {
+    }), (0, r.jsxs)(A.hzk, {
       className: P.content,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(A.Text, {
         className: P.reasonHeader,
         variant: "text-xs/normal",
         children: w.NW.string(w.t["9Ki66O"])
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(A.Text, {
         variant: "text-sm/normal",
         children: null != a.reason && "" !== a.reason ? a.reason : w.NW.string(w.t["t+2Zcn"])
-      }), null != m ? (0, r.jsx)(c.Text, {
+      }), null != m ? (0, r.jsx)(A.Text, {
         className: P.error,
         color: "text-danger",
         variant: "text-sm/normal",
         children: m.getAnyErrorMessage()
       }) : null]
-    }), (0, r.jsxs)(c.mzw, {
+    }), (0, r.jsxs)(A.mzw, {
       className: P.footer,
-      children: [(0, r.jsx)(c.zxk, {
+      children: [(0, r.jsx)(A.zxk, {
         onClick: h,
-        look: c.zxk.Looks.LINK,
-        color: c.zxk.Colors.RED,
-        submitting: A,
+        look: A.zxk.Looks.LINK,
+        color: A.zxk.Colors.RED,
+        submitting: c,
         children: w.NW.string(w.t.UPcIa2)
-      }), (0, r.jsx)(c.zxk, {
+      }), (0, r.jsx)(A.zxk, {
         onClick: o,
         children: w.NW.string(w.t.i4jeWV)
       })]
@@ -141,14 +141,14 @@ class R extends i.PureComponent {
       hideDiscriminator: t,
       guild: n
     } = this.props;
-    return (0, r.jsxs)(c.P3F, {
+    return (0, r.jsxs)(A.P3F, {
       className: a()(P.bannedUser, B.card),
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
-      children: [(0, r.jsx)(c.qEK, {
+      children: [(0, r.jsx)(A.qEK, {
         src: e.getAvatarURL(null == n ? void 0 : n.id, 40),
         "aria-label": e.username,
-        size: c.EFr.SIZE_40,
+        size: A.EFr.SIZE_40,
         className: P.bannedUserAvatar
       }), (0, r.jsxs)("div", {
         className: P.username,
@@ -170,14 +170,14 @@ class R extends i.PureComponent {
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, c.h7j)(s => (0, r.jsx)(L, S(T({}, s), {
+      (0, A.h7j)(s => (0, r.jsx)(L, S(T({}, s), {
         guild: e,
         user: t,
         ban: i,
         hideDiscriminator: n
       })))
     }), D(this, "handleContextMenu", e => {
-      (0, A.jW)(e, async () => {
+      (0, c.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
@@ -254,18 +254,18 @@ class Q extends i.PureComponent {
         searchQuery: o
       } = this.props;
       if (n > 0) return null;
-      if (null == s && 0 === i) return (0, r.jsx)(c.$jN, {
+      if (null == s && 0 === i) return (0, r.jsx)(A.$jN, {
         className: P.spinner,
-        type: c.$jN.Type.SPINNING_CIRCLE
+        type: A.$jN.Type.SPINNING_CIRCLE
       }, "spinner");
-      let A = this.getSortedBans(s, o)[i],
-        d = null == s ? void 0 : s.get(null !== (t = null == A ? void 0 : A.id) && void 0 !== t ? t : "");
-      if (null != A && null != d) return (0, r.jsx)(R, {
-        user: A,
+      let c = this.getSortedBans(s, o)[i],
+        d = null == s ? void 0 : s.get(null !== (t = null == c ? void 0 : c.id) && void 0 !== t ? t : "");
+      if (null != c && null != d) return (0, r.jsx)(R, {
+        user: c,
         ban: d,
         hideDiscriminator: a,
         guild: l
-      }, A.id)
+      }, c.id)
     }), D(this, "getSectionHeight", e => {
       if (e > 0) return 0;
       let {
@@ -280,15 +280,15 @@ class Q extends i.PureComponent {
         theme: s,
         searchQuery: a
       } = this.props;
-      null == i ? t = null : (null == i ? void 0 : i.size) === 0 && (t = (0, r.jsxs)(c.ubH, {
+      null == i ? t = null : (null == i ? void 0 : i.size) === 0 && (t = (0, r.jsxs)(A.ubH, {
         theme: s,
         className: P.emptyState,
-        children: [(0, r.jsx)(c.oxh, {
+        children: [(0, r.jsx)(A.oxh, {
           darkSrc: n(532747),
           lightSrc: n(433466),
           width: 256,
           height: 212
-        }), (0, r.jsx)(c.OZU, {
+        }), (0, r.jsx)(A.OZU, {
           note: w.NW.string(w.t.zfCsAw),
           style: {
             maxWidth: 300
@@ -297,20 +297,20 @@ class Q extends i.PureComponent {
         })]
       }));
       let l = null !== (e = null == i ? void 0 : i.size) && void 0 !== e ? e : 0;
-      return (0, r.jsxs)(c.hjN, {
-        tag: c.RB0.H1,
+      return (0, r.jsxs)(A.hjN, {
+        tag: A.RB0.H1,
         title: w.NW.formatToPlainString(w.t["bW+JJy"], {
           bans: l
         }),
         children: [(0, r.jsxs)("div", {
           className: P.settingsHeader,
-          children: [(0, r.jsx)(c.R94, {
-            type: c.geA.DESCRIPTION,
+          children: [(0, r.jsx)(A.R94, {
+            type: A.geA.DESCRIPTION,
             className: P.description,
             children: w.NW.format(w.t.JcZ36u, {
               onModerationClick: this.handleModerationClick
             })
-          }), null == t && (0, r.jsx)(c.E1j, {
+          }), null == t && (0, r.jsx)(A.E1j, {
             className: P.searchBar,
             query: null != a ? a : "",
             placeholder: w.NW.string(w.t.rTL1RE),
@@ -318,7 +318,7 @@ class Q extends i.PureComponent {
             onChange: this.handleQueryChange,
             onClear: this.handleQueryClear
           })]
-        }), (0, r.jsx)(c.$i$, {
+        }), (0, r.jsx)(A.$i$, {
           style: {
             marginBottom: -1
           }
@@ -327,7 +327,7 @@ class Q extends i.PureComponent {
     })
   }
 }
-let Z = o.ZP.connectStores([j.Z, m.Z, p.Z], () => {
+let W = o.ZP.connectStores([j.Z, m.Z, p.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -342,7 +342,7 @@ let Z = o.ZP.connectStores([j.Z, m.Z, p.Z], () => {
   }
 })(Q);
 
-function W() {
+function Z() {
   var e;
   let {
     guild: t
@@ -354,5 +354,5 @@ function W() {
   }, {
     autoTrackExposure: !0
   });
-  return n ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(Z, {})
+  return n ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(W, {})
 }

@@ -10,8 +10,8 @@ var i = n(852229),
   a = n(724598),
   l = n(674180),
   o = n(495437),
-  c = n(267101),
-  A = n(863663),
+  A = n(267101),
+  c = n(863663),
   d = n(676651),
   u = n(613810),
   g = n(391181),
@@ -23,7 +23,7 @@ function h(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: d
-  } = e, h = (0, c.ue)(t, {
+  } = e, h = (0, A.ue)(t, {
     publishedOnly: !1
   }), {
     shouldRestrictUpdatingCreatorMonetizationSettings: C
@@ -60,7 +60,7 @@ function h(e) {
       }, n))
     })
   }, x = (e, t) => {
-    (0, i.J)((0, A.ar)(e, t))
+    (0, i.J)((0, c.ar)(e, t))
   }, N = h.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.vwX, {

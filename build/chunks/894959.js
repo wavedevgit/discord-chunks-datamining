@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(45792),
   i = n(914946),
   l = n(238679),
-  a = n(981631);
-let o = {
-  [a.Etm.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: (0, r.S)(a.Etm.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, {
+  o = n(981631);
+let a = {
+  [o.Etm.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: (0, r.S)(o.Etm.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, {
     scope: l.KW,
     handler(e) {
       let {

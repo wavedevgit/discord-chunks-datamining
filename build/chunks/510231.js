@@ -9,11 +9,11 @@ var r = n(192379),
   a = n(442837),
   l = n(189451),
   o = n(77498),
-  c = n(570911);
+  A = n(570911);
 
-function A(e) {
+function c(e) {
   var t;
-  return null !== (t = c.gQ.get(e)) && void 0 !== t ? t : 0
+  return null !== (t = A.gQ.get(e)) && void 0 !== t ? t : 0
 }
 
 function d() {
@@ -25,9 +25,9 @@ function d() {
       let {
         value: t
       } = e;
-      return A(t)
+      return c(t)
     }).reverse().value(), [e]),
-    n = r.useCallback((e, t) => A(t.item.value) - A(e.item.value), []);
+    n = r.useCallback((e, t) => c(t.item.value) - c(e.item.value), []);
   return {
     options: t,
     matchSorterOptions: r.useMemo(() => ({

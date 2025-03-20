@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,11 +10,11 @@ var r = n(200651),
   l = n(226192),
   o = n(683579);
 
-function c(e) {
+function A(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, c = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), A = l.km(t.guildId), d = i.useMemo(() => (0, s.U5)(), []), u = (e, r) => {
+  } = e, A = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), c = l.km(t.guildId), d = i.useMemo(() => (0, s.U5)(), []), u = (e, r) => {
     var i, s;
     if (null == r) return;
     let a = t.actions.some(e => e.type === r.type),
@@ -58,12 +58,12 @@ function c(e) {
       s = d[e],
       a = n ? r : s;
     if (null != a && (!i || n)) {
-      let n = A[e];
+      let n = c[e];
       null != n ? u(!0, await n(t, a)) : u(!0, a)
     } else u(!1, i ? r : s)
   };
   return (0, r.jsx)(r.Fragment, {
-    children: c.map(e => {
+    children: A.map(e => {
       let n = t.actions.find(t => t.type === e);
       return (0, r.jsx)(o.Z, {
         guildId: t.guildId,

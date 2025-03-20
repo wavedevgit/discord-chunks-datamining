@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  z: () => c
+  z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -11,11 +11,11 @@ var i = n(793030),
   l = n(388032),
   o = n(881805);
 
-function c(e) {
+function A(e) {
   let {
     guildId: t,
     defaultSettings: n,
-    canManageGuild: c
+    canManageGuild: A
   } = e;
   return (0, r.jsxs)(s.hjN, {
     className: o.settings,
@@ -33,7 +33,7 @@ function c(e) {
       children: (0, r.jsx)(a.z, {
         guildId: t,
         defaultSettings: n,
-        canManageGuild: c
+        canManageGuild: A
       })
     })]
   })

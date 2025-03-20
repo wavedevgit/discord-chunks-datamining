@@ -10,8 +10,8 @@ var i = n(442837),
   a = n(430824),
   l = n(496675),
   o = n(556012),
-  c = n(273504),
-  A = n(981631),
+  A = n(273504),
+  c = n(981631),
   d = n(590433),
   u = n(388032),
   g = n(15470);
@@ -24,7 +24,7 @@ function f(e) {
     guildId: h,
     toggled: C,
     onToggleAction: b
-  } = e, v = e => () => b(e), x = (0, o.c)(m.type, m, p), N = null === (t = m.metadata) || void 0 === t ? void 0 : t.durationSeconds, j = null != N ? (0, d.L9)(N) : null, E = (0, i.e7)([l.Z, a.Z], () => l.Z.can(A.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
+  } = e, v = e => () => b(e), x = (0, o.c)(m.type, m, p), N = null === (t = m.metadata) || void 0 === t ? void 0 : t.durationSeconds, j = null != N ? (0, d.L9)(N) : null, E = (0, i.e7)([l.Z, a.Z], () => l.Z.can(c.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
   if (null == x) return null;
   let {
     headerText: I,
@@ -52,7 +52,7 @@ function f(e) {
       }), C && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [(n = p, null === (f = j) ? null : n === c.fX.MENTION_SPAM ? u.NW.format(u.t.i3lsKC, {
+        children: [(n = p, null === (f = j) ? null : n === A.fX.MENTION_SPAM ? u.NW.format(u.t.i3lsKC, {
           friendlyDurationString: f
         }) : u.NW.format(u.t.mvHxzc, {
           friendlyDurationString: f

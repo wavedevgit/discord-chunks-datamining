@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -11,13 +11,13 @@ var i = n(442837),
   l = n(594174),
   o = n(538507);
 
-function c(e) {
+function A(e) {
   let {
     guild: t
   } = e, n = (0, i.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return null != e && (null == t ? void 0 : t.isOwner(e)) === !0
-  }), c = () => {
+  }), A = () => {
     (0, a.q)(t.id, {
       demonetized: !0
     })
@@ -61,7 +61,7 @@ function c(e) {
         }({
           disabled: !n
         }, e), i = i = {
-          onClick: c,
+          onClick: A,
           children: "Accept New Terms"
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);

@@ -1,8 +1,8 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Io: () => c,
-  cZ: () => A,
+  Io: () => A,
+  cZ: () => c,
   g6: () => d,
   j7: () => o
 });
@@ -40,7 +40,7 @@ function o() {
   })
 }
 
-function c() {
+function A() {
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)(i.Text, {
@@ -67,7 +67,7 @@ function c() {
   })
 }
 
-function A() {
+function c() {
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)(i.Text, {

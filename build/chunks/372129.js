@@ -10,9 +10,9 @@ var r = n(200651),
   a = n(53281),
   l = n(813197),
   o = n(426642),
-  c = n(869783);
+  A = n(869783);
 
-function A(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ async function u(e, t) {
       let {
         image: e,
         dataURI: r
-      } = await d(i), s = i.type === c.m.MP4 ? await t(r, i) : await t(r, i, e);
+      } = await d(i), s = i.type === A.m.MP4 ? await t(r, i) : await t(r, i, e);
       null != s && n.push({
         type: s,
         filename: i.name
@@ -77,7 +77,7 @@ let g = e => {
       let {
         default: t
       } = await n.e("68720").then(n.bind(n, 70846));
-      return n => (0, r.jsx)(t, A({
+      return n => (0, r.jsx)(t, c({
         errors: e
       }, n))
     })
@@ -86,7 +86,7 @@ let g = e => {
     let {
       onChange: t,
       multiple: o = !0,
-      disabled: c,
+      disabled: A,
       className: d,
       tabIndex: g = -1,
       "aria-label": f,
@@ -109,7 +109,7 @@ let g = e => {
           let {
             default: e
           } = await n.e("16169").then(n.bind(n, 935333));
-          return t => (0, r.jsx)(e, A({
+          return t => (0, r.jsx)(e, c({
             processFiles: () => N(l)
           }, t))
         })
@@ -118,7 +118,7 @@ let g = e => {
       onChange: j,
       filters: null != m ? m : (0, l.Zj)(),
       multiple: o,
-      disabled: c,
+      disabled: A,
       className: d,
       tabIndex: g,
       "aria-label": f,

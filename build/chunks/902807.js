@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(642128),
   o = n(481060),
-  c = n(750263);
-class A extends i.Component {
+  A = n(750263);
+class c extends i.Component {
   render() {
     var e, t;
     let n = this.props,
@@ -65,7 +65,7 @@ class A extends i.Component {
     }), e))
   }
 }
-let d = (0, l.animated)(A),
+let d = (0, l.animated)(c),
   u = function(e) {
     let {
       className: t,
@@ -90,7 +90,7 @@ let d = (0, l.animated)(A),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: a()(c.crossfade, t),
+      className: a()(A.crossfade, t),
       children: l((e, t) => {
         let {
           icon: n,
@@ -98,7 +98,7 @@ let d = (0, l.animated)(A),
         } = t;
         return (0, r.jsx)(d, {
           icon: n,
-          className: a()(c.icon, i),
+          className: a()(A.icon, i),
           style: e
         })
       })

@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  c: () => A
+  c: () => c
 });
 var r = n(200651),
   i = n(192379),
@@ -9,9 +9,9 @@ var r = n(200651),
   a = n(481060),
   l = n(66511),
   o = n(388032),
-  c = n(514149);
+  A = n(514149);
 
-function A(e) {
+function c(e) {
   let {
     guildId: t
   } = e, n = i.useCallback(() => {
@@ -19,7 +19,7 @@ function A(e) {
   }, [t]);
   return (0, r.jsxs)(a.P3F, {
     onClick: n,
-    className: c.previewButton,
+    className: A.previewButton,
     children: [(0, r.jsx)(s.xv, {
       tag: "span",
       variant: "text-sm/semibold",

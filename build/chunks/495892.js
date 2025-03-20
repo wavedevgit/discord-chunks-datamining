@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(481060),
   l = n(239091),
   o = n(132580),
-  c = n(688465),
-  A = n(236413),
+  A = n(688465),
+  c = n(236413),
   d = n(727072),
   u = n(85960),
   g = n(65912),
@@ -157,7 +157,7 @@ function O(e) {
 function y(e) {
   return (0, u.r5)(e, u.vT.ALPHA) ? (0, r.jsx)(o.Z, {
     className: b.alphaBetaTag
-  }) : (0, u.r5)(e, u.vT.BETA) ? (0, r.jsx)(c.Z, {
+  }) : (0, u.r5)(e, u.vT.BETA) ? (0, r.jsx)(A.Z, {
     className: b.alphaBetaTag
   }) : null
 }
@@ -168,12 +168,12 @@ function w(e) {
     isDefaultRule: n,
     onContextMenu: l
   } = e, o = (0, f.w)(t.triggerType, t), {
-    isLoading: c,
+    isLoading: A,
     saveRule: u
   } = (0, g.w)(), {
     updateRule: m
   } = (0, d.pH)(t.guildId), [p, h] = i.useState(t.enabled), j = (0, s.throttle)(async (e, n) => {
-    if (n.preventDefault(), n.stopPropagation(), !c) {
+    if (n.preventDefault(), n.stopPropagation(), !A) {
       let e = x(v({}, t), {
         enabled: !p
       });
@@ -190,7 +190,7 @@ function w(e) {
     headerSubtext: P,
     descriptionText: B,
     icon: D
-  } = o, T = !(0, A.Vb)(t);
+  } = o, T = !(0, c.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: b.ruleIconContainer,
@@ -254,12 +254,12 @@ function P(e) {
   let {
     headerText: l,
     descriptionText: o,
-    icon: c
+    icon: A
   } = s;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: b.ruleIconContainer,
-      children: (0, r.jsx)(c, {
+      children: (0, r.jsx)(A, {
         color: "currentColor",
         size: "md",
         className: b.ruleIcon
@@ -298,8 +298,8 @@ function B(e) {
     triggerType: i,
     isEditMode: s,
     isDefaultRule: o,
-    forceSetup: c,
-    onSetupRule: A,
+    forceSetup: A,
+    onSetupRule: c,
     onChangeRule: d
   } = e, u = e => {
     null != t && (e.preventDefault(), e.stopPropagation(), (0, l.jW)(e, async () => {
@@ -312,9 +312,9 @@ function B(e) {
     }))
   }, g = (0, r.jsx)(P, {
     triggerType: i,
-    onSetupRule: A
+    onSetupRule: c
   });
-  return null == t || c || (g = s ? (0, r.jsx)(O, {
+  return null == t || A || (g = s ? (0, r.jsx)(O, {
     rule: t,
     onChangeRule: d,
     onContextMenu: u

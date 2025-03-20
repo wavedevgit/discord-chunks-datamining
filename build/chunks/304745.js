@@ -47,9 +47,9 @@ function Z(e) {
     coloredIconsEnabled: B
   } = (0, j.Z)({
     location: "VideoButton"
-  }), H = (0, d.a)(), F = (0, l.e7)([c.ZP], () => null != c.ZP.getSelfEmbeddedActivityForLocation(c.ZP.getConnectedActivityLocation())), G = (0, u.Z)({
+  }), F = (0, d.a)(), H = (0, l.e7)([c.ZP], () => null != c.ZP.getSelfEmbeddedActivityForLocation(c.ZP.getConnectedActivityLocation())), G = (0, u.Z)({
     channelId: t.id
-  }), V = B && F || !B && (G || !U && k), z = !M, Y = i.useCallback(e => {
+  }), V = B && H || !B && (G || !U && k), z = !M, Y = i.useCallback(e => {
     "focus" !== e.type && D()
   }, [D]), q = (0, s.bp)() === N.IlC.POPOUT, {
     analyticsLocations: K,
@@ -151,7 +151,7 @@ function Z(e) {
                 Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               }), t))
             }
-          }), H ? U ? (0, r.jsx)(m.r, {
+          }), F ? U ? (0, r.jsx)(m.r, {
             top: 2,
             right: 2,
             size: 6

@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(456677),
   l = n(951665),
   o = n(428760),
-  c = n(55889),
-  A = n(300453),
+  A = n(55889),
+  c = n(300453),
   d = n(620436),
   u = n(273504),
   g = n(388032),
@@ -68,7 +68,7 @@ function h(e) {
   }, [N, x]);
   return (0, r.jsxs)("div", {
     className: f.cardContentsContainer,
-    children: [(0, r.jsxs)(A.Z, {
+    children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: g.NW.string(g.t["ue+tnZ"]),
       children: [(0, r.jsx)(o.Z, {
@@ -87,7 +87,7 @@ function h(e) {
       })]
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.ARROW_DOWN
-    }), (0, r.jsx)(A.Z, {
+    }), (0, r.jsx)(c.Z, {
       step: 2,
       header: g.NW.string(g.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
@@ -96,10 +96,10 @@ function h(e) {
       })
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.CROSS
-    }), (0, r.jsx)(A.Z, {
+    }), (0, r.jsx)(c.Z, {
       step: 3,
       header: g.NW.string(g.t.u5xPPT),
-      children: (0, r.jsx)(c.Z, {
+      children: (0, r.jsx)(A.Z, {
         rule: x,
         onChangeRule: N,
         onlyRoles: !0

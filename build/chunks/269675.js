@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(873546),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(355467),
   c = n(270237),
   u = n(252618),
@@ -31,7 +31,7 @@ var r = n(200651),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), Z = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
+  } = e, n = (0, o.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, o.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), Z = (0, o.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
   } = (0, h.uP)(t), R = null == n || !x || Z || L;
@@ -56,7 +56,7 @@ function P(e) {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: T.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
-        icon: (0, o.GSL)(O.Z),
+        icon: (0, a.GSL)(O.Z),
         "aria-hidden": !0
       }), (0, r.jsx)(g.Z.Title, {
         children: S.NW.string(S.t["KzCF//"])
@@ -65,11 +65,11 @@ function P(e) {
       id: I.v
     }), (0, r.jsx)("div", {
       className: T.content,
-      children: j ? (0, r.jsx)(o.u2D, {
+      children: j ? (0, r.jsx)(a.u2D, {
         className: T.scroller,
         children: (0, r.jsx)("div", {
           className: T.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(N.Z, {
+          children: R ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(N.Z, {
             guild: n
           })
         })

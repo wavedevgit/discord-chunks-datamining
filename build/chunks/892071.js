@@ -58,8 +58,7 @@ function f(e) {
     "disable-forced-colors": !y && "active" === O,
     "enable-forced-colors": y,
     "visual-refresh": t,
-    "visual-refresh-chat-input": n,
-    "show-redesigned-icons": !0
+    "visual-refresh-chat-input": n
   }, o), R = i.useMemo(() => ({
     lang: d,
     style: A,

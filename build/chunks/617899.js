@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(904245),
-  o = n(944486),
+  o = n(904245),
+  a = n(944486),
   s = n(324262),
   c = n(981631),
   u = n(921944),
@@ -74,8 +74,8 @@ class f extends i.PureComponent {
         }
       })
     }), h(this, "handleClose", () => {
-      let e = o.Z.getChannelId();
-      this.props.markAsDismissed(u.L.UNKNOWN), null != e && a.Z.sendBotMessage(e, d.NW.formatToPlainString(d.t.DEn7np, {
+      let e = a.Z.getChannelId();
+      this.props.markAsDismissed(u.L.UNKNOWN), null != e && o.Z.sendBotMessage(e, d.NW.formatToPlainString(d.t.DEn7np, {
         invitePeople: d.NW.string(d.t.BN75l5)
       }))
     })

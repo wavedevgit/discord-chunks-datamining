@@ -43,8 +43,8 @@ var r = n(200651),
   W = n(576645),
   U = n(140465),
   B = n(800966),
-  H = n(641015),
-  F = n(618158),
+  F = n(641015),
+  H = n(618158),
   G = n(390322),
   V = n(791592),
   z = n(136995),
@@ -224,7 +224,7 @@ function eS(e) {
           })
         }
       })
-    })(), (0, r.jsx)(F.Z, {
+    })(), (0, r.jsx)(H.Z, {
       children: (0, r.jsx)(p.yRy, {
         renderPopout: e => {
           let {
@@ -486,7 +486,7 @@ let eR = function(e) {
     canGoLive: U
   } = (0, u.cj)([en.Z], () => ({
     canGoLive: (0, R.Z)(en.Z)
-  })), B = (0, A.Z)(), F = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), V = null != B, z = (0, u.e7)([er.Z], () => {
+  })), B = (0, A.Z)(), H = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), V = null != B, z = (0, u.e7)([er.Z], () => {
     var e;
     return (null !== (e = null == B ? void 0 : B.channelId) && void 0 !== e ? e : er.Z.getVoiceChannelId()) === l.id
   }), Y = (0, j.Z)(l, !0), q = (0, u.e7)([_.ZP], () => _.ZP.getSelfEmbeddedActivityForChannel(l.id)), {
@@ -508,7 +508,7 @@ let eR = function(e) {
     })
   });
   let e_ = eh && !Y,
-    eC = (0, H.Z)(l);
+    eC = (0, F.Z)(l);
   return m ? (0, r.jsx)(y.Gt, {
     value: et,
     children: (0, r.jsxs)(g.Z, {
@@ -565,7 +565,7 @@ let eR = function(e) {
                 serverMute: W,
                 suppress: k,
                 popoutOpen: i,
-                awaitingRemote: F,
+                awaitingRemote: H,
                 onClick: () => (0, N.Z)(W, k, ey.jXE.VOICE_CONTROL_TRAY)
               })
             }
@@ -692,7 +692,7 @@ let eR = function(e) {
               serverMute: W,
               suppress: k,
               popoutOpen: i,
-              awaitingRemote: F,
+              awaitingRemote: H,
               onClick: () => (0, N.Z)(W, k, ey.jXE.VOICE_CONTROL_TRAY)
             })
           }
@@ -777,7 +777,7 @@ let eR = function(e) {
               serverMute: W,
               suppress: k,
               popoutOpen: i,
-              awaitingRemote: F,
+              awaitingRemote: H,
               onClick: () => (0, N.Z)(W, k, ey.jXE.VOICE_CONTROL_TRAY)
             })
           }

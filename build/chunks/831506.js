@@ -36,7 +36,7 @@ function y(e, t) {
   null != l && (l.delete(e), 0 === l.size && delete m[n])
 }
 
-function b(e, t, n, r) {
+function O(e, t, n, r) {
   let l = n.find(e => null != e.party && e.party.id),
     i = null != l && null != l.party ? l.party.id : null,
     o = g(t, e);
@@ -53,7 +53,7 @@ function b(e, t, n, r) {
   }(t, e, i)
 }
 
-function O(e) {
+function b(e) {
   let {
     guild: t
   } = e, n = !1;
@@ -62,21 +62,21 @@ function O(e) {
       status: r,
       activities: l
     }
-    of t.presences) !1 !== b(t.id, e.id, l, r) && (n = !0);
+    of t.presences) !1 !== O(t.id, e.id, l, r) && (n = !0);
   return n
 }
 
 function h(e, t) {
   let n = !1;
   return t.forEach(t => {
-    null != t && b(e, t.user.id, t.activities, t.status) && (n = !0)
+    null != t && O(e, t.user.id, t.activities, t.status) && (n = !0)
   }), n
 }
 
 function v() {
   let e = s.default.getId(),
     t = u.Z.getActivities();
-  return b(d.ME, e, t)
+  return O(d.ME, e, t)
 }
 
 function j(e) {
@@ -117,8 +117,8 @@ let P = new S(a.Z, {
         status: t,
         activities: l
       }
-      of n) null != e && !1 !== b(d.ME, e.id, l, t) && (r = !0);
-    for (let e of t) !1 !== O({
+      of n) null != e && !1 !== O(d.ME, e.id, l, t) && (r = !0);
+    for (let e of t) !1 !== b({
       guild: e
     }) && (r = !0);
     return r
@@ -141,7 +141,7 @@ let P = new S(a.Z, {
       return e
     }({}, n), Object.keys(t).forEach(e => m[e] = new Set(t[e]))
   },
-  GUILD_CREATE: O,
+  GUILD_CREATE: b,
   PRESENCES_REPLACE: function(e) {
     let {
       presences: t
@@ -150,7 +150,7 @@ let P = new S(a.Z, {
         user: e,
         activities: r
       }
-      of t) null != e && !1 !== b(d.ME, e.id, r) && (n = !0);
+      of t) null != e && !1 !== O(d.ME, e.id, r) && (n = !0);
     return n
   },
   PRESENCE_UPDATES: function(e) {
@@ -164,7 +164,7 @@ let P = new S(a.Z, {
         status: r,
         activities: l
       } = e;
-      return b(null != t ? t : d.ME, n.id, l, r)
+      return O(null != t ? t : d.ME, n.id, l, r)
     }).some(e => e)
   },
   THREAD_MEMBER_LIST_UPDATE: function(e) {

@@ -1,23 +1,23 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651),
   i = n(192379),
   l = n(122611),
-  a = n(790616);
+  o = n(790616);
 
-function o(e) {
+function a(e) {
   let {
     guild: t,
     setHasSubheader: n
-  } = e, o = i.useRef(null);
+  } = e, a = i.useRef(null);
   return i.useLayoutEffect(() => {
-    let e = o.current;
+    let e = a.current;
     null != e && n(e.childNodes.length > 0)
   }), (0, r.jsx)("div", {
-    className: a.container,
-    ref: o,
+    className: o.container,
+    ref: a,
     children: (0, r.jsx)(l.Z, {
       guild: t
     })

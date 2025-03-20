@@ -9,8 +9,8 @@ var r = n(200651),
   a = n.n(s),
   l = n(399606),
   o = n(481060),
-  c = n(734893),
-  A = n(150512),
+  A = n(734893),
+  c = n(150512),
   d = n(314897),
   u = n(8426),
   g = n(969632),
@@ -65,7 +65,7 @@ let b = function(e) {
       onSave: e => (0, u._N)(e)
     }))
   }), [t, s]), v = (0, l.e7)([d.default], () => d.default.getId());
-  return (0, c.pw)(s) ? (0, r.jsx)(o.zxk, {
+  return (0, A.pw)(s) ? (0, r.jsx)(o.zxk, {
     size: o.zxk.Sizes.SMALL,
     onClick: b,
     children: (0, r.jsx)(o.Text, {
@@ -75,7 +75,7 @@ let b = function(e) {
   }) : (0, r.jsxs)(o.P3F, {
     className: p.editWelcomeSection,
     onClick: b,
-    children: [(0, r.jsx)(A.Z, {
+    children: [(0, r.jsx)(c.Z, {
       guildId: t,
       welcomeMessage: {
         authorIds: s.authorIds.length > 0 ? s.authorIds : [v],

@@ -11,8 +11,8 @@ var i = n(120356),
   a = n(149765),
   l = n(442837),
   o = n(481060),
-  c = n(430824),
-  A = n(496675),
+  A = n(430824),
+  c = n(496675),
   d = n(700785),
   u = n(647086),
   g = n(135899),
@@ -58,7 +58,7 @@ function C(e) {
 function b(e) {
   let {
     guild: t
-  } = e, i = (0, l.e7)([c.Z], () => c.Z.getRole(t.id, t.getEveryoneRoleId())), d = C(t), u = d.length > 0, b = g.$X.some(e => !A.Z.can(e, t, null, {
+  } = e, i = (0, l.e7)([A.Z], () => A.Z.getRole(t.id, t.getEveryoneRoleId())), d = C(t), u = d.length > 0, b = g.$X.some(e => !c.Z.can(e, t, null, {
     [i.id]: h(p({}, i), {
       permissions: a.Od(i.permissions, e)
     })

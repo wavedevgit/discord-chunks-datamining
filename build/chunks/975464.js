@@ -11,8 +11,8 @@ var i = n(990547),
   a = n(213609),
   l = n(605288),
   o = n(787051),
-  c = n(346163),
-  A = n(587431),
+  A = n(346163),
+  c = n(587431),
   d = n(271267),
   u = n(320893),
   g = n(81509),
@@ -62,7 +62,7 @@ function C(e) {
 function b(e) {
   let {
     guild: t
-  } = e, n = (0, c.Z)(t), {
+  } = e, n = (0, A.Z)(t), {
     eligibilityLoading: u,
     eligibilityError: g,
     eligibility: f
@@ -84,7 +84,7 @@ function b(e) {
     disableTrack: null == t.id || null == f
   }), u || null == f || b) ? (0, r.jsx)(s.$jN, {}) : f.actionRequired ? (0, r.jsx)(m.Z, {
     guild: t
-  }) : null != g ? (0, r.jsx)(A.Z, {
+  }) : null != g ? (0, r.jsx)(c.Z, {
     children: g.message
   }) : (0, r.jsxs)("div", {
     className: h.container,

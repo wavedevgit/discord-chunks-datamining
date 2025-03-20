@@ -10,8 +10,8 @@ var i = n(120356),
   a = n(481060),
   l = n(596454),
   o = n(782568),
-  c = n(377171),
-  A = n(565138),
+  A = n(377171),
+  c = n(565138),
   d = n(601964),
   u = n(526717),
   g = n(594278),
@@ -35,7 +35,7 @@ function h(e) {
     }), (0, r.jsxs)("div", {
       className: p.subscriberCountText,
       children: [(0, r.jsx)(f.Z, {
-        color: c.Z.WHITE
+        color: A.Z.WHITE
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "always-white",
@@ -57,11 +57,11 @@ function C(e) {
   });
   return (0, r.jsxs)("div", {
     className: p.guildCardHeader,
-    children: [(0, r.jsx)(A.Z, {
+    children: [(0, r.jsx)(c.Z, {
       className: p.guildCardHeaderAvatar,
       iconSrc: i,
       guild: l,
-      size: A.Z.Sizes.LARGE
+      size: c.Z.Sizes.LARGE
     }), (0, r.jsxs)("div", {
       className: p.guildCardHeaderTitle,
       children: [(0, r.jsx)(a.X6q, {
@@ -103,12 +103,12 @@ function v(e) {
     emojisToShow: t,
     notShownEmojiCount: n,
     storePageUrl: i
-  } = e, c = null != t && t.length > 0, A = () => {
+  } = e, A = null != t && t.length > 0, c = () => {
     null != i && (0, o.Z)(i)
   };
   return (0, r.jsx)("div", {
     className: p.guildPremiumEmojis,
-    children: c ? (0, r.jsxs)(r.Fragment, {
+    children: A ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "header-primary",
@@ -137,7 +137,7 @@ function v(e) {
             innerClassName: p.viewServerButtonText,
             color: a.zxk.Colors.CUSTOM,
             disabled: null == i,
-            onClick: A,
+            onClick: c,
             children: m.NW.string(m.t.mQ2IGR)
           })
         })]
@@ -147,7 +147,7 @@ function v(e) {
       innerClassName: p.viewServerButtonText,
       color: a.zxk.Colors.CUSTOM,
       disabled: null == i,
-      onClick: A,
+      onClick: c,
       children: m.NW.string(m.t.mQ2IGR)
     })
   })
@@ -162,14 +162,14 @@ function x(e) {
     quote_attribution: s,
     quote_attribution_title: l
   } = t, o = (0, u.Z)(n, 4, 60), {
-    isLoading: c,
-    hasAllImperativeDetails: A
+    isLoading: A,
+    hasAllImperativeDetails: c
   } = o;
-  if (c) return (0, r.jsx)("div", {
+  if (A) return (0, r.jsx)("div", {
     className: p.guildCard,
     children: (0, r.jsx)(a.$jN, {})
   });
-  if (!A) return null;
+  if (!c) return null;
   let {
     guildIcon: d,
     guildName: g,
