@@ -72,7 +72,9 @@ let N = function(e) {
       window.removeEventListener("keydown", e)
     }
   }, [k]), (0, r.jsxs)(r.Fragment, {
-    children: [null != N && (0, r.jsx)("div", {
+    children: [null != N && (0, r.jsx)(a.P3F, {
+      "aria-label": S.NW.string(S.t.cpT0Cg),
+      onClick: k,
       className: T.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
         className: T.closeIcon,
@@ -112,7 +114,8 @@ let N = function(e) {
           guild: e.guild
         }), M && (0, r.jsx)(f.Z, {
           ref: L,
-          guild: e.guild
+          guild: e.guild,
+          onClose: k
         })]
       }), (0, r.jsxs)("div", {
         className: T.lowerBody,

@@ -27,8 +27,8 @@ var r, n = l(200651),
   P = l(626135),
   S = l(585483),
   N = l(55935),
-  C = l(408433),
-  E = l(956664),
+  E = l(408433),
+  C = l(956664),
   T = l(468846),
   M = l(401419),
   A = l(249458),
@@ -97,7 +97,7 @@ function G(e) {
     onPlay: I,
     onPause: P,
     onEnded: N,
-    onControlsHide: C,
+    onControlsHide: E,
     onControlsShow: M,
     onVolumeChange: A,
     onMute: k,
@@ -116,7 +116,7 @@ function G(e) {
     height: Y
   } = u;
   null != c && (U = c.width, Y = c.height);
-  let q = (0, E.Tj)({
+  let q = (0, C.Tj)({
     width: U,
     height: Y,
     maxWidth: a,
@@ -145,7 +145,7 @@ function G(e) {
       onPlay: I,
       onPause: P,
       onMute: k,
-      onControlsHide: C,
+      onControlsHide: E,
       onControlsShow: M,
       sourceMetadata: _
     })
@@ -568,7 +568,7 @@ class U extends(r = i.PureComponent) {
         animated: !1,
         srcIsAnimated: d.srcIsAnimated
       }),
-      C = {
+      E = {
         containerClassName: o()(b, {
           [R.embedMedia]: !u,
           [R.embedImage]: !u,
@@ -592,17 +592,17 @@ class U extends(r = i.PureComponent) {
         placeholderVersion: d.placeholderVersion,
         srcIsAnimated: d.srcIsAnimated
       },
-      E = null !== (r = null === (e = d.url.split(".").pop()) || void 0 === e ? void 0 : e.split("?")[0]) && void 0 !== r ? r : "";
-    "jpg" === E && (E = "jpeg");
+      C = null !== (r = null === (e = d.url.split(".").pop()) || void 0 === e ? void 0 : e.split("?")[0]) && void 0 !== r ? r : "";
+    "jpg" === C && (C = "jpeg");
     let T = null != d && !f.uo.test(null == d ? void 0 : d.url) && !(d.srcIsAnimated && f.YG.test(null == d ? void 0 : d.url)) && !(d.srcIsAnimated && f.FH.test(null == d ? void 0 : d.url)),
-      M = !0 !== this.props.isSearchResult && a && (null === (t = this.props.message) || void 0 === t ? void 0 : t.channel_id) != null && (null === (l = this.props.message) || void 0 === l ? void 0 : l.channel_id) !== void 0 && T && !(null != (i = d) && (i.width <= k.OF || i.height <= k.OF)) && null != E;
+      M = !0 !== this.props.isSearchResult && a && (null === (t = this.props.message) || void 0 === t ? void 0 : t.channel_id) != null && (null === (l = this.props.message) || void 0 === l ? void 0 : l.channel_id) !== void 0 && T && !(null != (i = d) && (i.width <= k.OF || i.height <= k.OF)) && null != C;
     return (0, n.jsx)(m.h.Consumer, {
       children: e => (0, n.jsx)(A.G.Consumer, {
         children: t => {
           let {
             disableAnimations: l
           } = t;
-          return g(F(W({}, C), {
+          return g(F(W({}, E), {
             autoPlay: v && !l && !s,
             renderAccessory: N ? e : null,
             handlePreloadImage: S[I],
@@ -612,7 +612,7 @@ class U extends(r = i.PureComponent) {
             renderAdjacentContent: () => {
               var e, t;
               return !0 === this.props.showImageRecs && M ? this.renderImageHoverButtons({
-                mimeType: ["image", E],
+                mimeType: ["image", C],
                 downloadURL: null !== (t = d.proxyURL) && void 0 !== t ? t : d.url,
                 isVisualMediaType: null != d,
                 channelId: null === (e = this.props.message) || void 0 === e ? void 0 : e.channel_id
@@ -811,7 +811,7 @@ class U extends(r = i.PureComponent) {
     if (null == a) return;
     let {
       width: d
-    } = (0, E.Tj)({
+    } = (0, C.Tj)({
       width: a.width,
       height: a.height,
       maxWidth: s,
@@ -823,7 +823,7 @@ class U extends(r = i.PureComponent) {
       var u, c, h, m;
       let {
         width: e
-      } = (0, E.Tj)({
+      } = (0, C.Tj)({
         width: null !== (c = null !== (u = null == r ? void 0 : r.width) && void 0 !== u ? u : null == i ? void 0 : i.width) && void 0 !== c ? c : 0,
         height: null !== (m = null !== (h = null == r ? void 0 : r.height) && void 0 !== h ? h : null == i ? void 0 : i.height) && void 0 !== m ? m : 0,
         maxWidth: s,
@@ -846,7 +846,7 @@ class U extends(r = i.PureComponent) {
       hideMedia: e,
       embed: t
     } = this.props;
-    return !e && (0, C.dY)(t)
+    return !e && (0, E.dY)(t)
   }
   renderSuppressButton(e) {
     return (0, n.jsx)(d.P3F, {
@@ -899,7 +899,7 @@ class U extends(r = i.PureComponent) {
           minHeight: l
         } = null !== (a = this.getMinSize()) && void 0 !== a ? a : {}, {
           width: r
-        } = (0, E.Tj)({
+        } = (0, C.Tj)({
           width: e.width,
           height: e.height,
           maxWidth: i,
@@ -966,7 +966,7 @@ class U extends(r = i.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, C.vP)(this.props.embed))), B(this, "onReveal", () => {
+    }, (0, E.vP)(this.props.embed))), B(this, "onReveal", () => {
       this.setState({
         isVisible: !0
       })

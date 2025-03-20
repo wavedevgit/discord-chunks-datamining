@@ -92,38 +92,35 @@ function O(e) {
     }, 300);
     return () => clearTimeout(e)
   }, [T]);
-  let N = i.useCallback(() => {
-      o()
-    }, [o]),
-    A = i.useMemo(() => {
-      let e;
-      if (null == b || 0 === b.length) return "";
-      if (1 === b.length) e = (0, r.jsx)(y, {
+  let N = i.useMemo(() => {
+    let e;
+    if (null == b || 0 === b.length) return "";
+    if (1 === b.length) e = (0, r.jsx)(y, {
+      powerup: b[0]
+    });
+    else if (2 === b.length) e = h.NW.format(p.Z.MNO3sL, {
+      perk1: (0, r.jsx)(y, {
         powerup: b[0]
-      });
-      else if (2 === b.length) e = h.NW.format(p.Z.MNO3sL, {
+      }),
+      perk2: (0, r.jsx)(y, {
+        powerup: b[1]
+      })
+    });
+    else {
+      let t = b.reverse();
+      e = h.NW.format(p.Z.GmN3VV, {
         perk1: (0, r.jsx)(y, {
-          powerup: b[0]
+          powerup: t[0]
         }),
         perk2: (0, r.jsx)(y, {
-          powerup: b[1]
+          powerup: t[1]
         })
-      });
-      else {
-        let t = b.reverse();
-        e = h.NW.format(p.Z.GmN3VV, {
-          perk1: (0, r.jsx)(y, {
-            powerup: t[0]
-          }),
-          perk2: (0, r.jsx)(y, {
-            powerup: t[1]
-          })
-        })
-      }
-      return h.NW.format(p.Z["/6GgQk"], {
-        perks: e
       })
-    }, [b]);
+    }
+    return h.NW.format(p.Z["/6GgQk"], {
+      perks: e
+    })
+  }, [b]);
   return g && null != b && 0 !== b.length ? (0, r.jsxs)(s.animated.div, {
     className: a()(m.container, {
       [m.themeResponsiveContainer]: n
@@ -138,10 +135,10 @@ function O(e) {
         [m.text]: !n,
         [m.responsiveText]: n
       }),
-      children: A
+      children: N
     }), (0, r.jsx)(u.zxk, {
       className: m.button,
-      onClick: N,
+      onClick: o,
       children: h.NW.string(p.Z.E5V5KC)
     })]
   }) : null

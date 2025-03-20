@@ -8,6 +8,6 @@ var r = {
   orbBadge: "orbBadge_f240e3",
   orbBadgeAsset: "orbBadgeAsset_f240e3",
   orbHeaderWithSpacing: "orbHeaderWithSpacing_f240e3",
-  orbLink: "orbLink_f240e3"
+  orbSubtext: "orbSubtext_f240e3"
 };
 e.exports = r

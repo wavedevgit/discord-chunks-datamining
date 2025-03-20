@@ -157,33 +157,33 @@ function K(e) {
 }
 
 function z(e, t, n) {
-  var r;
+  var r, o;
   let {
-    roles: o,
-    nick: a,
-    avatar: s,
-    avatar_decoration_data: l,
-    flags: c,
-    premium_since: d,
-    pending: f,
-    joined_at: _,
-    communication_disabled_until: p,
-    unusual_dm_activity_until: h
-  } = n, m = O.ZP.getMember(e, t.id);
-  (!(null != m && m.nick === a && m.avatar === s && i().isEqual(m.roles, o) && (0, u.sr)(m.avatarDecoration, l)) || m.premiumSince !== d || m.isPending !== f || m.joinedAt !== _ || m.communicationDisabledUntil !== p || m.flags !== c || (null !== (r = m.unusualDMActivityUntil) && void 0 !== r ? r : null) !== (null != h ? h : null)) && K({
+    roles: a,
+    nick: s,
+    avatar: l,
+    avatar_decoration_data: c,
+    flags: d,
+    premium_since: f,
+    pending: _,
+    joined_at: p,
+    communication_disabled_until: h,
+    unusual_dm_activity_until: m
+  } = n, g = O.ZP.getMember(e, t.id);
+  (!(null != g && g.nick === s && g.avatar === l && i().isEqual(g.roles, a) && (0, u.sr)(null !== (r = g.avatarDecoration) && void 0 !== r ? r : null, null != c ? c : null)) || g.premiumSince !== f || g.isPending !== _ || g.joinedAt !== p || g.communicationDisabledUntil !== h || g.flags !== d || (null !== (o = g.unusualDMActivityUntil) && void 0 !== o ? o : null) !== (null != m ? m : null)) && K({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
-    roles: o,
-    nick: a,
-    avatar: s,
-    avatarDecoration: l,
-    premiumSince: d,
-    isPending: f,
-    joinedAt: _,
-    communicationDisabledUntil: p,
-    unusualDMActivityUntil: h,
-    flags: c
+    roles: a,
+    nick: s,
+    avatar: l,
+    avatarDecoration: c,
+    premiumSince: f,
+    isPending: _,
+    joinedAt: p,
+    communicationDisabledUntil: h,
+    unusualDMActivityUntil: m,
+    flags: d
   })
 }
 

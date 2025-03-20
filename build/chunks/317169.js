@@ -11,7 +11,7 @@ let o = function(e) {
       var n;
       return null === (n = r.Z.getGuild(e)) || void 0 === n ? void 0 : n.premiumSubscriberCount
     })) && void 0 !== n ? n : 0,
-    o = (0, i.cj)([s.Z], () => {
+    o = (0, i.e7)([s.Z], () => {
       var n, t;
       return null !== (t = null === (n = s.Z.getStateForGuild(e)) || void 0 === n ? void 0 : n.appliedBoosts) && void 0 !== t ? t : 0
     });
