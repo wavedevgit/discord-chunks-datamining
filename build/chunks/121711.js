@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(990547),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(100527),
   c = n(213609),
   u = n(335131),
@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(452081),
   Z = n(46140),
   x = n(642145),
-  L = n(981631),
-  w = n(215023),
+  w = n(981631),
+  L = n(215023),
   R = n(388032),
   D = n(642601);
 let k = function() {
@@ -70,12 +70,12 @@ let k = function() {
     enabled: B
   } = (0, O.W)({
     location: Z.dr.QUEST_HOME_DESKTOP
-  }), H = null !== (e = (0, o.e7)([I.Z], () => I.Z.getQuest(x.V), [])) && void 0 !== e ? e : null, F = null !== H && !(0, S.zi)(H), z = i.useCallback(() => {
+  }), H = null !== (e = (0, a.e7)([I.Z], () => I.Z.getQuest(x.V), [])) && void 0 !== e ? e : null, F = null !== H && !(0, S.zi)(H), z = i.useCallback(() => {
     if (F) {
-      window.open(v.Z.getArticleURL(L.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+      window.open(v.Z.getArticleURL(w.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       return
     }
-    window.open(v.Z.getArticleURL(L.BhN.QUESTS_LEARN_MORE))
+    window.open(v.Z.getArticleURL(w.BhN.QUESTS_LEARN_MORE))
   }, [F]);
   (0, d.Tt)({
     location: R.NW.string(R.t.JALI2N)
@@ -91,7 +91,7 @@ let k = function() {
       }), (0, r.jsx)(b.z6, {
         scrollPosition: U
       }), (0, r.jsx)(b.aV, {
-        icon: a.qDn
+        icon: o.qDn
       }), B && (0, r.jsxs)("div", {
         className: D.tabsExperimental,
         children: [(0, r.jsx)(_.Z, {
@@ -104,7 +104,7 @@ let k = function() {
           ctaOnClick: () => {
             (0, u.mK)({
               openInLayer: !1,
-              tab: w.AW.ORBS,
+              tab: L.AW.ORBS,
               analyticsLocations: [],
               analyticsSource: s.Z.QUEST_HOME_PAGE
             })

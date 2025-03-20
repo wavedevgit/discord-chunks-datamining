@@ -5,25 +5,25 @@ n.d(t, {
 var r = n(192379),
   i = n(442837),
   l = n(537883),
-  o = n(356164),
-  a = n(164991),
+  a = n(356164),
+  o = n(164991),
   s = n(128449);
 
 function c() {
-  let e = a.Z.useField("fetchedQuery"),
-    t = a.Z.useField("resultsInitialCategoryId"),
-    n = a.Z.useField("languageCode"),
-    c = (0, i.e7)([o.Z], () => {
+  let e = o.Z.useField("fetchedQuery"),
+    t = o.Z.useField("resultsInitialCategoryId"),
+    n = o.Z.useField("languageCode"),
+    c = (0, i.e7)([a.Z], () => {
       if (null == t) return 0;
-      let r = o.Z.getTotal({
+      let r = a.Z.getTotal({
         categoryId: t,
         query: e,
         languageCode: n
       });
       return null != r ? r : 0
     }),
-    u = (0, i.e7)([o.Z], () => {
-      let t = o.Z.getTotal({
+    u = (0, i.e7)([a.Z], () => {
+      let t = a.Z.getTotal({
         categoryId: s.Hk,
         query: e,
         languageCode: n

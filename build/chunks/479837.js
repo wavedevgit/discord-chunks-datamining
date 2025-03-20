@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(846027),
   i = n(365023),
   l = n(565799),
-  o = n(501655),
-  a = n(368442),
+  a = n(501655),
+  o = n(368442),
   s = n(829750),
   c = n(560688),
   u = n(173507),
@@ -32,14 +32,14 @@ function b() {
   } = (0, s.t)(O);
   if (!v) {
     if (O.isGuildStageVoice()) {
-      let e = l.Z.getMutableParticipants(O.id, o.pV.SPEAKER),
+      let e = l.Z.getMutableParticipants(O.id, a.pV.SPEAKER),
         t = null == e ? void 0 : e.find(e => {
           let {
             user: t
           } = e;
           return t.id === N
         });
-      if (!(0, a.tu)(O.guild_id) || !E || null == t || t.voiceState.suppress) return
+      if (!(0, o.tu)(O.guild_id) || !E || null == t || t.voiceState.suppress) return
     }
     return n ? r.Z.setVideoEnabled(!1) : !n && _ ? (0, u.Z)(() => {
       r.Z.setVideoEnabled(!0)

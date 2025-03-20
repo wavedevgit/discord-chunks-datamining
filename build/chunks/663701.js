@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(232713),
+  a = n.n(l),
+  o = n(232713),
   s = n(990547),
   c = n(91192),
   u = n(873546),
@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(849862),
   Z = n(522558),
   x = n(795448),
-  L = n(441623),
-  w = n(457396),
+  w = n(441623),
+  L = n(457396),
   R = n(108989),
   D = n(51596),
   k = n(905423),
@@ -90,7 +90,7 @@ function el(e, t) {
   }), e
 }
 
-function eo(e, t) {
+function ea(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -105,13 +105,13 @@ function eo(e, t) {
   }
   return i
 }
-let ea = e => {
+let eo = e => {
     var {
       selected: t
-    } = e, n = eo(e, ["selected"]);
+    } = e, n = ea(e, ["selected"]);
     let l = (0, c.JA)("friends"),
-      o = (0, A.If)(),
-      a = (0, d.e7)([L.Z], () => L.Z.canShowFriendsTabBadge()),
+      a = (0, A.If)(),
+      o = (0, d.e7)([w.Z], () => w.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
       {
         enabled: p
@@ -120,7 +120,7 @@ let ea = e => {
       }, {
         autoTrackExposure: !1
       }),
-      h = a && p;
+      h = o && p;
     i.useEffect(() => {
       h && (0, _.h)({
         name: s.ImpressionNames.GIFT_INTENT_BADGE,
@@ -151,8 +151,8 @@ let ea = e => {
           E(!1)
         }
       }, n, l), {
-        children: o > 0 ? (0, r.jsx)(f.mAB, {
-          count: o
+        children: a > 0 ? (0, r.jsx)(f.mAB, {
+          count: a
         }) : null
       })), h && !u && (0, r.jsx)(R.Z, {
         className: er.confetti,
@@ -180,7 +180,7 @@ let ea = e => {
     var {
       selected: t,
       hideGameUpdateProgressIndicator: n
-    } = e, i = eo(e, ["selected", "hideGameUpdateProgressIndicator"]);
+    } = e, i = ea(e, ["selected", "hideGameUpdateProgressIndicator"]);
     let l = (0, c.JA)("library");
     return (0, r.jsx)(q.Qj, el(ei({
       selected: t,
@@ -189,7 +189,7 @@ let ea = e => {
       text: et.NW.string(et.t.cw57am)
     }, i, l), {
       children: (0, r.jsx)(X.Z, {
-        className: o()(er.downloadProgressCircle, {
+        className: a()(er.downloadProgressCircle, {
           [er.hideGameUpdateProgressIndicator]: n
         })
       })
@@ -222,22 +222,22 @@ let ea = e => {
   ed = e => {
     let {
       selected: t
-    } = e, n = et.NW.string(en.Z.Rkdixs), l = (0, c.JA)("family-center"), [o, a] = i.useState(!0);
+    } = e, n = et.NW.string(en.Z.Rkdixs), l = (0, c.JA)("family-center"), [a, o] = i.useState(!0);
     return (0, r.jsx)(q.Qj, el(ei({
       selected: t,
       route: J.Z5c.FAMILY_CENTER,
       icon: f.BFJ,
       text: n,
       onMouseEnter: () => {
-        a(!0)
+        o(!0)
       },
       onMouseLeave: () => {
-        a(!1)
+        o(!1)
       },
       interactiveClassName: er.familyCenterLinkButton
     }, l), {
       children: (0, r.jsx)(ep, {
-        isParentHovered: o
+        isParentHovered: a
       })
     }))
   },
@@ -291,7 +291,7 @@ let eg = i.memo(function(e) {
     showLibrary: t,
     hasLibraryApplication: n,
     homeLink: l,
-    premiumTabSelected: a,
+    premiumTabSelected: o,
     isVisualRefreshEnabled: s,
     shouldShowNitroTab: c,
     shouldShowMessageRequestsRow: d,
@@ -311,7 +311,7 @@ let eg = i.memo(function(e) {
     closeCoachmarkIfOpen: C,
     onHandleScroll: S,
     offsetControlRef: T
-  } = y, P = eo(y, ["shouldShow", "closeCoachmarkIfOpen", "onHandleScroll", "offsetControlRef"]);
+  } = y, P = ea(y, ["shouldShow", "closeCoachmarkIfOpen", "onHandleScroll", "offsetControlRef"]);
   return (0, r.jsxs)("nav", {
     className: er.privateChannels,
     "aria-label": et.NW.string(et.t.ZH9aPz),
@@ -322,7 +322,7 @@ let eg = i.memo(function(e) {
       offsetX: -52,
       children: (0, r.jsx)("div", {
         ref: _,
-        className: o()(er.searchBar, {
+        className: a()(er.searchBar, {
           [er.themedHeaderMobile]: u.tq
         }),
         children: s ? (0, r.jsx)(f.zxk, {
@@ -334,7 +334,7 @@ let eg = i.memo(function(e) {
           children: et.NW.string(et.t.LzcpeX)
         }) : (0, r.jsx)("button", {
           type: "button",
-          className: o()(er.searchBarComponent, {
+          className: a()(er.searchBarComponent, {
             [er.themedSearchBarMobile]: u.tq
           }),
           onClick: eh,
@@ -347,15 +347,15 @@ let eg = i.memo(function(e) {
       showDMHeader: !0,
       listScrollerRef: v,
       onHandleScroll: I ? S : void 0,
-      children: [(0, r.jsx)(ea, {
+      children: [(0, r.jsx)(eo, {
         selected: null != m ? m === J.Z5c.FRIENDS : l === J.Z5c.FRIENDS
       }, "friends"), n && t ? (0, r.jsx)(es, {
         selected: null == m ? null != l && l.startsWith(J.Z5c.APPLICATION_LIBRARY) : m.startsWith(J.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === J.Z5c.APPLICATION_LIBRARY
       }, "library") : null, d ? (0, r.jsx)(eu, {
         selected: null == m ? null != l && l.startsWith(J.Z5c.MESSAGE_REQUESTS) : m === J.Z5c.MESSAGE_REQUESTS
-      }, "message-requests") : null, c ? (0, r.jsx)(w.g, {
-        selected: null == m ? a : m.startsWith(J.Z5c.APPLICATION_STORE),
+      }, "message-requests") : null, c ? (0, r.jsx)(L.g, {
+        selected: null == m ? o : m.startsWith(J.Z5c.APPLICATION_STORE),
         route: J.Z5c.APPLICATION_STORE,
         locationState: {
           analyticsSource: {
@@ -411,7 +411,7 @@ function eb() {
       theme: U.Z.theme
     })),
     l = (0, d.e7)([B.Z], () => B.Z.hasLibraryApplication()),
-    o = (0, d.e7)([H.Z], () => H.Z.getCurrentPath()),
+    a = (0, d.e7)([H.Z], () => H.Z.getCurrentPath()),
     s = (0, y.Q3)("PrivateChannels"),
     [c, u] = (0, k.Z)(e => {
       let {
@@ -419,8 +419,8 @@ function eb() {
         path: n
       } = e;
       return [t, n]
-    }, a.X),
-    p = (0, w.i)({
+    }, o.X),
+    p = (0, L.i)({
       selected: null == u ? t : u.startsWith(J.Z5c.APPLICATION_STORE)
     }),
     h = (0, T.a)(),
@@ -434,7 +434,7 @@ function eb() {
     theme: i,
     showLibrary: n,
     hasLibraryApplication: l,
-    storeLink: o,
+    storeLink: a,
     homeLink: e,
     premiumTabSelected: t,
     isVisualRefreshEnabled: s,

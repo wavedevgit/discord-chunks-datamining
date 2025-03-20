@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(812206),
-  a = n(324262),
+  a = n(812206),
+  o = n(324262),
   s = n(434404),
   c = n(106976),
   u = n(270144),
@@ -21,10 +21,10 @@ function f(e) {
     f = (0, u.h6)(n),
     g = () => (0, c.sB)(n.id),
     m = i.useMemo(() => new Set(f.map(e => e.applicationId)), [f]),
-    b = (0, l.Wu)([o.Z], () => {
+    b = (0, l.Wu)([a.Z], () => {
       let e = [];
       for (let t of m) {
-        let n = o.Z.getApplication(t);
+        let n = a.Z.getApplication(t);
         null != n && e.push(n)
       }
       return e
@@ -38,7 +38,7 @@ function f(e) {
     a: b[0].name,
     b: b[1].name,
     c: b[2].name
-  }) : p.NW.string(p.t.MvfowM), (0, r.jsx)(a.Z, {
+  }) : p.NW.string(p.t.MvfowM), (0, r.jsx)(o.Z, {
     guild: n,
     onDismissed: g,
     message: t,

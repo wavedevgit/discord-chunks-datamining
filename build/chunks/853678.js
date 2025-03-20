@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(252258),
   i = n(45792),
   l = n(230711),
-  o = n(782568),
-  a = n(636449),
+  a = n(782568),
+  o = n(636449),
   s = n(317381),
   c = n(611577),
   u = n(840074),
@@ -61,7 +61,7 @@ let C = new Set([y.Fu, y.JT]),
           let e = new URL(n),
             t = e.toString();
           if (m.isPlatformEmbedded) {
-            let e = (0, a.R)({
+            let e = (0, o.R)({
               isContextless: (null == i ? void 0 : i.location.kind) === r.E.CONTEXTLESS
             }) ? v.KJ3.ACTIVITY_POPOUT : null;
             h.Z.focus(e, !0)
@@ -69,14 +69,14 @@ let C = new Set([y.Fu, y.JT]),
           let l = p.Z.getApplication(null == i ? void 0 : i.applicationId),
             s = (0, d.pY)(null == i ? void 0 : i.location),
             u = (null == l ? void 0 : l.id) !== void 0 ? T.get(l.id) : void 0;
-          if (void 0 !== u && u.trustedUntilEpochMs >= Date.now() && u.trustedHosts.has(e.host)) return (0, o.Z)(t), Promise.resolve({
+          if (void 0 !== u && u.trustedUntilEpochMs >= Date.now() && u.trustedHosts.has(e.host)) return (0, a.Z)(t), Promise.resolve({
             opened: !0
           });
           return new Promise(e => (0, g.q)({
             href: t,
             shouldConfirm: !0,
             onConfirm: () => {
-              (0, o.Z)(t), e({
+              (0, a.Z)(t), e({
                 opened: !0
               })
             },
@@ -125,12 +125,12 @@ let C = new Set([y.Fu, y.JT]),
             referrer_id: r,
             custom_id: i,
             message: l,
-            link_id: o
+            link_id: a
           }
         } = e;
         (0, _.bu)(n.transport);
-        let a = (0, _._f)(n.application);
-        if (null == a) throw new b.Z({
+        let o = (0, _._f)(n.application);
+        if (null == o) throw new b.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "No application.");
         let s = (0, O.Z)();
@@ -142,12 +142,12 @@ let C = new Set([y.Fu, y.JT]),
         }, "This application cannot access this API");
         return new Promise(e => {
           (0, u._)({
-            applicationId: a,
+            applicationId: o,
             channelId: s.id,
             launchParams: {
               referrerId: r,
               customId: i,
-              linkId: o
+              linkId: a
             },
             message: l,
             onShare: (t, n) => {

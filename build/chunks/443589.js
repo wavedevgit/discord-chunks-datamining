@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(642128),
+  a = n.n(l),
+  o = n(642128),
   s = n(990547),
   c = n(873546),
   u = n(481060),
@@ -43,9 +43,9 @@ function P(e) {
     isHovered: A,
     setIsHovered: Z,
     onMouseEnter: x,
-    onMouseLeave: L
+    onMouseLeave: w
   } = (0, f.Z)(200, 300), {
-    enableEmojiCTA: w
+    enableEmojiCTA: L
   } = _.w.useExperiment({
     location: "GiftIntentActionButton"
   }, {
@@ -90,16 +90,16 @@ function P(e) {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
     M = () => n === v.hX.FRIEND_ANNIVERSARY ? I.NW.string(I.t["4LohBA"]) : (0, b.Ou)(n),
-    U = () => w ? (0, r.jsx)(u.P3F, {
+    U = () => L ? (0, r.jsx)(u.P3F, {
       "aria-label": M(),
       onClick: D,
-      className: o()(S.actionButton, C.popoutButton, {
+      className: a()(S.actionButton, C.popoutButton, {
         [S.highlight]: P,
         [S.actionButtonMobile]: c.tq
       }),
       onMouseEnter: R,
-      onMouseLeave: L,
-      children: (0, r.jsx)(a.animated.div, {
+      onMouseLeave: w,
+      children: (0, r.jsx)(o.animated.div, {
         className: C.spriteContainer,
         children: (0, r.jsx)("div", {
           className: C.sprite
@@ -108,7 +108,7 @@ function P(e) {
     }) : (0, r.jsx)(u.zxk, {
       onClick: D,
       onMouseEnter: R,
-      onMouseLeave: L,
+      onMouseLeave: w,
       children: (0, r.jsxs)("div", {
         className: C.pillContentContainer,
         children: [(0, r.jsx)(u.OgN, {
@@ -140,7 +140,7 @@ function P(e) {
       premiumGiftIntentCardType: N.U.COACHMARK,
       recipientUser: t,
       onMouseEnter: x,
-      onMouseLeave: L,
+      onMouseLeave: w,
       popoutPosition: e.position,
       analyticsPage: l,
       analyticsSection: y.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,

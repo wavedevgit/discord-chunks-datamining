@@ -4,8 +4,8 @@ n.d(t, {
 }), n(411104), n(47120);
 var r, i = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(512969),
   c = n(442837),
   u = n(846519),
@@ -63,8 +63,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
-  w = (0, C.Mg)(d.Z.GAME_LIST_LINKED_TO_GLOW_DURATION),
+let w = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
+  L = (0, C.Mg)(d.Z.GAME_LIST_LINKED_TO_GLOW_DURATION),
   R = Object.freeze({
     [T.iEv.PLATFORM]: "Platform",
     [T.iEv.LAST_PLAYED]: "Last Played",
@@ -76,12 +76,12 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       icon: n,
       item: r,
       tooltip: l
-    } = e, o = r.libraryApplication.hasFlag(t);
+    } = e, a = r.libraryApplication.hasFlag(t);
     return (0, i.jsx)(p.ua7, {
       text: l,
       children: e => (0, i.jsx)(n, Z({
-        className: a()(j.settingIcon, {
-          [j.hidden]: !o
+        className: o()(j.settingIcon, {
+          [j.hidden]: !a
         })
       }, e))
     })
@@ -139,7 +139,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
         location: O.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : P.NW.string(P.t.EoWLrq), (0, i.jsx)(b.Z, {
         align: b.Z.Align.CENTER,
-        className: a()({
+        className: o()({
           [j.lastPlayedCellNew]: e.isNew
         }),
         children: t
@@ -150,7 +150,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     renderHeader: () => null,
     cellClassName: j.actionsCell,
     render(e, t, n) {
-      var r, o;
+      var r, a;
       if (null == t) throw Error("No cell props defined.");
       let s = e.key === t.activeRowKey;
       return (0, i.jsxs)(l.Fragment, {
@@ -167,13 +167,13 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
             icon: p.o8v,
             tooltip: P.NW.string(P.t.Az9eqq)
           }), (0, i.jsx)(S.Z, {
-            className: a()(j.settingIcon, {
+            className: o()(j.settingIcon, {
               [j.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
           })]
         }), (0, I.Je)(e.libraryApplication) ? (0, i.jsx)(m.Z, {
-          analyticsListSort: (r = t.sortKey, o = t.sortDirection, "".concat(R[r], " ").concat(o === T.sHY.ASCENDING ? "ASC" : "DESC")),
+          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(R[r], " ").concat(a === T.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
           source: T.Sbl.APPLICATION_LIBRARY,
           libraryApplication: e.libraryApplication,
@@ -195,7 +195,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       activeRowKey: n,
       highlightedApplicationKey: r,
       onMouseEnter: l,
-      onMouseLeave: o,
+      onMouseLeave: a,
       onContextMenu: s,
       setRef: c
     } = e, u = function(e, t) {
@@ -216,7 +216,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     let d = t.key === n,
       p = t.key === r;
     return (0, i.jsx)("div", {
-      className: a()({
+      className: o()({
         [j.rowWrapperActive]: d && !p,
         [j.rowWrapperGlow]: p,
         [j.rowWrapper]: !d && !p,
@@ -224,7 +224,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       }),
       ref: e => c(e, t.key),
       onMouseEnter: () => l(t),
-      onMouseLeave: o,
+      onMouseLeave: a,
       onContextMenu: e => s(e, t),
       children: (0, i.jsx)("div", Z({}, u))
     })
@@ -244,14 +244,14 @@ class U extends(r = l.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (h.Z.wait(f.Zy), this.props.scrollToRow(e, L))
+      null != e && (h.Z.wait(f.Zy), this.props.scrollToRow(e, w))
     }
   }
   handleHighlightedApplicationKey() {
     let {
       highlightedApplicationKey: e
     } = this.state;
-    null != e && null != this._rowRefs[e] && (this.props.scrollToRow(this._rowRefs[e], L), new u.V7().start(w, () => {
+    null != e && null != this._rowRefs[e] && (this.props.scrollToRow(this._rowRefs[e], w), new u.V7().start(L, () => {
       this._didUnmount || this.setState({
         highlightedApplicationKey: null
       })
@@ -343,9 +343,9 @@ class U extends(r = l.PureComponent) {
       sortDirection: t,
       applicationViewItems: n,
       activeRowKey: r,
-      stickyHeader: o
+      stickyHeader: a
     } = this.props, {
-      overflowMenuRowKey: a,
+      overflowMenuRowKey: o,
       highlightedApplicationKey: s
     } = this.state;
     return (0, i.jsxs)(l.Fragment, {
@@ -355,16 +355,16 @@ class U extends(r = l.PureComponent) {
         sortData: !1,
         rowComponent: M,
         className: j.table,
-        headerClassName: o ? j.stickyHeader : j.header,
+        headerClassName: a ? j.stickyHeader : j.header,
         headerCellClassName: j.headerCell,
         sortedHeaderCellClassName: j.headerCellSorted,
         bodyCellClassName: j.bodyCell,
         rowClassName: j.row,
         sortKey: e,
         sortDirection: t,
-        stickyHeader: o,
+        stickyHeader: a,
         rowProps: {
-          activeRowKey: null != a ? a : r,
+          activeRowKey: null != o ? o : r,
           highlightedApplicationKey: s,
           onMouseEnter: this.handleRowMouseEnter,
           onMouseLeave: this.handleRowMouseLeave,
@@ -372,7 +372,7 @@ class U extends(r = l.PureComponent) {
           setRef: this.setRowRef
         },
         cellProps: {
-          activeRowKey: null != a ? a : r,
+          activeRowKey: null != o ? o : r,
           onContextMenu: this.handleApplicationContextMenu,
           setActiveRowKey: this.setActiveRowKey,
           clearActiveRowKey: this.clearActiveRowKey,
@@ -427,8 +427,8 @@ function G(e) {
     n = (0, s.TH)(),
     {
       applicationViewItems: r,
-      filterQuery: o,
-      fetched: a
+      filterQuery: a,
+      fetched: o
     } = (0, c.cj)([N.Z], () => ({
       applicationViewItems: N.Z.sortedFilteredLibraryApplicationViewItems,
       filterQuery: N.Z.applicationFilterQuery,
@@ -449,8 +449,8 @@ function G(e) {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
-    filterQuery: o,
-    fetched: a,
+    filterQuery: a,
+    fetched: o,
     sortKey: u,
     sortDirection: d,
     activeRowKey: p,

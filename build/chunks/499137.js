@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  s: () => a
+  s: () => o
 });
 var r = n(192379),
   i = n(818083),
   l = n(981631);
-let o = (0, i.B)({
+let a = (0, i.B)({
     kind: "guild",
     id: "2021-10_study_group",
     label: "Student hub study group",
@@ -20,14 +20,14 @@ let o = (0, i.B)({
       }
     }]
   }),
-  a = e => {
+  o = e => {
     var t;
     return r.useEffect(() => {
-      null != e && e.hasFeature(l.oNc.HUB) && o.trackExposure({
+      null != e && e.hasFeature(l.oNc.HUB) && a.trackExposure({
         guildId: e.id,
         location: "467c32_1"
       })
-    }, [e]), o.useExperiment({
+    }, [e]), a.useExperiment({
       guildId: null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : l.lds,
       location: "467c32_2"
     }, {

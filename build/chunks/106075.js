@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(979233),
-  a = n(88693),
+  a = n(979233),
+  o = n(88693),
   s = n(611928),
   c = n(922122),
   u = n(680180),
@@ -30,7 +30,7 @@ function I() {
       onScroll: t,
       scrollPosition: n,
       resetScrollPosition: I
-    } = (0, o.M)(),
+    } = (0, a.M)(),
     {
       tabs: C,
       selectedTab: S,
@@ -42,8 +42,8 @@ function I() {
       searchQuery: A,
       onSearchTextChange: Z,
       onClearSearch: x,
-      onSearchSubmit: L,
-      isSearchVisible: w
+      onSearchSubmit: w,
+      isSearchVisible: L
     } = (0, m.H)({
       loadId: e.current
     }),
@@ -53,7 +53,7 @@ function I() {
       onCollapsedSearchBarClick: k,
       onSearchBarBlur: M,
       tabsClassName: U
-    } = (0, a.U)({
+    } = (0, o.U)({
       isSearchBarVisible: j,
       isSearchBarEmpty: "" === A.trim(),
       searchBarState: R,
@@ -63,14 +63,14 @@ function I() {
     }),
     G = d.Z.useField("fetchedQuery"),
     W = i.useCallback(e => {
-      T(e), w && x()
-    }, [w, x, T]),
-    V = i.useMemo(() => w ? C.filter(e => {
+      T(e), L && x()
+    }, [L, x, T]),
+    V = i.useMemo(() => L ? C.filter(e => {
       let {
         id: t
       } = e;
       return !O.MU.has(t)
-    }) : C, [C, w]),
+    }) : C, [C, L]),
     B = i.useRef(new p.Z(P)),
     {
       onGuildCardSeen: H,
@@ -84,27 +84,27 @@ function I() {
   }, [P]), i.useEffect(() => {
     I()
   }, [S, I]), i.useEffect(() => {
-    w || d.Z.setState({
+    L || d.Z.setState({
       scrollPosition: null
     })
-  }, [w]), (0, r.jsxs)("div", {
+  }, [L]), (0, r.jsxs)("div", {
     className: y.container,
     children: [(0, r.jsxs)(s.ZP, {
-      variant: w ? s._6.RELATIVE : s._6.OVERLAY,
-      children: [!w && (0, r.jsx)(s.z6, {
+      variant: L ? s._6.RELATIVE : s._6.OVERLAY,
+      children: [!L && (0, r.jsx)(s.z6, {
         scrollPosition: n
-      }), w ? (0, r.jsx)(s.Cm, {
+      }), L ? (0, r.jsx)(s.Cm, {
         icon: l.j9r,
         onClick: x
       }) : (0, r.jsx)(s.aV, {
         icon: l.QTo
-      }), !w && (0, r.jsx)(c.Z, {
+      }), !L && (0, r.jsx)(c.Z, {
         className: U,
         tabs: V,
-        selectedTab: w ? null : S,
+        selectedTab: L ? null : S,
         onTabSelect: W,
         onAvailableWidthChange: D
-      }), w && (0, r.jsx)(l.X6q, {
+      }), L && (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: y.searchResultsHeader,
@@ -116,12 +116,12 @@ function I() {
         placeholder: v.NW.string(v.t["5h0QOD"]),
         onTextChange: Z,
         onClear: x,
-        onSubmit: L,
+        onSubmit: w,
         onCollapsedClick: k,
-        state: w ? N.GlobalDiscoverySearchBarState.DEFAULT : R,
+        state: L ? N.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: M
       })]
-    }), w ? (0, r.jsx)(E.Z, {
+    }), L ? (0, r.jsx)(E.Z, {
       loadId: e.current,
       onGuildCardClick: F,
       onGuildCardSeen: H

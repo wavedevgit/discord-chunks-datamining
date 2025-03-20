@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(413135),
   i = n(836560),
   l = n(392711),
-  o = n.n(l),
-  a = n(710845),
+  a = n.n(l),
+  o = n(710845),
   s = n(998502),
   c = n(901077),
   u = n(76238),
   d = n(852926),
   p = n(981631);
 let h = s.ZP.requireModule("discord_rpc").RPCIPC,
-  f = new a.Z("RPCServer:IPC"),
+  f = new o.Z("RPCServer:IPC"),
   g = {
     HANDSHAKE: 0,
     FRAME: 1,
@@ -56,7 +56,7 @@ function _(e) {
       }, e => {
         throw r(), e
       });
-    return e.write(E(g.PING, o().uniqueId())), i.then(t, n)
+    return e.write(E(g.PING, a().uniqueId())), i.then(t, n)
   })
 }
 
@@ -75,21 +75,21 @@ function O(e) {
     l = n.readInt32LE(4);
   if (!Object.values(g).includes(i) || l < 0) throw Error("protocol error");
   if (null == (t = e.read(l))) throw Error("data size does not match what was received");
-  let o = JSON.parse((n = r.Buffer.from(t)).toString());
+  let a = JSON.parse((n = r.Buffer.from(t)).toString());
   switch (i) {
     case g.PING:
-      e.emit("ping", o), e.write(E(g.PONG, o));
+      e.emit("ping", a), e.write(E(g.PONG, a));
       break;
     case g.PONG:
-      e.emit("pong", o);
+      e.emit("pong", a);
       break;
     case g.HANDSHAKE:
       if (b(e)) throw Error("already did handshake");
-      m(e, !0), e.emit("handshake", o);
+      m(e, !0), e.emit("handshake", a);
       break;
     case g.FRAME:
       if (!b(e)) throw Error("did not handshake");
-      e.emit("request", o);
+      e.emit("request", a);
       break;
     case g.CLOSE:
       e.end(), e.destroy()

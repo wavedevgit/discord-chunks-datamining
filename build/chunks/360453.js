@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(442837),
   l = n(481060),
-  o = n(949389),
-  a = n(324262),
+  a = n(949389),
+  o = n(324262),
   s = n(434404),
   c = n(899667),
   u = n(267642),
@@ -18,10 +18,10 @@ let f = e => {
   let {
     guild: t
   } = e, n = t.id, f = (0, i.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t.id));
-  return null == f || 0 >= (0, u._k)(f, n) ? null : (0, r.jsx)(a.Z, {
+  return null == f || 0 >= (0, u._k)(f, n) ? null : (0, r.jsx)(o.Z, {
     guild: t,
     onDismissed: () => {
-      (0, o.GO)(n)
+      (0, a.GO)(n)
     },
     onClick: () => {
       s.Z.open(n, d.pNK.GUILD_PREMIUM)

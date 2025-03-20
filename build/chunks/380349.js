@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(442837),
   l = n(481060),
-  o = n(314897),
-  a = n(768419),
+  a = n(314897),
+  o = n(768419),
   s = n(456190),
   c = n(239470),
   u = n(894344),
@@ -16,7 +16,7 @@ var i = n(442837),
   h = n(388032);
 
 function f(e, t, n) {
-  let f = (0, i.e7)([a.Z, o.default], () => null != t ? (0, c.Z)(a.Z, o.default, t, e) : void 0, [e, t]);
+  let f = (0, i.e7)([o.Z, a.default], () => null != t ? (0, c.Z)(o.Z, a.default, t, e) : void 0, [e, t]);
   if (null == f || null == e || null == t) return null;
   let g = f.isCurrentUser || f.notPlayable || f.playingSameTrack,
     m = f.isCurrentUser || f.syncingWithUser || f.syncingWithParty;

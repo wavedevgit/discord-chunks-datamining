@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(392711),
   l = n.n(i),
-  o = n(481060),
-  a = n(463395),
+  a = n(481060),
+  o = n(463395),
   s = n(820486),
   c = n(131951),
   u = n(65154);
@@ -23,11 +23,11 @@ function h() {
   let h = (0, s.X)(c.Z.getInputDevices()[t]),
     f = (0, s.X)(c.Z.getOutputDevices()[i]);
   if (l().some(s.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === h || e.displayName === f)) return;
-  let g = l().some(s.Z.lastDeviceConnected, e => a.Z.isCertified(s.Z.inputDevices[e.displayName]) || a.Z.isCertified(s.Z.outputDevices[e.displayName]));
+  let g = l().some(s.Z.lastDeviceConnected, e => o.Z.isCertified(s.Z.inputDevices[e.displayName]) || o.Z.isCertified(s.Z.outputDevices[e.displayName]));
   if ((t === u.w5 && s.Z.lastInputSystemDevice.justChanged || i === u.w5 && s.Z.lastOutputSystemDevice.justChanged) && !g) return;
   let m = l().first(Object.keys(s.Z.lastDeviceConnected)),
     b = null != m && "" !== m ? s.Z.lastDeviceConnected[m] : null;
-  null != b && (s.Z.initialized && null != m && (a.Z.isCertified(s.Z.inputDevices[m]) ? e = a.Z.getCertifiedDevice(s.Z.inputDevices[m]) : a.Z.isCertified(s.Z.outputDevices[m]) && (e = a.Z.getCertifiedDevice(s.Z.outputDevices[m]))), p = !0, (0, o.ZDy)(async () => {
+  null != b && (s.Z.initialized && null != m && (o.Z.isCertified(s.Z.inputDevices[m]) ? e = o.Z.getCertifiedDevice(s.Z.inputDevices[m]) : o.Z.isCertified(s.Z.outputDevices[m]) && (e = o.Z.getCertifiedDevice(s.Z.outputDevices[m]))), p = !0, (0, a.ZDy)(async () => {
     let {
       default: t
     } = await n.e("83536").then(n.bind(n, 43991));

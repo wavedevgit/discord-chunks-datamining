@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(558381),
-  o = n(613311);
-class a extends i.Component {
+  a = n(613311);
+class o extends i.Component {
   componentDidMount() {
     this.fetchStoreListing()
   }
@@ -17,15 +17,15 @@ class a extends i.Component {
       slug: n,
       storeListingId: i,
       pageSize: l,
-      location: a
+      location: o
     } = this.props;
-    return (0, r.jsx)(o.Z, {
+    return (0, r.jsx)(a.Z, {
       inputSkuId: e,
       applicationId: t,
       fetchStoreListing: this.fetchStoreListing,
       slug: n,
       storeListingId: i,
-      location: a,
+      location: o,
       pageSize: l
     })
   }
@@ -46,4 +46,4 @@ class a extends i.Component {
     }) : this[t] = n
   }
 }
-let s = a
+let s = o

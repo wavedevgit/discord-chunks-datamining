@@ -5,10 +5,10 @@ n.d(t, {
 var r = n(710845),
   i = n(914946),
   l = n(452426),
-  o = n(981631);
-let a = new r.Z(o.BZL),
+  a = n(981631);
+let o = new r.Z(a.BZL),
   s = {
-    [o.Etm.CAPTURE_LOG]: {
+    [a.Etm.CAPTURE_LOG]: {
       validation: e => (0, l.Z)(e).required().keys({
         level: e.string().max(10).required(),
         message: e.string().max(1e3).required()
@@ -23,22 +23,22 @@ let a = new r.Z(o.BZL),
         } = e;
         (0, i.bu)(t.transport);
         let l = t.application.id,
-          o = "".concat(l, " - ").concat(r);
+          a = "".concat(l, " - ").concat(r);
         switch (n) {
           case "log":
-            a.log(o);
+            o.log(a);
             break;
           case "warn":
-            a.warn(o);
+            o.warn(a);
             break;
           case "debug":
-            a.verbose(o);
+            o.verbose(a);
             break;
           case "info":
-            a.info(o);
+            o.info(a);
             break;
           case "error":
-            a.error(o)
+            o.error(a)
         }
       }
     }

@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   M: () => s,
-  s: () => a
+  s: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(522474),
-  o = n(981631);
-let a = "command-share-modal";
+  a = n(981631);
+let o = "command-share-modal";
 
 function s(e) {
   let {
@@ -18,7 +18,7 @@ function s(e) {
     previewMessage: u,
     requireLaunchChannel: d,
     onShareResult: p
-  } = e, h = l.Z.getWindowOpen(o.KJ3.ACTIVITY_POPOUT) ? i.u1M : i.z1l;
+  } = e, h = l.Z.getWindowOpen(a.KJ3.ACTIVITY_POPOUT) ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {
       ApplicationCommandShareModal: e
@@ -49,7 +49,7 @@ function s(e) {
       requireLaunchChannel: d
     }, n))
   }, {
-    modalKey: a,
+    modalKey: o,
     contextKey: h,
     onCloseCallback: () => {
       p(!1)

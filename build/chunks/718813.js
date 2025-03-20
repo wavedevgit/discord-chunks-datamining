@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041);
 var r, i = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(748780),
   c = n(442837),
   u = n(215569),
@@ -88,10 +88,10 @@ let C = (0, g.Un)({
     tension: 100
   };
 
-function L() {
+function w() {
   return l.useEffect(() => (f.Z.enable(), f.Z.enableTemp(h.u), () => f.Z.disableTemp()), []), null
 }
-class w extends(r = l.PureComponent) {
+class L extends(r = l.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.mode ? {
       animating: !0,
@@ -170,7 +170,7 @@ class w extends(r = l.PureComponent) {
       mode: n,
       children: r,
       baseLayer: l
-    } = t, o = function(e, t) {
+    } = t, a = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -187,13 +187,13 @@ class w extends(r = l.PureComponent) {
     }(t, ["mode", "children", "baseLayer"]), c = e || n === Z ? this.getAnimatedStyle() : null, u = (0, i.jsx)(s.Z.div, I(y({
       ref: e => this.containerRef.current = null != e ? e.refs.node : void 0,
       "aria-hidden": n === Z,
-      className: a()(N.layer, {
+      className: o()(N.layer, {
         [N.baseLayer]: l,
         [N.animating]: e,
         "stop-animations": n === Z
       }),
       style: c
-    }, o), {
+    }, a), {
       children: r
     }));
     return l ? u : (0, i.jsx)(d.EqS, {
@@ -229,9 +229,9 @@ class w extends(r = l.PureComponent) {
     }
   }
 }
-v(w, "defaultProps", {
+v(L, "defaultProps", {
   baseLayer: !1
-}), v(w, "contextType", d.Sfi);
+}), v(L, "contextType", d.Sfi);
 class R extends l.PureComponent {
   componentDidMount() {
     E.S.subscribe(O.CkL.LAYER_POP_ESCAPE_KEY, p.xf)
@@ -247,7 +247,7 @@ class R extends l.PureComponent {
     } = this.props, {
       length: r
     } = t, l = [];
-    return l.push((0, i.jsx)(w, {
+    return l.push((0, i.jsx)(L, {
       mode: 0 !== r || n ? Z : A,
       baseLayer: !0,
       children: e
@@ -255,16 +255,16 @@ class R extends l.PureComponent {
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? j[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(w, {
+    return r = "string" == typeof e ? j[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(L, {
       mode: t === n - 1 ? A : Z,
-      children: [(0, i.jsx)(L, {}), r]
+      children: [(0, i.jsx)(w, {}), r]
     }, "layer-".concat(t))
   }
   renderArtisanalHack() {
     return (0, i.jsx)(d.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: a()(N.bg, e)
+        className: o()(N.bg, e)
       })
     })
   }
@@ -272,7 +272,7 @@ class R extends l.PureComponent {
     return (0, i.jsxs)(i.Fragment, {
       children: [this.renderArtisanalHack(), (0, i.jsx)(u.W, {
         component: "div",
-        className: a()(N.layers, this.props.className),
+        className: o()(N.layers, this.props.className),
         children: this.renderLayers()
       })]
     })

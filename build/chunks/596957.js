@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(529103),
   u = n(194359),
@@ -62,9 +62,9 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = [];
+let w = [];
 
-function w() {
+function L() {
   c.Z.setSection(P.pJs.ADD_FRIEND)
 }
 
@@ -81,7 +81,7 @@ function D(e) {
   let {
     section: t,
     showSpamCta: n
-  } = e, l = i.useMemo(() => n ? R : t !== P.pJs.PENDING ? w : void 0, [n, t]);
+  } = e, l = i.useMemo(() => n ? R : t !== P.pJs.PENDING ? L : void 0, [n, t]);
   return (0, r.jsx)("div", {
     className: A.emptyStateContainer,
     children: (0, r.jsx)(N.Z, {
@@ -98,10 +98,10 @@ let k = function(e) {
   } = (0, h.ZP)(p.Z.FRIENDS_LIST), {
     rows: l,
     section: c
-  } = (0, a.cj)([_.ZP], () => _.ZP.getState()), w = (0, a.e7)([E.Z], () => E.Z.isFocused()), {
+  } = (0, o.cj)([_.ZP], () => _.ZP.getState()), L = (0, o.e7)([E.Z], () => E.Z.isFocused()), {
     relationshipCount: k,
     hasBlockedOrIgnored: M
-  } = (0, a.cj)([b.Z], () => ({
+  } = (0, o.cj)([b.Z], () => ({
     relationshipCount: b.Z.getRelationshipCount(),
     hasBlockedOrIgnored: b.Z.getBlockedOrIgnoredIDs().length > 0
   })), U = (0, g.wn)({
@@ -131,20 +131,20 @@ let k = function(e) {
     switch (c) {
       case P.pJs.PENDING:
         return (0, r.jsx)(v.Z, x(Z({}, n), {
-          isFocused: w
+          isFocused: L
         }), t);
       case P.pJs.SUGGESTIONS:
         return (0, r.jsx)(S.Z, x(Z({}, n), {
-          isFocused: w
+          isFocused: L
         }), t);
       case P.pJs.ONLINE:
       case P.pJs.ALL:
       default:
         return (0, r.jsx)(O.Z, x(Z({}, n), {
-          isFocused: w
+          isFocused: L
         }), t)
     }
-  }, [w, c]), B = i.useCallback(e => {
+  }, [L, c]), B = i.useCallback(e => {
     W(x(Z({}, G), {
       [c]: e
     }))
@@ -153,7 +153,7 @@ let k = function(e) {
       [c]: ""
     }))
   }, [G, c]), F = i.useMemo(() => c === P.pJs.PENDING && (l.filter(P.pJs.SPAM).length > 0 || l.filter(P.pJs.PENDING_IGNORED).length > 0), [l, c]), z = i.useMemo(() => l.filter(c, G[c]), [l, G, c]), Y = U && c === P.pJs.PENDING, K = i.useMemo(() => {
-    if (!Y) return L;
+    if (!Y) return w;
     let e = [];
     return z.forEach(t => {
       let {
@@ -238,7 +238,7 @@ let k = function(e) {
     children: (0, r.jsxs)(d.Z, {
       section: P.jXE.FRIENDS_LIST,
       children: [M && (0, r.jsx)(I.R, {}), (0, r.jsx)(s.E1j, {
-        className: o()(A.searchBar, et ? A.searchEmptyState : null),
+        className: a()(A.searchBar, et ? A.searchEmptyState : null),
         query: G[c],
         onChange: B,
         onClear: H,

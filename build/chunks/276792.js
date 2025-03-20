@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(704215),
   l = n(740111),
-  o = n(481060),
-  a = n(963249),
+  a = n(481060),
+  o = n(963249),
   s = n(703656),
   c = n(626135),
   u = n(63063),
@@ -74,7 +74,7 @@ function N(e) {
       };
       break;
     case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
-      y = () => (0, a.Z)({
+      y = () => (0, o.Z)({
         subscriptionTier: f.Si.TIER_2,
         analyticsLocations: S,
         analyticsObject: O(E({}, T), {
@@ -89,7 +89,7 @@ function N(e) {
       });
       break;
     case l.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      y = () => (0, a.Z)({
+      y = () => (0, o.Z)({
         subscriptionTier: f.Si.TIER_1,
         analyticsLocations: S,
         analyticsObject: O(E({}, T), {
@@ -103,7 +103,7 @@ function N(e) {
       break;
     case l.Wc.OPEN_TIER_2_PAYMENT_MODAL:
     default:
-      y = () => (0, a.Z)({
+      y = () => (0, o.Z)({
         subscriptionTier: f.Si.TIER_2,
         analyticsLocations: S,
         analyticsObject: O(E({}, T), {
@@ -115,22 +115,22 @@ function N(e) {
         }
       })
   }
-  let L = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(o.eee, {
+  let w = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+      children: ["\xa0", (0, r.jsx)(a.eee, {
         className: b.termsApplyAnchor,
         href: u.Z.getArticleURL(I.helpArticleId),
         children: m.NW.string(m.t["sBp+u7"])
       })]
     }) : void 0,
-    w = {
+    L = {
       type: "video",
       src: P ? I.heroArtVideoLinkLightTheme : I.videoLink
     };
-  null != I.heroArtVideoSubtitles && (w.subtitles = I.heroArtVideoSubtitles.map(e => ({
+  null != I.heroArtVideoSubtitles && (L.subtitles = I.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: !1
-  }))), ("" !== I.heroArtImageLinkDarkTheme || "" !== I.heroArtImageLinkLightTheme) && (w = {
+  }))), ("" !== I.heroArtImageLinkDarkTheme || "" !== I.heroArtImageLinkLightTheme) && (L = {
     type: "image",
     src: P ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
   });
@@ -145,9 +145,9 @@ function N(e) {
     header: I.header,
     modalTopExtra: D,
     subHeader: I.subheader,
-    subHeaderExtra: L,
+    subHeaderExtra: w,
     body: I.body,
-    heroArt: w,
+    heroArt: L,
     featureCards: I.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
@@ -157,11 +157,11 @@ function N(e) {
     changeLogId: j,
     button: () => {
       let e = Date.now();
-      return (0, r.jsxs)(o.gtL, {
+      return (0, r.jsxs)(a.gtL, {
         className: b.buttonWide,
         innerClassName: b.innerButton,
         wrapperClassName: b.tier2Gradient,
-        size: o.zxk.Sizes.SMALL,
+        size: a.zxk.Sizes.SMALL,
         onClick: () => {
           c.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: j,

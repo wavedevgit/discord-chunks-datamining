@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(903772),
   i = n(433517),
   l = n(570140),
-  o = n(188471),
-  a = n(581567),
+  a = n(188471),
+  o = n(581567),
   s = n(594190),
   c = n(709706),
   u = n(19780),
@@ -73,9 +73,9 @@ async function C() {
   null != m && (u.client_heartbeat_renderer_memory_used_heap = m);
   {
     let e = s.ZP.getCurrentGameForAnalytics();
-    null != e && (u.client_heartbeat_current_game_id = e.id, u.client_heartbeat_current_game_name = e.name, u.client_heartbeat_current_game_executable = (0, a.N6)(e.exePath), u.client_heartbeat_current_game_distributor = e.distributor, u.uses_client_mods = (0, r.e)()), c.Z.isNativeModuleLoaded() && (u.voice_filters_native_module_loaded = !0)
+    null != e && (u.client_heartbeat_current_game_id = e.id, u.client_heartbeat_current_game_name = e.name, u.client_heartbeat_current_game_executable = (0, o.N6)(e.exePath), u.client_heartbeat_current_game_distributor = e.distributor, u.uses_client_mods = (0, r.e)()), c.Z.isNativeModuleLoaded() && (u.voice_filters_native_module_loaded = !0)
   }
-  d.default.track(b.rMx.CLIENT_HEARTBEAT, u), i.K.set(_, Date.now().toString()), (0, o.Z)()
+  d.default.track(b.rMx.CLIENT_HEARTBEAT, u), i.K.set(_, Date.now().toString()), (0, a.Z)()
 }
 let S = null,
   T = !0;
@@ -88,13 +88,13 @@ function P() {
   } else !v || (v = !1, f.Z.addBreadcrumb({
     category: E,
     message: "Stopping Analytics Heartbeat"
-  }), (0, g.f)(!1), I(), (0, o.Z)())
+  }), (0, g.f)(!1), I(), (0, a.Z)())
 }
 
 function j() {
   f.Z.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
-  }), u.Z.addChangeListener(Z), l.Z.subscribe("WINDOW_FOCUS", x), l.Z.subscribe("APP_STATE_UPDATE", L), l.Z.subscribe("LOGIN_SUCCESS", A), P()
+  }), u.Z.addChangeListener(Z), l.Z.subscribe("WINDOW_FOCUS", x), l.Z.subscribe("APP_STATE_UPDATE", w), l.Z.subscribe("LOGIN_SUCCESS", A), P()
 }
 
 function A() {
@@ -113,7 +113,7 @@ function x(e) {
   T = t, P()
 }
 
-function L(e) {
+function w(e) {
   let {
     state: t
   } = e;

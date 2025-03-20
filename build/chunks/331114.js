@@ -4,9 +4,9 @@ n.d(t, {
 }), n(47120);
 var r, i = n(442837),
   l = n(570140),
-  o = n(881052);
+  a = n(881052);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,10 +23,10 @@ class c {
     this.counts = e, this.isFetching = !1, this.isInitialFetchComplete = !0
   }
   handleSearchCountFailure(e) {
-    this.error = new o.Hx(e), this.isFetching = !1
+    this.error = new a.Hx(e), this.isFetching = !1
   }
   constructor() {
-    a(this, "isInitialFetchComplete", !1), a(this, "isFetching", !1), a(this, "error", null), a(this, "counts", null)
+    o(this, "isInitialFetchComplete", !1), o(this, "isFetching", !1), o(this, "error", null), o(this, "counts", null)
   }
 }
 
@@ -51,7 +51,7 @@ class p extends(r = i.ZP.Store) {
     return d(e, e => e.counts)
   }
 }
-a(p, "displayName", "GlobalDiscoveryServersSearchCountStore");
+o(p, "displayName", "GlobalDiscoveryServersSearchCountStore");
 let h = new p(l.Z, {
   CONNECTION_OPEN: function() {
     s.clear()

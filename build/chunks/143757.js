@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(239091),
   u = n(317381),
@@ -79,7 +79,7 @@ function P(e) {
     loadingAppId: n,
     setLoadingAppId: l,
     analyticsLocations: c
-  } = e, p = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), h = null != p && p.applicationId === t.id, f = n === t.id, m = null != n, b = i.useCallback(() => {
+  } = e, p = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), h = null != p && p.applicationId === t.id, f = n === t.id, m = null != n, b = i.useCallback(() => {
     if (!m) {
       if (h) {
         let e = p.location;
@@ -88,7 +88,7 @@ function P(e) {
     }
   }, [h, c, t, l, p, m]);
   return (0, r.jsx)(s.P3F, {
-    className: o()(y.clickable, {
+    className: a()(y.clickable, {
       [y.disabledClickable]: m
     }),
     onClick: b,
@@ -163,7 +163,7 @@ function Z(e) {
     bottomDivider: t
   } = e, {
     frecentApps: n
-  } = (0, O.ZC)(), [l, a] = i.useState(void 0), {
+  } = (0, O.ZC)(), [l, o] = i.useState(void 0), {
     analyticsLocations: s
   } = (0, f.ZP)(h.Z.APP_DMS_QUICK_LAUNCHER_FRECENCY), c = i.useRef(!1), u = i.useMemo(() => n.filter(E.lm).slice(0, 8), [n]);
   return i.useLayoutEffect(() => {
@@ -176,7 +176,7 @@ function Z(e) {
       className: y.container,
       onContextMenu: A,
       children: [(0, r.jsxs)(m.Z, {
-        className: o()(y.headerContainer, I.privateChannelsHeaderContainer),
+        className: a()(y.headerContainer, I.privateChannelsHeaderContainer),
         children: [(0, r.jsx)("span", {
           className: I.headerText,
           children: v.NW.string(v.t.vayAzs)
@@ -186,7 +186,7 @@ function Z(e) {
       }), (0, r.jsx)(j, {
         frecentApps: u,
         loadingAppId: l,
-        setLoadingAppId: a,
+        setLoadingAppId: o,
         analyticsLocations: s
       })]
     }), t]

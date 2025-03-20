@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(570140),
   i = n(457330),
   l = n(726542),
-  o = n(231757),
-  a = n(553795),
+  a = n(231757),
+  o = n(553795),
   s = n(585483),
   c = n(996106),
   u = n(914946),
@@ -47,7 +47,7 @@ let m = new Set([f.Fu, f.JT]),
           errorCode: g.lT.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         return new Promise(async (e, t) => {
-          let l = a.Z.getAccount(null, n);
+          let l = o.Z.getAccount(null, n);
           if (null == l) {
             function u(t) {
               var n;
@@ -67,7 +67,7 @@ let m = new Set([f.Fu, f.JT]),
             function m() {
               r.Z.unsubscribe("USER_CONNECTIONS_UPDATE", u), s.S.unsubscribe(h.CkL.CONNECTIONS_CALLBACK_ERROR, p)
             }
-            r.Z.subscribe("USER_CONNECTIONS_UPDATE", u), s.S.subscribe(h.CkL.CONNECTIONS_CALLBACK_ERROR, p), (0, o.Z)({
+            r.Z.subscribe("USER_CONNECTIONS_UPDATE", u), s.S.subscribe(h.CkL.CONNECTIONS_CALLBACK_ERROR, p), (0, a.Z)({
               platformType: f.type,
               location: h.Sbl.ACTIVITY_RPC,
               successRedirect: d
@@ -102,8 +102,8 @@ let m = new Set([f.Fu, f.JT]),
         } = e;
         (0, u.bu)(t.transport);
         let r = (0, u._f)(t.application),
-          o = l.Z.get(n);
-        if (null == o) throw new c.Z({
+          a = l.Z.get(n);
+        if (null == a) throw new c.Z({
           errorCode: g.lT.INVALID_PROVIDER
         }, 'Platform not found for provider "'.concat(n, '"'));
         if (n === h.ABu.AMAZON_MUSIC) {
@@ -113,11 +113,11 @@ let m = new Set([f.Fu, f.JT]),
         } else throw new c.Z({
           errorCode: g.lT.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
-        let s = a.Z.getAccount(null, n);
+        let s = o.Z.getAccount(null, n);
         if (null == s) throw new c.Z({
           errorCode: g.lT.NO_CONNECTION_FOUND
         }, "No connection found");
-        let d = await i.Z.refreshAccessToken(o.type, s.id);
+        let d = await i.Z.refreshAccessToken(a.type, s.id);
         if (null == d) throw new c.Z({
           errorCode: g.lT.OAUTH2_ERROR
         }, "Refreshing access token did not return a new access token");

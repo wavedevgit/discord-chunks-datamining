@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(82295),
   l = n(260753);
 
-function o(e) {
+function a(e) {
   let {
     title: t,
     id: n

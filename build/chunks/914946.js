@@ -8,9 +8,9 @@ n.d(t, {
   YK: () => er,
   YS: () => et,
   _J: () => Y,
-  _f: () => ea,
+  _f: () => eo,
   aE: () => z,
-  bu: () => eo,
+  bu: () => ea,
   kb: () => K,
   s9: () => q,
   t9: () => $,
@@ -20,8 +20,8 @@ n.d(t, {
   zy: () => X
 }), n(301563), n(474991), n(398202), n(47120), n(653041), n(411104), n(757143), n(789020), n(230036), n(392711);
 var r, i, l = n(729594),
-  o = n(243814),
-  a = n(544891),
+  a = n(243814),
+  o = n(544891),
   s = n(63023),
   c = n(433517),
   u = n(904245),
@@ -47,9 +47,9 @@ var r, i, l = n(729594),
   A = n(996106),
   Z = n(863141),
   x = n(186901),
-  L = n(981631);
+  w = n(981631);
 
-function w(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -108,10 +108,10 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [L.d4z.GUILD_CATEGORY, ...b.tx].includes(e.type) || n.push(new Promise(t => {
+  return [w.d4z.GUILD_CATEGORY, ...b.tx].includes(e.type) || n.push(new Promise(t => {
     v.Z.whenReady(e.id, () => t()), u.Z.fetchMessages({
       channelId: e.id,
-      limit: L.AQB
+      limit: w.AQB
     })
   })), Promise.all(n).then(() => {
     var n;
@@ -166,8 +166,8 @@ function z(e, t, n) {
     mute: r,
     deaf: i,
     selfMute: l,
-    selfDeaf: o,
-    suppress: a,
+    selfDeaf: a,
+    suppress: o,
     userId: s
   } = n, c = I.default.getUser(s);
   if (null == c) throw Error("Invalid user id: ".concat(s));
@@ -180,8 +180,8 @@ function z(e, t, n) {
       mute: r,
       deaf: i,
       self_mute: l,
-      self_deaf: o,
-      suppress: a
+      self_deaf: a,
+      suppress: o
     },
     user: (0, Z.Z)(c)
   }
@@ -200,8 +200,8 @@ function Y(e, t) {
 
 function K(e, t) {
   var n;
-  return null == t ? e : R(w({}, e), {
-    presence: R(w({}, e.presence), {
+  return null == t ? e : R(L({}, e), {
+    presence: R(L({}, e.presence), {
       activity: null !== (n = y.Z.getApplicationActivity(e.user.id, t)) && void 0 !== n ? n : null
     })
   })
@@ -222,14 +222,14 @@ function q(e) {
 
 function Q(e, t, n) {
   let r = O.Z.getGuild(e.getGuildId());
-  return (null != r ? r.getApplicationId() : e.getApplicationId()) === t || n.indexOf(o.x.MESSAGES_READ) > -1
+  return (null != r ? r.getApplicationId() : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > -1
 }
 
 function X(e) {
   switch (e) {
-    case L.hes.RTC_CONNECTED:
-    case L.hes.RTC_CONNECTING:
-    case L.hes.RTC_DISCONNECTED:
+    case w.hes.RTC_CONNECTED:
+    case w.hes.RTC_CONNECTING:
+    case w.hes.RTC_DISCONNECTED:
       return e.replace(/^RTC_/, "VOICE_");
     default:
       return e
@@ -244,19 +244,19 @@ function J(e) {
       party: i
     } = e,
     l = 0;
-  n && (l |= L.xjy.INSTANCE), (null == r ? void 0 : r.join) != null && (l |= L.xjy.JOIN);
-  let o = g.cP.getSetting(),
-    a = g.Ou.getSetting();
-  return t ? (l |= L.xjy.EMBEDDED, o && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), a && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) : ((null == i ? void 0 : i.privacy) === L.RYY.PUBLIC || c.K.get("ACTIVITIES_FORCE_PUBLIC")) && (o && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), a && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)), l
+  n && (l |= w.xjy.INSTANCE), (null == r ? void 0 : r.join) != null && (l |= w.xjy.JOIN);
+  let a = g.cP.getSetting(),
+    o = g.Ou.getSetting();
+  return t ? (l |= w.xjy.EMBEDDED, a && (l |= w.xjy.PARTY_PRIVACY_FRIENDS), o && (l |= w.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) : ((null == i ? void 0 : i.privacy) === w.RYY.PUBLIC || c.K.get("ACTIVITIES_FORCE_PUBLIC")) && (a && (l |= w.xjy.PARTY_PRIVACY_FRIENDS), o && (l |= w.xjy.PARTY_PRIVACY_VOICE_CHANNEL)), l
 }
 
 function $(e, t, n) {
-  return e === L.mFx.JOIN && null != t && null != t.id && null != n.join
+  return e === w.mFx.JOIN && null != t && null != t.id && null != n.join
 }
 
 function ee(e) {
-  return a.tn.get({
-    url: L.ANM.APPLICATION_RPC(e),
+  return o.tn.get({
+    url: w.ANM.APPLICATION_RPC(e),
     oldFormErrors: !0,
     retries: 3,
     rejectWithError: !0
@@ -267,7 +267,7 @@ function ee(e) {
     return t
   }, () => {
     throw new A.Z({
-      closeCode: L.$VG.INVALID_CLIENTID
+      closeCode: w.$VG.INVALID_CLIENTID
     }, "Invalid Client ID")
   })
 }
@@ -277,12 +277,12 @@ async function et(e, t, n) {
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, d.ZP)(t);
       if (null == e || !B(n, [e])) throw new A.Z({
-        closeCode: L.$VG.INVALID_ORIGIN
+        closeCode: w.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await ee(t);
       if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new A.Z({
-        closeCode: L.$VG.INVALID_ORIGIN
+        closeCode: w.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     }
   }
@@ -290,15 +290,15 @@ async function et(e, t, n) {
   let {
     id: i,
     name: l,
-    icon: o,
-    coverImage: a,
+    icon: a,
+    coverImage: o,
     flags: s
   } = r;
   e.application = {
     id: i,
     name: l,
-    icon: o,
-    coverImage: a,
+    icon: a,
+    coverImage: o,
     flags: s
   }
 }
@@ -361,15 +361,15 @@ function el(e, t) {
   }
 }
 
-function eo(e) {
+function ea(e) {
   if (e !== x.He.POST_MESSAGE) throw new A.Z({
-    errorCode: L.lTL.INVALID_COMMAND
+    errorCode: w.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
-function ea(e) {
+function eo(e) {
   if (null == e.id) throw new A.Z({
-    errorCode: L.lTL.INVALID_COMMAND
+    errorCode: w.lTL.INVALID_COMMAND
   }, "Invalid application");
   return e.id
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(322665),
-  a = n(17845),
+  a = n(322665),
+  o = n(17845),
   s = n(374939),
   c = n(283293),
   u = n(726115),
@@ -30,23 +30,23 @@ function g(e) {
   } = e, _ = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), N = (0, u.lg)(t), v = i.useMemo(() => {
     let e = p ? 30 : n.length,
       t = [];
-    for (let o = 0; o < e; o++) {
+    for (let a = 0; a < e; a++) {
       var i, l;
       t.push((0, r.jsx)(d.Eo, {
-        guildId: null !== (i = n[o]) && void 0 !== i ? i : null,
-        index: o,
-        onClick: e => m(e, o, N, f),
+        guildId: null !== (i = n[a]) && void 0 !== i ? i : null,
+        index: a,
+        onClick: e => m(e, a, N, f),
         onView: e => b(e, N)
-      }, null !== (l = n[o]) && void 0 !== l ? l : o))
+      }, null !== (l = n[a]) && void 0 !== l ? l : a))
     }
     return t
   }, [N, n, p, m, b]);
   return (0, r.jsxs)(c.Z, {
     onScroll: g,
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(o.Z, {
       title: _,
       description: E,
-      children: (0, r.jsx)(o.Z, {})
+      children: (0, r.jsx)(a.Z, {})
     }), (0, r.jsxs)(s.Z, {
       children: [(0, r.jsx)(l.X6q, {
         className: h.sectionTitle,

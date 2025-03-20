@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r, i = n(192379),
   l = n(442837),
-  o = n(179360),
-  a = n(897285),
+  a = n(179360),
+  o = n(897285),
   s = n(300213),
   c = n(554747),
   u = n(499137),
@@ -48,8 +48,8 @@ function I(e) {
     A = (0, N.rF)(j, n) !== v.Eu4.NONE,
     Z = !(null != r && Date.now() - r <= 432e5) && !P && T && A,
     x = (0, s.m)(n),
-    L = (0, l.e7)([_.Z], () => _.Z.isVisible(e)),
-    w = d.Z.useShouldShowChannelNotice(n),
+    w = (0, l.e7)([_.Z], () => _.Z.isVisible(e)),
+    L = d.Z.useShouldShowChannelNotice(n),
     R = (0, p.h6)(e),
     {
       enableStudyGroup: D
@@ -59,11 +59,11 @@ function I(e) {
     U = (0, c.Vm)(n),
     G = (0, l.e7)([f.Z], () => null != f.Z.getActiveGuildSignUp(n));
   if (i.useEffect(() => {
-      a.Z.getGuildEventsForCurrentUser(n)
+      o.Z.getGuildEventsForCurrentUser(n)
     }, [n]), i.useEffect(() => {
       let e = -1;
       return Z && (e = window.setTimeout(() => {
-        null != n && (0, o.C0)(n)
+        null != n && (0, a.C0)(n)
       }, 30 * Math.random() * O.Z.Millis.SECOND)), () => {
         window.clearTimeout(e)
       }
@@ -71,8 +71,8 @@ function I(e) {
   if (I) return 1;
   if (S) return 2;
   if (x || null != U) return 3;
-  if (L) return 4;
-  else if (w) return 5;
+  if (w) return 4;
+  else if (L) return 5;
   else if (k) return 6;
   else if (M) return 7;
   else if (G) return 8;

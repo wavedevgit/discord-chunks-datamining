@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041), n(47120);
 var r, i = n(392711),
   l = n.n(i),
-  o = n(442837),
-  a = n(570140),
+  a = n(442837),
+  o = n(570140),
   s = n(194359),
   c = n(81825),
   u = n(353926),
@@ -120,11 +120,11 @@ class A {
         let {
           id: i,
           applicationId: l,
-          type: o
+          type: a
         } = t;
-        !(o === N.OGo.FRIEND && e.has(i)) && (o === N.OGo.FRIEND && n.has(i) || (o === N.OGo.FRIEND && n.add(i), r.push(new j(C(I({
+        !(a === N.OGo.FRIEND && e.has(i)) && (a === N.OGo.FRIEND && n.has(i) || (a === N.OGo.FRIEND && n.add(i), r.push(new j(C(I({
           key: "".concat(i, "-").concat(l),
-          type: o,
+          type: a,
           userId: i,
           applicationId: l,
           nickname: E.Z.getNickname(i)
@@ -199,50 +199,50 @@ class A {
 }
 let Z = !0,
   x = !1,
-  L = N.pJs.ONLINE,
-  w = new A,
+  w = N.pJs.ONLINE,
+  L = new A,
   R = !0,
   D = !1;
 
 function k() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  Z && (e || L !== N.pJs.ONLINE && L !== N.pJs.ADD_FRIEND) && !x && (Z = !1, x = !0, s.Z.fetchRelationships())
+  Z && (e || w !== N.pJs.ONLINE && w !== N.pJs.ADD_FRIEND) && !x && (Z = !1, x = !0, s.Z.fetchRelationships())
 }
 
 function M() {
-  if (Z = !0, R ? x = !1 : k(), w = w.reset(), D) return;
-  let e = w.getRelationshipCounts();
-  L = 0 === e[N.OGo.FRIEND] ? 0 !== e[N.OGo.PENDING_INCOMING] ? N.pJs.PENDING : N.pJs.ADD_FRIEND : N.pJs.ONLINE
+  if (Z = !0, R ? x = !1 : k(), L = L.reset(), D) return;
+  let e = L.getRelationshipCounts();
+  w = 0 === e[N.OGo.FRIEND] ? 0 !== e[N.OGo.PENDING_INCOMING] ? N.pJs.PENDING : N.pJs.ADD_FRIEND : N.pJs.ONLINE
 }
 
 function U() {
-  w = R ? new A : w.reset()
+  L = R ? new A : L.reset()
 }
 
 function G(e) {
   return function() {
-    return !R && !!w.update(e) && (w = w.clone(), !0)
+    return !R && !!L.update(e) && (L = L.clone(), !0)
   }
 }
-class W extends(r = o.ZP.Store) {
+class W extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(E.Z, _.Z, O.default, b.Z, m.ZP, g.Z, d.Z, u.Z), this.syncWith([E.Z], U), this.syncWith([h.Z], U), this.syncWith([d.Z], U), this.syncWith([f.Z], U), this.syncWith([O.default], G(S)), this.syncWith([_.Z, g.Z], G(T)), M()
   }
   getState() {
     return {
       fetching: x,
-      section: L,
-      rows: w
+      section: w,
+      rows: L
     }
   }
 }
 y(W, "displayName", "FriendsStore");
-let V = new W(a.Z, {
+let V = new W(o.Z, {
   CONNECTION_OPEN: function() {
     M()
   },
   FRIENDS_SET_SECTION: function(e) {
-    L = e.section, k()
+    w = e.section, k()
   },
   CHANNEL_SELECT: function(e) {
     let {
@@ -257,6 +257,6 @@ let V = new W(a.Z, {
     Z = !0, x = !0
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
-    L = e.section, D = !0
+    w = e.section, D = !0
   }
 })

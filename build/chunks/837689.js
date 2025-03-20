@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(873546),
   l = n(704215),
-  o = n(481060),
-  a = n(570140),
+  a = n(481060),
+  o = n(570140),
   s = n(317770),
   c = n(605236),
   u = n(594174),
@@ -37,10 +37,10 @@ function C(e, t, n) {
 let S = "PremiumServerDriveAnnouncementModal";
 class T extends s.Z {
   _initialize() {
-    a.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), a.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
+    o.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), o.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
   }
   _terminate() {
-    a.Z.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), a.Z.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
+    o.Z.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), o.Z.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
   }
   constructor(...e) {
     super(...e), C(this, "maybeOpenServerDriveAnnouncementModal", async (e, t) => {
@@ -56,7 +56,7 @@ class T extends s.Z {
               location: "OfferAnnouncementManager"
             })) return !1
         }
-        return (0, o.Mr3)(S), (0, o.ZDy)(async () => {
+        return (0, a.Mr3)(S), (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 318199));
@@ -95,9 +95,9 @@ class T extends s.Z {
         }).enabled,
         n = (0, c.un)(l.z.Q1_2025_FOLLOW_UP_REVERSE_TRIAL_OFFER),
         r = u.default.getCurrentUser();
-      if (t && !n && !(0, o.$sL)() && !(0, p.I5)(r) && await (0, g.G)(e.userTrialOffer) && (0, N.Z)({
+      if (t && !n && !(0, a.$sL)() && !(0, p.I5)(r) && await (0, g.G)(e.userTrialOffer) && (0, N.Z)({
           upsellType: I.cd.REVERSE_TRIAL_FOLLOWUP_UPSELL
-        }), (null == r || r.verified) && !(0, o.$sL)() && m.Z.getCurrentConfig({
+        }), (null == r || r.verified) && !(0, a.$sL)() && m.Z.getCurrentConfig({
           location: "OfferAnnouncementManager"
         }).enabled && !i.tq) {
         for (let t of (await (0, E.He)(e)))

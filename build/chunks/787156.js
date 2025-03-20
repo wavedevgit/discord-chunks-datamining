@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  wQ: () => o
+  wQ: () => a
 });
 var r = n(972841);
 let i = new Date(Date.UTC(1990, 1, 1, 0, 0, 0)),
   l = new Date(Date.UTC(2030, 1, 1, 0, 0, 0)),
-  o = e => {
+  a = e => {
     let {
       location: t
     } = e;

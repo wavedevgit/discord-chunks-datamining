@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(481060),
-  a = n(278323),
+  a = n(481060),
+  o = n(278323),
   s = n(287734),
   c = n(230711),
   u = n(726542),
@@ -70,7 +70,7 @@ function P(e) {
       } = e;
       return (0, h.Z)(t)
     });
-    return n || !i ? null : (0, r.jsx)(o.sNh, {
+    return n || !i ? null : (0, r.jsx)(a.sNh, {
       id: "xbox-connect",
       action: () => c.Z.open(y.oAB.CONNECTIONS),
       label: I.NW.formatToPlainString(I.t.XWSHTU, {
@@ -116,7 +116,7 @@ function P(e) {
       if (!n || null == i) return null;
       async function c() {
         if (null == i) return;
-        let e = await a.Z.sendActivityInviteUser({
+        let e = await o.Z.sendActivityInviteUser({
           type: y.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
@@ -124,7 +124,7 @@ function P(e) {
         });
         null != e && s.default.selectPrivateChannel(e.id)
       }
-      return (0, r.jsx)(o.sNh, {
+      return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
         label: t ? I.NW.formatToPlainString(I.t.wFAvxM, {
           name: l.toString()
@@ -136,7 +136,7 @@ function P(e) {
         activity: n,
         game: i,
         libraryApplication: l,
-        location: a,
+        location: o,
         canPlay: s,
         isRunning: c,
         isLaunching: u
@@ -147,12 +147,12 @@ function P(e) {
       }) : u ? I.NW.formatToPlainString(I.t.WtSQwM, {
         name: i.name
       }) : void 0;
-      return (0, r.jsx)(o.sNh, {
+      return (0, r.jsx)(a.sNh, {
         id: "play-".concat(n.session_id),
         action: function() {
           (0, v.playApplication)(i.id, l, {
             analyticsParams: {
-              location: S(C({}, a), {
+              location: S(C({}, o), {
                 object: y.qAy.LIST_ITEM
               })
             }

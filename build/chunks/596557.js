@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(704215),
-  o = n(481060),
-  a = n(785697),
+  a = n(481060),
+  o = n(785697),
   s = n(626135),
   c = n(700785),
   u = n(645041),
@@ -17,7 +17,7 @@ var r = n(200651),
 
 function g(e) {
   var t;
-  let g = (0, a.SE)(e),
+  let g = (0, o.SE)(e),
     m = f.$X.some(t => (null == e ? void 0 : e.id) !== h._ && c.oz(t, e)),
     b = (null == e ? void 0 : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
     _ = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : d.lds),
@@ -30,7 +30,7 @@ function g(e) {
   i.useEffect(() => {
     if (E && !N.current) {
       var t;
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: t
         } = await n.e("54597").then(n.bind(n, 29022));

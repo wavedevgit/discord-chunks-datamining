@@ -7,7 +7,7 @@ n(192379);
 var i = n(886364),
   l = n(325767);
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -26,7 +26,7 @@ function o(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,10 +66,10 @@ function c(e) {
     return i
   }(e, ["width", "height", "color", "foreground", "gradientConfig"]);
   let h = null;
-  return null != d && (h = (0, r.jsx)(i.Z, a(o({}, d), {
+  return null != d && (h = (0, r.jsx)(i.Z, o(a({}, d), {
     color: c,
     id: s(d.id)
-  }))), (0, r.jsxs)("svg", a(o({}, (0, l.Z)(p)), {
+  }))), (0, r.jsxs)("svg", o(a({}, (0, l.Z)(p)), {
     width: t,
     height: n,
     viewBox: "0 0 24 24",
