@@ -71,7 +71,7 @@ function A() {
 }
 class C extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    (null == e ? void 0 : e.theme) != null && (O = 1, T = e.theme, (0, f.Z)(T), null != e.preferences && (I = e.preferences)), this.waitFor(p.ZP, _.Z, h.Z, s.Z)
+    (null == e ? void 0 : e.theme) != null && (O = 1, T = e.theme, (0, f.Z)(T), null != e.preferences && (I = e.preferences), (0, o.wj)(T) && (I[m.zd.DARK] = T)), this.waitFor(p.ZP, _.Z, h.Z, s.Z)
   }
   getState() {
     return {

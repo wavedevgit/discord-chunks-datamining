@@ -254,7 +254,9 @@ function Q(e) {
         }), E && (0, r.jsx)(O.p, {
           className: B.upsell,
           upsellText: G.NW.format(G.t.VHXn7O, {
-            onNitroClick: Y
+            onNitroClick: () => {
+              Y(), s()
+            }
           }),
           buttonAnalyticsObject: {
             section: k.jXE.PERMADECOS_MARKETING_UPSELL

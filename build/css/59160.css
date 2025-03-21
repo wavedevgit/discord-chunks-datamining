@@ -1,6 +1,6 @@
 /**
   Module ID: 59160
-  Original File Name: c230adf56d55436d
+  Original File Name: 73be5784317d4395
 **/
 .image__04666 {
     width: 100%;
@@ -2752,7 +2752,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .row__6500b {
-    height: 130px;
+    height: 120px;
     display: flex;
     position: relative
 }
@@ -2834,8 +2834,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFiltersFooter_e2f668:not(.hasActiveVoice_e2f668) {
-    border-top: 1px solid var(--border-subtle);
-    box-shadow: var(--shadow-top-high)
+    border-top: 1px solid var(--border-subtle)
 }
 
 .visual-refresh .voiceFiltersFooter_e2f668,.visual-refresh .voiceFiltersPopout_e2f668 {
@@ -14742,4 +14741,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=c230adf56d55436d.css.map*/
+/*# sourceMappingURL=73be5784317d4395.css.map*/
