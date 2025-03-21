@@ -24,27 +24,30 @@ let _ = e => {
     children: t,
     isForceShowSharingPopout: n,
     setIsForceShowSharingPopout: _
-  } = e, [O, j] = (0, i.useState)(!1), C = function(e) {
+  } = e, [O, j] = (0, i.useState)(!1), x = function(e) {
     let {
-      activityToggleDefaultState: t,
-      isForceShowSharingPopout: n
+      isForceShowSharingPopout: t
     } = e, {
-      rtcPopoutEnabled: r
+      rtcPopoutEnabled: n
     } = (0, g.SN)("SharingPrivacyPopout"), {
-      rtcPopoutEnabled: i
-    } = (0, g.m_)("SharingPrivacyPopout"), l = (0, u.Ws)({
+      rtcPopoutEnabled: r
+    } = (0, g.m_)("SharingPrivacyPopout"), i = (0, u.Ws)({
       location: y.dr.CONFLICT_CHECKS
-    }), a = d.G6.useSetting(), s = (0, o.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)), c = (0, o.e7)([h.Z], () => h.Z.getStatus()), f = !i || c !== b.Skl.INVISIBLE;
-    return (r || i) && (l || !l && n) && !s && !(a && !t && f)
+    }), l = d.G6.useSetting(), a = (0, o.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)), s = (0, o.e7)([h.Z], () => h.Z.getStatus()), c = (i || !i && t) && !a;
+    if (c && r) {
+      if (!l && s === b.Skl.INVISIBLE) return t ? m.N.ActivityAndStatus : m.N.ActivityAndStatusNux;
+      if (!l) return t ? m.N.NewActivity : m.N.NewActivityNux;
+      if (s === b.Skl.INVISIBLE) return t ? m.N.Status : null
+    }
+    return c && n && !l ? t ? m.N.Activity : m.N.ActivityNux : null
   }({
-    activityToggleDefaultState: O,
     isForceShowSharingPopout: n
   });
   return ((0, i.useEffect)(() => {
     n && f.default.track(b.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), C) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != x || O) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [l.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -66,12 +69,10 @@ let _ = e => {
             let {
               closePopout: t
             } = e;
-            return n ? (0, r.jsx)(m.zI, {
+            return (0, r.jsx)(m.I, {
               closePopout: t,
-              setActivityToggleDefaultState: j
-            }) : (0, r.jsx)(m.zu, {
-              closePopout: t,
-              setActivityToggleDefaultState: j
+              onOpen: () => j(!0),
+              popoutState: x
             })
           },
           children: () => (0, r.jsx)(a.P3F, {

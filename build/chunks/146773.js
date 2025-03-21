@@ -24,7 +24,7 @@ var i = n(155281),
   O = n(700785),
   j = n(981631);
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function C(e) {
   }
   return e
 }
-let x = "DRAGGABLE_GUILD_CHANNEL";
+let C = "DRAGGABLE_GUILD_CHANNEL";
 
 function S(e, t) {
   var n, r;
@@ -54,7 +54,7 @@ function S(e, t) {
 }
 
 function P(e) {
-  return (0, i.G)(x, {
+  return (0, i.G)(C, {
     drop(e, t) {
       let n;
       let i = y.Z.getGuildId(),
@@ -90,7 +90,7 @@ function P(e) {
           let e = f.Z.getChannel(n.parent_id);
           null != e && (0, a.h7j)(t => {
             var o, l;
-            return (0, r.jsx)(c.default, (o = C({}, t), l = l = {
+            return (0, r.jsx)(c.default, (o = x({}, t), l = l = {
               channel: u,
               category: e,
               onConfirm: () => {
@@ -144,7 +144,7 @@ function P(e) {
       sortingPosition: t.isOver() && t.canDrop() ? n.position : null,
       sortingParent: t.isOver() && t.canDrop() ? n.parentId : null
     }
-  })((0, o.E)(x, {
+  })((0, o.E)(C, {
     canDrag(e) {
       let {
         channel: t
@@ -156,7 +156,7 @@ function P(e) {
         let {
           default: e
         } = await n.e("82560").then(n.bind(n, 391312));
-        return t => (0, r.jsx)(e, C({}, t))
+        return t => (0, r.jsx)(e, x({}, t))
       }), !1;
       if (t.type === j.d4z.GUILD_CATEGORY) return v.Z.can(j.Plq.MANAGE_CHANNELS, i) && !(0, p.r1)(i.id);
       let o = f.Z.getChannel(t.parent_id);

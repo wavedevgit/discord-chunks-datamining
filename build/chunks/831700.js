@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(873696),
   O = n(446226),
   j = n(305325),
-  C = n(281956),
-  x = n(66999),
+  x = n(281956),
+  C = n(66999),
   S = n(554747),
   P = n(378844),
   I = n(335353),
@@ -207,8 +207,8 @@ class et extends W.ZP {
       showTutorial: _,
       hasActiveEvent: O,
       embeddedApps: j,
-      isSubscriptionGated: C,
-      isFavoriteSuggestion: x,
+      isSubscriptionGated: x,
+      isFavoriteSuggestion: C,
       withGuildIcon: S
     } = this.props, {
       shouldShowActivities: P,
@@ -258,7 +258,7 @@ class et extends W.ZP {
                   }),
                   hasActiveEvent: O,
                   channel: e,
-                  selected: !x && t,
+                  selected: !C && t,
                   connected: n,
                   unread: n ? i : void 0,
                   resolvedUnreadSetting: o,
@@ -272,14 +272,14 @@ class et extends W.ZP {
                     this.handleContextMenu(e), null == d || d()
                   },
                   connectDragPreview: g,
-                  isFavoriteSuggestion: x,
+                  isFavoriteSuggestion: C,
                   "aria-label": (0, m.ZP)({
                     channel: e,
                     unread: i,
                     mentionCount: a,
                     userCount: Z,
                     embeddedActivitiesCount: j.length,
-                    isSubscriptionGated: C
+                    isSubscriptionGated: x
                   }),
                   "aria-describedby": (0, b.Z)({
                     channel: e,
@@ -287,7 +287,7 @@ class et extends W.ZP {
                   }),
                   withGuildIcon: S
                 }, p), {
-                  children: [x && this.renderAcceptSuggestionButton(), x && this.renderRemoveSuggestionButton(), !x && this.renderOpenChatButton(), !x && this.renderInviteButton(), !x && this.renderEditButton(), !x && this.renderChannelInfo(), !x && this.renderHDSplashedIcon()]
+                  children: [C && this.renderAcceptSuggestionButton(), C && this.renderRemoveSuggestionButton(), !C && this.renderOpenChatButton(), !C && this.renderInviteButton(), !C && this.renderEditButton(), !C && this.renderChannelInfo(), !C && this.renderHDSplashedIcon()]
                 }))
               })
             }
@@ -359,7 +359,7 @@ class et extends W.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, C.n)(t) && (0, j.hk)(t), this.handleVoiceConnect()
+      null != t && (0, x.n)(t) && (0, j.hk)(t), this.handleVoiceConnect()
     }), X(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -473,7 +473,7 @@ function er(e) {
   }), h = (0, a.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, v.ZP)(n), b = (0, S.qY)(n.id), {
     isSubscriptionGated: y,
     needSubscriptionToAccess: _
-  } = (0, x.Z)(n.id), j = (0, O.Z)(), C = (0, a.e7)([M.ZP], () => M.ZP.isFavorite(t.id, n.id)), P = e.connected || (null == j ? void 0 : j.channelId) === n.id, I = (0, V.Z)({
+  } = (0, C.Z)(n.id), j = (0, O.Z)(), x = (0, a.e7)([M.ZP], () => M.ZP.isFavorite(t.id, n.id)), P = e.connected || (null == j ? void 0 : j.channelId) === n.id, I = (0, V.Z)({
     channel: n,
     isChannelSelected: l,
     isChannelCollapsed: s,
@@ -493,7 +493,7 @@ function er(e) {
     needSubscriptionToAccess: _
   }, u, p, e), {
     connected: P,
-    isFavoriteSuggestion: o && !C,
+    isFavoriteSuggestion: o && !x,
     forceShowButtons: N,
     channelInfo: I,
     resolvedUnreadSetting: d

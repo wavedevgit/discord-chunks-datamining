@@ -11,5 +11,7 @@ e.exports = {
   toggleContainerWrapper: "toggleContainerWrapper_fa8995",
   toggleContainer: "toggleContainer_fa8995",
   toggleContainerOnlineRow: "toggleContainerOnlineRow_fa8995",
-  toggleContainerText: "toggleContainerText_fa8995"
+  toggleContainerText: "toggleContainerText_fa8995",
+  goOnlineButton: "goOnlineButton_fa8995",
+  divider: "divider_fa8995"
 }

@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(252686),
   O = n(682662),
   j = n(662146),
-  C = n(388032),
-  x = n(457528),
+  x = n(388032),
+  C = n(457528),
   S = n(625704);
 let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   I = (0, s.animated)(d.Kqy),
@@ -74,7 +74,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       q(e)
     }, []), $ = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && k()
-    }, [k, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
+    }, [k, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : x.NW.string(x.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
       let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE);
       return e * (t + ((0, h.Q3)("FolderItem.useHeight") ? 4 : 8))
     }(V.length), ei = (0, d.Yzy)(!K && s, {
@@ -104,7 +104,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
           ref: T ? J : void 0,
-          className: l()(x.folderIcon, {
+          className: l()(C.folderIcon, {
             [S.wobble]: !K && Y && !s
           }),
           "data-dnd-name": ee,
@@ -135,12 +135,12 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     });
     return (0, r.jsxs)("div", {
       ref: eo,
-      className: l()(x.wrapper, s && x.isExpanded),
+      className: l()(C.wrapper, s && C.isExpanded),
       "data-drop-hovering": Y,
       children: [!K && s && (0, r.jsx)("span", {
-        className: l()(x.expandedFolderBackground, {
-          [x.collapsed]: !s,
-          [x.hover]: Q
+        className: l()(C.expandedFolderBackground, {
+          [C.collapsed]: !s,
+          [C.hover]: Q
         })
       }), el, ei((e, t, n) => {
         let {

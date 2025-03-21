@@ -23,12 +23,12 @@ var r = n(200651),
   _ = n(944486),
   O = n(626135),
   j = n(870569),
-  C = n(981631),
-  x = n(388032),
+  x = n(981631),
+  C = n(388032),
   S = n(172241);
 
 function P(e, t, n) {
-  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === C.IIU.PLAYING && (0, d.Z)(t, C.xjy.JOIN))
+  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === x.IIU.PLAYING && (0, d.Z)(t, x.xjy.JOIN))
 }
 let I = i.memo(function(e) {
   let t, o, d, I, {
@@ -55,7 +55,7 @@ let I = i.memo(function(e) {
     } = (0, h.ZP)(),
     U = P(L, k, R),
     W = i.useCallback(() => {
-      l()(null != k, "Received null activity"), (0, f.v)(B, f.d.INVITE), O.default.track(C.rMx.OPEN_MODAL, {
+      l()(null != k, "Received null activity"), (0, f.v)(B, f.d.INVITE), O.default.track(x.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: k.application_id,
         location: M.location
@@ -104,7 +104,7 @@ let I = i.memo(function(e) {
             sourcePID: null == D ? void 0 : D.pid,
             selectSource: !1,
             guildId: t,
-            analyticsLocation: C.Sbl.ACTIVITY_PANEL
+            analyticsLocation: x.Sbl.ACTIVITY_PANEL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -122,11 +122,11 @@ let I = i.memo(function(e) {
       isContextless: R.location.kind === a.E.CONTEXTLESS
     })) && (E || Z) ? (E ? (t = !1, o = () => {
       F(), (0, f.v)(B, f.d.STREAM, !1)
-    }, d = s.g5r, I = x.NW.string(x.t.S5anIS)) : A ? (t = !1, o = () => {
+    }, d = s.g5r, I = C.NW.string(C.t.S5anIS)) : A ? (t = !1, o = () => {
       H(), (0, f.v)(B, f.d.STREAM, !0)
-    }, d = s.hGI, I = null != D ? x.NW.formatToPlainString(x.t.AB5gT0, {
+    }, d = s.hGI, I = null != D ? C.NW.formatToPlainString(C.t.AB5gT0, {
       game: D.name
-    }) : x.NW.string(x.t.FeUKeH)) : (t = !0, o = null, d = s.hGI, I = null != T && (0, y.vd)(T.type) ? x.NW.string(x.t.uQn9Bw) : null != w ? x.NW.string(x.t.fBXEoK) : x.NW.string(x.t.n3feND)), (0, r.jsx)("div", {
+    }) : C.NW.string(C.t.FeUKeH)) : (t = !0, o = null, d = s.hGI, I = null != T && (0, y.vd)(T.type) ? C.NW.string(C.t.uQn9Bw) : null != w ? C.NW.string(C.t.fBXEoK) : C.NW.string(C.t.n3feND)), (0, r.jsx)("div", {
       className: S.panelButtonContainer,
       children: (0, r.jsx)(j.Z, {
         tooltipText: I,
@@ -136,12 +136,12 @@ let I = i.memo(function(e) {
       })
     })) : null,
     Y = U && null == R ? (0, r.jsx)(j.Z, {
-      tooltipText: x.NW.string(x.t["hC/Ze3"]),
+      tooltipText: C.NW.string(C.t["hC/Ze3"]),
       onClick: W,
       icon: s.ejJ
     }) : null,
     q = null == R ? null : (0, r.jsx)(j.Z, {
-      tooltipText: x.NW.string(x.t["R/FK4O"]),
+      tooltipText: C.NW.string(C.t["R/FK4O"]),
       onClick: V(R.applicationId, R.location),
       icon: s.PBZ
     }),

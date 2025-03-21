@@ -23,8 +23,8 @@ var i = n(120356),
   _ = n(431328),
   O = n(501655),
   j = n(427679),
-  C = n(368442),
-  x = n(201469),
+  x = n(368442),
+  C = n(201469),
   S = n(680089),
   P = n(592125),
   I = n(430824),
@@ -141,7 +141,7 @@ class z extends D.ZP {
       isFavoriteSuggestion: _
     } = this.props, {
       shouldShowGuildVerificationPopout: O
-    } = this.state, j = this.getVoiceStatesCount(), C = (0, r.jsxs)("li", {
+    } = this.state, j = this.getVoiceStatesCount(), x = (0, r.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [U.disabled]: this.isDisabled()
       }),
@@ -209,7 +209,7 @@ class z extends D.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return h && (C = c(C)), d && (C = l(s(C))), C
+    return h && (x = c(x)), d && (x = l(s(x))), x
   }
   constructor(...e) {
     super(...e), V(this, "state", {
@@ -330,10 +330,10 @@ function q(e) {
       bypassLimit: Z.Z.can(M.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, l.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), h = (0, x.ZP)(n.id), f = (0, l.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, O.pV.AUDIENCE), {
+  }), p = (0, l.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), h = (0, C.ZP)(n.id), f = (0, l.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, O.pV.AUDIENCE), {
     isSubscriptionGated: b,
     needSubscriptionToAccess: v
-  } = (0, m.Z)(n.id), y = (0, l.e7)([E.ZP], () => E.ZP.isFavorite(t.id, n.id)), I = (0, C.xJ)(n.id), T = (0, R.Z)({
+  } = (0, m.Z)(n.id), y = (0, l.e7)([E.ZP], () => E.ZP.isFavorite(t.id, n.id)), I = (0, x.xJ)(n.id), T = (0, R.Z)({
     channel: n,
     isChannelSelected: !1,
     isChannelCollapsed: a,

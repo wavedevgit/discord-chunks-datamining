@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(214629),
   O = n(566620),
   j = n(317381),
-  C = n(736409),
-  x = n(367907),
+  x = n(736409),
+  C = n(367907),
   S = n(835473),
   P = n(413523),
   I = n(933557),
@@ -261,7 +261,7 @@ class ey extends i.PureComponent {
         onClick: () => {
           h.Z.dispatch({
             type: "ACTIVITY_POPOUT_WINDOW_OPEN"
-          }), u && d(ep.L.TAKE_ACTION), (0, x.yw)(eu.rMx.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED)
+          }), u && d(ep.L.TAKE_ACTION), (0, C.yw)(eu.rMx.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED)
         },
         children: v
       }))
@@ -283,7 +283,7 @@ class ey extends i.PureComponent {
       isForceShowSharingPopout: u,
       setIsForceShowSharingPopout: d
     } = this.props;
-    return i || ((0, es.y)(a, s, t) || e) && (null != n || null != t) ? (0, r.jsx)(C.j, {
+    return i || ((0, es.y)(a, s, t) || e) && (null != n || null != t) ? (0, r.jsx)(x.j, {
       isForceShowSharingPopout: u,
       setIsForceShowSharingPopout: d,
       children: (0, r.jsx)("div", {
@@ -340,12 +340,12 @@ let e_ = (0, b.Z)(function(e) {
     b = (0, u.e7)([v.Z], () => v.Z.useReducedMotion),
     O = (0, u.e7)([j.ZP], () => j.ZP.getCurrentEmbeddedActivity()),
     {
-      showRefreshedGoLiveModal: C
+      showRefreshedGoLiveModal: x
     } = (0, R.a)({
       location: "ActivityPanelGameCard",
       autoTrackExposure: !1
     }),
-    x = (0, u.e7)([K.Z, X.Z, Q.ZP], () => null != s ? k.JL(s, K.Z, X.Z, !1) : !!C || null != n && k.h_(Q.ZP.getChannels(n), K.Z, X.Z).length > 0),
+    C = (0, u.e7)([K.Z, X.Z, Q.ZP], () => null != s ? k.JL(s, K.Z, X.Z, !1) : !!x || null != n && k.h_(Q.ZP.getChannels(n), K.Z, X.Z).length > 0),
     [P] = (0, S.Z)([null !== (t = null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != O ? O.applicationId : void 0) && void 0 !== t ? t : ""]),
     N = (0, u.e7)([Z.Z], () => Z.Z.getFakeGameData()),
     w = (0, u.e7)([j.ZP], () => j.ZP.getCurrentEmbeddedActivity()),
@@ -387,7 +387,7 @@ let e_ = (0, b.Z)(function(e) {
     useReducedMotion: b,
     isStreaming: U,
     channel: h,
-    canStream: x,
+    canStream: C,
     stream: g,
     streamMetadata: m,
     channelName: V,

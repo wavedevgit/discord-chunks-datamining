@@ -66,7 +66,7 @@ let y = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == _ ? void 0 : _.popout]), [C, x] = i.useState(!1), [S, P] = i.useState(null), I = null == S ? "animation" : "LOOP";
+    }, [t, null == _ ? void 0 : _.popout]), [x, C] = i.useState(!1), [S, P] = i.useState(null), I = null == S ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == _ ? void 0 : _.popout) == null && P(null)
     }, [null == _ ? void 0 : _.popout]);
@@ -74,13 +74,13 @@ let y = {
       P(e)
     }, []);
     return (0, r.jsx)(a.yRy, {
-      shouldShow: (null == _ ? void 0 : _.popout) != null && !C,
+      shouldShow: (null == _ ? void 0 : _.popout) != null && !x,
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
       renderPopout: j,
-      onRequestOpen: () => x(!1),
-      onRequestClose: () => x(!0),
+      onRequestOpen: () => C(!1),
+      onRequestClose: () => C(!0),
       children: e => {
         var i, u;
         return (0, r.jsx)(c.m, (i = v({}, e), u = u = {

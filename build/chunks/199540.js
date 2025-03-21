@@ -22,9 +22,9 @@ var r = n(200651),
   _ = n(457528);
 let O = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   j = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
-  C = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
+  x = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
 
-function x(e) {
+function C(e) {
   let {
     guildId: t,
     animate: n,
@@ -42,7 +42,7 @@ function x(e) {
     className: _.guildIcon,
     tabIndex: -1,
     style: l ? {
-      borderRadius: C[i]
+      borderRadius: x[i]
     } : void 0
   })
 }
@@ -61,7 +61,7 @@ function S(e) {
     g = null != p ? p : v.Wyy,
     m = g === v.Wyy,
     b = f.map(e => e.id),
-    [y, C] = i.useState(!1),
+    [y, x] = i.useState(!1),
     [S, P] = i.useState(c),
     I = u ? c ? 22 : -11 : c ? 0 : -j,
     N = (0, d.q_F)({
@@ -70,10 +70,10 @@ function S(e) {
         duration: O
       },
       onStart() {
-        C(!0), P(c)
+        x(!0), P(c)
       },
       onRest() {
-        C(!1), P(c)
+        x(!1), P(c)
       }
     }, "animate-always"),
     Z = y ? N : void 0;
@@ -90,7 +90,7 @@ function S(e) {
   })), (y || !S) && (n = (0, r.jsx)(a.animated.div, {
     style: Z,
     className: _.closedFolderIconWrapper,
-    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
+    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(C, {
       index: t,
       guildId: e,
       animate: l
@@ -121,8 +121,8 @@ function P(e) {
     folderGroupId: v,
     folderIconContentClassName: O,
     folderIconContent: j,
-    onClick: C,
-    onContextMenu: x,
+    onClick: x,
+    onContextMenu: C,
     onHoverChange: P,
     onKeyDown: I,
     treeItemProps: {
@@ -180,8 +180,8 @@ function P(e) {
       className: l()(_.folder, {
         [_.hover]: w
       }),
-      onClick: C,
-      onContextMenu: x,
+      onClick: x,
+      onContextMenu: C,
       onMouseEnter: T,
       onMouseLeave: A,
       onKeyDown: I,

@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(100527),
   O = n(906732),
   j = n(358221),
-  C = n(540059),
-  x = n(706590),
+  x = n(540059),
+  C = n(706590),
   S = n(940777),
   P = n(41776),
   I = n(905423),
@@ -177,14 +177,14 @@ function ec(e) {
     isOverlay: n = !1,
     className: o,
     themeOverride: a
-  } = e, s = (0, C.Q3)("GuildsBar"), {
+  } = e, s = (0, x.Q3)("GuildsBar"), {
     density: d
   } = (0, m.TCT)(), [h] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
   }), b = (0, p.e7)([P.Z], () => P.Z.lurkingGuildIds()), y = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => L.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), ec = y.concat(ei), eu = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), ed = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ep, eh] = i.useState(!1), ef = i.useCallback(() => eh(!0), []), eg = i.useCallback(() => eh(!1), []), em = i.useRef(!1), [eb] = i.useState(() => new f.V7), ev = i.useRef(null), ey = i.useRef(null), e_ = (0, u.OP)(), {
     ref: eO
-  } = e_, ej = el(e_, ["ref"]), eC = (0, m.mFp)(), [ex, eS] = i.useState(!1), [eP, eI] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eZ = i.useMemo(() => new es(h, eS, eI, () => {
+  } = e_, ej = el(e_, ["ref"]), ex = (0, m.mFp)(), [eC, eS] = i.useState(!1), [eP, eI] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eZ = i.useMemo(() => new es(h, eS, eI, () => {
     var e, t;
     null === (e = ev.current) || void 0 === e || e.calculateState(), null === (t = ey.current) || void 0 === t || t.calculateState()
   }, function(e, t, n) {
@@ -264,7 +264,7 @@ function ec(e) {
       }
     }, [ef, eg, ep, eZ.setNodeRef]),
     ek = h.getRoots(),
-    eL = (0, x.Z)(),
+    eL = (0, C.Z)(),
     eM = (0, N.U)(),
     {
       enabled: eG
@@ -307,7 +307,7 @@ function ec(e) {
           "aria-label": en.NW.string(en.t.PjnF2t),
           children: (0, r.jsxs)("ul", (i = eo({
             ref: eO
-          }, ej, eC), a = a = {
+          }, ej, ex), a = a = {
             role: "tree",
             className: er.tree,
             children: [(0, r.jsx)(B.Z, {
@@ -321,7 +321,7 @@ function ec(e) {
               children: [(0, r.jsxs)(m.xVE, {
                 className: l()({
                   [er.scroller]: !0,
-                  [er.scrolling]: ex
+                  [er.scrolling]: eC
                 }),
                 experimental_useStack: s,
                 gap: "xs",

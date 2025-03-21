@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(769654),
   O = n(271383),
   j = n(771845),
-  C = n(727258),
-  x = n(276952),
+  x = n(727258),
+  C = n(276952),
   S = n(249792),
   P = n(40153),
   I = n(593618),
@@ -118,7 +118,7 @@ let M = i.memo(function(e) {
     [{
       dragging: eu
     }, ed] = (0, a.c)({
-      type: C.eD.GUILD,
+      type: x.eD.GUILD,
       item: () => (requestAnimationFrame(() => {
         null == U || U()
       }), {
@@ -154,10 +154,10 @@ let M = i.memo(function(e) {
       let e = (0, v.V)(F.id);
       null != e && h.Z.preload(F.id, e)
     }, [V, F, Q, et]),
-    eC = (0, u.e7)([O.ZP], () => O.ZP.isCurrentUserGuest(ei)),
-    ex = i.useCallback(e => {
-      null == F || eC || X(e, F)
-    }, [F, X, eC]),
+    ex = (0, u.e7)([O.ZP], () => O.ZP.isCurrentUserGuest(ei)),
+    eC = i.useCallback(e => {
+      null == F || ex || X(e, F)
+    }, [F, X, ex]),
     eS = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != eo) {
         var t;
@@ -200,7 +200,7 @@ let M = i.memo(function(e) {
         ee || ef(!1)
       },
       onMouseDown: ej,
-      onContextMenu: ex,
+      onContextMenu: eC,
       onKeyDown: eS,
       icon: F.getIconURL(2 * eN, eg && H, el),
       selected: z || eg
@@ -231,7 +231,7 @@ let M = i.memo(function(e) {
     });
   return (0, r.jsxs)(Z.H, {
     ref: eI,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(C.Z, {
       hovered: !eu && eg,
       selected: !eu && z,
       unread: !eu && Y,

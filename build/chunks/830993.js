@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(449932),
   O = n(561788),
   j = n(876548),
-  C = n(543432),
-  x = n(981631),
+  x = n(543432),
+  C = n(981631),
   S = n(388032),
   P = n(248657),
   I = n(270779);
@@ -54,11 +54,11 @@ function N(e) {
   }(l, g);
   let O = (0, u.ZP)(l),
     j = Array.from((0, u.uF)(O).values()),
-    C = null !== (t = null == g ? void 0 : g.filter(v.lm)) && void 0 !== t ? t : [],
-    I = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
+    x = null !== (t = null == g ? void 0 : g.filter(v.lm)) && void 0 !== t ? t : [],
+    I = e => t => [C.IIU.PLAYING, C.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === C.IIU.LISTENING,
     N = (0, a.e7)([m.Z], () => {
       let e = {};
-      return C.forEach(t => {
+      return x.forEach(t => {
         let n = m.Z.findActivity(t.user.id, I(t));
         if (null != n && !(0, p.Z)(n)) {
           var r, i, o, l;
@@ -67,10 +67,10 @@ function N(e) {
               members: [],
               activity: n
             };
-          s.members.push(t), (0, d.Z)(s.activity, x.xjy.JOIN) || (s.activity = n), e[a] = s
+          s.members.push(t), (0, d.Z)(s.activity, C.xjy.JOIN) || (s.activity = n), e[a] = s
         }
       }), Object.values(e)
-    }, [C], a.pF);
+    }, [x], a.pF);
   return N.length + j.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
     className: P.container,
     children: [(0, r.jsx)(Z, {
@@ -158,7 +158,7 @@ function Z(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, o = (0, a.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
+  } = e, o = (0, a.e7)([g.Z], () => !g.Z.can(C.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
     channel: t,
     locked: o,
     video: s,
@@ -172,7 +172,7 @@ function Z(e) {
       userCount: i,
       video: s,
       channel: t
-    }) : (0, r.jsx)(C.Z, {
+    }) : (0, r.jsx)(x.Z, {
       userCount: i
     })]
   })

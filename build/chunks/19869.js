@@ -258,7 +258,7 @@ function P() {
           (0, a.ZDy)(async () => {
             let {
               AnnouncementModal: e
-            } = await n.e("54663").then(n.bind(n, 520156));
+            } = await n.e("86653").then(n.bind(n, 993318));
             return t => {
               var n, i, {
                   onClose: s

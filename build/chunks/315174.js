@@ -92,7 +92,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     guild: t,
     controller: n,
@@ -136,7 +136,7 @@ function C(e) {
   })
 }
 
-function x() {
+function C() {
   return (0, r.jsx)(c.r7p, {
     size: "custom",
     color: "currentColor",
@@ -183,7 +183,7 @@ function I(e) {
     children: [(0, r.jsx)(g.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === b._ && (0, r.jsx)(x, {}), (0, r.jsx)(P, {
+    }), i.id === b._ && (0, r.jsx)(C, {}), (0, r.jsx)(P, {
       guild: i
     }), null != o && (0, r.jsx)(c.P3F, {
       className: y.headerButton,
@@ -250,7 +250,7 @@ function N(e) {
           children: [(0, r.jsx)(g.Z, {
             guild: o,
             isBannerVisible: t
-          }), o.id === b._ && (0, r.jsx)(x, {}), (0, r.jsx)(P, {
+          }), o.id === b._ && (0, r.jsx)(C, {}), (0, r.jsx)(P, {
             guild: o
           }), (0, r.jsx)("div", {
             className: y.headerChildren,
@@ -287,7 +287,7 @@ let Z = i.memo(function(e) {
     onContextMenu: g,
     onMouseDown: b,
     disableBannerAnimation: v,
-    "aria-expanded": x,
+    "aria-expanded": C,
     "aria-controls": S,
     guild: P,
     guildBanner: Z,
@@ -325,7 +325,7 @@ let Z = i.memo(function(e) {
       onClick: a,
       onContextMenu: g,
       ariaControls: S,
-      ariaExpanded: x,
+      ariaExpanded: C,
       guildHeaderRef: F
     };
   return (0, r.jsx)(c.f6W, {
@@ -336,7 +336,7 @@ let Z = i.memo(function(e) {
         className: l()(o, {
           [y.container]: !0,
           [y.clickable]: !Q && null != a,
-          [y.selected]: !Q && null != a && x,
+          [y.selected]: !Q && null != a && C,
           [y.hasBanner]: Y(),
           [y.bannerVisible]: t,
           [e]: !q && t,
@@ -357,7 +357,7 @@ let Z = i.memo(function(e) {
             })) : (0, r.jsx)(I, O(_({}, K), {
               children: T
             }))
-          }), M && (0, r.jsx)(C, {
+          }), M && (0, r.jsx)(x, {
             guild: P,
             controller: n,
             hasBanner: null != Z,

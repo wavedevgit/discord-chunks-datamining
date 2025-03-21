@@ -25,8 +25,8 @@ var r, i = n(200651),
   _ = n(914010),
   O = n(281029),
   j = n(981631),
-  C = n(388032),
-  x = n(691878);
+  x = n(388032),
+  C = n(691878);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ function N(e, t, n) {
 }
 
 function Z(e, t) {
-  return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
+  return null == t ? C.containerDefault : e > t ? C.containerDragAfter : C.containerDragBefore
 }
 
 function w(e) {
@@ -85,7 +85,7 @@ function w(e) {
     u.ZP.open(t.id)
   }
   return (0, i.jsx)(c.ua7, {
-    text: C.NW.string(C.t["3gUsJS"]),
+    text: x.NW.string(x.t["3gUsJS"]),
     children: e => {
       let {
         onMouseEnter: t,
@@ -94,10 +94,10 @@ function w(e) {
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(x.iconItem, o ? x.alwaysShown : void 0, l ? x.iconWithChannelInfo : x.iconNoChannelInfo),
+        className: a()(C.iconItem, o ? C.alwaysShown : void 0, l ? C.iconWithChannelInfo : C.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
-        "aria-label": C.NW.string(C.t["3gUsJS"]),
+        "aria-label": x.NW.string(x.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
         onFocus: s,
@@ -105,7 +105,7 @@ function w(e) {
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
           color: "currentColor",
-          className: x.actionIcon
+          className: C.actionIcon
         })
       })
     }
@@ -120,7 +120,7 @@ function E(e) {
     tabIndex: u,
     forceShowButtons: h,
     hasChannelInfo: m = !1
-  } = e, _ = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), S = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, _, t, O)), Z = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8)), w = o.useRef(null);
+  } = e, _ = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), S = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, _, t, O)), Z = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? x.NW.string(x.t.zJrgTE) : x.NW.string(x.t.Sd8Ix8)), w = o.useRef(null);
   if (l || !N) return null;
 
   function E() {
@@ -142,7 +142,7 @@ function E(e) {
   }
   let T = (0, i.jsx)(c.ejJ, {
     size: "xs",
-    className: x.actionIcon,
+    className: C.actionIcon,
     "aria-hidden": !0,
     color: "currentColor"
   });
@@ -157,7 +157,7 @@ function E(e) {
   })), (0, i.jsx)(c.ua7, {
     text: Z,
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: a()(x.iconItem, h ? x.alwaysShown : void 0, m ? x.iconWithChannelInfo : x.iconNoChannelInfo)
+      className: a()(C.iconItem, h ? C.alwaysShown : void 0, m ? C.iconWithChannelInfo : C.iconNoChannelInfo)
     }, e), {
       onClick: E,
       tabIndex: u,
@@ -174,16 +174,16 @@ function T(e) {
     (0, h._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
-    text: C.NW.string(C.t.ROh4T0),
+    text: x.NW.string(x.t.ROh4T0),
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: x.iconItem
+      className: C.iconItem
     }, e), {
       onClick: n,
-      "aria-label": C.NW.string(C.t.ROh4T0),
+      "aria-label": x.NW.string(x.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
-        className: x.actionIcon
+        className: C.actionIcon
       })
     }))
   })
@@ -198,16 +198,16 @@ function A(e) {
     })
   };
   return (0, i.jsx)(c.ua7, {
-    text: C.NW.string(C.t["N2c/Ul"]),
+    text: x.NW.string(x.t["N2c/Ul"]),
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: x.iconItem
+      className: C.iconItem
     }, e), {
       onClick: n,
-      "aria-label": C.NW.string(C.t["N2c/Ul"]),
+      "aria-label": x.NW.string(x.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
-        className: x.actionIcon
+        className: C.actionIcon
       })
     }))
   })

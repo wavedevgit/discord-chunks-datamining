@@ -21,8 +21,8 @@ var r, i = n(200651),
   _ = n(540059),
   O = n(860144),
   j = n(214852),
-  C = n(518311),
-  x = n(355298),
+  x = n(518311),
+  C = n(355298),
   S = n(869404),
   P = n(333984),
   I = n(210887),
@@ -383,7 +383,7 @@ class G extends(r = o.Component) {
         children: [(0, i.jsx)("span", {
           className: D.headerText,
           children: A.NW.string(A.t.YUU0RE)
-        }), (0, i.jsx)(C.Z, {
+        }), (0, i.jsx)(x.Z, {
           tooltip: A.NW.string(A.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
@@ -434,12 +434,12 @@ let B = e => {
     g = o.Children.count(d),
     m = N.Z.getMutablePrivateChannels(),
     b = (0, S.k1)(m),
-    v = (0, u.Wu)([w.Z, x.Z, P.Z], () => {
+    v = (0, u.Wu)([w.Z, C.Z, P.Z], () => {
       let e = w.Z.getPrivateChannelIds();
-      return (0, S.tU)(e, [x.Z, P.Z])
+      return (0, S.tU)(e, [C.Z, P.Z])
     }, []);
   (0, j.z)(O.R);
-  let C = (0, u.cj)([f.Z, I.Z, N.Z], () => ({
+  let x = (0, u.cj)([f.Z, I.Z, N.Z], () => ({
       theme: I.Z.darkSidebar ? T.BRd.DARK : a,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
       version: null != l ? "".concat(l, ":").concat(N.Z.getPrivateChannelsVersion()) : N.Z.getPrivateChannelsVersion()
@@ -480,7 +480,7 @@ let B = e => {
     M = (0, y.Dt)(),
     B = (0, c.ZP)({
       id: "private-channels-".concat(M),
-      isEnabled: C.keyboardModeEnabled,
+      isEnabled: x.keyboardModeEnabled,
       scrollToStart: D,
       scrollToEnd: R,
       defaultFocused: (g + +!!h).toString(),
@@ -498,6 +498,6 @@ let B = e => {
       version: l
     }, e), {
       children: d
-    }), C))
+    }), x))
   })
 }

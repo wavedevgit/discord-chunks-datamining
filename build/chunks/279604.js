@@ -70,10 +70,10 @@ function v(e, t) {
   var m;
   let {
     analyticsLocations: v
-  } = (0, a.ZP)(), [y, _] = i.useState(!1), [O, j] = i.useState(void 0), C = (0, o.e7)([p.Z], () => {
+  } = (0, a.ZP)(), [y, _] = i.useState(!1), [O, j] = i.useState(void 0), x = (0, o.e7)([p.Z], () => {
     var t, n;
     return null !== (n = null === (t = p.Z.getStateForGuild(e)) || void 0 === t ? void 0 : t.appliedBoosts) && void 0 !== n ? n : 0
-  }), x = (0, o.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null !== (m = null == x ? void 0 : x.premiumSubscriberCount) && void 0 !== m ? m : 0) - C, 0), P = i.useCallback(n => {
+  }), C = (0, o.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null !== (m = null == C ? void 0 : C.premiumSubscriberCount) && void 0 !== m ? m : 0) - x, 0), P = i.useCallback(n => {
     let r = n ? d.H6 : d.Th;
     return _(!0), j(void 0), r(e, t.skuId).catch(e => {
       var t;
@@ -82,7 +82,7 @@ function v(e, t) {
       _(!1)
     })
   }, [e, t.skuId]), I = i.useCallback(e => {
-    if (e.stopPropagation(), null != x) {
+    if (e.stopPropagation(), null != C) {
       if (S < t.cost) {
         (0, s.u)({
           analyticsLocation: {
@@ -91,7 +91,7 @@ function v(e, t) {
           },
           numberOfBoostsToAdd: t.cost - S,
           analyticsLocations: v,
-          guild: x,
+          guild: C,
           intent: t.type === h.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
           onSubscribeComplete: () => P(!0).then(() => {
             (0, l.ZDy)(async () => {
@@ -117,7 +117,7 @@ function v(e, t) {
         })
       })
     }
-  }, [P, t, S, v, x]), N = i.useCallback(e => (e.stopPropagation(), P(!1)), [P]);
+  }, [P, t, S, v, C]), N = i.useCallback(e => (e.stopPropagation(), P(!1)), [P]);
   return {
     isLoading: y,
     error: O,

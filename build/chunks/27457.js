@@ -615,19 +615,19 @@ let e_ = i.memo(e => {
         })]
       }), (0, r.jsxs)("div", {
         className: ea.overlayButtonContainer,
-        children: [w && (0, r.jsx)(eh, {
-          onClick: S,
-          tooltipText: O ? el.NW.string(el.t.YqAjX1) : el.NW.string(el.t["w4m94+"]),
-          icon: O ? c.OyP : c.gj8,
-          hideWhenInactive: !O,
-          compact: j
-        }), (0, r.jsx)(eh, {
+        children: [(0, r.jsx)(eh, {
           onClick: e => {
             e.stopPropagation(), L(!0), g(e, !0, en.A5.THREE_DOT)
           },
           tooltipText: el.NW.string(el.t["+1H47u"]),
           icon: c.xhG,
           hideWhenInactive: !T,
+          compact: j
+        }), w && (0, r.jsx)(eh, {
+          onClick: S,
+          tooltipText: O ? el.NW.string(el.t.YqAjX1) : el.NW.string(el.t["w4m94+"]),
+          icon: O ? c.OyP : c.gj8,
+          hideWhenInactive: !O && !T,
           compact: j
         })]
       })]
