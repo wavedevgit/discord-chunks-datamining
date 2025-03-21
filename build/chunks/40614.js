@@ -1,31 +1,38 @@
 /** Chunk was on 92196 **/
 n.d(t, {
-  V: () => c
+  V: () => d
 });
 var r = n(200651),
-  i = n(481060),
-  o = n(695346),
-  l = n(316496),
-  a = n(388032),
-  s = n(930565);
-let c = e => {
+  i = n(442837),
+  o = n(481060),
+  l = n(695346),
+  a = n(885110),
+  s = n(316496),
+  c = n(388032),
+  u = n(930565);
+let d = e => {
   let {
     onClick: t
-  } = e, {
-    rtcPopoutEnabled: n
-  } = (0, l.SN)("not sharing link"), c = o.G6.useSetting();
-  return !n || c ? null : (0, r.jsx)(i.P3F, {
+  } = e;
+  return ! function() {
+    let {
+      rtcPopoutEnabled: e
+    } = (0, s.SN)("not sharing link"), {
+      rtcPopoutEnabled: t
+    } = (0, s.m_)("not sharing link"), n = l.G6.useSetting(), r = (0, i.e7)([a.Z], () => a.Z.getStatus());
+    return t ? !n || r === o.Skl.INVISIBLE : !!e && !n
+  }() ? null : (0, r.jsx)(o.P3F, {
     onClick: t,
-    className: s.container,
-    children: (0, r.jsxs)(i.Text, {
+    className: u.container,
+    children: (0, r.jsxs)(o.Text, {
       variant: "text-xs/medium",
-      className: s.text,
+      className: u.text,
       color: "header-secondary",
-      children: [(0, r.jsx)(i.kZF, {
+      children: [(0, r.jsx)(o.kZF, {
         size: "xxs",
         color: "currentColor",
-        className: s.iconEye
-      }), a.NW.string(a.t.jfrLLS)]
+        className: u.iconEye
+      }), c.NW.string(c.t.jfrLLS)]
     })
   })
 }

@@ -1,6 +1,7 @@
 /** Chunk was on 92196 **/
 n.d(t, {
-  SN: () => o
+  SN: () => o,
+  m_: () => a
 });
 var r = n(818083);
 let i = (0, r.B)({
@@ -25,7 +26,8 @@ function o(e) {
   }, {
     autoTrackExposure: !0
   })
-}(0, r.B)({
+}
+let l = (0, r.B)({
   kind: "user",
   id: "2025-03_activity_sharing_popout_with_invisibility",
   label: "Activity Sharing Popout with Invisibility",
@@ -39,4 +41,12 @@ function o(e) {
       rtcPopoutEnabled: !0
     }
   }]
-})
+});
+
+function a(e) {
+  return l.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: !0
+  })
+}
