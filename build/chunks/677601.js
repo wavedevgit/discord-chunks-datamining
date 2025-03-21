@@ -259,9 +259,8 @@ class eX extends i.PureComponent {
       currentChannelActivities: b,
       callContainerDimensions: _
     } = this.props, {
-      isDesktopVisualRefreshEnabled: C,
-      isStaff: v
-    } = this.state, y = f === eF.AEg.MINIMUM, x = y || f === eF.AEg.NORMAL, j = i && o === eF.WtW.VIDEO, O = (null !== (t = null == b ? void 0 : b.length) && void 0 !== t ? t : 0) > 0 && p.isPrivate();
+      isDesktopVisualRefreshEnabled: C
+    } = this.state, v = f === eF.AEg.MINIMUM, y = v || f === eF.AEg.NORMAL, x = i && o === eF.WtW.VIDEO, j = (null !== (t = null == b ? void 0 : b.length) && void 0 !== t ? t : 0) > 0 && p.isPrivate();
     return this._lastIdleProps = e, (0, r.jsx)(er.Z, eY(ez({
       renderHeader: this.renderHeader,
       renderBottomLeft: this.renderBottomLeft,
@@ -271,8 +270,8 @@ class eX extends i.PureComponent {
       renderVoiceChannelEffects: this.renderVoiceChannelEffects
     }, e), {
       screenMessage: this.screenMessage,
-      disableGradients: C && v && !i || y,
-      idle: !m && i && !y && e.idle,
+      disableGradients: C && !i || v,
+      idle: !m && i && !v && e.idle,
       children: i && this.popoutOpen && !this.inPopout ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(z.Z, {
           channel: p
@@ -286,13 +285,13 @@ class eX extends i.PureComponent {
           participants: c,
           filteredParticipants: u,
           participantsVersion: d,
-          selectedParticipant: j ? n : null,
+          selectedParticipant: x ? n : null,
           layout: f,
           idle: e.idle,
           mode: o,
           onSelectParticipant: this.handleSelectParticipant,
           onContextMenuParticipant: this.handleContextMenu,
-          showParticipants: s && (!x || O),
+          showParticipants: s && (!y || j),
           popoutWindow: this.inPopout ? a : null,
           awaitingRemoteSessionInfo: g,
           callContainerDimensions: _
@@ -369,11 +368,9 @@ class eX extends i.PureComponent {
     })
   }
   constructor(...e) {
-    var t, l;
     super(...e), eV(this, "_prevLayout", eF.AEg.MINIMUM), eV(this, "_wrapperRef", i.createRef()), eV(this, "_callContainerRef", i.createRef()), eV(this, "_channelChatRef", i.createRef()), eV(this, "_contentRef", i.createRef()), eV(this, "_videoBackgroundTooltipTimeout", new h.V7), eV(this, "_lastIdleProps", null), eV(this, "state", {
       resizedHeight: K.ZP.callHeaderHeight,
-      isDesktopVisualRefreshEnabled: (0, L.i9)("ChannelCall"),
-      isStaff: null !== (l = null === (t = eC.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== l && l
+      isDesktopVisualRefreshEnabled: (0, L.i9)("ChannelCall")
     }), eV(this, "handleFullScreenChange", () => {
       let e = this.getRootNode();
       null == e || (0, eN.rB)(e, this.currentDocument) || this.props.layout !== eF.AEg.FULL_SCREEN || this.handleFullScreen()

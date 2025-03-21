@@ -102,16 +102,17 @@ function C(e) {
     bannerWidth: C,
     bannerHeight: R,
     themePadding: P,
-    animateOnHover: w = !1
-  } = e, D = (0, _.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
-    bannerSrc: j,
-    status: U
+    pendingAccentColor: w,
+    animateOnHover: D = !1
+  } = e, L = (0, _.Dt)(), [x, M] = i.useState(!1), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
+    bannerSrc: U,
+    status: G
   } = (0, E.Z)({
     displayProfile: o,
     pendingBanner: y,
     size: C,
-    canAnimate: w || !k ? L : M
-  }), G = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(b, (0, u.pxk)(S)), F = (0, s._i)((0, d.ZP)(B, G, !1)), V = (0, f.Z)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : F).hex, Z = A(S), H = Z + T - P, W = R - N - P;
+    canAnimate: D || !j ? x : k
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.pxk)(S)), V = (0, s._i)((0, d.ZP)(F, B, !1)), Z = (0, f.Z)(null !== (t = null != w ? w : null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : V).hex, H = A(S), W = H + T - P, Y = R - N - P;
   return (0, r.jsxs)("svg", {
     className: v.mask,
     viewBox: "0 0 ".concat(C, " ").concat(R),
@@ -120,7 +121,7 @@ function C(e) {
       minHeight: R
     },
     children: [(0, r.jsxs)("mask", {
-      id: D,
+      id: L,
       children: [(0, r.jsx)("rect", {
         fill: "white",
         x: "0",
@@ -129,9 +130,9 @@ function C(e) {
         height: "100%"
       }), (0, r.jsx)("circle", {
         fill: "black",
-        cx: H,
-        cy: W,
-        r: Z
+        cx: W,
+        cy: Y,
+        r: H
       })]
     }), (0, r.jsxs)("foreignObject", {
       x: "0",
@@ -139,18 +140,18 @@ function C(e) {
       width: "100%",
       height: "100%",
       overflow: "visible",
-      mask: "url(#".concat(D, ")"),
+      mask: "url(#".concat(L, ")"),
       children: [O, (0, r.jsxs)("div", {
         className: a()(v.banner, I),
-        onMouseMove: () => x(!0),
-        onMouseLeave: () => x(!1),
+        onMouseMove: () => M(!0),
+        onMouseLeave: () => M(!1),
         style: {
           height: R,
           minHeight: R,
-          backgroundImage: null != j ? "url(".concat(j, ")") : void 0,
-          backgroundColor: "COMPLETE" !== U ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
+          backgroundImage: null != U ? "url(".concat(U, ")") : void 0,
+          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : Z
         },
-        children: [!k && (0, g.F8)(j) && (0, r.jsx)(p.Z, {
+        children: [!j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
           className: v.gifTag
         }), O]
       })]

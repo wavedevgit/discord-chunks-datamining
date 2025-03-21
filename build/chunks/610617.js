@@ -37,11 +37,11 @@ function T(e) {
     playSound: L,
     isPlaying: W,
     soundpackPlaying: y
-  } = (0, S.Z)(), M = (0, j.OR)(t), I = v.ZP.canUseCustomNotificationSounds(T), P = I ? M : E.YC.CLASSIC, A = s.useRef(0), w = s.useRef(-1), [R, G] = s.useState(!1), U = (0, E.LB)(), D = s.useCallback(() => {
-    clearTimeout(w.current), A.current += 1, A.current > 10 && (G(!0), h.K.set(E.CZ, !0)), w.current = setTimeout(() => {
+  } = (0, S.Z)(), M = (0, j.OR)(t), I = v.ZP.canUseCustomNotificationSounds(T), P = I ? M : E.YC.CLASSIC, A = s.useRef(0), R = s.useRef(-1), [w, G] = s.useState(!1), D = (0, E.LB)(), U = s.useCallback(() => {
+    clearTimeout(R.current), A.current += 1, A.current > 10 && (G(!0), h.K.set(E.CZ, !0)), R.current = setTimeout(() => {
       A.current = 0
     }, 1e3)
-  }, []), [k, X] = o().partition(U, e => !e.requirePremium || e.requirePremium && I), V = k.map(e => {
+  }, []), [k, X] = o().partition(D, e => !e.requirePremium || e.requirePremium && I), V = k.map(e => {
     var t;
     return {
       name: e.label,
@@ -65,7 +65,7 @@ function T(e) {
         variant: "heading-md/semibold",
         children: Z.NW.string(Z.t.mrqSOj)
       }), (0, i.jsx)(g.P3F, {
-        onClick: D,
+        onClick: U,
         className: _.nitroWheelContainer,
         children: (0, i.jsx)(g.SrA, {
           size: "md",

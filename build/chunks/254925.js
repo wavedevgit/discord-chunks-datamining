@@ -149,7 +149,9 @@ let v = [p.ZD.LEAF, p.ZD.SWORD, p.ZD.HEART, p.ZD.FIRE, p.ZD.WATER_DROP, p.ZD.SKU
             color: "text-muted",
             className: b.memberApplicationsInfo,
             children: C.NW.format(h.Z.WUACVF, {
-              onClick: () => {}
+              onClick: () => {
+                A.Z.setSection(m.pNK.ACCESS)
+              }
             })
           }), O ? (0, r.jsx)(a.nuw, {
             children: (0, r.jsx)("div", {
@@ -166,20 +168,6 @@ let v = [p.ZD.LEAF, p.ZD.SWORD, p.ZD.HEART, p.ZD.FIRE, p.ZD.WATER_DROP, p.ZD.SKU
             secondaryColor: P
           })
         })]
-      }), (0, r.jsx)(a.Text, {
-        variant: "text-xs/medium",
-        color: "text-muted",
-        className: b.memberApplicationsInfo,
-        children: C.NW.format(h.Z.WUACVF, {
-          onClick: () => {
-            A.Z.setSection(m.pNK.ACCESS)
-          }
-        })
-      }), O ? (0, r.jsx)(a.nuw, {
-        children: (0, r.jsx)("div", {
-          className: b.disabledForm,
-          children: B
-        })
-      }) : B]
+      })]
     })
   }

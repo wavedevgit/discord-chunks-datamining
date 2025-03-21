@@ -1,6 +1,6 @@
 /** Chunk was on 78114 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 });
 var r = n(200651),
   i = n(192379),
@@ -15,34 +15,32 @@ var r = n(200651),
   h = n(281956),
   f = n(27457),
   m = n(546247),
-  g = n(594174),
-  b = n(823379),
-  _ = n(5192),
-  C = n(501655),
-  v = n(504185),
-  y = n(388032),
-  x = n(603779);
-let j = (e, t) => _.ZP.getName(e.getGuildId(), e.id, t.user),
-  O = function(e) {
-    var t, n;
+  g = n(823379),
+  b = n(5192),
+  _ = n(501655),
+  C = n(504185),
+  v = n(388032),
+  y = n(603779);
+let x = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
+  j = function(e) {
     let {
-      participants: l,
-      channel: _,
-      hasConnectPermission: O
-    } = e, E = (0, d.Q3)("StageChannelCallEmpty"), N = null !== (n = null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, I = (0, h.J)(_.guild_id), P = i.useCallback(() => {
-      I ? (0, p.hk)(_.guild_id, () => c.default.selectVoiceChannel(_.id)) : c.default.selectVoiceChannel(_.id)
-    }, [_.id, _.guild_id, I]), S = l.filter(e => e.type === C.Ui.VOICE), Z = 4 === S.length ? 2 : 3, T = (0, a.Wu)([u.Z], () => S.map(e => u.Z.getParticipant(_.id, e.id)).filter(b.lm), [_.id, S]);
+      participants: t,
+      channel: n,
+      hasConnectPermission: l
+    } = e, b = (0, d.Q3)("StageChannelCallEmpty"), j = (0, h.J)(n.guild_id), O = i.useCallback(() => {
+      j ? (0, p.hk)(n.guild_id, () => c.default.selectVoiceChannel(n.id)) : c.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, j]), E = t.filter(e => e.type === _.Ui.VOICE), N = 4 === E.length ? 2 : 3, I = (0, a.Wu)([u.Z], () => E.map(e => u.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, E]);
     return (0, r.jsxs)("div", {
-      className: x.container,
-      children: [E && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
-        className: x.tiles,
+      className: y.container,
+      children: [b && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
+        className: y.tiles,
         style: {
-          maxWidth: 168 * Z
+          maxWidth: 168 * N
         },
-        children: T.slice(0, 5).map(e => (0, r.jsx)(f.ZP, {
+        children: I.slice(0, 5).map(e => (0, r.jsx)(f.ZP, {
           participant: e,
-          channel: _,
-          className: x.tile,
+          channel: n,
+          className: y.tile,
           paused: !0,
           inCall: !0,
           noVideoRender: !0,
@@ -50,39 +48,39 @@ let j = (e, t) => _.ZP.getName(e.getGuildId(), e.id, t.user),
           width: 48
         }, e.id))
       }), (0, r.jsx)(s.X6q, {
-        className: x.channelName,
-        variant: E ? "heading-xxl/normal" : "heading-xxl/semibold",
-        children: _.name
+        className: y.channelName,
+        variant: b ? "heading-xxl/normal" : "heading-xxl/semibold",
+        children: n.name
       }), (0, r.jsx)("div", {
-        className: x.participantsRow,
+        className: y.participantsRow,
         children: (0, r.jsx)(s.Text, {
           tag: "div",
           color: "header-secondary",
-          variant: E ? "heading-lg/normal" : "text-sm/normal",
-          children: 0 === S.length ? y.NW.string(y.t.FUVhyM) : 1 === S.length ? y.NW.formatToPlainString(y.t.EQwZlJ, {
-            a: j(_, S[0])
-          }) : 2 === S.length ? y.NW.formatToPlainString(y.t.zBcKoK, {
-            a: j(_, S[0]),
-            b: j(_, S[1])
-          }) : S.length > 2 ? y.NW.formatToPlainString(y.t["3AqFaG"], {
-            a: j(_, S[0]),
-            b: j(_, S[1]),
-            n: S.length - 2
+          variant: b ? "heading-lg/normal" : "text-sm/normal",
+          children: 0 === E.length ? v.NW.string(v.t.FUVhyM) : 1 === E.length ? v.NW.formatToPlainString(v.t.EQwZlJ, {
+            a: x(n, E[0])
+          }) : 2 === E.length ? v.NW.formatToPlainString(v.t.zBcKoK, {
+            a: x(n, E[0]),
+            b: x(n, E[1])
+          }) : E.length > 2 ? v.NW.formatToPlainString(v.t["3AqFaG"], {
+            a: x(n, E[0]),
+            b: x(n, E[1]),
+            n: E.length - 2
           }) : void 0
         })
       }), (0, r.jsxs)("div", {
-        className: x.buttonContainer,
+        className: y.buttonContainer,
         children: [(0, r.jsx)(s.zxk, {
-          disabled: !O,
-          className: o()(x.joinButton, {
-            [x.roundButton]: !E
+          disabled: !l,
+          className: o()(y.joinButton, {
+            [y.roundButton]: !b
           }),
-          color: O ? E ? s.zxk.Colors.WHITE : s.zxk.Colors.GREEN : s.zxk.Colors.PRIMARY,
-          onClick: P,
+          color: l ? b ? s.zxk.Colors.WHITE : s.zxk.Colors.GREEN : s.zxk.Colors.PRIMARY,
+          onClick: O,
           size: s.zxk.Sizes.MEDIUM,
-          children: O ? y.NW.string(y.t["7vb2cX"]) : y.NW.string(y.t.TVBCKS)
-        }), E && N && (0, r.jsx)(v.e, {
-          channel: _
+          children: l ? v.NW.string(v.t["7vb2cX"]) : v.NW.string(v.t.TVBCKS)
+        }), b && (0, r.jsx)(C.e, {
+          channel: n
         })]
       })]
     })
