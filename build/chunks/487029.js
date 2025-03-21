@@ -1,6 +1,6 @@
 /** Chunk was on 38542 **/
 n.d(t, {
-  Z: () => b
+  Z: () => m
 }), n(47120), n(230036), n(653041);
 var r = n(200651),
   l = n(192379),
@@ -19,14 +19,14 @@ var r = n(200651),
   N = n(549771),
   y = n(964398),
   O = n(409673),
-  x = n(710111),
-  m = n(749416);
+  b = n(710111),
+  x = n(749416);
 
-function b(e) {
+function m(e) {
   let {
     guildId: t,
     channel: n,
-    width: b,
+    width: m,
     height: E,
     keepOpen: C,
     interactive: j = !0,
@@ -36,7 +36,7 @@ function b(e) {
     let [t, n] = (0, o.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
-        l = [...e, x.X8],
+        l = [...e, b.X8],
         i = (e, l) => {
           var i, o;
           for (let a of null !== (o = null === (i = t.get(e)) || void 0 === i ? void 0 : i.sort((e, t) => h.default.compare(e.soundId, t.soundId))) && void 0 !== o ? o : []) {
@@ -87,7 +87,7 @@ function b(e) {
     }, [P, D]),
     M = l.useMemo(() => P.map(e => (0, r.jsx)(O.ZP, {
       interactive: j,
-      className: m.soundButton,
+      className: x.soundButton,
       sound: e,
       focused: Z === e.soundId,
       channel: n
@@ -95,7 +95,7 @@ function b(e) {
   return 0 === P.length ? null : (0, r.jsx)(s.Gt, {
     value: A,
     children: (0, r.jsx)(y.Z, {
-      wheelWidth: b,
+      wheelWidth: m,
       wheelHeight: E,
       itemWidth: 96,
       itemHeight: 52,

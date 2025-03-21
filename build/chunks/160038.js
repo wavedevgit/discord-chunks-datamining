@@ -1,6 +1,6 @@
 /** Chunk was on 38542 **/
 n.d(t, {
-  Z: () => b
+  Z: () => m
 }), n(47120), n(26686);
 var r = n(200651),
   l = n(192379),
@@ -19,8 +19,8 @@ var r = n(200651),
   N = n(981631),
   y = n(65154),
   O = n(388032),
-  x = n(926093);
-let m = () => {
+  b = n(926093);
+let x = () => {
     h.Z.getMediaEngine().once(a.aB.ConnectionStats, e => {
       let t = Object.values(y.Yn).map(t => {
         let n = e.filter(e => {
@@ -41,7 +41,7 @@ let m = () => {
       (0, p.JG)(JSON.stringify(t, null, 2)), (0, s.showToast)((0, s.createToast)(O.NW.string(O.t["t5VZ8/"]), s.ToastType.SUCCESS))
     })
   },
-  b = function(e) {
+  m = function(e) {
     (0, l.useEffect)(() => {
       f.default.track(N.rMx.OPEN_POPOUT, {
         type: "RTC Connection"
@@ -63,35 +63,35 @@ let m = () => {
         return (0, r.jsxs)(l.Fragment, {
           children: [s && (0, r.jsxs)("div", {
             children: [(0, r.jsx)("div", {
-              className: x.graphContainer,
+              className: b.graphContainer,
               children: (0, r.jsx)(u.Z, {
                 dataPoints: e.pings,
                 width: 258,
                 height: 80
               })
             }), (0, r.jsx)("div", {
-              className: x.popoutText,
+              className: b.popoutText,
               children: (0, r.jsx)("strong", {
                 children: v.Z.getShortHostname(t)
               })
             })]
           }), (0, r.jsx)("div", {
-            className: x.popoutText,
+            className: b.popoutText,
             children: O.NW.format(O.t["X58/lJ"], {
               averagePing: n.toFixed(0)
             })
           }), null != i ? (0, r.jsx)("div", {
-            className: x.popoutText,
+            className: b.popoutText,
             children: O.NW.format(O.t["6iv2TE"], {
               lastPing: i.toFixed(0)
             })
           }) : null, null != a ? (0, r.jsx)("div", {
-            className: x.popoutText,
+            className: b.popoutText,
             children: O.NW.format(O.t.VIBJMz, {
               outboundLossRate: a.toFixed(1)
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(x.popoutText, x.popoutTextDetails),
+            className: o()(b.popoutText, b.popoutTextDetails),
             children: [null == a ? O.NW.formatToPlainString(O.t.vggaMj, {
               badPing: 250
             }) : null, null != a ? O.NW.formatToPlainString(O.t["3pFz1N"], {
@@ -106,7 +106,7 @@ let m = () => {
         connectionTypeText: a
       } = e,
       p = d.Sb.getSetting(),
-      b = {
+      m = {
         [N.hes.AWAITING_ENDPOINT]: O.NW.format(O.t.Eu2vUV, {
           url: N.yXt.STATUS
         }),
@@ -127,41 +127,41 @@ let m = () => {
         [N.hes.RTC_DISCONNECTED]: O.NW.string(O.t.fOX25O)
       } [i];
     return (0, r.jsxs)(r.Fragment, {
-      children: ["function" == typeof b ? b() : (0, r.jsx)("p", {
-        className: o()(x.popoutText, x.popoutTextDetails),
-        children: b
+      children: ["function" == typeof m ? m() : (0, r.jsx)("p", {
+        className: o()(b.popoutText, b.popoutTextDetails),
+        children: m
       }), (0, r.jsx)("hr", {
-        className: x.separator
+        className: b.separator
       }), (0, r.jsxs)("div", {
-        className: x.popoutBottom,
+        className: b.popoutBottom,
         children: [(0, r.jsxs)("span", {
-          className: o()(x.secured, x.textWithIcon),
+          className: o()(b.secured, b.textWithIcon),
           children: [(0, r.jsx)(s.mBM, {
             size: "xxs",
             color: s.TVs.colors.TEXT_POSITIVE.css,
-            className: x.__invalid_icon
+            className: b.__invalid_icon
           }), a]
         }), p && h.Z.supports(y.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(s.eee, {
-            className: o()(x.debugButton, x.textWithIcon),
+            className: o()(b.debugButton, b.textWithIcon),
             onClick: t,
             children: [O.NW.string(O.t.KBoWg4), (0, r.jsx)(s.rgF, {
               size: "xxs",
               color: "currentColor",
-              className: x.__invalid_icon
+              className: b.__invalid_icon
             })]
           }), (0, r.jsxs)(s.eee, {
-            className: o()(x.copyStatsButton, x.textWithIcon),
-            onClick: m,
+            className: o()(b.copyStatsButton, b.textWithIcon),
+            onClick: x,
             title: "Copy to clipboard",
             children: [O.NW.string(O.t["XEb+Sk"]), (0, r.jsx)(s.TIy, {
               size: "xxs",
               color: "currentColor",
-              className: x.__invalid_icon
+              className: b.__invalid_icon
             })]
           })]
         }), !p && !__OVERLAY__ && (0, r.jsx)(s.eee, {
-          className: x.debugButton,
+          className: b.debugButton,
           href: g.Z.getArticleURL(N.BhN.VOICE_VIDEO_TROUBLESHOOTING),
           children: O.NW.string(O.t.hvVgAQ)
         })]

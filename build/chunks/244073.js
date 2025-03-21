@@ -20,13 +20,13 @@ var i = n(200651),
   y = n(873596),
   _ = n(917405),
   v = n(430824),
-  O = n(131951),
-  b = n(699516),
+  b = n(131951),
+  O = n(699516),
   x = n(594174),
   S = n(979651),
   E = n(362446),
-  j = n(518084),
-  N = n(981631),
+  N = n(518084),
+  j = n(981631),
   C = n(388032),
   I = n(303044),
   Z = n(963085);
@@ -53,7 +53,7 @@ function w(e) {
   return e
 }
 
-function k(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,16 +65,16 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class T extends r.PureComponent {
+class k extends r.PureComponent {
   handleDisconnect() {
     h.default.selectVoiceChannel(null)
   }
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, x.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : N.ME;
+    } = this.props, n = (0, p.F6)(e, x.default, O.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : j.ME;
     return (0, i.jsx)(a.rU, {
-      to: N.Z5c.CHANNEL(s),
+      to: j.Z5c.CHANNEL(s),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
       },
@@ -98,11 +98,11 @@ class T extends r.PureComponent {
       deaf: h,
       mute: p
     } = this.props;
-    return null == s ? null : (0, i.jsx)(j.ZP.Bar, {
+    return null == s ? null : (0, i.jsx)(N.ZP.Bar, {
       className: o()(e, I.controls, {
         [I.unpinned]: !n
       }),
-      children: (0, i.jsxs)(j.ZP.Content, {
+      children: (0, i.jsxs)(N.ZP.Content, {
         className: o()(t, I.content),
         dynamicSize: !0,
         children: [(0, i.jsx)("div", {
@@ -110,7 +110,7 @@ class T extends r.PureComponent {
           children: (0, i.jsx)(c.yRy, {
             renderPopout: () => this.renderPopout(s.id),
             position: "top",
-            children: e => (0, i.jsx)(c.P3F, k(w({}, e), {
+            children: e => (0, i.jsx)(c.P3F, T(w({}, e), {
               children: (0, i.jsx)(_.Z, {
                 channelId: s.id,
                 quality: a,
@@ -194,9 +194,9 @@ function D(e) {
   }(e, ["context", "lobbyId", "channel"]);
   let o = (0, l.e7)([v.Z], () => v.Z.getGuild(null == r ? void 0 : r.getGuildId())),
     a = (0, l.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
-    [c, d] = (0, l.Wu)([O.Z], () => [O.Z.isSelfMute(t) || O.Z.isSelfMutedTemporarily(t), O.Z.isSelfDeaf(t)]),
+    [c, d] = (0, l.Wu)([b.Z], () => [b.Z.isSelfMute(t) || b.Z.isSelfMutedTemporarily(t), b.Z.isSelfDeaf(t)]),
     [u, h, p] = (0, l.Wu)([E.Z], () => [E.Z.getConnectionState(n), E.Z.getLastPing(n), E.Z.getQuality(n)]);
-  return (0, i.jsx)(T, k(w({}, s), {
+  return (0, i.jsx)(k, T(w({}, s), {
     context: t,
     lobbyId: n,
     channel: r,

@@ -25,8 +25,8 @@ var i = n(200651),
   x = n(804570),
   I = n(501787),
   S = n(981631),
-  C = n(65154),
-  N = n(388032),
+  N = n(65154),
+  C = n(388032),
   Z = n(989424);
 
 function w(e) {
@@ -71,7 +71,7 @@ let _ = r.memo(function(e) {
   }),
   T = r.memo(function(e) {
     let {
-      context: t = C.Yn.DEFAULT,
+      context: t = N.Yn.DEFAULT,
       participants: l,
       locked: o,
       channel: a,
@@ -137,7 +137,7 @@ let _ = r.memo(function(e) {
   }),
   D = r.memo(function(e) {
     let {
-      context: t = C.Yn.DEFAULT,
+      context: t = N.Yn.DEFAULT,
       participants: n,
       participantsVersion: l,
       locked: a,
@@ -181,7 +181,7 @@ let _ = r.memo(function(e) {
     }) : h ? (0, i.jsx)("div", {
       ref: f,
       children: (0, i.jsx)(x.E, {
-        emptyText: N.NW.string(N.t["aTiM4+"]),
+        emptyText: C.NW.string(C.t["aTiM4+"]),
         icon: s.Odl,
         absolute: !0
       })

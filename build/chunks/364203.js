@@ -314,7 +314,7 @@ let F = function(e) {
           chatWallpaperMetadata: e
         }, e.id))]
       }), h ? (0, r.jsx)(G, {
-        canApply: (null == p ? void 0 : p.wallpaperId) != null,
+        canApply: (null == p ? void 0 : p.wallpaperId) !== void 0,
         isUpdating: D,
         isBlurEnabled: N,
         onBlurEnabledChange: C,

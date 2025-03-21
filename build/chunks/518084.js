@@ -88,7 +88,7 @@ let g = u.t_t.DEFAULT,
       }
     })
   };
-class O extends(i = s.PureComponent) {
+class b extends(i = s.PureComponent) {
   render() {
     let {
       disableScroll: e,
@@ -113,10 +113,10 @@ class O extends(i = s.PureComponent) {
     })
   }
 }
-f(O, "defaultProps", {
+f(b, "defaultProps", {
   disableScroll: !1
 });
-let b = e => {
+let O = e => {
     let {
       type: t = g,
       width: n,
@@ -158,13 +158,13 @@ let b = e => {
       })
     })
   };
-b.Background = e => {
+O.Background = e => {
   let {
     children: t,
     opacityOverride: n
   } = e;
   if (null == t) return null;
-  let i = [v, O, x];
+  let i = [v, b, x];
   return (0, r.jsx)(y.Consumer, {
     children: e => {
       let {
@@ -185,7 +185,7 @@ b.Background = e => {
       }
     }
   })
-}, b.Body = O, b.Content = x, b.Icon = e => {
+}, O.Body = b, O.Content = x, O.Icon = e => {
   let {
     icon: t,
     label: n,
@@ -230,5 +230,5 @@ b.Background = e => {
       })
     }
   })
-}, b.Bar = v;
-let S = b
+}, O.Bar = v;
+let S = O

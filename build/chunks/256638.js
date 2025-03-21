@@ -106,12 +106,10 @@ let ex = e => {
       location: i
     });
     return l && (0, r.jsx)(c.Text, {
-      variant: "text-sm/medium",
-      color: "text-muted",
+      variant: "text-sm/bold",
+      color: "currentColor",
       tag: "span",
-      style: {
-        marginLeft: "8px"
-      },
+      className: ev.errorCodeNoticeText,
       selectable: !0,
       children: o
     })

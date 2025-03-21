@@ -29,8 +29,8 @@ function b(e, t, n, b) {
     title: I,
     body: S
   } = (0, u.Xi)(e, t, n), {
-    trackView: C,
-    trackClick: N
+    trackView: N,
+    trackClick: C
   } = (0, O.R)(v.n0.TextChat, {
     notif_type: v.n0.TextChat,
     notif_user_id: null === (j = t.author) || void 0 === j ? void 0 : j.id,
@@ -54,19 +54,19 @@ function b(e, t, n, b) {
       id: r,
       replyToMessageId: t.id,
       channel: e,
-      onSend: () => N("send")
+      onSend: () => C("send")
     }) : null,
     onNotificationShow: () => {
-      b && (0, s.GN)(c.Ay, c.yk), C()
+      b && (0, s.GN)(c.Ay, c.yk), N()
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
       (0, l.In)(e.id, !0, !0, t.id, {
         section: y.jXE.OVERLAY
-      }), f.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(!1, n)) : (N("jump"), (0, a.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      }), f.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, a.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
-      N("dismiss")
+      C("dismiss")
     }
   }
 }

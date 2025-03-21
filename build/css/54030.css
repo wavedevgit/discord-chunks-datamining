@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: 0b98e371de392483
+  Original File Name: 492aa01d77eac61b
 **/
 .key__98feb {
     display: inline-block;
@@ -2031,6 +2031,10 @@
     text-decoration: underline
 }
 
+.errorCodeNoticeText__9671b {
+    margin-left: var(--spacing-8)
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -2533,4 +2537,4 @@ img.thumbnail__0f2e8 {
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=0b98e371de392483.css.map*/
+/*# sourceMappingURL=492aa01d77eac61b.css.map*/

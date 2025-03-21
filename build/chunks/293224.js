@@ -31,8 +31,8 @@ var i = n(200651),
   x = n(471445),
   I = n(74299),
   S = n(803647),
-  C = n(565138),
-  N = n(917405),
+  N = n(565138),
+  C = n(917405),
   Z = n(763296),
   w = n(603074),
   P = n(879815),
@@ -318,7 +318,7 @@ function er(e) {
   }) : void 0;
   r.useEffect(() => () => b(), [a, b]);
   let S = ee(o),
-    C = null == n || !f;
+    N = null == n || !f;
   return (0, i.jsx)(p.yRy, {
     renderPopout: e => {
       let {
@@ -349,7 +349,7 @@ function er(e) {
         onContextMenu: O(n),
         onMouseEnter: j,
         onMouseLeave: x,
-        disabled: C
+        disabled: N
       })
     }
   })
@@ -602,9 +602,9 @@ function es(e) {
           className: q.separatorDot
         }), (0, i.jsxs)("div", {
           className: q.guildIconContainer,
-          children: [(0, i.jsx)(C.Z, {
+          children: [(0, i.jsx)(N.Z, {
             guild: n,
-            size: C.Z.Sizes.SMOL,
+            size: N.Z.Sizes.SMOL,
             className: q.guildIcon
           }), (0, i.jsx)(p.Text, {
             tag: "div",
@@ -655,7 +655,7 @@ function eu(e) {
     lastPing: U.Z.getLastPing()
   })), s = null != o, c = (0, l.e7)([Y.Z], () => null != o && Y.Z.hasVideo(o), [o]);
   return s && null != r && (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(N.Z, (t = $({}, a), n = n = {
+    children: [(0, i.jsx)(C.Z, (t = $({}, a), n = n = {
       hasVideo: c,
       connectionStatusTextVariant: "text-xs/semibold"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

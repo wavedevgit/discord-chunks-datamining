@@ -38,7 +38,7 @@ function O(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,7 +51,7 @@ function x(e, t) {
   }), e
 }
 
-function m(e) {
+function x(e) {
   let {
     lobbyId: t,
     connectionTypeText: n,
@@ -64,13 +64,13 @@ function m(e) {
     pings: u.Z.getPings(),
     outboundLossRate: u.Z.getOutboundLossRate(t)
   }));
-  return (0, r.jsx)(p.Z, x(O({}, o), {
+  return (0, r.jsx)(p.Z, b(O({}, o), {
     closePopout: l,
     connectionTypeText: n
   }))
 }
 
-function b(e) {
+function m(e) {
   let {
     closePopout: t,
     connectionTypeText: n
@@ -82,7 +82,7 @@ function b(e) {
     outboundLossRate: s.Z.getOutboundLossRate(),
     pings: s.Z.getPings()
   }));
-  return (0, r.jsx)(p.Z, x(O({}, l), {
+  return (0, r.jsx)(p.Z, b(O({}, l), {
     closePopout: t,
     connectionTypeText: n
   }))
@@ -97,11 +97,11 @@ function E(e) {
   } = e, o = (0, f.J)({
     channelId: t
   }) ? N.NW.string(N.t["3BogKS"]) : N.NW.string(N.t.ETIVvr);
-  return n ? (0, r.jsx)(m, {
+  return n ? (0, r.jsx)(x, {
     lobbyId: l,
     closePopout: i,
     connectionTypeText: o
-  }) : (0, r.jsx)(b, {
+  }) : (0, r.jsx)(m, {
     closePopout: i,
     connectionTypeText: o
   })

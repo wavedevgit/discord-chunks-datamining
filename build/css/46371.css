@@ -1,6 +1,6 @@
 /**
   Module ID: 46371
-  Original File Name: 0a3f229d03b6c26b
+  Original File Name: 582998cf98b73629
 **/
 .wrapper__48b20 {
     position: relative;
@@ -391,6 +391,10 @@
     text-decoration: underline
 }
 
+.errorCodeNoticeText__9671b {
+    margin-left: var(--spacing-8)
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -770,4 +774,4 @@ img.thumbnail__0f2e8 {
     align-items: stretch
 }
 
-/*# sourceMappingURL=0a3f229d03b6c26b.css.map*/
+/*# sourceMappingURL=582998cf98b73629.css.map*/

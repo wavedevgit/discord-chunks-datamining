@@ -1497,7 +1497,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       },
       [eM.s6.OVERLAY]: {
         section: eU.oAB.OVERLAY,
-        searchableTitles: [eF.NW.string(eF.t["9cb1U1"])],
+        searchableTitles: [eF.NW.string(eF.t["9cb1U1"]), eF.NW.string(eF.t.HcoRu7)],
         label: eF.NW.string(eF.t["9cb1U1"]),
         element: eC.Z,
         predicate: () => !eJ && L

@@ -1,6 +1,6 @@
 /**
   Module ID: 6822
-  Original File Name: 100d84c4282d3ac3
+  Original File Name: f55514f9723cdc35
 **/
 @value minColumnWidth: 460px;
 
@@ -3204,6 +3204,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-decoration: underline
 }
 
+.errorCodeNoticeText__9671b {
+    margin-left: var(--spacing-8)
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -4210,4 +4214,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=100d84c4282d3ac3.css.map*/
+/*# sourceMappingURL=f55514f9723cdc35.css.map*/

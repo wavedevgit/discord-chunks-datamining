@@ -20,24 +20,24 @@ var i = n(200651),
   y = n(744061),
   _ = n(36311),
   v = n(655687),
-  O = n(823748),
-  b = n(25007),
+  b = n(823748),
+  O = n(25007),
   x = n(199649),
   S = n(1397),
   E = n(541716),
-  j = n(752305),
-  N = n(974251),
+  N = n(752305),
+  j = n(974251),
   C = n(893718),
   I = n(249458),
   Z = n(552062),
   P = n(957730),
   w = n(400023),
-  k = n(623292),
-  T = n(807092),
+  T = n(623292),
+  k = n(807092),
   D = n(592125),
   M = n(703558),
-  R = n(731290),
-  A = n(430824),
+  A = n(731290),
+  R = n(430824),
   L = n(375954),
   z = n(944486),
   W = n(914010),
@@ -181,7 +181,7 @@ class eo extends r.Component {
           textValue: n
         } = t.state,
         i = M.Z.getDraft(e.channel.id, M.d.ChannelMessage);
-      n !== i && "" === i && t.setState((0, j.eK)(i))
+      n !== i && "" === i && t.setState((0, N.eK)(i))
     }), et(this, "handleTextareaKeyDown", e => {
       if (e.which === q.yXg.ARROW_UP && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && 0 === this.state.textValue.length) {
         e.preventDefault();
@@ -231,7 +231,7 @@ class eo extends r.Component {
           shouldRefocus: !1
         };
         let a = p.Z.getSendMessageOptionsForReply(i);
-        return (p.Z.sendMessage(n.id, P.ZP.parse(n, t), !0, a), this.setState((0, j.H2)()), (0, k.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
+        return (p.Z.sendMessage(n.id, P.ZP.parse(n, t), !0, a), this.setState((0, N.H2)()), (0, T.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
           shouldClear: !1,
           shouldRefocus: !1
         }) : {
@@ -247,16 +247,16 @@ class eo extends r.Component {
       this.setState({
         focused: !1
       })
-    }), et(this, "renderAttachButton", (e, t) => (0, i.jsx)(N.Z, {
+    }), et(this, "renderAttachButton", (e, t) => (0, i.jsx)(j.Z, {
       className: t,
       channel: this.props.channel,
       draftType: M.d.ChannelMessage,
       editorTextContent: this.state.textValue,
-      setValue: e => this.handleTextareaChange(null, e, (0, j.JM)(e)),
+      setValue: e => this.handleTextareaChange(null, e, (0, N.JM)(e)),
       canOnlyUseTextCommands: e
     })), M.Z.addChangeListener(this.draftDidChange);
     let n = M.Z.getDraft(e.channel.id, M.d.ChannelMessage);
-    this.state = ei(en({}, (0, j.eK)(n)), {
+    this.state = ei(en({}, (0, N.eK)(n)), {
       focused: !1,
       contentWarningProps: null
     }), G.S.subscribe(q.CkL.TEXTAREA_FOCUS, this.focusInput), G.S.subscribe(q.CkL.TEXTAREA_BLUR, this.blurInput)
@@ -322,7 +322,7 @@ class ea extends r.PureComponent {
         disableAnimations: u && g && !c
       },
       children: (0, i.jsxs)(r.Fragment, {
-        children: [!l && !h && (0, i.jsx)(b.Z, {
+        children: [!l && !h && (0, i.jsx)(O.Z, {
           channel: t,
           guild: a
         }), (0, i.jsx)(J.ZP.Background, {
@@ -489,17 +489,17 @@ function el(e) {
     a = (0, c.e7)([B.ZP], () => B.ZP.getOverlayChatKeybind()),
     l = null != a ? (0, H.BB)(a.shortcut, !0) : "]",
     [d, u, h] = (0, c.Wu)([U.default], () => [U.default.getTextWidgetOpacity(), U.default.getActiveRegions(), !t && U.default.isPreviewingInGame()]),
-    p = (0, c.e7)([A.Z], () => A.Z.getGuild(r)),
-    f = (0, c.e7)([R.Z], () => null != r && R.Z.didAgree(r)),
+    p = (0, c.e7)([R.Z], () => R.Z.getGuild(r)),
+    f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
     g = null != o && o.isPrivate() ? o.getRecipientId() : null,
-    m = (0, c.e7)([T.Z], () => null != s ? T.Z.getPendingReply(s) : void 0),
+    m = (0, c.e7)([k.Z], () => null != s ? k.Z.getPendingReply(s) : void 0),
     y = (0, c.e7)([V.default], () => null != g ? V.default.getUser(g) : null),
     {
       placeholder: _
     } = (0, v.Z)({
       channel: o
     });
-  return null != o && null != p && q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(O.Z, {}) : (0, i.jsx)(ea, en({
+  return null != o && null != p && q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(b.Z, {}) : (0, i.jsx)(ea, en({
     guild: p,
     channel: o,
     user: y,

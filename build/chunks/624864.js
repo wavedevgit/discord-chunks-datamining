@@ -1,12 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
-});
+  Z: () => y
+}), n(47120);
 var r, i = n(442837),
-  o = n(570140);
+  o = n(570140),
+  a = n(237997),
+  s = n(823379),
+  l = n(486016),
+  c = n(981631);
 
-function a(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,57 +19,101 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function l() {
-  return d()
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
 }
 
-function c() {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function p() {
+  return g()
+}
+
+function h() {
   return {
-    gameSettings: {}
+    gameSettings: {},
+    notificationSettings: new Set
   }
 }
-let u = c();
+let m = h();
 
-function d() {
-  u = c()
+function g() {
+  m = h()
 }
 
-function f(e) {
+function E(e) {
   let {
     applicationId: t,
     enabled: n
   } = e;
-  return u.gameSettings[t] = {
+  return m.gameSettings[t] = {
     limitedInteractionOverride: n
   }, !0
 }
-class _ extends(r = i.ZP.PersistedStore) {
+
+function b(e) {
+  let {
+    setting: t,
+    disabled: n
+  } = e;
+  return n ? m.notificationSettings.add(t) : m.notificationSettings.delete(t), m.notificationSettings = new Set(m.notificationSettings), !0
+}
+class v extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    u = s({}, c(), null != e ? e : {})
+    var t;
+    let n = h();
+    m = _(d({}, n, null != e ? e : {}), {
+      notificationSettings: new Set(null !== (t = null == e ? void 0 : e.notificationSettings) && void 0 !== t ? t : n.notificationSettings)
+    }), this.waitFor(a.default)
   }
   getState() {
-    return u
+    return m
   }
   isLimitedInteractionOverrideEnabled(e) {
     var t, n;
-    return null != e && null !== (n = null === (t = u.gameSettings[e]) || void 0 === t ? void 0 : t.limitedInteractionOverride) && void 0 !== n && n
+    return null != e && null !== (n = null === (t = m.gameSettings[e]) || void 0 === t ? void 0 : t.limitedInteractionOverride) && void 0 !== n && n
+  }
+  isNotificationDisabled(e) {
+    return m.notificationSettings.has(e)
+  }
+  getDisabledNotifications() {
+    return m.notificationSettings
   }
 }
-a(_, "displayName", "OverlaySettingsStore"), a(_, "persistKey", "OverlaySettingsStore");
-let p = new _(o.Z, {
-  LOGOUT: l,
-  OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: f
+u(v, "displayName", "OverlaySettingsStore"), u(v, "persistKey", "OverlaySettingsStore"), u(v, "migrations", [e => {
+  var t;
+  let n = a.default.getTextChatNotificationMode() === c.Ypu.DISABLED,
+    r = !1 === a.default.showInviteNotification;
+  return _(d({}, e), {
+    notificationSettings: new Set([n ? l.OverlayNotificationDisabledSetting.TEXT_CHAT : void 0, r ? l.OverlayNotificationDisabledSetting.GAME_ACTIVITY : void 0, ...Array.from(null !== (t = e.notificationSettings) && void 0 !== t ? t : [])].filter(s.lm))
+  })
+}]);
+let y = new v(o.Z, {
+  LOGOUT: p,
+  OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: E,
+  OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: b
 })

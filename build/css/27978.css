@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 127ada4efc5f5f39
+  Original File Name: 72133e2c1e3edc3e
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4328,6 +4328,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-decoration: underline
 }
 
+.errorCodeNoticeText__9671b {
+    margin-left: var(--spacing-8)
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -6004,4 +6008,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=127ada4efc5f5f39.css.map*/
+/*# sourceMappingURL=72133e2c1e3edc3e.css.map*/

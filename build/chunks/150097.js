@@ -1,8 +1,8 @@
 /** Chunk was on 70205 **/
 n.d(t, {
-  FI: () => k,
+  FI: () => M,
   LL: () => G,
-  N_: () => M,
+  N_: () => k,
   Xi: () => F,
   eF: () => L
 }), n(789020), n(266796), n(411104);
@@ -87,7 +87,7 @@ function L(e, t) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   var n;
   if (C.Z.getChannelId(Z.Z.getGuildId()) !== t) return !1;
   let i = T.Z.getChannel(t);
@@ -97,7 +97,7 @@ function M(e, t) {
   return !(null == i || null == l || null == a || i.isManaged() || a.hasFlag(R.xW$.SPAMMER) || h.Z.isBlockedOrIgnoredForMessage(e) || a.id === l.id || v.Z.getStatus() === R.Skl.DND || _.QZ.getSetting() || m.ZP.allowNoMessages(i))
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
     i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     l = A.default.getCurrentUser(),

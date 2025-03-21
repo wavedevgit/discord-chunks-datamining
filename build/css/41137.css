@@ -1,6 +1,6 @@
 /**
   Module ID: 41137
-  Original File Name: 399858ed89fb794c
+  Original File Name: 5ac41ec326ca9164
 **/
 @value minColumnWidth: 460px;
 
@@ -3218,6 +3218,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-decoration: underline
 }
 
+.errorCodeNoticeText__9671b {
+    margin-left: var(--spacing-8)
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -4259,4 +4263,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=399858ed89fb794c.css.map*/
+/*# sourceMappingURL=5ac41ec326ca9164.css.map*/

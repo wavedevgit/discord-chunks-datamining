@@ -1,6 +1,6 @@
 /** Chunk was on 38542 **/
 n.d(t, {
-  Z: () => b
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -53,7 +53,7 @@ let N = {
     [f.IE4.BAD]: p.rtcConnectionQualityBad,
     [f.IE4.UNKNOWN]: null
   };
-class x extends l.PureComponent {
+class b extends l.PureComponent {
   renderPopoutTarget(e) {
     let t = this.props.channelId;
     return null == t ? e({}) : (0, r.jsx)(a.yRy, {
@@ -104,7 +104,7 @@ class x extends l.PureComponent {
     return i === f.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
       text: t !== f.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
       color: N[t],
-      children: e => (0, r.jsx)(m, v({
+      children: e => (0, r.jsx)(x, v({
         quality: t,
         smallPing: n
       }, e))
@@ -138,7 +138,7 @@ class x extends l.PureComponent {
   }
 }
 
-function m(e) {
+function x(e) {
   var {
     quality: t,
     smallPing: n
@@ -169,4 +169,4 @@ function m(e) {
     })
   }, l))
 }
-let b = x
+let m = b

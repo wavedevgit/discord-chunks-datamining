@@ -67,27 +67,25 @@ async function g(e, t) {
     {
       channelId: r,
       onSuccess: i,
-      joinSource: c,
-      loadId: d,
-      setsHistorySnapshot: f = !0,
-      shouldNavigate: _ = !0
+      joinSource: a,
+      loadId: c,
+      shouldNavigate: d = !0
     } = n,
-    h = (0, s.s1)();
-  f && a.Z.setHistorySnapshot(p({}, h));
-  let g = u.Z.getGuild(e),
-    E = {
+    f = (0, s.s1)(),
+    _ = u.Z.getGuild(e),
+    h = {
       state: {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? _ && (0, l.X)(e, E) : (await o.Z.joinGuild(e, {
+  null != _ && null != _.joinedAt ? d && (0, l.X)(e, h) : (await o.Z.joinGuild(e, {
     lurker: !0,
-    source: c,
-    loadId: d,
+    source: a,
+    loadId: c,
     lurkLocation: null == t ? void 0 : t.page
-  }), _ && await o.Z.transitionToGuildSync(e, m(p({}, E), {
+  }), d && await o.Z.transitionToGuildSync(e, m(p({}, h), {
     welcomeModalChannelId: r,
-    search: h.location.search
+    search: f.location.search
   }), r)), null == i || i()
 }
 

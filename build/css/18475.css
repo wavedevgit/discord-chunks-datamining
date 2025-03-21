@@ -1,6 +1,6 @@
 /**
   Module ID: 18475
-  Original File Name: 7cc7a79aca025fc3
+  Original File Name: 3ccbcf2125eeefde
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -1416,6 +1416,10 @@
     color: #fff;
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.errorCodeNoticeText__9671b {
+    margin-left: var(--spacing-8)
 }
 
 .notice__36c3e {
@@ -3480,4 +3484,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=7cc7a79aca025fc3.css.map*/
+/*# sourceMappingURL=3ccbcf2125eeefde.css.map*/

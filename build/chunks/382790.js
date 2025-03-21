@@ -28,7 +28,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function b(e) {
   let {
     closePopout: t
   } = e;
@@ -36,7 +36,7 @@ function O(e) {
     onClose: t
   })
 }
-class b extends(i = s.PureComponent) {
+class O extends(i = s.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
@@ -48,7 +48,7 @@ class b extends(i = s.PureComponent) {
       onDragStart: this.onDragStart
     }, e) : (0, r.jsx)(m.Z, {
       title: y.NW.string(y.t.YUU0RE),
-      renderSettings: O,
+      renderSettings: b,
       onDragStart: this.onDragStart,
       children: (0, r.jsx)(g.Z, {})
     }), o = n ? "div" : h.ZP;
@@ -72,9 +72,9 @@ class b extends(i = s.PureComponent) {
     })
   }
 }
-v(b, "defaultProps", {
+v(O, "defaultProps", {
   contained: !1
 });
 let x = l.ZP.connectStores([u.Z], () => ({
   selectedGuildId: u.Z.getGuildId()
-}))(b)
+}))(O)

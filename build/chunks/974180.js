@@ -35,8 +35,8 @@ var i, l = n(149765),
   b = n(292959),
   G = n(496675),
   L = n(699516),
-  M = n(944486),
-  k = n(885110),
+  k = n(944486),
+  M = n(885110),
   w = n(246946),
   W = n(594174),
   F = n(979651),
@@ -84,7 +84,7 @@ let j = "message1",
   };
 
 function er() {
-  return !!(b.Z.getDesktopType() === X.qrD.NEVER || k.Z.getStatus() === X.Skl.DND || D.QZ.getSetting())
+  return !!(b.Z.getDesktopType() === X.qrD.NEVER || M.Z.getStatus() === X.Skl.DND || D.QZ.getSetting())
 }
 
 function eo(e) {
@@ -125,7 +125,7 @@ K(eu, "displayName", "NotificationStore"), new eu(o.Z, __OVERLAY__ ? {} : {
   },
   WINDOW_FOCUS: function(e) {
     if (et = e.focused) {
-      let e = M.Z.getChannelId();
+      let e = k.Z.getChannelId();
       null != e && ea.clearChannel(e)
     }
   },
@@ -152,22 +152,25 @@ K(eu, "displayName", "NotificationStore"), new eu(o.Z, __OVERLAY__ ? {} : {
       v = I && p && T ? null !== (a = (0, Z.bb)(null !== (l = f.guild_id) && void 0 !== l ? l : X.aIL, r)) && void 0 !== a ? a : (0, Z.iD)(f.guild_id) : void 0;
     if (S && (T && z.Z.playNotificationSound("message3", .4, v), !et) || !N) return !1;
     let m = n(808506).default,
-      y = n(237997).default;
-    if (null != m.getFocusedPID() && y.getTextChatNotificationMode() === X.Ypu.ENABLED && !w.Z.disableNotifications) return !1;
+      y = n(624864).Z,
+      {
+        OverlayNotificationDisabledSetting: P
+      } = n(486016);
+    if (null != m.getFocusedPID() && !y.isNotificationDisabled(P.TEXT_CHAT) && !w.Z.disableNotifications) return !1;
     let {
-      icon: P,
-      title: U,
-      body: D
+      icon: U,
+      title: D,
+      body: O
     } = (0, H.Xi)(f, u, g);
     if (o.Z.dispatch({
         type: "RPC_NOTIFICATION_CREATE",
         channelId: f.id,
         message: u,
-        icon: P,
-        title: U,
-        body: D
+        icon: U,
+        title: D,
+        body: O
       }), (0, h.R)(u, f.guild_id), b.Z.getDesktopType() === X.qrD.NEVER) return T && z.Z.playNotificationSound(j, Q, v), !1;
-    z.Z.showNotification(P, U, D, {
+    z.Z.showNotification(U, D, O, {
       notif_type: "MESSAGE_CREATE",
       notif_user_id: null === (i = u.author) || void 0 === i ? void 0 : i.id,
       message_id: u.id,
@@ -406,7 +409,7 @@ K(eu, "displayName", "NotificationStore"), new eu(o.Z, __OVERLAY__ ? {} : {
         channelId: null,
         guildId: null
       };
-      if (null == (t = n.channelId) || null == n.guildId || M.Z.getCurrentlySelectedChannelId() === t && et) return !1
+      if (null == (t = n.channelId) || null == n.guildId || k.Z.getCurrentlySelectedChannelId() === t && et) return !1
     }
     z.Z.showNotification(n, i, l, {
       notif_type: r

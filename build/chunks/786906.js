@@ -1,7 +1,7 @@
 /** Chunk was on 76977 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => j
 }), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -20,8 +20,8 @@ var i = n(200651),
   y = n(430824),
   _ = n(699516),
   v = n(944486),
-  O = n(707878),
-  b = n(518084),
+  b = n(707878),
+  O = n(518084),
   x = n(388032),
   S = n(797259);
 
@@ -33,7 +33,7 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class j extends r.Component {
+class N extends r.Component {
   componentDidUpdate() {
     this.props.locked && this.state.showOpacitySlider && this.setState({
       showOpacitySlider: !1
@@ -73,14 +73,14 @@ class j extends r.Component {
     } = this.props, {
       showOpacitySlider: g
     } = this.state;
-    return g && !n ? (0, i.jsxs)(b.ZP.Bar, {
+    return g && !n ? (0, i.jsxs)(O.ZP.Bar, {
       className: S.opacityHeader,
-      children: [(0, i.jsx)(O.Z, {}), (0, i.jsx)(h.Z.Icon, {
+      children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(h.Z.Icon, {
         icon: l.Dio,
         onClick: this.handleCloseOpacitySettings,
         tooltip: x.NW.string(x.t.cpT0Cg)
       })]
-    }) : (0, i.jsx)(b.ZP.Background, {
+    }) : (0, i.jsx)(O.ZP.Background, {
       opacityOverride: n || u ? null : 1,
       children: (0, i.jsx)("div", {
         className: o()(e, t, S.headerContainer),
@@ -160,7 +160,7 @@ class j extends r.Component {
   }
 }
 
-function N(e) {
+function j(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -186,7 +186,7 @@ function N(e) {
     o = (0, a.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     l = (0, u.ZP)(t),
     c = (0, a.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
-  return (0, i.jsx)(j, function(e) {
+  return (0, i.jsx)(N, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

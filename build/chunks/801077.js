@@ -18,9 +18,9 @@ var r, l = n(392711),
   N = n(750881),
   y = n(710845),
   O = n(38618),
-  x = n(656063),
-  m = n(761282),
-  b = n(814443),
+  b = n(656063),
+  x = n(761282),
+  m = n(814443),
   E = n(789407),
   C = n(630186),
   j = n(250889),
@@ -84,7 +84,7 @@ let V = !1,
 
 function J() {
   let e = A.Z.getFriendIDs();
-  return new Set(P.Z.hasConsented(M.pjP.PERSONALIZATION) ? [...b.Z.getUserAffinitiesUserIds(), ...e] : e)
+  return new Set(P.Z.hasConsented(M.pjP.PERSONALIZATION) ? [...m.Z.getUserAffinitiesUserIds(), ...e] : e)
 }
 
 function q(e) {
@@ -135,7 +135,7 @@ function ei(e, t, n) {
     g = null !== (r = null == p ? void 0 : p.nsfwAllowed) && void 0 !== r && r,
     N = t.map(e => e.id),
     O = t.filter(t => e.has(t.id)),
-    b = !1,
+    m = !1,
     P = [],
     A = new Set,
     k = !1,
@@ -150,7 +150,7 @@ function ei(e, t, n) {
         streamUser: e,
         activity: h
       }), null == h) continue;
-    let f = (0, x.Z)(h);
+    let f = (0, b.Z)(h);
     if (null == f) continue;
     k = f === E.XB;
     let N = function(e) {
@@ -176,7 +176,7 @@ function ei(e, t, n) {
           GuildStore: Z.Z
         }) !== u.Fw.CAN_JOIN) continue
     }
-    if (!m.JE(h) || null == N || A.has(N.id)) continue;
+    if (!x.JE(h) || null == N || A.has(N.id)) continue;
     let O = null != h ? en(h) : null;
     (null == O || O.id !== N.id) && (h = null);
     let R = [];
@@ -187,7 +187,7 @@ function ei(e, t, n) {
       let t = q(e.id),
         n = null != t ? en(t) : null;
       return null != n && n.id === N.id
-    }), (R = i().orderBy(R, [el], ["desc"])).length !== t.length && (b = !0), A.add(N.id), P.push({
+    }), (R = i().orderBy(R, [el], ["desc"])).length !== t.length && (m = !0), A.add(N.id), P.push({
       game: N,
       activity: h,
       activityUser: e,
@@ -230,7 +230,7 @@ function ei(e, t, n) {
       status: R.Z.getStatus(e.id)
     })),
     partiedMembers: t,
-    showPlayingMembers: b,
+    showPlayingMembers: m,
     guildContext: f,
     currentActivities: (h = e => {
       var t;
@@ -341,7 +341,7 @@ function ed() {
 }
 class eh extends(r = a.ZP.Store) {
   initialize() {
-    this.syncWith([D.default, v.Z, R.Z, T.Z, W.Z, I.Z, A.Z, P.Z, b.Z], ed), this.waitFor(O.Z, Z.Z, v.Z, D.default, b.Z)
+    this.syncWith([D.default, v.Z, R.Z, T.Z, W.Z, I.Z, A.Z, P.Z, m.Z], ed), this.waitFor(O.Z, Z.Z, v.Z, D.default, m.Z)
   }
   get currentActivityParties() {
     return K

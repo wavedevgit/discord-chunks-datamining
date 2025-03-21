@@ -23,8 +23,8 @@ var r = n(13245),
 function _(e, t, n, _) {
   var v;
   let {
-    icon: O,
-    title: b,
+    icon: b,
+    title: O,
     body: x
   } = (0, d.Xi)(e, t, n), {
     trackView: S,
@@ -39,8 +39,8 @@ function _(e, t, n, _) {
     channel_type: e.type
   });
   return {
-    icon: O,
-    title: b,
+    icon: b,
+    title: O,
     body: x,
     renderFooter: e => e ? (0, i.jsx)("div", {
       style: {

@@ -26,8 +26,8 @@ var i = n(200651),
   x = n(656709),
   I = n(567409),
   S = n(225559),
-  C = n(703656),
-  N = n(93127),
+  N = n(703656),
+  C = n(93127),
   Z = n(814443),
   w = n(752048),
   P = n(409057),
@@ -107,7 +107,7 @@ function K(e) {
             var i;
             let e = await f.Z.getOrEnsurePrivateChannel(a.id),
               n = null !== (i = T.Z.getChannel(e)) && void 0 !== i ? i : null;
-            o()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
+            o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
               channel: n,
               content: Y.NW.formatToPlainString(Y.t.UVBA9v, {
                 gameName: t.extra.game_name
@@ -138,7 +138,7 @@ function K(e) {
       if (null == a) return;
       let t = await f.Z.getOrEnsurePrivateChannel(a.id),
         n = null !== (e = T.Z.getChannel(t)) && void 0 !== e ? e : null;
-      o()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), (0, U.Ws)(F.Odu.ACTIVITY, {
+      o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), (0, U.Ws)(F.Odu.ACTIVITY, {
         type: U.Qu.REDIRECT,
         value: U.bk.CHAT,
         userId: a.id
@@ -334,7 +334,7 @@ function ee(e) {
     userAffinityThresholdV2: l = .0029
   } = e, o = (0, I.Ns)(t);
   (0, O.ZP)(() => {
-    (0, N.W)(), (0, N._)()
+    (0, C.W)(), (0, C._)()
   });
   let d = (0, u.e7)([D.Z], () => null == t ? null : D.Z.getApplicationActivity(t), [t]),
     p = (0, u.Wu)([R.Z, A.Z, Z.Z, w.Z], () => {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   B: () => y,
-  Z: () => j
+  Z: () => N
 }), n(47120), n(411104);
 var i, r, s = n(200651),
   o = n(192379),
@@ -62,7 +62,7 @@ function v(e, t, n) {
   }
 }
 
-function O(e) {
+function b(e) {
   let {
     top: t,
     left: n,
@@ -77,7 +77,7 @@ function O(e) {
   }
 }
 
-function b(e) {
+function O(e) {
   return "auto" === e || null == e ? "auto" : "".concat(e, "px")
 }
 
@@ -127,7 +127,7 @@ class E extends(i = o.Component) {
     return !(0, c.Z)(t, this.state) || !(0, c.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, c.Z)(e.anchor, this.props.anchor) || !(0, c.Z)(e.size, this.props.size) || !(0, c.Z)(e.minSize, this.props.minSize) || !(0, c.Z)(e.container, this.props.container)
   }
   componentDidUpdate(e, t) {
-    null != t.operation || ((0, c.Z)(this.props.anchor, e.anchor) || this.setDOMPositions(O(this.props.anchor)), (0, c.Z)(this.props.size, e.size) || this.setDOMSize(v(this.props.size, this.props.minSize.width, this.props.minSize.height)))
+    null != t.operation || ((0, c.Z)(this.props.anchor, e.anchor) || this.setDOMPositions(b(this.props.anchor)), (0, c.Z)(this.props.size, e.size) || this.setDOMSize(v(this.props.size, this.props.minSize.width, this.props.minSize.height)))
   }
   componentWillUnmount() {
     this.handleOperationEnd()
@@ -174,8 +174,8 @@ class E extends(i = o.Component) {
       left: _,
       bottom: void 0,
       right: void 0
-    }, r, s, g, m)), O = u ? (0, d.R)(v) : S("RESIZE_SOUTH_EAST", v);
-    this.setDOMPositions(O), f || (null != l && l(), this.setState({
+    }, r, s, g, m)), b = u ? (0, d.R)(v) : S("RESIZE_SOUTH_EAST", v);
+    this.setDOMPositions(b), f || (null != l && l(), this.setState({
       operationStarted: !0
     })), null != c && c(i, "MOVE", this.anchor, this.size)
   }
@@ -248,7 +248,7 @@ class E extends(i = o.Component) {
       left: n,
       bottom: i,
       right: r
-    }, null != s && (s.style.top = b(t), s.style.bottom = b(i), s.style.left = b(n), s.style.right = b(r))
+    }, null != s && (s.style.top = O(t), s.style.bottom = O(i), s.style.left = O(n), s.style.right = O(r))
   }
   setDOMSize(e) {
     let {
@@ -260,7 +260,7 @@ class E extends(i = o.Component) {
     t = "auto" === this.size.width ? "auto" : t, n = "auto" === this.size.height ? "auto" : n, this.size = {
       width: t,
       height: n
-    }, null != i && (i.style.width = b(t), i.style.height = b(n))
+    }, null != i && (i.style.width = O(t), i.style.height = O(n))
   }
   renderResizeHandles() {
     let {
@@ -472,7 +472,7 @@ class E extends(i = o.Component) {
         operation: null,
         operationStarted: !1
       }, r)
-    }), this.anchor = O(e.anchor), this.size = v(e.size, e.minSize.width, e.minSize.height)
+    }), this.anchor = b(e.anchor), this.size = v(e.size, e.minSize.width, e.minSize.height)
   }
 }
 p(E, "Operations", y), p(E, "defaultProps", {
@@ -494,4 +494,4 @@ p(E, "Operations", y), p(E, "defaultProps", {
   active: !0,
   targetWindow: window
 });
-let j = E
+let N = E

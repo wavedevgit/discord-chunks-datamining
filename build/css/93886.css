@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: bb662becf037c202
+  Original File Name: cd878b7b29b02114
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -4411,6 +4411,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-decoration: underline
 }
 
+.errorCodeNoticeText__9671b {
+    margin-left: var(--spacing-8)
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -5676,4 +5680,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=bb662becf037c202.css.map*/
+/*# sourceMappingURL=cd878b7b29b02114.css.map*/

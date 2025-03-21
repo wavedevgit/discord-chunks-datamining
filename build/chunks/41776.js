@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -20,15 +20,14 @@ function u(e, t, n) {
 }
 let d = [],
   f = {},
-  _ = null,
-  p = null;
+  _ = null;
 
-function h(e) {
+function p(e) {
   let t = new Set([...null != e ? e : []]);
-  return [...d].reduce((e, n) => t.has(n) ? e : m(n) || e, !1)
+  return [...d].reduce((e, n) => t.has(n) ? e : h(n) || e, !1)
 }
 
-function m(e) {
+function h(e) {
   let t = d.indexOf(e);
   if (t > -1) {
     let n = [...d];
@@ -37,15 +36,15 @@ function m(e) {
   return !1
 }
 
-function g(e) {
+function m(e) {
   return !(e === c.ME || d.includes(e)) && (d = [...d, e], !0)
 }
 
-function E(e, t) {
+function g(e, t) {
   null != t && (f[e] = t)
 }
 
-function b(e) {
+function E(e) {
   let {
     guildId: t,
     lurker: n,
@@ -54,77 +53,71 @@ function b(e) {
     loadId: o
   } = e;
   if (n) {
-    switch (g(t), E(t, o), r) {
+    switch (m(t), g(t, o), r) {
       case c.vtS.MOBILE_GUILD_DISCOVERY:
-        p = {
+        _ = {
           type: c.vtS.MOBILE_GUILD_DISCOVERY
         };
         break;
       case c.vtS.DIRECTORY_ENTRY:
-        p = {
+        _ = {
           type: c.vtS.DIRECTORY_ENTRY,
           directoryChannelId: i
         };
         break;
       default:
-        p = null
+        _ = null
     }
     return !0
   }
   return !1
 }
 
-function v(e) {
+function b(e) {
   let {
     guild: t
   } = e;
-  return !!(null != t.joined_at && d.includes(t.id)) && (m(t.id), _ = null, p = null, !0)
+  return !!(null != t.joined_at && d.includes(t.id)) && (h(t.id), _ = null, !0)
 }
 
-function y(e) {
+function v(e) {
   var t;
   let {
     guildId: n,
     joinedAt: r,
     user: i
   } = e, o = i.id === (null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id), a = null == r;
-  return !!(o && !a && d.includes(n)) && (m(n), _ = null, p = null, !0)
+  return !!(o && !a && d.includes(n)) && (h(n), _ = null, !0)
+}
+
+function y(e) {
+  let {
+    guild: t
+  } = e;
+  return !!d.includes(t.id) && (h(t.id), _ = null, !0)
 }
 
 function O(e) {
   let {
-    guild: t
-  } = e;
-  return !!d.includes(t.id) && (m(t.id), _ = null, p = null, !0)
+    ignoredGuildIds: t
+  } = e, n = p(t);
+  return n && (_ = null), n
 }
 
 function I(e) {
   let {
-    ignoredGuildIds: t
-  } = e, n = h(t);
-  return n && (_ = null, p = null), n
-}
-
-function S(e) {
-  let {
     lurkingGuildId: t,
     lurkingSource: n
   } = e;
-  return g(t), p = n, !0
+  return m(t), _ = n, !0
 }
 
-function T() {
+function S() {
   d = Object.values(s.Z.getGuilds()).reduce((e, t) => t.isLurker() ? [...e, t.id] : e, [])
 }
-class N extends(r = i.ZP.Store) {
+class T extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, l.default)
-  }
-  setHistorySnapshot(e) {
-    _ = e
-  }
-  getHistorySnapshot() {
-    return _
   }
   lurkingGuildIds() {
     return d
@@ -139,19 +132,19 @@ class N extends(r = i.ZP.Store) {
     return !!(!n && r)
   }
   getLurkingSource() {
-    return p
+    return _
   }
   getLoadId(e) {
     return null != e ? f[e] : null
   }
 }
-u(N, "displayName", "LurkingStore");
-let A = new N(o.Z, {
-  CONNECTION_OPEN: T,
-  GUILD_JOIN: b,
-  GUILD_STOP_LURKING: I,
-  GUILD_STOP_LURKING_FAILURE: S,
-  GUILD_CREATE: v,
-  GUILD_DELETE: O,
-  GUILD_MEMBER_ADD: y
+u(T, "displayName", "LurkingStore");
+let N = new T(o.Z, {
+  CONNECTION_OPEN: S,
+  GUILD_JOIN: E,
+  GUILD_STOP_LURKING: O,
+  GUILD_STOP_LURKING_FAILURE: I,
+  GUILD_CREATE: b,
+  GUILD_DELETE: y,
+  GUILD_MEMBER_ADD: v
 })

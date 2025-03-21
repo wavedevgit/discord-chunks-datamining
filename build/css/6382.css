@@ -1,6 +1,6 @@
 /**
   Module ID: 6382
-  Original File Name: 63bfda14b4febfdc
+  Original File Name: 092cf3c50084efd6
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -14574,11 +14574,35 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 
 .collapseable__9d98d {
     overflow: hidden;
+    background-color: var(--bg-base-secondary);
     border: 1px solid var(--bg-mod-faint);
     border-radius: var(--radius-sm)
 }
 
-.collapseable__9d98d,.mainCollapseableContainer__9d98d {
+.notificationSettingsContainer__9d98d {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px 0
+}
+
+.notificationSettingsContainer__9d98d .notificationItem__9d98d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--bg-mod-faint)
+}
+
+.notificationSettingsContainer__9d98d .notificationItem__9d98d .notificationDescriptionContainer__9d98d {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+
+.mainCollapseableContainer__9d98d {
     background-color: var(--bg-base-secondary)
 }
 
@@ -16949,4 +16973,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=63bfda14b4febfdc.css.map*/
+/*# sourceMappingURL=092cf3c50084efd6.css.map*/

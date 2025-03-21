@@ -36,9 +36,7 @@ function g(e) {
             let t = {
               page: p.ZY5.APPLICATION_DIRECTORY
             };
-            await (0, c.Ub)(n, t, {
-              setsHistorySnapshot: !1
-            })
+            await (0, c.Ub)(n, t)
           }
         } catch (e) {}
       }, [e]);

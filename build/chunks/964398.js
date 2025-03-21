@@ -108,9 +108,9 @@ let g = (e, t) => {
       itemHeight: N,
       showDeadZoneIndicator: y,
       activeItem: O,
-      onItemSelect: x,
-      onItemAction: m,
-      interactive: b = !0,
+      onItemSelect: b,
+      onItemAction: x,
+      interactive: m = !0,
       onClose: E,
       children: C
     } = e, j = l.useRef(null), I = l.useRef([]), S = l.useRef(!1), P = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
@@ -119,10 +119,10 @@ let g = (e, t) => {
     }), R = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => o().chunk(C, f), [C]), D = l.useCallback((e, t) => {
       null == I.current[T] ? I.current[T] = [] : I.current[T][t] = e
     }, [T]), W = l.useCallback((e, t) => {
-      P.current = t, x(f * e + t)
-    }, [x]), k = l.useCallback(() => {
-      P.current = null, x(null)
-    }, [x]), B = l.useCallback(e => {
+      P.current = t, b(f * e + t)
+    }, [b]), k = l.useCallback(() => {
+      P.current = null, b(null)
+    }, [b]), B = l.useCallback(e => {
       k(), S.current = e
     }, [k]), M = l.useCallback((e, t, n) => {
       if (S.current) {
@@ -144,8 +144,8 @@ let g = (e, t) => {
         y: (i ? Math.max(r.y, -o.y) : Math.min(r.y, o.y)) / 2
       })
     }, []), U = l.useCallback(e => {
-      null != P.current && (e.preventDefault(), e.stopPropagation(), null == m || m(f * T + P.current))
-    }, [m, T]), L = l.useMemo(() => (0, i.throttle)(e => {
+      null != P.current && (e.preventDefault(), e.stopPropagation(), null == x || x(f * T + P.current))
+    }, [x, T]), L = l.useMemo(() => (0, i.throttle)(e => {
       if (null == j.current) return;
       let r = j.current.getBoundingClientRect(),
         l = {
@@ -172,10 +172,10 @@ let g = (e, t) => {
       }
       k()
     }, 16), [O, M, k, W, T, n, t]), G = l.useCallback(e => {
-      if (!b) return;
+      if (!m) return;
       let t = T + (e.deltaY > 0 ? 1 : -1);
       t >= 0 && t < A.length && (null != P.current && (A[t].length > P.current ? W(t, P.current) : k()), w(t))
-    }, [b, T, A, W, k]), V = l.useMemo(() => A[T].map((e, l) => {
+    }, [m, T, A, W, k]), V = l.useMemo(() => A[T].map((e, l) => {
       let i = h[l];
       if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(h.length));
       let o = p(i.x, t, v),
@@ -275,7 +275,7 @@ let g = (e, t) => {
             children: (0, r.jsx)(d, {
               className: u.chatWheelDeadZoneIcon
             })
-          }), b && A.length > 1 ? (0, r.jsx)("div", {
+          }), m && A.length > 1 ? (0, r.jsx)("div", {
             className: u.paginationHint,
             children: c.NW.string(c.t["Xy+S09"])
           }) : null]
