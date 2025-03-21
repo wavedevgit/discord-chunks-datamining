@@ -1,41 +1,42 @@
 /** Chunk was on 53912 **/
 n.d(t, {
-  D: () => d
+  D: () => f
 });
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(377171),
-  o = n(436952),
-  c = n(611725),
-  s = n(388032),
-  u = n(151889);
+  a = n(287734),
+  o = n(377171),
+  c = n(436952),
+  s = n(611725),
+  u = n(388032),
+  d = n(151889);
 
-function d(e) {
-  let t = (0, o.sX)({
+function f(e) {
+  let t = (0, c.sX)({
       location: "channel_context_menu"
     }),
     {
       openPickerForChannel: n
-    } = (0, c.B)(),
-    d = (0, i.useCallback)(() => {
-      n(e.id)
+    } = (0, s.B)(),
+    f = (0, i.useCallback)(() => {
+      a.default.selectPrivateChannel(e.id), n(e.id)
     }, [e.id, n]);
-  return t.enabled && t.entryPoint === o.FN.CONTEXT_MENU && e.isPrivate() ? (0, r.jsx)(l.sNh, {
+  return t.enabled && t.entryPoint === c.FN.CONTEXT_MENU && e.isPrivate() ? (0, r.jsx)(l.sNh, {
     id: "set-wallpaper",
     label: (0, r.jsxs)("div", {
-      className: u.label,
-      children: [s.NW.string(s.t.GixvUl), (0, r.jsx)(l.IGR, {
-        text: s.NW.string(s.t.y2b7CA),
-        color: a.Z.BG_BRAND
+      className: d.label,
+      children: [u.NW.string(u.t.GixvUl), (0, r.jsx)(l.IGR, {
+        text: u.NW.string(u.t.y2b7CA),
+        color: o.Z.BG_BRAND
       })]
     }),
     icon: () => (0, r.jsx)("div", {
-      className: u.iconWrapper,
+      className: d.iconWrapper,
       children: (0, r.jsx)(l.SrA, {
         size: "xs"
       })
     }),
-    action: d
+    action: f
   }) : null
 }

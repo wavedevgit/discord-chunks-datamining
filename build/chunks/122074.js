@@ -1,7 +1,7 @@
 /** Chunk was on 53912 **/
 n.d(t, {
-  U: () => I,
-  Uf: () => S,
+  U: () => S,
+  Uf: () => P,
   ng: () => C
 }), n(47120);
 var r = n(200651),
@@ -33,15 +33,15 @@ function C(e, t) {
     }, {
       autoTrackExposure: !0
     }),
-    r = P(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top");
+    r = I(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top");
   return (n.nestedEntry && t || !n.nestedEntry && !t) && r
 }
 
-function S(e, t, n) {
-  return P(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
+function P(e, t, n) {
+  return I(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
 }
 
-function I() {
+function S() {
   let e = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -54,14 +54,14 @@ function I() {
   })
 }
 
-function P(e, t, a, C) {
-  var S, I;
-  let P = (0, g.OR)(e),
+function I(e, t, a, C) {
+  var P, S;
+  let I = (0, g.OR)(e),
     T = (0, g._c)(e, t),
     E = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     w = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
     A = f.ZP.canUseCustomNotificationSounds(E),
-    D = A ? null != T ? T : P : m.YC.CLASSIC,
+    D = A ? null != T ? T : I : m.YC.CLASSIC,
     U = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -85,7 +85,7 @@ function P(e, t, a, C) {
     },
     F = A ? o.Text : O.Z,
     Y = (0, m.LB)(),
-    z = null !== (I = null === (S = Y.find(e => e.value === D)) || void 0 === S ? void 0 : S.label) && void 0 !== I ? I : _.NW.string(_.t.p3Hg5e),
+    z = null !== (S = null === (P = Y.find(e => e.value === D)) || void 0 === P ? void 0 : P.label) && void 0 !== S ? S : _.NW.string(_.t.p3Hg5e),
     B = (0, r.jsx)(o.IGR, {
       className: x.newBadge,
       text: _.NW.string(_.t.y2b7CA)

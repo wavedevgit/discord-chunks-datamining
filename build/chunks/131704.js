@@ -390,6 +390,9 @@ class em extends e_ {
   get isHDStreamSplashed() {
     return null != this.hdStreamingUntil && new Date(this.hdStreamingUntil) > new Date
   }
+  get isChatWallpaperEnabled() {
+    return this.isDM() || this.isMultiUserDM() || this.isGroupDM()
+  }
 }
 class eg extends em {
   static fromServer(e, t) {
