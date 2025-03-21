@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => b
+  Z: () => f
 }), r(266796), r(47120);
 var n = r(200651),
   l = r(192379),
@@ -13,16 +13,16 @@ var n = r(200651),
   d = r(217702),
   p = r(483112);
 
-function b(e) {
+function f(e) {
   let {
     media: t,
     spoiler: r,
-    description: b
-  } = e, f = (0, a.pU)(t), {
+    description: f
+  } = e, b = (0, a.pU)(t), {
     gifAutoPlay: O
   } = (0, c.c)(), [y, m] = l.useState(r), j = e => {
     var r, l;
-    return "IMAGE" !== f ? (0, n.jsx)(u.S, {
+    return "IMAGE" !== b ? (0, n.jsx)(u.S, {
       className: p.imgContainer,
       media: t,
       placeholderWidth: 85,
@@ -34,7 +34,7 @@ function b(e) {
       containerClassName: p.imgContainer,
       imageClassName: p.img,
       src: t.proxyUrl,
-      alt: b,
+      alt: f,
       original: t.url,
       placeholder: t.placeholder,
       placeholderVersion: t.placeholderVersion,

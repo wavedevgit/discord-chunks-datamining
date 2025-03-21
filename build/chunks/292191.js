@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  a = n.n(i),
+var a = n(120356),
+  i = n.n(a),
   l = n(481060),
   o = n(388032),
   s = n(687214),
@@ -15,10 +15,10 @@ function d(e) {
   let {
     heading: t = o.NW.string(o.t.NGw8v7),
     body: n = o.NW.string(o.t["1XZRY2"]),
-    className: i
+    className: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(s.container, i),
+    className: i()(s.container, a),
     children: [(0, r.jsx)("div", {
       className: s.imageContainer,
       children: (0, r.jsx)("img", {

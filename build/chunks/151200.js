@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => h
+  Z: () => v
 });
 var n = r(200651);
 r(192379);
@@ -13,8 +13,8 @@ var l = r(120356),
   u = r(206295),
   d = r(297781),
   p = r(313201),
-  b = r(231338),
-  f = r(388032),
+  f = r(231338),
+  b = r(388032),
   O = r(448668),
   y = r(467379);
 
@@ -92,7 +92,7 @@ function g(e) {
   })
 }
 
-function v(e) {
+function h(e) {
   var {
     clickable: t
   } = e, r = function(e, t) {
@@ -118,14 +118,14 @@ function v(e) {
   }))
 }
 
-function h(e) {
+function v(e) {
   let {
     entry: t,
     channel: r,
     title: l,
     subtitle: y,
     thumbnailUrl: j,
-    titleClickable: h,
+    titleClickable: v,
     subtitleClickable: P,
     thumbnailClickable: x,
     providerIconProps: w,
@@ -135,9 +135,9 @@ function h(e) {
     secondaryColor: N
   } = (0, u.Z)(j);
   return null != j && (S.background = "linear-gradient(45deg, ".concat(E, ", ").concat(N, ")")), (0, n.jsx)(o.f6W, {
-    theme: b.BR.DARK,
+    theme: f.BR.DARK,
     children: e => (0, n.jsxs)("figure", {
-      "aria-roledescription": f.NW.string(f.t.zFfUhI),
+      "aria-roledescription": b.NW.string(b.t.zFfUhI),
       "aria-labelledby": C,
       "data-disable-adaptive-theme": !0,
       className: i()(O.container, e),
@@ -160,8 +160,8 @@ function h(e) {
           className: O.users
         }), (0, n.jsx)(o.LZC, {
           size: 2
-        }), (0, n.jsx)(v, {
-          clickable: h,
+        }), (0, n.jsx)(h, {
+          clickable: v,
           className: O.clickableText,
           children: (0, n.jsx)(o.X6q, {
             id: C,
@@ -174,7 +174,7 @@ function h(e) {
         }), null != y ? (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(o.LZC, {
             size: 2
-          }), (0, n.jsx)(v, {
+          }), (0, n.jsx)(h, {
             clickable: P,
             className: O.clickableText,
             children: (0, n.jsx)(o.Text, {

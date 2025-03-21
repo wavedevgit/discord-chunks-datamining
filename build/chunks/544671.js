@@ -1,4 +1,4 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
   Z: () => c
 });
@@ -17,15 +17,15 @@ function c(e) {
     guildId: c,
     channelId: u,
     source: d,
-    look: f,
-    color: p,
+    look: p,
+    color: f,
     onAction: m
   } = e;
   return null != t && (0, i.Z)(t, a.xjy.SYNC) && (0, o.Z)(t) ? (0, r.jsx)(l.Z, {
     className: s.button,
     size: s.buttonSize,
-    look: f,
-    color: p,
+    look: p,
+    color: f,
     user: n,
     activity: t,
     guildId: null != c ? c : void 0,

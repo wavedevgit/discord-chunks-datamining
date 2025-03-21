@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,12 +11,12 @@ var i = n(481060),
   s = n(981631),
   c = n(848053);
 
-function d(e) {
+function u(e) {
   let {
     giftIntentType: t,
     recipientUser: n,
-    giftIntentSecondaryAction: d,
-    channel: u
+    giftIntentSecondaryAction: u,
+    channel: d
   } = e;
   return (0, r.jsx)(l.Z, {
     contentClassName: c.messageContentContainer,
@@ -28,9 +28,9 @@ function d(e) {
       giftIntentType: t,
       premiumGiftIntentCardType: a.U.SYSTEM_MESSAGE,
       recipientUser: n,
-      analyticsPage: (0, o.mE)(u),
+      analyticsPage: (0, o.mE)(d),
       analyticsSection: s.jXE.CHANNEL,
-      giftIntentSecondaryAction: d
+      giftIntentSecondaryAction: u
     })
   })
 }

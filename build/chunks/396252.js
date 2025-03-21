@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => _
 });
@@ -10,8 +10,8 @@ var i = n(120356),
   l = n(481060),
   s = n(385499),
   c = n(430824),
-  d = n(739566),
-  u = n(464891),
+  u = n(739566),
+  d = n(464891),
   p = n(83561),
   m = n(834129),
   f = n(674563),
@@ -25,16 +25,16 @@ function _(e) {
     compact: i,
     usernameHook: _,
     channel: b
-  } = e, v = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), y = (0, d.ZP)(n), x = _(y), {
+  } = e, v = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), y = (0, u.ZP)(n), x = _(y), {
     avatarSrc: E,
     eventHandlers: {
-      onMouseEnter: j,
-      onMouseLeave: O
+      onMouseEnter: O,
+      onMouseLeave: N
     }
   } = (0, p.m)(!0);
   return (0, r.jsx)("div", {
-    onMouseEnter: j,
-    onMouseLeave: O,
+    onMouseEnter: O,
+    onMouseLeave: N,
     children: (0, r.jsx)(m.Z, {
       className: a()(g.mainContainer, {
         [g.compact]: i
@@ -48,7 +48,7 @@ function _(e) {
         className: a()(g.content, {
           [g.compact]: i
         }),
-        children: [(0, r.jsx)(u.nD, {
+        children: [(0, r.jsx)(d.nD, {
           message: n,
           messageClassname: g.spanCorrection,
           className: a()(g.usernameContainer, g.spanCorrection, {

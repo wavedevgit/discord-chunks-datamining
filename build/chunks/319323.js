@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -10,26 +10,26 @@ var r = n(200651),
   s = n(388032),
   c = n(214649);
 
-function d(e) {
+function u(e) {
   let {
     applicationId: t,
     guildId: n
   } = e, {
     data: i
   } = (0, l.IX)(t);
-  return null == i ? null : (0, r.jsx)(u, {
+  return null == i ? null : (0, r.jsx)(d, {
     app: i,
     guildId: n
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     app: t,
     guildId: l
   } = e;
   (0, o.q)(t.id);
-  let d = i.useCallback(() => {
+  let u = i.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -60,7 +60,7 @@ function u(e) {
   return (0, r.jsx)(a.zxk, {
     color: a.zxk.Colors.BRAND,
     size: a.zxk.Sizes.SMALL,
-    onClick: d,
+    onClick: u,
     children: (0, r.jsxs)("div", {
       className: c.button,
       children: [(0, r.jsx)(a.QJP, {

@@ -1,4 +1,4 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
   P: () => j,
   Z: () => S
@@ -13,14 +13,14 @@ var l = n(442837),
   c = n(812206),
   u = n(952164),
   d = n(199902),
-  f = n(592125),
-  p = n(430824),
+  p = n(592125),
+  f = n(430824),
   m = n(979651),
   g = n(153066),
-  y = n(981631),
-  O = n(539967);
+  b = n(981631),
+  y = n(539967);
 
-function b(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function b(e) {
   return e
 }
 
-function h(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function h(e, t) {
   }), e
 }
 
-function v(e) {
+function h(e) {
   let {
     type: t,
     source: n,
@@ -62,10 +62,10 @@ function v(e) {
     guildId: c,
     channelId: u,
     onAction: d,
-    actionColor: f
+    actionColor: p
   } = e;
   return (0, r.jsx)(s.Z, {
-    className: (0, g.l)(O, "actions", t),
+    className: (0, g.l)(y, "actions", t),
     type: t,
     source: n,
     activity: l,
@@ -73,7 +73,7 @@ function v(e) {
     user: a,
     guildId: c,
     look: i.zxk.Looks.FILLED,
-    color: null != f ? f : i.zxk.Colors.PRIMARY,
+    color: null != p ? p : i.zxk.Colors.PRIMARY,
     channelId: u,
     onAction: d
   })
@@ -86,7 +86,7 @@ let j = a.Z.Types,
       useStoreStream: i = !0,
       showActions: s = !0,
       hideHeader: g = !1,
-      showChannelDetails: O = !1
+      showChannelDetails: y = !1
     } = e, j = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
@@ -102,26 +102,26 @@ let j = a.Z.Types,
       }
       return l
     }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
-    let S = (0, l.e7)([m.Z, f.Z], () => {
+    let S = (0, l.e7)([m.Z, p.Z], () => {
         var e;
-        return f.Z.getChannel(null === (e = m.Z.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
+        return p.Z.getChannel(null === (e = m.Z.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
       }),
       P = (0, l.e7)([d.Z], () => i ? d.Z.getAnyStreamForUser(n.id) : null),
-      N = (0, l.e7)([p.Z, m.Z, f.Z], () => {
+      N = (0, l.e7)([f.Z, m.Z, p.Z], () => {
         var e, r;
-        return (0, o.Z)(t, y.xjy.EMBEDDED) ? p.Z.getGuild(null === (e = f.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
+        return (0, o.Z)(t, b.xjy.EMBEDDED) ? f.Z.getGuild(null === (e = p.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
       }),
-      E = (0, l.e7)([p.Z], () => null != P ? p.Z.getGuild(P.guildId) : null),
+      x = (0, l.e7)([f.Z], () => null != P ? f.Z.getGuild(P.guildId) : null),
       I = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
-    return (null == t ? void 0 : t.type) === y.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(b({}, j), {
+    return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, v(O({}, j), {
       activity: t,
       user: n,
       application: I,
       hideHeader: g,
-      activityGuild: null != N ? N : E,
-      showChannelDetails: O,
-      channel: O ? S : void 0,
-      renderActions: s ? () => (0, r.jsx)(v, h(b({}, j), {
+      activityGuild: null != N ? N : x,
+      showChannelDetails: y,
+      channel: y ? S : void 0,
+      renderActions: s ? () => (0, r.jsx)(h, v(O({}, j), {
         applicationStream: P,
         activity: t,
         user: n

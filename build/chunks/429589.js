@@ -1,92 +1,92 @@
-/** Chunk was on 86546 **/
-n.d(t, {
-  Z: () => a
+/** Chunk was on 81146 **/
+r.d(t, {
+  Z: () => l
 });
-var r = n(200651);
-n(192379);
-var l = n(481060),
-  i = n(103450),
-  o = n(915863);
+var n = r(200651);
+r(192379);
+var a = r(481060),
+  o = r(103450),
+  i = r(915863);
 
-function a(e) {
+function l(e) {
   var {
     activity: t,
-    embeddedActivity: n,
-    user: a,
+    embeddedActivity: r,
+    user: l,
     onAction: s,
-    ButtonComponent: c = o.Z
+    ButtonComponent: c = i.Z
   } = e, u = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var r, n, a = {},
+        o = Object.keys(e);
+      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return l
+    return a
   }(e, ["activity", "embeddedActivity", "user", "onAction", "ButtonComponent"]);
-  let d = (0, i.e)({
+  let d = (0, o.e)({
     activity: null != t ? t : void 0,
-    embeddedActivity: n,
-    user: a,
+    embeddedActivity: r,
+    user: l,
     onGameJoin: s
   });
   if (null == d) return null;
   let {
-    isJoining: f,
-    handleJoinRequest: p,
+    isJoining: p,
+    handleJoinRequest: f,
     buttonCTA: m,
     tooltip: g,
-    isEnabled: y
+    isEnabled: b
   } = d;
-  return (0, r.jsx)(l.ua7, {
+  return (0, n.jsx)(a.ua7, {
     text: g,
     children: e => {
-      var t, n;
+      var t, r;
       let {
-        onMouseEnter: l,
-        onMouseLeave: i
+        onMouseEnter: a,
+        onMouseLeave: o
       } = e;
-      return (0, r.jsx)(c, (t = function(e) {
+      return (0, n.jsx)(c, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = r
+            }) : e[t] = n
           })
         }
         return e
       }({
-        onClick: p,
-        onMouseEnter: l,
-        onMouseLeave: i,
-        disabled: !y,
-        submitting: f,
+        onClick: f,
+        onMouseEnter: a,
+        onMouseLeave: o,
+        disabled: !b,
+        submitting: p,
         fullWidth: !0
-      }, u), n = n = {
+      }, u), r = r = {
         children: m
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        return r
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t))
     }
   }, "join")

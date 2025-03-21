@@ -8,8 +8,8 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   a = n(692547),
-  s = n(481060),
-  l = n(388905),
+  l = n(481060),
+  s = n(388905),
   c = n(600164),
   u = n(981631),
   d = n(388032),
@@ -24,17 +24,17 @@ function _(e) {
     onClick: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.Ee, {
+    children: [(0, r.jsx)(s.Ee, {
       src: n(689411)
-    }), (0, r.jsx)(l.Dx, {
+    }), (0, r.jsx)(s.Dx, {
       className: o()(g.marginTop20, g.marginBottom8, h.flexCenter),
       children: d.NW.string(d.t.eL5z0t)
-    }), (0, r.jsx)(l.DK, {
+    }), (0, r.jsx)(s.DK, {
       className: g.marginBottom40,
       children: d.NW.string(d.t["poAv6+"])
-    }), (0, r.jsxs)(s.Zbd, {
+    }), (0, r.jsxs)(l.Zbd, {
       className: p.card,
-      type: s.Zbd.Types.CUSTOM,
+      type: l.Zbd.Types.CUSTOM,
       children: [(0, r.jsx)("img", {
         alt: "",
         className: p.cardAccentLeft,
@@ -48,7 +48,7 @@ function _(e) {
         direction: c.Z.Direction.VERTICAL,
         align: c.Z.Align.STRETCH,
         grow: 0,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(l.Text, {
           tag: "strong",
           className: p.buttonTitle,
           variant: "text-md/normal",
@@ -56,7 +56,7 @@ function _(e) {
             color: a.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
-        }), (0, r.jsx)(l.zx, {
+        }), (0, r.jsx)(s.zx, {
           className: p.button,
           onClick: u,
           children: i
@@ -73,7 +73,7 @@ function m(e) {
     theme: i = u.BRd.DARK,
     onClick: o
   } = e;
-  return (0, r.jsx)(l.ZP, {
+  return (0, r.jsx)(s.ZP, {
     theme: i,
     children: (0, r.jsx)(_, {
       text: t,

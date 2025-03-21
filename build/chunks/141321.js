@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => v
 });
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(540059),
   s = n(317632),
   c = n(602478),
-  d = n(665149),
-  u = n(388035),
+  u = n(665149),
+  d = n(388035),
   p = n(306680),
   m = n(594174),
   f = n(178088),
@@ -25,32 +25,32 @@ function v(e) {
     onClose: n,
     className: v,
     "data-jump-section": y
-  } = e, x = (0, a.e7)([m.default], () => m.default.getCurrentUser()), E = (0, l.Q3)("RecentsButton"), j = i.useRef(null), O = (0, a.e7)([p.ZP], () => (null == x ? void 0 : x.id) != null && p.ZP.getMentionCount(x.id, g.W.NOTIFICATION_CENTER) > 0), {
-    enabled: N
+  } = e, x = (0, a.e7)([m.default], () => m.default.getCurrentUser()), E = (0, l.Q3)("RecentsButton"), O = i.useRef(null), N = (0, a.e7)([p.ZP], () => (null == x ? void 0 : x.id) != null && p.ZP.getMentionCount(x.id, g.W.NOTIFICATION_CENTER) > 0), {
+    enabled: j
   } = c.Z.useExperiment({
     location: "RecentsButton"
   }, {
     autoTrackExposure: !1
-  }), C = (0, a.e7)([s.Z], () => N && s.Z.getUnseenInviteCount() > 0), I = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
+  }), C = (0, a.e7)([s.Z], () => j && s.Z.getUnseenInviteCount() > 0), I = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: O
+      badgeForYou: N
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
       var a, l;
       return (0, r.jsxs)("div", {
-        ref: j,
+        ref: O,
         className: b.recentsIcon,
-        children: [N && (0, r.jsx)(h.Z, {
-          inboxIconRef: j,
+        children: [j && (0, r.jsx)(h.Z, {
+          inboxIconRef: O,
           recentsPopoutShown: t
-        }), (0, r.jsx)(u.U, {
+        }), (0, r.jsx)(d.U, {
           location: "inbox-button",
-          children: (0, r.jsx)(d.JO, (a = function(e) {
+          children: (0, r.jsx)(u.JO, (a = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -75,7 +75,7 @@ function v(e) {
             "aria-label": _.NW.string(_.t.GSmTKC),
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,
-            showBadge: O || C || i,
+            showBadge: N || C || i,
             "data-jump-section": y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);

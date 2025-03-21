@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   a = n(481060),
-  s = n(388905),
-  l = n(661824),
+  l = n(388905),
+  s = n(661824),
   c = n(720196),
   u = n(981631),
   d = n(388032),
@@ -35,16 +35,16 @@ function _(e) {
     transitionTo: i
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.Ee, {
+    children: [(0, r.jsx)(l.Ee, {
       src: n(26230),
       className: o()(h.marginBottom20, h.marginTop8)
-    }), (0, r.jsx)(s.Dx, {
+    }), (0, r.jsx)(l.Dx, {
       className: h.marginBottom8,
       children: d.NW.string(d.t["8UcxIy"])
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: d.NW.string(d.t.O37hMj)
-    }), (0, r.jsxs)(s.gO, {
+    }), (0, r.jsxs)(l.gO, {
       className: o()(h.marginBottom20, h.marginTop20),
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal"
@@ -52,23 +52,23 @@ function _(e) {
         className: p.listContainer,
         children: [(0, r.jsx)(g, {
           children: d.NW.string(d.t.Gj1Zr6)
-        }), (0, r.jsx)(l.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t["8C6t3N"])
-        }), (0, r.jsx)(l.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t.mToZMD)
-        }), (0, r.jsx)(l.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t.TPEvkZ)
-        }), (0, r.jsx)(l.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t.H8Y1Li)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: p.buttonContainer,
-      children: [(0, r.jsx)(s.zx, {
+      children: [(0, r.jsx)(l.zx, {
         onClick: () => t(c.n.PASSWORD),
         children: d.NW.string(d.t.GgCRqa)
-      }), (0, r.jsx)(s.zx, {
-        color: s.zx.Colors.PRIMARY,
+      }), (0, r.jsx)(l.zx, {
+        color: l.zx.Colors.PRIMARY,
         onClick: () => i(u.Z5c.LOGIN),
         children: d.NW.string(d.t["B/yHcX"])
       })]

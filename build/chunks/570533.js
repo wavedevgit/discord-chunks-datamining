@@ -1,14 +1,14 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 15909 **/
 n.d(t, {
-  Z: () => a
+  Z: () => s
 });
-var i = n(192379),
-  r = n(442837),
+var r = n(192379),
+  i = n(442837),
   l = n(339085),
   o = n(889564);
-let s = [];
+let a = [];
 
-function a(e) {
-  let t = (0, r.e7)([l.ZP], () => l.ZP.getGuildEmoji(e), [e]);
-  return i.useMemo(() => null == t ? s : t.filter(t => (0, o.Kt)(t, e)), [t, e])
+function s(e) {
+  let t = (0, i.e7)([l.ZP], () => l.ZP.getGuildEmoji(e), [e]);
+  return r.useMemo(() => null == t ? a : t.filter(t => (0, o.Kt)(t, e)), [t, e])
 }

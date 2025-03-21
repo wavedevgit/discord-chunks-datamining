@@ -1,6 +1,6 @@
-/** Chunk was on 69002 **/
+/** Chunk was on 18475 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(818765),
   u = n(674680),
   d = n(309008);
-let _ = e => {
+let p = e => {
   let {
     color: t
   } = e;
@@ -63,19 +63,19 @@ let _ = e => {
   })
 };
 
-function p(e) {
+function f(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
     name: o,
-    description: p,
-    rarity: E,
-    hideDescriptionUntilUnlock: f,
-    onAction: h
+    description: f,
+    rarity: h,
+    hideDescriptionUntilUnlock: _,
+    onAction: m
   } = t, {
-    color: m
-  } = (0, s.F7)(E);
+    color: b
+  } = (0, s.F7)(h);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -84,12 +84,12 @@ function p(e) {
       clearTimeout(e)
     }
   }, []);
-  let b = null != h && n,
-    O = b ? a.P3F : "div";
-  return (0, r.jsxs)(O, {
-    className: l()(d.container, b && d.actionable),
+  let g = null != m && n,
+    E = g ? a.P3F : "div";
+  return (0, r.jsxs)(E, {
+    className: l()(d.container, g && d.actionable),
     onClick: () => {
-      b && h()
+      g && m()
     },
     children: [(0, r.jsx)("div", {
       className: d.iconContainer,
@@ -107,12 +107,12 @@ function p(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: f && !n ? "?????" : p()
+        children: _ && !n ? "?????" : f()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,
-      children: (0, r.jsx)(_, {
-        color: m
+      children: (0, r.jsx)(p, {
+        color: b
       })
     })]
   })

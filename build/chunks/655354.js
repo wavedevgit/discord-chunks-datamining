@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,15 +10,15 @@ var r = n(200651),
   s = n(388032),
   c = n(627713);
 
-function d(e) {
+function u(e) {
   let {
     className: t,
     onJump: n
-  } = e, [a, d] = i.useState(!1);
+  } = e, [a, u] = i.useState(!1);
   return (0, r.jsx)(l.P3F, {
     className: o()(c.jumpButton, t),
     onClick: e => {
-      d(!0), n(e)
+      u(!0), n(e)
     },
     children: a ? (0, r.jsx)(l.$jN, {
       type: l.$jN.Type.PULSING_ELLIPSIS

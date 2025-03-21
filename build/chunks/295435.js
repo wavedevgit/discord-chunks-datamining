@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  S: () => f
+  S: () => b
 });
 var n = r(200651),
   l = r(192379),
@@ -12,9 +12,9 @@ var n = r(200651),
   u = r(558522),
   d = r(981631),
   p = r(388032),
-  b = r(131755);
+  f = r(131755);
 
-function f(e) {
+function b(e) {
   let t = l.useRef(null),
     r = e.media;
   if (r.loadingState === s.f.LOADED_NOT_FOUND) return (0, n.jsx)(c.u, {
@@ -42,8 +42,8 @@ function f(e) {
         }
         return e
       }({}, r), i = i = {
-        className: o()(e.className, b.notFoundPlaceholder, {
-          [b.hiddenSpoilers]: e.hiddenSpoilers
+        className: o()(e.className, f.notFoundPlaceholder, {
+          [f.hiddenSpoilers]: e.hiddenSpoilers
         }),
         style: {
           width: e.placeholderWidth,
@@ -52,7 +52,7 @@ function f(e) {
         role: "img",
         children: (0, n.jsx)(u.Z, {
           ref: t,
-          className: b.brokenImageIcon
+          className: f.brokenImageIcon
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
@@ -69,7 +69,7 @@ function f(e) {
   let i = r.loadingState === s.f.LOADING ? d.zo9.LOADING : d.zo9.ERROR;
   return (0, n.jsx)(a.E, {
     className: o()(e.className, {
-      [b.hiddenSpoilers]: e.hiddenSpoilers
+      [f.hiddenSpoilers]: e.hiddenSpoilers
     }),
     readyState: i,
     src: "",

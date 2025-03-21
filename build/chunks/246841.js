@@ -1,4 +1,4 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
   Z: () => s
 });
@@ -17,20 +17,20 @@ function s(e) {
     className: c,
     size: u,
     look: d,
-    color: f,
-    fullWidth: p,
+    color: p,
+    fullWidth: f,
     onAction: m
   } = e, {
     label: g,
-    tooltip: y,
-    loading: O,
-    disabled: b,
-    onClick: h
-  } = (0, o.Ih)(t, n, s), v = () => {
-    null == m || m(), h()
+    tooltip: b,
+    loading: y,
+    disabled: O,
+    onClick: v
+  } = (0, o.Ih)(t, n, s), h = () => {
+    null == m || m(), v()
   };
   return (0, r.jsx)(l.ua7, {
-    text: y,
+    text: b,
     children: e => {
       let {
         onMouseEnter: t,
@@ -41,13 +41,13 @@ function s(e) {
         innerClassName: a.playButtonInner,
         size: u,
         look: d,
-        color: f,
-        fullWidth: p,
-        onClick: v,
+        color: p,
+        fullWidth: f,
+        onClick: h,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: b,
-        submitting: O,
+        disabled: O,
+        submitting: y,
         children: [(0, r.jsx)(i.Z, {
           width: 16,
           height: 16

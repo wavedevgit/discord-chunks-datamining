@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(525654),
   a = n.n(o),
-  s = n(442837),
-  l = n(893776),
+  l = n(442837),
+  s = n(893776),
   c = n(493773),
   u = n(129293),
   d = n(388905),
@@ -24,7 +24,7 @@ function f(e) {
   let {
     location: t,
     transitionTo: o = m
-  } = e, [s, f] = i.useState("submitting");
+  } = e, [l, f] = i.useState("submitting");
 
   function b() {
     return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
@@ -40,12 +40,12 @@ function f(e) {
       return
     }(async () => {
       try {
-        await l.Z.authorizeIPAddress(e), f("succeeded")
+        await s.Z.authorizeIPAddress(e), f("succeeded")
       } catch (e) {
         f("failed")
       }
     })()
-  }), "failed" === s) ? (0, r.jsxs)(d.ZP, {
+  }), "failed" === l) ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
@@ -57,7 +57,7 @@ function f(e) {
       className: _.marginBottom40,
       children: g.NW.string(g.t.i3ehMj)
     }), b()]
-  }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
+  }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),
@@ -75,4 +75,4 @@ function f(e) {
     })]
   })
 }
-s.ZP.initialize()
+l.ZP.initialize()

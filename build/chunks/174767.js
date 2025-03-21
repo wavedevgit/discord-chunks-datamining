@@ -1,11 +1,11 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Br: () => s,
   MH: () => c,
-  Ol: () => d,
+  Ol: () => u,
   TG: () => m,
   UF: () => p,
-  sJ: () => u
+  sJ: () => d
 }), n(411104);
 var r = n(544891),
   i = n(570140),
@@ -34,7 +34,7 @@ async function c(e) {
   }
   throw Error("Unsupported invite platform " + e.platform_type)
 }
-async function d(e) {
+async function u(e) {
   if (e.platform_type === l.ABu.XBOX) {
     let t = e.parsed_launch_parameters.inviteToken;
     return !!(0, o.isWindows)() && null != t && await _(t)
@@ -42,7 +42,7 @@ async function d(e) {
   throw Error("Unsupported invite platform " + e.platform_type)
 }
 
-function u() {
+function d() {
   i.Z.dispatch({
     type: "GAME_INVITE_CLEAR_UNSEEN"
   })

@@ -6,8 +6,8 @@ n.d(t, {
 var r, i = n(200651),
   o = n(192379),
   a = n(533126),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   c = n(593473),
   u = n(873546),
   d = n(442837),
@@ -23,10 +23,10 @@ var r, i = n(200651),
   v = n(600164),
   E = n(100159),
   I = n(473855),
-  j = n(124860),
-  C = n(86779),
-  S = n(726745),
-  O = n(913583),
+  S = n(124860),
+  j = n(86779),
+  O = n(726745),
+  C = n(913583),
   y = n(144114),
   T = n(541692),
   P = n(952802),
@@ -145,8 +145,8 @@ class Q extends(r = o.PureComponent) {
       checkingHandoff: i
     } = this.state;
     if (!n || e.authenticated || i || (this.state.conditionalMediationAbortController.abort(), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
-      var o, a, s;
-      this.hasError("password") ? null === (o = this.passwordRef) || void 0 === o || o.focus() : this.hasError("email") || this.hasError("login") ? null === (a = this.loginRef) || void 0 === a || a.focus() : this.hasError("code") && (null === (s = this.codeRef) || void 0 === s || s.focus())
+      var o, a, l;
+      this.hasError("password") ? null === (o = this.passwordRef) || void 0 === o || o.focus() : this.hasError("email") || this.hasError("login") ? null === (a = this.loginRef) || void 0 === a || a.focus() : this.hasError("code") && (null === (l = this.codeRef) || void 0 === l || l.focus())
     }
   }
   get loginSource() {
@@ -273,7 +273,7 @@ class Q extends(r = o.PureComponent) {
             type: "submit",
             children: V.NW.string(V.t.JhDw5u)
           }), (0, i.jsx)("div", {
-            className: l()(K.marginTop8, H.needAccount),
+            className: s()(K.marginTop8, H.needAccount),
             children: V.NW.format(V.t.js2rr6, {
               onClick: this.handleCancelAccountDeletion
             })
@@ -347,7 +347,7 @@ class Q extends(r = o.PureComponent) {
       invite: r,
       giftCode: o,
       loginStatus: a,
-      country: s,
+      country: l,
       showMobileWebHandoff: c,
       disableAutofocusOnDefaultForm: u
     } = this.props, d = !this.hasError("email") && this.hasError("password"), h = (null == r ? void 0 : r.stage_instance) != null;
@@ -392,8 +392,8 @@ class Q extends(r = o.PureComponent) {
           children: (0, i.jsxs)(x.gO, {
             className: K.marginTop20,
             children: [(0, i.jsx)(P.Z, {
-              alpha2: s.alpha2,
-              countryCode: s.code.split(" ")[0],
+              alpha2: l.alpha2,
+              countryCode: l.code.split(" ")[0],
               className: K.marginBottom20,
               label: V.NW.string(V.t.tUjnxs),
               error: null !== (t = this.renderError("login")) && void 0 !== t ? t : this.renderError("email"),
@@ -427,7 +427,7 @@ class Q extends(r = o.PureComponent) {
               onClick: this.handleForgotPassword,
               look: x.zx.Looks.LINK,
               color: x.zx.Colors.LINK,
-              className: l()(K.marginBottom20, K.marginTop4),
+              className: s()(K.marginBottom20, K.marginTop4),
               children: V.NW.string(V.t.wWIufn)
             }), (0, i.jsx)(x.zx, {
               type: "submit",
@@ -471,14 +471,14 @@ class Q extends(r = o.PureComponent) {
         className: e,
         expanded: !0,
         children: this.renderDefaultForm(!0)
-      }), t && (0, i.jsx)(C.Z, {})]
+      }), t && (0, i.jsx)(j.Z, {})]
     })
   }
   renderGuildTemplate(e) {
     return (0, i.jsx)(U.Z, {
       onSubmit: this.handleLogin,
       tag: "form",
-      className: l()(this.props.authBoxClassName, H.horizontalAuthBox),
+      className: s()(this.props.authBoxClassName, H.horizontalAuthBox),
       children: () => [(0, i.jsx)(I.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(!1)]
@@ -493,7 +493,7 @@ class Q extends(r = o.PureComponent) {
       style: {
         padding: 0
       },
-      children: (0, i.jsx)(j.Cd, {
+      children: (0, i.jsx)(S.Cd, {
         mfaFinish: this.handleTokenSubmitMFA,
         mfaChallenge: e,
         onEarlyClose: () => {
@@ -546,7 +546,7 @@ class Q extends(r = o.PureComponent) {
     })
   }
   renderChooseAccount() {
-    return (0, i.jsx)(O.Z, {
+    return (0, i.jsx)(C.Z, {
       onDismiss: () => {
         this.setState(e => J(Y({}, e), {
           dismissedChooseAccount: !0
@@ -563,9 +563,9 @@ class Q extends(r = o.PureComponent) {
       handoffAvailable: o
     } = this.props, {
       checkingHandoff: a,
-      redirecting: s
+      redirecting: l
     } = this.state;
-    if (s || a) return (0, i.jsx)(X, {});
+    if (l || a) return (0, i.jsx)(X, {});
     if (o) return this.renderHandOffAvailable();
     if (e && a) return this.renderHandOffContinue();
     switch (r) {
@@ -757,10 +757,10 @@ class Q extends(r = o.PureComponent) {
         guildTemplate: i,
         location: o,
         transitionTo: a,
-        redirectTo: s
-      } = this.props, l = null != o ? (0, c.parse)(o.search) : {};
-      "" !== t && (l.email = t), null != n ? (l.mode = "register", e = F.Z5c.INVITE(n.code)) : null != r ? (l.mode = "register", e = F.Z5c.GIFT_CODE(r.code)) : null != i ? e = F.Z5c.GUILD_TEMPLATE(i.code) : null != s ? (e = F.Z5c.REGISTER, l.redirect_to = s) : e = F.Z5c.REGISTER, this.loginReset(), a(e, {
-        search: (0, c.stringify)(l)
+        redirectTo: l
+      } = this.props, s = null != o ? (0, c.parse)(o.search) : {};
+      "" !== t && (s.email = t), null != n ? (s.mode = "register", e = F.Z5c.INVITE(n.code)) : null != r ? (s.mode = "register", e = F.Z5c.GIFT_CODE(r.code)) : null != i ? e = F.Z5c.GUILD_TEMPLATE(i.code) : null != l ? (e = F.Z5c.REGISTER, s.redirect_to = l) : e = F.Z5c.REGISTER, this.loginReset(), a(e, {
+        search: (0, c.stringify)(s)
       }), k.S.dispatch(F.CkL.WAVE_EMPHASIZE)
     });
     let r = null != e.location ? (0, c.parse)(e.location.search) : {};
@@ -784,7 +784,7 @@ q(Q, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let $ = function(e) {
-  let t = (0, d.cj)([w.Z, L.Z, R.default, S.Z, T.Z], () => ({
+  let t = (0, d.cj)([w.Z, L.Z, R.default, O.Z, T.Z], () => ({
     authenticated: R.default.isAuthenticated(),
     handoffAvailable: w.Z.isHandoffAvailable(),
     user: w.Z.user,
@@ -793,7 +793,7 @@ let $ = function(e) {
     mfaMethods: R.default.getMFAMethods(),
     defaultRoute: L.Z.defaultRoute,
     country: T.Z.getCountryCode(),
-    hasLoggedInAccounts: S.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: O.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(Q, Y({}, e, t))
 }

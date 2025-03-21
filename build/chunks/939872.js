@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 14721 **/
 n.d(t, {
   m: () => u
 });
@@ -16,7 +16,7 @@ let u = e => {
     onClose: t,
     listing: n,
     guildId: u
-  } = e, p = (0, i.e7)([l.Z], () => l.Z.getGuild(u), [u]), m = (0, s.Z)({
+  } = e, _ = (0, i.e7)([l.Z], () => l.Z.getGuild(u), [u]), m = (0, s.Z)({
     listing: n,
     guildId: u
   });
@@ -26,7 +26,7 @@ let u = e => {
       className: d.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: c.NW.format(c.t.I5dYFh, {
-        serverName: null == p ? void 0 : p.toString(),
+        serverName: null == _ ? void 0 : _.toString(),
         tierName: n.name
       })
     }), !m.isEmpty() && (0, r.jsx)(a.Text, {

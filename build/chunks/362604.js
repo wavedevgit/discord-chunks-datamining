@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => v
 }), n(47120), n(86693), n(536091);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(442837),
   s = n(481060),
   c = n(834129),
-  d = n(623292),
-  u = n(926491),
+  u = n(623292),
+  d = n(926491),
   p = n(419922),
   m = n(626135),
   f = n(585483),
@@ -24,7 +24,7 @@ function v(e) {
     message: t,
     channel: a,
     compact: v
-  } = e, y = (0, l.Wu)([u.Z], () => Array.from(u.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, E] = i.useState(null);
+  } = e, y = (0, l.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, E] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
       y.length > 0 && E(y[Math.floor(Math.random() * y.length)])
@@ -60,7 +60,7 @@ function v(e) {
               channel_id: a.id,
               guild_id: a.guild_id,
               action_type: "upload_file"
-            }), f.S.dispatch(g.CkL.UPLOAD_FILE), (0, d.fE)({
+            }), f.S.dispatch(g.CkL.UPLOAD_FILE), (0, u.fE)({
               message: t,
               channel: a,
               shouldMention: !0

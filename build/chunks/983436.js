@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => h
 });
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(358555),
   s = n(955415),
   c = n(944486),
-  d = n(914010),
-  u = n(626135),
+  u = n(914010),
+  d = n(626135),
   p = n(981631),
   m = n(388032),
   f = n(651873);
@@ -21,9 +21,9 @@ function h(e) {
     guild: n,
     channel: h,
     messageData: g
-  } = e, _ = d.Z.getGuildId(), b = c.Z.getChannelId(_), v = i.useCallback(() => {
+  } = e, _ = u.Z.getGuildId(), b = c.Z.getChannelId(_), v = i.useCallback(() => {
     var e;
-    u.default.track(p.rMx.CHANNEL_LINK_PREVIEW_JOINED, {
+    d.default.track(p.rMx.CHANNEL_LINK_PREVIEW_JOINED, {
       author_id: null === (e = g.author) || void 0 === e ? void 0 : e.id,
       link_guild_id: n.id,
       link_channel_id: h.id,

@@ -4,6 +4,7 @@ n.r(t), n.d(t, {
   EMPTY_QUERY: () => i,
   GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID: () => r,
   GlobalDiscoveryAppsSections: () => s,
+  GlobalDiscoveryAppsTabId: () => l,
   MAX_PAGES: () => o,
   PAGE_SIZE: () => a
 });
@@ -12,5 +13,8 @@ let r = 0,
   o = 100,
   a = 48;
 var s = function(e) {
-  return e.ABOUT = "about", e.STORE = "store", e
-}({})
+    return e.ABOUT = "about", e.STORE = "store", e
+  }({}),
+  l = function(e) {
+    return e.FEATURED = "Featured", e.GAMES = "Games", e.ENTERTAINMENT = "Entertainment", e.MODERATION_AND_TOOLS = "Moderation & Tools", e.SOCIAL = "Social", e.UTILITIES = "Utilities", e
+  }({})

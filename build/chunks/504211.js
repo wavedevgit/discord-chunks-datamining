@@ -1,16 +1,16 @@
-/** Chunk was on 97349 **/
-t.d(r, {
+/** Chunk was on 74891 **/
+n.d(t, {
   B: () => o,
   X: () => a
 });
-var n, l = t(626135),
-  s = t(981631),
-  o = ((n = {}).STORE_MODAL = "store_modal", n.DETAILS_MODAL = "details_modal", n.STORE_EMBED = "store_embed", n.SKU_EMBED = "sku_embed", n);
+var r, l = n(626135),
+  i = n(981631),
+  o = ((r = {}).STORE_MODAL = "store_modal", r.DETAILS_MODAL = "details_modal", r.STORE_EMBED = "store_embed", r.SKU_EMBED = "sku_embed", r);
 
-function a(e, r, t) {
-  l.default.track(s.rMx.STOREFRONT_COPY_LINK_CLICKED, {
+function a(e, t, n) {
+  l.default.track(i.rMx.STOREFRONT_COPY_LINK_CLICKED, {
     application_id: e,
-    area: r,
-    sku_id: t
+    area: t,
+    sku_id: n
   })
 }

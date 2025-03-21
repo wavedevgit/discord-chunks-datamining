@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  H: () => j
+  H: () => O
 }), n(301563);
 var r = n(200651);
 n(192379);
@@ -10,8 +10,8 @@ var i = n(120356),
   l = n(481060),
   s = n(904245),
   c = n(287734),
-  d = n(957730),
-  u = n(739566),
+  u = n(957730),
+  d = n(739566),
   p = n(779125),
   m = n(599706),
   f = n(703656),
@@ -24,8 +24,8 @@ var i = n(120356),
   x = n(388032),
   E = n(971386);
 
-function j(e) {
-  var t, n, i, j, O, N, C, I, S, T;
+function O(e) {
+  var t, n, i, O, N, j, C, I, S, T;
   let {
     message: P,
     channel: A
@@ -34,20 +34,20 @@ function j(e) {
       rawName: t
     } = e;
     return "guild_id" === t
-  })) || void 0 === t ? void 0 : t.rawValue, Z = null === (N = P.embeds[0]) || void 0 === N ? void 0 : null === (O = N.fields) || void 0 === O ? void 0 : null === (j = O.find(e => {
+  })) || void 0 === t ? void 0 : t.rawValue, Z = null === (j = P.embeds[0]) || void 0 === j ? void 0 : null === (N = j.fields) || void 0 === N ? void 0 : null === (O = N.find(e => {
     let {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) || void 0 === j ? void 0 : j.rawValue, k = (0, o.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, o.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, o.e7)([_.default], () => _.default.getCurrentUser()), L = (0, o.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null === (C = A.recipients) || void 0 === C ? void 0 : C.find(e => e !== P.author.id), W = (0, o.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, u.ZP)(P), U = (0, v._T)(A.getGuildId(), A.id, W), B = (0, o.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == D ? void 0 : D.id)), H = null === (T = P.embeds[0]) || void 0 === T ? void 0 : null === (S = T.fields) || void 0 === S ? void 0 : null === (I = S.find(e => {
+  })) || void 0 === O ? void 0 : O.rawValue, k = (0, o.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, o.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, o.e7)([_.default], () => _.default.getCurrentUser()), L = (0, o.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null === (C = A.recipients) || void 0 === C ? void 0 : C.find(e => e !== P.author.id), W = (0, o.e7)([_.default], () => null != M ? _.default.getUser(M) : null), U = (0, d.ZP)(P), F = (0, v._T)(A.getGuildId(), A.id, W), B = (0, o.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == D ? void 0 : D.id)), H = null === (T = P.embeds[0]) || void 0 === T ? void 0 : null === (S = T.fields) || void 0 === S ? void 0 : null === (I = S.find(e => {
     let {
       rawName: t
     } = e;
     return "voice_user_ids" === t
   })) || void 0 === I ? void 0 : I.rawValue, V = null != H ? H.split(",") : [], z = (0, o.Wu)([_.default], () => V.map(e => _.default.getUser(e)).filter(Boolean)), K = L && null != W ? x.NW.formatToPlainString(x.t["er/cHx"], {
-    username: U
+    username: F
   }) : x.NW.formatToPlainString(x.t.noNjkZ, {
-    username: F.nick
+    username: U.nick
   }), Y = null != k && null != R, X = null;
   X = Y ? L || G ? x.NW.format(x.t.CaLQqK, {
     channelHook: (e, t) => (0, r.jsx)(p.Z, {
@@ -112,7 +112,7 @@ function j(e) {
       }), (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.PRIMARY,
         onClick: () => {
-          s.Z.sendMessage(A.id, d.ZP.parse(A, "\uD83D\uDC4B"))
+          s.Z.sendMessage(A.id, u.ZP.parse(A, "\uD83D\uDC4B"))
         },
         className: E.button,
         children: q

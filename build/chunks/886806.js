@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(442837),
-  l = n(893776),
+  l = n(442837),
+  s = n(893776),
   c = n(493773),
   u = n(129293),
   d = n(388905),
@@ -27,7 +27,7 @@ function N(e) {
   let {
     location: t,
     transitionTo: o = x
-  } = e, [s, N] = i.useState("submitting"), v = i.useRef(void 0);
+  } = e, [l, N] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
     (0, h.e)("verify_email");
     let e = (0, u.Z)(t);
@@ -36,7 +36,7 @@ function N(e) {
       return
     }(async () => {
       try {
-        let t = await l.Z.verify(e);
+        let t = await s.Z.verify(e);
         N("succeeded"), v.current = t
       } catch (e) {
         N("failed")
@@ -51,7 +51,7 @@ function N(e) {
         verifying_user_id: v.current
       }), (0, p.Z)("verify_email")
     }, []);
-  return "failed" === s ? (0, r.jsxs)(d.ZP, {
+  return "failed" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(375673),
       className: a()(f.image, b.marginBottom20)
@@ -65,7 +65,7 @@ function N(e) {
       onClick: E,
       children: m.NW.string(m.t.dKhVQE)
     })]
-  }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
+  }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(73962),
       className: a()(f.image, b.marginBottom20)
@@ -92,4 +92,4 @@ function N(e) {
     })]
   })
 }
-s.ZP.initialize()
+l.ZP.initialize()

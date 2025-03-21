@@ -1,51 +1,51 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 31942 **/
 n.d(t, {
-  SO: () => v,
-  eD: () => h,
-  hO: () => f,
-  r: () => g,
-  ue: () => p
+  SO: () => O,
+  eD: () => f,
+  hO: () => p,
+  r: () => _,
+  ue: () => E
 }), n(47120);
-var i = n(192379),
-  r = n(442837);
+var r = n(192379),
+  i = n(442837);
 n(935369);
 var l = n(38618),
   o = n(160404),
-  s = n(496675),
-  a = n(914010),
-  u = n(495437),
-  d = n(240864),
-  c = n(981631);
-let h = e => {
-    let t = (0, r.e7)([d.Z], () => null != e ? d.Z.getGuildProductsForGuildFetchState(e) : d.M.FETCHED, [e]),
-      n = (0, r.e7)([l.Z], () => l.Z.isConnected()),
-      [o, s] = i.useState(!0);
-    return i.useEffect(() => {
-      o && (t === d.M.NOT_FETCHED || t === d.M.FETCHED && d.Z.isGuildProductsCacheExpired(e)) && n && u.EB(e), s(!n)
+  a = n(496675),
+  u = n(914010),
+  c = n(495437),
+  s = n(240864),
+  d = n(981631);
+let f = e => {
+    let t = (0, i.e7)([s.Z], () => null != e ? s.Z.getGuildProductsForGuildFetchState(e) : s.M.FETCHED, [e]),
+      n = (0, i.e7)([l.Z], () => l.Z.isConnected()),
+      [o, a] = r.useState(!0);
+    return r.useEffect(() => {
+      o && (t === s.M.NOT_FETCHED || t === s.M.FETCHED && s.Z.isGuildProductsCacheExpired(e)) && n && c.EB(e), a(!n)
     }, [e, n, t, o]), {
-      listingsLoaded: t === d.M.FETCHED && !o
+      listingsLoaded: t === s.M.FETCHED && !o
     }
   },
-  f = function(e, t) {
+  p = function(e, t) {
     let {
       requireCurrentGuild: n
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
       requireCurrentGuild: !0
-    }, o = (0, r.e7)([l.Z], () => l.Z.isConnected()), s = (0, r.e7)([a.Z], () => a.Z.getGuildId());
-    return i.useEffect(() => {
-      let i = d.Z.getGuildProductFetchState(t);
-      if ((!n || s === e) && o && i === d.M.NOT_FETCHED) try {
-        u.cf(e, t)
+    }, o = (0, i.e7)([l.Z], () => l.Z.isConnected()), a = (0, i.e7)([u.Z], () => u.Z.getGuildId());
+    return r.useEffect(() => {
+      let r = s.Z.getGuildProductFetchState(t);
+      if ((!n || a === e) && o && r === s.M.NOT_FETCHED) try {
+        c.cf(e, t)
       } catch (e) {}
-    }, [e, t, o, s, n]), (0, r.e7)([d.Z], () => d.Z.getGuildProduct(t))
+    }, [e, t, o, a, n]), (0, i.e7)([s.Z], () => s.Z.getGuildProduct(t))
   },
-  p = function(e) {
+  E = function(e) {
     let {
       publishedOnly: t
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-    return (0, r.e7)([d.Z, o.Z], () => d.Z.getGuildProductsForGuild(e, {
+    return (0, i.e7)([s.Z, o.Z], () => s.Z.getGuildProductsForGuild(e, {
       publishedOnly: null != t ? t : !o.Z.isViewingServerShop(e)
     }))
   },
-  g = e => (0, r.e7)([d.Z], () => null == e ? void 0 : d.Z.getGuildProduct(e)),
-  v = e => (0, r.e7)([s.Z], () => null != e && s.Z.can(c.Plq.ADMINISTRATOR, e))
+  _ = e => (0, i.e7)([s.Z], () => null == e ? void 0 : s.Z.getGuildProduct(e)),
+  O = e => (0, i.e7)([a.Z], () => null != e && a.Z.can(d.Plq.ADMINISTRATOR, e))

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   S: () => f,
   m: () => m
@@ -10,8 +10,8 @@ var r = n(200651),
   l = n(607070),
   s = n(426563),
   c = n(998502),
-  d = n(388032),
-  u = n(138290);
+  u = n(388032),
+  d = n(138290);
 let p = c.ZP.getEnableHardwareAcceleration() ? o.Xo$ : o.qEK;
 
 function m() {
@@ -36,11 +36,11 @@ function f(e) {
     src: t
   } = e;
   return (0, r.jsx)("div", {
-    className: u.avatarContainer,
+    className: d.avatarContainer,
     children: (0, r.jsx)(p, {
       src: t,
       size: o.EFr.SIZE_40,
-      "aria-label": d.NW.string(d.t.hG1StL)
+      "aria-label": u.NW.string(u.t.hG1StL)
     })
   })
 }

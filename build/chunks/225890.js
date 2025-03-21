@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => b
 }), n(47120), n(301563);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(281956),
   s = n(922482),
   c = n(592125),
-  d = n(271383),
-  u = n(430824),
+  u = n(271383),
+  d = n(430824),
   p = n(594174),
   m = n(897285),
   f = n(924301),
@@ -25,17 +25,17 @@ function b(e) {
     guildScheduledEvent: y,
     guild: x,
     channel: E,
-    isMember: j
-  } = (0, a.cj)([f.ZP, u.Z, c.Z, d.ZP, p.default], () => {
+    isMember: O
+  } = (0, a.cj)([f.ZP, d.Z, c.Z, u.ZP, p.default], () => {
     var e, t;
     let r = null !== (t = f.ZP.getGuildScheduledEvent(b)) && void 0 !== t ? t : void 0,
-      i = u.Z.getGuild(n),
+      i = d.Z.getGuild(n),
       a = c.Z.getChannel(null == r ? void 0 : r.channel_id);
     return {
       guildScheduledEvent: r,
       guild: i,
       channel: a,
-      isMember: d.ZP.isMember(n, null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id)
+      isMember: u.ZP.isMember(n, null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id)
     }
   }, [n, b]);
   return i.useEffect(() => {
@@ -44,7 +44,7 @@ function b(e) {
     guild: x,
     channel: E,
     guildScheduledEvent: y,
-    isMember: j,
+    isMember: O,
     onAcceptInstantInvite: _.dG,
     onTransitionToInviteChannel: function() {
       if ((0, l.n)(n)) {

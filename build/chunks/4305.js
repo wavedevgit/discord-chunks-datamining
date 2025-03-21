@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => s
 });
@@ -14,9 +14,9 @@ function s(e) {
     message: t,
     usernameHook: s,
     compact: c,
-    guildId: d
-  } = e, u = (0, a.ZP)(t), p = s(u), m = i.Z.getWelcomeMessageKind(d), f = i.Z.getSystemMessageUserJoin(t.id, m), h = l.NW.format(f, {
-    username: u.nick,
+    guildId: u
+  } = e, d = (0, a.ZP)(t), p = s(d), m = i.Z.getWelcomeMessageKind(u), f = i.Z.getSystemMessageUserJoin(t.id, m), h = l.NW.format(f, {
+    username: d.nick,
     usernameHook: p
   });
   return (0, r.jsx)(o.Z, {

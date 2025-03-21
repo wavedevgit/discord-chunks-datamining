@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => p
 });
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(375954),
   s = n(876338),
   c = n(912332),
-  d = n(245216),
-  u = n(388032);
+  u = n(245216),
+  d = n(388032);
 
 function p(e) {
   let {
@@ -34,9 +34,9 @@ function p(e) {
   }, [n, f, p, m]);
   return (0, r.jsx)(o.M0o, {
     className: t,
-    tooltip: u.NW.string(u.t.I3ltXF),
+    tooltip: d.NW.string(d.t.I3ltXF),
     color: o.YX$.SECONDARY,
-    icon: (0, r.jsx)(d.Z, {
+    icon: (0, r.jsx)(u.Z, {
       size: "xs",
       color: a.Z.colors.INTERACTIVE_NORMAL
     }),

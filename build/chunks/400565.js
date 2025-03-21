@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  U: () => d
+  U: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -24,7 +24,7 @@ let c = e => {
       })
     })
   },
-  d = i.memo(function(e) {
+  u = i.memo(function(e) {
     let {
       item: t
     } = e, n = null, i = !1;
@@ -47,11 +47,11 @@ let c = e => {
       alt: "",
       src: l.VH[(0, l.q7)(t)]
     });
-    let d = (0, l.Vi)(t.type);
+    let u = (0, l.Vi)(t.type);
     return (0, r.jsxs)("div", {
       className: s.container,
       children: [(0, r.jsx)(a.ZP, {
-        mask: null == d ? a.QS.AVATAR_DEFAULT : a.QS.AVATAR_STATUS_ROUND_16,
+        mask: null == u ? a.QS.AVATAR_DEFAULT : a.QS.AVATAR_STATUS_ROUND_16,
         width: 40,
         height: 40,
         rightOverhang: 3,
@@ -65,7 +65,7 @@ let c = e => {
           children: n
         })
       }), (0, r.jsx)(c, {
-        mask: d
+        mask: u
       })]
     })
   })

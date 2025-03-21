@@ -1,24 +1,24 @@
-/** Chunk was on 99393 **/
+/** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var s = n(481060),
-  i = n(918701),
-  o = n(478774);
-let l = e => {
+  o = n(918701),
+  i = n(478774);
+let a = e => {
   let {
     quest: t,
     children: n
-  } = e, l = (0, i.xN)(t.config), a = (0, i.LM)(t.config);
-  return l && null != a ? (0, r.jsxs)("div", {
-    className: o.questRewardTileContainer,
+  } = e, a = (0, o.xN)(t.config), l = (0, o.LM)(t.config);
+  return a && null != l ? (0, r.jsxs)("div", {
+    className: i.questRewardTileContainer,
     children: [(0, r.jsxs)(s.Text, {
       color: "always-white",
       variant: "text-xs/bold",
-      className: o.questOrbQuantity,
-      children: ["+", a]
+      className: i.questOrbQuantity,
+      children: ["+", l]
     }), n]
   }) : n
 }

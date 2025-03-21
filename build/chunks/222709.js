@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => m
 });
@@ -9,14 +9,14 @@ var r = n(200651),
   l = n(528963),
   s = n(143740),
   c = n(528144),
-  d = n(212342),
-  u = n(388032),
+  u = n(212342),
+  d = n(388032),
   p = n(438379);
 let m = e => {
   let {
     channelId: t,
     messageId: n
-  } = e, m = (0, a.e7)([d.Z], () => d.Z.shouldShowBump(n), [n]), f = i.useCallback(() => {
+  } = e, m = (0, a.e7)([u.Z], () => u.Z.shouldShowBump(n), [n]), f = i.useCallback(() => {
     l.Z.dismissPublishBump(n), (0, s.Z)(t, n)
   }, [t, n]), h = i.useCallback(() => {
     l.Z.dismissPublishBump(n)
@@ -34,14 +34,14 @@ let m = e => {
       }), (0, r.jsx)(c.Z, {
         className: p.tagline,
         size: c.Z.Sizes.SIZE_14,
-        children: u.NW.string(u.t.hasZoa)
+        children: d.NW.string(d.t.hasZoa)
       }), (0, r.jsx)(o.zxk, {
         color: o.zxk.Colors.LINK,
         look: o.zxk.Looks.LINK,
         size: o.zxk.Sizes.MIN,
         className: p.publish,
         onClick: f,
-        children: u.NW.string(u.t["MFGE5+"])
+        children: d.NW.string(d.t["MFGE5+"])
       }), (0, r.jsx)(o.P3F, {
         onClick: h,
         children: (0, r.jsx)(o.k$p, {
@@ -56,7 +56,7 @@ let m = e => {
       variant: "text-sm/normal",
       children: (0, r.jsx)(o.P3F, {
         onClick: g,
-        children: u.NW.string(u.t.efSkDg)
+        children: d.NW.string(d.t.efSkDg)
       })
     })]
   }) : null

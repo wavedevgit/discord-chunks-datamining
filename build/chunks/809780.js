@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   As: () => B,
   ZP: () => Q,
@@ -10,8 +10,8 @@ var r, i, a = n(192379),
   l = n(512722),
   s = n.n(l),
   c = n(392711),
-  d = n.n(c),
-  u = n(570140),
+  u = n.n(c),
+  d = n(570140),
   p = n(904245),
   m = n(45114),
   f = n(607070),
@@ -23,9 +23,9 @@ var r, i, a = n(192379),
   y = n(569471),
   x = n(723170),
   E = n(675478),
-  j = n(581883),
-  O = n(131704),
-  N = n(592125),
+  O = n(581883),
+  N = n(131704),
+  j = n(592125),
   C = n(984933),
   I = n(731290),
   S = n(430824),
@@ -49,7 +49,7 @@ function W(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function F(e) {
   return e
 }
 
-function U(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ class V extends o.EventEmitter {
     } = this.state;
     if ("loaded" !== e) return;
     let n = !1,
-      r = t.map(e => e.isFullyLoaded || e.deleted || n ? e : e.collapsed ? e.hasLoadedAnything ? e : U(F({}, e), {
+      r = t.map(e => e.isFullyLoaded || e.deleted || n ? e : e.collapsed ? e.hasLoadedAnything ? e : F(U({}, e), {
         hasLoadedAnything: !0
       }) : ((e = this.populateInitialStateFromStore(e)).isFullyLoaded || (s()("nsfw" !== e.type, "this channel should already be loaded"), "messages" === e.type && this.loadChannelMessages(e) && (n = !0)), e));
     (!n || r.some((e, n) => e !== t[n])) && this.setState({
@@ -95,13 +95,13 @@ class V extends o.EventEmitter {
   }
   populateInitialStateFromStore(e) {
     if ("messages" === e.type) return z(e, !1);
-    if ("nsfw" === e.type) return U(F({}, e), {
+    if ("nsfw" === e.type) return F(U({}, e), {
       isFullyLoaded: !0,
       hasLoadedAnything: !0
     });
     if ("forum" === e.type) {
       let t = v.Z.hasLoaded(e.guildId);
-      return U(F({}, e), {
+      return F(U({}, e), {
         isFullyLoaded: t,
         hasLoadedAnything: t
       })
@@ -130,7 +130,7 @@ class V extends o.EventEmitter {
         channels: this.updateChannel(e.channelId, e => {
           s()("messages" === e.type, "channel cannot change type");
           let n = z(e, !0);
-          return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = U(F({}, n), {
+          return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = F(U({}, n), {
             hasLoadedAnything: !0,
             isFullyLoaded: !0,
             hasError: !t
@@ -142,7 +142,7 @@ class V extends o.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           var t;
-          return s()("messages" === e.type, "channel cannot change type"), U(F({}, z(e, !0)), {
+          return s()("messages" === e.type, "channel cannot change type"), F(U({}, z(e, !0)), {
             isFullyLoaded: !0,
             hasError: !0,
             hasLoadedAnything: !0,
@@ -158,7 +158,7 @@ class V extends o.EventEmitter {
   setState(e) {
     for (let t in e)
       if (e[t] !== this.state[t]) {
-        this.state = F({}, this.state, e), this.emit("change", this.state);
+        this.state = U({}, this.state, e), this.emit("change", this.state);
         return
       }
   }
@@ -176,7 +176,7 @@ class V extends o.EventEmitter {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      u.Z.wait(() => m.In(t, !0, void 0, n, {
+      d.Z.wait(() => m.In(t, !0, void 0, n, {
         section: L.jXE.INBOX
       }));
       let r = this.state.channels.find(e => e.channelId === t);
@@ -185,7 +185,7 @@ class V extends o.EventEmitter {
         return
       }
       this.setState({
-        channels: this.updateChannel(t, e => U(F({}, e), {
+        channels: this.updateChannel(t, e => F(U({}, e), {
           deleted: !0
         }))
       }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
@@ -203,12 +203,12 @@ class V extends o.EventEmitter {
         channels: n
       })
     }, this.markGuildRead = e => {
-      u.Z.wait(() => (0, g.Z)([e], L.jXE.INBOX)), this.setState({
+      d.Z.wait(() => (0, g.Z)([e], L.jXE.INBOX)), this.setState({
         channels: this.state.channels.filter(t => t.guildId !== e)
       }), this.maybeLoadMore()
     }, this.deleteChannel = e => {
       this.setState({
-        scrollToChannelIndex: d().findIndex(this.state.channels, t => t.channelId === e),
+        scrollToChannelIndex: u().findIndex(this.state.channels, t => t.channelId === e),
         channels: this.state.channels.filter(t => t.channelId !== e)
       }), this.maybeLoadMore()
     }, this.markAllRead = () => {
@@ -226,14 +226,14 @@ class V extends o.EventEmitter {
         channels: r,
         collapsedChannels: i,
         loadState: a
-      } = this.state, o = d().findIndex(r, e => e.channelId === t), l = r[o], s = !l.collapsed;
+      } = this.state, o = u().findIndex(r, e => e.channelId === t), l = r[o], s = !l.collapsed;
       i[t] = s, (0, E.BU)(n, t, e => {
         e.collapsedInInbox = s
       }, E.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== a || s || l.isFullyLoaded ? a : "loaded",
-        channels: this.updateChannel(t, e => U(F({}, e), {
+        channels: this.updateChannel(t, e => F(U({}, e), {
           collapsed: s
         }))
       }), l.collapsed ? l.isFullyLoaded || this.loadMore() : this.maybeLoadMore()
@@ -252,7 +252,7 @@ class V extends o.EventEmitter {
         if ("forum" !== e.type) return e;
         {
           let t = v.Z.hasLoaded(e.guildId);
-          return U(F({}, e), {
+          return F(U({}, e), {
             isFullyLoaded: t,
             hasLoadedAnything: t
           })
@@ -275,7 +275,7 @@ function z(e, t) {
   let o = null != i.getAfter(e.oldestReadMessageId) || (null === (n = a[0]) || void 0 === n ? void 0 : n.id) === e.oldestUnreadMessageId,
     l = a[a.length - 1],
     s = D.default.compare(null == l ? void 0 : l.id, e.newestUnreadMessageId) >= 0 || a.length >= H;
-  return U(F({}, e), {
+  return F(U({}, e), {
     messages: a,
     hasLoadedAnything: e.hasLoadedAnything || o || t,
     hasLoadedFirst: e.hasLoadedFirst || o || t,
@@ -287,17 +287,17 @@ function K() {
   let e = function() {
       var e, t;
       let n = {},
-        r = null !== (t = null === (e = j.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {};
+        r = null !== (t = null === (e = O.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {};
       for (let e in r)
         for (let t in r[e].channels) {
-          let i = N.Z.getChannel(t);
+          let i = j.Z.getChannel(t);
           t in n && (null == i ? void 0 : i.guild_id) !== e || (n[t] = r[e].channels[t].collapsedInInbox)
         }
       return n
     }(),
     t = function(e) {
       let t = [];
-      return N.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), w.ZP.getFlattenedGuildIds().forEach(n => {
+      return j.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), w.ZP.getFlattenedGuildIds().forEach(n => {
         if (null == n) return;
         let r = C.ZP.getSelectableChannelIds(n),
           i = b.Z.getActiveJoinedUnreadThreadsForGuild(n);
@@ -307,10 +307,10 @@ function K() {
           let o = null !== (a = i[r]) && void 0 !== a ? a : {};
           for (let r in o) Y(e, t, n, r)
         })
-      }), d().sortBy(t, e => e.sortOrder)
+      }), u().sortBy(t, e => e.sortOrder)
     }(e),
-    n = d().uniq(t.map(e => e.guildId)).filter(R.lm);
-  return u.Z.dispatch({
+    n = u().uniq(t.map(e => e.guildId)).filter(R.lm);
+  return d.Z.dispatch({
     type: "INBOX_OPEN",
     guildIds: n
   }), {
@@ -323,8 +323,8 @@ function K() {
 
 function Y(e, t, n, r) {
   if (null == r) return;
-  let i = N.Z.getChannel(r);
-  if (null == i || !O.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
+  let i = j.Z.getChannel(r);
+  if (null == i || !N.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === A.ZP.getMentionCount(r)) return;
@@ -340,7 +340,7 @@ function Y(e, t, n, r) {
     s = A.ZP.getMentionCount(r),
     c = s > 0 || i.isPrivate();
   if (null == l || D.default.compare(a, l) >= 0) return;
-  let d = {
+  let u = {
     guildId: n,
     channelId: r,
     oldestReadMessageId: a,
@@ -354,7 +354,7 @@ function Y(e, t, n, r) {
     hasMentionsOrUnreads: c,
     mentionCount: s,
     sortOrder: function(e, t, n) {
-      let r = N.Z.getChannel(t);
+      let r = j.Z.getChannel(t);
       if (h.Z.isFavorite(t)) return 0;
       if (r.isPrivate()) return 1;
       if (A.ZP.getMentionCount(t) > 0) return A.ZP.getIsMentionLowImportance(t) ? 3 : 2;
@@ -374,11 +374,11 @@ function Y(e, t, n, r) {
     }(n, r, l),
     order: 0
   };
-  i.isNSFW() && !I.Z.didAgree(i.guild_id) ? t.push(U(F({}, d), {
+  i.isNSFW() && !I.Z.didAgree(i.guild_id) ? t.push(F(U({}, u), {
     type: "nsfw"
-  })) : i.isForumLikeChannel() ? t.push(U(F({}, d), {
+  })) : i.isForumLikeChannel() ? t.push(F(U({}, u), {
     type: "forum"
-  })) : t.push(U(F({}, d), {
+  })) : t.push(F(U({}, u), {
     type: "messages",
     messages: []
   }))

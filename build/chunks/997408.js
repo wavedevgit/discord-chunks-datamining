@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 e.exports = {
   applicationInfoContainer: "applicationInfoContainer__164c9",
   applicationIcon: "applicationIcon__164c9",

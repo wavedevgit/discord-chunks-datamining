@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -10,13 +10,13 @@ var i = n(442837),
   l = n(739566),
   s = n(834129),
   c = n(388032),
-  d = n(390502);
+  u = n(390502);
 
-function u(e) {
+function d(e) {
   var t;
   let {
     message: n,
-    compact: u,
+    compact: d,
     usernameHook: p,
     onClickThread: m,
     onClickViewThreads: f,
@@ -38,10 +38,10 @@ function u(e) {
     iconNode: (0, r.jsx)(a.or_, {
       size: "md",
       color: "currentColor",
-      className: d.icon
+      className: u.icon
     }),
     timestamp: n.timestamp,
-    compact: u,
+    compact: d,
     children: v
   })
 }

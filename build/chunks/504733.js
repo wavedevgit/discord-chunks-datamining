@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,12 +11,12 @@ var i = n(481060),
   s = n(981791),
   c = n(540273);
 
-function d(e) {
+function u(e) {
   let {
     message: t,
     channel: n,
-    compact: d
-  } = e, u = (0, a.ZP)(t), p = t.application, m = (0, o.l)({
+    compact: u
+  } = e, d = (0, a.ZP)(t), p = t.application, m = (0, o.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,
@@ -29,11 +29,11 @@ function d(e) {
       className: c.ticketIcon
     }),
     timestamp: t.timestamp,
-    compact: d,
+    compact: u,
     children: (0, s.A)({
       application: p,
-      username: u.nick,
-      usernameHook: m(u)
+      username: d.nick,
+      usernameHook: m(d)
     })
   })
 }

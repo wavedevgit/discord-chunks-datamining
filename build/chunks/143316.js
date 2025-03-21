@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,13 +9,13 @@ var r = n(200651),
   l = n(288552),
   s = n(981631),
   c = n(388032),
-  d = n(215921);
+  u = n(215921);
 
-function u(e) {
+function d(e) {
   let {
     type: t,
     onClick: n
-  } = e, [u, m] = i.useState(!1), f = () => {
+  } = e, [d, m] = i.useState(!1), f = () => {
     n(), o.default.track(s.rMx.INBOX_CHANNEL_ACKED, {
       marked_all_channels_as_read: !0,
       num_unread_channels_remaining: 0
@@ -24,7 +24,7 @@ function u(e) {
     e.shiftKey ? f() : m(!0)
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [u ? (0, r.jsx)(p, {
+    children: [d ? (0, r.jsx)(p, {
       confirm: f,
       cancel: () => m(!1)
     }) : null, "bottom-floating" === t ? (0, r.jsx)(l.a, {
@@ -38,7 +38,7 @@ function u(e) {
         size: "xs",
         color: "currentColor"
       }),
-      className: d.controlButton,
+      className: u.controlButton,
       onClick: h
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => c
 });
@@ -22,10 +22,10 @@ function c(e) {
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, l) => {
-      var d, u;
+      var u, d;
       return (0, r.jsx)(o.U, {
         location: "bookmarks-button",
-        children: (0, r.jsx)(a.JO, (d = function(e) {
+        children: (0, r.jsx)(a.JO, (u = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -42,7 +42,7 @@ function c(e) {
             })
           }
           return e
-        }({}, n), u = u = {
+        }({}, n), d = d = {
           className: c,
           onClick: e,
           icon: i.plf,
@@ -50,16 +50,16 @@ function c(e) {
           tooltip: t ? null : s.NW.string(s.t["2pAkDA"]),
           selected: t,
           showBadge: l
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(u)).forEach(function(e) {
-          Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(u, e))
-        }), d))
+        })(Object(d)).forEach(function(e) {
+          Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(d, e))
+        }), u))
       })
     }
   })

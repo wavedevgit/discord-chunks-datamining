@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(442837),
   s = n(481060),
   c = n(727637),
-  d = n(782568),
-  u = n(317632),
+  u = n(782568),
+  d = n(317632),
   p = n(174767),
   m = n(594174),
   f = n(55935),
@@ -24,12 +24,12 @@ function _(e) {
   } = e, a = (0, l.e7)([m.default], () => {
     var e, n;
     return null !== (n = null === (e = m.default.getUser(t.inviter_id)) || void 0 === e ? void 0 : e.username) && void 0 !== n ? n : ""
-  }), d = (0, f.vc)(o()(t.created_at), "LT"), u = i.useRef(null), _ = (0, c.Z)(u);
+  }), u = (0, f.vc)(o()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
   return i.useEffect(() => {
     n || (0, p.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
     className: g.container,
-    ref: u,
+    ref: d,
     children: [(0, r.jsxs)("div", {
       className: g.primaryRow,
       children: [(0, r.jsx)("img", {
@@ -69,7 +69,7 @@ function _(e) {
         variant: "text-xs/medium",
         className: g.subtitle,
         color: "text-muted",
-        children: [t.application_name, " \xb7 ", d]
+        children: [t.application_name, " \xb7 ", u]
       }), n && (0, r.jsx)("div", {
         className: g.metaContainer,
         children: (0, r.jsx)(s.Text, {
@@ -88,7 +88,7 @@ function b(e) {
     expired: t,
     invite: n,
     isHoveringInvite: a
-  } = e, o = (0, l.e7)([u.Z], () => u.Z.isInviteGameInstalled(n)), c = (0, l.e7)([u.Z], () => u.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
+  } = e, o = (0, l.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, l.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
     f(!0);
     try {
       await (0, p.MH)(n)
@@ -120,7 +120,7 @@ function b(e) {
     disabled: m,
     size: s.PhG.SMALL,
     color: s.Ttl.TRANSPARENT,
-    onClick: () => (0, d.Z)(n.fallback_url),
+    onClick: () => (0, u.Z)(n.fallback_url),
     children: h.NW.string(h.t["27y8KC"])
   }) : (0, r.jsx)(s.ua7, {
     text: h.NW.formatToPlainString(h.t.issFLC, {
@@ -150,7 +150,7 @@ function b(e) {
         disabled: !0,
         size: s.PhG.SMALL,
         color: s.Ttl.TRANSPARENT,
-        onClick: () => (0, d.Z)(n.fallback_url),
+        onClick: () => (0, u.Z)(n.fallback_url),
         children: (0, r.jsxs)("div", {
           className: g.launchToJoinContainer,
           children: [(0, r.jsx)(s.Text, {

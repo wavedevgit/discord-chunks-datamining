@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 e.exports = {
   popoutContainer: "popoutContainer__4ad69",
   messagesScroller: "messagesScroller__4ad69",

@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Gt: () => f,
+  Gt: () => b,
   ZP: () => O
 }), r(47120);
 var n = r(200651),
@@ -18,7 +18,7 @@ let d = {
     isInContainer: !1
   });
 
-function b(e) {
+function f(e) {
   let {
     children: t
   } = e;
@@ -28,7 +28,7 @@ function b(e) {
   })
 }
 
-function f() {
+function b() {
   let {
     isInContainer: e
   } = l.useContext(p);
@@ -41,7 +41,7 @@ function O(e) {
     accentColor: r,
     spoiler: i,
     renderComponents: d
-  } = e, [p, f] = l.useState(i), O = e => (0, n.jsx)(s.am.AutoMeasuredNestedContainer, {
+  } = e, [p, b] = l.useState(i), O = e => (0, n.jsx)(s.am.AutoMeasuredNestedContainer, {
     children: l => (0, n.jsx)("div", {
       ref: l,
       className: o()(u.container, {
@@ -51,7 +51,7 @@ function O(e) {
       style: {
         "--__accent-color": r
       },
-      children: (0, n.jsx)(b, {
+      children: (0, n.jsx)(f, {
         children: d(t)
       })
     })
@@ -60,7 +60,7 @@ function O(e) {
     type: a.ZP.Types.ATTACHMENT,
     reason: c.wk.SPOILER,
     obscured: p,
-    onToggleObscurity: () => f(e => !e),
+    onToggleObscurity: () => b(e => !e),
     children: e => O(e)
   }) : O(!1)
 }

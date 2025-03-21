@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => y
 });
@@ -10,8 +10,8 @@ var i = n(120356),
   l = n(481060),
   s = n(239091),
   c = n(901461),
-  d = n(592125),
-  u = n(709054),
+  u = n(592125),
+  d = n(709054),
   p = n(723774),
   m = n(144140),
   f = n(91159),
@@ -25,7 +25,7 @@ function y(e) {
   let {
     message: t,
     compact: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.getChannel(u.default.castMessageIdAsChannelId(t.id)));
+  } = e, i = (0, o.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
   return null == i ? null : (0, r.jsx)(x, {
     channel: i,
     compact: n,
@@ -38,7 +38,7 @@ function x(e) {
     channel: t,
     compact: i,
     isSystemMessage: c
-  } = e, d = (0, o.e7)([m.Z], () => m.Z.getCount(t.id)), u = function(e) {
+  } = e, u = (0, o.e7)([m.Z], () => m.Z.getCount(t.id)), d = function(e) {
     var t;
     let n = (0, o.e7)([m.Z], () => m.Z.getMostRecentMessage(e.id)),
       i = (0, o.e7)([m.Z], () => m.Z.getCount(e.id)),
@@ -59,7 +59,7 @@ function x(e) {
         children: (0, f.Ye)(a)
       })]
     })
-  }(t), y = null != d && d > 0;
+  }(t), y = null != u && u > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: a()(v.spine, {
@@ -118,7 +118,7 @@ function x(e) {
           }), (0, r.jsx)("span", {
             className: v.cta,
             "aria-hidden": !y,
-            children: (0, p.WE)(d, t.id)
+            children: (0, p.WE)(u, t.id)
           })]
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
@@ -126,7 +126,7 @@ function x(e) {
           lineClamp: 1,
           color: "header-secondary",
           className: v.bottomLine,
-          children: u
+          children: d
         })]
       })
     })]

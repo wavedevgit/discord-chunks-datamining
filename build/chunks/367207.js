@@ -1,6 +1,6 @@
-/** Chunk was on 69002 **/
+/** Chunk was on 18475 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => D
 }), n(411104), n(47120);
 var r = n(200651);
 n(192379);
@@ -12,29 +12,29 @@ var i = n(392711),
   c = n(100527),
   u = n(358221),
   d = n(963249),
-  _ = n(93127),
-  p = n(430824),
-  E = n(594174),
-  f = n(431),
-  h = n(626135),
-  m = n(74538),
-  b = n(557457),
-  O = n(970645),
-  g = n(30684),
-  N = n(514701),
-  I = n(6242),
-  T = n(467721),
-  C = n(757692),
+  p = n(93127),
+  f = n(430824),
+  h = n(594174),
+  _ = n(431),
+  m = n(626135),
+  b = n(74538),
+  g = n(557457),
+  E = n(970645),
+  v = n(30684),
+  O = n(514701),
+  y = n(6242),
+  C = n(467721),
+  x = n(757692),
   S = n(937579),
-  y = n(522558),
-  v = n(11352),
+  N = n(522558),
+  I = n(11352),
   P = n(474936),
-  R = n(981631),
-  A = n(354459),
-  x = n(37113),
-  j = n(388032);
+  j = n(981631),
+  T = n(354459),
+  L = n(37113),
+  w = n(388032);
 
-function D(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,14 +43,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -84,7 +84,7 @@ class M extends s.Z {
       let {
         default: e
       } = await n.e("33184").then(n.bind(n, 465836));
-      return n => (0, r.jsx)(e, L({
+      return n => (0, r.jsx)(e, R({
         channel: t,
         content: i
       }, n))
@@ -93,7 +93,7 @@ class M extends s.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, d.Z)(k(L({}, e), {
+      (0, d.Z)(k(R({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -119,33 +119,33 @@ class M extends s.Z {
     })
   }
   constructor(...e) {
-    super(...e), D(this, "_premiumPaymentModalCloseResolve", null), D(this, "_premiumPaymentModalCloseReject", null), D(this, "_maybeFetchPremiumOffer", async () => {
-      let e = E.default.getCurrentUser();
+    super(...e), A(this, "_premiumPaymentModalCloseResolve", null), A(this, "_premiumPaymentModalCloseReject", null), A(this, "_maybeFetchPremiumOffer", async () => {
+      let e = h.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = !(0, m.I5)(e) && f.Z.shouldFetchOffer();
+        let t = !(0, b.I5)(e) && _.Z.shouldFetchOffer();
         await (0, S.T)("PremiumManager", t)
       }
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
-    }), D(this, "_maybeFetchCheckoutRecovery", async () => {
-      let e = E.default.getCurrentUser();
-      null != e && e.verified && !(0, m.I5)(e) && g.Z.shouldFetchCheckoutRecovery() && await (0, O.o)()
-    }), D(this, "_maybeFetchUserAffinities", () => {
+    }), A(this, "_maybeFetchCheckoutRecovery", async () => {
+      let e = h.default.getCurrentUser();
+      null != e && e.verified && !(0, b.I5)(e) && v.Z.shouldFetchCheckoutRecovery() && await (0, E.o)()
+    }), A(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = y.w.getCurrentConfig({
+      } = N.w.getCurrentConfig({
         location: "PremiumManager"
       }, {
         autoTrackExposure: !1
       });
-      e && (0, _.W)()
-    }), D(this, "_trackCustomNotificationSoundsExposure", () => {
-      v.Y.trackExposure({
+      e && (0, p.W)()
+    }), A(this, "_trackCustomNotificationSoundsExposure", () => {
+      I.Y.trackExposure({
         location: "PremiumManager"
       })
-    }), D(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, d.Z)(k(L({}, e), {
+    }), A(this, "_handlePremiumPaymentModalOpen", e => {
+      (0, d.Z)(k(R({}, e), {
         analyticsLocations: [c.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -154,36 +154,36 @@ class M extends s.Z {
           })
         }
       }))
-    }), D(this, "_handlePremiumPaymentModalClose", e => {
+    }), A(this, "_handlePremiumPaymentModalClose", e => {
       let {
         didSucceed: t
       } = e;
       t && null != this._premiumPaymentModalCloseResolve ? this._premiumPaymentModalCloseResolve() : null != this._premiumPaymentModalCloseReject && this._premiumPaymentModalCloseReject(), this._premiumPaymentModalCloseResolve = null, this._premiumPaymentModalCloseReject = null
-    }), D(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
-      let t = E.default.getCurrentUser();
+    }), A(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
+      let t = h.default.getCurrentUser();
       (null == t ? void 0 : t.id) !== e.senderUserId && this._maybeSendViewerUpsellMessage(e.channelId, e.guildId, t)
-    }), D(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
+    }), A(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;
       let o = u.Z.getSelectedParticipant(e),
-        l = (0, C.o)(o, n),
+        l = (0, x.o)(o, n),
         {
           sendNitroMessage: s
-        } = (0, I.TD)(l),
-        c = null !== (i = null === (r = p.Z.getGuild(t)) || void 0 === r ? void 0 : r.premiumTier) && void 0 !== i ? i : R.Eu4.NONE;
-      if (T.Z.cooldownIsActive() || !s || c >= R.Eu4.TIER_2 || (null == o ? void 0 : o.type) !== A.fO.STREAM || (null == o ? void 0 : o.id) === (null == n ? void 0 : n.id) || null == o.maxResolution || null == o.maxFrameRate) return;
-      N.I();
-      let d = j.NW.formatToPlainString(j.t.AbyeZG, {
+        } = (0, y.TD)(l),
+        c = null !== (i = null === (r = f.Z.getGuild(t)) || void 0 === r ? void 0 : r.premiumTier) && void 0 !== i ? i : j.Eu4.NONE;
+      if (C.Z.cooldownIsActive() || !s || c >= j.Eu4.TIER_2 || (null == o ? void 0 : o.type) !== T.fO.STREAM || (null == o ? void 0 : o.id) === (null == n ? void 0 : n.id) || null == o.maxResolution || null == o.maxFrameRate) return;
+      O.I();
+      let d = w.NW.formatToPlainString(w.t.AbyeZG, {
         nickname: o.userNick,
-        resolution: (0, x.o6)(o.maxResolution.height),
-        fps: (0, b.bp)(o.maxFrameRate)
+        resolution: (0, L.o6)(o.maxResolution.height),
+        fps: (0, g.bp)(o.maxFrameRate)
       });
-      a.Z.sendNitroSystemMessage(e, d), h.default.track(R.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
+      a.Z.sendNitroSystemMessage(e, d), m.default.track(j.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
         type: P.cd.HD_STREAMING_VIEWER_UPSELL,
-        location_section: null != t ? R.jXE.TEXT_IN_VOICE : R.jXE.CHANNEL_TEXT_AREA,
-        location_object: R.qAy.MESSAGE,
+        location_section: null != t ? j.jXE.TEXT_IN_VOICE : j.jXE.CHANNEL_TEXT_AREA,
+        location_object: j.qAy.MESSAGE,
         guild_id: t
       })
     }, 200))
   }
 }
-let Z = new M
+let D = new M

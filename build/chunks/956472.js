@@ -1,8 +1,8 @@
-/** Chunk was on 69002 **/
+/** Chunk was on 18475 **/
 n.d(t, {
-  Ip: () => p,
+  Ip: () => f,
   T4: () => u,
-  oQ: () => _
+  oQ: () => p
 }), n(653041);
 var r = n(932563),
   i = n(822857),
@@ -43,18 +43,18 @@ let c = e => {
       enabled: d
     } = (0, i.C)({
       location: "getShopProductPrices"
-    }), _ = d ? u.find(e => e.currency === s.pKx.DISCORD_ORB) : void 0, p = u.find(e => e.currency !== s.pKx.DISCORD_ORB), E = [], f = [], h = 1 === u.length && null != _, m = null != _ && null != l && l >= _.amount;
-    null != _ && null != p ? (m ? E.push(_, p) : E.push(p, _), o === a.AW.ORBS ? f.push(_) : f.push(p, _)) : null != _ ? (E.push(_), f.push(_)) : null != p && (E.push(p), o !== a.AW.ORBS && f.push(p));
-    let b = E.length > 0 && (null === (t = E[0]) || void 0 === t ? void 0 : t.currency) === s.pKx.DISCORD_ORB;
+    }), p = d ? u.find(e => e.currency === s.pKx.DISCORD_ORB) : void 0, f = u.find(e => e.currency !== s.pKx.DISCORD_ORB), h = [], _ = [], m = 1 === u.length && null != p, b = null != p && null != l && l >= p.amount;
+    null != p && null != f ? (b ? h.push(p, f) : h.push(f, p), o === a.AW.ORBS ? _.push(p) : _.push(f, p)) : null != p ? (h.push(p), _.push(p)) : null != f && (h.push(f), o !== a.AW.ORBS && _.push(f));
+    let g = h.length > 0 && (null === (t = h[0]) || void 0 === t ? void 0 : t.currency) === s.pKx.DISCORD_ORB;
     return {
-      displayPrices: f,
-      checkoutEligiblePrices: E,
-      isOrbExclusive: h,
-      hasSufficientOrbs: m,
-      shouldCheckoutWithOrbs: b
+      displayPrices: _,
+      checkoutEligiblePrices: h,
+      isOrbExclusive: m,
+      hasSufficientOrbs: b,
+      shouldCheckoutWithOrbs: g
     }
   },
-  _ = e => {
+  p = e => {
     let {
       tab: t,
       product: n
@@ -69,7 +69,7 @@ let c = e => {
     return s
   };
 
-function p(e) {
+function f(e) {
   let {
     product: t,
     isPremiumUser: n,

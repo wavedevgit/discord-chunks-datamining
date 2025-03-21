@@ -1,63 +1,63 @@
-/** Chunk was on 86546 **/
-n.d(t, {
-  Z: () => s
+/** Chunk was on 98977 **/
+n.d(e, {
+  Z: () => u
 }), n(47120), n(301563);
 var r = n(200651),
-  l = n(192379),
+  s = n(192379),
   i = n(481060);
 
-function o(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
+function l(t, e, n) {
+  return e in t ? Object.defineProperty(t, e, {
     value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : t[e] = n, t
 }
-class a extends l.PureComponent {
+class a extends s.PureComponent {
   render() {
     let {
-      text: e,
-      lastItem: t,
+      text: t,
+      lastItem: e,
       className: n
     } = this.props;
     return (0, r.jsxs)("span", {
       children: [(0, r.jsx)(i.eee, {
         className: n,
         onClick: this.handleClick,
-        children: e
-      }), t ? "" : ", "]
+        children: t
+      }), e ? "" : ", "]
     })
   }
-  constructor(...e) {
-    super(...e), o(this, "handleClick", () => {
+  constructor(...t) {
+    super(...t), l(this, "handleClick", () => {
       let {
-        onClick: e,
-        index: t
+        onClick: t,
+        index: e
       } = this.props;
-      null == e || e(t)
+      null == t || t(e)
     })
   }
 }
-class s extends l.PureComponent {
+class u extends s.PureComponent {
   render() {
-    let e = this.props.artists.split(";");
-    if (!this.props.canOpen) return e.join(", ");
-    let t = e.length - 1;
-    return e.map((e, n) => (0, r.jsx)(a, {
-      text: e,
+    let t = this.props.artists.split(";");
+    if (!this.props.canOpen) return t.join(", ");
+    let e = t.length - 1;
+    return t.map((t, n) => (0, r.jsx)(a, {
+      text: t,
       index: n,
-      lastItem: n === t,
+      lastItem: n === e,
       onClick: this.handleOpenSpotifyArtist,
       className: this.props.linkClassName
     }, "spotify-artist-".concat(n)))
   }
-  constructor(...e) {
-    super(...e), o(this, "handleOpenSpotifyArtist", e => {
+  constructor(...t) {
+    super(...t), l(this, "handleOpenSpotifyArtist", t => {
       let {
-        onOpenSpotifyArtist: t
+        onOpenSpotifyArtist: e
       } = this.props;
-      null == t || t(e)
+      null == e || e(t)
     })
   }
 }

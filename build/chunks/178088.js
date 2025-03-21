@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   k: () => S
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(524437),
   s = n(481060),
   c = n(100527),
-  d = n(906732),
-  u = n(602478),
+  u = n(906732),
+  d = n(602478),
   p = n(2818),
   m = n(768943),
   f = n(742989),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(153209),
   x = n(956961),
   E = n(903672),
-  j = n(711165),
-  O = n(946443),
-  N = n(264233),
+  O = n(711165),
+  N = n(946443),
+  j = n(264233),
   C = n(981631),
   I = n(388032);
 
@@ -38,7 +38,7 @@ function S(e) {
     popoutAlign: A
   } = e, {
     analyticsLocations: w
-  } = (0, d.ZP)(c.Z.NOTIFICATION_CENTER), [Z, k] = i.useState(!1), [R, D] = function() {
+  } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [Z, k] = i.useState(!1), [R, D] = function() {
     let {
       showForYouTab: e
     } = b.V.useExperiment({
@@ -72,12 +72,12 @@ function S(e) {
     }
   }(R), W = i.useCallback(() => {
     k(!1), Z && (null == n || n())
-  }, [n, Z]), F = i.useCallback(() => {
+  }, [n, Z]), U = i.useCallback(() => {
     k(!Z), Z ? null == n || n() : null == t || t()
   }, [n, t, Z]);
-  i.useEffect(() => (_.S.subscribe(C.CkL.TOGGLE_INBOX, F), () => void _.S.unsubscribe(C.CkL.TOGGLE_INBOX, F)), [F]);
+  i.useEffect(() => (_.S.subscribe(C.CkL.TOGGLE_INBOX, U), () => void _.S.unsubscribe(C.CkL.TOGGLE_INBOX, U)), [U]);
   let {
-    showReminders: U
+    showReminders: F
   } = f.Z.useExperiment({
     location: "RecentsPopout"
   }), {
@@ -87,16 +87,16 @@ function S(e) {
     location: "RecentsPopout"
   }), H = (0, o.e7)([m.Z], () => m.Z.hasOverdueReminder(), []) && B && G, {
     enabled: V
-  } = u.Z.useExperiment({
+  } = d.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    ((!U || B && G) && R === l.X.TODOS || R === l.X.BOOKMARKS && !(B || G)) && D(l.X.MENTIONS)
+    ((!F || B && G) && R === l.X.TODOS || R === l.X.BOOKMARKS && !(B || G)) && D(l.X.MENTIONS)
   });
   let z = i.useCallback(e => {
     e.shiftKey || W()
   }, [W]);
-  return (0, r.jsx)(d.Gt, {
+  return (0, r.jsx)(u.Gt, {
     value: w,
     children: (0, r.jsx)(s.yRy, {
       animation: s.yRy.Animation.NONE,
@@ -117,11 +117,11 @@ function S(e) {
             onJump: z,
             badgeState: T,
             closePopout: W
-          }) : V && R === l.X.GAME_INVITES ? (0, r.jsx)(N.Z, {
+          }) : V && R === l.X.GAME_INVITES ? (0, r.jsx)(j.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : U && R === l.X.TODOS ? (0, r.jsx)(x.Z, {
+          }) : F && R === l.X.TODOS ? (0, r.jsx)(x.Z, {
             setTab: D,
             onJump: z,
             closePopout: W
@@ -129,16 +129,16 @@ function S(e) {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === l.X.SCHEDULED ? (0, r.jsx)(j._, {
+          }) : R === l.X.SCHEDULED ? (0, r.jsx)(O._, {
             setTab: D,
             closePopout: W
           }) : (0, r.jsx)(a.SV, {
-            fallback: (0, r.jsx)(O.h, {
+            fallback: (0, r.jsx)(N.h, {
               setTab: D,
               closePopout: W,
               badgeState: T
             }),
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(N.Z, {
               setTab: D,
               onJump: z,
               showTutorial: L,
@@ -155,7 +155,7 @@ function S(e) {
         let {
           isShown: n
         } = t;
-        return S(F, n, e, H)
+        return S(U, n, e, H)
       }
     })
   })

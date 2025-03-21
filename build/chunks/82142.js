@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => w
 }), n(47120);
@@ -6,8 +6,8 @@ var r, i, a, o = n(913527),
   l = n.n(o),
   s = n(442837),
   c = n(846519),
-  d = n(570140),
-  u = n(533307),
+  u = n(570140),
+  d = n(533307),
   p = n(590783),
   m = n(669079),
   f = n(981631);
@@ -19,9 +19,9 @@ let h = {},
   y = new Set,
   x = {},
   E = {},
-  j = new Set;
+  O = new Set;
 
-function O(e) {
+function N(e) {
   let t = p.Z.createFromServer(e),
     n = t.code;
   if (g.has(n)) g.set(n, g.get(n).merge(t));
@@ -42,14 +42,14 @@ function O(e) {
   }
 }
 
-function N(e) {
+function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  if (t && !j.has(e.channel_id)) return !1;
+  if (t && !O.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
     _.includes(e) || v.includes(e) || (C({
       code: e
-    }), d.Z.wait(() => u.Z.resolveGiftCode(e, !1, !0).catch(f.VqG)))
+    }), u.Z.wait(() => d.Z.resolveGiftCode(e, !1, !0).catch(f.VqG)))
   }), !1)
 }
 
@@ -64,7 +64,7 @@ function I(e) {
   let {
     message: t
   } = e;
-  return N(t, !0)
+  return j(t, !0)
 }
 
 function S(e) {
@@ -72,7 +72,7 @@ function S(e) {
     channelId: t,
     messages: n
   } = e;
-  j.add(t), n.forEach(e => N(e, !0))
+  O.add(t), n.forEach(e => j(e, !0))
 }
 
 function T(e) {
@@ -80,7 +80,7 @@ function T(e) {
     firstMessages: t
   } = e;
   if (null == t) return !1;
-  null == t || t.forEach(e => N(e))
+  null == t || t.forEach(e => j(e))
 }
 class P extends(r = s.ZP.Store) {
   get(e) {
@@ -124,22 +124,22 @@ a = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
   configurable: !0,
   writable: !0
 }) : P[i] = a;
-let A = new P(d.Z, {
+let A = new P(u.Z, {
     CONNECTION_OPEN: function() {
-      return j.clear(), !1
+      return O.clear(), !1
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && j.add(t), !1
+      return null != t && O.add(t), !1
     },
     GIFT_CODE_RESOLVE: C,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
       let {
         giftCode: t
       } = e;
-      return _ = _.filter(e => e !== t.code), v.includes(t.code) || (v = [...v, t.code]), O(t)
+      return _ = _.filter(e => e !== t.code), v.includes(t.code) || (v = [...v, t.code]), N(t)
     },
     GIFT_CODE_RESOLVE_FAILURE: function(e) {
       let {
@@ -191,7 +191,7 @@ let A = new P(d.Z, {
       let {
         giftCode: t
       } = e;
-      O(t)
+      N(t)
     },
     GIFT_CODES_FETCH: function(e) {
       let {
@@ -206,7 +206,7 @@ let A = new P(d.Z, {
         skuId: n,
         subscriptionPlanId: r
       } = e;
-      t.forEach(O);
+      t.forEach(N);
       let i = (0, m.Bg)(n, r);
       x[i] = Date.now(), y.delete(i)
     },
@@ -226,17 +226,17 @@ let A = new P(d.Z, {
       let {
         messages: t
       } = e;
-      t.forEach(e => N(e))
+      t.forEach(e => j(e))
     },
     LOAD_PINNED_MESSAGES_SUCCESS: function(e) {
       let {
         messages: t
       } = e;
-      t.forEach(e => N(e))
+      t.forEach(e => j(e))
     },
     SEARCH_FINISH: function(e) {
       e.messages.forEach(e => {
-        e.forEach(e => N(e))
+        e.forEach(e => j(e))
       })
     },
     GIFT_CODE_UPDATE: function(e) {
@@ -256,7 +256,7 @@ let A = new P(d.Z, {
         let {
           first_message: t
         } = e;
-        return null != t && N(t)
+        return null != t && j(t)
       })
     }
   }),

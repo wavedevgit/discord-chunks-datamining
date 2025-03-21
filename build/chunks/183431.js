@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -10,17 +10,17 @@ var r = n(200651),
   s = n(81643),
   c = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     channelId: t
-  } = e, n = (0, s.l6)(), d = (0, s.L5)(), u = i.useCallback(() => {
+  } = e, n = (0, s.l6)(), u = (0, s.L5)(), d = i.useCallback(() => {
     o.Z.showAgeVerificationGetStartedModal(l.cU.SYSTEM_DM_RETRY_BUTTON), (0, l.Z7)(l.io.RETRY, t)
   }, [t]);
   return (0, r.jsx)(a.zxk, {
     size: a.zxk.Sizes.MEDIUM,
     color: a.zxk.Colors.BRAND,
-    onClick: u,
-    disabled: !d,
+    onClick: d,
+    disabled: !u,
     children: n ? c.NW.string(c.t["+2/AhI"]) : c.NW.string(c.t.WiSJBA)
   })
 }

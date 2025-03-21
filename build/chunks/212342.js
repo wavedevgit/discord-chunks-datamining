@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => y
 }), n(47120), n(789020);
@@ -6,8 +6,8 @@ var r, i, a, o = n(442837),
   l = n(433517),
   s = n(570140),
   c = n(314897),
-  d = n(592125),
-  u = n(496675),
+  u = n(592125),
+  d = n(496675),
   p = n(594174),
   m = n(630388),
   f = n(110630),
@@ -38,9 +38,9 @@ let y = new v(s.Z, {
       optimistic: i
     } = e;
     if (i || _.has(n)) return !1;
-    let a = d.Z.getChannel(n),
+    let a = u.Z.getChannel(n),
       o = p.default.getCurrentUser();
-    if (!(null != a && a.type === h.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != o && (null === (t = r.author) || void 0 === t ? void 0 : t.id) === o.id ? u.Z.can(h.Plq.SEND_MESSAGES, a) : u.Z.can(h.Plq.MANAGE_MESSAGES, a)) && !m.yE(Number(r.flags), h.iLy.CROSSPOSTED))) return !1;
+    if (!(null != a && a.type === h.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != o && (null === (t = r.author) || void 0 === t ? void 0 : t.id) === o.id ? d.Z.can(h.Plq.SEND_MESSAGES, a) : d.Z.can(h.Plq.MANAGE_MESSAGES, a)) && !m.yE(Number(r.flags), h.iLy.CROSSPOSTED))) return !1;
     b.add(r.id)
   },
   MESSAGE_UPDATE: function(e) {

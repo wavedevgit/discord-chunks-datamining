@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => S,
   h: () => P
@@ -10,8 +10,8 @@ var r = n(200651),
   l = n(525654),
   s = n.n(l),
   c = n(91192),
-  d = n(442837),
-  u = n(524437),
+  u = n(442837),
+  d = n(524437),
   p = n(481060),
   m = n(570140),
   f = n(607070),
@@ -23,9 +23,9 @@ var r = n(200651),
   y = n(143316),
   x = n(240126),
   E = n(791914),
-  j = n(147522),
-  O = n(809780),
-  N = n(981631),
+  O = n(147522),
+  N = n(809780),
+  j = n(981631),
   C = n(388032),
   I = n(869496);
 
@@ -38,14 +38,14 @@ function S(e) {
     setSeenTutorial: R,
     closePopout: D,
     badgeState: L
-  } = e, M = i.useRef(null), [W, F] = (0, O.ZP)(M), {
-    loadState: U,
+  } = e, M = i.useRef(null), [W, U] = (0, N.ZP)(M), {
+    loadState: F,
     channels: B
   } = W, {
     maybeLoadMore: G,
     markAllRead: H
-  } = F;
-  t = M, n = W, a = F, i.useLayoutEffect(() => {
+  } = U;
+  t = M, n = W, a = U, i.useLayoutEffect(() => {
     var e;
     let {
       scrollToChannelIndex: r
@@ -66,15 +66,15 @@ function S(e) {
     (l.offsetTop < s || l.offsetTop > s + c) && i.scrollTo({
       to: l.offsetTop
     })
-  }), l = W, S = F, i.useEffect(() => {
+  }), l = W, S = U, i.useEffect(() => {
     let e = () => {
       let e = l.channels.find(e => !e.collapsed);
       null != e && S.markChannelRead(e)
     };
-    return b.S.subscribe(N.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      b.S.unsubscribe(N.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return b.S.subscribe(j.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      b.S.unsubscribe(j.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [S, l.channels]), P = F, i.useEffect(() => {
+  }, [S, l.channels]), P = U, i.useEffect(() => {
     let e = e => {
       ((0, v.isMac)() || (0, v.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && P.undoMarkChannelRead()
     };
@@ -82,13 +82,13 @@ function S(e) {
       document.removeEventListener("keydown", e)
     }
   }, [P]), i.useEffect(() => {
-    _.default.track(N.rMx.OPEN_POPOUT, {
+    _.default.track(j.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
   }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", D), () => {
     m.Z.unsubscribe("CONNECTION_OPEN", D)
   }), [D]);
-  let V = (0, d.e7)([f.Z], () => f.Z.messageGroupSpacing),
+  let V = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing),
     z = (0, g.Us)({
       location: "Unreads"
     }),
@@ -99,7 +99,7 @@ function S(e) {
         [I.widerInbox]: z
       }),
       children: [(0, r.jsx)(E.Z, {
-        tab: u.X.UNREADS,
+        tab: d.X.UNREADS,
         setTab: w,
         badgeState: L,
         closePopout: D
@@ -116,7 +116,7 @@ function S(e) {
     }),
     "aria-label": C.NW.string(C.t.sRUdBw),
     children: [(0, r.jsx)(E.Z, {
-      tab: u.X.UNREADS,
+      tab: d.X.UNREADS,
       setTab: w,
       badgeState: L,
       closePopout: D,
@@ -169,11 +169,11 @@ function S(e) {
               M.current = e, i.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
             }
           }, a), n = n = {
-            onScroll: U === O.jd.Done ? void 0 : G,
+            onScroll: F === N.jd.Done ? void 0 : G,
             className: I.scroller,
             children: [k ? (0, r.jsx)(T, {
               setSeenTutorial: R
-            }) : null, (0, j.Z)(B, F, Z), U === O.jd.Done ? null : (0, r.jsx)(p.$jN, {
+            }) : null, (0, O.Z)(B, U, Z), F === N.jd.Done ? null : (0, r.jsx)(p.$jN, {
               className: I.spinner
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -232,7 +232,7 @@ function P(e) {
   return (0, r.jsxs)("div", {
     className: I.container,
     children: [(0, r.jsx)(E.Z, {
-      tab: u.X.UNREADS,
+      tab: d.X.UNREADS,
       setTab: t,
       badgeState: n,
       closePopout: i

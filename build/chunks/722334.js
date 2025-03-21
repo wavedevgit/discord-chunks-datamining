@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   W: () => b
 });
@@ -10,8 +10,8 @@ var i = n(120356),
   l = n(626135),
   s = n(617136),
   c = n(497505),
-  d = n(266843),
-  u = n(341907),
+  u = n(266843),
+  d = n(341907),
   p = n(46140),
   m = n(981631),
   f = n(388032),
@@ -28,7 +28,7 @@ function _(e) {
       className: h.button,
       color: o.Ttl.BRAND,
       onClick: () => {
-        (0, u.navigateToQuestHome)({
+        (0, d.navigateToQuestHome)({
           fromContent: c.jn.EXCLUDED_QUEST_EMBED
         }), l.default.track(m.rMx.QUEST_CONTENT_CLICKED, function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ function b(e) {
   } = e, {
     containerRef: n,
     size: i
-  } = (0, d.h)();
+  } = (0, u.h)();
   return (0, s.Zk)(p.V_.EXCLUDED_QUEST, t), (0, r.jsxs)("div", {
     ref: e => n.current = e,
     className: a()(h.container, {

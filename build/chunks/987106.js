@@ -13,8 +13,8 @@ var l = r(120356),
   u = r(911969),
   d = r(744969),
   p = r(572004),
-  b = r(49012),
-  f = r(970184),
+  f = r(49012),
+  b = r(970184),
   O = r(280501),
   y = r(388032),
   m = r(457995);
@@ -46,17 +46,17 @@ function g(e) {
     label: p,
     style: y,
     disabled: g,
-    emoji: v,
-    url: h,
+    emoji: h,
+    url: v,
     skuId: P
   } = e, {
     executeStateUpdate: x,
     visualState: w,
     isDisabled: S
-  } = (0, f.Ee)(e), C = (0, f.CJ)(), E = (0, d.s)(P, null !== (r = null == C ? void 0 : null === (t = C.message) || void 0 === t ? void 0 : t.applicationId) && void 0 !== r ? r : void 0), N = null != P && y === u.ZJ.PREMIUM, I = N && (null == E ? void 0 : E.disabled), k = N ? null == E ? void 0 : E.label : p, Z = null != v, T = null != k && k.length > 0, D = y === u.ZJ.LINK && null != h && h.length > 0, L = w === O.gH.LOADING || N && null == E;
+  } = (0, b.Ee)(e), C = (0, b.CJ)(), E = (0, d.s)(P, null !== (r = null == C ? void 0 : null === (t = C.message) || void 0 === t ? void 0 : t.applicationId) && void 0 !== r ? r : void 0), N = null != P && y === u.ZJ.PREMIUM, I = N && (null == E ? void 0 : E.disabled), k = N ? null == E ? void 0 : E.label : p, Z = null != h, T = null != k && k.length > 0, D = y === u.ZJ.LINK && null != v && v.length > 0, L = w === O.gH.LOADING || N && null == E;
   return l = D ? () => {
-    (0, b.q)({
-      href: null != h ? h : "",
+    (0, f.q)({
+      href: null != v ? v : "",
       shouldConfirm: !0
     })
   } : N ? null != E && !1 === E.disabled ? E.onClick : o.noop : () => x(), (0, n.jsxs)(a.zxk, {
@@ -97,7 +97,7 @@ function g(e) {
           }
           return e
         }({}, e), r = r = {
-          url: h
+          url: v
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -127,10 +127,10 @@ function g(e) {
         className: i()({
           [m.textEmoji]: T
         }),
-        src: v.src,
-        emojiId: v.id,
-        emojiName: v.name,
-        animated: v.animated
+        src: h.src,
+        emojiId: h.id,
+        emojiName: h.name,
+        animated: h.animated
       }) : null, T ? (0, n.jsx)("div", {
         className: m.label,
         children: k

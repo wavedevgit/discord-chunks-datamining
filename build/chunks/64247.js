@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,19 +11,19 @@ var i = n(481060),
   s = n(723170),
   c = n(124368);
 
-function d(e) {
+function u(e) {
   let {
     channel: t,
     closePopout: n,
-    onSelect: d,
-    navId: u,
+    onSelect: u,
+    navId: d,
     label: p
   } = e, m = (0, a.Z)(t, "Notifications Bell"), f = (0, o.Z)(t), h = (0, s.B)(t);
   return (0, r.jsxs)(i.v2r, {
-    navId: u,
+    navId: d,
     onClose: n,
     "aria-label": p,
-    onSelect: d,
+    onSelect: u,
     children: [(0, r.jsxs)(i.kSQ, {
       children: [t.isForumPost() ? m : null, f]
     }), (0, r.jsx)(i.kSQ, {

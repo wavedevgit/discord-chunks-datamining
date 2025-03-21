@@ -1,4 +1,4 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
   default: () => P
 });
@@ -12,15 +12,15 @@ var l = n(990547),
   c = n(410575),
   u = n(906732),
   d = n(213609),
-  f = n(821564),
-  p = n(453925),
+  p = n(821564),
+  f = n(453925),
   m = n(632304),
   g = n(131951),
-  y = n(358085),
-  O = n(947150),
-  b = n(488021),
-  h = n(822556),
-  v = n(981631),
+  b = n(358085),
+  y = n(947150),
+  O = n(488021),
+  v = n(822556),
+  h = n(981631),
   j = n(388032),
   S = n(395430);
 
@@ -30,47 +30,47 @@ function P(e) {
     renderOutputDevices: n = !1,
     renderInputDevices: P = !1,
     renderInputModes: N = !1,
-    renderInputVolume: E = !1,
+    renderInputVolume: x = !1,
     renderOutputVolume: I = !1,
-    renderDeafen: x = !1,
-    simplified: A = !1,
-    onSelect: Z,
+    renderDeafen: Z = !1,
+    simplified: E = !1,
+    onSelect: w,
     appContext: T,
-    onInteraction: w
+    onInteraction: C
   } = e, {
-    analyticsLocations: C
+    analyticsLocations: A
   } = (0, u.ZP)();
   (0, d.Z)({
     type: l.ImpressionTypes.MENU,
     name: l.ImpressionNames.AUDIO_DEVICE_MENU,
     properties: {
-      location_stack: C
+      location_stack: A
     }
   });
-  let _ = (0, h.Z)(T),
-    D = (0, O.Z)(C, A),
-    L = (0, b.Z)(C, A),
-    k = (0, f.Z)(C),
-    W = (0, p.Z)(C),
-    M = (0, m.Z)(C),
+  let D = (0, v.Z)(T),
+    _ = (0, y.Z)(A, E),
+    W = (0, O.Z)(A, E),
+    k = (0, p.Z)(A),
+    M = (0, f.Z)(A),
+    L = (0, m.Z)(A),
     U = o.Yn.DEFAULT,
     R = g.Z.isSelfDeaf(U),
-    F = (0, i.e7)([g.Z], () => g.Z.getMode()),
-    G = F === v.pM4.VOICE_ACTIVITY ? v.pM4.PUSH_TO_TALK : v.pM4.VOICE_ACTIVITY;
+    V = (0, i.e7)([g.Z], () => g.Z.getMode()),
+    Y = V === h.pM4.VOICE_ACTIVITY ? h.pM4.PUSH_TO_TALK : h.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
-    object: v.qAy.CONTEXT_MENU,
+    object: h.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
-      onSelect: Z,
-      onInteraction: w,
+      onSelect: w,
+      onInteraction: C,
       className: S.menu,
       onClose: t,
       navId: "audio-device-context",
       "aria-label": j.NW.string(j.t.ZR1Ss7),
-      children: [P ? D : null, n ? L : null, !A && N ? (0, r.jsx)(a.kSQ, {
+      children: [P ? _ : null, n ? W : null, !E && N ? (0, r.jsx)(a.kSQ, {
         label: j.NW.string(j.t["pS+K2N"]),
         children: k
       }) : null, (0, r.jsxs)(a.kSQ, {
-        children: [E ? W : null, I ? M : null, A ? (0, r.jsx)(a.Clw, {}) : null, A && x ? (0, r.jsx)(a.S89, {
+        children: [x ? M : null, I ? L : null, E ? (0, r.jsx)(a.Clw, {}) : null, E && Z ? (0, r.jsx)(a.S89, {
           id: "deafen",
           label: j.NW.string(j.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({
@@ -78,14 +78,14 @@ function P(e) {
             location: "AudioDeviceMenu"
           }),
           checked: R
-        }, "self-deafen") : null, A && P && y.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
-          checked: F === v.pM4.PUSH_TO_TALK,
+        }, "self-deafen") : null, E && P && b.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
+          checked: V === h.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: j.NW.string(j.t.Q8gkVF),
-          action: () => s.Z.setMode(G, void 0, void 0, {
-            analyticsLocations: C
+          action: () => s.Z.setMode(Y, void 0, void 0, {
+            analyticsLocations: A
           })
-        }) : null, _]
+        }) : null, D]
       })]
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 70420 **/
+/** Chunk was on 69796 **/
 e.exports = {
   modal: "modal__24654",
   footer: "footer__24654",

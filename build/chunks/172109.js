@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   O: () => s
 }), n(47120);
@@ -12,8 +12,8 @@ function s(e) {
   let {
     id: t,
     isDiscoverable: n
-  } = e, [s, c, d] = (0, i.Wu)([o.Z], () => [o.Z.getApplication(t), o.Z.isInvalidApplication(t), o.Z.getApplicationFetchState(t)], [t]);
+  } = e, [s, c, u] = (0, i.Wu)([o.Z], () => [o.Z.getApplication(t), o.Z.isInvalidApplication(t), o.Z.getApplicationFetchState(t)], [t]);
   return r.useEffect(() => {
-    !1 === n || c || d === o.M.FETCHED || d === o.M.FETCHING || (0, a.gZ)(t)
-  }, [t, d, n, c]), r.useMemo(() => null != s ? e.mergeFromApplicationUpdate(l.ZP.createFromServer(s)) : e, [e, s])
+    !1 === n || c || u === o.M.FETCHED || u === o.M.FETCHING || (0, a.gZ)(t)
+  }, [t, u, n, c]), r.useMemo(() => null != s ? e.mergeFromApplicationUpdate(l.ZP.createFromServer(s)) : e, [e, s])
 }

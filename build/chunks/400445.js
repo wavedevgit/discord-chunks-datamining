@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651),
   i = n(120356),
@@ -9,19 +9,19 @@ var r = n(200651),
   l = n(453473),
   s = n(216789),
   c = n(791914),
-  d = n(648485);
+  u = n(648485);
 
-function u(e) {
+function d(e) {
   let {
     setTab: t,
     closePopout: n,
     badgeState: i
-  } = e, u = (0, s.Us)({
+  } = e, d = (0, s.Us)({
     location: "ForLaterInbox"
   });
   return (0, r.jsxs)("div", {
-    className: a()(d.container, {
-      [d.widerInbox]: u
+    className: a()(u.container, {
+      [u.widerInbox]: d
     }),
     children: [(0, r.jsx)(c.Z, {
       tab: o.X.BOOKMARKS,

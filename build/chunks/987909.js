@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(904245),
   s = n(541716),
   c = n(419922),
-  d = n(665906),
-  u = n(271383),
+  u = n(665906),
+  d = n(271383),
   p = n(496675),
   m = n(594174),
   f = n(626135),
@@ -33,19 +33,19 @@ function y(e) {
     currentUser: t,
     channel: n,
     message: a,
-    buttonLabels: d,
-    stickers: u,
+    buttonLabels: u,
+    stickers: d,
     event: p,
     eventProperties: m
   } = e, [h, _] = i.useState(!1), y = i.useMemo(() => v({
-    assets: u,
-    currentUser: t,
-    message: a
-  }), [u, t, a]), x = i.useMemo(() => v({
     assets: d,
     currentUser: t,
     message: a
-  }), [d, t, a]), E = i.useCallback(async () => {
+  }), [d, t, a]), x = i.useMemo(() => v({
+    assets: u,
+    currentUser: t,
+    message: a
+  }), [u, t, a]), E = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, g.v)({
@@ -143,13 +143,13 @@ function x(e) {
       message: n,
       currentUser: r
     } = e;
-    return (0, a.e7)([p.Z, u.ZP], () => {
+    return (0, a.e7)([p.Z, d.ZP], () => {
       var e;
       let i = t.guild_id;
       if (null == r || null == i) return !1;
-      let a = (0, d.xl)(t),
+      let a = (0, u.xl)(t),
         o = p.Z.can(_.Plq.SEND_MESSAGES, t),
-        l = null === (e = u.ZP.getMember(i, r.id)) || void 0 === e ? void 0 : e.isPending,
+        l = null === (e = d.ZP.getMember(i, r.id)) || void 0 === e ? void 0 : e.isPending,
         s = n.author.bot;
       return o && !a && !l && !s
     })

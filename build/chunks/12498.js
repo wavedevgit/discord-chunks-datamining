@@ -1,46 +1,46 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 62117 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120);
-var i, r, l, o = n(106351),
-  s = n(442837),
-  a = n(570140),
-  u = n(38618);
-let d = new Set,
-  c = {};
+var i, s, l, r = n(106351),
+  a = n(442837),
+  d = n(570140),
+  o = n(38618);
+let h = new Set,
+  u = {};
 
-function h() {
-  d.clear()
+function c() {
+  h.clear()
 }
 
-function f(e) {
-  d.delete(e.guild.id)
+function g(e) {
+  h.delete(e.guild.id)
 }
-class p extends(i = s.ZP.Store) {
+class C extends(i = a.ZP.Store) {
   getChannelStatus(e) {
     var t;
-    if (null != e && null != e.guild_id && e.type === o.d.GUILD_VOICE) return d.has(e.guild_id) || (d.add(e.guild_id), u.Z.getSocket().requestChannelStatuses(e.guild_id)), null === (t = c[e.guild_id]) || void 0 === t ? void 0 : t[e.id]
+    if (null != e && null != e.guild_id && e.type === r.d.GUILD_VOICE) return h.has(e.guild_id) || (h.add(e.guild_id), o.Z.getSocket().requestChannelStatuses(e.guild_id)), null === (t = u[e.guild_id]) || void 0 === t ? void 0 : t[e.id]
   }
 }
-l = "ChannelStatusStore", (r = "displayName") in p ? Object.defineProperty(p, r, {
+l = "ChannelStatusStore", (s = "displayName") in C ? Object.defineProperty(C, s, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : p[r] = l;
-let g = new p(a.Z, {
-  GUILD_CREATE: f,
-  GUILD_DELETE: f,
-  CONNECTION_RESUMED: h,
-  CONNECTION_OPEN: h,
+}) : C[s] = l;
+let p = new C(d.Z, {
+  GUILD_CREATE: g,
+  GUILD_DELETE: g,
+  CONNECTION_RESUMED: c,
+  CONNECTION_OPEN: c,
   VOICE_CHANNEL_STATUS_UPDATE: function(e) {
-    null == c[e.guildId] && (c[e.guildId] = {}), c[e.guildId][e.id] = e.status
+    null == u[e.guildId] && (u[e.guildId] = {}), u[e.guildId][e.id] = e.status
   },
   CHANNEL_STATUSES: function(e) {
     for (let {
         id: t,
         status: n
       }
-      of(c[e.guildId] = {}, e.channels)) c[e.guildId][t] = n
+      of(u[e.guildId] = {}, e.channels)) u[e.guildId][t] = n
   }
 })

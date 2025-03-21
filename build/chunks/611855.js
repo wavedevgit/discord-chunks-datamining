@@ -1,14 +1,14 @@
-/** Chunk was on 99393 **/
+/** Chunk was on 37447 **/
 n.d(t, {
   Z: () => d
 });
 var r = n(200651);
 n(192379);
 var s = n(120356),
-  i = n.n(s),
-  o = n(780384),
-  l = n(481060),
-  a = n(410030),
+  o = n.n(s),
+  i = n(780384),
+  a = n(481060),
+  l = n(410030),
   c = n(388032),
   u = n(883211);
 let d = function(e) {
@@ -16,11 +16,11 @@ let d = function(e) {
     className: t,
     color: n = "header-primary",
     textOpacity: s = .9
-  } = e, d = (0, a.Fg)(), m = (0, o.wj)(d);
-  return (0, r.jsxs)(l.Text, {
+  } = e, d = (0, l.Fg)(), m = (0, i.wj)(d);
+  return (0, r.jsxs)(a.Text, {
     variant: "text-xxs/medium",
     color: n,
-    className: i()(u.promotedTag, t),
+    className: o()(u.promotedTag, t),
     children: [(0, r.jsx)("span", {
       className: u.promotedTagBackground,
       style: {

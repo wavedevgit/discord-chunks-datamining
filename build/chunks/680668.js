@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(447543),
   s = n(100527),
   c = n(906732),
-  d = n(576306),
-  u = n(857395),
+  u = n(576306),
+  d = n(857395),
   p = n(358555),
   m = n(955415),
   f = n(131704),
@@ -23,9 +23,9 @@ var r = n(200651),
   x = n(388032),
   E = n(651873);
 
-function j(e) {
-  var t, j;
-  let O, N, C, {
+function O(e) {
+  var t, O;
+  let N, j, C, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -42,12 +42,12 @@ function j(e) {
     L = P.state === y.r2o.ACCEPTING,
     M = null != k ? (0, f.jD)(k) : null,
     W = null != T,
-    F = null != M,
-    U = null != M && M.isGuildVocal(),
+    U = null != M,
+    F = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
     G = (0, h.yE)(null !== (t = P.flags) && void 0 !== t ? t : 0, a.$.IS_GUEST_INVITE),
-    H = null !== (j = null == T ? void 0 : T.hasFeature(y.oNc.HUB)) && void 0 !== j && j,
-    V = (0, d.h)(),
+    H = null !== (O = null == T ? void 0 : T.hasFeature(y.oNc.HUB)) && void 0 !== O && O,
+    V = (0, u.h)(),
     z = null == T ? void 0 : T.id,
     {
       analyticsLocations: K
@@ -69,16 +69,16 @@ function j(e) {
     T.premiumTier = e
   }
   let $ = (0, b.e)({
-    isVoiceChannel: U,
+    isVoiceChannel: F,
     isOwnInvite: Z,
     isGuest: G,
     isHubGuild: H,
     isStage: B,
     isStream: !1
   });
-  return N = (0, r.jsxs)("span", {
+  return j = (0, r.jsxs)("span", {
     className: E.infoTitle,
-    children: [(0, r.jsx)(u.Z, {
+    children: [(0, r.jsx)(d.Z, {
       guildId: T.id,
       name: T.name,
       shouldShow: Y,
@@ -102,9 +102,9 @@ function j(e) {
       color: "currentColor",
       className: E.infoIcon
     })
-  })), U ? (N = (0, r.jsx)(m.Z.Channel, {
+  })), F ? (j = (0, r.jsx)(m.Z.Channel, {
     channel: M
-  }), O = (0, r.jsxs)("span", {
+  }), N = (0, r.jsxs)("span", {
     className: E.infoTitle,
     children: [x.NW.format(x.t["2wimj4"], {
       guildName: T.name
@@ -115,10 +115,10 @@ function j(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != D && D > 0 ? O = (0, r.jsx)(m.Z.Data, {
+  })) : null != R && R >= 5 || null != D && D > 0 ? N = (0, r.jsx)(m.Z.Data, {
     members: R,
     membersOnline: D
-  }) : F && (O = (0, r.jsx)(m.Z.Channel, {
+  }) : U && (N = (0, r.jsx)(m.Z.Channel, {
     channel: M,
     guild: T
   })), (0, r.jsxs)(m.Z, {
@@ -133,15 +133,15 @@ function j(e) {
         children: [(0, r.jsx)(m.Z.Icon, {
           guild: T
         }), (0, r.jsx)(m.Z.Info, {
-          title: N,
+          title: j,
           onClick: Q,
-          children: O
+          children: N
         })]
       }), (0, r.jsx)(m.Z.Button, {
         onClick: J,
         submitting: L,
         color: m.Z.Button.Colors.GREEN,
-        children: U ? B ? x.NW.string(x.t["7vb2cX"]) : x.NW.string(x.t.gpqgam) : W ? x.NW.string(x.t.cEnaW1) : x.NW.string(x.t.XpeFYm)
+        children: F ? B ? x.NW.string(x.t["7vb2cX"]) : x.NW.string(x.t.gpqgam) : W ? x.NW.string(x.t.cEnaW1) : x.NW.string(x.t.XpeFYm)
       })]
     }), T.hasFeature(y.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {

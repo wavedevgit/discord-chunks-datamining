@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => f
+  Z: () => b
 });
 var n = r(200651),
   l = r(192379),
@@ -12,9 +12,9 @@ var n = r(200651),
   u = r(985184),
   d = r(870456),
   p = r(401825),
-  b = r(509045);
+  f = r(509045);
 
-function f(e) {
+function b(e) {
   let {
     content: t,
     className: r
@@ -27,10 +27,10 @@ function f(e) {
         renderOptions: d.u
       }), a.Z.parse(e, !0, r))
     }, [e, t])
-  }(t), f = (0, u.Gt)();
+  }(t), b = (0, u.Gt)();
   return (0, n.jsx)("div", {
-    className: o()(r, b.markup, p.markdownContainer, {
-      [p.containerSizedText]: f
+    className: o()(r, f.markup, p.markdownContainer, {
+      [p.containerSizedText]: b
     }),
     children: i
   })

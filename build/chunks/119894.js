@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 45934 **/
 e.exports = {
   closeButton: "closeButton__47998",
   art: "art__47998",

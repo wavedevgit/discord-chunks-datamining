@@ -8,9 +8,9 @@ var i = t(481060),
   l = t(630388),
   s = t(981631),
   o = t(388032),
-  a = t(358882);
+  u = t(358882);
 
-function u(e) {
+function a(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -54,13 +54,13 @@ function p(e) {
   return (0, r.jsx)(i.X6q, {
     variant: "heading-lg/semibold",
     color: t,
-    className: a.heading,
+    className: u.heading,
     children: p ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.QTo, c(u({}, d), {
+      children: [(0, r.jsx)(i.QTo, c(a({}, d), {
         color: "currentColor"
       })), o.NW.string(o.t.XIhSoq)]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.tBG, c(u({}, d), {
+      children: [(0, r.jsx)(i.tBG, c(a({}, d), {
         color: "currentColor"
       })), o.NW.string(o.t.dxfZpq)]
     })

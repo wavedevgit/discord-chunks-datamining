@@ -1,6 +1,6 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
-  Z: () => y
+  Z: () => b
 }), n(411104), n(47120);
 var r, l, i = n(200651),
   o = n(192379),
@@ -29,8 +29,8 @@ function d(e) {
   }
   return e
 }
-var f = ((r = f || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
-  p = ((l = p || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
+var p = ((r = p || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
+  f = ((l = f || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
 let m = e => (t, n) => null == n ? "" : c.NW.format(e(), d({
     time: t
   }, n)),
@@ -161,7 +161,7 @@ let m = e => (t, n) => null == n ? "" : c.NW.format(e(), d({
     }
   };
 
-function y(e) {
+function b(e) {
   var t, n;
   return n = class extends(t = o.PureComponent) {
     componentDidMount() {
@@ -235,15 +235,15 @@ function y(e) {
         {
           time: u
         } = this.state,
-        f = this.getType();
-      if (null == f) return null;
-      let p = this.getTimeUnit(u, l, f),
-        m = g[l][f];
+        p = this.getType();
+      if (null == p) return null;
+      let f = this.getTimeUnit(u, l, p),
+        m = g[l][p];
       if (null == m) return null;
-      let y = m[p],
-        O = Math.floor((0, a.A3)(u, p));
+      let b = m[f],
+        y = Math.floor((0, a.A3)(u, f));
       return (0, i.jsx)(e, (t = d({}, c), n = n = {
-        children: null == y ? void 0 : y(O, o, s)
+        children: null == b ? void 0 : b(y, o, s)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -264,5 +264,5 @@ function y(e) {
         })
       })
     }
-  }, u(n, "Locations", f), u(n, "Types", p), n
+  }, u(n, "Locations", p), u(n, "Types", f), n
 }

@@ -1,13 +1,13 @@
-/** Chunk was on 99393 **/
+/** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => M
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   s = n(192379),
-  i = n(120356),
-  o = n.n(i),
-  l = n(642128),
-  a = n(722770),
+  o = n(120356),
+  i = n.n(o),
+  a = n(642128),
+  l = n(722770),
   c = n(442837),
   u = n(846519),
   d = n(481060),
@@ -18,20 +18,20 @@ var r = n(200651),
   h = n(617136),
   f = n(113434),
   j = n(497505),
-  v = n(918701),
+  b = n(918701),
   C = n(475595),
-  b = n(566078),
+  v = n(566078),
   N = n(685613),
-  E = n(611855),
-  T = n(644646),
-  y = n(670638),
-  S = n(87894),
-  O = n(46140),
-  q = n(231338),
+  y = n(611855),
+  O = n(644646),
+  T = n(670638),
+  E = n(87894),
+  q = n(46140),
+  S = n(231338),
   P = n(388032),
   w = n(537953);
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function A(e) {
   return e
 }
 
-function R(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,29 +62,29 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = (0, l.animated)(d.CJ0),
-  Z = (0, l.animated)(x.Z),
-  I = e => {
+let I = (0, a.animated)(d.CJ0),
+  D = (0, a.animated)(x.Z),
+  M = e => {
     var {
       quest: t,
       location: n,
-      questContentPosition: i
-    } = e, o = function(e, t) {
+      questContentPosition: o
+    } = e, i = function(e, t) {
       if (null == e) return {};
       var n, r, s = function(e, t) {
         if (null == e) return {};
         var n, r, s = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
         return s
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
       }
       return s
     }(e, ["quest", "location", "questContentPosition"]);
-    let [l, a] = s.useState(!1), c = s.useRef(new u.V7), m = (0, h.O5)();
+    let [a, l] = s.useState(!1), c = s.useRef(new u.V7), m = (0, h.O5)();
     s.useEffect(() => {
       let e = c.current;
       return function() {
@@ -96,15 +96,15 @@ let _ = (0, l.animated)(d.CJ0),
         questId: t.id,
         questContent: n,
         questContentCTA: h.jZ.COPY_QUEST_URL,
-        questContentPosition: i
-      }), (0, g.JG)((0, v.Rs)(t.id)), a(!0), c.current.start(1e3, () => a(!1))
+        questContentPosition: o
+      }), (0, g.JG)((0, b.Rs)(t.id)), l(!0), c.current.start(1e3, () => l(!1))
     };
     return (0, r.jsx)(d.ua7, {
-      forceOpen: l,
-      shouldShow: l,
+      forceOpen: a,
+      shouldShow: a,
       color: d.ua7.Colors.GREEN,
       text: P.NW.string(P.t.MSaeTU),
-      children: () => (0, r.jsx)(d.zxk, R(A({}, o), {
+      children: () => (0, r.jsx)(d.zxk, _(R({}, i), {
         className: w.shareButton,
         color: d.zxk.Colors.PRIMARY,
         size: d.zxk.Sizes.SMALL,
@@ -113,68 +113,68 @@ let _ = (0, l.animated)(d.CJ0),
       }))
     })
   },
-  M = e => {
+  A = e => {
     var t, n;
     let {
-      isFocused: i,
+      isFocused: o,
       isQuestExpired: u,
       quest: x,
       location: g,
-      size: v,
-      expansionSpring: M,
-      isAnimating: L,
-      isExpanded: D,
+      size: b,
+      expansionSpring: A,
+      isAnimating: W,
+      isExpanded: Z,
       isInConcurrentQuestExperiment: k,
-      contentPosition: W,
-      toggleExpanded: U
+      contentPosition: L,
+      toggleExpanded: B
     } = e, {
-      ref: Q,
-      height: B
+      ref: U,
+      height: Q
     } = (0, m.Z)(), {
-      ref: z,
-      width: F,
+      ref: F,
+      width: z,
       scrollWidth: G
-    } = (0, m.Z)(), H = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), V = s.useMemo(() => (0, C.fh)(x, C.eC.HERO), [x]), X = s.useRef(null), Y = (0, S.uq)(g), K = g === j.jn.QUESTS_EMBED, J = (0, f.t5)(x, O.dr.QUESTS_CARD, g), $ = (null === (t = x.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, ee = (0, h.O5)(), et = (0, f.B6)(x.config.expiresAt, {
+    } = (0, m.Z)(), H = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), X = s.useMemo(() => (0, C.fh)(x, C.eC.HERO), [x]), V = s.useRef(null), Y = (0, E.uq)(g), K = g === j.jn.QUESTS_EMBED, J = (0, f.t5)(x, q.dr.QUESTS_CARD, g), $ = (null === (t = x.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, ee = (0, h.O5)(), et = (0, f.B6)(x.config.expiresAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), en = (0, f.B6)(b.r.build(x.config).rewardsExpireAt, {
+    }), en = (0, f.B6)(v.r.build(x.config).rewardsExpireAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
     }), er = s.useMemo(() => null != x.config.cosponsorMetadata, [x]), es = e => {
-      e.stopPropagation(), e.currentTarget.blur(), U(), ee({
+      e.stopPropagation(), e.currentTarget.blur(), B(), ee({
         questId: x.id,
         questContent: g,
-        questContentCTA: D ? h.jZ.COLLAPSE : h.jZ.EXPAND,
-        questContentPosition: W
+        questContentCTA: Z ? h.jZ.COLLAPSE : h.jZ.EXPAND,
+        questContentPosition: L
       })
     };
     s.useEffect(() => {
-      V.isAnimated && null != X.current && (i ? X.current.play() : i || (X.current.pause(), X.current.currentTime = 0))
-    }, [i, V]);
-    let ei = (0, r.jsx)(N.ZP, {
+      X.isAnimated && null != V.current && (o ? V.current.play() : o || (V.current.pause(), V.current.currentTime = 0))
+    }, [o, X]);
+    let eo = (0, r.jsx)(N.ZP, {
       className: w.partnerBranding,
       logotypeClassName: er ? w.partnerBrandingLogotypes : void 0,
       gameTileSize: N.fF.MEDIUM,
       quest: x,
       separatorSpacing: N.US.MEDIUM,
-      theme: q.BR.DARK,
+      theme: S.BR.DARK,
       withGameTile: !K || null == x.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
-      className: o()(w.outerContainer, {
+      className: i()(w.outerContainer, {
         [w.outerContainerGiftInventory]: Y,
         [w.outerContainerEmbed]: K,
-        [w.outerContainerXs]: "xs" === v
+        [w.outerContainerXs]: "xs" === b
       }),
       "aria-label": P.NW.string(P.t.dcl9MT),
       style: {
-        height: Y ? B : void 0
+        height: Y ? Q : void 0
       },
-      children: [(0, r.jsx)(Z, {
+      children: [(0, r.jsx)(D, {
         style: {
-          opacity: M.to({
+          opacity: A.to({
             range: [0, 1],
             output: [.25, 1]
           })
@@ -185,52 +185,52 @@ let _ = (0, l.animated)(d.CJ0),
         playsInline: !0,
         className: w.questSplash,
         controls: !1,
-        poster: V.url,
-        ref: X,
-        children: !H && V.isAnimated && (0, r.jsx)("source", {
-          src: V.url,
-          type: null !== (n = V.mimetype) && void 0 !== n ? n : void 0
+        poster: X.url,
+        ref: V,
+        children: !H && X.isAnimated && (0, r.jsx)("source", {
+          src: X.url,
+          type: null !== (n = X.mimetype) && void 0 !== n ? n : void 0
         })
       }), (0, r.jsxs)("div", {
         className: w.header,
-        "aria-expanded": D,
-        children: [(0, r.jsxs)(l.animated.div, {
-          className: o()(w.headerContent, {
+        "aria-expanded": Z,
+        children: [(0, r.jsxs)(a.animated.div, {
+          className: i()(w.headerContent, {
             [w.headerContentEmbed]: K
           }),
           style: {
-            y: Y ? M.to({
+            y: Y ? A.to({
               range: [0, 1],
-              output: [S.DJ, 0]
+              output: [E.DJ, 0]
             }) : void 0
           },
-          children: [Y && (0, r.jsx)(l.animated.div, {
+          children: [Y && (0, r.jsx)(a.animated.div, {
             className: w.headerCollapsedContent,
             style: {
-              opacity: M.to({
+              opacity: A.to({
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: L || !D ? "inherit" : "hidden"
+              visibility: W || !Z ? "inherit" : "hidden"
             },
-            "aria-hidden": !L && D,
+            "aria-hidden": !W && Z,
             children: (0, r.jsxs)(d.kL8, {
               "aria-label": P.NW.string(P.t.dcl9MT),
               onClick: es,
               className: w.headerCollapsedClickableContainer,
               children: [(0, r.jsx)("div", {
                 className: w.headerCollapsedContentRewardWrapper,
-                children: (0, r.jsx)(T.Z, {
+                children: (0, r.jsx)(O.Z, {
                   quest: x,
                   questContent: g,
                   className: w.headerCollapsedRewardTile,
-                  location: O.dr.QUESTS_CARD
+                  location: q.dr.QUESTS_CARD
                 })
               }), (0, r.jsxs)("div", {
                 className: w.headerCollapsedContentCopyWrapper,
                 children: [(0, r.jsxs)("div", {
                   className: w.headerCollapsedContentCopyLogos,
-                  children: [ei, (0, r.jsx)(E.Z, {
+                  children: [eo, (0, r.jsx)(y.Z, {
                     color: "always-white"
                   })]
                 }), (0, r.jsx)(d.Text, {
@@ -239,37 +239,37 @@ let _ = (0, l.animated)(d.CJ0),
                 })]
               })]
             })
-          }), (0, r.jsxs)(l.animated.div, {
+          }), (0, r.jsxs)(a.animated.div, {
             ref: e => {
-              Q.current = e
+              U.current = e
             },
-            className: o()(w.headerExpandedContent, {
+            className: i()(w.headerExpandedContent, {
               [w.outerContainerGiftInventory]: Y,
               [w.outerContainerEmbed]: K
             }),
             style: {
-              opacity: M.to({
+              opacity: A.to({
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: L || D ? "inherit" : "hidden"
+              visibility: W || Z ? "inherit" : "hidden"
             },
-            "aria-hidden": !L && !D,
+            "aria-hidden": !W && !Z,
             children: [(0, r.jsxs)("div", {
               className: w.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
                 className: w.iconLogotypeContainer,
-                children: [ei, K ? null : (0, r.jsx)(E.Z, {
+                children: [eo, K ? null : (0, r.jsx)(y.Z, {
                   color: "always-white"
                 })]
               }), (0, r.jsxs)("div", {
                 className: w.questInfo,
                 children: [(0, r.jsx)(d.ua7, {
                   text: x.config.messages.questName,
-                  shouldShow: null != F && null != G && F < G,
-                  children: e => (0, r.jsx)(d.X6q, R(A({
-                    ref: z,
-                    variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
+                  shouldShow: null != z && null != G && z < G,
+                  children: e => (0, r.jsx)(d.X6q, _(R({
+                    ref: F,
+                    variant: "lg" === b ? "heading-xxl/bold" : "sm" === b ? "heading-xl/bold" : "heading-lg/bold",
                     className: w.heading,
                     color: "always-white"
                   }, e), {
@@ -289,54 +289,54 @@ let _ = (0, l.animated)(d.CJ0),
                   })
                 })]
               })]
-            }), !u && Y && (0, r.jsx)(I, {
+            }), !u && Y && (0, r.jsx)(M, {
               quest: x,
               location: g,
-              questContentPosition: W
+              questContentPosition: L
             })]
           })]
-        }), (0, r.jsxs)(l.animated.div, {
+        }), (0, r.jsxs)(a.animated.div, {
           className: w.iconsContainer,
           style: {
-            top: Y ? M.to({
+            top: Y ? A.to({
               range: [0, 1],
-              output: [S.DJ / 2 - S.Z$ / 2, S.jc]
-            }) : S.jc
+              output: [E.DJ / 2 - E.Z$ / 2, E.jc]
+            }) : E.jc
           },
-          children: [(0, r.jsx)(y.r, {
+          children: [(0, r.jsx)(T.r, {
             questContent: g,
             quest: x,
-            questContentPosition: W,
+            questContentPosition: L,
             shouldShowDisclosure: !0,
             hideLearnMore: Y,
             showShareLink: !u && K,
-            children: e => (0, r.jsx)(l.animated.div, {
+            children: e => (0, r.jsx)(a.animated.div, {
               style: {
-                opacity: M,
-                visibility: L || D ? "inherit" : "hidden"
+                opacity: A,
+                visibility: W || Z ? "inherit" : "hidden"
               },
-              "aria-hidden": !L && !D,
-              children: (0, r.jsx)(d.P3F, R(A({}, e), {
+              "aria-hidden": !W && !Z,
+              children: (0, r.jsx)(d.P3F, _(R({}, e), {
                 className: w.iconWrapper,
                 "aria-label": P.NW.string(P.t.DEoVWV),
                 children: (0, r.jsx)(d.xhG, {
                   size: "md",
-                  color: a.Z.WHITE
+                  color: l.Z.WHITE
                 })
               }))
             })
-          }), k && !(0, S.W_)(g) && (0, r.jsx)(d.P3F, {
+          }), k && !(0, E.W_)(g) && (0, r.jsx)(d.P3F, {
             onClick: es,
             className: w.iconWrapper,
-            "aria-label": D ? P.NW.string(P.t.iTcumZ) : P.NW.string(P.t.dcl9MT),
-            children: (0, r.jsx)(_, {
+            "aria-label": Z ? P.NW.string(P.t.iTcumZ) : P.NW.string(P.t.dcl9MT),
+            children: (0, r.jsx)(I, {
               style: {
-                rotate: M.to({
+                rotate: A.to({
                   range: [0, 1],
                   output: [0, 180]
                 })
               },
-              color: a.Z.WHITE
+              color: l.Z.WHITE
             })
           })]
         })]

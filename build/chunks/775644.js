@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => c
 });
@@ -14,9 +14,9 @@ let s = Object.freeze({}),
         code: t,
         options: n = s,
         onRedeemed: c,
-        onError: d
+        onError: u
       } = e, {
-        channelId: u = null,
+        channelId: d = null,
         paymentSource: p = null
       } = n;
       i.Z.dispatch({
@@ -27,7 +27,7 @@ let s = Object.freeze({}),
         let e = await r.tn.post({
           url: l.ANM.GIFT_CODE_REDEEM(t),
           body: {
-            channel_id: u,
+            channel_id: d,
             payment_source_id: null == p ? void 0 : p.id,
             gateway_checkout_context: await (0, o.cn)(p)
           },
@@ -48,7 +48,7 @@ let s = Object.freeze({}),
           type: "GIFT_CODE_REDEEM_FAILURE",
           code: t,
           error: e
-        }), null == d || d(e), e
+        }), null == u || u(e), e
       }
     }
   }

@@ -3,41 +3,41 @@ r.d(t, {
   A: () => s,
   default: () => c
 }), r(47120);
-var A, n = r(200651),
-  o = r(192379),
-  a = r(481060),
+var n, A = r(200651),
+  a = r(192379),
+  o = r(481060),
   l = r(388032),
   i = r(267115),
-  s = ((A = {}).DANGER = "danger", A.WARNING = "warning", A);
+  s = ((n = {}).DANGER = "danger", n.WARNING = "warning", n);
 
 function c(e) {
   let {
     transitionState: t,
     onClose: r,
-    title: A,
+    title: n,
     body: s,
     cta: c,
     closeLabel: d,
     onConfirm: u,
-    iconVariant: f = "warning"
-  } = e, [g, p] = o.useState(!1), m = async () => {
+    iconVariant: g = "warning"
+  } = e, [f, p] = a.useState(!1), h = async () => {
     p(!0);
     try {
       await u(), r()
     } finally {
       p(!1)
     }
-  }, h = null != A ? A : l.NW.string(l.t.D94rwc);
-  return (0, n.jsxs)(a.Y0X, {
+  }, m = null != n ? n : l.NW.string(l.t.D94rwc);
+  return (0, A.jsxs)(o.Y0X, {
     className: i.__invalid_container,
-    size: a.CgR.DYNAMIC,
+    size: o.CgR.DYNAMIC,
     transitionState: t,
-    "aria-label": h,
-    children: [(0, n.jsxs)(a.hzk, {
+    "aria-label": m,
+    children: [(0, A.jsxs)(o.hzk, {
       className: i.content,
-      children: [(0, n.jsxs)("div", {
+      children: [(0, A.jsxs)("div", {
         className: i.header,
-        children: [(0, n.jsx)(a.P4T, {
+        children: [(0, A.jsx)(o.P4T, {
           size: "custom",
           color: "currentColor",
           width: 20,
@@ -49,35 +49,35 @@ function c(e) {
               case "warning":
                 return i.warningIcon
             }
-          }(f)
-        }), (0, n.jsx)(a.LZC, {
+          }(g)
+        }), (0, A.jsx)(o.LZC, {
           size: 8,
           horizontal: !0
-        }), (0, n.jsx)(a.X6q, {
+        }), (0, A.jsx)(o.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: h
+          children: m
         })]
-      }), (0, n.jsx)(a.LZC, {
+      }), (0, A.jsx)(o.LZC, {
         size: 12
-      }), (0, n.jsx)(a.Text, {
+      }), (0, A.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         className: i.__invalid_body,
         children: s
       })]
-    }), (0, n.jsxs)(a.mzw, {
-      children: [(0, n.jsx)(a.zxk, {
-        color: a.zxk.Colors.BRAND,
-        onClick: m,
-        submitting: g,
+    }), (0, A.jsxs)(o.mzw, {
+      children: [(0, A.jsx)(o.zxk, {
+        color: o.zxk.Colors.BRAND,
+        onClick: h,
+        submitting: f,
         children: c
-      }), (0, n.jsx)(a.LZC, {
+      }), (0, A.jsx)(o.LZC, {
         size: 12,
         horizontal: !0
-      }), null != d && (0, n.jsx)(a.zxk, {
-        color: a.zxk.Colors.PRIMARY,
-        look: a.zxk.Looks.OUTLINED,
+      }), null != d && (0, A.jsx)(o.zxk, {
+        color: o.zxk.Colors.PRIMARY,
+        look: o.zxk.Looks.OUTLINED,
         onClick: r,
         children: d
       })]

@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  TZ: () => d,
+  TZ: () => u,
   y6: () => c
 });
 var r = n(904245),
@@ -15,7 +15,7 @@ let c = e => {
       r = ((null != n ? o.default.extractTimestamp(n) : 0) + o.default.extractTimestamp(e)) % l.m.length;
     return l.m[r]
   },
-  d = (e, t, n) => {
+  u = (e, t, n) => {
     var o;
     r.Z.sendGreetMessage(e.id, n, r.Z.getSendMessageOptionsForReply({
       channel: e,

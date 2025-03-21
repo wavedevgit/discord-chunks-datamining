@@ -2,10 +2,10 @@
 r.d(t, {
   Z: () => d
 });
-var A = r(200651),
-  n = r(192379),
-  o = r(120356),
-  a = r.n(o),
+var n = r(200651),
+  A = r(192379),
+  a = r(120356),
+  o = r.n(a),
   l = r(481060),
   i = r(741914),
   s = r(508852),
@@ -15,22 +15,22 @@ function d(e) {
   let {
     color: t,
     className: r,
-    variant: o,
+    variant: a,
     text: d,
     lineClamp: u
-  } = e, f = (0, l.xSt)(), g = n.useMemo(() => null == d ? null : (0, i.Z)(d, !0, {
+  } = e, g = (0, l.xSt)(), f = A.useMemo(() => null == d ? null : (0, i.Z)(d, !0, {
     allowHeading: null == u,
     allowList: null == u,
-    initialHeaderLevel: f
-  }), [d, u, f]);
-  return (0, A.jsx)(l.Text, {
-    className: a()(r, c.markup, {
+    initialHeaderLevel: g
+  }), [d, u, g]);
+  return (0, n.jsx)(l.Text, {
+    className: o()(r, c.markup, {
       [s.lineClamp2Plus]: null != u && u > 1,
       [s.lineClamp1]: 1 === u
     }),
     color: t,
-    variant: o,
+    variant: a,
     lineClamp: u,
-    children: g
+    children: f
   })
 }

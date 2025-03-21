@@ -8,8 +8,8 @@ var i = t(557533),
   l = t.n(i),
   s = t(928873),
   o = t(790472),
-  a = t(777207),
-  u = t(257047),
+  u = t(777207),
+  a = t(257047),
   c = t(899802);
 
 function d(e) {
@@ -24,13 +24,13 @@ function d(e) {
   } = e;
   return (0, r.jsx)(s.tE, {
     children: (0, r.jsxs)("div", {
-      className: l()(u.wrapper, c.hoverCard),
+      className: l()(a.wrapper, c.hoverCard),
       tabIndex: 0,
       onClick: () => {
         null != d ? d() : null != p && p()
       },
       children: [(0, r.jsx)("div", {
-        className: u.cardHeaderImg,
+        className: a.cardHeaderImg,
         style: null != i ? {
           backgroundImage: null != i ? "url(".concat(i.toString(), ")") : void 0
         } : void 0,
@@ -41,20 +41,20 @@ function d(e) {
           width: 80
         })
       }), (0, r.jsxs)("div", {
-        className: u.details,
-        children: [(0, r.jsx)(a.x, {
+        className: a.details,
+        children: [(0, r.jsx)(u.x, {
           color: "header-primary",
           variant: "text-md/semibold",
           children: n
-        }), null != t && (0, r.jsx)(a.x, {
-          className: u.description,
+        }), null != t && (0, r.jsx)(u.x, {
+          className: a.description,
           color: "text-muted",
           variant: "text-sm/normal",
           children: t
         })]
       }), null != m && (0, r.jsxs)("div", {
-        className: u.footer,
-        children: [(0, r.jsx)(a.x, {
+        className: a.footer,
+        children: [(0, r.jsx)(u.x, {
           color: "interactive-normal",
           variant: "text-sm/normal",
           children: b

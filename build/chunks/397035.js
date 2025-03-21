@@ -15,24 +15,24 @@ function d(e) {
   var t, r;
   let d, {
       entry: p,
-      baseEntryData: b
+      baseEntryData: f
     } = e,
-    f = (0, l.q)(p.extra.application_id),
-    O = null == f ? void 0 : f.getIconURL(128),
+    b = (0, l.q)(p.extra.application_id),
+    O = null == b ? void 0 : b.getIconURL(128),
     y = (0, i.xF)(p.extra.application_id, p.extra.media_assets_large_image, [s.Si.LARGE, s.Si.LARGE]),
     m = p.extra.media_title,
     j = p.extra.media_subtitle,
     g = (0, a.Jg)(p) ? u.t["LH+Z39"] : u.t.YuKgmp,
-    v = {
+    h = {
       type: c.kG.CRUNCHYROLL
     },
-    h = n.useMemo(() => {
+    v = n.useMemo(() => {
       if (null == p.extra.url) return;
       let e = o.Z.safeParseWithQuery(p.extra.url);
       if (null != e && null != e.protocol && null != e.hostname) return e
     }, [p.extra.url]);
-  return null != h && (d = {
-    href: o.Z.format(h),
+  return null != v && (d = {
+    href: o.Z.format(v),
     ariaDescription: u.NW.formatToPlainString(u.t.aFFQ3t, {
       title: m
     })
@@ -53,14 +53,14 @@ function d(e) {
       })
     }
     return e
-  }({}, b), r = r = {
+  }({}, f), r = r = {
     thumbnailUrl: null != y ? y : O,
     title: m,
     titleClickable: d,
     thumbnailClickable: d,
     subtitle: j,
     userDescription: g,
-    providerIconProps: v
+    providerIconProps: h
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

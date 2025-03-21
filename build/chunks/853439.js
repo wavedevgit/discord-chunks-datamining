@@ -1,44 +1,44 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 31942 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
-var i, r, l, o = n(442837),
-  s = n(570140),
-  a = n(131704),
-  u = n(592125);
-let d = {},
-  c = {};
-class h extends(l = o.ZP.Store) {
+var r, i, l, o = n(442837),
+  a = n(570140),
+  u = n(131704),
+  c = n(592125);
+let s = {},
+  d = {};
+class f extends(l = o.ZP.Store) {
   getTemplates(e) {
-    return d[e]
+    return s[e]
   }
   getTemplateWithCategory(e, t) {
     var n;
-    return null === (n = d[e]) || void 0 === n ? void 0 : n.find(e => e.category === t)
+    return null === (n = s[e]) || void 0 === n ? void 0 : n.find(e => e.category === t)
   }
   getChannel(e) {
-    return c[e]
+    return d[e]
   }
 }
-r = "GuildRoleSubscriptionTierTemplatesStore", (i = "displayName") in h ? Object.defineProperty(h, i, {
-  value: r,
+i = "GuildRoleSubscriptionTierTemplatesStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
+  value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : h[i] = r;
-let f = new h(s.Z, {
+}) : f[r] = i;
+let p = new f(a.Z, {
   GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS: function(e) {
     let {
       selectedTemplate: t,
       guildId: n
-    } = e, i = Object.values(u.Z.getMutableGuildChannelsForGuild(n));
+    } = e, r = Object.values(c.Z.getMutableGuildChannelsForGuild(n));
     t.listings.forEach(e => {
       e.channels.forEach(e => {
-        let t = i.find(t => t.name === e.name);
+        let t = r.find(t => t.name === e.name);
         if (void 0 !== t) e.id = t.id;
-        else if (!(e.id in c)) {
-          let t = (0, a.kt)(e);
-          c[e.id] = t
+        else if (!(e.id in d)) {
+          let t = (0, u.kt)(e);
+          d[e.id] = t
         }
       })
     })
@@ -48,6 +48,6 @@ let f = new h(s.Z, {
       templates: t,
       guildId: n
     } = e;
-    d[n] = t
+    s[n] = t
   }
 })

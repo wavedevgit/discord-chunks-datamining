@@ -4,9 +4,9 @@ n.d(t, {
   i: () => v
 }), n(301563), n(47120), n(266796);
 var r = n(200651),
-  i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  a = n(192379),
+  i = n(120356),
+  l = n.n(i),
   o = n(477660),
   s = n.n(o),
   c = n(481060),
@@ -25,7 +25,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,12 +51,12 @@ function f(e, t) {
   }), e
 }
 let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-  v = f(_({}, u.Z.rules), {
-    heading: f(_({}, u.Z.rules.heading), {
+  v = _(f({}, u.Z.rules), {
+    heading: _(f({}, u.Z.rules.heading), {
       react(e, t, n) {
-        let i = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
+        let a = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
         return (0, r.jsx)(d.Z, {
-          tag: i,
+          tag: a,
           children: t(e.content, n)
         }, n.key)
       }
@@ -89,7 +89,7 @@ let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
   }),
   x = s().parserFor(v),
   C = s().reactFor(s().ruleOutput(v, "react"));
-class j extends i.PureComponent {
+class j extends a.PureComponent {
   componentDidMount() {
     if (null != this._container) {
       let {
@@ -105,14 +105,14 @@ class j extends i.PureComponent {
       applicationId: e,
       description: t,
       blurb: n,
-      className: i,
-      assets: a
+      className: a,
+      assets: i
     } = this.props, {
       collapsed: o,
       collapsable: s
     } = this.state;
     return (0, r.jsxs)("div", {
-      className: i,
+      className: a,
       children: [(0, r.jsx)("div", {
         className: l()({
           [h.collapsed]: s && o
@@ -127,7 +127,7 @@ class j extends i.PureComponent {
             parser: x,
             output: C,
             state: {
-              assets: a,
+              assets: i,
               applicationId: e
             },
             children: t

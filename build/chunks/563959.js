@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   P: () => _,
   e: () => b
@@ -10,8 +10,8 @@ var r = n(200651),
   l = n(942951),
   s = n(834129),
   c = n(184301),
-  d = n(347475),
-  u = n(768581),
+  u = n(347475),
+  d = n(768581),
   p = n(693912),
   m = n(981631);
 
@@ -49,7 +49,7 @@ function h(e, t) {
 
 function g(e, t) {
   return i.useCallback(n => (i, o) => {
-    let l = u.ZP.getApplicationIconURL({
+    let l = d.ZP.getApplicationIconURL({
         id: n.id,
         icon: n.icon,
         bot: n.bot,
@@ -64,7 +64,7 @@ function g(e, t) {
         guildId: e.guild_id,
         channelId: e.id
       }),
-      renderPopout: n => (0, r.jsx)(d.Z, h(f({}, n), {
+      renderPopout: n => (0, r.jsx)(u.Z, h(f({}, n), {
         userId: s.id,
         guildId: e.guild_id,
         channelId: e.id,
@@ -82,7 +82,7 @@ function _(e) {
     message: t,
     channel: i,
     compact: a
-  } = e, c = (0, o.ZP)(t), d = t.application, u = (0, l.l)({
+  } = e, c = (0, o.ZP)(t), u = t.application, d = (0, l.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -93,10 +93,10 @@ function _(e) {
     timestamp: t.timestamp,
     compact: a,
     children: (0, p.DS)({
-      application: d,
+      application: u,
       username: c.nick,
-      usernameHook: u(c),
-      applicationNameHook: null != d ? f(d) : m.dG4
+      usernameHook: d(c),
+      applicationNameHook: null != u ? f(u) : m.dG4
     })
   })
 }
@@ -106,7 +106,7 @@ function b(e) {
     message: t,
     channel: i,
     compact: a
-  } = e, c = (0, o.ZP)(t), d = t.application, u = (0, l.l)({
+  } = e, c = (0, o.ZP)(t), u = t.application, d = (0, l.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -117,10 +117,10 @@ function b(e) {
     timestamp: t.timestamp,
     compact: a,
     children: (0, p.nh)({
-      application: d,
+      application: u,
       username: c.nick,
-      usernameHook: u(c),
-      applicationNameHook: null != d ? f(d) : m.dG4
+      usernameHook: d(c),
+      applicationNameHook: null != u ? f(u) : m.dG4
     })
   })
 }

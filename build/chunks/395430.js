@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 14721 **/
 e.exports = {
   menu: "menu__43313"
 }

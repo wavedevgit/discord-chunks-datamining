@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   E: () => c
 });
@@ -21,7 +21,7 @@ function c(e) {
   });
   return r.useMemo(() => {
     let r, a;
-    let d = s.u.BOT;
+    let u = s.u.BOT;
     if (null != t) {
       let {
         banner: e
@@ -40,14 +40,14 @@ function c(e) {
     }
     if (n) {
       let t = (0, o.yJ)(e);
-      null != c && (r = c, d = s.u.ACTIVITY);
+      null != c && (r = c, u = s.u.ACTIVITY);
       let n = null == t ? void 0 : t.activity_preview_video_asset_id;
-      null != n && (a = (0, i.Z)(e.id, n), d = s.u.ACTIVITY)
+      null != n && (a = (0, i.Z)(e.id, n), u = s.u.ACTIVITY)
     }
     return {
       staticBannerSrc: r,
       videoBannerSrc: a,
-      bannerAspectRatio: d
+      bannerAspectRatio: u
     }
   }, [c, t, n, e])
 }

@@ -1,32 +1,32 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 31942 **/
 n.d(t, {
-  H: () => u,
-  R: () => a
+  H: () => c,
+  R: () => u
 });
-var i = n(192379),
-  r = n(442837),
+var r = n(192379),
+  i = n(442837),
   l = n(584825),
   o = n(17079),
-  s = n(281320);
+  a = n(281320);
 
-function a(e, t) {
-  let n = (0, r.e7)([s.Z], () => s.Z.getPriceTiersForGuildAndType(e, t)),
-    l = (0, r.e7)([s.Z], () => s.Z.getPriceTiersFetchStateForGuildAndType(e, t));
-  return i.useEffect(() => {
-    l === s.M.NOT_FETCHED && (0, o.T)(e, t)
+function u(e, t) {
+  let n = (0, i.e7)([a.Z], () => a.Z.getPriceTiersForGuildAndType(e, t)),
+    l = (0, i.e7)([a.Z], () => a.Z.getPriceTiersFetchStateForGuildAndType(e, t));
+  return r.useEffect(() => {
+    l === a.M.NOT_FETCHED && (0, o.T)(e, t)
   }, [e, l, t]), {
-    loading: l === s.M.FETCHING,
+    loading: l === a.M.FETCHING,
     priceTiers: n
   }
 }
 
-function u(e) {
+function c(e) {
   let {
     fetchSubscriptionsSettings: t,
     loading: n,
-    error: r
+    error: i
   } = (0, l.JH)();
-  i.useEffect(() => {
+  r.useEffect(() => {
     t(e)
   }, [t, e]);
   let o = (0, l.YB)(e);
@@ -34,6 +34,6 @@ function u(e) {
     loaded: null != o && !n,
     subscriptionsSettings: o,
     loading: n,
-    error: r
+    error: i
   }
 }

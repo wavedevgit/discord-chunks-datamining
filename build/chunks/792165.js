@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 14721 **/
 n.d(t, {
-  o: () => v
+  o: () => b
 });
 var r = n(200651);
 n(192379);
@@ -12,61 +12,61 @@ var i = n(442837),
   c = n(197115),
   d = n(504983),
   u = n(594174),
-  p = n(74538),
+  _ = n(74538),
   m = n(981631),
   f = n(921944),
-  h = n(474936),
+  p = n(474936),
   g = n(526761),
-  _ = n(388032),
-  b = n(601377);
+  v = n(388032),
+  h = n(601377);
 
-function v(e) {
+function b(e) {
   var t;
   let {
     onClose: n,
-    markAsDismissed: v
-  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), x = (t = null == y ? void 0 : y.premiumType) === h.p9.TIER_2 ? _.NW.string(_.t.jqO5Qk) : null == t ? _.NW.string(_.t.f2qjw8) : _.NW.string(_.t.SblICQ), E = p.ZP.canUseCustomCallSounds(y);
+    markAsDismissed: b
+  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), C = (t = null == y ? void 0 : y.premiumType) === p.p9.TIER_2 ? v.NW.string(v.t.jqO5Qk) : null == t ? v.NW.string(v.t.f2qjw8) : v.NW.string(v.t.SblICQ), x = _.ZP.canUseCustomCallSounds(y);
   return (0, r.jsxs)(d.Z, {
     isShown: !0,
     type: d.Y.PREMIUM,
-    className: b.upsellOuter,
-    backgroundClassName: b.upsellInner,
-    children: [null != v ? (0, r.jsx)(l.P3F, {
-      className: b.close,
-      onClick: () => null == v ? void 0 : v(f.L.DISMISS),
-      "aria-label": _.NW.string(_.t.cpT0Cg),
+    className: h.upsellOuter,
+    backgroundClassName: h.upsellInner,
+    children: [null != b ? (0, r.jsx)(l.P3F, {
+      className: h.close,
+      onClick: () => null == b ? void 0 : b(f.L.DISMISS),
+      "aria-label": v.NW.string(v.t.cpT0Cg),
       children: (0, r.jsx)(l.Dio, {
         size: "xs",
         color: "currentColor",
-        className: b.closeIcon
+        className: h.closeIcon
       })
     }) : null, (0, r.jsxs)("div", {
-      className: b.upsellTitle,
+      className: h.upsellTitle,
       children: [(0, r.jsx)(l.SrA, {
         size: "sm",
         color: "currentColor",
-        className: b.nitroWheel
+        className: h.nitroWheel
       }), (0, r.jsx)(l.X6q, {
         variant: "heading-sm/bold",
-        children: _.NW.string(_.t.dTbAx8)
+        children: v.NW.string(v.t.dTbAx8)
       })]
     }), (0, r.jsx)(o.x, {
       variant: "text-sm/normal",
-      children: x
-    }), E ? (0, r.jsx)(a.zx, {
+      children: C
+    }), x ? (0, r.jsx)(a.zx, {
       onClick: function() {
-        s.Z.open(m.oAB.VOICE, g.GA), null == n || n(), null == v || v(f.L.PRIMARY)
+        s.Z.open(m.oAB.VOICE, g.GA), null == n || n(), null == b || b(f.L.PRIMARY)
       },
-      children: _.NW.string(_.t.RzWDqa)
+      children: v.NW.string(v.t.RzWDqa)
     }) : (0, r.jsx)(c.Z, {
-      buttonText: _.NW.string(_.t.pj0XBA),
-      subscriptionTier: h.Si.TIER_2,
+      buttonText: v.NW.string(v.t.pj0XBA),
+      subscriptionTier: p.Si.TIER_2,
       premiumModalAnalyticsLocation: {
         section: m.jXE.SOUNDBOARD_SOUND_PICKER,
         object: m.qAy.BUTTON_CTA
       },
       color: a.zx.Colors.GREEN,
-      onSubscribeModalClose: () => null == v ? void 0 : v(f.L.PRIMARY)
+      onSubscribeModalClose: () => null == b ? void 0 : b(f.L.PRIMARY)
     })]
   })
 }

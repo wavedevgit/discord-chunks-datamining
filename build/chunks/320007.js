@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => b
 });
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(665149),
   s = n(618158),
   c = n(819640),
-  d = n(131951),
-  u = n(924557),
+  u = n(131951),
+  d = n(924557),
   p = n(435064),
   m = n(779618),
   f = n(175470),
@@ -22,25 +22,25 @@ function b(e) {
   let {
     canShowReminder: t = !1,
     className: b
-  } = e, v = (0, m.Z)(d.Z), {
+  } = e, v = (0, m.Z)(u.Z), {
     showClipsHeaderEntrypoint: y
-  } = u.NV.useExperiment({
+  } = d.NV.useExperiment({
     location: "ClipsButton"
   }, {
     autoTrackExposure: !1
   }), {
     hasClips: x,
     hasNewClips: E,
-    lastClipsSession: j,
-    remindersEnabled: O,
-    hasAnyClipAnimations: N
+    lastClipsSession: O,
+    remindersEnabled: N,
+    hasAnyClipAnimations: j
   } = (0, a.cj)([p.Z], () => ({
     hasClips: p.Z.hasClips(),
     hasNewClips: p.Z.getNewClipIds().length > 0,
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), C = null != j && j.newClipIds.length > 0, I = (0, f.n)(e => e.clipsButtonRef), S = (0, f.n)(e => e.setClipsButtonRef), T = (0, a.e7)([c.Z], () => c.Z.hasLayers()), {
+  })), C = null != O && O.newClipIds.length > 0, I = (0, f.n)(e => e.clipsButtonRef), S = (0, f.n)(e => e.setClipsButtonRef), T = (0, a.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: P,
     allowIdle: A
   } = (0, s.Y)("animation");
@@ -72,10 +72,10 @@ function b(e) {
       modalKey: g.Qr
     })
   }
-  return (i.useEffect(() => (N ? P() : A(), () => A()), [N, P, A]), y && v && x) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != I && t && O && C && !(0, o.$sL)() && !T && (0, r.jsx)(h.Z, {
+  return (i.useEffect(() => (j ? P() : A(), () => A()), [j, P, A]), y && v && x) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != I && t && N && C && !(0, o.$sL)() && !T && (0, r.jsx)(h.Z, {
       clipIconRef: I,
-      lastClipsSession: j,
+      lastClipsSession: O,
       onOpenClipsGallery: w
     }), (0, r.jsx)("div", {
       ref: S,

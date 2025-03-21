@@ -1,7 +1,7 @@
-/** Chunk was on 69197 **/
+/** Chunk was on 72127 **/
 "use strict";
 r.d(t, {
-  Z: () => E
+  Z: () => S
 }), r(47120);
 var n = r(200651),
   o = r(192379),
@@ -14,16 +14,16 @@ var n = r(200651),
   u = r(468846),
   p = r(600164),
   m = r(70097),
-  _ = r(299379),
-  b = r(454585),
-  h = r(524444),
-  g = r(55406),
+  b = r(299379),
+  _ = r(454585),
+  g = r(524444),
+  h = r(55406),
   f = r(981631),
-  x = r(388032),
-  y = r(723115),
-  k = r(435186);
+  y = r(388032),
+  x = r(723115),
+  O = r(435186);
 
-function O(e, t, r) {
+function k(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: !0,
@@ -31,7 +31,7 @@ function O(e, t, r) {
     writable: !0
   }) : e[t] = r, e
 }
-let j = b.Z.reactParserFor(g.default.getDefaultRules(y)),
+let j = _.Z.reactParserFor(h.default.getDefaultRules(x)),
   C = {};
 class v extends o.PureComponent {
   track(e, t, r) {
@@ -39,19 +39,19 @@ class v extends o.PureComponent {
   }
   renderFooter() {
     return (0, n.jsxs)("div", {
-      className: y.footer,
+      className: x.footer,
       children: [(0, n.jsx)(c.eee, {
-        "aria-label": x.NW.string(x.t["/84uiI"]),
-        className: y.socialLink,
-        href: (0, _.Z)(f.RK.TWITTER),
+        "aria-label": y.NW.string(y.t["/84uiI"]),
+        className: x.socialLink,
+        href: (0, b.Z)(f.RK.TWITTER),
         target: "blank",
         children: (0, n.jsx)(c.TAi, {
           size: "xs",
           color: "currentColor"
         })
       }), (0, n.jsx)(c.eee, {
-        "aria-label": x.NW.string(x.t["h0or/v"]),
-        className: y.socialLink,
+        "aria-label": y.NW.string(y.t["h0or/v"]),
+        className: x.socialLink,
         href: f.fK7.FACEBOOK_URL,
         target: "blank",
         children: (0, n.jsx)(c.tdR, {
@@ -59,8 +59,8 @@ class v extends o.PureComponent {
           color: "currentColor"
         })
       }), (0, n.jsx)(c.eee, {
-        "aria-label": x.NW.string(x.t["5uVPyc"]),
-        className: y.socialLink,
+        "aria-label": y.NW.string(y.t["5uVPyc"]),
+        className: x.socialLink,
         href: f.fK7.INSTAGRAM_URL,
         target: "blank",
         children: (0, n.jsx)(c.gST, {
@@ -69,7 +69,7 @@ class v extends o.PureComponent {
         })
       }), (0, n.jsx)(c.Text, {
         variant: "text-xs/normal",
-        children: x.NW.string(x.t.EjVVIy)
+        children: y.NW.string(y.t.EjVVIy)
       })]
     })
   }
@@ -78,7 +78,7 @@ class v extends o.PureComponent {
       changeLog: e
     } = this.props, t = e.youtube_video_id, o = e.video, i = e.image;
     if (null != t && "" !== t) return (0, n.jsx)(d.BC, {
-      className: y.video,
+      className: x.video,
       allowFullScreen: !1,
       href: "https://youtu.be/".concat(t),
       thumbnail: {
@@ -94,9 +94,9 @@ class v extends o.PureComponent {
       provider: u.pn.YOUTUBE,
       maxWidth: 451,
       maxHeight: 254,
-      renderVideoComponent: h.lV,
-      renderImageComponent: h.Yi,
-      renderLinkComponent: h.iT,
+      renderVideoComponent: g.lV,
+      renderImageComponent: g.Yi,
+      renderLinkComponent: g.iT,
       onPlay: () => {
         this.track(f.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, !0)
       }
@@ -111,7 +111,7 @@ class v extends o.PureComponent {
         loop: !0,
         muted: !0,
         autoPlay: !0,
-        className: y.video,
+        className: x.video,
         onPlay: () => {
           this.track(f.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, !0)
         }
@@ -121,7 +121,7 @@ class v extends o.PureComponent {
     {
       let e = i.startsWith("https://") ? i : r(595173)("./".concat(i));
       return (0, n.jsx)("img", {
-        className: y.image,
+        className: x.image,
         alt: "",
         src: e,
         width: 451,
@@ -135,7 +135,7 @@ class v extends o.PureComponent {
     } = this.props;
     return (0, n.jsxs)(c.Y0X, {
       transitionState: c.Dvm.ENTERED,
-      className: k.modal,
+      className: O.modal,
       children: [(0, n.jsxs)(c.xBx, {
         align: p.Z.Justify.BETWEEN,
         separator: !1,
@@ -146,13 +146,13 @@ class v extends o.PureComponent {
           })
         })]
       }), (0, n.jsx)(c.hzk, {
-        className: a()(k.content, y.container, {}),
+        className: a()(O.content, x.container, {}),
         scrollerRef: this.scrollerRef,
         onScroll: this.handleScroll,
         children: (0, n.jsxs)("div", {
           tabIndex: 0,
           role: "region",
-          "aria-label": x.NW.string(x.t.HzBchI),
+          "aria-label": y.NW.string(y.t.HzBchI),
           children: [this.renderVideo(), j(e.body, !1, {
             changeLog: this,
             interpolations: C,
@@ -166,7 +166,7 @@ class v extends o.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "scrollerRef", o.createRef()), O(this, "handleScroll", () => {
+    super(...e), k(this, "scrollerRef", o.createRef()), k(this, "handleScroll", () => {
       let {
         current: e
       } = this.scrollerRef;
@@ -174,12 +174,12 @@ class v extends o.PureComponent {
         var t, r;
         null === (t = (r = this.props).onScroll) || void 0 === t || t.call(r, e)
       }
-    }), O(this, "trackLinkClick", e => {
+    }), k(this, "trackLinkClick", e => {
       this.props.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "inline_link",
         target: e
       }, !1)
-    }), O(this, "renderHeader", () => {
+    }), k(this, "renderHeader", () => {
       let {
         changeLog: e
       } = this.props;
@@ -188,11 +188,11 @@ class v extends o.PureComponent {
         shrink: 1,
         children: [(0, n.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          children: x.NW.string(x.t.LRmNAg)
+          children: y.NW.string(y.t.LRmNAg)
         }), (0, n.jsx)(c.Text, {
           variant: "text-xs/normal",
-          className: y.date,
-          children: x.NW.format(x.t.Fb8xx8, {
+          className: x.date,
+          children: y.NW.format(y.t.Fb8xx8, {
             date: null != e.date && "" !== e.date ? l()(e.date).toDate() : new Date
           })
         })]
@@ -200,4 +200,4 @@ class v extends o.PureComponent {
     })
   }
 }
-let E = v
+let S = v

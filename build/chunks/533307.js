@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 let r;
 n.d(t, {
   Z: () => m
@@ -9,8 +9,8 @@ var i = n(544891),
   l = n(812206),
   s = n(625128),
   c = n(335131),
-  d = n(669079),
-  u = n(981631),
+  u = n(669079),
+  d = n(981631),
   p = n(474936);
 r = n(775644).Z;
 let m = function(e) {
@@ -39,14 +39,14 @@ let m = function(e) {
       code: e
     });
     try {
-      let r = await (0, d.bT)(e, t, n);
+      let r = await (0, u.bT)(e, t, n);
       if (null != r.application_id && r.application_id !== p.CL) {
         let e = l.Z.getApplication(r.application_id);
         if (null == e) try {
           await o.ZP.fetchApplication(r.application_id)
         } catch (e) {}
       }
-      return r.application_id === u.XAJ && await (0, c.jr)(r.sku_id), a.Z.dispatch({
+      return r.application_id === d.XAJ && await (0, c.jr)(r.sku_id), a.Z.dispatch({
         type: "GIFT_CODE_RESOLVE_SUCCESS",
         giftCode: r
       }), {
@@ -69,7 +69,7 @@ let m = function(e) {
     });
     try {
       let n = await i.tn.get({
-        url: u.ANM.USER_GIFT_CODES,
+        url: d.ANM.USER_GIFT_CODES,
         query: {
           sku_id: e,
           subscription_plan_id: t
@@ -101,7 +101,7 @@ let m = function(e) {
     });
     try {
       let r = await i.tn.post({
-        url: u.ANM.USER_GIFT_CODE_CREATE,
+        url: d.ANM.USER_GIFT_CODE_CREATE,
         body: {
           sku_id: e,
           subscription_plan_id: t,
@@ -129,7 +129,7 @@ let m = function(e) {
     });
     try {
       await i.tn.del({
-        url: u.ANM.USER_GIFT_CODE_REVOKE(e),
+        url: d.ANM.USER_GIFT_CODE_REVOKE(e),
         oldFormErrors: !0,
         rejectWithError: !0
       }), a.Z.dispatch({
@@ -144,6 +144,6 @@ let m = function(e) {
     }
   },
   openNativeGiftCodeModal(e) {
-    s.Z.openNativeAppModal(e, u.Etm.GIFT_CODE_BROWSER)
+    s.Z.openNativeAppModal(e, d.Etm.GIFT_CODE_BROWSER)
   }
 }, r)

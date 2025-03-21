@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -9,15 +9,15 @@ var r = n(200651),
   l = n(481060),
   s = n(317632),
   c = n(174767),
-  d = n(594174),
-  u = n(388032),
+  u = n(594174),
+  d = n(388032),
   p = n(144388);
 
 function m(e) {
   let {
     inboxIconRef: t,
     recentsPopoutShown: n
-  } = e, [m, f] = i.useState(!1), h = (0, a.e7)([s.Z], () => s.Z.getLastUnseenInvite()), g = (0, a.e7)([d.default], () => null != h ? d.default.getUser(h.inviter_id) : null);
+  } = e, [m, f] = i.useState(!1), h = (0, a.e7)([s.Z], () => s.Z.getLastUnseenInvite()), g = (0, a.e7)([u.default], () => null != h ? u.default.getUser(h.inviter_id) : null);
   return (i.useEffect(() => {
     n && f(!1)
   }, [n]), i.useEffect(() => {
@@ -57,7 +57,7 @@ function m(e) {
       children: [(0, r.jsx)(l.Text, {
         className: p.__invalid_title,
         variant: "text-xs/semibold",
-        children: u.NW.format(u.t["8gTZ8v"], {
+        children: d.NW.format(d.t["8gTZ8v"], {
           username: g.username
         })
       }), (0, r.jsx)(l.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 });
@@ -10,8 +10,8 @@ var i = n(657707),
   l = n(63063),
   s = n(739566),
   c = n(942951),
-  d = n(834129),
-  u = n(981631),
+  u = n(834129),
+  d = n(981631),
   p = n(388032),
   m = n(229308);
 
@@ -42,9 +42,9 @@ function f(e) {
         className: m.inlineIcon
       }), " ", e]
     }),
-    helpdeskArticle: l.Z.getArticleURL(u.BhN.SOCIAL_LAYER_CONNECTIONS)
+    helpdeskArticle: l.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
   });
-  return (0, r.jsx)(d.Z, {
+  return (0, r.jsx)(u.Z, {
     iconNode: (0, r.jsx)(i.iWm, {
       size: "sm"
     }),

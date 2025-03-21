@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => S
 }), n(653041);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(91192),
   s = n(442837),
   c = n(481060),
-  d = n(135938),
-  u = n(900164),
+  u = n(135938),
+  d = n(900164),
   p = n(554838),
   m = n(493892),
   f = n(661824),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(55935),
   x = n(655354),
   E = n(809780),
-  j = n(981631),
-  O = n(388032),
-  N = n(660056);
+  O = n(981631),
+  N = n(388032),
+  j = n(660056);
 let C = {
   left: 4,
   right: -12
@@ -35,8 +35,8 @@ function I(e) {
   let {
     channel: o,
     message: s,
-    compact: d,
-    isGroupStart: u,
+    compact: u,
+    isGroupStart: d,
     treatSpam: p,
     gotoChannel: m
   } = e, f = (0, l.JA)(null !== (t = s.id) && void 0 !== t ? t : ""), g = i.useCallback(e => {
@@ -65,20 +65,20 @@ function I(e) {
       }
       return e
     }({
-      className: N.messageContainer,
+      className: j.messageContainer,
       onKeyDown: g
     }, f), a = a = {
       children: [(0, r.jsx)(x.Z, {
-        className: N.jumpButton,
+        className: j.jumpButton,
         onJump: e => m(e, s.id)
       }), (0, r.jsx)(h.Z, {
         id: s.id,
         message: s,
         channel: o,
-        className: N.message,
-        compact: d,
+        className: j.message,
+        compact: u,
         animateAvatar: !1,
-        isGroupStart: u,
+        isGroupStart: d,
         onKeyDown: g,
         treatSpam: p
       })]
@@ -103,21 +103,21 @@ function S(e) {
     gotoChannel: l
   } = e, {
     enabled: h
-  } = d.Z.useExperiment({
+  } = u.Z.useExperiment({
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(j.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(j.xW$.SPAMMER)) && void 0 !== n && n, w = [];
+  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && void 0 !== n && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
       n = i.messages.slice(0, E.hC);
     n.forEach(n => {
-      if (!(0, u.Z)(n, C)) {
+      if (!(0, d.Z)(n, C)) {
         if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
           let t = (0, y.vc)(n.timestamp, "LL");
           w.push((0, r.jsx)(f.Z, {
-            className: N.divider,
+            className: j.divider,
             children: t
           }, t)), e = o()(n.timestamp)
         }
@@ -135,13 +135,13 @@ function S(e) {
       color: c.zxk.Colors.LINK,
       look: c.zxk.Looks.LINK,
       onClick: e => l(e, n[n.length - 1].id),
-      children: [O.NW.string(O.t["9OB9ho"]), " ›"]
+      children: [N.NW.string(N.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
-  return T && S && d.Z.trackExposure({
+  return T && S && u.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
-    className: N.messages,
+    className: j.messages,
     children: w
   })
 }

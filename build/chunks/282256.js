@@ -1,6 +1,6 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -11,11 +11,11 @@ var r = n(200651),
   c = n(448986),
   u = n(353093),
   d = n(979264),
-  f = n(136769);
-let p = l.memo(function(e) {
+  p = n(136769);
+let f = l.memo(function(e) {
   var t, n, {
       children: i,
-      isOverlay: p,
+      isOverlay: f,
       contextGuildId: m
     } = e,
     g = function(e, t) {
@@ -33,22 +33,22 @@ let p = l.memo(function(e) {
       }
       return l
     }(e, ["children", "isOverlay", "contextGuildId"]);
-  let y = l.useRef(null),
-    [O, b] = l.useState({
+  let b = l.useRef(null),
+    [y, O] = l.useState({
       maskImage: "none"
     }),
-    h = (0, c.Z)(() => {
+    v = (0, c.Z)(() => {
       var e, t;
-      if (p) {
-        b({
+      if (f) {
+        O({
           maskImage: "none"
         });
         return
       }
-      let n = null === (e = v.current) || void 0 === e ? void 0 : e.getBoundingClientRect(),
-        r = null === (t = y.current) || void 0 === t ? void 0 : t.getBoundingClientRect();
+      let n = null === (e = h.current) || void 0 === e ? void 0 : e.getBoundingClientRect(),
+        r = null === (t = b.current) || void 0 === t ? void 0 : t.getBoundingClientRect();
       if (null == n || null == r) {
-        b({
+        O({
           maskImage: "none"
         });
         return
@@ -56,20 +56,20 @@ let p = l.memo(function(e) {
       let l = r.right - n.right,
         i = r.width - l;
       if (i > r.width) {
-        b({
+        O({
           maskImage: "none"
         });
         return
       }
-      b({
+      O({
         maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(i, "px)")
       })
     }),
-    v = (0, s.y)(h),
+    h = (0, s.y)(v),
     j = (0, u.p0)(g.userId, m),
     S = {
-      handleResize: h,
-      positionTrackerRef: v
+      handleResize: v,
+      positionTrackerRef: h
     },
     P = l.useRef(S);
   l.useEffect(() => {
@@ -81,20 +81,20 @@ let p = l.memo(function(e) {
     } = P.current;
     null != t.current && e()
   }, [j]);
-  let N = (0, a.O)(h);
+  let N = (0, a.O)(v);
   return (0, r.jsxs)("div", {
-    className: o()(f.container, p && f.isOverlayContainer),
-    ref: v,
+    className: o()(p.container, f && p.isOverlayContainer),
+    ref: h,
     children: [(0, r.jsx)("div", {
-      className: f.usernameContainer,
+      className: p.usernameContainer,
       children: i
     }), (0, r.jsx)("div", {
-      className: f.chipletParent,
+      className: p.chipletParent,
       ref: N,
       children: (0, r.jsx)("span", {
-        className: o()(f.chipletContainer, !j && p && f.noPadding),
-        ref: y,
-        style: O,
+        className: o()(p.chipletContainer, !j && f && p.noPadding),
+        ref: b,
+        style: y,
         children: (0, r.jsx)(d.ZP, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -114,7 +114,7 @@ let p = l.memo(function(e) {
           return e
         }({}, g), n = n = {
           contextGuildId: m,
-          className: o()(g.className, p && f.isOverlayTag)
+          className: o()(g.className, f && p.isOverlayTag)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

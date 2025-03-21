@@ -3,26 +3,26 @@ n.d(t, {
   Z: () => c
 });
 var r = n(200651),
-  i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  a = n(192379),
+  i = n(120356),
+  l = n.n(i),
   o = n(481060),
   s = n(898302);
-let c = i.memo(function(e) {
+let c = a.memo(function(e) {
   let {
     onClick: t,
     onContextMenu: n,
-    className: i,
-    disabled: a,
+    className: a,
+    disabled: i,
     children: c
   } = e;
   return (0, r.jsx)(o.P3F, {
-    className: l()(s.card, i, {
+    className: l()(s.card, a, {
       [s.clickable]: null != t,
-      [s.disabled]: a
+      [s.disabled]: i
     }),
     onContextMenu: n,
-    onClick: a ? void 0 : t,
+    onClick: i ? void 0 : t,
     children: c
   })
 })

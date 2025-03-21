@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 });
@@ -10,8 +10,8 @@ var i = n(442837),
   l = n(973616),
   s = n(789407),
   c = n(314897),
-  d = n(158776),
-  u = n(981631),
+  u = n(158776),
+  d = n(981631),
   p = n(616922),
   m = n(89577);
 let f = e => {
@@ -21,12 +21,12 @@ let f = e => {
     hideParty: f
   } = e, {
     analyticsLocations: h
-  } = (0, o.ZP)(), g = (0, i.e7)([c.default], () => c.default.getId()), _ = (0, i.e7)([d.Z], () => {
-    if (null == n.application) return d.Z.findActivity(n.author.id, e => e.type === u.IIU.LISTENING);
+  } = (0, o.ZP)(), g = (0, i.e7)([c.default], () => c.default.getId()), _ = (0, i.e7)([u.Z], () => {
+    if (null == n.application) return u.Z.findActivity(n.author.id, e => e.type === d.IIU.LISTENING);
     {
       var e;
       let r = n.author.id;
-      return (null === (e = n.activity) || void 0 === e ? void 0 : e.type) === u.mFx.JOIN_REQUEST && (r = r === g && t.isPrivate() ? t.getRecipientId() : g), d.Z.getApplicationActivity(r, n.application.id)
+      return (null === (e = n.activity) || void 0 === e ? void 0 : e.type) === d.mFx.JOIN_REQUEST && (r = r === g && t.isPrivate() ? t.getRecipientId() : g), u.Z.getApplicationActivity(r, n.application.id)
     }
   }, [n, t, g]);
   return (0, r.jsx)(a.Z, {

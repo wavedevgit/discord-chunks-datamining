@@ -1,9 +1,9 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Kt: () => m,
   Yt: () => p,
   a1: () => f,
-  bN: () => u
+  bN: () => d
 });
 var r = n(81643),
   i = n(974814),
@@ -12,15 +12,15 @@ var r = n(81643),
   l = n(981631),
   s = n(388032);
 let c = new Date("06/16/2020"),
-  d = [l.V_K.AGE_RESTRICTED, l.V_K.EXPLICIT];
+  u = [l.V_K.AGE_RESTRICTED, l.V_K.EXPLICIT];
 
-function u() {
+function d() {
   let e = a.default.getCurrentUser();
   return null != e && o.default.extractTimestamp(e.id) > c.getTime() && null == e.nsfwAllowed
 }
 
 function p(e) {
-  return d.includes(e.nsfwLevel)
+  return u.includes(e.nsfwLevel)
 }
 
 function m() {

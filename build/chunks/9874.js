@@ -1,12 +1,12 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  F: () => n
+  F: () => A
 });
-var A = r(680287);
+var n = r(680287);
 
-function n(e) {
+function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "POST";
-  return new A.Z(e, t, {
+  return new n.Z(e, t, {
     raiseEndpointErrors: !0
   })
 }

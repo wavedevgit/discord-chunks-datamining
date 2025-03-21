@@ -1,7 +1,7 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  default: () => O,
-  k: () => j
+  default: () => N,
+  k: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,8 +10,8 @@ var r = n(200651),
   l = n(481060),
   s = n(100527),
   c = n(906732),
-  d = n(688465),
-  u = n(333867),
+  u = n(688465),
+  d = n(333867),
   p = n(980463),
   m = n(576645),
   f = n(317951),
@@ -41,7 +41,7 @@ function E(e) {
   }
   return e
 }
-let j = (e, t) => {
+let O = (e, t) => {
   (0, m.mx)(t), (0, l.ZDy)(async () => {
     let {
       default: t
@@ -50,11 +50,11 @@ let j = (e, t) => {
       channel: e
     }, n))
   }, {
-    modalKey: N
+    modalKey: j
   })
 };
 
-function O(e) {
+function N(e) {
   let {
     transitionState: t,
     channel: n
@@ -67,12 +67,12 @@ function O(e) {
     })
   })
 }
-let N = "HD_STREAMING_POTION_MODAL_KEY";
+let j = "HD_STREAMING_POTION_MODAL_KEY";
 
 function C(e) {
   let {
     channel: t
-  } = e, n = (0, m.T$)(t), [o, d] = (0, i.useState)(!1), {
+  } = e, n = (0, m.T$)(t), [o, u] = (0, i.useState)(!1), {
     price: h,
     fetchingPrice: g,
     error: _
@@ -81,30 +81,30 @@ function C(e) {
     fetchedEntitlement: y,
     error: x
   } = (0, m.t6)(f.FX), E = _ || x, {
-    analyticsLocations: j
-  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), O = null != v && !v.consumed;
+    analyticsLocations: O
+  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), N = null != v && !v.consumed;
   (0, i.useEffect)(() => () => {
     E && (0, p.SN)(f.FX)
   }, [v, t, o, E]);
-  let N = (0, i.useCallback)(() => {
+  let j = (0, i.useCallback)(() => {
       (0, p.Zu)(t.id), (0, l.pTH)()
     }, [t.id]),
     C = (0, i.useCallback)(() => {
-      (0, u.Z)({
+      (0, d.Z)({
         skuId: f.FX,
-        analyticsLocations: j,
-        onComplete: N,
+        analyticsLocations: O,
+        onComplete: j,
         variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
-    }, [j, N]),
-    S = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == v ? void 0 : v.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!O : 3, [t.isHDStreamSplashed, n, null == v ? void 0 : v.type, O]),
+    }, [O, j]),
+    S = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == v ? void 0 : v.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!N : 3, [t.isHDStreamSplashed, n, null == v ? void 0 : v.type, N]),
     T = (0, i.useMemo)(() => S(), [S]);
   return (0, r.jsx)(I, {
     channel: t,
     buttonState: T,
     price: h,
     onActionClick: () => {
-      d(!0), (O ? N : C)()
+      u(!0), (N ? j : C)()
     },
     loading: g || !y
   })
@@ -147,7 +147,7 @@ let I = e => {
           children: [(0, r.jsx)(l.X6q, {
             variant: "heading-lg/bold",
             children: v.NW.string(v.t.K04rOD)
-          }), (0, r.jsx)(d.Z, {})]
+          }), (0, r.jsx)(u.Z, {})]
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: v.NW.string(v.t.lq40Pz)
@@ -185,7 +185,7 @@ let I = e => {
       className: y.footer,
       children: [(0, r.jsx)(l.zxk, {
         onClick: () => {
-          (0, l.Mr3)(N)
+          (0, l.Mr3)(j)
         },
         color: l.zxk.Colors.PRIMARY,
         children: v.NW.string(v.t.Avt5KS)

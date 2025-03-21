@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  z: () => d
+  z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,11 +11,11 @@ var i = n(772848),
   s = n(626135),
   c = n(981631);
 
-function d(e) {
+function u(e) {
   let {
     guildProductListing: t,
-    guildId: d,
-    sourceAnalyticsLocations: u
+    guildId: u,
+    sourceAnalyticsLocations: d
   } = e, p = !1, m = (0, i.Z)(), f = t.id, h = () => {
     p = !0
   };
@@ -45,10 +45,10 @@ function d(e) {
       }({}, n), a = a = {
         applicationId: t.application_id,
         skuId: f,
-        sourceAnalyticsLocations: u,
+        sourceAnalyticsLocations: d,
         guildProductContext: {
           guildProductListingId: t.id,
-          guildId: d
+          guildId: u
         },
         loadId: m,
         onComplete: h
@@ -70,7 +70,7 @@ function d(e) {
         payment_type: c.Zuq[c.GZQ.ONE_TIME],
         is_gift: !1,
         sku_id: f,
-        location_stack: Array.isArray(u) ? u : [u]
+        location_stack: Array.isArray(d) ? d : [d]
       }), (0, o.fw)(), (0, l.p)()
     },
     onCloseRequest: c.dG4

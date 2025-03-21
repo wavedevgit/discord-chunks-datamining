@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => l
 });
@@ -14,11 +14,11 @@ function l(e) {
     otherUsername: l,
     usernameHook: s,
     otherUsernameHook: c,
-    compact: d
+    compact: u
   } = e, {
-    nick: u
+    nick: d
   } = (0, i.ZP)(t), p = s(), m = c(), f = o.NW.format(o.t.MMN2Ji, {
-    username: u,
+    username: d,
     usernameHook: p,
     otherUsername: l,
     otherUsernameHook: m
@@ -26,7 +26,7 @@ function l(e) {
   return (0, r.jsx)(a.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
-    compact: d,
+    compact: u,
     children: f
   })
 }

@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => N
+  Z: () => j
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(990547),
   s = n(831209),
   c = n(442837),
-  d = n(481060),
-  u = n(367907),
+  u = n(481060),
+  d = n(367907),
   p = n(213609),
   m = n(565138),
   f = n(267101),
@@ -22,15 +22,15 @@ var r = n(200651),
   y = n(866104),
   x = n(886176),
   E = n(981631),
-  j = n(388032),
-  O = n(952626);
+  O = n(388032),
+  N = n(952626);
 
-function N(e) {
+function j(e) {
   var t;
   let {
     guildId: n
   } = e, a = (0, c.e7)([_.Z], () => _.Z.getGuild(n)), {
-    loading: N,
+    loading: j,
     subscriptionsSettings: C
   } = (0, v.H)(n), {
     listingsLoaded: I
@@ -54,7 +54,7 @@ function N(e) {
         })
       }
       return e
-    }({}, (0, u.hH)(n))), await (0, h.Z)(E.Z5c.SERVER_SHOP(n))
+    }({}, (0, d.hH)(n))), await (0, h.Z)(E.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: l.ImpressionTypes.VIEW,
@@ -63,81 +63,81 @@ function N(e) {
     disableTrack: null == a
   });
   let P = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
-  return N || !I ? (0, r.jsx)("div", {
-    className: o()(O.guildShopEmbed, O.spinnerContainer),
-    children: (0, r.jsx)(d.$jN, {})
+  return j || !I ? (0, r.jsx)("div", {
+    className: o()(N.guildShopEmbed, N.spinnerContainer),
+    children: (0, r.jsx)(u.$jN, {})
   }) : null == a || null == C ? null : (0, r.jsxs)("div", {
-    className: O.guildShopEmbed,
+    className: N.guildShopEmbed,
     children: [(0, r.jsx)(y.Z, {
       coverImageAsset: null !== (t = C.cover_image_asset) && void 0 !== t ? t : null
-    }), (0, r.jsx)(d.LZC, {
+    }), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: O.serverShopLabel,
+      className: N.serverShopLabel,
       children: [(0, r.jsx)(x.Z, {
         height: "16px",
         width: "16px",
         color: s.Z.INTERACTIVE_NORMAL
-      }), (0, r.jsx)(d.X6q, {
+      }), (0, r.jsx)(u.X6q, {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
-        className: O.serverShopLabelText,
-        children: j.NW.string(j.t.al5EXF)
+        className: N.serverShopLabelText,
+        children: O.NW.string(O.t.al5EXF)
       })]
-    }), (0, r.jsx)(d.LZC, {
+    }), (0, r.jsx)(u.LZC, {
       size: 16
-    }), (0, r.jsx)(d.X6q, {
+    }), (0, r.jsx)(u.X6q, {
       variant: "heading-md/semibold",
       color: "text-normal",
-      children: j.NW.format(j.t.NZeik5, {
+      children: O.NW.format(O.t.NZeik5, {
         guildName: a.name
       })
-    }), (0, r.jsx)(d.LZC, {
+    }), (0, r.jsx)(u.LZC, {
       size: 4
-    }), (0, r.jsx)(d.Text, {
+    }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       lineClamp: 2,
       children: C.description
-    }), (0, r.jsx)(d.LZC, {
+    }), (0, r.jsx)(u.LZC, {
       size: 16
-    }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(d.LZC, {
+    }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: O.guildShopEmbedFooter,
+      className: N.guildShopEmbedFooter,
       children: [(0, r.jsx)(m.Z, {
         guild: a
       }), (0, r.jsxs)("ul", {
-        className: O.guildShopSummary,
+        className: N.guildShopSummary,
         children: [(0, r.jsx)("li", {
-          children: (0, r.jsx)(d.Text, {
+          children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: j.NW.format(j.t.tKZNlZ, {
+            children: O.NW.format(O.t.tKZNlZ, {
               listingCount: S.length
             })
           })
         }), null != P && (0, r.jsx)("li", {
-          children: (0, r.jsx)(d.Text, {
+          children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: j.NW.format(j.t["kXr8+f"], {
+            children: O.NW.format(O.t["kXr8+f"], {
               createdYear: P.getFullYear()
             })
           })
         })]
-      }), (0, r.jsx)(d.zxk, {
-        className: O.guildShopEmbedCta,
+      }), (0, r.jsx)(u.zxk, {
+        className: N.guildShopEmbedCta,
         onClick: T,
         children: (0, r.jsxs)("div", {
-          className: O.guildShopEmbedCtaContent,
+          className: N.guildShopEmbedCtaContent,
           children: [(0, r.jsx)(x.Z, {
             height: "18px",
             width: "18px"
-          }), (0, r.jsx)(d.Text, {
+          }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: j.NW.string(j.t.jXx1CA)
+            children: O.NW.string(O.t.jXx1CA)
           })]
         })
       })]

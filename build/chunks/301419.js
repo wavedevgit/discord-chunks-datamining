@@ -18,8 +18,8 @@ function c(e) {
       provider: d,
       image_url: p
     } = s.extra.media,
-    b = s.extra.artist.name,
-    f = {
+    f = s.extra.artist.name,
+    b = {
       onClick: () => (0, l.o)(o.Hw.ALBUM, s.extra.media.external_parent_id),
       ariaDescription: a.NW.formatToPlainString(a.t.xTsar6, {
         itemName: s.extra.media.parent_title
@@ -28,7 +28,7 @@ function c(e) {
     O = {
       onClick: () => (0, l.o)(o.Hw.ARTIST, s.extra.artist.external_id),
       ariaDescription: a.NW.formatToPlainString(a.t.xTsar6, {
-        itemName: b
+        itemName: f
       })
     };
   return d === n.p.SPOTIFY && (c = {
@@ -51,11 +51,11 @@ function c(e) {
     }
     return e
   }({}, u), r = r = {
-    title: b,
+    title: f,
     thumbnailUrl: p,
     titleClickable: O,
-    subtitleClickable: f,
-    thumbnailClickable: f,
+    subtitleClickable: b,
+    thumbnailClickable: b,
     userDescription: a.t.CcVI1d,
     providerIconProps: c
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

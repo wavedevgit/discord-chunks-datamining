@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(990547),
   a = n(481060),
-  s = n(301938),
-  l = n(806701),
+  l = n(301938),
+  s = n(806701),
   c = n(808993),
   u = n(720196);
 
@@ -31,7 +31,7 @@ function d(e) {
         id: u.n.START,
         impressionProperties: b,
         impressionName: o.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
-        children: (0, r.jsx)(l.Z, {
+        children: (0, r.jsx)(s.Z, {
           setSlide: h,
           transitionTo: t
         })
@@ -39,7 +39,7 @@ function d(e) {
         id: u.n.PASSWORD,
         impressionProperties: b,
         impressionName: o.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
-        children: (0, r.jsx)(s.Z, {
+        children: (0, r.jsx)(l.Z, {
           setOriginalEmail: f,
           setSlide: h,
           transitionTo: t,

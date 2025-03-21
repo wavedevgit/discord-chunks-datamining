@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => p
 });
@@ -10,9 +10,9 @@ var i = n(120356),
   l = n(492593),
   s = n(930282),
   c = n(464891),
-  d = n(767459);
+  u = n(767459);
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,30 +60,30 @@ function p(e) {
   let y = (0, o.ZP)(i);
   return (0, r.jsx)("div", {
     className: a()({
-      [d.withFooter]: b
-    }, d.embedCard, {
-      [d.compact]: h
+      [u.withFooter]: b
+    }, u.embedCard, {
+      [u.compact]: h
     }, f),
-    children: (0, r.jsx)(l.Z, (t = u({}, v), n = n = {
-      className: a()(d.messageContainer, {
-        [d.compact]: h
+    children: (0, r.jsx)(l.Z, (t = d({}, v), n = n = {
+      className: a()(u.messageContainer, {
+        [u.compact]: h
       }),
       childrenMessageContent: (0, r.jsx)(s.ZP, {
-        className: a()(d.__invalid_messageContent, {
-          [d.compact]: h
+        className: a()(u.__invalid_messageContent, {
+          [u.compact]: h
         }),
         message: i,
         content: m
       }),
-      childrenHeader: (0, r.jsx)(c.ZP, u({
+      childrenHeader: (0, r.jsx)(c.ZP, d({
         message: i,
         channel: p,
         author: y,
         guildId: null == p ? void 0 : p.guild_id,
         compact: h,
         hideTimestamp: _,
-        className: a()(d.header, {
-          [d.compact]: h
+        className: a()(u.header, {
+          [u.compact]: h
         })
       }, null != g ? g : {})),
       compact: h

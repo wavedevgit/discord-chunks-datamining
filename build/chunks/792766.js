@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => b,
   y: () => _
@@ -10,8 +10,8 @@ var r = n(200651),
   l = n(481060),
   s = n(528144),
   c = n(118012),
-  d = n(686546),
-  u = n(565138),
+  u = n(686546),
+  d = n(565138),
   p = n(601964),
   m = n(598077),
   f = n(388032),
@@ -57,13 +57,13 @@ let g = e => {
         children: f.NW.string(f.t.Eabu19)
       }), (0, r.jsxs)("div", {
         className: h.guild,
-        children: [(0, r.jsx)(d.ZP, {
-          mask: d.ZP.Masks.SQUIRCLE,
+        children: [(0, r.jsx)(u.ZP, {
+          mask: u.ZP.Masks.SQUIRCLE,
           width: 40,
           height: 40,
-          children: (0, r.jsx)(u.Z, {
+          children: (0, r.jsx)(d.Z, {
             guild: i,
-            size: u.Z.Sizes.MEDIUM,
+            size: d.Z.Sizes.MEDIUM,
             active: !0
           })
         }), (0, r.jsxs)("div", {
@@ -105,8 +105,8 @@ let g = e => {
       topic: y,
       speaker_count: x,
       participant_count: E
-    } = n, j = null !== (t = n.members) && void 0 !== t ? t : [], O = _ ? j.slice(0, 3) : j, N = x - O.length;
-    return _ && (N += j.length - O.length), (0, r.jsxs)("div", {
+    } = n, O = null !== (t = n.members) && void 0 !== t ? t : [], N = _ ? O.slice(0, 3) : O, j = x - N.length;
+    return _ && (j += O.length - N.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
         children: [(0, r.jsxs)("div", {
@@ -140,13 +140,13 @@ let g = e => {
         className: o()(h.guild, {
           [h.embed]: _
         }),
-        children: [(0, r.jsx)(d.ZP, {
-          mask: d.ZP.Masks.SQUIRCLE,
+        children: [(0, r.jsx)(u.ZP, {
+          mask: u.ZP.Masks.SQUIRCLE,
           width: 20,
           height: 20,
-          children: (0, r.jsx)(u.Z, {
+          children: (0, r.jsx)(d.Z, {
             guild: v,
-            size: u.Z.Sizes.MINI,
+            size: d.Z.Sizes.MINI,
             active: !0
           })
         }), (0, r.jsx)(l.Text, {
@@ -165,13 +165,13 @@ let g = e => {
         className: o()(h.members, {
           [h.embed]: _
         }),
-        children: [O.length > 0 && (0, r.jsxs)("div", {
+        children: [N.length > 0 && (0, r.jsxs)("div", {
           className: h.speakers,
-          children: [O.map(e => (0, r.jsx)(g, {
+          children: [N.map(e => (0, r.jsx)(g, {
             speaker: e,
             guildId: v.id,
             isEmbed: _
-          }, e.user.id)), N > 0 ? (0, r.jsxs)("div", {
+          }, e.user.id)), j > 0 ? (0, r.jsxs)("div", {
             className: h.speaker,
             children: [(0, r.jsx)("div", {
               className: o()(h.icon, {
@@ -187,7 +187,7 @@ let g = e => {
               size: _ ? c.Z.Sizes.SIZE_12 : c.Z.Sizes.SIZE_14,
               color: c.Z.Colors.HEADER_SECONDARY,
               children: ["+", f.NW.format(f.t.L1pCBQ, {
-                count: N
+                count: j
               })]
             })]
           }) : null]

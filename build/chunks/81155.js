@@ -1,16 +1,16 @@
 /** Chunk was on 64648 **/
-o.d(e, {
-  default: () => p
+r.d(t, {
+  default: () => f
 });
-var l = o(200651),
-  s = o(192379),
-  n = o(481060),
-  a = o(782568),
-  i = o(690221),
-  r = o(460181),
-  d = o(388032),
-  u = o(162341);
-let c = [{
+var n = r(200651),
+  o = r(192379),
+  l = r(481060),
+  s = r(782568),
+  c = r(690221),
+  a = r(460181),
+  i = r(388032),
+  u = r(162341);
+let b = [{
   preBold: "That's pretty...",
   bold: "fly!"
 }, {
@@ -23,53 +23,53 @@ let c = [{
   postBold: "lievable!"
 }];
 
-function b(t) {
+function p(e) {
   let {
-    punConfig: e
-  } = t;
-  return (0, l.jsxs)(l.Fragment, {
-    children: [e.preBold, (0, l.jsx)("b", {
-      children: (0, l.jsx)("i", {
-        children: e.bold
+    punConfig: t
+  } = e;
+  return (0, n.jsxs)(n.Fragment, {
+    children: [t.preBold, (0, n.jsx)("b", {
+      children: (0, n.jsx)("i", {
+        children: t.bold
       })
-    }), e.postBold]
+    }), t.postBold]
   })
 }
 
-function p(t) {
+function f(e) {
   let {
-    transitionState: e,
-    onClose: o,
-    asanaTask: p
-  } = t;
-  s.useEffect(() => {
-    (0, r.GN)("success", .1)
+    transitionState: t,
+    onClose: r,
+    asanaTask: f
+  } = e;
+  o.useEffect(() => {
+    (0, a.GN)("success", .1)
   }, []);
-  let m = s.useRef(c[Math.floor(Math.random() * c.length)]).current;
-  return (0, l.jsx)(n.Y0X, {
+  let d = o.useRef(b[Math.floor(Math.random() * b.length)]).current;
+  return (0, n.jsx)(l.Y0X, {
     className: u.bugReporterSubmitModalRoot,
-    transitionState: e,
-    "aria-label": d.NW.string(d.t.mCCdws),
-    children: (0, l.jsxs)(n.hzk, {
+    transitionState: t,
+    "aria-label": i.NW.string(i.t.mCCdws),
+    children: (0, n.jsxs)(l.hzk, {
       style: {
         overflow: "hidden",
         paddingRight: "0px"
       },
       className: u.modalContent,
       paddingFix: !1,
-      children: [(0, l.jsx)(n.olH, {
+      children: [(0, n.jsx)(l.olH, {
         onClick: () => {
-          null == o || o()
+          null == r || r()
         },
         className: u.closeButton
-      }), (0, l.jsxs)(n.Text, {
+      }), (0, n.jsxs)(l.Text, {
         className: u.submitText,
         variant: "text-sm/normal",
-        children: ["Thanks for submitting a ", (0, l.jsx)(i.Z, {
-          onClick: () => (0, a.Z)(p.permalink_url),
+        children: ["Thanks for submitting a ", (0, n.jsx)(c.Z, {
+          onClick: () => (0, s.Z)(f.permalink_url),
           children: "bug"
-        }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(b, {
-          punConfig: m
+        }), "!", (0, n.jsx)("br", {}), (0, n.jsx)(p, {
+          punConfig: d
         })]
       })]
     })

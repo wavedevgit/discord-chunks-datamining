@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  W: () => j,
+  W: () => O,
   u: () => E
 }), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r, i = n(200651),
@@ -9,8 +9,8 @@ var r, i = n(200651),
   l = n.n(o),
   s = n(442837),
   c = n(481060),
-  d = n(434650),
-  u = n(607070),
+  u = n(434650),
+  d = n(607070),
   p = n(206295),
   m = n(70097),
   f = n(314897),
@@ -50,13 +50,13 @@ function x(e) {
 }
 var E = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
-function j(e) {
+function O(e) {
   var t, n, r, o;
   let {
     title: E,
-    header: j,
-    info: O,
-    staticBannerSrc: N,
+    header: O,
+    info: N,
+    staticBannerSrc: j,
     videoBannerSrc: C,
     bannerAspectRatio: I = 0,
     iconSrc: S,
@@ -75,7 +75,7 @@ function j(e) {
   let {
     primaryColor: w,
     secondaryColor: Z
-  } = (0, p.Z)(null != S ? S : N), k = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), R = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), D = a.useRef(!1), L = (0, d.O)(e => {
+  } = (0, p.Z)(null != S ? S : j), k = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), R = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = a.useRef(!1), L = (0, u.O)(e => {
     if (!1 === D.current && e) {
       var t;
       null == A || null === (t = A.onView) || void 0 === t || t.call(A), (0, g.GF)(A.id, A.linkType, A.referrerId, A.activityCustomId), D.current = !0
@@ -92,18 +92,18 @@ function j(e) {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, W = null != N, F = null != C && !1 === R, U = W || F, B = 0 === I ? v.bannerAspectRatioBot : v.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
+  }) : null, W = null != j, U = null != C && !1 === R, F = W || U, B = 0 === I ? v.bannerAspectRatioBot : v.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
     let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), V = a.useMemo(() => !!F && new URL(C).pathname.endsWith(".gif"), [F, C]);
+  }, []), V = a.useMemo(() => !!U && new URL(C).pathname.endsWith(".gif"), [U, C]);
   return (0, i.jsxs)("div", {
     ref: L,
     className: l()(v.embed, {
-      [v.showVideoOnFocus]: F
+      [v.showVideoOnFocus]: U
     }),
-    children: [U && (0, i.jsxs)("div", {
+    children: [F && (0, i.jsxs)("div", {
       className: l()(v.bannerWrapper, B),
-      children: [F && (V ? (0, i.jsx)("div", {
+      children: [U && (V ? (0, i.jsx)("div", {
         className: v.videoBanner,
         style: {
           backgroundImage: "url(".concat(C, ")")
@@ -118,7 +118,7 @@ function j(e) {
       })), W && (0, i.jsx)("div", {
         className: v.staticBanner,
         style: {
-          backgroundImage: "url(".concat(N, ")")
+          backgroundImage: "url(".concat(j, ")")
         },
         onTransitionEnd: H
       })]
@@ -127,12 +127,12 @@ function j(e) {
       style: {
         background: k
       },
-      children: [null != j && (0, i.jsxs)("div", {
+      children: [null != O && (0, i.jsxs)("div", {
         className: v.header,
         children: [(0, i.jsx)(c.Text, {
           variant: "eyebrow",
           color: "none",
-          children: j
+          children: O
         }), M]
       }), (0, i.jsxs)("div", {
         className: v.contentWrapper,
@@ -148,8 +148,8 @@ function j(e) {
             color: "none",
             lineClamp: 1,
             children: E
-          }), O]
-        }), null == j && M]
+          }), N]
+        }), null == O && M]
       }), P.length > 0 && (0, i.jsx)("div", {
         className: v.actionWrapper,
         children: P.map((e, t) => {
@@ -159,9 +159,9 @@ function j(e) {
             disabledReason: a,
             submitting: o,
             trackingArea: l
-          } = e, s = null != a, d = 0 === t, u = {
-            color: d ? c.zxk.Colors.WHITE : c.zxk.Colors.TRANSPARENT,
-            className: d ? v.primaryButton : v.alwaysWhiteText,
+          } = e, s = null != a, u = 0 === t, d = {
+            color: u ? c.zxk.Colors.WHITE : c.zxk.Colors.TRANSPARENT,
+            className: u ? v.primaryButton : v.alwaysWhiteText,
             disabled: s,
             submitting: o,
             children: n,
@@ -176,9 +176,9 @@ function j(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, x({}, u, t))
+              return (0, i.jsx)(c.zxk, x({}, d, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, x({}, u), n)
+          }, n) : (0, i.jsx)(c.zxk, x({}, d), n)
         })
       })]
     })]

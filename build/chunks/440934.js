@@ -1,4 +1,4 @@
-/** Chunk was on 70420 **/
+/** Chunk was on 44371 **/
 n.r(t), n.d(t, {
   default: () => u,
   openInteractionModal: () => p
@@ -25,12 +25,12 @@ function u(e) {
     applicationName: I,
     submissionState: m,
     error: S,
-    validators: b,
-    onSubmit: C
+    validators: C,
+    onSubmit: T
   } = (0, c.X9)(e, n);
   return (0, i.jsx)("form", {
     onSubmit: e => {
-      e.preventDefault(), C()
+      e.preventDefault(), T()
     },
     children: (0, i.jsxs)(o.Y0X, {
       transitionState: u,
@@ -63,7 +63,7 @@ function u(e) {
         }), (0, i.jsx)(o.hjN, {
           children: (0, i.jsx)(a.Il, {
             modal: e,
-            validators: b,
+            validators: C,
             children: (0, s.xX)(p)
           })
         })]

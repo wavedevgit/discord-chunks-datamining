@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => h
 });
@@ -10,8 +10,8 @@ var i = n(481060),
   l = n(447564),
   s = n(63063),
   c = n(739566),
-  d = n(942951),
-  u = n(834129),
+  u = n(942951),
+  d = n(834129),
   p = n(981631),
   m = n(388032),
   f = n(853704);
@@ -21,7 +21,7 @@ function h(e) {
     compact: t,
     message: n,
     channel: h
-  } = e, g = (0, c.ZP)(n), _ = (0, d.l)({
+  } = e, g = (0, c.ZP)(n), _ = (0, u.l)({
     user: n.author,
     channelId: n.channel_id,
     guildId: h.guild_id,
@@ -30,7 +30,7 @@ function h(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
-      children: (0, r.jsx)(u.Z, {
+      children: (0, r.jsx)(d.Z, {
         iconNode: (0, r.jsx)(i.hh5, {
           size: "sm"
         }),

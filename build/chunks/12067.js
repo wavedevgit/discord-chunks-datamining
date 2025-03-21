@@ -13,22 +13,22 @@ var l = r(442837),
   u = r(884182),
   d = r(94396),
   p = r(592125),
-  b = r(52824),
-  f = r(970184),
+  f = r(52824),
+  b = r(970184),
   O = r(981631);
 
 function y(e) {
   let {
     message: t
-  } = (0, f.CJ)(), r = (0, l.e7)([p.Z], () => p.Z.getChannel(null == t ? void 0 : t.channel_id)), {
+  } = (0, b.CJ)(), r = (0, l.e7)([p.Z], () => p.Z.getChannel(null == t ? void 0 : t.channel_id)), {
     shouldHideMediaOptions: y,
     shouldRedactExplicitContent: m,
     gifAutoPlay: j,
     getGifFavButton: g,
-    getOnMediaItemContextMenu: v
+    getOnMediaItemContextMenu: h
   } = (0, s.c)();
   if (null == t || null == r) return null;
-  let h = e.items.map(e => {
+  let v = e.items.map(e => {
       var t, r;
       return t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ function y(e) {
     {
       srcToOnClickOverride: P,
       srcToHandlePreloadImage: x
-    } = h.length > 1 ? (0, d.J)(h, {
+    } = v.length > 1 ? (0, d.J)(v, {
       shouldHideMediaOptions: y,
       shouldRedactExplicitContent: m
     }, "Media Mosaic") : {
@@ -79,7 +79,7 @@ function y(e) {
   }
   let S = e.items.map((e, r) => {
     let n = e.media,
-      l = null == v ? void 0 : v(n),
+      l = null == h ? void 0 : h(n),
       i = {
         message: t,
         item: {
@@ -108,7 +108,7 @@ function y(e) {
         canRemoveItem: !1,
         onRemoveItem: O.dG4
       },
-      o = (0, b.q)({
+      o = (0, f.q)({
         proxyURL: n.proxyUrl,
         url: n.url
       });

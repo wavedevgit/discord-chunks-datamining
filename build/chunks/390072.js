@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(481060),
   a = n(725436),
-  s = n(11868),
-  l = n(217804),
+  l = n(11868),
+  s = n(217804),
   c = n(765305),
   u = n(786414);
 
@@ -16,7 +16,7 @@ function d(e) {
     guildScheduledEvent: t,
     channel: n,
     onClose: d
-  } = e, p = t.entity_type === c.WX.EXTERNAL, h = i.useCallback(e => (0, s.Qt)(t, d)(e), [t, d]), g = (0, l.u)(t, n);
+  } = e, p = t.entity_type === c.WX.EXTERNAL, h = i.useCallback(e => (0, l.Qt)(t, d)(e), [t, d]), g = (0, s.u)(t, n);
   if (null == g) return null;
   let {
     IconComponent: _,

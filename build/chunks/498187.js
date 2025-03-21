@@ -12,11 +12,11 @@ var n = r(876215),
   u = r(96513),
   d = r(701488),
   p = r(388032);
-let b = {
+let f = {
     [l.z.XBOX]: s.kG.XBOX,
     [l.z.PLAYSTATION]: s.kG.PLAYSTATION
   },
-  f = {
+  b = {
     [u._.EMBED]: o.m1.Embed
   };
 
@@ -31,14 +31,14 @@ function O(e) {
     m = null == y ? void 0 : y.getIconURL(d.Si.LARGE),
     j = s.extra.game_name;
   if (null != s.extra.platform) {
-    let e = b[s.extra.platform];
+    let e = f[s.extra.platform];
     null != e && (l = {
       type: e
     })
   }
   o = s.content_type === n.s.PLAYED_GAME && (0, c.kr)(s) && !(0, c.n2)(s) ? p.t.vPg1JS : p.t.rPqqtr;
-  let g = f[u],
-    v = {
+  let g = b[u],
+    h = {
       onClick: (0, a.Z)({
         location: g,
         applicationId: s.extra.application_id,
@@ -70,8 +70,8 @@ function O(e) {
   }({}, O), r = r = {
     thumbnailUrl: m,
     title: j,
-    titleClickable: v,
-    thumbnailClickable: v,
+    titleClickable: h,
+    thumbnailClickable: h,
     userDescription: o,
     providerIconProps: l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

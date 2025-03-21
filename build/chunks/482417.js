@@ -17,15 +17,15 @@ function c(e) {
     d = s.extra.entries[0].media,
     p = d.artists[0],
     {
-      title: b,
-      provider: f,
+      title: f,
+      provider: b,
       image_url: O
     } = d,
     y = p.name,
     m = {
       onClick: () => (0, l.o)(o.Hw.TRACK, d.external_id),
       ariaDescription: a.NW.formatToPlainString(a.t.xTsar6, {
-        itemName: b
+        itemName: f
       })
     },
     j = {
@@ -34,7 +34,7 @@ function c(e) {
         itemName: y
       })
     };
-  return f === n.p.SPOTIFY && (c = {
+  return b === n.p.SPOTIFY && (c = {
     type: i.kG.SPOTIFY
   }), t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -54,7 +54,7 @@ function c(e) {
     }
     return e
   }({}, u), r = r = {
-    title: b,
+    title: f,
     subtitle: y,
     thumbnailUrl: O,
     titleClickable: m,

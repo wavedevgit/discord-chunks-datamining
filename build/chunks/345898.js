@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => s
 }), n(266796);
@@ -15,15 +15,15 @@ let s = e => {
     renderActions: i,
     renderMedia: s,
     className: c,
-    isHorizontal: d = !1
+    isHorizontal: u = !1
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(l.tile, {
-      [l.tileHorizontal]: d
+      [l.tileHorizontal]: u
     }, c),
     children: [(0, r.jsx)("div", {
       className: a()(l.media, {
-        [l.mediaHorizontal]: d
+        [l.mediaHorizontal]: u
       }),
       children: null == s ? void 0 : s()
     }), (0, r.jsxs)("div", {

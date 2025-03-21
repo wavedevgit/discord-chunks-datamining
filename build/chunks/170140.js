@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   J: () => b
 });
@@ -9,8 +9,8 @@ var r = n(192379),
   l = n(314897),
   s = n(592125),
   c = n(271383),
-  d = n(430824),
-  u = n(914010),
+  u = n(430824),
+  d = n(914010),
   p = n(594174),
   m = n(158222),
   f = n(312146),
@@ -29,18 +29,18 @@ function b(e, t) {
     x = t.hasFlag(_.iLy.IS_CROSSPOST),
     {
       rawMediaPostEmbedData: E,
-      guild: j,
-      parentChannel: O,
-      user: N,
+      guild: O,
+      parentChannel: N,
+      user: j,
       selectedGuildId: C,
       canAccess: I
-    } = (0, i.cj)([h.Z, d.Z, s.Z, p.default, u.Z], () => {
+    } = (0, i.cj)([h.Z, u.Z, s.Z, p.default, d.Z], () => {
       var e;
       let t = null === (e = h.Z.getMediaPostEmbed(null == b ? void 0 : b.threadId)) || void 0 === e ? void 0 : e.media,
-        n = d.Z.getGuild(null == b ? void 0 : b.guildId),
+        n = u.Z.getGuild(null == b ? void 0 : b.guildId),
         r = s.Z.getChannel(null == b ? void 0 : b.channelId),
         i = p.default.getUser(null == t ? void 0 : t.author_id),
-        a = u.Z.getGuildId(),
+        a = d.Z.getGuildId(),
         l = null != r && (0, o.YO)(r);
       return {
         rawMediaPostEmbedData: t,
@@ -55,9 +55,9 @@ function b(e, t) {
       var e, t;
       let n = (0, g.ku)({
         mediaPostEmbedData: E,
-        guild: j,
-        parentChannel: O,
-        user: N,
+        guild: O,
+        parentChannel: N,
+        user: j,
         selectedGuildId: C,
         canAccess: I
       });
@@ -79,7 +79,7 @@ function b(e, t) {
         }
         return e
       }({}, n), t = t = {
-        user: N
+        user: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -90,7 +90,7 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [E, j, O, N, C, I]);
+    }, [E, O, N, j, C, I]);
   return r.useEffect(() => {
     if ((null == b ? void 0 : b.threadId) != null) {
       let e = h.Z.getEmbedFetchState(b.threadId);

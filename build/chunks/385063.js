@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => s
 });
@@ -14,15 +14,15 @@ function s(e) {
     message: t,
     usernameHook: s,
     compact: c,
-    isForumPost: d
-  } = e, u = (0, i.ZP)(t), p = s(u);
+    isForumPost: u
+  } = e, d = (0, i.ZP)(t), p = s(d);
   return (0, r.jsx)(a.Z, {
     compact: c,
     className: l.channelNameChange,
     icon: n(819373),
     timestamp: t.timestamp,
-    children: o.NW.format(d ? o.t.SOQ4hI : o.t.oItgEx, {
-      username: u.nick,
+    children: o.NW.format(u ? o.t.SOQ4hI : o.t.oItgEx, {
+      username: d.nick,
       usernameHook: p,
       channelName: t.content
     })

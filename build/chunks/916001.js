@@ -2,11 +2,11 @@
 r.d(t, {
   Z: () => i
 });
-var A = r(200651);
+var n = r(200651);
 r(192379);
-var n = r(866442),
-  o = r(481060),
-  a = r(388032),
+var A = r(866442),
+  a = r(481060),
+  o = r(388032),
   l = r(506727);
 
 function i(e) {
@@ -14,30 +14,30 @@ function i(e) {
     locked: t,
     role: r,
     textVariant: i = "text-xs/medium"
-  } = e, s = (0, o.dQu)(o.TVs.colors.INTERACTIVE_NORMAL).hex();
-  return (0, A.jsx)("div", {
+  } = e, s = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
+  return (0, n.jsx)("div", {
     className: l.roleTagContainer,
-    children: (0, A.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       className: l.roleTag,
-      children: [(0, A.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: l.roleColor,
         style: {
-          backgroundColor: (0, n.Rf)(r.color)
+          backgroundColor: (0, A.Rf)(r.color)
         }
-      }), (0, A.jsx)(o.LZC, {
+      }), (0, n.jsx)(a.LZC, {
         size: 8,
         horizontal: !0
-      }), (0, A.jsxs)(o.Text, {
+      }), (0, n.jsxs)(a.Text, {
         variant: i,
         color: "text-normal",
-        children: [(0, A.jsx)(o.nn4, {
-          children: a.NW.string(a.t.RnyseH)
+        children: [(0, n.jsx)(a.nn4, {
+          children: o.NW.string(o.t.RnyseH)
         }), r.name]
-      }), !0 === t && (0, A.jsxs)(A.Fragment, {
-        children: [(0, A.jsx)(o.LZC, {
+      }), !0 === t && (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(a.LZC, {
           size: 8,
           horizontal: !0
-        }), (0, A.jsx)(o.mBM, {
+        }), (0, n.jsx)(a.mBM, {
           size: "md",
           color: s
         })]

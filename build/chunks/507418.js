@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => p
 }), n(301563);
@@ -10,13 +10,13 @@ var i = n(512722),
   l = n(245315),
   s = n(556041),
   c = n(347475),
-  d = n(592125),
-  u = n(368859);
+  u = n(592125),
+  d = n(368859);
 
 function p(e, t) {
   var n, i, p, m;
   if ((0, l.cp)(t)) return (0, r.jsx)(s.Z, {});
-  if ((0, u.Z)(t)) {
+  if ((0, d.Z)(t)) {
     let a = (null !== (i = null == t ? void 0 : null === (n = t.author) || void 0 === n ? void 0 : n.username) && void 0 !== i ? i : "").split(" ").slice(0, -1).join(" "),
       {
         guild_id: l,
@@ -32,7 +32,7 @@ function p(e, t) {
     })
   }
   if (null != t.interaction && "SENDING" === t.state) return (0, r.jsx)(r.Fragment, {});
-  let f = d.Z.getChannel(t.channel_id);
+  let f = u.Z.getChannel(t.channel_id);
   return a()(null != f, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, (p = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

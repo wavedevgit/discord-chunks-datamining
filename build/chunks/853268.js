@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   a = n(481060),
-  s = n(600164),
-  l = n(388905),
+  l = n(600164),
+  s = n(388905),
   c = n(170958),
   u = n(802138);
 
@@ -20,15 +20,15 @@ function d(e) {
     muted: d,
     marginTopStyle: p
   } = e;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(l.Z, {
     className: null != p ? p : u.marginTop20,
-    align: s.Z.Align.CENTER,
+    align: l.Z.Align.CENTER,
     children: (0, r.jsx)(a.XZJ, {
       value: t,
       type: a.XZJ.Types.INVERTED,
       onChange: (e, t) => n(t),
       className: c.checkbox,
-      children: (0, r.jsx)(l.i_, {
+      children: (0, r.jsx)(s.i_, {
         className: o()({
           [c.subText]: !d
         }),

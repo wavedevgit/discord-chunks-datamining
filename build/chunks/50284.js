@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 }), n(230036), n(978209);
@@ -9,19 +9,19 @@ var r = n(544891),
   l = n(592125),
   s = n(375954),
   c = n(306680),
-  d = n(594174),
-  u = n(709054),
+  u = n(594174),
+  d = n(709054),
   p = n(981631);
 let m = new i.Z("markUnread");
 async function f(e, t) {
-  let n = d.default.getCurrentUser();
+  let n = u.default.getCurrentUser();
   if (null == n) return;
   let i = s.Z.getMessages(e),
-    f = i.toArray().filter(e => 0 > u.default.compare(e.id, t)).sort((e, t) => u.default.compare(e.id, t.id)).reverse()[0],
-    h = null == f ? u.default.atPreviousMillisecond(t) : f.id,
+    f = i.toArray().filter(e => 0 > d.default.compare(e.id, t)).sort((e, t) => d.default.compare(e.id, t.id)).reverse()[0],
+    h = null == f ? d.default.atPreviousMillisecond(t) : f.id,
     g = 0;
   i.forAll(e => {
-    u.default.compare(e.id, h) > 0 && (0, c.Ex)(e, n) && g++
+    d.default.compare(e.id, h) > 0 && (0, c.Ex)(e, n) && g++
   });
   let _ = l.Z.getChannel(e);
   null != _ && _.isThread() && (_.isArchivedThread() && await o.Z.unarchiveThread(_, !1), a.Z.hasJoined(e) || await o.Z.joinThread(_, "Mark Unread")), m.log("Marking unread", {

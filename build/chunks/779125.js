@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => v
 });
@@ -10,8 +10,8 @@ var i = n(442837),
   l = n(287734),
   s = n(933557),
   c = n(124072),
-  d = n(703656),
-  u = n(131704),
+  u = n(703656),
+  d = n(131704),
   p = n(592125),
   m = n(430824),
   f = n(699516),
@@ -51,14 +51,14 @@ function v(e) {
               return
             }
             let i = p.Z.getChannel(t);
-            if (null != i && (0, u.bw)(i.type)) {
+            if (null != i && (0, d.bw)(i.type)) {
               if (n) {
-                o.Z.updateChatOpen(i.id, !0), (0, d.uL)(b.Z5c.CHANNEL(e, t));
+                o.Z.updateChatOpen(i.id, !0), (0, u.uL)(b.Z5c.CHANNEL(e, t));
                 return
               }
               l.default.selectVoiceChannel(i.id);
               return
-            }(0, d.uL)(b.Z5c.CHANNEL(e, t))
+            }(0, u.uL)(b.Z5c.CHANNEL(e, t))
           }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, x))
         },
         onMouseEnter: i,

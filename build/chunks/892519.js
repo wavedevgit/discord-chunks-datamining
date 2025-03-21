@@ -13,9 +13,9 @@ var l = r(120356),
   u = r(987106),
   d = r(861529),
   p = r(568248),
-  b = r(99264);
+  f = r(99264);
 
-function f(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -42,25 +42,25 @@ function O(e) {
     message: l
   } = (0, c.CJ)(), [O, y] = (0, s.e4)(), m = (0, s.$Y)(y), j = r.type === o.re.BUTTON;
   return (0, n.jsxs)("div", {
-    className: b.section,
+    className: f.section,
     ref: O,
     children: [(0, n.jsxs)("div", {
-      className: b.children,
+      className: f.children,
       children: [(0, n.jsx)("div", {
-        className: i()(b.textChildren, {
-          [b.centerAlign]: j
+        className: i()(f.textChildren, {
+          [f.centerAlign]: j
         }),
-        children: t.map(e => (0, n.jsx)(d.Z, f({}, e), e.id))
+        children: t.map(e => (0, n.jsx)(d.Z, b({}, e), e.id))
       }), (0, n.jsx)("div", {
-        className: i()(b.accessory, {
-          [b.restrictWidth]: m
+        className: i()(f.accessory, {
+          [f.restrictWidth]: m
         }),
         children: function(e) {
           switch (e.type) {
             case o.re.BUTTON:
-              return (0, n.jsx)(u.Z, f({}, e));
+              return (0, n.jsx)(u.Z, b({}, e));
             case o.re.THUMBNAIL:
-              return (0, n.jsx)(p.Z, f({}, e))
+              return (0, n.jsx)(p.Z, b({}, e))
           }
         }(r)
       })]

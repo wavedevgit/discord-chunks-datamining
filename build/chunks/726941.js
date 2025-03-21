@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => g
 });
 var r = n(200651),
-  i = n(192379),
-  a = n(442837),
+  a = n(192379),
+  i = n(442837),
   l = n(322665),
   o = n(17845),
   s = n(374939),
@@ -19,16 +19,16 @@ let g = function(e) {
   let {
     tabId: n,
     onSelectApplication: g,
-    onScroll: _
-  } = e, f = i.useRef(null), b = i.useCallback(() => {
+    onScroll: f
+  } = e, _ = a.useRef(null), b = a.useCallback(() => {
     var e;
-    null === (e = f.current) || void 0 === e || e.scrollTo({
+    null === (e = _.current) || void 0 === e || e.scrollTo({
       to: 0
     })
-  }, []), v = (0, a.e7)([u.Z], () => u.Z.getCategories()), x = i.useMemo(() => v.find(e => e.id === n), [v, n]), C = i.useMemo(() => null != x ? (0, d.v)(x) : "", [x]);
+  }, []), v = (0, i.e7)([u.Z], () => u.Z.getCategories()), x = a.useMemo(() => v.find(e => e.id === n), [v, n]), C = a.useMemo(() => null != x ? (0, d.v)(x) : "", [x]);
   return (0, r.jsxs)(c.Z, {
-    onScroll: _,
-    ref: f,
+    onScroll: f,
+    ref: _,
     children: [(0, r.jsx)(o.Z, {
       title: null !== (t = null == x ? void 0 : x.name) && void 0 !== t ? t : "",
       description: C,

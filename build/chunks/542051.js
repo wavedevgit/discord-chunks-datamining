@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   M: () => h,
   Z: () => _
@@ -9,9 +9,9 @@ var r, i = n(200651),
   l = n.n(o),
   s = n(481060),
   c = n(388032),
-  d = n(325504);
+  u = n(325504);
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
@@ -66,7 +66,7 @@ class g extends(r = a.PureComponent) {
       focusedIndex: r,
       onSelectQuery: a,
       onSelectSearchEverywhere: o,
-      onHighlightQuery: u,
+      onHighlightQuery: d,
       hideQuery: f,
       searchFavorites: g
     } = this.props;
@@ -74,43 +74,43 @@ class g extends(r = a.PureComponent) {
     let _ = -1 === r;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(s.P3F, m(p({
-        className: l()(d.queryContainer, {
-          [d.focused]: _
+        className: l()(u.queryContainer, {
+          [u.focused]: _
         })
       }, h(n, -1, _)), {
-        onMouseEnter: u,
+        onMouseEnter: d,
         onClick: a,
         children: [(0, i.jsx)("div", {
-          className: d.queryText,
+          className: u.queryText,
           children: g ? c.NW.string(c.t["6RVtLC"]) : c.NW.format(c.t.ub226e, {
             value: t
           })
         }), (0, i.jsx)("div", {
-          className: d.queryShortcut,
+          className: u.queryShortcut,
           "aria-hidden": !0,
           children: (0, i.jsx)(s.M2$, {
             shortcut: "return",
             dim: !0,
-            className: d.keyCombo
+            className: u.keyCombo
           })
         })]
       })), g && (0, i.jsxs)(s.P3F, m(p({
-        className: l()(d.queryContainer, {
-          [d.focused]: _
+        className: l()(u.queryContainer, {
+          [u.focused]: _
         })
       }, h(n, -1, _)), {
-        onMouseEnter: u,
+        onMouseEnter: d,
         onClick: o,
         children: [(0, i.jsx)("div", {
-          className: d.queryText,
+          className: u.queryText,
           children: c.NW.string(c.t.FtSUxc)
         }), (0, i.jsx)("div", {
-          className: d.queryShortcut,
+          className: u.queryShortcut,
           "aria-hidden": !0,
           children: (0, i.jsx)(s.M2$, {
             shortcut: "shift+return",
             dim: !0,
-            className: d.keyCombo
+            className: u.keyCombo
           })
         })]
       }))]
@@ -140,7 +140,7 @@ class g extends(r = a.PureComponent) {
       width: r
     } = this.props, a = "" === e.trim();
     return (0, i.jsxs)("div", {
-      className: d.container,
+      className: u.container,
       style: {
         width: r
       },
@@ -153,7 +153,7 @@ class g extends(r = a.PureComponent) {
     })
   }
 }
-u(g, "defaultProps", {
+d(g, "defaultProps", {
   renderInitialState: () => null,
   hideQuery: !1,
   width: 320

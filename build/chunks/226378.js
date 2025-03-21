@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   NL: () => c
 });
@@ -44,7 +44,7 @@ function c(e) {
     embeddedActivity: t,
     joinability: n,
     currentEmbeddedActivity: c,
-    channel: d
+    channel: u
   } = e;
   return r.useMemo(() => (function(e) {
     let {
@@ -52,18 +52,18 @@ function c(e) {
       joinability: n,
       currentEmbeddedActivity: r,
       channel: c
-    } = e, d = null == t, u = {
+    } = e, u = null == t, d = {
       disabled: !1,
-      isJoinAction: !d,
-      text: d ? o.NW.string(o.t.I0v0Qk) : o.NW.string(o.t.sqe0ho),
+      isJoinAction: !u,
+      text: u ? o.NW.string(o.t.I0v0Qk) : o.NW.string(o.t.sqe0ho),
       tooltip: void 0
     }, p = (0, i.WS)(c);
-    if (null != t && null != r && t.launchId === r.launchId) return s(l({}, u), {
+    if (null != t && null != r && t.launchId === r.launchId) return s(l({}, d), {
       disabled: !0,
       text: o.NW.string(o.t.DPfdsr),
       tooltip: o.NW.string(o.t.wJNK8P)
     });
-    if (d) return s(l({}, u), {
+    if (u) return s(l({}, d), {
       disabled: !p,
       tooltip: p ? void 0 : o.NW.string(o.t.f41E1t)
     });
@@ -94,16 +94,16 @@ function c(e) {
         case a.Fw.IS_AFK_CHANNEL:
           e = o.NW.string(o.t.Etp6uL)
       }
-      return s(l({}, u), {
+      return s(l({}, d), {
         disabled: !0,
         tooltip: e
       })
     }
-    return u
+    return d
   })({
     embeddedActivity: t,
     joinability: n,
     currentEmbeddedActivity: c,
-    channel: d
-  }), [t, n, c, d])
+    channel: u
+  }), [t, n, c, u])
 }

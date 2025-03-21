@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 });
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(905405),
   s = n(937889),
   c = n(267128),
-  d = n(123145),
-  u = n(699516),
+  u = n(123145),
+  d = n(699516),
   p = n(217702),
   m = n(432957);
 
@@ -21,9 +21,9 @@ function f(e) {
   } = e, {
     isBlocked: f,
     isIgnored: h
-  } = (0, a.cj)([u.Z], () => ({
-    isBlocked: u.Z.isBlockedForMessage(t),
-    isIgnored: u.Z.isIgnoredForMessage(t)
+  } = (0, a.cj)([d.Z], () => ({
+    isBlocked: d.Z.isBlockedForMessage(t),
+    isIgnored: d.Z.isIgnoredForMessage(t)
   }), [t]), g = (0, l.p)(), _ = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
@@ -38,7 +38,7 @@ function f(e) {
       alt: "",
       src: t.author.getAvatarURL(n.guild_id, 16),
       className: m.threadMessageAccessoryAvatar
-    }), (0, r.jsx)(d.Z, {
+    }), (0, r.jsx)(u.Z, {
       message: t,
       channel: n,
       compact: !0

@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -11,13 +11,13 @@ var i = n(692547),
   s = n(388032),
   c = n(915345);
 
-function d(e) {
+function u(e) {
   let {
     message: t,
     compact: n,
-    usernameHook: d
-  } = e, u = (0, o.ZP)(t), p = d(u), m = s.NW.format(s.t["Rv+TSE"], {
-    username: u.nick,
+    usernameHook: u
+  } = e, d = (0, o.ZP)(t), p = u(d), m = s.NW.format(s.t["Rv+TSE"], {
+    username: d.nick,
     usernameHook: p,
     topic: t.content
   });

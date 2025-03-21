@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r, i, a, o = n(442837),
   l = n(570140);
@@ -18,7 +18,7 @@ i = "ApplicationStoreSettingsStore", (r = "displayName") in c ? Object.definePro
   configurable: !0,
   writable: !0
 }) : c[r] = i;
-let d = new c(l.Z, {
+let u = new c(l.Z, {
   APPLICATION_STORE_MATURE_AGREE: function() {
     s.matureAgree = !0
   }

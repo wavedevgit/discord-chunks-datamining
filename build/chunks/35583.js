@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(668781),
   s = n(431583),
   c = n(91372),
-  d = n(19780),
-  u = n(35818),
+  u = n(19780),
+  d = n(35818),
   p = n(665149),
   m = n(388032),
   f = n(807505);
@@ -75,7 +75,7 @@ class g extends i.PureComponent {
       memoizedMode: this.props.mode,
       clicked: !1
     }), h(this, "handleInstallDownload", () => {
-      d.Z.isConnected() ? l.Z.show({
+      u.Z.isConnected() ? l.Z.show({
         title: m.NW.string(m.t.tiu1l5),
         body: m.NW.string(m.t["zK+lqa"]),
         onConfirm: this.doUpdate,
@@ -85,7 +85,7 @@ class g extends i.PureComponent {
     }), h(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: !0
-      }), (0, u.Q)())
+      }), (0, d.Q)())
     })
   }
 }

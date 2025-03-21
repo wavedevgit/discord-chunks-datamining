@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   i: () => p
 });
@@ -10,8 +10,8 @@ var i = n(913527),
   l = n(481060),
   s = n(800530),
   c = n(388032),
-  d = n(497770);
-let u = e => a()().diff(a().unix(e), "days");
+  u = n(497770);
+let d = e => a()().diff(a().unix(e), "days");
 
 function p(e) {
   var t, i, a, p, m;
@@ -35,28 +35,28 @@ function p(e) {
         })
       })
     },
-    className: d.safetyPolicyNoticeContainer,
+    className: u.safetyPolicyNoticeContainer,
     children: [(0, r.jsxs)("div", {
-      className: d.noticeContent,
+      className: u.noticeContent,
       children: [(0, r.jsxs)("div", {
-        className: d.headerRow,
+        className: u.headerRow,
         children: [(0, r.jsx)(l.aNP, {
-          className: d.warningIcon,
+          className: u.warningIcon,
           color: o.Z.colors.STATUS_DANGER
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: c.NW.string(c.t["4CxGXl"])
         })]
       }), (0, r.jsx)("div", {
-        className: d.incidentTiming,
+        className: u.incidentTiming,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/medium",
           children: c.NW.format(c.t.eevFb2, {
-            daysAgo: u(b)
+            daysAgo: d(b)
           })
         })
       }), (0, r.jsx)("div", {
-        className: d.noticeBody,
+        className: u.noticeBody,
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",
@@ -64,10 +64,10 @@ function p(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: d.footerContainer,
+      className: u.footerContainer,
       children: (0, r.jsx)(l.zxk, {
         look: l.zxk.Looks.BLANK,
-        className: d.detailsButton,
+        className: u.detailsButton,
         color: l.zxk.Colors.WHITE,
         children: c.NW.string(c.t.zKnzws)
       })

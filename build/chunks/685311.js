@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(536285),
-  l = n(857458),
+  l = n(536285),
+  s = n(857458),
   c = n(388905),
   u = n(703656),
   d = n(388032),
@@ -19,14 +19,14 @@ let h = function(e) {
     attemptDeepLink: o
   } = e, [h, g] = i.useState(0);
   i.useEffect(() => {
-    s.default.once("connected", () => {
+    l.default.once("connected", () => {
       g(1)
-    }), s.default.once("disconnected", () => {
-      (0, u.uL)((0, l.M)())
-    }), s.default.connect()
+    }), l.default.once("disconnected", () => {
+      (0, u.uL)((0, s.M)())
+    }), l.default.connect()
   }, []), i.useEffect(() => {
     if (0 !== h) return;
-    let e = setTimeout(() => (0, u.uL)((0, l.M)()), 3e3);
+    let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
     return () => clearTimeout(e)
   }, [h]);
   let _ = i.useCallback(async (e, t) => {
@@ -53,7 +53,7 @@ let h = function(e) {
           className: a()(p.marginTop8, p.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
-          onClick: () => (0, u.uL)((0, l.M)()),
+          onClick: () => (0, u.uL)((0, s.M)()),
           children: d.NW.string(d.t["2ixEBg"])
         })]
       });

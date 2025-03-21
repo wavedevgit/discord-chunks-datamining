@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => p
 }), n(47120), n(773603);
@@ -9,11 +9,11 @@ var r = n(192379),
   l = n(937111),
   s = n(430824),
   c = n(496675),
-  d = n(709054),
-  u = n(981631);
+  u = n(709054),
+  d = n(981631);
 
 function p(e) {
-  let [t, n] = r.useState(!1), [p, m] = r.useState(!1), f = d.default.cast(e), {
+  let [t, n] = r.useState(!1), [p, m] = r.useState(!1), f = u.default.cast(e), {
     joinRequest: h,
     guild: g
   } = (0, i.cj)([o.Z, l.Z, s.Z, c.Z], () => {
@@ -27,7 +27,7 @@ function p(e) {
     let n = null !== (e = s.Z.getGuild(t.guildId)) && void 0 !== e ? e : l.Z.getJoinRequestGuild(t.guildId);
     return {
       joinRequest: t,
-      isModmin: null != n && c.Z.can(u.Plq.KICK_MEMBERS, n),
+      isModmin: null != n && c.Z.can(d.Plq.KICK_MEMBERS, n),
       guild: n
     }
   });

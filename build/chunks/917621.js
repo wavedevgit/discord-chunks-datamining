@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => S
 }), n(47120), n(653041);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(481060),
   s = n(600164),
   c = n(424678),
-  d = n(184301),
-  u = n(237583),
+  u = n(184301),
+  d = n(237583),
   p = n(598077),
   m = n(63063),
   f = n(153066),
@@ -23,7 +23,7 @@ var r = n(200651),
   x = n(388032),
   E = n(705166);
 
-function j(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,20 +32,20 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function N(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,14 +76,14 @@ function C(e) {
   }) : (0, r.jsx)(l.yRy, {
     position: "left",
     renderPopout: e => a(t.user, e),
-    preload: () => (0, d.Z)(t.user.id, t.user.getAvatarURL(i, (0, l.pxk)(l.EFr.SIZE_80)), {
+    preload: () => (0, u.Z)(t.user.id, t.user.getAvatarURL(i, (0, l.pxk)(l.EFr.SIZE_80)), {
       guildId: i
     }),
     children: e => {
       var a;
       return (0, r.jsx)(l.ua7, {
         text: null !== (a = t.nick) && void 0 !== a ? a : h.ZP.getName(t.user),
-        children: a => (0, r.jsx)(l.P3F, N(O({
+        children: a => (0, r.jsx)(l.P3F, j(N({
           className: E.partyMemberKnown
         }, a, e), {
           children: (0, r.jsx)(l.qEK, {
@@ -199,7 +199,7 @@ class I extends i.PureComponent {
       isInBrowser: a,
       name: o,
       activity: s
-    } = this.props, [d, u] = this.getPartySize();
+    } = this.props, [u, d] = this.getPartySize();
     if (this.isDeadInvite()) switch (e) {
       case v.mFx.LISTEN:
         return x.NW.string(x.t["84qx9v"]);
@@ -228,10 +228,10 @@ class I extends i.PureComponent {
           onOpenSpotifyArtist: this.handleOpenSpotifyArtist
         }, t) : null
       })
-    }, "state")] : this.isActionType(v.mFx.LISTEN) ? x.NW.string(x.t.gXYoq6) : x.NW.string(x.t.eyKDl5) : this.isActionType(v.mFx.JOIN_REQUEST) ? this.isPartyFull() ? x.NW.string(x.t.jfrMtr) : this.hasPartySize() && 0 !== u ? x.NW.formatToPlainString(x.t.XWapnZ, {
-      number: u - d
-    }) : null : this.isInParty() ? x.NW.string(x.t.KC26NT) : t || n || i || this.isEmbeddedActivityApplication() ? this.isPartyFull() ? x.NW.string(x.t.jfrMtr) : this.hasPartySize() && 0 !== u ? x.NW.formatToPlainString(x.t.XWapnZ, {
-      number: u - d
+    }, "state")] : this.isActionType(v.mFx.LISTEN) ? x.NW.string(x.t.gXYoq6) : x.NW.string(x.t.eyKDl5) : this.isActionType(v.mFx.JOIN_REQUEST) ? this.isPartyFull() ? x.NW.string(x.t.jfrMtr) : this.hasPartySize() && 0 !== d ? x.NW.formatToPlainString(x.t.XWapnZ, {
+      number: d - u
+    }) : null : this.isInParty() ? x.NW.string(x.t.KC26NT) : t || n || i || this.isEmbeddedActivityApplication() ? this.isPartyFull() ? x.NW.string(x.t.jfrMtr) : this.hasPartySize() && 0 !== d ? x.NW.formatToPlainString(x.t.XWapnZ, {
+      number: d - u
     }) : null : x.NW.formatToPlainString(x.t.SqJBnJ, {
       name: o
     }) : x.NW.string(x.t.c3EWuL)
@@ -246,15 +246,15 @@ class I extends i.PureComponent {
       activity: o,
       message: s,
       renderSpotifyJoinButton: c,
-      renderCustomButton: d
-    } = this.props, u = {
+      renderCustomButton: u
+    } = this.props, d = {
       className: E.actionButton,
       size: l.zxk.Sizes.SMALL
-    }, p = null != d ? d(u) : null;
-    return null != p ? p : !this.isDeadInvite() && this.isActionType(v.mFx.LISTEN) && null != a && null != s && null != o && (0, y.Ps)(a) ? c(N(O({}, u), {
+    }, p = null != u ? u(d) : null;
+    return null != p ? p : !this.isDeadInvite() && this.isActionType(v.mFx.LISTEN) && null != a && null != s && null != o && (0, y.Ps)(a) ? c(j(N({}, d), {
       activity: o,
       user: s.author
-    })) : (0, r.jsx)(l.zxk, N(O({}, u, (() => t || !e || this.isDeadInvite() || this.isEmbeddedActivityApplication() ? this.canJoin() ? {
+    })) : (0, r.jsx)(l.zxk, j(N({}, d, (() => t || !e || this.isDeadInvite() || this.isEmbeddedActivityApplication() ? this.canJoin() ? {
       children: x.NW.string(x.t.VJlc0d),
       onClick: this.handleJoin
     } : this.canSync() ? {
@@ -300,9 +300,9 @@ class I extends i.PureComponent {
       }),
       unknownUser: !0
     });
-    let d = Math.min(o, 106);
-    for (; s.length < d;) s.push(null);
-    return (0, r.jsx)(u.Z, {
+    let u = Math.min(o, 106);
+    for (; s.length < u;) s.push(null);
+    return (0, r.jsx)(d.Z, {
       guildId: i,
       className: E.partyMembers,
       users: s,
@@ -317,17 +317,17 @@ class I extends i.PureComponent {
       coverImage: t,
       name: n,
       activity: i
-    } = this.props, a = this.isActionType(v.mFx.JOIN) || this.isActionType(v.mFx.JOIN_REQUEST), c = this.isDeadInvite(), d = null;
-    null == t || null == i || a ? !a && c && (d = (0, r.jsx)("div", {
+    } = this.props, a = this.isActionType(v.mFx.JOIN) || this.isActionType(v.mFx.JOIN_REQUEST), c = this.isDeadInvite(), u = null;
+    null == t || null == i || a ? !a && c && (u = (0, r.jsx)("div", {
       className: E.artworkSpotifySessionEnded
-    })) : d = (0, r.jsx)("img", {
+    })) : u = (0, r.jsx)("img", {
       alt: "",
       src: t,
       className: (0, f.l)(E, "artwork", this.getActionableMode())
     });
-    let u = null != i && null != d && null != i.assets && null != i.assets.large_text && "" !== i.assets.large_text && !c && (0, b.Z)(i) ? i.assets.large_text : null,
-      p = null != u ? (0, r.jsx)(l.ua7, {
-        text: u,
+    let d = null != i && null != u && null != i.assets && null != i.assets.large_text && "" !== i.assets.large_text && !c && (0, b.Z)(i) ? i.assets.large_text : null,
+      p = null != d ? (0, r.jsx)(l.ua7, {
+        text: d,
         children: e => {
           let {
             onMouseEnter: t,
@@ -337,16 +337,16 @@ class I extends i.PureComponent {
             onClick: this.handleOpenSpotifyAlbum,
             onMouseEnter: t,
             onMouseLeave: n,
-            children: d
+            children: u
           })
         }
-      }) : d;
+      }) : u;
     return (0, r.jsxs)("div", {
       className: o()(E.invite, e),
       children: [(0, r.jsx)("div", {
         className: E.coverImageWrapper,
         children: (0, r.jsx)("div", {
-          className: o()((0, f.l)(E, "coverImage", this.getActionableMode()), null != d ? E.blurred : null),
+          className: o()((0, f.l)(E, "coverImage", this.getActionableMode()), null != u ? E.blurred : null),
           style: {
             backgroundImage: null != t ? "url('".concat(t, "')") : void 0
           }
@@ -373,7 +373,7 @@ class I extends i.PureComponent {
                 marginRight: 0
               },
               children: [this.renderActionButton(), this.renderParty()]
-            }), null == d && a ? (0, r.jsx)("div", {
+            }), null == u && a ? (0, r.jsx)("div", {
               className: E.name,
               children: n
             }) : null]
@@ -390,47 +390,47 @@ class I extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "handleJoin", () => {
+    super(...e), O(this, "handleJoin", () => {
       let {
         onJoin: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleInvite", () => {
+    }), O(this, "handleInvite", () => {
       let {
         onInvite: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleSync", () => {
+    }), O(this, "handleSync", () => {
       let {
         onSync: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleDownloadApp", () => {
+    }), O(this, "handleDownloadApp", () => {
       let {
         onDownloadApp: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleOpenSpotifyTrack", () => {
+    }), O(this, "handleOpenSpotifyTrack", () => {
       let {
         activity: e,
         onOpenSpotifyTrack: t
       } = this.props;
       null != e && (null == t || t(e))
-    }), j(this, "handleOpenSpotifyArtist", e => {
+    }), O(this, "handleOpenSpotifyArtist", e => {
       let {
         activity: t,
         onOpenSpotifyArtist: n,
         message: r
       } = this.props;
       null != t && null != r && (null == n || n(t, r.author.id, e))
-    }), j(this, "handleOpenSpotifyAlbum", () => {
+    }), O(this, "handleOpenSpotifyAlbum", () => {
       let {
         activity: e,
         onOpenSpotifyAlbum: t,
         message: n
       } = this.props;
       null != e && null != n && (null == t || t(e, n.author.id))
-    }), j(this, "renderUser", (e, t, n) => {
+    }), O(this, "renderUser", (e, t, n) => {
       let {
         renderUserPopout: i,
         guildId: a

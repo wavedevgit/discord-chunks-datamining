@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => c
 });
@@ -15,14 +15,14 @@ function c(e) {
   let {
     message: n,
     channel: c,
-    playingActivity: d,
-    onJoinStream: u,
+    playingActivity: u,
+    onJoinStream: d,
     usernameHook: p,
     compact: m
   } = e, f = (0, o.ZP)(n), h = null === (t = n.call) || void 0 === t ? void 0 : t.duration, g = p(f), _ = s.NW.format(s.t.FKXvaG, {
     username: f.nick,
-    activityName: null != d ? d.name : "unknown",
-    onJoinStream: u,
+    activityName: null != u ? u.name : "unknown",
+    onJoinStream: d,
     usernameHook: g
   });
   return null != h && (_ = s.NW.format(s.t.NEFxtb, {

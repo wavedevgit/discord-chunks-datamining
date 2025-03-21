@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -28,8 +28,8 @@ function c(e) {
   }
   return e
 }
-let d = [],
-  u = {},
+let u = [],
+  d = {},
   p = null,
   m = 0;
 
@@ -64,18 +64,18 @@ function f(e) {
 }
 class h extends(r = i.ZP.Store) {
   getInvites() {
-    return d
+    return u
   }
   getInviteStatuses() {
-    return u
+    return d
   }
   isInviteGameInstalled(e) {
     var t;
-    return null === (t = u[e.invite_id]) || void 0 === t ? void 0 : t.installed
+    return null === (t = d[e.invite_id]) || void 0 === t ? void 0 : t.installed
   }
   isInviteJoinable(e) {
     var t;
-    return null === (t = u[e.invite_id]) || void 0 === t ? void 0 : t.joinable
+    return null === (t = d[e.invite_id]) || void 0 === t ? void 0 : t.joinable
   }
   getLastUnseenInvite() {
     return p
@@ -90,28 +90,28 @@ let g = new h(a.Z, {
     let {
       gameInvites: t
     } = e;
-    d = t.map(f).filter(o.lm)
+    u = t.map(f).filter(o.lm)
   },
   GAME_INVITE_CREATE: function(e) {
     let {
       gameInvite: t
     } = e, n = f(t);
-    null != n && (d = [n, ...d], p = t, m += 1)
+    null != n && (u = [n, ...u], p = t, m += 1)
   },
   GAME_INVITE_DELETE: function(e) {
     let {
       inviteId: t
     } = e;
-    d = d.filter(e => e.invite_id !== t)
+    u = u.filter(e => e.invite_id !== t)
   },
   GAME_INVITE_DELETE_MANY: function(e) {
     let {
       inviteIds: t
     } = e;
-    d = d.filter(e => !t.includes(e.invite_id))
+    u = u.filter(e => !t.includes(e.invite_id))
   },
   GAME_INVITE_UPDATE_STATUS: function(e) {
-    (u = c({}, u))[e.inviteId] = {
+    (d = c({}, d))[e.inviteId] = {
       installed: e.installed,
       joinable: e.joinable
     }

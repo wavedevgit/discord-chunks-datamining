@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(399606),
   s = n(481060),
   c = n(434650),
-  d = n(321231),
-  u = n(230171),
+  u = n(321231),
+  d = n(230171),
   p = n(749681),
   m = n(955415),
   f = n(706454),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(370210),
   x = n(258971),
   E = n(981631),
-  j = n(49898),
-  O = n(388032),
-  N = n(997408);
+  O = n(49898),
+  N = n(388032),
+  j = n(997408);
 
 function C(e) {
   var t, n, C;
@@ -34,14 +34,14 @@ function C(e) {
     embedUrl: T
   } = e, {
     enabled: P
-  } = d.G.useExperiment({
+  } = u.G.useExperiment({
     location: "ApplicationDirectoryProfileEmbed"
   }), [A, w, Z] = (0, l.Wu)([y.Z], () => [y.Z.getApplication(I), y.Z.isInvalidApplication(I), y.Z.getApplicationFetchState(I)], [I]), k = (0, l.e7)([f.default], () => f.default.locale), R = (0, l.e7)([g.Z], () => {
     var e;
     return null !== (e = g.Z.getGuildId()) && void 0 !== e ? e : void 0
   }), [D, L] = i.useState(!1), M = i.useCallback(e => {
     e && L(!0)
-  }, []), W = (0, c.O)(M), F = i.useCallback(() => {
+  }, []), W = (0, c.O)(M), U = i.useCallback(() => {
     _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
@@ -53,8 +53,8 @@ function C(e) {
   i.useEffect(() => {
     (0, v.gZ)(I)
   }, [I]), i.useEffect(() => {
-    D && Z === y.M.FETCHED && F()
-  }, [D, Z, F]), i.useEffect(() => {
+    D && Z === y.M.FETCHED && U()
+  }, [D, Z, U]), i.useEffect(() => {
     D && w && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
@@ -62,7 +62,7 @@ function C(e) {
       channel_id: S.channel_id
     })
   }, [D, R, w, S.author.id, S.channel_id]);
-  let U = e => {
+  let F = e => {
     _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
@@ -70,7 +70,7 @@ function C(e) {
       guild_id: R,
       channel_id: S.channel_id
     }), (0, p.transitionToGlobalDiscovery)({
-      tab: j.GlobalDiscoveryTab.APPS,
+      tab: O.GlobalDiscoveryTab.APPS,
       applicationId: I,
       newSessionState: {
         guildId: R,
@@ -80,25 +80,25 @@ function C(e) {
       }
     })
   };
-  if (P && null != A) return (0, r.jsx)(u.O, {
+  if (P && null != A) return (0, r.jsx)(d.O, {
     app: h.ZP.createFromServer(A),
     embedUrl: T,
-    linkType: u.U.APP_DISCOVERY,
-    onView: F
+    linkType: d.U.APP_DISCOVERY,
+    onView: U
   });
   if (w) return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: O.NW.string(O.t.j4KtLS)
+      text: N.NW.string(N.t.j4KtLS)
     }), (0, r.jsx)(m.Z.Body, {
       children: (0, r.jsxs)("div", {
-        className: N.invalidBody,
+        className: j.invalidBody,
         children: [(0, r.jsx)(m.Z.Icon, {
           expired: !0
         }), (0, r.jsx)(m.Z.Info, {
           expired: !0,
-          title: O.NW.string(O.t.NaQLEx),
-          children: O.NW.string(O.t["0H5OT0"])
+          title: N.NW.string(N.t.NaQLEx),
+          children: N.NW.string(N.t["0H5OT0"])
         })]
       })
     })]
@@ -106,7 +106,7 @@ function C(e) {
   if (null == A || Z === y.M.FETCHING) return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: O.NW.string(O.t.m9hXGR)
+      text: N.NW.string(N.t.m9hXGR)
     }), (0, r.jsx)(m.Z.Body, {
       resolving: !0
     })]
@@ -125,29 +125,29 @@ function C(e) {
   return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: O.NW.string(O.t.KC1oZ2)
+      text: N.NW.string(N.t.KC1oZ2)
     }), (0, r.jsxs)(m.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: N.applicationInfoContainer,
+        className: j.applicationInfoContainer,
         children: [(0, r.jsx)(m.Z.Icon, {
           application: h.ZP.createFromServer(A),
-          className: N.applicationIcon,
-          onClick: () => U("application_icon")
+          className: j.applicationIcon,
+          onClick: () => F("application_icon")
         }), (0, r.jsx)(m.Z.Info, {
           title: (0, r.jsx)(s.P3F, {
-            onClick: () => U("application_name"),
+            onClick: () => F("application_name"),
             children: A.name
           }),
           children: G > 0 && V && (0, r.jsxs)(s.P3F, {
-            className: N.guildCountContainer,
-            onClick: () => U("application_guild_count"),
+            className: j.guildCountContainer,
+            onClick: () => F("application_guild_count"),
             children: [(0, r.jsx)(s.Jmo, {
               size: "custom",
               color: "currentColor",
               width: 16,
               height: 16,
-              className: N.guildCountIcon
-            }), O.NW.format(O.t["6IW6Wl"], {
+              className: j.guildCountIcon
+            }), N.NW.format(N.t["6IW6Wl"], {
               guildCount: B.format(G)
             })]
           })
@@ -164,7 +164,7 @@ function C(e) {
           })
         },
         color: m.Z.Button.Colors.GREEN,
-        children: O.NW.string(O.t.NgXl3N)
+        children: N.NW.string(N.t.NgXl3N)
       })]
     })]
   })

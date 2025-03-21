@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r, i, a, o = n(442837),
   l = n(570140);
@@ -9,18 +9,18 @@ let s = "UPDATE_NOT_AVAILABLE";
 function c(e) {
   s = e.type
 }
-class d extends(a = o.ZP.Store) {
+class u extends(a = o.ZP.Store) {
   getState() {
     return s
   }
 }
-i = "AutoUpdateStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
+i = "AutoUpdateStore", (r = "displayName") in u ? Object.defineProperty(u, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : d[r] = i;
-let u = new d(l.Z, {
+}) : u[r] = i;
+let d = new u(l.Z, {
   CHECKING_FOR_UPDATES: c,
   UPDATE_NOT_AVAILABLE: c,
   UPDATE_AVAILABLE: c,

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => o
 });
@@ -29,8 +29,8 @@ function o(e) {
   }(e, ["activity", "user", "source"]), {
     label: s,
     tooltip: c,
-    loading: d,
-    disabled: u,
+    loading: u,
+    disabled: d,
     onClick: p
   } = (0, a.Lz)(t, n, o);
   return (0, r.jsx)(i.ua7, {
@@ -59,12 +59,12 @@ function o(e) {
         }
         return e
       }({}, l), n = n = {
-        color: u ? i.zxk.Colors.PRIMARY : i.zxk.Colors.GREEN,
+        color: d ? i.zxk.Colors.PRIMARY : i.zxk.Colors.GREEN,
         onClick: p,
         onMouseEnter: a,
         onMouseLeave: o,
-        disabled: !d && u,
-        submitting: d,
+        disabled: !u && d,
+        submitting: u,
         children: s
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

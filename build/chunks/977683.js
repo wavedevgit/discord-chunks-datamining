@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(192379),
   i = n(410030),
@@ -10,17 +10,17 @@ var r = n(192379),
   s = n(918088),
   c = n(562293);
 
-function d(e, t) {
+function u(e, t) {
   var n;
-  let d = (0, l.v)(e),
-    u = (0, o.cE)(d.getChannelId())[d.id],
-    p = (0, c.Z)(null === (n = d.poll) || void 0 === n ? void 0 : n.expiry),
+  let u = (0, l.v)(e),
+    d = (0, o.cE)(u.getChannelId())[u.id],
+    p = (0, c.Z)(null === (n = u.poll) || void 0 === n ? void 0 : n.expiry),
     m = a.Yk.useSetting(),
     f = (0, i.ZP)(),
     h = null != t ? t : f;
-  return r.useMemo(() => (0, s.ZP)(d, u, {
+  return r.useMemo(() => (0, s.ZP)(u, d, {
     animateEmoji: m,
     theme: h,
     formattedExpirationLabel: p
-  }), [m, d, u, p, h])
+  }), [m, u, d, p, h])
 }

@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r, i, a, o = n(442837),
   l = n(570140);
@@ -16,7 +16,7 @@ i = "ProxyBlockStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
   configurable: !0,
   writable: !0
 }) : c[r] = i;
-let d = new c(l.Z, {
+let u = new c(l.Z, {
   PROXY_BLOCKED_REQUEST: function(e) {
     s = !0
   }

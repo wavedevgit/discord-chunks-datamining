@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 });
@@ -10,8 +10,8 @@ var i = n(512722),
   l = n(481060),
   s = n(671533),
   c = n(240864),
-  d = n(613810),
-  u = n(596211),
+  u = n(613810),
+  d = n(596211),
   p = n(388032),
   m = n(254404);
 
@@ -23,7 +23,7 @@ function f(e) {
   } = e, _ = (0, o.e7)([c.Z], () => c.Z.getGuildProduct(g)), b = (null !== (f = null == _ ? void 0 : null === (t = _.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== f ? f : 0) > 1, v = null == _ ? void 0 : null === (i = _.attachments) || void 0 === i ? void 0 : null === (n = i[0]) || void 0 === n ? void 0 : n.id;
   return b ? (0, r.jsxs)(l.zxk, {
     onClick: function() {
-      d.Z.open({
+      u.Z.open({
         guildId: h,
         productId: g
       })
@@ -39,7 +39,7 @@ function f(e) {
       height: 16,
       direction: s.Z.Directions.RIGHT
     })]
-  }) : (a()(null != v, "No attachment"), (0, r.jsxs)(u.Z, {
+  }) : (a()(null != v, "No attachment"), (0, r.jsxs)(d.Z, {
     guildId: h,
     productId: g,
     attachmentId: v,

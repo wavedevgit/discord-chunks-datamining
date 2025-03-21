@@ -1,14 +1,14 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 31942 **/
 n.d(t, {
   C: () => o,
-  k: () => s
+  k: () => a
 });
-var i = n(192379),
-  r = n(937615),
+var r = n(192379),
+  i = n(937615),
   l = n(388032);
 
 function o(e) {
-  return i.useMemo(() => {
+  return r.useMemo(() => {
     if (null == e) return;
     let t = null != e.role_id,
       n = e.attachments_count > 0;
@@ -16,13 +16,13 @@ function o(e) {
   }, [e])
 }
 
-function s(e) {
-  return i.useMemo(() => {
+function a(e) {
+  return r.useMemo(() => {
     if ((null == e ? void 0 : e.price) == null) return;
     let {
       amount: t,
       currency: n
     } = e.price;
-    return (0, r.T4)(t, n)
+    return (0, i.T4)(t, n)
   }, [e])
 }

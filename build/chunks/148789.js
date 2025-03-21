@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
@@ -13,7 +13,7 @@ function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, d] = i.useState(!1), [u, p] = i.useState(!1), m = i.useCallback(async e => {
+  } = e, [c, u] = i.useState(!1), [d, p] = i.useState(!1), m = i.useCallback(async e => {
     e.stopPropagation(), p(!0);
     try {
       await o.Z.cancelFriendRequest({
@@ -25,7 +25,7 @@ function c(e) {
       p(!1)
     }
   }, [n, t]), f = i.useCallback(async e => {
-    e.stopPropagation(), d(!0);
+    e.stopPropagation(), u(!0);
     try {
       await o.Z.maybeConfirmFriendRequestAccept({
         userId: t,
@@ -33,7 +33,7 @@ function c(e) {
         location: "ActionButtonFriendRequest"
       })
     } finally {
-      d(!1)
+      u(!1)
     }
   }, [n, t]);
   return (0, r.jsxs)("div", {
@@ -44,7 +44,7 @@ function c(e) {
       color: a.zxk.Colors.GREEN,
       size: a.zxk.Sizes.NONE,
       submitting: c,
-      disabled: u,
+      disabled: d,
       onClick: f,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
@@ -56,7 +56,7 @@ function c(e) {
       look: a.zxk.Looks.FILLED,
       color: a.zxk.Colors.PRIMARY,
       size: a.zxk.Sizes.NONE,
-      submitting: u,
+      submitting: d,
       disabled: c,
       onClick: m,
       children: (0, r.jsx)(a.Text, {

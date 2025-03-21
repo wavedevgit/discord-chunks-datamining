@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => N
+  Z: () => j
 }), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(442837),
   s = n(524437),
   c = n(481060),
-  d = n(140155),
-  u = n(497089),
+  u = n(140155),
+  d = n(497089),
   p = n(178480),
   m = n(11799),
   f = n(616032),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(981631),
   x = n(388032),
   E = n(648485),
-  j = n(215921);
+  O = n(215921);
 
-function O(e) {
+function N(e) {
   let {
     onClick: t
   } = e;
@@ -35,12 +35,12 @@ function O(e) {
       size: "xs",
       color: "currentColor"
     }),
-    className: j.controlButton,
+    className: O.controlButton,
     onClick: t
   })
 }
 
-function N(e) {
+function j(e) {
   let {
     setTab: t,
     badgeState: n,
@@ -48,9 +48,9 @@ function N(e) {
   } = e, {
     initialized: c,
     items: x,
-    loading: j,
-    loadMore: N
-  } = (0, m.y6)(), C = (0, l.e7)([d.Z], () => d.Z.localItems), I = (0, h.Us)({
+    loading: O,
+    loadMore: j
+  } = (0, m.y6)(), C = (0, l.e7)([u.Z], () => u.Z.localItems), I = (0, h.Us)({
     location: "ForYou"
   }), S = i.useMemo(() => [...[...x, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [x, C]), T = x.length > 0 ? x[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
     if (null != T && 0 >= b.default.compare(T.id, P)) return !1;
@@ -69,18 +69,18 @@ function N(e) {
       setTab: t,
       badgeState: n,
       closePopout: a,
-      children: A ? (0, r.jsx)(O, {
+      children: A ? (0, r.jsx)(N, {
         onClick: () => {
           null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
-            action_type: u.ud.MARK_ALL_READ
+            action_type: d.ud.MARK_ALL_READ
           }))
         }
       }) : null
     }), (0, r.jsx)(f.Z, {
       initialized: c,
       items: S,
-      loading: j,
-      loadMore: N
+      loading: O,
+      loadMore: j
     })]
   })
 }

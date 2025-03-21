@@ -1,13 +1,13 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 62117 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(47120);
-var i, r = n(442837),
+var i, s = n(442837),
   l = n(570140),
-  o = n(709054),
-  s = n(592125);
+  r = n(709054),
+  a = n(592125);
 
-function a(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,47 +15,47 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let u = {},
-  d = u;
+let o = {},
+  h = o;
 
-function c() {
-  o.default.keys(d).forEach(e => {
-    null == s.Z.getChannel(e) && delete d[e]
+function u() {
+  r.default.keys(h).forEach(e => {
+    null == a.Z.getChannel(e) && delete h[e]
   })
 }
-class h extends(i = r.ZP.PersistedStore) {
+class c extends(i = s.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(s.Z), d = null != e ? e : u
+    this.waitFor(a.Z), h = null != e ? e : o
   }
   getState() {
-    return d
+    return h
   }
   getCollapsed() {
-    return d
+    return h
   }
   isCollapsed(e) {
-    return d[e] || !1
+    return h[e] || !1
   }
 }
-a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
-let f = new h(l.Z, {
-  CONNECTION_OPEN: c,
-  OVERLAY_INITIALIZE: c,
+d(c, "displayName", "CollapsedVoiceChannelStore"), d(c, "persistKey", "collapsedChannels");
+let g = new c(l.Z, {
+  CONNECTION_OPEN: u,
+  OVERLAY_INITIALIZE: u,
   CHANNEL_COLLAPSE: function(e) {
     let {
       channelId: t
     } = e;
-    d[t] ? delete d[t] : d[t] = !0, d = function(e) {
+    h[t] ? delete h[t] : h[t] = !0, h = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          a(e, t, n[t])
+          d(e, t, n[t])
         })
       }
       return e
-    }({}, d)
+    }({}, h)
   }
 })

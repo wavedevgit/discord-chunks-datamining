@@ -1,4 +1,5 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 28965 **/
+"use strict";
 e.exports = {
   sm: "sm__0d948",
   md: "md__0d948"

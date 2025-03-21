@@ -1,21 +1,21 @@
-/** Chunk was on 99393 **/
+/** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(200651),
   s = n(192379),
-  i = n(481060),
-  o = n(377171),
-  l = n(73965);
-let a = s.forwardRef(function(e, t) {
+  o = n(481060),
+  i = n(377171),
+  a = n(73965);
+let l = s.forwardRef(function(e, t) {
   let {
     isInventory: n,
     style: s,
-    children: a
+    children: l
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: l.desktopTooltip,
+    className: a.desktopTooltip,
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -36,16 +36,16 @@ let a = s.forwardRef(function(e, t) {
     }({
       marginTop: 8 * !!n
     }, s),
-    children: [(0, r.jsx)(i.d3s, {
+    children: [(0, r.jsx)(o.d3s, {
       size: "custom",
-      className: l.infoIcon,
+      className: a.infoIcon,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
-      color: n ? o.Z.TEXT_MUTED : o.Z.WHITE
-    }), (0, r.jsx)(i.Text, {
+      color: n ? i.Z.TEXT_MUTED : i.Z.WHITE
+    }), (0, r.jsx)(o.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
-      children: a
+      children: l
     })]
   })
 })

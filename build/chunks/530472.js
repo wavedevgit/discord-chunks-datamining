@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => c
 });
@@ -14,11 +14,11 @@ function c(e) {
   var t;
   let n, {
       message: c,
-      onDeleteMessage: d,
-      children: u
+      onDeleteMessage: u,
+      children: d
     } = e,
     p = null === (t = c.interactionMetadata) || void 0 === t ? void 0 : t.ephemerality_reason,
-    m = () => d(c, !0);
+    m = () => u(c, !0);
   if (null != p) {
     let e = (0, a.i)(p);
     n = (0, r.jsx)("div", {
@@ -42,6 +42,6 @@ function c(e) {
       size: "xs",
       color: "currentColor",
       className: s.icon
-    }), n, u]
+    }), n, d]
   })
 }

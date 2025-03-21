@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => h
 }), n(47120);
@@ -40,8 +40,8 @@ function s(e, t) {
   }), e
 }
 let c = !1,
-  d = {},
-  u = new Set,
+  u = {},
+  d = new Set,
   p = {};
 
 function m() {
@@ -49,10 +49,10 @@ function m() {
 }
 class f extends(r = i.ZP.Store) {
   getMessagesPendingDeletion() {
-    return u
+    return d
   }
   getScheduledMessagesForInbox() {
-    return d
+    return u
   }
   getPendingScheduledMessage(e) {
     return p[e]
@@ -68,7 +68,7 @@ let h = new f(a.Z, {
       channelId: t,
       scheduledMessageSend: n
     } = e;
-    d = s(l({}, d), {
+    u = s(l({}, u), {
       [n.scheduledMessageId]: n
     }), p = l({}, p), delete p[t]
   },
@@ -76,22 +76,22 @@ let h = new f(a.Z, {
     let {
       scheduledMessageId: t
     } = e;
-    if (u.has(t)) return !1;
-    (u = new Set(u)).add(t)
+    if (d.has(t)) return !1;
+    (d = new Set(d)).add(t)
   },
   SCHEDULED_MESSAGES_DELETE_SUCCESS: function(e) {
     let {
       scheduledMessageId: t
     } = e;
-    if (!u.has(t)) return !1;
-    (u = new Set(u)).delete(t), d = l({}, d), delete d[t]
+    if (!d.has(t)) return !1;
+    (d = new Set(d)).delete(t), u = l({}, u), delete u[t]
   },
   SCHEDULED_MESSAGES_DELETE_FAILURE: function(e) {
     let {
       scheduledMessageId: t
     } = e;
-    if (!u.has(t)) return !1;
-    (u = new Set(u)).delete(t)
+    if (!d.has(t)) return !1;
+    (d = new Set(d)).delete(t)
   },
   FETCH_SCHEDULED_MESSAGES: function(e) {
     let {} = e;
@@ -101,7 +101,7 @@ let h = new f(a.Z, {
     let {
       messages: t
     } = e;
-    for (let e of (d = {}, t)) d[e.scheduledMessageId] = e;
+    for (let e of (u = {}, t)) u[e.scheduledMessageId] = e;
     c = !1
   },
   FETCH_SCHEDULED_MESSAGES_FAILURE: function(e) {

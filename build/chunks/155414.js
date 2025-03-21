@@ -1,13 +1,13 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 31942 **/
 n.d(t, {
   X: () => o
 });
-var i = n(544891),
-  r = n(881052),
+var r = n(544891),
+  i = n(881052),
   l = n(981631);
 let o = async (e, t) => {
   try {
-    return (await i.tn.get({
+    return (await r.tn.get({
       url: l.ANM.PRICE_TIERS,
       query: {
         price_tier_type: t,
@@ -16,6 +16,6 @@ let o = async (e, t) => {
       rejectWithError: !1
     })).body
   } catch (e) {
-    throw new r.Hx(e)
+    throw new i.Hx(e)
   }
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => b
+  Z: () => f
 });
 var n = r(200651),
   l = r(481060),
@@ -23,7 +23,7 @@ let d = {
     [s.kG.PLAYSTATION]: () => u.NW.string(u.t.fFl4jo)
   };
 
-function b(e) {
+function f(e) {
   var t, r, l, {
       type: i,
       "aria-label": o

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => c
 }), n(266796);
@@ -14,18 +14,18 @@ function c(e) {
   var t, n;
   let {
     author: c,
-    inviteError: d
-  } = e, u = (0, i.e7)([o.default], () => o.default.getId()) === c.id ? s.NW.string(s.t.C89OLC) : s.NW.string(s.t["YVub5+"]), p = (0, l.l)(null == d ? void 0 : d.code);
+    inviteError: u
+  } = e, d = (0, i.e7)([o.default], () => o.default.getId()) === c.id ? s.NW.string(s.t.C89OLC) : s.NW.string(s.t["YVub5+"]), p = (0, l.l)(null == u ? void 0 : u.code);
   return (0, r.jsxs)(a.Z, {
     children: [(0, r.jsx)(a.Z.Header, {
-      text: u
+      text: d
     }), (0, r.jsxs)(a.Z.Body, {
       children: [(0, r.jsx)(a.Z.Icon, {
         expired: !0
       }), (0, r.jsx)(a.Z.Info, {
         expired: !0,
         title: null !== (t = null == p ? void 0 : p.title) && void 0 !== t ? t : s.NW.string(s.t["Jhx/ub"]),
-        children: null !== (n = null == p ? void 0 : p.description) && void 0 !== n ? n : null == d ? void 0 : d.message
+        children: null !== (n = null == p ? void 0 : p.description) && void 0 !== n ? n : null == u ? void 0 : u.message
       })]
     })]
   })

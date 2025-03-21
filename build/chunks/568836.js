@@ -1,8 +1,8 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  $G: () => u,
+  $G: () => d,
   OR: () => p,
-  aL: () => d
+  aL: () => u
 });
 var r = n(200651);
 n(192379);
@@ -42,8 +42,8 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = 660,
-  u = e => (0, r.jsx)(o.Z, c(s({}, e), {
+let u = 660,
+  d = e => (0, r.jsx)(o.Z, c(s({}, e), {
     className: a()(e.className, {
       [l.embedVertical]: !e.isHorizontal,
       [l.embedHorizontal]: e.isHorizontal
@@ -53,7 +53,7 @@ let d = 660,
     let {
       isHorizontal: t
     } = e;
-    return (0, r.jsx)(u, c(s({}, e), {
+    return (0, r.jsx)(d, c(s({}, e), {
       media: () => (0, r.jsx)("div", {
         className: l.loadingDescription,
         children: (0, r.jsx)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 14721 **/
 n.d(t, {
   Z: () => u
 }), n(266796);
@@ -20,7 +20,7 @@ function u(e) {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
-  }), p = null != i ? (0, r.jsx)(o.P3F, {
+  }), _ = null != i ? (0, r.jsx)(o.P3F, {
     className: d.__invalid_channelLink,
     onClick: i.navigateToChannel,
     "aria-label": i.ariaLabel,
@@ -41,7 +41,7 @@ function u(e) {
     className: d.container,
     children: [(0, r.jsxs)("div", {
       className: d.infoContainer,
-      children: [p, (0, r.jsx)(o.Text, {
+      children: [_, (0, r.jsx)(o.Text, {
         color: "interactive-normal",
         variant: "text-sm/normal",
         children: t.description

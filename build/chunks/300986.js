@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -10,8 +10,8 @@ var i = n(442837),
   l = n(706454),
   s = n(594174),
   c = n(626135),
-  d = n(63063),
-  u = n(51144),
+  u = n(63063),
+  d = n(51144),
   p = n(665149),
   m = n(981631),
   f = n(388032);
@@ -20,9 +20,9 @@ let h = new Set(["ko", "ja"]);
 function g(e) {
   let {
     className: t
-  } = e, n = (0, i.e7)([s.default], () => s.default.getCurrentUser()), g = (0, i.e7)([l.default], () => l.default.locale), _ = (0, u.EO)(n);
+  } = e, n = (0, i.e7)([s.default], () => s.default.getCurrentUser()), g = (0, i.e7)([l.default], () => l.default.locale), _ = (0, d.EO)(n);
   return (0, r.jsx)(o.eee, {
-    href: d.w,
+    href: u.w,
     target: "_blank",
     tabIndex: -1,
     children: (0, r.jsx)(p.JO, {

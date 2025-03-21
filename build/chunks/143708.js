@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 });
@@ -10,8 +10,8 @@ var i = n(442837),
   l = n(314897),
   s = n(944486),
   c = n(585483),
-  d = n(51144),
-  u = n(981631),
+  u = n(51144),
+  d = n(981631),
   p = n(388032),
   m = n(651873);
 
@@ -22,17 +22,17 @@ function f(e) {
     } = e,
     _ = (0, i.e7)([l.default], () => l.default.getId()),
     b = (0, i.e7)([s.Z], () => s.Z.getChannelId()),
-    v = d.ZP.useName(h);
+    v = u.ZP.useName(h);
   return _ === h.id ? (t = p.NW.string(p.t["F/OLvL"]), f = p.NW.string(p.t.C89OLC)) : (f = p.NW.string(p.t["YVub5+"]), g ? t = p.NW.string(p.t["57nBt7"]) : null != v ? (t = p.NW.formatToPlainString(p.t["9Akp1t"], {
     username: v
   }), n = (0, r.jsx)(o.Z.Button, {
     onClick: function() {
       let {
         id: e
-      } = h, t = "@".concat(d.ZP.getUserTag(h, {
+      } = h, t = "@".concat(u.ZP.getUserTag(h, {
         decoration: "never"
       }));
-      c.S.dispatchToLastSubscribed(u.CkL.INSERT_TEXT, {
+      c.S.dispatchToLastSubscribed(d.CkL.INSERT_TEXT, {
         plainText: t,
         rawText: "<@".concat(e, ">")
       }), null != b && a.Z.startTyping(b)

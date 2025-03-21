@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => l
 }), n(47120);
@@ -11,7 +11,7 @@ function o(e) {
 }
 
 function l(e, t) {
-  let [n, l] = r.useState(t), [s, c] = r.useState(o(n)), d = r.useRef(s), u = r.useRef(null), p = r.useCallback(e => {
+  let [n, l] = r.useState(t), [s, c] = r.useState(o(n)), u = r.useRef(s), d = r.useRef(null), p = r.useCallback(e => {
     l(t => {
       let n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -32,7 +32,7 @@ function l(e, t) {
           return e
         }({}, t, e),
         r = o(n);
-      return r !== d.current && (d.current = r, null != u.current && (cancelAnimationFrame(u.current), u.current = null), r ? c(!0) : u.current = requestAnimationFrame(() => c(!1))), n
+      return r !== u.current && (u.current = r, null != d.current && (cancelAnimationFrame(d.current), d.current = null), r ? c(!0) : d.current = requestAnimationFrame(() => c(!1))), n
     })
   }, []);
   return r.useEffect(() => {

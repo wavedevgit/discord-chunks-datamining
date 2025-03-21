@@ -1,22 +1,22 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 31942 **/
 n.d(t, {
   NB: () => o,
-  ar: () => d,
-  fG: () => u,
-  kg: () => s,
-  pM: () => a
+  ar: () => s,
+  fG: () => c,
+  kg: () => a,
+  pM: () => u
 }), n(566702), n(266796);
-var i = n(881052);
+var r = n(881052);
 n(496675);
-var r = n(981631),
+var i = n(981631),
   l = n(388032);
 let o = "_role";
 
-function s(e) {
+function a(e) {
   if (!(e >= 0)) switch (-e) {
-    case r.evJ.ENTITY_TOO_LARGE:
+    case i.evJ.ENTITY_TOO_LARGE:
       return l.NW.string(l.t.YbdEFB);
-    case r.evJ.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
+    case i.evJ.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
       return l.NW.string(l.t.ZaXBoK);
     case 1:
       return l.NW.string(l.t.R0RpRU);
@@ -27,13 +27,13 @@ function s(e) {
   }
 }
 
-function a(e) {
+function u(e) {
   let {
     newRoleParams: t
   } = e;
   if (null != t && "" === t.name.trim()) {
     var n;
-    return n = l.NW.string(l.t["V0B/k5"]), new i.Hx({
+    return n = l.NW.string(l.t["V0B/k5"]), new r.Hx({
       status: 400,
       body: {
         message: "Invalid form body",
@@ -50,30 +50,30 @@ function a(e) {
   }
 }
 
-function u(e) {
+function c(e) {
   var t;
   let {
     guildProductListing: n,
-    name: i,
-    priceTier: r,
+    name: r,
+    priceTier: i,
     description: l,
     image: o,
-    imageName: s,
-    isImageChanged: a,
-    newRoleParams: u,
-    hasUnsavedAttachmentChanges: d
-  } = e, c = {};
-  (null == n ? void 0 : n.name) !== i && "" !== i.trim() && (c.name = i), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (c.description = l), (null == n ? void 0 : n.price_tier) !== r && null != r && (c.priceTier = r), null != u && "" !== u.name.trim() ? c.createNewRole = !0 : null === u && (c.unlinkRole = !0), o.startsWith("data:") && (a || null == n && (Object.keys(c).length > 0 || d)) && (c.image = o, c.imageName = s);
-  let h = Object.keys(c).length > 0 || d;
+    imageName: a,
+    isImageChanged: u,
+    newRoleParams: c,
+    hasUnsavedAttachmentChanges: s
+  } = e, d = {};
+  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = !0 : null === c && (d.unlinkRole = !0), o.startsWith("data:") && (u || null == n && (Object.keys(d).length > 0 || s)) && (d.image = o, d.imageName = a);
+  let f = Object.keys(d).length > 0 || s;
   return {
-    changes: c,
-    hasUnsavedChanges: h,
-    canSaveForDraft: h,
-    canSaveForPublished: h,
-    canPublishOrUnpublish: !(null == n || h)
+    changes: d,
+    hasUnsavedChanges: f,
+    canSaveForDraft: f,
+    canSaveForPublished: f,
+    canPublishOrUnpublish: !(null == n || f)
   }
 }
 
-function d(e, t) {
-  return "".concat(location.protocol, "//").concat(location.host).concat(r.Z5c.GUILD_PRODUCT(e, t))
+function s(e, t) {
+  return "".concat(location.protocol, "//").concat(location.host).concat(i.Z5c.GUILD_PRODUCT(e, t))
 }

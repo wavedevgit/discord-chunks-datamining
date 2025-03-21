@@ -1,67 +1,67 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 83957 **/
 n.d(t, {
-  Af: () => d,
+  Af: () => c,
   GO: () => u,
-  Gh: () => g,
-  Pq: () => h,
-  Q2: () => f,
-  Qh: () => c,
-  Vr: () => s,
-  _v: () => v,
-  hx: () => a,
-  r: () => p
+  Gh: () => p,
+  Pq: () => _,
+  Q2: () => E,
+  Qh: () => d,
+  Vr: () => o,
+  _v: () => f,
+  hx: () => s,
+  r: () => I
 }), n(704215), n(605236);
-var i = n(314897);
+var r = n(314897);
 n(271383);
-var r = n(626135),
+var i = n(626135),
   l = n(308083),
-  o = n(981631);
+  a = n(981631);
 
-function s(e) {
+function o(e) {
   let {
     guildId: t,
     source: n,
     location: l,
-    messageId: s,
-    tagUserId: a
-  } = e, u = i.default.getId();
-  r.default.track(o.rMx.CLAN_APPLY_TO_JOIN_VIEWED, {
+    messageId: o,
+    tagUserId: s
+  } = e, u = r.default.getId();
+  i.default.track(a.rMx.CLAN_APPLY_TO_JOIN_VIEWED, {
     guild_id: t,
     source: n,
     location: l,
     viewing_user_id: u,
-    tag_owner_user_id: a,
-    message_id: s
+    tag_owner_user_id: s,
+    message_id: o
   })
 }
 
-function a(e) {
+function s(e) {
   let {
     guildId: t,
     userId: n,
-    source: i
+    source: r
   } = e;
-  r.default.track(o.rMx.CLAN_ADOPT_IDENTITY, {
+  i.default.track(a.rMx.CLAN_ADOPT_IDENTITY, {
     guild_id: t,
     user_id: n,
-    source: i
+    source: r
   })
 }
 
 function u(e, t) {
-  r.default.track(o.rMx.CLAN_SETTINGS_VIEWED, {
+  i.default.track(a.rMx.CLAN_SETTINGS_VIEWED, {
     guild_id: e,
     page: t
   })
 }
 
-function d(e) {
-  r.default.track(o.rMx.CLAN_SETTINGS_SAVED, {
+function c(e) {
+  i.default.track(a.rMx.CLAN_SETTINGS_SAVED, {
     guild_id: e
   })
 }
 
-function c(e) {
+function d(e) {
   switch (e) {
     case l.Wy.GAMES:
       return "games";
@@ -84,55 +84,55 @@ function c(e) {
   }
 }
 
-function h(e) {
-  r.default.track(o.rMx.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
+function _(e) {
+  i.default.track(a.rMx.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
     guild_id: e
+  })
+}
+
+function E(e) {
+  let {
+    guildId: t,
+    source: n,
+    tab: r
+  } = e;
+  i.default.track(a.rMx.CLAN_APPLICATION_NAVIGATION, {
+    guild_id: t,
+    source: n,
+    tab: r
+  })
+}
+
+function I(e) {
+  let {
+    guildId: t,
+    position: n
+  } = e;
+  i.default.track(a.rMx.GUILD_APPLICATION_INTENDS_TO_JOIN, {
+    guild_id: t,
+    position: n
+  })
+}
+
+function p(e) {
+  let {
+    feature: t,
+    guildId: n,
+    position: r
+  } = e;
+  i.default.track(a.rMx.DISCOVERY_GUILD_CARD_INTERACTION, {
+    guild_id: n,
+    feature: t,
+    position: r
   })
 }
 
 function f(e) {
   let {
     guildId: t,
-    source: n,
-    tab: i
-  } = e;
-  r.default.track(o.rMx.CLAN_APPLICATION_NAVIGATION, {
-    guild_id: t,
-    source: n,
-    tab: i
-  })
-}
-
-function p(e) {
-  let {
-    guildId: t,
     position: n
   } = e;
-  r.default.track(o.rMx.GUILD_APPLICATION_INTENDS_TO_JOIN, {
-    guild_id: t,
-    position: n
-  })
-}
-
-function g(e) {
-  let {
-    feature: t,
-    guildId: n,
-    position: i
-  } = e;
-  r.default.track(o.rMx.DISCOVERY_GUILD_CARD_INTERACTION, {
-    guild_id: n,
-    feature: t,
-    position: i
-  })
-}
-
-function v(e) {
-  let {
-    guildId: t,
-    position: n
-  } = e;
-  r.default.track(o.rMx.GUILD_APPLICATION_ABANDONED, {
+  i.default.track(a.rMx.GUILD_APPLICATION_ABANDONED, {
     guild_id: t,
     position: n
   })

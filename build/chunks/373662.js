@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   ZP: () => g,
   fO: () => h,
@@ -11,8 +11,8 @@ var r = n(200651),
   l = n(377171),
   s = n(951394),
   c = n(407477),
-  d = n(388032),
-  u = n(321968);
+  u = n(388032),
+  d = n(321968);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,9 +63,9 @@ function f(e) {
     disabled: y,
     dangerous: x,
     separator: E,
-    sparkle: j,
-    showNewBadge: O,
-    buttonClassName: N,
+    sparkle: O,
+    showNewBadge: N,
+    buttonClassName: j,
     children: C
   } = e, I = m(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
   let {
@@ -86,7 +86,7 @@ function f(e) {
     onTooltipShow: b,
     onTooltipHide: v,
     hideOnClick: !0,
-    tooltipClassName: u.tooltip,
+    tooltipClassName: d.tooltip,
     children: e => {
       var i, c;
       let {
@@ -96,8 +96,8 @@ function f(e) {
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(s.zx, (i = p({
-          className: a()(N, {
-            [u.hoverBarButton]: S
+          className: a()(j, {
+            [d.hoverBarButton]: S
           }),
           onMouseEnter: m,
           onMouseLeave: f,
@@ -109,15 +109,15 @@ function f(e) {
           dangerous: x
         }, I), c = c = {
           children: [null != h ? (0, r.jsx)(h, p({
-            className: u.icon,
+            className: d.icon,
             color: "currentColor"
           }, g)) : null, null != C ? (0, r.jsx)("div", {
-            className: a()(u.icon, u.buttonContent),
+            className: a()(d.icon, d.buttonContent),
             children: C
-          }) : null, j && (0, r.jsx)(o.K1N, {}), O && (0, r.jsx)(o.IGR, {
-            text: d.NW.string(d.t.y2b7CA),
+          }) : null, O && (0, r.jsx)(o.K1N, {}), N && (0, r.jsx)(o.IGR, {
+            text: u.NW.string(u.t.y2b7CA),
             color: l.Z.BG_BRAND,
-            className: u.newBadge
+            className: d.newBadge
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
           var n = Object.keys(e);
@@ -139,7 +139,7 @@ function h(e) {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(u.separator, t)
+    className: a()(d.separator, t)
   })
 }
 
@@ -159,8 +159,8 @@ function g(e) {
   }, {
     autoTrackExposure: !0
   }), (0, r.jsx)(s.ZP, {
-    className: a()(n.className, u.popover, {
-      [u.popoverReactionHoverBar]: i
+    className: a()(n.className, d.popover, {
+      [d.popoverReactionHoverBar]: i
     }),
     children: t
   })

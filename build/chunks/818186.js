@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 });
@@ -10,8 +10,8 @@ var i = n(481060),
   l = n(497089),
   s = n(849862),
   c = n(703656),
-  d = n(626135),
-  u = n(981631),
+  u = n(626135),
+  d = n(981631),
   p = n(388032),
   m = n(13312);
 
@@ -24,9 +24,9 @@ function f(e) {
     children: (0, r.jsxs)(i.P3F, {
       className: m.friendRequestsButton,
       onClick: () => {
-        d.default.track(u.rMx.NOTIFICATION_CENTER_ACTION, {
+        u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: l.ud.FRIEND_REQUESTS_BUTTON_CLICK
-        }), (0, c.uL)(u.Z5c.FRIENDS), a.Z.setSection(u.pJs.PENDING), t()
+        }), (0, c.uL)(d.Z5c.FRIENDS), a.Z.setSection(d.pJs.PENDING), t()
       },
       children: [(0, r.jsx)(i.iFz, {
         size: "xs",

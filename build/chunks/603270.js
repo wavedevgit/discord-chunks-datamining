@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   F: () => T,
   P: () => S
@@ -10,8 +10,8 @@ var r = n(200651),
   l = n(241159),
   s = n(558381),
   c = n(812206),
-  d = n(307643),
-  u = n(171246),
+  u = n(307643),
+  d = n(171246),
   p = n(263519),
   m = n(592125),
   f = n(509545),
@@ -23,9 +23,9 @@ var r = n(200651),
   y = n(601911),
   x = n(504211),
   E = n(970321),
-  j = n(680005),
-  O = n(981631),
-  N = n(979007),
+  O = n(680005),
+  N = n(981631),
+  j = n(979007),
   C = n(388032),
   I = n(968136);
 
@@ -33,7 +33,7 @@ function S(e) {
   let {
     appId: t,
     message: s
-  } = e, u = (0, E.R)(t), [p, f, g, _, v, j, S] = (0, a.Wu)([c.Z, h.Z, m.Z], () => {
+  } = e, d = (0, E.R)(t), [p, f, g, _, v, O, S] = (0, a.Wu)([c.Z, h.Z, m.Z], () => {
     var e;
     let n = c.Z.getApplication(t),
       r = null != n ? (0, y.y)(n, 45) : void 0,
@@ -41,7 +41,7 @@ function S(e) {
     return [n, c.Z.isFetchingApplication(t), c.Z.didFetchingApplicationFail(t), h.Z.getStoreLayout(t), h.Z.getFetchStatus(t), i, r]
   }, [t, s.channel_id]);
   i.useEffect(() => {
-    v === h.N.NONE && (0, l.k)(t), null != p || f || g || (0, d.UM)(t)
+    v === h.N.NONE && (0, l.k)(t), null != p || f || g || (0, u.UM)(t)
   }, [p, t, g, f, v]);
   let T = _.subscriptions.length,
     A = _.otps.length,
@@ -53,7 +53,7 @@ function S(e) {
     }) : A > 0 ? C.NW.formatToPlainString(C.t.j7Go5O, {
       count: A
     }) : C.NW.string(C.t.rMA98v), [A, T]);
-  if (!u || null == p) return null;
+  if (!d || null == p) return null;
   let Z = () => {
     (0, o.ZDy)(async () => {
       let {
@@ -63,7 +63,7 @@ function S(e) {
         transitionState: n.transitionState,
         onClose: n.onClose,
         appId: t,
-        guildId: j
+        guildId: O
       })
     })
   };
@@ -73,20 +73,20 @@ function S(e) {
       appName: p.name
     }),
     description: w,
-    link: "".concat(location.protocol, "//").concat(location.host).concat(O.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(p.id, N.GlobalDiscoveryAppsSections.STORE)),
+    link: "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(p.id, j.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
       (0, x.X)(t, x.B.STORE_EMBED)
     },
     iconSrc: S,
     onIconClick: () => {
-      Z(), b.default.track(O.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      Z(), b.default.track(N.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
     children: (0, r.jsx)(o.zxk, {
       onClick: () => {
-        Z(), b.default.track(O.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+        Z(), b.default.track(N.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
           application_id: t,
           area: "open_store_button"
         })
@@ -100,7 +100,7 @@ function S(e) {
 function T(e) {
   var t, l;
   let {
-    appId: d,
+    appId: u,
     skuId: h,
     message: v
   } = e, [S, T, A, w, Z, k, R, D] = (0, a.Wu)([g.Z, _.Z, f.Z, m.Z, c.Z], () => {
@@ -110,10 +110,10 @@ function T(e) {
       o = null !== (n = null == a ? void 0 : null === (t = a.application) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null == a ? void 0 : a.applicationId,
       l = null !== (r = null != o ? c.Z.getApplication(o) : void 0) && void 0 !== r ? r : null == a ? void 0 : a.application,
       s = null != l ? (0, y.y)(l, 45) : void 0,
-      u = f.Z.getForSKU(h),
-      p = (null == a ? void 0 : a.applicationId) === d;
-    return [p ? a : null, p ? l : null, _.Z.getForSKU(h), g.Z.isFetching(h), g.Z.didFetchingSkuFail(h), u.length > 0 ? u[0] : null, i, s]
-  }, [d, v.channel_id, h]), L = (0, E.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
+      d = f.Z.getForSKU(h),
+      p = (null == a ? void 0 : a.applicationId) === u;
+    return [p ? a : null, p ? l : null, _.Z.getForSKU(h), g.Z.isFetching(h), g.Z.didFetchingSkuFail(h), d.length > 0 ? d[0] : null, i, s]
+  }, [u, v.channel_id, h]), L = (0, E.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
   i.useEffect(() => {
     null != S || w || Z || (0, s.km)(h)
   }, [Z, w, S, h]), i.useEffect(() => {
@@ -122,14 +122,14 @@ function T(e) {
   let M = (0, a.e7)([g.Z], () => null != h ? g.Z.getParentSKU(h) : void 0, [h]),
     {
       openModal: W,
-      subscriptionPurchaseButtonState: F
+      subscriptionPurchaseButtonState: U
     } = (0, p.Z)({
       skuId: h,
       initialSubscribeForGuild: R
     });
   if (!L || null == T || null == S) return null;
-  let U = S.type === O.epS.SUBSCRIPTION,
-    B = !!U && (0, u.KW)(S.flags),
+  let F = S.type === N.epS.SUBSCRIPTION,
+    B = !!F && (0, d.KW)(S.flags),
     G = () => {
       (0, o.ZDy)(async () => {
         let {
@@ -145,8 +145,8 @@ function T(e) {
     },
     H = () => {
       (0, o.ZDy)(async () => {
-        let e = U ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
-          t = U ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
+        let e = F ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
+          t = F ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
         return n => {
           let i = () => {
             n.onClose(), G()
@@ -169,7 +169,7 @@ function T(e) {
         }
       })
     },
-    V = U ? B ? (0, r.jsxs)(r.Fragment, {
+    V = F ? B ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.tBG, {
         size: "custom",
         width: 12,
@@ -184,7 +184,7 @@ function T(e) {
     }) : null == A ? void 0 : null === (t = A.description) || void 0 === t ? void 0 : t.trim();
   "" === V && (V = void 0);
   let z = () => {
-    b.default.track(O.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+    b.default.track(N.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: T.id,
       sku_id: S.id,
       area: "purchase_button"
@@ -194,13 +194,13 @@ function T(e) {
     appName: T.name,
     title: S.name,
     description: V,
-    link: "".concat(location.protocol, "//").concat(location.host).concat(O.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(T.id, N.GlobalDiscoveryAppsSections.STORE)),
+    link: "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(T.id, j.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
       (0, x.X)(T.id, x.B.SKU_EMBED, h)
     },
     iconSrc: D,
     onIconClick: () => {
-      G(), b.default.track(O.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      G(), b.default.track(N.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: T.id,
         sku_id: S.id,
         area: "app_icon"
@@ -211,7 +211,7 @@ function T(e) {
       children: [(0, r.jsx)(o.zxk, {
         color: o.Ttl.CUSTOM,
         onClick: () => {
-          H(), b.default.track(O.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+          H(), b.default.track(N.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: T.id,
             sku_id: S.id,
             area: "view_details"
@@ -219,7 +219,7 @@ function T(e) {
         },
         className: I.viewDetailsButton,
         children: C.NW.string(C.t.DXYfjI)
-      }), U ? null != k ? (0, r.jsx)(j.pV, {
+      }), F ? null != k ? (0, r.jsx)(O.pV, {
         onClick: W,
         appId: T.id,
         subscriptionType: B ? "user" : "guild",
@@ -230,11 +230,11 @@ function T(e) {
         }),
         onHasClicked: z,
         subscriptionPlan: k,
-        state: F
+        state: U
       }) : (0, r.jsx)(o.zxk, {
         onClick: H,
         children: C.NW.string(C.t.uuzaAA)
-      }) : (0, r.jsx)(j.YG, {
+      }) : (0, r.jsx)(O.YG, {
         appId: T.id,
         sku: S,
         icon: (0, r.jsx)(o.EOn, {
@@ -256,7 +256,7 @@ function P(e) {
     iconSrc: l,
     onIconClick: s,
     onLinkCopy: c,
-    children: d
+    children: u
   } = e;
   return (0, r.jsxs)("div", {
     className: I.wrapper,
@@ -312,7 +312,7 @@ function P(e) {
             children: i
           })]
         })]
-      }), d]
+      }), u]
     })]
   })
 }

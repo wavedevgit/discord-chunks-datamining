@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(442837),
   s = n(481060),
   c = n(447543),
-  d = n(607070),
-  u = n(100527),
+  u = n(607070),
+  d = n(100527),
   p = n(906732),
   m = n(406218),
   f = n(15210),
@@ -23,13 +23,13 @@ var r = n(200651),
   x = n(388032),
   E = n(700457);
 
-function j(e) {
+function O(e) {
   let {
     guild: t,
     invite: n
-  } = e, a = i.useRef(null), [j, O] = i.useState(!0), [N, C] = i.useState(!1), I = n.state === y.r2o.ACCEPTING, S = null != t, {
+  } = e, a = i.useRef(null), [O, N] = i.useState(!0), [j, C] = i.useState(!1), I = n.state === y.r2o.ACCEPTING, S = null != t, {
     analyticsLocations: T
-  } = (0, p.ZP)(u.Z.INVITE_EMBED), P = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = (0, p.ZP)(d.Z.INVITE_EMBED), P = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     C((null !== (t = null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) && void 0 !== t ? t : 0) > 328)
@@ -40,21 +40,21 @@ function j(e) {
     }, [n, T, S]),
     w = (0, m.PC)(n),
     Z = i.useCallback(() => {
-      N && j && O(!1)
-    }, [j, N]),
+      j && O && N(!1)
+    }, [O, j]),
     k = i.useCallback(() => {
-      N && (j || O(!0))
-    }, [j, N]),
+      j && (O || N(!0))
+    }, [O, j]),
     R = i.useMemo(() => {
       var e;
-      return N && (null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) != null ? {
-        height: j ? 328 : a.current.clientHeight + 20 + 65,
+      return j && (null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) != null ? {
+        height: O ? 328 : a.current.clientHeight + 20 + 65,
         transition: P ? void 0 : "height 0.2s ease"
       } : {}
-    }, [j, N, P]);
+    }, [O, j, P]);
   return null == w ? (0, r.jsx)(v.Z, {}) : (0, r.jsxs)(s.P3F, {
     className: o()(E.guildInviteContainer, {
-      [E.clickable]: N && j
+      [E.clickable]: j && O
     }),
     onClick: Z,
     style: R,
@@ -80,7 +80,7 @@ function j(e) {
           profile: w
         })]
       })]
-    }), N && !j ? (0, r.jsx)(s.zxk, {
+    }), j && !O ? (0, r.jsx)(s.zxk, {
       look: s.zxk.Looks.LINK,
       color: s.zxk.Colors.TRANSPARENT,
       size: s.zxk.Sizes.NONE,
@@ -94,7 +94,7 @@ function j(e) {
       })
     }) : null, (0, r.jsxs)("div", {
       className: E.footer,
-      children: [N && j ? (0, r.jsx)("div", {
+      children: [j && O ? (0, r.jsx)("div", {
         className: E.gradient
       }) : null, (0, r.jsxs)("div", {
         className: E.footerContent,

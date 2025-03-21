@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r, i = n(200651);
 n(192379);
@@ -13,12 +13,12 @@ let c = {
     MEDIUM: l.dropdownMedium,
     LARGE: l.dropdownLarge
   },
-  d = e => {
+  u = e => {
     var t, n, {
         onDropdownClick: r,
         children: s,
-        contentClassName: d,
-        dropdownSize: u = "MEDIUM"
+        contentClassName: u,
+        dropdownSize: d = "MEDIUM"
       } = e,
       p = function(e, t) {
         if (null == e) return {};
@@ -56,10 +56,10 @@ let c = {
       children: (0, i.jsxs)(o.Z, {
         align: o.Z.Align.CENTER,
         children: [(0, i.jsx)(o.Z.Child, {
-          className: d,
+          className: u,
           children: s
         }), null != r ? (0, i.jsxs)(a.P3F, {
-          className: c[u],
+          className: c[d],
           onClick: e => {
             e.stopPropagation(), null != r && r(e)
           },
@@ -83,5 +83,5 @@ let c = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   };
-d.DropdownSizes = s, d.Sizes = a.zxk.Sizes, d.Colors = a.zxk.Colors, d.Looks = a.zxk.Looks;
-let u = d
+u.DropdownSizes = s, u.Sizes = a.zxk.Sizes, u.Colors = a.zxk.Colors, u.Looks = a.zxk.Looks;
+let d = u

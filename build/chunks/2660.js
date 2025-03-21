@@ -1,14 +1,14 @@
-/** Chunk was on 99393 **/
+/** Chunk was on 37447 **/
 n.d(t, {
   Z: () => m
 });
 var r = n(200651);
 n(192379);
 var s = n(442837),
-  i = n(481060),
-  o = n(204418),
-  l = n(594174),
-  a = n(113434),
+  o = n(481060),
+  i = n(204418),
+  a = n(594174),
+  l = n(113434),
   c = n(182294),
   u = n(125120);
 let d = e => {
@@ -16,16 +16,16 @@ let d = e => {
       questConfig: t,
       fallback: n,
       isFocused: d
-    } = e, m = (0, s.e7)([l.default], () => l.default.getCurrentUser()), {
+    } = e, m = (0, s.e7)([a.default], () => a.default.getCurrentUser()), {
       avatarDecoration: p,
       isFetching: x
-    } = (0, a.DU)(t);
+    } = (0, l.DU)(t);
     return x ? (0, r.jsx)("div", {
       className: u.questsCollectibleReward,
-      children: (0, r.jsx)(i.$jN, {})
+      children: (0, r.jsx)(o.$jN, {})
     }) : null == m || null == p ? n : (0, r.jsx)("div", {
       className: u.questsCollectibleReward,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(i.Z, {
         avatarSize: c.EF.SIZE_56,
         user: m,
         guildId: null,

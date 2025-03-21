@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => l
 });
@@ -13,14 +13,14 @@ function l(e) {
     message: t,
     usernameHook: l,
     compact: s
-  } = e, c = (0, i.ZP)(t), d = l(c);
+  } = e, c = (0, i.ZP)(t), u = l(c);
   return (0, r.jsx)(a.Z, {
     icon: n(819373),
     timestamp: t.timestamp,
     compact: s,
     children: o.NW.format(o.t.OEdU6e, {
       username: c.nick,
-      usernameHook: d
+      usernameHook: u
     })
   })
 }

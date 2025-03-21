@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(442837),
   s = n(524437),
   c = n(481060),
-  d = n(317632),
-  u = n(174767),
+  u = n(317632),
+  d = n(174767),
   p = n(240126),
   m = n(791914),
   f = n(326838),
@@ -22,12 +22,12 @@ function _(e) {
     setTab: t,
     badgeState: a,
     closePopout: _
-  } = e, v = (0, l.Wu)([d.Z], () => d.Z.getInvites()), y = (0, l.e7)([d.Z], () => d.Z.getInviteStatuses()), [x, E] = i.useMemo(() => o().partition(v, e => {
+  } = e, v = (0, l.Wu)([u.Z], () => u.Z.getInvites()), y = (0, l.e7)([u.Z], () => u.Z.getInviteStatuses()), [x, E] = i.useMemo(() => o().partition(v, e => {
     var t;
     return (null === (t = y[e.invite_id]) || void 0 === t ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
   }), [v, y]);
   return (i.useEffect(() => {
-    (0, u.sJ)()
+    (0, d.sJ)()
   }), 0 === v.length) ? (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(m.Z, {

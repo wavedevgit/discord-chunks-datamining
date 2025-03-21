@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(442837),
   a = n(481060),
-  s = n(893776),
-  l = n(232567),
+  l = n(893776),
+  s = n(232567),
   c = n(129293),
   u = n(388905),
   d = n(353926),
@@ -22,45 +22,45 @@ o.ZP.initialize();
 let x = e => {
   let {
     location: t
-  } = e, n = (0, o.e7)([_.default], () => _.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, h.oK)("RSL - Landing Page"), [v, E] = i.useState(!1), [I, j] = i.useState(f.NW.string(f.t["9exy+f"])), [C, S] = i.useState(!0), O = e => {
+  } = e, n = (0, o.e7)([_.default], () => _.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, h.oK)("RSL - Landing Page"), [v, E] = i.useState(!1), [I, S] = i.useState(f.NW.string(f.t["9exy+f"])), [j, O] = i.useState(!0), C = e => {
     switch (e) {
       case m.evJ.INVALID_FORM_BODY:
       case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
-        j(f.NW.string(f.t.bzXDfX));
+        S(f.NW.string(f.t.bzXDfX));
         break;
       case m.evJ.DSA_RSL_ALREADY_REQUESTED:
-        j(f.NW.string(f.t.rV00ws));
+        S(f.NW.string(f.t.rV00ws));
         break;
       case m.evJ.DSA_RSL_LIMITED_TIME:
-        j(f.NW.string(f.t["0dI29v"]));
+        S(f.NW.string(f.t["0dI29v"]));
         break;
       case m.evJ.DSA_RSL_REPORT_INELIGIBLE:
-        j(f.NW.string(f.t["RGa/GR"]));
+        S(f.NW.string(f.t["RGa/GR"]));
         break;
       default:
-        j(f.NW.string(f.t["0QLzfn"]))
+        S(f.NW.string(f.t["0QLzfn"]))
     }
   };
   return i.useEffect(() => {
-    n ? (S(!0), l.k({
+    n ? (O(!0), s.k({
       withAnalyticsToken: !0
-    }).then(() => S(!1)).catch(() => S(!1))) : S(!1)
+    }).then(() => O(!1)).catch(() => O(!1))) : O(!1)
   }, [n]), i.useEffect(() => {
-    x || N || s.Z.getExperiments()
+    x || N || l.Z.getExperiments()
   }, [x, N]), i.useEffect(() => {
     let e = async e => {
       var t, n;
       try {
         let n = null != e ? await (0, p.hs)(e) : void 0;
-        null != n ? j(f.NW.string(f.t.e6mZMj)) : O(null === (t = n.body) || void 0 === t ? void 0 : t.code)
+        null != n ? S(f.NW.string(f.t.e6mZMj)) : C(null === (t = n.body) || void 0 === t ? void 0 : t.code)
       } catch (e) {
-        O(null === (n = e.body) || void 0 === n ? void 0 : n.code)
+        C(null === (n = e.body) || void 0 === n ? void 0 : n.code)
       } finally {
         E(!1)
       }
     };
     E(!0), e((0, c.Z)(t)), (0, g.e)("report_second_look")
-  }, [t]), N && !C && (0, r.jsxs)(u.ZP, {
+  }, [t]), N && !j && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: b.marginBottom8,
       children: I

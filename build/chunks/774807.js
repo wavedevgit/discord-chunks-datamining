@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -9,7 +9,7 @@ var r, i = n(442837),
   s = n(709054),
   c = n(497089);
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,14 +18,14 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ class h extends(r = i.ZP.PersistedStore) {
 function g() {
   f.hasNewMentions = !1, f.isDataStale = !1, f.isRefreshing = !1
 }
-d(h, "displayName", "NotificationCenterStore"), d(h, "persistKey", "NotificationCenterStore");
+u(h, "displayName", "NotificationCenterStore"), u(h, "persistKey", "NotificationCenterStore");
 let _ = new h(a.Z, {
   MESSAGE_CREATE: function(e) {
     let {
@@ -97,7 +97,7 @@ let _ = new h(a.Z, {
     } = e
   },
   NOTIFICATION_CENTER_SET_TAB: function(e) {
-    f = p(u({}, f), {
+    f = p(d({}, f), {
       tab: e.tab
     })
   },
@@ -106,8 +106,8 @@ let _ = new h(a.Z, {
       localIds: t
     } = e;
     t.forEach(e => {
-      f = p(u({}, f), {
-        localItemAcks: p(u({}, f.localItemAcks), {
+      f = p(d({}, f), {
+        localItemAcks: p(d({}, f.localItemAcks), {
           [e]: Date.now()
         })
       })

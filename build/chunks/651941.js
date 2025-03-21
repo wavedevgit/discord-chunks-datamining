@@ -1,73 +1,73 @@
-/** Chunk was on 86546 **/
-n.d(t, {
+/** Chunk was on 33397 **/
+r.d(t, {
   Z: () => d
-}), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(47120);
-var r, l = n(442837),
-  i = n(253135),
-  o = n(570140),
-  a = n(709054);
+}), r(518263), r(970173), r(520712), r(268111), r(941497), r(32026), r(480839), r(744285), r(492257), r(873817), r(610885), r(126298), r(47120);
+var n, l = r(442837),
+  i = r(253135),
+  u = r(570140),
+  s = r(709054);
 
-function s(e, t, n) {
+function a(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: r,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : e[t] = r, e
 }
-let c = {};
-class u extends(r = l.ZP.PersistedStore) {
+let o = {};
+class c extends(n = l.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    c = null !== (t = null == e ? void 0 : e.users) && void 0 !== t ? t : {}
+    o = null !== (t = null == e ? void 0 : e.users) && void 0 !== t ? t : {}
   }
   getState() {
     return {
-      users: c
+      users: o
     }
   }
   getKeyTrustedAt(e, t) {
-    var n;
-    let r = (0, i.MK)(t);
-    return null === (n = c[e]) || void 0 === n ? void 0 : n[r]
+    var r;
+    let n = (0, i.MK)(t);
+    return null === (r = o[e]) || void 0 === r ? void 0 : r[n]
   }
   isKeyVerified(e, t) {
     return null != this.getKeyTrustedAt(e, t)
   }
   getUserIds() {
-    return a.default.keys(c)
+    return s.default.keys(o)
   }
   getUserVerifiedKeys(e) {
-    return c[e]
+    return o[e]
   }
 }
-s(u, "displayName", "VerifiedKeyStore"), s(u, "persistKey", "VerifiedKeyStore");
-let d = new u(o.Z, {
+a(c, "displayName", "VerifiedKeyStore"), a(c, "persistKey", "VerifiedKeyStore");
+let d = new c(u.Z, {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: function(e) {
     let {
       userId: t,
-      key: n
-    } = e, r = function(e) {
+      key: r
+    } = e, n = function(e) {
       var t;
-      let n = null !== (t = c[e]) && void 0 !== t ? t : {};
-      return c[e] = n, n
-    }(t), l = new Uint8Array(n);
-    r[(0, i.MK)(l)] = Date.now()
+      let r = null !== (t = o[e]) && void 0 !== t ? t : {};
+      return o[e] = r, r
+    }(t), l = new Uint8Array(r);
+    n[(0, i.MK)(l)] = Date.now()
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function(e) {
     let {
       userId: t,
-      serializedKey: n
-    } = e, r = c[t];
-    if (null == r) return !1;
-    let l = delete r[n],
+      serializedKey: r
+    } = e, n = o[t];
+    if (null == n) return !1;
+    let l = delete n[r],
       i = !1;
-    return 0 === Object.keys(r).length && (delete c[t], i = !0), l || i
+    return 0 === Object.keys(n).length && (delete o[t], i = !0), l || i
   },
   SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: function(e) {
     let {
       userId: t
     } = e;
-    return null != c[t] && delete c[t]
+    return null != o[t] && delete o[t]
   }
 })

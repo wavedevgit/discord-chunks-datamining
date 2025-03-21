@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(593473),
   a = n(512969),
-  s = n(442837),
-  l = n(893776),
+  l = n(442837),
+  s = n(893776),
   c = n(899742),
   u = n(493773),
   d = n(743142),
@@ -36,7 +36,7 @@ function b(e) {
     {
       isAuthenticated: x,
       loginStatus: N
-    } = (0, s.cj)([g.default], () => ({
+    } = (0, l.cj)([g.default], () => ({
       isAuthenticated: g.default.isAuthenticated(),
       loginStatus: g.default.getLoginStatus()
     })),
@@ -44,9 +44,9 @@ function b(e) {
       location: v,
       redirectTo: E
     } = e,
-    [I, j] = i.useState(x);
+    [I, S] = i.useState(x);
 
-  function C(e) {
+  function j(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -56,7 +56,7 @@ function b(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), j(!1)
+    }), S(!1)
   }
   return ((0, u.ZP)(() => {
     if (null != v) {
@@ -66,13 +66,13 @@ function b(e) {
       } = (0, o.parse)(v.search);
       if (null != e && null != t) {
         let n = null != E ? (0, d.L)(E) : void 0;
-        I ? l.Z.logout(null).finally(() => {
-          C({
+        I ? s.Z.logout(null).finally(() => {
+          j({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : C({
+        }) : j({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n

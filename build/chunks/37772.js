@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => F
+  Z: () => U
 });
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(442837),
   s = n(481060),
   c = n(25610),
-  d = n(628238),
-  u = n(976853),
+  u = n(628238),
+  d = n(976853),
   p = n(977683),
   m = n(869765),
   f = n(695346),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(493892),
   x = n(901461),
   E = n(739566),
-  j = n(443877),
-  O = n(492593),
-  N = n(938353),
+  O = n(443877),
+  N = n(492593),
+  j = n(938353),
   C = n(25015),
   I = n(689674),
   S = n(963550),
@@ -69,7 +69,7 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = i.memo(function e(t) {
+let U = i.memo(function e(t) {
   var n;
   let i;
   let {
@@ -77,14 +77,14 @@ let F = i.memo(function e(t) {
     message: s,
     compact: Z = !1,
     className: D,
-    onContextMenu: F,
+    onContextMenu: U,
     onClick: B,
     disableInteraction: G = !1,
     hasThread: H,
     treatSpam: V
-  } = t, z = k.OBS.has(s.type) ? s.messageReference : void 0, K = (0, l.e7)([m.Z], () => m.Z.getMessageByReference(z)), Y = (0, l.e7)([h.Z], () => s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED ? h.Z.getChannel(K.message.channel_id) : null), X = f.x4.useSetting(), q = f.RS.useSetting(), Q = f.NA.useSetting(), J = f.QK.useSetting(), $ = (0, d.A)((null !== (n = s.editedTimestamp) && void 0 !== n ? n : s.timestamp).valueOf()), ee = (0, u.Z)(null == a ? void 0 : a.id), {
+  } = t, z = k.OBS.has(s.type) ? s.messageReference : void 0, K = (0, l.e7)([m.Z], () => m.Z.getMessageByReference(z)), Y = (0, l.e7)([h.Z], () => s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED ? h.Z.getChannel(K.message.channel_id) : null), X = f.x4.useSetting(), q = f.RS.useSetting(), Q = f.NA.useSetting(), J = f.QK.useSetting(), $ = (0, u.A)((null !== (n = s.editedTimestamp) && void 0 !== n ? n : s.timestamp).valueOf()), ee = (0, d.Z)(null == a ? void 0 : a.id), {
     disableReactionCreates: et
-  } = (0, j.Z)(a), {
+  } = (0, O.Z)(a), {
     content: en,
     hasSpoilerEmbeds: er
   } = (0, C.Z)(s, {
@@ -97,17 +97,17 @@ let F = i.memo(function e(t) {
     message: s,
     channel: a,
     enabled: el
-  }), ec = (0, c.V)(a.id, s.author.id), ed = (0, b.ro)(s.id, s.channel_id), eu = (0, p.Z)(s);
+  }), ec = (0, c.V)(a.id, s.author.id), eu = (0, b.ro)(s.id, s.channel_id), ed = (0, p.Z)(s);
   return eo ? (0, r.jsx)(e, W(M({}, t), {
     message: K.message,
     channel: Y,
     hasThread: !1
-  })) : (g.Z.isBlockedForMessage(s) ? i = R.t["+FcYMz"] : g.Z.isIgnoredForMessage(s) ? i = R.t.VFWjc3 : (0, y.DQ)(s) && V && (i = R.t.xfkfTE), void 0 !== i) ? (0, r.jsx)(U, {
+  })) : (g.Z.isBlockedForMessage(s) ? i = R.t["+FcYMz"] : g.Z.isIgnoredForMessage(s) ? i = R.t.VFWjc3 : (0, y.DQ)(s) && V && (i = R.t.xfkfTE), void 0 !== i) ? (0, r.jsx)(F, {
     className: D,
     compact: Z,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(O.Z, {
+  }) : (0, r.jsx)(N.Z, {
     compact: Z,
     className: o()(D, {
       [L.ephemeral]: (0, v.Pv)(s),
@@ -119,7 +119,7 @@ let F = i.memo(function e(t) {
       author: ei,
       guildId: a.guild_id
     })),
-    childrenAccessories: (0, r.jsx)(N.BB, {
+    childrenAccessories: (0, r.jsx)(j.BB, {
       channel: a,
       message: s,
       hasSpoilerEmbeds: er,
@@ -135,18 +135,18 @@ let F = i.memo(function e(t) {
       inlineEmbedMedia: q,
       renderEmbeds: Q,
       gifAutoPlay: J,
-      poll: eu,
+      poll: ed,
       showListsAndHeaders: $,
       showMaskedLinks: $,
       shouldHideMediaOptions: ee,
       shouldRedactExplicitContent: ec,
-      ctaButtonType: ed,
+      ctaButtonType: eu,
       hasInlineForwardButton: !1
     }),
     childrenExecutedCommand: (0, A.Z)(s, a, Z),
     childrenMessageContent: (0, S.Z)(t, en),
     childrenSystemMessage: (0, P.Z)(t),
-    onContextMenu: F,
+    onContextMenu: U,
     onClick: B,
     hasThread: !1 !== H && null != ea && s.hasFlag(k.iLy.HAS_THREAD),
     hasReply: s.type === k.uaV.REPLY,
@@ -155,14 +155,14 @@ let F = i.memo(function e(t) {
   })
 });
 
-function U(e) {
+function F(e) {
   let {
     className: t,
     count: n,
     compact: i,
     collapsedReason: a
   } = e;
-  return (0, r.jsx)(O.Z, {
+  return (0, r.jsx)(N.Z, {
     className: t,
     compact: i,
     role: "group",

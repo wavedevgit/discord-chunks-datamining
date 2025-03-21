@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 });
@@ -10,8 +10,8 @@ var i = n(120356),
   l = n(481060),
   s = n(839963),
   c = n(139256),
-  d = n(388032),
-  u = n(132778);
+  u = n(388032),
+  d = n(132778);
 
 function p(e) {
   let {
@@ -20,9 +20,9 @@ function p(e) {
     percentage: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: u.votesData,
+    className: d.votesData,
     children: [t && (0, r.jsx)(o.T, {
-      children: d.NW.string(d.t["8DAM+/"])
+      children: u.NW.string(u.t["8DAM+/"])
     }), (0, r.jsxs)(l.Text, {
       variant: "text-md/semibold",
       color: "none",
@@ -41,33 +41,33 @@ function m(e) {
     isExpired: n,
     myAvatarUrl: i,
     canShowVoteCounts: o
-  } = e, l = !0 === t.isSelected, s = !0 === t.didSelfVote, d = !0 === t.isVictor;
+  } = e, l = !0 === t.isSelected, s = !0 === t.didSelfVote, u = !0 === t.isVictor;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.$w, {
-      attachmentClassName: a()(u.attachment, {
-        [u.attachmentWithResults]: o
+      attachmentClassName: a()(d.attachment, {
+        [d.attachmentWithResults]: o
       }),
-      emojiClassName: u.emoji,
+      emojiClassName: d.emoji,
       media: t.pollMedia,
       fallback: (0, r.jsx)("div", {
-        className: a()(u.attachment, u.mediaMissing)
+        className: a()(d.attachment, d.mediaMissing)
       })
     }), l && (0, r.jsx)(c.ZY, {
       size: 40,
-      isVictor: d,
+      isVictor: u,
       isExpired: n,
-      className: u.selectedIcon
+      className: d.selectedIcon
     }), o && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p, {
         didSelfVote: s,
         percentage: t.votesPercentage,
         label: t.votes,
         myAvatarUrl: s ? i : void 0
-      }), (!n && s || d) && (0, r.jsx)(c.ZY, {
+      }), (!n && s || u) && (0, r.jsx)(c.ZY, {
         size: 18,
-        isVictor: d,
+        isVictor: u,
         isExpired: n,
-        className: u.pollAnswerIcon
+        className: d.pollAnswerIcon
       })]
     })]
   })
@@ -112,9 +112,9 @@ function f(e) {
     }
     return e
   }({
-    className: u.answersContainer,
-    answerClassName: a()(u.answer, {
-      [u.currentlyVoting]: i !== s.Y7.LIST
+    className: d.answersContainer,
+    answerClassName: a()(d.answer, {
+      [d.currentlyVoting]: i !== s.Y7.LIST
     }),
     myAvatarUrl: n,
     answersInteraction: i,

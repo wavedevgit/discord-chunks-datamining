@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => c
 }), n(47120), n(301563);
@@ -14,10 +14,10 @@ function c(e) {
   let {
     code: t,
     messageData: n
-  } = e, [c, d] = t.split("/"), u = i.Z.getChannel(d), p = a.Z.getGuild(c);
-  return null != u && u.isGuildVocal() && null != p && o.Z.can(s.Plq.VIEW_CHANNEL, u) && o.Z.can(s.Plq.CONNECT, u) ? (0, r.jsx)(l.Z, {
+  } = e, [c, u] = t.split("/"), d = i.Z.getChannel(u), p = a.Z.getGuild(c);
+  return null != d && d.isGuildVocal() && null != p && o.Z.can(s.Plq.VIEW_CHANNEL, d) && o.Z.can(s.Plq.CONNECT, d) ? (0, r.jsx)(l.Z, {
     guild: p,
-    channel: u,
+    channel: d,
     messageData: n
   }) : null
 }

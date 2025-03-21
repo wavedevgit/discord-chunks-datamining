@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => N
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(642128),
   s = n(442837),
   c = n(481060),
-  d = n(570140),
-  u = n(45114),
+  u = n(570140),
+  d = n(45114),
   p = n(367907),
   m = n(717680),
   f = n(703656),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(520116),
   x = n(981631),
   E = n(388032),
-  j = n(764972);
+  O = n(764972);
 
-function O(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,19 +42,19 @@ function O(e) {
   }
   return e
 }
-let N = i.memo(function(e) {
+let j = i.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
     } = e, a = i.useRef(null), [
-      [o, s], d
-    ] = i.useState([0, 0]), u = t.deleted && o > 0;
+      [o, s], u
+    ] = i.useState([0, 0]), d = t.deleted && o > 0;
     if (t.deleted && 0 === o && null != a.current) {
       let e = a.current.offsetHeight,
         t = a.current.offsetTop,
         n = a.current.parentElement.scrollTop,
         r = n > t ? e - (n - t) : e;
-      d([e, e - r])
+      u([e, e - r])
     }
     let {
       opacity: p,
@@ -65,8 +65,8 @@ let N = i.memo(function(e) {
         friction: 18,
         tension: 200
       },
-      opacity: +!u,
-      size: +!u,
+      opacity: +!d,
+      size: +!d,
       onRest: () => {
         n(t.channelId)
       }
@@ -74,13 +74,13 @@ let N = i.memo(function(e) {
       opacity: p,
       height: m.to(e => {
         var t, n;
-        return u ? (t = o, (n = s) + (t - n) * e) : "auto"
+        return d ? (t = o, (n = s) + (t - n) * e) : "auto"
       })
     };
     return (0, r.jsx)(l.animated.div, {
       ref: a,
       style: f,
-      children: (0, r.jsx)(C, O({}, e))
+      children: (0, r.jsx)(C, N({}, e))
     })
   }),
   C = i.memo(function(e) {
@@ -91,8 +91,8 @@ let N = i.memo(function(e) {
       toggle: o
     } = e, l = (0, s.e7)([h.Z], () => h.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
-        null == l || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
-          (0, u.In)(t.channelId, !0), a(t.channelId)
+        null == l || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || u.Z.wait(() => {
+          (0, d.In)(t.channelId, !0), a(t.channelId)
         })
       }), null == l || !t.hasLoadedAnything) return null;
     let m = (e, r) => {
@@ -104,7 +104,7 @@ let N = i.memo(function(e) {
       (0, f.uL)(x.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: j.channel,
+      className: O.channel,
       children: (0, r.jsx)(c.y5t, {
         component: (0, r.jsxs)(b.Z, {
           channel: l,
@@ -114,7 +114,7 @@ let N = i.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(_.Z, {
             channel: l
-          }), (0, r.jsx)(I, O({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(S, O({}, e))]
+          }), (0, r.jsx)(I, N({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(S, N({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
@@ -137,7 +137,7 @@ function I(e) {
     getNumUnreadChannels: a
   } = e, o = (0, m.Z)() && null != t.guildId;
   return (0, r.jsx)(c.M0o, {
-    className: j.markReadButton,
+    className: O.markReadButton,
     tooltip: o ? E.NW.string(E.t["5lLMhI"]) : E.NW.string(E.t.e6RscX),
     color: c.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(c.W6s, {
@@ -177,9 +177,9 @@ function S(e) {
     text: E.NW.string(E.t.iTcumZ),
     children: e => {
       var n, i;
-      return (0, r.jsx)(c.P3F, (n = O({}, e), i = i = {
-        className: o()(j.collapseButton, {
-          [j.collapsed]: t.collapsed
+      return (0, r.jsx)(c.P3F, (n = N({}, e), i = i = {
+        className: o()(O.collapseButton, {
+          [O.collapsed]: t.collapsed
         }),
         onClick: a,
         children: (0, r.jsx)(g.Z, {

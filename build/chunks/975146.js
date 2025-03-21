@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -11,7 +11,7 @@ var i = n(120356),
   s = n(388032),
   c = n(162644);
 
-function d(e) {
+function u(e) {
   let {
     className: t,
     count: n
@@ -31,7 +31,7 @@ function d(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   var {
     count: t
   } = e, n = function(e, t) {
@@ -72,7 +72,7 @@ function u(e) {
       let {
         className: n
       } = e;
-      return (0, r.jsx)(d, {
+      return (0, r.jsx)(u, {
         className: n,
         count: t
       })

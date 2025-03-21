@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => l
 });
@@ -14,9 +14,9 @@ function l(e) {
     compact: l,
     missed: s,
     joinable: c,
-    usernameHook: d,
-    onClickJoinCall: u
-  } = e, p = (0, i.ZP)(t), m = p.nick, f = d(p), h = function(e) {
+    usernameHook: u,
+    onClickJoinCall: d
+  } = e, p = (0, i.ZP)(t), m = p.nick, f = u(p), h = function(e) {
     let t = null != e.call ? e.call.duration : null;
     return null != t ? t.humanize() : null
   }(t);
@@ -44,7 +44,7 @@ function l(e) {
       username: m,
       usernameHook: f
     }), c ? (0, r.jsx)(a.Z.Action, {
-      onClick: u,
+      onClick: d,
       children: o.NW.string(o.t.oa9mvb)
     }) : null]
   })

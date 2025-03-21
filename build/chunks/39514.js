@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(442837),
-  l = n(570140),
+  l = n(442837),
+  s = n(570140),
   c = n(893776),
   u = n(533307),
   d = n(978085),
@@ -23,10 +23,10 @@ var r = n(200651),
   v = n(669079),
   E = n(63063),
   I = n(51144),
-  j = n(481153),
-  C = n(781428),
-  S = n(423527),
-  O = n(981631),
+  S = n(481153),
+  j = n(781428),
+  O = n(423527),
+  C = n(981631),
   y = n(388032),
   T = n(802138);
 
@@ -38,7 +38,7 @@ function P(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-s.ZP.initialize();
+l.ZP.initialize();
 class A extends i.PureComponent {
   componentDidMount() {
     let {
@@ -52,7 +52,7 @@ class A extends i.PureComponent {
       authenticated: t,
       isResolved: n
     } = this.props;
-    n || l.Z.wait(() => {
+    n || s.Z.wait(() => {
       this.resolveGiftCode()
     }), t && !e.authenticated && this.handleAuthenticated(), !t && e.authenticated && this.setState({
       currentUser: null
@@ -85,9 +85,9 @@ class A extends i.PureComponent {
     } = this.props, {
       error: r
     } = this.state, i = null != r ? r.code : null;
-    return i === O.evJ.INVALID_GIFT_SELF_REDEMPTION ? y.NW.string(y.t.wa9h7O) : i === O.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? void 0 : n.productLine) === O.POd.COLLECTIBLES ? y.NW.string(y.t.mdLtb2) : null != t || i === O.evJ.INVALID_GIFT_REDEMPTION_OWNED ? y.NW.format(y.t.PIdmg4, {
-      libraryLink: O.Z5c.APPLICATION_LIBRARY
-    }) : e.isClaimed || i === O.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? y.NW.string(y.t.ilcBeX) : i === O.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? y.NW.string(y.t.ypuSd3) : void 0
+    return i === C.evJ.INVALID_GIFT_SELF_REDEMPTION ? y.NW.string(y.t.wa9h7O) : i === C.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? void 0 : n.productLine) === C.POd.COLLECTIBLES ? y.NW.string(y.t.mdLtb2) : null != t || i === C.evJ.INVALID_GIFT_REDEMPTION_OWNED ? y.NW.format(y.t.PIdmg4, {
+      libraryLink: C.Z5c.APPLICATION_LIBRARY
+    }) : e.isClaimed || i === C.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? y.NW.string(y.t.ilcBeX) : i === C.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? y.NW.string(y.t.ypuSd3) : void 0
   }
   renderSpinner(e) {
     return (0, r.jsxs)(h.ZP, {
@@ -115,7 +115,7 @@ class A extends i.PureComponent {
         onClick: () => t(e),
         children: y.NW.string(y.t.fIv16O)
       }), (0, r.jsx)(h.zx, {
-        onClick: () => window.open(E.Z.getArticleURL(O.BhN.GIFTING), "_blank"),
+        onClick: () => window.open(E.Z.getArticleURL(C.BhN.GIFTING), "_blank"),
         look: h.zx.Looks.LINK,
         color: h.zx.Colors.LINK,
         children: y.NW.string(y.t["/CjuXF"])
@@ -170,7 +170,7 @@ class A extends i.PureComponent {
   renderAuthenticated(e, t) {
     let n = this.getErrorMessage(e);
     return (0, r.jsxs)(h.ZP, {
-      children: [(0, r.jsx)(j.Z, {
+      children: [(0, r.jsx)(S.Z, {
         giftCode: e
       }), (0, r.jsx)(h.zx, {
         disabled: null != n,
@@ -197,14 +197,14 @@ class A extends i.PureComponent {
       giftCode: i,
       isResolved: o,
       isAccepting: a,
-      transitionTo: s,
-      location: l
+      transitionTo: l,
+      location: s
     } = this.props, {
       fetchingUser: c,
       continueOnWeb: u
     } = this.state;
-    if (e === O.kEZ.OPEN && !u) return this.renderAppOpened();
-    if (e === O.kEZ.OPENING) return this.renderSpinner(y.NW.string(y.t["Z+hCVV"]));
+    if (e === C.kEZ.OPEN && !u) return this.renderAppOpened();
+    if (e === C.kEZ.OPENING) return this.renderSpinner(y.NW.string(y.t["Z+hCVV"]));
     if (a) return this.renderSpinner(y.NW.string(y.t.bhJseH));
     if (null == i) return o ? this.renderExpiredInvite() : this.renderSpinner(y.NW.string(y.t.b3lf1d));
     if (o) {
@@ -212,16 +212,16 @@ class A extends i.PureComponent {
         let e = this.state.currentUser;
         return c || null == e ? this.renderSpinner(y.NW.string(y.t.bYb2nZ)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(i, e)
       }
-      return "login" === this.getMode() ? (0, r.jsx)(C.Z, {
+      return "login" === this.getMode() ? (0, r.jsx)(j.Z, {
         giftCodeSKU: t,
         giftCode: i,
-        transitionTo: s,
-        location: l
-      }) : (0, r.jsx)(S.Z, {
+        transitionTo: l,
+        location: s
+      }) : (0, r.jsx)(O.Z, {
         giftCodeSKU: t,
         giftCode: i,
-        transitionTo: s,
-        location: l
+        transitionTo: l,
+        location: s
       })
     }
     return null
@@ -246,7 +246,7 @@ class A extends i.PureComponent {
       }))
     }), P(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
-      c.Z.logout(O.Z5c.GIFT_CODE_LOGIN(e))
+      c.Z.logout(C.Z5c.GIFT_CODE_LOGIN(e))
     }), P(this, "handleResendVerification", () => {
       c.Z.verifyResend(), this.setState({
         sentVerification: !0
@@ -263,7 +263,7 @@ class A extends i.PureComponent {
           error: null
         }), await u.Z.redeemGiftCode({
           code: n
-        }), e(O.Z5c.APP)
+        }), e(C.Z5c.APP)
       } catch (e) {
         this.setState({
           error: e
@@ -274,12 +274,12 @@ class A extends i.PureComponent {
         transitionTo: e
       } = this.props, t = this.getCode();
       u.Z.resolveGiftCode(t, !0, !0).then(n => {
-        null != n && null != n.giftCode.promotion && e(O.Z5c.BILLING_PROMOTION_REDEMPTION(t))
+        null != n && null != n.giftCode.promotion && e(C.Z5c.BILLING_PROMOTION_REDEMPTION(t))
       })
     })
   }
 }
-let Z = s.ZP.connectStores([b.Z, x.Z, m.default, N.Z, f.Z, g.Z], e => {
+let Z = l.ZP.connectStores([b.Z, x.Z, m.default, N.Z, f.Z, g.Z], e => {
   let t = e.match.params.giftCode,
     n = b.Z.get(t),
     r = null != n ? N.Z.get(n.skuId) : null;

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => g
 });
@@ -10,8 +10,8 @@ var i = n(120356),
   l = n(385499),
   s = n(739566),
   c = n(464891),
-  d = n(83561),
-  u = n(834129),
+  u = n(83561),
+  d = n(834129),
   p = n(981631),
   m = n(674563),
   f = n(388032),
@@ -28,7 +28,7 @@ function g(e) {
       onMouseEnter: v,
       onMouseLeave: y
     }
-  } = (0, d.m)(!0), x = "" !== t.content ? new Date(t.content).toLocaleString(f.NW.currentLocale, {
+  } = (0, u.m)(!0), x = "" !== t.content ? new Date(t.content).toLocaleString(f.NW.currentLocale, {
     hour: "numeric",
     minute: "2-digit",
     month: "2-digit",
@@ -38,11 +38,11 @@ function g(e) {
   return (0, r.jsx)("div", {
     onMouseEnter: v,
     onMouseLeave: y,
-    children: (0, r.jsx)(u.Z, {
+    children: (0, r.jsx)(d.Z, {
       className: a()(h.mainContainer, {
         [h.compact]: n
       }),
-      iconNode: n ? null : (0, r.jsx)(d.S, {
+      iconNode: n ? null : (0, r.jsx)(u.S, {
         src: b
       }),
       iconContainerClassName: h.iconContainer,

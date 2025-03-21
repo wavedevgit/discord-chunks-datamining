@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   n: () => h
 }), n(411104);
@@ -10,21 +10,21 @@ var i = n(120356),
   l = n(910111),
   s = n(732559),
   c = n(723851),
-  d = n(981631),
-  u = n(388032),
+  u = n(981631),
+  d = n(388032),
   p = n(748051);
 let m = {
-  [d.TaA.WINDOWS]: {
+  [u.TaA.WINDOWS]: {
     icon: c.Z,
-    getLabel: () => u.NW.string(u.t["0/xHFB"])
+    getLabel: () => d.NW.string(d.t["0/xHFB"])
   },
-  [d.TaA.MACOS]: {
+  [u.TaA.MACOS]: {
     icon: s.Z,
-    getLabel: () => u.NW.string(u.t.E4u4n5)
+    getLabel: () => d.NW.string(d.t.E4u4n5)
   },
-  [d.TaA.LINUX]: {
+  [u.TaA.LINUX]: {
     icon: l.Z,
-    getLabel: () => u.NW.string(u.t.tcawo6)
+    getLabel: () => d.NW.string(d.t.tcawo6)
   }
 };
 

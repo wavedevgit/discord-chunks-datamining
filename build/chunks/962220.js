@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r, i, o = n(39612),
   a = n(271579),
-  s = n(756647),
-  l = n(625128),
+  l = n(756647),
+  s = n(625128),
   c = n(626135),
   u = n(954824),
   d = n(751189),
@@ -30,7 +30,7 @@ let h = "template",
     return e
   }({}, d.Z), i = i = {
     openNativeAppModal(e) {
-      l.Z.openNativeAppModal(e, p.Etm.GUILD_TEMPLATE_BROWSER)
+      s.Z.openNativeAppModal(e, p.Etm.GUILD_TEMPLATE_BROWSER)
     },
     openMobileApp(e, t) {
       if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > -1) return;
@@ -42,7 +42,7 @@ let h = "template",
           attemptId: r
         });
       c.default.track(p.rMx.DEEP_LINK_CLICKED, {
-        fingerprint: (0, s.K)(t),
+        fingerprint: (0, l.K)(t),
         attempt_id: r,
         source: h,
         guild_template_code: e

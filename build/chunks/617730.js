@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   o = n(973616),
   a = n(131704),
-  s = n(601964),
-  l = n(598077),
+  l = n(601964),
+  s = n(598077),
   c = n(230224),
   u = n(258356),
   d = n(981631),
@@ -66,13 +66,13 @@ function f(e) {
     disableUser: f = !1
   } = e;
   if (null == t) return null;
-  let b = null != t.guild ? new s.ZP(t.guild) : null,
+  let b = null != t.guild ? new l.ZP(t.guild) : null,
     x = null != t.channel ? (0, a.jD)(t.channel) : null,
     N = null != t.target_application ? new o.ZP(t.target_application) : null,
-    v = f || null == t.inviter ? null : new l.Z(t.inviter),
+    v = f || null == t.inviter ? null : new s.Z(t.inviter),
     E = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != b && b.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
     I = m(t),
-    j = {
+    S = {
       invite: t,
       user: v,
       guild: b,
@@ -90,11 +90,11 @@ function f(e) {
       application: N,
       guild: b,
       user: E || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, _(g({}, j), {
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, _(g({}, S), {
       showBigUserIcon: E
-    })), (0, r.jsx)(c.UM, _(g({}, j), {
+    })), (0, r.jsx)(c.UM, _(g({}, S), {
       showBigUserIcon: E
-    })), (0, r.jsx)(c.V6, g({}, j)), (0, r.jsx)(i.zxk, {
+    })), (0, r.jsx)(c.V6, g({}, S)), (0, r.jsx)(i.zxk, {
       onClick: n,
       submitting: I,
       className: h.acceptButton,

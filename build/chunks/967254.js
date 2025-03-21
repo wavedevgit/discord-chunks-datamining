@@ -167,7 +167,7 @@ let E = e => {
         (0, c.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([s.e("25292"), s.e("22878"), s.e("95477"), s.e("11212"), s.e("50963"), s.e("46097"), s.e("25183"), s.e("18831"), s.e("83346")]).then(s.bind(s, 41164));
+          } = await Promise.all([s.e("25292"), s.e("95477"), s.e("11212"), s.e("22878"), s.e("50963"), s.e("46097"), s.e("25183"), s.e("18831"), s.e("83346")]).then(s.bind(s, 41164));
           return t => (0, a.jsx)(e, T({
             classificationId: i,
             source: p.s.StandingTab

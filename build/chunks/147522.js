@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(13667), n(390547), n(653041);
 var r = n(200651);
 n(192379);
@@ -10,12 +10,12 @@ var i = n(392711),
   l = n(289481),
   s = n(809780),
   c = n(388032),
-  d = n(735058);
+  u = n(735058);
 
-function u(e, t, n) {
+function d(e, t, n) {
   let {
     markChannelRead: i,
-    markGuildRead: u,
+    markGuildRead: d,
     deleteChannel: p,
     toggle: m,
     getNumUnreadChannels: f
@@ -25,17 +25,17 @@ function u(e, t, n) {
     h = e.sortOrder;
     let a = [];
     return t && (e.hasLoadedAnything && e.sortOrder === s.As.ReallyOldChannel ? a.push((0, r.jsx)(o.Z, {
-      className: d.divider,
-      contentClassName: d.dividerContent,
+      className: u.divider,
+      contentClassName: u.dividerContent,
       children: c.NW.string(c.t.roBMzs)
     }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === s.As.NoNotifications && a.push((0, r.jsx)(o.Z, {
-      className: d.divider,
-      contentClassName: d.dividerContent,
+      className: u.divider,
+      contentClassName: u.dividerContent,
       children: c.NW.string(c.t["2Ys7np"])
     }, "disabled-divider"))), a.push((0, r.jsx)(l.Z, {
       channel: e,
       markChannelRead: i,
-      markGuildRead: u,
+      markGuildRead: d,
       toggle: m,
       deleteChannel: p,
       onJump: n,

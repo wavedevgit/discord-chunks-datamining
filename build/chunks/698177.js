@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(442837),
-  l = n(481060),
+  l = n(442837),
+  s = n(481060),
   c = n(144114),
   u = n(742458),
   d = n(541692),
@@ -18,11 +18,11 @@ var r = n(200651),
   m = n(612064),
   f = n(802138);
 let b = () => {
-  let [e, t] = i.useState(""), [o, b] = i.useState(""), [x, N] = i.useState(!1), [v, E] = i.useState(!1), [I, j] = i.useState(null), [C, S] = i.useState(null), O = (0, s.e7)([d.Z], () => d.Z.getCountryCode()), y = O.code.split(" ")[0], T = async () => {
+  let [e, t] = i.useState(""), [o, b] = i.useState(""), [x, N] = i.useState(!1), [v, E] = i.useState(!1), [I, S] = i.useState(null), [j, O] = i.useState(null), C = (0, l.e7)([d.Z], () => d.Z.getCountryCode()), y = C.code.split(" ")[0], T = async () => {
     try {
       await c.Z.resendCode(e)
     } catch (e) {
-      S(e.body.message)
+      O(e.body.message)
     }
   }, P = async () => {
     N(!0);
@@ -30,9 +30,9 @@ let b = () => {
       let {
         token: t
       } = await c.Z.verifyPhone(y + e, o);
-      j(null), S(null), E(!0), c.Z.validatePhoneForSupport(t)
+      S(null), O(null), E(!0), c.Z.validatePhoneForSupport(t)
     } catch (e) {
-      e.body.message ? (j(null), S(e.body.message)) : (j(e.body.phone), S(e.body.code))
+      e.body.message ? (S(null), O(e.body.message)) : (S(e.body.phone), O(e.body.code))
     } finally {
       N(!1)
     }
@@ -41,7 +41,7 @@ let b = () => {
       src: n(292824)
     }), (0, r.jsxs)(h.Dx, {
       className: a()(f.marginTop20, m.flex, m.justifyCenter, m.alignCenter),
-      children: [_.NW.string(_.t.WWzQtb), (0, r.jsx)(l.owK, {
+      children: [_.NW.string(_.t.WWzQtb), (0, r.jsx)(s.owK, {
         size: "md",
         color: "currentColor",
         className: f.marginLeft8
@@ -58,7 +58,7 @@ let b = () => {
       className: f.marginTop20,
       children: [(0, r.jsx)(p.Z, {
         label: _.NW.string(_.t.eJnn09),
-        alpha2: O.alpha2,
+        alpha2: C.alpha2,
         countryCode: y,
         value: e,
         autoComplete: "off",
@@ -72,7 +72,7 @@ let b = () => {
         value: o,
         onChange: b,
         maxLength: g.z,
-        error: C
+        error: j
       }), (0, r.jsx)(h.zx, {
         size: h.zx.Sizes.SMALL,
         look: h.zx.Looks.LINK,

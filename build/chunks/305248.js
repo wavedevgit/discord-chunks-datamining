@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => v
 }), n(47120), n(230036);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(442837),
   s = n(570140),
   c = n(45114),
-  d = n(404616),
-  u = n(470623),
+  u = n(404616),
+  d = n(470623),
   p = n(344185),
   m = n(488131),
   f = n(592125),
@@ -43,9 +43,9 @@ function v(e) {
     })
   }), (0, r.jsx)("div", {
     className: b.container,
-    children: v.map(e => (0, r.jsx)(u.oL, {
+    children: v.map(e => (0, r.jsx)(d.oL, {
       channel: n,
-      children: (0, r.jsx)(d.ZP, {
+      children: (0, r.jsx)(u.ZP, {
         className: b.forumPost,
         threadId: e.id,
         goToThread: y

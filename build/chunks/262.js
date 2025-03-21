@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(301563);
 var r = n(200651);
 n(192379);
@@ -84,19 +84,19 @@ function c(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     usernameHook: t,
     message: i,
     compact: a
   } = e, {
-    content: d,
-    timestamp: u,
+    content: u,
+    timestamp: d,
     messageReference: p
-  } = i, m = (0, o.ZP)(i), f = t(m), h = (null != d ? d : "").split(" ").slice(0, -1).join(" "), g = s.NW.format(s.t["47CZc3"], {
+  } = i, m = (0, o.ZP)(i), f = t(m), h = (null != u ? u : "").split(" ").slice(0, -1).join(" "), g = s.NW.format(s.t["47CZc3"], {
     username: m.nick,
     usernameHook: f,
-    webhookName: d,
+    webhookName: u,
     webhookNameHook: (e, t) => (0, r.jsx)(c, {
       messageReference: p,
       guildName: h,
@@ -105,7 +105,7 @@ function d(e) {
   });
   return (0, r.jsx)(l.Z, {
     icon: n(570111),
-    timestamp: u,
+    timestamp: d,
     compact: a,
     children: g
   })

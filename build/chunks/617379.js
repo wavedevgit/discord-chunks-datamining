@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -29,7 +29,7 @@ function c(e) {
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,7 +42,7 @@ function d(e, t) {
   }), e
 }
 
-function u(e) {
+function d(e) {
   let {
     channel: t
   } = e;
@@ -50,11 +50,11 @@ function u(e) {
     align: "right",
     animation: i.yRy.Animation.NONE,
     position: "bottom",
-    renderPopout: e => t.isThread() ? (0, r.jsx)(o.Z, d(c({}, e), {
+    renderPopout: e => t.isThread() ? (0, r.jsx)(o.Z, u(c({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
       label: s.NW.string(s.t.ljs3OT)
-    })) : (0, r.jsx)(a.Z, d(c({}, e), {
+    })) : (0, r.jsx)(a.Z, u(c({}, e), {
       channel: t,
       navId: "recents-notifications",
       label: s.NW.string(s.t.ljs3OT),

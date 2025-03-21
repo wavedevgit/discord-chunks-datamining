@@ -1,19 +1,19 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 31942 **/
 n.d(t, {
-  Z: () => b
+  Z: () => m
 });
-var i, r = n(442837),
+var r, i = n(442837),
   l = n(570140),
   o = n(673750),
-  s = n(786761),
-  a = n(592125),
-  u = n(375954),
-  d = n(709054),
-  c = n(539573),
-  h = n(825829),
-  f = n(981631);
+  a = n(786761),
+  u = n(592125),
+  c = n(375954),
+  s = n(709054),
+  d = n(539573),
+  f = n(825829),
+  p = n(981631);
 
-function p(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,61 +21,61 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = {},
-  v = 0,
-  C = {},
-  E = {},
-  _ = (e, t) => {
+let _ = {},
+  O = 0,
+  g = {},
+  T = {},
+  h = (e, t) => {
     let n = (0, o.hc)(e),
-      i = {
+      r = {
         id: n,
         isBlockedEdit: (0, o.Bz)(e),
         messageData: e,
-        errorMessage: (0, c.uF)(e, t)
+        errorMessage: (0, d.uF)(e, t)
       };
-    g[n] = i, v++
+    _[n] = r, O++
   },
-  S = e => g[e],
-  m = e => {
-    null != g[e] && delete g[e], v++
+  S = e => _[e],
+  b = e => {
+    null != _[e] && delete _[e], O++
   };
 
-function O(e) {
+function C(e) {
   let {
     messageData: t,
     errorResponseBody: n
   } = e;
-  return _(t, n), !0
+  return h(t, n), !0
 }
 
 function I(e) {
   var t;
   let {
     channelId: n,
-    messages: i
-  } = e, r = null === (t = a.Z.getChannel(n)) || void 0 === t ? void 0 : t.getGuildId();
-  if (null == r) return !1;
-  let l = E[r],
-    o = i.reduce((e, t) => {
+    messages: r
+  } = e, i = null === (t = u.Z.getChannel(n)) || void 0 === t ? void 0 : t.getGuildId();
+  if (null == i) return !1;
+  let l = T[i],
+    o = r.reduce((e, t) => {
       var n;
-      return t.type === f.uaV.AUTO_MODERATION_ACTION && (null === (n = t.embeds) || void 0 === n ? void 0 : n.some(e => {
+      return t.type === p.uaV.AUTO_MODERATION_ACTION && (null === (n = t.embeds) || void 0 === n ? void 0 : n.some(e => {
         let {
           type: t
         } = e;
-        return t === f.hBH.AUTO_MODERATION_NOTIFICATION
-      })) ? null == e || -1 === d.default.compare(e, t.id) ? t.id : void 0 : e
+        return t === p.hBH.AUTO_MODERATION_NOTIFICATION
+      })) ? null == e || -1 === s.default.compare(e, t.id) ? t.id : void 0 : e
     }, l);
-  return null != o && E[r] !== o && (E[r] = o, !0)
+  return null != o && T[i] !== o && (T[i] = o, !0)
 }
-class y extends(i = r.ZP.PersistedStore) {
+class N extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(u.Z), null != e && (g = e.automodFailedMessages, C = e.mentionRaidDetectionByGuild)
+    this.waitFor(c.Z), null != e && (_ = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
   }
   getState() {
     return {
-      automodFailedMessages: g,
-      mentionRaidDetectionByGuild: C,
-      lastIncidentAlertMessage: E
+      automodFailedMessages: _,
+      mentionRaidDetectionByGuild: g,
+      lastIncidentAlertMessage: T
     }
   }
   getMessage(e) {
@@ -83,21 +83,21 @@ class y extends(i = r.ZP.PersistedStore) {
     return null == e ? null : null !== (t = S(e)) && void 0 !== t ? t : null
   }
   getMessagesVersion() {
-    return v
+    return O
   }
   getMentionRaidDetected(e) {
     var t;
-    return null !== (t = C[e]) && void 0 !== t ? t : null
+    return null !== (t = g[e]) && void 0 !== t ? t : null
   }
   getLastIncidentAlertMessage(e) {
     var t;
-    return null !== (t = E[e]) && void 0 !== t ? t : null
+    return null !== (t = T[e]) && void 0 !== t ? t : null
   }
 }
-p(y, "displayName", "GuildAutomodMessageStore"), p(y, "persistKey", "GuildAutomodMessages");
-let b = new y(l.Z, {
+E(N, "displayName", "GuildAutomodMessageStore"), E(N, "persistKey", "GuildAutomodMessages");
+let m = new N(l.Z, {
   CONNECTION_OPEN: function(e) {
-    return g = {}, v++, !0
+    return _ = {}, O++, !0
   },
   LOAD_MESSAGES_SUCCESS: I,
   LOCAL_MESSAGES_LOADED: I,
@@ -106,43 +106,43 @@ let b = new y(l.Z, {
       guildId: t,
       message: n
     } = e;
-    if (null == t || n.type !== f.uaV.AUTO_MODERATION_ACTION) return !1;
-    let i = (0, s.e5)(n);
-    return !!(0, h.nY)(i) && !!(0, h.OP)(i) && (E[t] = i.id, !0)
+    if (null == t || n.type !== p.uaV.AUTO_MODERATION_ACTION) return !1;
+    let r = (0, a.e5)(n);
+    return !!(0, f.nY)(r) && !!(0, f.OP)(r) && (T[t] = r.id, !0)
   },
-  MESSAGE_SEND_FAILED_AUTOMOD: O,
-  MESSAGE_EDIT_FAILED_AUTOMOD: O,
+  MESSAGE_SEND_FAILED_AUTOMOD: C,
+  MESSAGE_EDIT_FAILED_AUTOMOD: C,
   REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
     let {
       messageId: t
     } = e;
-    return m(t), !0
+    return b(t), !0
   },
   MESSAGE_END_EDIT: function(e) {
     let {
       response: t
     } = e;
-    if ((null == t ? void 0 : t.body) == null || t.body.code === f.evJ.AUTOMOD_MESSAGE_BLOCKED) return !1;
+    if ((null == t ? void 0 : t.body) == null || t.body.code === p.evJ.AUTOMOD_MESSAGE_BLOCKED) return !1;
     let n = t.body.id;
     if (null == n) return !1;
-    m(n)
+    b(n)
   },
   AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
     let {
       guildId: t,
       decisionId: n,
-      suspiciousMentionActivityUntil: i
+      suspiciousMentionActivityUntil: r
     } = e;
-    return C[t] = {
+    return g[t] = {
       guildId: t,
       decisionId: n,
-      suspiciousMentionActivityUntil: i
+      suspiciousMentionActivityUntil: r
     }, !0
   },
   AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: function(e) {
     let {
       guildId: t
     } = e;
-    return delete C[t], !0
+    return delete g[t], !0
   }
 })

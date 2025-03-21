@@ -1,13 +1,13 @@
 /** Chunk was on 27978 **/
 n.r(t), n.d(t, {
-  default: () => eS
+  default: () => eO
 }), n(301563), n(47120);
 var r = n(200651),
   i = n(192379),
   o = n(593473),
   a = n(990547),
-  s = n(873546),
-  l = n(442837),
+  l = n(873546),
+  s = n(442837),
   c = n(570140),
   u = n(893776),
   d = n(533307),
@@ -23,10 +23,10 @@ var r = n(200651),
   v = n(962220),
   E = n(637776),
   I = n(264229),
-  j = n(677760),
-  C = n(893607),
-  S = n(314897),
-  O = n(82142),
+  S = n(677760),
+  j = n(893607),
+  O = n(314897),
+  C = n(82142),
   y = n(701190),
   T = n(626135),
   P = n(81063),
@@ -90,13 +90,13 @@ function ei(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-n(179645), l.ZP.initialize();
+n(179645), s.ZP.initialize();
 let eo = (0, L.Z)(V.Z),
   ea = (0, L.Z)(H.Z),
-  es = (0, L.Z)(z.Z),
-  el = (0, L.Z)(U.Z),
+  el = (0, L.Z)(z.Z),
+  es = (0, L.Z)(U.Z),
   ec = (0, L.Z)(G.Z),
-  eu = (0, L.Z)(j.Z),
+  eu = (0, L.Z)(S.Z),
   ed = (0, L.Z)(q.Z),
   ep = (0, L.Z)(k.Z),
   eh = (0, L.Z)(W.Z),
@@ -110,8 +110,8 @@ let eo = (0, L.Z)(V.Z),
   ev = (0, L.Z)(K.Z),
   eE = (0, L.Z)(X.Z),
   eI = (0, L.Z)(Y.Z),
-  ej = (0, L.Z)(g.Z);
-class eC extends i.PureComponent {
+  eS = (0, L.Z)(g.Z);
+class ej extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -119,23 +119,23 @@ class eC extends i.PureComponent {
       location: i
     } = e, {
       backgroundId: a
-    } = t, s = null !== (n = (0, o.parse)(i.search).redirect_to) && void 0 !== n ? n : null;
-    (null == s || "" === s || !(0, w.B)(s) || s.startsWith($.Z5c.ME)) && (s = null);
-    let l = null;
-    if (null == r) l = (0, A.gK)(s);
+    } = t, l = null !== (n = (0, o.parse)(i.search).redirect_to) && void 0 !== n ? n : null;
+    (null == l || "" === l || !(0, w.B)(l) || l.startsWith($.Z5c.ME)) && (l = null);
+    let s = null;
+    if (null == r) s = (0, A.gK)(l);
     else if ((null == r ? void 0 : r.state) === $.r2o.RESOLVED) {
       let {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != a && (l = (0, P.xF)(t.id, a, 1024)) : null != e && "string" == typeof e.splash && (l = Z.ZP.getGuildSplashURL({
+      null != t ? null != a && (s = (0, P.xF)(t.id, a, 1024)) : null != e && "string" == typeof e.splash && (s = Z.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
     }
     return {
-      redirectTo: s,
-      splash: l
+      redirectTo: l,
+      splash: s
     }
   }
   componentDidMount() {
@@ -226,7 +226,7 @@ class eC extends i.PureComponent {
       }), (0, r.jsx)(_.Z, {
         impressionName: a.ImpressionNames.USER_REGISTRATION,
         path: $.Z5c.REGISTER,
-        render: e => ee.a ? (0, r.jsx)(es, ei(er({}, e), {
+        render: e => ee.a ? (0, r.jsx)(el, ei(er({}, e), {
           redirectTo: t,
           inviteKey: n
         })) : (0, r.jsx)(ed, ei(er({}, e), {
@@ -253,10 +253,10 @@ class eC extends i.PureComponent {
             location: i,
             transitionTo: o
           } = e, a = (0, I.mb)(t, i.search);
-          return s.tq || s.Em ? (0, r.jsx)(eu, {
+          return l.tq || l.Em ? (0, r.jsx)(eu, {
             inviteKey: a,
             transitionTo: o
-          }, a) : (0, r.jsx)(es, {
+          }, a) : (0, r.jsx)(el, {
             inviteKey: a,
             location: i,
             transitionTo: o,
@@ -276,9 +276,9 @@ class eC extends i.PureComponent {
             location: i,
             transitionTo: o
           } = e;
-          return s.tq || s.Em ? (0, r.jsx)(F.Z, {
+          return l.tq || l.Em ? (0, r.jsx)(F.Z, {
             code: t
-          }, t) : (0, r.jsx)(el, {
+          }, t) : (0, r.jsx)(es, {
             code: t,
             location: i,
             transitionTo: o,
@@ -325,7 +325,7 @@ class eC extends i.PureComponent {
         path: $.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         render: e => (0, r.jsx)(ev, er({}, e))
       }), (0, r.jsx)(_.Z, {
-        path: $.Z5c.CHANNEL(C.Hw.guildId(), C.Hw.channelId({
+        path: $.Z5c.CHANNEL(j.Hw.guildId(), j.Hw.channelId({
           optional: !0
         }), ":messageId?"),
         render: e => (0, r.jsx)(eN, er({}, e))
@@ -337,7 +337,7 @@ class eC extends i.PureComponent {
         render: e => (0, r.jsx)(eI, er({}, e))
       }), (0, r.jsx)(_.Z, {
         path: $.Z5c.ACCOUNT_REVERT(":token"),
-        render: e => (0, r.jsx)(ej, er({}, e))
+        render: e => (0, r.jsx)(eS, er({}, e))
       })]
     })
   }
@@ -349,20 +349,20 @@ class eC extends i.PureComponent {
     })
   }
 }
-let eS = l.ZP.connectStores([S.default, y.Z, O.Z, x.Z, N.Z], e => {
+let eO = s.ZP.connectStores([O.default, y.Z, C.Z, x.Z, N.Z], e => {
   var t, n, r;
   let {
     match: i,
     location: o
-  } = e, a = null == i ? void 0 : null === (t = i.params) || void 0 === t ? void 0 : t.inviteCode, s = ee.a ? ee.Y : void 0, l = null != a ? (0, I.mb)(a, o.search) : s, c = null == i ? void 0 : null === (n = i.params) || void 0 === n ? void 0 : n.giftCode, u = null == i ? void 0 : null === (r = i.params) || void 0 === r ? void 0 : r.guildTemplateCode;
+  } = e, a = null == i ? void 0 : null === (t = i.params) || void 0 === t ? void 0 : t.inviteCode, l = ee.a ? ee.Y : void 0, s = null != a ? (0, I.mb)(a, o.search) : l, c = null == i ? void 0 : null === (n = i.params) || void 0 === n ? void 0 : n.giftCode, u = null == i ? void 0 : null === (r = i.params) || void 0 === r ? void 0 : r.guildTemplateCode;
   return {
-    inviteKey: l,
-    isAuthenticated: S.default.isAuthenticated(),
+    inviteKey: s,
+    isAuthenticated: O.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? O.Z.get(c) : null,
-    invite: null != l ? y.Z.getInvite(l) : null,
+    gift: null != c ? C.Z.get(c) : null,
+    invite: null != s ? y.Z.getInvite(s) : null,
     guildTemplate: null != u ? N.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: x.Z.hasLoadedExperiments
   }
-})(eC)
+})(ej)

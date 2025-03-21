@@ -1,4 +1,4 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
   Z: () => u
 });
@@ -16,8 +16,8 @@ function u(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     u = (0, a.Z)(),
     d = (0, l.e7)([s.Z], () => s.Z.getOutputDeviceId()),
-    f = null === (t = u[d]) || void 0 === t ? void 0 : t.name,
-    p = Object.values(u).map(t => {
+    p = null === (t = u[d]) || void 0 === t ? void 0 : t.name,
+    f = Object.values(u).map(t => {
       let {
         id: n,
         disabled: l,
@@ -37,10 +37,10 @@ function u(e) {
   return n ? (0, r.jsx)(i.sNh, {
     id: "output-devices",
     label: c.NW.string(c.t["6Ww0iI"]),
-    subtext: f,
-    children: p
+    subtext: p,
+    children: f
   }) : (0, r.jsx)(i.kSQ, {
     label: c.NW.string(c.t["6Ww0iI"]),
-    children: p
+    children: f
   })
 }

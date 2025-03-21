@@ -1,44 +1,44 @@
-/** Chunk was on 97349 **/
-t.d(r, {
+/** Chunk was on 86282 **/
+n.d(l, {
   V: () => u,
   Z: () => d
 });
-var n = t(200651);
-t(192379);
-var l = t(628028),
-  s = t(220427),
-  o = t(777207),
-  a = t(692547),
-  i = t(330711),
-  c = t(671711);
+var t = n(200651);
+n(192379);
+var r = n(628028),
+  i = n(220427),
+  s = n(777207),
+  a = n(692547),
+  o = n(330711),
+  c = n(671711);
 
 function d(e) {
   let {
-    type: r
+    type: l
   } = e;
-  return (0, n.jsx)(u, {
-    icon: "user" === r ? (0, n.jsx)(s.t, {
+  return (0, t.jsx)(u, {
+    icon: "user" === l ? (0, t.jsx)(i.t, {
       size: "xxs",
       color: a.Z.colors.INTERACTIVE_NORMAL
-    }) : (0, n.jsx)(l.Q, {
+    }) : (0, t.jsx)(r.Q, {
       size: "xxs",
       color: a.Z.colors.INTERACTIVE_NORMAL
     }),
-    text: "user" === r ? i.Z.Messages.STOREFRONT_USER_SUBSCRIPTION : i.Z.Messages.STOREFRONT_SERVER_SUBSCRIPTION
+    text: "user" === l ? o.Z.Messages.STOREFRONT_USER_SUBSCRIPTION : o.Z.Messages.STOREFRONT_SERVER_SUBSCRIPTION
   })
 }
 
 function u(e) {
   let {
-    icon: r,
-    text: t
+    icon: l,
+    text: n
   } = e;
-  return (0, n.jsxs)("div", {
+  return (0, t.jsxs)("div", {
     className: c.container,
-    children: [r, (0, n.jsx)(o.x, {
+    children: [l, (0, t.jsx)(s.x, {
       color: "header-primary",
       variant: "text-sm/medium",
-      children: t
+      children: n
     })]
   })
 }

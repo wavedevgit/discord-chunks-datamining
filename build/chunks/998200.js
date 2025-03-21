@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 e.exports = {
   row: "row__6fddf",
   rowContent: "rowContent__6fddf",

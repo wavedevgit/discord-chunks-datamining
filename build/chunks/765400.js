@@ -2,13 +2,13 @@
 r.d(t, {
   v: () => l
 });
-var A = r(200651);
+var n = r(200651);
 r(192379);
-var n = r(481060),
-  o = r(388032),
-  a = r(826201);
-let l = () => (0, A.jsx)(n.IGR, {
-  color: n.TVs.unsafe_rawColors.YELLOW_300.css,
-  text: o.NW.string(o.t.vosPk5),
-  className: a.draftBadge
+var A = r(481060),
+  a = r(388032),
+  o = r(826201);
+let l = () => (0, n.jsx)(A.IGR, {
+  color: A.TVs.unsafe_rawColors.YELLOW_300.css,
+  text: a.NW.string(a.t.vosPk5),
+  className: o.draftBadge
 })

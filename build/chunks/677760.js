@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(642128),
   a = n(442837),
-  s = n(481060),
-  l = n(447543),
+  l = n(481060),
+  s = n(447543),
   c = n(587444),
   u = n(393238),
   d = n(388905),
@@ -23,9 +23,9 @@ var r = n(200651),
   v = n(258356),
   E = n(981631),
   I = n(388032),
-  j = n(496397);
+  S = n(496397);
 
-function C(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function S(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,10 +57,10 @@ function S(e, t) {
   }), e
 }
 
-function O() {
+function C() {
   return (0, r.jsx)("div", {
-    className: j.centerFlex,
-    children: (0, r.jsx)(s.$jN, {})
+    className: S.centerFlex,
+    children: (0, r.jsx)(l.$jN, {})
   })
 }
 let y = e => {
@@ -107,7 +107,7 @@ function P(e) {
     children: t,
     cardChildren: n,
     startAnimHeightPx: a,
-    innerStyle: l
+    innerStyle: s
   } = e;
   let {
     invite: c
@@ -128,7 +128,7 @@ function P(e) {
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, p] = i.useState(y(c)), {
     ref: h,
     height: g
-  } = (0, u.Z)(), _ = (0, s.q_F)({
+  } = (0, u.Z)(), _ = (0, l.q_F)({
     height: null != g && 0 !== g ? "".concat(g, "px") : "".concat(a, "px"),
     config: o.config.stiff
   });
@@ -136,14 +136,14 @@ function P(e) {
     let e = y(c);
     e !== d && p(e)
   }, [c, d]), (0, r.jsxs)(o.animated.div, {
-    className: j.inviteCard,
+    className: S.inviteCard,
     style: _,
     children: [(0, r.jsx)(o.animated.div, {
-      className: j.inviteChildContainer,
+      className: S.inviteChildContainer,
       style: _,
       children: (0, r.jsx)("section", {
         ref: h,
-        className: null == l ? void 0 : l(d),
+        className: null == s ? void 0 : s(d),
         children: t(d)
       })
     }), n]
@@ -158,9 +158,9 @@ function A(e) {
   let n = e => null == t ? null : 1 === e ? (0, r.jsx)(v.X, {
     invite: t
   }) : null;
-  return (0, r.jsx)(P, S(C({
+  return (0, r.jsx)(P, O(j({
     startAnimHeightPx: 0,
-    innerStyle: () => j.guildInfoInner
+    innerStyle: () => S.guildInfoInner
   }, e), {
     children: e => n(e)
   }))
@@ -170,25 +170,25 @@ function Z(e) {
   let {
     invite: t
   } = e, n = n => {
-    if (null == t) return (0, r.jsx)(O, {});
+    if (null == t) return (0, r.jsx)(C, {});
     switch (n) {
       case 1:
-        return (0, r.jsx)(N.Z, S(C({}, e), {
+        return (0, r.jsx)(N.Z, O(j({}, e), {
           invite: t
         }));
       case 2:
-        return (0, r.jsx)(T, S(C({}, e), {
+        return (0, r.jsx)(T, O(j({}, e), {
           invite: t
         }));
       default:
-        return (0, r.jsx)(O, {})
+        return (0, r.jsx)(C, {})
     }
   }, i = {
-    1: j.inviteCardInner,
-    2: j.inviteCardInnerError,
-    0: j.inviteCardInnerLoading
+    1: S.inviteCardInner,
+    2: S.inviteCardInnerError,
+    0: S.inviteCardInnerLoading
   };
-  return (0, r.jsx)(P, S(C({
+  return (0, r.jsx)(P, O(j({
     startAnimHeightPx: 200,
     innerStyle: e => i[e]
   }, e), {
@@ -212,12 +212,12 @@ function R(e) {
   }
   return (0, r.jsxs)(d.ZP, {
     theme: E.BRd.DARK,
-    className: j.splashBackground,
+    className: S.splashBackground,
     style: o,
-    contentClassName: j.centerAuthBoxContent,
-    children: [(0, r.jsx)(Z, S(C({}, e), {
+    contentClassName: S.centerAuthBoxContent,
+    children: [(0, r.jsx)(Z, O(j({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(A, C({}, e))]
+    })), (0, r.jsx)(A, j({}, e))]
   })
 }
 
@@ -247,10 +247,10 @@ function w(e) {
           inviter_id: null == n ? void 0 : null === (o = n.inviter) || void 0 === o ? void 0 : o.id
         });
         let a = null != n && n.state !== E.r2o.EXPIRED && n.state !== E.r2o.BANNED ? t : void 0,
-          s = h.default.getFingerprint(),
-          c = null != s ? s : h.default.getId(),
+          l = h.default.getFingerprint(),
+          c = null != l ? l : h.default.getId(),
           u = null != n && (null == n ? void 0 : n.type) != null ? Number(null == n ? void 0 : n.type) : void 0;
-        l.ZP.openApp(a, void 0, c, void 0, u)
+        s.ZP.openApp(a, void 0, c, void 0, u)
       }(e, t, o)
     },
     transitionTo: n

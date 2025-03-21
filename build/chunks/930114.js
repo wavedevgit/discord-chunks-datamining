@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   V: () => p
 });
@@ -10,8 +10,8 @@ var i = n(481060),
   l = n(585483),
   s = n(74538),
   c = n(138464),
-  d = n(474936),
-  u = n(981631);
+  u = n(474936),
+  d = n(981631);
 
 function p(e) {
   let {
@@ -19,7 +19,7 @@ function p(e) {
     channelContext: p,
     customGiftMessage: m,
     giftInfo: f
-  } = e, h = !1, g = null, _ = a.default.getCurrentUser(), b = (0, s.yd)(null == _ ? void 0 : _.premiumType, d.p9.TIER_0);
+  } = e, h = !1, g = null, _ = a.default.getCurrentUser(), b = (0, s.yd)(null == _ ? void 0 : _.premiumType, u.p9.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -57,7 +57,7 @@ function p(e) {
   }, {
     onCloseCallback: () => {
       var e;
-      h && null != g && !b && g.isSubscription && (null == g ? void 0 : null === (e = g.subscriptionPlan) || void 0 === e ? void 0 : e.premiumSubscriptionType) === d.p9.TIER_2 && l.S.dispatch(u.CkL.PREMIUM_SUBSCRIPTION_CREATED)
+      h && null != g && !b && g.isSubscription && (null == g ? void 0 : null === (e = g.subscriptionPlan) || void 0 === e ? void 0 : e.premiumSubscriptionType) === u.p9.TIER_2 && l.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

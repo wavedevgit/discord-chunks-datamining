@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => l
 });
@@ -13,7 +13,7 @@ function l(e) {
     guildId: t,
     user: n,
     className: l
-  } = e, s = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), d = (0, r.jsx)("foreignObject", {
+  } = e, s = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("foreignObject", {
     x: "30",
     y: "68",
     width: "56",
@@ -72,7 +72,7 @@ function l(e) {
       }), (0, r.jsx)("path", {
         d: "M61.1485 21.3944C62.4818 21.3286 63.5224 20.5015 63.4728 19.547C63.4231 18.5925 62.302 17.872 60.9686 17.9378C59.6353 18.0035 58.5947 18.8306 58.6444 19.7851C58.694 20.7396 59.8152 21.4601 61.1485 21.3944Z",
         fill: "black"
-      }), d]
+      }), u]
     })
   })
 }

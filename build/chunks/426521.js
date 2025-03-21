@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   U: () => W
 }), n(301563);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(99690),
   s = n(906732),
   c = n(812206),
-  d = n(336197),
-  u = n(454585),
+  u = n(336197),
+  d = n(454585),
   p = n(833062),
   m = n(171368),
   f = n(695346),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(833592),
   x = n(497089),
   E = n(178480),
-  j = n(418316),
-  O = n(382865),
-  N = n(526146),
+  O = n(418316),
+  N = n(382865),
+  j = n(526146),
   C = n(400565),
   I = n(148789),
   S = n(11825),
@@ -41,7 +41,7 @@ function k(e) {
   } = e, s = null === (t = a.message) || void 0 === t ? void 0 : t.content;
   if (null == s) return (0, r.jsx)("div", {});
   let c = null !== (i = g.default.getUser(null === (n = a.other_user) || void 0 === n ? void 0 : n.id)) && void 0 !== i ? i : new h.Z(a.other_user),
-    d = u.Z.parse(s);
+    u = d.Z.parse(s);
   return (0, r.jsxs)("div", {
     className: A.messagePreviewContainer,
     children: [(0, r.jsx)(l.Z, {
@@ -51,7 +51,7 @@ function k(e) {
       className: A.messagePreviewText,
       variant: "text-sm/normal",
       lineClamp: 2,
-      children: d
+      children: u
     })]
   })
 }
@@ -63,7 +63,7 @@ function R(e) {
     }
   } = e;
   if (null == t) return null;
-  let n = u.Z.parse(t);
+  let n = d.Z.parse(t);
   return (0, r.jsx)("div", {
     className: A.calloutContainer,
     children: (0, r.jsx)(o.Text, {
@@ -108,7 +108,7 @@ let M = i.memo(function(e) {
       ackedBeforeId: l
     } = e, {
       analyticsLocations: c
-    } = (0, s.ZP)(), p = (0, N.I)(a, l), f = i.useCallback(async () => {
+    } = (0, s.ZP)(), p = (0, j.I)(a, l), f = i.useCallback(async () => {
       if (p || (0, y.wt)(a), null != a.item_enum && a.item_enum === x.AM.FIND_FRIENDS) {
         (0, o.ZDy)(async () => {
           let {
@@ -155,7 +155,7 @@ let M = i.memo(function(e) {
                 section: T.jXE.NOTIFICATION_CENTER
               }
             })
-          } else await (0, d.Z)(r)
+          } else await (0, u.Z)(r)
         }
         _.default.track(T.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: x.ud.CLICKED,
@@ -172,7 +172,7 @@ let M = i.memo(function(e) {
       applicationId: a.applicationId
     }));
     let g = null != a.local_id,
-      O = (0, j.Z)({
+      N = (0, O.Z)({
         item: a,
         renderApplication: e => (0, r.jsx)(L, {
           applicationId: e
@@ -185,7 +185,7 @@ let M = i.memo(function(e) {
         focusProps: {
           offset: 4
         },
-        "aria-label": O,
+        "aria-label": N,
         onClick: f,
         children: [p ? null : (0, r.jsx)("div", {
           className: A.unread
@@ -198,7 +198,7 @@ let M = i.memo(function(e) {
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: p ? "text-muted" : "text-normal",
-            children: "string" != typeof O ? O : u.Z.parse(O)
+            children: "string" != typeof N ? N : d.Z.parse(N)
           }), (null === (t = a.message) || void 0 === t ? void 0 : t.content) != null ? (0, r.jsx)(k, {
             item: a
           }) : null, null != a.callout ? (0, r.jsx)(R, {
@@ -218,7 +218,7 @@ let M = i.memo(function(e) {
     let {
       items: t
     } = e, n = f.d$.useSetting();
-    return (0, O.c)(t), (0, r.jsx)(r.Fragment, {
+    return (0, N.c)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(M, {
         item: e,
         ackedBeforeId: n

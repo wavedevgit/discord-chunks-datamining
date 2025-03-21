@@ -1,29 +1,29 @@
-/** Chunk was on 97349 **/
-t.d(r, {
+/** Chunk was on 74891 **/
+n.d(t, {
   Z: () => a
 });
-var n = t(200651);
-t(192379);
-var l = t(794295),
-  s = t(388032),
-  o = t(89659);
+var r = n(200651);
+n(192379);
+var l = n(794295),
+  i = n(388032),
+  o = n(89659);
 
 function a(e) {
   let {
-    termsOfServiceUrl: r,
-    privacyPolicyUrl: t
+    termsOfServiceUrl: t,
+    privacyPolicyUrl: n
   } = e;
-  return null == r && null == t ? null : (0, n.jsxs)("span", {
+  return null == t && null == n ? null : (0, r.jsxs)("span", {
     className: o.text,
-    children: [null != r && (0, n.jsx)(l.Z, {
-      href: r,
-      children: s.NW.string(s.t["8S0kcH"])
-    }), null != r && null != t && (0, n.jsx)("span", {
+    children: [null != t && (0, r.jsx)(l.Z, {
+      href: t,
+      children: i.NW.string(i.t["8S0kcH"])
+    }), null != t && null != n && (0, r.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
-    }), null != t && (0, n.jsx)(l.Z, {
-      href: t,
-      children: s.NW.string(s.t.ZpyeCg)
+    }), null != n && (0, r.jsx)(l.Z, {
+      href: n,
+      children: i.NW.string(i.t.ZpyeCg)
     })]
   })
 }

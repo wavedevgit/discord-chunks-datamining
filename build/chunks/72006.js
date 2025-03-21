@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
@@ -14,8 +14,8 @@ n.d(t, {
   lv: () => T,
   nR: () => P,
   q0: () => a.a,
-  x0: () => N,
-  xb: () => F,
+  x0: () => j,
+  xb: () => U,
   yd: () => C
 }), n(47120), n(653041);
 var r = n(5148),
@@ -25,8 +25,8 @@ var r = n(5148),
   l = n.n(o),
   s = n(283852),
   c = n.n(s),
-  d = n(115129),
-  u = n.n(d),
+  u = n(115129),
+  d = n.n(u),
   p = n(357062),
   m = n.n(p),
   f = n(34399),
@@ -38,9 +38,9 @@ var r = n(5148),
   y = n(634523),
   x = n.n(y),
   E = n(302648),
-  j = n.n(E);
+  O = n.n(E);
 
-function O(e, t, n, i) {
+function N(e, t, n, i) {
   let a = i.getCurrentContent(),
     o = null;
   null != e && (o = (a = a.createEntity(...e)).getLastCreatedEntityKey());
@@ -56,20 +56,20 @@ function O(e, t, n, i) {
   })
 }
 
-function N(e, t, n, i) {
+function j(e, t, n, i) {
   let a, o;
   let s = t.getCurrentContent(),
     c = s.getFirstBlock(),
-    d = c.getText();
-  "number" == typeof n ? (n > d.length && (n = d.length), null != i && i > d.length && (i = d.length), a = new r.SelectionState({
+    u = c.getText();
+  "number" == typeof n ? (n > u.length && (n = u.length), null != i && i > u.length && (i = u.length), a = new r.SelectionState({
     anchorKey: c.getKey(),
     anchorOffset: n,
     focusKey: c.getKey(),
     focusOffset: null != i && 0 !== i ? i : n
   })) : a = t.getSelection();
-  let u = t.getCurrentInlineStyle(),
+  let d = t.getCurrentInlineStyle(),
     p = l()(s, a);
-  return a.isCollapsed() ? (s = r.Modifier.insertText(s, a, e, u, p), o = "insert-characters") : (s = r.Modifier.replaceText(s, a, e, u, p), o = "replace-characters"), r.EditorState.push(t, s, o)
+  return a.isCollapsed() ? (s = r.Modifier.insertText(s, a, e, d, p), o = "insert-characters") : (s = r.Modifier.replaceText(s, a, e, d, p), o = "replace-characters"), r.EditorState.push(t, s, o)
 }
 
 function C(e, t) {
@@ -81,7 +81,7 @@ function C(e, t) {
     case "backspace":
       return v()(t);
     case "backspace-word":
-      return u()(t);
+      return d()(t);
     case "backspace-to-start-of-line":
       return c()(t);
     default:
@@ -92,7 +92,7 @@ function C(e, t) {
 function I(e, t) {
   switch (e) {
     case "transpose-characters":
-      return j()(t);
+      return O()(t);
     case "move-selection-to-start-of-block":
       return _()(t);
     case "move-selection-to-end-of-block":
@@ -130,14 +130,14 @@ function T(e, t) {
           start: a,
           end: o
         } = e, l = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === a && n.text === l ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = !0, t = O(null, n.start, n.end, t)))
+        !n.processed && (n.type === i && n.start === a && n.text === l ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = !0, t = N(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
-    t = O([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = N([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), o.forEach(e => {
-    e.processed || (t = O(null, e.start, e.end, t))
+    e.processed || (t = N(null, e.start, e.end, t))
   }), t
 }
 
@@ -153,7 +153,7 @@ function A(e) {
 
 function w(e, t) {
   let n = S(t);
-  return N(e, t, 0, n.length)
+  return j(e, t, 0, n.length)
 }
 
 function Z(e, t) {
@@ -185,7 +185,7 @@ function M(e) {
     n = S(e);
   if (n.length > t) {
     let i = e.getSelection();
-    e = N("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
+    e = j("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
   }
   return e
 }
@@ -208,6 +208,6 @@ function W(e) {
   a < e.scrollLeft ? e.scrollLeft = a - 10 : a > e.scrollLeft + e.offsetWidth && (e.scrollLeft = a - e.offsetWidth + 3)
 }
 
-function F(e) {
+function U(e) {
   return 0 === S(e).length
 }

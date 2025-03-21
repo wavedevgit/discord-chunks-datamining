@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => F
+  Z: () => U
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(512722),
   s = n.n(l),
   c = n(772848),
-  d = n(831209),
-  u = n(399606),
+  u = n(831209),
+  d = n(399606),
   p = n(481060),
   m = n(607070),
   f = n(100527),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(406432),
   x = n(348238),
   E = n(38267),
-  j = n(184301),
-  O = n(347475),
-  N = n(695346),
+  O = n(184301),
+  N = n(347475),
+  j = n(695346),
   C = n(271383),
   I = n(594174),
   S = n(768581),
@@ -70,18 +70,18 @@ function W(e, t) {
   }), e
 }
 
-function F(e) {
+function U(e) {
   var t, n, a;
   let {
     embedUrl: l,
-    message: F,
-    channel: U
-  } = e, B = (0, w.J)(l, F), {
+    message: U,
+    channel: F
+  } = e, B = (0, w.J)(l, U), {
     setPopout: G
-  } = (0, E.Z)(F.id, k.d$), H = (0, x.qo)(F, U, G, !0), V = N.QK.useSetting(), z = (0, P.n)(), [K, Y] = i.useState(!1), [X, q] = i.useState((null == B ? void 0 : B.coverImage) == null), Q = (0, u.e7)([m.Z], () => m.Z.useReducedMotion), J = (0, u.e7)([C.ZP, I.default], () => {
+  } = (0, E.Z)(U.id, k.d$), H = (0, x.qo)(U, F, G, !0), V = j.QK.useSetting(), z = (0, P.n)(), [K, Y] = i.useState(!1), [X, q] = i.useState((null == B ? void 0 : B.coverImage) == null), Q = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), J = (0, d.e7)([C.ZP, I.default], () => {
     var e;
     return C.ZP.isMember(null == B ? void 0 : B.guildId, null === (e = I.default.getCurrentUser()) || void 0 === e ? void 0 : e.id)
-  }, [B]), $ = (0, u.e7)([C.ZP], () => (null == B ? void 0 : B.authorId) != null ? C.ZP.getMember(B.guildId, B.authorId) : null), ee = (0, g.Z)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == B ? void 0 : null === (t = B.user) || void 0 === t ? void 0 : t.avatarDecoration), [et, en] = i.useMemo(() => {
+  }, [B]), $ = (0, d.e7)([C.ZP], () => (null == B ? void 0 : B.authorId) != null ? C.ZP.getMember(B.guildId, B.authorId) : null), ee = (0, g.Z)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == B ? void 0 : null === (t = B.user) || void 0 === t ? void 0 : t.avatarDecoration), [et, en] = i.useMemo(() => {
     var e;
     return [null !== (e = null == $ ? void 0 : $.colorString) && void 0 !== e ? e : "inherit", null == $ ? void 0 : $.colorRoleId]
   }, [$]), {
@@ -93,26 +93,26 @@ function F(e) {
   }, [Y]), es = i.useCallback(async () => {
     null != B && ((0, h.yw)(Z.rMx.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
       media_post_id: B.threadId,
-      channel_id: U.id,
+      channel_id: F.id,
       can_access: B.canAccess,
       is_member: J
     }), B.canAccess ? (0, v.Z)(Z.Z5c.CHANNEL(B.guildId, B.threadId, B.messageId)) : J ? (0, v.Z)(Z.Z5c.CHANNEL(B.guildId, B.parentChannelId)) : await T.Ub(B.guildId, {}, {
       channelId: B.parentChannelId
     }))
-  }, [B, U, J]), ec = i.useCallback(() => (s()((null == B ? void 0 : B.authorId) != null, "Author Id cannot be null when loading user profile"), (0, j.Z)(B.authorId, B.avatarUrl, {
+  }, [B, F, J]), ec = i.useCallback(() => (s()((null == B ? void 0 : B.authorId) != null, "Author Id cannot be null when loading user profile"), (0, O.Z)(B.authorId, B.avatarUrl, {
     guildId: B.guildId,
-    channelId: U.id
-  })), [B, U]);
+    channelId: F.id
+  })), [B, F]);
   if (null == B) return null;
-  let ed = (e, t) => (s()(null != B.authorId, "Author Id cannot be null when rendering user popout"), (0, r.jsx)(O.Z, W(M({}, e), {
+  let eu = (e, t) => (s()(null != B.authorId, "Author Id cannot be null when rendering user popout"), (0, r.jsx)(N.Z, W(M({}, e), {
       userId: B.authorId,
       guildId: B.guildId,
-      channelId: U.id,
-      messageId: F.id,
+      channelId: F.id,
+      messageId: U.id,
       roleId: en,
       newAnalyticsLocations: t
     }))),
-    eu = (0, S.NZ)({
+    ed = (0, S.NZ)({
       avatarDecoration: ee,
       size: (0, _.y9)(p.EFr.SIZE_40),
       canAnimate: ei
@@ -155,7 +155,7 @@ function F(e) {
           children: (0, r.jsxs)("div", {
             className: D.thumbnailOverlayCta,
             children: [(0, r.jsx)(A.Z, {
-              color: d.Z.WHITE
+              color: u.Z.WHITE
             }), (0, r.jsx)(p.Text, {
               variant: "text-sm/semibold",
               color: "always-white",
@@ -182,7 +182,7 @@ function F(e) {
       }), (0, r.jsxs)("div", {
         className: D.descriptionFooter,
         children: [null != ep && (0, r.jsx)(p.yRy, {
-          renderPopout: e => ed(e, [f.Z.AVATAR]),
+          renderPopout: e => eu(e, [f.Z.AVATAR]),
           position: "right",
           spacing: 12,
           preload: null == B.authorId ? void 0 : ec,
@@ -193,7 +193,7 @@ function F(e) {
               size: p.EFr.SIZE_40,
               src: ep,
               "aria-label": R.NW.string(R.t.KXz3XF),
-              avatarDecoration: eu
+              avatarDecoration: ed
             }))
           })
         }), (0, r.jsxs)("div", {
@@ -220,7 +220,7 @@ function F(e) {
             children: R.NW.format(R.t.voIDKS, {
               authorName: B.authorName,
               authorNameHook: () => (0, r.jsx)(p.yRy, {
-                renderPopout: e => ed(e, [f.Z.USERNAME]),
+                renderPopout: e => eu(e, [f.Z.USERNAME]),
                 position: "right",
                 preload: null == B.authorId ? void 0 : ec,
                 children: e => (0, r.jsx)(p.rz2, W(M({}, e), {

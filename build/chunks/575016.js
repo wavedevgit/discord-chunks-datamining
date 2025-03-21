@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   AT: () => h,
   fC: () => _,
@@ -11,8 +11,8 @@ var r, i = n(192379),
   l = n(442837),
   s = n(493683),
   c = n(336197),
-  d = n(131704),
-  u = n(592125),
+  u = n(131704),
+  d = n(592125),
   p = n(981631),
   m = n(388032),
   f = ((r = {})[r.LONG = 0] = "LONG", r[r.SHORT = 1] = "SHORT", r);
@@ -39,8 +39,8 @@ function h(e) {
 }
 
 function g(e) {
-  let t = (0, l.e7)([u.Z], () => u.Z.getChannel(e.saveData.channelId));
-  return i.useMemo(() => null != t ? t : null != e.message ? new d.nl({
+  let t = (0, l.e7)([d.Z], () => d.Z.getChannel(e.saveData.channelId));
+  return i.useMemo(() => null != t ? t : null != e.message ? new u.nl({
     id: e.saveData.channelId,
     guild_id: e.saveData.guildId,
     type: p.d4z.UNKNOWN,

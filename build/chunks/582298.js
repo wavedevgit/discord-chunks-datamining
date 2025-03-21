@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -10,11 +10,11 @@ var i = n(481060),
   l = n(834129),
   s = n(981631),
   c = n(388032),
-  d = n(192005);
+  u = n(192005);
 
-function u(e) {
+function d(e) {
   let t, {
-      compact: u,
+      compact: d,
       isOwner: p,
       channel: m
     } = e,
@@ -23,7 +23,7 @@ function u(e) {
       null != e && ((0, i.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("6377")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("11117")]).then(n.bind(n, 560114));
         return n => {
           var i, a;
           return (0, r.jsx)(t, (i = function(e) {
@@ -61,41 +61,41 @@ function u(e) {
       }), (0, o.w)())
     },
     h = (e, t) => (0, r.jsx)(i.eee, {
-      className: d.inviteLink,
+      className: u.inviteLink,
       onClick: f,
       children: e
     }, t);
-  return t = u ? (0, r.jsx)("div", {
-    className: d.inviteContent,
+  return t = d ? (0, r.jsx)("div", {
+    className: u.inviteContent,
     children: p ? c.NW.format(c.t["9OheEh"], {
       inviteHook: h
     }) : c.NW.format(c.t["7hv6yM"], {
       inviteHook: h
     })
   }) : (0, r.jsxs)("div", {
-    className: d.content,
+    className: u.content,
     children: [(0, r.jsx)("div", {
-      className: d.inviteHeader,
+      className: u.inviteHeader,
       children: p ? c.NW.string(c.t["Ry1T//"]) : c.NW.string(c.t.ppUFLy)
     }), (0, r.jsx)("div", {
-      className: d.inviteContent,
+      className: u.inviteContent,
       children: p ? c.NW.string(c.t.kLfkNj) : c.NW.string(c.t.gRHGFB)
     }), (0, r.jsx)(i.zxk, {
       onClick: f,
       size: i.zxk.Sizes.SMALL,
-      className: d.inviteButton,
+      className: u.inviteButton,
       children: c.NW.string(c.t.K1BAQ0)
     })]
   }), (0, r.jsx)(l.Z, {
-    className: u ? d.compact : d.inviteContent,
-    iconNode: u ? null : (0, r.jsx)("img", {
+    className: d ? u.compact : u.inviteContent,
+    iconNode: d ? null : (0, r.jsx)("img", {
       alt: "",
       src: n(826926),
       width: 40,
       height: 40
     }),
-    iconContainerClassName: d.iconContainer,
-    compact: u,
+    iconContainerClassName: u.iconContainer,
+    compact: d,
     children: t
   })
 }

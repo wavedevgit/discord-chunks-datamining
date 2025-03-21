@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => E
 }), n(627341);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(278074),
   s = n(263568),
   c = n(481060),
-  d = n(203143),
-  u = n(365206),
+  u = n(203143),
+  d = n(365206),
   p = n(294608),
   m = n(65145),
   f = n(920557),
@@ -109,17 +109,17 @@ function y(e) {
     isInteractive: l,
     className: s
   } = e, {
-    actionButtonRef: u,
+    actionButtonRef: d,
     manageFocusOnAction: p
   } = (0, m.dv)(), f = i.useCallback(async () => {
-    (null == t ? void 0 : t.type) != null && (await d.Z.handlePollActionTapped({
+    (null == t ? void 0 : t.type) != null && (await u.Z.handlePollActionTapped({
       channelId: n,
       messageId: a,
       type: t.type
     }), p(t.type))
   }, [null == t ? void 0 : t.type, n, a, p]);
   return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, r.jsx)(c.zxk, {
-    buttonRef: u,
+    buttonRef: d,
     onClick: f,
     disabled: !t.enabled,
     color: "secondaryButton" === t.presentation ? c.zxk.Colors.CUSTOM : c.zxk.Colors.BRAND,
@@ -132,7 +132,7 @@ function y(e) {
       children: t.label
     })
   }, t.presentation) : "textButton" === t.presentation ? (0, r.jsx)(b, {
-    buttonRef: u,
+    buttonRef: d,
     onClick: f,
     className: s,
     children: t.label
@@ -150,7 +150,7 @@ function x(e) {
     message: t,
     poll: n,
     className: i
-  } = e, a = (0, p.$B)(n.containerStyle), d = function(e, t) {
+  } = e, a = (0, p.$B)(n.containerStyle), u = function(e, t) {
     let n = {
       answers: t.answers,
       answersInteraction: t.answersInteraction,
@@ -161,9 +161,9 @@ function x(e) {
       myAvatarUrl: t.myAvatarUrl,
       canShowVoteCounts: t.canShowVoteCounts
     };
-    return (0, l.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, g({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(u.Z, g({}, n))).otherwise(() => null)
+    return (0, l.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, g({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, g({}, n))).otherwise(() => null)
   }(0, n);
-  return null == d ? null : (0, r.jsx)("div", {
+  return null == u ? null : (0, r.jsx)("div", {
     className: o()(h.container, a, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
@@ -177,7 +177,7 @@ function x(e) {
           scaleFontToUserSetting: !0,
           children: n.promptLabel
         })]
-      }), d, (0, r.jsxs)("div", {
+      }), u, (0, r.jsxs)("div", {
         className: h.bottomBar,
         children: [(0, r.jsx)(y, {
           channelId: t.getChannelId(),

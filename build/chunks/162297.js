@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => W
 }), n(47120), n(266796);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(399606),
   s = n(481060),
   c = n(434650),
-  d = n(778569),
-  u = n(182906),
+  u = n(778569),
+  d = n(182906),
   p = n(100527),
   m = n(367907),
   f = n(906732),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(749681),
   x = n(258971),
   E = n(240991),
-  j = n(592125),
-  O = n(496675),
-  N = n(944486),
+  O = n(592125),
+  N = n(496675),
+  j = n(944486),
   C = n(914010),
   I = n(768581),
   S = n(135431),
@@ -50,18 +50,18 @@ function W(e) {
     customInstallUrl: a.customInstallUrl,
     installParams: a.installParams,
     integrationTypesConfig: a.integrationTypesConfig
-  })) ? (0, r.jsx)(F, {
+  })) ? (0, r.jsx)(U, {
     application: a,
     embedUrl: n
   }) : null
 }
 
-function F(e) {
+function U(e) {
   var t;
   let {
     application: n,
-    embedUrl: d
-  } = e, u = null === (t = n.bot) || void 0 === t ? void 0 : t.id, v = (0, g.ye)(n) && null != u, I = (0, l.e7)([C.Z], () => {
+    embedUrl: u
+  } = e, d = null === (t = n.bot) || void 0 === t ? void 0 : t.id, v = (0, g.ye)(n) && null != d, I = (0, l.e7)([C.Z], () => {
     var e;
     return null !== (e = C.Z.getGuildId()) && void 0 !== e ? e : void 0
   }), {
@@ -71,7 +71,7 @@ function F(e) {
   } = i.useMemo(() => (0, g.sl)(n, {
     fakeAppIconURL: L,
     size: 56
-  }), [n]), F = i.useMemo(() => null != W ? (0, E.parseBioReact)(W) : null, [W]), [B, G] = i.useState(!1), H = i.useCallback(e => {
+  }), [n]), U = i.useMemo(() => null != W ? (0, E.parseBioReact)(W) : null, [W]), [B, G] = i.useState(!1), H = i.useCallback(e => {
     e && G(!0)
   }, []), V = (0, c.O)(H), z = i.useCallback(() => {
     (0, h.h)({
@@ -89,16 +89,16 @@ function F(e) {
     Y = (0, S.TK)(n.id, (0, b.LD)(I, !1)),
     X = K || Y,
     q = n.isVerified && n.isDiscoverable,
-    Q = (0, l.e7)([N.Z, j.Z], () => j.Z.getChannel(N.Z.getChannelId())),
-    J = (0, l.e7)([O.Z], () => (null == Q ? void 0 : Q.isPrivate()) || O.Z.can(Z.Plq.SEND_MESSAGES, Q)),
+    Q = (0, l.e7)([j.Z, O.Z], () => O.Z.getChannel(j.Z.getChannelId())),
+    J = (0, l.e7)([N.Z], () => (null == Q ? void 0 : Q.isPrivate()) || N.Z.can(Z.Plq.SEND_MESSAGES, Q)),
     {
       analyticsLocations: $
     } = (0, f.ZP)(p.Z.APP_OAUTH2_LINK_EMBED),
     ee = async () => {
-      if (null != u) try {
+      if (null != d) try {
         await (0, _.W)({
           appId: n.id,
-          botId: u,
+          botId: d,
           analyticsLocations: $
         })
       } catch (e) {}
@@ -109,13 +109,13 @@ function F(e) {
     });
   return et ? (0, r.jsx)(w.O, {
     app: n,
-    embedUrl: d,
+    embedUrl: u,
     linkType: w.U.OAUTH,
     onView: z
   }) : (0, r.jsxs)("div", {
     ref: V,
     className: D.embedContainer,
-    children: [(0, r.jsx)(U, {
+    children: [(0, r.jsx)(F, {
       application: n,
       iconUrl: T
     }), (0, r.jsx)("img", {
@@ -132,10 +132,10 @@ function F(e) {
           variant: "heading-lg/bold",
           color: "interactive-active",
           children: P
-        }), null != F && (0, r.jsx)(s.Text, {
+        }), null != U && (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: F
+          children: U
         })]
       }), (0, r.jsxs)("div", {
         className: D.buttonContainer,
@@ -186,16 +186,16 @@ function F(e) {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     application: t,
     iconUrl: n
-  } = e, i = (0, d.Z)({
+  } = e, i = (0, u.Z)({
     applicationId: t.id,
     size: 280,
     names: ["embedded_cover"]
   }), a = (0, v.ZP)(n, ""), o = t.bot, l = null, s = {};
-  if ((0, g.ye)(t)) l = (0, r.jsx)(u.Z, {
+  if ((0, g.ye)(t)) l = (0, r.jsx)(d.Z, {
     imageBackground: i,
     applicationName: t.name,
     imageClassName: D.bannerImage,

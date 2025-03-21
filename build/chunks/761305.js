@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(200651),
   o = n(192379),
   a = n(593473),
-  s = n(442837),
-  l = n(544891),
+  l = n(442837),
+  s = n(544891),
   c = n(108427),
   u = n(601964),
   d = n(896797),
@@ -24,12 +24,12 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-s.ZP.initialize();
+l.ZP.initialize();
 class b extends(r = o.PureComponent) {
   componentDidMount() {
     let e = (0, p.Z)(this.props.location),
       t = (0, a.parse)(this.props.location.search);
-    l.tn.post({
+    s.tn.post({
       url: g.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
         token: e,
@@ -128,6 +128,6 @@ class b extends(r = o.PureComponent) {
 f(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let x = s.ZP.connectStores([d.Z], () => ({
+let x = l.ZP.connectStores([d.Z], () => ({
   defaultRoute: d.Z.defaultRoute
 }))(b)

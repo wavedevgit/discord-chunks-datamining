@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => h
 });
@@ -6,13 +6,13 @@ var r, i, a, o = n(442837),
   l = n(570140),
   s = n(70956),
   c = n(709054),
-  d = n(314897),
-  u = n(699516);
+  u = n(314897),
+  d = n(699516);
 let p = 180 * s.Z.Millis.DAY,
   m = !1;
 class f extends(a = o.ZP.Store) {
   initialize() {
-    this.waitFor(u.Z, d.default)
+    this.waitFor(d.Z, u.default)
   }
   isEligible() {
     return m
@@ -26,6 +26,6 @@ i = "PremiumPromoStore", (r = "displayName") in f ? Object.defineProperty(f, r, 
 }) : f[r] = i;
 let h = new f(l.Z, {
   CONNECTION_OPEN: function() {
-    return m !== (m = u.Z.getFriendIDs().length >= 10 && c.default.extractTimestamp(d.default.getId()) < Date.now() - p)
+    return m !== (m = d.Z.getFriendIDs().length >= 10 && c.default.extractTimestamp(u.default.getId()) < Date.now() - p)
   }
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Vk: () => p,
   g3: () => _,
@@ -13,8 +13,8 @@ var r = n(990547),
   l = n(695346),
   s = n(573261),
   c = n(140155),
-  d = n(178480),
-  u = n(981631);
+  u = n(178480),
+  d = n(981631);
 
 function p(e) {
   o.Z.dispatch({
@@ -36,7 +36,7 @@ async function f(e, t) {
   let n = Math.ceil(c.Z.items.length / e.limit);
   try {
     let i = await s.Z.get({
-      url: u.ANM.NOTIF_CENTER_ITEMS(),
+      url: d.ANM.NOTIF_CENTER_ITEMS(),
       trackedActionData: {
         event: r.NetworkActionNames.NOTIFICATION_CENTER_PAGE_FETCH,
         properties: e => {
@@ -87,7 +87,7 @@ function h(e) {
   null != e.local_id ? (t = [e.local_id], o.Z.dispatch({
     type: "NOTIFICATION_CENTER_ITEMS_LOCAL_ACK",
     localIds: t
-  })) : (0, d.RB)(e) ? (n = e.id, o.Z.dispatch({
+  })) : (0, u.RB)(e) ? (n = e.id, o.Z.dispatch({
     type: "NOTIFICATION_CENTER_ITEMS_ACK",
     optimistic: !0,
     ids: [n]
@@ -100,7 +100,7 @@ async function g(e) {
       optimistic: !0,
       ids: [e]
     }), await i.tn.post({
-      url: u.ANM.NOTIF_CENTER_ITEMS_ACK(e),
+      url: d.ANM.NOTIF_CENTER_ITEMS_ACK(e),
       rejectWithError: !0
     })
   } catch (t) {
@@ -117,15 +117,15 @@ async function _(e) {
       type: "NOTIFICATION_CENTER_ITEM_DELETE",
       id: e.id
     }), await s.Z.delete({
-      url: u.ANM.NOTIF_CENTER_ITEMS(e.id),
+      url: d.ANM.NOTIF_CENTER_ITEMS(e.id),
       body: {
-        item_type: (0, d.RB)(e) ? "mention" : "regular"
+        item_type: (0, u.RB)(e) ? "mention" : "regular"
       },
       trackedActionData: {
         event: r.NetworkActionNames.NOTIFICATION_CENTER_ITEM_DELETE,
         properties: {
           notification_center_id: e.id,
-          acked: (0, d.r)(e, t),
+          acked: (0, u.r)(e, t),
           item_type: e.type
         }
       },

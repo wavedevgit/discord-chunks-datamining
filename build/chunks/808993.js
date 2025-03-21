@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   a = n(481060),
-  s = n(388905),
-  l = n(388032),
+  l = n(388905),
+  s = n(388032),
   c = n(802138);
 
 function u(e) {
@@ -16,19 +16,19 @@ function u(e) {
     email: t
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.Ee, {
+    children: [(0, r.jsx)(l.Ee, {
       src: n(26230),
       className: o()(c.marginBottom20, c.marginTop8)
-    }), (0, r.jsx)(s.Dx, {
-      children: l.NW.string(l.t.ailkVF)
-    }), (0, r.jsx)(s.DK, {
-      children: l.NW.format(l.t["4ZMVCA"], {
+    }), (0, r.jsx)(l.Dx, {
+      children: s.NW.string(s.t.ailkVF)
+    }), (0, r.jsx)(l.DK, {
+      children: s.NW.format(s.t["4ZMVCA"], {
         email: t
       })
     }), (0, r.jsx)(a.Text, {
       className: o()(c.marginBottom8, c.marginTop20),
       variant: "text-md/normal",
-      children: l.NW.string(l.t["dpAn+/"])
+      children: s.NW.string(s.t["dpAn+/"])
     })]
   })
 }

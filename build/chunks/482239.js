@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => l
 });
@@ -14,9 +14,9 @@ function l(e) {
     channel: l,
     targetUser: s,
     actorUsernameHook: c,
-    targetUsernameHook: d,
-    compact: u
-  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, l), f = c(p), h = d(null != m ? m : void 0), g = o.NW.format(o.t["32QI5+"], {
+    targetUsernameHook: u,
+    compact: d
+  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, l), f = c(p), h = u(null != m ? m : void 0), g = o.NW.format(o.t["32QI5+"], {
     actorName: p.nick,
     actorHook: f,
     targetName: null == m ? void 0 : m.nick,
@@ -25,7 +25,7 @@ function l(e) {
   return (0, r.jsx)(a.Z, {
     icon: n(474019),
     timestamp: t.timestamp,
-    compact: u,
+    compact: d,
     children: g
   })
 }

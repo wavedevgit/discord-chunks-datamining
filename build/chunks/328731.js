@@ -12,8 +12,8 @@ var n = r(200651),
   u = r(256139),
   d = r(91907),
   p = r(866040),
-  b = r(388032),
-  f = r(796275);
+  f = r(388032),
+  b = r(796275);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -56,23 +56,23 @@ function m(e) {
     displayParticipants: m,
     participant1: j,
     participant2: g,
-    numOtherParticipants: v,
-    orderedParticipants: h
+    numOtherParticipants: h,
+    orderedParticipants: v
   } = (0, s.Z)(t), P = [j, g];
   return (0, n.jsxs)("div", {
-    className: i()(f.container, l),
+    className: i()(b.container, l),
     children: [m.length > 0 ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(p.Z, {
-        participants: h,
+        participants: v,
         channel: r,
         children: e => (0, n.jsx)(o.P3F, y(O({
-          className: f.clickable
+          className: b.clickable
         }, e), {
           children: (0, n.jsx)(a.Z, {
             maxUsers: 3,
             users: m,
             size: o.EFr.SIZE_20,
-            avatarClassName: f.stackedAvatar,
+            avatarClassName: b.stackedAvatar,
             hideOverflowCount: !0,
             disableUsernameTooltip: !0
           })
@@ -84,12 +84,12 @@ function m(e) {
     }) : null, (0, n.jsx)(o.X6q, {
       variant: "text-sm/semibold",
       color: "text-secondary",
-      className: i()(f.truncatedText, f.usersHeader),
+      className: i()(b.truncatedText, b.usersHeader),
       scaleFontToUserSetting: !0,
-      children: b.NW.format(b.t.rH95Gh, {
+      children: f.NW.format(f.t.rH95Gh, {
         user0: c.ZP.getName(r.guild_id, r.id, P[0]),
         user1: c.ZP.getName(r.guild_id, r.id, P[1]),
-        countOthers: v,
+        countOthers: h,
         name0Hook: (e, t) => (0, n.jsx)(d.Z, {
           text: e,
           user: P[0],
@@ -101,7 +101,7 @@ function m(e) {
           channel: r
         }, t),
         countOthersHook: (e, t) => (0, n.jsx)(p.Z, {
-          participants: h,
+          participants: v,
           channel: r,
           children: t => (0, n.jsx)(u.Z, y(O({}, t), {
             tag: "span",

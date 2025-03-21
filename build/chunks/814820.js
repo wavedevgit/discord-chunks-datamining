@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   f: () => y
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(541716),
   s = n(419922),
   c = n(665906),
-  d = n(271383),
-  u = n(430824),
+  u = n(271383),
+  d = n(430824),
   p = n(496675),
   m = n(594174),
   f = n(838440),
@@ -22,7 +22,7 @@ let v = e => {
     let {
       channel: t,
       message: n
-    } = e, [a, c] = i.useState(!1), d = (0, h.y6)(n.id), u = i.useCallback(() => {
+    } = e, [a, c] = i.useState(!1), u = (0, h.y6)(n.id), d = i.useCallback(() => {
       (0, f.v)({
         type: l.Ie.FORM,
         content: "",
@@ -31,9 +31,9 @@ let v = e => {
         let {
           valid: r
         } = e;
-        r && (0, h.TZ)(t, n, d.id)
+        r && (0, h.TZ)(t, n, u.id)
       })
-    }, [t, n, d]);
+    }, [t, n, u]);
     return (0, r.jsx)("div", {
       className: b.welcomeCTA,
       children: (0, r.jsxs)(o.zxk, {
@@ -42,11 +42,11 @@ let v = e => {
         color: o.Ttl.PRIMARY,
         onMouseEnter: () => c(!0),
         onMouseLeave: () => c(!1),
-        onClick: u,
+        onClick: d,
         children: [(0, r.jsx)(s.ZP, {
           className: b.welcomeCTASticker,
           isInteracting: a,
-          sticker: d,
+          sticker: u,
           size: 28
         }), _.NW.string(_.t["7Tj6HR"])]
       })
@@ -56,14 +56,14 @@ let v = e => {
     let {
       message: t,
       channel: n
-    } = e, i = n.getGuildId(), o = (0, a.e7)([m.default, p.Z, u.Z, d.ZP], () => {
+    } = e, i = n.getGuildId(), o = (0, a.e7)([m.default, p.Z, d.Z, u.ZP], () => {
       var e;
       let r = m.default.getCurrentUser(),
         a = (0, c.xl)(n),
         o = p.Z.can(g.Plq.SEND_MESSAGES, n),
-        l = null != i && null != r && (null === (e = d.ZP.getMember(i, r.id)) || void 0 === e ? void 0 : e.isPending),
+        l = null != i && null != r && (null === (e = u.ZP.getMember(i, r.id)) || void 0 === e ? void 0 : e.isPending),
         s = t.author.bot,
-        f = u.Z.getGuild(i),
+        f = d.Z.getGuild(i),
         h = null != f && (f.systemChannelFlags & g.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
       return o && !a && !l && !s && h
     });

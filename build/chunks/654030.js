@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => V
 }), n(47120), n(301563);
@@ -8,8 +8,8 @@ var r, i = n(200651),
   l = n(481060),
   s = n(278323),
   c = n(224706),
-  d = n(763472),
-  u = n(498179),
+  u = n(763472),
+  d = n(498179),
   p = n(276852),
   m = n(620662),
   f = n(994339),
@@ -21,9 +21,9 @@ var r, i = n(200651),
   y = n(768419),
   x = n(456432),
   E = n(347475),
-  j = n(789407),
-  O = n(598077),
-  N = n(757266),
+  O = n(789407),
+  N = n(598077),
+  j = n(757266),
   C = n(831506),
   I = n(271383),
   S = n(283595),
@@ -39,7 +39,7 @@ var r, i = n(200651),
   M = n(981631),
   W = n(701488);
 
-function F(e, t, n) {
+function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,14 +48,14 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function U(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      U(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ class H extends(r = a.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof j.ZP ? null : k.ZP.getApplicationIconURL({
+    return null == n || n instanceof O.ZP ? null : k.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: W.cc
@@ -118,9 +118,9 @@ class H extends(r = a.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), F(this, "state", {
+    super(...e), U(this, "state", {
       sending: !1
-    }), F(this, "handleJoin", () => {
+    }), U(this, "handleJoin", () => {
       let {
         activity: e,
         analyticsLocations: t,
@@ -154,7 +154,7 @@ class H extends(r = a.PureComponent) {
           analyticsLocations: t
         })
       }
-    }), F(this, "handleInvite", async () => {
+    }), U(this, "handleInvite", async () => {
       let {
         activity: e,
         channelId: t
@@ -173,49 +173,49 @@ class H extends(r = a.PureComponent) {
           sending: !1
         })
       }
-    }), F(this, "handleSync", () => {
+    }), U(this, "handleSync", () => {
       let {
         activity: e,
         userId: t
       } = this.props;
-      null != e && null != t && d.Z_(e, t)
-    }), F(this, "handleDownloadApp", () => {
-      (0, l.h7j)(e => (0, i.jsx)(_.default, U({
+      null != e && null != t && u.Z_(e, t)
+    }), U(this, "handleDownloadApp", () => {
+      (0, l.h7j)(e => (0, i.jsx)(_.default, F({
         source: "Game Invite"
       }, e)))
-    }), F(this, "renderUserPopout", (e, t) => {
+    }), U(this, "renderUserPopout", (e, t) => {
       let {
         channelId: n,
         guildId: r,
         message: a,
         analyticsLocations: o
       } = this.props;
-      return null == n ? null : (0, i.jsx)(E.Z, B(U({}, t), {
+      return null == n ? null : (0, i.jsx)(E.Z, B(F({}, t), {
         userId: e.id,
         guildId: null != r ? r : void 0,
         channelId: n,
         messageId: null == a ? void 0 : a.id,
         newAnalyticsLocations: o
       }))
-    }), F(this, "renderSpotifyJoinButton", e => {
+    }), U(this, "renderSpotifyJoinButton", e => {
       let {
         channelId: t,
         guildId: n
       } = this.props;
-      return (0, i.jsx)(x.Z, U({
+      return (0, i.jsx)(x.Z, F({
         guildId: null != n ? n : void 0,
         channelId: t,
         source: "Invite Embed"
       }, e))
-    }), F(this, "renderCustomButton", e => {
+    }), U(this, "renderCustomButton", e => {
       let {
         application: t
       } = this.props;
-      return (0, i.jsx)(u.Z, B(U({}, e), {
+      return (0, i.jsx)(d.Z, B(F({}, e), {
         source: M.Sbl.MESSAGE_EMBED,
         application: t
       }))
-    }), F(this, "renderEmbed", () => {
+    }), U(this, "renderEmbed", () => {
       let e;
       let {
         activity: t,
@@ -226,8 +226,8 @@ class H extends(r = a.PureComponent) {
         isPreview: l,
         isLaunching: s,
         isSender: c,
-        activityActionType: d,
-        className: u,
+        activityActionType: u,
+        className: d,
         channelId: p,
         message: m,
         hideParty: f,
@@ -247,12 +247,12 @@ class H extends(r = a.PureComponent) {
         applicationId: null != a ? a.id : null,
         name: e,
         partyMembers: o,
-        className: u,
+        className: d,
         coverImage: this.getCoverImage(),
         isPreview: l,
         isGameLaunchable: _,
         isLoading: s || this.state.sending,
-        activityActionType: d,
+        activityActionType: u,
         isInBrowser: !R.isPlatformEmbedded,
         isSyncable: h,
         isSender: c,
@@ -274,10 +274,10 @@ class H extends(r = a.PureComponent) {
     })
   }
 }
-F(H, "defaultProps", {
+U(H, "defaultProps", {
   isPreview: !1
 });
-let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
+let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, j.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
   var t;
   let {
     activity: n,
@@ -288,14 +288,14 @@ let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
     guildId: l
   } = e, {
     id: s
-  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === a ? C.Z.getParty(n.party.id) : null, d = null != s ? null !== (t = T.Z.getApplicationActivity(s)) && void 0 !== t ? t : P.Z.getApplicationActivity(s, !0) : T.Z.findActivity(e => e.type === M.IIU.LISTENING), u = !1;
-  null != s && (u = w.Z.getState(s, M.mFx.JOIN) === M.OcF.LOADING);
+  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === a ? C.Z.getParty(n.party.id) : null, u = null != s ? null !== (t = T.Z.getApplicationActivity(s)) && void 0 !== t ? t : P.Z.getApplicationActivity(s, !0) : T.Z.findActivity(e => e.type === M.IIU.LISTENING), d = !1;
+  null != s && (d = w.Z.getState(s, M.mFx.JOIN) === M.OcF.LOADING);
   let p = Array.from(null != c ? c : []).map(e => {
       let t = null != l ? I.ZP.getMember(l, e) : null,
         n = null != t ? t.nick : null,
         r = A.default.getUser(e),
         i = null == r;
-      return null == r && (r = new O.Z({
+      return null == r && (r = new N.Z({
         discriminator: "0005"
       })), {
         user: r,
@@ -309,15 +309,15 @@ let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
   return {
     analyticsLocations: r,
     partyMembers: p,
-    connectedApplication: null != s ? N.Z.getApplication(s) : null,
-    myPartyId: null != d && null != d.party ? d.party.id : null,
-    isLaunching: u,
+    connectedApplication: null != s ? j.Z.getApplication(s) : null,
+    myPartyId: null != u && null != u.party ? u.party.id : null,
+    isLaunching: d,
     isSyncable: m && !h,
     isLaunchable: null != s && (0, D.t)({
       LibraryApplicationStore: S.Z,
       LaunchableGameStore: b.Z,
       DispatchApplicationStore: Z.Z,
-      ConnectedAppsStore: N.Z,
+      ConnectedAppsStore: j.Z,
       applicationId: s
     })
   }

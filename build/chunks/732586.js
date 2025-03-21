@@ -35,31 +35,31 @@ function d(e) {
     type: r,
     style: d,
     label: p,
-    placeholder: b,
-    minLength: f,
+    placeholder: f,
+    minLength: b,
     maxLength: O,
     required: y,
     value: m
   } = e, [j, g] = l.useState(null != m ? m : ""), {
-    state: v,
-    executeStateUpdate: h,
+    state: h,
+    executeStateUpdate: v,
     error: P
   } = (0, a.Ee)(e, null != m ? {
     type: r,
     value: m
   } : void 0), x = (0, c.hz)(e.id);
   l.useEffect(() => {
-    (null == v ? void 0 : v.type) === r && g(v.value)
-  }, [r, v]);
+    (null == h ? void 0 : h.type) === r && g(h.value)
+  }, [r, h]);
   let w = {
     name: p,
     value: j,
-    placeholder: b,
-    minLength: f,
+    placeholder: f,
+    minLength: b,
     maxLength: O,
     required: y,
     onChange: e => {
-      g(e), h({
+      g(e), v({
         type: r,
         value: e
       })

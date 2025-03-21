@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   l: () => _
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(866442),
   s = n(596454),
   c = n(434650),
-  d = n(446489),
-  u = n(56314),
+  u = n(446489),
+  d = n(56314),
   p = n(566006),
   m = n(287151),
   f = n(672164),
@@ -27,18 +27,18 @@ let g = i.memo(function(e) {
         burst_count: y,
         burst_colors: x,
         readOnly: E,
-        isLurking: j,
-        isGuest: O,
-        isPendingMember: N,
+        isLurking: O,
+        isGuest: N,
+        isPendingMember: j,
         type: C,
         emojiSize: I
       } = e,
       S = C === p.O.BURST,
       T = (0, m.y4)(b, v, C),
-      P = (0, u.v)(S && null != x ? x : []),
+      P = (0, d.v)(S && null != x ? x : []),
       A = i ? h : f,
       w = S ? y : _,
-      Z = (0, d.y)(w, m.aO),
+      Z = (0, u.y)(w, m.aO),
       k = {};
     if (S && null != P) {
       var R;
@@ -57,7 +57,7 @@ let g = i.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: o()(A.reaction, A.reactionInner, g, {
         [A.reactionMe]: T,
-        [A.reactionReadOnly]: E && !j && !N && !O
+        [A.reactionReadOnly]: E && !O && !j && !N
       }),
       style: k,
       children: [(0, r.jsx)(s.Z, {
@@ -95,11 +95,11 @@ let g = i.memo(function(e) {
       }
       return i
     }(e, ["showImmediate", "reactions", "emojiSize"]);
-    let [l, s] = i.useState(!1), [d, u] = i.useTransition(), f = i.useCallback(e => {
-      !e || l || d || u(() => {
+    let [l, s] = i.useState(!1), [u, d] = i.useTransition(), f = i.useCallback(e => {
+      !e || l || u || d(() => {
         s(!0)
       })
-    }, [l, d]), h = (0, c.O)(f), _ = l && !d || t ? m.le : g;
+    }, [l, u]), h = (0, c.O)(f), _ = l && !u || t ? m.le : g;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         ref: h

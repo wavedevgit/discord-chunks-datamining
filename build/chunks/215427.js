@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => h
 });
@@ -6,16 +6,16 @@ var r, i, a, o = n(442837),
   l = n(433517),
   s = n(570140),
   c = n(205355);
-let d = "MaintenanceStore",
-  u = null,
+let u = "MaintenanceStore",
+  d = null,
   p = null,
   m = null;
 class f extends(a = o.ZP.Store) {
   initialize() {
-    m = l.K.get(d)
+    m = l.K.get(u)
   }
   getIncident() {
-    return u
+    return d
   }
   getScheduledMaintenance() {
     return null != p && p.id !== m ? p : null
@@ -29,16 +29,16 @@ i = "MaintenanceStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
 }) : f[r] = i;
 let h = new f(s.Z, {
   CONNECTION_OPEN: function() {
-    u = null, c.Z.checkScheduledMaintenances()
+    d = null, c.Z.checkScheduledMaintenances()
   },
   STATUS_PAGE_INCIDENT: function(e) {
-    u = e.incident
+    d = e.incident
   },
   STATUS_PAGE_SCHEDULED_MAINTENANCE: function(e) {
     p = e.maintenance
   },
   STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: function() {
     if (null == p) return !1;
-    m = p.id, l.K.set(d, m)
+    m = p.id, l.K.set(u, m)
   }
 })

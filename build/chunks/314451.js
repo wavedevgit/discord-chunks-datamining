@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(782568),
   s = n(540059),
   c = n(31336),
-  d = n(906467),
-  u = n(594174),
+  u = n(906467),
+  d = n(594174),
   p = n(63063),
   m = n(665149),
   f = n(388032);
@@ -37,17 +37,17 @@ function h(e) {
 function g(e) {
   let {
     className: t
-  } = e, g = (0, a.e7)([d.Z], () => d.Z.isDeveloper), [_, b] = i.useState(!1), [v, y] = i.useState(0), x = (0, a.e7)([u.default], () => {
+  } = e, g = (0, a.e7)([u.Z], () => u.Z.isDeveloper), [_, b] = i.useState(!1), [v, y] = i.useState(0), x = (0, a.e7)([d.default], () => {
     var e, t, n;
-    return null !== (n = null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : null === (e = t.isStaff) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
-  }), E = (0, s.Q3)("StaffHelpButton"), j = e => {
+    return null !== (n = null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : null === (e = t.isStaff) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
+  }), E = (0, s.Q3)("StaffHelpButton"), O = e => {
     clearTimeout(v), y(setTimeout(() => {
       b(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => j(!0),
-    onMouseLeave: () => j(!1),
+    onMouseEnter: () => O(!0),
+    onMouseLeave: () => O(!1),
     children: (0, r.jsx)(o.yRy, {
       shouldShow: _,
       animation: o.yRy.Animation.NONE,

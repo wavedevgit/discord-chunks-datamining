@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   g: () => b
 });
@@ -10,8 +10,8 @@ var i = n(913527),
   l = n(481060),
   s = n(788080),
   c = n(800530),
-  d = n(388032),
-  u = n(809543);
+  u = n(388032),
+  d = n(809543);
 let p = e => a()().diff(a().unix(e), "days");
 
 function m(e) {
@@ -32,8 +32,8 @@ function m(e) {
         })
       })
     },
-    className: u.detailsButton,
-    children: d.NW.string(d.t.QsqdXF)
+    className: d.detailsButton,
+    children: u.NW.string(u.t.QsqdXF)
   })
 }
 
@@ -42,9 +42,9 @@ function f(e) {
     learnMoreLink: t
   } = e;
   return (0, r.jsx)(l.eee, {
-    className: u.detailsButton,
+    className: d.detailsButton,
     href: t,
-    children: d.NW.string(d.t["8/GdRE"])
+    children: u.NW.string(u.t["8/GdRE"])
   })
 }
 
@@ -83,7 +83,7 @@ function g(e) {
     })
   };
   return null != t && t in n ? (0, r.jsx)("div", {
-    className: u.icon,
+    className: d.icon,
     children: n[t]
   }) : null
 }
@@ -93,8 +93,8 @@ function _(e) {
     children: t,
     theme: n
   } = e, i = {
-    default: u.defaultFooterContainer,
-    danger: u.dangerFooterContainer
+    default: d.defaultFooterContainer,
+    danger: d.dangerFooterContainer
   };
   return (0, r.jsx)("div", {
     className: i[null != n ? n : "default"],
@@ -107,11 +107,11 @@ function b(e) {
   if (null == e.embed || null == e.embed.fields) return null;
   let i = (0, s.fr)(e.embed);
   return null == i ? null : (0, r.jsxs)(l.P3F, {
-    className: u.safetyPolicyNoticeContainer,
+    className: d.safetyPolicyNoticeContainer,
     children: [(0, r.jsxs)("div", {
-      className: u.noticeContent,
+      className: d.noticeContent,
       children: [(0, r.jsxs)("div", {
-        className: u.headerRow,
+        className: d.headerRow,
         children: [(0, r.jsx)(g, {
           iconType: i.icon
         }), (0, r.jsx)(l.Text, {
@@ -119,15 +119,15 @@ function b(e) {
           children: i.header
         })]
       }), (0, r.jsx)("div", {
-        className: u.incidentTiming,
+        className: d.incidentTiming,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/medium",
-          children: d.NW.format(d.t.eevFb2, {
+          children: u.NW.format(u.t.eevFb2, {
             daysAgo: p(null !== (n = i.timestamp) && void 0 !== n ? n : 0)
           })
         })
       }), (0, r.jsx)("div", {
-        className: u.noticeBody,
+        className: d.noticeBody,
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",

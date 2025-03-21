@@ -7,21 +7,21 @@ n(192379);
 var i = n(481060),
   o = n(471445),
   a = n(742593),
-  s = n(21622);
+  l = n(21622);
 
-function l(e) {
+function s(e) {
   let {
     channel: t
   } = e, n = (0, o.Th)(t.type);
   return (0, r.jsxs)("div", {
-    className: s.channelInfoContainer,
+    className: l.channelInfoContainer,
     children: [null != n ? (0, r.jsx)(n, {
       color: "currentColor",
       size: "custom",
       width: 20,
       height: 20
     }) : null, (0, r.jsx)(i.Text, {
-      className: s.channelInfoText,
+      className: l.channelInfoText,
       color: "none",
       variant: "text-sm/semibold",
       children: t.name
@@ -35,9 +35,9 @@ function c(e) {
     guildScheduledEvent: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.container,
+    className: l.container,
     children: [(0, r.jsx)(a.HZ, {
-      className: s.statusContainer,
+      className: l.statusContainer,
       guildId: n.guild_id,
       guildEvent: n,
       eventPreview: n
@@ -45,7 +45,7 @@ function c(e) {
       name: n.name,
       description: n.description,
       guildId: n.guild_id
-    }), null != t && n.channel_id === t.id ? (0, r.jsx)(l, {
+    }), null != t && n.channel_id === t.id ? (0, r.jsx)(s, {
       channel: t
     }) : null]
   })

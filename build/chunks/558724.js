@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   J: () => E,
   Z: () => T
@@ -9,8 +9,8 @@ n(433517);
 var l = n(570140),
   s = n(491428),
   c = n(650774),
-  d = n(430824),
-  u = n(496675),
+  u = n(430824),
+  d = n(496675),
   p = n(914010),
   m = n(594174),
   f = n(981631);
@@ -59,10 +59,10 @@ let b = {
   y = {},
   x = null,
   E = 864e5;
-var j = ((i = j || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
-let O = new Set(Object.values(j));
+var O = ((i = O || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
+let N = new Set(Object.values(O));
 
-function N(e) {
+function j(e) {
   var t;
   return t = 0,
     function(e) {
@@ -73,10 +73,10 @@ function N(e) {
       } = e;
       if (0 === t.length) return !0;
       for (let e of t)
-        if (!O.has(e)) return !1;
+        if (!N.has(e)) return !1;
       let i = t.includes("guild_size_all"),
         o = !0;
-      for (let l of Object.values(d.Z.getGuilds())) {
+      for (let l of Object.values(u.Z.getGuilds())) {
         if (i || t.includes("guild_size")) {
           let e = c.Z.getMemberCount(l.id);
           if (null == e || null != n[0] && e < n[0] || null != n[1] && e > n[1]) {
@@ -90,7 +90,7 @@ function N(e) {
           let e = !1;
           for (let t of r) try {
             let n = a.vB(t);
-            if (u.Z.can(n, l)) {
+            if (d.Z.can(n, l)) {
               e = !0;
               break
             }
@@ -98,9 +98,9 @@ function N(e) {
           if (!e) continue
         }
         let s = m.default.getCurrentUser(),
-          d = (null == s ? void 0 : s.id) === l.ownerId,
-          h = u.Z.can(f.Plq.ADMINISTRATOR, l);
-        if (t.includes("is_owner") && !d || t.includes("is_admin") && !h) continue;
+          u = (null == s ? void 0 : s.id) === l.ownerId,
+          h = d.Z.can(f.Plq.ADMINISTRATOR, l);
+        if (t.includes("is_owner") && !u || t.includes("is_admin") && !h) continue;
         null == (y = null != y ? y : {})[e.key] && (y[e.key] = e);
         let g = p.Z.getGuildId(),
           _ = null != g && g === l.id;
@@ -115,16 +115,16 @@ function C(e) {
     survey: t
   } = e;
   if (v.lastFetched = Date.now(), null == v.hiddenSurveys && (v.hiddenSurveys = {}), null != t && null == v.hiddenSurveys[t.key]) {
-    if (!N(t)) return;
+    if (!j(t)) return;
     x = t
   }
 }
 
 function I() {
-  if (null != x && (N(x) || (x = null, 0))) return !1;
+  if (null != x && (j(x) || (x = null, 0))) return !1;
   ! function() {
     let e = Object.values(y = null != y ? y : {})[0];
-    if (null != e && N(e)) {
+    if (null != e && j(e)) {
       C({
         type: "SURVEY_FETCHED",
         survey: e

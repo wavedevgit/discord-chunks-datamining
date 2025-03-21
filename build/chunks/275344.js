@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f,
   v: () => p
@@ -10,12 +10,12 @@ var r = n(200651),
   l = n(399606),
   s = n(904245),
   c = n(375954),
-  d = n(918088);
-let u = i.createContext(void 0);
+  u = n(918088);
+let d = i.createContext(void 0);
 
 function p(e) {
   var t;
-  let n = null !== (t = i.useContext(u)) && void 0 !== t ? t : e;
+  let n = null !== (t = i.useContext(d)) && void 0 !== t ? t : e;
   return o()(null != n, "Using PollReferenceMessageContext without a provider (or a fallback)"), n
 }
 
@@ -29,7 +29,7 @@ function m(e) {
       channelId: t.channel_id,
       messageId: t.id
     })
-  }, [o, t.channel_id, t.id]), (0, r.jsx)(u.Provider, {
+  }, [o, t.channel_id, t.id]), (0, r.jsx)(d.Provider, {
     value: null != a ? a : t,
     children: n
   })
@@ -40,7 +40,7 @@ function f(e) {
     message: t,
     children: n
   } = e;
-  return (0, d.r8)(t) ? n : (0, r.jsx)(m, {
+  return (0, u.r8)(t) ? n : (0, r.jsx)(m, {
     message: t,
     children: n
   })

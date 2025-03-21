@@ -1,13 +1,13 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => j
+  Z: () => S
 });
 var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(442837),
-  l = n(481060),
+  l = n(442837),
+  s = n(481060),
   c = n(812206),
   u = n(388905),
   d = n(925329),
@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(722515),
   E = n(612064),
   I = n(802138);
-let j = s.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
+let S = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
   let {
     giftCode: t
   } = e, n = m.Z.get(t.skuId), {
@@ -40,14 +40,14 @@ let j = s.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
     error: t,
     giftCode: n,
     gifter: o,
-    sku: s,
+    sku: l,
     application: c,
     subscriptionPlan: g
   } = e, _ = null == o ? N.NW.string(N.t.lTGZAg) : N.NW.formatToPlainString(N.t.TjWdPT, {
     username: o.username
-  }), m = s.name;
+  }), m = l.name;
   return null != g && (m = N.NW.formatToPlainString(g.interval === x.rV.MONTH ? N.t.CTpcCQ : N.t.rgPWGx, {
-    skuName: s.name,
+    skuName: l.name,
     intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
     children: [null != n.giftStyle ? (0, r.jsx)(h.Z, {
@@ -56,7 +56,7 @@ let j = s.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
       className: v.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != o ? o.getAvatarURL(void 0, 100) : null,
-      size: l.EFr.DEPRECATED_SIZE_100,
+      size: s.EFr.DEPRECATED_SIZE_100,
       className: I.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
@@ -69,11 +69,11 @@ let j = s.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
         children: _
       }), (0, r.jsxs)(u.Dx, {
         className: a()(I.marginTop8, E.flexCenter),
-        children: [s.productLine !== b.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
+        children: [l.productLine !== b.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.Z.Sizes.MEDIUM,
           className: v.applicationIcon,
           game: c,
-          skuId: s.id
+          skuId: l.id
         }), m]
       })]
     })]

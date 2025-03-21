@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   $3: () => V,
   Go: () => B,
@@ -6,14 +6,14 @@ n.d(t, {
   NU: () => L,
   Nk: () => w,
   R9: () => R,
-  RN: () => F,
+  RN: () => U,
   Wl: () => A,
   XO: () => P,
   Xn: () => z,
   bb: () => H,
   qo: () => M,
   rY: () => D,
-  sR: () => U,
+  sR: () => F,
   tn: () => G,
   wq: () => W
 }), n(789020), n(47120);
@@ -24,8 +24,8 @@ var r = n(200651),
   l = n(904245),
   s = n(144144),
   c = n(40851),
-  d = n(407477),
-  u = n(992970),
+  u = n(407477),
+  d = n(992970),
   p = n(287941),
   m = n(235894),
   f = n(675478),
@@ -37,9 +37,9 @@ var r = n(200651),
   y = n(5967),
   x = n(630388),
   E = n(358085),
-  j = n(51144),
-  O = n(91047),
-  N = n(50284),
+  O = n(51144),
+  N = n(91047),
+  j = n(50284),
   C = n(981631),
   I = n(388032);
 
@@ -59,7 +59,7 @@ function T(e, t, n) {
       n();
       return
     }
-    let a = "@".concat(j.ZP.getUserTag(i, {
+    let a = "@".concat(O.ZP.getUserTag(i, {
         decoration: "never"
       })),
       o = "<@".concat(e, ">");
@@ -112,9 +112,9 @@ function M(e, t, a, l) {
   let {
     id: s
   } = t, {
-    id: d,
-    flags: u
-  } = e, p = (0, x.yE)(u, C.iLy.EPHEMERAL), m = (0, c.bp)();
+    id: u,
+    flags: d
+  } = e, p = (0, x.yE)(d, C.iLy.EPHEMERAL), m = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
     if (!E.isPlatformEmbedded) {
@@ -124,14 +124,14 @@ function M(e, t, a, l) {
       if (null != n && !n.isCollapsed && (n.focusNode === e.target || t.contains(n.focusNode))) return
     }
     let i = h.Z.getChannel(s),
-      c = _.Z.getMessage(s, d),
-      u = g.Z.isEditing(s, d);
-    null != i && null != c && !u && (a({
+      c = _.Z.getMessage(s, u),
+      d = g.Z.isEditing(s, u);
+    null != i && null != c && !d && (a({
       contextMenu: !0
     }), (0, o.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("93375"), n.e("37220"), n.e("53359")]).then(n.bind(n, 225138));
+      } = await Promise.all([n.e("93375"), n.e("37220"), n.e("6743")]).then(n.bind(n, 225138));
       return n => {
         var a, o;
         return (0, r.jsx)(e, (a = function(e) {
@@ -173,22 +173,22 @@ function M(e, t, a, l) {
       }),
       context: m
     }))
-  }, [p, s, d, a, m, l])
+  }, [p, s, u, a, m, l])
 }
 
 function W(e, t) {
   return i.useCallback(n => {
     let r = b.default.getUser(e),
       i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, O.Pv)(n, r, i))
+    null != r && null != i && (n.stopPropagation(), (0, N.Pv)(n, r, i))
   }, [e, t])
 }
 
-function F(e, t, n) {
+function U(e, t, n) {
   return i.useCallback(r => {
     let i = b.default.getUser(e),
       a = h.Z.getChannel(t);
-    null != i && null != a && (r.stopPropagation(), (0, O._j)(r, {
+    null != i && null != a && (r.stopPropagation(), (0, N._j)(r, {
       user: i,
       channel: a,
       moderationAlertId: n
@@ -196,11 +196,11 @@ function F(e, t, n) {
   }, [e, t, n])
 }
 
-function U(e, t) {
+function F(e, t) {
   return i.useCallback(n => {
     let r = b.default.getUser(e),
       i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, O.xS)(n, r, i.guild_id))
+    null != r && null != i && (n.stopPropagation(), (0, N.xS)(n, r, i.guild_id))
   }, [e, t])
 }
 
@@ -211,7 +211,7 @@ function B(e, t) {
     id: r
   } = t;
   return i.useCallback(e => {
-    e.altKey && (e.preventDefault(), (0, N.Z)(r, n))
+    e.altKey && (e.preventDefault(), (0, j.Z)(r, n))
   }, [r, n])
 }
 
@@ -224,7 +224,7 @@ function G(e) {
     popouts: l
   } = e, {
     canShowReactionsOnMessageHover: s
-  } = d.ZP.useExperiment({
+  } = u.ZP.useExperiment({
     location: "useHoveredMessage"
   }, {
     autoTrackExposure: !1
@@ -243,7 +243,7 @@ function G(e) {
         y: n,
         w: i,
         h: a
-      }, !1, u.LL.UserTriggered)
+      }, !1, d.LL.UserTriggered)
     }
   }, [t, n])), [b, y] = i.useState(o);
   g.current = b || g.current;

@@ -2,35 +2,35 @@
 r.d(t, {
   B: () => l
 });
-var A = r(200651);
+var n = r(200651);
 r(192379);
-var n = r(481060),
-  o = r(120651),
-  a = r(388032);
+var A = r(481060),
+  a = r(120651),
+  o = r(388032);
 
 function l(e, t, r) {
   let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-  (0, o.Z)({
+  (0, a.Z)({
     title: e,
-    body: "string" == typeof t ? t : a.NW.format(t, function(e) {
+    body: "string" == typeof t ? t : o.NW.format(t, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
-          A = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (A = A.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
           return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), A.forEach(function(t) {
-          var A;
-          A = r[t], t in e ? Object.defineProperty(e, t, {
-            value: A,
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = A
+          }) : e[t] = n
         })
       }
       return e
     }({
-      highlightHook: e => (0, A.jsx)(n.Text, {
+      highlightHook: e => (0, n.jsx)(A.Text, {
         variant: "text-md/normal",
         color: "text-normal",
         style: {
@@ -39,7 +39,7 @@ function l(e, t, r) {
         children: e
       })
     }, l)),
-    cta: a.NW.string(a.t["NX+WJC"]),
+    cta: o.NW.string(o.t["NX+WJC"]),
     onConfirm: () => {},
     iconVariant: r
   })

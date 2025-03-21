@@ -1,13 +1,13 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => j
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   o = n(990547),
   a = n(442837),
-  s = n(481060),
-  l = n(893776),
+  l = n(481060),
+  s = n(893776),
   c = n(232567),
   u = n(388905),
   d = n(353926),
@@ -58,52 +58,52 @@ let I = e => {
       title: t,
       menuType: i
     } = e, a = () => {
-      (0, s.ZDy)(async () => {
+      (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("93288").then(n.bind(n, 396410));
         return t => (0, r.jsx)(e, E(v({}, t), {
-          onSuccess: l,
+          onSuccess: s,
           headerText: b.NW.string(b.t.ZLRYGR),
           confirmButtonText: b.NW.string(b.t.PDTjLC),
-          confirmButtonColor: s.zxk.Colors.BRAND,
+          confirmButtonColor: l.zxk.Colors.BRAND,
           impressionName: o.ImpressionNames.URF_ENTER_EMAIL
         }))
       })
-    }, l = e => {
+    }, s = e => {
       let t = async () => {
         await (0, g.yL)(i, e)
-      }, a = async t => await (0, g.RV)(i, e, t), l = e => {
+      }, a = async t => await (0, g.RV)(i, e, t), s = e => {
         let t = null == e ? void 0 : e.token;
         i === p.BM.MESSAGE ? (0, h.eE)(t) : i === p.BM.USER && (0, h.JM)(t)
       };
-      t(), (0, s.ZDy)(async () => {
+      t(), (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("94566").then(n.bind(n, 965072));
         return n => (0, r.jsx)(e, E(v({}, n), {
           onFormSubmit: a,
           onResend: t,
-          onSuccess: l,
+          onSuccess: s,
           headerText: b.NW.string(b.t.H3Q7U1),
           confirmButtonText: b.NW.string(b.t["13ofGh"]),
-          confirmButtonColor: s.zxk.Colors.BRAND,
+          confirmButtonColor: l.zxk.Colors.BRAND,
           impressionName: o.ImpressionNames.URF_CONFIRM_EMAIL_CODE
         }))
       })
     };
     return (0, r.jsx)("div", {
       className: x.buttonColumn,
-      children: (0, r.jsx)(s.zxk, {
+      children: (0, r.jsx)(l.zxk, {
         className: N.__invalid_reportButton,
         fullWidth: !0,
-        color: s.zxk.Colors.BRAND,
+        color: l.zxk.Colors.BRAND,
         onClick: () => a(),
         children: t
       })
     })
   },
-  j = () => {
+  S = () => {
     let [e, t] = i.useState(!0), [n, o] = i.useState(!1), h = (0, a.e7)([_.default], () => _.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
       (0, g.qJ)().then(() => {
         t(!1), o(!0)
@@ -117,10 +117,10 @@ let I = e => {
       }).then(() => E()).catch(() => t(!1))) : E()
     }, [h]), i.useEffect(() => {
       (async () => {
-        v || (await l.Z.getLocationMetadata(), l.Z.getExperiments())
+        v || (await s.Z.getLocationMetadata(), s.Z.getExperiments())
       })()
     }, [v]), e || !v ? (0, r.jsx)(u.ZP, {
-      children: (0, r.jsx)(s.$jN, {})
+      children: (0, r.jsx)(l.$jN, {})
     }) : n && (0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.Dx, {
         className: N.marginBottom8,

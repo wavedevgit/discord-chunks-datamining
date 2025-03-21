@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => N
+  Z: () => j
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(468194),
   s = n(481060),
   c = n(904245),
-  d = n(596454),
-  u = n(377171),
+  u = n(596454),
+  d = n(377171),
   p = n(540059),
   m = n(739566),
   f = n(942951),
@@ -26,7 +26,7 @@ function x() {
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",
-    fill: u.Z.INTERACTIVE_NORMAL,
+    fill: d.Z.INTERACTIVE_NORMAL,
     "aria-hidden": !0,
     children: (0, r.jsx)("path", {
       "fill-rule": "evenodd",
@@ -45,7 +45,7 @@ function E(e) {
   if (n) t = (0, r.jsx)(x, {});
   else if (null != i) {
     let e = "" !== i.name ? i.name : i.displayName;
-    t = (0, r.jsx)(d.Z, {
+    t = (0, r.jsx)(u.Z, {
       emojiId: i.id,
       emojiName: e,
       animated: i.animated
@@ -57,7 +57,7 @@ function E(e) {
   }) : null
 }
 
-function j(e) {
+function O(e) {
   let t;
   var {
     type: n
@@ -137,7 +137,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function N(e) {
   let {
     className: t,
     data: n,
@@ -164,7 +164,7 @@ function O(e) {
     children: [(0, r.jsx)(E, {
       hasNoVotes: "NO_VOTES" === l.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(j, function(e) {
+    }), (0, r.jsx)(O, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -196,26 +196,26 @@ function O(e) {
   })
 }
 
-function N(e) {
+function j(e) {
   var t;
   let {
     message: n,
     channel: a,
     compact: o,
-    disableInteraction: d = !1
-  } = e, u = n.embeds[0], p = i.useMemo(() => (0, g.Z)(u), [u]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), x = (0, m.ZP)(n), E = (0, f.l)({
+    disableInteraction: u = !1
+  } = e, d = n.embeds[0], p = i.useMemo(() => (0, g.Z)(d), [d]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), x = (0, m.ZP)(n), E = (0, f.l)({
     user: n.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: n.id
-  }), j = n.messageReference, N = i.useCallback(() => {
-    null != j && c.Z.jumpToMessage({
-      channelId: j.channel_id,
-      messageId: j.message_id,
+  }), O = n.messageReference, j = i.useCallback(() => {
+    null != O && c.Z.jumpToMessage({
+      channelId: O.channel_id,
+      messageId: O.message_id,
       flash: !0,
       returnMessageId: n.id
     })
-  }, [n.id, j]);
+  }, [n.id, O]);
   return null == p ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       iconNode: (0, r.jsx)(s.QDj, {
@@ -227,12 +227,12 @@ function N(e) {
         username: x.nick,
         usernameHook: E(x),
         title: _,
-        titleOnClick: N
+        titleOnClick: j
       })
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(N, {
       className: y.embed,
       data: p,
-      onClickPollLink: d ? void 0 : N
+      onClickPollLink: u ? void 0 : j
     })]
   })
 }

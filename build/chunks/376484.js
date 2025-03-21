@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
@@ -10,8 +10,8 @@ var i = n(120356),
   l = n(446411),
   s = n(454585),
   c = n(834129),
-  d = n(553385),
-  u = n(981631),
+  u = n(553385),
+  d = n(981631),
   p = n(388032),
   m = n(248356);
 
@@ -51,7 +51,7 @@ function f(e) {
       children: (0, r.jsx)(o.zxk, {
         color: o.zxk.Colors.PRIMARY,
         onClick: () => {
-          s ? (0, d.z$)(t) : (0, d.XP)(i.guild_id, i.id, t.id)
+          s ? (0, u.z$)(t) : (0, u.XP)(i.guild_id, i.id, t.id)
         },
         children: p.NW.string(p.t.zdBCIi)
       })
@@ -74,8 +74,8 @@ function h(e) {
       channelId: n.channel_id
     }),
     autoPlayGif: !1,
-    renderImageComponent: u.VqG,
-    renderVideoComponent: u.VqG,
-    renderLinkComponent: u.VqG
+    renderImageComponent: d.VqG,
+    renderVideoComponent: d.VqG,
+    renderLinkComponent: d.VqG
   })
 }

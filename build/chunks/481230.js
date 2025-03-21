@@ -7,8 +7,8 @@ var r = n(913527),
   i = n.n(r),
   o = n(990547),
   a = n(570140),
-  s = n(479531),
-  l = n(771308),
+  l = n(479531),
+  s = n(771308),
   c = n(314897),
   u = n(626135),
   d = n(573261),
@@ -129,8 +129,8 @@ function m(e) {
       action: g.Al.AGE_GATE_SUCCESS
     })
   }, e => {
-    let t = new s.Z(e);
-    throw null != t.getFieldErrors("date_of_birth") && l.wE(g.L0.REGISTER), u.default.track(h.rMx.REGISTER_SUBMIT_ERRORED, {
+    let t = new l.Z(e);
+    throw null != t.getFieldErrors("date_of_birth") && s.wE(g.L0.REGISTER), u.default.track(h.rMx.REGISTER_SUBMIT_ERRORED, {
       is_unique_username_registration: !0,
       email_error_reason: t.getFirstFieldErrorMessage("email"),
       phone_error_reason: t.getFirstFieldErrorMessage("phone"),

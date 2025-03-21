@@ -6,8 +6,8 @@ var r = n(544891),
   i = n(570140),
   o = n(893776),
   a = n(899742),
-  s = n(743142),
-  l = n(117240),
+  l = n(743142),
+  s = n(117240),
   c = n(626135),
   u = n(317770),
   d = n(981631);
@@ -30,7 +30,7 @@ class h extends u.Z {
       handoffKey: t,
       handoffToken: n,
       fingerprint: i,
-      handoffSource: l
+      handoffSource: s
     } = e;
     null != n ? r.tn.post({
       url: d.ANM.HANDOFF_EXCHANGE,
@@ -43,16 +43,16 @@ class h extends u.Z {
       let {
         body: t
       } = e;
-      (0, a.Vb)(t.user), o.Z.loginToken(t.token, !1), p(!0, l)
+      (0, a.Vb)(t.user), o.Z.loginToken(t.token, !1), p(!0, s)
     }, e => {
-      if (null != i && p(!1, l), o.Z.setFingerprint(i), (0, a.lx)(), l === s.F.ROLE_SUBSCRIPTION) {
+      if (null != i && p(!1, s), o.Z.setFingerprint(i), (0, a.lx)(), s === l.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null !== (t = e.message) && void 0 !== t ? t : e.text,
-          handoff_source: l
+          handoff_source: s
         })
       }
-    }) : null != i ? (o.Z.setFingerprint(i), p(!1, l), (0, a.lx)()) : (o.Z.setFingerprint(i), (0, a.by)())
+    }) : null != i ? (o.Z.setFingerprint(i), p(!1, s), (0, a.lx)()) : (o.Z.setFingerprint(i), (0, a.by)())
   }
   constructor(...e) {
     var t, n;
@@ -60,8 +60,8 @@ class h extends u.Z {
       let {
         handoffToken: t,
         fingerprint: n
-      } = e, r = l.Z.key;
-      null != r && l.Z.isHandoffAvailable() ? this.handleHandoff({
+      } = e, r = s.Z.key;
+      null != r && s.Z.isHandoffAvailable() ? this.handleHandoff({
         handoffKey: r,
         handoffToken: t,
         fingerprint: n,

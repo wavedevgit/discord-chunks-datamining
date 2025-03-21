@@ -32,7 +32,7 @@ function p(e) {
   return e
 }
 
-function b(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,14 +45,14 @@ function b(e, t) {
   }), e
 }
 
-function f(e) {
+function b(e) {
   let {
     contentInventoryEntry: t,
     channel: r
   } = e, {
     parsedEntry: l
   } = (0, a.B)();
-  return (0, n.jsx)(u.Z, b(p({}, l), {
+  return (0, n.jsx)(u.Z, f(p({}, l), {
     entry: t,
     channel: r
   }))
@@ -69,7 +69,7 @@ function O(e) {
     entry: e.contentInventoryEntry,
     channel: l,
     errorFallback: null,
-    children: (0, n.jsx)(f, b(p({}, e), {
+    children: (0, n.jsx)(b, f(p({}, e), {
       channel: l
     }))
   })

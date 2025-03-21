@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => y
 }), n(47120);
@@ -8,8 +8,8 @@ var r, i = n(200651),
   l = n.n(o),
   s = n(86357),
   c = n(54936),
-  d = n(687755),
-  u = n(351465),
+  u = n(687755),
+  d = n(351465),
   p = n(669021),
   m = n(73346),
   f = n(568836),
@@ -93,11 +93,11 @@ class v extends(r = a.PureComponent) {
           onToggleMute: r,
           splashClassName: _.splashVideo,
           splashPlaceholderClassName: _.splashPlaceholder
-        }), o.exclusive ? (0, i.jsx)(u.Z, {
+        }), o.exclusive ? (0, i.jsx)(d.Z, {
           className: l()(_.exclusiveRegular, {
             [_.exclusivePlaying]: e
           })
-        }) : o.isTheGameAwardsWinner ? (0, i.jsx)(d.Z, {
+        }) : o.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
           className: l()(_.exclusiveRegular, {
             [_.exclusivePlaying]: e
           })

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   z: () => v
 });
@@ -9,8 +9,8 @@ var r = n(192379),
   l = n(213459),
   s = n(749681),
   c = n(258971),
-  d = n(592125),
-  u = n(496675),
+  u = n(592125),
+  d = n(496675),
   p = n(944486),
   m = n(914010),
   f = n(135431),
@@ -29,12 +29,12 @@ function v(e, t) {
     customInstallUrl: v,
     installParams: y,
     integrationTypesConfig: x
-  }), j = (0, a.e7)([m.Z], () => {
+  }), O = (0, a.e7)([m.Z], () => {
     var e;
     return null !== (e = m.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), O = (0, l.PL)(!0, !1), N = (0, l.LD)(j, !1), C = (0, f.TK)(e.id, O), I = (0, f.TK)(e.id, N), S = E && null != x && i.Y.USER_INSTALL in x, T = (0, a.e7)([d.Z, u.Z, p.Z], () => {
-    let e = d.Z.getChannel(p.Z.getChannelId());
-    return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
+  }), N = (0, l.PL)(!0, !1), j = (0, l.LD)(O, !1), C = (0, f.TK)(e.id, N), I = (0, f.TK)(e.id, j), S = E && null != x && i.Y.USER_INSTALL in x, T = (0, a.e7)([u.Z, d.Z, p.Z], () => {
+    let e = u.Z.getChannel(p.Z.getChannelId());
+    return null != e && (e.isPrivate() || d.Z.can(g.Plq.SEND_MESSAGES, e))
   }, []), P = (C || I || S) && T, A = n || P;
   return r.useMemo(() => A ? {
     label: b.NW.string(b.t["HO/oXl"]),
@@ -62,9 +62,9 @@ function v(e, t) {
         customInstallUrl: v,
         installParams: y,
         integrationTypesConfig: x,
-        guildId: j,
+        guildId: O,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, P, A, v, y, x, E, t, j])
+  } : void 0, [e.id, P, A, v, y, x, E, t, O])
 }

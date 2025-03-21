@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => k
 }), n(47120), n(266796), n(566702);
@@ -10,8 +10,8 @@ var i = n(666572),
   l = n(477690),
   s = n(481060),
   c = n(100527),
-  d = n(906732),
-  u = n(783097),
+  u = n(906732),
+  d = n(783097),
   p = n(606192),
   m = n(213459),
   f = n(321231),
@@ -23,9 +23,9 @@ var i = n(666572),
   y = n(914010),
   x = n(624138),
   E = n(135431),
-  j = n(566620),
-  O = n(365415),
-  N = n(574952),
+  O = n(566620),
+  N = n(365415),
+  j = n(574952),
   C = n(579195),
   I = n(778569),
   S = n(50523),
@@ -54,23 +54,23 @@ function k(e) {
     linkId: M
   } = e, {
     analyticsLocations: W
-  } = (0, d.ZP)(c.Z.ACTIVITY_BOOKMARK), [F] = (0, _.Z)([k]), U = (0, o.e7)([y.Z], () => {
+  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [U] = (0, _.Z)([k]), F = (0, o.e7)([y.Z], () => {
     var e;
     return null !== (e = y.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), B = null == F ? void 0 : null === (t = F.bot) || void 0 === t ? void 0 : t.id, G = null != F && (0, u.ye)(F), {
+  }), B = null == U ? void 0 : null === (t = U.bot) || void 0 === t ? void 0 : t.id, G = null != U && (0, d.ye)(U), {
     currentChannelId: H,
     instanceId: V,
     isCurrentlyInInstance: z,
     canLaunchInChannel: K
-  } = (0, h.c)(k), Y = (0, N.Z)(), X = (0, C.ZP)(null !== (l = null == F ? void 0 : F.maxParticipants) && void 0 !== l ? l : 0), q = (0, I.Z)({
+  } = (0, h.c)(k), Y = (0, j.Z)(), X = (0, C.ZP)(null !== (l = null == U ? void 0 : U.maxParticipants) && void 0 !== l ? l : 0), q = (0, I.Z)({
     applicationId: k,
     size: Z,
     names: ["embedded_cover"]
-  }), Q = null !== (x = null == F ? void 0 : F.id) && void 0 !== x ? x : "0", J = (0, E.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, E.TK)(Q, (0, m.LD)(U, !1)), ee = async () => {
-    if ((null == F ? void 0 : F.id) != null) {
-      if (K)(0, j.G6)({
+  }), Q = null !== (x = null == U ? void 0 : U.id) && void 0 !== x ? x : "0", J = (0, E.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, E.TK)(Q, (0, m.LD)(F, !1)), ee = async () => {
+    if ((null == U ? void 0 : U.id) != null) {
+      if (K)(0, O.G6)({
         channelId: null != H ? H : void 0,
-        applicationId: F.id,
+        applicationId: U.id,
         isStart: null == V,
         instanceId: null != V ? V : void 0,
         embeddedActivitiesManager: Y,
@@ -82,7 +82,7 @@ function k(e) {
         if (null == B) return;
         try {
           await (0, p.W)({
-            appId: F.id,
+            appId: U.id,
             botId: B,
             analyticsLocations: W,
             customId: R,
@@ -98,18 +98,18 @@ function k(e) {
   }), en = (0, i._)(M), {
     data: er,
     error: ei
-  } = (0, O.h)(null == F ? void 0 : F.id, en);
-  if (null == F || !1 === G) return null;
+  } = (0, N.h)(null == U ? void 0 : U.id, en);
+  if (null == U || !1 === G) return null;
   if (et) return null != M && null == ei && null != er ? (0, r.jsx)(S.b, {
-    application: F,
+    application: U,
     customId: R,
     customLink: er,
     embedUrl: L,
     referrerId: D
-  }) : (0, r.jsx)(d.Gt, {
+  }) : (0, r.jsx)(u.Gt, {
     value: W,
     children: (0, r.jsx)(g.O, {
-      app: F,
+      app: U,
       embedUrl: L,
       linkType: g.U.ACTIVITY,
       activityCustomId: R,
@@ -155,7 +155,7 @@ function k(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     };
-  return (0, r.jsx)(d.Gt, {
+  return (0, r.jsx)(u.Gt, {
     value: W,
     children: (0, r.jsxs)("div", {
       className: A.container,
@@ -163,7 +163,7 @@ function k(e) {
         className: A.imgContainer,
         children: (0, r.jsx)("img", {
           className: A.img,
-          alt: F.name,
+          alt: U.name,
           src: q.url
         })
       }), (0, r.jsxs)("div", {
@@ -171,11 +171,11 @@ function k(e) {
         children: [(0, r.jsx)(s.X6q, {
           className: A.heading,
           variant: "heading-xl/semibold",
-          children: F.name
+          children: U.name
         }), (0, r.jsx)(s.X6q, {
           className: A.description,
           variant: "heading-sm/medium",
-          children: null === (n = F.description) || void 0 === n ? void 0 : n.trim()
+          children: null === (n = U.description) || void 0 === n ? void 0 : n.trim()
         }), (0, r.jsxs)("div", {
           className: A.cta,
           children: [(0, r.jsxs)("div", {
@@ -190,17 +190,17 @@ function k(e) {
             })]
           }), (0, r.jsxs)("div", {
             className: A.buttonWrapper,
-            children: [null != F && (0, r.jsx)(s.zxk, {
+            children: [null != U && (0, r.jsx)(s.zxk, {
               onClick: () => {
                 var e;
-                null != F && (a.Y.USER_INSTALL in (null !== (e = F.integrationTypesConfig) && void 0 !== e ? e : {}) || J || $ ? (0, u.X)(F.id) : (0, b.transitionToGlobalDiscovery)({
+                null != U && (a.Y.USER_INSTALL in (null !== (e = U.integrationTypesConfig) && void 0 !== e ? e : {}) || J || $ ? (0, d.X)(U.id) : (0, b.transitionToGlobalDiscovery)({
                   tab: T.GlobalDiscoveryTab.APPS,
-                  applicationId: F.id,
+                  applicationId: U.id,
                   newSessionState: {
                     entrypoint: {
                       name: v.xF.OAUTH2_EMBED
                     },
-                    guildId: U
+                    guildId: F
                   }
                 }))
               },

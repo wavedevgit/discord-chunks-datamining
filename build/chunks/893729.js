@@ -1,84 +1,84 @@
-/** Chunk was on 3849 **/
+/** Chunk was on 15909 **/
 n.d(t, {
-  Z: () => E
+  Z: () => y
 });
-var i = n(200651),
-  r = n(192379),
+var r = n(200651),
+  i = n(192379),
   l = n(120356),
   o = n.n(l),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   u = n(518738),
-  d = n(786761),
-  c = n(3148),
-  h = n(753206),
-  f = n(594174),
-  p = n(5192),
+  c = n(786761),
+  d = n(3148),
+  f = n(753206),
+  p = n(594174),
+  v = n(5192),
   g = n(981631),
-  v = n(388032),
-  C = n(205277);
+  m = n(388032),
+  b = n(205277);
 
-function E(e) {
+function y(e) {
   var t;
   let {
     guildId: n,
     role: l,
-    theme: E,
-    content: _ = v.NW.string(v.t["6OSasb"]),
-    className: S
-  } = e, m = (0, s.e7)([f.default], () => f.default.getCurrentUser()), O = p.ZP.useName(n, null, m), I = (0, u.Kz)(l), y = r.useMemo(() => {
+    theme: y,
+    content: h = m.NW.string(m.t["6OSasb"]),
+    className: O
+  } = e, _ = (0, a.e7)([p.default], () => p.default.getCurrentUser()), j = v.ZP.useName(n, null, _), S = (0, u.Kz)(l), E = i.useMemo(() => {
     var e, t;
-    return (0, d.e5)((e = function(e) {
+    return (0, c.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = i
+          }) : e[t] = r
         })
       }
       return e
-    }({}, (0, c.ZP)({
+    }({}, (0, d.ZP)({
       channelId: "0",
-      content: _,
+      content: h,
       tts: void 0,
       type: void 0,
       messageReference: void 0,
       allowedMentions: void 0,
-      author: m
+      author: _
     })), t = t = {
       state: g.yb.SENT,
       id: "0"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [m, _]), b = {
-    nick: O,
+  }, [_, h]), w = {
+    nick: j,
     colorString: null !== (t = l.colorString) && void 0 !== t ? t : void 0
   };
-  return (0, i.jsx)(a.f6W, {
-    theme: E,
-    children: e => (0, i.jsx)("div", {
-      className: o()(e, C.container, S),
-      children: (0, i.jsx)(h.Z, {
+  return (0, r.jsx)(s.f6W, {
+    theme: y,
+    children: e => (0, r.jsx)("div", {
+      className: o()(e, b.container, O),
+      children: (0, r.jsx)(f.Z, {
         hideTimestamp: !0,
-        author: b,
-        roleIcon: I,
-        message: y,
+        author: w,
+        roleIcon: S,
+        message: E,
         isGroupStart: !0,
         disableInteraction: !0
       })

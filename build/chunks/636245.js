@@ -1,4 +1,4 @@
-/** Chunk was on 86546 **/
+/** Chunk was on 2171 **/
 n.d(t, {
   Z: () => u
 });
@@ -16,15 +16,15 @@ let u = e => {
     channelId: n,
     color: u,
     look: d,
-    onAction: f
-  } = e, p = (0, l.e7)([o.Z], () => o.Z.isInChannel(n), [n]);
+    onAction: p
+  } = e, f = (0, l.e7)([o.Z], () => o.Z.isInChannel(n), [n]);
   return (0, r.jsx)(a.Z, {
     className: c.button,
     color: u,
     look: d,
-    disabled: p,
+    disabled: f,
     onClick: () => {
-      null == f || f(), i.AC(t, n)
+      null == p || p(), i.AC(t, n)
     },
     fullWidth: !0,
     children: s.NW.string(s.t.ZYO5OD)

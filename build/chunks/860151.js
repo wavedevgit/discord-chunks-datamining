@@ -1,56 +1,56 @@
-/** Chunk was on 99393 **/
-n.d(t, {
-  Z: () => x
+/** Chunk was on 64838 **/
+l.d(t, {
+  Z: () => S
 });
-var r = n(200651);
-n(192379);
-var s = n(120356),
-  i = n.n(s),
-  o = n(481060),
-  l = n(467628),
-  a = n(373370),
-  c = n(65443),
-  u = n(160766),
-  d = n(644646),
-  m = n(46140),
-  p = n(869518);
-let x = function(e) {
+var n = l(200651);
+l(192379);
+var s = l(120356),
+  r = l.n(s),
+  i = l(481060),
+  o = l(467628),
+  u = l(373370),
+  a = l(65443),
+  c = l(160766),
+  d = l(644646),
+  m = l(46140),
+  E = l(869518);
+let S = function(e) {
   let {
     className: t,
-    autoplay: n,
+    autoplay: l,
     quest: s,
-    questContent: x,
-    taskDetails: g,
-    location: h
-  } = e, f = (0, a.DD)({
+    questContent: S,
+    taskDetails: j,
+    location: p
+  } = e, f = (0, u.DD)({
     quest: s,
-    taskDetails: g,
-    location: h,
-    questContent: x
-  }), j = (0, l.j)({
+    taskDetails: j,
+    location: p,
+    questContent: S
+  }), A = (0, o.j)({
     location: m.dr.QUESTS_BAR_MOBILE
   });
-  return (0, r.jsxs)("div", {
-    className: i()(p.wrapper, t),
+  return (0, n.jsxs)("div", {
+    className: r()(E.wrapper, t),
     style: {
       color: s.config.colors.primary
     },
-    children: [(0, r.jsx)(u.Z, {
+    children: [(0, n.jsx)(c.Z, {
       quest: s,
-      children: (0, r.jsx)(d.Z, {
-        autoplay: n,
-        className: p.rewardTile,
+      children: (0, n.jsx)(d.Z, {
+        autoplay: l,
+        className: E.rewardTile,
         quest: s,
-        questContent: x,
-        location: h
+        questContent: S,
+        location: p
       })
-    }), (0, r.jsxs)("div", {
-      className: p.copy,
-      children: [(0, r.jsx)(o.Text, {
+    }), (0, n.jsxs)("div", {
+      className: E.copy,
+      children: [(0, n.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-normal",
         children: f
-      }), j && (0, r.jsx)(c.Z, {
+      }), A && (0, n.jsx)(a.Z, {
         textColor: "text-muted",
         withRewardName: !0,
         quest: s

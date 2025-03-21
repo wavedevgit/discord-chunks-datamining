@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => m
 });
@@ -10,9 +10,9 @@ var i = n(442837),
   l = n(55563),
   s = n(780570),
   c = n(701560),
-  d = n(785547);
+  u = n(785547);
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function m(e) {
     source: y,
     hover: x,
     innerClassName: E
-  } = e, j = {
+  } = e, O = {
     fullWidth: n,
     size: m,
     color: f,
@@ -68,13 +68,13 @@ function m(e) {
     className: v,
     hover: x,
     innerClassName: E
-  }, O = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), N = null != O ? O.sku.id : null, C = null != N ? N : t.primarySkuId, I = (0, i.e7)([l.Z], () => null != C && !l.Z.didFetchingSkuFail(C));
-  return null != O && (0, s.Je)(O) ? (0, r.jsx)(d.Z, p(u({}, j), {
-    libraryApplication: O,
+  }, N = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), j = null != N ? N.sku.id : null, C = null != j ? j : t.primarySkuId, I = (0, i.e7)([l.Z], () => null != C && !l.Z.didFetchingSkuFail(C));
+  return null != N && (0, s.Je)(N) ? (0, r.jsx)(u.Z, p(d({}, O), {
+    libraryApplication: N,
     source: y
   })) : I ? (0, r.jsx)("div", {
     children: "deprecated!"
-  }) : (0, r.jsx)(c.Z, p(u({}, j), {
+  }) : (0, r.jsx)(c.Z, p(d({}, O), {
     hideNotLaunchable: g,
     applicationId: t.id
   }))

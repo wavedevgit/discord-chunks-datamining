@@ -13,7 +13,7 @@ var n = r(499254),
 function u(e) {
   let {
     entry: t
-  } = e, r = (0, i.q)(t.extra.application_id), u = null == r ? void 0 : r.getIconURL(c.Si.LARGE), d = t.extra.activity_name, p = (0, a.Jg)(t) ? s.t.vPg1JS : s.t.rPqqtr, b = {
+  } = e, r = (0, i.q)(t.extra.application_id), u = null == r ? void 0 : r.getIconURL(c.Si.LARGE), d = t.extra.activity_name, p = (0, a.Jg)(t) ? s.t.vPg1JS : s.t.rPqqtr, f = {
     onClick: () => {
       n.__(l._b.TEXT, o.Ie.NORMAL, {
         applicationId: t.extra.application_id
@@ -26,8 +26,8 @@ function u(e) {
   return {
     thumbnailUrl: u,
     title: d,
-    titleClickable: b,
-    thumbnailClickable: b,
+    titleClickable: f,
+    thumbnailClickable: f,
     userDescription: p
   }
 }

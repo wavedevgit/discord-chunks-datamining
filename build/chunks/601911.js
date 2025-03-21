@@ -1,8 +1,8 @@
-/** Chunk was on 66711 **/
+/** Chunk was on 74891 **/
 n.d(t, {
   y: () => l
 });
-var i = n(591759);
+var r = n(591759);
 
 function l(e, t) {
   let n = e.getIconSource(t);
@@ -10,7 +10,7 @@ function l(e, t) {
     let e;
     if (Array.isArray(n) ? n.length > 0 && (e = n[0].uri) : e = n.uri, null != e) {
       var l;
-      return null !== (l = i.Z.toURLSafe(e)) && void 0 !== l ? l : void 0
+      return null !== (l = r.Z.toURLSafe(e)) && void 0 !== l ? l : void 0
     }
   }
 }

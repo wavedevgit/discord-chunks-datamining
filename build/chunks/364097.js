@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => m
 });
@@ -10,8 +10,8 @@ var i = n(442837),
   l = n(846587),
   s = n(409059),
   c = n(58346),
-  d = n(388032),
-  u = n(991407),
+  u = n(388032),
+  d = n(991407),
   p = n(651873);
 
 function m(e) {
@@ -21,27 +21,27 @@ function m(e) {
   } = e, f = (0, i.e7)([s.Z], () => s.Z.getGuildTemplate(m));
   if (null == f || f.state === c.Rj.RESOLVING) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: d.NW.string(d.t.Xj87YW)
+      text: u.NW.string(u.t.Xj87YW)
     }), (0, r.jsx)(o.Z.Body, {
       resolving: !0
     })]
   });
   if (f.state === c.Rj.EXPIRED) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: d.NW.string(d.t.C7ZRNz)
+      text: u.NW.string(u.t.C7ZRNz)
     }), (0, r.jsxs)(o.Z.Body, {
       children: [(0, r.jsx)(o.Z.Icon, {
         expired: !0
       }), (0, r.jsx)(o.Z.Info, {
         expired: !0,
-        title: d.NW.string(d.t.A6MwXF)
+        title: u.NW.string(u.t.A6MwXF)
       })]
     })]
   });
   let h = __OVERLAY__ ? (0, r.jsx)(o.Z.Button, {
     isDisabled: !0,
     color: o.Z.Button.Colors.PRIMARY,
-    children: d.NW.string(d.t.W7NTWl)
+    children: u.NW.string(u.t.W7NTWl)
   }) : (0, r.jsx)(o.Z.Button, {
     onClick: () => {
       (0, a.ZDy)(async () => {
@@ -84,19 +84,19 @@ function m(e) {
     },
     submitting: f.state === c.Rj.ACCEPTING,
     color: o.Z.Button.Colors.GREEN,
-    children: d.NW.string(d.t["a3Gl+f"])
+    children: u.NW.string(u.t["a3Gl+f"])
   });
   return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: d.NW.string(d.t.kAvFkJ)
+      text: u.NW.string(u.t.kAvFkJ)
     }), (0, r.jsxs)(o.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: p.headerLine,
         children: [(0, r.jsx)(l.Z, {
-          className: u.icon
+          className: d.icon
         }), (0, r.jsx)(o.Z.Info, {
           title: f.name,
-          children: d.NW.format(d.t.cGXXHB, {
+          children: u.NW.format(u.t.cGXXHB, {
             usageCount: String(null !== (t = f.usageCount) && void 0 !== t ? t : 0)
           })
         })]

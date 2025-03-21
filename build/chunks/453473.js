@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  K: () => U,
+  K: () => F,
   P: () => B
 }), n(47120);
 var r = n(200651),
@@ -10,8 +10,8 @@ var r = n(200651),
   l = n(512722),
   s = n.n(l),
   c = n(913527),
-  d = n.n(c),
-  u = n(990547),
+  u = n.n(c),
+  d = n(990547),
   p = n(91192),
   m = n(442837),
   f = n(481060),
@@ -23,9 +23,9 @@ var r = n(200651),
   y = n(373662),
   x = n(695346),
   E = n(496675),
-  j = n(626135),
-  O = n(585483),
-  N = n(70956),
+  O = n(626135),
+  N = n(585483),
+  j = n(70956),
   C = n(324701),
   I = n(575016),
   S = n(768943),
@@ -76,7 +76,7 @@ let W = {
   }
 };
 
-function F(e) {
+function U(e) {
   let {
     closePopout: t
   } = e;
@@ -87,20 +87,20 @@ function F(e) {
       children: [(0, r.jsx)(g.h4, {
         icon: f.plf,
         title: R.NW.string(R.t["2pAkDA"])
-      }), (0, r.jsx)(U, {
+      }), (0, r.jsx)(F, {
         closePopout: t
       })]
     })
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     closePopout: t
   } = e, n = (0, P.Z)();
   return ((0, b.Z)({
-    type: u.ImpressionTypes.POPOUT,
-    name: u.ImpressionNames.FOR_LATER_LIST_VIEWED,
+    type: d.ImpressionTypes.POPOUT,
+    name: d.ImpressionNames.FOR_LATER_LIST_VIEWED,
     properties: {
       total_count: n.length,
       overdue_count: S.Z.getOverdueMessageReminderCount()
@@ -118,12 +118,12 @@ function B(e) {
     children: a,
     popoutPosition: o,
     popoutAlign: l
-  } = e, [s, c] = i.useState(!1), d = i.useCallback(() => {
+  } = e, [s, c] = i.useState(!1), u = i.useCallback(() => {
     c(!1), s && (null == n || n())
-  }, [n, s]), u = i.useCallback(() => {
+  }, [n, s]), d = i.useCallback(() => {
     c(!s), s ? null == n || n() : null == t || t()
   }, [n, t, s]);
-  i.useEffect(() => (O.S.subscribe(k.CkL.TOGGLE_FOR_LATER, u), () => void O.S.unsubscribe(k.CkL.TOGGLE_FOR_LATER, u)), [u]);
+  i.useEffect(() => (N.S.subscribe(k.CkL.TOGGLE_FOR_LATER, d), () => void N.S.unsubscribe(k.CkL.TOGGLE_FOR_LATER, d)), [d]);
   let p = (0, m.e7)([S.Z], () => S.Z.hasOverdueReminder(), []);
   return (0, r.jsx)(f.yRy, {
     animation: f.yRy.Animation.NONE,
@@ -131,10 +131,10 @@ function B(e) {
     align: l,
     autoInvert: !1,
     shouldShow: s,
-    onRequestClose: d,
+    onRequestClose: u,
     renderPopout: function() {
-      return (0, r.jsx)(F, {
-        closePopout: d
+      return (0, r.jsx)(U, {
+        closePopout: u
       })
     },
     ignoreModalClicks: !0,
@@ -142,7 +142,7 @@ function B(e) {
       let {
         isShown: n
       } = t;
-      return a(u, n, e, p)
+      return a(d, n, e, p)
     }
   })
 }
@@ -153,7 +153,7 @@ function G(e) {
     closePopout: n
   } = e, a = i.useRef(null), o = (0, _.Z)("for-later", a), [l, s] = i.useState(new Date);
   return i.useEffect(() => {
-    let e = setInterval(() => s(new Date), N.Z.Millis.MINUTE);
+    let e = setInterval(() => s(new Date), j.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
@@ -203,12 +203,12 @@ function H(e) {
     throttledNow: a
   } = e, l = (0, I.gr)(t), s = i.useCallback(async e => {
     var r;
-    await (0, I.fC)(t, l), e.shiftKey || n(), j.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, I.fC)(t, l), e.shiftKey || n(), O.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null === (r = t.message) || void 0 === r ? void 0 : r.author.id,
       type: null != t.saveData.dueAt ? T._l.REMINDER : T._l.BOOKMARK,
-      due_duration: null != t.saveData.dueAt ? d()().diff(t.saveData.dueAt) : void 0
+      due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : void 0
     })
   }, [n, t, l]), c = (0, m.e7)([E.Z], () => !!((null == l ? void 0 : l.type) === k.d4z.UNKNOWN || (null == l ? void 0 : l.isPrivate())) || E.Z.can(k.Plq.VIEW_CHANNEL, l));
   return null != l && null != t.message && c ? (0, r.jsxs)("div", {

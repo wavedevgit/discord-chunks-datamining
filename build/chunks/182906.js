@@ -1,28 +1,28 @@
-/** Chunk was on 59160 **/
-n.d(t, {
-  Z: () => l
-}), n(47120);
-var r = n(200651),
-  i = n(192379),
-  a = n(558522),
-  o = n(200135);
+/** Chunk was on 25222 **/
+t.d(n, {
+  Z: () => c
+}), t(47120);
+var o = t(200651),
+  r = t(192379),
+  a = t(558522),
+  i = t(200135);
 
-function l(e) {
+function c(e) {
   let {
-    imageBackground: t,
-    applicationName: n,
-    imageClassName: l,
-    imageNotFoundClassName: s
-  } = e, [c, d] = i.useState(!1);
-  return "not-found" === t.state || c ? (0, r.jsx)("div", {
-    className: s,
-    children: (0, r.jsx)(a.Z, {
-      className: o.brokenImageIcon
-    })
-  }) : "loading" === t.state ? null : (0, r.jsx)("img", {
-    alt: n,
+    imageBackground: n,
+    applicationName: t,
+    imageClassName: c,
+    imageNotFoundClassName: l
+  } = e, [d, s] = r.useState(!1);
+  return "not-found" === n.state || d ? (0, o.jsx)("div", {
     className: l,
-    src: t.url,
-    onError: () => d(!0)
+    children: (0, o.jsx)(a.Z, {
+      className: i.brokenImageIcon
+    })
+  }) : "loading" === n.state ? null : (0, o.jsx)("img", {
+    alt: t,
+    className: c,
+    src: n.url,
+    onError: () => s(!0)
   })
 }

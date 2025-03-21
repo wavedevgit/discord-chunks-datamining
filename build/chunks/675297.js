@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   H: () => v
 }), n(266796);
@@ -10,8 +10,8 @@ var i = n(399606),
   l = n(674180),
   s = n(430824),
   c = n(572004),
-  d = n(267101),
-  u = n(863663),
+  u = n(267101),
+  d = n(863663),
   p = n(676651),
   m = n(623488),
   f = n(942833),
@@ -28,15 +28,15 @@ function v(e) {
     shouldShowFullDescriptionButton: y = !0,
     hideRoleTag: x = !1,
     lineClamp: E = 1,
-    cardWidth: j,
-    cardHeight: O,
-    thumbnailHeight: N,
+    cardWidth: O,
+    cardHeight: N,
+    thumbnailHeight: j,
     descriptionTextVariant: C = "text-sm/normal",
     showOpaqueBackground: I = !1
   } = e, S = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), T = (0, i.e7)([s.Z], () => {
     var e;
     return s.Z.getRole(n, null !== (e = null == t ? void 0 : t.role_id) && void 0 !== e ? e : b.lds)
-  }), P = (0, a.U)(t, 600), A = (0, f.C)(t), w = (0, d.SO)(S), {
+  }), P = (0, a.U)(t, 600), A = (0, f.C)(t), w = (0, u.SO)(S), {
     shouldHideGuildPurchaseEntryPoints: Z
   } = (0, l.uP)(n), k = (0, f.k)(t);
   if (null == S || Z) return null;
@@ -65,7 +65,7 @@ function v(e) {
         })
       },
       onCopyProductLink: () => {
-        (0, c.JG)((0, u.ar)(n, t.id))
+        (0, c.JG)((0, d.ar)(n, t.id))
       },
       onTestDownload: () => {}
     });
@@ -88,9 +88,9 @@ function v(e) {
     showOpaqueBackground: I,
     hideRoleTag: x,
     lineClamp: E,
-    cardWidth: j,
-    cardHeight: O,
-    thumbnailHeight: N,
+    cardWidth: O,
+    cardHeight: N,
+    thumbnailHeight: j,
     descriptionTextVariant: C,
     isDraft: !t.published
   }, t.id)

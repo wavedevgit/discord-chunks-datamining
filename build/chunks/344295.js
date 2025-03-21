@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(533800),
-  l = n(756647),
+  l = n(533800),
+  s = n(756647),
   c = n(442837),
   u = n(298444),
   d = n(447543),
@@ -23,10 +23,10 @@ var r = n(200651),
   v = n(929809),
   E = n(703656),
   I = n(108427),
-  j = n(314897),
-  C = n(896797),
-  S = n(701190),
-  O = n(626135),
+  S = n(314897),
+  j = n(896797),
+  O = n(701190),
+  C = n(626135),
   y = n(630388),
   T = n(63063),
   P = n(782605),
@@ -68,7 +68,7 @@ class V extends i.PureComponent {
       login: t,
       inviteKey: n
     } = this.props;
-    if (O.default.track(L.rMx.INVITE_VIEWED, {
+    if (C.default.track(L.rMx.INVITE_VIEWED, {
         invite_code: n
       }, {
         flush: !0
@@ -94,9 +94,9 @@ class V extends i.PureComponent {
     if (o !== this.getInviteKey(e)) z(o);
     else if (t.state === L.r2o.APP_NOT_OPENED) this.handleContinue();
     else if (this.getMode() === F.LOGIN && r !== e.authenticated && r) {
-      let e = j.default.getFingerprint();
+      let e = S.default.getFingerprint();
       if (null != e) {
-        let t = (0, l.s)(e);
+        let t = (0, s.s)(e);
         this.track(L.rMx.INVITE_LOGIN_SUCCESSFUL, !0, {
           prev_user_id: t
         })
@@ -138,7 +138,7 @@ class V extends i.PureComponent {
       } : {
         invite_code: o
       };
-    O.default.track(e, function(e) {
+    C.default.track(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -267,7 +267,7 @@ class V extends i.PureComponent {
         return this.renderSpinner(B.NW.string(B.t["Z+hCVV"]));
       case L.r2o.RESOLVED:
         var a;
-        if (n && (0, y.yE)(null !== (a = e.flags) && void 0 !== a ? a : 0, s.$.IS_GUEST_INVITE)) return d.ZP.openApp(e.code), u.x.set(x.J, e.code), this.renderAppOpened(() => i(L.Z5c.APP));
+        if (n && (0, y.yE)(null !== (a = e.flags) && void 0 !== a ? a : 0, l.$.IS_GUEST_INVITE)) return d.ZP.openApp(e.code), u.x.set(x.J, e.code), this.renderAppOpened(() => i(L.Z5c.APP));
         if (n || !W.KO) return this.renderAuthenticatedOrDownload();
         if (this.getMode() === F.LOGIN) return (0, r.jsx)(R.Z, {
           invite: e,
@@ -357,16 +357,16 @@ class V extends i.PureComponent {
     })
   }
 }
-let H = c.ZP.connectStores([S.Z, C.Z, j.default, b.Z, h.Z], e => {
+let H = c.ZP.connectStores([O.Z, j.Z, S.default, b.Z, h.Z], e => {
   var t;
   let {
     inviteKey: n
   } = e;
   return {
-    invite: null !== (t = S.Z.getInvite(n)) && void 0 !== t ? t : {},
+    invite: null !== (t = O.Z.getInvite(n)) && void 0 !== t ? t : {},
     nativeAppState: b.Z.getState(n),
-    authenticated: j.default.isAuthenticated(),
-    defaultRoute: C.Z.defaultRoute,
+    authenticated: S.default.isAuthenticated(),
+    defaultRoute: j.Z.defaultRoute,
     isUnderage: h.Z.isUnderageAnonymous()
   }
 })(V)

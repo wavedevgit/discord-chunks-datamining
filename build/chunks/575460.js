@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 14721 **/
 n.d(t, {
   Z: () => d
 }), n(266796);
@@ -16,7 +16,7 @@ function d(e) {
     benefit: t,
     guildId: n,
     onClick: d
-  } = e, u = (0, s.Z)(n, t.ref_id), p = (0, r.jsx)(o.Z, {
+  } = e, u = (0, s.Z)(n, t.ref_id), _ = (0, r.jsx)(o.Z, {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
@@ -30,7 +30,7 @@ function d(e) {
     role: "link",
     children: [(0, r.jsx)("div", {
       className: c.emojiContainer,
-      children: p
+      children: _
     }), (0, r.jsxs)("div", {
       className: c.infoContainer,
       children: [(0, r.jsx)(i.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 14721 **/
 n.d(t, {
   R: () => g
 });
@@ -11,15 +11,15 @@ var r = n(200651),
   c = n(709706),
   d = n(750180),
   u = n(56848),
-  p = n(378441),
+  _ = n(378441),
   m = n(358820),
   f = n(388032),
-  h = n(587778);
+  p = n(587778);
 
 function g() {
   let {
     mostRecentlyRequestedVoiceId: e
-  } = (0, p.o)(), {
+  } = (0, _.o)(), {
     showProgressBar: t,
     progress: n
   } = function(e) {
@@ -65,11 +65,11 @@ function g() {
     }
   }, "respect-motion-settings")((e, t) => t ? (0, r.jsx)(a.animated.div, {
     style: e,
-    className: h.floaterWrapper,
+    className: p.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: h.visibleFloater,
+      className: p.visibleFloater,
       children: [(0, r.jsxs)("div", {
-        className: h.progressText,
+        className: p.progressText,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           color: "always-white",

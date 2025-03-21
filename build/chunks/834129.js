@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ function c(e) {
     timestamp: i,
     className: o,
     children: c,
-    contentClassName: d,
-    iconClassName: u,
+    contentClassName: u,
+    iconClassName: d,
     iconContainerClassName: p,
     timestampClassName: m,
     compact: f = !1
@@ -36,13 +36,13 @@ function c(e) {
       className: s.iconContainer,
       children: (0, r.jsx)("div", {
         "data-accessibility": "desaturate",
-        className: a()(s.icon, s.iconSize, u),
+        className: a()(s.icon, s.iconSize, d),
         style: {
           backgroundImage: "url('".concat(t, "')")
         }
       })
     }), (0, r.jsxs)("div", {
-      className: a()(d, s.content),
+      className: a()(u, s.content),
       children: [c, null != i && (0, r.jsx)(l.Z, {
         timestamp: i,
         className: m
@@ -64,4 +64,4 @@ c.Action = e => {
     })]
   })
 };
-let d = c
+let u = c

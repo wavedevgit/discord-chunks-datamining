@@ -1,6 +1,6 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -10,46 +10,46 @@ var i = n(481060),
   l = n(981631),
   s = n(474936),
   c = n(388032),
-  d = n(133016);
+  u = n(133016);
 
-function u(e) {
+function d(e) {
   let {
     message: t,
     channel: n
-  } = e, u = null != n.guild_id ? l.jXE.TEXT_IN_VOICE : l.jXE.CHANNEL_TEXT_AREA;
+  } = e, d = null != n.guild_id ? l.jXE.TEXT_IN_VOICE : l.jXE.CHANNEL_TEXT_AREA;
   return (0, r.jsx)(o.Z, {
-    contentClassName: d.messageContentContainer,
-    iconContainerClassName: d.iconContainer,
+    contentClassName: u.messageContentContainer,
+    iconContainerClassName: u.iconContainer,
     iconNode: (0, r.jsx)(i.Dkj, {
-      colorClass: d.icon
+      colorClass: u.icon
     }),
     children: (0, r.jsxs)("div", {
-      className: d.container,
+      className: u.container,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(i.Text, {
           variant: "text-sm/medium",
           children: t.content
         }), (0, r.jsxs)("div", {
-          className: d.nitroBadge,
+          className: u.nitroBadge,
           children: [(0, r.jsx)(i.SrA, {
             size: "xs",
-            colorClass: d.nitroBadgeIcon
+            colorClass: u.nitroBadgeIcon
           }), (0, r.jsx)(i.Text, {
             variant: "text-xs/medium",
-            className: d.nitroBadgeText,
+            className: u.nitroBadgeText,
             children: c.NW.string(c.t["BMw+7O"])
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: d.buttonContainer,
+        className: u.buttonContainer,
         children: (0, r.jsx)(a.Z, {
           showGradient: !0,
-          iconClassName: d.premiumIcon,
+          iconClassName: u.premiumIcon,
           subscriptionTier: s.Si.TIER_2,
           buttonText: c.NW.string(c.t.Y2WKTk),
           size: i.zxk.Sizes.SMALL,
           premiumModalAnalyticsLocation: {
-            section: u,
+            section: d,
             object: l.qAy.MESSAGE
           }
         })

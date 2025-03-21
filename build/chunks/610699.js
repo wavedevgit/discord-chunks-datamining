@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 8473 **/
 n.d(t, {
   Z: () => Q
 }), n(653041), n(47120), n(13667), n(390547), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(512722),
   s = n.n(l),
   c = n(442837),
-  d = n(477690),
-  u = n(481060),
+  u = n(477690),
+  d = n(481060),
   p = n(447543),
   m = n(434650),
   f = n(317381),
@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(321231),
   x = n(758199),
   E = n(943762),
-  j = n(914498),
-  O = n(880251),
-  N = n(208444),
+  O = n(914498),
+  N = n(880251),
+  j = n(208444),
   C = n(835473),
   I = n(471445),
   S = n(111028),
@@ -39,8 +39,8 @@ var r = n(200651),
   L = n(768581),
   M = n(624138),
   W = n(358595),
-  F = n(981631),
-  U = n(245335),
+  U = n(981631),
+  F = n(245335),
   B = n(388032),
   G = n(40774);
 
@@ -75,9 +75,9 @@ function V(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let z = (0, M.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_LARGE),
-  K = (0, M.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_SMALL),
-  Y = (0, M.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_CONTENT_WIDTH);
+let z = (0, M.Mg)(u.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_LARGE),
+  K = (0, M.Mg)(u.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_SMALL),
+  Y = (0, M.Mg)(u.Z.EMBEDDED_APPLICATION_INVITE_CONTENT_WIDTH);
 
 function X(e) {
   let {
@@ -91,7 +91,7 @@ function X(e) {
     className: G.statusWrapper,
     children: [(0, r.jsx)("i", {
       className: G.statusOnline
-    }), (0, r.jsx)(u.Text, {
+    }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       className: G.count,
       color: l,
@@ -103,7 +103,7 @@ function X(e) {
     className: G.statusWrapper,
     children: [(0, r.jsx)("i", {
       className: G.statusOffline
-    }), (0, r.jsx)(u.Text, {
+    }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       className: G.count,
       color: l,
@@ -140,7 +140,7 @@ function q(e) {
         size: "xs",
         color: "currentColor"
       }) : null, (0, r.jsx)(S.Z, {
-        children: (0, r.jsx)(u.Text, {
+        children: (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: l,
           children: B.NW.format(B.t["dc+LW1"], {
@@ -157,7 +157,7 @@ function q(e) {
       [G.ended]: a
     }),
     children: (0, r.jsx)(S.Z, {
-      children: (0, r.jsx)(u.Text, {
+      children: (0, r.jsx)(d.Text, {
         variant: "text-xs/normal",
         color: l,
         children: B.NW.format(B.t.u0vaDA, {
@@ -170,17 +170,17 @@ function q(e) {
 
 function Q(e) {
   var t, n, a;
-  let l, d, {
+  let l, u, {
       invite: x,
       getAcceptInviteContext: E
     } = e,
     {
-      approximate_member_count: j,
-      approximate_presence_count: O,
-      target_type: N,
+      approximate_member_count: O,
+      approximate_presence_count: N,
+      target_type: j,
       target_application: I
     } = x;
-  s()(N === U.Iq.EMBEDDED_APPLICATION && null != I, "invalid application invite");
+  s()(j === F.Iq.EMBEDDED_APPLICATION && null != I, "invalid application invite");
   let S = i.useRef(null),
     [L, M] = i.useState(!1),
     [Q, $] = i.useState(!1),
@@ -189,7 +189,7 @@ function Q(e) {
       e && ee(e => {
         if (!e) {
           var t;
-          D.default.track(F.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
+          D.default.track(U.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
             application_id: I.id,
             invite_inviter_id: null === (t = x.inviter) || void 0 === t ? void 0 : t.id
           })
@@ -226,11 +226,11 @@ function Q(e) {
       })
     }),
     es = w.Z.getChannel(null === (n = x.channel) || void 0 === n ? void 0 : n.id),
-    ec = (0, c.e7)([k.Z], () => null != es && k.Z.can(F.Plq.USE_EMBEDDED_ACTIVITIES, es), [es]),
+    ec = (0, c.e7)([k.Z], () => null != es && k.Z.can(U.Plq.USE_EMBEDDED_ACTIVITIES, es), [es]),
     {
-      analyticsLocations: ed
+      analyticsLocations: eu
     } = (0, v.ZP)(b.Z.INVITE_EMBED),
-    eu = (0, h.Z)({
+    ed = (0, h.Z)({
       applicationId: I.id,
       size: z,
       names: ["embedded_cover"]
@@ -238,20 +238,20 @@ function Q(e) {
     ep = (0, c.Wu)([f.ZP], () => null != es ? f.ZP.getEmbeddedActivitiesForChannel(es.id).filter(e => e.applicationId === I.id).flatMap(e => Array.from(e.userIds)) : [], [es, I.id]),
     em = (0, c.Wu)([R.default], () => ep.map(e => R.default.getUser(e)).filter(e => null != e), [ep]),
     ef = i.useCallback(() => {
-      (0, p.r$)(x, "accept", ed), p.ZP.acceptInviteAndTransitionToInviteChannel({
+      (0, p.r$)(x, "accept", eu), p.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: x.code,
         context: E("Invite Button Embed"),
-        analyticsLocations: ed
+        analyticsLocations: eu
       })
-    }, [x, ed, E]),
-    eh = x.state === F.r2o.ACCEPTING,
+    }, [x, eu, E]),
+    eh = x.state === U.r2o.ACCEPTING,
     eg = null != ei;
   if (null == ei) {
     if (null == x.guild) return (0, r.jsx)(W.Z, {});
     ei = new A.ZP(x.guild)
   }
   let e_ = eg && !ec || eg && eo;
-  eg && eo && (l = B.NW.string(B.t.wJNK8P)), ec || (l = B.NW.string(B.t.hHGrW1)), d = eo ? B.NW.string(B.t.KC26NT) : el || !eg ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.I0v0Qk);
+  eg && eo && (l = B.NW.string(B.t.wJNK8P)), ec || (l = B.NW.string(B.t.hHGrW1)), u = eo ? B.NW.string(B.t.KC26NT) : el || !eg ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.I0v0Qk);
   let {
     enabled: eb
   } = y.G.useExperiment({
@@ -264,8 +264,8 @@ function Q(e) {
     isMember: eg,
     channel: es,
     guild: ei,
-    members: j,
-    membersOnline: O,
+    members: O,
+    membersOnline: N,
     isActivityActive: el,
     submitting: eh,
     isDisabled: e_,
@@ -281,7 +281,7 @@ function Q(e) {
         [G.stacked]: Q
       }),
       children: (0, r.jsx)(g.Z, {
-        imageBackground: eu,
+        imageBackground: ed,
         applicationName: null !== (a = null == ea ? void 0 : ea.name) && void 0 !== a ? a : "",
         imageClassName: o()(G.img, {
           [G.large]: L,
@@ -299,9 +299,9 @@ function Q(e) {
       }),
       children: [(0, r.jsxs)("div", {
         className: G.info,
-        children: [(0, r.jsx)(u.vwX, {
+        children: [(0, r.jsx)(d.vwX, {
           children: eg ? B.NW.string(B.t["1ckx+P"]) : B.NW.string(B.t.BoQUFR)
-        }), (0, r.jsx)(u.X6q, {
+        }), (0, r.jsx)(d.X6q, {
           className: G.heading,
           variant: "heading-xl/semibold",
           children: null == ea ? void 0 : ea.name
@@ -320,16 +320,16 @@ function Q(e) {
           className: o()(G.endedNote, {
             [G.large]: L
           }),
-          children: [(0, r.jsx)(u.Text, {
+          children: [(0, r.jsx)(d.Text, {
             variant: "text-xs/medium",
             children: B.NW.string(B.t.JBnc7O)
-          }), (0, r.jsx)(u.Text, {
+          }), (0, r.jsx)(d.Text, {
             variant: "text-xs/medium",
             children: B.NW.string(B.t.lEvDDQ)
           })]
         }) : null, eg ? null : (0, r.jsx)(X, {
-          members: j,
-          membersOnline: O,
+          members: O,
+          membersOnline: N,
           isLarge: L,
           isStacked: Q
         }), (0, r.jsxs)("div", {
@@ -341,7 +341,7 @@ function Q(e) {
               users: em,
               max: 4
             })
-          }) : null, (0, r.jsx)(u.ua7, {
+          }) : null, (0, r.jsx)(d.ua7, {
             text: l,
             children: e => {
               var {
@@ -361,7 +361,7 @@ function Q(e) {
                 }
                 return i
               }(e, ["onClick"]);
-              return (0, r.jsx)(u.zxk, V(H({
+              return (0, r.jsx)(d.zxk, V(H({
                 className: G.actionButton,
                 onClick: () => {
                   ef(), null == t || t()
@@ -370,8 +370,8 @@ function Q(e) {
               }, n), {
                 submitting: eh,
                 disabled: e_,
-                color: u.Ttl.GREEN,
-                children: d
+                color: d.Ttl.GREEN,
+                children: u
               }))
             }
           })]
@@ -390,8 +390,8 @@ function J(e) {
     channel: l,
     guild: s,
     members: c,
-    membersOnline: d,
-    isActivityActive: u,
+    membersOnline: u,
+    isActivityActive: d,
     submitting: p,
     isDisabled: m,
     tooltip: f,
@@ -404,16 +404,16 @@ function J(e) {
     id: t.id,
     icon: v,
     bot: b
-  }), C = (0, N.z)(t), I = (0, O.E)(t), S = a.length, T = i.useMemo(() => {
+  }), C = (0, j.z)(t), I = (0, N.E)(t), S = a.length, T = i.useMemo(() => {
     let e = [{
-      label: o ? u ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.RscU7O) : B.NW.string(B.t["2BP08P"]),
-      trackingArea: o ? j.j_.PLAY : j.j_.JOIN_SERVER,
+      label: o ? d ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.RscU7O) : B.NW.string(B.t["2BP08P"]),
+      trackingArea: o ? O.j_.PLAY : O.j_.JOIN_SERVER,
       submitting: p,
       disabledReason: m && null != f ? f : void 0,
       onClick: h
     }];
     return null != C && e.push(C), e
-  }, [h, u, m, o, p, f, C]);
+  }, [h, d, m, o, p, f, C]);
   return (0, r.jsx)(x.W, V(H({
     header: t.name,
     title: B.NW.string(B.t["7vb6n5"]),
@@ -426,7 +426,7 @@ function J(e) {
         channel: l,
         guild: s,
         isStacked: !1,
-        hasEnded: !u,
+        hasEnded: !d,
         textColor: "none"
       }), o ? S > 0 && (0, r.jsx)(E.K, {
         activityUsers: a,
@@ -434,7 +434,7 @@ function J(e) {
         activityText: B.NW.string(B.t.BMTj29)
       }) : (0, r.jsx)(X, {
         members: c,
-        membersOnline: d,
+        membersOnline: u,
         isLarge: !1,
         isStacked: !1,
         textColor: "none"
@@ -443,7 +443,7 @@ function J(e) {
     actions: T,
     trackingConfig: {
       id: t.id,
-      linkType: j.Un.ACTIVITY_INVITE,
+      linkType: O.Un.ACTIVITY_INVITE,
       onView: g
     }
   }))

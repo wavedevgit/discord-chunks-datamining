@@ -1,4 +1,4 @@
-/** Chunk was on 59160 **/
+/** Chunk was on 14721 **/
 n.d(t, {
   Z: () => u
 });
@@ -17,10 +17,10 @@ function u(e, t) {
       needSubscriptionToAccess: u
     } = (0, c.Z)(null == n ? void 0 : n.id);
   if (null == n || u) return null;
-  let p = n.isGuildVocal();
+  let _ = n.isGuildVocal();
   return {
     navigateToChannel: () => {
-      p ? a.Z.handleVoiceConnect({
+      _ ? a.Z.handleVoiceConnect({
         channel: n,
         connected: s.Z.isInChannel(n.id),
         needSubscriptionToAccess: !1,

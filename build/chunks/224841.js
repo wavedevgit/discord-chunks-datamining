@@ -7,11 +7,11 @@ n(192379);
 var i = n(481060),
   o = n(388905),
   a = n(703656),
-  s = n(63063),
-  l = n(981631),
+  l = n(63063),
+  s = n(981631),
   c = n(388032),
   u = n(239928);
-let d = () => (0, a.uL)(l.Z5c.LOGIN),
+let d = () => (0, a.uL)(s.Z5c.LOGIN),
   p = e => {
     let {
       authBoxClassName: t,
@@ -30,7 +30,7 @@ let d = () => (0, a.uL)(l.Z5c.LOGIN),
         className: u.subtitle,
         children: c.NW.format(c.t.b0QzXV, {
           underageMessage: null != a ? a : c.NW.string(c.t.WqEH4O),
-          helpURL: s.Z.getArticleURL(l.BhN.AGE_GATE)
+          helpURL: l.Z.getArticleURL(s.BhN.AGE_GATE)
         })
       }), (0, r.jsx)(i.zxk, {
         fullWidth: !0,

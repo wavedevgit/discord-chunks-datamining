@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => m
 }), n(47120), n(266796);
 var r = n(200651),
-  i = n(192379),
-  a = n(622535),
+  a = n(192379),
+  i = n(622535),
   l = n(481060),
   o = n(783097),
   s = n(66637),
@@ -17,17 +17,17 @@ let m = function(e) {
   let {
     application: h,
     onSelectApplication: g,
-    showCategory: _ = !1
-  } = e, f = null === (t = h.categories) || void 0 === t ? void 0 : t[0], [b, v] = i.useState(!1), x = i.useCallback(e => {
+    showCategory: f = !1
+  } = e, _ = null === (t = h.categories) || void 0 === t ? void 0 : t[0], [b, v] = a.useState(!1), x = a.useCallback(e => {
     e && v(!0)
-  }, []), C = (0, o.lf)(h), j = i.useCallback(() => {
+  }, []), C = (0, o.lf)(h), j = a.useCallback(() => {
     g(h.id)
-  }, [g, h.id]), y = i.useMemo(() => b ? c.ZP.getApplicationIconURL({
+  }, [g, h.id]), y = a.useMemo(() => b ? c.ZP.getApplicationIconURL({
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : void 0, [b, h]), I = _ && null != f;
-  return (0, r.jsx)(a.$, {
+  }) : void 0, [b, h]), O = f && null != _;
+  return (0, r.jsx)(i.$, {
     onChange: x,
     active: !b,
     children: (0, r.jsx)("div", {
@@ -79,14 +79,14 @@ let m = function(e) {
                 children: h.name
               })
             })
-          }), I || C ? (0, r.jsxs)("div", {
+          }), O || C ? (0, r.jsxs)("div", {
             className: p.infoContainer,
-            children: [I ? (0, r.jsx)(l.Text, {
+            children: [O ? (0, r.jsx)(l.Text, {
               className: p.appCategory,
               variant: "text-xs/medium",
               color: "text-normal",
-              children: f.name
-            }) : null, I && C ? (0, r.jsx)(l.Text, {
+              children: _.name
+            }) : null, O && C ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
               children: "•"
@@ -99,7 +99,7 @@ let m = function(e) {
             className: p.description,
             variant: "text-sm/medium",
             color: "header-secondary",
-            lineClamp: I || C ? 2 : 3,
+            lineClamp: O || C ? 2 : 3,
             children: null !== (m = null === (n = h.directory_entry) || void 0 === n ? void 0 : n.short_description) && void 0 !== m ? m : h.description
           })]
         })]

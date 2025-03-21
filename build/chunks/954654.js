@@ -14,15 +14,15 @@ var l = r(120356),
   u = r(927057),
   d = r(574597),
   p = r(378975),
-  b = r(732586),
-  f = r(988075),
+  f = r(732586),
+  b = r(988075),
   O = r(12067),
   y = r(676149),
   m = r(861529),
   j = r(568248),
   g = r(770009),
-  v = r(889515),
-  h = r(985184),
+  h = r(889515),
+  v = r(985184),
   P = r(892519),
   x = r(16141);
 
@@ -62,7 +62,7 @@ function C(e) {
   return e.map((e, t) => (function(e, t) {
     switch (e.type) {
       case o.re.ACTION_ROW:
-        return (0, n.jsx)(v.Z, S(w({}, e), {
+        return (0, n.jsx)(h.Z, S(w({}, e), {
           renderComponents: C
         }), t);
       case o.re.BUTTON:
@@ -76,7 +76,7 @@ function C(e) {
       case o.re.MENTIONABLE_SELECT:
         return (0, n.jsx)(d.Z, w({}, e), t);
       case o.re.TEXT_INPUT:
-        return (0, n.jsx)(b.Z, w({}, e), t);
+        return (0, n.jsx)(f.Z, w({}, e), t);
       case o.re.SECTION:
         return (0, n.jsx)(P.Z, w({}, e), t);
       case o.re.TEXT_DISPLAY:
@@ -86,13 +86,13 @@ function C(e) {
       case o.re.THUMBNAIL:
         return (0, n.jsx)(j.Z, w({}, e), t);
       case o.re.FILE:
-        return (0, n.jsx)(f.Z, w({}, e), t);
+        return (0, n.jsx)(b.Z, w({}, e), t);
       case o.re.SEPARATOR:
         return (0, n.jsx)(y.Z, w({}, e), t);
       case o.re.CONTENT_INVENTORY_ENTRY:
         return (0, n.jsx)(g.Z, w({}, e), t);
       case o.re.CONTAINER:
-        return (0, n.jsx)(h.ZP, S(w({}, e), {
+        return (0, n.jsx)(v.ZP, S(w({}, e), {
           renderComponents: C
         }), t)
     }
