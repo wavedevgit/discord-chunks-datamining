@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 60a2de41e89419f7
+  Original File Name: 2a1c529907c3bbdf
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -3941,9 +3941,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 :where(.visual-refresh) .container__5aa3a {
     position: relative;
     overflow: hidden;
-    height: calc(100% - var(--space-48));
-    border-radius: 20px;
-    margin: var(--space-24);
+    height: 100%;
     justify-content: center
 }
 
@@ -13733,9 +13731,7 @@ div.profileThemedContainer__656be {
 :where(.visual-refresh) .container__0b34e {
     position: relative;
     overflow: hidden;
-    height: calc(100% - var(--spacing-48));
-    border-radius: 20px;
-    margin: 24px;
+    height: 100%;
     justify-content: center
 }
 
@@ -15264,4 +15260,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=60a2de41e89419f7.css.map*/
+/*# sourceMappingURL=2a1c529907c3bbdf.css.map*/
