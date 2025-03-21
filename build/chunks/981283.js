@@ -58,7 +58,7 @@ let T = (0, i.debounce)(l.xc, 1e3),
           (0, l.tK)(n, e)
         }
       }), a.Z.subscribe("STREAM_DELETE", e => {
-        e.reason === O.si2.STREAM_FULL && ((0, c.kr)(c.u.STREAM_FULL, (0, u.J)(e.streamKey)), (0, l.aP)(e.streamKey, !1), (0, o.ZDy)(async () => {
+        e.reason === O.si2.STREAM_FULL && ((0, c.kr)(c.u.STREAM_FULL, (0, u.r)(e.streamKey)), (0, l.aP)(e.streamKey, !1), (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("63757").then(n.bind(n, 309690));

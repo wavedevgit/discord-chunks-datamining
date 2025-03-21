@@ -232,7 +232,8 @@ function _(e, t, n, i) {
         encryptAttempts: e.encryptAttempts,
         encryptMaxAttempts: e.encryptMaxAttempts,
         encryptMissingKeyCount: e.encryptMissingKeyCount,
-        pttQueueLatencyMicrosSamples: e.pttQueueLatencyMicrosSamples
+        pttQueueLatencyMicrosSamples: e.pttQueueLatencyMicrosSamples,
+        sampleRateMismatchPercent: e.sampleRateMismatchPercent
       })), null != i) i.forEach(e => {
       let t = d(e, n);
       null != t && (g = (null != g ? g : 0) + t.bytesSent, b.push(t))

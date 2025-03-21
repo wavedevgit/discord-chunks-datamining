@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: bdd92fe0bed40d04
+  Original File Name: 61cc93f6cfb2a46f
 **/
 .container__74da2 {
     position: relative;
@@ -2148,6 +2148,10 @@
     padding-bottom: 0;
     padding-bottom: var(--custom-app-panels-height,0);
     margin-left: -1px
+}
+
+.visual-refresh .dropdownButton__2637a {
+    color: var(--icon-secondary)
 }
 
 .visual-refresh .dropdownButtonBannerVisible__2637a {
@@ -8724,4 +8728,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=bdd92fe0bed40d04.css.map*/
+/*# sourceMappingURL=61cc93f6cfb2a46f.css.map*/
