@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(200651);
 t(192379);
 var r = t(793030),
-  s = t(442837),
-  o = t(481060),
+  o = t(442837),
+  s = t(481060),
   a = t(834129),
   l = t(271383),
   c = t(709586),
@@ -20,8 +20,8 @@ function v(e) {
     boost: n
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
     username: v,
-    roleColor: _
-  } = (0, s.cj)([l.ZP], () => {
+    roleColor: p
+  } = (0, o.cj)([l.ZP], () => {
     var e, t, i;
     return {
       username: null !== (i = l.ZP.getNick(n.guildId, n.userId)) && void 0 !== i ? i : null === (e = n.user) || void 0 === e ? void 0 : e.username,
@@ -44,9 +44,9 @@ function v(e) {
       className: m.boostMessage,
       children: [(0, i.jsx)(r.xv, {
         variant: "text-md/semibold",
-        children: (0, i.jsx)(o.PUh, {
+        children: (0, i.jsx)(s.PUh, {
           name: v,
-          color: null != _ ? _ : void 0
+          color: null != p ? p : void 0
         })
       }), (0, i.jsx)(r.xv, {
         variant: "text-md/medium",

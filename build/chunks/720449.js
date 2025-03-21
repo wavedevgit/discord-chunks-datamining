@@ -17,12 +17,12 @@ function c(e) {
     clearAfter: r,
     analyticsContext: c,
     createdAtMs: d,
-    prompt: m
-  } = e, p = t.trim();
-  if (!(p.length > 0) && null == n) return a.Ok.updateSetting(void 0);
+    prompt: p
+  } = e, m = t.trim();
+  if (!(m.length > 0) && null == n) return a.Ok.updateSetting(void 0);
   {
     let e = a.Ok.updateSetting({
-      text: p.length > 0 ? p : "",
+      text: m.length > 0 ? m : "",
       expiresAtMs: null != r && r !== s.FO.DONT_CLEAR ? String(i()().add((0, l.Z)(r), "ms").toDate().getTime()) : "0",
       emojiId: null != n && null != n.id ? n.id : "0",
       emojiName: null != n ? n.name : "",
@@ -31,9 +31,9 @@ function c(e) {
     return o.default.track(u.rMx.CUSTOM_STATUS_UPDATED, {
       location: null != c ? c.location : null,
       emoji_type: null == n ? null : null != n.id ? "custom" : "unicode",
-      text_len: p.length,
+      text_len: m.length,
       clear_after: null != r ? "".concat(r) : null,
-      prompt_type: null == m ? void 0 : m.value
+      prompt_type: null == p ? void 0 : p.value
     }), e
   }
 }

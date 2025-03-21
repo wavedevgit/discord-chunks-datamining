@@ -1,6 +1,6 @@
 /**
   Module ID: 77595
-  Original File Name: a6fc5ad20f15e3ab
+  Original File Name: 26b595346115ffe9
 **/
 .modalRoot__7169d {
     height: 478px
@@ -208,4 +208,8 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=a6fc5ad20f15e3ab.css.map*/
+:where(.visual-refresh) .inputPrefix_ac72c6 {
+    top: 14px
+}
+
+/*# sourceMappingURL=26b595346115ffe9.css.map*/

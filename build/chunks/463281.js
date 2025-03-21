@@ -3,7 +3,7 @@ t.a(n, async function(r, i) {
   try {
     t.d(e, {
       h4: () => d,
-      hM: () => c,
+      hM: () => _,
       nD: () => f
     });
     var a = t(612580);
@@ -17,7 +17,7 @@ t.a(n, async function(r, i) {
     l.decode();
     let h = null;
 
-    function o() {
+    function c() {
       return (null === h || h.buffer !== a.memory.buffer) && (h = new Uint8Array(a.memory.buffer)), h
     }
     let w = Array(32).fill(void 0);
@@ -26,22 +26,22 @@ t.a(n, async function(r, i) {
       b = 0,
       g = null;
 
-    function _() {
+    function o() {
       return (null === g || g.buffer !== a.memory.buffer) && (g = new Int32Array(a.memory.buffer)), g
     }
 
-    function c(n, e, t, r, i, u) {
+    function _(n, e, t, r, i, u) {
       try {
         let w = a.__wbindgen_add_to_stack_pointer(-16);
-        var c = function(n, e) {
+        var _ = function(n, e) {
             let t = e(+n.length);
-            return o().set(n, t / 1), b = n.length, t
+            return c().set(n, t / 1), b = n.length, t
           }(n, a.__wbindgen_malloc),
           d = b;
-        a.crop_and_rotate_gif(w, c, d, e, t, r, i, u);
-        var f = _()[w / 4 + 0],
-          l = _()[w / 4 + 1],
-          h = o().subarray(f / 1, f / 1 + l).slice();
+        a.crop_and_rotate_gif(w, _, d, e, t, r, i, u);
+        var f = o()[w / 4 + 0],
+          l = o()[w / 4 + 1],
+          h = c().subarray(f / 1, f / 1 + l).slice();
         return a.__wbindgen_free(f, +l), h
       } finally {
         a.__wbindgen_add_to_stack_pointer(16)
@@ -49,7 +49,7 @@ t.a(n, async function(r, i) {
     }
 
     function d(n, e) {
-      var t = l.decode(o().subarray(n, n + e));
+      var t = l.decode(c().subarray(n, n + e));
       return function(n) {
         s === w.length && w.push(w.length + 1);
         let e = s;

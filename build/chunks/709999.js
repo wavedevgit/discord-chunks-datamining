@@ -378,13 +378,13 @@ let em = e => {
                 location: "collectible_checkout_with_orb"
               }), (0, er.Z)({
                 product: t,
-                analyticsLocations: es
+                analyticsLocations: es,
+                onCloseCallback: () => {
+                  (0, v.vp)()
+                }
               })
             },
-            analyticsLocations: es,
-            onCloseCallback: () => {
-              (0, v.vp)()
-            }
+            analyticsLocations: es
           }), (0, v.S6)()
         },
         children: el.NW.format(el.t.kAgx5O, {

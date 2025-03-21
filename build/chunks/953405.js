@@ -25,8 +25,7 @@ function d(e) {
         children: c.NW.string(c.t.eFNRzc)
       }), (0, r.jsx)(a.Z, {})]
     }), (0, r.jsx)(o.Z, {
-      orbAmount: null !== (t = null == n ? void 0 : n.amount) && void 0 !== t ? t : 1 / 0,
-      showInsufficientOrbBalanceTooltip: !0
+      orbAmount: null !== (t = null == n ? void 0 : n.amount) && void 0 !== t ? t : 1 / 0
     })]
   })
 }
@@ -53,8 +52,7 @@ function m(e) {
       nitroUpsell: m,
       className: m ? u.nitroUpsell : void 0
     }), n.length > 1 && n[1].currency === s.pK.DISCORD_ORB && (0, r.jsx)(o.Z, {
-      orbAmount: null !== (t = n[1].amount) && void 0 !== t ? t : 1 / 0,
-      showInsufficientOrbBalanceTooltip: !0
+      orbAmount: null !== (t = n[1].amount) && void 0 !== t ? t : 1 / 0
     })]
   })
 }

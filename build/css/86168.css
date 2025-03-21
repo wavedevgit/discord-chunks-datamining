@@ -1,6 +1,6 @@
 /**
   Module ID: 86168
-  Original File Name: 8bb261a4e4393514
+  Original File Name: 2625f262c3471ff0
 **/
 .searchBar__3e00d {
     background-color: var(--background-secondary);
@@ -314,4 +314,8 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=8bb261a4e4393514.css.map*/
+:where(.visual-refresh) .inputPrefix_ac72c6 {
+    top: 14px
+}
+
+/*# sourceMappingURL=2625f262c3471ff0.css.map*/

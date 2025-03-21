@@ -114,14 +114,14 @@ class v extends i.Z {
       modelId: r,
       voiceFilterId: i,
       error: o
-    } = e, a = (null !== (t = null == o ? void 0 : o.message) && void 0 !== t ? t : String(o)).substring(0, 200);
-    l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
+    } = e, a = "USER_CANCELED_DOWNLOAD", c = null != o && a in o, u = (null !== (t = null == o ? void 0 : o.message) && void 0 !== t ? t : String(o)).substring(0, 200);
+    c && (u = a), l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
+      canceled: c,
       active_voice_filter_id: null !== (n = s.Z.getActiveVoiceFilter()) && void 0 !== n ? n : null,
       success: !1,
-      canceled: null != o && "USER_CANCELED_DOWNLOAD" in o,
       voice_filter_id: i,
       model_id: r,
-      error_message: a
+      error_message: u
     })
   }
   handleVoiceFilterApplied(e) {

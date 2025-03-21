@@ -1,6 +1,6 @@
 /**
   Module ID: 76119
-  Original File Name: 26bd1d0ee57711ff
+  Original File Name: c51ac42a1b2a728b
 **/
 .container_fea832 {
     box-sizing: border-box;
@@ -569,4 +569,8 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=26bd1d0ee57711ff.css.map*/
+:where(.visual-refresh) .inputPrefix_ac72c6 {
+    top: 14px
+}
+
+/*# sourceMappingURL=c51ac42a1b2a728b.css.map*/

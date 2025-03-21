@@ -2,7 +2,6 @@
 e.exports = {
   formGroup: "formGroup_dbc4b7",
   customStatusInputTitle: "customStatusInputTitle_dbc4b7",
-  customStatusInputTitleContainer: "customStatusInputTitleContainer_dbc4b7",
   inputContainer: "inputContainer_dbc4b7",
   emojiButton: "emojiButton_dbc4b7",
   emojiButtonContainer: "emojiButtonContainer_dbc4b7",
@@ -17,5 +16,6 @@ e.exports = {
   footer: "footer_dbc4b7",
   clearAfterSelectContainer: "clearAfterSelectContainer_dbc4b7",
   profilePreview: "profilePreview_dbc4b7",
-  needInspiration: "needInspiration_dbc4b7"
+  needInspiration: "needInspiration_dbc4b7",
+  needInspirationDisabled: "needInspirationDisabled_dbc4b7"
 }
