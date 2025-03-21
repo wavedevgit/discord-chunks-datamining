@@ -18,8 +18,8 @@ var r = n(200651),
   f = n(968644),
   g = n(104265),
   j = n(588632),
-  v = n(290511),
-  N = n(981631),
+  N = n(290511),
+  v = n(981631),
   _ = n(388032),
   b = n(607639);
 
@@ -63,7 +63,7 @@ function E(e, t) {
 }
 
 function I(e, t) {
-  return !(e.hasFeature(N.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.hasFeature(N.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
+  return !(e.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.hasFeature(v.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
 }
 
 function k(e) {
@@ -77,8 +77,8 @@ function k(e) {
     selectOption: m,
     gotoPrevPrompt: h,
     gotoNextPrompt: g,
-    completeOnboarding: v
-  } = e, N = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), O = 0 === N.length && (null == c ? void 0 : c.required), I = null == c ? void 0 : c.options.filter(e => N.includes(e.id)), k = (0, p.L6)(I), Z = (0, p.dX)(I), y = 0 === N.length, {
+    completeOnboarding: N
+  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), O = 0 === v.length && (null == c ? void 0 : c.required), I = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), k = (0, p.L6)(I), Z = (0, p.dX)(I), y = 0 === v.length, {
     helpText: P,
     helpTextAdditional: w
   } = (0, f.Z)({
@@ -89,7 +89,7 @@ function k(e) {
     itemHook: E
   }), D = (0, d.Z)(n.id, 1e3), T = c.options.map(e => C({
     value: e.id
-  }, e)), R = c.options.filter(e => N.includes(e.id)).map(e => e.id);
+  }, e)), R = c.options.filter(e => v.includes(e.id)).map(e => e.id);
   return (0, r.jsx)("div", {
     className: b.prompt,
     children: (0, r.jsxs)("div", {
@@ -126,11 +126,11 @@ function k(e) {
           options: T,
           value: R,
           onChange: e => {
-            let t = e.find(e => !N.includes(e.id)),
+            let t = e.find(e => !v.includes(e.id)),
               n = e.map(e => e.id);
             if (null != t) m(c.id, t.id, !0);
             else {
-              let e = N.filter(e => !n.includes(e));
+              let e = v.filter(e => !n.includes(e));
               c.options.filter(t => e.includes(t.id)).forEach(e => {
                 m(c.id, e.id, !1)
               })
@@ -145,7 +145,7 @@ function k(e) {
           children: l > 0 && (0, r.jsxs)(i.zxk, {
             className: b.button,
             innerClassName: b.buttonInner,
-            onClick: () => h(N.length),
+            onClick: () => h(v.length),
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
             grow: !1,
@@ -174,7 +174,7 @@ function k(e) {
                 innerClassName: b.buttonInner,
                 onMouseEnter: t,
                 onMouseLeave: n,
-                onClick: () => s ? v() : g(N.length),
+                onClick: () => s ? N() : g(v.length),
                 disabled: O,
                 size: i.zxk.Sizes.MEDIUM,
                 look: i.zxk.Looks.FILLED,
@@ -214,7 +214,7 @@ function Z(e) {
     gotoPrevPrompt: m,
     gotoNextPrompt: h,
     completeOnboarding: j
-  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), N = 0 === v.length && (null == c ? void 0 : c.required), C = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), O = (0, p.L6)(C), I = (0, p.dX)(C), k = 0 === v.length, {
+  } = e, N = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), v = 0 === N.length && (null == c ? void 0 : c.required), C = null == c ? void 0 : c.options.filter(e => N.includes(e.id)), O = (0, p.L6)(C), I = (0, p.dX)(C), k = 0 === N.length, {
     helpText: Z,
     helpTextAdditional: y
   } = (0, f.Z)({
@@ -262,7 +262,7 @@ function Z(e) {
             guildId: n.id,
             option: e,
             onSelect: t => d(c.id, e.id, null != t && t),
-            selected: v.includes(e.id)
+            selected: N.includes(e.id)
           }, e.id))
         })]
       }), (0, r.jsxs)("div", {
@@ -272,7 +272,7 @@ function Z(e) {
           children: l > 0 && (0, r.jsxs)(i.zxk, {
             className: b.button,
             innerClassName: b.buttonInner,
-            onClick: () => m(v.length),
+            onClick: () => m(N.length),
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
             grow: !1,
@@ -290,7 +290,7 @@ function Z(e) {
             color: "text-muted",
             children: [Z, " ", y]
           }), (0, r.jsx)(i.ua7, {
-            text: N ? _.NW.string(_.t.dA1dSU) : null,
+            text: v ? _.NW.string(_.t.dA1dSU) : null,
             children: e => {
               let {
                 onMouseEnter: t,
@@ -301,8 +301,8 @@ function Z(e) {
                 innerClassName: b.buttonInner,
                 onMouseEnter: t,
                 onMouseLeave: n,
-                onClick: () => s ? j() : h(v.length),
-                disabled: N,
+                onClick: () => s ? j() : h(N.length),
+                disabled: v,
                 size: i.zxk.Sizes.MEDIUM,
                 look: i.zxk.Looks.FILLED,
                 grow: !1,
@@ -341,46 +341,46 @@ function y(e) {
     disableTracking: f
   } = e, g = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(t.id));
   l.useEffect(() => {
-    t.hasFeature(N.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.hasFeature(N.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
+    t.hasFeature(v.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
   }, [t]);
   let j = n[i],
     _ = i + 1 >= n.length && !I(t, g),
     b = n[0].required;
   l.useEffect(() => {
-    !f && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
+    !f && m.default.track(v.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
       step: 0,
       required: b
     }))
   }, [t.id, b, f]);
   let E = e => {
-      !f && (m.default.track(N.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(C({}, (0, s.hH)(t.id)), {
+      !f && (m.default.track(v.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(C({}, (0, s.hH)(t.id)), {
         step: i,
         options_selected: e,
         skipped: 0 === e,
         back: !1,
         in_onboarding: !0,
         is_final_step: !1
-      })), i < n.length - 1 && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
+      })), i < n.length - 1 && m.default.track(v.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
         step: i,
         required: n[i + 1].required
       }))), i + 1 < n.length ? x(i + 1) : I(t, g) && x("rules")
     },
     y = e => {
-      !f && (m.default.track(N.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(C({}, (0, s.hH)(t.id)), {
+      !f && (m.default.track(v.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(C({}, (0, s.hH)(t.id)), {
         step: i,
         skipped: !1,
         back: !0,
         options_selected: e,
         in_onboarding: !0,
         is_final_step: !1
-      })), i > 0 && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
+      })), i > 0 && m.default.track(v.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
         step: i - 1,
         required: n[i - 1].required
       }))), x(Math.max(0, i - 1))
     };
   if (null == j) return null;
   switch (j.type) {
-    case v.FN.MULTIPLE_CHOICE:
+    case N.FN.MULTIPLE_CHOICE:
       return (0, r.jsx)(Z, {
         guild: t,
         headerId: p,
@@ -393,7 +393,7 @@ function y(e) {
         gotoNextPrompt: E,
         completeOnboarding: u
       });
-    case v.FN.DROPDOWN:
+    case N.FN.DROPDOWN:
       return (0, r.jsx)(k, {
         guild: t,
         headerId: p,

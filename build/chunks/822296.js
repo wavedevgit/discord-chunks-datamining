@@ -52,11 +52,11 @@ function E(e) {
           className: m.cta,
           children: [(0, r.jsx)(s.X6q, {
             color: "none",
-            variant: "heading-lg/normal",
+            variant: "small" === S ? "heading-md/normal" : "heading-lg/normal",
             className: m.header,
             children: h.NW.formatToMarkdownString(h.t.Kb4Ukp, {})
           }), (0, r.jsx)(s.zxk, {
-            size: s.zxk.Sizes.LARGE,
+            size: "small" === S ? s.zxk.Sizes.MEDIUM : s.zxk.Sizes.LARGE,
             color: s.zxk.Colors.PRIMARY,
             onClick: e => {
               e.stopPropagation(), O()

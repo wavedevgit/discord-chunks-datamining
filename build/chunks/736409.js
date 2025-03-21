@@ -26,7 +26,7 @@ let _ = e => {
     setIsForceShowSharingPopout: _
   } = e, [O, j] = (0, i.useState)(!1), C = function(e) {
     let {
-      toggleDefaultState: t,
+      activityToggleDefaultState: t,
       isForceShowSharingPopout: n
     } = e, {
       rtcPopoutEnabled: r
@@ -37,7 +37,7 @@ let _ = e => {
     }), a = d.G6.useSetting(), s = (0, o.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)), c = (0, o.e7)([h.Z], () => h.Z.getStatus()), f = !i || c !== b.Skl.INVISIBLE;
     return (r || i) && (l || !l && n) && !s && !(a && !t && f)
   }({
-    toggleDefaultState: O,
+    activityToggleDefaultState: O,
     isForceShowSharingPopout: n
   });
   return ((0, i.useEffect)(() => {
@@ -58,19 +58,20 @@ let _ = e => {
         };
         return (0, r.jsx)(a.yRy, {
           shouldShow: !0,
-          position: "bottom",
+          spacing: -2,
+          position: "top",
           align: "center",
           onRequestClose: e,
           renderPopout: e => {
             let {
               closePopout: t
             } = e;
-            return n ? (0, r.jsx)(m.z, {
+            return n ? (0, r.jsx)(m.zI, {
               closePopout: t,
-              setToggleDefaultState: j
-            }) : (0, r.jsx)(m.r, {
+              setActivityToggleDefaultState: j
+            }) : (0, r.jsx)(m.zu, {
               closePopout: t,
-              setToggleDefaultState: j
+              setActivityToggleDefaultState: j
             })
           },
           children: () => (0, r.jsx)(a.P3F, {

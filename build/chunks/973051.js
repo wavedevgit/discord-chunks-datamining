@@ -53,8 +53,8 @@ function j(e) {
   let {
     guild: n,
     prompts: j,
-    completeOnboarding: v,
-    setCurrentStep: N,
+    completeOnboarding: N,
+    setCurrentStep: v,
     disableTracking: _,
     previousPromptIndex: b
   } = e, C = l.useRef(null), O = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [E, I] = l.useState(null !== (t = null == O ? void 0 : O.response) && void 0 !== t && t), k = (0, o.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
@@ -66,9 +66,9 @@ function j(e) {
           })]
         }))
       } catch (e) {}
-      v()
+      N()
     }
-  }, [n.id, k, O, E, v]);
+  }, [n.id, k, O, E, N]);
 
   function w(e) {
     let [t] = e;
@@ -136,7 +136,7 @@ function j(e) {
               })), b >= 0 && m.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(f({}, (0, s.hH)(n.id)), {
                 step: b,
                 required: j[b].required
-              }))), N(b)
+              }))), v(b)
             },
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,

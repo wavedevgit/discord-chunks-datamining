@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: 35576090b9794443
+  Original File Name: 3b46a26eb7df7c30
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4626,6 +4626,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100%
 }
 
+.theme-dark .gradient_fa8995 {
+    background: radial-gradient(75% 75% at 0 0,rgba(62,22,137,.8) 0,transparent 100%),radial-gradient(70% 50% at 100% 0,rgba(160,86,242,.4) 0,transparent 100%)
+}
+
+.theme-light .gradient_fa8995 {
+    background: radial-gradient(75% 75% at 0 0,rgba(159,86,242,.4) 0,transparent 100%),radial-gradient(70% 50% at 100% 0,rgba(222,194,252,.5) 0,transparent 100%)
+}
+
 .content_fa8995 {
     position: relative;
     flex-direction: column
@@ -4673,17 +4681,41 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-self: flex-start
 }
 
-.toggleContainer_fa8995 {
+.toggleContainerWrapper_fa8995 {
+    background-color: var(--background-secondary);
     margin-top: 12px;
     padding: 12px;
     border-radius: 8px;
-    background-color: var(--background-secondary);
+    width: 100%;
+    box-sizing: border-box
+}
+
+.toggleContainer_fa8995 {
     color: var(--header-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box
+}
+
+.toggleContainerOnlineRow_fa8995 {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.toggleContainerText_fa8995 {
+    display: flex;
+    flex-direction: column
+}
+
+.goOnlineButton_fa8995 {
+    margin-top: 12px
+}
+
+.divider_fa8995 {
+    margin: 8px 0
 }
 
 .wrapper_a629d4 {
@@ -5814,4 +5846,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=35576090b9794443.css.map*/
+/*# sourceMappingURL=3b46a26eb7df7c30.css.map*/
