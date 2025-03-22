@@ -709,17 +709,22 @@ function eO() {
     [i, s] = (0, g.Wu)([T.ZP], () => [T.ZP.canShowAdminWarning, T.ZP.getVisibleGame()], []),
     a = null != s && s.elevated && i;
   return (0, r.jsx)(ep, {
-    children: (0, r.jsxs)("div", {
+    children: (0, r.jsx)("div", {
       className: el.keybindMainContainer,
-      children: [(0, r.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: el.keybindContainer,
-        children: [(0, r.jsx)("div", {
+        children: [(0, r.jsxs)("div", {
           className: el.keybindHeaderContainer,
-          children: (0, r.jsx)(h.Text, {
+          children: [(0, r.jsx)(h.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
             children: ea.NW.string(ea.t.VsAZcH)
-          })
+          }), a && (0, r.jsx)(h.Text, {
+            variant: "text-xs/normal",
+            color: "text-warning",
+            className: el.keybindAdminWarning,
+            children: ea.NW.string(ea.t.NsowVV)
+          })]
         }), (0, r.jsx)("div", {
           className: el.keybindRecorderContainer,
           children: (0, r.jsx)(b.Z, {
@@ -732,12 +737,7 @@ function eO() {
             }
           })
         })]
-      }), a && (0, r.jsx)(h.Text, {
-        variant: "text-xs/normal",
-        color: "text-warning",
-        className: el.keybindAdminWarning,
-        children: ea.NW.string(ea.t.NsowVV)
-      })]
+      })
     })
   })
 }

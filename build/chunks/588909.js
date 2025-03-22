@@ -129,7 +129,7 @@ function Z(e, t) {
     icon: _,
     title: w,
     body: P,
-    hint: () => (0, g.Q)((0, O.P)(), j.t["z8/sgI"], j.NW.string(j.t.jZkzVF)),
+    hint: () => (0, g.Q)((0, O.P)(), j.t["z8/sgI"], j.NW.string(j.t.jZkzVF), !0),
     confirmText: Z ? void 0 : j.NW.string(j.t.TxyTbm),
     onConfirmClick: Z ? void 0 : () => {
       u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX)

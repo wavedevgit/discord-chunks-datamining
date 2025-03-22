@@ -39,8 +39,8 @@ var i = n(200651),
   _ = n(189771),
   T = n(294629),
   D = n(67844),
-  k = n(544384),
-  A = n(890828),
+  A = n(544384),
+  k = n(890828),
   L = n(560688),
   R = n(871499),
   M = n(199902),
@@ -409,7 +409,7 @@ function el(e) {
       let {
         closePopout: t
       } = e;
-      return (0, i.jsx)(k.Z, {
+      return (0, i.jsx)(A.Z, {
         channel: n,
         currentUser: a,
         activeStreams: m ? [d] : [],
@@ -557,7 +557,7 @@ function ea(e) {
       let {
         closePopout: n
       } = e;
-      return (0, i.jsx)(A.Z, {
+      return (0, i.jsx)(k.Z, {
         currentVoiceChannel: t,
         onClose: v(n),
         onSelect: c

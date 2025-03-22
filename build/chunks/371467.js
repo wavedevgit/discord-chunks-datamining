@@ -32,8 +32,8 @@ var i, r = n(512722),
   _ = n(486016),
   T = n(32300),
   D = n(371651),
-  k = n(624864),
-  A = n(610394),
+  A = n(624864),
+  k = n(610394),
   L = n(340101),
   R = n(388627),
   M = n(996050),
@@ -178,7 +178,7 @@ function eh(e, t) {
 }
 
 function ef() {
-  if (!(0, T.Yo)("OverlayNotificationStore") || k.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.NOW_PLAYING)) return !1;
+  if (!(0, T.Yo)("OverlayNotificationStore") || A.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.NOW_PLAYING)) return !1;
   let e = y.Z.usersPlaying,
     t = new Set,
     n = function() {
@@ -224,7 +224,7 @@ function ef() {
   }(n, r), t.add(n);
   let r = new Set;
   for (let e of n) t.has(e) || r.add(e);
-  let l = A.ZP.isOverlayV3EnabledForPID((0, P.getPID)()) || null != A.ZP.getFocusedPID();
+  let l = k.ZP.isOverlayV3EnabledForPID((0, P.getPID)()) || null != k.ZP.getFocusedPID();
   for (let e of r)(function(e) {
     let t = E.Z.getActivities(e);
     if (0 === t.length) return !1;
@@ -261,7 +261,7 @@ function em(e) {
 }
 class eg extends(i = a.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, S.default, y.Z, k.Z), this.syncWith([y.Z], ef)
+    this.waitFor(g.Z, S.default, y.Z, A.Z), this.syncWith([y.Z], ef)
   }
   getNotifications() {
     return en
@@ -282,7 +282,7 @@ let eO = new eg(s.Z, {
       nudges: n
     } = e;
     eu(0);
-    let i = null !== (t = A.ZP.getFocusedPID()) && void 0 !== t ? t : P.UNSET_PID;
+    let i = null !== (t = k.ZP.getFocusedPID()) && void 0 !== t ? t : P.UNSET_PID;
     if (D.default.hasChangedRenderMode(i)) return;
     let r = (0, Y.Z)((0, R.pL)(), n);
     null != r && eh(r, {
@@ -339,7 +339,7 @@ let eO = new eg(s.Z, {
       }(s, a, c);
       if (!1 !== e) return e
     }
-    if (k.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(a, o)) return !1;
+    if (A.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(a, o)) return !1;
     let u = !v.Z.isSoundDisabled(C.Ay),
       h = null !== (r = O.Z.getMessage(o, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
     eh((0, F.Z)(s, h, c, u), {

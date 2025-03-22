@@ -39,7 +39,7 @@ let D = e => [e.userId, ... function(e) {
       i = (0, m.e3)(t);
     return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(Z.lm)))
   }(e)],
-  k = {
+  A = {
     searchType: O.S.FUZZY,
     sortType: O.E.JARO_WINKLER,
     searchStringGenerator: e => {
@@ -52,7 +52,7 @@ let D = e => [e.userId, ... function(e) {
     },
     throttleMs: 100
   },
-  A = {
+  k = {
     searchType: O.S.FUZZY,
     sortType: O.E.JARO_WINKLER,
     searchStringGenerator: D,
@@ -63,7 +63,7 @@ let D = e => [e.userId, ... function(e) {
       channel: t,
       query: n
     } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], w.Q), [o, c] = r.useState([]);
-    (0, v.BO)(n, Object.values(l), c, A);
+    (0, v.BO)(n, Object.values(l), c, k);
     let u = (0, a.Wu)([C.Z, N.default, E.Z, S.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => N.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
         var i, r, l, a;
         if (o.length > 0 && "" !== n.trim()) {
@@ -303,7 +303,7 @@ function G(e) {
     channel: e,
     voiceStates: Object.values(C.Z.getVoiceStatesForChannel(e.id)).filter(e => S.Z.isFriend(e.userId))
   })), []), [d, p] = r.useState(""), [h, f] = r.useState([]);
-  (0, v.BO)(d, u, f, k);
+  (0, v.BO)(d, u, f, A);
   let m = r.useCallback(e => {
       "Escape" === e.key && o()
     }, [o]),

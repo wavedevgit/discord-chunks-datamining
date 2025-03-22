@@ -42,8 +42,8 @@ function N(e) {
     pinned: _,
     anchorTop: T,
     anchorLeft: D,
-    showEmpty: k = !0
-  } = e, A = 2 * C + 2 * Z, {
+    showEmpty: A = !0
+  } = e, k = 2 * C + 2 * Z, {
     width: L,
     height: R
   } = {
@@ -109,11 +109,11 @@ function N(e) {
       layout: s,
       tileWidth: c
     }
-  }(!1, X.length, null != W ? W : L - A, null != V ? V : R - A, $), en = {
+  }(!1, X.length, null != W ? W : L - k, null != V ? V : R - k, $), en = {
     id: t,
     width: L,
     height: R,
-    sizeOffset: A,
+    sizeOffset: k,
     layout: et,
     padding: C,
     participants: X.length
@@ -220,7 +220,7 @@ function N(e) {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, u.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), (q || !_) && N) ? null : q && !N ? k ? N ? null : (0, i.jsx)(v.E, {
+  }), (q || !_) && N) ? null : q && !N ? A ? N ? null : (0, i.jsx)(v.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: !0

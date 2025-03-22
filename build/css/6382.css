@@ -1,6 +1,6 @@
 /**
   Module ID: 6382
-  Original File Name: a835fd7e5f34dd9f
+  Original File Name: 985630680930705a
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -14757,8 +14757,13 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     gap: 12px
 }
 
-.keybindHeaderContainer__9d98d,.keybindRecorderContainer__9d98d {
-    flex-basis: 50%
+.keybindRecorderContainer__9d98d {
+    flex-basis: 50%;
+    max-width: 280px
+}
+
+.keybindHeaderContainer__9d98d {
+    flex-basis: auto
 }
 
 .keybindMainContainer__9d98d {
@@ -14781,7 +14786,8 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     align-items: center;
     justify-content: space-between;
     flex: 1;
-    width: 100%
+    width: 100%;
+    gap: 8px
 }
 
 .voiceSettingsContainer__9d98d {
@@ -16977,4 +16983,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=a835fd7e5f34dd9f.css.map*/
+/*# sourceMappingURL=985630680930705a.css.map*/
