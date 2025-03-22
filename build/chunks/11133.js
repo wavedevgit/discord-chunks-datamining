@@ -13,14 +13,15 @@ var r = n(278074),
 function c(e) {
   let {
     activity: t,
-    stream: n
-  } = e, c = (null == t ? void 0 : t.name) === "" ? null : null == t ? void 0 : t.name, u = (null == t ? void 0 : t.details) === "" ? null : null == t ? void 0 : t.details;
-  if (null != n && (0, a.Z)(t) && null != c) return {
+    stream: n,
+    useDescriptiveActivity: c = !1
+  } = e, u = (null == t ? void 0 : t.name) === "" ? null : null == t ? void 0 : t.name, d = (null == t ? void 0 : t.details) === "" ? null : null == t ? void 0 : t.details, f = (null == t ? void 0 : t.state) === "" ? null : null == t ? void 0 : t.state;
+  if (null != n && (0, a.Z)(t) && null != u) return {
     text: l.NW.format(l.t["0wJXSk"], {
-      name: c
+      name: u
     }),
     tooltip: l.NW.formatToPlainString(l.t["0wJXSk"], {
-      name: c
+      name: u
     })
   };
   if (null != n) {
@@ -31,56 +32,56 @@ function c(e) {
     }
   }
   if ((0, o.Z)(t)) {
-    let e = (0, i.Z)(c);
+    let e = (0, i.Z)(u);
     return {
       text: e,
       tooltip: e
     }
   }
-  return null == c ? {} : (0, r.EQ)(t).with({
+  return null == u ? {} : (0, r.EQ)(t).with({
     type: s.IIU.PLAYING
   }, () => ({
     text: l.NW.format(l.t.lFApm5, {
-      game: c
+      game: u
     }),
     tooltip: l.NW.formatToPlainString(l.t.lFApm5, {
-      game: c
+      game: u
     })
   })).with({
     type: s.IIU.LISTENING
   }, () => ({
     text: l.NW.format(l.t.Vnuxub, {
-      name: c
+      name: c && null != f ? f : u
     }),
     tooltip: l.NW.formatToPlainString(l.t.Vnuxub, {
-      name: c
+      name: c && null != f ? f : u
     })
   })).with({
     type: s.IIU.WATCHING
   }, () => ({
     text: l.NW.format(l.t.pW3Ip6, {
-      name: c
+      name: c && null != d ? d : u
     }),
     tooltip: l.NW.formatToPlainString(l.t.pW3Ip6, {
-      name: c
+      name: c && null != d ? d : u
     })
   })).with({
     type: s.IIU.COMPETING
   }, () => ({
     text: l.NW.format(l.t.QQ2wVF, {
-      name: c
+      name: u
     }),
     tooltip: l.NW.formatToPlainString(l.t.QQ2wVF, {
-      name: c
+      name: u
     })
   })).with({
     type: s.IIU.STREAMING
   }, () => ({
     text: l.NW.format(l.t["0wJXSk"], {
-      name: null != u ? u : c
+      name: null != d ? d : u
     }),
     tooltip: l.NW.formatToPlainString(l.t["0wJXSk"], {
-      name: null != u ? u : c
+      name: null != d ? d : u
     })
   })).otherwise(() => ({}))
 }

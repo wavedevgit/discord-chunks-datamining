@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 61cc93f6cfb2a46f
+  Original File Name: ef4049b9ac7407e8
 **/
 .container__74da2 {
     position: relative;
@@ -103,15 +103,37 @@
     border-radius: var(--radius-sm)
 }
 
-.header_e73f2a {
+.visual-refresh .section_e73f2a {
+    height: auto;
+    padding: var(--space-lg) var(--space-xxs) var(--space-xxs) var(--space-md)
+}
+
+.visual-refresh .header_e73f2a {
     padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-.controlButton_e73f2a {
+.visual-refresh .chevronIcon_e73f2a {
+    margin-left: var(--space-xxs)
+}
+
+.visual-refresh .sectionCollapsible_e73f2a:hover {
+    color: var(--text-primary)
+}
+
+.visual-refresh .activityText_e73f2a {
+    color: var(--text-secondary)
+}
+
+.controlButtons_e73f2a {
     margin-left: 8px;
+    display: flex;
+    gap: 8px
+}
+
+.controlButton_e73f2a {
     border-radius: 8px
 }
 
@@ -127,6 +149,21 @@
 .section_e73f2a {
     padding: 24px 8px 0 16px;
     height: 40px
+}
+
+.chevronIcon_e73f2a {
+    width: 12px;
+    height: 12px
+}
+
+.sectionCollapsible_e73f2a {
+    display: flex;
+    align-items: center;
+    cursor: pointer
+}
+
+.sectionCollapsible_e73f2a:hover {
+    color: var(--header-primary)
 }
 
 .row_e73f2a {
@@ -178,15 +215,6 @@
     opacity: 1
 }
 
-.visual-refresh .section_e73f2a {
-    height: auto;
-    padding: var(--space-lg) var(--space-xxs) var(--space-xxs) var(--space-md)
-}
-
-.visual-refresh .activityText_e73f2a {
-    color: var(--text-secondary)
-}
-
 .emptyStateContainer_e73f2a {
     display: flex;
     align-items: center;
@@ -212,8 +240,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 300px;
-    --custom-live-activity-status-icon-size: 12px;
-    --custom-live-activity-status-emoji-size: 14px
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    --custom-activity-status-icon-size: 12px
+}
+
+.visual-refresh .activityWrapper__6c8a3 {
+    margin: 0 calc(var(--space-sm)*-1);
+    padding: var(--space-xxs) var(--space-sm)
+}
+
+.visual-refresh .activityWrapper__6c8a3:hover {
+    background-color: var(--background-modifier-hover);
+    border-radius: var(--radius-sm)
 }
 
 .visual-refresh .title__85643 {
@@ -8728,4 +8767,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=61cc93f6cfb2a46f.css.map*/
+/*# sourceMappingURL=ef4049b9ac7407e8.css.map*/

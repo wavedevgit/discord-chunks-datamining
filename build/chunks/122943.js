@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -9,12 +9,13 @@ var i = n(692547),
   o = n(481060),
   a = n(201895),
   s = n(933557),
-  l = n(788858),
-  c = n(170187),
-  u = n(388032),
-  d = n(389034);
+  l = n(482798),
+  c = n(788858),
+  u = n(170187),
+  d = n(388032),
+  f = n(389034);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,20 +24,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,49 +48,57 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     channel: t,
     textVariant: n,
-    textClassName: f,
-    hideText: p = !1,
-    hideTooltip: m = !1
-  } = e, g = (0, o.vjg)(o.Skl.ONLINE), E = (0, s.ZP)(t), b = t.isDM() || t.isGroupDM(), v = () => m || b ? (0, r.jsx)(l.Z, {
+    textClassName: _,
+    hideText: h = !1,
+    hideTooltip: g = !1
+  } = e, E = (0, o.vjg)(o.Skl.ONLINE), b = (0, s.ZP)(t), v = t.isDM() || t.isGroupDM(), {
+    enabled: y
+  } = (0, l.C)({
+    location: "VoiceActivityStatus"
+  }), O = () => g || v ? (0, r.jsx)(c.Z, {
     size: "custom",
-    color: g,
+    color: E,
     channel: t,
-    className: d.icon
+    className: f.icon
   }) : (0, r.jsx)(o.ua7, {
-    text: E,
+    text: b,
     "aria-label": (0, a.ZP)({
       channel: t
     }),
-    children: e => (0, r.jsx)(l.Z, h(_({}, e), {
+    children: e => (0, r.jsx)(c.Z, m(p({}, e), {
       size: "custom",
       color: i.Z.colors.STATUS_POSITIVE,
       channel: t,
-      className: d.icon
+      className: f.icon
     }))
-  }), y = () => b ? (0, r.jsx)(c.Z, {
+  }), I = () => y ? (0, r.jsx)(u.Z, {
     variant: n,
-    className: f,
-    children: u.NW.string(u.t["9FaEzs"])
-  }) : t.isGuildStageVoice() ? (0, r.jsx)(c.Z, {
+    className: _,
+    children: b
+  }) : v ? (0, r.jsx)(u.Z, {
     variant: n,
-    className: f,
-    children: u.NW.string(u.t.QygGCA)
-  }) : (0, r.jsx)(c.Z, {
+    className: _,
+    children: d.NW.string(d.t["9FaEzs"])
+  }) : t.isGuildStageVoice() ? (0, r.jsx)(u.Z, {
     variant: n,
-    className: f,
-    children: u.NW.string(u.t.msxteH)
+    className: _,
+    children: d.NW.string(d.t.QygGCA)
+  }) : (0, r.jsx)(u.Z, {
+    variant: n,
+    className: _,
+    children: d.NW.string(d.t.msxteH)
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [v(), !p && y()]
+    children: [O(), !h && I()]
   })
 }

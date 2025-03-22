@@ -1,6 +1,6 @@
 /**
   Module ID: 46408
-  Original File Name: 3f23675b9a328423
+  Original File Name: f9ede38c141821d8
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -96,8 +96,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -954,4 +954,4 @@ div:has(>div>.container_f792fa) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=3f23675b9a328423.css.map*/
+/*# sourceMappingURL=f9ede38c141821d8.css.map*/
