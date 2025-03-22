@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: cd878b7b29b02114
+  Original File Name: 45f13260859d2109
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -4870,6 +4870,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-right: var(--spacing-4)
 }
 
+.voiceUserContainer_adebba {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
 .voiceUser_adebba {
     position: relative;
     display: flex;
@@ -4878,10 +4884,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .4;
     cursor: pointer;
     transition: opacity .1s ease-in-out
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
 }
 
 .voiceUser_adebba.flipped_adebba {
@@ -5680,4 +5682,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=cd878b7b29b02114.css.map*/
+/*# sourceMappingURL=45f13260859d2109.css.map*/

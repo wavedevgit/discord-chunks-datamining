@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: cbeb589c5c9d641e
+  Original File Name: ffe790010ed9746d
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -936,6 +936,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-right: var(--spacing-4)
 }
 
+.voiceUserContainer_adebba {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
 .voiceUser_adebba {
     position: relative;
     display: flex;
@@ -944,10 +950,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .4;
     cursor: pointer;
     transition: opacity .1s ease-in-out
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
 }
 
 .voiceUser_adebba.flipped_adebba {
@@ -5846,4 +5848,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=cbeb589c5c9d641e.css.map*/
+/*# sourceMappingURL=ffe790010ed9746d.css.map*/

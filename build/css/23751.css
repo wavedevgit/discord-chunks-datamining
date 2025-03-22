@@ -1,6 +1,6 @@
 /**
   Module ID: 23751
-  Original File Name: 3c03c1e1cd44d7fc
+  Original File Name: 060382941079ce95
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -1561,6 +1561,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-right: var(--spacing-4)
 }
 
+.voiceUserContainer_adebba {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
 .voiceUser_adebba {
     position: relative;
     display: flex;
@@ -1569,10 +1575,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .4;
     cursor: pointer;
     transition: opacity .1s ease-in-out
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
 }
 
 .voiceUser_adebba.flipped_adebba {
@@ -2112,4 +2114,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=3c03c1e1cd44d7fc.css.map*/
+/*# sourceMappingURL=060382941079ce95.css.map*/

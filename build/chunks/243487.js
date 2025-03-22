@@ -1,6 +1,6 @@
 /** Chunk was on 88712 **/
 n.d(t, {
-  Z: () => F,
+  Z: () => U,
   k: () => G
 }), n(47120), n(653041);
 var r = n(200651),
@@ -135,7 +135,8 @@ let G = i.memo(function(e) {
   let Z = w.slice(0, h),
     N = w.slice(h),
     k = P.get(N[0]);
-  return x ? (0, r.jsxs)(r.Fragment, {
+  return x ? (0, r.jsxs)("div", {
+    className: W.voiceUserContainer,
     children: [Z.map(e => {
       let i = P.get(e);
       return null == i ? null : (0, r.jsx)(D.ZP, {
@@ -175,7 +176,7 @@ let G = i.memo(function(e) {
   })
 });
 
-function F(e) {
+function U(e) {
   var t;
   let {
     isSettingsPreview: n

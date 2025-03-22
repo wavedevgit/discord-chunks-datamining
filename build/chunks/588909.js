@@ -116,14 +116,9 @@ function Z(e, t) {
       })
   }
   let Z = (0, d.un)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    w = null != e ? j.NW.format(j.t.bJ1QAQ, {
-      gameName: e.name
-    }) : j.NW.string(j.t.KWDIrq),
-    P = null != e ? void 0 : j.NW.string(j.t.y7BLbm),
-    _ = Z ? w : j.NW.string(j.t["prl+ra"]),
-    T = null != e && Z ? e.name : _,
-    D = Z ? P : j.NW.string(j.t.R3CpPT),
-    k = null != e ? (0, i.jsx)(C, {
+    w = Z ? j.NW.string(j.t.KWDIrq) : j.NW.string(j.t["prl+ra"]),
+    P = Z ? void 0 : j.NW.string(j.t.R3CpPT),
+    _ = null != e ? (0, i.jsx)(C, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
@@ -131,10 +126,10 @@ function Z(e, t) {
       alt: ""
     });
   return N(S({
-    icon: k,
-    title: T,
-    body: D,
-    hint: () => (0, g.Q)((0, O.P)(), j.t.e6giBQ, j.NW.string(j.t.jZkzVF)),
+    icon: _,
+    title: w,
+    body: P,
+    hint: () => (0, g.Q)((0, O.P)(), j.t["z8/sgI"], j.NW.string(j.t.jZkzVF)),
     confirmText: Z ? void 0 : j.NW.string(j.t.TxyTbm),
     onConfirmClick: Z ? void 0 : () => {
       u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX)

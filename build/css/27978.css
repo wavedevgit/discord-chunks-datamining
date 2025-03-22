@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 72133e2c1e3edc3e
+  Original File Name: 1ce79b296d65c6ce
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4787,6 +4787,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-right: var(--spacing-4)
 }
 
+.voiceUserContainer_adebba {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
 .voiceUser_adebba {
     position: relative;
     display: flex;
@@ -4795,10 +4801,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .4;
     cursor: pointer;
     transition: opacity .1s ease-in-out
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
 }
 
 .voiceUser_adebba.flipped_adebba {
@@ -6008,4 +6010,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=72133e2c1e3edc3e.css.map*/
+/*# sourceMappingURL=1ce79b296d65c6ce.css.map*/

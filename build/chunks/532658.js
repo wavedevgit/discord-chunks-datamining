@@ -125,7 +125,7 @@ let L = () => n.e("43841").then(n.t.bind(n, 737848, 19)).then(e => {
     }
   };
 
-function F(e, t) {
+function U(e, t) {
   let [n, r] = i.useState(null != e && e > Date.now() - 1e4), [o, l] = i.useState(!1), [a, s] = i.useState(!0);
   return (0, m.ZP)(() => {
     n && !t && (s(!1), setTimeout(() => {
@@ -145,7 +145,7 @@ function F(e, t) {
     setHideConnectedAnimation: s
   }), [o, n, a, s])
 }
-let U = i.memo(function(e) {
+let F = i.memo(function(e) {
     let {
       nick: t,
       connectedOn: n,
@@ -157,7 +157,7 @@ let U = i.memo(function(e) {
       recentlyConnected: f,
       hideConnectedAnimation: O,
       setHideConnectedAnimation: m
-    } = F(n, o), {
+    } = U(n, o), {
       ref: y,
       width: v
     } = (0, g.Z)(), h = (0, s.e7)([b.Z], () => b.Z.useReducedMotion), j = f ? "entering" : "exiting", {
@@ -262,7 +262,7 @@ let U = i.memo(function(e) {
       width: Q
     } = (0, g.Z)(), {
       showConnectedAnimation: B
-    } = F(L, I), K = null == C ? void 0 : C.sessionId, q = t.id, H = a.id, [$] = (0, s.e7)([Z.Z], () => {
+    } = U(L, I), K = null == C ? void 0 : C.sessionId, q = t.id, H = a.id, [$] = (0, s.e7)([Z.Z], () => {
       var e;
       return [null !== (e = Z.Z.getVoiceStateForChannel(q, H)) && void 0 !== e ? e : Z.Z.getVoiceStateForSession(H, K), Z.Z.getVoiceStateVersion()]
     }, [q, H, K], N.Q), J = I ? C : null != $ ? $ : C, [X, ee, et] = (0, s.Wu)([E.Z], () => R ? [!E.Z.isSupported() || E.Z.isSelfMute() || E.Z.isSelfMutedTemporarily(), E.Z.isSelfDeaf(), !1] : [!E.Z.isSupported() || E.Z.isLocalMute(a.id), !1, E.Z.isLocalVideoDisabled(a.id)], [R, a.id]), en = (0, s.e7)([x.Z], () => {
@@ -345,7 +345,7 @@ let U = i.memo(function(e) {
             children: u
           })]
         })
-      }), !R && (0, r.jsx)(U, {
+      }), !R && (0, r.jsx)(F, {
         nick: u,
         connectedOn: L,
         isSettingsPreview: I,
@@ -378,7 +378,7 @@ let U = i.memo(function(e) {
         size: ep,
         src: eg,
         "aria-hidden": !0
-      }), !R && (0, r.jsx)(U, {
+      }), !R && (0, r.jsx)(F, {
         nick: u,
         connectedOn: L,
         isSettingsPreview: I,

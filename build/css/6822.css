@@ -1,6 +1,6 @@
 /**
   Module ID: 6822
-  Original File Name: f55514f9723cdc35
+  Original File Name: 6026beffe19b9818
 **/
 @value minColumnWidth: 460px;
 
@@ -3663,6 +3663,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-right: var(--spacing-4)
 }
 
+.voiceUserContainer_adebba {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
 .voiceUser_adebba {
     position: relative;
     display: flex;
@@ -3671,10 +3677,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .4;
     cursor: pointer;
     transition: opacity .1s ease-in-out
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
 }
 
 .voiceUser_adebba.flipped_adebba {
@@ -4214,4 +4216,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=f55514f9723cdc35.css.map*/
+/*# sourceMappingURL=6026beffe19b9818.css.map*/

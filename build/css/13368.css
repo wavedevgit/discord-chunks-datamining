@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: c02ef6ff9ef321ee
+  Original File Name: 74d0a36eb687d54e
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -5205,6 +5205,12 @@ span.clanTag__07f91.isOverlay__07f91 {
     padding-right: var(--spacing-4)
 }
 
+.voiceUserContainer_adebba {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
 .voiceUser_adebba {
     position: relative;
     display: flex;
@@ -5213,10 +5219,6 @@ span.clanTag__07f91.isOverlay__07f91 {
     opacity: .4;
     cursor: pointer;
     transition: opacity .1s ease-in-out
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
 }
 
 .voiceUser_adebba.flipped_adebba {
@@ -5585,4 +5587,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=c02ef6ff9ef321ee.css.map*/
+/*# sourceMappingURL=74d0a36eb687d54e.css.map*/
