@@ -1,6 +1,6 @@
 /** Chunk was on 13965 **/
 n.d(t, {
-  default: () => O
+  default: () => y
 }), n(47120), n(266796);
 var r = n(200651),
   o = n(192379),
@@ -10,36 +10,37 @@ var r = n(200651),
   i = n(607070),
   l = n(530618),
   u = n(372654),
-  f = n(535396),
-  p = n(367123),
-  b = n(388032),
-  d = n(841174),
-  m = n(942570);
+  f = n(156732),
+  p = n(535396),
+  b = n(367123),
+  d = n(388032),
+  m = n(841174),
+  j = n(942570);
 
-function j(e) {
+function O(e) {
   let {
     powerup: t
-  } = e;
+  } = e, n = (0, f.Z)(t);
   switch (t.type) {
-    case f.Us.LEVEL:
+    case p.Us.LEVEL:
       return (0, r.jsx)("img", {
         alt: "",
-        src: m
+        src: j
       });
-    case f.Us.PERK:
+    case p.Us.PERK:
       return (0, r.jsx)("img", {
         alt: "",
-        src: "",
-        className: d.exampleImage
+        src: n,
+        className: m.exampleImage
       })
   }
 }
 
-function O(e) {
+function y(e) {
   var t, n, {
       powerup: f
     } = e,
-    m = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -54,14 +55,14 @@ function O(e) {
       }
       return o
     }(e, ["powerup"]);
-  let O = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
+  let j = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
     y = o.useRef(null),
     g = o.useRef(new c.qA),
     [x, h] = o.useState(null);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.O_, {
       ref: h,
-      className: d.confettiCanvas,
+      className: m.confettiCanvas,
       environment: g.current
     }), (0, r.jsxs)(s.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -81,41 +82,41 @@ function O(e) {
       }
       return e
     }({
-      className: d.modal,
+      className: m.modal,
       size: s.CgR.DYNAMIC
-    }, m), n = n = {
+    }, p), n = n = {
       children: [(0, r.jsx)(s.hzk, {
-        className: d.modalContentContainer,
+        className: m.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
-          className: d.container,
+          className: m.container,
           ref: y,
-          children: [(0, r.jsx)(j, {
+          children: [(0, r.jsx)(O, {
             powerup: f
           }), (0, r.jsxs)("div", {
-            className: d.contentContainer,
+            className: m.contentContainer,
             children: [(0, r.jsx)(s.X6q, {
               variant: "heading-xl/extrabold",
-              children: b.NW.formatToPlainString(p.Z.lFuOFB, {
+              children: d.NW.formatToPlainString(b.Z.lFuOFB, {
                 perkName: f.title
               })
             }), (0, r.jsx)(s.Text, {
-              className: d.description,
+              className: m.description,
               variant: "text-sm/normal",
-              children: b.NW.formatToPlainString(p.Z.y3wHoq, {
+              children: d.NW.formatToPlainString(b.Z.y3wHoq, {
                 perkName: f.title
               })
             }), (0, r.jsx)(s.zxk, {
-              className: d.button,
-              onClick: m.onClose,
-              children: b.NW.string(p.Z["g5Ds6+"])
+              className: m.button,
+              onClick: p.onClose,
+              children: d.NW.string(b.Z["g5Ds6+"])
             })]
           })]
         })
       }), (0, r.jsx)(s.olH, {
-        className: d.close,
-        onClick: m.onClose
-      }), !O && (0, r.jsx)(l.Z, {
+        className: m.close,
+        onClick: p.onClose
+      }), !j && (0, r.jsx)(l.Z, {
         confettiTarget: y.current,
         confettiCanvas: x,
         sprites: (0, u.vK)()

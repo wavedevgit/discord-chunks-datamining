@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  ZP: () => g
+  ZP: () => f
 }), t(47120);
 var i = t(200651),
   r = t(192379),
@@ -11,58 +11,72 @@ var i = t(200651),
   c = t(808189),
   d = t(413335),
   u = t(690786),
-  x = t(838968),
-  m = t(969867),
+  m = t(838968),
+  x = t(969867),
   v = t(279604),
-  p = t(610881),
-  _ = t(709435);
+  p = t(981631),
+  _ = t(367123),
+  b = t(388032),
+  j = t(610881),
+  g = t(709435);
 
-function b(e) {
+function h(e) {
   let n, {
     active: t,
     nextActive: r,
     position: o
   } = e;
   return n = t && !1 !== r ? "full" : t && !1 === r ? "half" : "none", (0, i.jsxs)("div", {
-    className: p.progressContainer,
+    className: j.progressContainer,
     children: [(0, i.jsx)("div", {
-      className: s()(p.progress, p[o], p[n])
+      className: s()(j.progress, j[o], j[n])
     }), (0, i.jsx)("div", {
-      className: s()(p.boostContainer, {
-        [p.boostContainerActive]: t
+      className: s()(j.boostContainer, {
+        [j.boostContainerActive]: t
       }),
       children: (0, i.jsx)(d.Z, {
         size: "sm",
-        className: p.boost,
+        className: j.boost,
         fill: "white"
       })
     })]
   })
 }
 
-function j(e) {
-  var n, t;
+function Z(e) {
   let {
-    index: r
-  } = e;
-  return (0, i.jsx)("div", {
-    className: p.perkRowContainer,
-    children: null === (t = c.C[r]) || void 0 === t ? void 0 : null === (n = t.perks) || void 0 === n ? void 0 : n.map((e, n) => (0, i.jsxs)("div", {
-      className: p.perkRow,
+    index: n
+  } = e, t = r.useMemo(() => {
+    let e = c.C[n];
+    if (null == e) return [];
+    let t = e.tier === p.Eu4.TIER_3 ? e.perks.slice(0, -1) : e.perks;
+    return null == t ? void 0 : t.map((e, t) => (0, i.jsxs)("div", {
+      className: j.perkRow,
       children: [(0, i.jsx)(e.icon, {
         color: l.TVs.colors.TEXT_MUTED,
         size: "sm"
       }), (0, i.jsx)(a.xv, {
-        className: p.perkText,
+        className: j.perkText,
         color: "text-muted",
         variant: "text-sm/medium",
         children: e.getCopy()
       })]
-    }, n))
+    }, "perk-".concat(n, "-").concat(t)))
+  }, [n]);
+  return (0, i.jsxs)("div", {
+    className: j.perkRowContainer,
+    children: [t, (0, i.jsx)("div", {
+      className: j.perkRow,
+      children: (0, i.jsx)(a.xv, {
+        color: "text-muted",
+        variant: "text-sm/medium",
+        children: b.NW.string(_.Z.nIj3LS)
+      })
+    })]
   })
 }
 
-function g(e) {
+function f(e) {
   let n, {
       guildId: t,
       index: o,
@@ -71,33 +85,33 @@ function g(e) {
     } = e,
     c = null != (0, u.Z)(t, s),
     d = null != (0, u.Z)(t, l),
-    [g, h] = r.useState(void 0);
-  return (0, v.KT)(g), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, i.jsxs)(x.Z, {
+    [p, _] = r.useState(void 0);
+  return (0, v.KT)(p), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, i.jsxs)(m.Z, {
     guildId: t,
     powerup: s,
-    className: p.card,
-    children: [(0, i.jsx)(b, {
+    className: j.card,
+    children: [(0, i.jsx)(h, {
       position: n,
       active: c,
       nextActive: d
     }), (0, i.jsxs)("div", {
-      className: _.contentContainer,
+      className: g.contentContainer,
       children: [(0, i.jsx)(a.X6, {
         variant: "heading-md/bold",
         children: s.title
-      }), (0, i.jsx)(j, {
+      }), (0, i.jsx)(Z, {
         index: o
-      }), (0, i.jsx)(x.Y, {
-        className: p.footer,
+      }), (0, i.jsx)(m.Y, {
+        className: j.footer,
         guildId: t,
         powerup: s
       })]
     }), (0, i.jsx)("div", {
-      className: _.buttonContainer,
-      children: (0, i.jsx)(m.Z, {
+      className: g.buttonContainer,
+      children: (0, i.jsx)(x.Z, {
         guildId: t,
         powerup: s,
-        onError: h
+        onError: _
       })
     })]
   })

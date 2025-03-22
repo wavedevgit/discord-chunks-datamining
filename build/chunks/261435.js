@@ -20,26 +20,26 @@ var i, r = n(512722),
   _ = n(181364),
   v = n(435064),
   b = n(668761),
-  O = n(86071),
-  x = n(486016),
-  S = n(358446),
-  E = n(371651),
-  N = n(624864),
-  j = n(695346),
-  C = n(163612),
-  I = n(314897),
-  Z = n(592125),
-  P = n(292959),
-  w = n(158776),
-  T = n(944486),
-  k = n(885110),
-  D = n(246946),
-  M = n(594174),
-  A = n(974180),
-  R = n(808506),
-  L = n(237997),
-  z = n(70956),
-  W = n(150097),
+  O = n(864060),
+  x = n(86071),
+  S = n(486016),
+  E = n(358446),
+  N = n(371651),
+  j = n(624864),
+  C = n(695346),
+  I = n(163612),
+  Z = n(314897),
+  P = n(592125),
+  w = n(292959),
+  T = n(158776),
+  k = n(944486),
+  D = n(885110),
+  M = n(246946),
+  A = n(594174),
+  R = n(974180),
+  L = n(808506),
+  z = n(237997),
+  W = n(70956),
   V = n(129724),
   B = n(709054),
   U = n(145597),
@@ -82,9 +82,9 @@ function J(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Q = 5 * z.Z.Millis.SECOND,
-  q = 8 * z.Z.Millis.SECOND,
-  $ = 30 * z.Z.Millis.SECOND,
+let Q = 5 * W.Z.Millis.SECOND,
+  q = 8 * W.Z.Millis.SECOND,
+  $ = 30 * W.Z.Millis.SECOND,
   ee = Object.freeze({
     priority: 0,
     duration: Q,
@@ -120,7 +120,7 @@ function es(e) {
 
 function eo(e, t) {
   let n = X({}, ee, t);
-  if (2 !== n.priority && !L.default.isInstanceFocused()) return null;
+  if (2 !== n.priority && !z.default.isInstanceFocused()) return null;
   let i = (0, o.Z)(),
     r = X({
       id: i,
@@ -137,13 +137,13 @@ function ea(e) {
     channelId: t,
     ringing: n
   } = e, i = es(t);
-  if (!n.includes(I.default.getId())) return ei(i);
+  if (!n.includes(Z.default.getId())) return ei(i);
   if (null != i) return !1;
-  let r = Z.Z.getChannel(t);
-  if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !C.Z.getCurrentConfig({
+  let r = P.Z.getChannel(t);
+  if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !I.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayStartRinging"
-    }).enabled || k.Z.getStatus() === F.Skl.DND || j.QZ.getSetting()) return !1;
+    }).enabled || D.Z.getStatus() === F.Skl.DND || C.QZ.getSetting()) return !1;
   let s = et.find(e => 1 === e.type && e.channelId === t && e.messageType === F.uaV.CALL);
   null != s && ei(s.id), eo((0, p.Z)(r), {
     priority: 1,
@@ -154,7 +154,7 @@ function ea(e) {
 }
 class el extends(i = a.ZP.Store) {
   initialize() {
-    this.waitFor(Z.Z, M.default, N.Z)
+    this.waitFor(P.Z, A.default, j.Z)
   }
   getNotifications() {
     return et
@@ -174,7 +174,7 @@ let ec = new el(l.Z, {
     let {
       nudges: n
     } = e;
-    if (E.default.hasChangedRenderMode(null !== (t = R.default.getFocusedPID()) && void 0 !== t ? t : (0, U.getPID)())) return;
+    if (N.default.hasChangedRenderMode(null !== (t = L.default.getFocusedPID()) && void 0 !== t ? t : (0, U.getPID)())) return;
     let i = function(e) {
       switch (e.type) {
         case H.nc.OOP_WELCOME:
@@ -183,7 +183,7 @@ let ec = new el(l.Z, {
         case H.nc.GO_LIVE_NON_VOICE:
           return (0, h.Z)(e);
         case H.nc.KEYBIND_INDICATORS:
-          return (0, S.Z)(e);
+          return (0, E.Z)(e);
         case H.nc.NEWS:
         default:
           return (0, _.Z)(e)
@@ -208,22 +208,22 @@ let ec = new el(l.Z, {
     let {
       channelId: r,
       message: o
-    } = e, a = Z.Z.getChannel(r), l = M.default.getUser(null === (t = o.author) || void 0 === t ? void 0 : t.id);
+    } = e, a = P.Z.getChannel(r), l = A.default.getUser(null === (t = o.author) || void 0 === t ? void 0 : t.id);
     if (null == a || null == l) return !1;
     if ((null === (n = o.activity) || void 0 === n ? void 0 : n.type) === F.mFx.JOIN || (null === (i = o.activity) || void 0 === i ? void 0 : i.type) === F.mFx.JOIN_REQUEST) {
-      if (!(0, W.eF)(o, r, !0, !0)) return !1;
+      if (!(0, O.eF)(o, r, !0, !0)) return !1;
       let e = function(e, t, n) {
         let i, r;
-        if (s()(null != t.activity, "received null message activity"), n.id === I.default.getId()) return !1;
+        if (s()(null != t.activity, "received null message activity"), n.id === Z.default.getId()) return !1;
         let o = G.Z.getGame();
         if (null == o) return !1;
         switch (t.activity.type) {
           case F.mFx.JOIN:
-            if (null == (i = w.Z.getApplicationActivity(n.id, o.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+            if (null == (i = T.Z.getApplicationActivity(n.id, o.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
             r = (0, d.Z)(e, t, n, o, i);
             break;
           case F.mFx.JOIN_REQUEST:
-            if (null == (i = k.Z.getApplicationActivity(o.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+            if (null == (i = D.Z.getApplicationActivity(o.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
             r = (0, m.Z)(e, n, o, i)
         }
         if (null == r) return !1;
@@ -236,8 +236,8 @@ let ec = new el(l.Z, {
       }(a, o, l);
       if (!1 !== e) return e
     }
-    if ((!L.default.isInstanceLocked() || L.default.isPinned(F.Odu.TEXT)) && r === T.Z.getChannelId() || N.Z.isNotificationDisabled(x.OverlayNotificationDisabledSetting.TEXT_CHAT) || D.Z.disableNotifications || !(0, W.eF)(o, r)) return !1;
-    let c = !P.Z.isSoundDisabled(A.Ay);
+    if ((!z.default.isInstanceLocked() || z.default.isPinned(F.Odu.TEXT)) && r === k.Z.getChannelId() || j.Z.isNotificationDisabled(S.OverlayNotificationDisabledSetting.TEXT_CHAT) || M.Z.disableNotifications || !(0, O.eF)(o, r)) return !1;
+    let c = !w.Z.isSoundDisabled(R.Ay);
     eo((0, y.Z)(a, o, l, c), {
       type: 1,
       channelId: a.id,
@@ -271,11 +271,11 @@ let ec = new el(l.Z, {
       guildId: n,
       ringing: i
     } = e;
-    if (!C.Z.getCurrentConfig({
+    if (!I.Z.getCurrentConfig({
         guildId: n,
         location: "OverlayStopRinging"
       }).enabled) return !1;
-    i.includes(I.default.getId()) && ei(es(t))
+    i.includes(Z.default.getId()) && ei(es(t))
   },
   ACTIVITY_USER_ACTION: function(e) {
     let t, {
@@ -309,13 +309,13 @@ let ec = new el(l.Z, {
     let {
       contentInventoryEntries: n
     } = e;
-    if (0 === n.length || N.Z.isNotificationDisabled(x.OverlayNotificationDisabledSetting.GAME_ACTIVITY) || E.default.hasChangedRenderMode(null !== (t = R.default.getFocusedPID()) && void 0 !== t ? t : (0, U.getPID)())) return;
+    if (0 === n.length || j.Z.isNotificationDisabled(S.OverlayNotificationDisabledSetting.GAME_ACTIVITY) || N.default.hasChangedRenderMode(null !== (t = L.default.getFocusedPID()) && void 0 !== t ? t : (0, U.getPID)())) return;
     let i = G.Z.getGame();
     if (null == i) return;
     let {
       enabled: r,
       dateLookbackMs: s
-    } = O.Z.getCurrentConfig({
+    } = x.Z.getCurrentConfig({
       location: "OverlayNotificationsStore"
     });
     if (!r) return;

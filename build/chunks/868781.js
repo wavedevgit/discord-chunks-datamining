@@ -9,9 +9,9 @@ var i = n(278074),
   o = n(657707),
   a = n(456100),
   s = n(841784),
-  l = n(495630),
-  c = n(170187),
-  u = n(937008),
+  l = n(11133),
+  c = n(473919),
+  u = n(170187),
   d = n(981631);
 
 function f(e) {
@@ -47,10 +47,10 @@ function f(e) {
     type: d.IIU.COMPETING
   }, () => o.iWm).otherwise(() => null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!_ && null != b && (0, r.jsx)(u.Z, {
+    children: [!_ && null != b && (0, r.jsx)(c.Z, {
       icon: b,
       tooltip: p && !h ? E : void 0
-    }), !p && (0, r.jsx)(c.Z, {
+    }), !p && (0, r.jsx)(u.Z, {
       variant: n,
       className: f,
       children: g

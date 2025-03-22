@@ -12,8 +12,8 @@ var r = t(793030),
   c = t(709586),
   d = t(709054),
   u = t(367123),
-  x = t(388032),
-  m = t(652754);
+  m = t(388032),
+  x = t(652754);
 
 function v(e) {
   let {
@@ -29,19 +29,19 @@ function v(e) {
     }
   }, [n]);
   return (0, i.jsx)(a.Z, {
-    className: m.systemMessageContainer,
-    contentClassName: m.systemMessageContent,
+    className: x.systemMessageContainer,
+    contentClassName: x.systemMessageContent,
     iconNode: (0, i.jsx)(c.Z, {
-      className: m.icon,
+      className: x.icon,
       width: 16,
       height: 16
     }),
-    iconContainerClassName: m.iconContainer,
-    timestampClassName: m.timestamp,
+    iconContainerClassName: x.iconContainer,
+    timestampClassName: x.timestamp,
     timestamp: t,
     compact: !0,
     children: (0, i.jsxs)("span", {
-      className: m.boostMessage,
+      className: x.boostMessage,
       children: [(0, i.jsx)(r.xv, {
         variant: "text-md/semibold",
         children: (0, i.jsx)(s.PUh, {
@@ -50,7 +50,7 @@ function v(e) {
         })
       }), (0, i.jsx)(r.xv, {
         variant: "text-md/medium",
-        children: x.NW.string(u.Z.plwH8f)
+        children: m.NW.string(u.Z.plwH8f)
       })]
     })
   })

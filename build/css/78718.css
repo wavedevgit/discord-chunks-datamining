@@ -1,6 +1,6 @@
 /**
   Module ID: 78718
-  Original File Name: 094bf861fc014f67
+  Original File Name: f636a2c498ba2f72
 **/
 .container__2b26c {
     display: flex;
@@ -88,21 +88,30 @@
     margin-top: var(--spacing-24)
 }
 
-.powerupImage__8118d {
-    flex-grow: 1
+.powerupImageContainer__8118d {
+    flex-grow: 1;
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
+    display: flex
 }
 
-.exampleImage__8118d,.powerupImage__8118d {
-    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
+.powerupImage__8118d {
+    align-self: center;
+    justify-content: center;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%
 }
 
 .exampleImage__8118d {
     width: 500px;
-    flex: 1
+    flex: 1;
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
 }
 
 .error__8118d {
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=094bf861fc014f67.css.map*/
+/*# sourceMappingURL=f636a2c498ba2f72.css.map*/

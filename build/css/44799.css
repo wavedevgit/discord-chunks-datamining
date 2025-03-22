@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: e0d34d9d85e7eccb
+  Original File Name: 523633e92c954c8a
 **/
 .container__98cbd {
     width: 220px;
@@ -25,7 +25,7 @@
 
 .container__98cbd:hover .buttonContainer__98cbd {
     opacity: 1;
-    bottom: var(--spacing-8)
+    bottom: var(--spacing-16)
 }
 
 .container__98cbd:hover .labelContainer__98cbd {
@@ -47,12 +47,21 @@
 }
 
 .description__98cbd {
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--spacing-32)
 }
 
 .imageContainer__98cbd {
     height: 180px;
     background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
+}
+
+.image__98cbd {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    height: 180px;
+    width: 100%
 }
 
 .bundle__98cbd {
@@ -87,8 +96,8 @@
     opacity: 0;
     position: absolute;
     bottom: 0;
-    left: var(--spacing-8);
-    right: var(--spacing-8)
+    left: var(--spacing-16);
+    right: var(--spacing-16)
 }
 
 .full-motion .container__98cbd {
@@ -235,8 +244,12 @@
     margin-left: var(--spacing-8)
 }
 
-.button__823e1,.footer__823e1 {
+.button__823e1 {
     margin-top: var(--spacing-24)
+}
+
+.footer__823e1 {
+    margin-top: var(--spacing-32)
 }
 
 .container__879ae {
@@ -393,22 +406,28 @@
 
 .container__89463 {
     flex: 1;
-    flex-direction: column
-}
-
-.container__89463,.contentContainer__89463 {
     display: flex;
+    flex-direction: column;
     background-color: var(--background-primary)
 }
 
+.toolbar__89463 {
+    box-shadow: var(--shadow-ledge)
+}
+
 .contentContainer__89463 {
+    display: flex;
     flex: 1;
+    background-color: var(--background-primary);
     overflow: hidden
 }
 
 .powerupsContainer__89463 {
     padding: var(--spacing-24);
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-32);
     overflow-y: auto
 }
 
@@ -435,12 +454,10 @@
     grid-template-columns: repeat(auto-fit,220px)
 }
 
-.powerupTextContainer__89463 {
-    margin-bottom: var(--spacing-16)
-}
-
-.powerupTextContainer__89463:nth-of-type(n+2) {
-    margin-top: var(--spacing-16)
+.powerupsSection__89463 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16)
 }
 
 .footer__89463 {
@@ -450,4 +467,4 @@
     z-index: 100
 }
 
-/*# sourceMappingURL=e0d34d9d85e7eccb.css.map*/
+/*# sourceMappingURL=523633e92c954c8a.css.map*/

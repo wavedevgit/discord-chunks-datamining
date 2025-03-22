@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(224706),
   r = n(13245),
-  s = n(593481),
-  o = n(150097),
+  s = n(864060),
+  o = n(593481),
   a = n(312839),
   l = n(987650),
   c = n(388032);
@@ -20,7 +20,7 @@ function d(e, t, n, d, u) {
     icon: f,
     title: g,
     body: m
-  } = (0, o.Xi)(e, t, n), {
+  } = (0, s.Xi)(e, t, n), {
     trackView: y,
     trackClick: _
   } = (0, a.R)(l.n0.ActivityInvite, {
@@ -38,7 +38,7 @@ function d(e, t, n, d, u) {
     icon: f,
     title: g,
     body: m,
-    hint: e => (0, s.QR)(e, (0, a.P)(), c.t.aB5xLy),
+    hint: e => (0, o.QR)(e, (0, a.P)(), c.t.aB5xLy),
     onNotificationShow: () => {
       y()
     },

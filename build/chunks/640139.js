@@ -1,19 +1,20 @@
 /** Chunk was on 78718 **/
 n.d(t, {
-  default: () => l
+  default: () => c
 }), n(47120), n(266796);
 var r = n(200651),
   o = n(192379),
   s = n(481060),
-  i = n(969867),
-  a = n(656659);
+  i = n(156732),
+  a = n(969867),
+  l = n(656659);
 
-function l(e) {
+function c(e) {
   var t, n, {
-      guildId: l,
-      powerup: c
+      guildId: c,
+      powerup: d
     } = e,
-    d = function(e, t) {
+    u = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -28,7 +29,7 @@ function l(e) {
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [u, p] = o.useState(void 0);
+  let [p, b] = o.useState(void 0), m = (0, i.Z)(d);
   return (0, r.jsxs)(s.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -47,49 +48,52 @@ function l(e) {
     }
     return e
   }({
-    className: a.modal,
+    className: l.modal,
     size: s.CgR.DYNAMIC
-  }, d), n = n = {
+  }, u), n = n = {
     children: [(0, r.jsxs)(s.hzk, {
-      className: a.modalContentContainer,
+      className: l.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
-        className: a.sidebar,
-        children: [(0, r.jsx)("img", {
-          alt: "",
-          src: "",
-          className: a.powerupImage
+        className: l.sidebar,
+        children: [(0, r.jsx)("div", {
+          className: l.powerupImageContainer,
+          children: (0, r.jsx)("img", {
+            className: l.powerupImage,
+            alt: "",
+            src: m
+          })
         }), (0, r.jsxs)("div", {
-          className: a.contentContainer,
+          className: l.contentContainer,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-xl/extrabold",
-            children: c.title
+            children: d.title
           }), (0, r.jsx)(s.Text, {
-            className: a.description,
+            className: l.description,
             variant: "text-sm/normal",
-            children: c.description
-          }), null != u && (0, r.jsx)(s.Text, {
-            className: a.error,
+            children: d.description
+          }), null != p && (0, r.jsx)(s.Text, {
+            className: l.error,
             color: "status-danger",
             variant: "text-sm/semibold",
-            children: u
-          }), (0, r.jsx)(i.Z, {
-            className: a.footer,
-            guildId: l,
-            powerup: c,
-            onError: p
+            children: p
+          }), (0, r.jsx)(a.Z, {
+            className: l.footer,
+            guildId: c,
+            powerup: d,
+            onError: b
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: a.exampleImage,
+        className: l.exampleImage,
         children: (0, r.jsx)("img", {
           alt: "",
           src: ""
         })
       })]
     }), (0, r.jsx)(s.olH, {
-      className: a.close,
-      onClick: d.onClose
+      className: l.close,
+      onClick: u.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

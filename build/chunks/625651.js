@@ -1,23 +1,24 @@
 /** Chunk was on 31924 **/
 n.d(t, {
-  default: () => m
+  default: () => b
 });
 var r = n(200651),
   o = n(192379),
   a = n(481060),
-  c = n(17622),
-  s = n(279604),
-  i = n(535396),
-  l = n(367123),
-  u = n(388032),
-  d = n(136646);
+  c = n(156732),
+  s = n(17622),
+  i = n(279604),
+  l = n(535396),
+  u = n(367123),
+  d = n(388032),
+  m = n(136646);
 
-function m(e) {
+function b(e) {
   var t, n, {
-      guildId: m,
-      powerup: b
+      guildId: b,
+      powerup: p
     } = e,
-    p = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -33,16 +34,16 @@ function m(e) {
       return o
     }(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: f,
-    error: x,
-    isLoading: j
-  } = (0, s.ZP)(m, b), {
-    onClose: O
-  } = p, _ = o.useCallback(e => {
-    f(e).then(() => {
-      null == O || O()
+    onDeactivate: x,
+    error: j,
+    isLoading: O
+  } = (0, i.ZP)(b, p), {
+    onClose: _
+  } = f, h = o.useCallback(e => {
+    x(e).then(() => {
+      null == _ || _()
     })
-  }, [O, f]);
+  }, [_, x]), k = (0, c.Z)(p);
   return (0, r.jsxs)(a.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -61,75 +62,75 @@ function m(e) {
     }
     return e
   }({
-    className: d.modal,
+    className: m.modal,
     size: a.CgR.SMALL
-  }, p), n = n = {
+  }, f), n = n = {
     children: [(0, r.jsxs)(a.hzk, {
-      className: d.modalContentContainer,
+      className: m.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
-        className: d.headerContainer,
+        className: m.headerContainer,
         children: [(0, r.jsxs)("div", {
-          className: d.header,
+          className: m.header,
           children: [(0, r.jsx)(a.X6q, {
             variant: "heading-md/semibold",
-            children: u.NW.formatToPlainString(l.Z.iEBw1N, {
-              perk: b.title
+            children: d.NW.formatToPlainString(u.Z.iEBw1N, {
+              perk: p.title
             })
           }), (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
-            children: u.NW.formatToPlainString(l.Z["7o0K+/"], {
-              perk: b.title
+            children: d.NW.formatToPlainString(u.Z["7o0K+/"], {
+              perk: p.title
             })
           })]
         }), (0, r.jsx)(a.olH, {
-          onClick: p.onClose
+          onClick: f.onClose
         })]
       }), (() => {
-        switch (b.type) {
-          case i.Us.LEVEL:
-            return (0, r.jsx)(c.Z, {
-              powerup: b
+        switch (p.type) {
+          case l.Us.LEVEL:
+            return (0, r.jsx)(s.Z, {
+              powerup: p
             });
-          case i.Us.PERK:
+          case l.Us.PERK:
             return (0, r.jsx)("img", {
               alt: "",
-              src: "",
-              className: d.exampleImage
+              src: k,
+              className: m.exampleImage
             })
         }
       })(), (0, r.jsxs)("div", {
-        className: d.warningContainer,
+        className: m.warningContainer,
         children: [(0, r.jsx)(a.Text, {
           color: "status-warning",
           variant: "eyebrow",
-          children: u.NW.string(l.Z.OVt5CA)
+          children: d.NW.string(u.Z.OVt5CA)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
-          children: u.NW.formatToPlainString(l.Z["4jSvr6"], {
-            perk: b.title,
+          children: d.NW.formatToPlainString(u.Z["4jSvr6"], {
+            perk: p.title,
             memberCount: 5
           })
         })]
-      }), null != x && (0, r.jsx)(a.Text, {
-        className: d.errorText,
+      }), null != j && (0, r.jsx)(a.Text, {
+        className: m.errorText,
         color: "status-danger",
         variant: "text-sm/semibold",
-        children: x
+        children: j
       })]
     }), (0, r.jsxs)(a.mzw, {
-      className: d.footer,
+      className: m.footer,
       children: [(0, r.jsx)(a.zxk, {
-        submitting: j,
+        submitting: O,
         color: a.Ttl.RED,
-        className: d.button,
-        onClick: _,
-        children: u.NW.string(l.Z.PYPdl5)
+        className: m.button,
+        onClick: h,
+        children: d.NW.string(u.Z.PYPdl5)
       }), (0, r.jsx)(a.zxk, {
         color: a.Ttl.PRIMARY,
-        className: d.button,
-        onClick: p.onClose,
-        children: u.NW.string(u.t["ETE/oK"])
+        className: m.button,
+        onClick: f.onClose,
+        children: d.NW.string(d.t["ETE/oK"])
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

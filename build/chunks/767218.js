@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => x,
+  Z: () => m,
   b: () => u
 });
 var i, r = t(200651);
@@ -13,7 +13,7 @@ var o = t(793030),
   d = t(255976),
   u = ((i = {})[i.AVAILABLE = 0] = "AVAILABLE", i[i.SPENT = 1] = "SPENT", i[i.TOTAL = 2] = "TOTAL", i);
 
-function x(e) {
+function m(e) {
   let {
     count: n,
     type: t

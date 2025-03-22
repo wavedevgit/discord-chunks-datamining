@@ -13,22 +13,22 @@ var r = t(120356),
   c = t(192371),
   d = t(279604),
   u = t(367123),
-  x = t(388032),
-  m = t(709435);
+  m = t(388032),
+  x = t(709435);
 
 function v(e) {
   let {
     dateString: n
   } = e;
   return (0, i.jsxs)("div", {
-    className: m.inline,
+    className: x.inline,
     children: [(0, i.jsx)(s.owK, {
       size: "xs",
       color: s.TVs.colors.STATUS_WARNING
     }), (0, i.jsx)(s.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
-      children: x.NW.formatToMarkdownString(u.Z["ol/ao6"], {
+      children: m.NW.formatToMarkdownString(u.Z["ol/ao6"], {
         dateString: (0, c.Z)(n)
       })
     })]
@@ -42,9 +42,9 @@ function p(e) {
     className: r
   } = e, c = (0, l.Z)(n, t);
   return (0, i.jsxs)("div", {
-    className: o()(m.labelContainer, r),
+    className: o()(x.labelContainer, r),
     children: [(0, i.jsxs)("div", {
-      className: o()(m.inline, m.inlineBoost),
+      className: o()(x.inline, x.inlineBoost),
       children: [(0, i.jsx)(a.Z, {}), (0, i.jsx)(s.Text, {
         tag: "div",
         variant: "heading-md/bold",
@@ -53,14 +53,14 @@ function p(e) {
     }), null != c && ((null == c ? void 0 : c.ends_at) != null ? (0, i.jsx)(v, {
       dateString: c.ends_at
     }) : (0, i.jsxs)("div", {
-      className: m.inline,
+      className: x.inline,
       children: [(0, i.jsx)(s.owK, {
         size: "xs",
         color: s.TVs.colors.STATUS_POSITIVE
       }), (0, i.jsx)(s.Text, {
         color: "text-positive",
         variant: "text-sm/bold",
-        children: x.NW.string(u.Z.FFLkm5)
+        children: m.NW.string(u.Z.FFLkm5)
       })]
     }))]
   })
@@ -72,15 +72,15 @@ function _(e) {
     powerup: t,
     className: r,
     children: a
-  } = e, c = (0, l.Z)(n, t), u = null != c, x = (null == c ? void 0 : c.ends_at) != null, {
+  } = e, c = (0, l.Z)(n, t), u = null != c, m = (null == c ? void 0 : c.ends_at) != null, {
     onShowMore: v
   } = (0, d.ZP)(n, t);
   return (0, i.jsx)(s.kL8, {
     "aria-label": t.title,
     onClick: v,
-    className: o()(m.container, {
-      [m.active]: u,
-      [m.warning]: x
+    className: o()(x.container, {
+      [x.active]: u,
+      [x.warning]: m
     }, r),
     children: a
   })

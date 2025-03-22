@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => m
+  Z: () => x
 }), t(230036);
 var i = t(200651),
   r = t(192379),
@@ -11,26 +11,26 @@ var i = t(200651),
   c = t(430824),
   d = t(659679),
   u = t(388032),
-  x = t(549564);
+  m = t(549564);
 
-function m(e) {
+function x(e) {
   let {
     guildId: n
   } = e, t = (0, s.Wu)([l.Z], () => {
     var e;
     return null !== (e = l.Z.getAppliedGuildBoostsForGuild(n)) && void 0 !== e ? e : []
-  }, [n]), m = r.useMemo(() => t.sort((e, n) => e.id < n.id ? 1 : -1), [t]), v = (0, s.e7)([c.Z], () => {
+  }, [n]), x = r.useMemo(() => t.sort((e, n) => e.id < n.id ? 1 : -1), [t]), v = (0, s.e7)([c.Z], () => {
     var e;
     return null === (e = c.Z.getGuild(n)) || void 0 === e ? void 0 : e.premiumSubscriberCount
   });
   return (r.useEffect(() => {
     (0, a.C0)(n)
-  }, [n, v]), 0 === m.length) ? null : (0, i.jsxs)("div", {
-    className: x.container,
+  }, [n, v]), 0 === x.length) ? null : (0, i.jsxs)("div", {
+    className: m.container,
     children: [(0, i.jsx)(o.X6, {
       variant: "eyebrow",
       children: u.NW.string(u.t.yM9Krq)
-    }), m.map((e, n) => (0, i.jsx)(d.Z, {
+    }), x.map((e, n) => (0, i.jsx)(d.Z, {
       boost: e
     }, "boost-activity-".concat(n)))]
   })

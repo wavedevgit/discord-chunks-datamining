@@ -10,23 +10,23 @@ var i, r = n(512722),
   c = n(13245),
   u = n(435064),
   d = n(786761),
-  p = n(695346),
-  h = n(163612),
-  f = n(314897),
-  m = n(592125),
-  g = n(375954),
-  O = n(292959),
-  v = n(649974),
-  y = n(158776),
-  E = n(699516),
-  b = n(944486),
-  j = n(885110),
-  x = n(246946),
-  I = n(594174),
-  S = n(979651),
-  N = n(974180),
-  C = n(70956),
-  Z = n(150097),
+  p = n(864060),
+  h = n(695346),
+  f = n(163612),
+  m = n(314897),
+  g = n(592125),
+  O = n(375954),
+  v = n(292959),
+  y = n(649974),
+  E = n(158776),
+  b = n(699516),
+  j = n(944486),
+  x = n(885110),
+  I = n(246946),
+  S = n(594174),
+  N = n(979651),
+  C = n(974180),
+  Z = n(70956),
   w = n(129724),
   P = n(145597),
   _ = n(486016),
@@ -81,10 +81,10 @@ function X(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let J = 5 * C.Z.Millis.SECOND,
-  q = 8 * C.Z.Millis.SECOND,
-  $ = 30 * C.Z.Millis.SECOND,
-  ee = 30 * C.Z.Millis.SECOND,
+let J = 5 * Z.Z.Millis.SECOND,
+  q = 8 * Z.Z.Millis.SECOND,
+  $ = 30 * Z.Z.Millis.SECOND,
+  ee = 30 * Z.Z.Millis.SECOND,
   et = Object.freeze({
     timestamp: 0,
     priority: L.Tu.NORMAL,
@@ -100,8 +100,8 @@ let J = 5 * C.Z.Millis.SECOND,
 function eo(e, t, n) {
   null == el[e] && (el[e] = {}), el[e][t] = n
 }
-let ea = 30 * C.Z.Millis.MINUTE,
-  es = 2 * C.Z.Millis.MINUTE;
+let ea = 30 * Z.Z.Millis.MINUTE,
+  es = 2 * Z.Z.Millis.MINUTE;
 
 function ec() {
   if (ei && null == en.find(e => e.status === H._1z.FOCUSED))
@@ -179,7 +179,7 @@ function eh(e, t) {
 
 function ef() {
   if (!(0, T.Yo)("OverlayNotificationStore") || k.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.NOW_PLAYING)) return !1;
-  let e = v.Z.usersPlaying,
+  let e = y.Z.usersPlaying,
     t = new Set,
     n = function() {
       let e = [];
@@ -189,17 +189,17 @@ function ef() {
     i = !1;
   for (let [n, r] of Object.entries(e)) i = i || function(e, t) {
     var n, i;
-    if (!E.Z.isFriend(e)) return !1;
+    if (!b.Z.isFriend(e)) return !1;
     let r = t.gameId;
     if (null == r) return !1;
-    let l = null === (n = v.Z.getNowPlaying(r)[e]) || void 0 === n ? void 0 : n.activity;
+    let l = null === (n = y.Z.getNowPlaying(r)[e]) || void 0 === n ? void 0 : n.activity;
     if (null == l || l.type !== H.IIU.PLAYING || ! function(e) {
         var t;
         let n = (null === (t = e.timestamps) || void 0 === t ? void 0 : t.start) != null ? e.timestamps.start : e.created_at;
         return null != n && Date.now() - n < es
       }(l)) return !1;
-    let o = b.Z.getVoiceChannelId(),
-      a = null === (i = S.Z.getDiscoverableVoiceStateForUser(e)) || void 0 === i ? void 0 : i.channelId;
+    let o = j.Z.getVoiceChannelId(),
+      a = null === (i = N.Z.getDiscoverableVoiceStateForUser(e)) || void 0 === i ? void 0 : i.channelId;
     if (null != o && null != a && o === a) return !1;
     let s = (0, R.pL)();
     return null != s && s.id === r && (! function(e, t) {
@@ -226,7 +226,7 @@ function ef() {
   for (let e of n) t.has(e) || r.add(e);
   let l = A.ZP.isOverlayV3EnabledForPID((0, P.getPID)()) || null != A.ZP.getFocusedPID();
   for (let e of r)(function(e) {
-    let t = y.Z.getActivities(e);
+    let t = E.Z.getActivities(e);
     if (0 === t.length) return !1;
     let n = (0, R.pL)();
     return null != n && null != t.find(e => e.application_id === n.id)
@@ -244,13 +244,13 @@ function em(e) {
     channelId: t,
     ringing: n
   } = e, i = ep(t);
-  if (!n.includes(f.default.getId())) return ed(i);
+  if (!n.includes(m.default.getId())) return ed(i);
   if (null != i) return !1;
-  let r = m.Z.getChannel(t);
-  if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !h.Z.getCurrentConfig({
+  let r = g.Z.getChannel(t);
+  if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !f.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
-    }).enabled || j.Z.getStatus() === H.Skl.DND || p.QZ.getSetting()) return !1;
+    }).enabled || x.Z.getStatus() === H.Skl.DND || h.QZ.getSetting()) return !1;
   let l = en.find(e => e.type === L.kL.TEXT && e.channelId === t && e.messageType === H.uaV.CALL);
   null != l && ed(l.id), eh((0, z.Z)(r), {
     priority: L.Tu.HIGH,
@@ -261,7 +261,7 @@ function em(e) {
 }
 class eg extends(i = a.ZP.Store) {
   initialize() {
-    this.waitFor(m.Z, I.default, v.Z, k.Z), this.syncWith([v.Z], ef)
+    this.waitFor(g.Z, S.default, y.Z, k.Z), this.syncWith([y.Z], ef)
   }
   getNotifications() {
     return en
@@ -310,24 +310,24 @@ let eO = new eg(s.Z, {
     let {
       channelId: o,
       message: a
-    } = e, s = m.Z.getChannel(o), c = I.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
+    } = e, s = g.Z.getChannel(o), c = S.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
     if (null == s || null == c) return !1;
     if ((null === (n = a.activity) || void 0 === n ? void 0 : n.type) === H.mFx.JOIN || (null === (i = a.activity) || void 0 === i ? void 0 : i.type) === H.mFx.JOIN_REQUEST) {
-      if (!(0, Z.eF)(a, o, !0, !0)) return !1;
+      if (!(0, p.eF)(a, o, !0, !0)) return !1;
       let e = function(e, t, n) {
         var i;
         let r, o;
-        if (l()(null != t.activity, "received null message activity"), n.id === f.default.getId()) return !1;
+        if (l()(null != t.activity, "received null message activity"), n.id === m.default.getId()) return !1;
         let a = (0, R.pL)(),
           s = null !== (i = null == a ? void 0 : a.altId) && void 0 !== i ? i : null == a ? void 0 : a.id;
         if (null == a || null == s) return !1;
         switch (t.activity.type) {
           case H.mFx.JOIN:
-            if (null == (r = y.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
+            if (null == (r = E.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
             o = (0, M.Z)(e, t, n, a, r);
             break;
           case H.mFx.JOIN_REQUEST:
-            if (null == (r = j.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
+            if (null == (r = x.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
             o = (0, G.Z)(e, n, a, r)
         }
         return null != o && (eh(o, {
@@ -339,10 +339,10 @@ let eO = new eg(s.Z, {
       }(s, a, c);
       if (!1 !== e) return e
     }
-    if (k.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.TEXT_CHAT) || x.Z.disableNotifications || !(0, Z.eF)(a, o)) return !1;
-    let u = !O.Z.isSoundDisabled(N.Ay),
-      p = null !== (r = g.Z.getMessage(o, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
-    eh((0, F.Z)(s, p, c, u), {
+    if (k.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(a, o)) return !1;
+    let u = !v.Z.isSoundDisabled(C.Ay),
+      h = null !== (r = O.Z.getMessage(o, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
+    eh((0, F.Z)(s, h, c, u), {
       type: L.kL.TEXT,
       channelId: s.id,
       expirationExternallyManaged: !0,
@@ -375,11 +375,11 @@ let eO = new eg(s.Z, {
       guildId: n,
       ringing: i
     } = e;
-    if (!h.Z.getCurrentConfig({
+    if (!f.Z.getCurrentConfig({
         guildId: n,
         location: "OverlayV3StopRinging"
       }).enabled) return !1;
-    i.includes(f.default.getId()) && ed(ep(t))
+    i.includes(m.default.getId()) && ed(ep(t))
   },
   ACTIVITY_USER_ACTION: function(e) {
     let t, {

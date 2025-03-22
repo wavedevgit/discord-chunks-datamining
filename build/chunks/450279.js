@@ -88,7 +88,8 @@ function u(e, t, n, i, a) {
       sinkWantAsInt: (0, r.F)(n, e.ssrc),
       codec: l(t),
       bytesSent: e.bytesSent,
-      packetsSent: e.packetsSent
+      packetsSent: e.packetsSent,
+      bitrateTarget: e.targetBitrate
     };
     if ("audio" === e.kind) g.push(s(o({}, i), {
       type: "audio"
@@ -104,7 +105,6 @@ function u(e, t, n, i, a) {
         firCount: e.firCount,
         nackCount: e.nackCount,
         pliCount: e.pliCount,
-        bitrateTarget: e.targetBitrate,
         qpSum: e.qpSum,
         averageEncodeTime: null == e.framesEncoded || c(e.totalEncodeTime) ? void 0 : (1e3 * e.totalEncodeTime / e.framesEncoded).toFixed(1),
         resolution: t,

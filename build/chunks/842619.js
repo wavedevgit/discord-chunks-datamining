@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => g
 });
-var i, l, a, r = n(442837),
-  o = n(570140),
+var i, l, a, o = n(442837),
+  r = n(570140),
   u = n(818083),
   s = n(314897);
 let d = {},
@@ -22,7 +22,7 @@ let d = {},
       }
     }]
   });
-class f extends(a = r.ZP.Store) {
+class f extends(a = o.ZP.Store) {
   areSlayerNotificationsSuppressed() {
     if (c.getCurrentConfig({
         location: "Store"
@@ -40,7 +40,7 @@ l = "RpcNotificationSettingsStore", (i = "displayName") in f ? Object.defineProp
   configurable: !0,
   writable: !0
 }) : f[i] = l;
-let g = new f(o.Z, {
+let g = new f(r.Z, {
   RPC_APP_DISCONNECTED: function(e) {
     delete d[e.socketId]
   },

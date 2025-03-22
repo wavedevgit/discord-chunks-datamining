@@ -1,13 +1,15 @@
 /** Chunk was on 18475 **/
 n.d(t, {
-  q: () => s
+  q: () => c,
+  r: () => s
 });
 var r = n(200651),
   i = n(772848),
   o = n(481060),
   l = n(82856);
 let a = "orb-checkout-payment-modal-key",
-  s = e => {
+  s = () => (0, o.VXO)(a),
+  c = e => {
     var {
       onCloseCallback: t
     } = e, s = function(e, t) {

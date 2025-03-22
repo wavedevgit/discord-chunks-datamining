@@ -12,8 +12,8 @@ var r = t(793030),
   c = t(413335),
   d = t(430824),
   u = t(63063),
-  x = t(317169),
-  m = t(639660),
+  m = t(317169),
+  x = t(639660),
   v = t(767218),
   p = t(981631),
   _ = t(367123),
@@ -27,7 +27,7 @@ function g(e) {
     available: g,
     spent: h,
     total: Z
-  } = (0, x.Z)(n);
+  } = (0, m.Z)(n);
   if (null != t) return (0, i.jsxs)("div", {
     className: j.container,
     children: [(0, i.jsxs)("div", {
@@ -54,7 +54,7 @@ function g(e) {
         count: Z,
         type: v.b.TOTAL
       })]
-    }), (0, i.jsx)(m.Z, {
+    }), (0, i.jsx)(x.Z, {
       guildId: n
     }), (0, i.jsx)(a.Z, {
       className: j.boostButton,

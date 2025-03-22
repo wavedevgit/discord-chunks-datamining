@@ -9,6 +9,7 @@ n.d(t, {
   JQ: () => N,
   Jw: () => R,
   Mr: () => I,
+  VX: () => x,
   Vn: () => b,
   ZD: () => y,
   f9: () => C,
@@ -272,4 +273,8 @@ function D(e, t) {
 
 function L(e, t) {
   return D(v.getState(), e, t)
+}
+
+function x(e, t) {
+  return D(v(), e, t)
 }
