@@ -2,9 +2,9 @@
 n.d(t, {
   $R: () => X,
   A0: () => et,
-  GU: () => J,
+  GU: () => K,
   H8: () => q,
-  HI: () => K,
+  HI: () => J,
   HW: () => F,
   Ib: () => es,
   KB: () => eu,
@@ -44,13 +44,13 @@ var r, a, l = n(192379),
   C = n(981613),
   T = n(762399),
   S = n(232112),
-  O = n(53796),
-  N = n(723757),
+  N = n(53796),
+  O = n(723757),
   k = n(375924),
   E = n(596136),
   w = n(341901),
-  P = n(856308),
-  I = n(665352),
+  I = n(856308),
+  P = n(665352),
   Z = n(394900),
   R = n(661105),
   L = n(525169),
@@ -110,15 +110,15 @@ let F = {
     OKLCH: C.Z,
     OKLab: T.Z,
     P3: S.Z,
-    ProPhoto: O.Z,
-    REC_2020: N.Z,
+    ProPhoto: N.Z,
+    REC_2020: O.Z,
     REC_2100_HLG: k.Z,
     REC_2100_PQ: E.Z,
     XYZ_D50: w.Z,
-    XYZ_D65: P.Z
+    XYZ_D65: I.Z
   },
   G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
-Object.values(F).forEach(e => I.Z.register(e));
+Object.values(F).forEach(e => P.Z.register(e));
 let {
   SemanticColors: W
 } = A.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -158,13 +158,13 @@ function Y(e, t, n, r, a) {
   }
 }
 
-function J(e) {
+function K(e) {
   return M(z({}, e), {
     highlight: !e.highlight
   })
 }
 
-function K(e) {
+function J(e) {
   return (0, Z.Z)((0, R.Z)(e, i.Z), {
     format: "hex"
   })

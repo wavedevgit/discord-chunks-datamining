@@ -114,7 +114,7 @@ function g(e) {
             className: u.soundAddIcon
           }), (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
-            color: m ? "header-primary" : "text-muted",
+            color: m ? "currentColor" : "text-muted",
             children: c.NW.string(c.t["8Fu/S0"])
           })]
         })

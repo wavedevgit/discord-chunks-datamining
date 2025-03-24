@@ -129,14 +129,14 @@ let O = function(e) {
     }), (0, r.jsxs)("div", {
       className: d.topPerksCards,
       children: [(0, r.jsx)(y, {
-        description: c.NW.string(c.t.HTvLGh),
-        heading: c.NW.string(c.t.IpRQw8),
-        imgSrc: p,
-        label: s ? c.NW.string(u.Z.na6fmJ) : void 0
-      }), (0, r.jsx)(y, {
         description: c.NW.string(c.t.wOYbTk),
         heading: c.NW.string(c.t.G6jZo6),
         imgSrc: n ? _ : f,
+        label: s ? c.NW.string(u.Z.na6fmJ) : void 0
+      }), (0, r.jsx)(y, {
+        description: c.NW.string(c.t.HTvLGh),
+        heading: c.NW.string(c.t.IpRQw8),
+        imgSrc: p,
         label: s ? c.NW.string(u.Z.dyNT9v) : void 0
       }), (0, r.jsx)(y, {
         description: c.NW.string(c.t.yCjoUF),

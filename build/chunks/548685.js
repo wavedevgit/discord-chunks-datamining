@@ -33,7 +33,7 @@ let _ = e => {
       className: C.blockHeader,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        children: b.NW.string(b.t.ivaAAw)
+        children: v === p.AW.ORBS ? b.NW.string(b.t.dFgeub) : b.NW.string(b.t.ivaAAw)
       }), v === p.AW.HOME && (0, r.jsx)(i.zxk, {
         color: i.Ttl.PRIMARY,
         look: i.iLD.FILLED,

@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(594174),
   b = n(630388),
   v = n(74538),
-  y = n(833803),
-  x = n(566006),
+  x = n(833803),
+  y = n(566006),
   E = n(981631),
   O = n(185923),
   N = n(474936),
@@ -60,7 +60,7 @@ class P extends i.Component {
       tabIndex: l = 0
     } = this.props, {
       isReactionPickerActive: s
-    } = this.state, c = t.state === E.yb.SENDING, m = e === x.O.BURST;
+    } = this.state, c = t.state === E.yb.SENDING, m = e === y.O.BURST;
     if (c || (0, b.yE)(t.flags, E.iLy.EPHEMERAL)) return null;
     let f = _.default.getCurrentUser(),
       h = (0, v.I5)(f),
@@ -71,7 +71,7 @@ class P extends i.Component {
     let N = a ? I : C,
       {
         canShowImprovedReactionButton: S
-      } = y.Z.getCurrentConfig({
+      } = x.Z.getCurrentConfig({
         location: "ButtonAddReaction"
       }, {
         autoTrackExposure: !this.props.isForumToolbar
@@ -148,7 +148,7 @@ class P extends i.Component {
       } = this.props;
       e.stopPropagation();
       let r = _.default.getCurrentUser();
-      t !== x.O.BURST || (0, v.I5)(r) || (0, m.m)({
+      t !== y.O.BURST || (0, v.I5)(r) || (0, m.m)({
         analytics: {
           type: N.cd.BURST_REACTION_UPSELL,
           page: null != n.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
@@ -165,7 +165,7 @@ class P extends i.Component {
         message: a
       } = this.props, o = T({
         openPopoutType: "message_reaction_emoji_picker"
-      }, n === x.O.BURST && {
+      }, n === y.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
         page: null != i.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
         section: (0, h.s4)(i),

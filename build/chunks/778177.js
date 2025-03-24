@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(542051),
   b = n(349033),
   v = n(999650),
-  y = n(933557),
-  x = n(471445),
+  x = n(933557),
+  y = n(471445),
   E = n(592125),
   O = n(271383),
   N = n(699516),
@@ -130,16 +130,16 @@ let B = p()("2015-05-15").local(),
       children: a
     });
     let o = E.Z.getChannel(i.parent_id),
-      l = (0, x.KS)(i);
+      l = (0, y.KS)(i);
     return (0, r.jsxs)("div", {
       className: L.resultChannel,
       children: [null != l ? (0, r.jsx)(l, {
         className: L.searchResultChannelIcon
       }) : null, (0, r.jsx)("strong", {
-        children: (0, y.F6)(i, T.default, N.Z)
+        children: (0, x.F6)(i, T.default, N.Z)
       }), null != o ? (0, r.jsx)("span", {
         className: L.searchResultChannelCategory,
-        children: (0, y.F6)(o, T.default, N.Z)
+        children: (0, x.F6)(o, T.default, N.Z)
       }) : null]
     })
   },
@@ -159,10 +159,10 @@ let B = p()("2015-05-15").local(),
       renderResult: _
     } = e;
     if (g) {
-      var b, y;
+      var b, x;
       t = (0, r.jsx)("span", {
         className: L.filter,
-        children: null !== (y = null === (b = v.ZP[s]) || void 0 === b ? void 0 : b.key) && void 0 !== y ? y : "addme:"
+        children: null !== (x = null === (b = v.ZP[s]) || void 0 === b ? void 0 : b.key) && void 0 !== x ? x : "addme:"
       })
     }
     return n = null != _ ? _(a, s, l) : (0, r.jsx)("strong", {

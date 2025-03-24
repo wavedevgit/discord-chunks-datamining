@@ -25,13 +25,13 @@ var r = n(200651),
   C = n(550532),
   T = n(71585),
   S = n(146282),
-  O = n(780106),
-  N = n(650613),
+  N = n(780106),
+  O = n(650613),
   k = n(789086),
   E = n(206583),
   w = n(866235),
-  P = n(710662);
-let I = [{
+  I = n(710662);
+let P = [{
   key: "type",
   cellClassName: i()(w.cell, w.cellType),
   render(e) {
@@ -131,14 +131,14 @@ function R() {
     z = (0, b.Z)(B).filter(y.lm),
     M = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
-    className: P.panel,
+    className: I.panel,
     children: (0, r.jsxs)(x.zJl, {
       className: w.content,
       children: [(0, r.jsxs)(x.hjN, {
         children: [(0, r.jsx)(x.vwX, {
           children: "Inventory"
         }), o.length > 0 && (0, r.jsx)(_.Z, {
-          columns: I,
+          columns: P,
           data: o
         }), (0, r.jsx)(x.LZC, {
           size: 8
@@ -196,7 +196,7 @@ function R() {
           },
           children: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping"
         })]
-      }), !1, (0, r.jsx)(N.Z, {}), (0, r.jsxs)(x.hjN, {
+      }), !1, (0, r.jsx)(O.Z, {}), (0, r.jsxs)(x.hjN, {
         children: [(0, r.jsx)(x.vwX, {
           children: "Game Profile"
         }), (0, r.jsx)(x.oil, {
@@ -223,7 +223,7 @@ function R() {
           variant: "text-md/normal",
           children: "Force show game:"
         }), (0, r.jsx)(x.PhF, {
-          options: O.h.map(e => ({
+          options: N.h.map(e => ({
             label: e,
             value: e
           })),

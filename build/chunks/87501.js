@@ -14,6 +14,5 @@ e.exports = {
   badgeDiamondGlow: "badgeDiamondGlow__1f2ac",
   badgeEmeraldGlow: "badgeEmeraldGlow__1f2ac",
   badgeRubyGlow: "badgeRubyGlow__1f2ac",
-  badgeFireGlow: "badgeFireGlow__1f2ac",
   badgeOpalGlow: "badgeOpalGlow__1f2ac"
 }

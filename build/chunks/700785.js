@@ -150,6 +150,7 @@ function L(e) {
     guildMemberAvatar: null,
     roles: E.default.keys(n),
     colorString: null,
+    colorStrings: null,
     hoistRoleId: null,
     premiumSince: null,
     isPending: !1,

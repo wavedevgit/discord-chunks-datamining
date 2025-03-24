@@ -45,7 +45,7 @@ function m(e) {
       } : t !== p && t - p > 0 ? {
         trailing: (0, r.jsx)(s.mAB, {
           count: t - p,
-          color: c.Z.BACKGROUND_MODIFIER_ACCENT
+          color: c.Z.BACKGROUND_ACCENT
         }),
         showUnread: !0
       } : {

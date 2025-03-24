@@ -61,7 +61,7 @@ function g(e) {
   let {
     subscription: g,
     onUpdated: v
-  } = e, [j, y] = a.useState(!1), [C, T] = a.useState(!1), [S, O] = a.useState(null), N = e => (null == e && (e = g.status), e in f) ? f[e] : "Unknown status ".concat(e), k = e => {
+  } = e, [j, y] = a.useState(!1), [C, T] = a.useState(!1), [S, N] = a.useState(null), O = e => (null == e && (e = g.status), e in f) ? f[e] : "Unknown status ".concat(e), k = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, E = async e => {
@@ -111,12 +111,12 @@ function g(e) {
         rejectWithError: !1
       })
     } catch (e) {
-      O(e.body.message)
+      N(e.body.message)
     }
     v()
-  }, P = (null === (t = h.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === h.p9.TIER_0, I = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != I ? new Date(I).toISOString().substring(0, 10) : "";
+  }, I = (null === (t = h.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === h.p9.TIER_0, P = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != P ? new Date(P).toISOString().substring(0, 10) : "";
   return (0, r.jsxs)("div", {
-    className: i()(b.card, P ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
+    className: i()(b.card, I ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
     children: [(0, r.jsxs)(s.Text, {
       variant: "text-md/normal",
       children: ["Type: ", (() => {
@@ -134,7 +134,7 @@ function g(e) {
         marginBottom: "15px"
       },
       variant: "text-md/normal",
-      children: ["Status: ", N()]
+      children: ["Status: ", O()]
     }), null != g.metadata && (0, r.jsxs)("div", {
       className: p.collapsablePane,
       children: [(0, r.jsxs)(s.P3F, {
@@ -191,7 +191,7 @@ function g(e) {
           tag: s.RB0.H3,
           className: p.formSection,
           children: (0, r.jsx)(s.PhF, {
-            serialize: e => N(e),
+            serialize: e => O(e),
             isSelected: e => e === g.status,
             options: _,
             select: e => E({
@@ -209,7 +209,7 @@ function g(e) {
             children: "Renew Subscription"
           }), null !== S && (0, r.jsx)(s.kzN, {
             className: p.error,
-            onDismiss: () => O(null),
+            onDismiss: () => N(null),
             children: S
           })]
         }), (0, r.jsx)(s.hjN, {

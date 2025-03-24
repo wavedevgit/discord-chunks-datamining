@@ -48,11 +48,11 @@ let u = e => {
     let t = (0, s.z)(l.Fr.CATEGORY_BANNER_STATIC),
       n = (0, s.z)(l.Fr.CATEGORY_BANNER_ANIMATED);
     return r.useMemo(() => {
-      var r, i, o, a;
-      let s = (0, c.ZS)(e.skuId);
+      var r, i, o, a, s, l;
+      let u = (0, c.ZS)(e.skuId);
       return {
-        categoryBannerStatic: null !== (o = null != t ? t : null === (r = e.bannerAsset) || void 0 === r ? void 0 : r.static) && void 0 !== o ? o : e.banner,
-        categoryBannerAnimated: null !== (a = null != n ? n : null == s ? void 0 : s.animatedBanner) && void 0 !== a ? a : null === (i = e.bannerAsset) || void 0 === i ? void 0 : i.animated
+        categoryBannerStatic: null !== (a = null !== (o = null != t ? t : n) && void 0 !== o ? o : null === (r = e.bannerAsset) || void 0 === r ? void 0 : r.static) && void 0 !== a ? a : e.banner,
+        categoryBannerAnimated: null !== (l = null !== (s = null != n ? n : t) && void 0 !== s ? s : null == u ? void 0 : u.animatedBanner) && void 0 !== l ? l : null === (i = e.bannerAsset) || void 0 === i ? void 0 : i.animated
       }
     }, [t, n, e])
   },

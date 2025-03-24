@@ -11,10 +11,10 @@ var n = a(200651),
   c = a(608863),
   d = a(66037),
   u = a(643103),
-  p = a(34211),
-  _ = a(231338),
-  h = a(431138),
-  m = a(222483);
+  _ = a(34211),
+  p = a(231338),
+  m = a(431138),
+  h = a(222483);
 
 function N(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,7 +24,7 @@ function N(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-let I = _.j_.MAIN_NAVIGATION_MENU;
+let I = p.j_.MAIN_NAVIGATION_MENU;
 class g extends s.PureComponent {
   componentDidMount() {
     window.addEventListener("keydown", this.handleKeyDown)
@@ -44,31 +44,31 @@ class g extends s.PureComponent {
       menuOpen: o
     } = this.state;
     return (0, n.jsx)("header", {
-      className: l()(m.header, e),
+      className: l()(h.header, e),
       children: (0, n.jsxs)("nav", {
-        className: m.headerInner,
+        className: h.headerInner,
         children: [(0, n.jsx)(t, {
           tag: "div",
           eventName: I,
-          className: m.headerLogo,
+          className: h.headerLogo,
           data: {
             linkClicked: "logo"
           },
           children: (0, n.jsx)(d.Z, {
             avoidRouter: s,
-            className: m.logoWrapper,
-            to: _.am.INDEX,
-            from: _.j_.MAIN_NAVIGATION_MENU,
+            className: h.logoWrapper,
+            to: p.am.INDEX,
+            from: p.j_.MAIN_NAVIGATION_MENU,
             children: (0, n.jsx)("img", {
-              className: m.logo,
-              src: h.r.ASSET_LOGO_DISCORD_SVG,
+              className: h.logo,
+              src: m.r.ASSET_LOGO_DISCORD_SVG,
               alt: "Discord",
               itemProp: "logo"
             })
           })
         }), (0, n.jsx)(t, {
           tag: "div",
-          className: m.hamburgerButton,
+          className: h.hamburgerButton,
           eventName: I,
           data: {
             linkClicked: "mobile-menu"
@@ -82,11 +82,11 @@ class g extends s.PureComponent {
             onClick: this.toggleMenu
           })
         }), (0, n.jsxs)("ul", {
-          className: o ? m.headerNavOpen : m.headerNav,
-          children: [(0, n.jsx)(p.o, {
+          className: o ? h.headerNavOpen : h.headerNav,
+          children: [(0, n.jsx)(_.o, {
             avoidRouter: s,
             TrackClick: t,
-            styles: m,
+            styles: h,
             isMobile: !0,
             isVisible: o
           }), (0, n.jsx)(u.p, {

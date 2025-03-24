@@ -1,6 +1,6 @@
 /** Chunk was on 87626 **/
 a.d(t, {
-  o: () => h
+  o: () => m
 }), a(47120);
 var n, s = a(200651),
   r = a(192379),
@@ -18,8 +18,8 @@ function u(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-let p = c.j_.MAIN_NAVIGATION_MENU,
-  _ = e => [{
+let _ = c.j_.MAIN_NAVIGATION_MENU,
+  p = e => [{
     route: c.am.DOWNLOAD,
     linkClicked: "download",
     title: d.Z.Messages.NAVIGATION_DOWNLOAD
@@ -96,7 +96,7 @@ let p = c.j_.MAIN_NAVIGATION_MENU,
       external: !0
     }]
   }];
-class h extends(n = r.PureComponent) {
+class m extends(n = r.PureComponent) {
   render() {
     let e = (0, l.fQ)(this.context.router),
       {
@@ -107,12 +107,12 @@ class h extends(n = r.PureComponent) {
         avoidRouter: u
       } = this.props,
       {
-        sectionShown: h
+        sectionShown: m
       } = this.state;
-    return _(null != d.Z ? d.Z.getLocale().toLowerCase() : "").map(l => null != l.links ? (0, s.jsx)(o.Z, {
+    return p(null != d.Z ? d.Z.getLocale().toLowerCase() : "").map(l => null != l.links ? (0, s.jsx)(o.Z, {
       title: l.title,
       links: l.links,
-      isOpen: h === l.title,
+      isOpen: m === l.title,
       isMobile: t,
       avoidRouter: u,
       TrackClick: r,
@@ -123,7 +123,7 @@ class h extends(n = r.PureComponent) {
       role: "none",
       children: (0, s.jsx)(r, {
         className: n.mainNavLink,
-        eventName: p,
+        eventName: _,
         data: l.linkClicked ? {
           linkClicked: l.linkClicked
         } : {},
@@ -143,7 +143,7 @@ class h extends(n = r.PureComponent) {
         children: (0, s.jsx)(r, {
           tag: "span",
           className: n.mainNavLink,
-          eventName: p,
+          eventName: _,
           data: {
             linkClicked: l.linkClicked
           },
@@ -172,7 +172,7 @@ class h extends(n = r.PureComponent) {
     })
   }
 }
-u(h, "defaultProps", {
+u(m, "defaultProps", {
   isMobile: !1,
   isVisible: !0
 })

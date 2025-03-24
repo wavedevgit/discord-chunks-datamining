@@ -11,15 +11,15 @@ var n = a(200651),
   c = a(153867),
   d = a(706454),
   u = a(626135),
-  p = a(981631),
-  _ = a(388032),
-  h = a(646794);
-class m extends s.Component {
+  _ = a(981631),
+  p = a(388032),
+  m = a(646794);
+class h extends s.Component {
   shouldScrollToTop(e) {
     let {
       location: t
     } = e;
-    return t.pathname.startsWith(p.Z5c.APPLICATION_STORE_LISTING_SKU("")) || t.pathname.startsWith(p.Z5c.APPLICATION_STORE_LISTING_APPLICATION(""))
+    return t.pathname.startsWith(_.Z5c.APPLICATION_STORE_LISTING_SKU("")) || t.pathname.startsWith(_.Z5c.APPLICATION_STORE_LISTING_APPLICATION(""))
   }
   render() {
     let {
@@ -37,18 +37,18 @@ class m extends s.Component {
           locale: o,
           authRedirectTo: e.pathname,
           track: u.default.track,
-          className: h.marketingHeader,
+          className: m.marketingHeader,
           onChangeLocale: this.handleHeaderLocaleChange,
-          mobileClassName: h.marketingHeader,
-          openNavAriaLabel: _.NW.string(_.t.Fs9k3N),
-          hideNavAriaLabel: _.NW.string(_.t.AbfyHB),
-          skipToContentLabel: _.NW.string(_.t["18gavL"])
+          mobileClassName: m.marketingHeader,
+          openNavAriaLabel: p.NW.string(p.t.Fs9k3N),
+          hideNavAriaLabel: p.NW.string(p.t.AbfyHB),
+          skipToContentLabel: p.NW.string(p.t["18gavL"])
         }), a(t, i), (0, n.jsx)(r.$, {
           locale: o,
           authRedirectTo: e.pathname,
           avoidRouter: !0,
           track: u.default.track,
-          className: h.marketingFooter
+          className: m.marketingFooter
         })]
       })
     })
@@ -67,4 +67,4 @@ class m extends s.Component {
 }
 let N = o.ZP.connectStores([d.default], () => ({
   locale: d.default.locale
-}))(m)
+}))(h)

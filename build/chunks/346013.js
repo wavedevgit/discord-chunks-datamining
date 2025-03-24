@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(1585),
   b = n(841762),
   v = n(336197),
-  y = n(406432),
-  x = n(348238),
+  x = n(406432),
+  y = n(348238),
   E = n(38267),
   O = n(184301),
   N = n(347475),
@@ -78,7 +78,7 @@ function U(e) {
     channel: F
   } = e, B = (0, w.J)(l, U), {
     setPopout: G
-  } = (0, E.Z)(U.id, k.d$), H = (0, x.qo)(U, F, G, !0), V = j.QK.useSetting(), z = (0, P.n)(), [K, Y] = i.useState(!1), [X, q] = i.useState((null == B ? void 0 : B.coverImage) == null), Q = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), J = (0, d.e7)([C.ZP, I.default], () => {
+  } = (0, E.Z)(U.id, k.d$), H = (0, y.qo)(U, F, G, !0), V = j.QK.useSetting(), z = (0, P.n)(), [K, Y] = i.useState(!1), [X, q] = i.useState((null == B ? void 0 : B.coverImage) == null), Q = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), J = (0, d.e7)([C.ZP, I.default], () => {
     var e;
     return C.ZP.isMember(null == B ? void 0 : B.guildId, null === (e = I.default.getCurrentUser()) || void 0 === e ? void 0 : e.id)
   }, [B]), $ = (0, d.e7)([C.ZP], () => (null == B ? void 0 : B.authorId) != null ? C.ZP.getMember(B.guildId, B.authorId) : null), ee = (0, g.Z)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == B ? void 0 : null === (t = B.user) || void 0 === t ? void 0 : t.avatarDecoration), [et, en] = i.useMemo(() => {
@@ -122,7 +122,7 @@ function U(e) {
       !er.enabled && ea(e => !e)
     },
     ef = B.coverImage,
-    eh = null != ef && (0, y.d$)(ef);
+    eh = null != ef && (0, x.d$)(ef);
   return (0, r.jsxs)("div", {
     className: D.postPreviewContainer,
     children: [(0, r.jsxs)("div", {

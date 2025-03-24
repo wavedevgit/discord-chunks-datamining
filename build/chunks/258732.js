@@ -1,12 +1,13 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(544891),
-  a = n(981631);
-let l = {
+  i = n(981631);
+let o = {
   updatePrivateChannelRecipientFlags: (e, t) => r.tn.patch({
-    url: a.ANM.CHANNEL_RECIPIENT_ME(e),
+    url: i.ANM.CHANNEL_RECIPIENT_ME(e),
     body: {
       flags: t
     },

@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(156012),
   b = n(74365),
   v = n(618857),
-  y = n(695346),
-  x = n(23750),
+  x = n(695346),
+  y = n(23750),
   E = n(592125),
   O = n(594174),
   N = n(823379),
@@ -169,7 +169,7 @@ let R = i.memo(function(e) {
     scheduledMessage: t,
     channel: n,
     isPendingDeletion: a
-  } = e, l = new x.ZP({
+  } = e, l = new y.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
     author: O.default.getUser(t.userId),
@@ -233,7 +233,7 @@ let R = i.memo(function(e) {
           message: l,
           channel: n,
           className: P.message,
-          compact: y.jU.getSetting(),
+          compact: x.jU.getSetting(),
           animateAvatar: !1,
           focusProps: A
         }, l.id), (0, r.jsx)(p.P3F, {

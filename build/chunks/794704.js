@@ -824,7 +824,12 @@ function eT(e) {
       hoistRoleId: null,
       premiumSince: null,
       joinedAt: new Date().toISOString(),
-      colorString: "#000000"
+      colorString: "#000000",
+      colorStrings: {
+        primaryColor: "#000000",
+        secondaryColor: void 0,
+        tertiaryColor: void 0
+      }
     },
     nick: e,
     comparator: e,

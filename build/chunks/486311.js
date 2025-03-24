@@ -88,7 +88,8 @@ let y = {
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.Z, {
             size: "md",
-            className: e
+            className: e,
+            color: "currentColor"
           }),
           background: (null == _ ? void 0 : _.popout) != null && (0, r.jsx)(a.kci, {
             className: b.lottie,

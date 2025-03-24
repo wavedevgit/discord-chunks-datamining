@@ -1,5 +1,8 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  V: () => a
+  V: () => r
 });
-var r, a = ((r = {})[r.DISMISSED_IN_GAME_MESSAGE_NUX = 1] = "DISMISSED_IN_GAME_MESSAGE_NUX", r[r.DISMISSED_CURRENT_CHAT_WALLPAPER = 2] = "DISMISSED_CURRENT_CHAT_WALLPAPER", r)
+var r = function(e) {
+  return e[e.DISMISSED_IN_GAME_MESSAGE_NUX = 1] = "DISMISSED_IN_GAME_MESSAGE_NUX", e[e.DISMISSED_CURRENT_CHAT_WALLPAPER = 2] = "DISMISSED_CURRENT_CHAT_WALLPAPER", e
+}({})

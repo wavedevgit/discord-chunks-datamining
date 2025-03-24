@@ -8,10 +8,10 @@ var n, s, r, l = a(200651),
   c = a.n(o),
   d = a(948789),
   u = a(982905),
-  p = a(66037),
-  _ = a(231338),
-  h = a(28577);
-let m = _.j_.MAIN_NAVIGATION_MENU;
+  _ = a(66037),
+  p = a(231338),
+  m = a(28577);
+let h = p.j_.MAIN_NAVIGATION_MENU;
 class N extends(r = i.PureComponent) {
   render() {
     let e = (0, d.fQ)(this.context.router),
@@ -24,34 +24,34 @@ class N extends(r = i.PureComponent) {
         "aria-label": i
       } = this.props,
       o = a.map((t, a) => t.divider ? (0, l.jsx)("hr", {
-        className: h.divider
+        className: m.divider
       }, "divider-".concat(a)) : t.external ? (0, l.jsx)("li", {
-        className: h.moreListItemInactive,
+        className: m.moreListItemInactive,
         children: (0, l.jsx)(n, {
-          className: h.moreListLink,
-          eventName: m,
+          className: m.moreListLink,
+          eventName: h,
           data: {
             linkClicked: t.linkClicked
           },
           href: t.route,
           rel: "me",
           children: (0, l.jsx)("span", {
-            className: h.moreListLinkCopy,
+            className: m.moreListLinkCopy,
             children: t.title
           })
         })
       }, t.route) : (0, l.jsx)("li", {
-        className: (0, u.l)(h, "moreListItem", e(t.route) ? "Active" : "Inactive"),
-        children: (0, l.jsx)(p.Z, {
+        className: (0, u.l)(m, "moreListItem", e(t.route) ? "Active" : "Inactive"),
+        children: (0, l.jsx)(_.Z, {
           avoidRouter: s,
-          className: h.moreListLink,
+          className: m.moreListLink,
           to: t.route,
-          from: _.j_.MAIN_NAVIGATION_MENU,
+          from: p.j_.MAIN_NAVIGATION_MENU,
           role: "menuitem",
           children: (0, l.jsx)(n, {
             tag: "span",
-            className: h.moreListLinkCopy,
-            eventName: m,
+            className: m.moreListLinkCopy,
+            eventName: h,
             data: {
               linkClicked: t.linkClicked
             },
@@ -61,7 +61,7 @@ class N extends(r = i.PureComponent) {
       }, t.route));
     return (0, l.jsx)("ul", {
       id: r,
-      className: (0, u.l)(h, "moreList", t ? "Open" : "Closed"),
+      className: (0, u.l)(m, "moreList", t ? "Open" : "Closed"),
       "aria-label": i,
       children: o
     })

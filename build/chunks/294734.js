@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(906467),
   b = n(430824),
   v = n(496675),
-  y = n(699516),
-  x = n(594174),
+  x = n(699516),
+  y = n(594174),
   E = n(100604),
   O = n(694784),
   N = n(39154),
@@ -49,7 +49,7 @@ function T(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, p = i.useMemo(() => new E.r(t, n, d), [t, n, d]), m = (0, o.e7)([g.Z, x.default, y.Z, v.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, x.default, y.Z, v.Z, b.Z, u.Z).footerInfo, [p], l.Z), f = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new E.r(t, n, d), [t, n, d]), m = (0, o.e7)([g.Z, y.default, x.Z, v.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, y.default, x.Z, v.Z, b.Z, u.Z).footerInfo, [p], l.Z), f = i.useCallback(() => {
     (0, O.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
@@ -78,8 +78,8 @@ function P(e) {
     snapshot: a,
     index: l
   } = e, s = i.useMemo(() => (0, N.Z)(n, a), [n, a]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, o.e7)([_.Z], () => _.Z.isDeveloper), v = (0, d.A)((null !== (t = s.editedTimestamp) && void 0 !== t ? t : s.timestamp).valueOf()), {
-    content: y,
-    hasSpoilerEmbeds: x
+    content: x,
+    hasSpoilerEmbeds: y
   } = (0, m.Z)(s, {
     hideSimpleEmbedContent: c && u,
     isInteracting: !1,
@@ -98,14 +98,14 @@ function P(e) {
       className: I.content,
       children: [(0, r.jsx)(S, {}), (0, r.jsx)(p.ZP, {
         message: s,
-        content: y
+        content: x
       }), (0, f.Z)({
         channelMessageProps: {
           message: s,
           channel: E,
           compact: O
         },
-        hasSpoilerEmbeds: x,
+        hasSpoilerEmbeds: y,
         isInteracting: !1,
         isMessageSnapshot: !0,
         renderThreadAccessory: !1

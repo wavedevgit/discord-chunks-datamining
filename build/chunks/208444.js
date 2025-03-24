@@ -23,16 +23,16 @@ function v(e, t) {
   let {
     isDiscoverable: n,
     customInstallUrl: v,
-    installParams: y,
-    integrationTypesConfig: x
+    installParams: x,
+    integrationTypesConfig: y
   } = e, E = (0, f.Eb)({
     customInstallUrl: v,
-    installParams: y,
-    integrationTypesConfig: x
+    installParams: x,
+    integrationTypesConfig: y
   }), O = (0, a.e7)([m.Z], () => {
     var e;
     return null !== (e = m.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), N = (0, l.PL)(!0, !1), j = (0, l.LD)(O, !1), C = (0, f.TK)(e.id, N), I = (0, f.TK)(e.id, j), S = E && null != x && i.Y.USER_INSTALL in x, T = (0, a.e7)([u.Z, d.Z, p.Z], () => {
+  }), N = (0, l.PL)(!0, !1), j = (0, l.LD)(O, !1), C = (0, f.TK)(e.id, N), I = (0, f.TK)(e.id, j), S = E && null != y && i.Y.USER_INSTALL in y, T = (0, a.e7)([u.Z, d.Z, p.Z], () => {
     let e = u.Z.getChannel(p.Z.getChannelId());
     return null != e && (e.isPrivate() || d.Z.can(g.Plq.SEND_MESSAGES, e))
   }, []), P = (C || I || S) && T, A = n || P;
@@ -60,11 +60,11 @@ function v(e, t) {
       null == t || t(h.j_.ADD_APP), (0, f.LO)({
         applicationId: e.id,
         customInstallUrl: v,
-        installParams: y,
-        integrationTypesConfig: x,
+        installParams: x,
+        integrationTypesConfig: y,
         guildId: O,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, P, A, v, y, x, E, t, O])
+  } : void 0, [e.id, P, A, v, x, y, E, t, O])
 }

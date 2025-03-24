@@ -20,7 +20,7 @@ var r = n(200651),
   x = n(607070),
   N = n(100527),
   b = n(906732),
-  _ = n(497578),
+  _ = n(170046),
   E = n(333867),
   j = n(197115),
   C = n(876917),
@@ -549,7 +549,7 @@ let em = e => {
             className: eo.limitedTimeBadge,
             display: "card"
           }), eG || eV || !eZ ? e6 ? (0, r.jsx)(h.IGR, {
-            text: el.NW.string(el.t.Q2K5pa),
+            text: el.NW.string(el.t["KUYR+P"]),
             disableColor: !0,
             className: eo.badge
           }) : ew ? (0, r.jsx)(h.IGR, {

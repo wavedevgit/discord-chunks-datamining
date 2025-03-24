@@ -44,7 +44,7 @@ function u(e, t, n, u) {
     id: "invite-to-stream",
     label: c.NW.string(c.t["OzOM/v"]),
     action: p,
-    icon: i.gQj
+    icon: i.ejJ
   }) : null != t && null != e && a.Z.can(s.Plq.CREATE_INSTANT_INVITE, e) ? (0, r.jsx)(i.sNh, {
     id: "invite-friends",
     label: c.NW.string(c.t["6Qgren"]),

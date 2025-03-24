@@ -37,11 +37,11 @@ function h(e) {
 function g(e) {
   let {
     className: t
-  } = e, g = (0, a.e7)([u.Z], () => u.Z.isDeveloper), [_, b] = i.useState(!1), [v, y] = i.useState(0), x = (0, a.e7)([d.default], () => {
+  } = e, g = (0, a.e7)([u.Z], () => u.Z.isDeveloper), [_, b] = i.useState(!1), [v, x] = i.useState(0), y = (0, a.e7)([d.default], () => {
     var e, t, n;
     return null !== (n = null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : null === (e = t.isStaff) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
   }), E = (0, s.Q3)("StaffHelpButton"), O = e => {
-    clearTimeout(v), y(setTimeout(() => {
+    clearTimeout(v), x(setTimeout(() => {
       b(e)
     }, 100))
   };
@@ -108,7 +108,7 @@ function g(e) {
       })({
         onClose: () => b(!1),
         isDiscordDeveloper: g,
-        isStaff: x,
+        isStaff: y,
         isRefreshEnabled: E
       }),
       children: (e, n) => {

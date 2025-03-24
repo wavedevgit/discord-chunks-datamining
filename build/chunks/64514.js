@@ -21,31 +21,33 @@ function d(e, t, n) {
 }
 class p extends l.Z {
   _initialize() {
-    i.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), this.scheduleHeartbeatTracking()
+    i.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
   _terminate() {
-    this.stopAnalyticHeartbeat(), i.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess)
+    this.stopAnalyticHeartbeat(), i.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.unsubscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.unsubscribe("LOGOUT", this.handleLogout)
   }
   constructor(...e) {
-    super(...e), d(this, "focusedOrForegrounded", !0), d(this, "heartbeatInterval", new r.Xp), d(this, "schedulerStarted", !1), d(this, "maybeStartHeartbeat", () => {
+    var t;
+    super(...e), t = this, d(this, "focusedOrForegrounded", !0), d(this, "heartbeatInterval", new r.Xp), d(this, "schedulerStarted", !1), d(this, "maybeStartHeartbeat", () => {
       this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * a.Z.Millis.MINUTE, this.trackHeartbeat)
     }), d(this, "startAnalyticHeartbeat", () => {
       !this.schedulerStarted && (this.schedulerStarted = !0, s.Z.addBreadcrumb({
         category: "ad",
         message: "Starting ad session heartbeat"
       }), this.maybeStartHeartbeat())
-    }), d(this, "trackHeartbeat", () => {
-      if (!this.schedulerStarted) {
+    }), d(this, "trackHeartbeat", function() {
+      let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+      if (!t.schedulerStarted && !e) {
         s.Z.addBreadcrumb({
           category: "ad",
           message: "Ad heartbeat called but scheduler not started"
-        }), this.heartbeatInterval.stop();
+        }), t.heartbeatInterval.stop();
         return
       }
-      let e = (0, c.G)();
+      let n = (0, c.Gy)();
       o.default.track(u.rMx.CLIENT_AD_HEARTBEAT, {
-        client_ad_session_id: e.uuid,
-        client_heartbeat_initialization_timestamp: e.initialized,
+        client_ad_session_id: n.uuid,
+        client_heartbeat_initialization_timestamp: n.initialized,
         client_heartbeat_version: 1
       })
     }), d(this, "stopAnalyticHeartbeat", () => {
@@ -59,7 +61,13 @@ class p extends l.Z {
       } catch (e) {
         s.Z.captureException(e)
       } else this.stopAnalyticHeartbeat()
-    }), d(this, "handleEnrollmentSuccess", () => {}), d(this, "handleWindowFocus", e => {
+    }), d(this, "handleLogin", () => {
+      this.scheduleHeartbeatTracking(), this.trackHeartbeat(!0)
+    }), d(this, "handleLogout", () => {
+      this.stopAnalyticHeartbeat(), (0, c.GG)()
+    }), d(this, "handleEnrollmentSuccess", () => {
+      (0, c.Gy)(!0)
+    }), d(this, "handleWindowFocus", e => {
       let {
         focused: t
       } = e;

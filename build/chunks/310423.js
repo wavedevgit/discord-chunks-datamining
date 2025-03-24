@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(594174),
   b = n(739566),
   v = n(981631),
-  y = n(665692),
-  x = n(388032),
+  x = n(665692),
+  y = n(388032),
   E = n(956355);
 
 function O(e) {
@@ -141,7 +141,7 @@ let S = i.memo(function(e) {
                   section: v.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                 }
               }),
-              children: [y.ME, e.nick]
+              children: [x.ME, e.nick]
             }))
           }
           break
@@ -150,7 +150,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = h.Z.getChannel(e);
           null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
-            children: [y.zy, t.name]
+            children: [x.zy, t.name]
           })));
           break
         }
@@ -158,7 +158,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
           null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
-            children: [y.ME, t.name]
+            children: [x.ME, t.name]
           })));
           break
         }
@@ -166,7 +166,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
           if (null != t) E = (0, r.jsxs)(m.Z, {
-            children: [y.ME, t.name]
+            children: [x.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
@@ -180,14 +180,14 @@ let S = i.memo(function(e) {
                     section: v.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                   }
                 }),
-                children: [y.ME, e.nick]
+                children: [x.ME, e.nick]
               }))
             }
           }
           break
         }
         case c.jw.ATTACHMENT:
-          E = I(x.NW.string(x.t.nONJVV));
+          E = I(y.NW.string(y.t.nONJVV));
           break;
         default: {
           let e = null == Z ? void 0 : null === (u = Z.choices) || void 0 === u ? void 0 : u.find(e => e.value === S.value);

@@ -31,7 +31,7 @@ function h(e) {
       guild_id: _,
       channel_id: b
     }), (0, o.K)(n.id, h.id), a.default.selectVoiceChannel(h.id)
-  }, [null === (t = g.author) || void 0 === t ? void 0 : t.id, n.id, h.id, h.type, _, b]), y = (0, r.jsx)(s.Z.Channel, {
+  }, [null === (t = g.author) || void 0 === t ? void 0 : t.id, n.id, h.id, h.type, _, b]), x = (0, r.jsx)(s.Z.Channel, {
     channel: h
   });
   return (0, r.jsx)(s.Z, {
@@ -41,7 +41,7 @@ function h(e) {
         children: [(0, r.jsx)(s.Z.Icon, {
           guild: n
         }), (0, r.jsx)(s.Z.Info, {
-          title: y,
+          title: x,
           onClick: v,
           children: (0, r.jsxs)("span", {
             className: f.infoTitle,

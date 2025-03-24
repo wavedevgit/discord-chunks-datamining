@@ -157,7 +157,8 @@ function $(e) {
       applicationId: t,
       stream: e,
       exitFullScreen: I,
-      analyticsLocation: n.type === Y.d4z.GUILD_VOICE ? Y.ZY5.GUILD_CHANNEL : Y.ZY5.DM_CHANNEL
+      analyticsLocation: n.type === Y.d4z.GUILD_VOICE ? Y.ZY5.GUILD_CHANNEL : Y.ZY5.DM_CHANNEL,
+      shouldPrioritizeGroupPlusIcon: !0
     }, "invite-button"))
   }
   return ee && eg.push((0, r.jsx)(J, {

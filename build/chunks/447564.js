@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(82950),
   b = n(981631),
   v = n(388032),
-  y = n(831220),
-  x = n(99713);
+  x = n(831220),
+  y = n(99713);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -78,9 +78,9 @@ function C(e) {
     error: _
   } = (0, m.R2)(f.FX), {
     entitlement: v,
-    fetchedEntitlement: y,
-    error: x
-  } = (0, m.t6)(f.FX), E = _ || x, {
+    fetchedEntitlement: x,
+    error: y
+  } = (0, m.t6)(f.FX), E = _ || y, {
     analyticsLocations: O
   } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), N = null != v && !v.consumed;
   (0, i.useEffect)(() => () => {
@@ -106,7 +106,7 @@ function C(e) {
     onActionClick: () => {
       u(!0), (N ? j : C)()
     },
-    loading: g || !y
+    loading: g || !x
   })
 }
 let I = e => {
@@ -119,7 +119,7 @@ let I = e => {
     } = e;
     return o ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: y.modal,
+        className: x.modal,
         children: [(0, r.jsx)(S, {}), (0, r.jsx)(T, {
           channel: t
         })]
@@ -131,7 +131,7 @@ let I = e => {
     })
   },
   S = () => (0, r.jsx)("img", {
-    className: y.image,
+    className: x.image,
     src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
     alt: v.NW.string(v.t.DdigcX)
   }),
@@ -141,9 +141,9 @@ let I = e => {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: y.body,
+        className: x.body,
         children: [(0, r.jsxs)("div", {
-          className: y.heading,
+          className: x.heading,
           children: [(0, r.jsx)(l.X6q, {
             variant: "heading-lg/bold",
             children: v.NW.string(v.t.K04rOD)
@@ -163,9 +163,9 @@ let I = e => {
           children: v.NW.string(v.t.qk07Mj)
         })]
       }), (0, r.jsx)("div", {
-        className: y.divider
+        className: x.divider
       }), (0, r.jsxs)("div", {
-        className: y.applyingTo,
+        className: x.applyingTo,
         children: [(0, r.jsx)(l.Text, {
           variant: "eyebrow",
           children: v.NW.string(v.t.tZyXg4)
@@ -182,7 +182,7 @@ let I = e => {
       onActionClick: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: y.footer,
+      className: x.footer,
       children: [(0, r.jsx)(l.zxk, {
         onClick: () => {
           (0, l.Mr3)(j)
@@ -210,7 +210,7 @@ let I = e => {
         4: v.NW.string(v.t.utRdl5)
       } [t];
       return (0, r.jsx)(l.ua7, {
-        tooltipContentClassName: y.tooltip,
+        tooltipContentClassName: x.tooltip,
         text: e,
         children: e => {
           var t, n;
@@ -238,7 +238,7 @@ let I = e => {
     return (0, r.jsx)(l.zxk, {
       onClick: i,
       children: (0, r.jsxs)("div", {
-        className: y.buttonCopy,
+        className: x.buttonCopy,
         children: [(0, r.jsx)(l.hh5, {
           color: o.Z.colors.WHITE,
           size: "sm"
@@ -247,11 +247,11 @@ let I = e => {
     })
   },
   w = () => (0, r.jsx)("div", {
-    className: y.anomaly,
+    className: x.anomaly,
     children: (0, r.jsxs)("div", {
-      className: y.error,
+      className: x.error,
       children: [(0, r.jsx)(l.Eep, {
-        src: x,
+        src: y,
         width: 178,
         height: 190
       }), (0, r.jsx)(l.Text, {
@@ -261,9 +261,9 @@ let I = e => {
     })
   }),
   Z = () => (0, r.jsx)("div", {
-    className: y.anomaly,
+    className: x.anomaly,
     children: (0, r.jsx)("div", {
-      className: y.spinner,
+      className: x.spinner,
       children: (0, r.jsx)(l.$jN, {})
     })
   })

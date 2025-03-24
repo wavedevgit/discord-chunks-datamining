@@ -27,7 +27,7 @@ var i = n(990547),
   O = n(18438),
   v = n(778825),
   S = n(665166),
-  T = n(309351),
+  T = n(442933),
   I = n(715495),
   y = n(158947),
   A = n(351780),
@@ -106,7 +106,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
     let e = [];
     return L.cy.getCurrentConfig({
       location: "SettingsRendererConfig"
-    }).enabled && e.push(s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE), T.w.getCurrentConfig({
+    }).enabled && e.push(s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE), T.e.getCurrentConfig({
       location: "SettingsRendererConfig"
     }).canPurchase && e.push(s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE), e
   },

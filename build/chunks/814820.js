@@ -1,6 +1,6 @@
 /** Chunk was on 8473 **/
 n.d(t, {
-  f: () => y
+  f: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -52,7 +52,7 @@ let v = e => {
       })
     })
   },
-  y = e => {
+  x = e => {
     let {
       message: t,
       channel: n

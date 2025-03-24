@@ -57,7 +57,7 @@ function p(e) {
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let y = (0, o.ZP)(i);
+  let x = (0, o.ZP)(i);
   return (0, r.jsx)("div", {
     className: a()({
       [u.withFooter]: b
@@ -78,7 +78,7 @@ function p(e) {
       childrenHeader: (0, r.jsx)(c.ZP, d({
         message: i,
         channel: p,
-        author: y,
+        author: x,
         guildId: null == p ? void 0 : p.guild_id,
         compact: h,
         hideTimestamp: _,

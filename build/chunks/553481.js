@@ -3,8 +3,8 @@
 var r = {
   soundButtonWrapper: "soundButtonWrapper__6d4ed",
   soundButton: "soundButton__6d4ed",
-  soundButtonRefresh: "soundButtonRefresh__6d4ed",
   focused: "focused__6d4ed",
+  soundButtonRefresh: "soundButtonRefresh__6d4ed",
   soundInfoRefresh: "soundInfoRefresh__6d4ed",
   buttonOverlayActionsRefresh: "buttonOverlayActionsRefresh__6d4ed absoluteFill__6d4ed",
   soundNameRefresh: "soundNameRefresh__6d4ed",

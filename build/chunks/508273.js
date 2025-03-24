@@ -19,15 +19,15 @@ var r = n(200651),
   _ = n(723776),
   b = n(910200),
   v = n(358595),
-  y = n(981631),
-  x = n(388032),
+  x = n(981631),
+  y = n(388032),
   E = n(700457);
 
 function O(e) {
   let {
     guild: t,
     invite: n
-  } = e, a = i.useRef(null), [O, N] = i.useState(!0), [j, C] = i.useState(!1), I = n.state === y.r2o.ACCEPTING, S = null != t, {
+  } = e, a = i.useRef(null), [O, N] = i.useState(!0), [j, C] = i.useState(!1), I = n.state === x.r2o.ACCEPTING, S = null != t, {
     analyticsLocations: T
   } = (0, p.ZP)(d.Z.INVITE_EMBED), P = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
@@ -90,7 +90,7 @@ function O(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: x.NW.string(x.t.xdCLeH)
+        children: y.NW.string(y.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
       className: E.footer,

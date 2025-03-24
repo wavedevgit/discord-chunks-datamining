@@ -31,7 +31,7 @@ function f(e) {
 }
 
 function h(e) {
-  var t, n, r, h, g, _, b, v, y, x, E, O, N, j, C;
+  var t, n, r, h, g, _, b, v, x, y, E, O, N, j, C;
   let {
     item: I,
     renderApplication: S
@@ -40,14 +40,14 @@ function h(e) {
     case d.O7.FRIEND_REQUESTS_GROUPED:
       let w = u.ZP.getName(s.default.getUser(null === (g = I.other_users) || void 0 === g ? void 0 : null === (h = g[0]) || void 0 === h ? void 0 : h.id)),
         Z = u.ZP.getName(s.default.getUser(null === (b = I.other_users) || void 0 === b ? void 0 : null === (_ = b[1]) || void 0 === _ ? void 0 : _.id)),
-        k = Math.max((null !== (y = null === (v = I.other_users) || void 0 === v ? void 0 : v.length) && void 0 !== y ? y : 0) - 2, 0);
+        k = Math.max((null !== (x = null === (v = I.other_users) || void 0 === v ? void 0 : v.length) && void 0 !== x ? x : 0) - 2, 0);
       return m.NW.format(m.t.g5xyIC, {
         user: w,
         user2: Z,
         count: k
       });
     case d.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let R = null !== (E = null === (x = I.local_id) || void 0 === x ? void 0 : x.split("_").pop()) && void 0 !== E ? E : "unknown";
+      let R = null !== (E = null === (y = I.local_id) || void 0 === y ? void 0 : y.split("_").pop()) && void 0 !== E ? E : "unknown";
       return "Update to build ".concat(R, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
       return l.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null !== (O = I.body) && void 0 !== O ? O : "";

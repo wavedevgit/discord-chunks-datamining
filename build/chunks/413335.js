@@ -68,11 +68,11 @@ function d(e, t) {
 function f(e) {
   var t, n, {
       size: a = "sm",
-      fill: l,
+      color: l = "#FF73FA",
       width: d,
       height: f
     } = e,
-    _ = u(e, ["size", "fill", "width", "height"]);
+    _ = u(e, ["size", "color", "width", "height"]);
   let p = (0, o.m)(a),
     h = null !== (t = null == p ? void 0 : p.width) && void 0 !== t ? t : d,
     m = null !== (n = null == p ? void 0 : p.height) && void 0 !== n ? n : f;
@@ -80,7 +80,7 @@ function f(e) {
     width: h,
     height: m,
     viewBox: "0 0 10 16",
-    fill: null != l ? l : "#FF73FA"
+    fill: "string" == typeof l ? l : l.css
   }, (0, i.Z)(_)), {
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("path", {

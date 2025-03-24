@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(442837),
   s = n(481060),
   u = n(518738),
@@ -22,11 +22,11 @@ function y(e) {
   var t;
   let {
     guildId: n,
-    role: l,
+    role: o,
     theme: y,
     content: h = m.NW.string(m.t["6OSasb"]),
     className: O
-  } = e, _ = (0, a.e7)([p.default], () => p.default.getCurrentUser()), j = v.ZP.useName(n, null, _), S = (0, u.Kz)(l), E = i.useMemo(() => {
+  } = e, _ = (0, a.e7)([p.default], () => p.default.getCurrentUser()), j = v.ZP.useName(n, null, _), S = (0, u.Kz)(o), E = i.useMemo(() => {
     var e, t;
     return (0, c.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -68,12 +68,12 @@ function y(e) {
     }), e))
   }, [_, h]), w = {
     nick: j,
-    colorString: null !== (t = l.colorString) && void 0 !== t ? t : void 0
+    colorString: null !== (t = o.colorString) && void 0 !== t ? t : void 0
   };
   return (0, r.jsx)(s.f6W, {
     theme: y,
     children: e => (0, r.jsx)("div", {
-      className: o()(e, b.container, O),
+      className: l()(e, b.container, O),
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: !0,
         author: w,

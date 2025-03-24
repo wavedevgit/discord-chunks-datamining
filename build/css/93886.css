@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 037351e49d23d2dc
+  Original File Name: 5a242bbc4fe117cd
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -466,6 +466,66 @@
     cursor: pointer
 }
 
+.container__23012 {
+    padding: 8px
+}
+
+.header__23012 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.deleteEntitlementButton__23012 {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    margin: 8px
+}
+
+.card__23012 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--background-secondary);
+    box-shadow: var(--shadow-medium);
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-12) 0;
+    padding: var(--spacing-12)
+}
+
+.clickableGroup__23012 {
+    display: flex;
+    padding: 2px 16px;
+    border-radius: 3px;
+    height: var(--custom-button-button-md-height);
+    align-items: center
+}
+
+.clickableGroup__23012:hover {
+    cursor: pointer;
+    background-color: var(--background-secondary)
+}
+
+.clickableGroupContainer__23012 {
+    display: flex;
+    align-items: flex-end
+}
+
+.section__23012 {
+    margin-bottom: var(--spacing-8)
+}
+
+.buttonGroup__23012 {
+    display: flex;
+    flex-direction: row
+}
+
+.buttonGroup__23012>button {
+    margin-left: 8px
+}
+
 .panelInner_b4dcd9 {
     padding: var(--spacing-8)
 }
@@ -473,7 +533,8 @@
 .headerWrapper_b4dcd9 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .section_b4dcd9 {
@@ -5682,4 +5743,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=037351e49d23d2dc.css.map*/
+/*# sourceMappingURL=5a242bbc4fe117cd.css.map*/

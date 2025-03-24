@@ -412,7 +412,7 @@ let ei = i.memo(function(e) {
             [X.cozyMessage]: !en,
             [X.mentioned]: y.mentioned,
             [X.ephemeral]: (0, I.Pv)(y),
-            [X.nitroMessage]: y.type === q.uaV.NITRO_NOTIFICATION,
+            [X.nitroMessage]: y.type === q.uaV.NITRO_NOTIFICATION || y.type === q.uaV.CHAT_WALLPAPER_SET || y.type === q.uaV.CHAT_WALLPAPER_REMOVED,
             [X.systemMessage]: (0, S.Z)(y),
             [X.groupStart]: !eo && (eQ || y.type === q.uaV.REPLY),
             [X.selected]: eA,

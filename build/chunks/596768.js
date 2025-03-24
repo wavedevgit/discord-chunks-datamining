@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => N
+  Z: () => O
 }), n(47120), n(230036);
 var r = n(200651),
   a = n(192379),
@@ -52,7 +52,7 @@ let S = [{
       return t.toLocaleString()
     }
   }],
-  O = [{
+  N = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -131,13 +131,13 @@ let S = [{
     }
   }];
 
-function N() {
+function O() {
   let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), h = o.find(e => e.key === c), {
     TabBar: p,
     renderSelectedTab: _
   } = (0, j.Z)({
-    tabs: O
-  }, []), N = (0, u.e7)([b.Z], () => b.Z.trackTriggers), k = a.useCallback(e => {
+    tabs: N
+  }, []), O = (0, u.e7)([b.Z], () => b.Z.trackTriggers), k = a.useCallback(e => {
     x.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -152,7 +152,7 @@ function N() {
         title: "Enables tracking of all triggers",
         className: C.triggersEnable,
         children: (0, r.jsx)(m.rsf, {
-          checked: N,
+          checked: O,
           onChange: k,
           className: C.__invalid_toolbarSwitch
         })

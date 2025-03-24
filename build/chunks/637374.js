@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(600164),
   b = n(479446),
   v = n(930114),
-  y = n(981632),
-  x = n(108989),
+  x = n(981632),
+  y = n(108989),
   E = n(703656),
   O = n(314897),
   N = n(82142),
@@ -377,12 +377,12 @@ class V extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: a,
-        children: [!t && L.eZ.includes(e.giftStyle) && (0, r.jsx)(x.Z, {
+        children: [!t && L.eZ.includes(e.giftStyle) && (0, r.jsx)(y.Z, {
           className: W.snow,
           wind: 5
         }), i && (0, r.jsx)(T.Z, {
           className: W.headerIcon
-        }), null != e.giftStyle && (0, r.jsx)(y.Z, {
+        }), null != e.giftStyle && (0, r.jsx)(x.Z, {
           defaultAnimationState: e.redeemed ? b.SR.LOOP : b.SR.IDLE,
           giftStyle: e.giftStyle,
           className: l

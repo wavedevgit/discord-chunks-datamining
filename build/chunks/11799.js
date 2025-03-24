@@ -20,8 +20,8 @@ let p = e => {
       initialPageSize: f
     } = e, h = (0, i.e7)([u.Z], () => u.Z.shouldReload()), g = r.useRef(!1), [_, b] = r.useState(!1), {
       initialized: v,
-      loading: y,
-      items: x,
+      loading: x,
+      items: y,
       hasMore: E,
       cursor: O,
       errored: N
@@ -44,8 +44,8 @@ let p = e => {
     }, [t, v]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (N || x.length > 100) && (0, s.jF)() : n && x.length > 100 && (0, s.jF)()
-    }, [n, x, p, I, N]), r.useEffect(() => {
+      p ? !I() && (N || y.length > 100) && (0, s.jF)() : n && y.length > 100 && (0, s.jF)()
+    }, [n, y, p, I, N]), r.useEffect(() => {
       let e = h && t;
       (!v || e) && (0, s.jk)({
         limit: null != f ? f : m ? 8 : 20,
@@ -67,8 +67,8 @@ let p = e => {
     }, [v, E, O, N, m, j, C]);
     return {
       initialized: v,
-      loading: y,
-      items: x,
+      loading: x,
+      items: y,
       hasMore: E,
       loadMore: S,
       loadingMore: _,

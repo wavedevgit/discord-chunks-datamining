@@ -34,7 +34,7 @@ function v(e) {
       id: t
     } = e;
     return f.Z.getChannel(t)
-  }).filter(h.lm).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), y = i.useCallback((e, t) => {
+  }).filter(h.lm).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), x = i.useCallback((e, t) => {
     (0, m.ok)(e, t, _.on.INBOX)
   }, []);
   return i.useEffect(() => {
@@ -48,7 +48,7 @@ function v(e) {
       children: (0, r.jsx)(u.ZP, {
         className: b.forumPost,
         threadId: e.id,
-        goToThread: y
+        goToThread: x
       })
     }, e.id))
   })

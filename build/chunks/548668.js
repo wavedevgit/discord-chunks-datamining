@@ -10,10 +10,10 @@ var s, r = a(200651),
   c = a(622535),
   d = a(213919),
   u = a(982905),
-  p = a(794010),
-  _ = a(66037),
-  h = a(231338),
-  m = a(436620),
+  _ = a(794010),
+  p = a(66037),
+  m = a(231338),
+  h = a(436620),
   N = a(330711),
   I = a(151729);
 
@@ -33,15 +33,15 @@ let k = "Footer Navigation",
   A = () => [{
     title: N.Z.Messages.NAVIGATION_PRODUCT,
     routes: [{
-      link: h.am.DOWNLOAD,
+      link: m.am.DOWNLOAD,
       title: N.Z.Messages.NAVIGATION_DOWNLOAD,
       tracking: "download"
     }, {
-      link: h.am.BRANDING,
+      link: m.am.BRANDING,
       title: N.Z.Messages.NAVIGATION_BRANDING,
       tracking: "branding"
     }, {
-      link: h.am.NITRO,
+      link: m.am.NITRO,
       title: N.Z.Messages.NAVIGATION_NITRO,
       tracking: "nitro",
       external: !0
@@ -49,21 +49,21 @@ let k = "Footer Navigation",
   }, {
     title: N.Z.Messages.NAVIGATION_DEVELOPERS,
     routes: [{
-      link: h.am.RICH_PRESENCE,
+      link: m.am.RICH_PRESENCE,
       title: N.Z.Messages.NAVIGATION_RICH_PRESENCE,
       tracking: "rich_presence"
     }, {
-      link: h.am.VERIFICATION,
+      link: m.am.VERIFICATION,
       title: N.Z.Messages.NAVIGATION_VERIFICATION,
       tracking: "verification",
       external: !0
     }, {
-      link: h.yX.DEV_PORTAL_APPLICATIONS,
+      link: m.yX.DEV_PORTAL_APPLICATIONS,
       title: N.Z.Messages.NAVIGATION_APPLICATIONS,
       tracking: "developers",
       external: !0
     }, {
-      link: h.yX.DEV_PORTAL_DOCUMENTATION,
+      link: m.yX.DEV_PORTAL_DOCUMENTATION,
       title: N.Z.Messages.NAVIGATION_DOCUMENTATION,
       tracking: "documentation",
       external: !0
@@ -71,41 +71,41 @@ let k = "Footer Navigation",
   }, {
     title: N.Z.Messages.NAVIGATION_RESOURCES,
     routes: [{
-      link: h.yX.HELP_AND_SUPPORT,
+      link: m.yX.HELP_AND_SUPPORT,
       title: N.Z.Messages.NAVIGATION_HELP_AND_SUPPORT,
       tracking: "helpandsupport",
       external: !0
     }, {
-      link: h.am.GUIDELINES,
+      link: m.am.GUIDELINES,
       title: N.Z.Messages.NAVIGATION_GUIDELINES,
       tracking: "guidelines",
       external: !0
     }, {
-      link: h.yX.FEEDBACK,
+      link: m.yX.FEEDBACK,
       title: N.Z.Messages.NAVIGATION_FEEDBACK,
       tracking: "feedback",
       external: !0
     }, {
-      link: h.am.TERMS,
+      link: m.am.TERMS,
       title: N.Z.Messages.NAVIGATION_TERMS,
       tracking: "terms",
       external: !0
     }, {
-      link: h.am.PRIVACY,
+      link: m.am.PRIVACY,
       title: N.Z.Messages.NAVIGATION_PRIVACY,
       tracking: "privacy",
       external: !0
     }, {
-      link: h.am.SECURITY,
+      link: m.am.SECURITY,
       title: N.Z.Messages.NAVIGATION_SECURITY,
       tracking: "security"
     }, {
-      link: h.yX.STATUS,
+      link: m.yX.STATUS,
       title: N.Z.Messages.NAVIGATION_STATUS,
       tracking: "status",
       external: !0
     }, {
-      link: h.am.SAFETY_LANDING,
+      link: m.am.SAFETY_LANDING,
       title: N.Z.Messages.NAVIGATION_SAFETY_CENTER,
       tracking: "safetycenter",
       external: !0
@@ -113,16 +113,16 @@ let k = "Footer Navigation",
   }, {
     title: N.Z.Messages.NAVIGATION_COMPANY,
     routes: [{
-      link: h.am.COMPANY,
+      link: m.am.COMPANY,
       title: N.Z.Messages.NAVIGATION_ABOUT,
       tracking: "about"
     }, {
-      link: h.am.BLOG,
+      link: m.am.BLOG,
       title: N.Z.Messages.NAVIGATION_BLOG,
       tracking: "blog",
       external: !0
     }, {
-      link: h.am.JOBS,
+      link: m.am.JOBS,
       title: N.Z.Messages.NAVIGATION_JOBS,
       tracking: "join",
       external: !0
@@ -130,22 +130,22 @@ let k = "Footer Navigation",
   }, {
     title: N.Z.Messages.NAVIGATION_MORE,
     routes: [{
-      link: h.am.PARTNERS,
+      link: m.am.PARTNERS,
       title: N.Z.Messages.NAVIGATION_PARTNERS,
       tracking: "partners",
       external: !0
     }, {
-      link: h.am.HYPESQUAD,
+      link: m.am.HYPESQUAD,
       title: N.Z.Messages.NAVIGATION_HYPESQUAD,
       tracking: "hypesquad",
       external: !0
     }, {
-      link: h.yX.PRESS_INQUIRIES,
+      link: m.yX.PRESS_INQUIRIES,
       title: N.Z.Messages.NAVIGATION_PRESS_INQUIRIES,
       tracking: "pressinquiries",
       external: !0
     }, {
-      link: h.am.OPEN_SOURCE,
+      link: m.am.OPEN_SOURCE,
       title: N.Z.Messages.NAVIGATION_OPEN_SOURCE,
       tracking: "open_source"
     }]
@@ -174,7 +174,7 @@ class f extends(s = l.PureComponent) {
   componentDidMount() {
     this.setState({
       token: (0, d.getToken)(),
-      isAppCompatible: m.KO
+      isAppCompatible: h.KO
     })
   }
   renderAppButton(e) {
@@ -213,12 +213,12 @@ class f extends(s = l.PureComponent) {
       },
       alt: "Download Discord",
       className: (0, u.l)(I, "button", i),
-      href: h.am.DOWNLOAD,
+      href: m.am.DOWNLOAD,
       children: N.Z.Messages.NAVIGATION_DOWNLOAD
     });
-    let d = null != o ? h.$w.REGISTER_WITH_REDIRECT(o) : h.$w.REGISTER,
-      p = N.Z.Messages.COMMON_SIGN_UP_NOW;
-    return e && (d = h.$w.ME, p = N.Z.Messages.COMMON_OPEN_DISCORD), (0, r.jsx)(n, {
+    let d = null != o ? m.$w.REGISTER_WITH_REDIRECT(o) : m.$w.REGISTER,
+      _ = N.Z.Messages.COMMON_SIGN_UP_NOW;
+    return e && (d = m.$w.ME, _ = N.Z.Messages.COMMON_OPEN_DISCORD), (0, r.jsx)(n, {
       eventName: k,
       className: (0, u.l)(I, "button", this.props.variant),
       data: {
@@ -226,7 +226,7 @@ class f extends(s = l.PureComponent) {
         googleAnalytics: !0
       },
       href: d,
-      children: p
+      children: _
     })
   }
   render() {
@@ -238,8 +238,8 @@ class f extends(s = l.PureComponent) {
       showWave: i
     } = this.props, {
       animateBackground: d,
-      token: p
-    } = this.state, m = A().map(e => {
+      token: _
+    } = this.state, h = A().map(e => {
       let t = e.routes.map((e, t) => e.external ? (0, r.jsx)(n, {
         className: I.route,
         eventName: k,
@@ -248,7 +248,7 @@ class f extends(s = l.PureComponent) {
         },
         href: e.link,
         children: e.title
-      }, e.link || t) : (0, r.jsx)(_.Z, {
+      }, e.link || t) : (0, r.jsx)(p.Z, {
         avoidRouter: l,
         to: e.link,
         from: "footer_navigation",
@@ -286,7 +286,7 @@ class f extends(s = l.PureComponent) {
               className: I.logoWrap,
               children: (0, r.jsx)(n, {
                 className: I.logo,
-                href: h.am.INDEX,
+                href: m.am.INDEX,
                 eventName: k,
                 data: {
                   linkClicked: "logo"
@@ -296,7 +296,7 @@ class f extends(s = l.PureComponent) {
                   src: a(131529)
                 })
               })
-            }), m]
+            }), h]
           }), (0, r.jsx)("div", {
             className: I.separator
           }), (0, r.jsxs)("div", {
@@ -309,10 +309,10 @@ class f extends(s = l.PureComponent) {
               }), (0, r.jsx)("h3", {
                 className: I.joinOtherPlayers,
                 children: N.Z.Messages.FOOTER_JOIN_OVER_PLAYERS_TODAY.format({
-                  num: h.vS
+                  num: m.vS
                 })
               })]
-            }), this.renderAppButton(p)]
+            }), this.renderAppButton(_)]
           })]
         })]
       })
@@ -328,7 +328,7 @@ class f extends(s = l.PureComponent) {
       this.setState({
         animateBackground: e
       })
-    }), null != e.locale && N.Z.setLocale(e.locale), n = t => (0, r.jsx)(p.Z, function(e) {
+    }), null != e.locale && N.Z.setLocale(e.locale), n = t => (0, r.jsx)(_.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(a);

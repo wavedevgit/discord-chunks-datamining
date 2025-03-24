@@ -1,6 +1,6 @@
 /**
   Module ID: 10165
-  Original File Name: e346d31a15c19449
+  Original File Name: 4c7f134416b811ab
 **/
 .header_cd8d1b {
     padding: 0 50px
@@ -28,7 +28,8 @@
 }
 
 .footer_cd8d1b {
-    background: transparent;
+    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+    background: initial;
     padding: 24px
 }
 
@@ -44,4 +45,4 @@
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=e346d31a15c19449.css.map*/
+/*# sourceMappingURL=4c7f134416b811ab.css.map*/

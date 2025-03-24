@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -9,79 +9,83 @@ var r = n(200651),
   o = n.n(a),
   s = n(622535),
   i = n(481060),
-  c = n(597688),
-  d = n(297651),
-  u = n(215023),
-  g = n(388032),
-  h = n(39532);
-let f = e => {
+  c = n(63063),
+  d = n(597688),
+  u = n(297651),
+  g = n(215023),
+  h = n(981631),
+  f = n(388032),
+  m = n(39532);
+let p = e => {
   var t, n, a;
   let {
-    wideBannerBlock: f,
-    handleTransition: m,
-    tab: p
-  } = e, b = null === (t = c.Z.getCategoryByStoreListingId(f.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, C = l.useRef(null), [_, v] = l.useState();
+    wideBannerBlock: p,
+    handleTransition: b,
+    tab: C
+  } = e, _ = null === (t = d.Z.getCategoryByStoreListingId(p.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, v = l.useRef(null), [k, x] = l.useState();
   l.useEffect(() => {
-    let e = C.current;
+    let e = v.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && v(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
     }
   }, []);
-  let k = null != b ? b : "",
+  let j = null != _ ? _ : "",
     {
-      handleCardVisibilityChange: x
-    } = (0, d.E)(k, "home", "marketing wide banner"),
-    j = f.bannerUrl;
-  return null == j ? null : (0, r.jsx)(s.$, {
-    onChange: x,
+      handleCardVisibilityChange: S
+    } = (0, u.E)(j, "home", "marketing wide banner"),
+    y = p.bannerUrl;
+  return null == y ? null : (0, r.jsx)(s.$, {
+    onChange: S,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection),
+      className: o()(m.row, m.between, m.bannerBlockContainer, m.centeredSection),
       children: [(0, r.jsx)("div", {
-        className: h.wideBannerBackgroundImg,
+        className: m.wideBannerBackgroundImg,
         children: (0, r.jsx)("img", {
-          ref: C,
-          src: j,
-          alt: f.title,
+          ref: v,
+          src: y,
+          alt: p.title,
           style: {
             width: "100%",
-            height: null != _ ? "".concat(_, "px") : "auto",
+            height: null != k ? "".concat(k, "px") : "auto",
             objectFit: "cover",
             objectPosition: "left center",
             display: "block"
           }
         })
       }), (0, r.jsx)("div", {
-        className: h.wideBannerContentContainer,
+        className: m.wideBannerContentContainer,
         style: {
-          maxHeight: null != _ ? "".concat(_, "px") : "auto"
+          maxHeight: null != k ? "".concat(k, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: h.wideBannerTextContainer,
+          className: m.wideBannerTextContainer,
           children: [(0, r.jsx)(i.X6q, {
             style: {
-              color: null !== (n = f.bannerTextColor) && void 0 !== n ? n : "var(--text-normal)"
+              color: null !== (n = p.bannerTextColor) && void 0 !== n ? n : "var(--text-normal)"
             },
-            variant: p === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
-            children: f.title
+            variant: C === g.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
+            children: p.title
           }), (0, r.jsx)(i.Text, {
             style: {
-              color: null !== (a = f.bannerTextColor) && void 0 !== a ? a : "var(--text-normal)"
+              color: null !== (a = p.bannerTextColor) && void 0 !== a ? a : "var(--text-normal)"
             },
             lineClamp: 2,
-            variant: p === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
-            children: f.body
+            variant: C === g.AW.ORBS ? "text-md/medium" : "text-sm/medium",
+            children: C === g.AW.ORBS ? f.NW.format(f.t.SFFP7O, {
+              helpdeskArticle: c.Z.getArticleURL(h.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+            }) : p.body
           })]
         })
-      }), !0 !== f.disableCta && (0, r.jsx)(i.zxk, {
-        className: h.wideBannerBlockButton,
+      }), !0 !== p.disableCta && (0, r.jsx)(i.zxk, {
+        className: m.wideBannerBlockButton,
         color: i.Ttl.PRIMARY,
-        onClick: () => m("shop wide banner", k),
-        children: g.NW.string(g.t.jVcuVV)
+        onClick: () => b("shop wide banner", j),
+        children: f.NW.string(f.t.jVcuVV)
       })]
     })
   })

@@ -19,9 +19,9 @@ var r = n(200651),
   _ = n(139256),
   b = n(489887),
   v = n(388032),
-  y = n(579702);
+  x = n(579702);
 
-function x() {
+function y() {
   return (0, r.jsx)("svg", {
     width: "24",
     height: "24",
@@ -42,7 +42,7 @@ function E(e) {
     hasNoVotes: n,
     victorEmoji: i
   } = e;
-  if (n) t = (0, r.jsx)(x, {});
+  if (n) t = (0, r.jsx)(y, {});
   else if (null != i) {
     let e = "" !== i.name ? i.name : i.displayName;
     t = (0, r.jsx)(u.Z, {
@@ -52,7 +52,7 @@ function E(e) {
     })
   }
   return null != t ? (0, r.jsx)("div", {
-    className: y.imageContainer,
+    className: x.imageContainer,
     children: t
   }) : null
 }
@@ -92,16 +92,16 @@ function O(e) {
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: y.victorAnswer,
+          className: x.victorAnswer,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            className: y.victorAnswerText,
+            className: x.victorAnswerText,
             scaleFontToUserSetting: !0,
             children: o
           }), (0, r.jsx)(_.ZY, {
             size: 16,
-            className: y.victorIcon,
+            className: x.victorIcon,
             isVictor: !0,
             isExpired: !0
           })]
@@ -132,7 +132,7 @@ function O(e) {
       })
   }
   return (0, r.jsx)("div", {
-    className: y.description,
+    className: x.description,
     children: t
   })
 }
@@ -158,8 +158,8 @@ function N(e) {
     }
   })(n), [n]), c = null != n.victorEmoji || "NO_VOTES" === l.type;
   return (0, r.jsxs)("div", {
-    className: o()(y.container, {
-      [y.containerWithImage]: c
+    className: o()(x.container, {
+      [x.containerWithImage]: c
     }, t),
     children: [(0, r.jsx)(E, {
       hasNoVotes: "NO_VOTES" === l.type,
@@ -182,7 +182,7 @@ function N(e) {
       }
       return e
     }({}, l)), null != a && (0, r.jsx)(s.zxk, {
-      className: y.button,
+      className: x.button,
       size: s.zxk.Sizes.TINY,
       onClick: a,
       color: s.zxk.Colors.PRIMARY,
@@ -203,7 +203,7 @@ function j(e) {
     channel: a,
     compact: o,
     disableInteraction: u = !1
-  } = e, d = n.embeds[0], p = i.useMemo(() => (0, g.Z)(d), [d]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), x = (0, m.ZP)(n), E = (0, f.l)({
+  } = e, d = n.embeds[0], p = i.useMemo(() => (0, g.Z)(d), [d]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), y = (0, m.ZP)(n), E = (0, f.l)({
     user: n.author,
     channelId: a.id,
     guildId: a.guild_id,
@@ -224,13 +224,13 @@ function j(e) {
       timestamp: n.timestamp,
       compact: o,
       children: v.NW.format(v.t["VJcK4+"], {
-        username: x.nick,
-        usernameHook: E(x),
+        username: y.nick,
+        usernameHook: E(y),
         title: _,
         titleOnClick: j
       })
     }), (0, r.jsx)(N, {
-      className: y.embed,
+      className: x.embed,
       data: p,
       onClickPollLink: u ? void 0 : j
     })]

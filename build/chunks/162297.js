@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(606192),
   b = n(213459),
   v = n(220082),
-  y = n(749681),
-  x = n(258971),
+  x = n(749681),
+  y = n(258971),
   E = n(240991),
   O = n(592125),
   N = n(496675),
@@ -151,13 +151,13 @@ function U(e) {
           size: s.zxk.Sizes.MEDIUM,
           onClick: () => {
             var e;
-            o.Y.USER_INSTALL in (null !== (e = n.integrationTypesConfig) && void 0 !== e ? e : {}) || X ? (0, g.X)(n.id) : (0, y.transitionToGlobalDiscovery)({
+            o.Y.USER_INSTALL in (null !== (e = n.integrationTypesConfig) && void 0 !== e ? e : {}) || X ? (0, g.X)(n.id) : (0, x.transitionToGlobalDiscovery)({
               tab: k.GlobalDiscoveryTab.APPS,
               applicationId: n.id,
               newSessionState: {
                 guildId: I,
                 entrypoint: {
-                  name: x.xF.OAUTH2_EMBED
+                  name: y.xF.OAUTH2_EMBED
                 }
               }
             })

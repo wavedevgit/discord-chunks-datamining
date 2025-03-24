@@ -1,6 +1,6 @@
 /** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(653041);
 var r = n(544891),
   i = n(433517),
@@ -29,7 +29,7 @@ let f = +s.Z.Millis.HOUR,
     location: "auto_update_manager"
   }).nativeUpdateCount,
   v = new l.Z("AutoUpdateManager");
-class y {
+class x {
   destroy() {
     clearInterval(this._checkInterval)
   }
@@ -78,7 +78,7 @@ class y {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "c022f545d05e0be4347050d883576ad1f750ea61" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "ca1691d459b51368dca63c762717f2db2799a908" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, o.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : g;
         if (Date.now() - _ > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)

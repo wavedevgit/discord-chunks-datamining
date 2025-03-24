@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(551428),
   b = n(626135),
   v = n(572004),
-  y = n(601911),
-  x = n(504211),
+  x = n(601911),
+  y = n(504211),
   E = n(970321),
   O = n(680005),
   N = n(981631),
@@ -36,7 +36,7 @@ function S(e) {
   } = e, d = (0, E.R)(t), [p, f, g, _, v, O, S] = (0, a.Wu)([c.Z, h.Z, m.Z], () => {
     var e;
     let n = c.Z.getApplication(t),
-      r = null != n ? (0, y.y)(n, 45) : void 0,
+      r = null != n ? (0, x.y)(n, 45) : void 0,
       i = null === (e = m.Z.getBasicChannel(s.channel_id)) || void 0 === e ? void 0 : e.guild_id;
     return [n, c.Z.isFetchingApplication(t), c.Z.didFetchingApplicationFail(t), h.Z.getStoreLayout(t), h.Z.getFetchStatus(t), i, r]
   }, [t, s.channel_id]);
@@ -75,7 +75,7 @@ function S(e) {
     description: w,
     link: "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(p.id, j.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, x.X)(t, x.B.STORE_EMBED)
+      (0, y.X)(t, y.B.STORE_EMBED)
     },
     iconSrc: S,
     onIconClick: () => {
@@ -109,7 +109,7 @@ function T(e) {
       a = g.Z.get(h),
       o = null !== (n = null == a ? void 0 : null === (t = a.application) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null == a ? void 0 : a.applicationId,
       l = null !== (r = null != o ? c.Z.getApplication(o) : void 0) && void 0 !== r ? r : null == a ? void 0 : a.application,
-      s = null != l ? (0, y.y)(l, 45) : void 0,
+      s = null != l ? (0, x.y)(l, 45) : void 0,
       d = f.Z.getForSKU(h),
       p = (null == a ? void 0 : a.applicationId) === u;
     return [p ? a : null, p ? l : null, _.Z.getForSKU(h), g.Z.isFetching(h), g.Z.didFetchingSkuFail(h), d.length > 0 ? d[0] : null, i, s]
@@ -196,7 +196,7 @@ function T(e) {
     description: V,
     link: "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(T.id, j.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, x.X)(T.id, x.B.SKU_EMBED, h)
+      (0, y.X)(T.id, y.B.SKU_EMBED, h)
     },
     iconSrc: D,
     onIconClick: () => {

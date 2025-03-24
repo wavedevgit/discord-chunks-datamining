@@ -10,8 +10,8 @@ n.d(t, {
 }), n(266796), n(47120);
 var r = n(544891),
   i = n(570140),
-  l = n(479531),
-  o = n(314897),
+  o = n(479531),
+  l = n(314897),
   a = n(594174),
   s = n(970606),
   u = n(308083),
@@ -27,10 +27,10 @@ async function f(e, t, n) {
   try {
     null != e && !0 === t && (0, s.hx)({
       guildId: e,
-      userId: o.default.getId(),
+      userId: l.default.getId(),
       source: n
     });
-    let l = await r.tn.put({
+    let o = await r.tn.put({
       url: c.ANM.USER_SET_CLAN_IDENTITY,
       body: {
         identity_guild_id: e,
@@ -57,7 +57,7 @@ async function f(e, t, n) {
           })
         }
         return e
-      }({}, a.default.getCurrentUser(), l.body)
+      }({}, a.default.getCurrentUser(), o.body)
     })
   } catch (e) {
     return
@@ -78,7 +78,7 @@ function v(e, t) {
   })
 }
 let g = e => {
-  var t, n, r, i, l, o;
+  var t, n, r, i, o, l;
   return {
     tag: e.tag,
     gameApplicationIds: new Set(null !== (r = e.game_application_ids) && void 0 !== r ? r : []),
@@ -87,8 +87,8 @@ let g = e => {
     description: e.description,
     wildcardDescriptors: e.wildcard_descriptors,
     verificationForm: {
-      description: null !== (l = null === (t = e.verification_form) || void 0 === t ? void 0 : t.description) && void 0 !== l ? l : "",
-      formFields: null !== (o = null === (n = e.verification_form) || void 0 === n ? void 0 : n.form_fields) && void 0 !== o ? o : [],
+      description: null !== (o = null === (t = e.verification_form) || void 0 === t ? void 0 : t.description) && void 0 !== o ? o : "",
+      formFields: null !== (l = null === (n = e.verification_form) || void 0 === n ? void 0 : n.form_fields) && void 0 !== l ? l : [],
       version: ""
     },
     badgeKind: e.badge,
@@ -119,14 +119,14 @@ async function b(e, t) {
     guildId: e
   });
   try {
-    var n, o, a, s;
-    let l = await r.tn.patch({
+    var n, l, a, s;
+    let o = await r.tn.patch({
       url: c.ANM.CLAN_SETTINGS(e),
       body: {
         tag: t.tag,
         description: t.description,
         play_style: t.playstyle,
-        search_terms: Array.from(null !== (o = t.interests) && void 0 !== o ? o : new Set),
+        search_terms: Array.from(null !== (l = t.interests) && void 0 !== l ? l : new Set),
         game_application_ids: Array.from(null !== (a = t.gameApplicationIds) && void 0 !== a ? a : new Set),
         verification_form: {
           form_fields: null !== (s = null === (n = t.verificationForm) || void 0 === n ? void 0 : n.formFields) && void 0 !== s ? s : []
@@ -143,11 +143,11 @@ async function b(e, t) {
     });
     return i.Z.dispatch({
       type: "CLAN_SETTINGS_SUBMIT_SUCCESS"
-    }), l.body
+    }), o.body
   } catch (e) {
     throw i.Z.dispatch({
       type: "CLAN_SETTINGS_SUBMIT_ERROR",
-      error: new l.Z(e)
+      error: new o.Z(e)
     }), e
   }
 }

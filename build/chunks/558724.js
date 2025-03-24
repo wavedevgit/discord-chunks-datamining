@@ -56,8 +56,8 @@ let b = {
     lastSeen: null
   },
   v = b,
-  y = {},
-  x = null,
+  x = {},
+  y = null,
   E = 864e5;
 var O = ((i = O || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
 let N = new Set(Object.values(O));
@@ -101,7 +101,7 @@ function j(e) {
           u = (null == s ? void 0 : s.id) === l.ownerId,
           h = d.Z.can(f.Plq.ADMINISTRATOR, l);
         if (t.includes("is_owner") && !u || t.includes("is_admin") && !h) continue;
-        null == (y = null != y ? y : {})[e.key] && (y[e.key] = e);
+        null == (x = null != x ? x : {})[e.key] && (x[e.key] = e);
         let g = p.Z.getGuildId(),
           _ = null != g && g === l.id;
         if ((!t.includes("is_viewing") || _) && !i) return !0
@@ -116,14 +116,14 @@ function C(e) {
   } = e;
   if (v.lastFetched = Date.now(), null == v.hiddenSurveys && (v.hiddenSurveys = {}), null != t && null == v.hiddenSurveys[t.key]) {
     if (!j(t)) return;
-    x = t
+    y = t
   }
 }
 
 function I() {
-  if (null != x && (j(x) || (x = null, 0))) return !1;
+  if (null != y && (j(y) || (y = null, 0))) return !1;
   ! function() {
-    let e = Object.values(y = null != y ? y : {})[0];
+    let e = Object.values(x = null != x ? x : {})[0];
     if (null != e && j(e)) {
       C({
         type: "SURVEY_FETCHED",
@@ -131,7 +131,7 @@ function I() {
       });
       return
     }
-    if (null != x) x = null
+    if (null != y) y = null
   }()
 }
 class S extends(r = o.ZP.PersistedStore) {
@@ -142,7 +142,7 @@ class S extends(r = o.ZP.PersistedStore) {
     return v
   }
   getCurrentSurvey() {
-    return x
+    return y
   }
   getSurveyOverride() {
     return v.surveyOverride
@@ -175,7 +175,7 @@ let T = new S(l.Z, {
     let {
       key: t
     } = e;
-    v.hiddenSurveys[t] = !0, x = null, y = null != y ? y : {}, delete y[t]
+    v.hiddenSurveys[t] = !0, y = null, x = null != x ? x : {}, delete x[t]
   },
   SURVEY_OVERRIDE: function(e) {
     let {

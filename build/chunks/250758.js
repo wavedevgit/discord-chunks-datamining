@@ -16,8 +16,8 @@ var r, i, a, o = n(442837),
   _ = n(594174),
   b = n(981631),
   v = n(388032);
-let y = {},
-  x = {};
+let x = {},
+  y = {};
 
 function E(e) {
   let {
@@ -27,11 +27,11 @@ function E(e) {
     tokens: i,
     cursorScope: a,
     autocompletes: o
-  } = e, l = x[t];
+  } = e, l = y[t];
   return null == l && (l = {
     results: [],
     context: c.Z.getSearchContext(O.bind(null, t))
-  }, x[t] = l), {
+  }, y[t] = l), {
     query: null != n ? n : "",
     mode: null != r ? r : {
       type: b.Sap.EMPTY,
@@ -47,7 +47,7 @@ function E(e) {
 function O(e, t) {
   let {
     results: n
-  } = t, r = x[e], i = y[e];
+  } = t, r = y[e], i = x[e];
   if (null == r || null == i) return;
   let {
     type: a,
@@ -74,7 +74,7 @@ function O(e, t) {
   } = i, {
     autocompletes: p
   } = i;
-  p = C(e, c), y[e] = E({
+  p = C(e, c), x[e] = E({
     searchId: e,
     query: s,
     mode: c,
@@ -92,7 +92,7 @@ function N(e, t, n) {
     d = null !== (i = null == t ? void 0 : null === (r = t.getFullMatch()) || void 0 === r ? void 0 : r.trim()) && void 0 !== i ? i : "",
     p = e === b.dCx.FILTER_FROM || e === b.dCx.FILTER_MENTIONS;
   if (c === b.aib.GUILD && p) {
-    let e = x[n];
+    let e = y[n];
     null == e ? o = null : ((null == t || 0 === d.length) && (e.results = u.ZP.getRecentlyTalked(n, 10).map(e => {
       let {
         record: t
@@ -187,7 +187,7 @@ function I() {
 }
 
 function S(e) {
-  let t = y[e];
+  let t = x[e];
   if (null == t) return;
   let {
     query: n,
@@ -196,7 +196,7 @@ function S(e) {
     cursorScope: a,
     autocompletes: o
   } = t;
-  y[e] = E({
+  x[e] = E({
     searchId: e,
     query: n,
     mode: r,
@@ -208,14 +208,14 @@ function S(e) {
 
 function T() {
   let e = h.Z.getCurrentSearchId();
-  if (null == e || null == y[e]) return;
+  if (null == e || null == x[e]) return;
   let {
     query: t,
     mode: n,
     tokens: r,
     cursorScope: i
-  } = y[e];
-  y[e] = E({
+  } = x[e];
+  x[e] = E({
     searchId: e,
     query: t,
     mode: n,
@@ -230,7 +230,7 @@ class P extends(r = o.ZP.Store) {
   }
   getState(e) {
     var t;
-    return null !== (t = y[e]) && void 0 !== t ? t : E({
+    return null !== (t = x[e]) && void 0 !== t ? t : E({
       searchId: e
     })
   }
@@ -251,8 +251,8 @@ let A = new P(l.Z, {
         } = e,
         o = (0, p.cl)(i),
         l = (0, p.qc)(a, i),
-        s = null !== (t = y[r]) && void 0 !== t ? t : {},
-        c = x[r],
+        s = null !== (t = x[r]) && void 0 !== t ? t : {},
+        c = y[r],
         u = !0;
       if (o === s.query && (null == s.mode || s.mode.filter === l.filter)) n = s.autocompletes, u = !1;
       else if (l.type === b.Sap.EMPTY || l.type === b.Sap.FILTER && l.filter !== b.dCx.FILTER_FROM && l.filter !== b.dCx.FILTER_MENTIONS) null != c && (c.context.clearQuery(), c.results = []), n = C(r, l);
@@ -264,7 +264,7 @@ let A = new P(l.Z, {
           guild: r
         }), n = s.autocompletes, u = !1) : (c.context.clearQuery(), n = C(r, l))
       }
-      return y[r] = E({
+      return x[r] = E({
         searchId: r,
         query: o,
         mode: l,
@@ -276,8 +276,8 @@ let A = new P(l.Z, {
     SEARCH_EDITOR_STATE_CLEAR: function(e) {
       let {
         searchId: t
-      } = e, n = x[t];
-      null != n && (n.context.destroy(), n.results = [], delete x[t]), delete y[t]
+      } = e, n = y[t];
+      null != n && (n.context.destroy(), n.results = [], delete y[t]), delete x[t]
     },
     CHANNEL_CREATE: I,
     CHANNEL_DELETE: I,
@@ -287,10 +287,10 @@ let A = new P(l.Z, {
       let {
         searchId: t
       } = e;
-      null != t ? S(t) : Object.keys(y).forEach(S)
+      null != t ? S(t) : Object.keys(x).forEach(S)
     },
     LOGOUT: function() {
-      Object.keys(y).forEach(S)
+      Object.keys(x).forEach(S)
     }
   }),
   w = A

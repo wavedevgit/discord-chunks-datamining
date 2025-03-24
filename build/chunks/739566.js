@@ -110,33 +110,37 @@ function g(e, t) {
 }
 
 function E(e) {
-  var t, n, r, i;
+  var t, n, r, i, o;
   let {
-    user: o,
-    channel: a,
-    guild: s,
-    guildRoles: l,
-    member: c,
-    userName: u,
-    friendNickname: f
-  } = e, _ = null == o ? "???" : null != u ? u : d.ZP.getName(o);
-  return (null == o ? void 0 : o.id) == null || null == a ? {
-    nick: _,
-    colorString: void 0
-  } : (null == s ? void 0 : s.id) == null ? {
-    nick: null != f ? f : _,
-    colorString: void 0
-  } : null == c ? {
-    nick: _,
-    colorString: void 0
+    user: a,
+    channel: s,
+    guild: l,
+    guildRoles: c,
+    member: u,
+    userName: f,
+    friendNickname: _
+  } = e, p = null == a ? "???" : null != f ? f : d.ZP.getName(a);
+  return (null == a ? void 0 : a.id) == null || null == s ? {
+    nick: p,
+    colorString: void 0,
+    colorStrings: void 0
+  } : (null == l ? void 0 : l.id) == null ? {
+    nick: null != _ ? _ : p,
+    colorString: void 0,
+    colorStrings: void 0
+  } : null == u ? {
+    nick: p,
+    colorString: void 0,
+    colorStrings: void 0
   } : {
-    nick: null !== (n = c.nick) && void 0 !== n ? n : _,
-    colorString: null !== (r = c.colorString) && void 0 !== r ? r : void 0,
-    colorRoleName: null != c.colorRoleId && null != s ? null == l ? void 0 : null === (t = l[c.colorRoleId]) || void 0 === t ? void 0 : t.name : void 0,
-    colorRoleId: c.colorRoleId,
-    iconRoleId: c.iconRoleId,
-    guildMemberAvatar: c.avatar,
-    guildMemberAvatarDecoration: c.avatarDecoration,
-    primaryGuild: null !== (i = o.primaryGuild) && void 0 !== i ? i : void 0
+    nick: null !== (n = u.nick) && void 0 !== n ? n : p,
+    colorString: null !== (r = u.colorString) && void 0 !== r ? r : void 0,
+    colorStrings: null !== (i = u.colorStrings) && void 0 !== i ? i : void 0,
+    colorRoleName: null != u.colorRoleId && null != l ? null == c ? void 0 : null === (t = c[u.colorRoleId]) || void 0 === t ? void 0 : t.name : void 0,
+    colorRoleId: u.colorRoleId,
+    iconRoleId: u.iconRoleId,
+    guildMemberAvatar: u.avatar,
+    guildMemberAvatarDecoration: u.avatarDecoration,
+    primaryGuild: null !== (o = a.primaryGuild) && void 0 !== o ? o : void 0
   }
 }

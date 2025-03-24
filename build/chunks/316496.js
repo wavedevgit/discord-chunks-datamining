@@ -1,10 +1,14 @@
 /** Chunk was on 92196 **/
 n.d(t, {
-  SN: () => o,
-  m_: () => a
+  SN: () => c,
+  m_: () => d
 });
-var r = n(818083);
-let i = (0, r.B)({
+var r = n(442837),
+  i = n(818083),
+  o = n(695346),
+  l = n(885110),
+  a = n(231338);
+let s = (0, i.B)({
   kind: "user",
   id: "2025-02_activity_sharing_popout",
   label: "Enables the rtc popout",
@@ -20,14 +24,14 @@ let i = (0, r.B)({
   }]
 });
 
-function o(e) {
-  return i.useExperiment({
+function c(e) {
+  return s.useExperiment({
     location: e
   }, {
     autoTrackExposure: !0
   })
 }
-let l = (0, r.B)({
+let u = (0, i.B)({
   kind: "user",
   id: "2025-03_activity_sharing_popout_with_invisibility",
   label: "Activity Sharing Popout with Invisibility",
@@ -43,10 +47,14 @@ let l = (0, r.B)({
   }]
 });
 
-function a(e) {
-  return l.useExperiment({
+function d(e) {
+  let t = o.G6.useSetting(),
+    n = (0, r.e7)([l.Z], () => l.Z.getStatus()),
+    i = !t || n === a.Sk.INVISIBLE;
+  return u.useExperiment({
     location: e
   }, {
-    autoTrackExposure: !0
+    autoTrackExposure: !0,
+    disable: !i
   })
 }

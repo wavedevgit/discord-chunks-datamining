@@ -18,8 +18,8 @@ var r, i = n(200651),
   _ = n(29270),
   b = n(709586),
   v = n(267642),
-  y = n(739566),
-  x = n(834129),
+  x = n(739566),
+  y = n(834129),
   E = n(981631),
   O = n(388032),
   N = n(233187);
@@ -174,7 +174,7 @@ function W(e) {
   }()), {
     createMultipleConfettiAt: g,
     confettiCanvas: _
-  } = a.useContext(f.h), [b, v] = a.useState(null), y = (0, s.uR)(_, b), x = function(e, t) {
+  } = a.useContext(f.h), [b, v] = a.useState(null), x = (0, s.uR)(_, b), y = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -230,7 +230,7 @@ function W(e) {
   }, [g, h, d, o]), a.useEffect(() => {
     if (E && "leaf_fall" === d) {
       let e = w[h].leafRotationDirection;
-      y.createConfetti({
+      x.createConfetti({
         id: "".concat(Z, "-").concat((0, c.Z)()),
         position: {
           type: "static",
@@ -278,7 +278,7 @@ function W(e) {
         sprite: "TOP_LEFT" === h ? R : D
       })
     }
-  }, [E, y, h, d]), (0, i.jsxs)(i.Fragment, {
+  }, [E, x, h, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: v,
       sprites: L,
@@ -298,7 +298,7 @@ function W(e) {
         className: l()(N.easterEggAnimation, {
           [N.easterEggAnimationHideLeaf]: O
         }),
-        nextScene: x,
+        nextScene: y,
         sceneSegments: I,
         onScenePlay: j,
         onSceneComplete: C,
@@ -338,7 +338,7 @@ function U(e) {
     {
       reducedMotion: T
     } = a.useContext(p.Sfi),
-    P = (0, y.ZH)(n),
+    P = (0, x.ZH)(n),
     A = P.nick,
     w = l(P);
   t = null == c || null == o ? u > 1 ? O.NW.format(O.t.yfC9dn, {
@@ -390,7 +390,7 @@ function U(e) {
       onMouseEnter: k
     })
   });
-  return (0, i.jsxs)(x.Z, {
+  return (0, i.jsxs)(y.Z, {
     iconNode: M,
     timestamp: n.timestamp,
     compact: r,

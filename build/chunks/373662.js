@@ -60,8 +60,8 @@ function f(e) {
     onClick: _,
     onTooltipShow: b,
     onTooltipHide: v,
-    disabled: y,
-    dangerous: x,
+    disabled: x,
+    dangerous: y,
     separator: E,
     sparkle: O,
     showNewBadge: N,
@@ -105,8 +105,8 @@ function f(e) {
             null == b || b(), _(e)
           },
           "aria-label": null != n ? n : t,
-          disabled: y,
-          dangerous: x
+          disabled: x,
+          dangerous: y
         }, I), c = c = {
           children: [null != h ? (0, r.jsx)(h, p({
             className: d.icon,

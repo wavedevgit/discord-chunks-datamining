@@ -144,8 +144,8 @@ let O = e => {
       location: "CollectiblesFeedShop"
     }), E = null !== (t = null != _ ? _ : v) && void 0 !== t ? t : k, I = (0, i.e7)([d.default], () => d.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), T = (0, h.R)("CollectiblesFeedShop"), {
       noCache: L,
-      includeUnpublished: w
-    } = (0, b.Z)(), P = l.useCallback(() => {
+      includeUnpublished: N
+    } = (0, b.Z)(), w = l.useCallback(() => {
       x()
     }, [x]);
     if (null == I) return null;
@@ -156,12 +156,12 @@ let O = e => {
           isStaff: I.isStaff().toString(),
           preloadEnabled: B.toString(),
           disableCache: L.toString(),
-          includeUnpublished: w.toString()
+          includeUnpublished: N.toString()
         }
       })
     }
     return null != _ ? (0, r.jsx)(p.Z, {
-      onRetry: P,
+      onRetry: w,
       errorOrigin: p.i.SHOP_PAGE,
       errorMessage: _.message
     }) : (0, r.jsx)("div", {

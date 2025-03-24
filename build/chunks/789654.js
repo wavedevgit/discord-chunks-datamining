@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => O,
+  Z: () => N,
   q: () => S
 }), n(627494), n(757143), n(301563), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(13667), n(390547), n(26686);
 var r = n(200651),
@@ -77,14 +77,14 @@ function S(e, t) {
   })
 }
 
-function O() {
+function N() {
   let e = (0, x.Fg)(),
     [t, n, l, o, d, u] = (0, _.zn)(),
     {
       semanticColorOverrides: f,
       rawColorOverrides: y,
       tab: T,
-      scales: O
+      scales: N
     } = t,
     k = a.useMemo(() => {
       let t = Object.entries(f).map(t => {
@@ -117,7 +117,7 @@ function O() {
             l = s().kebabCase(e);
           return ["--".concat(l, "-hsl: ").concat(n, " calc(var(--saturation-factor, 1) * ").concat(r, "%) ").concat(a, "% !important;"), "--".concat(l, ": hsl(var(--").concat(l, "-hsl)) !important;")]
         }),
-        r = O.reduce((e, t) => {
+        r = N.reduce((e, t) => {
           let {
             name: n
           } = t, r = (0, _.XM)(t), a = (0, _.W6)(r, n);
@@ -129,7 +129,7 @@ function O() {
           }, "")
         }, "");
       return "\n      :root {\n        ".concat(r, "\n      }\n\n      .theme-").concat(e, " {\n        ").concat(t.join("\n"), "\n      }\n\n      html {\n        ").concat(n.join("\n"), "\n      }\n    ")
-    }, [y, O, f, e]);
+    }, [y, N, f, e]);
   return (0, r.jsxs)("div", {
     className: g.panel,
     children: [(0, r.jsxs)("div", {
@@ -214,7 +214,7 @@ function O() {
     }), (0, r.jsx)("div", {
       className: g.tab,
       hidden: T !== _.H8.TOKENS,
-      children: (0, r.jsx)(N, {
+      children: (0, r.jsx)(O, {
         state: t,
         setState: n
       })
@@ -234,7 +234,7 @@ function O() {
   })
 }
 
-function N(e) {
+function O(e) {
   let {
     state: t,
     setState: n

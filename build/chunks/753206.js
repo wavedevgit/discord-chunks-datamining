@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(628238),
   s = n(492593),
   u = n(25015),
@@ -15,16 +15,16 @@ var r = n(200651),
 let p = i.memo(function(e) {
   var t, n, i;
   let {
-    message: l,
+    message: o,
     channel: p,
     compact: v,
     className: g,
     isGroupStart: m,
     hideSimpleEmbedContent: b = !0,
     disableInteraction: y
-  } = e, h = (0, a.A)((null !== (t = l.editedTimestamp) && void 0 !== t ? t : l.timestamp).valueOf()), {
+  } = e, h = (0, a.A)((null !== (t = o.editedTimestamp) && void 0 !== t ? t : o.timestamp).valueOf()), {
     content: O
-  } = (0, u.Z)(l, {
+  } = (0, u.Z)(o, {
     hideSimpleEmbedContent: b,
     allowList: h,
     allowHeading: h,
@@ -33,7 +33,7 @@ let p = i.memo(function(e) {
   });
   return (0, r.jsx)(s.Z, {
     compact: v,
-    className: o()(g, {
+    className: l()(g, {
       [f.message]: !0,
       [f.cozyMessage]: !v,
       [f.groupStart]: m

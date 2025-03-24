@@ -1,7 +1,7 @@
 /** Chunk was on 8473 **/
 n.d(t, {
   $: () => E,
-  s: () => x
+  s: () => y
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -25,7 +25,7 @@ let b = e => {
       url: n,
       description: i
     } = t;
-    return null == n ? null : (0, r.jsx)(y, {
+    return null == n ? null : (0, r.jsx)(x, {
       url: n,
       description: i
     })
@@ -37,11 +37,11 @@ let b = e => {
     } = e;
     if (!h.n2.has(a.type)) return null;
     let o = void 0 !== a.video && a.type !== l.h.GIFV ? a.video.url : null !== (i = null === (t = a.thumbnail) || void 0 === t ? void 0 : t.url) && void 0 !== i ? i : null === (n = a.image) || void 0 === n ? void 0 : n.url;
-    return null == o ? null : (0, r.jsx)(y, {
+    return null == o ? null : (0, r.jsx)(x, {
       url: o
     })
   },
-  y = e => {
+  x = e => {
     let {
       url: t,
       description: n
@@ -60,7 +60,7 @@ let b = e => {
     })
   };
 
-function x(e) {
+function y(e) {
   c.Z.pop(), (0, m.t)({
     id: "explicit-media-false-positive-modal",
     text: g.NW.string(g.t.gFsTKi)
@@ -78,14 +78,14 @@ function E(e) {
     onConfirmPress: d,
     transitionState: p,
     onClose: m
-  } = e, h = (0, u.Dt)(), y = i.useCallback(() => {
+  } = e, h = (0, u.Dt)(), x = i.useCallback(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
       messageId: n,
       context: o
     }), m()
-  }, [t, n, o, m]), x = i.useCallback(() => {
+  }, [t, n, o, m]), y = i.useCallback(() => {
     null == d || d(), (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
@@ -106,7 +106,7 @@ function E(e) {
     size: s.CgR.SMALL,
     children: [(0, r.jsxs)(s.hzk, {
       children: [(0, r.jsx)(s.olH, {
-        onClick: y,
+        onClick: x,
         className: _.closeButton
       }), (0, r.jsx)(s.X6q, {
         id: h,
@@ -131,14 +131,14 @@ function E(e) {
         submitting: a,
         size: s.zxk.Sizes.MEDIUM,
         color: s.zxk.Colors.BRAND,
-        onClick: x,
+        onClick: y,
         children: g.NW.string(g.t["cY+Ooa"])
       }), (0, r.jsx)(s.zxk, {
         className: _.button,
         disabled: a,
         color: s.zxk.Colors.TRANSPARENT,
         size: s.zxk.Sizes.MEDIUM,
-        onClick: y,
+        onClick: x,
         children: g.NW.string(g.t["ETE/oK"])
       })]
     })]

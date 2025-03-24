@@ -118,9 +118,10 @@ function W(e) {
 }
 
 function Y(e, t) {
-  let n, r, i, o, s;
+  let n, r, i, o, s, l;
   if (0 === t.length) return {
     colorString: void 0,
+    colorStrings: void 0,
     colorRoleId: void 0,
     hoistRoleId: void 0,
     iconRoleId: void 0,
@@ -128,18 +129,23 @@ function Y(e, t) {
   };
   for (let n of t) {
     let t = e[n];
-    null != t && ((null == s || t.position > s.position) && (s = t), t.color > 0 && (null == r || t.position > r.position) && (r = t), t.hoist && (null == i || t.position > i.position) && (i = t), (null != t.icon || null != t.unicodeEmoji) && (null == o || t.position > o.position) && (o = t))
+    null != t && ((null == l || t.position > l.position) && (l = t), t.color > 0 && (null == i || t.position > i.position) && (i = t), t.hoist && (null == o || t.position > o.position) && (o = t), (null != t.icon || null != t.unicodeEmoji) && (null == s || t.position > s.position) && (s = t))
   }
-  if (null != r) {
-    var l;
-    null == r.colorString && r.color > 0 && (r.colorString = (0, a.Rf)(r.color)), n = null !== (l = r.colorString) && void 0 !== l ? l : void 0
+  if (null != i) {
+    var c, u;
+    null == i.colorString && i.color > 0 && (i.colorString = (0, a.Rf)(i.color)), n = null !== (c = i.colorString) && void 0 !== c ? c : void 0, null == i.colorStrings && null != i.colors && (i.colorStrings = {
+      primaryColor: (0, a.Rf)(i.colors.primary_color),
+      secondaryColor: null != i.colors.secondary_color ? (0, a.Rf)(i.colors.secondary_color) : void 0,
+      tertiaryColor: null != i.colors.tertiary_color ? (0, a.Rf)(i.colors.tertiary_color) : void 0
+    }), r = null !== (u = i.colorStrings) && void 0 !== u ? u : void 0
   }
   return {
     colorString: n,
-    colorRoleId: null == r ? void 0 : r.id,
-    iconRoleId: null == o ? void 0 : o.id,
-    hoistRoleId: null == i ? void 0 : i.id,
-    highestRoleId: null == s ? void 0 : s.id
+    colorStrings: r,
+    colorRoleId: null == i ? void 0 : i.id,
+    iconRoleId: null == s ? void 0 : s.id,
+    hoistRoleId: null == o ? void 0 : o.id,
+    highestRoleId: null == l ? void 0 : l.id
   }
 }
 
@@ -162,11 +168,12 @@ function K(e) {
     flags: v
   } = e, {
     colorString: y,
-    colorRoleId: I,
-    iconRoleId: T,
-    hoistRoleId: A,
-    highestRoleId: R
-  } = Y(l, c), w = {
+    colorStrings: I,
+    colorRoleId: T,
+    iconRoleId: A,
+    hoistRoleId: R,
+    highestRoleId: w
+  } = Y(l, c), D = {
     userId: r,
     nick: i,
     guildId: o,
@@ -174,10 +181,11 @@ function K(e) {
     avatarDecoration: s,
     roles: c,
     colorString: y,
-    colorRoleId: I,
-    iconRoleId: T,
-    hoistRoleId: A,
-    highestRoleId: R,
+    colorStrings: I,
+    colorRoleId: T,
+    iconRoleId: A,
+    hoistRoleId: R,
+    highestRoleId: w,
     premiumSince: u,
     isPending: d,
     joinedAt: f,
@@ -186,16 +194,16 @@ function K(e) {
     fullProfileLoadedTimestamp: g,
     flags: v
   };
-  if ((0, m.yE)(null !== (t = w.flags) && void 0 !== t ? t : 0, O.q.IS_GUEST) && (w.flags = (0, m.pj)(null !== (n = w.flags) && void 0 !== n ? n : 0, O.q.BYPASSES_VERIFICATION)), null == C[o]) return w;
+  if ((0, m.yE)(null !== (t = D.flags) && void 0 !== t ? t : 0, O.q.IS_GUEST) && (D.flags = (0, m.pj)(null !== (n = D.flags) && void 0 !== n ? n : 0, O.q.BYPASSES_VERIFICATION)), null == C[o]) return D;
   if (r === b.default.getId()) {
     if (h.Z.isViewingRoles(o) || h.Z.isFullServerPreview(o)) {
       let e = h.Z.getViewingRoles(o);
-      P[o] = N(S({}, w, h.Z.getMemberOptions(o)), {
+      P[o] = N(S({}, D, h.Z.getMemberOptions(o)), {
         roles: null != e ? E.default.keys(e) : []
       })
     } else null != P[o] && delete P[o]
   }
-  return w
+  return D
 }
 
 function z(e) {

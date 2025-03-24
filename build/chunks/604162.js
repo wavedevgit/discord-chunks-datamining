@@ -1,37 +1,27 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 32249 **/
 n.d(t, {
-  F9: () => a,
-  G6: () => c,
-  JC: () => s,
-  yv: () => l
+  G6: () => l,
+  JC: () => o,
+  yv: () => i
 }), n(47120);
-var r = n(192379),
-  i = n(918701),
-  o = n(388032);
-let a = e => e.percentComplete > 0 ? o.NW.formatToPlainString(o.t["c59/Tk"], {
-    remainTime: (0, i.Ah)(e)
-  }) : o.NW.formatToPlainString(o.t.GNsKiY, {
-    remainTime: (0, i.Ah)(e)
-  }),
-  s = e => null != e.text;
+var r = n(192379);
+let o = e => null != e.text;
 
-function l(e) {
+function i(e) {
   let t = 0 | Math.round(e),
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
 }
 
-function c(e, t) {
+function l(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 2e3,
-    [i, o] = (0, r.useState)(e),
-    a = (0, r.useRef)(null),
-    s = () => {
-      o(t), null != a.current && clearTimeout(a.current), a.current = setTimeout(() => {
-        o(e)
-      }, n)
-    };
+    [o, i] = (0, r.useState)(e),
+    l = (0, r.useRef)(null);
   return (0, r.useEffect)(() => () => {
-    null != a.current && clearTimeout(a.current)
-  }, [e]), [i, s]
+    null != l.current && clearTimeout(l.current)
+  }, [e]), [o, () => {
+    i(t), null != l.current && clearTimeout(l.current), l.current = setTimeout(() => {
+      i(e)
+    }, n)
+  }]
 }

@@ -198,9 +198,9 @@ function V(e) {
           let n = m.NW.formatToPlainString(m.t["8zbGNT"], {
             date: J
           });
-          return null != t && (n = 2 === t.badgeVersion ? m.NW.formatToPlainString(m.t.Hu4jfn, {
+          return null != t && (n = m.NW.formatToPlainString(m.t.Hu4jfn, {
             date: J
-          }) : (0, p.sZ)(t.id, J)), v(E({}, e), {
+          })), v(E({}, e), {
             description: n
           })
         }

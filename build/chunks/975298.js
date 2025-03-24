@@ -26,6 +26,7 @@ function b() {
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
     forceFetch: !1
   }, t = (0, c.e7)([f.default], () => f.default.getCurrentUser()), n = (0, c.Wu)([p.Z], () => p.Z.getFractionalPremium(!1)), i = (0, c.e7)([p.Z], () => p.Z.fetchedAllEntitlements), s = (0, c.Wu)([p.Z], () => p.Z.getUnactivatedFractionalPremiumUnits()), b = (0, c.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()), [v, y] = r.useState({
+    isFractionalPremiumActive: !1,
     fractionalState: E.a$.NONE,
     startsAt: l()(0),
     endsAt: l()(0),
@@ -40,6 +41,7 @@ function b() {
   }), r.useEffect(() => {
     if (null == t || 0 === n.length && 0 === s.length) {
       let e = {
+        isFractionalPremiumActive: !1,
         fractionalState: E.a$.NONE,
         startsAt: l()(0),
         endsAt: l()(0),
@@ -61,8 +63,9 @@ function b() {
       }), Error(t)
     }
     let r = e.length > 0,
-      c = r ? E.a$.FP_ONLY : E.a$.NONE;
-    null != b && b.status === g.O0b.PAUSED && (c = E.a$.FP_SUB_PAUSED), y({
+      c = E.a$.NONE;
+    r && (c = null != b && b.status === g.O0b.PAUSED ? E.a$.FP_SUB_PAUSED : E.a$.FP_ONLY), y({
+      isFractionalPremiumActive: r,
       fractionalState: c,
       startsAt: r ? l()(e[0].startsAt) : l()(0),
       endsAt: r ? l()((0, m.N1)(e[0].endsAt, s)) : l()(0),

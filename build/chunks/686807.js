@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(201895),
-  o = n(471445),
+  o = n(201895),
+  l = n(471445),
   a = n(823379),
   s = n(303737),
   u = n(293810),
@@ -18,10 +18,10 @@ function f(e) {
     channelId: t
   } = e, n = (0, s.m7)(t);
   if (null == n) return "[".concat(c.NW.string(c.t.bz1PZW), "]");
-  let a = n.isMediaChannel() ? i.XBm : (0, o.Th)(n.type);
+  let a = n.isMediaChannel() ? i.XBm : (0, l.Th)(n.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.nn4, {
-      children: (0, l.ZP)({
+      children: (0, o.ZP)({
         channel: n
       })
     }), (0, r.jsxs)("div", {

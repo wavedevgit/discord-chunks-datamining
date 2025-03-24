@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(906732),
   b = n(895924),
   v = n(311819),
-  y = n(321231),
-  x = n(758199),
+  x = n(321231),
+  y = n(758199),
   E = n(943762),
   O = n(914498),
   N = n(208444),
@@ -112,7 +112,7 @@ let B = i.memo(function(e) {
     })
   }, el = er.disabled ? W.NW.string(W.t.JBnc7O) : W.NW.string(W.t.cX9uLS), {
     enabled: es
-  } = y.G.useExperiment({
+  } = x.G.useExperiment({
     location: "EmbeddedActivityInstanceEmbed"
   }), ec = (0, N.z)(ee, () => {
     A.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
@@ -142,7 +142,7 @@ let B = i.memo(function(e) {
         disabledReason: e,
         submitting: ea
       }];
-    return null != ec && p.push(ec), (0, r.jsx)(x.W, {
+    return null != ec && p.push(ec), (0, r.jsx)(y.W, {
       header: j.name,
       title: c,
       iconSrc: t,

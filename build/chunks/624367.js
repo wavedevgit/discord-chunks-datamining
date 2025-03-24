@@ -20,8 +20,8 @@ var i = n(666572),
   _ = n(835473),
   b = n(749681),
   v = n(258971),
-  y = n(914010),
-  x = n(624138),
+  x = n(914010),
+  y = n(624138),
   E = n(135431),
   O = n(566620),
   N = n(365415),
@@ -42,10 +42,10 @@ function w() {
     return e
   }).apply(this, arguments)
 }
-let Z = (0, x.Mg)(l.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
+let Z = (0, y.Mg)(l.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
 
 function k(e) {
-  var t, n, l, x;
+  var t, n, l, y;
   let {
     applicationId: k,
     customId: R,
@@ -54,9 +54,9 @@ function k(e) {
     linkId: M
   } = e, {
     analyticsLocations: W
-  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [U] = (0, _.Z)([k]), F = (0, o.e7)([y.Z], () => {
+  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [U] = (0, _.Z)([k]), F = (0, o.e7)([x.Z], () => {
     var e;
-    return null !== (e = y.Z.getGuildId()) && void 0 !== e ? e : void 0
+    return null !== (e = x.Z.getGuildId()) && void 0 !== e ? e : void 0
   }), B = null == U ? void 0 : null === (t = U.bot) || void 0 === t ? void 0 : t.id, G = null != U && (0, d.ye)(U), {
     currentChannelId: H,
     instanceId: V,
@@ -66,7 +66,7 @@ function k(e) {
     applicationId: k,
     size: Z,
     names: ["embedded_cover"]
-  }), Q = null !== (x = null == U ? void 0 : U.id) && void 0 !== x ? x : "0", J = (0, E.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, E.TK)(Q, (0, m.LD)(F, !1)), ee = async () => {
+  }), Q = null !== (y = null == U ? void 0 : U.id) && void 0 !== y ? y : "0", J = (0, E.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, E.TK)(Q, (0, m.LD)(F, !1)), ee = async () => {
     if ((null == U ? void 0 : U.id) != null) {
       if (K)(0, O.G6)({
         channelId: null != H ? H : void 0,

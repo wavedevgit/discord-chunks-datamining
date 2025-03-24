@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(671533),
   b = n(51144),
   v = n(506071),
-  y = n(696014),
-  x = n(847033),
+  x = n(696014),
+  y = n(847033),
   E = n(544978),
   O = n(893182),
   N = n(388032),
@@ -95,10 +95,10 @@ function S(e) {
   }, [m]), {
     isTruncated: v,
     ExpandableTextContainer: S
-  } = (0, y.s)(), T = (null !== (n = null == d ? void 0 : null === (t = d.description) || void 0 === t ? void 0 : t.trim().length) && void 0 !== n ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
+  } = (0, x.s)(), T = (null !== (n = null == d ? void 0 : null === (t = d.description) || void 0 === t ? void 0 : t.trim().length) && void 0 !== n ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: k
-  } = (0, x.m)(), R = Z === E.y.GUILD_PRODUCTS_PREVIEW ? N.NW.string(N.t["LvXy/P"]) : N.NW.string(N.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
+  } = (0, y.m)(), R = Z === E.y.GUILD_PRODUCTS_PREVIEW ? N.NW.string(N.t["LvXy/P"]) : N.NW.string(N.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(S, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {

@@ -60,7 +60,7 @@ function j(e) {
   }];
   I && B.push({
     tab: _.AW.ORBS,
-    displayText: v.NW.string(v.t.q6uIys)
+    displayText: v.NW.string(v.t["KUYR+P"])
   });
   let T = n ? C.DR : a,
     L = l.useCallback(() => {

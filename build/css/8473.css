@@ -1,6 +1,6 @@
 /**
   Module ID: 8473
-  Original File Name: a5abe2e2d60310d9
+  Original File Name: b574ba012ed9ba32
 **/
 .thumbnailStack__15798 {
     position: relative
@@ -8139,6 +8139,33 @@ html .progress__61462 {
     gap: 16px
 }
 
+.iconContainer__4bcae {
+    display: flex;
+    align-self: center
+}
+
+.content__4bcae {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12)
+}
+
+.textContainer__4bcae {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.action__4bcae {
+    min-height: 32px;
+    min-width: 68px;
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-8) var(--spacing-12)
+}
+
 .thankYouCard_b851f5 {
     position: relative;
     display: flex;
@@ -12228,4 +12255,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=a5abe2e2d60310d9.css.map*/
+/*# sourceMappingURL=b574ba012ed9ba32.css.map*/

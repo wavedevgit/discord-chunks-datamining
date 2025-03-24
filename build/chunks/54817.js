@@ -26,9 +26,9 @@ function g(e) {
     avatarSrc: b,
     eventHandlers: {
       onMouseEnter: v,
-      onMouseLeave: y
+      onMouseLeave: x
     }
-  } = (0, u.m)(!0), x = "" !== t.content ? new Date(t.content).toLocaleString(f.NW.currentLocale, {
+  } = (0, u.m)(!0), y = "" !== t.content ? new Date(t.content).toLocaleString(f.NW.currentLocale, {
     hour: "numeric",
     minute: "2-digit",
     month: "2-digit",
@@ -37,7 +37,7 @@ function g(e) {
   }) : "";
   return (0, r.jsx)("div", {
     onMouseEnter: v,
-    onMouseLeave: y,
+    onMouseLeave: x,
     children: (0, r.jsx)(d.Z, {
       className: a()(h.mainContainer, {
         [h.compact]: n
@@ -79,7 +79,7 @@ function g(e) {
           children: t.type === p.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.NW.format(f.t["+m8eDw"], {
             username: g.nick,
             usernameHook: _,
-            time: x
+            time: y
           }) : f.NW.format(f.t.BHeke3, {
             username: g.nick,
             usernameHook: _

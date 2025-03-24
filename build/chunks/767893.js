@@ -37,7 +37,7 @@ function b(e) {
         channel: t
       }), t.isPrivate() ? null : (0, r.jsx)(l.Fbu, {
         size: "xxs"
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(x, {
         channel: t
       }), n]
     })
@@ -65,7 +65,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     channel: t
   } = e, n = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, !1), a = (0, d.KS)(t, n), o = t.isPrivate() || null == a, l = t.isDM() ? h.NW.formatToPlainString(h.t.smD7XV, {

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -47,7 +47,7 @@ let S = [{
   }
 }];
 
-function O(e) {
+function N(e) {
   let {
     actionLog: t
   } = e, n = a.useMemo(() => t.traces.map(e => ({
@@ -61,7 +61,7 @@ function O(e) {
     })
   })
 }
-let N = [{
+let O = [{
   id: "action",
   name: "Action",
   render(e) {
@@ -98,7 +98,7 @@ let N = [{
     let {
       actionLog: t
     } = e;
-    return (0, r.jsx)(O, {
+    return (0, r.jsx)(N, {
       actionLog: t
     })
   }
@@ -108,7 +108,7 @@ function k(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = a.useMemo(() => t.error ? [...N, {
+  } = e, l = a.useMemo(() => t.error ? [...O, {
     id: "error",
     name: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.Z, {
@@ -139,7 +139,7 @@ function k(e) {
         })]
       })
     }
-  }] : N, [t]), {
+  }] : O, [t]), {
     TabBar: o,
     renderSelectedTab: s
   } = (0, j.Z)({
@@ -196,7 +196,7 @@ let E = [{
     throttleMs: 100
   };
 
-function P() {
+function I() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     l = function(e) {
@@ -225,7 +225,7 @@ function P() {
       m(s), f(e)
     }, [s]),
     S = t.trim().length > 0,
-    O = a.useMemo(() => S ? x : b ? c : s, [s, x, S, b, c]);
+    N = a.useMemo(() => S ? x : b ? c : s, [s, x, S, b, c]);
   return (0, r.jsxs)("div", {
     ref: e,
     className: i()(C.panel, y.panel),
@@ -247,7 +247,7 @@ function P() {
       })]
     }), (0, r.jsx)(v.Z, {
       columns: E,
-      data: O,
+      data: N,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)
     }), null != _ && (0, r.jsx)(k, {

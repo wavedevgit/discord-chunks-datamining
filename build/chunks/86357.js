@@ -68,7 +68,7 @@ let h = e => {
       children: (0, d.Z)(t)
     })
   },
-  y = e => {
+  x = e => {
     let {
       sku: t,
       className: n
@@ -84,7 +84,7 @@ let h = e => {
       })]
     })
   },
-  x = e => {
+  y = e => {
     let {
       className: t
     } = e;
@@ -115,7 +115,7 @@ class E extends(r = l.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, o.jsx)(x, {
+        return (0, o.jsx)(y, {
           className: c()(t, n)
         });
       case 1:
@@ -128,7 +128,7 @@ class E extends(r = l.PureComponent) {
           className: c()(t, n)
         });
       case 2:
-        return (0, o.jsx)(y, {
+        return (0, o.jsx)(x, {
           sku: r,
           className: c()(t, n)
         });
@@ -146,7 +146,7 @@ class E extends(r = l.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, o.jsx)(x, {
+        return (0, o.jsx)(y, {
           className: t
         });
       case 3:
@@ -155,7 +155,7 @@ class E extends(r = l.PureComponent) {
           className: c()(m.directoryHeroPricePremium, t)
         });
       case 2:
-        return (0, o.jsx)(y, {
+        return (0, o.jsx)(x, {
           sku: n,
           className: c()(m.directoryHeroPrice, t)
         });
@@ -174,7 +174,7 @@ class E extends(r = l.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        t = (0, o.jsx)(x, {});
+        t = (0, o.jsx)(y, {});
         break;
       case 2:
         t = (0, o.jsxs)(l.Fragment, {

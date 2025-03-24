@@ -20,8 +20,8 @@ var r, i, a = n(192379),
   _ = n(220444),
   b = n(601070),
   v = n(344185),
-  y = n(569471),
-  x = n(723170),
+  x = n(569471),
+  y = n(723170),
   E = n(675478),
   O = n(581883),
   N = n(131704),
@@ -243,7 +243,7 @@ class V extends o.EventEmitter {
         channels: e
       })
     }, this.handleJoinedThreadsStoreChange = () => {
-      let e = this.state.channels.filter(e => !y.Z.isMuted(e.channelId));
+      let e = this.state.channels.filter(e => !x.Z.isMuted(e.channelId));
       e.length !== this.state.channels.length && this.setState({
         channels: e
       })
@@ -364,7 +364,7 @@ function Y(e, t, n, r) {
         if (Date.now() - e > X) return 6
       }
       if (r.isThread()) {
-        let e = (0, x.J)(r);
+        let e = (0, y.J)(r);
         return e === M.iN.ALL_MESSAGES ? 4 : e === M.iN.NO_MESSAGES ? 7 : 5
       } {
         let n = Z.ZP.getChannelMessageNotifications(e, t),
@@ -404,5 +404,5 @@ function Q(e) {
     c.current = t
   }), a.useLayoutEffect(() => {
     null == l || l.channels, null == l || l.loadState, c.current.maybeLoadMore()
-  }, [null == l ? void 0 : l.channels, null == l ? void 0 : l.loadState]), a.useEffect(() => (T.Z.addChangeListener(t.reloadMessages), () => T.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), a.useEffect(() => (Z.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => Z.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), a.useEffect(() => (y.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => y.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), a.useEffect(() => (v.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => v.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [l, t]
+  }, [null == l ? void 0 : l.channels, null == l ? void 0 : l.loadState]), a.useEffect(() => (T.Z.addChangeListener(t.reloadMessages), () => T.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), a.useEffect(() => (Z.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => Z.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), a.useEffect(() => (x.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => x.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), a.useEffect(() => (v.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => v.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [l, t]
 }

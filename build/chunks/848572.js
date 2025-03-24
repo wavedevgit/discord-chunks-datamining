@@ -1,13 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GG: () => O,
-  Rw: () => N,
-  SI: () => A,
+  GG: () => y,
+  Rw: () => T,
+  SI: () => N,
   Vq: () => E,
-  a1: () => y,
-  j_: () => v,
-  y3: () => I
+  a1: () => v,
+  y3: () => O
 });
 var r = n(913527),
   i = n.n(r),
@@ -66,23 +65,17 @@ let b = () => {
     let e = (0, o.e7)([l.default], () => l.default.getCurrentUser());
     return (0, f.l)(null == e ? void 0 : e.id)
   },
-  v = () => {
-    let {
-      isBadgeVersion2: e
-    } = (0, d.D)();
-    return e ? Object.values(_.q4) : Object.values(_.Ph)
-  },
-  y = e => (0, o.e7)([s.Z], () => {
+  v = e => (0, o.e7)([s.Z], () => {
     if (null == e) return null;
     let t = s.Z.getUserProfile(e);
     return null == t ? void 0 : t.premiumSince
   }),
-  O = () => {
+  y = () => {
     let e = (0, o.e7)([l.default], () => l.default.getCurrentUser());
-    return y(null == e ? void 0 : e.id)
+    return v(null == e ? void 0 : e.id)
   },
-  I = () => {
-    let e = v(),
+  O = () => {
+    let e = Object.values(_.vK),
       t = (0, o.e7)([l.default], () => l.default.getCurrentUser()),
       n = (0, o.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription());
     if (!(0, u.M5)(t, _.p9.TIER_2) || null == n || null == n.premiumSince) return null;
@@ -97,36 +90,35 @@ let b = () => {
       return s >= r ? n : e
     }, null)
   },
-  S = () => {
+  I = () => {
     let e = b(),
       t = (0, o.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription());
     return null == e || null == t || null == t.premiumSince ? null : (0, a.RZ)(e, t.premiumSince)
   },
-  T = () => {
+  S = () => {
     let {
-      enabled: e,
-      version: t
-    } = (0, d.D)(), n = O(), r = v();
-    if (!e || 2 !== t || null == n || null == r) return null;
-    let o = i()().diff(n, "days"),
-      a = r[0],
-      s = 30 * a.tenureReqNumMonths - o;
-    return s <= 0 ? null : g(h({}, a), {
-      daysLeft: s,
+      enabled: e
+    } = (0, d.D)(), t = y(), n = Object.values(_.vK);
+    if (!e || null == t || null == n) return null;
+    let r = i()().diff(t, "days"),
+      o = n[0],
+      a = 30 * o.tenureReqNumMonths - r;
+    return a <= 0 ? null : g(h({}, o), {
+      daysLeft: a,
       status: "upcoming"
     })
   },
-  N = () => {
+  T = () => {
     let e = (0, o.e7)([l.default], () => l.default.getCurrentUser()),
-      t = A(null == e ? void 0 : e.id),
-      n = S(),
-      r = T();
+      t = N(null == e ? void 0 : e.id),
+      n = I(),
+      r = S();
     return null != t ? g(h({}, t), {
       earnedOnDate: n,
       status: "earned"
     }) : null != r ? r : null
   },
-  A = e => {
+  N = e => {
     let t = (0, f.l)(e);
-    return null == t ? null : _.np[t]
+    return null == t ? null : _.vK[t]
   }
