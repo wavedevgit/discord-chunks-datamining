@@ -650,7 +650,8 @@ class en extends r.PureComponent {
     return (0, s.jsxs)(s.Fragment, {
       children: [(0, s.jsxs)(N.xBx, {
         separator: !1,
-        children: [(0, s.jsxs)("div", {
+        children: [(0, s.jsxs)(N.Kqy, {
+          gap: 4,
           className: K.header,
           children: [(0, s.jsx)(N.X6q, {
             variant: "heading-lg/semibold",

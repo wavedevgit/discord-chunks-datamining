@@ -719,37 +719,38 @@ function eh(e) {
   let {
     channel: r,
     iconClassName: o,
-    icon: a,
-    tooltip: s,
-    tooltipPosition: c = "bottom",
-    popoutPosition: u = "bottom",
-    popoutAlign: d = "right",
-    subscribeToGlobalHotkey: p = !1
-  } = e, [m, g] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), b = l.useCallback(() => g(e => !e), []);
-  l.useEffect(() => (p && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, b), () => {
-    V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, b)
-  }), [p, b]);
-  let _ = (0, h.e7)([F.default], () => F.default.getUser(null == r ? void 0 : r.getRecipientId()));
+    className: a,
+    icon: s,
+    tooltip: c,
+    tooltipPosition: u = "bottom",
+    popoutPosition: d = "bottom",
+    popoutAlign: p = "right",
+    subscribeToGlobalHotkey: m = !1
+  } = e, [g, b] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), _ = l.useCallback(() => b(e => !e), []);
+  l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, _), () => {
+    V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, _)
+  }), [m, _]);
+  let C = (0, h.e7)([F.default], () => F.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return (l.useEffect(() => {
     (0, A._)()
-  }, []), null !== (t = null == _ ? void 0 : _.bot) && void 0 !== t && t || null !== (n = null == _ ? void 0 : _.isProvisional) && void 0 !== n && n) ? null : (0, i.jsx)(f.yRy, {
+  }, []), null !== (t = null == C ? void 0 : C.bot) && void 0 !== t && t || null !== (n = null == C ? void 0 : C.isProvisional) && void 0 !== n && n) ? null : (0, i.jsx)(f.yRy, {
     renderPopout: e => (0, i.jsx)(ep, ei(er({}, e), {
       onClose: e.closePopout,
       channel: r
     })),
-    position: u,
-    shouldShow: m,
-    align: d,
-    onRequestClose: () => g(!1),
+    position: d,
+    shouldShow: g,
+    align: p,
+    onRequestClose: () => b(!1),
     animation: f.yRy.Animation.NONE,
     clickTrap: !0,
     children: e => (0, i.jsx)(X.ZP.Icon, ei(er({}, e), {
-      onClick: b,
-      icon: null != a ? a : null == r ? f.kL_ : f.ejJ,
-      className: o,
+      onClick: _,
+      icon: null != s ? s : null == r ? f.kL_ : f.ejJ,
+      className: a,
       iconClassName: o,
-      tooltip: s,
-      tooltipPosition: c
+      tooltip: c,
+      tooltipPosition: u
     }))
   })
 }

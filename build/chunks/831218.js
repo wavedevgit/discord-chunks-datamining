@@ -376,7 +376,8 @@ class G extends(r = o.Component) {
       let {
         section: t
       } = e, {
-        showDMHeader: n
+        showDMHeader: n,
+        isVisualRefreshEnabled: r
       } = this.props;
       return 0 !== t && n ? (0, i.jsxs)(v.Z, {
         className: D.privateChannelsHeaderContainer,
@@ -387,8 +388,9 @@ class G extends(r = o.Component) {
           tooltip: A.NW.string(A.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
+          className: D.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: D.privateChannelRecipientsInviteButtonIcon,
-          icon: p.qJs,
+          icon: r ? p.BRu : p.qJs,
           subscribeToGlobalHotkey: !0
         })]
       }, t) : null

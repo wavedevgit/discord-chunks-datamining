@@ -1,6 +1,6 @@
 /**
   Module ID: 77595
-  Original File Name: 26b595346115ffe9
+  Original File Name: 0fd5464eaf06dc3c
 **/
 .modalRoot__7169d {
     height: 478px
@@ -88,6 +88,11 @@
     position: absolute;
     right: 8px;
     top: 16px
+}
+
+.visual-refresh .closeButton_ac72c6 {
+    right: calc(var(--modal-horizontal-padding) - var(--space-8));
+    top: var(--modal-vertical-padding)
 }
 
 .sectionTitle_ac72c6 {
@@ -212,4 +217,4 @@
     top: 14px
 }
 
-/*# sourceMappingURL=26b595346115ffe9.css.map*/
+/*# sourceMappingURL=0fd5464eaf06dc3c.css.map*/

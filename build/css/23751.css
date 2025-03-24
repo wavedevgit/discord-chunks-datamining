@@ -1,6 +1,6 @@
 /**
   Module ID: 23751
-  Original File Name: 060382941079ce95
+  Original File Name: 3ea68085d953aa9b
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -302,7 +302,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .closeButton__972a0,:where(.visual-refresh) .favoriteIcon__972a0 {
     margin: 0;
-    padding-right: var(--space-sm)
+    padding-right: var(--space-xs)
 }
 
 .subtext__972a0 {
@@ -2114,4 +2114,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=060382941079ce95.css.map*/
+/*# sourceMappingURL=3ea68085d953aa9b.css.map*/

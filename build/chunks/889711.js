@@ -7,11 +7,11 @@ function o(e, t) {
   e.observe(t)
 }
 
-function l(e, t) {
+function i(e, t) {
   e.unobserve(t)
 }
 n.d(t, {
-  UC: () => l,
+  UC: () => i,
   YP: () => o,
   pP: () => r
 })

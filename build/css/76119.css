@@ -1,6 +1,6 @@
 /**
   Module ID: 76119
-  Original File Name: c51ac42a1b2a728b
+  Original File Name: a3052de4eac8fba2
 **/
 .container_fea832 {
     box-sizing: border-box;
@@ -363,6 +363,20 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
 }
 
+.visual-refresh .roleMemberList__01dab,.visual-refresh .searchBox__01dab {
+    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8));
+    padding-left: var(--modal-horizontal-padding)
+}
+
+.visual-refresh .addMemberRow__01dab {
+    margin-left: 0
+}
+
+.visual-refresh .scrollSeparator__01dab {
+    box-shadow: none;
+    border-bottom: 1px solid var(--border-subtle)
+}
+
 .modalRoot__7169d {
     height: 478px
 }
@@ -449,6 +463,11 @@
     position: absolute;
     right: 8px;
     top: 16px
+}
+
+.visual-refresh .closeButton_ac72c6 {
+    right: calc(var(--modal-horizontal-padding) - var(--space-8));
+    top: var(--modal-vertical-padding)
 }
 
 .sectionTitle_ac72c6 {
@@ -573,4 +592,4 @@
     top: 14px
 }
 
-/*# sourceMappingURL=c51ac42a1b2a728b.css.map*/
+/*# sourceMappingURL=a3052de4eac8fba2.css.map*/

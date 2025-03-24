@@ -985,7 +985,10 @@ class X extends(i = a.PureComponent) {
       let {
         onEnded: t
       } = this.props;
-      null != t && t(e)
+      null != t && t(e), this.setState({
+        playing: !1,
+        hideControls: !1
+      })
     }), L(this, "handleMouseMove", () => {
       this._lastMove = Date.now()
     }), L(this, "handleMouseLeave", () => {

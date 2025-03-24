@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 2a1c529907c3bbdf
+  Original File Name: 129c695c09735665
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -6177,6 +6177,20 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
 }
 
+.visual-refresh .roleMemberList__01dab,.visual-refresh .searchBox__01dab {
+    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8));
+    padding-left: var(--modal-horizontal-padding)
+}
+
+.visual-refresh .addMemberRow__01dab {
+    margin-left: 0
+}
+
+.visual-refresh .scrollSeparator__01dab {
+    box-shadow: none;
+    border-bottom: 1px solid var(--border-subtle)
+}
+
 .role_b4b2c3 {
     display: inline-flex;
     align-items: center;
@@ -6202,12 +6216,30 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-right: 4px
 }
 
+.visual-refresh .role_b4b2c3 {
+    border-radius: var(--radius-sm);
+    border: 1px solid color-mix(in oklch,var(--custom-role-label-color,var(--border-subtle)) 20%,var(--border-subtle));
+    background-color: color-mix(in oklch,var(--custom-role-label-color,var(--background-base-low)) 10%,var(--background-base-low))
+}
+
+.visual-refresh .roleColor_b4b2c3 {
+    border: 1px solid color-mix(in oklch,var(--custom-role-label-color,var(--border-subtle)) 20%,var(--border-faint))
+}
+
 .button_fa0dd2 {
     display: inline-flex
 }
 
 .role_fa0dd2:hover {
     background-color: var(--background-modifier-hover)
+}
+
+.visual-refresh .role_fa0dd2:hover {
+    background-color: color-mix(in oklch,var(--custom-role-label-color,var(--background-base-low)) 30%,var(--background-base-low))
+}
+
+.visual-refresh.full-motion .role_fa0dd2 {
+    transition: background-color .2s ease
 }
 
 .removeRole_fa0dd2 {
@@ -8423,6 +8455,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-left: 8px;
     border-radius: var(--radius-sm);
     min-width: var(--custom-app-dm-chat-input-primary-button-width)
+}
+
+.visual-refresh .entryPointAppCommandButton_a83188 {
+    min-height: var(--custom-channel-textarea-text-area-height)
 }
 
 .buttonContainer_e6e74f {
@@ -15260,4 +15296,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=2a1c529907c3bbdf.css.map*/
+/*# sourceMappingURL=129c695c09735665.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 41137
-  Original File Name: 38f5bdb5ebd58181
+  Original File Name: 5480ad14a1016485
 **/
 @value minColumnWidth: 460px;
 
@@ -871,7 +871,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .closeButton__972a0,:where(.visual-refresh) .favoriteIcon__972a0 {
     margin: 0;
-    padding-right: var(--space-sm)
+    padding-right: var(--space-xs)
 }
 
 .subtext__972a0 {
@@ -4265,4 +4265,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=38f5bdb5ebd58181.css.map*/
+/*# sourceMappingURL=5480ad14a1016485.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 6822
-  Original File Name: 6026beffe19b9818
+  Original File Name: ea9e0d4fbb98f8c5
 **/
 @value minColumnWidth: 460px;
 
@@ -871,7 +871,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .closeButton__972a0,:where(.visual-refresh) .favoriteIcon__972a0 {
     margin: 0;
-    padding-right: var(--space-sm)
+    padding-right: var(--space-xs)
 }
 
 .subtext__972a0 {
@@ -4216,4 +4216,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=6026beffe19b9818.css.map*/
+/*# sourceMappingURL=ea9e0d4fbb98f8c5.css.map*/

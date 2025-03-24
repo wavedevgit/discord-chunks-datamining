@@ -150,20 +150,20 @@ let {
     BACKGROUND_MESSAGE_HOVER: {
       "visual-refresh": {
         [r.DARK]: {
-          raw: "OPACITY_4",
-          opacity: .0392156862745098
+          raw: "OPACITY_8",
+          opacity: .0784313725490196
         },
         [r.LIGHT]: {
-          raw: "OPACITY_8",
-          opacity: .0784313725490196
+          raw: "OPACITY_12",
+          opacity: .12156862745098039
         },
         [r.MIDNIGHT]: {
-          raw: "OPACITY_8",
-          opacity: .0784313725490196
+          raw: "OPACITY_12",
+          opacity: .12156862745098039
         },
         [r.DARKER]: {
-          raw: "OPACITY_4",
-          opacity: .0392156862745098
+          raw: "OPACITY_8",
+          opacity: .0784313725490196
         }
       }
     },

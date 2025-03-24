@@ -28,6 +28,9 @@ function s(e) {
     }
   }), (0, r.jsxs)("div", {
     className: l()(n, a.role),
+    style: {
+      "--custom-role-label-color": c
+    },
     children: [t, u, i]
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: ffe790010ed9746d
+  Original File Name: 2ae6dc99ec142703
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4317,7 +4317,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .visual-refresh .header_f37cb1 {
     height: var(--custom-channel-header-height);
     box-sizing: border-box;
-    padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+    padding: var(--space-md);
+    padding-right: calc(var(--space-xs) + var(--space-8));
     box-shadow: none;
     border-bottom: 1px solid var(--border-subtle);
     z-index: 1;
@@ -5249,7 +5250,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .closeButton__972a0,:where(.visual-refresh) .favoriteIcon__972a0 {
     margin: 0;
-    padding-right: var(--space-sm)
+    padding-right: var(--space-xs)
 }
 
 .subtext__972a0 {
@@ -5400,9 +5401,19 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: 2px
 }
 
+.visual-refresh .headerText__99e7c {
+    display: grid;
+    grid-template-columns: 1fr auto
+}
+
+.visual-refresh .privateChannelRecipientsInviteButtonIcon__99e7c,.visual-refresh .privateChannelRecipientsInviteButtonIconContainer__99e7c {
+    width: 16px;
+    height: 16px
+}
+
 .visual-refresh .privateChannelRecipientsInviteButtonIcon__99e7c {
     flex: initial;
-    margin-left: var(--space-8)
+    margin-right: 0
 }
 
 .theme-dark .scroller__99e7c {
@@ -5420,11 +5431,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .visual-refresh .privateChannelsHeaderContainer__99e7c {
-    padding: 0 var(--space-xs) 0 var(--space-md);
+    padding-right: var(--space-xs);
+    padding-left: var(--space-md);
+    padding-top: 0;
+    padding-bottom: var(--space-4);
     justify-content: space-between;
     align-items: center;
-    height: var(--size-24);
-    padding-bottom: 4px
+    height: var(--size-24)
 }
 
 .enable-forced-colors .privateChannelsHeaderContainer__99e7c {
@@ -5848,4 +5861,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=ffe790010ed9746d.css.map*/
+/*# sourceMappingURL=2ae6dc99ec142703.css.map*/

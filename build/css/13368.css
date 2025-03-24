@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 74d0a36eb687d54e
+  Original File Name: a8edd7c72cc566e4
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -3311,7 +3311,7 @@
 }
 
 :where(.visual-refresh) .typeThread__2ea32 .unread__2ea32 {
-    left: -32px
+    left: calc(-15px + var(--space-md)*-1)
 }
 
 :where(.visual-refresh) .typeThread__2ea32.withGuildIcon__2ea32 {
@@ -5587,4 +5587,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=74d0a36eb687d54e.css.map*/
+/*# sourceMappingURL=a8edd7c72cc566e4.css.map*/

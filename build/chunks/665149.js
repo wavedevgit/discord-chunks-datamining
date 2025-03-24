@@ -69,15 +69,16 @@ let h = 24,
       tooltipColor: I,
       tooltipPosition: S = "bottom",
       tooltipDisabled: T,
-      hideOnClick: N = !0,
-      role: A,
-      "aria-label": C,
-      "aria-hidden": R,
-      "aria-checked": P,
-      "aria-expanded": w,
-      "aria-haspopup": D,
-      "data-jump-section": L
-    } = e, x = (0, f.Q3)("BaseHeaderBar"), M = (0, r.jsx)(E, {
+      tooltipSpacing: N,
+      hideOnClick: A = !0,
+      role: C,
+      "aria-label": R,
+      "aria-hidden": P,
+      "aria-checked": w,
+      "aria-expanded": D,
+      "aria-haspopup": L,
+      "data-jump-section": x
+    } = e, M = (0, f.Q3)("BaseHeaderBar"), k = (0, r.jsx)(E, {
       x: 0,
       y: 0,
       width: b,
@@ -87,13 +88,14 @@ let h = 24,
       colorClass: null != m ? m : void 0,
       secondaryColorClass: null != g ? g : void 0,
       color: null != _ ? _ : "currentColor"
-    }), k = C;
-    return null == k && "string" == typeof O && (k = O), (0, r.jsx)(c.ua7, {
+    }), j = R;
+    return null == j && "string" == typeof O && (j = O), (0, r.jsx)(c.ua7, {
       text: O,
       color: I,
       position: S,
-      hideOnClick: N,
+      hideOnClick: A,
       shouldShow: !T,
+      spacing: N,
       children: e => {
         let {
           onMouseEnter: f,
@@ -115,7 +117,7 @@ let h = 24,
             colorClass: null != m ? m : void 0,
             secondaryColorClass: null != g ? g : void 0,
             color: null != _ ? _ : "currentColor",
-            "aria-hidden": R,
+            "aria-hidden": P,
             onMouseEnter: f,
             onMouseLeave: h,
             onFocus: O,
@@ -135,20 +137,20 @@ let h = 24,
             [p.selected]: o,
             [p.iconDisabled]: s
           }),
-          role: A,
-          "aria-label": k,
-          "aria-hidden": R,
-          "aria-checked": P,
-          "aria-haspopup": D,
-          "aria-expanded": w,
+          role: C,
+          "aria-label": j,
+          "aria-hidden": P,
+          "aria-checked": w,
+          "aria-haspopup": L,
+          "aria-expanded": D,
           tabIndex: s || null == v ? -1 : 0,
-          "data-jump-section": L,
+          "data-jump-section": x,
           children: [l ? (0, r.jsx)(d.ZP, {
             mask: "top" === u ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-            height: x ? b : void 0,
-            width: x ? b : void 0,
-            children: M
-          }) : M, l ? (0, r.jsx)("span", {
+            height: M ? b : void 0,
+            width: M ? b : void 0,
+            children: k
+          }) : k, l ? (0, r.jsx)("span", {
             className: a()(p.iconBadge, "top" === u ? p.iconBadgeTop : p.iconBadgeBottom)
           }) : null, i]
         })
