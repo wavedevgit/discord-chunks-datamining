@@ -10,7 +10,7 @@ n.d(t, {
 }), n(301563), n(571269), n(298267), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(887003),
   i = n(46140),
-  o = n(232474);
+  o = n(576641);
 let a = /\.([a-zA-Z0-9]+)$/,
   s = ["video/mp4", "video/webm"];
 var l = function(e) {
@@ -47,8 +47,8 @@ function d(e, t, n) {
         n = "rewardsConfig" in e.config ? e.config.rewardsConfig.rewards[t] : e.config.rewards[t];
       if (n.type === r.w.VIRTUAL_CURRENCY) return {
         url: o.Z,
-        mimetype: "image/png",
-        isAnimated: !1
+        mimetype: "video/webm",
+        isAnimated: !0
       };
       a = u(n.assetVideo, n.asset);
       break

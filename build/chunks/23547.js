@@ -1,6 +1,6 @@
 /** Chunk was on 20565 **/
 r.d(t, {
-  Mm: () => b,
+  Mm: () => m,
   jj: () => f,
   wH: () => d
 });
@@ -32,7 +32,7 @@ function s(e) {
 let u = "balance-widget-menu-coachmark-modal",
   d = () => (0, c.nfh)(u),
   f = () => (0, c.Mr3)(u),
-  m = {
+  b = {
     modalKey: u,
     onCloseCallback: l.j2,
     onCloseRequest: async () => {
@@ -40,7 +40,7 @@ let u = "balance-widget-menu-coachmark-modal",
     }
   };
 
-function b(e) {
+function m(e) {
   let t = (0, o.cj)([i.Z], () => i.Z.earnedOrbsCoachmark),
     {
       shouldOpen: l,
@@ -66,7 +66,7 @@ function b(e) {
           BalanceWidgetEarnedOrbsCoachmarkModal: e
         } = await r.e("82081").then(r.bind(r, 720463));
         return t => (0, n.jsx)(e, s({}, i, t))
-      }, m)
+      }, b)
     } else !l && t && f()
   }, [l, u, e]), s({}, t)
 }

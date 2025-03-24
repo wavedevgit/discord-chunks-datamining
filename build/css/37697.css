@@ -1,6 +1,6 @@
 /**
   Module ID: 37697
-  Original File Name: d4de52a1657976a8
+  Original File Name: 22f7e1714661d241
 **/
 @value headerBarHeight 60px;
 
@@ -162,7 +162,7 @@
 .headerBar__1a9ce {
     position: sticky;
     top: 0;
-    height: 56px;
+    height: var(--custom-channel-header-height);
     padding: 0 12px;
     background-color: var(--bg-base-secondary);
     border-bottom: 1px solid var(--border-subtle)
@@ -2626,4 +2626,4 @@
     height: 22px
 }
 
-/*# sourceMappingURL=d4de52a1657976a8.css.map*/
+/*# sourceMappingURL=22f7e1714661d241.css.map*/
