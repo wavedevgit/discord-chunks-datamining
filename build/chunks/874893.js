@@ -35,7 +35,7 @@ let s = {
     [r.Q2.MIDNIGHT]: i.BRd.DARK
   },
   u = {
-    [r.Q2.UNSET]: i.BRd.DARK,
+    [r.Q2.UNSET]: i.BRd.DARKER,
     [r.Q2.DARK]: i.BRd.DARK,
     [r.Q2.DARKER]: i.BRd.DARKER,
     [r.Q2.LIGHT]: i.BRd.LIGHT,

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   o = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   s = n(481060),
   a = n(393903),
   c = n(604162),
@@ -24,20 +24,20 @@ function f(e) {
   let {
     percent: t,
     animate: n,
-    interactionEnabled: i,
+    interactionEnabled: l,
     backgroundColor: f,
     preloadedBuffers: v,
     duration: g,
     maxSeekableTime: E,
     onClick: b,
     onScrubBack: O,
-    onScrubForward: S
-  } = e, [h, C] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
+    onScrubForward: h
+  } = e, [S, C] = o.useState(null), [j, y] = o.useState(null), [x, _] = o.useState(null), [N, D] = o.useState(!1), P = o.useRef(null), T = e => {
     P.current = e, C(e)
   };
   o.useEffect(() => {
-    null != h && (null == E ? x(null) : x(p(E, g, h)))
-  }, [h, E, g]);
+    null != S && (null == E ? _(null) : _(p(E, g, S)))
+  }, [S, E, g]);
   let I = (0, a.y)(() => {
     null != I.current && T(I.current.getBoundingClientRect())
   });
@@ -56,35 +56,35 @@ function f(e) {
       let {
         key: t
       } = e;
-      t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
-    }, [O, S]),
-    A = null != j && null != h ? m(j, h, g) : 0,
+      t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != h && (e.preventDefault(), e.stopPropagation(), h())
+    }, [O, h]),
+    A = null != j && null != S ? m(j, S, g) : 0,
     L = (0, c.yv)(A),
-    R = null != h ? h.right - p(t / 100 * g, g, h) : null,
-    M = null != j && null != h ? h.right - j : null,
-    V = null != _ && null != h ? h.right - _ : null;
+    R = null != S ? S.right - p(t / 100 * g, g, S) : null,
+    M = null != j && null != S ? S.right - j : null,
+    V = null != x && null != S ? S.right - x : null;
   return (0, r.jsxs)("div", {
     className: d.cont,
     ref: I,
     children: [(0, r.jsxs)(s.P3F, {
-      className: l()(d.hitboxArea, {
-        [d.interactionEnabled]: i
+      className: i()(d.hitboxArea, {
+        [d.interactionEnabled]: l
       }),
       ignoreKeyPress: !0,
       onClick: e => {
-        i && null != b && b(m(e.clientX, e.currentTarget.getBoundingClientRect(), g))
+        l && null != b && b(m(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        i && (null != I.current && T(I.current.getBoundingClientRect()), N(!0), w(e))
+        l && (null != I.current && T(I.current.getBoundingClientRect()), D(!0), w(e))
       },
       onMouseLeave: e => {
-        i && (N(!1), y(null))
+        l && (D(!1), y(null))
       },
       onMouseMove: e => {
-        i && D && w(e)
+        l && N && w(e)
       },
       onKeyDown: k,
-      tabIndex: i ? void 0 : -1,
+      tabIndex: l ? void 0 : -1,
       focusProps: {
         offset: {
           top: 12,
@@ -92,14 +92,14 @@ function f(e) {
         }
       },
       children: [null == v ? void 0 : v.map(e => (0, r.jsx)("div", {
-        className: l()(d.buffer, {
-          [d.bufferHovered]: D
+        className: i()(d.buffer, {
+          [d.bufferHovered]: N
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
           left: "".concat(100 * e.start, "%")
         }
-      }, "".concat(e.start, ":").concat(e.size))), !i && null != V && V > 0 && (0, r.jsx)("div", {
+      }, "".concat(e.start, ":").concat(e.size))), !l && null != V && V > 0 && (0, r.jsx)("div", {
         className: d.seekableBar,
         style: {
           right: null != V ? "".concat(V, "px") : "auto",
@@ -110,9 +110,9 @@ function f(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != f ? f : void 0,
-        size: D ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
+        size: N ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != L && (0, r.jsx)(s.Text, {
+      }), N && null != L && (0, r.jsx)(s.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -120,7 +120,7 @@ function f(e) {
           color: "#FFFFFF"
         },
         children: L
-      }), D && i && null != R && (0, r.jsx)("div", {
+      }), N && l && null != R && (0, r.jsx)("div", {
         className: d.grabber,
         style: {
           right: "".concat(R - 6, "px")

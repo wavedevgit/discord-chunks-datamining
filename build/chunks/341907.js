@@ -1,17 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  formatVideoProgressRatio: () => Z,
-  loadVideoQuestModal: () => H,
+  loadVideoQuestModal: () => Z,
   maybeShowSurveyForQuest: () => V,
   navigateToQuestHome: () => F,
-  openAppWithQuest: () => K,
+  openAppWithQuest: () => Y,
   openDisclosureModal: () => B,
   openQuestInGameRewardModal: () => U,
   openQuestOrbsRewardModal: () => G,
   openQuestsNitroRewardModal: () => j,
   openQuestsRewardCodeModal: () => k,
-  openVideoQuestModal: () => W
+  openVideoQuestModal: () => H
 });
 var r = n(200651);
 n(192379);
@@ -198,21 +197,17 @@ function V(e) {
   })
 }
 
-function Z(e, t) {
-  return e <= 0 || t <= 0 ? 0 : e >= t ? 1 : Math.min(1, Math.round(e / t * 100) / 100)
-}
-
-function H() {
+function Z() {
   return Promise.all([n.e("29976"), n.e("32249"), n.e("31117")]).then(n.bind(n, 536687))
 }
 
-function W(e) {
+function H(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = (0, i.Z)();
   (0, s.ZDy)(async () => {
     let {
       default: i
-    } = await H();
+    } = await Z();
     return o => (0, r.jsx)(i, L(w({}, o), {
       openStartClockTime: performance.now(),
       questId: e.id,
@@ -228,7 +223,7 @@ function W(e) {
       if (null == i) return;
       let o = E.Z.getQuest(e.id);
       null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, v.FI)(o, i.maxTimestampSec);
-      let a = Z(i.maxTimestampSec, i.duration);
+      let a = (0, v.bA)(i.maxTimestampSec, i.duration);
       (0, g.dA)({
         questId: e.id,
         event: C.rMx.QUEST_VIDEO_PROGRESSED,
@@ -250,7 +245,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let n = null === (t = platform.os) || void 0 === t ? void 0 : t.family,
     r = "quest";
@@ -267,8 +262,8 @@ function Y(e) {
   return "discord://"
 }
 
-function K(e) {
-  let t = Y(e),
+function Y(e) {
+  let t = W(e),
     n = (0, o.zS)(t);
   null != n && h.default.track(C.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, a.K)(n.fingerprint),

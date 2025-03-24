@@ -48,6 +48,9 @@ class v {
   getId() {
     return this.id
   }
+  getQuestContentPosition() {
+    return this.questContentPosition
+  }
   constructor({
     questOrQuests: e,
     questContent: t,

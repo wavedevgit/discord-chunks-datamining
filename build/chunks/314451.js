@@ -1,21 +1,19 @@
 /** Chunk was on 8473 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(442837),
   o = n(481060),
   l = n(782568),
-  s = n(540059),
-  c = n(31336),
-  u = n(906467),
-  d = n(594174),
-  p = n(63063),
-  m = n(665149),
-  f = n(388032);
+  s = n(31336),
+  c = n(906467),
+  u = n(63063),
+  d = n(665149),
+  p = n(388032);
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,91 +32,72 @@ function h(e) {
   return e
 }
 
-function g(e) {
+function f(e) {
   let {
     className: t
-  } = e, g = (0, a.e7)([u.Z], () => u.Z.isDeveloper), [_, b] = i.useState(!1), [v, x] = i.useState(0), y = (0, a.e7)([d.default], () => {
-    var e, t, n;
-    return null !== (n = null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : null === (e = t.isStaff) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
-  }), E = (0, s.Q3)("StaffHelpButton"), O = e => {
-    clearTimeout(v), x(setTimeout(() => {
-      b(e)
+  } = e, f = (0, a.e7)([c.Z], () => c.Z.isDeveloper), [h, g] = i.useState(!1), [_, b] = i.useState(0), v = e => {
+    clearTimeout(_), b(setTimeout(() => {
+      g(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => O(!0),
-    onMouseLeave: () => O(!1),
+    onMouseEnter: () => v(!0),
+    onMouseLeave: () => v(!1),
     children: (0, r.jsx)(o.yRy, {
-      shouldShow: _,
+      shouldShow: h,
       animation: o.yRy.Animation.NONE,
       position: "bottom",
       align: "right",
       autoInvert: !1,
-      onRequestOpen: () => b(!0),
-      onRequestClose: () => b(!1),
+      onRequestOpen: () => g(!0),
+      onRequestClose: () => g(!1),
       renderPopout: () => (function(e) {
         let {
           onClose: t,
-          isDiscordDeveloper: i,
-          isStaff: a,
-          isRefreshEnabled: s
+          isDiscordDeveloper: i
         } = e;
         return (0, r.jsx)(o.v2r, {
           onSelect: () => {},
           navId: "staff-help-popout",
           variant: "fixed",
           onClose: t,
-          "aria-label": f.NW.string(f.t.HpQykZ),
+          "aria-label": p.NW.string(p.t.HpQykZ),
           children: (0, r.jsxs)(o.kSQ, {
             children: [(0, r.jsx)(o.sNh, {
               id: "staff-help-bug-reporter",
-              label: f.NW.string(f.t["5Lqopa"]),
+              label: p.NW.string(p.t["5Lqopa"]),
               icon: o.nnZ,
               action: () => (0, o.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("83051").then(n.bind(n, 115072));
-                return t => (0, r.jsx)(e, h({}, t))
+                return t => (0, r.jsx)(e, m({}, t))
               })
             }), i && (0, r.jsx)(o.sNh, {
               id: "staff-devtools",
               label: "Toggle DevTools",
               icon: o.Ymb,
-              action: () => (0, c.SO)()
-            }), s && a && (0, r.jsx)(o.sNh, {
-              id: "show-refresh-onboarding",
-              label: "Show Refresh Onboarding",
-              icon: o.DuK,
-              action: () => void(0, o.ZDy)(async () => {
-                let {
-                  DesktopRefreshOnboardingModal: e
-                } = await n.e("49910").then(n.bind(n, 239191));
-                return t => (0, r.jsx)(e, h({}, t))
-              }, {
-                backdropStyle: o.fCB.TOP_RADIAL
-              })
+              action: () => (0, s.SO)()
             }), (0, r.jsx)(o.sNh, {
               id: "staff-help-center",
               label: "Go to Help Center",
               icon: o.rgF,
-              action: () => (0, l.Z)(p.w)
+              action: () => (0, l.Z)(u.w)
             })]
           })
         })
       })({
-        onClose: () => b(!1),
-        isDiscordDeveloper: g,
-        isStaff: y,
-        isRefreshEnabled: E
+        onClose: () => g(!1),
+        isDiscordDeveloper: f
       }),
       children: (e, n) => {
         var i, a;
         let {
           isShown: l
         } = n;
-        return (0, r.jsx)(m.JO, (i = h({}, e), a = a = {
+        return (0, r.jsx)(d.JO, (i = m({}, e), a = a = {
           icon: o.nnZ,
-          "aria-label": f.NW.string(f.t.cqEoj4),
+          "aria-label": p.NW.string(p.t.cqEoj4),
           selected: l,
           className: t
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {

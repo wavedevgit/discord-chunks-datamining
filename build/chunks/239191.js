@@ -12,8 +12,8 @@ var r = s(200651),
   d = s(153867),
   m = s(131388),
   h = s(514361),
-  p = s(47760),
-  g = s(210887),
+  g = s(47760),
+  p = s(210887),
   u = s(740492),
   y = s(695346),
   x = s(874893),
@@ -64,8 +64,8 @@ function N(e) {
               className: a()(e.className, O.option),
               style: e.style,
               children: [i && (0, r.jsx)(c.Text, {
-                variant: "text-md/medium",
-                color: "header-primary",
+                variant: "text-sm/medium",
+                color: "text-primary",
                 children: e.label
               }), e.new && (0, r.jsx)(c.IGR, {
                 color: c.TVs.colors.BG_BRAND.css,
@@ -95,7 +95,7 @@ let f = [{
     className: a()("theme-light", O.themeOption)
   }, {
     id: b.BR.DARK,
-    label: j.NW.string(j.t.GEaO9P),
+    label: j.NW.string(j.t.SMPT1t),
     className: a()("theme-dark", O.themeOption)
   }, {
     id: b.BR.DARKER,
@@ -104,7 +104,7 @@ let f = [{
     new: !0
   }, {
     id: b.BR.MIDNIGHT,
-    label: j.NW.string(j.t.pQwSpa),
+    label: j.NW.string(j.t.Do4ZJy),
     className: a()("theme-midnight", O.themeOption),
     new: !0
   }],
@@ -123,7 +123,7 @@ function _(e) {
   let {
     transitionState: t,
     onClose: s
-  } = e, [i] = n.useState(() => h.Z.gradientPreset), b = (0, l.e7)([g.Z], () => g.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === x.KW.ON), [w, k] = n.useState(() => _ ? "system" : null != i ? "gradient" : b), {
+  } = e, [i] = n.useState(() => h.Z.gradientPreset), b = (0, l.e7)([p.Z], () => p.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === x.KW.ON), [w, k] = n.useState(() => _ ? "system" : null != i ? "gradient" : b), {
     density: P
   } = (0, c.TCT)(), C = n.useMemo(() => {
     if (null == i && !_) return f;
@@ -134,7 +134,7 @@ function _(e) {
         angle: s,
         theme: r,
         getName: n
-      } = i, l = (0, p.VK)({
+      } = i, l = (0, g.VK)({
         colors: t,
         angle: s
       }), o = n();
@@ -164,14 +164,17 @@ function _(e) {
       className: O.header,
       children: (0, r.jsxs)(c.Kqy, {
         gap: K ? 4 : 8,
-        children: [(0, r.jsx)("div", {
-          className: O.headerImage
+        children: [(0, r.jsxs)(c.Kqy, {
+          gap: K ? 8 : 16,
+          children: [(0, r.jsx)("div", {
+            className: O.headerImage
+          }), (0, r.jsx)(c.X6q, {
+            variant: K ? "heading-lg/semibold" : "heading-xl/semibold",
+            color: "header-primary",
+            children: j.NW.string(j.t["7+iCGx"])
+          })]
         }), (0, r.jsx)(c.X6q, {
-          variant: K ? "heading-lg/semibold" : "heading-xl/semibold",
-          color: "header-primary",
-          children: j.NW.string(j.t["7+iCGx"])
-        }), (0, r.jsx)(c.Text, {
-          variant: K ? "text-sm/medium" : "text-md/medium",
+          variant: K ? "heading-sm/medium" : "heading-md/medium",
           color: "text-secondary",
           children: j.NW.string(j.t.fZMMqK)
         })]
@@ -179,7 +182,7 @@ function _(e) {
     }), (0, r.jsx)(c.hzk, {
       className: O.content,
       children: (0, r.jsxs)(c.Kqy, {
-        gap: K ? 16 : 24,
+        gap: K ? 24 : 32,
         children: [(0, r.jsxs)(c.Kqy, {
           gap: K ? 8 : 12,
           children: [(0, r.jsx)(c.X6q, {
@@ -228,7 +231,7 @@ function _(e) {
                 text: j.NW.string(j.t.y2b7CA)
               })]
             }), (0, r.jsx)(c.Text, {
-              variant: K ? "text-sm/medium" : "text-md/medium",
+              variant: "text-sm/medium",
               color: "text-secondary",
               children: j.NW.string(j.t["2w1sEB"])
             })]
