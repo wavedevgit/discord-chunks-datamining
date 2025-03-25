@@ -7340,6 +7340,7 @@ let {
     NEUTRAL_31: "#8d8d95",
     NEUTRAL_32: "#8a8a92",
     NEUTRAL_33: "#86868e",
+    NEUTRAL_34: "#83838b",
     NEUTRAL_36: "#7c7c84",
     NEUTRAL_37: "#787881",
     NEUTRAL_38: "#75757e",

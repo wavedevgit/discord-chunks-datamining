@@ -13,8 +13,8 @@ var n = a(200651),
   u = a(626135),
   _ = a(981631),
   p = a(388032),
-  m = a(646794);
-class h extends s.Component {
+  h = a(646794);
+class m extends s.Component {
   shouldScrollToTop(e) {
     let {
       location: t
@@ -37,9 +37,9 @@ class h extends s.Component {
           locale: o,
           authRedirectTo: e.pathname,
           track: u.default.track,
-          className: m.marketingHeader,
+          className: h.marketingHeader,
           onChangeLocale: this.handleHeaderLocaleChange,
-          mobileClassName: m.marketingHeader,
+          mobileClassName: h.marketingHeader,
           openNavAriaLabel: p.NW.string(p.t.Fs9k3N),
           hideNavAriaLabel: p.NW.string(p.t.AbfyHB),
           skipToContentLabel: p.NW.string(p.t["18gavL"])
@@ -48,7 +48,7 @@ class h extends s.Component {
           authRedirectTo: e.pathname,
           avoidRouter: !0,
           track: u.default.track,
-          className: m.marketingFooter
+          className: h.marketingFooter
         })]
       })
     })
@@ -67,4 +67,4 @@ class h extends s.Component {
 }
 let N = o.ZP.connectStores([d.default], () => ({
   locale: d.default.locale
-}))(h)
+}))(m)

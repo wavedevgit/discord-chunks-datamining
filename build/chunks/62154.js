@@ -1,6 +1,6 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  Z: () => x
+  Z: () => _
 });
 var r = t(200651);
 t(192379);
@@ -15,24 +15,24 @@ var o = t(442837),
   f = t(681837),
   p = t(91433),
   b = t(944043),
-  m = t(502762),
+  y = t(502762),
   v = t(530),
   g = t(740628),
-  y = t(643518),
+  m = t(643518),
   I = t(228168),
   j = t(981631),
   h = t(835145);
 
-function x(e) {
+function _(e) {
   var n;
   let {
     user: t,
-    currentUser: x,
-    guildId: _,
+    currentUser: _,
+    guildId: x,
     channelId: O,
     displayProfile: Z,
-    initialSection: N,
-    initialSubsection: P,
+    initialSection: P,
+    initialSubsection: N,
     friendToken: E,
     onClose: S
   } = e, {
@@ -43,11 +43,11 @@ function x(e) {
     originApplicationId: s.Z.getOriginApplicationId(t.id)
   })), A = (0, l.vh)(t.id), w = (0, i.wn)({
     location: "UserProfileModalBody"
-  }), L = t.id === x.id, R = (0, a.I5)(x), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), B = (0, y.Z)({
+  }), L = t.id === _.id, R = (0, a.I5)(_), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), B = (0, m.Z)({
     user: t,
-    currentUser: x,
-    guildId: _,
-    initialSubsection: P
+    currentUser: _,
+    guildId: x,
+    initialSubsection: N
   });
   return (0, r.jsxs)("div", {
     className: h.body,
@@ -65,7 +65,7 @@ function x(e) {
         profileType: I.y0.FULL_SIZE,
         onClose: S
       })
-    }), T === j.OGo.PENDING_INCOMING && (0, r.jsx)(m.Z.Overlay, {
+    }), T === j.OGo.PENDING_INCOMING && (0, r.jsx)(y.Z.Overlay, {
       className: h.friendRequestBannerOverlay,
       children: (0, r.jsx)(p.Z, {
         user: t,
@@ -75,7 +75,7 @@ function x(e) {
         friendToken: E,
         className: h.friendRequestBanner
       })
-    }), w && A.map(e => (0, r.jsx)(m.Z.Overlay, {
+    }), w && A.map(e => (0, r.jsx)(y.Z.Overlay, {
       className: h.friendRequestBannerOverlay,
       children: (0, r.jsx)(p.Z, {
         user: t,
@@ -90,16 +90,16 @@ function x(e) {
     }), L && (0, r.jsx)(u.Z, {
       isPremiumUser: R,
       onInteraction: S
-    }), (0, r.jsx)(m.Z.Overlay, {
+    }), (0, r.jsx)(y.Z.Overlay, {
       className: h.overlay,
       children: (0, r.jsx)(g.Z, {
         user: t,
-        currentUser: x,
+        currentUser: _,
         displayProfile: Z,
-        guildId: _,
+        guildId: x,
         items: B,
-        initialSection: N,
-        initialSubsection: P,
+        initialSection: P,
+        initialSubsection: N,
         onClose: S
       })
     })]

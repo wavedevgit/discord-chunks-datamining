@@ -15,10 +15,10 @@ var o = t(442837),
   f = t(748545),
   p = t(172351),
   b = t(280885),
-  m = t(900927),
+  y = t(900927),
   v = t(678738),
   g = t(179828),
-  y = t(228168),
+  m = t(228168),
   I = t(388032),
   j = t(330724);
 
@@ -27,12 +27,12 @@ function h(e) {
   let {
     user: t,
     currentUser: h,
-    displayProfile: x,
-    subsection: _,
+    displayProfile: _,
+    subsection: x,
     onClose: O
   } = e, {
     trackUserProfileAction: Z
-  } = (0, d.KZ)(), N = (0, o.e7)([c.Z], () => (null == x ? void 0 : x.guildId) != null ? c.Z.getGuild(x.guildId) : null), P = (0, o.e7)([u.Z], () => {
+  } = (0, d.KZ)(), P = (0, o.e7)([c.Z], () => (null == _ ? void 0 : _.guildId) != null ? c.Z.getGuild(_.guildId) : null), N = (0, o.e7)([u.Z], () => {
     var e;
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
   }), E = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId())), S = (0, f.k)({
@@ -41,34 +41,34 @@ function h(e) {
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
     className: j.scroller,
-    children: [(null == x ? void 0 : x.bio) != null && (null == x ? void 0 : x.bio) !== "" && (0, r.jsx)(b.Z, {
-      userBio: x.bio,
+    children: [(null == _ ? void 0 : _.bio) != null && (null == _ ? void 0 : _.bio) !== "" && (0, r.jsx)(b.Z, {
+      userBio: _.bio,
       setLineClamp: !1
-    }), (null == P ? void 0 : P.popularApplicationCommandIds) != null && null != E && (0, r.jsx)(p.Z, {
-      applicationId: P.id,
-      commandIds: P.popularApplicationCommandIds,
+    }), (null == N ? void 0 : N.popularApplicationCommandIds) != null && null != E && (0, r.jsx)(p.Z, {
+      applicationId: N.id,
+      commandIds: N.popularApplicationCommandIds,
       channel: E,
-      guildId: null !== (n = null == x ? void 0 : x.guildId) && void 0 !== n ? n : void 0,
+      guildId: null !== (n = null == _ ? void 0 : _.guildId) && void 0 !== n ? n : void 0,
       onClick: O
-    }), null != N && (0, r.jsx)(g.Z, {
+    }), null != P && (0, r.jsx)(g.Z, {
       user: t,
       currentUser: h,
-      guild: N,
-      scrollIntoView: _ === y.Tb.ROLES
+      guild: P,
+      scrollIntoView: x === m.Tb.ROLES
     }), (0, r.jsx)(v.Z, {
       heading: I.NW.string(I.t["A//N4u"]),
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(y.Z, {
         userId: t.id,
-        guildId: null == x ? void 0 : x.guildId,
-        tooltipDelay: y.vB
+        guildId: null == _ ? void 0 : _.guildId,
+        tooltipDelay: m.vB
       })
     }), (0, r.jsx)(v.Z, {
       heading: S,
-      scrollIntoView: _ === y.Tb.NOTE,
+      scrollIntoView: x === m.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: t.id,
         className: j.note,
-        autoFocus: _ === y.Tb.NOTE,
+        autoFocus: x === m.Tb.NOTE,
         onUpdate: () => Z({
           action: "SET_NOTE"
         })

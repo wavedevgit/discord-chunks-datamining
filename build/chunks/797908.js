@@ -18,23 +18,25 @@ let m = function(e) {
     application: h,
     onSelectApplication: g,
     showCategory: f = !1
-  } = e, _ = null === (t = h.categories) || void 0 === t ? void 0 : t[0], [b, v] = a.useState(!1), x = a.useCallback(e => {
-    e && v(!0)
-  }, []), C = (0, o.lf)(h), j = a.useCallback(() => {
+  } = e, _ = a.useRef(null), b = null === (t = h.categories) || void 0 === t ? void 0 : t[0], [v, x] = a.useState(!1), C = a.useCallback(e => {
+    e && x(!0)
+  }, []), j = (0, o.lf)(h), y = a.useCallback(() => {
     g(h.id)
-  }, [g, h.id]), y = a.useMemo(() => b ? c.ZP.getApplicationIconURL({
+  }, [g, h.id]), O = a.useMemo(() => v ? c.ZP.getApplicationIconURL({
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : void 0, [b, h]), O = f && null != _;
+  }) : void 0, [v, h]), P = f && null != b;
   return (0, r.jsx)(i.$, {
-    onChange: x,
-    active: !b,
+    innerRef: _,
+    onChange: C,
+    active: !v,
     children: (0, r.jsx)("div", {
+      ref: _,
       className: p.container,
       children: (0, r.jsxs)(s.Z, {
         className: p.card,
-        onClick: j,
+        onClick: y,
         onContextMenu: () => {},
         children: [(0, r.jsxs)("div", {
           className: p.header,
@@ -44,18 +46,18 @@ let m = function(e) {
               display: "block",
               aspectRatio: 16 / 9
             },
-            children: b ? (0, r.jsx)(d.Z, {
+            children: v ? (0, r.jsx)(d.Z, {
               application: h,
               bannerType: "card",
-              iconURL: y
+              iconURL: O
             }) : null
           }), (0, r.jsx)("div", {
             className: p.avatarContainer,
             style: {
               height: 28
             },
-            children: b ? (0, r.jsx)("img", {
-              src: y,
+            children: v ? (0, r.jsx)("img", {
+              src: O,
               alt: "",
               className: p.avatar,
               height: 48,
@@ -79,18 +81,18 @@ let m = function(e) {
                 children: h.name
               })
             })
-          }), O || C ? (0, r.jsxs)("div", {
+          }), P || j ? (0, r.jsxs)("div", {
             className: p.infoContainer,
-            children: [O ? (0, r.jsx)(l.Text, {
+            children: [P ? (0, r.jsx)(l.Text, {
               className: p.appCategory,
               variant: "text-xs/medium",
               color: "text-normal",
-              children: _.name
-            }) : null, O && C ? (0, r.jsx)(l.Text, {
+              children: b.name
+            }) : null, P && j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
               children: "•"
-            }) : null, C ? (0, r.jsx)(l.Text, {
+            }) : null, j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
               children: u.NW.string(u.t["/eVltr"])
@@ -99,7 +101,7 @@ let m = function(e) {
             className: p.description,
             variant: "text-sm/medium",
             color: "header-secondary",
-            lineClamp: O || C ? 2 : 3,
+            lineClamp: P || j ? 2 : 3,
             children: null !== (m = null === (n = h.directory_entry) || void 0 === n ? void 0 : n.short_description) && void 0 !== m ? m : h.description
           })]
         })]

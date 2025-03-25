@@ -38,7 +38,7 @@ function Z(e) {
     guild: t,
     onClick: l,
     onView: a
-  } = e, b = (0, g.Q3)("BaseGlobalDiscoveryServersCard"), [_, y] = i.useState(!1), [Z, x] = i.useState(!1), [w, L] = i.useState(!1), R = i.useCallback(async () => {
+  } = e, b = (0, g.Q3)("BaseGlobalDiscoveryServersCard"), [_, y] = i.useState(!1), [Z, x] = i.useState(!1), [w, L] = i.useState(!1), R = i.useRef(null), D = i.useCallback(async () => {
     x(!0);
     try {
       await l(t.id)
@@ -52,9 +52,9 @@ function Z(e) {
     } finally {
       x(!1)
     }
-  }, [t.id, l]), D = i.useCallback(e => {
+  }, [t.id, l]), k = i.useCallback(e => {
     e && !_ && (y(!0), null == a || a(t.id))
-  }, [t.id, _, a]), k = i.useCallback(e => {
+  }, [t.id, _, a]), M = i.useCallback(e => {
     (0, d.jW)(e, async () => {
       let {
         default: e
@@ -92,25 +92,25 @@ function Z(e) {
         }), i))
       }
     })
-  }, [t]), M = (0, h.ZP)(), U = t.features.has(C.oNc.HUB), G = i.useMemo(() => {
+  }, [t]), U = (0, h.ZP)(), G = t.features.has(C.oNc.HUB), W = i.useMemo(() => {
     let e = v.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
       size: 300 * (0, O.x_)()
     });
     if (null != e) return e;
-    if (U) return A;
-    switch (M) {
+    if (G) return A;
+    switch (U) {
       case C.BRd.DARK:
         return P;
       case C.BRd.LIGHT:
         return j
     }
-  }, [t.discoverySplash, t.id, U, M]), W = b ? 48 : 40, V = i.useMemo(() => v.ZP.getGuildIconURL({
+  }, [t.discoverySplash, t.id, G, U]), V = b ? 48 : 40, B = i.useMemo(() => v.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
-    size: W
-  }), [t.icon, t.id, W]), B = N.Sb.useSetting();
+    size: V
+  }), [t.icon, t.id, V]), H = N.Sb.useSetting();
   return (0, r.jsxs)("div", {
     className: T.container,
     children: [Z && (0, r.jsx)("div", {
@@ -120,14 +120,16 @@ function Z(e) {
         className: T.spinner
       })
     }), (0, r.jsx)(s.$, {
-      onChange: D,
+      innerRef: R,
+      onChange: k,
       active: !_,
       threshold: .55,
       children: (0, r.jsxs)(m.Z, {
+        ref: R,
         className: T.card,
-        onClick: R,
+        onClick: D,
         disabled: Z,
-        onContextMenu: k,
+        onContextMenu: M,
         children: [(0, r.jsxs)("div", {
           className: T.header,
           children: [(0, r.jsx)("div", {
@@ -135,28 +137,28 @@ function Z(e) {
               [T.loaded]: w
             }),
             children: (0, r.jsx)("img", {
-              src: G,
+              src: W,
               alt: "",
               className: T.bannerImage,
               onLoad: () => L(!0)
             })
-          }), B && (0, r.jsx)(I.Z, {
+          }), H && (0, r.jsx)(I.Z, {
             guild: t,
             className: T.contextMenu
           }), (0, r.jsx)("div", {
             className: T.icon,
             children: (0, r.jsx)(f.ZP, {
               mask: f.ZP.Masks.SQUIRCLE,
-              width: W + 8,
-              height: W + 8,
+              width: V + 8,
+              height: V + 8,
               children: (0, r.jsx)("div", {
                 className: T.iconMask,
                 children: (0, r.jsx)(f.ZP, {
                   mask: f.ZP.Masks.SQUIRCLE,
-                  width: W,
-                  height: W,
+                  width: V,
+                  height: V,
                   children: (0, r.jsx)("img", {
-                    src: V,
+                    src: B,
                     alt: "",
                     className: T.avatar
                   })

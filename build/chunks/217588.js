@@ -91,7 +91,7 @@ function W(e) {
     description: n
   } = e;
   return (0, r.jsxs)(p.Z, {
-    children: [(0, r.jsx)(I.ZP, {
+    children: [(0, r.jsx)(I.Z, {
       sticker: t,
       size: 48,
       isInteracting: !0
@@ -157,7 +157,7 @@ let U = e => {
         children: D(c, p)
       }), (0, r.jsx)("ul", {
         className: w.stickersList,
-        children: m.map(e => (0, r.jsx)(I.ZP, {
+        children: m.map(e => (0, r.jsx)(I.Z, {
           isInteracting: !0,
           size: 80,
           sticker: e
@@ -341,7 +341,7 @@ let U = e => {
                       null == i || i(), V(null)
                     }
                   }, a), {
-                    children: (0, r.jsx)(I.ZP, {
+                    children: (0, r.jsx)(I.Z, {
                       size: 32,
                       enlargeOnInteraction: !0,
                       enlargeWithName: !1,

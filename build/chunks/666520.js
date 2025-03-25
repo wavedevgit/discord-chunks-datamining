@@ -19,18 +19,18 @@ function p(e) {
     className: t,
     userId: p,
     onUpdate: b
-  } = e, m = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
+  } = e, y = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
     loading: v,
     note: g
-  } = (0, c.Z)(p), y = o.useRef(null);
+  } = (0, c.Z)(p), m = o.useRef(null);
   return (o.useEffect(() => {
-    if (!n || m) return;
-    let e = y.current;
+    if (!n || y) return;
+    let e = m.current;
     (null == e ? void 0 : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, m]), m) ? null : (0, r.jsx)("div", {
+  }, [n, y]), y) ? null : (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(l.lcI, {
-      ref: y,
+      ref: m,
       className: f.textarea,
       disabled: v,
       placeholder: v ? u.NW.string(u.t["WLKx//"]) : u.NW.string(u.t.VBhOe3),

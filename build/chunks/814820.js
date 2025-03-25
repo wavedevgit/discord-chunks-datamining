@@ -43,7 +43,7 @@ let v = e => {
         onMouseEnter: () => c(!0),
         onMouseLeave: () => c(!1),
         onClick: d,
-        children: [(0, r.jsx)(s.ZP, {
+        children: [(0, r.jsx)(s.Z, {
           className: b.welcomeCTASticker,
           isInteracting: a,
           sticker: u,

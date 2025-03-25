@@ -210,12 +210,12 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
               "data-type": _.S.STICKER,
               "data-id": e.sticker.id,
               children: [(0, r.jsx)(c.nn4, {
-                children: (0, E.Co)(e.sticker)
+                children: (0, E.C)(e.sticker)
               }), (0, r.jsxs)("div", {
                 "aria-hidden": !0,
                 children: [!V && (0, r.jsx)("div", {
                   className: O.inspectedIndicator
-                }), (0, r.jsx)(E.ZP, {
+                }), (0, r.jsx)(E.Z, {
                   className: a()(O.stickerNode, {
                     [O.stickerNodeDimmed]: V && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
                     [O.stickerNodeHidden]: I,

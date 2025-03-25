@@ -65,7 +65,7 @@ function b(e) {
   } = e, E = (0, p.Z)({
     emojiId: b,
     emojiName: y
-  }), S = (0, s.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), P = i.createRef(), C = (0, d.Z)(P), Z = () => {
+  }), S = (0, s.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.createRef(), P = (0, d.Z)(C), Z = () => {
     w(void 0), k(void 0)
   }, D = e => (t, l) => {
     let n = (null == t ? void 0 : t.id) == null;
@@ -100,7 +100,7 @@ function b(e) {
         } = t;
         return (0, n.jsxs)("div", h(N({}, e), {
           className: x.emojiInput,
-          ref: P,
+          ref: C,
           children: [(0, n.jsx)(m.Z, {
             className: x.emojiButton,
             active: l,
@@ -114,7 +114,7 @@ function b(e) {
             placeholder: v.NW.string(v.t.QTK0TE),
             value: null != E ? ":".concat(E, ":") : "",
             readOnly: !0
-          }), C && null != E && (0, n.jsx)(c.Z, h(N({}, e), {
+          }), P && null != E && (0, n.jsx)(c.Z, h(N({}, e), {
             onClick: z,
             className: x.removeButton
           }))]

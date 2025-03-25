@@ -52,7 +52,7 @@ let S = 8,
   C = 6;
 
 function R(e, t) {
-  return (0, r.jsx)(f.ZP, {
+  return (0, r.jsx)(f.Z, {
     sticker: e,
     isInteracting: t,
     size: 40

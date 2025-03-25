@@ -32,30 +32,31 @@ let v = e => {
       isFullScreen: T
     } = e,
     I = i.useRef(null),
-    y = Object.entries((0, N.Z)()).reduce((e, t) => {
+    y = i.useRef(null),
+    A = Object.entries((0, N.Z)()).reduce((e, t) => {
       let [n, r] = t;
       return !1 !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
     {
-      analyticsLocations: A
+      analyticsLocations: P
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
-    [P, R] = i.useState(!1),
-    D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
-    Z = (0, _.mN)(),
+    [R, D] = i.useState(!1),
+    Z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
+    w = (0, _.mN)(),
     {
-      fractionalState: w
+      fractionalState: k
     } = (0, g.Z)(),
-    k = (0, h.W)();
-  return Z ? (t = j.NW.string(j.t["+vt7w8"]), n = j.NW.string(j.t.LgHbnJ)) : (t = j.NW.string(j.t.LgHbnJ), n = j.NW.string(j.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
+    W = (0, h.W)();
+  return w ? (t = j.NW.string(j.t["+vt7w8"]), n = j.NW.string(j.t.LgHbnJ)) : (t = j.NW.string(j.t.LgHbnJ), n = j.NW.string(j.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
     className: a()(C.allPerksScroller, {
       [C.open]: s,
-      [C.openCloseReduceMotion]: D
+      [C.openCloseReduceMotion]: Z
     }),
     ref: I,
     children: (0, r.jsx)("div", {
       className: C.container,
       children: (0, r.jsxs)(m.Gt, {
-        value: A,
+        value: P,
         children: [(0, r.jsx)(f.Z, {
           className: C.heroHeading,
           onBackClick: () => {
@@ -75,12 +76,12 @@ let v = e => {
           }), (0, r.jsx)(x.Z, {
             className: C.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: y,
+              perksCards: A,
               variant: b.R0.CARD_CAROUSEL_FIRST_ROW,
-              isPremiumSubscriber: Z,
+              isPremiumSubscriber: w,
               isFullScreen: T,
-              fractionalState: w,
-              isInReverseTrial: k
+              fractionalState: k,
+              isInReverseTrial: W
             }),
             cardType: b.R0.CARD_CAROUSEL_FIRST_ROW
           }), (0, r.jsx)(c.X6q, {
@@ -91,12 +92,12 @@ let v = e => {
           }), (0, r.jsx)(x.Z, {
             className: C.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: y,
+              perksCards: A,
               variant: b.R0.CARD_CAROUSEL_SECOND_ROW,
-              isPremiumSubscriber: Z,
+              isPremiumSubscriber: w,
               isFullScreen: T,
-              fractionalState: w,
-              isInReverseTrial: k
+              fractionalState: k,
+              isInReverseTrial: W
             }),
             cardType: b.R0.CARD_CAROUSEL_SECOND_ROW
           }), (0, r.jsx)(c.X6q, {
@@ -107,24 +108,26 @@ let v = e => {
           }), (0, r.jsx)(x.Z, {
             className: C.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: y,
+              perksCards: A,
               variant: b.R0.CARD_CAROUSEL_THIRD_ROW,
-              isPremiumSubscriber: Z,
+              isPremiumSubscriber: w,
               isFullScreen: T,
-              fractionalState: w,
-              isInReverseTrial: k
+              fractionalState: k,
+              isInReverseTrial: W
             }),
             cardType: b.R0.CARD_CAROUSEL_THIRD_ROW
           })]
         }), (0, r.jsx)("div", {
           className: C.footerSpacing
         }), (0, r.jsx)(o.$, {
+          innerRef: y,
           onChange: e => {
-            e && !P && (p.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-              location_stack: A
-            }), R(!0))
+            e && !R && (p.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+              location_stack: P
+            }), D(!0))
           },
           children: (0, r.jsx)("div", {
+            ref: y,
             className: C.bottomOfPageVisibilitySensor
           })
         }), (0, r.jsx)("img", {

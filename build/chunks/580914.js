@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(782568),
   u = n(607070),
   g = n(70097),
-  h = n(594174),
-  f = n(451478),
+  f = n(594174),
+  h = n(451478),
   m = n(63063),
   p = n(381585),
   b = n(597688),
@@ -69,7 +69,7 @@ let T = {
       category: a,
       heroBlock: s,
       tab: C
-    } = e, v = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), N = (0, i.e7)([f.Z], () => f.Z.isFocused()), w = (0, i.e7)([h.default], () => h.default.getCurrentUser()), P = (0, y.u)(), Z = l.useMemo(() => null != s ? s : L(a), [s, a]), {
+    } = e, v = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), N = (0, i.e7)([h.Z], () => h.Z.isFocused()), w = (0, i.e7)([f.default], () => f.default.getCurrentUser()), P = (0, y.u)(), Z = l.useMemo(() => null != s ? s : L(a), [s, a]), {
       bannerOverride: A,
       heroLogo: R,
       heroBannerStatic: W,

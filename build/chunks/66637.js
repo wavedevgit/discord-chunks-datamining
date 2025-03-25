@@ -8,21 +8,22 @@ var r = n(200651),
   l = n.n(i),
   o = n(481060),
   s = n(898302);
-let c = a.memo(function(e) {
+let c = a.memo(a.forwardRef(function(e, t) {
   let {
-    onClick: t,
-    onContextMenu: n,
-    className: a,
-    disabled: i,
-    children: c
+    onClick: n,
+    onContextMenu: a,
+    className: i,
+    disabled: c,
+    children: d
   } = e;
   return (0, r.jsx)(o.P3F, {
-    className: l()(s.card, a, {
-      [s.clickable]: null != t,
-      [s.disabled]: i
+    innerRef: t,
+    className: l()(s.card, i, {
+      [s.clickable]: null != n,
+      [s.disabled]: c
     }),
-    onContextMenu: n,
-    onClick: i ? void 0 : t,
-    children: c
+    onContextMenu: a,
+    onClick: c ? void 0 : n,
+    children: d
   })
-})
+}))

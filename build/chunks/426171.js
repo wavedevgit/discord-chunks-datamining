@@ -15,8 +15,8 @@ var r = n(192379),
   d = n(597688),
   u = n(328347),
   g = n(429368),
-  h = n(410127),
-  f = n(237031),
+  f = n(410127),
+  h = n(237031),
   m = n(956472),
   p = n(981631);
 let b = "".concat("#").concat("itemSkuId", "="),
@@ -51,7 +51,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
           product: s,
           tab: o
         }),
-        h = setTimeout(() => {
+        f = setTimeout(() => {
           let a = document.getElementById("shop-item-".concat(e.skuId));
           if (a !== document.activeElement && (null == a || a.focus()), null != s.variantGroupStoreListingId) {
             let n = d.Z.getProductByStoreListingId(s.variantGroupStoreListingId);
@@ -61,7 +61,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
               let r = null === (c = n.variants) || void 0 === c ? void 0 : c.findIndex(e => e.skuId === t);
               null != r && r > -1 && (0, g.$)(n, r)
             }
-          }(0, f.T)({
+          }(0, h.T)({
             product: e,
             category: i,
             analyticsSource: r,
@@ -71,7 +71,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
             shouldCheckoutWithOrbs: u
           })
         }, 750 * (null != l.current));
-      return () => clearTimeout(h)
+      return () => clearTimeout(f)
     }
     return () => {}
   },
@@ -80,22 +80,22 @@ let b = "".concat("#").concat("itemSkuId", "="),
       isFetchingCategories: t,
       isLayer: n,
       initialItemCardRef: d
-    } = e, g = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), f = r.useRef(null), m = (0, l.TH)(), b = m.pathname === p.Z5c.COLLECTIBLES_SHOP ? i.Z.HOME_PAGE_SHOP_TAB : m.pathname === p.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? i.Z.COLLECTIBLES_SHOP_FULLSCREEN : i.Z.COLLECTIBLES_SHOP, {
+    } = e, g = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), h = r.useRef(null), m = (0, l.TH)(), b = m.pathname === p.Z5c.COLLECTIBLES_SHOP ? i.Z.HOME_PAGE_SHOP_TAB : m.pathname === p.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? i.Z.COLLECTIBLES_SHOP_FULLSCREEN : i.Z.COLLECTIBLES_SHOP, {
       analyticsLocations: _
-    } = (0, c.ZP)(b), v = (0, h.Z)();
+    } = (0, c.ZP)(b), v = (0, f.Z)();
     (0, o.ZP)(() => {
       if (n) return;
       let e = C.exec(m.hash);
       if (null != e) {
         let t = e[1];
-        f.current = t
+        h.current = t
       }
     });
     let x = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
     r.useEffect(() => {
       if (t) return;
       let e = null;
-      if (n && null != x && (e = x), n || null == f.current || (e = f.current), null != e) {
+      if (n && null != x && (e = x), n || null == h.current || (e = h.current), null != e) {
         let t = [],
           n = setTimeout(() => {
             let n = k({

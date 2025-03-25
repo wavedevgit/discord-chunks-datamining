@@ -1,24 +1,22 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   o = n(512722),
   a = n.n(o),
   s = n(442837),
-  l = n(922611),
-  c = n(695346),
-  u = n(699516),
-  d = n(594174),
-  f = n(971393),
-  _ = n(614417),
-  p = n(601665),
-  h = n(103113),
-  m = n(738953);
+  l = n(695346),
+  c = n(699516),
+  u = n(594174),
+  d = n(614417),
+  f = n(601665),
+  _ = n(103113),
+  p = n(738953);
 
-function g(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,20 +25,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,15 +49,15 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = O(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,7 +65,7 @@ function y(e, t) {
   return i
 }
 
-function O(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -75,43 +73,35 @@ function O(e, t) {
   return i
 }
 
-function I(e) {
+function y(e) {
   var {
     userId: t,
     user: n
-  } = e, o = y(e, ["userId", "user"]);
-  let g = (0, s.e7)([d.default], () => d.default.getUser(t), [t]),
-    b = null != n ? n : g;
-  a()(null != b, "UserProfilePopoutWrapper: user cannot be undefined");
-  let O = (0, s.e7)([d.default], () => d.default.getCurrentUser());
-  a()(null != O, "UserProfilePopoutWrapper: currentUser cannot be undefined");
+  } = e, o = b(e, ["userId", "user"]);
+  let h = (0, s.e7)([u.default], () => u.default.getUser(t), [t]),
+    g = null != n ? n : h;
+  a()(null != g, "UserProfilePopoutWrapper: user cannot be undefined");
+  let v = (0, s.e7)([u.default], () => u.default.getCurrentUser());
+  a()(null != v, "UserProfilePopoutWrapper: currentUser cannot be undefined");
   let {
-    isBlocked: I,
-    isIgnored: S
-  } = (0, s.cj)([u.Z], () => ({
-    isBlocked: u.Z.isBlocked(b.id),
-    isIgnored: u.Z.isIgnored(b.id)
-  })), T = (0, l.D)({
-    location: "UserProfileModalWrapper"
-  }), [N, A] = i.useState(I || T && (S || I)), C = (0, f.sS)({
-    location: "UserProfilePopoutWrapper"
-  }), R = c.Rt.useSetting();
-  return N && C && !T ? (0, r.jsx)(_.Z, v(E({}, o), {
-    user: b,
-    currentUser: O,
-    onViewBlockedProfileClick: () => A(!1)
-  })) : N && T && !(S && R) ? (0, r.jsx)(_.Y, v(E({}, o), {
-    user: b,
-    currentUser: O,
-    onViewBlockedProfileClick: () => A(!1)
-  })) : b.isNonUserBot() ? (0, r.jsx)(h.Z, v(E({}, o), {
-    user: b,
-    currentUser: O
-  })) : b.bot ? (0, r.jsx)(p.Z, v(E({}, o), {
-    user: b,
-    currentUser: O
-  })) : (0, r.jsx)(m.Z, v(E({}, o), {
-    user: b,
-    currentUser: O
+    isBlocked: y,
+    isIgnored: O
+  } = (0, s.cj)([c.Z], () => ({
+    isBlocked: c.Z.isBlocked(g.id),
+    isIgnored: c.Z.isIgnored(g.id)
+  })), [I, S] = i.useState(y || O || y), T = l.Rt.useSetting();
+  return I && !(O && T) ? (0, r.jsx)(d.Z, E(m({}, o), {
+    user: g,
+    currentUser: v,
+    onViewBlockedProfileClick: () => S(!1)
+  })) : g.isNonUserBot() ? (0, r.jsx)(_.Z, E(m({}, o), {
+    user: g,
+    currentUser: v
+  })) : g.bot ? (0, r.jsx)(f.Z, E(m({}, o), {
+    user: g,
+    currentUser: v
+  })) : (0, r.jsx)(p.Z, E(m({}, o), {
+    user: g,
+    currentUser: v
   }))
 }

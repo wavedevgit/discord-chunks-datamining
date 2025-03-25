@@ -264,6 +264,7 @@ class A extends l.Z {
   setNativeDesktopVideoSourcePickerActive(e) {}
   presentNativeScreenSharePicker(e) {}
   releaseNativeDesktopVideoSourcePickerStream() {}
+  setMaybePreprocessMute(e) {}
   constructor() {
     super(), T(this, "Video", O.Z), T(this, "Camera", y.Z), T(this, "_audioContext", null), T(this, "outputVolume", I.Qx), T(this, "sourceId", I.w5), T(this, "sinkId", I.w5), T(this, "enabled", !1), T(this, "connections", new Set), T(this, "interacted", !1), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "pendingDesktopInputs", {}), T(this, "enablePromise", null), T(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))

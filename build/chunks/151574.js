@@ -125,7 +125,7 @@ function Z(e) {
       children: (0, r.jsx)("div", {
         className: w.maskBackground
       })
-    }), (0, r.jsx)(O.ZP, {
+    }), (0, r.jsx)(O.Z, {
       maskAsset: !0,
       size: B,
       sticker: l,

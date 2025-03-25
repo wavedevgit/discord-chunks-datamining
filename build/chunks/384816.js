@@ -1,6 +1,6 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  Z: () => N
+  Z: () => P
 });
 var r = t(200651);
 t(192379);
@@ -15,64 +15,64 @@ var o = t(442837),
   f = t(785717),
   p = t(748545),
   b = t(250822),
-  m = t(771362),
+  y = t(771362),
   v = t(280885),
   g = t(819602),
-  y = t(78806),
+  m = t(78806),
   I = t(900927),
   j = t(678738),
   h = t(652853),
-  x = t(179828),
-  _ = t(228168),
+  _ = t(179828),
+  x = t(228168),
   O = t(388032),
   Z = t(330724);
 
-function N(e) {
+function P(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: N,
-    subsection: P,
+    displayProfile: P,
+    subsection: N,
     onClose: E
   } = e, {
     theme: S
   } = (0, h.z)(), {
     trackUserProfileAction: T
-  } = (0, f.KZ)(), C = null == N ? void 0 : N.guildId, A = (0, o.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), w = (0, o.e7)([u.Z], () => u.Z.getGuildId()), L = (0, s.Y)({
+  } = (0, f.KZ)(), C = null == P ? void 0 : P.guildId, A = (0, o.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), w = (0, o.e7)([u.Z], () => u.Z.getGuildId()), L = (0, s.Y)({
     userId: n.id,
     location: "UserProfileModalInfo"
-  }), R = (0, o.e7)([a.default], () => a.default.locale), M = (0, m.Z)(n.id), B = (0, b.Z)(n.id), U = (0, p.k)({
+  }), R = (0, o.e7)([a.default], () => a.default.locale), M = (0, y.Z)(n.id), B = (0, b.Z)(n.id), U = (0, p.k)({
     location: "UserProfileModalInfo"
   }) ? O.NW.string(O.t["mQKv+v"]) : O.NW.string(O.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
     className: Z.scroller,
-    children: [(null == N ? void 0 : N.bio) != null && (null == N ? void 0 : N.bio) !== "" && (0, r.jsx)(v.Z, {
-      userBio: N.bio,
+    children: [(null == P ? void 0 : P.bio) != null && (null == P ? void 0 : P.bio) !== "" && (0, r.jsx)(v.Z, {
+      userBio: P.bio,
       setLineClamp: !1
-    }), null != A && (0, r.jsx)(x.Z, {
+    }), null != A && (0, r.jsx)(_.Z, {
       user: n,
       currentUser: t,
       guild: A,
-      scrollIntoView: P === _.Tb.ROLES
+      scrollIntoView: N === x.Tb.ROLES
     }), n.isProvisional && (0, r.jsx)(c.WR, {
       userId: n.id,
       headingColor: "header-secondary"
     }), L.length > 0 && (0, r.jsx)(j.Z, {
       heading: O.NW.string(O.t["Uv/eT0"]),
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(m.Z, {
         applicationIds: L
       })
     }), (0, r.jsx)(j.Z, {
       heading: O.NW.string(O.t.a6XYDw),
       children: (0, r.jsx)(I.Z, {
         userId: n.id,
-        guildId: null == N ? void 0 : N.guildId,
-        tooltipDelay: _.vB
+        guildId: null == P ? void 0 : P.guildId,
+        tooltipDelay: x.vB
       })
     }), M.length > 0 && (0, r.jsx)(j.Z, {
       heading: O.NW.string(O.t["3fe7U1"]),
-      scrollIntoView: P === _.Tb.CONNECTIONS,
+      scrollIntoView: N === x.Tb.CONNECTIONS,
       children: (0, r.jsx)(g.OA, {
         connectedAccounts: M,
         className: Z.connections,
@@ -95,11 +95,11 @@ function N(e) {
       }, e.application.id))
     }), (0, r.jsx)(j.Z, {
       heading: U,
-      scrollIntoView: P === _.Tb.NOTE,
+      scrollIntoView: N === x.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: n.id,
         className: Z.note,
-        autoFocus: P === _.Tb.NOTE,
+        autoFocus: N === x.Tb.NOTE,
         onUpdate: () => T({
           action: "SET_NOTE"
         })

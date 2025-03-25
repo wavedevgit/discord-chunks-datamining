@@ -1,12 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 }), n(47120);
-var r = n(995295),
-  i = n(374470);
+var r = n(374470);
 
-function o(e, t, n) {
+function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,21 +13,21 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = {
+let o = {
   root: null,
   rootMargin: "0px",
   threshold: .5
 };
-class s {
+class a {
   isVisible(e) {
     return null == this._observer || this._visibleComponents.has(e)
   }
-  observe(e) {
-    let t = this._observer;
-    if (null == t) return;
+  observe(e, t) {
+    let n = this._observer;
+    if (null == n) return;
     this.unobserve(e);
-    let n = (0, r.findDOMNode)(e);
-    (0, i.k)(n, HTMLElement) && (this._nodes.set(n, e), this._components.set(e, n), t.observe(n))
+    let i = t.current;
+    (0, r.k)(i, HTMLElement) && (this._nodes.set(i, e), this._components.set(e, i), n.observe(i))
   }
   unobserve(e) {
     let t = this._observer;
@@ -36,8 +35,8 @@ class s {
     let n = this._components.get(e);
     null != n && (this._nodes.delete(n), this._components.delete(e), this._visibleComponents.delete(e), t.unobserve(n))
   }
-  constructor(e = a) {
-    o(this, "_observer", void 0), o(this, "_options", void 0), o(this, "_nodes", new WeakMap), o(this, "_components", new WeakMap), o(this, "_visibleComponents", new WeakSet), o(this, "_handleEntries", e => {
+  constructor(e = o) {
+    i(this, "_observer", void 0), i(this, "_options", void 0), i(this, "_nodes", new WeakMap), i(this, "_components", new WeakMap), i(this, "_visibleComponents", new WeakSet), i(this, "_handleEntries", e => {
       e.forEach(e => {
         let t;
         if (null != e.isIntersecting) t = e.isIntersecting;

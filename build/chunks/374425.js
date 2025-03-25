@@ -106,7 +106,7 @@ let y = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
                 d(!s), n(e)
               },
               tag: "span",
-              children: (0, r.jsx)(f.ZP, {
+              children: (0, r.jsx)(f.Z, {
                 isInteracting: a,
                 size: y,
                 sticker: null != _ ? _ : t

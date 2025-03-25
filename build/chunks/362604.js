@@ -83,7 +83,7 @@ function v(e) {
               action_type: "sticker"
             }), (0, h.O)(t.id, a)
           },
-          children: null != y ? (0, r.jsx)(p.ZP, {
+          children: null != y ? (0, r.jsx)(p.Z, {
             size: 32,
             sticker: y
           }) : (0, r.jsx)(s.EO4, {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   K: () => g,
-  Z: () => h
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -29,7 +29,7 @@ let d = () => 4 * Math.random() + 8,
       })]
     })
   }),
-  h = () => (0, r.jsx)("div", {
+  f = () => (0, r.jsx)("div", {
     className: o.skeletons,
     children: u.map(e => (0, r.jsxs)("div", {
       className: o.cardsContainer,

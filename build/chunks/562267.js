@@ -41,7 +41,7 @@ function _(e) {
               className: f.closeIcon
             })
           })
-        }), (0, r.jsx)(u.ZP, {
+        }), (0, r.jsx)(u.Z, {
           isInteracting: p === e.id,
           className: f.stickerPreview,
           size: 48,

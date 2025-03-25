@@ -419,6 +419,7 @@ let em = e => {
       }),
       tl = () => !eT || ev || eI ? eF ? eV ? ts() : eT ? ti() : e3 ? e8 ? tr() : tt() : J === ei.AW.ORBS ? ta() : tn() : tt() : e5();
     return (0, D.x6)(t) && null != eS && eS.discountPercentage < 0 ? null : (0, r.jsx)(p.$, {
+      innerRef: eu,
       onChange: eX,
       threshold: 0,
       children: (0, r.jsx)(h.tEY, {

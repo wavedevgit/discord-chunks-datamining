@@ -295,53 +295,56 @@ let es = function() {
     h = (0, B.n)(),
     x = null == h ? void 0 : h.countryCode,
     _ = (0, c.e7)([A.Z], () => A.Z.enabled),
-    E = "PremiumManagementSettings";
+    E = i.useRef(null),
+    y = "PremiumManagementSettings";
   (0, b.j)({
-    location: E + " auto on",
+    location: y + " auto on",
     autoTrackExposure: !0
   }), (0, b.j)({
-    location: E + " auto off",
+    location: y + " auto off",
     autoTrackExposure: !1
-  }), (0, U.B)(E);
-  let y = (0, M.b)(E);
+  }), (0, U.B)(y);
+  let R = (0, M.b)(y);
   i.useEffect(() => {
     g.Z.wait(async () => {
       _ || e || await Promise.all([p.jg(), p.tZ(), (0, f.Y2)(x, null, K.JjL.DISCOVERY)]), o(!1)
     })
   }, [x, _, e]);
-  let [R, Z] = i.useState(!1);
+  let [Z, w] = i.useState(!1);
   if (_) return (0, r.jsx)(N.Z, {});
   if (e) return (0, r.jsx)(T.c8, {});
-  let w = s && null !== n && a,
-    k = u !== Y.a$.NONE;
-  if (!w && !k && !l) return (0, r.jsx)(I.Z, {
+  let k = s && null !== n && a,
+    W = u !== Y.a$.NONE;
+  if (!k && !W && !l) return (0, r.jsx)(I.Z, {
     title: q.NW.string(q.t.dyq9TU),
     note: null
   });
-  if (!w && !k || l) return (0, r.jsx)(m.$jN, {});
-  let W = null !== n && null != n.trialId;
+  if (!k && !W || l) return (0, r.jsx)(m.$jN, {});
+  let L = null !== n && null != n.trialId;
   return (0, r.jsx)(C.Gt, {
     value: t,
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: X.__invalid_container,
-        children: [(0, r.jsx)(en, {}), y && (0, r.jsx)(z.Z, {
+        children: [(0, r.jsx)(en, {}), R && (0, r.jsx)(z.Z, {
           isInSettings: !0
         }), (0, r.jsx)(ei, {}), (0, r.jsx)(H.Z, {
           className: X.__invalid_planComparisonTable,
           hideCTAs: !0,
           headingOverride: q.NW.string(q.t.dnVvQU),
-          hidePill: !W,
+          hidePill: !L,
           selectedPlanColumnClassName: X.tier2PlanComparisonTableBackground,
           selectedPlanTier: Y.p9.TIER_2
         })]
       }), (0, r.jsx)(d.$, {
+        innerRef: E,
         onChange: e => {
-          e && !R && (D.default.track(K.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !Z && (D.default.track(K.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: t
-          }), Z(!0))
+          }), w(!0))
         },
         children: (0, r.jsx)("div", {
+          ref: E,
           className: X.bottomOfPageVisibilitySensor
         })
       })]

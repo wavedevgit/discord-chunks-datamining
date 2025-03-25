@@ -120,7 +120,7 @@ function x(e) {
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
     onClick: E,
-    children: [(0, r.jsx)(c.ZP, {
+    children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
       isInteracting: h,
       sticker: x,

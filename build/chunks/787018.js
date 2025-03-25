@@ -1,7 +1,6 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  W: () => S,
-  Z: () => E
+  W: () => N
 }), t(47120), t(266796);
 var r = t(200651),
   o = t(192379),
@@ -15,18 +14,18 @@ var r = t(200651),
   f = t(699516),
   p = t(5192),
   b = t(785717),
-  m = t(221292),
+  y = t(221292),
   v = t(687158),
   g = t(471879),
-  y = t(502762),
+  m = t(502762),
   I = t(848780),
-  j = t(907179),
-  h = t(475413),
-  x = t(228168),
+  j = t(907179);
+t(475413);
+var h = t(228168),
   _ = t(981631),
-  O = t(388032),
-  Z = t(256547),
-  N = t(161068);
+  x = t(388032),
+  O = t(256547),
+  Z = t(161068);
 
 function P(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -47,112 +46,12 @@ function P(e) {
   return e
 }
 
-function E(e) {
+function N(e) {
   let {
     user: n,
     guildId: t,
     channelId: i,
-    messageId: l,
-    roleId: s,
-    transitionState: f,
-    onViewBlockedProfileClick: p,
-    showGuildProfile: I = !0,
-    sourceAnalyticsLocations: j = []
-  } = e, E = t === _.ME ? void 0 : t, {
-    analyticsLocations: S
-  } = (0, d.ZP)([...j, a.Z.BLOCKED_PROFILE_MODAL]), T = (0, b.ZB)({
-    layout: "BLOCKED_PROFILE_MODAL",
-    userId: n.id,
-    guildId: E,
-    channelId: i,
-    messageId: l,
-    roleId: s,
-    showGuildProfile: I
-  }), C = [{
-    icon: c.owu,
-    description: O.NW.string(O.t.Kn2UDA)
-  }, {
-    icon: c.t6m,
-    description: O.NW.string(O.t.QxrDY2)
-  }], A = (0, v.ZP)(n.id, I ? E : void 0), w = o.createRef();
-  return (0, r.jsx)(d.Gt, {
-    value: S,
-    children: (0, r.jsx)(b.Mt, {
-      value: T,
-      children: (0, r.jsx)(c.Y0X, {
-        transitionState: f,
-        className: Z.root,
-        hideShadow: !0,
-        "aria-label": O.NW.string(O.t["3N/J2t"]),
-        children: (0, r.jsx)(y.Z, {
-          user: n,
-          displayProfile: A,
-          profileType: x.y0.FULL_SIZE,
-          ref: w,
-          children: (0, r.jsxs)("div", {
-            className: Z.container,
-            children: [(0, r.jsx)("img", {
-              alt: "",
-              src: N,
-              className: Z.previewForCollected,
-              "aria-hidden": !0
-            }), (0, r.jsxs)("div", {
-              className: Z.body,
-              children: [(0, r.jsx)(g.Z, {
-                user: n,
-                guildId: E
-              }), (0, r.jsx)(c.X6q, {
-                variant: "heading-xl/bold",
-                className: Z.header,
-                children: O.NW.string(O.t.VNJ7UF)
-              }), (0, r.jsx)(c.Text, {
-                variant: "text-md/medium",
-                children: O.NW.format(O.t.LXbngo, {
-                  username: n.username
-                })
-              }), (0, r.jsx)(c.Text, {
-                variant: "text-md/medium",
-                children: O.NW.string(O.t["uBvD//"])
-              }), (0, r.jsx)("div", {
-                className: Z.safetyTable,
-                children: C.map((e, n) => {
-                  let {
-                    icon: t,
-                    description: o
-                  } = e;
-                  return (0, r.jsx)(u.ZP, {
-                    icon: t,
-                    title: o,
-                    titleVariant: "text-md/medium"
-                  }, n)
-                })
-              }), (0, r.jsx)(h.tG, {
-                className: Z.centeredButton,
-                action: "VIEW_BLOCKED_PROFILE",
-                text: O.NW.string(O.t.iXAna2),
-                autoFocus: !0,
-                fullWidth: !1,
-                onClick: () => {
-                  null == p || p(), (0, m.pQ)(P({
-                    action: "VIEW_BLOCKED_PROFILE",
-                    analyticsLocations: S
-                  }, T))
-                }
-              })]
-            })]
-          })
-        })
-      })
-    })
-  })
-}
-
-function S(e) {
-  let {
-    user: n,
-    guildId: t,
-    channelId: i,
-    messageId: h,
+    messageId: N,
     roleId: E,
     transitionState: S,
     onViewBlockedProfileClick: T,
@@ -165,15 +64,15 @@ function S(e) {
     userId: n.id,
     guildId: w,
     channelId: i,
-    messageId: h,
+    messageId: N,
     roleId: E,
     showGuildProfile: C
   }), B = [{
     icon: c.owK,
-    description: O.NW.string(O.t.kcuWvb)
+    description: x.NW.string(x.t.kcuWvb)
   }, {
     icon: c.owK,
-    description: O.NW.string(L ? O.t.QxrDY2 : O.t.W6fjkZ)
+    description: x.NW.string(L ? x.t.QxrDY2 : x.t.W6fjkZ)
   }], U = (0, v.ZP)(n.id, C ? w : void 0), D = o.createRef();
   return (0, r.jsx)(d.Gt, {
     value: R,
@@ -181,41 +80,41 @@ function S(e) {
       value: M,
       children: (0, r.jsx)(c.Y0X, {
         transitionState: S,
-        className: Z.root,
+        className: O.root,
         hideShadow: !0,
-        "aria-label": O.NW.string(O.t["3N/J2t"]),
-        children: (0, r.jsx)(y.Z, {
+        "aria-label": x.NW.string(x.t["3N/J2t"]),
+        children: (0, r.jsx)(m.Z, {
           user: n,
           displayProfile: U,
-          profileType: x.y0.FULL_SIZE,
+          profileType: h.y0.FULL_SIZE,
           ref: D,
           children: (0, r.jsxs)("div", {
-            className: Z.container,
+            className: O.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: N,
-              className: Z.previewForCollected,
+              src: Z,
+              className: O.previewForCollected,
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
-              className: l()(Z.body, Z.bodySpacing),
+              className: l()(O.body, O.bodySpacing),
               children: [(0, r.jsx)(g.i, {
                 user: n,
                 guildId: w
               }), (0, r.jsxs)("div", {
-                className: Z.headerContainer,
+                className: O.headerContainer,
                 children: [(0, r.jsx)(c.X6q, {
                   variant: "heading-xl/bold",
                   color: "header-primary",
-                  children: O.NW.string(O.t.b33pLC)
+                  children: x.NW.string(x.t.b33pLC)
                 }), (0, r.jsx)(c.Text, {
                   variant: "text-md/medium",
                   color: "header-primary",
-                  children: O.NW.format(L ? O.t["8F+WNz"] : O.t["/cZp5u"], {
+                  children: x.NW.format(L ? x.t["8F+WNz"] : x.t["/cZp5u"], {
                     username: p.ZP.getName(w, i, n)
                   })
                 })]
               }), (0, r.jsx)("div", {
-                className: Z.restrictedSafetyTable,
+                className: O.restrictedSafetyTable,
                 children: B.map((e, n) => {
                   let {
                     icon: t,
@@ -233,7 +132,7 @@ function S(e) {
                   size: c.PhG.MEDIUM,
                   isBlocked: L,
                   onClick: () => {
-                    null == T || T(), (0, m.pQ)(P({
+                    null == T || T(), (0, y.pQ)(P({
                       action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                       analyticsLocations: R
                     }, M))
@@ -241,7 +140,7 @@ function S(e) {
                 }), (0, r.jsx)(I.Z, {
                   userId: n.id,
                   onClick: () => {
-                    null == T || T(), (0, m.pQ)(P({
+                    null == T || T(), (0, y.pQ)(P({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: R
                     }, M))

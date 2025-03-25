@@ -550,7 +550,7 @@ class ec extends(r = s.PureComponent) {
       var f;
       if (t = r.isGuildProductPurchase && r.isSoftDeletedProduct ? q.NW.string(q.t.O7uLm5) : m.name, null != o) {
         let t = (0, A.Zt)(o);
-        e = (0, i.jsx)(P.ZP, {
+        e = (0, i.jsx)(P.Z, {
           disableAnimation: !u,
           isInteracting: u,
           sticker: t,

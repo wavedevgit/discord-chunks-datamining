@@ -721,34 +721,39 @@ var en = function(e) {
 
 function er(e) {
   let {
-    variant: t,
-    showWumpus: n,
-    tier0CTAButton: i,
-    tier2CTAButton: a,
-    className: s
+    innerRef: t,
+    variant: n,
+    showWumpus: i,
+    tier0CTAButton: a,
+    tier2CTAButton: s,
+    className: l
   } = e, {
-    analyticsLocations: l
-  } = (0, p.ZP)(_.Z.PREMIUM_MARKETING_TIER_CARD), c = 1 === t;
+    analyticsLocations: c
+  } = (0, p.ZP)(_.Z.PREMIUM_MARKETING_TIER_CARD), u = 1 === n, f = e => {
+    null != t && ("function" == typeof t ? t(e) : t.hasOwnProperty("current") && (t.current = e))
+  };
   return (0, r.jsxs)(p.Gt, {
-    value: l,
-    children: [c && (0, r.jsx)(d.X6q, {
+    value: c,
+    children: [u && (0, r.jsx)(d.X6q, {
+      ref: f,
       className: G.v2TierCardSectionHeader,
       variant: "display-md",
       color: "header-primary",
       children: U.NW.string(U.t.vLz3Zm)
     }), (0, r.jsxs)("div", {
-      className: o()(G.premiumCards, s),
-      children: [c ? (0, r.jsx)(Q, {
-        ctaButton: i
+      ref: f,
+      className: o()(G.premiumCards, l),
+      children: [u ? (0, r.jsx)(Q, {
+        ctaButton: a
       }) : (0, r.jsx)(X, {
-        showWumpus: n,
-        ctaButton: i
-      }), c ? (0, r.jsx)(ee, {
-        ctaButton: a,
+        showWumpus: i,
+        ctaButton: a
+      }), u ? (0, r.jsx)(ee, {
+        ctaButton: s,
         featureSet: 3
       }) : (0, r.jsx)(et, {
-        showWumpus: n,
-        ctaButton: a
+        showWumpus: i,
+        ctaButton: s
       })]
     })]
   })

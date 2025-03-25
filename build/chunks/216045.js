@@ -153,6 +153,7 @@ function G() {
       }), e)),
       children: (0, r.jsx)(L.Z, {})
     }), et && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.$, {
+      innerRef: er,
       onChange: e => ee(e),
       threshold: .25,
       active: en,

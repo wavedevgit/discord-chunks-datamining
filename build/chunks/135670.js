@@ -153,6 +153,7 @@ class c extends r.Z {
   setNativeDesktopVideoSourcePickerActive(e) {}
   presentNativeScreenSharePicker(e) {}
   releaseNativeDesktopVideoSourcePickerStream() {}
+  setMaybePreprocessMute(e) {}
   constructor(...e) {
     super(...e), a(this, "Video", s), a(this, "Camera", l)
   }

@@ -15,19 +15,19 @@ var o = t(481060),
   f = t(867176),
   p = t(681837),
   b = t(502762),
-  m = t(530),
+  y = t(530),
   v = t(871604),
   g = t(952124),
-  y = t(53558),
+  m = t(53558),
   I = t(544989),
   j = t(934861),
   h = t(4517),
-  x = t(740628),
-  _ = t(398145),
+  _ = t(740628),
+  x = t(398145),
   O = t(228168),
   Z = t(981631),
-  N = t(388032),
-  P = t(835145);
+  P = t(388032),
+  N = t(835145);
 
 function E(e) {
   let {
@@ -45,7 +45,7 @@ function E(e) {
     sourceAnalyticsLocations: B = []
   } = e, U = E === Z.ME ? void 0 : E, D = (0, a.ZP)(n.id, U), {
     analyticsLocations: W
-  } = (0, l.ZP)([...B, i.Z.SIMPLIFIED_PROFILE_MODAL]), F = (0, c.ZB)({
+  } = (0, l.ZP)([...B, i.Z.SIMPLIFIED_PROFILE_MODAL]), k = (0, c.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: A,
@@ -53,16 +53,16 @@ function E(e) {
     channelId: S,
     messageId: T,
     roleId: C
-  }), k = (0, _.Z)(n);
+  }), F = (0, x.Z)(n);
   return (0, r.jsx)(l.Gt, {
     value: W,
     children: (0, r.jsx)(c.Mt, {
-      value: F,
+      value: k,
       children: (0, r.jsx)(o.Y0X, {
         transitionState: R,
-        className: P.root,
+        className: N.root,
         hideShadow: !0,
-        "aria-label": N.NW.string(N.t["3N/J2t"]),
+        "aria-label": P.NW.string(P.t["3N/J2t"]),
         children: (0, r.jsxs)(b.Z, {
           user: n,
           displayProfile: D,
@@ -80,7 +80,7 @@ function E(e) {
               displayProfile: D,
               profileType: O.y0.FULL_SIZE
             }), (0, r.jsxs)("div", {
-              className: P.headerInner,
+              className: N.headerInner,
               children: [(0, r.jsx)(d.Z, {
                 user: n,
                 displayProfile: D,
@@ -94,16 +94,16 @@ function E(e) {
                 hasEntered: R === o.Dvm.ENTERED,
                 onCloseProfile: M
               }), (0, r.jsxs)("div", {
-                className: P.headerButtons,
+                className: N.headerButtons,
                 children: [(0, r.jsx)(j.c, {
                   userId: n.id,
                   onClose: M,
-                  className: P.messageTextButton
+                  className: N.messageTextButton
                 }), (0, r.jsx)(j.v, {
                   userId: n.id,
                   onClose: M,
-                  tooltipContainerClassName: P.messageIconButton
-                }), (0, r.jsx)(y.Z, {
+                  tooltipContainerClassName: N.messageIconButton
+                }), (0, r.jsx)(m.Z, {
                   user: n,
                   guildId: U
                 }), (0, r.jsx)(v.Z, {
@@ -112,8 +112,8 @@ function E(e) {
               })]
             })]
           }), (0, r.jsxs)("div", {
-            className: P.body,
-            children: [(0, r.jsx)(m.Z, {
+            className: N.body,
+            children: [(0, r.jsx)(y.Z, {
               user: n,
               profileType: O.y0.FULL_SIZE,
               nickname: s.ZP.getName(U, S, n),
@@ -128,13 +128,13 @@ function E(e) {
                 onClose: M
               })
             }), (0, r.jsx)(b.Z.Overlay, {
-              className: P.overlay,
-              children: (0, r.jsx)(x.Z, {
+              className: N.overlay,
+              children: (0, r.jsx)(_.Z, {
                 user: n,
                 currentUser: t,
                 displayProfile: D,
                 guildId: U,
-                items: k,
+                items: F,
                 initialSection: null != w ? w : O.oh.BOT_INFO,
                 initialSubsection: L,
                 onClose: M

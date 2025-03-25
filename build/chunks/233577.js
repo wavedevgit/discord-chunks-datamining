@@ -29,7 +29,7 @@ let b = 8,
   };
 
 function y(e, t) {
-  return (0, r.jsx)(_.ZP, {
+  return (0, r.jsx)(_.Z, {
     sticker: e,
     isInteracting: t,
     size: 40

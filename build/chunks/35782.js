@@ -1250,19 +1250,19 @@ let {
     CHANNEL_ICON: {
       "visual-refresh": {
         [r.DARK]: {
-          raw: "NEUTRAL_15",
+          raw: "NEUTRAL_29",
           opacity: 1
         },
         [r.LIGHT]: {
-          raw: "NEUTRAL_44",
+          raw: "NEUTRAL_42",
           opacity: 1
         },
         [r.MIDNIGHT]: {
-          raw: "NEUTRAL_27",
+          raw: "NEUTRAL_36",
           opacity: 1
         },
         [r.DARKER]: {
-          raw: "NEUTRAL_22",
+          raw: "NEUTRAL_34",
           opacity: 1
         }
       }
@@ -1270,19 +1270,19 @@ let {
     CHANNELS_DEFAULT: {
       "visual-refresh": {
         [r.DARK]: {
-          raw: "NEUTRAL_22",
+          raw: "NEUTRAL_29",
           opacity: 1
         },
         [r.LIGHT]: {
-          raw: "NEUTRAL_38",
+          raw: "NEUTRAL_42",
           opacity: 1
         },
         [r.MIDNIGHT]: {
-          raw: "NEUTRAL_33",
+          raw: "NEUTRAL_36",
           opacity: 1
         },
         [r.DARKER]: {
-          raw: "NEUTRAL_29",
+          raw: "NEUTRAL_34",
           opacity: 1
         }
       }

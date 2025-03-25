@@ -145,7 +145,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
         }))
       } else if (U) {
         let e = E.Z.getStickerPack(M.id);
-        null != e && (G = e.name, B = (0, r.jsx)(y.ZP, {
+        null != e && (G = e.name, B = (0, r.jsx)(y.Z, {
           disableAnimation: !x || m,
           size: w,
           sticker: (0, v.Zt)(e)

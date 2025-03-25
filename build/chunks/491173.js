@@ -34,7 +34,7 @@ let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BA
       let i = f.Z.getStickerPack(e.pack_id);
       null != i && (t = m.NW.format(m.t.cZOkbm, {
         source: i.name
-      }), n = (0, r.jsx)(h.ZP, {
+      }), n = (0, r.jsx)(h.Z, {
         size: b,
         sticker: (0, p.Zt)(i),
         disableAnimation: !0
@@ -63,7 +63,7 @@ let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BA
     let {
       graphic: s,
       title: u
-    } = v(o), d = (0, p.jl)(o) || (0, p.J8)(o) ? (0, r.jsx)(h.ZP, {
+    } = v(o), d = (0, p.jl)(o) || (0, p.J8)(o) ? (0, r.jsx)(h.Z, {
       isInteracting: !0,
       size: E,
       sticker: o,

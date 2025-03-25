@@ -1,6 +1,6 @@
 /** Chunk was on 87626 **/
 a.d(t, {
-  o: () => m
+  o: () => h
 }), a(47120);
 var n, s = a(200651),
   r = a(192379),
@@ -96,7 +96,7 @@ let _ = c.j_.MAIN_NAVIGATION_MENU,
       external: !0
     }]
   }];
-class m extends(n = r.PureComponent) {
+class h extends(n = r.PureComponent) {
   render() {
     let e = (0, l.fQ)(this.context.router),
       {
@@ -107,12 +107,12 @@ class m extends(n = r.PureComponent) {
         avoidRouter: u
       } = this.props,
       {
-        sectionShown: m
+        sectionShown: h
       } = this.state;
     return p(null != d.Z ? d.Z.getLocale().toLowerCase() : "").map(l => null != l.links ? (0, s.jsx)(o.Z, {
       title: l.title,
       links: l.links,
-      isOpen: m === l.title,
+      isOpen: h === l.title,
       isMobile: t,
       avoidRouter: u,
       TrackClick: r,
@@ -172,7 +172,7 @@ class m extends(n = r.PureComponent) {
     })
   }
 }
-u(m, "defaultProps", {
+u(h, "defaultProps", {
   isMobile: !1,
   isVisible: !0
 })

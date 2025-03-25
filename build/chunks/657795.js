@@ -72,7 +72,7 @@ function T(e) {
         children: O.NW.string(O.t.FnNud3)
       }), (0, r.jsx)("div", {
         className: I.stickersRow,
-        children: C.filter(e => null != e).map(e => (0, r.jsx)(g.ZP, {
+        children: C.filter(e => null != e).map(e => (0, r.jsx)(g.Z, {
           sticker: e,
           className: I.sticker,
           size: S

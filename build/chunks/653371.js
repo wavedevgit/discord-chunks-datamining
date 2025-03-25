@@ -13,8 +13,8 @@ var n = a(200651),
   u = a(643103),
   _ = a(34211),
   p = a(231338),
-  m = a(436620),
-  h = a(431138),
+  h = a(436620),
+  m = a(431138),
   N = a(330711),
   I = a(798304);
 
@@ -31,22 +31,22 @@ let k = p.j_.MAIN_NAVIGATION_MENU,
     route: (0, i.L)(p.RK.TWITTER),
     linkClicked: "twitter",
     alt: "Discord's Twitter",
-    img: h.r.ASSET_SOCIAL_TWITTER
+    img: m.r.ASSET_SOCIAL_TWITTER
   }, {
     route: p.fK.FACEBOOK_URL,
     linkClicked: "facebook",
     alt: "Discord's Facebook",
-    img: h.r.ASSET_SOCIAL_FACEBOOK
+    img: m.r.ASSET_SOCIAL_FACEBOOK
   }, {
     route: p.fK.INSTAGRAM_URL,
     linkClicked: "instagram",
     alt: "Discord's Instagram",
-    img: h.r.ASSET_SOCIAL_INSTAGRAM
+    img: m.r.ASSET_SOCIAL_INSTAGRAM
   }];
 class A extends s.PureComponent {
   componentDidMount() {
     this.setState({
-      isAppCompatible: m.KO
+      isAppCompatible: h.KO
     })
   }
   render() {

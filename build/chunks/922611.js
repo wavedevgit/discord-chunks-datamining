@@ -1,12 +1,10 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 1272 **/
 n.d(t, {
-  D: () => a,
-  S: () => o
+  S: () => l
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let l = (0, r.B)({
   kind: "user",
   id: "2024-10_stealth_remediation",
   label: "A new user remediation tool",
@@ -21,15 +19,4 @@ let o = (0, r.B)({
       enabled: !0
     }
   }]
-});
-
-function a(e) {
-  let {
-    location: t
-  } = e;
-  return o.getCurrentConfig({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  }).enabled
-}
+})

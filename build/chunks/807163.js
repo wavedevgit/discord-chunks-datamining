@@ -250,7 +250,7 @@ function ex(e) {
         className: q.personalizedEmoji,
         alt: "",
         src: e
-      }) : null), i ? null : a.map(e => (0, t.jsx)(_.ZP, {
+      }) : null), i ? null : a.map(e => (0, t.jsx)(_.Z, {
         disableAnimation: r,
         sticker: e,
         size: 58,

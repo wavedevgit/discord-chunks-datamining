@@ -10,8 +10,8 @@ var n, s, r, l = a(200651),
   u = a(982905),
   _ = a(66037),
   p = a(231338),
-  m = a(28577);
-let h = p.j_.MAIN_NAVIGATION_MENU;
+  h = a(28577);
+let m = p.j_.MAIN_NAVIGATION_MENU;
 class N extends(r = i.PureComponent) {
   render() {
     let e = (0, d.fQ)(this.context.router),
@@ -24,34 +24,34 @@ class N extends(r = i.PureComponent) {
         "aria-label": i
       } = this.props,
       o = a.map((t, a) => t.divider ? (0, l.jsx)("hr", {
-        className: m.divider
+        className: h.divider
       }, "divider-".concat(a)) : t.external ? (0, l.jsx)("li", {
-        className: m.moreListItemInactive,
+        className: h.moreListItemInactive,
         children: (0, l.jsx)(n, {
-          className: m.moreListLink,
-          eventName: h,
+          className: h.moreListLink,
+          eventName: m,
           data: {
             linkClicked: t.linkClicked
           },
           href: t.route,
           rel: "me",
           children: (0, l.jsx)("span", {
-            className: m.moreListLinkCopy,
+            className: h.moreListLinkCopy,
             children: t.title
           })
         })
       }, t.route) : (0, l.jsx)("li", {
-        className: (0, u.l)(m, "moreListItem", e(t.route) ? "Active" : "Inactive"),
+        className: (0, u.l)(h, "moreListItem", e(t.route) ? "Active" : "Inactive"),
         children: (0, l.jsx)(_.Z, {
           avoidRouter: s,
-          className: m.moreListLink,
+          className: h.moreListLink,
           to: t.route,
           from: p.j_.MAIN_NAVIGATION_MENU,
           role: "menuitem",
           children: (0, l.jsx)(n, {
             tag: "span",
-            className: m.moreListLinkCopy,
-            eventName: h,
+            className: h.moreListLinkCopy,
+            eventName: m,
             data: {
               linkClicked: t.linkClicked
             },
@@ -61,7 +61,7 @@ class N extends(r = i.PureComponent) {
       }, t.route));
     return (0, l.jsx)("ul", {
       id: r,
-      className: (0, u.l)(m, "moreList", t ? "Open" : "Closed"),
+      className: (0, u.l)(h, "moreList", t ? "Open" : "Closed"),
       "aria-label": i,
       children: o
     })

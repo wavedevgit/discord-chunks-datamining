@@ -59,7 +59,7 @@ function Z(e) {
     trailingIconClass: P.messageContentTrailingIcon,
     leadingIconClass: P.messageContentLeadingIcon,
     iconSize: I.WW
-  }), R = (0, C.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(v.ZP, {
+  }), R = (0, C.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(v.Z, {
     className: P.sticker,
     size: 128,
     sticker: e,

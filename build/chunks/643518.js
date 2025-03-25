@@ -14,7 +14,7 @@ var r = t(442837),
   f = t(708108),
   p = t(146078),
   b = t(228168),
-  m = t(981631),
+  y = t(981631),
   v = t(388032);
 
 function g(e) {
@@ -22,7 +22,7 @@ function g(e) {
     user: n,
     currentUser: t,
     guildId: g,
-    initialSubsection: y
+    initialSubsection: m
   } = e, {
     voiceActivityStatusEnabled: I
   } = (0, o.U)({
@@ -33,36 +33,36 @@ function g(e) {
     location: "useUserProfileModalTabBarItems"
   }), {
     live: h,
-    recent: x,
-    stream: _,
+    recent: _,
+    stream: x,
     outbox: O
   } = (0, c.Z)(n.id), {
     voiceChannel: Z,
-    voiceActivity: N
+    voiceActivity: P
   } = (0, d.Z)({
     userId: n.id,
     guildId: g,
     surface: "use-user-profile-modal-tab-bar-items"
-  }), P = n.id === (null == t ? void 0 : t.id), E = (0, r.e7)([l.Z, i.Z], () => {
-    let e = P ? l.Z.getStatus() : i.Z.getStatus(n.id);
-    return e === m.Skl.OFFLINE || e === m.Skl.INVISIBLE
-  }), S = null != _ || h.length > 0, T = x.length > 0, {
+  }), N = n.id === (null == t ? void 0 : t.id), E = (0, r.e7)([l.Z, i.Z], () => {
+    let e = N ? l.Z.getStatus() : i.Z.getStatus(n.id);
+    return e === y.Skl.OFFLINE || e === y.Skl.INVISIBLE
+  }), S = null != x || h.length > 0, T = _.length > 0, {
     mutualFriendsCount: C,
     mutualGuilds: A
   } = (0, a.Z)(n), w = null == A ? void 0 : A.length, L = (0, u.Z)({
     user: n,
-    location: m.Sbl.PROFILE_MODAL_TABS
+    location: y.Sbl.PROFILE_MODAL_TABS
   }), R = [{
     section: b.oh.USER_INFO,
     text: v.NW.string(v.t.jGoPJS)
   }];
-  return !E && (S || (I || j) && null == _ && null == N && null != Z) ? R.push({
+  return !E && (S || (I || j) && null == x && null == P && null != Z) ? R.push({
     section: b.oh.ACTIVITY,
     text: v.NW.string(v.t.chq59f)
-  }) : (T || null == O && y === b.Tb.RECENT_ACTIVITY) && R.push({
+  }) : (T || null == O && m === b.Tb.RECENT_ACTIVITY) && R.push({
     section: b.oh.ACTIVITY,
     text: v.NW.string(v.t.chq59f)
-  }), !P && L && (R.push({
+  }), !N && L && (R.push({
     section: b.oh.MUTUAL_FRIENDS,
     text: (0, f.Z)(C)
   }), R.push({

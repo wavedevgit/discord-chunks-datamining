@@ -312,7 +312,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             "aria-label": G.NW.formatToPlainString(G.t["7lLCjY"], {
               categoryName: e.name
             }),
-            icon: (0, r.jsx)(D.ZP, {
+            icon: (0, r.jsx)(D.Z, {
               disableAnimation: !0,
               size: eu,
               sticker: (0, w.Zt)(e)

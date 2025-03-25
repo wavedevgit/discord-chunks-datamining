@@ -398,15 +398,17 @@ class w extends(r = o.Component) {
           })
         } else B.src = this.getSrc(j)
     }
-    return (0, i.jsx)(c.E, O({}, B))
+    return (0, i.jsx)(c.E, O({
+      ref: this._imageRef
+    }, B))
   }
   constructor(e) {
     super(e), y(this, "state", {
       readyState: b.zo9.LOADING,
       hasMouseOver: !1,
       hasFocus: !1
-    }), y(this, "startLoadingTime", Date.now()), y(this, "_cancellers", new Set), y(this, "observeVisibility", () => {
-      w.visibilityObserver.observe(this)
+    }), y(this, "startLoadingTime", Date.now()), y(this, "_cancellers", new Set), y(this, "_imageRef", o.createRef()), y(this, "observeVisibility", () => {
+      w.visibilityObserver.observe(this, this._imageRef)
     }), y(this, "unobserveVisibility", () => {
       w.visibilityObserver.unobserve(this)
     }), y(this, "handleImageLoad", (e, t) => {

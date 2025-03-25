@@ -1,10 +1,10 @@
 /** Chunk was on 3940 **/
 n.d(e, {
-  P: () => _
+  P: () => l
 });
 var i = n(442837),
   E = n(236289);
 
-function _() {
+function l() {
   return (0, i.e7)([E.Z], () => E.Z.getAccountStanding())
 }

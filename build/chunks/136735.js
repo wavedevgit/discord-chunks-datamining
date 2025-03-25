@@ -28,8 +28,8 @@ var n = l(200651),
   w = l(419922),
   E = l(611480),
   S = l(981631),
-  P = l(388032),
-  C = l(825113),
+  C = l(388032),
+  P = l(825113),
   Z = l(434227),
   D = l(600126);
 let z = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
@@ -49,18 +49,18 @@ let _ = e => {
       stickerPreview: t
     } = e;
     return (0, n.jsxs)("div", {
-      className: C.preview,
+      className: P.preview,
       children: [(0, n.jsx)("div", {
-        className: C.previewDark,
+        className: P.previewDark,
         children: null != t ? t : (0, n.jsx)("img", {
           src: Z,
-          alt: P.NW.string(P.t.qOsjZm)
+          alt: C.NW.string(C.t.qOsjZm)
         })
       }), (0, n.jsx)("div", {
-        className: C.previewLight,
+        className: P.previewLight,
         children: null != t ? t : (0, n.jsx)("img", {
           src: D,
-          alt: P.NW.string(P.t.YC5NAA)
+          alt: C.NW.string(C.t.YC5NAA)
         })
       })]
     })
@@ -71,7 +71,7 @@ let _ = e => {
       previewData: l,
       onStickerError: i
     } = e;
-    if (null != t) return (0, n.jsx)(w.ZP, {
+    if (null != t) return (0, n.jsx)(w.Z, {
       size: 160,
       sticker: t
     });
@@ -81,7 +81,7 @@ let _ = e => {
       formatType: a,
       content: s
     } = l;
-    return (0, n.jsx)(w.ZP, {
+    return (0, n.jsx)(w.Z, {
       assetData: s,
       fileUri: s,
       size: 160,
@@ -119,7 +119,7 @@ function B(e) {
     let l = null === (t = e.type) || void 0 === t ? void 0 : t.split(";")[0];
     if (!z.has(l)) {
       eo({
-        message: P.NW.string(P.t.B2hGAA),
+        message: C.NW.string(C.t.B2hGAA),
         isBlocking: !0
       });
       return
@@ -136,7 +136,7 @@ function B(e) {
     }
     if (n.size > Y) {
       eo({
-        message: P.NW.formatToPlainString(P.t["3eK7Rk"], {
+        message: C.NW.formatToPlainString(C.t["3eK7Rk"], {
           maxSize: (0, h.IC)(Y, {
             useKibibytes: !0
           })
@@ -152,7 +152,7 @@ function B(e) {
     if (i === O.u3.LOTTIE) {
       if (!ec) {
         eo({
-          message: P.NW.format(P.t.RNNjy8, {
+          message: C.NW.format(C.t.RNNjy8, {
             articleURL: b.Z.getArticleURL(S.BhN.STICKERS_UPLOAD)
           }),
           isBlocking: !0
@@ -209,63 +209,63 @@ function B(e) {
     previewData: q,
     onStickerError: i.useCallback(() => {
       eo({
-        message: P.NW.string(P.t["/WIYNT"]),
+        message: C.NW.string(C.t["/WIYNT"]),
         isBlocking: !0
       })
     }, [])
-  }), ex = ec ? P.t.alYXBA : P.t.kpcMfn;
+  }), ex = ec ? C.t.alYXBA : C.t.kpcMfn;
   return (0, n.jsxs)(d.Y0X, {
     transitionState: L,
     "aria-labelledby": "STICKER_UPLOAD_MODAL",
-    className: C.modal,
+    className: P.modal,
     children: [(0, n.jsx)(d.olH, {
       onClick: U,
-      className: C.modalClose
+      className: P.modalClose
     }), (0, n.jsxs)("form", {
       onSubmit: ej,
-      className: C.form,
+      className: P.form,
       children: [(0, n.jsxs)(d.hzk, {
-        className: C.modalContent,
+        className: P.modalContent,
         children: [(0, n.jsxs)(d.xBx, {
           direction: m.Z.Direction.VERTICAL,
           separator: !1,
-          className: C.modalHeader,
+          className: P.modalHeader,
           children: [(0, n.jsx)(d.X6q, {
             variant: "heading-xl/semibold",
-            className: C.modalHeaderTitle,
-            children: P.NW.string(P.t.yxVsBA)
+            className: P.modalHeaderTitle,
+            children: C.NW.string(C.t.yxVsBA)
           }), (0, n.jsx)(d.Text, {
             variant: "text-md/normal",
-            children: P.NW.format(ex, {
+            children: C.NW.format(ex, {
               fileSize: (0, h.IC)(E.Ht, {
                 useKibibytes: !0
               })
             })
           })]
         }), (0, n.jsx)(d.hjN, {
-          title: P.NW.string(P.t.gjdiKC),
-          className: C.formItem,
+          title: C.NW.string(C.t.gjdiKC),
+          className: P.formItem,
           children: (0, n.jsx)(_, {
             stickerPreview: ev
           })
         }), (0, n.jsxs)(d.hjN, {
-          className: a()(C.formItem, C.formItemRow),
+          className: a()(P.formItem, P.formItemRow),
           children: [(0, n.jsx)(d.xJW, {
-            title: ed ? P.NW.string(P.t.wp36s7) : P.NW.string(P.t.AM3mzc),
+            title: ed ? C.NW.string(C.t.wp36s7) : C.NW.string(C.t.AM3mzc),
             required: !0,
-            className: C.formItemRowChild,
+            className: P.formItemRowChild,
             children: ed ? (0, n.jsx)(d.oil, {
               disabled: !0,
               value: null !== (D = null == G ? void 0 : G.filename) && void 0 !== D ? D : ""
             }) : (0, n.jsx)(p.Z, {
-              buttonText: P.NW.string(P.t.xEnDUV),
+              buttonText: C.NW.string(C.t.xEnDUV),
               filters: R,
               filename: null !== (B = null == G ? void 0 : G.filename) && void 0 !== B ? B : "",
-              placeholder: P.NW.string(P.t.rUYLJy),
+              placeholder: C.NW.string(C.t.rUYLJy),
               onFileSelect: ep
             })
           }), (0, n.jsx)(g.Z, {
-            className: C.formItemRowChild,
+            className: P.formItemRowChild,
             guildId: K,
             emojiId: $,
             emojiName: et,
@@ -274,20 +274,20 @@ function B(e) {
             shouldUpdateBothEmojiFields: !0
           })]
         }), (0, n.jsx)(d.xJW, {
-          title: P.NW.string(P.t["0VRh6u"]),
+          title: C.NW.string(C.t["0VRh6u"]),
           required: !0,
-          className: C.formItem,
+          className: P.formItem,
           children: (0, n.jsx)(d.oil, {
             value: X,
             onChange: J,
-            placeholder: P.NW.string(P.t["3fGttb"]),
+            placeholder: C.NW.string(C.t["3fGttb"]),
             maxLength: 30
           })
         }), (0, n.jsxs)("div", {
-          className: C.formItem,
+          className: P.formItem,
           children: [(0, n.jsxs)(d.vwX, {
-            children: [P.NW.string(P.t.uGccen), (0, n.jsx)(d.ua7, {
-              text: P.NW.string(P.t.S6jlDg),
+            children: [C.NW.string(C.t.uGccen), (0, n.jsx)(d.ua7, {
+              text: C.NW.string(C.t.S6jlDg),
               children: e => (0, n.jsx)(d.d3s, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var l = null != arguments[t] ? arguments[t] : {},
@@ -308,32 +308,32 @@ function B(e) {
               }({
                 size: "xs",
                 color: "currentColor",
-                className: C.infoIcon
+                className: P.infoIcon
               }, e))
             })]
           }), (0, n.jsx)(d.Kx8, {
             value: en,
             onChange: ei,
-            placeholder: P.NW.string(P.t.zwR0fX),
+            placeholder: C.NW.string(C.t.zwR0fX),
             maxLength: 100
           })]
         }), null != es && (0, n.jsx)(d.Text, {
-          className: C.formItem,
+          className: P.formItem,
           variant: "text-sm/normal",
           color: "text-danger",
           children: es.message
         })]
       }), (0, n.jsxs)(d.mzw, {
-        className: C.modalFooter,
+        className: P.modalFooter,
         children: [(0, n.jsx)(d.zxk, {
           type: "submit",
           disabled: !eg,
-          children: ed ? P.NW.string(P.t.Arwnen) : P.NW.string(P.t["3UB9aW"])
+          children: ed ? C.NW.string(C.t.Arwnen) : C.NW.string(C.t["3UB9aW"])
         }), (0, n.jsx)(d.zxk, {
           look: d.zxk.Looks.LINK,
           color: (0, c.ap)(F) ? d.zxk.Colors.PRIMARY : d.zxk.Colors.WHITE,
           onClick: U,
-          children: P.NW.string(P.t.oEAioK)
+          children: C.NW.string(C.t.oEAioK)
         })]
       })]
     })]

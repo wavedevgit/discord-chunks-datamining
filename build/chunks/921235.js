@@ -62,7 +62,7 @@ function j(e) {
       className: null != l && "" !== l ? y.compactButtonDisabled : y.compactButton,
       "aria-label": v.NW.string(v.t.pJObYG),
       onClick: P,
-      children: [(0, r.jsx)(p.ZP, {
+      children: [(0, r.jsx)(p.Z, {
         sticker: I,
         size: 24
       }), (0, r.jsx)(s.Text, {
@@ -73,7 +73,7 @@ function j(e) {
     }), Z]
   }) : (0, r.jsxs)("div", {
     className: y.containerExpanded,
-    children: [(0, r.jsx)(p.ZP, {
+    children: [(0, r.jsx)(p.Z, {
       sticker: I,
       size: 160
     }), (0, r.jsx)(s.zxk, {

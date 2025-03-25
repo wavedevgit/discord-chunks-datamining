@@ -217,49 +217,49 @@ function Z(e) {
     children: T.NW.string(T.t.QO7rOz)
   })
 }
-let D = function(e) {
+let D = a.forwardRef(function(e, t) {
   let {
-    application: t,
-    size: n
-  } = e, i = h.J.useExperiment({
+    application: n,
+    size: i
+  } = e, o = h.J.useExperiment({
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: !0
-  }).enabled, o = e => "".concat(location.protocol, "//").concat(location.host).concat(E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e)), {
-    analyticsLocations: j
-  } = (0, m.ZP)(), O = a.useCallback(() => {
+  }).enabled, j = e => "".concat(location.protocol, "//").concat(location.host).concat(E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e)), {
+    analyticsLocations: O
+  } = (0, m.ZP)(), N = a.useCallback(() => {
     (0, I.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
-      application_id: t.id
-    }), (0, y.JG)(o(t.id)), (0, c.showToast)((0, c.createToast)(T.NW.string(T.t["L/PwZW"]), c.ToastType.SUCCESS))
-  }, [t.id]), N = (0, s.e7)([x.default], () => x.default.locale), L = a.useCallback(() => {
+      application_id: n.id
+    }), (0, y.JG)(j(n.id)), (0, c.showToast)((0, c.createToast)(T.NW.string(T.t["L/PwZW"]), c.ToastType.SUCCESS))
+  }, [n.id]), L = (0, s.e7)([x.default], () => x.default.locale), D = a.useCallback(() => {
     (0, d.Z)((0, S.G)({
-      id: t.id,
-      name: t.name,
-      locale: N
+      id: n.id,
+      name: n.name,
+      locale: L
     }))
-  }, [N, t]), D = (0, _.Z)({
-    id: t.id,
+  }, [L, n]), M = (0, _.Z)({
+    id: n.id,
     label: T.NW.string(T.t["FfCL+/"]),
     onSuccess: () => (0, c.showToast)((0, c.createToast)(T.NW.string(T.t.eNjAam), c.ToastType.SUCCESS))
-  }), M = (0, b.Z)({
-    application: t,
+  }), G = (0, b.Z)({
+    application: n,
     onItemClick: () => {
       (0, I.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
-        application_id: t.id
+        application_id: n.id
       })
     }
-  }), G = a.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
+  }), z = a.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
     navId: "application-directory-profile",
     "aria-label": T.NW.string(T.t["/7I4/P"]),
     onClose: t,
     onSelect: void 0,
-    children: [i && (0, r.jsx)(c.kSQ, {
-      children: M
+    children: [o && (0, r.jsx)(c.kSQ, {
+      children: G
     }), e ? (0, r.jsx)(c.kSQ, {
       children: (0, r.jsx)(c.sNh, {
         id: "copy",
         label: T.NW.string(T.t.z4sP5O),
-        action: O,
+        action: N,
         icon: c.xPt
       })
     }) : null, (0, r.jsx)(c.kSQ, {
@@ -267,14 +267,14 @@ let D = function(e) {
         id: "report",
         label: T.NW.string(T.t.NgA5vr),
         color: "danger",
-        action: L
+        action: D
       })
-    }), null != D ? (0, r.jsx)(c.kSQ, {
-      children: D
+    }), null != M ? (0, r.jsx)(c.kSQ, {
+      children: M
     }) : null]
-  }), [D, L, O, i, M]), {
-    onClickLaunchActivity: z,
-    isSubmitting: B
+  }), [M, D, N, o, G]), {
+    onClickLaunchActivity: B,
+    isSubmitting: W
   } = function(e, t) {
     var n;
     let r = e.id,
@@ -326,72 +326,73 @@ let D = function(e) {
       onClickLaunchActivity: l ? b : void 0,
       isSubmitting: o
     }
-  }(t, j), {
-    enabled: W
-  } = (0, P.E)("GlobalDiscoveryAppsDetailActions"), U = W && null != z, F = U ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND;
+  }(n, O), {
+    enabled: U
+  } = (0, P.E)("GlobalDiscoveryAppsDetailActions"), F = U && null != B, V = F ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND;
   return (0, r.jsxs)("div", {
+    ref: t,
     children: [(0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.wide),
-      children: [U && (0, r.jsx)(Z, {
+      children: [F && (0, r.jsx)(Z, {
         variant: "normal",
-        size: n,
-        onClick: z,
-        isSubmitting: B
+        size: i,
+        onClick: B,
+        isSubmitting: W
       }), (0, r.jsx)(k, {
-        application: t,
+        application: n,
         variant: "normal",
-        size: n,
-        color: F
+        size: i,
+        color: V
       }), y.wS ? (0, r.jsx)(c.zxk, {
         look: c.zxk.Looks.FILLED,
         size: c.zxk.Sizes.ICON,
         color: c.zxk.Colors.PRIMARY,
         className: l()(A.iconButton, {
-          [A.small]: "sm" === n
+          [A.small]: "sm" === i
         }),
         innerClassName: A.innerIconButton,
         "aria-label": T.NW.string(T.t.z4sP5O),
-        onClick: O,
+        onClick: N,
         children: (0, r.jsx)(c.xPt, {
           size: "xs",
           color: "currentColor"
         })
       }) : null, (0, r.jsx)(w, {
-        renderDropdown: e => G(!1, e),
-        size: n
+        renderDropdown: e => z(!1, e),
+        size: i
       })]
     }), (0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.small),
-      children: [U && (0, r.jsx)(Z, {
+      children: [F && (0, r.jsx)(Z, {
         variant: "normal",
-        size: n,
-        onClick: z,
-        isSubmitting: B
+        size: i,
+        onClick: B,
+        isSubmitting: W
       }), (0, r.jsx)(k, {
-        application: t,
+        application: n,
         variant: "small",
-        size: n,
-        color: F
+        size: i,
+        color: V
       }), (0, r.jsx)(w, {
-        renderDropdown: e => G(y.wS, e),
-        size: n
+        renderDropdown: e => z(y.wS, e),
+        size: i
       })]
     }), (0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.tiny),
-      children: [U && (0, r.jsx)(Z, {
+      children: [F && (0, r.jsx)(Z, {
         variant: "icon",
-        size: n,
-        onClick: z,
-        isSubmitting: B
+        size: i,
+        onClick: B,
+        isSubmitting: W
       }), (0, r.jsx)(k, {
-        application: t,
+        application: n,
         variant: "icon",
-        size: n,
-        color: F
+        size: i,
+        color: V
       }), (0, r.jsx)(w, {
-        renderDropdown: e => G(y.wS, e),
-        size: n
+        renderDropdown: e => z(y.wS, e),
+        size: i
       })]
     })]
   })
-}
+})

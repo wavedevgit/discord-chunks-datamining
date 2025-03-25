@@ -15,15 +15,15 @@ var o = t(442837),
   f = t(369566),
   p = t(29899),
   b = t(678738),
-  m = t(151545),
+  y = t(151545),
   v = t(744802),
   g = t(493043),
-  y = t(864141),
+  m = t(864141),
   I = t(228168),
   j = t(981631),
   h = t(388032),
-  x = t(559215),
-  _ = t(658266);
+  _ = t(559215),
+  x = t(658266);
 
 function O(e) {
   let {
@@ -31,8 +31,8 @@ function O(e) {
     currentUser: t,
     displayProfile: O,
     guildId: Z,
-    subsection: N,
-    onClose: P
+    subsection: P,
+    onClose: N
   } = e, {
     voiceActivityStatusEnabled: E
   } = (0, l.U)({
@@ -57,25 +57,25 @@ function O(e) {
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
   }), U = T.length > 0 || null != A, D = (E || S) && null == A && null == L && null != w, W = C.length > 0;
   return !B && (U || D) || W || !R ? (0, r.jsxs)(i.zJl, {
-    className: x.scroller,
+    className: _.scroller,
     fade: !0,
     children: [!B && (U || D) ? (0, r.jsxs)(b.Z, {
-      children: [D && (0, r.jsx)(y.Z, {
+      children: [D && (0, r.jsx)(m.Z, {
         user: n,
         voiceChannel: w,
-        onClose: P
+        onClose: N
       }), null != A && (0, r.jsx)(g.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
         stream: A,
-        onClose: P,
+        onClose: N,
         profileGuildId: null == O ? void 0 : O.guildId
-      }), T.map((e, o) => (0, r.jsx)(m.Z, {
+      }), T.map((e, o) => (0, r.jsx)(y.Z, {
         user: n,
         currentUser: t,
         activity: e,
-        onClose: P,
+        onClose: N,
         profileGuildId: null == O ? void 0 : O.guildId
       }, "live-".concat(o)))]
     }) : null, W ? (0, r.jsx)(b.Z, {
@@ -86,18 +86,18 @@ function O(e) {
           children: e
         }, n)
       }) : void 0,
-      scrollIntoView: N === I.Tb.RECENT_ACTIVITY,
+      scrollIntoView: P === I.Tb.RECENT_ACTIVITY,
       children: C.map(e => (0, r.jsx)(v.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
         entry: e,
         profileGuildId: null == O ? void 0 : O.guildId,
-        onClose: P
+        onClose: N
       }, e.id))
     }) : null]
   }) : (0, r.jsx)("div", {
-    className: _.empty,
+    className: x.empty,
     children: (0, r.jsx)(i.$jN, {})
   })
 }

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(425493),
   u = n(410030),
   g = n(984370),
-  h = n(341907),
-  f = n(822857),
+  f = n(341907),
+  h = n(822857),
   m = n(775451),
   p = n(594174),
   b = n(471731),
@@ -49,7 +49,7 @@ function j(e) {
     handleTransition: S
   } = e, y = (0, u.ZP)(), O = (0, s.e7)([p.default], () => p.default.getCurrentUser()), E = (null == O ? void 0 : O.isStaff()) || (null == O ? void 0 : O.isStaffPersonal()) || !1, {
     enabled: I
-  } = (0, f.W)({
+  } = (0, h.W)({
     location: "collectibles_shop_header_bar"
   }), B = [{
     tab: _.AW.HOME,
@@ -64,7 +64,7 @@ function j(e) {
   });
   let T = n ? C.DR : a,
     L = l.useCallback(() => {
-      t && (T(), (0, c.Ou)()), (0, h.navigateToQuestHome)()
+      t && (T(), (0, c.Ou)()), (0, f.navigateToQuestHome)()
     }, [T, t]);
   return (0, r.jsx)(i.f6W, {
     theme: y,

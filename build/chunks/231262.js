@@ -22,8 +22,8 @@ class p extends s.PureComponent {
       mobileClassName: i,
       avoidRouter: d,
       authRedirectTo: p,
-      openNavAriaLabel: m,
-      hideNavAriaLabel: h,
+      openNavAriaLabel: h,
+      hideNavAriaLabel: m,
       skipToContentLabel: N
     } = this.props;
     return null == _ ? null : (0, n.jsxs)(s.Fragment, {
@@ -42,8 +42,8 @@ class p extends s.PureComponent {
         avoidRouter: d,
         TrackClick: _,
         onChangeLocale: a,
-        openNavAriaLabel: m,
-        hideNavAriaLabel: h
+        openNavAriaLabel: h,
+        hideNavAriaLabel: m
       })]
     })
   }

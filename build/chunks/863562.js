@@ -68,7 +68,7 @@ let m = e => {
         className: a()(f.content, {
           [f.contentRemoving]: h
         }),
-        children: [(0, r.jsx)(u.ZP, {
+        children: [(0, r.jsx)(u.Z, {
           className: f.sticker,
           size: 72,
           sticker: m

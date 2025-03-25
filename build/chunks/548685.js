@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(381585),
   u = n(597688),
   g = n(937510),
-  h = n(38900),
-  f = n(709999),
+  f = n(38900),
+  h = n(709999),
   m = n(957058),
   p = n(215023),
   b = n(388032),
@@ -44,7 +44,7 @@ let _ = e => {
       className: C.feed,
       ref: x,
       children: t ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(h.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(f.K, {}, t + 1))
       }) : (0, r.jsx)(r.Fragment, {
         children: y.slice(0, _).map((e, t) => {
           let n = u.Z.getCategoryForProduct(e.skuId);
@@ -54,7 +54,7 @@ let _ = e => {
               pageSection: "popular picks",
               categoryPosition: 2
             },
-            children: (0, r.jsx)(f.Z, {
+            children: (0, r.jsx)(h.Z, {
               product: e,
               category: n,
               user: k,

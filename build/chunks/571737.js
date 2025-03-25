@@ -16,11 +16,11 @@ let m = function(e) {
   let {
     application: t,
     onButtonsVisibilityChange: n
-  } = e, m = a.useMemo(() => s.ZP.getApplicationIconURL({
+  } = e, m = a.useRef(null), h = a.useMemo(() => s.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
-  }), [t]), h = a.useMemo(() => {
+  }), [t]), g = a.useMemo(() => {
     let e = [];
     return (0, o.vJ)(t) && e.push(u.NW.string(u.t.LO4f0N)), (0, o.Cb)(t) && (0 !== e.length && e.push("•"), e.push(u.NW.string(u.t["8z5B2d"]))), (0, o.Hu)(t) && (0 !== e.length && e.push("•"), e.push(u.NW.string(u.t["5khEk5"]))), e
   }, [t]);
@@ -28,14 +28,14 @@ let m = function(e) {
     children: [(0, r.jsx)(c.Z, {
       application: t,
       bannerType: "detail",
-      iconURL: m
+      iconURL: h
     }), (0, r.jsx)("div", {
       className: p.avatarContainer,
       style: {
         height: 52
       },
       children: (0, r.jsx)("img", {
-        src: m,
+        src: h,
         alt: "",
         className: p.avatar,
         height: 96,
@@ -56,7 +56,7 @@ let m = function(e) {
           children: t.name
         }), (0, r.jsx)("div", {
           className: p.disclosuresContainer,
-          children: h.map((e, t) => (0, r.jsx)(l.Text, {
+          children: g.map((e, t) => (0, r.jsx)(l.Text, {
             className: p.disclosuresText,
             variant: "text-xs/normal",
             color: "text-muted",
@@ -64,9 +64,11 @@ let m = function(e) {
           }, t))
         })]
       }), (0, r.jsx)(i.$, {
+        innerRef: m,
         onChange: n,
         active: !0,
         children: (0, r.jsx)(d.Z, {
+          ref: m,
           application: t,
           size: "md"
         })

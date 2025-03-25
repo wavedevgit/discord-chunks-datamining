@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -14,17 +14,17 @@ var l = n(120356),
   d = n(597688),
   u = n(709999),
   g = n(388032),
-  h = n(39532);
-let f = e => {
+  f = n(39532);
+let h = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, f = (0, o.e7)([i.default], () => i.default.getCurrentUser());
-  return null == f ? null : (0, r.jsxs)("div", {
-    className: a()(h.shelfBlockContainer, h.centeredSection),
+  } = e, h = (0, o.e7)([i.default], () => i.default.getCurrentUser());
+  return null == h ? null : (0, r.jsxs)("div", {
+    className: a()(f.shelfBlockContainer, f.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: h.blockHeader,
+      className: f.blockHeader,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
@@ -37,7 +37,7 @@ let f = e => {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: h.feed,
+      className: f.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let a = d.Z.getCategoryForProduct(e),
@@ -51,7 +51,7 @@ let f = e => {
             children: (0, r.jsx)(u.Z, {
               product: o,
               category: a,
-              user: f,
+              user: h,
               tab: l,
               isInFeedView: !0
             }, e)

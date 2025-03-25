@@ -15,7 +15,7 @@ var o = t(481060),
   f = t(562831),
   p = t(981631),
   b = t(388032),
-  m = t(309096);
+  y = t(309096);
 
 function v(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -49,7 +49,7 @@ function g(e, n) {
   }), e
 }
 
-function y(e) {
+function m(e) {
   var {
     user: n,
     analyticsLocation: t
@@ -99,7 +99,7 @@ function I(e) {
     hasIncomingPendingGameFriends: t,
     hasOutgoingPendingGameFriends: o
   });
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(m, {
     tooltipText: a,
     ariaLabel: c,
     icon: d,
@@ -122,32 +122,32 @@ function j(e) {
     location: "UserProfileModalHeaderActionButtons"
   }), {
     gameFriends: h,
-    hasOutgoingPendingGameFriends: x,
-    hasIncomingPendingGameFriends: _
+    hasOutgoingPendingGameFriends: _,
+    hasIncomingPendingGameFriends: x
   } = (0, f.H)({
     userId: t.id
-  }), O = h.length > 0 || x || _;
+  }), O = h.length > 0 || _ || x;
   return n || d === p.OGo.BLOCKED ? null : d === p.OGo.FRIEND || t.bot ? (0, r.jsx)("div", {
-    className: m.multipleButtons,
+    className: y.multipleButtons,
     children: (0, r.jsx)(a.c, {
       userId: t.id,
       onClose: v
     })
   }) : d === p.OGo.NONE && j && O ? (0, r.jsxs)("div", {
-    className: m.multipleButtons,
+    className: y.multipleButtons,
     children: [(0, r.jsx)(I, {
       user: t,
       analyticsLocation: g,
       gameFriends: h,
-      hasIncomingPendingGameFriends: _,
-      hasOutgoingPendingGameFriends: x
+      hasIncomingPendingGameFriends: x,
+      hasOutgoingPendingGameFriends: _
     }), (0, r.jsx)(a.c, {
       userId: t.id,
       onClose: v
     })]
   }) : d === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)("div", {
-    className: m.multipleButtons,
-    children: [(0, r.jsx)(y, {
+    className: y.multipleButtons,
+    children: [(0, r.jsx)(m, {
       icon: o.iHX,
       tooltipText: b.NW.string(b.t.zz2i8v),
       user: t,
@@ -157,8 +157,8 @@ function j(e) {
       onClose: v
     })]
   }) : d === p.OGo.PENDING_INCOMING ? (0, r.jsxs)("div", {
-    className: m.multipleButtons,
-    children: [(0, r.jsx)(y, {
+    className: y.multipleButtons,
+    children: [(0, r.jsx)(m, {
       icon: o.iHX,
       tooltipText: b.NW.string(b.t.ZOFd1N),
       user: t,
@@ -168,7 +168,7 @@ function j(e) {
       onClose: v
     })]
   }) : (0, r.jsxs)("div", {
-    className: m.multipleButtons,
+    className: y.multipleButtons,
     children: [(0, r.jsx)(a.v, {
       userId: t.id,
       onClose: v

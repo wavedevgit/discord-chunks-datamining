@@ -13,7 +13,7 @@ var n, s = a(200651),
   _ = a(431138),
   p = a(708470);
 
-function m(e, t, a) {
+function h(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
     value: a,
     enumerable: !0,
@@ -21,7 +21,7 @@ function m(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-let h = u.j_.MAIN_NAVIGATION_MENU;
+let m = u.j_.MAIN_NAVIGATION_MENU;
 class N extends(n = r.PureComponent) {
   render() {
     let {
@@ -86,15 +86,15 @@ class N extends(n = r.PureComponent) {
     }, "dropdown_".concat(e))
   }
   constructor(...e) {
-    super(...e), m(this, "_dropdownId", i()("subMenuDropdown")), m(this, "closeMenu", () => {
+    super(...e), h(this, "_dropdownId", i()("subMenuDropdown")), h(this, "closeMenu", () => {
       this.props.onClose()
-    }), m(this, "openMenu", () => {
+    }), h(this, "openMenu", () => {
       let {
         title: e,
         onOpen: t
       } = this.props;
       t(e)
-    }), m(this, "toggleMenu", () => {
+    }), h(this, "toggleMenu", () => {
       let {
         isOpen: e,
         title: t,
@@ -102,9 +102,9 @@ class N extends(n = r.PureComponent) {
         onClose: n
       } = this.props;
       e ? n() : a(t)
-    }), m(this, "handleKeyDown", e => {
+    }), h(this, "handleKeyDown", e => {
       ("Enter" === e.key || " " === e.key) && (e.preventDefault(), this.toggleMenu())
-    }), m(this, "renderMobileSubMenu", () => {
+    }), h(this, "renderMobileSubMenu", () => {
       let {
         links: e,
         TrackClick: t,
@@ -113,7 +113,7 @@ class N extends(n = r.PureComponent) {
       return e.map(e => e.external ? (0, s.jsx)("li", {
         className: p.subListItemInactive,
         children: (0, s.jsx)(t, {
-          eventName: h,
+          eventName: m,
           className: p.subListItemLink,
           data: {
             linkClicked: "mobile-".concat(e.linkClicked)
@@ -131,7 +131,7 @@ class N extends(n = r.PureComponent) {
           children: (0, s.jsx)(t, {
             className: p.subListItemLink,
             tag: "span",
-            eventName: h,
+            eventName: m,
             data: {
               linkClicked: "mobile-".concat(e.linkClicked)
             },
@@ -142,7 +142,7 @@ class N extends(n = r.PureComponent) {
     })
   }
 }
-m(N, "defaultProps", {
+h(N, "defaultProps", {
   isOpen: !1,
   isMobileMenuOpen: !1
 })

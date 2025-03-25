@@ -13,8 +13,8 @@ var n = a(200651),
   u = a(643103),
   _ = a(34211),
   p = a(231338),
-  m = a(431138),
-  h = a(222483);
+  h = a(431138),
+  m = a(222483);
 
 function N(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,31 +44,31 @@ class g extends s.PureComponent {
       menuOpen: o
     } = this.state;
     return (0, n.jsx)("header", {
-      className: l()(h.header, e),
+      className: l()(m.header, e),
       children: (0, n.jsxs)("nav", {
-        className: h.headerInner,
+        className: m.headerInner,
         children: [(0, n.jsx)(t, {
           tag: "div",
           eventName: I,
-          className: h.headerLogo,
+          className: m.headerLogo,
           data: {
             linkClicked: "logo"
           },
           children: (0, n.jsx)(d.Z, {
             avoidRouter: s,
-            className: h.logoWrapper,
+            className: m.logoWrapper,
             to: p.am.INDEX,
             from: p.j_.MAIN_NAVIGATION_MENU,
             children: (0, n.jsx)("img", {
-              className: h.logo,
-              src: m.r.ASSET_LOGO_DISCORD_SVG,
+              className: m.logo,
+              src: h.r.ASSET_LOGO_DISCORD_SVG,
               alt: "Discord",
               itemProp: "logo"
             })
           })
         }), (0, n.jsx)(t, {
           tag: "div",
-          className: h.hamburgerButton,
+          className: m.hamburgerButton,
           eventName: I,
           data: {
             linkClicked: "mobile-menu"
@@ -82,11 +82,11 @@ class g extends s.PureComponent {
             onClick: this.toggleMenu
           })
         }), (0, n.jsxs)("ul", {
-          className: o ? h.headerNavOpen : h.headerNav,
+          className: o ? m.headerNavOpen : m.headerNav,
           children: [(0, n.jsx)(_.o, {
             avoidRouter: s,
             TrackClick: t,
-            styles: h,
+            styles: m,
             isMobile: !0,
             isVisible: o
           }), (0, n.jsx)(u.p, {

@@ -22,33 +22,34 @@ var r = n(200651),
   _ = n(839526),
   E = n(4046),
   j = n(423741);
-let C = e => {
-  var t, n;
+let C = i.forwardRef((e, t) => {
+  var n, s;
   let {
-    className: s,
-    isFooterVisible: C,
-    isDarkMode: O,
-    isReducedMotion: v
+    className: C,
+    isFooterVisible: O,
+    isDarkMode: v,
+    isReducedMotion: S
   } = e, {
-    analyticsLocations: S
-  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), T = (0, g.Ng)(), I = (0, g.Wp)(T, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, y = (0, p.N)(), A = (0, m.Nx)(), P = (0, u.rO)(), R = i.useRef(null), [D, Z] = i.useState(!1);
+    analyticsLocations: T
+  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
   return i.useEffect(() => {
-    !C || v || D || null == R.current || R.current.play()
-  }, [C, v, D]), (0, r.jsx)(c.Gt, {
-    value: S,
+    !O || S || Z || null == D.current || D.current.play()
+  }, [O, S, Z]), (0, r.jsx)(c.Gt, {
+    value: T,
     children: (0, r.jsxs)("div", {
-      className: a()(b.container, s),
+      ref: t,
+      className: a()(b.container, C),
       children: [(0, r.jsx)(l.X6q, {
         className: b.footerHeader,
         variant: "display-md",
         color: "header-primary",
         children: N.NW.string(N.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
-        subscriptionTier: null !== (n = null == y ? void 0 : null === (t = y.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : I,
-        inOfferExperience: A,
+        subscriptionTier: null !== (s = null == A ? void 0 : null === (n = A.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : y,
+        inOfferExperience: P,
         containerClassName: b.footerCTAContainer,
         isMarketingPageV2Enabled: !0,
-        isDarkMode: O
+        isDarkMode: v
       }), (0, r.jsx)("div", {
         className: b.footerArtContainer,
         children: (0, r.jsx)(d.Z, {
@@ -57,12 +58,12 @@ let C = e => {
           poster: E.Z,
           className: b.footerArt,
           onEnded: () => {
-            Z(!0)
+            w(!0)
           },
-          ref: R,
+          ref: D,
           children: (0, r.jsx)("source", {
-            src: P ? _.Z : j.Z,
-            type: P ? x.m.MP4 : x.m.WEBM
+            src: R ? _.Z : j.Z,
+            type: R ? x.m.MP4 : x.m.WEBM
           })
         })
       }), (0, r.jsx)("div", {
@@ -72,4 +73,4 @@ let C = e => {
       })]
     })
   })
-}
+})

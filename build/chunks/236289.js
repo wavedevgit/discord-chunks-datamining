@@ -2,8 +2,8 @@
 n.d(e, {
   Z: () => y
 });
-var i, E, _, l = n(979079),
-  A = n.n(l),
+var i, E, l, _ = n(979079),
+  A = n.n(_),
   a = n(442837),
   r = n(570140),
   u = n(531441),
@@ -36,7 +36,7 @@ function b(t) {
   let {} = t;
   L = "", O = null, P = !1
 }
-class B extends(_ = a.ZP.Store) {
+class B extends(l = a.ZP.Store) {
   isFetching() {
     return c
   }
@@ -120,10 +120,10 @@ let y = new B(r.Z, {
       accountStanding: n,
       isDsaEligible: i,
       isAppealEligible: E,
-      username: _,
-      appealEligibility: l
+      username: l,
+      appealEligibility: _
     } = t;
-    S = A()(e, "id"), T = n, f = i, g = E, c = !1, U = !0, d = null, H = _, C = l
+    S = A()(e, "id"), T = n, f = i, g = E, c = !1, U = !0, d = null, H = l, C = _
   },
   SAFETY_HUB_FETCH_FAILURE: function(t) {
     let {
@@ -140,9 +140,9 @@ let y = new B(r.Z, {
       accountStanding: n,
       isDsaEligible: i,
       username: E,
-      isAppealEligible: _
+      isAppealEligible: l
     } = t;
-    S[e.id] = e, s[e.id] = u.OY.SUCCESS, T = n, c = !1, d = null, f = i, g = _, U = !0, H = E
+    S[e.id] = e, s[e.id] = u.OY.SUCCESS, T = n, c = !1, d = null, f = i, g = l, U = !0, H = E
   },
   SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: function(t) {
     let {

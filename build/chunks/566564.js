@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(594174),
   u = n(960048),
   g = n(744112),
-  h = n(139668),
-  f = n(223143),
+  f = n(139668),
+  h = n(223143),
   m = n(364111),
   p = n(752053),
   b = n(81136),
@@ -38,21 +38,21 @@ let O = e => {
     } = (0, b.Z)(), {
       isFetchingShopHome: u,
       fetchShopHomeError: g,
-      shopBlocks: h,
-      refreshShopHome: f
+      shopBlocks: f,
+      refreshShopHome: h
     } = (0, m.E)(i, {
       noCache: c,
       includeUnpublished: d,
       includeBundles: !0
     }), j = l.useCallback(() => {
-      f()
-    }, [f]);
+      h()
+    }, [h]);
     if (null != g) return (0, r.jsx)(p.Z, {
       onRetry: j,
       errorOrigin: p.i.SHOP_PAGE,
       errorMessage: g.message
     });
-    if (u || 0 === h.length) return (0, r.jsxs)("div", {
+    if (u || 0 === f.length) return (0, r.jsxs)("div", {
       className: y.loadingContainer,
       children: [(0, r.jsx)(v.Z, {
         isLoading: u,
@@ -124,7 +124,7 @@ let O = e => {
       }, l)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: h.map((e, t) => S(e, t))
+      children: f.map((e, t) => S(e, t))
     })
   },
   E = e => {
@@ -140,9 +140,9 @@ let O = e => {
       fetchPurchasesError: v,
       claimError: k,
       refreshCategories: x
-    } = (0, f.ZP)({
+    } = (0, h.ZP)({
       location: "CollectiblesFeedShop"
-    }), E = null !== (t = null != _ ? _ : v) && void 0 !== t ? t : k, I = (0, i.e7)([d.default], () => d.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), T = (0, h.R)("CollectiblesFeedShop"), {
+    }), E = null !== (t = null != _ ? _ : v) && void 0 !== t ? t : k, I = (0, i.e7)([d.default], () => d.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), T = (0, f.R)("CollectiblesFeedShop"), {
       noCache: L,
       includeUnpublished: N
     } = (0, b.Z)(), w = l.useCallback(() => {
