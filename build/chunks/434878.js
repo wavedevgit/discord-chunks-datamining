@@ -9,7 +9,7 @@ var r = n(200651),
   l = n.n(i),
   s = n(196434),
   o = n.n(s),
-  c = n(232713),
+  c = n(788347),
   d = n(91192),
   u = n(924826),
   m = n(536895),
@@ -633,11 +633,11 @@ function e_(e) {
       isEnabled: !er && e1,
       channel: t
     }),
-    e2 = e6.containerProps,
+    e8 = e6.containerProps,
     {
-      ref: e8
-    } = e2,
-    e4 = eh(e2, ["ref"]),
+      ref: e4
+    } = e8,
+    e2 = eh(e8, ["ref"]),
     e5 = k.ZP.getSidebarState(t.id),
     e7 = null != e5 && (0, k.D5)(e5),
     te = (0, g.e7)([k.ZP], () => k.ZP.getSection(t.id)) === es.ULH.MEMBERS;
@@ -670,7 +670,7 @@ function e_(e) {
           children: (0, r.jsx)(p.GMG, eu({
             ref: e => {
               var t;
-              e8.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null, eX(e)
+              e4.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null, eX(e)
             },
             itemGutter: 16,
             padding: 24,
@@ -685,7 +685,7 @@ function e_(e) {
             getSectionProps: e$,
             onScroll: j ? e3 : void 0,
             chunkSize: 350
-          }, e4, e), A)
+          }, e2, e), A)
         }) : (0, r.jsx)(d.bG, {
           navigator: e9,
           children: (0, r.jsx)(d.SJ, {

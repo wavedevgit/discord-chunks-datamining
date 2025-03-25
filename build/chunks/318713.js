@@ -5,21 +5,21 @@ r.d(t, {
 var n = r(200651);
 r(192379);
 var i = r(120356),
-  a = r.n(i),
+  o = r.n(i),
   l = r(481060),
-  o = r(55935),
+  a = r(55935),
   c = r(543388),
   s = r(223021),
   u = r(388032),
-  p = r(432957);
+  m = r(432957);
 
-function m(e) {
+function p(e) {
   var t, r;
   let {
     tooltipProps: i,
-    timeFormatted: a,
+    timeFormatted: o,
     children: l,
-    compact: o,
+    compact: a,
     timestamp: c,
     id: s
   } = e;
@@ -45,11 +45,11 @@ function m(e) {
     dateTime: c.toISOString(),
     children: null != l ? l : (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("i", {
-        className: p.separator,
+        className: m.separator,
         "aria-hidden": !0,
-        children: o ? "[" : " — "
-      }), a, o && (0, n.jsxs)("i", {
-        className: p.separator,
+        children: a ? "[" : " — "
+      }), o, a && (0, n.jsxs)("i", {
+        className: m.separator,
         "aria-hidden": !0,
         children: ["]", " "]
       })]
@@ -74,42 +74,42 @@ let d = function(e) {
     isVisibleOnlyOnHover: f = !1,
     cozyAlt: b = !1,
     isInline: y = !0,
-    id: O,
-    isEdited: g = !1,
+    id: g,
+    isEdited: O = !1,
     application: j,
     tooltipPosition: h
-  } = e, x = new Date(d), v = (0, o.Hg)(x), P = i ? (0, o.vc)(x, "LT") : (0, o.Y4)(x, !0), S = i ? (0, s.Z)(P) : null, w = g ? u.NW.formatToPlainString(u.t.CDzOFR, {
-    timeFormatted: v
-  }) : v;
+  } = e, v = new Date(d), x = (0, a.Hg)(v), P = i ? (0, a.vc)(v, "LT") : (0, a.Y4)(v, !0), S = i ? (0, s.Z)(P) : null, T = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
+    timeFormatted: x
+  }) : x;
   return (0, n.jsx)("span", {
-    className: a()(r, S, {
-      [p.timestamp]: !0,
-      [p.timestampVisibleOnHover]: f,
-      [p.timestampInline]: y,
-      [p.alt]: b
+    className: o()(r, S, {
+      [m.timestamp]: !0,
+      [m.timestampVisibleOnHover]: f,
+      [m.timestampInline]: y,
+      [m.alt]: b
     }),
     children: null == j ? (0, n.jsx)(l.ua7, {
-      text: (0, o.vc)(x, "LLLL"),
-      "aria-label": w,
-      tooltipClassName: p.timestampTooltip,
+      text: (0, a.vc)(v, "LLLL"),
+      "aria-label": T,
+      tooltipClassName: m.timestampTooltip,
       position: h,
       delay: 750,
-      children: e => (0, n.jsx)(m, {
+      children: e => (0, n.jsx)(p, {
         tooltipProps: e,
         timeFormatted: P,
-        timestamp: x,
-        id: O,
+        timestamp: v,
+        id: g,
         compact: i,
         children: t
       })
     }) : (0, n.jsx)(c.Z, {
       application: j,
-      timestamp: x,
+      timestamp: v,
       compact: i,
-      children: (0, n.jsx)(m, {
+      children: (0, n.jsx)(p, {
         timeFormatted: P,
-        timestamp: x,
-        id: O,
+        timestamp: v,
+        id: g,
         compact: i,
         children: t
       })

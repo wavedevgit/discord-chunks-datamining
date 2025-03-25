@@ -104,7 +104,7 @@ function D(e) {
     }
   }), et = (0, I.ZP)(n.id, J ? D : void 0), er = (0, I.ZP)(n.id, D), eo = (0, l.e7)([y.Z], () => y.Z.getRelationshipType(n.id)), ei = n.id === t.id, el = (0, f.p)({
     location: "UserProfileModal"
-  }), es = null != K ? K : (0, p.Z)(), ec = o.useMemo(() => null != D ? {
+  }), es = o.useMemo(() => null != K ? K : (0, p.Z)(), [K]), ec = o.useMemo(() => null != D ? {
     [D]: [n.id]
   } : {}, [D, n.id]);
   (0, a.$)(ec);

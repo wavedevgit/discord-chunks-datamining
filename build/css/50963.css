@@ -1,6 +1,6 @@
 /**
   Module ID: 50963
-  Original File Name: 164a97f2da19be91
+  Original File Name: 4ea207bb629d23a1
 **/
 .ephemeral__5126c {
     position: relative;
@@ -668,6 +668,10 @@
 
 .repliedTextPreview_c19a55.clickable_c19a55:hover,.repliedTextPreview_c19a55.repliedMessageClickableSpineHovered_c19a55 {
     color: var(--header-primary)
+}
+
+.hoverable_c19a55 {
+    display: inline-flex
 }
 
 .repliedMessage_c19a55 .repliedTextPreview_c19a55 .repliedTextContent_c19a55,.threadMessageAccessory_c19a55 .threadMessageAccessoryPreview_c19a55 .threadMessageAccessoryContent_c19a55 {
@@ -2185,4 +2189,4 @@
     color: var(--primary-500)
 }
 
-/*# sourceMappingURL=164a97f2da19be91.css.map*/
+/*# sourceMappingURL=4ea207bb629d23a1.css.map*/

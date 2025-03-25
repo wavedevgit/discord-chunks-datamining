@@ -138,91 +138,100 @@ let R = {
         name: t
       }
     }), n) ? t === E.u.UPCOMING_DROP_UNTIMED ? (0, r.jsx)("div", {
-      className: a()(y.flipCardContainer, {
-        [y.forceShadow]: b
-      }),
+      className: y.hoverWrapper,
       onMouseEnter: ee,
       onFocus: ee,
       onMouseLeave: et,
       onBlur: et,
+      children: (0, r.jsx)("div", {
+        className: a()(y.flipCardContainer, {
+          [y.forceShadow]: b
+        }),
+        children: (0, r.jsxs)("div", {
+          className: a()(y.flipCard, {
+            [y.partialFlipCard]: !$,
+            [y.ultraFlipCard]: $,
+            [y.rotateCard]: $ && 3 === Q,
+            [y.reducedMotion]: k
+          }),
+          children: [(0, r.jsx)("div", {
+            className: y.flipCardFront,
+            children: (0, r.jsx)(Z, P(A({}, e), {
+              className: y.topCover
+            }))
+          }), (0, r.jsx)("div", {
+            className: y.flipCardBack,
+            children: (0, r.jsx)(Z, P(A({}, e), {
+              className: y.topCover
+            }))
+          })]
+        })
+      })
+    }) : es ? (0, r.jsx)("div", {
+      className: y.hoverWrapper,
       children: (0, r.jsxs)("div", {
-        className: a()(y.flipCard, {
-          [y.partialFlipCard]: !$,
-          [y.ultraFlipCard]: $,
-          [y.rotateCard]: $ && 3 === Q,
+        className: a()({
+          [y.noFlipCardContainer]: !K,
+          [y.noFlipCardContainerCarousel]: K,
+          [y.forceShadow]: b,
           [y.reducedMotion]: k
         }),
-        children: [(0, r.jsx)("div", {
-          className: y.flipCardFront,
-          children: (0, r.jsx)(Z, P(A({}, e), {
-            className: y.topCover
-          }))
-        }), (0, r.jsx)("div", {
-          className: y.flipCardBack,
-          children: (0, r.jsx)(Z, P(A({}, e), {
-            className: y.topCover
-          }))
+        children: [(0, r.jsx)(Z, P(A({}, e), {
+          ref: t === E.u.TENURE_REWARD_COLLECTIBLE ? ei : void 0
+        })), H && (0, r.jsx)(N.Z, {
+          speedValues: R,
+          numBursts: 3,
+          particlesPerBurst: 15,
+          confettiTarget: ei.current,
+          offsetXPercentageMax: -30,
+          offsetXPercentageMin: -70,
+          offsetYPercentageMax: 40,
+          offsetYPercentageMin: 20,
+          customConfettiCanvas: O,
+          dragCoefficientValue: .0166,
+          onAnimationEnd: Y
         })]
       })
-    }) : es ? (0, r.jsxs)("div", {
-      className: a()({
-        [y.noFlipCardContainer]: !K,
-        [y.noFlipCardContainerCarousel]: K,
-        [y.forceShadow]: b,
-        [y.reducedMotion]: k
-      }),
-      children: [(0, r.jsx)(Z, P(A({}, e), {
-        ref: t === E.u.TENURE_REWARD_COLLECTIBLE ? ei : void 0
-      })), H && (0, r.jsx)(N.Z, {
-        speedValues: R,
-        numBursts: 3,
-        particlesPerBurst: 15,
-        confettiTarget: ei.current,
-        offsetXPercentageMax: -30,
-        offsetXPercentageMin: -70,
-        offsetYPercentageMax: 40,
-        offsetYPercentageMin: 20,
-        customConfettiCanvas: O,
-        dragCoefficientValue: .0166,
-        onAnimationEnd: Y
-      })]
     }) : (0, r.jsx)("div", {
-      className: a()(y.flipCardContainer, {
-        [y.forceShadow]: b
-      }),
-      children: (0, r.jsxs)(u.P3F, {
-        onClick: () => L(!0),
-        className: a()(y.flipCard, y.clickable, {
-          [y.flipped]: W,
-          [y.partialFlipCard]: !B && !W,
-          [y.reducedMotion]: k
+      className: y.hoverWrapper,
+      children: (0, r.jsx)("div", {
+        className: a()(y.flipCardContainer, {
+          [y.forceShadow]: b
         }),
-        onTransitionEnd: e => {
-          W && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (M(!0), f.default.track(S.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
-            card_type: t
-          }), null != s && J(T.L.TAKE_ACTION))
-        },
-        children: [(0, r.jsx)("div", {
-          className: y.flipCardHidden,
-          "aria-hidden": !0,
-          children: (0, r.jsx)(Z, A({}, e))
-        }), (0, r.jsx)("div", {
-          className: y.flipCardFront,
-          children: (0, r.jsx)(Z, P(A({}, q.upcomingDropUntimed), {
-            pillText: ""
-          }))
-        }), (0, r.jsx)("div", {
-          className: y.flipCardBack,
-          children: (0, r.jsx)(Z, P(A({}, e), {
-            description: ""
-          }))
-        }), (0, r.jsx)("div", {
-          className: y.flipCardButtonContainer,
-          children: (0, r.jsx)(u.zxk, {
-            onClick: () => L(!0),
-            children: I.NW.string(I.t.dcztdX)
-          })
-        })]
+        children: (0, r.jsxs)(u.P3F, {
+          onClick: () => L(!0),
+          className: a()(y.flipCard, y.clickable, {
+            [y.flipped]: W,
+            [y.partialFlipCard]: !B && !W,
+            [y.reducedMotion]: k
+          }),
+          onTransitionEnd: e => {
+            W && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (M(!0), f.default.track(S.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+              card_type: t
+            }), null != s && J(T.L.TAKE_ACTION))
+          },
+          children: [(0, r.jsx)("div", {
+            className: y.flipCardHidden,
+            "aria-hidden": !0,
+            children: (0, r.jsx)(Z, A({}, e))
+          }), (0, r.jsx)("div", {
+            className: y.flipCardFront,
+            children: (0, r.jsx)(Z, P(A({}, q.upcomingDropUntimed), {
+              pillText: ""
+            }))
+          }), (0, r.jsx)("div", {
+            className: y.flipCardBack,
+            children: (0, r.jsx)(Z, P(A({}, e), {
+              description: ""
+            }))
+          }), (0, r.jsx)("div", {
+            className: y.flipCardButtonContainer,
+            children: (0, r.jsx)(u.zxk, {
+              onClick: () => L(!0),
+              children: I.NW.string(I.t.dcztdX)
+            })
+          })]
+        })
       })
     }) : (0, r.jsx)(D, P(A({}, q.upcomingDropUntimed), {
       forceShadow: b

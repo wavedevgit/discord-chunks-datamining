@@ -388,7 +388,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
             flags: e.notification_settings.flags
           },
           geoRestrictedGuilds: o,
-          explicitContentScanVersion: e.explicit_content_scan_version
+          explicitContentScanVersion: e.explicit_content_scan_version,
+          failedStates: e.failed_states
         })
       }), null != e.auth_token && K({
         type: "UPDATE_TOKEN",
@@ -396,6 +397,10 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
         userId: e.user.id
       }), w.RR.update(), w.GC.update()
     })
+  })
+}), H(["STATE_UPDATE"], e => {
+  K({
+    type: "STATE_UPDATE"
   })
 }), H(["RESUMED"], () => {
   w.RR.forceUpdate(), w.GC.forceUpdate(), K({

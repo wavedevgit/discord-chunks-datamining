@@ -5,6 +5,7 @@ n.d(t, {
   AA: () => T,
   Db: () => L,
   Dx: () => I,
+  HZ: () => x,
   R: () => w,
   TB: () => N,
   XE: () => R,
@@ -183,5 +184,12 @@ function L(e) {
   a.Z.dispatch({
     type: "SOUNDBOARD_MUTE_JOIN_SOUND",
     channelId: e
+  })
+}
+
+function x(e) {
+  a.Z.dispatch({
+    type: "GUILD_SOUNDBOARD_TOGGLE_SHOW_ALL",
+    guildId: e
   })
 }

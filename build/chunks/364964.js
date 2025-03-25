@@ -8,7 +8,7 @@ var r = n(147519),
   o = n.n(i),
   a = n(462176);
 r.Z.registerLanguage("ansi", a.Z);
-let s = /<[^>]*>[^>]*(html\\`)/g,
+let s = /(<script\/?\\?>)|(html\\?`)/g,
   l = new Set(["html", "xml"]),
   c = {
     highlight(e, t, n) {

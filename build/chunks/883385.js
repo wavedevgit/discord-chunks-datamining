@@ -1,14 +1,15 @@
-/** Chunk was on 80125 **/
+/** Chunk was on 93741 **/
+"use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => i
 });
 var r = n(200651);
 n(192379);
-var i = n(410575);
+var o = n(410575);
 
-function o(e, t) {
+function i(e, t) {
   return function(n) {
-    return (0, r.jsx)(i.Z, {
+    return (0, r.jsx)(o.Z, {
       page: t.page,
       section: t.section,
       object: t.object,

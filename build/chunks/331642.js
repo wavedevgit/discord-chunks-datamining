@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(242291),
   m = n(830253),
   g = n(792165),
-  p = n(409673),
-  h = n(603074),
+  p = n(603074),
+  h = n(294206),
   f = n(388032),
   x = n(10314);
 
@@ -35,7 +35,7 @@ function N(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(l.VqE, {
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(p.Z, {
           suppressPlaySound: !0,
           shouldShowUpsell: !1,
           guildId: null,
@@ -49,7 +49,7 @@ function N(e) {
     },
     children: e => {
       var t, i;
-      return (0, r.jsx)(p.hU, (t = function(e) {
+      return (0, r.jsx)(h.hU, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -99,7 +99,7 @@ function b(e) {
     emojiName: t.emojiName,
     soundName: t.name
   });
-  return (0, r.jsx)(p.hU, {
+  return (0, r.jsx)(h.hU, {
     onClick: n,
     text: i,
     children: (0, r.jsx)(l.gj8, {
@@ -148,7 +148,7 @@ function _(e) {
       className: x.container,
       children: [(0, r.jsx)(N, {
         onSelect: i
-      }), s && !n && (0, r.jsx)(p.hU, {
+      }), s && !n && (0, r.jsx)(h.hU, {
         onClick: () => i(null),
         text: f.NW.string(f.t.jmtcGB),
         children: (0, r.jsx)(l.XHJ, {

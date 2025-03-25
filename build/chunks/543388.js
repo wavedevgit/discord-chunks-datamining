@@ -1,13 +1,13 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => m
+  Z: () => p
 });
 var n = r(200651);
 r(192379);
 var i = r(913527),
-  a = r.n(i),
+  o = r.n(i),
   l = r(481060),
-  o = r(925329),
+  a = r(925329),
   c = r(388032),
   s = r(147120);
 
@@ -17,8 +17,8 @@ function u(e) {
     timestamp: r
   } = e;
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(o.Z, {
-      size: o.Z.Sizes.LARGE,
+    children: [(0, n.jsx)(a.Z, {
+      size: a.Z.Sizes.LARGE,
       game: t
     }), (0, n.jsxs)("div", {
       className: s.textContainer,
@@ -26,7 +26,7 @@ function u(e) {
         className: s.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: a()(r).format("LLLL")
+        children: o()(r).format("LLLL")
       }), (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
@@ -38,7 +38,7 @@ function u(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     application: t,
     timestamp: r,
@@ -91,14 +91,14 @@ function p(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     application: t,
     timestamp: r,
     compact: i,
-    children: a
+    children: o
   } = e;
-  return (0, n.jsxs)(p, {
+  return (0, n.jsxs)(m, {
     application: t,
     timestamp: r,
     children: [i ? null : (0, n.jsx)(l.iWm, {
@@ -106,6 +106,6 @@ function m(e) {
       size: "custom",
       width: 14,
       height: 14
-    }), a]
+    }), o]
   })
 }

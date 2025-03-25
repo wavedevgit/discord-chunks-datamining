@@ -136,7 +136,7 @@ let B = i.memo(function(e) {
       c = en ? el : null != $ ? $ : W.NW.string(W.t.oQn0h4),
       d = (0, E.r)(J),
       p = [{
-        label: en ? W.NW.string(W.t.RscU7O) : W.NW.string(W.t.VJlc0d),
+        label: en ? W.NW.string(W.t.cnBQPD) : W.NW.string(W.t.VJlc0d),
         trackingArea: O.j_.PLAY,
         onClick: eo,
         disabledReason: e,

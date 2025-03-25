@@ -63,8 +63,8 @@ let u = function(e) {
       }
     },
     hasThread: O,
-    isSystemMessage: C,
-    hasReply: x
+    isSystemMessage: x,
+    hasReply: C
   } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
@@ -89,8 +89,8 @@ let u = function(e) {
         [s.cozy]: !n,
         [s.zalgo]: u,
         [s.hasThread]: O,
-        [s.isSystemMessage]: C,
-        [s.hasReply]: x
+        [s.isSystemMessage]: x,
+        [s.hasReply]: C
       }),
       ref: y
     }, j), {

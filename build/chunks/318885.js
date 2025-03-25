@@ -60,11 +60,11 @@ function m(e, t) {
   let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     _ = __OVERLAY__ ? c.Z.getGame() : (0, a.pL)(),
     h = i.ZP.getRunningGames().find(e => e.name === (null == _ ? void 0 : _.name)),
-    m = null !== (n = o.default.getRenderMethod(null == h ? void 0 : h.pid)) && void 0 !== n ? n : r.gl.Disabled;
+    m = null !== (n = o.default.getRenderMethod(null == h ? void 0 : h.pid)) && void 0 !== n ? n : null;
   switch (t = p({}, {
       overlay_game_name: null != _ ? _.name : "Unknown Game",
       overlay_app_id: null != _ ? _.id : null,
-      overlay_render_method: r.gl[m],
+      overlay_render_method: null != m ? r.gl[m] : null,
       media_session_id: l.Z.getMediaSessionId()
     }, t), e) {
     case f.rMx.VOICE_CHANNEL_SELECTED:

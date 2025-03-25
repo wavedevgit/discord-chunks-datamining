@@ -1,31 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  _f: () => s,
-  aZ: () => d,
-  aq: () => a,
-  gu: () => c,
-  nS: () => o,
-  xN: () => l
+  _f: () => a,
+  aZ: () => u,
+  aq: () => o,
+  gu: () => l,
+  xN: () => s
 });
 var r = n(818083),
   i = n(987338);
 let o = (0, r.B)({
-    kind: "user",
-    id: "2024-07_open_platform_app_launcher",
-    label: "Open Platform App Launcher",
-    defaultConfig: {
-      enabled: !1
-    },
-    treatments: [{
-      id: 1,
-      label: "Enable the App Launcher changes for Open Platform",
-      config: {
-        enabled: !0
-      }
-    }]
-  }),
-  a = (0, r.B)({
     kind: "user",
     id: "2024-08_open_platform_app_launcher_holdout",
     label: "Open Platform App Launcher Holdout",
@@ -47,7 +31,7 @@ let o = (0, r.B)({
       }
     }]
   }),
-  s = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2024-09_user_app_install_education",
     label: "User App Install Education Experiment",
@@ -72,7 +56,7 @@ let o = (0, r.B)({
       }
     }]
   }),
-  l = (0, r.B)({
+  s = (0, r.B)({
     kind: "user",
     id: "2024-10_weighted_sample_activity_shelf",
     label: "Weighted Sample Activity Shelf",
@@ -88,8 +72,8 @@ let o = (0, r.B)({
       }
     }]
   }),
-  c = "1211781489931452447",
-  u = (0, r.B)({
+  l = "1211781489931452447",
+  c = (0, r.B)({
     kind: "guild",
     id: "2025-02_filter_wordle_from_voice_channel_launcher",
     label: "Filter Wordle From Voice Channel Launcher",
@@ -105,8 +89,8 @@ let o = (0, r.B)({
     }]
   });
 
-function d(e, t) {
-  return void 0 !== e && (null == e ? void 0 : e.isGuildVoice()) && u.getCurrentConfig({
+function u(e, t) {
+  return void 0 !== e && (null == e ? void 0 : e.isGuildVoice()) && c.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0

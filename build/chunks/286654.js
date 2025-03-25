@@ -54,7 +54,7 @@ function _(e, t, i, a) {
   (null != t || l.ZP.canUseCustomCallSounds(c)) && (0, o.jW)(e, async () => {
     let {
       default: e
-    } = await n.e("2356").then(n.bind(n, 876308));
+    } = await n.e("93741").then(n.bind(n, 547652));
     return n => (0, r.jsx)(e, f(u({}, n), {
       soundGuild: t,
       activeCallGuildId: a,

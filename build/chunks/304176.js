@@ -23,8 +23,8 @@ var o = n(442837),
   y = n(524444),
   v = n(981631),
   O = n(176505),
-  C = n(388032),
-  x = n(104485);
+  x = n(388032),
+  C = n(104485);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -72,9 +72,9 @@ let T = e => {
   });
   let N = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
     I = (0, p.Z)(N),
-    S = I ? C.NW.formatToPlainString(C.t.t0928f, {
+    S = I ? x.NW.formatToPlainString(x.t.t0928f, {
       name: T
-    }) : C.NW.formatToPlainString(C.t.UDDkGx, {
+    }) : x.NW.formatToPlainString(x.t.UDDkGx, {
       name: T
     }),
     w = P(j({}, t), {
@@ -94,21 +94,21 @@ let T = e => {
   return (0, r.jsx)(a.VqE, {
     children: (0, r.jsx)(y.W_, {
       children: (0, r.jsxs)("div", {
-        className: x.popoutContainer,
+        className: C.popoutContainer,
         children: [(0, r.jsxs)("div", {
-          className: x.mainContent,
+          className: C.mainContent,
           children: [(0, r.jsx)("div", {
-            className: x.roleIconContainer,
+            className: C.roleIconContainer,
             children: (0, r.jsx)(l.Z, P(j({}, w), {
               enableTooltip: !1,
-              className: x.__invalid_roleIcon,
+              className: C.__invalid_roleIcon,
               enableHeight: !1
             }))
           }), (0, r.jsxs)("div", {
-            className: x.truncatingText,
+            className: C.truncatingText,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-md/semibold",
-              className: x.roleName,
+              className: C.roleName,
               children: (0, r.jsx)(c.Z, {
                 children: T
               })
@@ -120,16 +120,16 @@ let T = e => {
         }), (0, r.jsxs)(a.zxk, {
           size: a.zxk.Sizes.SMALL,
           color: a.zxk.Colors.PRIMARY,
-          className: x.ctaButton,
-          innerClassName: x.ctaButtonContent,
+          className: C.ctaButton,
+          innerClassName: C.ctaButtonContent,
           fullWidth: !0,
           onClick: k,
           autoFocus: !0,
           children: [(0, r.jsx)(b.Z, {
             width: 14,
             height: 14,
-            className: x.boosterBadge
-          }), C.NW.string(C.t["H930+P"])]
+            className: C.boosterBadge
+          }), x.NW.string(x.t["H930+P"])]
         })]
       })
     })

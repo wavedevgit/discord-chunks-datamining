@@ -16,8 +16,8 @@ var a = n(200651),
   _ = n(212459),
   g = n(730606),
   y = n(860153),
-  f = n(981631),
-  b = n(388032),
+  b = n(981631),
+  f = n(388032),
   O = n(258539);
 
 function h(e) {
@@ -46,8 +46,8 @@ function h(e) {
   }(e, ["onClose", "items", "startingIndex", "shouldRedactExplicitContent", "shouldHideMediaOptions", "className", "transitionState"]);
   let [T, j] = r.useState(null != o ? o : 0), [P, x] = r.useState(!1), M = r.useRef(null), I = (0, d.Q3)("MediaViewerModal");
   r.useEffect(() => {
-    if (null != t) return p.S.subscribe(f.CkL.MEDIA_MODAL_CLOSE, t), () => {
-      p.S.unsubscribe(f.CkL.MEDIA_MODAL_CLOSE, t)
+    if (null != t) return p.S.subscribe(b.CkL.MEDIA_MODAL_CLOSE, t), () => {
+      p.S.unsubscribe(b.CkL.MEDIA_MODAL_CLOSE, t)
     }
   }, [t]), r.useEffect(() => {
     var e, t;
@@ -73,7 +73,7 @@ function h(e) {
     }), [P, C]),
     A = n[T];
   return (0, a.jsx)(s.f6W, {
-    theme: I ? f.BRd.MIDNIGHT : f.BRd.DARK,
+    theme: I ? b.BRd.MIDNIGHT : b.BRd.DARK,
     children: e => {
       var r, o;
       return (0, a.jsx)(s.Y0X, (r = function(e) {
@@ -102,7 +102,7 @@ function h(e) {
         animation: c.fM.SUBTLE,
         fullscreenOnMobile: !1,
         onClick: t,
-        "aria-label": b.NW.string(b.t.AMTX3t),
+        "aria-label": f.NW.string(f.t.AMTX3t),
         children: (0, a.jsxs)(_.z.Provider, {
           value: N,
           children: [(0, a.jsx)(y.Z, {

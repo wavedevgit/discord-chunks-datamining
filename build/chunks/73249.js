@@ -16,8 +16,8 @@ var a = n(200651),
   _ = n(378409),
   g = n(850908),
   y = n(695346),
-  f = n(572004),
-  b = n(424218),
+  b = n(572004),
+  f = n(424218),
   O = n(49012),
   h = n(358085),
   S = n(998502),
@@ -248,7 +248,7 @@ function k(e) {
     });
     if ((null == r ? void 0 : null === (t = r.identifier) || void 0 === t ? void 0 : t.type) !== "attachment") return null;
     let d = (0, g.Z)(r.identifier),
-      p = (0, b.BU)(r.identifier.size / 1e3);
+      p = (0, f.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(s.sNh, {
       id: "media-viewer-details",
       label: j.NW.string(j.t.GoCQxc),
@@ -296,7 +296,7 @@ function k(e) {
 
 function Z(e, t, n) {
   let o = r.useCallback(e => {
-    (0, f.JG)(e), (0, s.showToast)({
+    (0, b.JG)(e), (0, s.showToast)({
       message: j.NW.string(j.t.mGZ66O),
       type: s.ToastType.SUCCESS,
       id: "media-viewer-detail-copied"
