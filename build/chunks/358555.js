@@ -84,7 +84,7 @@ function C(e) {
           className: N.__invalid_premiumGuildIcon,
           onClick: b,
           children: (0, i.jsx)(g.Z, {
-            size: r ? 24 : 16,
+            size: r ? 18 : 16,
             premiumTier: d,
             iconBackgroundClassName: n ? N.boostedGuildTierIconBackgroundWithVisibleBanner : void 0,
             iconClassName: n && d !== h.Eu4.TIER_3 ? N.boostedGuildTierMutedIconWithVisibleBanner : null
@@ -120,7 +120,7 @@ function y(e) {
     }),
     children: (0, i.jsx)(u.Z, {
       guild: t,
-      size: _ ? 24 : 16,
+      size: _ ? 18 : 16,
       tooltipPosition: "bottom",
       tooltipColor: l.ua7.Colors.PRIMARY,
       className: r()(N.guildBadge, {
@@ -134,7 +134,7 @@ function y(e) {
     }),
     children: (0, i.jsx)(d.Z, {
       guild: t,
-      size: _ ? 24 : 20,
+      size: _ ? 18 : 20,
       tooltipPosition: "bottom",
       tooltipColor: l.ua7.Colors.PRIMARY,
       className: r()(N.guildBadge, {

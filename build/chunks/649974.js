@@ -1,6 +1,6 @@
 /** Chunk was on 24491 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 });
 var r, i = n(442837),
   l = n(570140),
@@ -98,7 +98,7 @@ function P(e) {
   }), i
 }
 
-function I() {
+function v() {
   let e = !1;
   if (!o.Z.needsRefresh() && !O) {
     let t;
@@ -112,9 +112,9 @@ function I() {
   }
   return O = !o.Z.needsRefresh(), e
 }
-class S extends(r = i.ZP.Store) {
+class I extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(o.Z), this.syncWith([o.Z], I)
+    this.waitFor(o.Z), this.syncWith([o.Z], v)
   }
   get games() {
     return y
@@ -132,8 +132,8 @@ class S extends(r = i.ZP.Store) {
     return p[e]
   }
 }
-d(S, "displayName", "NowPlayingStore");
-let v = new S(l.Z, {
+d(I, "displayName", "NowPlayingStore");
+let S = new I(l.Z, {
   CONNECTION_OPEN: function() {
     y = {}, p = {}
   },

@@ -1,6 +1,6 @@
 /**
   Module ID: 15814
-  Original File Name: 4b7d9ef9905e7bf5
+  Original File Name: c71e66b07ef061d7
 **/
 .icon__2894c {
     display: block;
@@ -677,7 +677,10 @@
 }
 
 .visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
-    margin-right: var(--space-xs)
+    margin-right: var(--space-xs);
+    min-width: 20px;
+    display: flex;
+    justify-content: center
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -2182,4 +2185,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=4b7d9ef9905e7bf5.css.map*/
+/*# sourceMappingURL=c71e66b07ef061d7.css.map*/

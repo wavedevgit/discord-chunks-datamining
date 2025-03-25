@@ -1,6 +1,6 @@
 /**
   Module ID: 81288
-  Original File Name: 7ff7b2c05f6a9bfe
+  Original File Name: bd2270e843e4bb22
 **/
 .boostedGuildIconGem__97677 {
     transition: color .1s linear;
@@ -41,7 +41,10 @@
 }
 
 .visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
-    margin-right: var(--space-xs)
+    margin-right: var(--space-xs);
+    min-width: 20px;
+    display: flex;
+    justify-content: center
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -483,4 +486,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=7ff7b2c05f6a9bfe.css.map*/
+/*# sourceMappingURL=bd2270e843e4bb22.css.map*/

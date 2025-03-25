@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: 2ae6dc99ec142703
+  Original File Name: 22aea256dcf4f406
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2224,11 +2224,16 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .visual-refresh .wrapper_ef3116 {
-    grid-area: guildsList;
     background-color: var(--bg-base-tertiary);
     margin-bottom: calc(0 + var(--space-xs));
     margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs));
     width: var(--custom-guild-list-width)
+}
+
+@supports (grid-template-columns:subgrid) and (white-space-collapse:collapse) {
+    .visual-refresh .wrapper_ef3116 {
+        grid-area: guildsList
+    }
 }
 
 .platform-osx .wrapper_ef3116 {
@@ -5861,4 +5866,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=2ae6dc99ec142703.css.map*/
+/*# sourceMappingURL=22aea256dcf4f406.css.map*/

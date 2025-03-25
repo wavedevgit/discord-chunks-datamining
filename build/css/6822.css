@@ -1,6 +1,6 @@
 /**
   Module ID: 6822
-  Original File Name: ea9e0d4fbb98f8c5
+  Original File Name: a68a693dc36fd61d
 **/
 @value minColumnWidth: 460px;
 
@@ -2956,7 +2956,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
-    margin-right: var(--space-xs)
+    margin-right: var(--space-xs);
+    min-width: 20px;
+    display: flex;
+    justify-content: center
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -4216,4 +4219,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=ea9e0d4fbb98f8c5.css.map*/
+/*# sourceMappingURL=a68a693dc36fd61d.css.map*/

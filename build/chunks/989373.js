@@ -9,31 +9,36 @@ var r = n(200651),
   u = n(13245),
   o = n(615287),
   c = n(493773),
-  a = n(238246),
-  s = n(355863),
-  d = n(944486),
-  f = n(358085);
+  a = n(522474),
+  s = n(238246),
+  d = n(355863),
+  f = n(944486),
+  g = n(358085);
 n(606206);
-var g = n(998502),
-  O = n(145597);
+var O = n(998502),
+  y = n(145597);
 n(371467);
-var y = n(554370),
-  p = n(371651),
-  h = n(610394),
-  E = n(757744),
-  P = n(981631);
+var p = n(554370),
+  h = n(371651),
+  E = n(610394),
+  P = n(757744),
+  v = n(981631);
 
 function I(e, t) {
-  let n = (0, l.e7)([h.ZP], () => {
-      let e = h.ZP.getFocusedPID();
-      return !f.isPlatformEmbedded || null != e && e !== O.UNSET_PID
+  let n = (0, l.e7)([a.Z], () => {
+      var t;
+      return null !== (t = a.Z.getWindow(e)) && void 0 !== t ? t : window
     }),
-    [r, a] = i.useState(n);
+    r = (0, l.e7)([E.ZP], () => {
+      let e = E.ZP.getFocusedPID();
+      return !g.isPlatformEmbedded || null != e && e !== y.UNSET_PID
+    }),
+    [s, p] = i.useState(r);
   (0, c.Ng)(() => {
     let e = e => {
-      e.data === h.Il && requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          window.parent.postMessage(h.A8, "*")
+      e.data === E.Il && n.requestAnimationFrame(() => {
+        n.requestAnimationFrame(() => {
+          window.parent.postMessage(E.A8, "*")
         })
       })
     };
@@ -41,31 +46,31 @@ function I(e, t) {
       window.removeEventListener("message", e)
     }
   });
-  let y = i.useCallback(() => {
-    requestAnimationFrame(() => {
+  let P = i.useCallback(() => {
+    n.requestAnimationFrame(() => {
       try {
-        u.Z.successfullyShown((0, O.getPID)()), g.ZP.showInactive(e)
+        u.Z.successfullyShown((0, y.getPID)()), O.ZP.showInactive(e)
       } catch (t) {
         t.message.includes("IPC") && setTimeout(() => {
-          g.ZP.showInactive(e)
+          O.ZP.showInactive(e)
         }, 100)
       }
     })
-  }, [e]);
+  }, [e, n]);
   return i.useEffect(() => {
-    !r && n && n && (a(!0), y())
-  }, [y, r, n, e]), (0, c.Ng)(() => {
+    !s && r && r && (p(!0), P())
+  }, [P, s, r, e]), (0, c.Ng)(() => {
     var e;
-    r && y();
-    let n = null !== (e = h.ZP.getFocusedPID()) && void 0 !== e ? e : (0, O.getPID)(),
-      i = null != d.Z.getVoiceChannelId();
-    u.Z.track(P.rMx.OVERLAY_INITIALIZED, {
-      voice_widget_connected: i,
-      text_widget_connected: h.ZP.isPinned(P.Odu.TEXT),
-      overlay_render_method: o.gl[p.default.getOverlayMethod(n)],
-      unpinned_widget_types: s.Z.getAllUnpinnedPinnedWidgets(t)
+    s && P();
+    let n = null !== (e = E.ZP.getFocusedPID()) && void 0 !== e ? e : (0, y.getPID)(),
+      r = null != f.Z.getVoiceChannelId();
+    u.Z.track(v.rMx.OVERLAY_INITIALIZED, {
+      voice_widget_connected: r,
+      text_widget_connected: E.ZP.isPinned(v.Odu.TEXT),
+      overlay_render_method: o.gl[h.default.getOverlayMethod(n)],
+      unpinned_widget_types: d.Z.getAllUnpinnedPinnedWidgets(t)
     })
-  }), r
+  }), s
 }
 
 function S(e) {
@@ -73,10 +78,10 @@ function S(e) {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return I(n, E.$) ? (0, r.jsx)(a.Z, {
+  return I(n, P.$) ? (0, r.jsx)(s.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
-    children: (0, r.jsx)(y.Z, {})
+    children: (0, r.jsx)(p.Z, {})
   }) : null
 }

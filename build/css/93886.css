@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 5a242bbc4fe117cd
+  Original File Name: 6904da2b39b8e3dd
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -4224,7 +4224,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
-    margin-right: var(--space-xs)
+    margin-right: var(--space-xs);
+    min-width: 20px;
+    display: flex;
+    justify-content: center
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -5743,4 +5746,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=5a242bbc4fe117cd.css.map*/
+/*# sourceMappingURL=6904da2b39b8e3dd.css.map*/
