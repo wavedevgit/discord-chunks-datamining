@@ -91,8 +91,8 @@ let eC = () => {
   })), ev = null != eC ? v.ZP.getPremiumPlanItem(eC) : null, eS = (null != ev ? v.ZP.getSkuIdForPlan(ev.planId) : null) === W.Si.TIER_2, eT = E.default.getCurrentUser(), eI = (0, v.I5)(eT, W.p9.TIER_2), ey = (0, v.I5)(eT, W.p9.TIER_0), eA = (0, I.bq)({
     showAnimations: !0
   }), eP = null != eA ? eA.initialPercentage : void 0, eR = null != eA ? eA.percentage : void 0, eD = (0, p.Z)(_.Z), eZ = (0, y.a)(), ew = (0, I.Kb)(L.qY), {
-    fractionalState: ek
-  } = (0, g.Z)(), eW = ek === W.a$.FP_ONLY, eL = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
+    isFractionalPremiumActive: ek
+  } = (0, g.Z)(), eW = null != eC && eC.hasPremiumAtLeast(W.p9.TIER_2), eL = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
     enabled: eB
   } = S.Z.useExperiment({
     location: "usePerksDiscoverabilityCards"
@@ -235,19 +235,19 @@ let eC = () => {
       name: "serverBoosts",
       title: G.NW.string(G.t["NyDu//"]),
       subtitle: G.NW.string(G.t["4pEwXF"]),
-      description: eW ? G.NW.format(G.t.uPiIBQ, {
+      description: ek ? G.NW.format(G.t.uPiIBQ, {
         link: "https://discord.com"
       }) : G.NW.string(G.t.jsyNHh),
       descriptionCta: G.NW.string(G.t.jVcuVV),
-      onCtaClick: eW ? void 0 : () => {
+      onCtaClick: ek ? void 0 : () => {
         o.Z.open(B.oAB.GUILD_BOOSTING, null, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
       },
       perkImage: J,
-      hideOnNarrowScreen: !eW,
-      imageOverlayText: eW ? G.NW.string(G.t.lcYttb) : void 0
+      hideOnNarrowScreen: !ek,
+      imageOverlayText: ek ? G.NW.string(G.t.lcYttb) : void 0
     },
     greyServerBoosts: {
       name: "greyServerBoosts",
@@ -488,7 +488,7 @@ let eC = () => {
   let {
     enabled: eH
   } = (0, A.D)();
-  return eH && eI && !eW && (eF.tenureBadge = {
+  return eH && eI && eW && (eF.tenureBadge = {
     name: "tenureBadge",
     title: G.NW.string(G.t.rnsqpa),
     pillText: G.NW.string(G.t.jyYgZ2).toLocaleUpperCase(),
