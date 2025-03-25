@@ -158,8 +158,8 @@ function e0() {
   })
 }
 let e1 = 15 * e_.Z.Millis.MINUTE,
-  e2 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
-  e3 = (e, t, n) => () => {
+  e3 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
+  e2 = (e, t, n) => () => {
     let r = null != t ? t : n;
     if (null == r) return null;
     let {
@@ -199,7 +199,7 @@ class e5 extends(r = a.Component) {
     let {
       channel: t
     } = this.props;
-    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e2.has(e))
+    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e3.has(e))
   }
   shouldComponentUpdate(e, t) {
     var n, r;
@@ -742,7 +742,7 @@ class e5 extends(r = a.Component) {
       } = this.props, p = r.channel_id, m = r.id, f = (0, eO.BP)(e, p, m, s, c);
       if (e.type === eV.hBH.GIFT) return null;
       let h = (0, i.jsx)(Z.h.Provider, {
-        value: e3(e.url, e.image, e.video),
+        value: e2(e.url, e.image, e.video),
         children: (0, i.jsx)(E.ZP, eJ({
           className: eX.embedWrapper,
           embed: e,

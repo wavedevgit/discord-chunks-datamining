@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   o = n(192379),
-  l = n(120356),
-  i = n.n(l),
+  i = n(120356),
+  l = n.n(i),
   s = n(481060),
   a = n(497505),
   c = n(720293),
@@ -47,7 +47,7 @@ function f(e) {
     ctaBtnLabel: t,
     title: n,
     subtitle: o,
-    onCTAClick: l
+    onCTAClick: i
   } = e;
   return (0, r.jsxs)("div", {
     className: d.endScreenCtaContainer,
@@ -57,7 +57,7 @@ function f(e) {
     }), (0, r.jsx)(g, {
       label: t,
       icon: s.d4D,
-      onClick: l
+      onClick: i
     })]
   })
 }
@@ -85,7 +85,7 @@ function g(e) {
   let {
     label: t,
     icon: n,
-    onClick: l,
+    onClick: i,
     className: a
   } = e, [c, u] = o.useState(!1), m = () => {
     u(!0)
@@ -93,12 +93,12 @@ function g(e) {
     u(!1)
   };
   return (0, r.jsxs)(s.P3F, {
-    className: i()(d.endScreenCtaBtn, d.accentOnHover, a),
+    className: l()(d.endScreenCtaBtn, d.accentOnHover, a),
     onMouseEnter: m,
     onMouseLeave: p,
     onFocus: m,
     onBlur: p,
-    onClick: l,
+    onClick: i,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
       className: d.endScreenCtaBtnTitle,
@@ -114,8 +114,8 @@ let E = function(e) {
   let {
     quest: t,
     ctaBtnLabel: n,
-    title: l,
-    subtitle: i,
+    title: i,
+    subtitle: l,
     onCTAClick: s
   } = e, a = o.useMemo(() => (0, c.z)(c.i.VIDEO_PLAYER_THUMBNAIL, t), [t]);
   return (0, r.jsxs)(r.Fragment, {
@@ -129,8 +129,8 @@ let E = function(e) {
         quest: t,
         asset: a
       }), (0, r.jsx)(f, {
-        title: l,
-        subtitle: i,
+        title: i,
+        subtitle: l,
         ctaBtnLabel: n,
         onCTAClick: s
       })]

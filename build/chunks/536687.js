@@ -4,8 +4,8 @@ n.r(t), n.d(t, {
 }), n(47120);
 var r = n(200651),
   o = n(192379),
-  l = n(120356),
-  i = n.n(l),
+  i = n(120356),
+  l = n.n(i),
   s = n(442837),
   a = n(780384),
   c = n(481060),
@@ -19,13 +19,13 @@ var r = n(200651),
   E = n(918701),
   b = n(475595),
   O = n(566078),
-  h = n(164495),
-  S = n(472144),
+  S = n(164495),
+  h = n(472144),
   C = n(602667),
   j = n(644646),
   y = n(880199),
-  x = n(604162),
-  _ = n(747717),
+  _ = n(604162),
+  x = n(747717),
   N = n(963123),
   D = n(281055),
   P = n(46140),
@@ -33,7 +33,7 @@ var r = n(200651),
   I = n(388032),
   w = n(881382);
 
-function k(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function k(e) {
   return e
 }
 
-function A(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function A(e, t) {
 }
 
 function L(e) {
-  var t, n, l, v;
+  var t, n, i, v;
   let C, {
       transitionState: D,
       onClose: L,
@@ -87,7 +87,7 @@ function L(e) {
       completedRatio: K,
       completedRatioDisplay: X
     } = (0, f.I)(R),
-    [$, J] = (0, x.G6)(I.NW.string(I.t.RDE0SU), I.NW.string(I.t["+5kSoa"]), 1700);
+    [$, J] = (0, _.G6)(I.NW.string(I.t.RDE0SU), I.NW.string(I.t["+5kSoa"]), 1700);
   if ((0, E.xN)(R.config) && (null === (t = R.userStatus) || void 0 === t ? void 0 : t.claimedAt) == null) {
     let e = (0, E.LM)(R.config);
     C = (0, r.jsx)(y.Z, {
@@ -131,9 +131,9 @@ function L(e) {
               },
               children: [(0, r.jsx)("img", {
                 alt: R.config.messages.gameTitle,
-                className: i()(w.contentHeaderLogotype, w.accentOnHover),
+                className: l()(w.contentHeaderLogotype, w.accentOnHover),
                 src: (0, b.fh)(R, b.eC.LOGO_TYPE, Z).url
-              }), (0, r.jsx)(_.Z, {}), (0, r.jsxs)("div", {
+              }), (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
                 className: w.questHeading,
                 children: [(0, r.jsx)(c.X6q, {
                   variant: "heading-md/semibold",
@@ -156,10 +156,10 @@ function L(e) {
               onTooltipHide: () => {
                 H(!1)
               },
-              children: e => (0, r.jsx)(c.P3F, A(k({
+              children: e => (0, r.jsx)(c.P3F, k(A({
                 className: w.progressCont
               }, e), {
-                children: (0, r.jsx)(S.Z, {
+                children: (0, r.jsx)(h.Z, {
                   quest: R,
                   size: 48,
                   percentComplete: K,
@@ -196,15 +196,15 @@ function L(e) {
                 color: c.zxk.Colors.PRIMARY,
                 onClick: ee,
                 size: c.zxk.Sizes.NONE,
-                className: i()(w.copyLinkBtn, w.footerBtn),
+                className: l()(w.copyLinkBtn, w.footerBtn),
                 children: $
-              }), (0, r.jsx)(h.i0, {
+              }), (0, r.jsx)(S.i0, {
                 className: w.claimBtn,
                 size: c.zxk.Sizes.MEDIUM,
                 quest: R,
                 useReducedMotion: Y,
                 isExpanded: (null === (n = R.userStatus) || void 0 === n ? void 0 : n.completedAt) != null,
-                disabled: (null === (l = R.userStatus) || void 0 === l ? void 0 : l.completedAt) == null,
+                disabled: (null === (i = R.userStatus) || void 0 === i ? void 0 : i.completedAt) == null,
                 ctaLabel: C,
                 onClick: () => {
                   ((0, E.xN)(R.config) || (0, E.Bg)(R.config)) && L()
@@ -223,19 +223,19 @@ function R(e) {
     questId: t,
     overrideQuest: n,
     autoplay: o,
-    openStartClockTime: l
-  } = e, i = function(e, t) {
+    openStartClockTime: i
+  } = e, l = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
       var n, r, o = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
       return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
   }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]);
@@ -246,8 +246,8 @@ function R(e) {
     questContent: g.jn.VIDEO_MODAL,
     minViewTimeSeconds: D.zw,
     trackGuildAndChannelMetadata: !0,
-    children: e => (0, r.jsx)(L, A(k({}, i), {
-      parentModalOpenStartClockTime: l,
+    children: e => (0, r.jsx)(L, k(A({}, l), {
+      parentModalOpenStartClockTime: i,
       impressionRef: e,
       quest: c,
       autoplay: o

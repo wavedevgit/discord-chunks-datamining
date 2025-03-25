@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(818083),
   o = n(520278),
-  l = n(46140);
-let i = (0, r.B)({
+  i = n(46140);
+let l = (0, r.B)({
     id: "2025-02_quests_hls_video",
     kind: "user",
     label: "Quests Hls Video",
@@ -26,4 +26,4 @@ let i = (0, r.B)({
       }
     }]
   }),
-  s = (e, t) => (0, o.J)(i, l.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)
+  s = (e, t) => (0, o.J)(l, i.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)
