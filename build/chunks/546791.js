@@ -11,7 +11,7 @@ n.d(e, {
 var r = n(913527),
   i = n.n(r),
   o = n(292352),
-  a = n(917566),
+  a = n(854290),
   s = n(388032);
 let l = () => ({
     today: s.NW.string(a.Z.VjIAQU),

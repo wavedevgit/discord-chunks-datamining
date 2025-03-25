@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: c76ea7d00661a707
+  Original File Name: c159b900297f5b9d
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -242,7 +242,9 @@
     gap: 4px;
     color: var(--interactive-normal);
     cursor: pointer;
-    margin-top: 10px
+    margin-top: 10px;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .needInspiration_dbc4b7:hover {
@@ -251,7 +253,8 @@
 
 .needInspiration_dbc4b7.needInspirationDisabled_dbc4b7 {
     color: var(--interactive-muted);
-    cursor: not-allowed
+    cursor: not-allowed;
+    opacity: .5
 }
 
-/*# sourceMappingURL=c76ea7d00661a707.css.map*/
+/*# sourceMappingURL=c159b900297f5b9d.css.map*/

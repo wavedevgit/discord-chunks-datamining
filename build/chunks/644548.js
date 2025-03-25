@@ -50,21 +50,21 @@ let y = (e, t, n, r) => {
       appName: N
     } = (0, x.n)(n), {
       primaryColor: I,
-      secondaryColor: w
-    } = (0, d.Z)(null == O ? void 0 : O.src), E = (0, c.yA)(n), S = (0, c.Nq)(n), Z = a.useCallback(e => {
-      if (null != t && null != b && null != E && null != S && (0, p.qy)(S)) return (0, u.SO)({
+      secondaryColor: E
+    } = (0, d.Z)(null == O ? void 0 : O.src), w = (0, c.yA)(n), Z = (0, c.Nq)(n), S = a.useCallback(e => {
+      if (null != t && null != b && null != w && null != Z && (0, p.qy)(Z)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == O ? void 0 : O.src,
         avatarSrcs: [b.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
-        description: y(n, t, b, S),
+        description: y(n, t, b, Z),
         timestamp: v.NW.formatToPlainString(v.t.YL7UEx, {
-          hours: Math.round(E / i.Z.Seconds.HOUR)
+          hours: Math.round(w / i.Z.Seconds.HOUR)
         }),
-        colors: [I, w],
+        colors: [I, E],
         channelId: e
       })
-    }, [null == O ? void 0 : O.src, t, E, n, I, S, w, b]);
-    if (null == b || null == E || null == S || !(0, p.qy)(S)) return null;
+    }, [null == O ? void 0 : O.src, t, w, n, I, Z, E, b]);
+    if (null == b || null == w || null == Z || !(0, p.qy)(Z)) return null;
     let T = null != n.extra.platform ? m.v[n.extra.platform] : null;
     return (0, r.jsxs)(f.yR, {
       children: [(0, r.jsx)(f.wG, {
@@ -90,7 +90,7 @@ let y = (e, t, n, r) => {
           onVoiceChannelPreview: P,
           user: b,
           channel: t,
-          generateReactionImage: Z,
+          generateReactionImage: S,
           reactionImageAltText: j(n, b),
           entry: n
         })

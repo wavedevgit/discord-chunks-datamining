@@ -135,7 +135,7 @@ function e7(e) {
   return e
 }
 n(117240), n(801077), n(967368), n(272053), n(974180), n(574254), n(551428), n(55563), n(882029), n(959457), n(653255), n(663389), n(25990), n(778825), n(999382), n(388610), n(533947), n(277053), n(371398), n(141233), n(471073);
-let e6 = !1;
+let e9 = !1;
 (0, C.D)(), a.ZP.initialize(), eN.Z.loadServer(), eJ.isPlatformEmbedded && (e$.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eB.Z.getLayers().includes(e1.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : e1.oAB.ACCOUNT)
 }), e$.ZP.on("LAUNCH_APPLICATION", (e, t) => {
@@ -149,7 +149,7 @@ let e6 = !1;
     }
   })
 }));
-let e9 = (0, m.l)(e => {
+let e6 = (0, m.l)(e => {
     let {
       location: t
     } = e, n = (0, eR.default)(t.pathname);
@@ -335,7 +335,7 @@ let ti = [{
   isSessionRequired: !0
 }, {
   path: [e1.Z5c.SETTINGS(":section", ":subsection?")],
-  render: e9,
+  render: e6,
   isSessionRequired: !0
 }, {
   path: [e1.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(eE.Hw.guildId())],
@@ -527,8 +527,8 @@ class ta extends i.PureComponent {
       if (c && g && d.Z.selectGuild(r), c && u) {
         let n = eF.Z.getChannelId(f),
           o = n !== i;
-        if (!e6 || g || o || null != a) {
-          e6 = !0, p.default.selectChannel({
+        if (!e9 || g || o || null != a) {
+          e9 = !0, p.default.selectChannel({
             guildId: r,
             channelId: i,
             messageId: a

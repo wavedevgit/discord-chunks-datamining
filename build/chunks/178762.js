@@ -30,17 +30,17 @@ var r = n(200651),
   C = n(227172),
   N = n(551228),
   I = n(678869),
-  w = n(278399),
-  E = n(886217),
-  S = n(555672),
-  Z = n(644548),
+  E = n(278399),
+  w = n(886217),
+  Z = n(555672),
+  S = n(644548),
   T = n(335326),
   A = n(268010),
   _ = n(797342),
   k = n(206583),
   R = n(921944);
 
-function D(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function D(e) {
   return e
 }
 
-function M(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -98,31 +98,31 @@ let z = e => {
     } = e, n = L(e, ["entry"]);
     switch (t.content_type) {
       case s.s.PLAYED_GAME:
-        return (0, r.jsx)(b.Z, M(D({}, n), {
+        return (0, r.jsx)(b.Z, D(M({}, n), {
           entry: t
         }));
       case s.s.WATCHED_MEDIA:
-        return (0, r.jsx)(T.Z, M(D({}, n), {
+        return (0, r.jsx)(T.Z, D(M({}, n), {
           entry: t
         }));
       case s.s.TOP_GAME:
-        return (0, r.jsx)(S.ZP, M(D({}, n), {
+        return (0, r.jsx)(Z.ZP, D(M({}, n), {
           entry: t
         }));
       case s.s.TOP_ARTIST:
-        return (0, r.jsx)(w.ZP, M(D({}, n), {
+        return (0, r.jsx)(E.ZP, D(M({}, n), {
           entry: t
         }));
       case s.s.LISTENED_SESSION:
-        return (0, r.jsx)(N.ZP, M(D({}, n), {
+        return (0, r.jsx)(N.ZP, D(M({}, n), {
           entry: t
         }));
       case s.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(P.Z, M(D({}, n), {
+        return (0, r.jsx)(P.Z, D(M({}, n), {
           entry: t
         }));
       case s.s.LEADERBOARD:
-        return (0, r.jsx)(x.Z, M(D({}, n), {
+        return (0, r.jsx)(x.Z, D(M({}, n), {
           entry: t
         }));
       default:
@@ -133,7 +133,7 @@ let z = e => {
     var {
       closePopout: t
     } = e, n = L(e, ["closePopout"]);
-    return (0, r.jsx)(H, D({
+    return (0, r.jsx)(H, M({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
           destinationChannelId: r.id,
@@ -156,27 +156,27 @@ let z = e => {
       a = L(e, ["entry"]);
     switch (n.content_type) {
       case s.s.PLAYED_GAME:
-        return (0, r.jsx)(C.Z, M(D({}, a), {
+        return (0, r.jsx)(C.Z, D(M({}, a), {
           entry: n
         }));
       case s.s.WATCHED_MEDIA:
-        return (0, r.jsx)(A.Z, M(D({}, a), {
+        return (0, r.jsx)(A.Z, D(M({}, a), {
           entry: n
         }));
       case s.s.TOP_GAME:
-        return (0, r.jsx)(Z.Z, M(D({}, a), {
+        return (0, r.jsx)(S.Z, D(M({}, a), {
           entry: n
         }));
       case s.s.TOP_ARTIST:
-        return (0, r.jsx)(E.Z, M(D({}, a), {
+        return (0, r.jsx)(w.Z, D(M({}, a), {
           entry: n
         }));
       case s.s.LISTENED_SESSION:
-        return (0, r.jsx)(I.Z, M(D({}, a), {
+        return (0, r.jsx)(I.Z, D(M({}, a), {
           entry: n
         }));
       case s.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(O.ZP, M(D({}, a), {
+        return (0, r.jsx)(O.ZP, D(M({}, a), {
           entry: n
         }));
       case s.s.LEADERBOARD:
@@ -205,10 +205,10 @@ let z = e => {
       guildId: h.channel.guild_id,
       requestId: h.requestId,
       richPresenceName: O ? b : void 0
-    }), [b, h.channel.guild_id, h.channel.id, h.entry, h.requestId, O]), N = a.useRef(!1), [I, w] = a.useState(!1), [E, S] = a.useState(!1), Z = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled);
+    }), [b, h.channel.guild_id, h.channel.id, h.entry, h.requestId, O]), N = a.useRef(!1), [I, E] = a.useState(!1), [w, Z] = a.useState(!1), S = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled);
     a.useEffect(() => {
-      I && Z && S(!0)
-    }, [I, Z]);
+      I && S && Z(!0)
+    }, [I, S]);
     let T = a.useCallback(e => {
         P && (0, m.jW)(e, async () => {
           let {
@@ -225,7 +225,7 @@ let z = e => {
       }, []),
       W = a.useCallback(function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        (0, j.L)(e, D({}, C, t))
+        (0, j.L)(e, M({}, C, t))
       }, [C]),
       U = a.useMemo(() => i().throttle(e => {
         (0, j.L)(k.xP.CARD_POPOUT_OPEN, e)
@@ -235,7 +235,7 @@ let z = e => {
       }), []),
       H = () => {
         N.current = !1, setTimeout(() => {
-          N.current || (w(!1), S(Z))
+          N.current || (E(!1), Z(S))
         }, 100)
       };
     return (0, r.jsx)("div", {
@@ -243,7 +243,7 @@ let z = e => {
         h.entry.content_type !== s.s.LEADERBOARD || (0, f.un)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, f.EW)(u.z.LEADERBOARD_NUX_COACHMARK, {
           dismissAction: R.L.SECONDARY
         }), N.current = !0, setTimeout(() => {
-          N.current && w(!0), U(C)
+          N.current && E(!0), U(C)
         }, 100)
       },
       onMouseLeave: H,
@@ -254,7 +254,7 @@ let z = e => {
           } = e;
           return (0, r.jsx)(G.Provider, {
             value: H,
-            children: (0, r.jsx)(B, D({
+            children: (0, r.jsx)(B, M({
               closePopout: t,
               updatePopoutPosition: A,
               trackRankingItemInteraction: W
@@ -266,14 +266,14 @@ let z = e => {
         positionKey: g,
         onRequestOpen: () => U(C),
         onRequestClose: () => {
-          E && H()
+          w && H()
         },
         spacing: 8,
         children: (e, t) => {
           let {
             isShown: n
           } = t;
-          return (0, r.jsx)(d.P3F, M(D({}, e, v), {
+          return (0, r.jsx)(d.P3F, D(M({}, e, v), {
             focusProps: {
               offset: {
                 top: 4,
@@ -283,10 +283,10 @@ let z = e => {
               }
             },
             onClick: () => {
-              I || w(!0)
+              I || E(!0)
             },
             onContextMenu: T,
-            children: (0, r.jsx)(z, M(D({}, h), {
+            children: (0, r.jsx)(z, D(M({}, h), {
               selected: n,
               hovered: N.current
             }))

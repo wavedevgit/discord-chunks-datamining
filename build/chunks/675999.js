@@ -1,9 +1,9 @@
-/** Chunk was on 97387 **/
+/** Chunk was on 44376 **/
 n.d(t, {
   PU: () => a,
   _m: () => i,
-  lr: () => o
+  lr: () => l
 });
-var l, r, i = ((l = {}).GUILD_TEMPLATES = "guild-templates", l.CUSTOMIZE_GUILD = "customize-guild", l.CHANNEL_PROMPT = "channel-prompt", l.JOIN_GUILD = "join-guild", l.CREATION_INTENT = "creation-intent", l),
-  o = ((r = {}).FRIENDS = "FRIENDS", r.COMMUNITY = "COMMUNITY", r.CLAN = "CLAN", r);
+var r, o, i = ((r = {}).GUILD_TEMPLATES = "guild-templates", r.CUSTOMIZE_GUILD = "customize-guild", r.CHANNEL_PROMPT = "channel-prompt", r.JOIN_GUILD = "join-guild", r.CREATION_INTENT = "creation-intent", r),
+  l = ((o = {}).FRIENDS = "FRIENDS", o.COMMUNITY = "COMMUNITY", o.CLAN = "CLAN", o);
 let a = "create-guild"

@@ -69,9 +69,9 @@ function O(e) {
     className: g
   } = e, [x, O] = a.useState(""), [b, C] = a.useState((0, u.JM)("")), N = () => {
     O(""), C((0, u.JM)(""))
-  }, I = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, w = a.useRef(null);
+  }, I = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, E = a.useRef(null);
   return (0, r.jsx)(d.Z, {
-    ref: w,
+    ref: E,
     placeholder: t,
     editorClassName: g,
     className: i()(v.replyInput, g),
@@ -108,8 +108,8 @@ function O(e) {
     emojiPickerCloseOnModalOuterClick: !0,
     disabled: !1,
     autoCompletePosition: (() => {
-      if (null == w.current) return "top";
-      let e = w.current.getBoundingClientRect(),
+      if (null == E.current) return "top";
+      let e = E.current.getBoundingClientRect(),
         t = window.innerHeight;
       return e.top < t / 2 ? "bottom" : "top"
     })(),

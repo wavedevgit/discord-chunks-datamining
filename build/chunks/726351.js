@@ -69,9 +69,9 @@ e.exports = function(e) {
   if ("scroll" === I && (c.isLegacyOpera() ? (E.warn("Scroll strategy is not supported on legacy Opera. Changing to object strategy."), I = "object") : c.isIE(9) && (E.warn("Scroll strategy is not supported on IE9. Changing to object strategy."), I = "object")), "scroll" === I) n = _(T);
   else if ("object" === I) n = f(T);
   else throw Error("Invalid strategy name: " + I);
-  var N = {};
+  var A = {};
 
-  function A(e) {
+  function N(e) {
     if (!e) return E.error("At least one element is required.");
     if (m(e)) e = [e];
     else {
@@ -113,7 +113,7 @@ e.exports = function(e) {
         var _ = t.get(e);
         if (f && E.log("Attaching listener to element", _, e), !O.isDetectable(e)) {
           if (f && E.log(_, "Not detectable."), O.isBusy(e)) {
-            f && E.log(_, "System busy making it detectable"), s(c, e, o), N[_] = N[_] || [], N[_].push(function() {
+            f && E.log(_, "System busy making it detectable"), s(c, e, o), A[_] = A[_] || [], A[_].push(function() {
               ++l === i.length && u()
             });
             return
@@ -130,11 +130,11 @@ e.exports = function(e) {
                   h = e.offsetHeight;
                 (t.startSize.width !== p || t.startSize.height !== h) && a(e)
               }
-              N[_] && r(N[_], function(e) {
+              A[_] && r(A[_], function(e) {
                 e()
               })
             } else f && E.log(_, "Element uninstalled before being detectable.");
-            delete N[_], ++l === i.length && u()
+            delete A[_], ++l === i.length && u()
           })
         }
         f && E.log(_, "Already detecable, adding listener."), s(c, e, o), l++
@@ -142,7 +142,7 @@ e.exports = function(e) {
     },
     removeListener: y.removeListener,
     removeAllListeners: y.removeAllListeners,
-    uninstall: A,
+    uninstall: N,
     initDocument: C
   }
 }

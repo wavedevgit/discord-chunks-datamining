@@ -27,10 +27,10 @@ var r = n(200651),
   C = n(206295),
   N = n(91140),
   I = n(297781),
-  w = n(591853),
-  E = n(410441),
-  S = n(797342),
-  Z = n(981631),
+  E = n(591853),
+  w = n(410441),
+  Z = n(797342),
+  S = n(981631),
   T = n(388032);
 
 function A(e) {
@@ -69,9 +69,9 @@ let _ = {
       onReaction: f,
       onVoiceChannelPreview: k,
       onUserPopoutClosed: R,
-      trackRankingItemInteraction: D
+      trackRankingItemInteraction: M
     } = e, {
-      largeImage: M
+      largeImage: D
     } = (0, x.rv)({
       entry: n
     }), {
@@ -79,10 +79,10 @@ let _ = {
       details: W,
       appName: U,
       activity: z
-    } = (0, S.n)(n), {
+    } = (0, Z.n)(n), {
       primaryColor: B,
       secondaryColor: H
-    } = (0, C.Z)(null == M ? void 0 : M.src), G = (0, i.e7)([p.default], () => p.default.locale), {
+    } = (0, C.Z)(null == D ? void 0 : D.src), G = (0, i.e7)([p.default], () => p.default.locale), {
       streamPreviewUrl: F,
       stream: V
     } = (0, y.Z)(n), {
@@ -90,8 +90,8 @@ let _ = {
       participant1: q,
       participant2: J,
       numOtherParticipants: X
-    } = (0, v.Z)(n, 3), K = n.extra.platform, $ = null != K ? _[K] : null, Q = K === l.z.XBOX ? Z.ABu.XBOX : K === l.z.PLAYSTATION ? Z.ABu.PLAYSTATION : void 0, ee = (0, b.Z)(Q), et = a.useCallback(e => {
-      if ((null == M ? void 0 : M.src) == null || null == t || null == L) return;
+    } = (0, v.Z)(n, 3), K = n.extra.platform, $ = null != K ? _[K] : null, Q = K === l.z.XBOX ? S.ABu.XBOX : K === l.z.PLAYSTATION ? S.ABu.PLAYSTATION : void 0, ee = (0, b.Z)(Q), et = a.useCallback(e => {
+      if ((null == D ? void 0 : D.src) == null || null == t || null == L) return;
       let r = X > 0 ? (0, O.VY)({
         entry: n,
         channel: t,
@@ -100,14 +100,14 @@ let _ = {
       }) : (0, O.HV)(n, t, L);
       return (0, P.SO)({
         entry: n,
-        applicationImageSrc: null == M ? void 0 : M.src,
+        applicationImageSrc: null == D ? void 0 : D.src,
         avatarSrcs: Y.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, j.yh)(n, G),
         colors: [B, H],
         channelId: e
       })
-    }, [null == M ? void 0 : M.src, t, Y, n, G, X, q, J, B, H, L]);
+    }, [null == D ? void 0 : D.src, t, Y, n, G, X, q, J, B, H, L]);
     if (null == L) return null;
     let en = (0, r.jsx)(I.Gk, {
         location: null == F ? I.Gt.POPOUT : I.Gt.STREAMING_POPOUT,
@@ -115,9 +115,9 @@ let _ = {
           entry: n
         }, t))
       }),
-      er = null == V ? (0, r.jsx)(w.wG, {
+      er = null == V ? (0, r.jsx)(E.wG, {
         channel: t,
-        headerIcons: null == $ ? null : (0, r.jsx)(E.Z, {
+        headerIcons: null == $ ? null : (0, r.jsx)(w.Z, {
           onClick: ee,
           Icon: $,
           "aria-label": T.NW.string(T.t.YR4cHB)
@@ -129,8 +129,8 @@ let _ = {
         entry: n,
         disableGameProfileLinks: h,
         onUserPopoutClosed: R,
-        trackRankingItemInteraction: D
-      }) : (0, r.jsx)(w.jL, {
+        trackRankingItemInteraction: M
+      }) : (0, r.jsx)(E.jL, {
         channel: t,
         title: n.extra.game_name,
         subtitle: W,
@@ -139,23 +139,23 @@ let _ = {
         entry: n,
         stream: V,
         onUserPopoutClosed: R,
-        trackRankingItemInteraction: D
+        trackRankingItemInteraction: M
       }),
-      ea = [(0, s.Z)(z, Z.xjy.JOIN) || (0, c.Z)(z) ? (0, r.jsx)(d.Z, {
+      ea = [(0, s.Z)(z, S.xjy.JOIN) || (0, c.Z)(z) ? (0, r.jsx)(d.Z, {
         activity: z,
         user: L,
-        ButtonComponent: e => (0, r.jsx)(w.Ll, A({
+        ButtonComponent: e => (0, r.jsx)(E.Ll, A({
           IconComponent: o.iWm
         }, e))
       }) : null, (0, u.Z)(z) ? (0, r.jsx)(m.Z, {
         activity: z,
-        ButtonComponent: e => (0, r.jsx)(w.Ll, A({
+        ButtonComponent: e => (0, r.jsx)(E.Ll, A({
           IconComponent: o.tEF
         }, e))
       }) : null].filter(g.lm);
-    return (0, r.jsxs)(w.yR, {
-      children: [er, (0, r.jsx)(w.St, {
-        children: (0, r.jsx)(w.WT, {
+    return (0, r.jsxs)(E.yR, {
+      children: [er, (0, r.jsx)(E.St, {
+        children: (0, r.jsx)(E.WT, {
           onReaction: f,
           onVoiceChannelPreview: k,
           user: L,

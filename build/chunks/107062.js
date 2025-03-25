@@ -1,6 +1,6 @@
 /** Chunk was on 94458 **/
 n.d(t, {
-  ZP: () => Z
+  ZP: () => S
 }), n(627494), n(757143), n(301563);
 var r = n(200651),
   a = n(192379),
@@ -26,11 +26,11 @@ var r = n(200651),
   C = n(797342),
   N = n(981631),
   I = n(388032);
-let w = (e, t) => I.NW.formatToPlainString(I.t.tAwI1t, {
+let E = (e, t) => I.NW.formatToPlainString(I.t.tAwI1t, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  E = (e, t, n) => {
+  w = (e, t, n) => {
     let r = I.t["bES+y8"],
       a = g.ZP.getName(t.guild_id, t.id, n),
       l = e.extra.activity_name;
@@ -39,7 +39,7 @@ let w = (e, t) => I.NW.formatToPlainString(I.t.tAwI1t, {
       userName: a
     }).replaceAll("*", "")
   },
-  S = e => {
+  Z = e => {
     let {
       entry: t,
       channel: n,
@@ -53,12 +53,12 @@ let w = (e, t) => I.NW.formatToPlainString(I.t.tAwI1t, {
       countOthers: a
     }).replaceAll("*", "")
   },
-  Z = e => {
+  S = e => {
     let {
       channel: t,
       entry: n,
       onReaction: g,
-      onVoiceChannelPreview: Z
+      onVoiceChannelPreview: S
     } = e, {
       largeImage: T
     } = (0, x.rv)({
@@ -70,8 +70,8 @@ let w = (e, t) => I.NW.formatToPlainString(I.t.tAwI1t, {
       activity: k,
       embeddedActivity: R
     } = (0, C.n)(n), {
-      primaryColor: D,
-      secondaryColor: M
+      primaryColor: M,
+      secondaryColor: D
     } = (0, P.Z)(null == T ? void 0 : T.src), L = (0, l.e7)([h.default], () => h.default.locale), {
       displayParticipants: W,
       participant1: U,
@@ -83,22 +83,22 @@ let w = (e, t) => I.NW.formatToPlainString(I.t.tAwI1t, {
       })
     }, G = a.useCallback(e => {
       if ((null == T ? void 0 : T.src) == null || null == t || null == A) return;
-      let r = B > 0 ? S({
+      let r = B > 0 ? Z({
         entry: n,
         channel: t,
         users: [U, z],
         countOthers: B
-      }) : E(n, t, A);
+      }) : w(n, t, A);
       return (0, j.C4)({
         entry: n,
         applicationImageSrc: null == T ? void 0 : T.src,
         avatarSrcs: W.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, y.yh)(n, L),
-        colors: [D, M],
+        colors: [M, D],
         channelId: e
       })
-    }, [null == T ? void 0 : T.src, t, W, n, L, B, U, z, D, M, A]), {
+    }, [null == T ? void 0 : T.src, t, W, n, L, B, U, z, M, D, A]), {
       enabled: F
     } = o.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
@@ -159,11 +159,11 @@ let w = (e, t) => I.NW.formatToPlainString(I.t.tAwI1t, {
       children: [Y, (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
           onReaction: g,
-          onVoiceChannelPreview: Z,
+          onVoiceChannelPreview: S,
           user: A,
           channel: t,
           generateReactionImage: G,
-          reactionImageAltText: w(n, A),
+          reactionImageAltText: E(n, A),
           entry: n,
           buttons: $
         })

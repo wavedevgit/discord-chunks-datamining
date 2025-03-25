@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 959e748c979e6110
+  Original File Name: 8f4a8cceb9e30337
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -14858,13 +14858,18 @@ div.profileThemedContainer__656be {
     background-color: var(--background-secondary)
 }
 
-.interactionsContainerHeader_af3b89 {
-    border-top: 1px solid var(--border-strong);
-    background-color: var(--background-floating);
-    z-index: 1
+.interactionsContainer_af3b89:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 16px;
+    right: 16px;
+    height: 1px;
+    background-color: var(--border-subtle)
 }
 
 .interactionsContainer_af3b89 {
+    position: relative;
     padding: 16px;
     background-color: var(--background-floating);
     border-bottom-left-radius: var(--radius-md);
@@ -14872,6 +14877,10 @@ div.profileThemedContainer__656be {
     display: flex;
     flex-direction: column;
     gap: 12px
+}
+
+.replyInput_af3b89 {
+    --form-input-height: 36px
 }
 
 .joinPromptContainer_af3b89 {
@@ -14933,10 +14942,7 @@ div.profileThemedContainer__656be {
 .primaryActionPopoutMessageCloseIcon_af3b89 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 40px;
-    max-width: 40px;
-    max-height: 40px
+    align-items: center
 }
 
 .primaryActionPopoutMessageCloseIcon_af3b89:hover {
@@ -15284,4 +15290,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=959e748c979e6110.css.map*/
+/*# sourceMappingURL=8f4a8cceb9e30337.css.map*/

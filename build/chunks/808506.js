@@ -375,7 +375,7 @@ let eI = e_("setOverlayEnabled", async e => {
     ea.error("setOverlayEnabled: overlay module failed loaded");
     return
   }
-  z || await eb(void 0), await em(t)
+  z || await eb(void 0), Y.size > 0 && await em(t)
 });
 
 function eS(e) {
@@ -506,7 +506,7 @@ function eM(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "fefca406604dd1c7d305d5fbee7b9503ea4b4b10"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "6e96208793aa36d0e3e8a385b4c41aba33d660de"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function ek(e) {

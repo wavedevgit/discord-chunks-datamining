@@ -67,9 +67,9 @@ function x(e) {
   }), N = "application_id" in y.extra ? y.extra.application_id : null, I = (0, o.Z)({
     id: N,
     label: p.NW.string(p.t["FfCL+/"])
-  }), w = (0, d.dX)(y), E = (0, c.Z)({
+  }), E = (0, d.dX)(y), w = (0, c.Z)({
     location: "ContentPopoutContextMenu",
-    applicationId: w && !0 !== P ? null === (t = y.extra) || void 0 === t ? void 0 : t.application_id : void 0,
+    applicationId: E && !0 !== P ? null === (t = y.extra) || void 0 === t ? void 0 : t.application_id : void 0,
     source: s.m1.ActivityCardContextMenu,
     trackEntryPointImpression: !0,
     sourceUserId: y.author_id
@@ -91,11 +91,11 @@ function x(e) {
         onSelect: j,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(l.kSQ, {
-            children: [b, null != E && (0, r.jsx)(l.sNh, {
+            children: [b, null != w && (0, r.jsx)(l.sNh, {
               id: "game-profile",
               label: p.NW.string(p.t.f7aVGh),
               action: e => {
-                E(e), null == O || O()
+                w(e), null == O || O()
               }
             })]
           }), (0, r.jsxs)(l.kSQ, {

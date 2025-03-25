@@ -43,24 +43,24 @@ let b = (e, t, n) => {
       onReaction: u,
       onVoiceChannelPreview: N
     } = e, I = (0, l.e7)([s.default], () => s.default.getUser(n.author_id)), {
-      largeImage: w
+      largeImage: E
     } = (0, m.rv)({
       entry: n
     }), {
-      primaryColor: E,
-      secondaryColor: S
-    } = (0, g.Z)(null == w ? void 0 : w.src), Z = (0, l.e7)([o.default], () => o.default.locale), T = (0, f.Z)(P.ABu.CRUNCHYROLL), A = (0, p.ap)(n.extra.media_assets_large_text), _ = a.useCallback(e => {
-      if (null != I && (null == w ? void 0 : w.src) != null) return (0, h.B)({
+      primaryColor: w,
+      secondaryColor: Z
+    } = (0, g.Z)(null == E ? void 0 : E.src), S = (0, l.e7)([o.default], () => o.default.locale), T = (0, f.Z)(P.ABu.CRUNCHYROLL), A = (0, p.ap)(n.extra.media_assets_large_text), _ = a.useCallback(e => {
+      if (null != I && (null == E ? void 0 : E.src) != null) return (0, h.B)({
         entry: n,
-        mediaImageSrc: null == w ? void 0 : w.src,
+        mediaImageSrc: null == E ? void 0 : E.src,
         avatarSrc: I.getAvatarURL(null == t ? void 0 : t.guild_id, 128),
         description: b(n, t, I),
-        timestamp: (0, p.yh)(n, Z),
+        timestamp: (0, p.yh)(n, S),
         episodeDescription: A,
-        colors: [E, S],
+        colors: [w, Z],
         channelId: e
       })
-    }, [t, n, A, Z, null == w ? void 0 : w.src, E, S, I]), k = () => {
+    }, [t, n, A, S, null == E ? void 0 : E.src, w, Z, I]), k = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({

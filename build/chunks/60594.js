@@ -171,8 +171,8 @@ function em(e) {
     [e0, e2] = l.useState(ev),
     [e5, e3] = l.useState(ej),
     [e7, e4] = l.useState(null !== (o = R.I0.getSetting()) && void 0 !== o && o),
-    [e8, e6] = l.useState(null != em ? em : null),
-    e9 = null !== (d = null == eS ? void 0 : eS.id) && void 0 !== d ? d : eH,
+    [e8, e9] = l.useState(null != em ? em : null),
+    e6 = null !== (d = null == eS ? void 0 : eS.id) && void 0 !== d ? d : eH,
     [te, tt] = l.useState(ek ? "" : void 0),
     tn = (0, w.Q3)("GoLiveModal");
   async function tr() {
@@ -273,7 +273,7 @@ function em(e) {
       eJ(e), null != e && (eA && (null == e ? void 0 : e.id.startsWith("camera:")) !== !0 ? tt(e.id.split(":")[1]) : tt(void 0), eB(3), eF(!0))
     }, [eA]),
     tc = l.useCallback(e => {
-      e6(e);
+      e9(e);
       var t = 3;
       eB(et ? 2 : 3)
     }, [et]),
@@ -329,7 +329,7 @@ function em(e) {
           return null
       }
     }(eU, H, et, ez),
-    tx = 1 !== eU && (3 !== eU || null == eY && null == eC && null == ew || null == e9),
+    tx = 1 !== eU && (3 !== eU || null == eY && null == eC && null == ew || null == e6),
     tp = l.useCallback(() => {
       null != th && eB(th)
     }, [th]),

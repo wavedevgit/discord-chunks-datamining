@@ -1,6 +1,6 @@
 /** Chunk was on 94458 **/
 n.d(t, {
-  Z: () => E,
+  Z: () => w,
   u: () => I
 }), n(47120);
 var r = n(200651),
@@ -74,7 +74,7 @@ function I(e) {
   })
 }
 
-function w(e) {
+function E(e) {
   let {
     otherAccessories: t,
     isEmojiPickerExpanded: n,
@@ -98,7 +98,7 @@ function w(e) {
   })
 }
 
-function E(e) {
+function w(e) {
   var t, n;
   let {
     channel: l,
@@ -108,24 +108,24 @@ function E(e) {
     onSelectEmoji: h,
     onSelectDisabledEmoji: g,
     onExpandedToggle: y,
-    emojiSearchProps: E,
-    recentlyUsedEmojis: S,
-    analyticsOverride: Z
+    emojiSearchProps: w,
+    recentlyUsedEmojis: Z,
+    analyticsOverride: S
   } = e, T = (0, m.Dt)(), [A, _] = a.useState(!1), k = (0, p.wC)(l.guild_id), R = (0, o.uniqBy)([...k, ...N], "name").filter(e => !v.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: l,
     intention: C
   })).slice(0, j.e5);
-  null != S && S.length > 0 && R.splice(R.length - 1, 1, S[0]);
-  let D = e => {
+  null != Z && Z.length > 0 && R.splice(R.length - 1, 1, Z[0]);
+  let M = e => {
       _(e), null == y || y(e)
     },
-    M = (e, t) => {
+    D = (e, t) => {
       if (null == e && t) {
         u();
         return
       }
-      null != e && h(e), D(!t), t && x.kJ.setSearchPlaceholder(null)
+      null != e && h(e), M(!t), t && x.kJ.setSearchPlaceholder(null)
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": T,
@@ -140,7 +140,7 @@ function E(e) {
     }), (0, r.jsxs)("div", {
       className: b.container,
       children: [(0, r.jsx)(f.Z, {
-        analyticsOverride: Z,
+        analyticsOverride: S,
         channel: l,
         className: i()(b.animatedPicker, {
           [b.animatedPickerTall]: A
@@ -149,7 +149,7 @@ function E(e) {
           [b.emojiPickerHeaderExpanded]: A
         }),
         closePopout: u,
-        onSelectEmoji: A ? M : () => {},
+        onSelectEmoji: A ? D : () => {},
         shouldHidePickerActions: !A,
         wrapper: "div",
         pickerIntention: C,
@@ -170,15 +170,15 @@ function E(e) {
             })
           }
           return e
-        }({}, E), n = n = {
-          accessory: (0, r.jsx)(w, {
-            otherAccessories: null == E ? void 0 : E.accessory,
+        }({}, w), n = n = {
+          accessory: (0, r.jsx)(E, {
+            otherAccessories: null == w ? void 0 : w.accessory,
             isEmojiPickerExpanded: A,
-            onSetExpanded: D,
+            onSetExpanded: M,
             onFocus: d
           }),
           onKeyDown: e => {
-            null != e && e.key !== O.vn.TAB && (e.key !== O.vn.ENTER || e.shiftKey ? D(!0) : D(!A))
+            null != e && e.key !== O.vn.TAB && (e.key !== O.vn.ENTER || e.shiftKey ? M(!0) : M(!A))
           }
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -212,7 +212,7 @@ function E(e) {
                   emoji: e,
                   isDisabled: t,
                   onClick: () => {
-                    t ? null == g || g(e) : M(e, !0)
+                    t ? null == g || g(e) : D(e, !0)
                   }
                 })
               })

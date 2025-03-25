@@ -45,7 +45,7 @@ function E(e) {
     return e.length > 0 ? e[0].compositeInstanceId : void 0
   }), R = (0, i.e7)([b.ZP], () => b.ZP.getCurrentEmbeddedActivity()), D = (0, v.Z)(), L = Z === y.jy.CAN_LAUNCH, M = null != O ? O : N.custom_id, W = null != C ? C : N.referrer_id, U = [];
   L && U.push({
-    label: null == k ? x.NW.string(x.t.cnBQPD) : x.NW.string(x.t.VJlc0d),
+    label: null != N.primary_cta ? N.primary_cta : null == k ? x.NW.string(x.t.cnBQPD) : x.NW.string(x.t.VJlc0d),
     trackingArea: p.j_.PLAY,
     onClick() {
       (0, _.G6)({
@@ -61,7 +61,7 @@ function E(e) {
     },
     disabledReason: null != k && (null == R ? void 0 : R.compositeInstanceId) === k ? x.NW.string(x.t.wJNK8P) : void 0
   }), P && U.push({
-    label: null != N.primary_cta ? N.primary_cta : x.NW.string(x.t.JeK1Wl),
+    label: L || null == N.primary_cta ? x.NW.string(x.t.JeK1Wl) : N.primary_cta,
     trackingArea: p.j_.PLAY,
     onClick() {
       (0, l.W)({

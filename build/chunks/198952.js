@@ -8,7 +8,7 @@ n(192379);
 var i = n(481060),
   s = n(518950),
   a = n(998502),
-  l = n(917566),
+  l = n(854290),
   o = n(388032),
   c = n(760398);
 let d = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
