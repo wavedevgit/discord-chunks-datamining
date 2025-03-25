@@ -74,9 +74,13 @@ function m(e) {
     context: t,
     applicationId: n,
     botUserId: r
-  } = e, a = p(t, n);
-  if (null == a) return !1;
-  let s = null != a.integration_types && a.integration_types.includes(i.Y.USER_INSTALL),
-    l = null != a.contexts && a.contexts.includes(o.D.BOT_DM);
-  return null != r && s && l
+  } = e, i = p(t, n);
+  return null != i && null != r && g(i)
+}
+
+function g(e) {
+  if (null == e) return !1;
+  let t = null != e.integration_types && e.integration_types.includes(i.Y.USER_INSTALL),
+    n = null != e.contexts && e.contexts.includes(o.D.BOT_DM);
+  return t && n
 }

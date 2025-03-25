@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 e.exports = {
   answersContainer: "answersContainer__4c520",
   answer: "answer__4c520",

@@ -1,57 +1,53 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  H: () => l
+  H: () => s
 });
-var r = n(192379),
-  i = n(781930),
-  o = n(372793),
-  a = n(731965);
+var r = n(781930),
+  i = n(372793),
+  o = n(731965);
 
-function s(e, t) {
+function a(e, t) {
   return e === t
 }
 
-function l(e) {
-  let t = (0, o.F)((0, i.XR)((t, n, r) => e(e => (0, a.j)(() => t(e)), n, r)));
+function s(e) {
+  let t = (0, i.F)((0, r.XR)((t, n, r) => e(e => (0, o.j)(() => t(e)), n, r)));
 
-  function n(e, n) {
+  function n(e) {
+    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a;
     return t(e, n)
   }
 
-  function l(e) {
+  function s(e) {
     let n = t.getState();
     return null != e ? e(n) : n
   }
 
+  function l(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a;
+    return n(t => t[e], t)
+  }
+
   function c(e) {
-    return t => t[e]
+    return s(t => t[e])
   }
-
-  function u(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s;
-    return n(r.useMemo(() => c(e), [e]), t)
-  }
-
-  function d(e) {
-    return l(c(e))
-  }
-  let f = e => {
-    (0, a.j)(() => t.setState(e))
+  let u = e => {
+    (0, o.j)(() => t.setState(e))
   };
 
-  function _() {
-    f(t.getInitialState())
+  function d() {
+    u(t.getInitialState())
   }
   return {
     useState: n,
-    getState: l,
-    useField: u,
-    getField: d,
+    getState: s,
+    useField: l,
+    getField: c,
     subscribe: function(e, n, r) {
       return t.subscribe(e, n, r)
     },
-    setState: f,
-    resetState: _
+    setState: u,
+    resetState: d
   }
 }

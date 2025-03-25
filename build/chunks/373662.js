@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   ZP: () => g,
   fO: () => h,
@@ -60,8 +60,8 @@ function f(e) {
     onClick: _,
     onTooltipShow: b,
     onTooltipHide: v,
-    disabled: x,
-    dangerous: y,
+    disabled: y,
+    dangerous: x,
     separator: E,
     sparkle: O,
     showNewBadge: N,
@@ -105,8 +105,8 @@ function f(e) {
             null == b || b(), _(e)
           },
           "aria-label": null != n ? n : t,
-          disabled: x,
-          dangerous: y
+          disabled: y,
+          dangerous: x
         }, I), c = c = {
           children: [null != h ? (0, r.jsx)(h, p({
             className: d.icon,

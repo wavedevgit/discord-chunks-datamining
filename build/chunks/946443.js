@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => S,
   h: () => P
@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(626135),
   b = n(585483),
   v = n(358085),
-  x = n(143316),
-  y = n(240126),
+  y = n(143316),
+  x = n(240126),
   E = n(791914),
   O = n(147522),
   N = n(809780),
@@ -103,7 +103,7 @@ function S(e) {
         setTab: w,
         badgeState: L,
         closePopout: D
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(x.Z, {
         Icon: p.xx7,
         header: C.NW.string(C.t["6XMM+P"]),
         tip: (null === (A = s().os) || void 0 === A ? void 0 : A.family) === "OS X" ? C.NW.string(C.t.w9uDOT) : C.NW.string(C.t.BiUJCw)
@@ -120,7 +120,7 @@ function S(e) {
       setTab: w,
       badgeState: L,
       closePopout: D,
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(y.Z, {
         type: "top-header",
         onClick: H
       })
@@ -236,7 +236,7 @@ function P(e) {
       setTab: t,
       badgeState: n,
       closePopout: i
-    }), (0, r.jsx)(y.Z, {
+    }), (0, r.jsx)(x.Z, {
       Icon: p.xx7,
       disableStars: !0,
       header: C.NW.string(C.t["KG/ynZ"]),

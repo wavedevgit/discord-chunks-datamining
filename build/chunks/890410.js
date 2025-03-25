@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => p
 });
@@ -57,7 +57,7 @@ function p(e) {
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let x = (0, o.ZP)(i);
+  let y = (0, o.ZP)(i);
   return (0, r.jsx)("div", {
     className: a()({
       [u.withFooter]: b
@@ -78,7 +78,7 @@ function p(e) {
       childrenHeader: (0, r.jsx)(c.ZP, d({
         message: i,
         channel: p,
-        author: x,
+        author: y,
         guildId: null == p ? void 0 : p.guild_id,
         compact: h,
         hideTimestamp: _,

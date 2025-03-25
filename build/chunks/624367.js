@@ -1,6 +1,6 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => k
+  Z: () => R
 }), n(47120), n(266796), n(566702);
 var r = n(200651);
 n(192379);
@@ -11,30 +11,31 @@ var i = n(666572),
   s = n(481060),
   c = n(100527),
   u = n(906732),
-  d = n(783097),
-  p = n(606192),
-  m = n(213459),
-  f = n(321231),
-  h = n(506895),
-  g = n(230171),
-  _ = n(835473),
-  b = n(749681),
-  v = n(258971),
-  x = n(914010),
-  y = n(624138),
-  E = n(135431),
-  O = n(566620),
-  N = n(365415),
-  j = n(574952),
-  C = n(579195),
-  I = n(778569),
-  S = n(50523),
-  T = n(49898),
-  P = n(388032),
-  A = n(587494);
+  d = n(915346),
+  p = n(783097),
+  m = n(176412),
+  f = n(213459),
+  h = n(581364),
+  g = n(321231),
+  _ = n(506895),
+  b = n(230171),
+  v = n(835473),
+  y = n(749681),
+  x = n(258971),
+  E = n(914010),
+  O = n(624138),
+  N = n(566620),
+  j = n(365415),
+  C = n(574952),
+  I = n(579195),
+  S = n(778569),
+  T = n(50523),
+  P = n(49898),
+  A = n(388032),
+  w = n(587494);
 
-function w() {
-  return (w = Object.assign || function(e) {
+function Z() {
+  return (Z = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -42,83 +43,83 @@ function w() {
     return e
   }).apply(this, arguments)
 }
-let Z = (0, y.Mg)(l.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
+let k = (0, O.Mg)(l.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
 
-function k(e) {
-  var t, n, l, y;
+function R(e) {
+  var t, n, l, O;
   let {
-    applicationId: k,
-    customId: R,
-    referrerId: D,
-    embedUrl: L,
-    linkId: M
+    applicationId: R,
+    customId: D,
+    referrerId: L,
+    embedUrl: M,
+    linkId: W
   } = e, {
-    analyticsLocations: W
-  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [U] = (0, _.Z)([k]), F = (0, o.e7)([x.Z], () => {
+    analyticsLocations: U
+  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [F] = (0, v.Z)([R]), B = (0, o.e7)([E.Z], () => {
     var e;
-    return null !== (e = x.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), B = null == U ? void 0 : null === (t = U.bot) || void 0 === t ? void 0 : t.id, G = null != U && (0, d.ye)(U), {
-    currentChannelId: H,
-    instanceId: V,
-    isCurrentlyInInstance: z,
-    canLaunchInChannel: K
-  } = (0, h.c)(k), Y = (0, j.Z)(), X = (0, C.ZP)(null !== (l = null == U ? void 0 : U.maxParticipants) && void 0 !== l ? l : 0), q = (0, I.Z)({
-    applicationId: k,
-    size: Z,
+    return null !== (e = E.Z.getGuildId()) && void 0 !== e ? e : void 0
+  }), G = null == F ? void 0 : null === (t = F.bot) || void 0 === t ? void 0 : t.id, H = null != F && (0, p.ye)(F), {
+    currentChannelId: V,
+    instanceId: z,
+    isCurrentlyInInstance: K,
+    canLaunchInChannel: Y
+  } = (0, _.c)(R), X = (0, C.Z)(), q = (0, I.ZP)(null !== (l = null == F ? void 0 : F.maxParticipants) && void 0 !== l ? l : 0), Q = (0, S.Z)({
+    applicationId: R,
+    size: k,
     names: ["embedded_cover"]
-  }), Q = null !== (y = null == U ? void 0 : U.id) && void 0 !== y ? y : "0", J = (0, E.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, E.TK)(Q, (0, m.LD)(F, !1)), ee = async () => {
-    if ((null == U ? void 0 : U.id) != null) {
-      if (K)(0, O.G6)({
-        channelId: null != H ? H : void 0,
-        applicationId: U.id,
-        isStart: null == V,
-        instanceId: null != V ? V : void 0,
-        embeddedActivitiesManager: Y,
-        customId: R,
-        referrerId: D,
-        analyticsLocations: W
+  }), J = null !== (O = null == F ? void 0 : F.id) && void 0 !== O ? O : "0", $ = (0, h.TK)(J, (0, f.PL)(!0, !1)), ee = (0, h.TK)(J, (0, f.LD)(B, !1)), et = async () => {
+    if ((null == F ? void 0 : F.id) != null) {
+      if (Y)(0, N.G6)({
+        channelId: null != V ? V : void 0,
+        applicationId: F.id,
+        isStart: null == z,
+        instanceId: null != z ? z : void 0,
+        embeddedActivitiesManager: X,
+        customId: D,
+        referrerId: L,
+        analyticsLocations: U
       });
       else {
-        if (null == B) return;
+        if (null == G) return;
         try {
-          await (0, p.W)({
-            appId: U.id,
-            botId: B,
-            analyticsLocations: W,
-            customId: R,
-            referrerId: D
+          await (0, d.W)({
+            appId: F.id,
+            botId: G,
+            analyticsLocations: U,
+            customId: D,
+            referrerId: L
           })
         } catch (e) {}
       }
     }
   }, {
-    enabled: et
-  } = f.G.useExperiment({
+    enabled: en
+  } = g.G.useExperiment({
     location: "ActivityBookmarkEmbed"
-  }), en = (0, i._)(M), {
-    data: er,
-    error: ei
-  } = (0, N.h)(null == U ? void 0 : U.id, en);
-  if (null == U || !1 === G) return null;
-  if (et) return null != M && null == ei && null != er ? (0, r.jsx)(S.b, {
-    application: U,
-    customId: R,
-    customLink: er,
-    embedUrl: L,
-    referrerId: D
+  }), er = (0, i._)(W), {
+    data: ei,
+    error: ea
+  } = (0, j.h)(null == F ? void 0 : F.id, er);
+  if (null == F || !1 === H) return null;
+  if (en) return null != W && null == ea && null != ei ? (0, r.jsx)(T.b, {
+    application: F,
+    customId: D,
+    customLink: ei,
+    embedUrl: M,
+    referrerId: L
   }) : (0, r.jsx)(u.Gt, {
-    value: W,
-    children: (0, r.jsx)(g.O, {
-      app: U,
-      embedUrl: L,
-      linkType: g.U.ACTIVITY,
-      activityCustomId: R,
-      activityReferrerId: D
+    value: U,
+    children: (0, r.jsx)(b.O, {
+      app: F,
+      embedUrl: M,
+      linkType: b.U.ACTIVITY,
+      activityCustomId: D,
+      activityReferrerId: L
     })
   });
-  let ea = K ? null == V ? P.NW.string(P.t.cnBQPD) : P.NW.string(P.t.VJlc0d) : P.NW.string(P.t.JeK1Wl),
-    eo = z ? P.NW.string(P.t.wJNK8P) : void 0,
-    el = e => {
+  let eo = Y ? null == z ? A.NW.string(A.t.cnBQPD) : A.NW.string(A.t.VJlc0d) : A.NW.string(A.t.JeK1Wl),
+    el = K ? A.NW.string(A.t.wJNK8P) : void 0,
+    es = e => {
       var t, n;
       return (0, r.jsx)(s.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -138,12 +139,12 @@ function k(e) {
         }
         return e
       }({
-        onClick: ee,
-        className: A.button,
+        onClick: et,
+        className: w.button,
         color: s.Ttl.GREEN,
-        disabled: null != eo
+        disabled: null != el
       }, e), n = n = {
-        children: ea
+        children: eo
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -156,64 +157,64 @@ function k(e) {
       }), t))
     };
   return (0, r.jsx)(u.Gt, {
-    value: W,
+    value: U,
     children: (0, r.jsxs)("div", {
-      className: A.container,
+      className: w.container,
       children: [(0, r.jsx)("div", {
-        className: A.imgContainer,
+        className: w.imgContainer,
         children: (0, r.jsx)("img", {
-          className: A.img,
-          alt: U.name,
-          src: q.url
+          className: w.img,
+          alt: F.name,
+          src: Q.url
         })
       }), (0, r.jsxs)("div", {
-        className: A.content,
+        className: w.content,
         children: [(0, r.jsx)(s.X6q, {
-          className: A.heading,
+          className: w.heading,
           variant: "heading-xl/semibold",
-          children: U.name
+          children: F.name
         }), (0, r.jsx)(s.X6q, {
-          className: A.description,
+          className: w.description,
           variant: "heading-sm/medium",
-          children: null === (n = U.description) || void 0 === n ? void 0 : n.trim()
+          children: null === (n = F.description) || void 0 === n ? void 0 : n.trim()
         }), (0, r.jsxs)("div", {
-          className: A.cta,
+          className: w.cta,
           children: [(0, r.jsxs)("div", {
-            className: A.maxParticipants,
+            className: w.maxParticipants,
             children: [(0, r.jsx)(s.BFJ, {
               size: "md",
               color: "currentColor",
-              className: A.peopleIcon
+              className: w.peopleIcon
             }), (0, r.jsx)(s.Text, {
               variant: "text-xs/semibold",
-              children: X
+              children: q
             })]
           }), (0, r.jsxs)("div", {
-            className: A.buttonWrapper,
-            children: [null != U && (0, r.jsx)(s.zxk, {
+            className: w.buttonWrapper,
+            children: [null != F && (0, r.jsx)(s.zxk, {
               onClick: () => {
                 var e;
-                null != U && (a.Y.USER_INSTALL in (null !== (e = U.integrationTypesConfig) && void 0 !== e ? e : {}) || J || $ ? (0, d.X)(U.id) : (0, b.transitionToGlobalDiscovery)({
-                  tab: T.GlobalDiscoveryTab.APPS,
-                  applicationId: U.id,
+                null != F && (a.Y.USER_INSTALL in (null !== (e = F.integrationTypesConfig) && void 0 !== e ? e : {}) || $ || ee ? (0, m.X)(F.id) : (0, y.transitionToGlobalDiscovery)({
+                  tab: P.GlobalDiscoveryTab.APPS,
+                  applicationId: F.id,
                   newSessionState: {
                     entrypoint: {
-                      name: v.xF.OAUTH2_EMBED
+                      name: x.xF.OAUTH2_EMBED
                     },
-                    guildId: F
+                    guildId: B
                   }
                 }))
               },
-              className: A.button,
+              className: w.button,
               color: s.Ttl.PRIMARY,
-              children: P.NW.string(P.t.fbcCzc)
-            }), null != eo ? (0, r.jsx)(s.ua7, {
-              text: eo,
-              children: e => el(w({}, function(e) {
+              children: A.NW.string(A.t.fbcCzc)
+            }), null != el ? (0, r.jsx)(s.ua7, {
+              text: el,
+              children: e => es(Z({}, function(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e)))
-            }, ea) : el()]
+            }, eo) : es()]
           })]
         })]
       })]

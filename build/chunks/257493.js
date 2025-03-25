@@ -1,42 +1,42 @@
 /** Chunk was on 89001 **/
 r.d(t, {
-  C: () => a,
-  d: () => l
+  C: () => c,
+  d: () => o
 });
 var n = r(200651),
   s = r(192379),
   i = r(43747);
-let o = (0, s.createContext)({
+let l = (0, s.createContext)({
     skuId: "123",
     isRedeeming: !1,
     orbRedemptionError: null,
     onRedeemVirtualCurrency: () => {}
   }),
-  l = e => {
+  o = e => {
     let {
       skuId: t,
       onCheckoutSuccess: r,
-      children: l
+      children: o
     } = e, {
-      redeemVirtualCurrency: a,
-      isSubmitting: c,
+      redeemVirtualCurrency: c,
+      isSubmitting: a,
       error: u
     } = (0, i.f)(), d = (0, s.useCallback)(e => {
-      a(t, n => {
+      c(t, n => {
         r({
           entitlements: n,
           skuId: t
         }), e()
       })
-    }, [t, a, r]);
-    return (0, n.jsx)(o.Provider, {
+    }, [t, c, r]);
+    return (0, n.jsx)(l.Provider, {
       value: {
         skuId: t,
         onRedeemVirtualCurrency: d,
-        isRedeeming: c,
+        isRedeeming: a,
         orbRedemptionError: u
       },
-      children: l
+      children: o
     })
   },
-  a = () => (0, s.useContext)(o)
+  c = () => (0, s.useContext)(l)

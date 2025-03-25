@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => k
 });
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(131704),
   b = n(314897),
   v = n(430824),
-  x = n(701190),
-  y = n(411198),
+  y = n(701190),
+  x = n(411198),
   E = n(610699),
   O = n(313876),
   N = n(778333),
@@ -42,9 +42,9 @@ function k(e) {
   } = e, {
     invite: R,
     inviteError: D
-  } = (0, a.cj)([x.Z], () => ({
-    invite: x.Z.getInvite(t),
-    inviteError: x.Z.getInviteError(t)
+  } = (0, a.cj)([y.Z], () => ({
+    invite: y.Z.getInvite(t),
+    inviteError: y.Z.getInviteError(t)
   }), [t]), L = null == R;
   i.useEffect(() => {
     L && o.ZP.resolveInvite(t)
@@ -68,7 +68,7 @@ function k(e) {
     },
     V = () => {
       if (null == F && (null == R ? void 0 : R.guild) != null) {
-        let e = y.Qs(R.guild);
+        let e = x.Qs(R.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) {
           (0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED);
           return

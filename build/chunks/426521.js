@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   U: () => W
 }), n(301563);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(626135),
   b = n(709054),
   v = n(591759),
-  x = n(833592),
-  y = n(497089),
+  y = n(833592),
+  x = n(497089),
   E = n(178480),
   O = n(418316),
   N = n(382865),
@@ -109,7 +109,7 @@ let M = i.memo(function(e) {
     } = e, {
       analyticsLocations: c
     } = (0, s.ZP)(), p = (0, j.I)(a, l), f = i.useCallback(async () => {
-      if (p || (0, x.wt)(a), null != a.item_enum && a.item_enum === y.AM.FIND_FRIENDS) {
+      if (p || (0, y.wt)(a), null != a.item_enum && a.item_enum === x.AM.FIND_FRIENDS) {
         (0, o.ZDy)(async () => {
           let {
             default: e
@@ -158,16 +158,16 @@ let M = i.memo(function(e) {
           } else await (0, u.Z)(r)
         }
         _.default.track(T.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: y.ud.CLICKED,
+          action_type: x.ud.CLICKED,
           notification_center_id: a.id,
           item_type: a.type,
           acked: p
         })
       }
     }, [a, p, c]), h = null;
-    a.type === y.O7.INCOMING_FRIEND_REQUESTS && null != a.other_user ? h = (0, r.jsx)(I.Z, {
+    a.type === x.O7.INCOMING_FRIEND_REQUESTS && null != a.other_user ? h = (0, r.jsx)(I.Z, {
       userId: a.other_user.id
-    }) : a.type === y.O7.INCOMING_GAME_FRIEND_REQUESTS && null != a.other_user && (h = (0, r.jsx)(I.Z, {
+    }) : a.type === x.O7.INCOMING_GAME_FRIEND_REQUESTS && null != a.other_user && (h = (0, r.jsx)(I.Z, {
       userId: a.other_user.id,
       applicationId: a.applicationId
     }));

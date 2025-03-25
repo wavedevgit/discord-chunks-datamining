@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  P: () => f,
-  Z: () => h
+  P: () => h,
+  Z: () => f
 }), n(47120);
 var i = n(200651),
   l = n(481060),
@@ -15,7 +15,7 @@ var i = n(200651),
   p = n(314734),
   m = n(388032);
 
-function f(e) {
+function h(e) {
   var t;
   let {
     application: n
@@ -29,14 +29,14 @@ function f(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     application: t,
     onSelect: n
   } = e, a = s.Sb.useSetting(), c = (0, o.Z)({
     id: t.id,
     label: m.NW.string(m.t["+NP/b2"])
-  }), u = f({
+  }), u = h({
     application: t
   });
   return (0, i.jsxs)(l.v2r, {

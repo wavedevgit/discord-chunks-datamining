@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   l: () => _
 }), n(47120);
@@ -24,8 +24,8 @@ let g = i.memo(function(e) {
         count: _,
         me: b,
         me_burst: v,
-        burst_count: x,
-        burst_colors: y,
+        burst_count: y,
+        burst_colors: x,
         readOnly: E,
         isLurking: O,
         isGuest: N,
@@ -35,9 +35,9 @@ let g = i.memo(function(e) {
       } = e,
       S = C === p.O.BURST,
       T = (0, m.y4)(b, v, C),
-      P = (0, d.v)(S && null != y ? y : []),
+      P = (0, d.v)(S && null != x ? x : []),
       A = i ? h : f,
-      w = S ? x : _,
+      w = S ? y : _,
       Z = (0, u.y)(w, m.aO),
       k = {};
     if (S && null != P) {

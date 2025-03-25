@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => L
 }), n(301563), n(757143);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(607070),
   b = n(367907),
   v = n(313201),
-  x = n(592125),
-  y = n(984933),
+  y = n(592125),
+  x = n(984933),
   E = n(768119),
   O = n(944486),
   N = n(585483),
@@ -226,12 +226,12 @@ class D extends i.PureComponent {
         return
       }
       let n = O.Z.getChannelId(),
-        r = x.Z.getChannel(n);
-      if ((null == r ? void 0 : r.isThread()) && (r = x.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) {
+        r = y.Z.getChannel(n);
+      if ((null == r ? void 0 : r.isThread()) && (r = y.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) {
         this.focusEditor();
         return
       }
-      let i = y.ZP.getTextChannelNameDisambiguations(r.getGuildId())[r.id],
+      let i = x.ZP.getTextChannelNameDisambiguations(r.getGuildId())[r.id],
         a = null != i ? i.name : r.name;
       Promise.resolve().then(() => {
         let {

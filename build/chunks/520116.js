@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => S
 }), n(653041);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(314897),
   b = n(496675),
   v = n(594174),
-  x = n(55935),
-  y = n(655354),
+  y = n(55935),
+  x = n(655354),
   E = n(809780),
   O = n(981631),
   N = n(388032),
@@ -68,7 +68,7 @@ function I(e) {
       className: j.messageContainer,
       onKeyDown: g
     }, f), a = a = {
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(x.Z, {
         className: j.jumpButton,
         onJump: e => m(e, s.id)
       }), (0, r.jsx)(h.Z, {
@@ -107,7 +107,7 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), y = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && void 0 !== n && n, w = [];
+  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && void 0 !== n && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -115,7 +115,7 @@ function S(e) {
     n.forEach(n => {
       if (!(0, d.Z)(n, C)) {
         if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
-          let t = (0, x.vc)(n.timestamp, "LL");
+          let t = (0, y.vc)(n.timestamp, "LL");
           w.push((0, r.jsx)(f.Z, {
             className: j.divider,
             children: t
@@ -125,7 +125,7 @@ function S(e) {
         t = n, T = T || (0, m.DQ)(n), w.push((0, r.jsx)(I, {
           channel: a,
           message: n,
-          compact: y,
+          compact: x,
           isGroupStart: i,
           treatSpam: !A && h && (0, m.DQ)(n) && S,
           gotoChannel: l

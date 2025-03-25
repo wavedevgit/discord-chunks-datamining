@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => v
 });
@@ -25,8 +25,8 @@ function v(e) {
     tab: t,
     setTab: n,
     children: v,
-    badgeState: x,
-    closePopout: y
+    badgeState: y,
+    closePopout: x
   } = e, {
     showReminders: E
   } = m.Z.useExperiment({
@@ -65,7 +65,7 @@ function v(e) {
       }), (0, r.jsxs)("div", {
         className: b.controls,
         children: [v, (0, r.jsx)(g.Z, {
-          closePopout: y
+          closePopout: x
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -80,7 +80,7 @@ function v(e) {
           id: a.X.FOR_YOU,
           "aria-label": _.NW.string(_.t["En+D+v"]),
           className: b.tab,
-          children: [_.NW.string(_.t["En+D+v"]), (null == x ? void 0 : x.badgeForYou) ? (0, r.jsx)(o.fWl, {
+          children: [_.NW.string(_.t["En+D+v"]), (null == y ? void 0 : y.badgeForYou) ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: b.iconBadge
           }) : null]

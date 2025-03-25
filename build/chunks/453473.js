@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   K: () => F,
   P: () => B
@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(724757),
   b = n(213609),
   v = n(294218),
-  x = n(373662),
-  y = n(695346),
+  y = n(373662),
+  x = n(695346),
   E = n(496675),
   O = n(626135),
   N = n(585483),
@@ -226,11 +226,11 @@ function H(e) {
       message: t.message,
       channel: l,
       className: D.message,
-      compact: y.jU.getSetting(),
+      compact: x.jU.getSetting(),
       animateAvatar: !1,
       focusProps: W,
       trackAnnouncementViews: !0
-    }, t.message.id), (0, r.jsx)(x.ZP, {
+    }, t.message.id), (0, r.jsx)(y.ZP, {
       className: D.hoverBar,
       children: (0, r.jsx)(z, {
         savedMessage: t,
@@ -249,9 +249,9 @@ function H(e) {
       variant: "text-md/semibold",
       color: "header-secondary",
       children: null != t.saveData.dueAt ? R.NW.string(R.t["wuQm+v"]) : R.NW.string(R.t.o572FR)
-    }), (0, r.jsx)(x.ZP, {
+    }), (0, r.jsx)(y.ZP, {
       className: D.hoverBar,
-      children: (0, r.jsx)(x.sF, {
+      children: (0, r.jsx)(y.sF, {
         label: R.NW.string(R.t.SvXS1d),
         icon: f.XHJ,
         dangerous: !0,
@@ -280,7 +280,7 @@ function z(e) {
     jumpToMessage: i
   } = e;
   return (s()(null != t.message, "Saved message must be cached for For Later action buttons"), null != t.saveData.dueAt) ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(x.sF, {
+    children: [(0, r.jsx)(y.sF, {
       label: R.NW.string(R.t.yjGtdH),
       icon: f.dz2,
       onClick: () => (0, C.z)({
@@ -288,7 +288,7 @@ function z(e) {
         messageId: t.saveData.messageId,
         dueAt: void 0
       })
-    }, "mark-complete"), (0, r.jsx)(x.sF, {
+    }, "mark-complete"), (0, r.jsx)(y.sF, {
       label: R.NW.string(R.t.vrbqs7),
       icon: f.vdY,
       onClick: e => (0, h.jW)(e, async () => {
@@ -300,17 +300,17 @@ function z(e) {
           message: t.message
         }))
       })
-    }, "edit-reminder"), (0, r.jsx)(x.fO, {}), (0, r.jsx)(x.sF, {
+    }, "edit-reminder"), (0, r.jsx)(y.fO, {}), (0, r.jsx)(y.sF, {
       label: R.NW.string(R.t["+TSRGB"]),
       icon: f.d4D,
       onClick: e => i(e)
-    }, "jump-to-message"), (0, r.jsx)(x.sF, {
+    }, "jump-to-message"), (0, r.jsx)(y.sF, {
       label: R.NW.string(R.t.SvXS1d),
       icon: f.plf,
       onClick: () => (0, C.x)(t.saveData)
     }, "remove-reminder")]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(x.sF, {
+    children: [(0, r.jsx)(y.sF, {
       label: R.NW.string(R.t.mJ3P0N),
       icon: f.T39,
       onClick: e => (0, h.jW)(e, async () => {
@@ -322,11 +322,11 @@ function z(e) {
           message: t.message
         }))
       })
-    }, "create-reminder"), (0, r.jsx)(x.sF, {
+    }, "create-reminder"), (0, r.jsx)(y.sF, {
       label: R.NW.string(R.t["+TSRGB"]),
       icon: f.d4D,
       onClick: e => i(e)
-    }, "jump-to-message"), (0, r.jsx)(x.sF, {
+    }, "jump-to-message"), (0, r.jsx)(y.sF, {
       label: R.NW.string(R.t.SvXS1d),
       icon: f.plf,
       onClick: () => (0, C.x)(t.saveData)

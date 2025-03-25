@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var i = n(200651),
   l = n(192379),
@@ -13,27 +13,27 @@ var i = n(200651),
   d = n(98880),
   p = n(772606),
   m = n(388032),
-  f = n(86454);
+  h = n(86454);
 
-function h(e) {
+function f(e) {
   let {
     context: t,
     entrypoint: n,
     title: r,
-    look: h,
+    look: f,
     items: v,
-    sectionName: y,
-    sectionOverallPosition: b
-  } = e, N = (0, u.s)("AppLauncherApplicationListViewScreen"), g = l.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+    sectionName: N,
+    sectionOverallPosition: x
+  } = e, y = (0, u.s)("AppLauncherApplicationListViewScreen"), b = l.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
   return (0, i.jsxs)("section", {
-    className: f.container,
+    className: h.container,
     "aria-label": m.NW.formatToPlainString(m.t.iobNIC, {
       sectionTitle: r
     }),
     children: [(0, i.jsxs)("div", {
-      className: f.header,
+      className: h.header,
       children: [(0, i.jsx)(p.Z, {
-        className: f.backButton
+        className: h.backButton
       }), (0, i.jsx)(a.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
@@ -42,8 +42,8 @@ function h(e) {
     }), (0, i.jsx)(a.Ttm, {
       children: (0, i.jsx)("div", {
         className: o()({
-          [f.appGrid]: h !== d.U4.ROW,
-          [f.rows]: h === d.U4.ROW
+          [h.appGrid]: f !== d.U4.ROW,
+          [h.rows]: f === d.U4.ROW
         }),
         children: v.map((e, n) => {
           let {
@@ -51,16 +51,16 @@ function h(e) {
             installOnDemand: r,
             showsPromoted: o
           } = e;
-          return (0, i.jsx)(g, {
+          return (0, i.jsx)(b, {
             context: t,
             application: l,
-            look: h,
-            sectionName: y,
+            look: f,
+            sectionName: N,
             resultsPosition: n,
             location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
             installOnDemand: r,
-            isOneClickCTA: N,
-            sectionOverallPosition: b,
+            isOneClickCTA: y,
+            sectionOverallPosition: x,
             showsPromoted: o
           }, l.id)
         })

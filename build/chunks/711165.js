@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   _: () => w
 }), n(230036), n(47120);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(156012),
   b = n(74365),
   v = n(618857),
-  x = n(695346),
-  y = n(23750),
+  y = n(695346),
+  x = n(23750),
   E = n(592125),
   O = n(594174),
   N = n(823379),
@@ -169,7 +169,7 @@ let R = i.memo(function(e) {
     scheduledMessage: t,
     channel: n,
     isPendingDeletion: a
-  } = e, l = new y.ZP({
+  } = e, l = new x.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
     author: O.default.getUser(t.userId),
@@ -233,7 +233,7 @@ let R = i.memo(function(e) {
           message: l,
           channel: n,
           className: P.message,
-          compact: x.jU.getSetting(),
+          compact: y.jU.getSetting(),
           animateAvatar: !1,
           focusProps: A
         }, l.id), (0, r.jsx)(p.P3F, {

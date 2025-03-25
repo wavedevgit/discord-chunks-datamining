@@ -9,25 +9,25 @@ var r = n(200651),
   o = n(481060),
   s = n(597688),
   i = n(297651),
-  c = n(794324),
-  d = n(388032),
+  d = n(794324),
+  c = n(388032),
   u = n(39532);
 let g = e => {
   var t, n, g;
-  let f, {
-    category: h,
+  let h, {
+    category: f,
     subblock: m,
     badgeText: p,
     handleTransition: b
   } = e;
-  null != m && (f = null === (t = s.Z.getCategoryByStoreListingId(null == m ? void 0 : m.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId);
-  let C = null !== (n = null != f ? f : null == h ? void 0 : h.skuId) && void 0 !== n ? n : "",
+  null != m && (h = null === (t = s.Z.getCategoryByStoreListingId(null == m ? void 0 : m.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId);
+  let C = null !== (n = null != h ? h : null == f ? void 0 : f.skuId) && void 0 !== n ? n : "",
     {
       handleCardVisibilityChange: _
     } = (0, i.E)(C, "home", "marketing featured block"),
     {
       featuredBlockBanner: v
-    } = (0, c.YG)(h, m),
+    } = (0, d.YG)(f, m),
     k = l.useRef(null);
   return (0, r.jsx)(a.$, {
     innerRef: k,
@@ -56,7 +56,7 @@ let g = e => {
         className: u.featuredBlockButton,
         color: o.Ttl.WHITE,
         onClick: () => {},
-        children: d.NW.string(d.t.jVcuVV)
+        children: c.NW.string(c.t.jVcuVV)
       })]
     })
   })

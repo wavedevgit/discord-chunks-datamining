@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   H: () => v
 }), n(266796);
@@ -25,8 +25,8 @@ function v(e) {
     guildProductListing: t,
     guildId: n,
     location: v,
-    shouldShowFullDescriptionButton: x = !0,
-    hideRoleTag: y = !1,
+    shouldShowFullDescriptionButton: y = !0,
+    hideRoleTag: x = !1,
     lineClamp: E = 1,
     cardWidth: O,
     cardHeight: N,
@@ -81,12 +81,12 @@ function v(e) {
       sourceAnalyticsLocations: v
     }),
     productType: A,
-    shouldShowFullDescriptionButton: x,
+    shouldShowFullDescriptionButton: y,
     onShowFullDescription: R,
     onTapCard: R,
     actionMenu: D,
     showOpaqueBackground: I,
-    hideRoleTag: y,
+    hideRoleTag: x,
     lineClamp: E,
     cardWidth: O,
     cardHeight: N,

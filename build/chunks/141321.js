@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => v
 });
@@ -24,8 +24,8 @@ function v(e) {
     onOpen: t,
     onClose: n,
     className: v,
-    "data-jump-section": x
-  } = e, y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), E = (0, l.Q3)("RecentsButton"), O = i.useRef(null), N = (0, a.e7)([p.ZP], () => (null == y ? void 0 : y.id) != null && p.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
+    "data-jump-section": y
+  } = e, x = (0, a.e7)([m.default], () => m.default.getCurrentUser()), E = (0, l.Q3)("RecentsButton"), O = i.useRef(null), N = (0, a.e7)([p.ZP], () => (null == x ? void 0 : x.id) != null && p.ZP.getMentionCount(x.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: j
   } = c.Z.useExperiment({
     location: "RecentsButton"
@@ -76,7 +76,7 @@ function v(e) {
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,
             showBadge: N || C || i,
-            "data-jump-section": x
+            "data-jump-section": y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

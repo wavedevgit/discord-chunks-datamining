@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => S
+  G: () => T
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -44,26 +44,27 @@ function I(e) {
   }
   return e
 }
+let S = 1e3;
 
-function S() {
-  let [e, t] = i.useState(!1), O = (0, l.VXO)(b.Xd), S = (0, E.Q3)("useDesktopRefreshOnboarding"), T = i.useMemo(() => S ? [a.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [S]), [N, A] = (0, _.US)(T), C = N === a.z.DESKTOP_REFRESH_ONBOARDING_MODAL, R = (0, o.e7)([h.default], () => h.default.getId());
+function T() {
+  let [e, t] = i.useState(!1), O = (0, l.VXO)(b.Xd), T = (0, E.Q3)("useDesktopRefreshOnboarding"), N = i.useMemo(() => T ? [a.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [T]), [A, C] = (0, _.US)(N), R = A === a.z.DESKTOP_REFRESH_ONBOARDING_MODAL, P = (0, o.e7)([h.default], () => h.default.getId());
   i.useLayoutEffect(() => {
-    S && null != R && g.default.age(R) < m.Z.Millis.DAY && (0, f.EW)(a.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
+    T && null != P && g.default.age(P) < m.Z.Millis.DAY && (0, f.EW)(a.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
       t = "true" === s.K.get(e);
-    C && S && !t && p.Z.theme === y.BR.DARK && null == d.Z.gradientPreset && !t && (s.K.set(e, "true"), (0, u.ZI)({
+    R && T && !t && p.Z.theme === y.BR.DARK && null == d.Z.gradientPreset && !t && (s.K.set(e, "true"), (0, u.ZI)({
       theme: y.BR.DARKER
     }))
-  }, [C, S, R]), i.useLayoutEffect(() => {
+  }, [R, T, P]), i.useLayoutEffect(() => {
     function e() {
-      setTimeout(() => t(!0), 0)
+      t(!0)
     }
-    return c.Z.subscribe("POST_CONNECTION_OPEN", e), () => {
-      c.Z.unsubscribe("POST_CONNECTION_OPEN", e)
+    return c.Z.subscribe("CHANGE_LOG_RESOLVED", e), () => {
+      c.Z.unsubscribe("CHANGE_LOG_RESOLVED", e)
     }
   }, []);
-  let P = i.useCallback(() => {
-    S && (0, l.ZDy)(async () => {
+  let w = i.useCallback(() => {
+    T && (0, l.ZDy)(async () => {
       let {
         DesktopRefreshOnboardingModal: e
       } = await n.e("49910").then(n.bind(n, 239191));
@@ -71,11 +72,16 @@ function S() {
     }, {
       backdropStyle: l.fCB.TOP_RADIAL,
       onCloseCallback: () => {
-        A(v.L.USER_DISMISS)
+        C(v.L.USER_DISMISS)
       }
     })
-  }, [S, A]);
+  }, [T, C]);
   i.useEffect(() => {
-    S && C && !O && e && P()
-  }, [e, O, C, S, P])
+    if (T && R && !O && e) {
+      let e = setTimeout(() => {
+        w()
+      }, S);
+      return () => clearTimeout(e)
+    }
+  }, [e, O, R, T, w])
 }

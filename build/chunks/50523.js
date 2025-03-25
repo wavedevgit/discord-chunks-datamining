@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   b: () => E
 }), n(653041), n(266796);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   a = n(100527),
   o = n(906732),
-  l = n(783097),
-  s = n(606192),
+  l = n(915346),
+  s = n(783097),
   c = n(812236),
   u = n(230171),
   d = n(758199),
@@ -20,8 +20,8 @@ var i = n(442837),
   _ = n(566620),
   b = n(317381),
   v = n(574952),
-  x = n(374065),
-  y = n(388032);
+  y = n(374065),
+  x = n(388032);
 
 function E(e) {
   var t, n;
@@ -37,15 +37,15 @@ function E(e) {
     },
     applicationId: E.id,
     botUserId: null == E ? void 0 : null === (n = E.bot) || void 0 === n ? void 0 : n.id
-  }), T = null != E && (0, l.ye)(E), P = null != I && T && S, {
+  }), T = null != E && (0, s.ye)(E), P = null != I && T && S, {
     analyticsLocations: A
-  } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), w = (0, i.e7)([f.Z], () => f.Z.getChannelId()), Z = (0, x.KF)(w), k = (0, i.e7)([b.ZP], () => {
+  } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), w = (0, i.e7)([f.Z], () => f.Z.getChannelId()), Z = (0, y.KF)(w), k = (0, i.e7)([b.ZP], () => {
     if (null == w) return;
     let e = b.ZP.getEmbeddedActivitiesForChannel(w).filter(e => e.applicationId === E.id);
     return e.length > 0 ? e[0].compositeInstanceId : void 0
-  }), R = (0, i.e7)([b.ZP], () => b.ZP.getCurrentEmbeddedActivity()), D = (0, v.Z)(), L = Z === x.jy.CAN_LAUNCH, M = null != O ? O : N.custom_id, W = null != C ? C : N.referrer_id, U = [];
+  }), R = (0, i.e7)([b.ZP], () => b.ZP.getCurrentEmbeddedActivity()), D = (0, v.Z)(), L = Z === y.jy.CAN_LAUNCH, M = null != O ? O : N.custom_id, W = null != C ? C : N.referrer_id, U = [];
   L && U.push({
-    label: null == k ? y.NW.string(y.t.cnBQPD) : y.NW.string(y.t.VJlc0d),
+    label: null == k ? x.NW.string(x.t.cnBQPD) : x.NW.string(x.t.VJlc0d),
     trackingArea: p.j_.PLAY,
     onClick() {
       (0, _.G6)({
@@ -59,12 +59,12 @@ function E(e) {
         analyticsLocations: A
       })
     },
-    disabledReason: null != k && (null == R ? void 0 : R.compositeInstanceId) === k ? y.NW.string(y.t.wJNK8P) : void 0
+    disabledReason: null != k && (null == R ? void 0 : R.compositeInstanceId) === k ? x.NW.string(x.t.wJNK8P) : void 0
   }), P && U.push({
-    label: null != N.primary_cta ? N.primary_cta : y.NW.string(y.t.JeK1Wl),
+    label: null != N.primary_cta ? N.primary_cta : x.NW.string(x.t.JeK1Wl),
     trackingArea: p.j_.PLAY,
     onClick() {
-      (0, s.W)({
+      (0, l.W)({
         appId: E.id,
         botId: I,
         analyticsLocations: A,

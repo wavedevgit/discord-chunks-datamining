@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => S
 }), n(977457), n(47120);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(594174),
   b = n(739566),
   v = n(981631),
-  x = n(665692),
-  y = n(388032),
+  y = n(665692),
+  x = n(388032),
   E = n(956355);
 
 function O(e) {
@@ -141,7 +141,7 @@ let S = i.memo(function(e) {
                   section: v.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                 }
               }),
-              children: [x.ME, e.nick]
+              children: [y.ME, e.nick]
             }))
           }
           break
@@ -150,7 +150,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = h.Z.getChannel(e);
           null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
-            children: [x.zy, t.name]
+            children: [y.zy, t.name]
           })));
           break
         }
@@ -158,7 +158,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
           null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
-            children: [x.ME, t.name]
+            children: [y.ME, t.name]
           })));
           break
         }
@@ -166,7 +166,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
           if (null != t) E = (0, r.jsxs)(m.Z, {
-            children: [x.ME, t.name]
+            children: [y.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
@@ -180,14 +180,14 @@ let S = i.memo(function(e) {
                     section: v.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                   }
                 }),
-                children: [x.ME, e.nick]
+                children: [y.ME, e.nick]
               }))
             }
           }
           break
         }
         case c.jw.ATTACHMENT:
-          E = I(y.NW.string(y.t.nONJVV));
+          E = I(x.NW.string(x.t.nONJVV));
           break;
         default: {
           let e = null == Z ? void 0 : null === (u = Z.choices) || void 0 === u ? void 0 : u.find(e => e.value === S.value);

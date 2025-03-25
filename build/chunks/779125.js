@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => v
 });
@@ -25,8 +25,8 @@ function v(e) {
     channel: t,
     onClick: n,
     beforeTransition: v,
-    className: x,
-    openChatWithoutConnecting: y
+    className: y,
+    openChatWithoutConnecting: x
   } = e, E = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
   return (0, r.jsx)(a.ua7, {
     text: E,
@@ -38,7 +38,7 @@ function v(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         role: "link",
-        className: x,
+        className: y,
         onClick: e => {
           e.stopPropagation(), null != n ? n() : (null != v && v(), (0, a.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -59,7 +59,7 @@ function v(e) {
               l.default.selectVoiceChannel(i.id);
               return
             }(0, u.uL)(b.Z5c.CHANNEL(e, t))
-          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, y))
+          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, x))
         },
         onMouseEnter: i,
         onMouseLeave: s,

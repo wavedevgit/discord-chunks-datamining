@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   $: () => w,
   Z: () => A
@@ -19,8 +19,8 @@ var r, i = n(200651),
   _ = n(812206),
   b = n(283595),
   v = n(558314),
-  x = n(55563),
-  y = n(551428),
+  y = n(55563),
+  x = n(551428),
   E = n(73346),
   O = n(981631),
   N = n(388032),
@@ -200,18 +200,18 @@ class I extends(r = a.Component) {
 C(I, "defaultProps", {
   renderFallback: O.dG4
 });
-let S = [x.Z, v.Z, b.Z, y.Z];
+let S = [y.Z, v.Z, b.Z, x.Z];
 
 function T(e) {
   let {
     skuId: t
-  } = e, n = x.Z.get(t), r = null != n ? _.Z.getApplication(n.applicationId) : null;
+  } = e, n = y.Z.get(t), r = null != n ? _.Z.getApplication(n.applicationId) : null;
   return {
     sku: n,
     application: r,
-    fetchFailed: x.Z.didFetchingSkuFail(t),
+    fetchFailed: y.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, !0),
-    storeListing: null != n ? y.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? x.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }

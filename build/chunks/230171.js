@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   O: () => k,
   U: () => S.Un
@@ -13,15 +13,15 @@ var r = n(200651),
   u = n(574952),
   d = n(100527),
   p = n(906732),
-  m = n(783097),
-  f = n(606192),
+  m = n(915346),
+  f = n(783097),
   h = n(812236),
   g = n(561308),
   _ = n(567409),
   b = n(706454),
   v = n(314897),
-  x = n(699516),
-  y = n(914010),
+  y = n(699516),
+  x = n(914010),
   E = n(594174),
   O = n(768581),
   N = n(135431),
@@ -46,7 +46,7 @@ function k(e) {
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), x = null == b ? void 0 : b.id, y = (0, m.ye)(t), E = O.ZP.getApplicationIconURL({
+  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, x = (0, f.ye)(t), E = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
@@ -67,7 +67,7 @@ function k(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), H = null != x && y && G, V = F && y && G, z = (0, A.z)(t), K = i.useMemo(() => {
+  }), H = null != y && x && G, V = F && x && G, z = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return V && e.push({
       label: null == W ? w.NW.string(w.t.cnBQPD) : w.NW.string(w.t.VJlc0d),
@@ -89,16 +89,16 @@ function k(e) {
       label: w.NW.string(w.t.JeK1Wl),
       trackingArea: S.j_.PLAY,
       onClick() {
-        (0, f.W)({
+        (0, m.W)({
           appId: t.id,
-          botId: x,
+          botId: y,
           analyticsLocations: L,
           customId: o,
           referrerId: k
         })
       }
     }), null != z && e.push(z), e
-  }, [V, H, z, W, U, M, t.id, B, o, k, L, x]), Y = y ? (0, r.jsx)(D, {
+  }, [V, H, z, W, U, M, t.id, B, o, k, L, y]), Y = x ? (0, r.jsx)(D, {
     app: t
   }) : (0, r.jsx)(R, {
     app: t
@@ -167,15 +167,15 @@ function D(e) {
   } = e, {
     tags: n,
     maxParticipants: a
-  } = t, c = (0, l.e7)([y.Z], () => {
+  } = t, c = (0, l.e7)([x.Z], () => {
     var e;
-    return null !== (e = y.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }, []), u = (0, _.Ns)(t.id), d = (0, l.Wu)([E.default, x.Z], () => {
+    return null !== (e = x.Z.getGuildId()) && void 0 !== e ? e : void 0
+  }, []), u = (0, _.Ns)(t.id), d = (0, l.Wu)([E.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
       let r = E.default.getUser(n.author_id),
-        i = x.Z.isFriend(n.author_id);
+        i = y.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }
     return e

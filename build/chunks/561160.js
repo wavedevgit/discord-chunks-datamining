@@ -18,12 +18,12 @@ function p(e) {
     searchQuery: t,
     textContent: n,
     type: p
-  } = e, m = (0, a.Q3)("AppLauncherEmptyState"), f = (0, o.ZP)(), h = (0, l.ap)(f) ? d : u;
+  } = e, m = (0, a.Q3)("AppLauncherEmptyState"), h = (0, o.ZP)(), f = (0, l.ap)(h) ? d : u;
   return (0, s.Bm)(p, t), (0, i.jsxs)("div", {
     className: c.emptyStateContainer,
     children: [m ? null : (0, i.jsx)("img", {
       className: c.emptyStateImage,
-      src: h,
+      src: f,
       alt: "empty state"
     }), (0, i.jsx)(r.Text, {
       variant: "text-md/medium",

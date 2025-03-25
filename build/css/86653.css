@@ -1,6 +1,6 @@
 /**
   Module ID: 86653
-  Original File Name: f0acd4b88c292d4e
+  Original File Name: 5c8f59a483179d24
 **/
 .root__2a5c7 {
     position: relative;
@@ -9,6 +9,10 @@
     border-radius: 12px;
     background: var(--black);
     overflow: hidden
+}
+
+.visual-refresh .root__2a5c7 {
+    border: none
 }
 
 .heroAsset__2a5c7 {
@@ -158,4 +162,4 @@
     color: var(--black-500)
 }
 
-/*# sourceMappingURL=f0acd4b88c292d4e.css.map*/
+/*# sourceMappingURL=5c8f59a483179d24.css.map*/

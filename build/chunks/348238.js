@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   $3: () => V,
   Go: () => B,
@@ -34,8 +34,8 @@ var r = n(200651),
   _ = n(375954),
   b = n(594174),
   v = n(585483),
-  x = n(5967),
-  y = n(630388),
+  y = n(5967),
+  x = n(630388),
   E = n(358085),
   O = n(51144),
   N = n(91047),
@@ -114,7 +114,7 @@ function M(e, t, a, l) {
   } = t, {
     id: u,
     flags: d
-  } = e, p = (0, y.yE)(d, C.iLy.EPHEMERAL), m = (0, c.bp)();
+  } = e, p = (0, x.yE)(d, C.iLy.EPHEMERAL), m = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
     if (!E.isPlatformEmbedded) {
@@ -245,18 +245,18 @@ function G(e) {
         h: a
       }, !1, d.LL.UserTriggered)
     }
-  }, [t, n])), [b, x] = i.useState(o);
+  }, [t, n])), [b, y] = i.useState(o);
   g.current = b || g.current;
-  let y = i.useCallback(e => {
-      s && (0, f.T6)(), b || (v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), x(!0))
+  let x = i.useCallback(e => {
+      s && (0, f.T6)(), b || (v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
     }, [b, h, s, _]),
     E = i.useCallback(() => {
-      v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !1), x(!1)
+      v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
     }, [h]);
   return {
     hasHovered: g.current,
     isHovered: b,
-    handleMouseEnter: y,
+    handleMouseEnter: x,
     handleMouseLeave: E
   }
 }
@@ -266,12 +266,12 @@ function H(e, t) {
   return {
     handleFocus: i.useCallback(t => {
       var n, i;
-      let a = null !== (i = null === (n = (0, x.uB)(t)) || void 0 === n ? void 0 : n.activeElement) && void 0 !== i ? i : null;
+      let a = null !== (i = null === (n = (0, y.uB)(t)) || void 0 === n ? void 0 : n.activeElement) && void 0 !== i ? i : null;
       (t.target === t.currentTarget || t.currentTarget.contains(a)) && (o(!0), r(!0)), null != e && e(t)
     }, [e]),
     handleBlur: i.useCallback(e => {
       var n, i;
-      let a = null !== (i = null === (n = (0, x.uB)(e)) || void 0 === n ? void 0 : n.activeElement) && void 0 !== i ? i : null;
+      let a = null !== (i = null === (n = (0, y.uB)(e)) || void 0 === n ? void 0 : n.activeElement) && void 0 !== i ? i : null;
       e.target !== e.currentTarget && e.currentTarget.contains(a) || r(!1), null != t && t(e)
     }, [t]),
     isFocused: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => F
 });
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(100527),
   b = n(906732),
   v = n(783097),
-  x = n(581364),
-  y = n(592180),
+  y = n(581364),
+  x = n(592180),
   E = n(347475),
   O = n(598077),
   N = n(768581),
@@ -101,8 +101,8 @@ function L(e, t, n, i, a) {
     showTargetAvatarPopout: _,
     onClickAvatar: b,
     onUserContextMenu: v,
-    onClickTargetAvatar: x,
-    onTargetUserContextMenu: y,
+    onClickTargetAvatar: y,
+    onTargetUserContextMenu: x,
     onPopoutRequestClose: E
   } = e;
   if (p && 1 === n) return null;
@@ -141,8 +141,8 @@ function L(e, t, n, i, a) {
       user: t,
       guildId: m.guild_id,
       guildAvatar: O,
-      onClick: 1 === n ? x : b,
-      onContextMenu: 1 === n ? y : v
+      onClick: 1 === n ? y : b,
+      onContextMenu: 1 === n ? x : v
     }),
     C = 1 === n ? _ : g;
   return null != a && null != C ? (0, r.jsx)(d.yRy, {
@@ -215,7 +215,7 @@ function F(e) {
     channel: l,
     messageId: a.id,
     interactionData: a.interactionData
-  }))), [l, a.id, a.interactionData]), S = (0, x.t0)(a), D = (null == S ? void 0 : S.type) === p.B8.APPLICATION_COMMAND && null != S.target_user ? new O.Z(S.target_user) : null, F = (null == S ? void 0 : S.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage, B = (0, I.Sw)(null === (t = a.interaction) || void 0 === t ? void 0 : t.user, l), G = (0, I.Sw)(D, l), H = i.useMemo(() => e.compact ? (0, P.Z)((0, C.vc)(u()(), "LT")) : null, [e.compact]), V = (0, f.NX)(l.id), z = a.interaction;
+  }))), [l, a.id, a.interactionData]), S = (0, y.t0)(a), D = (null == S ? void 0 : S.type) === p.B8.APPLICATION_COMMAND && null != S.target_user ? new O.Z(S.target_user) : null, F = (null == S ? void 0 : S.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage, B = (0, I.Sw)(null === (t = a.interaction) || void 0 === t ? void 0 : t.user, l), G = (0, I.Sw)(D, l), H = i.useMemo(() => e.compact ? (0, P.Z)((0, C.vc)(u()(), "LT")) : null, [e.compact]), V = (0, f.NX)(l.id), z = a.interaction;
   if (null == z || null == B) return null;
   let K = () => {
     let t = L(e, z.user, 0, B, e => m(e, z.user, [_.Z.AVATAR])),
@@ -224,7 +224,7 @@ function F(e) {
       children: [t, n]
     }, "user")
   };
-  if ((null == a ? void 0 : a.activityInstance) === null || (0, y.g)(a)) n = w.NW.format(w.t["rg7U+P"], {
+  if ((null == a ? void 0 : a.activityInstance) === null || (0, x.g)(a)) n = w.NW.format(w.t["rg7U+P"], {
     userHook: K,
     commandHook: () => {
       let t = function(e, t) {
@@ -274,7 +274,7 @@ function F(e) {
                 }), s]
               })
             }));
-            if (!(0, y.g)(i)) return (0, r.jsx)("div", {
+            if (!(0, x.g)(i)) return (0, r.jsx)("div", {
               className: Z.commandName,
               children: s
             });

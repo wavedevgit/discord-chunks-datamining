@@ -7,6 +7,7 @@ n.d(t, {
   D7: () => x,
   Dd: () => C,
   Ft: () => D,
+  TK: () => B,
   X0: () => k,
   XA: () => j,
   Z8: () => O,
@@ -291,6 +292,7 @@ function x(e) {
     case p.bB.ACTIVITIES_HOME:
     case p.bB.ACTIVITY_INSTANCE_EMBED:
     case p.bB.ACTIVITY_BOOKMARK_EMBED:
+    case p.bB.APP_MESSAGE_EMBED:
     case p.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON:
     case p.bB.IMAGE_RECS_MENU:
     case p.bB.IMAGE_RECS_SUBMENU:
@@ -355,4 +357,10 @@ function U(e) {
 function G(e) {
   let t = e.interactionMetadata;
   return null == t ? null : "triggering_interaction_metadata" in t ? t.triggering_interaction_metadata : t
+}
+
+function B(e, t) {
+  var n;
+  let r = null === (n = t.result) || void 0 === n ? void 0 : n.sections;
+  return null != r && e in r
 }

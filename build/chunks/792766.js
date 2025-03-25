@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => b,
   y: () => _
@@ -102,10 +102,10 @@ let g = e => {
     } = e, v = i.useMemo(() => null == a ? null : a instanceof p.ZP ? a : new p.ZP(a), [a]);
     if (null == n || null == v) return null;
     let {
-      topic: x,
-      speaker_count: y,
+      topic: y,
+      speaker_count: x,
       participant_count: E
-    } = n, O = null !== (t = n.members) && void 0 !== t ? t : [], N = _ ? O.slice(0, 3) : O, j = y - N.length;
+    } = n, O = null !== (t = n.members) && void 0 !== t ? t : [], N = _ ? O.slice(0, 3) : O, j = x - N.length;
     return _ && (j += O.length - N.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
@@ -160,7 +160,7 @@ let g = e => {
         className: o()(h.header, {
           [h.embed]: _
         }),
-        children: x
+        children: y
       }), (0, r.jsxs)("div", {
         className: o()(h.members, {
           [h.embed]: _

@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
@@ -38,7 +38,7 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+let x = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
   E = e => {
     null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: _.cd.STICKER_IN_MESSAGE_HOVER,
@@ -84,7 +84,7 @@ let y = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         onRequestClose: () => {
           d(!0)
         },
-        renderPopout: e => (0, r.jsx)(h.Z, x(v({}, e), {
+        renderPopout: e => (0, r.jsx)(h.Z, y(v({}, e), {
           renderableSticker: t,
           channel: n,
           refreshPositionKey: () => g(String(Date.now()))
@@ -93,14 +93,14 @@ let y = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(o.ua7, x(v({}, u.b_), {
+          return (0, r.jsx)(o.ua7, y(v({}, u.b_), {
             shouldShow: s,
             text: (0, u.Y)(N),
             "aria-label": !1,
             onTooltipShow: () => {
               E(_)
             },
-            children: e => (0, r.jsx)(o.P3F, x(v({}, e), {
+            children: e => (0, r.jsx)(o.P3F, y(v({}, e), {
               className: b.clickableSticker,
               onClick: e => {
                 d(!s), n(e)
@@ -108,7 +108,7 @@ let y = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: a,
-                size: y,
+                size: x,
                 sticker: null != _ ? _ : t
               })
             }))

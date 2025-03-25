@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => U
 });
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(709054),
   b = n(594173),
   v = n(786761),
-  x = n(493892),
-  y = n(901461),
+  y = n(493892),
+  x = n(901461),
   E = n(739566),
   O = n(443877),
   N = n(492593),
@@ -102,7 +102,7 @@ let U = i.memo(function e(t) {
     message: K.message,
     channel: Y,
     hasThread: !1
-  })) : (g.Z.isBlockedForMessage(s) ? i = R.t["+FcYMz"] : g.Z.isIgnoredForMessage(s) ? i = R.t.VFWjc3 : (0, x.DQ)(s) && V && (i = R.t.xfkfTE), void 0 !== i) ? (0, r.jsx)(F, {
+  })) : (g.Z.isBlockedForMessage(s) ? i = R.t["+FcYMz"] : g.Z.isIgnoredForMessage(s) ? i = R.t.VFWjc3 : (0, y.DQ)(s) && V && (i = R.t.xfkfTE), void 0 !== i) ? (0, r.jsx)(F, {
     className: D,
     compact: Z,
     count: 1,
@@ -150,7 +150,7 @@ let U = i.memo(function e(t) {
     onClick: B,
     hasThread: !1 !== H && null != ea && s.hasFlag(k.iLy.HAS_THREAD),
     hasReply: s.type === k.uaV.REPLY,
-    isSystemMessage: (0, y.Z)(s),
+    isSystemMessage: (0, x.Z)(s),
     messageRef: es
   })
 });

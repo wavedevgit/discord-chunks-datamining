@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => I
 }), n(47120);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(695346),
   b = n(592125),
   v = n(655354),
-  x = n(324081),
-  y = n(791914),
+  y = n(324081),
+  x = n(791914),
   E = n(981631),
   O = n(388032),
   N = n(841097),
@@ -39,7 +39,7 @@ function I(e) {
   } = e, a = (0, c.e7)([g.Z], () => g.Z.getMessageReminders()), [o, l] = i.useState(!1), s = i.useMemo(() => a.filter(e => null == e.saveData.dueAt || e.saveData.dueAt < new Date), [a]), p = o ? a : s;
   return (0, r.jsxs)("div", {
     className: N.container,
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, r.jsx)(x.Z, {
       tab: u.X.TODOS,
       setTab: t,
       closePopout: n
@@ -78,14 +78,14 @@ function S(e) {
     g = () => {
       (0, f.uL)(E.Z5c.CHANNEL(null == u ? void 0 : u.getGuildId(), a.channelId, a.messageId))
     },
-    y = null;
-  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", y = O.NW.formatToPlainString(O.t.H4gnX1, {
+    x = null;
+  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", x = O.NW.formatToPlainString(O.t.H4gnX1, {
     duration: s().duration(a.dueAt.getTime() - Date.now(), "millisecond").humanize()
-  })) : (t = "text-danger", y = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
+  })) : (t = "text-danger", x = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
     duration: s().duration(Date.now() - a.dueAt.getTime(), "millisecond").humanize()
   }))), null == l || null == u) ? null : (0, r.jsxs)("div", {
     className: j.container,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(y.Z, {
       channel: u,
       gotoChannel: g,
       children: (0, r.jsxs)("div", {
@@ -99,10 +99,10 @@ function S(e) {
             size: "xxs",
             color: "currentColor"
           }), i.saveData.notes]
-        }) : null, null != y ? (0, r.jsx)(d.Text, {
+        }) : null, null != x ? (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: t,
-          children: y
+          children: x
         }) : null, (0, r.jsx)(d.DY3, {
           text: O.NW.string(O.t.GtBCn5),
           children: (0, r.jsx)(d.P3F, {

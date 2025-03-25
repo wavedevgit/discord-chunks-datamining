@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(197386),
   m = n(906732),
   h = n(279332),
-  g = n(783097),
-  f = n(606192),
+  g = n(915346),
+  f = n(783097),
   _ = n(299206),
   b = n(276022),
   v = n(703656),
@@ -279,7 +279,7 @@ let D = a.forwardRef(function(e, t) {
     var n;
     let r = e.id,
       i = null == e ? void 0 : null === (n = e.bot) || void 0 === n ? void 0 : n.id,
-      l = null != i && (0, g.BQ)(e) && (0, g.ye)(e),
+      l = null != i && (0, f.BQ)(e) && (0, f.ye)(e),
       [o, c] = a.useState(!1),
       d = (0, I.nu)(),
       m = (0, s.e7)([C.default], () => C.default.getCurrentUser()),
@@ -292,7 +292,7 @@ let D = a.forwardRef(function(e, t) {
         }
         c(!0);
         try {
-          await (0, f.W)({
+          await (0, g.W)({
             appId: n,
             botId: t,
             analyticsLocations: r

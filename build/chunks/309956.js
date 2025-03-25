@@ -13,23 +13,23 @@ let i = (e, t, n) => {
     enabled: i
   } = (0, a.W)({
     location: "useShopViewTransition"
-  }), c = r.useMemo(() => t !== o.AW.ORBS || i ? t : o.AW.HOME, [t, i]), [d, u] = r.useState(c), [g, f] = r.useState(o.f7.HIDDEN);
+  }), d = r.useMemo(() => t !== o.AW.ORBS || i ? t : o.AW.HOME, [t, i]), [c, u] = r.useState(d), [g, h] = r.useState(o.f7.HIDDEN);
   r.useEffect(() => {
-    u(c), f(o.f7.VISIBLE)
-  }, [c]);
-  let h = e => new Promise(t => setTimeout(t, e)),
+    u(d), h(o.f7.VISIBLE)
+  }, [d]);
+  let f = e => new Promise(t => setTimeout(t, e)),
     m = (0, l.k6)();
   return {
-    selectedTab: d,
+    selectedTab: c,
     transitionState: g,
     transitionToTab: r.useCallback(async (t, r) => {
-      r ? (f(o.f7.OUT), await h(1.1 * o.lb), u(t), n || m.push(s.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
+      r ? (h(o.f7.OUT), await f(1.1 * o.lb), u(t), n || m.push(s.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
         shallow: !0
-      }), f(o.f7.IN)) : (u(t), n || m.push(s.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
+      }), h(o.f7.IN)) : (u(t), n || m.push(s.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
         shallow: !0
       })), null != e.current && e.current.scrollTo({
         to: 0
-      }), f(o.f7.VISIBLE)
+      }), h(o.f7.VISIBLE)
     }, [m, n, e])
   }
 }

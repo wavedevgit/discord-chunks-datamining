@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   r: () => _
 });
@@ -48,8 +48,8 @@ class _ {
       _ = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.default,
       b = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Z,
       v = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.Z,
-      x = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : o.Z,
-      y = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : i.Z,
+      y = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : o.Z,
+      x = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : i.Z,
       {
         snapshotIndex: E,
         parentMessage: O,
@@ -76,7 +76,7 @@ class _ {
     if (null != S && S.guild_id === (null === (e = O.messageReference) || void 0 === e ? void 0 : e.guild_id)) {
       let e = h.getChannel(null === (n = O.messageReference) || void 0 === n ? void 0 : n.channel_id);
       if (null == e) {
-        let e = x.getGuild(S.guild_id);
+        let e = y.getGuild(S.guild_id);
         return null == e ? {
           snapshotIndex: E,
           useOldIcon: j
@@ -109,7 +109,7 @@ class _ {
       snapshotIndex: E,
       useOldIcon: j
     };
-    let P = null !== (u = x.getGuild(T)) && void 0 !== u ? u : y.getGuild(T);
+    let P = null !== (u = y.getGuild(T)) && void 0 !== u ? u : x.getGuild(T);
     return null == P ? {
       snapshotIndex: E,
       useOldIcon: j

@@ -34,23 +34,31 @@ class _ extends o.Z {
     super(...e), d(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
     }), d(this, "handleConnectionOpen", async e => {
-      let t = await i.Z.fetchChangelogConfig(),
-        n = t.body,
-        o = f(n, (0, c.b)());
-      if (r.Z.dispatch({
-          type: "CHANGE_LOG_SET_CONFIG",
-          config: t.body,
-          latestChangelogId: o
-        }), null == o || !0 !== n[o].show_on_startup) return;
-      let d = l.Z.lastSeenChangelogId(),
-        _ = l.Z.lastSeenChangelogDate();
-      if (null != d && 0 >= s.default.compare(o, d)) return;
-      let p = await i.Z.fetchChangelog(o, a.default.locale);
-      if (null != p) {
+      try {
+        let e = await i.Z.fetchChangelogConfig(),
+          t = e.body,
+          n = (0, c.b)(),
+          o = f(t, n);
+        if (r.Z.dispatch({
+            type: "CHANGE_LOG_SET_CONFIG",
+            config: e.body,
+            latestChangelogId: o
+          }), null == o || !0 !== t[o].show_on_startup) return;
+        let d = l.Z.lastSeenChangelogId(),
+          _ = l.Z.lastSeenChangelogDate();
+        if (null != d && 0 >= s.default.compare(o, d)) return;
+        let p = await i.Z.fetchChangelog(o, a.default.locale);
+        if (null == p) return;
         if (null == _ || null == l.Z.lastSeenChangelogDate()) {
           i.Z.markChangelogAsSeen(o, p.date);
           return
-        }!l.Z.isLocked() && new Date(p.date) > new Date(_) && (0, u.Z)()
+        }
+        if (l.Z.isLocked()) return;
+        new Date(p.date) > new Date(_) && (0, u.Z)()
+      } finally {
+        r.Z.dispatch({
+          type: "CHANGE_LOG_RESOLVED"
+        })
       }
     })
   }

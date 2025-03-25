@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => v
 }), n(47120), n(86693), n(536091);
@@ -24,13 +24,13 @@ function v(e) {
     message: t,
     channel: a,
     compact: v
-  } = e, x = (0, l.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [y, E] = i.useState(null);
+  } = e, y = (0, l.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, E] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      x.length > 0 && E(x[Math.floor(Math.random() * x.length)])
+      y.length > 0 && E(y[Math.floor(Math.random() * y.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [x]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [y]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
       className: o()(b.mainContainer, {
         [b.compact]: v
@@ -83,9 +83,9 @@ function v(e) {
               action_type: "sticker"
             }), (0, h.O)(t.id, a)
           },
-          children: null != y ? (0, r.jsx)(p.Z, {
+          children: null != x ? (0, r.jsx)(p.Z, {
             size: 32,
-            sticker: y
+            sticker: x
           }) : (0, r.jsx)(s.EO4, {
             size: "md",
             color: "currentColor"

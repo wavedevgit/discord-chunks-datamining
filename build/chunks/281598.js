@@ -21,7 +21,7 @@ let o = {
     "featured_block.png": "featured_block",
     "category_banner.jpg": "category_banner",
     "category_banner_animated.webm": "category_banner_animated",
-    "upsell_banner.png": "upsell_banner",
+    "upsell_banner.jpg": "upsell_banner",
     "upsell_banner_popout.png": "upsell_popout",
     "pdp_bg.jpg": "pdp_bg",
     "pdp_logo.png": "pdp_logo",

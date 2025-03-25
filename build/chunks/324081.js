@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => S
 });
@@ -20,8 +20,8 @@ var i = n(120356),
   _ = n(313201),
   b = n(565138),
   v = n(199902),
-  x = n(592125),
-  y = n(430824),
+  y = n(592125),
+  x = n(430824),
   E = n(158776),
   O = n(306680),
   N = n(594174),
@@ -127,7 +127,7 @@ function A(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id));
+  } = e, i = (0, l.e7)([x.Z], () => x.Z.getGuild(t.guild_id));
   return null == i ? null : (0, r.jsx)(b.Z, {
     "aria-hidden": !0,
     className: C.guildIcon,
@@ -144,7 +144,7 @@ function w(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id)), c = (0, l.e7)([x.Z], () => x.Z.getChannel(t.parent_id)), u = (0, l.e7)([O.ZP], () => O.ZP.getIsMentionLowImportance(t.id)), d = (0, h.KS)(t, o), p = (0, f.ZP)(t, !1), m = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? j.NW.formatToPlainString(j.t.CxSA5O, {
+  } = e, o = (0, l.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, l.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, l.e7)([O.ZP], () => O.ZP.getIsMentionLowImportance(t.id)), d = (0, h.KS)(t, o), p = (0, f.ZP)(t, !1), m = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? j.NW.formatToPlainString(j.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t

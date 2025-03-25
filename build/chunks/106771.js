@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(266796);
 var i = n(200651),
   l = n(192379),
@@ -13,19 +13,19 @@ var i = n(200651),
   d = n(753972),
   p = n(532309),
   m = n(78095),
-  f = n(413097);
+  h = n(413097);
 
-function h(e) {
+function f(e) {
   var t;
   let {
     command: n,
-    application: h,
+    application: f,
     onClick: v,
-    query: y,
-    searchResultsPosition: b
-  } = e, N = l.useCallback(e => {
-    if ((0, s.BQ)(h)) {
-      let t = h instanceof a.ZP ? h : a.ZP.createFromServer(h);
+    query: N,
+    searchResultsPosition: x
+  } = e, y = l.useCallback(e => {
+    if ((0, s.BQ)(f)) {
+      let t = f instanceof a.ZP ? f : a.ZP.createFromServer(f);
       (0, o.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -47,33 +47,33 @@ function h(e) {
         application: t
       }, e)))
     }
-  }, [h]), {
-    iconURL: g,
-    name: x,
+  }, [f]), {
+    iconURL: b,
+    name: g,
     description: j
-  } = l.useMemo(() => (0, s.sl)(h, {
-    fakeAppIconURL: f
-  }), [h]), E = l.useMemo(() => {
+  } = l.useMemo(() => (0, s.sl)(f, {
+    fakeAppIconURL: h
+  }), [f]), C = l.useMemo(() => {
     var e;
     let t = null !== (e = null == n ? void 0 : n.displayDescription) && void 0 !== e ? e : j;
     return null == t ? null : (0, c.ae)(t, void 0)
   }, [j, null == n ? void 0 : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: P
+    trackSearchResultsItemImpressionRef: E
   } = (0, p.Z)({
-    applicationId: h.id,
+    applicationId: f.id,
     commandId: null == n ? void 0 : n.id,
-    query: y,
-    searchResultsPosition: b
+    query: N,
+    searchResultsPosition: x
   });
   return (0, i.jsx)(r.P3F, {
     className: m.clickable,
-    innerRef: e => P.current = e,
+    innerRef: e => E.current = e,
     onClick: v,
-    onContextMenu: N,
+    onContextMenu: y,
     children: (0, i.jsxs)(r.Rny, {
       className: m.focusBlock,
       children: [(0, i.jsx)(d.Z, {
-        src: g,
+        src: b,
         className: m.icon,
         "aria-hidden": !0,
         rendersPlaceholder: !0
@@ -83,18 +83,18 @@ function h(e) {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
-          children: null !== (t = null == n ? void 0 : n.displayName) && void 0 !== t ? t : x
+          children: null !== (t = null == n ? void 0 : n.displayName) && void 0 !== t ? t : g
         }), (0, i.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: E
+          children: C
         })]
       }), null != n ? (0, i.jsx)(r.Text, {
         className: m.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: x
+        children: g
       }) : null, (0, i.jsx)("div", {
         className: m.underline
       })]

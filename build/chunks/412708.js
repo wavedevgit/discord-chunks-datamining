@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 e.exports = {
   tooltipTextContainer: "tooltipTextContainer__0ca35",
   nitroWheel: "nitroWheel__0ca35",

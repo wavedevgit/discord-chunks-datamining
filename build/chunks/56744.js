@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => f
 });
@@ -27,10 +27,10 @@ let m = i.memo(function(e) {
   } = (0, a.cj)([s.Z], () => ({
     isReplyAuthorBlocked: null != f && s.Z.isBlockedForMessage(f),
     isReplyAuthorIgnored: null != f && s.Z.isIgnoredForMessage(f)
-  }), [f]), v = (0, u.Uj)(f), x = (0, u.Uj)(t);
+  }), [f]), v = (0, u.Uj)(f), y = (0, u.Uj)(t);
   return (0, r.jsx)(d.Z, {
     repliedAuthor: v,
-    baseAuthor: x,
+    baseAuthor: y,
     baseMessage: t,
     channel: n,
     referencedMessage: p,

@@ -7,7 +7,7 @@ var i = n(200651),
   r = n(481060),
   o = n(626135),
   a = n(827498),
-  s = n(606192),
+  s = n(915346),
   c = n(981631),
   u = n(388032);
 
@@ -17,11 +17,11 @@ function d(e) {
     applicationId: n,
     buttonSize: d,
     analyticsLocations: p
-  } = e, [m, f] = l.useState(!1), h = l.useRef(null), v = l.useCallback(async () => {
+  } = e, [m, h] = l.useState(!1), f = l.useRef(null), v = l.useCallback(async () => {
     o.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
       button_action: a._y.OPEN_APP_DM
-    }), f(!0);
+    }), h(!0);
     try {
       await (0, s.W)({
         appId: n,
@@ -29,7 +29,7 @@ function d(e) {
         analyticsLocations: p
       })
     } catch (e) {}
-    clearTimeout(h.current), f(!1)
+    clearTimeout(f.current), h(!1)
   }, [t, n, p]);
   return (0, i.jsx)(r.zxk, {
     type: "submit",

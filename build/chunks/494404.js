@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   ZP: () => L,
   h4: () => w,
@@ -21,8 +21,8 @@ var r = n(200651),
   _ = n(294218),
   b = n(703656),
   v = n(210887),
-  x = n(592125),
-  y = n(375954),
+  y = n(592125),
+  x = n(375954),
   E = n(496675),
   O = n(933429),
   N = n(451478),
@@ -163,8 +163,8 @@ function D(e) {
     renderHeader: m,
     renderEmptyState: _,
     renderItem: b,
-    getProTip: x,
-    scrollerClassName: y,
+    getProTip: y,
+    scrollerClassName: x,
     className: E,
     listName: w
   } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, u.e7)([O.ZP], () => O.ZP.hasNotice()), D = (0, u.e7)([N.Z], () => N.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
@@ -222,7 +222,7 @@ function D(e) {
     className: T.scrollingFooterWrap,
     children: _(v.Z.theme)
   }));
-  let B = null == x ? void 0 : x(),
+  let B = null == y ? void 0 : y(),
     G = U && null != B ? (0, r.jsx)("div", {
       className: T.footer,
       children: (0, r.jsx)(h.Z, {
@@ -248,7 +248,7 @@ function D(e) {
     children: (0, r.jsxs)(d.y5t, {
       component: m(),
       children: [(0, r.jsxs)(d.Den, {
-        className: o()(T.messagesPopout, y),
+        className: o()(T.messagesPopout, x),
         onScroll: V ? M : void 0,
         ref: Z,
         children: [(0, r.jsx)(c.bG, {
@@ -325,8 +325,8 @@ function L(e) {
     className: N,
     onCloseMessage: j,
     listName: C
-  } = e, P = (0, u.e7)([y.Z], () => {
-    let e = null != a ? y.Z.getMessages(a.id) : null;
+  } = e, P = (0, u.e7)([x.Z], () => {
+    let e = null != a ? x.Z.getMessages(a.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
 
@@ -353,7 +353,7 @@ function L(e) {
       confirmText: S.NW.string(S.t.BddRzc)
     });
     else if (!P) {
-      let e = x.Z.getChannel(l);
+      let e = y.Z.getChannel(l);
       null != e && (m.Z.trackJump(l, r, t), (0, b.uL)(I.Z5c.CHANNEL(e.getGuildId(), l, r))), null == d || d(n)
     }
   }

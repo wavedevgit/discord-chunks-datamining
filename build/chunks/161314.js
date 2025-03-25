@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => j
 }), n(47120), n(266796);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(430824),
   b = n(626135),
   v = n(76535),
-  x = n(866104),
-  y = n(886176),
+  y = n(866104),
+  x = n(886176),
   E = n(981631),
   O = n(388032),
   N = n(952626);
@@ -68,13 +68,13 @@ function j(e) {
     children: (0, r.jsx)(u.$jN, {})
   }) : null == a || null == C ? null : (0, r.jsxs)("div", {
     className: N.guildShopEmbed,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(y.Z, {
       coverImageAsset: null !== (t = C.cover_image_asset) && void 0 !== t ? t : null
     }), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
       className: N.serverShopLabel,
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(x.Z, {
         height: "16px",
         width: "16px",
         color: s.Z.INTERACTIVE_NORMAL
@@ -131,7 +131,7 @@ function j(e) {
         onClick: T,
         children: (0, r.jsxs)("div", {
           className: N.guildShopEmbedCtaContent,
-          children: [(0, r.jsx)(y.Z, {
+          children: [(0, r.jsx)(x.Z, {
             height: "18px",
             width: "18px"
           }), (0, r.jsx)(u.Text, {

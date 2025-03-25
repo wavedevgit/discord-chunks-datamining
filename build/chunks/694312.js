@@ -16,24 +16,24 @@ var i = n(192379),
 function m(e, t) {
   let n = (0, l.e7)([a.default], a.default.getCurrentUser),
     m = (0, l.Wu)([d.ZP], () => d.ZP.getShelfActivities(e)),
-    f = (0, l.e7)([s.Z], () => s.Z.testModeEmbeddedApplicationId),
-    h = m.map(e => e.application_id),
-    v = null != f ? [f, ...h] : h,
-    y = (0, o.Z)(v),
-    b = "channel" in t && (0, r.aZ)(t.channel, "useActivityShelfData()"),
-    N = i.useMemo(() => y.filter(c.lm), [y]),
-    g = i.useMemo(() => null != f && N.length > 0 && N[0].id === f && null != N[0].embeddedActivityConfig ? [{
-      activity: N[0].embeddedActivityConfig,
-      application: N[0]
-    }] : [], [N, f]),
-    x = i.useMemo(() => m.map(e => {
-      let t = N.find(t => t.id === e.application_id);
+    h = (0, l.e7)([s.Z], () => s.Z.testModeEmbeddedApplicationId),
+    f = m.map(e => e.application_id),
+    v = null != h ? [h, ...f] : f,
+    N = (0, o.Z)(v),
+    x = "channel" in t && (0, r.aZ)(t.channel, "useActivityShelfData()"),
+    y = i.useMemo(() => N.filter(c.lm), [N]),
+    b = i.useMemo(() => null != h && y.length > 0 && y[0].id === h && null != y[0].embeddedActivityConfig ? [{
+      activity: y[0].embeddedActivityConfig,
+      application: y[0]
+    }] : [], [y, h]),
+    g = i.useMemo(() => m.map(e => {
+      let t = y.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(c.lm), [m, N]);
-  return i.useMemo(() => [...g, ...x].filter(e => {
+    }).filter(c.lm), [m, y]);
+  return i.useMemo(() => [...b, ...g].filter(e => {
     var t;
     let {
       activity: n
@@ -44,5 +44,5 @@ function m(e, t) {
       activity: t
     } = e;
     return !t.requires_age_gate || (null == n ? void 0 : n.nsfwAllowed) === !0 || (null == n ? void 0 : n.nsfwAllowed) == null
-  }).filter(e => !b || e.application.id !== r.gu), [null == n ? void 0 : n.nsfwAllowed, x, b, g])
+  }).filter(e => !x || e.application.id !== r.gu), [null == n ? void 0 : n.nsfwAllowed, g, x, b])
 }

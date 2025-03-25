@@ -13,20 +13,20 @@ var i = n(200651),
   d = n(311819),
   p = n(299206),
   m = n(726721),
-  f = n(726521),
-  h = n(973616),
+  h = n(726521),
+  f = n(973616),
   v = n(914010),
-  y = n(594174),
-  b = n(626135),
-  N = n(572004),
-  g = n(630388),
-  x = n(135431),
+  N = n(594174),
+  x = n(626135),
+  y = n(572004),
+  b = n(630388),
+  g = n(135431),
   j = n(541099),
-  E = n(783097),
-  P = n(570949),
-  C = n(314734),
-  O = n(981631),
-  A = n(388032),
+  C = n(783097),
+  E = n(570949),
+  P = n(314734),
+  A = n(981631),
+  O = n(388032),
   I = n(75840);
 
 function _(e) {
@@ -55,41 +55,41 @@ function S(e) {
     context: S,
     className: T,
     sectionName: L
-  } = e, Z = (0, o.e7)([j.Z], () => j.Z.entrypoint()), R = (0, E.L1)(l), w = (0, x.Eb)(R), k = (0, u.R)(l.id), M = (0, o.e7)([v.Z], () => {
+  } = e, R = (0, o.e7)([j.Z], () => j.Z.entrypoint()), Z = (0, C.L1)(l), w = (0, g.Eb)(Z), k = (0, u.R)(l.id), M = (0, o.e7)([v.Z], () => {
     var e;
     return null !== (e = v.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }, []), D = {
+  }, []), W = {
     location: c.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: l.id,
     section_name: L,
     source: j.Z.lastShownEntrypoint()
-  }, W = y.default.getCurrentUser(), U = m.Z.useExperiment({
+  }, U = N.default.getCurrentUser(), D = m.Z.useExperiment({
     location: c.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU
   }, {
     autoTrackExposure: !0
   }).enabled, H = (0, p.Z)({
     id: l.id,
-    label: A.NW.string(A.t["+NP/b2"])
-  }), V = (0, P.P)({
+    label: O.NW.string(O.t["+NP/b2"])
+  }), V = (0, E.P)({
     application: l
-  }), B = (0, g.yE)(null !== (t = l.flags) && void 0 !== t ? t : 0, O.udG.EMBEDDED), F = "channel" === S.type ? S.channel : void 0;
+  }), B = (0, b.yE)(null !== (t = l.flags) && void 0 !== t ? t : 0, A.udG.EMBEDDED), F = "channel" === S.type ? S.channel : void 0;
   return (0, i.jsxs)("div", {
     className: I.container,
     children: [(0, i.jsx)(a.P3F, {
       onClick: () => {
         let e = B ? (0, d.H)({
           applicationId: l.id,
-          referrerId: null == W ? void 0 : W.id
+          referrerId: null == U ? void 0 : U.id
         }) : (0, d.J)(_({
           id: l.id
-        }, R));
-        (0, N.JG)(e), b.default.track(O.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        }, Z));
+        (0, y.JG)(e), x.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
-          source: Z
-        }), (0, a.showToast)((0, a.createToast)(A.NW.string(A.t["L/PwZW"]), a.ToastType.SUCCESS))
+          source: R
+        }), (0, a.showToast)((0, a.createToast)(O.NW.string(O.t["L/PwZW"]), a.ToastType.SUCCESS))
       },
       className: r()(I.clickable, T),
-      "aria-label": A.NW.string(A.t.WqhZsr),
+      "aria-label": O.NW.string(O.t.WqhZsr),
       children: (0, i.jsx)(a.xPt, {
         size: "sm",
         color: a.TVs.colors.INTERACTIVE_ACTIVE
@@ -100,15 +100,15 @@ function S(e) {
           closePopout: t
         } = e;
         return (0, i.jsxs)(a.v2r, {
-          className: C.NN,
+          className: P.NN,
           navId: "app-details-more-menu",
           onClose: t,
-          "aria-label": A.NW.string(A.t.AXIHpa),
+          "aria-label": O.NW.string(O.t.AXIHpa),
           onSelect: void 0,
           children: [(0, i.jsxs)(a.kSQ, {
             children: [k && (0, i.jsx)(a.sNh, {
               id: "open-storefront",
-              label: A.NW.string(A.t.kRvlKC),
+              label: O.NW.string(O.t.kRvlKC),
               action: () => {
                 (0, a.ZDy)(async () => {
                   let {
@@ -124,15 +124,15 @@ function S(e) {
               }
             }), w ? (0, i.jsx)(a.sNh, {
               id: "add-app",
-              label: A.NW.string(A.t.NgXl3N),
+              label: O.NW.string(O.t.NgXl3N),
               action: () => {
                 var e, t;
-                null == R.customInstallUrl && (0, s.yw)(O.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, D), (0, x.LO)((e = _({}, R), t = t = {
+                null == Z.customInstallUrl && (0, s.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, W), (0, g.LO)((e = _({}, Z), t = t = {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, s.yw)(O.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, D)
+                    null != t && (0, s.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, W)
                   },
                   source: "app_launcher_app_details"
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -146,13 +146,13 @@ function S(e) {
                   Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
                 }), e))
               }
-            }) : null, U && l instanceof h.ZP ? (0, i.jsx)(a.sNh, {
+            }) : null, D && l instanceof f.ZP ? (0, i.jsx)(a.sNh, {
               id: "report-app",
               color: "danger",
-              label: A.NW.string(A.t.jhJze3),
+              label: O.NW.string(O.t.jhJze3),
               action: () => {
                 var e;
-                (0, f.uu)({
+                (0, h.uu)({
                   application: l,
                   entrypoint: "app_launcher",
                   contextualGuildId: null !== (e = null == F ? void 0 : F.getGuildId()) && void 0 !== e ? e : void 0,
@@ -170,7 +170,7 @@ function S(e) {
       children: e => (0, i.jsx)(a.P3F, {
         onClick: e.onClick,
         className: r()(I.clickable, T),
-        "aria-label": A.NW.string(A.t.UKOtz8),
+        "aria-label": O.NW.string(O.t.UKOtz8),
         children: (0, i.jsx)(a.xhG, {
           size: "sm",
           color: a.TVs.colors.INTERACTIVE_ACTIVE

@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   F: () => k,
   P: () => Z
@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(509545),
   b = n(238),
   v = n(55563),
-  x = n(551428),
-  y = n(626135),
+  y = n(551428),
+  x = n(626135),
   E = n(572004),
   O = n(601911),
   N = n(504211),
@@ -31,12 +31,12 @@ var r = n(200651),
   S = n(979007),
   T = n(388032),
   P = n(968136);
-let A = (0, l.Kb)([v.Z, x.Z, _.Z], {
+let A = (0, l.Kb)([v.Z, y.Z, _.Z], {
     queryId: e => null != e ? ["SKU", e] : null,
     get: e => {
       if (null == e) return;
       let t = v.Z.get(e),
-        n = x.Z.getForSKU(e);
+        n = y.Z.getForSKU(e);
       if (null == t || null == n) return;
       let r = _.Z.getForSKU(e);
       return {
@@ -65,7 +65,7 @@ function Z(e) {
   let {
     appId: t,
     message: a
-  } = e, o = (0, j.R)(t), [u, d, f, h, _, v, x] = (0, l.Wu)([p.Z, b.Z, g.Z], () => {
+  } = e, o = (0, j.R)(t), [u, d, f, h, _, v, y] = (0, l.Wu)([p.Z, b.Z, g.Z], () => {
     var e;
     let n = p.Z.getApplication(t),
       r = null != n ? (0, O.y)(n, 45) : void 0,
@@ -109,16 +109,16 @@ function Z(e) {
     onLinkCopy: () => {
       (0, N.X)(t, N.B.STORE_EMBED)
     },
-    iconSrc: x,
+    iconSrc: y,
     onIconClick: () => {
-      w(), y.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      w(), x.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
     children: (0, r.jsx)(s.zxk, {
       onClick: () => {
-        w(), y.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+        w(), x.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
           application_id: t,
           area: "open_store_button"
         })
@@ -155,7 +155,7 @@ function k(e) {
     }
   }(c, o), {
     data: v
-  } = (0, d.IX)(null == m ? void 0 : m.applicationId), x = (0, l.e7)([g.Z], () => {
+  } = (0, d.IX)(null == m ? void 0 : m.applicationId), y = (0, l.e7)([g.Z], () => {
     var e;
     return null === (e = g.Z.getBasicChannel(u.channel_id)) || void 0 === e ? void 0 : e.guild_id
   }, [u]), E = i.useMemo(() => null != v ? (0, O.y)(v, 45) : void 0, [v]), Z = (0, j.R)(null !== (a = null == v ? void 0 : v.id) && void 0 !== a ? a : ""), {
@@ -163,7 +163,7 @@ function k(e) {
     subscriptionPurchaseButtonState: D
   } = (0, h.Z)({
     skuId: c,
-    initialSubscribeForGuild: x
+    initialSubscribeForGuild: y
   });
   if (!Z || null == v || null == m) return null;
   let L = m.type === I.epS.SUBSCRIPTION,
@@ -177,7 +177,7 @@ function k(e) {
           transitionState: t.transitionState,
           onClose: t.onClose,
           appId: v.id,
-          guildId: x
+          guildId: y
         })
       })
     },
@@ -193,7 +193,7 @@ function k(e) {
             transitionState: n.transitionState,
             appId: v.id,
             skuId: m.id,
-            guildId: x,
+            guildId: y,
             subscriptionType: M ? "user" : "guild",
             onClose: n.onClose,
             onHeaderTitleClick: i
@@ -222,7 +222,7 @@ function k(e) {
     }) : null == b ? void 0 : null === (t = b.description) || void 0 === t ? void 0 : t.trim();
   "" === F && (F = void 0);
   let B = () => {
-    y.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+    x.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: v.id,
       sku_id: m.id,
       area: "purchase_button"
@@ -238,7 +238,7 @@ function k(e) {
     },
     iconSrc: E,
     onIconClick: () => {
-      W(), y.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      W(), x.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: v.id,
         sku_id: m.id,
         area: "app_icon"
@@ -249,7 +249,7 @@ function k(e) {
       children: [(0, r.jsx)(s.zxk, {
         color: s.Ttl.CUSTOM,
         onClick: () => {
-          U(), y.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+          U(), x.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: v.id,
             sku_id: m.id,
             area: "view_details"

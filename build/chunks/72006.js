@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
@@ -35,8 +35,8 @@ var r = n(5148),
   _ = n.n(g),
   b = n(473552),
   v = n.n(b),
-  x = n(634523),
-  y = n.n(x),
+  y = n(634523),
+  x = n.n(y),
   E = n(302648),
   O = n.n(E);
 
@@ -75,7 +75,7 @@ function j(e, t, n, i) {
 function C(e, t) {
   switch (e) {
     case "delete":
-      return y()(t);
+      return x()(t);
     case "delete-word":
       return m()(t);
     case "backspace":

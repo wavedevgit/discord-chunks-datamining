@@ -1,63 +1,63 @@
-/** Chunk was on 98977 **/
-n.d(e, {
-  Z: () => u
-}), n(47120), n(301563);
-var r = n(200651),
-  s = n(192379),
-  i = n(481060);
+/** Chunk was on 81146 **/
+r.d(t, {
+  Z: () => s
+}), r(47120), r(301563);
+var n = r(200651),
+  a = r(192379),
+  o = r(481060);
 
-function l(t, e, n) {
-  return e in t ? Object.defineProperty(t, e, {
-    value: n,
+function i(e, t, r) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: r,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : t[e] = n, t
+  }) : e[t] = r, e
 }
-class a extends s.PureComponent {
+class l extends a.PureComponent {
   render() {
     let {
-      text: t,
-      lastItem: e,
-      className: n
+      text: e,
+      lastItem: t,
+      className: r
     } = this.props;
-    return (0, r.jsxs)("span", {
-      children: [(0, r.jsx)(i.eee, {
-        className: n,
+    return (0, n.jsxs)("span", {
+      children: [(0, n.jsx)(o.eee, {
+        className: r,
         onClick: this.handleClick,
-        children: t
-      }), e ? "" : ", "]
+        children: e
+      }), t ? "" : ", "]
     })
   }
-  constructor(...t) {
-    super(...t), l(this, "handleClick", () => {
+  constructor(...e) {
+    super(...e), i(this, "handleClick", () => {
       let {
-        onClick: t,
-        index: e
+        onClick: e,
+        index: t
       } = this.props;
-      null == t || t(e)
+      null == e || e(t)
     })
   }
 }
-class u extends s.PureComponent {
+class s extends a.PureComponent {
   render() {
-    let t = this.props.artists.split(";");
-    if (!this.props.canOpen) return t.join(", ");
-    let e = t.length - 1;
-    return t.map((t, n) => (0, r.jsx)(a, {
-      text: t,
-      index: n,
-      lastItem: n === e,
+    let e = this.props.artists.split(";");
+    if (!this.props.canOpen) return e.join(", ");
+    let t = e.length - 1;
+    return e.map((e, r) => (0, n.jsx)(l, {
+      text: e,
+      index: r,
+      lastItem: r === t,
       onClick: this.handleOpenSpotifyArtist,
       className: this.props.linkClassName
-    }, "spotify-artist-".concat(n)))
+    }, "spotify-artist-".concat(r)))
   }
-  constructor(...t) {
-    super(...t), l(this, "handleOpenSpotifyArtist", t => {
+  constructor(...e) {
+    super(...e), i(this, "handleOpenSpotifyArtist", e => {
       let {
-        onOpenSpotifyArtist: e
+        onOpenSpotifyArtist: t
       } = this.props;
-      null == e || e(t)
+      null == t || t(e)
     })
   }
 }

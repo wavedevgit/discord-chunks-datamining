@@ -1,10 +1,10 @@
-/** Chunk was on 98977 **/
-n.d(e, {
+/** Chunk was on 52272 **/
+n.d(t, {
   n: () => r
 });
-let r = (0, n(230383).U)(t => ({
+let r = (0, n(230383).U)(e => ({
   clipsButtonRef: null,
-  setClipsButtonRef: e => t({
-    clipsButtonRef: e
+  setClipsButtonRef: t => e({
+    clipsButtonRef: t
   })
 }))

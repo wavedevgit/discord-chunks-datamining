@@ -1,31 +1,33 @@
-/** Chunk was on 35755 **/
+/** Chunk was on 6208 **/
 n.d(t, {
-  Bm: () => S,
-  P7: () => _,
-  ae: () => I
+  Bm: () => T,
+  P7: () => N,
+  X: () => D,
+  ae: () => S
 });
-var i, l, r = n(192379),
-  o = n(392711),
-  a = n.n(o),
-  s = n(442837),
-  c = n(25209),
-  u = n(481060),
-  d = n(2052),
+var i, r, o = n(192379),
+  l = n(392711),
+  c = n.n(l),
+  a = n(442837),
+  u = n(25209),
+  d = n(481060),
+  s = n(2052),
   p = n(542094),
-  m = n(513202),
-  f = n(367907),
-  h = n(213459),
-  v = n(895924),
-  y = n(691424),
-  b = n(428595),
-  N = n(364458),
-  g = n(499254),
-  x = n(541099),
-  j = n(827498),
-  E = n(346683),
-  P = n(981631),
-  C = n(388032);
-let O = (i = function(e) {
+  f = n(513202),
+  v = n(367907),
+  b = n(213459),
+  y = n(895924),
+  m = n(691424),
+  E = n(428595),
+  O = n(364458),
+  g = n(585483),
+  P = n(499254),
+  h = n(541099),
+  Z = n(827498),
+  w = n(346683),
+  _ = n(981631),
+  A = n(388032);
+let I = (i = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -42,84 +44,84 @@ let O = (i = function(e) {
       })
     }
     return e
-  }({}, b.Z.RULES.commandMention), l = l = {
+  }({}, E.Z.RULES.commandMention), r = r = {
     parse: (e, t, n) => ({
-      content: b.Z.RULES.commandMention.parse(e, t, n).content
+      content: E.Z.RULES.commandMention.parse(e, t, n).content
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
       n.push.apply(n, i)
     }
     return n
-  })(Object(l)).forEach(function(e) {
-    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
   }), i),
-  A = a().pick((0, N.Z)([b.Z.RULES, {
-    commandMention: O
-  }, (0, y.Z)({
+  j = c().pick((0, O.Z)([E.Z.RULES, {
+    commandMention: I
+  }, (0, m.Z)({
     enableBuildOverrides: !1,
     enableEmojiClick: !1
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
-  I = c.w4(A);
+  S = u.w4(j);
 
-function _(e) {
+function N(e) {
   let {
     context: t,
     application: n,
     location: i,
-    sectionName: l,
-    commandName: o,
-    autoDismissOnClick: a = !0,
-    launchingComponentId: c,
-    submitting: y = !1,
-    fetchesApplication: b = !0,
-    onConfirmActivityLaunchChecksAlertOpen: N
-  } = e, O = (0, d.O)(), A = (0, p.Qv)({
+    sectionName: r,
+    commandName: l,
+    autoDismissOnClick: c = !0,
+    launchingComponentId: u,
+    submitting: m = !1,
+    fetchesApplication: E = !0,
+    onConfirmActivityLaunchChecksAlertOpen: O
+  } = e, g = (0, s.O)(), I = (0, p.Qv)({
     context: t,
     applicationId: n.id,
-    fetchesApplication: b
-  }), I = (0, E.Q)(A), _ = (0, s.e7)([x.Z], () => x.Z.entrypoint()), S = r.useMemo(() => {
-    var e, i, l;
-    if ("channel" !== t.type) return null !== (l = null === (e = n.bot) || void 0 === e ? void 0 : e.id) && void 0 !== l ? l : null === (i = (0, h.If)(t, n.id).descriptor) || void 0 === i ? void 0 : i.botId
+    fetchesApplication: E
+  }), j = (0, w.Q)(I), S = (0, a.e7)([h.Z], () => h.Z.entrypoint()), N = o.useMemo(() => {
+    var e, i, r;
+    if ("channel" !== t.type) return null !== (r = null === (e = n.bot) || void 0 === e ? void 0 : e.id) && void 0 !== r ? r : null === (i = (0, b.If)(t, n.id).descriptor) || void 0 === i ? void 0 : i.botId
   }, [t, n.id, n.bot]), T = (0, p.w1)({
     applicationId: n.id,
-    botUserIdForAppDM: S,
-    embeddedActivitiesManager: m.Z,
+    botUserIdForAppDM: N,
+    embeddedActivitiesManager: f.Z,
     context: t,
-    locationObject: O.location,
+    locationObject: g.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
       } = e;
-      a && g.yT(j.ti.ACTIVITY), (0, f.yw)(P.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      c && P.yT(Z.ti.ACTIVITY), (0, v.yw)(_.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
-        section_name: l,
-        action: I,
-        source: _
+        section_name: r,
+        action: j,
+        source: S
       })
     },
-    launchingComponentId: c,
-    commandOrigin: v.bB.APPLICATION_LAUNCHER,
-    sectionName: l,
-    source: _,
-    fetchesApplication: b,
-    onConfirmActivityLaunchChecksAlertOpen: N
-  }), L = u.Ttl.BRAND, Z = null != o ? o : C.NW.string(C.t.zKX8Nj);
-  return I === p.JS.JOIN ? (L = u.Ttl.GREEN, Z = C.NW.string(C.t.d9PsMj)) : I !== p.JS.LEAVE || y || (L = u.Ttl.RED, Z = C.NW.string(C.t["Hi1/aW"])), {
+    launchingComponentId: u,
+    commandOrigin: y.bB.APPLICATION_LAUNCHER,
+    sectionName: r,
+    source: S,
+    fetchesApplication: E,
+    onConfirmActivityLaunchChecksAlertOpen: O
+  }), D = d.Ttl.BRAND, C = null != l ? l : A.NW.string(A.t.zKX8Nj);
+  return j === p.JS.JOIN ? (D = d.Ttl.GREEN, C = A.NW.string(A.t.d9PsMj)) : j !== p.JS.LEAVE || m || (D = d.Ttl.RED, C = A.NW.string(A.t["Hi1/aW"])), {
     onActivityItemSelected: T,
-    activityAction: I,
-    buttonColor: L,
-    buttonText: Z
+    activityAction: j,
+    buttonColor: D,
+    buttonText: C
   }
 }
 
-function S(e, t) {
-  let n = x.Z.entrypoint(),
-    i = r.useMemo(() => (0, o.debounce)((e, t) => {
-      (0, f.yw)(P.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
+function T(e, t) {
+  let n = h.Z.entrypoint(),
+    i = o.useMemo(() => (0, l.debounce)((e, t) => {
+      (0, v.yw)(_.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t
       })
@@ -127,7 +129,13 @@ function S(e, t) {
       leading: !1,
       trailing: !0
     }), []);
-  r.useEffect(() => {
+  o.useEffect(() => {
     null != e && i(e, n)
   }, [e, t, n, i])
+}
+
+function D(e) {
+  g.S.dispatchToLastSubscribed(_.CkL.OPEN_APP_LAUNCHER, {
+    applicationId: e
+  })
 }

@@ -1,13 +1,13 @@
-/** Chunk was on 35755 **/
+/** Chunk was on 6208 **/
 n.d(t, {
-  Z: () => r
+  Z: () => o
 }), n(47120);
 var i = n(835473),
-  l = n(716600);
+  r = n(716600);
 
-function r() {
+function o() {
   let {
     fetchesApplication: e = !0
-  } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = (0, l.Z)(), [n] = (0, i.Z)(null == t ? [] : [t.applicationId], e);
+  } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = (0, r.Z)(), [n] = (0, i.Z)(null == t ? [] : [t.applicationId], e);
   return null != n ? n : void 0
 }

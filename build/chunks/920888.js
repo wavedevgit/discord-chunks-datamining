@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => j
 }), n(47120), n(653041);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,8 +52,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = (e, t) => null == e && null == t || e === t,
-  E = (e, t) => e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name)),
+let x = (e, t) => null == e && null == t || e === t,
+  E = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
   O = (e, t) => {
     if (null == t) return e;
     let n = E(e, t);
@@ -78,8 +78,8 @@ class N extends i.PureComponent {
       isGuest: a,
       isPendingMember: b,
       isForumToolbar: v,
-      channel: x,
-      className: y,
+      channel: y,
+      className: x,
       forceAddReactions: E,
       reactionClassName: O,
       useChatFontScaling: N,
@@ -100,7 +100,7 @@ class N extends i.PureComponent {
     }), Z = E || A;
     return (0, r.jsxs)(l.W, {
       component: "div",
-      className: o()(P.reactions, y, {
+      className: o()(P.reactions, x, {
         [P.largeReactions]: w
       }),
       transitionAppear: !T,
@@ -126,7 +126,7 @@ class N extends i.PureComponent {
         emojiSize: w ? "reactionLarge" : "reaction"
       }), C > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
-          t.stopPropagation(), (0, f.op)(x, e)
+          t.stopPropagation(), (0, f.op)(y, e)
         },
         className: o()(P.reaction, O, P.remainingReactions),
         "aria-label": h.NW.string(h.t.lfIHs7),
@@ -139,7 +139,7 @@ class N extends i.PureComponent {
         tabIndex: Z || this.state.isHovered ? 0 : -1,
         type: u.O.NORMAL,
         message: e,
-        channel: x,
+        channel: y,
         useChatFontScaling: N,
         isHovered: this.state.isHovered,
         className: o()({
@@ -172,9 +172,9 @@ let j = e => {
       o = r.length - i.length,
       l = r.length;
     return i.forEach(t => {
-      t.burst_count > 0 && e.push(x(v({}, t), {
+      t.burst_count > 0 && e.push(y(v({}, t), {
         type: u.O.BURST
-      })), t.count > 0 && e.push(x(v({}, t), {
+      })), t.count > 0 && e.push(y(v({}, t), {
         type: u.O.NORMAL
       })), null != t.me_vote && --l
     }), {
@@ -183,7 +183,7 @@ let j = e => {
       remainingReactions: o
     }
   }, [a, n, t.reactions]);
-  return (0, r.jsx)(N, x(v({}, e), {
+  return (0, r.jsx)(N, y(v({}, e), {
     visibleReactionsCount: s,
     combinedReactions: o,
     remainingReactions: l

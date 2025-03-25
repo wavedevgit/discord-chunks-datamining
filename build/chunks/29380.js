@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 }), n(47120);
 var i = n(200651),
   l = n(192379),
@@ -13,50 +13,50 @@ var i = n(200651),
   d = n(827498),
   p = n(160973),
   m = n(783097),
-  f = n(890280),
-  h = n(176412),
+  h = n(890280),
+  f = n(176412),
   v = n(981631),
-  y = n(388032),
-  b = n(486320);
+  N = n(388032),
+  x = n(486320);
 
-function N(e) {
+function y(e) {
   let {
     context: t,
     application: n,
-    sectionName: N,
-    primaryEntryPointCommand: g,
-    buttonSize: x = r.PhG.MEDIUM
-  } = e, j = l.useId(), E = l.useCallback(() => {
+    sectionName: y,
+    primaryEntryPointCommand: b,
+    buttonSize: g = r.PhG.MEDIUM
+  } = e, j = l.useId(), C = l.useCallback(() => {
     c.yT(d.ti.ACTIVITY)
-  }, []), P = l.useCallback(() => {
-    u.Z.shouldShowModal() && E()
-  }, [E]), {
-    submitting: C,
-    wasSubmitting: O
-  } = (0, f.Z)({
+  }, []), E = l.useCallback(() => {
+    u.Z.shouldShowModal() && C()
+  }, [C]), {
+    submitting: P,
+    wasSubmitting: A
+  } = (0, h.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: j,
-    onSubmissionComplete: E
-  }), [A, I] = l.useState(!1), _ = (0, o.Qv)({
+    onSubmissionComplete: C
+  }), [O, I] = l.useState(!1), _ = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), S = l.useMemo(() => (0, m.XZ)(g.displayName), [g.displayName]), {
+  }), S = l.useMemo(() => (0, m.XZ)(b.displayName), [b.displayName]), {
     onActivityItemSelected: T,
     buttonColor: L,
-    buttonText: Z
-  } = (0, h.P7)({
+    buttonText: R
+  } = (0, f.P7)({
     context: t,
     application: n,
     location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: N,
+    sectionName: y,
     commandName: S,
     autoDismissOnClick: _ === o.JS.LEAVE,
     launchingComponentId: j,
-    submitting: null != O ? O : C,
-    onConfirmActivityLaunchChecksAlertOpen: P
+    submitting: null != A ? A : P,
+    onConfirmActivityLaunchChecksAlertOpen: E
   }), {
-    disabled: R,
+    disabled: Z,
     reason: w
   } = (0, p.Z)({
     context: t,
@@ -65,7 +65,7 @@ function N(e) {
   });
   return (0, i.jsx)(r.ua7, {
     shouldShow: null != w,
-    tooltipContentClassName: b.tooltipContent,
+    tooltipContentClassName: x.tooltipContent,
     text: w,
     children: e => {
       var t, l, {
@@ -105,21 +105,21 @@ function N(e) {
         return e
       }({}, a), l = l = {
         type: "submit",
-        size: x,
+        size: g,
         color: L,
-        disabled: R,
-        submitting: A,
+        disabled: Z,
+        submitting: O,
         onClick: () => {
           I(!0), T(), null == o || o(), s.default.track(v.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
             button_action: d._y.USE_APP_COMMAND
           })
         },
-        "aria-label": y.NW.formatToPlainString(y.t["XjP/R0"], {
-          buttonText: Z,
+        "aria-label": N.NW.formatToPlainString(N.t["XjP/R0"], {
+          buttonText: R,
           applicationName: n.name
         }),
-        children: Z
+        children: R
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 e.exports = {
   messageContentContainer: "messageContentContainer__4ea49",
   iconContainer: "iconContainer__4ea49",

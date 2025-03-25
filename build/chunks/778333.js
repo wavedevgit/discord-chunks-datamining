@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => v
 });
@@ -24,7 +24,7 @@ function v(e) {
   let {
     invite: n,
     getAcceptInviteContext: v
-  } = e, x = (0, a.e7)([p.default], () => p.default.getId()), y = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === x, E = n.state === g.r2o.ACCEPTING, {
+  } = e, y = (0, a.e7)([p.default], () => p.default.getId()), x = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === y, E = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: O
   } = (0, c.ZP)(s.Z.INVITE_EMBED), N = (0, a.e7)([f.Z], () => {
     var e;
@@ -44,8 +44,8 @@ function v(e) {
   let I = N ? j : C,
     S = _.NW.string(_.t.ib7Ng4),
     T = u.Z.Button.Colors.GREEN;
-  N ? (S = _.NW.string(_.t.xhxnPj), T = u.Z.Button.Colors.PRIMARY) : y && (S = _.NW.string(_.t.ib7Ng4), T = u.Z.Button.Colors.PRIMARY);
-  let P = y ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
+  N ? (S = _.NW.string(_.t.xhxnPj), T = u.Z.Button.Colors.PRIMARY) : x && (S = _.NW.string(_.t.ib7Ng4), T = u.Z.Button.Colors.PRIMARY);
+  let P = x ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
     A = null != n.inviter ? "".concat(n.inviter.username) : "",
     w = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
@@ -65,7 +65,7 @@ function v(e) {
       }), (0, r.jsx)(u.Z.Button, {
         onClick: I,
         submitting: E,
-        isDisabled: y,
+        isDisabled: x,
         color: T,
         children: S
       })]

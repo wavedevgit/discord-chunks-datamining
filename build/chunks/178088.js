@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   k: () => S
 }), n(47120);
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(585483),
   b = n(932232),
   v = n(400445),
-  x = n(153209),
-  y = n(956961),
+  y = n(153209),
+  x = n(956961),
   E = n(903672),
   O = n(711165),
   N = n(946443),
@@ -108,7 +108,7 @@ function S(e) {
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
           "aria-label": I.NW.string(I.t.GSmTKC),
-          children: R === l.X.FOR_YOU ? (0, r.jsx)(x.Z, {
+          children: R === l.X.FOR_YOU ? (0, r.jsx)(y.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
@@ -121,7 +121,7 @@ function S(e) {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : F && R === l.X.TODOS ? (0, r.jsx)(y.Z, {
+          }) : F && R === l.X.TODOS ? (0, r.jsx)(x.Z, {
             setTab: D,
             onJump: z,
             closePopout: W

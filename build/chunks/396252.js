@@ -1,4 +1,4 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   Z: () => _
 });
@@ -25,7 +25,7 @@ function _(e) {
     compact: i,
     usernameHook: _,
     channel: b
-  } = e, v = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), x = (0, u.ZP)(n), y = _(x), {
+  } = e, v = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), y = (0, u.ZP)(n), x = _(y), {
     avatarSrc: E,
     eventHandlers: {
       onMouseEnter: O,
@@ -74,8 +74,8 @@ function _(e) {
             [g.compact]: i
           }),
           children: h.NW.format(h.t.W0UBIy, {
-            username: x.nick,
-            usernameHook: y,
+            username: y.nick,
+            usernameHook: x,
             guildName: null !== (t = null == v ? void 0 : v.name) && void 0 !== t ? t : ""
           })
         })]

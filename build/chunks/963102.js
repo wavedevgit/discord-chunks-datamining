@@ -9,12 +9,12 @@ var r = n(200651),
   o = n.n(a),
   s = n(442837),
   i = n(481060),
-  c = n(37234),
-  d = n(425493),
+  d = n(37234),
+  c = n(425493),
   u = n(410030),
   g = n(984370),
-  f = n(341907),
-  h = n(822857),
+  h = n(341907),
+  f = n(822857),
   m = n(775451),
   p = n(594174),
   b = n(471731),
@@ -49,7 +49,7 @@ function j(e) {
     handleTransition: S
   } = e, y = (0, u.ZP)(), O = (0, s.e7)([p.default], () => p.default.getCurrentUser()), E = (null == O ? void 0 : O.isStaff()) || (null == O ? void 0 : O.isStaffPersonal()) || !1, {
     enabled: I
-  } = (0, h.W)({
+  } = (0, f.W)({
     location: "collectibles_shop_header_bar"
   }), B = [{
     tab: _.AW.HOME,
@@ -64,7 +64,7 @@ function j(e) {
   });
   let T = n ? C.DR : a,
     L = l.useCallback(() => {
-      t && (T(), (0, c.Ou)()), (0, f.navigateToQuestHome)()
+      t && (T(), (0, d.Ou)()), (0, h.navigateToQuestHome)()
     }, [T, t]);
   return (0, r.jsx)(i.f6W, {
     theme: y,
@@ -99,7 +99,7 @@ function j(e) {
           ctaText: v.NW.string(v.t.VC4Mq6),
           ctaOnClick: L,
           className: k.balanceWidgetMenu
-        }), t && (0, r.jsx)(d.Z, {
+        }), t && (0, r.jsx)(c.Z, {
           closeAction: T,
           keybind: "ESC"
         })]

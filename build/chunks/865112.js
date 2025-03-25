@@ -1,7 +1,7 @@
-/** Chunk was on 8473 **/
+/** Chunk was on 52272 **/
 n.d(t, {
   RB: () => O,
-  VH: () => x,
+  VH: () => y,
   Vi: () => N,
   Vu: () => j,
   q7: () => E
@@ -29,7 +29,7 @@ let v = {
     NEW_MESSAGE: h,
     GAME_RELATIONSHIP: p
   },
-  x = {
+  y = {
     MISSED_MESSAGES: f,
     FRIEND_REQUEST_REMINDER: d,
     SCHEDULED_GUILD_EVENT: c,
@@ -40,7 +40,7 @@ let v = {
     ADD_FRIEND: o,
     FIRST_MESSAGE: g
   },
-  y = e => {
+  x = e => {
     switch (e.item_enum) {
       case i.AM.ADD_FRIEND:
         return "ADD_FRIEND";
@@ -57,7 +57,7 @@ let v = {
   E = e => {
     switch (e.type) {
       case "lifecycle_item":
-        return y(e);
+        return x(e);
       case "missed_messages":
         return "MISSED_MESSAGES";
       case "friend_request_reminder":
