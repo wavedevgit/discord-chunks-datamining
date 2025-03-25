@@ -1,6 +1,6 @@
 /** Chunk was on 32249 **/
 n.r(t), n.d(t, {
-  default: () => R
+  default: () => L
 }), n(47120);
 var r = n(200651),
   o = n(192379),
@@ -23,17 +23,16 @@ var r = n(200651),
   h = n(472144),
   C = n(602667),
   j = n(644646),
-  y = n(880199),
-  _ = n(604162),
-  x = n(747717),
-  N = n(963123),
+  y = n(604162),
+  _ = n(747717),
+  x = n(963123),
   D = n(281055),
-  P = n(46140),
-  T = n(981631),
-  I = n(388032),
-  w = n(881382);
+  N = n(46140),
+  P = n(981631),
+  T = n(388032),
+  I = n(881382);
 
-function A(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,149 +64,131 @@ function k(e, t) {
   }), e
 }
 
-function L(e) {
-  var t, n, i, v;
-  let C, {
-      transitionState: D,
-      onClose: L,
-      quest: R,
-      autoplay: M,
-      videoSessionId: V,
-      impressionRef: q,
-      parentModalOpenStartClockTime: B
-    } = e,
-    F = (0, E.il)(R),
-    U = (0, s.e7)([d.Z], () => d.Z.getState().theme),
-    Z = (0, a.wj)(U) ? T.BRd.DARK : T.BRd.LIGHT,
-    Y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
-    Q = (0, p.aM)(),
-    [W, z] = o.useState(F.progressSeconds),
-    [G, H] = o.useState(!1),
-    {
-      completedRatio: K,
-      completedRatioDisplay: X
-    } = (0, f.I)(R),
-    [$, J] = (0, _.G6)(I.NW.string(I.t.RDE0SU), I.NW.string(I.t["+5kSoa"]), 1700);
-  if ((0, E.xN)(R.config) && (null === (t = R.userStatus) || void 0 === t ? void 0 : t.claimedAt) == null) {
-    let e = (0, E.LM)(R.config);
-    C = (0, r.jsx)(y.Z, {
-      orbQuantity: e
-    })
-  } else C = (null === (v = R.userStatus) || void 0 === v ? void 0 : v.claimedAt) != null ? I.NW.string(I.t.vTgCW1) : I.NW.string(I.t.cfY4PD);
-  let ee = o.useCallback(() => {
-      (0, E.f2)(R.id, {
-        content: g.jn.VIDEO_MODAL,
-        ctaContent: m.jZ.COPY_QUEST_URL,
-        impressionId: Q
-      }), J()
-    }, [Q, R.id, J]),
-    et = o.useMemo(() => O.r.build(R.config).defaultReward.messages.name, [R]),
-    en = I.NW.formatToPlainString(I.t["12IWPz"], {
-      rewardName: et
-    });
+function A(e) {
+  var t, n, i;
+  let {
+    transitionState: v,
+    onClose: C,
+    quest: D,
+    autoplay: A,
+    videoSessionId: L,
+    impressionRef: R,
+    parentModalOpenStartClockTime: M
+  } = e, V = (0, E.il)(D), q = (0, s.e7)([d.Z], () => d.Z.getState().theme), B = (0, a.wj)(q) ? P.BRd.DARK : P.BRd.LIGHT, F = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, p.aM)(), [Z, Y] = o.useState(V.progressSeconds), [W, Q] = o.useState(!1), {
+    completedRatio: z,
+    completedRatioDisplay: G
+  } = (0, f.I)(D), [H, K] = (0, y.G6)(T.NW.string(T.t.RDE0SU), T.NW.string(T.t["+5kSoa"]), 1700), X = (null === (t = D.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? T.NW.string(T.t.vTgCW1) : T.NW.string(T.t.cfY4PD), $ = o.useCallback(() => {
+    (0, E.f2)(D.id, {
+      content: g.jn.VIDEO_MODAL,
+      ctaContent: m.jZ.COPY_QUEST_URL,
+      impressionId: U
+    }), K()
+  }, [U, D.id, K]), J = o.useMemo(() => O.r.build(D.config).defaultReward.messages.name, [D]), ee = T.NW.formatToPlainString(T.t["12IWPz"], {
+    rewardName: J
+  });
   return (0, r.jsx)(c.Y0X, {
-    transitionState: D,
+    transitionState: v,
     size: c.CgR.DYNAMIC,
-    className: w.modalRoot,
+    className: I.modalRoot,
     children: (0, r.jsx)("div", {
       ref: e => {
-        q.current = e
+        R.current = e
       },
-      className: w.modalBg,
+      className: I.modalBg,
       children: (0, r.jsx)("div", {
-        className: w.modalBody,
+        className: I.modalBody,
         children: (0, r.jsxs)("div", {
-          className: w.modalContent,
+          className: I.modalContent,
           children: [(0, r.jsxs)("div", {
-            className: w.contentHeader,
+            className: I.contentHeader,
             children: [(0, r.jsxs)(c.P3F, {
-              className: w.contentHeaderGameInfo,
+              className: I.contentHeaderGameInfo,
               onClick: () => {
-                (0, E.FE)(R, {
+                (0, E.FE)(D, {
                   content: g.jn.VIDEO_MODAL,
                   ctaContent: m.jZ.OPEN_GAME_LINK,
-                  impressionId: Q
+                  impressionId: U
                 })
               },
               children: [(0, r.jsx)("img", {
-                alt: R.config.messages.gameTitle,
-                className: l()(w.contentHeaderLogotype, w.accentOnHover),
-                src: (0, b.fh)(R, b.eC.LOGO_TYPE, Z).url
-              }), (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
-                className: w.questHeading,
+                alt: D.config.messages.gameTitle,
+                className: l()(I.contentHeaderLogotype, I.accentOnHover),
+                src: (0, b.fh)(D, b.eC.LOGO_TYPE, B).url
+              }), (0, r.jsx)(_.Z, {}), (0, r.jsxs)("div", {
+                className: I.questHeading,
                 children: [(0, r.jsx)(c.X6q, {
                   variant: "heading-md/semibold",
                   color: "header-primary",
-                  children: I.NW.format(I.t.EQa7oq, {
-                    questName: R.config.messages.questName
+                  children: T.NW.format(T.t.EQa7oq, {
+                    questName: D.config.messages.questName
                   })
                 }), (0, r.jsx)(c.Text, {
                   variant: "text-sm/medium",
                   color: "header-secondary",
-                  children: R.config.messages.gameTitle
+                  children: D.config.messages.gameTitle
                 })]
               })]
             }), (0, r.jsx)(c.ua7, {
               position: "left",
-              text: en,
+              text: ee,
               onTooltipShow: () => {
-                H(!0)
+                Q(!0)
               },
               onTooltipHide: () => {
-                H(!1)
+                Q(!1)
               },
-              children: e => (0, r.jsx)(c.P3F, k(A({
-                className: w.progressCont
+              children: e => (0, r.jsx)(c.P3F, k(w({
+                className: I.progressCont
               }, e), {
                 children: (0, r.jsx)(h.Z, {
-                  quest: R,
+                  quest: D,
                   size: 48,
-                  percentComplete: K,
-                  percentCompleteText: G ? X : void 0,
+                  percentComplete: z,
+                  percentCompleteText: W ? G : void 0,
                   percentCompleteTextVariant: "text-sm/medium",
                   children: (0, r.jsx)(j.Z, {
-                    className: w.questProgressRewardTile,
-                    quest: R,
+                    className: I.questProgressRewardTile,
+                    quest: D,
                     questContent: g.jn.VIDEO_MODAL,
                     autoplay: !1,
-                    location: P.dr.VIDEO_MODAL
+                    location: N.dr.VIDEO_MODAL
                   })
                 })
               }))
             })]
-          }), (0, r.jsx)(N.Z, {
-            quest: R,
-            videoSessionId: V,
-            parentTransitionState: D,
-            onOptimisticProgressUpdate: z,
-            autoplay: M,
-            performanceClockStartTime: B
+          }), (0, r.jsx)(x.Z, {
+            quest: D,
+            videoSessionId: L,
+            parentTransitionState: v,
+            onOptimisticProgressUpdate: Y,
+            autoplay: A,
+            performanceClockStartTime: M
           }), (0, r.jsxs)("div", {
-            className: w.contentFooter,
+            className: I.contentFooter,
             children: [(0, r.jsx)(c.zxk, {
-              onClick: L,
+              onClick: C,
               color: c.zxk.Colors.PRIMARY,
               size: c.zxk.Sizes.MEDIUM,
-              className: w.footerBtn,
-              children: I.NW.string(I.t.cpT0Cg)
+              className: I.footerBtn,
+              children: T.NW.string(T.t.cpT0Cg)
             }), (0, r.jsxs)("div", {
-              className: w.contentFooterButtonCont,
+              className: I.contentFooterButtonCont,
               children: [(0, r.jsx)(c.zxk, {
                 color: c.zxk.Colors.PRIMARY,
-                onClick: ee,
+                onClick: $,
                 size: c.zxk.Sizes.NONE,
-                className: l()(w.copyLinkBtn, w.footerBtn),
-                children: $
+                className: l()(I.copyLinkBtn, I.footerBtn),
+                children: H
               }), (0, r.jsx)(S.i0, {
-                className: w.claimBtn,
+                className: I.claimBtn,
                 size: c.zxk.Sizes.MEDIUM,
-                quest: R,
-                useReducedMotion: Y,
-                isExpanded: (null === (n = R.userStatus) || void 0 === n ? void 0 : n.completedAt) != null,
-                disabled: (null === (i = R.userStatus) || void 0 === i ? void 0 : i.completedAt) == null,
-                ctaLabel: C,
+                quest: D,
+                useReducedMotion: F,
+                isExpanded: (null === (n = D.userStatus) || void 0 === n ? void 0 : n.completedAt) != null,
+                disabled: (null === (i = D.userStatus) || void 0 === i ? void 0 : i.completedAt) == null,
+                ctaLabel: X,
                 onClick: () => {
-                  ((0, E.xN)(R.config) || (0, E.Bg)(R.config)) && L()
+                  ((0, E.xN)(D.config) || (0, E.Bg)(D.config)) && C()
                 }
               })]
             })]
@@ -218,7 +199,7 @@ function L(e) {
   })
 }
 
-function R(e) {
+function L(e) {
   var {
     questId: t,
     overrideQuest: n,
@@ -246,7 +227,7 @@ function R(e) {
     questContent: g.jn.VIDEO_MODAL,
     minViewTimeSeconds: D.zw,
     trackGuildAndChannelMetadata: !0,
-    children: e => (0, r.jsx)(L, k(A({}, l), {
+    children: e => (0, r.jsx)(A, k(w({}, l), {
       parentModalOpenStartClockTime: i,
       impressionRef: e,
       quest: c,

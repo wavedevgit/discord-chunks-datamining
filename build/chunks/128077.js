@@ -1,49 +1,49 @@
-/** Chunk was on 20565 **/
-r.d(t, {
-  f: () => c
-}), r(47120);
-var n = r(192379),
-  a = r(751648),
-  o = r(388032);
+/** Chunk was on 75607 **/
+n.d(t, {
+  f: () => a
+}), n(47120);
+var r = n(192379),
+  i = n(751648),
+  s = n(388032);
 
-function c() {
-  let [e, t] = (0, n.useState)(""), [r, c] = (0, n.useState)([]), [l, i] = (0, n.useState)(null), [s, u] = (0, n.useState)(!1);
-  return (0, n.useEffect)(() => {
+function a() {
+  let [e, t] = (0, r.useState)(""), [n, a] = (0, r.useState)([]), [l, o] = (0, r.useState)(null), [c, d] = (0, r.useState)(!1);
+  return (0, r.useEffect)(() => {
     if (null != l) {
-      t(o.NW.format(o.t["7gHWra"], {
+      t(s.NW.format(s.t["7gHWra"], {
         amount: "1 orb",
         errorMessage: l.message
       }));
       return
     }
-    if (null != r && r.length > 0) {
-      let e = r.map(e => {
+    if (null != n && n.length > 0) {
+      let e = n.map(e => {
         var t;
         return null === (t = e.sku) || void 0 === t ? void 0 : t.name
       });
-      t(o.NW.format(o.t.JxNFam, {
+      t(s.NW.format(s.t.JxNFam, {
         amountDescription: "1 orb",
-        redeemedItemDescription: "".concat(1 === e.length ? "SKU" : "SKUs", ": ").concat(e.join(", "), ". Entitlement ").concat(1 === r.length ? "ID" : "IDs", ": ").concat(r.map(e => e.id).join(", "))
+        redeemedItemDescription: "".concat(1 === e.length ? "SKU" : "SKUs", ": ").concat(e.join(", "), ". Entitlement ").concat(1 === n.length ? "ID" : "IDs", ": ").concat(n.map(e => e.id).join(", "))
       }));
       return
     }
     t("")
-  }, [r, l]), {
-    entitlements: r,
+  }, [n, l]), {
+    entitlements: n,
     error: l,
-    isSubmitting: s,
+    isSubmitting: c,
     responseMessage: e,
     redeemVirtualCurrency: function(e, t) {
-      return (0, a.df)({
+      return (0, i.df)({
         skuId: e,
         onRedeemStart: () => {
-          u(!0), i(null)
+          d(!0), o(null)
         },
         onRedeemSucceed: e => {
-          c(e), u(!1), null == t || t(e)
+          a(e), d(!1), null == t || t(e)
         },
         onRedeemFail: e => {
-          i(e), u(!1)
+          o(e), d(!1)
         }
       })
     }

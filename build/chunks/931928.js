@@ -16,7 +16,7 @@ var l = n(200651),
   E = n(432792),
   f = n(981631),
   p = n(921944),
-  h = n(642145),
+  h = n(46140),
   C = n(388032);
 
 function _(e) {
@@ -123,7 +123,7 @@ let T = e => {
   });
   return t ? {
     shouldShow: u,
-    questId: h.V,
+    questId: h.V6,
     closeCoachmarkIfOpen: d,
     onClose: () => {
       (0, c.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {

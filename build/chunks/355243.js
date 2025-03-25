@@ -32,7 +32,7 @@ function f(e) {
     onClick: b,
     onScrubBack: O,
     onScrubForward: S
-  } = e, [h, C] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [N, D] = o.useState(!1), P = o.useRef(null), T = e => {
+  } = e, [h, C] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
     P.current = e, C(e)
   };
   o.useEffect(() => {
@@ -52,14 +52,14 @@ function f(e) {
   let w = e => {
       y(e.clientX)
     },
-    A = o.useCallback(e => {
+    k = o.useCallback(e => {
       let {
         key: t
       } = e;
       t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
     }, [O, S]),
-    k = null != j && null != h ? m(j, h, g) : 0,
-    L = (0, c.yv)(k),
+    A = null != j && null != h ? m(j, h, g) : 0,
+    L = (0, c.yv)(A),
     R = null != h ? h.right - p(t / 100 * g, g, h) : null,
     M = null != j && null != h ? h.right - j : null,
     V = null != _ && null != h ? h.right - _ : null;
@@ -75,15 +75,15 @@ function f(e) {
         i && null != b && b(m(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        i && (null != I.current && T(I.current.getBoundingClientRect()), D(!0), w(e))
+        i && (null != I.current && T(I.current.getBoundingClientRect()), N(!0), w(e))
       },
       onMouseLeave: e => {
-        i && (D(!1), y(null))
+        i && (N(!1), y(null))
       },
       onMouseMove: e => {
-        i && N && w(e)
+        i && D && w(e)
       },
-      onKeyDown: A,
+      onKeyDown: k,
       tabIndex: i ? void 0 : -1,
       focusProps: {
         offset: {
@@ -93,7 +93,7 @@ function f(e) {
       },
       children: [null == v ? void 0 : v.map(e => (0, r.jsx)("div", {
         className: l()(d.buffer, {
-          [d.bufferHovered]: N
+          [d.bufferHovered]: D
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
@@ -110,9 +110,9 @@ function f(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != f ? f : void 0,
-        size: N ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
+        size: D ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
         animate: n
-      }), N && null != L && (0, r.jsx)(s.Text, {
+      }), D && null != L && (0, r.jsx)(s.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -120,7 +120,7 @@ function f(e) {
           color: "#FFFFFF"
         },
         children: L
-      }), N && i && null != R && (0, r.jsx)("div", {
+      }), D && i && null != R && (0, r.jsx)("div", {
         className: d.grabber,
         style: {
           right: "".concat(R - 6, "px")

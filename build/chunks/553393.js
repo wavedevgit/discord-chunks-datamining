@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => H
+  Z: () => V
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,20 +25,18 @@ var r = n(200651),
   O = n(617136),
   I = n(113434),
   S = n(497505),
-  T = n(918701),
-  N = n(475595),
-  A = n(602667),
-  C = n(644646),
-  R = n(880199),
-  P = n(667105),
-  w = n(341907),
-  D = n(46140),
-  L = n(981631),
-  x = n(231338),
-  M = n(388032),
-  k = n(379206);
+  T = n(475595),
+  N = n(602667),
+  A = n(644646),
+  C = n(667105),
+  R = n(341907),
+  P = n(46140),
+  w = n(981631),
+  D = n(231338),
+  L = n(388032),
+  x = n(379206);
 
-function j(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,75 +45,75 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function U(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
 }
-let G = "4px",
-  B = "11px",
-  F = 222;
+let j = "4px",
+  U = "11px",
+  G = 222;
 
-function V(e, t) {
+function B(e, t) {
   return null != e && null != t && (0, m.p9)(t, y.Z, b.Z, v.Z, h.Z)[0]
 }
 
-function Z(e) {
+function F(e) {
   var t, n, h, m, b;
   let {
     quest: v,
     memberListItemRef: y,
-    applicationStream: A,
-    position: j,
-    closePopout: U,
-    updatePosition: Z,
-    impressionRef: H
-  } = e, W = (0, s.e7)([E.Z], () => {
+    applicationStream: N,
+    position: M,
+    closePopout: k,
+    updatePosition: F,
+    impressionRef: V
+  } = e, Z = (0, s.e7)([E.Z], () => {
     var e;
-    return null !== (e = E.Z.getChannel(null == A ? void 0 : A.channelId)) && void 0 !== e ? e : null
-  }), Y = (0, P.hf)({
+    return null !== (e = E.Z.getChannel(null == N ? void 0 : N.channelId)) && void 0 !== e ? e : null
+  }), H = (0, C.hf)({
     quest: v,
     location: S.jn.MEMBERS_LIST
-  }), K = (0, I.tP)(v), z = (null == v ? void 0 : null === (t = v.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, q = (null == v ? void 0 : null === (n = v.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, Q = (null == v ? void 0 : null === (h = v.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, X = (0, s.e7)([g.Z], () => g.Z.getState().theme), J = (0, l.wj)(X) ? x.BR.DARK : x.BR.LIGHT, $ = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
-    ref: ee,
-    height: et
-  } = (0, f.Z)(), [en, er] = i.useState($), ei = (0, _.Aq)(), eo = (0, a.eg)();
+  }), W = (0, I.tP)(v), Y = (null == v ? void 0 : null === (t = v.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, K = (null == v ? void 0 : null === (n = v.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, z = (null == v ? void 0 : null === (h = v.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, q = (0, s.e7)([g.Z], () => g.Z.getState().theme), Q = (0, l.wj)(q) ? D.BR.DARK : D.BR.LIGHT, X = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+    ref: J,
+    height: $
+  } = (0, f.Z)(), [ee, et] = i.useState(X), en = (0, _.Aq)(), er = (0, a.eg)();
   i.useEffect(() => {
-    let e = eo.current;
-    return null == e || e.addEventListener("scroll", U), () => {
-      null == e || e.removeEventListener("scroll", U)
+    let e = er.current;
+    return null == e || e.addEventListener("scroll", k), () => {
+      null == e || e.removeEventListener("scroll", k)
     }
-  }, [U, eo]), i.useEffect(() => {
-    let e = eo.current,
+  }, [k, er]), i.useEffect(() => {
+    let e = er.current,
       t = y.current;
     if (null == e || null == t) return;
-    let n = new MutationObserver(() => Z());
+    let n = new MutationObserver(() => F());
     return n.observe(e, {
       childList: !0,
       subtree: !0
     }), () => {
       n.disconnect()
     }
-  }, [y, eo, Z]);
-  let ea = (0, c.q_F)({
+  }, [y, er, F]);
+  let ei = (0, c.q_F)({
       from: {
         height: 0
       },
-      height: null != et ? et : 0,
+      height: null != $ ? $ : 0,
       config: {
         tension: 450,
         friction: 45
       },
-      onRest: () => er(!0)
+      onRest: () => et(!0)
     }),
-    es = (0, c.Yzy)(en, {
+    eo = (0, c.Yzy)(ee, {
       from: {
         opacity: 0,
         scale: 0
@@ -125,157 +123,155 @@ function Z(e) {
         scale: 1
       }
     }),
-    el = () => {
-      ei.dispatch(L.CkL.POPOUT_CLOSE)
+    ea = () => {
+      en.dispatch(w.CkL.POPOUT_CLOSE)
     },
-    ec = "top" === j ? "".concat(G, " ").concat(G, " 0 0") : "0 0 ".concat(G, " ").concat(G);
-  if (null == v || K || z && !V(A, W)) return null;
-  let eu = () => {
+    es = "top" === M ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j);
+  if (null == v || W || Y && !B(N, Z)) return null;
+  let el = () => {
       (0, O._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: !0
-      }), (0, w.openDisclosureModal)(v, {
+      }), (0, R.openDisclosureModal)(v, {
         content: S.jn.MEMBERS_LIST,
         ctaContent: O.jZ.OPEN_DISCLOSURE
       })
     },
-    ed = () => {
+    ec = () => {
       (0, O._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: !0
-      }), (0, w.navigateToQuestHome)({
+      }), (0, R.navigateToQuestHome)({
         fromContent: S.jn.MEMBERS_LIST,
         questId: v.id
       })
     },
-    ef = e => {
-      e.stopPropagation(), eu()
+    eu = e => {
+      e.stopPropagation(), el()
     },
-    e_ = () => {
-      if (V(A, W) && null != W) return (0, O._3)({
+    ed = () => {
+      if (B(N, Z) && null != Z) return (0, O._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.WATCH_STREAM,
         trackGuildAndChannelMetadata: !0
-      }), u.default.selectVoiceChannel(W.id), (0, d.iV)(A);
-      ed()
+      }), u.default.selectVoiceChannel(Z.id), (0, d.iV)(N);
+      ec()
     },
-    ep = Q && !z ? {
-      headerText: M.NW.string(M.t.gHerLS),
-      ctaText: (0, T.xN)(v.config) ? (0, r.jsx)(R.Z, {
-        orbQuantity: (0, T.LM)(v.config)
-      }) : M.NW.string(M.t.cfY4PD),
-      handleClickCta: Y,
+    ef = z && !Y ? {
+      headerText: L.NW.string(L.t.gHerLS),
+      ctaText: L.NW.string(L.t.cfY4PD),
+      handleClickCta: H,
       tileAssetType: "reward"
-    } : q && !z ? {
-      headerText: M.NW.string(M.t.uH2sf3),
-      ctaText: M.NW.string(M.t.VN1Ajo),
+    } : K && !Y ? {
+      headerText: L.NW.string(L.t.uH2sf3),
+      ctaText: L.NW.string(L.t.VN1Ajo),
+      handleClickCta: ec,
+      tileAssetType: "reward"
+    } : B(N, Z) ? {
+      headerText: L.NW.string(L.t.Bz6SkJ),
+      ctaText: L.NW.string(L.t.BXFP39),
       handleClickCta: ed,
-      tileAssetType: "reward"
-    } : V(A, W) ? {
-      headerText: M.NW.string(M.t.Bz6SkJ),
-      ctaText: M.NW.string(M.t.BXFP39),
-      handleClickCta: e_,
       tileAssetType: "game"
     } : {
-      headerText: M.NW.string(M.t.Bz6SkJ),
-      ctaText: M.NW.string(M.t.BSXPZ2),
-      handleClickCta: ed,
+      headerText: L.NW.string(L.t.Bz6SkJ),
+      ctaText: L.NW.string(L.t.BSXPZ2),
+      handleClickCta: ec,
       tileAssetType: "game"
     };
   return (0, r.jsx)(o.animated.div, {
     ref: e => {
-      H.current = e
+      V.current = e
     },
-    "aria-expanded": en,
-    className: k.wrapper,
+    "aria-expanded": ee,
+    className: x.wrapper,
     style: {
-      width: null !== (b = null === (m = y.current) || void 0 === m ? void 0 : m.clientWidth) && void 0 !== b ? b : F,
-      height: ea.height,
-      overflow: en ? "visible" : "hidden",
-      borderRadius: ec
+      width: null !== (b = null === (m = y.current) || void 0 === m ? void 0 : m.clientWidth) && void 0 !== b ? b : G,
+      height: ei.height,
+      overflow: ee ? "visible" : "hidden",
+      borderRadius: es
     },
     children: (0, r.jsxs)("div", {
       ref: e => {
-        ee.current = e
+        J.current = e
       },
-      className: k.container,
+      className: x.container,
       style: {
-        borderRadius: ec
+        borderRadius: es
       },
       children: [(0, r.jsxs)("div", {
-        className: k.top,
+        className: x.top,
         children: [(0, r.jsxs)("div", {
-          className: k.left,
+          className: x.left,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-sm/semibold",
-            children: ep.headerText
+            children: ef.headerText
           }), (0, r.jsxs)(c.P3F, {
-            className: k.help,
+            className: x.help,
             onClick: e => {
-              el(), ef(e)
+              ea(), eu(e)
             },
             children: [(0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
-              className: k.helpText,
-              children: M.NW.format(M.t["Lm8/mJ"], {
+              className: x.helpText,
+              children: L.NW.format(L.t["Lm8/mJ"], {
                 gamePublisher: v.config.messages.gamePublisher
               })
             }), (0, r.jsx)(c.idN, {
               size: "custom",
-              className: k.helpIcon,
-              width: B,
-              height: B,
+              className: x.helpIcon,
+              width: U,
+              height: U,
               color: c.TVs.colors.INTERACTIVE_NORMAL
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: k.right,
+          className: x.right,
           children: (0, r.jsxs)("div", {
-            className: k.imgWrapper,
-            children: [es((e, t) => t && (0, r.jsx)(o.animated.div, {
+            className: x.imgWrapper,
+            children: [eo((e, t) => t && (0, r.jsx)(o.animated.div, {
               style: e,
-              className: k.imgUnderlay
-            })), "game" === ep.tileAssetType && (0, r.jsx)("img", {
-              alt: M.NW.formatToPlainString(M.t.IskzPj, {
+              className: x.imgUnderlay
+            })), "game" === ef.tileAssetType && (0, r.jsx)("img", {
+              alt: L.NW.formatToPlainString(L.t.IskzPj, {
                 gameTitle: v.config.messages.gameTitle,
                 gamePublisher: v.config.messages.gamePublisher
               }),
-              className: k.assetTile,
-              src: (0, N.fh)(v, N.eC.GAME_TILE, J).url
-            }), "reward" === ep.tileAssetType && (0, r.jsx)(C.Z, {
-              className: k.assetTile,
+              className: x.assetTile,
+              src: (0, T.fh)(v, T.eC.GAME_TILE, Q).url
+            }), "reward" === ef.tileAssetType && (0, r.jsx)(A.Z, {
+              className: x.assetTile,
               quest: v,
               questContent: S.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
-              location: D.dr.MEMBERS_LIST,
-              onClick: el
+              location: P.dr.MEMBERS_LIST,
+              onClick: ea
             })]
           })
         })]
       }), (0, r.jsx)(c.zxk, {
         onClick: () => {
-          el(), ep.handleClickCta()
+          ea(), ef.handleClickCta()
         },
         color: c.zxk.Colors.CUSTOM,
-        className: k.ctaButton,
-        children: ep.ctaText
+        className: x.ctaButton,
+        children: ef.ctaText
       })]
     })
   })
 }
 
-function H(e) {
-  return null == e.quest ? null : (0, r.jsx)(A.A, {
+function V(e) {
+  return null == e.quest ? null : (0, r.jsx)(N.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,
-    children: t => (0, r.jsx)(Z, U({
+    children: t => (0, r.jsx)(F, k({
       impressionRef: t
     }, e))
   })

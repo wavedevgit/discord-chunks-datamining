@@ -37,8 +37,8 @@ var r = n(200651),
   R = n(314897),
   k = n(857192),
   M = n(77498),
-  D = n(131951),
-  Z = n(158776),
+  Z = n(131951),
+  D = n(158776),
   U = n(594174),
   V = n(979651),
   H = n(574254),
@@ -139,7 +139,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       pulseSpeakingIndicator: eL = !1,
       forceIdle: ew = !1,
       inOverlayPopout: eA = !1
-    } = e, eR = i.useContext(L.h9) || ew, [ek, eM] = i.useState(!1), eD = T.Sb.useSetting(), eZ = (0, a.e7)([k.default], () => k.default.isStreamInfoOverlayEnabled), [eU, eV] = i.useState(!1), eH = (0, a.e7)([R.default], () => R.default.getId()), eB = (0, a.e7)([U.default], () => U.default.getCurrentUser()), eW = H.type === en.fO.ACTIVITY ? null : null === (t = H.user) || void 0 === t ? void 0 : t.id, [eG] = (0, h.Z)(H.type === en.fO.ACTIVITY ? [H.applicationId] : []), eF = (0, a.e7)([v.Z], () => v.Z.getEnabled()), ez = (0, a.e7)([D.Z], () => null != eW && D.Z.isLocalVideoDisabled(eW, (0, _.Z)(H.type)), [eW, H.type]), eK = (0, a.e7)([D.Z], () => null != eW ? D.Z.getVideoToggleState(eW, (0, _.Z)(H.type)) : et.ZUi.NONE, [eW, H.type]), eY = eK === et.ZUi.AUTO_PROBING, {
+    } = e, eR = i.useContext(L.h9) || ew, [ek, eM] = i.useState(!1), eZ = T.Sb.useSetting(), eD = (0, a.e7)([k.default], () => k.default.isStreamInfoOverlayEnabled), [eU, eV] = i.useState(!1), eH = (0, a.e7)([R.default], () => R.default.getId()), eB = (0, a.e7)([U.default], () => U.default.getCurrentUser()), eW = H.type === en.fO.ACTIVITY ? null : null === (t = H.user) || void 0 === t ? void 0 : t.id, [eG] = (0, h.Z)(H.type === en.fO.ACTIVITY ? [H.applicationId] : []), eF = (0, a.e7)([v.Z], () => v.Z.getEnabled()), ez = (0, a.e7)([Z.Z], () => null != eW && Z.Z.isLocalVideoDisabled(eW, (0, _.Z)(H.type)), [eW, H.type]), eK = (0, a.e7)([Z.Z], () => null != eW ? Z.Z.getVideoToggleState(eW, (0, _.Z)(H.type)) : et.ZUi.NONE, [eW, H.type]), eY = eK === et.ZUi.AUTO_PROBING, {
       speaking: eX,
       ringing: eQ,
       hasVideo: eq
@@ -156,15 +156,15 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
             voiceChannelId: null == i ? void 0 : i.channelId
           }
         }),
-        u = (0, a.cj)([D.Z], () => {
+        u = (0, a.cj)([Z.Z], () => {
           let n = (0, _.Z)(t.type);
           return e === s ? {
             muted: !1,
             deafened: !1
           } : {
-            muted: D.Z.isLocalMute(s, n),
-            localVideoDisabled: D.Z.isLocalVideoDisabled(s, n),
-            localVideoAutoDisabled: D.Z.isLocalVideoAutoDisabled(s, n)
+            muted: Z.Z.isLocalMute(s, n),
+            localVideoDisabled: Z.Z.isLocalVideoDisabled(s, n),
+            localVideoAutoDisabled: Z.Z.isLocalVideoAutoDisabled(s, n)
           }
         }, [e, t.type, s]);
       return {
@@ -179,7 +179,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
     i.useEffect(() => {
       if (e$ && !e0 && null != eg.hdStreamingUntil && new Date(eg.hdStreamingUntil) > new Date) {
         let e = setTimeout(() => {
-          let e = D.Z.getGoLiveSource(),
+          let e = Z.Z.getGoLiveSource(),
             t = (0, b.s_)(er.LY.RESOLUTION_720, er.ws.FPS_30, e);
           u.Z.setGoLiveSource(t)
         }, new Date(eg.hdStreamingUntil).getTime() - Date.now());
@@ -202,7 +202,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       }, {
         autoTrackExposure: !1
       }),
-      e8 = (0, a.e7)([Z.Z], () => e2 && null != eW ? Z.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e2, eW]),
+      e8 = (0, a.e7)([D.Z], () => e2 && null != eW ? D.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e2, eW]),
       e7 = (0, a.e7)([M.Z], () => (null == e8 ? void 0 : e8.application_id) != null ? M.Z.getDetectableGame(e8.application_id) : null),
       e5 = (0, a.e7)([f.Z], () => null != e7 && (null == e8 ? void 0 : e8.application_id) != null ? f.Z.getApplication(null == e8 ? void 0 : e8.application_id) : void 0),
       te = (0, j.wV)({
@@ -412,7 +412,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                 })
               }) : null]
             })
-          }), eD && eZ && eU && (0, r.jsx)(K.Z, {
+          }), eZ && eD && eU && (0, r.jsx)(K.Z, {
             currentUserId: eH,
             participant: H
           }), (0, r.jsx)(C.Z, {
@@ -513,7 +513,7 @@ let e_ = i.memo(e => {
     hasVideo: x,
     hideAudioIcon: N,
     onToggleMute: S
-  } = e, I = (0, a.e7)([D.Z], () => null != h && D.Z.isLocalVideoAutoDisabled(h, (0, _.Z)(f)), [h, f]), P = (0, $.N)(o), j = (0, $.K)(o), [T, L] = i.useState(!1);
+  } = e, I = (0, a.e7)([Z.Z], () => null != h && Z.Z.isLocalVideoAutoDisabled(h, (0, _.Z)(f)), [h, f]), P = (0, $.N)(o), j = (0, $.K)(o), [T, L] = i.useState(!1);
   i.useEffect(() => {
     let e = !1,
       t = () => {
@@ -660,7 +660,7 @@ let em = i.memo(e => {
     platform: P,
     application: j,
     secureFramesVerified: T
-  } = e, L = null, w = null, A = null, R = (0, $.K)(f), k = (0, $.N)(f), M = (0, a.e7)([D.Z], () => null != N && D.Z.isLocalVideoAutoDisabled(N, (0, _.Z)(x)), [N, x]);
+  } = e, L = null, w = null, A = null, R = (0, $.K)(f), k = (0, $.N)(f), M = (0, a.e7)([Z.Z], () => null != N && Z.Z.isLocalVideoAutoDisabled(N, (0, _.Z)(x)), [N, x]);
   if (!C) {
     if (i && x === en.fO.STREAM && h && !v) L = (0, r.jsx)(c.ua7, {
       text: el.NW.string(el.t.YqAjX1),
@@ -707,7 +707,7 @@ let em = i.memo(e => {
       }
     })
   }
-  m && D.Z.supports(eo.AN.VIDEO) || !h ? m && h && b && !M && (w = (0, r.jsx)(c.Amn, {
+  m && Z.Z.supports(eo.AN.VIDEO) || !h ? m && h && b && !M && (w = (0, r.jsx)(c.Amn, {
     size: "md",
     color: "currentColor"
   })) : w = (0, r.jsx)(c.Odl, {
@@ -731,7 +731,7 @@ let em = i.memo(e => {
       }))
     }
   }));
-  let Z = x === en.fO.USER && null != j ? (0, r.jsx)(c.ua7, {
+  let D = x === en.fO.USER && null != j ? (0, r.jsx)(c.ua7, {
     text: el.NW.formatToPlainString(el.t.Sq9xJy, {
       game: j.name
     }),
@@ -816,7 +816,7 @@ let em = i.memo(e => {
         children: [null != w && (0, r.jsx)("div", {
           className: ea.status,
           children: w
-        }), L, A, Z]
+        }), L, A, D]
       })]
     })]
   })

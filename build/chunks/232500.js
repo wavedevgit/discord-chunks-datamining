@@ -1,5 +1,4 @@
-/** Chunk was on 75347 **/
-"use strict";
+/** Chunk was on 75607 **/
 e.exports = {
   container: "container_d878e7",
   profile: "profile_d878e7",

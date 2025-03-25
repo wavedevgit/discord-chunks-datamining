@@ -1,11 +1,8 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 48923 **/
 n.d(t, {
-  V: () => i,
   Y: () => r
 });
 let r = {
-    tension: 250,
-    friction: 20
-  },
-  i = "1333839522189938740"
+  tension: 250,
+  friction: 20
+}

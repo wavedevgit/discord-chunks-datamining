@@ -1,5 +1,5 @@
-/** Chunk was on 66063 **/
-var i = {
+/** Chunk was on 75607 **/
+var r = {
   recorderContainer: "recorderContainer__2636e " + n(618383).container,
   hasValue: "hasValue__2636e",
   addKeybindButton: "addKeybindButton__2636e " + n(618383).button,
@@ -11,4 +11,4 @@ var i = {
   editIcon: "editIcon__2636e",
   text: "text__2636e"
 };
-e.exports = i
+e.exports = r

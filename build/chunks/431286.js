@@ -17,7 +17,7 @@ var r = n(200651),
   g = n(479766),
   m = n(331663),
   b = n(921944),
-  v = n(642145);
+  v = n(46140);
 
 function y() {
   let {
@@ -56,7 +56,7 @@ function y() {
               dismissAction: b.L.USER_DISMISS_ALL,
               groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, p.navigateToQuestHome)({
-              questId: v.V
+              questId: v.V6
             }), n()
           }
         })

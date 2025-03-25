@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 71679 **/
 n.d(t, {
   Z: () => d
 });
 var r = n(200651),
   i = n(120356),
   o = n.n(i),
-  a = n(780384),
-  s = n(410030),
-  l = n(345119);
+  l = n(780384),
+  a = n(410030),
+  s = n(345119);
 let c = n(17702),
   u = n(647894),
   d = e => {
@@ -17,15 +16,15 @@ let c = n(17702),
       shouldUseThemeColor: n = !1,
       loading: i,
       className: d
-    } = e, f = (0, s.ZP)(), _ = n && (0, a.ap)(f) ? u : c, p = void 0 !== t ? {
-      height: t
-    } : void 0;
+    } = e, h = (0, a.ZP)(), b = n && (0, l.ap)(h) ? u : c;
     return (0, r.jsx)("img", {
-      className: o()(l.orbIconSVG, d, {
-        [l.loading]: i
+      className: o()(s.orbIconSVG, d, {
+        [s.loading]: i
       }),
-      src: _,
+      src: b,
       alt: "Orb Icon",
-      style: p
+      style: void 0 !== t ? {
+        height: t
+      } : void 0
     })
   }

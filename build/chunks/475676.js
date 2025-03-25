@@ -87,15 +87,15 @@ function x(e) {
     leaderboard: T,
     guildId: j
   });
-  let D = (0, a.q)(null == T ? void 0 : null === (t = T.settings) || void 0 === t ? void 0 : t.application_id);
-  if (null == T || null == D) return null;
+  let Z = (0, a.q)(null == T ? void 0 : null === (t = T.settings) || void 0 === t ? void 0 : t.application_id);
+  if (null == T || null == Z) return null;
   if (0 === T.users.length || null == A || null == k) return (0, r.jsx)(N, {
-    application: D,
+    application: Z,
     selected: S
   });
   let {
-    sort_by_statistic_id: Z
-  } = T.guild_settings, U = null !== (y = null == R ? void 0 : null === (g = R.statistics) || void 0 === g ? void 0 : null === (n = g[Z]) || void 0 === n ? void 0 : n.value) && void 0 !== y ? y : 0, {
+    sort_by_statistic_id: D
+  } = T.guild_settings, U = null !== (y = null == R ? void 0 : null === (g = R.statistics) || void 0 === g ? void 0 : null === (n = g[D]) || void 0 === n ? void 0 : n.value) && void 0 !== y ? y : 0, {
     currentRank: V
   } = A;
   return x = A.userId === w ? O.NW.formatToPlainString(O.t["eU+JxM"], {
@@ -107,7 +107,7 @@ function x(e) {
     selected: S,
     children: [(0, r.jsxs)(c.e$, {
       children: [(0, r.jsx)(C, {
-        application: D
+        application: Z
       }), (0, r.jsx)(l.LZC, {
         size: 2
       }), (0, r.jsx)(c.ll, {
@@ -116,7 +116,7 @@ function x(e) {
         location: s.Gt.CARD,
         children: (0, r.jsx)(m.DC, {
           value: U,
-          statisticId: Z
+          statisticId: D
         })
       })]
     }), (0, r.jsx)(b.Z, {

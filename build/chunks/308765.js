@@ -163,6 +163,11 @@ let i = {
     hasStoreChangeListeners: !0,
     loadRightBeforeConnectionOpen: !0
   },
+  MessageSessionMetadataManager: {
+    actions: ["MESSAGE_UPDATE", "MESSAGE_CREATE"],
+    inlineRequire: () => n(789110).Z,
+    neverLoadBeforeConnectionOpen: !0
+  },
   MultiAccountManager: {
     actions: ["LOGOUT"],
     inlineRequire: () => n(1627).Z,

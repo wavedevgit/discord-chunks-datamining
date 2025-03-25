@@ -1,4 +1,4 @@
-/** Chunk was on 6382 **/
+/** Chunk was on 75607 **/
 n.d(t, {
   Z: () => u
 }), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298);
@@ -9,7 +9,7 @@ var r = n(192379),
   l = n(804501),
   o = n(113434),
   c = n(581883),
-  d = n(642145);
+  d = n(46140);
 let u = () => {
   var e;
   let t = null !== (e = (0, i.e7)([c.Z], () => {
@@ -26,7 +26,7 @@ let u = () => {
     }, [u, m, n]),
     {
       handleResetStatusClick: p
-    } = (0, o.kJ)(d.V);
+    } = (0, o.kJ)(d.V6);
   return {
     resetOnboardingAnnouncementModal: g,
     resetQuestStatus: p

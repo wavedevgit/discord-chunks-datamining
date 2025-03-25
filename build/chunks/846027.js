@@ -102,14 +102,16 @@ let O = {
         type: "AUDIO_TOGGLE_SELF_MUTE",
         context: e,
         syncRemote: t,
-        skipMuteUnmuteSoundEffect: !i
+        playSoundEffect: i
       }) : this.enable(!0)
     },
     setSelfMute(e, t) {
+      let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
       S() || r.Z.dispatch({
         type: "AUDIO_SET_SELF_MUTE",
         context: e,
-        mute: t
+        mute: t,
+        playSoundEffect: n
       })
     },
     setTemporarySelfMute(e) {

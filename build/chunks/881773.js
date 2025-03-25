@@ -56,7 +56,7 @@ function _(e, t) {
   }), e
 }
 let x = "-:--",
-  N = {
+  D = {
     [O.rq.PLAYING]: {
       icon: d.fpf,
       label: C.NW.string(C.t.ZcgDJS)
@@ -71,7 +71,7 @@ let x = "-:--",
     }
   };
 
-function D(e) {
+function N(e) {
   let {
     current: t,
     duration: n
@@ -157,15 +157,15 @@ function T(e) {
     animSpring: T,
     visible: I,
     seekForwardEnabled: w,
-    hideCaptionBtn: A,
-    handlePlaybackBtnClick: k,
+    hideCaptionBtn: k,
+    handlePlaybackBtnClick: A,
     handleTranscriptBtnClick: L,
     handleCaptionBtnClick: R,
     handleFullScreenBtnClick: M,
     handleSeekBackBtnClick: V,
     handleSeekForwardBtnClick: q,
     handleControlBarPendingInteraction: B
-  } = e, F = (0, p.Q3)("ListSectionItem"), U = (0, v.km)(e => e.volume), Z = (0, v.km)(e => e.setVolume), Y = (0, v.km)(e => e.muted), Q = (0, v.km)(e => e.setMuted), W = (0, v.km)(e => e.transcriptEnabled), z = (0, v.km)(e => e.captionEnabled), G = (0, v.km)(e => e.fullScreenEnabled), H = (0, a.e7)([m.Z], () => m.Z.useReducedMotion), K = (0, a.e7)([m.Z], () => m.Z.keyboardModeEnabled), [X, $] = o.useState(Y ? 0 : U), [J, ee] = o.useState(!1), [et, en] = o.useState(!1), [{
+  } = e, F = (0, p.Q3)("ListSectionItem"), U = (0, v.km)(e => e.volume), Z = (0, v.km)(e => e.setVolume), Y = (0, v.km)(e => e.muted), W = (0, v.km)(e => e.setMuted), Q = (0, v.km)(e => e.transcriptEnabled), z = (0, v.km)(e => e.captionEnabled), G = (0, v.km)(e => e.fullScreenEnabled), H = (0, a.e7)([m.Z], () => m.Z.useReducedMotion), K = (0, a.e7)([m.Z], () => m.Z.keyboardModeEnabled), [X, $] = o.useState(Y ? 0 : U), [J, ee] = o.useState(!1), [et, en] = o.useState(!1), [{
     volumeAnimSpring: er
   }, eo] = (0, d.q_F)(() => ({
     from: {
@@ -187,18 +187,18 @@ function T(e) {
       }
     })
   }, [el]), ec = o.useCallback(() => {
-    null != i.current && (0 === X ? (es(U), Q(!1), ea(S.id, U)) : (Z(X), es(0), Q(!0), ea(S.id, 0)))
-  }, [i, X, es, U, Q, ea, S.id, Z]), eu = () => {
+    null != i.current && (0 === X ? (es(U), W(!1), ea(S.id, U)) : (Z(X), es(0), W(!0), ea(S.id, 0)))
+  }, [i, X, es, U, W, ea, S.id, Z]), eu = () => {
     ee(!0)
   }, ed = () => {
     ee(!1)
   }, em = o.useCallback(e => {
     switch (e.key) {
       case O.Y1.PLAYBACK:
-        k();
+        A();
         break;
       case O.Y1.SPACE:
-        K || (e.preventDefault(), k());
+        K || (e.preventDefault(), A());
         break;
       case O.Y1.SEEK_BACK:
         V();
@@ -215,7 +215,7 @@ function T(e) {
       case O.Y1.MUTE:
         ec()
     }
-  }, [R, M, k, V, q, ec, K]);
+  }, [R, M, A, V, q, ec, K]);
   o.useEffect(() => {
     null != ei.current && ei.current.focus()
   }, []), o.useEffect(() => (eo({
@@ -230,7 +230,7 @@ function T(e) {
     {
       icon: ef,
       label: ev
-    } = N[x];
+    } = D[x];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: j.videoControlsGroup,
@@ -241,7 +241,7 @@ function T(e) {
         ariaLabel: ev,
         tooltipLabel: ev,
         shortcut: O.Y1.PLAYBACK,
-        onClick: k,
+        onClick: A,
         ref: ei
       }), (0, r.jsx)(P, {
         iconComponent: E.d,
@@ -317,7 +317,7 @@ function T(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              es(e), Z(e), ea(S.id, e), et && (en(!1), B(!1)), Y && e > 0 && Q(!1)
+              es(e), Z(e), ea(S.id, e), et && (en(!1), B(!1)), Y && e > 0 && W(!1)
             },
             asValueChanges: e => {
               es(e), et || (en(!0), B(!0))
@@ -329,7 +329,7 @@ function T(e) {
             "aria-label": C.NW.string(C.t["eIl+AA"])
           }))
         })]
-      }), (0, r.jsx)(D, {
+      }), (0, r.jsx)(N, {
         current: null == i ? void 0 : null === (t = i.current) || void 0 === t ? void 0 : t.currentTime,
         duration: null == i ? void 0 : null === (n = i.current) || void 0 === n ? void 0 : n.duration
       })]
@@ -340,11 +340,11 @@ function T(e) {
         animationTime: T,
         visible: I,
         onClick: L,
-        active: W && x !== O.rq.ENDED,
+        active: Q && x !== O.rq.ENDED,
         disabled: x === O.rq.ENDED,
         ariaLabel: C.NW.string(C.t.KCzjTk),
         tooltipLabel: C.NW.string(C.t.KCzjTk)
-      }), !A && (0, r.jsx)(P, {
+      }), !k && (0, r.jsx)(P, {
         iconComponent: g.c,
         animationTime: T,
         visible: I,

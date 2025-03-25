@@ -896,13 +896,13 @@ function tQ(e) {
 function tX(e) {
   let {
     context: t,
-    skipMuteUnmuteSoundEffect: n
+    playSoundEffect: n
   } = e, {
     mute: r,
     deaf: i
   } = tE(t);
   if (t === eh.Yn.DEFAULT && (Z.Z.requestPermission(e_.Eu.AUDIO), ez)) return !1;
-  (r = !i && !r) || (i = !1), n && (eJ = !0), tD({
+  (r = !i && !r) || (i = !1), n || (eJ = !0), tD({
     mute: r,
     deaf: i
   }, t), ej.eachConnection(ty)
@@ -911,11 +911,12 @@ function tX(e) {
 function tJ(e) {
   let {
     context: t,
-    mute: n
+    mute: n,
+    playSoundEffect: r
   } = e;
   tD({
     mute: n
-  }, t), ej.eachConnection(ty)
+  }, t), r || (eJ = !0), ej.eachConnection(ty)
 }
 
 function t$(e) {

@@ -22,12 +22,12 @@ let S = function(e) {
     questContent: S,
     taskDetails: j,
     location: p
-  } = e, f = (0, u.DD)({
+  } = e, A = (0, u.DD)({
     quest: s,
     taskDetails: j,
     location: p,
     questContent: S
-  }), A = (0, o.j)({
+  }), f = (0, o.j)({
     location: m.dr.QUESTS_BAR_MOBILE
   });
   return (0, n.jsxs)("div", {
@@ -49,8 +49,8 @@ let S = function(e) {
       children: [(0, n.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-normal",
-        children: f
-      }), A && (0, n.jsx)(a.Z, {
+        children: A
+      }), f && (0, n.jsx)(a.Z, {
         textColor: "text-muted",
         withRewardName: !0,
         quest: s

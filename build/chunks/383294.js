@@ -17,7 +17,7 @@ var n = r(200651),
   p = r(272008),
   y = r(497505),
   O = r(918701),
-  j = r(642145),
+  j = r(46140),
   g = r(215023),
   h = r(388032),
   C = r(435696),
@@ -74,7 +74,7 @@ function S(e) {
         variant: "heading-lg/medium",
         color: "always-white",
         className: C.title,
-        children: h.NW.formatToPlainString(h.t.rtV7xM, {
+        children: h.NW.formatToPlainString(h.t.Kr9pYW, {
           balance: a
         })
       }), (0, n.jsx)(c.Text, {
@@ -84,7 +84,7 @@ function S(e) {
       }), (0, n.jsx)(c.zxk, {
         className: C.ctaBtn,
         onClick: o,
-        children: h.NW.string(h.t.iEw2Nz)
+        children: h.NW.string(h.t.WYchdX)
       })]
     }) : (0, n.jsxs)("div", {
       className: C.errorContainer,
@@ -178,7 +178,7 @@ function N(e) {
         openInLayer: !1,
         tab: g.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: o.id === j.V ? s.Z.INTRO_TO_ORBS_QUEST : s.Z.QUEST_HOME_PAGE
+        analyticsSource: o.id === j.V6 ? s.Z.INTRO_TO_ORBS_QUEST : s.Z.QUEST_HOME_PAGE
       }), v({
         delayMS: 300
       })
