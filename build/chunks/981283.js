@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 });
 var r = n(200651);
 n(192379);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 let T = (0, i.debounce)(l.xc, 1e3),
-  N = {
+  A = {
     init() {
       g.Z.init(), b.ZP.initializeIfNeeded(), a.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
         let {
@@ -84,7 +84,7 @@ let T = (0, i.debounce)(l.xc, 1e3),
           } = e;
           if (t !== _.default.getId()) return;
           let n = f.Z.getAllActiveStreams(),
-            r = h.Z.getChannelId();
+            r = h.ZP.getChannelId();
           n.forEach(e => {
             e.channelId !== r && (0, v.Z)(e, !1)
           })

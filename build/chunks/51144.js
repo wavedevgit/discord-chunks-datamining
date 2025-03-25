@@ -3,8 +3,8 @@
 n.d(t, {
   EO: () => S,
   Fc: () => I,
-  Ft: () => A,
-  W5: () => N,
+  Ft: () => N,
+  W5: () => A,
   ZP: () => C,
   _T: () => E,
   oY: () => g,
@@ -81,7 +81,7 @@ function v(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null == e) return d;
   let r = b(e),
-    i = n ? N(e) : null !== (t = e.username) && void 0 !== t ? t : d;
+    i = n ? A(e) : null !== (t = e.username) && void 0 !== t ? t : d;
   return r === i ? r : null != r ? "".concat(r, " (").concat(i, ")") : i
 }
 
@@ -141,13 +141,13 @@ function T(e, t, n) {
   return "never" !== t.decoration ? _(i) : i
 }
 
-function N(e, t) {
+function A(e, t) {
   let n = c({}, p, t),
     r = "auto" !== n.identifiable || i.Z.hidePersonalInformation;
   return T(e, n, r)
 }
 
-function A(e) {
+function N(e) {
   return (0, r.e7)([o.default], () => {
     if (null != e) return e.isPrivate() && e.isDM() ? o.default.getUser(e.getRecipientId()) : null
   })
@@ -156,12 +156,12 @@ let C = {
   getName: g,
   useName: E,
   isNameConcealed: e => 4 === e.length && e.endsWith("..."),
-  getUserTag: N,
+  getUserTag: A,
   useUserTag: function(e, t) {
     return T(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
   },
   getFormattedName: v,
   getGlobalName: b,
   humanizeStatus: y,
-  useDirectMessageRecipient: A
+  useDirectMessageRecipient: N
 }

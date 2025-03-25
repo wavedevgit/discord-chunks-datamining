@@ -64,14 +64,14 @@ function y(e) {
       timeSinceLastDrop: N,
       onResetFrameData: C,
       droppedFramesRef: Z,
-      renderedFrameCount: w,
-      bufferFramecountRef: P,
+      renderedFrameCount: P,
+      bufferFramecountRef: w,
       frameCheckerEffect: _
     } = (0, u.d6)(!0, j, !0),
     [T, D, A] = (0, u.ZF)(y),
     [k, L] = (0, u.Y5)(T, _, b),
     R = performance.now() - x.current < u.MC,
-    M = D(S, P.current);
+    M = D(S, w.current);
   (0, c.ZP)(() => (k(), () => {
     L()
   }));
@@ -148,7 +148,7 @@ function y(e) {
           variant: "code",
           color: "text-secondary",
           className: g.secondaryInfoText,
-          children: ["(", (Z.current / w.current * 100).toFixed(3), "%)"]
+          children: ["(", (Z.current / P.current * 100).toFixed(3), "%)"]
         })]
       })]
     }), (H || !t) && (0, i.jsxs)("div", {
@@ -168,7 +168,7 @@ function y(e) {
           tag: "span",
           variant: "code",
           color: "text-primary",
-          children: w.current.toFixed(0)
+          children: P.current.toFixed(0)
         })]
       })]
     }), (Q || !t) && (0, i.jsxs)("div", {

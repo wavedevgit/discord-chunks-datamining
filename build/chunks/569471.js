@@ -109,14 +109,14 @@ function T(e) {
   E(t.id)
 }
 
-function N(e) {
+function A(e) {
   let {
     channel: t
   } = e;
   v(t)
 }
 
-function A(e) {
+function N(e) {
   let {
     guildId: t,
     members: n
@@ -219,12 +219,12 @@ let L = new D(s.Z, {
     OVERLAY_INITIALIZE: I,
     GUILD_CREATE: S,
     GUILD_DELETE: T,
-    THREAD_CREATE: N,
-    THREAD_LIST_SYNC: A,
-    SEARCH_FINISH: A,
-    MOD_VIEW_SEARCH_FINISH: A,
-    LOAD_THREADS_SUCCESS: A,
-    LOAD_ARCHIVED_THREADS_SUCCESS: A,
+    THREAD_CREATE: A,
+    THREAD_LIST_SYNC: N,
+    SEARCH_FINISH: N,
+    MOD_VIEW_SEARCH_FINISH: N,
+    LOAD_THREADS_SUCCESS: N,
+    LOAD_ARCHIVED_THREADS_SUCCESS: N,
     THREAD_DELETE: C,
     THREAD_MEMBER_UPDATE: R,
     THREAD_MEMBER_LOCAL_UPDATE: P,

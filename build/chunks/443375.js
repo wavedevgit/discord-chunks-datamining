@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(273284),
   S = n(232174),
   T = n(510659),
-  N = n(287954),
-  A = n(660579),
+  A = n(287954),
+  N = n(660579),
   C = n(652853),
   R = n(64621),
   P = n(979038),
@@ -254,7 +254,7 @@ function K(e) {
     children: (0, r.jsx)(R.Z, {
       sourceType: B.n_.ACTIVITY,
       user: n,
-      children: (0, r.jsx)(N.Z, {
+      children: (0, r.jsx)(A.Z, {
         user: n,
         guildId: Q,
         profileType: ee,
@@ -263,7 +263,7 @@ function K(e) {
         entry: ei,
         onAction: ea,
         sourceType: B.n_.ACTIVITY,
-        children: () => (0, r.jsx)(A.Z, {
+        children: () => (0, r.jsx)(N.Z, {
           user: n,
           className: H.toolbarContainer,
           interactionSourceId: ey,

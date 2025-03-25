@@ -90,11 +90,11 @@ let b = e => {
   S = {},
   T = {};
 
-function N(e) {
+function A(e) {
   v.set(e.id, e), y += 1
 }
 
-function A(e) {
+function N(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   v.delete(e), delete S[e], t && delete T[e], y += 1
 }
@@ -144,14 +144,14 @@ function x(e) {
   let {
     guilds: t
   } = e;
-  return v.clear(), y = 0, S = {}, T = {}, O.forEach(N), t.forEach(e => e.guild_scheduled_events.forEach(e => N(e))), !0
+  return v.clear(), y = 0, S = {}, T = {}, O.forEach(A), t.forEach(e => e.guild_scheduled_events.forEach(e => A(e))), !0
 }
 
 function M(e) {
   let {
     guildScheduledEvent: t
   } = e;
-  N(t)
+  A(t)
 }
 
 function k(e) {
@@ -160,8 +160,8 @@ function k(e) {
     guildScheduledEvents: n
   } = e, r = v.values(g.GUILD_EVENT(t), !0).map(e => e.id), i = n.map(e => e.id);
   for (let e of (o().difference(r, i).forEach(e => {
-      A(e)
-    }), n)) N(e);
+      N(e)
+    }), n)) A(e);
   return !0
 }
 
@@ -169,7 +169,7 @@ function j(e) {
   let {
     guild: t
   } = e;
-  return G(t.id, !1), t.guild_scheduled_events.forEach(e => N(e)), !0
+  return G(t.id, !1), t.guild_scheduled_events.forEach(e => A(e)), !0
 }
 
 function U(e) {
@@ -180,21 +180,21 @@ function U(e) {
 }
 
 function G(e, t) {
-  v.values(g.GUILD_EVENT(e)).forEach(e => A(e.id, t))
+  v.values(g.GUILD_EVENT(e)).forEach(e => N(e.id, t))
 }
 
 function B(e) {
   let {
     guildScheduledEvent: t
   } = e;
-  return N(t), !0
+  return A(t), !0
 }
 
 function F(e) {
   let {
     guildScheduledEvent: t
   } = e;
-  return A(t.id), !0
+  return N(t.id), !0
 }
 
 function V(e) {
@@ -204,7 +204,7 @@ function V(e) {
   if (null == n) return !1;
   let r = n.guild_scheduled_event_exceptions.findIndex(e => e.event_exception_id === t.event_exception_id),
     i = [...n.guild_scheduled_event_exceptions];
-  return r < 0 ? i.push(t) : i[r] = t, N(m(p({}, n), {
+  return r < 0 ? i.push(t) : i[r] = t, A(m(p({}, n), {
     guild_scheduled_event_exceptions: i
   })), !0
 }
@@ -215,7 +215,7 @@ function Z(e) {
   } = e, n = v.get(t.event_id);
   if (null == n) return !1;
   let r = n.guild_scheduled_event_exceptions.filter(e => e.event_exception_id !== t.event_exception_id);
-  return N(m(p({}, n), {
+  return A(m(p({}, n), {
     guild_scheduled_event_exceptions: r
   })), !0
 }
@@ -224,7 +224,7 @@ function H(e) {
   let {
     eventId: t
   } = e, n = v.get(t);
-  return null != n && (N(m(p({}, n), {
+  return null != n && (A(m(p({}, n), {
     guild_scheduled_event_exceptions: []
   })), !0)
 }
@@ -296,7 +296,7 @@ function X(e) {
   let {
     invite: t
   } = e, n = t.guild_scheduled_event;
-  return null != n && (N(n), !0)
+  return null != n && (A(n), !0)
 }
 
 function J(e) {

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B4: () => O,
-  Nx: () => m,
-  UV: () => y,
-  WR: () => v,
-  lr: () => E,
-  t7: () => g
+  B4: () => y,
+  Nx: () => h,
+  UV: () => v,
+  WR: () => b,
+  lr: () => g,
+  t7: () => m
 }), n(47120);
 var r = n(192379),
   i = n(913527),
@@ -16,49 +16,48 @@ var r = n(192379),
   l = n(78839),
   c = n(775412),
   u = n(695349),
-  d = n(464900),
-  f = n(104494),
-  _ = n(639119),
-  p = n(474936),
-  h = n(981631);
+  d = n(104494),
+  f = n(639119),
+  _ = n(474936),
+  p = n(981631);
 
-function m() {
-  let e = (0, _.N)(),
+function h() {
+  let e = (0, f.N)(),
     t = (0, c._O)(),
-    n = (0, f.Ng)(),
-    r = g();
+    n = (0, d.Ng)(),
+    r = m();
   return null != e || t || null != n || r
 }
-let g = () => {
+let m = () => {
     var e;
     let t = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
       n = null == t ? void 0 : null === (e = t.metadata) || void 0 === e ? void 0 : e.active_discount_expires_at;
     return null != n && o()(Date.now()) <= o()(n)
   },
-  E = () => {
+  g = () => {
     var e;
     let t = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription());
     switch (null == t ? void 0 : null === (e = t.metadata) || void 0 === e ? void 0 : e.active_discount_id) {
-      case p.dT:
-      case p.rB:
+      case _.dT:
+      case _.rB:
         return {
           duration: 1, percentage: 30
         };
-      case p.dB:
-      case p.hs:
-      case p.RU:
+      case _.dB:
+      case _.hs:
+      case _.RU:
         return {
           duration: 3, percentage: 30
         };
-      case p.ih:
+      case _.ih:
         return {
           duration: 1, percentage: 40
         };
-      case p.gW:
+      case _.gW:
         return {
           duration: 1, percentage: 20
         };
-      case p.Nl:
+      case _.Nl:
         return {
           duration: 1, percentage: 25
         };
@@ -66,18 +65,18 @@ let g = () => {
         return
     }
   },
-  b = async () => {
+  E = async () => {
     let e = null;
     try {
       var t;
       let n = await s.tn.post({
-        url: h.ANM.CHURN_USER_OFFER,
+        url: p.ANM.CHURN_USER_OFFER,
         rejectWithError: !0
       });
       e = null !== (t = n.body.offer) && void 0 !== t ? t : null
     } catch (e) {}
     return e
-  }, v = e => {
+  }, b = e => {
     let [t, n] = r.useState(!1), [i, o] = r.useState(!1), [a, s] = r.useState(null);
     if (e) return {
       churnUserDiscountOffer: a,
@@ -86,7 +85,7 @@ let g = () => {
     let l = () => {
       n(!0), o(!1)
     };
-    return i || t || (o(!0), b().then(e => {
+    return i || t || (o(!0), E().then(e => {
       s(e), l()
     }).catch(e => {
       l()
@@ -94,23 +93,10 @@ let g = () => {
       churnUserDiscountOffer: a,
       isFetchingChurnDiscountOffer: i
     }
-  }, y = () => {
+  }, v = () => {
     let e = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
-      t = g(),
+      t = m(),
       n = null !== e && e.hasPremiumNitroMonthly,
       r = null != e && null != e.trialId;
     return n && !r && !t
-  }, O = e => {
-    let {
-      location: t
-    } = e, n = (0, a.e7)([l.ZP], () => {
-      let e = l.ZP.getPremiumTypeSubscription();
-      return (null == e ? void 0 : e.trialId) === p.i_
-    }), r = (0, u.W)(), i = d.L.useExperiment({
-      location: t
-    }, {
-      disable: !n,
-      autoTrackExposure: n
-    }).enabled;
-    return n && i || r
-  }
+  }, y = () => (0, u.W)()

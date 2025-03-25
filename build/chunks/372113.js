@@ -102,33 +102,34 @@ function k(e) {
     location: o,
     questContentPosition: i,
     inGiftInventory: u
-  } = e, d = n >= x.OH.COMPLETED, m = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), p = (0, a.e7)([g.Z], () => g.Z.isEnrolling(t.id)), h = (0, f.q8)(t), j = (0, E.Ks)({
+  } = e, d = n >= x.OH.COMPLETED, m = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), p = (0, a.e7)([g.Z], () => g.Z.isEnrolling(t.id)), h = (0, f.q8)(t), j = (0, f.Vl)(t), b = (0, E.Ks)({
     progressState: n,
     quest: t,
     location: o,
     isCollectibleQuest: s,
     questContentPosition: i,
     inGiftInventory: u,
-    isVideoQuest: h
-  }), b = d && !m ? l.gtL : l.zxk;
+    isVideoQuest: h,
+    inGameQuest: j
+  }), C = d && !m ? l.gtL : l.zxk;
   return (0, r.jsx)(l.ua7, {
-    text: j.tooltipText,
+    text: b.tooltipText,
     tooltipContentClassName: D.ctaTooltipText,
     children: e => {
       var t;
-      return (0, r.jsx)(b, A(M({}, e), {
+      return (0, r.jsx)(C, A(M({}, e), {
         wrapperClassName: D.ctaButtonWrapper,
         color: l.Ttl.BRAND,
-        disabled: null == j.onClick,
+        disabled: null == b.onClick,
         submitting: p,
-        onClick: null !== (t = j.onClick) && void 0 !== t ? t : () => {},
+        onClick: null !== (t = b.onClick) && void 0 !== t ? t : () => {},
         children: (0, r.jsx)("div", {
           className: D.ctaButtonInner,
-          children: j.text
+          children: b.text
         })
       }))
     }
-  }, j.tooltipText)
+  }, b.tooltipText)
 }
 let L = e => {
   let {

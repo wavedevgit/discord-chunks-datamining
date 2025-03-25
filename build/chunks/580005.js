@@ -75,7 +75,7 @@ let v = 10,
   S = null,
   T = null;
 
-function N(e) {
+function A(e) {
   let {
     guildId: t,
     channelId: n
@@ -89,7 +89,7 @@ function N(e) {
   }))), r
 }
 
-function A(e) {
+function N(e) {
   let {
     settings: {
       type: t
@@ -143,7 +143,7 @@ class P extends(r = a.ZP.PersistedStore) {
 }
 m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
 let w = new P(s.Z, {
-  CHANNEL_SELECT: N,
-  VOICE_CHANNEL_SELECT: N,
-  USER_SETTINGS_PROTO_UPDATE: A
+  CHANNEL_SELECT: A,
+  VOICE_CHANNEL_SELECT: A,
+  USER_SETTINGS_PROTO_UPDATE: N
 })

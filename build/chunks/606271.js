@@ -59,7 +59,7 @@ class P {
         reason: t
       })
     };
-    let e = [s.Z, c.ZP, p.Z, b.Z, d.Z, h.Z];
+    let e = [s.Z, c.ZP, p.Z, b.Z, d.Z, h.ZP];
     new l.Fh(e.concat(this.stores), () => this.rpcServer.updateSubscriptions()).attach("RPCServerManager"), o.Z.subscribe("MESSAGE_CREATE", this.handleMessage), o.Z.subscribe("MESSAGE_UPDATE", this.handleMessage), o.Z.subscribe("MESSAGE_DELETE", this.handleMessage), o.Z.subscribe("SPEAKING", this.handleSpeaking), o.Z.subscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), o.Z.subscribe("GUILD_CREATE", this.handleGuildCreate), o.Z.subscribe("CHANNEL_CREATE", this.handleChannelCreate), o.Z.subscribe("LOGOUT", this.handleLogout), o.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), o.Z.subscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), o.Z.subscribe("ACTIVITY_JOIN", this.handleActivityJoin), o.Z.subscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), o.Z.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), o.Z.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), o.Z.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), o.Z.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), o.Z.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), o.Z.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), o.Z.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), o.Z.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace), o.Z.subscribe("USER_UPDATE", this.handleUserUpdate), o.Z.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), o.Z.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
   }
   terminate() {

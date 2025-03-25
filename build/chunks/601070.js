@@ -60,20 +60,20 @@ let O = {},
   I = {},
   S = {},
   T = {},
-  N = {},
   A = {},
+  N = {},
   C = null,
   R = {};
 
 function P() {
-  for (let e in O = {}, N = {}, I = {}, S = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
+  for (let e in O = {}, A = {}, I = {}, S = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
   R = {}, p.Z.forEachGuild(e => {
     D(e)
   }), L()
 }
 
 function w(e) {
-  for (let t in delete O[e], delete N[e], delete I[e], delete S[e], delete T[e], D(e), S[e]) M(e, t)
+  for (let t in delete O[e], delete A[e], delete I[e], delete S[e], delete T[e], D(e), S[e]) M(e, t)
 }
 
 function D(e) {
@@ -94,7 +94,7 @@ function D(e) {
             isRelevant: i,
             isTimedRelevant: o
           } = q(e);
-        $(O, e, n, !1), $(N, e, i ? n : null, !1), $(I, e, r ? n : null, !1), o && Q(e, !0)
+        $(O, e, n, !1), $(A, e, i ? n : null, !1), $(I, e, r ? n : null, !1), o && Q(e, !0)
       } else {
         $(S, e, e, !1);
         let t = d.ZP.isForumPostUnread(e.id);
@@ -104,7 +104,7 @@ function D(e) {
 }
 
 function L() {
-  for (let e in A = {}, S)
+  for (let e in N = {}, S)
     for (let t in S[e]) M(e, t)
 }
 
@@ -115,7 +115,7 @@ function x(e) {
 
 function M(e, t) {
   let n = c.Z.getChannel(t);
-  if (null == n || !n.isForumLikeChannel() || (null == A[e] && (A[e] = {}), A[e][t] = 0, null == S[e] || null == S[e][t])) return;
+  if (null == n || !n.isForumLikeChannel() || (null == N[e] && (N[e] = {}), N[e][t] = 0, null == S[e] || null == S[e][t])) return;
   let r = u.Z.getGuild(e);
   if (null == r) return;
   let i = d.ZP.getTrackedAckMessageId(t);
@@ -123,7 +123,7 @@ function M(e, t) {
     let e = Date.now();
     null != r.joinedAt && (r.joinedAt instanceof Date ? e = r.joinedAt.getTime() : "string" == typeof r.joinedAt && (e = new Date(r.joinedAt).getTime())), i = _.default.fromTimestamp(e)
   }
-  for (let n in S[e][t]) t === C ? d.ZP.isNewForumThread(n, t, r) && A[e][t]++ : _.default.compare(n, i) > 0 && !d.ZP.hasOpenedThread(n) && A[e][t]++
+  for (let n in S[e][t]) t === C ? d.ZP.isNewForumThread(n, t, r) && N[e][t]++ : _.default.compare(n, i) > 0 && !d.ZP.hasOpenedThread(n) && N[e][t]++
 }
 
 function k(e, t, n) {
@@ -141,13 +141,13 @@ function k(e, t, n) {
           isRelevant: n,
           isTimedRelevant: o
         } = q(r);
-      $(O, r, e, !0), $(N, r, n ? e : null, !0), $(I, r, t ? e : null, !0), $(S, r, null, !0), $(T, r, null, !0), Q(r, o)
+      $(O, r, e, !0), $(A, r, n ? e : null, !0), $(I, r, t ? e : null, !0), $(S, r, null, !0), $(T, r, null, !0), Q(r, o)
     } else {
       let e = d.ZP.isForumPostUnread(r.id);
-      $(O, r, null, !0), $(I, r, null, !0), $(N, r, null, !0), $(S, r, r, !0), $(T, r, e ? r : null, !0), J(r.id)
+      $(O, r, null, !0), $(I, r, null, !0), $(A, r, null, !0), $(S, r, r, !0), $(T, r, e ? r : null, !0), J(r.id)
     }
     M(e, t)
-  } else ee(O, e, t, n), ee(N, e, t, n), ee(I, e, t, n), ee(S, e, t, n), ee(T, e, t, n), J(n), M(e, t)
+  } else ee(O, e, t, n), ee(A, e, t, n), ee(I, e, t, n), ee(S, e, t, n), ee(T, e, t, n), J(n), M(e, t)
 }
 
 function j(e) {
@@ -186,7 +186,7 @@ function B(e) {
   let {
     channel: t
   } = e, n = !1;
-  return null != t.guild_id && null != t.parent_id && (t.guild_id in O && t.parent_id in O[t.guild_id] && (delete O[t.guild_id][t.parent_id], n = !0), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = !0), t.guild_id in N && t.parent_id in N[t.guild_id] && (_.default.keys(N[t.guild_id][t.parent_id]).forEach(J), delete N[t.guild_id][t.parent_id], n = !0), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = !0), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = !0), n && M(t.guild_id, t.parent_id)), n
+  return null != t.guild_id && null != t.parent_id && (t.guild_id in O && t.parent_id in O[t.guild_id] && (delete O[t.guild_id][t.parent_id], n = !0), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = !0), t.guild_id in A && t.parent_id in A[t.guild_id] && (_.default.keys(A[t.guild_id][t.parent_id]).forEach(J), delete A[t.guild_id][t.parent_id], n = !0), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = !0), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = !0), n && M(t.guild_id, t.parent_id)), n
 }
 
 function F(e) {
@@ -204,7 +204,7 @@ function V(e) {
     } = t;
     if (!l.Ec.has(t.type)) {
       var n;
-      return Number(null === (n = A[e]) || void 0 === n ? void 0 : n[t.id]) > 0 && (M(e, t.id), !0)
+      return Number(null === (n = N[e]) || void 0 === n ? void 0 : n[t.id]) > 0 && (M(e, t.id), !0)
     }
     if (null == r) return !1;
     if (et(O, t)) {
@@ -215,12 +215,12 @@ function V(e) {
       } = q(t);
       Q(t, o);
       let a = et(I, t),
-        s = et(N, t);
+        s = et(A, t);
       if (n === a && i === s) return !1;
       let l = O[e][r][t.id],
         c = n ? l : null,
         u = i ? l : null;
-      $(I, t, c, !0), $(N, t, u, !0), M(e, r)
+      $(I, t, c, !0), $(A, t, u, !0), M(e, r)
     } else {
       let e = et(T, t),
         n = d.ZP.isForumPostUnread(t.id);
@@ -231,7 +231,7 @@ function V(e) {
 }
 
 function Z() {
-  for (let e in I = {}, N = {}, O)
+  for (let e in I = {}, A = {}, O)
     for (let t in O[e])
       for (let n in O[e][t]) {
         let r = O[e][t][n],
@@ -240,7 +240,7 @@ function Z() {
             isRelevant: o,
             isTimedRelevant: a
           } = q(r.channel);
-        i && $(I, r.channel, r, !1), o && $(N, r.channel, r, !1), Q(r.channel, a)
+        i && $(I, r.channel, r, !1), o && $(A, r.channel, r, !1), Q(r.channel, a)
       }
   for (let e in T = {}, S)
     for (let t in S[e])
@@ -368,7 +368,7 @@ class el extends(r = a.ZP.Store) {
   }
   getActiveJoinedRelevantThreadsForGuild(e) {
     var t;
-    return null !== (t = N[e]) && void 0 !== t ? t : er
+    return null !== (t = A[e]) && void 0 !== t ? t : er
   }
   getActiveJoinedRelevantThreadsForParent(e, t) {
     var n;
@@ -388,7 +388,7 @@ class el extends(r = a.ZP.Store) {
   }
   getNewThreadCountsForGuild(e) {
     var t;
-    return null !== (t = A[e]) && void 0 !== t ? t : es
+    return null !== (t = N[e]) && void 0 !== t ? t : es
   }
   computeAllActiveJoinedThreads(e) {
     let t = [];
@@ -400,7 +400,7 @@ class el extends(r = a.ZP.Store) {
   }
   getNewThreadCount(e, t) {
     var n, r;
-    return null !== (r = null === (n = A[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : 0
+    return null !== (r = null === (n = N[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : 0
   }
   getActiveThreadCount(e, t) {
     var n, r, i, a;

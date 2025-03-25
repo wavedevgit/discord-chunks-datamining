@@ -66,15 +66,15 @@ function T() {
   return v.darkSidebar = !v.darkSidebar, !0
 }
 
-function N() {
+function A() {
   var e;
   let t = a.ZP.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
   return null !== (e = null == t ? void 0 : t.darkSidebar) && void 0 !== e && e
 }
-class A extends(r = a.ZP.DeviceSettingsStore) {
+class N extends(r = a.ZP.DeviceSettingsStore) {
   initialize(e) {
     var t;
-    (v = null != e ? e : {}).darkSidebar = null !== (t = v.darkSidebar) && void 0 !== t ? t : N()
+    (v = null != e ? e : {}).darkSidebar = null !== (t = v.darkSidebar) && void 0 !== t ? t : A()
   }
   getUserAgnosticState() {
     return v
@@ -198,13 +198,13 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
     return null === (e = v.chatScrollRefactorEnabled) || void 0 === e || e
   }
 }
-p(A, "displayName", "UnsyncedUserSettingsStore"), p(A, "persistKey", "UnsyncedUserSettingsStore"), p(A, "migrations", [() => {
+p(N, "displayName", "UnsyncedUserSettingsStore"), p(N, "persistKey", "UnsyncedUserSettingsStore"), p(N, "migrations", [() => {
   let e = s.K.get("UserSettingsStore");
   return s.K.remove("UserSettingsStore"), o().pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations", "showPlayAgain")
 }, e => {
   delete e.disableVisualRefresh
 }]);
-let C = new A(l.Z, {
+let C = new N(l.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: y,
   LOGOUT: O,
   LOGIN_SUCCESS: I,

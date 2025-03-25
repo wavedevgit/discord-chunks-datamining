@@ -3,11 +3,11 @@
 n.d(t, {
   BU: () => R,
   Bn: () => w,
-  DZ: () => N,
+  DZ: () => A,
   PS: () => C,
   T6: () => I,
   Z1: () => x,
-  aj: () => A,
+  aj: () => N,
   bE: () => k,
   fy: () => g.fy,
   hW: () => T,
@@ -279,10 +279,10 @@ class S {
   }
 }
 let T = new S(c.o8, g.yP.PRELOADED_USER_SETTINGS),
-  N = new S(l.ji, g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
-  A = {
+  A = new S(l.ji, g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+  N = {
     [g.yP.PRELOADED_USER_SETTINGS]: T,
-    [g.yP.FRECENCY_AND_FAVORITES_SETTINGS]: N
+    [g.yP.FRECENCY_AND_FAVORITES_SETTINGS]: A
   };
 
 function C(e, t, n) {

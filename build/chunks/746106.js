@@ -31,8 +31,8 @@ function E(e) {
     currentWindow: I,
     fontScale: S,
     fontScaleClass: T,
-    keyboardModeEnabled: N,
-    saturation: A,
+    keyboardModeEnabled: A,
+    saturation: N,
     desaturateUserColors: C,
     useForcedColors: R,
     systemForcedColors: P,
@@ -58,12 +58,12 @@ function E(e) {
       confettiMode: f.Z.confettiMode
     }
   }), x = (0, c.Z)(I, __OVERLAY__ || O), M = 0;
-  1 !== A && (M = (0, s.OdO)(M, s.bgu.REDUCE_SATURATION_ENABLED));
+  1 !== N && (M = (0, s.OdO)(M, s.bgu.REDUCE_SATURATION_ENABLED));
   let k = (0, m.A)();
   return (0, r.jsx)(s.wMY, {
     theme: y,
     flags: M,
-    saturation: A,
+    saturation: N,
     density: k,
     children: (0, r.jsx)(g.cE, {
       isRefreshEnabled: E,
@@ -74,9 +74,9 @@ function E(e) {
       focused: O,
       fontScale: S,
       fontScaleClass: T,
-      keyboardModeEnabled: N,
+      keyboardModeEnabled: A,
       mouseMode: x,
-      saturation: A,
+      saturation: N,
       desaturateUserColors: C,
       useForcedColors: R,
       systemForcedColors: P,

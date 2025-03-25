@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(627341), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -27,24 +27,24 @@ let I = 200,
   S = 32,
   T = 30;
 
-function N(e) {
+function A(e) {
   let {
     sourceType: t,
     children: n,
-    user: N
+    user: A
   } = e, {
-    profileType: A
+    profileType: N
   } = (0, m.z)(), C = (0, h.T)({
     location: "UserProfilePopoutInteractionCoachmark"
   }), R = (0, a.e7)([p.default], () => {
     var e;
-    return (null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === N.id
-  }), P = (0, a.e7)([_.Z], () => _.Z.findActivity(N.id, e => {
+    return (null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === A.id
+  }), P = (0, a.e7)([_.Z], () => _.Z.findActivity(A.id, e => {
     let {
       type: t
     } = e;
     return t === E.IIU.CUSTOM_STATUS
-  })), w = !R && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => C && null == P).with(g.n_.STATUS, () => C).with(g.n_.ACTIVITY, () => !C).exhaustive(), [D, L] = i.useState(!1);
+  })), w = !R && N === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => C && null == P).with(g.n_.STATUS, () => C).with(g.n_.ACTIVITY, () => !C).exhaustive(), [D, L] = i.useState(!1);
   (0, c.Z)(() => L(!0), w ? I : null);
   let {
     asset: x,

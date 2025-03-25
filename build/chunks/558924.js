@@ -28,16 +28,16 @@ function j(e, t) {
   } = Z.Z.useExperiment({
     guildId: null == a ? void 0 : a.guild_id,
     location: "useRingHangupItem"
-  }), y = !f || (null == n ? void 0 : n.length) === 0 || null == t, _ = j && (null == a ? void 0 : a.guild_id) != null, P = null == i, W = null != i && i.type === m.fO.USER && i.ringing, E = [];
-  _ && !y && (P || W) && E.push(s.z.RING_USER_TO_VC_NEW_BADGE);
+  }), y = !f || (null == n ? void 0 : n.length) === 0 || null == t, P = j && (null == a ? void 0 : a.guild_id) != null, _ = null == i, W = null != i && i.type === m.fO.USER && i.ringing, E = [];
+  P && !y && (_ || W) && E.push(s.z.RING_USER_TO_VC_NEW_BADGE);
   let [I, A] = (0, b.US)(E), S = I === s.z.RING_USER_TO_VC_NEW_BADGE;
-  return y ? null : P ? (0, l.jsx)(u.sNh, {
+  return y ? null : _ ? (0, l.jsx)(u.sNh, {
     id: "ring",
-    label: _ ? (0, l.jsxs)("div", {
+    label: P ? (0, l.jsxs)("div", {
       className: O.label,
       children: [p.NW.string(p.t["3Hv9qa"]), S && (0, l.jsx)(h, {})]
     }) : p.NW.string(p.t.bHa9kJ),
-    subtext: _ ? (0, l.jsx)(x, {
+    subtext: P ? (0, l.jsx)(x, {
       channel: a
     }) : null,
     action: () => {
@@ -50,7 +50,7 @@ function j(e, t) {
       className: O.label,
       children: [p.NW.string(p.t.ygslb2), S && (0, l.jsx)(h, {})]
     }),
-    subtext: _ ? (0, l.jsx)(u.Text, {
+    subtext: P ? (0, l.jsx)(u.Text, {
       variant: "text-xs/medium",
       className: r()(O.subtext, O.ringing),
       children: p.NW.format(p.t.dwfzZm, {

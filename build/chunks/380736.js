@@ -38,8 +38,8 @@ let E = i.memo(function(e) {
     icon: j,
     body: w,
     title: Z,
-    renderFooter: C,
-    contentOpacity: P,
+    renderFooter: P,
+    contentOpacity: C,
     status: N,
     containerRef: I,
     className: _,
@@ -77,12 +77,12 @@ let E = i.memo(function(e) {
           [g.clickable]: null != E
         }, _),
         children: function() {
-          let e = null == C ? void 0 : C(D, k);
+          let e = null == P ? void 0 : P(D, k);
           return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(a.animated.div, {
               className: g.iconAndDetails,
               style: {
-                opacity: P
+                opacity: C
               },
               children: [null == j ? null : "string" == typeof j ? (0, r.jsx)(c.qEK, {
                 src: j,
@@ -213,9 +213,9 @@ function x(e) {
     null == p || p(e, d)
   }, [p, d]), Z = i.useCallback(e => {
     null == v || v(e, d)
-  }, [v, d]), C = i.useCallback(e => {
+  }, [v, d]), P = i.useCallback(e => {
     null == b || b(e, d)
-  }, [b, d]), P = i.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
+  }, [b, d]), C = i.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
     props: {
       onNotificationShow: N,
       onDismissClick: I,
@@ -277,8 +277,8 @@ function x(e) {
         onDismissClick: j,
         onNotificationClick: null != p ? w : void 0,
         onConfirmClick: null != v ? Z : void 0,
-        onCancelClick: null != b ? C : void 0,
-        renderFooter: P,
+        onCancelClick: null != b ? P : void 0,
+        renderFooter: C,
         expand: !1,
         index: o,
         locked: a,

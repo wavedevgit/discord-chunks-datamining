@@ -64,7 +64,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,14 +72,14 @@ function T(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = e => {
+let N = e => {
   let {
     size: t,
     stroke: n
@@ -98,7 +98,7 @@ function C(e) {
     className: I,
     avatarSize: S,
     avatarOffsetX: T,
-    avatarOffsetY: N,
+    avatarOffsetY: A,
     bannerWidth: C,
     bannerHeight: R,
     themePadding: P,
@@ -112,7 +112,7 @@ function C(e) {
     pendingBanner: y,
     size: C,
     canAnimate: D || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.pxk)(S)), V = (0, s._i)((0, d.ZP)(F, B, !1)), Z = (0, f.Z)(null !== (t = null != w ? w : null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : V).hex, H = A(S), W = H + T - P, Y = R - N - P;
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.pxk)(S)), V = (0, s._i)((0, d.ZP)(F, B, !1)), Z = (0, f.Z)(null !== (t = null != w ? w : null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : V).hex, H = N(S), W = H + T - P, Y = R - A - P;
   return (0, r.jsxs)("svg", {
     className: v.mask,
     viewBox: "0 0 ".concat(C, " ").concat(R),

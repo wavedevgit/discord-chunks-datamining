@@ -26,9 +26,9 @@ var r = n(200651),
   I = n(921944),
   S = n(388032),
   T = n(159071),
-  N = n(25675);
+  A = n(25675);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,7 +44,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function P(e, t) {
 
 function w(e) {
   return (0, r.jsx)(y.Z, {
-    innerClassName: N.button,
+    innerClassName: A.button,
     "aria-label": S.NW.string(S.t.Z1RnTk),
     isActive: !1,
     onClick: e.onClick,
@@ -93,7 +93,7 @@ function D(e) {
     i(), null === (t = e.onClick) || void 0 === t || t.call(e)
   };
   return (0, r.jsx)(y.Z, P(C({
-    innerClassName: N.button,
+    innerClassName: A.button,
     "aria-label": S.NW.string(S.t.Z1RnTk),
     isActive: !1,
     onClick: o
@@ -127,10 +127,10 @@ function x(e) {
     channel: E
   } = e, {
     analyticsLocations: y
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [S, N] = i.useState(!1), A = (0, o.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? b.default.age(C.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [S, A] = i.useState(!1), N = (0, o.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? b.default.age(C.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: x
-  } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && A && R >= L, [j, U] = (0, f.XR)(k ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, F = (0, v.Ft)(E);
+  } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && N && R >= L, [j, U] = (0, f.XR)(k ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, F = (0, v.Ft)(E);
   if (s) return null;
   let V = () => {
       (0, _.Z)({
@@ -147,7 +147,7 @@ function x(e) {
       })
     },
     Z = () => {
-      N(!1), U(I.L.TAKE_ACTION), V()
+      A(!1), U(I.L.TAKE_ACTION), V()
     },
     H = void 0 !== P ? (0, r.jsx)(w, {
       config: P,
@@ -161,13 +161,13 @@ function x(e) {
   return (0, r.jsx)("div", {
     className: T.container,
     onMouseEnter: () => {
-      S || N(!0)
+      S || A(!0)
     },
     onMouseLeave: () => {
-      N(!1)
+      A(!1)
     },
     children: void 0 !== M && G ? (0, r.jsx)(h.Z, {
-      onComplete: () => N(!1),
+      onComplete: () => A(!1),
       onCheckItOutClick: V,
       markAsDismissed: U,
       config: M,

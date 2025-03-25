@@ -58,12 +58,12 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = new f.Z("GuildMemberStore"),
+let N = new f.Z("GuildMemberStore"),
   C = {},
   R = {},
   P = {},
@@ -170,7 +170,7 @@ function K(e) {
     colorString: y,
     colorStrings: I,
     colorRoleId: T,
-    iconRoleId: A,
+    iconRoleId: N,
     hoistRoleId: R,
     highestRoleId: w
   } = Y(l, c), D = {
@@ -183,7 +183,7 @@ function K(e) {
     colorString: y,
     colorStrings: I,
     colorRoleId: T,
-    iconRoleId: A,
+    iconRoleId: N,
     hoistRoleId: R,
     highestRoleId: w,
     premiumSince: u,
@@ -198,7 +198,7 @@ function K(e) {
   if (r === b.default.getId()) {
     if (h.Z.isViewingRoles(o) || h.Z.isFullServerPreview(o)) {
       let e = h.Z.getViewingRoles(o);
-      P[o] = N(S({}, D, h.Z.getMemberOptions(o)), {
+      P[o] = A(S({}, D, h.Z.getMemberOptions(o)), {
         roles: null != e ? E.default.keys(e) : []
       })
     } else null != P[o] && delete P[o]
@@ -253,11 +253,11 @@ function $(e) {
 
 function ee(e) {
   for (let t of e)
-    if (null != t.member && (null == w[t.id] ? w[t.id] = t.member : w[t.id] = N(S({}, t.member), {
+    if (null != t.member && (null == w[t.id] ? w[t.id] = t.member : w[t.id] = A(S({}, t.member), {
         roles: t.member.roles
       }), null != C[t.id])) {
       let e = C[t.id];
-      null != e[t.member.userId] && (e[t.member.userId] = N(S({}, e[t.member.userId]), {
+      null != e[t.member.userId] && (e[t.member.userId] = A(S({}, e[t.member.userId]), {
         roles: t.member.roles
       }))
     }
@@ -290,7 +290,7 @@ function en(e) {
   } = e, h = C[n];
   if (null == h) return !1;
   let m = y.Z.getGuild(n);
-  if (null == m) return A.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
+  if (null == m) return N.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
   h[r.id] = K({
     userId: r.id,
     nick: i,
@@ -317,7 +317,7 @@ function er(e) {
   } = e, i = C[t];
   if (null == i) return !1;
   let o = y.Z.getGuild(t);
-  if (null == o) return A.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
+  if (null == o) return N.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
   let a = i[n];
   if (null == a || a.roles.includes(r)) return !1;
   a.roles = [...a.roles, r];
@@ -333,7 +333,7 @@ function ei(e) {
   } = e, i = C[t];
   if (null == i) return !1;
   let o = y.Z.getGuild(t);
-  if (null == o) return A.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
+  if (null == o) return N.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
   let a = i[n];
   if (null == a || !a.roles.includes(r)) return !1;
   a.roles = a.roles.filter(e => e !== r);
@@ -348,7 +348,7 @@ function eo(e) {
   } = e, r = C[n];
   if (null == r) return !1;
   let i = y.Z.getGuild(n);
-  if (null == i) return A.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
+  if (null == i) return N.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
   r[t.user.id] = K({
     userId: t.user.id,
     nick: t.nick,
@@ -413,7 +413,7 @@ function ef(e, t) {
   let n = C[e];
   if (null == n) return !1;
   let r = y.Z.getGuild(e);
-  return null == r ? (A.warn("Guild ".concat(e, " not found during batchUpdateGuildMembers.")), !1) : (t.forEach(t => {
+  return null == r ? (N.warn("Guild ".concat(e, " not found during batchUpdateGuildMembers.")), !1) : (t.forEach(t => {
     var i;
     let o = n[t.user.id];
     n[t.user.id] = K({
@@ -517,7 +517,7 @@ function ev(e) {
   let t = C[e.guildId];
   if (null == t) return !1;
   let n = y.Z.getGuild(e.guildId);
-  if (null == n) return A.warn("Guild ".concat(e.guildId, " not found during ").concat(e.type, ".")), !1;
+  if (null == n) return N.warn("Guild ".concat(e.guildId, " not found during ").concat(e.type, ".")), !1;
   let r = b.default.getId();
   for (let i of E.default.keys(t)) {
     let o = t[i];
@@ -587,7 +587,7 @@ function eI(e) {
   } = e, n = C[t];
   if (null == n) return !1;
   let r = y.Z.getGuild(t);
-  if (null == r) return A.warn("Guild ".concat(t, " not found during IMPERSONATE_UPDATE.")), !1;
+  if (null == r) return N.warn("Guild ".concat(t, " not found during IMPERSONATE_UPDATE.")), !1;
   let i = b.default.getId(),
     o = n[i];
   n[i] = K({
@@ -618,7 +618,7 @@ function eS(e) {
     members: Object.entries(n.resolved.members).map(e => {
       var t, r;
       let [i, o] = e, a = null === (r = n.resolved) || void 0 === r ? void 0 : null === (t = r.users) || void 0 === t ? void 0 : t[i];
-      if (null != a) return N(S({}, o), {
+      if (null != a) return A(S({}, o), {
         user: a
       })
     }).filter(e => null != e)
@@ -634,25 +634,25 @@ function eT(e) {
     members: Object.entries(e.resolved.members).map(t => {
       var n, r;
       let [i, o] = t, a = null === (r = e.resolved) || void 0 === r ? void 0 : null === (n = r.users) || void 0 === n ? void 0 : n[i];
-      if (null != a) return N(S({}, o), {
+      if (null != a) return A(S({}, o), {
         user: a
       })
     }).filter(e => null != e)
   })
 }
 
-function eN(e) {
+function eA(e) {
   let {
     messages: t
   } = e;
   t.forEach(e => eT(e))
 }
 
-function eA(e) {
+function eN(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => eN({
+  t.forEach(e => eA({
     messages: e
   }))
 }
@@ -803,12 +803,12 @@ let eP = new eR(l.Z, {
   LOCAL_MESSAGES_LOADED: et,
   MESSAGE_CREATE: eS,
   MESSAGE_UPDATE: eS,
-  LOAD_MESSAGES_SUCCESS: eN,
-  LOAD_MESSAGES_AROUND_SUCCESS: eN,
-  LOAD_PINNED_MESSAGES_SUCCESS: eN,
-  LOAD_RECENT_MENTIONS_SUCCESS: eN,
-  SEARCH_FINISH: eA,
-  MOD_VIEW_SEARCH_FINISH: eA,
+  LOAD_MESSAGES_SUCCESS: eA,
+  LOAD_MESSAGES_AROUND_SUCCESS: eA,
+  LOAD_PINNED_MESSAGES_SUCCESS: eA,
+  LOAD_RECENT_MENTIONS_SUCCESS: eA,
+  SEARCH_FINISH: eN,
+  MOD_VIEW_SEARCH_FINISH: eN,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: ep,
   EMBEDDED_ACTIVITY_UPDATE_V2: eC
 })

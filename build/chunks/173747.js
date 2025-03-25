@@ -33,17 +33,17 @@ let v = new Set,
   I = {},
   S = new Set,
   T = {},
-  N = 10 * m.Z.Millis.MINUTE,
-  A = 6 * m.Z.Millis.HOUR,
+  A = 10 * m.Z.Millis.MINUTE,
+  N = 6 * m.Z.Millis.HOUR,
   C = 10 * m.Z.Millis.MINUTE,
   R = new s.V7;
 
 function P(e) {
-  R.start(e + Math.random() * N, c.o)
+  R.start(e + Math.random() * A, c.o)
 }
 
 function w() {
-  return P(A), D()
+  return P(N), D()
 }
 
 function D() {
@@ -157,7 +157,7 @@ function F(e) {
     }
     T[t] = r
   }
-  P(A)
+  P(N)
 }
 
 function V() {

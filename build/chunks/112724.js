@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
-});
+  Z: () => f
+}), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(259105);
+  o = n(393238);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -45,27 +45,36 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
+let u = {
+    width: "100%",
+    height: "100%",
+    display: "flex"
+  },
+  d = {
+    width: "100%",
+    height: "100%",
+    flex: 1
+  };
 
-function u(e) {
+function f(e) {
   return i.forwardRef(function(t, n) {
-    let a = i.useRef();
+    let [a, l] = i.useState(0), {
+      ref: f,
+      width: _,
+      height: p
+    } = (0, o.Z)(a);
     return i.useImperativeHandle(n, () => ({
       triggerResize: () => {
-        var e;
-        null === (e = a.current) || void 0 === e || e.onResize()
+        l(e => e + 1)
       }
-    })), (0, r.jsx)(o.default, {
-      ref: a,
-      children: n => {
-        let {
-          width: i,
-          height: o
-        } = n;
-        return (0, r.jsx)(e, c(s({}, t), {
-          width: i,
-          height: o
-        }))
-      }
+    })), (0, r.jsx)("div", {
+      ref: f,
+      style: u,
+      children: (0, r.jsx)(e, c(s({}, t), {
+        width: _,
+        height: p,
+        style: d
+      }))
     })
   })
 }

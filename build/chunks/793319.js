@@ -144,9 +144,7 @@ function eS(e) {
   }), f = (0, b.bp)(), m = (0, u.Wu)([ee.Z], () => ee.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), _ = i.useRef(null), C = t.getGuildId(), v = i.useCallback(() => {
     if (null == l || l(), !o) return (0, e_.Z)();
     (0, eC.Z)(C, t.id, ey.ZY5.GUILD_CHANNEL)
-  }, [C, t.id, o, l]), x = (0, U.B4)({
-    location: "GoLiveButton"
-  }), [j, O] = i.useState(!1), E = (0, W.bK)(), [N, P] = i.useState(!1);
+  }, [C, t.id, o, l]), x = (0, U.B4)(), [j, O] = i.useState(!1), E = (0, W.bK)(), [N, P] = i.useState(!1);
   i.useEffect(() => {
     if (P(t.isHDStreamSplashed && null == g && !E), t.isHDStreamSplashed) {
       let e = setTimeout(() => {

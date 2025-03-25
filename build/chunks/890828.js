@@ -28,8 +28,8 @@ var i = n(200651),
   N = n(594174),
   C = n(979651),
   Z = n(823379),
-  w = n(136015),
-  P = n(981631),
+  P = n(136015),
+  w = n(981631),
   _ = n(388032),
   T = n(321021);
 let D = e => [e.userId, ... function(e) {
@@ -62,7 +62,7 @@ let D = e => [e.userId, ... function(e) {
     let {
       channel: t,
       query: n
-    } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], w.Q), [o, c] = r.useState([]);
+    } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], P.Q), [o, c] = r.useState([]);
     (0, v.BO)(n, Object.values(l), c, k);
     let u = (0, a.Wu)([C.Z, N.default, E.Z, S.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => N.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
         var i, r, l, a;
@@ -90,12 +90,12 @@ let D = e => [e.userId, ... function(e) {
       channel: n
     } = e, r = n.getGuildId(), l = (0, a.e7)([x.Z], () => x.Z.getGuild(r), [r]);
     if (null == l) switch (n.type) {
-      case P.d4z.DM:
+      case w.d4z.DM:
         return (0, i.jsx)(f.je, {
           channel: n,
           size: s.EFr.SIZE_32
         });
-      case P.d4z.GROUP_DM:
+      case w.d4z.GROUP_DM:
         return (0, i.jsx)(f.ge, {
           channel: n,
           size: s.EFr.SIZE_32
@@ -244,7 +244,7 @@ function z(e) {
           let n = null == t ? void 0 : t.channelId;
           if (null == n) return e;
           let i = b.Z.getChannel(n);
-          return null != i && I.Z.can(P.Plq.CONNECT, i) && e.add(n), e
+          return null != i && I.Z.can(w.Plq.CONNECT, i) && e.add(n), e
         }, new Set)).filter(Z.lm), [e])
       }(),
       t = (0, a.Wu)([g.Z, b.Z, I.Z], () => {
@@ -252,7 +252,7 @@ function z(e) {
           n = new Set(e);
         return Array.from(new Set(t.reduce((e, t) => {
           let i = b.Z.getChannel(t);
-          return null != i && I.Z.can(P.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
+          return null != i && I.Z.can(w.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
         }, [])))
       }, [e]);
     return {
@@ -294,7 +294,7 @@ function G(e) {
     currentVoiceChannel: l,
     onClose: o,
     onSelect: c
-  } = e, u = (0, a.Wu)([x.Z, j.ZP, C.Z, S.Z, I.Z], () => Object.values(x.Z.getGuilds()).reduce((e, t) => [...e, ...j.ZP.getChannels(t.id)[j.Zb].filter(e => I.Z.can(P.Plq.VIEW_CHANNEL, e.channel) && I.Z.can(P.Plq.CONNECT, e.channel)).map(e => {
+  } = e, u = (0, a.Wu)([x.Z, j.ZP, C.Z, S.Z, I.Z], () => Object.values(x.Z.getGuilds()).reduce((e, t) => [...e, ...j.ZP.getChannels(t.id)[j.Zb].filter(e => I.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && I.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;

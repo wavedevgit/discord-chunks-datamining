@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(262210),
   S = n(666984),
   T = n(670451),
-  N = n(228168),
-  A = n(203396);
+  A = n(228168),
+  N = n(203396);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ function D(e) {
   } = e, {
     profileType: D
   } = (0, E.z)(), L = {
-    [A.fullSize]: D === N.y0.FULL_SIZE
+    [N.fullSize]: D === A.y0.FULL_SIZE
   }, x = (0, _.Z)({
     activity: o,
     user: t
@@ -107,7 +107,7 @@ function D(e) {
         variant: "text-xs/normal",
         text: l.map((e, n) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(A.clickableText, A.inline),
+            className: a()(N.clickableText, N.inline),
             onClick: e => {
               e.stopPropagation(), U({
                 action: "OPEN_SPOTIFY_ARTIST"
@@ -133,7 +133,7 @@ function D(e) {
       })
     },
     V = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: a()(A.actions, L),
+      className: a()(N.actions, L),
       children: (0, r.jsx)(S.Z, {
         user: t,
         activity: o,
@@ -144,7 +144,7 @@ function D(e) {
     value: j,
     children: (0, r.jsxs)(v.Z, {
       ref: G,
-      className: a()(A.card, C),
+      className: a()(N.card, C),
       onAction: U,
       onClose: P,
       children: [(0, r.jsx)(y.Z, w(R({}, M), {
@@ -156,20 +156,20 @@ function D(e) {
           onClose: P
         })
       })), (0, r.jsx)("div", {
-        className: A.body,
+        className: N.body,
         children: (0, r.jsxs)("div", {
-          className: a()(A.content, L),
+          className: a()(N.content, L),
           children: [(0, r.jsx)(f.E, {
             image: k,
             size: f.J.SIZE_60,
-            className: A.clickableImage,
+            className: N.clickableImage,
             onClick: e => {
               e.stopPropagation(), U({
                 action: "OPEN_SPOTIFY_ALBUM"
               }), (0, p.Z5)(o, t.id)
             }
           }), (0, r.jsxs)("div", {
-            className: A.details,
+            className: N.details,
             children: [(0, r.jsxs)("div", {
               children: [(0, r.jsx)(O.Z, {
                 variant: "heading-sm/semibold",
@@ -183,11 +183,11 @@ function D(e) {
             }), (0, r.jsx)(b.Z, {
               user: t,
               activity: o,
-              className: A.badges
+              className: N.badges
             }), F()]
-          }), D === N.y0.FULL_SIZE && V()]
+          }), D === A.y0.FULL_SIZE && V()]
         })
-      }), D !== N.y0.FULL_SIZE && V()]
+      }), D !== A.y0.FULL_SIZE && V()]
     })
   })
 }

@@ -33,15 +33,15 @@ function u(e) {
       resetAnimation: S,
       versionKey: y
     },
-    N = i.useRef(T);
+    A = i.useRef(T);
   i.useEffect(() => {
-    N.current = T
+    A.current = T
   }), i.useEffect(() => {
     let {
       resetAnimation: e,
       versionKey: t,
       applyAnimation: n
-    } = N.current;
+    } = A.current;
     if (null != f && t >= 0) {
       e();
       return
@@ -52,16 +52,16 @@ function u(e) {
       applyAnimation: e,
       isChanging: t,
       idleAnimationState: n
-    } = N.current;
+    } = A.current;
     t && null != n || e()
   }, [p]), i.useEffect(() => {
     let {
       applyAnimation: e,
       idleAnimationState: t
-    } = N.current;
+    } = A.current;
     b && (E(null == t), v(!1), e())
   }, [b]);
-  let A = () => {
+  let N = () => {
     null != f && (h(f), E(!0))
   };
   if (!c.Cj.hasOwnProperty(t)) throw Error("Unexpected giftStyle ".concat(t));
@@ -70,7 +70,7 @@ function u(e) {
     shouldAnimate: !_ && u,
     className: n,
     versionKey: y,
-    onComplete: null != f ? A : void 0,
+    onComplete: null != f ? N : void 0,
     loop: g
   })
 }

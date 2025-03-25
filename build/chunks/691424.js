@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(430824),
   S = n(572004),
   T = n(746878),
-  N = n(285063),
-  A = n(943362),
+  A = n(285063),
+  N = n(943362),
   C = n(551452),
   R = n(69626),
   P = n(142990),
@@ -302,7 +302,7 @@ let W = {
     }
   },
   timestamp: {
-    react: (e, t, n) => (0, r.jsx)(N.Z, {
+    react: (e, t, n) => (0, r.jsx)(A.Z, {
       node: e
     }, n.key)
   },
@@ -384,7 +384,7 @@ function Y(e) {
     customEmoji: V(e),
     channelMention: (0, C.Z)(e),
     commandMention: (0, R.ZP)(e),
-    attachmentLink: (0, A.Z)(e),
+    attachmentLink: (0, N.Z)(e),
     shopLink: (0, D.Z)(e)
   })
 }

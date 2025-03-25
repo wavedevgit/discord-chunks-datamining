@@ -1,19 +1,19 @@
 /** Chunk was on 86282 **/
-n.d(l, {
+l.d(n, {
   u: () => c
-}), n(266796);
-var t = n(200651);
-n(192379);
-var r = n(409794),
-  i = n(777207),
-  s = n(541822),
-  a = n(330711),
-  o = n(994542);
+}), l(266796);
+var t = l(200651);
+l(192379);
+var r = l(409794),
+  i = l(777207),
+  s = l(541822),
+  a = l(330711),
+  o = l(994542);
 
 function c(e) {
   let {
-    benefits: l,
-    description: n,
+    benefits: n,
+    description: l,
     imgSrc: c,
     title: d,
     tag: u,
@@ -54,19 +54,19 @@ function c(e) {
               color: "header-primary",
               variant: "heading-xl/semibold",
               children: d
-            }), null != n && "" !== n && (0, t.jsx)(i.x, {
+            }), null != l && "" !== l && (0, t.jsx)(i.x, {
               color: "text-normal",
               variant: "text-md/normal",
               className: o.description,
-              children: n
+              children: l
             })]
-          }), null != l && (0, t.jsxs)("div", {
+          }), null != n && (0, t.jsxs)("div", {
             className: o.benefits,
             children: [(0, t.jsx)(i.x, {
               color: "header-secondary",
               variant: "eyebrow",
               children: a.Z.Messages.STOREFRONT_BENEFITS_TITLE
-            }), l]
+            }), n]
           })]
         })]
       })

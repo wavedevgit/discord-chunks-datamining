@@ -70,7 +70,7 @@ function S(e) {
     onHide: i,
     idle: o,
     preventIdleComponent: l
-  } = e, u = (0, a.e7)([p.Z], () => p.Z.getChannelId()), _ = null != u ? (0, r.jsx)(h.Z, {
+  } = e, u = (0, a.e7)([p.ZP], () => p.ZP.getChannelId()), _ = null != u ? (0, r.jsx)(h.Z, {
     voiceChannelId: u,
     idle: o
   }) : null, {

@@ -37,7 +37,7 @@ function S(e) {
     onReceiveErrorHints: R
   } = e, k = (0, f.j)({
     location: y.dr.QUESTS_BAR_MOBILE
-  }), q = o.useMemo(() => g.r.build(N.config), [N.config]), D = q.defaultReward.messages.name, W = q.defaultReward.messages.nameWithArticle, I = k ? D : W, M = (null === (t = N.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, {
+  }), q = o.useMemo(() => g.r.build(N.config), [N.config]), D = q.defaultReward.messages.name, I = q.defaultReward.messages.nameWithArticle, W = k ? D : I, M = (null === (t = N.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, {
     ref: L,
     scrollHeight: Z
   } = (0, d.Z)(), V = 104 !== Z, {
@@ -83,8 +83,8 @@ function S(e) {
     className: O.header,
     children: e
   }, "".concat(N.id, "_reward")), [N.id]), Y = o.useMemo(() => H ? K(D) : C.NW.format(C.t["0IUT4e"], {
-    rewardWithArticleHook: () => K(I)
-  }), [D, H, K, I]), G = o.useMemo(() => {
+    rewardWithArticleHook: () => K(W)
+  }), [D, H, K, W]), G = o.useMemo(() => {
     if (null != X) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",

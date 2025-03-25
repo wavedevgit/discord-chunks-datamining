@@ -30,11 +30,11 @@ function T(e) {
   var t, n, o;
   let {
     className: T,
-    onClose: N
+    onClose: A
   } = e;
   (0, h.fP)();
   let {
-    analyticsLocations: A
+    analyticsLocations: N
   } = (0, u.ZP)(c.Z.EMPTY_STATE), C = (0, s.Wu)([m.Z], () => b.Wt.map(e => m.Z.getStickerById(e)));
   i.useEffect(() => {
     p.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
@@ -42,9 +42,9 @@ function T(e) {
       source: {
         section: v.jXE.EMPTY_STICKER_PICKER_UPSELL
       },
-      location_stack: A
+      location_stack: N
     })
-  }, [A]);
+  }, [N]);
   let R = (0, f.N)(),
     P = (0, d.Ng)(),
     w = null != R || null != P,
@@ -56,7 +56,7 @@ function T(e) {
     children: [w ? (0, r.jsx)(_.ZP, {
       discountOffer: P,
       trialOffer: R,
-      onClose: N,
+      onClose: A,
       type: y.cd.EMPTY_STICKER_PICKER_UPSELL,
       subscriptionTier: null !== (o = null == R ? void 0 : null === (n = R.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : y.Si.TIER_2,
       children: O.NW.string(O.t.FnNud3)

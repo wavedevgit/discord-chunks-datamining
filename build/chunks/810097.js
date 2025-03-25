@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   ZP: () => R,
-  _1: () => N,
-  jd: () => A
+  _1: () => A,
+  jd: () => N
 }), n(627341), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -63,8 +63,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = 2700,
-  A = "> -# *",
+let A = 2700,
+  N = "> -# *",
   C = (e, t) => (0, l.EQ)({
     interactionType: e,
     sourceType: t
@@ -95,8 +95,8 @@ function R(e) {
     isVisible: o,
     isExpandable: O,
     interactionSourceId: S,
-    onAction: N,
-    renderMoreButtonPopout: A
+    onAction: A,
+    renderMoreButtonPopout: N
   } = e, R = (0, c.e7)([p.default], () => p.default.getId() === t.id), P = (0, h.Z)(t.id), {
     profileType: w
   } = (0, E.z)(), {
@@ -109,11 +109,11 @@ function R(e) {
       k && !M && j(!1)
     }, [k, M]), t.bot || R || !P) return null;
   let U = () => {
-      n === b.n_.AVATAR ? N({
+      n === b.n_.AVATAR ? A({
         action: "PRESS_REACT_AVATAR"
-      }) : n === b.n_.STATUS ? N({
+      }) : n === b.n_.STATUS ? A({
         action: "PRESS_REACT_CUSTOM_STATUS"
-      }) : N({
+      }) : A({
         action: "PRESS_REACT_ACTIVITY"
       }), null == D || D({
         interactionType: b.P.REACT,
@@ -122,11 +122,11 @@ function R(e) {
       }), w === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     G = () => {
-      n === b.n_.AVATAR ? N({
+      n === b.n_.AVATAR ? A({
         action: "PRESS_REPLY_AVATAR"
-      }) : n === b.n_.STATUS ? N({
+      }) : n === b.n_.STATUS ? A({
         action: "PRESS_REPLY_CUSTOM_STATUS"
-      }) : N({
+      }) : A({
         action: "PRESS_REPLY_ACTIVITY"
       }), null == D || D({
         interactionType: b.P.REPLY,
@@ -179,7 +179,7 @@ function R(e) {
           className: y.icon
         })
       })
-    }), null == A ? void 0 : A(e => (0, r.jsx)(d.DY3, {
+    }), null == N ? void 0 : N(e => (0, r.jsx)(d.DY3, {
       text: v.NW.string(v.t.UKOtz8),
       shouldShow: o,
       className: y.tooltipContainer,

@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(614223),
   S = n(481595),
   T = n(51499),
-  N = n(678334),
-  A = n(614277),
+  A = n(678334),
+  N = n(614277),
   C = n(474936),
   R = n(231338),
   P = n(388032);
@@ -92,8 +92,8 @@ function D(e) {
   let eI = null !== (n = null != L ? L : B) && void 0 !== n ? n : null,
     eS = null != eI && (!el || C.nG[eI].skus.includes(et)) ? eI : null,
     eT = (0, d.N)(B),
-    eN = (0, u.Ng)(),
-    eA = {
+    eA = (0, u.Ng)(),
+    eN = {
       user_trial_offer_id: null == eT ? void 0 : eT.id
     };
   i.useEffect(() => {
@@ -114,8 +114,8 @@ function D(e) {
     ew = i.useRef(null),
     [eD, eL] = i.useState(null),
     ex = !eh && null != eT && null != et && C.nG[eT.trial_id].skus.includes(et),
-    eM = null == eN ? void 0 : null === (t = eN.discount) || void 0 === t ? void 0 : t.plan_ids,
-    ek = !eh && null != eN && null != eM && null != ee && eM.includes(ee.id),
+    eM = null == eA ? void 0 : null === (t = eA.discount) || void 0 === t ? void 0 : t.plan_ids,
+    ek = !eh && null != eA && null != eM && null != ee && eM.includes(ee.id),
     ej = eh && (0, h.pO)(eg),
     eU = null == F && null == V && eu === R.GZ.SUBSCRIPTION,
     eG = (0, I.Kp)({
@@ -189,10 +189,10 @@ function D(e) {
       giftMessage: em
     }), !ej && (0, r.jsx)(T.Z, {
       isEligibleForTrial: ex
-    }), (0, r.jsxs)(A.C3, {
+    }), (0, r.jsxs)(N.C3, {
       children: [null != eb && eb, (0, r.jsx)(O.Z, {}), (0, r.jsx)(y.Z, {}), o]
-    }), (0, r.jsx)(A.O3, {
-      children: (0, r.jsx)(N.Z, {
+    }), (0, r.jsx)(N.O3, {
+      children: (0, r.jsx)(A.Z, {
         premiumSubscription: null != H ? H : null,
         setPurchaseState: ei,
         onBack: eZ,
@@ -210,7 +210,7 @@ function D(e) {
         purchaseTokenAuthState: $,
         openInvoiceId: j,
         backButtonEligible: eF,
-        metadata: eA,
+        metadata: eN,
         isTrial: ex,
         disablePurchase: eH
       })

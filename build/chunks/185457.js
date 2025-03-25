@@ -29,12 +29,12 @@ function N(e) {
     note: O
   } = (0, s.Z)(v), j = !p && null != O && O.length > 0, x = m === f.IlC.POPOUT || m === f.IlC.OVERLAY, h = i.useContext(g.AnalyticsContext), {
     analyticsLocations: y
-  } = (0, a.ZP)(), _ = (0, o.k)({
+  } = (0, a.ZP)(), P = (0, o.k)({
     location: "useAddNoteItem"
   });
   return v === c.default.getId() || d.Z.hidePersonalInformation || x ? null : (0, l.jsx)(r.sNh, {
     id: "note",
-    label: p ? Z.NW.string(Z.t["WLKx//"]) : j ? _ ? Z.NW.string(Z.t["gs+qcH"]) : Z.NW.string(Z.t.sHHsOD) : _ ? Z.NW.string(Z.t["1ZZttr"]) : Z.NW.string(Z.t.Dglxra),
+    label: p ? Z.NW.string(Z.t["WLKx//"]) : j ? P ? Z.NW.string(Z.t["gs+qcH"]) : Z.NW.string(Z.t.sHHsOD) : P ? Z.NW.string(Z.t["1ZZttr"]) : Z.NW.string(Z.t.Dglxra),
     action: () => {
       (0, u.openUserProfileModal)({
         userId: t.id,

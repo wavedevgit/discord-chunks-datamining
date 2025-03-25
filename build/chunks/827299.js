@@ -138,7 +138,9 @@ function E(e, t) {
       E = h.error,
       b = !0 === h.isLoading,
       v = (0, r.useRef)(u);
-    v.current = u;
+    (0, r.useEffect)(() => {
+      v.current = u
+    }, [u]);
     let y = (0, r.useCallback)(() => {
       if (null == f || !0 === b) return;
       let e = !1;

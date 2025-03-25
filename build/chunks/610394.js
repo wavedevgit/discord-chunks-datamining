@@ -28,8 +28,8 @@ var r, i = n(442837),
   I = n(398269),
   S = n(987650),
   T = n(757744),
-  N = n(501787),
-  A = n(981631);
+  A = n(501787),
+  N = n(981631);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -284,7 +284,8 @@ async function ed(e) {
       fullscreen_type: await (0, O.hj)(e, 0),
       graphics_info_after: new Date().getTime() - r
     }), l.Z.window.setBackgroundThrottling(!1), m.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && U.toggleGPUBoost("HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", !0), U.toggleGPUBoost("OVERLAY_RENDERING", !0), eu(e), V = e, (0, g.setPID)(e), x.info("Getting Native Handle for pid", e);
-    let i = null !== (n = await (null === l.Z || void 0 === l.Z ? void 0 : null === (t = l.Z.window) || void 0 === t ? void 0 : t.getNativeHandle(N.$J))) && void 0 !== n ? n : "";
+    let i = null !== (n = await (null === l.Z || void 0 === l.Z ? void 0 : null === (t = l.Z.window) || void 0 === t ? void 0 : t.getNativeHandle(A.$J))) && void 0 !== n ? n : "";
+    if ("" === i) return x.error("Failed to get native handle for pid", e), en(e, Error("Failed to get native handle for pid")), "";
     return x.info("Native Handle for pid ".concat(e, ":"), i), a.Z.updateOverlayState(e, s.mM.OVERLAY_RENDERING), ee(e, {
       renderer_started_after: new Date().getTime() - r
     }), eO(!1), y.Z.resetWindowState(), i
@@ -298,7 +299,7 @@ function ef() {
   x.verbose("Destroying OOP host window"), U.resetGPUBoosts();
   try {
     var e;
-    null === l.Z || void 0 === l.Z || null === (e = l.Z.window) || void 0 === e || e.close(N.$J)
+    null === l.Z || void 0 === l.Z || null === (e = l.Z.window) || void 0 === e || e.close(A.$J)
   } catch (e) {
     x.error("Error destroying overlay window:", e), en(null != V ? V : g.UNSET_PID, e)
   }
@@ -311,13 +312,13 @@ function ef() {
 }
 
 function e_(e) {
-  h.default.track(A.rMx.OVERLAY_HOOK_RESULT, $(e))
+  h.default.track(N.rMx.OVERLAY_HOOK_RESULT, $(e))
 }
 
 function ep(e) {
   try {
     x.verbose("Refreshing OOP host window for pid ".concat(e)), eu(e), k.delete(null != V ? V : g.UNSET_PID), V = e, (0, g.setPID)(null != V ? V : g.UNSET_PID);
-    let t = f.Z.getWindow(N.$J),
+    let t = f.Z.getWindow(A.$J),
       n = () => new Promise(e => {
         let n = t => {
           t.data === w && (window.removeEventListener("message", n), e())
@@ -340,7 +341,7 @@ function ep(e) {
 }
 
 function eh(e, t, n, r) {
-  let i = f.Z.getWindow(N.$J);
+  let i = f.Z.getWindow(A.$J);
   if (null == i) return;
   let o = Math.ceil(n * i.innerWidth),
     a = Math.ceil(r * i.innerHeight),
@@ -363,7 +364,7 @@ function em() {
     if (e !== Z) {
       Z = e;
       try {
-        "function" == typeof(null == G ? void 0 : G.setLimitedInteraction) ? (x.info("Setting limited interaction", e), G.setLimitedInteraction(e), m.ZP.setFocusable(N.$J, !e)) : x.info("No setLimitedInteraction function found, skipping")
+        "function" == typeof(null == G ? void 0 : G.setLimitedInteraction) ? (x.info("Setting limited interaction", e), G.setLimitedInteraction(e), m.ZP.setFocusable(A.$J, !e)) : x.info("No setLimitedInteraction function found, skipping")
       } catch (e) {
         x.error("Error setting limited interaction mode:", e)
       }
@@ -427,13 +428,13 @@ function eS(e) {}
 
 function eT(e) {}
 
-function eN(e) {}
-async function eA(e) {
+function eA(e) {}
+async function eN(e) {
   e.overlayMethod === s.gl.OutOfProcess || e.overlayMethod === s.gl.OutOfProcessLimitedInteraction ? (null == G && await ey(), ei(e.pid, e.overlayMethod)) : eo(e.pid), eZ.emitChange()
 }
 
 function eC(e) {
-  x.verbose("Updating OverlayMethod", e), eA(e)
+  x.verbose("Updating OverlayMethod", e), eN(e)
 }
 
 function eR(e) {
@@ -581,7 +582,7 @@ let eZ = new eV(o.Z, {
     OVERLAY_SET_ENABLED: eD,
     GAME_LAUNCH_SUCCESS: eS,
     RUNNING_GAMES_CHANGE: eT,
-    RUNNING_GAME_TOGGLE_OVERLAY: eN,
+    RUNNING_GAME_TOGGLE_OVERLAY: eA,
     OVERLAY_FORCE_RENDER_MODE: eF,
     OVERLAY_SET_CLICK_ZONES: eL,
     OVERLAY_SET_INPUT_LOCKED: eM,

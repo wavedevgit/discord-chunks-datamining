@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 r.d(t, {
   al: () => N,
-  ck: () => C
+  ck: () => j
 }), r(47120), r(653041), r(571269), r(298267);
 var n = r(200651),
   a = r(192379),
@@ -264,7 +264,7 @@ let N = {
     videoEntropy: D
   },
   E = e => e,
-  j = e => {
+  P = e => {
     let [t] = a.useState([]);
     return t.push({
       value: e.value,
@@ -276,7 +276,7 @@ let N = {
     })
   };
 
-function C(e) {
+function j(e) {
   var t, r, a;
   let {
     label: i,
@@ -286,7 +286,7 @@ function C(e) {
     dataPoints: s,
     width: 300,
     height: 100
-  }) : "number" == typeof s ? (0, n.jsx)(j, {
+  }) : "number" == typeof s ? (0, n.jsx)(P, {
     value: s,
     width: 300,
     height: 100

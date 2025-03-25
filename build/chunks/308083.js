@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CT: () => A,
+  CT: () => N,
   Du: () => u,
   Gh: () => W,
   HR: () => D,
@@ -23,7 +23,7 @@ n.d(t, {
   gh: () => R,
   i1: () => M,
   i6: () => L,
-  jK: () => N,
+  jK: () => A,
   lt: () => F,
   mv: () => y,
   n1: () => V,
@@ -105,9 +105,9 @@ var I = function(e) {
 if (isNaN(Number(Object.values(I).pop()))) throw Error("Failed to get the last step in the ClanSetupSteps enum");
 let S = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
   T = new Set([...S, "Server: NA", "Server: EU", "Server: Asia", "Server: TW/HK/MO", "Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "F2P", "Spenders", "Co-op", "Support"]),
-  N = ["20+", "30+", "40+", "All Ages"],
-  A = ["Recurring Events", "Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Competitive", "Streamer", "Esports"],
-  C = new Set([...S, ...N, ...A]),
+  A = ["20+", "30+", "40+", "All Ages"],
+  N = ["Recurring Events", "Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Competitive", "Streamer", "Esports"],
+  C = new Set([...S, ...A, ...N]),
   R = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]);
 
 function P(e) {
@@ -115,7 +115,7 @@ function P(e) {
 }
 
 function w(e) {
-  return t => -(+(null != e && !!e.includes(t)) << 4 | +!!P(t) << 3 | +!!T.has(t) << 2 | +!!N.includes(t) << 1 | +!!A.includes(t) << 0)
+  return t => -(+(null != e && !!e.includes(t)) << 4 | +!!P(t) << 3 | +!!T.has(t) << 2 | +!!A.includes(t) << 1 | +!!N.includes(t) << 0)
 }
 
 function D(e, t) {

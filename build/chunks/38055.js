@@ -55,7 +55,7 @@ function T(e) {
   return null == n ? null : (0, o.lG)(null == n ? void 0 : n.encoderImplementationName)
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == t) return null;
   let n = l.Z.getConnectionStats().find(t => t.connection.context === e);
   if (null == n) return null;
@@ -65,7 +65,7 @@ function N(e, t) {
   return (0, o.z_)(null == i ? void 0 : i.decoderImplementationName)
 }
 
-function A(e, t, n) {
+function N(e, t, n) {
   var r, i, a, s;
   let c = null === (r = l.Z.getConnectionStats().find(t => t.connection.context === e)) || void 0 === r ? void 0 : r.stats.rtp,
     u = null;
@@ -90,7 +90,7 @@ function P(e, t) {
     D = u.Z.getChannel(w),
     L = null != t.streamKey ? (0, s.my)(t.streamKey) : null,
     x = C(t),
-    M = null != t.streamKey ? x : f.Z.getRTCConnection(),
+    M = null != t.streamKey ? x : f.ZP.getRTCConnection(),
     k = null != t.streamKey ? null == x ? void 0 : null === (n = x.analyticsContext) || void 0 === n ? void 0 : n.streamApplication : null,
     {
       resolution: j,
@@ -107,7 +107,7 @@ function P(e, t) {
     W = null != L ? L.ownerId : t.userId,
     Y = null != L ? null == M ? void 0 : M.getVoiceParticipantType() : Z ? "sender" : "receiver";
   h = null != t.streamKey && null != L ? Z ? null == M ? void 0 : null === (o = M.getOutboundStats()) || void 0 === o ? void 0 : o.find(e => e.quality === y.y7) : null == M ? void 0 : M.getInboundStats(L.ownerId) : Z ? null !== (p = i().maxBy(null !== (l = null == M ? void 0 : M.getOutboundStats()) && void 0 !== l ? l : [], e => e.num_frames)) && void 0 !== p ? p : null : null != t.userId ? null == M ? void 0 : M.getInboundStats(t.userId) : null, (0, m.q)().then(n => {
-    var r, i, o, a, s, l, c, u, p, m, b, y, C, R, k, K, z, q, Q, X, J, $, ee, et, en, er, ei, eo, ea, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, eb, ev, ey, eO, eI, eS, eT, eN, eA;
+    var r, i, o, a, s, l, c, u, p, m, b, y, C, R, k, K, z, q, Q, X, J, $, ee, et, en, er, ei, eo, ea, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, eb, ev, ey, eO, eI, eS, eT, eA, eN;
     let eC = {
       error_name: e.valueOf(),
       error_code: P.errorCode,
@@ -119,21 +119,21 @@ function P(e, t) {
       channel_id: null != w ? w : null,
       channel_type: null !== (b = null == D ? void 0 : D.type) && void 0 !== b ? b : null,
       rtc_connection_id: null !== (y = t.rtcConnectionId) && void 0 !== y ? y : null,
-      media_session_id: null !== (R = null !== (C = t.mediaSessionId) && void 0 !== C ? C : f.Z.getMediaSessionId()) && void 0 !== R ? R : null,
+      media_session_id: null !== (R = null !== (C = t.mediaSessionId) && void 0 !== C ? C : f.ZP.getMediaSessionId()) && void 0 !== R ? R : null,
       parent_media_session_id: null !== (k = null == x ? void 0 : x.parentMediaSessionId) && void 0 !== k ? k : null,
       context: null !== (K = t.mediaContext) && void 0 !== K ? K : null,
-      voice_backend_version: null !== (z = null === (r = f.Z.getRTCConnection()) || void 0 === r ? void 0 : r.getVoiceVersion()) && void 0 !== z ? z : null,
-      rtc_worker_backend_version: null !== (q = null === (i = f.Z.getRTCConnection()) || void 0 === i ? void 0 : i.getRtcWorkerVersion()) && void 0 !== q ? q : null,
-      guild_region: null !== (Q = _.Z.getRegion(f.Z.getHostname())) && void 0 !== Q ? Q : null,
-      hostname: null !== (X = f.Z.getHostname()) && void 0 !== X ? X : null,
+      voice_backend_version: null !== (z = null === (r = f.ZP.getRTCConnection()) || void 0 === r ? void 0 : r.getVoiceVersion()) && void 0 !== z ? z : null,
+      rtc_worker_backend_version: null !== (q = null === (i = f.ZP.getRTCConnection()) || void 0 === i ? void 0 : i.getRtcWorkerVersion()) && void 0 !== q ? q : null,
+      guild_region: null !== (Q = _.Z.getRegion(f.ZP.getHostname())) && void 0 !== Q ? Q : null,
+      hostname: null !== (X = f.ZP.getHostname()) && void 0 !== X ? X : null,
       duration: null !== (J = null == M ? void 0 : M.getDurationSeconds()) && void 0 !== J ? J : null,
       participant_type: null != Y ? Y : null,
       num_frames: null !== ($ = null == h ? void 0 : h.num_frames) && void 0 !== $ ? $ : 0,
       num_packets: null !== (ee = null == h ? void 0 : h.num_packets) && void 0 !== ee ? ee : 0,
       num_bytes: null !== (et = null == h ? void 0 : h.num_bytes) && void 0 !== et ? et : 0,
-      video_codec: null !== (en = t.videoCodec) && void 0 !== en ? en : A(H, Z, W),
+      video_codec: null !== (en = t.videoCodec) && void 0 !== en ? en : N(H, Z, W),
       video_encoder: null !== (ei = null !== (er = t.videoEncoder) && void 0 !== er ? er : T(H)) && void 0 !== ei ? ei : null,
-      video_decoder: null !== (ea = null !== (eo = t.videoDecoder) && void 0 !== eo ? eo : N(H, W)) && void 0 !== ea ? ea : null,
+      video_decoder: null !== (ea = null !== (eo = t.videoDecoder) && void 0 !== eo ? eo : A(H, W)) && void 0 !== ea ? ea : null,
       audio_capture_sample_rate_mismatch_percent: null !== (es = t.audioCaptureSampleRateMismatchPercent) && void 0 !== es ? es : null,
       sender_user_id: null !== (el = null == L ? void 0 : L.ownerId) && void 0 !== el ? el : null,
       stream_region: null !== (ec = null == x ? void 0 : x.getRegion()) && void 0 !== ec ? ec : null,
@@ -163,8 +163,8 @@ function P(e, t) {
       inbound_bitrate_estimate: I(H),
       hardware_enabled: d.Z.getHardwareEncoding(),
       audio_input_device_name: null !== (eT = t.audioInputDeviceName) && void 0 !== eT ? eT : null === (s = d.Z.getInputDevices()[d.Z.getInputDeviceId()]) || void 0 === s ? void 0 : s.name,
-      audio_output_device_name: null !== (eN = t.audioOutputDeviceName) && void 0 !== eN ? eN : null === (l = d.Z.getOutputDevices()[d.Z.getOutputDeviceId()]) || void 0 === l ? void 0 : l.name,
-      video_device_name: null !== (eA = t.videoDeviceName) && void 0 !== eA ? eA : null === (c = d.Z.getVideoDevices()[d.Z.getVideoDeviceId()]) || void 0 === c ? void 0 : c.name,
+      audio_output_device_name: null !== (eA = t.audioOutputDeviceName) && void 0 !== eA ? eA : null === (l = d.Z.getOutputDevices()[d.Z.getOutputDeviceId()]) || void 0 === l ? void 0 : l.name,
+      video_device_name: null !== (eN = t.videoDeviceName) && void 0 !== eN ? eN : null === (c = d.Z.getVideoDevices()[d.Z.getVideoDeviceId()]) || void 0 === c ? void 0 : c.name,
       audio_subsystem: d.Z.getMediaEngine().getAudioSubsystem(),
       automatic_audio_subsystem: d.Z.getSettings().automaticAudioSubsystem,
       audio_layer: d.Z.getMediaEngine().getAudioLayer(),

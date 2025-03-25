@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(922482),
   S = n(592125),
   T = n(430824),
-  N = n(496675),
-  A = n(158776),
+  A = n(496675),
+  N = n(158776),
   C = n(699516),
   R = n(938475),
   P = n(626135),
@@ -78,7 +78,7 @@ function J(e) {
       user: t
     } = e;
     return t
-  }) : []), ed = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
+  }) : []), ed = (0, s.e7)([N.Z], () => N.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: ef
   } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), e_ = (0, w.Z)({
     display: "live",
@@ -92,7 +92,7 @@ function J(e) {
   }), [eh, em] = (0, v.wq)(ec), {
     previewUrl: eg,
     isLoading: eE
-  } = (0, b.Z)(o.guildId, o.channelId, o.ownerId), eb = (0, s.e7)([N.Z], () => null != ec && N.Z.canBasicChannel(Y.S7T.CONNECT, ec)), ev = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, b.Z)(o.guildId, o.channelId, o.ownerId), eb = (0, s.e7)([A.Z], () => null != ec && A.Z.canBasicChannel(Y.S7T.CONNECT, ec)), ev = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (es) {
       var e;
@@ -221,7 +221,7 @@ function J(e) {
       onAction: e_,
       onClose: $
     }),
-    eN = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    eA = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(z.actions, eo),
       children: (0, r.jsx)(Z.Z, {
         channel: ec,
@@ -229,8 +229,8 @@ function J(e) {
         onClose: $
       })
     }),
-    eA = eg,
-    eC = er === W.n_.ACTIVITY && ei === eA,
+    eN = eg,
+    eC = er === W.n_.ACTIVITY && ei === eN,
     eR = null != ed ? K.NW.formatToPlainString(K.t["4CQq9f"], {
       name: ed.name
     }) : K.NW.string(K.t["Jpkr/v"]);
@@ -243,14 +243,14 @@ function J(e) {
         user: t,
         guildId: ee,
         profileType: et,
-        sourceId: eA,
+        sourceId: eN,
         sourceDetails: eR,
         sourceType: W.n_.ACTIVITY,
         onAction: e_,
         children: () => (0, r.jsx)(M.Z, {
           user: t,
           className: z.toolbarContainer,
-          interactionSourceId: eA,
+          interactionSourceId: eN,
           sourceType: W.n_.ACTIVITY,
           onAction: e_,
           onShowToolbar: () => e_({
@@ -278,9 +278,9 @@ function J(e) {
               className: z.body,
               children: [(0, r.jsxs)("div", {
                 className: a()(z.content, eo),
-                children: [eI(), eS(), et === W.y0.FULL_SIZE && eN()]
+                children: [eI(), eS(), et === W.y0.FULL_SIZE && eA()]
               }), eT()]
-            }), et !== W.y0.FULL_SIZE && eN()]
+            }), et !== W.y0.FULL_SIZE && eA()]
           })
         })
       })

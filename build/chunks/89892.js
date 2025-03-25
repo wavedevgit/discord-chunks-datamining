@@ -421,20 +421,20 @@ class v {
       I = null !== (s = e.hasMoreBefore) && void 0 !== s && s,
       S = null !== (l = e.hasMoreAfter) && void 0 !== l && l,
       T = null !== (u = e.cached) && void 0 !== u && u,
-      N = i()(b).reverse().map(o.Z.getCurrentConfig({
+      A = i()(b).reverse().map(o.Z.getCurrentConfig({
         location: "2ecb25_2"
       }, {
         autoTrackExposure: !1
       }).enabled ? e => (0, c.e5)(e) : e => E(this, e)).value(),
-      A = null;
-    if ((v || y) && null == O && this.ready) A = this.merge(N, v, !0);
+      N = null;
+    if ((v || y) && null == O && this.ready) N = this.merge(A, v, !0);
     else {
       let e = this._array.filter(e => e.state === f.yb.SENDING),
         t = this._array.filter(e => e.state === f.yb.SEND_FAILED),
         n = e.length > 0 || t.length > 0;
-      A = this.reset(N), !n || v || y || (null == O ? void 0 : O.messageId) != null || (null == O ? void 0 : O.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), A = A.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), A = A.merge(e)))
+      N = this.reset(A), !n || v || y || (null == O ? void 0 : O.messageId) != null || (null == O ? void 0 : O.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), N = N.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), N = N.merge(e)))
     }
-    return A.mutate({
+    return N.mutate({
       ready: !0,
       loadingMore: !1,
       jumpType: null !== (d = null == O ? void 0 : O.jumpType) && void 0 !== d ? d : a.SR.ANIMATED,
@@ -443,10 +443,10 @@ class v {
       jumpedToPresent: null !== (p = null == O ? void 0 : O.present) && void 0 !== p && p,
       jumpTargetId: null !== (m = null == O ? void 0 : O.messageId) && void 0 !== m ? m : null,
       jumpTargetOffset: null != O && null != O.messageId && null != O.offset ? O.offset : 0,
-      jumpSequenceId: null != O ? A.jumpSequenceId + 1 : A.jumpSequenceId,
+      jumpSequenceId: null != O ? N.jumpSequenceId + 1 : N.jumpSequenceId,
       jumpReturnTargetId: null !== (g = null == O ? void 0 : O.returnMessageId) && void 0 !== g ? g : null,
-      hasMoreBefore: null == O && y ? A.hasMoreBefore : I,
-      hasMoreAfter: null == O && v ? A.hasMoreAfter : S,
+      hasMoreBefore: null == O && y ? N.hasMoreBefore : I,
+      hasMoreAfter: null == O && v ? N.hasMoreAfter : S,
       cached: T,
       hasFetched: e.hasFetched,
       error: !1

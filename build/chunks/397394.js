@@ -32,9 +32,9 @@ var r = n(200651),
   I = n(787025),
   S = n(981631),
   T = n(388032),
-  N = n(146475);
+  A = n(146475);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -102,17 +102,17 @@ function L(e) {
   return (0, _.Tt)({
     location: T.NW.string(T.t["3S249/"])
   }), (0, r.jsxs)("div", {
-    className: N.wrapper,
+    className: A.wrapper,
     children: [s ? (0, r.jsx)(u.$, {}) : null, (0, r.jsx)("div", {
-      className: a()(N.header, i)
+      className: a()(A.header, i)
     }), (0, r.jsx)(f.X6q, {
       variant: "heading-lg/bold",
-      className: N.text,
+      className: A.text,
       children: t
     }), null != n ? n : null, o ? (0, r.jsx)(d.x, {
       variant: "text-sm/normal",
       color: "text-muted",
-      className: N.cta,
+      className: A.cta,
       children: T.NW.string(T.t["k7J/w8"])
     }) : null]
   })
@@ -120,7 +120,7 @@ function L(e) {
 
 function x(e) {
   return (0, r.jsx)(L, P(C({}, e), {
-    headerClassName: N.headerSuccess
+    headerClassName: A.headerSuccess
   }))
 }
 
@@ -143,11 +143,11 @@ function M(e) {
     }) : T.NW.string(T.t["Dp+rgI"]), [n, t]),
     l = (0, r.jsx)(d.x, {
       variant: "text-md/normal",
-      className: N.authorizedSuccessSubtext,
+      className: A.authorizedSuccessSubtext,
       children: s
     });
   return (0, r.jsx)("div", {
-    className: N.authorizedSuccessWrapper,
+    className: A.authorizedSuccessWrapper,
     children: (0, r.jsx)(x, C({
       message: a,
       footer: l
@@ -179,10 +179,10 @@ function k(e) {
         application_id: n.id
       })
     }))
-  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([b.Z, g.Z], () => g.Z.getChannel(b.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(S.Plq.SEND_MESSAGES, _)), I = null != t, A = null == t && O && (!u || null != s);
+  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([b.Z, g.Z], () => g.Z.getChannel(b.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(S.Plq.SEND_MESSAGES, _)), I = null != t, N = null == t && O && (!u || null != s);
   return null != t || null != o ? (0, r.jsxs)("div", {
-    className: N.buttonsContainer,
-    children: [null != o ? I || A ? (0, r.jsx)(f.zxk, {
+    className: A.buttonsContainer,
+    children: [null != o ? I || N ? (0, r.jsx)(f.zxk, {
       size: f.zxk.Sizes.SMALL,
       look: f.zxk.Looks.LINK,
       color: f.zxk.Colors.PRIMARY,
@@ -199,7 +199,7 @@ function k(e) {
       children: (null == t ? void 0 : t.name.length) > 30 ? T.NW.string(T.t.M35zFB) : T.NW.format(T.t.UdYYPz, {
         guildName: null == t ? void 0 : t.name
       })
-    }), A && (0, r.jsx)(f.zxk, {
+    }), N && (0, r.jsx)(f.zxk, {
       color: f.zxk.Colors.BRAND,
       onClick: d,
       children: T.NW.string(T.t["0cCDKC"])
@@ -209,7 +209,7 @@ function k(e) {
 
 function j(e) {
   return (0, r.jsx)(L, P(C({}, e), {
-    headerClassName: N.headerFailure
+    headerClassName: A.headerFailure
   }))
 }
 

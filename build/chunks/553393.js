@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(113434),
   S = n(497505),
   T = n(475595),
-  N = n(602667),
-  A = n(644646),
+  A = n(602667),
+  N = n(644646),
   C = n(667105),
   R = n(341907),
   P = n(46140),
@@ -70,14 +70,14 @@ function F(e) {
   let {
     quest: v,
     memberListItemRef: y,
-    applicationStream: N,
+    applicationStream: A,
     position: M,
     closePopout: k,
     updatePosition: F,
     impressionRef: V
   } = e, Z = (0, s.e7)([E.Z], () => {
     var e;
-    return null !== (e = E.Z.getChannel(null == N ? void 0 : N.channelId)) && void 0 !== e ? e : null
+    return null !== (e = E.Z.getChannel(null == A ? void 0 : A.channelId)) && void 0 !== e ? e : null
   }), H = (0, C.hf)({
     quest: v,
     location: S.jn.MEMBERS_LIST
@@ -127,7 +127,7 @@ function F(e) {
       en.dispatch(w.CkL.POPOUT_CLOSE)
     },
     es = "top" === M ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j);
-  if (null == v || W || Y && !B(N, Z)) return null;
+  if (null == v || W || Y && !B(A, Z)) return null;
   let el = () => {
       (0, O._3)({
         questId: v.id,
@@ -154,12 +154,12 @@ function F(e) {
       e.stopPropagation(), el()
     },
     ed = () => {
-      if (B(N, Z) && null != Z) return (0, O._3)({
+      if (B(A, Z) && null != Z) return (0, O._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.WATCH_STREAM,
         trackGuildAndChannelMetadata: !0
-      }), u.default.selectVoiceChannel(Z.id), (0, d.iV)(N);
+      }), u.default.selectVoiceChannel(Z.id), (0, d.iV)(A);
       ec()
     },
     ef = z && !Y ? {
@@ -172,7 +172,7 @@ function F(e) {
       ctaText: L.NW.string(L.t.VN1Ajo),
       handleClickCta: ec,
       tileAssetType: "reward"
-    } : B(N, Z) ? {
+    } : B(A, Z) ? {
       headerText: L.NW.string(L.t.Bz6SkJ),
       ctaText: L.NW.string(L.t.BXFP39),
       handleClickCta: ed,
@@ -244,7 +244,7 @@ function F(e) {
               }),
               className: x.assetTile,
               src: (0, T.fh)(v, T.eC.GAME_TILE, Q).url
-            }), "reward" === ef.tileAssetType && (0, r.jsx)(A.Z, {
+            }), "reward" === ef.tileAssetType && (0, r.jsx)(N.Z, {
               className: x.assetTile,
               quest: v,
               questContent: S.jn.MEMBERS_LIST,
@@ -267,7 +267,7 @@ function F(e) {
 }
 
 function V(e) {
-  return null == e.quest ? null : (0, r.jsx)(N.A, {
+  return null == e.quest ? null : (0, r.jsx)(A.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,

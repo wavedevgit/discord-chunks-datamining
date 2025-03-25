@@ -38,10 +38,10 @@ function p(e) {
     onClick: v,
     className: _.clickableUsername,
     children: e
-  }), T = null != g && g.length > 0, N = (0, l.D)(t);
+  }), T = null != g && g.length > 0, A = (0, l.D)(t);
   return (0, r.jsxs)("div", {
     className: o()(_.container, {
-      [_.bot]: null != N
+      [_.bot]: null != A
     }, E),
     children: [(0, r.jsxs)("div", {
       className: _.usernameRow,
@@ -49,8 +49,8 @@ function p(e) {
         className: o()(_.nickname, I),
         variant: y,
         children: h
-      })), null != N && (0, r.jsx)(c.Z, {
-        type: N,
+      })), null != A && (0, r.jsx)(c.Z, {
+        type: A,
         verified: t.isVerifiedBot()
       }), null != m && (0, r.jsx)("div", {
         className: o()(_.nicknameIcons, I),
@@ -59,7 +59,7 @@ function p(e) {
     }), (0, r.jsxs)("div", {
       className: o()(_.tags, I, {
         [_.pronouns]: T,
-        [_.bot]: null != N
+        [_.bot]: null != A
       }),
       children: [!t.isProvisional && S((0, r.jsx)(s.Z, {
         user: t,

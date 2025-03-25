@@ -3,7 +3,7 @@
 n.d(t, {
   Ee: () => R,
   Fj: () => S,
-  ar: () => A,
+  ar: () => N,
   xU: () => C
 }), n(47120);
 var r, i = n(200651),
@@ -177,7 +177,7 @@ function T(e) {
     })
   })
 }
-class N extends(r = o.PureComponent) {
+class A extends(r = o.PureComponent) {
   render() {
     let {
       checked: e,
@@ -261,7 +261,7 @@ class N extends(r = o.PureComponent) {
   }
 }
 
-function A() {
+function N() {
   let {
     orientation: e = "vertical",
     isDisabled: t = !1,
@@ -335,14 +335,14 @@ function R(e) {
     "aria-labelledby": p,
     orientation: h,
     withTransparentBackground: m
-  } = e, E = (0, d.Gc)(), b = A({
+  } = e, E = (0, d.Gc)(), b = N({
     labelledBy: null != p ? p : E.titleId,
     orientation: h,
     isDisabled: f
   }), y = _.some(e => e.value === s);
   return (0, i.jsx)("div", O(v({}, b), {
     className: a,
-    children: _.map(e => (0, i.jsx)(N, {
+    children: _.map(e => (0, i.jsx)(A, {
       hasSelection: y,
       disabled: f,
       checked: s === e.value,
@@ -360,7 +360,7 @@ function R(e) {
     }, e.value))
   }))
 }
-b(N, "defaultProps", {
+b(A, "defaultProps", {
   withTransparentBackground: !1,
   radioPosition: "left"
 }), R.Sizes = I

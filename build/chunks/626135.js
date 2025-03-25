@@ -93,8 +93,8 @@ let I = {
   },
   S = r.createContext(I),
   T = {},
-  N = 1e4,
-  A = 6e4,
+  A = 1e4,
+  N = 6e4,
   C = 12e4,
   R = 3e5,
   P = 9e5,
@@ -141,7 +141,7 @@ let j = {
     throttleKeys: e => [e.server]
   },
   [p.rMx.ACTIVITY_UPDATED]: {
-    throttlePeriod: A,
+    throttlePeriod: N,
     throttleKeys: e => [e.application_id],
     deduplicate: !0
   },
@@ -177,7 +177,7 @@ let j = {
     }
   },
   [p.rMx.QUICKSWITCHER_OPENED]: {
-    throttlePeriod: N,
+    throttlePeriod: A,
     throttleKeys: () => []
   },
   [p.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
@@ -227,11 +227,11 @@ let j = {
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [p.rMx.PREMIUM_UPSELL_VIEWED]: {
-    throttlePeriod: A,
+    throttlePeriod: N,
     throttleKeys: e => [e.type]
   },
   [p.rMx.FORUM_CHANNEL_SEARCHED]: {
-    throttlePeriod: A,
+    throttlePeriod: N,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [p.rMx.FORUM_CHANNEL_SCROLLED]: {
@@ -239,11 +239,11 @@ let j = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [p.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
-    throttlePeriod: A,
+    throttlePeriod: N,
     throttleKeys: e => [e.user_id]
   },
   [p.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
-    throttlePeriod: A,
+    throttlePeriod: N,
     throttleKeys: () => []
   },
   [p.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
@@ -271,7 +271,7 @@ let j = {
     throttleKeys: e => [e.guild_id]
   },
   [p.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
-    throttlePeriod: A,
+    throttlePeriod: N,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [p.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
@@ -313,7 +313,7 @@ let j = {
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [p.rMx.OPEN_MODAL]: e => e.type === p.jXE.MEDIA_VIEWER ? {
-    throttlePeriod: A,
+    throttlePeriod: N,
     throttleKeys: e => [e.type]
   } : void 0
 };

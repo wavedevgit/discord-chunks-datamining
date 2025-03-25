@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(301563), n(653041), n(978209);
 var r = n(371193),
   i = n(501501),
@@ -121,7 +121,7 @@ function I(e, t) {
     tension: a,
     friction: s,
     duration: y
-  })), N = T;
+  })), A = T;
   if (c || u) {
     let i = O(t.duration, g, E);
     n = r[h](e, _(d({}, b), {
@@ -129,11 +129,11 @@ function I(e, t) {
       tension: a,
       friction: s,
       duration: i
-    })), N = r.sequence([T, n])
+    })), A = r.sequence([T, n])
   }
-  l ? N.start(() => {
+  l ? A.start(() => {
     (!m || m && m()) && (f ? f(I.bind(null, e, t)) : I(e, t))
-  }) : N.start(f)
+  }) : A.start(f)
 }
 
 function S(e) {
@@ -147,7 +147,7 @@ r.inject.ApplyAnimatedValues(v, e => e);
 let T = {
     CLAMP: "clamp"
   },
-  N = _(d({}, r), {
+  A = _(d({}, r), {
     Easing: o(),
     accelerate: y,
     animate: I,

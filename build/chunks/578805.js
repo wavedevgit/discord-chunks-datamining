@@ -62,8 +62,8 @@ if (n(322499)() || n(882171)()) {
     if (void 0 === r || !r.versions || !r.versions.node) var I = f("Map.prototype.iterator", !0),
       S = f("Set.prototype.iterator", !0);
     var T = f("Map.prototype.@@iterator", !0) || f("Map.prototype._es6-shim iterator_", !0),
-      N = f("Set.prototype.@@iterator", !0) || f("Set.prototype._es6-shim iterator_", !0),
-      A = function(e) {
+      A = f("Set.prototype.@@iterator", !0) || f("Set.prototype._es6-shim iterator_", !0),
+      N = function(e) {
         if (b(e)) {
           if (I) return o(I(e));
           if (T) return T(e);
@@ -76,7 +76,7 @@ if (n(322499)() || n(882171)()) {
         }
         if (v(e)) {
           if (S) return o(S(e));
-          if (N) return N(e);
+          if (A) return A(e);
           if (O) {
             var n = [];
             return O(e, function(e) {
@@ -86,7 +86,7 @@ if (n(322499)() || n(882171)()) {
         }
       };
     e.exports = function(e) {
-      return A(e) || E(e)
+      return N(e) || E(e)
     }
   } else e.exports = function(e) {
     if (null != e) return E(e, !0)

@@ -73,7 +73,7 @@ function S(e, t) {
 }
 let T = 12;
 
-function N(e) {
+function A(e) {
   let {
     positionKey: t,
     position: n,
@@ -82,7 +82,7 @@ function N(e) {
   return null != t ? t : "".concat(n, ":").concat(r)
 }
 
-function A(e, t, n, r) {
+function N(e, t, n, r) {
   switch (e) {
     case "top":
       return c()(null != t.bottom, "Missing bottom"), r.offsetHeight - (t.bottom + n.offsetHeight);
@@ -312,13 +312,13 @@ class L extends(r = o.Component) {
       } = this.calculatePositionStyle(e, n, r),
       a = null,
       s = null;
-    if (t && (a = A(e, i, n, r)) < 0) {
+    if (t && (a = N(e, i, n, r)) < 0) {
       let t = R(e),
         {
           style: i,
           nudge: o
         } = this.calculatePositionStyle(t, n, r);
-      if ((s = A(t, i, n, r)) > a) return P(s, n, {
+      if ((s = N(t, i, n, r)) > a) return P(s, n, {
         position: t,
         nudge: o,
         style: i
@@ -343,7 +343,7 @@ class L extends(r = o.Component) {
     c()(null != i, "Missing elementRef"), null != n.current && I.set(i, n.current), p.S.subscribe(g.CkL.LAYER_POP_START, this.handleLayerPopStart), p.S.subscribe(g.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null === (t = i.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), this.unsubscribeDesktopVisualRefreshExperiment = (0, _.yl)("ReferencePositionLayer", this.handleDesktopVisualRefreshExperimentChange), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (N(e) === N(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (A(e) === A(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null === (n = (r = this.props).onPositionChange) || void 0 === n || n.call(r, this.state.position)
     }

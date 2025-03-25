@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(642619),
   S = n(824393),
   T = n(341907),
-  N = n(317257),
-  A = n(594174),
+  A = n(317257),
+  N = n(594174),
   C = n(585483),
   R = n(597688),
   P = n(1870),
@@ -100,8 +100,8 @@ let eo = 880,
     let {
       product: t,
       pairedProduct: n
-    } = e, [i] = t.items, o = null == n ? void 0 : n.items[0], a = (0, f.e7)([A.default], () => {
-      let e = A.default.getCurrentUser();
+    } = e, [i] = t.items, o = null == n ? void 0 : n.items[0], a = (0, f.e7)([N.default], () => {
+      let e = N.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
     });
     return (0, c.EQ)(t.type).with(u.Z.PROFILE_EFFECT, () => (0, r.jsx)("div", {
@@ -242,15 +242,15 @@ let eo = 880,
       selectedVariantIndex: E,
       shouldShowPromotionalExperience: b,
       itemConsumed: v = !0
-    } = e, y = (0, L.o)("CollectiblesCollectedModal"), O = (0, Y.W)(t, E), I = (0, f.e7)([A.default], () => {
+    } = e, y = (0, L.o)("CollectiblesCollectedModal"), O = (0, Y.W)(t, E), I = (0, f.e7)([N.default], () => {
       var e, t;
-      return null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
+      return null !== (t = null === (e = N.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
     }), T = i.useMemo(() => {
       if (!y) return;
       let e = O.type === u.Z.AVATAR_DECORATION ? (0, z.R9)(O.skuId, I) : null;
       return null != e ? R.Z.getProduct(e) : void 0
     }, [y, O.skuId, O.type, I]), {
-      confettiColors: N
+      confettiColors: A
     } = (0, U.Z)(O.styles), C = (0, f.e7)([h.Z], () => h.Z.useReducedMotion), P = i.useRef(null), {
       analyticsLocations: w
     } = (0, g.ZP)([...l, m.Z.COLLECTIBLES_COLLECTED_MODAL]), {
@@ -311,7 +311,7 @@ let eo = 880,
         confettiTarget: null != o ? o : P.current,
         confettiCanvas: a,
         sprites: (0, F.vK)(O.categorySkuId),
-        colors: null == N ? void 0 : N.map(e => e.toHexString())
+        colors: null == A ? void 0 : A.map(e => e.toHexString())
       })]
     })
   },
@@ -335,7 +335,7 @@ let eo = 880,
     }), {
       firstAvatarDecoration: I,
       firstProfileEffect: S
-    } = (0, j.R)(n), A = (0, D.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE, R = i.useMemo(() => null != l ? l : q.xJ === n.skuId ? $.NW.string(J.Z.nvaTQk) : g ? $.NW.format(new Date < q.a$ ? $.t.BhGU09 : $.t.Jfv5Qk, {
+    } = (0, j.R)(n), N = (0, D.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE, R = i.useMemo(() => null != l ? l : q.xJ === n.skuId ? $.NW.string(J.Z.nvaTQk) : g ? $.NW.format(new Date < q.a$ ? $.t.BhGU09 : $.t.Jfv5Qk, {
       purchased_item: h,
       suggested_item: m
     }) : p && !f ? $.NW.string($.t["1xr2SU"]) : $.NW.format($.t.YNaxMj, {
@@ -349,7 +349,7 @@ let eo = 880,
         color: _.Ttl.BRAND,
         onClick: () => {
           a(), C.S.dispatch(Q.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {
-            highlightBadge: N.l.ORB_PROFILE_BADGE
+            highlightBadge: A.l.ORB_PROFILE_BADGE
           })
         },
         children: $.NW.string(J.Z.yfwZu7)
@@ -381,9 +381,9 @@ let eo = 880,
         }) : null != w ? w : (0, r.jsx)(ef, {
           product: n,
           onClose: a,
-          isPrimary: A,
+          isPrimary: N,
           analyticsLocations: s
-        }), A ? (0, r.jsx)(_.zxk, {
+        }), N ? (0, r.jsx)(_.zxk, {
           onClick: y,
           submitting: O,
           children: $.NW.string($.t.MAS7uL)

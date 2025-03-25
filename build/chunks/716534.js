@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(509545),
   S = n(669079),
   T = n(74538),
-  N = n(937615),
-  A = n(479446),
+  A = n(937615),
+  N = n(479446),
   C = n(374649),
   R = n(104494),
   P = n(642530),
@@ -53,7 +53,7 @@ function H(e, t, n) {
     let {
       intervalType: e,
       intervalCount: a
-    } = T.ZP.getIntervalForInvoice(t), s = (0, N.og)((0, N.T4)(t.total, t.currency), e, a), l = null != n ? n : t.subscriptionPeriodEnd;
+    } = T.ZP.getIntervalForInvoice(t), s = (0, A.og)((0, A.T4)(t.total, t.currency), e, a), l = null != n ? n : t.subscriptionPeriodEnd;
     r = V.NW.format(V.t.ZzmrTk, {
       termsURL: B.EYA.TERMS,
       paidURL: B.EYA.PAID_TERMS,
@@ -107,11 +107,11 @@ function W(e) {
     {
       isGift: eS,
       giftRecipient: eT,
-      selectedGiftStyle: eN
+      selectedGiftStyle: eA
     } = (0, m.wD)(),
-    eA = (0, R.Ng)(),
-    eC = null == eA ? void 0 : null === (t = eA.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => G.GP[e].skuId === em),
-    eR = !eS && null != eA && null != em && eC,
+    eN = (0, R.Ng)(),
+    eC = null == eN ? void 0 : null === (t = eN.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => G.GP[e].skuId === em),
+    eR = !eS && null != eN && null != em && eC,
     eP = (0, l.e7)([I.Z], () => I.Z.get(z));
   a()(null != eP, "Missing plan");
   let ew = [{
@@ -220,7 +220,7 @@ function W(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           children: V.NW.format(V.t.hXcaLS, {
-            price: (0, N.T4)(0, e2.currency, {
+            price: (0, A.T4)(0, e2.currency, {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0
             })
@@ -308,10 +308,10 @@ function W(e) {
     }), !ed && "" !== e7 && (0, r.jsx)(u.vwX, {
       tag: u.RB0.H5,
       children: e7
-    }), eF && null != eN && (0, r.jsxs)(r.Fragment, {
+    }), eF && null != eA && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(x.Z, {
-        defaultAnimationState: A.SR.LOOP,
-        giftStyle: eN,
+        defaultAnimationState: N.SR.LOOP,
+        giftStyle: eA,
         shouldAnimate: !0,
         className: Z.giftMainAnimation
       }), (0, r.jsx)(U.s, {

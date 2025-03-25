@@ -42,8 +42,8 @@ var r = n(200651),
   I = n(425886),
   S = n(80966),
   T = n(593545),
-  N = n(479313),
-  A = n(765104),
+  A = n(479313),
+  N = n(765104),
   C = n(505953),
   R = n(695346),
   P = n(201542),
@@ -437,9 +437,9 @@ function ef(e) {
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.G), [v, y] = i.useState(null), I = i.useRef(null), [S, T] = i.useState(null), R = i.useRef(null), P = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [v, y] = i.useState(null), I = i.useRef(null), [S, T] = i.useState(null), R = i.useRef(null), P = (0, u.Wu)([N.Z], () => {
     var e;
-    return null !== (e = A.Z.summaries(s.id)) && void 0 !== e ? e : []
+    return null !== (e = N.Z.summaries(s.id)) && void 0 !== e ? e : []
   }, [s]), k = (0, g.Z)(P);
   i.useEffect(() => {
     l().isEqual(k, P) || x.default.track(G.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
@@ -463,7 +463,7 @@ function ef(e) {
         }).filter(M.lm)
       })) && void 0 !== e ? e : []
     }, [P], ep),
-    B = null !== (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) && void 0 !== n ? n : -1,
+    B = null !== (n = (0, u.e7)([N.Z], () => N.Z.visibleSummaryIndex())) && void 0 !== n ? n : -1,
     H = null == P ? void 0 : null === (t = P[B]) || void 0 === t ? void 0 : t.topic;
   null == H && null == v && (null == P ? void 0 : P.length) >= 1 && (H = null === (o = P[0]) || void 0 === o ? void 0 : o.topic);
   let W = i.useMemo(() => l().debounce(e => {
@@ -471,7 +471,7 @@ function ef(e) {
       y(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : null)
     }, 64), [y]),
     Y = i.useMemo(() => l().throttle(() => {
-      (0, N.yK)(null)
+      (0, A.yK)(null)
     }, 1200, {
       trailing: !1
     }), []),
@@ -496,7 +496,7 @@ function ef(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : F.DZ.PILL_DROPDOWN,
         n = P[e];
       if (null == n) return;
-      (0, N.wv)(s.id, n.id), (0, N.yK)(s.id, n.id);
+      (0, A.wv)(s.id, n.id), (0, A.yK)(s.id, n.id);
       let r = () => {
         h.removeScrollCompleteCallback(r), setTimeout(() => {
           h.addAutomaticAnchorCallback(K, !1)
@@ -548,7 +548,7 @@ function ef(e) {
   i.useEffect(() => (h.addAutomaticAnchorCallback(K), () => {
     h.removeAutomaticAnchorCallback(K)
   }), [h, K]), i.useEffect(() => {
-    (0, N.G1)(s.id)
+    (0, A.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -676,9 +676,9 @@ function eh(e) {
     scrollManager: _
   } = e, {
     disableInteractions: p
-  } = i.useContext(b.G), [h, E] = i.useState(null), v = i.useRef(null), [y, I] = i.useState(null), S = i.useRef(null), T = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [h, E] = i.useState(null), v = i.useRef(null), [y, I] = i.useState(null), S = i.useRef(null), T = (0, u.Wu)([N.Z], () => {
     var e;
-    return null !== (e = A.Z.summaries(s.id)) && void 0 !== e ? e : []
+    return null !== (e = N.Z.summaries(s.id)) && void 0 !== e ? e : []
   }, [s]), R = (0, g.Z)(T);
   i.useEffect(() => {
     l().isEqual(R, T) || x.default.track(G.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
@@ -702,7 +702,7 @@ function eh(e) {
         }).filter(M.lm)
       })) && void 0 !== e ? e : []
     }, [T], ep),
-    w = null !== (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) && void 0 !== n ? n : -1,
+    w = null !== (n = (0, u.e7)([N.Z], () => N.Z.visibleSummaryIndex())) && void 0 !== n ? n : -1,
     k = null == T ? void 0 : null === (t = T[w]) || void 0 === t ? void 0 : t.topic;
   null == k && null == h && (null == T ? void 0 : T.length) >= 1 && (k = null === (o = T[0]) || void 0 === o ? void 0 : o.topic);
   let j = i.useMemo(() => l().get(T, w - 1), [w, T]),
@@ -712,7 +712,7 @@ function eh(e) {
       E(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : null)
     }, 64), [E]),
     H = i.useMemo(() => l().throttle(() => {
-      (0, N.yK)(null)
+      (0, A.yK)(null)
     }, 1200, {
       trailing: !1
     }), []),
@@ -737,7 +737,7 @@ function eh(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : F.DZ.PILL_DROPDOWN,
         n = T[e];
       if (null == n) return;
-      (0, N.wv)(s.id, n.id), (0, N.yK)(s.id, n.id);
+      (0, A.wv)(s.id, n.id), (0, A.yK)(s.id, n.id);
       let r = () => {
         _.removeScrollCompleteCallback(r), setTimeout(() => {
           _.addAutomaticAnchorCallback(W, !1)
@@ -795,7 +795,7 @@ function eh(e) {
   i.useEffect(() => (_.addAutomaticAnchorCallback(W), () => {
     _.removeAutomaticAnchorCallback(W)
   }), [_, W]), i.useEffect(() => {
-    (0, N.G1)(s.id)
+    (0, A.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -806,7 +806,7 @@ function eh(e) {
     selectTopic: q,
     setOpen: J
   }), [T, P, q, J, s]);
-  if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
+  if (!(0, u.e7)([N.Z], () => N.Z.shouldShowTopicsBar())) return null;
   let et = V.NW.string(V.t["38qwgI"]);
   return T.length > 0 && (et = "" === k || null == k ? V.NW.string(V.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
     ref: v,

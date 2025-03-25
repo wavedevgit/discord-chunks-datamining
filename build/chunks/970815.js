@@ -50,10 +50,10 @@ let p = () => (0, r.jsx)("img", {
       onClick: g,
       onMouseDown: E,
       className: b
-    } = e, [v, y] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(o, v), [o, v]), [I, S] = (0, i.useState)(!1), [T, N] = (0, i.useState)(!1), [A, C] = (0, i.useState)(.9 * u.D2), R = null === n;
+    } = e, [v, y] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(o, v), [o, v]), [I, S] = (0, i.useState)(!1), [T, A] = (0, i.useState)(!1), [N, C] = (0, i.useState)(.9 * u.D2), R = null === n;
     (0, i.useEffect)(() => {
       R && !I && (S(!0), setTimeout(() => {
-        N(!0)
+        A(!0)
       }, 500))
     }, [R, S, I]), (0, i.useEffect)(() => {
       T && !R && S(!1)
@@ -93,7 +93,7 @@ let p = () => (0, r.jsx)("img", {
           value: w,
           onValueChange: k,
           onValueReached: M,
-          targetTotalCounterTime: A,
+          targetTotalCounterTime: N,
           className: P ? d.counterLoading : void 0
         }), f && (0, r.jsx)(p, {})]
       })

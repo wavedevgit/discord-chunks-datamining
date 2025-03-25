@@ -61,8 +61,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = e => e.stopPropagation();
-class A extends i.PureComponent {
+let A = e => e.stopPropagation();
+class N extends i.PureComponent {
   componentDidMount() {
     d.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, E.wI2.SEARCH)
   }
@@ -172,7 +172,7 @@ class A extends i.PureComponent {
       role: "tabpanel",
       "aria-labelledby": b._3,
       className: a()(y.container, e),
-      onClick: N,
+      onClick: A,
       ref: t,
       children: [(0, r.jsx)("div", {
         className: y.header,
@@ -248,7 +248,7 @@ let C = i.forwardRef((e, t) => {
       var e;
       null === (e = g.current) || void 0 === e || e.focus()
     }
-  }, [d, g]), (0, r.jsx)(A, T(I({}, e), {
+  }, [d, g]), (0, r.jsx)(N, T(I({}, e), {
     forwardedRef: t,
     query: f,
     resultQuery: o,

@@ -29,8 +29,8 @@ let m = e => {
       onClose: I,
       onConfirm: S,
       onConfirmSecondary: T,
-      title: N,
-      transitionState: A,
+      title: A,
+      transitionState: N,
       titleClassName: C
     } = e,
     R = (0, _.Q3)("ConfirmModal"),
@@ -67,22 +67,22 @@ let m = e => {
       children: y
     })
   })), (0, r.jsx)(c.Y0, {
-    transitionState: A,
+    transitionState: N,
     size: c.Cg.DYNAMIC,
     className: o()(E, h.container),
-    "aria-label": N,
+    "aria-label": A,
     children: (0, r.jsxs)("form", {
       onSubmit: D,
       className: h.form,
       children: [(0, r.jsx)(c.xB, {
-        children: null != N && R ? (0, r.jsx)(d.X6q, {
+        children: null != A && R ? (0, r.jsx)(d.X6q, {
           variant: "heading-lg/semibold",
           className: o()(h.title, C),
-          children: N
+          children: A
         }) : (0, r.jsx)(l.v, {
           tag: "h2",
           className: o()(h.title, C),
-          children: N
+          children: A
         })
       }), (0, r.jsx)(c.hz, {
         className: h.modalContent,

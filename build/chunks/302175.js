@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(441536),
   S = n(535396),
   T = n(981631),
-  N = n(367123),
-  A = n(388032),
+  A = n(367123),
+  N = n(388032),
   C = n(840987),
   R = n(782763);
 
@@ -142,7 +142,7 @@ function x(e) {
       children: [(0, r.jsx)(p.xm, {
         heading: n.title,
         description: n.description,
-        label: A.NW.formatToPlainString(N.Z.QOacIS, {
+        label: N.NW.formatToPlainString(A.Z.QOacIS, {
           quantity: n.cost
         }),
         isEnabled: g
@@ -154,18 +154,18 @@ function x(e) {
           onClick: M,
           color: u.zxk.Colors.BRAND,
           className: R.button,
-          children: A.NW.string(A.t["oPAx7+"])
+          children: N.NW.string(N.t["oPAx7+"])
         }), E && (0, r.jsx)(u.zxk, {
           grow: !0,
           onClick: k,
           color: u.zxk.Colors.PRIMARY,
           className: R.button,
-          children: A.NW.string(A.t.GoCQxc)
+          children: N.NW.string(N.t.GoCQxc)
         })]
       })]
     }), (0, r.jsx)(u.IGR, {
       className: R.topPerksCardNew,
-      text: A.NW.string(A.t.y2b7CA)
+      text: N.NW.string(N.t.y2b7CA)
     }), b && (0, r.jsx)("div", {
       className: R.shineLine
     })]
@@ -187,10 +187,10 @@ let M = i.forwardRef((e, t) => {
     className: C.container,
     children: [(0, r.jsx)(l.X6, {
       variant: "heading-xxl/extrabold",
-      children: A.NW.string(N.Z.p6HUDQ)
+      children: N.NW.string(A.Z.p6HUDQ)
     }), (0, r.jsx)(l.xv, {
       variant: "text-lg/medium",
-      children: A.NW.string(N.Z.MYYPa2)
+      children: N.NW.string(A.Z.MYYPa2)
     }), (0, r.jsx)("div", {
       className: C.powerupsContainer,
       children: d.map(e => (0, r.jsx)(x, {

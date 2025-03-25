@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(240781),
   S = n(818611),
   T = n(981631),
-  N = n(474936),
-  A = n(388032),
+  A = n(474936),
+  N = n(388032),
   C = n(136168);
 
 function R(e) {
@@ -70,15 +70,15 @@ function R(e) {
   }, [a, c]), Z = (0, h.M)(), H = () => null != M && (!(0, d.qS)(M) || k) || null === D ? (0, r.jsx)(s.zxk, {
     onClick: F,
     disabled: G,
-    children: A.NW.string(A.t.d6sv6u)
+    children: N.NW.string(N.t.d6sv6u)
   }) : null == M && (k || !(0, d.G1)(x)) ? (0, r.jsx)(s.zxk, {
     className: C.modalFooterShopButton,
     onClick: () => V(null == x ? void 0 : x.skuId),
-    children: A.NW.string(A.t.fYfGgI)
+    children: N.NW.string(N.t.fYfGgI)
   }) : (0, r.jsx)(g.Z, {
-    subscriptionTier: N.Si.TIER_2,
+    subscriptionTier: A.Si.TIER_2,
     showGradient: Z,
-    buttonText: y.ZP.isPremium(t) ? A.NW.string(A.t.KXLX7u) : Z ? A.NW.string(A.t.pj0XBA) : A.NW.string(A.t.mr4K7O)
+    buttonText: y.ZP.isPremium(t) ? N.NW.string(N.t.KXLX7u) : Z ? N.NW.string(N.t.pj0XBA) : N.NW.string(N.t.mr4K7O)
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.xBx, {
@@ -86,7 +86,7 @@ function R(e) {
       className: C.modalHeader,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
-        children: A.NW.string(A.t["Tna/TU"])
+        children: N.NW.string(N.t["Tna/TU"])
       }), (0, r.jsx)(s.olH, {
         className: C.modalCloseButton,
         onClick: c
@@ -114,7 +114,7 @@ function R(e) {
         look: s.zxk.Looks.LINK,
         color: s.zxk.Colors.PRIMARY,
         onClick: c,
-        children: A.NW.string(A.t["ETE/oK"])
+        children: N.NW.string(N.t["ETE/oK"])
       }), Z && (0, d.G1)(x) && (0, r.jsx)(m.Z, {
         product: x,
         onSecondaryClick: c
@@ -139,10 +139,10 @@ function P(e) {
     categories: O,
     purchases: I,
     isFetchingCategories: S,
-    isFetchingPurchases: N
+    isFetchingPurchases: A
   } = (0, _.ZP)({
     location: "AvatarDecorationModal"
-  }), A = S || N && 0 === I.size, P = () => {
+  }), N = S || A && 0 === I.size, P = () => {
     f(), null == d || d()
   };
   return i.useEffect(() => {
@@ -160,8 +160,8 @@ function P(e) {
     children: (0, r.jsx)(s.Y0X, {
       transitionState: t,
       className: C.modal,
-      size: A ? s.CgR.DYNAMIC : s.CgR.MEDIUM,
-      children: A ? (0, r.jsx)(s.$jN, {
+      size: N ? s.CgR.DYNAMIC : s.CgR.MEDIUM,
+      children: N ? (0, r.jsx)(s.$jN, {
         className: C.spinner,
         type: s.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(R, {

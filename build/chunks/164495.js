@@ -152,19 +152,24 @@ let v = e => {
       taskDetails: m
     } = e, f = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, x = (0, p.P)({
       location: g.dr.QUESTS_BAR
-    }), h = (0, u.q8)(n);
-    return f ? (0, r.jsx)(_, {
+    }), h = (0, u.q8)(n), b = (0, u.Vl)(n);
+    if (f) return (0, r.jsx)(_, {
       quest: n,
       useReducedMotion: o,
       isExpanded: s
-    }) : h ? (0, r.jsx)(j, {
+    });
+    if (h) return (0, r.jsx)(j, {
       quest: n,
       taskDetails: m
-    }) : c === d.LI.CONSOLE && a && !x ? (0, r.jsx)(y, {
+    });
+    if (b);
+    else if (c === d.LI.CONSOLE && a && !x) return (0, r.jsx)(y, {
       quest: n
-    }) : c === d.LI.SELECT || i || l ? null : (0, r.jsx)(v, {
+    });
+    else if (c !== d.LI.SELECT && !i && !l) return (0, r.jsx)(v, {
       quest: n
-    })
+    });
+    return null
   };
 
 function O(e) {

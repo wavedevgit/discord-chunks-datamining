@@ -29,11 +29,11 @@ function Z(e) {
   let y = () => {
       null == p || p(), a.Z.openPrivateChannel(t.id, !0, m), O.dispatch(f.CkL.POPOUT_CLOSE), (0, r.pTH)()
     },
-    _ = !s.ZP.disableCallUserConfirmationPrompt;
+    P = !s.ZP.disableCallUserConfirmationPrompt;
   return (0, l.jsx)(r.sNh, {
     id: null != v ? v : "call",
     label: null != N ? N : b.NW.string(b.t.JJogjo),
-    action: _ ? () => {
+    action: P ? () => {
       (0, r.ZDy)(async () => {
         let {
           default: e

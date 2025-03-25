@@ -67,7 +67,7 @@ function w(e) {
     channelId: n,
     participant: l,
     applicationId: m
-  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), w = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), Z = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), C = i.useMemo(() => null != Z ? [Z] : [], [Z]), P = (0, v.q)(m), {
+  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), w = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), Z = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), P = i.useMemo(() => null != Z ? [Z] : [], [Z]), C = (0, v.q)(m), {
     analyticsLocations: N
   } = (0, h.ZP)(), I = (0, c.O)(), _ = l.activity.session_id, R = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [T, A] = i.useState(!1), D = null == Z ? void 0 : Z.id, k = i.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (A(!0), await (0, u.Z)({
@@ -81,13 +81,13 @@ function w(e) {
       isContextlessActivity: R
     }), A(!1))
   }, [m, D, I.location, N, _, n, R]);
-  return null == w || null == Z || null == P ? null : (0, r.jsxs)("div", {
+  return null == w || null == Z || null == C ? null : (0, r.jsxs)("div", {
     className: x.splash,
     children: [(0, r.jsx)(E.OV, {
       avatarSize: j,
       guildId: w.guild_id,
       channelId: w.id,
-      users: C
+      users: P
     }), (0, r.jsx)(s.Text, {
       className: o()(x.subheader, {
         [x.small]: p === E.nR.SMALL,
@@ -103,7 +103,7 @@ function w(e) {
         [x.medium]: p === E.nR.MEDIUM
       }),
       variant: "text-sm/normal",
-      children: P.name
+      children: C.name
     }), (0, r.jsx)("div", {
       className: x.buttons,
       children: (0, r.jsx)(s.zxk, {

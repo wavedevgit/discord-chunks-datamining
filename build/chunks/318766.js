@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,7 +61,7 @@ function A(e, t) {
 }
 
 function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -106,7 +106,7 @@ let k = function(e) {
     className: n,
     renderButtonContents: o,
     active: T,
-    onClick: A,
+    onClick: N,
     "aria-controls": R,
     focusProps: P,
     shouldShowSoundmojiCoachmark: w = !1
@@ -116,9 +116,7 @@ let k = function(e) {
     j(!0), G(e), (0, p.x)(O.qR.EmojiButtonMouseEntered)
   }, [B, j, G]), H = i.useCallback(() => {
     j(!1)
-  }, [j]), W = i.useCallback(() => (0, p.x)(O.qR.EmojiButtonFocused), []), Y = (0, h.B4)({
-    location: "EmojiButton"
-  }), [K, z] = (0, _.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), q = K === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !T && q, X = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [J, $] = i.useState(!1), [ee, et] = i.useState(!1), en = (0, m.V2)({
+  }, [j]), W = i.useCallback(() => (0, p.x)(O.qR.EmojiButtonFocused), []), Y = (0, h.B4)(), [K, z] = (0, _.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), q = K === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !T && q, X = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [J, $] = i.useState(!1), [ee, et] = i.useState(!1), en = (0, m.V2)({
     location: "EmojiButton"
   }), [er, ei] = (0, _.US)(w && en ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !J && er === c.z.SOUNDMOJI_COACHMARK && !ee;
   return (0, r.jsx)(u.yRy, {
@@ -139,7 +137,7 @@ let k = function(e) {
       onTooltipShow: () => $(Q),
       tooltipClassName: S.premiumTooltip,
       tooltipContentClassName: S.premiumTooltipContainer,
-      children: i => (0, r.jsx)(u.zxk, C(N({}, e), {
+      children: i => (0, r.jsx)(u.zxk, C(A({}, e), {
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.NONE,
         tabIndex: t,
@@ -156,7 +154,7 @@ let k = function(e) {
         onFocus: W,
         onClick: e => {
           var t;
-          null == A || A(e), null === (t = i.onClick) || void 0 === t || t.call(i)
+          null == N || N(e), null === (t = i.onClick) || void 0 === t || t.call(i)
         },
         "aria-label": I.NW.string(I.t["59QgaG"]),
         "aria-controls": R,
@@ -175,7 +173,7 @@ let k = function(e) {
             } = e;
             return (0, r.jsxs)(s.animated.div, {
               className: S.spriteContainer,
-              style: C(N({}, V), {
+              style: C(A({}, V), {
                 transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
               }),
               children: [(0, r.jsx)("div", {

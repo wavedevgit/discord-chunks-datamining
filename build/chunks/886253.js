@@ -1,51 +1,51 @@
 /** Chunk was on 86282 **/
-n.d(l, {
+l.d(n, {
   A: () => j
 });
-var t = n(200651);
-n(192379);
-var r = n(442837),
-  i = n(481060),
-  s = n(812206),
-  a = n(370210),
-  o = n(757746),
-  c = n(572004),
-  d = n(601911),
-  u = n(504211),
-  m = n(533159),
-  x = n(981631),
-  h = n(388032),
-  v = n(795364),
-  p = n(414561);
+var t = l(200651);
+l(192379);
+var r = l(442837),
+  i = l(481060),
+  s = l(812206),
+  a = l(370210),
+  o = l(757746),
+  c = l(572004),
+  d = l(601911),
+  u = l(504211),
+  m = l(533159),
+  x = l(981631),
+  h = l(388032),
+  v = l(795364),
+  p = l(414561);
 
 function j(e) {
   let {
-    appId: l,
-    skuId: n,
+    appId: n,
+    skuId: l,
     transitionState: j,
-    onClose: f,
-    onHeaderTitleClick: N,
+    onClose: N,
+    onHeaderTitleClick: f,
     children: b,
-    footer: g
-  } = e, S = (0, r.e7)([s.Z, a.Z], () => {
+    footer: S
+  } = e, g = (0, r.e7)([s.Z, a.Z], () => {
     var e;
-    return null !== (e = s.Z.getApplication(l)) && void 0 !== e ? e : a.Z.getApplicationRecord(l)
-  }, [l]), {
+    return null !== (e = s.Z.getApplication(n)) && void 0 !== e ? e : a.Z.getApplicationRecord(n)
+  }, [n]), {
     data: k
-  } = (0, o.Z)(n);
-  if (null == S) return null;
-  let O = (0, d.y)(S, 25),
+  } = (0, o.Z)(l);
+  if (null == g) return null;
+  let O = (0, d.y)(g, 25),
     {
-      termsOfServiceUrl: y,
-      privacyPolicyUrl: I
-    } = S;
-  return (null == k ? void 0 : k.applicationId) !== l ? (0, t.jsxs)(i.Y0X, {
+      termsOfServiceUrl: I,
+      privacyPolicyUrl: y
+    } = g;
+  return (null == k ? void 0 : k.applicationId) !== n ? (0, t.jsxs)(i.Y0X, {
     transitionState: j,
     size: i.CgR.SMALL,
     children: [(0, t.jsxs)(i.hzk, {
       className: p.content,
       children: [(0, t.jsx)(i.olH, {
-        onClick: f,
+        onClick: N,
         className: v.modalCloseBtn
       }), (0, t.jsx)(i.Text, {
         variant: "text-lg/semibold",
@@ -62,7 +62,7 @@ function j(e) {
       children: (0, t.jsx)(i.zxk, {
         className: p.button,
         color: i.zxk.Colors.BRAND,
-        onClick: f,
+        onClick: N,
         size: i.zxk.Sizes.LARGE,
         children: h.NW.string(h.t.BddRzc)
       })
@@ -75,27 +75,27 @@ function j(e) {
       className: v.modalHeader,
       children: [(0, t.jsxs)(i.P3F, {
         className: v.modalTitle,
-        onClick: N,
+        onClick: f,
         children: [null != O && (0, t.jsx)("img", {
           src: O.href,
           alt: "",
           className: p.appIcon
         }), (0, t.jsx)(i.X6q, {
           variant: "heading-md/semibold",
-          children: S.name
+          children: g.name
         })]
       }), (0, t.jsx)(i.olH, {
-        onClick: f,
+        onClick: N,
         className: v.modalCloseBtn
       })]
     }), b, (0, t.jsxs)(i.mzw, {
       className: p.footer,
-      children: [null != y || null != I ? (0, t.jsx)(i.Text, {
+      children: [null != I || null != y ? (0, t.jsx)(i.Text, {
         color: "header-primary",
         variant: "text-sm/normal",
         children: (0, t.jsx)(m.Z, {
-          termsOfServiceUrl: y,
-          privacyPolicyUrl: I
+          termsOfServiceUrl: I,
+          privacyPolicyUrl: y
         })
       }) : (0, t.jsx)(i.Text, {
         color: "header-primary",
@@ -111,14 +111,14 @@ function j(e) {
           className: p.linkButton,
           innerClassName: p.innerLinkButton,
           onClick: () => {
-            let e = "".concat(location.protocol, "//").concat(location.host).concat(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(l, n));
-            (0, c.JG)(e), (0, i.showToast)((0, i.createToast)(h.NW.string(h.t["L/PwZW"]), i.ToastType.SUCCESS)), (0, u.X)(l, u.B.DETAILS_MODAL, n)
+            let e = "".concat(location.protocol, "//").concat(location.host).concat(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(n, l));
+            (0, c.JG)(e), (0, i.showToast)((0, i.createToast)(h.NW.string(h.t["L/PwZW"]), i.ToastType.SUCCESS)), (0, u.X)(n, u.B.DETAILS_MODAL, l)
           },
           children: (0, t.jsx)(i.xPt, {
             size: "xs",
             color: "currentColor"
           })
-        }), g]
+        }), S]
       })]
     })]
   })

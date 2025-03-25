@@ -254,7 +254,7 @@ function G(e) {
     guildId: n,
     channelId: r
   } = e;
-  if (!j(t, [f.Z, _.Z])) return !0;
+  if (!j(t, [f.ZP, _.Z])) return !0;
   {
     let e = S.default.getUser(t),
       i = p.ZP.getName(n, r, e);

@@ -58,13 +58,13 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t, n, i, o) {
+function N(e, t, n, i, o) {
   if (null == e) return;
   let u = () => {
     let r = _.Z.getChannel(e);
@@ -100,7 +100,7 @@ function A(e, t, n, i, o) {
       })
     }
   };
-  "" !== p.Z.getDraft(e, p.d.ChannelMessage) ? (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, N(S({
+  "" !== p.Z.getDraft(e, p.d.ChannelMessage) ? (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, A(S({
     header: y.NW.string(y.t.pe26Cg),
     confirmText: y.NW.string(y.t.VkKicX),
     cancelText: y.NW.string(y.t["ETE/oK"]),
@@ -141,16 +141,16 @@ function C(e) {
     type: "contextless"
   }, {
     command: S
-  } = l.YZ(I, null !== (t = n.commandKey) && void 0 !== t ? t : ""), T = f.dN.useSetting(), N = i.useMemo(() => {
+  } = l.YZ(I, null !== (t = n.commandKey) && void 0 !== t ? t : ""), T = f.dN.useSetting(), A = i.useMemo(() => {
     if (null == S || null == g || S.untranslatedName !== n.commandName || T) return !1;
     let e = g.isPrivate();
     if ((0, d.xl)(g) || !e && !y) return !1;
     let t = (null == S ? void 0 : S.applicationId) === b.bi.BUILT_IN;
     return !!e || !!t || !!O
   }, [g, S, y, O, n.commandName, T]), C = i.useCallback(e => {
-    null == e || e.stopPropagation(), null != g && null != n.commandName && null != n.commandKey && A(g.id, n.commandName, n.commandKey, c.Vh.MENTION)
+    null == e || e.stopPropagation(), null != g && null != n.commandName && null != n.commandKey && N(g.id, n.commandName, n.commandKey, c.Vh.MENTION)
   }, [g, n.commandKey, n.commandName]);
-  return N ? (0, r.jsx)(a.ua7, {
+  return A ? (0, r.jsx)(a.ua7, {
     text: n.output,
     position: "top",
     children: e => {
@@ -179,7 +179,7 @@ function R(e) {
     applicationId: s,
     onClick: l
   } = e, u = (0, o.e7)([m.Z], () => m.Z.getChannelId()), d = e => {
-    null == e || e.stopPropagation(), A(u, n, t, c.Vh.POPULAR_COMMANDS, s), null == l || l(t)
+    null == e || e.stopPropagation(), N(u, n, t, c.Vh.POPULAR_COMMANDS, s), null == l || l(t)
   };
   return (0, r.jsx)(a.ua7, {
     text: i,

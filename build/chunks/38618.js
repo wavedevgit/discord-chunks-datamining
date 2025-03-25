@@ -25,8 +25,8 @@ var r, i = n(392711),
   I = n(955132),
   S = n(645436),
   T = n(344651),
-  N = n(981631),
-  A = n(526761);
+  A = n(981631),
+  N = n(526761);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,7 +64,7 @@ async function G(e) {
     n = E.Z.getVoiceChannelId();
   if (null != n) {
     var r, i, o, a, s, c, u, d;
-    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) m.ZP.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = p.Z.getChannel(n);
       null != e && (t = {
@@ -88,7 +88,7 @@ function V(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), (0, y.isIOS)() && M === N.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), !1
+  }), (0, y.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), !1
 }
 
 function Z() {
@@ -97,7 +97,7 @@ function Z() {
 
 function H(e) {
   var t;
-  e.settings.type === A.yP.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && Z()
+  e.settings.type === N.yP.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && Z()
 }
 
 function W(e) {
@@ -149,12 +149,12 @@ function z(e) {
 }
 
 function q(e) {
-  if (e.state !== N.hes.DISCONNECTED) return !1;
+  if (e.state !== A.hes.DISCONNECTED) return !1;
   e.willReconnect && (null != e.streamKey ? I.Wb.streamPing(e.streamKey) : I.Wb.voiceServerPing())
 }
 
 function Q(e) {
-  return (0, y.isIOS)() ? (f.default.isAuthenticated() && (M === N.$7l.INACTIVE && e.state === N.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : M === N.$7l.BACKGROUND && e.state === N.$7l.ACTIVE && I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), M = e.state) : e.state === N.$7l.ACTIVE && (S.Y(!1), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
+  return (0, y.isIOS)() ? (f.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (S.Y(!1), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
 }
 
 function X() {

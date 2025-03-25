@@ -42,7 +42,7 @@ function h(e) {
   let {
     sourceName: t,
     sourceApplicationId: n
-  } = p(e), r = l.Z.getChannelId(), i = [a.default.getId()];
+  } = p(e), r = l.ZP.getChannelId(), i = [a.default.getId()];
   return null != r && (i = Object.keys(c.Z.getVoiceStatesForChannel(r))), {
     id: u.default.fromTimestamp(Date.now()),
     version: d.Bg,

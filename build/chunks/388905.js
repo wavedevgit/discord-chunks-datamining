@@ -8,12 +8,12 @@ n.d(t, {
   Hh: () => D,
   II: () => R,
   MC: () => C,
-  Vj: () => A,
+  Vj: () => N,
   ZP: () => k,
   gO: () => P,
   i_: () => w,
   jQ: () => x,
-  qE: () => N,
+  qE: () => A,
   v6: () => M,
   zx: () => T
 }), n(266796), n(86693), n(536091);
@@ -126,7 +126,7 @@ let O = e => {
     }, n))
   };
 T.Looks = a.zxk.Looks, T.Colors = a.zxk.Colors, T.Sizes = a.zxk.Sizes;
-let N = e => {
+let A = e => {
     let {
       className: t,
       src: n,
@@ -139,7 +139,7 @@ let N = e => {
       "aria-hidden": !0
     })
   },
-  A = e => {
+  N = e => {
     let {
       guild: t,
       size: n,
@@ -154,7 +154,7 @@ let N = e => {
       className: o
     })
   };
-A.Sizes = d.Z.Sizes;
+N.Sizes = d.Z.Sizes;
 let C = e => {
   let {
     className: t,
@@ -307,7 +307,7 @@ let R = e => {
         variant: "text-md/normal",
         color: "header-secondary",
         children: h.NW.string(h.t["/8WWvL"])
-      }), (0, r.jsx)(N, {
+      }), (0, r.jsx)(A, {
         className: m.joiningAsAvatar,
         src: t.getAvatarURL(void 0, 24),
         size: a.EFr.SIZE_24,

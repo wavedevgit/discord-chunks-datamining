@@ -22,8 +22,8 @@ var r = n(687249),
   I = n(438330),
   S = 1,
   T = 2,
-  N = 4,
-  A = "[object Arguments]",
+  A = 4,
+  N = "[object Arguments]",
   C = "[object Array]",
   R = "[object Boolean]",
   P = "[object Date]",
@@ -54,7 +54,7 @@ var r = n(687249),
 function ee(e, t, n, C, R, P) {
   var w, x = t & S,
     M = t & T,
-    j = t & N;
+    j = t & A;
   if (n && (w = R ? n(e, C, R, P) : n(e)), void 0 !== w) return w;
   if (!y(e)) return e;
   var U = E(e);
@@ -64,7 +64,7 @@ function ee(e, t, n, C, R, P) {
     var G = p(e),
       B = G == D || G == L;
     if (b(e)) return l(e, x);
-    if (G == k || G == A || B && !R) {
+    if (G == k || G == N || B && !R) {
       if (w = M || B ? {} : g(e), !x) return M ? d(e, s(w, e)) : u(e, a(w, e))
     } else {
       if (!$[G]) return R ? e : {};
@@ -85,4 +85,4 @@ function ee(e, t, n, C, R, P) {
     Z && (r = e[i = r]), o(w, i, ee(r, t, n, i, e, P))
   }), w
 }
-$[A] = $[C] = $[V] = $[Z] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[w] = $[D] = $[F] = !1, e.exports = ee
+$[N] = $[C] = $[V] = $[Z] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[w] = $[D] = $[F] = !1, e.exports = ee

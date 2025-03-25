@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(960870),
   S = n(139793),
   T = n(994746),
-  N = n(232174),
-  A = n(652853),
+  A = n(232174),
+  N = n(652853),
   C = n(979038),
   R = n(448980),
   P = n(336383),
@@ -99,7 +99,7 @@ function K(e) {
     analyticsLocations: X
   } = (0, _.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     profileType: J
-  } = (0, A.z)(), $ = {
+  } = (0, N.z)(), $ = {
     [V.fullSize]: J === U.y0.FULL_SIZE
   }, ee = (0, b.Z)({
     activity: i,
@@ -227,7 +227,7 @@ function K(e) {
       text: i.state
     }) : null
   }, ep = () => {
-    if (!(0, N.Z)(i)) return null;
+    if (!(0, A.Z)(i)) return null;
     let {
       start: e,
       end: t

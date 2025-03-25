@@ -28,8 +28,8 @@ var i = n(200651),
   N = n(358085),
   C = n(13140),
   Z = n(145597),
-  w = n(830917),
-  P = n(486016),
+  P = n(830917),
+  w = n(486016),
   _ = n(32300),
   T = n(681603),
   D = n(915614),
@@ -175,7 +175,7 @@ function er(e) {
     hasZeroSizeDimension: N,
     keybind: D
   } = (0, a.cj)([W.ZP, x.default, I.Z, b.ZP], () => {
-    let e = I.Z.windowSize((0, w.ZY)(n)),
+    let e = I.Z.windowSize((0, P.ZY)(n)),
       t = b.ZP.getOverlayKeybind(),
       i = (0, Z.getPID)();
     return {
@@ -224,9 +224,9 @@ function er(e) {
       e.current = !0;
       let r = null !== (i = j.default.getFocusedPID()) && void 0 !== i ? i : (0, Z.getPID)();
       if (R.default.hasChangedRenderMode(r)) return;
-      let o = M.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
-        a = M.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
-        p = M.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
+      let o = M.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
+        a = M.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
+        p = M.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
         h = [];
       o || h.push({
         type: G.nc.WELCOME

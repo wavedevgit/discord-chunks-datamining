@@ -4,7 +4,7 @@ n.d(t, {
   $7: () => X,
   $e: () => Y,
   GJ: () => v,
-  Gy: () => A,
+  Gy: () => N,
   RD: () => q,
   RZ: () => x,
   Tj: () => J,
@@ -20,7 +20,7 @@ n.d(t, {
   ik: () => R,
   kA: () => L,
   nT: () => Q,
-  pM: () => N,
+  pM: () => A,
   yv: () => H,
   zB: () => Z
 }), n(230036), n(653041);
@@ -110,16 +110,16 @@ function T(e, t, n, i) {
   return (null == i ? void 0 : i[t]) != null && (a = i[t]), null == a || !r.e$(a.allow, n)
 }
 
-function N(e, t) {
+function A(e, t) {
   return _.default.castGuildIdAsEveryoneGuildRoleId(e) === t
 }
 
-function A(e, t) {
-  return !N(e, t)
+function N(e, t) {
+  return !A(e, t)
 }
 
 function C(e, t) {
-  return !N(e.id, t.id)
+  return !A(e.id, t.id)
 }
 
 function R(e, t, n, r) {

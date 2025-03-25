@@ -39,7 +39,7 @@ function v(e) {
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
-  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, I), P = (0, p.Z)(t, I, g.Vq), w = null != S && A && (!S.startsWith("screen") || C), D = u.Z.useExperiment({
+  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), A = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), N = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, I), P = (0, p.Z)(t, I, g.Vq), w = null != S && N && (!S.startsWith("screen") || C), D = u.Z.useExperiment({
     location: "ManageStreamsMenu"
   }, {
     disable: !w,
@@ -88,7 +88,7 @@ function v(e) {
       checked: T,
       action: x
     }) : null,
-    j = N && !y ? (0, r.jsx)(a.sNh, {
+    j = A && !y ? (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: O ? b.NW.string(b.t.eAktHh) : b.NW.string(b.t.qntSam),
       icon: a.hGI,

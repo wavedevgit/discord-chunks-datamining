@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(699516),
   S = n(885110),
   T = n(111583),
-  N = n(594174),
-  A = n(451478),
+  A = n(594174),
+  N = n(451478),
   C = n(626135),
   R = n(823379),
   P = n(5192),
@@ -179,11 +179,11 @@ function Z(e) {
     isComboing: g
   } = e, {
     rateLimitPerUser: E
-  } = u, v = N.default.getCurrentUser(), y = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == v ? void 0 : v.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
+  } = u, v = A.default.getCurrentUser(), y = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == v ? void 0 : v.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => A.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), N = (0, m.R6)("TypingUsers");
   if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
     isFocused: o,
-    isRefreshChatInputEnabled: A
+    isRefreshChatInputEnabled: N
   }) : (0, r.jsx)(V, {
     channel: u,
     guild: y
@@ -215,7 +215,7 @@ function Z(e) {
         "aria-atomic": !0,
         children: M
       })]
-    }), A ? null : (0, r.jsx)(h.Z, {
+    }), N ? null : (0, r.jsx)(h.Z, {
       channel: u,
       isThreadCreation: f
     }), p && g && (0, r.jsx)(b.Z, {
@@ -238,7 +238,7 @@ function H(e) {
       showInviteEducation: s,
       activity: o,
       typingUsers: (0, c.e7)([T.Z], () => T.Z.getTypingUsers(t.id)),
-      isFocused: (0, c.e7)([A.Z], () => A.Z.isFocused()),
+      isFocused: (0, c.e7)([N.Z], () => N.Z.isFocused()),
       guildId: t.guild_id,
       isComboing: null != a,
       channel: t,

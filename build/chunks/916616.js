@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => N
+  E: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -77,7 +77,7 @@ function T(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = i.forwardRef((e, t) => {
+let A = i.forwardRef((e, t) => {
   let n;
   var {
     className: o,
@@ -90,7 +90,7 @@ let N = i.forwardRef((e, t) => {
     width: v,
     height: O,
     maxWidth: T = v,
-    maxHeight: N = O,
+    maxHeight: A = O,
     minWidth: P = 0,
     minHeight: w = 0,
     mediaLayoutType: D,
@@ -126,7 +126,7 @@ let N = i.forwardRef((e, t) => {
       width: v,
       height: O,
       maxWidth: T,
-      maxHeight: N,
+      maxHeight: A,
       minWidth: P,
       minHeight: w
     }),
@@ -137,7 +137,7 @@ let N = i.forwardRef((e, t) => {
     alt: b,
     className: s,
     mediaLayoutType: D
-  }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(A, {
+  }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(N, {
     size: Y,
     mediaLayoutType: D,
     alt: b
@@ -190,7 +190,7 @@ let N = i.forwardRef((e, t) => {
   })
 });
 
-function A(e) {
+function N(e) {
   let {
     size: t,
     mediaLayoutType: n,
@@ -262,4 +262,4 @@ function w(e) {
     aspectRatio: "".concat(t, " / ").concat(n)
   }
 }
-N.displayName = "Image"
+A.displayName = "Image"

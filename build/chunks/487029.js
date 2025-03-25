@@ -31,8 +31,8 @@ function m(e) {
     keepOpen: C,
     interactive: j = !0,
     analyticsSource: I,
-    onClose: S
-  } = e, P = function(e) {
+    onClose: P
+  } = e, S = function(e) {
     let [t, n] = (0, o.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
@@ -46,16 +46,16 @@ function m(e) {
         };
       return l.forEach(e => i(e, !0)), l.forEach(e => i(e, !1)), r
     }, [t, n, e])
-  }((0, N.h)(n, !0)), T = (0, v.j)(), w = l.useRef(null), [Z, _] = l.useState(void 0), R = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+  }((0, N.h)(n, !0)), T = (0, v.j)(), w = l.useRef(null), [Z, _] = l.useState(void 0), R = (0, o.e7)([d.ZP], () => d.ZP.getMediaSessionId()), {
     analyticsLocations: A
   } = (0, s.ZP)(a.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
-    (0, g.GN)(e, n.id, A), S()
-  }, [A, n.id, S]);
+    (0, g.GN)(e, n.id, A), P()
+  }, [A, n.id, P]);
   l.useEffect(() => {
     f.w(), u.DZ.loadIfNecessary()
   }, []), l.useEffect(() => {
-    0 === P.length && 0 === T.length && S()
-  }, [P.length, T, S]), l.useEffect(() => () => {
+    0 === S.length && 0 === T.length && P()
+  }, [S.length, T, P]), l.useEffect(() => () => {
     let e = w.current;
     C || null == e || D(e)
   }, [C, D]), (0, c.Z)({
@@ -77,22 +77,22 @@ function m(e) {
         W(null);
         return
       }
-      let t = P[e];
+      let t = S[e];
       null != t && W(t)
-    }, [W, P]),
+    }, [W, S]),
     B = l.useCallback(e => {
       if (null == e) return;
-      let t = P[e];
+      let t = S[e];
       null != t && D(t)
-    }, [P, D]),
-    M = l.useMemo(() => P.map(e => (0, r.jsx)(O.ZP, {
+    }, [S, D]),
+    M = l.useMemo(() => S.map(e => (0, r.jsx)(O.ZP, {
       interactive: j,
       className: x.soundButton,
       sound: e,
       focused: Z === e.soundId,
       channel: n
-    }, e.soundId)), [Z, n, j, P]);
-  return 0 === P.length ? null : (0, r.jsx)(s.Gt, {
+    }, e.soundId)), [Z, n, j, S]);
+  return 0 === S.length ? null : (0, r.jsx)(s.Gt, {
     value: A,
     children: (0, r.jsx)(y.Z, {
       wheelWidth: m,
@@ -103,7 +103,7 @@ function m(e) {
       activeItem: Z,
       onItemSelect: k,
       onItemAction: B,
-      onClose: S,
+      onClose: P,
       interactive: j,
       children: M
     })

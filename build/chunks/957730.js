@@ -26,8 +26,8 @@ var r = n(392711),
   I = n(594174),
   S = n(483360),
   T = n(176354),
-  N = n(51144),
-  A = n(981631),
+  A = n(51144),
+  N = n(981631),
   C = n(185923),
   R = n(388032);
 
@@ -267,14 +267,14 @@ let U = u.Z.RULES,
         if (null == i) return {
           content: e[0]
         };
-        let o = N.ZP.getUserTag(i, {
+        let o = A.ZP.getUserTag(i, {
           identifiable: r && O.Z.enabled ? "never" : "always"
         });
         if (!r) return {
           content: "@".concat(o)
         };
         {
-          let e = N.ZP.getGlobalName(i);
+          let e = A.ZP.getGlobalName(i);
           return {
             content: null != e ? "@".concat(e) : "@".concat(o)
           }
@@ -328,13 +328,13 @@ let U = u.Z.RULES,
       }
     },
     spoiler: {
-      match: a().anyScopeRegex(A.$92),
+      match: a().anyScopeRegex(N.$92),
       parse: () => ({
         content: "<".concat(R.NW.string(R.t["F+x38P"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {
-      match: a().anyScopeRegex(A.PEY),
+      match: a().anyScopeRegex(N.PEY),
       parse: e => ({
         content: "<id:".concat(e[1], ">")
       })
@@ -397,7 +397,7 @@ function J(e) {
   let t;
   let n = null == e ? void 0 : e.getGuildId(),
     r = null != n ? b.Z.getGuild(n) : null,
-    o = v.Z.can(A.Plq.MENTION_EVERYONE, e);
+    o = v.Z.can(N.Plq.MENTION_EVERYONE, e);
   t = (null == e ? void 0 : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null

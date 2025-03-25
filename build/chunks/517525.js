@@ -45,7 +45,7 @@ function Z(e) {
   return e
 }
 
-function C(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
+let C = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
   N = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
@@ -73,10 +73,10 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1
   },
   T = {
-    borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
+    borderRadius: "".concat(C, "px ").concat(C, "px ").concat(C, "px ").concat(C, "px")
   },
   A = {
-    borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
+    borderRadius: "0px ".concat(C, "px ").concat(C, "px 0px")
   },
   D = {
     mass: 1,
@@ -90,7 +90,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         isUpsellEnabled: s,
         shape: d,
         size: v,
-        didTrackUpsellViewed: P,
+        didTrackUpsellViewed: C,
         setDidTrackUpsellViewed: N,
         className: I,
         premiumIndicator: _
@@ -121,24 +121,24 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, C(Z({}, t), {
+          return t => (0, r.jsx)(e, P(Z({}, t), {
             analyticsSource: k
           }))
         })
       }, [L, D, k]);
     if (i.useEffect(() => {
-        !P && D && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+        !C && D && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
           type: x.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: T
         }), N(!0))
-      }, [t, l, D, P, N, T]), null == R) return null;
+      }, [t, l, D, C, N, T]), null == R) return null;
     let U = (0, r.jsx)(f.ua7, {
       text: A ? j.NW.string(j.t.q8TiVl) : D ? j.NW.string(j.t.IHgpEh) : j.NW.string(j.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, C(Z({}, e), {
+      children: e => (0, r.jsxs)(f.P3F, P(Z({}, e), {
         onClick: W,
         className: o()(w.qualityIndicator, v, h.eE[d], A ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
           [w.clickable]: L && D
@@ -197,7 +197,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", C(Z({
+      return (0, r.jsxs)("div", P(Z({
         className: o()(w.streamQualityIndicator, n)
       }, i), {
         children: [y((e, n) => n ? (0, r.jsx)(a.animated.div, {

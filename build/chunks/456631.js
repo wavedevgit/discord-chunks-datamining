@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   H: () => m,
-  Z: () => A
+  Z: () => N
 }), n(47120), n(733860);
 var i, o = n(392711),
   a = n(442837),
@@ -78,7 +78,7 @@ let _ = [],
     } = e;
     null != p[t] && delete p[t]
   };
-class N extends(i = a.ZP.Store) {
+class A extends(i = a.ZP.Store) {
   get recentlyUsedEmojis() {
     return _
   }
@@ -92,8 +92,8 @@ class N extends(i = a.ZP.Store) {
     return p[e]
   }
 }
-f(N, "displayName", "VoiceChannelEffectsStore");
-let A = new N(l.Z, {
+f(A, "displayName", "VoiceChannelEffectsStore");
+let N = new A(l.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: T,
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: S,
   VOICE_CHANNEL_EFFECT_SEND: I,

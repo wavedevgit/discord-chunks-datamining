@@ -62,9 +62,9 @@ let b = function(e) {
     name: "",
     country: "",
     postalCode: ""
-  }), [I, S] = i.useState({}), [T, N] = i.useState({});
+  }), [I, S] = i.useState({}), [T, A] = i.useState({});
 
-  function A(e, t) {
+  function N(e, t) {
     !!b[e] !== t && v(n => E(m({}, n), {
       [e]: t
     }))
@@ -76,7 +76,7 @@ let b = function(e) {
   }, [I, y]);
 
   function R() {
-    N(C())
+    A(C())
   }
   i.useEffect(() => {
     let e = b.cardNumber && b.cardExpiry && b.cardCvc && 0 === Object.keys(C(!0)).length;
@@ -92,7 +92,7 @@ let b = function(e) {
       renderInput: () => (0, r.jsx)(d.Z, {
         stripeType: "cardNumber",
         flipped: h,
-        updateCompleted: e => A("cardNumber", e)
+        updateCompleted: e => N("cardNumber", e)
       })
     }]
   }, {
@@ -102,7 +102,7 @@ let b = function(e) {
       getClassNameForLayout: () => p.width50,
       renderInput: () => (0, r.jsx)(d.Z, {
         stripeType: "cardExpiry",
-        updateCompleted: e => A("cardExpiry", e)
+        updateCompleted: e => N("cardExpiry", e)
       })
     }, {
       name: "cardCvc",
@@ -110,7 +110,7 @@ let b = function(e) {
       getClassNameForLayout: () => p.width50,
       renderInput: () => (0, r.jsx)(d.Z, {
         stripeType: "cardCvc",
-        updateCompleted: e => A("cardCvc", e),
+        updateCompleted: e => N("cardCvc", e),
         onFocus: () => {
           g(!0)
         },
@@ -138,7 +138,7 @@ let b = function(e) {
       i = {
         name: T.name
       };
-    I[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = f.NW.string(f.t.lIkVsr)) : delete i[t], O(n), S(r), N(i)
+    I[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = f.NW.string(f.t.lIkVsr)) : delete i[t], O(n), S(r), A(i)
   }
 
   function D() {

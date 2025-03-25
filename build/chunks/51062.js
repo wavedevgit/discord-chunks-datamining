@@ -60,7 +60,7 @@ function O(e, t) {
 }
 
 function I(e, t, n) {
-  var b, y, I, S, T, N, A;
+  var b, y, I, S, T, A, N;
   let {
     channel: C,
     type: R
@@ -101,10 +101,10 @@ function I(e, t, n) {
     hidePersonalInformation: j,
     hideMentionDescription: R === l.Ie.RULES_INPUT,
     emojiIntention: R === l.Ie.RULES_INPUT ? E.Hz.COMMUNITY_CONTENT : E.Hz.CHAT,
-    currentWord: null !== (N = null == F ? void 0 : F.word) && void 0 !== N ? N : "",
+    currentWord: null !== (A = null == F ? void 0 : F.word) && void 0 !== A ? A : "",
     currentWordIsAtStart: (null == F ? void 0 : F.isAtStart) === !0,
     optionText: null != G ? (0, a.KF)({
-      [G.name]: null !== (A = null === (I = e.editorRef.current) || void 0 === I ? void 0 : I.getCurrentCommandOptionValue()) && void 0 !== A ? A : []
+      [G.name]: null !== (N = null === (I = e.editorRef.current) || void 0 === I ? void 0 : I.getCurrentCommandOptionValue()) && void 0 !== N ? N : []
     }, G.name) : ""
   }), [Z] = r.useState(() => new p.Z(V));
   return r.useEffect(() => {

@@ -86,7 +86,7 @@ class T extends o.Z {
     })
   }
   maybeShowClipsWarning(e) {
-    let t = f.Z.getChannelId();
+    let t = f.ZP.getChannelId();
     !(null == t || E.Z.getClipsWarningShown(t)) && e !== u.default.getId() && E.Z.isClipsEnabledForUser(e) && c.tU.getSetting() && (i.Z.dispatch({
       type: "CLIPS_SHOW_CALL_WARNING",
       channelId: t
@@ -94,7 +94,7 @@ class T extends o.Z {
   }
   handleClipsAllowVoiceRecordingUpdate() {
     var e;
-    null === (e = f.Z.getUserIds()) || void 0 === e || e.forEach(e => this.maybeShowClipsWarning(e))
+    null === (e = f.ZP.getUserIds()) || void 0 === e || e.forEach(e => this.maybeShowClipsWarning(e))
   }
   handlePostConnectionOpen() {
     if ((0, v.Z)(d.Z)) {
@@ -172,7 +172,7 @@ class T extends o.Z {
   }
   applyUserVoiceRecording(e) {
     if (!(0, v.Z)(d.Z)) return;
-    let t = f.Z.getRTCConnection();
+    let t = f.ZP.getRTCConnection();
     if (null == t) return;
     if (e === u.default.getId()) {
       t.setClipRecordUser(e, "audio", E.Z.getSettings().clipsEnabled);

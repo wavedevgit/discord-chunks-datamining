@@ -154,7 +154,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     channelId: t,
     messageId: n,
@@ -166,7 +166,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     channelId: t,
     messages: n
@@ -201,10 +201,10 @@ let R = new C(o.Z, {
   MESSAGE_REACTION_ADD: I,
   MESSAGE_REACTION_REMOVE: I,
   MESSAGE_REACTION_REMOVE_ALL: T,
-  MESSAGE_REACTION_REMOVE_EMOJI: N,
+  MESSAGE_REACTION_REMOVE_EMOJI: A,
   MESSAGE_REACTION_ADD_MANY: S,
   LOAD_FORUM_POSTS: m,
   LOAD_THREADS_SUCCESS: g,
   LOAD_ARCHIVED_THREADS_SUCCESS: g,
-  LOAD_MESSAGES_SUCCESS: A
+  LOAD_MESSAGES_SUCCESS: N
 })

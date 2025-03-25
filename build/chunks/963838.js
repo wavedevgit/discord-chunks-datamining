@@ -31,8 +31,8 @@ var r = n(392711),
   I = n(660020),
   S = n(980084),
   T = n(24688),
-  N = n(200997),
-  A = n(633302),
+  A = n(200997),
+  N = n(633302),
   C = n(134432),
   R = n(594174),
   P = n(768581),
@@ -44,7 +44,7 @@ let x = {
     end: 15
   },
   M = [o],
-  k = [a, s, l, c, u, d, f, _, p, h, m, g, E, b, v, y, O, I, S, T, N],
+  k = [a, s, l, c, u, d, f, _, p, h, m, g, E, b, v, y, O, I, S, T, A],
   j = {
     [D.q.BASIC]: M,
     [D.q.PREMIUM]: k
@@ -80,8 +80,8 @@ function B(e) {
       size: t
     })
   }
-  let r = A.ZP.convertSurrogateToName(e.name, !1),
-    i = A.ZP.getByName(r);
+  let r = N.ZP.convertSurrogateToName(e.name, !1),
+    i = N.ZP.getByName(r);
   return null != i ? w.ZP.getURL(i.surrogates) : ""
 }
 

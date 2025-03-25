@@ -42,11 +42,11 @@ function h(e) {
   } = (0, o.U)({
     location: "UserProfileFeaturedActivity"
   }), {
-    voiceActivityCardEnabled: N
+    voiceActivityCardEnabled: A
   } = (0, l.o)({
     location: "UserProfileFeaturedActivity"
-  }), A = T || N;
-  return S || null == v ? S || null == y ? A && !S && null != O ? (0, r.jsx)(_.Z, {
+  }), N = T || A;
+  return S || null == v ? S || null == y ? N && !S && null != O ? (0, r.jsx)(_.Z, {
     user: t,
     voiceChannel: O,
     className: g,

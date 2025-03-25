@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(246946),
   S = n(594174),
   T = n(572004),
-  N = n(669079),
-  A = n(74538),
+  A = n(669079),
+  N = n(74538),
   C = n(51144),
   R = n(987209),
   P = n(981631),
@@ -53,11 +53,11 @@ function M(e) {
   } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
     let e;
     return null != b ? D.NW.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? F.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? F.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.NW.format(e, {
-      skuName: (0, A.aq)(s.id),
+      skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
   }, Y = () => null != h || f && null == b ? D.NW.string(D.t.zOmK9P) : null != b ? D.NW.string(D.t.d1lrmZ) : D.NW.string(D.t["/s1xR0"]), K = (e, t) => {
-    null != o && (0, N.dM)(new y.Z({
+    null != o && (0, A.dM)(new y.Z({
       code: t,
       maxUses: 1
     }), o);
@@ -88,7 +88,7 @@ function M(e) {
         children: D.NW.string(D.t["/dG4ND"])
       }), null != t && (0, r.jsx)(u.kO8, {
         hideMessage: M ? D.NW.string(D.t["0RLn4+"]) : null,
-        value: (0, N.Nz)(t),
+        value: (0, A.Nz)(t),
         mode: O,
         text: e,
         onCopy: e => K(e, t),
@@ -102,14 +102,14 @@ function M(e) {
       })]
     })
   }, q = () => {
-    let e = (0, N.MY)(h, U),
+    let e = (0, A.MY)(h, U),
       {
         removeGiftRecipientUI: n
       } = m.m.getCurrentConfig({
         location: "GiftPurchaseConfirmation"
       }, {
         autoTrackExposure: !1,
-        disable: __BILLING_STANDALONE__ || e !== N.xr.CUSTOM_STYLE
+        disable: __BILLING_STANDALONE__ || e !== A.xr.CUSTOM_STYLE
       }),
       i = !n && null == b;
     return (0, r.jsxs)(r.Fragment, {
@@ -183,9 +183,9 @@ let k = e => {
   } = (0, c.cj)([v.Z], () => ({
     userAffinities: v.Z.getUserAffinitiesUserIds(),
     isLoading: v.Z.getFetching()
-  })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), N = l().difference(T, I), A = [...I, ...N], R = (0, c.e7)([S.default], () => S.default.filter(e => A.includes(e.id) && !e.bot), [A]);
+  })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), A = l().difference(T, I), N = [...I, ...A], R = (0, c.e7)([S.default], () => S.default.filter(e => N.includes(e.id) && !e.bot), [N]);
   if (null == R || 0 === R.length) return null;
-  let P = l().sortBy(R, e => A.indexOf(e.id));
+  let P = l().sortBy(R, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
     className: L.giftRecipientSection,
     children: [(0, r.jsx)(u.vwX, {

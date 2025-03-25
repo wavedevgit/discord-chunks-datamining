@@ -61,7 +61,7 @@ function O(e) {
     checked: t,
     onClick: n,
     id: o = "burst-reaction-toggle-button"
-  } = e, O = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), S = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, N] = (0, f.US)(S), [A, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
+  } = e, O = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), S = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, A] = (0, f.US)(S), [N, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
 
   function D() {
     P({
@@ -76,10 +76,10 @@ function O(e) {
   }
   i.useEffect(() => {
     let e = T === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
-    e && (N(h.L.DISMISS), setTimeout(() => C(e), 200))
-  }, [T, N]);
-  let L = A ? m.NW.string(m.t["Osi/u7"]) : y(t),
-    x = A ? m.NW.string(m.t.ORK94u) : void 0;
+    e && (A(h.L.DISMISS), setTimeout(() => C(e), 200))
+  }, [T, A]);
+  let L = N ? m.NW.string(m.t["Osi/u7"]) : y(t),
+    x = N ? m.NW.string(m.t.ORK94u) : void 0;
   return (0, r.jsxs)(u.DY3, {
     position: "top",
     text: (0, r.jsx)(v, {
@@ -88,7 +88,7 @@ function O(e) {
       headingText: x
     }),
     color: u.ua7.Colors.BRAND,
-    forceOpen: A,
+    forceOpen: N,
     "aria-label": L,
     tooltipClassName: g.tooltip,
     children: [(0, r.jsx)("input", {

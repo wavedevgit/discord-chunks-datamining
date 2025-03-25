@@ -44,14 +44,14 @@ let D = {
 
 function N(e, t, r, a, N) {
   return e.map((b, E) => {
-    let j = [];
+    let P = [];
     for (let e of Object.keys(b).sort((e, t) => {
         let r = D[e],
           n = D[t];
         return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : m.Pz[e] !== m.Pz[t] ? m.Pz[e] ? 1 : -1 : e > t ? 1 : -1
       })) {
       let t = b[e];
-      !p.al[e] && void 0 !== t && j.push((0, n.jsx)(p.ck, {
+      !p.al[e] && void 0 !== t && P.push((0, n.jsx)(p.ck, {
         section: a,
         label: e,
         value: t
@@ -73,7 +73,7 @@ function N(e, t, r, a, N) {
             userId: r
           })
         }) : null
-      }(b, r, a, N), v(j), "video" === b.type && E === e.length - 1 && null != r && null != a && null != N && (0, n.jsx)(c.Z, {
+      }(b, r, a, N), v(P), "video" === b.type && E === e.length - 1 && null != r && null != a && null != N && (0, n.jsx)(c.Z, {
         className: g.marginBottom20,
         children: (0, n.jsxs)(c.Z.Child, {
           basis: "100%",

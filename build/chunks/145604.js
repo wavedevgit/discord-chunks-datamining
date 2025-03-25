@@ -117,15 +117,15 @@ class X extends i.PureComponent {
         channel_type: e.voiceChannelType,
         channel_bitrate: e.voiceChannelBitrate,
         guild_id: e.voiceChannelGuildId,
-        rtc_connection_id: D.Z.getRTCConnectionId(),
+        rtc_connection_id: D.ZP.getRTCConnectionId(),
         game_name: n,
-        duration: D.Z.getDuration(),
+        duration: D.ZP.getDuration(),
         game_platform: this.props.gamePlatform,
         game_id: this.props.gameId,
-        media_session_id: D.Z.getMediaSessionId(),
+        media_session_id: D.ZP.getMediaSessionId(),
         stage_instance_id: null == r ? void 0 : r.id,
         guild_scheduled_event_id: null == i ? void 0 : i.id
-      }, (0, u.kO)(e.voiceChannelGuildId, e.voiceChannelId, e.videoEnabled), D.Z.getVoiceStateStats(), g.Z.getSelectedParticipantStats(e.voiceChannelId)))
+      }, (0, u.kO)(e.voiceChannelGuildId, e.voiceChannelId, e.videoEnabled), D.ZP.getVoiceStateStats(), g.Z.getSelectedParticipantStats(e.voiceChannelId)))
     }
     if (e.voiceChannelId !== E && null != E) {
       let e = _.ZP.getCurrentGameForAnalytics(),

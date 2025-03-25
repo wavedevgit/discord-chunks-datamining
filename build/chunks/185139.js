@@ -33,8 +33,8 @@ function y(e) {
     footer: I,
     isGift: S = !1,
     giftMessage: T = E.NW.string(E.t.DrgnS0),
-    hideBreadcrumbs: N = !1,
-    isLoading: A = !1,
+    hideBreadcrumbs: A = !1,
+    isLoading: N = !1,
     purchaseError: C,
     purchaseErrorBlockRef: R,
     planError: P,
@@ -48,7 +48,7 @@ function y(e) {
   let {
     stripe: k
   } = (0, _.JL)();
-  A = A || null == k;
+  N = N || null == k;
   let j = i.useRef(new l.V7);
   i.useEffect(() => {
     let e = j.current;
@@ -71,7 +71,7 @@ function y(e) {
         icon: c.OgN,
         color: null == T ? u.Z.Colors.PRIMARY : u.Z.Colors.SECONDARY,
         children: T
-      }) : null, N ? null : (0, r.jsx)("div", {
+      }) : null, A ? null : (0, r.jsx)("div", {
         className: b.breadcrumbsWrapper,
         children: (0, r.jsx)(c.OoM, {
           activeId: p.Ck.has(n) ? U : n,
@@ -88,7 +88,7 @@ function y(e) {
             ref: R,
             children: M
           })
-        }), A ? (0, r.jsx)(c.$jN, {
+        }), N ? (0, r.jsx)(c.$jN, {
           className: b.loadingBlock
         }) : (0, r.jsx)(c.qBt, {
           className: b.sequencer,

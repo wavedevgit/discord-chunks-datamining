@@ -97,7 +97,7 @@ function g(e) {
     interactionSource: v,
     resetInteraction: y,
     interactionSourceId: O
-  } = (0, o.Xo)(), I = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, S = v === E.sourceType && b === c.P.REACT, T = v === E.sourceType && b === c.P.REPLY, N = (S || T) && O === E.sourceId;
+  } = (0, o.Xo)(), I = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, S = v === E.sourceType && b === c.P.REACT, T = v === E.sourceType && b === c.P.REPLY, A = (S || T) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     renderPopout: e => {
       let {
@@ -116,7 +116,7 @@ function g(e) {
     onRequestClose: () => {
       y(), null == h || h()
     },
-    shouldShow: N
+    shouldShow: A
   }, m(b, f)), {
     children: g
   }))

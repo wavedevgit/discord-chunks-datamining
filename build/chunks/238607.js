@@ -69,7 +69,7 @@ function S(e) {
     onClose: O
   } = e, {
     newestAnalyticsLocation: S
-  } = (0, c.ZP)(), T = (0, a.bp)() === E.IlC.POPOUT, N = (0, i.e7)([h.Z, m.Z], () => h.Z.getChannel(m.Z.getChannelId())), A = (0, p.e)({
+  } = (0, c.ZP)(), T = (0, a.bp)() === E.IlC.POPOUT, A = (0, i.e7)([h.Z, m.Z], () => h.Z.getChannel(m.Z.getChannelId())), N = (0, p.e)({
     activity: null != n ? n : void 0,
     embeddedActivity: void 0,
     user: t,
@@ -81,7 +81,7 @@ function S(e) {
   }, {
     autoTrackExposure: !0
   }), R = C ? o.iWm : o.jje;
-  if (null == A && null != n && (0, l.Z)(n)) return (0, r.jsx)(g.tG, {
+  if (null == N && null != n && (0, l.Z)(n)) return (0, r.jsx)(g.tG, {
     icon: R,
     text: b.NW.string(b.t.RscU7O),
     color: o.Ttl.BRAND,
@@ -90,10 +90,10 @@ function S(e) {
     onClick: e => {
       e.stopPropagation(), null == O || O(), null == v || v({
         action: "PRESS_PLAY_BUTTON"
-      }), (null == N ? void 0 : N.isVocal()) ? (0, f.Z)({
+      }), (null == A ? void 0 : A.isVocal()) ? (0, f.Z)({
         context: {
           type: "channel",
-          channel: N
+          channel: A
         },
         analyticsLocation: S,
         openInPopout: T
@@ -102,7 +102,7 @@ function S(e) {
       })
     }
   });
-  if (null == A) return null;
+  if (null == N) return null;
   let {
     isJoining: P,
     handleJoinRequest: w,
@@ -110,7 +110,7 @@ function S(e) {
     tooltip: L,
     isEnabled: x,
     isEmbedded: M
-  } = A;
+  } = N;
   return M ? (0, r.jsx)(o.ua7, {
     text: L,
     children: e => (0, r.jsx)(g.tG, I(y({}, e), {

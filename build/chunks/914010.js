@@ -70,10 +70,10 @@ function T(e) {
   return n.id === u.default.getId() && I(t)
 }
 
-function N() {
+function A() {
   m = null, g = null
 }
-class A extends(r = o.ZP.PersistedStore) {
+class N extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r, o;
     this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(f.Z, u.default, d.Z), E = null !== (n = null == e ? void 0 : e.selectedGuildTimestampMillis) && void 0 !== n ? n : {}, m = null !== (r = null == e ? void 0 : e.selectedGuildId) && void 0 !== r ? r : null, g = null !== (o = null == e ? void 0 : e.lastSelectedGuildId) && void 0 !== o ? o : null;
@@ -100,12 +100,12 @@ class A extends(r = o.ZP.PersistedStore) {
     return m === e ? h : E[e]
   }
 }
-p(A, "displayName", "SelectedGuildStore"), p(A, "persistKey", "SelectedGuildStore");
-let C = new A(a.Z, {
+p(N, "displayName", "SelectedGuildStore"), p(N, "persistKey", "SelectedGuildStore");
+let C = new N(a.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: v,
   CHANNEL_SELECT: O,
   GUILD_MEMBER_REMOVE: T,
   GUILD_DELETE: S,
-  LOGOUT: N
+  LOGOUT: A
 })

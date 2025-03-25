@@ -86,7 +86,7 @@ function W(e, t) {
       suppressRoles: !1
     }))
   } {
-    let t = !T.tx.has(u.type) || I.Z.getChannelId() === u.id;
+    let t = !T.tx.has(u.type) || I.ZP.getChannelId() === u.id;
     if (A.ZP.allowAllMessages(u) && t) return !0;
     let n = A.ZP.isSuppressEveryoneEnabled(u.getGuildId()),
       i = A.ZP.isSuppressRolesEnabled(u.getGuildId());

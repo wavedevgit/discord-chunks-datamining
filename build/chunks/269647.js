@@ -30,7 +30,7 @@ function m(e) {
 
 function g() {
   let e;
-  let t = u.Z.getChannelId();
+  let t = u.ZP.getChannelId();
   if (null == t) e = !0;
   else {
     let n = s.Z.getChannel(t),
@@ -65,7 +65,7 @@ function v() {
 }
 class y extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(c.Z, l.Z, u.Z, d.Z)
+    this.waitFor(c.Z, l.Z, u.ZP, d.Z)
   }
   shouldShowWarning() {
     return !h

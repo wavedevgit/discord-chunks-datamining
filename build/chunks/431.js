@@ -70,7 +70,7 @@ function y(e) {
   let {
     userTrialOffer: t
   } = e;
-  null != t ? b.userTrialOffers[t.trial_id] = t : N(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
+  null != t ? b.userTrialOffers[t.trial_id] = t : A(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
 }
 
 function O(e) {
@@ -79,11 +79,11 @@ function O(e) {
     userDiscount: n,
     userDiscountOffer: r
   } = e;
-  null == t && null == n && null == r && N(), null != t ? (b.userTrialOffers[t.trial_id] = t, b.userDiscountOffers = {}) : null != n ? (b.userDiscountOffers[n.discount_id] = n, b.userTrialOffers = {}) : null != r && (b.userDiscountOffers[r.discount_id] = r, b.userTrialOffers = {}), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
+  null == t && null == n && null == r && A(), null != t ? (b.userTrialOffers[t.trial_id] = t, b.userDiscountOffers = {}) : null != n ? (b.userDiscountOffers[n.discount_id] = n, b.userTrialOffers = {}) : null != r && (b.userDiscountOffers[r.discount_id] = r, b.userTrialOffers = {}), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
 }
 
 function I() {
-  N(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
+  A(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
 }
 
 function S(e) {
@@ -102,10 +102,10 @@ function T(e) {
   null != t ? b.userTrialOffers[t.trial_id] = t : b.userTrialOffers = {}, null != n ? b.userDiscountOffers[n.discount_id] = n : null != r ? b.userDiscountOffers[r.discount_id] = r : b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = Date.now()
 }
 
-function N() {
+function A() {
   b.userTrialOffers = {}, b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = void 0, b.userAnnualOfferLastFetchedAtDate = void 0, b.isFetching = !1
 }
-let A = () => !0;
+let N = () => !0;
 
 function C() {
   return null != u.ZP.getPremiumTypeSubscription() && (b.userDiscountOffers = {}, b.userTrialOffers = {}, !0)
@@ -129,7 +129,7 @@ function P() {
 }
 class w extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], A), this.syncWith([u.ZP], C), this.syncWith([a.Z], P)
+    b = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], N), this.syncWith([u.ZP], C), this.syncWith([a.Z], P)
   }
   getUserTrialOffer(e) {
     if (null !== e) return b.userTrialOffers[e]
@@ -196,7 +196,7 @@ class w extends(r = i.ZP.PersistedStore) {
     return b
   }
   forceReset() {
-    N()
+    A()
   }
 }
 f(w, "displayName", "UserOfferStore"), f(w, "persistKey", "UserOfferStore"), f(w, "migrations", [e => {
@@ -223,5 +223,5 @@ let D = new w(o.Z, {
   BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: R,
   BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: R,
   BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: R,
-  LOGOUT: N
+  LOGOUT: A
 })

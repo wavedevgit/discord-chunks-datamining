@@ -28,7 +28,7 @@ let h = function(e) {
     useReducedMotion: v
   } = e, y = (null === (t = j.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, {
     percentComplete: _
-  } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.completedRatio > 0 : _ > 0;
+  } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.percentComplete > 0 : _ > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && b,
     className: s()(n, x.contentCollapsed, {

@@ -62,11 +62,11 @@ function T(e) {
   return "Int32Array" === o(e)
 }
 
-function N(e) {
+function A(e) {
   return "Float32Array" === o(e)
 }
 
-function A(e) {
+function N(e) {
   return "Float64Array" === o(e)
 }
 
@@ -125,7 +125,7 @@ function B(e) {
 function F(e) {
   return "undefined" != typeof DataView && (B.working ? B(e) : e instanceof DataView)
 }
-t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = a, t.isPromise = g, t.isArrayBufferView = E, t.isUint8Array = b, t.isUint8ClampedArray = v, t.isUint16Array = y, t.isUint32Array = O, t.isInt8Array = I, t.isInt16Array = S, t.isInt32Array = T, t.isFloat32Array = N, t.isFloat64Array = A, t.isBigInt64Array = C, t.isBigUint64Array = R, P.working = "undefined" != typeof Map && P(new Map), t.isMap = w, D.working = "undefined" != typeof Set && D(new Set), t.isSet = L, x.working = "undefined" != typeof WeakMap && x(new WeakMap), t.isWeakMap = M, k.working = "undefined" != typeof WeakSet && k(new WeakSet), t.isWeakSet = j, U.working = "undefined" != typeof ArrayBuffer && U(new ArrayBuffer), t.isArrayBuffer = G, B.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && B(new DataView(new ArrayBuffer(1), 0, 1)), t.isDataView = F;
+t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = a, t.isPromise = g, t.isArrayBufferView = E, t.isUint8Array = b, t.isUint8ClampedArray = v, t.isUint16Array = y, t.isUint32Array = O, t.isInt8Array = I, t.isInt16Array = S, t.isInt32Array = T, t.isFloat32Array = A, t.isFloat64Array = N, t.isBigInt64Array = C, t.isBigUint64Array = R, P.working = "undefined" != typeof Map && P(new Map), t.isMap = w, D.working = "undefined" != typeof Set && D(new Set), t.isSet = L, x.working = "undefined" != typeof WeakMap && x(new WeakMap), t.isWeakMap = M, k.working = "undefined" != typeof WeakSet && k(new WeakSet), t.isWeakSet = j, U.working = "undefined" != typeof ArrayBuffer && U(new ArrayBuffer), t.isArrayBuffer = G, B.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && B(new DataView(new ArrayBuffer(1), 0, 1)), t.isDataView = F;
 var V = "undefined" != typeof SharedArrayBuffer ? SharedArrayBuffer : void 0;
 
 function Z(e) {

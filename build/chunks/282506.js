@@ -24,14 +24,14 @@ function O() {
   var e;
   let t = r;
   if (null == t || !h.Z.isOpen(t)) return !1;
-  i.Z.wait(() => l.xv(t)), null === (e = f.Z.getRTCConnection()) || void 0 === e || e.setPipOpen(!1), r = null
+  i.Z.wait(() => l.xv(t)), null === (e = f.ZP.getRTCConnection()) || void 0 === e || e.setPipOpen(!1), r = null
 }
 
 function N() {
-  let e = f.Z.getChannelId(),
+  let e = f.ZP.getChannelId(),
     t = r === e;
   return ! function() {
-    let e = f.Z.getChannelId(),
+    let e = f.ZP.getChannelId(),
       t = g.Z.getChannelId();
     if (!p.Z.supports(E.AN.VIDEO) || s.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT)) return !0;
     let n = c.Z.getAllActiveStreams().length > 0;
@@ -49,15 +49,15 @@ function N() {
     if (null == n || h.Z.isOpen(e)) return !1;
     i.Z.wait(() => l.bA(n.id, _.NYg.VIDEO, {
       channel: n
-    })), null === (t = f.Z.getRTCConnection()) || void 0 === t || t.setPipOpen(!0), r = e
+    })), null === (t = f.ZP.getRTCConnection()) || void 0 === t || t.setPipOpen(!0), r = e
   }(e)) : O()
 }
 class v extends o.Z {
   _initialize() {
-    g.Z.addChangeListener(N), m.Z.addChangeListener(N), f.Z.addChangeListener(N), b.Z.addChangeListener(N), d.Z.addChangeListener(N), c.Z.addChangeListener(N), s.Z.addChangeListener(N), p.Z.addChangeListener(N), a.ZP.addChangeListener(N)
+    g.Z.addChangeListener(N), m.Z.addChangeListener(N), f.ZP.addChangeListener(N), b.Z.addChangeListener(N), d.Z.addChangeListener(N), c.Z.addChangeListener(N), s.Z.addChangeListener(N), p.Z.addChangeListener(N), a.ZP.addChangeListener(N)
   }
   _terminate() {
-    g.Z.removeChangeListener(N), m.Z.removeChangeListener(N), f.Z.removeChangeListener(N), b.Z.removeChangeListener(N), d.Z.removeChangeListener(N), c.Z.removeChangeListener(N), s.Z.removeChangeListener(N), p.Z.removeChangeListener(N), a.ZP.removeChangeListener(N)
+    g.Z.removeChangeListener(N), m.Z.removeChangeListener(N), f.ZP.removeChangeListener(N), b.Z.removeChangeListener(N), d.Z.removeChangeListener(N), c.Z.removeChangeListener(N), s.Z.removeChangeListener(N), p.Z.removeChangeListener(N), a.ZP.removeChangeListener(N)
   }
 }
 let y = new v

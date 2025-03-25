@@ -100,7 +100,7 @@ function T(e) {
   b(a.ZP.createFromServer(e))
 }
 
-function N(e) {
+function A(e) {
   let {
     userId: t,
     applicationId: n
@@ -122,7 +122,7 @@ function N(e) {
     }
 }
 
-function A(e) {
+function N(e) {
   let {
     applicationId: t
   } = e, n = m[t];
@@ -170,7 +170,7 @@ function D(e) {
     user: t,
     application: n
   } = e;
-  t.bot && null != n && N({
+  t.bot && null != n && A({
     userId: t.id,
     applicationId: n.id
   })
@@ -280,7 +280,7 @@ function H(e) {
   e.apps.forEach(e => {
     b(a.ZP.createFromServer(e.application));
     let t = e.application.bot;
-    null != t && N({
+    null != t && A({
       userId: t.id,
       applicationId: e.application.id
     })
@@ -355,7 +355,7 @@ let K = new Y(o.Z, {
   OVERLAY_INITIALIZE: y,
   APPLICATION_FETCH: O,
   APPLICATION_FETCH_SUCCESS: S,
-  APPLICATION_FETCH_FAIL: A,
+  APPLICATION_FETCH_FAIL: N,
   APPLICATIONS_FETCH: C,
   APPLICATIONS_FETCH_SUCCESS: P,
   APPLICATIONS_FETCH_FAIL: x,

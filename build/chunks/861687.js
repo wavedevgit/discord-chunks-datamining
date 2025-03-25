@@ -25,8 +25,8 @@ var r, i = n(654861),
   I = n(148959),
   S = n(926951),
   T = n(166884),
-  N = n(868616),
-  A = n(450109),
+  A = n(868616),
+  N = n(450109),
   C = n(307320),
   R = n(615830),
   P = n(314897),
@@ -307,7 +307,7 @@ class eg extends f.Z {
       let {
         shouldOverrideKrisp: e,
         overrideKrispSetting: n
-      } = N.Z.getCurrentConfig({
+      } = A.Z.getCurrentConfig({
         guildId: this.guildId,
         location: "handleReady"
       }, {
@@ -350,9 +350,9 @@ class eg extends f.Z {
       connect_count: this._connectCount,
       code: n,
       reason: r
-    })), this._encountered_socket_failure = !0), L.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null === (l = this._connection) || void 0 === l || l.wasRemoteDisconnected());
-    let N = "Force Close" !== r;
-    if (N) {
+    })), this._encountered_socket_failure = !0), L.ZP.getRemoteDisconnectVoiceChannelId() === this.channelId && (null === (l = this._connection) || void 0 === l || l.wasRemoteDisconnected());
+    let A = "Force Close" !== r;
+    if (A) {
       let e = this._backoff.fail(this.reconnect);
       this.logger.warn("Disconnect was not clean! reason=".concat(r, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
     }
@@ -387,12 +387,12 @@ class eg extends f.Z {
       let t = M.Z.shouldIncludePreferredRegion() ? M.Z.getPreferredRegion() : null,
         n = D.Z.getSettings(),
         i = w.Z.getChannel(this.channelId),
-        o = null === (u = A.Z.getConnectionStats().find(e => e.connection.context === en.Yn.DEFAULT)) || void 0 === u ? void 0 : null === (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === c ? void 0 : c.sampleRateMismatchPercent;
+        o = null === (u = N.Z.getConnectionStats().find(e => e.connection.context === en.Yn.DEFAULT)) || void 0 === u ? void 0 : null === (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === c ? void 0 : c.sampleRateMismatchPercent;
       j.default.track(et.rMx.VOICE_DISCONNECT, ea(ei(ea(ei({}, this._getAnalyticsProperties()), {
         hostname: this.hostname,
         port: this.port,
         protocol: this.protocol,
-        reconnect: N,
+        reconnect: A,
         reason: r,
         duration: this.getDuration()
       }), null === (d = this._voiceQuality) || void 0 === d ? void 0 : d.getMosStats(), null === (f = this._voiceQuality) || void 0 === f ? void 0 : f.getPacketStats(), null === (_ = this._voiceQuality) || void 0 === _ ? void 0 : _.getBytesStats(), null === (p = this._voiceQuality) || void 0 === p ? void 0 : p.getBufferStats(), null === (h = this._voiceQuality) || void 0 === h ? void 0 : h.getNetworkStats(), null === (m = this._voiceQuality) || void 0 === m ? void 0 : m.getSystemResourceStats(), null === (g = this._voiceQuality) || void 0 === g ? void 0 : g.getFrameOpStats(), null === (E = this._voiceQuality) || void 0 === E ? void 0 : E.getDurationStats(), null === (b = this._voiceQuality) || void 0 === b ? void 0 : b.getTransportStats(), null === (v = this._voiceQuality) || void 0 === v ? void 0 : v.getE2EEStats(), null === (y = this._voiceQuality) || void 0 === y ? void 0 : y.getAudioDeviceStats(), null === (I = this._voiceDuration) || void 0 === I ? void 0 : I.getDurationStats(), this.getAudioDeviceStates(), null === (S = this._systemResponsiveness) || void 0 === S ? void 0 : S.getPttQueueLatencyStats()), {
@@ -443,7 +443,7 @@ class eg extends f.Z {
       this._connection = null, e.destroy()
     }
     this.setState(et.hes.DISCONNECTED, {
-      willReconnect: N
+      willReconnect: A
     })
   }
   _handleResuming(e) {

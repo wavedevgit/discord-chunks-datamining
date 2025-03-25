@@ -1,13 +1,14 @@
 /** Chunk was on 86282 **/
-n.d(l, {
-  Z: () => s
+l.d(n, {
+  Z: () => a
 });
-var t = n(442837),
-  r = n(558381),
-  i = n(551428);
-let s = (0, t.Kb)(i.Z, {
-  queryId: e => null != e ? ["storeListing", e] : null,
+var t = l(442837),
+  r = l(558381),
+  i = l(551428),
+  s = l(981631);
+let a = (0, t.Kb)(i.Z, {
+  queryId: e => s.McO.STORE_LISTING(e),
   get: e => null != e ? i.Z.getForSKU(e) : null,
-  load: (e, l) => null != l ? (0, r.km)(l) : Promise.resolve(),
+  load: (e, n) => null != n ? (0, r.km)(n) : Promise.resolve(),
   useStateHook: t.e7
 })

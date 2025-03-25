@@ -60,7 +60,7 @@ function E(e) {
   i.useEffect(() => () => {
     (0, u.Gh)(x)
   }, [x]);
-  let C = () => {
+  let P = () => {
       var e;
       let t = null === (e = O.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
       return null == t || n ? v : {
@@ -70,7 +70,7 @@ function E(e) {
         left: t.left
       }
     },
-    P = e => {
+    C = e => {
       let t = null == S ? void 0 : S.getBoundingClientRect();
       if (Z.current = t, e.timestamp !== j || null == t || n) return v;
       let {
@@ -104,11 +104,11 @@ function E(e) {
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, E.enabled ? P(e) : C()),
+      }, E.enabled ? C(e) : P()),
       enter: e => [h({
         opacity: 1,
         visibility: "visible"
-      }, P(e))],
+      }, C(e))],
       leave: h({
         opacity: 0
       }, !E.enabled && h({

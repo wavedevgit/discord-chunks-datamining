@@ -57,7 +57,7 @@ function g(e) {
     return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === b
   }), O = (0, c.wn)({
     location: "useAcceptGameFriendRequest"
-  }), I = y || v || !O, S = I ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => S.map(e => {
+  }), I = y || v || !O, S = I ? p : _, [T, A] = i.useState(!1), N = i.useCallback(() => A(!0), []), C = i.useMemo(() => S.map(e => {
     let {
       applicationId: t
     } = e;
@@ -75,7 +75,7 @@ function g(e) {
       subtext: (0, r.jsx)(m, {
         application: n
       }),
-      onFocus: A,
+      onFocus: N,
       action: () => g(n)
     })
   }
@@ -97,7 +97,7 @@ function g(e) {
     color: E,
     id: t,
     label: s,
-    onFocus: A,
+    onFocus: N,
     children: w
   })
 }

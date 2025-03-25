@@ -32,7 +32,7 @@ var r = n(200651),
   T = n(388032),
   P = n(968136);
 let A = (0, l.Kb)([v.Z, y.Z, _.Z], {
-    queryId: e => null != e ? ["SKU", e] : null,
+    queryId: e => I.McO.SKU(e),
     get: e => {
       if (null == e) return;
       let t = v.Z.get(e),
@@ -51,7 +51,7 @@ let A = (0, l.Kb)([v.Z, y.Z, _.Z], {
     useStateHook: l.cj
   }),
   w = (0, l.Kb)([v.Z], {
-    queryId: (e, t) => null != t ? ["useParentSkuData", t] : null,
+    queryId: (e, t) => I.McO.__DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU(t),
     get: e => {
       if (null != e) return v.Z.getParentSKU(e)
     },

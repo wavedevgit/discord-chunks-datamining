@@ -27,8 +27,8 @@ var r, i = n(200651),
   I = n(430824),
   S = n(699516),
   T = n(594174),
-  N = n(768581),
-  A = n(51144),
+  A = n(768581),
+  N = n(51144),
   C = n(965386),
   R = n(981631),
   P = n(185923),
@@ -253,10 +253,10 @@ class K extends V {
         })
       }), (0, i.jsx)(C.z5, {
         children: (0, i.jsx)(C.BR, {
-          children: null !== (e = null != n ? n : s) && void 0 !== e ? e : A.ZP.getName(t)
+          children: null !== (e = null != n ? n : s) && void 0 !== e ? e : N.ZP.getName(t)
         })
       }), (0, i.jsxs)(C.dY, {
-        children: [A.ZP.getUserTag(t, {
+        children: [N.ZP.getUserTag(t, {
           mode: "username",
           identifiable: o ? "never" : "always"
         }), o || t.isPomelo() ? null : (0, i.jsxs)("span", {
@@ -372,7 +372,7 @@ class J extends V {
     } = this.props, r = O.Yk.getSetting(), o = null != e.id || "" !== e.url ? (0, i.jsx)("img", {
       alt: "",
       className: D.emojiImage,
-      src: null != e.id ? N.ZP.getEmojiURL({
+      src: null != e.id ? A.ZP.getEmojiURL({
         id: e.id,
         animated: e.animated && r,
         size: P.$U

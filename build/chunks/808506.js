@@ -27,8 +27,8 @@ var i, o = n(807864),
   I = n(371651),
   S = n(829907),
   T = n(610394),
-  N = n(48481),
-  A = n(314897),
+  A = n(48481),
+  N = n(314897),
   C = n(77498),
   R = n(355863),
   P = n(158776),
@@ -118,7 +118,7 @@ class et {
     }), G(this, "queueDispatch", e => !(!K() || er.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = V(B({}, e), {
       settings: {
         type: e.settings.type,
-        proto: (0, N.cv)(e.settings.type, e.settings.proto)
+        proto: (0, A.cv)(e.settings.type, e.settings.proto)
       }
     })), this.actionsToFlush.add(e), null == this.timeout && null == this.requestIdleCallback && (this.timeout = setTimeout(() => {
       this.requestIdleCallback = requestIdleCallback(this.flush, {
@@ -400,9 +400,9 @@ function eT(e, t, n) {
   w.default.track(j.rMx.OVERLAY_HOOK_RESULT, s), ea.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? eh(e, "CONNECTED", "CONNECTING") : eh(e, "CONNECT_FAILED", "CONNECTING")
 }
 
-function eN() {
-  let e = A.default.getToken(),
-    t = A.default.getId();
+function eA() {
+  let e = N.default.getToken(),
+    t = N.default.getId();
   null != e && g.lW({
     type: j.BmY.DISPATCH,
     pid: null,
@@ -415,14 +415,14 @@ function eN() {
   })
 }
 
-function eA(e) {
+function eN(e) {
   return null != e && (0, D.y)(e, $)
 }
 
 function eC(e) {
   switch (eo && ea.info("[app data received]", e), e.type) {
     case j.BmY.CONNECT:
-      let t = A.default.getToken();
+      let t = N.default.getToken();
       if (null == t) break;
       (0, d.te)(M.OVERLAY_LAYOUT_ID, R.Z.getDefaultLayout(M.OVERLAY_LAYOUT_ID), 0), Promise.all([(0, O.Z)(t, e.pid), a.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
@@ -506,7 +506,7 @@ function eM(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "78a214e06a221f9baa539b3e919df0e1e365a52f"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "fefca406604dd1c7d305d5fbee7b9503ea4b4b10"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function ek(e) {
@@ -633,7 +633,7 @@ function eQ() {
 }
 class eX extends(i = a.ZP.Store) {
   initialize() {
-    !(!U.iP || __OVERLAY__) && (this.waitFor(v.ZP, b.Z, A.default, T.ZP, I.default), this.syncWith([b.Z], ez), g.sr(eC, eA), A.default.addChangeListener(eN), l.Z.addInterceptor(en.queueDispatch))
+    !(!U.iP || __OVERLAY__) && (this.waitFor(v.ZP, b.Z, N.default, T.ZP, I.default), this.syncWith([b.Z], ez), g.sr(eC, eN), N.default.addChangeListener(eA), l.Z.addInterceptor(en.queueDispatch))
   }
   isFocusedPidInputLocked() {
     let e = this.getFocusedPID();

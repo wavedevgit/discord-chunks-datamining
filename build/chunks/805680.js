@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(314910),
   S = n(125900),
   T = n(603074),
-  N = n(453070),
-  A = n(926491),
+  A = n(453070),
+  N = n(926491),
   C = n(457040),
   R = n(740492),
   P = n(585483),
@@ -194,10 +194,10 @@ function Q(e) {
     positionContainerRef: et,
     drawerRef: ei,
     orientation: "left" === X ? g.y.HORIZONTAL_RIGHT : g.y.HORIZONTAL_LEFT
-  }), es = (0, D.Iu)(e => e.activeView), el = (0, N.fQ)(W), {
+  }), es = (0, D.Iu)(e => e.activeView), el = (0, A.fQ)(W), {
     renderWindow: ec,
     windowDispatch: eu
-  } = i.useContext(E.ZP), ed = (0, d.e7)([A.Z], () => !A.Z.hasLoadedStickerPacks), ef = (0, S.V2)({
+  } = i.useContext(E.ZP), ed = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), ef = (0, S.V2)({
     location: "expression_picker"
   }), e_ = null != ee, ep = (0, _.Jw)(null != ee ? ee : ""), eh = i.useCallback(e => {
     var t;
@@ -248,8 +248,8 @@ function Q(e) {
     eI = i.useCallback((e, t) => null == H ? void 0 : H(e, "emoji_picker", t), [H]),
     eS = i.useCallback((e, t) => null == H ? void 0 : H(e, "soundboard_picker", t), [H]),
     eT = (null === (o = Y.soundmoji) || void 0 === o ? void 0 : o.allowSending) === !0 && null != H,
-    eN = !(null === (s = Y.expressionPicker) || void 0 === s ? void 0 : s.onlyEmojis) && (ey || eO),
-    eA = "left" === X ? "right" : "left",
+    eA = !(null === (s = Y.expressionPicker) || void 0 === s ? void 0 : s.onlyEmojis) && (ey || eO),
+    eN = "left" === X ? "right" : "left",
     eC = null != J ? J : "left" === X ? B.positionLayerDefaultAlignLeft : B.positionLayerDefaultAlignRight;
   return (0, r.jsx)(m.Z, {
     section: x.jXE.EXPRESSION_PICKER,
@@ -268,7 +268,7 @@ function Q(e) {
         } = e;
         return (0, r.jsx)("section", {
           className: a()(B.positionContainer, {
-            [B.positionContainerOnlyEmoji]: !eN
+            [B.positionContainerOnlyEmoji]: !eA
           }),
           ref: et,
           role: "dialog",
@@ -284,11 +284,11 @@ function Q(e) {
               className: B.resizeHandle,
               onMouseDown: ea,
               style: {
-                [eA]: -2
+                [eN]: -2
               }
             }), (0, r.jsxs)("div", {
               className: B.contentWrapper,
-              children: [eN ? (0, r.jsx)("nav", {
+              children: [eA ? (0, r.jsx)("nav", {
                 className: B.nav,
                 children: (0, r.jsxs)("div", {
                   className: B.navList,
@@ -348,7 +348,7 @@ function Q(e) {
                 persistSearch: !0
               }) : null, es === L.X1.EMOJI ? (0, r.jsx)(y.Z, {
                 hasTabWrapper: !0,
-                containerContext: eN ? y.v.TABS_EXPRESSION_PICKER : y.v.NO_TABS_EXPRESSION_PICKER,
+                containerContext: eA ? y.v.TABS_EXPRESSION_PICKER : y.v.NO_TABS_EXPRESSION_PICKER,
                 persistSearch: !0,
                 channel: W,
                 containerWidth: eo,

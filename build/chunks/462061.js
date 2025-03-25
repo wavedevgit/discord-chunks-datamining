@@ -27,8 +27,8 @@ var r = n(200651),
   j = (n(351483), n(981631)),
   w = n(65154),
   Z = n(388032),
-  C = n(454698);
-let P = s.EFr.SIZE_80,
+  P = n(454698);
+let C = s.EFr.SIZE_80,
   N = s.EFr.SIZE_40;
 
 function I(e) {
@@ -60,7 +60,7 @@ function I(e) {
         }
         return e
       }({}, e), n = n = {
-        className: C.interactive,
+        className: P.interactive,
         children: (0, r.jsx)(s.P4T, {
           color: s.TVs.colors.STATUS_WARNING_BACKGROUND
         })
@@ -97,7 +97,7 @@ function _(e) {
     user: U,
     streamId: z,
     speaking: F
-  } = t, V = U.id === W, Y = (0, x.ZP)(t), H = (0, a.e7)([O.Z], () => O.Z.isFocused()), K = (0, a.e7)([h.Z], () => h.Z.getWindowFocused(j.KJ3.CHANNEL_CALL_POPOUT)), G = (0, a.e7)([E.Z], () => null != U.id && E.Z.isLocalVideoDisabled(U.id, (0, f.Z)(t.type)), [U.id, t.type]), B = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, U.id)), q = S.ZP.getName(n.getGuildId(), n.id, U) + (B ? " ".concat(Z.NW.string(Z.t["pFO/Pj"])) : ""), J = F && (K || H), X = s < 124 ? N : P, {
+  } = t, V = U.id === W, Y = (0, x.ZP)(t), H = (0, a.e7)([O.Z], () => O.Z.isFocused()), K = (0, a.e7)([h.Z], () => h.Z.getWindowFocused(j.KJ3.CHANNEL_CALL_POPOUT)), G = (0, a.e7)([E.Z], () => null != U.id && E.Z.isLocalVideoDisabled(U.id, (0, f.Z)(t.type)), [U.id, t.type]), B = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, U.id)), q = S.ZP.getName(n.getGuildId(), n.id, U) + (B ? " ".concat(Z.NW.string(Z.t["pFO/Pj"])) : ""), J = F && (K || H), X = s < 124 ? N : C, {
     avatarSrc: Q,
     avatarDecorationSrc: $
   } = (0, v.Z)({
@@ -121,8 +121,8 @@ function _(e) {
     e.isGuildStageVoice() && !Y && (null == t ? void 0 : t.id) === n.id && c.Z.selectParticipant(e.id, null)
   }, [Y]), l && !G && !D && Y && !I && null != L && E.Z.supports(w.AN.VIDEO)) ? (0, r.jsx)(p.Z, {
     onResize: R,
-    wrapperClassName: C.videoWrapper,
-    className: C.content,
+    wrapperClassName: P.videoWrapper,
+    className: P.content,
     mirror: V,
     streamId: z,
     videoComponent: L,
@@ -131,8 +131,8 @@ function _(e) {
     videoSpinnerContext: U.id === W ? u.m.SELF_VIDEO : u.m.REMOTE_VIDEO,
     userId: U.id
   }, z) : (0, r.jsx)("div", {
-    className: o()(C.content, {
-      [C.blockedAvatar]: T || A
+    className: o()(P.content, {
+      [P.blockedAvatar]: T || A
     }),
     children: (0, r.jsx)(m.Z, {
       "aria-label": q,

@@ -4,7 +4,7 @@ n.d(t, {
   EM: () => b,
   PR: () => g,
   Tt: () => O,
-  ZD: () => N,
+  ZD: () => A,
   yY: () => I
 }), n(47120);
 var r = n(192379),
@@ -166,7 +166,7 @@ function T() {
   }, [])
 }
 
-function N() {
+function A() {
   let {
     skipsSettingDefaultPageTitle: e
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};

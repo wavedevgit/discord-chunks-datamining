@@ -40,18 +40,18 @@ let T = new c.ZP(e => {
   })
 });
 
-function N(e, t) {
+function A(e, t) {
   let n = {};
   T.forEach(i => {
     var o;
-    i !== O.Z.getGuildId() && i !== b.Z.getGuildId() && i !== (null === (o = h.Z.getChannel(y.Z.getChannelId())) || void 0 === o ? void 0 : o.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
+    i !== O.Z.getGuildId() && i !== b.ZP.getGuildId() && i !== (null === (o = h.Z.getChannel(y.Z.getChannelId())) || void 0 === o ? void 0 : o.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
   }), a().isEmpty(n) || l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: n
   })
 }
 
-function A(e, t) {
+function N(e, t) {
   return T.subscribeToGuild(e), null != t && p.ZP.getSection(t) === I.ULH.MEMBERS && C(e, t, c.KV)
 }
 
@@ -67,9 +67,9 @@ function R(e) {
   let {
     type: t
   } = e;
-  "CONNECTION_OPEN" === t && N(!0, !1);
+  "CONNECTION_OPEN" === t && A(!0, !1);
   let n = O.Z.getGuildId();
-  null != n && A(n, y.Z.getChannelId(n));
+  null != n && N(n, y.Z.getChannelId(n));
   let r = {};
   T.forEach(e => {
     null == E.Z.getGuild(e) ? T.clearWithoutFlushing(e, !0) : r[e] = T.get(e)
@@ -80,7 +80,7 @@ function R(e) {
 }
 
 function P() {
-  N(!1, !1)
+  A(!1, !1)
 }
 
 function w(e) {
@@ -88,7 +88,7 @@ function w(e) {
     idle: t
   } = e;
   if (!t) return !1;
-  N(!1, !0)
+  A(!1, !0)
 }
 
 function D() {
@@ -164,7 +164,7 @@ function F(e) {
     guildId: t,
     channelId: n
   } = e;
-  return A(t, n)
+  return N(t, n)
 }
 
 function V(e) {
@@ -172,11 +172,11 @@ function V(e) {
     guildId: t,
     channelId: n
   } = e;
-  return !m.Z.isUnavailable(t) && A(t, n)
+  return !m.Z.isUnavailable(t) && N(t, n)
 }
 
 function Z() {
-  return A(O.Z.getGuildId(), y.Z.getChannelId())
+  return N(O.Z.getGuildId(), y.Z.getChannelId())
 }
 
 function H(e) {
@@ -221,7 +221,7 @@ function K(e) {
 }
 class z extends(i = s.ZP.Store) {
   initialize() {
-    this.waitFor(h.Z, E.Z, O.Z, y.Z, b.Z, f.default, p.ZP, u.Z), this.syncWith([d.Z], Y), this.syncWith([p.ZP], Z)
+    this.waitFor(h.Z, E.Z, O.Z, y.Z, b.ZP, f.default, p.ZP, u.Z), this.syncWith([d.Z], Y), this.syncWith([p.ZP], Z)
   }
   getSubscribedThreadIds() {
     return T.getSubscribedThreadIds()

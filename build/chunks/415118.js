@@ -23,8 +23,8 @@ var i = n(481060),
   h = n(158508),
   E = n(710631),
   j = n(297047),
-  p = n(88966),
-  P = n(712301),
+  P = n(88966),
+  p = n(712301),
   y = n(47091),
   S = n(991307),
   C = n(37258),
@@ -49,7 +49,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
   }, W = (0, C.Z)({
     userId: t.id,
     guildId: n
-  }), L = (0, j.Z)(t, n, _), w = (0, p.Z)(t.id, _), k = (0, I.Z)(t.id), R = (0, N.Z)({
+  }), L = (0, j.Z)(t, n, _), w = (0, P.Z)(t.id, _), k = (0, I.Z)(t.id), R = (0, N.Z)({
     user: t,
     context: _
   }), B = (0, O.Z)({
@@ -83,7 +83,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, m.Z)(t, n), et = (0, x.Z)(t.id, n), en = (0, P.Z)(t, n), el = (0, u.Z)({
+  }), ee = (0, m.Z)(t, n), et = (0, x.Z)(t.id, n), en = (0, p.Z)(t, n), el = (0, u.Z)({
     id: t.id,
     label: T.NW.string(T.t["/AXYnJ"])
   }), ei = t.isNonUserBot();

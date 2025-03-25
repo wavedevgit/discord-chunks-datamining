@@ -81,7 +81,7 @@ function T(e) {
   "" === (g = e.query) && (E = "", b = [], O = [])
 }
 
-function N(e) {
+function A(e) {
   switch (e) {
     case p.FIXED_HEIGHT_MP4:
     case p.FIXED_HEIGHT_SMALL_MP4:
@@ -101,7 +101,7 @@ function N(e) {
   }
 }
 
-function A(e) {
+function N(e) {
   return e.replace(/^https?:/, "")
 }
 
@@ -119,11 +119,11 @@ function C(e) {
     return {
       width: t,
       height: n,
-      src: A(r),
-      gifSrc: A(i),
+      src: N(r),
+      gifSrc: N(i),
       url: a,
       id: s,
-      format: N(y) ? o.EO.VIDEO : o.EO.IMAGE
+      format: A(y) ? o.EO.VIDEO : o.EO.IMAGE
     }
   })
 }
@@ -141,10 +141,10 @@ function P(e) {
   v = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.NW.string(l.t.H6zNFx),
-    src: A(e.trendingGIFPreview.src),
+    src: N(e.trendingGIFPreview.src),
     format: o.EO.IMAGE
   }] : [], ...t.map(e => f(u({}, e), {
-    src: A(e.src),
+    src: N(e.src),
     type: s.wI2.TRENDING_CATEGORY,
     format: o.EO.VIDEO
   }))]

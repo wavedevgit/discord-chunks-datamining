@@ -37,7 +37,7 @@ class f extends o.Z {
     }), p(this, "maybeOpenModal", () => {
       var e, t;
       let l = s.default.getCurrentUser(),
-        o = a.Z.getState(),
+        o = a.ZP.getState(),
         u = null == l ? void 0 : null === (e = l.avatarDecoration) || void 0 === e ? void 0 : e.skuId,
         f = null == l ? void 0 : null === (t = l.avatarDecoration) || void 0 === t ? void 0 : t.expiresAt;
       return null != l && !!(null != f && 1e3 * f < Date.now()) && o !== d.hes.RTC_CONNECTED && ((0, i.Mr3)(h), (0, i.ZDy)(async () => {

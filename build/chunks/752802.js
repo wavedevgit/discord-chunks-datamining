@@ -28,8 +28,8 @@ var i = n(200651),
   N = n(5192),
   C = n(444295),
   Z = n(1226),
-  w = n(981631),
-  P = n(388032),
+  P = n(981631),
+  w = n(388032),
   _ = n(958914);
 
 function T(e) {
@@ -92,7 +92,7 @@ function k(e) {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(c.ua7, {
-    text: p ? P.NW.string(P.t.YqAjX1) : P.NW.string(P.t["w4m94+"]),
+    text: p ? w.NW.string(w.t.YqAjX1) : w.NW.string(w.t["w4m94+"]),
     children: e => {
       var {
         onClick: n
@@ -100,7 +100,7 @@ function k(e) {
       return (0, i.jsx)(c.P3F, D(T({}, r), {
         className: _.controlAction,
         onClick: e => {
-          e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
+          e.stopPropagation(), (0, C.Ws)(P.Odu.GO_LIVE, {
             type: C.Qu.AUDIO,
             value: p ? C.bk.ENABLED : C.bk.DISABLED,
             userId: t.user.id
@@ -120,7 +120,7 @@ function k(e) {
 
 function L(e, t, r) {
   return l => {
-    (0, C.Ws)(w.Odu.GO_LIVE, {
+    (0, C.Ws)(P.Odu.GO_LIVE, {
       type: C.Qu.GO_LIVE,
       value: C.bk.SETTINGS_OPENED,
       userId: e.user.id
@@ -145,7 +145,7 @@ function R(e) {
   } = e, l = (0, f.bp)(), s = n.user, u = (0, a.e7)([S.default], () => {
     var e;
     return null !== (e = S.default.getUser(s.id)) && void 0 !== e ? e : s
-  }, [s]), d = t ? P.NW.string(P.t.tLxK4u) : P.NW.string(P.t.E5RDnJ);
+  }, [s]), d = t ? w.NW.string(w.t.tLxK4u) : w.NW.string(w.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: o()(_.controlBackground, {
@@ -162,7 +162,7 @@ function R(e) {
             null === (t = e.onClick) || void 0 === t || t.call(e), (0, h.rn)(n.stream, {
               forceMultiple: !0,
               noFocus: !0
-            }), r(), (0, C.Ws)(w.Odu.GO_LIVE, {
+            }), r(), (0, C.Ws)(P.Odu.GO_LIVE, {
               type: C.Qu.GO_LIVE,
               value: C.bk.ENABLED,
               userId: n.user.id
@@ -171,7 +171,7 @@ function R(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "always-white",
-            children: P.NW.string(P.t["I6JG4+"])
+            children: w.NW.string(w.t["I6JG4+"])
           }), (0, i.jsx)(c.OgY, {
             size: "sm",
             color: "currentColor"
@@ -198,7 +198,7 @@ function R(e) {
             containerClassName: _.guildTag,
             inline: !1,
             onShowProfile: () => {
-              (0, C.Ws)(w.Odu.GO_LIVE, {
+              (0, C.Ws)(P.Odu.GO_LIVE, {
                 type: C.Qu.GO_LIVE,
                 value: C.bk.GUILD_PROFILE_OPENED,
                 userId: n.user.id
@@ -212,7 +212,7 @@ function R(e) {
           children: [(0, i.jsx)(k, {
             participant: n
           }), (0, i.jsx)(c.ua7, {
-            text: P.NW.string(P.t["3D5yo6"]),
+            text: w.NW.string(w.t["3D5yo6"]),
             children: e => {
               var {
                 onClick: t
@@ -232,7 +232,7 @@ function R(e) {
     })]
   })
 }
-let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
+let M = new Set([P.jm8.ENDED, P.jm8.FAILED, P.jm8.PAUSED]),
   W = r.memo(function(e) {
     let {
       participant: t,
@@ -249,7 +249,7 @@ let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
       }), h ? (0, i.jsx)("div", {
         className: _.streamTile,
         children: (0, i.jsx)(c.kL8, {
-          "aria-label": P.NW.formatToPlainString(P.t.gHPz3d, {
+          "aria-label": w.NW.formatToPlainString(w.t.gHPz3d, {
             streamerName: t.user.username
           }),
           onClick: () => {},

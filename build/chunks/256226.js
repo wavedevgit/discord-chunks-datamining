@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -77,12 +77,12 @@ function T(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = i.forwardRef(function(e, t) {
+let A = i.forwardRef(function(e, t) {
   var o, v, O;
   let T;
   let {
-    canRemove: N,
-    className: A,
+    canRemove: A,
+    className: N,
     role: C,
     onRemove: R,
     guildId: P,
@@ -107,7 +107,7 @@ let N = i.forwardRef(function(e, t) {
   }, [C.id]), B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(), F = null !== (v = C.colorString) && void 0 !== v ? v : B, V = null !== (O = (0, l.wK)(F, .6)) && void 0 !== O ? O : void 0, Z = u.Z.unsafe_rawColors.WHITE_500.css, H = (0, l._i)(F);
   null != H && .3 > (0, l.Bd)(H) && (Z = u.Z.unsafe_rawColors.PRIMARY_630.css), T = U ? (0, r.jsx)(p.Z, {
     className: b.roleFlowerStar,
-    iconClassName: N ? b.roleVerifiedIcon : void 0,
+    iconClassName: A ? b.roleVerifiedIcon : void 0,
     color: F,
     size: 14
   }) : "dot" === j ? (0, r.jsx)(d.FhE, {
@@ -125,7 +125,7 @@ let N = i.forwardRef(function(e, t) {
         borderColor: w ? void 0 : V
       }, null !== (t = e.style) && void 0 !== t ? t : {})
     }, [V, w, e.style]),
-    Y = () => N ? (0, r.jsx)(d.DY3, {
+    Y = () => A ? (0, r.jsx)(d.DY3, {
       text: E.NW.string(E.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
         className: a()(b.roleRemoveButtonCanRemove, b.roleRemoveButton),
@@ -160,7 +160,7 @@ let N = i.forwardRef(function(e, t) {
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", I(y({
       ref: t,
-      className: a()(b.role, A),
+      className: a()(b.role, N),
       style: W,
       onContextMenu: G,
       onMouseDown: D,

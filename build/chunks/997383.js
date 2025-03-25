@@ -46,8 +46,8 @@ function S(e) {
   return e
 }
 let T = 100,
-  N = 1e3,
-  A = .2,
+  A = 1e3,
+  N = .2,
   C = .1,
   R = Object.freeze({}),
   P = 300;
@@ -55,7 +55,7 @@ let T = 100,
 function w() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
     t = arguments.length > 1 ? arguments[1] : void 0;
-  return N * e * (null != t ? t : 1)
+  return A * e * (null != t ? t : 1)
 }
 
 function D(e, t) {
@@ -98,7 +98,7 @@ function D(e, t) {
       }
     } else s[n] = 1 + r / o
   }
-  for (let e of p.Z.getFriendIDs()) s[e] = (null !== (n = s[e]) && void 0 !== n ? n : 1) + A;
+  for (let e of p.Z.getFriendIDs()) s[e] = (null !== (n = s[e]) && void 0 !== n ? n : 1) + N;
   for (let e of d.Z.getDMUserIds()) s[e] = (null !== (r = s[e]) && void 0 !== r ? r : 1) + C;
   return s
 }

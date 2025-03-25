@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(922482),
   S = n(592125),
   T = n(430824),
-  N = n(496675),
-  A = n(158776),
+  A = n(496675),
+  N = n(158776),
   C = n(699516),
   R = n(938475),
   P = n(626135),
@@ -70,7 +70,7 @@ function z(e) {
       user: t
     } = e;
     return t
-  }) : []), ei = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
+  }) : []), ei = (0, s.e7)([N.Z], () => N.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: eo
   } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, w.Z)({
     display: "live",
@@ -84,7 +84,7 @@ function z(e) {
   }), {
     previewUrl: el,
     isLoading: ec
-  } = (0, b.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, v.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(V.S7T.CONNECT, en)), e_ = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, b.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, v.wq)(en), ef = (0, s.e7)([A.Z], () => null != en && A.Z.canBasicChannel(V.S7T.CONNECT, en)), e_ = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (ee) {
       var e;

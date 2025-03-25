@@ -68,8 +68,8 @@ function p(e) {
     renderSectionFooter: I,
     renderInspector: S,
     renderEmptySearchState: T,
-    renderCategoryList: N,
-    renderHeaderAccessories: A,
+    renderCategoryList: A,
+    renderHeaderAccessories: N,
     rowHeight: C,
     sectionHeaderHeight: R,
     sectionFooterHeight: P,
@@ -141,14 +141,14 @@ function p(e) {
       gridNavigatorId: M,
       defaultSearchPlaceholder: g,
       emptySearchPlaceholder: E
-    }), null == A ? void 0 : A()]
+    }), null == N ? void 0 : N()]
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [null != j ? j(el) : (0, r.jsxs)("div", {
       className: c.header,
       children: [" ", el, " "]
     }), Z && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [N(F), null != k && (0, r.jsx)("div", {
+      children: [A(F), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
         children: k
       }), (0, r.jsx)("div", _(d({

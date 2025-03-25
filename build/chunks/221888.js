@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function N(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -155,7 +155,7 @@ function L(e) {
     compact: b = !1,
     disableInteraction: O = !1,
     maxVisibleUsers: S = 3
-  } = e, N = (0, p.Z)(), [R, L] = i.useState(!1), x = i.useRef(new u.sW(C, () => L(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = (0, p.Z)(), [R, L] = i.useState(!1), x = i.useRef(new u.sW(C, () => L(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === v.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -163,8 +163,8 @@ function L(e) {
     return s.type === v.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
-    N && (x.current.cancel(), L(!1))
-  }, [N]);
+    A && (x.current.cancel(), L(!1))
+  }, [A]);
   let k = i.useCallback(() => {
       x.current.cancel(), L(!0)
     }, []),
@@ -176,7 +176,7 @@ function L(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("65593")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, A(T({}, n), {
+        return n => (0, r.jsx)(e, N(T({}, n), {
           user: t
         }))
       }, {
@@ -215,7 +215,7 @@ function L(e) {
           users: M,
           disableInteraction: O
         }),
-        shouldShow: R && !N,
+        shouldShow: R && !A,
         position: "top",
         children: () => (0, r.jsx)("div", {
           className: a()(I.viewers, h),

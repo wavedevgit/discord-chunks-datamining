@@ -83,8 +83,8 @@ let g = i.forwardRef(function(e, t) {
       to: I,
       avatarClassName: S,
       selectedClassName: T,
-      innerClassName: N,
-      wrapContent: A,
+      innerClassName: A,
+      wrapContent: N,
       highlighted: C,
       focusProps: R
     } = e,
@@ -109,9 +109,9 @@ let g = i.forwardRef(function(e, t) {
         content: w.current
       }), (0, r.jsxs)("div", {
         ref: w,
-        className: a()(N, u.layout, {
+        className: a()(A, u.layout, {
           [u.muted]: !y && O,
-          [u.wrappedLayout]: A
+          [u.wrappedLayout]: N
         }),
         children: [(0, r.jsx)("div", {
           className: a()(u.avatar, S),
@@ -122,7 +122,7 @@ let g = i.forwardRef(function(e, t) {
             className: u.nameAndDecorators,
             children: [(0, r.jsx)("div", {
               className: a()(u.name, {
-                [u.wrappedName]: A
+                [u.wrappedName]: N
               }),
               children: d
             }), E]

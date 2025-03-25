@@ -5,8 +5,8 @@ n.d(t, {
   A0: () => R,
   Sg: () => T,
   ow: () => v,
-  rQ: () => N,
-  t$: () => A,
+  rQ: () => A,
+  t$: () => N,
   tM: () => O
 }), n(47120);
 var r = n(544891),
@@ -134,10 +134,10 @@ let S = (e, t, n) => {
       }(0, f.yr)(e)
     }
   };
-var N = function(e) {
+var A = function(e) {
   return e[e.SENDING = 0] = "SENDING", e[e.CREATED = 1] = "CREATED", e[e.FAILED = 2] = "FAILED", e[e.TIMED_OUT = 3] = "TIMED_OUT", e[e.EPHEMERAL_SUCCESS = 4] = "EPHEMERAL_SUCCESS", e
 }({});
-let A = (e, t) => {
+let N = (e, t) => {
   let n = null == t ? void 0 : t.state,
     r = e.state === m.yb.SENT && v(e.id) < Date.now(),
     i = e.state === m.yb.SEND_FAILED && y(e.id) < Date.now(),

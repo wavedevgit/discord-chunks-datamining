@@ -26,8 +26,8 @@ var r = n(512722),
   I = n(358085),
   S = n(960048),
   T = n(138859),
-  N = n(14639),
-  A = n(639655),
+  A = n(14639),
+  N = n(639655),
   C = n(610308),
   R = n(91247),
   P = n(508569),
@@ -347,7 +347,7 @@ class $ extends w.Z {
   _cleanup(e) {
     c.ZP.Emitter.resume(), this._stopHeartbeater(), this._clearHelloTimeout();
     let t = this.webSocket;
-    this.webSocket = null, null != t && (t.onopen = V, t.onmessage = V, t.onerror = V, t.onclose = V, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, A.I)(B)
+    this.webSocket = null, null != t && (t.onopen = V, t.onmessage = V, t.onerror = V, t.onclose = V, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, N.I)(B)
   }
   _doResume() {
     var e;
@@ -391,7 +391,7 @@ class $ extends w.Z {
     this.token = s, G.verbose("[IDENTIFY]");
     let u = {
         token: s,
-        capabilities: (0, N.t)(),
+        capabilities: (0, A.t)(),
         properties: l,
         presence: c,
         compress: this.compressionHandler.usesLegacyCompression(),
@@ -516,6 +516,6 @@ class $ extends w.Z {
       if (!n || this.isSessionEstablished()) try {
         null != this.webSocket && this.webSocket.send(r)
       } catch (e) {} else G.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-    }), this.dispatcher = new P.Z(this), this.gatewayBackoff = new a.Z(1e3, 6e4), this.connectionState_ = T.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, A.I)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+    }), this.dispatcher = new P.Z(this), this.gatewayBackoff = new a.Z(1e3, 6e4), this.connectionState_ = T.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, N.I)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
   }
 }

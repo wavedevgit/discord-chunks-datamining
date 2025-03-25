@@ -50,7 +50,7 @@ function I(e, t) {
 }
 
 function T(e) {
-  let t = (0, r.e7)([s.Z], () => s.Z.getChannelId() === e.id),
+  let t = (0, r.e7)([s.ZP], () => s.ZP.getChannelId() === e.id),
     T = (0, u.Z)(),
     m = (null == T ? void 0 : T.channelId) === e.id,
     L = (0, l.V)(e) && !e.isPrivate(),

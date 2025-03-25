@@ -62,7 +62,7 @@ let I = r.memo(function(e) {
     resizeValidation: S,
     className: N,
     dragContainerClassName: C
-  } = e, Z = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, y.Z)(), _ = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), T = r.useCallback((e, t, n, i, r) => {
+  } = e, Z = u.Z.getWidgetConfig(t.type), P = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), w = (0, y.Z)(), _ = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(w))), T = r.useCallback((e, t, n, i, r) => {
     let l = p.Z.windowSize((0, m.ZY)((0, y.i)())),
       o = (0, h.jL)(n, l),
       a = (0, h.Ox)(i, l);
@@ -97,7 +97,7 @@ let I = r.memo(function(e) {
     resizeX: U,
     resizeY: G,
     dragAnywhere: F
-  } = null != Z ? Z : {}, Y = k || !w, H = r.useMemo(() => ({
+  } = null != Z ? Z : {}, Y = k || !P, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: _.width,
@@ -129,17 +129,17 @@ let I = r.memo(function(e) {
       height: 0
     },
     hidden: !Y,
-    locked: w,
+    locked: P,
     resizeX: null != U && U,
     resizeY: null != G && G,
     style: {
       zIndex: L
     },
     dragAnywhere: null != F && F,
-    active: !w,
+    active: !P,
     onUpdate: T,
     onClick: D,
-    targetWindow: P,
+    targetWindow: w,
     renderExtras: Q,
     resizeValidation: X,
     children: B

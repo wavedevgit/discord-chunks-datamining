@@ -27,7 +27,7 @@ var r = n(200651),
   S = n(659227),
   T = n(332952);
 
-function N(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ function L(e) {
   let {
     channelId: t,
     type: n
-  } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), N = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), A = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: w,
     commandOptions: L,
     commandOptionStates: x
@@ -120,8 +120,8 @@ function L(e) {
     return u.Z.subscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e), () => u.Z.unsubscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e)
   }, [t, n]);
   let U = i.useCallback(() => {
-    N.focusFirstVisibleItem()
-  }, [N]);
+    A.focusFirstVisibleItem()
+  }, [A]);
   (0, v.yp)({
     event: I.CkL.FOCUS_ATTACHMENT_AREA,
     handler: U
@@ -152,13 +152,13 @@ function L(e) {
   let F = (0, m.Q3)("ChannelAttachmentArea");
   return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
-      navigator: N,
+      navigator: A,
       children: (0, r.jsx)(s.SJ, {
         children: e => {
           var {
             ref: i
           } = e, s = P(e, ["ref"]);
-          return (0, r.jsx)("ul", R(A({
+          return (0, r.jsx)("ul", R(N({
             ref: i
           }, s), {
             className: a()(S.channelAttachmentArea, T.scrollbarGhost),

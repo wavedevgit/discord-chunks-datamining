@@ -113,19 +113,19 @@ let g = (e, t) => {
       interactive: m = !0,
       onClose: E,
       children: C
-    } = e, j = l.useRef(null), I = l.useRef([]), S = l.useRef(!1), P = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
+    } = e, j = l.useRef(null), I = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
       x: 0,
       y: 0
     }), R = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => o().chunk(C, f), [C]), D = l.useCallback((e, t) => {
       null == I.current[T] ? I.current[T] = [] : I.current[T][t] = e
     }, [T]), W = l.useCallback((e, t) => {
-      P.current = t, b(f * e + t)
+      S.current = t, b(f * e + t)
     }, [b]), k = l.useCallback(() => {
-      P.current = null, b(null)
+      S.current = null, b(null)
     }, [b]), B = l.useCallback(e => {
-      k(), S.current = e
+      k(), P.current = e
     }, [k]), M = l.useCallback((e, t, n) => {
-      if (S.current) {
+      if (P.current) {
         _({
           x: 0,
           y: 0
@@ -144,7 +144,7 @@ let g = (e, t) => {
         y: (i ? Math.max(r.y, -o.y) : Math.min(r.y, o.y)) / 2
       })
     }, []), U = l.useCallback(e => {
-      null != P.current && (e.preventDefault(), e.stopPropagation(), null == x || x(f * T + P.current))
+      null != S.current && (e.preventDefault(), e.stopPropagation(), null == x || x(f * T + S.current))
     }, [x, T]), L = l.useMemo(() => (0, i.throttle)(e => {
       if (null == j.current) return;
       let r = j.current.getBoundingClientRect(),
@@ -156,7 +156,7 @@ let g = (e, t) => {
           x: e.clientX,
           y: e.clientY
         };
-      if (M(i, l, Math.max(t, n)), S.current) {
+      if (M(i, l, Math.max(t, n)), P.current) {
         null != O && k();
         return
       }
@@ -174,7 +174,7 @@ let g = (e, t) => {
     }, 16), [O, M, k, W, T, n, t]), G = l.useCallback(e => {
       if (!m) return;
       let t = T + (e.deltaY > 0 ? 1 : -1);
-      t >= 0 && t < A.length && (null != P.current && (A[t].length > P.current ? W(t, P.current) : k()), w(t))
+      t >= 0 && t < A.length && (null != S.current && (A[t].length > S.current ? W(t, S.current) : k()), w(t))
     }, [m, T, A, W, k]), V = l.useMemo(() => A[T].map((e, l) => {
       let i = h[l];
       if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(h.length));

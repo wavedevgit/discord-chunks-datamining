@@ -186,12 +186,12 @@
     return n.h = r < 0 ? 360 + r : r, c(n)
   }
 
-  function N(e) {
+  function A(e) {
     var t = c(e).toHsl();
     return t.h = (t.h + 180) % 360, c(t)
   }
 
-  function A(e) {
+  function N(e) {
     var t = c(e).toHsl(),
       n = t.h;
     return [c(e), c({
@@ -406,7 +406,7 @@
       return this._applyCombination(P, arguments)
     },
     complement: function() {
-      return this._applyCombination(N, arguments)
+      return this._applyCombination(A, arguments)
     },
     monochromatic: function() {
       return this._applyCombination(w, arguments)
@@ -415,7 +415,7 @@
       return this._applyCombination(R, arguments)
     },
     triad: function() {
-      return this._applyCombination(A, arguments)
+      return this._applyCombination(N, arguments)
     },
     tetrad: function() {
       return this._applyCombination(C, arguments)

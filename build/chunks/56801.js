@@ -88,10 +88,10 @@ function I(e) {
     var n;
     let r = 2 * y;
     return (null === (n = o[t + 1]) || void 0 === n ? void 0 : n.type) === u.Qi.BUILT_IN && (r += O), v + r
-  }, [o]), N = i.useCallback((e, t) => {
+  }, [o]), A = i.useCallback((e, t) => {
     var n;
     return t ? (null === (n = o[e + 1]) || void 0 === n ? void 0 : n.type) === u.Qi.BUILT_IN ? 0 : 2 * y : 0 === e ? 0 : 2 * y
-  }, [o]), A = i.useCallback((e, t) => {
+  }, [o]), N = i.useCallback((e, t) => {
     let i = o[t];
     if (null == i) return;
     let a = (0, d.ky)(i),
@@ -138,11 +138,11 @@ function I(e) {
       store: l.Xn,
       categories: o,
       className: f.list,
-      renderCategoryListItem: A,
+      renderCategoryListItem: N,
       rowCount: o.length,
       categoryHeight: T,
       listPadding: b,
-      getScrollOffsetForIndex: N
+      getScrollOffsetForIndex: A
     })
   })
 }

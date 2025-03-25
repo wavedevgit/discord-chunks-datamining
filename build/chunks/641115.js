@@ -162,9 +162,7 @@ function A(e) {
     location: G
   } = (0, f.O)(), U = (0, m.Zq)({
     autoTrackExposure: !1
-  }), B = (0, p.B4)({
-    location: "StreamSettings"
-  }), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !U, [V, Y] = l.useState(!1), J = k ? N.z8 : N.WC, X = E(T({}, G), {
+  }), B = (0, p.B4)(), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !U, [V, Y] = l.useState(!1), J = k ? N.z8 : N.WC, X = E(T({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: J.map(e => W({

@@ -11,13 +11,13 @@ function o(e) {
   let {
     channelId: t
   } = e;
-  return (0, r.e7)([l.Z, i.Z], () => (function(e) {
+  return (0, r.e7)([l.ZP, i.Z], () => (function(e) {
     var t;
-    let [n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.Z, i.Z];
+    let [n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.ZP, i.Z];
     if (null == e || n.getChannelId() !== e) return !1;
     let o = r.getChannel(e);
     if (null == o || o.isGuildStageVoice()) return !1;
     let u = null === (t = n.getSecureFramesState()) || void 0 === t ? void 0 : t.version;
     return null != u && u !== a.Eg
-  })(t, [l.Z, i.Z]), [t])
+  })(t, [l.ZP, i.Z]), [t])
 }

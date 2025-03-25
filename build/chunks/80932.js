@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $K: () => A,
+  $K: () => N,
   OQ: () => y,
   RE: () => I,
   Xe: () => C,
@@ -121,13 +121,13 @@ function T(e) {
   return [...(0, d.Z)(t).keys()]
 }
 
-function N(e) {
+function A(e) {
   var t, n, r;
   return null == e ? null : null !== (r = null !== (n = e.id) && void 0 !== n ? n : null === (t = u.ZP.convertSurrogateToBase(e.surrogates)) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : e.name
 }
 
-function A(e) {
-  let t = N(e);
+function N(e) {
+  let t = A(e);
   null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
     title: b.NW.string(b.t["+XYXtb"]),
     body: b.NW.formatToPlainString(b.t.JaIyFh, {
@@ -137,7 +137,7 @@ function A(e) {
 }
 
 function C(e) {
-  let t = N(e);
+  let t = A(e);
   null != t && _.DZ.updateAsync("favoriteEmojis", e => {
     if (e.emojis = T(e.emojis), !e.emojis.includes(t)) return !1;
     e.emojis = e.emojis.filter(e => t !== e)

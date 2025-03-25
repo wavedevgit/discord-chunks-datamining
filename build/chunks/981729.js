@@ -81,8 +81,8 @@ function S(e, t) {
 var T = function(e) {
   return e.PRIMARY = "primary", e.NESTED = "nested", e.BLACK = "black", e.GREY = "grey", e.BRAND = "brand", e.GREEN = "green", e.YELLOW = "yellow", e.RED = "red", e.PREMIUM = "premium", e
 }({});
-let N = 16,
-  A = 10,
+let A = 16,
+  N = 10,
   C = 8,
   R = Object.freeze({}),
   P = Object.freeze({
@@ -110,7 +110,7 @@ function w(e, t, n) {
     a = r ? "bottom" : "right",
     s = "50%",
     l = n;
-  return t === o ? (s = "0%", l += N) : t === a && (s = "100%", l -= A + A), {
+  return t === o ? (s = "0%", l += A) : t === a && (s = "100%", l -= N + N), {
     [i]: "calc(".concat(s, " + ").concat(l, "px)")
   }
 }

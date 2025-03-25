@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(176354),
   S = n(74538),
   T = n(543241),
-  N = n(149203),
-  A = n(981631),
+  A = n(149203),
+  N = n(981631),
   C = n(185923),
   R = n(474936),
   P = n(388032),
@@ -81,7 +81,7 @@ let k = e => {
       analyticsLocation: U,
       containerContext: G
     } = e,
-    B = (0, s.e7)([y.Z], () => y.Z.theme) === A.BRd.LIGHT ? "light" : "dark",
+    B = (0, s.e7)([y.Z], () => y.Z.theme) === N.BRd.LIGHT ? "light" : "dark",
     [F, V] = i.useState(!1),
     Z = () => {
       (0, T.A3)(x), (0, p.z)(), o()
@@ -103,13 +103,13 @@ let k = e => {
     }),
     J = X.enabled || null != Y,
     $ = X.addSocialProof;
-  t = j === C.Hz.REACTION ? R.cd.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == k ? R.cd.EMOJI_PICKER_FLOATING_UPSELL : k.subCategory === N.t0.TOP_GUILD_EMOJI ? R.cd.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : k.subCategory === N.t0.NEWLY_ADDED_EMOJI ? R.cd.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : R.cd.EMOJI_PICKER_EMOJI_CLICKED;
+  t = j === C.Hz.REACTION ? R.cd.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == k ? R.cd.EMOJI_PICKER_FLOATING_UPSELL : k.subCategory === A.t0.TOP_GUILD_EMOJI ? R.cd.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : k.subCategory === A.t0.NEWLY_ADDED_EMOJI ? R.cd.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : R.cd.EMOJI_PICKER_EMOJI_CLICKED;
   let ee = null != k ? k.emoji : void 0,
     et = null != ee && ee.animated,
     en = null != ee && !I.ZP.isInternalEmojiForGuildId(ee, null == x ? void 0 : x.getGuildId()),
-    er = null != ee ? A.qAy.EMOJI : A.qAy.EMOJI_PICKER_FLOATING_UPSELL;
+    er = null != ee ? N.qAy.EMOJI : N.qAy.EMOJI_PICKER_FLOATING_UPSELL;
   i.useEffect(() => {
-    J || O.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
+    J || O.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
       type: t,
       is_animated: et,
       is_external: en,
@@ -138,7 +138,7 @@ let k = e => {
       title: P.NW.string(P.t["0+11FB"]),
       description: P.NW.string(P.t.dURIzc),
       enableSocialProof: es,
-      analyticsLocationSection: A.jXE.EMOJI_UPSELL_POPOUT,
+      analyticsLocationSection: N.jXE.EMOJI_UPSELL_POPOUT,
       onClose: D,
       upsellViewedTrackingData: {
         type: t,
@@ -187,8 +187,8 @@ let k = e => {
       subscriptionTier: R.Si.TIER_2,
       submitting: F,
       premiumModalAnalyticsLocation: {
-        section: A.jXE.EMOJI_PICKER_POPOUT,
-        object: A.qAy.BUTTON_CTA
+        section: N.jXE.EMOJI_PICKER_POPOUT,
+        object: N.qAy.BUTTON_CTA
       },
       size: l.zxk.Sizes.SMALL,
       color: l.zxk.Colors.GREEN,

@@ -114,7 +114,7 @@ function O(e, t) {
 }
 
 function I(e) {
-  S(e), e.p.forEach(N), e.p = null
+  S(e), e.p.forEach(A), e.p = null
 }
 
 function S(e) {
@@ -131,12 +131,12 @@ function T(e) {
   }
 }
 
-function N(e) {
+function A(e) {
   var t = e[Y];
   0 === t.i || 1 === t.i ? t.j() : t.g = !0
 }
 
-function A(e, t) {
+function N(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = void 0 !== e && e !== n;
@@ -368,10 +368,10 @@ var ee = new(function() {
             d ? I(c) : S(c)
           }
           return "undefined" != typeof Promise && a instanceof Promise ? a.then(function(e) {
-            return O(c, i), A(e, c)
+            return O(c, i), N(e, c)
           }, function(e) {
             throw I(c), e
-          }) : (O(c, i), A(a, c))
+          }) : (O(c, i), N(a, c))
         }
         if (!e || "object" != typeof e) {
           if (void 0 === (a = n(e)) && (a = e), a === H && (a = void 0), t.D && m(a, !0), i) {
@@ -405,7 +405,7 @@ var ee = new(function() {
       return n[Y].C = !0, S(t), n
     }, t.finishDraft = function(e, t) {
       var n = (e && e[Y]).A;
-      return O(n, t), A(void 0, n)
+      return O(n, t), N(void 0, n)
     }, t.setAutoFreeze = function(e) {
       this.D = e
     }, t.setUseProxies = function(e) {

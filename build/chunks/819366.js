@@ -27,7 +27,7 @@ var r = n(200651),
   S = n(51144),
   T = n(377668);
 
-function N(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("25073").then(n.bind(n, 80742));
-      return n => (0, r.jsx)(e, R(A({}, n), {
+      return n => (0, r.jsx)(e, R(N({}, n), {
         userId: t
       }))
     })
@@ -99,7 +99,7 @@ function w(e) {
     userId: i,
     channelId: o,
     parsedUserId: p,
-    content: N,
+    content: A,
     inlinePreview: C = !1,
     viewingChannelId: w
   } = e, {
@@ -109,7 +109,7 @@ function w(e) {
       let {
         default: e
       } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("25250")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, R(A({}, t), {
+      return t => (0, r.jsx)(e, R(N({}, t), {
         viewingChannelId: w,
         user: L,
         channel: x,
@@ -120,9 +120,9 @@ function w(e) {
   if (null == L) return (0, r.jsx)(P, {
     userId: p,
     className: t,
-    children: N
+    children: A
   });
-  let F = e => (0, r.jsx)(h.Z, R(A({
+  let F = e => (0, r.jsx)(h.Z, R(N({
     className: t,
     onContextMenu: k,
     color: B
@@ -139,7 +139,7 @@ function w(e) {
         guildId: null != M ? M : void 0,
         channelId: null != o ? o : void 0
       }),
-      renderPopout: e => (a()(null != L, "Unexpected missing user"), (0, r.jsx)(g.Z, A({
+      renderPopout: e => (a()(null != L, "Unexpected missing user"), (0, r.jsx)(g.Z, N({
         userId: L.id,
         guildId: null != M ? M : void 0,
         channelId: o

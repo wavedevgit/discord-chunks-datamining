@@ -96,8 +96,8 @@ function T(e) {
     premiumSubscription: b,
     isGift: y,
     planGroup: T,
-    isPrepaid: N,
-    isTrial: A,
+    isPrepaid: A,
+    isTrial: N,
     makePurchase: C,
     needsPaymentSource: R,
     inReverseTrial: P,
@@ -116,7 +116,7 @@ function T(e) {
     premiumSubscription: b,
     isGift: y,
     planGroup: T,
-    isPrepaidPaymentSource: N,
+    isPrepaidPaymentSource: A,
     inReverseTrial: P
   }), {
     analyticsLocations: B
@@ -146,7 +146,7 @@ function T(e) {
       children: G
     }))
   });
-  if (A) return (0, r.jsxs)(a.gtL, {
+  if (N) return (0, r.jsxs)(a.gtL, {
     innerClassName: g.innerButton,
     "data-testid": x ? "purchase" : "submitButton",
     onClick: x ? C : () => S(n, f),

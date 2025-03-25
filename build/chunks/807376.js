@@ -55,13 +55,13 @@ g.isPlatformEmbedded && (m.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => l.Z.toggleSelf
   location: "System Tray"
 })), m.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => l.Z.toggleSelfDeaf()), m.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
   o.Z.open(b.oAB.VOICE)
-}), O = i.ZP.connectStores([p.Z, u.Z, f.Z, c.default, h.Z, d.Z, a.Z], () => {
+}), O = i.ZP.connectStores([p.ZP, u.Z, f.Z, c.default, h.Z, d.Z, a.Z], () => {
   let e = c.default.getTotalMentionCount(),
     t = c.default.hasAnyUnread(),
     n = (0, s.m$)([h.Z, a.Z]),
     r = !d.Z.getDisableUnreadBadge() && !!(t || e + n > 0);
   return {
-    connected: p.Z.isConnected(),
+    connected: p.ZP.isConnected(),
     speaking: f.Z.isCurrentUserSpeaking(),
     muted: u.Z.isSelfMute() || u.Z.isSelfMutedTemporarily(),
     deafened: u.Z.isSelfDeaf(),

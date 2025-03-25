@@ -27,8 +27,8 @@ var r = n(200651),
   j = n(314897),
   w = n(592125),
   Z = n(131951),
-  C = n(451478),
-  P = n(685203),
+  P = n(451478),
+  C = n(685203),
   N = n(112560),
   I = n(442168),
   _ = n(822296),
@@ -93,7 +93,7 @@ function Y(e) {
     stream: G,
     user: B,
     streamId: q
-  } = t, J = (0, a.e7)([w.Z], () => w.Z.getChannel(G.channelId)), X = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(B.id, G.guildId), [B.id, G.guildId]), Q = (0, a.e7)([x.Z], () => x.Z.getAllActiveStreams().length > 0), $ = (0, a.e7)([C.Z], () => C.Z.isFocused()), ee = (null == X ? void 0 : X.ownerId) === H, et = ee && !$ && !g, en = null != X ? (0, v.Z)(X, B, B.id === H, et) : null, er = D < 195;
+  } = t, J = (0, a.e7)([w.Z], () => w.Z.getChannel(G.channelId)), X = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(B.id, G.guildId), [B.id, G.guildId]), Q = (0, a.e7)([x.Z], () => x.Z.getAllActiveStreams().length > 0), $ = (0, a.e7)([P.Z], () => P.Z.isFocused()), ee = (null == X ? void 0 : X.ownerId) === H, et = ee && !$ && !g, en = null != X ? (0, v.Z)(X, B, B.id === H, et) : null, er = D < 195;
   if ((0, d.ZP)(() => {
       !Q && (null == J ? void 0 : J.isGuildStageVoice()) && !ee && ((0, u.rn)(G), c.Z.updateStageStreamSize(G.channelId, !1))
     }), i.useEffect(() => {
@@ -131,14 +131,14 @@ function Y(e) {
       }),
       stream: t.stream
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(P.a, {
+      children: [(0, r.jsx)(C.a, {
         isSmall: er,
         children: (0, r.jsx)(s.Text, {
           variant: er ? "text-sm/semibold" : "text-md/semibold",
           color: "none",
           children: D < 175 ? U.NW.string(U.t["I6JG4+"]) : U.NW.string(U.t["7Xq/nZ"])
         })
-      }), Q ? (0, r.jsx)(P.a, {
+      }), Q ? (0, r.jsx)(C.a, {
         className: z.addCTA,
         tooltip: U.NW.string(U.t.wCrzur),
         onClick: e => {

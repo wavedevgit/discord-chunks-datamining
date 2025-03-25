@@ -194,7 +194,7 @@ let E = {
     fetchApplication: g
   },
   b = (0, r.Kb)(c.Z, {
-    queryId: e => null != e ? ["applications", e] : null,
+    queryId: e => u.McO.APPLICATIONS(e),
     get: e => null != e ? c.Z.getApplication(e) : null,
     load: (e, t) => null != t ? g(t, !1, e).then(u.dG4) : Promise.resolve(),
     useStateHook: r.e7

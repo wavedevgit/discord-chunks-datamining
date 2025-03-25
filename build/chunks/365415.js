@@ -28,7 +28,7 @@ async function c(e, t) {
   return Promise.reject()
 }
 let u = (0, i.Kb)(l.Z, {
-  queryId: (e, t) => null != e && null != t ? ["custom-activity-links", e, t.encodedLinkId] : null,
+  queryId: (e, t) => null == t ? null : s.McO.CUSTOM_ACTIVITY_LINK(e, t.encodedLinkId),
   get: (e, t) => null == e || null == t ? null : t.type === r.e.MANAGED ? l.Z.getOne(e, t.encodedLinkId) : null,
   load: (e, t, n) => c(t, n),
   useStateHook: i.e7

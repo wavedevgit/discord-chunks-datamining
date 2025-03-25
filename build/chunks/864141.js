@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(373826),
   S = n(340266),
   T = n(788858),
-  N = n(599864),
-  A = n(670451),
+  A = n(599864),
+  N = n(670451),
   C = n(228168),
   R = n(388032),
   P = n(203396);
@@ -95,7 +95,7 @@ function w(e) {
     })
   }, V = () => (0, r.jsx)("div", {
     className: o()(P.actions, L),
-    children: (0, r.jsx)(N.Z, {
+    children: (0, r.jsx)(A.Z, {
       channel: n,
       onAction: M,
       onClose: w
@@ -110,7 +110,7 @@ function w(e) {
       onClose: w,
       children: [(0, r.jsx)(O.Z, {
         text: B(),
-        contextMenu: (0, r.jsx)(A.Z, {
+        contextMenu: (0, r.jsx)(N.Z, {
           display: "voice",
           user: t,
           onClose: w

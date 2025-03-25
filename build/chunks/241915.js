@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => R,
-  _: () => A
+  _: () => N
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -61,7 +61,7 @@ function T(e, t) {
   return (0, l.clamp)(n, t.minWidth, t.maxWidth)
 }
 
-function N(e) {
+function A(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -84,7 +84,7 @@ function N(e) {
     className: s()(p.resizeHandle, I[l])
   })
 }
-class A extends(r = o.PureComponent) {
+class N extends(r = o.PureComponent) {
   componentDidMount() {
     this.setPosition(this.props.position)
   }
@@ -235,7 +235,7 @@ class A extends(r = o.PureComponent) {
         ref: this.handleSetInnerDivRef,
         style: f,
         children: this.props.children
-      }), null != c ? (0, i.jsx)(N, {
+      }), null != c ? (0, i.jsx)(A, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
@@ -305,7 +305,7 @@ class A extends(r = o.PureComponent) {
     })
   }
 }
-h(A, "defaultProps", {
+h(N, "defaultProps", {
   hidden: !1,
   roundCorners: !0
 });
@@ -333,7 +333,7 @@ let C = e => {
           }, e.props), e.id)
         }),
         p = n.some(e => e.component === f.NYg.EMBED_IFRAME);
-      return (0, i.jsx)(A, {
+      return (0, i.jsx)(N, {
         appContext: d,
         position: t.position,
         id: t.id,

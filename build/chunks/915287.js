@@ -163,8 +163,8 @@ function O(e, t, n, o) {
       onResize: I = null,
       onContentResize: S = null,
       dir: T = "ltr",
-      sections: N,
-      sectionHeight: A,
+      sections: A,
+      sectionHeight: N,
       rowHeight: C,
       footerHeight: R = 0,
       sidebarHeight: P,
@@ -215,8 +215,8 @@ function O(e, t, n, o) {
       forceUpdateOnChunkChange: ef,
       anchor: e_
     } = (0, u.aU)({
-      sections: N,
-      sectionHeight: A,
+      sections: A,
+      sectionHeight: N,
       rowHeight: C,
       footerHeight: R,
       sidebarHeight: P,
@@ -256,7 +256,7 @@ function O(e, t, n, o) {
       listenerMap: l
     });
     let eb = E(ec),
-      ev = b(N);
+      ev = b(A);
     i.useImperativeHandle(p, () => _({
       getScrollerNode: () => ei.current,
       getScrollerState: ea,

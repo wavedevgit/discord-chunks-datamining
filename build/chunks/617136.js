@@ -7,11 +7,11 @@ n.d(t, {
   _3: () => R,
   _F: () => w,
   _b: () => O,
-  dA: () => A,
+  dA: () => N,
   jZ: () => C,
   mH: () => T,
   uk: () => I,
-  ze: () => N
+  ze: () => A
 }), n(47120);
 var r = n(192379),
   i = n(930446),
@@ -98,14 +98,14 @@ function T(e, t, n) {
   }
 }
 
-function N(e) {
+function A(e) {
   let {
     questId: t,
     event: n,
     properties: r,
     trackGuildAndChannelMetadata: i = !1
   } = e;
-  return A({
+  return N({
     questId: t,
     event: n,
     properties: r,
@@ -114,7 +114,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     questId: t,
     event: n,
@@ -147,7 +147,7 @@ function R(e) {
     impressionId: a,
     trackGuildAndChannelMetadata: s = !1
   } = e;
-  A({
+  N({
     questId: t,
     event: h.rMx.QUEST_CONTENT_CLICKED,
     properties: b(g({}, T(n, i, o)), {
@@ -165,7 +165,7 @@ function P(e) {
     mode: r,
     prevMode: i
   } = e;
-  A({
+  N({
     questId: n,
     event: h.rMx.QUEST_BAR_MODE_CHANGED,
     properties: b(g({}, T(t)), {
@@ -185,7 +185,7 @@ function w() {
       properties: i,
       trackGuildAndChannelMetadata: o = !1
     } = t;
-    A({
+    N({
       questId: n,
       event: r,
       properties: b(g({}, i), {

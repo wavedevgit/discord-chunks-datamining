@@ -58,7 +58,7 @@ function g(e) {
 }
 class E extends r.Z {
   handleBlockedOrIgnoredUserVoiceChannelJoin(e, t) {
-    let n = o.Z.getChannelId();
+    let n = o.ZP.getChannelId();
     e === n && null != i.Z.getChannel(e) && (m(e) || (0, u.H)(n, t))
   }
   constructor(...e) {

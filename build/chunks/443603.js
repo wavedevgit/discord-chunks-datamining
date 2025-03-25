@@ -96,8 +96,8 @@ function O(e) {
     isActive: I,
     onMouseEnter: S,
     onMouseLeave: T,
-    onFocus: N,
-    onBlur: A,
+    onFocus: A,
+    onBlur: N,
     pulse: C,
     sparkle: R,
     notification: P,
@@ -141,8 +141,8 @@ function O(e) {
     onClick: O,
     onMouseEnter: S,
     onMouseLeave: T,
-    onFocus: N,
-    onBlur: A,
+    onFocus: A,
+    onBlur: N,
     focusProps: {
       offset: {
         top: 4,

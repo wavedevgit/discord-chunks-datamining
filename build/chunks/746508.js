@@ -772,16 +772,16 @@ let e$ = (0, O.Z)(function(e) {
     l = (0, G.Z)(),
     o = (0, u.e7)([U.Z], () => U.Z.getAwaitingRemoteSessionInfo()),
     a = (0, u.e7)([eI.default], () => eI.default.getCurrentUser()),
-    s = (0, u.cj)([ev.Z], () => null != l ? {
+    s = (0, u.cj)([ev.ZP], () => null != l ? {
       channelId: l.channelId,
       rtcConnectionQuality: eL.IE4.FINE,
       rtcConnectionState: eL.hes.RTC_CONNECTED,
       rtcConnectionLastPing: 0
     } : {
-      channelId: ev.Z.getChannelId(),
-      rtcConnectionQuality: ev.Z.getQuality(),
-      rtcConnectionState: ev.Z.getState(),
-      rtcConnectionLastPing: ev.Z.getLastPing()
+      channelId: ev.ZP.getChannelId(),
+      rtcConnectionQuality: ev.ZP.getQuality(),
+      rtcConnectionState: ev.ZP.getState(),
+      rtcConnectionLastPing: ev.ZP.getLastPing()
     }),
     {
       channelId: c

@@ -29,7 +29,7 @@ var i = n(200651),
   C = n(388032),
   Z = n(989424);
 
-function w(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -48,7 +48,7 @@ function w(e) {
   return e
 }
 
-function P(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ let _ = r.memo(function(e) {
       channel: r,
       context: l
     } = e, o = null === (t = n.user) || void 0 === t ? void 0 : t.id;
-    return (0, a.e7)([O.Z], () => null != n.user && null != l && null != r && O.Z.isLocalVideoDisabled(o, l), [o, n.user, l, r]) ? null : (0, i.jsx)(f.ZP, w({}, e))
+    return (0, a.e7)([O.Z], () => null != n.user && null != l && null != r && O.Z.isLocalVideoDisabled(o, l), [o, n.user, l, r]) ? null : (0, i.jsx)(f.ZP, P({}, e))
   }),
   T = r.memo(function(e) {
     let {
@@ -88,7 +88,7 @@ let _ = r.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
-        return n => (0, i.jsx)(e, P(w({}, n), {
+        return n => (0, i.jsx)(e, w(P({}, n), {
           user: l,
           mediaEngineContext: t,
           onWatchStream: () => {
@@ -233,7 +233,7 @@ function A(e) {
         height: n
       }
     })
-  }, [s]), (0, i.jsx)(D, P(w({}, e), {
+  }, [s]), (0, i.jsx)(D, w(P({}, e), {
     channel: t,
     participants: y,
     participantsVersion: o,

@@ -158,10 +158,10 @@ function T(e) {
   null != n && (n.component === l.NYg.VIDEO ? r = t : n.component === l.NYg.EMBED_IFRAME && (i = t))
 }
 
-function N() {
+function A() {
   r = null, i = null, p = new Map
 }
-class A extends(o = a.ZP.PersistedStore) {
+class N extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
       m = l.VD2.BOTTOM_RIGHT, g = {
@@ -204,7 +204,7 @@ class A extends(o = a.ZP.PersistedStore) {
     }
   }
 }
-u(A, "displayName", "PictureInPictureStore"), u(A, "persistKey", "PictureInPictureStore"), u(A, "migrations", [e => {
+u(N, "displayName", "PictureInPictureStore"), u(N, "persistKey", "PictureInPictureStore"), u(N, "migrations", [e => {
   var t, n;
   return {
     pipWidths: {
@@ -214,7 +214,7 @@ u(A, "displayName", "PictureInPictureStore"), u(A, "persistKey", "PictureInPictu
     openPosition: null !== (n = e.openPosition) && void 0 !== n ? n : l.VD2.BOTTOM_RIGHT
   }
 }]);
-let C = new A(s.Z, {
+let C = new N(s.Z, {
   PICTURE_IN_PICTURE_OPEN: E,
   PICTURE_IN_PICTURE_CLOSE: b,
   PICTURE_IN_PICTURE_MOVE: v,
@@ -223,5 +223,5 @@ let C = new A(s.Z, {
   PICTURE_IN_PICTURE_SHOW: S,
   PICTURE_IN_PICTURE_UPDATE_RECT: O,
   PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: T,
-  LOGOUT: N
+  LOGOUT: A
 })

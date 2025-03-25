@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(569545),
   S = n(74299),
   T = n(863908),
-  N = n(803647),
-  A = n(266910),
+  A = n(803647),
+  N = n(266910),
   C = n(788983),
   R = n(703656),
   P = n(937995),
@@ -217,7 +217,7 @@ class eu extends i.PureComponent {
       streamId: t,
       component: G.Z.getVideoComponent(),
       mirror: s,
-      children: (0, r.jsx)(A.Z, {
+      children: (0, r.jsx)(N.Z, {
         size: u.EFr.SIZE_80,
         src: null == n ? void 0 : n.user.getAvatarURL(e.guild_id, 80),
         "aria-label": null == n ? void 0 : n.user.username
@@ -274,7 +274,7 @@ class eu extends i.PureComponent {
       let {
         participantOnScreen: e
       } = this.props;
-      a()((0, er._5)(e), "cannot stop stream for non streamer"), (0, y.v)(m.Z.VIDEO_PIP, y.d.STREAM, !1), (0, N.Z)(e.stream)
+      a()((0, er._5)(e), "cannot stop stream for non streamer"), (0, y.v)(m.Z.VIDEO_PIP, y.d.STREAM, !1), (0, A.Z)(e.stream)
     }), ea(this, "handleHidePIP", () => {
       let {
         channel: e

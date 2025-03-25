@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(82965),
   S = n(189771),
   T = n(560688),
-  N = n(88479),
-  A = n(136995),
+  A = n(88479),
+  N = n(136995),
   C = n(25827),
   R = n(430824),
   P = n(131951),
@@ -140,7 +140,7 @@ function et(e) {
   });
   return (0, r.jsxs)("div", {
     className: a()(Z.wrapper, _ ? Z.experimentActions : Z.actions),
-    children: [(0, r.jsx)(N.Z, {
+    children: [(0, r.jsx)(A.Z, {
       iconComponent: c.Dio,
       label: V.NW.string(V.t.WAI6xs),
       className: Z.actionButton,
@@ -187,7 +187,7 @@ function et(e) {
           }
         })
       }
-    }), (0, r.jsx)(A.Z, {
+    }), (0, r.jsx)(N.Z, {
       channel: n,
       color: "join",
       centerButton: !0,
@@ -209,7 +209,7 @@ function en(e) {
     id: O.id,
     icon: O.icon,
     size: $
-  }) : null, S = null !== (t = (0, m.x)(E, $, !0)) && void 0 !== t ? t : I, T = (0, g.ZP)(E), [N, A] = (0, l.Wu)([P.Z], () => [P.Z.supports(F.AN.VIDEO), Object.keys(P.Z.getVideoDevices()).length]), C = null != O ? "".concat(T, ", ").concat(O.name) : T, w = (0, l.e7)([D.Z], () => D.Z.isFocused()), k = (0, l.e7)([x.Z], () => x.Z.getMode(E.id)), j = i.useCallback(e => {
+  }) : null, S = null !== (t = (0, m.x)(E, $, !0)) && void 0 !== t ? t : I, T = (0, g.ZP)(E), [A, N] = (0, l.Wu)([P.Z], () => [P.Z.supports(F.AN.VIDEO), Object.keys(P.Z.getVideoDevices()).length]), C = null != O ? "".concat(T, ", ").concat(O.name) : T, w = (0, l.e7)([D.Z], () => D.Z.isFocused()), k = (0, l.e7)([x.Z], () => x.Z.getMode(E.id)), j = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), U = (0, c.q_F)({
     value: +!!v,
@@ -223,7 +223,7 @@ function en(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [E]);
-  let G = k === B.WtW.VIDEO && N && A > 0,
+  let G = k === B.WtW.VIDEO && A && N > 0,
     W = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(M.Z, {
         className: Z.icon,
@@ -280,7 +280,7 @@ function en(e) {
           }), (0, r.jsx)(et, {
             canVideo: G,
             channel: E,
-            numVideoDevices: A
+            numVideoDevices: N
           }), G && !v ? (0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.SMALL,
             fullWidth: !0,

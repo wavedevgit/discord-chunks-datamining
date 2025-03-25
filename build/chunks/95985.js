@@ -18,11 +18,9 @@ let p = e => {
     quest: n,
     progressBarRef: p,
     isExpanded: m,
-    taskDetails: f,
+    percentComplete: f,
     activeScreen: g
-  } = e, {
-    percentComplete: x
-  } = f, h = (0, s.eQ)(n), b = (0, s.vf)(n, m, g);
+  } = e, x = (0, s.eQ)(n), h = (0, s.vf)(n, m, g);
   return (0, r.jsxs)("div", {
     className: u.questProgressWrapper,
     children: [(0, r.jsx)(l.l7, {
@@ -32,7 +30,7 @@ let p = e => {
       children: e => (0, r.jsx)(c.Z, {
         ref: e,
         quest: n,
-        percentComplete: x,
+        percentComplete: f,
         size: 42,
         strokeWidth: 3,
         children: (0, r.jsx)(i.Z, {
@@ -53,7 +51,7 @@ let p = e => {
           className: u.questProgressHint,
           color: "header-primary",
           variant: "text-sm/semibold",
-          children: h
+          children: x
         })
       }), (0, r.jsx)(l.l7, {
         inState: t,
@@ -64,7 +62,7 @@ let p = e => {
           className: u.questProgressHint,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: b
+          children: h
         })
       })]
     })]

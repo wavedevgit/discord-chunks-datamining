@@ -27,9 +27,9 @@ var r = n(392711),
   I = n(569545),
   S = n(297733),
   T = n(981631),
-  N = n(65154);
+  A = n(65154);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,7 +45,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -100,7 +100,7 @@ class x {
     numViewers: i,
     goLiveModalDurationMs: o
   }) {
-    A(this, "streamRegion", void 0), A(this, "streamApplication", void 0), A(this, "streamSourceType", void 0), A(this, "actionContext", void 0), A(this, "maxViewers", void 0), A(this, "nativePickerStyleUsed", void 0), A(this, "startTime", void 0), A(this, "endTime", void 0), A(this, "goLiveModalDurationMs", void 0), A(this, "numViewers", void 0), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o, this.numViewers = i
+    N(this, "streamRegion", void 0), N(this, "streamApplication", void 0), N(this, "streamSourceType", void 0), N(this, "actionContext", void 0), N(this, "maxViewers", void 0), N(this, "nativePickerStyleUsed", void 0), N(this, "startTime", void 0), N(this, "endTime", void 0), N(this, "goLiveModalDurationMs", void 0), N(this, "numViewers", void 0), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o, this.numViewers = i
   }
 }
 class M extends s.Z {
@@ -187,7 +187,7 @@ class M extends s.Z {
             b = this.getRTCConnectionId(),
             O = this.getGoLiveSource();
           (0, v.q)().then(v => {
-            var I, S, A;
+            var I, S, N;
             let R = null;
             if (null != v) {
               let {
@@ -230,11 +230,11 @@ class M extends s.Z {
               desktop_capturer_type: u,
               media_session_id: E,
               rtc_connection_id: b,
-              context: N.Yn.STREAM,
+              context: A.Yn.STREAM,
               screens: d,
               windows: p,
               activity: h,
-              soundshare_session: null !== (A = null == O ? void 0 : null === (S = O.desktopSource) || void 0 === S ? void 0 : S.soundshareSession) && void 0 !== A ? A : void 0,
+              soundshare_session: null !== (N = null == O ? void 0 : null === (S = O.desktopSource) || void 0 === S ? void 0 : S.soundshareSession) && void 0 !== N ? N : void 0,
               share_game_name: D,
               share_game_id: L,
               share_game_exe: x,
@@ -283,7 +283,7 @@ class M extends s.Z {
     } = this.analyticsContext, {
       ownerId: i,
       guildId: o
-    } = this._streamContext, a = b.Z.getRegion(E.Z.getHostname()), {
+    } = this._streamContext, a = b.Z.getRegion(E.ZP.getHostname()), {
       gameName: s,
       gameId: l,
       exe: c,
@@ -295,7 +295,7 @@ class M extends s.Z {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       sender_user_id: i,
-      context: N.Yn.STREAM,
+      context: A.Yn.STREAM,
       guild_id: o,
       stream_region: e,
       stream_source_type: n,
@@ -388,10 +388,10 @@ class M extends s.Z {
       sessionId: e,
       guildId: u,
       channelId: d,
-      context: N.Yn.STREAM,
+      context: A.Yn.STREAM,
       rtcServerId: n,
       parentMediaSessionId: l
-    }), A(this, "analyticsContext", void 0), A(this, "_videoStreamStats", void 0), A(this, "_streamContext", void 0), A(this, "_streamKey", void 0), A(this, "_isStreamer", void 0), A(this, "_updateVideoStreamId", void 0), A(this, "_bandwidthSamples", []), A(this, "_goliveCurrentMaxResolution", void 0), this._streamContext = c, this._streamKey = t, this._isStreamer = s, this._videoStreamStats = new O.Z(r, this.isOwner), this.analyticsContext = o, this._updateVideoStreamId = i().debounce((e, t) => {
+    }), N(this, "analyticsContext", void 0), N(this, "_videoStreamStats", void 0), N(this, "_streamContext", void 0), N(this, "_streamKey", void 0), N(this, "_isStreamer", void 0), N(this, "_updateVideoStreamId", void 0), N(this, "_bandwidthSamples", []), N(this, "_goliveCurrentMaxResolution", void 0), this._streamContext = c, this._streamKey = t, this._isStreamer = s, this._videoStreamStats = new O.Z(r, this.isOwner), this.analyticsContext = o, this._updateVideoStreamId = i().debounce((e, t) => {
       let {
         guildId: n,
         channelId: r,
@@ -404,7 +404,7 @@ class M extends s.Z {
         userId: i,
         streamId: e,
         rtcServerId: t,
-        context: N.Yn.STREAM
+        context: A.Yn.STREAM
       }))
     }, 200), this._videoStreamStats.start(), this._initializeEvents()
   }

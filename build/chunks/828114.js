@@ -25,9 +25,9 @@ var r = n(147018),
   T = function() {
     return this
   };
-e.exports = function(e, t, n, a, p, m, N) {
+e.exports = function(e, t, n, a, p, m, A) {
   l(n, t, a);
-  var A, C, R, P = function(e) {
+  var N, C, R, P = function(e) {
       if (e === p && M) return M;
       if (!v && e && e in L) return L[e];
       switch (e) {
@@ -48,14 +48,14 @@ e.exports = function(e, t, n, a, p, m, N) {
     x = L[y] || L["@@iterator"] || p && L[p],
     M = !v && x || P(p),
     k = "Array" === t && L.entries || x;
-  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === b || (u ? u(A, b) : s(A[y]) || _(A, y, T)), d(A, w, !0, !0), o && (h[w] = T)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, M = function() {
+  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (o || c(N) === b || (u ? u(N, b) : s(N[y]) || _(N, y, T)), d(N, w, !0, !0), o && (h[w] = T)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, M = function() {
       return i(x, this)
     })), p) {
     if (C = {
         values: P(I),
         keys: m ? M : P(O),
         entries: P(S)
-      }, N)
+      }, A)
       for (R in C) !v && !D && R in L || _(L, R, C[R]);
     else r({
       target: t,
@@ -63,7 +63,7 @@ e.exports = function(e, t, n, a, p, m, N) {
       forced: v || D
     }, C)
   }
-  return (!o || N) && L[y] !== M && _(L, y, M, {
+  return (!o || A) && L[y] !== M && _(L, y, M, {
     name: p
   }), h[t] = M, C
 }

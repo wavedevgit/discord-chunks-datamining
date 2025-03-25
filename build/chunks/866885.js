@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(594174),
   S = n(566620),
   T = n(317381),
-  N = n(531826),
-  A = n(175894),
+  A = n(531826),
+  N = n(175894),
   C = n(246106),
   R = n(963614),
   P = n(917107),
@@ -86,7 +86,7 @@ function H(e) {
   let {
     channel: _,
     isLoading: p
-  } = e, [A, C] = i.useState(!1), B = (0, s.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivityForChannel(_.id)), F = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), V = (0, h.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([O.Z], () => O.Z.getChannelId() === _.id), {
+  } = e, [N, C] = i.useState(!1), B = (0, s.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivityForChannel(_.id)), F = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), V = (0, h.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([O.Z], () => O.Z.getChannelId() === _.id), {
     dockedRect: W,
     isHidden: Y
   } = (0, s.cj)([y.Z], () => {
@@ -95,7 +95,7 @@ function H(e) {
       dockedRect: null != e ? y.Z.getDockedRect(e.id) : null,
       isHidden: y.Z.isEmbeddedActivityHidden()
     }
-  }), K = (0, N.sU)({
+  }), K = (0, A.sU)({
     channelId: _.id
   }), {
     activityParticipant: z,
@@ -121,7 +121,7 @@ function H(e) {
   }
 
   function eo() {
-    C(!A)
+    C(!N)
   }
 
   function ea(e, t, n, i, o) {
@@ -135,7 +135,7 @@ function H(e) {
       onMouseMove: e,
       onMouseLeave: t,
       onToggleHeight: eo,
-      isExpanded: A,
+      isExpanded: N,
       hideExpandedButton: i,
       embeddedActivity: B
     }) : i ? (0, r.jsx)(D.q5, {
@@ -203,8 +203,8 @@ function H(e) {
           [j.pipMode]: en,
           [G.elevationHigh]: en,
           [U.idle]: i && !(null === (t = B.config) || void 0 === t ? void 0 : t.useInteractivePIP),
-          [j.pipModeShort]: en && !A,
-          [j.pipModeTall]: en && A,
+          [j.pipModeShort]: en && !N,
+          [j.pipModeTall]: en && N,
           [j.hidden]: Y,
           [j.multiPIPMode]: er
         }),
@@ -214,8 +214,8 @@ function H(e) {
           children: ea(o, s, i, ee, es)
         }), p ? (0, r.jsx)(l.$jN, {
           className: a()(j.iframe, {
-            [j.pipModeShort]: en && !A,
-            [j.pipModeTall]: en && A
+            [j.pipModeShort]: en && !N,
+            [j.pipModeTall]: en && N
           })
         }) : (0, r.jsx)(w.J, {
           allowPopups: (0, R.h)(V),
@@ -223,8 +223,8 @@ function H(e) {
           url: B.url,
           queryParams: el,
           className: a()(j.iframe, {
-            [j.pipModeShort]: en && !A,
-            [j.pipModeTall]: en && A,
+            [j.pipModeShort]: en && !N,
+            [j.pipModeTall]: en && N,
             [j.pipNonInteractive]: en && !(null === (n = B.config) || void 0 === n ? void 0 : n.useInteractivePIP)
           }),
           shouldRefocus: !en && H
@@ -245,7 +245,7 @@ let W = e => {
     userActivity: i,
     inActivity: o
   } = (0, C.Z)(t.id);
-  (0, A.Z)({
+  (0, N.Z)({
     userActivity: i
   });
   let {

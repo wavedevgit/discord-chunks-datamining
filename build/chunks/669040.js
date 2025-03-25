@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(536442),
   S = n(140465),
   T = n(775412),
-  N = n(104494),
-  A = n(639119),
+  A = n(104494),
+  N = n(639119),
   C = n(53691),
   R = n(75145),
   P = n(631771),
@@ -74,8 +74,8 @@ let z = 0,
       setCollapsedSections: g,
       getEmojiItemProps: y,
       getEmojiRowProps: T,
-      isScrolling: N,
-      isUsingKeyboardNavigation: A,
+      isScrolling: A,
+      isUsingKeyboardNavigation: N,
       allowAnimatedEmoji: C,
       channelGuildId: P,
       channelId: w,
@@ -132,8 +132,8 @@ let z = 0,
         onSelectSoundmoji: f,
         getEmojiItemProps: y,
         getEmojiRowProps: T,
-        isScrolling: N,
-        isUsingKeyboardNavigation: A,
+        isScrolling: A,
+        isUsingKeyboardNavigation: N,
         rowIndex: e,
         allowAnimatedEmoji: C,
         showEmojiFavoriteTooltip: ef,
@@ -146,7 +146,7 @@ let z = 0,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: a
       }, e)
-    }), [o, m, s, es, ed, c, f, y, T, N, A, C, ef, P, w, D, x, z]);
+    }), [o, m, s, es, ed, c, f, y, T, A, N, C, ef, P, w, D, x, z]);
     i.useEffect(() => () => {
       var e, t;
       return null === (t = e_.cache) || void 0 === t ? void 0 : null === (e = t.clear) || void 0 === e ? void 0 : e.call(t)
@@ -196,9 +196,7 @@ let z = 0,
           children: u
         }, l)
       }), [m, t, eu, M, k]),
-      eh = (0, S.B4)({
-        location: "EmojiPickerList-useListRenderers"
-      }),
+      eh = (0, S.B4)(),
       em = i.useCallback((e, n) => {
         let i = m[e],
           o = ec(e),
@@ -260,7 +258,7 @@ let z = 0,
       location: ee
     } = (0, h.O)(), {
       analyticsLocations: et
-    } = (0, m.ZP)(), [en, er] = i.useState(0), [ei, eo] = i.useState(!1), [el, ec] = i.useState(0), eu = (0, A.N)(), ed = (0, N.Ng)(), ef = ei && !$ && !c.tq, e_ = null != eu || null != ed, {
+    } = (0, m.ZP)(), [en, er] = i.useState(0), [ei, eo] = i.useState(!1), [el, ec] = i.useState(0), eu = (0, N.N)(), ed = (0, A.Ng)(), ef = ei && !$ && !c.tq, e_ = null != eu || null != ed, {
       enabled: ep
     } = P.G.useExperiment({
       location: "Premium Emoji Roadblock"
@@ -307,7 +305,7 @@ let z = 0,
       nitroLockedSectionStates: f,
       setShowUpsell: eo,
       setUpsellGlowOpacity: ec
-    }), eN = (0, y.Qs)({
+    }), eA = (0, y.Qs)({
       activeCategoryIndex: q,
       isScrolling: H,
       listRef: o,
@@ -321,9 +319,9 @@ let z = 0,
       activeCategoryIndex: q,
       listRef: o
     });
-    let eA = i.useCallback(e => {
-        eT(e), eN(e)
-      }, [eT, eN]),
+    let eN = i.useCallback(e => {
+        eT(e), eA(e)
+      }, [eT, eA]),
       eC = f.length > 0;
 
     function eR() {
@@ -364,7 +362,7 @@ let z = 0,
         role: "none presentation",
         className: K.list,
         listPadding: em,
-        onScroll: eA,
+        onScroll: eN,
         renderRow: eg,
         renderSection: eE,
         renderSectionHeader: eb,

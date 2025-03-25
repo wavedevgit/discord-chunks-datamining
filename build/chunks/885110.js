@@ -33,8 +33,8 @@ function O(e, t, n) {
 let I = !1,
   S = y.Skl.ONLINE,
   T = y.Skl.UNKNOWN,
-  N = 0,
-  A = [],
+  A = 0,
+  N = [],
   C = !1,
   R = !0,
   P = Object.freeze([]),
@@ -71,20 +71,20 @@ function k() {
 
 function j() {
   var e;
-  if (N = null !== (e = m.Z.getIdleSince()) && void 0 !== e ? e : 0, C = m.Z.isAFK(), R) S = T;
+  if (A = null !== (e = m.Z.getIdleSince()) && void 0 !== e ? e : 0, C = m.Z.isAFK(), R) S = T;
   else if (I) S = y.Skl.INVISIBLE;
   else {
     let e = f.co.getSetting();
     S = e !== y.Skl.UNKNOWN ? e : y.Skl.ONLINE
   }
-  S === y.Skl.ONLINE && N > 0 && (S = y.Skl.IDLE);
+  S === y.Skl.ONLINE && A > 0 && (S = y.Skl.IDLE);
   let t = !1,
     n = R || S === y.Skl.INVISIBLE ? [] : E.Z.getActivities().filter(M);
-  o()(A, n) || (A = n, t = !0);
+  o()(N, n) || (N = n, t = !0);
   let r = v.Z.getRemoteActivities();
   P !== r && (P = r, t = !0);
   let i = v.Z.getHiddenActivities();
-  w !== i && (w = i), t && (D = s()([...A, ...P.filter(e => e.type !== y.IIU.CUSTOM_STATUS)].sort(b.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value())
+  w !== i && (w = i), t && (D = s()([...N, ...P.filter(e => e.type !== y.IIU.CUSTOM_STATUS)].sort(b.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value())
 }
 
 function U(e) {
@@ -109,8 +109,8 @@ class V extends(r = l.ZP.Store) {
   getLocalPresence() {
     return {
       status: S,
-      since: N,
-      activities: A,
+      since: A,
+      activities: N,
       afk: C
     }
   }
@@ -119,14 +119,14 @@ class V extends(r = l.ZP.Store) {
   }
   getActivities() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return e ? D : A
+    return e ? D : N
   }
   getHiddenActivities() {
     return w
   }
   getPrimaryActivity() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return e ? D[0] : A[0]
+    return e ? D[0] : N[0]
   }
   getApplicationActivity(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];

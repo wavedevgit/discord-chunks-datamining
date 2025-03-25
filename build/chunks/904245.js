@@ -26,8 +26,8 @@ var r = n(278074),
   I = n(539573),
   S = n(926526),
   T = n(826581),
-  N = n(409059),
-  A = n(264229),
+  A = n(409059),
+  N = n(264229),
   C = n(413605),
   R = n(366980),
   P = n(779832),
@@ -118,8 +118,8 @@ function eI(e, t) {
 }
 let eS = new E.Z("MessageActionCreators"),
   eT = new E.Z("MessageQueue"),
-  eN = !1;
-class eA {
+  eA = !1;
+class eN {
   markComplete() {
     this.completed = !0
   }
@@ -151,7 +151,7 @@ function eC(e) {
       overrideProperties: a
     });
     else if (t === m.g.TEMPLATE) {
-      let e = N.Z.getGuildTemplate(l);
+      let e = A.Z.getGuildTemplate(l);
       if (null == e || e.state === eE.Rj.RESOLVING) return;
       c.ZP.trackWithMetadata(eg.rMx.GUILD_TEMPLATE_LINK_SENT, {
         guild_template_code: l,
@@ -194,7 +194,7 @@ function eR(e) {
     location: a,
     suggested: s = null,
     overrideProperties: l = {}
-  } = e, u = et.default.getId(), d = er.Z.getInvite(r), f = (0, A.fU)(r), _ = null != d && (0, C.P1)(d), h = null == d ? void 0 : null === (t = d.target_application) || void 0 === t ? void 0 : t.id;
+  } = e, u = et.default.getId(), d = er.Z.getInvite(r), f = (0, N.fU)(r), _ = null != d && (0, C.P1)(d), h = null == d ? void 0 : null === (t = d.target_application) || void 0 === t ? void 0 : t.id;
   null != h && _ && (0, p.z$)(h, p.Un.ACTIVITY_INVITE, u);
   let m = en.Z.getChannel(i);
   if (null != m) {
@@ -528,7 +528,7 @@ let eD = {
         type: "LOAD_MESSAGES"
       });
       let y = null == E ? void 0 : E.messageId,
-        O = new eA;
+        O = new eN;
       return d || this.fetchLocalMessages(t, n, r, o, O), i.tn.get({
         url: eg.ANM.MESSAGES(t),
         query: {
@@ -862,8 +862,8 @@ let eD = {
           contentInventoryEntry: y
         } = n,
         O = null !== (i = n.flags) && void 0 !== i ? i : 0,
-        [N, A] = (0, X.Z)(c);
-      N && (c = A, O = (0, ed.pj)(O, eg.iLy.SUPPRESS_NOTIFICATIONS));
+        [A, N] = (0, X.Z)(c);
+      A && (c = N, O = (0, ed.pj)(O, eg.iLy.SUPPRESS_NOTIFICATIONS));
       let C = (null === (r = n.messageReference) || void 0 === r ? void 0 : r.type) === eg.Uvt.FORWARD;
       if ("" === c && null == _ && null == m && null == v && null == y && !C) return Promise.resolve();
       let R = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
@@ -883,8 +883,8 @@ let eD = {
         });
         (0, U.EL)(e, t.id), null != m && (t.sticker_items = m.map(e => Q.Z.getStickerById(e)).filter(e => null != e)), eL.receiveMessage(e, t, !0, n)
       }
-      if (!eN && null != u && u.length > 0) {
-        eN = !0;
+      if (!eA && null != u && u.length > 0) {
+        eA = !0;
         let t = ec.default.getCurrentUser(),
           {
             errorMessage: n,

@@ -19,7 +19,7 @@ var n = r(200651),
   m = r(981631),
   j = r(388032);
 let g = (0, i.Kb)([d.Z, u.Z, p.Z], {
-  queryId: e => null != e ? ["premium-button", e] : null,
+  queryId: e => m.McO.APP_PREMIUM_BUTTON(e),
   get: e => {
     var t;
     if (null == e) return;

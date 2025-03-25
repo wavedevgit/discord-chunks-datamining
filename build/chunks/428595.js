@@ -26,8 +26,8 @@ var r = n(392711),
   I = n(97734),
   S = n(303694),
   T = n(660199),
-  N = n(364458),
-  A = n(981631),
+  A = n(364458),
+  N = n(981631),
   C = n(689079),
   R = n(377668),
   P = n(388032);
@@ -254,7 +254,7 @@ let F = e => {
         }
         null == o && "@Clyde" === e[0] && (0, s.gJ)(V(n), a) && (i = R.fL);
         let c = e[1],
-          d = null != c && A.Xyh.test(c.trim()),
+          d = null != c && N.Xyh.test(c.trim()),
           h = d && n.unknownUserMentionPlaceholder ? "@".concat(P.NW.string(P.t.sKdZ6e)) : e[0];
         return {
           userId: i,
@@ -359,7 +359,7 @@ let F = e => {
     spoiler: {
       order: O.ZP.order,
       requiredFirstCharacters: ["|"],
-      match: e => A.$92.exec(e),
+      match: e => N.$92.exec(e),
       parse: (e, t, n) => ({
         content: t(e[1], n),
         channelId: n.channelId
@@ -368,7 +368,7 @@ let F = e => {
     staticRouteLink: {
       order: O.ZP.order,
       requiredFirstCharacters: ["<"],
-      match: e => A.PEY.exec(e),
+      match: e => N.PEY.exec(e),
       parse(e, t, n) {
         var r;
         let [, i, o] = e, a = (0, S.l)(i), s = (0, S.W)(i, o, null === (r = V(n)) || void 0 === r ? void 0 : r.id);
@@ -394,11 +394,11 @@ let F = e => {
     list: b.Z,
     subtext: y.Z
   },
-  H = (0, N.Z)([Z, I.Z]),
+  H = (0, A.Z)([Z, I.Z]),
   W = i().omit(H, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
   Y = i().omit(H, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard"]),
   K = i().omit(H, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard"]),
-  z = i().omit((0, N.Z)([H, {
+  z = i().omit((0, A.Z)([H, {
     inlineCode: {
       match(e, t, n) {
         let r = H.codeBlock.match(e, t, n);
@@ -417,7 +417,7 @@ function $(e, t) {
   return 0 === e.length || 0 === t || "" === e.charAt(t - 1).trim()
 }
 let ee = 10,
-  et = (0, N.Z)([{
+  et = (0, A.Z)([{
     highlightWord: {
       order: -1,
       match(e, t) {

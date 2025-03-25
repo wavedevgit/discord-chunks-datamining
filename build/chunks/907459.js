@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(981631),
   S = n(921944),
   T = n(474936),
-  N = n(388032),
-  A = n(641126);
+  A = n(388032),
+  N = n(641126);
 let C = () => {
     var e, t, n;
     let i = (0, s.e7)([g.default], () => b.ZP.isPremium(g.default.getCurrentUser())),
@@ -35,10 +35,10 @@ let C = () => {
       a = (null == o ? void 0 : null === (e = o.subscription_trial) || void 0 === e ? void 0 : e.sku_id) === T.Si.TIER_2;
     return (0, r.jsx)(h.Z, {
       size: l.zxk.Sizes.MEDIUM,
-      buttonText: i ? N.NW.string(N.t.IJI7ys) : a ? (0, b.Rt)({
+      buttonText: i ? A.NW.string(A.t.IJI7ys) : a ? (0, b.Rt)({
         intervalType: null == o ? void 0 : null === (t = o.subscription_trial) || void 0 === t ? void 0 : t.interval,
         intervalCount: null == o ? void 0 : null === (n = o.subscription_trial) || void 0 === n ? void 0 : n.interval_count
-      }) : N.NW.string(N.t.mr4K7O),
+      }) : A.NW.string(A.t.mr4K7O),
       subscriptionTier: T.Si.TIER_2
     })
   },
@@ -49,22 +49,22 @@ let C = () => {
       null == t || t(S.L.DISMISS), (0, v.G8)()
     };
     return (0, r.jsxs)("div", {
-      className: A.editorHeader,
+      className: N.editorHeader,
       children: [(0, r.jsx)(l.P3F, {
-        className: A.closeCircleButton,
+        className: N.closeCircleButton,
         onClick: () => n(),
         children: (0, r.jsx)(l.k$p, {
           size: "md",
           color: "currentColor",
-          className: A.closeCircle
+          className: N.closeCircle
         })
       }), (0, r.jsxs)("div", {
-        className: A.title,
+        className: N.title,
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-lg/extrabold",
-          children: N.NW.string(N.t["hb/wEx"])
+          children: A.NW.string(A.t["hb/wEx"])
         }), (0, r.jsx)(m.Z, {
-          className: A.premiumIcon
+          className: N.premiumIcon
         })]
       })]
     })
@@ -77,13 +77,13 @@ let C = () => {
       null == n || n(S.L.DISMISS), (0, v.G8)(), t || c.Z.open()
     };
     return (0, r.jsxs)("div", {
-      className: A.editorFooter,
+      className: N.editorFooter,
       children: [i && (0, r.jsx)(C, {}), (0, r.jsx)(l.zxk, {
-        className: A.footerButton,
+        className: N.footerButton,
         onClick: o,
         color: l.zxk.Colors.PRIMARY,
         size: l.zxk.Sizes.MEDIUM,
-        children: i || t ? N.NW.string(N.t["dqH+qq"]) : N.NW.string(N.t.Olc2Ky)
+        children: i || t ? A.NW.string(A.t["dqH+qq"]) : A.NW.string(A.t.Olc2Ky)
       })]
     })
   };
@@ -116,15 +116,15 @@ function w(e) {
     value: o,
     children: (0, r.jsx)("div", {
       ref: b,
-      className: a()(A.editor, m ? A.editorAnimate : null),
+      className: a()(N.editor, m ? N.editorAnimate : null),
       "data-app-right-panel": !0,
       children: (0, r.jsxs)(l.y5t, {
         children: [(0, r.jsx)(R, {
           markAsDismissed: n
         }), (0, r.jsx)(l.Ttm, {
-          className: A.editorBody,
+          className: N.editorBody,
           children: (0, r.jsx)(O.Z, {
-            className: A.selectionGroup,
+            className: N.selectionGroup,
             isEditor: !0
           })
         }), (0, r.jsx)(P, {

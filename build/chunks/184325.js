@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(485341),
   S = n(687158),
   T = n(228168),
-  N = n(981631),
-  A = n(215023),
+  A = n(981631),
+  N = n(215023),
   C = n(474936),
   R = n(681642),
   P = n(388032),
@@ -103,19 +103,19 @@ function j(e) {
             }, G)), t) {
             (0, u.mK)({
               openInLayer: !1,
-              tab: A.AW.ORBS,
+              tab: N.AW.ORBS,
               analyticsLocations: U,
               analyticsSource: l.Z.VIRTUAL_CURRENCY_ORB_PROFILE_BADGE
             });
             return
           }
           if (i) {
-            if (n.preventDefault(), E.default.track(N.rMx.TIERED_TENURE_BADGE_CLICKED, {
+            if (n.preventDefault(), E.default.track(A.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
                 premium_type: V,
                 viewed_user_id: null == D ? void 0 : D.userId
               }), V) {
-              (null == D ? void 0 : D.userId) === (null == F ? void 0 : F.id) ? (0, h.uL)(N.Z5c.NITRO_HOME) : (0, f.k)({
+              (null == D ? void 0 : D.userId) === (null == F ? void 0 : F.id) ? (0, h.uL)(A.Z5c.NITRO_HOME) : (0, f.k)({
                 analyticsLocations: U,
                 displayProfile: D
               }), null == L || L();
@@ -139,7 +139,7 @@ function j(e) {
           if (null != r) return null == L || L(), r(n)
         },
         g = () => {
-          e.id === I.i && E.default.track(N.rMx.QUEST_CONTENT_VIEWED, x({}, (0, _.mH)(p.jn.QUEST_BADGE))), B({
+          e.id === I.i && E.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, _.mH)(p.jn.QUEST_BADGE))), B({
             action: "HOVER_BADGE"
           }), (0, O.Qf)(x({
             badge: e.id,

@@ -32,8 +32,8 @@ var r, i = n(200651),
   j = n(100527),
   w = n(906732),
   Z = n(890280),
-  C = n(835473),
-  P = n(522474),
+  P = n(835473),
+  C = n(522474),
   N = n(314897),
   I = n(819640),
   _ = n(594174),
@@ -104,11 +104,11 @@ function V(e) {
     return null !== (e = f.ZP.getEmbeddedActivitiesForChannel(h.id).find(e => e.applicationId === o.id)) && void 0 !== e ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(h.id).find(e => e.applicationId === o.id)
   }), {
     analyticsLocations: S
-  } = (0, w.ZP)(), x = (0, d.O)(), j = T.ZP.getName(h.getGuildId(), h.id, null == E ? void 0 : E[0]), C = (0, v.s5)({
+  } = (0, w.ZP)(), x = (0, d.O)(), j = T.ZP.getName(h.getGuildId(), h.id, null == E ? void 0 : E[0]), P = (0, v.s5)({
     userId: null === (t = _.default.getCurrentUser()) || void 0 === t ? void 0 : t.id,
     channelId: h.id,
     application: o
-  }) === v.Fw.CAN_JOIN, P = null !== (n = h.getGuildId()) && void 0 !== n ? n : void 0, I = l.useId(), k = o.id, M = l.useMemo(() => ({
+  }) === v.Fw.CAN_JOIN, C = null !== (n = h.getGuildId()) && void 0 !== n ? n : void 0, I = l.useId(), k = o.id, M = l.useMemo(() => ({
     channel: h,
     type: "channel"
   }), [h]), {
@@ -122,7 +122,7 @@ function V(e) {
     className: D.splash,
     children: [(0, i.jsx)(z, {
       avatarSize: y,
-      guildId: P,
+      guildId: C,
       channelId: h.id,
       users: E
     }), (0, i.jsx)(u.Text, {
@@ -146,7 +146,7 @@ function V(e) {
       children: o.name
     }), (0, i.jsx)("div", {
       className: D.buttons,
-      children: C ? (0, i.jsx)(u.zxk, {
+      children: P ? (0, i.jsx)(u.zxk, {
         onClick: function(e) {
           e.stopPropagation(), null != O && (0, m.Z)({
             applicationId: O.applicationId,
@@ -180,15 +180,15 @@ function Y(e) {
     analyticsLocations: s
   } = (0, w.ZP)(j.Z.ACTIVITY_TILE), {
     applicationId: u
-  } = t, d = (0, b.Z)(), f = null != d && (0, h.pY)(d.location) === a.id && d.applicationId === u, [m] = (0, C.Z)([u]), {
+  } = t, d = (0, b.Z)(), f = null != d && (0, h.pY)(d.location) === a.id && d.applicationId === u, [m] = (0, P.Z)([u]), {
     url: p
   } = (0, g.Z)({
     applicationId: u,
     names: L,
     size: M
-  }), v = !r && f, O = !f, Z = !f && !r, N = (0, c.e7)([I.Z, P.Z], () => (0, x.Z)({
+  }), v = !r && f, O = !f, Z = !f && !r, N = (0, c.e7)([I.Z, C.Z], () => (0, x.Z)({
     LayerStore: I.Z,
-    PopoutWindowStore: P.Z
+    PopoutWindowStore: C.Z
   }));
   return l.useEffect(() => {
     if (v && null != d && !N) {

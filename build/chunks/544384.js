@@ -48,15 +48,15 @@ function E(e) {
     disableChangeWindows: y = !1,
     onInteraction: O
   } = e, I = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, S = g(n, i, s), T = (0, l.Z)(I, v), {
-    simplifiedSettingsEnabled: N
+    simplifiedSettingsEnabled: A
   } = (0, p.Z)({
     location: "ManageStreamsMenu"
-  }), A = (0, c.b)({
+  }), N = (0, c.b)({
     disableChangeWindows: y,
     stream: I,
     showReportOption: f,
     handleGoLive: _,
-    simplified: N,
+    simplified: A,
     appContext: v
   });
   return (0, r.jsx)(a.Z, {
@@ -82,7 +82,7 @@ function E(e) {
             action: () => (0, u.Z)(t)
           }, "manage-stream-menu".concat(t.ownerId))
         })
-      }), d ? null : A, N && !d ? (0, r.jsx)(o.kSQ, {
+      }), d ? null : N, A && !d ? (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
           label: m.NW.string(m.t.PdRCRk),

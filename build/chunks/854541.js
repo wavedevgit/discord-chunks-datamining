@@ -66,7 +66,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,14 +74,14 @@ function T(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = i.lazy(() => Promise.all([n.e("26436"), n.e("28102")]).then(n.bind(n, 534828))),
+let N = i.lazy(() => Promise.all([n.e("26436"), n.e("28102")]).then(n.bind(n, 534828))),
   C = 7,
   R = () => Promise.resolve();
 
@@ -186,7 +186,7 @@ function x(e) {
     showEyeDropper: E,
     wrapperComponentType: y,
     className: I
-  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
+  } = e, T = (0, h.Z)(), A = P(t), R = null != A ? A : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
     current: R,
     pending: {
       hex: w,
@@ -195,18 +195,18 @@ function x(e) {
     input: w
   });
   i.useEffect(() => {
-    if (null == N || N === L.current) return;
-    let e = (0, c.Rf)(N),
-      t = (0, c.O)(N);
+    if (null == A || A === L.current) return;
+    let e = (0, c.Rf)(A),
+      t = (0, c.O)(A);
     x({
-      current: N,
+      current: A,
       pending: {
         hex: e,
         hsl: t
       },
       input: e
     })
-  }, [N, L]), i.useEffect(() => s, [s]);
+  }, [A, L]), i.useEffect(() => s, [s]);
   let M = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) {
@@ -243,7 +243,7 @@ function x(e) {
     }, G = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
-        children: (0, r.jsx)(A, {
+        children: (0, r.jsx)(N, {
           onChange: j,
           onChangeComplete: e => {
             let {

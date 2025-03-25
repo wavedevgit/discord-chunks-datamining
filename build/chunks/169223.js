@@ -142,8 +142,8 @@ class S extends g.Z {
         location: i,
         showFeedback: l
       } = e, c = s.Z.getApplication(t), u = (0, a.pY)(i), f = _.Z.getChannel(u), p = {
-        rtc_connection_id: h.Z.getRTCConnectionId(),
-        media_session_id: h.Z.getMediaSessionId()
+        rtc_connection_id: h.ZP.getRTCConnectionId(),
+        media_session_id: h.ZP.getMediaSessionId()
       }, m = d.Z.getWindowOpen(b.KJ3.CHANNEL_CALL_POPOUT) ? o.u1M : o.z1l;
       null != c && l && this.possiblyShowFeedbackModal(E.nw.ACTIVITY, () => {
         (0, o.ZDy)(async () => {

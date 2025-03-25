@@ -119,7 +119,7 @@ function F(e) {
         impressionProperties: {
           location_stack: X,
           application_id: (0, y.isWindows)() ? null === (t = (0, O.Z)(v.ZP, N.Z)) || void 0 === t ? void 0 : t.id : void 0,
-          parent_media_session_id: S.Z.getMediaSessionId()
+          parent_media_session_id: S.ZP.getMediaSessionId()
         }
       },
       className: s()(z.root, {

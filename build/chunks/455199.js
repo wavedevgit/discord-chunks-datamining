@@ -45,13 +45,13 @@ function T(e) {
   }
   return e
 }
-let N = "recentMentionFilterSettings",
-  A = [],
+let A = "recentMentionFilterSettings",
+  N = [],
   C = {},
   R = {},
   P = !1,
   w = !0,
-  D = s.K.get(N, {
+  D = s.K.get(A, {
     guildFilter: I.NgX.ALL_SERVERS,
     everyoneFilter: !0,
     roleFilter: !0
@@ -101,7 +101,7 @@ function B(e) {
   } = e, i = o().map(n, G);
   j({
     addedMessages: i
-  }), r ? A = A.concat(i) : (A = i, R = {}), o().forEach(i, e => {
+  }), r ? N = N.concat(i) : (N = i, R = {}), o().forEach(i, e => {
     R[e.id] = !0
   }), P = !1, w = t, x = (0, l.zO)(), L = !0
 }
@@ -147,7 +147,7 @@ function Z(e) {
     })) return !1;
   let i = V(n, t);
   if (null == i) return !1;
-  (A = A.slice()).unshift(i), R[i.id] = !0, j({
+  (N = N.slice()).unshift(i), R[i.id] = !0, j({
     addedMessages: [i]
   })
 }
@@ -155,26 +155,26 @@ function Z(e) {
 function H(e) {
   let t = e.message.id;
   if (null == R[String(t)]) return !1;
-  let n = o().findIndex(A, e => {
+  let n = o().findIndex(N, e => {
       let {
         id: n
       } = e;
       return n === t
     }),
-    r = (A = A.slice())[n];
-  null != r && (A[n] = (0, u.wi)(r, e.message))
+    r = (N = N.slice())[n];
+  null != r && (N[n] = (0, u.wi)(r, e.message))
 }
 
 function W(e) {
   if (null == R[e]) return !1;
   delete R[e], j({
-    deletedMessages: o().filter(A, t => {
+    deletedMessages: o().filter(N, t => {
       let {
         id: n
       } = t;
       return n === e
     })
-  }), A = o().filter(A, t => {
+  }), N = o().filter(N, t => {
     let {
       id: n
     } = t;
@@ -198,15 +198,15 @@ function K(e) {
 
 function z(e) {
   let t = T({}, D);
-  D = o().defaults(o().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), D), s.K.set(N, D);
+  D = o().defaults(o().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), D), s.K.set(A, D);
   let n = (e, n) => t[e] !== D[e] && D[e] === n,
     r = n("guildFilter", I.NgX.THIS_SERVER) || n("everyoneFilter", !1) || n("roleFilter", !1);
   R = {};
   let i = [];
-  r && A.forEach(e => {
+  r && N.forEach(e => {
     let t = V(e);
     null != t && (i.push(t), R[t.id] = !0)
-  }), k(A = i), 0 === A.length && (L = !1)
+  }), k(N = i), 0 === N.length && (L = !1)
 }
 
 function q() {
@@ -215,14 +215,14 @@ function q() {
 }
 
 function Q() {
-  A = [], R = {}, L = !1, M = !1, C = {}
+  N = [], R = {}, L = !1, M = !1, C = {}
 }
 
 function X(e) {
   let {
     guild: t
   } = e, n = [];
-  A = o().filter(A, e => {
+  N = o().filter(N, e => {
     let r = m.Z.getChannel(e.channel_id);
     return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), !1)
   }), j({
@@ -232,15 +232,15 @@ function X(e) {
 
 function J() {
   j({
-    deletedMessages: o().filter(A, e => b.Z.isBlockedOrIgnoredForMessage(e))
-  }), A = A.filter(e => !b.Z.isBlockedOrIgnoredForMessage(e))
+    deletedMessages: o().filter(N, e => b.Z.isBlockedOrIgnoredForMessage(e))
+  }), N = N.filter(e => !b.Z.isBlockedOrIgnoredForMessage(e))
 }
 
 function $(e) {
   let {
     channel: t
   } = e, n = [];
-  A = o().filter(A, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), !1)), j({
+  N = o().filter(N, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), !1)), j({
     deletedMessages: n
   })
 }
@@ -254,10 +254,10 @@ function et(e) {
     size: t
   } = e;
   j({
-    deletedMessages: A.slice(t)
+    deletedMessages: N.slice(t)
   });
-  for (let e = t; e < A.length; ++e) delete R[A[e].id];
-  A.length > (A = A.slice(0, t)).length && (w = !0)
+  for (let e = t; e < N.length; ++e) delete R[N[e].id];
+  N.length > (N = N.slice(0, t)).length && (w = !0)
 }
 
 function en(e) {
@@ -274,7 +274,7 @@ class er extends(r = a.ZP.Store) {
     return x
   }
   getMentions() {
-    return L || A.length > 0 ? A : null
+    return L || N.length > 0 ? N : null
   }
   hasMention(e) {
     return R[e]

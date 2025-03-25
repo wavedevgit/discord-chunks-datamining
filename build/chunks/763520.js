@@ -40,7 +40,7 @@ class m {
       return
     }
     this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
-    let f = c.Z.getGuildId(),
+    let f = c.ZP.getGuildId(),
       h = u.Z.getUserVoiceChannelId(f, l.default.getId()),
       m = function(e) {
         if (null != e) {
@@ -54,8 +54,8 @@ class m {
     d.default.track(p.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
       duration_video_spinner_visible_ms: i,
-      rtc_connection_id: c.Z.getRTCConnectionId(),
-      media_session_id: c.Z.getMediaSessionId(),
+      rtc_connection_id: c.ZP.getRTCConnectionId(),
+      media_session_id: c.ZP.getMediaSessionId(),
       event_count_for_stream: r,
       guild_id: f,
       channel_id: h,

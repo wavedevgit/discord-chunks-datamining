@@ -30,8 +30,8 @@ var r = n(200651),
   I = n(565138),
   S = n(372769),
   T = n(889564),
-  N = n(687476),
-  A = n(761966),
+  A = n(687476),
+  N = n(761966),
   C = n(563927),
   R = n(98278),
   P = n(197115),
@@ -290,7 +290,7 @@ let Q = 32,
       } : {
         isRoleSubscriptionEmoji: T.yH(D),
         isUnusableRoleSubscriptionEmoji: T.Fv(D, null != K ? K : void 0),
-        userIsRoleSubscriber: N.Z.getUserSubscriptionRoles(D.guildId).size > 0
+        userIsRoleSubscriber: A.Z.getUserSubscriptionRoles(D.guildId).size > 0
       }, [D, K]),
       eo = !!en && (0, b.Ol)(null == D ? void 0 : D.guildId),
       {
@@ -390,7 +390,7 @@ let Q = 32,
                 children: eu
               })]
             })]
-          }), i(), ec && (0, r.jsx)(A.Z, {
+          }), i(), ec && (0, r.jsx)(N.Z, {
             className: W.ctaButton,
             size: u.zxk.Sizes.SMALL,
             fullWidth: !0,

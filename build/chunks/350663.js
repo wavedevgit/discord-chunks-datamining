@@ -93,8 +93,8 @@ let y = 8,
       widgetId: t,
       height: N,
       pinned: S
-    })), Z = (0, c.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? C.map((e, t) => v(O({}, e), {
-      y: (P += e.height + (t > 0 ? y : 0)) - e.height,
+    })), Z = (0, c.Z)(n), P = l === f.C5.VERTICAL, w = 0, _ = 0, T = (0, s.Yzy)(P ? C.map((e, t) => v(O({}, e), {
+      y: (w += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
     })) : C.map((e, t) => v(O({}, e), {
       x: (_ += e.width + (t > 0 ? y : 0)) - e.width,
@@ -151,11 +151,11 @@ let y = 8,
     }, [D, A]), (0, i.jsx)("div", {
       className: o()({
         [g.gridContainer]: !0,
-        [g.vertical]: w,
-        [g.horizontal]: !w
+        [g.vertical]: P,
+        [g.horizontal]: !P
       }),
-      style: w ? {
-        height: P
+      style: P ? {
+        height: w
       } : {
         width: _
       },

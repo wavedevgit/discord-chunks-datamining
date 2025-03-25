@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(451834),
   S = n(502762),
   T = n(544989),
-  N = n(481932),
-  A = n(195387),
+  A = n(481932),
+  N = n(195387),
   C = n(272510),
   R = n(4517),
   P = n(171368),
@@ -157,14 +157,14 @@ function F(e) {
               className: k.backdrop
             }), (0, r.jsxs)(T.Z, {
               profileType: L.y0.BITE_SIZE,
-              children: [(0, r.jsx)(A.Z, {
+              children: [(0, r.jsx)(N.Z, {
                 shouldShowTooltip: null === en.interactionType,
                 user: t,
                 guildId: j,
                 channelId: G,
                 onClose: Z,
                 appContext: K
-              }), (0, r.jsx)(N.Z, {
+              }), (0, r.jsx)(A.Z, {
                 shouldShowTooltip: null === en.interactionType,
                 profileType: L.y0.BITE_SIZE,
                 user: t

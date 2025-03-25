@@ -32,17 +32,17 @@ function D(e) {
     channel: t,
     transitionState: n,
     onClose: a
-  } = e, D = (0, l.e7)([c.Z], () => c.Z.getChannelStatus(t)), f = (0, l.e7)([m.Z], () => m.Z.getMediaSessionId()), [A, G] = r.useState(null != D ? D : ""), [W, h] = r.useState(!1), [v, z] = r.useState(null), b = (0, l.e7)([L.default], () => L.default.getCurrentUser()), Z = A.length > 500, H = (0, I.Q3)("VoiceChannelStatusModal");
+  } = e, D = (0, l.e7)([c.Z], () => c.Z.getChannelStatus(t)), f = (0, l.e7)([m.ZP], () => m.ZP.getMediaSessionId()), [A, G] = r.useState(null != D ? D : ""), [W, h] = r.useState(!1), [v, z] = r.useState(null), b = (0, l.e7)([L.default], () => L.default.getCurrentUser()), Z = A.length > 500, H = (0, I.Q3)("VoiceChannelStatusModal");
   r.useEffect(() => {
     S.default.track(U.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id
     })
   }, [t.guild_id]);
-  let R = e => {
+  let P = e => {
       z(new s.Hx(e, e.status).getAnyErrorMessage())
     },
-    B = e => {
+    R = e => {
       let {
         invalidEmojis: n
       } = e;
@@ -58,14 +58,14 @@ function D(e) {
         hasErrors: !1
       }
     },
-    M = async e => {
+    B = async e => {
       A === D && a(), null == e || e.preventDefault(), z(null), h(!0);
       let n = A.length,
         i = A.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         r = T.ZP.parse(void 0, A),
         {
           hasErrors: d
-        } = B(r);
+        } = R(r);
       if (!d) {
         try {
           let e = await _.ZP.updateVoiceChannelStatus(t.id, r.content);
@@ -75,18 +75,18 @@ function D(e) {
             media_session_id: f,
             raw_length: n,
             text_length: i
-          }), a()) : R(e)
+          }), a()) : P(e)
         } catch (e) {
-          R(e)
+          P(e)
         }
         h(!1)
       }
-    }, [P, x] = r.useState((0, g.JM)(A)), X = async () => (Z || W || await M(), Promise.resolve({
+    }, [M, x] = r.useState((0, g.JM)(A)), X = async () => (Z || W || await B(), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
     }));
   return (0, i.jsx)("form", {
-    onSubmit: M,
+    onSubmit: B,
     className: C.form,
     children: (0, i.jsxs)(o.Y0X, {
       transitionState: n,
@@ -118,7 +118,7 @@ function D(e) {
           children: [(0, i.jsx)(N.Z, {
             innerClassName: C.textArea,
             textValue: A,
-            richValue: P,
+            richValue: M,
             placeholder: y.NW.formatToPlainString(y.t.DUXxBg, {
               channelName: t.name
             }),
@@ -152,7 +152,7 @@ function D(e) {
           onClick: a,
           children: y.NW.string(y.t["ETE/oK"])
         }), (0, i.jsx)(o.zxk, {
-          onClick: M,
+          onClick: B,
           submitting: W,
           className: C.button,
           disabled: Z,

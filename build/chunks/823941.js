@@ -27,10 +27,10 @@ var r = n(200651),
   I = n(794324),
   S = n(474936),
   T = n(388032),
-  N = n(134442);
-let A = 90,
+  A = n(134442);
+let N = 90,
   C = 28,
-  R = (0, E.IC)(A),
+  R = (0, E.IC)(N),
   P = e => {
     let {
       category: t
@@ -40,7 +40,7 @@ let A = 90,
     return g.ZP.canUseCollectibles(a) ? t.summary : T.NW.format(T.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: o,
-        className: N.getPremiumHook,
+        className: A.getPremiumHook,
         onClick: () => {
           (0, _.Z)({
             subscriptionTier: S.Si.TIER_2,
@@ -65,10 +65,10 @@ let A = 90,
     return /.*\.png/i.test(t) ? (0, r.jsx)("img", {
       src: t,
       alt: "",
-      className: N.animationAsset
+      className: A.animationAsset
     }) : (0, r.jsx)(f.Z, {
       src: t,
-      className: N.animationAsset,
+      className: A.animationAsset,
       autoPlay: !0,
       loop: !0
     })
@@ -88,7 +88,7 @@ function D(e) {
   } = (0, I.tK)(t), S = !!(null == _ ? void 0 : _.showDarkBannerText);
   return (0, r.jsxs)(v.Z, {
     asset: p,
-    className: a()(N.shopBanner, n),
+    className: a()(A.shopBanner, n),
     style: null != o ? {
       background: "".concat((0, O.nH)(o), " border-box border-box"),
       outlineColor: o.border.toHslString()
@@ -96,20 +96,20 @@ function D(e) {
     children: [!d && null != g && f && (0, r.jsx)(w, {
       src: g
     }), (null == _ ? void 0 : _.addAttributionLogo) ? (0, r.jsxs)("div", {
-      className: N.discordLogo,
+      className: A.discordLogo,
       children: [(0, r.jsx)(c.gw7, {
         size: "custom",
         width: 28,
         height: 28,
         color: "currentColor",
-        className: N.discordIcon
+        className: A.discordIcon
       }), (0, r.jsx)(m.Z, {
-        className: N.discordWordmark
+        className: A.discordWordmark
       })]
     }) : (0, r.jsx)(c.LZC, {
       size: C
     }), (null == _ ? void 0 : _.addLogo) ? (0, r.jsx)("img", {
-      className: N.categoryLogo,
+      className: A.categoryLogo,
       src: (0, E.uV)(t.logo, {
         size: R
       }),
@@ -118,10 +118,10 @@ function D(e) {
         maxWidth: null == _ ? void 0 : _.logoMaxWidth
       }
     }) : (0, r.jsx)(c.LZC, {
-      size: A
+      size: N
     }), (0, r.jsx)(c.Text, {
-      className: a()(N.summary, {
-        [N.blackSummary]: S
+      className: a()(A.summary, {
+        [A.blackSummary]: S
       }),
       variant: "text-md/normal",
       children: t.skuId === s.T.DISXCORE ? (0, r.jsx)(P, {
@@ -129,7 +129,7 @@ function D(e) {
       }) : t.summary
     }), !i && (0, r.jsx)(y.Z, {
       category: t,
-      className: N.limitedTimeBadge,
+      className: A.limitedTimeBadge,
       display: "banner"
     })]
   })

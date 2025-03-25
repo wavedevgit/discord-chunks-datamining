@@ -3,7 +3,7 @@
 n.d(t, {
   Hg: () => I,
   KC: () => m,
-  QX: () => N,
+  QX: () => A,
   TD: () => T,
   Xf: () => v,
   Y4: () => b,
@@ -126,7 +126,7 @@ function T(e, t) {
   }), r
 }
 
-function N(e, t) {
+function A(e, t) {
   return e.days > 0 ? c.NW.formatToPlainString(t.days, {
     days: e.days,
     hours: e.hours

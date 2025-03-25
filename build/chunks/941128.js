@@ -33,8 +33,8 @@ let v = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   I = [],
   S = !1,
   T = null,
-  N = null,
-  A = !1,
+  A = null,
+  N = !1,
   C = new Map,
   R = !1,
   P = null;
@@ -49,7 +49,7 @@ function w() {
 }
 
 function D(e, t) {
-  return null != T && T.applicationId === e && T.branchId === t || null != N && N.applicationId === e && N.branchId === t
+  return null != T && T.applicationId === e && T.branchId === t || null != A && A.applicationId === e && A.branchId === t
 }
 
 function L() {
@@ -150,9 +150,9 @@ function H(e) {
   let {
     state: t
   } = e;
-  A || (A = !0, L(), S || p.Z.resume());
+  N || (N = !0, L(), S || p.Z.resume());
   let n = S;
-  S = t.paused, T = t.currentTask, N = t.nextTask;
+  S = t.paused, T = t.currentTask, A = t.nextTask;
   let r = !1;
   O = O.filter(e => {
     let {

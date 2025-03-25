@@ -29,8 +29,8 @@ var r = n(525654),
   I = n(15274),
   S = n(924301),
   T = n(461014),
-  N = n(82085),
-  A = n(264229),
+  A = n(82085),
+  N = n(264229),
   C = n(652898),
   R = n(895886),
   P = n(143816),
@@ -422,7 +422,7 @@ let eb = {
       context: i,
       callback: o,
       skipOnboarding: a
-    } = e, s = (0, A.fU)(r), l = s.baseCode, c = x.default.getSessionId(), f = ec(i, s), p = Z.default.getCurrentUser();
+    } = e, s = (0, N.fU)(r), l = s.baseCode, c = x.default.getSessionId(), f = ec(i, s), p = Z.default.getCurrentUser();
     return null !== (t = null == p ? void 0 : p.hasFlag(X.xW$.QUARANTINED)) && void 0 !== t && t ? ((0, R.default)(), new Promise((e, t) => t(Error()))) : (d.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l
@@ -495,7 +495,7 @@ let eb = {
       guild: o
     } = e;
     if (null != o && (null === (n = o.features) || void 0 === n ? void 0 : n.includes(X.oNc.HUB))) {
-      N.Z.onOpenHubInvite(e);
+      A.Z.onOpenHubInvite(e);
       return
     }
     let s = (0, Y.yE)(null !== (r = e.flags) && void 0 !== r ? r : 0, a.$.IS_APPLICATION_BYPASS);
@@ -527,7 +527,7 @@ let eb = {
   openApp(e, t, n, r, o) {
     var a, u;
     let f;
-    let _ = null != e ? (0, A.fU)(e) : null,
+    let _ = null != e ? (0, N.fU)(e) : null,
       p = null == _ ? void 0 : _.baseCode;
     if (d.Z.dispatch({
         type: "INVITE_APP_OPENING",

@@ -50,12 +50,12 @@ function u(e, t) {
   var n, a, l, u, d, f, _, p, h, m, g, E, b, v, y, O, I, S;
   let T = null === (n = t.powerup_metadata) || void 0 === n ? void 0 : n.category_type;
   if (null == T) return;
-  let N = null === (a = t.sku) || void 0 === a ? void 0 : a.powerup_metadata;
-  if (null == N) return;
-  let A = {
+  let A = null === (a = t.sku) || void 0 === a ? void 0 : a.powerup_metadata;
+  if (null == A) return;
+  let N = {
     title: t.summary,
     skuId: t.sku.id,
-    cost: N.boost_price,
+    cost: A.boost_price,
     dependencies: null != t.sku.dependent_sku_id ? [t.sku.dependent_sku_id] : [],
     animatedImageUrl: null === (l = t.powerup_metadata) || void 0 === l ? void 0 : l.animated_image_url,
     staticImageUrl: null === (u = t.powerup_metadata) || void 0 === u ? void 0 : u.static_image_url
@@ -79,13 +79,13 @@ function u(e, t) {
           total_sound_slots: l,
           total_sticker_slots: u
         })
-      }, A)
+      }, N)
     }
     case i.Us.PERK:
       return s({
         type: i.Us.PERK,
         description: null !== (S = t.description) && void 0 !== S ? S : "",
         bundle: !1
-      }, A)
+      }, N)
   }
 }

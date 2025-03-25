@@ -18,8 +18,8 @@ var d = n(616254),
   I = n(240849),
   S = n(998502),
   T = n(513566),
-  N = n(534713),
-  A = n(358085),
+  A = n(534713),
+  N = n(358085),
   C = n(703656),
   R = n(284737),
   P = n(473159),
@@ -41,7 +41,7 @@ let V = 5 * B.Z.Millis.MINUTE,
 _()(null != Z, "Could not find app-mount"), Z.className = __OVERLAY__ ? "" : j.appMount;
 let H = (0, d.createRoot)(Z),
   W = {
-    "/oauth2/authorize": N.Z
+    "/oauth2/authorize": A.Z
   };
 
 function Y(e, t, n) {
@@ -77,7 +77,7 @@ if (null != D.Z) {
 if ((0, P.O)(window), __OVERLAY__) K(p.Z.Overlay);
 else if (null != window.require && null == window.DiscordNative) K(p.Z.OutdatedClient);
 else {
-  if (document.addEventListener("scroll", e => e.preventDefault()), A.isPlatformEmbedded) {
+  if (document.addEventListener("scroll", e => e.preventDefault()), N.isPlatformEmbedded) {
     window.onbeforeunload = () => S.ZP.beforeUnload(), S.ZP.on("HELP_OPEN", () => window.open(O.Z.getCommunityURL()));
     let e = new w.sW(V, () => S.ZP.purgeMemory());
     S.ZP.on("MAIN_WINDOW_BLUR", () => {

@@ -13,8 +13,8 @@ n.d(t, {
   ic: () => g,
   pX: () => y,
   sq: () => _,
-  uu: () => A,
-  wk: () => N,
+  uu: () => N,
+  wk: () => A,
   zd: () => v
 });
 var r = n(367907),
@@ -222,7 +222,7 @@ async function T(e, t, n) {
   }
 }
 
-function N(e, t) {
+function A(e, t) {
   C(s.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
@@ -236,7 +236,7 @@ function N(e, t) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     application: t,
     entrypoint: n,

@@ -1,6 +1,6 @@
 /** Chunk was on 53912 **/
 n.d(t, {
-  U: () => S,
+  U: () => I,
   Uf: () => P,
   ng: () => C
 }), n(47120);
@@ -18,13 +18,13 @@ var r = n(200651),
   b = n(11352),
   p = n(213931),
   h = n(767157),
-  y = n(112440),
-  g = n(671105),
-  j = n(552958),
-  N = n(981631),
-  v = n(921944),
-  m = n(871465),
-  _ = n(388032),
+  N = n(112440),
+  y = n(671105),
+  _ = n(552958),
+  g = n(981631),
+  j = n(921944),
+  v = n(871465),
+  m = n(388032),
   x = n(771527);
 
 function C(e, t) {
@@ -33,15 +33,15 @@ function C(e, t) {
     }, {
       autoTrackExposure: !0
     }),
-    r = I(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top");
+    r = T(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top");
   return (n.nestedEntry && t || !n.nestedEntry && !t) && r
 }
 
 function P(e, t, n) {
-  return I(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
+  return T(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
 }
 
-function S() {
+function I() {
   let e = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -50,45 +50,45 @@ function S() {
     [t] = (0, s.cv)([a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]);
   return e.enabled && e.nestedEntry && t === a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, r.jsx)(o.IGR, {
     className: x.newBadge,
-    text: _.NW.string(_.t.y2b7CA)
+    text: m.NW.string(m.t.y2b7CA)
   })
 }
 
-function I(e, t, a, C) {
-  var P, S;
-  let I = (0, g.OR)(e),
-    T = (0, g._c)(e, t),
-    E = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
+function T(e, t, a, C) {
+  var P, I;
+  let T = (0, y.OR)(e),
+    E = (0, y._c)(e, t),
+    S = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     w = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
-    A = f.ZP.canUseCustomNotificationSounds(E),
-    D = A ? null != T ? T : I : m.YC.CLASSIC,
+    A = f.ZP.canUseCustomNotificationSounds(S),
+    D = A ? null != E ? E : T : v.YC.CLASSIC,
     U = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
       autoTrackExposure: !0
     }).enabled,
-    [Z, M] = i.useState(!1),
+    [M, Z] = i.useState(!1),
     {
       playSound: k
-    } = (0, j.Z)(),
-    [G, R] = (0, s.cv)([a]),
-    L = G === a;
+    } = (0, _.Z)(),
+    [R, G] = (0, s.cv)([a]),
+    L = R === a;
   if (i.useEffect(() => () => {
-      Z && R(v.L.TAKE_ACTION)
-    }, [Z, R]), !U) return null;
+      M && G(j.L.TAKE_ACTION)
+    }, [M, G]), !U) return null;
   let W = n => {
-      if (k(n), R(v.L.TAKE_ACTION), !A && n !== m.YC.CLASSIC) {
-        (0, h.Z)(n, "contextMenu"), (0, y.Z)();
+      if (k(n), G(j.L.TAKE_ACTION), !A && n !== v.YC.CLASSIC) {
+        (0, h.Z)(n, "contextMenu"), (0, N.Z)();
         return
       }
       null != t ? (0, p.M)(e, t, D, n, "contextMenu") : (0, p.t)(e, D, n, "contextMenu")
     },
     F = A ? o.Text : O.Z,
-    Y = (0, m.LB)(),
-    z = null !== (S = null === (P = Y.find(e => e.value === D)) || void 0 === P ? void 0 : P.label) && void 0 !== S ? S : _.NW.string(_.t.p3Hg5e),
+    Y = (0, v.LB)(),
+    z = null !== (I = null === (P = Y.find(e => e.value === D)) || void 0 === P ? void 0 : P.label) && void 0 !== I ? I : m.NW.string(m.t.p3Hg5e),
     B = (0, r.jsx)(o.IGR, {
       className: x.newBadge,
-      text: _.NW.string(_.t.y2b7CA)
+      text: m.NW.string(m.t.y2b7CA)
     });
   return (0, r.jsx)(o.sNh, {
     id: "notification-sounds",
@@ -96,7 +96,7 @@ function I(e, t, a, C) {
       let {
         isFocused: t
       } = e;
-      return t && M(t), (0, r.jsxs)("div", {
+      return t && Z(t), (0, r.jsxs)("div", {
         className: x.rootContainer,
         children: [(0, r.jsxs)("div", {
           children: [L && "top" === C && B, (0, r.jsxs)("div", {
@@ -105,7 +105,7 @@ function I(e, t, a, C) {
               className: x.text,
               color: t ? "always-white" : void 0,
               variant: "text-sm/medium",
-              children: _.NW.string(_.t.mrqSOj)
+              children: m.NW.string(m.t.mrqSOj)
             }), (0, r.jsx)(o.SrA, {
               size: "xs",
               className: x.nitroWheel,
@@ -120,7 +120,7 @@ function I(e, t, a, C) {
         }), L && "trailing" === C && B]
       })
     },
-    action: e !== N.aIL ? () => (0, o.ZDy)(async () => {
+    action: e !== g.aIL ? () => (0, o.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("5863"), n.e("96123")]).then(n.bind(n, 751212));
@@ -160,10 +160,10 @@ function I(e, t, a, C) {
     hasSubmenu: !0,
     children: (0, r.jsxs)(o.kSQ, {
       children: [Y.map((e, t) => (0, r.jsxs)(i.Fragment, {
-        children: [A || e.value === m.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
+        children: [A || e.value === v.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
           id: e.label,
           group: "notification-preset",
-          checked: (null != D ? D : m.YC.CLASSIC) === e.value,
+          checked: (null != D ? D : v.YC.CLASSIC) === e.value,
           label: e.label,
           action: () => W(e.value)
         }) : (0, r.jsx)(o.sNh, {
@@ -185,14 +185,14 @@ function I(e, t, a, C) {
             })
           },
           action: () => W(e.value)
-        }), e.value === m.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
+        }), e.value === v.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
       }, t)), w && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
           id: "label",
           label: (0, r.jsx)(o.Text, {
             className: x.mutedLabel,
             variant: "text-sm/medium",
-            children: _.NW.string(_.t["a9G/ER"])
+            children: m.NW.string(m.t["a9G/ER"])
           })
         })]
       })]

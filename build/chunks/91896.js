@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(653041), n(47120);
 var r, i = n(442837),
   o = n(759174),
@@ -115,7 +115,7 @@ class T extends(r = i.ZP.Store) {
   }
 }
 c(T, "displayName", "GameRelationshipStore");
-let N = new T(a.Z, {
+let A = new T(a.Z, {
   CONNECTION_OPEN: O,
   GAME_RELATIONSHIP_ADD: I,
   GAME_RELATIONSHIP_REMOVE: S

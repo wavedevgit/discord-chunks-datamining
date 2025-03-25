@@ -20,9 +20,9 @@ var u, d = n(392711),
   I = n(131951),
   S = n(914010),
   T = n(981631),
-  N = n(176505);
+  A = n(176505);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,7 +38,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -112,7 +112,7 @@ function Z() {
   let e = !1,
     t = O.Z.getGuilds();
   return f().each(x, (t, n) => {
-    null != t && (v.Z.hasChannel(t) || t === o || j.has(t) || (0, N.ME)(t)) || (delete x[n], delete M[n], e = !0)
+    null != t && (v.Z.hasChannel(t) || t === o || j.has(t) || (0, A.ME)(t)) || (delete x[n], delete M[n], e = !0)
   }), f().each(k, (t, n) => {
     null != t && (v.Z.hasChannel(t) || j.has(t)) || (delete k[n], e = !0)
   }), f().each(t, e => {
@@ -297,7 +297,7 @@ class ei extends(u = _.ZP.Store) {
     return a
   }
 }
-A(ei, "displayName", "SelectedChannelStore");
+N(ei, "displayName", "SelectedChannelStore");
 let eo = new ei(h.Z, {
   CONNECTION_OPEN: H,
   OVERLAY_INITIALIZE: W,

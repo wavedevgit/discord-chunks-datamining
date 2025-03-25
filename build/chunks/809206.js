@@ -3,7 +3,7 @@
 n.d(t, {
   FD: () => g,
   I5: () => I,
-  KP: () => N,
+  KP: () => A,
   Mn: () => y,
   P6: () => w,
   S2: () => v,
@@ -15,7 +15,7 @@ n.d(t, {
   cV: () => T,
   si: () => R,
   ss: () => b,
-  xn: () => A
+  xn: () => N
 });
 var r = n(544891),
   i = n(433517),
@@ -206,14 +206,14 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE",
     nameplate: e
   })
 }
 
-function A(e) {
+function N(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
     profileEffectId: e

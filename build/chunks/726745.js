@@ -139,7 +139,7 @@ function T(e) {
   i = t
 }
 
-function N(e) {
+function A(e) {
   let {
     userId: t,
     pushSyncToken: n
@@ -149,7 +149,7 @@ function N(e) {
   }) : e)
 }
 
-function A(e) {
+function N(e) {
   let {
     invalidPushSyncTokens: t
   } = e;
@@ -229,6 +229,6 @@ let R = new C(l.Z, {
   MULTI_ACCOUNT_MOVE_ACCOUNT: S,
   CURRENT_USER_UPDATE: O,
   MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: T,
-  MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: N,
-  MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: A
+  MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: A,
+  MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: N
 })
