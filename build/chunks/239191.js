@@ -182,7 +182,7 @@ function _(e) {
     }), (0, r.jsx)(c.hzk, {
       className: O.content,
       children: (0, r.jsxs)(c.Kqy, {
-        gap: K ? 24 : 32,
+        gap: K ? 20 : 24,
         children: [(0, r.jsxs)(c.Kqy, {
           gap: K ? 8 : 12,
           children: [(0, r.jsx)(c.X6q, {

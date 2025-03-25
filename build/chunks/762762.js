@@ -19,12 +19,7 @@ function i(e, t, n) {
     let {
       powerups: r,
       unlocked: a
-    } = i;
-    if (0 === t.dependencies.length) return {
-      disabled: !1,
-      reason: void 0
-    };
-    let l = n ? null === (e = a.values().find(e => {
+    } = i, l = n ? null === (e = a.values().find(e => {
       var n;
       return (null === (n = e.sku) || void 0 === n ? void 0 : n.dependent_sku_id) === t.skuId
     })) || void 0 === e ? void 0 : e.sku_id : t.dependencies.find(e => !a.has(e));

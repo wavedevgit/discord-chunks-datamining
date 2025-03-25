@@ -18,12 +18,12 @@ var r = n(200651),
   b = n(293273),
   j = n(594174),
   S = n(626135),
-  g = n(720449),
+  v = n(720449),
   x = n(684269),
-  v = n(678865),
-  y = n(875425),
-  O = n(981631),
-  _ = n(185923),
+  g = n(678865),
+  _ = n(875425),
+  y = n(981631),
+  O = n(185923),
   C = n(388032),
   N = n(888659);
 
@@ -78,16 +78,16 @@ class E extends i.PureComponent {
       sourceAnalyticsLocations: e,
       sourceAnalyticsContext: t
     } = this.props;
-    S.default.track(O.rMx.OPEN_MODAL, {
+    S.default.track(y.rMx.OPEN_MODAL, {
       source: null == t ? void 0 : t.location,
-      type: O.jXE.CUSTOM_STATUS_MODAL,
+      type: y.jXE.CUSTOM_STATUS_MODAL,
       load_id: null == t ? void 0 : t.loadId,
       location_stack: e
     })
   }
   get analyticsLocation() {
     return {
-      page: O.ZY5.CUSTOM_STATUS_MODAL
+      page: y.ZY5.CUSTOM_STATUS_MODAL
     }
   }
   get canShowStatusSelector() {
@@ -140,7 +140,7 @@ class E extends i.PureComponent {
             }
           })
         }), (0, r.jsx)(s.oil, {
-          maxLength: y.s0,
+          maxLength: _.s0,
           value: t,
           inputClassName: N.input,
           placeholder: C.NW.string(C.t["zYR38/"]),
@@ -180,7 +180,7 @@ class E extends i.PureComponent {
         placeholder: C.NW.string(C.t.E45wvL),
         maxVisibleItems: 5,
         value: e,
-        options: y.wS.map(e => k(P({}, e), {
+        options: _.wS.map(e => k(P({}, e), {
           value: e.value,
           key: e.value,
           label: e.label()
@@ -199,7 +199,7 @@ class E extends i.PureComponent {
       children: (0, r.jsx)(s.q4e, {
         maxVisibleItems: 4,
         value: e,
-        options: y.Df.map(e => k(P({}, e), {
+        options: _.Df.map(e => k(P({}, e), {
           value: e.value,
           key: e.value,
           label: e.label()
@@ -259,7 +259,7 @@ class E extends i.PureComponent {
       emojiInfo: null != this.props.customStatus ? this.props.customStatus.emoji : null,
       text: null != this.props.customStatus && null != this.props.customStatus.state ? this.props.customStatus.state : "",
       clearAfter: (0, x.Z)(),
-      status: (0, v.Z)()
+      status: (0, g.Z)()
     }), w(this, "handleClearStatus", () => {
       this.setState({
         emojiInfo: null,
@@ -303,14 +303,14 @@ class E extends i.PureComponent {
         clearAfter: i,
         status: a
       } = this.state, o = f.co.getSetting();
-      o !== a && (0, m.Z)(a, o, e), (0, g.Z)({
+      o !== a && (0, m.Z)(a, o, e), (0, v.Z)({
         text: r,
         emojiInfo: n,
         clearAfter: i,
         analyticsContext: e
       }), t()
     }), w(this, "handleKeyPress", e => {
-      e.which === O.yXg.ENTER && this.handleSaveStatus()
+      e.which === y.yXg.ENTER && this.handleSaveStatus()
     }), w(this, "renderEmojiPicker", e => {
       let {
         closePopout: t
@@ -322,7 +322,7 @@ class E extends i.PureComponent {
         onSelectEmoji: (e, n) => {
           this.handleEmojiChange(e), n && t()
         },
-        pickerIntention: _.Hz.STATUS,
+        pickerIntention: O.Hz.STATUS,
         onNavigateAway: n
       })
     })

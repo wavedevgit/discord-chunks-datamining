@@ -24,7 +24,7 @@ function b(e) {
     previewEmoji: b,
     previewStatus: j,
     placeHolderText: S,
-    transitionState: g
+    transitionState: v
   } = e, x = (0, o.ZP)(t.id);
   return (0, r.jsxs)(c.Z, {
     user: t,
@@ -52,7 +52,7 @@ function b(e) {
         previewText: n,
         previewEmoji: b,
         placeholderText: S,
-        hasEntered: g === i.Dvm.ENTERED
+        hasEntered: v === i.Dvm.ENTERED
       })]
     }), (null == x ? void 0 : x.profileEffectId) != null && (0, r.jsx)(a.Z, {
       profileEffectId: x.profileEffectId

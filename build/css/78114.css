@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 129c695c09735665
+  Original File Name: 959e748c979e6110
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -6525,7 +6525,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .visual-refresh .card_aae012 {
     background-color: var(--background-mod-faint);
     border-radius: var(--radius-sm);
-    padding: var(--space-12) var(--space-16);
+    padding: var(--space-16);
     border: 1px solid var(--border-subtle)
 }
 
@@ -6537,15 +6537,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     transition: background-color .2s ease
 }
 
-.visual-refresh .staff_aae012 .card_aae012 {
-    padding: var(--space-16)
-}
-
-.visual-refresh .staff_aae012 .cardTextContainer_aae012 {
+.visual-refresh .cardTextContainer_aae012 {
     margin-left: var(--space-12)
 }
 
-.visual-refresh .completed_aae012.staff_aae012 .checkmark_aae012 {
+.visual-refresh .completed_aae012 .checkmark_aae012 {
     opacity: .6
 }
 
@@ -6555,22 +6551,14 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     background-color: var(--status-positive)
 }
 
-.visual-refresh .staff_aae012 .icon_aae012 {
+.visual-refresh .icon_aae012 {
     width: var(--space-20);
     height: var(--space-20);
     min-width: var(--space-20);
     min-height: var(--space-20)
 }
 
-.visual-refresh .icon_aae012 {
-    width: var(--spacing-32);
-    height: var(--spacing-32);
-    margin: var(--spacing-4);
-    min-width: var(--spacing-32);
-    min-height: var(--spacing-32)
-}
-
-.visual-refresh .staff_aae012 .arrow_aae012 {
+.visual-refresh .arrow_aae012 {
     min-width: var(--space-20);
     color: var(--interactive-muted)
 }
@@ -15296,4 +15284,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=129c695c09735665.css.map*/
+/*# sourceMappingURL=959e748c979e6110.css.map*/

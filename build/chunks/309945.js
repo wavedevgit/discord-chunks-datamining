@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => v
 });
-var i = t(200651),
-  r = t(192379),
+var r = t(200651),
+  i = t(192379),
   o = t(657707),
   s = t(793030),
   a = t(442837),
@@ -21,20 +21,20 @@ function v(e) {
   } = e, v = (0, a.e7)([d.Z], () => {
     var e, t;
     return null !== (t = null === (e = d.Z.getStateForGuild(n)) || void 0 === e ? void 0 : e.appliedBoosts) && void 0 !== t ? t : 0
-  }), p = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = v - r.useMemo(() => {
+  }), p = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = v - i.useMemo(() => {
     var e, n, t;
     return null !== (t = null == p ? void 0 : null === (n = p.filter) || void 0 === n ? void 0 : null === (e = n.call(p, e => !e.ended && null == e.endsAt)) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
   }, [p]);
-  return _ <= 0 ? null : (0, i.jsxs)("div", {
+  return _ <= 0 ? null : (0, r.jsxs)("div", {
     className: x.container,
-    children: [(0, i.jsx)(o.P4T, {
+    children: [(0, r.jsx)(o.P4T, {
       color: l.Z.colors.TEXT_WARNING,
       className: x.icon
-    }), (0, i.jsx)(s.xv, {
+    }), (0, r.jsx)(s.xv, {
       variant: "text-md/semibold",
       color: "text-warning",
       children: m.NW.string(u.Z.n5hQhY)
-    }), (0, i.jsx)(s.xv, {
+    }), (0, r.jsx)(s.xv, {
       variant: "text-sm/medium",
       children: m.NW.formatToPlainString(u.Z.iAaAiI, {
         boostCount: _,

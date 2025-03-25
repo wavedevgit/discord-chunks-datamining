@@ -18,12 +18,12 @@ var r = n(200651),
   b = n(368326),
   j = n(720449),
   S = n(684269),
-  g = n(429467),
+  v = n(429467),
   x = n(676035),
-  v = n(926563),
-  y = n(875425),
-  O = n(981631),
-  _ = n(185923),
+  g = n(926563),
+  _ = n(875425),
+  y = n(981631),
+  O = n(185923),
   C = n(388032),
   N = n(32533);
 
@@ -74,7 +74,7 @@ function k(e) {
     return null !== (e = h.default.getCurrentUser()) && void 0 !== e ? e : null
   }), Z = (0, x.a)(), [A, z] = i.useState(null !== (t = null == Z ? void 0 : Z.state) && void 0 !== t ? t : ""), [M, W] = i.useState(null !== (n = null == Z ? void 0 : Z.emoji) && void 0 !== n ? n : null), [L, R] = i.useState((0, S.Z)()), U = i.useRef(null), [F, H] = i.useState(null != T ? T : null), Y = A.length > 0 || null != M, K = D && null != F ? F.label() : C.NW.string(C.t["xod36+"]);
   i.useEffect(() => {
-    f.default.track(O.rMx.OPEN_MODAL, {
+    f.default.track(y.rMx.OPEN_MODAL, {
       type: d.Z.CUSTOM_STATUS_MODAL,
       location_stack: E
     })
@@ -129,7 +129,7 @@ function k(e) {
     }), (0, r.jsxs)(s.hzk, {
       children: [null != B && (0, r.jsx)("div", {
         className: N.profilePreview,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(g.Z, {
           user: B,
           previewText: A,
           previewEmoji: M,
@@ -154,7 +154,7 @@ function k(e) {
                   onSelectEmoji: (e, n) => {
                     q(e), n && t()
                   },
-                  pickerIntention: _.Hz.STATUS,
+                  pickerIntention: O.Hz.STATUS,
                   onNavigateAway: k
                 })
               },
@@ -176,7 +176,7 @@ function k(e) {
           }), (0, r.jsx)(s.Kx8, {
             autosize: !0,
             value: A,
-            maxLength: y.s0,
+            maxLength: _.s0,
             rows: 1,
             showRemainingCharacterCount: !1,
             placeholder: null != K ? K : void 0,
@@ -217,7 +217,12 @@ function k(e) {
           "aria-disabled": Y,
           className: o()(N.needInspiration, Y && N.needInspirationDisabled),
           onClick: Y ? void 0 : () => {
-            z(""), H(e => (0, g.Z)(null == e ? void 0 : e.value))
+            let e = (0, v.Z)(null == F ? void 0 : F.value);
+            f.default.track(y.rMx.CUSTOM_STATUS_RANDOMIZER_CLICKED, {
+              previous_prompt_type: null == F ? void 0 : F.value,
+              new_prompt_type: null == e ? void 0 : e.value,
+              location_stack: E
+            }), z(""), H(e)
           },
           children: [(0, r.jsx)(s.$2U, {
             size: "xs"
@@ -233,9 +238,9 @@ function k(e) {
         children: [(0, r.jsx)("div", {
           className: N.clearAfterSelectContainer,
           children: (0, r.jsx)(s.q4e, {
-            maxVisibleItems: y.Q9.length,
+            maxVisibleItems: _.Q9.length,
             value: L,
-            options: y.Q9.map(e => P(w({}, e), {
+            options: _.Q9.map(e => P(w({}, e), {
               key: e.value,
               value: e.value,
               label: e.label()

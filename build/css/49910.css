@@ -1,6 +1,6 @@
 /**
   Module ID: 49910
-  Original File Name: 1a28eb0ba2b049c1
+  Original File Name: 05d6dfe6a76abf4a
 **/
 .root__81345 {
     top: calc(var(--custom-app-top-bar-height) + var(--space-8));
@@ -26,9 +26,9 @@
 }
 
 .headerImage__81345 {
-    margin: min(12px,1vh) auto auto;
+    margin: max(24px,1vh) auto auto;
     height: 15vh;
-    max-height: 126px;
+    max-height: 114px;
     min-height: 90px;
     aspect-ratio: 1.43;
     background-image: url(/assets/faad3fef1f61d3e6.svg);
@@ -137,4 +137,4 @@
     }
 }
 
-/*# sourceMappingURL=1a28eb0ba2b049c1.css.map*/
+/*# sourceMappingURL=05d6dfe6a76abf4a.css.map*/

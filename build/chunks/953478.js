@@ -2,9 +2,9 @@
 t.d(n, {
   Z: () => g
 });
-var i = t(200651);
+var r = t(200651);
 t(192379);
-var r = t(793030),
+var i = t(793030),
   o = t(442837),
   s = t(481060),
   a = t(678558),
@@ -25,38 +25,38 @@ function g(e) {
     guildId: n
   } = e, t = (0, o.e7)([d.Z], () => d.Z.getGuild(n)), {
     available: g,
-    spent: h,
-    total: Z
+    spent: Z,
+    total: h
   } = (0, m.Z)(n);
-  if (null != t) return (0, i.jsxs)("div", {
+  if (null != t) return (0, r.jsxs)("div", {
     className: j.container,
-    children: [(0, i.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: j.headerContainer,
-      children: [(0, i.jsx)(r.xv, {
+      children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
         children: b.NW.string(_.Z.hjvcLC)
-      }), (0, i.jsx)(r.xv, {
+      }), (0, r.jsx)(i.xv, {
         className: j.learnMore,
         variant: "text-xs/semibold",
         children: b.NW.format(_.Z.fXE30d, {
           helpDeskArticle: u.Z.getArticleURL(p.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
-    }), (0, i.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: j.contentContainer,
-      children: [(0, i.jsx)(v.Z, {
+      children: [(0, r.jsx)(v.Z, {
         count: g,
         type: v.b.AVAILABLE
-      }), (0, i.jsx)(v.Z, {
-        count: h,
-        type: v.b.SPENT
-      }), (0, i.jsx)(v.Z, {
+      }), (0, r.jsx)(v.Z, {
         count: Z,
+        type: v.b.SPENT
+      }), (0, r.jsx)(v.Z, {
+        count: h,
         type: v.b.TOTAL
       })]
-    }), (0, i.jsx)(x.Z, {
+    }), (0, r.jsx)(x.Z, {
       guildId: n
-    }), (0, i.jsx)(a.Z, {
+    }), (0, r.jsx)(a.Z, {
       className: j.boostButton,
       guild: t,
       analyticsLocation: {
@@ -66,7 +66,7 @@ function g(e) {
       color: s.Ttl.CUSTOM,
       size: s.PhG.LARGE,
       intent: l.P.NONE,
-      icon: (0, i.jsx)(c.Z, {
+      icon: (0, r.jsx)(c.Z, {
         className: j.boostButtonIcon
       })
     })]

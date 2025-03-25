@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => x
 }), t(230036);
-var i = t(200651),
-  r = t(192379),
+var r = t(200651),
+  i = t(192379),
   o = t(793030),
   s = t(442837),
   a = t(179360),
@@ -19,18 +19,18 @@ function x(e) {
   } = e, t = (0, s.Wu)([l.Z], () => {
     var e;
     return null !== (e = l.Z.getAppliedGuildBoostsForGuild(n)) && void 0 !== e ? e : []
-  }, [n]), x = r.useMemo(() => t.sort((e, n) => e.id < n.id ? 1 : -1), [t]), v = (0, s.e7)([c.Z], () => {
+  }, [n]), x = i.useMemo(() => t.sort((e, n) => e.id < n.id ? 1 : -1), [t]), v = (0, s.e7)([c.Z], () => {
     var e;
     return null === (e = c.Z.getGuild(n)) || void 0 === e ? void 0 : e.premiumSubscriberCount
   });
-  return (r.useEffect(() => {
+  return (i.useEffect(() => {
     (0, a.C0)(n)
-  }, [n, v]), 0 === x.length) ? null : (0, i.jsxs)("div", {
+  }, [n, v]), 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: m.container,
-    children: [(0, i.jsx)(o.X6, {
+    children: [(0, r.jsx)(o.X6, {
       variant: "eyebrow",
       children: u.NW.string(u.t.yM9Krq)
-    }), x.map((e, n) => (0, i.jsx)(d.Z, {
+    }), x.map((e, n) => (0, r.jsx)(d.Z, {
       boost: e
     }, "boost-activity-".concat(n)))]
   })

@@ -2,9 +2,9 @@
 t.d(n, {
   Z: () => v
 });
-var i = t(200651);
+var r = t(200651);
 t(192379);
-var r = t(793030),
+var i = t(793030),
   o = t(442837),
   s = t(481060),
   a = t(834129),
@@ -22,16 +22,16 @@ function v(e) {
     username: v,
     roleColor: p
   } = (0, o.cj)([l.ZP], () => {
-    var e, t, i;
+    var e, t, r;
     return {
-      username: null !== (i = l.ZP.getNick(n.guildId, n.userId)) && void 0 !== i ? i : null === (e = n.user) || void 0 === e ? void 0 : e.username,
+      username: null !== (r = l.ZP.getNick(n.guildId, n.userId)) && void 0 !== r ? r : null === (e = n.user) || void 0 === e ? void 0 : e.username,
       roleColor: null === (t = l.ZP.getMember(n.guildId, n.userId)) || void 0 === t ? void 0 : t.colorString
     }
   }, [n]);
-  return (0, i.jsx)(a.Z, {
+  return (0, r.jsx)(a.Z, {
     className: x.systemMessageContainer,
     contentClassName: x.systemMessageContent,
-    iconNode: (0, i.jsx)(c.Z, {
+    iconNode: (0, r.jsx)(c.Z, {
       className: x.icon,
       width: 16,
       height: 16
@@ -40,15 +40,15 @@ function v(e) {
     timestampClassName: x.timestamp,
     timestamp: t,
     compact: !0,
-    children: (0, i.jsxs)("span", {
+    children: (0, r.jsxs)("span", {
       className: x.boostMessage,
-      children: [(0, i.jsx)(r.xv, {
+      children: [(0, r.jsx)(i.xv, {
         variant: "text-md/semibold",
-        children: (0, i.jsx)(s.PUh, {
+        children: (0, r.jsx)(s.PUh, {
           name: v,
           color: null != p ? p : void 0
         })
-      }), (0, i.jsx)(r.xv, {
+      }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",
         children: m.NW.string(u.Z.plwH8f)
       })]

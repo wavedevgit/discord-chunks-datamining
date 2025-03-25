@@ -6,7 +6,7 @@ var o = n(200651),
   r = n(192379),
   s = n(481060),
   a = n(17622),
-  c = n(969867),
+  c = n(660397),
   i = n(790053),
   l = n(942570);
 
@@ -70,7 +70,7 @@ function u(e) {
           color: "status-danger",
           variant: "text-sm/semibold",
           children: p
-        }), (0, o.jsx)(c.Z, {
+        }), (0, o.jsx)(c.ZP, {
           className: i.footer,
           guildId: u,
           powerup: d,

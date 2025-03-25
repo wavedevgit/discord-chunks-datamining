@@ -23,49 +23,49 @@ var r = n(200651),
   y = n(84848);
 
 function E(e) {
-  var t, n, E, O;
-  let N, j, C;
+  var t, n, E, O, N;
+  let j, C, I;
   let {
-    message: I,
-    channel: S,
-    compact: T
-  } = e, P = (0, p.sQ)({
+    message: S,
+    channel: T,
+    compact: P
+  } = e, A = (0, p.sQ)({
     location: "ChatWallpaperSetSystemMessage"
-  }), A = (0, p.sX)({
+  }), w = (0, p.sX)({
     location: "ChatWallpaperSetSystemMessage"
-  }).enabled, w = (0, s.ZP)(I), Z = (0, o.apv)((0, l.ZP)()), k = (0, a.e7)([u.default], () => u.default.getCurrentUser()), R = (0, c.m)(v.p9.TIER_2), D = (null == k ? void 0 : k.id) === I.author.id, L = (0, g.P)(null === (t = S.wallpaper) || void 0 === t ? void 0 : t.setterId), M = f.t(S), W = f.Y(I), U = (null === (n = S.wallpaper) || void 0 === n ? void 0 : n.wallpaperId) === W, F = (0, a.e7)([m.Z], () => m.Z.getWallpaperById(W));
-  return null == W ? null : (N = Z ? x.NW.format(x.t.dBxFsL, {
+  }).enabled, Z = (0, s.ZP)(S), k = (0, o.apv)((0, l.ZP)()), R = (0, a.e7)([u.default], () => u.default.getCurrentUser()), D = (0, c.m)(v.p9.TIER_2), L = (null == R ? void 0 : R.id) === S.author.id, M = (0, g.P)(null === (t = T.wallpaper) || void 0 === t ? void 0 : t.setterId), W = f.t(T), U = f.Y(S), F = (null === (n = T.wallpaper) || void 0 === n ? void 0 : n.wallpaperId) === U && S.author.id === (null === (E = T.wallpaper) || void 0 === E ? void 0 : E.setterId), B = (0, a.e7)([m.Z], () => m.Z.getWallpaperById(U));
+  return null == U ? null : (j = k ? x.NW.format(x.t.dBxFsL, {
     learnMoreLink: d.Z.getArticleURL(b.BhN.DM_WALLPAPERS)
-  }) : D ? x.NW.format(x.t.z847Tk, {
-    wallpaper_name: null !== (E = null == F ? void 0 : F.label) && void 0 !== E ? E : x.t["UQMV/P"]
+  }) : L ? x.NW.format(x.t.z847Tk, {
+    wallpaper_name: null !== (O = null == B ? void 0 : B.label) && void 0 !== O ? O : x.t["UQMV/P"]
   }) : x.NW.format(x.t["+lKndX"], {
-    username: null == w ? void 0 : w.nick,
-    wallpaper_name: null !== (O = null == F ? void 0 : F.label) && void 0 !== O ? O : x.t["UQMV/P"]
-  }), P ? D || (M ? j = x.NW.string(x.t.q124kJ) : R || (j = x.NW.format(x.t.JwUhHh, {
+    username: null == Z ? void 0 : Z.nick,
+    wallpaper_name: null !== (N = null == B ? void 0 : B.label) && void 0 !== N ? N : x.t["UQMV/P"]
+  }), A ? L || (W && F ? C = x.NW.string(x.t.q124kJ) : D || (C = x.NW.format(x.t.JwUhHh, {
     onClickNitro: () => {
       (0, i.uL)(b.Z5c.NITRO_HOME)
     }
-  }))) : j = x.NW.string(x.t["6JSOu7"]), P && A && U && (M ? L && (C = (0, r.jsx)(o.zxk, {
+  }))) : C = x.NW.string(x.t["6JSOu7"]), A && w && F && (W ? M && (I = (0, r.jsx)(o.zxk, {
     className: y.action,
     onClick: () => {
-      h.X(S, {
+      h.X(T, {
         shouldClear: !1
       })
     },
     children: x.NW.string(x.t.o6850d)
-  })) : C = (0, r.jsx)(o.zxk, {
+  })) : I = (0, r.jsx)(o.zxk, {
     className: y.action,
     onClick: () => {
-      h.X(S, {
+      h.X(T, {
         shouldClear: !0
       })
     },
     children: x.NW.string(x.t.VkKicX)
   })), (0, r.jsx)(_.Z, {
-    channel: S,
-    content: N,
-    subtitle: j,
-    action: C,
-    compact: T
+    channel: T,
+    content: j,
+    subtitle: C,
+    action: I,
+    compact: P
   }))
 }
