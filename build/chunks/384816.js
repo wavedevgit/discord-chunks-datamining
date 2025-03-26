@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(748545),
   b = t(250822),
   y = t(771362),
-  v = t(280885),
-  g = t(819602),
+  g = t(280885),
+  v = t(819602),
   m = t(78806),
   I = t(900927),
   j = t(678738),
@@ -47,7 +47,7 @@ function P(e) {
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
     className: Z.scroller,
-    children: [(null == P ? void 0 : P.bio) != null && (null == P ? void 0 : P.bio) !== "" && (0, r.jsx)(v.Z, {
+    children: [(null == P ? void 0 : P.bio) != null && (null == P ? void 0 : P.bio) !== "" && (0, r.jsx)(g.Z, {
       userBio: P.bio,
       setLineClamp: !1
     }), null != A && (0, r.jsx)(_.Z, {
@@ -73,7 +73,7 @@ function P(e) {
     }), M.length > 0 && (0, r.jsx)(j.Z, {
       heading: O.NW.string(O.t["3fe7U1"]),
       scrollIntoView: N === x.Tb.CONNECTIONS,
-      children: (0, r.jsx)(g.OA, {
+      children: (0, r.jsx)(v.OA, {
         connectedAccounts: M,
         className: Z.connections,
         userId: n.id,
@@ -82,7 +82,7 @@ function P(e) {
       })
     }), B.length > 0 && (0, r.jsx)(j.Z, {
       heading: O.NW.string(O.t.PHjkRE),
-      children: B.map(e => (0, r.jsx)(g.tH, {
+      children: B.map(e => (0, r.jsx)(v.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
         locale: R,

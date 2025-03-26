@@ -31,13 +31,13 @@ function f(e) {
     maxSeekableTime: E,
     onClick: b,
     onScrubBack: O,
-    onScrubForward: S
-  } = e, [h, C] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
+    onScrubForward: h
+  } = e, [S, C] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
     P.current = e, C(e)
   };
   o.useEffect(() => {
-    null != h && (null == E ? x(null) : x(p(E, g, h)))
-  }, [h, E, g]);
+    null != S && (null == E ? x(null) : x(p(E, g, S)))
+  }, [S, E, g]);
   let I = (0, a.y)(() => {
     null != I.current && T(I.current.getBoundingClientRect())
   });
@@ -49,20 +49,20 @@ function f(e) {
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [I]);
-  let w = e => {
+  let A = e => {
       y(e.clientX)
     },
-    k = o.useCallback(e => {
+    w = o.useCallback(e => {
       let {
         key: t
       } = e;
-      t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
-    }, [O, S]),
-    A = null != j && null != h ? m(j, h, g) : 0,
-    L = (0, c.yv)(A),
-    R = null != h ? h.right - p(t / 100 * g, g, h) : null,
-    M = null != j && null != h ? h.right - j : null,
-    V = null != _ && null != h ? h.right - _ : null;
+      t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != h && (e.preventDefault(), e.stopPropagation(), h())
+    }, [O, h]),
+    k = null != j && null != S ? m(j, S, g) : 0,
+    L = (0, c.yv)(k),
+    R = null != S ? S.right - p(t / 100 * g, g, S) : null,
+    M = null != j && null != S ? S.right - j : null,
+    V = null != _ && null != S ? S.right - _ : null;
   return (0, r.jsxs)("div", {
     className: d.cont,
     ref: I,
@@ -75,15 +75,15 @@ function f(e) {
         i && null != b && b(m(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        i && (null != I.current && T(I.current.getBoundingClientRect()), N(!0), w(e))
+        i && (null != I.current && T(I.current.getBoundingClientRect()), N(!0), A(e))
       },
       onMouseLeave: e => {
         i && (N(!1), y(null))
       },
       onMouseMove: e => {
-        i && D && w(e)
+        i && D && A(e)
       },
-      onKeyDown: k,
+      onKeyDown: w,
       tabIndex: i ? void 0 : -1,
       focusProps: {
         offset: {

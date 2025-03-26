@@ -13,8 +13,8 @@ var r = t(200651),
   u = t(690786),
   m = t(838968),
   x = t(660397),
-  v = t(279604),
-  p = t(981631),
+  p = t(279604),
+  v = t(981631),
   _ = t(705507),
   b = t(388032),
   j = t(610881),
@@ -49,7 +49,7 @@ function h(e) {
   } = e, t = i.useMemo(() => {
     let e = c.C[n];
     if (null == e) return [];
-    let t = e.tier === p.Eu4.TIER_3 ? e.perks.slice(0, -1) : e.perks;
+    let t = e.tier === v.Eu4.TIER_3 ? e.perks.slice(0, -1) : e.perks;
     return null == t ? void 0 : t.map((e, t) => (0, r.jsxs)("div", {
       className: j.perkRow,
       children: [(0, r.jsx)(e.icon, {
@@ -85,8 +85,8 @@ function f(e) {
     } = e,
     c = null != (0, u.Z)(t, s),
     d = null != (0, u.Z)(t, l),
-    [p, _] = i.useState(void 0);
-  return (0, v.KT)(p), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(m.Z, {
+    [v, _] = i.useState(void 0);
+  return (0, p.KT)(v), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(m.Z, {
     guildId: t,
     powerup: s,
     className: j.card,

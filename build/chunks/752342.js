@@ -16,8 +16,8 @@ var o = t(481060),
   p = t(681837),
   b = t(502762),
   y = t(530),
-  v = t(871604),
-  g = t(952124),
+  g = t(871604),
+  v = t(952124),
   m = t(53558),
   I = t(544989),
   j = t(934861),
@@ -69,7 +69,7 @@ function E(e) {
           profileType: O.y0.FULL_SIZE,
           children: [(0, r.jsx)(I.Z, {
             profileType: O.y0.FULL_SIZE,
-            children: (0, r.jsx)(g.Z, {
+            children: (0, r.jsx)(v.Z, {
               user: n,
               guildId: U,
               onCloseProfile: M
@@ -106,7 +106,7 @@ function E(e) {
                 }), (0, r.jsx)(m.Z, {
                   user: n,
                   guildId: U
-                }), (0, r.jsx)(v.Z, {
+                }), (0, r.jsx)(g.Z, {
                   user: n
                 })]
               })]

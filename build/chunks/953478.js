@@ -14,8 +14,8 @@ var i = t(793030),
   u = t(63063),
   m = t(317169),
   x = t(639660),
-  v = t(767218),
-  p = t(981631),
+  p = t(767218),
+  v = t(981631),
   _ = t(705507),
   b = t(388032),
   j = t(785947);
@@ -39,20 +39,20 @@ function g(e) {
         className: j.learnMore,
         variant: "text-xs/semibold",
         children: b.NW.format(_.Z.fXE30d, {
-          helpDeskArticle: u.Z.getArticleURL(p.BhN.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: u.Z.getArticleURL(v.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
       className: j.contentContainer,
-      children: [(0, r.jsx)(v.Z, {
+      children: [(0, r.jsx)(p.Z, {
         count: g,
-        type: v.b.AVAILABLE
-      }), (0, r.jsx)(v.Z, {
+        type: p.b.AVAILABLE
+      }), (0, r.jsx)(p.Z, {
         count: Z,
-        type: v.b.SPENT
-      }), (0, r.jsx)(v.Z, {
+        type: p.b.SPENT
+      }), (0, r.jsx)(p.Z, {
         count: h,
-        type: v.b.TOTAL
+        type: p.b.TOTAL
       })]
     }), (0, r.jsx)(x.Z, {
       guildId: n
@@ -60,8 +60,8 @@ function g(e) {
       className: j.boostButton,
       guild: t,
       analyticsLocation: {
-        page: p.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: p.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: v.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: v.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: s.Ttl.CUSTOM,
       size: s.PhG.LARGE,

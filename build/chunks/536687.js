@@ -19,8 +19,8 @@ var r = n(200651),
   E = n(918701),
   b = n(475595),
   O = n(566078),
-  S = n(164495),
-  h = n(472144),
+  h = n(164495),
+  S = n(472144),
   C = n(602667),
   j = n(644646),
   y = n(604162),
@@ -32,7 +32,7 @@ var r = n(200651),
   T = n(388032),
   I = n(881382);
 
-function w(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function w(e) {
   return e
 }
 
-function k(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,13 +64,13 @@ function k(e, t) {
   }), e
 }
 
-function A(e) {
+function k(e) {
   var t, n, i;
   let {
     transitionState: v,
     onClose: C,
     quest: D,
-    autoplay: A,
+    autoplay: k,
     videoSessionId: L,
     impressionRef: R,
     parentModalOpenStartClockTime: M
@@ -137,10 +137,10 @@ function A(e) {
               onTooltipHide: () => {
                 Q(!1)
               },
-              children: e => (0, r.jsx)(c.P3F, k(w({
+              children: e => (0, r.jsx)(c.P3F, w(A({
                 className: I.progressCont
               }, e), {
-                children: (0, r.jsx)(h.Z, {
+                children: (0, r.jsx)(S.Z, {
                   quest: D,
                   size: 48,
                   percentComplete: z,
@@ -161,7 +161,7 @@ function A(e) {
             videoSessionId: L,
             parentTransitionState: v,
             onOptimisticProgressUpdate: Y,
-            autoplay: A,
+            autoplay: k,
             performanceClockStartTime: M
           }), (0, r.jsxs)("div", {
             className: I.contentFooter,
@@ -179,7 +179,7 @@ function A(e) {
                 size: c.zxk.Sizes.NONE,
                 className: l()(I.copyLinkBtn, I.footerBtn),
                 children: H
-              }), (0, r.jsx)(S.i0, {
+              }), (0, r.jsx)(h.i0, {
                 className: I.claimBtn,
                 size: c.zxk.Sizes.MEDIUM,
                 quest: D,
@@ -227,7 +227,7 @@ function L(e) {
     questContent: g.jn.VIDEO_MODAL,
     minViewTimeSeconds: D.zw,
     trackGuildAndChannelMetadata: !0,
-    children: e => (0, r.jsx)(A, k(w({}, l), {
+    children: e => (0, r.jsx)(k, w(A({}, l), {
       parentModalOpenStartClockTime: i,
       impressionRef: e,
       quest: c,

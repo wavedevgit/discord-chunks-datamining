@@ -15,8 +15,8 @@ var r = t(200651),
   p = t(384816),
   b = t(389190),
   y = t(428927),
-  v = t(228168),
-  g = t(388032),
+  g = t(228168),
+  v = t(388032),
   m = t(658266),
   I = t(363899);
 
@@ -30,21 +30,21 @@ function j(e) {
     guildId: s,
     onClose: c
   } = e;
-  return n === v.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return n === g.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: o,
     currentUser: i,
     displayProfile: l,
     guildId: s,
     onClose: c
-  }) : n === v.oh.MUTUAL_FRIENDS ? (0, r.jsx)(b.Z, {
+  }) : n === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(b.Z, {
     user: o,
     onClose: c
-  }) : n === v.oh.MUTUAL_GUILDS ? (0, r.jsx)(y.Z, {
+  }) : n === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(y.Z, {
     user: o,
     onClose: c
-  }) : n === v.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : n === g.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: o
-  }) : n === v.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : n === g.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: o,
     currentUser: i,
     displayProfile: l,
@@ -67,7 +67,7 @@ function h(e) {
     displayProfile: p,
     guildId: b,
     items: y,
-    initialSection: h = v.oh.USER_INFO,
+    initialSection: h = g.oh.USER_INFO,
     initialSubsection: _,
     onClose: x
   } = e, {
@@ -107,7 +107,7 @@ function h(e) {
         className: m.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
         className: m.emptyText,
-        children: g.NW.string(g.t.Br1ls7)
+        children: v.NW.string(v.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {

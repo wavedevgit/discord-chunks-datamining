@@ -15,8 +15,8 @@ var r = t(200651),
   p = t(496675),
   b = t(700785),
   y = t(785717),
-  v = t(256226),
-  g = t(678738),
+  g = t(256226),
+  v = t(678738),
   m = t(314172),
   I = t(981631),
   j = t(388032),
@@ -33,7 +33,7 @@ function _(e) {
     canManageRoles: f,
     onAddRole: p,
     onRemoveRole: y
-  } = e, g = f && null != a, _ = o.useMemo(() => "roles-".concat((0, i.Z)()), []), x = (0, l.ZP)({
+  } = e, v = f && null != a, _ = o.useMemo(() => "roles-".concat((0, i.Z)()), []), x = (0, l.ZP)({
     id: _,
     isEnabled: !0,
     scrollToStart: I.Cyb,
@@ -43,7 +43,7 @@ function _(e) {
     numRoles: O
   }), P = d.map(e => {
     var o;
-    return (0, r.jsx)(v.Z, {
+    return (0, r.jsx)(g.Z, {
       role: e,
       guildId: c.id,
       disableBorderColor: !0,
@@ -95,7 +95,7 @@ function _(e) {
           "aria-label": Z,
           ref: o
         }, i), t = t = {
-          children: [P, g && (0, r.jsx)(m.Z, {
+          children: [P, v && (0, r.jsx)(m.Z, {
             guild: c,
             guildMember: a,
             numRoles: O,
@@ -125,7 +125,7 @@ function x(e) {
     scrollIntoView: l
   } = e, {
     trackUserProfileAction: s
-  } = (0, y.KZ)(), v = (0, c.e7)([u.ZP], () => u.ZP.getMember(i.id, n.id)), m = (0, c.e7)([f.Z], () => f.Z.getRoles(i.id)), h = null == v ? void 0 : v.roles, x = o.useMemo(() => null == h || 0 === h.length ? [] : Object.values(m).filter(e => h.includes(e.id)).sort((e, n) => {
+  } = (0, y.KZ)(), g = (0, c.e7)([u.ZP], () => u.ZP.getMember(i.id, n.id)), m = (0, c.e7)([f.Z], () => f.Z.getRoles(i.id)), h = null == g ? void 0 : g.roles, x = o.useMemo(() => null == h || 0 === h.length ? [] : Object.values(m).filter(e => h.includes(e.id)).sort((e, n) => {
     var t, r;
     let o = (null === (t = e.tags) || void 0 === t ? void 0 : t.guild_connections) !== null,
       i = (null === (r = n.tags) || void 0 === r ? void 0 : r.guild_connections) !== null;
@@ -142,15 +142,15 @@ function x(e) {
       action: "ADD_ROLE"
     });
     let t = null != h ? h : []; - 1 === t.indexOf(e) && (t = t.concat([e])), d.Z.updateMemberRoles(i.id, n.id, t, [e], [])
-  }, [h, i.id, n.id, s]), E = Z && null != v;
-  return 0 !== x.length || E ? (0, r.jsx)(g.Z, {
+  }, [h, i.id, n.id, s]), E = Z && null != g;
+  return 0 !== x.length || E ? (0, r.jsx)(v.Z, {
     heading: j.NW.string(j.t.LPJmLy),
     scrollIntoView: l,
     children: (0, r.jsx)(_, {
       user: n,
       currentUser: t,
       guild: i,
-      guildMember: v,
+      guildMember: g,
       roles: x,
       highestRole: O,
       canManageRoles: Z,

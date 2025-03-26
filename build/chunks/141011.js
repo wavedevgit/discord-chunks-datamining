@@ -54,7 +54,7 @@ function g(e, t) {
   }), e
 }
 let E = e => null != e && /^http/i.test(e),
-  b = e => null != e && /^blob:http:\/\/localhost:\d+\//i.test(e),
+  b = e => null != e && /^blob:https?:\/\/[^\/]+\//i.test(e),
   v = e => {
     let {
       asset: t,

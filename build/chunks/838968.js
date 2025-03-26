@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Y: () => p,
+  Y: () => v,
   Z: () => _
 });
 var r = t(200651);
@@ -16,7 +16,7 @@ var i = t(120356),
   m = t(388032),
   x = t(709435);
 
-function v(e) {
+function p(e) {
   let {
     dateString: n
   } = e;
@@ -35,7 +35,7 @@ function v(e) {
   })
 }
 
-function p(e) {
+function v(e) {
   let {
     guildId: n,
     powerup: t,
@@ -50,7 +50,7 @@ function p(e) {
         variant: "heading-md/bold",
         children: t.cost
       })]
-    }), null != c && ((null == c ? void 0 : c.ends_at) != null ? (0, r.jsx)(v, {
+    }), null != c && ((null == c ? void 0 : c.ends_at) != null ? (0, r.jsx)(p, {
       dateString: c.ends_at
     }) : (0, r.jsxs)("div", {
       className: x.inline,
@@ -73,11 +73,11 @@ function _(e) {
     className: i,
     children: a
   } = e, c = (0, l.Z)(n, t), u = null != c, m = (null == c ? void 0 : c.ends_at) != null, {
-    onShowMore: v
+    onShowMore: p
   } = (0, d.ZP)(n, t);
   return (0, r.jsx)(s.kL8, {
     "aria-label": t.title,
-    onClick: v,
+    onClick: p,
     className: o()(x.container, {
       [x.active]: u,
       [x.warning]: m

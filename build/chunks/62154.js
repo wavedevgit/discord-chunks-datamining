@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(91433),
   b = t(944043),
   y = t(502762),
-  v = t(530),
-  g = t(740628),
+  g = t(530),
+  v = t(740628),
   m = t(643518),
   I = t(228168),
   j = t(981631),
@@ -51,7 +51,7 @@ function _(e) {
   });
   return (0, r.jsxs)("div", {
     className: h.body,
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(g.Z, {
       user: t,
       profileType: I.y0.FULL_SIZE,
       nickname: M,
@@ -92,7 +92,7 @@ function _(e) {
       onInteraction: S
     }), (0, r.jsx)(y.Z.Overlay, {
       className: h.overlay,
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         currentUser: _,
         displayProfile: Z,

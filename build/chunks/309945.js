@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => v
+  Z: () => p
 });
 var r = t(200651),
   i = t(192379),
@@ -14,17 +14,17 @@ var r = t(200651),
   m = t(388032),
   x = t(576945);
 
-function v(e) {
+function p(e) {
   let {
     guildId: n,
     powerups: t
-  } = e, v = (0, a.e7)([d.Z], () => {
+  } = e, p = (0, a.e7)([d.Z], () => {
     var e, t;
     return null !== (t = null === (e = d.Z.getStateForGuild(n)) || void 0 === e ? void 0 : e.appliedBoosts) && void 0 !== t ? t : 0
-  }), p = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = v - i.useMemo(() => {
+  }), v = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = p - i.useMemo(() => {
     var e, n, t;
-    return null !== (t = null == p ? void 0 : null === (n = p.filter) || void 0 === n ? void 0 : null === (e = n.call(p, e => !e.ended && null == e.endsAt)) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
-  }, [p]);
+    return null !== (t = null == v ? void 0 : null === (n = v.filter) || void 0 === n ? void 0 : null === (e = n.call(v, e => !e.ended && null == e.endsAt)) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
+  }, [v]);
   return _ <= 0 ? null : (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(o.P4T, {

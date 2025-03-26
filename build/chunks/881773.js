@@ -19,8 +19,8 @@ var r = n(200651),
   E = n(957099),
   b = n(312729),
   O = n(223418),
-  S = n(604162),
-  h = n(981631),
+  h = n(604162),
+  S = n(981631),
   C = n(388032),
   j = n(881382);
 
@@ -75,7 +75,7 @@ function N(e) {
   let {
     current: t,
     duration: n
-  } = e, o = null != t ? (0, S.yv)(t) : x, i = null != n ? (0, S.yv)(n) : x;
+  } = e, o = null != t ? (0, h.yv)(t) : x, i = null != n ? (0, h.yv)(n) : x;
   return o = o.padStart(i.length, "0"), (0, r.jsxs)("div", {
     className: l()(j.durationTimeWrapper, j.controlsBarItem),
     children: [(0, r.jsx)(d.Text, {
@@ -152,13 +152,13 @@ function T(e) {
   var t, n;
   let {
     videoRef: i,
-    quest: S,
+    quest: h,
     playerState: x,
     animSpring: T,
     visible: I,
-    seekForwardEnabled: w,
-    hideCaptionBtn: k,
-    handlePlaybackBtnClick: A,
+    seekForwardEnabled: A,
+    hideCaptionBtn: w,
+    handlePlaybackBtnClick: k,
     handleTranscriptBtnClick: L,
     handleCaptionBtnClick: R,
     handleFullScreenBtnClick: M,
@@ -181,24 +181,24 @@ function T(e) {
   }, [i, X]), ea = o.useCallback((e, t) => {
     el({
       questId: e,
-      event: h.rMx.QUEST_VIDEO_VOLUME_CHANGED,
+      event: S.rMx.QUEST_VIDEO_VOLUME_CHANGED,
       properties: {
         volume_threshold: t > 0 && t < 1 ? .5 : t
       }
     })
   }, [el]), ec = o.useCallback(() => {
-    null != i.current && (0 === X ? (es(U), W(!1), ea(S.id, U)) : (Z(X), es(0), W(!0), ea(S.id, 0)))
-  }, [i, X, es, U, W, ea, S.id, Z]), eu = () => {
+    null != i.current && (0 === X ? (es(U), W(!1), ea(h.id, U)) : (Z(X), es(0), W(!0), ea(h.id, 0)))
+  }, [i, X, es, U, W, ea, h.id, Z]), eu = () => {
     ee(!0)
   }, ed = () => {
     ee(!1)
   }, em = o.useCallback(e => {
     switch (e.key) {
       case O.Y1.PLAYBACK:
-        A();
+        k();
         break;
       case O.Y1.SPACE:
-        K || (e.preventDefault(), A());
+        K || (e.preventDefault(), k());
         break;
       case O.Y1.SEEK_BACK:
         V();
@@ -215,7 +215,7 @@ function T(e) {
       case O.Y1.MUTE:
         ec()
     }
-  }, [R, M, A, V, q, ec, K]);
+  }, [R, M, k, V, q, ec, K]);
   o.useEffect(() => {
     null != ei.current && ei.current.focus()
   }, []), o.useEffect(() => (eo({
@@ -241,7 +241,7 @@ function T(e) {
         ariaLabel: ev,
         tooltipLabel: ev,
         shortcut: O.Y1.PLAYBACK,
-        onClick: A,
+        onClick: k,
         ref: ei
       }), (0, r.jsx)(P, {
         iconComponent: E.d,
@@ -256,10 +256,10 @@ function T(e) {
         animationTime: T,
         visible: I,
         onClick: q,
-        disabled: !w,
-        ariaLabel: w ? C.NW.string(C.t.zWDcND) : C.NW.string(C.t.xXh3y8),
-        tooltipLabel: w ? C.NW.string(C.t.zWDcND) : C.NW.string(C.t.xXh3y8),
-        tooltipDelayMs: 1500 * !!w,
+        disabled: !A,
+        ariaLabel: A ? C.NW.string(C.t.zWDcND) : C.NW.string(C.t.xXh3y8),
+        tooltipLabel: A ? C.NW.string(C.t.zWDcND) : C.NW.string(C.t.xXh3y8),
+        tooltipDelayMs: 1500 * !!A,
         shortcut: O.Y1.SEEK_FORWARD
       })]
     }), (0, r.jsxs)(s.animated.div, {
@@ -317,7 +317,7 @@ function T(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              es(e), Z(e), ea(S.id, e), et && (en(!1), B(!1)), Y && e > 0 && W(!1)
+              es(e), Z(e), ea(h.id, e), et && (en(!1), B(!1)), Y && e > 0 && W(!1)
             },
             asValueChanges: e => {
               es(e), et || (en(!0), B(!0))
@@ -344,7 +344,7 @@ function T(e) {
         disabled: x === O.rq.ENDED,
         ariaLabel: C.NW.string(C.t.KCzjTk),
         tooltipLabel: C.NW.string(C.t.KCzjTk)
-      }), !k && (0, r.jsx)(P, {
+      }), !w && (0, r.jsx)(P, {
         iconComponent: g.c,
         animationTime: T,
         visible: I,
