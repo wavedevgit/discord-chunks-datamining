@@ -56,25 +56,26 @@ function x(e) {
     entry: y,
     onSelect: j,
     disableGameProfileLinks: P
-  } = e, O = a.useContext(m.Ir), b = (0, u.Z)({
+  } = e, O = a.useRef(null), b = a.useContext(m.Ir), C = (0, u.Z)({
     userId: n.id,
     guildId: x,
     channelId: null == v ? void 0 : v.id,
-    onAction: O
-  }), C = (0, o.Z)({
+    onAction: b
+  }), N = (0, o.Z)({
     id: n.id,
     label: p.NW.string(p.t["/AXYnJ"])
-  }), N = "application_id" in y.extra ? y.extra.application_id : null, I = (0, o.Z)({
-    id: N,
+  }), I = "application_id" in y.extra ? y.extra.application_id : null, E = (0, o.Z)({
+    id: I,
     label: p.NW.string(p.t["FfCL+/"])
-  }), E = (0, d.dX)(y), w = (0, c.Z)({
+  }), w = (0, d.dX)(y), Z = (0, c.Z)({
     location: "ContentPopoutContextMenu",
-    applicationId: E && !0 !== P ? null === (t = y.extra) || void 0 === t ? void 0 : t.application_id : void 0,
+    applicationId: w && !0 !== P ? null === (t = y.extra) || void 0 === t ? void 0 : t.application_id : void 0,
     source: s.m1.ActivityCardContextMenu,
     trackEntryPointImpression: !0,
     sourceUserId: y.author_id
   });
   return (0, r.jsx)(l.yRy, {
+    targetElementRef: O,
     align: "top",
     position: "right",
     disablePointerEvents: !1,
@@ -91,22 +92,24 @@ function x(e) {
         onSelect: j,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(l.kSQ, {
-            children: [b, null != w && (0, r.jsx)(l.sNh, {
+            children: [C, null != Z && (0, r.jsx)(l.sNh, {
               id: "game-profile",
               label: p.NW.string(p.t.f7aVGh),
               action: e => {
-                w(e), null == O || O()
+                Z(e), null == b || b()
               }
             })]
           }), (0, r.jsxs)(l.kSQ, {
-            children: [C, I]
+            children: [N, E]
           })]
         })
       })
     },
     children: e => (0, r.jsx)(l.ua7, {
       text: p.NW.string(p.t.UKOtz8),
-      children: t => (0, r.jsx)(l.P3F, g(f(g(f({}, t), {
+      children: t => (0, r.jsx)(l.P3F, g(f(g(f({
+        innerRef: O
+      }, t), {
         className: h.menuIcon
       }), e), {
         children: (0, r.jsx)(l.xhG, {

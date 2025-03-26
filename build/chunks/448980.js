@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
-}), n(627341);
+  Z: () => p
+});
 var r = n(200651);
 n(192379);
 var i = n(278074),
@@ -11,8 +11,9 @@ var i = n(278074),
   s = n(649700),
   l = n(16779),
   c = n(981631);
+let u = e => e.type === c.IIU.PLAYING ? [l.ho, l.Xh] : e.type === c.IIU.LISTENING ? [l.ho] : e.type === c.IIU.WATCHING ? [l.ho, l.Rg] : [];
 
-function u(e) {
+function d(e) {
   let {
     entry: t
   } = e;
@@ -23,7 +24,7 @@ function u(e) {
   })
 }
 
-function d(e) {
+function f(e) {
   let {
     entry: t
   } = e;
@@ -34,7 +35,7 @@ function d(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     entry: t
   } = e;
@@ -45,31 +46,25 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     user: t,
     activity: n,
-    className: _
-  } = e, p = (0, s.Z)({
+    className: l
+  } = e, c = (0, s.Z)({
     activity: n,
     user: t
-  }), h = (0, i.EQ)(n).with({
-    type: c.IIU.PLAYING
-  }, () => [l.ho, l.Xh]).with({
-    type: c.IIU.LISTENING
-  }, () => [l.ho]).with({
-    type: c.IIU.WATCHING
-  }, () => [l.ho, l.Rg]).otherwise(() => []);
-  return 0 === h.length ? null : (0, r.jsxs)(a.Gk, {
+  }), p = u(n);
+  return 0 === p.length ? null : (0, r.jsxs)(a.Gk, {
     location: a.Gt.USER_PROFILE,
-    className: _,
-    children: [h.map((e, t) => (0, r.jsx)(e, {
+    className: l,
+    children: [p.map((e, t) => (0, r.jsx)(e, {
       activity: n
-    }, "activity-".concat(t))), (0, i.EQ)(p).when(o.Cb, e => (0, r.jsx)(u, {
+    }, "activity-".concat(t))), (0, i.EQ)(c).when(o.Cb, e => (0, r.jsx)(d, {
       entry: e
-    })).when(o.Q0, e => (0, r.jsx)(d, {
+    })).when(o.Q0, e => (0, r.jsx)(f, {
       entry: e
-    })).when(o.KF, e => (0, r.jsx)(f, {
+    })).when(o.KF, e => (0, r.jsx)(_, {
       entry: e
     })).otherwise(() => null)]
   })

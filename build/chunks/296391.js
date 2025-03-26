@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(678738),
   b = t(151545),
   y = t(744802),
-  g = t(493043),
-  v = t(864141),
+  v = t(493043),
+  g = t(864141),
   m = t(228168),
   I = t(981631),
   j = t(388032),
@@ -55,11 +55,11 @@ function x(e) {
     className: h.scroller,
     fade: !0,
     children: [!R && (M || B) ? (0, r.jsxs)(p.Z, {
-      children: [B && (0, r.jsx)(v.Z, {
+      children: [B && (0, r.jsx)(g.Z, {
         user: n,
         voiceChannel: C,
         onClose: P
-      }), null != T && (0, r.jsx)(g.Z, {
+      }), null != T && (0, r.jsx)(v.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,

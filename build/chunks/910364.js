@@ -15,8 +15,8 @@ var r = t(200651),
   p = t(429467),
   b = t(680295),
   y = t(699516),
-  g = t(5192),
-  v = t(785717),
+  v = t(5192),
+  g = t(785717),
   m = t(221292),
   I = t(687158),
   j = t(510659),
@@ -88,7 +88,7 @@ function D(e) {
     sourceAnalyticsLocations: X = []
   } = e, {
     analyticsLocations: Q
-  } = (0, u.ZP)([...X, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, v.ZB)({
+  } = (0, u.ZP)([...X, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, g.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: G,
@@ -112,7 +112,7 @@ function D(e) {
     ed = (0, c.Z)(ea);
   return (0, r.jsx)(u.Gt, {
     value: Q,
-    children: (0, r.jsx)(v.Mt, {
+    children: (0, r.jsx)(g.Mt, {
       value: $,
       children: (0, r.jsx)(j.NJ, {
         value: ee,
@@ -146,7 +146,7 @@ function D(e) {
                   id: "view-main-profile",
                   label: R.NW.string(R.t.GISTtb),
                   subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
-                    displayName: g.ZP.getName(void 0, void 0, n)
+                    displayName: v.ZP.getName(void 0, void 0, n)
                   }),
                   action: () => {
                     q(), (0, C.openUserProfileModal)(U(B({}, $), {
@@ -162,7 +162,7 @@ function D(e) {
                   id: "view-server-profile",
                   label: R.NW.string(R.t.DisZzM),
                   subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
-                    displayName: g.ZP.getName(D, W, n)
+                    displayName: v.ZP.getName(D, W, n)
                   }),
                   action: () => {
                     q(), (0, C.openUserProfileModal)(U(B({}, $), {

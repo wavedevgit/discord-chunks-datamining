@@ -129,33 +129,34 @@ function et(e) {
   let {
     canVideo: t,
     channel: n,
-    numVideoDevices: i
+    numVideoDevices: o
   } = e, {
-    parentAnalyticsLocation: o
+    parentAnalyticsLocation: s
   } = (0, h.ZP)(), {
-    cameraUnavailable: s,
-    enabled: l
-  } = (0, O.Z)(), d = (0, S.Z)(n), _ = (0, I.Z)({
+    cameraUnavailable: l,
+    enabled: d
+  } = (0, O.Z)(), _ = (0, S.Z)(n), p = (0, I.Z)({
     location: "CallActionButtons"
-  });
+  }), m = i.useRef(null);
   return (0, r.jsxs)("div", {
-    className: a()(Z.wrapper, _ ? Z.experimentActions : Z.actions),
+    className: a()(Z.wrapper, p ? Z.experimentActions : Z.actions),
     children: [(0, r.jsx)(A.Z, {
       iconComponent: c.Dio,
       label: V.NW.string(V.t.WAI6xs),
       className: Z.actionButton,
-      fullRegionButton: _,
+      fullRegionButton: p,
       onClick: () => {
-        (0, j.v)(o, j.d.DISCONNECT), u.Z.stopRinging(n.id)
+        (0, j.v)(s, j.d.DISCONNECT), u.Z.stopRinging(n.id)
       }
     }), t && (0, r.jsx)(c.yRy, {
+      targetElementRef: m,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
         return (0, r.jsx)(k.Z, {
           onClose: t,
-          onInteraction: (0, U.u)("VideoDeviceMenu", o, {
+          onInteraction: (0, U.u)("VideoDeviceMenu", s, {
             entrypoint: G.A5.CARET
           })
         })
@@ -165,25 +166,26 @@ function et(e) {
       animation: c.yRy.Animation.FADE,
       children: (e, t) => {
         let {
-          onClick: a
+          onClick: i
         } = e, {
-          isShown: c
+          isShown: a
         } = t;
         return (0, r.jsx)(C.C, {
+          buttonRef: m,
           join: !0,
-          enabled: l,
+          enabled: d,
           className: Z.actionButton,
           color: "green",
           centerButton: !0,
-          hasPermission: d,
-          cameraUnavailable: s,
+          hasPermission: _,
+          cameraUnavailable: l,
           channel: n,
-          onPopoutClick: i > 1 ? a : null,
-          popoutOpen: c,
+          onPopoutClick: o > 1 ? i : null,
+          popoutOpen: a,
           onCameraUnavailable: T.Z,
           onChange: () => {
             var e;
-            (0, j.v)(o, j.d.JOIN_VIDEO_CALL), f.default.selectVoiceChannel(n.id, !0), (0, E.XU)(null !== (e = n.guild_id) && void 0 !== e ? e : B.ME, n.id)
+            (0, j.v)(s, j.d.JOIN_VIDEO_CALL), f.default.selectVoiceChannel(n.id, !0), (0, E.XU)(null !== (e = n.guild_id) && void 0 !== e ? e : B.ME, n.id)
           }
         })
       }

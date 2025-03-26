@@ -105,6 +105,7 @@ class N extends i.PureComponent {
   }
   renderActivityDiscordTag(e) {
     return (0, r.jsx)(a.yRy, {
+      targetElementRef: this.ref,
       preload: () => (0, u.Z)(e),
       renderPopout: t => (0, r.jsx)(d.Z, E(_({}, t), {
         userId: e.id,
@@ -112,6 +113,7 @@ class N extends i.PureComponent {
       })),
       position: "right",
       children: t => (0, r.jsx)("span", E(_({
+        ref: this.ref,
         className: m.username
       }, t), {
         children: e.username
@@ -146,7 +148,7 @@ class N extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
+    super(...e), b(this, "ref", i.createRef()), b(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
       className: m.tooltip,
       children: [(0, r.jsx)("div", {
         children: h.ZP.getUserTag(e)

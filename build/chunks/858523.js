@@ -43,9 +43,11 @@ let u = e => {
     guild: t,
     children: n,
     onRequestOpen: i,
-    onRequestClose: o
+    onRequestClose: o,
+    targetElementRef: a
   } = e;
   return (0, r.jsx)(l.yRy, {
+    targetElementRef: a,
     onRequestOpen: i,
     onRequestClose: o,
     animation: l.yRy.Animation.NONE,

@@ -1,18 +1,18 @@
 /** Chunk was on 62880 **/
-t.d(n, {
+l.d(n, {
   Hs: () => x,
   ZP: () => j,
   qy: () => h
 });
-var l = t(200651),
-  i = t(192379),
-  a = t(317261),
-  s = t(379357),
-  r = t(442550),
-  c = t(561308),
-  d = t(297781),
-  o = t(443487),
-  u = t(563504);
+var t = l(200651),
+  i = l(192379),
+  a = l(317261),
+  s = l(379357),
+  r = l(442550),
+  c = l(561308),
+  d = l(297781),
+  o = l(443487),
+  u = l(563504);
 let x = [d.E6],
   m = [a._.WEEK];
 
@@ -22,7 +22,7 @@ function h(e) {
 let j = i.memo(e => {
   let {
     entry: n,
-    channel: t,
+    channel: l,
     selected: i
   } = e, {
     largeImage: a
@@ -30,22 +30,22 @@ let j = i.memo(e => {
     entry: n,
     showCoverImage: !1
   }), m = (0, c.Nq)(n);
-  return null != m && h(m) ? (0, l.jsxs)(o.Zb, {
+  return null != m && h(m) ? (0, t.jsxs)(o.Zb, {
     selected: i,
-    children: [(0, l.jsxs)(o.e$, {
-      children: [(0, l.jsx)(o.F9, {
+    children: [(0, t.jsxs)(o.e$, {
+      children: [(0, t.jsx)(o.F9, {
         entry: n,
-        channelId: t.id,
-        guildId: t.guild_id
-      }), (0, l.jsx)(o.ll, {
+        channelId: l.id,
+        guildId: l.guild_id
+      }), (0, t.jsx)(o.ll, {
         children: n.extra.game_name
-      }), (0, l.jsx)(d.Gk, {
+      }), (0, t.jsx)(d.Gk, {
         location: d.Gt.CARD,
-        children: x.map((e, t) => (0, l.jsx)(e, {
+        children: x.map((e, l) => (0, t.jsx)(e, {
           entry: n
-        }, t))
+        }, l))
       })]
-    }), (0, l.jsx)(r.f, {
+    }), (0, t.jsx)(r.f, {
       src: null == a ? void 0 : a.src,
       size: 48,
       className: u.thumbnail,

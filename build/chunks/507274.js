@@ -3,7 +3,7 @@
 n.d(t, {
   M: () => h,
   V: () => m
-});
+}), n(47120);
 var r = n(200651),
   i = n(192379),
   o = n(597442),
@@ -67,7 +67,9 @@ function p(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = i.createContext(void 0),
+let h = i.createContext({
+    inDialog: void 0
+  }),
   m = i.forwardRef(function(e, t) {
     let {
       children: n,
@@ -75,8 +77,8 @@ let h = i.createContext(void 0),
       impression: d,
       disableTrack: p,
       returnRef: m
-    } = e, g = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null);
-    return (0, o.T)(E, {
+    } = e, g = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null), b = i.useRef(null), [v, y] = i.useState(!1), O = v ? b : E;
+    (0, o.T)(O, {
       returnRef: m
     }), i.useContext(l.Z)({
       type: c,
@@ -84,8 +86,15 @@ let h = i.createContext(void 0),
       properties: null == d ? void 0 : d.impressionProperties
     }, {
       disableTrack: p
-    }), i.useImperativeHandle(t, () => E.current), (0, r.jsx)(h.Provider, {
-      value: !0,
+    }), i.useImperativeHandle(t, () => E.current);
+    let I = i.useCallback(e => {
+      v !== e && y(e)
+    }, [v]);
+    return (0, r.jsx)(h.Provider, {
+      value: {
+        inDialog: !0,
+        setFocusLockDisabled: I
+      },
       children: (0, r.jsx)("div", f(u({}, g), {
         ref: E,
         role: "dialog",

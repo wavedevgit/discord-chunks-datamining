@@ -72,38 +72,38 @@ function y(e, t) {
   return i
 }
 let O = {
-  side: h.side,
-  top: h.top,
-  "top-pill": h.topPill
-};
-
-function I(e) {
-  let {
-    className: t,
-    onClick: n,
-    children: r,
-    "aria-expanded": i,
-    "aria-controls": a
-  } = e;
-  return (0, o.jsx)(f.P, {
-    tabIndex: null == n ? -1 : 0,
-    className: l()(h.header, t),
-    onClick: n,
-    "aria-expanded": i,
-    "aria-controls": a,
-    focusProps: {
-      offset: {
-        top: -6
-      }
-    },
-    children: (0, o.jsx)(_.x, {
-      variant: "eyebrow",
-      color: "none",
-      className: h.headerText,
-      children: r
+    side: h.side,
+    top: h.top,
+    "top-pill": h.topPill
+  },
+  I = a.forwardRef(function(e, t) {
+    let {
+      className: n,
+      onClick: r,
+      children: i,
+      "aria-expanded": a,
+      "aria-controls": s
+    } = e;
+    return (0, o.jsx)(f.P, {
+      innerRef: t,
+      tabIndex: null == r ? -1 : 0,
+      className: l()(h.header, n),
+      onClick: r,
+      "aria-expanded": a,
+      "aria-controls": s,
+      focusProps: {
+        offset: {
+          top: -6
+        }
+      },
+      children: (0, o.jsx)(_.x, {
+        variant: "eyebrow",
+        color: "none",
+        className: h.headerText,
+        children: i
+      })
     })
-  })
-}
+  });
 
 function S(e) {
   let {

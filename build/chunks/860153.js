@@ -15,9 +15,9 @@ var a = n(200651),
   m = n(592125),
   _ = n(73249),
   g = n(369171),
-  y = n(545093),
-  b = n(388032),
-  f = n(981636);
+  f = n(545093),
+  y = n(388032),
+  b = n(981636);
 let O = r.memo(function(e) {
   let {
     message: t
@@ -28,21 +28,21 @@ let O = r.memo(function(e) {
       children: [(0, a.jsx)(l.Z, {
         user: t.author,
         size: s.EFr.SIZE_40,
-        className: i()(f.authorAvatar, e)
+        className: i()(b.authorAvatar, e)
       }), (0, a.jsxs)("div", {
-        className: i()(f.author, e),
+        className: i()(b.author, e),
         children: [(0, a.jsx)(s.Rny, {
           children: (0, a.jsx)("div", {
-            className: f.authorNameWrapper,
+            className: b.authorNameWrapper,
             children: (0, a.jsx)(p.Z, {
-              className: f.authorName,
+              className: b.authorName,
               message: t,
               channel: n
             })
           })
         }), (0, a.jsx)(d.Z, {
           timestamp: t.timestamp,
-          className: f.timestamp,
+          className: b.timestamp,
           tooltipPosition: "bottom"
         })]
       })]
@@ -58,7 +58,7 @@ function h(e) {
     onClose: o
   } = e, c = null === (t = n.sourceMetadata) || void 0 === t ? void 0 : t.message;
   return (0, a.jsxs)("div", {
-    className: f.topBar,
+    className: b.topBar,
     children: [null != c && (0, a.jsx)(O, {
       message: c
     }), (0, a.jsx)(_.Z, {
@@ -66,11 +66,11 @@ function h(e) {
       hideMediaOptions: r
     }), (0, a.jsx)(g.ZP, {
       mode: g.lx.PINNED,
-      children: e => (0, a.jsx)(y.Z, {
+      children: e => (0, a.jsx)(f.Z, {
         onClick: o,
         icon: s.Dio,
-        tooltip: b.NW.string(b.t.cpT0Cg),
-        className: i()(f.closeButton, e)
+        tooltip: y.NW.string(y.t.cpT0Cg),
+        className: i()(b.closeButton, e)
       })
     })]
   })

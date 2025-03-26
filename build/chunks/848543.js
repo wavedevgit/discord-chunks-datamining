@@ -82,112 +82,116 @@ function Z(e) {
     }
     return i
   }(e, ["channel", "iconClassName", "className", "innerClassName"]);
-  let L = (0, m.Q3)("SoundBoardRTCPanelButton"),
+  let L = i.useRef(null),
+    R = (0, m.Q3)("SoundBoardRTCPanelButton"),
     {
-      coloredIconsEnabled: R
+      coloredIconsEnabled: D
     } = (0, _.Z)({
       location: "ConnectedRTCConnection"
     }),
     {
-      mute: D,
-      suppress: k
+      mute: k,
+      suppress: M
     } = (0, E.Z)(t),
-    M = (0, a.e7)([O.Z], () => O.Z.isDeaf()),
-    U = D || k || M,
-    [G, W] = i.useState(!1),
-    V = t.getGuildId(),
-    B = (0, v.sR)({
-      isSoundboardButtonDisabled: U
+    U = (0, a.e7)([O.Z], () => O.Z.isDeaf()),
+    G = k || M || U,
+    [W, V] = i.useState(!1),
+    B = t.getGuildId(),
+    H = (0, v.sR)({
+      isSoundboardButtonDisabled: G
     }),
-    [H, F] = (0, b.cv)(B),
+    [F, z] = (0, b.cv)(H),
     {
-      analyticsLocations: z,
-      parentAnalyticsLocation: Y
+      analyticsLocations: Y,
+      parentAnalyticsLocation: K
     } = (0, h.ZP)(p.Z.SOUNDBOARD_BUTTON);
 
-  function K(e) {
-    null != V && (0, d.jW)(e, async () => {
+  function q(e) {
+    null != B && (0, d.jW)(e, async () => {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => (0, r.jsx)(e, A(j({
-        guildId: V
+        guildId: B
       }, t), {
         onInteraction: (0, g.u)("SoundboardContextMenu", p.Z.RTC_PANEL)
       }))
     })
   }
   let {
-    Component: q,
-    play: Q,
+    Component: Q,
+    play: X,
     events: {
-      onMouseEnter: X,
-      onMouseLeave: J
+      onMouseEnter: J,
+      onMouseLeave: $
     }
-  } = (0, c.j)(), $ = e => (0, r.jsx)(u.yRy, {
+  } = (0, c.j)(), ee = e => (0, r.jsx)(u.yRy, {
+    targetElementRef: L,
     animation: u.yRy.Animation.FADE,
-    shouldShow: G,
+    shouldShow: W,
     position: "top",
-    onRequestClose: () => W(!1),
+    onRequestClose: () => V(!1),
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
       return (0, r.jsx)(I.Z, {
-        guildId: V,
+        guildId: B,
         channel: t,
         onClose: n,
-        gridNotice: H === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(y.o, {
+        gridNotice: F === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(y.o, {
           onClose: n,
-          markAsDismissed: F
+          markAsDismissed: z
         }),
         analyticsSource: "rtc panel"
       })
     },
     children: t => (0, r.jsx)("div", {
+      ref: L,
       children: (0, r.jsx)(u.zxk, A(j(A(j({}, e, t), {
         className: o()(Z, {
-          [P.buttonActive]: G && !R,
-          [P.greyButtonActive]: G && R,
-          [P.disabled]: U
+          [P.buttonActive]: W && !D,
+          [P.greyButtonActive]: W && D,
+          [P.disabled]: G
         }),
         wrapperClassName: Z,
         innerClassName: x,
-        disabled: U,
+        disabled: G,
         onClick: () => {
           var t;
-          null != H && H !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && F(S.L.UNKNOWN), null == e || null === (t = e.onClick) || void 0 === t || t.call(e), W(!G), Q(), (0, f.v)(Y, f.d.SOUNDBOARD)
+          null != F && F !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && z(S.L.UNKNOWN), null == e || null === (t = e.onClick) || void 0 === t || t.call(e), V(!W), X(), (0, f.v)(K, f.d.SOUNDBOARD)
         },
         onMouseEnter: t => {
           var n, r;
-          null === (n = w.onMouseEnter) || void 0 === n || n.call(w, t), null == e || null === (r = e.onMouseEnter) || void 0 === r || r.call(e), X()
+          null === (n = w.onMouseEnter) || void 0 === n || n.call(w, t), null == e || null === (r = e.onMouseEnter) || void 0 === r || r.call(e), J()
         },
         onMouseLeave: t => {
           var n, r;
-          null === (n = w.onMouseLeave) || void 0 === n || n.call(w, t), null == e || null === (r = e.onMouseLeave) || void 0 === r || r.call(e), J()
+          null === (n = w.onMouseLeave) || void 0 === n || n.call(w, t), null == e || null === (r = e.onMouseLeave) || void 0 === r || r.call(e), $()
         },
-        onContextMenu: K,
+        onContextMenu: q,
         fullWidth: !0,
-        size: L ? u.zxk.Sizes.MEDIUM : u.zxk.Sizes.SMALL
+        size: R ? u.zxk.Sizes.MEDIUM : u.zxk.Sizes.SMALL
       }), w), {
-        children: (0, r.jsx)(q, {
+        children: (0, r.jsx)(Q, {
           className: l,
           size: "sm",
-          color: R ? "currentColor" : G ? "white" : u.TVs.colors.INTERACTIVE_ACTIVE
+          color: D ? "currentColor" : W ? "white" : u.TVs.colors.INTERACTIVE_ACTIVE
         })
       }))
     })
-  }), ee = i.useCallback(() => {
-    U || W(!G)
-  }, [U, G]);
+  }), et = i.useCallback(() => {
+    G || V(!W)
+  }, [G, W]);
   return (0, N.yp)({
     event: C.CkL.TOGGLE_SOUNDBOARD,
-    handler: ee
+    handler: et
   }), (0, r.jsx)(h.Gt, {
-    value: z,
+    value: Y,
     children: (0, r.jsx)(u.ua7, {
-      text: D ? T.NW.string(T.t["Ox4/zc"]) : k ? T.NW.string(T.t["+YBKYG"]) : M ? T.NW.string(T.t.X1lQlp) : T.NW.string(T.t["6EJvHh"]),
-      children: e => $(e)
+      targetElementRef: L,
+      text: k ? T.NW.string(T.t["Ox4/zc"]) : M ? T.NW.string(T.t["+YBKYG"]) : U ? T.NW.string(T.t.X1lQlp) : T.NW.string(T.t["6EJvHh"]),
+      children: e => ee(e)
     })
   })
 }

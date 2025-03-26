@@ -1,25 +1,25 @@
 /** Chunk was on 27278 **/
 t.d(n, {
-  Z: () => l
+  Z: () => c
 });
 var o = t(200651),
   r = t(481060),
   a = t(870745),
   i = t(981631),
-  c = t(388032);
+  l = t(388032);
 
-function l(e) {
+function c(e) {
   let {
     onClose: n,
     onSelect: t,
-    application: l,
-    channelId: _
-  } = e, s = (0, a.Z)(l, _, i.IlC.POPOUT);
+    application: c,
+    channelId: u
+  } = e, s = (0, a.Z)(c, u, i.IlC.POPOUT);
   return (0, o.jsx)(r.v2r, {
     navId: "activity-popout-overflow-popout",
     onClose: n,
     onSelect: t,
-    "aria-label": c.NW.string(c.t.SS9Y6O),
+    "aria-label": l.NW.string(l.t.SS9Y6O),
     children: s
   })
 }

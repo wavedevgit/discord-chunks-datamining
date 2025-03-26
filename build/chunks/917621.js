@@ -62,32 +62,34 @@ function C(e) {
   let {
     member: t,
     className: n,
-    guildId: i,
-    renderUserPopout: o
-  } = e;
+    guildId: o,
+    renderUserPopout: s
+  } = e, c = i.useRef(null);
   return t.unknownUser ? (0, r.jsx)("div", {
     className: E.partyMember,
     children: (0, r.jsx)(l.qEK, {
-      src: t.user.getAvatarURL(i, (0, l.pxk)(l.EFr.SIZE_24)),
+      src: t.user.getAvatarURL(o, (0, l.pxk)(l.EFr.SIZE_24)),
       size: l.EFr.SIZE_24,
       className: a()(E.partyAvatar, n),
       "aria-label": t.user.username
     })
   }) : (0, r.jsx)(l.yRy, {
+    targetElementRef: c,
     position: "left",
-    renderPopout: e => o(t.user, e),
-    preload: () => (0, u.Z)(t.user.id, t.user.getAvatarURL(i, (0, l.pxk)(l.EFr.SIZE_80)), {
-      guildId: i
+    renderPopout: e => s(t.user, e),
+    preload: () => (0, u.Z)(t.user.id, t.user.getAvatarURL(o, (0, l.pxk)(l.EFr.SIZE_80)), {
+      guildId: o
     }),
     children: e => {
-      var o;
+      var i;
       return (0, r.jsx)(l.ua7, {
-        text: null !== (o = t.nick) && void 0 !== o ? o : h.ZP.getName(t.user),
-        children: o => (0, r.jsx)(l.P3F, j(N({
+        text: null !== (i = t.nick) && void 0 !== i ? i : h.ZP.getName(t.user),
+        children: i => (0, r.jsx)(l.P3F, j(N({
+          innerRef: c,
           className: E.partyMemberKnown
-        }, o, e), {
+        }, i, e), {
           children: (0, r.jsx)(l.qEK, {
-            src: t.user.getAvatarURL(i, (0, l.pxk)(l.EFr.SIZE_24)),
+            src: t.user.getAvatarURL(o, (0, l.pxk)(l.EFr.SIZE_24)),
             size: l.EFr.SIZE_24,
             className: a()(E.partyAvatar, n),
             "aria-label": t.user.username

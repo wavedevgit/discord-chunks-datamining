@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(172351),
   b = t(280885),
   y = t(900927),
-  g = t(678738),
-  v = t(179828),
+  v = t(678738),
+  g = t(179828),
   m = t(228168),
   I = t(388032),
   j = t(330724);
@@ -50,19 +50,19 @@ function h(e) {
       channel: E,
       guildId: null !== (n = null == _ ? void 0 : _.guildId) && void 0 !== n ? n : void 0,
       onClick: O
-    }), null != P && (0, r.jsx)(v.Z, {
+    }), null != P && (0, r.jsx)(g.Z, {
       user: t,
       currentUser: h,
       guild: P,
       scrollIntoView: x === m.Tb.ROLES
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(v.Z, {
       heading: I.NW.string(I.t["A//N4u"]),
       children: (0, r.jsx)(y.Z, {
         userId: t.id,
         guildId: null == _ ? void 0 : _.guildId,
         tooltipDelay: m.vB
       })
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(v.Z, {
       heading: S,
       scrollIntoView: x === m.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {

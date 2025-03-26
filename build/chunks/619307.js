@@ -215,6 +215,7 @@ function L(e) {
       null === (e = W.current) || void 0 === e || e.focus()
     }
   }, [u, W]), (0, r.jsx)(d.y, {
+    targetElementRef: W,
     spacing: 0,
     animation: d.y.Animation.NONE,
     shouldShow: Z,

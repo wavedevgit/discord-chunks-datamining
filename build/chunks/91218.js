@@ -1,57 +1,58 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => u
 });
-var r = n(200651);
-n(192379);
-var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
-  s = n(388032),
-  l = n(487230);
-
-function c(e) {
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
+  s = n(481060),
+  l = n(388032),
+  c = n(487230);
+let u = i.forwardRef(function(e, t) {
   let {
-    className: t,
-    src: n,
-    unicodeEmoji: i,
-    name: c,
-    size: u = 20,
-    enableTooltip: d = !0,
-    enableHeight: f = !0,
-    onClick: _
+    className: n,
+    src: i,
+    unicodeEmoji: o,
+    name: u,
+    size: d = 20,
+    enableTooltip: f = !0,
+    enableHeight: _ = !0,
+    onClick: p
   } = e;
-  if (null == n && null == i) return null;
-  let p = () => {
+  if (null == i && null == o) return null;
+  let h = () => {
     let e = (0, r.jsx)("img", {
+      ref: t,
       alt: "",
-      "aria-label": s.NW.formatToPlainString(s.t["9+YWrK"], {
-        name: c
+      "aria-label": l.NW.formatToPlainString(l.t["9+YWrK"], {
+        name: u
       }),
-      className: o()(l.roleIcon, t, {
-        [l.clickable]: null != _
+      className: a()(c.roleIcon, n, {
+        [c.clickable]: null != p
       }),
-      height: f ? u : void 0,
-      src: n,
-      width: u
+      height: _ ? d : void 0,
+      src: i,
+      width: d
     });
-    return (null != i && (e = (0, r.jsx)("img", {
+    return (null != o && (e = (0, r.jsx)("img", {
+      ref: t,
       alt: "",
-      "aria-label": i.allNamesString,
-      className: o()(l.roleIcon, t, {
-        [l.clickable]: null != _
+      "aria-label": o.allNamesString,
+      className: a()(c.roleIcon, n, {
+        [c.clickable]: null != p
       }),
-      height: f ? u : void 0,
-      src: i.url,
-      width: u
-    })), null == _) ? (0, r.jsx)(a.tEY, {
+      height: _ ? d : void 0,
+      src: o.url,
+      width: d
+    })), null == p) ? (0, r.jsx)(s.tEY, {
       offset: {
         left: 5
       },
       children: e
-    }) : (0, r.jsx)(a.P3F, {
-      onClick: _,
+    }) : (0, r.jsx)(s.P3F, {
+      onClick: p,
       tag: "span",
       focusProps: {
         offset: {
@@ -61,11 +62,11 @@ function c(e) {
       children: e
     })
   };
-  return (0, r.jsx)(a.DY3, {
-    text: c,
+  return (0, r.jsx)(s.DY3, {
+    text: u,
     "aria-label": !1,
-    shouldShow: d,
+    shouldShow: f,
     element: "span",
-    children: p()
+    children: h()
   })
-}
+})

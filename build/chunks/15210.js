@@ -64,7 +64,7 @@ function b(e) {
     guildId: g,
     validInviteKey: b,
     ctaType: v
-  } = (0, f.Z)(t), y = i.useCallback(() => {
+  } = (0, f.ZP)(t), y = i.useCallback(() => {
     (0, c.X)(g), null == h || h()
   }, [g, h]), O = i.useCallback(() => {
     (0, l.uL)(_.Z5c.GUILD_MEMBER_VERIFICATION(g)), null == h || h()
@@ -87,27 +87,27 @@ function b(e) {
     submitting: n
   }), [n]);
   switch (v) {
-    case f.s.IS_MEMBER:
+    case f.sE.IS_MEMBER:
       return (0, r.jsx)(o.zxk, E(m({}, A), {
         onClick: y,
         children: p.NW.string(p.t.KLOhbG)
       }));
-    case f.s.HAS_APPLICATION:
+    case f.sE.HAS_APPLICATION:
       return (0, r.jsx)(o.zxk, E(m({}, A), {
         onClick: O,
         children: p.NW.string(p.t["4yfIDg"])
       }));
-    case f.s.APPLY_TO_JOIN:
+    case f.sE.APPLY_TO_JOIN:
       return (0, r.jsx)(o.zxk, E(m({}, A), {
         onClick: S,
         children: p.NW.string(p.t["7XdMW1"])
       }));
-    case f.s.LURK_DISCOVERABLE:
+    case f.sE.LURK_DISCOVERABLE:
       return (0, r.jsx)(o.zxk, E(m({}, A), {
         onClick: T,
         children: p.NW.string(p.t.eb9gDA)
       }));
-    case f.s.JOIN_VIA_INVITE:
+    case f.sE.JOIN_VIA_INVITE:
       return (0, r.jsx)(o.zxk, E(m({}, A), {
         onClick: I,
         children: p.NW.string(p.t.eb9gDA)

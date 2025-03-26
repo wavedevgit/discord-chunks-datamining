@@ -1,111 +1,110 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
-}), n(627341), n(47120);
+  Z: () => T
+}), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(278074),
-  a = n(442837),
-  s = n(704215),
-  l = n(481060),
-  c = n(980591),
-  u = n(381586),
-  d = n(243778),
-  f = n(970731),
-  _ = n(158776),
-  p = n(594174),
-  h = n(81570),
-  m = n(652853),
-  g = n(228168),
-  E = n(981631),
-  b = n(388032),
-  v = n(937349),
-  y = n(425637),
-  O = n(685741);
-let I = 200,
-  S = 32,
-  T = 30;
+  o = n(442837),
+  a = n(704215),
+  s = n(481060),
+  l = n(980591),
+  c = n(381586),
+  u = n(243778),
+  d = n(970731),
+  f = n(158776),
+  _ = n(594174),
+  p = n(81570),
+  h = n(652853),
+  m = n(228168),
+  g = n(981631),
+  E = n(388032),
+  b = n(937349),
+  v = n(425637),
+  y = n(685741);
+let O = 200,
+  I = 32,
+  S = 30;
 
-function A(e) {
+function T(e) {
   let {
     sourceType: t,
     children: n,
-    user: A
+    user: T
   } = e, {
-    profileType: N
-  } = (0, m.z)(), C = (0, h.T)({
+    profileType: A
+  } = (0, h.z)(), N = (0, p.T)({
     location: "UserProfilePopoutInteractionCoachmark"
-  }), R = (0, a.e7)([p.default], () => {
+  }), C = (0, o.e7)([_.default], () => {
     var e;
-    return (null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === A.id
-  }), P = (0, a.e7)([_.Z], () => _.Z.findActivity(A.id, e => {
+    return (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === T.id
+  }), R = (0, o.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
     let {
       type: t
     } = e;
-    return t === E.IIU.CUSTOM_STATUS
-  })), w = !R && N === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => C && null == P).with(g.n_.STATUS, () => C).with(g.n_.ACTIVITY, () => !C).exhaustive(), [D, L] = i.useState(!1);
-  (0, c.Z)(() => L(!0), w ? I : null);
+    return t === g.IIU.CUSTOM_STATUS
+  })), P = () => !C && A === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? N && null == R : t === m.n_.STATUS ? N : t === m.n_.ACTIVITY && !N), [w, D] = i.useState(!1);
+  (0, l.Z)(() => D(!0), P() ? O : null);
   let {
-    asset: x,
-    assetClassName: M,
-    className: k,
-    content: j,
-    header: U,
-    spacing: G,
-    dismissibleContentType: B
-  } = C ? {
-    asset: O,
-    assetClassName: v.profileImage,
-    className: v.profileCoachmark,
-    content: b.NW.string(b.t.HEGlIC),
-    header: b.NW.string(b.t["R/RaKy"]),
-    spacing: T,
-    dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
-  } : {
+    asset: L,
+    assetClassName: x,
+    className: M,
+    content: k,
+    header: j,
+    spacing: U,
+    dismissibleContentType: G
+  } = N ? {
     asset: y,
-    assetClassName: void 0,
-    className: v.activityCoachmark,
-    content: b.NW.string(b.t.LQ32TU),
-    header: b.NW.string(b.t.XDBiPT),
+    assetClassName: b.profileImage,
+    className: b.profileCoachmark,
+    content: E.NW.string(E.t.HEGlIC),
+    header: E.NW.string(E.t["R/RaKy"]),
     spacing: S,
-    dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, F = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = D && !F ? [B] : [], [Z, H] = (0, d.US)(V);
-  return (0, r.jsx)(l.yRy, {
+    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
+  } : {
+    asset: v,
+    assetClassName: void 0,
+    className: b.activityCoachmark,
+    content: E.NW.string(E.t.LQ32TU),
+    header: E.NW.string(E.t.XDBiPT),
+    spacing: I,
+    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
+  }, B = (0, c.N)(a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = w && !B ? [G] : [], [V, Z] = (0, u.US)(F);
+  return (0, r.jsx)(s.yRy, {
     align: "center",
-    position: t === g.n_.AVATAR ? "left" : "right",
-    shouldShow: null != Z,
-    spacing: G,
+    position: t === m.n_.AVATAR ? "left" : "right",
+    shouldShow: null != V,
+    spacing: U,
     renderPopout: e => {
       let {
         position: t,
         closePopout: n,
         setPopoutRef: i
       } = e;
-      return (0, r.jsx)(l.VqE, {
+      return (0, r.jsx)(s.VqE, {
         ref: i,
-        children: (0, r.jsx)(f.ZP, {
-          className: k,
+        children: (0, r.jsx)(d.ZP, {
+          className: M,
           asset: (0, r.jsx)("img", {
             alt: "",
-            src: x,
-            className: M
+            src: L,
+            className: x
           }),
-          buttonCTA: b.NW.string(b.t["+IrDzM"]),
-          buttonLayout: f._F.STACKED,
+          buttonCTA: E.NW.string(E.t["+IrDzM"]),
+          buttonLayout: d._F.STACKED,
           buttonProps: {
-            color: l.Ttl.BRAND_INVERTED,
-            size: l.zxk.Sizes.SMALL
+            color: s.Ttl.BRAND_INVERTED,
+            size: s.zxk.Sizes.SMALL
           },
-          caretPosition: "right" === t ? f.DF.LEFT_CENTER : f.DF.RIGHT_CENTER,
-          content: (0, r.jsx)(l.Text, {
+          caretPosition: "right" === t ? d.DF.LEFT_CENTER : d.DF.RIGHT_CENTER,
+          content: (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: j
+            children: k
           }),
-          header: U,
-          headerClassName: v.tooltipHeader,
-          markAsDismissed: H,
+          header: j,
+          headerClassName: b.tooltipHeader,
+          markAsDismissed: Z,
           onClick: n
         })
       })

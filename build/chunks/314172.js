@@ -69,6 +69,7 @@ function v(e) {
   if (!(0, i.e7)([d.Z], () => d.Z.can(_.Plq.MANAGE_ROLES, t))) return null;
   let I = e => (0, u.Gy)(t.id, e.id) && !e.managed && d.Z.isRoleHigher(t, E, e) && -1 === n.roles.indexOf(e.id);
   return (0, r.jsx)(a.y, {
+    targetElementRef: y,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -88,6 +89,7 @@ function v(e) {
       "aria-label": !1,
       shouldShow: m > 0,
       children: (0, r.jsxs)(f.kF, b(g({
+        ref: y,
         className: h.button,
         color: o.zx.Colors.CUSTOM,
         themeColor: "none",

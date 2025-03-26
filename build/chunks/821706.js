@@ -100,17 +100,21 @@ function b(e) {
   var {
     user: t,
     analyticsLocation: n
-  } = e, i = m(e, ["user", "analyticsLocation"]);
-  let o = (0, l.Y)({
-    user: t,
-    analyticsLocation: n
-  });
-  return 0 === o.length ? (0, r.jsx)(s.oY, h(_({}, i), {
+  } = e, o = m(e, ["user", "analyticsLocation"]);
+  let a = (0, l.Y)({
+      user: t,
+      analyticsLocation: n
+    }),
+    c = i.useRef(null);
+  return 0 === a.length ? (0, r.jsx)(s.oY, h(_({}, o), {
     disabled: !0
   })) : (0, r.jsx)(l.Z, {
-    menuItems: o,
-    children: e => (0, r.jsx)("div", h(_({}, e), {
-      children: (0, r.jsx)(s.oY, _({}, i))
+    targetElementRef: c,
+    menuItems: a,
+    children: e => (0, r.jsx)("div", h(_({
+      ref: c
+    }, e), {
+      children: (0, r.jsx)(s.oY, _({}, o))
     }))
   })
 }

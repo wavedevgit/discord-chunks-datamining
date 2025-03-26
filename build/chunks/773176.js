@@ -276,25 +276,25 @@ function em(e) {
       isFocused: a,
       isGuildInviteReminder: n.type === el.uaV.GUILD_INVITE_REMINDER
     }
-  }(e), em = i.useCallback(() => {
+  }(e), em = i.useRef(null), eg = i.useCallback(() => {
     B || z.default.track(el.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id
     }), ea({
       moreUtilities: !B
     })
-  }, [B, ea, n]), eg = i.useCallback(() => {
+  }, [B, ea, n]), eb = i.useCallback(() => {
     ea({
       emojiPicker: !q
     })
-  }, [q, ea]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [ev, ey] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ev === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
-    eO(!0)
-  }, []), eN = i.useCallback(() => {
-    eO(!1)
-  }, []), eI = i.useCallback((e, t) => {
-    ey(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
-  }, [ey]), {
-    canShowReactionsOnMessageHover: eP
+  }, [q, ea]), eC = (0, D.$R)(t), ev = n.hasFlag(el.iLy.CROSSPOSTED), [ey, ex] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ej = ey === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, eE] = i.useState(!1), eN = i.useCallback(() => {
+    eE(!0)
+  }, []), eI = i.useCallback(() => {
+    eE(!1)
+  }, []), eP = i.useCallback((e, t) => {
+    ex(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
+  }, [ex]), {
+    canShowReactionsOnMessageHover: eS
   } = b.ZP.useExperiment({
     location: "ExpandingButtons"
   }, {
@@ -305,10 +305,10 @@ function em(e) {
   }, {
     autoTrackExposure: !0
   });
-  let eS = (0, T.Z)(t, n),
-    eZ = (0, Z.Nt)(),
-    eT = eS && eZ && !n.hasPotions(),
-    eA = i.useCallback(e => {
+  let eZ = (0, T.Z)(t, n),
+    eT = (0, Z.Nt)(),
+    eA = eZ && eT && !n.hasPotions(),
+    ew = i.useCallback(e => {
       try {
         (0, N.qc)(t.id, n.id, e)
       } catch (e) {
@@ -329,7 +329,7 @@ function em(e) {
         label: es.NW.string(es.t.NpHUi4),
         icon: d.idN,
         onClick: () => (0, et.zW)(t)
-      }, "configure") : null, eb ? (0, r.jsx)(ee.sF, {
+      }, "configure") : null, eC ? (0, r.jsx)(ee.sF, {
         label: es.NW.string(es.t.RpE9k5),
         icon: d.z7b,
         onClick: () => (0, et.B8)(t, n)
@@ -351,19 +351,19 @@ function em(e) {
         onClick: e => (0, et.HH)(t, n, e)
       }, "reply-self") : null]
     }) : null, _ && !ed ? (0, r.jsxs)(r.Fragment, {
-      children: [eP && !R ? (0, r.jsxs)(r.Fragment, {
+      children: [eS && !R ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(ef, {
           channel: t,
           message: n
         }), (0, r.jsx)(ee.fO, {})]
       }) : null, (0, r.jsx)(en.Z, {
-        togglePopout: eg,
+        togglePopout: eb,
         renderEmojiPicker: e_,
         shouldShow: q,
         isFocused: ep,
         channel: t,
         message: n
-      }), eT ? (0, r.jsx)(ee.sF, {
+      }), eA ? (0, r.jsx)(ee.sF, {
         label: es.NW.string(es.t.icaJW1),
         icon: d.l22,
         onClick: () => {
@@ -372,7 +372,7 @@ function em(e) {
           }), (0, S.s)({
             channelId: t.id,
             message: n,
-            onRedeem: eA,
+            onRedeem: ew,
             onClose: I.Qy,
             source: P.YD.MessageExpandingButtons
           })
@@ -389,10 +389,10 @@ function em(e) {
     }, "edit") : null, w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.I3ltXF),
       icon: x.Z,
-      onClick: () => eI(t, n),
-      onTooltipShow: eE,
-      onTooltipHide: eN,
-      showNewBadge: !ej && ex
+      onClick: () => eP(t, n),
+      onTooltipShow: eN,
+      onTooltipHide: eI,
+      showNewBadge: !eO && ej
     }, "forward") : null, O && !w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.rBIGBA),
       icon: d.or_,
@@ -402,10 +402,10 @@ function em(e) {
       icon: d.or_,
       onClick: () => (0, et.qe)(t, n)
     }, "view-thread") : null, g ? (0, r.jsx)(ee.sF, {
-      label: eC ? es.NW.string(es.t["1kWJAg"]) : es.NW.string(es.t["MFGE5+"]),
+      label: ev ? es.NW.string(es.t["1kWJAg"]) : es.NW.string(es.t["MFGE5+"]),
       icon: d.MqZ,
       onClick: () => (0, et.Xl)(t, n),
-      disabled: eC
+      disabled: ev
     }, "publish") : null, a && (ed || R) ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.oyYWHB),
       icon: d.XHJ,
@@ -413,6 +413,7 @@ function em(e) {
       dangerous: !0,
       separator: !R
     }, "delete") : null, R && a ? null : (0, r.jsx)(d.yRy, {
+      targetElementRef: em,
       renderPopout: e => {
         let {
           updatePosition: i,
@@ -427,7 +428,7 @@ function em(e) {
         })
       },
       shouldShow: B,
-      onRequestClose: em,
+      onRequestClose: eg,
       position: "left",
       align: "top",
       animation: d.yRy.Animation.NONE,
@@ -452,10 +453,11 @@ function em(e) {
           isShown: l
         } = t;
         return (0, r.jsx)(ee.sF, eu({
+          ref: em,
           label: es.NW.string(es.t.UKOtz8),
           icon: d.xhG,
           selected: l,
-          onClick: em
+          onClick: eg
         }, i), "more")
       }
     })]

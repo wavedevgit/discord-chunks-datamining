@@ -1,6 +1,6 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  Z: () => g
+  Z: () => v
 }), t(653041);
 var r = t(442837),
   o = t(468363),
@@ -16,12 +16,12 @@ var r = t(442837),
   b = t(981631),
   y = t(388032);
 
-function g(e) {
+function v(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: g,
-    initialSubsection: v
+    guildId: v,
+    initialSubsection: g
   } = e, {
     voiceActivityStatusEnabled: m
   } = (0, o.U)({
@@ -36,7 +36,7 @@ function g(e) {
     voiceActivity: O
   } = (0, a.Z)({
     userId: n.id,
-    guildId: g,
+    guildId: v,
     surface: "use-user-profile-modal-tab-bar-items"
   }), Z = n.id === (null == t ? void 0 : t.id), P = (0, r.e7)([l.Z, i.Z], () => {
     let e = Z ? l.Z.getStatus() : i.Z.getStatus(n.id);
@@ -54,7 +54,7 @@ function g(e) {
   return !P && (N || m && null == h && null == O && null != x) ? w.push({
     section: p.oh.ACTIVITY,
     text: y.NW.string(y.t.chq59f)
-  }) : (E || null == _ && v === p.Tb.RECENT_ACTIVITY) && w.push({
+  }) : (E || null == _ && g === p.Tb.RECENT_ACTIVITY) && w.push({
     section: p.oh.ACTIVITY,
     text: y.NW.string(y.t.chq59f)
   }), !Z && A && (w.push({

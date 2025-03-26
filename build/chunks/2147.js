@@ -279,6 +279,7 @@ class eN extends r.PureComponent {
           }), (0, i.jsxs)("div", {
             className: ei.buttonRow,
             children: [(0, i.jsx)(h.yRy, {
+              targetElementRef: this.defaultReactionButtonRef,
               renderPopout: this.renderEmojiPicker,
               position: "right",
               animation: h.yRy.Animation.NONE,
@@ -297,6 +298,7 @@ class eN extends r.PureComponent {
                   }
                   return e
                 }({}, e), n = n = {
+                  buttonRef: this.defaultReactionButtonRef,
                   disabled: !x,
                   onClick: t => {
                     var n;
@@ -751,7 +753,7 @@ class eN extends r.PureComponent {
   }
   constructor(e) {
     var t, n;
-    super(e), el(this, "renderEmojiPicker", e => {
+    super(e), el(this, "defaultReactionButtonRef", r.createRef()), el(this, "renderEmojiPicker", e => {
       let {
         closePopout: t
       } = e, {
@@ -905,10 +907,10 @@ class eN extends r.PureComponent {
         flags: n
       })
     });
-    let r = null !== (n = null === (t = this.props.channel) || void 0 === t ? void 0 : t.topic) && void 0 !== n ? n : "";
+    let l = null !== (n = null === (t = this.props.channel) || void 0 === t ? void 0 : t.topic) && void 0 !== n ? n : "";
     this.state = {
-      textTopicValue: r,
-      richTopicValue: (0, v.JM)(r),
+      textTopicValue: l,
+      richTopicValue: (0, v.JM)(l),
       topicFocused: !1
     }
   }

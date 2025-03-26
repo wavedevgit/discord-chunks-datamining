@@ -32,9 +32,9 @@ var i = n(200651),
   x = n(406432),
   _ = n(169525),
   S = n(566006),
-  N = n(255269),
-  C = n(937889),
-  E = n(443877),
+  E = n(255269),
+  N = n(937889),
+  C = n(443877),
   P = n(524444),
   R = n(287151),
   I = n(267128),
@@ -139,18 +139,18 @@ let ei = 72,
     }, [T, r, t]);
     let S = o.useRef(null),
       {
-        handleLeftClick: N,
-        handleRightClick: C
+        handleLeftClick: E,
+        handleRightClick: N
       } = (0, Y.Z)({
         facepileRef: S,
         goToThread: n,
         channel: m
       }),
-      E = (0, h.JA)(t),
+      C = (0, h.JA)(t),
       {
         role: P,
         onFocus: R
-      } = E,
+      } = C,
       I = function(e, t) {
         if (null == e) return {};
         var n, i, o = function(e, t) {
@@ -165,7 +165,7 @@ let ei = 72,
           for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
         }
         return o
-      }(E, ["role", "onFocus"]),
+      }(C, ["role", "onFocus"]),
       {
         isFocused: w,
         handleFocus: M,
@@ -174,17 +174,17 @@ let ei = 72,
     return (0, i.jsxs)("div", {
       ref: T,
       "data-item-id": t,
-      onClick: N,
-      onContextMenu: C,
+      onClick: E,
+      onContextMenu: N,
       className: a()(ee.container, c, {
         [ee.isOpen]: g
       }),
       children: [(0, i.jsx)(f.P3F, en({
-        onClick: N,
+        onClick: E,
         focusProps: {
           ringTarget: T
         },
-        onContextMenu: C,
+        onContextMenu: N,
         "aria-label": Q.NW.formatToPlainString(Q.t.pgYN6e, {
           title: m.name,
           count: v
@@ -280,7 +280,7 @@ function es(e) {
   let t = (0, p.e7)([V.Z], () => V.Z.getHasSearchResults(e.parent_id)),
     n = (0, p.e7)([V.Z], () => V.Z.getSearchQuery(e.parent_id)),
     i = o.useMemo(() => (0, v.nC)(t && null != n ? n : ""), [t, n]);
-  return o.useMemo(() => (0, C.ZP)({
+  return o.useMemo(() => (0, N.ZP)({
     content: e.name,
     embeds: []
   }, {
@@ -338,7 +338,7 @@ let el = o.memo(function(e) {
     })
   }
   return (0, i.jsxs)(T.aQ.Provider, {
-    value: (0, N.Z)(h, d),
+    value: (0, E.Z)(h, d),
     children: [!l && (0, i.jsx)(z.Z, {
       channel: n,
       message: t,
@@ -441,7 +441,7 @@ function ed(e) {
     disableReactionCreates: a,
     isLurking: s,
     isPendingMember: l
-  } = (0, E.Z)(n);
+  } = (0, C.Z)(n);
   return null == r || a ? null : (0, i.jsx)(R.le, {
     className: ee.updateReactionButton,
     message: t,
@@ -470,7 +470,7 @@ function eh(e) {
     disableReactionUpdates: a,
     isLurking: s,
     isPendingMember: l
-  } = (0, E.Z)(o);
+  } = (0, C.Z)(o);
   return null == r ? null : (0, i.jsx)(R.le, en({
     className: ee.updateReactionButton,
     message: n,

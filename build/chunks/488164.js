@@ -57,9 +57,13 @@ class _ extends i.PureComponent {
       renderValue: i,
       className: o
     } = this.props;
-    return (0, r.jsx)(s.yRy, f(u({}, n), {
+    return (0, r.jsx)(s.yRy, f(u({
+      targetElementRef: this.ref
+    }, n), {
       renderPopout: this.renderPopout,
-      children: n => (0, r.jsx)(s.P3F, f(u({}, n), {
+      children: n => (0, r.jsx)(s.P3F, f(u({
+        innerRef: this.ref
+      }, n), {
         className: o,
         children: (0, r.jsx)(l.F, {
           label: e,
@@ -70,7 +74,7 @@ class _ extends i.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), c(this, "renderItems", e => {
+    super(...e), c(this, "ref", i.createRef()), c(this, "renderItems", e => {
       let {
         items: t,
         renderItem: n

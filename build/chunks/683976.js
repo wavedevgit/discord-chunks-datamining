@@ -184,13 +184,17 @@ class O extends i.PureComponent {
       className: i,
       popoutProps: o
     } = this.props;
-    return (0, r.jsx)(c.yRy, m(p({}, o), {
+    return (0, r.jsx)(c.yRy, m(p({
+      targetElementRef: this.ref
+    }, o), {
       renderPopout: this.renderPopout,
       children: (o, a) => {
         let {
           isShown: s
         } = a;
-        return (0, r.jsx)(c.P3F, m(p({}, o), {
+        return (0, r.jsx)(c.P3F, m(p({
+          innerRef: this.ref
+        }, o), {
           className: i,
           "aria-haspopup": "listbox",
           "aria-expanded": s,
@@ -204,7 +208,7 @@ class O extends i.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), _(this, "renderPopout", e => {
+    super(...e), _(this, "ref", i.createRef()), _(this, "renderPopout", e => {
       let {
         closePopout: t
       } = e, {

@@ -37,16 +37,16 @@ var n = r(200651),
   L = r(296768),
   D = r(978313),
   W = r(206583),
-  Z = r(388032),
-  R = r(869429);
+  R = r(388032),
+  Z = r(869429);
 let G = () => (0, n.jsxs)("div", {
-  className: R.gameBadge,
+  className: Z.gameBadge,
   children: [(0, n.jsx)(d.YqE, {
     size: "xxs"
   }), (0, n.jsx)(d.Text, {
     variant: "text-sm/normal",
     color: "text-muted",
-    children: Z.NW.string(Z.t.kAlUs7)
+    children: R.NW.string(R.t.kAlUs7)
   })]
 });
 
@@ -75,40 +75,40 @@ function B(e) {
   }, [r]), m = null == o ? void 0 : o.getIconURL(160, y.$k ? "webp" : "png"), g = j.default.extractTimestamp(o.id), b = s()().diff(s()(g), "days") <= W.G, h = l.some(e => (0, _.ig)(e) === c.o.GLOBAL), O = null !== (t = r.name) && void 0 !== t ? t : null == o ? void 0 : o.name;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
-      className: R.gameArtHero,
+      className: Z.gameArtHero,
       style: {
         backgroundImage: 'url("'.concat(f, '")')
       }
     }), (0, n.jsxs)("div", {
-      className: i()(R.content, R.column, R.gapLg, R.headerInfo),
+      className: i()(Z.content, Z.column, Z.gapLg, Z.headerInfo),
       children: [(0, n.jsxs)("div", {
-        className: R.coverArtRow,
+        className: Z.coverArtRow,
         children: [(0, n.jsx)("div", {
-          className: R.logoWrapper,
+          className: Z.logoWrapper,
           children: (0, n.jsx)(w.C, {
             game: r,
             application: o,
-            className: R.logo,
+            className: Z.logo,
             size: w.Z.LARGE
           })
         }), (0, n.jsx)(C.Z, {
           applicationId: o.id,
           viewId: u,
-          className: R.overflowMenu
+          className: Z.overflowMenu
         })]
       }), (0, n.jsx)("div", {
-        className: i()(R.row, R.gapSm, R.gameDetails),
+        className: i()(Z.row, Z.gapSm, Z.gameDetails),
         children: (0, n.jsxs)("div", {
           children: [(0, n.jsx)(d.X6q, {
             variant: "heading-xl/bold",
             children: O
           }), (0, n.jsxs)("div", {
-            className: i()(R.row, R.gapSm),
+            className: i()(Z.row, Z.gapSm),
             children: [null != m && (0, n.jsx)("img", {
-              className: R.gameIcon,
+              className: Z.gameIcon,
               src: m,
               height: 16,
-              alt: Z.NW.formatToPlainString(Z.t["nh+jWl"], {
+              alt: R.NW.formatToPlainString(R.t["nh+jWl"], {
                 game: O
               })
             }), (0, n.jsx)(d.Text, {
@@ -117,8 +117,8 @@ function B(e) {
               children: p
             }), b && (0, n.jsx)(d.Text, {
               variant: "eyebrow",
-              className: R.newBadge,
-              children: Z.NW.string(Z.t.y2b7CA)
+              className: Z.newBadge,
+              children: R.NW.string(R.t.y2b7CA)
             }), h && (0, n.jsxs)(n.Fragment, {
               children: [(0, n.jsx)(d.Text, {
                 variant: "text-sm/medium",
@@ -146,7 +146,7 @@ function K(e) {
     trackAction: d
   } = e;
   return (0, n.jsxs)("div", {
-    className: R.sections,
+    className: Z.sections,
     children: [(0, n.jsx)(A.Z, {
       entries: o,
       viewId: u,
@@ -175,12 +175,12 @@ function U(e) {
     r(e)
   }, [r]);
   return (0, n.jsxs)("div", {
-    className: i()(R.sidebar, R.column, R.gapLg),
+    className: i()(Z.sidebar, Z.column, Z.gapLg),
     children: [(0, n.jsx)(d.X6q, {
       variant: "heading-md/bold",
-      children: Z.NW.string(Z.t.CI0vSE)
+      children: R.NW.string(R.t.CI0vSE)
     }), (0, n.jsxs)("div", {
-      className: R.sections,
+      className: Z.sections,
       children: [(0, n.jsx)(D.Z, {
         detectedGame: t,
         trackAction: o
@@ -270,7 +270,7 @@ let F = e => e.filter(N.z6).slice(0, 5),
     }), null == L || null == M) ? null : (0, n.jsx)(d.Y0X, {
       transitionState: s,
       size: d.CgR.DYNAMIC,
-      className: i()(v, R.gameProfileModal),
+      className: i()(v, Z.gameProfileModal),
       children: (0, n.jsxs)(d.Ttm, {
         orientation: "auto",
         children: [(0, n.jsx)(B, {
@@ -281,7 +281,7 @@ let F = e => e.filter(N.z6).slice(0, 5),
           trackAction: W
         }), (0, n.jsx)(d.y5t, {
           children: (0, n.jsxs)("div", {
-            className: i()(R.content, R.mainContent),
+            className: i()(Z.content, Z.mainContent),
             children: [(0, n.jsx)(K, {
               detectedGame: L,
               application: M,

@@ -16,8 +16,8 @@ var o = t(120356),
   p = t(652853),
   b = t(64621),
   y = t(382405),
-  g = t(386019),
-  v = t(228168),
+  v = t(386019),
+  g = t(228168),
   m = t(203396);
 
 function I(e) {
@@ -44,7 +44,7 @@ function I(e) {
   return null != x && (0, c.Rh)(t) ? (0, r.jsx)(s.Gt, {
     value: _,
     children: (0, r.jsx)(b.Z, {
-      sourceType: v.n_.ACTIVITY,
+      sourceType: g.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(u.Z, {
         user: n,
@@ -53,17 +53,17 @@ function I(e) {
         sourceId: t.id,
         entry: t,
         onAction: P,
-        sourceType: v.n_.ACTIVITY,
+        sourceType: g.n_.ACTIVITY,
         children: () => (0, r.jsx)(f.Z, {
           user: n,
           className: m.toolbarContainer,
           interactionSourceId: t.id,
-          sourceType: v.n_.ACTIVITY,
+          sourceType: g.n_.ACTIVITY,
           onAction: P,
           onShowToolbar: () => P({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: h ? void 0 : e => (0, r.jsx)(g.Z, {
+          renderMoreButtonPopout: h ? void 0 : e => (0, r.jsx)(v.Z, {
             display: "recent",
             entry: t,
             user: n,
@@ -75,7 +75,7 @@ function I(e) {
             user: n,
             onClose: j,
             className: i()(I, {
-              [m.hoisted]: O === v.n_.ACTIVITY && Z === t.id
+              [m.hoisted]: O === g.n_.ACTIVITY && Z === t.id
             })
           })
         })

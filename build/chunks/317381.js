@@ -81,7 +81,7 @@ let P = {
   U = new Map;
 
 function G(e, t) {
-  return "".concat(e, ":").concat(t)
+  return "".concat(t, ":").concat(e)
 }
 let B = new Map,
   F = new Map,
@@ -433,7 +433,9 @@ function eb(e) {
     applicationId: t,
     channelId: n
   } = e;
-  B.delete(G(n, t))
+  null != n ? B.delete(G(n, t)) : B.keys().forEach(e => {
+    e.startsWith("".concat(t, ":")) && B.delete(e)
+  })
 }
 
 function ev(e) {
@@ -604,7 +606,7 @@ class eN extends(i = a.ZP.PersistedStore) {
     return P.everLaunchedActivities.has(e)
   }
   getLaunchState(e, t) {
-    if (null != e && null != t) return B.get(G(t, e))
+    if (null != e) return B.get(G(null != t ? t : null, e))
   }
   getLaunchStates() {
     return B

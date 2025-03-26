@@ -43,9 +43,11 @@ function h(e) {
 function m(e) {
   let {
     menuItems: t,
-    children: n
+    children: n,
+    targetElementRef: i
   } = e;
   return (0, r.jsx)(a.yRy, {
+    targetElementRef: i,
     renderPopout: e => {
       let {
         closePopout: n

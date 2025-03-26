@@ -134,8 +134,9 @@ let b = (e, t) => {
     let {
       onSelectEmoji: t,
       onClick: n
-    } = e, l = (0, s.ZP)(), [i, c] = a.useState(!1), u = a.useRef(null);
+    } = e, l = (0, s.ZP)(), [i, c] = a.useState(!1), u = a.useRef(null), d = a.useRef(null);
     return b(() => c(!1), u), (0, r.jsx)(o.yRy, {
+      targetElementRef: d,
       align: "right",
       position: "top",
       shouldShow: i,
@@ -159,7 +160,9 @@ let b = (e, t) => {
       }),
       children: () => (0, r.jsx)(o.ua7, {
         text: x.NW.string(x.t.lfIHs7),
-        children: e => (0, r.jsx)("div", j(y({}, e), {
+        children: e => (0, r.jsx)("div", j(y({
+          ref: d
+        }, e), {
           className: v.reaction,
           children: (0, r.jsx)(m.Z, {
             active: !1,

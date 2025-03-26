@@ -343,6 +343,7 @@ let V = i.forwardRef(function(e, t) {
   return (0, r.jsxs)(u.bG, {
     navigator: eW,
     children: [(0, r.jsx)(b.y, {
+      targetElementRef: eC,
       spacing: 0,
       animation: b.y.Animation.NONE,
       shouldShow: ey,

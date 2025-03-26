@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 7c7b7f7e000a6fd3
+  Original File Name: c0d81a69338833a4
 **/
 .buttonContent_a83ec9 {
     width: 24px;
@@ -48,6 +48,37 @@
 .lightText__12f17 {
     color: var(--white-500);
     border-color: var(--white-500)
+}
+
+.container__3a77d {
+    padding: 24px;
+    border-radius: 16px;
+    background: linear-gradient(180deg,#000 -17.38%,#36266d 109.68%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column
+}
+
+.headerAsset__3a77d {
+    width: 211px;
+    height: 157px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 24px
+}
+
+.benefits__3a77d {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px
+}
+
+.benefitRow__3a77d {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center
 }
 
 .container_c368fe {
@@ -154,6 +185,10 @@
 
 .collectiblePreviewsContainerWithChat_c50f62 {
     padding: 0 40px 0 20px
+}
+
+.fractionalNitroPreviewContainer_c50f62 {
+    padding: 0 72px
 }
 
 .avatarPreviewContainer_c50f62 {
@@ -486,4 +521,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=7c7b7f7e000a6fd3.css.map*/
+/*# sourceMappingURL=c0d81a69338833a4.css.map*/

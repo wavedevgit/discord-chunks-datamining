@@ -15,15 +15,15 @@ var a = n(200651),
   m = n(912332),
   _ = n(378409),
   g = n(850908),
-  y = n(695346),
-  b = n(572004),
-  f = n(424218),
+  f = n(695346),
+  y = n(572004),
+  b = n(424218),
   O = n(49012),
   h = n(358085),
   S = n(998502),
   v = n(254109),
-  C = n(212459),
-  E = n(369171),
+  E = n(212459),
+  C = n(369171),
   T = n(701865),
   j = n(388032),
   P = n(914591);
@@ -73,14 +73,13 @@ function I(e, t) {
 function D() {
   (0, s.Mr3)(T.U)
 }
-
-function N(e) {
+let N = r.forwardRef(function(e, t) {
   var {
-    onClick: t,
-    tooltipText: n,
-    selected: r,
-    icon: o
-  } = e, c = function(e, t) {
+    onClick: n,
+    tooltipText: r,
+    selected: o,
+    icon: c
+  } = e, l = function(e, t) {
     if (null == e) return {};
     var n, a, r = function(e, t) {
       if (null == e) return {};
@@ -96,39 +95,40 @@ function N(e) {
     return r
   }(e, ["onClick", "tooltipText", "selected", "icon"]);
   return (0, a.jsx)(s.ua7, {
-    text: n,
+    text: r,
     position: "bottom",
     children: e => {
-      var n = x({}, function(e) {
+      var r = x({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
-      return (0, a.jsx)(s.zxk, I(M(I(M({}, n), {
-        onClick: t,
+      return (0, a.jsx)(s.zxk, I(M(I(M({}, r), {
+        buttonRef: t,
+        onClick: n,
         look: s.iLD.BLANK,
         size: s.PhG.ICON,
         color: s.Ttl.TRANSPARENT,
         className: i()(P.actionButton, {
-          [P.selected]: r
+          [P.selected]: o
         }),
         wrapperClassName: P.actionButtonWrapper,
         innerClassName: P.actionButtonInner,
         grow: !1
-      }), c), {
-        children: o({
+      }), l), {
+        children: c({
           color: "currentColor",
           size: "sm"
         })
       }))
     }
   })
-}
+});
 
 function A() {
   let {
     zoomed: e,
     setZoomed: t
-  } = (0, C.Y)();
+  } = (0, E.Y)();
   return (0, a.jsx)(N, {
     onClick: () => {
       (0, v.yg)(e ? v.uG.ZOOM_OUT_BUTTON_PRESSED : v.uG.ZOOM_IN_BUTTON_PRESSED), t(!e)
@@ -248,7 +248,7 @@ function k(e) {
     });
     if ((null == r ? void 0 : null === (t = r.identifier) || void 0 === t ? void 0 : t.type) !== "attachment") return null;
     let d = (0, g.Z)(r.identifier),
-      p = (0, f.BU)(r.identifier.size / 1e3);
+      p = (0, b.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(s.sNh, {
       id: "media-viewer-details",
       label: j.NW.string(j.t.GoCQxc),
@@ -259,7 +259,7 @@ function k(e) {
       })), u(n)]
     }, "media-viewer-details")
   }(r);
-  async function y() {
+  async function f() {
     (0, v.yg)(v.uG.COPY_IMAGE_PRESSED);
     let e = (0, _.s$)(r.url);
     try {
@@ -278,7 +278,7 @@ function k(e) {
         label: j.NW.string(j.t.tvUqWl),
         id: "media-viewer-copy-image",
         icon: s.TIy,
-        action: y
+        action: f
       }, "media-viewer-copy-image"), i && (0, a.jsx)(s.sNh, {
         id: "media-viewer-copy-link",
         label: j.NW.string(j.t.WqhZsr),
@@ -296,7 +296,7 @@ function k(e) {
 
 function Z(e, t, n) {
   let o = r.useCallback(e => {
-    (0, b.JG)(e), (0, s.showToast)({
+    (0, y.JG)(e), (0, s.showToast)({
       message: j.NW.string(j.t.mGZ66O),
       type: s.ToastType.SUCCESS,
       id: "media-viewer-detail-copied"
@@ -314,30 +314,32 @@ function B(e) {
   var t, n;
   let {
     item: o
-  } = e, [i, c] = r.useState(!1), l = y.Sb.useSetting(), u = "IMAGE" === o.type && h.isPlatformEmbedded && null == o.children && S.ZP.canCopyImage() && (0, _.Lz)(o.url), d = (0, _.Jj)(o.url);
-  return l || u || d || (null === (n = o.sourceMetadata) || void 0 === n ? void 0 : null === (t = n.identifier) || void 0 === t ? void 0 : t.type) === "attachment" ? (0, a.jsx)(s.yRy, {
-    shouldShow: i,
+  } = e, i = r.useRef(null), [c, l] = r.useState(!1), u = f.Sb.useSetting(), d = "IMAGE" === o.type && h.isPlatformEmbedded && null == o.children && S.ZP.canCopyImage() && (0, _.Lz)(o.url), p = (0, _.Jj)(o.url);
+  return u || d || p || (null === (n = o.sourceMetadata) || void 0 === n ? void 0 : null === (t = n.identifier) || void 0 === t ? void 0 : t.type) === "attachment" ? (0, a.jsx)(s.yRy, {
+    targetElementRef: i,
+    shouldShow: c,
     align: "left",
     position: "top",
     spacing: 18,
-    onRequestClose: () => c(!1),
+    onRequestClose: () => l(!1),
     animation: s.yRy.Animation.NONE,
     renderPopout: () => (0, a.jsx)(k, {
       item: o,
-      canCopyImage: u,
-      canCopyLink: d,
-      onClose: () => c(!1)
+      canCopyImage: d,
+      canCopyLink: p,
+      onClose: () => l(!1)
     }),
     children: e => {
       let {
         onClick: t
       } = e;
       return (0, a.jsx)(N, {
+        ref: i,
         tooltipText: j.NW.string(j.t.UKOtz8),
         onClick: () => {
-          (0, v.yg)(v.uG.MORE_BUTTON_PRESSED), c(!i)
+          (0, v.yg)(v.uG.MORE_BUTTON_PRESSED), l(!c)
         },
-        selected: i,
+        selected: c,
         icon: s.xhG
       })
     }
@@ -351,8 +353,8 @@ let W = r.memo(function(e) {
     var e;
     !o && (null === (e = s.current) || void 0 === e ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
   }, [o]);
-  return ("IMAGE" === t.type || !n) && (0, a.jsx)(E.ZP, {
-    mode: E.lx.FOCUS_SENSITIVE,
+  return ("IMAGE" === t.type || !n) && (0, a.jsx)(C.ZP, {
+    mode: C.lx.FOCUS_SENSITIVE,
     children: e => (0, a.jsxs)("div", {
       ref: s,
       className: i()(P.actionButtons, e),

@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 n.d(t, {
   PM: () => P,
-  WG: () => R,
+  WG: () => I,
   ZP: () => T
 }), n(47120), n(566702);
 var r = n(200651),
@@ -79,15 +79,15 @@ let S = (0, p.hQ)(),
   D = (0, p.hQ)(),
   Z = "text-sm/medium";
 
-function L(e) {
+function R(e) {
   return 1 === e.type
 }
 
-function I(e) {
+function L(e) {
   return 0 === e.type
 }
 
-function R(e) {
+function I(e) {
   let t = "".concat(e.name.includes(h.CR) ? "" : "@").concat(e.name);
   return {
     tag: {
@@ -173,11 +173,11 @@ function V(e) {
 }
 
 function E(e, t, n) {
-  return L(e) ? (0, r.jsx)(M, {
+  return R(e) ? (0, r.jsx)(M, {
     row: e,
     guildId: t,
     className: n
-  }, e.record.id) : I(e) ? (0, r.jsx)(V, {
+  }, e.record.id) : L(e) ? (0, r.jsx)(V, {
     row: e,
     channel: e.record,
     className: n
@@ -202,7 +202,7 @@ function T(e) {
       let t = j.Z.getChannel(e);
       null != t && (r[e] = P(t))
     }), t.forEach(e => {
-      e in n && (r[e] = R(n[e]))
+      e in n && (r[e] = I(n[e]))
     }), r
   })(i, C, h), [i, C, h]), v = l.useMemo(() => Object.keys(x), [x]), [w, Z] = l.useState(""), [M, V] = l.useState(!1), [T, k] = l.useState(!1), [A, B] = l.useState(!1), W = l.useRef(null), {
     sections: U,
@@ -222,13 +222,13 @@ function T(e) {
         let {
           row: t
         } = e;
-        return I(t)
+        return L(t)
       }).map(e => e.row.record.id),
       r = t.filter(e => {
         let {
           row: t
         } = e;
-        return L(t)
+        return R(t)
       }).map(e => e.row.record.id);
     m(new Set(n), new Set(r))
   }, [m]), q = () => {
@@ -247,7 +247,7 @@ function T(e) {
     },
     Y = l.useCallback(e => {
       let t = N({}, x);
-      I(e) ? t[e.id] = P(e.record) : L(e) && (t[e.id] = R(e.record)), z(t), Z(""), q(), setTimeout(() => {
+      L(e) ? t[e.id] = P(e.record) : R(e) && (t[e.id] = I(e.record)), z(t), Z(""), q(), setTimeout(() => {
         var e;
         let t = null === (e = W.current) || void 0 === e ? void 0 : e.containerRef.current,
           n = null == t ? void 0 : t.firstChild;

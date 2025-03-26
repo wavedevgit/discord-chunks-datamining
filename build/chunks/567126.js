@@ -28,16 +28,16 @@ var r = n(200651),
   N = n(358085),
   y = n(463727),
   Z = n(855403),
-  w = n(299570),
-  I = n(960861),
+  I = n(299570),
+  w = n(960861),
   O = n(59468),
   T = n(989941),
   E = n(39540),
   P = n(958707),
   R = n(152165),
   W = n(133179),
-  A = n(70722),
-  k = n(761274),
+  k = n(70722),
+  A = n(761274),
   M = n(46140),
   L = n(65154),
   D = n(388032),
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: i
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [C, N] = l.useState(null), [w, I] = l.useState(null), T = null != w && w.length > 0, [E, R] = l.useState(c.vA.WINDOW), [A, U] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [C, N] = l.useState(null), [I, w] = l.useState(null), T = null != I && I.length > 0, [E, R] = l.useState(c.vA.WINDOW), [k, U] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
@@ -106,7 +106,7 @@ function z(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      m(t), N(n), I(r)
+      m(t), N(n), w(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -116,7 +116,7 @@ function z(e) {
         width: 176,
         height: 99
       });
-      m(e), N(t), I(n)
+      m(e), N(t), w(n)
     }), () => {
       e.stop()
     }
@@ -126,7 +126,7 @@ function z(e) {
     }, []),
     [X, K] = l.useState(void 0);
   l.useEffect(() => {
-    g.Z.hasPermission(k.Eu.SCREEN_RECORDING, {
+    g.Z.hasPermission(A.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     }).then(K)
   }, []);
@@ -137,7 +137,7 @@ function z(e) {
       case c.vA.SCREEN:
         return a;
       case c.vA.CAMERA:
-        return w
+        return I
     }
   }(E);
   if (null == q) return !1 === X ? (0, r.jsxs)(f.Text, {
@@ -170,7 +170,7 @@ function z(e) {
     children: [(0, r.jsxs)("div", {
       className: G.segmentContainer,
       children: [(0, r.jsx)(P.Z, {
-        separator: A
+        separator: k
       }), (0, r.jsx)(f.sY7, {
         options: function() {
           let e = [{
@@ -319,7 +319,7 @@ function V(e) {
         url: ""
       })
     }, [t, o]),
-    x = (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, A.jR),
+    x = (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR),
     p = (0, N.isMac)(),
     [g, _] = l.useState(!1),
     v = l.useCallback(() => {
@@ -399,8 +399,8 @@ function Y(e) {
     lastPickerError: o
   } = (0, E.Z)(t, n);
   return l.useEffect(() => {
-    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, A.jR) ? (0, w.T)(i) : (0, w.t)()
-  }, [i]), s === I.Uc.Error ? (0, r.jsx)(f.Text, {
+    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR) ? (0, I.T)(i) : (0, I.t)()
+  }, [i]), s === w.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",

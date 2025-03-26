@@ -1,6 +1,6 @@
 /** Chunk was on 6850 **/
 n.d(t, {
-  Z: () => R
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -43,8 +43,8 @@ let H = {
     tension: 260
   },
   Z = e => e.shiftKey || e.key === N.vn.SHIFT,
-  L = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
-  I = l.memo(function(e) {
+  R = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
+  L = l.memo(function(e) {
     let {
       members: t,
       guild: n,
@@ -53,15 +53,15 @@ let H = {
       compact: s,
       onSelectRow: m,
       onResetForNewMembers: b
-    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), N = (0, u.f9)(), I = (0, p.n)(), [R, P] = l.useState(!1), [M, V] = l.useState(!1), E = !N && R && M;
+    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), N = (0, u.f9)(), L = (0, p.n)(), [I, P] = l.useState(!1), [M, V] = l.useState(!1), E = !N && I && M;
     l.useEffect(() => {
-      I || (P(!1), V(!1))
-    }, [I]), l.useLayoutEffect(() => {
+      L || (P(!1), V(!1))
+    }, [L]), l.useLayoutEffect(() => {
       let e = e => {
-          Z(e) && P(!0), L(e) && V(!0)
+          Z(e) && P(!0), R(e) && V(!0)
         },
         t = e => {
-          Z(e) && P(!1), L(e) && V(!1)
+          Z(e) && P(!1), R(e) && V(!1)
         };
       return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
         window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -118,7 +118,7 @@ let H = {
       o = e.compact === t.compact;
     return n && r && l && o
   }),
-  R = function(e) {
+  I = function(e) {
     var t, n;
     let {
       guild: o,
@@ -138,7 +138,7 @@ let H = {
       v = null !== (n = null == x ? void 0 : x[0]) && void 0 !== n ? n : null;
     return l.useEffect(() => {
       (0, f.h1)(o.id, v)
-    }, [o.id, v]), (0, r.jsx)(I, {
+    }, [o.id, v]), (0, r.jsx)(L, {
       members: g,
       guild: o,
       className: a,

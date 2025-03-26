@@ -18,7 +18,7 @@ function r(e) {
       for (let i = 0; i < n; i++)
         for (let s = +!i; s * n < t * (n - i); s++) l.push(((e[b + (S >> 1)] >> ((1 & S++) << 2) & 15) / 7.5 - 1) * r);
       return l
-    }, N = C(g, _, (d >> 18 & 31) / 31), y = C(3, 3, (u >> 3 & 63) / 63 * 1.25), Z = C(3, 3, (u >> 9 & 63) / 63 * 1.25), w = x && C(5, 5, j), I = (n = (t = e)[3], r = 128 & t[2], ((l = 128 & t[4]) ? r ? 5 : 7 : 7 & n) / (l ? 7 & n : r ? 5 : 7)), O = c(I > 1 ? 32 : 32 * I), T = c(I > 1 ? 32 / I : 32), E = new Uint8Array(O * T * 4), P = [], R = [];
+    }, N = C(g, _, (d >> 18 & 31) / 31), y = C(3, 3, (u >> 3 & 63) / 63 * 1.25), Z = C(3, 3, (u >> 9 & 63) / 63 * 1.25), I = x && C(5, 5, j), w = (n = (t = e)[3], r = 128 & t[2], ((l = 128 & t[4]) ? r ? 5 : 7 : 7 & n) / (l ? 7 & n : r ? 5 : 7)), O = c(w > 1 ? 32 : 32 * w), T = c(w > 1 ? 32 / w : 32), E = new Uint8Array(O * T * 4), P = [], R = [];
     for (let e = 0, t = 0; e < T; e++)
       for (let n = 0; n < O; n++, t += 4) {
         let r = f,
@@ -36,7 +36,7 @@ function r(e) {
           }
         if (x)
           for (let e = 0, t = 0; e < 5; e++)
-            for (let n = +!e, r = 2 * R[e]; n < 5 - e; n++, t++) d += w[t] * P[n] * r;
+            for (let n = +!e, r = 2 * R[e]; n < 5 - e; n++, t++) d += I[t] * P[n] * r;
         let u = r - 2 / 3 * l,
           p = (3 * r - u + c) / 2,
           j = p - c;

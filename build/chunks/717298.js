@@ -26,21 +26,21 @@ var r = n(200651),
   N = n(449224),
   y = n(358085),
   Z = n(74538),
-  w = n(668519),
-  I = n(299570),
+  I = n(668519),
+  w = n(299570),
   O = n(989941),
   T = n(562224),
   E = n(544753),
   P = n(560749),
   R = n(615161),
   W = n(289989),
-  A = n(328242),
-  k = n(565574),
+  k = n(328242),
+  A = n(565574),
   M = n(51708),
   L = n(801604),
   D = n(577257),
   G = n(70722),
-  U = n(433177),
+  U = n(690452),
   B = n(388032),
   z = n(312253);
 
@@ -52,7 +52,7 @@ function F(e) {
     sourceApplication: o
   } = e, {
     twoClickVariant: F
-  } = (0, w.a)({
+  } = (0, I.a)({
     location: "golivemodalv2",
     autoTrackExposure: !1
   }), H = l.useRef(performance.now()), V = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && (0, y.isMac)() && a().satisfies(null === x.Z || void 0 === x.Z ? void 0 : x.Z.os.release, G.jR)), Y = (0, f.e7)([C.default], () => C.default.getCurrentUser()), J = !Z.ZP.canStreamQuality(Z.ZP.StreamQuality.HIGH, Y), {
@@ -154,7 +154,7 @@ function F(e) {
           className: z.content,
           children: V && en !== u.vA.CAMERA ? (0, r.jsx)(W.Z, {
             onSourceSelect: ei
-          }) : (0, r.jsx)(A.Z, {
+          }) : (0, r.jsx)(k.Z, {
             onClick: function(e) {
               if (!F) return er(e);
               $({
@@ -181,7 +181,7 @@ function F(e) {
           children: [V && en !== u.vA.CAMERA && (0, r.jsx)(m.zxk, {
             size: m.zxk.Sizes.LARGE,
             onClick: () => {
-              (0, I.t)(), (0, I.T)("")
+              (0, w.t)(), (0, w.T)("")
             },
             children: B.NW.string(B.t.FiBjwc)
           }), ee && (0, r.jsx)(m.zxk, {
@@ -190,7 +190,7 @@ function F(e) {
             disabled: null == Q.selectedSource,
             onClick: () => null != Q.selectedSource && er(Q.selectedSource),
             children: B.NW.string(U.Z["5AyH/v"])
-          }), (0, r.jsx)(k.Z, {
+          }), (0, r.jsx)(A.Z, {
             align: "right"
           })]
         })]

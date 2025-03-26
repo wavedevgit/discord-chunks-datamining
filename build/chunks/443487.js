@@ -1,28 +1,28 @@
 /** Chunk was on 62880 **/
-t.d(n, {
+l.d(n, {
   F9: () => I,
   Zb: () => E,
   cA: () => v,
   e$: () => f,
   ll: () => g
 });
-var l = t(200651);
-t(192379);
-var i = t(120356),
-  a = t.n(i),
-  s = t(442837),
-  r = t(481060),
-  c = t(686546),
-  d = t(271383),
-  o = t(430824),
-  u = t(594174),
-  x = t(5192),
-  m = t(192918),
-  h = t(388032),
-  j = t(563504);
+var t = l(200651);
+l(192379);
+var i = l(120356),
+  a = l.n(i),
+  s = l(442837),
+  r = l(481060),
+  c = l(686546),
+  d = l(271383),
+  o = l(430824),
+  u = l(594174),
+  x = l(5192),
+  m = l(192918),
+  h = l(388032),
+  j = l(563504);
 
 function v() {
-  return (0, l.jsx)("div", {
+  return (0, t.jsx)("div", {
     className: j.container,
     "aria-hidden": !0
   })
@@ -31,11 +31,11 @@ function v() {
 function E(e) {
   let {
     children: n,
-    selected: t
+    selected: l
   } = e;
-  return (0, l.jsx)("div", {
+  return (0, t.jsx)("div", {
     className: a()(j.container, j.openOnHover, {
-      [j.selected]: t
+      [j.selected]: l
     }),
     children: n
   })
@@ -45,7 +45,7 @@ function f(e) {
   let {
     children: n
   } = e;
-  return (0, l.jsx)("div", {
+  return (0, t.jsx)("div", {
     className: j.infoSection,
     children: n
   })
@@ -54,22 +54,22 @@ function f(e) {
 function _(e) {
   let {
     users: n,
-    guildId: t,
+    guildId: l,
     "aria-hidden": i
   } = e;
-  return (0, l.jsx)("div", {
+  return (0, t.jsx)("div", {
     className: j.facePile,
     children: n.map((e, a) => {
-      let s = (0, l.jsx)(r.qEK, {
-        src: e.getAvatarURL(t, 80),
+      let s = (0, t.jsx)(r.qEK, {
+        src: e.getAvatarURL(l, 80),
         size: r.EFr.SIZE_16,
         "aria-label": i ? void 0 : e.username,
         "aria-hidden": i
       });
-      return a === n.length - 1 ? (0, l.jsx)("div", {
+      return a === n.length - 1 ? (0, t.jsx)("div", {
         className: j.facePileItem,
         children: s
-      }, e.id) : (0, l.jsx)(c.ZP, {
+      }, e.id) : (0, t.jsx)(c.ZP, {
         width: 16,
         height: 16,
         className: j.facePileItem,
@@ -83,7 +83,7 @@ function _(e) {
 function I(e) {
   let {
     guildId: n,
-    channelId: t,
+    channelId: l,
     entry: i,
     maxAvatars: a = 3
   } = e, c = i.author_id, v = (0, s.e7)([u.default], () => u.default.getUser(c)), {
@@ -97,40 +97,40 @@ function I(e) {
   }, [n, p]);
   if (null == v) return null;
   let N = null == p ? void 0 : p.colorString,
-    y = x.ZP.getName(n, t, v);
-  return (0, l.jsxs)("div", {
+    y = x.ZP.getName(n, l, v);
+  return (0, t.jsxs)("div", {
     className: j.userSection,
-    children: [(0, l.jsx)(_, {
+    children: [(0, t.jsx)(_, {
       users: E,
       guildId: n,
       "aria-hidden": !0
-    }), (0, l.jsx)(r.PUh, {
+    }), (0, t.jsx)(r.PUh, {
       color: null != N ? N : void 0,
       roleName: Z,
       name: y,
       className: j.userName,
       "aria-hidden": !0
-    }), g > 0 ? (0, l.jsx)("div", {
+    }), g > 0 ? (0, t.jsx)("div", {
       className: j.additionalParticipantBadge,
       "aria-hidden": !0,
-      children: (0, l.jsxs)(r.Text, {
+      children: (0, t.jsxs)(r.Text, {
         variant: "text-xxs/medium",
         color: "text-normal",
         className: j.additionalParticipantBadgeText,
         children: ["+", g]
       })
-    }) : null, (0, l.jsx)(r.nn4, {
+    }) : null, (0, t.jsx)(r.nn4, {
       children: h.NW.format(h.t.rH95Gh, {
-        user0: x.ZP.getName(n, t, f),
-        user1: x.ZP.getName(n, t, I),
+        user0: x.ZP.getName(n, l, f),
+        user1: x.ZP.getName(n, l, I),
         countOthers: g,
-        name0Hook: (e, n) => (0, l.jsx)("span", {
+        name0Hook: (e, n) => (0, t.jsx)("span", {
           children: e
         }, n),
-        name1Hook: (e, n) => (0, l.jsx)("span", {
+        name1Hook: (e, n) => (0, t.jsx)("span", {
           children: e
         }, n),
-        countOthersHook: (e, n) => (0, l.jsx)("span", {
+        countOthersHook: (e, n) => (0, t.jsx)("span", {
           children: e
         }, n)
       })
@@ -142,7 +142,7 @@ function g(e) {
   let {
     children: n
   } = e;
-  return (0, l.jsx)(r.X6q, {
+  return (0, t.jsx)(r.X6q, {
     color: "text-normal",
     variant: "heading-sm/medium",
     className: j.contentTitle,

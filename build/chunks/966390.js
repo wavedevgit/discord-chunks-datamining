@@ -1,6 +1,6 @@
 /** Chunk was on 81146 **/
 r.d(t, {
-  Z: () => Z
+  Z: () => R
 }), r(47120), r(789020);
 var n = r(481060),
   a = r(570140),
@@ -70,8 +70,8 @@ async function W(e) {
   var t, r, n, d;
   let p, {
       channelId: W,
-      uploads: Z,
-      draftType: R,
+      uploads: R,
+      draftType: Z,
       parsedMessage: G,
       options: B = {},
       raiseEndpointErrors: K = !1
@@ -161,10 +161,10 @@ async function W(e) {
           help: null !== (d = null == r ? void 0 : r.message) && void 0 !== d ? d : M.NW.string(M.t.zMEjJi)
         })
       }
-      "" !== H.content && "" === C.Z.getDraft(W, R) && o.Z.saveDraft(W, H.content, R), 0 === S.Z.getUploadCount(W, R) && l.Z.setUploads({
+      "" !== H.content && "" === C.Z.getDraft(W, Z) && o.Z.saveDraft(W, H.content, Z), 0 === S.Z.getUploadCount(W, Z) && l.Z.setUploads({
         channelId: W,
-        uploads: Z,
-        draftType: R
+        uploads: R,
+        draftType: Z
       })
     }
   }), U.on("complete", (e, t) => {
@@ -180,9 +180,9 @@ async function W(e) {
       name: r.name,
       id: r.id
     }, void 0, !0, j.LL.MessageSent))
-  }), null == B || null === (t = B.confettiPotionData) || void 0 === t || t.callback(), await U.uploadFiles(Z, H), F.resolve(), F.promise
+  }), null == B || null === (t = B.confettiPotionData) || void 0 === t || t.callback(), await U.uploadFiles(R, H), F.resolve(), F.promise
 }
-let Z = {
+let R = {
   instantBatchUpload: function(e) {
     let {
       channelId: t,

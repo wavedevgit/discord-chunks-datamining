@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: 2864be3e177bd615
+  Original File Name: 88e06b5301720727
 **/
 .card__4bb93 {
     display: flex;
@@ -180,6 +180,12 @@
         padding-top: var(--space-12);
         background: none
     }
+}
+
+.visual-refresh .buttonContainer_a55fdc {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end
 }
 
 .visual-refresh .border_a55fdc {
@@ -2341,4 +2347,4 @@
     padding: var(--spacing-12) var(--spacing-24)
 }
 
-/*# sourceMappingURL=2864be3e177bd615.css.map*/
+/*# sourceMappingURL=88e06b5301720727.css.map*/

@@ -217,9 +217,10 @@ function W(e) {
   let {
     user: t,
     numRolesHidden: r,
-    roleClassName: l
-  } = e, i = (0, c.JA)("overflow-more-roles-".concat(t.id));
+    roleClassName: i
+  } = e, o = (0, c.JA)("overflow-more-roles-".concat(t.id)), s = l.useRef(null);
   return (0, n.jsx)(f.yRy, {
+    targetElementRef: s,
     renderPopout: t => {
       let {
         position: r
@@ -231,9 +232,11 @@ function W(e) {
     position: "top",
     align: "center",
     children: e => (0, n.jsx)(f.tEY, {
-      children: (0, n.jsx)("button", L(x(L(x({}, e), {
-        className: a()(C.overflowButton, l)
-      }), i), {
+      children: (0, n.jsx)("button", L(x(L(x({
+        ref: s
+      }, e), {
+        className: a()(C.overflowButton, i)
+      }), o), {
         children: "+".concat(r)
       }))
     })
@@ -241,39 +244,48 @@ function W(e) {
 }
 
 function F(e) {
-  let {
-    guild: t,
-    user: r,
-    handleAddRole: l,
-    roleClassName: i,
-    addButtonClassName: o,
-    addButtonIconClassName: s
-  } = e, h = (0, c.JA)("overflow-add-roles-".concat(r.id)), v = (0, d.e7)([O.Z], () => O.Z.roleStyle), u = I.Z.getHighestRole(t), E = y.ZP.getMember(t.id, r.id), p = e => (0, g.Gy)(t.id, e.id) && !e.managed && I.Z.isRoleHigher(t, u, e) && (null == E || -1 === E.roles.indexOf(e.id));
+  let t = l.useRef(null),
+    {
+      guild: r,
+      user: i,
+      handleAddRole: o,
+      roleClassName: s,
+      addButtonClassName: h,
+      addButtonIconClassName: v
+    } = e,
+    u = (0, c.JA)("overflow-add-roles-".concat(i.id)),
+    E = (0, d.e7)([O.Z], () => O.Z.roleStyle),
+    p = I.Z.getHighestRole(r),
+    M = y.ZP.getMember(r.id, i.id),
+    _ = e => (0, g.Gy)(r.id, e.id) && !e.managed && I.Z.isRoleHigher(r, p, e) && (null == M || -1 === M.roles.indexOf(e.id));
   return (0, n.jsx)(f.yRy, {
+    targetElementRef: t,
     renderPopout: e => {
       let {
-        closePopout: r
+        closePopout: t
       } = e;
       return (0, n.jsx)(S.Z, {
-        guild: t,
-        roleStyle: v,
-        roleFilter: p,
-        onSelect: l,
-        onClose: r
+        guild: r,
+        roleStyle: E,
+        roleFilter: _,
+        onSelect: o,
+        onClose: t
       })
     },
     position: "bottom",
     align: "center",
     children: e => (0, n.jsx)(f.tEY, {
-      children: (0, n.jsx)("button", L(x(L(x({}, e), {
-        className: a()(C.addButton, i, o),
+      children: (0, n.jsx)("button", L(x(L(x({
+        ref: t
+      }, e), {
+        className: a()(C.addButton, s, h),
         "aria-label": D.NW.string(D.t.e3Wly8),
         type: "button"
-      }), h), {
+      }), u), {
         children: (0, n.jsx)(f.qJs, {
           size: "md",
           color: "currentColor",
-          className: a()(C.addButtonIcon, s),
+          className: a()(C.addButtonIcon, v),
           "aria-hidden": !0
         })
       }))

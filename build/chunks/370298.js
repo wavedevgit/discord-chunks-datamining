@@ -64,8 +64,9 @@ function D(e) {
     Component: p,
     events: f,
     play: O
-  } = (0, l.w)(), [b, E] = i.useState(!1);
+  } = (0, l.w)(), [b, E] = i.useState(!1), v = i.useRef(null);
   return null == m ? null : (b || O(), (0, o.jsx)(a.yRy, {
+    targetElementRef: v,
     renderPopout: e => {
       let {
         closePopout: t
@@ -95,6 +96,7 @@ function D(e) {
             focusProps: {
               offset: 2
             },
+            innerRef: v,
             onClick: t,
             onMouseEnter: () => {
               E(!0), f.onMouseEnter()

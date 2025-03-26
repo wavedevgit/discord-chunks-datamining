@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => A
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -26,8 +26,8 @@ var r = n(200651),
   N = n(37113),
   y = n(981631),
   Z = n(388032),
-  w = n(711597),
-  I = n(64479),
+  I = n(711597),
+  w = n(64479),
   O = n(802138);
 
 function T(e) {
@@ -78,13 +78,13 @@ function P(e) {
 
 function R() {
   return (0, r.jsxs)("div", {
-    className: I.toolTipTextContainer,
+    className: w.toolTipTextContainer,
     children: [(0, r.jsx)(d.SrA, {
       size: "md",
       color: x.JX.PREMIUM_TIER_2,
-      className: I.premiumIcon
+      className: w.premiumIcon
     }), (0, r.jsx)(d.Text, {
-      className: I.upsellText,
+      className: w.upsellText,
       variant: "text-sm/medium",
       children: Z.NW.string(Z.t.sEAnVF)
     })]
@@ -107,17 +107,17 @@ function W(e) {
       label: x
     } = l;
   return o ? (t = (0, r.jsx)(d.DY3, {
-    tooltipClassName: I.tooltip,
+    tooltipClassName: w.tooltip,
     spacing: 6,
     "aria-label": Z.NW.string(Z.t.sEAnVF),
     text: (0, r.jsx)(R, {}),
     children: (0, r.jsx)("div", {
-      className: I.textContainer,
+      className: w.textContainer,
       onMouseEnter: () => m(!0),
       onMouseLeave: () => m(!1),
       children: (0, r.jsx)(d.Text, {
         variant: "text-xs/bold",
-        className: s()(I.selectorNitroText, I.enhancedSelectorNitroText),
+        className: s()(w.selectorNitroText, w.enhancedSelectorNitroText),
         children: x
       })
     })
@@ -125,26 +125,26 @@ function W(e) {
     analyticsLocation: c,
     onClose: f
   })) : (t = (0, r.jsx)("div", {
-    className: I.textContainer,
+    className: w.textContainer,
     children: (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
-      className: s()(I.selectorText, {
-        [I.enhancedSelectorNitroText]: a
+      className: s()(w.selectorText, {
+        [w.enhancedSelectorNitroText]: a
       }),
       children: x
     })
   }), n = () => u(h)), {
     content: t,
-    className: s()(I.selectorButton, {
-      [I.selectorButtonSelected]: i,
-      [I.perksDemo]: a,
-      [I.premiumUpsell]: o
+    className: s()(w.selectorButton, {
+      [w.selectorButtonSelected]: i,
+      [w.perksDemo]: a,
+      [w.premiumUpsell]: o
     }),
     onClick: n
   }
 }
 
-function A(e) {
+function k(e) {
   let {
     onClose: t,
     selectedPreset: n,
@@ -153,8 +153,8 @@ function A(e) {
     onResolutionChange: o,
     onFPSChange: x,
     onPresetChange: R,
-    targetGuildPremiumTier: A,
-    captureDeviceSelected: k
+    targetGuildPremiumTier: k,
+    captureDeviceSelected: A
   } = e, M = (0, c.e7)([j.default], () => {
     let e = j.default.getCurrentUser();
     return a()(null != e, "StreamSettings: user cannot be undefined"), e
@@ -162,13 +162,13 @@ function A(e) {
     location: G
   } = (0, f.O)(), U = (0, m.Zq)({
     autoTrackExposure: !1
-  }), B = (0, p.B4)(), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !U, [V, Y] = l.useState(!1), J = k ? N.z8 : N.WC, X = E(T({}, G), {
+  }), B = (0, p.B4)(), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !U, [V, Y] = l.useState(!1), J = A ? N.z8 : N.WC, X = E(T({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: J.map(e => W({
       type: e,
       selected: e.value === i,
-      needsPremium: !(0, S.Z)(n, e.value, s, M, A, L),
+      needsPremium: !(0, S.Z)(n, e.value, s, M, k, L),
       needsDemo: B && e.value !== N.LY.RESOLUTION_720,
       analyticsLocation: X,
       onClick: () => o(e.value),
@@ -179,7 +179,7 @@ function A(e) {
     buttons: N.k0.map(e => W({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, S.Z)(n, i, e.value, M, A, L),
+      needsPremium: !(0, S.Z)(n, i, e.value, M, k, L),
       needsDemo: B && e.value === N.ws.FPS_60,
       analyticsLocation: X,
       onClick: () => x(e.value),
@@ -189,7 +189,7 @@ function A(e) {
   }), Q = [{
     value: N.tI.PRESET_VIDEO,
     label: Z.NW.string(Z.t.HcwHc3)
-  }, ...k ? [] : [{
+  }, ...A ? [] : [{
     value: N.tI.PRESET_DOCUMENTS,
     label: Z.NW.string(Z.t["/RfohI"])
   }], {
@@ -199,8 +199,8 @@ function A(e) {
     children: [(0, r.jsx)(h.Z, {
       children: (0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.rHyPXl),
-        titleClassName: w.formItemTitleSlim,
-        className: I.documentModeGroup,
+        titleClassName: I.formItemTitleSlim,
+        className: w.documentModeGroup,
         children: (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           children: Z.NW.format(Z.t["U+hmam"], {
@@ -221,13 +221,13 @@ function A(e) {
     children: [(0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.rHyPXl),
-        className: I.settingsGroup,
-        titleClassName: w.formItemTitleSlim,
+        className: w.settingsGroup,
+        titleClassName: I.formItemTitleSlim,
         children: K
       }), (0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.SkkeIi),
-        className: I.settingsGroup,
-        titleClassName: w.formItemTitleSlim,
+        className: w.settingsGroup,
+        titleClassName: I.formItemTitleSlim,
         children: q
       })]
     }), H ? (0, r.jsx)(C.Z, {
@@ -243,10 +243,10 @@ function A(e) {
   return (0, r.jsx)(u.Z, E(T({}, X), {
     children: (0, r.jsx)(d.xJW, {
       title: Z.NW.string(Z.t.ax4FnZ),
-      titleClassName: w.formItemTitle,
-      className: w.modalContent,
+      titleClassName: I.formItemTitle,
+      className: I.modalContent,
       children: (0, r.jsxs)("div", {
-        className: I.qualitySettingsContainer,
+        className: w.qualitySettingsContainer,
         children: [(0, r.jsx)(d.q4e, {
           value: n,
           className: O.marginTop8,

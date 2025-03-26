@@ -67,20 +67,20 @@ let I = e => {
       enableClick: s = !0,
       channelId: u,
       messageId: d
-    } = e, f = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], h = null != f ? f : n.name, [m, g] = i.useState(!1), b = e => (0, r.jsx)(c.Z, O(v({}, e), {
+    } = e, f = i.useRef(null), h = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], m = null != h ? h : n.name, [g, b] = i.useState(!1), y = e => (0, r.jsx)(c.Z, O(v({}, e), {
       emojiName: n.name,
       size: n.jumboable ? "jumbo" : "default",
       src: n.src,
-      alt: f,
+      alt: h,
       animated: !1,
       channelId: u,
       messageId: d
-    })), y = e => (0, r.jsx)(l.ua7, O(v({
+    })), I = e => (0, r.jsx)(l.ua7, O(v({
       text: (0, p.Y)(n.name, s),
-      "aria-label": h
+      "aria-label": m
     }, p.b_), {
       position: o,
-      shouldShow: !m,
+      shouldShow: !g,
       onTooltipShow: () => {
         s && T({
           emojiNode: n,
@@ -88,20 +88,21 @@ let I = e => {
         })
       },
       children: t => (0, r.jsx)(l.P3F, O(v({}, e), {
+        innerRef: f,
         tag: "span",
         onClick: t => {
           var n;
-          g(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
+          b(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
         },
         className: a()(E.emojiContainer, {
           [E.emojiContainerClickable]: s,
           [E.emojiJumbo]: n.jumboable
         }),
-        children: b(t)
+        children: y(t)
       }))
     }));
-    if (!s) return y();
-    let I = e => (0, r.jsx)(_.Az, O(v({}, e), {
+    if (!s) return I();
+    let S = e => (0, r.jsx)(_.Az, O(v({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -111,10 +112,11 @@ let I = e => {
       nudgeAlignIntoViewport: !0,
       position: "right",
       onRequestClose: () => {
-        g(!1)
+        b(!1)
       },
-      renderPopout: I,
-      children: y
+      renderPopout: S,
+      targetElementRef: f,
+      children: I
     })
   },
   S = e => {
@@ -125,7 +127,7 @@ let I = e => {
       enableClick: u = !0,
       channelId: g,
       messageId: b
-    } = e, [y, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), R = function() {
+    } = e, [y, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, O(v({}, e), {
         emojiName: t.name,
@@ -136,7 +138,7 @@ let I = e => {
         channelId: g,
         messageId: b
       }))
-    }, P = (0, s.Z)(), w = e => (0, r.jsx)(l.ua7, O(v({
+    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, O(v({
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
@@ -146,10 +148,11 @@ let I = e => {
         A(!0), u && (T({
           emojiNode: t,
           isCustomEmoji: !0,
-          nonce: P
+          nonce: w
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
       children: n => (0, r.jsx)(l.P3F, O(v({}, e), {
+        innerRef: R,
         onMouseEnter: () => {
           var t;
           null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
@@ -160,7 +163,7 @@ let I = e => {
         } : void 0,
         onMouseLeave: () => {
           S && (f.default.track(h.rMx.CLOSE_POPOUT, {
-            nonce: P
+            nonce: w
           }), A(!1))
         },
         tag: "span",
@@ -168,29 +171,30 @@ let I = e => {
           [E.emojiContainerClickable]: u,
           [E.emojiJumbo]: t.jumboable
         }),
-        children: R(n)
+        children: P(n)
       }))
     }));
-    if (!u) return w();
-    let D = e => (0, r.jsx)(_.vk, O(v({}, e), {
+    if (!u) return D();
+    let L = e => (0, r.jsx)(_.vk, O(v({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
-      nonce: P
+      nonce: w
     }));
     return (0, r.jsx)(l.yRy, {
       animation: l.yRy.Animation.FADE,
       align: "center",
       onRequestClose: () => {
         f.default.track(h.rMx.CLOSE_POPOUT, {
-          nonce: P
+          nonce: w
         }), A(!1), C(!1)
       },
       autoInvert: !0,
       nudgeAlignIntoViewport: !0,
       position: "right",
-      renderPopout: D,
+      renderPopout: L,
       positionKey: y,
-      children: w
+      targetElementRef: R,
+      children: D
     })
   },
   T = e => {

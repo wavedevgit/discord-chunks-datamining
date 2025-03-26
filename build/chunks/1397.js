@@ -156,6 +156,7 @@ class z extends i.PureComponent {
       min: W.YeM.ACCOUNT_AGE
     }), E.countdown = p);
     return (0, r.jsx)(s.yRy, {
+      targetElementRef: this.textAreaRef,
       position: "top",
       align: "left",
       shouldShow: O,
@@ -163,13 +164,18 @@ class z extends i.PureComponent {
         shouldShowLurkerModeSuccessPopout: !1
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(D.Z, V(G({}, E), {
+      children: e => (0, r.jsx)(D.Z, V(G({
+        ref: this.textAreaRef
+      }, E), {
         children: (0, r.jsxs)(i.Fragment, {
           children: [this.renderMemberVerificationSuccessModal(), b ? (0, r.jsx)(s.yRy, {
+            targetElementRef: this.upsellTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
             shouldShow: j,
             position: "top",
-            children: e => (0, r.jsx)(s.P3F, V(G({}, e), {
+            children: e => (0, r.jsx)(s.P3F, V(G({
+              innerRef: this.upsellTargetRef
+            }, e), {
               className: F.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: f
@@ -184,7 +190,7 @@ class z extends i.PureComponent {
       submitting: !1,
       shouldShowLurkerModeUpsellPopout: !1,
       shouldShowLurkerModeSuccessPopout: !1
-    }), H(this, "renderSuccessPopout", e => {
+    }), H(this, "textAreaRef", i.createRef()), H(this, "upsellTargetRef", i.createRef()), H(this, "renderSuccessPopout", e => {
       let {
         closePopout: t
       } = e, {

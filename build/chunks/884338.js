@@ -164,6 +164,7 @@ class A extends(r = o.PureComponent) {
       popoutUserId: l
     } = this.state, d = n.find(e => null != e && e.id === l), p = a && null == h.default.getUser(l);
     return (0, i.jsx)(u.yRy, {
+      targetElementRef: this._ref,
       position: "right",
       preload: null == d ? void 0 : () => (0, f.Z)(d.id, d.getAvatarURL(r, 80), {
         guildId: r

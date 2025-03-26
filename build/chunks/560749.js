@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => I
+  Z: () => w
 }), n(301563), n(653041), n(47120), n(308318), n(230036);
 var r = n(200651),
   l = n(192379),
@@ -23,11 +23,11 @@ var r = n(200651),
   b = n(823379),
   S = n(102172),
   C = n(981631),
-  N = n(433177),
+  N = n(690452),
   y = n(388032),
   Z = n(358476);
 
-function w(e) {
+function I(e) {
   let {
     result: t,
     onSelectChannel: n
@@ -63,7 +63,7 @@ function w(e) {
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     onSelectChannel: t
   } = e, {
@@ -83,7 +83,7 @@ function I(e) {
       null != t && (0, S.JL)(t, p.Z, g.Z) && e.push(t)
     }
     return e
-  }), I = (0, i.Wu)([d.Z, m.Z, h.Z, p.Z, g.Z], () => {
+  }), w = (0, i.Wu)([d.Z, m.Z, h.Z, p.Z, g.Z], () => {
     let e = [],
       t = new Set;
     for (let n of d.Z.getChannelHistory()) {
@@ -93,10 +93,10 @@ function I(e) {
     for (let n of h.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === C.d4z.GUILD_VOICE && !t.has(n.id) && (0, S.JL)(n, p.Z, g.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = l.useMemo(() => {
-    let e = new Set(I.map(e => e.id)),
+    let e = new Set(w.map(e => e.id)),
       t = new Set(j.map(e => e.id));
-    return [...j.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, a.Z)(e.id)).filter(b.lm), ...I.filter(e => !t.has(e.id)).map(e => (0, a.Z)(e.id)).filter(b.lm)]
-  }, [I, j]), E = "" !== c ? v : T;
+    return [...j.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, a.Z)(e.id)).filter(b.lm), ...w.filter(e => !t.has(e.id)).map(e => (0, a.Z)(e.id)).filter(b.lm)]
+  }, [w, j]), E = "" !== c ? v : T;
   return (0, r.jsxs)("div", {
     className: Z.root,
     children: [(0, r.jsx)(s.E1j, {
@@ -128,7 +128,7 @@ function I(e) {
         let {
           rowIndex: n
         } = e, l = E[n];
-        return (0, r.jsx)(w, {
+        return (0, r.jsx)(I, {
           result: l,
           onSelectChannel: t
         }, l.record.id)

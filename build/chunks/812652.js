@@ -18,7 +18,7 @@ var r = n(200651),
   p = n(156582),
   g = n(396678),
   _ = n(37113),
-  v = n(433177),
+  v = n(690452),
   j = n(388032),
   b = n(423719);
 let S = [{
@@ -65,15 +65,15 @@ function Z(e) {
     onClose: b,
     onSelect: Z
   } = e, [{
-    notifyFriends: w,
-    hidePreview: I,
+    notifyFriends: I,
+    hidePreview: w,
     muteStreamAudio: O,
     preset: T,
     resolution: E,
     fps: P,
     sourceType: R,
     audioSourceId: W
-  }, A] = (0, x.E_)(), k = (0, c.Z)(), M = (0, h.Z)(), [L, D] = null !== (n = (0, g.Z)(_.tI.PRESET_VIDEO)) && void 0 !== n ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [G, U] = null !== (l = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) && void 0 !== l ? l : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
+  }, k] = (0, x.E_)(), A = (0, c.Z)(), M = (0, h.Z)(), [L, D] = null !== (n = (0, g.Z)(_.tI.PRESET_VIDEO)) && void 0 !== n ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [G, U] = null !== (l = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) && void 0 !== l ? l : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
   return (0, r.jsxs)(o.v2r, {
     "aria-label": j.NW.string(j.t["+1H47u"]),
     navId: "stream-options",
@@ -113,7 +113,7 @@ function Z(e) {
                 throw Error("No case implemented for ".concat(e))
             }
           }(t),
-          action: () => A({
+          action: () => k({
             type: "set_preset",
             preset: t
           })
@@ -143,7 +143,7 @@ function Z(e) {
               if (!(0, u.Z)(T, e, P, d.default.getCurrentUser(), M)) return b(), (0, p.E)({
                 analyticsLocation: a.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
-              A({
+              k({
                 type: "set_resolution",
                 resolution: e
               })
@@ -164,7 +164,7 @@ function Z(e) {
             if (!(0, u.Z)(T, E, e, d.default.getCurrentUser(), M)) return b(), (0, p.E)({
               analyticsLocation: a.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
-            A({
+            k({
               type: "set_fps",
               fps: e
             })
@@ -175,16 +175,16 @@ function Z(e) {
       id: "stream-option-mute",
       checked: O,
       label: j.NW.string(v.Z["b0+Ira"]),
-      action: () => A({
+      action: () => k({
         type: "set_mute_audio",
         value: !O
       })
     }), R === s.vA.CAMERA && (0, r.jsx)(o.sNh, {
       id: "device-audio-input",
       label: j.NW.string(v.Z.YSdHV1),
-      subtext: null === (t = k[null != W ? W : ""]) || void 0 === t ? void 0 : t.name,
+      subtext: null === (t = A[null != W ? W : ""]) || void 0 === t ? void 0 : t.name,
       subtextLineClamp: 1,
-      children: i().map(k, e => {
+      children: i().map(A, e => {
         let {
           id: t,
           name: n
@@ -194,7 +194,7 @@ function Z(e) {
           id: "device-audio-input-".concat(t),
           checked: W === t,
           label: n,
-          action: () => A({
+          action: () => k({
             type: "set_audio_source",
             audioSourceId: t
           })
@@ -205,19 +205,19 @@ function Z(e) {
       label: j.NW.string(v.Z.eYyK1t),
       children: [(0, r.jsx)(o.S89, {
         id: "stream-option-share-preview",
-        checked: I,
+        checked: w,
         label: j.NW.string(v.Z.H3Qjqa),
-        action: () => A({
+        action: () => k({
           type: "set_hide_preview",
-          hidePreview: !I
+          hidePreview: !w
         })
       }), (0, r.jsx)(o.S89, {
         id: "stream-option-notify",
-        checked: w,
+        checked: I,
         label: j.NW.string(v.Z.SiHtX1),
-        action: () => A({
+        action: () => k({
           type: "set_notify_friends",
-          value: !w
+          value: !I
         })
       })]
     })]

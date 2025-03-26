@@ -177,17 +177,22 @@ function A(e) {
 }
 
 function N(e) {
+  var {
+    registerInnerRef: t
+  } = e, n = I(e, ["registerInnerRef"]);
   let {
-    useThoughtfullyAnimated: t
+    useThoughtfullyAnimated: o
   } = i.useContext(f.q), {
-    animate: n,
-    registerRef: o
-  } = t(), {
-    disableAnimations: a
-  } = i.useContext(c.G);
-  return (0, r.jsx)(A, O(v({}, e), {
-    registerAnimatedElementRef: o,
-    shouldAnimate: n && !a
+    animate: a,
+    registerRef: s
+  } = o(), {
+    disableAnimations: l
+  } = i.useContext(c.G), u = i.useCallback(e => {
+    s(e), null == t || t(e)
+  }, [t, s]);
+  return (0, r.jsx)(A, O(v({}, n), {
+    registerAnimatedElementRef: u,
+    shouldAnimate: a && !l
   }))
 }
 

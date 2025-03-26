@@ -13,14 +13,14 @@ var r = n(200651),
   u = n(313201),
   m = n(661824),
   h = n(984933),
-  v = n(430824),
-  j = n(823379),
+  j = n(430824),
+  v = n(823379),
   x = n(402148),
   p = n(570961),
   g = n(208665),
   N = n(460117),
-  b = n(290511),
-  f = n(388032),
+  f = n(290511),
+  b = n(388032),
   I = n(741798);
 
 function y(e) {
@@ -28,26 +28,26 @@ function y(e) {
     transitionState: t,
     onClose: n,
     onSave: o,
-    onDelete: v,
-    option: j,
+    onDelete: j,
+    option: v,
     guild: x,
     prompt: y,
     index: k
   } = e, C = (0, u.Dt)(), P = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(x.id)), [S, _] = i.useState(() => {
     var e;
-    return null !== (e = null == j ? void 0 : j.emoji) && void 0 !== e ? e : null
+    return null !== (e = null == v ? void 0 : v.emoji) && void 0 !== e ? e : null
   }), [z, w] = i.useState(() => {
     var e;
-    return null !== (e = null == j ? void 0 : j.title) && void 0 !== e ? e : ""
+    return null !== (e = null == v ? void 0 : v.title) && void 0 !== e ? e : ""
   }), [W, B] = i.useState(() => {
     var e;
-    return null !== (e = null == j ? void 0 : j.description) && void 0 !== e ? e : ""
-  }), [T, E] = i.useState(() => {
+    return null !== (e = null == v ? void 0 : v.description) && void 0 !== e ? e : ""
+  }), [E, T] = i.useState(() => {
     var e;
-    return new Set(null !== (e = null == j ? void 0 : j.channelIds) && void 0 !== e ? e : [])
-  }), [Z, R] = i.useState(() => {
+    return new Set(null !== (e = null == v ? void 0 : v.channelIds) && void 0 !== e ? e : [])
+  }), [R, Z] = i.useState(() => {
     var e;
-    return new Set(null !== (e = null == j ? void 0 : j.roleIds) && void 0 !== e ? e : [])
+    return new Set(null !== (e = null == v ? void 0 : v.roleIds) && void 0 !== e ? e : [])
   }), [H, L] = i.useState({}), D = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
@@ -64,60 +64,60 @@ function y(e) {
         className: I.questionNumber,
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: f.NW.format(f.t.yjS3zs, {
+        children: b.NW.format(b.t.yjS3zs, {
           index: k + 1
         })
       }), (0, r.jsx)(a.X6q, {
         id: C,
         className: I.header,
         variant: "heading-lg/semibold",
-        children: null != y.title && y.title.length > 0 ? y.title : f.NW.string(f.t.vY91Cw)
+        children: null != y.title && y.title.length > 0 ? y.title : b.NW.string(b.t.vY91Cw)
       }), (0, r.jsx)(a.X6q, {
         className: I.nameHeader,
         variant: "heading-md/semibold",
-        children: f.NW.string(f.t.VWdcBg)
+        children: b.NW.string(b.t.VWdcBg)
       }), (0, r.jsx)(a.oil, {
         inputRef: D,
-        placeholder: f.NW.string(f.t.EHe6gY),
+        placeholder: b.NW.string(b.t.EHe6gY),
         value: z,
         onChange: e => w(e),
-        maxLength: b.NE,
+        maxLength: f.NE,
         autoFocus: !0
       }), (0, r.jsx)(a.pdY, {
         error: H.title
       }), (0, r.jsx)(a.oil, {
         className: I.descriptionInput,
-        placeholder: f.NW.string(f.t.mIjgJC),
+        placeholder: b.NW.string(b.t.mIjgJC),
         value: W,
         onChange: e => B(e),
-        maxLength: b.NO
+        maxLength: f.NO
       }), (0, r.jsx)(m.Z, {
         className: I.divider
       }), (0, r.jsx)(a.X6q, {
         className: I.rolesHeader,
         variant: "heading-md/semibold",
-        children: f.NW.string(f.t.TtIbPD)
+        children: b.NW.string(b.t.TtIbPD)
       }), (0, r.jsx)(c.Z, {
         guildId: x.id,
-        selectedChannelIds: T,
-        placeholder: f.NW.string(f.t.vephiI),
-        onChange: E,
-        helperText: f.NW.string(f.t.SoT6wc),
+        selectedChannelIds: E,
+        placeholder: b.NW.string(b.t.vephiI),
+        onChange: T,
+        helperText: b.NW.string(b.t.SoT6wc),
         className: I.searchInput
       }), (0, r.jsx)(d.Z, {
         guildId: x.id,
-        selectedRoleIds: Z,
+        selectedRoleIds: R,
         disableEveryoneRole: !0,
-        placeholder: f.NW.string(f.t.aFO1Iy),
-        onChange: R,
-        helperText: f.NW.string(f.t.Mbvpv7),
+        placeholder: b.NW.string(b.t.aFO1Iy),
+        onChange: Z,
+        helperText: b.NW.string(b.t.Mbvpv7),
         className: I.searchInput,
         selectableRoleFilter: e => !e.managed
       }), null == H.roles ? null : (0, r.jsx)(a.pdY, {
         error: H.roles
       }), (0, r.jsx)(O, {
         guild: x,
-        roleIds: Z
+        roleIds: R
       }), (0, r.jsx)(m.Z, {
         className: I.divider
       }), (0, r.jsxs)("div", {
@@ -126,11 +126,11 @@ function y(e) {
           className: I.emojiQuestionText,
           children: [(0, r.jsx)(a.X6q, {
             variant: "heading-md/semibold",
-            children: f.NW.string(f.t["4ahTBg"])
+            children: b.NW.string(b.t["4ahTBg"])
           }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: f.NW.string(f.t.Iv9RGh)
+            children: b.NW.string(b.t.Iv9RGh)
           })]
         }), (0, r.jsx)(N.Z, {
           emoji: S,
@@ -148,9 +148,9 @@ function y(e) {
             look: a.zxk.Looks.LINK,
             color: a.zxk.Colors.RED,
             onClick: () => {
-              v(), n()
+              j(), n()
             },
-            children: f.NW.string(f.t.N86XcH)
+            children: b.NW.string(b.t.N86XcH)
           })
         }), (0, r.jsxs)("div", {
           className: I.rightButtons,
@@ -159,27 +159,27 @@ function y(e) {
             size: a.zxk.Sizes.SMALL,
             look: a.zxk.Looks.LINK,
             color: a.zxk.Colors.PRIMARY,
-            children: f.NW.string(f.t["ETE/oK"])
+            children: b.NW.string(b.t["ETE/oK"])
           }), (0, r.jsx)(a.zxk, {
             onClick: () => {
               var e;
               let t = {
-                  id: null !== (e = null == j ? void 0 : j.id) && void 0 !== e ? e : "".concat(Date.now()),
+                  id: null !== (e = null == v ? void 0 : v.id) && void 0 !== e ? e : "".concat(Date.now()),
                   title: z,
                   description: W,
-                  channelIds: Array.from(T).sort(),
-                  roleIds: Array.from(Z).sort(),
+                  channelIds: Array.from(E).sort(),
+                  roleIds: Array.from(R).sort(),
                   emoji: null == S ? void 0 : S
                 },
                 r = function(e, t, n, r) {
                   let i = {};
-                  r.title.length <= 0 && (i.title = f.NW.string(f.t.p3PKzM));
+                  r.title.length <= 0 && (i.title = b.NW.string(b.t.p3PKzM));
                   let o = (0, p.en)(e, t, n, r);
                   return null != o && (i.roles = o), i
                 }(x, g.Z.editedOnboardingPrompts, y, t);
               L(r), l().isEmpty(r) && (o(t), n())
             },
-            children: f.NW.string(f.t.R3BPHx)
+            children: b.NW.string(b.t.R3BPHx)
           })]
         })]
       })
@@ -191,7 +191,7 @@ function O(e) {
   let {
     guild: t,
     roleIds: n
-  } = e, i = (0, s.e7)([v.Z], () => v.Z.getRoles(t.id)), o = Array.from(n).map(e => i[e]).filter(j.lm).find(x.F);
+  } = e, i = (0, s.e7)([j.Z], () => j.Z.getRoles(t.id)), o = Array.from(n).map(e => i[e]).filter(v.lm).find(x.F);
   return null == o ? null : (0, r.jsx)("div", {
     className: I.notice,
     children: (0, r.jsxs)("div", {
@@ -204,7 +204,7 @@ function O(e) {
         className: I.noticeIcon
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: f.NW.format(f.t["5zPJER"], {
+        children: b.NW.format(b.t["5zPJER"], {
           permissions: (0, x.i)(t, o).join(", ")
         })
       })]

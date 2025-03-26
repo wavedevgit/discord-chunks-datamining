@@ -65,51 +65,53 @@ let y = (0, d.Mg)(o.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       renderableSticker: t,
       channel: n,
       isInteracting: o
-    } = e, [s, d] = i.useState(!0), [m, g] = i.useState(String(Date.now())), [_] = (0, p.XW)(t, o), {
-      analyticsLocations: O
-    } = (0, c.ZP)(l.Z.STICKER_MESSAGE), N = (0, r.jsxs)("span", {
+    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, _] = i.useState(String(Date.now())), [O] = (0, p.XW)(t, o), {
+      analyticsLocations: N
+    } = (0, c.ZP)(l.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
       className: b.stickerName,
       children: [(0, r.jsx)(a.B7q, {
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
-      }), (null != _ ? _ : t).name]
+      }), (null != O ? O : t).name]
     });
     return (0, r.jsx)(c.Gt, {
-      value: O,
+      value: N,
       children: (0, r.jsx)(a.yRy, {
         align: "center",
         animation: a.yRy.Animation.TRANSLATE,
-        positionKey: m,
+        positionKey: g,
         onRequestClose: () => {
-          d(!0)
+          m(!0)
         },
         renderPopout: e => (0, r.jsx)(h.Z, x(v({}, e), {
           renderableSticker: t,
           channel: n,
-          refreshPositionKey: () => g(String(Date.now()))
+          refreshPositionKey: () => _(String(Date.now()))
         })),
+        targetElementRef: s,
         children: e => {
           let {
             onClick: n
           } = e;
           return (0, r.jsx)(a.ua7, x(v({}, u.b_), {
-            shouldShow: s,
-            text: (0, u.Y)(N),
+            shouldShow: d,
+            text: (0, u.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              E(_)
+              E(O)
             },
             children: e => (0, r.jsx)(a.P3F, x(v({}, e), {
+              innerRef: s,
               className: b.clickableSticker,
               onClick: e => {
-                d(!s), n(e)
+                m(!d), n(e)
               },
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: o,
                 size: y,
-                sticker: null != _ ? _ : t
+                sticker: null != O ? O : t
               })
             }))
           }))

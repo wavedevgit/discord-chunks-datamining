@@ -256,6 +256,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       avatarSize: l.EFr.SIZE_32,
       className: w.placeholder
     }) : (0, r.jsx)(l.yRy, {
+      targetElementRef: eh,
       renderPopout: eB,
       position: "bottom",
       shouldShow: eR,

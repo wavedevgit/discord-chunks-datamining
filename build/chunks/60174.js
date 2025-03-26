@@ -84,6 +84,7 @@ class P extends i.Component {
         })
       };
     return (0, r.jsx)(u.yRy, {
+      targetElementRef: this.ref,
       shouldShow: s,
       onRequestClose: this.handleReactionPickerToggle,
       renderPopout: this.renderReactionPopout,
@@ -99,6 +100,7 @@ class P extends i.Component {
           "aria-label": m ? j.NW.string(j.t.Kfcszs) : j.NW.string(j.t.lfIHs7),
           tooltipClassName: N.__invalid_addReactionTooltip,
           children: (0, r.jsxs)(u.P3F, (o = T({}, e), s = s = {
+            innerRef: this.ref,
             tabIndex: l,
             onClick: e => {
               this.handleAddReactionClick(e)
@@ -127,7 +129,7 @@ class P extends i.Component {
   constructor(...e) {
     super(...e), S(this, "state", {
       isReactionPickerActive: !1
-    }), S(this, "onAddReaction", (e, t) => {
+    }), S(this, "ref", i.createRef()), S(this, "onAddReaction", (e, t) => {
       if (null == e) return;
       let {
         channel: n,
@@ -180,10 +182,15 @@ class P extends i.Component {
         messageId: o.id
       });
       return (0, r.jsx)(c.M.Consumer, {
-        children: e => e ? (0, r.jsx)(u.VqE, {
-          "aria-label": j.NW.string(j.t["7Xqzdn"]),
-          children: l
-        }) : l
+        children: e => {
+          let {
+            inDialog: t
+          } = e;
+          return t ? (0, r.jsx)(u.VqE, {
+            "aria-label": j.NW.string(j.t["7Xqzdn"]),
+            children: l
+          }) : l
+        }
       })
     })
   }

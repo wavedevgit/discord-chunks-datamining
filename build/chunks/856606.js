@@ -264,62 +264,68 @@ function J(e) {
 }
 
 function q() {
-  let {
-    channel: e,
-    permissionOverwrites: t,
-    selectedOverwriteId: l
-  } = (0, o.cj)([S.Z], () => S.Z), a = null == e ? void 0 : e.getGuildId(), {
-    guild: u,
-    guildRoles: p
-  } = (0, o.cj)([O.Z], () => {
-    let e = null != a ? O.Z.getGuild(a) : void 0,
-      t = null != e ? O.Z.getRoles(e.id) : void 0;
-    return {
-      guild: e,
-      guildRoles: t
-    }
-  }, [a]), f = (0, M.Z)(a, t), N = (0, j.ZP)(), y = (0, o.e7)([b.Z], () => b.Z.roleStyle);
-  if (null == u || null == p || null == e || null == t) return null;
-  let C = n => {
+  let e = r.useRef(null),
+    {
+      channel: t,
+      permissionOverwrites: l,
+      selectedOverwriteId: a
+    } = (0, o.cj)([S.Z], () => S.Z),
+    u = null == t ? void 0 : t.getGuildId(),
+    {
+      guild: p,
+      guildRoles: f
+    } = (0, o.cj)([O.Z], () => {
+      let e = null != u ? O.Z.getGuild(u) : void 0,
+        t = null != e ? O.Z.getRoles(e.id) : void 0;
+      return {
+        guild: e,
+        guildRoles: t
+      }
+    }, [u]),
+    N = (0, M.Z)(u, l),
+    y = (0, j.ZP)(),
+    C = (0, o.e7)([b.Z], () => b.Z.roleStyle);
+  if (null == p || null == f || null == t || null == l) return null;
+  let w = e => {
       let {
-        position: r,
-        closePopout: l
-      } = n;
+        position: n,
+        closePopout: r
+      } = e;
       return (0, i.jsx)(J, {
-        guild: u,
-        channel: e,
-        permissionOverwrites: t,
-        position: null != r ? r : "bottom",
-        onSelect: w,
-        onClose: l
+        guild: p,
+        channel: t,
+        permissionOverwrites: l,
+        position: null != n ? n : "bottom",
+        onSelect: Z,
+        onClose: r
       })
     },
-    w = (t, n) => {
-      h.Z.updatePermissionOverwrite(e.id, {
-        id: t,
+    Z = (e, n) => {
+      h.Z.updatePermissionOverwrite(t.id, {
+        id: e,
         type: n,
         allow: L.Hn,
         deny: L.Hn
-      }).then(() => (0, g.Aj)(t))
+      }).then(() => (0, g.Aj)(e))
     };
-  null != t && null == t[u.id] && (t[u.id] = L.we(u.id));
-  let Z = s()(t).filter(e => e.type === x.BN.ROLE).map(e => p[e.id]).filter(R.lm).sortBy(e => -e.position).map(e => (0, i.jsx)(m.Z, {
-      theme: N,
-      roleStyle: y,
+  null != l && null == l[p.id] && (l[p.id] = L.we(p.id));
+  let E = s()(l).filter(e => e.type === x.BN.ROLE).map(e => f[e.id]).filter(R.lm).sortBy(e => -e.position).map(e => (0, i.jsx)(m.Z, {
+      theme: y,
+      roleStyle: C,
       id: e.id,
       role: e,
-      guild: u,
+      guild: p,
       color: e.colorString,
       "aria-label": e.name,
       children: e.name
-    }, "".concat(l, "-").concat(e.id))).value(),
-    E = s()(f).sortBy(e => e.username.toLowerCase()).map(e => {
-      let t = e.getAvatarURL(u.id, 24);
+    }, "".concat(a, "-").concat(e.id))).value(),
+    T = s()(N).sortBy(e => e.username.toLowerCase()).map(e => {
+      let t = e.getAvatarURL(p.id, 24);
       return (0, i.jsx)(m.Z, {
         id: e.id,
-        guild: u,
-        theme: N,
-        roleStyle: y,
+        guild: p,
+        theme: y,
+        roleStyle: C,
         "aria-label": D.ZP.getUserTag(e, {
           decoration: "never"
         }),
@@ -335,22 +341,25 @@ function q() {
             children: D.ZP.getUserTag(e)
           })]
         })
-      }, "".concat(l, "-").concat(e.id))
+      }, "".concat(a, "-").concat(e.id))
     }).value();
   return (0, i.jsx)(v.ZP.Sidebar, {
     className: V.layoutStyle,
     scrollable: !0,
     children: (0, i.jsxs)(d.njP, {
       onItemSelect: g.Aj,
-      selectedItem: l,
+      selectedItem: a,
       orientation: "vertical",
       children: [(() => {
-        let e = (0, c.wj)(N) ? n(521715) : n(299603);
+        let t = (0, c.wj)(y) ? n(521715) : n(299603);
         return (0, i.jsx)(d.yRy, {
-          renderPopout: C,
+          targetElementRef: e,
+          renderPopout: w,
           position: "bottom",
           autoInvert: !1,
-          children: t => (0, i.jsx)(d.njP.Header, U(G({}, t), {
+          children: n => (0, i.jsx)(d.njP.Header, U(G({
+            ref: e
+          }, n), {
             children: (0, i.jsxs)("div", {
               className: V.sidebarHeaderDefault,
               children: [(0, i.jsxs)("span", {
@@ -358,12 +367,12 @@ function q() {
               }), (0, i.jsx)("img", {
                 alt: "",
                 className: V.sidebarHeader,
-                src: e
+                src: t
               })]
             })
           }))
         })
-      })(), Z, E, (0, i.jsxs)(r.Fragment, {
+      })(), E, T, (0, i.jsxs)(r.Fragment, {
         children: [(0, i.jsx)(d.njP.Separator, {
           style: {
             marginTop: 20,

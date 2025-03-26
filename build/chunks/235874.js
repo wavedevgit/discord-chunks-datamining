@@ -119,6 +119,7 @@ class v extends(r = o.Component) {
     } = this.props;
     return (0, i.jsx)(l.H, {
       ref: this.ref,
+      targetElementRef: this.props.targetElementRef,
       overridePositionRef: h,
       preload: m,
       position: n,

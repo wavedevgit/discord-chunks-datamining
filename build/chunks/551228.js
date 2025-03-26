@@ -1,28 +1,28 @@
 /** Chunk was on 62880 **/
-t.d(n, {
+l.d(n, {
   ZP: () => j,
   pi: () => h,
   te: () => m
-}), t(47120);
-var l = t(200651),
-  i = t(192379),
-  a = t(442837),
-  s = t(594174),
-  r = t(379357),
-  c = t(719247),
-  d = t(442550),
-  o = t(297781),
-  u = t(443487),
-  x = t(563504);
+}), l(47120);
+var t = l(200651),
+  i = l(192379),
+  a = l(442837),
+  s = l(594174),
+  r = l(379357),
+  c = l(719247),
+  d = l(442550),
+  o = l(297781),
+  u = l(443487),
+  x = l(563504);
 let m = [o.XF];
 
 function h(e) {
-  var n, t, l, i;
+  var n, l, t, i;
   let r = (0, a.e7)([c.Z], () => c.Z.getMatchingActivity(e)),
     d = (0, a.e7)([s.default], () => s.default.getUser(e.author_id));
   if (null == r || null == d) return {};
   let o = e.extra.entries[0],
-    u = null !== (l = null !== (t = r.state) && void 0 !== t ? t : null === (n = o.media.artists[0]) || void 0 === n ? void 0 : n.name) && void 0 !== l ? l : o.media.title,
+    u = null !== (t = null !== (l = r.state) && void 0 !== l ? l : null === (n = o.media.artists[0]) || void 0 === n ? void 0 : n.name) && void 0 !== t ? t : o.media.title,
     x = null !== (i = r.details) && void 0 !== i ? i : o.media.title;
   return {
     activity: r,
@@ -35,7 +35,7 @@ function h(e) {
 let j = i.memo(function(e) {
   let {
     entry: n,
-    channel: t,
+    channel: l,
     selected: i,
     hovered: a
   } = e, {
@@ -46,23 +46,23 @@ let j = i.memo(function(e) {
   } = (0, r.rv)({
     entry: n
   });
-  return null == s ? (0, l.jsx)(u.cA, {}) : (0, l.jsxs)(u.Zb, {
+  return null == s ? (0, t.jsx)(u.cA, {}) : (0, t.jsxs)(u.Zb, {
     selected: i,
-    children: [(0, l.jsxs)(u.e$, {
-      children: [(0, l.jsx)(u.F9, {
+    children: [(0, t.jsxs)(u.e$, {
+      children: [(0, t.jsx)(u.F9, {
         entry: n,
-        channelId: t.id,
-        guildId: t.guild_id
-      }), (0, l.jsx)(u.ll, {
+        channelId: l.id,
+        guildId: l.guild_id
+      }), (0, t.jsx)(u.ll, {
         children: c
-      }), (0, l.jsx)(o.Gk, {
+      }), (0, t.jsx)(o.Gk, {
         location: o.Gt.CARD,
-        children: m.map((e, t) => (0, l.jsx)(e, {
+        children: m.map((e, l) => (0, t.jsx)(e, {
           entry: n,
           hovered: a
-        }, t))
+        }, l))
       })]
-    }), (0, l.jsx)(d.f, {
+    }), (0, t.jsx)(d.f, {
       src: null == j ? void 0 : j.src,
       size: 48,
       className: x.thumbnail

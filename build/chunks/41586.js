@@ -62,19 +62,19 @@ let H = l.forwardRef(function(e, t) {
     null != n && H && (0, C.ZDy)(async () => e => (0, r.jsx)(m.Z, _(N({}, e), {
       guild: n
     })))
-  }, [n, H]), S = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), D = (0, f.gm)(n.id), [Z, L] = l.useState(S.query), I = null != S.selectedSort && S.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && S.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, R = l.useCallback(e => {
+  }, [n, H]), S = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), D = (0, f.gm)(n.id), [Z, R] = l.useState(S.query), L = null != S.selectedSort && S.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && S.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, I = l.useCallback(e => {
     let t = e.trim();
     t.length > 0 && D(), (0, g.Dr)(n.id, {
       query: t
     })
-  }, [n.id, D]), P = l.useMemo(() => a()(R, 300), [R]), M = l.useCallback(e => {
-    L(e), P(e)
+  }, [n.id, D]), P = l.useMemo(() => a()(I, 300), [I]), M = l.useCallback(e => {
+    R(e), P(e)
   }, [P]), V = l.useCallback(() => {
-    L(""), R("")
-  }, [R]);
+    R(""), I("")
+  }, [I]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      L("")
+      R("")
     }
   })), (0, r.jsxs)("div", {
     className: O.searchHeaderContainer,
@@ -143,10 +143,10 @@ let H = l.forwardRef(function(e, t) {
               className: O.sortButton,
               children: [(0, r.jsx)(C.uVW, {
                 size: "xs",
-                color: I ? C.TVs.colors.INTERACTIVE_ACTIVE.css : C.TVs.colors.HEADER_SECONDARY.css
+                color: L ? C.TVs.colors.INTERACTIVE_ACTIVE.css : C.TVs.colors.HEADER_SECONDARY.css
               }), (0, r.jsx)(C.Text, {
                 variant: "text-sm/medium",
-                color: I ? "interactive-active" : "header-secondary",
+                color: L ? "interactive-active" : "header-secondary",
                 className: O.sortText,
                 children: y.NW.string(y.t.XvNMNj)
               })]

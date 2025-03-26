@@ -25,17 +25,18 @@ let y = e => {
     viewId: r,
     officialGuildId: o,
     onClose: y
-  } = e, v = (0, l.e7)([f.Z, p.Z], () => p.Z.getChannel(f.Z.getChannelId())), j = (0, l.e7)([m.default], () => m.default.getUser(t.author_id)), {
-    nick: x,
-    avatar: P
+  } = e, v = a.useRef(null), j = (0, l.e7)([f.Z, p.Z], () => p.Z.getChannel(f.Z.getChannelId())), x = (0, l.e7)([m.default], () => m.default.getUser(t.author_id)), {
+    nick: P,
+    avatar: E
   } = a.useMemo(() => {
-    let e = null == j ? void 0 : j.getAvatarURL(null == v ? void 0 : v.guild_id, 48, !1);
+    let e = null == x ? void 0 : x.getAvatarURL(null == j ? void 0 : j.guild_id, 48, !1);
     return {
-      nick: g.ZP.getName(null == v ? void 0 : v.guild_id, null == v ? void 0 : v.id, j),
+      nick: g.ZP.getName(null == j ? void 0 : j.guild_id, null == j ? void 0 : j.id, x),
       avatar: e
     }
-  }, [j, v]);
-  return null == j ? null : (0, n.jsx)(s.yRy, {
+  }, [x, j]);
+  return null == x ? null : (0, n.jsx)(s.yRy, {
+    targetElementRef: v,
     position: "right",
     renderPopout: e => {
       let {
@@ -90,7 +91,9 @@ let y = e => {
           })
         }
         return e
-      }({}, e), a = a = {
+      }({
+        innerRef: v
+      }, e), a = a = {
         className: h.profileEntryCard,
         children: (0, n.jsx)(s.tEY, {
           offset: {
@@ -102,9 +105,9 @@ let y = e => {
           children: (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {
               className: h.avatar,
-              src: P,
+              src: E,
               alt: _.NW.formatToPlainString(_.t.IzVXxc, {
-                userName: x
+                userName: P
               })
             }), (0, n.jsx)("div", {
               className: h.playerInfo,
@@ -114,7 +117,7 @@ let y = e => {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
-                  children: x
+                  children: P
                 }), (0, n.jsx)(d.Gk, {
                   location: d.Gt.GAME_PROFILE,
                   children: u.W.map((e, r) => (0, n.jsx)(e, {

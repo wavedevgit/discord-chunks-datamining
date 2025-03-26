@@ -17,7 +17,7 @@ var l = n(120356),
   h = n(615161),
   x = n(396678),
   p = n(37113),
-  g = n(433177),
+  g = n(690452),
   _ = n(388032),
   v = n(63770);
 
@@ -60,17 +60,17 @@ function S(e) {
     fps: N,
     muteStreamAudio: y,
     selectedSource: Z,
-    sourceType: w,
-    audioSourceId: I
+    sourceType: I,
+    audioSourceId: w
   }] = (0, h.E_)(), {
     twoClickVariant: O
   } = (0, d.a)({
     location: "go_live_modal_refresh",
     autoTrackExposure: !1
-  }), T = (0, c.Z)(), [E, P] = null !== (l = (0, x.Z)(S)) && void 0 !== l ? l : [C, N], R = (0, u.L)(S), W = (0, f.M)(E), A = w === s.vA.CAMERA, k = null != Z || !!O && (!m || A), M = null != Z ? null == Z ? void 0 : null === (t = Z.id) || void 0 === t ? void 0 : t.startsWith(s.vA.CAMERA) : A, L = k ? void 0 : S === p.tI.PRESET_VIDEO ? _.NW.string(g.Z.MuHUFR) : S === p.tI.PRESET_DOCUMENTS ? _.NW.string(g.Z.y0JuYW) : void 0;
+  }), T = (0, c.Z)(), [E, P] = null !== (l = (0, x.Z)(S)) && void 0 !== l ? l : [C, N], R = (0, u.L)(S), W = (0, f.M)(E), k = I === s.vA.CAMERA, A = null != Z || !!O && (!m || k), M = null != Z ? null == Z ? void 0 : null === (t = Z.id) || void 0 === t ? void 0 : t.startsWith(s.vA.CAMERA) : k, L = A ? void 0 : S === p.tI.PRESET_VIDEO ? _.NW.string(g.Z.MuHUFR) : S === p.tI.PRESET_DOCUMENTS ? _.NW.string(g.Z.y0JuYW) : void 0;
   return (0, r.jsxs)("div", {
     className: v.root,
-    children: [k && (0, r.jsx)(b, {
+    children: [A && (0, r.jsx)(b, {
       source: Z
     }), (0, r.jsxs)("div", {
       className: v.summary,
@@ -78,12 +78,12 @@ function S(e) {
         className: v.sourceOrPresetName,
         variant: "text-md/semibold",
         color: "header-primary",
-        children: k ? null !== (a = null == Z ? void 0 : Z.name) && void 0 !== a ? a : _.NW.string(g.Z["hJMA+/"]) : R
+        children: A ? null !== (a = null == Z ? void 0 : Z.name) && void 0 !== a ? a : _.NW.string(g.Z["hJMA+/"]) : R
       }), (0, r.jsxs)(o.Text, {
         className: v.summaryDetail,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: [k && (0, r.jsxs)(r.Fragment, {
+        children: [A && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("span", {
             className: v.iconSummaryContainer,
             children: [(0, r.jsx)(o.ewm, {
@@ -111,7 +111,7 @@ function S(e) {
           })]
         }), M ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(j, {}), (0, r.jsx)("span", {
-            children: null === (n = T[null != I ? I : ""]) || void 0 === n ? void 0 : n.name
+            children: null === (n = T[null != w ? w : ""]) || void 0 === n ? void 0 : n.name
           })]
         }) : null]
       })]

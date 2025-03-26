@@ -30,8 +30,9 @@ let s = e => {
   c = i.memo(function(e) {
     let {
       item: t
-    } = e;
+    } = e, n = i.useRef(null);
     return (0, r.jsx)(o.yRy, {
+      targetElementRef: n,
       renderPopout: e => {
         var n, i;
         return (0, r.jsx)(s, (n = function(e) {
@@ -72,6 +73,7 @@ let s = e => {
           onClick: t
         } = e;
         return (0, r.jsx)(o.M0o, {
+          ref: n,
           tooltip: l.NW.string(l.t.UKOtz8),
           color: o.YX$.TERTIARY,
           icon: (0, r.jsx)(o.xhG, {
