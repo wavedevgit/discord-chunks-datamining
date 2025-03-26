@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(120356),
-  a = n.n(i),
-  o = n(928873),
+  o = n.n(i),
+  a = n(928873),
   l = n(657707),
   s = n(442837),
   c = n(481060),
@@ -28,7 +28,7 @@ function b(e) {
     channel: t,
     children: n
   } = e;
-  return (0, r.jsx)(o.tE, {
+  return (0, r.jsx)(a.tE, {
     offset: _,
     children: (0, r.jsxs)("div", {
       className: g.channelHeader,
@@ -37,7 +37,7 @@ function b(e) {
         channel: t
       }), t.isPrivate() ? null : (0, r.jsx)(l.Fbu, {
         size: "xxs"
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(x, {
         channel: t
       }), n]
     })
@@ -58,22 +58,22 @@ function v(e) {
     size: c.EFr.SIZE_24,
     experimentLocation: "ForLaterChannelHeader"
   }) : (0, r.jsx)("div", {
-    className: a()(g.icon, g.dmIcon),
+    className: o()(g.icon, g.dmIcon),
     children: (0, r.jsx)(l.kBi, {
       size: "xxs"
     })
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     channel: t
-  } = e, n = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, !1), a = (0, d.KS)(t, n), o = t.isPrivate() || null == a, l = t.isDM() ? h.NW.formatToPlainString(h.t.smD7XV, {
+  } = e, n = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, !1), o = (0, d.KS)(t, n), a = t.isPrivate() || null == o, l = t.isDM() ? h.NW.formatToPlainString(h.t.smD7XV, {
     username: i
   }) : i;
   return (0, r.jsxs)("div", {
     className: g.channelNameSection,
-    children: [o ? null : (0, r.jsx)(a, {
+    children: [a ? null : (0, r.jsx)(o, {
       className: g.channelTypeIcon,
       size: "xxs"
     }), (0, r.jsx)(c.X6q, {

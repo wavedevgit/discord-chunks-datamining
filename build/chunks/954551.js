@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(665149),
-  o = n(388035),
+  o = n(665149),
+  a = n(388035),
   l = n(453473),
   s = n(388032);
 
@@ -23,9 +23,9 @@ function c(e) {
     popoutAlign: "right",
     children: (e, t, n, l) => {
       var u, d;
-      return (0, r.jsx)(o.U, {
+      return (0, r.jsx)(a.U, {
         location: "bookmarks-button",
-        children: (0, r.jsx)(a.JO, (u = function(e) {
+        children: (0, r.jsx)(o.JO, (u = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

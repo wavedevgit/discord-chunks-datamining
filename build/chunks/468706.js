@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(240872),
-  o = n(923500),
+  o = n(240872),
+  a = n(923500),
   l = n(247206),
   s = n(774863),
   c = n(388032);
@@ -17,11 +17,11 @@ function u(e, t) {
       messageId: t,
       channelId: e
     }), !s.Z.canSubmitFpReport(t)) {
-    a.Z.show({
+    o.Z.show({
       title: c.NW.string(c.t["iS/eFB"]),
       body: c.NW.string(c.t.YrjcgY),
       confirmText: c.NW.string(c.t.BddRzc)
-    }), o.Z.disableFalsePositiveButton(e, t);
+    }), a.Z.disableFalsePositiveButton(e, t);
     return
   }(0, i.ZDy)(async () => {
     let {

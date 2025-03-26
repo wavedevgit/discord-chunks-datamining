@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(344810);
+  o = n(344810);
 
-function o(e, t) {
+function a(e, t) {
   let {
     children: n
   } = e;
@@ -18,5 +18,5 @@ function o(e, t) {
     children: n
   })
 }
-let l = e => o(e, a.searchFilter),
-  s = e => o(e, a.searchAnswer)
+let l = e => a(e, o.searchFilter),
+  s = e => a(e, o.searchAnswer)

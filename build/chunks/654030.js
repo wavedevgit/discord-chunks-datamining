@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => V
 }), n(47120), n(301563);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(442837),
+  o = n(192379),
+  a = n(442837),
   l = n(481060),
   s = n(278323),
   c = n(224706),
@@ -18,8 +18,8 @@ var r, i = n(200651),
   _ = n(431583),
   b = n(592745),
   v = n(952164),
-  y = n(768419),
-  x = n(456432),
+  x = n(768419),
+  y = n(456432),
   E = n(347475),
   O = n(789407),
   N = n(598077),
@@ -76,7 +76,7 @@ function B(e, t) {
 let G = {
   spotify: "Spotify"
 };
-class H extends(r = a.PureComponent) {
+class H extends(r = o.PureComponent) {
   getCoverImage() {
     let {
       activity: e,
@@ -127,19 +127,19 @@ class H extends(r = a.PureComponent) {
         userId: n,
         message: r,
         guildId: i,
-        channelId: a
+        channelId: o
       } = this.props;
       if (null != e && null != n && null != r && null != e.session_id && null != e.application_id) {
-        var o, l;
+        var a, l;
         c.Z.join({
           userId: n,
           sessionId: e.session_id,
           applicationId: e.application_id,
-          channelId: a,
+          channelId: o,
           messageId: r.id,
           source: M.Sbl.MESSAGE_EMBED,
           analyticsLocations: t,
-          partyId: null === (o = e.party) || void 0 === o ? void 0 : o.id,
+          partyId: null === (a = e.party) || void 0 === a ? void 0 : a.id,
           embedded: (0, m.Z)(e, M.xjy.EMBEDDED),
           activity: e
         }), (0, h.Z)({
@@ -147,7 +147,7 @@ class H extends(r = a.PureComponent) {
           source: M.Sbl.MESSAGE_EMBED,
           userId: n,
           guildId: i,
-          channelId: a,
+          channelId: o,
           applicationId: e.application_id,
           partyId: null === (l = e.party) || void 0 === l ? void 0 : l.id,
           messageId: r.id,
@@ -187,22 +187,22 @@ class H extends(r = a.PureComponent) {
       let {
         channelId: n,
         guildId: r,
-        message: a,
-        analyticsLocations: o
+        message: o,
+        analyticsLocations: a
       } = this.props;
       return null == n ? null : (0, i.jsx)(E.Z, B(F({}, t), {
         userId: e.id,
         guildId: null != r ? r : void 0,
         channelId: n,
-        messageId: null == a ? void 0 : a.id,
-        newAnalyticsLocations: o
+        messageId: null == o ? void 0 : o.id,
+        newAnalyticsLocations: a
       }))
     }), U(this, "renderSpotifyJoinButton", e => {
       let {
         channelId: t,
         guildId: n
       } = this.props;
-      return (0, i.jsx)(x.Z, F({
+      return (0, i.jsx)(y.Z, F({
         guildId: null != n ? n : void 0,
         channelId: t,
         source: "Invite Embed"
@@ -221,8 +221,8 @@ class H extends(r = a.PureComponent) {
         activity: t,
         partyId: n,
         myPartyId: r,
-        application: a,
-        partyMembers: o,
+        application: o,
+        partyMembers: a,
         isPreview: l,
         isLaunching: s,
         isSender: c,
@@ -235,7 +235,7 @@ class H extends(r = a.PureComponent) {
         isLaunchable: _,
         guildId: b
       } = this.props;
-      if (null != a) e = a.name;
+      if (null != o) e = o.name;
       else if (null != n) {
         let [t] = n.split(":");
         e = G[t]
@@ -244,9 +244,9 @@ class H extends(r = a.PureComponent) {
         activity: t,
         partyId: n,
         myPartyId: r,
-        applicationId: null != a ? a.id : null,
+        applicationId: null != o ? o.id : null,
         name: e,
-        partyMembers: o,
+        partyMembers: a,
         className: d,
         coverImage: this.getCoverImage(),
         isPreview: l,
@@ -277,18 +277,18 @@ class H extends(r = a.PureComponent) {
 U(H, "defaultProps", {
   isPreview: !1
 });
-let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, j.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
+let V = a.ZP.connectStores([x.Z, C.Z, T.Z, P.Z, j.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
   var t;
   let {
     activity: n,
     analyticsLocations: r,
     application: i,
-    partyId: a,
-    userId: o,
+    partyId: o,
+    userId: a,
     guildId: l
   } = e, {
     id: s
-  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === a ? C.Z.getParty(n.party.id) : null, u = null != s ? null !== (t = T.Z.getApplicationActivity(s)) && void 0 !== t ? t : P.Z.getApplicationActivity(s, !0) : T.Z.findActivity(e => e.type === M.IIU.LISTENING), d = !1;
+  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === o ? C.Z.getParty(n.party.id) : null, u = null != s ? null !== (t = T.Z.getApplicationActivity(s)) && void 0 !== t ? t : P.Z.getApplicationActivity(s, !0) : T.Z.findActivity(e => e.type === M.IIU.LISTENING), d = !1;
   null != s && (d = w.Z.getState(s, M.mFx.JOIN) === M.OcF.LOADING);
   let p = Array.from(null != c ? c : []).map(e => {
       let t = null != l ? I.ZP.getMember(l, e) : null,
@@ -303,9 +303,9 @@ let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, j.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
         nick: n
       }
     }),
-    m = null != n && y.Z.canPlay(n),
-    f = y.Z.getSyncingWith(),
-    h = null != f && null != o && f.userId === o;
+    m = null != n && x.Z.canPlay(n),
+    f = x.Z.getSyncingWith(),
+    h = null != f && null != a && f.userId === a;
   return {
     analyticsLocations: r,
     partyMembers: p,

@@ -1,15 +1,15 @@
 /** Chunk was on 52272 **/
 n.d(t, {
   RB: () => O,
-  VH: () => y,
+  VH: () => x,
   Vi: () => N,
   Vu: () => j,
   q7: () => E
 });
 var r = n(692547),
   i = n(497089),
-  a = n(650473),
-  o = n(389765),
+  o = n(650473),
+  a = n(389765),
   l = n(137492),
   s = n(387661),
   c = n(659953),
@@ -29,18 +29,18 @@ let v = {
     NEW_MESSAGE: h,
     GAME_RELATIONSHIP: p
   },
-  y = {
+  x = {
     MISSED_MESSAGES: f,
     FRIEND_REQUEST_REMINDER: d,
     SCHEDULED_GUILD_EVENT: c,
     TOP_MESSAGES: m,
     NOTIFICATION_CENTER: l,
     UPDATE_PROFILE: b,
-    FIND_FRIENDS: o,
-    ADD_FRIEND: o,
+    FIND_FRIENDS: a,
+    ADD_FRIEND: a,
     FIRST_MESSAGE: g
   },
-  x = e => {
+  y = e => {
     switch (e.item_enum) {
       case i.AM.ADD_FRIEND:
         return "ADD_FRIEND";
@@ -57,7 +57,7 @@ let v = {
   E = e => {
     switch (e.type) {
       case "lifecycle_item":
-        return x(e);
+        return y(e);
       case "missed_messages":
         return "MISSED_MESSAGES";
       case "friend_request_reminder":
@@ -108,12 +108,12 @@ let v = {
   j = e => {
     switch (e.item_enum) {
       case i.AM.UPDATE_PROFILE:
-        return a.Y9;
+        return o.Y9;
       case i.AM.ADD_FRIEND:
       case i.AM.FIND_FRIENDS:
-        return a.AZ;
+        return o.AZ;
       case i.AM.FIRST_MESSAGE:
-        return a.bj;
+        return o.bj;
       default:
         return r.Z.unsafe_rawColors.BRAND_500.css
     }

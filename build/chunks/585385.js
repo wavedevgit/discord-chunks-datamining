@@ -5,8 +5,8 @@ n.d(t, {
 var l = n(200651);
 n(192379);
 var i = n(120356),
-  s = n.n(i),
-  r = n(481060),
+  r = n.n(i),
+  s = n(481060),
   a = n(410030),
   o = n(948851),
   d = n(868728),
@@ -19,52 +19,52 @@ let g = e => {
     headerId: n,
     modalState: i,
     shouldHideTemporaryInviteToggle: g,
-    onGenerateNewLink: v,
-    onToggleTemporary: x,
-    onSelectMaxAge: m,
+    onGenerateNewLink: m,
+    onToggleTemporary: v,
+    onSelectMaxAge: x,
     onSelectMaxUses: p,
     isGuestInviteCreationToggleEnabled: N,
     onSetInviteFlags: I
-  } = e, S = (0, a.ZP)(), {
+  } = e, f = (0, a.ZP)(), {
     maxAge: j,
-    maxUses: f,
-    temporary: E,
-    flags: C
+    maxUses: S,
+    temporary: b,
+    flags: E
   } = i;
   return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)(r.xBx, {
+    children: [(0, l.jsxs)(s.xBx, {
       children: [(0, l.jsx)("div", {
         className: c.closeButton,
-        children: (0, l.jsx)(r.olH, {
+        children: (0, l.jsx)(s.olH, {
           onClick: t
         })
       }), (0, l.jsx)("div", {
         className: c.headerContainer,
-        children: (0, l.jsx)(r.vwX, {
+        children: (0, l.jsx)(s.vwX, {
           id: n,
           tag: "h2",
-          className: s()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
+          className: r()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
           children: u.NW.string(u.t.Atdlys)
         })
       })]
     }), (0, l.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: g,
       maxAge: j,
-      maxUses: f,
-      temporary: E,
-      onToggleTemporary: x,
-      onSelectMaxAge: m,
+      maxUses: S,
+      temporary: b,
+      onToggleTemporary: v,
+      onSelectMaxAge: x,
       onSelectMaxUses: p,
-      onGenerateNewLink: v,
+      onGenerateNewLink: m,
       isGuestInviteCreationToggleEnabled: N,
       onSetInviteFlags: I,
-      inviteFlags: C
-    }), (0, l.jsx)(r.mzw, {
+      inviteFlags: E
+    }), (0, l.jsx)(s.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(d.Z, {
-        theme: S,
+        theme: f,
         onConfirm: () => {
-          v(), t()
+          m(), t()
         },
         onDismiss: t
       })

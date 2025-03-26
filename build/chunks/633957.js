@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  a = n(252258),
-  o = n(442837),
+  o = n(252258),
+  a = n(442837),
   l = n(846519),
   s = n(481060),
   c = n(2052),
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(906732),
   b = n(895924),
   v = n(311819),
-  y = n(321231),
-  x = n(758199),
+  x = n(321231),
+  y = n(758199),
   E = n(943762),
   O = n(914498),
   N = n(208444),
@@ -43,7 +43,7 @@ var r = n(200651),
 let F = i.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), a = (0, R.n)(), s = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), c = !1 === a || s;
+  } = e, [n, r] = i.useState(0), o = (0, R.n)(), s = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), c = !1 === o || s;
   return i.useEffect(() => {
     let e = new l.Xp;
     return e.start(c ? 15 * Z.Z.Millis.SECOND : Z.Z.Millis.SECOND, () => {
@@ -60,15 +60,15 @@ let B = i.memo(function(e) {
     guildId: R
   } = e, {
     analyticsLocations: B
-  } = (0, _.ZP)(g.Z.ACTIVITY_INSTANCE_EMBED), G = (0, c.O)(), H = (0, o.e7)([S.Z], () => S.Z.getChannel(Z), [Z]), V = (null == H ? void 0 : null === (t = H.isThread) || void 0 === t ? void 0 : t.call(H)) ? null == H ? void 0 : H.parent_id : Z, z = (0, o.e7)([I.default], () => I.default.getId()), {
+  } = (0, _.ZP)(g.Z.ACTIVITY_INSTANCE_EMBED), G = (0, c.O)(), H = (0, a.e7)([S.Z], () => S.Z.getChannel(Z), [Z]), V = (null == H ? void 0 : null === (t = H.isThread) || void 0 === t ? void 0 : t.call(H)) ? null == H ? void 0 : H.parent_id : Z, z = (0, a.e7)([I.default], () => I.default.getId()), {
     embeddedActivity: K,
     currentEmbeddedActivity: Y,
     activityLaunchState: X
-  } = (0, o.cj)([d.ZP], () => ({
+  } = (0, a.cj)([d.ZP], () => ({
     embeddedActivity: d.ZP.getEmbeddedActivitiesForChannel(null != V ? V : "").find(e => e.applicationId === j.id),
     currentEmbeddedActivity: d.ZP.getCurrentEmbeddedActivity(),
     activityLaunchState: d.ZP.getLaunchState(j.id, null != V ? V : void 0)
-  }), [V, j.id]), q = null == K ? void 0 : K.userIds, Q = (0, o.Wu)([P.default], () => Array.from(null != q ? q : []).map(e => P.default.getUser(e)).filter(k.lm), [q]), J = (0, o.e7)([T.Z], () => {
+  }), [V, j.id]), q = null == K ? void 0 : K.userIds, Q = (0, a.Wu)([P.default], () => Array.from(null != q ? q : []).map(e => P.default.getUser(e)).filter(k.lm), [q]), J = (0, a.e7)([T.Z], () => {
     if (null == q) return null;
     for (let e of q) {
       let t = T.Z.findActivity(e, e => e.application_id === j.id);
@@ -87,7 +87,7 @@ let B = i.memo(function(e) {
     joinability: et,
     currentEmbeddedActivity: Y,
     channel: H
-  }), ei = i.useId(), ea = null != X && X.isLaunching && X.componentId === ei, eo = async () => {
+  }), ei = i.useId(), eo = null != X && X.isLaunching && X.componentId === ei, ea = async () => {
     A.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
       application_id: j.id,
       channel_id: Z,
@@ -108,11 +108,11 @@ let B = i.memo(function(e) {
       analyticsLocations: B,
       componentId: ei,
       instanceId: null == K ? void 0 : K.compositeInstanceId,
-      isContextlessActivity: (null == K ? void 0 : K.location.kind) === a.E.CONTEXTLESS
+      isContextlessActivity: (null == K ? void 0 : K.location.kind) === o.E.CONTEXTLESS
     })
   }, el = er.disabled ? W.NW.string(W.t.JBnc7O) : W.NW.string(W.t.cX9uLS), {
     enabled: es
-  } = y.G.useExperiment({
+  } = x.G.useExperiment({
     location: "EmbeddedActivityInstanceEmbed"
   }), ec = (0, N.z)(ee, () => {
     A.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
@@ -131,18 +131,18 @@ let B = i.memo(function(e) {
     });
     er.disabled && (e = null !== (l = er.tooltip) && void 0 !== l ? l : er.text);
     let i = P.default.getCurrentUser(),
-      a = Q.length,
-      o = null !== (u = null == J ? void 0 : null === (n = J.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== u ? u : null == J ? void 0 : J.created_at,
+      o = Q.length,
+      a = null !== (u = null == J ? void 0 : null === (n = J.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== u ? u : null == J ? void 0 : J.created_at,
       c = en ? el : null != $ ? $ : W.NW.string(W.t.oQn0h4),
       d = (0, E.r)(J),
       p = [{
         label: en ? W.NW.string(W.t.cnBQPD) : W.NW.string(W.t.VJlc0d),
         trackingArea: O.j_.PLAY,
-        onClick: eo,
+        onClick: ea,
         disabledReason: e,
-        submitting: ea
+        submitting: eo
       }];
-    return null != ec && p.push(ec), (0, r.jsx)(x.W, {
+    return null != ec && p.push(ec), (0, r.jsx)(y.W, {
       header: j.name,
       title: c,
       iconSrc: t,
@@ -155,16 +155,16 @@ let B = i.memo(function(e) {
         children: [null != $ && (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "none",
-          children: null != o && (0, r.jsxs)("div", {
+          children: null != a && (0, r.jsxs)("div", {
             className: U.activityTimer,
             children: [(0, r.jsx)(d.Icon, {
               size: "xxs",
               color: "currentColor"
             }), (0, r.jsx)(F, {
-              start: o
+              start: a
             })]
           })
-        }), a > 0 && (0, r.jsx)(E.K, {
+        }), o > 0 && (0, r.jsx)(E.K, {
           activityUsers: Q,
           guildId: R,
           activityText: d.text
@@ -203,18 +203,18 @@ let B = i.memo(function(e) {
             var t, n, {
                 onClick: r
               } = e,
-              a = function(e, t) {
+              o = function(e, t) {
                 if (null == e) return {};
                 var n, r, i = function(e, t) {
                   if (null == e) return {};
                   var n, r, i = {},
-                    a = Object.keys(e);
-                  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                    o = Object.keys(e);
+                  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
                   return i
                 }(e, t);
                 if (Object.getOwnPropertySymbols) {
-                  var a = Object.getOwnPropertySymbols(e);
-                  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                  var o = Object.getOwnPropertySymbols(e);
+                  for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
                 }
                 return i
               }(e, ["onClick"]);
@@ -235,13 +235,13 @@ let B = i.memo(function(e) {
                 })
               }
               return e
-            }({}, a), n = n = {
+            }({}, o), n = n = {
               key: "".concat(er.isJoinAction),
               onClick: () => {
-                eo(), null == r || r()
+                ea(), null == r || r()
               },
               color: er.isJoinAction ? s.Ttl.GREEN : s.Ttl.PRIMARY,
-              submitting: ea,
+              submitting: eo,
               disabled: er.disabled
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

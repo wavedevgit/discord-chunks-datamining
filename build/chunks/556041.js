@@ -5,22 +5,22 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(600164),
-  o = n(245315),
+  o = n(600164),
+  a = n(245315),
   l = n(388032),
   s = n(129214);
-let c = () => (0, r.jsxs)(a.Z, {
-  align: a.Z.Align.CENTER,
-  justify: a.Z.Justify.CENTER,
-  direction: a.Z.Direction.VERTICAL,
+let c = () => (0, r.jsxs)(o.Z, {
+  align: o.Z.Align.CENTER,
+  justify: o.Z.Justify.CENTER,
+  direction: o.Z.Direction.VERTICAL,
   className: s.popout,
   children: [(0, r.jsx)("img", {
     alt: "",
-    src: (0, o.QA)(),
+    src: (0, a.QA)(),
     className: s.avatar
-  }), (0, r.jsxs)(a.Z, {
-    align: a.Z.Align.CENTER,
-    justify: a.Z.Justify.CENTER,
+  }), (0, r.jsxs)(o.Z, {
+    align: o.Z.Align.CENTER,
+    justify: o.Z.Justify.CENTER,
     className: s.nameWrapper,
     children: [(0, r.jsx)(i.ua7, {
       text: l.NW.string(l.t.oMx98P),

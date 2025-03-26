@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(657707),
-  o = n(793030),
+  o = n(657707),
+  a = n(793030),
   l = n(481060),
   s = n(100527),
   c = n(436774),
@@ -33,7 +33,7 @@ function v() {
         variant: "heading-xl/semibold",
         color: "text-normal",
         children: h.NW.string(h.t.erEf2t)
-      }), (0, r.jsx)(o.xv, {
+      }), (0, r.jsx)(a.xv, {
         variant: "text-md/medium",
         color: "text-muted",
         children: h.NW.string(h.t.NaRCXV)
@@ -52,16 +52,16 @@ function v() {
         variant: "heading-xl/semibold",
         color: "text-normal",
         children: h.NW.string(h.t.w4DRbW)
-      }), (0, r.jsx)(o.xv, {
+      }), (0, r.jsx)(a.xv, {
         variant: "text-md/medium",
         color: "text-muted",
         children: h.NW.string(h.t.F6u3Ex)
       })]
-    }), (0, r.jsx)(y, {})]
+    }), (0, r.jsx)(x, {})]
   })
 }
 
-function y() {
+function x() {
   let e = (0, d.Px)(f.p9.TIER_2),
     t = i.useCallback(() => (0, l.ZDy)(async () => {
       let {
@@ -94,10 +94,10 @@ function y() {
     });
   return (0, r.jsxs)("div", {
     className: g.upsellContainer,
-    children: [(0, r.jsx)(a.SrA, {
+    children: [(0, r.jsx)(o.SrA, {
       size: "md",
       color: c.JX.PREMIUM_TIER_2
-    }), (0, r.jsx)(o.xv, {
+    }), (0, r.jsx)(a.xv, {
       variant: "text-xs/medium",
       color: "header-primary",
       className: g.upsellText,

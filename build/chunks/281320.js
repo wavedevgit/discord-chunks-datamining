@@ -1,21 +1,21 @@
-/** Chunk was on 31942 **/
+/** Chunk was on 10837 **/
 n.d(t, {
   M: () => d,
   Z: () => p
 }), n(47120);
 var r, i, l, o, a = n(442837),
   u = n(570140);
-let c = new Map,
-  s = new Map;
+let s = new Map,
+  c = new Map;
 var d = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i);
 class f extends(r = a.ZP.Store) {
   getPriceTiersFetchStateForGuildAndType(e, t) {
     var n, r;
-    return null !== (r = null === (n = s.get(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : 0
+    return null !== (r = null === (n = c.get(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : 0
   }
   getPriceTiersForGuildAndType(e, t) {
     var n;
-    return null === (n = c.get(e)) || void 0 === n ? void 0 : n.get(t)
+    return null === (n = s.get(e)) || void 0 === n ? void 0 : n.get(t)
   }
 }
 o = "CreatorMonetizationStore", (l = "displayName") in f ? Object.defineProperty(f, l, {
@@ -26,14 +26,14 @@ o = "CreatorMonetizationStore", (l = "displayName") in f ? Object.defineProperty
 }) : f[l] = o;
 let p = new f(u.Z, {
   CONNECTION_OPEN: function() {
-    c.clear(), s.clear()
+    s.clear(), c.clear()
   },
   CREATOR_MONETIZATION_PRICE_TIERS_FETCH: function(e) {
     let {
       guildId: t,
       priceTierType: n
     } = e;
-    s.has(t) || s.set(t, new Map), s.get(t).set(n, 1)
+    c.has(t) || c.set(t, new Map), c.get(t).set(n, 1)
   },
   CREATOR_MONETIZATION_PRICE_TIERS_FETCH_SUCCESS: function(e) {
     let {
@@ -41,13 +41,13 @@ let p = new f(u.Z, {
       priceTierType: n,
       priceTiers: r
     } = e;
-    s.has(t) || s.set(t, new Map), s.get(t).set(n, 2), c.has(t) || c.set(t, new Map), c.get(t).set(n, r)
+    c.has(t) || c.set(t, new Map), c.get(t).set(n, 2), s.has(t) || s.set(t, new Map), s.get(t).set(n, r)
   },
   CREATOR_MONETIZATION_PRICE_TIERS_FETCH_FAILURE: function(e) {
     let {
       guildId: t,
       priceTierType: n
     } = e;
-    s.has(t) || s.set(t, new Map), s.get(t).set(n, 2)
+    c.has(t) || c.set(t, new Map), c.get(t).set(n, 2)
   }
 })

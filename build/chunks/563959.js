@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(481060),
-  o = n(739566),
+  o = n(481060),
+  a = n(739566),
   l = n(942951),
   s = n(834129),
   c = n(184301),
@@ -48,7 +48,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return i.useCallback(n => (i, o) => {
+  return i.useCallback(n => (i, a) => {
     let l = d.ZP.getApplicationIconURL({
         id: n.id,
         icon: n.icon,
@@ -58,7 +58,7 @@ function g(e, t) {
       {
         bot: s
       } = n;
-    return null == s ? i : (0, r.jsx)(a.yRy, {
+    return null == s ? i : (0, r.jsx)(o.yRy, {
       position: "right",
       preload: () => (0, c.Z)(s.id, l, {
         guildId: e.guild_id,
@@ -70,10 +70,10 @@ function g(e, t) {
         channelId: e.id,
         messageId: t.id
       })),
-      children: e => (0, r.jsx)(a.eee, h(f({}, e), {
+      children: e => (0, r.jsx)(o.eee, h(f({}, e), {
         children: i
       }))
-    }, o)
+    }, a)
   }, [e, t.id])
 }
 
@@ -81,8 +81,8 @@ function _(e) {
   let {
     message: t,
     channel: i,
-    compact: a
-  } = e, c = (0, o.ZP)(t), u = t.application, d = (0, l.l)({
+    compact: o
+  } = e, c = (0, a.ZP)(t), u = t.application, d = (0, l.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -91,7 +91,7 @@ function _(e) {
   return (0, r.jsx)(s.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
-    compact: a,
+    compact: o,
     children: (0, p.DS)({
       application: u,
       username: c.nick,
@@ -105,8 +105,8 @@ function b(e) {
   let {
     message: t,
     channel: i,
-    compact: a
-  } = e, c = (0, o.ZP)(t), u = t.application, d = (0, l.l)({
+    compact: o
+  } = e, c = (0, a.ZP)(t), u = t.application, d = (0, l.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -115,7 +115,7 @@ function b(e) {
   return (0, r.jsx)(s.Z, {
     icon: n(474019),
     timestamp: t.timestamp,
-    compact: a,
+    compact: o,
     children: (0, p.nh)({
       application: u,
       username: c.nick,

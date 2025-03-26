@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(525654),
   s = n.n(l),
   c = n(91192),
@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(626135),
   b = n(585483),
   v = n(358085),
-  y = n(143316),
-  x = n(240126),
+  x = n(143316),
+  y = n(240126),
   E = n(791914),
   O = n(147522),
   N = n(809780),
@@ -30,7 +30,7 @@ var r = n(200651),
   I = n(869496);
 
 function S(e) {
-  var t, n, a, l, S, P, A;
+  var t, n, o, l, S, P, A;
   let {
     setTab: w,
     onJump: Z,
@@ -45,19 +45,19 @@ function S(e) {
     maybeLoadMore: G,
     markAllRead: H
   } = U;
-  t = M, n = W, a = U, i.useLayoutEffect(() => {
+  t = M, n = W, o = U, i.useLayoutEffect(() => {
     var e;
     let {
       scrollToChannelIndex: r
     } = n;
-    a.clearScrollToChannelIndex();
+    o.clearScrollToChannelIndex();
     let {
       current: i
     } = t;
     if (null == i || null == r) return;
-    let o = null === (e = i.getScrollerNode()) || void 0 === e ? void 0 : e.children;
-    if (null == o) return;
-    let l = o[r];
+    let a = null === (e = i.getScrollerNode()) || void 0 === e ? void 0 : e.children;
+    if (null == a) return;
+    let l = a[r];
     if (null == l) return;
     let {
       scrollTop: s,
@@ -95,7 +95,7 @@ function S(e) {
     K = (0, h.Z)("unreads", M);
   if (0 === B.length) {
     return (0, r.jsxs)("div", {
-      className: o()(I.container, {
+      className: a()(I.container, {
         [I.widerInbox]: z
       }),
       children: [(0, r.jsx)(E.Z, {
@@ -103,7 +103,7 @@ function S(e) {
         setTab: w,
         badgeState: L,
         closePopout: D
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(y.Z, {
         Icon: p.xx7,
         header: C.NW.string(C.t["6XMM+P"]),
         tip: (null === (A = s().os) || void 0 === A ? void 0 : A.family) === "OS X" ? C.NW.string(C.t.w9uDOT) : C.NW.string(C.t.BiUJCw)
@@ -111,7 +111,7 @@ function S(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: o()(I.container, "group-spacing-".concat(V), {
+    className: a()(I.container, "group-spacing-".concat(V), {
       [I.widerInbox]: z
     }),
     "aria-label": C.NW.string(C.t.sRUdBw),
@@ -120,7 +120,7 @@ function S(e) {
       setTab: w,
       badgeState: L,
       closePopout: D,
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(x.Z, {
         type: "top-header",
         onClick: H
       })
@@ -131,18 +131,18 @@ function S(e) {
           var t, n, {
               ref: i
             } = e,
-            a = function(e, t) {
+            o = function(e, t) {
               if (null == e) return {};
               var n, r, i = function(e, t) {
                 if (null == e) return {};
                 var n, r, i = {},
-                  a = Object.keys(e);
-                for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                  o = Object.keys(e);
+                for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
                 return i
               }(e, t);
               if (Object.getOwnPropertySymbols) {
-                var a = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                var o = Object.getOwnPropertySymbols(e);
+                for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
               }
               return i
             }(e, ["ref"]);
@@ -168,7 +168,7 @@ function S(e) {
               var t;
               M.current = e, i.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
             }
-          }, a), n = n = {
+          }, o), n = n = {
             onScroll: F === N.jd.Done ? void 0 : G,
             className: I.scroller,
             children: [k ? (0, r.jsx)(T, {
@@ -236,7 +236,7 @@ function P(e) {
       setTab: t,
       badgeState: n,
       closePopout: i
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(y.Z, {
       Icon: p.xx7,
       disableStars: !0,
       header: C.NW.string(C.t["KG/ynZ"]),

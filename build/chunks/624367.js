@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(666572),
-  a = n(373793),
-  o = n(399606),
+  o = n(373793),
+  a = n(399606),
   l = n(477690),
   s = n(481060),
   c = n(100527),
@@ -20,8 +20,8 @@ var i = n(666572),
   _ = n(506895),
   b = n(230171),
   v = n(835473),
-  y = n(749681),
-  x = n(258971),
+  x = n(749681),
+  y = n(258971),
   E = n(914010),
   O = n(624138),
   N = n(566620),
@@ -55,7 +55,7 @@ function R(e) {
     linkId: W
   } = e, {
     analyticsLocations: U
-  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [F] = (0, v.Z)([R]), B = (0, o.e7)([E.Z], () => {
+  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [F] = (0, v.Z)([R]), B = (0, a.e7)([E.Z], () => {
     var e;
     return null !== (e = E.Z.getGuildId()) && void 0 !== e ? e : void 0
   }), G = null == F ? void 0 : null === (t = F.bot) || void 0 === t ? void 0 : t.id, H = null != F && (0, p.ye)(F), {
@@ -98,10 +98,10 @@ function R(e) {
     location: "ActivityBookmarkEmbed"
   }), er = (0, i._)(W), {
     data: ei,
-    error: ea
+    error: eo
   } = (0, j.h)(null == F ? void 0 : F.id, er);
   if (null == F || !1 === H) return null;
-  if (en) return null != W && null == ea && null != ei ? (0, r.jsx)(T.b, {
+  if (en) return null != W && null == eo && null != ei ? (0, r.jsx)(T.b, {
     application: F,
     customId: D,
     customLink: ei,
@@ -117,7 +117,7 @@ function R(e) {
       activityReferrerId: L
     })
   });
-  let eo = Y ? null == z ? A.NW.string(A.t.cnBQPD) : A.NW.string(A.t.VJlc0d) : A.NW.string(A.t.JeK1Wl),
+  let ea = Y ? null == z ? A.NW.string(A.t.cnBQPD) : A.NW.string(A.t.VJlc0d) : A.NW.string(A.t.JeK1Wl),
     el = K ? A.NW.string(A.t.wJNK8P) : void 0,
     es = e => {
       var t, n;
@@ -144,7 +144,7 @@ function R(e) {
         color: s.Ttl.GREEN,
         disabled: null != el
       }, e), n = n = {
-        children: eo
+        children: ea
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -194,12 +194,12 @@ function R(e) {
             children: [null != F && (0, r.jsx)(s.zxk, {
               onClick: () => {
                 var e;
-                null != F && (a.Y.USER_INSTALL in (null !== (e = F.integrationTypesConfig) && void 0 !== e ? e : {}) || $ || ee ? (0, m.X)(F.id) : (0, y.transitionToGlobalDiscovery)({
+                null != F && (o.Y.USER_INSTALL in (null !== (e = F.integrationTypesConfig) && void 0 !== e ? e : {}) || $ || ee ? (0, m.X)(F.id) : (0, x.transitionToGlobalDiscovery)({
                   tab: P.GlobalDiscoveryTab.APPS,
                   applicationId: F.id,
                   newSessionState: {
                     entrypoint: {
-                      name: x.xF.OAUTH2_EMBED
+                      name: y.xF.OAUTH2_EMBED
                     },
                     guildId: B
                   }
@@ -214,7 +214,7 @@ function R(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e)))
-            }, eo) : es()]
+            }, ea) : es()]
           })]
         })]
       })]

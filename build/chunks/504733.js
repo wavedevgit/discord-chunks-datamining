@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(739566),
-  o = n(942951),
+  o = n(739566),
+  a = n(942951),
   l = n(834129),
   s = n(981791),
   c = n(540273);
@@ -16,7 +16,7 @@ function u(e) {
     message: t,
     channel: n,
     compact: u
-  } = e, d = (0, a.ZP)(t), p = t.application, m = (0, o.l)({
+  } = e, d = (0, o.ZP)(t), p = t.application, m = (0, a.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,

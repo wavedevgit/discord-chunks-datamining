@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(243814),
   s = n(442837),
   c = n(481060),
@@ -23,7 +23,7 @@ var r = n(200651),
   N = n(591059);
 
 function O(e) {
-  var t, n, o;
+  var t, n, l;
   let {
     name: O,
     icon: y,
@@ -32,8 +32,8 @@ function O(e) {
     iconClassName: I,
     iconWrapperClassName: S,
     details: E,
-    integration: P,
-    buttonText: w,
+    integration: w,
+    buttonText: P,
     buttonDisabled: T,
     hasNextSection: Z,
     onButtonClick: W,
@@ -41,11 +41,11 @@ function O(e) {
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = i.useState(!1), [B, U] = i.useState(!1), z = null == w || null == W ? null : Z ? (0, r.jsxs)(p.Z, {
+  } = e, [L, M] = i.useState(!1), [B, U] = i.useState(!1), z = null == P || null == W ? null : Z ? (0, r.jsxs)(p.Z, {
     align: p.Z.Align.CENTER,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: w
+      children: P
     }), Z ? (0, r.jsx)(c.Fbu, {
       size: "custom",
       color: "currentColor",
@@ -59,8 +59,8 @@ function O(e) {
     color: Z ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND,
     disabled: T,
     onClick: W,
-    children: w
-  }), H = D && !A && !B && void 0 !== k && null != P;
+    children: P
+  }), H = D && !A && !B && void 0 !== k && null != w;
   i.useEffect(() => {
     if (H) {
       var e, t;
@@ -82,7 +82,7 @@ function O(e) {
         }
         return e
       }({}, (0, d.hH)(k)), t = t = {
-        application_id: null == P ? void 0 : P.application.id,
+        application_id: null == w ? void 0 : w.application.id,
         location: "overview"
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
@@ -95,11 +95,11 @@ function O(e) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
     }
-  }, [k, null == P ? void 0 : P.application.id, H]);
+  }, [k, null == w ? void 0 : w.application.id, H]);
   let G = H ? (0, r.jsx)(c.yRy, {
       renderPopout: () => (0, r.jsx)(c.P3F, {
         onClick: e => {
-          e.stopPropagation(), U(!0), x.Z.dismissOverviewTooltip(k, P.integration)
+          e.stopPropagation(), U(!0), x.Z.dismissOverviewTooltip(k, w.integration)
         },
         children: (0, r.jsx)(b.ZP, {
           content: v.NW.string(v.t.TyMJwM),
@@ -114,10 +114,10 @@ function O(e) {
     }) : z,
     F = (0, s.Wu)([m.Z], () => {
       var e;
-      return null != P && null != k && null !== (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, k)) && void 0 !== e ? e : []
+      return null != w && null != k && null !== (e = m.Z.getApplicationEntitlementsForGuild(w.application.id, k)) && void 0 !== e ? e : []
     }),
     V = (0, u.LD)(k, !0),
-    K = (null == P ? void 0 : P.application) != null && Object.keys(null !== (o = null === (n = V.result) || void 0 === n ? void 0 : null === (t = n.sections[P.application.id]) || void 0 === t ? void 0 : t.commands) && void 0 !== o ? o : {}).length > 0,
+    K = (null == w ? void 0 : w.application) != null && Object.keys(null !== (l = null === (n = V.result) || void 0 === n ? void 0 : null === (t = n.sections[w.application.id]) || void 0 === t ? void 0 : t.commands) && void 0 !== l ? l : {}).length > 0,
     q = (0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(h.Z, {
         name: O,
@@ -137,22 +137,22 @@ function O(e) {
           children: [function(e, t, n) {
             var i;
             if (null == e) return null;
-            let o = [],
+            let l = [],
               {
-                application: l,
+                application: o,
                 integration: s,
                 webhooks: d
               } = e;
-            return null != l.bot && o.push((0, r.jsx)(c.DY3, {
+            return null != o.bot && l.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
-              text: new g.Z(l.bot).isVerifiedBot() ? v.NW.string(v.t.xxcTGx) : v.NW.string(v.t.AOdOYm),
+              text: new g.Z(o.bot).isVerifiedBot() ? v.NW.string(v.t.xxcTGx) : v.NW.string(v.t.AOdOYm),
               className: N.feature,
               children: (0, r.jsx)(c.wGt, {
                 size: "md",
                 color: "currentColor",
                 className: N.featureIcon
               })
-            }, "bot")), d.length > 0 && o.push((0, r.jsx)(c.DY3, {
+            }, "bot")), d.length > 0 && l.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
               text: v.NW.formatToPlainString(v.t["6HqDfX"], {
                 count: d.length
@@ -163,27 +163,27 @@ function O(e) {
                 color: "currentColor",
                 className: N.featureIcon
               })
-            }, "webhooks")), (null == s ? void 0 : null === (i = s.scopes) || void 0 === i ? void 0 : i.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && o.push((0, r.jsx)("div", {
+            }, "webhooks")), (null == s ? void 0 : null === (i = s.scopes) || void 0 === i ? void 0 : i.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && l.push((0, r.jsx)("div", {
               className: N.feature,
               children: (0, r.jsx)(c.SsZ, {
                 size: "md",
                 color: "currentColor",
                 className: N.featureIcon
               })
-            }, "commands")), o
-          }(P, L, K), G, R]
+            }, "commands")), l
+          }(w, L, K), G, R]
         })
       })]
     });
   return Z ? (0, r.jsx)(c.P3F, {
     onClick: () => {
-      D && null != k && null != P && x.Z.dismissOverviewTooltip(k, P.integration), null == W || W()
+      D && null != k && null != w && x.Z.dismissOverviewTooltip(k, w.integration), null == W || W()
     },
     onFocus: () => M(!0),
     onBlur: () => M(!1),
     children: (0, r.jsx)(c.Zbd, {
       editable: !0,
-      className: l()(N.card, N.clickable),
+      className: o()(N.card, N.clickable),
       children: q
     })
   }) : (0, r.jsx)(c.Zbd, {

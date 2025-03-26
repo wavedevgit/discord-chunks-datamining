@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  o = n(481060),
   a = n(600164),
   s = n(528144),
   c = n(388032),
@@ -32,19 +32,19 @@ function u(e) {
     children: [null != i || null != u ? (0, r.jsx)(a.Z.Child, {
       shrink: 0,
       grow: 0,
-      children: function(e, t, n, i, l) {
+      children: function(e, t, n, i, o) {
         if (null != t) return (0, r.jsx)("img", {
           alt: "",
           src: t,
-          className: o()(d.iconWrapper, i)
+          className: l()(d.iconWrapper, i)
         });
         let s = null;
         return null != e && (s = "string" == typeof e ? (0, r.jsx)("img", {
           alt: "",
           src: e,
-          className: o()(d.icon, i)
+          className: l()(d.icon, i)
         }) : (0, r.jsx)(e, {
-          className: o()(d.icon, i),
+          className: l()(d.icon, i),
           color: "currentColor"
         })), (0, r.jsx)(a.Z, {
           align: a.Z.Align.CENTER,
@@ -52,7 +52,7 @@ function u(e) {
           style: {
             backgroundColor: n
           },
-          className: o()(d.iconWrapper, l),
+          className: l()(d.iconWrapper, o),
           children: s
         })
       }(i, u, p, m, b)
@@ -70,12 +70,12 @@ function u(e) {
           text: i
         } = e;
         return (0, r.jsxs)("div", {
-          className: o()(d.detailsWrapper, p ? d.headerDetailsWrapper : null),
+          className: l()(d.detailsWrapper, p ? d.headerDetailsWrapper : null),
           children: [null != n ? (0, r.jsx)(n, {
             size: "xs",
             color: "currentColor",
             className: d.detailsIcon
-          }) : null, (0, r.jsx)(l.Text, {
+          }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
             className: u,
@@ -88,11 +88,11 @@ function u(e) {
         children: [(0, r.jsxs)(s.Z, {
           size: p ? s.Z.Sizes.SIZE_24 : s.Z.Sizes.SIZE_16,
           className: p ? d.header : d.secondaryHeader,
-          children: [t, m && (0, r.jsx)(l.ua7, {
+          children: [t, m && (0, r.jsx)(o.ua7, {
             text: c.NW.string(c.t.VFuFur),
             children: e => {
               var t, n;
-              return (0, r.jsx)(l.Prq, (t = function(e) {
+              return (0, r.jsx)(o.Prq, (t = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -126,7 +126,7 @@ function u(e) {
               }), t))
             }
           })]
-        }), null != n ? (0, r.jsx)(l.Text, {
+        }), null != n ? (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: n

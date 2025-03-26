@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(438536),
-  o = n(214906),
+  o = n(438536),
+  a = n(214906),
   l = n(346479),
   s = n(723170),
   c = n(124368);
@@ -18,7 +18,7 @@ function u(e) {
     onSelect: u,
     navId: d,
     label: p
-  } = e, m = (0, a.Z)(t, "Notifications Bell"), f = (0, o.Z)(t), h = (0, s.B)(t);
+  } = e, m = (0, o.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), h = (0, s.B)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: d,
     onClose: n,
@@ -30,12 +30,12 @@ function u(e) {
       children: (0, c.zb)().map(e => {
         let {
           setting: n,
-          label: a
+          label: o
         } = e;
         return (0, r.jsx)(i.k5B, {
           group: "thread-notifications",
           id: "".concat(n),
-          label: a,
+          label: o,
           action: () => l.Z.setNotificationSettings(t, {
             flags: n
           }),

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(512722),
-  o = n.n(a),
+  o = n(512722),
+  a = n.n(o),
   l = n(399606),
   s = n(904245),
   c = n(375954),
@@ -16,21 +16,21 @@ let d = i.createContext(void 0);
 function p(e) {
   var t;
   let n = null !== (t = i.useContext(d)) && void 0 !== t ? t : e;
-  return o()(null != n, "Using PollReferenceMessageContext without a provider (or a fallback)"), n
+  return a()(null != n, "Using PollReferenceMessageContext without a provider (or a fallback)"), n
 }
 
 function m(e) {
   let {
     message: t,
     children: n
-  } = e, a = (0, l.e7)([c.Z], () => c.Z.getMessage(t.channel_id, t.id), [t.channel_id, t.id]), o = null != a;
+  } = e, o = (0, l.e7)([c.Z], () => c.Z.getMessage(t.channel_id, t.id), [t.channel_id, t.id]), a = null != o;
   return i.useEffect(() => {
-    o || s.Z.focusMessage({
+    a || s.Z.focusMessage({
       channelId: t.channel_id,
       messageId: t.id
     })
-  }, [o, t.channel_id, t.id]), (0, r.jsx)(d.Provider, {
-    value: null != a ? a : t,
+  }, [a, t.channel_id, t.id]), (0, r.jsx)(d.Provider, {
+    value: null != o ? o : t,
     children: n
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(110255),
-  o = n(64247),
+  o = n(110255),
+  a = n(64247),
   l = n(981631),
   s = n(388032);
 
@@ -50,11 +50,11 @@ function d(e) {
     align: "right",
     animation: i.yRy.Animation.NONE,
     position: "bottom",
-    renderPopout: e => t.isThread() ? (0, r.jsx)(o.Z, u(c({}, e), {
+    renderPopout: e => t.isThread() ? (0, r.jsx)(a.Z, u(c({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
       label: s.NW.string(s.t.ljs3OT)
-    })) : (0, r.jsx)(a.Z, u(c({}, e), {
+    })) : (0, r.jsx)(o.Z, u(c({}, e), {
       channel: t,
       navId: "recents-notifications",
       label: s.NW.string(s.t.ljs3OT),

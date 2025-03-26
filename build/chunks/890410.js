@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(739566),
+  o = n.n(i),
+  a = n(739566),
   l = n(492593),
   s = n(930282),
   c = n(464891),
@@ -47,29 +47,29 @@ function p(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let y = (0, o.ZP)(i);
+  let x = (0, a.ZP)(i);
   return (0, r.jsx)("div", {
-    className: a()({
+    className: o()({
       [u.withFooter]: b
     }, u.embedCard, {
       [u.compact]: h
     }, f),
     children: (0, r.jsx)(l.Z, (t = d({}, v), n = n = {
-      className: a()(u.messageContainer, {
+      className: o()(u.messageContainer, {
         [u.compact]: h
       }),
       childrenMessageContent: (0, r.jsx)(s.ZP, {
-        className: a()(u.__invalid_messageContent, {
+        className: o()(u.__invalid_messageContent, {
           [u.compact]: h
         }),
         message: i,
@@ -78,11 +78,11 @@ function p(e) {
       childrenHeader: (0, r.jsx)(c.ZP, d({
         message: i,
         channel: p,
-        author: y,
+        author: x,
         guildId: null == p ? void 0 : p.guild_id,
         compact: h,
         hideTimestamp: _,
-        className: a()(u.header, {
+        className: o()(u.header, {
           [u.compact]: h
         })
       }, null != g ? g : {})),

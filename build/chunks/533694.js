@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(399606),
-  a = n(481060),
-  o = n(607070),
+  o = n(481060),
+  a = n(607070),
   l = n(739566),
   s = n(942951),
   c = n(834129),
@@ -21,7 +21,7 @@ function h(e) {
     guildId: t,
     user: n,
     username: l
-  } = e, s = (0, i.e7)([o.Z], () => !o.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("img", {
+  } = e, s = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("img", {
     src: c,
     className: f.userAvatar,
     alt: ""
@@ -34,14 +34,14 @@ function h(e) {
     }),
     children: [(0, r.jsx)(d.Z, {
       avatar: u
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: f.thankYouText,
       tag: "p",
       color: "status-positive-text",
       variant: "heading-xl/medium",
       children: m.NW.format(m.t["52BAtL"], {
         username: l,
-        usernameHook: (e, t) => (0, r.jsx)(a.Text, {
+        usernameHook: (e, t) => (0, r.jsx)(o.Text, {
           tag: "span",
           color: "status-positive-text",
           variant: "heading-xxl/extrabold",
@@ -54,23 +54,23 @@ function h(e) {
 }
 
 function g(e) {
-  var t, i, a;
+  var t, i, o;
   let {
-    channel: o,
+    channel: a,
     message: d,
     compact: f
   } = e, g = (0, l.ZP)(d), _ = (0, s.l)({
     user: d.author,
-    channelId: o.id,
-    guildId: o.guild_id,
+    channelId: a.id,
+    guildId: a.guild_id,
     messageId: d.id
   })(g), b = m.NW.format(m.t.TQs67u, {
     username: g.nick,
     usernameHook: _,
-    productName: null !== (a = null === (i = d.purchaseNotification) || void 0 === i ? void 0 : null === (t = i.guild_product_purchase) || void 0 === t ? void 0 : t.product_name) && void 0 !== a ? a : "",
+    productName: null !== (o = null === (i = d.purchaseNotification) || void 0 === i ? void 0 : null === (t = i.guild_product_purchase) || void 0 === t ? void 0 : t.product_name) && void 0 !== o ? o : "",
     handleProductListingClick: () => {
       var e, t, n;
-      (0, u.uL)(p.Z5c.GUILD_PRODUCT(o.guild_id, null !== (n = null === (t = d.purchaseNotification) || void 0 === t ? void 0 : null === (e = t.guild_product_purchase) || void 0 === e ? void 0 : e.listing_id) && void 0 !== n ? n : ""))
+      (0, u.uL)(p.Z5c.GUILD_PRODUCT(a.guild_id, null !== (n = null === (t = d.purchaseNotification) || void 0 === t ? void 0 : null === (e = t.guild_product_purchase) || void 0 === e ? void 0 : e.listing_id) && void 0 !== n ? n : ""))
     }
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -81,7 +81,7 @@ function g(e) {
       children: b
     }), (0, r.jsx)(h, {
       username: g.nick,
-      guildId: o.guild_id,
+      guildId: a.guild_id,
       user: d.author
     })]
   })

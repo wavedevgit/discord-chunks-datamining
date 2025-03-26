@@ -1,79 +1,10 @@
 /**
   Module ID: 52272
-  Original File Name: b574ba012ed9ba32
+  Original File Name: 96be66c55cf93f50
 **/
-.thumbnailStack__15798 {
-    position: relative
-}
-
-.height-1__15798 {
-    height: 102px
-}
-
-.height-2__15798 {
-    height: 114px
-}
-
-.height-3__15798 {
-    height: 123px
-}
-
-.height-max__15798 {
-    height: 131.5px
-}
-
-.thumbnail__15798 {
-    position: absolute;
-    border-radius: 4px;
-    transform: translate(-50%);
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.thumbnail__15798:nth-child(4) {
-    width: 183px;
-    height: 102px;
-    bottom: 0
-}
-
-.thumbnail__15798:nth-child(3) {
-    width: 154px;
-    height: 86px;
-    bottom: 28px;
-    filter: brightness(80%)
-}
-
-.thumbnail__15798:nth-child(2) {
-    width: 128px;
-    height: 72px;
-    bottom: 51px;
-    filter: brightness(60%)
-}
-
-.thumbnail__15798:first-child {
-    width: 101.333px;
-    height: 57px;
-    bottom: 74.5px;
-    filter: brightness(50%)
-}
-
-.reminderTooltip__5cad1 {
-    max-width: 280px;
-    text-align: center;
-    padding: 16px;
-    border-radius: 4px
-}
-
-.tooltipContent__5cad1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px
-}
-
-.buttonContainer__5cad1 {
-    display: flex;
-    gap: 8px;
-    justify-content: center
+.draftBadge__53d72 {
+    color: var(--primary-860);
+    letter-spacing: .02em
 }
 
 .descriptionText__535f5 {
@@ -724,54 +655,6 @@
     border-radius: 4px 4px 0 0
 }
 
-.container__1ce5d {
-    position: relative
-}
-
-.circularImage__1ce5d {
-    border-radius: 50%
-}
-
-.dots__1ce5d {
-    margin-top: .2px
-}
-
-.draftBadge__53d72 {
-    color: var(--primary-860);
-    letter-spacing: .02em
-}
-
-.container_e512ac {
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-    margin-right: -4px
-}
-
-.container_e512ac:after {
-    border-bottom-color: var(--premium-tier-2-pink-for-gradients)!important;
-    left: calc(100% - 12px)!important
-}
-
-.imageContainer_e512ac {
-    width: 246px;
-    height: 128px;
-    margin-bottom: 16px;
-    background-color: var(--background-tertiary);
-    pointer-events: none;
-    border-radius: 9.6px;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.image_e512ac {
-    width: 99px;
-    height: 80px
-}
-
-.primaryButton_e512ac {
-    color: var(--brand-500)
-}
-
 .pro__30cbe {
     text-transform: uppercase
 }
@@ -936,6 +819,111 @@
 
 .tooltip_de9b99 {
     text-align: center
+}
+
+.thumbnailStack__15798 {
+    position: relative
+}
+
+.height-1__15798 {
+    height: 102px
+}
+
+.height-2__15798 {
+    height: 114px
+}
+
+.height-3__15798 {
+    height: 123px
+}
+
+.height-max__15798 {
+    height: 131.5px
+}
+
+.thumbnail__15798 {
+    position: absolute;
+    border-radius: 4px;
+    transform: translate(-50%);
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.thumbnail__15798:nth-child(4) {
+    width: 183px;
+    height: 102px;
+    bottom: 0
+}
+
+.thumbnail__15798:nth-child(3) {
+    width: 154px;
+    height: 86px;
+    bottom: 28px;
+    filter: brightness(80%)
+}
+
+.thumbnail__15798:nth-child(2) {
+    width: 128px;
+    height: 72px;
+    bottom: 51px;
+    filter: brightness(60%)
+}
+
+.thumbnail__15798:first-child {
+    width: 101.333px;
+    height: 57px;
+    bottom: 74.5px;
+    filter: brightness(50%)
+}
+
+.reminderTooltip__5cad1 {
+    max-width: 280px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 4px
+}
+
+.tooltipContent__5cad1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.buttonContainer__5cad1 {
+    display: flex;
+    gap: 8px;
+    justify-content: center
+}
+
+.container_e512ac {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    margin-right: -4px
+}
+
+.container_e512ac:after {
+    border-bottom-color: var(--premium-tier-2-pink-for-gradients)!important;
+    left: calc(100% - 12px)!important
+}
+
+.imageContainer_e512ac {
+    width: 246px;
+    height: 128px;
+    margin-bottom: 16px;
+    background-color: var(--background-tertiary);
+    pointer-events: none;
+    border-radius: 9.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.image_e512ac {
+    width: 99px;
+    height: 80px
+}
+
+.primaryButton_e512ac {
+    color: var(--brand-500)
 }
 
 .normalStylesDefault_a1443c {
@@ -12255,4 +12243,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=b574ba012ed9ba32.css.map*/
+/*# sourceMappingURL=96be66c55cf93f50.css.map*/

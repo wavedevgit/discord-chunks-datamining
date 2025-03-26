@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(91192),
   s = n(442837),
   c = n(518738),
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(739566),
   b = n(492593),
   v = n(453687),
-  y = n(25015),
-  x = n(689674),
+  x = n(25015),
+  y = n(689674),
   E = n(438075),
   O = n(963550),
   N = n(845080),
@@ -65,7 +65,7 @@ let w = i.memo(function(e) {
   var t, n;
   let {
     message: i,
-    compact: a = !1,
+    compact: o = !1,
     className: w,
     onContextMenu: Z,
     onClick: k,
@@ -81,19 +81,19 @@ let w = i.memo(function(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), G = i.type === S.uaV.POLL_RESULT || null !== (t = e.disableInteraction) && void 0 !== t && t, H = i.isFirstMessageInForumPost(D), V = (0, u.A)((null !== (n = i.editedTimestamp) && void 0 !== n ? n : i.timestamp).valueOf()), {
     content: z,
     hasSpoilerEmbeds: K
-  } = (0, y.Z)(i, {
+  } = (0, x.Z)(i, {
     hideSimpleEmbedContent: R,
     allowList: H || V,
     allowHeading: H || V,
@@ -102,7 +102,7 @@ let w = i.memo(function(e) {
   }), Y = i.type === S.uaV.REPLY ? i.messageReference : void 0, X = (0, s.e7)([d.Z], () => d.Z.getMessageByReference(Y)), q = (0, l.JA)(i.id), Q = (0, _.ZP)(i), J = (0, s.e7)([p.Z], () => i.hasFlag(S.iLy.HAS_THREAD) && p.Z.getChannel(f.default.castMessageIdAsChannelId(i.id))), $ = (0, c.p9)({
     guildId: D.guild_id,
     roleId: Q.iconRoleId
-  }), ee = (0, s.e7)([m.Z], () => m.Z.can(S.Plq.CREATE_INSTANT_INVITE, D)), et = (0, x.Z)({
+  }), ee = (0, s.e7)([m.Z], () => m.Z.can(S.Plq.CREATE_INSTANT_INVITE, D)), et = (0, y.Z)({
     message: i,
     channel: D,
     enabled: F
@@ -111,14 +111,14 @@ let w = i.memo(function(e) {
   let en = (0, v.iG)(i),
     er = (0, v.Gx)(i);
   return (0, r.jsx)(b.Z, P({
-    compact: a,
-    className: o()(w, {
+    compact: o,
+    className: a()(w, {
       [T.ephemeral]: (0, h.Pv)(i),
       [T.disableInteraction]: G
     }),
     disableInteraction: G,
-    childrenRepliedMessage: (0, I.Z)(i, D, Y, X, a),
-    childrenExecutedCommand: (0, C.Z)(i, D, a),
+    childrenRepliedMessage: (0, I.Z)(i, D, Y, X, o),
+    childrenExecutedCommand: (0, C.Z)(i, D, o),
     childrenHeader: (0, N.Z)(A(P({}, e), {
       guildId: D.guild_id,
       author: Q,

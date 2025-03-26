@@ -2,8 +2,8 @@
 n.d(t, {
   ZP: () => j
 });
-var r, i, o = n(200651),
-  l = n(192379),
+var r, i, l = n(200651),
+  o = n(192379),
   a = n(120356),
   s = n.n(a),
   c = n(481060),
@@ -50,33 +50,33 @@ function g(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      o = Object.keys(e);
-    for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
-class f extends(r = l.PureComponent) {
+class f extends(r = o.PureComponent) {
   render() {
     let e = this.props,
       {
         scrollable: t
       } = e,
       n = g(e, ["scrollable"]);
-    return t ? (0, o.jsx)("aside", {
+    return t ? (0, l.jsx)("aside", {
       className: u.sidebarScrollable,
-      children: (0, o.jsx)(c.Ttm, {
+      children: (0, l.jsx)(c.Ttm, {
         fade: !0,
         className: u.scroller,
-        children: (0, o.jsx)(d.Z.Child, b(m({}, n), {
+        children: (0, l.jsx)(d.Z.Child, b(m({}, n), {
           wrap: !0
         }))
       })
-    }) : (0, o.jsx)(d.Z.Child, b(m({}, n), {
+    }) : (0, l.jsx)(d.Z.Child, b(m({}, n), {
       wrap: !0
     }))
   }
@@ -87,22 +87,22 @@ p(f, "defaultProps", {
   shrink: 0,
   className: u.sidebar
 });
-class h extends l.PureComponent {
+class h extends o.PureComponent {
   render() {
     let e = this.props,
       {
         className: t
       } = e,
       n = g(e, ["className"]);
-    return (0, o.jsx)(d.Z.Child, m({
+    return (0, l.jsx)(d.Z.Child, m({
       className: s()(u.content, t),
       wrap: !0
     }, n))
   }
 }
-class x extends(i = l.PureComponent) {
+class x extends(i = o.PureComponent) {
   render() {
-    return (0, o.jsx)(d.Z, m({}, this.props))
+    return (0, l.jsx)(d.Z, m({}, this.props))
   }
 }
 p(x, "defaultProps", {

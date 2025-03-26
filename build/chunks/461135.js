@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(739566),
-  o = n(834129),
+  o = n(739566),
+  a = n(834129),
   l = n(388032),
   s = n(915345);
 
@@ -15,12 +15,12 @@ function c(e) {
     message: t,
     compact: n,
     usernameHook: c
-  } = e, u = (0, a.ZP)(t), d = c(u), p = l.NW.format(l.t.Yy6vLi, {
+  } = e, u = (0, o.ZP)(t), d = c(u), p = l.NW.format(l.t.Yy6vLi, {
     username: u.nick,
     usernameHook: d,
     topic: t.content
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     className: s.stageSystemMessage,
     iconNode: (0, r.jsx)(i.ewx, {
       size: "md",

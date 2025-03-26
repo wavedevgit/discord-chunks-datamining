@@ -1,9 +1,9 @@
-/** Chunk was on 31942 **/
+/** Chunk was on 10837 **/
 n.d(t, {
   EB: () => o,
   Je: () => u,
   cf: () => a,
-  mh: () => c
+  mh: () => s
 });
 var r = n(570140),
   i = n(881052),
@@ -52,7 +52,7 @@ async function u(e, t, n) {
     product: i
   }), i
 }
-async function c(e, t) {
+async function s(e, t) {
   return await l.mh(e, t), r.Z.dispatch({
     type: "GUILD_PRODUCT_DELETE",
     productId: t

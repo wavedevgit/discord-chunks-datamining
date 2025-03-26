@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(666572),
   i = n(442837),
-  a = n(544891),
-  o = n(570140),
+  o = n(544891),
+  a = n(570140),
   l = n(612673),
   s = n(981631);
 async function c(e, t) {
@@ -13,12 +13,12 @@ async function c(e, t) {
   if (t.type === r.e.MANAGED) {
     let {
       body: n
-    } = await a.tn.get({
+    } = await o.tn.get({
       url: s.ANM.APPLICATION_MANAGED_ACTIVITY_LINK(e, t.decodedLinkId),
       oldFormErrors: !0,
       rejectWithError: !1
     });
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "MANAGED_ACTIVITY_LINK_FETCH_SUCCESS",
       applicationId: e,
       link: n

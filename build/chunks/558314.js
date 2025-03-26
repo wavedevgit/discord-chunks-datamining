@@ -2,12 +2,12 @@
 n.d(t, {
   Z: () => u
 });
-var r, i, a, o = n(442837),
+var r, i, o, a = n(442837),
   l = n(570140);
 let s = {
   matureAgree: !1
 };
-class c extends(a = o.ZP.Store) {
+class c extends(o = a.ZP.Store) {
   get didMatureAgree() {
     return s.matureAgree
   }

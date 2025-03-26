@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(739566),
-  a = n(834129),
-  o = n(388032),
+  o = n(834129),
+  a = n(388032),
   l = n(355839);
 
 function s(e) {
@@ -16,12 +16,12 @@ function s(e) {
     compact: c,
     isForumPost: u
   } = e, d = (0, i.ZP)(t), p = s(d);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     compact: c,
     className: l.channelNameChange,
     icon: n(819373),
     timestamp: t.timestamp,
-    children: o.NW.format(u ? o.t.SOQ4hI : o.t.oItgEx, {
+    children: a.NW.format(u ? a.t.SOQ4hI : a.t.oItgEx, {
       username: d.nick,
       usernameHook: p,
       channelName: t.content

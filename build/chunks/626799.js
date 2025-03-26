@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => A
 }), n(47120), n(411104);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(568611),
+  o = n(192379),
+  a = n(568611),
   l = n(442837),
   s = n(481060),
   c = n(558381),
@@ -19,8 +19,8 @@ var r, i = n(200651),
   _ = n(812206),
   b = n(283595),
   v = n(558314),
-  y = n(55563),
-  x = n(551428),
+  x = n(55563),
+  y = n(551428),
   E = n(73346),
   O = n(981631),
   N = n(388032),
@@ -34,7 +34,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class I extends(r = a.Component) {
+class I extends(r = o.Component) {
   get analyticsLocation() {
     var e, t;
     let {
@@ -91,16 +91,16 @@ class I extends(r = a.Component) {
       storeListing: t,
       width: n,
       fetchFailed: r,
-      renderFallback: a
+      renderFallback: o
     } = this.props, l = n > f.aL;
-    return null == e || null == t ? r ? a() : (0, i.jsx)(f.OR, {
+    return null == e || null == t ? r ? o() : (0, i.jsx)(f.OR, {
       isHorizontal: l
     }) : e.productLine === O.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
       section: O.jXE.APPLICATION_EMBED,
       children: this.renderApplicationTile(e, t)
     }) : (0, i.jsx)(u.Z, {
       section: O.jXE.APPLICATION_EMBED,
-      children: (0, i.jsx)(o.rU, {
+      children: (0, i.jsx)(a.rU, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
         onMouseEnter: this.handleMouseEnter,
@@ -143,8 +143,8 @@ class I extends(r = a.Component) {
       let {
         inLibrary: n,
         width: r,
-        renderCustomTitle: a,
-        renderCustomTagline: o,
+        renderCustomTitle: o,
+        renderCustomTagline: a,
         renderCustomMedia: l
       } = this.props, {
         playing: s,
@@ -158,8 +158,8 @@ class I extends(r = a.Component) {
         inLibrary: n,
         onToggleMute: this.handleToggleMute,
         renderCustomActions: () => this.renderActions(e),
-        renderCustomTitle: a,
-        renderCustomTagline: o,
+        renderCustomTitle: o,
+        renderCustomTagline: a,
         renderCustomMedia: l,
         isHorizontal: u,
         isEmbed: !0
@@ -169,16 +169,16 @@ class I extends(r = a.Component) {
         inLibrary: t,
         application: n,
         skuId: r,
-        libraryApplication: a,
-        renderCustomActions: o
+        libraryApplication: o,
+        renderCustomActions: a
       } = this.props;
-      if (null != o) return (0, i.jsx)("div", {
+      if (null != a) return (0, i.jsx)("div", {
         className: j.tileActions,
-        children: o()
+        children: a()
       });
       if (null == n) return null;
       let l = null != n && n.primarySkuId === r,
-        c = null != a && a.hasFlag(O.eHb.HIDDEN);
+        c = null != o && o.hasFlag(O.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: j.tileActions,
         children: [!l || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
@@ -200,18 +200,18 @@ class I extends(r = a.Component) {
 C(I, "defaultProps", {
   renderFallback: O.dG4
 });
-let S = [y.Z, v.Z, b.Z, x.Z];
+let S = [x.Z, v.Z, b.Z, y.Z];
 
 function T(e) {
   let {
     skuId: t
-  } = e, n = y.Z.get(t), r = null != n ? _.Z.getApplication(n.applicationId) : null;
+  } = e, n = x.Z.get(t), r = null != n ? _.Z.getApplication(n.applicationId) : null;
   return {
     sku: n,
     application: r,
-    fetchFailed: y.Z.didFetchingSkuFail(t),
+    fetchFailed: x.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, !0),
-    storeListing: null != n ? x.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? y.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }

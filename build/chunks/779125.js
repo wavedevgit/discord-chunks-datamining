@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(475179),
+  o = n(481060),
+  a = n(475179),
   l = n(287734),
   s = n(933557),
   c = n(124072),
@@ -25,10 +25,10 @@ function v(e) {
     channel: t,
     onClick: n,
     beforeTransition: v,
-    className: y,
-    openChatWithoutConnecting: x
+    className: x,
+    openChatWithoutConnecting: y
   } = e, E = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(o.ua7, {
     text: E,
     position: "top",
     children: e => {
@@ -38,9 +38,9 @@ function v(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         role: "link",
-        className: y,
+        className: x,
         onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != v && v(), (0, a.pTH)(), function(e, t) {
+          e.stopPropagation(), null != n ? n() : (null != v && v(), (0, o.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             if (null == e || null == t) return;
             let r = m.Z.getGuild(e);
@@ -53,13 +53,13 @@ function v(e) {
             let i = p.Z.getChannel(t);
             if (null != i && (0, d.bw)(i.type)) {
               if (n) {
-                o.Z.updateChatOpen(i.id, !0), (0, u.uL)(b.Z5c.CHANNEL(e, t));
+                a.Z.updateChatOpen(i.id, !0), (0, u.uL)(b.Z5c.CHANNEL(e, t));
                 return
               }
               l.default.selectVoiceChannel(i.id);
               return
             }(0, u.uL)(b.Z5c.CHANNEL(e, t))
-          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, x))
+          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, y))
         },
         onMouseEnter: i,
         onMouseLeave: s,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(824203),
-  o = n(981631),
+  o = n(824203),
+  a = n(981631),
   l = n(388032),
   s = n(538277);
 
@@ -20,7 +20,7 @@ function c(e) {
     p = null === (t = c.interactionMetadata) || void 0 === t ? void 0 : t.ephemerality_reason,
     m = () => u(c, !0);
   if (null != p) {
-    let e = (0, a.i)(p);
+    let e = (0, o.i)(p);
     n = (0, r.jsx)("div", {
       className: s.userAppsBetaContent,
       children: l.NW.format(l.t.wx1tLS, {
@@ -28,7 +28,7 @@ function c(e) {
         reason: e
       })
     })
-  } else n = c.type === o.uaV.STAGE_RAISE_HAND ? l.NW.format(l.t["qDAX+/"], {
+  } else n = c.type === a.uaV.STAGE_RAISE_HAND ? l.NW.format(l.t["qDAX+/"], {
     handleDelete: m
   }) : l.NW.format(l.t.uX3ecH, {
     count: 1,

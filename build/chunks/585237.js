@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r, i = n(200651);
 n(192379);
-var a = n(481060),
-  o = n(600164),
+var o = n(481060),
+  a = n(600164),
   l = n(806260),
   s = ((r = s || {}).SMALL = "SMALL", r.MEDIUM = "MEDIUM", r.LARGE = "LARGE", r);
 let c = {
@@ -25,17 +25,17 @@ let c = {
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            a = Object.keys(e);
-          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            o = Object.keys(e);
+          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var o = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(e, ["onDropdownClick", "children", "contentClassName", "dropdownSize"]);
-    return (0, i.jsx)(a.zxk, (t = function(e) {
+    return (0, i.jsx)(o.zxk, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -53,19 +53,19 @@ let c = {
       }
       return e
     }({}, p), n = n = {
-      children: (0, i.jsxs)(o.Z, {
-        align: o.Z.Align.CENTER,
-        children: [(0, i.jsx)(o.Z.Child, {
+      children: (0, i.jsxs)(a.Z, {
+        align: a.Z.Align.CENTER,
+        children: [(0, i.jsx)(a.Z.Child, {
           className: u,
           children: s
-        }), null != r ? (0, i.jsxs)(a.P3F, {
+        }), null != r ? (0, i.jsxs)(o.P3F, {
           className: c[d],
           onClick: e => {
             e.stopPropagation(), null != r && r(e)
           },
           children: [(0, i.jsx)("div", {
             className: l.arrowSeparator
-          }), (0, i.jsx)(a.CJ0, {
+          }), (0, i.jsx)(o.CJ0, {
             size: "md",
             color: "currentColor",
             className: l.dropdownArrow
@@ -83,5 +83,5 @@ let c = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   };
-u.DropdownSizes = s, u.Sizes = a.zxk.Sizes, u.Colors = a.zxk.Colors, u.Looks = a.zxk.Looks;
+u.DropdownSizes = s, u.Sizes = o.zxk.Sizes, u.Colors = o.zxk.Colors, u.Looks = o.zxk.Looks;
 let d = u

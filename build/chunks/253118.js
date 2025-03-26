@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(904245),
-  o = n(739566),
+  o = n(904245),
+  a = n(739566),
   l = n(834129),
   s = n(388032);
 
@@ -17,13 +17,13 @@ function c(e) {
     usernameHook: u,
     onClickPins: d,
     compact: p
-  } = e, m = (0, o.ZP)(c), f = m.nick, h = u(m), g = () => {
+  } = e, m = (0, a.ZP)(c), f = m.nick, h = u(m), g = () => {
     if (null == c.messageReference) return;
     let {
       channel_id: e,
       message_id: t
     } = c.messageReference;
-    a.Z.jumpToMessage({
+    o.Z.jumpToMessage({
       channelId: e,
       messageId: t,
       flash: !0

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   l = n(270851);
 let s = e => {
   let {
@@ -18,17 +18,17 @@ let s = e => {
     isHorizontal: u = !1
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l.tile, {
+    className: o()(l.tile, {
       [l.tileHorizontal]: u
     }, c),
     children: [(0, r.jsx)("div", {
-      className: a()(l.media, {
+      className: o()(l.media, {
         [l.mediaHorizontal]: u
       }),
       children: null == s ? void 0 : s()
     }), (0, r.jsxs)("div", {
       className: l.description,
-      children: [(0, r.jsx)(o.H, {
+      children: [(0, r.jsx)(a.H, {
         className: l.title,
         children: null == t ? void 0 : t()
       }), (0, r.jsx)("div", {

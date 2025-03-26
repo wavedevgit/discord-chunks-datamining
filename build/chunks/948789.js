@@ -5,8 +5,8 @@ n.d(t, {
   uL: () => l
 }), n(653041), n(757143), n(301563);
 var i = n(539528),
-  a = n(33382),
-  o = n.n(a);
+  o = n(33382),
+  a = n.n(o);
 
 function l(e) {
   r.push(e)
@@ -14,7 +14,7 @@ function l(e) {
 
 function s(e) {
   return t => {
-    if (null != e) return null != o()(t, {
+    if (null != e) return null != a()(t, {
       end: !1
     }).exec(e.history.location.pathname)
   }

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(149765),
-  l = n(442837),
+  l = n(149765),
+  o = n(442837),
   a = n(481060),
   s = n(749210),
   c = n(412899),
@@ -26,18 +26,18 @@ function N(e) {
   let {
     guild: n,
     applicationIntegration: N
-  } = e, O = (0, l.e7)([f.Z], () => f.Z.getRoles(n.id)), {
+  } = e, O = (0, o.e7)([f.Z], () => f.Z.getRoles(n.id)), {
     application: y
-  } = N, _ = null != y.bot ? new b.Z(y.bot) : null, C = (0, l.e7)([g.ZP], () => null != _ ? g.ZP.getMember(n.id, _.id) : null, [_, n]), I = null == _ ? void 0 : _.id;
+  } = N, _ = null != y.bot ? new b.Z(y.bot) : null, C = (0, o.e7)([g.ZP], () => null != _ ? g.ZP.getMember(n.id, _.id) : null, [_, n]), I = null == _ ? void 0 : _.id;
   i.useEffect(() => {
     null != I && s.Z.requestMembersById(n.id, I)
   }, [n.id, I]);
   let S = i.useMemo(() => {
     var e, t, r;
     let i = O[n.getEveryoneRoleId()],
-      l = null !== (t = null == C ? void 0 : null === (e = C.roles) || void 0 === e ? void 0 : e.map(e => O[e]).filter(h.lm)) && void 0 !== t ? t : [],
+      o = null !== (t = null == C ? void 0 : null === (e = C.roles) || void 0 === e ? void 0 : e.map(e => O[e]).filter(h.lm)) && void 0 !== t ? t : [],
       a = null !== (r = null == i ? void 0 : i.permissions) && void 0 !== r ? r : x.Hn;
-    for (let e of l) a = o.IH(a, e.permissions);
+    for (let e of o) a = l.IH(a, e.permissions);
     return a
   }, [n, O, C]);
   return null == _ ? null : (0, r.jsx)(a.Zbd, {
@@ -62,9 +62,9 @@ function N(e) {
           verified: _.isVerifiedBot()
         })]
       }), function(e, t, n, i) {
-        let l = [],
+        let o = [],
           s = [];
-        for (let e of m.VY) o.e$(i, e) ? l.push(e) : s.push(e);
+        for (let e of m.VY) l.e$(i, e) ? o.push(e) : s.push(e);
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.$i$, {
             className: v.divider
@@ -82,8 +82,8 @@ function N(e) {
               wrap: !1,
               readOnly: !0
             })]
-          }) : null, l.length > 0 || s.length > 0 ? (0, r.jsx)(d.Z, {
-            grantedPermissions: l,
+          }) : null, o.length > 0 || s.length > 0 ? (0, r.jsx)(d.Z, {
+            grantedPermissions: o,
             grantedPermissionsHeader: j.NW.string(j.t["hA4+sr"]),
             disabledPermissions: s,
             disabledPermissionsHeader: j.NW.string(j.t["/rEZ2t"])

@@ -1,19 +1,19 @@
 /** Chunk was on 52272 **/
 n.d(t, {
   Q: () => l,
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(275344),
-  a = n(938353);
+  o = n(938353);
 
-function o(e) {
+function a(e) {
   let {
     channelMessageProps: {
       message: t,
       channel: n,
-      compact: o = !1
+      compact: a = !1
     },
     hasSpoilerEmbeds: l,
     handleContextMenu: s,
@@ -29,12 +29,12 @@ function o(e) {
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
     message: t,
-    children: (0, r.jsx)(a.ZP, {
+    children: (0, r.jsx)(o.ZP, {
       className: _,
       isInteracting: c,
       message: t,
       channel: n,
-      compact: o,
+      compact: a,
       hasSpoilerEmbeds: l,
       isMessageSnapshot: d,
       onMediaItemContextMenu: s,
@@ -51,16 +51,16 @@ function l(e, t) {
   let {
     message: n,
     channel: i,
-    compact: o = !1,
+    compact: a = !1,
     renderThreadAccessory: l,
     disableReactionCreates: s,
     disableReactionUpdates: c,
     isSearchResult: u
   } = e;
-  return (0, r.jsx)(a.$p, {
+  return (0, r.jsx)(o.$p, {
     message: n,
     channel: i,
-    compact: o,
+    compact: a,
     hasSpoilerEmbeds: t,
     renderThreadAccessory: l,
     disableReactionCreates: s,

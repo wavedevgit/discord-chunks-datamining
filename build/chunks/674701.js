@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => R
 });
 var r, i = n(200651),
-  a = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  o = n(192379),
+  a = n(120356),
+  l = n.n(a),
   s = n(990547),
   c = n(442837),
   u = n(692547),
@@ -19,8 +19,8 @@ var r, i = n(200651),
   _ = n(541716),
   b = n(28546),
   v = n(963249),
-  y = n(703656),
-  x = n(594174),
+  x = n(703656),
+  y = n(594174),
   E = n(626135),
   O = n(51144),
   N = n(479446),
@@ -40,17 +40,17 @@ function R(e) {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: r,
-    onMouseEnter: o,
+    onMouseEnter: a,
     onMouseLeave: k,
     popoutPosition: R,
     analyticsPage: D,
     analyticsSection: L,
     glow: M,
     giftIntentSecondaryAction: W
-  } = e, U = (0, c.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, U = (0, c.e7)([y.default], () => y.default.getCurrentUser()), {
     analyticsLocations: F
   } = (0, h.ZP)(), B = (0, c.e7)([C.Z], () => C.Z.getFriendAnniversaryYears(r.id));
-  a.useEffect(() => {
+  o.useEffect(() => {
     (0, g.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
       type: s.ImpressionTypes.VIEW,
@@ -79,7 +79,7 @@ function R(e) {
       [Z.outerGlow]: M,
       [Z.contentCoachmark]: H
     }),
-    onMouseEnter: o,
+    onMouseEnter: a,
     onMouseLeave: k,
     children: (0, i.jsxs)("div", {
       className: l()(V, {
@@ -125,7 +125,7 @@ function R(e) {
             e.stopPropagation(), E.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: W
-            }), W === S.X2.VIEW_ALL ? ((0, y.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : W === S.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel(r.id).then(() => {
+            }), W === S.X2.VIEW_ALL ? ((0, x.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : W === S.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel(r.id).then(() => {
               setTimeout(() => {
                 (0, b.PG)(A.X1.GIF, _.Ie.NORMAL), setTimeout(() => {
                   (0, b.ql)(w.NW.string(w.t.jrtJi4), !0)

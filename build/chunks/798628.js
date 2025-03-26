@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r = n(372793),
   i = n(731965),
-  a = n(902704);
+  o = n(902704);
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,8 +47,8 @@ let s = {},
         e(e => {
           var i;
           return {
-            polls: l(o({}, e.polls), {
-              [t]: l(o({}, e.polls[t]), {
+            polls: l(a({}, e.polls), {
+              [t]: l(a({}, e.polls[t]), {
                 [n]: r(null === (i = e.polls[t]) || void 0 === i ? void 0 : i[n])
               })
             })
@@ -62,7 +62,7 @@ function u(e) {
   return c(t => {
     var n;
     return null !== (n = t.polls[e]) && void 0 !== n ? n : s
-  }, a.Z)
+  }, o.Z)
 }
 
 function d(e, t, n) {

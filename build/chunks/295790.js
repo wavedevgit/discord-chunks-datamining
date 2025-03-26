@@ -1,23 +1,23 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(901461),
-  a = n(815387);
+  o = n(815387);
 
-function o(e) {
+function a(e) {
   let {
     message: t,
     channel: n,
-    compact: o,
+    compact: a,
     disableInteraction: l
   } = e;
-  return (0, i.Z)(t) ? (0, r.jsx)(a.Z, {
+  return (0, i.Z)(t) ? (0, r.jsx)(o.Z, {
     message: t,
     channel: n,
-    compact: o,
+    compact: a,
     disableInteraction: l
   }) : null
 }

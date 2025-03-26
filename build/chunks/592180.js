@@ -1,7 +1,7 @@
 /** Chunk was on 52272 **/
 n.d(t, {
   a: () => i,
-  g: () => a
+  g: () => o
 });
 var r = n(911969);
 
@@ -9,7 +9,7 @@ function i(e) {
   return null != e.interactionMetadata
 }
 
-function a(e) {
+function o(e) {
   var t, n;
   return (null === (t = e.interactionMetadata) || void 0 === t ? void 0 : t.type) === r.B8.APPLICATION_COMMAND && (null === (n = e.interactionMetadata) || void 0 === n ? void 0 : n.command_type) === r.yU.PRIMARY_ENTRY_POINT
 }

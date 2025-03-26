@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(39604),
-  o = n(176127),
+  o = n(39604),
+  a = n(176127),
   l = n(388032),
   s = n(426265);
 
@@ -24,7 +24,7 @@ function c(e) {
     },
     position: "bottom",
     color: i.FGA.PRIMARY,
-    children: [(0, r.jsx)(o.Z, {}), (0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(a.Z, {}), (0, r.jsx)(i.X6q, {
       variant: "heading-md/extrabold",
       children: l.NW.format(l.t["+qxkzM"], {
         count: c.newClipIds.length
@@ -33,7 +33,7 @@ function c(e) {
       className: s.buttonContainer,
       children: [(0, r.jsx)(i.zxk, {
         color: i.zxk.Colors.TRANSPARENT,
-        onClick: a.eL,
+        onClick: o.eL,
         children: l.NW.string(l.t.WAI6xs)
       }), (0, r.jsx)(i.zxk, {
         color: i.zxk.Colors.BRAND,

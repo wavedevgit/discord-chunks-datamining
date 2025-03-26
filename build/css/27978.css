@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: adac2b7cb347f0ab
+  Original File Name: 6e29b3218f42d304
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1862,6 +1862,18 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .container_e45859 {
     border-radius: 8px
+}
+
+.container__1ce5d {
+    position: relative
+}
+
+.circularImage__1ce5d {
+    border-radius: 50%
+}
+
+.dots__1ce5d {
+    margin-top: .2px
 }
 
 .channel__972a0 {
@@ -6013,4 +6025,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=adac2b7cb347f0ab.css.map*/
+/*# sourceMappingURL=6e29b3218f42d304.css.map*/

@@ -1,19 +1,19 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  j: () => a
+  j: () => o
 });
 var r = n(406432),
   i = n(981631);
 
-function a(e, t) {
+function o(e, t) {
   let {
     targetKind: n,
-    embedIndex: a
+    embedIndex: o
   } = t;
   if ("media" === n) {
-    var o, l;
+    var a, l;
     let t = e;
-    return (null === (o = e.messageReference) || void 0 === o ? void 0 : o.type) === i.Uvt.FORWARD && (t = null === (l = e.messageSnapshots[0]) || void 0 === l ? void 0 : l.message), {
+    return (null === (a = e.messageReference) || void 0 === a ? void 0 : a.type) === i.Uvt.FORWARD && (t = null === (l = e.messageSnapshots[0]) || void 0 === l ? void 0 : l.message), {
       onlyAttachmentIds: null == t ? void 0 : t.attachments.filter(e => {
         let {
           filename: t
@@ -22,7 +22,7 @@ function a(e, t) {
       }).map(e => e.id)
     }
   }
-  return "embed" === n && null != a ? {
-    onlyEmbedIndices: [a]
+  return "embed" === n && null != o ? {
+    onlyEmbedIndices: [o]
   } : "shortcut" === n ? {} : void 0
 }

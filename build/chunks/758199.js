@@ -4,9 +4,9 @@ n.d(t, {
   u: () => E
 }), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  o = n(192379),
+  a = n(120356),
+  l = n.n(a),
   s = n(442837),
   c = n(481060),
   u = n(434650),
@@ -20,8 +20,8 @@ var r, i = n(200651),
   b = n(388032),
   v = n(982018);
 
-function y() {
-  return (y = Object.assign || function(e) {
+function x() {
+  return (x = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -30,7 +30,7 @@ function y() {
   }).apply(this, arguments)
 }
 
-function x(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function x(e) {
 var E = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function O(e) {
-  var t, n, r, o;
+  var t, n, r, a;
   let {
     title: E,
     header: O,
@@ -67,7 +67,7 @@ function O(e) {
   A = {
     id: null !== (n = null == (t = A) ? void 0 : t.id) && void 0 !== n ? n : "0",
     linkType: null !== (r = null == t ? void 0 : t.linkType) && void 0 !== r ? r : g.Un.UNKNOWN,
-    referrerId: null !== (o = null == t ? void 0 : t.referrerId) && void 0 !== o ? o : f.default.getId(),
+    referrerId: null !== (a = null == t ? void 0 : t.referrerId) && void 0 !== a ? a : f.default.getId(),
     activityCustomId: null == t ? void 0 : t.activityCustomId,
     onView: null == t ? void 0 : t.onView,
     onLinkCopied: null == t ? void 0 : t.onLinkCopied
@@ -75,7 +75,7 @@ function O(e) {
   let {
     primaryColor: w,
     secondaryColor: Z
-  } = (0, p.Z)(null != S ? S : j), k = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), R = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = a.useRef(!1), L = (0, u.O)(e => {
+  } = (0, p.Z)(null != S ? S : j), k = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), R = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = o.useRef(!1), L = (0, u.O)(e => {
     if (!1 === D.current && e) {
       var t;
       null == A || null === (t = A.onView) || void 0 === t || t.call(A), (0, g.GF)(A.id, A.linkType, A.referrerId, A.activityCustomId), D.current = !0
@@ -92,10 +92,10 @@ function O(e) {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, W = null != j, U = null != C && !1 === R, F = W || U, B = 0 === I ? v.bannerAspectRatioBot : v.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
+  }) : null, W = null != j, U = null != C && !1 === R, F = W || U, B = 0 === I ? v.bannerAspectRatioBot : v.bannerAspectRatioActivity, G = o.useRef(null), H = o.useCallback(() => {
     let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), V = a.useMemo(() => !!U && new URL(C).pathname.endsWith(".gif"), [U, C]);
+  }, []), V = o.useMemo(() => !!U && new URL(C).pathname.endsWith(".gif"), [U, C]);
   return (0, i.jsxs)("div", {
     ref: L,
     className: l()(v.embed, {
@@ -156,29 +156,29 @@ function O(e) {
           let {
             label: n,
             onClick: r,
-            disabledReason: a,
-            submitting: o,
+            disabledReason: o,
+            submitting: a,
             trackingArea: l
-          } = e, s = null != a, u = 0 === t, d = {
+          } = e, s = null != o, u = 0 === t, d = {
             color: u ? c.zxk.Colors.WHITE : c.zxk.Colors.TRANSPARENT,
             className: u ? v.primaryButton : v.alwaysWhiteText,
             disabled: s,
-            submitting: o,
+            submitting: a,
             children: n,
             onClick(e) {
               r(e), (0, g.KX)(A.id, A.linkType, l, A.referrerId, A.activityCustomId)
             }
           };
           return s ? (0, i.jsx)(c.ua7, {
-            text: a,
+            text: o,
             children: e => {
-              var t = y({}, function(e) {
+              var t = x({}, function(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, x({}, d, t))
+              return (0, i.jsx)(c.zxk, y({}, d, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, x({}, d), n)
+          }, n) : (0, i.jsx)(c.zxk, y({}, d), n)
         })
       })]
     })]

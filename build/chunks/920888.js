@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(215569),
   s = n(481060),
   c = n(833803),
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,8 +52,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (e, t) => null == e && null == t || e === t,
-  E = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
+let y = (e, t) => null == e && null == t || e === t,
+  E = (e, t) => e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name)),
   O = (e, t) => {
     if (null == t) return e;
     let n = E(e, t);
@@ -75,11 +75,11 @@ class N extends i.PureComponent {
       disableReactionCreates: t,
       disableReactionUpdates: n,
       isLurking: i,
-      isGuest: a,
+      isGuest: o,
       isPendingMember: b,
       isForumToolbar: v,
-      channel: y,
-      className: x,
+      channel: x,
+      className: y,
       forceAddReactions: E,
       reactionClassName: O,
       useChatFontScaling: N,
@@ -100,7 +100,7 @@ class N extends i.PureComponent {
     }), Z = E || A;
     return (0, r.jsxs)(l.W, {
       component: "div",
-      className: o()(P.reactions, x, {
+      className: a()(P.reactions, y, {
         [P.largeReactions]: w
       }),
       transitionAppear: !T,
@@ -118,7 +118,7 @@ class N extends i.PureComponent {
         message: e,
         readOnly: n,
         isLurking: i,
-        isGuest: a,
+        isGuest: o,
         isPendingMember: b,
         isForumToolbar: v,
         useChatFontScaling: N,
@@ -126,9 +126,9 @@ class N extends i.PureComponent {
         emojiSize: w ? "reactionLarge" : "reaction"
       }), C > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
-          t.stopPropagation(), (0, f.op)(y, e)
+          t.stopPropagation(), (0, f.op)(x, e)
         },
-        className: o()(P.reaction, O, P.remainingReactions),
+        className: a()(P.reaction, O, P.remainingReactions),
         "aria-label": h.NW.string(h.t.lfIHs7),
         children: (0, r.jsxs)(s.Text, {
           className: P.reactionInner,
@@ -139,10 +139,10 @@ class N extends i.PureComponent {
         tabIndex: Z || this.state.isHovered ? 0 : -1,
         type: u.O.NORMAL,
         message: e,
-        channel: y,
+        channel: x,
         useChatFontScaling: N,
         isHovered: this.state.isHovered,
-        className: o()({
+        className: a()({
           [P.forceShow]: Z
         })
       })]
@@ -160,32 +160,32 @@ let j = e => {
   let {
     message: t,
     maxReactions: n,
-    hoistReaction: a
+    hoistReaction: o
   } = e, {
-    combinedReactions: o,
+    combinedReactions: a,
     remainingReactions: l,
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
-      r = O(t.reactions, a),
+      r = O(t.reactions, o),
       i = null != n && n < r.length ? r.slice(0, n) : r,
-      o = r.length - i.length,
+      a = r.length - i.length,
       l = r.length;
     return i.forEach(t => {
-      t.burst_count > 0 && e.push(y(v({}, t), {
+      t.burst_count > 0 && e.push(x(v({}, t), {
         type: u.O.BURST
-      })), t.count > 0 && e.push(y(v({}, t), {
+      })), t.count > 0 && e.push(x(v({}, t), {
         type: u.O.NORMAL
       })), null != t.me_vote && --l
     }), {
       combinedReactions: e,
       visibleReactionsCount: l,
-      remainingReactions: o
+      remainingReactions: a
     }
-  }, [a, n, t.reactions]);
-  return (0, r.jsx)(N, y(v({}, e), {
+  }, [o, n, t.reactions]);
+  return (0, r.jsx)(N, x(v({}, e), {
     visibleReactionsCount: s,
-    combinedReactions: o,
+    combinedReactions: a,
     remainingReactions: l
   }))
 }

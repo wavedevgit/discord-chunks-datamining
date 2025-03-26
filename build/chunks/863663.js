@@ -1,8 +1,8 @@
-/** Chunk was on 31942 **/
+/** Chunk was on 10837 **/
 n.d(t, {
   NB: () => o,
-  ar: () => s,
-  fG: () => c,
+  ar: () => c,
+  fG: () => s,
   kg: () => a,
   pM: () => u
 }), n(566702), n(266796);
@@ -50,7 +50,7 @@ function u(e) {
   }
 }
 
-function c(e) {
+function s(e) {
   var t;
   let {
     guildProductListing: n,
@@ -60,11 +60,11 @@ function c(e) {
     image: o,
     imageName: a,
     isImageChanged: u,
-    newRoleParams: c,
-    hasUnsavedAttachmentChanges: s
+    newRoleParams: s,
+    hasUnsavedAttachmentChanges: c
   } = e, d = {};
-  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = !0 : null === c && (d.unlinkRole = !0), o.startsWith("data:") && (u || null == n && (Object.keys(d).length > 0 || s)) && (d.image = o, d.imageName = a);
-  let f = Object.keys(d).length > 0 || s;
+  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != s && "" !== s.name.trim() ? d.createNewRole = !0 : null === s && (d.unlinkRole = !0), o.startsWith("data:") && (u || null == n && (Object.keys(d).length > 0 || c)) && (d.image = o, d.imageName = a);
+  let f = Object.keys(d).length > 0 || c;
   return {
     changes: d,
     hasUnsavedChanges: f,
@@ -74,6 +74,6 @@ function c(e) {
   }
 }
 
-function s(e, t) {
+function c(e, t) {
   return "".concat(location.protocol, "//").concat(location.host).concat(i.Z5c.GUILD_PRODUCT(e, t))
 }

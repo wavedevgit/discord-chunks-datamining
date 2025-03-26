@@ -1,4 +1,4 @@
-/** Chunk was on 31942 **/
+/** Chunk was on 10837 **/
 n.d(t, {
   Dr: () => _,
   YO: () => p,
@@ -13,8 +13,8 @@ var r = n(570140),
   o = n(703656),
   a = n(430824),
   u = n(241559),
-  c = n(327999),
-  s = n(981631),
+  s = n(327999),
+  c = n(981631),
   d = n(176505);
 async function f(e) {
   await r.Z.dispatch({
@@ -65,10 +65,10 @@ async function _(e, t) {
 function O(e) {
   let t = (0, u.lv)(e),
     n = a.Z.getGuild(e);
-  return !!t && null != n && ((0, i.K2)(e, "Guild Sidebar") && n.hasFeature(s.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.hasFeature(s.oNc.COMMUNITY) || n.hasFeature(s.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, o.uL)(s.Z5c.CHANNEL(e, d.oC.MEMBER_SAFETY)) : l.Z.open(n.id, s.pNK.MEMBERS), !0)
+  return !!t && null != n && ((0, i.K2)(e, "Guild Sidebar") && n.hasFeature(c.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.hasFeature(c.oNc.COMMUNITY) || n.hasFeature(c.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, o.uL)(c.Z5c.CHANNEL(e, d.oC.MEMBER_SAFETY)) : l.Z.open(n.id, c.pNK.MEMBERS), !0)
 }
 async function g(e, t) {
-  let n = await (0, c._2)(e, t);
+  let n = await (0, s._2)(e, t);
   return 0 === n.length ? [] : (await r.Z.dispatch({
     type: "FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS",
     guildId: e,

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(192379),
   i = n(442837),
-  a = n(45114),
-  o = n(733427),
+  o = n(45114),
+  a = n(733427),
   l = n(455199),
   s = n(833592),
   c = n(140155),
@@ -20,8 +20,8 @@ let p = e => {
       initialPageSize: f
     } = e, h = (0, i.e7)([u.Z], () => u.Z.shouldReload()), g = r.useRef(!1), [_, b] = r.useState(!1), {
       initialized: v,
-      loading: y,
-      items: x,
+      loading: x,
+      items: y,
       hasMore: E,
       cursor: O,
       errored: N
@@ -40,12 +40,12 @@ let p = e => {
       roleFilter: l.Z.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(!0), () => (0, s.Vk)(!1)), []), r.useEffect(() => {
-      v && t && (0, a.FT)(d.W.NOTIFICATION_CENTER)
+      v && t && (0, o.FT)(d.W.NOTIFICATION_CENTER)
     }, [t, v]);
-    let I = (0, o.Z)();
+    let I = (0, a.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (N || x.length > 100) && (0, s.jF)() : n && x.length > 100 && (0, s.jF)()
-    }, [n, x, p, I, N]), r.useEffect(() => {
+      p ? !I() && (N || y.length > 100) && (0, s.jF)() : n && y.length > 100 && (0, s.jF)()
+    }, [n, y, p, I, N]), r.useEffect(() => {
       let e = h && t;
       (!v || e) && (0, s.jk)({
         limit: null != f ? f : m ? 8 : 20,
@@ -67,8 +67,8 @@ let p = e => {
     }, [v, E, O, N, m, j, C]);
     return {
       initialized: v,
-      loading: y,
-      items: x,
+      loading: x,
+      items: y,
       hasMore: E,
       loadMore: S,
       loadingMore: _,

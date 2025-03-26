@@ -4,8 +4,8 @@ n.d(t, {
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(954955),
   s = n.n(l),
   c = n(507274),
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(594174),
   b = n(630388),
   v = n(74538),
-  y = n(833803),
-  x = n(566006),
+  x = n(833803),
+  y = n(566006),
   E = n(981631),
   O = n(185923),
   N = n(474936),
@@ -56,11 +56,11 @@ class P extends i.Component {
       message: t,
       className: n,
       children: i,
-      useChatFontScaling: a,
+      useChatFontScaling: o,
       tabIndex: l = 0
     } = this.props, {
       isReactionPickerActive: s
-    } = this.state, c = t.state === E.yb.SENDING, m = e === x.O.BURST;
+    } = this.state, c = t.state === E.yb.SENDING, m = e === y.O.BURST;
     if (c || (0, b.yE)(t.flags, E.iLy.EPHEMERAL)) return null;
     let f = _.default.getCurrentUser(),
       h = (0, v.I5)(f),
@@ -68,10 +68,10 @@ class P extends i.Component {
     !h && m && (g = (0, r.jsx)(p.X, {
       tooltipText: j.NW.string(j.t.Kfcszs)
     }));
-    let N = a ? I : C,
+    let N = o ? I : C,
       {
         canShowImprovedReactionButton: S
-      } = y.Z.getCurrentConfig({
+      } = x.Z.getCurrentConfig({
         location: "ButtonAddReaction"
       }, {
         autoTrackExposure: !this.props.isForumToolbar
@@ -79,7 +79,7 @@ class P extends i.Component {
       P = {
         size: "sm",
         color: "currentColor",
-        className: o()(N.icon, {
+        className: a()(N.icon, {
           [N.largeIcon]: S
         })
       };
@@ -89,7 +89,7 @@ class P extends i.Component {
       renderPopout: this.renderReactionPopout,
       position: "right",
       children: (e, t) => {
-        var a, s;
+        var o, s;
         let {
           isShown: c
         } = t;
@@ -98,19 +98,19 @@ class P extends i.Component {
           color: u.FGA.PRIMARY,
           "aria-label": m ? j.NW.string(j.t.Kfcszs) : j.NW.string(j.t.lfIHs7),
           tooltipClassName: N.__invalid_addReactionTooltip,
-          children: (0, r.jsxs)(u.P3F, (a = T({}, e), s = s = {
+          children: (0, r.jsxs)(u.P3F, (o = T({}, e), s = s = {
             tabIndex: l,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
             onMouseEnter: () => (0, d.x)(O.qR.AddReactionPopoutMouseEntered),
             onFocus: () => (0, d.x)(O.qR.AddReactionPopoutFocused),
-            className: o()(N.reactionBtn, {
+            className: a()(N.reactionBtn, {
               [N.active]: c,
               [N.largeReactionBtn]: S
             }, n),
             children: [m ? (0, r.jsx)(u.Pt5, T({}, P)) : (0, r.jsx)(u.EO4, T({}, P)), i]
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -118,8 +118,8 @@ class P extends i.Component {
             }
             return n
           })(Object(s)).forEach(function(e) {
-            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
-          }), a))
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
+          }), o))
         })
       }
     })
@@ -148,7 +148,7 @@ class P extends i.Component {
       } = this.props;
       e.stopPropagation();
       let r = _.default.getCurrentUser();
-      t !== x.O.BURST || (0, v.I5)(r) || (0, m.m)({
+      t !== y.O.BURST || (0, v.I5)(r) || (0, m.m)({
         analytics: {
           type: N.cd.BURST_REACTION_UPSELL,
           page: null != n.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
@@ -162,10 +162,10 @@ class P extends i.Component {
       } = e, {
         type: n,
         channel: i,
-        message: a
-      } = this.props, o = T({
+        message: o
+      } = this.props, a = T({
         openPopoutType: "message_reaction_emoji_picker"
-      }, n === x.O.BURST && {
+      }, n === y.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
         page: null != i.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
         section: (0, h.s4)(i),
@@ -176,8 +176,8 @@ class P extends i.Component {
         onSelectEmoji: (e, n, r) => {
           this.onAddReaction(e, r), n && (r ? s()(t, 150)() : t())
         },
-        analyticsOverride: o,
-        messageId: a.id
+        analyticsOverride: a,
+        messageId: o.id
       });
       return (0, r.jsx)(c.M.Consumer, {
         children: e => e ? (0, r.jsx)(u.VqE, {

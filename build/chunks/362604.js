@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(86693), n(536091);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(442837),
   s = n(481060),
   c = n(834129),
@@ -22,27 +22,27 @@ var r = n(200651),
 function v(e) {
   let {
     message: t,
-    channel: a,
+    channel: o,
     compact: v
-  } = e, y = (0, l.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, E] = i.useState(null);
+  } = e, x = (0, l.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [y, E] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      y.length > 0 && E(y[Math.floor(Math.random() * y.length)])
+      x.length > 0 && E(x[Math.floor(Math.random() * x.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [y]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [x]), null == o.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
-      className: o()(b.mainContainer, {
+      className: a()(b.mainContainer, {
         [b.compact]: v
       }),
       icon: n(570111),
       compact: v,
       children: (0, r.jsx)("div", {
-        className: o()(b.__invalid_content, {
+        className: a()(b.__invalid_content, {
           [b.compact]: v
         }),
         children: (0, r.jsx)("div", {
-          className: o()(b.__invalid_messageContent, {
+          className: a()(b.__invalid_messageContent, {
             [b.compact]: v
           }),
           children: "" !== t.content ? t.content : _.NW.string(_.t.wnn1DQ)
@@ -57,12 +57,12 @@ function v(e) {
           onClick: () => {
             m.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
-              channel_id: a.id,
-              guild_id: a.guild_id,
+              channel_id: o.id,
+              guild_id: o.guild_id,
               action_type: "upload_file"
             }), f.S.dispatch(g.CkL.UPLOAD_FILE), (0, u.fE)({
               message: t,
-              channel: a,
+              channel: o,
               shouldMention: !0
             })
           },
@@ -78,14 +78,14 @@ function v(e) {
           onClick: () => {
             m.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
-              channel_id: a.id,
-              guild_id: a.guild_id,
+              channel_id: o.id,
+              guild_id: o.guild_id,
               action_type: "sticker"
-            }), (0, h.O)(t.id, a)
+            }), (0, h.O)(t.id, o)
           },
-          children: null != x ? (0, r.jsx)(p.Z, {
+          children: null != y ? (0, r.jsx)(p.Z, {
             size: 32,
-            sticker: x
+            sticker: y
           }) : (0, r.jsx)(s.EO4, {
             size: "md",
             color: "currentColor"

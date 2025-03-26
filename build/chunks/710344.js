@@ -5,35 +5,35 @@ n.d(t, {
 var r = n(192379);
 
 function i(e, t) {
-  let [n, i] = r.useState(null), o = r.useCallback(e => {
+  let [n, i] = r.useState(null), l = r.useCallback(e => {
     i(e)
-  }, []), l = r.useCallback(() => {
+  }, []), o = r.useCallback(() => {
     i(null)
   }, []), a = r.useCallback(r => {
-    l();
+    o();
     let i = e.find(e => {
         let {
           id: t
         } = e;
         return n === t
       }),
-      o = e.find(e => {
+      l = e.find(e => {
         let {
           id: t
         } = e;
         return r === t
       });
-    if (null == i || null == o || i === o) return;
+    if (null == i || null == l || i === l) return;
     let a = [...e],
       s = a.indexOf(i),
-      c = a.indexOf(o),
+      c = a.indexOf(l),
       d = +(c - s > 0);
-    a.splice(s, 1), c = a.indexOf(o), a.splice(c + d, 0, i), t(a)
-  }, [e, n, l, t]);
+    a.splice(s, 1), c = a.indexOf(l), a.splice(c + d, 0, i), t(a)
+  }, [e, n, o, t]);
   return {
     draggingId: n,
-    handleDragStart: o,
-    handleDragReset: l,
+    handleDragStart: l,
+    handleDragReset: o,
     handleDragComplete: a
   }
 }

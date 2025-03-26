@@ -1,11 +1,11 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(47120);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  o = n(192379),
+  a = n(120356),
+  l = n.n(a),
   s = n(86357),
   c = n(54936),
   u = n(687755),
@@ -25,23 +25,23 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class v extends(r = a.PureComponent) {
+class v extends(r = o.PureComponent) {
   render() {
     let {
       sku: e,
       storeListing: t,
       isHorizontal: n,
       className: r,
-      renderCustomTagline: a,
-      renderCustomTitle: o,
+      renderCustomTagline: o,
+      renderCustomTitle: a,
       renderCustomMedia: l,
       isEmbed: s
     } = this.props, c = s ? f.$G : h.Z;
     return (0, i.jsx)(c, {
       className: r,
       renderMedia: null != l ? l : this.renderMedia,
-      renderTitle: null != o ? o : () => e.name,
-      renderTagline: null != a ? a : () => t.tagline,
+      renderTitle: null != a ? a : () => e.name,
+      renderTagline: null != o ? o : () => t.tagline,
       renderActions: this.renderActions,
       isHorizontal: n
     })
@@ -53,19 +53,19 @@ class v extends(r = a.PureComponent) {
         sku: t,
         renderCustomActions: n,
         isMouseOver: r,
-        showBuyInline: a
-      } = this.props, o = (a || !t.requiresPayment) && !e;
+        showBuyInline: o
+      } = this.props, a = (o || !t.requiresPayment) && !e;
       return null != n ? n() : (0, i.jsxs)("div", {
         className: _.priceOs,
         children: [(0, i.jsx)(s.Z, {
           type: s.Z.Types.DIRECTORY_TILE,
           sku: t,
           inLibrary: e,
-          className: o && r ? _.tilePriceWithVisibleBuyButton : _.tilePrice
+          className: a && r ? _.tilePriceWithVisibleBuyButton : _.tilePrice
         }), (0, i.jsx)(c.n, {
           systems: [g.TaA.WINDOWS],
           className: _.platform
-        }), o ? (0, i.jsx)("div", {
+        }), a ? (0, i.jsx)("div", {
           children: "deprecated!"
         }) : null]
       })
@@ -75,29 +75,29 @@ class v extends(r = a.PureComponent) {
         muted: t,
         showMediaPlaceholder: n,
         onToggleMute: r,
-        sku: o,
+        sku: a,
         isHorizontal: s,
         storeListing: c
       } = this.props;
-      return (0, i.jsxs)(a.Fragment, {
+      return (0, i.jsxs)(o.Fragment, {
         children: [(0, i.jsx)(p.Z, {
           className: l()(_.splashContainer, {
             [_.splashContainerHorizontal]: s
           }),
-          video: null != c.previewVideo ? (0, m._W)(o.applicationId, c.previewVideo) : void 0,
-          image: null != c.thumbnail ? (0, m._W)(o.applicationId, c.thumbnail, 600) : null,
-          title: o.name,
+          video: null != c.previewVideo ? (0, m._W)(a.applicationId, c.previewVideo) : void 0,
+          image: null != c.thumbnail ? (0, m._W)(a.applicationId, c.thumbnail, 600) : null,
+          title: a.name,
           playing: e,
           muted: t,
           placeholder: n,
           onToggleMute: r,
           splashClassName: _.splashVideo,
           splashPlaceholderClassName: _.splashPlaceholder
-        }), o.exclusive ? (0, i.jsx)(d.Z, {
+        }), a.exclusive ? (0, i.jsx)(d.Z, {
           className: l()(_.exclusiveRegular, {
             [_.exclusivePlaying]: e
           })
-        }) : o.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
+        }) : a.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
           className: l()(_.exclusiveRegular, {
             [_.exclusivePlaying]: e
           })
@@ -113,4 +113,4 @@ b(v, "defaultProps", {
   isHorizontal: !1,
   isEmbed: !1
 });
-let y = v
+let x = v

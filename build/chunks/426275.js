@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(692547),
-  o = n(481060),
+  o = n(692547),
+  a = n(481060),
   l = n(375954),
   s = n(876338),
   c = n(912332),
@@ -32,13 +32,13 @@ function p(e) {
       forwardOptions: t
     })
   }, [n, f, p, m]);
-  return (0, r.jsx)(o.M0o, {
+  return (0, r.jsx)(a.M0o, {
     className: t,
     tooltip: d.NW.string(d.t.I3ltXF),
-    color: o.YX$.SECONDARY,
+    color: a.YX$.SECONDARY,
     icon: (0, r.jsx)(u.Z, {
       size: "xs",
-      color: a.Z.colors.INTERACTIVE_NORMAL
+      color: o.Z.colors.INTERACTIVE_NORMAL
     }),
     onClick: h
   })

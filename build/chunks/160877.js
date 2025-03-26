@@ -1,12 +1,12 @@
 /** Chunk was on 52272 **/
 n.d(t, {
   $: () => E,
-  s: () => x
+  s: () => y
 }), n(266796);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(470167),
   s = n(481060),
   c = n(572691),
@@ -25,7 +25,7 @@ let b = e => {
       url: n,
       description: i
     } = t;
-    return null == n ? null : (0, r.jsx)(y, {
+    return null == n ? null : (0, r.jsx)(x, {
       url: n,
       description: i
     })
@@ -33,15 +33,15 @@ let b = e => {
   v = e => {
     var t, n, i;
     let {
-      embed: a
+      embed: o
     } = e;
-    if (!h.n2.has(a.type)) return null;
-    let o = void 0 !== a.video && a.type !== l.h.GIFV ? a.video.url : null !== (i = null === (t = a.thumbnail) || void 0 === t ? void 0 : t.url) && void 0 !== i ? i : null === (n = a.image) || void 0 === n ? void 0 : n.url;
-    return null == o ? null : (0, r.jsx)(y, {
-      url: o
+    if (!h.n2.has(o.type)) return null;
+    let a = void 0 !== o.video && o.type !== l.h.GIFV ? o.video.url : null !== (i = null === (t = o.thumbnail) || void 0 === t ? void 0 : t.url) && void 0 !== i ? i : null === (n = o.image) || void 0 === n ? void 0 : n.url;
+    return null == a ? null : (0, r.jsx)(x, {
+      url: a
     })
   },
-  y = e => {
+  x = e => {
     let {
       url: t,
       description: n
@@ -49,18 +49,18 @@ let b = e => {
     return (0, r.jsx)("div", {
       className: _.mediaContainer,
       children: i ? (0, r.jsx)(d.Z, {
-        className: o()(_.video, _.media),
+        className: a()(_.video, _.media),
         controls: !0,
         src: t
       }) : (0, r.jsx)("img", {
-        className: o()(_.image, _.media),
+        className: a()(_.image, _.media),
         src: t,
         alt: n
       })
     })
   };
 
-function x(e) {
+function y(e) {
   c.Z.pop(), (0, m.t)({
     id: "explicit-media-false-positive-modal",
     text: g.NW.string(g.t.gFsTKi)
@@ -71,42 +71,42 @@ function E(e) {
   let {
     channelId: t,
     messageId: n,
-    isReportFalsePositiveLoading: a,
-    analyticsContext: o,
+    isReportFalsePositiveLoading: o,
+    analyticsContext: a,
     attachmentPreview: l,
     embedPreview: c,
     onConfirmPress: d,
     transitionState: p,
     onClose: m
-  } = e, h = (0, u.Dt)(), y = i.useCallback(() => {
+  } = e, h = (0, u.Dt)(), x = i.useCallback(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
       messageId: n,
-      context: o
+      context: a
     }), m()
-  }, [t, n, o, m]), x = i.useCallback(() => {
+  }, [t, n, a, m]), y = i.useCallback(() => {
     null == d || d(), (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
       messageId: n,
-      context: o
+      context: a
     })
-  }, [t, n, o, d]);
+  }, [t, n, a, d]);
   return i.useEffect(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
       channelId: t,
       messageId: n,
-      context: o
+      context: a
     })
-  }, [t, n, o]), (0, r.jsxs)(s.Y0X, {
+  }, [t, n, a]), (0, r.jsxs)(s.Y0X, {
     transitionState: p,
     "aria-labelledby": h,
     size: s.CgR.SMALL,
     children: [(0, r.jsxs)(s.hzk, {
       children: [(0, r.jsx)(s.olH, {
-        onClick: y,
+        onClick: x,
         className: _.closeButton
       }), (0, r.jsx)(s.X6q, {
         id: h,
@@ -127,18 +127,18 @@ function E(e) {
     }), (0, r.jsxs)(s.mzw, {
       children: [(0, r.jsx)(s.zxk, {
         className: _.button,
-        disabled: a,
-        submitting: a,
+        disabled: o,
+        submitting: o,
         size: s.zxk.Sizes.MEDIUM,
         color: s.zxk.Colors.BRAND,
-        onClick: x,
+        onClick: y,
         children: g.NW.string(g.t["cY+Ooa"])
       }), (0, r.jsx)(s.zxk, {
         className: _.button,
-        disabled: a,
+        disabled: o,
         color: s.zxk.Colors.TRANSPARENT,
         size: s.zxk.Sizes.MEDIUM,
-        onClick: y,
+        onClick: x,
         children: g.NW.string(g.t["ETE/oK"])
       })]
     })]

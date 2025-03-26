@@ -6,8 +6,8 @@ n.d(t, {
   hQ: () => f
 });
 var r, i = n(192379),
-  a = n(913527),
-  o = n.n(a),
+  o = n(913527),
+  a = n.n(o),
   l = n(442837),
   s = n(493683),
   c = n(336197),
@@ -28,11 +28,11 @@ function h(e) {
     isOverdue: !1
   };
   let i = 0 === r ? m.t.TjNWND : m.t.H4gnX1,
-    a = 0 === r ? m.t.haia19 : m.t["Uq7Y+/"],
+    o = 0 === r ? m.t.haia19 : m.t["Uq7Y+/"],
     l = n > t;
   return {
-    dueInText: m.NW.formatToPlainString(l ? a : i, {
-      duration: o().duration(t.getTime() - n.getTime(), "millisecond").humanize()
+    dueInText: m.NW.formatToPlainString(l ? o : i, {
+      duration: a().duration(t.getTime() - n.getTime(), "millisecond").humanize()
     }),
     isOverdue: l
   }

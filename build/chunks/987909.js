@@ -1,11 +1,11 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   l = n(904245),
   s = n(541716),
   c = n(419922),
@@ -28,24 +28,24 @@ function v(e) {
   return t[i]
 }
 
-function y(e) {
+function x(e) {
   let {
     currentUser: t,
     channel: n,
-    message: a,
+    message: o,
     buttonLabels: u,
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [h, _] = i.useState(!1), y = i.useMemo(() => v({
+  } = e, [h, _] = i.useState(!1), x = i.useMemo(() => v({
     assets: d,
     currentUser: t,
-    message: a
-  }), [d, t, a]), x = i.useMemo(() => v({
+    message: o
+  }), [d, t, o]), y = i.useMemo(() => v({
     assets: u,
     currentUser: t,
-    message: a
-  }), [u, t, a]), E = i.useCallback(async () => {
+    message: o
+  }), [u, t, o]), E = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, g.v)({
@@ -67,8 +67,8 @@ function y(e) {
       }))
     }({
       channel: n,
-      message: a,
-      sticker: y
+      message: o,
+      sticker: x
     }), function(e) {
       let {
         sticker: t,
@@ -76,7 +76,7 @@ function y(e) {
         eventProperties: r
       } = e;
       if (null != n) {
-        var i, a;
+        var i, o;
         f.default.track(n, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -94,47 +94,47 @@ function y(e) {
             })
           }
           return e
-        }({}, r), a = a = {
+        }({}, r), o = o = {
           sticker_id: t.id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
         }), i))
       }
     }({
-      sticker: y,
+      sticker: x,
       event: p,
       eventProperties: m
     }))
-  }, [n, a, y, p, m]);
-  return (0, r.jsxs)(o.zxk, {
+  }, [n, o, x, p, m]);
+  return (0, r.jsxs)(a.zxk, {
     className: b.CTAMessageButtonOuter,
     innerClassName: b.CTAMessageButton,
-    color: o.Ttl.PRIMARY,
+    color: a.Ttl.PRIMARY,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
     onClick: E,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
       isInteracting: h,
-      sticker: y,
+      sticker: x,
       size: 28
-    }), x]
+    }), y]
   })
 }
 
-function x(e) {
+function y(e) {
   let {
     channel: t,
     message: n,
     buttonLabels: i,
-    stickers: o,
+    stickers: a,
     event: l,
     eventProperties: s
   } = e, c = m.default.getCurrentUser(), f = function(e) {
@@ -143,15 +143,15 @@ function x(e) {
       message: n,
       currentUser: r
     } = e;
-    return (0, a.e7)([p.Z, d.ZP], () => {
+    return (0, o.e7)([p.Z, d.ZP], () => {
       var e;
       let i = t.guild_id;
       if (null == r || null == i) return !1;
-      let a = (0, u.xl)(t),
-        o = p.Z.can(_.Plq.SEND_MESSAGES, t),
+      let o = (0, u.xl)(t),
+        a = p.Z.can(_.Plq.SEND_MESSAGES, t),
         l = null === (e = d.ZP.getMember(i, r.id)) || void 0 === e ? void 0 : e.isPending,
         s = n.author.bot;
-      return o && !a && !l && !s
+      return a && !o && !l && !s
     })
   }({
     channel: t,
@@ -160,12 +160,12 @@ function x(e) {
   });
   return null != c && f ? (0, r.jsx)("div", {
     className: b.CTAMessage,
-    children: (0, r.jsx)(y, {
+    children: (0, r.jsx)(x, {
       currentUser: c,
       channel: t,
       message: n,
       buttonLabels: i,
-      stickers: o,
+      stickers: a,
       event: l,
       eventProperties: s
     })

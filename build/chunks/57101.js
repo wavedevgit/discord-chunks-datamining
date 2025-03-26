@@ -1,10 +1,10 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(392711),
   i = n(897325);
-let a = (0, r.memoize)(function(e) {
+let o = (0, r.memoize)(function(e) {
   let {
     theme: t,
     layoutType: n

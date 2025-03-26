@@ -4,8 +4,8 @@ n.d(t, {
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
-  a = n(533800),
-  o = n(481060),
+  o = n(533800),
+  a = n(481060),
   l = n(447543),
   s = n(100527),
   c = n(906732),
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(411198),
   b = n(277707),
   v = n(358595),
-  y = n(981631),
-  x = n(388032),
+  x = n(981631),
+  y = n(388032),
   E = n(651873);
 
 function O(e) {
@@ -39,14 +39,14 @@ function O(e) {
       approximate_member_count: R,
       approximate_presence_count: D
     } = P,
-    L = P.state === y.r2o.ACCEPTING,
+    L = P.state === x.r2o.ACCEPTING,
     M = null != k ? (0, f.jD)(k) : null,
     W = null != T,
     U = null != M,
     F = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
-    G = (0, h.yE)(null !== (t = P.flags) && void 0 !== t ? t : 0, a.$.IS_GUEST_INVITE),
-    H = null !== (O = null == T ? void 0 : T.hasFeature(y.oNc.HUB)) && void 0 !== O && O,
+    G = (0, h.yE)(null !== (t = P.flags) && void 0 !== t ? t : 0, o.$.IS_GUEST_INVITE),
+    H = null !== (O = null == T ? void 0 : T.hasFeature(x.oNc.HUB)) && void 0 !== O && O,
     V = (0, u.h)(),
     z = null == T ? void 0 : T.id,
     {
@@ -94,10 +94,10 @@ function O(e) {
         disableBoostClick: !0
       })
     })]
-  }), G && (C = (0, r.jsx)(o.DY3, {
+  }), G && (C = (0, r.jsx)(a.DY3, {
     className: E.tooltipContainer,
-    text: x.NW.string(x.t["/FeTKy"]),
-    children: (0, r.jsx)(o.d3s, {
+    text: y.NW.string(y.t["/FeTKy"]),
+    children: (0, r.jsx)(a.d3s, {
       size: "md",
       color: "currentColor",
       className: E.infoIcon
@@ -106,7 +106,7 @@ function O(e) {
     channel: M
   }), N = (0, r.jsxs)("span", {
     className: E.infoTitle,
-    children: [x.NW.format(x.t["2wimj4"], {
+    children: [y.NW.format(y.t["2wimj4"], {
       guildName: T.name
     }), (0, r.jsx)("span", {
       className: E.infoBadge,
@@ -141,16 +141,16 @@ function O(e) {
         onClick: J,
         submitting: L,
         color: m.Z.Button.Colors.GREEN,
-        children: F ? B ? x.NW.string(x.t["7vb2cX"]) : x.NW.string(x.t.gpqgam) : W ? x.NW.string(x.t.cEnaW1) : x.NW.string(x.t.XpeFYm)
+        children: F ? B ? y.NW.string(y.t["7vb2cX"]) : y.NW.string(y.t.gpqgam) : W ? y.NW.string(y.t.cEnaW1) : y.NW.string(y.t.XpeFYm)
       })]
-    }), T.hasFeature(y.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
+    }), T.hasFeature(x.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: E.separator
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: x.NW.format(x.t["/o1IfH"], {
-          onClick: () => (0, o.ZDy)(async () => {
+        children: y.NW.format(y.t["/o1IfH"], {
+          onClick: () => (0, a.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("95468"), n.e("70123")]).then(n.bind(n, 650233));

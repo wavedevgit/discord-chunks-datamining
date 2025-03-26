@@ -1,21 +1,21 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  a: () => o
+  a: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(890862);
-let o = e => {
+  o = n(890862);
+let a = e => {
   let {
     text: t,
     icon: n,
-    onClick: o
+    onClick: a
   } = e;
   return (0, r.jsxs)(i.zxk, {
-    className: a.button,
-    innerClassName: a.buttonInner,
-    onClick: o,
+    className: o.button,
+    innerClassName: o.buttonInner,
+    onClick: a,
     children: [(0, r.jsx)(n, {
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {

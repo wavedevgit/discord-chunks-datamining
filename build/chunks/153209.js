@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(442837),
   s = n(524437),
   c = n(481060),
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(626135),
   b = n(709054),
   v = n(791914),
-  y = n(981631),
-  x = n(388032),
+  x = n(981631),
+  y = n(388032),
   E = n(648485),
   O = n(215921);
 
@@ -29,7 +29,7 @@ function N(e) {
     onClick: t
   } = e;
   return (0, r.jsx)(c.M0o, {
-    tooltip: x.NW.string(x.t["8k+6QU"]),
+    tooltip: y.NW.string(y.t["8k+6QU"]),
     color: c.YX$.TERTIARY,
     icon: (0, r.jsx)(c.W6s, {
       size: "xs",
@@ -44,15 +44,15 @@ function j(e) {
   let {
     setTab: t,
     badgeState: n,
-    closePopout: a
+    closePopout: o
   } = e, {
     initialized: c,
-    items: x,
+    items: y,
     loading: O,
     loadMore: j
   } = (0, m.y6)(), C = (0, l.e7)([u.Z], () => u.Z.localItems), I = (0, h.Us)({
     location: "ForYou"
-  }), S = i.useMemo(() => [...[...x, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [x, C]), T = x.length > 0 ? x[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
+  }), S = i.useMemo(() => [...[...y, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [y, C]), T = y.length > 0 ? y[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
     if (null != T && 0 >= b.default.compare(T.id, P)) return !1;
     for (let e of S) {
       if (0 >= b.default.compare(e.id, P)) break;
@@ -61,17 +61,17 @@ function j(e) {
     return !1
   }, [T, P, S]);
   return (0, r.jsxs)("div", {
-    className: o()(E.container, {
+    className: a()(E.container, {
       [E.widerInbox]: I
     }),
     children: [(0, r.jsx)(v.Z, {
       tab: s.X.FOR_YOU,
       setTab: t,
       badgeState: n,
-      closePopout: a,
+      closePopout: o,
       children: A ? (0, r.jsx)(N, {
         onClick: () => {
-          null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
+          null != T && (g.d$.updateSetting(T.id), _.default.track(x.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: d.ud.MARK_ALL_READ
           }))
         }

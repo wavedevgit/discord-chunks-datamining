@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(616780),
+  o = n(442837),
+  a = n(616780),
   l = n(905405),
   s = n(937889),
   c = n(267128),
@@ -21,13 +21,13 @@ function f(e) {
   } = e, {
     isBlocked: f,
     isIgnored: h
-  } = (0, a.cj)([d.Z], () => ({
+  } = (0, o.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
   }), [t]), g = (0, l.p)(), _ = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, o.$)(_);
+  (0, a.$)(_);
   let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: !0,
     shouldFilterKeywords: g
@@ -46,8 +46,8 @@ function f(e) {
       className: m.threadMessageAccessoryPreview,
       children: function(e, t, n, i) {
         let {
-          contentPlaceholder: a,
-          renderedContent: o,
+          contentPlaceholder: o,
+          renderedContent: a,
           leadingIcon: l,
           trailingIcon: s
         } = (0, c.f)(e, t, n, i, m.threadMessageAccessoryContent, {
@@ -56,9 +56,9 @@ function f(e) {
           iconSize: p.WW
         });
         return (0, r.jsxs)(r.Fragment, {
-          children: [l, null != o ? o : (0, r.jsx)("span", {
+          children: [l, null != a ? a : (0, r.jsx)("span", {
             className: m.threadMessageAccessoryPlaceholder,
-            children: a
+            children: o
           }), s]
         })
       }(t, b, f, h)

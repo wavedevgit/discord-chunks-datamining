@@ -1,25 +1,25 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  X: () => o
+  X: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(412708);
+  o = n(412708);
 
-function o(e) {
+function a(e) {
   let {
     tooltipText: t,
     textColor: n
   } = e;
   return (0, r.jsxs)("span", {
-    className: a.tooltipTextContainer,
+    className: o.tooltipTextContainer,
     children: [(0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
-      className: a.nitroWheel
+      className: o.nitroWheel
     }), (0, r.jsx)(i.Text, {
-      className: a.tooltipText,
+      className: o.tooltipText,
       variant: "text-sm/medium",
       color: null != n ? n : "text-normal",
       children: t

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(512722),
-  a = n.n(i),
-  o = n(83474),
+  o = n.n(i),
+  a = n(83474),
   l = n(245315),
   s = n(556041),
   c = n(347475),
@@ -17,23 +17,23 @@ function p(e, t) {
   var n, i, p, m;
   if ((0, l.cp)(t)) return (0, r.jsx)(s.Z, {});
   if ((0, d.Z)(t)) {
-    let a = (null !== (i = null == t ? void 0 : null === (n = t.author) || void 0 === n ? void 0 : n.username) && void 0 !== i ? i : "").split(" ").slice(0, -1).join(" "),
+    let o = (null !== (i = null == t ? void 0 : null === (n = t.author) || void 0 === n ? void 0 : n.username) && void 0 !== i ? i : "").split(" ").slice(0, -1).join(" "),
       {
         guild_id: l,
         channel_id: s,
         message_id: c
       } = t.messageReference;
-    if (null != l) return (0, r.jsx)(o.ZP, {
+    if (null != l) return (0, r.jsx)(a.ZP, {
       setPopoutRef: e.setPopoutRef,
       guildId: l,
       channelId: s,
       messageId: c,
-      name: a
+      name: o
     })
   }
   if (null != t.interaction && "SENDING" === t.state) return (0, r.jsx)(r.Fragment, {});
   let f = u.Z.getChannel(t.channel_id);
-  return a()(null != f, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, (p = function(e) {
+  return o()(null != f, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, (p = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

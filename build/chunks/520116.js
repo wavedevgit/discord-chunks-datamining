@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041);
 var r = n(200651),
   i = n(192379),
-  a = n(913527),
-  o = n.n(a),
+  o = n(913527),
+  a = n.n(o),
   l = n(91192),
   s = n(442837),
   c = n(481060),
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(314897),
   b = n(496675),
   v = n(594174),
-  y = n(55935),
-  x = n(655354),
+  x = n(55935),
+  y = n(655354),
   E = n(809780),
   O = n(981631),
   N = n(388032),
@@ -31,9 +31,9 @@ let C = {
 };
 
 function I(e) {
-  var t, n, a;
+  var t, n, o;
   let {
-    channel: o,
+    channel: a,
     message: s,
     compact: u,
     isGroupStart: d,
@@ -42,9 +42,9 @@ function I(e) {
   } = e, f = (0, l.JA)(null !== (t = s.id) && void 0 !== t ? t : ""), g = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
-      null === (t = document.querySelector('[data-recents-channel="'.concat(o.id, '"]'))) || void 0 === t || t.focus()
+      null === (t = document.querySelector('[data-recents-channel="'.concat(a.id, '"]'))) || void 0 === t || t.focus()
     }
-  }, [o.id]);
+  }, [a.id]);
   return (0, r.jsx)(c.tEY, {
     offset: C,
     children: (0, r.jsxs)("div", (n = function(e) {
@@ -67,14 +67,14 @@ function I(e) {
     }({
       className: j.messageContainer,
       onKeyDown: g
-    }, f), a = a = {
-      children: [(0, r.jsx)(x.Z, {
+    }, f), o = o = {
+      children: [(0, r.jsx)(y.Z, {
         className: j.jumpButton,
         onJump: e => m(e, s.id)
       }), (0, r.jsx)(h.Z, {
         id: s.id,
         message: s,
-        channel: o,
+        channel: a,
         className: j.message,
         compact: u,
         animateAvatar: !1,
@@ -82,15 +82,15 @@ function I(e) {
         onKeyDown: g,
         treatSpam: p
       })]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(a)).forEach(function(e) {
-      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+    })(Object(o)).forEach(function(e) {
+      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
     }), n), s.id)
   })
 }
@@ -99,7 +99,7 @@ function S(e) {
   var t, n;
   let {
     channel: i,
-    channelRecord: a,
+    channelRecord: o,
     gotoChannel: l
   } = e, {
     enabled: h
@@ -107,7 +107,7 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && void 0 !== n && n, w = [];
+  }), y = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, o)), S = (0, m.P1)(o), T = !1, P = 0 === i.messages.length || a()(i.messages[0].timestamp).isSame(a()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && void 0 !== n && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -115,17 +115,17 @@ function S(e) {
     n.forEach(n => {
       if (!(0, d.Z)(n, C)) {
         if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
-          let t = (0, y.vc)(n.timestamp, "LL");
+          let t = (0, x.vc)(n.timestamp, "LL");
           w.push((0, r.jsx)(f.Z, {
             className: j.divider,
             children: t
-          }, t)), e = o()(n.timestamp)
+          }, t)), e = a()(n.timestamp)
         }
-        let i = null == t || (0, p.Z)(a, t, n);
+        let i = null == t || (0, p.Z)(o, t, n);
         t = n, T = T || (0, m.DQ)(n), w.push((0, r.jsx)(I, {
-          channel: a,
+          channel: o,
           message: n,
-          compact: x,
+          compact: y,
           isGroupStart: i,
           treatSpam: !A && h && (0, m.DQ)(n) && S,
           gotoChannel: l

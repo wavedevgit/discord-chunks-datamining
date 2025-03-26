@@ -5,12 +5,12 @@ n.d(t, {
 }), n(47120);
 var r = n(442837),
   i = n(372460),
-  a = n(91896),
-  o = n(699516);
+  o = n(91896),
+  a = n(699516);
 
 function l(e, t) {
-  let [n, r] = t, i = n.getPendingCount(), a = r.getPendingIncomingCount();
-  return e ? i + a : i
+  let [n, r] = t, i = n.getPendingCount(), o = r.getPendingIncomingCount();
+  return e ? i + o : i
 }
 
 function s(e) {
@@ -23,5 +23,5 @@ function c() {
   let e = (0, i.wn)({
     location: "useIncomingFriendRequestCount"
   });
-  return (0, r.e7)([o.Z, a.Z], () => l(e, [o.Z, a.Z]))
+  return (0, r.e7)([a.Z, o.Z], () => l(e, [a.Z, o.Z]))
 }

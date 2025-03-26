@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => h
 });
-var r, i, a, o = n(442837),
+var r, i, o, a = n(442837),
   l = n(570140),
   s = n(70956),
   c = n(709054),
@@ -10,7 +10,7 @@ var r, i, a, o = n(442837),
   d = n(699516);
 let p = 180 * s.Z.Millis.DAY,
   m = !1;
-class f extends(a = o.ZP.Store) {
+class f extends(o = a.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.default)
   }

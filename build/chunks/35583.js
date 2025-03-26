@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   l = n(668781),
   s = n(431583),
   c = n(91372),
@@ -31,7 +31,7 @@ class g extends i.PureComponent {
     } : null
   }
   handleDownloadApps() {
-    (0, o.h7j)(e => (0, r.jsx)(s.default, function(e) {
+    (0, a.h7j)(e => (0, r.jsx)(s.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +54,7 @@ class g extends i.PureComponent {
           tooltip: m.NW.string(m.t["zp9d//"]),
           foreground: f.downloadArrow,
           background: f.cloud,
-          icon: o._8t,
+          icon: a._8t,
           className: this.props.className
         });
       case "UPDATE_MANUALLY":
@@ -63,7 +63,7 @@ class g extends i.PureComponent {
           tooltip: m.NW.string(m.t.u18OXF),
           foreground: f.updateIconForeground,
           onClick: this.handleInstallDownload,
-          icon: o._8t,
+          icon: a._8t,
           className: this.props.className
         });
       default:
@@ -89,6 +89,6 @@ class g extends i.PureComponent {
     })
   }
 }
-let _ = a.ZP.connectStores([c.Z], () => ({
+let _ = o.ZP.connectStores([c.Z], () => ({
   mode: c.Z.getState()
 }))(g)

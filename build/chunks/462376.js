@@ -1,12 +1,12 @@
 /** Chunk was on 7654 **/
 n.d(t, {
-  d: () => f,
+  d: () => S,
   k: () => j
 }), n(47120);
 var l = n(200651),
   i = n(192379),
-  s = n(780384),
-  r = n(481060),
+  r = n(780384),
+  s = n(481060),
   a = n(630810),
   o = n(43267),
   d = n(933557),
@@ -14,14 +14,14 @@ var l = n(200651),
   c = n(430824),
   h = n(751771),
   g = n(699516),
-  v = n(594174),
-  x = n(768581),
-  m = n(624138),
+  m = n(594174),
+  v = n(768581),
+  x = n(624138),
   p = n(51144),
   N = n(388032),
   I = n(724897);
 
-function S(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let j = 44;
-class f extends i.Component {
+class S extends i.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }
@@ -38,26 +38,26 @@ class f extends i.Component {
     let e, t, n;
     let {
       user: i,
-      channel: s
+      channel: r
     } = this.props;
-    if (null != i) t = i.getAvatarURL(null == s ? void 0 : s.guild_id, 32), n = p.ZP.getName(i);
-    else if (null != s && (t = (0, o.x)(s), n = (0, d.F6)(s, v.default, g.Z), null == t && null != s.guild_id)) {
-      let n = c.Z.getGuild(s.guild_id);
-      null != n && (null != n.icon ? t = x.ZP.getGuildIconURL({
-        id: s.guild_id,
+    if (null != i) t = i.getAvatarURL(null == r ? void 0 : r.guild_id, 32), n = p.ZP.getName(i);
+    else if (null != r && (t = (0, o.x)(r), n = (0, d.F6)(r, m.default, g.Z), null == t && null != r.guild_id)) {
+      let n = c.Z.getGuild(r.guild_id);
+      null != n && (null != n.icon ? t = v.ZP.getGuildIconURL({
+        id: r.guild_id,
         icon: n.icon,
         size: 32
-      }) : e = (0, m.Zg)(n.name))
+      }) : e = (0, x.Zg)(n.name))
     }
-    return null == t || null == n ? null != e ? (0, l.jsx)(r.Text, {
+    return null == t || null == n ? null != e ? (0, l.jsx)(s.Text, {
       variant: "text-md/medium",
       className: I.acronym,
       "aria-hidden": !0,
       children: e
-    }) : null : (0, l.jsx)(r.qEK, {
+    }) : null : (0, l.jsx)(s.qEK, {
       src: t,
       "aria-label": n,
-      size: r.EFr.SIZE_32,
+      size: s.EFr.SIZE_32,
       className: I.inviteRowAvatar
     })
   }
@@ -71,17 +71,17 @@ class f extends i.Component {
       invited: a,
       hovered: o
     } = this.state;
-    return e = a ? (0, l.jsx)(r.zxk, {
-      look: r.zxk.Looks.LINK,
-      size: r.zxk.Sizes.SMALL,
+    return e = a ? (0, l.jsx)(s.zxk, {
+      look: s.zxk.Looks.LINK,
+      size: s.zxk.Sizes.SMALL,
       disabled: !0,
-      color: (0, s.wj)(u.Z.theme) ? r.zxk.Colors.WHITE : r.zxk.Colors.BRAND,
+      color: (0, r.wj)(u.Z.theme) ? s.zxk.Colors.WHITE : s.zxk.Colors.BRAND,
       children: N.NW.string(N.t["dVT14+"])
-    }) : (0, l.jsx)(r.zxk, {
-      color: r.zxk.Colors.GREEN,
-      look: o ? r.zxk.Looks.FILLED : r.zxk.Looks.OUTLINED,
+    }) : (0, l.jsx)(s.zxk, {
+      color: s.zxk.Colors.GREEN,
+      look: o ? s.zxk.Looks.FILLED : s.zxk.Looks.OUTLINED,
       className: I.inviteRowButton,
-      size: r.zxk.Sizes.SMALL,
+      size: s.zxk.Sizes.SMALL,
       submitting: i,
       onClick: this.handleClickInvite,
       children: N.NW.string(N.t.jYnGPD)
@@ -93,31 +93,31 @@ class f extends i.Component {
         className: I.inviteRowInfo,
         children: [this.renderUserOrChannel(), (0, l.jsxs)("div", {
           className: I.inviteRowName,
-          children: [p.ZP.getName(t), null != n ? (0, d.F6)(n, v.default, g.Z, !0) : null]
+          children: [p.ZP.getName(t), null != n ? (0, d.F6)(n, m.default, g.Z, !0) : null]
         })]
       }), e]
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), f(this, "state", {
       sending: !1,
       invited: !1,
       hovered: !1
-    }), S(this, "handleMouseEnter", () => {
+    }), f(this, "handleMouseEnter", () => {
       this.setState({
         hovered: !0
       })
-    }), S(this, "handleMouseLeave", () => {
+    }), f(this, "handleMouseLeave", () => {
       this.setState({
         hovered: !1
       })
-    }), S(this, "getSuggestedProps", () => {
+    }), f(this, "getSuggestedProps", () => {
       var e;
       let {
         row: t
       } = this.props;
       return null !== (e = null != t ? h.Z.getSelectedInviteMetadata(t) : null) && void 0 !== e ? e : null
-    }), S(this, "handleClickInvite", () => {
+    }), f(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(977457), n(47120);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   l = n(442837),
   s = n(481060),
   c = n(911969),
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(594174),
   b = n(739566),
   v = n(981631),
-  y = n(665692),
-  x = n(388032),
+  x = n(665692),
+  y = n(388032),
   E = n(956355);
 
 function O(e) {
@@ -60,7 +60,7 @@ let j = {
     color: "header-secondary"
   },
   C = {
-    className: o()("mention", E.mention)
+    className: a()("mention", E.mention)
   };
 
 function I(e) {
@@ -70,7 +70,7 @@ function I(e) {
   }))
 }
 let S = i.memo(function(e) {
-  var t, n, a, o, S, T;
+  var t, n, o, a, S, T;
   let P, {
       channel: A,
       messageId: w,
@@ -92,9 +92,9 @@ let S = i.memo(function(e) {
   });
   else {
     let e = [],
-      t = Object.fromEntries((null !== (o = null === (n = Z.application_command) || void 0 === n ? void 0 : n.options) && void 0 !== o ? o : []).map(e => [e.name, e]));
+      t = Object.fromEntries((null !== (a = null === (n = Z.application_command) || void 0 === n ? void 0 : n.options) && void 0 !== a ? a : []).map(e => [e.name, e]));
     for (let n of null !== (S = Z.options) && void 0 !== S ? S : []) e = e.concat(function e(t) {
-      var n, a, o, l, u, d, p;
+      var n, o, a, l, u, d, p;
       let E, {
           option: S,
           channel: T,
@@ -108,10 +108,10 @@ let S = i.memo(function(e) {
       if (S.type === c.jw.SUB_COMMAND || S.type === c.jw.SUB_COMMAND_GROUP) {
         let t = [(0, r.jsxs)(i.Fragment, {
             children: [" ", (0, r.jsx)(s.Text, N(O({}, j), {
-              children: null !== (a = null == Z ? void 0 : Z.name_localized) && void 0 !== a ? a : S.name
+              children: null !== (o = null == Z ? void 0 : Z.name_localized) && void 0 !== o ? o : S.name
             }))]
           }, R)],
-          c = Object.fromEntries(null === (n = null !== (o = null == Z ? void 0 : Z.options) && void 0 !== o ? o : []) || void 0 === n ? void 0 : n.map(e => [e.name, e]));
+          c = Object.fromEntries(null === (n = null !== (a = null == Z ? void 0 : Z.options) && void 0 !== a ? a : []) || void 0 === n ? void 0 : n.map(e => [e.name, e]));
         for (let n of null !== (l = S.options) && void 0 !== l ? l : []) t = t.concat(e({
           option: n,
           channel: T,
@@ -141,7 +141,7 @@ let S = i.memo(function(e) {
                   section: v.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                 }
               }),
-              children: [y.ME, e.nick]
+              children: [x.ME, e.nick]
             }))
           }
           break
@@ -150,7 +150,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = h.Z.getChannel(e);
           null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
-            children: [y.zy, t.name]
+            children: [x.zy, t.name]
           })));
           break
         }
@@ -158,7 +158,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
           null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
-            children: [y.ME, t.name]
+            children: [x.ME, t.name]
           })));
           break
         }
@@ -166,7 +166,7 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
           if (null != t) E = (0, r.jsxs)(m.Z, {
-            children: [y.ME, t.name]
+            children: [x.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
@@ -180,14 +180,14 @@ let S = i.memo(function(e) {
                     section: v.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                   }
                 }),
-                children: [y.ME, e.nick]
+                children: [x.ME, e.nick]
               }))
             }
           }
           break
         }
         case c.jw.ATTACHMENT:
-          E = I(x.NW.string(x.t.nONJVV));
+          E = I(y.NW.string(y.t.nONJVV));
           break;
         default: {
           let e = null == Z ? void 0 : null === (u = Z.choices) || void 0 === u ? void 0 : u.find(e => e.value === S.value);
@@ -210,7 +210,7 @@ let S = i.memo(function(e) {
     }));
     P = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.Text, N(O({}, j), {
-        children: ["/", null !== (T = null === (a = Z.application_command) || void 0 === a ? void 0 : a.name_localized) && void 0 !== T ? T : Z.name]
+        children: ["/", null !== (T = null === (o = Z.application_command) || void 0 === o ? void 0 : o.name_localized) && void 0 !== T ? T : Z.name]
       })), e]
     })
   }

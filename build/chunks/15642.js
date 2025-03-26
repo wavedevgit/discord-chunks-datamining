@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(674701),
-  o = n(934415),
+  o = n(674701),
+  a = n(934415),
   l = n(834129),
   s = n(981631),
   c = n(848053);
@@ -24,11 +24,11 @@ function u(e) {
     iconNode: (0, r.jsx)(i.Dkj, {
       colorClass: c.icon
     }),
-    children: (0, r.jsx)(a.Z, {
+    children: (0, r.jsx)(o.Z, {
       giftIntentType: t,
-      premiumGiftIntentCardType: a.U.SYSTEM_MESSAGE,
+      premiumGiftIntentCardType: o.U.SYSTEM_MESSAGE,
       recipientUser: n,
-      analyticsPage: (0, o.mE)(d),
+      analyticsPage: (0, a.mE)(d),
       analyticsSection: s.jXE.CHANNEL,
       giftIntentSecondaryAction: u
     })

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  a = n(481060),
-  o = n(298213),
+  o = n(481060),
+  a = n(298213),
   l = n(388032),
   s = n(998200);
 
@@ -16,7 +16,7 @@ function c(e) {
   } = e, [c, u] = i.useState(!1), [d, p] = i.useState(!1), m = i.useCallback(async e => {
     e.stopPropagation(), p(!0);
     try {
-      await o.Z.cancelFriendRequest({
+      await a.Z.cancelFriendRequest({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -27,7 +27,7 @@ function c(e) {
   }, [n, t]), f = i.useCallback(async e => {
     e.stopPropagation(), u(!0);
     try {
-      await o.Z.maybeConfirmFriendRequestAccept({
+      await a.Z.maybeConfirmFriendRequestAccept({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -38,28 +38,28 @@ function c(e) {
   }, [n, t]);
   return (0, r.jsxs)("div", {
     className: s.friendRequestContainer,
-    children: [(0, r.jsx)(a.zxk, {
+    children: [(0, r.jsx)(o.zxk, {
       className: s.acceptButton,
-      look: a.zxk.Looks.FILLED,
-      color: a.zxk.Colors.GREEN,
-      size: a.zxk.Sizes.NONE,
+      look: o.zxk.Looks.FILLED,
+      color: o.zxk.Colors.GREEN,
+      size: o.zxk.Sizes.NONE,
       submitting: c,
       disabled: d,
       onClick: f,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "always-white",
         children: l.NW.string(l.t.ZcibdX)
       })
-    }), (0, r.jsx)(a.zxk, {
+    }), (0, r.jsx)(o.zxk, {
       className: s.ignoreButton,
-      look: a.zxk.Looks.FILLED,
-      color: a.zxk.Colors.PRIMARY,
-      size: a.zxk.Sizes.NONE,
+      look: o.zxk.Looks.FILLED,
+      color: o.zxk.Colors.PRIMARY,
+      size: o.zxk.Sizes.NONE,
       submitting: d,
       disabled: c,
       onClick: m,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "always-white",
         children: l.NW.string(l.t.xuio0N)
