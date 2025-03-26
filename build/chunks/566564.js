@@ -21,8 +21,8 @@ var r = n(200651),
   C = n(953655),
   _ = n(548685),
   v = n(580914),
-  k = n(963278),
-  x = n(384067),
+  x = n(963278),
+  k = n(384067),
   j = n(215023),
   S = n(388032),
   y = n(39532);
@@ -99,14 +99,14 @@ let O = e => {
           }, l);
           break;
         case s.z.WIDE_BANNER:
-          d = (0, r.jsx)(x.Z, {
+          d = (0, r.jsx)(k.Z, {
             handleTransition: t,
             wideBannerBlock: e,
             tab: i
           }, l);
           break;
         case s.z.SHELF:
-          d = (0, r.jsx)(k.Z, {
+          d = (0, r.jsx)(x.Z, {
             handleTransition: t,
             shelf: e,
             tab: i
@@ -138,16 +138,16 @@ let O = e => {
       isFetchingCategories: C,
       fetchCategoriesError: _,
       fetchPurchasesError: v,
-      claimError: k,
-      refreshCategories: x
+      claimError: x,
+      refreshCategories: k
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), E = null !== (t = null != _ ? _ : v) && void 0 !== t ? t : k, I = (0, i.e7)([c.default], () => c.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), T = (0, h.R)("CollectiblesFeedShop"), {
+    }), E = null !== (t = null != _ ? _ : v) && void 0 !== t ? t : x, I = (0, i.e7)([c.default], () => c.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), T = (0, h.R)("CollectiblesFeedShop"), {
       noCache: L,
       includeUnpublished: N
     } = (0, b.Z)(), w = l.useCallback(() => {
-      x()
-    }, [x]);
+      k()
+    }, [k]);
     if (null == I) return null;
     if (null != E) {
       let e = [];

@@ -26,8 +26,8 @@ let _ = e => {
     handleTransition: a,
     numVisibleItems: _,
     tab: v
-  } = e, k = (0, s.e7)([d.default], () => d.default.getCurrentUser()), x = l.createRef(), j = (0, m.u)(), S = l.useMemo(() => j(n), [t, j, n]), y = (0, g.l)(S);
-  return null == k ? null : (0, r.jsxs)("div", {
+  } = e, x = (0, s.e7)([d.default], () => d.default.getCurrentUser()), k = l.createRef(), j = (0, m.u)(), S = l.useMemo(() => j(n), [t, j, n]), y = (0, g.l)(S);
+  return null == x ? null : (0, r.jsxs)("div", {
     className: o()(C.popularPicksSection, C.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: C.blockHeader,
@@ -42,7 +42,7 @@ let _ = e => {
       })]
     }), (0, r.jsx)("div", {
       className: C.feed,
-      ref: x,
+      ref: k,
       children: t ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(h.K, {}, t + 1))
       }) : (0, r.jsx)(r.Fragment, {
@@ -57,7 +57,7 @@ let _ = e => {
             children: (0, r.jsx)(f.Z, {
               product: e,
               category: n,
-              user: k,
+              user: x,
               tab: v,
               isInFeedView: !0
             }, e.skuId)

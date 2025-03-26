@@ -21,9 +21,9 @@ var r = n(200651),
   C = n(335131),
   _ = n(215023),
   v = n(388032),
-  k = n(417756);
+  x = n(417756);
 
-function x(e) {
+function k(e) {
   let {
     tab: t,
     displayText: n,
@@ -32,9 +32,9 @@ function x(e) {
   } = e;
   return (0, r.jsx)(g.Z.Title, {
     onClick: () => a(t),
-    wrapperClassName: k.tabWrapper,
-    className: o()(k.tab, {
-      [k.selected]: l
+    wrapperClassName: x.tabWrapper,
+    className: o()(x.tab, {
+      [x.selected]: l
     }),
     children: n
   })
@@ -69,23 +69,23 @@ function j(e) {
   return (0, r.jsx)(i.f6W, {
     theme: y,
     children: e => (0, r.jsxs)(g.Z, {
-      className: o()(e, k.headerBar, {
-        [k.fullscreenHeaderBar]: t
+      className: o()(e, x.headerBar, {
+        [x.fullscreenHeaderBar]: t
       }),
-      innerClassname: I ? k.headerBarInner : void 0,
+      innerClassname: I ? x.headerBarInner : void 0,
       toolbar: t || !E ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsx)(b.Z, {
-        className: k.discordLogo
+        className: x.discordLogo
       }), (0, r.jsx)(g.Z.Title, {
         children: v.NW.string(v.t.pWG4zc)
       }), (0, r.jsx)("div", {
-        className: k.tabs,
+        className: x.tabs,
         children: B.map(e => {
           let {
             tab: t,
             displayText: n
           } = e;
-          return (0, r.jsx)(x, {
+          return (0, r.jsx)(k, {
             tab: t,
             displayText: n,
             selected: j === t,
@@ -93,12 +93,12 @@ function j(e) {
           }, t)
         })
       }), (I || t) && (0, r.jsxs)("div", {
-        className: k.alignedRightContent,
+        className: x.alignedRightContent,
         children: [I && (0, r.jsx)(m.V9, {
           cardAlignment: m.V9.CardAlignment.END,
           ctaText: v.NW.string(v.t.VC4Mq6),
           ctaOnClick: L,
-          className: k.balanceWidgetMenu
+          className: x.balanceWidgetMenu
         }), t && (0, r.jsx)(c.Z, {
           closeAction: T,
           keybind: "ESC"

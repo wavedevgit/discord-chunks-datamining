@@ -54,7 +54,7 @@ function E(e) {
   }))) : C = x.NW.string(x.t["6JSOu7"]), A && w && F && k && (W ? M && (I = (0, r.jsx)(a.zxk, {
     className: y.action,
     onClick: () => {
-      h.X(T, {
+      h.X(T, U, {
         shouldClear: !1
       })
     },
@@ -63,7 +63,7 @@ function E(e) {
   })) : I = (0, r.jsx)(a.zxk, {
     className: y.action,
     onClick: () => {
-      h.X(T, {
+      h.X(T, U, {
         shouldClear: !0
       })
     },

@@ -22,9 +22,9 @@ let p = e => {
     wideBannerBlock: p,
     handleTransition: b,
     tab: C
-  } = e, _ = null === (t = c.Z.getCategoryByStoreListingId(p.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, v = l.useRef(null), k = l.useRef(null), [x, j] = l.useState();
+  } = e, _ = null === (t = c.Z.getCategoryByStoreListingId(p.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, v = l.useRef(null), x = l.useRef(null), [k, j] = l.useState();
   l.useEffect(() => {
-    let e = k.current;
+    let e = x.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && j(1080 * (e.naturalHeight / e.naturalWidth))
@@ -48,12 +48,12 @@ let p = e => {
       children: [(0, r.jsx)("div", {
         className: m.wideBannerBackgroundImg,
         children: (0, r.jsx)("img", {
-          ref: k,
+          ref: x,
           src: O,
           alt: p.title,
           style: {
             width: "100%",
-            height: null != x ? "".concat(x, "px") : "auto",
+            height: null != k ? "".concat(k, "px") : "auto",
             objectFit: "cover",
             objectPosition: "left center",
             display: "block"
@@ -62,7 +62,7 @@ let p = e => {
       }), (0, r.jsx)("div", {
         className: m.wideBannerContentContainer,
         style: {
-          maxHeight: null != x ? "".concat(x, "px") : "auto"
+          maxHeight: null != k ? "".concat(k, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: m.wideBannerTextContainer,

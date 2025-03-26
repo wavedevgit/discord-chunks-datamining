@@ -94,7 +94,7 @@ function F(e) {
       activeVoice: J
     } = (0, I.o)(),
     Q = (0, c.q_F)({
-      transform: Y ? "translateY(-$8px) scale(".concat(.96, ")") : "translateY(0px) scale(1)",
+      transform: Y ? "translateY(-8px) scale(".concat(.96, ")") : "translateY(0px) scale(1)",
       config: {
         duration: 150,
         mass: 1,

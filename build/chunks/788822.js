@@ -28,14 +28,14 @@ let g = e => {
     {
       featuredBlockBanner: v
     } = (0, d.YG)(f, m),
-    k = l.useRef(null);
+    x = l.useRef(null);
   return (0, r.jsx)(a.$, {
-    innerRef: k,
+    innerRef: x,
     onChange: _,
     threshold: 0,
     children: (0, r.jsxs)(o.P3F, {
       className: u.featuredBlock,
-      innerRef: k,
+      innerRef: x,
       style: {
         backgroundImage: "url(".concat(v, ")")
       },

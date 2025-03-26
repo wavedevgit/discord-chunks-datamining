@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Kp: () => x,
+  Kp: () => k,
   u9: () => v,
   xV: () => j
 }), n(474991), n(398202), n(301563), n(757143), n(653041), n(47120);
@@ -30,7 +30,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  k = e => {
+  x = e => {
     let {
       productSkuId: t,
       analyticsLocations: n,
@@ -75,7 +75,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
     }
     return () => {}
   },
-  x = e => {
+  k = e => {
     let {
       isFetchingCategories: t,
       isLayer: n,
@@ -91,14 +91,14 @@ let b = "".concat("#").concat("itemSkuId", "="),
         f.current = t
       }
     });
-    let x = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
+    let k = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
     r.useEffect(() => {
       if (t) return;
       let e = null;
-      if (n && null != x && (e = x), n || null == f.current || (e = f.current), null != e) {
+      if (n && null != k && (e = k), n || null == f.current || (e = f.current), null != e) {
         let t = [],
           n = setTimeout(() => {
-            let n = k({
+            let n = x({
               productSkuId: e,
               analyticsLocations: _,
               analyticsSource: b,
@@ -112,7 +112,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
           t.forEach(e => e())
         }
       }
-    }, [n, _, b, t, x, c, g, v])
+    }, [n, _, b, t, k, c, g, v])
   },
   j = e => {
     let t = r.useRef({}),

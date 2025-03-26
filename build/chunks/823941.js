@@ -123,6 +123,9 @@ function D(e) {
       className: a()(A.summary, {
         [A.blackSummary]: S
       }),
+      style: null != t.bannerTextColor ? {
+        color: t.bannerTextColor
+      } : void 0,
       variant: "text-md/normal",
       children: t.skuId === s.T.DISXCORE ? (0, r.jsx)(P, {
         category: t

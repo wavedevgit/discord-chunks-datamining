@@ -927,7 +927,7 @@ function e3(e) {
           }(e, ["onClick"]), {
             isShown: s
           } = t;
-          let a = s ? f.u04 : f.CJ0;
+          let l = s ? f.u04 : f.CJ0;
           return (0, r.jsx)("div", {
             children: (0, r.jsx)(eN.B, {
               onCTA: () => H(!0),
@@ -948,7 +948,7 @@ function e3(e) {
                     children: eF.NW.string(eF.t.VlC1dX)
                   })]
                 }) : eF.NW.string(eF.t.Hapb4O),
-                icon: (0, r.jsx)(a, {
+                icon: (0, r.jsx)(l, {
                   className: eH.buttonChevronIcon,
                   size: "custom",
                   width: 12,
@@ -956,7 +956,9 @@ function e3(e) {
                   color: B && C ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
                 }),
                 role: "button",
-                className: eH.buttonChevron,
+                className: a()([eH.buttonChevron], {
+                  [eH.redGlow]: C && B
+                }),
                 redGlow: C && B,
                 "aria-label": eF.NW.string(eF.t.Hapb4O),
                 disabled: c,

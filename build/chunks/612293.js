@@ -141,50 +141,58 @@ function j(e) {
   } = e, c = (0, l.e7)([f.default], () => f.default.getCurrentUser());
   return null == c ? null : (0, r.jsxs)(o.u2D, {
     className: N.inventory,
-    children: [(0, r.jsx)(o.Text, {
-      className: N.inventoryTitle,
-      color: "text-secondary",
-      variant: "text-xs/semibold",
-      children: x.NW.string(x.t["6wbgS0"]).toLocaleUpperCase()
-    }), (0, r.jsxs)("div", {
-      className: N.inventoryControls,
-      children: [(0, r.jsxs)(o.P3F, {
-        className: N.inventoryControlsButton,
-        onClick: () => n(null == c.nameplate ? void 0 : null),
-        children: [(0, r.jsx)(o.t6m, {}), (0, r.jsx)(o.Text, {
-          variant: "text-xs/semibold",
-          children: x.NW.string(x.t["3i+W8/"])
+    children: [(0, r.jsxs)("div", {
+      children: [(0, r.jsx)(o.Text, {
+        className: N.inventoryTitle,
+        color: "text-secondary",
+        variant: "text-xs/semibold",
+        children: x.NW.string(x.t.JEimX1).toLocaleUpperCase()
+      }), (0, r.jsxs)("div", {
+        className: N.inventoryControls,
+        children: [(0, r.jsxs)(o.P3F, {
+          className: N.inventoryControlsButton,
+          onClick: () => n(null == c.nameplate ? void 0 : null),
+          children: [(0, r.jsx)(o.t6m, {}), (0, r.jsx)(o.Text, {
+            variant: "text-xs/semibold",
+            children: x.NW.string(x.t["3i+W8/"])
+          })]
+        }), (0, r.jsxs)(o.P3F, {
+          className: N.inventoryControlsButton,
+          onClick: a,
+          children: [(0, r.jsx)(o.EOn, {}), (0, r.jsx)(o.Text, {
+            variant: "text-xs/semibold",
+            children: x.NW.string(x.t.cFfWg4)
+          })]
         })]
-      }), (0, r.jsxs)(o.P3F, {
-        className: N.inventoryControlsButton,
-        onClick: a,
-        children: [(0, r.jsx)(o.EOn, {}), (0, r.jsx)(o.Text, {
-          variant: "text-xs/semibold",
-          children: x.NW.string(x.t.cFfWg4)
-        })]
+      }), 0 !== s.length ? (0, r.jsx)("div", {
+        className: N.list,
+        children: s.map(e => (0, r.jsx)(C, {
+          nameplate: e,
+          isPurchased: !0,
+          isSelected: (null == t ? void 0 : t.id) === e.id,
+          onClick: () => n(e, !0)
+        }, e.id))
+      }) : null]
+    }), 0 !== i.length ? (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(o.Text, {
+        className: N.inventoryDescriptionTitle,
+        color: "text-secondary",
+        variant: "text-xs/semibold",
+        children: x.NW.string(x.t.SNAtBg).toLocaleUpperCase()
+      }), (0, r.jsx)(o.Text, {
+        className: N.inventoryDescription,
+        variant: "text-sm/normal",
+        color: "text-secondary",
+        children: x.NW.string(x.t["3gaDLS"])
+      }), (0, r.jsx)("div", {
+        className: N.list,
+        children: i.map(e => (0, r.jsx)(C, {
+          nameplate: e,
+          isSelected: (null == t ? void 0 : t.id) === e.id,
+          onClick: () => n(e, !1)
+        }, e.id))
       })]
-    }), (0, r.jsx)(o.Text, {
-      className: N.inventoryDescriptionTitle,
-      color: "text-secondary",
-      variant: "text-xs/semibold",
-      children: x.NW.string(x.t.SNAtBg)
-    }), (0, r.jsx)(o.Text, {
-      className: N.inventoryDescription,
-      variant: "text-sm/normal",
-      children: x.NW.string(x.t["3gaDLS"])
-    }), (0, r.jsxs)("div", {
-      className: N.list,
-      children: [s.map(e => (0, r.jsx)(C, {
-        nameplate: e,
-        isPurchased: !0,
-        isSelected: (null == t ? void 0 : t.id) === e.id,
-        onClick: () => n(e, !0)
-      }, e.id)), i.map(e => (0, r.jsx)(C, {
-        nameplate: e,
-        isSelected: (null == t ? void 0 : t.id) === e.id,
-        onClick: () => n(e, !1)
-      }, e.id))]
-    })]
+    }) : null]
   })
 }
 
@@ -221,31 +229,14 @@ function O(e) {
     selectedNameplate: t,
     purchased: n
   } = e, i = (0, l.e7)([f.default], () => f.default.getCurrentUser()), s = (0, l.e7)([m.Z], () => m.Z.getProduct(null == t ? void 0 : t.skuId));
-  return null == i ? null : (0, r.jsx)("div", {
-    className: N.preview,
-    children: n || null == t ? (0, r.jsx)(v, {
-      selectedNameplate: t,
-      currentUser: i,
-      product: s
-    }) : (0, r.jsx)(S, {
-      selectedNameplate: t,
-      currentUser: i,
-      product: s
-    })
-  })
-}
-
-function v(e) {
-  let {
-    selectedNameplate: t,
-    currentUser: n,
-    product: i
-  } = e;
-  return (0, r.jsxs)(r.Fragment, {
+  return null == i ? null : (0, r.jsxs)("div", {
+    className: a()(N.previewBorder, {
+      [N.upsell]: !n
+    }),
     children: [(0, r.jsx)("div", {
       className: N.previewBox,
       children: (0, r.jsxs)("div", {
-        className: N.upsellPreviewContents,
+        className: N.previewContents,
         children: [(0, r.jsx)(p.d, {
           width: 124,
           opacity: .9
@@ -253,47 +244,7 @@ function v(e) {
           width: 124,
           opacity: .9
         }), (0, r.jsx)(h.Z, {
-          user: n,
-          nameplate: t,
-          isHighlighted: !0
-        }), (0, r.jsx)(p.d, {
-          width: 124,
-          opacity: .9
-        }), (0, r.jsx)(p.d, {
-          width: 124,
-          opacity: .9
-        })]
-      })
-    }), null != i && (0, r.jsx)("div", {
-      className: N.label,
-      children: (0, r.jsx)(o.Text, {
-        variant: "text-sm/semibold",
-        children: null == i ? void 0 : i.name
-      })
-    })]
-  })
-}
-
-function S(e) {
-  let {
-    selectedNameplate: t,
-    currentUser: n,
-    product: i
-  } = e;
-  return (0, r.jsxs)("div", {
-    className: N.upsellPreview,
-    children: [(0, r.jsx)("div", {
-      className: N.upsellPreviewBox,
-      children: (0, r.jsxs)("div", {
-        className: N.upsellPreviewContents,
-        children: [(0, r.jsx)(p.d, {
-          width: 124,
-          opacity: .9
-        }), (0, r.jsx)(p.d, {
-          width: 124,
-          opacity: .9
-        }), (0, r.jsx)(h.Z, {
-          user: n,
+          user: i,
           nameplate: t,
           isHighlighted: !0
         }), (0, r.jsx)(p.d, {
@@ -305,11 +256,11 @@ function S(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: N.upsellPreviewDescription,
+      className: N.previewDescription,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        children: null == i ? void 0 : i.name
-      }), (0, r.jsx)(o.Text, {
+        children: null == s ? void 0 : s.name
+      }), n ? null : (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: x.NW.string(x.t.my5jxM)
       })]

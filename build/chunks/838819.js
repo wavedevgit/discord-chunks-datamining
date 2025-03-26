@@ -21,8 +21,8 @@ var r = n(200651),
   C = n(605236),
   _ = n(977395),
   v = n(214852),
-  k = n(479446),
-  x = n(981632),
+  x = n(479446),
+  k = n(981632),
   j = n(290026),
   S = n(511050),
   y = n(819640),
@@ -167,8 +167,8 @@ function ea(e) {
       style: {
         left: "".concat(u.current, "%")
       },
-      children: (0, r.jsx)(x.Z, {
-        idleAnimationState: k.SR.IDLE,
+      children: (0, r.jsx)(k.Z, {
+        idleAnimationState: x.SR.IDLE,
         giftStyle: et.Cj.BOX
       })
     }), (0, r.jsx)(F.Z, {
@@ -196,10 +196,10 @@ let eo = function(e) {
   (0, v.z)(_.f);
   let {
     analyticsSource: f,
-    analyticsLocations: k
-  } = (0, d.cj)([N.Z], () => N.Z.getAnalytics()), {
     analyticsLocations: x
-  } = (0, p.ZP)([...k, m.Z.COLLECTIBLES_SHOP]), {
+  } = (0, d.cj)([N.Z], () => N.Z.getAnalytics()), {
+    analyticsLocations: k
+  } = (0, p.ZP)([...x, m.Z.COLLECTIBLES_SHOP]), {
     sessionId: A,
     scrollerRef: W,
     scrollHandler: F
@@ -224,21 +224,21 @@ let eo = function(e) {
     e_ = I.ZP.canUseCollectibles(eC),
     {
       categories: ev,
-      isFetchingCategories: ek,
-      fetchCategoriesError: ex,
+      isFetchingCategories: ex,
+      fetchCategoriesError: ek,
       fetchPurchasesError: ej,
       claimError: eS,
       refreshCategories: ey
     } = (0, P.ZP)({
       location: "CollectiblesShop.web"
     }),
-    eO = null !== (t = null != ex ? ex : ej) && void 0 !== t ? t : eS;
+    eO = null !== (t = null != ek ? ek : ej) && void 0 !== t ? t : eS;
   (0, j.P)();
   let eE = (0, Z.O)(ev),
     eI = l.useRef(null),
     [eB, eT] = l.useState(!1);
   (0, H.Kp)({
-    isFetchingCategories: ek,
+    isFetchingCategories: ex,
     isLayer: em,
     initialItemCardRef: eI
   }), l.useEffect(() => {
@@ -246,7 +246,7 @@ let eo = function(e) {
       var e;
       let t;
       t = z === X.AW.CATALOG ? eg : f, E.default.track(Q.rMx.COLLECTIBLES_SHOP_VIEWED, {
-        location_stack: x,
+        location_stack: k,
         source: t,
         page_session_id: A,
         page_type: z === X.AW.HOME ? "home" : "full",
@@ -255,9 +255,9 @@ let eo = function(e) {
     }
     e_ || E.default.track(Q.rMx.PREMIUM_UPSELL_VIEWED, {
       type: et.cd.COLLECTIBLES_SHOP,
-      location_stack: x
+      location_stack: k
     })
-  }, [e_, x, f, A, ec, eu, eg, K, z]);
+  }, [e_, k, f, A, ec, eu, eg, K, z]);
   let {
     dismissShopButtonDC: eL
   } = (0, q.Z)();
@@ -307,7 +307,7 @@ let eo = function(e) {
       return null === (e = L.Z.getCategory(ec)) || void 0 === e ? void 0 : e.name
     });
   return (0, r.jsx)(p.Gt, {
-    value: x,
+    value: k,
     children: (0, r.jsxs)(T.k0, {
       newValue: {
         sessionId: A,
@@ -355,7 +355,7 @@ let eo = function(e) {
                       className: o()(en.page, {
                         [en.pageFullscreen]: n
                       }),
-                      children: ek ? (0, r.jsx)(U.Z, {}) : null != eO ? (0, r.jsx)(M.Z, {
+                      children: ex ? (0, r.jsx)(U.Z, {}) : null != eO ? (0, r.jsx)(M.Z, {
                         onRetry: eN,
                         errorOrigin: M.i.SHOP_PAGE
                       }) : (0, r.jsx)("div", {
