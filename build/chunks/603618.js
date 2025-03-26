@@ -29,8 +29,8 @@ var i = n(200651),
   N = n(703656),
   C = n(93127),
   Z = n(814443),
-  P = n(752048),
-  w = n(409057),
+  w = n(752048),
+  P = n(409057),
   _ = n(199902),
   T = n(592125),
   D = n(293273),
@@ -337,7 +337,7 @@ function ee(e) {
     (0, C.W)(), (0, C._)()
   });
   let d = (0, u.e7)([D.Z], () => null == t ? null : D.Z.getApplicationActivity(t), [t]),
-    p = (0, u.Wu)([R.Z, k.Z, Z.Z, P.Z], () => {
+    p = (0, u.Wu)([R.Z, k.Z, Z.Z, w.Z], () => {
       if (null == t) return [];
       let e = R.Z.nowPlayingCards,
         n = {
@@ -379,7 +379,7 @@ function ee(e) {
             default:
               return t
           }
-        }(P.Z.getUserAffinity(i), r, n)
+        }(w.Z.getUserAffinity(i), r, n)
       })
     }, [t, i, l]);
   return (0, O.ZP)(() => (S.L(), () => S.v())), {
@@ -435,7 +435,7 @@ function en(e) {
     });
   return t ? null : 0 === o.length && null == c ? null : (0, i.jsxs)("div", {
     className: H.container,
-    children: [null != c && null != a ? (0, i.jsx)(w.Z, {
+    children: [null != c && null != a ? (0, i.jsx)(P.Z, {
       className: H.activityCard,
       activity: c,
       user: a,

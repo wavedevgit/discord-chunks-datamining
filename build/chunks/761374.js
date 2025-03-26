@@ -37,8 +37,8 @@ function N(e) {
     locked: N,
     padding: C,
     borderWidth: Z,
-    opacity: P,
-    horizontal: w,
+    opacity: w,
+    horizontal: P,
     pinned: _,
     anchorTop: T,
     anchorLeft: D,
@@ -57,7 +57,7 @@ function N(e) {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
-  }, [t]), G = !w, F = (0, l.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && G || D && w, B = !T && G || !D && w, {
+  }, [t]), G = !P, F = (0, l.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && G || D && P, B = !T && G || !D && P, {
     participantsVersion: Q,
     activeStreams: K,
     streamParticipants: X
@@ -84,7 +84,7 @@ function N(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && N || 0 === J && !N, $ = w ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && N || 0 === J && !N, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, l) {
@@ -227,7 +227,7 @@ function N(e) {
   }) : null : (0, i.jsx)("div", {
     className: x.goLiveGridContainer,
     style: {
-      opacity: P
+      opacity: w
     },
     ref: z,
     children: (0, i.jsx)(y.Z, {

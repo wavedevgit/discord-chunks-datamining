@@ -13,7 +13,7 @@ function o(e) {
     embeddedActivity: n
   } = e;
   t |= l.xjy.CONTEXTLESS;
-  let o = i.ZP.getChannelId();
+  let o = i.Z.getChannelId();
   return null != o && n.location.kind === r.E.CONTEXTLESS && n.location.starting_channel_id === o && (t |= l.xjy.PARTY_PRIVACY_VOICE_CHANNEL), t
 }
 let a = [1, 0]

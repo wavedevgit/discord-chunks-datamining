@@ -201,7 +201,7 @@ class tl extends i.PureComponent {
     s()(null != i, "Missing user in Channel.openDMContextMenu"), (0, b.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("20875"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("75046")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("86024")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         user: i,
         channelSelected: !0,
@@ -793,7 +793,7 @@ let to = (0, j.Z)(tl),
     }, [a]), x = (0, F.Z)(), j = (0, p.e7)([eV.Z], () => {
       var e;
       return (null !== (e = null == x ? void 0 : x.channelId) && void 0 !== e ? e : eV.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
-    }), I = (0, p.e7)([N.ZP], () => null != c ? N.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), A = (0, p.e7)([eH.ZP], () => eH.ZP.isConnected()), w = (0, E.Z)(A), R = A && !1 === w;
+    }), I = (0, p.e7)([N.ZP], () => null != c ? N.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), A = (0, p.e7)([eH.Z], () => eH.Z.isConnected()), w = (0, E.Z)(A), R = A && !1 === w;
     i.useEffect(() => {
       j && R && null != I && null != c && g.Z.selectParticipant(c.id, (0, Z.gN)({
         applicationId: I.applicationId,

@@ -1,10 +1,9 @@
-/** Chunk was on 52657 **/
-"use strict";
+/** Chunk was on 58173 **/
 n.d(t, {
-  Z: () => i
+  Z: () => l
 });
 var r = n(855403);
 
-function i(e, t, n) {
+function l(e, t, n) {
   return null == t ? e : n.find(e => (0, r.Z)(t.id, e.windowHandle))
 }

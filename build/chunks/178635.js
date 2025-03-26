@@ -128,7 +128,7 @@ function O(e) {
 }
 
 function I(e) {
-  return !c.ZP.getWasEverRtcConnected() || c.ZP.getWasEverMultiParticipant()
+  return !c.Z.getWasEverRtcConnected() || c.Z.getWasEverMultiParticipant()
 }
 
 function S(e) {

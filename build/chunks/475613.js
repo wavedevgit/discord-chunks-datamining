@@ -4,10 +4,10 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(503817),
-  a = n(211065),
+  l = n(211065),
   o = n(66630);
 
-function l(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,17 +34,17 @@ function s(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["location"]);
   return (0, i.D)({
     location: t
-  }) ? (0, r.jsx)(o.Z, l({}, n)) : (0, r.jsx)(a.Z, l({}, n))
+  }) ? (0, r.jsx)(o.Z, a({}, n)) : (0, r.jsx)(l.Z, a({}, n))
 }

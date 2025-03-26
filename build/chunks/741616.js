@@ -18,9 +18,9 @@ function d() {
     {
       selectedVoiceGuildId: n,
       selectedVoiceChannelId: d
-    } = (0, o.cj)([c.ZP], () => ({
-      selectedVoiceGuildId: c.ZP.getGuildId(),
-      selectedVoiceChannelId: c.ZP.getChannelId()
+    } = (0, o.cj)([c.Z], () => ({
+      selectedVoiceGuildId: c.Z.getGuildId(),
+      selectedVoiceChannelId: c.Z.getChannelId()
     })),
     p = t.map(t => {
       let n = e[t];

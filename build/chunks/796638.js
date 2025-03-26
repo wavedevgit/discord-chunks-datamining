@@ -97,10 +97,10 @@ function b(e, t) {
           Z[t] = n
         }
       }
-      let P = Z.filter(c.lm),
-        C = (0, l.keyBy)((0, l.range)(P.length), e => P[e].id);
-      y.current = C;
-      let N = [...j, ...P];
+      let C = Z.filter(c.lm),
+        P = (0, l.keyBy)((0, l.range)(C.length), e => C[e].id);
+      y.current = P;
+      let N = [...j, ...C];
       return null != g && (f && N.length >= O ? N[Math.max(0, N.length - 1)] = g : N.push(g)), {
         visibleParticipants: N,
         participantTileWidth: S

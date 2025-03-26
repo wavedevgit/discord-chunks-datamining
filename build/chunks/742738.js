@@ -88,7 +88,7 @@ function T(e) {
 }
 class A extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(l.Z, d.Z, m.Z, u.ZP)
+    this.waitFor(l.Z, d.Z, m.Z, u.Z)
   }
   getActivity() {
     return y

@@ -27,8 +27,8 @@ var i, r = n(512722),
   N = n(979651),
   C = n(974180),
   Z = n(70956),
-  P = n(129724),
-  w = n(145597),
+  w = n(129724),
+  P = n(145597),
   _ = n(486016),
   T = n(32300),
   D = n(371651),
@@ -224,7 +224,7 @@ function ef() {
   }(n, r), t.add(n);
   let r = new Set;
   for (let e of n) t.has(e) || r.add(e);
-  let l = k.ZP.isOverlayV3EnabledForPID((0, w.getPID)()) || null != k.ZP.getFocusedPID();
+  let l = k.ZP.isOverlayV3EnabledForPID((0, P.getPID)()) || null != k.ZP.getFocusedPID();
   for (let e of r)(function(e) {
     let t = E.Z.getActivities(e);
     if (0 === t.length) return !1;
@@ -282,7 +282,7 @@ let eO = new eg(s.Z, {
       nudges: n
     } = e;
     eu(0);
-    let i = null !== (t = k.ZP.getFocusedPID()) && void 0 !== t ? t : w.UNSET_PID;
+    let i = null !== (t = k.ZP.getFocusedPID()) && void 0 !== t ? t : P.UNSET_PID;
     if (D.default.hasChangedRenderMode(i)) return;
     let r = (0, Y.Z)((0, R.pL)(), n);
     null != r && eh(r, {
@@ -398,7 +398,7 @@ let eO = new eg(s.Z, {
   },
   CLIPS_SAVE_CLIP: function() {
     eh((0, V.f)(B.NW.format(B.t.KLhk6u, {
-      duration: (0, P.A)(u.Z.getSettings().clipsLength / 1e3, !0)
+      duration: (0, w.A)(u.Z.getSettings().clipsLength / 1e3, !0)
     })))
   },
   CLIPS_SAVE_CLIP_ERROR: function() {

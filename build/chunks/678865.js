@@ -4,9 +4,9 @@ n.d(t, {
 }), n(627341);
 var r = n(278074),
   i = n(481060),
-  a = n(695346);
+  l = n(695346);
 
 function o() {
-  let e = a.co.getSetting();
+  let e = l.co.getSetting();
   return (0, r.EQ)(e).with(i.Skl.IDLE, () => i.Skl.IDLE).with(i.Skl.DND, () => i.Skl.DND).with(i.Skl.INVISIBLE, () => i.Skl.INVISIBLE).otherwise(() => i.Skl.ONLINE)
 }

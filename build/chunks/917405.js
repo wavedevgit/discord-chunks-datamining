@@ -1,13 +1,13 @@
-/** Chunk was on 38542 **/
+/** Chunk was on 58173 **/
 n.d(t, {
-  Z: () => m
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   l = n(192379),
   i = n(120356),
   o = n.n(i),
-  a = n(481060),
-  s = n(100527),
+  s = n(481060),
+  a = n(100527),
   c = n(522651),
   u = n(476221),
   d = n(873596),
@@ -37,10 +37,10 @@ function v(e) {
   return e
 }
 let N = {
-    [f.IE4.UNKNOWN]: a.ua7.Colors.BLACK,
-    [f.IE4.BAD]: a.ua7.Colors.RED,
-    [f.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
-    [f.IE4.FINE]: a.ua7.Colors.GREEN
+    [f.IE4.UNKNOWN]: s.ua7.Colors.BLACK,
+    [f.IE4.BAD]: s.ua7.Colors.RED,
+    [f.IE4.AVERAGE]: s.ua7.Colors.YELLOW,
+    [f.IE4.FINE]: s.ua7.Colors.GREEN
   },
   y = {
     [f.QKv.CONNECTED]: p.rtcConnectionStatusConnected,
@@ -53,10 +53,10 @@ let N = {
     [f.IE4.BAD]: p.rtcConnectionQualityBad,
     [f.IE4.UNKNOWN]: null
   };
-class b extends l.PureComponent {
+class x extends l.PureComponent {
   renderPopoutTarget(e) {
     let t = this.props.channelId;
-    return null == t ? e({}) : (0, r.jsx)(a.yRy, {
+    return null == t ? e({}) : (0, r.jsx)(s.yRy, {
       renderPopout: this.renderPopout(t),
       position: "top",
       children: e
@@ -75,11 +75,11 @@ class b extends l.PureComponent {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(a.zxk, {
-        look: a.zxk.Looks.BLANK,
-        size: a.zxk.Sizes.NONE,
+      return (0, r.jsx)(s.zxk, {
+        look: s.zxk.Looks.BLANK,
+        size: s.zxk.Sizes.NONE,
         onClick: e => {
-          (0, c.v)(s.Z.RTC_PANEL, c.d.CONNECTION_STATUS), null == t || t(e)
+          (0, c.v)(a.Z.RTC_PANEL, c.d.CONNECTION_STATUS), null == t || t(e)
         },
         children: (0, r.jsx)(h.Z, {
           text: i,
@@ -98,20 +98,20 @@ class b extends l.PureComponent {
       smallPing: n,
       lastPing: l,
       state: i,
-      className: s,
+      className: a,
       children: c
     } = this.props;
-    return i === f.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
+    return i === f.hes.RTC_CONNECTED && (e = (0, r.jsx)(s.ua7, {
       text: t !== f.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
       color: N[t],
-      children: e => (0, r.jsx)(x, v({
+      children: e => (0, r.jsx)(m, v({
         quality: t,
         smallPing: n
       }, e))
     })), (0, r.jsxs)("div", {
       className: p.rtcConnectionStatusWrapper,
       children: [(0, r.jsxs)("div", {
-        className: o()(p.rtcConnectionStatus, O[t], s),
+        className: o()(p.rtcConnectionStatus, O[t], a),
         children: [e, (0, r.jsx)("div", {
           className: p.labelWrapper,
           children: this.renderStatus()
@@ -138,7 +138,7 @@ class b extends l.PureComponent {
   }
 }
 
-function x(e) {
+function m(e) {
   var {
     quality: t,
     smallPing: n
@@ -158,10 +158,10 @@ function x(e) {
     return l
   }(e, ["quality", "smallPing"]);
   let i = {
-    [f.IE4.FINE]: a.B_b,
-    [f.IE4.AVERAGE]: a.hLg,
-    [f.IE4.BAD]: a.mbS,
-    [f.IE4.UNKNOWN]: a._3e
+    [f.IE4.FINE]: s.B_b,
+    [f.IE4.AVERAGE]: s.hLg,
+    [f.IE4.BAD]: s.mbS,
+    [f.IE4.UNKNOWN]: s._3e
   } [t];
   return (0, r.jsx)(i, v({
     className: o()(p.ping, {
@@ -169,4 +169,4 @@ function x(e) {
     })
   }, l))
 }
-let m = b
+let b = x

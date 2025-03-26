@@ -71,7 +71,7 @@ function v(e) {
       id: "soundboard-sound-mute",
       label: N.NW.string(N.t.LxhEuL),
       action: () => {
-        let n = c.ZP.getRTCConnection();
+        let n = c.Z.getRTCConnection();
         f.default.track(b.rMx.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED, {
           guild_id: d.Z.getGuildId(),
           target_user_id: e,

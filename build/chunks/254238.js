@@ -121,7 +121,7 @@ function T(e, t, n, r) {
 async function A() {
   let e;
   try {
-    let t = null != c.ZP.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
+    let t = null != c.Z.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
     e = (await o.tn.post({
       url: m.ANM.CONNECT_REQUEST_CREATE,
       body: {

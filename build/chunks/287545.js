@@ -172,7 +172,7 @@ function et(e) {
     inviterUserId: f
   } = e, h = v.default.getId(), m = l.find(e => e.userId === h), g = (0, U.pY)(u), E = y.Z.getChannel(g);
   if (a && null != E && E.isPrivate() && o && null == m && s.Z.selectParticipant(E.id, null), null == m) return;
-  let b = O.ZP.getMediaSessionId(),
+  let b = O.Z.getMediaSessionId(),
     I = c.compositeInstanceId,
     A = null == b && (null == E ? void 0 : E.isVocal()) === !0 && (null == E ? void 0 : E.isPrivate()) === !1;
   if (null == I || A) return;

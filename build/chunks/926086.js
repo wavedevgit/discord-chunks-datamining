@@ -64,10 +64,10 @@ function m(e) {
       },
       config: f
     }),
-    [P, w] = r.useState(!1);
+    [w, P] = r.useState(!1);
   if (r.useEffect(() => {
-      E > 10 && w(!0)
-    }, [E]), P) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+      E > 10 && P(!0)
+    }, [E]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
     children: Z((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,

@@ -650,8 +650,8 @@ function e2() {
       decoration: "never"
     }),
     g = (0, o.e7)([eT.Z], () => eT.Z.hidePersonalInformation),
-    p = (0, o.e7)([ev.ZP, ej.Z], () => {
-      let e = ev.ZP.getChannelId();
+    p = (0, o.e7)([ev.Z, ej.Z], () => {
+      let e = ev.Z.getChannelId();
       return null != e ? ej.Z.getChannel(e) : null
     }),
     {
@@ -821,7 +821,7 @@ function e3(e) {
     nameplate: j
   } = e, C = t || s || n, O = i.useRef(null), v = (0, m.O)(C ? "unmute" : "mute"), S = (0, g.P)(C ? "unmute" : "mute"), {
     activeVoice: T
-  } = (0, ef.o)(), I = null != T, P = (0, eh.z)(T), R = (0, o.e7)([ev.ZP], () => ev.ZP.isConnected()), {
+  } = (0, ef.o)(), I = null != T, P = (0, eh.z)(T), R = (0, o.e7)([ev.Z], () => ev.Z.isConnected()), {
     Component: D,
     events: Z,
     play: w

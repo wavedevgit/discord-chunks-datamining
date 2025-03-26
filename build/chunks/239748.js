@@ -12,9 +12,9 @@ let o = {
   comboKeysBindGlobal: !0,
   action() {
     var e;
-    if (!s.ZP.isConnected()) return !1;
-    let t = null !== (e = s.ZP.getGuildId()) && void 0 !== e ? e : l.ME,
+    if (!s.Z.isConnected()) return !1;
+    let t = null !== (e = s.Z.getGuildId()) && void 0 !== e ? e : l.ME,
       n = a.Z.getChannelId(t);
-    return (0, i.K)(t, n), r.Z.channelListScrollTo(t, s.ZP.getChannelId()), !1
+    return (0, i.K)(t, n), r.Z.channelListScrollTo(t, s.Z.getChannelId()), !1
   }
 }

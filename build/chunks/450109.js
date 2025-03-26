@@ -1,13 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
-}), n(653041), n(47120);
+  Z: () => d
+});
 var r, i = n(442837),
-  o = n(570140),
-  a = n(65154);
+  o = n(570140);
 
-function s(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,38 +14,24 @@ function s(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let l = 30,
-  c = [],
-  u = [],
-  d = {
-    [a.Yn.DEFAULT]: [],
-    [a.Yn.STREAM]: []
-  };
+let s = [],
+  l = [];
 
-function f(e) {
+function c(e) {
   let {
     connectionStats: t
   } = e;
-  for (let e of (u = c, c = t, t)) {
-    let t = e.connection.context;
-    d[t].push(e.stats), d[t].length > l && d[t].shift()
-  }
+  l = s, s = t
 }
-class _ extends(r = i.ZP.Store) {
+class u extends(r = i.ZP.Store) {
   getConnectionStats() {
-    return c
+    return s
   }
   getLastConnectionStats() {
-    return u
-  }
-  getStatsHistory(e) {
-    return d[e]
-  }
-  resetStatsHistory(e) {
-    d[e] = []
+    return l
   }
 }
-s(_, "displayName", "MediaEngineStatsStore");
-let p = new _(o.Z, {
-  MEDIA_ENGINE_CONNECTION_STATS: f
+a(u, "displayName", "MediaEngineStatsStore");
+let d = new u(o.Z, {
+  MEDIA_ENGINE_CONNECTION_STATS: c
 })

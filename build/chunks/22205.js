@@ -26,8 +26,8 @@ var r = n(200651),
   j = n(333031),
   w = n(610394),
   Z = n(380736),
-  P = n(987650),
-  C = n(981631),
+  C = n(987650),
+  P = n(981631),
   N = n(388032),
   I = n(226643);
 
@@ -58,8 +58,8 @@ function A(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), x = (0, d.e7)([y.default], () => y.default.getCurrentUser());
-  (0, v.ZP)(() => (h.current = setTimeout(j, T), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
-    notif_type: P.n0.OverlayCrashed
+  (0, v.ZP)(() => (h.current = setTimeout(j, T), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
+    notif_type: C.n0.OverlayCrashed
   }), () => {
     null != h.current && clearTimeout(h.current)
   }));
@@ -67,8 +67,8 @@ function A(e) {
       m.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
     }, [m, o, u]),
     _ = i.useCallback(e => {
-      !O && (S(!0), null == o || o(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
-        notif_type: P.n0.OverlayCrashed,
+      !O && (S(!0), null == o || o(), p.Z.track(P.rMx.NOTIFICATION_CLICKED, {
+        notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => null == s ? void 0 : s(), 200))
     }, [o, s, O]),
@@ -123,7 +123,7 @@ function A(e) {
     locked: !0,
     notificationId: "overlay-crashed",
     index: 0,
-    status: C._1z.ACTIVE,
+    status: P._1z.ACTIVE,
     containerRef: null,
     contentOpacity: m,
     className: I.errorNotificationContainer,
@@ -142,7 +142,7 @@ class D extends i.PureComponent {
     let i = S.Z.captureCrash(e, {
       extra: t
     });
-    p.Z.track(C.rMx.APP_CRASHED, {
+    p.Z.track(P.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

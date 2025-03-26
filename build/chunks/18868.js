@@ -50,12 +50,10 @@ let m = () => {
       className: t,
       onDrop: n
     } = e, [l, h] = a.useState(!1), p = a.useRef(null), b = a.useCallback(e => {
-      x(e), (0, o.Mr3)(c.A), null != e.dataTransfer && (e.dataTransfer.dropEffect = "copy")
+      x(e), h(!0), (0, o.Mr3)(c.A)
     }, []), f = a.useCallback(e => {
-      x(e), h(!0)
-    }, []), _ = a.useCallback(e => {
       x(e), h(!1)
-    }, []), g = a.useCallback(async e => {
+    }, []), _ = a.useCallback(async e => {
       x(e), h(!1);
       let t = e.dataTransfer;
       if (null == t) {
@@ -71,10 +69,9 @@ let m = () => {
     return (0, r.jsx)("div", {
       ref: p,
       className: i()(t, u.uploadArea),
-      onDragEnter: f,
-      onDragOver: b,
-      onDragLeave: _,
-      onDrop: g,
+      onDragEnter: b,
+      onDragLeave: f,
+      onDrop: _,
       children: (0, r.jsx)("div", {
         className: i()(u.uploadModal, {
           [u.droppable]: l

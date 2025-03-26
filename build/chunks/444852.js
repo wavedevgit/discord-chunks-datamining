@@ -283,7 +283,7 @@ class M extends s.Z {
     } = this.analyticsContext, {
       ownerId: i,
       guildId: o
-    } = this._streamContext, a = b.Z.getRegion(E.ZP.getHostname()), {
+    } = this._streamContext, a = b.Z.getRegion(E.Z.getHostname()), {
       gameName: s,
       gameId: l,
       exe: c,

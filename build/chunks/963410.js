@@ -43,50 +43,50 @@ function C(e) {
     userId: r,
     channelId: C,
     onClose: Z
-  } = e, O = (0, i.e7)([o.default], () => o.default.getUser(r)), P = (0, i.e7)([a.Z], () => {
+  } = e, O = (0, i.e7)([o.default], () => o.default.getUser(r)), j = (0, i.e7)([a.Z], () => {
     var e;
     return null === (e = a.Z.getChannel(C)) || void 0 === e ? void 0 : e.getGuildId()
-  }), j = c.ZP.useName(P, null, O), {
-    fingerprint: A,
-    userKey: x
+  }), A = c.ZP.useName(j, null, O), {
+    fingerprint: x,
+    userKey: w
   } = (0, m.q)({
     userId: r
-  }), w = (0, y.W)({
-    fingerprintBase64: A,
+  }), M = (0, y.W)({
+    fingerprintBase64: x,
     chunkSize: p.iQ,
     desiredLength: p.KN
-  }), M = l.useCallback(() => {
+  }), U = l.useCallback(() => {
     (0, d.s$)({
       userId: r,
       channelId: C
     })
-  }, [C, r]), U = (0, _.wV)({
+  }, [C, r]), k = (0, _.wV)({
     userId: r,
     channelId: C
   });
   (0, g.i)({
     channelId: C,
     userId: r,
-    nickname: j,
+    nickname: A,
     onAlertOpen: Z
   });
   let {
-    isCurrentUserKeyPersistent: k,
+    isCurrentUserKeyPersistent: P,
     isOtherUserKeyPersistent: D,
     loading: F
   } = (0, E.y)({
     userId: r
   }), V = l.useCallback(() => {
-    null != x && ((0, f.TQ)(r, x, D, C, b.Sbl.E2EE_USER_VERIFY_MODAL), Z())
-  }, [x, r, D, C, Z]), K = l.useCallback(() => {
-    null != x && ((0, f.LO)(r, x, D), Z())
-  }, [x, r, D, Z]), [L, W] = l.useMemo(() => U ? [R.NW.string(R.t.UNUuen), s.Z.BG_BRAND] : [R.NW.string(R.t.y2b7CA), s.Z.STATUS_DANGER], [U]), Y = l.useMemo(() => (0, f.kK)({
-    isCurrentUserKeyPersistent: k,
+    null != w && ((0, f.TQ)(r, w, D, C, b.Sbl.E2EE_USER_VERIFY_MODAL), Z())
+  }, [w, r, D, C, Z]), K = l.useCallback(() => {
+    null != w && ((0, f.LO)(r, w, D), Z())
+  }, [w, r, D, Z]), [L, W] = l.useMemo(() => k ? [R.NW.string(R.t.UNUuen), s.Z.BG_BRAND] : [R.NW.string(R.t.y2b7CA), s.Z.STATUS_DANGER], [k]), Y = l.useMemo(() => (0, f.kK)({
+    isCurrentUserKeyPersistent: P,
     isOtherUserKeyPersistent: D,
-    otherUserNickname: j
-  }), [k, D, j]), z = (0, S.P)({
+    otherUserNickname: A
+  }), [P, D, A]), z = (0, S.P)({
     userId: r,
-    keyToOmit: x
+    keyToOmit: w
   });
   return l.useEffect(() => {
     (0, d.Rq)({
@@ -97,7 +97,7 @@ function C(e) {
     transitionState: t,
     title: R.NW.string(R.t["/WPGnJ"]),
     subtitle: R.NW.format(R.t.oc2kcX, {
-      username: j
+      username: A
     }),
     children: [(0, n.jsxs)("div", {
       className: I.verification,
@@ -113,14 +113,14 @@ function C(e) {
           variant: "text-sm/bold",
           color: "header-primary",
           children: R.NW.string(R.t["/WPGnJ"])
-        }), null != w && (0, n.jsx)(N.H, {
+        }), null != M && (0, n.jsx)(N.H, {
           className: I.copyIcon,
-          chunks: w,
+          chunks: M,
           color: u.TVs.colors.INTERACTIVE_NORMAL,
-          onCopy: M
+          onCopy: U
         }), (0, n.jsx)("div", {
           className: I.codeStatus,
-          children: null == w ? (0, n.jsx)(u.$jN, {
+          children: null == M ? (0, n.jsx)(u.$jN, {
             className: I.spinner,
             type: u.RAz.SPINNING_CIRCLE
           }) : (0, n.jsx)(T, {
@@ -130,7 +130,7 @@ function C(e) {
         })]
       }), (0, n.jsx)(h.b, {
         className: I.code,
-        chunks: w,
+        chunks: M,
         columns: p.ak
       })]
     }), (0, n.jsx)(u.Text, {
@@ -144,9 +144,9 @@ function C(e) {
       color: u.Ttl.BRAND,
       size: u.PhG.MEDIUM,
       look: u.iLD.FILLED,
-      disabled: null == w || F,
-      onClick: U ? K : V,
-      children: U ? R.NW.string(R.t["Osb+/v"]) : R.NW.string(R.t["0tvNAg"])
+      disabled: null == M || F,
+      onClick: k ? K : V,
+      children: k ? R.NW.string(R.t["Osb+/v"]) : R.NW.string(R.t["0tvNAg"])
     }), (0, n.jsx)(u.zxk, {
       fullWidth: !0,
       color: u.Ttl.PRIMARY,

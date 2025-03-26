@@ -25,8 +25,8 @@ var r, i = n(200651),
   j = n(906732),
   w = n(168551),
   Z = n(260035),
-  P = n(628123),
-  C = n(686546),
+  C = n(628123),
+  P = n(686546),
   N = n(950796),
   I = n(151851),
   _ = n(587061),
@@ -147,7 +147,7 @@ class X extends(r = l.Component) {
       guestWindow: c,
       clientThemesClassName: d,
       contentClassName: f
-    } = this.props, m = (0, W.getPlatform)(), v = s && !l, g = r === H.$J ? D.Z : P.Z;
+    } = this.props, m = (0, W.getPlatform)(), v = s && !l, g = r === H.$J ? D.Z : C.Z;
     return (0, i.jsx)(u.VK, {
       children: (0, i.jsx)(k.w, {
         windowKey: r,
@@ -158,7 +158,7 @@ class X extends(r = l.Component) {
             children: (0, i.jsx)(p.JcV, {
               containerRef: this.rootRef,
               children: (0, i.jsxs)(g, {
-                children: [(0, i.jsx)(C.Co, {}), (0, i.jsx)(b.Wu, {
+                children: [(0, i.jsx)(P.Co, {}), (0, i.jsx)(b.Wu, {
                   appContext: Y.IlC.POPOUT,
                   renderWindow: c,
                   children: (0, i.jsx)(Z.m, {

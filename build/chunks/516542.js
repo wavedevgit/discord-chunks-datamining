@@ -32,7 +32,7 @@ function v(e) {
   }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: S,
     richValue: N
-  } = x, [C, Z] = r.useState(!1), P = r.useCallback(() => Z(!0), []), w = r.useCallback(() => Z(!1), []);
+  } = x, [C, Z] = r.useState(!1), w = r.useCallback(() => Z(!0), []), P = r.useCallback(() => Z(!1), []);
   (0, s.ZP)(() => {
     (0, a.In)(v.id, !0, !0, n, {
       section: g.jXE.OVERLAY
@@ -63,8 +63,8 @@ function v(e) {
       richValue: N,
       type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: !1,
-      onBlur: w,
-      onFocus: P,
+      onBlur: P,
+      onFocus: w,
       focused: C,
       onSubmit: D,
       onKeyDown: T,

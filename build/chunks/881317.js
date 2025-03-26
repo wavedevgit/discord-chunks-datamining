@@ -13,10 +13,10 @@ var r = n(200651),
   d = n(353926),
   p = n(82554),
   h = n(726521),
-  g = n(185625),
-  _ = n(314897),
-  m = n(63063),
-  f = n(981631),
+  f = n(185625),
+  g = n(314897),
+  _ = n(63063),
+  m = n(981631),
   b = n(388032),
   x = n(354689),
   N = n(802138);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function E(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function E(e, t) {
   }), e
 }
 a.ZP.initialize();
-let I = e => {
+let E = e => {
     let {
       title: t,
       menuType: i
@@ -62,7 +62,7 @@ let I = e => {
         let {
           default: e
         } = await n.e("93288").then(n.bind(n, 396410));
-        return t => (0, r.jsx)(e, E(v({}, t), {
+        return t => (0, r.jsx)(e, I(v({}, t), {
           onSuccess: s,
           headerText: b.NW.string(b.t.ZLRYGR),
           confirmButtonText: b.NW.string(b.t.PDTjLC),
@@ -72,8 +72,8 @@ let I = e => {
       })
     }, s = e => {
       let t = async () => {
-        await (0, g.yL)(i, e)
-      }, a = async t => await (0, g.RV)(i, e, t), s = e => {
+        await (0, f.yL)(i, e)
+      }, a = async t => await (0, f.RV)(i, e, t), s = e => {
         let t = null == e ? void 0 : e.token;
         i === p.BM.MESSAGE ? (0, h.eE)(t) : i === p.BM.USER && (0, h.JM)(t)
       };
@@ -81,7 +81,7 @@ let I = e => {
         let {
           default: e
         } = await n.e("94566").then(n.bind(n, 965072));
-        return n => (0, r.jsx)(e, E(v({}, n), {
+        return n => (0, r.jsx)(e, I(v({}, n), {
           onFormSubmit: a,
           onResend: t,
           onSuccess: s,
@@ -104,8 +104,8 @@ let I = e => {
     })
   },
   S = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), h = (0, a.e7)([_.default], () => _.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
-      (0, g.qJ)().then(() => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), h = (0, a.e7)([g.default], () => g.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), I = () => {
+      (0, f.qJ)().then(() => {
         t(!1), o(!0)
       }).catch(() => {
         t(!1), o(!1)
@@ -114,7 +114,7 @@ let I = e => {
     return i.useEffect(() => {
       h ? (t(!0), c.k({
         withAnalyticsToken: !0
-      }).then(() => E()).catch(() => t(!1))) : E()
+      }).then(() => I()).catch(() => t(!1))) : I()
     }, [h]), i.useEffect(() => {
       (async () => {
         v || (await s.Z.getLocationMetadata(), s.Z.getExperiments())
@@ -128,14 +128,14 @@ let I = e => {
       }), (0, r.jsx)(u.DK, {
         className: N.marginBottom8,
         children: b.NW.format(b.t["532l+v"], {
-          supportURL: m.Z.getArticleURL(f.BhN.COPYRIGHT_AND_IP_POLICY)
+          supportURL: _.Z.getArticleURL(m.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsxs)("div", {
         className: x.container,
-        children: [(0, r.jsx)(I, {
+        children: [(0, r.jsx)(E, {
           title: b.NW.string(b.t.fuqnBA),
           menuType: p.BM.MESSAGE
-        }), (0, r.jsx)(I, {
+        }), (0, r.jsx)(E, {
           title: b.NW.string(b.t.F4jrRU),
           menuType: p.BM.USER
         })]

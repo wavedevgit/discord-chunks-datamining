@@ -116,8 +116,8 @@ function Z(e, t) {
       })
   }
   let Z = (0, d.un)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    P = Z ? j.NW.string(j.t.KWDIrq) : j.NW.string(j.t["prl+ra"]),
-    w = Z ? void 0 : j.NW.string(j.t.R3CpPT),
+    w = Z ? j.NW.string(j.t.KWDIrq) : j.NW.string(j.t["prl+ra"]),
+    P = Z ? void 0 : j.NW.string(j.t.R3CpPT),
     _ = null != e ? (0, i.jsx)(C, {
       game: e
     }) : (0, i.jsx)("img", {
@@ -127,8 +127,8 @@ function Z(e, t) {
     });
   return N(S({
     icon: _,
-    title: P,
-    body: w,
+    title: w,
+    body: P,
     hint: () => (0, g.Q)((0, O.P)(), j.t["z8/sgI"], j.NW.string(j.t.jZkzVF), !0),
     confirmText: Z ? void 0 : j.NW.string(j.t.TxyTbm),
     onConfirmClick: Z ? void 0 : () => {

@@ -75,8 +75,13 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }, []), $ = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && k()
     }, [k, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : x.NW.string(x.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
-      let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE);
-      return e * (t + ((0, h.Q3)("FolderItem.useHeight") ? 4 : 8))
+      let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
+        n = (0, h.Q3)("FolderItem.useHeight"),
+        r = (0, d.dQu)(d.TVs.space.SPACE_XS),
+        i = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
+        o = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE),
+        l = n ? r : 8;
+      return e * (t + l) + (n ? (o - i) / 2 - l : 0)
     }(V.length), ei = (0, d.Yzy)(!K && s, {
       from: {
         height: 0
@@ -148,7 +153,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         } = n;
         return t && (0, r.jsx)(I, {
           as: "ul",
-          gap: F ? "xxs" : 0,
+          gap: F ? "xs" : 0,
           id: en,
           style: {
             height: e.height.to(e => e * er),

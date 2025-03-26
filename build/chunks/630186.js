@@ -1,13 +1,13 @@
-/** Chunk was on 38542 **/
+/** Chunk was on 58173 **/
 n.d(t, {
-  Z: () => a,
+  Z: () => s,
   _: () => o
 });
 var r = n(726542),
   l = n(973616),
   i = n(388032);
 let o = "twitch:";
-class a extends l.ZP {
+class s extends l.ZP {
   getIconURL() {
     return r.Z.get("twitch").icon.lightPNG
   }

@@ -52,9 +52,9 @@ function b(e) {
   b.save();
   let w = c.Z.getEmojiImage(null !== (n = null !== (t = o.emojiId) && void 0 !== t ? t : o.emojiName) && void 0 !== n ? n : ""),
     Z = (0, d.np)(o.x, g),
-    P = (0, d.np)(o.y, y),
+    C = (0, d.np)(o.y, y),
     {
-      outlineColor: C
+      outlineColor: P
     } = (0, d.bg)(o.userId, O, S, E);
   v(o, e => {
     e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, a.j)(() => {
@@ -85,7 +85,7 @@ function b(e) {
         return r.particles[e.id] = a, r.lastSpawned[e.id] = Date.now(), r
       })
     })
-  }(o, Z, P), (0, f.I)(b, Z, P, C, m.q2), (0, f.T)(b, Z, P, o.userId), v(o, e => (function(e, t, n) {
+  }(o, Z, C), (0, f.I)(b, Z, C, P, m.q2), (0, f.T)(b, Z, C, o.userId), v(o, e => (function(e, t, n) {
     if (null == t) return;
     let r = n.size * window.devicePixelRatio,
       i = n.x - r / 2 * window.devicePixelRatio,

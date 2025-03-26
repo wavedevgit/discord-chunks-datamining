@@ -4,7 +4,7 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(355820);
-let a = (0, r.B)({
+let l = (0, r.B)({
   kind: "user",
   id: "2025-01_user_profile_custom_status_edit_preview",
   label: "User Profile Custom Status Edit Preview",
@@ -38,12 +38,12 @@ function o(e) {
     autoTrackExposure: n
   }), {
     enabledWithStatusSelection: o,
-    enabledWithoutSatusSelection: l
-  } = a.getCurrentConfig({
+    enabledWithoutSatusSelection: a
+  } = l.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return o || l
+  return o || a
 }

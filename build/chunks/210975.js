@@ -19,7 +19,7 @@ function c(e) {
   } = e, l = (0, o.J)({
     channelId: r
   });
-  return (0, n.e7)([s.Z, i.default, u.ZP], () => null != t && l && u.ZP.isUserConnected(t) && i.default.getId() !== t && s.Z.isUserVerified(t), [l, t])
+  return (0, n.e7)([s.Z, i.default, u.Z], () => null != t && l && u.Z.isUserConnected(t) && i.default.getId() !== t && s.Z.isUserVerified(t), [l, t])
 }
 
 function d(e) {

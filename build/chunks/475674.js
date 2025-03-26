@@ -12,6 +12,6 @@ function l(e) {
         context: e
       }
       of i.Z.getActiveErrors().values())
-      if (e.streamKey === t) return e.videoError
+      if (e.streamKey === t) return e.streamError
   }, [t])
 }

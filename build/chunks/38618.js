@@ -64,7 +64,7 @@ async function G(e) {
     n = E.Z.getVoiceChannelId();
   if (null != n) {
     var r, i, o, a, s, c, u, d;
-    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) m.ZP.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = p.Z.getChannel(n);
       null != e && (t = {

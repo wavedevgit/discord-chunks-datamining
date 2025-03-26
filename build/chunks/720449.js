@@ -4,9 +4,9 @@ n.d(t, {
 }), n(566702);
 var r = n(913527),
   i = n.n(r),
-  a = n(695346),
+  l = n(695346),
   o = n(626135),
-  l = n(337953),
+  a = n(337953),
   s = n(875425),
   u = n(981631);
 
@@ -19,11 +19,11 @@ function c(e) {
     createdAtMs: d,
     prompt: p
   } = e, m = t.trim();
-  if (!(m.length > 0) && null == n) return a.Ok.updateSetting(void 0);
+  if (!(m.length > 0) && null == n) return l.Ok.updateSetting(void 0);
   {
-    let e = a.Ok.updateSetting({
+    let e = l.Ok.updateSetting({
       text: m.length > 0 ? m : "",
-      expiresAtMs: null != r && r !== s.FO.DONT_CLEAR ? String(i()().add((0, l.Z)(r), "ms").toDate().getTime()) : "0",
+      expiresAtMs: null != r && r !== s.FO.DONT_CLEAR ? String(i()().add((0, a.Z)(r), "ms").toDate().getTime()) : "0",
       emojiId: null != n && null != n.id ? n.id : "0",
       emojiName: null != n ? n.name : "",
       createdAtMs: String(null != d ? d : i()().toDate().getTime())

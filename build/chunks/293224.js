@@ -34,8 +34,8 @@ var i = n(200651),
   N = n(565138),
   C = n(917405),
   Z = n(763296),
-  P = n(603074),
-  w = n(879815),
+  w = n(603074),
+  P = n(879815),
   _ = n(189771),
   T = n(294629),
   D = n(67844),
@@ -223,7 +223,7 @@ function ei(e) {
   } = e, {
     selfDeaf: l,
     deaf: o
-  } = (0, w.Z)(t), s = l || o, {
+  } = (0, P.Z)(t), s = l || o, {
     Component: c,
     play: u,
     events: {
@@ -483,7 +483,7 @@ function eo(e) {
       let {
         closePopout: t
       } = e;
-      return h || null == r ? (0, i.jsx)(i.Fragment, {}) : (0, i.jsx)(P.Z, {
+      return h || null == r ? (0, i.jsx)(i.Fragment, {}) : (0, i.jsx)(w.Z, {
         guildId: a,
         channel: r,
         onClose: E(t),
@@ -648,11 +648,11 @@ function eu(e) {
   var t, n;
   let {
     voiceChannel: r
-  } = e, o = null == r ? void 0 : r.id, a = (0, l.cj)([U.ZP], () => ({
-    channelId: U.ZP.getChannelId(),
-    quality: U.ZP.getQuality(),
-    state: U.ZP.getState(),
-    lastPing: U.ZP.getLastPing()
+  } = e, o = null == r ? void 0 : r.id, a = (0, l.cj)([U.Z], () => ({
+    channelId: U.Z.getChannelId(),
+    quality: U.Z.getQuality(),
+    state: U.Z.getState(),
+    lastPing: U.Z.getLastPing()
   })), s = null != o, c = (0, l.e7)([Y.Z], () => null != o && Y.Z.hasVideo(o), [o]);
   return s && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(C.Z, (t = $({}, a), n = n = {

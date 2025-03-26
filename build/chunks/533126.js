@@ -15,8 +15,8 @@ function i(e) {
   return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
 n.d(t, {
-  U2: () => f,
-  wz: () => m
+  U2: () => m,
+  wz: () => _
 });
 var o = "copy",
   a = "convert";
@@ -104,7 +104,7 @@ c({
     return (null == (t = e.getTransports) ? void 0 : t.call(e)) || []
   })
 }), s(h, e => e.getClientExtensionResults());
-var g = {
+var f = {
     mediation: u(o),
     publicKey: c({
       challenge: c(a),
@@ -116,7 +116,7 @@ var g = {
     }),
     signal: u(o)
   },
-  _ = {
+  g = {
     type: c(o),
     id: c(o),
     rawId: c(a),
@@ -130,10 +130,10 @@ var g = {
     clientExtensionResults: s(h, e => e.getClientExtensionResults())
   };
 
-function m(e) {
-  return l(r, g, e)
+function _(e) {
+  return l(r, f, e)
 }
-async function f(e) {
+async function m(e) {
   let t = await navigator.credentials.get(e);
-  return t.toJSON = () => l(i, _, t), t
+  return t.toJSON = () => l(i, g, t), t
 }

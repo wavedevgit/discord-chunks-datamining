@@ -393,7 +393,7 @@ function ef(e) {
     let t = L.Z.getSoundById(el),
       n = new Audio((0, k.Z)(el));
     null != eb.current && eb.current.pause(), eb.current = n, n.currentTime = 0, n.volume = (0, j.Z)(null !== (e = null == t ? void 0 : t.volume) && void 0 !== e ? e : 1), n.play()
-  }, [eb]), tn = (0, l.e7)([N.ZP], () => N.ZP.getMediaSessionId());
+  }, [eb]), tn = (0, l.e7)([N.Z], () => N.Z.getMediaSessionId());
   return (0, h.Z)({
     type: s.ImpressionTypes.POPOUT,
     name: s.ImpressionNames.SOUNDBOARD_POPOUT,
