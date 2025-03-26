@@ -1,7 +1,7 @@
 /** Chunk was on 55849 **/
 n.d(t, {
   Z: () => E
-}), n(266796), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
+}), n(266796), n(47120);
 var r = n(200651),
   l = n(192379),
   a = n(120356),
@@ -166,7 +166,7 @@ function A(e) {
   } = (0, f.S)(), {
     recentAvatarsLimit: A,
     numberOfLockedAvatarSlots: E
-  } = (0, d.pC)(t), P = l.useRef([]), S = l.useRef(null), w = l.useRef(g.length), T = l.useRef(null), [R, _] = l.useState(!1), [k, L] = l.useState(!1), [F, Z] = l.useState(null), I = null != F ? F : null == N ? void 0 : N.message, D = g.length > A ? g.slice(0, A) : g, W = D.length, U = Math.max(A - W, 0), M = (0, c.vRw)(), B = l.useCallback(async e => {
+  } = (0, d.pC)(t), P = l.useRef([]), S = l.useRef(null), w = l.useRef(g.length), T = l.useRef(null), [R, _] = l.useState(!1), [k, F] = l.useState(!1), [L, Z] = l.useState(null), I = null != L ? L : null == N ? void 0 : N.message, D = g.length > A ? g.slice(0, A) : g, W = D.length, M = Math.max(A - W, 0), U = (0, c.vRw)(), B = l.useCallback(async e => {
     if (null == s || R) return;
     _(!0), Z(null);
     let {
@@ -184,19 +184,18 @@ function A(e) {
     try {
       let t = await fetch(o),
         s = await t.blob(),
-        u = URL.createObjectURL(s),
         {
-          filename: p,
-          type: f
+          filename: u,
+          type: p
         } = (0, d.mh)(l, i);
       (0, c.ZDy)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("59732"), n.e("71741")]).then(n.bind(n, 712451));
         return n => (0, r.jsx)(t, y({
-          imageUri: u,
-          file: new File([s], p, {
-            type: f
+          imageUri: o,
+          file: new File([s], u, {
+            type: p
           }),
           originalAsset: e,
           onCrop: a,
@@ -204,16 +203,16 @@ function A(e) {
           showUpsellHeader: !0
         }, n))
       }, {
-        contextKey: M
+        contextKey: U
       })
     } catch (e) {
       Z(x.NW.string(x.t.fZRH9P))
     } finally {
       _(!1)
     }
-  }, [M, R, a, s]), z = l.useCallback((e, t, l, a, i) => {
+  }, [U, R, a, s]), z = l.useCallback((e, t, l, a, i) => {
     let o = t + 1 < g.length ? t + 1 : t - 1;
-    T.current = o >= 0 ? P.current[o] : S.current, e.shiftKey ? (0, p.B)(l) : (L(!0), (0, c.ZDy)(async () => {
+    T.current = o >= 0 ? P.current[o] : S.current, e.shiftKey ? (0, p.B)(l) : (F(!0), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70871").then(n.bind(n, 225525));
@@ -242,7 +241,7 @@ function A(e) {
           onConfirmDelete: () => (0, p.B)(l),
           onClose: async () => {
             await n(), requestAnimationFrame(() => {
-              L(!1)
+              F(!1)
             })
           }
         }, o))
@@ -282,7 +281,7 @@ function A(e) {
             }
           })
         }, e.id))
-      }), U > 0 && (0, r.jsxs)("div", {
+      }), M > 0 && (0, r.jsxs)("div", {
         className: h.emptyAvatarSlots,
         tabIndex: -1,
         ref: S,
@@ -290,9 +289,9 @@ function A(e) {
           children: [0 === D.length && (0, r.jsxs)(r.Fragment, {
             children: [x.NW.string(x.t.x0DsRU), " "]
           }), x.NW.format(x.t["8W2HOz"], {
-            numberOfEmptyAvatarSlots: U
+            numberOfEmptyAvatarSlots: M
           })]
-        }), [...Array(U)].map((e, t) => (0, r.jsx)(m.Z, {
+        }), [...Array(M)].map((e, t) => (0, r.jsx)(m.Z, {
           className: h.avatarPlaceholder
         }, t))]
       }), !t && (0, r.jsx)(C, {

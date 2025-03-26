@@ -154,17 +154,17 @@ function _(e) {
     maxFileSizeBytes: w,
     showUpsellHeader: _,
     filters: k,
-    analyticsLocation: L,
-    analyticsLocations: F = [],
+    analyticsLocation: F,
+    analyticsLocations: L = [],
     modalSubTitle: Z,
     imageSpecifications: I,
     modalTitle: D = C.NW.string(C.t.DToW4e),
     uploadOptionTitle: W = C.NW.string(C.t["MsUY/f"])
-  } = e, U = (0, a.e7)([j.Z], () => j.Z.isFocused()), M = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), z = (0, a.e7)([f.Z], () => f.Z.getGuild(B)), {
+  } = e, M = (0, a.e7)([j.Z], () => j.Z.isFocused()), U = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), z = (0, a.e7)([f.Z], () => f.Z.getGuild(B)), {
     reducedMotion: H
-  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(M) && P === N.pC.AVATAR, {
+  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(U) && P === N.pC.AVATAR, {
     analyticsLocations: X
-  } = (0, s.ZP)(F, o.Z.SELECT_IMAGE_MODAL);
+  } = (0, s.ZP)(L, o.Z.SELECT_IMAGE_MODAL);
 
   function q(e) {
     let {
@@ -184,9 +184,9 @@ function _(e) {
       location_stack: X
     }), b.default.track(O.rMx.OPEN_MODAL, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location: L
+      location: F
     })
-  }, [V, L, X]);
+  }, [V, F, X]);
   let Y = P === N.pC.AVATAR || P === N.pC.BANNER,
     K = (0, d.M)(!Y);
   return (0, r.jsxs)(i.Y0X, {
@@ -246,7 +246,7 @@ function _(e) {
                   uploadType: P,
                   showUpsellHeader: _,
                   allowSkip: !0,
-                  analyticsPage: null == L ? void 0 : L.page
+                  analyticsPage: null == F ? void 0 : F.page
                 }, n))
               }, {
                 contextKey: G
@@ -279,7 +279,7 @@ function _(e) {
                   })
                 },
                 showUpsellHeader: _,
-                analyticsPage: null == L ? void 0 : L.page
+                analyticsPage: null == F ? void 0 : F.page
               }, t))
             }, {
               contextKey: G
@@ -288,7 +288,7 @@ function _(e) {
           children: [(0, r.jsxs)("div", {
             className: A.contentCircle,
             children: [(0, r.jsx)(S, {
-              shouldAnimate: U && !H.enabled
+              shouldAnimate: M && !H.enabled
             }), (0, r.jsx)("div", {
               className: A.gifIconContainer,
               children: (0, r.jsx)(i.OUq, {

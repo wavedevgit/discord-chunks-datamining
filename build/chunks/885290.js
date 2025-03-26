@@ -1,6 +1,6 @@
 /** Chunk was on 55849 **/
 n.d(t, {
-  Z: () => M
+  Z: () => U
 });
 var r = n(200651),
   l = n(192379),
@@ -51,7 +51,7 @@ function k(e) {
   }
   return e
 }
-let L = [{
+let F = [{
   gif: n(495682),
   png: n(458060)
 }, {
@@ -65,13 +65,13 @@ let L = [{
   png: n(690695)
 }];
 
-function F(e) {
+function L(e) {
   let {
     shouldAnimate: t = !0
   } = e;
   return (0, r.jsx)("div", {
     className: _.gifGrid,
-    children: L.map(e => (0, r.jsx)("div", {
+    children: F.map(e => (0, r.jsx)("div", {
       className: _.gif,
       style: {
         backgroundImage: "url(".concat(t ? e.gif : e.png, ")")
@@ -193,7 +193,7 @@ function W(e) {
   })
 }
 
-function U(e) {
+function M(e) {
   let {
     uploadType: t,
     guild: n,
@@ -215,7 +215,7 @@ function U(e) {
       "aria-label": R.NW.string(R.t["xsC+//"]),
       onMouseEnter: i,
       onMouseLeave: o,
-      children: [(0, r.jsx)(F, {
+      children: [(0, r.jsx)(L, {
         shouldAnimate: a
       }), (0, r.jsx)(D, {
         icon: (0, r.jsx)(s.OUq, {
@@ -233,7 +233,7 @@ function U(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     transitionState: t,
     onClose: a,
@@ -243,15 +243,15 @@ function M(e) {
     showUpsellHeader: h,
     filters: C,
     analyticsLocation: E,
-    analyticsLocations: L = [],
-    imageSpecifications: F,
+    analyticsLocations: F = [],
+    imageSpecifications: L,
     modalTitle: Z = R.NW.string(R.t.DToW4e),
     uploadOptionTitle: I = R.NW.string(R.t["MsUY/f"])
-  } = e, D = (0, o.e7)([N.default], () => N.default.getCurrentUser()), M = (0, o.e7)([O.Z], () => O.Z.getGuildId()), B = (0, o.e7)([y.Z], () => y.Z.getGuild(M)), z = (0, s.vRw)(), H = d === w.pC.AVATAR || d === w.pC.BANNER, G = !A.ZP.canUseAnimatedAvatar(D) && d === w.pC.AVATAR, V = (0, f.M)(!H), X = (0, g.Tq)({
+  } = e, D = (0, o.e7)([N.default], () => N.default.getCurrentUser()), U = (0, o.e7)([O.Z], () => O.Z.getGuildId()), B = (0, o.e7)([y.Z], () => y.Z.getGuild(U)), z = (0, s.vRw)(), H = d === w.pC.AVATAR || d === w.pC.BANNER, G = !A.ZP.canUseAnimatedAvatar(D) && d === w.pC.AVATAR, V = (0, f.M)(!H), X = (0, g.Tq)({
     location: "NewSelectImageModal"
   }), {
     analyticsLocations: q
-  } = (0, u.ZP)(L, c.Z.SELECT_IMAGE_MODAL), Y = l.useCallback(e => {
+  } = (0, u.ZP)(F, c.Z.SELECT_IMAGE_MODAL), Y = l.useCallback(e => {
     let {
       assetOrigin: t = j.q.NEW_ASSET,
       imageUri: n,
@@ -358,17 +358,17 @@ function M(e) {
               handleFileSizeError: J
             })
           }), (0, r.jsx)("li", {
-            children: (0, r.jsx)(U, {
+            children: (0, r.jsx)(M, {
               uploadType: d,
               guild: B,
               handleOpenGIFPickerModal: $
             })
           })]
-        }), null != F ? (0, r.jsx)(s.Text, {
+        }), null != L ? (0, r.jsx)(s.Text, {
           className: _.imageSpecifications,
           variant: "text-sm/normal",
           color: "text-muted",
-          children: F
+          children: L
         }) : null]
       }), ee ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
