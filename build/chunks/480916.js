@@ -16,10 +16,10 @@ n.d(t, {
 var r = n(626135),
   i = n(981631),
   o = function(e) {
-    return e.GET_STARTED_MODAL = "get_started_modal", e.NSFW_GUILD = "nsfw_guild", e.NSFW_AGE_GATE = "nsfw_age_gate", e.OBSCURED_MEDIA = "obscured_media", e.SYSTEM_DM_RETRY_BUTTON = "system_dm_retry_button", e.DEV_TOOLS_QUICK_ACTIONS = "dev_tools_quick_actions", e.SENSITIVE_MEDIA_FILTER_SETTINGS = "sensitive_media_filter_settings", e.SENSITIVE_MEDIA_LEARN_MORE = "sensitive_media_learn_more", e.MESSAGE_REQUESTS_SETTINGS = "message_requests_settings", e
+    return e.GET_STARTED_MODAL = "get_started_modal", e.NSFW_GUILD = "nsfw_guild", e.NSFW_AGE_GATE = "nsfw_age_gate", e.OBSCURED_MEDIA = "obscured_media", e.SYSTEM_DM_RETRY_BUTTON = "system_dm_retry_button", e.DEV_TOOLS_QUICK_ACTIONS = "dev_tools_quick_actions", e.SENSITIVE_MEDIA_FILTER_SETTINGS = "sensitive_media_filter_settings", e.SENSITIVE_MEDIA_LEARN_MORE = "sensitive_media_learn_more", e.MESSAGE_REQUESTS_SETTINGS = "message_requests_settings", e.ACCOUNT_AGE_GROUP = "account_age_group", e
   }({}),
   a = function(e) {
-    return e[e.PRIMARY = 1] = "PRIMARY", e
+    return e[e.PRIMARY = 1] = "PRIMARY", e[e.RETRY = 2] = "RETRY", e
   }({}),
   s = function(e) {
     return e.MANUAL_REVIEW_REQUEST = "manual_review_request", e.LEARN_MORE = "learn_more", e.GET_STARTED = "get_started", e.SYSTEM_DMS_LEARN_MORE = "system_dms_learn_more", e

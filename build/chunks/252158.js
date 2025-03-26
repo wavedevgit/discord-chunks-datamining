@@ -185,7 +185,7 @@ let w = new Map([
       var e, t, n;
       let r = null !== (n = null === (t = c.Z.getConnectionStats().find(e => e.connection.context === T.Yn.DEFAULT)) || void 0 === t ? void 0 : null === (e = t.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === e ? void 0 : e.sampleRateMismatchPercent) && void 0 !== n ? n : 0;
       if (Math.abs(r) > C) return [N({
-        audioSampleRateMismatchPercent: r
+        audioCaptureSampleRateMismatchPercent: r
       }, x())]
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)

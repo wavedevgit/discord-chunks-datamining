@@ -1,40 +1,45 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
-var i = n(481060),
-  o = n(473919),
-  a = n(170187),
-  s = n(388032);
+var i = n(442837),
+  o = n(481060),
+  a = n(201895),
+  s = n(933557),
+  l = n(592125),
+  c = n(473919),
+  u = n(170187),
+  d = n(388032);
 
-function l(e) {
+function f(e) {
   let {
-    game: t,
-    textVariant: n,
-    textClassName: l,
-    hideIcon: c = !1,
-    hideText: u = !1,
-    hideTooltip: d = !1
-  } = e;
-  if (c && u) return null;
-  let f = (null == t ? void 0 : t.name) === "" ? null : null == t ? void 0 : t.name,
-    _ = null != f ? s.NW.format(s.t["0wJXSk"], {
-      name: f
-    }) : s.NW.string(s.t.eXan7O),
-    p = null != f ? s.NW.formatToPlainString(s.t["0wJXSk"], {
-      name: f
-    }) : s.NW.string(s.t.eXan7O);
+    stream: t,
+    game: n,
+    textVariant: f,
+    textClassName: _,
+    hideIcon: p = !1,
+    hideText: h = !1,
+    hideTooltip: m = !1
+  } = e, g = (0, i.e7)([l.Z], () => l.Z.getChannel(t.channelId)), E = (0, s.ZP)(g);
+  if (p && h) return null;
+  let b = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name,
+    v = null != b ? d.NW.format(d.t["0wJXSk"], {
+      name: b
+    }) : d.NW.string(d.t.eXan7O);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!c && (0, r.jsx)(o.Z, {
-      icon: i.ARS,
-      tooltip: u && !d ? p : void 0
-    }), !u && (0, r.jsx)(a.Z, {
-      variant: n,
-      className: l,
-      children: _
+    children: [!p && (0, r.jsx)(c.Z, {
+      icon: o.ARS,
+      tooltipText: m || null == E ? void 0 : E,
+      tooltipAriaLabel: m || null == g ? void 0 : (0, a.ZP)({
+        channel: g
+      })
+    }), !h && (0, r.jsx)(u.Z, {
+      variant: f,
+      className: _,
+      children: v
     })]
   })
 }

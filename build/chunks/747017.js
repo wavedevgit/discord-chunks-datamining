@@ -60,6 +60,7 @@ function O(e) {
     j = (null == x ? void 0 : x.state) != null && "xs" === T,
     U = () => {
       if (null != L) return (0, r.jsx)(m.Z, {
+        stream: L,
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(T, "/medium"),
         textClassName: I,
