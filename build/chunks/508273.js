@@ -48,7 +48,7 @@ function O(e) {
     R = i.useMemo(() => {
       var e;
       return j && (null === (e = o.current) || void 0 === e ? void 0 : e.clientHeight) != null ? {
-        height: O ? 328 : o.current.clientHeight + 20 + 65,
+        height: O ? 328 : o.current.clientHeight + 24 + 65,
         transition: P ? void 0 : "height 0.2s ease"
       } : {}
     }, [O, j, P]);
@@ -93,7 +93,9 @@ function O(e) {
         children: y.NW.string(y.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: E.footer,
+      className: a()(E.footer, {
+        [E.floatingFooter]: j
+      }),
       children: [j && O ? (0, r.jsx)("div", {
         className: E.gradient
       }) : null, (0, r.jsxs)("div", {

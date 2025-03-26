@@ -1,6 +1,6 @@
 /**
   Module ID: 52272
-  Original File Name: 96be66c55cf93f50
+  Original File Name: a2298988f16e4c66
 **/
 .draftBadge__53d72 {
     color: var(--primary-860);
@@ -7132,7 +7132,7 @@ html .progress__61462 {
 }
 
 .mainContent__083ae {
-    margin: 12px 0 16px;
+    margin: 12px 0 0;
     text-align: flex-start;
     padding: 0 16px 16px;
     display: flex;
@@ -7143,12 +7143,15 @@ html .progress__61462 {
 }
 
 .footer__083ae {
+    box-sizing: border-box;
+    width: 100%
+}
+
+.floatingFooter__083ae {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    box-sizing: border-box;
-    width: 100%;
     z-index: 1
 }
 
@@ -7172,7 +7175,7 @@ html .progress__61462 {
 }
 
 .hideDetailsButton__083ae {
-    margin-top: -16px
+    margin-top: -8px
 }
 
 .hideDetailsButtonInner__083ae {
@@ -12243,4 +12246,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=96be66c55cf93f50.css.map*/
+/*# sourceMappingURL=a2298988f16e4c66.css.map*/
