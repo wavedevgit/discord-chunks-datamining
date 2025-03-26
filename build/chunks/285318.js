@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,7 +10,7 @@ var r = n(200651),
   l = n(388032),
   o = n(866507);
 
-function A(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function A(e) {
   return e
 }
 
-function c(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,14 +42,14 @@ function c(e, t) {
   }), e
 }
 
-function d(e) {
+function u(e) {
   let {
     preset: t,
     toggled: n,
     onToggle: i
   } = e, {
-    headerText: A,
-    subtitleText: c
+    headerText: c,
+    subtitleText: d
   } = function(e) {
     let t = null,
       n = null;
@@ -83,11 +83,11 @@ function d(e) {
       className: o.keywordListTextContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
-        children: A
+        children: c
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: c
+        children: d
       })]
     }), (0, r.jsx)(s.XZJ, {
       className: o.toggle,
@@ -98,31 +98,31 @@ function d(e) {
   })
 }
 
-function u(e) {
+function m(e) {
   var t;
   let {
     rule: n,
     onChangeRule: s
-  } = e, [l, o] = i.useState(new Set(null == n ? void 0 : null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.presets)), u = i.useMemo(() => e => {
-    s(c(A({}, n), {
-      triggerMetadata: c(A({}, n.triggerMetadata), {
+  } = e, [l, o] = i.useState(new Set(null == n ? void 0 : null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.presets)), m = i.useMemo(() => e => {
+    s(d(c({}, n), {
+      triggerMetadata: d(c({}, n.triggerMetadata), {
         presets: e
       })
     }))
   }, [s, n]), g = e => {
     let t = new Set(l);
-    t.has(e) ? t.delete(e) : t.add(e), o(t), u(Array.from(t))
+    t.has(e) ? t.delete(e) : t.add(e), o(t), m(Array.from(t))
   };
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(d, {
+    children: [(0, r.jsx)(u, {
       preset: a.Ux.PROFANITY,
       toggled: l.has(a.Ux.PROFANITY),
       onToggle: g
-    }), (0, r.jsx)(d, {
+    }), (0, r.jsx)(u, {
       preset: a.Ux.SLURS,
       toggled: l.has(a.Ux.SLURS),
       onToggle: g
-    }), (0, r.jsx)(d, {
+    }), (0, r.jsx)(u, {
       preset: a.Ux.SEXUAL_CONTENT,
       toggled: l.has(a.Ux.SEXUAL_CONTENT),
       onToggle: g

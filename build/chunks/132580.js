@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -13,9 +13,9 @@ var i = n(481060),
 function o(e) {
   var t, n, {
       className: o,
-      color: A = (0, s.Lq)(a.Ilk.BRAND_500)
+      color: c = (0, s.Lq)(a.Ilk.BRAND_500)
     } = e,
-    c = function(e, t) {
+    d = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -47,9 +47,9 @@ function o(e) {
       })
     }
     return e
-  }({}, c), n = n = {
+  }({}, d), n = n = {
     text: l.NW.string(l.t.G6GWZ2),
-    color: A,
+    color: c,
     className: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

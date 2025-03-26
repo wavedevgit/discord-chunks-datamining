@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,11 +10,11 @@ var r = n(200651),
   l = n(226192),
   o = n(683579);
 
-function A(e) {
+function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, A = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), c = l.km(t.guildId), d = i.useMemo(() => (0, s.U5)(), []), u = (e, r) => {
+  } = e, c = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), d = l.km(t.guildId), u = i.useMemo(() => (0, s.U5)(), []), m = (e, r) => {
     var i, s;
     if (null == r) return;
     let a = t.actions.some(e => e.type === r.type),
@@ -55,20 +55,20 @@ function A(e) {
   }, g = e => async n => {
     let r = t.actions.find(t => t.type === e),
       i = null != r,
-      s = d[e],
+      s = u[e],
       a = n ? r : s;
     if (null != a && (!i || n)) {
-      let n = c[e];
-      null != n ? u(!0, await n(t, a)) : u(!0, a)
-    } else u(!1, i ? r : s)
+      let n = d[e];
+      null != n ? m(!0, await n(t, a)) : m(!0, a)
+    } else m(!1, i ? r : s)
   };
   return (0, r.jsx)(r.Fragment, {
-    children: A.map(e => {
+    children: c.map(e => {
       let n = t.actions.find(t => t.type === e);
       return (0, r.jsx)(o.Z, {
         guildId: t.guildId,
         triggerType: t.triggerType,
-        action: null != n ? n : d[e],
+        action: null != n ? n : u[e],
         toggled: null != n,
         onToggleAction: g(e)
       }, e)

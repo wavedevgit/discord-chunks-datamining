@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -10,10 +10,10 @@ var i = n(481060),
   a = n(862085),
   l = n(769998),
   o = n(671066),
-  A = n(273504),
-  c = n(15470);
+  c = n(273504),
+  d = n(15470);
 
-function d(e) {
+function u(e) {
   let {
     action: t,
     triggerType: n,
@@ -22,28 +22,28 @@ function d(e) {
   } = e, o = (0, s.c)(t.type, t, n);
   if (null == o) return null;
   let {
-    headerText: A,
-    descriptionText: d,
-    icon: u
+    headerText: c,
+    descriptionText: u,
+    icon: m
   } = o;
   return (0, r.jsxs)("div", {
-    className: c.actionContainer,
+    className: d.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: c.actionIconContainer,
-      children: (0, r.jsx)(u, {
+      className: d.actionIconContainer,
+      children: (0, r.jsx)(m, {
         size: "md",
         color: "currentColor",
-        className: c.actionIcon
+        className: d.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: c.actionTextContainer,
+      className: d.actionTextContainer,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-sm/semibold",
-        children: A
+        children: c
       }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: d
+        children: u
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(i.XZJ, {
@@ -51,50 +51,50 @@ function d(e) {
         type: i.XZJ.Types.INVERTED,
         value: a,
         onChange: () => l(!1),
-        className: c.__invalid_actionCheckbox
+        className: d.__invalid_actionCheckbox
       })
     })]
   })
 }
 
-function u(e) {
+function m(e) {
   let {
     action: t,
     guildId: n,
     triggerType: i,
     toggled: s,
-    onToggleAction: c
+    onToggleAction: d
   } = e;
   switch (t.type) {
-    case A.jj.FLAG_TO_CHANNEL:
+    case c.jj.FLAG_TO_CHANNEL:
       return (0, r.jsx)(o.Z, {
         action: t,
         triggerType: i,
         toggled: s,
-        onToggleAction: c
+        onToggleAction: d
       });
-    case A.jj.USER_COMMUNICATION_DISABLED:
+    case c.jj.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(l.Z, {
         action: t,
         guildId: n,
         triggerType: i,
         toggled: s,
-        onToggleAction: c
+        onToggleAction: d
       });
-    case A.jj.BLOCK_MESSAGE:
+    case c.jj.BLOCK_MESSAGE:
       return (0, r.jsx)(a.Z, {
         action: t,
         triggerType: i,
         toggled: s,
-        onToggleAction: c
+        onToggleAction: d
       });
     default:
-      return (0, r.jsx)(d, {
+      return (0, r.jsx)(u, {
         action: t,
         guildId: n,
         toggled: s,
         triggerType: i,
-        onToggleAction: c
+        onToggleAction: d
       })
   }
 }

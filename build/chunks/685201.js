@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => s
@@ -14,7 +14,7 @@ function s(e) {
       color: l = "currentColor",
       foreground: o
     } = e,
-    A = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -46,7 +46,7 @@ function s(e) {
       })
     }
     return e
-  }({}, (0, i.Z)(A)), n = n = {
+  }({}, (0, i.Z)(c)), n = n = {
     width: s,
     height: a,
     viewBox: "0 0 24 24",

@@ -1,5 +1,4 @@
-/** Chunk was on 10396 **/
-"use strict";
+/** Chunk was on 77160 **/
 e.exports = {
   spinnerContainer: "spinnerContainer__69ef9",
   container: "container__69ef9",

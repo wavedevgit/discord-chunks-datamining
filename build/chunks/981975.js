@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120), n(653041), n(86693), n(536091);
 var r = n(200651),
   i = n(192379),
@@ -9,26 +9,26 @@ var r = n(200651),
   a = n.n(s),
   l = n(392711),
   o = n.n(l),
-  A = n(442837),
-  c = n(481060),
-  d = n(570140),
-  u = n(275759),
+  c = n(442837),
+  d = n(481060),
+  u = n(570140),
+  m = n(275759),
   g = n(313201),
-  f = n(63063),
-  m = n(243730),
-  p = n(764260),
-  h = n(946724),
-  C = n(95242),
-  b = n(530198),
-  v = n(420966),
-  x = n(203377),
-  N = n(981631),
-  j = n(856651),
-  E = n(388032),
-  I = n(85177),
-  O = n(104978);
+  p = n(63063),
+  h = n(243730),
+  f = n(764260),
+  b = n(946724),
+  x = n(95242),
+  j = n(530198),
+  N = n(420966),
+  v = n(203377),
+  _ = n(981631),
+  C = n(856651),
+  O = n(388032),
+  y = n(85177),
+  I = n(104978);
 
-function y(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,44 +46,44 @@ function y(e) {
   }
   return e
 }
-let w = (0, g.hQ)();
+let S = (0, g.hQ)();
 
-function P(e, t) {
-  return t !== u.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
+function T(e, t) {
+  return t !== m.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
     [...e]
   ]
 }
 
-function B(e) {
+function P(e) {
   let {
     handleAddVerificationClicked: t,
     locked: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.headerNoConfigContainer,
-    children: [(0, r.jsx)(c.X6q, {
-      className: I.headerHeading,
+    className: y.headerNoConfigContainer,
+    children: [(0, r.jsx)(d.X6q, {
+      className: y.headerHeading,
       variant: "eyebrow",
-      children: E.NW.string(E.t.nMir29)
-    }), (0, r.jsx)(c.Text, {
+      children: O.NW.string(O.t.nMir29)
+    }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: E.NW.format(E.t.q5f7tL, {
-        helpdeskArticleUrl: f.Z.getArticleURL(N.BhN.CONNECTION_DETAILS_ADMIN)
+      children: O.NW.format(O.t.q5f7tL, {
+        helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
       })
-    }), (0, r.jsx)(c.zxk, {
+    }), (0, r.jsx)(d.zxk, {
       disabled: n,
-      className: I.addVerificationButton,
-      size: c.zxk.Sizes.MEDIUM,
-      look: c.zxk.Looks.FILLED,
-      color: c.zxk.Colors.BRAND,
+      className: y.addVerificationButton,
+      size: d.zxk.Sizes.MEDIUM,
+      look: d.zxk.Looks.FILLED,
+      color: d.zxk.Colors.BRAND,
       onClick: t,
-      children: E.NW.string(E.t["OSvW5+"])
+      children: O.NW.string(O.t["OSvW5+"])
     })]
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     guild: t,
     role: n,
@@ -92,19 +92,19 @@ function D(e) {
     integrations: o
   } = e, {
     headerHeight: g,
-    headerRef: D
-  } = (0, C.Z)(0), {
-    scrolledToTop: T,
-    handleScroll: S
-  } = (0, v.V)(), L = (0, A.e7)([m.Z], () => {
+    headerRef: w
+  } = (0, x.Z)(0), {
+    scrolledToTop: R,
+    handleScroll: Z
+  } = (0, N.V)(), D = (0, c.e7)([h.Z], () => {
     var e;
-    return null === (e = m.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[n.id]
-  }, [n.id, t.id]), R = (0, A.Wu)([h.Z], () => {
+    return null === (e = h.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[n.id]
+  }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
     var e;
-    return null !== (e = h.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) && void 0 !== e ? e : []
-  }), Q = R.length > 1 ? u.O1.OR : u.O1.AND, W = i.useMemo(() => Q === u.O1.OR ? R.flat() : null != R && R.length > 0 ? R[0] : [], [Q, R]), Z = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
+    return null !== (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) && void 0 !== e ? e : []
+  }), k = A.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => k === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [k, A]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
 
-  function k(e) {
+  function M(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
       r = [...W];
     r.push({
@@ -113,88 +113,88 @@ function D(e) {
       applicationId: t,
       operator: void 0,
       value: void 0
-    }), (0, p.d_)(n.id, P(r, Q))
+    }), (0, f.d_)(n.id, T(r, k))
   }
 
-  function M() {
-    d.Z.dispatch({
+  function G() {
+    u.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: e => k(e),
-      excludedPlatformTypes: Z,
+      onComplete: e => M(e),
+      excludedPlatformTypes: L,
       integrations: o,
-      onCompleteApplication: e => k(j.Kt, e)
+      onCompleteApplication: e => M(C.Kt, e)
     })
   }
-  let _ = null;
-  if (0 === W.length) _ = (0, r.jsx)(B, {
-    handleAddVerificationClicked: M,
+  let U = null;
+  if (0 === W.length) U = (0, r.jsx)(P, {
+    handleAddVerificationClicked: G,
     locked: s
   });
   else if (W.length > 0) {
-    var G;
+    var B;
     let e = null;
-    W.length < 10 && (e = (0, r.jsx)(c.zxk, {
-      className: a()(I.addVerificationButton, I.addVerificationButtonAppend),
-      size: c.zxk.Sizes.LARGE,
-      look: c.zxk.Looks.BLANK,
-      color: c.zxk.Colors.LINK,
-      onClick: M,
+    W.length < 10 && (e = (0, r.jsx)(d.zxk, {
+      className: a()(y.addVerificationButton, y.addVerificationButtonAppend),
+      size: d.zxk.Sizes.LARGE,
+      look: d.zxk.Looks.BLANK,
+      color: d.zxk.Colors.LINK,
+      onClick: G,
       disabled: s,
       children: (0, r.jsxs)("div", {
-        className: I.addVerificationButtonAppendTextContainer,
-        children: [(0, r.jsx)(c.oFk, {
+        className: y.addVerificationButtonAppendTextContainer,
+        children: [(0, r.jsx)(d.oFk, {
           size: "xs",
           color: "currentColor"
-        }), E.NW.string(E.t["OSvW5+"])]
+        }), O.NW.string(O.t["OSvW5+"])]
       })
-    })), _ = (0, r.jsxs)(r.Fragment, {
-      children: [(G = () => (0, p.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
+    })), U = (0, r.jsxs)(r.Fragment, {
+      children: [(B = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: I.headerTitleContainer,
+          className: y.headerTitleContainer,
           children: [(0, r.jsx)("div", {
-            className: I.headerTitleTextContainer,
-            children: (0, r.jsx)(c.X6q, {
+            className: y.headerTitleTextContainer,
+            children: (0, r.jsx)(d.X6q, {
               variant: "eyebrow",
-              children: E.NW.string(E.t.nMir29)
+              children: O.NW.string(O.t.nMir29)
             })
-          }), (0, r.jsx)(c.zxk, {
-            className: I.headerTitleButton,
-            size: c.zxk.Sizes.TINY,
-            look: c.zxk.Looks.LINK,
-            color: c.zxk.Colors.LINK,
-            onClick: G,
+          }), (0, r.jsx)(d.zxk, {
+            className: y.headerTitleButton,
+            size: d.zxk.Sizes.TINY,
+            look: d.zxk.Looks.LINK,
+            color: d.zxk.Colors.LINK,
+            onClick: B,
             disabled: s,
-            children: E.NW.string(E.t.ntW1cX)
+            children: O.NW.string(O.t.ntW1cX)
           })]
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: E.NW.format(E.t.q5f7tL, {
-            helpdeskArticleUrl: f.Z.getArticleURL(N.BhN.CONNECTION_DETAILS_ADMIN)
+          children: O.NW.format(O.t.q5f7tL, {
+            helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, s) {
-        let a = P(i, u.O1.OR);
-        return (0, r.jsx)(c.xJW, {
-          className: I.operatorContainer,
-          title: E.NW.string(E.t.Xs7PHR),
-          children: (0, r.jsx)(c.FXm, {
+        let a = T(i, m.O1.OR);
+        return (0, r.jsx)(d.xJW, {
+          className: y.operatorContainer,
+          title: O.NW.string(O.t.Xs7PHR),
+          children: (0, r.jsx)(d.FXm, {
             options: [{
-              name: E.NW.string(E.t["W3iY5+"]),
-              value: u.O1.OR
+              name: O.NW.string(O.t["W3iY5+"]),
+              value: m.O1.OR
             }, {
-              name: E.NW.string(E.t.gHXS9P),
-              value: u.O1.AND
+              name: O.NW.string(O.t.gHXS9P),
+              value: m.O1.AND
             }],
             onChange: e => s(i, e.value),
             value: n,
             disabled: e || a.length < 2,
-            "aria-labelledby": w
+            "aria-labelledby": S
           })
         })
-      }(s, n.id, Q, W, (e, t) => (0, p.d_)(n.id, P(e, t))), function(e, t, n, i, s) {
+      }(s, n.id, k, W, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
         function a(n, r) {
           let i = [];
-          for (let t of e) i.push(y({}, t));
+          for (let t of e) i.push(E({}, t));
           if (null == n) {
             let t = e[r];
             null !== t && null == t.connectionMetadataField && null == t.operator && null == t.value ? i = i.filter(e => null == t.applicationId ? e.connectionType !== t.connectionType : e.connectionType !== t.connectionType && e.applicationId !== t.applicationId) : i.splice(r, 1)
@@ -232,7 +232,7 @@ function D(e) {
               })(Object(t)).forEach(function(n) {
                 Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
               }), e
-            }(y({}, t[0].configuration), {
+            }(E({}, t[0].configuration), {
               connectionMetadataField: void 0,
               operator: void 0,
               value: void 0
@@ -244,50 +244,50 @@ function D(e) {
           })
         }
         return (0, r.jsx)("div", {
-          className: I.configurationsContainer,
-          children: Array.from(l.values()).map(e => (0, r.jsx)(b.Z, {
+          className: y.configurationsContainer,
+          children: Array.from(l.values()).map(e => (0, r.jsx)(j.Z, {
             configurationItems: e,
             onConfigurationChange: a,
             locked: n,
             integrations: s
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(W, e => (0, p.d_)(n.id, P(e, Q)), s, n.id, o), e]
+      }(W, e => (0, f.d_)(n.id, T(e, k)), s, n.id, o), e]
     })
   }
-  return (0, r.jsx)(c.yWw, {
-    className: I.scroller,
+  return (0, r.jsx)(d.yWw, {
+    className: y.scroller,
     style: {
       scrollPaddingTop: g
     },
-    onScroll: S,
+    onScroll: Z,
     children: (0, r.jsxs)("div", {
-      className: O.contentWidth,
+      className: I.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: a()(O.header, O.stickyHeader, {
-          [O.stickyHeaderElevated]: !T
+        className: a()(I.header, I.stickyHeader, {
+          [I.stickyHeaderElevated]: !R
         }),
-        ref: D,
-        children: (0, r.jsx)(v.Z, {
+        ref: w,
+        children: (0, r.jsx)(N.Z, {
           guild: t,
           role: n,
-          selectedSection: x.ZI.VERIFICATIONS,
+          selectedSection: v.ZI.VERIFICATIONS,
           setSelectedSection: l
         })
-      }), (null != L ? L : 0) > 0 ? (0, r.jsxs)("div", {
-        className: I.warningContainer,
-        children: [(0, r.jsx)(c.P4T, {
+      }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
+        className: y.warningContainer,
+        children: [(0, r.jsx)(d.P4T, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
-          className: I.warningIcon
-        }), (0, r.jsx)(c.Text, {
+          className: y.warningIcon
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: E.NW.string(E.t["2aFeeX"])
+          children: O.NW.string(O.t["2aFeeX"])
         })]
-      }) : null, _]
+      }) : null, U]
     })
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   ZP: () => W
@@ -9,29 +9,29 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  A = n(239091),
-  c = n(479531),
-  d = n(616780),
-  u = n(100527),
+  c = n(239091),
+  d = n(479531),
+  u = n(616780),
+  m = n(100527),
   g = n(906732),
-  f = n(184301),
-  m = n(347475),
-  p = n(594174),
-  h = n(626135),
-  C = n(243730),
-  b = n(434404),
-  v = n(946724),
-  x = n(130341),
-  N = n(95242),
-  j = n(420966),
-  E = n(566476),
-  I = n(203377),
-  O = n(981631),
-  y = n(388032),
-  w = n(567295),
-  P = n(104978);
+  p = n(184301),
+  h = n(347475),
+  f = n(594174),
+  b = n(626135),
+  x = n(243730),
+  j = n(434404),
+  N = n(946724),
+  v = n(130341),
+  _ = n(95242),
+  C = n(420966),
+  O = n(566476),
+  y = n(203377),
+  I = n(981631),
+  E = n(388032),
+  S = n(567295),
+  T = n(104978);
 
-function B(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function B(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,15 +62,15 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function T(e, t, n) {
+async function R(e, t, n) {
   let i = e.roles.filter(e => e !== n);
   try {
-    await b.Z.updateMemberRoles(t, e.id, i, [], [n])
+    await j.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
-    let e = new c.Z(t);
-    (0, o.h7j)(t => (0, r.jsx)(o.ConfirmModal, D(B({}, t), {
-      header: y.NW.string(y.t.R0RpRU),
-      confirmText: y.NW.string(y.t.BddRzc),
+    let e = new d.Z(t);
+    (0, o.h7j)(t => (0, r.jsx)(o.ConfirmModal, w(P({}, t), {
+      header: E.NW.string(E.t.R0RpRU),
+      confirmText: E.NW.string(E.t.BddRzc),
       confirmButtonColor: o.zxk.Colors.BRAND,
       children: (0, r.jsx)(o.Text, {
         color: "text-normal",
@@ -81,89 +81,89 @@ async function T(e, t, n) {
   }
 }
 
-function S(e) {
+function Z(e) {
   let {
     member: t,
     guildId: s,
     roleId: l,
-    locked: c
-  } = e, u = i.useMemo(() => ({
+    locked: d
+  } = e, m = i.useMemo(() => ({
     [s]: [t.id]
   }), [s, t.id]);
 
   function g(e) {
-    if (e.stopPropagation(), !c) {
+    if (e.stopPropagation(), !d) {
       if (e.shiftKey) {
-        T(t, s, l);
+        R(t, s, l);
         return
       }! function(e, t, n) {
-        let i = v.Z.getRole(n);
-        (0, o.h7j)(s => (0, r.jsxs)(o.ConfirmModal, D(B({}, s), {
-          header: y.NW.string(y.t["7sFNfX"]),
-          confirmText: y.NW.string(y.t.N86XcH),
-          cancelText: y.NW.string(y.t["ETE/oK"]),
-          onConfirm: () => T(e, t, n),
+        let i = N.Z.getRole(n);
+        (0, o.h7j)(s => (0, r.jsxs)(o.ConfirmModal, w(P({}, s), {
+          header: E.NW.string(E.t["7sFNfX"]),
+          confirmText: E.NW.string(E.t.N86XcH),
+          cancelText: E.NW.string(E.t["ETE/oK"]),
+          onConfirm: () => R(e, t, n),
           children: [(0, r.jsx)(o.Text, {
             color: "text-normal",
             variant: "text-md/normal",
-            children: y.NW.format(y.t.scORUl, {
+            children: E.NW.format(E.t.scORUl, {
               username: e.name,
               roleName: null == i ? void 0 : i.name
             })
           }), (0, r.jsx)(o.Text, {
-            className: w.removeTip,
+            className: S.removeTip,
             color: "text-muted",
             variant: "text-md/normal",
-            children: y.NW.string(y.t.jxIxJC)
+            children: E.NW.string(E.t.jxIxJC)
           })]
         })))
       }(t, s, l)
     }
   }
 
-  function h(e) {
-    let i = p.default.getUser(t.id);
-    null != i && (0, A.jW)(e, async () => {
+  function b(e) {
+    let i = f.default.getUser(t.id);
+    null != i && (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("26976"), n.e("2427")]).then(n.bind(n, 415118));
-      return t => (0, r.jsx)(e, D(B({}, t), {
+      return t => (0, r.jsx)(e, w(P({}, t), {
         user: i,
         guildId: s,
         showChatItems: !1
       }))
     })
   }
-  return (0, d.$)(u), (0, r.jsx)("div", {
-    className: P.contentWidth,
+  return (0, u.$)(m), (0, r.jsx)("div", {
+    className: T.contentWidth,
     children: (0, r.jsx)(o.yRy, {
-      renderPopout: e => (0, r.jsx)(m.Z, B({
+      renderPopout: e => (0, r.jsx)(h.Z, P({
         guildId: s,
         userId: t.id,
         roleId: l
       }, e)),
       position: "left",
-      preload: () => (0, f.Z)(t.id, t.avatarURL, {
+      preload: () => (0, p.Z)(t.id, t.avatarURL, {
         guildId: s
       }),
-      children: e => (0, r.jsxs)(o.P3F, D(B({}, e), {
-        className: w.memberRow,
-        onContextMenu: h,
-        children: [(0, r.jsx)(E.Z, {
-          className: w.memberDetails,
+      children: e => (0, r.jsxs)(o.P3F, w(P({}, e), {
+        className: S.memberRow,
+        onContextMenu: b,
+        children: [(0, r.jsx)(O.Z, {
+          className: S.memberDetails,
           avatarURL: t.avatarURL,
           name: t.name,
           bot: t.bot,
           verifiedBot: t.verifiedBot,
           userTag: t.userTag
         }), (0, r.jsx)("div", {
-          className: w.removeButtonContainer,
+          className: S.removeButtonContainer,
           children: (0, r.jsx)(o.ua7, {
-            text: c ? y.NW.string(y.t.wkrQaG) : y.NW.string(y.t["7sFNfX"]),
+            text: d ? E.NW.string(E.t.wkrQaG) : E.NW.string(E.t["7sFNfX"]),
             position: "top",
-            children: e => (0, r.jsx)(o.P3F, D(B({}, e), {
-              className: a()(w.removeButton, {
-                [w.removeButtonDisabled]: c
+            children: e => (0, r.jsx)(o.P3F, w(P({}, e), {
+              className: a()(S.removeButton, {
+                [S.removeButtonDisabled]: d
               }),
               onClick: g,
               children: (0, r.jsx)(o.k$p, {
@@ -178,23 +178,23 @@ function S(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     handleAddClick: t,
     locked: n
   } = e;
   return (0, r.jsx)("div", {
-    className: P.contentWidth,
+    className: T.contentWidth,
     children: (0, r.jsxs)("div", {
-      className: a()(w.memberRow, w.emptyRowContainer),
+      className: a()(S.memberRow, S.emptyRowContainer),
       children: [(0, r.jsx)(o.BFJ, {
         size: "md",
         color: "currentColor"
       }), (0, r.jsx)(o.Text, {
-        className: w.emptyRowText,
+        className: S.emptyRowText,
         variant: "text-sm/semibold",
         color: "text-muted",
-        children: y.NW.format(y.t.P9pZOT, {
+        children: E.NW.format(E.t.P9pZOT, {
           addMembersHook: function(e, i) {
             return n ? null : (0, r.jsx)(o.eee, {
               onClick: t,
@@ -207,27 +207,27 @@ function L(e) {
   })
 }
 
-function R(e) {
+function A(e) {
   let {
     guildId: t,
     roleId: n,
     query: s,
     headerHeight: a,
     locked: l,
-    onScroll: A,
-    roleMembers: c,
-    handleAddClick: d
+    onScroll: c,
+    roleMembers: d,
+    handleAddClick: u
   } = e, {
-    analyticsLocations: f
-  } = (0, g.ZP)(u.Z.MEMBER_LIST), m = i.useMemo(() => s.trim().toLowerCase(), [s]);
-  (0, x.rY)(t, m);
-  let p = i.useMemo(() => c.filter(e => (0, x.eg)(m, e)), [c, m]),
-    h = i.useMemo(() => p.sort((e, t) => e.name.localeCompare(t.name)), [p]);
+    analyticsLocations: p
+  } = (0, g.ZP)(m.Z.MEMBER_LIST), h = i.useMemo(() => s.trim().toLowerCase(), [s]);
+  (0, v.rY)(t, h);
+  let f = i.useMemo(() => d.filter(e => (0, v.eg)(h, e)), [d, h]),
+    b = i.useMemo(() => f.sort((e, t) => e.name.localeCompare(t.name)), [f]);
   return (0, r.jsx)(g.Gt, {
-    value: f,
+    value: p,
     children: (0, r.jsx)(o._2F, {
-      className: w.list,
-      sections: [Math.max(p.length, 1)],
+      className: S.list,
+      sections: [Math.max(f.length, 1)],
       sectionHeight: a,
       renderSection: () => (0, r.jsx)("div", {
         style: {
@@ -242,24 +242,24 @@ function R(e) {
         let {
           row: i
         } = e;
-        if (0 === h.length) return (0, r.jsx)(L, {
-          handleAddClick: d,
+        if (0 === b.length) return (0, r.jsx)(D, {
+          handleAddClick: u,
           locked: l
         }, "empty");
-        let s = h[i];
-        return (0, r.jsx)(S, {
+        let s = b[i];
+        return (0, r.jsx)(Z, {
           member: s,
           guildId: t,
           roleId: n,
           locked: l
         }, s.id)
       },
-      onScroll: A
+      onScroll: c
     })
   })
 }
 
-function Q(e) {
+function k(e) {
   let {
     query: t,
     setQuery: n,
@@ -267,20 +267,20 @@ function Q(e) {
     handleAddClick: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: w.searchContainer,
+    className: S.searchContainer,
     children: [(0, r.jsx)(o.E1j, {
       size: o.E1j.Sizes.MEDIUM,
       query: t,
       onChange: n,
       onClear: () => n(""),
-      placeholder: y.NW.string(y.t.pYHobG),
-      "aria-label": y.NW.string(y.t.pYHobG)
+      placeholder: E.NW.string(E.t.pYHobG),
+      "aria-label": E.NW.string(E.t.pYHobG)
     }), (0, r.jsx)(o.zxk, {
-      className: w.addButton,
+      className: S.addButton,
       size: o.zxk.Sizes.SMALL,
       onClick: s,
       disabled: i,
-      children: y.NW.string(y.t.cHszXl)
+      children: E.NW.string(E.t.cHszXl)
     })]
   })
 }
@@ -289,19 +289,19 @@ function W(e) {
   let {
     guild: t,
     role: s,
-    locked: A,
-    setSelectedSection: c
-  } = e, [d, u] = i.useState(""), {
+    locked: c,
+    setSelectedSection: d
+  } = e, [u, m] = i.useState(""), {
     headerHeight: g,
-    headerRef: f
-  } = (0, N.Z)(0), {
-    scrolledToTop: m,
-    handleScroll: p
-  } = (0, j.V)(), b = s.managed || A, v = (0, x.e)(t.id, s.id), E = (0, l.e7)([C.Z], () => {
+    headerRef: p
+  } = (0, _.Z)(0), {
+    scrolledToTop: h,
+    handleScroll: f
+  } = (0, C.V)(), j = s.managed || c, N = (0, v.e)(t.id, s.id), O = (0, l.e7)([x.Z], () => {
     var e, n;
-    return null !== (n = null === (e = C.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[s.id]) && void 0 !== n ? n : 0
-  }) > v.length, T = () => {
-    h.default.track(O.rMx.OPEN_MODAL, {
+    return null !== (n = null === (e = x.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[s.id]) && void 0 !== n ? n : 0
+  }) > N.length, R = () => {
+    b.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
       location_section: "Members"
@@ -309,49 +309,49 @@ function W(e) {
       let {
         default: e
       } = await Promise.all([n.e("7590"), n.e("50327")]).then(n.bind(n, 24722));
-      return n => (0, r.jsx)(e, D(B({}, n), {
+      return n => (0, r.jsx)(e, w(P({}, n), {
         roleId: s.id,
         guildId: t.id
       }))
     })
   };
   return (0, r.jsxs)("div", {
-    className: w.container,
+    className: S.container,
     children: [(0, r.jsx)("div", {
-      className: w.headerContainer,
-      ref: f,
+      className: S.headerContainer,
+      ref: p,
       children: (0, r.jsx)("div", {
-        className: P.contentWidth,
+        className: T.contentWidth,
         children: (0, r.jsxs)("div", {
-          className: a()(P.header, {
-            [P.stickyHeaderElevated]: !m
+          className: a()(T.header, {
+            [T.stickyHeaderElevated]: !h
           }),
-          children: [(0, r.jsx)(j.Z, {
+          children: [(0, r.jsx)(C.Z, {
             guild: t,
             role: s,
-            selectedSection: I.ZI.MEMBERS,
-            setSelectedSection: c
-          }), (0, r.jsx)(Q, {
-            query: d,
-            setQuery: u,
-            locked: b,
-            handleAddClick: T
-          }), E ? (0, r.jsx)(o.Wn, {
-            className: w.searchWarning,
+            selectedSection: y.ZI.MEMBERS,
+            setSelectedSection: d
+          }), (0, r.jsx)(k, {
+            query: u,
+            setQuery: m,
+            locked: j,
+            handleAddClick: R
+          }), O ? (0, r.jsx)(o.Wn, {
+            className: S.searchWarning,
             messageType: o.QYI.INFO,
-            children: y.NW.string(y.t.RQxHZ2)
+            children: E.NW.string(E.t.RQxHZ2)
           }) : null]
         })
       })
-    }), (0, r.jsx)(R, {
+    }), (0, r.jsx)(A, {
       headerHeight: g + 8,
-      query: d,
+      query: u,
       guildId: t.id,
       roleId: s.id,
-      locked: b,
-      onScroll: p,
-      roleMembers: v,
-      handleAddClick: T
+      locked: j,
+      onScroll: f,
+      roleMembers: N,
+      handleAddClick: R
     })]
   })
 }

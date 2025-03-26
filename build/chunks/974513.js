@@ -1,9 +1,9 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  O4: () => h,
-  OA: () => p,
-  Wu: () => C
+  O4: () => b,
+  OA: () => f,
+  Wu: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -11,13 +11,13 @@ var r = n(200651),
   a = n(481060),
   l = n(312913),
   o = n(45966),
-  A = n(637853),
-  c = n(983135),
-  d = n(208665),
-  u = n(290511),
+  c = n(637853),
+  d = n(983135),
+  u = n(208665),
+  m = n(290511),
   g = n(388032);
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,58 +49,58 @@ function m(e, t) {
   }), e
 }
 
-function p(e, t) {
-  let n = (0, s.Wu)([d.Z], () => (0, A.kl)(e, t, d.Z.editedOnboardingPrompts));
-  return [(0, s.Wu)([d.Z], () => (0, A.kl)(e, t, d.Z.editedOnboardingPrompts, A.V7)), n]
+function f(e, t) {
+  let n = (0, s.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
+  return [(0, s.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
 }
 
-function h(e) {
+function b(e) {
   let t = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(e)),
     [n, r] = function(e) {
-      let t = (0, s.Wu)([o.Z], () => (0, A.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
-      return [(0, s.Wu)([o.Z], () => (0, A.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), A.V7)), t]
+      let t = (0, s.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
+      return [(0, s.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), c.V7)), t]
     }(e);
-  return !!t && r.length >= u.md && n.length >= u.X
+  return !!t && r.length >= m.md && n.length >= m.X
 }
 
-function C(e) {
+function x(e) {
   let {
     guildId: t,
     className: n
-  } = e, A = (0, l.UQ)(t).advancedModeAllowed, d = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), p = i.useCallback(() => {
-    let e = d ? u.Un.ONBOARDING_DEFAULT : u.Un.ONBOARDING_ADVANCED;
-    d ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, m(f({
+  } = e, c = (0, l.UQ)(t).advancedModeAllowed, u = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), f = i.useCallback(() => {
+    let e = u ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
+    u ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
       header: g.NW.string(g.t["49+ONj"]),
       confirmText: g.NW.string(g.t.R9GHyc),
       cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
-      onConfirm: () => (0, c.Ts)(t, e)
+      onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: g.NW.string(g.t.TLkoOj)
       })
-    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, m(f({
+    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
       header: g.NW.string(g.t.YB9xUF),
       confirmText: g.NW.string(g.t.ts6u6u),
       cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
-      onConfirm: () => (0, c.Ts)(t, e)
+      onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: g.NW.string(g.t.BcGGVl)
       })
     })))
-  }, [t, d]);
-  return A ? (0, r.jsx)("div", {
+  }, [t, u]);
+  return c ? (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(a.eee, {
-      onClick: p,
+      onClick: f,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-link",
-        children: d ? g.NW.string(g.t.OmpxW1) : g.NW.string(g.t.ozsQBA)
+        children: u ? g.NW.string(g.t.OmpxW1) : g.NW.string(g.t.ozsQBA)
       })
     })
   }) : null

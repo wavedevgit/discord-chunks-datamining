@@ -1,9 +1,9 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  P5: () => c,
+  P5: () => d,
   TJ: () => o,
-  UA: () => A,
+  UA: () => c,
   d5: () => l
 });
 var r, i = n(626135),
@@ -21,7 +21,7 @@ function o(e, t) {
   return t.sufficient || s || !r ? t.sufficient || s ? "settings" : "intro" : "disqualified"
 }
 
-function A(e, t) {
+function c(e, t) {
   let n = !1,
     r = {
       guild_id: e.id,
@@ -30,7 +30,7 @@ function A(e, t) {
   (null == t || e.discoverySplash !== t.discoverySplash) && (r.discovery_splash_edit_type = null == e.discoverySplash ? "removed" : "uploaded", n = !0), (null == t || e.features.has(a.oNc.DISCOVERABLE) !== t.features.has(a.oNc.DISCOVERABLE)) && (r.is_discoverable = e.features.has(a.oNc.DISCOVERABLE), n = !0), (null == t || e.rulesChannelId !== t.rulesChannelId) && (r.rules_channel_id = e.rulesChannelId, n = !0), n && i.default.track(a.rMx.GUILD_SETTINGS_DISCOVERY_UPDATED, r)
 }
 
-function c(e) {
+function d(e) {
   var t, n;
   return null !== (n = null === (t = s.U2[e]) || void 0 === t ? void 0 : t.map(e => e())) && void 0 !== n ? n : []
 }

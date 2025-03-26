@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  P: () => A
+  P: () => c
 });
 var r = n(200651),
   i = n(192379),
@@ -10,13 +10,13 @@ var r = n(200651),
   l = n(594174),
   o = n(981631);
 
-function A(e) {
+function c(e) {
   let t = (null == e ? void 0 : e.hasFeature(o.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === !0,
-    A = (null == e ? void 0 : e.hasFeature(o.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0,
-    c = (0, s.e7)([l.default], () => l.default.getCurrentUser()),
-    d = (null == e ? void 0 : e.isOwner(c)) === !0;
+    c = (null == e ? void 0 : e.hasFeature(o.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0,
+    d = (0, s.e7)([l.default], () => l.default.getCurrentUser()),
+    u = (null == e ? void 0 : e.isOwner(d)) === !0;
   i.useEffect(() => {
-    null != e && t && d && (0, a.ZDy)(async () => {
+    null != e && t && u && (0, a.ZDy)(async () => {
       let {
         default: t
       } = await n.e("710").then(n.bind(n, 32342));
@@ -41,7 +41,7 @@ function A(e) {
           return e
         }({}, n), s = s = {
           guildId: e.id,
-          requireTeamSetup: A
+          requireTeamSetup: c
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -54,5 +54,5 @@ function A(e) {
         }), i))
       }
     })
-  }, [t, A, e, d])
+  }, [t, c, e, u])
 }

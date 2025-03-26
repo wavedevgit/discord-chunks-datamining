@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -10,9 +10,9 @@ var i = n(249849),
   a = n(388032),
   l = n(585025);
 let o = ["#0fa3dd", "#a7e4e4", "#a2ccdd"],
-  A = ["#0b3215", "#a6b51a", "#35748a", "#65a88f", "#621c12", "#f96748", "#ffbbbb"],
-  c = [.25, .9, .9],
-  d = [{
+  c = ["#0b3215", "#a6b51a", "#35748a", "#65a88f", "#621c12", "#f96748", "#ffbbbb"],
+  d = [.25, .9, .9],
+  u = [{
     base: 8,
     tint: 1
   }, {
@@ -22,7 +22,7 @@ let o = ["#0fa3dd", "#a7e4e4", "#a2ccdd"],
     base: 5,
     tint: 1
   }],
-  u = [.05, .4, .15, .33, .1, .3, .6],
+  m = [.05, .4, .15, .33, .1, .3, .6],
   g = [{
     base: 8,
     tint: 1
@@ -46,14 +46,14 @@ let o = ["#0fa3dd", "#a7e4e4", "#a2ccdd"],
     tint: 1
   }];
 
-function f(e) {
+function p(e) {
   var t, n, {
-      width: f,
-      height: m,
-      primaryTintColor: p,
-      secondaryTintColor: h
+      width: p,
+      height: h,
+      primaryTintColor: f,
+      secondaryTintColor: b
     } = e,
-    C = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -69,21 +69,21 @@ function f(e) {
       return i
     }(e, ["width", "height", "primaryTintColor", "secondaryTintColor"]);
   let {
-    primaryColorsTransformed: b,
-    secondaryColorsTransformed: v
+    primaryColorsTransformed: j,
+    secondaryColorsTransformed: N
   } = (0, i.s)({
     primaryBaseColors: o,
-    primaryTintColor: p,
-    primaryTintLuminances: c,
-    primaryLuminanceWeights: d,
-    secondaryBaseColors: A,
-    secondaryTintColor: h,
-    secondaryTintLuminances: u,
+    primaryTintColor: f,
+    primaryTintLuminances: d,
+    primaryLuminanceWeights: u,
+    secondaryBaseColors: c,
+    secondaryTintColor: b,
+    secondaryTintLuminances: m,
     secondaryLuminanceWeights: g
   }), {
-    styleContent: x,
-    containerId: N
-  } = (0, s.bC)(b, v);
+    styleContent: v,
+    containerId: _
+  } = (0, s.bC)(j, N);
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -101,10 +101,10 @@ function f(e) {
       })
     }
     return e
-  }({}, C), n = n = {
+  }({}, x), n = n = {
     "aria-label": a.NW.string(a.t.nH6S2d),
-    width: f,
-    height: m,
+    width: p,
+    height: h,
     viewBox: "0 0 ".concat(s.Km, " ").concat(s.md),
     children: [(0, r.jsxs)("defs", {
       children: [(0, r.jsx)("defs", {
@@ -115,15 +115,15 @@ function f(e) {
           y1: "0",
           y2: "1",
           children: [(0, r.jsx)("stop", {
-            stopColor: b[2],
+            stopColor: j[2],
             offset: "0%"
           }), (0, r.jsx)("stop", {
-            stopColor: b[0],
+            stopColor: j[0],
             offset: "100%"
           })]
         })
       }), (0, r.jsx)("style", {
-        children: x
+        children: v
       })]
     }), (0, r.jsx)("use", {
       href: "".concat(l, "#sky"),
@@ -132,7 +132,7 @@ function f(e) {
       }
     }), (0, r.jsx)("use", {
       href: "".concat(l, "#wrapper-layer"),
-      id: N
+      id: _
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  t: () => w
+  t: () => S
 }), n(47120), n(627341);
 var r = n(200651),
   i = n(192379),
@@ -9,115 +9,115 @@ var r = n(200651),
   a = n(399606),
   l = n(481060),
   o = n(76535),
-  A = n(395586),
-  c = n(204875),
-  d = n(715796),
-  u = n(411667),
+  c = n(395586),
+  d = n(204875),
+  u = n(715796),
+  m = n(411667),
   g = n(434404),
-  f = n(962086),
-  m = n(225675),
-  p = n(703656),
-  h = n(430824),
-  C = n(594174),
-  b = n(63063),
-  v = n(267101),
-  x = n(294294),
-  N = n(310800),
-  j = n(833695),
-  E = n(981631),
-  I = n(176505),
-  O = n(388032),
-  y = n(570216);
+  p = n(962086),
+  h = n(225675),
+  f = n(703656),
+  b = n(430824),
+  x = n(594174),
+  j = n(63063),
+  N = n(267101),
+  v = n(294294),
+  _ = n(310800),
+  C = n(833695),
+  O = n(981631),
+  y = n(176505),
+  I = n(388032),
+  E = n(570216);
 
-function w(e) {
+function S(e) {
   let {
     guildId: t,
     hasValidApplication: n
   } = e, {
-    listingsLoaded: w
-  } = (0, v.eD)(t), P = (0, a.e7)([h.Z], () => h.Z.getGuild(t)), B = (0, a.e7)([C.default], () => C.default.getCurrentUser()), D = (null == P ? void 0 : P.isOwner(B)) === !0, {
-    loading: T
-  } = (0, o.H)(t), [S, L] = i.useState(n ? "manage_listings" : "payment");
-  (0, d.P)(P);
-  let R = i.useCallback(() => {
-    if (null == P) return;
-    let e = h.Z.getRole(P.id, P.getEveryoneRoleId());
+    listingsLoaded: S
+  } = (0, N.eD)(t), T = (0, a.e7)([b.Z], () => b.Z.getGuild(t)), P = (0, a.e7)([x.default], () => x.default.getCurrentUser()), w = (null == T ? void 0 : T.isOwner(P)) === !0, {
+    loading: R
+  } = (0, o.H)(t), [Z, D] = i.useState(n ? "manage_listings" : "payment");
+  (0, u.P)(T);
+  let A = i.useCallback(() => {
+    if (null == T) return;
+    let e = b.Z.getRole(T.id, T.getEveryoneRoleId());
     if (null == e) return;
     g.Z.close();
     let t = {
       [e.id]: e
     };
-    (0, f.iD)(P.id, {
-      type: m.z.SERVER_SHOP,
+    (0, p.iD)(T.id, {
+      type: h.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
-      returnToSection: E.pNK.GUILD_PRODUCTS
-    }), (0, p.uL)(E.Z5c.CHANNEL(P.id, I.oC.GUILD_SHOP))
-  }, [P]);
-  if (!w || T) return (0, r.jsx)(l.$jN, {});
-  if (null == P) return null;
-  let Q = (0, r.jsxs)(r.Fragment, {
+      returnToSection: O.pNK.GUILD_PRODUCTS
+    }), (0, f.uL)(O.Z5c.CHANNEL(T.id, y.oC.GUILD_SHOP))
+  }, [T]);
+  if (!S || R) return (0, r.jsx)(l.$jN, {});
+  if (null == T) return null;
+  let k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.vwX, {
         tag: l.RB0.H1,
-        children: O.NW.string(O.t.X6h2g4)
+        children: I.NW.string(I.t.X6h2g4)
       }), (0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
-        children: O.NW.format(O.t.xiYuDg, {
-          monetizationPolicyLink: b.Z.getArticleURL(E.BhN.CREATOR_POLICY),
-          serverProductsSupportLink: b.Z.getCreatorSupportArticleURL(E.BhN.SERVER_PRODUCTS)
+        children: I.NW.format(I.t.xiYuDg, {
+          monetizationPolicyLink: j.Z.getArticleURL(O.BhN.CREATOR_POLICY),
+          serverProductsSupportLink: j.Z.getCreatorSupportArticleURL(O.BhN.SERVER_PRODUCTS)
         })
       })]
     }),
     W = (0, r.jsxs)(l.njP, {
       type: "top",
       look: "brand",
-      className: y.tabBar,
-      "aria-label": O.NW.string(O.t.X6h2g4),
-      selectedItem: S,
-      onItemSelect: L,
-      children: [(0, r.jsx)(c.Z, {
+      className: E.tabBar,
+      "aria-label": I.NW.string(I.t.X6h2g4),
+      selectedItem: Z,
+      onItemSelect: D,
+      children: [(0, r.jsx)(d.Z, {
         id: "basic_info",
-        disabledTooltip: O.NW.string(O.t.NVDuUV),
+        disabledTooltip: I.NW.string(I.t.NVDuUV),
         disabled: !n,
-        children: O.NW.string(O.t.w27QAQ)
-      }), (0, r.jsx)(c.Z, {
+        children: I.NW.string(I.t.w27QAQ)
+      }), (0, r.jsx)(d.Z, {
         id: "manage_listings",
-        disabledTooltip: O.NW.string(O.t.NVDuUV),
+        disabledTooltip: I.NW.string(I.t.NVDuUV),
         disabled: !n,
-        children: O.NW.string(O.t.wlZ1mp)
-      }), D ? (0, r.jsx)(l.njP.Item, {
+        children: I.NW.string(I.t.wlZ1mp)
+      }), w ? (0, r.jsx)(l.njP.Item, {
         id: "payment",
-        className: y.tabBarItem,
-        children: O.NW.string(O.t.YBrFe3)
+        className: E.tabBarItem,
+        children: I.NW.string(I.t.YBrFe3)
       }) : null, n ? (0, r.jsx)("div", {
-        className: y.previewButton,
+        className: E.previewButton,
         children: (0, r.jsx)(l.zxk, {
-          onClick: R,
+          onClick: A,
           color: l.zxk.Colors.PRIMARY,
           size: l.zxk.Sizes.SMALL,
           look: l.zxk.Looks.OUTLINED,
-          children: O.NW.string(O.t.vM81yc)
+          children: I.NW.string(I.t.vM81yc)
         })
       }) : null]
     }),
-    Z = (0, s.EQ)(S).with("basic_info", () => (0, r.jsx)(x.Z, {
+    L = (0, s.EQ)(Z).with("basic_info", () => (0, r.jsx)(v.Z, {
       guildId: t
-    })).with("manage_listings", () => (0, r.jsx)(N.Z, {
+    })).with("manage_listings", () => (0, r.jsx)(_.Z, {
       guildId: t
-    })).with("payment", () => (0, r.jsx)(j.Z, {
+    })).with("payment", () => (0, r.jsx)(C.Z, {
       guildId: t
     })).exhaustive(),
-    k = w ? (0, r.jsx)(l.njP.Panel, {
-      id: S,
-      children: Z
+    M = S ? (0, r.jsx)(l.njP.Panel, {
+      id: Z,
+      children: L
     }) : (0, r.jsx)(l.$jN, {});
-  return (0, r.jsxs)(A.AL, {
+  return (0, r.jsxs)(c.AL, {
     guildId: t,
-    children: [Q, (0, r.jsx)(u.Z, {
-      guild: P
+    children: [k, (0, r.jsx)(m.Z, {
+      guild: T
     }), (0, r.jsx)("div", {
-      className: y.tabBarContainer,
+      className: E.tabBarContainer,
       children: W
-    }), k]
+    }), M]
   })
 }

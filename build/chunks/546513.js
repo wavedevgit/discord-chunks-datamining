@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -15,18 +15,18 @@ function o(e) {
     guildId: t,
     rules: n,
     triggerType: o,
-    initWithEdit: A
+    initWithEdit: c
   } = e, {
-    perGuildMaxCount: c
-  } = i.I6[o], d = 0 === n.length, u = c > n.length && !d;
+    perGuildMaxCount: d
+  } = i.I6[o], u = 0 === n.length, m = d > n.length && !u;
   return (0, r.jsxs)(r.Fragment, {
-    children: [d && (0, r.jsx)(a.Z, {
+    children: [u && (0, r.jsx)(a.Z, {
       guildId: t,
       triggerType: o
     }), n.map(e => (0, r.jsx)(l.Z, {
       rule: e,
-      initWithEdit: A
-    }, e.id)), u && (0, r.jsx)(s.Z, {
+      initWithEdit: c
+    }, e.id)), m && (0, r.jsx)(s.Z, {
       guildId: t,
       triggerType: o
     })]

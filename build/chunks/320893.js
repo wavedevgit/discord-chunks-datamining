@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -10,28 +10,28 @@ var i = n(780384),
   a = n(410030),
   l = n(293810),
   o = n(388032),
-  A = n(939922),
-  c = n(934961),
-  d = n(568294),
-  u = n(867861),
+  c = n(939922),
+  d = n(934961),
+  u = n(568294),
+  m = n(867861),
   g = n(860790),
-  f = n(268953),
-  m = n(487703),
-  p = n(458050),
-  h = n(334364),
-  C = n(431712);
+  p = n(268953),
+  h = n(487703),
+  f = n(458050),
+  b = n(334364),
+  x = n(431712);
 
-function b(e) {
-  return (0, i.wj)(e) ? A.revenueSharePercentageDark : A.revenueSharePercentageLight
+function j(e) {
+  return (0, i.wj)(e) ? c.revenueSharePercentageDark : c.revenueSharePercentageLight
 }
 
-function v() {
+function N() {
   let e = (0, a.ZP)(),
     t = {
       backgroundColor: (0, i.wj)(e) ? "#2e3638" : "var(--background-primary)"
     };
   return (0, r.jsxs)("div", {
-    className: A.earningsPreviewContainer,
+    className: c.earningsPreviewContainer,
     style: t,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.Text, {
@@ -42,18 +42,18 @@ function v() {
         size: 8
       }), (0, r.jsx)(s.X6q, {
         variant: "heading-md/bold",
-        className: b(e),
+        className: j(e),
         children: o.NW.string(o.t.LdjJGx)
       })]
     }), (0, r.jsx)("img", {
-      className: A.roundAvatar,
-      src: m,
+      className: c.roundAvatar,
+      src: h,
       alt: o.NW.string(o.t.NgjpTE)
     })]
   })
 }
 
-function x() {
+function v() {
   let e = (0, a.ZP)();
 
   function t(e) {
@@ -63,7 +63,7 @@ function x() {
       horizontal: s
     } = e;
     return (0, r.jsx)("div", {
-      className: s ? A.horizontalConnector : A.verticalConnector,
+      className: s ? c.horizontalConnector : c.verticalConnector,
       style: (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -100,35 +100,35 @@ function x() {
     })
   }
   return (0, r.jsxs)("div", {
-    className: A.avatarGridContainer,
+    className: c.avatarGridContainer,
     "aria-label": o.NW.string(o.t["P2B/0d"]),
     children: [(0, r.jsxs)("div", {
-      className: A.avatarCard,
+      className: c.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 24
       }), (0, r.jsx)("img", {
-        className: A.roundAvatar,
-        src: (0, i.wj)(e) ? c : d,
+        className: c.roundAvatar,
+        src: (0, i.wj)(e) ? d : u,
         alt: ""
       }), (0, r.jsx)(t, {
         horizontal: !0,
         length: 12
       })]
     }), (0, r.jsxs)("div", {
-      className: A.avatarCard,
+      className: c.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 24
       }), (0, r.jsx)("img", {
-        className: A.roundAvatar,
-        src: u,
+        className: c.roundAvatar,
+        src: m,
         alt: ""
       })]
     }), (0, r.jsxs)("div", {
-      className: A.avatarCard,
+      className: c.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 12
       }), (0, r.jsx)("img", {
-        className: A.roundAvatar,
+        className: c.roundAvatar,
         src: g,
         alt: ""
       }), (0, r.jsx)(t, {
@@ -136,60 +136,60 @@ function x() {
         length: 12
       })]
     }), (0, r.jsxs)("div", {
-      className: A.avatarCard,
+      className: c.avatarCard,
       children: [(0, r.jsx)(t, {
         length: 12
       }), (0, r.jsx)("img", {
-        className: A.roundAvatar,
-        src: f,
+        className: c.roundAvatar,
+        src: p,
         alt: ""
       })]
     })]
   })
 }
 
-function N() {
+function _() {
   return (0, r.jsxs)("div", {
-    className: A.earningBenefitCard,
+    className: c.earningBenefitCard,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: o.NW.string(o.t["9CdmS0"])
     }), (0, r.jsx)(s.LZC, {
       size: 32
-    }), (0, r.jsx)(v, {}), (0, r.jsx)(s.LZC, {
+    }), (0, r.jsx)(N, {}), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(x, {})]
+    }), (0, r.jsx)(v, {})]
   })
 }
 
-function j() {
+function C() {
   return (0, r.jsxs)("div", {
-    className: A.followerBenefitCard,
+    className: c.followerBenefitCard,
     children: [(0, r.jsx)(s.Text, {
-      className: A.followerBenefitText,
+      className: c.followerBenefitText,
       variant: "text-md/normal",
       color: "header-secondary",
       children: o.NW.string(o.t.qsKRUV)
     }), (0, r.jsx)("img", {
-      className: A.roleSubscriptionSocial,
-      src: C,
+      className: c.roleSubscriptionSocial,
+      src: x,
       alt: o.NW.string(o.t.yTPpra)
     }), (0, r.jsx)("img", {
-      className: A.roleSubscriptionLanyardIllo,
-      src: h,
+      className: c.roleSubscriptionLanyardIllo,
+      src: b,
       alt: o.NW.string(o.t["+gd9QU"])
     })]
   })
 }
 
-function E() {
+function O() {
   let e = (0, a.ZP)();
   return (0, r.jsxs)("div", {
-    className: A.revenueShareBenefitCard,
+    className: c.revenueShareBenefitCard,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsxs)(s.X6q, {
-        className: b(e),
+        className: j(e),
         style: {
           fontSize: "50px",
           lineHeight: "52px"
@@ -202,14 +202,14 @@ function E() {
         children: o.NW.string(o.t.AewsXF)
       })]
     }), (0, r.jsx)("img", {
-      className: A.roleSubscriptionEarningIllo,
-      src: p,
+      className: c.roleSubscriptionEarningIllo,
+      src: f,
       alt: o.NW.string(o.t.fD9Wv7)
     })]
   })
 }
 
-function I() {
+function y() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-lg/semibold",
@@ -218,8 +218,8 @@ function I() {
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: A.creatorBenefitsContainer,
-      children: [(0, r.jsx)(N, {}), (0, r.jsx)(j, {}), (0, r.jsx)(E, {})]
+      className: c.creatorBenefitsContainer,
+      children: [(0, r.jsx)(_, {}), (0, r.jsx)(C, {}), (0, r.jsx)(O, {})]
     })]
   })
 }

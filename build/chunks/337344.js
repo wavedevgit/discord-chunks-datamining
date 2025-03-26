@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  L: () => u
+  L: () => m
 });
 var r = n(200651);
 n(192379);
@@ -10,24 +10,24 @@ var i = n(481060),
   a = n(225675),
   l = n(671533),
   o = n(434404),
-  A = n(981631),
-  c = n(388032),
-  d = n(464303);
+  c = n(981631),
+  d = n(388032),
+  u = n(464303);
 
-function u(e) {
+function m(e) {
   let {
     guildId: t,
     role: n
   } = e;
   return (0, r.jsxs)(i.xJW, {
-    title: c.NW.string(c.t.arFPfH),
-    className: d.container,
+    title: d.NW.string(d.t.arFPfH),
+    className: u.container,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: c.NW.string(c.t["IT/0AA"])
+      children: d.NW.string(d.t["IT/0AA"])
     }), (0, r.jsxs)(i.zxk, {
-      className: d.button,
-      innerClassName: d.buttonInner,
+      className: u.button,
+      innerClassName: u.buttonInner,
       size: i.zxk.Sizes.SMALL,
       color: i.zxk.Colors.PRIMARY,
       onClick: () => {
@@ -36,14 +36,14 @@ function u(e) {
           roles: {
             [n.id]: n
           },
-          returnToSection: A.pNK.ROLES
+          returnToSection: c.pNK.ROLES
         })
       },
-      children: [c.NW.string(c.t.arFPfH), (0, r.jsx)(l.Z, {
+      children: [d.NW.string(d.t.arFPfH), (0, r.jsx)(l.Z, {
         width: 16,
         height: 16,
         direction: l.Z.Directions.RIGHT,
-        className: d.arrowIcon
+        className: u.arrowIcon
       })]
     })]
   })

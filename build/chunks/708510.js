@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  O: () => N
+  O: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -9,41 +9,41 @@ var r = n(200651),
   a = n(481060),
   l = n(456268),
   o = n(863249),
-  A = n(999382),
-  c = n(209054),
-  d = n(96788),
-  u = n(217472),
+  c = n(999382),
+  d = n(209054),
+  u = n(96788),
+  m = n(217472),
   g = n(202905),
-  f = n(44867),
-  m = n(557359),
-  p = n(658666),
-  h = n(307375),
-  C = n(384632),
-  b = n(388032),
-  v = n(241197);
+  p = n(44867),
+  h = n(557359),
+  f = n(658666),
+  b = n(307375),
+  x = n(384632),
+  j = n(388032),
+  N = n(241197);
 
-function x(e) {
+function v(e) {
   let {
     pendingState: t
   } = e, n = i.useRef(!1), s = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, c.k)(e), (0, d.V)(e), (0, l.le)(), (0, l.aC)(e)
+      await (0, d.k)(e), (0, u.V)(e), (0, l.le)(), (0, l.aC)(e)
     } finally {
       n.current = !0
     }
   }, [n]);
   switch (t.joinType) {
-    case C.A.INVITE:
-      return (0, r.jsx)(m.A, {
+    case x.A.INVITE:
+      return (0, r.jsx)(h.A, {
         requireTerms: t.requireTerms,
         rules: t.termRules
       });
-    case C.A.APPLY:
+    case x.A.APPLY:
       return (0, r.jsx)(g.r, {
         pendingFields: t.pendingVerificationFields
       });
-    case C.A.DISCOVERABLE:
-      return (0, r.jsx)(f.c, {
+    case x.A.DISCOVERABLE:
+      return (0, r.jsx)(p.c, {
         fetchDiscoveryData: s,
         settingsView: t.settingsView,
         requireTerms: t.requireTerms,
@@ -52,14 +52,14 @@ function x(e) {
   }
 }
 
-function N() {
-  let e = (0, s.e7)([A.Z], () => A.Z.getProps().guild),
-    t = (0, s.e7)([p.Z], () => p.Z.pendingState);
+function _() {
+  let e = (0, s.e7)([c.Z], () => c.Z.getProps().guild),
+    t = (0, s.e7)([f.Z], () => f.Z.pendingState);
   i.useEffect(() => {
     (null == e ? void 0 : e.id) != null && o.ZP.fetchVerificationForm(e.id)
   }, [null == e ? void 0 : e.id]);
   let n = i.useCallback(t => {
-    (null == e ? void 0 : e.id) != null && u.Z.setSelectedJoinType(e.id, t)
+    (null == e ? void 0 : e.id) != null && m.Z.setSelectedJoinType(e.id, t)
   }, [null == e ? void 0 : e.id]);
   if (null == e || null == t) return null;
   let {
@@ -70,15 +70,15 @@ function N() {
     children: [(0, r.jsx)(a.X6q, {
       color: "header-primary",
       variant: "heading-lg/semibold",
-      children: b.NW.string(b.t.YJlvBA)
-    }), (0, r.jsx)(h.h, {
+      children: j.NW.string(j.t.YJlvBA)
+    }), (0, r.jsx)(b.h, {
       onTypePicked: n,
       activeType: l,
       guild: e
     }), (0, r.jsx)("div", {
-      className: v.divider
+      className: N.divider
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(x, {
+      children: (0, r.jsx)(v, {
         pendingState: t
       })
     })]

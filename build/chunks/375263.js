@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  O: () => p
+  O: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -9,62 +9,62 @@ var r = n(200651),
   a = n(906732),
   l = n(516129),
   o = n(768581),
-  A = n(949640),
-  c = n(981631),
-  d = n(30513),
-  u = n(486324),
+  c = n(949640),
+  d = n(981631),
+  u = n(30513),
+  m = n(486324),
   g = n(200299),
-  f = n(388032),
-  m = n(669893);
+  p = n(388032),
+  h = n(669893);
 
-function p(e) {
+function f(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, p = t.hasFeature(c.oNc.BANNER), h = t.hasFeature(c.oNc.ANIMATED_BANNER), C = p && n, {
-    analyticsLocations: b
-  } = (0, a.ZP)(), v = i.useCallback((e, n) => {
-    (0, A.f4)(t, b, e, n)
-  }, [b, t]), x = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, A.E6)({
+  } = e, f = t.hasFeature(d.oNc.BANNER), b = t.hasFeature(d.oNc.ANIMATED_BANNER), x = f && n, {
+    analyticsLocations: j
+  } = (0, a.ZP)(), N = i.useCallback((e, n) => {
+    (0, c.f4)(t, j, e, n)
+  }, [j, t]), v = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
-      analyticsLocations: b,
-      analyticsSection: c.jXE.GUILD_BANNER,
-      analyticsObject: c.qAy.UPLOAD_IMAGE,
-      perks: (0, d.XO)()
+      analyticsLocations: j,
+      analyticsSection: d.jXE.GUILD_BANNER,
+      analyticsObject: d.qAy.UPLOAD_IMAGE,
+      perks: (0, u.XO)()
     })
-  }, [b, t]), N = (0, r.jsx)(l.Z, {
+  }, [j, t]), _ = (0, r.jsx)(l.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
       banner: e
-    }, h) : null,
-    disabled: !C,
-    onChange: v,
-    hint: f.NW.string(f.t.uPvxqK),
-    onOpenImageSelectModal: () => (0, A.mw)({
-      uploadType: u.pC.GUILD_BANNER,
+    }, b) : null,
+    disabled: !x,
+    onChange: N,
+    hint: p.NW.string(p.t.uPvxqK),
+    onOpenImageSelectModal: () => (0, c.mw)({
+      uploadType: m.pC.GUILD_BANNER,
       maxFileSizeBytes: g.B,
       onComplete: e => {
         let {
           imageUri: t,
           file: n
         } = e;
-        return v(t, n)
+        return N(t, n)
       },
       analyticsLocation: {
-        page: c.ZY5.GUILD_SETTINGS,
-        section: c.jXE.GUILD_BANNER
+        page: d.ZY5.GUILD_SETTINGS,
+        section: d.jXE.GUILD_BANNER
       },
-      analyticsLocations: b
+      analyticsLocations: j
     }),
-    enabled: C
+    enabled: x
   });
-  return p ? N : (0, r.jsx)(s.P3F, {
+  return f ? _ : (0, r.jsx)(s.P3F, {
     "aria-hidden": !0,
     tabIndex: -1,
-    className: m.upsell,
-    onClick: x,
-    children: N
+    className: h.upsell,
+    onClick: v,
+    children: _
   })
 }

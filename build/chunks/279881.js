@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   I: () => l
@@ -16,12 +16,12 @@ let a = new Map,
         var o;
         return null !== (o = r.get(n)) && void 0 !== o ? o : {}
       }
-      let A = await (0, s.MA)(n),
-        c = new Map(r);
-      return c.set(n, A), (0, i.j)(() => {
+      let c = await (0, s.MA)(n),
+        d = new Map(r);
+      return d.set(n, c), (0, i.j)(() => {
         e({
-          topGames: c
+          topGames: d
         })
-      }), a.set(n, Date.now()), A
+      }), a.set(n, Date.now()), c
     }
   }))

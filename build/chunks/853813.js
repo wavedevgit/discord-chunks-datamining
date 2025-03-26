@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => E
 });
 var r = n(200651),
   i = n(192379),
@@ -9,62 +9,62 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  A = n(367907),
-  c = n(605436),
-  d = n(228643),
-  u = n(496675),
+  c = n(367907),
+  d = n(605436),
+  u = n(228643),
+  m = n(496675),
   g = n(626135),
-  f = n(823379),
-  m = n(243730),
-  p = n(946724),
-  h = n(999382),
-  C = n(130341),
-  b = n(981975),
-  v = n(660962),
-  x = n(442182),
-  N = n(322816),
-  j = n(266665),
-  E = n(203377),
-  I = n(981631),
-  O = n(259869);
+  p = n(823379),
+  h = n(243730),
+  f = n(946724),
+  b = n(999382),
+  x = n(130341),
+  j = n(981975),
+  N = n(660962),
+  v = n(442182),
+  _ = n(322816),
+  C = n(266665),
+  O = n(203377),
+  y = n(981631),
+  I = n(259869);
 
-function y(e) {
+function E(e) {
   let t, {
       editRoleId: n,
       setEditRoleId: s,
-      selectedSection: y,
-      setSelectedSection: w
+      selectedSection: E,
+      setSelectedSection: S
     } = e,
-    P = (0, l.e7)([p.Z], () => p.Z.guild, []);
-  a()(null != P, "guildId cannot be null here");
+    T = (0, l.e7)([f.Z], () => f.Z.guild, []);
+  a()(null != T, "guildId cannot be null here");
   let {
-    role: B,
-    permissionSearchQuery: D
-  } = (0, l.cj)([p.Z], () => ({
-    role: p.Z.getRole(n),
-    permissionSearchQuery: p.Z.getPermissionSearchQuery()
+    role: P,
+    permissionSearchQuery: w
+  } = (0, l.cj)([f.Z], () => ({
+    role: f.Z.getRole(n),
+    permissionSearchQuery: f.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
-    null == B && s(null)
-  }, [B, s]);
-  let T = (0, l.e7)([u.Z], () => u.Z.getHighestRole(P), [P]),
-    S = (0, l.e7)([u.Z], () => !u.Z.isRoleHigher(P, T, B)),
-    L = i.useRef(null),
-    R = (0, l.e7)([h.Z], () => h.Z.getProps().integrations),
-    Q = {
-      role: B,
+    null == P && s(null)
+  }, [P, s]);
+  let R = (0, l.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
+    Z = (0, l.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
+    D = i.useRef(null),
+    A = (0, l.e7)([b.Z], () => b.Z.getProps().integrations),
+    k = {
+      role: P,
       editRoleId: n
     },
-    W = i.useRef(Q);
+    W = i.useRef(k);
   if (i.useEffect(() => {
-      W.current = Q
+      W.current = k
     }), i.useEffect(() => {
       var e, t;
       let {
         role: n,
         editRoleId: r
-      } = W.current, i = (0, C.UT)(y), s = null !== (t = null === (e = m.Z.getRoleMemberCount(P.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
-      g.default.track(I.rMx.ROLE_PAGE_VIEWED, function(e) {
+      } = W.current, i = (0, x.UT)(E), s = null !== (t = null === (e = h.Z.getRoleMemberCount(T.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
+      g.default.track(y.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -83,67 +83,67 @@ function y(e) {
         return e
       }({
         tab_opened: i,
-        is_everyone: (0, c.pM)(P.id, r),
+        is_everyone: (0, d.pM)(T.id, r),
         role_id: r,
         role_mentionable: null == n ? void 0 : n.mentionable,
         role_hoist: null == n ? void 0 : n.hoist,
         role_permissions: null == n ? void 0 : n.permissions.toString(),
         role_num_members: s
-      }, (0, A.hH)(P.id)))
-    }, [y, P.id, null == B ? void 0 : B.id]), i.useEffect(() => {
-      (null == B ? void 0 : B.id) != null && (0, d.sE)(P.id, B.id)
-    }, [P.id, null == B ? void 0 : B.id]), null == B) return null;
-  switch (y) {
-    case E.ZI.DISPLAY:
-      t = (0, r.jsx)(v.ZP, {
-        guild: P,
-        role: B,
-        locked: S,
-        highestRole: T,
-        setSelectedSection: w
-      });
-      break;
-    case E.ZI.PERMISSIONS:
+      }, (0, c.hH)(T.id)))
+    }, [E, T.id, null == P ? void 0 : P.id]), i.useEffect(() => {
+      (null == P ? void 0 : P.id) != null && (0, u.sE)(T.id, P.id)
+    }, [T.id, null == P ? void 0 : P.id]), null == P) return null;
+  switch (E) {
+    case O.ZI.DISPLAY:
       t = (0, r.jsx)(N.ZP, {
-        guild: P,
-        role: B,
-        locked: S,
-        setSelectedSection: w,
-        initialSearchQuery: D
+        guild: T,
+        role: P,
+        locked: Z,
+        highestRole: R,
+        setSelectedSection: S
       });
       break;
-    case E.ZI.VERIFICATIONS:
-      t = (0, r.jsx)(b.Z, {
-        guild: P,
-        role: B,
-        locked: S,
-        setSelectedSection: w,
-        integrations: null != R ? R : void 0
+    case O.ZI.PERMISSIONS:
+      t = (0, r.jsx)(_.ZP, {
+        guild: T,
+        role: P,
+        locked: Z,
+        setSelectedSection: S,
+        initialSearchQuery: w
       });
       break;
-    case E.ZI.MEMBERS:
-      t = (0, r.jsx)(x.ZP, {
-        guild: P,
-        role: B,
-        locked: S,
-        setSelectedSection: w
+    case O.ZI.VERIFICATIONS:
+      t = (0, r.jsx)(j.Z, {
+        guild: T,
+        role: P,
+        locked: Z,
+        setSelectedSection: S,
+        integrations: null != A ? A : void 0
+      });
+      break;
+    case O.ZI.MEMBERS:
+      t = (0, r.jsx)(v.ZP, {
+        guild: T,
+        role: P,
+        locked: Z,
+        setSelectedSection: S
       });
       break;
     default:
-      (0, f.vE)(y)
+      (0, p.vE)(E)
   }
   return (0, r.jsxs)(o.hjN, {
-    className: O.page,
-    children: [(0, r.jsx)(j.Z, {
-      guild: P,
+    className: I.page,
+    children: [(0, r.jsx)(C.Z, {
+      guild: T,
       currentRoleId: n,
       setCurrentRoleId: s,
-      setSelectedSection: w
+      setSelectedSection: S
     }), (0, r.jsx)("div", {
-      className: O.contentContainer,
-      ref: L,
+      className: I.contentContainer,
+      ref: D,
       children: (0, r.jsx)(o.JcV, {
-        containerRef: L,
+        containerRef: D,
         children: t
       })
     })]

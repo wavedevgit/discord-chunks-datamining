@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => s
@@ -19,9 +19,9 @@ let s = function() {
         s(e.body)
       } catch (e) {}
       l(!1)
-    }, A = r.useRef(!0);
+    }, c = r.useRef(!0);
   return r.useEffect(() => {
-    (A.current || t) && (A.current = !1, o())
+    (c.current || t) && (c.current = !1, o())
   }, [t]), {
     teams: n,
     loading: a,

@@ -1,9 +1,9 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Io: () => A,
-  cZ: () => c,
-  g6: () => d,
+  Io: () => c,
+  cZ: () => d,
+  g6: () => u,
   j7: () => o
 });
 var r = n(200651);
@@ -40,7 +40,7 @@ function o() {
   })
 }
 
-function A() {
+function c() {
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)(i.Text, {
@@ -67,7 +67,7 @@ function A() {
   })
 }
 
-function c() {
+function d() {
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)(i.Text, {
@@ -94,7 +94,7 @@ function c() {
   })
 }
 
-function d() {
+function u() {
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)(i.Text, {

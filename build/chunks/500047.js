@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   R: () => o
@@ -18,12 +18,12 @@ function o(e) {
     onMFAEnabled: n
   } = e, {
     isUserMFAEnabled: o,
-    isModerationMFAEnabled: A
-  } = (0, a.N)(), c = i.useCallback(async () => {
+    isModerationMFAEnabled: c
+  } = (0, a.N)(), d = i.useCallback(async () => {
     await t(), null == n || n()
-  }, [t, n]), d = i.useCallback(e => (0, r.jsx)(s.Z, {
-    onClick: c,
+  }, [t, n]), u = i.useCallback(e => (0, r.jsx)(s.Z, {
+    onClick: d,
     children: e
-  }), [c]);
-  return o && A ? l : d
+  }), [d]);
+  return o && c ? l : u
 }

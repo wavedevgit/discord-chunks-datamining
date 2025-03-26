@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
 var r = n(192379),
   i = n(442837),
@@ -9,19 +9,19 @@ var r = n(192379),
   a = n(110924),
   l = n(471613),
   o = n(889564);
-let A = [];
+let c = [];
 
-function c(e) {
+function d(e) {
   let {
     revision: t,
     emojis: n
   } = (0, i.cj)([l.Z], () => ({
     revision: l.Z.getEmojiRevision(e),
     emojis: l.Z.getEmojis(e)
-  })), c = (0, a.Z)(t);
+  })), d = (0, a.Z)(t);
   return r.useEffect(() => {
     (0, s.OQ)(e)
   }, [e]), r.useEffect(() => {
-    null != c && c < t && (0, s.OQ)(e)
-  }, [t, c, e]), r.useMemo(() => null == n ? A : n.filter(t => (0, o.Kt)(t, e)), [n, e])
+    null != d && d < t && (0, s.OQ)(e)
+  }, [t, d, e]), r.useMemo(() => null == n ? c : n.filter(t => (0, o.Kt)(t, e)), [n, e])
 }

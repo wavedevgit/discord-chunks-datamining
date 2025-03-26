@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  h: () => m
+  h: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -9,44 +9,44 @@ var r = n(200651),
   a = n.n(s),
   l = n(442837),
   o = n(481060),
-  A = n(496675),
-  c = n(63063),
-  d = n(384632),
-  u = n(981631),
+  c = n(496675),
+  d = n(63063),
+  u = n(384632),
+  m = n(981631),
   g = n(388032),
-  f = n(987708);
+  p = n(987708);
 
-function m(e) {
+function h(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: s
-  } = e, m = s.hasFeature(u.oNc.COMMUNITY), p = (0, l.e7)([A.Z], () => A.Z.can(u.Plq.ADMINISTRATOR, s)), h = i.useMemo(() => {
-    let e = t === d.A.DISCOVERABLE && !p,
-      n = m && (t === d.A.DISCOVERABLE || p);
+  } = e, h = s.hasFeature(m.oNc.COMMUNITY), f = (0, l.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, s)), b = i.useMemo(() => {
+    let e = t === u.A.DISCOVERABLE && !f,
+      n = h && (t === u.A.DISCOVERABLE || f);
     return [{
-      id: d.A.INVITE,
+      id: u.A.INVITE,
       title: g.NW.string(g.t["HQVS/P"]),
       body: g.NW.string(g.t.KzXzFR),
       icon: o.mBM,
       enabled: !e,
       ineligibleText: g.NW.string(g.t.LIZgwM)
     }, {
-      id: d.A.APPLY,
+      id: u.A.APPLY,
       title: g.NW.string(g.t.LrFEYW),
       body: g.NW.string(g.t.kJj2oK),
       icon: o._XJ,
       enabled: !e,
       ineligibleText: g.NW.string(g.t.LIZgwM)
     }, {
-      id: d.A.DISCOVERABLE,
+      id: u.A.DISCOVERABLE,
       title: g.NW.string(g.t.lhOHLy),
       body: g.NW.string(g.t.pqQylZ),
       icon: o.enf,
       enabled: n,
-      ineligibleText: m ? g.NW.string(g.t.iBpXPj) : g.NW.string(g.t["5TQ+eH"])
+      ineligibleText: h ? g.NW.string(g.t.iBpXPj) : g.NW.string(g.t["5TQ+eH"])
     }]
-  }, [t, m, p]);
+  }, [t, h, f]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.X6q, {
       color: "header-primary",
@@ -55,22 +55,22 @@ function m(e) {
     }), (0, r.jsx)(o.Text, {
       color: "text-secondary",
       variant: "text-sm/medium",
-      className: f.bodyText,
+      className: p.bodyText,
       children: g.NW.format(g.t["Y/jYws"], {
-        helpdeskArticle: c.Z.getArticleURL(u.BhN.MEMBER_APPLICATIONS)
+        helpdeskArticle: d.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(o.njP, {
       selectedItem: t,
       onItemSelect: n,
       orientation: "horizontal",
-      className: f.joinOptions,
-      children: h.map(e => {
+      className: p.joinOptions,
+      children: b.map(e => {
         let n = e.id === t;
         return (0, r.jsx)(o.njP.Item, {
           id: e.id,
           selectedItem: t,
           disableItemStyles: !0,
-          className: f.joinOptionTab,
+          className: p.joinOptionTab,
           disabled: !e.enabled,
           "aria-label": e.title,
           children: (0, r.jsx)(o.DY3, {
@@ -79,12 +79,12 @@ function m(e) {
             shouldShow: !e.enabled,
             spacing: 16,
             hideOnClick: !1,
-            className: f.tooltipContainer,
-            tooltipClassName: f.tooltip,
+            className: p.tooltipContainer,
+            tooltipClassName: p.tooltip,
             children: (0, r.jsxs)("div", {
-              className: a()(f.joinOptionContent, {
-                [f.active]: n,
-                [f.uninteractive]: !e.enabled
+              className: a()(p.joinOptionContent, {
+                [p.active]: n,
+                [p.uninteractive]: !e.enabled
               }),
               children: [(0, r.jsx)(e.icon, {
                 size: "md",

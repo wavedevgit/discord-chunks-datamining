@@ -1,4 +1,5 @@
-/** Chunk was on 40551 **/
+/** Chunk was on 63327 **/
+"use strict";
 e.exports = {
   clickable: "clickable_f01e54",
   trait: "trait_f01e54",

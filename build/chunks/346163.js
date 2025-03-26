@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(192379),
   i = n(399606),
@@ -9,79 +9,79 @@ var r = n(192379),
   a = n(594174),
   l = n(63063),
   o = n(223892),
-  A = n(58259),
-  c = n(158992),
-  d = n(159361),
-  u = n(377176),
+  c = n(58259),
+  d = n(158992),
+  u = n(159361),
+  m = n(377176),
   g = n(981631),
-  f = n(388032);
+  p = n(388032);
 
-function m(e) {
+function h(e) {
   let t;
   let n = (0, o.Ob)(e),
-    m = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-    p = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE),
-    h = (0, i.e7)([a.default], () => {
+    h = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
+    f = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE),
+    b = (0, i.e7)([a.default], () => {
       let t = a.default.getCurrentUser();
       return (null == e ? void 0 : e.isOwner(t)) === !0
     }),
     {
-      error: C,
-      loading: b,
-      createEnableRequest: v,
-      submittedRequest: x
-    } = (0, A.Z)(null == e ? void 0 : e.id),
-    {
-      loading: N,
-      error: j,
-      refresh: E,
-      eligibility: I
+      error: x,
+      loading: j,
+      createEnableRequest: N,
+      submittedRequest: v
     } = (0, c.Z)(null == e ? void 0 : e.id),
     {
-      isApplicationRejected: O,
-      requestCooldownDuration: y
-    } = (0, d.Z)(I),
-    w = (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === !0 || (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_DISABLED)) === !0,
+      loading: _,
+      error: C,
+      refresh: O,
+      eligibility: y
+    } = (0, d.Z)(null == e ? void 0 : e.id),
     {
-      isMonetizationReapplicationDisabled: P
+      isApplicationRejected: I,
+      requestCooldownDuration: E
+    } = (0, u.Z)(y),
+    S = (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === !0 || (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_DISABLED)) === !0,
+    {
+      isMonetizationReapplicationDisabled: T
     } = (0, s.eC)(null == e ? void 0 : e.id),
-    B = x || (null == I ? void 0 : I.isApplicationPending) === !0,
-    D = (null == I ? void 0 : I.canApply) === !0,
-    T = f.NW.format(f.t.aJUdOj, {
+    P = v || (null == y ? void 0 : y.isApplicationPending) === !0,
+    w = (null == y ? void 0 : y.canApply) === !0,
+    R = p.NW.format(p.t.aJUdOj, {
       faqUrl: l.Z.getArticleURL(g.BhN.CREATOR_FAQ)
     });
-  O && P ? t = !0 === m ? f.NW.format(f.t["0o1Q+v"], {
+  I && T ? t = !0 === h ? p.NW.format(p.t["0o1Q+v"], {
     communityGuidelineUrl: g.EYA.GUIDELINES
-  }) : f.NW.format(f.t.b6h59v, {
+  }) : p.NW.format(p.t.b6h59v, {
     communityGuidelineUrl: g.EYA.GUIDELINES
-  }) : O && null != y && (t = f.NW.format(f.t.TvX209, {
-    requestCooldownDuration: y,
+  }) : I && null != E && (t = p.NW.format(p.t.TvX209, {
+    requestCooldownDuration: E,
     creatorRevenuePolicyUrl: l.Z.getArticleURL(g.BhN.CREATOR_POLICY)
   }));
-  let S = n && h && !1 === p,
-    L = n && !1 === m,
-    R = (0, u.f)(),
-    Q = O && D && h ? f.NW.format(f.t.wbVIUF, {}) : void 0;
+  let Z = n && b && !1 === f,
+    D = n && !1 === h,
+    A = (0, m.f)(),
+    k = I && w && b ? p.NW.format(p.t.wbVIUF, {}) : void 0;
   return r.useEffect(() => {
-    S && E()
-  }, [E, S]), {
-    resubmittingEnableRequest: b,
-    resubmissionError: C,
-    isGuildOwner: h,
-    createEnableRequest: v,
-    resubmittedRequest: x,
-    eligibilityLoading: N,
-    eligibilityError: j,
-    refreshEligibility: E,
-    eligibility: I,
-    eligibleForMonetization: D,
-    isApplicationPending: B,
-    hasPreviousApplicationRejection: O,
+    Z && O()
+  }, [O, Z]), {
+    resubmittingEnableRequest: j,
+    resubmissionError: x,
+    isGuildOwner: b,
+    createEnableRequest: N,
+    resubmittedRequest: v,
+    eligibilityLoading: _,
+    eligibilityError: C,
+    refreshEligibility: O,
+    eligibility: y,
+    eligibleForMonetization: w,
+    isApplicationPending: P,
+    hasPreviousApplicationRejection: I,
     requestRejectedNoticeText: t,
-    reapplyNoticeText: Q,
-    showAcceptTermsFlow: L,
-    wasRejectedInV1: L && (w || O),
-    requirementsFinePrintText: T,
-    acceptTermsCheckboxText: R
+    reapplyNoticeText: k,
+    showAcceptTermsFlow: D,
+    wasRejectedInV1: D && (S || I),
+    requirementsFinePrintText: R,
+    acceptTermsCheckboxText: A
   }
 }

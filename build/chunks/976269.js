@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -9,27 +9,27 @@ var r = n(200651),
   a = n(852860),
   l = n(999382),
   o = n(8426),
-  A = n(969632),
-  c = n(388032);
+  c = n(969632),
+  d = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([A.Z], () => A.Z.getSettings()), l = (0, s.e7)([A.Z], () => A.Z.getSubmitting()), d = i.useCallback(() => {
+  } = e, n = (0, s.e7)([c.Z], () => c.Z.getSettings()), l = (0, s.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
     try {
       (0, o.oo)(t, n)
     } catch (e) {}
   }, [t, n]);
   return (0, r.jsx)(a.Z, {
-    onSave: d,
+    onSave: u,
     onReset: o.bj,
     submitting: l,
-    onSaveText: c.NW.string(c.t.R3BPHx)
+    onSaveText: d.NW.string(d.t.R3BPHx)
   })
 }
-let u = function() {
+let m = function() {
   let e = (0, s.e7)([l.Z], () => l.Z.getGuild());
-  return null == e ? null : (0, r.jsx)(d, {
+  return null == e ? null : (0, r.jsx)(u, {
     guildId: e.id
   })
 }

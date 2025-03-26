@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -10,42 +10,42 @@ var i = n(442837),
   a = n(863249),
   l = n(122051),
   o = n(430824),
-  A = n(389134),
-  c = n(650461),
-  d = n(388032),
-  u = n(154662);
+  c = n(389134),
+  d = n(650461),
+  u = n(388032),
+  m = n(154662);
 let g = e => {
   let {
     guildId: t,
     error: n,
     inSettings: g = !1
-  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, i.e7)([A.Z, c.ZP], () => {
+  } = e, p = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), h = (0, i.e7)([c.Z, d.ZP], () => {
     var e, n;
-    return g ? A.Z.getState().settings.verificationForm : null === (n = c.ZP.getStateForGuild(t)) || void 0 === n ? void 0 : null === (e = n.progress) || void 0 === e ? void 0 : e.verificationForm
+    return g ? c.Z.getState().settings.verificationForm : null === (n = d.ZP.getStateForGuild(t)) || void 0 === n ? void 0 : null === (e = n.progress) || void 0 === e ? void 0 : e.verificationForm
   });
-  return null == f ? null : (0, r.jsxs)("div", {
-    className: u.slideContent,
+  return null == p ? null : (0, r.jsxs)("div", {
+    className: m.slideContent,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-xxl/medium",
-      className: u.title,
-      children: g ? d.NW.string(d.t.aOQWKi) : d.NW.string(d.t.qxqOzM)
+      className: m.title,
+      children: g ? u.NW.string(u.t.aOQWKi) : u.NW.string(u.t.qxqOzM)
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: u.subtitle,
-      children: d.NW.string(d.t["tnz5//"])
+      className: m.subtitle,
+      children: u.NW.string(u.t["tnz5//"])
     }), (0, r.jsxs)("div", {
-      className: u.maxWidthContainer,
+      className: m.maxWidthContainer,
       children: [null != n && (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "status-danger",
-        className: u.errorText,
+        className: m.errorText,
         children: n
       }), (0, r.jsx)(l.Z, {
-        guild: f,
+        guild: p,
         isClanContext: !0,
         onFieldsSave: (e, t) => (a.ZP.updateVerificationFormFieldsLocal(e, [...t]), Promise.resolve()),
-        verificationForm: m
+        verificationForm: h
       })]
     })]
   })

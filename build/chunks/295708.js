@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,24 +9,24 @@ var r = n(200651),
   a = n(273504),
   l = n(981631),
   o = n(388032),
-  A = n(706930),
-  c = n(302126);
+  c = n(706930),
+  d = n(302126);
 
-function d(e) {
+function u(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, [d, u] = i.useState(t.name);
+  } = e, [u, m] = i.useState(t.name);
   return (0, r.jsxs)(s.xJW, {
     children: [(0, r.jsx)(s.Text, {
-      className: c.triggerHeader,
+      className: d.triggerHeader,
       variant: "text-sm/semibold",
       children: o.NW.string(o.t.WVAHxM)
     }), (0, r.jsx)(s.oil, {
-      className: A.ruleNameInput,
+      className: c.ruleNameInput,
       onChange: e => {
         var r, i;
-        u(e), n((r = function(e) {
+        m(e), n((r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -62,7 +62,7 @@ function d(e) {
       },
       placeholder: o.NW.string(o.t["5AO43N"]),
       maxLength: a.OU,
-      value: d
+      value: u
     })]
   })
 }

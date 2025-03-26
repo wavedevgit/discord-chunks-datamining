@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -10,26 +10,26 @@ var i = n(120356),
   a = n(442837),
   l = n(481060),
   o = n(706454),
-  A = n(594174),
-  c = n(509545),
-  d = n(78839),
-  u = n(930153),
+  c = n(594174),
+  d = n(509545),
+  u = n(78839),
+  m = n(930153),
   g = n(74538),
-  f = n(937615),
-  m = n(474936),
-  p = n(388032),
-  h = n(355446);
-let C = e => {
+  p = n(937615),
+  h = n(474936),
+  f = n(388032),
+  b = n(355446);
+let x = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, a.e7)([A.default], () => A.default.getCurrentUser()), C = (0, a.e7)([o.default], () => o.default.locale), b = (0, a.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription()), v = (0, a.e7)([c.Z], () => null != b ? c.Z.get(b.planId) : void 0), x = null !== (t = (0, a.e7)([c.Z], () => null != v ? c.Z.getForSkuAndInterval((0, g.Wz)(m.Si.GUILD), v.interval, v.intervalCount) : void 0)) && void 0 !== t ? t : m.GP[m.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.ZP], () => u.ZP.getPremiumTypeSubscription()), N = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : void 0), v = null !== (t = (0, a.e7)([d.Z], () => null != N ? d.Z.getForSkuAndInterval((0, g.Wz)(h.Si.GUILD), N.interval, N.intervalCount) : void 0)) && void 0 !== t ? t : h.GP[h.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
-    className: s()(h.wrapper, n),
+    className: s()(b.wrapper, n),
     children: [(0, r.jsx)(l.X6q, {
-      className: h.heading,
+      className: b.heading,
       variant: "heading-xl/semibold",
-      children: p.NW.string(p.t["3x1PFB"])
+      children: f.NW.string(f.t["3x1PFB"])
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       children: function(e) {
@@ -39,33 +39,33 @@ let C = e => {
           guildBoostingPlanId: i,
           interval: s,
           intervalCount: a
-        } = e, l = g.ZP.getDefaultPrice(i, g.ZP.isPremium(t)), o = g.ZP.getDefaultPrice(i, !1), A = (0, f.og)((0, f.T4)(l.amount, l.currency), s, a), c = (0, f.og)((0, f.T4)(o.amount, o.currency), s, a);
-        return g.ZP.isPremium(t, m.p9.TIER_2) ? p.NW.format(p.t.N3Icb2, {
-          price: A,
-          originalPrice: c,
+        } = e, l = g.ZP.getDefaultPrice(i, g.ZP.isPremium(t)), o = g.ZP.getDefaultPrice(i, !1), c = (0, p.og)((0, p.T4)(l.amount, l.currency), s, a), d = (0, p.og)((0, p.T4)(o.amount, o.currency), s, a);
+        return g.ZP.isPremium(t, h.p9.TIER_2) ? f.NW.format(f.t.N3Icb2, {
+          price: c,
+          originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: h.originalPrice,
+            className: b.originalPrice,
             children: e
           }, t),
-          freeSubscriptionCount: m.cb,
-          discountPercent: (0, u.T3)(n, m.Rr / 100)
-        }) : g.ZP.isPremium(t, m.p9.TIER_1) ? p.NW.format(p.t.nQLVBA, {
-          price: A,
-          originalPrice: c,
+          freeSubscriptionCount: h.cb,
+          discountPercent: (0, m.T3)(n, h.Rr / 100)
+        }) : g.ZP.isPremium(t, h.p9.TIER_1) ? f.NW.format(f.t.nQLVBA, {
+          price: c,
+          originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: h.originalPrice,
+            className: b.originalPrice,
             children: e
           }, t),
-          discountPercent: (0, u.T3)(n, m.Rr / 100)
-        }) : p.NW.format(p.t.Mmf63N, {
-          price: A
+          discountPercent: (0, m.T3)(n, h.Rr / 100)
+        }) : f.NW.format(f.t.Mmf63N, {
+          price: c
         })
       }({
         currentUser: i,
-        locale: C,
-        guildBoostingPlanId: x.id,
-        interval: x.interval,
-        intervalCount: x.intervalCount
+        locale: x,
+        guildBoostingPlanId: v.id,
+        interval: v.interval,
+        intervalCount: v.intervalCount
       })
     })]
   })

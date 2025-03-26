@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  V: () => h
+  V: () => b
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,52 +9,52 @@ var r = n(200651),
   a = n(481060),
   l = n(497321),
   o = n(246946),
-  A = n(63063),
-  c = n(621319),
-  d = n(44550),
-  u = n(586382),
+  c = n(63063),
+  d = n(621319),
+  u = n(44550),
+  m = n(586382),
   g = n(859481),
-  f = n(981631),
-  m = n(388032),
-  p = n(483057);
+  p = n(981631),
+  h = n(388032),
+  f = n(483057);
 
-function h(e) {
+function b(e) {
   let {
     guild: t
   } = e, n = (0, s.e7)([o.Z], () => o.Z.hideInstantInvites), {
-    vanityURLCode: h,
-    vanityURLUses: C,
-    originalVanityURLCode: b,
-    errorDetails: v,
-    fetched: x
-  } = (0, s.cj)([d.Z], () => ({
-    vanityURLCode: d.Z.vanityURLCode,
-    vanityURLUses: d.Z.vanityURLUses,
-    originalVanityURLCode: d.Z.originalVanityURLCode,
-    errorDetails: d.Z.errorDetails,
-    fetched: d.Z.fetchedVanityURL
-  })), N = null == t ? void 0 : t.id;
+    vanityURLCode: b,
+    vanityURLUses: x,
+    originalVanityURLCode: j,
+    errorDetails: N,
+    fetched: v
+  } = (0, s.cj)([u.Z], () => ({
+    vanityURLCode: u.Z.vanityURLCode,
+    vanityURLUses: u.Z.vanityURLUses,
+    originalVanityURLCode: u.Z.originalVanityURLCode,
+    errorDetails: u.Z.errorDetails,
+    fetched: u.Z.fetchedVanityURL
+  })), _ = null == t ? void 0 : t.id;
   return (i.useEffect(() => {
-    null == N || x || (0, c.U5)(N)
-  }, [x, N]), null == t) ? null : n ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
+    null == _ || v || (0, d.U5)(_)
+  }, [v, _]), null == t) ? null : n ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
     children: [(0, r.jsxs)(a.vwX, {
-      className: p.title,
-      children: [m.NW.string(m.t["5XZKy8"]), (0, r.jsx)(u.xl, {
+      className: f.title,
+      children: [h.NW.string(h.t["5XZKy8"]), (0, r.jsx)(m.xl, {
         guild: t
       })]
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: p.description,
-      children: m.NW.format(m.t.koklFB, {
-        helpCenterArticle: A.Z.getArticleURL(f.BhN.GUILD_VANITY_URL)
+      className: f.description,
+      children: h.NW.format(h.t.koklFB, {
+        helpCenterArticle: c.Z.getArticleURL(p.BhN.GUILD_VANITY_URL)
       })
     }), (0, r.jsx)(g.z, {
       guild: t,
-      vanityURLCode: h,
-      vanityURLUses: C,
-      originalVanityURLCode: b,
-      errorDetails: v
+      vanityURLCode: b,
+      vanityURLUses: x,
+      originalVanityURLCode: j,
+      errorDetails: N
     })]
   })
 }

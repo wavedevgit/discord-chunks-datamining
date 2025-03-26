@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,19 +9,19 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(700582),
-  A = n(330726),
-  c = n(51144),
-  d = n(268350),
-  u = n(419922),
+  c = n(330726),
+  d = n(51144),
+  u = n(268350),
+  m = n(419922),
   g = n(388032),
-  f = n(662815);
-let m = e => {
+  p = n(662815);
+let h = e => {
   let {
     className: t,
     isDisabled: s,
-    sticker: m,
-    canManageSticker: p
-  } = e, [h, C] = i.useState(!1), [b, v] = (0, A.Z)(null, 4e3), x = () => {
+    sticker: h,
+    canManageSticker: f
+  } = e, [b, x] = i.useState(!1), [j, N] = (0, c.Z)(null, 4e3), v = () => {
     (0, l.ZDy)(async () => {
       let {
         default: e
@@ -44,76 +44,76 @@ let m = e => {
         }
         return e
       }({
-        sticker: m,
-        guildId: m.guild_id
+        sticker: h,
+        guildId: h.guild_id
       }, t))
     })
-  }, N = async () => {
-    v(null), C(!0);
+  }, _ = async () => {
+    N(null), x(!0);
     try {
-      await (0, d.Um)(m)
+      await (0, u.Um)(h)
     } catch (e) {
-      v(e.body.message), C(!1)
+      N(e.body.message), x(!1)
     }
-  }, j = c.ZP.useUserTag(m.user);
+  }, C = d.ZP.useUserTag(h.user);
   return (0, r.jsx)(l.ua7, {
     color: l.ua7.Colors.RED,
-    forceOpen: null != b,
-    text: b,
+    forceOpen: null != j,
+    text: j,
     children: () => (0, r.jsxs)("div", {
-      className: a()(f.wrapper, t, {
-        [f.wrapperDisabled]: s
+      className: a()(p.wrapper, t, {
+        [p.wrapperDisabled]: s
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(f.content, {
-          [f.contentRemoving]: h
+        className: a()(p.content, {
+          [p.contentRemoving]: b
         }),
-        children: [(0, r.jsx)(u.Z, {
-          className: f.sticker,
+        children: [(0, r.jsx)(m.Z, {
+          className: p.sticker,
           size: 72,
-          sticker: m
+          sticker: h
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(l.Text, {
             color: "header-primary",
             variant: "text-xs/semibold",
-            className: f.stickerName,
-            children: m.name
-          }), null != m.user && (0, r.jsxs)("div", {
-            className: f.user,
+            className: p.stickerName,
+            children: h.name
+          }), null != h.user && (0, r.jsxs)("div", {
+            className: p.user,
             children: [(0, r.jsx)(o.Z, {
-              className: f.userAvatar,
+              className: p.userAvatar,
               size: l.EFr.SIZE_16,
-              user: m.user
+              user: h.user
             }), (0, r.jsx)(l.Text, {
               color: "header-secondary",
               variant: "text-xs/normal",
-              children: j
+              children: C
             })]
           })]
-        }), p ? (0, r.jsxs)("div", {
-          className: f.actions,
+        }), f ? (0, r.jsxs)("div", {
+          className: p.actions,
           children: [(0, r.jsx)(l.P3F, {
-            className: f.action,
-            onClick: x,
+            className: p.action,
+            onClick: v,
             "aria-label": g.NW.string(g.t.bt75u7),
             children: (0, r.jsx)(l.vdY, {
               size: "xs",
               color: "currentColor",
-              className: f.icon
+              className: p.icon
             })
           }), (0, r.jsx)(l.P3F, {
-            className: a()(f.action, f.actionRemove),
-            onClick: N,
+            className: a()(p.action, p.actionRemove),
+            onClick: _,
             "aria-label": g.NW.string(g.t.N86XcH),
             children: (0, r.jsx)(l.Dio, {
               size: "md",
               color: "currentColor",
-              className: f.icon
+              className: p.icon
             })
           })]
         }) : null]
-      }), h && (0, r.jsx)(l.$jN, {
-        className: f.spinner
+      }), b && (0, r.jsx)(l.$jN, {
+        className: p.spinner
       })]
     })
   })

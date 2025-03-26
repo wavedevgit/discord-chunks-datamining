@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,15 +9,15 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(510231),
-  A = n(434404),
-  c = n(383124),
-  d = n(795691),
-  u = n(388032),
+  c = n(434404),
+  d = n(383124),
+  u = n(795691),
+  m = n(388032),
   g = n(636477),
-  f = n(659116);
-let m = () => null;
+  p = n(659116);
+let h = () => null;
 
-function p(e) {
+function f(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
@@ -32,17 +32,17 @@ function p(e) {
     wrapperClassName: g.selectWrapper,
     options: s,
     value: t,
-    placeholder: u.NW.string(u.t.acyezc),
+    placeholder: m.NW.string(m.t.acyezc),
     onChange: n,
     isDisabled: 20 === t.length || i,
     matchSorterOptions: a,
     clearQueryOnSelect: !0,
     customPillContainerClassName: g.pills,
-    renderCustomPill: m
+    renderCustomPill: h
   })
 }
 
-function h(e) {
+function b(e) {
   let {
     gameApplicationIds: t,
     onRemoveGame: n,
@@ -50,7 +50,7 @@ function h(e) {
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: g.selectedGames,
-    children: t.map(e => (0, r.jsx)(c.Z, {
+    children: t.map(e => (0, r.jsx)(d.Z, {
       applicationId: e,
       selected: !0,
       onClick: n,
@@ -58,47 +58,47 @@ function h(e) {
     }, e))
   })
 }
-let C = [];
+let x = [];
 
-function b(e) {
+function j(e) {
   var t;
   let {
     profile: n,
     canManageGuild: s
-  } = e, o = n.id, c = null !== (t = null == n ? void 0 : n.gameApplicationIds) && void 0 !== t ? t : C, m = i.useCallback(e => {
-    A.Z.updateGuildProfile(o, {
+  } = e, o = n.id, d = null !== (t = null == n ? void 0 : n.gameApplicationIds) && void 0 !== t ? t : x, h = i.useCallback(e => {
+    c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
-  }, [o]), b = i.useCallback(e => {
-    let t = c.filter(t => t !== e);
-    A.Z.updateGuildProfile(o, {
+  }, [o]), j = i.useCallback(e => {
+    let t = d.filter(t => t !== e);
+    c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, c]), v = i.useRef(c), x = i.useMemo(() => (a().isEqual(new Set(c), new Set(v.current)) || (v.current = [...c]), v.current), [c]);
+  }, [o, d]), N = i.useRef(d), v = i.useMemo(() => (a().isEqual(new Set(d), new Set(N.current)) || (N.current = [...d]), N.current), [d]);
   return (0, r.jsxs)(l.hjN, {
-    className: f.section,
+    className: p.section,
     children: [(0, r.jsxs)("div", {
-      className: f.sectionHeader,
+      className: p.sectionHeader,
       children: [(0, r.jsx)(l.vwX, {
-        children: u.NW.string(u.t.BR68vL)
+        children: m.NW.string(m.t.BR68vL)
       }), (0, r.jsx)(l.R94, {
         type: l.geA.DESCRIPTION,
-        children: u.NW.string(u.t.MobxiI)
+        children: m.NW.string(m.t.MobxiI)
       })]
     }), (0, r.jsxs)("div", {
       className: g.sectionBody,
-      children: [(0, r.jsx)(p, {
-        gameApplicationIds: c,
-        handleChange: m,
+      children: [(0, r.jsx)(f, {
+        gameApplicationIds: d,
+        handleChange: h,
         disabled: !s
-      }), (0, r.jsx)(h, {
-        gameApplicationIds: x,
-        onRemoveGame: b,
+      }), (0, r.jsx)(b, {
+        gameApplicationIds: v,
+        onRemoveGame: j,
         disabled: !s
-      }), (0, r.jsx)(d.Z, {
+      }), (0, r.jsx)(u.Z, {
         guildId: o,
-        selectedGameApplicationIds: c,
-        onUpdateGames: m,
+        selectedGameApplicationIds: d,
+        onUpdateGames: h,
         disabled: !s
       })]
     })]

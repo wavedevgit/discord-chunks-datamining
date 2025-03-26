@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => Q
+  Z: () => k
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,30 +9,30 @@ var r = n(200651),
   a = n(442837),
   l = n(215569),
   o = n(481060),
-  A = n(224706),
-  c = n(425493),
-  d = n(852860),
-  u = n(493544),
+  c = n(224706),
+  d = n(425493),
+  u = n(852860),
+  m = n(493544),
   g = n(585483),
-  f = n(931240),
-  m = n(970606),
-  p = n(389134),
-  h = n(35313),
-  C = n(94963),
-  b = n(745628),
-  v = n(950279),
-  x = n(796918),
-  N = n(513532),
-  j = n(741595),
-  E = n(974842),
-  I = n(359380),
-  O = n(308083),
-  y = n(981631),
-  w = n(231338),
-  P = n(388032),
-  B = n(73441);
+  p = n(931240),
+  h = n(970606),
+  f = n(389134),
+  b = n(35313),
+  x = n(94963),
+  j = n(745628),
+  N = n(950279),
+  v = n(796918),
+  _ = n(513532),
+  C = n(741595),
+  O = n(974842),
+  y = n(359380),
+  I = n(308083),
+  E = n(981631),
+  S = n(231338),
+  T = n(388032),
+  P = n(73441);
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function D(e) {
   return e
 }
 
-function T(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,93 +63,93 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => [{
-    section: u.ID.HEADER,
-    label: P.NW.string(P.t["7r0U+/"])
+let Z = e => [{
+    section: m.ID.HEADER,
+    label: T.NW.string(T.t["7r0U+/"])
   }, {
-    section: O.Wy.GAMES,
-    label: P.NW.string(P.t["6umL+/"]),
+    section: I.Wy.GAMES,
+    label: T.NW.string(T.t["6umL+/"]),
     hasError: (null == e ? void 0 : e.gameApplicationIds) != null
   }, {
-    section: O.Wy.PLAYSTYLE,
-    label: P.NW.string(P.t.SWXqQE),
+    section: I.Wy.PLAYSTYLE,
+    label: T.NW.string(T.t.SWXqQE),
     hasError: (null == e ? void 0 : e.playstyle) != null
   }, {
-    section: u.ID.DIVIDER
+    section: m.ID.DIVIDER
   }, {
-    section: u.ID.HEADER,
-    label: P.NW.string(P.t["eNC+OT"])
+    section: m.ID.HEADER,
+    label: T.NW.string(T.t["eNC+OT"])
   }, {
-    section: O.Wy.UTILITY_TRAITS,
-    label: P.NW.string(P.t.oBixMj)
+    section: I.Wy.UTILITY_TRAITS,
+    label: T.NW.string(T.t.oBixMj)
   }, {
-    section: O.Wy.INTERESTS,
-    label: P.NW.string(P.t.WqEH5O),
+    section: I.Wy.INTERESTS,
+    label: T.NW.string(T.t.WqEH5O),
     hasError: (null == e ? void 0 : e.interests) != null
   }, {
-    section: O.Wy.DESCRIPTION,
-    label: P.NW.string(P.t.SnIjAQ),
+    section: I.Wy.DESCRIPTION,
+    label: T.NW.string(T.t.SnIjAQ),
     hasError: (null == e ? void 0 : e.description) != null || (null == e ? void 0 : e.wildcardDescriptors) != null
   }, {
-    section: u.ID.DIVIDER
+    section: m.ID.DIVIDER
   }, {
-    section: u.ID.HEADER,
-    label: P.NW.string(P.t.qEgjwM)
+    section: m.ID.HEADER,
+    label: T.NW.string(T.t.qEgjwM)
   }, {
-    section: O.Wy.CUSTOMIZE_TAG_BADGE,
-    label: P.NW.string(P.t.MuFv4e),
+    section: I.Wy.CUSTOMIZE_TAG_BADGE,
+    label: T.NW.string(T.t.MuFv4e),
     hasError: (null == e ? void 0 : e.tag) != null || (null == e ? void 0 : e.badgeKind) != null || (null == e ? void 0 : e.badgePrimaryColor) != null || (null == e ? void 0 : e.badgeSecondaryColor) != null
   }, {
-    section: O.Wy.CUSTOMIZE_BANNER,
-    label: P.NW.string(P.t["/A+uVF"]),
+    section: I.Wy.CUSTOMIZE_BANNER,
+    label: T.NW.string(T.t["/A+uVF"]),
     hasError: (null == e ? void 0 : e.banner) != null || (null == e ? void 0 : e.brandPrimaryColor) != null || (null == e ? void 0 : e.brandSecondaryColor) != null
   }, {
-    section: u.ID.DIVIDER
+    section: m.ID.DIVIDER
   }, {
-    section: O.Wy.MEMBER_APPLICATION,
-    label: P.NW.string(P.t.aOQWKi),
+    section: I.Wy.MEMBER_APPLICATION,
+    label: T.NW.string(T.t.aOQWKi),
     hasError: (null == e ? void 0 : e.verificationForm) != null
   }, {
-    section: u.ID.DIVIDER
+    section: m.ID.DIVIDER
   }, {
-    section: u.ID.CUSTOM,
-    label: P.NW.string(P.t.vc5h39),
-    element: L
+    section: m.ID.CUSTOM,
+    label: T.NW.string(T.t.vc5h39),
+    element: D
   }],
-  L = e => {
+  D = e => {
     let {
       guildId: t,
       onClose: s,
       dirty: a
-    } = e, [l, A] = i.useState(!1), c = async () => {
-      A(!0);
+    } = e, [l, c] = i.useState(!1), d = async () => {
+      c(!0);
       try {
-        await (0, f.nr)(t), s()
+        await (0, p.nr)(t), s()
       } catch (e) {
-        throw A(!1), e
+        throw c(!1), e
       }
     };
     return (0, r.jsxs)(o.njP.Item, {
       selectedItem: !1,
-      className: B.deleteItem,
-      "aria-label": P.NW.string(P.t.vc5h39),
+      className: P.deleteItem,
+      "aria-label": T.NW.string(T.t.vc5h39),
       onClick: () => {
         if (a) {
-          g.S.dispatch(y.CkL.EMPHASIZE_NOTICE);
+          g.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
           return
         }(0, o.ZDy)(async () => {
           let {
             ConfirmModal: e
           } = await Promise.resolve().then(n.bind(n, 481060));
-          return t => (0, r.jsx)(e, T(D({}, t), {
-            header: P.NW.string(P.t.EXskgI),
-            confirmText: P.NW.string(P.t["cY+Ooa"]),
-            cancelText: P.NW.string(P.t["ETE/oK"]),
+          return t => (0, r.jsx)(e, R(w({}, t), {
+            header: T.NW.string(T.t.EXskgI),
+            confirmText: T.NW.string(T.t["cY+Ooa"]),
+            cancelText: T.NW.string(T.t["ETE/oK"]),
             loading: l,
-            onConfirm: c,
+            onConfirm: d,
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
-              children: P.NW.string(P.t.OsRkMz)
+              children: T.NW.string(T.t.OsRkMz)
             })
           }))
         })
@@ -157,54 +157,54 @@ let S = e => [{
       children: [(0, r.jsx)(o.XHJ, {
         size: "xs",
         color: "currentColor",
-        className: B.statusDanger
+        className: P.statusDanger
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "status-danger",
-        children: P.NW.string(P.t.vc5h39)
+        children: T.NW.string(T.t.vc5h39)
       })]
     })
   },
-  R = e => {
+  A = e => {
     let {
       isErrorVisible: t
-    } = e, n = (0, o.dQu)(o.TVs.colors.HEADER_PRIMARY, w.BR.DARK), i = (0, o.dQu)(o.TVs.colors.TEXT_MUTED, w.BR.DARK);
+    } = e, n = (0, o.dQu)(o.TVs.colors.HEADER_PRIMARY, S.BR.DARK), i = (0, o.dQu)(o.TVs.colors.TEXT_MUTED, S.BR.DARK);
     return t ? (0, r.jsxs)("div", {
-      className: B.tooltipContents,
+      className: P.tooltipContents,
       children: [(0, r.jsx)(o.aNP, {
         size: "xs",
         color: "currentColor",
-        className: B.errorIconTooltip
+        className: P.errorIconTooltip
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           style: {
             color: n.hex()
           },
-          children: P.NW.string(P.t.M6w76e)
+          children: T.NW.string(T.t.M6w76e)
         }), (0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           style: {
             color: i.hex()
           },
-          children: P.NW.string(P.t.pNtCgo)
+          children: T.NW.string(T.t.pNtCgo)
         })]
       })]
     }) : null
   },
-  Q = e => {
+  k = e => {
     let {
       guildId: t,
       onClose: n
-    } = e, [w, L] = i.useState(O.Wy.GAMES), {
-      initialSettings: Q,
+    } = e, [S, D] = i.useState(I.Wy.GAMES), {
+      initialSettings: k,
       settings: W,
-      errors: Z,
-      submitting: k,
-      dirty: M
-    } = (0, a.cj)([p.Z], () => {
+      errors: L,
+      submitting: M,
+      dirty: G
+    } = (0, a.cj)([f.Z], () => {
       var e;
-      let t = p.Z.getState();
+      let t = f.Z.getState();
       return {
         initialSettings: t.initialSettings,
         settings: t.settings,
@@ -212,95 +212,95 @@ let S = e => [{
         submitting: t.submitting,
         dirty: t.dirty
       }
-    }), _ = i.useCallback(e => {
-      M ? g.S.dispatch(y.CkL.EMPHASIZE_NOTICE) : L(e)
-    }, [M]), G = (0, h.f)(), F = i.useCallback(e => {
+    }), U = i.useCallback(e => {
+      G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : D(e)
+    }, [G]), B = (0, b.f)(), F = i.useCallback(e => {
       "Escape" === e.key && (e.stopPropagation(), n())
     }, [n]);
     i.useEffect(() => {
-      (0, m.GO)(t, (0, m.Qh)(w))
-    }, [t, w]), i.useEffect(() => (window.addEventListener("keydown", F), () => {
+      (0, h.GO)(t, (0, h.Qh)(S))
+    }, [t, S]), i.useEffect(() => (window.addEventListener("keydown", F), () => {
       window.removeEventListener("keydown", F)
     }), [F]), i.useEffect(() => {
-      A.Z.getDetectableGames()
+      c.Z.getDetectableGames()
     }, []), i.useEffect(() => {
-      (0, f.aH)(t)
+      (0, p.aH)(t)
     }, [t]);
-    let U = i.useCallback(e => (0, f.mf)(t, {
+    let z = i.useCallback(e => (0, p.mf)(t, {
         gameApplicationIds: e
       }), [t]),
-      H = i.useCallback(e => (0, f.mf)(t, {
+      H = i.useCallback(e => (0, p.mf)(t, {
         playstyle: e
       }), [t]),
-      z = i.useCallback(e => (0, f.mf)(t, {
+      V = i.useCallback(e => (0, p.mf)(t, {
         interests: e
       }), [t]),
-      X = i.useCallback(e => (0, f.mf)(t, e), [t]),
-      Y = i.useCallback(() => {
-        M ? g.S.dispatch(y.CkL.EMPHASIZE_NOTICE) : n()
-      }, [M, n]),
-      K = async () => {
-        await (0, f.Ii)(t, W), (0, m.Af)(t)
-      }, V = i.useMemo(() => null != Z && Object.values(Z).some(e => null != e), [Z]);
+      Y = i.useCallback(e => (0, p.mf)(t, e), [t]),
+      K = i.useCallback(() => {
+        G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
+      }, [G, n]),
+      q = async () => {
+        await (0, p.Ii)(t, W), (0, h.Af)(t)
+      }, X = i.useMemo(() => null != L && Object.values(L).some(e => null != e), [L]);
     if (null == W) return null;
-    let J = S(Z);
+    let Q = Z(L);
     return (0, r.jsxs)(s.animated.div, {
-      style: G,
-      className: B.modal,
+      style: B,
+      className: P.modal,
       children: [(0, r.jsx)(o.ua7, {
         color: o.ua7.Colors.GREY,
-        tooltipClassName: B.tooltip,
-        text: (0, r.jsx)(R, {
-          isErrorVisible: V
+        tooltipClassName: P.tooltip,
+        text: (0, r.jsx)(A, {
+          isErrorVisible: X
         }),
         position: "left",
-        "aria-label": null != V ? P.NW.string(P.t.M6w76e) : void 0,
-        shouldShow: V,
-        forceOpen: V,
-        children: e => (0, r.jsx)(c.Z, T(D({}, e), {
-          className: B.closeButton,
-          closeAction: Y,
+        "aria-label": null != X ? T.NW.string(T.t.M6w76e) : void 0,
+        shouldShow: X,
+        forceOpen: X,
+        children: e => (0, r.jsx)(d.Z, R(w({}, e), {
+          className: P.closeButton,
+          closeAction: K,
           keybind: "ESC"
         }))
       }), (0, r.jsxs)("div", {
-        className: B.modalContents,
+        className: P.modalContents,
         children: [(0, r.jsx)("div", {
-          className: B.sidebarWrapper,
+          className: P.sidebarWrapper,
           children: (0, r.jsx)(o.njP, {
-            className: B.sidebar,
-            selectedItem: w,
-            onItemSelect: _,
+            className: P.sidebar,
+            selectedItem: S,
+            onItemSelect: U,
             orientation: "vertical",
-            children: J.map((e, i) => {
+            children: Q.map((e, i) => {
               switch (e.section) {
-                case u.ID.HEADER:
+                case m.ID.HEADER:
                   return (0, r.jsx)(o.njP.Header, {
                     children: e.label
                   }, "header-".concat(i));
-                case u.ID.DIVIDER:
+                case m.ID.DIVIDER:
                   return (0, r.jsx)(o.njP.Separator, {}, "divider-".concat(i));
-                case u.ID.CUSTOM:
+                case m.ID.CUSTOM:
                   let s = e.element;
                   return (0, r.jsx)(s, {
-                    dirty: M,
+                    dirty: G,
                     guildId: t,
                     onClose: n
                   }, e.label);
                 default:
                   return (0, r.jsx)(o.njP.Item, {
-                    className: B.settingsTab,
+                    className: P.settingsTab,
                     "aria-label": e.label,
                     id: e.section,
                     children: (0, r.jsxs)(r.Fragment, {
                       children: [e.label, e.hasError && (0, r.jsx)(o.ua7, {
                         color: o.ua7.Colors.GREY,
                         position: "right",
-                        text: P.NW.string(P.t.M6w76e),
-                        children: e => (0, r.jsx)(o.aNP, T(D({
+                        text: T.NW.string(T.t.M6w76e),
+                        children: e => (0, r.jsx)(o.aNP, R(w({
                           size: "xs",
                           color: "currentColor"
                         }, e), {
-                          className: B.errorIcon
+                          className: P.errorIcon
                         }))
                       })]
                     })
@@ -309,72 +309,72 @@ let S = e => [{
             })
           })
         }), (0, r.jsxs)("div", {
-          className: B.mainContent,
+          className: P.mainContent,
           children: [(0, r.jsx)(o.zJl, {
             children: (() => {
-              switch (w) {
-                case O.Wy.GAMES:
+              switch (S) {
+                case I.Wy.GAMES:
                   var e;
-                  return (0, r.jsx)(v.Z, {
-                    title: P.NW.string(P.t.t6Mbq6),
-                    description: P.NW.string(P.t.E7Ymwc),
-                    onUpdateGames: U,
+                  return (0, r.jsx)(N.Z, {
+                    title: T.NW.string(T.t.t6Mbq6),
+                    description: T.NW.string(T.t.E7Ymwc),
+                    onUpdateGames: z,
                     gameApplicationIds: null !== (e = W.gameApplicationIds) && void 0 !== e ? e : new Set,
-                    error: Z.gameApplicationIds,
+                    error: L.gameApplicationIds,
                     guildId: t,
                     includeSuggestedGames: !0
                   });
-                case O.Wy.PLAYSTYLE:
-                  return (0, r.jsx)(j.Z, {
-                    title: P.NW.string(P.t.W0h7pa),
-                    description: P.NW.string(P.t.JHYekZ),
+                case I.Wy.PLAYSTYLE:
+                  return (0, r.jsx)(C.Z, {
+                    title: T.NW.string(T.t.W0h7pa),
+                    description: T.NW.string(T.t.JHYekZ),
                     onUpdatePlaystyle: H,
                     playstyle: W.playstyle,
-                    error: Z.playstyle
+                    error: L.playstyle
                   });
-                case O.Wy.UTILITY_TRAITS:
-                  return (0, r.jsx)(I.Z, {
+                case I.Wy.UTILITY_TRAITS:
+                  return (0, r.jsx)(y.Z, {
                     guildId: t,
-                    title: P.NW.string(P.t.G4tP09),
-                    description: P.NW.string(P.t["6Eos19"]),
-                    onUpdateTraits: z,
+                    title: T.NW.string(T.t.G4tP09),
+                    description: T.NW.string(T.t["6Eos19"]),
+                    onUpdateTraits: V,
                     progress: W
                   });
-                case O.Wy.INTERESTS:
-                  return (0, r.jsx)(x.Z, {
+                case I.Wy.INTERESTS:
+                  return (0, r.jsx)(v.Z, {
                     guildId: t,
-                    handleUpdate: X,
+                    handleUpdate: Y,
                     progress: W,
-                    error: Z.interests
+                    error: L.interests
                   });
-                case O.Wy.DESCRIPTION:
-                  return (0, r.jsx)(b.Z, {
+                case I.Wy.DESCRIPTION:
+                  return (0, r.jsx)(j.Z, {
                     guildId: t,
-                    handleUpdate: X,
+                    handleUpdate: Y,
                     progress: W,
-                    errors: Z
+                    errors: L
                   });
-                case O.Wy.CUSTOMIZE_TAG_BADGE:
-                  return (0, r.jsx)(E.Z, {
-                    handleUpdate: X,
+                case I.Wy.CUSTOMIZE_TAG_BADGE:
+                  return (0, r.jsx)(O.Z, {
+                    handleUpdate: Y,
                     tag: W.tag,
-                    error: Z.tag,
+                    error: L.tag,
                     badge: W.badgeKind,
                     primaryColor: W.badgePrimaryColor,
                     secondaryColor: W.badgeSecondaryColor,
-                    furthestStep: O.Wy.CUSTOMIZE_TAG_BADGE,
+                    furthestStep: I.Wy.CUSTOMIZE_TAG_BADGE,
                     inSettings: !0
                   });
-                case O.Wy.MEMBER_APPLICATION:
-                  return (0, r.jsx)(N.Z, {
+                case I.Wy.MEMBER_APPLICATION:
+                  return (0, r.jsx)(_.Z, {
                     guildId: t,
                     inSettings: !0,
-                    error: Z.verificationForm
+                    error: L.verificationForm
                   });
-                case O.Wy.CUSTOMIZE_BANNER:
-                  return (0, r.jsx)(C.Z, {
+                case I.Wy.CUSTOMIZE_BANNER:
+                  return (0, r.jsx)(x.Z, {
                     guildId: t,
-                    handleUpdate: X,
+                    handleUpdate: Y,
                     progress: W
                   });
                 default:
@@ -383,15 +383,15 @@ let S = e => [{
             })()
           }), (0, r.jsx)(l.W, {
             component: "div",
-            children: M && (0, r.jsx)(o.oXn, {
-              className: B.noticeRegion,
-              children: (0, r.jsx)(d.Z, {
-                onSave: K,
-                submitting: k,
+            children: G && (0, r.jsx)(o.oXn, {
+              className: P.noticeRegion,
+              children: (0, r.jsx)(u.Z, {
+                onSave: q,
+                submitting: M,
                 onReset: () => {
-                  (0, f.mf)(t, Q)
+                  (0, p.mf)(t, k)
                 },
-                errorMessage: Object.values(Z).find(e => null != e)
+                errorMessage: Object.values(L).find(e => null != e)
               })
             })
           })]

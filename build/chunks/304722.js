@@ -1,4 +1,5 @@
-/** Chunk was on 40551 **/
+/** Chunk was on 63327 **/
+"use strict";
 e.exports = {
   gameImageContainer: "gameImageContainer_ed15e7",
   highlighted: "highlighted_ed15e7",

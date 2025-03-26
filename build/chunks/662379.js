@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => m
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -10,10 +10,10 @@ var i = n(481060),
   a = n(388032),
   l = n(635395),
   o = n(961618),
-  A = n(217684),
-  c = n(174618);
+  c = n(217684),
+  d = n(174618);
 
-function d(e) {
+function u(e) {
   let {
     imageSrc: t,
     description: n
@@ -38,15 +38,15 @@ function d(e) {
   })
 }
 
-function u() {
+function m() {
   let e = [{
-    imageSrc: c,
+    imageSrc: d,
     description: a.NW.string(a.t.lT0ZNT)
   }, {
     imageSrc: o,
     description: a.NW.string(a.t.ihN2WV)
   }, {
-    imageSrc: A,
+    imageSrc: c,
     description: a.NW.string(a.t.c8krDQ)
   }];
   return (0, r.jsxs)("div", {
@@ -58,7 +58,7 @@ function u() {
       size: 24
     }), (0, r.jsx)("div", {
       className: l.howItWorksContainer,
-      children: e.map(e => (0, r.jsx)(d, {
+      children: e.map(e => (0, r.jsx)(u, {
         imageSrc: e.imageSrc,
         description: e.description
       }, e.imageSrc))

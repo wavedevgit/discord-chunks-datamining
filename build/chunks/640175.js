@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  z: () => d
+  z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -9,22 +9,22 @@ var r = n(200651),
   a = n(481060),
   l = n(650774),
   o = n(434404),
-  A = n(981631),
-  c = n(388032);
+  c = n(981631),
+  d = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     guildId: t,
     defaultSettings: n,
-    canManageGuild: d
-  } = e, u = (0, s.e7)([l.Z], () => l.Z.getMemberCount(t)), g = i.useMemo(() => [{
-    name: c.NW.string(c.t["n/bTaW"]),
-    value: A.bL.ALL_MESSAGES,
-    desc: null != u && u >= A.qWG ? c.NW.string(c.t["L+P4t7"]) : null
+    canManageGuild: u
+  } = e, m = (0, s.e7)([l.Z], () => l.Z.getMemberCount(t)), g = i.useMemo(() => [{
+    name: d.NW.string(d.t["n/bTaW"]),
+    value: c.bL.ALL_MESSAGES,
+    desc: null != m && m >= c.qWG ? d.NW.string(d.t["L+P4t7"]) : null
   }, {
-    name: c.NW.string(c.t["6fQPho"]),
-    value: A.bL.ONLY_MENTIONS
-  }], [u]), f = i.useCallback(e => {
+    name: d.NW.string(d.t["6fQPho"]),
+    value: c.bL.ONLY_MENTIONS
+  }], [m]), p = i.useCallback(e => {
     let {
       value: t
     } = e;
@@ -35,7 +35,7 @@ function d(e) {
   return (0, r.jsx)(a.FXm, {
     options: g,
     value: n,
-    disabled: !d,
-    onChange: f
+    disabled: !u,
+    onChange: p
   })
 }

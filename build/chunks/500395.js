@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -10,13 +10,13 @@ var i = n(990547),
   a = n(213609),
   l = n(787051),
   o = n(696936),
-  A = n(539290),
-  c = n(975464),
-  d = n(388032),
-  u = n(128281),
+  c = n(539290),
+  d = n(975464),
+  u = n(388032),
+  m = n(128281),
   g = n(270395);
 
-function f(e) {
+function p(e) {
   let {
     config: t
   } = e, {
@@ -26,47 +26,47 @@ function f(e) {
     onCtaClicked: l
   } = t;
   return (0, r.jsxs)("div", {
-    className: u.__invalid_ctaContainer,
+    className: m.__invalid_ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: u.__invalid_heroBanner,
+      className: m.__invalid_heroBanner,
       src: g,
-      alt: d.NW.string(d.t.Af4klJ)
+      alt: u.NW.string(u.t.Af4klJ)
     }), (0, r.jsxs)("div", {
-      className: u.__invalid_ctaContent,
+      className: m.__invalid_ctaContent,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: d.NW.string(d.t.PqYfh4)
+        children: u.NW.string(u.t.PqYfh4)
       }), (0, r.jsx)(s.LZC, {
         size: 12
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: d.NW.string(d.t["41wkMT"])
+        children: u.NW.string(u.t["41wkMT"])
       }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(A.Z, {
-        className: u.waitlist,
+      }), (0, r.jsx)(c.Z, {
+        className: m.waitlist,
         color: o.W.BROWN,
-        buttonPosition: A.E.RIGHT,
+        buttonPosition: c.E.RIGHT,
         notice: n,
         ctaLabel: i,
         ctaDisabled: !a,
-        ctaClassName: u.waitlistCtaButton,
+        ctaClassName: m.waitlistCtaButton,
         onClick: l
       })]
     })]
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     guild: t,
     config: n
   } = e, {
     isLoading: o,
-    error: A,
-    creatorMonetizationOnboardingMarketing: d
+    error: c,
+    creatorMonetizationOnboardingMarketing: u
   } = (0, l.Z)(t.id);
   return ((0, a.Z)({
     type: i.ImpressionTypes.PANE,
@@ -75,12 +75,12 @@ function m(e) {
       guild_id: t.id
     }
   }), o) ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)("div", {
-    className: u.__invalid_container,
-    children: [(0, r.jsx)(f, {
+    className: m.__invalid_container,
+    children: [(0, r.jsx)(p, {
       config: n
-    }), (0, r.jsx)(c.C, {
-      onboardingMarketing: d,
-      onboardingMarketingError: A
+    }), (0, r.jsx)(d.C, {
+      onboardingMarketing: u,
+      onboardingMarketingError: c
     })]
   })
 }

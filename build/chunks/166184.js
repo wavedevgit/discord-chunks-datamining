@@ -1,153 +1,154 @@
-/** Chunk was on 46408 **/
+/** Chunk was on 63327 **/
+"use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => N
 }), n(266796), n(47120), n(301563);
-var i = n(200651),
-  r = n(192379),
-  l = n(120356),
-  a = n.n(l),
-  o = n(780384),
-  s = n(481060),
+var r = n(200651),
+  i = n(192379),
+  s = n(120356),
+  a = n.n(s),
+  l = n(780384),
+  o = n(481060),
   c = n(410030),
   d = n(686546),
   u = n(372769),
-  f = n(134432),
-  m = n(768581),
-  _ = n(624138),
-  v = n(388032),
-  g = n(879731),
-  h = n(129512),
-  p = n(330065);
-let I = [16, 16, 14, 14, 12, 10, 8],
-  E = function(e) {
+  m = n(134432),
+  g = n(768581),
+  p = n(624138),
+  h = n(388032),
+  f = n(879731),
+  b = n(129512),
+  x = n(330065);
+let j = [16, 16, 14, 14, 12, 10, 8],
+  N = function(e) {
     var t, n;
     let {
-      guild: l,
-      disabled: E,
-      small: b,
-      loading: N = !1,
+      guild: s,
+      disabled: N,
+      small: v,
+      loading: _ = !1,
       description: C,
-      memberCount: x,
-      presenceCount: S,
-      className: y
-    } = e, O = (0, c.ZP)(), [j, T] = r.useState(!1);
-    if (null == l || N) return (0, i.jsx)("div", {
-      className: a()(y, g.card, g.cardPlaceholder, {
-        [g.cardSmall]: b,
-        [g.cardDisabled]: E
+      memberCount: O,
+      presenceCount: y,
+      className: I
+    } = e, E = (0, c.ZP)(), [S, T] = i.useState(!1);
+    if (null == s || _) return (0, r.jsx)("div", {
+      className: a()(I, f.card, f.cardPlaceholder, {
+        [f.cardSmall]: v,
+        [f.cardDisabled]: N
       })
     });
     let {
       name: P
-    } = l, A = null != l.discoverySplash && /^data:/.test(l.discoverySplash) ? l.discoverySplash : m.ZP.getGuildDiscoverySplashURL({
-      id: l.id,
-      splash: l.discoverySplash,
-      size: 240 * (0, f.x_)()
-    }), R = (0, o.wj)(O) ? h : p, F = null !== (t = m.ZP.getGuildIconURL({
-      id: l.id,
-      icon: l.icon,
+    } = s, w = null != s.discoverySplash && /^data:/.test(s.discoverySplash) ? s.discoverySplash : g.ZP.getGuildDiscoverySplashURL({
+      id: s.id,
+      splash: s.discoverySplash,
+      size: 240 * (0, m.x_)()
+    }), R = (0, l.wj)(E) ? b : x, Z = null !== (t = g.ZP.getGuildIconURL({
+      id: s.id,
+      icon: s.icon,
       size: 40
-    })) && void 0 !== t ? t : void 0, D = null != l.description ? l.description : C, L = null != x ? x : null == l ? void 0 : l.memberCount, w = null != S ? S : null == l ? void 0 : l.presenceCount, M = null;
-    if (null != F) M = (0, i.jsx)("img", {
-      src: F,
+    })) && void 0 !== t ? t : void 0, D = null != s.description ? s.description : C, A = null != O ? O : null == s ? void 0 : s.memberCount, k = null != y ? y : null == s ? void 0 : s.presenceCount, W = null;
+    if (null != Z) W = (0, r.jsx)("img", {
+      src: Z,
       alt: "",
-      className: g.avatar
+      className: f.avatar
     });
     else {
-      let e = (0, _.Zg)(l.name);
-      M = (0, i.jsx)("div", {
-        className: g.defaultIcon,
-        children: (0, i.jsx)(s.Text, {
-          className: g.acronym,
+      let e = (0, p.Zg)(s.name);
+      W = (0, r.jsx)("div", {
+        className: f.defaultIcon,
+        children: (0, r.jsx)(o.Text, {
+          className: f.acronym,
           style: {
-            fontSize: null !== (n = I[e.length]) && void 0 !== n ? n : I[I.length - 1]
+            fontSize: null !== (n = j[e.length]) && void 0 !== n ? n : j[j.length - 1]
           },
           variant: "text-sm/normal",
           children: e
         })
       })
     }
-    return (0, i.jsxs)("div", {
-      className: a()(y, g.card, {
-        [g.cardSmall]: b,
-        [g.cardDisabled]: E,
-        [g.splashLoaded]: j
+    return (0, r.jsxs)("div", {
+      className: a()(I, f.card, {
+        [f.cardSmall]: v,
+        [f.cardDisabled]: N,
+        [f.splashLoaded]: S
       }),
-      children: [(0, i.jsxs)("div", {
-        className: g.cardHeader,
-        children: [(0, i.jsx)("div", {
-          className: g.splash,
-          children: (0, i.jsx)("img", {
-            src: null != A ? A : R,
+      children: [(0, r.jsxs)("div", {
+        className: f.cardHeader,
+        children: [(0, r.jsx)("div", {
+          className: f.splash,
+          children: (0, r.jsx)("img", {
+            src: null != w ? w : R,
             alt: "",
-            className: g.splashImage,
+            className: f.splashImage,
             onLoad: () => T(!0)
           })
-        }), (0, i.jsx)("div", {
-          className: g.guildIcon,
-          children: (0, i.jsx)(d.ZP, {
+        }), (0, r.jsx)("div", {
+          className: f.guildIcon,
+          children: (0, r.jsx)(d.ZP, {
             mask: d.ZP.Masks.SQUIRCLE,
             width: 48,
             height: 48,
-            children: (0, i.jsx)("div", {
-              className: g.iconMask,
-              children: (0, i.jsx)(d.ZP, {
+            children: (0, r.jsx)("div", {
+              className: f.iconMask,
+              children: (0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.SQUIRCLE,
                 width: 40,
                 height: 40,
-                children: null != M ? M : null
+                children: null != W ? W : null
               })
             })
           })
         })]
-      }), (0, i.jsxs)("div", {
-        className: g.guildInfo,
-        children: [(0, i.jsxs)("div", {
-          className: g.title,
-          children: [(0, i.jsx)(u.Z, {
-            className: g.verifiedIcon,
-            guild: l,
-            tooltipColor: s.ua7.Colors.PRIMARY
-          }), (0, i.jsx)(s.Text, {
-            className: g.guildName,
+      }), (0, r.jsxs)("div", {
+        className: f.guildInfo,
+        children: [(0, r.jsxs)("div", {
+          className: f.title,
+          children: [(0, r.jsx)(u.Z, {
+            className: f.verifiedIcon,
+            guild: s,
+            tooltipColor: o.ua7.Colors.PRIMARY
+          }), (0, r.jsx)(o.Text, {
+            className: f.guildName,
             variant: "text-md/normal",
-            children: (0, i.jsx)("span", {
+            children: (0, r.jsx)("span", {
               children: P
             })
           })]
-        }), (0, i.jsx)("div", {
-          className: g.descriptionContainer,
-          children: (0, i.jsx)(s.Text, {
+        }), (0, r.jsx)("div", {
+          className: f.descriptionContainer,
+          children: (0, r.jsx)(o.Text, {
             lineClamp: 3,
-            className: g.description,
+            className: f.description,
             variant: "text-sm/normal",
             tag: "span",
             children: D
           })
-        }), (0, i.jsxs)("div", {
-          className: g.memberInfo,
-          children: [null != w && (0, i.jsxs)("div", {
-            className: g.memberCount,
-            children: [(0, i.jsx)("div", {
-              className: g.dotOnline
-            }), (0, i.jsx)(s.Text, {
+        }), (0, r.jsxs)("div", {
+          className: f.memberInfo,
+          children: [null != k && (0, r.jsxs)("div", {
+            className: f.memberCount,
+            children: [(0, r.jsx)("div", {
+              className: f.dotOnline
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
-              children: b ? v.NW.formatToPlainString(v.t.YMor7u, {
-                count: w
-              }) : v.NW.formatToPlainString(v.t["LC+S+v"], {
-                membersOnline: w
+              children: v ? h.NW.formatToPlainString(h.t.YMor7u, {
+                count: k
+              }) : h.NW.formatToPlainString(h.t["LC+S+v"], {
+                membersOnline: k
               })
             })]
-          }), null != L && (0, i.jsxs)("div", {
-            className: g.memberCount,
-            children: [(0, i.jsx)("div", {
-              className: g.dotOffline
-            }), (0, i.jsx)(s.Text, {
+          }), null != A && (0, r.jsxs)("div", {
+            className: f.memberCount,
+            children: [(0, r.jsx)("div", {
+              className: f.dotOffline
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
-              children: b ? v.NW.formatToPlainString(v.t.YMor7u, {
-                count: L
-              }) : v.NW.formatToPlainString(v.t.zRl6XV, {
-                count: L
+              children: v ? h.NW.formatToPlainString(h.t.YMor7u, {
+                count: A
+              }) : h.NW.formatToPlainString(h.t.zRl6XV, {
+                count: A
               })
             })]
           })]

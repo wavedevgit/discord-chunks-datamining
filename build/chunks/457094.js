@@ -148,7 +148,7 @@ let e7 = !1;
     }
   })
 }));
-let e9 = (0, m.l)(e => {
+let e6 = (0, m.l)(e => {
     let {
       location: t
     } = e, n = (0, eL.default)(t.pathname);
@@ -172,7 +172,7 @@ let e9 = (0, m.l)(e => {
       }), ";"]
     })
   }),
-  e6 = a.ZP.connectStores([z.Z, eG.Z, ek.default], () => ({
+  e9 = a.ZP.connectStores([z.Z, eG.Z, ek.default], () => ({
     isConnected: z.Z.isConnected(),
     defaultRoute: eG.Z.defaultRoute,
     defaultRouteFallback: eG.Z.fallbackRoute,
@@ -235,14 +235,14 @@ let tr = [{
     let {
       match: t
     } = e;
-    return (0, r.jsx)(e6, {
+    return (0, r.jsx)(e9, {
       match: t
     })
   },
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.APP],
-  render: () => (0, r.jsx)(e6, {}),
+  render: () => (0, r.jsx)(e9, {}),
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.USERS(":id")],
@@ -334,7 +334,7 @@ let tr = [{
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.SETTINGS(":section", ":subsection?")],
-  render: e9,
+  render: e6,
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(e_.Hw.guildId())],

@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => B
+  Z: () => P
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,24 +9,24 @@ var r = n(200651),
   a = n.n(s),
   l = n(392711),
   o = n.n(l),
-  A = n(442837),
-  c = n(477690),
-  d = n(481060),
-  u = n(179360),
+  c = n(442837),
+  d = n(477690),
+  u = n(481060),
+  m = n(179360),
   g = n(129861),
-  f = n(999382),
-  m = n(733683),
-  p = n(237583),
-  h = n(899667),
-  C = n(271383),
-  b = n(594174),
-  v = n(267642),
-  x = n(624138),
-  N = n(981631),
-  j = n(388032),
-  E = n(288661);
+  p = n(999382),
+  h = n(733683),
+  f = n(237583),
+  b = n(899667),
+  x = n(271383),
+  j = n(594174),
+  N = n(267642),
+  v = n(624138),
+  _ = n(981631),
+  C = n(388032),
+  O = n(288661);
 
-function I(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,20 +35,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,14 +60,14 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = (0, x.Mg)(c.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
-class P extends i.Component {
+let S = (0, v.Mg)(d.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
+class T extends i.Component {
   componentDidMount() {
     this.measure();
     let {
       guildId: e
     } = this.props;
-    null != e && (0, u.C0)(e), window.addEventListener("resize", this.measure)
+    null != e && (0, m.C0)(e), window.addEventListener("resize", this.measure)
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.measure)
@@ -91,20 +91,20 @@ class P extends i.Component {
     let s = {
         numRequired: 0,
         y: 0,
-        key: m.x
+        key: h.x
       },
-      a = (0, v.vn)(n),
+      a = (0, N.vn)(n),
       l = e.map(e => {
         var n;
         return {
           numRequired: a[e.tier],
-          name: (0, v.nW)(e.tier),
+          name: (0, N.nW)(e.tier),
           y: null !== (n = t[e.tier]) && void 0 !== n ? n : 0,
           key: e.tier
         }
       });
-    return (0, r.jsx)(m.Z, {
-      className: i > 0 ? E.progressWithSubscriptions : E.progress,
+    return (0, r.jsx)(h.Z, {
+      className: i > 0 ? O.progressWithSubscriptions : O.progress,
       progress: i,
       tiers: [s, ...l],
       initialAnimationDelay: 500,
@@ -113,15 +113,15 @@ class P extends i.Component {
   }
   renderTierNone() {
     return (0, r.jsxs)("div", {
-      className: E.tierDefaultUnlocked,
+      className: O.tierDefaultUnlocked,
       ref: this.defaultTierRef,
-      children: [(0, r.jsx)(d.R94, {
-        type: d.R94.Types.LABEL_BOLD,
-        children: j.NW.string(j.t["76OoX1"])
-      }), (0, r.jsx)(d.R94, {
-        type: d.R94.Types.DESCRIPTION,
-        className: E.tierDefaultUnlockedDescription,
-        children: j.NW.string(j.t.DaYNQU)
+      children: [(0, r.jsx)(u.R94, {
+        type: u.R94.Types.LABEL_BOLD,
+        children: C.NW.string(C.t["76OoX1"])
+      }), (0, r.jsx)(u.R94, {
+        type: u.R94.Types.DESCRIPTION,
+        className: O.tierDefaultUnlockedDescription,
+        children: C.NW.string(C.t.DaYNQU)
       })]
     })
   }
@@ -133,16 +133,16 @@ class P extends i.Component {
     } = this.props;
     return (0, r.jsxs)("div", {
       ref: this.defaultTierRef,
-      className: E.subscribers,
-      children: [(0, r.jsx)(p.Z, {
+      className: O.subscribers,
+      children: [(0, r.jsx)(f.Z, {
         guildId: null != n ? n : void 0,
         users: e,
         renderUser: this.renderSubscriber,
         renderMoreUsers: this.renderMoreSubscribers,
         max: 5
       }), (0, r.jsx)("div", {
-        className: E.subscriberCount,
-        children: j.NW.format(j.t["0r7snZ"], {
+        className: O.subscriberCount,
+        children: C.NW.format(C.t["0r7snZ"], {
           count: t
         })
       })]
@@ -156,16 +156,16 @@ class P extends i.Component {
       subscriberCount: i,
       tiers: s
     } = this.props;
-    if (null == n) return (0, r.jsx)(d.$jN, {
-      type: d.$jN.Type.SPINNING_CIRCLE
+    if (null == n) return (0, r.jsx)(u.$jN, {
+      type: u.$jN.Type.SPINNING_CIRCLE
     });
     if (null == e) return null;
-    let a = (0, v.vn)(e);
+    let a = (0, N.vn)(e);
     return (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: E.content,
+        className: O.content,
         children: [this.renderProgressBar(s), (0, r.jsxs)("div", {
-          className: E.tiers,
+          className: O.tiers,
           children: [0 === i ? this.renderTierNone() : this.renderSubscribers(), s.map((n, r, i) => t({
             tier: n,
             tiers: i,
@@ -180,10 +180,10 @@ class P extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "tierRefs", {}), I(this, "defaultTierRef", i.createRef()), I(this, "state", {
+    super(...e), y(this, "tierRefs", {}), y(this, "defaultTierRef", i.createRef()), y(this, "state", {
       tierPositions: null,
-      animatedTier: N.Eu4.NONE
-    }), I(this, "measure", () => {
+      animatedTier: _.Eu4.NONE
+    }), y(this, "measure", () => {
       let {
         subscriberCount: e
       } = this.props, t = this.defaultTierRef.current;
@@ -195,69 +195,69 @@ class P extends i.Component {
         if (null == i) return;
         let {
           top: s
-        } = i.getBoundingClientRect(), a = e > 0 ? w : 0;
+        } = i.getBoundingClientRect(), a = e > 0 ? S : 0;
         r[t] = s - n + 32 - a
       }
       this.setState({
         tierPositions: r
       })
-    }), I(this, "setTierRef", (e, t) => {
+    }), y(this, "setTierRef", (e, t) => {
       this.tierRefs[t.tier] = e
-    }), I(this, "handleAnimatedTier", e => {
+    }), y(this, "handleAnimatedTier", e => {
       this.setState({
         animatedTier: e.key
       })
-    }), I(this, "renderSubscriber", (e, t, n) => {
+    }), y(this, "renderSubscriber", (e, t, n) => {
       var i;
-      return null == e ? null : (0, r.jsx)(d.ua7, {
+      return null == e ? null : (0, r.jsx)(u.ua7, {
         text: (0, r.jsx)(g.Z, {
           user: e.user,
           nick: e.nick
         }),
         "aria-label": null !== (i = e.nick) && void 0 !== i ? i : e.user.tag,
-        children: n => (0, r.jsx)(d.qEK, y(O({}, n), {
+        children: n => (0, r.jsx)(u.qEK, E(I({}, n), {
           tabIndex: -1,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
-          className: a()(E.avatar, t, null != t ? E.subscriberMask : null),
-          size: d.EFr.SIZE_32
+          className: a()(O.avatar, t, null != t ? O.subscriberMask : null),
+          size: u.EFr.SIZE_32
         }))
       }, n)
-    }), I(this, "renderSubscribersPopout", () => (0, r.jsx)(d.Ttm, {
-      className: E.subscribersPopout,
+    }), y(this, "renderSubscribersPopout", () => (0, r.jsx)(u.Ttm, {
+      className: O.subscribersPopout,
       children: this.props.subscribers.map(e => (0, r.jsxs)("div", {
-        className: E.subscribersPopoutUser,
-        children: [(0, r.jsx)(d.qEK, {
+        className: O.subscribersPopoutUser,
+        children: [(0, r.jsx)(u.qEK, {
           src: e.user.getAvatarURL(this.props.guildId, 32),
           "aria-label": e.user.username,
-          size: d.EFr.SIZE_32,
-          className: E.avatar
+          size: u.EFr.SIZE_32,
+          className: O.avatar
         }), (0, r.jsx)("div", {
-          className: E.subscribersPopoutUsername,
+          className: O.subscribersPopoutUsername,
           children: (0, r.jsx)(g.Z, {
             user: e.user,
             nick: e.nick
           })
         })]
       }, e.user.id))
-    })), I(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(d.yRy, {
+    })), y(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(u.yRy, {
       renderPopout: this.renderSubscribersPopout,
       position: "bottom",
       autoInvert: !1,
-      children: t => (0, r.jsx)("div", y(O({
-        className: E.moreSubscribers
+      children: t => (0, r.jsx)("div", E(I({
+        className: O.moreSubscribers
       }, t), {
         children: e
       }))
     }, n))
   }
 }
-let B = A.ZP.connectStores([f.Z, b.default, h.Z, C.ZP], () => {
-  let e = f.Z.getGuildId(),
-    t = null != e ? h.Z.getAppliedGuildBoostsForGuild(e) : null,
+let P = c.ZP.connectStores([p.Z, j.default, b.Z, x.ZP], () => {
+  let e = p.Z.getGuildId(),
+    t = null != e ? b.Z.getAppliedGuildBoostsForGuild(e) : null,
     n = o()(null != t ? t : []).uniqBy(e => e.userId),
     r = n.map(t => ({
-      user: b.default.getUser(t.userId),
-      nick: C.ZP.getNick(e, t.userId)
+      user: j.default.getUser(t.userId),
+      nick: x.ZP.getNick(e, t.userId)
     })).filter(e => null != e.user).value();
   return {
     guildId: e,
@@ -265,4 +265,4 @@ let B = A.ZP.connectStores([f.Z, b.default, h.Z, C.ZP], () => {
     subscribers: r,
     subscriberCount: n.size()
   }
-})(P)
+})(T)

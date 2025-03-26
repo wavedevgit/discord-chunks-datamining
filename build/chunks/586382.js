@@ -1,9 +1,9 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   hH: () => g,
-  xl: () => f,
-  zA: () => u
+  xl: () => p,
+  zA: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -11,47 +11,47 @@ var r = n(200651),
   a = n(807582),
   l = n(949640),
   o = n(981631),
-  A = n(30513),
-  c = n(531489);
+  c = n(30513),
+  d = n(531489);
 
-function d(e) {
+function u(e) {
   let {
     guild: t,
     guildFeature: n,
     analyticsSection: o,
-    analyticsObject: A,
-    getPerks: d,
-    targetPremiumGuildTier: u
+    analyticsObject: c,
+    getPerks: u,
+    targetPremiumGuildTier: m
   } = e, {
     analyticsLocations: g
-  } = (0, s.ZP)(), f = i.useCallback(e => {
+  } = (0, s.ZP)(), p = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, l.E6)({
       guild: t,
       analyticsLocations: g,
       analyticsSection: o,
-      analyticsObject: A,
-      perks: d(),
-      targetPremiumGuildTier: u
+      analyticsObject: c,
+      perks: u(),
+      targetPremiumGuildTier: m
     })
-  }, [g, A, o, t, d, u]);
+  }, [g, c, o, t, u, m]);
   return (0, r.jsx)(a.Z, {
     guild: t,
     guildFeature: n,
-    className: c.guildFeatureAvailabilityIndicator,
-    onClick: f
+    className: d.guildFeatureAvailabilityIndicator,
+    onClick: p
   })
 }
 
-function u(e) {
+function m(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(d, {
+  return (0, r.jsx)(u, {
     guild: t,
     guildFeature: o.oNc.BANNER,
     analyticsSection: o.jXE.GUILD_BANNER,
     analyticsObject: o.qAy.BADGE,
-    getPerks: A.XO
+    getPerks: c.XO
   })
 }
 
@@ -59,25 +59,25 @@ function g(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(d, {
+  return (0, r.jsx)(u, {
     guild: t,
     guildFeature: o.oNc.INVITE_SPLASH,
     analyticsSection: o.jXE.GUILD_INVITE_BACKGROUND,
     analyticsObject: o.qAy.BADGE,
-    getPerks: A.o9
+    getPerks: c.o9
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(d, {
+  return (0, r.jsx)(u, {
     guild: t,
     guildFeature: o.oNc.VANITY_URL,
     analyticsSection: o.jXE.GUILD_SETTINGS_VANITY_URL,
     analyticsObject: o.qAy.BADGE,
-    getPerks: A.WW,
+    getPerks: c.WW,
     targetPremiumGuildTier: o.Eu4.TIER_3
   })
 }

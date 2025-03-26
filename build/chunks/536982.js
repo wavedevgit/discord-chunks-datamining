@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,18 +10,18 @@ var r = n(200651),
   l = n(388032),
   o = n(533788);
 
-function A(e) {
+function c(e) {
   let {
     onChange: t,
     initialValue: n,
-    maxWordCount: A,
-    collapsed: c = !1
-  } = e, [d, u] = i.useState(!c);
+    maxWordCount: c,
+    collapsed: d = !1
+  } = e, [u, m] = i.useState(!d);
   return (0, r.jsx)(s.zF9, {
-    isExpanded: d,
+    isExpanded: u,
     collapsibleContent: (0, r.jsx)(a.Z, {
       onChangeText: t,
-      maxWordCount: A,
+      maxWordCount: c,
       className: o.keywordTextAreaContainer,
       textAreaClassName: o.keywordTextArea,
       subtitleText: l.NW.formatToMarkdownString(l.t.qm7UZ2, {}),
@@ -34,14 +34,14 @@ function A(e) {
       } = e;
       return (0, r.jsx)(s.P3F, {
         onClick: e => {
-          u(!d), t(e)
+          m(!u), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: o.header,
           children: [(0, r.jsx)(s.X6q, {
             variant: "text-sm/medium",
             children: l.NW.string(l.t.lbE2Nj)
-          }), d ? (0, r.jsx)(s.u04, {
+          }), u ? (0, r.jsx)(s.u04, {
             size: "md",
             color: "currentColor",
             className: o.arrow

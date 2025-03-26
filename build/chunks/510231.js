@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  h: () => d
+  h: () => u
 }), n(978209);
 var r = n(192379),
   i = n(392711),
@@ -9,14 +9,14 @@ var r = n(192379),
   a = n(442837),
   l = n(189451),
   o = n(77498),
-  A = n(570911);
+  c = n(570911);
 
-function c(e) {
+function d(e) {
   var t;
-  return null !== (t = A.gQ.get(e)) && void 0 !== t ? t : 0
+  return null !== (t = c.gQ.get(e)) && void 0 !== t ? t : 0
 }
 
-function d() {
+function u() {
   let e = (0, a.e7)([o.Z], () => o.Z.games),
     t = r.useMemo(() => s()(e).filter(e => !((null == e ? void 0 : e.themes) != null && e.themes.includes(l.u.EROTIC))).map(e => ({
       value: e.id,
@@ -25,9 +25,9 @@ function d() {
       let {
         value: t
       } = e;
-      return c(t)
+      return d(t)
     }).reverse().value(), [e]),
-    n = r.useCallback((e, t) => c(t.item.value) - c(e.item.value), []);
+    n = r.useCallback((e, t) => d(t.item.value) - d(e.item.value), []);
   return {
     options: t,
     matchSorterOptions: r.useMemo(() => ({

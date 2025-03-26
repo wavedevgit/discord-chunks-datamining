@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => m
 }), n(47120);
 var r, i, s = n(748780);
 
@@ -41,7 +41,7 @@ class o {
     a(this, "animation", void 0), this.animation = e
   }
 }
-class A {
+class c {
   _map(e) {
     return this.animations.map(e)
   }
@@ -55,7 +55,7 @@ class A {
     a(this, "animations", void 0), this.animations = e
   }
 }
-class c {
+class d {
   async start() {
     for (let e of (this.stopped = !1, this.animations)) {
       if (this.stopped) return;
@@ -70,21 +70,21 @@ class c {
   }
 }
 
-function d(e, t, n) {
+function u(e, t, n) {
   return new o(n(e, l({}, t)))
 }
-let u = (r = l({}, s.Z), i = i = {
+let m = (r = l({}, s.Z), i = i = {
   timing: function(e, t) {
-    return d(e, t, s.Z.timing)
+    return u(e, t, s.Z.timing)
   },
   spring: function(e, t) {
-    return d(e, t, s.Z.spring)
+    return u(e, t, s.Z.spring)
   },
   parallel: function(e) {
-    return new A(e)
+    return new c(e)
   },
   sequence: function(e) {
-    return new c(e)
+    return new d(e)
   }
 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
   var n = Object.keys(e);

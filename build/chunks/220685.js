@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => R
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -9,39 +9,39 @@ var r = n(200651),
   a = n.n(s),
   l = n(512722),
   o = n.n(l),
-  A = n(392711),
-  c = n.n(A),
-  d = n(442837),
-  u = n(692547),
+  c = n(392711),
+  d = n.n(c),
+  u = n(442837),
+  m = n(692547),
   g = n(215569),
-  f = n(481060),
-  m = n(484614),
-  p = n(852860),
-  h = n(782568),
-  C = n(367907),
-  b = n(674180),
-  v = n(999382),
-  x = n(626135),
-  N = n(730647),
-  j = n(584825),
-  E = n(981631),
-  I = n(388032),
-  O = n(260229);
-let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
-  w = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
-  P = y[4],
-  B = e => {
+  p = n(481060),
+  h = n(484614),
+  f = n(852860),
+  b = n(782568),
+  x = n(367907),
+  j = n(674180),
+  N = n(999382),
+  v = n(626135),
+  _ = n(730647),
+  C = n(584825),
+  O = n(981631),
+  y = n(388032),
+  I = n(260229);
+let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
+  S = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
+  T = E[4],
+  P = e => {
     var t, n;
     let {
       guild: s,
       canEnable: l
-    } = e, A = (0, j.YB)(s.id), {
-      loading: d,
-      updateSubscriptionsSettings: v
-    } = (0, j.QV)(), [N, B] = i.useState(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), [D, T] = i.useState(null !== (t = null == A ? void 0 : A.store_page_primary_color) && void 0 !== t ? t : P), [S, L] = i.useState(null == A ? void 0 : A.store_page_trailer_url), R = null == S || null != S.match(w), [Q, W] = i.useState(null !== (n = null == A ? void 0 : A.store_page_show_subscriber_count) && void 0 !== n && n), Z = i.useRef(null == A ? void 0 : A.store_page_slug).current, k = N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) || (null == A ? void 0 : A.store_page_primary_color) == null && D !== P || (null == A ? void 0 : A.store_page_primary_color) != null && D !== (null == A ? void 0 : A.store_page_primary_color) || S !== (null == A ? void 0 : A.store_page_trailer_url) || null != Q && Q !== (null == A ? void 0 : A.store_page_show_subscriber_count), M = async () => {
-      o()(null != A, "Settings must be defined");
+    } = e, c = (0, C.YB)(s.id), {
+      loading: u,
+      updateSubscriptionsSettings: N
+    } = (0, C.QV)(), [_, P] = i.useState(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null !== (t = null == c ? void 0 : c.store_page_primary_color) && void 0 !== t ? t : T), [Z, D] = i.useState(null == c ? void 0 : c.store_page_trailer_url), A = null == Z || null != Z.match(S), [k, W] = i.useState(null !== (n = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== n && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, M = _ !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || Z !== (null == c ? void 0 : c.store_page_trailer_url) || null != k && k !== (null == c ? void 0 : c.store_page_show_subscriber_count), G = async () => {
+      o()(null != c, "Settings must be defined");
       let e = {};
-      N !== s.hasFeature(E.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = N), ((null == A ? void 0 : A.store_page_primary_color) == null && D !== P || (null == A ? void 0 : A.store_page_primary_color) != null && D !== (null == A ? void 0 : A.store_page_primary_color)) && (e.store_page_primary_color = D), S !== (null == A ? void 0 : A.store_page_trailer_url) && (e.store_page_trailer_url = S), Q !== (null == A ? void 0 : A.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = Q), !c().isEmpty(e) && (await v(s.id, e), "store_page_enabled" in e && x.default.track(E.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+      _ !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = _), ((null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = w), Z !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = Z), k !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = k), !d().isEmpty(e) && (await N(s.id, e), "store_page_enabled" in e && v.default.track(O.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -59,172 +59,172 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         }
         return e
       }({
-        enabled: N
-      }, (0, C.hH)(s.id))))
-    }, _ = E.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(Z), G = null != S && S === (null == A ? void 0 : A.store_page_trailer_url), {
+        enabled: _
+      }, (0, x.hH)(s.id))))
+    }, U = O.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), B = null != Z && Z === (null == c ? void 0 : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: F
-    } = (0, b.gX)(s.id), U = F || !R;
+    } = (0, j.gX)(s.id), z = F || !A;
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(f.vwX, {
+      children: [(0, r.jsx)(p.vwX, {
         tag: "h1",
-        children: I.NW.string(I.t.N6Tg9P)
-      }), (0, r.jsx)(f.R94, {
-        type: f.R94.Types.DESCRIPTION,
-        children: I.NW.string(I.t["uU/69/"])
-      }), (0, r.jsx)(f.j7V, {
-        className: O.enableSwitch,
-        value: N,
-        disabled: F || !N && !l,
-        tooltipNote: N || l ? void 0 : I.NW.string(I.t.mIgfEh),
+        children: y.NW.string(y.t.N6Tg9P)
+      }), (0, r.jsx)(p.R94, {
+        type: p.R94.Types.DESCRIPTION,
+        children: y.NW.string(y.t["uU/69/"])
+      }), (0, r.jsx)(p.j7V, {
+        className: I.enableSwitch,
+        value: _,
+        disabled: F || !_ && !l,
+        tooltipNote: _ || l ? void 0 : y.NW.string(y.t.mIgfEh),
         hideBorder: !0,
-        onChange: e => B(e),
-        children: (0, r.jsx)(f.Text, {
+        onChange: e => P(e),
+        children: (0, r.jsx)(p.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: I.NW.string(I.t.lwvl1t)
+          children: y.NW.string(y.t.lwvl1t)
         })
-      }), (0, r.jsxs)(f.xJW, {
-        title: I.NW.string(I.t.N46WOj),
+      }), (0, r.jsxs)(p.xJW, {
+        title: y.NW.string(y.t.N46WOj),
         disabled: F,
-        children: [(0, r.jsx)(m.Z, {
-          value: _,
+        children: [(0, r.jsx)(h.Z, {
+          value: U,
           className: a()({
-            [O.disabled]: F
+            [I.disabled]: F
           })
-        }), (0, r.jsx)(f.zxk, {
-          onClick: () => (0, h.Z)(_),
-          className: O.openPageButton,
+        }), (0, r.jsx)(p.zxk, {
+          onClick: () => (0, b.Z)(U),
+          className: I.openPageButton,
           disabled: F,
-          children: I.NW.string(I.t.CaOYqa)
+          children: y.NW.string(y.t.CaOYqa)
         })]
-      }), (0, r.jsx)(f.$i$, {
-        className: O.divider
-      }), (0, r.jsxs)(f.xJW, {
-        title: I.NW.string(I.t.W39uIC),
+      }), (0, r.jsx)(p.$i$, {
+        className: I.divider
+      }), (0, r.jsxs)(p.xJW, {
+        title: y.NW.string(y.t.W39uIC),
         disabled: F,
-        children: [(0, r.jsx)(f.R94, {
+        children: [(0, r.jsx)(p.R94, {
           disabled: F,
-          children: I.NW.string(I.t.B6XtEx)
+          children: y.NW.string(y.t.B6XtEx)
         }), (0, r.jsxs)("div", {
-          className: O.accentColorContainer,
-          children: [(0, r.jsx)(f.zxk, {
+          className: I.accentColorContainer,
+          children: [(0, r.jsx)(p.zxk, {
             onClick: () => null,
-            color: f.zxk.Colors.CUSTOM,
+            color: p.zxk.Colors.CUSTOM,
             style: {
-              backgroundColor: "#".concat(D.toString(16).padStart(6, "0"))
+              backgroundColor: "#".concat(w.toString(16).padStart(6, "0"))
             },
-            className: O.buttonPreview,
+            className: I.buttonPreview,
             disabled: F,
-            children: I.NW.string(I.t.l6iM39)
-          }), (0, r.jsx)(f.zH8, {
-            colors: y,
+            children: y.NW.string(y.t.l6iM39)
+          }), (0, r.jsx)(p.zH8, {
+            colors: E,
             customColor: null,
-            defaultColor: P,
-            value: D,
-            onChange: e => T(e),
+            defaultColor: T,
+            value: w,
+            onChange: e => R(e),
             renderDefaultButton: () => null,
             renderCustomButton: () => null,
-            colorContainerClassName: O.hideColorButtons,
+            colorContainerClassName: I.hideColorButtons,
             disabled: F
           })]
         })]
-      }), (0, r.jsx)(f.$i$, {
-        className: O.divider
-      }), (0, r.jsxs)(f.xJW, {
-        title: I.NW.string(I.t.k2yRvb),
+      }), (0, r.jsx)(p.$i$, {
+        className: I.divider
+      }), (0, r.jsxs)(p.xJW, {
+        title: y.NW.string(y.t.k2yRvb),
         disabled: F,
-        children: [(0, r.jsx)(f.R94, {
+        children: [(0, r.jsx)(p.R94, {
           disabled: F,
-          children: I.NW.string(I.t["amd99/"])
-        }), (0, r.jsx)(f.oil, {
-          value: null != S ? S : void 0,
-          onChange: e => L("" === e ? null : e),
-          error: R ? null : I.NW.string(I.t["1kL79f"]),
-          placeholder: I.NW.string(I.t["+I4gdX"]),
-          className: O.trailerInputWrapper,
-          inputClassName: a()(O.trailerInput, {
-            [O.error]: !R,
-            [O.trailerInputWithCheckmark]: G || !R
+          children: y.NW.string(y.t["amd99/"])
+        }), (0, r.jsx)(p.oil, {
+          value: null != Z ? Z : void 0,
+          onChange: e => D("" === e ? null : e),
+          error: A ? null : y.NW.string(y.t["1kL79f"]),
+          placeholder: y.NW.string(y.t["+I4gdX"]),
+          className: I.trailerInputWrapper,
+          inputClassName: a()(I.trailerInput, {
+            [I.error]: !A,
+            [I.trailerInputWithCheckmark]: B || !A
           }),
-          prefixElement: R && G && (0, r.jsx)(f.owK, {
+          prefixElement: A && B && (0, r.jsx)(p.owK, {
             size: "md",
-            color: u.Z.unsafe_rawColors.BRAND_500.css,
-            secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css,
-            className: O.inputCheckmark
+            color: m.Z.unsafe_rawColors.BRAND_500.css,
+            secondaryColor: m.Z.unsafe_rawColors.WHITE_500.css,
+            className: I.inputCheckmark
           }),
           disabled: F
         })]
-      }), (0, r.jsx)(f.$i$, {
-        className: O.divider
-      }), (0, r.jsxs)(f.xJW, {
-        title: I.NW.string(I.t.AU2HU1),
+      }), (0, r.jsx)(p.$i$, {
+        className: I.divider
+      }), (0, r.jsxs)(p.xJW, {
+        title: y.NW.string(y.t.AU2HU1),
         disabled: F,
-        children: [(0, r.jsx)(f.R94, {
+        children: [(0, r.jsx)(p.R94, {
           disabled: F,
-          children: I.NW.string(I.t.iWBt3d)
-        }), (0, r.jsx)(f.j7V, {
-          className: O.premiumMemberCountSwitchContainer,
-          value: Q,
+          children: y.NW.string(y.t.iWBt3d)
+        }), (0, r.jsx)(p.j7V, {
+          className: I.premiumMemberCountSwitchContainer,
+          value: k,
           hideBorder: !0,
           onChange: e => W(e),
           disabled: F,
           children: (0, r.jsxs)("div", {
-            className: O.iconSwitchLabel,
+            className: I.iconSwitchLabel,
             children: [(0, r.jsx)("div", {
-              className: O.iconContainer,
-              children: (0, r.jsx)(f.tBG, {
+              className: I.iconContainer,
+              children: (0, r.jsx)(p.tBG, {
                 size: "custom",
                 color: "currentColor",
                 width: 28,
                 height: 28,
-                className: O.premiumMemberCountIcon
+                className: I.premiumMemberCountIcon
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(f.Text, {
+              children: [(0, r.jsx)(p.Text, {
                 variant: "text-md/medium",
                 color: "header-primary",
-                children: I.NW.string(I.t.hJsAPj)
-              }), (0, r.jsx)(f.Text, {
+                children: y.NW.string(y.t.hJsAPj)
+              }), (0, r.jsx)(p.Text, {
                 variant: "text-sm/normal",
                 color: "header-secondary",
-                children: I.NW.string(I.t.hn65ER)
+                children: y.NW.string(y.t.hn65ER)
               })]
             })]
           })
         })]
       }), (0, r.jsx)(g.W, {
         component: "div",
-        className: O.contentRegion,
-        children: k && (0, r.jsx)(f.oXn, {
-          children: (0, r.jsx)(p.Z, {
-            submitting: d,
+        className: I.contentRegion,
+        children: M && (0, r.jsx)(p.oXn, {
+          children: (0, r.jsx)(f.Z, {
+            submitting: u,
             onReset: () => {
               var e, t;
-              B(s.hasFeature(E.oNc.CREATOR_STORE_PAGE)), T(null !== (e = null == A ? void 0 : A.store_page_primary_color) && void 0 !== e ? e : P), L(null == A ? void 0 : A.store_page_trailer_url), W(null !== (t = null == A ? void 0 : A.store_page_show_subscriber_count) && void 0 !== t && t)
+              P(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), R(null !== (e = null == c ? void 0 : c.store_page_primary_color) && void 0 !== e ? e : T), D(null == c ? void 0 : c.store_page_trailer_url), W(null !== (t = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== t && t)
             },
-            onSave: M,
-            disabled: U
+            onSave: G,
+            disabled: z
           })
         })
       })]
     })
   };
 
-function D() {
-  let e = (0, d.e7)([v.Z], () => v.Z.getGuild()),
-    t = (0, N.f)(),
-    n = (0, j.qi)(null == e ? void 0 : e.id).some(e => e.published);
-  return null != e && t ? (0, r.jsx)(B, {
+function w() {
+  let e = (0, u.e7)([N.Z], () => N.Z.getGuild()),
+    t = (0, _.f)(),
+    n = (0, C.qi)(null == e ? void 0 : e.id).some(e => e.published);
+  return null != e && t ? (0, r.jsx)(P, {
     guild: e,
     canEnable: n
-  }) : (0, r.jsx)(f.$jN, {})
+  }) : (0, r.jsx)(p.$jN, {})
 }
 
-function T() {
-  let e = (0, d.e7)([v.Z], () => v.Z.getGuild());
-  return (0, r.jsx)(N.l, {
+function R() {
+  let e = (0, u.e7)([N.Z], () => N.Z.getGuild());
+  return (0, r.jsx)(_.l, {
     guildId: null == e ? void 0 : e.id,
     refetchOnMount: !0,
-    children: (0, r.jsx)(D, {})
+    children: (0, r.jsx)(w, {})
   })
 }

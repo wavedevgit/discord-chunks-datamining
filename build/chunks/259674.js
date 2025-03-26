@@ -1,9 +1,9 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Nx: () => c,
-  lW: () => d,
-  tK: () => A
+  Nx: () => d,
+  lW: () => u,
+  tK: () => c
 });
 var r, i = n(367907),
   s = n(626135),
@@ -28,24 +28,24 @@ function o(e) {
   }
   return e
 }
-var A = ((r = {}).DESCRIPTION = "description", r.CATEGORIES = "categories", r.TAGS = "tags", r.AGREE_TO_RULES = "agree_to_rules", r);
-let c = (e, t, n) => {
+var c = ((r = {}).DESCRIPTION = "description", r.CATEGORIES = "categories", r.TAGS = "tags", r.AGREE_TO_RULES = "agree_to_rules", r);
+let d = (e, t, n) => {
     s.default.track(l.rMx.USER_FLOW_TRANSITION, o({
       flow_type: l.jXE.DISCOVERY_SETUP_MODAL,
       from_step: e,
       to_step: t
     }, (0, i.hH)(n)))
   },
-  d = e => {
+  u = e => {
     let {
       articleId: t,
       guildId: n,
       modalStep: r = null,
-      pageView: A = null
+      pageView: c = null
     } = e;
     open(a.Z.getArticleURL(t)), s.default.track(l.rMx.DISCOVERY_SETUP_CTA_CLICKED, o({
       cta_name: l.b8q,
-      discovery_settings_view: A,
+      discovery_settings_view: c,
       help_center_article_id: t,
       modal_step: r
     }, (0, i.hH)(n)))

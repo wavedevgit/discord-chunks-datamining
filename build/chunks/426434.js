@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -10,40 +10,40 @@ var i = n(392711),
   a = n(481060),
   l = n(230711),
   o = n(496675),
-  A = n(594174),
-  c = n(434404),
-  d = n(449226),
-  u = n(981631),
+  c = n(594174),
+  d = n(434404),
+  u = n(449226),
+  m = n(981631),
   g = n(388032),
-  f = n(713401);
+  p = n(713401);
 
-function m(e) {
+function h(e) {
   let t, {
       guild: n
     } = e,
-    m = n.mfaLevel,
-    p = (0, s.e7)([o.Z], () => null != n && o.Z.can(u.Plq.MANAGE_GUILD, n), [n]),
-    h = (0, s.e7)([A.default], () => A.default.getCurrentUser()),
-    C = n.isOwner(h),
-    b = null == h ? void 0 : h.mfaEnabled,
-    v = m === u.BpS.ELEVATED,
-    x = C && b,
-    N = (0, i.throttle)(async e => {
-      x && await c.Z.updateMFALevel({
+    h = n.mfaLevel,
+    f = (0, s.e7)([o.Z], () => null != n && o.Z.can(m.Plq.MANAGE_GUILD, n), [n]),
+    b = (0, s.e7)([c.default], () => c.default.getCurrentUser()),
+    x = n.isOwner(b),
+    j = null == b ? void 0 : b.mfaEnabled,
+    N = h === m.BpS.ELEVATED,
+    v = x && j,
+    _ = (0, i.throttle)(async e => {
+      v && await d.Z.updateMFALevel({
         guildId: n.id,
-        level: e ? u.BpS.ELEVATED : u.BpS.NONE,
+        level: e ? m.BpS.ELEVATED : m.BpS.NONE,
         isEnabled: !e
       })
     }, 1e3);
-  if (!p) return null;
-  x || (t = C ? g.NW.format(g.t.nFwNyc, {
-    settingsHook: () => l.Z.open(u.oAB.ACCOUNT)
+  if (!f) return null;
+  v || (t = x ? g.NW.format(g.t.nFwNyc, {
+    settingsHook: () => l.Z.open(m.oAB.ACCOUNT)
   }) : g.NW.string(g.t["9Ghu4+"]));
-  let j = n.hasFeature(u.oNc.DISCOVERABLE);
+  let C = n.hasFeature(m.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: f.simpleItemWrapper,
+    className: p.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
-      className: f.itemContent,
+      className: p.itemContent,
       children: [(0, r.jsx)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -53,19 +53,19 @@ function m(e) {
         color: "header-secondary",
         children: [g.NW.string(g.t["a/93Jy"]), " ", t]
       })]
-    }), !x || v && j ? (0, r.jsx)(a.ua7, {
-      text: j ? g.NW.string(g.t["KG1V/P"]) : C ? g.NW.string(g.t.NmsheX) : g.NW.string(g.t.LieBtb),
-      children: e => (0, r.jsx)(d.Z, {
-        checked: v,
+    }), !v || N && C ? (0, r.jsx)(a.ua7, {
+      text: C ? g.NW.string(g.t["KG1V/P"]) : x ? g.NW.string(g.t.NmsheX) : g.NW.string(g.t.LieBtb),
+      children: e => (0, r.jsx)(u.Z, {
+        checked: N,
         disabled: !0,
-        onChange: N,
-        className: f.bringToFront,
+        onChange: _,
+        className: p.bringToFront,
         tooltipProps: e
       })
-    }) : (0, r.jsx)(d.Z, {
-      checked: v,
-      onChange: N,
-      className: f.bringToFront
+    }) : (0, r.jsx)(u.Z, {
+      checked: N,
+      onChange: _,
+      className: p.bringToFront
     })]
   })
 }

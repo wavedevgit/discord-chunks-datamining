@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => B
+  Z: () => P
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,17 +9,17 @@ var r = n(200651),
   a = n.n(s),
   l = n(512722),
   o = n.n(l),
-  A = n(780384),
-  c = n(481060),
-  d = n(99690),
-  u = n(410030),
+  c = n(780384),
+  d = n(481060),
+  u = n(99690),
+  m = n(410030),
   g = n(726542),
-  f = n(981631),
-  m = n(856651),
-  p = n(388032),
-  h = n(151033);
+  p = n(981631),
+  h = n(856651),
+  f = n(388032),
+  b = n(151033);
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,100 +38,100 @@ function C(e) {
   return e
 }
 
-function b(e) {
+function j(e) {
   var t, n;
   let i, {
     theme: s,
     platform: l,
-    integration: u,
+    integration: m,
     onRemove: g,
-    locked: f
+    locked: p
   } = e;
-  if ((null == u ? void 0 : u.application) != null) o()(null != u.application.bot, "bot is null"), i = (0, r.jsx)(d.Z, {
-    size: c.EFr.SIZE_24,
-    user: u.application.bot,
-    className: h.verifiedIcon
+  if ((null == m ? void 0 : m.application) != null) o()(null != m.application.bot, "bot is null"), i = (0, r.jsx)(u.Z, {
+    size: d.EFr.SIZE_24,
+    user: m.application.bot,
+    className: b.verifiedIcon
   });
   else if (null != l) {
-    let e = (0, A.ap)(s) ? l.icon.lightSVG : l.icon.darkSVG;
+    let e = (0, c.ap)(s) ? l.icon.lightSVG : l.icon.darkSVG;
     i = (0, r.jsx)("img", {
-      className: h.verifiedIcon,
+      className: b.verifiedIcon,
       src: e,
-      alt: p.NW.formatToPlainString(p.t.rtm15O, {
+      alt: f.NW.formatToPlainString(f.t.rtm15O, {
         name: l.name
       })
     })
   }
   return (0, r.jsxs)("div", {
-    className: a()(h.verifiedRow, (null == l ? void 0 : l.hasMetadata) === !0 || (null == u ? void 0 : u.role_connections_metadata) != null && (null == u ? void 0 : u.role_connections_metadata.length) > 0 ? h.verifiedRowWithMetadata : null),
-    children: [i, (0, r.jsx)(c.Text, {
+    className: a()(b.verifiedRow, (null == l ? void 0 : l.hasMetadata) === !0 || (null == m ? void 0 : m.role_connections_metadata) != null && (null == m ? void 0 : m.role_connections_metadata.length) > 0 ? b.verifiedRowWithMetadata : null),
+    children: [i, (0, r.jsx)(d.Text, {
       variant: "text-md/medium",
-      className: h.verifiedText,
-      children: p.NW.format(p.t.Nj0a3t, {
-        platformName: null !== (n = null == l ? void 0 : l.name) && void 0 !== n ? n : null == u ? void 0 : null === (t = u.application) || void 0 === t ? void 0 : t.name
+      className: b.verifiedText,
+      children: f.NW.format(f.t.Nj0a3t, {
+        platformName: null !== (n = null == l ? void 0 : l.name) && void 0 !== n ? n : null == m ? void 0 : null === (t = m.application) || void 0 === t ? void 0 : t.name
       })
-    }), (0, r.jsx)(c.zxk, {
-      "aria-label": p.NW.string(p.t.N86XcH),
-      size: c.zxk.Sizes.TINY,
-      look: c.zxk.Looks.BLANK,
+    }), (0, r.jsx)(d.zxk, {
+      "aria-label": f.NW.string(f.t.N86XcH),
+      size: d.zxk.Sizes.TINY,
+      look: d.zxk.Looks.BLANK,
       onClick: g,
-      disabled: f,
-      className: h.closeButton,
-      children: (0, r.jsx)(c.ua7, {
-        text: p.NW.string(p.t.N86XcH),
-        children: e => (0, r.jsx)(c.Dio, C({
+      disabled: p,
+      className: b.closeButton,
+      children: (0, r.jsx)(d.ua7, {
+        text: f.NW.string(f.t.N86XcH),
+        children: e => (0, r.jsx)(d.Dio, x({
           size: "md",
           color: "currentColor",
-          className: h.closeIcon
+          className: b.closeIcon
         }, e))
       })
     })]
   })
 }
 
-function v(e) {
+function N(e) {
   var t, n, s;
   let {
     inputRef: a,
     existingPendingConfiguration: l,
     locked: o,
-    onConfigurationChange: A,
-    platform: d,
-    applicationId: u,
+    onConfigurationChange: c,
+    platform: u,
+    applicationId: m,
     metadataField: g,
-    operator: f
-  } = e, p = null !== (n = null == l ? void 0 : l.index) && void 0 !== n ? n : -1, C = null != f ? f : m.iO.GREATER_THAN, b = Math.round(Number(null !== (s = null == l ? void 0 : null === (t = l.configuration) || void 0 === t ? void 0 : t.value) && void 0 !== s ? s : 0));
-  C === m.iO.GREATER_THAN ? b = Math.max(1, b + 1) : C === m.iO.LESS_THAN && (b = Math.max(0, b - 1));
-  let [v, x] = i.useState(b.toString());
+    operator: p
+  } = e, f = null !== (n = null == l ? void 0 : l.index) && void 0 !== n ? n : -1, x = null != p ? p : h.iO.GREATER_THAN, j = Math.round(Number(null !== (s = null == l ? void 0 : null === (t = l.configuration) || void 0 === t ? void 0 : t.value) && void 0 !== s ? s : 0));
+  x === h.iO.GREATER_THAN ? j = Math.max(1, j + 1) : x === h.iO.LESS_THAN && (j = Math.max(0, j - 1));
+  let [N, v] = i.useState(j.toString());
   return i.useEffect(() => {
-    x(v)
-  }, [v]), (0, r.jsx)(c.oil, {
+    v(N)
+  }, [N]), (0, r.jsx)(d.oil, {
     inputRef: a,
     type: "number",
-    className: h.numericalRuleInput,
-    size: c.oil.Sizes.MINI,
-    value: v,
+    className: b.numericalRuleInput,
+    size: d.oil.Sizes.MINI,
+    value: N,
     onChange: e => {
       if (null != l) {
         if ("" !== e) {
           var t;
           let n = Math.round(Number(e));
-          C === m.iO.GREATER_THAN ? n = Math.max(0, n - 1) : C === m.iO.LESS_THAN && (n = Math.max(1, n + 1)), A({
-            connectionType: null !== (t = null == d ? void 0 : d.type) && void 0 !== t ? t : m.Kt,
-            applicationId: u,
+          x === h.iO.GREATER_THAN ? n = Math.max(0, n - 1) : x === h.iO.LESS_THAN && (n = Math.max(1, n + 1)), c({
+            connectionType: null !== (t = null == u ? void 0 : u.type) && void 0 !== t ? t : h.Kt,
+            applicationId: m,
             connectionMetadataField: g,
-            operator: C,
+            operator: x,
             value: n.toString()
-          }, p)
+          }, f)
         }
-        x(e)
+        v(e)
       }
     },
     disabled: o
   }, g)
 }
 
-function x(e) {
+function v(e) {
   let {
     titleText: t,
     fieldText: n,
@@ -140,43 +140,43 @@ function x(e) {
     platform: a,
     applicationId: l,
     onConfigurationChange: o,
-    locked: A
+    locked: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: h.ruleContainer,
+    className: b.ruleContainer,
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
-        className: h.ruleItemHeader,
+        className: b.ruleItemHeader,
         children: t
       }), (0, r.jsx)("div", {
-        className: h.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(c.Text, {
+        className: b.numericalRuleSubItemContainer,
+        children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          className: h.numericalRuleSubText,
+          className: b.numericalRuleSubText,
           children: n
         })
       })]
-    }), (0, r.jsx)(c.rsf, {
-      className: h.ruleItemSwitch,
+    }), (0, r.jsx)(d.rsf, {
+      className: b.ruleItemSwitch,
       checked: (null == s ? void 0 : s.configuration.value) === "1",
       onChange: e => {
         var t, n;
         let r = null;
         e && (r = {
-          connectionType: null !== (t = null == a ? void 0 : a.type) && void 0 !== t ? t : m.Kt,
+          connectionType: null !== (t = null == a ? void 0 : a.type) && void 0 !== t ? t : h.Kt,
           applicationId: l,
           connectionMetadataField: i,
-          operator: m.iO.EQUAL,
+          operator: h.iO.EQUAL,
           value: "1"
         }), o(r, null !== (n = null == s ? void 0 : s.index) && void 0 !== n ? n : -1)
       },
-      disabled: A
+      disabled: c
     })]
   }, i)
 }
 
-function N(e) {
+function _(e) {
   let {
     titleText: t,
     fieldText: n,
@@ -184,193 +184,107 @@ function N(e) {
     metadataField: a,
     existingPendingConfiguration: l,
     platform: o,
-    applicationId: A,
-    onConfigurationChange: d,
-    locked: u,
+    applicationId: c,
+    onConfigurationChange: u,
+    locked: m,
     operator: g
-  } = e, f = i.createRef(), C = (null == l ? void 0 : l.configuration) != null, b = (0, r.jsx)(v, {
-    inputRef: f,
+  } = e, p = i.createRef(), x = (null == l ? void 0 : l.configuration) != null, j = (0, r.jsx)(N, {
+    inputRef: p,
     metadataField: a,
     existingPendingConfiguration: l,
-    locked: u || !C,
-    onConfigurationChange: d,
+    locked: m || !x,
+    onConfigurationChange: u,
     platform: o,
     operator: g,
-    applicationId: A
-  }, a), x = null != s ? p.NW.format(s, {
-    metadataHook: () => b
+    applicationId: c
+  }, a), v = null != s ? f.NW.format(s, {
+    metadataHook: () => j
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [b, (0, r.jsx)("span", {
-      className: h.fieldText,
+    children: [j, (0, r.jsx)("span", {
+      className: b.fieldText,
       children: n
     })]
   });
   return (0, r.jsxs)("div", {
-    className: h.ruleContainer,
+    className: b.ruleContainer,
     children: [(0, r.jsxs)("div", {
-      className: h.ruleContainerLabel,
-      children: [(0, r.jsx)(c.Text, {
+      className: b.ruleContainerLabel,
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
-        className: h.ruleItemHeader,
+        className: b.ruleItemHeader,
         children: t
       }), (0, r.jsx)("div", {
-        className: h.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(c.Text, {
+        className: b.numericalRuleSubItemContainer,
+        children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          className: h.numericalRuleSubText,
-          children: x
+          className: b.numericalRuleSubText,
+          children: v
         })
       })]
-    }), (0, r.jsx)(c.rsf, {
-      className: h.ruleItemSwitch,
-      checked: C,
+    }), (0, r.jsx)(d.rsf, {
+      className: b.ruleItemSwitch,
+      checked: x,
       onChange: e => {
         var t, n, r;
         let i = null;
         if (e) {
-          let e = null != g ? g : m.iO.GREATER_THAN,
-            r = Math.round(Number(null === (t = f.current) || void 0 === t ? void 0 : t.value));
-          e === m.iO.GREATER_THAN ? r = Math.max(0, r - 1) : e === m.iO.LESS_THAN && (r = Math.max(1, r + 1)), i = {
-            connectionType: null !== (n = null == o ? void 0 : o.type) && void 0 !== n ? n : m.Kt,
-            applicationId: A,
+          let e = null != g ? g : h.iO.GREATER_THAN,
+            r = Math.round(Number(null === (t = p.current) || void 0 === t ? void 0 : t.value));
+          e === h.iO.GREATER_THAN ? r = Math.max(0, r - 1) : e === h.iO.LESS_THAN && (r = Math.max(1, r + 1)), i = {
+            connectionType: null !== (n = null == o ? void 0 : o.type) && void 0 !== n ? n : h.Kt,
+            applicationId: c,
             connectionMetadataField: a,
             operator: e,
             value: r.toString()
           }
         }
-        d(i, null !== (r = null == l ? void 0 : l.index) && void 0 !== r ? r : -1)
+        u(i, null !== (r = null == l ? void 0 : l.index) && void 0 !== r ? r : -1)
       },
-      disabled: u
+      disabled: m
     })]
   }, a)
 }
 
-function j(e) {
+function C(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = g.Z.get(f.ABu.STEAM);
+  } = e, s = g.Z.get(p.ABu.STEAM);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.zdXqGx),
-      fieldTextHook: p.t.REyUZ2,
-      metadataField: m.PC.CREATED_AT,
-      existingPendingConfiguration: t.get(m.PC.CREATED_AT),
+    children: [(0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.zdXqGx),
+      fieldTextHook: f.t.REyUZ2,
+      metadataField: h.PC.CREATED_AT,
+      existingPendingConfiguration: t.get(h.PC.CREATED_AT),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.gLs17O),
-      fieldTextHook: p.t.zVJxqq,
-      metadataField: m.PC.STEAM_GAME_COUNT,
-      existingPendingConfiguration: t.get(m.PC.STEAM_GAME_COUNT),
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.gLs17O),
+      fieldTextHook: f.t.zVJxqq,
+      metadataField: h.PC.STEAM_GAME_COUNT,
+      existingPendingConfiguration: t.get(h.PC.STEAM_GAME_COUNT),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.formatToPlainString(p.t.j1Gf2t, {
-        gameName: p.NW.string(p.t.HKUEZm)
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.formatToPlainString(f.t.j1Gf2t, {
+        gameName: f.NW.string(f.t.HKUEZm)
       }),
-      fieldTextHook: p.t.ZCNdDw,
-      metadataField: m.PC.STEAM_ITEM_COUNT_DOTA2,
-      existingPendingConfiguration: t.get(m.PC.STEAM_ITEM_COUNT_DOTA2),
+      fieldTextHook: f.t.ZCNdDw,
+      metadataField: h.PC.STEAM_ITEM_COUNT_DOTA2,
+      existingPendingConfiguration: t.get(h.PC.STEAM_ITEM_COUNT_DOTA2),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.formatToPlainString(p.t.j1Gf2t, {
-        gameName: p.NW.string(p.t.C8p1Sk)
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.formatToPlainString(f.t.j1Gf2t, {
+        gameName: f.NW.string(f.t.C8p1Sk)
       }),
-      fieldTextHook: p.t.MCHnKy,
-      metadataField: m.PC.STEAM_ITEM_COUNT_TF2,
-      existingPendingConfiguration: t.get(m.PC.STEAM_ITEM_COUNT_TF2),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    })]
-  })
-}
-
-function E(e) {
-  let {
-    configMetadataMap: t,
-    onConfigurationChange: n,
-    locked: i
-  } = e, s = g.Z.get(f.ABu.TWITTER);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.zdXqGx),
-      fieldTextHook: p.t.REyUZ2,
-      metadataField: m.PC.CREATED_AT,
-      existingPendingConfiguration: t.get(m.PC.CREATED_AT),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.wbvDMz),
-      fieldTextHook: p.t["/w/EYm"],
-      metadataField: m.PC.TWITTER_FOLLOWERS_COUNT,
-      existingPendingConfiguration: t.get(m.PC.TWITTER_FOLLOWERS_COUNT),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t["1B3DVl"]),
-      fieldTextHook: p.t["+NFH7u"],
-      metadataField: m.PC.TWITTER_STATUSES_COUNT,
-      existingPendingConfiguration: t.get(m.PC.TWITTER_STATUSES_COUNT),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(x, {
-      titleText: p.NW.string(p.t.yz2CIC),
-      fieldText: p.NW.string(p.t.E2iT8P),
-      metadataField: m.PC.TWITTER_VERIFIED,
-      existingPendingConfiguration: t.get(m.PC.TWITTER_VERIFIED),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    })]
-  })
-}
-
-function I(e) {
-  let {
-    configMetadataMap: t,
-    onConfigurationChange: n,
-    locked: i
-  } = e, s = g.Z.get(f.ABu.REDDIT);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.zdXqGx),
-      fieldTextHook: p.t.REyUZ2,
-      metadataField: m.PC.CREATED_AT,
-      existingPendingConfiguration: t.get(m.PC.CREATED_AT),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t["3Xsroq"]),
-      fieldTextHook: p.t.TLgZho,
-      metadataField: m.PC.REDDIT_TOTAL_KARMA,
-      existingPendingConfiguration: t.get(m.PC.REDDIT_TOTAL_KARMA),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(x, {
-      titleText: p.NW.string(p.t.oWM95O),
-      fieldText: p.NW.string(p.t["0cKdkZ"]),
-      metadataField: m.PC.REDDIT_MOD,
-      existingPendingConfiguration: t.get(m.PC.REDDIT_MOD),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(x, {
-      titleText: p.NW.string(p.t["06rDHR"]),
-      fieldText: p.NW.string(p.t["kCAN5+"]),
-      metadataField: m.PC.REDDIT_GOLD,
-      existingPendingConfiguration: t.get(m.PC.REDDIT_GOLD),
+      fieldTextHook: f.t.MCHnKy,
+      metadataField: h.PC.STEAM_ITEM_COUNT_TF2,
+      existingPendingConfiguration: t.get(h.PC.STEAM_ITEM_COUNT_TF2),
       platform: s,
       onConfigurationChange: n,
       locked: i
@@ -383,21 +297,37 @@ function O(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = g.Z.get(f.ABu.PAYPAL);
+  } = e, s = g.Z.get(p.ABu.TWITTER);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.zdXqGx),
-      fieldTextHook: p.t.REyUZ2,
-      metadataField: m.PC.CREATED_AT,
-      existingPendingConfiguration: t.get(m.PC.CREATED_AT),
+    children: [(0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.zdXqGx),
+      fieldTextHook: f.t.REyUZ2,
+      metadataField: h.PC.CREATED_AT,
+      existingPendingConfiguration: t.get(h.PC.CREATED_AT),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(x, {
-      titleText: p.NW.string(p.t.IhXLy8),
-      fieldText: p.NW.string(p.t["0JyE8P"]),
-      metadataField: m.PC.PAYPAL_VERIFIED,
-      existingPendingConfiguration: t.get(m.PC.PAYPAL_VERIFIED),
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.wbvDMz),
+      fieldTextHook: f.t["/w/EYm"],
+      metadataField: h.PC.TWITTER_FOLLOWERS_COUNT,
+      existingPendingConfiguration: t.get(h.PC.TWITTER_FOLLOWERS_COUNT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t["1B3DVl"]),
+      fieldTextHook: f.t["+NFH7u"],
+      metadataField: h.PC.TWITTER_STATUSES_COUNT,
+      existingPendingConfiguration: t.get(h.PC.TWITTER_STATUSES_COUNT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(v, {
+      titleText: f.NW.string(f.t.yz2CIC),
+      fieldText: f.NW.string(f.t.E2iT8P),
+      metadataField: h.PC.TWITTER_VERIFIED,
+      existingPendingConfiguration: t.get(h.PC.TWITTER_VERIFIED),
       platform: s,
       onConfigurationChange: n,
       locked: i
@@ -410,46 +340,37 @@ function y(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = g.Z.get(f.ABu.EBAY);
+  } = e, s = g.Z.get(p.ABu.REDDIT);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.zdXqGx),
-      fieldTextHook: p.t.REyUZ2,
-      metadataField: m.PC.CREATED_AT,
-      existingPendingConfiguration: t.get(m.PC.CREATED_AT),
+    children: [(0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.zdXqGx),
+      fieldTextHook: f.t.REyUZ2,
+      metadataField: h.PC.CREATED_AT,
+      existingPendingConfiguration: t.get(h.PC.CREATED_AT),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.AuMxf3),
-      fieldTextHook: p.t.oTFOe3,
-      metadataField: m.PC.EBAY_POSITIVE_FEEDBACK_PERCENTAGE,
-      existingPendingConfiguration: t.get(m.PC.EBAY_POSITIVE_FEEDBACK_PERCENTAGE),
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t["3Xsroq"]),
+      fieldTextHook: f.t.TLgZho,
+      metadataField: h.PC.REDDIT_TOTAL_KARMA,
+      existingPendingConfiguration: t.get(h.PC.REDDIT_TOTAL_KARMA),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.WzvoSk),
-      fieldTextHook: p.t.RH3VAw,
-      metadataField: m.PC.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT,
-      existingPendingConfiguration: t.get(m.PC.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT),
+    }), (0, r.jsx)(v, {
+      titleText: f.NW.string(f.t.oWM95O),
+      fieldText: f.NW.string(f.t["0cKdkZ"]),
+      metadataField: h.PC.REDDIT_MOD,
+      existingPendingConfiguration: t.get(h.PC.REDDIT_MOD),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.VuSFzs),
-      fieldTextHook: p.t.sn3m7u,
-      metadataField: m.PC.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT,
-      existingPendingConfiguration: t.get(m.PC.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i,
-      operator: m.iO.LESS_THAN
-    }), (0, r.jsx)(x, {
-      titleText: p.NW.string(p.t.TEEYwc),
-      fieldText: p.NW.string(p.t["39wASE"]),
-      metadataField: m.PC.EBAY_TOP_RATED_SELLER,
-      existingPendingConfiguration: t.get(m.PC.EBAY_TOP_RATED_SELLER),
+    }), (0, r.jsx)(v, {
+      titleText: f.NW.string(f.t["06rDHR"]),
+      fieldText: f.NW.string(f.t["kCAN5+"]),
+      metadataField: h.PC.REDDIT_GOLD,
+      existingPendingConfiguration: t.get(h.PC.REDDIT_GOLD),
       platform: s,
       onConfigurationChange: n,
       locked: i
@@ -457,42 +378,26 @@ function y(e) {
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = g.Z.get(f.ABu.TIKTOK);
+  } = e, s = g.Z.get(p.ABu.PAYPAL);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(x, {
-      titleText: p.NW.string(p.t.QHHwRU),
-      fieldText: p.NW.string(p.t.E2iT8P),
-      metadataField: m.PC.TIKTOK_VERIFIED,
-      existingPendingConfiguration: t.get(m.PC.TIKTOK_VERIFIED),
+    children: [(0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.zdXqGx),
+      fieldTextHook: f.t.REyUZ2,
+      metadataField: h.PC.CREATED_AT,
+      existingPendingConfiguration: t.get(h.PC.CREATED_AT),
       platform: s,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.WUSIHh),
-      fieldTextHook: p.t["/w/EYm"],
-      metadataField: m.PC.TIKTOK_FOLLOWER_COUNT,
-      existingPendingConfiguration: t.get(m.PC.TIKTOK_FOLLOWER_COUNT),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t.w1IVQk),
-      fieldTextHook: p.t.JHEsY2,
-      metadataField: m.PC.TIKTOK_FOLLOWING_COUNT,
-      existingPendingConfiguration: t.get(m.PC.TIKTOK_FOLLOWING_COUNT),
-      platform: s,
-      onConfigurationChange: n,
-      locked: i
-    }), (0, r.jsx)(N, {
-      titleText: p.NW.string(p.t["1cFXJi"]),
-      fieldTextHook: p.t.tEFCYG,
-      metadataField: m.PC.TIKTOK_LIKES_COUNT,
-      existingPendingConfiguration: t.get(m.PC.TIKTOK_LIKES_COUNT),
+    }), (0, r.jsx)(v, {
+      titleText: f.NW.string(f.t.IhXLy8),
+      fieldText: f.NW.string(f.t["0JyE8P"]),
+      metadataField: h.PC.PAYPAL_VERIFIED,
+      existingPendingConfiguration: t.get(h.PC.PAYPAL_VERIFIED),
       platform: s,
       onConfigurationChange: n,
       locked: i
@@ -500,7 +405,102 @@ function w(e) {
   })
 }
 
-function P(e) {
+function E(e) {
+  let {
+    configMetadataMap: t,
+    onConfigurationChange: n,
+    locked: i
+  } = e, s = g.Z.get(p.ABu.EBAY);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.zdXqGx),
+      fieldTextHook: f.t.REyUZ2,
+      metadataField: h.PC.CREATED_AT,
+      existingPendingConfiguration: t.get(h.PC.CREATED_AT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.AuMxf3),
+      fieldTextHook: f.t.oTFOe3,
+      metadataField: h.PC.EBAY_POSITIVE_FEEDBACK_PERCENTAGE,
+      existingPendingConfiguration: t.get(h.PC.EBAY_POSITIVE_FEEDBACK_PERCENTAGE),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.WzvoSk),
+      fieldTextHook: f.t.RH3VAw,
+      metadataField: h.PC.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT,
+      existingPendingConfiguration: t.get(h.PC.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.VuSFzs),
+      fieldTextHook: f.t.sn3m7u,
+      metadataField: h.PC.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT,
+      existingPendingConfiguration: t.get(h.PC.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i,
+      operator: h.iO.LESS_THAN
+    }), (0, r.jsx)(v, {
+      titleText: f.NW.string(f.t.TEEYwc),
+      fieldText: f.NW.string(f.t["39wASE"]),
+      metadataField: h.PC.EBAY_TOP_RATED_SELLER,
+      existingPendingConfiguration: t.get(h.PC.EBAY_TOP_RATED_SELLER),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    })]
+  })
+}
+
+function S(e) {
+  let {
+    configMetadataMap: t,
+    onConfigurationChange: n,
+    locked: i
+  } = e, s = g.Z.get(p.ABu.TIKTOK);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(v, {
+      titleText: f.NW.string(f.t.QHHwRU),
+      fieldText: f.NW.string(f.t.E2iT8P),
+      metadataField: h.PC.TIKTOK_VERIFIED,
+      existingPendingConfiguration: t.get(h.PC.TIKTOK_VERIFIED),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.WUSIHh),
+      fieldTextHook: f.t["/w/EYm"],
+      metadataField: h.PC.TIKTOK_FOLLOWER_COUNT,
+      existingPendingConfiguration: t.get(h.PC.TIKTOK_FOLLOWER_COUNT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t.w1IVQk),
+      fieldTextHook: f.t.JHEsY2,
+      metadataField: h.PC.TIKTOK_FOLLOWING_COUNT,
+      existingPendingConfiguration: t.get(h.PC.TIKTOK_FOLLOWING_COUNT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(_, {
+      titleText: f.NW.string(f.t["1cFXJi"]),
+      fieldTextHook: f.t.tEFCYG,
+      metadataField: h.PC.TIKTOK_LIKES_COUNT,
+      existingPendingConfiguration: t.get(h.PC.TIKTOK_LIKES_COUNT),
+      platform: s,
+      onConfigurationChange: n,
+      locked: i
+    })]
+  })
+}
+
+function T(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -511,33 +511,33 @@ function P(e) {
     var a, l;
     let o;
     switch (e.type) {
-      case m.xn.INTEGER_LESS_THAN_EQUAL:
-      case m.xn.DATETIME_LESS_THAN_EQUAL:
-        o = m.iO.LESS_THAN;
+      case h.xn.INTEGER_LESS_THAN_EQUAL:
+      case h.xn.DATETIME_LESS_THAN_EQUAL:
+        o = h.iO.LESS_THAN;
         break;
-      case m.xn.INTEGER_GREATER_THAN_EQUAL:
-      case m.xn.DATETIME_GREATER_THAN_EQUAL:
-        o = m.iO.GREATER_THAN;
+      case h.xn.INTEGER_GREATER_THAN_EQUAL:
+      case h.xn.DATETIME_GREATER_THAN_EQUAL:
+        o = h.iO.GREATER_THAN;
         break;
-      case m.xn.INTEGER_EQUAL:
-      case m.xn.BOOLEAN_EQUAL:
-        o = m.iO.EQUAL;
+      case h.xn.INTEGER_EQUAL:
+      case h.xn.BOOLEAN_EQUAL:
+        o = h.iO.EQUAL;
         break;
-      case m.xn.INTEGER_NOT_EQUAL:
-      case m.xn.BOOLEAN_NOT_EQUAL:
-        o = m.iO.NOT_EQUAL;
+      case h.xn.INTEGER_NOT_EQUAL:
+      case h.xn.BOOLEAN_NOT_EQUAL:
+        o = h.iO.NOT_EQUAL;
         break;
       default:
         return null
     }
     switch (e.type) {
-      case m.xn.INTEGER_LESS_THAN_EQUAL:
-      case m.xn.INTEGER_GREATER_THAN_EQUAL:
-      case m.xn.INTEGER_EQUAL:
-      case m.xn.INTEGER_NOT_EQUAL:
-      case m.xn.DATETIME_LESS_THAN_EQUAL:
-      case m.xn.DATETIME_GREATER_THAN_EQUAL:
-        return (0, r.jsx)(N, {
+      case h.xn.INTEGER_LESS_THAN_EQUAL:
+      case h.xn.INTEGER_GREATER_THAN_EQUAL:
+      case h.xn.INTEGER_EQUAL:
+      case h.xn.INTEGER_NOT_EQUAL:
+      case h.xn.DATETIME_LESS_THAN_EQUAL:
+      case h.xn.DATETIME_GREATER_THAN_EQUAL:
+        return (0, r.jsx)(_, {
           titleText: e.name,
           fieldText: e.description,
           metadataField: e.key,
@@ -548,9 +548,9 @@ function P(e) {
           operator: o,
           applicationId: null === (a = s.application) || void 0 === a ? void 0 : a.id
         }, e.key);
-      case m.xn.BOOLEAN_EQUAL:
-      case m.xn.BOOLEAN_NOT_EQUAL:
-        return (0, r.jsx)(x, {
+      case h.xn.BOOLEAN_EQUAL:
+      case h.xn.BOOLEAN_NOT_EQUAL:
+        return (0, r.jsx)(v, {
           titleText: e.name,
           fieldText: e.description,
           metadataField: e.key,
@@ -565,77 +565,77 @@ function P(e) {
   })
 }
 
-function B(e) {
+function P(e) {
   let t, {
       configurationItems: n,
       onConfigurationChange: i,
       locked: s,
       integrations: a
     } = e,
-    l = (0, u.ZP)();
+    l = (0, m.ZP)();
   if (n.length < 1) return null;
   let o = n[0].configuration.applicationId,
-    A = null != o ? null == a ? void 0 : a.find(e => {
+    c = null != o ? null == a ? void 0 : a.find(e => {
       var t;
       return (null === (t = e.application) || void 0 === t ? void 0 : t.id) === o
     }) : void 0;
-  if (null != o && null == A) return null;
-  let c = null;
+  if (null != o && null == c) return null;
+  let d = null;
   try {
-    c = g.Z.get(n[0].configuration.connectionType)
+    d = g.Z.get(n[0].configuration.connectionType)
   } catch (e) {}
-  let d = new Map;
+  let u = new Map;
   n.forEach(e => {
-    null != e.configuration.connectionMetadataField ? d.set(e.configuration.connectionMetadataField, e) : null == e.configuration.value && null == e.configuration.operator && null == e.configuration.connectionMetadataField && (t = e)
+    null != e.configuration.connectionMetadataField ? u.set(e.configuration.connectionMetadataField, e) : null == e.configuration.value && null == e.configuration.operator && null == e.configuration.connectionMetadataField && (t = e)
   });
-  let m = {
-      configMetadataMap: d,
+  let h = {
+      configMetadataMap: u,
       onConfigurationChange: i,
       locked: s
     },
-    p = null;
-  switch (null == c ? void 0 : c.type) {
-    case f.ABu.STEAM:
-      p = (0, r.jsx)(j, C({}, m));
+    f = null;
+  switch (null == d ? void 0 : d.type) {
+    case p.ABu.STEAM:
+      f = (0, r.jsx)(C, x({}, h));
       break;
-    case f.ABu.TWITTER:
-      p = (0, r.jsx)(E, C({}, m));
+    case p.ABu.TWITTER:
+      f = (0, r.jsx)(O, x({}, h));
       break;
-    case f.ABu.REDDIT:
-      p = (0, r.jsx)(I, C({}, m));
+    case p.ABu.REDDIT:
+      f = (0, r.jsx)(y, x({}, h));
       break;
-    case f.ABu.PAYPAL:
-      p = (0, r.jsx)(O, C({}, m));
+    case p.ABu.PAYPAL:
+      f = (0, r.jsx)(I, x({}, h));
       break;
-    case f.ABu.EBAY:
-      p = (0, r.jsx)(y, C({}, m));
+    case p.ABu.EBAY:
+      f = (0, r.jsx)(E, x({}, h));
       break;
-    case f.ABu.TIKTOK:
-      p = (0, r.jsx)(w, C({}, m));
+    case p.ABu.TIKTOK:
+      f = (0, r.jsx)(S, x({}, h));
       break;
     default:
-      var v, x;
-      p = (0, r.jsx)(P, (v = C({}, m), x = x = {
-        integration: A
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(v, Object.getOwnPropertyDescriptors(x)) : (function(e, t) {
+      var N, v;
+      f = (0, r.jsx)(T, (N = x({}, h), v = v = {
+        integration: c
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(N, Object.getOwnPropertyDescriptors(v)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(x)).forEach(function(e) {
-        Object.defineProperty(v, e, Object.getOwnPropertyDescriptor(x, e))
-      }), v))
+      })(Object(v)).forEach(function(e) {
+        Object.defineProperty(N, e, Object.getOwnPropertyDescriptor(v, e))
+      }), N))
   }
   return (0, r.jsxs)("div", {
-    className: h.container,
-    children: [(0, r.jsx)(b, {
+    className: b.container,
+    children: [(0, r.jsx)(j, {
       theme: l,
-      platform: c,
-      integration: A,
+      platform: d,
+      integration: c,
       onRemove: () => i(null, t.index),
       locked: s
-    }), p]
+    }), f]
   })
 }

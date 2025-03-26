@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => l
@@ -13,8 +13,8 @@ function l(e) {
     n = arguments.length > 2 ? arguments[2] : void 0,
     [l, o] = r.useState((0, a.se)(t)),
     {
-      errorMessage: A,
-      handleValidateKeywords: c
+      errorMessage: c,
+      handleValidateKeywords: d
     } = function(e) {
       let [t, n] = r.useState(null), a = r.useRef(null);
       return {
@@ -34,15 +34,15 @@ function l(e) {
         }), [e])
       }
     }(n),
-    d = r.useCallback(e => 0 !== e.length && (0, a.kU)(e) ? (0, a.se)((0, a.Ac)(e)) : e, []);
+    u = r.useCallback(e => 0 !== e.length && (0, a.kU)(e) ? (0, a.se)((0, a.Ac)(e)) : e, []);
   return {
     value: l,
-    errorMessage: A,
+    errorMessage: c,
     onChange: r.useCallback(t => {
       let n = t.currentTarget.value;
-      "insertFromPaste" === t.nativeEvent.inputType && (n = d(n));
+      "insertFromPaste" === t.nativeEvent.inputType && (n = u(n));
       let r = (0, a.Ac)(n);
-      o(n), e(r), c()(r)
-    }, [c, d, e])
+      o(n), e(r), d()(r)
+    }, [d, u, e])
   }
 }

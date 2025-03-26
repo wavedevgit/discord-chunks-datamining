@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => l
@@ -14,16 +14,16 @@ function l(e) {
     resubmittingEnableRequest: n,
     resubmissionError: l,
     createEnableRequest: o,
-    requestRejectedNoticeText: A,
-    reapplyNoticeText: c,
-    isApplicationPending: d
+    requestRejectedNoticeText: c,
+    reapplyNoticeText: d,
+    isApplicationPending: u
   } = e;
   if (null != l) return (0, r.jsx)(i.Z, {
     children: l.getAnyErrorMessage()
   });
-  let u = null;
-  return d ? u = a.NW.string(a.t.OrkTBg) : null != A ? u = A : null != c && (u = c, t = a.NW.string(a.t["YKw/NT"])), null != u ? (0, r.jsx)(s.Z, {
-    notice: u,
+  let m = null;
+  return u ? m = a.NW.string(a.t.OrkTBg) : null != c ? m = c : null != d && (m = d, t = a.NW.string(a.t["YKw/NT"])), null != m ? (0, r.jsx)(s.Z, {
+    notice: m,
     ctaLabel: t,
     ctaLoading: n,
     onClick: o

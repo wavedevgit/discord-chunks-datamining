@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => a
@@ -13,9 +13,9 @@ function a(e) {
       children: a,
       disabled: l,
       disabledTooltip: o,
-      id: A
+      id: c
     } = e,
-    c = function(e, t) {
+    d = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -51,9 +51,9 @@ function a(e) {
       return e
     }({
       className: s.tabBarItem,
-      id: A,
+      id: c,
       disabled: l
-    }, c), n = n = {
+    }, d), n = n = {
       children: a
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

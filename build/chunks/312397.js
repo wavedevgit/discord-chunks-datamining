@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   O: () => $,
@@ -10,50 +10,50 @@ var r = n(200651),
   a = n.n(s),
   l = n(512722),
   o = n.n(l),
-  A = n(580685),
-  c = n(442837),
-  d = n(692547),
-  u = n(780384),
+  c = n(580685),
+  d = n(442837),
+  u = n(692547),
+  m = n(780384),
   g = n(481060),
-  f = n(852860),
-  m = n(902840),
-  p = n(410030),
-  h = n(100527),
-  C = n(906732),
-  b = n(34586),
-  v = n(600164),
-  x = n(699553),
-  N = n(65361),
-  j = n(845663),
-  E = n(536442),
-  I = n(142497),
-  O = n(345861),
-  y = n(208567),
-  w = n(496675),
-  P = n(594174),
-  B = n(768581),
-  D = n(823379),
-  T = n(63063),
-  S = n(434404),
-  L = n(999382),
-  R = n(67734),
-  Q = n(375263),
+  p = n(852860),
+  h = n(902840),
+  f = n(410030),
+  b = n(100527),
+  x = n(906732),
+  j = n(34586),
+  N = n(600164),
+  v = n(699553),
+  _ = n(65361),
+  C = n(845663),
+  O = n(536442),
+  y = n(142497),
+  I = n(345861),
+  E = n(208567),
+  S = n(496675),
+  T = n(594174),
+  P = n(768581),
+  w = n(823379),
+  R = n(63063),
+  Z = n(434404),
+  D = n(999382),
+  A = n(67734),
+  k = n(375263),
   W = n(586382),
-  Z = n(594980),
-  k = n(515025),
-  M = n(760632),
-  _ = n(578053),
-  G = n(640175),
+  L = n(594980),
+  M = n(515025),
+  G = n(760632),
+  U = n(578053),
+  B = n(640175),
   F = n(715224),
-  U = n(203377),
+  z = n(203377),
   H = n(981631),
-  z = n(486324),
-  X = n(388032),
-  Y = n(561169),
-  K = n(935653),
-  V = n(449874);
+  V = n(486324),
+  Y = n(388032),
+  K = n(561169),
+  q = n(935653),
+  X = n(449874);
 
-function J(e, t, n) {
+function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -62,14 +62,14 @@ function J(e, t, n) {
   }) : e[t] = n, e
 }
 
-function q(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      J(e, t, n[t])
+      Q(e, t, n[t])
     })
   }
   return e
@@ -82,16 +82,16 @@ let $ = () => {
     errors: s,
     profile: a,
     originalProfile: l
-  } = (0, c.cj)([L.Z], () => L.Z.getProps()), o = (0, j.K)({
+  } = (0, d.cj)([D.Z], () => D.Z.getProps()), o = (0, C.K)({
     guildId: null == e ? void 0 : e.id,
     location: "guild_settings_overview_notice"
-  }), A = (0, c.e7)([L.Z], () => L.Z.getProfileError()), d = i.useMemo(() => {
+  }), c = (0, d.e7)([D.Z], () => D.Z.getProfileError()), u = i.useMemo(() => {
     var e;
-    let t = null == A ? void 0 : A.getAnyErrorMessage();
-    return null !== (e = (0, U.LG)(s)) && void 0 !== e ? e : t
-  }, [s, A]), u = i.useCallback(async () => {
+    let t = null == c ? void 0 : c.getAnyErrorMessage();
+    return null !== (e = (0, z.LG)(s)) && void 0 !== e ? e : t
+  }, [s, c]), m = i.useCallback(async () => {
     if (null == e) return;
-    o && null != a && null != l && a.visibility !== l.visibility && await (0, x.xV)(e.id, a.visibility);
+    o && null != a && null != l && a.visibility !== l.visibility && await (0, v.xV)(e.id, a.visibility);
     let n = {
       name: e.name,
       icon: e.icon,
@@ -111,14 +111,14 @@ let $ = () => {
       homeHeader: e.homeHeader,
       profile: e.profile
     };
-    (0, D.OL)(new Set(e.features), new Set(t.features)) || (n.features = e.features), await S.Z.saveGuild(e.id, n)
+    (0, w.OL)(new Set(e.features), new Set(t.features)) || (n.features = e.features), await Z.Z.saveGuild(e.id, n)
   }, [e, o, a, l, t.features]), g = i.useCallback(() => {
-    null != e && S.Z.init(e.id)
+    null != e && Z.Z.init(e.id)
   }, [e]);
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(p.Z, {
     submitting: n,
-    errorMessage: d,
-    onSave: u,
+    errorMessage: u,
+    onSave: m,
     onReset: g
   })
 };
@@ -136,22 +136,22 @@ class ee extends i.PureComponent {
     }
   }
   handleNameChange(e) {
-    S.Z.updateGuild({
+    Z.Z.updateGuild({
       name: e
     })
   }
   handleSplashChange(e) {
-    S.Z.updateGuild({
+    Z.Z.updateGuild({
       splash: e
     })
   }
   handlePremiumProgressBarEnabledChange(e) {
-    S.Z.updateGuild({
+    Z.Z.updateGuild({
       premiumProgressBarEnabled: e
     })
   }
   handleChangeDescription(e) {
-    S.Z.updateGuild({
+    Z.Z.updateGuild({
       description: e
     })
   }
@@ -161,61 +161,61 @@ class ee extends i.PureComponent {
       errors: t,
       canManageGuild: n
     } = this.props;
-    return (0, r.jsxs)(v.Z, {
-      className: Y.__invalid_baseSection,
-      children: [(0, r.jsxs)(v.Z, {
+    return (0, r.jsxs)(N.Z, {
+      className: K.__invalid_baseSection,
+      children: [(0, r.jsxs)(N.Z, {
         basis: "50%",
-        justify: v.Z.Justify.BETWEEN,
-        children: [(0, r.jsxs)(v.Z.Child, {
+        justify: N.Z.Justify.BETWEEN,
+        children: [(0, r.jsxs)(N.Z.Child, {
           wrap: !0,
-          children: [(0, r.jsx)(y.Z, {
+          children: [(0, r.jsx)(E.Z, {
             showIcon: !0,
             name: e.name,
             image: e.icon,
             onChange: this.handleIconChange,
             disabled: !n,
-            hint: X.NW.string(X.t["6yrpFR"]),
-            makeURL: t => B.ZP.getGuildIconURL({
+            hint: Y.NW.string(Y.t["6yrpFR"]),
+            makeURL: t => P.ZP.getGuildIconURL({
               id: e.id,
               icon: t,
               canAnimate: !0,
               size: 100
             }),
             className: a()({
-              [Y.avatarUploader]: n,
-              [Y.avatarUploaderDisabled]: !n
+              [K.avatarUploader]: n,
+              [K.avatarUploaderDisabled]: !n
             }),
-            imageClassName: a()(Y.avatarUploaderInner, {
-              [Y.avatarUploaderInnerEmpty]: null == e.icon
+            imageClassName: a()(K.avatarUploaderInner, {
+              [K.avatarUploaderInnerEmpty]: null == e.icon
             })
           }), null != t.icon ? (0, r.jsx)("div", {
-            className: Y.iconError,
+            className: K.iconError,
             children: t.icon
           }) : null]
-        }), (0, r.jsxs)(v.Z, {
-          direction: v.Z.Direction.VERTICAL,
-          align: v.Z.Align.START,
+        }), (0, r.jsxs)(N.Z, {
+          direction: N.Z.Direction.VERTICAL,
+          align: N.Z.Align.START,
           style: {
             maxWidth: 180
           },
           children: [(0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
-            className: Y.marginBottom8,
-            children: X.NW.string(X.t["R/9yQE"])
-          }), (0, r.jsx)(O.Z, {
+            className: K.marginBottom8,
+            children: Y.NW.string(Y.t["R/9yQE"])
+          }), (0, r.jsx)(I.Z, {
             look: g.iLD.OUTLINED,
             color: g.Ttl.PRIMARY,
             disabled: !n,
-            className: Y.marginTop8,
-            buttonCTA: X.NW.string(X.t["MsUY/f"]),
+            className: K.marginTop8,
+            buttonCTA: Y.NW.string(Y.t["MsUY/f"]),
             onChange: this.handleOpenImageEditingModal
           })]
         })]
-      }), (0, r.jsx)(v.Z.Child, {
+      }), (0, r.jsx)(N.Z.Child, {
         basis: "50%",
         children: (0, r.jsx)(g.xJW, {
-          title: X.NW.string(X.t.dBih7e),
-          className: Y.marginBottom20,
+          title: Y.NW.string(Y.t.dBih7e),
+          className: K.marginBottom20,
           children: (0, r.jsx)(g.oil, {
             type: "text",
             disabled: !n,
@@ -234,23 +234,23 @@ class ee extends i.PureComponent {
       canManageGuild: t
     } = this.props;
     return (0, r.jsxs)(g.hjN, {
-      className: Y.divider,
-      children: [(0, r.jsxs)(v.Z, {
-        children: [(0, r.jsx)(v.Z.Child, {
+      className: K.divider,
+      children: [(0, r.jsxs)(N.Z, {
+        children: [(0, r.jsx)(N.Z.Child, {
           basis: "50%",
           children: (0, r.jsx)(g.xJW, {
-            title: X.NW.string(X.t.KuYcnZ),
-            children: (0, r.jsx)(_.g, {
+            title: Y.NW.string(Y.t.KuYcnZ),
+            children: (0, r.jsx)(U.g, {
               canManageGuild: t,
               guildId: e.id,
               afkChannelId: e.afkChannelId
             })
           })
-        }), (0, r.jsx)(v.Z.Child, {
+        }), (0, r.jsx)(N.Z.Child, {
           basis: "50%",
           children: (0, r.jsx)(g.xJW, {
-            title: X.NW.string(X.t.brhYaW),
-            children: (0, r.jsx)(M.M, {
+            title: Y.NW.string(Y.t.brhYaW),
+            children: (0, r.jsx)(G.M, {
               canManageGuild: t,
               afkTimeout: e.afkTimeout,
               afkChannelId: e.afkChannelId
@@ -258,9 +258,9 @@ class ee extends i.PureComponent {
           })
         })]
       }), (0, r.jsx)(g.R94, {
-        className: Y.marginTop8,
+        className: K.marginTop8,
         type: g.geA.DESCRIPTION,
-        children: X.NW.string(X.t.ffEOKC)
+        children: Y.NW.string(Y.t.ffEOKC)
       })]
     })
   }
@@ -270,21 +270,21 @@ class ee extends i.PureComponent {
       canManageGuild: t
     } = this.props;
     return (0, r.jsxs)(g.hjN, {
-      className: Y.divider,
+      className: K.divider,
       children: [(0, r.jsx)(g.vwX, {
-        children: X.NW.string(X.t.NASFnp)
-      }), (0, r.jsx)(_.u, {
+        children: Y.NW.string(Y.t.NASFnp)
+      }), (0, r.jsx)(U.u, {
         canManageGuild: t,
         guildId: e.id,
         systemChannelId: e.systemChannelId
       }), (0, r.jsx)(g.R94, {
-        className: Y.marginTop8,
+        className: K.marginTop8,
         type: g.geA.DESCRIPTION,
-        children: X.NW.string(X.t.BT9zR0)
+        children: Y.NW.string(Y.t.BT9zR0)
       }), (0, r.jsx)(F.W, {
         canManageGuild: t,
         guild: e,
-        switchClassName: Y.marginTop20
+        switchClassName: K.marginTop20
       })]
     })
   }
@@ -296,18 +296,18 @@ class ee extends i.PureComponent {
     return (0, r.jsx)("div", {
       ref: this._notificationSectionRef,
       children: (0, r.jsxs)(g.hjN, {
-        className: Y.divider,
+        className: K.divider,
         children: [(0, r.jsx)(g.vwX, {
-          children: X.NW.string(X.t["23TVho"])
+          children: Y.NW.string(Y.t["23TVho"])
         }), (0, r.jsx)(g.R94, {
           type: g.geA.DESCRIPTION,
-          className: Y.marginBottom20,
-          children: X.NW.string(X.t.U4LwWF)
+          className: K.marginBottom20,
+          children: Y.NW.string(Y.t.U4LwWF)
         }), (0, r.jsx)(g.R94, {
           type: g.geA.DESCRIPTION,
-          className: Y.marginBottom20,
-          children: X.NW.string(X.t.xdY0pK)
-        }), (0, r.jsx)(G.z, {
+          className: K.marginBottom20,
+          children: Y.NW.string(Y.t.xdY0pK)
+        }), (0, r.jsx)(B.z, {
           guildId: e.id,
           defaultSettings: e.defaultMessageNotifications,
           canManageGuild: t
@@ -323,17 +323,17 @@ class ee extends i.PureComponent {
     return void 0 === t ? null : (0, r.jsx)("div", {
       ref: this._notificationSectionRef,
       children: (0, r.jsxs)(g.hjN, {
-        className: Y.divider,
+        className: K.divider,
         children: [(0, r.jsx)(g.vwX, {
-          children: X.NW.string(X.t["oQ/7BQ"])
+          children: Y.NW.string(Y.t["oQ/7BQ"])
         }), (0, r.jsx)(g.j7V, {
-          className: Y.marginBottom0,
+          className: K.marginBottom0,
           onChange: this.handleShowActivityFeedToggle,
           value: t,
           hideBorder: !0,
-          note: X.NW.string(X.t.fZ0qZW),
+          note: Y.NW.string(Y.t.fZ0qZW),
           disabled: !e,
-          children: X.NW.string(X.t.WompT0)
+          children: Y.NW.string(Y.t.WompT0)
         })]
       })
     })
@@ -343,24 +343,24 @@ class ee extends i.PureComponent {
       guild: e,
       canManageGuild: t
     } = this.props;
-    return (0, m.Jc)(e, !1) ? (0, r.jsx)("div", {
+    return (0, h.Jc)(e, !1) ? (0, r.jsx)("div", {
       children: (0, r.jsx)(g.hjN, {
-        className: Y.divider,
+        className: K.divider,
         children: (0, r.jsx)(g.j7V, {
-          className: a()(Y.marginTop8, Y.marginBottom8),
+          className: a()(K.marginTop8, K.marginBottom8),
           onChange: this.handleConversationSummariesToggle,
           value: e.hasFeature(H.oNc.SUMMARIES_ENABLED_BY_USER),
           hideBorder: !0,
-          note: X.NW.format(X.t["c6Cy/v"], {
-            helpdeskArticle: T.Z.getArticleURL(H.BhN.CONVERSATION_SUMMARIES)
+          note: Y.NW.format(Y.t["c6Cy/v"], {
+            helpdeskArticle: R.Z.getArticleURL(H.BhN.CONVERSATION_SUMMARIES)
           }),
           disabled: !t,
           children: (0, r.jsxs)("div", {
-            className: Y.badgedItem,
-            children: [X.NW.string(X.t.vmEDQk), (0, r.jsx)(g.IGR, {
-              text: X.NW.string(X.t.oW0eUV),
-              color: d.Z.unsafe_rawColors.BRAND_500.css,
-              className: Y.__invalid_betaTag
+            className: K.badgedItem,
+            children: [Y.NW.string(Y.t.vmEDQk), (0, r.jsx)(g.IGR, {
+              text: Y.NW.string(Y.t.oW0eUV),
+              color: u.Z.unsafe_rawColors.BRAND_500.css,
+              className: K.__invalid_betaTag
             })]
           })
         })
@@ -375,39 +375,39 @@ class ee extends i.PureComponent {
     return (0, r.jsx)("div", {
       ref: this._inviteSectionRef,
       children: (0, r.jsx)(g.hjN, {
-        className: Y.divider,
-        children: (0, r.jsxs)(v.Z, {
+        className: K.divider,
+        children: (0, r.jsxs)(N.Z, {
           basis: "50%",
-          direction: v.Z.Direction.HORIZONTAL,
-          align: v.Z.Justify.START,
-          children: [(0, r.jsxs)(v.Z.Child, {
+          direction: N.Z.Direction.HORIZONTAL,
+          align: N.Z.Justify.START,
+          children: [(0, r.jsxs)(N.Z.Child, {
             wrap: !0,
             basis: "50%",
             children: [(0, r.jsxs)(g.vwX, {
-              className: Y.flexFormTitle,
+              className: K.flexFormTitle,
               children: [(0, r.jsx)("div", {
-                children: X.NW.string(X.t.tzGY0t)
+                children: Y.NW.string(Y.t.tzGY0t)
               }), (0, r.jsx)(W.hH, {
                 guild: e
               })]
             }), (0, r.jsx)(g.R94, {
               type: g.geA.DESCRIPTION,
-              className: Y.marginBottom8,
-              children: X.NW.string(X.t.F7bbrq)
+              className: K.marginBottom8,
+              children: Y.NW.string(Y.t.F7bbrq)
             }), (0, r.jsx)(g.R94, {
               type: g.geA.DESCRIPTION,
-              children: X.NW.format(X.t.ZYA9PT, {
-                articleURL: T.Z.getArticleURL(H.BhN.GUILD_INVITE_SPLASH)
+              children: Y.NW.format(Y.t.ZYA9PT, {
+                articleURL: R.Z.getArticleURL(H.BhN.GUILD_INVITE_SPLASH)
               })
-            }), (0, r.jsx)(Z.c, {
+            }), (0, r.jsx)(L.c, {
               guild: e,
               canManageGuild: t,
-              buttonClassName: Y.marginTop16
+              buttonClassName: K.marginTop16
             })]
-          }), (0, r.jsx)(v.Z.Child, {
+          }), (0, r.jsx)(N.Z.Child, {
             wrap: !0,
             basis: "50%",
-            children: (0, r.jsx)(k.h, {
+            children: (0, r.jsx)(M.h, {
               guild: e,
               canManageGuild: t
             })
@@ -422,39 +422,39 @@ class ee extends i.PureComponent {
       canManageGuild: t
     } = this.props;
     return (0, r.jsx)(g.hjN, {
-      className: Y.divider,
-      children: (0, r.jsxs)(v.Z, {
+      className: K.divider,
+      children: (0, r.jsxs)(N.Z, {
         basis: "50%",
-        direction: v.Z.Direction.HORIZONTAL,
-        align: v.Z.Justify.START,
-        children: [(0, r.jsxs)(v.Z.Child, {
+        direction: N.Z.Direction.HORIZONTAL,
+        align: N.Z.Justify.START,
+        children: [(0, r.jsxs)(N.Z.Child, {
           wrap: !0,
           basis: "50%",
           children: [(0, r.jsxs)(g.vwX, {
-            className: Y.flexFormTitle,
+            className: K.flexFormTitle,
             children: [(0, r.jsx)("div", {
-              children: X.NW.string(X.t["0r0AzM"])
+              children: Y.NW.string(Y.t["0r0AzM"])
             }), (0, r.jsx)(W.zA, {
               guild: e
             })]
           }), (0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
-            className: Y.marginBottom8,
-            children: X.NW.string(X.t.UfqmIS)
+            className: K.marginBottom8,
+            children: Y.NW.string(Y.t.UfqmIS)
           }), (0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
-            children: X.NW.format(X.t.vBcWUl, {
-              articleURL: T.Z.getArticleURL(H.BhN.GUILD_BANNER_SPLASH)
+            children: Y.NW.format(Y.t.vBcWUl, {
+              articleURL: R.Z.getArticleURL(H.BhN.GUILD_BANNER_SPLASH)
             })
-          }), (0, r.jsx)(R.F, {
+          }), (0, r.jsx)(A.F, {
             guild: e,
             canManageGuild: t,
-            buttonClassName: Y.marginTop16
+            buttonClassName: K.marginTop16
           })]
-        }), (0, r.jsx)(v.Z.Child, {
+        }), (0, r.jsx)(N.Z.Child, {
           wrap: !0,
           basis: "50%",
-          children: (0, r.jsx)(Q.O, {
+          children: (0, r.jsx)(k.O, {
             guild: e,
             canManageGuild: t
           })
@@ -469,31 +469,31 @@ class ee extends i.PureComponent {
       theme: n
     } = this.props;
     return (0, r.jsx)(g.hjN, {
-      children: (0, r.jsxs)(v.Z, {
-        align: v.Z.Align.START,
-        children: [(0, r.jsxs)(v.Z, {
+      children: (0, r.jsxs)(N.Z, {
+        align: N.Z.Align.START,
+        children: [(0, r.jsxs)(N.Z, {
           basis: "50%",
-          direction: v.Z.Direction.VERTICAL,
-          align: v.Z.Align.STRETCH,
+          direction: N.Z.Direction.VERTICAL,
+          align: N.Z.Align.STRETCH,
           children: [(0, r.jsx)(g.j7V, {
-            className: a()(Y.marginTop8, Y.marginBottom8),
+            className: a()(K.marginTop8, K.marginBottom8),
             onChange: this.handlePremiumProgressBarEnabledChange,
             value: e.premiumProgressBarEnabled,
             hideBorder: !0,
             disabled: !t,
-            children: X.NW.string(X.t.Dl4mJS)
+            children: Y.NW.string(Y.t.Dl4mJS)
           }), (0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
-            className: Y.marginBottom8,
-            children: X.NW.string(X.t.xzHcoa)
+            className: K.marginBottom8,
+            children: Y.NW.string(Y.t.xzHcoa)
           })]
-        }), (0, r.jsx)(v.Z.Child, {
+        }), (0, r.jsx)(N.Z.Child, {
           wrap: !0,
           basis: "50%",
           children: (0, r.jsx)("img", {
-            alt: X.NW.string(X.t.UOJp5e),
-            src: (0, u.ap)(n) ? V : K,
-            className: Y.progressBarImage
+            alt: Y.NW.string(Y.t.UOJp5e),
+            src: (0, m.ap)(n) ? X : q,
+            className: K.progressBarImage
           })
         })]
       })
@@ -503,9 +503,9 @@ class ee extends i.PureComponent {
     return (0, r.jsx)("div", {
       ref: this._displaySectionRef,
       children: (0, r.jsxs)(g.hjN, {
-        title: X.NW.string(X.t.lDskxM),
+        title: Y.NW.string(Y.t.lDskxM),
         tag: g.RB0.H1,
-        className: Y.divider,
+        className: K.divider,
         children: [this.renderProgressBar(), this.renderBanner(), this.renderServerInviteBGSection()]
       })
     })
@@ -517,40 +517,40 @@ class ee extends i.PureComponent {
       profile: n
     } = this.props;
     if (!t || null == n) return null;
-    let i = A.Y.VISIBLE.has(n.visibility);
+    let i = c.Y.VISIBLE.has(n.visibility);
     return (0, r.jsxs)(g.hjN, {
-      className: Y.divider,
+      className: K.divider,
       children: [(0, r.jsx)(g.vwX, {
-        children: X.NW.string(X.t.txdaxc)
+        children: Y.NW.string(Y.t.txdaxc)
       }), (0, r.jsx)(g.j7V, {
-        className: Y.marginBottom0,
+        className: K.marginBottom0,
         onChange: this.handleProfileVisibilityChange,
         value: !i,
         hideBorder: !0,
-        note: X.NW.string(X.t.yHkqfX),
+        note: Y.NW.string(Y.t.yHkqfX),
         disabled: !e,
-        children: X.NW.string(X.t.fjHWen)
+        children: Y.NW.string(Y.t.fjHWen)
       })]
     })
   }
   render() {
     return (0, r.jsxs)(g.hjN, {
-      title: X.NW.string(X.t.iZmTaG),
+      title: Y.NW.string(Y.t.iZmTaG),
       tag: g.RB0.H1,
       children: [this.renderBaseSettings(), this.renderSummariesSection(), this.renderAFKSection(), this.renderJoinNotificationSection(), this.renderActivityFeedSection(), this.renderNotificationSection(), this.renderDisplaySection(), this.renderProfileVisibilitySection()]
     })
   }
   constructor(...e) {
-    super(...e), J(this, "_displaySectionRef", i.createRef()), J(this, "_inviteSectionRef", i.createRef()), J(this, "_notificationSectionRef", i.createRef()), J(this, "handleIconChange", e => {
-      S.Z.updateGuild({
+    super(...e), Q(this, "_displaySectionRef", i.createRef()), Q(this, "_inviteSectionRef", i.createRef()), Q(this, "_notificationSectionRef", i.createRef()), Q(this, "handleIconChange", e => {
+      Z.Z.updateGuild({
         icon: e
       })
-    }), J(this, "handleOpenImageEditingModal", (e, t) => {
+    }), Q(this, "handleOpenImageEditingModal", (e, t) => {
       (0, g.ZDy)(async () => {
         let {
           default: i
         } = await Promise.all([n.e("91689"), n.e("59732"), n.e("25005"), n.e("30719")]).then(n.bind(n, 73620));
-        return n => (0, r.jsx)(i, q({
+        return n => (0, r.jsx)(i, J({
           onCrop: e => {
             let {
               imageUri: t
@@ -561,9 +561,9 @@ class ee extends i.PureComponent {
           file: t
         }, n))
       })
-    }), J(this, "handleHomeHeaderChange", (e, t) => {
+    }), Q(this, "handleHomeHeaderChange", (e, t) => {
       if (null == e || void 0 === t) {
-        S.Z.updateGuild({
+        Z.Z.updateGuild({
           homeHeader: null
         });
         return
@@ -571,40 +571,40 @@ class ee extends i.PureComponent {
         let {
           default: i
         } = await Promise.all([n.e("91689"), n.e("59732"), n.e("4395")]).then(n.bind(n, 712451));
-        return n => (0, r.jsx)(i, q({
+        return n => (0, r.jsx)(i, J({
           imageUri: e,
           file: t,
           onCrop: e => {
             let {
               imageUri: t
             } = e;
-            return S.Z.updateGuild({
+            return Z.Z.updateGuild({
               homeHeader: t
             })
           },
-          uploadType: z.pC.HOME_HEADER
+          uploadType: V.pC.HOME_HEADER
         }, n))
       })
-    }), J(this, "handleConversationSummariesToggle", e => {
+    }), Q(this, "handleConversationSummariesToggle", e => {
       let {
         guild: t
       } = this.props, n = new Set(t.features);
-      e ? n.add(H.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(H.oNc.SUMMARIES_ENABLED_BY_USER), S.Z.updateGuild({
+      e ? n.add(H.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(H.oNc.SUMMARIES_ENABLED_BY_USER), Z.Z.updateGuild({
         features: n
       })
-    }), J(this, "handleShowActivityFeedToggle", e => {
+    }), Q(this, "handleShowActivityFeedToggle", e => {
       let {
         guild: t
       } = this.props, n = new Set(t.features);
-      e ? (n.add(H.oNc.ACTIVITY_FEED_ENABLED_BY_USER), n.delete(H.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (n.add(H.oNc.ACTIVITY_FEED_DISABLED_BY_USER), n.delete(H.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), S.Z.updateGuild({
+      e ? (n.add(H.oNc.ACTIVITY_FEED_ENABLED_BY_USER), n.delete(H.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (n.add(H.oNc.ACTIVITY_FEED_DISABLED_BY_USER), n.delete(H.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), Z.Z.updateGuild({
         features: n
       })
-    }), J(this, "handleProfileVisibilityChange", e => {
+    }), Q(this, "handleProfileVisibilityChange", e => {
       let {
         guild: t
       } = this.props;
-      S.Z.updateGuildProfile(t.id, {
-        visibility: e ? A.k.RESTRICTED : A.k.PUBLIC
+      Z.Z.updateGuildProfile(t.id, {
+        visibility: e ? c.k.RESTRICTED : c.k.PUBLIC
       })
     })
   }
@@ -617,41 +617,41 @@ function et() {
     submitting: n,
     subsection: s,
     profile: a
-  } = (0, c.cj)([L.Z], () => L.Z.getProps()), l = (0, p.ZP)(), {
-    analyticsLocations: A
-  } = (0, C.ZP)(h.Z.OVERVIEW);
+  } = (0, d.cj)([D.Z], () => D.Z.getProps()), l = (0, f.ZP)(), {
+    analyticsLocations: c
+  } = (0, x.ZP)(b.Z.OVERVIEW);
   i.useEffect(() => {
-    (0, I.Kw)(E.v6.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL)
+    (0, y.Kw)(O.v6.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL)
   }, []);
   let {
-    canManageGuild: d,
-    isGuildAdmin: u
-  } = (0, c.cj)([w.Z], () => ({
-    canManageGuild: w.Z.can(H.Plq.MANAGE_GUILD, e),
-    isGuildAdmin: w.Z.can(H.Plq.ADMINISTRATOR, e)
-  })), g = (0, b.E)(e), f = (0, c.e7)([P.default], () => P.default.getCurrentUser()), m = null == e ? void 0 : e.id, v = (0, j.K)({
-    guildId: m,
+    canManageGuild: u,
+    isGuildAdmin: m
+  } = (0, d.cj)([S.Z], () => ({
+    canManageGuild: S.Z.can(H.Plq.MANAGE_GUILD, e),
+    isGuildAdmin: S.Z.can(H.Plq.ADMINISTRATOR, e)
+  })), g = (0, j.E)(e), p = (0, d.e7)([T.default], () => T.default.getCurrentUser()), h = null == e ? void 0 : e.id, N = (0, C.K)({
+    guildId: h,
     location: "guild_settings_overview"
   }), {
-    fetchGuildProfile: x
-  } = (0, N.u)(null == e ? void 0 : e.id);
+    fetchGuildProfile: v
+  } = (0, _.u)(null == e ? void 0 : e.id);
   return (i.useEffect(() => {
-    null != m && v && x()
-  }, [m, v, x]), o()(null != f, "GuildSettingsOverview: currentUser cannot be undefined"), null == e) ? null : (0, r.jsx)(C.Gt, {
-    value: A,
+    null != h && N && v()
+  }, [h, N, v]), o()(null != p, "GuildSettingsOverview: currentUser cannot be undefined"), null == e) ? null : (0, r.jsx)(x.Gt, {
+    value: c,
     children: (0, r.jsx)(ee, {
-      canManageGuild: d,
-      isGuildAdmin: u,
+      canManageGuild: u,
+      isGuildAdmin: m,
       subsection: s,
       guild: e,
       errors: t,
       submitting: n,
-      currentUser: f,
+      currentUser: p,
       isInventoryFeedEnabled: g,
-      isGuildProfileVisibilityEnabled: v,
+      isGuildProfileVisibilityEnabled: N,
       profile: a,
       theme: l,
-      analyticsLocations: A
+      analyticsLocations: c
     })
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => a
@@ -8,11 +8,11 @@ var r = n(192379),
   s = n(53365);
 
 function a(e) {
-  let [t, n] = r.useState(!0), [a, l] = r.useState(), [o, A] = r.useState(), c = r.useCallback(async e => {
+  let [t, n] = r.useState(!0), [a, l] = r.useState(), [o, c] = r.useState(), d = r.useCallback(async e => {
     n(!0), l(void 0);
     try {
       let t = await s.wZ(e);
-      A(t)
+      c(t)
     } catch (e) {
       l(new i.Hx(e))
     } finally {
@@ -20,8 +20,8 @@ function a(e) {
     }
   }, []);
   return r.useEffect(() => {
-    c(e)
-  }, [e, c]), {
+    d(e)
+  }, [e, d]), {
     isLoading: t,
     error: a,
     creatorMonetizationOnboardingMarketing: o

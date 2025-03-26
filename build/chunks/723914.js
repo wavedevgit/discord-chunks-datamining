@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  q: () => c
+  q: () => d
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,32 +9,32 @@ var r = n(200651),
   a = n(434404),
   l = n(981631),
   o = n(388032),
-  A = n(797680);
+  c = n(797680);
 
-function c(e) {
+function d(e) {
   let {
     isInventoryFeedEnabled: t,
     canManageGuild: n,
-    features: c
-  } = e, d = i.useCallback(e => {
-    let t = new Set(c);
+    features: d
+  } = e, u = i.useCallback(e => {
+    let t = new Set(d);
     e ? (t.add(l.oNc.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(l.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(l.oNc.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(l.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), a.Z.updateGuild({
       features: t
     })
-  }, [c]);
+  }, [d]);
   return (0, r.jsxs)(s.hjN, {
     title: o.NW.string(o.t["oQ/7BQ"]),
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: A.description,
+      className: c.description,
       children: o.NW.string(o.t.fZ0qZW)
     }), (0, r.jsx)(s.j7V, {
       value: t,
-      className: A.switch,
+      className: c.switch,
       hideBorder: !0,
       disabled: !n,
-      onChange: d,
+      onChange: u,
       children: o.NW.string(o.t.WompT0)
     })]
   })

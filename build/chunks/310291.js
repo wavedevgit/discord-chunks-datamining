@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -27,8 +27,8 @@ let l = e => {
     let {
       groupType: n,
       teamId: i
-    } = t, [s, o] = r.useState(!0), [A, c] = r.useState([]), d = r.useCallback(async () => {
-      if (c([]), null == e) {
+    } = t, [s, o] = r.useState(!0), [c, d] = r.useState([]), u = r.useCallback(async () => {
+      if (d([]), null == e) {
         o(!1);
         return
       }
@@ -37,15 +37,15 @@ let l = e => {
         let t = await a.C(e, {
           grouping_type: n
         });
-        c(t)
+        d(t)
       } catch (e) {} finally {
         o(!1)
       }
     }, [e, n]);
     return r.useEffect(() => {
-      d()
-    }, [d]), {
-      payoutsByPeriod: r.useMemo(() => l(null != i ? A.filter(e => e.user_id === i) : A), [A, i]),
+      u()
+    }, [u]), {
+      payoutsByPeriod: r.useMemo(() => l(null != i ? c.filter(e => e.user_id === i) : c), [c, i]),
       loading: s
     }
   }

@@ -1,8 +1,8 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  $: () => p,
-  Z: () => h
+  $: () => f,
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -11,43 +11,43 @@ var i = n(392711),
   a = n(481060),
   l = n(63568),
   o = n(241559),
-  A = n(527379),
-  c = n(313364),
-  d = n(434404),
-  u = n(999382),
+  c = n(527379),
+  d = n(313364),
+  u = n(434404),
+  m = n(999382),
   g = n(981631),
-  f = n(388032),
-  m = n(719361);
+  p = n(388032),
+  h = n(719361);
 
-function p() {
+function f() {
   var e, t;
-  let n = (0, s.e7)([u.Z], () => u.Z.getProps().guild, []),
+  let n = (0, s.e7)([m.Z], () => m.Z.getProps().guild, []),
     i = null !== (e = null == n ? void 0 : n.isCommunity()) && void 0 !== e && e,
     o = (0, l.K2)(null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : g.lds, "GuildSettingsMembersRow") && (null == n ? void 0 : n.hasFeature(g.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)),
-    c = i || o;
+    d = i || o;
   return (0, r.jsxs)(a.P3F, {
     onClick: e => {
-      null != n && (c ? (e.preventDefault(), d.Z.close(), (0, A._X)(n.id)) : d.Z.open(n.id, g.pNK.MEMBERS))
+      null != n && (d ? (e.preventDefault(), u.Z.close(), (0, c._X)(n.id)) : u.Z.open(n.id, g.pNK.MEMBERS))
     },
-    className: m.rowContainer,
+    className: h.rowContainer,
     children: [(0, r.jsx)("div", {
-      children: f.NW.string(f.t["9Oq93t"])
-    }), c && (0, r.jsx)(a.rgF, {
+      children: p.NW.string(p.t["9Oq93t"])
+    }), d && (0, r.jsx)(a.rgF, {
       size: "custom",
       color: "currentColor",
-      className: m.linkIcon,
+      className: h.linkIcon,
       width: 16,
       height: 16
     })]
   })
 }
 
-function h() {
+function b() {
   var e;
   let {
     guild: t
-  } = (0, s.e7)([u.Z], () => u.Z.getProps(), [], i.isEqual), n = null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : g.lds;
-  return (0, o.n2)(n) ? (0, r.jsx)(c.Z, {
+  } = (0, s.e7)([m.Z], () => m.Z.getProps(), [], i.isEqual), n = null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : g.lds;
+  return (0, o.n2)(n) ? (0, r.jsx)(d.Z, {
     guildId: n
   }) : null
 }

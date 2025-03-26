@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  F: () => f
+  F: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -9,51 +9,51 @@ var r = n(200651),
   a = n(906732),
   l = n(70086),
   o = n(949640),
-  A = n(981631),
-  c = n(30513),
-  d = n(486324),
-  u = n(200299),
+  c = n(981631),
+  d = n(30513),
+  u = n(486324),
+  m = n(200299),
   g = n(388032);
 
-function f(e) {
+function p(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: f
+    buttonClassName: p
   } = e, {
-    analyticsLocations: m
-  } = (0, a.ZP)(), p = t.hasFeature(A.oNc.BANNER), h = i.useCallback(e => {
+    analyticsLocations: h
+  } = (0, a.ZP)(), f = t.hasFeature(c.oNc.BANNER), b = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, o.f4)(t, m, n, r)
-  }, [m, t]), C = i.useCallback(e => {
+    (0, o.f4)(t, h, n, r)
+  }, [h, t]), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
-      analyticsLocations: m,
-      analyticsSection: A.jXE.GUILD_BANNER,
-      analyticsObject: A.qAy.BUTTON_CTA,
-      perks: (0, c.XO)()
+      analyticsLocations: h,
+      analyticsSection: c.jXE.GUILD_BANNER,
+      analyticsObject: c.qAy.BUTTON_CTA,
+      perks: (0, d.XO)()
     })
-  }, [m, t]);
-  return p ? (0, r.jsx)(s.zxk, {
-    disabled: !(p && n),
+  }, [h, t]);
+  return f ? (0, r.jsx)(s.zxk, {
+    disabled: !(f && n),
     color: s.zxk.Colors.BRAND,
-    className: f,
+    className: p,
     onClick: () => (0, o.mw)({
-      uploadType: d.pC.GUILD_BANNER,
-      maxFileSizeBytes: u.B,
-      onComplete: h,
+      uploadType: u.pC.GUILD_BANNER,
+      maxFileSizeBytes: m.B,
+      onComplete: b,
       analyticsLocation: {
-        page: A.ZY5.GUILD_SETTINGS,
-        section: A.jXE.GUILD_BANNER
+        page: c.ZY5.GUILD_SETTINGS,
+        section: c.jXE.GUILD_BANNER
       },
-      analyticsLocations: m
+      analyticsLocations: h
     }),
     children: g.NW.string(g.t.yG2pUl)
   }) : (0, r.jsx)(l.P, {
-    className: f,
-    onClick: C
+    className: p,
+    onClick: x
   })
 }

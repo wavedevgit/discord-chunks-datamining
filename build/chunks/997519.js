@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 });
 var r = n(192379),
   i = n(766434),
@@ -10,27 +10,27 @@ var r = n(192379),
   l = n(495298),
   o = n(198139);
 
-function A(e, t) {
+function c(e, t) {
   let n = null == t ? void 0 : t.team,
     {
-      payoutsByPeriod: A,
-      loading: c
+      payoutsByPeriod: c,
+      loading: d
     } = (0, s.Z)(null == t ? void 0 : t.id, {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? void 0 : n.id
     }),
-    d = (0, a.f)("useEarningMetrics"),
-    u = (0, l.Z)(e),
+    u = (0, a.f)("useEarningMetrics"),
+    m = (0, l.Z)(e),
     {
       currentPeriod: g,
-      previousPeriods: f,
-      metrics: m
+      previousPeriods: p,
+      metrics: h
     } = r.useMemo(() => {
       var e, t;
       let {
         currentPeriod: n,
         previousPeriods: r
-      } = (0, i.Br)(A), s = (0, i.Uj)(n, r[0]);
+      } = (0, i.Br)(c), s = (0, i.Uj)(n, r[0]);
       return {
         currentPeriod: n,
         previousPeriods: r,
@@ -52,7 +52,7 @@ function A(e, t) {
           }
           return e
         }({}, s), t = t = {
-          subscribers: u,
+          subscribers: m,
           subscriberChange: s.paymentsCountChange
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -65,13 +65,13 @@ function A(e, t) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)
       }
-    }, [A, u]);
+    }, [c, m]);
   return {
-    loading: c || !d,
+    loading: d || !u,
     team: n,
     currentPeriod: g,
-    previousPeriods: f,
-    allPeriods: A,
-    metrics: m
+    previousPeriods: p,
+    allPeriods: c,
+    metrics: h
   }
 }

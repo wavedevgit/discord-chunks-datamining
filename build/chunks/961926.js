@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -9,13 +9,13 @@ var r = n(200651),
   a = n(285318),
   l = n(456677),
   o = n(55889),
-  A = n(300453),
-  c = n(620436),
-  d = n(273504),
-  u = n(388032),
+  c = n(300453),
+  d = n(620436),
+  u = n(273504),
+  m = n(388032),
   g = n(617185);
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,49 +47,49 @@ function m(e, t) {
   }), e
 }
 
-function p(e) {
-  var t, n, p;
+function f(e) {
+  var t, n, f;
   let {
-    rule: h,
-    onChangeRule: C
-  } = e, b = i.useCallback(e => {
-    C(m(f({}, h), {
-      triggerMetadata: m(f({}, h.triggerMetadata), {
+    rule: b,
+    onChangeRule: x
+  } = e, j = i.useCallback(e => {
+    x(h(p({}, b), {
+      triggerMetadata: h(p({}, b.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [C, h]);
+  }, [x, b]);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
-    children: [(0, r.jsxs)(A.Z, {
+    children: [(0, r.jsxs)(c.Z, {
       step: 1,
-      header: u.NW.string(u.t.CX5YfX),
+      header: m.NW.string(m.t.CX5YfX),
       children: [(0, r.jsx)(a.Z, {
-        rule: h,
-        onChangeRule: C
+        rule: b,
+        onChangeRule: x
       }), (0, r.jsx)(s.Z, {
-        onChange: b,
-        initialValue: null === (t = h.triggerMetadata) || void 0 === t ? void 0 : t.allowList,
-        maxWordCount: d.I3,
-        collapsed: (null === (n = h.triggerMetadata) || void 0 === n ? void 0 : n.allowList) == null || (null === (p = h.triggerMetadata) || void 0 === p ? void 0 : p.allowList.length) === 0
+        onChange: j,
+        initialValue: null === (t = b.triggerMetadata) || void 0 === t ? void 0 : t.allowList,
+        maxWordCount: u.I3,
+        collapsed: (null === (n = b.triggerMetadata) || void 0 === n ? void 0 : n.allowList) == null || (null === (f = b.triggerMetadata) || void 0 === f ? void 0 : f.allowList.length) === 0
       })]
+    }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
-      type: c.Z.Type.ARROW_DOWN
-    }), (0, r.jsx)(A.Z, {
       step: 2,
-      header: u.NW.string(u.t["18TOiY"]),
+      header: m.NW.string(m.t["18TOiY"]),
       children: (0, r.jsx)(l.Z, {
-        rule: h,
-        onChangeRule: C
+        rule: b,
+        onChangeRule: x
       })
+    }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.CROSS
     }), (0, r.jsx)(c.Z, {
-      type: c.Z.Type.CROSS
-    }), (0, r.jsx)(A.Z, {
       step: 3,
-      header: u.NW.string(u.t.eq3gjo),
+      header: m.NW.string(m.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {
-        rule: h,
-        onChangeRule: C
+        rule: b,
+        onChangeRule: x
       })
     })]
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,19 +10,19 @@ var r = n(200651),
   l = n(225433),
   o = n(150350);
 
-function A(e) {
+function c(e) {
   let {
     hasSetEmoji: t,
     onClick: n,
     children: s,
-    className: A,
-    buttonClassName: c,
-    look: d
-  } = e, [u, g] = i.useState(!1), f = i.useCallback(() => {
+    className: c,
+    buttonClassName: d,
+    look: u
+  } = e, [m, g] = i.useState(!1), p = i.useCallback(() => {
     n(), g(!1)
   }, [n, g]);
   return (0, r.jsxs)("div", {
-    className: a()(o.container, A),
+    className: a()(o.container, c),
     onMouseEnter: () => {
       if (t) {
         g(!0);
@@ -33,10 +33,10 @@ function A(e) {
     onMouseLeave: () => {
       g(!1)
     },
-    children: [s, t && u ? (0, r.jsx)(l.Z, {
-      onClick: f,
-      className: a()(o.removeButton, c),
-      look: d
+    children: [s, t && m ? (0, r.jsx)(l.Z, {
+      onClick: p,
+      className: a()(o.removeButton, d),
+      look: u
     }) : null]
   })
 }

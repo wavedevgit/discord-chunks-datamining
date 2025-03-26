@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(47120), n(566702);
 var r = n(200651),
   i = n(192379),
@@ -9,22 +9,22 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(981631),
-  A = n(388032),
-  c = n(962877);
-let d = e => {
+  c = n(388032),
+  d = n(962877);
+let u = e => {
   var t, n, {
       className: s,
-      tags: d,
-      value: u,
+      tags: u,
+      value: m,
       onRemoveTag: g,
-      onAddTag: f,
-      onAddTagError: m,
-      maxTaxLength: p,
-      maxTags: h,
-      disabled: C,
-      placeholder: b
+      onAddTag: p,
+      onAddTagError: h,
+      maxTaxLength: f,
+      maxTags: b,
+      disabled: x,
+      placeholder: j
     } = e,
-    v = function(e, t) {
+    N = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -39,42 +39,42 @@ let d = e => {
       }
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [x, N] = i.useState(null != u ? u : ""), j = d.map((e, t) => (0, r.jsxs)("span", {
-    className: c.tag,
-    children: [e, !C && (0, r.jsx)(l.P3F, {
-      className: c.closeWrapper,
+  let [v, _] = i.useState(null != m ? m : ""), C = u.map((e, t) => (0, r.jsxs)("span", {
+    className: d.tag,
+    children: [e, !x && (0, r.jsx)(l.P3F, {
+      className: d.closeWrapper,
       onClick: () => g(t),
       children: (0, r.jsx)(l.Dio, {
         size: "xs",
         color: "currentColor",
-        className: c.close
+        className: d.close
       })
     })]
-  }, t)), E = i.useCallback(() => {
-    let e = x.trim();
+  }, t)), O = i.useCallback(() => {
+    let e = v.trim();
     if (0 !== e.length) {
-      if (null != h && d.length >= h) {
-        null == m || m(A.NW.string(A.t.Xx7XeH));
+      if (null != b && u.length >= b) {
+        null == h || h(c.NW.string(c.t.Xx7XeH));
         return
       }
-      f(e), N("")
+      p(e), _("")
     }
-  }, [x, h, f, m, d.length]), I = i.useCallback(e => {
+  }, [v, b, p, h, u.length]), y = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
-        0 === x.length && d.length > 0 && (e.preventDefault(), e.stopPropagation(), g(d.length - 1));
+        0 === v.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
         break;
       case o.yXg.ENTER:
       case o.yXg.TAB:
       case o.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), E()
+        e.preventDefault(), e.stopPropagation(), O()
     }
-  }, [E, x.length, g, d.length]);
+  }, [O, v.length, g, u.length]);
   return (0, r.jsxs)("div", {
-    className: a()(s, c.inputWrapper, {
-      [c.disabled]: C
+    className: a()(s, d.inputWrapper, {
+      [d.disabled]: x
     }),
-    children: [j, (0, r.jsx)(l.oil, (t = function(e) {
+    children: [C, (0, r.jsx)(l.oil, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -92,16 +92,16 @@ let d = e => {
       }
       return e
     }({
-      className: c.inputOuter,
-      inputClassName: c.inputInner
-    }, v), n = n = {
-      value: x,
-      onKeyDown: I,
-      onChange: N,
-      maxLength: p,
-      disabled: C,
-      onBlur: E,
-      placeholder: b
+      className: d.inputOuter,
+      inputClassName: d.inputInner
+    }, N), n = n = {
+      value: v,
+      onKeyDown: y,
+      onChange: _,
+      maxLength: f,
+      disabled: x,
+      onBlur: O,
+      placeholder: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

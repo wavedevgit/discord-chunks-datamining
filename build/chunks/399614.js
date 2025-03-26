@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -9,13 +9,13 @@ var r = n(200651),
   a = n(481060),
   l = n(710344),
   o = n(734893),
-  A = n(8426),
-  c = n(969632),
-  d = n(922112),
-  u = n(388032),
+  c = n(8426),
+  d = n(969632),
+  u = n(922112),
+  m = n(388032),
   g = n(668813);
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,55 +46,55 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = [],
-  h = function(e) {
+let f = [],
+  b = function(e) {
     let {
       guildId: t
-    } = e, h = (0, s.Wu)([c.Z], () => {
+    } = e, b = (0, s.Wu)([d.Z], () => {
       var e;
-      return null !== (e = c.Z.getSettings().resourceChannels) && void 0 !== e ? e : p
-    }), C = i.useMemo(() => h.map(e => m(f({}, e), {
+      return null !== (e = d.Z.getSettings().resourceChannels) && void 0 !== e ? e : f
+    }), x = i.useMemo(() => b.map(e => h(p({}, e), {
       id: e.channelId
-    })), [h]), {
-      handleDragStart: b,
-      handleDragReset: v,
-      handleDragComplete: x
-    } = (0, l.Z)(C, A.lq), N = i.useCallback((e, n) => {
-      let r = c.Z.getSettings();
-      null != r && ((0, A.r2)(e), (0, A.oo)(t, r).then(() => {
-        (0, A.mM)(t, e.channelId, n)
+    })), [b]), {
+      handleDragStart: j,
+      handleDragReset: N,
+      handleDragComplete: v
+    } = (0, l.Z)(x, c.lq), _ = i.useCallback((e, n) => {
+      let r = d.Z.getSettings();
+      null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
+        (0, c.mM)(t, e.channelId, n)
       }))
-    }, [t]), j = i.useCallback(() => {
+    }, [t]), C = i.useCallback(() => {
       if (null != t) return (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, m(f({}, n), {
+        return n => (0, r.jsx)(e, h(p({}, n), {
           guildId: t,
-          onSave: A.r2,
-          onIconUpload: N
+          onSave: c.r2,
+          onIconUpload: _
         }))
       })
-    }, [t, N]);
+    }, [t, _]);
     return (0, r.jsxs)("div", {
       className: g.editResources,
-      children: [h.map((e, n) => (0, r.jsx)(d.Z, {
+      children: [b.map((e, n) => (0, r.jsx)(u.Z, {
         guildId: t,
         resourceChannel: e,
         index: n,
-        onDragStart: b,
-        onDragReset: v,
-        onDragComplete: x
-      }, e.channelId)), h.length < o.x3 && (0, r.jsxs)(a.P3F, {
+        onDragStart: j,
+        onDragReset: N,
+        onDragComplete: v
+      }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: g.addActionItem,
-        onClick: j,
+        onClick: C,
         children: [(0, r.jsx)(a.oFk, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "none",
-          children: u.NW.string(u.t["w9/qGR"])
+          children: m.NW.string(m.t["w9/qGR"])
         })]
       })]
     })

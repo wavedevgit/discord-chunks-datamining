@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -10,27 +10,27 @@ var i = n(399606),
   a = n(430824),
   l = n(594174),
   o = n(723047),
-  A = n(388032);
+  c = n(388032);
 
-function c(e) {
+function d(e) {
   let {
     guildId: t,
-    application: c
-  } = e, d = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), u = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, o.mY)();
-  if (null == d || !d.isOwner(u)) return null;
-  let f = c.team;
+    application: d
+  } = e, u = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), m = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, o.mY)();
+  if (null == u || !u.isOwner(m)) return null;
+  let p = d.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
       disabled: g,
-      children: null != f ? A.NW.format(A.t.erxwWF, {
-        teamName: f.name
-      }) : A.NW.string(A.t.FGzLkJ)
+      children: null != p ? c.NW.format(c.t.erxwWF, {
+        teamName: p.name
+      }) : c.NW.string(c.t.FGzLkJ)
     }), (0, r.jsx)(s.LZC, {
       size: 16
     }), (0, r.jsx)(s.zxk, {
       look: s.zxk.Looks.FILLED,
-      color: null != f ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
+      color: null != p ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
       onClick: () => {
         (0, s.ZDy)(async () => {
           let {
@@ -56,7 +56,7 @@ function c(e) {
               }
               return e
             }({}, t), i = i = {
-              application: c
+              application: d
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -71,7 +71,7 @@ function c(e) {
         })
       },
       disabled: g,
-      children: null != f ? A.NW.string(A.t["/Fjq5O"]) : A.NW.string(A.t["6ih+b2"])
+      children: null != p ? c.NW.string(c.t["/Fjq5O"]) : c.NW.string(c.t["6ih+b2"])
     })]
   })
 }

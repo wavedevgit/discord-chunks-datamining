@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => d
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,16 +9,16 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(717251),
-  A = n(503238);
+  c = n(503238);
 
-function c(e) {
+function d(e) {
   var {
     action: t,
     children: n,
     className: s,
-    onExpandChange: c,
-    loading: d
-  } = e, u = function(e, t) {
+    onExpandChange: d,
+    loading: u
+  } = e, m = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -33,16 +33,16 @@ function c(e) {
     }
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
-  let [g, f] = i.useState(!1), m = e => {
-    f(e), null == c || c(e)
+  let [g, p] = i.useState(!1), h = e => {
+    p(e), null == d || d(e)
   };
   return (0, r.jsx)(l.zF9, {
-    className: a()(A.groupContainer, s),
+    className: a()(c.groupContainer, s),
     isExpanded: g,
     collapsibleContent: (0, r.jsxs)("div", {
-      className: A.groupCollapsedContainer,
+      className: c.groupCollapsedContainer,
       children: [g && (0, r.jsx)("div", {
-        className: A.pointer
+        className: c.pointer
       }), n]
     }),
     children: e => {
@@ -67,13 +67,13 @@ function c(e) {
           })
         }
         return e
-      }({}, u), i = i = {
-        className: A.groupHeaderRow,
-        action: d ? (0, r.jsx)(l.$jN, {
+      }({}, m), i = i = {
+        className: c.groupHeaderRow,
+        action: u ? (0, r.jsx)(l.$jN, {
           type: l.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
-          m(!g), s(e)
+          h(!g), s(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

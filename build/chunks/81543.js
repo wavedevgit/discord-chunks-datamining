@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => p,
+  Z: () => f,
   n: () => g
 });
 var r, i = n(200651),
@@ -9,10 +9,10 @@ var r, i = n(200651),
   a = n(120356),
   l = n.n(a),
   o = n(748780),
-  A = n(215569),
-  c = n(77754);
+  c = n(215569),
+  d = n(77754);
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,30 +21,30 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 var g = ((r = {})[r.RIGHT = -1] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
-let f = {
+let p = {
   friction: 10,
   tension: 40,
   overshootClamping: !0
 };
-class m extends s.PureComponent {
+class h extends s.PureComponent {
   componentWillEnter(e) {
     var t, n;
-    null === (t = (n = this.props).onAnimationStart) || void 0 === t || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, u({
+    null === (t = (n = this.props).onAnimationStart) || void 0 === t || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
       toValue: 0
-    }, f)).start(() => {
+    }, p)).start(() => {
       var t, n;
       e(), null === (t = (n = this.props).onAnimationEnd) || void 0 === t || t.call(n)
     })
@@ -53,9 +53,9 @@ class m extends s.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    o.Z.spring(this._animated, u({
+    o.Z.spring(this._animated, m({
       toValue: this.props.direction
-    }, f)).start(e)
+    }, p)).start(e)
   }
   getStyle() {
     return o.Z.accelerate({
@@ -70,15 +70,15 @@ class m extends s.PureComponent {
   render() {
     return (0, i.jsx)(o.Z.div, {
       style: this.getStyle(),
-      className: c.item,
+      className: d.item,
       children: this.props.children
     })
   }
   constructor(e) {
-    super(e), d(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
+    super(e), u(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
   }
 }
-let p = e => {
+let f = e => {
   let {
     children: t,
     step: n,
@@ -87,10 +87,10 @@ let p = e => {
     onAnimationStart: a,
     onAnimationEnd: o
   } = e;
-  return (0, i.jsx)(A.W, {
+  return (0, i.jsx)(c.W, {
     component: "div",
-    className: l()(c.animator, s),
-    children: (0, i.jsx)(m, {
+    className: l()(d.animator, s),
+    children: (0, i.jsx)(h, {
       direction: r,
       onAnimationStart: a,
       onAnimationEnd: o,

@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => T
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,24 +9,24 @@ var r = n(200651),
   a = n(640358),
   l = n(442837),
   o = n(544891),
-  A = n(481060),
-  c = n(497321),
-  d = n(841470),
-  u = n(142497),
+  c = n(481060),
+  d = n(497321),
+  u = n(841470),
+  m = n(142497),
   g = n(706454),
-  f = n(650774),
-  m = n(430824),
-  p = n(246946),
-  h = n(626135),
-  C = n(146596),
-  b = n(559368),
-  v = n(999382),
-  x = n(981631),
-  N = n(190378),
-  j = n(388032),
-  E = n(669312);
+  p = n(650774),
+  h = n(430824),
+  f = n(246946),
+  b = n(626135),
+  x = n(146596),
+  j = n(559368),
+  N = n(999382),
+  v = n(981631),
+  _ = n(190378),
+  C = n(388032),
+  O = n(669312);
 
-function I(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,43 +44,43 @@ function I(e) {
   }
   return e
 }
-let O = function(e, t, n) {
+let I = function(e, t, n) {
     let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
       i = null;
-    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = j.NW.string(j.t.xO2msb)) : i = j.NW.formatToPlainString(j.t.nskeMz, {
+    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = C.NW.string(C.t.xO2msb)) : i = C.NW.formatToPlainString(C.t.nskeMz, {
       percentage: (0, a.o)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : j.NW.string(j.t.jHpxws),
+      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : C.NW.string(C.t.jHpxws),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
     }
   },
-  y = function(e) {
+  E = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return t || e === x.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(A.kzN, {
-      icon: A.d3s,
-      className: E.notEnoughMembersError,
-      backgroundColor: A.mTc.BACKGROUND_ACCENT,
-      children: j.NW.string(j.t["FsgE/P"])
-    }) : null == e ? null : (0, r.jsx)(A.kzN, {
-      backgroundColor: A.mTc.BACKGROUND_ACCENT,
-      children: j.NW.string(j.t.Iju63d)
+    return t || e === v.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
+      icon: c.d3s,
+      className: O.notEnoughMembersError,
+      backgroundColor: c.mTc.BACKGROUND_ACCENT,
+      children: C.NW.string(C.t["FsgE/P"])
+    }) : null == e ? null : (0, r.jsx)(c.kzN, {
+      backgroundColor: c.mTc.BACKGROUND_ACCENT,
+      children: C.NW.string(C.t.Iju63d)
     })
   },
-  w = () => {
-    let [e, t] = i.useState(!1), n = (0, l.e7)([v.Z], () => v.Z.getGuildId());
-    return (0, r.jsx)(A.zxk, {
-      className: E.developerPortalCta,
+  S = () => {
+    let [e, t] = i.useState(!1), n = (0, l.e7)([N.Z], () => N.Z.getGuildId());
+    return (0, r.jsx)(c.zxk, {
+      className: O.developerPortalCta,
       onClick: () => {
         t(!0), (function(e) {
-          h.default.track(x.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+          b.default.track(v.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
             guild_id: e
           });
-          let t = null == e ? x.E07.DEVELOPER_PORTAL : x.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
+          let t = null == e ? v.E07.DEVELOPER_PORTAL : v.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
             n = (0, s.Z)();
           return o.tn.post({
-            url: x.ANM.HANDOFF,
+            url: v.ANM.HANDOFF,
             body: {
               key: n
             },
@@ -88,7 +88,7 @@ let O = function(e, t, n) {
             rejectWithError: !0
           }).then(e => {
             let r = e.body.handoff_token;
-            window.open(x.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
+            window.open(v.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
           }, () => {
             window.open(t)
           })
@@ -97,64 +97,64 @@ let O = function(e, t, n) {
         })
       },
       submitting: e,
-      children: j.NW.string(j.t.Uskgx8)
+      children: C.NW.string(C.t.Uskgx8)
     })
   },
-  P = () => {
-    let e = (0, l.e7)([v.Z], () => v.Z.getGuildId()),
-      t = (0, l.e7)([f.Z], () => f.Z.getMemberCount(e)),
-      n = (0, l.e7)([m.Z], () => m.Z.getGuild(e)),
+  T = () => {
+    let e = (0, l.e7)([N.Z], () => N.Z.getGuildId()),
+      t = (0, l.e7)([p.Z], () => p.Z.getMemberCount(e)),
+      n = (0, l.e7)([h.Z], () => h.Z.getGuild(e)),
       s = (0, l.e7)([g.default], () => g.default.locale),
       {
         analytics: a,
         errorCode: o
-      } = (0, l.cj)([b.Z], () => ({
-        analytics: null != e ? b.Z.getOverviewAnalytics(e) : null,
-        errorCode: b.Z.getError()
+      } = (0, l.cj)([j.Z], () => ({
+        analytics: null != e ? j.Z.getOverviewAnalytics(e) : null,
+        errorCode: j.Z.getError()
       })),
-      h = (0, l.e7)([p.Z], () => p.Z.getSettings().enabled),
-      P = null == t || null == n || null != t && t < 500 && null != n && !n.hasFeature(x.oNc.PARTNERED) && !n.hasFeature(x.oNc.VERIFIED);
+      b = (0, l.e7)([f.Z], () => f.Z.getSettings().enabled),
+      T = null == t || null == n || null != t && t < 500 && null != n && !n.hasFeature(v.oNc.PARTNERED) && !n.hasFeature(v.oNc.VERIFIED);
     i.useEffect(() => {
-      null == e || P || ((0, C.Vk)(e), (0, C.SR)(e), (0, C.xl)(e))
-    }, [e, P]), i.useEffect(() => {
-      (0, u.Kw)(N.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
+      null == e || T || ((0, x.Vk)(e), (0, x.SR)(e), (0, x.xl)(e))
+    }, [e, T]), i.useEffect(() => {
+      (0, m.Kw)(_.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
-    let B = null != a ? (0, r.jsx)("div", {
-      className: E.__invalid_guildAnalyticsOverviewWrapper,
+    let P = null != a ? (0, r.jsx)("div", {
+      className: O.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, r.jsxs)("div", {
-        className: E.overviewData,
-        children: [(0, r.jsx)(d.Z, I({
-          title: j.NW.string(j.t.i0Nora),
-          tooltipText: j.NW.string(j.t.KiRbLC)
-        }, O(a.visitors, a.visitorsChange, s))), (0, r.jsx)(d.Z, I({
-          title: j.NW.string(j.t.DDAHdX),
-          tooltipText: j.NW.string(j.t.HxWUkZ)
-        }, O(a.communicators, a.communicatorsChange, s))), (0, r.jsx)(d.Z, I({
-          title: j.NW.string(j.t.hYeOqK)
-        }, O(a.newMembers, a.newMembersChange, s))), (0, r.jsx)(d.Z, I({
-          title: j.NW.string(j.t.jj7OPz),
-          tooltipText: j.NW.string(j.t.MQCsl5)
-        }, O(a.pctRetained, a.pctRetainedChange, s, !0)))]
+        className: O.overviewData,
+        children: [(0, r.jsx)(u.Z, y({
+          title: C.NW.string(C.t.i0Nora),
+          tooltipText: C.NW.string(C.t.KiRbLC)
+        }, I(a.visitors, a.visitorsChange, s))), (0, r.jsx)(u.Z, y({
+          title: C.NW.string(C.t.DDAHdX),
+          tooltipText: C.NW.string(C.t.HxWUkZ)
+        }, I(a.communicators, a.communicatorsChange, s))), (0, r.jsx)(u.Z, y({
+          title: C.NW.string(C.t.hYeOqK)
+        }, I(a.newMembers, a.newMembersChange, s))), (0, r.jsx)(u.Z, y({
+          title: C.NW.string(C.t.jj7OPz),
+          tooltipText: C.NW.string(C.t.MQCsl5)
+        }, I(a.pctRetained, a.pctRetainedChange, s, !0)))]
       })
     }) : null;
-    return (0, r.jsxs)(A.hjN, {
-      tag: A.RB0.H1,
-      title: j.NW.string(j.t["0wWfUF"]),
-      children: [(0, r.jsx)(A.R94, {
-        type: A.geA.DESCRIPTION,
-        children: j.NW.format(j.t.NIZ60d, {})
-      }), y(o, P), (0, r.jsxs)("div", {
-        className: E.developerPortalCtaWrapper,
+    return (0, r.jsxs)(c.hjN, {
+      tag: c.RB0.H1,
+      title: C.NW.string(C.t["0wWfUF"]),
+      children: [(0, r.jsx)(c.R94, {
+        type: c.geA.DESCRIPTION,
+        children: C.NW.format(C.t.NIZ60d, {})
+      }), E(o, T), (0, r.jsxs)("div", {
+        className: O.developerPortalCtaWrapper,
         children: [(0, r.jsx)("div", {
-          className: E.placeholderImage
-        }), (0, r.jsx)(A.Text, {
-          className: E.developerPortalCtaText,
+          className: O.placeholderImage
+        }), (0, r.jsx)(c.Text, {
+          className: O.developerPortalCtaText,
           variant: "text-sm/normal",
-          children: j.NW.string(j.t.A5vsws)
-        }), (0, r.jsx)(w, {})]
-      }), h ? (0, r.jsx)("div", {
-        className: E.streamerMode,
-        children: (0, r.jsx)(c.Z, {})
-      }) : B]
+          children: C.NW.string(C.t.A5vsws)
+        }), (0, r.jsx)(S, {})]
+      }), b ? (0, r.jsx)("div", {
+        className: O.streamerMode,
+        children: (0, r.jsx)(d.Z, {})
+      }) : P]
     })
   }

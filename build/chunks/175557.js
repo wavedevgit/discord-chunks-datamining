@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -10,13 +10,13 @@ var i = n(108930),
   a = n(146068),
   l = n(308545),
   o = n(397697),
-  A = n(129871),
-  c = n(206851),
-  d = n(246933),
-  u = n(995414),
+  c = n(129871),
+  d = n(206851),
+  u = n(246933),
+  m = n(995414),
   g = n(308083);
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function m(e) {
+function h(e) {
   var {
     banner: t
   } = e, n = function(e, t) {
@@ -55,23 +55,23 @@ function m(e) {
   }(e, ["banner"]);
   switch (t) {
     case g.qC.NIGHT_SKY:
-      return (0, r.jsx)(o.Z, f({}, n));
+      return (0, r.jsx)(o.Z, p({}, n));
     case g.qC.CASTLE:
-      return (0, r.jsx)(i.Z, f({}, n));
+      return (0, r.jsx)(i.Z, p({}, n));
     case g.qC.WORLD_MAP:
-      return (0, r.jsx)(u.Z, f({}, n));
+      return (0, r.jsx)(m.Z, p({}, n));
     case g.qC.SEA_FOAM:
-      return (0, r.jsx)(A.Z, f({}, n));
+      return (0, r.jsx)(c.Z, p({}, n));
     case g.qC.WARP_TUNNEL:
-      return (0, r.jsx)(d.Z, f({}, n));
+      return (0, r.jsx)(u.Z, p({}, n));
     case g.qC.HOUSE:
-      return (0, r.jsx)(a.Z, f({}, n));
+      return (0, r.jsx)(a.Z, p({}, n));
     case g.qC.HEIGHTMAP:
-      return (0, r.jsx)(s.Z, f({}, n));
+      return (0, r.jsx)(s.Z, p({}, n));
     case g.qC.MESH:
-      return (0, r.jsx)(l.Z, f({}, n));
+      return (0, r.jsx)(l.Z, p({}, n));
     case g.qC.SPATTER:
-      return (0, r.jsx)(c.Z, f({}, n))
+      return (0, r.jsx)(d.Z, p({}, n))
   }
   return null
 }

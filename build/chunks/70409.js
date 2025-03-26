@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -10,30 +10,30 @@ var i = n(481060),
   a = n(267642),
   l = n(981631),
   o = n(474936),
-  A = n(388032),
-  c = n(201038);
+  c = n(388032),
+  d = n(201038);
 
-function d(e) {
+function u(e) {
   let {
     guild: t,
     numSounds: n,
-    isOutOfSlots: d
-  } = e, u = t.premiumTier, g = (0, a.FZ)(u, t.id), f = o._k[u] - 2;
-  if (null == g || u === l.Eu4.TIER_3 || n < f) return null;
-  let m = d ? {
+    isOutOfSlots: u
+  } = e, m = t.premiumTier, g = (0, a.FZ)(m, t.id), p = o._k[m] - 2;
+  if (null == g || m === l.Eu4.TIER_3 || n < p) return null;
+  let h = u ? {
     color: i.Ttl.GREEN,
     look: i.iLD.FILLED,
-    text: A.NW.string(A.t.cYzxGh)
+    text: c.NW.string(c.t.cYzxGh)
   } : void 0;
   return (0, r.jsx)(s.Z, {
-    header: A.NW.string(A.t.zT9Sxc),
-    text: A.NW.formatToPlainString(A.t.OKqEAQ, {
+    header: c.NW.string(c.t.zT9Sxc),
+    text: c.NW.formatToPlainString(c.t.OKqEAQ, {
       level: g,
       numAdditional: (0, a.Je)(g)
     }),
     headerColor: "header-primary",
     textColor: "text-normal",
-    buttonProps: m,
+    buttonProps: h,
     guild: t,
     analyticsLocation: {
       page: l.ZY5.GUILD_SETTINGS,
@@ -41,6 +41,6 @@ function d(e) {
       object: l.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL,
       objectType: (0, a.ge)(g)
     },
-    className: c.container
+    className: d.container
   })
 }

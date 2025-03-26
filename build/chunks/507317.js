@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -9,21 +9,21 @@ var r = n(200651),
   a = n(367907),
   l = n(807582),
   o = n(26323),
-  A = n(516129),
-  c = n(345861),
-  d = n(709586),
-  u = n(768581),
+  c = n(516129),
+  d = n(345861),
+  u = n(709586),
+  m = n(768581),
   g = n(434404),
-  f = n(981631),
-  m = n(30513),
-  p = n(486324),
-  h = n(200299),
-  C = n(388032),
-  b = n(668813);
-let v = function(e) {
+  p = n(981631),
+  h = n(30513),
+  f = n(486324),
+  b = n(200299),
+  x = n(388032),
+  j = n(668813);
+let N = function(e) {
   let {
     guild: t
-  } = e, v = t.hasFeature(f.oNc.BANNER), x = i.useCallback((e, i) => {
+  } = e, N = t.hasFeature(p.oNc.BANNER), v = i.useCallback((e, i) => {
     if (null == e || void 0 === i) {
       g.Z.saveGuild(t.id, {
         homeHeader: null
@@ -61,112 +61,112 @@ let v = function(e) {
             homeHeader: n
           })
         },
-        uploadType: p.pC.HOME_HEADER
+        uploadType: f.pC.HOME_HEADER
       }, n))
     })
-  }, [t.id]), N = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, a.yw)(f.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  }, [t.id]), _ = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, a.yw)(p.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: f.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: f.qAy.LEARN_MORE
+        section: p.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: p.qAy.LEARN_MORE
       },
       guild_id: null == t ? void 0 : t.id,
       location_stack: []
     }), (0, o.Z)({
       analyticsLocations: [],
       analyticsSourceLocation: {
-        section: f.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: f.qAy.ONBOARDING_EDIT,
-        page: f.ZY5.GUILD_SETTINGS
+        section: p.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: p.qAy.ONBOARDING_EDIT,
+        page: p.ZY5.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, m.XO)()
+      perks: (0, h.XO)()
     })
-  }, [t]), j = (0, r.jsx)(A.Z, {
+  }, [t]), C = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
-    makeURL: e => null != e ? u.ZP.getGuildHomeHeaderURL({
+    makeURL: e => null != e ? m.ZP.getGuildHomeHeaderURL({
       id: t.id,
       homeHeader: e
     }) : null,
-    disabled: !v,
-    onChange: x,
-    hint: C.NW.string(C.t.NyXznp),
-    enabled: v,
-    maxFileSizeBytes: h.B
+    disabled: !N,
+    onChange: v,
+    hint: x.NW.string(x.t.NyXznp),
+    enabled: N,
+    maxFileSizeBytes: b.B
   });
-  return v ? (0, r.jsxs)(r.Fragment, {
+  return N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.sectionHeader,
+      className: j.sectionHeader,
       children: [(0, r.jsx)(s.X6q, {
-        className: b.header,
+        className: j.header,
         variant: "heading-lg/extrabold",
-        children: C.NW.string(C.t.BBj1nZ)
+        children: x.NW.string(x.t.BBj1nZ)
       }), (0, r.jsx)(l.Z, {
-        className: b.boostIndicator,
+        className: j.boostIndicator,
         guild: t,
-        guildFeature: f.oNc.BANNER,
-        onClick: N
+        guildFeature: p.oNc.BANNER,
+        onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: b.section,
+      className: j.section,
       children: [(0, r.jsxs)("div", {
-        className: b.homeBannerExplainer,
+        className: j.homeBannerExplainer,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: C.NW.string(C.t.Vwintr)
-        }), (0, r.jsx)(c.Z, {
+          children: x.NW.string(x.t.Vwintr)
+        }), (0, r.jsx)(d.Z, {
           color: s.Ttl.BRAND,
-          className: b.uploadButton,
-          buttonCTA: C.NW.string(C.t.yG2pUl),
-          onChange: x,
-          maxFileSizeBytes: h.B
+          className: j.uploadButton,
+          buttonCTA: x.NW.string(x.t.yG2pUl),
+          onChange: v,
+          maxFileSizeBytes: b.B
         })]
       }), (0, r.jsx)("div", {
-        children: j
+        children: C
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.sectionHeader,
+      className: j.sectionHeader,
       children: [(0, r.jsx)(s.X6q, {
-        className: b.header,
+        className: j.header,
         variant: "heading-lg/extrabold",
-        children: C.NW.string(C.t.BBj1nZ)
+        children: x.NW.string(x.t.BBj1nZ)
       }), (0, r.jsx)(l.Z, {
-        className: b.boostIndicator,
+        className: j.boostIndicator,
         guild: t,
-        guildFeature: f.oNc.BANNER,
-        onClick: N
+        guildFeature: p.oNc.BANNER,
+        onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: b.section,
+      className: j.section,
       children: [(0, r.jsxs)("div", {
-        className: b.homeBannerExplainer,
+        className: j.homeBannerExplainer,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: C.NW.string(C.t.Vwintr)
+          children: x.NW.string(x.t.Vwintr)
         }), (0, r.jsxs)(s.gtL, {
-          className: b.upsellButton,
-          innerClassName: b.upsellButtonInner,
+          className: j.upsellButton,
+          innerClassName: j.upsellButtonInner,
           color: s.zxk.Colors.GREEN,
-          onClick: N,
-          children: [(0, r.jsx)(d.Z, {
+          onClick: _,
+          children: [(0, r.jsx)(u.Z, {
             height: 16,
             width: 16
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-normal",
-            children: C.NW.string(C.t["+7XY39"])
+            children: x.NW.string(x.t["+7XY39"])
           })]
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsx)(s.P3F, {
           "aria-hidden": !0,
           tabIndex: -1,
-          onClick: N,
-          children: j
+          onClick: _,
+          children: C
         })
       })]
     })]

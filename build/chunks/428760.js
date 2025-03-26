@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -9,46 +9,46 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(730671),
-  A = n(388032),
-  c = n(994357);
+  c = n(388032),
+  d = n(994357);
 
-function d(e) {
+function u(e) {
   let {
     onChangeText: t,
     maxWordCount: n,
     className: s,
-    textAreaClassName: d,
-    subtitleText: u,
+    textAreaClassName: u,
+    subtitleText: m,
     initialValue: g
-  } = e, f = i.useMemo(() => null != g ? g : [], [g]), {
-    value: m,
-    onChange: p,
-    errorMessage: h
+  } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
+    value: h,
+    onChange: f,
+    errorMessage: b
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(c.keywordsContainer, s),
+      className: a()(d.keywordsContainer, s),
       children: [(0, r.jsx)(l.lcI, {
-        className: a()(c.keywordsTextArea, d),
-        value: m,
-        onChange: p,
-        placeholder: A.NW.string(A.t.UyaxJy)
+        className: a()(d.keywordsTextArea, u),
+        value: h,
+        onChange: f,
+        placeholder: c.NW.string(c.t.UyaxJy)
       }), (0, r.jsx)(l.Text, {
-        className: c.keywordsCounter,
+        className: d.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
-        children: "".concat(f.length, " / ").concat(n)
+        children: "".concat(p.length, " / ").concat(n)
       })]
-    }), null != h ? (0, r.jsx)(l.Text, {
-      className: a()(c.paddingTop, c.errorText),
+    }), null != b ? (0, r.jsx)(l.Text, {
+      className: a()(d.paddingTop, d.errorText),
       variant: "text-xs/medium",
       color: "text-danger",
-      children: h
+      children: b
     }) : (0, r.jsx)(l.Text, {
-      className: c.paddingTop,
+      className: d.paddingTop,
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: null != u ? u : A.NW.string(A.t["Gm6G5+"])
+      children: null != m ? m : c.NW.string(c.t["Gm6G5+"])
     })]
   })
 }

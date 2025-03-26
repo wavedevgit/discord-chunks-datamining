@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => j
 });
 var r = n(200651),
   i = n(192379),
@@ -9,49 +9,49 @@ var r = n(200651),
   a = n(704215),
   l = n(481060),
   o = n(725803),
-  A = n(605236),
-  c = n(999382),
-  d = n(614342),
-  u = n(303737),
+  c = n(605236),
+  d = n(999382),
+  u = n(614342),
+  m = n(303737),
   g = n(618748),
-  f = n(500395),
-  m = n(975464),
-  p = n(981631),
-  h = n(674563),
-  C = n(85207);
+  p = n(500395),
+  h = n(975464),
+  f = n(981631),
+  b = n(674563),
+  x = n(85207);
 
-function b() {
+function j() {
   let e;
-  let t = (0, s.e7)([c.Z], () => c.Z.getGuild()),
+  let t = (0, s.e7)([d.Z], () => d.Z.getGuild()),
     {
       application: n,
-      loading: b
-    } = (0, o.Z)(null == t ? void 0 : t.id, h.wW.GUILD_ROLE_SUBSCRIPTIONS),
-    v = i.useRef(null),
-    x = (0, d.Z)(null != t ? t : void 0);
+      loading: j
+    } = (0, o.Z)(null == t ? void 0 : t.id, b.wW.GUILD_ROLE_SUBSCRIPTIONS),
+    N = i.useRef(null),
+    v = (0, u.Z)(null != t ? t : void 0);
   i.useEffect(() => {
-    null != t && (0, u.sO)(t) && (0, A.EW)(a.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
+    null != t && (0, m.sO)(t) && (0, c.EW)(a.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
-  let N = (null == t ? void 0 : t.hasFeature(p.oNc.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.hasFeature(p.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
-  return e = null == t || b ? (0, r.jsx)(l.$jN, {}) : null != x ? (0, r.jsx)(f.Z, {
+  let _ = (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
+  return e = null == t || j ? (0, r.jsx)(l.$jN, {}) : null != v ? (0, r.jsx)(p.Z, {
     guild: t,
-    config: x
-  }) : N ? (0, r.jsx)(m.Z, {
+    config: v
+  }) : _ ? (0, r.jsx)(h.Z, {
     guild: t
   }) : (0, r.jsx)(g.Z, {
     guild: t,
     application: n
   }), (0, r.jsx)("div", {
-    className: C.settingsColumn,
+    className: x.settingsColumn,
     children: (0, r.jsx)("div", {
-      className: C.settingsContainer,
+      className: x.settingsContainer,
       children: (0, r.jsx)(l.w0Z, {
-        className: C.settingsScroller,
+        className: x.settingsScroller,
         children: (0, r.jsx)("main", {
-          ref: v,
-          className: C.settingsContent,
+          ref: N,
+          className: x.settingsContent,
           children: (0, r.jsx)(l.JcV, {
-            containerRef: v,
+            containerRef: N,
             children: e
           })
         })

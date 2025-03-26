@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,35 +9,35 @@ var r = n(200651),
   a = n.n(s),
   l = n(525654),
   o = n.n(l),
-  A = n(442837),
-  c = n(846519),
-  d = n(481060),
-  u = n(232567),
+  c = n(442837),
+  d = n(846519),
+  u = n(481060),
+  m = n(232567),
   g = n(596454),
-  f = n(410030),
-  m = n(623624),
-  p = n(357156),
-  h = n(208049),
-  C = n(763296),
-  b = n(22382),
-  v = n(747071),
-  x = n(286654),
-  N = n(171368),
-  j = n(430824),
-  E = n(594174),
-  I = n(15385),
-  O = n(768581),
-  y = n(267642),
-  w = n(358085),
-  P = n(51144),
-  B = n(999382),
-  D = n(70409),
-  T = n(981631),
-  S = n(710111),
-  L = n(388032),
-  R = n(70235);
+  p = n(410030),
+  h = n(623624),
+  f = n(357156),
+  b = n(208049),
+  x = n(763296),
+  j = n(22382),
+  N = n(747071),
+  v = n(286654),
+  _ = n(171368),
+  C = n(430824),
+  O = n(594174),
+  y = n(15385),
+  I = n(768581),
+  E = n(267642),
+  S = n(358085),
+  T = n(51144),
+  P = n(999382),
+  w = n(70409),
+  R = n(981631),
+  Z = n(710111),
+  D = n(388032),
+  A = n(70235);
 
-function Q(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -68,69 +68,69 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = w.isPlatformEmbedded || "Safari" !== o().name && "Firefox" !== o().name;
+let L = S.isPlatformEmbedded || "Safari" !== o().name && "Firefox" !== o().name;
 
-function k() {
-  let e = (0, A.e7)([B.Z], () => B.Z.getProps().guild);
-  return null == e ? null : (0, r.jsx)(d.hjN, {
-    tag: d.RB0.H1,
-    title: L.NW.string(L.t.OWQNYm),
-    children: (0, r.jsx)(U, {
+function M() {
+  let e = (0, c.e7)([P.Z], () => P.Z.getProps().guild);
+  return null == e ? null : (0, r.jsx)(u.hjN, {
+    tag: u.RB0.H1,
+    title: D.NW.string(D.t.OWQNYm),
+    children: (0, r.jsx)(z, {
       guild: e
     })
   })
 }
 
-function M(e) {
+function G(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(d.X6q, {
-    className: R.tableHeader,
+  return (0, r.jsx)(u.X6q, {
+    className: A.tableHeader,
     variant: "heading-sm/semibold",
     color: "header-secondary",
     children: t
   })
 }
 
-function _(e) {
+function U(e) {
   let {
     currentTier: t,
     availableSounds: n,
     guildId: i
-  } = e, s = j.Z.getGuild(i), a = null != s ? (0, y.nL)(s) : 0;
+  } = e, s = C.Z.getGuild(i), a = null != s ? (0, E.nL)(s) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
-    children: L.NW.format(L.t["7E9Hd3"], {
+    children: D.NW.format(D.t["7E9Hd3"], {
       slots: n,
       totalSlots: a
     })
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.ua7, {
-      text: L.NW.formatToPlainString(L.t.tuuJJS, {
+    children: [(0, r.jsx)(u.ua7, {
+      text: D.NW.formatToPlainString(D.t.tuuJJS, {
         currentBoostLevel: t
       }),
-      children: e => (0, r.jsx)(d.P3F, {
-        className: R.boostingIconWrapper,
+      children: e => (0, r.jsx)(u.P3F, {
+        className: A.boostingIconWrapper,
         onClick: () => {
-          (0, m.f)({
+          (0, h.f)({
             guildId: i,
             location: {
-              section: T.jXE.GUILD_SETTINGS_SOUNDBOARD,
-              object: T.qAy.BOOST_GEM_ICON
+              section: R.jXE.GUILD_SETTINGS_SOUNDBOARD,
+              object: R.qAy.BOOST_GEM_ICON
             }
           })
         },
         tabIndex: -1,
-        children: (0, r.jsx)(I.Z, Q({}, e))
+        children: (0, r.jsx)(y.Z, k({}, e))
       })
-    }), L.NW.format(L.t.HHCdvb, {
+    }), D.NW.format(D.t.HHCdvb, {
       slots: n,
       totalSlots: a,
       boostLevel: t
     })]
   })
 }
-let G = e => {
+let B = e => {
     var {
       renderPopoutBody: t,
       renderPopoutChildren: n
@@ -149,130 +149,130 @@ let G = e => {
       }
       return i
     }(e, ["renderPopoutBody", "renderPopoutChildren"]);
-    let [a, l] = i.useState(!1), o = i.useMemo(() => new c.V7, []), A = i.useCallback(() => {
+    let [a, l] = i.useState(!1), o = i.useMemo(() => new d.V7, []), c = i.useCallback(() => {
       o.stop(), l(!0)
-    }, [o]), u = i.useCallback(() => {
+    }, [o]), m = i.useCallback(() => {
       o.start(200, () => l(!1))
     }, [o]);
-    return (0, r.jsx)(d.yRy, W(Q({
+    return (0, r.jsx)(u.yRy, W(k({
       shouldShow: a,
-      renderPopout: e => (0, r.jsx)(d.VqE, {
-        className: R.browserUnsupportedDialog,
-        onMouseEnter: A,
-        onMouseLeave: u,
+      renderPopout: e => (0, r.jsx)(u.VqE, {
+        className: A.browserUnsupportedDialog,
+        onMouseEnter: c,
+        onMouseLeave: m,
         children: t(e)
       })
     }, s), {
       children: e => n(e)
     }))
   },
-  F = () => (0, r.jsx)(G, {
-    renderPopoutBody: () => (0, r.jsx)(d.Text, {
+  F = () => (0, r.jsx)(B, {
+    renderPopoutBody: () => (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: L.NW.format(L.t.bGXPVl, {})
+      children: D.NW.format(D.t.bGXPVl, {})
     }),
-    renderPopoutChildren: e => (0, r.jsx)(d.zxk, W(Q({}, e), {
+    renderPopoutChildren: e => (0, r.jsx)(u.zxk, W(k({}, e), {
       disabled: !0,
-      children: L.NW.string(L.t["/uNYPD"])
+      children: D.NW.string(D.t["/uNYPD"])
     }))
   });
 
-function U(e) {
+function z(e) {
   let {
     guild: t
-  } = e, [s, a] = (0, A.Wu)([C.Z], () => {
+  } = e, [s, a] = (0, c.Wu)([x.Z], () => {
     var e;
-    return [null !== (e = C.Z.getSoundsForGuild(t.id)) && void 0 !== e ? e : S.Hy, C.Z.isFetchingSounds() || C.Z.isFetchingDefaultSounds()]
+    return [null !== (e = x.Z.getSoundsForGuild(t.id)) && void 0 !== e ? e : Z.Hy, x.Z.isFetchingSounds() || x.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: l
-  } = (0, p.XJ)(t), o = i.useRef(null), c = (0, f.ZP)(), u = t.premiumTier, g = (0, y.yw)(t, s, u);
+  } = (0, f.XJ)(t), o = i.useRef(null), d = (0, p.ZP)(), m = t.premiumTier, g = (0, E.yw)(t, s, m);
   i.useEffect(() => {
-    (0, h.w)()
+    (0, b.w)()
   }, []);
-  let m = i.useMemo(() => s.reduce((e, t) => (e[t.soundId] = new Audio((0, b.Z)(t.soundId)), e), {}), [s]),
-    x = 0 === s.length && !a;
+  let h = i.useMemo(() => s.reduce((e, t) => (e[t.soundId] = new Audio((0, j.Z)(t.soundId)), e), {}), [s]),
+    v = 0 === s.length && !a;
 
-  function N(e) {
+  function _(e) {
     var t;
     null === (t = o.current) || void 0 === t || t.pause();
-    let n = m[e.soundId];
-    null != n && (o.current = n, n.currentTime = 0, n.volume = (0, v.Z)(e.volume), n.play())
+    let n = h[e.soundId];
+    null != n && (o.current = n, n.currentTime = 0, n.volume = (0, N.Z)(e.volume), n.play())
   }
   if (i.useEffect(() => () => {
       var e;
       null === (e = o.current) || void 0 === e || e.pause()
-    }, []), a) return (0, r.jsx)(d.$jN, {});
-  let j = Z ? (0, r.jsx)(d.zxk, {
+    }, []), a) return (0, r.jsx)(u.$jN, {});
+  let C = L ? (0, r.jsx)(u.zxk, {
     onClick: function() {
-      (0, d.ZDy)(async () => {
+      (0, u.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
-        return n => (0, r.jsx)(e, W(Q({}, n), {
+        return n => (0, r.jsx)(e, W(k({}, n), {
           guildId: t.id
         }))
       })
     },
     disabled: g <= 0 || !l,
-    children: L.NW.string(L.t["/uNYPD"])
+    children: D.NW.string(D.t["/uNYPD"])
   }) : (0, r.jsx)(F, {});
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(d.Text, {
-        className: R.helpText,
+      children: [(0, r.jsx)(u.Text, {
+        className: A.helpText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: L.NW.string(L.t.BohnsL)
+        children: D.NW.string(D.t.BohnsL)
       }), (0, r.jsx)("div", {
-        className: R.buttons,
-        children: !x && j
+        className: A.buttons,
+        children: !v && C
       })]
-    }), x ? (0, r.jsxs)(d.ubH, {
-      theme: c,
-      className: R.empty,
-      children: [(0, r.jsx)(d.oxh, {
+    }), v ? (0, r.jsxs)(u.ubH, {
+      theme: d,
+      className: A.empty,
+      children: [(0, r.jsx)(u.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
         width: 272,
         height: 212
-      }), (0, r.jsx)(d.OZU, {
-        note: L.NW.string(L.t.ZhoSBA),
-        noteClassName: R.emptyText,
-        children: L.NW.string(L.t.I6P1p6)
-      }), j]
+      }), (0, r.jsx)(u.OZU, {
+        note: D.NW.string(D.t.ZhoSBA),
+        noteClassName: A.emptyText,
+        children: D.NW.string(D.t.I6P1p6)
+      }), C]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(d.$i$, {
-        className: R.divider
-      }), (0, r.jsx)(d.X6q, {
-        className: R.tableTitle,
+      children: [(0, r.jsx)(u.$i$, {
+        className: A.divider
+      }), (0, r.jsx)(u.X6q, {
+        className: A.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: (0, r.jsx)(_, {
+        children: (0, r.jsx)(U, {
           guildId: t.id,
-          currentTier: u,
+          currentTier: m,
           availableSounds: g
         })
-      }), (0, r.jsx)(D.Z, {
+      }), (0, r.jsx)(w.Z, {
         guild: t,
         numSounds: s.length,
         isOutOfSlots: 0 === g
       }), (0, r.jsxs)("div", {
-        className: R.soundTable,
+        className: A.soundTable,
         children: [(0, r.jsxs)("div", {
-          className: R.tableHeaders,
-          children: [(0, r.jsx)(M, {
-            children: L.NW.string(L.t.sMOuub)
-          }), (0, r.jsx)(M, {
-            children: L.NW.string(L.t.lLFvlZ)
-          }), (0, r.jsx)(M, {
-            children: L.NW.string(L.t["85qMS0"])
+          className: A.tableHeaders,
+          children: [(0, r.jsx)(G, {
+            children: D.NW.string(D.t.sMOuub)
+          }), (0, r.jsx)(G, {
+            children: D.NW.string(D.t.lLFvlZ)
+          }), (0, r.jsx)(G, {
+            children: D.NW.string(D.t["85qMS0"])
           })]
         }), s.map(e => (0, r.jsx)(H, {
           sound: e,
           isPlaying: !1,
           guild: t,
-          onPlaySound: N
+          onPlaySound: _
         }, e.soundId))]
       })]
     })]
@@ -286,126 +286,126 @@ function H(e) {
     onPlaySound: l,
     guild: o
   } = e, {
-    soundId: c,
-    name: f,
-    user: m,
-    userId: C,
-    emojiId: b,
-    emojiName: v
-  } = t, j = (0, A.e7)([E.default], () => null != m ? m : E.default.getUser(C), [C, m]), {
-    canManageGuildExpression: I
-  } = (0, p.XJ)(o), y = i.useMemo(() => I(t), [t, I]), w = null != b || null != v, [B, D] = i.useState(!1), S = (0, x.z)(t, o.id);
-  async function Z() {
-    if (!B) {
-      D(!0);
+    soundId: d,
+    name: p,
+    user: h,
+    userId: x,
+    emojiId: j,
+    emojiName: N
+  } = t, C = (0, c.e7)([O.default], () => null != h ? h : O.default.getUser(x), [x, h]), {
+    canManageGuildExpression: y
+  } = (0, f.XJ)(o), E = i.useMemo(() => y(t), [t, y]), S = null != j || null != N, [P, w] = i.useState(!1), Z = (0, v.z)(t, o.id);
+  async function L() {
+    if (!P) {
+      w(!0);
       try {
-        await (0, h.AA)(o.id, c)
+        await (0, b.AA)(o.id, d)
       } catch (e) {
-        D(!1)
+        w(!1)
       }
     }
   }
   i.useEffect(() => {
-    null == j && e();
+    null == C && e();
     async function e() {
-      await (0, u.PR)(C)
+      await (0, m.PR)(x)
     }
-  }, [j, C]);
-  let k = i.useCallback(() => {
-      null != j && (0, N.openUserProfileModal)({
-        userId: j.id,
+  }, [C, x]);
+  let M = i.useCallback(() => {
+      null != C && (0, _.openUserProfileModal)({
+        userId: C.id,
         guildId: o.id,
         analyticsLocation: {
-          section: T.jXE.GUILD_SETTINGS_SOUNDBOARD
+          section: R.jXE.GUILD_SETTINGS_SOUNDBOARD
         }
       })
-    }, [j, o.id]),
-    M = P.ZP.useUserTag(j);
+    }, [C, o.id]),
+    G = T.ZP.useUserTag(C);
   return (0, r.jsxs)("div", {
-    className: a()(R.row, {
-      [R.active]: s
+    className: a()(A.row, {
+      [A.active]: s
     }),
-    children: [w ? (0, r.jsx)(g.Z, {
-      emojiId: b,
-      emojiName: v,
-      className: R.emoji
-    }) : (0, r.jsx)(d.XBm, {
+    children: [S ? (0, r.jsx)(g.Z, {
+      emojiId: j,
+      emojiName: N,
+      className: A.emoji
+    }) : (0, r.jsx)(u.XBm, {
       size: "md",
       color: "currentColor",
-      className: R.emoji
-    }), (0, r.jsx)(d.P3F, {
+      className: A.emoji
+    }), (0, r.jsx)(u.P3F, {
       onClick: () => {
-        B || l(t)
+        P || l(t)
       },
-      onContextMenu: S,
-      className: R.soundName,
-      children: (0, r.jsxs)(d.Text, {
+      onContextMenu: Z,
+      className: A.soundName,
+      children: (0, r.jsxs)(u.Text, {
         variant: "text-sm/normal",
-        className: R.soundName,
-        children: [f, " ", (0, r.jsx)(d.gj8, {
+        className: A.soundName,
+        children: [p, " ", (0, r.jsx)(u.gj8, {
           size: "md",
           color: "currentColor",
-          className: R.soundPreviewIcon
+          className: A.soundPreviewIcon
         })]
       })
-    }), null != j && (0, r.jsxs)(d.P3F, {
-      className: R.uploader,
-      onClick: k,
-      children: [(0, r.jsx)(d.qEK, {
-        "aria-label": M,
-        size: d.EFr.SIZE_24,
-        className: R.uploaderAvatar,
-        src: (0, O.ov)(j, !1, 24)
-      }), (0, r.jsx)(d.Text, {
+    }), null != C && (0, r.jsxs)(u.P3F, {
+      className: A.uploader,
+      onClick: M,
+      children: [(0, r.jsx)(u.qEK, {
+        "aria-label": G,
+        size: u.EFr.SIZE_24,
+        className: A.uploaderAvatar,
+        src: (0, I.ov)(C, !1, 24)
+      }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         lineClamp: 1,
-        children: M
+        children: G
       })]
-    }), y ? (0, r.jsxs)("div", {
-      className: R.soundEditContainer,
-      children: [(0, r.jsx)(d.P3F, {
-        className: R.soundUpdate,
+    }), E ? (0, r.jsxs)("div", {
+      className: A.soundEditContainer,
+      children: [(0, r.jsx)(u.P3F, {
+        className: A.soundUpdate,
         onClick: function(e) {
-          e.stopPropagation(), (0, d.ZDy)(async () => {
+          e.stopPropagation(), (0, u.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
-            return n => (0, r.jsx)(e, W(Q({}, n), {
+            return n => (0, r.jsx)(e, W(k({}, n), {
               guildId: o.id,
               existingSound: t
             }))
           })
         },
-        "aria-label": L.NW.string(L.t.bt75u7),
-        children: (0, r.jsx)(d.vdY, {
+        "aria-label": D.NW.string(D.t.bt75u7),
+        children: (0, r.jsx)(u.vdY, {
           size: "xs",
           color: "currentColor",
-          className: R.soundEditIcon
+          className: A.soundEditIcon
         })
-      }), (0, r.jsx)(d.P3F, {
-        className: R.soundRemove,
+      }), (0, r.jsx)(u.P3F, {
+        className: A.soundRemove,
         onClick: function(e) {
-          e.stopPropagation(), (0, d.h7j)(e => (0, r.jsx)(d.ConfirmModal, W(Q({
-            header: L.NW.formatToPlainString(L.t["PR/VbG"], {
-              soundName: f
+          e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, W(k({
+            header: D.NW.formatToPlainString(D.t["PR/VbG"], {
+              soundName: p
             }),
-            confirmText: L.NW.string(L.t.oyYWHB),
-            cancelText: L.NW.string(L.t["ETE/oK"]),
-            onConfirm: Z
+            confirmText: D.NW.string(D.t.oyYWHB),
+            cancelText: D.NW.string(D.t["ETE/oK"]),
+            onConfirm: L
           }, e), {
-            children: (0, r.jsx)(d.Text, {
+            children: (0, r.jsx)(u.Text, {
               variant: "text-md/normal",
-              children: L.NW.format(L.t["u6+CmJ"], {
-                soundName: f
+              children: D.NW.format(D.t["u6+CmJ"], {
+                soundName: p
               })
             })
           })))
         },
-        "aria-label": L.NW.string(L.t.N86XcH),
-        children: (0, r.jsx)(d.Dio, {
+        "aria-label": D.NW.string(D.t.N86XcH),
+        children: (0, r.jsx)(u.Dio, {
           size: "md",
           color: "currentColor",
-          className: R.soundEditIcon
+          className: A.soundEditIcon
         })
       })]
     }) : null]

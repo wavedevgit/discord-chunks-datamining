@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,18 +9,18 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(308083),
-  A = n(154662);
+  c = n(154662);
 
-function c(e) {
+function d(e) {
   let {
     playstyle: t,
     onUpdatePlaystyle: n
-  } = e, s = (0, l.dQu)(l.TVs.colors.WHITE), c = i.useMemo(() => Object.values((0, o.f4)()), []);
+  } = e, s = (0, l.dQu)(l.TVs.colors.WHITE), d = i.useMemo(() => Object.values((0, o.f4)()), []);
   return (0, r.jsx)("div", {
-    className: A.playstyleSelect,
-    children: c.map(e => (0, r.jsxs)(l.P3F, {
-      className: a()(A.playstyleOption, A.selectableOption, {
-        [A.selectedOption]: e.type === t
+    className: c.playstyleSelect,
+    children: d.map(e => (0, r.jsxs)(l.P3F, {
+      className: a()(c.playstyleOption, c.selectableOption, {
+        [c.selectedOption]: e.type === t
       }),
       onClick: () => n(e.type),
       children: [(0, r.jsx)(l.X6q, {
@@ -28,7 +28,7 @@ function c(e) {
         children: e.emoji
       }), (0, r.jsx)(l.X6q, {
         variant: "heading-md/medium",
-        className: A.playstyleTitle,
+        className: c.playstyleTitle,
         children: e.title
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
@@ -38,12 +38,12 @@ function c(e) {
         size: "md",
         color: "currentColor",
         secondaryColor: s.hex(),
-        className: A.checkmark
+        className: c.checkmark
       })]
     }, e.type))
   })
 }
-let d = e => {
+let u = e => {
   let {
     title: t,
     description: n,
@@ -52,22 +52,22 @@ let d = e => {
     error: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: A.slideContent,
+    className: c.slideContent,
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-xxl/medium",
-      className: A.title,
+      className: c.title,
       children: t
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: A.subtitle,
+      className: c.subtitle,
       children: n
     }), null != a && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "status-danger",
-      className: A.errorText,
+      className: c.errorText,
       children: a
-    }), (0, r.jsx)(c, {
+    }), (0, r.jsx)(d, {
       playstyle: s,
       onUpdatePlaystyle: i
     })]

@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -10,15 +10,15 @@ var i = n(442837),
   a = n(430824),
   l = n(723047),
   o = n(727843),
-  A = n(290348),
-  c = n(971792),
-  d = n(861345),
-  u = n(331146),
+  c = n(290348),
+  d = n(971792),
+  u = n(861345),
+  m = n(331146),
   g = n(798680),
-  f = n(388032),
-  m = n(174032);
+  p = n(388032),
+  h = n(174032);
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,70 +50,70 @@ function h(e, t) {
   }), e
 }
 
-function C() {
+function x() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, o.N)(), [C, b] = A.XZ(e, t), v = (0, c.Z)(t, e), {
-    setCurrentTab: x
-  } = (0, g.dw)(), N = () => x(g.ue.EMOJIS), j = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), E = null == j ? void 0 : j.getMaxRoleSubscriptionEmojiSlots();
+  } = (0, o.N)(), [x, j] = c.XZ(e, t), N = (0, d.Z)(t, e), {
+    setCurrentTab: v
+  } = (0, g.dw)(), _ = () => v(g.ue.EMOJIS), C = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), O = null == C ? void 0 : C.getMaxRoleSubscriptionEmojiSlots();
+
+  function y(e) {
+    null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
+  }
 
   function I(e) {
-    null == C ? b(new Set(e)) : b(new Set([...C, ...e]))
+    let t = new Set(x);
+    t.delete(e), j(t)
   }
-
-  function O(e) {
-    let t = new Set(C);
-    t.delete(e), b(t)
-  }
-  let y = (0, l.mY)();
+  let E = (0, l.mY)();
   return (0, r.jsxs)(s.hjN, {
-    title: f.NW.string(f.t.D0qeOz),
-    disabled: y,
+    title: p.NW.string(p.t.D0qeOz),
+    disabled: E,
     children: [(0, r.jsxs)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
-      className: m.formDescription,
-      disabled: y,
-      children: [f.NW.format(f.t.zuwel5, {
-        premiumEmojiMaximum: E
-      }), (0, r.jsx)("br", {}), f.NW.format(f.t.sEkgBg, {
-        handleTransitionToManageEmoji: N
+      className: h.formDescription,
+      disabled: E,
+      children: [p.NW.format(p.t.zuwel5, {
+        premiumEmojiMaximum: O
+      }), (0, r.jsx)("br", {}), p.NW.format(p.t.sEkgBg, {
+        handleTransitionToManageEmoji: _
       })]
-    }), (0, r.jsx)(u.E, {
-      tierEmojiIds: C,
+    }), (0, r.jsx)(m.E, {
+      tierEmojiIds: x,
       guildId: t,
       onRemoveEmoji: function(e) {
-        e.roles.filter(e => e !== (null == v ? void 0 : v.id)).length > 0 ? O(e.id) : (0, s.ZDy)(async () => {
+        e.roles.filter(e => e !== (null == N ? void 0 : N.id)).length > 0 ? I(e.id) : (0, s.ZDy)(async () => {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
-          return n => (0, r.jsx)(t, h(p({}, n), {
+          return n => (0, r.jsx)(t, b(f({}, n), {
             onConfirmDelete: () => {
-              O(e.id), n.onClose()
+              I(e.id), n.onClose()
             }
           }))
         })
       }
-    }), null != C && C.size > 0 ? (0, r.jsx)(s.LZC, {
+    }), null != x && x.size > 0 ? (0, r.jsx)(s.LZC, {
       size: 8
-    }) : null, (0, r.jsx)(d.s, {
+    }) : null, (0, r.jsx)(u.s, {
       onClick: function() {
         (0, s.ZDy)(async () => {
           let {
             EmojiAddModal: e
           } = await n.e("21112").then(n.bind(n, 301160));
-          return n => (0, r.jsx)(e, h(p({}, n), {
+          return n => (0, r.jsx)(e, b(f({}, n), {
             guildId: t,
-            initialTierEmojiIds: C,
-            onSubmit: I,
+            initialTierEmojiIds: x,
+            onSubmit: y,
             transitionToManageEmoji: () => {
-              N(), n.onClose()
+              _(), n.onClose()
             }
           }))
         })
       },
-      disabled: y,
-      children: f.NW.string(f.t.ouOOV1)
+      disabled: E,
+      children: p.NW.string(p.t.ouOOV1)
     })]
   })
 }

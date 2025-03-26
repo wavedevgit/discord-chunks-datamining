@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r, i = n(877921),
   s = n.n(i),
@@ -16,26 +16,26 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let A = ["pct_retained", "new_members", "visitors", "communicators"],
-  c = {},
-  d = null;
+let c = ["pct_retained", "new_members", "visitors", "communicators"],
+  d = {},
+  u = null;
 
-function u(e) {
+function m(e) {
   let {
     guildId: t,
     stats: n
   } = e;
-  d = null;
+  u = null;
   let r = {},
     i = {},
     a = n[0],
     l = n[1];
-  null != a && A.forEach(e => {
+  null != a && c.forEach(e => {
     if (null != a[e]) {
       let t = s()(e);
       null != l && 0 !== l[e] && (r["".concat(t, "Change")] = (a[e] - l[e]) * 100 / l[e]), i[t] = a[e]
     }
-  }), c[t] = function(e) {
+  }), d[t] = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -46,28 +46,28 @@ function u(e) {
       })
     }
     return e
-  }({}, i, r, c[t])
+  }({}, i, r, d[t])
 }
 
 function g(e) {
   let {
     error: t
   } = e;
-  d = t.code
+  u = t.code
 }
-class f extends(r = a.ZP.Store) {
+class p extends(r = a.ZP.Store) {
   getOverviewAnalytics(e) {
-    return c[e]
+    return d[e]
   }
   getError() {
-    return d
+    return u
   }
 }
-o(f, "displayName", "GuildSettingsAnalyticsStore");
-let m = new f(l.Z, {
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: u,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: u,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: u,
+o(p, "displayName", "GuildSettingsAnalyticsStore");
+let h = new p(l.Z, {
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: m,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: m,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: m,
   GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: g

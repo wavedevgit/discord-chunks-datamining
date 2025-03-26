@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 });
 var r = n(200651);
 n(192379);
@@ -11,17 +11,17 @@ var i = n(120356),
   l = n(388032),
   o = n(460449);
 
-function A(e) {
+function c(e) {
   let {
     className: t,
     enabled: n,
     previewCTA: i,
-    onPreview: A,
-    onToggle: c,
-    animateStatus: d,
-    firstLine: u,
+    onPreview: c,
+    onToggle: d,
+    animateStatus: u,
+    firstLine: m,
     secondLine: g,
-    disabled: f
+    disabled: p
   } = e;
   return (0, r.jsxs)("div", {
     className: s()(t, o.enableContainer),
@@ -31,7 +31,7 @@ function A(e) {
       width: 24,
       height: 24,
       className: s()(o.activeCircle, {
-        [o.animate]: d
+        [o.animate]: u
       })
     }) : (0, r.jsx)(a.vdY, {
       size: "custom",
@@ -39,32 +39,32 @@ function A(e) {
       width: 24,
       height: 24,
       className: s()(o.editCircle, {
-        [o.animate]: d
+        [o.animate]: u
       })
     }), (0, r.jsxs)("div", {
       className: o.enableDescription,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: u
+        children: m
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: g
       })]
     }), (0, r.jsxs)("div", {
       className: o.buttonContainer,
-      children: [null == A ? null : (0, r.jsx)(a.zxk, {
+      children: [null == c ? null : (0, r.jsx)(a.zxk, {
         className: o.previewButton,
         look: a.zxk.Looks.LINK,
         size: a.zxk.Sizes.SMALL,
-        onClick: A,
-        disabled: f,
+        onClick: c,
+        disabled: p,
         color: a.zxk.Colors.PRIMARY,
         children: null != i ? i : l.NW.string(l.t["5U0kLy"])
       }), (0, r.jsx)(a.zxk, {
-        disabled: null == c || f,
+        disabled: null == d || p,
         size: a.zxk.Sizes.SMALL,
         color: n ? a.zxk.Colors.RED : a.zxk.Colors.BRAND,
-        onClick: c,
+        onClick: d,
         children: n ? l.NW.string(l.t.R9GHyc) : l.NW.string(l.t.JFfinp)
       })]
     })]

@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => b
 }), n(47120), n(773603), n(230036), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,58 +9,58 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(279881),
-  A = n(510231),
-  c = n(92373),
-  d = n(308083),
-  u = n(388032),
+  c = n(510231),
+  d = n(92373),
+  u = n(308083),
+  m = n(388032),
   g = n(416786),
-  f = n(154662);
+  p = n(154662);
 
-function m(e) {
+function h(e) {
   let {
     gameApplicationIds: t,
     preventGameRemoval: n,
     onUpdateGames: s,
     minGames: o = 1,
-    error: m
+    error: h
   } = e, {
-    options: p,
-    matchSorterOptions: h
-  } = (0, A.h)(), C = i.useMemo(() => Array.from(t), [t]), b = i.useCallback(e => {
+    options: f,
+    matchSorterOptions: b
+  } = (0, c.h)(), x = i.useMemo(() => Array.from(t), [t]), j = i.useCallback(e => {
     !(e.length < o) && s(new Set(e))
-  }, [o, s]), v = i.useCallback(e => {
+  }, [o, s]), N = i.useCallback(e => {
     if (n) return;
     let r = new Set(t);
     t.has(e) ? r.delete(e) : r.add(e), s(r)
-  }, [n, t, s]), x = i.useCallback(() => null, []);
+  }, [n, t, s]), v = i.useCallback(() => null, []);
   return (0, r.jsx)("div", {
     className: g.inputContainer,
     children: (0, r.jsxs)(l.xJW, {
-      error: m,
+      error: h,
       children: [(0, r.jsx)(l.VcW, {
         multi: !0,
         hidePills: !0,
         autoFocus: !0,
-        wrapperClassName: a()(f.input, g.input),
-        options: p,
-        value: C,
-        placeholder: u.NW.string(u.t.acyezc),
-        onChange: b,
-        isDisabled: t.size === d.cm,
-        matchSorterOptions: h,
+        wrapperClassName: a()(p.input, g.input),
+        options: f,
+        value: x,
+        placeholder: m.NW.string(m.t.acyezc),
+        onChange: j,
+        isDisabled: t.size === u.cm,
+        matchSorterOptions: b,
         clearQueryOnSelect: !0,
         customPillContainerClassName: g.pills,
-        renderCustomPill: x
-      }), C.length > 0 && (0, r.jsxs)("div", {
+        renderCustomPill: v
+      }), x.length > 0 && (0, r.jsxs)("div", {
         className: g.gamesContainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
-          children: u.NW.string(u.t.PgOVsL)
+          children: m.NW.string(m.t.PgOVsL)
         }), (0, r.jsx)("div", {
           className: g.gamesList,
-          children: C.map(e => (0, r.jsx)(l.ua7, {
-            text: u.NW.string(u.t.C1K2XV),
+          children: x.map(e => (0, r.jsx)(l.ua7, {
+            text: m.NW.string(m.t.C1K2XV),
             shouldShow: n,
             tooltipContentClassName: g.tooltip,
             children: i => {
@@ -83,12 +83,12 @@ function m(e) {
                 }
                 return e
               }({}, i), a = a = {
-                children: (0, r.jsx)(c.Z, {
+                children: (0, r.jsx)(d.Z, {
                   applicationId: e,
                   imageContainerClassName: t.size > o ? g.clickableGame : void 0,
                   selected: !0,
                   locked: n,
-                  onClick: v
+                  onClick: N
                 }, e)
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -108,28 +108,28 @@ function m(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     guildId: t,
     selectedGameApplicationIds: n,
     onUpdateGames: s
   } = e, {
     topGames: a,
-    tryFetchTopGames: A
-  } = (0, o.I)(), d = a.get(t), [f, m] = i.useState(!1);
+    tryFetchTopGames: c
+  } = (0, o.I)(), u = a.get(t), [p, h] = i.useState(!1);
   i.useEffect(() => {
-    m(!0), A(t).finally(() => {
-      m(!1)
+    h(!0), c(t).finally(() => {
+      h(!1)
     })
-  }, [t, A]);
-  let p = i.useMemo(() => null == d ? [] : Object.keys(d).sort((e, t) => d[t].score - d[e].score), [d]),
-    h = i.useCallback(e => {
+  }, [t, c]);
+  let f = i.useMemo(() => null == u ? [] : Object.keys(u).sort((e, t) => u[t].score - u[e].score), [u]),
+    b = i.useCallback(e => {
       let t = new Set(n);
       n.has(e) ? t.delete(e) : t.add(e), s(t)
     }, [s, n]);
-  return f && null == d ? (0, r.jsx)(l.$jN, {
+  return p && null == u ? (0, r.jsx)(l.$jN, {
     className: g.loadingSpinner
-  }) : null == p || 0 === p.length ? null : (0, r.jsxs)(r.Fragment, {
+  }) : null == f || 0 === f.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("hr", {
       className: g.separator
     }), (0, r.jsxs)("div", {
@@ -137,49 +137,49 @@ function p(e) {
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: u.NW.string(u.t["0wEQQ0"])
+        children: m.NW.string(m.t["0wEQQ0"])
       }), (0, r.jsx)("div", {
         className: g.gamesList,
-        children: p.map(e => (0, r.jsx)(c.Z, {
+        children: f.map(e => (0, r.jsx)(d.Z, {
           applicationId: e,
           imageContainerClassName: g.clickableGame,
           selected: n.has(e),
-          onClick: h
+          onClick: b
         }, e))
       })]
     })]
   })
 }
-let h = e => {
+let b = e => {
   let {
     title: t,
     description: n,
     onUpdateGames: i,
     gameApplicationIds: s,
     minGames: o = 1,
-    error: A,
-    guildId: c,
-    includeSuggestedGames: d
-  } = e, u = s.size <= o;
+    error: c,
+    guildId: d,
+    includeSuggestedGames: u
+  } = e, m = s.size <= o;
   return (0, r.jsxs)("div", {
-    className: a()(f.slideContent, g.container),
+    className: a()(p.slideContent, g.container),
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-xxl/medium",
-      className: f.title,
+      className: p.title,
       children: t
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: f.subtitle,
+      className: p.subtitle,
       children: n
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(h, {
       minGames: o,
       gameApplicationIds: s,
-      preventGameRemoval: u,
+      preventGameRemoval: m,
       onUpdateGames: i,
-      error: A
-    }), d && null != c && (0, r.jsx)(p, {
-      guildId: c,
+      error: c
+    }), u && null != d && (0, r.jsx)(f, {
+      guildId: d,
       selectedGameApplicationIds: s,
       onUpdateGames: i
     })]

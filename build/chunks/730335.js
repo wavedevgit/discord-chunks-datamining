@@ -1,4 +1,5 @@
-/** Chunk was on 40551 **/
+/** Chunk was on 63327 **/
+"use strict";
 e.exports = {
   card: "card__5bdf8",
   cardStaticHeight: "cardStaticHeight__5bdf8",

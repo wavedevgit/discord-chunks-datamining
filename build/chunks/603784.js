@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => R
 });
 var r = n(200651),
   i = n(192379),
@@ -9,27 +9,27 @@ var r = n(200651),
   a = n.n(s),
   l = n(91192),
   o = n(442837),
-  A = n(780384),
-  c = n(481060),
-  d = n(726542),
-  u = n(100527),
+  c = n(780384),
+  d = n(481060),
+  u = n(726542),
+  m = n(100527),
   g = n(933557),
-  f = n(184301),
-  m = n(347475),
-  p = n(210887),
-  h = n(598077),
-  C = n(699516),
-  b = n(594174),
-  v = n(259580),
-  x = n(51144),
-  N = n(426563),
-  j = n(909746),
-  E = n(501801),
-  I = n(981631),
-  O = n(388032),
-  y = n(152041);
+  p = n(184301),
+  h = n(347475),
+  f = n(210887),
+  b = n(598077),
+  x = n(699516),
+  j = n(594174),
+  N = n(259580),
+  v = n(51144),
+  _ = n(426563),
+  C = n(909746),
+  O = n(501801),
+  y = n(981631),
+  I = n(388032),
+  E = n(152041);
 
-function w(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function w(e) {
   return e
 }
 
-function P(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class B extends i.PureComponent {
+class P extends i.PureComponent {
   render() {
     let {
       user: e,
@@ -68,64 +68,64 @@ class B extends i.PureComponent {
     } = this.props;
     return (0, r.jsxs)("span", {
       onContextMenu: t,
-      className: y.userHook,
-      children: [(0, r.jsx)(c.Text, {
+      className: E.userHook,
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/normal",
-        children: x.ZP.getUserTag(e, {
+        children: v.ZP.getUserTag(e, {
           mode: "username"
         })
-      }), "0" !== e.discriminator && (0, r.jsxs)(c.Text, {
+      }), "0" !== e.discriminator && (0, r.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: y.discrim,
+        className: E.discrim,
         children: ["#", e.discriminator]
       })]
     })
   }
 }
-let D = i.forwardRef((e, t) => {
+let w = i.forwardRef((e, t) => {
   let n;
   let {
     log: i,
     className: s,
     expanded: o,
-    guildId: p,
-    guild: x,
-    onChannelContextMenu: D,
-    onContentClick: T,
-    onHeaderClick: S,
-    onTargetContextMenu: L,
-    onUserContextMenu: R,
-    theme: Q
+    guildId: f,
+    guild: v,
+    onChannelContextMenu: w,
+    onContentClick: R,
+    onHeaderClick: Z,
+    onTargetContextMenu: D,
+    onUserContextMenu: A,
+    theme: k
   } = e, W = function() {
     let {
       changes: e
     } = i;
-    return (i.actionType !== I.vB8.DELETE || i.action === I.rsA.MEMBER_BAN_ADD || i.action === I.rsA.MEMBER_KICK || i.action === I.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, E.xO)(i, e))
-  }(), Z = y.headerDefault;
-  o ? Z = y.headerExpanded : W && (Z = y.headerClickable);
-  let k = i.timestampStart.calendar(),
-    M = i.timestampEnd.calendar();
-  n = k === M ? (0, r.jsx)(c.Text, {
-    className: y.timestamp,
+    return (i.actionType !== y.vB8.DELETE || i.action === y.rsA.MEMBER_BAN_ADD || i.action === y.rsA.MEMBER_KICK || i.action === y.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, O.xO)(i, e))
+  }(), L = E.headerDefault;
+  o ? L = E.headerExpanded : W && (L = E.headerClickable);
+  let M = i.timestampStart.calendar(),
+    G = i.timestampEnd.calendar();
+  n = M === G ? (0, r.jsx)(d.Text, {
+    className: E.timestamp,
     variant: "text-sm/normal",
-    children: k
-  }) : (0, r.jsxs)(c.Text, {
-    className: y.timestamp,
+    children: M
+  }) : (0, r.jsxs)(d.Text, {
+    className: E.timestamp,
     variant: "text-sm/normal",
-    children: [k, "—", M]
+    children: [M, "—", G]
   });
-  let _ = W ? S : I.dG4;
+  let U = W ? Z : y.dG4;
   return (0, r.jsx)(l.mh, {
     id: i.id,
     children: e => (0, r.jsxs)("div", {
       ref: t,
-      className: a()(y.auditLog, s),
-      children: [(0, r.jsxs)(c.P3F, P(w({
-        className: Z,
+      className: a()(E.auditLog, s),
+      children: [(0, r.jsxs)(d.P3F, T(S({
+        className: L,
         "aria-expanded": o,
-        onClick: _
+        onClick: U
       }, e), {
-        children: [(0, r.jsx)(E.mp, {
+        children: [(0, r.jsx)(O.mp, {
           action: i.action,
           actionType: i.actionType,
           targetType: i.targetType
@@ -137,79 +137,79 @@ let D = i.forwardRef((e, t) => {
               integration_type: n
             }
           } = i;
-          if (null != e && null != t) return (0, r.jsx)(c.yRy, {
-            preload: () => (0, f.Z)(t, e.getAvatarURL(p, 80), {
-              guildId: p
+          if (null != e && null != t) return (0, r.jsx)(d.yRy, {
+            preload: () => (0, p.Z)(t, e.getAvatarURL(f, 80), {
+              guildId: f
             }),
-            renderPopout: e => (0, r.jsx)(m.Z, P(w({}, e), {
+            renderPopout: e => (0, r.jsx)(h.Z, T(S({}, e), {
               userId: t,
-              guildId: p,
-              newAnalyticsLocations: [u.Z.AVATAR]
+              guildId: f,
+              newAnalyticsLocations: [m.Z.AVATAR]
             })),
             children: e => {
               var t;
-              return (0, r.jsx)(c.qEK, P(w({}, e), {
+              return (0, r.jsx)(d.qEK, T(S({}, e), {
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
-                className: y.avatar,
-                src: i.action === I.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === I.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === I.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === I.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, N.j)() : null === (t = i.user) || void 0 === t ? void 0 : t.getAvatarURL(p, 40),
+                className: E.avatar,
+                src: i.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, _.j)() : null === (t = i.user) || void 0 === t ? void 0 : t.getAvatarURL(f, 40),
                 "aria-hidden": !0,
-                size: c.EFr.SIZE_40
+                size: d.EFr.SIZE_40
               }))
             }
           });
           if (null != n) {
-            let e = d.Z.get(n);
+            let e = u.Z.get(n);
             if (null != e) {
-              let t = (0, A.wj)(Q) ? e.icon.darkSVG : e.icon.lightSVG;
-              return (0, r.jsx)(c.qEK, {
-                className: y.avatar,
+              let t = (0, c.wj)(k) ? e.icon.darkSVG : e.icon.lightSVG;
+              return (0, r.jsx)(d.qEK, {
+                className: E.avatar,
                 src: t,
                 "aria-hidden": !0,
-                size: c.EFr.SIZE_40
+                size: d.EFr.SIZE_40
               })
             }
           }
           return null
         }(), (0, r.jsxs)("div", {
-          className: y.timeWrap,
+          className: E.timeWrap,
           children: [(0, r.jsx)("div", {
-            className: y.title,
+            className: E.title,
             children: function() {
               let {
                 user: e,
                 target: t,
                 options: n
-              } = i, s = j.N5(i);
+              } = i, s = C.N5(i);
               return null != s ? (0, r.jsx)("div", {
-                className: y.overflowEllipsis,
-                children: O.NW.format(s, {
+                className: E.overflowEllipsis,
+                children: I.NW.format(s, {
                   user: e,
                   target: t.toString(),
                   userHook: (e, t) => {
-                    if (null != i.user) return (0, r.jsx)(B, {
+                    if (null != i.user) return (0, r.jsx)(P, {
                       user: i.user,
-                      onContextMenu: R
+                      onContextMenu: A
                     }, t);
                     if (null != i.options.integration_type) {
                       var n;
-                      let e = d.Z.get(i.options.integration_type);
-                      return null !== (n = null == e ? void 0 : e.name) && void 0 !== n ? n : O.NW.string(O.t["n+olu7"])
+                      let e = u.Z.get(i.options.integration_type);
+                      return null !== (n = null == e ? void 0 : e.name) && void 0 !== n ? n : I.NW.string(I.t["n+olu7"])
                     }
-                    return O.NW.string(O.t["30mdIy"])
+                    return I.NW.string(I.t["30mdIy"])
                   },
-                  targetHook: (e, t) => i.targetType === I.KFR.USER && i.target instanceof h.Z ? (0, r.jsx)(B, {
+                  targetHook: (e, t) => i.targetType === y.KFR.USER && i.target instanceof b.Z ? (0, r.jsx)(P, {
                     user: i.target,
-                    onContextMenu: L
+                    onContextMenu: D
                   }, t) : (0, r.jsx)("span", {
-                    onContextMenu: L,
+                    onContextMenu: D,
                     children: e
                   }, t),
                   count: n.count,
-                  channel: null == n.channel || "string" == typeof n.channel ? n.channel : (0, g.F6)(n.channel, b.default, C.Z, !0),
+                  channel: null == n.channel || "string" == typeof n.channel ? n.channel : (0, g.F6)(n.channel, j.default, x.Z, !0),
                   channelHook: (e, t) => (0, r.jsx)("span", {
-                    onContextMenu: D,
+                    onContextMenu: w,
                     children: e
                   }, t),
                   subtarget: n.subtarget
@@ -217,25 +217,25 @@ let D = i.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), W ? (0, r.jsx)(v.Z, {
-          className: y.expand,
-          foreground: y.expandForeground,
+        }), W ? (0, r.jsx)(N.Z, {
+          className: E.expand,
+          foreground: E.expandForeground,
           expanded: o,
           "aria-hidden": !0
         }) : null]
       })), o ? (0, r.jsx)("div", {
-        className: y.divider
-      }) : null, o && null != x ? (0, r.jsx)(E.tP, {
+        className: E.divider
+      }) : null, o && null != v ? (0, r.jsx)(O.tP, {
         log: i,
-        guild: x,
-        onContentClick: T
+        guild: v,
+        onContentClick: R
       }) : null]
     })
   })
 });
-D.displayName = "GuildSettingsAuditLogEntry";
-let T = o.ZP.connectStores([p.Z], () => ({
-  theme: p.Z.theme
+w.displayName = "GuildSettingsAuditLogEntry";
+let R = o.ZP.connectStores([f.Z], () => ({
+  theme: f.Z.theme
 }), {
   forwardRef: !0
-})(D)
+})(w)

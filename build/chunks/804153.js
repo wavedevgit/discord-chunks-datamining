@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,15 +9,15 @@ var r = n(200651),
   a = n(481060),
   l = n(497321),
   o = n(484614),
-  A = n(246946),
-  c = n(434404),
-  d = n(999382),
-  u = n(24318),
+  c = n(246946),
+  d = n(434404),
+  u = n(999382),
+  m = n(24318),
   g = n(822693),
-  f = n(388032),
-  m = n(67446);
+  p = n(388032),
+  h = n(67446);
 
-function p(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class h extends i.PureComponent {
+class b extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       widgetEnabled: n
@@ -43,31 +43,31 @@ class h extends i.PureComponent {
       widgetEnabled: n
     } = this.props;
     return (0, r.jsxs)(a.xJW, {
-      title: f.NW.string(f.t.LUo0Q0),
+      title: p.NW.string(p.t.LUo0Q0),
       children: [(0, r.jsx)(g.m, {
         guildId: e.id,
         widgetEnabled: n,
         widgetChannelId: t,
-        className: m.spacing
+        className: h.spacing
       }), (0, r.jsx)(a.R94, {
         type: a.geA.DESCRIPTION,
-        children: f.NW.string(f.t.LxVR9P)
+        children: p.NW.string(p.t.LxVR9P)
       })]
     })
   }
   renderAPIInfo(e) {
-    let t = (0, u.S)(e.id);
+    let t = (0, m.S)(e.id);
     return (0, r.jsxs)("div", {
-      className: m.infoWrapper,
+      className: h.infoWrapper,
       children: [(0, r.jsx)(a.xJW, {
-        title: f.NW.string(f.t.TRyLUl),
-        className: m.infoItem,
+        title: p.NW.string(p.t.TRyLUl),
+        className: h.infoItem,
         children: (0, r.jsx)(o.Z, {
           value: e.id
         })
       }), (0, r.jsx)(a.xJW, {
-        title: f.NW.string(f.t.VECJcH),
-        className: m.infoItem,
+        title: p.NW.string(p.t.VECJcH),
+        className: h.infoItem,
         children: (0, r.jsx)(o.Z, {
           value: t
         })
@@ -75,21 +75,21 @@ class h extends i.PureComponent {
     })
   }
   renderWidget(e) {
-    let t = (0, u.a)(e.id);
+    let t = (0, m.a)(e.id);
     return (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: m.infoWrapper,
+        className: h.infoWrapper,
         children: [(0, r.jsxs)(a.xJW, {
-          className: m.infoItem,
-          title: f.NW.string(f.t.XVGbn5),
+          className: h.infoItem,
+          title: p.NW.string(p.t.XVGbn5),
           children: [(0, r.jsx)(o.Z, {
             value: t
           }), (0, r.jsx)(a.R94, {
             type: a.geA.DESCRIPTION,
-            children: f.NW.format(f.t["+baN19"], {})
+            children: p.NW.format(p.t["+baN19"], {})
           })]
         }), (0, r.jsx)("img", {
-          className: m.infoItem,
+          className: h.infoItem,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -103,44 +103,44 @@ class h extends i.PureComponent {
     } = this.props;
     return null == e ? null : this.props.hide ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
       tag: a.RB0.H1,
-      title: f.NW.string(f.t.qlhNb2),
+      title: p.NW.string(p.t.qlhNb2),
       children: [this.renderToggle(), this.renderChannelSelect(e), (0, r.jsx)(a.$i$, {
-        className: m.divider
+        className: h.divider
       }), this.renderAPIInfo(e), (0, r.jsx)(a.$i$, {
-        className: m.divider
+        className: h.divider
       }), this.renderWidget(e)]
     })
   }
   constructor(...e) {
-    super(...e), p(this, "state", {
+    super(...e), f(this, "state", {
       internalEnabled: this.props.widgetEnabled,
       widgetEnabledProp: this.props.widgetEnabled
-    }), p(this, "renderToggle", () => (0, r.jsx)(a.j7V, {
-      className: m.spacing,
+    }), f(this, "renderToggle", () => (0, r.jsx)(a.j7V, {
+      className: h.spacing,
       value: this.state.internalEnabled,
       onChange: this.handleToggleWidget,
-      children: f.NW.string(f.t.NR6hub)
-    })), p(this, "handleToggleWidget", e => {
+      children: p.NW.string(p.t.NR6hub)
+    })), f(this, "handleToggleWidget", e => {
       let {
         guild: t,
         widgetChannelId: n
       } = this.props;
       null != t && (this.setState({
         internalEnabled: e
-      }), c.Z.updateEmbed(t.id, e, n))
+      }), d.Z.updateEmbed(t.id, e, n))
     })
   }
 }
-let C = s.ZP.connectStores([d.Z, A.Z], () => {
+let x = s.ZP.connectStores([u.Z, c.Z], () => {
   let {
     guild: e,
     embedChannelId: t,
     embedEnabled: n
-  } = d.Z.getProps();
+  } = u.Z.getProps();
   return {
     guild: e,
     widgetChannelId: t,
     widgetEnabled: n,
-    hide: A.Z.enabled
+    hide: c.Z.enabled
   }
-})(h)
+})(b)

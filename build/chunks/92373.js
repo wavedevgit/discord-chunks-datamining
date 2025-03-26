@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -9,69 +9,69 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(442837),
-  A = n(210753),
-  c = n(77498),
-  d = n(388032),
-  u = n(564918);
+  c = n(210753),
+  d = n(77498),
+  u = n(388032),
+  m = n(564918);
 let g = function(e) {
   let {
     applicationId: t,
     imageContainerClassName: n,
     onClick: s,
     selected: g,
-    locked: f = !1,
-    otherGamesCount: m = 0
-  } = e, p = (0, l.dQu)(l.TVs.colors.WHITE), {
-    isFetching: h,
-    coverImageUrl: C
-  } = (0, A.$)(t, {
+    locked: p = !1,
+    otherGamesCount: h = 0
+  } = e, f = (0, l.dQu)(l.TVs.colors.WHITE), {
+    isFetching: b,
+    coverImageUrl: x
+  } = (0, c.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), b = (0, o.e7)([c.Z], () => {
+  }), j = (0, o.e7)([d.Z], () => {
     var e, n;
-    return null !== (n = null === (e = c.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
-  }), v = i.useCallback(() => {
+    return null !== (n = null === (e = d.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
+  }), N = i.useCallback(() => {
     null == s || s(t)
-  }, [t, s]), x = i.useMemo(() => h ? null : null == C ? (0, r.jsx)("div", {
-    className: u.gameUnknownImage,
+  }, [t, s]), v = i.useMemo(() => b ? null : null == x ? (0, r.jsx)("div", {
+    className: m.gameUnknownImage,
     children: (0, r.jsx)(l.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
-    className: u.gameImage,
-    alt: b,
-    src: C
-  }), [C, h, b]);
+    className: m.gameImage,
+    alt: j,
+    src: x
+  }), [x, b, j]);
   return (0, r.jsxs)("div", {
-    className: u.selectedGame,
+    className: m.selectedGame,
     children: [(0, r.jsxs)(l.P3F, {
-      onClick: v,
-      className: a()(n, h ? u.gameImageLoading : void 0, u.gameImageBackground),
+      onClick: N,
+      className: a()(n, b ? m.gameImageLoading : void 0, m.gameImageBackground),
       children: [g && (0, r.jsx)("div", {
-        className: u.checkBackground,
+        className: m.checkBackground,
         children: (0, r.jsx)(l.owK, {
           size: "md",
           color: "currentColor",
-          secondaryColor: p.hex(),
-          className: a()(u.selectedGameCheck, {
-            [u.selectedGameCheckLocked]: f
+          secondaryColor: f.hex(),
+          className: a()(m.selectedGameCheck, {
+            [m.selectedGameCheckLocked]: p
           })
         })
-      }), x, m > 0 && (0, r.jsx)("div", {
-        className: u.remainingGame,
+      }), v, h > 0 && (0, r.jsx)("div", {
+        className: m.remainingGame,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          children: d.NW.format(d.t.F6iMs7, {
-            count: m
+          children: u.NW.format(u.t.F6iMs7, {
+            count: h
           })
         })
       })]
     }), (0, r.jsxs)(l.Text, {
-      className: u.gameName,
+      className: m.gameName,
       variant: "text-xs/normal",
       color: "header-primary",
-      children: [b, f && (0, r.jsx)(l.mBM, {
+      children: [j, p && (0, r.jsx)(l.mBM, {
         size: "xxs"
       })]
     })]

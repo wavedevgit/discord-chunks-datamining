@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
 var r = n(200651),
   i = n(192379),
@@ -9,13 +9,13 @@ var r = n(200651),
   a = n(471445),
   l = n(8426),
   o = n(388032),
-  A = n(668813);
-let c = function(e) {
+  c = n(668813);
+let d = function(e) {
   var t;
   let {
     channel: n,
-    end: c
-  } = e, d = i.useCallback(() => {
+    end: d
+  } = e, u = i.useCallback(() => {
     (0, l.r2)({
       channelId: n.id,
       title: n.name,
@@ -23,28 +23,28 @@ let c = function(e) {
       emoji: null,
       icon: null
     })
-  }, [n]), u = null !== (t = (0, a.KS)(n)) && void 0 !== t ? t : s.VL1;
+  }, [n]), m = null !== (t = (0, a.KS)(n)) && void 0 !== t ? t : s.VL1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: A.suggestedChannel,
-      children: [(0, r.jsx)(u, {
-        className: A.suggestedChannelIcon
+      className: c.suggestedChannel,
+      children: [(0, r.jsx)(m, {
+        className: c.suggestedChannelIcon
       }), (0, r.jsx)(s.Text, {
-        className: A.suggestedChannelText,
+        className: c.suggestedChannelText,
         variant: "text-sm/normal",
         children: n.name
       }), (0, r.jsx)(s.zxk, {
-        className: A.suggestedChannelButton,
+        className: c.suggestedChannelButton,
         size: s.zxk.Sizes.MIN,
-        onClick: d,
+        onClick: u,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "always-white",
           children: o.NW.string(o.t.OYkgVl)
         })
       })]
-    }), c && (0, r.jsx)("div", {
-      className: A.suggestedSeparator
+    }), d && (0, r.jsx)("div", {
+      className: c.suggestedSeparator
     })]
   })
 }

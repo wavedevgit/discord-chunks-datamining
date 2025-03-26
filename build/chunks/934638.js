@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => m
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,38 +9,38 @@ var r = n(200651),
   a = n(442837),
   l = n(481060),
   o = n(434404),
-  A = n(999382),
-  c = n(388032),
-  d = n(659116);
+  c = n(999382),
+  d = n(388032),
+  u = n(659116);
 
-function u(e) {
+function m(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, u = t.id, g = i.useCallback(e => {
+  } = e, m = t.id, g = i.useCallback(e => {
     o.Z.updateGuild({
       description: e
-    }), o.Z.updateGuildProfile(u, {
+    }), o.Z.updateGuildProfile(m, {
       description: e
     })
-  }, [u]), f = (0, a.e7)([A.Z], () => A.Z.getError("description"));
+  }, [m]), p = (0, a.e7)([c.Z], () => c.Z.getError("description"));
   return (0, r.jsxs)(l.hjN, {
-    className: d.section,
+    className: u.section,
     children: [(0, r.jsxs)("div", {
-      className: d.sectionHeader,
+      className: u.sectionHeader,
       children: [(0, r.jsx)(l.vwX, {
-        children: c.NW.string(c.t.Z27SCQ)
+        children: d.NW.string(d.t.Z27SCQ)
       }), (0, r.jsx)(l.R94, {
         type: l.geA.DESCRIPTION,
-        children: c.NW.string(c.t.pw0MIi)
+        children: d.NW.string(d.t.pw0MIi)
       })]
     }), (0, r.jsx)(l.Kx8, {
       value: t.description,
-      placeholder: c.NW.string(c.t.Nvfows),
+      placeholder: d.NW.string(d.t.Nvfows),
       onChange: g,
       maxLength: s.Us,
       disabled: !n,
-      error: f
+      error: p
     })]
   })
 }

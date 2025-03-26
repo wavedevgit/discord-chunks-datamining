@@ -1,9 +1,9 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  E6: () => u,
+  E6: () => m,
   f4: () => g,
-  mw: () => d
+  mw: () => u
 });
 var r = n(200651),
   i = n(481060),
@@ -11,17 +11,17 @@ var r = n(200651),
   a = n(48217),
   l = n(26323),
   o = n(267642),
-  A = n(434404),
-  c = n(981631);
+  c = n(434404),
+  d = n(981631);
 
-function d(e) {
+function u(e) {
   let {
     uploadType: t,
     maxFileSizeBytes: s,
     onComplete: a,
     showUpsellHeader: l = !0,
     analyticsLocation: o,
-    analyticsLocations: A
+    analyticsLocations: c
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -50,25 +50,25 @@ function d(e) {
       uploadType: t,
       showUpsellHeader: l,
       analyticsLocation: o,
-      analyticsLocations: A
+      analyticsLocations: c
     }, n))
   })
 }
 
-function u(e) {
+function m(e) {
   let {
     guild: t,
     analyticsLocations: n,
     analyticsSection: r,
     analyticsObject: i,
     perks: a,
-    targetPremiumGuildTier: A
+    targetPremiumGuildTier: c
   } = e;
-  (0, s.yw)(c.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  (0, s.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
     location: {
       section: r,
-      object: c.qAy.LEARN_MORE,
-      objectType: A ? (0, o.ge)(A) : void 0
+      object: d.qAy.LEARN_MORE,
+      objectType: c ? (0, o.ge)(c) : void 0
     },
     guild_id: t.id,
     location_stack: n
@@ -77,7 +77,7 @@ function u(e) {
     analyticsSourceLocation: {
       section: r,
       object: i,
-      page: c.ZY5.GUILD_SETTINGS
+      page: d.ZY5.GUILD_SETTINGS
     },
     guild: t,
     perks: a
@@ -87,14 +87,14 @@ function u(e) {
 function g(e, t, n, r) {
   let i = null == r ? void 0 : r.type,
     s = {
-      page: c.ZY5.GUILD_SETTINGS,
-      section: c.jXE.ANIMATED_GUILD_BANNER_UPSELL,
+      page: d.ZY5.GUILD_SETTINGS,
+      section: d.jXE.ANIMATED_GUILD_BANNER_UPSELL,
       object: "temp"
     };
   if (null != i && null != n) {
-    if ("image/gif" !== i || e.hasFeature(c.oNc.ANIMATED_BANNER)) {
-      if (!e.hasFeature(c.oNc.BANNER)) {
-        s.object = c.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
+    if ("image/gif" !== i || e.hasFeature(d.oNc.ANIMATED_BANNER)) {
+      if (!e.hasFeature(d.oNc.BANNER)) {
+        s.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
           guild: e,
           analyticsLocations: t,
           analyticsLocation: s,
@@ -104,7 +104,7 @@ function g(e, t, n, r) {
         return
       }
     } else {
-      s.object = c.qAy.GIF_CROPPING_MODAL, (0, a.c)({
+      s.object = d.qAy.GIF_CROPPING_MODAL, (0, a.c)({
         guild: e,
         analyticsLocations: t,
         analyticsLocation: s,
@@ -114,7 +114,7 @@ function g(e, t, n, r) {
       return
     }
   }
-  A.Z.updateGuild({
+  c.Z.updateGuild({
     banner: n
   })
 }

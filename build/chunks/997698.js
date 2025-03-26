@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  L: () => c
+  L: () => d
 });
 var r = n(200651);
 n(192379);
@@ -10,18 +10,18 @@ var i = n(793030),
   a = n(760632),
   l = n(578053),
   o = n(388032),
-  A = n(328785);
+  c = n(328785);
 
-function c(e) {
+function d(e) {
   let {
     canManageGuild: t,
     guild: n
   } = e;
   return (0, r.jsxs)(s.hjN, {
     children: [(0, r.jsxs)("div", {
-      className: A.inactiveSelects,
+      className: c.inactiveSelects,
       children: [(0, r.jsxs)("div", {
-        className: A.halfWidth,
+        className: c.halfWidth,
         children: [(0, r.jsx)(s.vwX, {
           children: o.NW.string(o.t.KuYcnZ)
         }), (0, r.jsx)(l.g, {
@@ -30,7 +30,7 @@ function c(e) {
           afkChannelId: n.afkChannelId
         })]
       }), (0, r.jsxs)("div", {
-        className: A.halfWidth,
+        className: c.halfWidth,
         children: [(0, r.jsx)(s.vwX, {
           children: o.NW.string(o.t.brhYaW)
         }), (0, r.jsx)(a.M, {

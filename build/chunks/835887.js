@@ -1,45 +1,34 @@
-/** Chunk was on 10396 **/
-"use strict";
-n.d(t, {
-  Z: () => g
+/** Chunk was on 55666 **/
+B.d(g, {
+  Z: () => P
 });
-var r = n(200651),
-  i = n(120356),
-  s = n.n(i),
-  a = n(481060),
-  l = n(550271),
-  o = n(434404),
-  A = n(254925),
-  c = n(947051),
-  d = n(388032),
-  u = n(935921);
-let g = function(e) {
+var C = B(200651),
+  Q = B(192379),
+  w = B(481060),
+  D = B(434404),
+  f = B(755641),
+  E = B(947051),
+  v = B(388032),
+  I = B(935921);
+
+function P(A) {
   let {
-    className: t,
-    guildId: n
-  } = e;
-  return (0, r.jsxs)("div", {
-    className: t,
-    children: [(0, r.jsx)(a.vwX, {
-      className: u.sectionTitle,
-      children: d.NW.string(c.Z.pb7lpK)
-    }), (0, r.jsx)("div", {
-      className: u.pickerGrid,
-      children: A.QV.map(t => (0, r.jsx)(a.P3F, {
-        className: s()(u.pickerItem, {
-          [u.pickerItemSelected]: t === e.badge
-        }),
-        onClick: () => {
-          o.Z.updateGuildProfile(n, {
-            badge: t
-          })
-        },
-        children: (0, r.jsx)(l.A, {
-          badge: t,
-          width: 32,
-          height: 32
-        })
-      }, t))
+    className: g,
+    guildId: B,
+    selectedBadge: P
+  } = A, r = Q.useCallback(A => {
+    D.Z.updateGuildProfile(B, {
+      badge: A
+    })
+  }, [B]);
+  return (0, C.jsxs)("div", {
+    className: g,
+    children: [(0, C.jsx)(w.vwX, {
+      className: I.sectionTitle,
+      children: v.NW.string(E.Z.pb7lpK)
+    }), (0, C.jsx)(f.g, {
+      onBadgeClicked: r,
+      selectedBadge: P
     })]
   })
 }

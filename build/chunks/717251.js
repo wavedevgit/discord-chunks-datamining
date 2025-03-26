@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -11,31 +11,31 @@ var i = n(120356),
   l = n(2150),
   o = n(301581);
 
-function A(e) {
+function c(e) {
   let {
     title: t,
     description: n,
     action: i,
-    highlightColor: A = l.q.NONE,
-    selected: c = !1,
-    subsection: d = null,
-    onClick: u,
+    highlightColor: c = l.q.NONE,
+    selected: d = !1,
+    subsection: u = null,
+    onClick: m,
     className: g,
-    disabled: f
+    disabled: p
   } = e;
   return (0, r.jsxs)("div", {
     className: s()(o.container, g),
     children: [(0, r.jsx)(a.P3F, {
       className: s()(o.clickableContainer, {
-        [o.noAction]: null == u,
-        [o.disabled]: f
+        [o.noAction]: null == m,
+        [o.disabled]: p
       }, g),
-      onClick: f ? void 0 : u,
+      onClick: p ? void 0 : m,
       children: (0, r.jsxs)("div", {
-        className: s()(o.backgroundModifierContainer, o[A], {
-          [o.selected]: c,
-          [o.disabled]: f,
-          [o.noAction]: null == u
+        className: s()(o.backgroundModifierContainer, o[c], {
+          [o.selected]: d,
+          [o.disabled]: p,
+          [o.noAction]: null == m
         }),
         children: [(0, r.jsxs)("div", {
           className: o.settingsDescriptionContainer,
@@ -54,9 +54,9 @@ function A(e) {
           children: i
         })]
       })
-    }), null != d && (0, r.jsx)("div", {
+    }), null != u && (0, r.jsx)("div", {
       className: o.subsectionContainer,
-      children: d
+      children: u
     })]
   })
 }

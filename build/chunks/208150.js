@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -10,137 +10,137 @@ var i = n(442837),
   a = n(100527),
   l = n(906732),
   o = n(623624),
-  A = n(372444),
-  c = n(852679),
-  d = n(926491),
-  u = n(145499),
+  c = n(372444),
+  d = n(852679),
+  u = n(926491),
+  m = n(145499),
   g = n(424218),
-  f = n(267642),
-  m = n(63063),
-  p = n(999382),
-  h = n(981631),
-  C = n(611480),
-  b = n(388032),
-  v = n(47104);
-let x = {
-    page: h.ZY5.GUILD_SETTINGS,
-    section: h.jXE.GUILD_SETTINGS_STICKERS,
-    object: h.qAy.BOOSTING_BANNER
+  p = n(267642),
+  h = n(63063),
+  f = n(999382),
+  b = n(981631),
+  x = n(611480),
+  j = n(388032),
+  N = n(47104);
+let v = {
+    page: b.ZY5.GUILD_SETTINGS,
+    section: b.jXE.GUILD_SETTINGS_STICKERS,
+    object: b.qAy.BOOSTING_BANNER
   },
-  N = e => {
+  _ = e => {
     let {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, l.ZP)(), i = (0, f.vn)(t.id)[h.Eu4.TIER_1] - t.premiumSubscriberCount;
+    } = (0, l.ZP)(), i = (0, p.vn)(t.id)[b.Eu4.TIER_1] - t.premiumSubscriberCount;
     return (0, r.jsxs)("div", {
-      className: v.upsellContainer,
+      className: N.upsellContainer,
       children: [(0, r.jsx)(s.X6q, {
-        className: v.upsellHeader,
+        className: N.upsellHeader,
         variant: "heading-xl/semibold",
-        children: b.NW.string(b.t.hzCkys)
+        children: j.NW.string(j.t.hzCkys)
       }), (0, r.jsx)(s.Text, {
-        className: v.upsellDescription,
+        className: N.upsellDescription,
         variant: "text-md/normal",
-        children: b.NW.string(b.t.jcesAA)
+        children: j.NW.string(j.t.jcesAA)
       }), (0, r.jsxs)("div", {
-        className: v.upsellButtons,
+        className: N.upsellButtons,
         children: [(0, r.jsx)(s.zxk, {
-          className: v.upsellButtonPrimary,
-          innerClassName: v.upsellButton,
+          className: N.upsellButtonPrimary,
+          innerClassName: N.upsellButton,
           color: s.zxk.Colors.WHITE,
-          onClick: () => (0, c.Z)({
+          onClick: () => (0, d.Z)({
             analyticsLocations: n,
-            analyticsLocation: x,
+            analyticsLocation: v,
             guildId: t.id,
             totalNumberOfSlotsToAssign: i
           }),
-          children: b.NW.string(b.t.Q5dbTk)
+          children: j.NW.string(j.t.Q5dbTk)
         }), (0, r.jsx)(s.zxk, {
-          innerClassName: v.upsellButton,
+          innerClassName: N.upsellButton,
           color: s.zxk.Colors.WHITE,
           onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
-              section: h.jXE.GUILD_SETTINGS_STICKERS
+              section: b.jXE.GUILD_SETTINGS_STICKERS
             }
           }),
-          children: b.NW.string(b.t.hvVgAQ)
+          children: j.NW.string(j.t.hvVgAQ)
         })]
       })]
     })
   },
-  j = () => (0, r.jsxs)(s.hjN, {
-    title: b.NW.string(b.t["9N2OWF"]),
+  C = () => (0, r.jsxs)(s.hjN, {
+    title: j.NW.string(j.t["9N2OWF"]),
     children: [(0, r.jsx)(s.R94, {
       type: s.geA.DESCRIPTION,
-      children: b.NW.format(b.t.hxLvi4, {
-        fileSize: (0, g.IC)(C.Ht, {
+      children: j.NW.format(j.t.hxLvi4, {
+        fileSize: (0, g.IC)(x.Ht, {
           useKibibytes: !0
         })
       })
     }), (0, r.jsx)(s.R94, {
       type: s.geA.DESCRIPTION,
-      children: b.NW.format(b.t.UBj0aW, {
-        articleUrl: m.Z.getArticleURL(h.BhN.STICKERS_UPLOAD)
+      children: j.NW.format(j.t.UBj0aW, {
+        articleUrl: h.Z.getArticleURL(b.BhN.STICKERS_UPLOAD)
       })
     })]
   }),
-  E = e => {
+  O = e => {
     let t, n, i, {
         guild: s,
         guildStickers: a
       } = e,
       l = s.premiumTier,
-      o = (0, f.Qi)(a, l),
-      c = (0, f.FZ)(l, s.id),
-      d = (0, f.A3)(l),
-      u = a.length;
-    return null == c || l === h.Eu4.TIER_3 || o > 0 ? null : (u > d ? (t = b.NW.formatToPlainString(b.t.ZtAY1d, {
-      level: c
-    }), n = b.NW.formatToPlainString(b.t["13hOWl"], {
-      level: c
-    }), i = h.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = b.NW.string(b.t.zT9Sxc), n = b.NW.formatToPlainString(b.t.YaW9wM, {
-      level: c,
-      numAdditional: (0, f.ig)(c)
-    }), i = h.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(A.Z, {
+      o = (0, p.Qi)(a, l),
+      d = (0, p.FZ)(l, s.id),
+      u = (0, p.A3)(l),
+      m = a.length;
+    return null == d || l === b.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = j.NW.formatToPlainString(j.t.ZtAY1d, {
+      level: d
+    }), n = j.NW.formatToPlainString(j.t["13hOWl"], {
+      level: d
+    }), i = b.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = j.NW.string(j.t.zT9Sxc), n = j.NW.formatToPlainString(j.t.YaW9wM, {
+      level: d,
+      numAdditional: (0, p.ig)(d)
+    }), i = b.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
       header: t,
       text: n,
       guild: s,
       analyticsLocation: {
-        page: h.ZY5.GUILD_SETTINGS,
-        section: h.jXE.GUILD_SETTINGS_STICKERS,
+        page: b.ZY5.GUILD_SETTINGS,
+        section: b.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, f.ge)(c)
+        objectType: (0, p.ge)(d)
       }
     }))
   },
-  I = () => {
-    let e = (0, i.e7)([p.Z], () => p.Z.getGuild()),
-      t = (0, i.e7)([d.Z], () => {
+  y = () => {
+    let e = (0, i.e7)([f.Z], () => f.Z.getGuild()),
+      t = (0, i.e7)([u.Z], () => {
         var t;
-        return null != e && null !== (t = d.Z.getStickersByGuildId(e.id)) && void 0 !== t ? t : []
+        return null != e && null !== (t = u.Z.getStickersByGuildId(e.id)) && void 0 !== t ? t : []
       }, [e]),
       {
         analyticsLocations: n
       } = (0, l.ZP)(a.Z.STICKERS);
     if (null == e) return null;
-    let o = e.premiumTier !== h.Eu4.NONE || t.length > 0;
+    let o = e.premiumTier !== b.Eu4.NONE || t.length > 0;
     return (0, r.jsx)(l.Gt, {
       value: n,
       children: (0, r.jsxs)(s.hjN, {
-        title: b.NW.string(b.t.R5nQkZ),
+        title: j.NW.string(j.t.R5nQkZ),
         tag: s.RB0.H1,
         children: [o ? (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(E, {
+          children: [(0, r.jsx)(O, {
             guild: e,
             guildStickers: t
-          }), (0, r.jsx)(j, {})]
-        }) : (0, r.jsx)(N, {
+          }), (0, r.jsx)(C, {})]
+        }) : (0, r.jsx)(_, {
           guild: e
         }), (0, r.jsx)(s.$i$, {
-          className: v.divider
-        }), (0, r.jsx)(u.Z, {
+          className: N.divider
+        }), (0, r.jsx)(m.Z, {
           guild: e
         })]
       })

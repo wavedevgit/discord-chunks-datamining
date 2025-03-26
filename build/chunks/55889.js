@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -9,9 +9,9 @@ var r = n(200651),
   a = n(941524),
   l = n(563115),
   o = n(388032),
-  A = n(367899);
+  c = n(367899);
 
-function c(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function c(e) {
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,35 +42,35 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = i.memo(function(e) {
+let m = i.memo(function(e) {
   let {
     rule: t,
     onlyRoles: n = !1,
     onChangeRule: i
-  } = e, u = (0, r.jsx)(a.Z, {
+  } = e, m = (0, r.jsx)(a.Z, {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
-    onChange: (e, n) => i(d(c({}, t), {
+    onChange: (e, n) => i(u(d({}, t), {
       exemptChannels: e,
       exemptRoles: n
     })),
     disableEveryoneRole: !0,
     includeRoleRestrictedPrivateChannels: !0
   });
-  return n && (u = (0, r.jsx)(l.Z, {
+  return n && (m = (0, r.jsx)(l.Z, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
-    onChange: e => i(d(c({}, t), {
+    onChange: e => i(u(d({}, t), {
       exemptRoles: e
     })),
     placeholder: o.NW.string(o.t.aFO1Iy),
     disableEveryoneRole: !0
   })), (0, r.jsxs)(s.xJW, {
-    children: [u, (0, r.jsx)(s.Text, {
+    children: [m, (0, r.jsx)(s.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",
-      className: A.exemptionHint,
+      className: c.exemptionHint,
       children: o.NW.string(o.t.GKlYaW)
     })]
   })

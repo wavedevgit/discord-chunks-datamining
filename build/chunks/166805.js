@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  P: () => j
+  P: () => C
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -9,116 +9,116 @@ var r = n(200651),
   a = n(793030),
   l = n(442837),
   o = n(481060),
-  A = n(497321),
-  c = n(484614),
-  d = n(314852),
-  u = n(65361),
+  c = n(497321),
+  d = n(484614),
+  u = n(314852),
+  m = n(65361),
   g = n(246946),
-  f = n(330010),
-  m = n(600553),
-  p = n(999382),
-  h = n(800223),
-  C = n(24318),
-  b = n(822693),
-  v = n(388032),
-  x = n(922363);
+  p = n(330010),
+  h = n(600553),
+  f = n(999382),
+  b = n(800223),
+  x = n(24318),
+  j = n(822693),
+  N = n(388032),
+  v = n(922363);
 
-function N(e) {
+function _(e) {
   let {
     guildId: t
   } = e, {
-    guildProfile: A,
+    guildProfile: c,
     fetchGuildProfile: g,
-    fetchStatus: N
-  } = (0, u.u)(t), j = N !== d.a.FETCHED, {
-    fetchedEmbed: E,
-    embedEnabled: I,
-    embedChannelId: O
-  } = (0, l.cj)([p.Z], () => {
+    fetchStatus: _
+  } = (0, m.u)(t), C = _ !== u.a.FETCHED, {
+    fetchedEmbed: O,
+    embedEnabled: y,
+    embedChannelId: I
+  } = (0, l.cj)([f.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = p.Z.getProps();
+    } = f.Z.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
     }
-  }), y = i.useMemo(() => (0, C.S)(t), [t]), w = i.useMemo(() => (0, C.a)(t), [t]), [P, B] = i.useState(!1), D = null != A && s.Y.VISIBLE.has(A.visibility), T = !j && !D && !I, S = (0, m.Dj)({
+  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !C && !w && !y, Z = (0, h.Dj)({
     guildId: t,
     location: "widget settings"
   });
   i.useEffect(() => {
-    E || (0, f.R)(t)
-  }, [E, t]), i.useEffect(() => {
+    O || (0, p.R)(t)
+  }, [O, t]), i.useEffect(() => {
     g()
   }, [t, g]);
-  let L = i.useCallback(async e => {
-    B(!0), await (0, h.c)(t, e, O), B(!1)
-  }, [O, t]);
-  return E ? (0, r.jsxs)("div", {
+  let D = i.useCallback(async e => {
+    P(!0), await (0, b.c)(t, e, I), P(!1)
+  }, [I, t]);
+  return O ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.j7V, {
-      disabled: P,
-      value: I,
+      disabled: T,
+      value: y,
       hideBorder: !0,
-      onChange: L,
-      children: v.NW.string(v.t.NR6hub)
-    }), T ? (0, r.jsx)(a.xv, {
+      onChange: D,
+      children: N.NW.string(N.t.NR6hub)
+    }), R ? (0, r.jsx)(a.xv, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: x.subtext,
-      children: S ? v.NW.string(v.t.zCGuJy) : v.NW.string(v.t.yInR2t)
-    }) : null, I ? (0, r.jsxs)(r.Fragment, {
+      className: v.subtext,
+      children: Z ? N.NW.string(N.t.zCGuJy) : N.NW.string(N.t.yInR2t)
+    }) : null, y ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: x.divider
+        className: v.divider
       }), (0, r.jsx)(o.vwX, {
-        children: v.NW.string(v.t.LUo0Q0)
-      }), (0, r.jsx)(b.m, {
+        children: N.NW.string(N.t.LUo0Q0)
+      }), (0, r.jsx)(j.m, {
         guildId: t,
-        widgetEnabled: I,
-        widgetChannelId: O,
+        widgetEnabled: y,
+        widgetChannelId: I,
         enableLocalUpdate: !0
       }), (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: x.subtext,
-        children: v.NW.string(v.t.LxVR9P)
+        className: v.subtext,
+        children: N.NW.string(N.t.LxVR9P)
       }), (0, r.jsxs)("div", {
-        className: x.twoColumns,
+        className: v.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: x.column,
+          className: v.column,
           children: [(0, r.jsx)(o.vwX, {
-            children: v.NW.string(v.t.TRyLUl)
-          }), (0, r.jsx)(c.Z, {
+            children: N.NW.string(N.t.TRyLUl)
+          }), (0, r.jsx)(d.Z, {
             value: t
           })]
         }), (0, r.jsxs)("div", {
-          className: x.column,
+          className: v.column,
           children: [(0, r.jsx)(o.vwX, {
-            children: v.NW.string(v.t.VECJcH)
-          }), (0, r.jsx)(c.Z, {
-            value: y
+            children: N.NW.string(N.t.VECJcH)
+          }), (0, r.jsx)(d.Z, {
+            value: E
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: x.divider
+        className: v.divider
       }), (0, r.jsxs)("div", {
-        className: x.twoColumns,
+        className: v.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: x.column,
+          className: v.column,
           children: [(0, r.jsx)(o.vwX, {
-            children: v.NW.string(v.t.XVGbn5)
-          }), (0, r.jsx)(c.Z, {
-            value: w
+            children: N.NW.string(N.t.XVGbn5)
+          }), (0, r.jsx)(d.Z, {
+            value: S
           }), (0, r.jsx)(a.xv, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            className: x.subtext,
-            children: v.NW.string(v.t["+baN19"])
+            className: v.subtext,
+            children: N.NW.string(N.t["+baN19"])
           })]
         }), (0, r.jsx)("img", {
-          className: x.column,
+          className: v.column,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -128,18 +128,18 @@ function N(e) {
   }) : (0, r.jsx)(o.$jN, {})
 }
 
-function j(e) {
+function C(e) {
   let {
     guildId: t
   } = e, n = (0, l.e7)([g.Z], () => g.Z.enabled);
   return (0, r.jsxs)(o.hjN, {
-    title: v.NW.string(v.t.qlhNb2),
+    title: N.NW.string(N.t.qlhNb2),
     children: [(0, r.jsx)(a.xv, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: x.description,
-      children: v.NW.string(v.t["dNn/1t"])
-    }), n ? (0, r.jsx)(A.Z, {}) : (0, r.jsx)(N, {
+      className: v.description,
+      children: N.NW.string(N.t["dNn/1t"])
+    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(_, {
       guildId: t
     })]
   })

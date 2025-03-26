@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
 var r = n(200651),
   i = n(192379),
@@ -9,28 +9,28 @@ var r = n(200651),
   a = n(481060),
   l = n(434404),
   o = n(999382),
-  A = n(388032);
+  c = n(388032);
 
-function c(e) {
+function d(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, c = t.id, d = (0, s.e7)([o.Z], () => o.Z.getError("name")), u = i.useCallback(e => {
+  } = e, d = t.id, u = (0, s.e7)([o.Z], () => o.Z.getError("name")), m = i.useCallback(e => {
     l.Z.updateGuild({
       name: e
-    }), l.Z.updateGuildProfile(c, {
+    }), l.Z.updateGuildProfile(d, {
       name: e
     })
-  }, [c]);
+  }, [d]);
   return (0, r.jsx)(a.xJW, {
-    title: A.NW.string(A.t.X56QcH),
+    title: c.NW.string(c.t.X56QcH),
     children: (0, r.jsx)(a.oil, {
       type: "text",
       disabled: !n,
       value: t.name,
       maxLength: 100,
-      onChange: u,
-      error: d
+      onChange: m,
+      error: u
     })
   })
 }

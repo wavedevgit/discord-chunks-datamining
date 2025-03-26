@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  M7: () => A,
+  M7: () => c,
   dw: () => o,
   ue: () => a
 }), n(411104), n(47120);
@@ -19,7 +19,7 @@ function o() {
   return s.useContext(l)
 }
 
-function A(e) {
+function c(e) {
   let {
     initialTab: t,
     children: n

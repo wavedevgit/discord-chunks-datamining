@@ -1,9 +1,9 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  BG: () => m,
-  DO: () => h,
-  pt: () => p
+  BG: () => h,
+  DO: () => b,
+  pt: () => f
 }), n(47120);
 var r = n(570140),
   i = n(668781),
@@ -11,44 +11,44 @@ var r = n(570140),
   a = n(45966),
   l = n(637853),
   o = n(592125),
-  A = n(823379),
-  c = n(889369),
-  d = n(570961),
-  u = n(208665),
+  c = n(823379),
+  d = n(889369),
+  u = n(570961),
+  m = n(208665),
   g = n(290511),
-  f = n(388032);
+  p = n(388032);
 
-function m() {
+function h() {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }
 
-function p(e) {
+function f(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
   })
 }
-async function h(e) {
-  let t = Array.from(c.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
-    n = u.Z.advancedMode,
-    [m, p] = (0, l.d9)(e.id, [...t]),
-    h = (0, l.kl)(e.id, t, u.Z.editedOnboardingPrompts),
-    C = (0, l.kl)(e.id, t, u.Z.editedOnboardingPrompts, l.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (p.length < g.md || m.length < g.X) || n && (h.length < g.md || C.length < g.X))) {
+async function b(e) {
+  let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
+    n = m.Z.advancedMode,
+    [h, f] = (0, l.d9)(e.id, [...t]),
+    b = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts),
+    x = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts, l.V7);
+  if (a.Z.getEnabled(e.id) && (!n && (f.length < g.md || h.length < g.X) || n && (b.length < g.md || x.length < g.X))) {
     i.Z.show({
-      title: f.NW.string(f.t.iLdiqa),
-      body: f.NW.string(f.t.JOT74e)
+      title: p.NW.string(p.t.iLdiqa),
+      body: p.NW.string(p.t.JOT74e)
     });
     return
   }
-  if (c.Z.hasChanges()) {
+  if (d.Z.hasChanges()) {
     r.Z.dispatch({
       type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SUBMIT"
     });
     try {
-      await (0, d.n_)(e.id, {
+      await (0, u.n_)(e.id, {
         default_channel_ids: t
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS",
@@ -56,14 +56,14 @@ async function h(e) {
         channelIds: t
       })
     } catch (n) {
-      var b;
+      var j;
       let {
         fieldName: e,
         error: t
-      } = null !== (b = new s.Hx(n).getAnyErrorMessageAndField()) && void 0 !== b ? b : {};
+      } = null !== (j = new s.Hx(n).getAnyErrorMessageAndField()) && void 0 !== j ? j : {};
       i.Z.show({
-        title: f.NW.string(f.t.iLdiqa),
-        body: [e, t].filter(A.lm).join(": ")
+        title: p.NW.string(p.t.iLdiqa),
+        body: [e, t].filter(c.lm).join(": ")
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"
       })

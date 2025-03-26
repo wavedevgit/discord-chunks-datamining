@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(266796);
 var r, i = n(442837),
   s = n(570140),
@@ -16,32 +16,32 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let A = {
+let c = {
     description: "",
     channels: [],
     enabled: !1
   },
-  c = A,
-  d = !1,
+  d = c,
   u = !1,
-  g = A;
+  m = !1,
+  g = c;
 
-function f(e) {
+function p(e) {
   let {
     welcomeScreen: t,
     guildId: n
   } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, s;
-    g = c = {
+    g = d = {
       description: null !== (i = t.description) && void 0 !== i ? i : "",
       channels: null !== (s = t.welcome_channels) && void 0 !== s ? s : [],
       enabled: null == r ? void 0 : r.hasFeature(l.oNc.WELCOME_SCREEN_ENABLED)
     }
-  } else g = c = A;
-  u = !1
+  } else g = d = c;
+  m = !1
 }
-class m extends(r = i.ZP.Store) {
+class h extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(a.Z)
   }
@@ -49,26 +49,26 @@ class m extends(r = i.ZP.Store) {
     return g
   }
   showNotice() {
-    return u
+    return m
   }
   getSettingsProps() {
     return {
-      submitting: d,
-      hasErrors: u,
+      submitting: u,
+      hasErrors: m,
       welcomeSettings: g,
-      originalWelcomeSettings: c
+      originalWelcomeSettings: d
     }
   }
 }
-o(m, "displayName", "WelcomeScreenSettingsStore");
-let p = new m(s.Z, {
-  WELCOME_SCREEN_FETCH_SUCCESS: f,
-  WELCOME_SCREEN_UPDATE: f,
+o(h, "displayName", "WelcomeScreenSettingsStore");
+let f = new h(s.Z, {
+  WELCOME_SCREEN_FETCH_SUCCESS: p,
+  WELCOME_SCREEN_UPDATE: p,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
-    g = c, u = !1
+    g = d, m = !1
   },
   WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-    g = A, c = A
+    g = c, d = c
   },
   WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
     let {
@@ -88,12 +88,12 @@ let p = new m(s.Z, {
     }({}, g, t)
   },
   WELCOME_SCREEN_SUBMIT: function() {
-    d = !0
+    u = !0
   },
   WELCOME_SCREEN_SUBMIT_SUCCESS: function(e) {
-    f(e), d = !1
+    p(e), u = !1
   },
   WELCOME_SCREEN_SUBMIT_FAILURE: function() {
-    u = !0, d = !1
+    m = !0, u = !1
   }
 })

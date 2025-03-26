@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => c
 });
 var r = n(200651);
 n(192379);
@@ -11,7 +11,7 @@ var i = n(481060),
   l = n(981631),
   o = n(388032);
 
-function A(e) {
+function c(e) {
   var {
     team: t
   } = e, n = function(e, t) {
@@ -29,16 +29,16 @@ function A(e) {
     }
     return i
   }(e, ["team"]);
-  let A = (0, s.mY)() || null == t ? null : o.NW.format(o.t.d1sCiY, {
+  let c = (0, s.mY)() || null == t ? null : o.NW.format(o.t.d1sCiY, {
     url: l.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(t.id)
   });
   return 0 === n.payoutsByPeriod.length ? (0, r.jsxs)(i.R94, {
     type: i.R94.Types.DESCRIPTION,
-    children: [o.NW.string(o.t.RrtXu7), " ", A]
+    children: [o.NW.string(o.t.RrtXu7), " ", c]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.R94, {
       type: i.R94.Types.DESCRIPTION,
-      children: [o.NW.string(o.t["9Ub4KS"]), " ", A]
+      children: [o.NW.string(o.t["9Ub4KS"]), " ", c]
     }), (0, r.jsx)(i.LZC, {
       size: 16
     }), (0, r.jsx)(a.Z, function(e) {

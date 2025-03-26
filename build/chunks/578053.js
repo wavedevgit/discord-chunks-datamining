@@ -1,8 +1,8 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  g: () => v,
-  u: () => x
+  g: () => N,
+  u: () => v
 }), n(733860);
 var r = n(200651),
   i = n(192379),
@@ -10,47 +10,47 @@ var r = n(200651),
   a = n(442837),
   l = n(481060),
   o = n(740504),
-  A = n(933557),
-  c = n(471445),
-  d = n(592125),
-  u = n(324067),
+  c = n(933557),
+  d = n(471445),
+  u = n(592125),
+  m = n(324067),
   g = n(699516),
-  f = n(594174),
-  m = n(434404),
-  p = n(388032);
-let h = "NO_CHANNEL";
+  p = n(594174),
+  h = n(434404),
+  f = n(388032);
+let b = "NO_CHANNEL";
 
-function C(e) {
+function x(e) {
   return {
     value: e.id,
-    label: (0, A.F6)(e, f.default, g.Z),
+    label: (0, c.F6)(e, p.default, g.Z),
     channel: e,
-    category: d.Z.getChannel(e.parent_id)
+    category: u.Z.getChannel(e.parent_id)
   }
 }
 
-function b(e) {
+function j(e) {
   let {
     option: t
   } = e, {
     label: n,
     channel: s,
     category: a
-  } = t, o = i.useMemo(() => (0, c.KS)(s), [s]), d = (0, A.ZP)(s);
+  } = t, o = i.useMemo(() => (0, d.KS)(s), [s]), u = (0, c.ZP)(s);
   return (0, r.jsx)(l.ZZ$, {
     title: n,
     icon: o,
-    subtitle: null != a ? d : null
+    subtitle: null != a ? u : null
   })
 }
 
-function v(e) {
+function N(e) {
   let {
     canManageGuild: t,
     guildId: n,
     afkChannelId: l
-  } = e, A = (0, a.e7)([u.Z], () => u.Z.getCategories(n)), c = i.useMemo(() => {
-    let e = (0, o.Z)(A._categories, A).filter(e => {
+  } = e, c = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
+    let e = (0, o.Z)(c._categories, c).filter(e => {
       let {
         channel: t
       } = e;
@@ -59,33 +59,33 @@ function v(e) {
       let {
         channel: t
       } = e;
-      return C(t)
+      return x(t)
     });
     return e.unshift({
-      value: h,
-      label: p.NW.string(p.t.wGiHkJ)
+      value: b,
+      label: f.NW.string(f.t.wGiHkJ)
     }), e
-  }, [A]), d = i.useCallback(e => {
-    let t = e === h ? null : e;
-    m.Z.updateGuild({
+  }, [c]), u = i.useCallback(e => {
+    let t = e === b ? null : e;
+    h.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
-  return (0, r.jsx)(N, {
-    value: null != l ? l : h,
-    options: c,
+  return (0, r.jsx)(_, {
+    value: null != l ? l : b,
+    options: d,
     canManageGuild: t,
-    onChange: d
+    onChange: u
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     canManageGuild: t,
     guildId: n,
     systemChannelId: l
-  } = e, A = (0, a.e7)([u.Z], () => u.Z.getCategories(n)), c = i.useMemo(() => {
-    let e = (0, o.Z)(A._categories, A).filter(e => {
+  } = e, c = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
+    let e = (0, o.Z)(c._categories, c).filter(e => {
       let {
         channel: t
       } = e;
@@ -94,43 +94,43 @@ function x(e) {
       let {
         channel: t
       } = e;
-      return C(t)
+      return x(t)
     });
     return e.unshift({
-      value: h,
-      label: p.NW.string(p.t.ibUhoa)
+      value: b,
+      label: f.NW.string(f.t.ibUhoa)
     }), e
-  }, [A]), d = i.useCallback(e => {
-    let t = e === h ? null : e;
-    m.Z.updateGuild({
+  }, [c]), u = i.useCallback(e => {
+    let t = e === b ? null : e;
+    h.Z.updateGuild({
       systemChannelId: t
     })
   }, []);
-  return (0, r.jsx)(N, {
-    value: null != l ? l : h,
-    options: c,
+  return (0, r.jsx)(_, {
+    value: null != l ? l : b,
+    options: d,
     canManageGuild: t,
-    onChange: d
+    onChange: u
   })
 }
 
-function N(e) {
+function _(e) {
   let {
     value: t,
     options: n,
     canManageGuild: s,
     onChange: a
   } = e, o = i.useCallback(e => {
-    if (null != e) return (0, r.jsx)(b, {
+    if (null != e) return (0, r.jsx)(j, {
       option: e
     })
-  }, []), A = i.useCallback(e => o(e[0]), [o]);
+  }, []), c = i.useCallback(e => o(e[0]), [o]);
   return (0, r.jsx)(l.q4e, {
     value: t,
     options: n,
     isDisabled: !s,
     onChange: a,
     renderOptionLabel: o,
-    renderOptionValue: A
+    renderOptionValue: c
   })
 }

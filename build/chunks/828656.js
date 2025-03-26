@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => s
@@ -17,7 +17,7 @@ function s(e, t, n, s) {
     collect: e => ({
       isDragging: e.isDragging()
     })
-  }), [, A] = (0, i.L)({
+  }), [, c] = (0, i.L)({
     accept: t,
     hover(t, r) {
       if (null == e.current) return;
@@ -32,7 +32,7 @@ function s(e, t, n, s) {
   return {
     drag: l,
     dragPreview: o,
-    drop: A,
+    drop: c,
     isDragging: a
   }
 }

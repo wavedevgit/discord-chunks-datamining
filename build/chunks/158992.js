@@ -1,4 +1,4 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
   Z: () => l
@@ -9,12 +9,12 @@ var r = n(192379),
   a = n(581050);
 
 function l(e) {
-  let [t, n] = r.useState(null != e), [l, o] = r.useState(), [A, c] = r.useState(), d = r.useCallback(async e => {
+  let [t, n] = r.useState(null != e), [l, o] = r.useState(), [c, d] = r.useState(), u = r.useCallback(async e => {
     n(!0), o(void 0);
     try {
-      var t, r, l, A, d;
+      var t, r, l, c, u;
       let n = await s.yk(e);
-      c({
+      d({
         isEligibleForMonetization: n.sufficient,
         hasSufficientMembers: n.size,
         hasEnabled2FA: n.mfa,
@@ -33,8 +33,8 @@ function l(e) {
         latestRequest: n.latest_request,
         rejection: n.rejection,
         guildMemberCount: null === (l = n.health_score) || void 0 === l ? void 0 : l.guild_size,
-        communicatorCount: null === (A = n.health_score) || void 0 === A ? void 0 : A.communicators,
-        retentionScore: null === (d = n.health_score) || void 0 === d ? void 0 : d.perc_ret_w1
+        communicatorCount: null === (c = n.health_score) || void 0 === c ? void 0 : c.communicators,
+        retentionScore: null === (u = n.health_score) || void 0 === u ? void 0 : u.perc_ret_w1
       })
     } catch (e) {
       o(new i.Z(e))
@@ -45,9 +45,9 @@ function l(e) {
   return {
     error: l,
     loading: t,
-    eligibility: A,
+    eligibility: c,
     refresh: r.useCallback(() => {
-      null != e && d(e)
-    }, [e, d])
+      null != e && u(e)
+    }, [e, u])
   }
 }

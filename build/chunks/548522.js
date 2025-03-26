@@ -1,7 +1,7 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  y: () => m
+  y: () => h
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,81 +9,81 @@ var r = n(200651),
   a = n(246364),
   l = n(571728),
   o = n(446945),
-  A = n(681460),
-  c = n(700833),
-  d = n(217472),
-  u = n(592286),
+  c = n(681460),
+  d = n(700833),
+  u = n(217472),
+  m = n(592286),
   g = n(388032),
-  f = n(365483);
+  p = n(365483);
 
-function m(e) {
+function h(e) {
   var t;
   let {
     guild: n,
-    formFields: A
-  } = e, [m, h] = i.useState(A);
-  i.useEffect(() => h(A), [A]);
-  let C = null !== (t = (0, l.A)({
+    formFields: c
+  } = e, [h, b] = i.useState(c);
+  i.useEffect(() => b(c), [c]);
+  let x = null !== (t = (0, l.A)({
       guildId: n.id
     })) && void 0 !== t ? t : 0,
-    [b, v] = i.useState(null),
-    x = i.useMemo(() => null == m ? void 0 : m.some(e => (0, a.J)(e)), [m]),
-    N = i.useMemo(() => m.length === u.nx, [m]),
-    j = i.useCallback(e => {
-      d.Z.setPendingMemberVerificationRules(n.id, e), h(e), null != b && v(null)
-    }, [b, n.id]),
-    E = i.useCallback(e => {
-      j([...m, e])
-    }, [m, j]),
-    I = i.useCallback(e => {
-      j([...m.slice(0, e), ...m.slice(e + 1)])
-    }, [m, j]),
-    O = i.useCallback((e, t) => {
-      if (m[e] === t) return;
-      let n = [...m];
-      n[e] = t, j(n)
-    }, [m, j]),
-    y = i.useCallback((e, t, n) => {
-      let r = m.indexOf(e),
-        i = [...m];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), h(i)), n ? (j(i), null !== b && v(null)) : b !== t && v(t)
-    }, [b, m, j]);
+    [j, N] = i.useState(null),
+    v = i.useMemo(() => null == h ? void 0 : h.some(e => (0, a.J)(e)), [h]),
+    _ = i.useMemo(() => h.length === m.nx, [h]),
+    C = i.useCallback(e => {
+      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && N(null)
+    }, [j, n.id]),
+    O = i.useCallback(e => {
+      C([...h, e])
+    }, [h, C]),
+    y = i.useCallback(e => {
+      C([...h.slice(0, e), ...h.slice(e + 1)])
+    }, [h, C]),
+    I = i.useCallback((e, t) => {
+      if (h[e] === t) return;
+      let n = [...h];
+      n[e] = t, C(n)
+    }, [h, C]),
+    E = i.useCallback((e, t, n) => {
+      let r = h.indexOf(e),
+        i = [...h];
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (C(i), null !== j && N(null)) : j !== t && N(t)
+    }, [j, h, C]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: f.title,
+      className: p.title,
       children: g.NW.format(g.t["sm+75u"], {
-        currentCount: m.length,
-        maxCount: u.nx
+        currentCount: h.length,
+        maxCount: m.nx
       })
-    }), m.map(e => (0, c.a0)({
-      dropHoveredIndex: b,
+    }), h.map(e => (0, d.a0)({
+      dropHoveredIndex: j,
       formField: e,
       guild: n,
-      index: m.indexOf(e),
-      isDragEnabled: m.length > 1,
-      submittedGuildJoinRequestsCount: C,
-      removeFormField: I,
-      updateFormField: O,
-      updateFormFieldOrder: y,
-      canRemove: m.length > 1,
+      index: h.indexOf(e),
+      isDragEnabled: h.length > 1,
+      submittedGuildJoinRequestsCount: x,
+      removeFormField: y,
+      updateFormField: I,
+      updateFormFieldOrder: E,
+      canRemove: h.length > 1,
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
-    })), !N && (0, r.jsx)("div", {
-      className: f.addQuestionsContainer,
+    })), !_ && (0, r.jsx)("div", {
+      className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
-        addFormField: E,
+        addFormField: O,
         guild: n,
-        allowTerms: !x
+        allowTerms: !v
       })
-    }), !N && (0, r.jsx)(p, {
-      addFormField: E
+    }), !_ && (0, r.jsx)(f, {
+      addFormField: O
     })]
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
@@ -118,9 +118,9 @@ function p(e) {
     children: [(0, r.jsx)(s.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: f.examplesHeader,
+      className: p.examplesHeader,
       children: g.NW.string(g.t.ID04cH)
-    }), (0, r.jsx)(A.j, {
+    }), (0, r.jsx)(c.j, {
       pills: n
     })]
   })

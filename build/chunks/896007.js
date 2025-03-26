@@ -1,8 +1,8 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  ZP: () => m,
-  vE: () => f
+  ZP: () => h,
+  vE: () => p
 }), n(653041);
 var r = n(223892),
   i = n(738774),
@@ -10,44 +10,44 @@ var r = n(223892),
   a = n(923726),
   l = n(144507),
   o = n(823379),
-  A = n(146305),
-  c = n(981631),
-  d = n(388032);
+  c = n(146305),
+  d = n(981631),
+  u = n(388032);
 let {
-  getSectionDefinition: u
-} = A.Z, g = {
+  getSectionDefinition: m
+} = c.Z, g = {
   HEADER: "HEADER",
   DIVIDER: "DIVIDER"
 };
 
-function f(e) {
+function p(e) {
   var t, n;
   let {
-    guild: A,
-    canManageGuild: f,
-    canViewAuditLog: m,
-    canManageRoles: p,
-    canManageWebhooks: h,
-    canUnlinkChannels: C,
-    canManageBans: b,
-    canAccessMembersPage: v,
-    canViewGuildAnalytics: x,
-    isOwner: N,
-    isOwnerWithRequiredMfaLevel: j,
-    canAccessClanSettings: E,
-    isGuildSettingsFoundationEnabled: I,
-    isGuildAdmin: O,
-    canManageGuildExpressions: y
-  } = e, w = () => (0, l.X$)({
-    guild: A,
-    isOwner: N,
-    canManageGuildRoleSubscriptions: (0, l.H2)(A),
-    isMonetizationWaitlistEnabledForGuild: (0, r.mG)(A.id),
-    isGuildEligibleForRoleSubscriptions: (0, a.kT)(A.id),
-    isExpeditedMonetizationOnboardingGuild: (0, r.Rw)(A),
+    guild: c,
+    canManageGuild: p,
+    canViewAuditLog: h,
+    canManageRoles: f,
+    canManageWebhooks: b,
+    canUnlinkChannels: x,
+    canManageBans: j,
+    canAccessMembersPage: N,
+    canViewGuildAnalytics: v,
+    isOwner: _,
+    isOwnerWithRequiredMfaLevel: C,
+    canAccessClanSettings: O,
+    isGuildSettingsFoundationEnabled: y,
+    isGuildAdmin: I,
+    canManageGuildExpressions: E
+  } = e, S = () => (0, l.X$)({
+    guild: c,
+    isOwner: _,
+    canManageGuildRoleSubscriptions: (0, l.H2)(c),
+    isMonetizationWaitlistEnabledForGuild: (0, r.mG)(c.id),
+    isGuildEligibleForRoleSubscriptions: (0, a.kT)(c.id),
+    isExpeditedMonetizationOnboardingGuild: (0, r.Rw)(c),
     isUserInCreatorMonetizationEligibleCountry: (0, r.DB)(),
-    shouldRestrictUpdatingRoleSubscriptionSettings: (0, i.cu)(A.id)
-  }), P = (t = function(e) {
+    shouldRestrictUpdatingRoleSubscriptionSettings: (0, i.cu)(c.id)
+  }), T = (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -65,7 +65,7 @@ function f(e) {
     }
     return e
   }({}, e), n = n = {
-    monetizationPredicate: w
+    monetizationPredicate: S
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,82 +76,82 @@ function f(e) {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t);
-  if (I) {
+  if (y) {
     let e = [];
-    e.push(u(c.pNK.PROFILE, P)), e.push(u(c.pNK.TAG, P)), e.push(u(c.pNK.ENGAGEMENT, P)), e.push(u(c.pNK.BOOST_PERKS, P)), y && (e.push({
+    e.push(m(d.pNK.PROFILE, T)), e.push(m(d.pNK.TAG, T)), e.push(m(d.pNK.ENGAGEMENT, T)), e.push(m(d.pNK.BOOST_PERKS, T)), E && (e.push({
       section: g.DIVIDER
     }), e.push({
       section: g.HEADER,
-      label: d.NW.string(d.t.m6lkGx)
-    }), e.push(u(c.pNK.EMOJI, P)), e.push(u(c.pNK.STICKERS, P)), e.push(u(c.pNK.SOUNDBOARD, P))), (f || p || v || O) && (e.push({
+      label: u.NW.string(u.t.m6lkGx)
+    }), e.push(m(d.pNK.EMOJI, T)), e.push(m(d.pNK.STICKERS, T)), e.push(m(d.pNK.SOUNDBOARD, T))), (p || f || N || I) && (e.push({
       section: g.DIVIDER
     }), e.push({
       section: g.HEADER,
-      label: d.NW.string(d.t.bMAKMD)
-    }), e.push(u(c.pNK.MEMBERS, P)), e.push(u(c.pNK.ROLES, P)), e.push(u(c.pNK.INVITES, P)), e.push(u(c.pNK.ACCESS, P))), e.push({
+      label: u.NW.string(u.t.bMAKMD)
+    }), e.push(m(d.pNK.MEMBERS, T)), e.push(m(d.pNK.ROLES, T)), e.push(m(d.pNK.INVITES, T)), e.push(m(d.pNK.ACCESS, T))), e.push({
       section: g.DIVIDER
     }), e.push({
       section: g.HEADER,
-      label: d.NW.string(d.t.wF3KJy)
-    }), e.push(u(c.pNK.INTEGRATIONS, P)), e.push(u(c.pNK.APP_DIRECTORY, P));
-    let t = !A.hasFeature(c.oNc.COMMUNITY) && ((0, s.Nb)(A.id) || (0, s.ze)(A.id));
-    (f || m || b || t) && (e.push({
+      label: u.NW.string(u.t.wF3KJy)
+    }), e.push(m(d.pNK.INTEGRATIONS, T)), e.push(m(d.pNK.APP_DIRECTORY, T));
+    let t = !c.hasFeature(d.oNc.COMMUNITY) && ((0, s.Nb)(c.id) || (0, s.ze)(c.id));
+    (p || h || j || t) && (e.push({
       section: g.DIVIDER
     }), e.push({
       section: g.HEADER,
-      label: d.NW.string(d.t["5tbTdX"])
-    }), e.push(u(c.pNK.SAFETY, P)), e.push(u(c.pNK.MODERATION, P)), e.push(u(c.pNK.AUDIT_LOG, P)), e.push(u(c.pNK.BANS, P)), e.push(u(c.pNK.GUILD_AUTOMOD, P)));
-    let n = A.hasFeature(c.oNc.COMMUNITY) && x,
-      r = w();
-    return (f || n || r) && (e.push({
+      label: u.NW.string(u.t["5tbTdX"])
+    }), e.push(m(d.pNK.SAFETY, T)), e.push(m(d.pNK.MODERATION, T)), e.push(m(d.pNK.AUDIT_LOG, T)), e.push(m(d.pNK.BANS, T)), e.push(m(d.pNK.GUILD_AUTOMOD, T)));
+    let n = c.hasFeature(d.oNc.COMMUNITY) && v,
+      r = S();
+    return (p || n || r) && (e.push({
       section: g.DIVIDER
-    }), e.push(u(c.pNK.COMMUNITY, P)), e.push(u(c.pNK.ONBOARDING, P)), e.push(u(c.pNK.ANALYTICS, P)), e.push(u(c.pNK.COMMUNITY_WELCOME, P)), e.push(u(c.pNK.DISCOVERY_LANDING_PAGE, P)), e.push(u(c.pNK.ROLE_SUBSCRIPTIONS, P)), e.push(u(c.pNK.GUILD_PRODUCTS, P)), e.push(u(c.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, P))), e.push({
+    }), e.push(m(d.pNK.COMMUNITY, T)), e.push(m(d.pNK.ONBOARDING, T)), e.push(m(d.pNK.ANALYTICS, T)), e.push(m(d.pNK.COMMUNITY_WELCOME, T)), e.push(m(d.pNK.DISCOVERY_LANDING_PAGE, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS, T)), e.push(m(d.pNK.GUILD_PRODUCTS, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, T))), e.push({
       section: g.DIVIDER
-    }), e.push(u(c.pNK.GUILD_PREMIUM, P)), e.push(u(c.pNK.GUILD_TEMPLATES, P)), e.push(u(c.pNK.DELETE, P)), e.filter(o.lm)
+    }), e.push(m(d.pNK.GUILD_PREMIUM, T)), e.push(m(d.pNK.GUILD_TEMPLATES, T)), e.push(m(d.pNK.DELETE, T)), e.filter(o.lm)
   }
   return [{
     section: g.HEADER,
-    label: "" !== A.toString() ? A.toString() : d.NW.string(d.t["154/bG"])
-  }, u(c.pNK.OVERVIEW, P), u(c.pNK.ROLES, P), u(c.pNK.EMOJI, P), u(c.pNK.STICKERS, P), u(c.pNK.SOUNDBOARD, P), u(c.pNK.WIDGET, P), u(c.pNK.GUILD_TEMPLATES, P), u(c.pNK.VANITY_URL, P), u(c.pNK.ACCESS, P), {
+    label: "" !== c.toString() ? c.toString() : u.NW.string(u.t["154/bG"])
+  }, m(d.pNK.OVERVIEW, T), m(d.pNK.ROLES, T), m(d.pNK.EMOJI, T), m(d.pNK.STICKERS, T), m(d.pNK.SOUNDBOARD, T), m(d.pNK.WIDGET, T), m(d.pNK.GUILD_TEMPLATES, T), m(d.pNK.VANITY_URL, T), m(d.pNK.ACCESS, T), {
     section: g.DIVIDER,
-    predicate: () => f || h || C
+    predicate: () => p || b || x
   }, {
     section: g.HEADER,
-    label: d.NW.string(d.t.PHjkRE),
-    predicate: () => f || h || C
-  }, u(c.pNK.INTEGRATIONS, P), u(c.pNK.APP_DIRECTORY, P), {
+    label: u.NW.string(u.t.PHjkRE),
+    predicate: () => p || b || x
+  }, m(d.pNK.INTEGRATIONS, T), m(d.pNK.APP_DIRECTORY, T), {
     section: g.DIVIDER,
-    predicate: () => f
+    predicate: () => p
   }, {
     section: g.HEADER,
-    label: d.NW.string(d.t["5tbTdX"]),
-    predicate: () => f
-  }, u(c.pNK.SAFETY, P), u(c.pNK.MODERATION, P), u(c.pNK.GUILD_AUTOMOD, P), u(c.pNK.AUDIT_LOG, P), u(c.pNK.BANS, P), {
+    label: u.NW.string(u.t["5tbTdX"]),
+    predicate: () => p
+  }, m(d.pNK.SAFETY, T), m(d.pNK.MODERATION, T), m(d.pNK.GUILD_AUTOMOD, T), m(d.pNK.AUDIT_LOG, T), m(d.pNK.BANS, T), {
     section: g.DIVIDER,
-    predicate: () => f || x
+    predicate: () => p || v
   }, {
     section: g.HEADER,
-    label: d.NW.string(d.t["1g9A/f"]),
-    predicate: () => !E && (f || x)
-  }, u(c.pNK.CLAN, P), u(c.pNK.COMMUNITY, P), u(c.pNK.ONBOARDING, P), u(c.pNK.ANALYTICS, P), u(c.pNK.DISCOVERY, P), u(c.pNK.DISCOVERY_LANDING_PAGE, P), u(c.pNK.COMMUNITY_WELCOME, P), {
+    label: u.NW.string(u.t["1g9A/f"]),
+    predicate: () => !O && (p || v)
+  }, m(d.pNK.CLAN, T), m(d.pNK.COMMUNITY, T), m(d.pNK.ONBOARDING, T), m(d.pNK.ANALYTICS, T), m(d.pNK.DISCOVERY, T), m(d.pNK.DISCOVERY_LANDING_PAGE, T), m(d.pNK.COMMUNITY_WELCOME, T), {
     section: g.DIVIDER,
-    predicate: w
+    predicate: S
   }, {
     section: g.HEADER,
-    label: d.NW.string(d.t.mbn3bW),
-    predicate: w
-  }, u(c.pNK.ROLE_SUBSCRIPTIONS, P), u(c.pNK.GUILD_PRODUCTS, P), u(c.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, P), {
+    label: u.NW.string(u.t.mbn3bW),
+    predicate: S
+  }, m(d.pNK.ROLE_SUBSCRIPTIONS, T), m(d.pNK.GUILD_PRODUCTS, T), m(d.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, T), {
     section: g.DIVIDER
-  }, u(c.pNK.GUILD_PREMIUM, P), {
+  }, m(d.pNK.GUILD_PREMIUM, T), {
     section: g.DIVIDER
   }, {
     section: g.HEADER,
-    label: d.NW.string(d.t["+OecxM"])
-  }, u(c.pNK.MEMBERS, P), u(c.pNK.INSTANT_INVITES, P), {
+    label: u.NW.string(u.t["+OecxM"])
+  }, m(d.pNK.MEMBERS, T), m(d.pNK.INSTANT_INVITES, T), {
     section: g.DIVIDER,
-    predicate: () => j
-  }, u(c.pNK.DELETE, P)].filter(o.lm)
+    predicate: () => C
+  }, m(d.pNK.DELETE, T)].filter(o.lm)
 }
-let m = {
-  generateSections: f
+let h = {
+  generateSections: p
 }

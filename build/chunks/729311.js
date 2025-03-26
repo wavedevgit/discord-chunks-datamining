@@ -1,8 +1,8 @@
-/** Chunk was on 10396 **/
+/** Chunk was on 63327 **/
 "use strict";
 n.d(t, {
-  Z: () => D,
-  j: () => T
+  Z: () => w,
+  j: () => R
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -10,36 +10,36 @@ var r = n(200651),
   a = n(481060),
   l = n(852860),
   o = n(111028),
-  A = n(977258),
-  c = n(45966),
-  d = n(473403),
-  u = n(454585),
+  c = n(977258),
+  d = n(45966),
+  u = n(473403),
+  m = n(454585),
   g = n(323502),
-  f = n(958832),
-  m = n(324067),
-  p = n(984933),
-  h = n(259580),
-  C = n(999382),
-  b = n(743475),
-  v = n(889369),
-  x = n(570961),
-  N = n(208665),
-  j = n(868814),
-  E = n(974513),
-  I = n(2348),
-  O = n(353890),
-  y = n(716130),
-  w = n(388032),
-  P = n(593601);
+  p = n(958832),
+  h = n(324067),
+  f = n(984933),
+  b = n(259580),
+  x = n(999382),
+  j = n(743475),
+  N = n(889369),
+  v = n(570961),
+  _ = n(208665),
+  C = n(868814),
+  O = n(974513),
+  y = n(2348),
+  I = n(353890),
+  E = n(716130),
+  S = n(388032),
+  T = n(593601);
 
-function B(e) {
+function P(e) {
   let {
     guild: t
-  } = e, l = (0, s.e7)([c.Z], () => c.Z.getEnabled(t.id)), m = (0, s.e7)([f.Z], () => f.Z.hasFetched(t.id)), p = (0, j.Z)(t), h = (0, s.e7)([v.Z], () => v.Z.editedDefaultChannelIds), C = p.filter(e => !h.has(e.id)), [x, N] = i.useState(!1);
+  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, C.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [v, _] = i.useState(!1);
   i.useEffect(() => {
-    m || l || (0, g.S)(t.id)
-  }, [t.id, m, l]);
-  let E = e => {
+    h || l || (0, g.S)(t.id)
+  }, [t.id, h, l]);
+  let O = e => {
     (0, a.ZDy)(async () => {
       let {
         default: i
@@ -79,48 +79,48 @@ function B(e) {
       }
     })
   };
-  return x || 0 === C.length ? null : (0, r.jsxs)("div", {
-    className: P.recommendations,
+  return v || 0 === x.length ? null : (0, r.jsxs)("div", {
+    className: T.recommendations,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      children: w.NW.string(w.t.NN7rDw)
+      children: S.NW.string(S.t.NN7rDw)
     }), (0, r.jsxs)("div", {
-      className: P.recsSubheader,
+      className: T.recsSubheader,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: w.NW.string(w.t["3Uuql5"])
+        children: S.NW.string(S.t["3Uuql5"])
       }), (0, r.jsxs)(a.P3F, {
-        className: P.dismissAll,
-        onClick: () => N(!0),
+        className: T.dismissAll,
+        onClick: () => _(!0),
         children: [(0, r.jsx)(a.dz2, {
           size: "xxs",
           color: "currentColor",
-          className: P.checkmark
+          className: T.checkmark
         }), (0, r.jsx)(a.Text, {
-          className: P.dismissAllText,
+          className: T.dismissAllText,
           variant: "text-xs/medium",
           color: "text-brand",
-          children: w.NW.string(w.t.ZC3PJy)
+          children: S.NW.string(S.t.ZC3PJy)
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: P.recommendedChannels,
-      children: C.map((e, n) => (0, r.jsxs)(r.Fragment, {
+      className: T.recommendedChannels,
+      children: x.map((e, n) => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: P.channelRow,
+          className: T.channelRow,
           children: [(0, r.jsxs)("div", {
-            className: P.channelInfo,
+            className: T.channelInfo,
             children: [(0, r.jsxs)("div", {
-              className: P.channelName,
-              children: [(0, r.jsx)(d._W, {
+              className: T.channelName,
+              children: [(0, r.jsx)(u._W, {
                 channel: e,
                 guild: t
               }), (0, r.jsx)(o.Z, {
-                className: P.__invalid_name,
+                className: T.__invalid_name,
                 children: (0, r.jsx)(a.Text, {
-                  className: P.__invalid_channelText,
+                  className: T.__invalid_channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
                   color: "text-normal",
@@ -129,111 +129,111 @@ function B(e) {
               })]
             }), null != e.topic && e.topic.length > 0 ? (0, r.jsx)(o.Z, {
               children: (0, r.jsx)(a.Text, {
-                className: P.topic,
+                className: T.topic,
                 variant: "text-xs/normal",
-                children: u.Z.parseTopic(e.topic, !0, {
+                children: m.Z.parseTopic(e.topic, !0, {
                   channelId: e.id
                 })
               })
             }, "topic") : null]
-          }), (0, A.s)(t.id, e.id) ? (0, r.jsx)(a.zxk, {
+          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(a.zxk, {
             color: a.zxk.Colors.BRAND,
             size: a.zxk.Sizes.SMALL,
-            className: P.addChannelCTA,
-            onClick: () => (0, b.pt)(e.id),
-            children: w.NW.string(w.t.OYkgVl)
+            className: T.addChannelCTA,
+            onClick: () => (0, j.pt)(e.id),
+            children: S.NW.string(S.t.OYkgVl)
           }) : (0, r.jsxs)(a.zxk, {
             look: a.zxk.Looks.OUTLINED,
             color: a.zxk.Colors.PRIMARY,
-            className: P.lockedPill,
-            innerClassName: P.lockedPillInner,
-            onClick: () => E(e.id),
+            className: T.lockedPill,
+            innerClassName: T.lockedPillInner,
+            onClick: () => O(e.id),
             children: [(0, r.jsx)(a.mBM, {
               size: "xs",
               color: "currentColor"
             }), (0, r.jsx)(a.Text, {
               variant: "text-sm/medium",
-              children: w.NW.string(w.t.zA9d1N)
+              children: S.NW.string(S.t.zA9d1N)
             })]
           })]
-        }), n < C.length - 1 ? (0, r.jsx)("div", {
-          className: P.separator
+        }), n < x.length - 1 ? (0, r.jsx)("div", {
+          className: T.separator
         }) : null]
       }))
     }), (0, r.jsx)("div", {
-      className: P.largeSeparator
+      className: T.largeSeparator
     })]
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     saveOnClose: t = !1
-  } = e, n = (0, s.e7)([C.Z], () => C.Z.getGuild()), l = (0, s.e7)([c.Z], () => c.Z.isLoading()), o = (0, s.e7)([p.ZP], () => p.ZP.getChannels(null == n ? void 0 : n.id)), A = (0, s.e7)([m.Z], () => m.Z.getCategories(null == n ? void 0 : n.id)), d = (0, s.e7)([N.Z], () => N.Z.advancedMode), u = i.useRef(null), [g, f] = i.useState(!1), v = i.useRef(n);
+  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild()), l = (0, s.e7)([d.Z], () => d.Z.isLoading()), o = (0, s.e7)([f.ZP], () => f.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([h.Z], () => h.Z.getCategories(null == n ? void 0 : n.id)), u = (0, s.e7)([_.Z], () => _.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(!1), N = i.useRef(n);
   return (i.useEffect(() => {
-    v.current = n
+    N.current = n
   }), i.useEffect(() => {
     if (t) {
       let {
         current: e
-      } = v;
+      } = N;
       return () => {
-        null != e && (0, b.DO)(e).then(() => {
-          d && (0, x.rS)(e, {
+        null != e && (0, j.DO)(e).then(() => {
+          u && (0, v.rS)(e, {
             ignoreDefaultPrompt: !0
           }).catch(() => {})
         }).catch(() => {})
       }
     }
-  }, [t, d]), null == n) ? null : l ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)("div", {
-    className: P.columns,
+  }, [t, u]), null == n) ? null : l ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)("div", {
+    className: T.columns,
     children: [(0, r.jsxs)("div", {
-      className: P.channelBrowser,
+      className: T.channelBrowser,
       children: [(0, r.jsx)(a.P3F, {
-        className: P.collapseButton,
-        onClick: () => f(e => !e),
-        children: (0, r.jsx)(h.Z, {
-          direction: g ? h.Z.Directions.DOWN : h.Z.Directions.UP,
+        className: T.collapseButton,
+        onClick: () => p(e => !e),
+        children: (0, r.jsx)(b.Z, {
+          direction: g ? b.Z.Directions.DOWN : b.Z.Directions.UP,
           height: 16,
           width: 16
         })
       }), (0, r.jsx)(a.X6q, {
-        className: P.header,
+        className: T.header,
         variant: "heading-lg/extrabold",
-        children: w.NW.string(w.t["4GSygo"])
+        children: S.NW.string(S.t["4GSygo"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: w.NW.string(w.t.Kq7FAQ)
-      }), (0, r.jsx)(E.Wu, {
-        className: P.advancedModeToggle,
+        children: S.NW.string(S.t.Kq7FAQ)
+      }), (0, r.jsx)(O.Wu, {
+        className: T.advancedModeToggle,
         guildId: n.id
       }), g ? null : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(B, {
+        children: [(0, r.jsx)(P, {
           guild: n
-        }), (0, r.jsx)(I.Z, {
-          className: P.channelBrowserOuter,
+        }), (0, r.jsx)(y.Z, {
+          className: T.channelBrowserOuter,
           guild: n,
-          categories: A,
+          categories: c,
           channels: o,
           hasSidebar: !1
         })]
-      }), d && (0, r.jsxs)(r.Fragment, {
+      }), u && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: P.largeSeparator
+          className: T.largeSeparator
         }), (0, r.jsx)(a.X6q, {
-          className: P.prejoinHeader,
+          className: T.prejoinHeader,
           variant: "heading-lg/extrabold",
-          children: w.NW.string(w.t.g2Rnpa)
+          children: S.NW.string(S.t.g2Rnpa)
         }), (0, r.jsx)(a.Text, {
-          className: P.prejoinSubHeader,
+          className: T.prejoinSubHeader,
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: w.NW.string(w.t.bLDQ1d)
+          children: S.NW.string(S.t.bLDQ1d)
         }), (0, r.jsx)("div", {
-          ref: u,
-          className: P.advancedModeQuestions,
-          children: (0, r.jsx)(y.Z, {
+          ref: m,
+          className: T.advancedModeQuestions,
+          children: (0, r.jsx)(E.Z, {
             guildId: n.id,
             prejoinOnly: !0,
             includeCount: !0,
@@ -241,10 +241,10 @@ function D(e) {
           })
         })]
       })]
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(I.Z, {
       guild: n,
       scrollToQuestions: () => {
-        null != u.current && u.current.scrollIntoView({
+        null != m.current && m.current.scrollIntoView({
           behavior: "smooth"
         })
       }
@@ -252,20 +252,20 @@ function D(e) {
   })
 }
 
-function T() {
-  let e = (0, s.e7)([C.Z], () => C.Z.getProps().guild),
-    t = (0, s.e7)([v.Z], () => v.Z.submitting),
-    n = (0, s.e7)([N.Z], () => N.Z.advancedMode);
+function R() {
+  let e = (0, s.e7)([x.Z], () => x.Z.getProps().guild),
+    t = (0, s.e7)([N.Z], () => N.Z.submitting),
+    n = (0, s.e7)([_.Z], () => _.Z.advancedMode);
   return null == e ? null : (0, r.jsx)(l.Z, {
     onSave: () => {
-      (0, b.DO)(e).then(() => {
-        n && (0, x.rS)(e, {
+      (0, j.DO)(e).then(() => {
+        n && (0, v.rS)(e, {
           ignoreDefaultPrompt: !0
         }).catch(() => {})
       }).catch(() => {})
     },
-    onReset: b.BG,
+    onReset: j.BG,
     submitting: t,
-    onSaveText: w.NW.string(w.t.R3BPHx)
+    onSaveText: S.NW.string(S.t.R3BPHx)
   })
 }
