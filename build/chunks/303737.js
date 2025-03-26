@@ -1,7 +1,7 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
   GN: () => T,
-  be: () => I,
+  be: () => b,
   g4: () => S,
   m7: () => g,
   r4: () => h,
@@ -17,8 +17,8 @@ var r = n(991637),
   s = n(923726),
   c = n(289393),
   d = n(944537),
-  f = n(144507),
-  p = n(853439),
+  p = n(144507),
+  f = n(853439),
   E = n(981631),
   _ = n(176505);
 i().shim();
@@ -26,7 +26,7 @@ let O = {};
 
 function g(e) {
   let t = (0, l.e7)([u.Z], () => u.Z.getChannel(e)),
-    n = (0, l.e7)([p.Z], () => p.Z.getChannel(e));
+    n = (0, l.e7)([f.Z], () => f.Z.getChannel(e));
   return null != t ? t : n
 }
 
@@ -44,14 +44,14 @@ function S(e, t, n) {
   });
   let s = new Set(u.concat(a));
   if (!s.has(n)) return null;
-  let f = t.indexOf(n);
-  if (-1 === f) return null;
-  let p = [];
-  for (let e = f + 1; e < t.length && (s.has(t[e]) || p.push(t[e]), 3 !== p.length); e++);
-  return p
+  let p = t.indexOf(n);
+  if (-1 === p) return null;
+  let f = [];
+  for (let e = p + 1; e < t.length && (s.has(t[e]) || f.push(t[e]), 3 !== f.length); e++);
+  return f
 }
 
-function b(e) {
+function I(e) {
   let t = d.n.getState().editStateIdsForGroup[e],
     n = d.n.getState().listings,
     r = new Set;
@@ -59,12 +59,12 @@ function b(e) {
     var t;
     let i = null === (t = n[e]) || void 0 === t ? void 0 : t.channelBenefits;
     null == i || i.forEach(e => {
-      null != p.Z.getChannel(e.ref_id) && r.add(e.ref_id)
+      null != f.Z.getChannel(e.ref_id) && r.add(e.ref_id)
     })
   });
   let i = [];
   for (let t of r) {
-    let n = p.Z.getChannel(t);
+    let n = f.Z.getChannel(t);
     if (null != n) {
       let t = n.set("guild_id", e);
       i.push(t)
@@ -73,8 +73,8 @@ function b(e) {
   return i
 }
 
-function I(e) {
-  let t = b(e);
+function b(e) {
+  let t = I(e);
   O[e] = t, t.forEach(e => {
     let t = e.set("flags", _.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
     o.Z.dispatch({
@@ -86,7 +86,7 @@ function I(e) {
 
 function T(e) {
   var t;
-  (null !== (t = O[e]) && void 0 !== t ? t : b(e)).forEach(e => {
+  (null !== (t = O[e]) && void 0 !== t ? t : I(e)).forEach(e => {
     o.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
@@ -97,7 +97,7 @@ async function h(e, t) {
   let n = [],
     r = [];
   t.forEach(t => {
-    let i = p.Z.getChannel(t.ref_id);
+    let i = f.Z.getChannel(t.ref_id);
     null != i && (n.push(a.Z.createRoleSubscriptionTemplateChannel(e, i.name, i.type, i.topic)), r.push(i))
   }), 0 !== n.length && (await Promise.allSettled(n)).forEach((n, i) => {
     let l = r[i].id;
@@ -126,7 +126,7 @@ function N(e, t) {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let o = p.Z.getTemplateWithCategory(t, l);
+  let o = f.Z.getTemplateWithCategory(t, l);
   if (null == o) return {
     templateCategory: null,
     hasChangeFromTemplate: null
@@ -159,5 +159,5 @@ function N(e, t) {
 }
 
 function C(e) {
-  return (0, f.H2)(e) && e.hasFeature(E.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && (0, s.$F)() && (0, s.hQ)(e.id)
+  return (0, p.H2)(e) && e.hasFeature(E.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && (0, s.$F)() && (0, s.hQ)(e.id)
 }

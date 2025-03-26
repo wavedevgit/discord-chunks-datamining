@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => c,
+  Z: () => u,
   a: () => l
 }), n(411104);
 var r = n(774078),
@@ -13,7 +13,26 @@ var l = function(e) {
   return e[e.SHORT_TIME_LEFT = 0] = "SHORT_TIME_LEFT", e[e.LONG_TIME_LEFT = 1] = "LONG_TIME_LEFT", e[e.ENDS_IN = 2] = "ENDS_IN", e[e.SHORT_TIME = 3] = "SHORT_TIME", e
 }({});
 
-function c(e, t) {
+function c(e) {
+  return e.days > 0 ? {
+    days: e.days + 1,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  } : e.hours > 11 ? {
+    days: 1,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  } : e.minutes > 45 ? {
+    days: 0,
+    hours: 1,
+    minutes: 0,
+    seconds: 0
+  } : e
+}
+
+function u(e, t) {
   let n;
   switch (t) {
     case 0:
@@ -47,12 +66,12 @@ function c(e, t) {
     default:
       throw Error("Unknown messageType (".concat(t, ") when rendering time left"))
   }
-  let l = (0, r.Z)(e.toDate(), s),
-    c = "";
+  let l = c((0, r.Z)(e.toDate(), s)),
+    u = "";
   try {
-    c = (0, i.QX)(l, n)
+    u = (0, i.QX)(l, n)
   } catch (e) {
     o.Z.captureMessage("Error trying to format string for fractional nitro duration pill")
   }
-  return c
+  return u
 }

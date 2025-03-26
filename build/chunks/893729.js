@@ -1,4 +1,4 @@
-/** Chunk was on 15909 **/
+/** Chunk was on 99120 **/
 n.d(t, {
   Z: () => y
 });
@@ -8,11 +8,11 @@ var r = n(200651),
   l = n.n(o),
   a = n(442837),
   s = n(481060),
-  u = n(518738),
-  c = n(786761),
+  c = n(518738),
+  u = n(786761),
   d = n(3148),
-  f = n(753206),
-  p = n(594174),
+  p = n(753206),
+  f = n(594174),
   v = n(5192),
   g = n(981631),
   m = n(388032),
@@ -26,9 +26,9 @@ function y(e) {
     theme: y,
     content: h = m.NW.string(m.t["6OSasb"]),
     className: O
-  } = e, _ = (0, a.e7)([p.default], () => p.default.getCurrentUser()), j = v.ZP.useName(n, null, _), S = (0, u.Kz)(o), E = i.useMemo(() => {
+  } = e, _ = (0, a.e7)([f.default], () => f.default.getCurrentUser()), j = v.ZP.useName(n, null, _), S = (0, c.Kz)(o), E = i.useMemo(() => {
     var e, t;
-    return (0, c.e5)((e = function(e) {
+    return (0, u.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -74,7 +74,7 @@ function y(e) {
     theme: y,
     children: e => (0, r.jsx)("div", {
       className: l()(e, b.container, O),
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(p.Z, {
         hideTimestamp: !0,
         author: w,
         roleIcon: S,

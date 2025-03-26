@@ -1,4 +1,4 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
   Je: () => a,
   gs: () => d,
@@ -17,7 +17,7 @@ let a = async (e, t, n) => {
       createNewRole: c,
       unlinkRole: d
     } = n,
-    f = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -52,7 +52,7 @@ let a = async (e, t, n) => {
           })
         }
         return e
-      }({}, f), a = {
+      }({}, p), a = {
         image_name: s,
         price_tier: u,
         create_new_role: c,

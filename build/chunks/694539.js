@@ -26,31 +26,31 @@ let E = e => {
     back: n
   } = e, {
     upsertConfig: s
-  } = (0, h.E)(), E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [j, C] = i.useState(!0), O = i.useRef(null), [v, S] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState(!1), [P, R] = i.useState([]), [D, Z] = i.useState(t.name);
+  } = (0, h.E)(), E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [j, C] = i.useState(!0), O = i.useRef(null), [v, S] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState([]), [P, R] = i.useState(t.name);
   i.useEffect(() => {
     let e = t.config.effects;
-    e.length > 0 && R([...e].map(e => (e.src = (0, u.$j)(e.base64), e)))
+    e.length > 0 && A([...e].map(e => (e.src = (0, u.$j)(e.base64), e)))
   }, [t]);
-  let w = {
+  let D = {
       effect: t,
       upsertConfig: s
     },
-    k = i.useRef(w);
+    Z = i.useRef(D);
   return (i.useEffect(() => {
-    k.current = w
+    Z.current = D
   }), i.useEffect(() => {
     let {
       effect: e,
       upsertConfig: t
-    } = k.current;
+    } = Z.current;
     t({
       id: e.id,
-      name: D,
+      name: P,
       config: {
-        effects: P
+        effects: y
       }
     })
-  }, [P, D]), null == E) ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
+  }, [y, P]), null == E) ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
     className: N.root,
     children: [(0, r.jsx)("div", {
       className: a()(N.row, N.end),
@@ -73,7 +73,7 @@ let E = e => {
             description: "debug",
             accessibilityLabel: "debug",
             reducedMotionSrc: "",
-            effects: y ? (0, f.Tp)(P) : P,
+            effects: y,
             animationType: 0
           },
           profileEffectId: "debug"
@@ -87,10 +87,10 @@ let E = e => {
             children: "Profile Effect Name"
           }), (0, r.jsx)("input", {
             type: "text",
-            value: D,
+            value: P,
             className: N.input,
             onChange: e => {
-              Z(e.target.value)
+              R(e.target.value)
             }
           })]
         }), (0, r.jsxs)("div", {
@@ -121,19 +121,6 @@ let E = e => {
                 I(!T)
               }
             })]
-          }), (0, r.jsxs)("div", {
-            className: N.row,
-            children: [(0, r.jsx)(c.Text, {
-              variant: "text-md/normal",
-              children: "Simulate Android"
-            }), (0, r.jsx)("input", {
-              type: "checkbox",
-              checked: y,
-              className: N.checkBox,
-              onChange: () => {
-                A(!y)
-              }
-            })]
           })]
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsxs)("div", {
@@ -151,8 +138,8 @@ let E = e => {
                   r = new FileReader;
                 r.onload = async e => {
                   if (null == e.target || "string" != typeof e.target.result) return;
-                  let t = await (0, f.Xv)(URL.createObjectURL(n), e.target.result, n, P.length);
-                  R(e => [...e, t])
+                  let t = await (0, f.X)(URL.createObjectURL(n), e.target.result, n, y.length);
+                  A(e => [...e, t])
                 }, r.readAsDataURL(n)
               },
               multiple: !1
@@ -167,7 +154,7 @@ let E = e => {
             color: c.Ttl.RED,
             look: c.iLD.LINK,
             onClick: () => {
-              R([])
+              A([])
             },
             children: "Clear Assets"
           }), (0, r.jsx)(c.zxk, {
@@ -179,7 +166,7 @@ let E = e => {
           }), (0, r.jsx)(c.zxk, {
             color: c.Ttl.BRAND,
             onClick: () => {
-              (0, p.JG)((0, f.HV)(P, "proto")), (0, c.showToast)((0, c.createToast)("Copied to clipboard!", c.ToastType.SUCCESS))
+              (0, p.JG)((0, f.H)(y, "proto")), (0, c.showToast)((0, c.createToast)("Copied to clipboard!", c.ToastType.SUCCESS))
             },
             children: "Export"
           })]
@@ -198,7 +185,7 @@ let E = e => {
             },
             children: "Share"
           })]
-        }), P.some(e => {
+        }), y.some(e => {
           var t;
           return (null !== (t = e.randomizedSources) && void 0 !== t ? t : []).length > 0
         }) && (0, r.jsxs)("div", {
@@ -233,7 +220,7 @@ let E = e => {
                 description: "debug",
                 accessibilityLabel: "debug",
                 reducedMotionSrc: "",
-                effects: y ? (0, f.Tp)(P) : P,
+                effects: y,
                 animationType: 0
               },
               profileEffectId: "debug"
@@ -242,7 +229,7 @@ let E = e => {
         })]
       }), (0, r.jsx)("div", {
         className: a()(N.grid, N.layers),
-        children: P.map((e, t) => {
+        children: y.map((e, t) => {
           var n;
           return (0, r.jsxs)("div", {
             className: N.layerForm,
@@ -269,7 +256,7 @@ let E = e => {
                   value: e.start,
                   className: N.input,
                   onChange: e => {
-                    R(n => {
+                    A(n => {
                       let r = [...n],
                         i = n[t];
                       return i.start = +e.target.value, r[t] = i, r
@@ -287,7 +274,7 @@ let E = e => {
                   value: e.duration,
                   className: N.input,
                   onChange: e => {
-                    R(n => {
+                    A(n => {
                       let r = [...n],
                         i = n[t];
                       return i.duration = +e.target.value, r[t] = i, r
@@ -308,7 +295,7 @@ let E = e => {
                   checked: e.loop,
                   className: N.checkBox,
                   onChange: e => {
-                    R(n => {
+                    A(n => {
                       let r = [...n],
                         i = n[t];
                       return i.loop = e.target.checked, r[t] = i, r
@@ -326,7 +313,7 @@ let E = e => {
                     value: e.loopDelay,
                     className: N.input,
                     onChange: e => {
-                      R(n => {
+                      A(n => {
                         let r = [...n],
                           i = n[t];
                         return i.loopDelay = +e.target.value, r[t] = i, r
@@ -352,7 +339,7 @@ let E = e => {
                     let r = n[0],
                       i = new FileReader;
                     i.onload = e => {
-                      R(n => {
+                      A(n => {
                         if (null == e.target || "string" != typeof e.target.result) return n;
                         let r = [...n];
                         return null == n[t].randomizedSources && (n[t].randomizedSources = []), n[t].randomizedSources.push({
@@ -367,7 +354,7 @@ let E = e => {
                 color: c.Ttl.RED,
                 look: c.iLD.LINK,
                 onClick: () => {
-                  R(t => t.filter(t => t !== e))
+                  A(t => t.filter(t => t !== e))
                 },
                 children: "Remove Layer"
               })]

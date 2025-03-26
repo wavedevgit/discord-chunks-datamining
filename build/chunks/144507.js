@@ -1,9 +1,9 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
   $D: () => _,
   H2: () => O,
   MO: () => E,
-  X$: () => p,
+  X$: () => f,
   d5: () => d
 });
 var r, i = n(442837),
@@ -15,7 +15,7 @@ var r, i = n(442837),
   c = n(981631),
   d = ((r = {})[r.NONE = 0] = "NONE", r[r.WAITLIST_ONLY = 1] = "WAITLIST_ONLY", r[r.NEEDS_COMMUNITY = 2] = "NEEDS_COMMUNITY", r[r.VISIBLE = 3] = "VISIBLE", r);
 
-function f(e) {
+function p(e) {
   if (e.guild.hasFeature(c.oNc.CREATOR_MONETIZABLE_DISABLED)) return 0;
   if (function(e) {
       let {
@@ -40,8 +40,8 @@ function f(e) {
   return n && !r && i ? 1 : n && i && (l || o) && !t.hasFeature(c.oNc.COMMUNITY) ? 2 : 0
 }
 
-function p(e) {
-  return 0 !== f(e)
+function f(e) {
+  return 0 !== p(e)
 }
 
 function E(e) {
@@ -55,9 +55,9 @@ function E(e) {
     }),
     d = (0, l.Sd)(),
     {
-      shouldRestrictUpdatingCreatorMonetizationSettings: p
+      shouldRestrictUpdatingCreatorMonetizationSettings: f
     } = (0, o.gX)(null == e ? void 0 : e.id);
-  return null == e ? 0 : f({
+  return null == e ? 0 : p({
     guild: e,
     isOwner: c,
     canManageGuildRoleSubscriptions: a,
@@ -65,7 +65,7 @@ function E(e) {
     isMonetizationWaitlistEnabledForGuild: r,
     isExpeditedMonetizationOnboardingGuild: n,
     isUserInCreatorMonetizationEligibleCountry: d,
-    shouldRestrictUpdatingRoleSubscriptionSettings: p
+    shouldRestrictUpdatingRoleSubscriptionSettings: f
   })
 }
 

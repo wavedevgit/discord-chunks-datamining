@@ -1,14 +1,14 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  o: () => s
+  o: () => a
 });
 var r = n(200651);
 n(192379);
 var o = n(692547),
   i = n(390507),
   l = n(325767);
-let s = e => {
-  var t, n, s, a, {
+let a = e => {
+  var t, n, a, s, {
       size: c = "md",
       width: u,
       height: d,
@@ -30,8 +30,8 @@ let s = e => {
       return o
     }(e, ["size", "width", "height", "color"]);
   let f = (0, i.m)(c),
-    v = null !== (s = null == f ? void 0 : f.width) && void 0 !== s ? s : u,
-    g = null !== (a = null == f ? void 0 : f.height) && void 0 !== a ? a : d;
+    v = null !== (a = null == f ? void 0 : f.width) && void 0 !== a ? a : u,
+    g = null !== (s = null == f ? void 0 : f.height) && void 0 !== s ? s : d;
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

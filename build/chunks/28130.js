@@ -15,14 +15,14 @@ var r = n(200651),
   f = n(430824),
   m = n(914010),
   g = n(594174),
-  j = n(451478),
-  b = n(626135),
+  b = n(451478),
+  j = n(626135),
   x = n(74538),
   h = n(621961),
   y = n(884858),
   O = n(981631),
-  N = n(486324),
-  v = n(869783),
+  v = n(486324),
+  N = n(869783),
   C = n(388032),
   A = n(768076);
 
@@ -132,7 +132,7 @@ function R(e) {
       guild: l
     }), (0, r.jsxs)("div", {
       className: A.optionBoxDescription,
-      children: [n === N.pC.BANNER && (0, r.jsx)(i.DY3, {
+      children: [n === v.pC.BANNER && (0, r.jsx)(i.DY3, {
         className: A.nitroWheelFlairContainer,
         text: C.NW.string(C.t["5AFxuL"]),
         children: (0, r.jsx)(i.SrA, {
@@ -155,16 +155,16 @@ function _(e) {
     showUpsellHeader: _,
     filters: k,
     analyticsLocation: F,
-    analyticsLocations: L = [],
-    modalSubTitle: Z,
-    imageSpecifications: I,
+    analyticsLocations: Z = [],
+    modalSubTitle: I,
+    imageSpecifications: L,
     modalTitle: D = C.NW.string(C.t.DToW4e),
     uploadOptionTitle: W = C.NW.string(C.t["MsUY/f"])
-  } = e, M = (0, a.e7)([j.Z], () => j.Z.isFocused()), U = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), z = (0, a.e7)([f.Z], () => f.Z.getGuild(B)), {
+  } = e, M = (0, a.e7)([b.Z], () => b.Z.isFocused()), U = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), z = (0, a.e7)([f.Z], () => f.Z.getGuild(B)), {
     reducedMotion: H
-  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(U) && P === N.pC.AVATAR, {
+  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(U) && P === v.pC.AVATAR, {
     analyticsLocations: X
-  } = (0, s.ZP)(L, o.Z.SELECT_IMAGE_MODAL);
+  } = (0, s.ZP)(Z, o.Z.SELECT_IMAGE_MODAL);
 
   function q(e) {
     let {
@@ -179,16 +179,16 @@ function _(e) {
     })
   }
   l.useEffect(() => {
-    V && b.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+    V && j.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location_stack: X
-    }), b.default.track(O.rMx.OPEN_MODAL, {
+    }), j.default.track(O.rMx.OPEN_MODAL, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: F
     })
   }, [V, F, X]);
-  let Y = P === N.pC.AVATAR || P === N.pC.BANNER,
-    K = (0, d.M)(!Y);
+  let Y = P === v.pC.AVATAR || P === v.pC.BANNER,
+    J = (0, d.M)(!Y);
   return (0, r.jsxs)(i.Y0X, {
     transitionState: t,
     size: i.CgR.SMALL,
@@ -200,9 +200,9 @@ function _(e) {
           tag: i.RB0.H1,
           className: A.modalTitle,
           children: D
-        }), null != Z ? (0, r.jsx)(i.Text, {
+        }), null != I ? (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: Z
+          children: I
         }) : null]
       }), (0, r.jsx)(i.olH, {
         onClick: c,
@@ -231,7 +231,7 @@ function _(e) {
             })
           }), (0, r.jsx)(u.ZP, {
             onChange: function(e, t) {
-              if (t.type === v.m.MP4) return q({
+              if (t.type === N.m.MP4) return q({
                 imageUri: e,
                 file: t
               });
@@ -308,11 +308,11 @@ function _(e) {
             })
           })]
         })]
-      }), null != I ? (0, r.jsx)(i.Text, {
+      }), null != L ? (0, r.jsx)(i.Text, {
         className: A.imageSpecifications,
         variant: "text-sm/normal",
-        children: I
-      }) : null, _ && K && (0, r.jsx)(p.Z, {
+        children: L
+      }) : null, _ && J && (0, r.jsx)(p.Z, {
         uploadType: P,
         showUpsell: !0,
         position: "inline",

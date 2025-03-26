@@ -1,4 +1,4 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
   NB: () => o,
   ar: () => c,
@@ -64,13 +64,13 @@ function s(e) {
     hasUnsavedAttachmentChanges: c
   } = e, d = {};
   (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != s && "" !== s.name.trim() ? d.createNewRole = !0 : null === s && (d.unlinkRole = !0), o.startsWith("data:") && (u || null == n && (Object.keys(d).length > 0 || c)) && (d.image = o, d.imageName = a);
-  let f = Object.keys(d).length > 0 || c;
+  let p = Object.keys(d).length > 0 || c;
   return {
     changes: d,
-    hasUnsavedChanges: f,
-    canSaveForDraft: f,
-    canSaveForPublished: f,
-    canPublishOrUnpublish: !(null == n || f)
+    hasUnsavedChanges: p,
+    canSaveForDraft: p,
+    canSaveForPublished: p,
+    canPublishOrUnpublish: !(null == n || p)
   }
 }
 

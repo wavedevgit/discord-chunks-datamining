@@ -1,6 +1,6 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r, i, l, o = n(442837),
   a = n(570140),
@@ -8,7 +8,7 @@ var r, i, l, o = n(442837),
   s = n(592125);
 let c = {},
   d = {};
-class f extends(l = o.ZP.Store) {
+class p extends(l = o.ZP.Store) {
   getTemplates(e) {
     return c[e]
   }
@@ -20,13 +20,13 @@ class f extends(l = o.ZP.Store) {
     return d[e]
   }
 }
-i = "GuildRoleSubscriptionTierTemplatesStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
+i = "GuildRoleSubscriptionTierTemplatesStore", (r = "displayName") in p ? Object.defineProperty(p, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[r] = i;
-let p = new f(a.Z, {
+}) : p[r] = i;
+let f = new p(a.Z, {
   GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS: function(e) {
     let {
       selectedTemplate: t,

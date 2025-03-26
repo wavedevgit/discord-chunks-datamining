@@ -1,6 +1,6 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  z: () => s
+  z: () => a
 });
 var r = n(818083),
   o = n(520278),
@@ -26,4 +26,4 @@ let l = (0, r.B)({
       }
     }]
   }),
-  s = (e, t) => (0, o.J)(l, i.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)
+  a = (e, t) => (0, o.J)(l, i.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)

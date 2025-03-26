@@ -1,6 +1,6 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
-  b: () => f,
+  b: () => p,
   t: () => d
 });
 var r = n(200651);
@@ -45,7 +45,7 @@ function d() {
   })
 }
 
-function f() {
+function p() {
   return (0, r.jsx)(c, {
     label: u.NW.string(u.t.TgsPaG),
     icon: i.vdY,

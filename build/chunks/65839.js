@@ -8,7 +8,7 @@ var r = n(200651),
   o = n.n(l),
   a = n(399606),
   s = n(481060),
-  c = n(112724),
+  c = n(393238),
   u = n(430824),
   d = n(496675),
   p = n(768581),
@@ -20,25 +20,28 @@ var r = n(200651),
   _ = n(301249),
   C = n(584354),
   v = n(725060);
-let y = (0, c.Z)(e => {
+let y = e => {
   let {
     searchQuery: t,
     setSearchQuery: n,
     handleClearSearch: i,
-    handleSearchKeyPress: l,
-    width: a
-  } = e, c = null != a && a <= 800;
+    handleSearchKeyPress: l
+  } = e, {
+    ref: a,
+    width: u
+  } = (0, c.Z)(), d = null != u && u <= 800;
   return (0, r.jsxs)("div", {
+    ref: a,
     className: _.header,
     children: [(0, r.jsx)("img", {
       alt: "",
       className: _.headerImage,
-      src: c ? v : C
+      src: d ? v : C
     }), (0, r.jsx)("div", {
       className: _.headerContentWrapper,
       children: (0, r.jsxs)("div", {
         className: o()(_.headerContent, {
-          [_.headerContentSmall]: c
+          [_.headerContentSmall]: d
         }),
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
@@ -64,7 +67,7 @@ let y = (0, c.Z)(e => {
       })
     })]
   })
-});
+};
 
 function x(e) {
   let {

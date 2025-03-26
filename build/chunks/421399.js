@@ -1,8 +1,8 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => I,
-  a: () => R
-}), r(47120);
+  Z: () => E,
+  a: () => N
+});
 var n, i = r(200651),
   o = r(192379),
   l = r(120356),
@@ -10,23 +10,22 @@ var n, i = r(200651),
   c = r(873546),
   s = r(442837),
   u = r(481060),
-  m = r(493773),
-  p = r(607070),
-  d = r(100527),
-  f = r(906732),
-  b = r(385499),
-  y = r(979264),
-  g = r(372900),
-  O = r(477734),
-  j = r(823415),
+  m = r(607070),
+  p = r(100527),
+  d = r(906732),
+  f = r(385499),
+  b = r(979264),
+  y = r(372900),
+  g = r(477734),
+  O = r(823415),
+  j = r(754047),
   h = r(184301),
   v = r(768581),
   x = r(463396),
   P = r(981631),
-  S = r(228168),
-  T = r(432957);
+  S = r(432957);
 
-function w(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -45,7 +44,7 @@ function w(e) {
   return e
 }
 
-function N(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,96 +56,96 @@ function N(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-var R = ((n = {})[n.SYSTEM_TAG = 0] = "SYSTEM_TAG", n[n.BADGES = 1] = "BADGES", n);
+var N = ((n = {})[n.SYSTEM_TAG = 0] = "SYSTEM_TAG", n[n.BADGES = 1] = "BADGES", n);
 
-function E(e) {
+function R(e) {
   let {
     compact: t
   } = e;
-  return (0, i.jsx)(b.Z, {
-    className: t ? T.botTagCompact : T.botTagCozy,
-    type: b.Z.Types.REMIX,
+  return (0, i.jsx)(f.Z, {
+    className: t ? S.botTagCompact : S.botTagCozy,
+    type: f.Z.Types.REMIX,
     useRemSizes: !0
   })
 }
 
-function I(e) {
+function E(e) {
   var t;
   let r, {
       author: n,
       message: l,
-      channel: b,
-      userOverride: R,
-      compact: I = !1,
-      withMentionPrefix: C = !1,
-      showPopout: k = !1,
-      className: A,
+      channel: f,
+      userOverride: N,
+      compact: E = !1,
+      withMentionPrefix: I = !1,
+      showPopout: C = !1,
+      className: k,
       onClick: Z,
-      onContextMenu: _,
-      onPopoutRequestClose: D,
-      renderPopout: F,
-      renderRemixTag: L = !1,
-      decorations: M
+      onContextMenu: A,
+      onPopoutRequestClose: _,
+      renderPopout: D,
+      renderRemixTag: M = !1,
+      decorations: L
     } = e,
-    G = o.useContext(g.Z),
-    B = null !== (t = null == b ? void 0 : b.guild_id) && void 0 !== t ? t : G,
+    F = o.useContext(y.Z),
+    G = null !== (t = null == f ? void 0 : f.guild_id) && void 0 !== t ? t : F,
     {
-      analyticsLocations: z
-    } = (0, f.ZP)(d.Z.USERNAME),
+      analyticsLocations: B
+    } = (0, d.ZP)(p.Z.USERNAME),
     {
-      nick: U,
-      colorString: W,
-      colorRoleName: H
+      nick: z,
+      colorString: U,
+      colorRoleName: W
     } = n,
-    J = null != l.messageReference && null != l.webhookId && l.hasFlag(P.iLy.IS_CROSSPOST),
-    X = (0, s.e7)([p.Z], () => p.Z.roleStyle),
-    V = (0, O.X$)(),
-    Y = {
-      className: T.username,
-      style: "username" === X && null != W ? {
-        color: W
+    H = null != l.messageReference && null != l.webhookId && l.hasFlag(P.iLy.IS_CROSSPOST),
+    J = (0, s.e7)([m.Z], () => m.Z.roleStyle),
+    X = (0, g.X$)(),
+    V = {
+      className: S.username,
+      style: "username" === J && null != U ? {
+        color: U
       } : void 0,
       onClick: Z,
-      onContextMenu: _,
-      children: (C ? "@" : "") + U
+      onContextMenu: A,
+      children: (I ? "@" : "") + z
     };
 
-  function $() {
-    let e = null != R ? R : l.author;
-    return (0, h.Z)(e.id, null != n.guildMemberAvatar && null != B ? (0, v.JM)({
-      guildId: B,
+  function Y() {
+    let e = null != N ? N : l.author;
+    return (0, h.Z)(e.id, null != n.guildMemberAvatar && null != G ? (0, v.JM)({
+      guildId: G,
       userId: e.id,
       avatar: n.guildMemberAvatar,
       size: 80
-    }) : e.getAvatarURL(B, 80), {
-      guildId: B,
+    }) : e.getAvatarURL(G, 80), {
+      guildId: G,
       channelId: l.channel_id
     })
   }
-  let q = o.useMemo(() => I ? (0, i.jsx)(y.ZP, {
+  let q = o.useMemo(() => E ? (0, i.jsx)(b.ZP, {
       primaryGuild: n.primaryGuild,
       userId: l.author.id,
-      contextGuildId: B,
-      className: T.clanTagChiplet
-    }) : null, [I, n.primaryGuild, B, l.author.id]),
-    Q = (0, j.nT)({
+      contextGuildId: G,
+      className: S.clanTagChiplet
+    }) : null, [E, n.primaryGuild, G, l.author.id]),
+    $ = (0, O.nT)({
       location: "BaseUsername"
     }),
-    [K, ee] = o.useState(!1),
-    et = o.useRef(void 0),
-    er = o.useRef(void 0),
-    en = o.useRef(void 0);
-  (0, m.ZP)(() => () => {
-    clearTimeout(et.current), clearTimeout(er.current), clearTimeout(en.current)
-  });
-  let ei = o.useRef(!1);
-  if (null != F && null != k) {
+    {
+      showPopoutFromHover: Q,
+      handleMouseEnter: K,
+      handleMouseLeave: ee
+    } = (0, j.Z)({
+      shouldShowPopoutOnHover: $,
+      handlePreload: Y
+    });
+  if (null != D && null != C) {
     let e = (0, i.jsx)(u.yRy, {
-      preload: J ? void 0 : $,
-      renderPopout: F,
-      shouldShow: k || K,
+      preload: H ? void 0 : Y,
+      renderPopout: D,
+      shouldShow: C || Q,
       position: c.tq ? "window_center" : "right",
-      onRequestClose: D,
+      onRequestClose: _,
       children: e => {
         var {
           onClick: t
@@ -166,50 +165,40 @@ function I(e) {
           return i
         }(e, ["onClick"]);
         return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(u.P3F, N(w({
+          children: [(0, i.jsx)(u.P3F, w(T({
             tag: "span"
-          }, r, Y), {
-            className: a()(Y.className, T.clickable, A)
+          }, r, V), {
+            className: a()(V.className, S.clickable, k)
           })), q]
         })
       }
     });
-    r = Q ? (0, i.jsx)("div", {
-      className: T.hoverable,
-      onMouseEnter: () => {
-        Q && (ei.current = !0, et.current = setTimeout(() => {
-          ei.current && $()
-        }, S.a6), er.current = setTimeout(() => {
-          ei.current && ee(!0)
-        }, S.JX))
-      },
-      onMouseLeave: () => {
-        Q && (ei.current = !1, en.current = setTimeout(() => {
-          ei.current || ee(!1)
-        }, S.Ig))
-      },
+    r = $ ? (0, i.jsx)("div", {
+      className: S.hoverable,
+      onMouseEnter: K,
+      onMouseLeave: ee,
       children: e
     }) : e
   } else r = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(u.P3F, N(w({}, Y), {
-      className: a()(Y.className, A)
+    children: [(0, i.jsx)(u.P3F, w(T({}, V), {
+      className: a()(V.className, k)
     })), q]
   });
-  let eo = null != M ? M[0] : null,
-    el = null != M ? M[1] : null;
-  return (0, i.jsxs)(f.Gt, {
-    value: z,
-    children: [null != eo && I ? (0, i.jsxs)(i.Fragment, {
-      children: [" ", eo, " "]
-    }) : null, "dot" === X ? (0, i.jsx)(u.FhE, {
-      color: W,
-      name: H,
-      className: T.roleDot
-    }) : null, r, !I && (0, i.jsx)(y.ZP, {
+  let et = null != L ? L[0] : null,
+    er = null != L ? L[1] : null;
+  return (0, i.jsxs)(d.Gt, {
+    value: B,
+    children: [null != et && E ? (0, i.jsxs)(i.Fragment, {
+      children: [" ", et, " "]
+    }) : null, "dot" === J ? (0, i.jsx)(u.FhE, {
+      color: U,
+      name: W,
+      className: S.roleDot
+    }) : null, r, !E && (0, i.jsx)(b.ZP, {
       primaryGuild: n.primaryGuild,
       userId: l.author.id,
-      contextGuildId: B,
-      className: T.clanTagChiplet
-    }), null != el ? el : null, null == eo || I ? null : eo, null != l && (0, x.f)(l) && V && L ? (0, i.jsx)(E, {}) : null]
+      contextGuildId: G,
+      className: S.clanTagChiplet
+    }), null != er ? er : null, null == et || E ? null : et, null != l && (0, x.f)(l) && X && M ? (0, i.jsx)(R, {}) : null]
   })
 }

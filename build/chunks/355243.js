@@ -6,8 +6,8 @@ var r = n(200651),
   o = n(192379),
   i = n(120356),
   l = n.n(i),
-  s = n(481060),
-  a = n(393903),
+  a = n(481060),
+  s = n(393903),
   c = n(604162),
   u = n(420212),
   d = n(463303);
@@ -31,14 +31,14 @@ function f(e) {
     maxSeekableTime: E,
     onClick: b,
     onScrubBack: O,
-    onScrubForward: h
-  } = e, [S, C] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
+    onScrubForward: S
+  } = e, [h, C] = o.useState(null), [j, y] = o.useState(null), [_, x] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
     P.current = e, C(e)
   };
   o.useEffect(() => {
-    null != S && (null == E ? x(null) : x(p(E, g, S)))
-  }, [S, E, g]);
-  let I = (0, a.y)(() => {
+    null != h && (null == E ? x(null) : x(p(E, g, h)))
+  }, [h, E, g]);
+  let I = (0, s.y)(() => {
     null != I.current && T(I.current.getBoundingClientRect())
   });
   o.useLayoutEffect(() => {
@@ -56,17 +56,17 @@ function f(e) {
       let {
         key: t
       } = e;
-      t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != h && (e.preventDefault(), e.stopPropagation(), h())
-    }, [O, h]),
-    k = null != j && null != S ? m(j, S, g) : 0,
+      t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
+    }, [O, S]),
+    k = null != j && null != h ? m(j, h, g) : 0,
     L = (0, c.yv)(k),
-    R = null != S ? S.right - p(t / 100 * g, g, S) : null,
-    M = null != j && null != S ? S.right - j : null,
-    V = null != _ && null != S ? S.right - _ : null;
+    R = null != h ? h.right - p(t / 100 * g, g, h) : null,
+    M = null != j && null != h ? h.right - j : null,
+    V = null != _ && null != h ? h.right - _ : null;
   return (0, r.jsxs)("div", {
     className: d.cont,
     ref: I,
-    children: [(0, r.jsxs)(s.P3F, {
+    children: [(0, r.jsxs)(a.P3F, {
       className: l()(d.hitboxArea, {
         [d.interactionEnabled]: i
       }),
@@ -105,14 +105,14 @@ function f(e) {
           right: null != V ? "".concat(V, "px") : "auto",
           opacity: +(null != V)
         }
-      }), (0, r.jsx)(s.Exd, {
+      }), (0, r.jsx)(a.Exd, {
         className: d.progress,
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != f ? f : void 0,
-        size: D ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
+        size: D ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != L && (0, r.jsx)(s.Text, {
+      }), D && null != L && (0, r.jsx)(a.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {

@@ -1,10 +1,10 @@
-/** Chunk was on 15909 **/
+/** Chunk was on 99120 **/
 n.d(t, {
   JE: () => a,
   ab: () => l,
   iG: () => s,
-  lL: () => c,
-  rC: () => u
+  lL: () => u,
+  rC: () => c
 });
 var r = n(293810),
   i = n(474936),
@@ -57,10 +57,10 @@ function s(e) {
   }
 }
 
-function u(e) {
+function c(e) {
   return e.ref_type === r.Qs.CHANNEL
 }
 
-function c(e) {
+function u(e) {
   return e.ref_type === r.Qs.INTANGIBLE
 }

@@ -41,12 +41,12 @@ function l(e) {
     getCurrentVideoTime: t,
     isPlaying: n,
     isMetadataLoaded: l,
-    isInitialSeekComplete: s,
-    onAnalytics: a,
+    isInitialSeekComplete: a,
+    onAnalytics: s,
     emitIntervalMs: c,
     minSegmentDurationMs: u
   } = e, [d, m] = r.useState(null), p = (0, r.useRef)(null), f = (0, r.useRef)(Date.now()), v = (0, r.useRef)(!1), g = (0, r.useCallback)(e => {
-    !(e.segmentEndSec < e.segmentStartSec) && a({
+    !(e.segmentEndSec < e.segmentStartSec) && s({
       start_time: e.startTime,
       end_time: e.endTime,
       duration: e.endTime - e.startTime,
@@ -54,9 +54,9 @@ function l(e) {
       segment_end_sec: e.segmentEndSec,
       segment_duration_sec: e.segmentEndSec - e.segmentStartSec
     })
-  }, [a]), E = (0, r.useCallback)(() => {
+  }, [s]), E = (0, r.useCallback)(() => {
     let e = t();
-    if (null != e && l && s) {
+    if (null != e && l && a) {
       let t = Date.now();
       m({
         startTime: t,
@@ -65,7 +65,7 @@ function l(e) {
         segmentEndSec: e
       }), v.current = !0
     }
-  }, [t, l, s]), b = (0, r.useCallback)(() => {
+  }, [t, l, a]), b = (0, r.useCallback)(() => {
     let e = t();
     if (null == e || null == d) return;
     let n = Date.now();
@@ -80,9 +80,9 @@ function l(e) {
     }), f.current = n)
   }, [d, g, c, u, t]);
   return (0, r.useEffect)(() => {
-    l && s || (m(null), v.current = !1)
-  }, [l, s]), (0, r.useEffect)(() => {
-    if (n && l && s) v.current || E(), p.current = window.setInterval(() => {
+    l && a || (m(null), v.current = !1)
+  }, [l, a]), (0, r.useEffect)(() => {
+    if (n && l && a) v.current || E(), p.current = window.setInterval(() => {
       b()
     }, 200);
     else {
@@ -99,7 +99,7 @@ function l(e) {
     return () => {
       null != p.current && (clearInterval(p.current), p.current = null)
     }
-  }, [n, l, s, d, b, g, E, t]), {
+  }, [n, l, a, d, b, g, E, t]), {
     forceSendCurrentSegment: (0, r.useCallback)(() => {
       let e = t();
       if (null != d && null != e) {

@@ -82,7 +82,6 @@ async function d() {
   }
 }
 async function p(e) {
-  let t = "en-US" === u.NW.currentLocale || "en-GB" === u.NW.currentLocale;
   try {
     await r.tn.del({
       url: c.ANM.RECENT_AVATARS_DELETE(e),
@@ -90,7 +89,7 @@ async function p(e) {
     }), await a.Z.dispatch({
       type: "RECENT_AVATAR_DELETE",
       avatarId: e
-    }), l.uvj.announce(t ? u.NW.string(u.t.YJPieH) : u.NW.string(u.t.RGKjsr))
+    }), l.uvj.announce(u.NW.string(u.t.YJPieH))
   } catch (e) {
     i.Z.show({
       title: u.NW.string(u.t.iufib2),

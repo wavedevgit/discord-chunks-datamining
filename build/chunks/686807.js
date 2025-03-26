@@ -1,6 +1,6 @@
-/** Chunk was on 15909 **/
+/** Chunk was on 99120 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -9,15 +9,15 @@ var i = n(481060),
   l = n(471445),
   a = n(823379),
   s = n(303737),
-  u = n(293810),
-  c = n(388032),
+  c = n(293810),
+  u = n(388032),
   d = n(877590);
 
-function f(e) {
+function p(e) {
   let {
     channelId: t
   } = e, n = (0, s.m7)(t);
-  if (null == n) return "[".concat(c.NW.string(c.t.bz1PZW), "]");
+  if (null == n) return "[".concat(u.NW.string(u.t.bz1PZW), "]");
   let a = n.isMediaChannel() ? i.XBm : (0, l.Th)(n.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.nn4, {
@@ -34,13 +34,13 @@ function f(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   switch (e.ref_type) {
-    case u.Qs.CHANNEL:
-      return (0, r.jsx)(f, {
+    case c.Qs.CHANNEL:
+      return (0, r.jsx)(p, {
         channelId: e.ref_id
       });
-    case u.Qs.INTANGIBLE:
+    case c.Qs.INTANGIBLE:
       return e.name;
     default:
       (0, a.vE)(e)

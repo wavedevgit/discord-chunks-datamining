@@ -1,6 +1,6 @@
-/** Chunk was on 15909 **/
+/** Chunk was on 99120 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -8,15 +8,15 @@ var r = n(200651),
   l = n.n(o),
   a = n(628238),
   s = n(492593),
-  u = n(25015),
-  c = n(963550),
+  c = n(25015),
+  u = n(963550),
   d = n(845080),
-  f = n(260346);
-let p = i.memo(function(e) {
+  p = n(260346);
+let f = i.memo(function(e) {
   var t, n, i;
   let {
     message: o,
-    channel: p,
+    channel: f,
     compact: v,
     className: g,
     isGroupStart: m,
@@ -24,7 +24,7 @@ let p = i.memo(function(e) {
     disableInteraction: y
   } = e, h = (0, a.A)((null !== (t = o.editedTimestamp) && void 0 !== t ? t : o.timestamp).valueOf()), {
     content: O
-  } = (0, u.Z)(o, {
+  } = (0, c.Z)(o, {
     hideSimpleEmbedContent: b,
     allowList: h,
     allowHeading: h,
@@ -34,9 +34,9 @@ let p = i.memo(function(e) {
   return (0, r.jsx)(s.Z, {
     compact: v,
     className: l()(g, {
-      [f.message]: !0,
-      [f.cozyMessage]: !v,
-      [f.groupStart]: m
+      [p.message]: !0,
+      [p.cozyMessage]: !v,
+      [p.groupStart]: m
     }),
     childrenHeader: (0, d.Z)((n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -56,7 +56,7 @@ let p = i.memo(function(e) {
       }
       return e
     }({}, e), i = i = {
-      channel: p,
+      channel: f,
       guildId: void 0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
@@ -68,7 +68,7 @@ let p = i.memo(function(e) {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
     }), n)),
-    childrenMessageContent: (0, c.Z)(e, O),
+    childrenMessageContent: (0, u.Z)(e, O),
     disableInteraction: y
   })
 })

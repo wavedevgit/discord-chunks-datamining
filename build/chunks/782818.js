@@ -15,8 +15,8 @@ var r = n(200651),
   f = n(598989),
   m = n(898331),
   g = n(841183),
-  j = n(981631),
-  b = n(486324),
+  b = n(981631),
+  j = n(486324),
   x = n(388032),
   h = n(170286);
 
@@ -52,23 +52,23 @@ function O(e, t) {
   }), e
 }
 
-function N() {
+function v() {
   (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21907").then(n.bind(n, 53394));
     return t => (0, r.jsx)(e, y({
-      analyticsSource: j.Sbl.PROFILE_PANEL,
+      analyticsSource: b.Sbl.PROFILE_PANEL,
       analyticsLocation: {
-        section: j.jXE.USER_PROFILE,
-        object: j.qAy.RECENT_AVATARS_UPSELL
+        section: b.jXE.USER_PROFILE,
+        object: b.qAy.RECENT_AVATARS_UPSELL
       },
       onSecondaryClick: c.pTH
     }, t))
   })
 }
 
-function v(e) {
+function N(e) {
   let {
     avatar: t,
     index: n,
@@ -88,13 +88,13 @@ function v(e) {
   }), {
     onMouseEnter: f,
     onMouseLeave: m
-  } = p, j = "en-US" === x.NW.currentLocale || "en-GB" === x.NW.currentLocale, b = null != u ? u : s.substring(0, 6).toUpperCase(), N = x.NW.formatToPlainString(x.t["tmJ75+"], {
+  } = p, b = null != u ? u : s.substring(0, 6).toUpperCase(), j = x.NW.formatToPlainString(x.t["tmJ75+"], {
     orderNumber: n + 1,
     description: b
-  }), v = j ? x.NW.formatToPlainString(x.t.pBzwhY, {
+  }), v = x.NW.formatToPlainString(x.t.pBzwhY, {
     orderNumber: n + 1,
     description: b
-  }) : x.NW.string(x.t.N86XcH), C = {
+  }), N = {
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.NONE,
     color: c.zxk.Colors.TRANSPARENT
@@ -106,9 +106,9 @@ function v(e) {
       onMouseEnter: f,
       onMouseLeave: m,
       className: h.recentAvatarButton,
-      "aria-label": N,
+      "aria-label": j,
       buttonRef: i
-    }, C), {
+    }, N), {
       children: (0, r.jsx)("img", {
         src: d,
         alt: u,
@@ -122,7 +122,7 @@ function v(e) {
         onClick: e => a(e, n, o, s, v),
         className: h.deleteButton,
         innerClassName: h.deleteButtonInner
-      }), C), {
+      }), N), {
         children: (0, r.jsx)(c.XHJ, {
           size: "xs",
           color: "currentColor",
@@ -139,7 +139,7 @@ function C(e) {
   } = e;
   return (0, r.jsxs)(c.P3F, {
     className: h.premiumUpsellButton,
-    onClick: N,
+    onClick: v,
     "aria-label": x.NW.formatToPlainString(x.t.D4829v, {
       numberOfLockedAvatarSlots: t
     }),
@@ -162,13 +162,13 @@ function A(e) {
   } = e, s = (0, o.e7)([u.default], () => u.default.getCurrentUser()), {
     avatars: g,
     loading: O,
-    error: N
+    error: v
   } = (0, f.S)(), {
     recentAvatarsLimit: A,
     numberOfLockedAvatarSlots: E
-  } = (0, d.pC)(t), P = l.useRef([]), S = l.useRef(null), w = l.useRef(g.length), T = l.useRef(null), [R, _] = l.useState(!1), [k, F] = l.useState(!1), [L, Z] = l.useState(null), I = null != L ? L : null == N ? void 0 : N.message, D = g.length > A ? g.slice(0, A) : g, W = D.length, M = Math.max(A - W, 0), U = (0, c.vRw)(), B = l.useCallback(async e => {
+  } = (0, d.pC)(t), P = l.useRef([]), S = l.useRef(null), w = l.useRef(g.length), T = l.useRef(null), [R, _] = l.useState(!1), [k, F] = l.useState(!1), [Z, I] = l.useState(null), L = null != Z ? Z : null == v ? void 0 : v.message, D = g.length > A ? g.slice(0, A) : g, W = D.length, M = Math.max(A - W, 0), U = (0, c.vRw)(), B = l.useCallback(async e => {
     if (null == s || R) return;
-    _(!0), Z(null);
+    _(!0), I(null);
     let {
       id: t,
       storageHash: l,
@@ -177,7 +177,7 @@ function A(e) {
       userId: s.id,
       avatarId: t,
       storageHash: l,
-      size: j.dGM,
+      size: b.dGM,
       canAnimate: !0,
       allowWebp: !1
     });
@@ -199,14 +199,14 @@ function A(e) {
           }),
           originalAsset: e,
           onCrop: a,
-          uploadType: b.pC.AVATAR,
+          uploadType: j.pC.AVATAR,
           showUpsellHeader: !0
         }, n))
       }, {
         contextKey: U
       })
     } catch (e) {
-      Z(x.NW.string(x.t.fZRH9P))
+      I(x.NW.string(x.t.fZRH9P))
     } finally {
       _(!1)
     }
@@ -259,10 +259,10 @@ function A(e) {
     className: h.spinner
   }) : (0, r.jsxs)("div", {
     className: h.recentAvatarContainer,
-    children: [null != I && !O && (0, r.jsx)(c.Text, {
+    children: [null != L && !O && (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
-      children: I
+      children: L
     }), (0, r.jsxs)("div", {
       className: i()(h.recentAvatarSlots, {
         [h.withPremiumUpsell]: !t
@@ -271,7 +271,7 @@ function A(e) {
         "aria-label": x.NW.string(x.t.lsU63N),
         className: h.recentAvatarList,
         children: D.map((e, t) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(v, {
+          children: (0, r.jsx)(N, {
             avatar: e,
             index: t,
             onSelectRecentAvatar: B,
@@ -320,7 +320,7 @@ function E(e) {
         children: [x.NW.format(x.t["+CyJu7"], {
           recentAvatarsLimit: a
         }), " ", !l && x.NW.format(x.t.Xs2Otb, {
-          onClick: N
+          onClick: v
         })]
       })]
     }), (0, r.jsx)(A, {

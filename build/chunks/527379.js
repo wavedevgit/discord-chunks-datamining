@@ -1,11 +1,11 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
   Dr: () => _,
-  YO: () => p,
+  YO: () => f,
   _X: () => O,
   _o: () => E,
   nb: () => g,
-  zO: () => f
+  zO: () => p
 });
 var r = n(570140),
   i = n(63568),
@@ -16,14 +16,14 @@ var r = n(570140),
   s = n(327999),
   c = n(981631),
   d = n(176505);
-async function f(e) {
+async function p(e) {
   await r.Z.dispatch({
     type: "INITIALIZE_MEMBER_SAFETY_STORE",
     guildId: e
   })
 }
 
-function p(e) {
+function f(e) {
   r.Z.dispatch({
     type: "MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH",
     guildId: e

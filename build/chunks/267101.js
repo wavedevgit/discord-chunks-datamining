@@ -1,8 +1,8 @@
-/** Chunk was on 10837 **/
+/** Chunk was on 24967 **/
 n.d(t, {
   SO: () => O,
-  eD: () => f,
-  hO: () => p,
+  eD: () => p,
+  hO: () => f,
   r: () => _,
   ue: () => E
 }), n(47120);
@@ -16,7 +16,7 @@ var l = n(38618),
   s = n(495437),
   c = n(240864),
   d = n(981631);
-let f = e => {
+let p = e => {
     let t = (0, i.e7)([c.Z], () => null != e ? c.Z.getGuildProductsForGuildFetchState(e) : c.M.FETCHED, [e]),
       n = (0, i.e7)([l.Z], () => l.Z.isConnected()),
       [o, a] = r.useState(!0);
@@ -26,7 +26,7 @@ let f = e => {
       listingsLoaded: t === c.M.FETCHED && !o
     }
   },
-  p = function(e, t) {
+  f = function(e, t) {
     let {
       requireCurrentGuild: n
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {

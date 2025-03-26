@@ -5,8 +5,8 @@ r.d(e, {
 var n = r(200651),
   o = r(192379),
   a = r(481060),
-  c = r(841183),
-  i = r(388032),
+  i = r(841183),
+  c = r(388032),
   s = r(182300);
 
 function l(t) {
@@ -33,16 +33,16 @@ function l(t) {
       return o
     }(t, ["avatarId", "storageHash", "avatarDescription", "onConfirmDelete", "onClose"]);
   let [d, O] = o.useState(!1), {
-    avatarSrc: g,
-    eventHandlers: j
-  } = (0, c.Z)({
+    avatarSrc: m,
+    eventHandlers: v
+  } = (0, i.Z)({
     avatarId: l,
     storageHash: f,
     size: a.EFr.SIZE_120
   }), {
-    onMouseEnter: m,
-    onMouseLeave: v
-  } = j, x = "en-US" === i.NW.currentLocale || "en-GB" === i.NW.currentLocale;
+    onMouseEnter: j,
+    onMouseLeave: g
+  } = v;
   return (0, n.jsxs)(a.ConfirmModal, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
@@ -62,9 +62,9 @@ function l(t) {
     return t
   }({
     bodyClassName: s.modalContent,
-    header: x ? i.NW.string(i.t.rfaLTE) : i.NW.string(i.t.C8qfkp),
-    confirmText: x ? i.NW.string(i.t.Lh0uy8) : i.NW.string(i.t.lAU5jI),
-    cancelText: i.NW.string(i.t["ETE/oK"]),
+    header: c.NW.string(c.t.rfaLTE),
+    confirmText: c.NW.string(c.t.Lh0uy8),
+    cancelText: c.NW.string(c.t["ETE/oK"]),
     confirmButtonColor: a.zxk.Colors.RED,
     loading: d,
     onConfirm: async () => {
@@ -81,26 +81,24 @@ function l(t) {
     children: [(0, n.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: x ? i.NW.string(i.t.EKmxKS) : i.NW.string(i.t.CbTIEh)
+      children: c.NW.string(c.t.EKmxKS)
     }), (0, n.jsx)("div", {
-      onMouseEnter: m,
-      onMouseLeave: v,
+      onMouseEnter: j,
+      onMouseLeave: g,
       className: s.avatarContainer,
       children: (0, n.jsx)("img", {
-        src: g,
+        src: m,
         alt: u,
         className: s.avatar
       })
-    }), x && (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(a.Text, {
-        variant: "eyebrow",
-        color: "text-positive",
-        children: i.NW.string(i.t["2Ld8DA"])
-      }), (0, n.jsx)(a.Text, {
-        variant: "text-xs/normal",
-        color: "text-secondary",
-        children: i.NW.string(i.t.Oe0xqq)
-      })]
+    }), (0, n.jsx)(a.Text, {
+      variant: "eyebrow",
+      color: "text-positive",
+      children: c.NW.string(c.t["2Ld8DA"])
+    }), (0, n.jsx)(a.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      children: c.NW.string(c.t.Oe0xqq)
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

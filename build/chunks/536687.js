@@ -6,8 +6,8 @@ var r = n(200651),
   o = n(192379),
   i = n(120356),
   l = n.n(i),
-  s = n(442837),
-  a = n(780384),
+  a = n(442837),
+  s = n(780384),
   c = n(481060),
   u = n(607070),
   d = n(210887),
@@ -19,8 +19,8 @@ var r = n(200651),
   E = n(918701),
   b = n(475595),
   O = n(566078),
-  h = n(164495),
-  S = n(472144),
+  S = n(164495),
+  h = n(472144),
   C = n(602667),
   j = n(644646),
   y = n(604162),
@@ -74,7 +74,7 @@ function k(e) {
     videoSessionId: L,
     impressionRef: R,
     parentModalOpenStartClockTime: M
-  } = e, V = (0, E.il)(D), q = (0, s.e7)([d.Z], () => d.Z.getState().theme), B = (0, a.wj)(q) ? P.BRd.DARK : P.BRd.LIGHT, F = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, p.aM)(), [Z, Y] = o.useState(V.progressSeconds), [W, Q] = o.useState(!1), {
+  } = e, V = (0, E.il)(D), q = (0, a.e7)([d.Z], () => d.Z.getState().theme), B = (0, s.wj)(q) ? P.BRd.DARK : P.BRd.LIGHT, F = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, p.aM)(), [Z, Y] = o.useState(V.progressSeconds), [W, Q] = o.useState(!1), {
     completedRatio: z,
     completedRatioDisplay: G
   } = (0, f.I)(D), [H, K] = (0, y.G6)(T.NW.string(T.t.RDE0SU), T.NW.string(T.t["+5kSoa"]), 1700), X = (null === (t = D.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? T.NW.string(T.t.vTgCW1) : T.NW.string(T.t.cfY4PD), $ = o.useCallback(() => {
@@ -140,7 +140,7 @@ function k(e) {
               children: e => (0, r.jsx)(c.P3F, w(A({
                 className: I.progressCont
               }, e), {
-                children: (0, r.jsx)(S.Z, {
+                children: (0, r.jsx)(h.Z, {
                   quest: D,
                   size: 48,
                   percentComplete: z,
@@ -179,7 +179,7 @@ function k(e) {
                 size: c.zxk.Sizes.NONE,
                 className: l()(I.copyLinkBtn, I.footerBtn),
                 children: H
-              }), (0, r.jsx)(h.i0, {
+              }), (0, r.jsx)(S.i0, {
                 className: I.claimBtn,
                 size: c.zxk.Sizes.MEDIUM,
                 quest: D,
@@ -220,8 +220,8 @@ function L(e) {
     }
     return o
   }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]);
-  let a = (0, s.e7)([v.Z], () => v.Z.getQuest(t)),
-    c = null != n ? n : a;
+  let s = (0, a.e7)([v.Z], () => v.Z.getQuest(t)),
+    c = null != n ? n : s;
   return null != c ? (0, r.jsx)(C.A, {
     questOrQuests: c,
     questContent: g.jn.VIDEO_MODAL,
