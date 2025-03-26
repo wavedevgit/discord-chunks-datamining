@@ -1,5 +1,5 @@
 /** Chunk was on 82961 **/
-e.exports = {
+t.exports = {
   header: "header_f476f9",
   content: "content_f476f9",
   footer: "footer_f476f9",

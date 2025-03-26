@@ -260,17 +260,11 @@ let D = e => {
     let {
       shouldShowCoachmark: t,
       dismissCoachmark: n
-    } = (0, I.Z)(), [l, o] = i.useState(!1);
-    i.useEffect(() => {
-      if (t) {
-        let e = setTimeout(() => {
-          o(!0)
-        }, 250);
-        return () => clearTimeout(e)
-      }
-      o(!1)
-    }, [t]);
-    let a = i.useCallback(() => {
+    } = (0, I.Z)(), l = i.useRef(0);
+    i.useLayoutEffect(() => {
+      l.current += 1
+    }, []);
+    let o = i.useCallback(() => {
       var t;
       n(A.L.PRIMARY), null === (t = e.onClick) || void 0 === t || t.call(e)
     }, [n, e]);
@@ -278,12 +272,14 @@ let D = e => {
       renderPopout: () => (0, r.jsx)(y.Z, {}),
       position: "right",
       align: "top",
-      shouldShow: l,
+      shouldShow: t,
       spacing: 12,
+      positionKey: String(l.current),
       animation: s.yRy.Animation.TRANSLATE,
+      closeOnScroll: !0,
       onRequestClose: () => n(A.L.USER_DISMISS),
       children: t => (0, r.jsx)(M, L(w({}, e), {
-        onClick: a,
+        onClick: o,
         children: (0, r.jsx)(D, {})
       }))
     })

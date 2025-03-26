@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 8f4a8cceb9e30337
+  Original File Name: 87ca904055c01e4d
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -5731,7 +5731,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .button__19fd1 {
     min-width: 75px;
     margin-left: auto;
-    flex-shrink: 0
+    flex-shrink: 0;
+    padding: var(--spacing-8) var(--spacing-12)
 }
 
 .number__19fd1 {
@@ -5768,6 +5769,18 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .visual-refresh .content__19fd1 {
     border: 1px solid var(--border-faint)
+}
+
+.buttonContainer__19fd1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-4)
+}
+
+.buttonIcon__19fd1 {
+    width: 16px;
+    height: 16px
 }
 
 .safetyBanner__51e4d {
@@ -15290,4 +15303,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=8f4a8cceb9e30337.css.map*/
+/*# sourceMappingURL=87ca904055c01e4d.css.map*/

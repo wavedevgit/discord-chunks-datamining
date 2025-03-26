@@ -13,7 +13,8 @@ var r = n(570140),
   u = n(621853),
   d = n(120569);
 let f = 6e4;
-async function _(e, t) {
+
+function _(e, t) {
   var n, _, p, h;
   let {
     type: m,
@@ -23,40 +24,43 @@ async function _(e, t) {
     friendToken: v,
     preloadUserBanner: y = !0,
     dispatchWait: O = !1,
-    guildId: I,
-    channelId: S,
-    joinRequestId: T,
-    abortSignal: A
+    waitForRefetch: I = !0,
+    guildId: S,
+    channelId: T,
+    joinRequestId: A,
+    abortSignal: N
   } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-  if ("" === e || u.Z.isFetchingProfile(e, I)) return;
-  let N = u.Z.getUserProfile(e),
-    C = Date.now() - (null !== (h = null == N ? void 0 : N.lastFetched) && void 0 !== h ? h : 0) >= f;
-  if (((null == N ? void 0 : null === (n = N.fetchError) || void 0 === n ? void 0 : n.status) === 404 || (null == N ? void 0 : null === (_ = N.fetchError) || void 0 === _ ? void 0 : _.status) === 429) && !C) return;
-  let R = u.Z.getGuildMemberProfile(e, I),
-    P = u.Z.getMutualGuilds(e),
-    w = u.Z.getMutualFriends(e),
-    D = u.Z.getMutualFriendsCount(e);
-  g = g || null != I;
-  let L = null == w && b,
-    x = null == D && E,
-    M = null != I && null == R;
-  if (!(null == P && g) && !L && !x && !M && !C) return;
+  if ("" === e || u.Z.isFetchingProfile(e, S)) return Promise.resolve();
+  let C = u.Z.getUserProfile(e),
+    R = Date.now() - (null !== (h = null == C ? void 0 : C.lastFetched) && void 0 !== h ? h : 0) >= f;
+  if (((null == C ? void 0 : null === (n = C.fetchError) || void 0 === n ? void 0 : n.status) === 404 || (null == C ? void 0 : null === (_ = C.fetchError) || void 0 === _ ? void 0 : _.status) === 429) && !R) return Promise.resolve();
+  let P = u.Z.getGuildMemberProfile(e, S),
+    w = u.Z.getMutualGuilds(e),
+    D = u.Z.getMutualFriends(e),
+    L = u.Z.getMutualFriendsCount(e),
+    x = null == D && b,
+    M = null == L && E,
+    k = null == w && g || x || M,
+    j = null == S ? null == C : null == P,
+    U = !j && (R || k);
+  if (!j && !U) return Promise.resolve();
   (0, s.z)(), null != t && (0, o.vM)(t);
-  let k = {
+  let G = {
       type: m,
       withMutualGuilds: g,
       withMutualFriends: b,
       withMutualFriendsCount: E,
       friendToken: v,
-      guildId: I,
-      joinRequestId: T,
-      abortSignal: A,
-      connectionsRoleId: null == I ? void 0 : null === (p = (0, a.Ur)({
-        guildMember: c.ZP.getMember(I, e),
-        channel: l.Z.getChannel(S)
+      guildId: S,
+      joinRequestId: A,
+      abortSignal: N,
+      connectionsRoleId: null == S ? void 0 : null === (p = (0, a.Ur)({
+        guildMember: c.ZP.getMember(S, e),
+        channel: l.Z.getChannel(T)
       })) || void 0 === p ? void 0 : p.id
     },
-    j = y ? d.Z : void 0;
-  if (O) return r.Z.wait(() => (0, i.In)(e, k, j));
-  await (0, i.In)(e, k, j)
+    B = y ? d.Z : void 0;
+  if (O) return r.Z.wait(() => (0, i.In)(e, G, B)), Promise.resolve();
+  let F = (0, i.In)(e, G, B);
+  return U && !I ? Promise.resolve() : F
 }

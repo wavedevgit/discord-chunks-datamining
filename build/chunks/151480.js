@@ -38,6 +38,10 @@ async function _(e, t) {
   let {
     shouldClear: n
   } = t;
+  o.Z.dispatch({
+    type: "UPDATE_CHAT_WALLPAPER_FLAG_START",
+    channelId: e.id
+  });
   try {
     var i;
     let t = (0, c.mB)(null !== (i = e.recipientFlags) && void 0 !== i ? i : 0, r.V.DISMISSED_CURRENT_CHAT_WALLPAPER, n);
@@ -45,5 +49,10 @@ async function _(e, t) {
   } catch (t) {
     let e = new a.Hx(t);
     (0, s.G)(e)
+  } finally {
+    o.Z.dispatch({
+      type: "UPDATE_CHAT_WALLPAPER_FLAG_COMPLETE",
+      channelId: e.id
+    })
   }
 }

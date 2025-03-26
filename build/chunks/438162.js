@@ -17,8 +17,8 @@ var r = n(200651),
   b = n(146282),
   m = n(70097),
   g = n(594190),
-  y = n(567409),
-  h = n(74299),
+  h = n(567409),
+  y = n(74299),
   v = n(989941),
   I = n(199902),
   O = n(314897),
@@ -215,7 +215,7 @@ function eu() {
       a = null != r ? x.Z.getGuild(r.guild_id) : null,
       i = null != I.Z.getCurrentUserActiveStream(),
       c = null != n,
-      l = (0, h.Z)(P.Z) && !i && null != t,
+      l = (0, y.Z)(P.Z) && !i && null != t,
       _ = c && null != a && null != n,
       {
         showKeybindIndicators: u,
@@ -259,7 +259,7 @@ function eu() {
     es = (0, c.e7)([x.Z], () => null != eu ? x.Z.getGuild(eu.guild_id) : null),
     ed = (0, c.e7)([O.default], () => O.default.getId()),
     ef = (0, c.e7)([g.ZP, E.Z], () => (0, v.Z)(g.ZP, E.Z)),
-    ep = (0, y.Ns)(null == ef ? void 0 : ef.id),
+    ep = (0, h.Ns)(null == ef ? void 0 : ef.id),
     eb = (0, c.e7)([b.Z], () => null != b.Z.getLastFeedFetchDate(J.YN.GAME_PROFILE_FEED)),
     em = (0, d.Z)(eb);
   return (o.useEffect(() => {

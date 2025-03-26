@@ -1,4 +1,4 @@
-/** Chunk was on 58173 **/
+/** Chunk was on 38542 **/
 n.d(t, {
   Z: () => v
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   l = n(192379),
   i = n(442837),
   o = n(481060),
-  s = n(19780),
-  a = n(571826),
+  a = n(19780),
+  s = n(571826),
   c = n(630759),
   u = n(301107),
   d = n(785792),
@@ -19,15 +19,15 @@ var r = n(200651),
 function v(e) {
   let {
     channelId: t
-  } = e, n = (0, i.e7)([s.Z], () => {
+  } = e, n = (0, i.e7)([a.Z], () => {
     var e;
-    return null === (e = s.Z.getSecureFramesState()) || void 0 === e ? void 0 : e.epochAuthenticator
+    return null === (e = a.Z.getSecureFramesState()) || void 0 === e ? void 0 : e.epochAuthenticator
   }), v = (0, u.W)({
     fingerprintBase64: n,
     chunkSize: f.y6,
     desiredLength: f.YP
   }), N = l.useCallback(() => {
-    (0, a.PM)({
+    (0, s.PM)({
       channelId: t
     })
   }, [t]);

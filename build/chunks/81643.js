@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F5: () => I,
+  F5: () => S,
   Jm: () => g,
   L0: () => b,
   L5: () => m,
-  WD: () => O,
+  WD: () => I,
   g0: () => E,
-  l6: () => y,
+  kJ: () => y,
+  l6: () => O,
   pY: () => v,
   sf: () => h
 }), n(301563), n(47120);
@@ -53,11 +54,16 @@ function v(e, t) {
 }
 
 function y() {
-  let e = (0, i.e7)([u.default], () => u.default.getCurrentUser());
-  return (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.UNVERIFIED
+  let e = u.default.getCurrentUser();
+  return (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.CLIENT_ONLY_PENDING
 }
 
-function O(e) {
+function O() {
+  let e = (0, i.e7)([u.default], () => u.default.getCurrentUser());
+  return (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.CLIENT_ONLY_PENDING
+}
+
+function I(e) {
   let [t, n] = r.useState(!1), a = (0, i.e7)([u.default], () => u.default.getCurrentUser()), {
     current: s
   } = r.useRef(null == a ? void 0 : a.ageVerificationStatus), c = r.useCallback(() => {
@@ -89,7 +95,7 @@ function O(e) {
   }
 }
 
-function I(e) {
+function S(e) {
   let t = (0, i.e7)([u.default], () => {
       var e;
       return null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.ageVerificationStatus

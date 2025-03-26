@@ -63,13 +63,15 @@ class b extends i.Z {
   }
   getAvatarURL(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-      r = null != e ? this.guildMemberAvatars[e] : void 0;
-    return null != r && null != e ? s.ZP.getGuildMemberAvatarURLSimple({
+      r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+      i = null != e ? this.guildMemberAvatars[e] : void 0;
+    return null != i && null != e ? s.ZP.getGuildMemberAvatarURLSimple({
       guildId: e,
-      avatar: r,
+      avatar: i,
       userId: this.id,
-      canAnimate: n
-    }) : s.ZP.getUserAvatarURL(this, n, t)
+      canAnimate: n,
+      canWebP: r
+    }) : s.ZP.getUserAvatarURL(this, n, t, null, r)
   }
   addGuildAvatarHash(e, t) {
     if (this.guildMemberAvatars[e] === t) return this;

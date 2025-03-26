@@ -142,7 +142,8 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       hasIgnoredUsers: tn,
       hasBlockedUsers: tr,
       isAllowGameFriendDMsVisible: ti,
-      useRefreshedVoiceAndVideo: ts
+      useRefreshedVoiceAndVideo: ts,
+      isEligibleForSensitiveContentDefaults: ta
     } = e;
     return Object.freeze({
       [eM.s6.SEARCH_NO_RESULTS]: {
@@ -176,6 +177,12 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t.Ulqq6O)],
         section: eU.oAB.ACCOUNT,
         parent: eM.s6.ACCOUNT_PROFILE
+      },
+      [eM.s6.ACCOUNT_AGE_GROUP]: {
+        searchableTitles: [eF.NW.string(eF.t["2UzQiY"]), eF.NW.string(eF.t.dJOmCw), eF.NW.string(eF.t["Y0A/1N"]), eF.NW.string(eF.t.wRpUfX), eF.NW.string(eF.t["+2/AhI"])],
+        section: eU.oAB.ACCOUNT,
+        parent: eM.s6.ACCOUNT_PROFILE,
+        predicate: () => ta
       },
       [eM.s6.ACCOUNT_USERNAME]: {
         searchableTitles: [eF.NW.string(eF.t["+JkHPz"])],

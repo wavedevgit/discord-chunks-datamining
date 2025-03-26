@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => m
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,65 +13,65 @@ var r = n(200651),
   d = n(388905),
   p = n(108427),
   h = n(981631),
-  f = n(388032),
-  g = n(802138);
+  g = n(388032),
+  _ = n(802138);
 
-function _(e) {
+function m(e) {
   return n.g.location.assign(e)
 }
 
-function m(e) {
+function f(e) {
   let {
     location: t,
-    transitionTo: o = _
-  } = e, [l, m] = i.useState("submitting");
+    transitionTo: o = m
+  } = e, [l, f] = i.useState("submitting");
 
   function b() {
     return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
       onClick: () => o(h.Z5c.LOGIN),
-      children: f.NW.string(f.t.dKhVQE)
+      children: g.NW.string(g.t.dKhVQE)
     })
   }
   return ((0, c.ZP)(() => {
     (0, p.e)("authorize_ip");
     let e = (0, u.Z)(t);
     if (null == e) {
-      m("failed");
+      f("failed");
       return
     }(async () => {
       try {
-        await s.Z.authorizeIPAddress(e), m("succeeded")
+        await s.Z.authorizeIPAddress(e), f("succeeded")
       } catch (e) {
-        m("failed")
+        f("failed")
       }
     })()
   }), "failed" === l) ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
-      className: g.marginBottom20
+      className: _.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: g.marginBottom8,
-      children: f.NW.string(f.t["f/54a2"])
+      className: _.marginBottom8,
+      children: g.NW.string(g.t["f/54a2"])
     }), (0, r.jsx)(d.DK, {
-      className: g.marginBottom40,
-      children: f.NW.string(f.t.i3ehMj)
+      className: _.marginBottom40,
+      children: g.NW.string(g.t.i3ehMj)
     }), b()]
   }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),
-      className: g.marginBottom20
+      className: _.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: g.marginBottom8,
-      children: f.NW.string(f.t.iG0SlJ)
+      className: _.marginBottom8,
+      children: g.NW.string(g.t.iG0SlJ)
     }), (0, r.jsx)(d.DK, {
-      className: g.marginBottom40,
-      children: f.NW.string(f.t["Elv+qq"])
+      className: _.marginBottom40,
+      children: g.NW.string(g.t["Elv+qq"])
     }), b()]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Hh, {}), (0, r.jsx)(d.Dx, {
-      children: f.NW.string(f.t["9exy+f"])
+      children: g.NW.string(g.t["9exy+f"])
     })]
   })
 }

@@ -8,16 +8,16 @@ var n = r(200651),
   s = r(442837),
   i = r(481060),
   a = r(239091),
-  c = r(129861),
-  o = r(81897),
+  o = r(129861),
+  c = r(81897),
   u = r(906732),
   d = r(158776),
   m = r(785717),
   p = r(806729),
   f = r(857302),
   j = r(171368),
-  x = r(981631),
-  b = r(388032),
+  b = r(981631),
+  x = r(388032),
   v = r(658266);
 
 function g(e) {
@@ -57,7 +57,7 @@ function O(e) {
   let {
     user: t,
     status: l,
-    onSelect: o
+    onSelect: c
   } = e, u = (0, s.e7)([d.Z], () => d.Z.isMobileOnline(t.id));
   return (0, n.jsxs)(i.P3F, {
     focusProps: {
@@ -66,7 +66,7 @@ function O(e) {
       }
     },
     className: v.listRow,
-    onClick: o,
+    onClick: c,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -84,7 +84,7 @@ function O(e) {
       status: l,
       isMobile: u,
       className: v.listAvatar
-    }), (0, n.jsx)(c.Z, {
+    }), (0, n.jsx)(o.Z, {
       user: t,
       className: v.listName,
       discriminatorClass: v.listDiscriminator
@@ -101,18 +101,18 @@ function N(e) {
   } = (0, p.Z)(t), {
     analyticsLocations: a
   } = (0, u.ZP)(), {
-    context: c,
+    context: o,
     trackUserProfileAction: d
-  } = (0, m.KZ)(), y = (0, o.Z)();
+  } = (0, m.KZ)(), y = (0, c.Z)();
   l.useEffect(() => {
     (0, f.Z)(t.id, y)
   }, [t.id, y]);
   let N = e => {
-    r(), (0, j.openUserProfileModal)(h(g({}, c), {
+    r(), (0, j.openUserProfileModal)(h(g({}, o), {
       userId: e,
       sourceAnalyticsLocations: a,
       analyticsLocation: {
-        section: x.jXE.USER_PROFILE_MUTUAL_FRIENDS
+        section: b.jXE.USER_PROFILE_MUTUAL_FRIENDS
       }
     }))
   };
@@ -128,7 +128,7 @@ function N(e) {
         className: v.emptyIconFriends
       }), (0, n.jsx)("div", {
         className: v.emptyText,
-        children: b.NW.string(b.t["/5p4g4"])
+        children: x.NW.string(x.t["/5p4g4"])
       })]
     }) : s.map(e => {
       let {

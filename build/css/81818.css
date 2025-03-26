@@ -1,6 +1,6 @@
 /**
   Module ID: 81818
-  Original File Name: e743016ee6897ce0
+  Original File Name: 5458553f19578f9c
 **/
 .row__19fd1 {
     align-items: center;
@@ -38,7 +38,8 @@
 .button__19fd1 {
     min-width: 75px;
     margin-left: auto;
-    flex-shrink: 0
+    flex-shrink: 0;
+    padding: var(--spacing-8) var(--spacing-12)
 }
 
 .number__19fd1 {
@@ -75,6 +76,18 @@
 
 .visual-refresh .content__19fd1 {
     border: 1px solid var(--border-faint)
+}
+
+.buttonContainer__19fd1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-4)
+}
+
+.buttonIcon__19fd1 {
+    width: 16px;
+    height: 16px
 }
 
 .root__573a4 {
@@ -892,4 +905,4 @@ img.thumbnail__0f2e8 {
     gap: 4px
 }
 
-/*# sourceMappingURL=e743016ee6897ce0.css.map*/
+/*# sourceMappingURL=5458553f19578f9c.css.map*/

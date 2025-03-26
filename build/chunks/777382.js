@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function y(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,12 +49,12 @@ function y(e, t) {
   }), e
 }
 
-function h(e) {
+function y(e) {
   return e.widget.id
 }
 
 function v(e, t, n, o) {
-  return n === i.pJH.YEETED ? null : (0, r.jsx)(p.Z, y(g({}, t), {
+  return n === i.pJH.YEETED ? null : (0, r.jsx)(p.Z, h(g({}, t), {
     transitionState: n,
     cleanUp: o,
     dragContainerClassName: m.dragContainer,
@@ -75,7 +75,7 @@ let I = [],
         let r = d.p[e.type];
         null != r && t.push({
           widget: e,
-          renderWidget: t => r(y(g({}, t), {
+          renderWidget: t => r(h(g({}, t), {
             id: e.id,
             pinned: e.pinned,
             anchor: e.anchor,
@@ -92,7 +92,7 @@ let I = [],
     return (0, r.jsx)(i.W3x, {
       items: O,
       renderItem: v,
-      getItemKey: h,
+      getItemKey: y,
       wrapChildren: C
     })
   })

@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 30a358ca2f8f6784
+  Original File Name: bd31dc5868a1daf5
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -688,6 +688,17 @@
 
 .headerTitle_fe7ab2 {
     flex: 1
+}
+
+.dispatcherHeader_fe7ab2 {
+    max-width: calc(100% - 90px)
+}
+
+.headerTitleText_fe7ab2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block
 }
 
 .inspectorWrapper_fe7ab2 {
@@ -1575,4 +1586,4 @@
     height: 100%
 }
 
-/*# sourceMappingURL=30a358ca2f8f6784.css.map*/
+/*# sourceMappingURL=bd31dc5868a1daf5.css.map*/

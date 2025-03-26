@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r, i, o, a = n(973361),
   l = n(442837),
@@ -20,7 +20,7 @@ i = "AgeGateStore", (r = "displayName") in h ? Object.defineProperty(h, r, {
   configurable: !0,
   writable: !0
 }) : h[r] = i;
-let f = new h(s.Z, {
+let g = new h(s.Z, {
   AGE_GATE_PREVENT_UNDERAGE_REGISTRATION: function() {
     d = Date.now(), document.cookie = "".concat(p, "=1;path=/")
   },

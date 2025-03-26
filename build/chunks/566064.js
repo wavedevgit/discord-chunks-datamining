@@ -56,22 +56,16 @@ function f(e) {
     enabled: b,
     autoFocusElement: v,
     useVirtualFocus: y
-  } = e, O = r.useRef();
-  O.current = b;
-  let I = u(c(t, f, _)),
-    [S, T] = r.useState(!1),
-    [A, N] = r.useState(!1),
-    [C, R] = r.useState(!1),
-    [P] = r.useState(() => new a.$o(e => {
-      let [t, n] = e.split(",").map(Number);
-      return () => {
-        T(!0), g({
-          type: i.s.SET_FOCUSED_POSITION,
-          x: t,
-          y: n
-        })
-      }
-    }));
+  } = e, O = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(!1), [A, N] = r.useState(!1), [C, R] = r.useState(!1), [P] = r.useState(() => new a.$o(e => {
+    let [t, n] = e.split(",").map(Number);
+    return () => {
+      T(!0), g({
+        type: i.s.SET_FOCUSED_POSITION,
+        x: t,
+        y: n
+      })
+    }
+  }));
   r.useEffect(() => () => P.clean(), [P]);
   let w = r.useCallback(e => {
       if (!O.current || !v) return !1;

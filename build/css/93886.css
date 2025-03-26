@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: b98a516113711131
+  Original File Name: 32dbf70a12253410
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -13,6 +13,17 @@
 
 .headerTitle_fe7ab2 {
     flex: 1
+}
+
+.dispatcherHeader_fe7ab2 {
+    max-width: calc(100% - 90px)
+}
+
+.headerTitleText_fe7ab2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block
 }
 
 .inspectorWrapper_fe7ab2 {
@@ -5758,4 +5769,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=b98a516113711131.css.map*/
+/*# sourceMappingURL=32dbf70a12253410.css.map*/

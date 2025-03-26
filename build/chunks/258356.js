@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  X: () => f,
-  Z: () => g
+  X: () => g,
+  Z: () => _
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -49,7 +49,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   var t;
   let {
     invite: n
@@ -97,7 +97,7 @@ function f(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     invite: t,
     channel: n,

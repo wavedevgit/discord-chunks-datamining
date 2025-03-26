@@ -2,9 +2,9 @@
 t.d(n, {
   Z: () => h
 });
-var r = t(200651);
+var o = t(200651);
 t(192379);
-var o = t(442837),
+var r = t(442837),
   i = t(481060),
   l = t(666520),
   s = t(592125),
@@ -32,40 +32,40 @@ function h(e) {
     onClose: O
   } = e, {
     trackUserProfileAction: Z
-  } = (0, d.KZ)(), P = (0, o.e7)([c.Z], () => (null == _ ? void 0 : _.guildId) != null ? c.Z.getGuild(_.guildId) : null), N = (0, o.e7)([u.Z], () => {
+  } = (0, d.KZ)(), P = (0, r.e7)([c.Z], () => (null == _ ? void 0 : _.guildId) != null ? c.Z.getGuild(_.guildId) : null), N = (0, r.e7)([u.Z], () => {
     var e;
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-  }), E = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId())), S = (0, f.k)({
+  }), E = (0, r.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId())), S = (0, f.k)({
     location: "BotUserProfileModalInfo"
   }) ? I.NW.string(I.t["mQKv+v"]) : I.NW.string(I.t.PbMNh4);
-  return (0, r.jsxs)(i.zJl, {
+  return (0, o.jsxs)(i.zJl, {
     fade: !0,
     className: j.scroller,
-    children: [(null == _ ? void 0 : _.bio) != null && (null == _ ? void 0 : _.bio) !== "" && (0, r.jsx)(b.Z, {
+    children: [(null == _ ? void 0 : _.bio) != null && (null == _ ? void 0 : _.bio) !== "" && (0, o.jsx)(b.Z, {
       userBio: _.bio,
       setLineClamp: !1
-    }), (null == N ? void 0 : N.popularApplicationCommandIds) != null && null != E && (0, r.jsx)(p.Z, {
+    }), (null == N ? void 0 : N.popularApplicationCommandIds) != null && null != E && (0, o.jsx)(p.Z, {
       applicationId: N.id,
       commandIds: N.popularApplicationCommandIds,
       channel: E,
       guildId: null !== (n = null == _ ? void 0 : _.guildId) && void 0 !== n ? n : void 0,
       onClick: O
-    }), null != P && (0, r.jsx)(g.Z, {
+    }), null != P && (0, o.jsx)(g.Z, {
       user: t,
       currentUser: h,
       guild: P,
       scrollIntoView: x === m.Tb.ROLES
-    }), (0, r.jsx)(v.Z, {
+    }), (0, o.jsx)(v.Z, {
       heading: I.NW.string(I.t["A//N4u"]),
-      children: (0, r.jsx)(y.Z, {
+      children: (0, o.jsx)(y.Z, {
         userId: t.id,
         guildId: null == _ ? void 0 : _.guildId,
         tooltipDelay: m.vB
       })
-    }), (0, r.jsx)(v.Z, {
+    }), (0, o.jsx)(v.Z, {
       heading: S,
       scrollIntoView: x === m.Tb.NOTE,
-      children: (0, r.jsx)(l.Z, {
+      children: (0, o.jsx)(l.Z, {
         userId: t.id,
         className: j.note,
         autoFocus: x === m.Tb.NOTE,

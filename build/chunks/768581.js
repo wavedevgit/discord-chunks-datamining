@@ -89,15 +89,16 @@ function N(e) {
     lossless: c = !1,
     canAnimate: u = !1,
     keepAspectRatio: d,
-    format: f = null
+    format: f = null,
+    canWebP: _ = O
   } = e;
   if (null == i || null == o) return;
-  let _ = null != f ? f : u && X(o) ? "gif" : "jpg";
-  u && J(o) && (_ = "mp4");
-  let p = window.GLOBAL_ENV.CDN_HOST;
-  if (null != p ? ("jpg" === _ && (_ = O ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(p, "/").concat(r, "/").concat(i, "/").concat(o, ".").concat(_)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(i, o, _), "mp4" === _) return t;
-  let h = {};
-  return null != s && (h.size = (0, l.oO)(s * (0, l.x_)())), null != d && (h.keep_aspect_ratio = d), c && (h.quality = "lossless"), t + "?".concat(a.stringify(h))
+  let p = null != f ? f : u && X(o) ? "gif" : "jpg";
+  u && J(o) && (p = "mp4");
+  let h = window.GLOBAL_ENV.CDN_HOST;
+  if (null != h ? ("jpg" === p && (p = _ ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(h, "/").concat(r, "/").concat(i, "/").concat(o, ".").concat(p)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(i, o, p), "mp4" === p) return t;
+  let m = {};
+  return null != s && (m.size = (0, l.oO)(s * (0, l.x_)())), null != d && (m.keep_aspect_ratio = d), c && (m.quality = "lossless"), t + "?".concat(a.stringify(m))
 }
 
 function C(e) {
@@ -124,7 +125,7 @@ function P(e) {
     avatar: n,
     discriminator: i,
     bot: o
-  } = e, a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf, l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+  } = e, a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf, l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null, c = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : O;
   if (o && t !== _.fL) {
     let e = r.BOT_AVATARS[n];
     if (e) return e;
@@ -137,7 +138,8 @@ function P(e) {
     hash: n,
     size: s,
     canAnimate: a,
-    format: l
+    format: l,
+    canWebP: c
   })
 }
 
@@ -145,8 +147,9 @@ function w(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf,
-    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-  return null !== (t = P(e, n, r, i)) && void 0 !== t ? t : R(e.id, e.discriminator, e.isProvisional)
+    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
+    o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : O;
+  return null !== (t = P(e, n, r, i, o)) && void 0 !== t ? t : R(e.id, e.discriminator, e.isProvisional)
 }
 
 function D(e) {
@@ -155,13 +158,14 @@ function D(e) {
       userId: r,
       avatar: i,
       canAnimate: o = !1,
-      size: s = f.IXf
+      size: s = f.IXf,
+      canWebP: c = O
     } = e,
-    c = o && X(i) ? "gif" : "jpg",
+    u = o && X(i) ? "gif" : "jpg",
     {
-      CDN_HOST: u
+      CDN_HOST: d
     } = window.GLOBAL_ENV;
-  return null != u ? ("jpg" === c && (c = O ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(u).concat(f.ANM.GUILD_MEMBER_AVATAR(n, r, i, c))) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_MEMBER_AVATAR(n, r, i, c), t + "?".concat(a.stringify({
+  return null != d ? ("jpg" === u && (u = c ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(d).concat(f.ANM.GUILD_MEMBER_AVATAR(n, r, i, u))) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_MEMBER_AVATAR(n, r, i, u), t + "?".concat(a.stringify({
     size: (0, l.oO)(s * (0, l.x_)())
   }))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => _,
-  u: () => g
+  Z: () => m,
+  u: () => _
 });
 var r = n(200651);
 n(192379);
@@ -15,9 +15,9 @@ var i = n(120356),
   d = n(388032),
   p = n(12542),
   h = n(612064),
-  f = n(802138);
+  g = n(802138);
 
-function g(e) {
+function _(e) {
   let {
     text: t,
     buttonCta: i,
@@ -27,10 +27,10 @@ function g(e) {
     children: [(0, r.jsx)(s.Ee, {
       src: n(689411)
     }), (0, r.jsx)(s.Dx, {
-      className: o()(f.marginTop20, f.marginBottom8, h.flexCenter),
+      className: o()(g.marginTop20, g.marginBottom8, h.flexCenter),
       children: d.NW.string(d.t.eL5z0t)
     }), (0, r.jsx)(s.DK, {
-      className: f.marginBottom40,
+      className: g.marginBottom40,
       children: d.NW.string(d.t["poAv6+"])
     }), (0, r.jsxs)(l.Zbd, {
       className: p.card,
@@ -66,7 +66,7 @@ function g(e) {
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     text: t,
     buttonCta: n,
@@ -75,7 +75,7 @@ function _(e) {
   } = e;
   return (0, r.jsx)(s.ZP, {
     theme: i,
-    children: (0, r.jsx)(g, {
+    children: (0, r.jsx)(_, {
       text: t,
       buttonCta: n,
       onClick: o

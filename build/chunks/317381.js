@@ -433,8 +433,8 @@ function eb(e) {
     applicationId: t,
     channelId: n
   } = e;
-  null != n ? B.delete(G(n, t)) : B.keys().forEach(e => {
-    e.startsWith("".concat(t, ":")) && B.delete(e)
+  null != n ? B.delete(G(n, t)) : B.forEach((e, n) => {
+    n.startsWith("".concat(t, ":")) && B.delete(n)
   })
 }
 

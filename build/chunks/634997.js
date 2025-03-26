@@ -1,6 +1,6 @@
 /** Chunk was on 80144 **/
 n.d(t, {
-  default: () => A
+  default: () => C
 }), n(266796);
 var o = n(200651),
   i = n(192379),
@@ -12,23 +12,23 @@ var o = n(200651),
   _ = n(168107),
   d = n(480916),
   E = n(81643),
-  N = n(469775),
-  m = n(981631),
-  u = n(800530),
+  u = n(469775),
+  N = n(981631),
+  m = n(800530),
   I = n(388032),
   L = n(165145);
-let A = function(e) {
+let C = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
-    onClose: A
+    onClose: C
   } = e, {
-    loading: S,
-    initiateAgeVerification: C
-  } = (0, E.WD)(A), T = i.useMemo(() => (0, s.Z)(), []);
+    loading: A,
+    initiateAgeVerification: S
+  } = (0, E.WD)(C), x = i.useMemo(() => (0, s.Z)(), []);
   return i.useEffect(() => {
-    (0, d.lA)(T, d.d_.PRIMARY, n)
-  }, [T, n]), (0, o.jsxs)(r.Y0X, {
+    (0, d.lA)(x, d.d_.PRIMARY, n)
+  }, [x, n]), (0, o.jsxs)(r.Y0X, {
     transitionState: t,
     className: L.root,
     children: [(0, o.jsxs)(r.hzk, {
@@ -44,9 +44,9 @@ let A = function(e) {
           children: I.NW.string(I.t.Cc41tb)
         }), (0, o.jsx)(r.olH, {
           className: L.modalClose,
-          onClick: A
+          onClick: C
         })]
-      }), (0, N.u)(T).map((e, t) => {
+      }), (0, u.u)(x).map((e, t) => {
         let {
           title: n,
           description: i
@@ -63,7 +63,7 @@ let A = function(e) {
         className: L.requestContainer,
         children: I.NW.format(I.t.TYfgw8, {
           handleOnRequestHook: () => {
-            _.Z.openUrl(u.sQ.APPEALS_LINK), (0, d.x3)(T, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
+            _.Z.openUrl(m.sQ.APPEALS_LINK), (0, d.x3)(x, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
           }
         })
       })]
@@ -77,7 +77,7 @@ let A = function(e) {
         look: r.zxk.Looks.LINK,
         className: L.learnMoreButton,
         onClick: () => {
-          _.Z.openUrl(c.Z.getArticleURL(m.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, d.x3)(T, d.d_.PRIMARY, d.sU.LEARN_MORE)
+          _.Z.openUrl(c.Z.getArticleURL(N.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, d.x3)(x, d.d_.PRIMARY, d.sU.LEARN_MORE)
         },
         children: [(0, o.jsx)(r.Text, {
           variant: "text-sm/semibold",
@@ -91,9 +91,9 @@ let A = function(e) {
         innerClassName: L.button,
         color: r.zxk.Colors.BRAND,
         onClick: () => {
-          (0, d.x3)(T, d.d_.PRIMARY, d.sU.GET_STARTED), C()
+          (0, d.x3)(x, d.d_.PRIMARY, d.sU.GET_STARTED), S()
         },
-        submitting: S,
+        submitting: A,
         children: [(0, o.jsx)(r.Text, {
           variant: "text-sm/semibold",
           color: "always-white",

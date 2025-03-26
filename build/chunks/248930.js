@@ -2,10 +2,10 @@
 t.d(n, {
   Z: () => I
 });
-var r = t(200651);
+var o = t(200651);
 t(192379);
-var o = t(120356),
-  i = t.n(o),
+var r = t(120356),
+  i = t.n(r),
   l = t(100527),
   s = t(906732),
   c = t(26033),
@@ -24,7 +24,7 @@ function I(e) {
   let {
     user: n,
     entry: t,
-    profileGuildId: o,
+    profileGuildId: r,
     className: I,
     onClose: j,
     hideContextMenu: h = !1
@@ -41,20 +41,20 @@ function I(e) {
     entry: t,
     analyticsLocations: _
   });
-  return null != x && (0, c.Rh)(t) ? (0, r.jsx)(s.Gt, {
+  return null != x && (0, c.Rh)(t) ? (0, o.jsx)(s.Gt, {
     value: _,
-    children: (0, r.jsx)(b.Z, {
+    children: (0, o.jsx)(b.Z, {
       sourceType: g.n_.ACTIVITY,
       user: n,
-      children: (0, r.jsx)(u.Z, {
+      children: (0, o.jsx)(u.Z, {
         user: n,
-        guildId: o,
+        guildId: r,
         profileType: x,
         sourceId: t.id,
         entry: t,
         onAction: P,
         sourceType: g.n_.ACTIVITY,
-        children: () => (0, r.jsx)(f.Z, {
+        children: () => (0, o.jsx)(f.Z, {
           user: n,
           className: m.toolbarContainer,
           interactionSourceId: t.id,
@@ -63,14 +63,14 @@ function I(e) {
           onShowToolbar: () => P({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: h ? void 0 : e => (0, r.jsx)(v.Z, {
+          renderMoreButtonPopout: h ? void 0 : e => (0, o.jsx)(v.Z, {
             display: "recent",
             entry: t,
             user: n,
             onClose: j,
             children: e
           }),
-          children: (0, r.jsx)(y.Z, {
+          children: (0, o.jsx)(y.Z, {
             entry: t,
             user: n,
             onClose: j,

@@ -8,9 +8,9 @@ var o = t(200651),
   i = t(704215),
   l = t(481060),
   c = t(110924),
-  u = t(40851),
+  _ = t(40851),
   s = t(812206),
-  _ = t(243778),
+  u = t(243778),
   d = t(554370),
   p = t(788983),
   f = t(546247),
@@ -31,7 +31,7 @@ function I(e) {
     openNewUserExperienceModal: c
   } = function() {
     let e = [i.z.ACTIVITY_POPOUT_NUX_MODAL],
-      [n, a] = (0, _.US)(e);
+      [n, a] = (0, u.US)(e);
     return {
       showsNewUserExperience: n === i.z.ACTIVITY_POPOUT_NUX_MODAL,
       openNewUserExperienceModal: r.useCallback(() => {
@@ -86,7 +86,7 @@ function I(e) {
   }, [c, a]);
   let {
     renderWindow: s
-  } = r.useContext(u.ZP);
+  } = r.useContext(_.ZP);
   return a ? (0, o.jsx)("div", {
     className: y.nuxBackground,
     children: (0, o.jsx)(f.Z, {
@@ -111,20 +111,20 @@ function P() {
       channelId: n,
       guildId: t
     }
-  }), i = r.useRef(null), u = (0, c.Z)(e);
+  }), i = r.useRef(null), _ = (0, c.Z)(e);
   r.useEffect(() => {
-    null != e ? clearTimeout(i.current) : null != u && null == e && (i.current = window.setTimeout(() => {
+    null != e ? clearTimeout(i.current) : null != _ && null == e && (i.current = window.setTimeout(() => {
       (0, p.xv)(C.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
-  }, [e, u]);
-  let _ = (0, a.e7)([s.Z], () => {
+  }, [e, _]);
+  let u = (0, a.e7)([s.Z], () => {
       let n = null == e ? void 0 : e.applicationId;
       return null == n ? void 0 : s.Z.getApplication(n)
     }),
     f = (0, b.PR)();
   return (0, o.jsx)("div", {
     className: y.container,
-    children: null == e || null == _ ? (0, o.jsx)(l.$jN, {
+    children: null == e || null == u ? (0, o.jsx)(l.$jN, {
       className: y.iframe
     }) : (0, o.jsx)("div", {
       className: y.loadedContentContainer,
@@ -133,7 +133,7 @@ function P() {
         children: [(0, o.jsx)("div", {
           className: y.headerContainer,
           children: (0, o.jsx)(g.Z, {
-            applicationId: _.id,
+            applicationId: u.id,
             channelId: n
           })
         }), (0, o.jsx)("div", {
@@ -143,7 +143,7 @@ function P() {
               channelId: n,
               guildId: t,
               embeddedActivity: e,
-              application: _
+              application: u
             })
           })
         }), f ? (0, o.jsx)(d.Z, {

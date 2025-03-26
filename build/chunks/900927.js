@@ -1,6 +1,6 @@
 /** Chunk was on 94989 **/
 r.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var n = r(200651);
 r(192379);
@@ -8,8 +8,8 @@ var l = r(399606),
   s = r(481060),
   i = r(275759),
   a = r(565138),
-  c = r(706454),
-  o = r(271383),
+  o = r(706454),
+  c = r(271383),
   u = r(430824),
   d = r(709054),
   m = r(388032),
@@ -47,16 +47,16 @@ function j(e, t) {
   }), e
 }
 
-function x(e) {
+function b(e) {
   let {
     userId: t,
     guildId: r,
-    textClassName: x,
-    tooltipDelay: b
-  } = e, v = (0, l.e7)([c.default], () => c.default.locale), g = (0, l.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), h = (0, l.e7)([o.ZP], () => null != r ? o.ZP.getMember(r, t) : null), y = (0, i.FI)(d.default.extractTimestamp(t), v), O = (0, i.FI)(null == h ? void 0 : h.joinedAt, v);
+    textClassName: b,
+    tooltipDelay: x
+  } = e, v = (0, l.e7)([o.default], () => o.default.locale), g = (0, l.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), h = (0, l.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), y = (0, i.FI)(d.default.extractTimestamp(t), v), O = (0, i.FI)(null == h ? void 0 : h.joinedAt, v);
   return null == g || null == h ? (0, n.jsx)(s.Text, {
     variant: "text-sm/normal",
-    className: x,
+    className: b,
     children: y
   }) : (0, n.jsxs)("div", {
     className: p.memberSinceWrapper,
@@ -64,7 +64,7 @@ function x(e) {
       className: p.memberSince,
       children: [(0, n.jsx)(s.ua7, {
         text: m.NW.string(m.t.uvGmCw),
-        delay: b,
+        delay: x,
         children: e => (0, n.jsx)(s.gw7, j(f({
           size: "custom",
           width: 28,
@@ -75,7 +75,7 @@ function x(e) {
         }))
       }), (0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
-        className: x,
+        className: b,
         children: y
       })]
     }), (0, n.jsx)("div", {
@@ -84,14 +84,14 @@ function x(e) {
       className: p.memberSince,
       children: [(0, n.jsx)(s.ua7, {
         text: g.name,
-        delay: b,
+        delay: x,
         children: e => (0, n.jsx)(a.Z, j(f({}, e), {
           guild: g,
           size: a.Z.Sizes.SMOL
         }))
       }), (0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
-        className: x,
+        className: b,
         children: O
       })]
     })]

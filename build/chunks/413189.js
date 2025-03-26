@@ -33,7 +33,13 @@ function E(e) {
     location: "ChatWallpaperSetSystemMessage"
   }), w = (0, p.sX)({
     location: "ChatWallpaperSetSystemMessage"
-  }).enabled, Z = (0, s.ZP)(S), k = (0, a.wjy)((0, l.ZP)()), R = (0, o.e7)([u.default], () => u.default.getCurrentUser()), D = (0, c.m)(v.p9.TIER_2), L = (null == R ? void 0 : R.id) === S.author.id, M = (0, g.P)(null === (t = T.wallpaper) || void 0 === t ? void 0 : t.setterId), W = f.t(T), U = f.Y(S), F = (null === (n = T.wallpaper) || void 0 === n ? void 0 : n.wallpaperId) === U && S.author.id === (null === (E = T.wallpaper) || void 0 === E ? void 0 : E.setterId), B = (0, o.e7)([m.Z], () => m.Z.getWallpaperById(U));
+  }).enabled, Z = (0, s.ZP)(S), k = (0, a.wjy)((0, l.ZP)()), R = (0, o.e7)([u.default], () => u.default.getCurrentUser()), D = (0, c.m)(v.p9.TIER_2), L = (null == R ? void 0 : R.id) === S.author.id, M = (0, g.P)(null === (t = T.wallpaper) || void 0 === t ? void 0 : t.setterId), W = f.t(T), U = f.Y(S), F = (null === (n = T.wallpaper) || void 0 === n ? void 0 : n.wallpaperId) === U && S.author.id === (null === (E = T.wallpaper) || void 0 === E ? void 0 : E.setterId), {
+    chatWallpaper: B,
+    isUpdatingChatWallpaperFlag: G
+  } = (0, o.cj)([m.Z], () => ({
+    chatWallpaper: m.Z.getWallpaperById(U),
+    isUpdatingChatWallpaperFlag: m.Z.isUpdatingChatWallpaperFlagForChannel(T.id)
+  }));
   return null == U ? null : (j = k ? L ? x.NW.format(x.t.z847Tk, {
     wallpaper_name: null !== (O = null == B ? void 0 : B.label) && void 0 !== O ? O : x.t["UQMV/P"]
   }) : x.NW.format(x.t["+lKndX"], {
@@ -52,6 +58,7 @@ function E(e) {
         shouldClear: !1
       })
     },
+    submitting: G,
     children: x.NW.string(x.t.o6850d)
   })) : I = (0, r.jsx)(a.zxk, {
     className: y.action,
@@ -60,6 +67,7 @@ function E(e) {
         shouldClear: !0
       })
     },
+    submitting: G,
     children: x.NW.string(x.t.VkKicX)
   })), (0, r.jsx)(_.Z, {
     channel: T,

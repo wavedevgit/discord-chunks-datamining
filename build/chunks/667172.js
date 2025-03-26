@@ -1,8 +1,8 @@
-/** Chunk was on 22671 **/
+/** Chunk was on 81281 **/
 n.d(e, {
-  v4: () => r
+  v4: () => i
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-01_inappropriate_conversations_new_defaults",
   label: "Inappropriate Conversation Warning Default On",
@@ -18,12 +18,12 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function r(t) {
+function i(t) {
   let {
     location: e
   } = t, {
     enabled: n
-  } = i.useExperiment({
+  } = r.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

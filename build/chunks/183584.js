@@ -1,6 +1,6 @@
-/** Chunk was on 58173 **/
+/** Chunk was on 38542 **/
 n.d(t, {
-  IN: () => a,
+  IN: () => s,
   oZ: () => c
 }), n(200651), n(192379);
 var r = n(570140),
@@ -10,7 +10,7 @@ var i = n(237997);
 n(998502), n(487029);
 var o = n(710111);
 n(981631), n(388032);
-let s = {
+let a = {
   width: o.FW.width,
   height: o.FW.height,
   resizable: !1,
@@ -25,7 +25,7 @@ let s = {
   titleBarStyle: null
 };
 
-function a(e, t) {
+function s(e, t) {
   let n = l.ZP.isOverlayV3EnabledForPID(t),
     o = i.default.disableClickableRegions;
   n || o || r.Z.dispatch({
@@ -54,4 +54,4 @@ function c(e) {
     pid: e
   })
 }
-o.FW.padding, s.width, s.height
+o.FW.padding, a.width, a.height

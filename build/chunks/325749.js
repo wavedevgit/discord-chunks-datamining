@@ -8,9 +8,9 @@ var o = t(200651),
   i = t.n(a),
   l = t(442837),
   c = t(481060),
-  u = t(13245),
+  _ = t(13245),
   s = t(753972),
-  _ = t(812206),
+  u = t(812206),
   d = t(111028),
   p = t(726721),
   f = t(610394),
@@ -45,18 +45,18 @@ function D(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, a = (0, l.e7)([_.Z], () => _.Z.getApplication(n)), D = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), M = (0, l.e7)([P.Z], () => P.Z.getChannel(t)), Y = h.Sb.useSetting(), G = (0, l.Wu)([N.ZP], () => {
+  } = e, a = (0, l.e7)([u.Z], () => u.Z.getApplication(n)), D = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), M = (0, l.e7)([P.Z], () => P.Z.getChannel(t)), H = h.Sb.useSetting(), Y = (0, l.Wu)([N.ZP], () => {
     var e;
     return null == M || null == D ? [] : Array.from(null !== (e = D.userIds) && void 0 !== e ? e : []).map(e => N.ZP.getMember(M.guild_id, e))
-  }, [D, M]), H = r.useMemo(() => {
+  }, [D, M]), G = r.useMemo(() => {
     let e = new Map;
-    return G.forEach(n => {
+    return Y.forEach(n => {
       null != n && void 0 !== n && e.set(n.userId, n)
     }), e
-  }, [G]), V = r.useCallback((e, n) => {
+  }, [Y]), V = r.useCallback((e, n) => {
     var t;
     if (null == e) return null;
-    let r = H.get(e.id),
+    let r = G.get(e.id),
       a = null !== (t = null == r ? void 0 : r.nick) && void 0 !== t ? t : j.ZP.getName(e);
     return (0, o.jsx)(c.DY3, {
       text: a,
@@ -67,13 +67,13 @@ function D(e) {
         className: L.avatar
       }, e.id)
     }, e.id)
-  }, [H]), F = null == D ? void 0 : D.userIds, K = (0, l.Wu)([O.default], () => Array.from(null != F ? F : []).map(e => O.default.getUser(e)).filter(e => null != e), [F]), J = p.Z.useExperiment({
+  }, [G]), F = null == D ? void 0 : D.userIds, K = (0, l.Wu)([O.default], () => Array.from(null != F ? F : []).map(e => O.default.getUser(e)).filter(e => null != e), [F]), J = p.Z.useExperiment({
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
   }).enabled, X = r.useCallback(() => {
     let e = (0, B.getPID)();
-    u.Z.setInputLocked(!f.ZP.isInputLocked(e), e)
+    _.Z.setInputLocked(!f.ZP.isInputLocked(e), e)
   }, []), q = (0, Z.PR)(), {
     canStayOnTop: $,
     popoutWindowAlwaysOnTop: Q,
@@ -118,7 +118,7 @@ function D(e) {
     size: 24,
     className: L.appIcon
   });
-  return Y && (ea = (0, o.jsx)(c.DY3, {
+  return H && (ea = (0, o.jsx)(c.DY3, {
     text: D.compositeInstanceId,
     position: "bottom",
     children: ea

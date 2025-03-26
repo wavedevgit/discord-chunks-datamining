@@ -1,7 +1,7 @@
 /** Chunk was on 94989 **/
 r.d(t, {
   ZP: () => u,
-  rT: () => o
+  rT: () => c
 }), r(266796);
 var n = r(200651);
 r(192379);
@@ -10,7 +10,7 @@ var l = r(120356),
   i = r(481060),
   a = r(770731);
 
-function c(e) {
+function o(e) {
   let {
     title: t
   } = e;
@@ -21,17 +21,17 @@ function c(e) {
   })
 }
 
-function o(e) {
+function c(e) {
   let {
     children: t,
     title: r,
     description: l,
     accessibilityRole: s = "none",
-    accessibilityLabel: o
+    accessibilityLabel: c
   } = e;
   return (0, n.jsxs)("div", {
     className: a.tableRowGroup,
-    children: [null != r && (0, n.jsx)(c, {
+    children: [null != r && (0, n.jsx)(o, {
       title: r
     }), null != l && (0, n.jsx)(i.Text, {
       variant: "text-sm/normal",
@@ -40,7 +40,7 @@ function o(e) {
     }), (0, n.jsx)("div", {
       className: a.content,
       role: s,
-      "aria-label": o,
+      "aria-label": c,
       children: t
     })]
   })
@@ -51,35 +51,45 @@ function u(e) {
     icon: t,
     title: r,
     titleVariant: l = "text-md/semibold",
-    description: c,
-    descriptionVariant: o = "text-xs/medium",
+    description: o,
+    descriptionVariant: c = "text-xs/medium",
     iconClassName: u,
     color: d,
     buttonText: m,
     buttonColor: p = i.zxk.Colors.PRIMARY,
     buttonSize: f = i.zxk.Sizes.SMALL,
     buttonLook: j = i.zxk.Looks.FILLED,
-    buttonDisabled: x,
-    onButtonPress: b,
-    listType: v = "icon",
-    index: g
-  } = e, h = null != m ? (0, n.jsx)(i.zxk, {
+    buttonDisabled: b,
+    buttonIcon: x,
+    buttonIconColor: v,
+    buttonLoading: g,
+    onButtonPress: h,
+    listType: y = "icon",
+    index: O
+  } = e, N = null != m ? (0, n.jsx)(i.zxk, {
     className: a.button,
     size: f,
     color: p,
     look: j,
-    disabled: x,
+    disabled: b,
     "aria-label": m,
-    onClick: b,
-    children: m
+    onClick: h,
+    submitting: g,
+    children: (0, n.jsxs)("div", {
+      className: a.buttonContainer,
+      children: [m, null != x && (0, n.jsx)(x, {
+        color: null != v ? v : "currentColor",
+        className: a.buttonIcon
+      })]
+    })
   }) : void 0;
   return (0, n.jsxs)("div", {
     className: a.row,
-    children: ["numbered" === v && null != g ? (0, n.jsx)(i.X6q, {
+    children: ["numbered" === y && null != O ? (0, n.jsx)(i.X6q, {
       variant: "heading-md/semibold",
       color: "text-brand",
       className: a.number,
-      children: g + 1
+      children: O + 1
     }) : null != t && (0, n.jsx)("div", {
       className: a.iconContainer,
       children: (0, n.jsx)(t, {
@@ -92,11 +102,11 @@ function u(e) {
         variant: l,
         color: "header-primary",
         children: r
-      }), null != c && (0, n.jsx)(i.Text, {
-        variant: o,
+      }), null != o && (0, n.jsx)(i.Text, {
+        variant: c,
         color: "text-secondary",
-        children: c
+        children: o
       })]
-    }), null != h && h]
+    }), null != N && N]
   })
 }

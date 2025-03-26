@@ -67,7 +67,7 @@ function d(e) {
         getIndexFromId: y
       } = e, x = r.useRef(n), j = r.useRef(y);
       j.current = y, x.current = n;
-      let O = r.useRef();
+      let O = r.useRef(C);
       r.useEffect(() => {
         O.current = C
       }, [C]);

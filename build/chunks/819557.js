@@ -1,61 +1,61 @@
 /** Chunk was on 89540 **/
-o.d(n, {
+o.d(e, {
   q: () => s,
   z: () => c
 }), o(266796);
-var r = o(200651);
+var t = o(200651);
 o(192379);
-var t = o(120356),
-  i = o.n(t),
+var r = o(120356),
+  i = o.n(r),
   l = o(481060),
   a = o(639001);
 
-function c(e) {
+function c(n) {
   let {
-    children: n
-  } = e;
-  return (0, r.jsx)("div", {
+    children: e
+  } = n;
+  return (0, t.jsx)("div", {
     className: a.cellGroup,
-    children: (0, r.jsx)("div", {
+    children: (0, t.jsx)("div", {
       className: a.content,
-      children: n
+      children: e
     })
   })
 }
 
-function s(e) {
+function s(n) {
   let {
-    icon: n,
+    icon: e,
     title: o,
-    description: t,
+    description: r,
     iconClassName: c,
     color: s,
     listType: d = "icon",
     index: u
-  } = e;
-  return (0, r.jsxs)("div", {
+  } = n;
+  return (0, t.jsxs)("div", {
     className: a.cell,
-    children: ["numbered" === d && null != u ? (0, r.jsx)(l.X6q, {
+    children: ["numbered" === d && null != u ? (0, t.jsx)(l.X6q, {
       variant: "heading-md/semibold",
       color: "text-brand",
       className: a.number,
       children: u + 1
-    }) : null != n && (0, r.jsx)("div", {
+    }) : null != e && (0, t.jsx)("div", {
       className: a.iconContainer,
-      children: (0, r.jsx)(n, {
+      children: (0, t.jsx)(e, {
         color: null != s ? s : "currentColor",
         className: i()(a.icon, c)
       })
-    }), (0, r.jsxs)("div", {
+    }), (0, t.jsxs)("div", {
       className: a.textContainer,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, t.jsx)(l.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: o
-      }), null != t && (0, r.jsx)(l.Text, {
+      }), null != r && (0, t.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: t
+        children: r
       })]
     })]
   })

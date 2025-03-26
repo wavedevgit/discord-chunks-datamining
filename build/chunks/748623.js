@@ -9,19 +9,19 @@ var r = t(442837),
   i = t(238246),
   l = t(358085),
   c = t(228488),
-  u = t(952561),
+  _ = t(952561),
   s = t(701011),
-  _ = t(932174),
+  u = t(932174),
   d = t(388032);
 
 function p(e) {
   var n;
   let {
     windowKey: t
-  } = e, p = (0, u.Z)(), {
+  } = e, p = (0, _.Z)(), {
     currentDocument: f,
     rootNode: b
-  } = (0, _.Z)(), m = (0, r.e7)([a.Z], () => (0, c.rB)(b, f), [b, f]);
+  } = (0, u.Z)(), m = (0, r.e7)([a.Z], () => (0, c.rB)(b, f), [b, f]);
   return (0, o.jsx)(i.Z, {
     withTitleBar: l.isPlatformEmbedded && !m,
     windowKey: t,

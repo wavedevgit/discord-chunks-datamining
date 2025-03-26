@@ -1,11 +1,11 @@
 /** Chunk was on 70205 **/
-n.d(t, {
+i.d(t, {
   Z: () => g
 });
-var i, l, a, o = n(442837),
-  r = n(570140),
-  u = n(818083),
-  s = n(314897);
+var n, l, a, o = i(442837),
+  r = i(570140),
+  u = i(818083),
+  s = i(314897);
 let d = {},
   c = (0, u.B)({
     kind: "user",
@@ -34,12 +34,12 @@ class f extends(a = o.ZP.Store) {
     return !1
   }
 }
-l = "RpcNotificationSettingsStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
+l = "RpcNotificationSettingsStore", (n = "displayName") in f ? Object.defineProperty(f, n, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[i] = l;
+}) : f[n] = l;
 let g = new f(r.Z, {
   RPC_APP_DISCONNECTED: function(e) {
     delete d[e.socketId]

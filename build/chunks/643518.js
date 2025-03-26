@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => v
 }), t(653041);
-var r = t(442837),
-  o = t(468363),
+var o = t(442837),
+  r = t(468363),
   i = t(158776),
   l = t(885110),
   s = t(369566),
@@ -24,7 +24,7 @@ function v(e) {
     initialSubsection: g
   } = e, {
     voiceActivityStatusEnabled: m
-  } = (0, o.U)({
+  } = (0, r.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
     live: I,
@@ -38,7 +38,7 @@ function v(e) {
     userId: n.id,
     guildId: v,
     surface: "use-user-profile-modal-tab-bar-items"
-  }), Z = n.id === (null == t ? void 0 : t.id), P = (0, r.e7)([l.Z, i.Z], () => {
+  }), Z = n.id === (null == t ? void 0 : t.id), P = (0, o.e7)([l.Z, i.Z], () => {
     let e = Z ? l.Z.getStatus() : i.Z.getStatus(n.id);
     return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE
   }), N = null != h || I.length > 0, E = j.length > 0, {

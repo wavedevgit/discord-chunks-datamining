@@ -1,0 +1,118 @@
+/**
+  Module ID: 22447
+  Original File Name: 6eab0c5d285fd9b8
+**/
+.row__19fd1 {
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin: 0 var(--spacing-16);
+    padding: var(--spacing-16) 0;
+    gap: var(--spacing-16)
+}
+
+.row__19fd1:last-child {
+    border-bottom: none
+}
+
+.iconContainer__19fd1 {
+    display: flex;
+    justify-content: center
+}
+
+.icon__19fd1,.iconContainer__19fd1 {
+    height: var(--spacing-24);
+    width: var(--spacing-24)
+}
+
+.icon__19fd1 {
+    color: var(--icon-secondary)
+}
+
+.textContainer__19fd1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+
+.button__19fd1 {
+    min-width: 75px;
+    margin-left: auto;
+    flex-shrink: 0;
+    padding: var(--spacing-8) var(--spacing-12)
+}
+
+.number__19fd1 {
+    border-radius: var(--radius-round);
+    background-color: var(--bg-mod-subtle);
+    min-width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center
+}
+
+.number__19fd1,.tableRowGroup__19fd1 {
+    display: flex;
+    flex-direction: column
+}
+
+.tableRowGroup__19fd1 {
+    flex-shrink: 0;
+    gap: var(--spacing-8)
+}
+
+.tableRowGroup__19fd1 .content__19fd1 {
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary)
+}
+
+.visual-refresh .row__19fd1 {
+    border-color: var(--border-faint)
+}
+
+.visual-refresh .content__19fd1 {
+    border: 1px solid var(--border-faint)
+}
+
+.buttonContainer__19fd1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-4)
+}
+
+.buttonIcon__19fd1 {
+    width: 16px;
+    height: 16px
+}
+
+.root__75df3 {
+    min-width: -moz-fit-content;
+    min-width: fit-content
+}
+
+.content__75df3,.headersContainer__75df3 {
+    padding: var(--spacing-16)
+}
+
+.headersContainer__75df3 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
+.modalClose__75df3 {
+    position: absolute;
+    right: var(--spacing-16);
+    top: var(--spacing-16)
+}
+
+.learnMore__75df3 {
+    padding: var(--spacing-16)
+}
+
+/*# sourceMappingURL=6eab0c5d285fd9b8.css.map*/

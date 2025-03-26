@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
-});
+  Z: () => g
+}), n(47120);
 var r, i = n(442837),
   o = n(570140);
 
@@ -15,13 +15,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 let s = {},
-  l = 0;
+  l = 0,
+  c = new Set;
 
-function c() {
+function u() {
   l = 1
 }
 
-function u(e) {
+function d(e) {
   let {
     wallpapers: t
   } = e;
@@ -30,14 +31,28 @@ function u(e) {
   })
 }
 
-function d() {
+function f() {
   l = 3
 }
 
-function f() {
+function _() {
   s = {}, l = 0
 }
-class _ extends(r = i.ZP.Store) {
+
+function p(e) {
+  let {
+    channelId: t
+  } = e, n = new Set(c);
+  n.add(t), c = n
+}
+
+function h(e) {
+  let {
+    channelId: t
+  } = e, n = new Set(c);
+  n.delete(t), c = n
+}
+class m extends(r = i.ZP.Store) {
   get isFetchingWallpapers() {
     return 1 === l
   }
@@ -53,11 +68,16 @@ class _ extends(r = i.ZP.Store) {
   getWallpaperById(e) {
     if (null != e) return s[e]
   }
+  isUpdatingChatWallpaperFlagForChannel(e) {
+    return c.has(e)
+  }
 }
-a(_, "displayName", "ChatWallpaperStore");
-let p = new _(o.Z, {
-  FETCH_CHAT_WALLPAPERS_START: c,
-  FETCH_CHAT_WALLPAPERS_SUCCESS: u,
-  FETCH_CHAT_WALLPAPERS_FAILURE: d,
-  LOGOUT: f
+a(m, "displayName", "ChatWallpaperStore");
+let g = new m(o.Z, {
+  FETCH_CHAT_WALLPAPERS_START: u,
+  FETCH_CHAT_WALLPAPERS_SUCCESS: d,
+  FETCH_CHAT_WALLPAPERS_FAILURE: f,
+  UPDATE_CHAT_WALLPAPER_FLAG_START: p,
+  UPDATE_CHAT_WALLPAPER_FLAG_COMPLETE: h,
+  LOGOUT: _
 })
