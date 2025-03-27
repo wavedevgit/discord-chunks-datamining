@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(192379),
   i = n(399606),
-  o = n(430198),
-  a = n(754688),
+  a = n(430198),
+  o = n(754688),
   l = n(314897),
   s = n(592125),
   c = n(271383),
@@ -25,7 +25,7 @@ function b(e, t) {
       let e = l.default.getId();
       return c.ZP.isMember(null == b ? void 0 : b.guildId, e)
     }, [b]),
-    x = (0, i.e7)([o.Z], () => null != b && (null == b ? void 0 : b.channelId) != null && o.Z.isChannelGated(b.guildId, b.channelId), [b]),
+    x = (0, i.e7)([a.Z], () => null != b && (null == b ? void 0 : b.channelId) != null && a.Z.isChannelGated(b.guildId, b.channelId), [b]),
     y = t.hasFlag(_.iLy.IS_CROSSPOST),
     {
       rawMediaPostEmbedData: E,
@@ -40,14 +40,14 @@ function b(e, t) {
         n = u.Z.getGuild(null == b ? void 0 : b.guildId),
         r = s.Z.getChannel(null == b ? void 0 : b.channelId),
         i = p.default.getUser(null == t ? void 0 : t.author_id),
-        o = d.Z.getGuildId(),
-        l = null != r && (0, a.YO)(r);
+        a = d.Z.getGuildId(),
+        l = null != r && (0, o.YO)(r);
       return {
         rawMediaPostEmbedData: t,
         guild: n,
         parentChannel: r,
         user: i,
-        selectedGuildId: o,
+        selectedGuildId: a,
         canAccess: l
       }
     }, [b]),

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(481060),
-  a = n(283595),
+  a = n(481060),
+  o = n(283595),
   l = n(55563),
   s = n(780570),
   c = n(701560),
@@ -48,7 +48,7 @@ function m(e) {
   let {
     application: t,
     fullWidth: n = !1,
-    size: m = o.zxk.Sizes.LARGE,
+    size: m = a.zxk.Sizes.LARGE,
     color: f,
     customDisabledColor: h,
     hideNotLaunchable: g,
@@ -68,7 +68,7 @@ function m(e) {
     className: v,
     hover: y,
     innerClassName: E
-  }, N = (0, i.e7)([a.Z], () => a.Z.getActiveLibraryApplication(t.id)), j = null != N ? N.sku.id : null, C = null != j ? j : t.primarySkuId, I = (0, i.e7)([l.Z], () => null != C && !l.Z.didFetchingSkuFail(C));
+  }, N = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), j = null != N ? N.sku.id : null, C = null != j ? j : t.primarySkuId, I = (0, i.e7)([l.Z], () => null != C && !l.Z.didFetchingSkuFail(C));
   return null != N && (0, s.Je)(N) ? (0, r.jsx)(u.Z, p(d({}, O), {
     libraryApplication: N,
     source: x

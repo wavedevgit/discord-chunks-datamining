@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: c4c80690af7b6f5d
+  Original File Name: 784b2d5694568980
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4533,26 +4533,36 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .invitesRefresh_f37cb1 .guildDropdown_f37cb1 {
-    overflow: hidden;
+    height: 32px;
     display: flex;
     align-items: center;
-    gap: var(--space-xxs);
+    gap: 2px;
     cursor: pointer;
-    padding: var(--space-xxs) var(--space-xxs) var(--space-xxs) var(--space-xs);
-    border-radius: 8px
+    padding: 0 var(--space-xxs) 0 var(--space-xs);
+    border-radius: 8px;
+    min-width: 0
 }
 
 .invitesRefresh_f37cb1 .guildDropdown_f37cb1:hover {
-    background-color: var(--bg-mod-faint)
+    background-color: var(--bg-mod-subtle)
+}
+
+.invitesRefresh_f37cb1 .guildBadgeAndName_f37cb1 {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    min-width: 0
 }
 
 .invitesRefresh_f37cb1 .inviteButton_f37cb1 {
+    flex: 0 0 auto;
     width: 32px;
     height: 32px
 }
 
 .invitesRefresh_f37cb1 .inviteButton_f37cb1:hover {
-    background-color: var(--bg-mod-faint)
+    background-color: var(--bg-mod-subtle)
 }
 
 @keyframes pulse__3b43f {
@@ -5872,4 +5882,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=c4c80690af7b6f5d.css.map*/
+/*# sourceMappingURL=784b2d5694568980.css.map*/

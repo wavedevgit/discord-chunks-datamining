@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(442837),
   s = n(481060),
   c = n(25610),
@@ -73,7 +73,7 @@ let U = i.memo(function e(t) {
   var n;
   let i;
   let {
-    channel: o,
+    channel: a,
     message: s,
     compact: Z = !1,
     className: D,
@@ -82,9 +82,9 @@ let U = i.memo(function e(t) {
     disableInteraction: G = !1,
     hasThread: H,
     treatSpam: V
-  } = t, z = k.OBS.has(s.type) ? s.messageReference : void 0, K = (0, l.e7)([m.Z], () => m.Z.getMessageByReference(z)), Y = (0, l.e7)([h.Z], () => s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED ? h.Z.getChannel(K.message.channel_id) : null), X = f.x4.useSetting(), q = f.RS.useSetting(), Q = f.NA.useSetting(), J = f.QK.useSetting(), $ = (0, u.A)((null !== (n = s.editedTimestamp) && void 0 !== n ? n : s.timestamp).valueOf()), ee = (0, d.Z)(null == o ? void 0 : o.id), {
+  } = t, z = k.OBS.has(s.type) ? s.messageReference : void 0, K = (0, l.e7)([m.Z], () => m.Z.getMessageByReference(z)), Y = (0, l.e7)([h.Z], () => s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED ? h.Z.getChannel(K.message.channel_id) : null), X = f.x4.useSetting(), q = f.RS.useSetting(), Q = f.NA.useSetting(), J = f.QK.useSetting(), $ = (0, u.A)((null !== (n = s.editedTimestamp) && void 0 !== n ? n : s.timestamp).valueOf()), ee = (0, d.Z)(null == a ? void 0 : a.id), {
     disableReactionCreates: et
-  } = (0, O.Z)(o), {
+  } = (0, O.Z)(a), {
     content: en,
     hasSpoilerEmbeds: er
   } = (0, C.Z)(s, {
@@ -93,12 +93,12 @@ let U = i.memo(function e(t) {
     allowHeading: $,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), ei = (0, E.ZP)(s), eo = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), ea = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !ea && void 0 === i, es = (0, I.Z)({
+  }), ei = (0, E.ZP)(s), ea = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), eo = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !eo && void 0 === i, es = (0, I.Z)({
     message: s,
-    channel: o,
+    channel: a,
     enabled: el
-  }), ec = (0, c.V)(o.id, s.author.id), eu = (0, b.ro)(s.id, s.channel_id), ed = (0, p.Z)(s);
-  return ea ? (0, r.jsx)(e, W(M({}, t), {
+  }), ec = (0, c.V)(a.id, s.author.id), eu = (0, b.ro)(s.id, s.channel_id), ed = (0, p.Z)(s);
+  return eo ? (0, r.jsx)(e, W(M({}, t), {
     message: K.message,
     channel: Y,
     hasThread: !1
@@ -109,18 +109,18 @@ let U = i.memo(function e(t) {
     collapsedReason: i
   }) : (0, r.jsx)(N.Z, {
     compact: Z,
-    className: a()(D, {
+    className: o()(D, {
       [L.ephemeral]: (0, v.Pv)(s),
       [L.disableInteraction]: G,
       [L.groupStart]: t.isGroupStart
     }),
-    childrenRepliedMessage: (0, w.Z)(s, o, z, K, Z),
+    childrenRepliedMessage: (0, w.Z)(s, a, z, K, Z),
     childrenHeader: (0, T.Z)(W(M({}, t), {
       author: ei,
-      guildId: o.guild_id
+      guildId: a.guild_id
     })),
     childrenAccessories: (0, r.jsx)(j.BB, {
-      channel: o,
+      channel: a,
       message: s,
       hasSpoilerEmbeds: er,
       compact: Z,
@@ -143,12 +143,12 @@ let U = i.memo(function e(t) {
       ctaButtonType: eu,
       hasInlineForwardButton: !1
     }),
-    childrenExecutedCommand: (0, A.Z)(s, o, Z),
+    childrenExecutedCommand: (0, A.Z)(s, a, Z),
     childrenMessageContent: (0, S.Z)(t, en),
     childrenSystemMessage: (0, P.Z)(t),
     onContextMenu: U,
     onClick: B,
-    hasThread: !1 !== H && null != eo && s.hasFlag(k.iLy.HAS_THREAD),
+    hasThread: !1 !== H && null != ea && s.hasFlag(k.iLy.HAS_THREAD),
     hasReply: s.type === k.uaV.REPLY,
     isSystemMessage: (0, y.Z)(s),
     messageRef: es
@@ -160,7 +160,7 @@ function F(e) {
     className: t,
     count: n,
     compact: i,
-    collapsedReason: o
+    collapsedReason: a
   } = e;
   return (0, r.jsx)(N.Z, {
     className: t,
@@ -176,7 +176,7 @@ function F(e) {
       }),
       children: (0, r.jsx)("div", {
         className: D.blockedMessageText,
-        children: R.NW.format(o, {
+        children: R.NW.format(a, {
           count: n
         })
       })

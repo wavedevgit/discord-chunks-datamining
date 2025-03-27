@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(873546),
-  a = n(373793),
+  a = n(873546),
+  o = n(373793),
   l = n(399606),
   s = n(481060),
   c = n(434650),
@@ -44,7 +44,7 @@ function C(e) {
   }, []), W = (0, c.O)(M), U = i.useCallback(() => {
     _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: I,
-      device_platform: o.tq ? "mobile_web" : "desktop_web",
+      device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
       guild_id: R,
       channel_id: S.channel_id
@@ -56,7 +56,7 @@ function C(e) {
     D && Z === x.M.FETCHED && U()
   }, [D, Z, U]), i.useEffect(() => {
     D && w && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
-      device_platform: o.tq ? "mobile_web" : "desktop_web",
+      device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
       guild_id: R,
       channel_id: S.channel_id
@@ -65,7 +65,7 @@ function C(e) {
   let F = e => {
     _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
       application_id: I,
-      device_platform: o.tq ? "mobile_web" : "desktop_web",
+      device_platform: a.tq ? "mobile_web" : "desktop_web",
       clicked_section: e,
       guild_id: R,
       channel_id: S.channel_id
@@ -121,7 +121,7 @@ function C(e) {
       installParams: A.install_params,
       integrationTypesConfig: A.integration_types_config
     }),
-    V = a.Y.GUILD_INSTALL in (null !== (C = A.integration_types_config) && void 0 !== C ? C : {}) && H;
+    V = o.Y.GUILD_INSTALL in (null !== (C = A.integration_types_config) && void 0 !== C ? C : {}) && H;
   return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {

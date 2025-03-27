@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   l = n(442837),
   s = n(447543),
   c = n(100527),
@@ -22,7 +22,7 @@ var r = n(200651),
   x = n(651873);
 
 function y(e) {
-  let t, n, o, {
+  let t, n, a, {
       invite: y,
       currentUserId: E,
       guild: O,
@@ -38,12 +38,12 @@ function y(e) {
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
     A = null != y && y.target_type === b.Iq.STREAM && null != y.target_user && null != S,
     w = null != y && null != T && null != y.channel && null != y.guild && T.channelId === y.channel.id && T.guildId === y.guild.id;
-  a()(null != y, "Invite cannot be null");
+  o()(null != y, "Invite cannot be null");
   let {
     target_type: Z,
     target_user: k
   } = y;
-  a()(Z === b.Iq.STREAM && null != k, "invalid streaming invite");
+  o()(Z === b.Iq.STREAM && null != k, "invalid streaming invite");
   let R = E === k.id,
     D = y.state === _.r2o.ACCEPTING,
     L = i.useCallback(() => {
@@ -56,9 +56,9 @@ function y(e) {
     O = new m.ZP(y.guild)
   }
   let W = null != y.channel ? (0, p.jD)(y.channel) : null;
-  M && !w ? o = R ? v.NW.string(v.t.oBLoZG) : v.NW.formatToPlainString(v.t["0QJmAw"], {
+  M && !w ? a = R ? v.NW.string(v.t.oBLoZG) : v.NW.formatToPlainString(v.t["0QJmAw"], {
     name: k.username
-  }) : (t = v.NW.string(v.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, A && (t = v.NW.string(v.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), o = R ? v.NW.string(v.t["4hyaHh"]) : v.NW.formatToPlainString(v.t.QmlLEh, {
+  }) : (t = v.NW.string(v.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, A && (t = v.NW.string(v.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = R ? v.NW.string(v.t["4hyaHh"]) : v.NW.formatToPlainString(v.t.QmlLEh, {
     name: k.username
   }));
   let U = I === O.id && null != W ? (0, r.jsx)(d.Z.Channel, {
@@ -76,7 +76,7 @@ function y(e) {
           guild: O,
           onClick: M && w ? L : void 0
         }), (0, r.jsx)(d.Z.Info, {
-          title: o,
+          title: a,
           onClick: M && w ? L : void 0,
           children: U
         })]

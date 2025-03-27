@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(739566),
-  o = n(834129),
-  a = n(388032);
+  a = n(834129),
+  o = n(388032);
 
 function l(e) {
   let {
@@ -14,11 +14,11 @@ function l(e) {
     usernameHook: l,
     compact: s
   } = e, c = (0, i.ZP)(t), u = l(c);
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(819373),
     timestamp: t.timestamp,
     compact: s,
-    children: a.NW.format(a.t.OEdU6e, {
+    children: o.NW.format(o.t.OEdU6e, {
       username: c.nick,
       usernameHook: u
     })

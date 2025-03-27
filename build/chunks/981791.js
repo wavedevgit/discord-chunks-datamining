@@ -1,22 +1,22 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  A: () => o
+  A: () => a
 });
 var r = n(981631),
   i = n(388032);
 
-function o(e) {
+function a(e) {
   let {
     application: t,
     username: n,
-    usernameHook: o = r.dG4
+    usernameHook: a = r.dG4
   } = e;
   return null != t ? i.NW.format(i.t.dXdgnp, {
     username: n,
     applicationName: t.name,
-    usernameHook: o
+    usernameHook: a
   }) : i.NW.format(i.t.O829Ul, {
     username: n,
-    usernameHook: o
+    usernameHook: a
   })
 }

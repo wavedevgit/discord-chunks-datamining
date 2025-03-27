@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(442837),
   s = n(481060),
   c = n(447543),
@@ -27,12 +27,12 @@ function O(e) {
   let {
     guild: t,
     invite: n
-  } = e, o = i.useRef(null), [O, N] = i.useState(!0), [j, C] = i.useState(!1), I = n.state === x.r2o.ACCEPTING, S = null != t, {
+  } = e, a = i.useRef(null), [O, N] = i.useState(!0), [j, C] = i.useState(!1), I = n.state === x.r2o.ACCEPTING, S = null != t, {
     analyticsLocations: T
   } = (0, p.ZP)(d.Z.INVITE_EMBED), P = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    C((null !== (t = null === (e = o.current) || void 0 === e ? void 0 : e.clientHeight) && void 0 !== t ? t : 0) > 328)
+    C((null !== (t = null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) && void 0 !== t ? t : 0) > 328)
   }, [C]);
   let A = i.useCallback(() => {
       let e = "noop";
@@ -47,20 +47,20 @@ function O(e) {
     }, [O, j]),
     R = i.useMemo(() => {
       var e;
-      return j && (null === (e = o.current) || void 0 === e ? void 0 : e.clientHeight) != null ? {
-        height: O ? 328 : o.current.clientHeight + 24 + 65,
+      return j && (null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) != null ? {
+        height: O ? 328 : a.current.clientHeight + 24 + 65,
         transition: P ? void 0 : "height 0.2s ease"
       } : {}
     }, [O, j, P]);
   return null == w ? (0, r.jsx)(v.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: a()(E.guildInviteContainer, {
+    className: o()(E.guildInviteContainer, {
       [E.clickable]: j && O
     }),
     onClick: Z,
     style: R,
     children: [(0, r.jsxs)("div", {
       className: E.cardHeightMeasure,
-      ref: o,
+      ref: a,
       children: [(0, r.jsx)(b.Z7, {
         profile: w,
         className: E.banner
@@ -93,7 +93,7 @@ function O(e) {
         children: y.NW.string(y.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: a()(E.footer, {
+      className: o()(E.footer, {
         [E.floatingFooter]: j
       }),
       children: [j && O ? (0, r.jsx)("div", {

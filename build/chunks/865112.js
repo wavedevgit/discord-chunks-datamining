@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(692547),
   i = n(497089),
-  o = n(650473),
-  a = n(389765),
+  a = n(650473),
+  o = n(389765),
   l = n(137492),
   s = n(387661),
   c = n(659953),
@@ -36,8 +36,8 @@ let v = {
     TOP_MESSAGES: m,
     NOTIFICATION_CENTER: l,
     UPDATE_PROFILE: b,
-    FIND_FRIENDS: a,
-    ADD_FRIEND: a,
+    FIND_FRIENDS: o,
+    ADD_FRIEND: o,
     FIRST_MESSAGE: g
   },
   y = e => {
@@ -108,12 +108,12 @@ let v = {
   j = e => {
     switch (e.item_enum) {
       case i.AM.UPDATE_PROFILE:
-        return o.Y9;
+        return a.Y9;
       case i.AM.ADD_FRIEND:
       case i.AM.FIND_FRIENDS:
-        return o.AZ;
+        return a.AZ;
       case i.AM.FIRST_MESSAGE:
-        return o.bj;
+        return a.bj;
       default:
         return r.Z.unsafe_rawColors.BRAND_500.css
     }

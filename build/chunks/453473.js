@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(512722),
   s = n.n(l),
   c = n(913527),
@@ -115,8 +115,8 @@ function B(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: o,
-    popoutPosition: a,
+    children: a,
+    popoutPosition: o,
     popoutAlign: l
   } = e, [s, c] = i.useState(!1), u = i.useCallback(() => {
     c(!1), s && (null == n || n())
@@ -127,7 +127,7 @@ function B(e) {
   let p = (0, m.e7)([S.Z], () => S.Z.hasOverdueReminder(), []);
   return (0, r.jsx)(f.yRy, {
     animation: f.yRy.Animation.NONE,
-    position: a,
+    position: o,
     align: l,
     autoInvert: !1,
     shouldShow: s,
@@ -142,7 +142,7 @@ function B(e) {
       let {
         isShown: n
       } = t;
-      return o(d, n, e, p)
+      return a(d, n, e, p)
     }
   })
 }
@@ -151,40 +151,40 @@ function G(e) {
   let {
     savedMessageKeys: t,
     closePopout: n
-  } = e, o = i.useRef(null), a = (0, _.Z)("for-later", o), [l, s] = i.useState(new Date);
+  } = e, a = i.useRef(null), o = (0, _.Z)("for-later", a), [l, s] = i.useState(new Date);
   return i.useEffect(() => {
     let e = setInterval(() => s(new Date), j.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
   }, []), (0, r.jsx)(p.bG, {
-    navigator: a,
+    navigator: o,
     children: (0, r.jsx)(p.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, a = function(e, t) {
+        } = e, o = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
             var n, r, i = {},
-              o = Object.keys(e);
-            for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+              a = Object.keys(e);
+            for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
             return i
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var o = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+            var a = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
           }
           return i
         }(e, ["ref"]);
         return (0, r.jsx)(f.h21, M(L({
           ref: e => {
             var t;
-            o.current = e, i.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
+            a.current = e, i.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
           },
           className: D.messagesScroller
-        }, a), {
+        }, o), {
           children: t.map(e => (0, r.jsx)(V, {
             savedMessageKey: e,
             closePopout: n,
@@ -200,7 +200,7 @@ function H(e) {
   let {
     savedMessage: t,
     closePopout: n,
-    throttledNow: o
+    throttledNow: a
   } = e, l = (0, I.gr)(t), s = i.useCallback(async e => {
     var r;
     await (0, I.fC)(t, l), e.shiftKey || n(), O.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
@@ -219,7 +219,7 @@ function H(e) {
       "aria-label": R.NW.string(R.t["+TSRGB"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(Z.Z, {
       reminder: t,
-      throttledNow: o
+      throttledNow: a
     }) : null, (0, r.jsx)(A.Z, {
       channel: l
     }), (0, r.jsx)(v.Z, {
@@ -238,7 +238,7 @@ function H(e) {
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: a()(D.messageContainer, D.deletedMessage),
+    className: o()(D.messageContainer, D.deletedMessage),
     children: [(0, r.jsx)("div", {
       className: D.deleteIcon,
       children: (0, r.jsx)(f.P4T, {
@@ -266,9 +266,9 @@ function V(e) {
     savedMessageKey: t,
     closePopout: n,
     throttledNow: i
-  } = e, o = (0, m.e7)([S.Z], () => S.Z.getSavedMessage(t.channelId, t.messageId));
-  return null == o ? null : (0, r.jsx)(H, {
-    savedMessage: o,
+  } = e, a = (0, m.e7)([S.Z], () => S.Z.getSavedMessage(t.channelId, t.messageId));
+  return null == a ? null : (0, r.jsx)(H, {
+    savedMessage: a,
     closePopout: n,
     throttledNow: i
   })

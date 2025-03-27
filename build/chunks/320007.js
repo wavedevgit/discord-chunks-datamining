@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   l = n(665149),
   s = n(618158),
   c = n(819640),
@@ -34,19 +34,19 @@ function b(e) {
     lastClipsSession: O,
     remindersEnabled: N,
     hasAnyClipAnimations: j
-  } = (0, o.cj)([p.Z], () => ({
+  } = (0, a.cj)([p.Z], () => ({
     hasClips: p.Z.hasClips(),
     hasNewClips: p.Z.getNewClipIds().length > 0,
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), C = null != O && O.newClipIds.length > 0, I = (0, f.n)(e => e.clipsButtonRef), S = (0, f.n)(e => e.setClipsButtonRef), T = (0, o.e7)([c.Z], () => c.Z.hasLayers()), {
+  })), C = null != O && O.newClipIds.length > 0, I = (0, f.n)(e => e.clipsButtonRef), S = (0, f.n)(e => e.setClipsButtonRef), T = (0, a.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: P,
     allowIdle: A
   } = (0, s.Y)("animation");
 
   function w() {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("2668"), n.e("18903")]).then(n.bind(n, 542055));
@@ -73,7 +73,7 @@ function b(e) {
     })
   }
   return (i.useEffect(() => (j ? P() : A(), () => A()), [j, P, A]), x && v && y) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != I && t && N && C && !(0, a.$sL)() && !T && (0, r.jsx)(h.Z, {
+    children: [null != I && t && N && C && !(0, o.$sL)() && !T && (0, r.jsx)(h.Z, {
       clipIconRef: I,
       lastClipsSession: O,
       onOpenClipsGallery: w
@@ -81,7 +81,7 @@ function b(e) {
       ref: S,
       children: (0, r.jsx)(l.JO, {
         className: b,
-        icon: a.AlX,
+        icon: o.AlX,
         showBadge: E,
         tooltip: _.NW.string(_.t.MXaLEB),
         onClick: w

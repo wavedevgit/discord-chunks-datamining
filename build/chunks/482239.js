@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(739566),
-  o = n(834129),
-  a = n(388032);
+  a = n(834129),
+  o = n(388032);
 
 function l(e) {
   let {
@@ -16,13 +16,13 @@ function l(e) {
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, l), f = c(p), h = u(null != m ? m : void 0), g = a.NW.format(a.t["32QI5+"], {
+  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, l), f = c(p), h = u(null != m ? m : void 0), g = o.NW.format(o.t["32QI5+"], {
     actorName: p.nick,
     actorHook: f,
     targetName: null == m ? void 0 : m.nick,
     targetHook: h
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(474019),
     timestamp: t.timestamp,
     compact: d,

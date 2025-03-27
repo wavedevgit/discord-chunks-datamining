@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   l = n(541716),
   s = n(419922),
   c = n(665906),
@@ -22,7 +22,7 @@ let v = e => {
     let {
       channel: t,
       message: n
-    } = e, [o, c] = i.useState(!1), u = (0, h.y6)(n.id), d = i.useCallback(() => {
+    } = e, [a, c] = i.useState(!1), u = (0, h.y6)(n.id), d = i.useCallback(() => {
       (0, f.v)({
         type: l.Ie.FORM,
         content: "",
@@ -36,16 +36,16 @@ let v = e => {
     }, [t, n, u]);
     return (0, r.jsx)("div", {
       className: b.welcomeCTA,
-      children: (0, r.jsxs)(a.zxk, {
+      children: (0, r.jsxs)(o.zxk, {
         className: b.welcomeCTAButtonOuter,
         innerClassName: b.welcomeCTAButton,
-        color: a.Ttl.PRIMARY,
+        color: o.Ttl.PRIMARY,
         onMouseEnter: () => c(!0),
         onMouseLeave: () => c(!1),
         onClick: d,
         children: [(0, r.jsx)(s.Z, {
           className: b.welcomeCTASticker,
-          isInteracting: o,
+          isInteracting: a,
           sticker: u,
           size: 28
         }), _.NW.string(_.t["7Tj6HR"])]
@@ -56,18 +56,18 @@ let v = e => {
     let {
       message: t,
       channel: n
-    } = e, i = n.getGuildId(), a = (0, o.e7)([m.default, p.Z, d.Z, u.ZP], () => {
+    } = e, i = n.getGuildId(), o = (0, a.e7)([m.default, p.Z, d.Z, u.ZP], () => {
       var e;
       let r = m.default.getCurrentUser(),
-        o = (0, c.xl)(n),
-        a = p.Z.can(g.Plq.SEND_MESSAGES, n),
+        a = (0, c.xl)(n),
+        o = p.Z.can(g.Plq.SEND_MESSAGES, n),
         l = null != i && null != r && (null === (e = u.ZP.getMember(i, r.id)) || void 0 === e ? void 0 : e.isPending),
         s = t.author.bot,
         f = d.Z.getGuild(i),
         h = null != f && (f.systemChannelFlags & g.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-      return a && !o && !l && !s && h
+      return o && !a && !l && !s && h
     });
-    return null != i && a ? (0, r.jsx)(v, {
+    return null != i && o ? (0, r.jsx)(v, {
       message: t,
       channel: n
     }) : null

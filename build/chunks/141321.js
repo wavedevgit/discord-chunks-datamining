@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   l = n(540059),
   s = n(317632),
   c = n(602478),
@@ -25,13 +25,13 @@ function v(e) {
     onClose: n,
     className: v,
     "data-jump-section": x
-  } = e, y = i.useRef(null), E = (0, o.e7)([m.default], () => m.default.getCurrentUser()), O = (0, l.Q3)("RecentsButton"), N = i.useRef(null), j = (0, o.e7)([p.ZP], () => (null == E ? void 0 : E.id) != null && p.ZP.getMentionCount(E.id, g.W.NOTIFICATION_CENTER) > 0), {
+  } = e, y = i.useRef(null), E = (0, a.e7)([m.default], () => m.default.getCurrentUser()), O = (0, l.Q3)("RecentsButton"), N = i.useRef(null), j = (0, a.e7)([p.ZP], () => (null == E ? void 0 : E.id) != null && p.ZP.getMentionCount(E.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: C
   } = c.Z.useExperiment({
     location: "RecentsButton"
   }, {
     autoTrackExposure: !1
-  }), I = (0, o.e7)([s.Z], () => C && s.Z.getUnseenInviteCount() > 0), S = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE);
+  }), I = (0, a.e7)([s.Z], () => C && s.Z.getUnseenInviteCount() > 0), S = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
     onOpen: t,
     onClose: n,
@@ -41,7 +41,7 @@ function v(e) {
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
-      var o, l;
+      var a, l;
       return (0, r.jsxs)("div", {
         ref: N,
         className: b.recentsIcon,
@@ -51,7 +51,7 @@ function v(e) {
         }), (0, r.jsx)(d.U, {
           location: "inbox-button",
           targetElementRef: y,
-          children: (0, r.jsx)(u.JO, (o = function(e) {
+          children: (0, r.jsx)(u.JO, (a = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -72,14 +72,14 @@ function v(e) {
             ref: y,
             className: v,
             onClick: e,
-            icon: a.xx7,
+            icon: o.xx7,
             iconSize: O ? S : void 0,
             "aria-label": _.NW.string(_.t.GSmTKC),
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,
             showBadge: j || I || i,
             "data-jump-section": x
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -87,8 +87,8 @@ function v(e) {
             }
             return n
           })(Object(l)).forEach(function(e) {
-            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
-          }), o))
+            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
+          }), a))
         })]
       })
     }

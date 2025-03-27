@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120), n(266796), n(566702);
 var r = n(200651),
   i = n(192379),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   l = n(442837),
   s = n(481060),
   c = n(131388),
@@ -52,7 +52,7 @@ function I(e) {
   let {
     coverImageAsset: t,
     isPreview: n = !1
-  } = e, i = f.QK.useSetting(), o = (0, v.n)() && i, [a, l] = (0, m.Z)(t, o), s = o ? (0, r.jsx)(d.Z, {
+  } = e, i = f.QK.useSetting(), a = (0, v.n)() && i, [o, l] = (0, m.Z)(t, a), s = a ? (0, r.jsx)(d.Z, {
     autoPlay: !0,
     loop: !0,
     className: j.coverImage,
@@ -65,7 +65,7 @@ function I(e) {
     className: j.coverImage
   });
   return (0, r.jsx)("div", {
-    ref: a,
+    ref: o,
     className: j.coverImageContainer,
     children: null == l || n ? s : (0, r.jsx)("img", {
       src: l,
@@ -78,15 +78,15 @@ function I(e) {
 function S(e) {
   var t, n;
   let {
-    guild: o,
+    guild: a,
     subscriptionsSettings: d
-  } = e, m = o.id, {
+  } = e, m = a.id, {
     nickname: f,
     nickcolor: _
   } = (0, l.cj)([h.ZP, g.default], () => {
     var e, t;
     let n = g.default.getCurrentUser();
-    a()(null != n, "user cannot be null");
+    o()(null != n, "user cannot be null");
     let r = h.ZP.getMember(m, n.id);
     return {
       nickname: null !== (e = null == r ? void 0 : r.nick) && void 0 !== e ? e : b.ZP.getName(n),
@@ -126,9 +126,9 @@ function S(e) {
       className: j.infoContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(p.Z, {
-          guild: o,
+          guild: a,
           size: p.Z.Sizes.LARGER,
-          iconSrc: null == o.icon || k ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : void 0
+          iconSrc: null == a.icon || k ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : void 0
         })
       }), (0, r.jsx)(s.LZC, {
         size: 16,
@@ -143,7 +143,7 @@ function S(e) {
             color: "header-primary",
             lineClamp: 2,
             children: k ? N.NW.string(N.t.rtgp7u) : N.NW.formatToPlainString(N.t.NZeik5, {
-              guildName: o.name
+              guildName: a.name
             })
           })
         }), (0, r.jsx)(s.LZC, {

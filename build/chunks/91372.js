@@ -2,14 +2,14 @@
 n.d(t, {
   Z: () => d
 });
-var r, i, o, a = n(442837),
+var r, i, a, o = n(442837),
   l = n(570140);
 let s = "UPDATE_NOT_AVAILABLE";
 
 function c(e) {
   s = e.type
 }
-class u extends(o = a.ZP.Store) {
+class u extends(a = o.ZP.Store) {
   getState() {
     return s
   }

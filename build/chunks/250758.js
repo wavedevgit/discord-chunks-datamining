@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => w
 }), n(653041), n(566702), n(757143), n(301563), n(733860);
-var r, i, o, a = n(442837),
+var r, i, a, o = n(442837),
   l = n(570140),
   s = n(999650),
   c = n(279779),
@@ -25,8 +25,8 @@ function E(e) {
     query: n,
     mode: r,
     tokens: i,
-    cursorScope: o,
-    autocompletes: a
+    cursorScope: a,
+    autocompletes: o
   } = e, l = y[t];
   return null == l && (l = {
     results: [],
@@ -39,8 +39,8 @@ function E(e) {
       token: null
     },
     tokens: null != i ? i : [],
-    cursorScope: null != o ? o : null,
-    autocompletes: null != a ? a : []
+    cursorScope: null != a ? a : null,
+    autocompletes: null != o ? o : []
   }
 }
 
@@ -50,10 +50,10 @@ function O(e, t) {
   } = t, r = y[e], i = x[e];
   if (null == r || null == i) return;
   let {
-    type: o,
-    filter: a
+    type: a,
+    filter: o
   } = i.mode;
-  if (o === b.Sap.EMPTY || o === b.Sap.FILTER && a !== b.dCx.FILTER_FROM && a !== b.dCx.FILTER_MENTIONS) return;
+  if (a === b.Sap.EMPTY || a === b.Sap.FILTER && o !== b.dCx.FILTER_FROM && o !== b.dCx.FILTER_MENTIONS) return;
   let l = 3;
   i.mode.type === b.Sap.FILTER && (l = 10), r.results = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 10;
@@ -85,15 +85,15 @@ function O(e, t) {
 }
 
 function N(e, t, n) {
-  var r, i, o;
-  let a, l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10;
+  var r, i, a;
+  let o, l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10;
   if (null == e || "" === e) return null;
   let c = h.Z.getSearchType(n),
     d = null !== (i = null == t ? void 0 : null === (r = t.getFullMatch()) || void 0 === r ? void 0 : r.trim()) && void 0 !== i ? i : "",
     p = e === b.dCx.FILTER_FROM || e === b.dCx.FILTER_MENTIONS;
   if (c === b.aib.GUILD && p) {
     let e = y[n];
-    null == e ? a = null : ((null == t || 0 === d.length) && (e.results = u.ZP.getRecentlyTalked(n, 10).map(e => {
+    null == e ? o = null : ((null == t || 0 === d.length) && (e.results = u.ZP.getRecentlyTalked(n, 10).map(e => {
       let {
         record: t
       } = e;
@@ -101,15 +101,15 @@ function N(e, t, n) {
         user: t,
         text: m.ZP.getUserTag(t)
       }
-    })), a = e.results)
+    })), o = e.results)
   } else {
-    let t = null === (o = s.ZP[e]) || void 0 === o ? void 0 : o.getAutocompletions;
-    a = null != t ? t(d, n, null != l ? l : 10) : []
+    let t = null === (a = s.ZP[e]) || void 0 === a ? void 0 : a.getAutocompletions;
+    o = null != t ? t(d, n, null != l ? l : 10) : []
   }
   let f = d.toLowerCase().replace(/^@/, "");
-  if (null != a && p && d.length > 0 && (v.NW.string(v.t.Qf3ptr).startsWith(f) || b.ME.substr(1).startsWith(f))) {
+  if (null != o && p && d.length > 0 && (v.NW.string(v.t.Qf3ptr).startsWith(f) || b.ME.substr(1).startsWith(f))) {
     let e = _.default.getCurrentUser();
-    null != e && (a = a.filter(t => {
+    null != e && (o = o.filter(t => {
       let {
         user: n
       } = t;
@@ -119,9 +119,9 @@ function N(e, t, n) {
       user: e
     })
   }
-  return null == a || 0 === a.length ? null : {
+  return null == o || 0 === o.length ? null : {
     group: e,
-    results: a
+    results: o
   }
 }
 
@@ -160,13 +160,13 @@ function C(e, t) {
     }), r.push(function(e, t) {
       let n = (null != e ? e.getFullMatch() : "").trim();
       if (null != n && "" !== n) {
-        var r, i, o;
+        var r, i, a;
         let e = null === (r = s.ZP[b.dCx.FILTER_BEFORE]) || void 0 === r ? void 0 : r.getAutocompletions(n, t, 1)[0],
-          a = null === (i = s.ZP[b.dCx.FILTER_ON]) || void 0 === i ? void 0 : i.getAutocompletions(n, t, 1)[0],
-          l = null === (o = s.ZP[b.dCx.FILTER_AFTER]) || void 0 === o ? void 0 : o.getAutocompletions(n, t, 1)[0];
+          o = null === (i = s.ZP[b.dCx.FILTER_ON]) || void 0 === i ? void 0 : i.getAutocompletions(n, t, 1)[0],
+          l = null === (a = s.ZP[b.dCx.FILTER_AFTER]) || void 0 === a ? void 0 : a.getAutocompletions(n, t, 1)[0];
         return null == e ? null : {
           group: b.rtL.DATES,
-          results: [e, a, l]
+          results: [e, o, l]
         }
       }
     }(e, t))), 5 > (0, p.BU)(r) && r.push(j(e)), r
@@ -193,16 +193,16 @@ function S(e) {
     query: n,
     mode: r,
     tokens: i,
-    cursorScope: o,
-    autocompletes: a
+    cursorScope: a,
+    autocompletes: o
   } = t;
   x[e] = E({
     searchId: e,
     query: n,
     mode: r,
     tokens: i,
-    cursorScope: o,
-    autocompletes: a.map(e => (null == e ? void 0 : e.group) === b.rtL.HISTORY ? null : e)
+    cursorScope: a,
+    autocompletes: o.map(e => (null == e ? void 0 : e.group) === b.rtL.HISTORY ? null : e)
   })
 }
 
@@ -224,7 +224,7 @@ function T() {
     autocompletes: C(e, n)
   })
 }
-class P extends(r = a.ZP.Store) {
+class P extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(f.ZP, g.Z)
   }
@@ -235,26 +235,26 @@ class P extends(r = a.ZP.Store) {
     })
   }
 }
-o = "SearchAutocompleteStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
-  value: o,
+a = "SearchAutocompleteStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
+  value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : P[i] = o;
+}) : P[i] = a;
 let A = new P(l.Z, {
     SEARCH_AUTOCOMPLETE_QUERY_UPDATE: function(e) {
       var t;
       let n, {
           searchId: r,
           tokens: i,
-          cursorScope: o
+          cursorScope: a
         } = e,
-        a = (0, p.cl)(i),
-        l = (0, p.qc)(o, i),
+        o = (0, p.cl)(i),
+        l = (0, p.qc)(a, i),
         s = null !== (t = x[r]) && void 0 !== t ? t : {},
         c = y[r],
         u = !0;
-      if (a === s.query && (null == s.mode || s.mode.filter === l.filter)) n = s.autocompletes, u = !1;
+      if (o === s.query && (null == s.mode || s.mode.filter === l.filter)) n = s.autocompletes, u = !1;
       else if (l.type === b.Sap.EMPTY || l.type === b.Sap.FILTER && l.filter !== b.dCx.FILTER_FROM && l.filter !== b.dCx.FILTER_MENTIONS) null != c && (c.context.clearQuery(), c.results = []), n = C(r, l);
       else if (null != c) {
         let {
@@ -266,10 +266,10 @@ let A = new P(l.Z, {
       }
       return x[r] = E({
         searchId: r,
-        query: a,
+        query: o,
         mode: l,
         tokens: i,
-        cursorScope: o,
+        cursorScope: a,
         autocompletes: n
       }), u
     },

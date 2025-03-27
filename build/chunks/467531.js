@@ -1,22 +1,22 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  B: () => a,
+  B: () => o,
   W: () => l
 });
 var r = n(544891),
   i = n(881052),
-  o = n(981631);
-async function a(e) {
+  a = n(981631);
+async function o(e) {
   let {
     channelId: t,
     messageId: n,
-    answerIds: a
+    answerIds: o
   } = e;
   try {
     await r.tn.put({
-      url: o.ANM.POLL_ANSWERS(t, n),
+      url: a.ANM.POLL_ANSWERS(t, n),
       body: {
-        answer_ids: a
+        answer_ids: o
       },
       rejectWithError: !1
     })
@@ -31,7 +31,7 @@ async function l(e) {
   } = e;
   try {
     await r.tn.post({
-      url: o.ANM.POLL_EXPIRE(t, n),
+      url: a.ANM.POLL_EXPIRE(t, n),
       rejectWithError: !1
     })
   } catch (e) {

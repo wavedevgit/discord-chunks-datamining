@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   l = n(481060),
   s = n(239091),
   c = n(901461),
@@ -25,7 +25,7 @@ function x(e) {
   let {
     message: t,
     compact: n
-  } = e, i = (0, a.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
+  } = e, i = (0, o.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
   return null == i ? null : (0, r.jsx)(y, {
     channel: i,
     compact: n,
@@ -38,17 +38,17 @@ function y(e) {
     channel: t,
     compact: i,
     isSystemMessage: c
-  } = e, u = (0, a.e7)([m.Z], () => m.Z.getCount(t.id)), d = function(e) {
+  } = e, u = (0, o.e7)([m.Z], () => m.Z.getCount(t.id)), d = function(e) {
     var t;
-    let n = (0, a.e7)([m.Z], () => m.Z.getMostRecentMessage(e.id)),
-      i = (0, a.e7)([m.Z], () => m.Z.getCount(e.id)),
-      o = (0, f.Ok)(e);
+    let n = (0, o.e7)([m.Z], () => m.Z.getMostRecentMessage(e.id)),
+      i = (0, o.e7)([m.Z], () => m.Z.getCount(e.id)),
+      a = (0, f.Ok)(e);
     return (null === (t = e.threadMetadata) || void 0 === t ? void 0 : t.archived) ? b.NW.string(b.t.ZTo4HR) : null == i || 0 === i ? b.NW.string(b.t.HYtNyM) : null == n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {
         children: b.NW.string(b.t.ZTo4HR)
       }), (0, r.jsx)("span", {
         className: v.timestamp,
-        children: (0, f.Ye)(o)
+        children: (0, f.Ye)(a)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h.Z, {
@@ -56,13 +56,13 @@ function y(e) {
         channel: e
       }), (0, r.jsx)("span", {
         className: v.timestamp,
-        children: (0, f.Ye)(o)
+        children: (0, f.Ye)(a)
       })]
     })
   }(t), x = null != u && u > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: o()(v.spine, {
+      className: a()(v.spine, {
         [v.cozy]: !i,
         [v.systemMessageSpine]: c
       })
@@ -104,7 +104,7 @@ function y(e) {
         })
       },
       "aria-roledescription": b.NW.string(b.t["8ipxiY"]),
-      className: o()(v.container, {
+      className: a()(v.container, {
         [v.systemMessageContainer]: c
       }),
       children: (0, r.jsxs)(l.nuw, {

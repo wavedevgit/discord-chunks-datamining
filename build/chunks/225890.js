@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(305325),
+  a = n(442837),
+  o = n(305325),
   l = n(281956),
   s = n(922482),
   c = n(592125),
@@ -26,15 +26,15 @@ function b(e) {
     guild: y,
     channel: E,
     isMember: O
-  } = (0, o.cj)([f.ZP, d.Z, c.Z, u.ZP, p.default], () => {
+  } = (0, a.cj)([f.ZP, d.Z, c.Z, u.ZP, p.default], () => {
     var e, t;
     let r = null !== (t = f.ZP.getGuildScheduledEvent(b)) && void 0 !== t ? t : void 0,
       i = d.Z.getGuild(n),
-      o = c.Z.getChannel(null == r ? void 0 : r.channel_id);
+      a = c.Z.getChannel(null == r ? void 0 : r.channel_id);
     return {
       guildScheduledEvent: r,
       guild: i,
-      channel: o,
+      channel: a,
       isMember: u.ZP.isMember(n, null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id)
     }
   }, [n, b]);
@@ -48,7 +48,7 @@ function b(e) {
     onAcceptInstantInvite: _.dG,
     onTransitionToInviteChannel: function() {
       if ((0, l.n)(n)) {
-        (0, a.hk)(n);
+        (0, o.hk)(n);
         return
       }(null == E ? void 0 : E.isGuildStageVoice()) ? (0, s.Cq)(E) : (null == E ? void 0 : E.isGuildVoice()) && h.Z.joinVoiceEvent(E.guild_id, E.id)
     },

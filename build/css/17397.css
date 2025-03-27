@@ -1,6 +1,6 @@
 /**
   Module ID: 17397
-  Original File Name: 67df1ae557797f41
+  Original File Name: 65a0b46b6994a7dd
 **/
 @use postcss-pxtorem;
 
@@ -822,6 +822,10 @@
     top: 1.75rem
 }
 
+.visual-refresh .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
+    background-color: var(--border-subtle)
+}
+
 .zalgo_c19a55 .messageContent_c19a55 {
     overflow: hidden
 }
@@ -1076,4 +1080,4 @@
     margin: 36px 24px
 }
 
-/*# sourceMappingURL=67df1ae557797f41.css.map*/
+/*# sourceMappingURL=65a0b46b6994a7dd.css.map*/

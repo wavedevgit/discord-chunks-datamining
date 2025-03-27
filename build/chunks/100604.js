@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(933557),
   i = n(356264),
-  o = n(592125),
-  a = n(430824),
+  a = n(592125),
+  o = n(430824),
   l = n(496675),
   s = n(699516),
   c = n(594174),
@@ -44,11 +44,11 @@ function g(e, t) {
 class _ {
   getForwardInfo() {
     var e, t, n, u;
-    let h = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o.Z,
+    let h = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a.Z,
       _ = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.default,
       b = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Z,
       v = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.Z,
-      x = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : a.Z,
+      x = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : o.Z,
       y = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : i.Z,
       {
         snapshotIndex: E,

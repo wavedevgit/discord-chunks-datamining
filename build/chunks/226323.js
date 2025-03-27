@@ -87,60 +87,69 @@ let S = {
   };
 
 function P(e) {
-  var t, i;
-  let {
-    parentAnalyticsLocation: l
-  } = (0, p.ZP)(), {
-    channel: _,
-    user: P,
-    nick: j,
-    mute: A,
-    deaf: Z,
-    serverMute: x,
-    serverDeaf: w
-  } = e, L = (0, a.e7)([E.Z], () => E.Z.isLocalMute(P.id)), R = (0, u.Z)({
-    userId: P.id,
-    checkSoundSharing: !0
-  }), D = null !== (t = _.getGuildId()) && void 0 !== t ? t : void 0, k = P.getAvatarURL(_.guild_id, 24), M = null != j ? j : O.ZP.getName(P), {
-    icon: U,
-    colorize: G,
-    getStatus: W
-  } = null !== (i = function(e) {
-    let {
-      serverDeaf: t,
-      deaf: n,
-      serverMute: r,
-      mute: i,
-      localMute: l
-    } = e;
-    if (t) return T.serverDeaf;
-    if (n) return T.deaf;
-    if (r) return T.serverMute;
-    if (l) return T.localMute;
-    if (i) return T.mute
-  }({
-    serverDeaf: w,
-    deaf: Z,
-    serverMute: x,
-    mute: A,
-    localMute: L
-  })) && void 0 !== i ? i : {}, V = null != W ? v.NW.formatToPlainString(v.t["1+MVBA"], {
-    userName: M,
-    status: W()
-  }) : M;
+  var t, l;
+  let _ = i.useRef(null),
+    {
+      parentAnalyticsLocation: P
+    } = (0, p.ZP)(),
+    {
+      channel: j,
+      user: A,
+      nick: Z,
+      mute: x,
+      deaf: w,
+      serverMute: L,
+      serverDeaf: R
+    } = e,
+    D = (0, a.e7)([E.Z], () => E.Z.isLocalMute(A.id)),
+    k = (0, u.Z)({
+      userId: A.id,
+      checkSoundSharing: !0
+    }),
+    M = null !== (t = j.getGuildId()) && void 0 !== t ? t : void 0,
+    U = A.getAvatarURL(j.guild_id, 24),
+    G = null != Z ? Z : O.ZP.getName(A),
+    {
+      icon: W,
+      colorize: V,
+      getStatus: B
+    } = null !== (l = function(e) {
+      let {
+        serverDeaf: t,
+        deaf: n,
+        serverMute: r,
+        mute: i,
+        localMute: l
+      } = e;
+      if (t) return T.serverDeaf;
+      if (n) return T.deaf;
+      if (r) return T.serverMute;
+      if (l) return T.localMute;
+      if (i) return T.mute
+    }({
+      serverDeaf: R,
+      deaf: w,
+      serverMute: L,
+      mute: x,
+      localMute: D
+    })) && void 0 !== l ? l : {},
+    H = null != B ? v.NW.formatToPlainString(v.t["1+MVBA"], {
+      userName: G,
+      status: B()
+    }) : G;
 
-  function B(e) {
-    null != D ? (0, c.jW)(e, async () => {
+  function F(e) {
+    null != M ? (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("29618")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, C(I({}, t), {
-        user: P,
-        guildId: D,
-        channel: _,
+        user: A,
+        guildId: M,
+        channel: j,
         showMediaItems: !0,
         onInteraction: (0, f.u)("GuildChannelUserContextMenu", d.Z.RTC_PANEL, {
-          targetUserId: P.id
+          targetUserId: A.id
         })
       }))
     }) : (0, c.jW)(e, async () => {
@@ -148,48 +157,50 @@ function P(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220"), n.e("36463")]).then(n.bind(n, 881351));
       return t => (0, r.jsx)(e, C(I({}, t), {
-        user: P,
+        user: A,
         showMediaItems: !0,
         onInteraction: (0, f.u)("UserGenericContextMenu", d.Z.RTC_PANEL, {
-          targetUserId: P.id
+          targetUserId: A.id
         })
       }))
     })
   }
   return (0, r.jsx)(s.yRy, {
-    preload: () => (0, m.Z)(P.id, P.getAvatarURL(D, 80), {
-      guildId: D,
-      channelId: _.id
+    targetElementRef: _,
+    preload: () => (0, m.Z)(A.id, A.getAvatarURL(M, 80), {
+      guildId: M,
+      channelId: j.id
     }),
     position: "top",
     renderPopout: e => (0, r.jsx)(b.Z, I({
-      userId: P.id,
-      guildId: D,
-      channelId: _.id
+      userId: A.id,
+      guildId: M,
+      channelId: j.id
     }, e)),
     clickTrap: !0,
     children: e => (0, r.jsx)(s.ua7, {
-      text: V,
+      text: H,
       children: t => (0, r.jsx)(s.P3F, C(I({}, t, e), {
+        innerRef: _,
         onClick: t => {
-          e.onClick(t), (0, h.v)(l, h.d.VOICE_USER)
+          e.onClick(t), (0, h.v)(P, h.d.VOICE_USER)
         },
         className: y.avatarContainer,
-        onContextMenu: B,
+        onContextMenu: F,
         focusProps: S,
         children: (0, r.jsx)(g.Z, {
           shakeLocation: N.oZ.VOICE_USER,
-          isShaking: R,
+          isShaking: k,
           children: (0, r.jsx)("div", {
             className: o()(y.avatar, {
-              [y.speaking]: R
+              [y.speaking]: k
             }),
             style: {
-              backgroundImage: "url(".concat(k, ")")
+              backgroundImage: "url(".concat(U, ")")
             },
-            children: null != U ? (0, r.jsx)(U, {
+            children: null != W ? (0, r.jsx)(W, {
               className: o()(y.avatarIconOverlay, {
-                [y.avatarIconRed]: G
+                [y.avatarIconRed]: V
               }),
               color: "currentColor",
               size: "xs"

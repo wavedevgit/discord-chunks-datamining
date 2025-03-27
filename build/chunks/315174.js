@@ -206,58 +206,48 @@ function I(e) {
 }
 
 function N(e) {
+  var t;
   let {
-    bannerVisible: t,
-    guild: o,
-    onClick: l,
-    onContextMenu: a,
-    ariaControls: s,
-    ariaExpanded: u,
-    children: d
-  } = e, p = i.useCallback(() => {
+    bannerVisible: o,
+    guild: l,
+    onClick: a,
+    onContextMenu: s,
+    ariaControls: u,
+    ariaExpanded: d,
+    children: p
+  } = e, h = i.useCallback(() => {
     (0, c.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("6377")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, O(_({}, t), {
-        guild: o,
+        guild: l,
         source: m.t4x.GUILD_HEADER
       }))
     })
-  }, [o]);
+  }, [l]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.ua7, {
-      text: v.NW.string(v.t.f2aKLi),
-      position: "bottom",
-      children: e => {
-        var n;
-        return (0, r.jsxs)(c.P3F, O(_({
-          className: y.guildDropdown,
-          "aria-controls": s,
-          "aria-expanded": u,
-          "aria-label": v.NW.formatToPlainString(v.t.xMXpl5, {
-            guildName: null !== (n = null == o ? void 0 : o.toString()) && void 0 !== n ? n : ""
-          })
-        }, e), {
-          onClick: t => {
-            var n;
-            null === (n = e.onClick) || void 0 === n || n.call(e), null == l || l(t)
-          },
-          onContextMenu: t => {
-            var n;
-            null === (n = e.onContextMenu) || void 0 === n || n.call(e), null == a || a(t)
-          },
-          children: [(0, r.jsx)(g.Z, {
-            guild: o,
-            isBannerVisible: t
-          }), o.id === b._ && (0, r.jsx)(C, {}), (0, r.jsx)(P, {
-            guild: o
-          }), (0, r.jsx)("div", {
-            className: y.headerChildren,
-            children: d
-          })]
-        }))
-      }
+    children: [(0, r.jsxs)(c.P3F, {
+      className: y.guildDropdown,
+      "aria-controls": u,
+      "aria-expanded": d,
+      "aria-label": v.NW.formatToPlainString(v.t.xMXpl5, {
+        guildName: null !== (t = null == l ? void 0 : l.toString()) && void 0 !== t ? t : ""
+      }),
+      onClick: a,
+      onContextMenu: s,
+      children: [(0, r.jsxs)("div", {
+        className: y.guildBadgeAndName,
+        children: [(0, r.jsx)(g.Z, {
+          guild: l,
+          isBannerVisible: o
+        }), l.id === b._ && (0, r.jsx)(C, {}), (0, r.jsx)(P, {
+          guild: l
+        })]
+      }), (0, r.jsx)("div", {
+        className: y.headerChildren,
+        children: p
+      })]
     }), (0, r.jsx)(c.ua7, {
       text: v.NW.string(v.t.Sd8Ix8),
       position: "bottom",
@@ -268,7 +258,7 @@ function N(e) {
       }, e), {
         onClick: () => {
           var t;
-          null === (t = e.onClick) || void 0 === t || t.call(e), p()
+          null === (t = e.onClick) || void 0 === t || t.call(e), h()
         },
         children: (0, r.jsx)(c.ejJ, {
           size: "refresh_sm",

@@ -2,13 +2,13 @@
 n.d(t, {
   Z: () => m
 });
-var r, i, o, a = n(442837),
+var r, i, a, o = n(442837),
   l = n(570140),
   s = n(186901);
 let c = null,
   u = [s.ff.REDISTRIBUTABLE_INSTALL_FAILED, s.ff.POST_INSTALL_FAILED, s.ff.POST_INSTALL_CANCELLED],
   d = [s.ff.APPLICATION_NOT_FOUND, s.ff.APPLICATION_LOAD_FAILED, s.ff.INTERRUPTED, s.ff.DESERIALIZATION_FAILED];
-class p extends(o = a.ZP.Store) {
+class p extends(a = o.ZP.Store) {
   getLastError() {
     return c
   }

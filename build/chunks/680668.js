@@ -4,8 +4,8 @@ n.d(t, {
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(533800),
-  a = n(481060),
+  a = n(533800),
+  o = n(481060),
   l = n(447543),
   s = n(100527),
   c = n(906732),
@@ -45,7 +45,7 @@ function O(e) {
     U = null != M,
     F = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
-    G = (0, h.yE)(null !== (t = P.flags) && void 0 !== t ? t : 0, o.$.IS_GUEST_INVITE),
+    G = (0, h.yE)(null !== (t = P.flags) && void 0 !== t ? t : 0, a.$.IS_GUEST_INVITE),
     H = null !== (O = null == T ? void 0 : T.hasFeature(x.oNc.HUB)) && void 0 !== O && O,
     V = (0, u.h)(),
     z = null == T ? void 0 : T.id,
@@ -94,10 +94,10 @@ function O(e) {
         disableBoostClick: !0
       })
     })]
-  }), G && (C = (0, r.jsx)(a.DY3, {
+  }), G && (C = (0, r.jsx)(o.DY3, {
     className: E.tooltipContainer,
     text: y.NW.string(y.t["/FeTKy"]),
-    children: (0, r.jsx)(a.d3s, {
+    children: (0, r.jsx)(o.d3s, {
       size: "md",
       color: "currentColor",
       className: E.infoIcon
@@ -146,11 +146,11 @@ function O(e) {
     }), T.hasFeature(x.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: E.separator
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: y.NW.format(y.t["/o1IfH"], {
-          onClick: () => (0, a.ZDy)(async () => {
+          onClick: () => (0, o.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("95468"), n.e("70123")]).then(n.bind(n, 650233));

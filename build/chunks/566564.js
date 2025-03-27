@@ -145,7 +145,7 @@ let O = e => {
     }), E = null !== (t = null != _ ? _ : v) && void 0 !== t ? t : x, I = (0, i.e7)([c.default], () => c.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), T = (0, h.R)("CollectiblesFeedShop"), {
       noCache: L,
       includeUnpublished: N
-    } = (0, b.Z)(), w = l.useCallback(() => {
+    } = (0, b.Z)(), P = l.useCallback(() => {
       k()
     }, [k]);
     if (null == I) return null;
@@ -161,7 +161,7 @@ let O = e => {
       })
     }
     return null != _ ? (0, r.jsx)(p.Z, {
-      onRetry: w,
+      onRetry: P,
       errorOrigin: p.i.SHOP_PAGE,
       errorMessage: _.message
     }) : (0, r.jsx)("div", {

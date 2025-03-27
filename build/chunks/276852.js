@@ -1,10 +1,10 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(81063),
   i = n(701488);
 
-function o(e, t) {
+function a(e, t) {
   return null == e || null == e.assets || null == e.assets.large_image ? null : (0, r.xF)(t, e.assets.large_image, [i.cc, i.cc])
 }

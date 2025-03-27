@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(499033),
-  a = n(388032),
+  a = n(499033),
+  o = n(388032),
   l = n(397836);
 
 function s(e) {
@@ -26,7 +26,7 @@ function s(e) {
         className: l.icon,
         width: 36,
         height: 36
-      }), c ? null : (0, r.jsx)(o.Z, {
+      }), c ? null : (0, r.jsx)(a.Z, {
         className: l.stars
       })]
     }), (0, r.jsx)(i.X6q, {
@@ -41,7 +41,7 @@ function s(e) {
         className: l.protip,
         variant: "text-xs/bold",
         color: "text-positive",
-        children: [a.NW.string(a.t["8tvIiI"]), ":", " "]
+        children: [o.NW.string(o.t["8tvIiI"]), ":", " "]
       }), s]
     })]
   })

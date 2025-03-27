@@ -5,19 +5,19 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(388032),
-  o = n(443885),
-  a = n(652430);
+  a = n(443885),
+  o = n(652430);
 let l = () => (0, r.jsxs)("div", {
-  className: o.container,
+  className: a.container,
   children: [(0, r.jsx)("img", {
-    className: o.image,
+    className: a.image,
     alt: "",
-    src: a
+    src: o
   }), (0, r.jsx)("div", {
-    className: o.title,
+    className: a.title,
     children: i.NW.string(i.t.MwjTvr)
   }), (0, r.jsx)("div", {
-    className: o.body,
+    className: a.body,
     children: i.NW.string(i.t.AKBgPz)
   })]
 })

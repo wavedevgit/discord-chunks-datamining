@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(399606),
-  a = n(846519),
+  a = n(399606),
+  o = n(846519),
   l = n(481060),
   s = n(317632),
   c = n(174767),
@@ -17,7 +17,7 @@ function m(e) {
   let {
     inboxIconRef: t,
     recentsPopoutShown: n
-  } = e, [m, f] = i.useState(!1), h = (0, o.e7)([s.Z], () => s.Z.getLastUnseenInvite()), g = (0, o.e7)([u.default], () => null != h ? u.default.getUser(h.inviter_id) : null);
+  } = e, [m, f] = i.useState(!1), h = (0, a.e7)([s.Z], () => s.Z.getLastUnseenInvite()), g = (0, a.e7)([u.default], () => null != h ? u.default.getUser(h.inviter_id) : null);
   return (i.useEffect(() => {
     n && f(!1)
   }, [n]), i.useEffect(() => {
@@ -25,7 +25,7 @@ function m(e) {
       f(!1);
       return
     }(0, c.Br)(h), f(!0);
-    let e = new a.V7;
+    let e = new o.V7;
     return e.start(5e3, () => {
       f(!1)
     }), () => {

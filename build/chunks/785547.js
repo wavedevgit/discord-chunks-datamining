@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => k
 }), n(411104), n(47120);
-var r, i, o = n(200651),
-  a = n(192379),
+var r, i, a = n(200651),
+  o = n(192379),
   l = n(442837),
   s = n(692547),
   c = n(481060),
@@ -69,7 +69,7 @@ let A = Object.freeze({
     [N.apO.RESUME]: "paused"
   }),
   w = () => [j.NW.string(j.t.r9wmKi), j.NW.string(j.t["6CpimZ"]), j.NW.string(j.t.ysbNDQ), j.NW.string(j.t.TLnXx8), j.NW.string(j.t.Qi8mnZ), j.NW.string(j.t.yvMu3d), j.NW.string(j.t.PnNUZ2), j.NW.string(j.t.hU2TEB), j.NW.string(j.t.YyY519), j.NW.string(j.t.PbHJb2)];
-class Z extends(r = a.Component) {
+class Z extends(r = o.Component) {
   get analyticsLocation() {
     return T(S({}, this.props.analyticsContext.location), {
       object: N.qAy.BUTTON_CTA
@@ -119,20 +119,20 @@ class Z extends(r = a.Component) {
       size: n,
       color: r,
       customDisabledColor: i,
-      isPlayShiny: a,
+      isPlayShiny: o,
       onDropdownOpen: l,
       onDropdownClose: s,
       analyticsListSort: c,
       analyticsListIndex: u
     } = this.props;
-    return (0, o.jsx)(O.Z, {
+    return (0, a.jsx)(O.Z, {
       applicationId: e.id,
       libraryApplication: e,
       fullWidth: t,
       size: n,
       color: r,
       customDisabledColor: i,
-      isShiny: a,
+      isShiny: o,
       onDropdownOpen: l,
       onDropdownClose: s,
       analyticsListSort: c,
@@ -144,22 +144,22 @@ class Z extends(r = a.Component) {
       className: n,
       fullWidth: r,
       size: i,
-      customDisabledColor: a,
+      customDisabledColor: o,
       tooltipPosition: l
     } = this.props;
-    return (0, o.jsxs)("div", {
+    return (0, a.jsxs)("div", {
       className: C.disabledButtonWrapper,
-      children: [(0, o.jsxs)(c.zxk, {
+      children: [(0, a.jsxs)(c.zxk, {
         className: n,
         fullWidth: r,
         size: i,
-        color: null != a ? a : C.disabledButtonColor,
+        color: null != o ? o : C.disabledButtonColor,
         disabled: !0,
         children: [this.getText(e), this.renderProgressBar()]
-      }), (0, o.jsx)(c.ua7, {
+      }), (0, a.jsx)(c.ua7, {
         text: t,
         position: l,
-        children: e => (0, o.jsx)("div", S({
+        children: e => (0, a.jsx)("div", S({
           className: C.disabledButtonOverlay
         }, e))
       })]
@@ -174,7 +174,7 @@ class Z extends(r = a.Component) {
     let n = v.KJ(t);
     if (null == n) return null;
     let r = n.type === N.vxO.UNINSTALLING ? c.Exd.INDETERMINATE : v.xI(Number(n.progress), Number(n.total));
-    return (0, o.jsx)(c.Exd, {
+    return (0, a.jsx)(c.Exd, {
       percent: r,
       size: c.Exd.Sizes.XSMALL,
       foregroundColor: n.paused ? s.Z.unsafe_rawColors.PRIMARY_500.css : s.Z.unsafe_rawColors.GREEN_360.css,
@@ -187,14 +187,14 @@ class Z extends(r = a.Component) {
       className: n,
       fullWidth: r,
       size: i,
-      color: a,
+      color: o,
       isCloudSyncing: l
     } = this.props;
-    return (0, o.jsxs)(c.zxk, {
+    return (0, a.jsxs)(c.zxk, {
       className: n,
       fullWidth: r,
       size: i,
-      color: null != a ? a : c.zxk.Colors.GREEN,
+      color: null != o ? o : c.zxk.Colors.GREEN,
       submitting: "uninstalling" === e || l,
       onClick: e => this.handleClick(e, t),
       children: [this.getText(e), this.renderProgressBar()]
@@ -256,12 +256,12 @@ class Z extends(r = a.Component) {
 function k(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, d.O)(), [r, i] = (0, l.Wu)([_.Z, b.Z], () => [(0, h.i)(t, _.Z, b.Z), _.Z.getState(t.id, t.branchId)], [t]), a = (0, l.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), s = (0, l.e7)([f.Z], () => f.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, o.jsx)(Z, T(S({}, e), {
+  } = e, n = (0, d.O)(), [r, i] = (0, l.Wu)([_.Z, b.Z], () => [(0, h.i)(t, _.Z, b.Z), _.Z.getState(t.id, t.branchId)], [t]), o = (0, l.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), s = (0, l.e7)([f.Z], () => f.Z.hasNoBuild(t.id, t.branchId), [t]);
+  return (0, a.jsx)(Z, T(S({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: i,
-    isCloudSyncing: a,
+    isCloudSyncing: o,
     hasNoBuild: s
   }))
 }

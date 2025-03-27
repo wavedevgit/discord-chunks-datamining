@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(990547),
-  o = n(399606),
-  a = n(100527),
+  a = n(399606),
+  o = n(100527),
   l = n(213609),
   s = n(914010),
   c = n(267101),
@@ -16,7 +16,7 @@ var i = n(990547),
 function p(e) {
   let {
     code: t
-  } = e, [n, p] = t.split("-"), m = (0, c.hO)(n, p), f = (0, o.e7)([s.Z], () => s.Z.getGuildId());
+  } = e, [n, p] = t.split("-"), m = (0, c.hO)(n, p), f = (0, a.e7)([s.Z], () => s.Z.getGuildId());
   return ((0, l.Z)({
     type: d.n.VIEW,
     name: i.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
@@ -29,7 +29,7 @@ function p(e) {
   }), null == m || f !== n) ? null : (0, r.jsx)(u.H, {
     guildProductListing: m,
     guildId: n,
-    location: a.Z.GUILD_PRODUCT_EMBED_CARD,
+    location: o.Z.GUILD_PRODUCT_EMBED_CARD,
     cardWidth: 390,
     thumbnailHeight: 219
   })

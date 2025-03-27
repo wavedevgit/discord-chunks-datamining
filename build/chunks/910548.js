@@ -3,9 +3,9 @@ n.d(t, {
   ZP: () => U
 }), n(47120);
 var r, i = n(200651),
-  o = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  a = n(192379),
+  o = n(120356),
+  l = n.n(o),
   s = n(119617),
   c = n(772848),
   u = n(468194),
@@ -159,8 +159,8 @@ function W(e) {
     onAnimationComplete: t,
     onClick: n,
     position: r,
-    size: a
-  } = e, u = o.useRef(null), [d, m] = o.useState(null), [h] = o.useState(null != r ? r : function() {
+    size: o
+  } = e, u = a.useRef(null), [d, m] = a.useState(null), [h] = a.useState(null != r ? r : function() {
     switch (Math.floor(Math.random() * Object.keys(S).length)) {
       case 0:
         return "TOP_LEFT";
@@ -174,7 +174,7 @@ function W(e) {
   }()), {
     createMultipleConfettiAt: g,
     confettiCanvas: _
-  } = o.useContext(f.h), [b, v] = o.useState(null), x = (0, s.uR)(_, b), y = function(e, t) {
+  } = a.useContext(f.h), [b, v] = a.useState(null), x = (0, s.uR)(_, b), y = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -189,14 +189,14 @@ function W(e) {
       case "exit":
         return "enter"
     }
-  }(d, h), E = T.includes(h), O = E && "exit" === d, j = o.useCallback(e => {
+  }(d, h), E = T.includes(h), O = E && "exit" === d, j = a.useCallback(e => {
     m(e)
-  }, []), C = o.useCallback(() => {
+  }, []), C = a.useCallback(() => {
     "exit" === d && (null == t || t())
-  }, [t, d]), A = o.useCallback(e => {
+  }, [t, d]), A = a.useCallback(e => {
     u.current = e
   }, []);
-  return o.useEffect(() => {
+  return a.useEffect(() => {
     if ("confetti" === d) {
       let {
         confettiVelocityDirection: e
@@ -212,7 +212,7 @@ function W(e) {
           x: r.left + i.x,
           y: r.top + i.y
         }
-      }(u.current, h, a);
+      }(u.current, h, o);
       g(t.x, t.y, {
         velocity: {
           type: "static-random",
@@ -227,7 +227,7 @@ function W(e) {
         }
       })
     }
-  }, [g, h, d, a]), o.useEffect(() => {
+  }, [g, h, d, o]), a.useEffect(() => {
     if (E && "leaf_fall" === d) {
       let e = w[h].leafRotationDirection;
       x.createConfetti({
@@ -313,7 +313,7 @@ function U(e) {
   let t, {
       message: n,
       compact: r,
-      guild: a,
+      guild: o,
       usernameHook: l,
       onClickMessage: s
     } = e,
@@ -332,16 +332,16 @@ function U(e) {
     {
       createMultipleConfettiAt: d,
       addClickListener: j
-    } = o.useContext(f.h),
-    [C, I] = o.useState(!1),
-    S = o.useRef(null),
+    } = a.useContext(f.h),
+    [C, I] = a.useState(!1),
+    S = a.useRef(null),
     {
       reducedMotion: T
-    } = o.useContext(p.Sfi),
+    } = a.useContext(p.Sfi),
     P = (0, x.ZH)(n),
     A = P.nick,
     w = l(P);
-  t = null == c || null == a ? u > 1 ? O.NW.format(O.t.yfC9dn, {
+  t = null == c || null == o ? u > 1 ? O.NW.format(O.t.yfC9dn, {
     username: A,
     usernameHook: w,
     numSubscriptions: u
@@ -352,15 +352,15 @@ function U(e) {
     username: A,
     usernameHook: w,
     numSubscriptions: u,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, v.nW)(c)
   }) : O.NW.format(O.t.cUfTTE, {
     username: A,
     usernameHook: w,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, v.nW)(c)
   });
-  let k = o.useCallback(() => {
+  let k = a.useCallback(() => {
       if (!T.enabled) {
         if (C || 0 !== Math.floor(50 * Math.random())) {
           var e;
@@ -369,18 +369,18 @@ function U(e) {
         } else I(!0)
       }
     }, [d, T, C]),
-    R = o.useCallback(() => {
+    R = a.useCallback(() => {
       I(!1)
     }, []),
-    D = o.useCallback(() => {
+    D = a.useCallback(() => {
       (0, g.AI)({
         settingsVisible: !0
       }), m.Z.open(E.oAB.POGGERMODE), I(!1)
     }, []),
-    L = o.useCallback((e, t) => {
+    L = a.useCallback((e, t) => {
       (null == t ? void 0 : t.id.startsWith(Z)) && D()
     }, [D]);
-  o.useEffect(() => j(L));
+  a.useEffect(() => j(L));
   let M = (0, i.jsx)(p.P3F, {
     className: N.iconWrapper,
     innerRef: S,

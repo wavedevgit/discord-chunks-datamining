@@ -4,14 +4,14 @@ n.d(t, {
 }), n(47120), n(653041);
 var r = n(192379),
   i = n(768943),
-  o = n(429828);
+  a = n(429828);
 
-function a() {
+function o() {
   return i.Z.getSavedMessages().map(e => e.saveData)
 }
 
 function l() {
-  let [e, t] = r.useState(a), n = r.useRef(i.Z.getIsStale());
+  let [e, t] = r.useState(o), n = r.useRef(i.Z.getIsStale());
   return r.useEffect(() => {
     let e = i.Z.getLastChanged();
 
@@ -19,7 +19,7 @@ function l() {
       let r = i.Z.getLastChanged();
       if (e !== r) {
         if (e = r, n.current && !i.Z.getIsStale()) {
-          n.current = !1, t(a());
+          n.current = !1, t(o());
           return
         }
         t(e => {
@@ -34,5 +34,5 @@ function l() {
     return i.Z.addChangeListener(r), () => {
       i.Z.removeChangeListener(r)
     }
-  }, []), (0, o.Z)(), e
+  }, []), (0, a.Z)(), e
 }

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(301563);
 var r = n(512722),
   i = n.n(r),
-  o = n(924301),
-  a = n(430824),
+  a = n(924301),
+  o = n(430824),
   l = n(699516),
   s = n(594174),
   c = n(624138),
@@ -20,12 +20,12 @@ function f(e) {
     applicationId: n,
     renderApplication: r,
     withApplication: i,
-    withDefault: o
+    withDefault: a
   } = e;
   return null != n ? m.NW.format(i, {
     username: t,
     applicationName: () => r(n)
-  }) : m.NW.format(o, {
+  }) : m.NW.format(a, {
     username: t
   })
 }
@@ -53,10 +53,10 @@ function h(e) {
       return l.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null !== (O = I.body) && void 0 !== O ? O : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let D = I.guild_scheduled_event_id,
-        L = null != D ? o.ZP.getGuildScheduledEvent(D) : null,
+        L = null != D ? a.ZP.getGuildScheduledEvent(D) : null,
         M = null == L ? void 0 : L.name,
-        W = null === (N = a.Z.getGuild(null == L ? void 0 : L.guild_id)) || void 0 === N ? void 0 : N.name,
-        U = (0, o.Z2)(null != L ? L : void 0);
+        W = null === (N = o.Z.getGuild(null == L ? void 0 : L.guild_id)) || void 0 === N ? void 0 : N.name,
+        U = (0, a.Z2)(null != L ? L : void 0);
       return (0, c.Ew)(W) || (0, c.Ew)(M) || !U ? null !== (j = I.body) && void 0 !== j ? j : "" : m.NW.format(m.t.AyvfXV, {
         event_name: M,
         guild_name: W

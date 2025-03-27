@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(835473),
-  a = n(739566),
+  a = n(835473),
+  o = n(739566),
   l = n(942951),
   s = n(834129),
   c = n(388032),
@@ -17,12 +17,12 @@ function d(e) {
     message: t,
     channel: n,
     compact: d
-  } = e, p = (0, a.ZP)(t), m = (0, l.l)({
+  } = e, p = (0, o.ZP)(t), m = (0, l.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,
     messageId: t.id
-  })(p), f = (0, o.q)(t.applicationId);
+  })(p), f = (0, a.q)(t.applicationId);
   if (null == f) return null;
   let h = c.NW.format(c.t.mAtJTE, {
     username: t.author.username,

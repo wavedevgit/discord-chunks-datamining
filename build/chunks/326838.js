@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(913527),
-  a = n.n(o),
+  a = n(913527),
+  o = n.n(a),
   l = n(442837),
   s = n(481060),
   c = n(727637),
@@ -21,10 +21,10 @@ function _(e) {
   let {
     invite: t,
     expired: n
-  } = e, o = (0, l.e7)([m.default], () => {
+  } = e, a = (0, l.e7)([m.default], () => {
     var e, n;
     return null !== (n = null === (e = m.default.getUser(t.inviter_id)) || void 0 === e ? void 0 : e.username) && void 0 !== n ? n : ""
-  }), u = (0, f.vc)(a()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
+  }), u = (0, f.vc)(o()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
   return i.useEffect(() => {
     n || (0, p.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
@@ -41,7 +41,7 @@ function _(e) {
         variant: "text-md/semibold",
         color: "interactive-active",
         children: h.NW.format(h.t.vtUO3d, {
-          username: o
+          username: a
         })
       }), (0, r.jsxs)("div", {
         className: g.buttonContainer,
@@ -87,8 +87,8 @@ function b(e) {
   let {
     expired: t,
     invite: n,
-    isHoveringInvite: o
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, l.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
+    isHoveringInvite: a
+  } = e, o = (0, l.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, l.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
     f(!0);
     try {
       await (0, p.MH)(n)
@@ -101,14 +101,14 @@ function b(e) {
     } catch (e) {}
     f(!1)
   }, [n]);
-  return t ? a && o ? (0, r.jsx)(s.zxk, {
+  return t ? o && a ? (0, r.jsx)(s.zxk, {
     className: g.primaryButton,
     color: s.Ttl.TRANSPARENT,
     disabled: m,
     size: s.PhG.SMALL,
     onClick: _,
     children: h.NW.string(h.t["s+J8Dg"])
-  }) : null : a && c ? (0, r.jsx)(s.zxk, {
+  }) : null : o && c ? (0, r.jsx)(s.zxk, {
     className: g.primaryButton,
     color: s.Ttl.GREEN,
     disabled: m,

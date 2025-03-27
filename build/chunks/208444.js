@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(192379),
   i = n(442837),
-  o = n(783097),
-  a = n(176412),
+  a = n(783097),
+  o = n(176412),
   l = n(749681),
   s = n(258971),
   c = n(592125),
@@ -35,13 +35,13 @@ function v(e, t) {
   }), N = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
     return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
-  }, []), j = (0, o.PZ)(e, O) && N, C = n || j;
+  }, []), j = (0, a.PZ)(e, O) && N, C = n || j;
   return r.useMemo(() => C ? {
     label: b.NW.string(b.t["HO/oXl"]),
     trackingArea: h.j_.VIEW,
     onClick() {
       if (null == t || t(h.j_.VIEW), j) {
-        (0, a.X)(e.id);
+        (0, o.X)(e.id);
         return
       }(0, l.transitionToGlobalDiscovery)({
         tab: _.GlobalDiscoveryTab.APPS,

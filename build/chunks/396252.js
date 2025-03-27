@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   l = n(481060),
   s = n(385499),
   c = n(430824),
@@ -25,7 +25,7 @@ function _(e) {
     compact: i,
     usernameHook: _,
     channel: b
-  } = e, v = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), x = (0, u.ZP)(n), y = _(x), {
+  } = e, v = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), x = (0, u.ZP)(n), y = _(x), {
     avatarSrc: E,
     eventHandlers: {
       onMouseEnter: O,
@@ -36,7 +36,7 @@ function _(e) {
     onMouseEnter: O,
     onMouseLeave: N,
     children: (0, r.jsx)(m.Z, {
-      className: o()(g.mainContainer, {
+      className: a()(g.mainContainer, {
         [g.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(p.S, {
@@ -45,13 +45,13 @@ function _(e) {
       iconContainerClassName: g.iconContainer,
       compact: i,
       children: (0, r.jsxs)("div", {
-        className: o()(g.content, {
+        className: a()(g.content, {
           [g.compact]: i
         }),
         children: [(0, r.jsx)(d.nD, {
           message: n,
           messageClassname: g.spanCorrection,
-          className: o()(g.usernameContainer, g.spanCorrection, {
+          className: a()(g.usernameContainer, g.spanCorrection, {
             [g.compact]: i
           }),
           username: (0, r.jsxs)("div", {
@@ -70,7 +70,7 @@ function _(e) {
           compact: i,
           showTimestamp: !0
         }), (0, r.jsx)("div", {
-          className: o()(g.__invalid_messageContent, {
+          className: a()(g.__invalid_messageContent, {
             [g.compact]: i
           }),
           children: h.NW.format(h.t.W0UBIy, {

@@ -1,13 +1,13 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(544891),
   i = n(570140),
-  o = n(981631);
-let a = {
+  a = n(981631);
+let o = {
   createChannelFollower: (e, t) => r.tn.post({
-    url: o.ANM.CHANNEL_FOLLOWERS(t),
+    url: a.ANM.CHANNEL_FOLLOWERS(t),
     body: {
       webhook_channel_id: e
     },
@@ -20,7 +20,7 @@ let a = {
     });
     try {
       let t = await r.tn.get({
-        url: o.ANM.CHANNEL_FOLLOWER_STATS(e),
+        url: a.ANM.CHANNEL_FOLLOWER_STATS(e),
         body: {
           channel_id: e
         },

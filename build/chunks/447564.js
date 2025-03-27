@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(311570),
-  a = n(692547),
+  a = n(311570),
+  o = n(692547),
   l = n(481060),
   s = n(100527),
   c = n(906732),
@@ -72,7 +72,7 @@ let j = "HD_STREAMING_POTION_MODAL_KEY";
 function C(e) {
   let {
     channel: t
-  } = e, n = (0, m.T$)(t), [a, u] = (0, i.useState)(!1), {
+  } = e, n = (0, m.T$)(t), [o, u] = (0, i.useState)(!1), {
     price: h,
     fetchingPrice: g,
     error: _
@@ -85,7 +85,7 @@ function C(e) {
   } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), N = null != v && !v.consumed;
   (0, i.useEffect)(() => () => {
     E && (0, p.SN)(f.FX)
-  }, [v, t, a, E]);
+  }, [v, t, o, E]);
   let j = (0, i.useCallback)(() => {
       (0, p.Zu)(t.id), (0, l.pTH)()
     }, [t.id]),
@@ -94,7 +94,7 @@ function C(e) {
         skuId: f.FX,
         analyticsLocations: O,
         onComplete: j,
-        variantsReturnStyle: o.v.INDIVIDUAL_PRODUCTS
+        variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
     }, [O, j]),
     S = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == v ? void 0 : v.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!N : 3, [t.isHDStreamSplashed, n, null == v ? void 0 : v.type, N]),
@@ -114,10 +114,10 @@ let I = e => {
       channel: t,
       buttonState: n,
       price: i,
-      onActionClick: o,
-      loading: a
+      onActionClick: a,
+      loading: o
     } = e;
-    return a ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
+    return o ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: x.modal,
         children: [(0, r.jsx)(S, {}), (0, r.jsx)(T, {
@@ -126,7 +126,7 @@ let I = e => {
       }), (0, r.jsx)(P, {
         buttonState: n,
         price: i,
-        onActionClick: o
+        onActionClick: a
       })]
     })
   },
@@ -201,7 +201,7 @@ let I = e => {
       buttonState: t,
       price: n,
       onActionClick: i
-    } = e, o = v.NW.formatToPlainString(v.t.S9LAdX, {
+    } = e, a = v.NW.formatToPlainString(v.t.S9LAdX, {
       price: (0, g.T4)(n.amount, n.currency)
     });
     if (3 === t || 4 === t) {
@@ -216,7 +216,7 @@ let I = e => {
           var t, n;
           return (0, r.jsx)(l.zxk, (t = E({}, e), n = n = {
             disabled: !0,
-            children: o
+            children: a
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -231,7 +231,7 @@ let I = e => {
       })
     }
     let s = {
-      0: o,
+      0: a,
       1: v.NW.string(v.t.sl6Tcn),
       2: v.NW.string(v.t.XJ9INj)
     } [t];
@@ -240,7 +240,7 @@ let I = e => {
       children: (0, r.jsxs)("div", {
         className: x.buttonCopy,
         children: [(0, r.jsx)(l.hh5, {
-          color: a.Z.colors.WHITE,
+          color: o.Z.colors.WHITE,
           size: "sm"
         }), s]
       })

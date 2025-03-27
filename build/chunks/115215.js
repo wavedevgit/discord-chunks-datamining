@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(602715),
   i = n(630388),
-  o = n(709054),
-  a = n(981631);
+  a = n(709054),
+  o = n(981631);
 
 function l(e) {
   var t;
@@ -14,5 +14,5 @@ function l(e) {
 }
 
 function s(e) {
-  return e.type === a.uaV.CHAT_WALLPAPER_SET && o.default.isProbablyAValidSnowflake(e.content) ? e.content : null
+  return e.type === o.uaV.CHAT_WALLPAPER_SET && a.default.isProbablyAValidSnowflake(e.content) ? e.content : null
 }

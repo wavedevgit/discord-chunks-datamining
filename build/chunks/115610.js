@@ -4,8 +4,8 @@ n.d(t, {
 }), n(230036), n(86693), n(536091);
 var r = n(904245),
   i = n(339085),
-  o = n(957730),
-  a = n(285651),
+  a = n(957730),
+  o = n(285651),
   l = n(268350),
   s = n(926491),
   c = n(373228),
@@ -28,7 +28,7 @@ async function _(e, t) {
   if (null == v) return;
   await (0, l.$p)();
   let x = Array.from(s.Z.getAllStickersIterator()),
-    y = x.filter(e => e.type === c.n0.GUILD).filter(e => g(e.guild_id) && (0, a.kl)(e, v, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+    y = x.filter(e => e.type === c.n0.GUILD).filter(e => g(e.guild_id) && (0, o.kl)(e, v, t)).sort((e, t) => -m.default.compare(e.id, t.id));
   if (y.length > 5) {
     let i = [y[Math.floor(Math.pow(Math.random(), 2) * y.length)].id];
     r.Z.sendStickers(t.id, i, "", {
@@ -48,7 +48,7 @@ async function _(e, t) {
   })).sort((e, t) => -m.default.compare(e.id, t.id));
   if (E.length > 10) {
     let n = E[Math.floor(Math.pow(Math.random(), 2) * E.length)];
-    r.Z.sendMessage(t.id, o.ZP.parse(t, n.allNamesString), !1, {
+    r.Z.sendMessage(t.id, a.ZP.parse(t, n.allNamesString), !1, {
       messageReference: {
         guild_id: null !== (f = t.getGuildId()) && void 0 !== f ? f : void 0,
         channel_id: t.id,

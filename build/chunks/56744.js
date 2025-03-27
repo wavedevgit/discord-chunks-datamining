@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(905405),
+  a = n(442837),
+  o = n(905405),
   l = n(869765),
   s = n(699516),
   c = n(937889),
@@ -18,13 +18,13 @@ let m = i.memo(function(e) {
     channel: n,
     referencedMessage: p,
     compact: m = !1
-  } = e, f = p.state === l.Y.LOADED ? p.message : void 0, h = (0, a.p)(), g = i.useMemo(() => (null == f ? void 0 : f.content) != null && "" !== f.content ? (0, c.ZP)(f, {
+  } = e, f = p.state === l.Y.LOADED ? p.message : void 0, h = (0, o.p)(), g = i.useMemo(() => (null == f ? void 0 : f.content) != null && "" !== f.content ? (0, c.ZP)(f, {
     formatInline: !0,
     shouldFilterKeywords: h
   }).content : null, [f, h]), {
     isReplyAuthorBlocked: _,
     isReplyAuthorIgnored: b
-  } = (0, o.cj)([s.Z], () => ({
+  } = (0, a.cj)([s.Z], () => ({
     isReplyAuthorBlocked: null != f && s.Z.isBlockedForMessage(f),
     isReplyAuthorIgnored: null != f && s.Z.isIgnoredForMessage(f)
   }), [f]), v = (0, u.Uj)(f), x = (0, u.Uj)(t);
@@ -43,11 +43,11 @@ let m = i.memo(function(e) {
   })
 });
 
-function f(e, t, n, i, o) {
+function f(e, t, n, i, a) {
   return e.type !== p.uaV.REPLY || null == n ? null : (0, r.jsx)(m, {
     baseMessage: e,
     channel: t,
     referencedMessage: i,
-    compact: o
+    compact: a
   })
 }

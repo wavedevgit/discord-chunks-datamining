@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(91192),
   s = n(442837),
   c = n(518738),
@@ -65,7 +65,7 @@ let w = i.memo(function(e) {
   var t, n;
   let {
     message: i,
-    compact: o = !1,
+    compact: a = !1,
     className: w,
     onContextMenu: Z,
     onClick: k,
@@ -81,13 +81,13 @@ let w = i.memo(function(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), G = i.type === S.uaV.POLL_RESULT || null !== (t = e.disableInteraction) && void 0 !== t && t, H = i.isFirstMessageInForumPost(D), V = (0, u.A)((null !== (n = i.editedTimestamp) && void 0 !== n ? n : i.timestamp).valueOf()), {
@@ -111,14 +111,14 @@ let w = i.memo(function(e) {
   let en = (0, v.iG)(i),
     er = (0, v.Gx)(i);
   return (0, r.jsx)(b.Z, P({
-    compact: o,
-    className: a()(w, {
+    compact: a,
+    className: o()(w, {
       [T.ephemeral]: (0, h.Pv)(i),
       [T.disableInteraction]: G
     }),
     disableInteraction: G,
-    childrenRepliedMessage: (0, I.Z)(i, D, Y, X, o),
-    childrenExecutedCommand: (0, C.Z)(i, D, o),
+    childrenRepliedMessage: (0, I.Z)(i, D, Y, X, a),
+    childrenExecutedCommand: (0, C.Z)(i, D, a),
     childrenHeader: (0, N.Z)(A(P({}, e), {
       guildId: D.guild_id,
       author: Q,

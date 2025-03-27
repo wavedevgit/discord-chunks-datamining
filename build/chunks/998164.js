@@ -126,10 +126,13 @@ let j = function(e) {
       (0, c.ad)(t, l, i, s)
     }))
   }, [n, t]), j = i.useCallback(e => {
-    var t;
-    let r = null === (t = n[e]) || void 0 === t ? void 0 : t.channelId;
-    null != r && (0, c.Hr)(r)
-  }, [n]), N = n.map(e => h(p({}, e), {
+    var r;
+    let i = null === (r = n[e]) || void 0 === r ? void 0 : r.channelId;
+    if (null == i) return;
+    (0, c.Hr)(i);
+    let s = d.Z.getSettings();
+    (0, c.oo)(t, s, !0)
+  }, [n, t]), N = n.map(e => h(p({}, e), {
     id: e.channelId
   })), v = i.useCallback(e => {
     (0, c.hS)(e);

@@ -7,16 +7,16 @@ n.d(t, {
 });
 var r = n(81643),
   i = n(974814),
-  o = n(594174),
-  a = n(709054),
+  a = n(594174),
+  o = n(709054),
   l = n(981631),
   s = n(388032);
 let c = new Date("06/16/2020"),
   u = [l.V_K.AGE_RESTRICTED, l.V_K.EXPLICIT];
 
 function d() {
-  let e = o.default.getCurrentUser();
-  return null != e && a.default.extractTimestamp(e.id) > c.getTime() && null == e.nsfwAllowed
+  let e = a.default.getCurrentUser();
+  return null != e && o.default.extractTimestamp(e.id) > c.getTime() && null == e.nsfwAllowed
 }
 
 function p(e) {

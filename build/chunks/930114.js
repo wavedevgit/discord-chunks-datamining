@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(594174),
-  a = n(78839),
+  a = n(594174),
+  o = n(78839),
   l = n(585483),
   s = n(74538),
   c = n(138464),
@@ -19,13 +19,13 @@ function p(e) {
     channelContext: p,
     customGiftMessage: m,
     giftInfo: f
-  } = e, h = !1, g = null, _ = o.default.getCurrentUser(), b = (0, s.yd)(null == _ ? void 0 : _.premiumType, u.p9.TIER_0);
+  } = e, h = !1, g = null, _ = a.default.getCurrentUser(), b = (0, s.yd)(null == _ ? void 0 : _.premiumType, u.p9.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("92446"), n.e("2949")]).then(n.bind(n, 409858));
     return n => {
-      var i, o;
+      var i, a;
       return (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -48,9 +48,9 @@ function p(e) {
         channelContext: p,
         customGiftMessage: m,
         emojiName: null == f ? void 0 : null === (i = f.emoji) || void 0 === i ? void 0 : i.name,
-        soundId: null == f ? void 0 : null === (o = f.sound) || void 0 === o ? void 0 : o.id,
+        soundId: null == f ? void 0 : null === (a = f.sound) || void 0 === a ? void 0 : a.id,
         onComplete: (e, t) => {
-          g = e, t && (h = t, e.isSubscription && null == a.ZP.getPremiumSubscription(!1) && (0, c.H)(!0))
+          g = e, t && (h = t, e.isSubscription && null == o.ZP.getPremiumSubscription(!1) && (0, c.H)(!0))
         }
       }, n))
     }

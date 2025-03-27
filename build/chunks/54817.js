@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   l = n(385499),
   s = n(739566),
   c = n(464891),
@@ -39,7 +39,7 @@ function g(e) {
     onMouseEnter: v,
     onMouseLeave: x,
     children: (0, r.jsx)(d.Z, {
-      className: o()(h.mainContainer, {
+      className: a()(h.mainContainer, {
         [h.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
@@ -48,18 +48,18 @@ function g(e) {
       iconContainerClassName: h.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: o()(h.content, {
+        className: a()(h.content, {
           [h.compact]: n
         }),
         children: [(0, r.jsx)(c.nD, {
           message: t,
           messageClassname: h.spanCorrection,
-          className: o()(h.usernameContainer, h.spanCorrection, {
+          className: a()(h.usernameContainer, h.spanCorrection, {
             [h.compact]: n
           }),
           username: (0, r.jsxs)("div", {
             className: h.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
@@ -73,7 +73,7 @@ function g(e) {
           compact: n,
           showTimestamp: !0
         }), (0, r.jsx)("div", {
-          className: o()(h.__invalid_messageContent, {
+          className: a()(h.__invalid_messageContent, {
             [h.compact]: n
           }),
           children: t.type === p.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.NW.format(f.t["+m8eDw"], {

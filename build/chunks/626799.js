@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => A
 }), n(47120), n(411104);
 var r, i = n(200651),
-  o = n(192379),
-  a = n(568611),
+  a = n(192379),
+  o = n(568611),
   l = n(442837),
   s = n(481060),
   c = n(558381),
@@ -34,7 +34,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class I extends(r = o.Component) {
+class I extends(r = a.Component) {
   get analyticsLocation() {
     var e, t;
     let {
@@ -91,16 +91,16 @@ class I extends(r = o.Component) {
       storeListing: t,
       width: n,
       fetchFailed: r,
-      renderFallback: o
+      renderFallback: a
     } = this.props, l = n > f.aL;
-    return null == e || null == t ? r ? o() : (0, i.jsx)(f.OR, {
+    return null == e || null == t ? r ? a() : (0, i.jsx)(f.OR, {
       isHorizontal: l
     }) : e.productLine === O.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
       section: O.jXE.APPLICATION_EMBED,
       children: this.renderApplicationTile(e, t)
     }) : (0, i.jsx)(u.Z, {
       section: O.jXE.APPLICATION_EMBED,
-      children: (0, i.jsx)(a.rU, {
+      children: (0, i.jsx)(o.rU, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
         onMouseEnter: this.handleMouseEnter,
@@ -143,8 +143,8 @@ class I extends(r = o.Component) {
       let {
         inLibrary: n,
         width: r,
-        renderCustomTitle: o,
-        renderCustomTagline: a,
+        renderCustomTitle: a,
+        renderCustomTagline: o,
         renderCustomMedia: l
       } = this.props, {
         playing: s,
@@ -158,8 +158,8 @@ class I extends(r = o.Component) {
         inLibrary: n,
         onToggleMute: this.handleToggleMute,
         renderCustomActions: () => this.renderActions(e),
-        renderCustomTitle: o,
-        renderCustomTagline: a,
+        renderCustomTitle: a,
+        renderCustomTagline: o,
         renderCustomMedia: l,
         isHorizontal: u,
         isEmbed: !0
@@ -169,16 +169,16 @@ class I extends(r = o.Component) {
         inLibrary: t,
         application: n,
         skuId: r,
-        libraryApplication: o,
-        renderCustomActions: a
+        libraryApplication: a,
+        renderCustomActions: o
       } = this.props;
-      if (null != a) return (0, i.jsx)("div", {
+      if (null != o) return (0, i.jsx)("div", {
         className: j.tileActions,
-        children: a()
+        children: o()
       });
       if (null == n) return null;
       let l = null != n && n.primarySkuId === r,
-        c = null != o && o.hasFlag(O.eHb.HIDDEN);
+        c = null != a && a.hasFlag(O.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: j.tileActions,
         children: [!l || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {

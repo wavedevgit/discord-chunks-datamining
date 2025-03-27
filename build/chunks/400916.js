@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(512722),
-  o = n.n(i),
-  a = n(399606),
+  a = n.n(i),
+  o = n(399606),
   l = n(481060),
   s = n(671533),
   c = n(240864),
@@ -20,7 +20,7 @@ function f(e) {
   let {
     guildId: h,
     productId: g
-  } = e, _ = (0, a.e7)([c.Z], () => c.Z.getGuildProduct(g)), b = (null !== (f = null == _ ? void 0 : null === (t = _.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== f ? f : 0) > 1, v = null == _ ? void 0 : null === (i = _.attachments) || void 0 === i ? void 0 : null === (n = i[0]) || void 0 === n ? void 0 : n.id;
+  } = e, _ = (0, o.e7)([c.Z], () => c.Z.getGuildProduct(g)), b = (null !== (f = null == _ ? void 0 : null === (t = _.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== f ? f : 0) > 1, v = null == _ ? void 0 : null === (i = _.attachments) || void 0 === i ? void 0 : null === (n = i[0]) || void 0 === n ? void 0 : n.id;
   return b ? (0, r.jsxs)(l.zxk, {
     onClick: function() {
       u.Z.open({
@@ -39,7 +39,7 @@ function f(e) {
       height: 16,
       direction: s.Z.Directions.RIGHT
     })]
-  }) : (o()(null != v, "No attachment"), (0, r.jsxs)(d.Z, {
+  }) : (a()(null != v, "No attachment"), (0, r.jsxs)(d.Z, {
     guildId: h,
     productId: g,
     attachmentId: v,

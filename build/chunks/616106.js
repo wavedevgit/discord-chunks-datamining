@@ -2,15 +2,15 @@
 n.d(t, {
   Z: () => h
 });
-var r, i, o, a = n(913527),
-  l = n.n(a),
+var r, i, a, o = n(913527),
+  l = n.n(o),
   s = n(442837),
   c = n(570140),
   u = n(255078),
   d = n(594174),
   p = n(74538);
 let m = !1;
-class f extends(o = s.ZP.Store) {
+class f extends(a = s.ZP.Store) {
   shouldShowReactivateNotice() {
     let e = d.default.getCurrentUser();
     return !(0, p.I5)(e) && m

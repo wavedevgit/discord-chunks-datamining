@@ -5,8 +5,8 @@ n.d(t, {
 }), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(470167),
   s = n(481060),
   c = n(572691),
@@ -33,12 +33,12 @@ let b = e => {
   v = e => {
     var t, n, i;
     let {
-      embed: o
+      embed: a
     } = e;
-    if (!h.n2.has(o.type)) return null;
-    let a = void 0 !== o.video && o.type !== l.h.GIFV ? o.video.url : null !== (i = null === (t = o.thumbnail) || void 0 === t ? void 0 : t.url) && void 0 !== i ? i : null === (n = o.image) || void 0 === n ? void 0 : n.url;
-    return null == a ? null : (0, r.jsx)(x, {
-      url: a
+    if (!h.n2.has(a.type)) return null;
+    let o = void 0 !== a.video && a.type !== l.h.GIFV ? a.video.url : null !== (i = null === (t = a.thumbnail) || void 0 === t ? void 0 : t.url) && void 0 !== i ? i : null === (n = a.image) || void 0 === n ? void 0 : n.url;
+    return null == o ? null : (0, r.jsx)(x, {
+      url: o
     })
   },
   x = e => {
@@ -49,11 +49,11 @@ let b = e => {
     return (0, r.jsx)("div", {
       className: _.mediaContainer,
       children: i ? (0, r.jsx)(d.Z, {
-        className: a()(_.video, _.media),
+        className: o()(_.video, _.media),
         controls: !0,
         src: t
       }) : (0, r.jsx)("img", {
-        className: a()(_.image, _.media),
+        className: o()(_.image, _.media),
         src: t,
         alt: n
       })
@@ -71,8 +71,8 @@ function E(e) {
   let {
     channelId: t,
     messageId: n,
-    isReportFalsePositiveLoading: o,
-    analyticsContext: a,
+    isReportFalsePositiveLoading: a,
+    analyticsContext: o,
     attachmentPreview: l,
     embedPreview: c,
     onConfirmPress: d,
@@ -83,24 +83,24 @@ function E(e) {
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
       messageId: n,
-      context: a
+      context: o
     }), m()
-  }, [t, n, a, m]), y = i.useCallback(() => {
+  }, [t, n, o, m]), y = i.useCallback(() => {
     null == d || d(), (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
       messageId: n,
-      context: a
+      context: o
     })
-  }, [t, n, a, d]);
+  }, [t, n, o, d]);
   return i.useEffect(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
       channelId: t,
       messageId: n,
-      context: a
+      context: o
     })
-  }, [t, n, a]), (0, r.jsxs)(s.Y0X, {
+  }, [t, n, o]), (0, r.jsxs)(s.Y0X, {
     transitionState: p,
     "aria-labelledby": h,
     size: s.CgR.SMALL,
@@ -127,15 +127,15 @@ function E(e) {
     }), (0, r.jsxs)(s.mzw, {
       children: [(0, r.jsx)(s.zxk, {
         className: _.button,
-        disabled: o,
-        submitting: o,
+        disabled: a,
+        submitting: a,
         size: s.zxk.Sizes.MEDIUM,
         color: s.zxk.Colors.BRAND,
         onClick: y,
         children: g.NW.string(g.t["cY+Ooa"])
       }), (0, r.jsx)(s.zxk, {
         className: _.button,
-        disabled: o,
+        disabled: a,
         color: s.zxk.Colors.TRANSPARENT,
         size: s.zxk.Sizes.MEDIUM,
         onClick: x,

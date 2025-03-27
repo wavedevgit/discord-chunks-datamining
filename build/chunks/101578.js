@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(654030),
-  a = n(906732),
+  a = n(654030),
+  o = n(906732),
   l = n(973616),
   s = n(789407),
   c = n(314897),
@@ -21,7 +21,7 @@ let f = e => {
     hideParty: f
   } = e, {
     analyticsLocations: h
-  } = (0, a.ZP)(), g = (0, i.e7)([c.default], () => c.default.getId()), _ = (0, i.e7)([u.Z], () => {
+  } = (0, o.ZP)(), g = (0, i.e7)([c.default], () => c.default.getId()), _ = (0, i.e7)([u.Z], () => {
     if (null == n.application) return u.Z.findActivity(n.author.id, e => e.type === d.IIU.LISTENING);
     {
       var e;
@@ -29,7 +29,7 @@ let f = e => {
       return (null === (e = n.activity) || void 0 === e ? void 0 : e.type) === d.mFx.JOIN_REQUEST && (r = r === g && t.isPrivate() ? t.getRecipientId() : g), u.Z.getApplicationActivity(r, n.application.id)
     }
   }, [n, t, g]);
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     className: m.container,
     activity: _,
     activityActionType: null != n.activity ? n.activity.type : null,

@@ -1,6 +1,6 @@
 /**
   Module ID: 50963
-  Original File Name: 3fe9b71d3e12d2a1
+  Original File Name: ae16842ab0e3dbc8
 **/
 .ephemeral__5126c {
     position: relative;
@@ -1140,6 +1140,10 @@
     top: 1.75rem
 }
 
+.visual-refresh .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
+    background-color: var(--border-subtle)
+}
+
 .zalgo_c19a55 .messageContent_c19a55 {
     overflow: hidden
 }
@@ -2189,4 +2193,4 @@
     color: var(--primary-500)
 }
 
-/*# sourceMappingURL=3fe9b71d3e12d2a1.css.map*/
+/*# sourceMappingURL=ae16842ab0e3dbc8.css.map*/

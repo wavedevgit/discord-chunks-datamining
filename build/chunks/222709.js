@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   l = n(528963),
   s = n(143740),
   c = n(528144),
@@ -16,7 +16,7 @@ let m = e => {
   let {
     channelId: t,
     messageId: n
-  } = e, m = (0, o.e7)([u.Z], () => u.Z.shouldShowBump(n), [n]), f = i.useCallback(() => {
+  } = e, m = (0, a.e7)([u.Z], () => u.Z.shouldShowBump(n), [n]), f = i.useCallback(() => {
     l.Z.dismissPublishBump(n), (0, s.Z)(t, n)
   }, [t, n]), h = i.useCallback(() => {
     l.Z.dismissPublishBump(n)
@@ -27,7 +27,7 @@ let m = e => {
     className: p.container,
     children: [(0, r.jsxs)("div", {
       className: p.bumpBox,
-      children: [(0, r.jsx)(a.MqZ, {
+      children: [(0, r.jsx)(o.MqZ, {
         size: "xs",
         color: "currentColor",
         className: p.icon
@@ -35,26 +35,26 @@ let m = e => {
         className: p.tagline,
         size: c.Z.Sizes.SIZE_14,
         children: d.NW.string(d.t.hasZoa)
-      }), (0, r.jsx)(a.zxk, {
-        color: a.zxk.Colors.LINK,
-        look: a.zxk.Looks.LINK,
-        size: a.zxk.Sizes.MIN,
+      }), (0, r.jsx)(o.zxk, {
+        color: o.zxk.Colors.LINK,
+        look: o.zxk.Looks.LINK,
+        size: o.zxk.Sizes.MIN,
         className: p.publish,
         onClick: f,
         children: d.NW.string(d.t["MFGE5+"])
-      }), (0, r.jsx)(a.P3F, {
+      }), (0, r.jsx)(o.P3F, {
         onClick: h,
-        children: (0, r.jsx)(a.k$p, {
+        children: (0, r.jsx)(o.k$p, {
           size: "xs",
           color: "currentColor",
           className: p.closeIcon
         })
       })]
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "text-muted",
       className: p.hidePermanently,
       variant: "text-sm/normal",
-      children: (0, r.jsx)(a.P3F, {
+      children: (0, r.jsx)(o.P3F, {
         onClick: g,
         children: d.NW.string(d.t.efSkDg)
       })

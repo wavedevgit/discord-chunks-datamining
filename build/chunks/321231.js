@@ -1,10 +1,10 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  G: () => o
+  G: () => a
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2024-12_app_embeds_redesign",
   label: "App Embeds Redesign",

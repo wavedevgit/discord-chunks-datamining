@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(392711),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   l = n(100527),
   s = n(184301),
   c = n(347475),
@@ -60,7 +60,7 @@ let h = e => {
       })
     }) : (0, r.jsx)("div", {
       className: p.partyMemberKnown,
-      children: (0, r.jsx)(a.yRy, {
+      children: (0, r.jsx)(o.yRy, {
         preload: () => (0, s.Z)(t.id, t.getAvatarURL(i, 80), {
           guildId: i
         }),
@@ -71,10 +71,10 @@ let h = e => {
         })),
         position: "left",
         clickTrap: !0,
-        children: e => (0, r.jsx)(a.qEK, f(m({}, e), {
+        children: e => (0, r.jsx)(o.qEK, f(m({}, e), {
           src: t.getAvatarURL(i, 24),
           "aria-label": t.username,
-          size: a.EFr.SIZE_24,
+          size: o.EFr.SIZE_24,
           className: p.partyMember
         }))
       })
@@ -85,7 +85,7 @@ let h = e => {
       partySize: t,
       members: n,
       minAvatarsShown: i = 1,
-      maxAvatarsShown: a = 2,
+      maxAvatarsShown: o = 2,
       guildId: l
     } = e, {
       unknownSize: s,
@@ -93,21 +93,21 @@ let h = e => {
       knownSize: u
     } = t;
     if (c < i) return null;
-    let m = o()(n).filter(d.lm).take(a).map(e => (0, r.jsx)(h, {
+    let m = a()(n).filter(d.lm).take(o).map(e => (0, r.jsx)(h, {
       member: e,
       guildId: l
     }, e.id)).value();
-    for (let e = 0; e < s && m.length < a; e++) m.push((0, r.jsx)(h, {
+    for (let e = 0; e < s && m.length < o; e++) m.push((0, r.jsx)(h, {
       guildId: l
     }, "unknown-member-".concat(e)));
     let f = c - u - s;
-    for (let e = 0; e < f && m.length < a; e++) m.push((0, r.jsx)(h, {
+    for (let e = 0; e < f && m.length < o; e++) m.push((0, r.jsx)(h, {
       empty: !0,
       guildId: l
     }, "empty-member-".concat(e)));
     let g = Math.max(Math.min(c - m.length, 99), 0);
     if (1 === g) {
-      let e = n[a];
+      let e = n[o];
       m.push((0, r.jsx)(h, {
         member: e,
         guildId: l

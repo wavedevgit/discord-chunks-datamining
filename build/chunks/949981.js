@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041);
 var r = n(200651),
   i = n(192379),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   l = n(442837),
   s = n(447543),
   c = n(100527),
@@ -23,15 +23,15 @@ var r = n(200651),
 function x(e) {
   let t, {
       invite: n,
-      author: o,
+      author: a,
       currentUserId: x,
       onTransitionToInviteChannel: y,
       onAcceptInstantInvite: E
     } = e,
-    O = x === o.id,
+    O = x === a.id,
     N = n.state === _.r2o.ACCEPTING,
     j = (0, l.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
-  a()(null == j || j.isPrivate(), "must be a private channel");
+  o()(null == j || j.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: C
   } = (0, u.ZP)(c.Z.INVITE_EMBED), I = null != j, S = i.useCallback(() => {

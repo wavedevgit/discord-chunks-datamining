@@ -1,15 +1,15 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(325767);
 
-function o(e) {
+function a(e) {
   var t, n, {
-      width: o = 24,
-      height: a = 24,
+      width: a = 24,
+      height: o = 24,
       color: l = "currentColor"
     } = e,
     s = function(e, t) {
@@ -17,13 +17,13 @@ function o(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["width", "height", "color"]);
@@ -46,8 +46,8 @@ function o(e) {
     return e
   }({}, (0, i.Z)(s)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
-    width: o,
-    height: a,
+    width: a,
+    height: o,
     viewBox: "0 0 20 20",
     fill: "none",
     children: [(0, r.jsxs)("g", {

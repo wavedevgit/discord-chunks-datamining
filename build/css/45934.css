@@ -1,6 +1,6 @@
 /**
   Module ID: 45934
-  Original File Name: d396d9ce7985c15c
+  Original File Name: fc4052c9faa0cd41
 **/
 .closeButton__47998 {
     position: absolute;
@@ -1245,6 +1245,10 @@
     top: 1.75rem
 }
 
+.visual-refresh .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
+    background-color: var(--border-subtle)
+}
+
 .zalgo_c19a55 .messageContent_c19a55 {
     overflow: hidden
 }
@@ -1465,4 +1469,4 @@
     border-radius: 8px
 }
 
-/*# sourceMappingURL=d396d9ce7985c15c.css.map*/
+/*# sourceMappingURL=fc4052c9faa0cd41.css.map*/

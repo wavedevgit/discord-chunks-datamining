@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(447543),
+  a = n(442837),
+  o = n(447543),
   l = n(410575),
   s = n(758119),
   c = n(622822),
@@ -42,12 +42,12 @@ function k(e) {
   } = e, {
     invite: R,
     inviteError: D
-  } = (0, o.cj)([x.Z], () => ({
+  } = (0, a.cj)([x.Z], () => ({
     invite: x.Z.getInvite(t),
     inviteError: x.Z.getInviteError(t)
   }), [t]), L = null == R;
   i.useEffect(() => {
-    L && a.ZP.resolveInvite(t)
+    L && o.ZP.resolveInvite(t)
   }, [t, L]);
   let M = null != R ? R : {
       state: w.r2o.RESOLVING,
@@ -57,14 +57,14 @@ function k(e) {
       analyticsLocations: W
     } = (0, u.ZP)(),
     U = (0, d.O)(),
-    F = (0, o.e7)([v.Z], () => (null == R ? void 0 : R.guild) != null ? v.Z.getGuild(R.guild.id) : null, [R]),
-    B = (0, o.e7)([b.default], () => b.default.getId()),
-    G = (0, o.e7)([p.ZP], () => {
+    F = (0, a.e7)([v.Z], () => (null == R ? void 0 : R.guild) != null ? v.Z.getGuild(R.guild.id) : null, [R]),
+    B = (0, a.e7)([b.default], () => b.default.getId()),
+    G = (0, a.e7)([p.ZP], () => {
       var e;
       return p.ZP.getGuildScheduledEvent(null === (e = M.guild_scheduled_event) || void 0 === e ? void 0 : e.id)
     }, [M]),
     H = () => {
-      null != M.channel && a.ZP.transitionToInviteSync(M)
+      null != M.channel && o.ZP.transitionToInviteSync(M)
     },
     V = () => {
       if (null == F && (null == R ? void 0 : R.guild) != null) {
@@ -82,7 +82,7 @@ function k(e) {
           section: w.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: W
-      }) : a.ZP.acceptInviteAndTransitionToInviteChannel({
+      }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: k("Invite Button Embed")
       })

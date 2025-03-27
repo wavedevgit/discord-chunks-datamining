@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(100527),
-  a = n(906732),
+  a = n(100527),
+  o = n(906732),
   l = n(915346),
   s = n(783097),
   c = n(812236),
@@ -39,7 +39,7 @@ function E(e) {
     botUserId: null == E ? void 0 : null === (n = E.bot) || void 0 === n ? void 0 : n.id
   }), T = null != E && (0, s.ye)(E), P = null != I && T && S, {
     analyticsLocations: A
-  } = (0, a.ZP)(o.Z.ACTIVITY_CUSTOM_LINK), w = (0, i.e7)([f.Z], () => f.Z.getChannelId()), Z = (0, x.KF)(w), k = (0, i.e7)([b.ZP], () => {
+  } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), w = (0, i.e7)([f.Z], () => f.Z.getChannelId()), Z = (0, x.KF)(w), k = (0, i.e7)([b.ZP], () => {
     if (null == w) return;
     let e = b.ZP.getEmbeddedActivitiesForChannel(w).filter(e => e.applicationId === E.id);
     return e.length > 0 ? e[0].compositeInstanceId : void 0

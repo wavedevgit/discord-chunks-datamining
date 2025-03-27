@@ -7,9 +7,9 @@ var r = n(395041);
 n(349033);
 var i = n(999650);
 n(72006);
-var o = n(405656);
+var a = n(405656);
 n(981631);
-let a = {
+let o = {
   [i.Qe.FILTER]: r.w,
   [i.Qe.ANSWER]: r.O
 };
@@ -26,7 +26,7 @@ function l() {
           return null !== n && e.getEntity(n).getType() === r
         }, n)
       })(r, e, t, n),
-      component: a[r.componentType]
+      component: o[r.componentType]
     })
   }), t
 }
@@ -36,5 +36,5 @@ function s(e, t) {
     focusOffset: n,
     anchorOffset: r
   } = t.getSelection();
-  return (0, o.g9)(e, n, r)
+  return (0, a.g9)(e, n, r)
 }

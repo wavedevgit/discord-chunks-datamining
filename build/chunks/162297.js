@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(990547),
-  a = n(373793),
+  a = n(990547),
+  o = n(373793),
   l = n(399606),
   s = n(481060),
   c = n(434650),
@@ -45,15 +45,15 @@ function F(e) {
   let {
     applicationId: t,
     embedUrl: n
-  } = e, [o, a, s] = (0, l.Wu)([w.Z], () => [w.Z.getApplication(t), w.Z.isFetchingApplication(t), w.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [a, o, s] = (0, l.Wu)([w.Z], () => [w.Z.getApplication(t), w.Z.isFetchingApplication(t), w.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != o || a || s || A.ZP.fetchApplication(t)
-  }, [o, a, s, t]), null != o && (0, P.Eb)({
-    customInstallUrl: o.customInstallUrl,
-    installParams: o.installParams,
-    integrationTypesConfig: o.integrationTypesConfig
+    null != a || o || s || A.ZP.fetchApplication(t)
+  }, [a, o, s, t]), null != a && (0, P.Eb)({
+    customInstallUrl: a.customInstallUrl,
+    installParams: a.installParams,
+    integrationTypesConfig: a.integrationTypesConfig
   })) ? (0, r.jsx)(B, {
-    application: o,
+    application: a,
     embedUrl: n
   }) : null
 }
@@ -77,8 +77,8 @@ function B(e) {
     e && V(!0)
   }, []), K = (0, c.O)(z), Y = i.useCallback(() => {
     (0, h.h)({
-      type: o.ImpressionTypes.VIEW,
-      name: o.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+      type: a.ImpressionTypes.VIEW,
+      name: a.ImpressionNames.APP_OAUTH2_LINK_EMBED,
       properties: {
         application_id: n.id
       }
@@ -153,7 +153,7 @@ function B(e) {
           size: s.zxk.Sizes.MEDIUM,
           onClick: () => {
             var e;
-            a.Y.USER_INSTALL in (null !== (e = n.integrationTypesConfig) && void 0 !== e ? e : {}) || Q ? (0, b.X)(n.id) : (0, E.transitionToGlobalDiscovery)({
+            o.Y.USER_INSTALL in (null !== (e = n.integrationTypesConfig) && void 0 !== e ? e : {}) || Q ? (0, b.X)(n.id) : (0, E.transitionToGlobalDiscovery)({
               tab: D.GlobalDiscoveryTab.APPS,
               applicationId: n.id,
               newSessionState: {
@@ -196,17 +196,17 @@ function G(e) {
     applicationId: t.id,
     size: 280,
     names: ["embedded_cover"]
-  }), o = (0, y.ZP)(n, ""), a = t.bot, l = null, s = {};
+  }), a = (0, y.ZP)(n, ""), o = t.bot, l = null, s = {};
   if ((0, _.ye)(t)) l = (0, r.jsx)(d.Z, {
     imageBackground: i,
     applicationName: t.name,
     imageClassName: M.bannerImage,
     imageNotFoundClassName: M.bannerImage
   });
-  else if ((null == a ? void 0 : a.banner) != null) {
+  else if ((null == o ? void 0 : o.banner) != null) {
     let e = (0, T.aN)({
-      id: a.id,
-      banner: a.banner,
+      id: o.id,
+      banner: o.banner,
       size: 280,
       canAnimate: !1
     });
@@ -216,7 +216,7 @@ function G(e) {
       className: M.bannerImage
     })
   } else s = {
-    backgroundColor: o
+    backgroundColor: a
   };
   return (0, r.jsx)("div", {
     className: M.banner,

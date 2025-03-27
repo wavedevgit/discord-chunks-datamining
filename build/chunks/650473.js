@@ -2,8 +2,8 @@
 n.d(t, {
   AZ: () => i,
   Y9: () => r,
-  bj: () => o
+  bj: () => a
 });
 let r = "#83DDC5",
   i = "#F47FFF",
-  o = "#FFDE4D"
+  a = "#FFDE4D"

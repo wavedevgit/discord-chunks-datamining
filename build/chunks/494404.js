@@ -6,8 +6,8 @@ n.d(t, {
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(392711),
   s = n.n(l),
   c = n(91192),
@@ -49,10 +49,10 @@ let w = e => {
       title: t,
       icon: n,
       children: i,
-      className: o
+      className: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(o, T.header),
+      className: o()(a, T.header),
       children: [(0, r.jsxs)("div", {
         className: T.titleContainer,
         children: [null != n ? (0, r.jsx)(n, {
@@ -92,13 +92,13 @@ class k extends i.PureComponent {
       className: T.jumpButton,
       onClick: this.handleClickJump,
       children: [(0, r.jsx)("div", {
-        className: a()(T.__invalid_text, {
+        className: o()(T.__invalid_text, {
           hidden: e
         }),
         children: S.NW.string(S.t.k5WiPT)
       }), (0, r.jsx)(d.$jN, {
         type: d.$jN.Type.PULSING_ELLIPSIS,
-        className: a()(T.loading, {
+        className: o()(T.loading, {
           [T.visible]: e
         })
       })]
@@ -157,7 +157,7 @@ function D(e) {
   let {
     analyticsName: t,
     items: n,
-    hasMore: o,
+    hasMore: a,
     loading: l,
     loadMore: p,
     renderHeader: m,
@@ -193,12 +193,12 @@ function D(e) {
   let M = i.useCallback(() => {
       var e;
       let t = null === (e = Z.current) || void 0 === e ? void 0 : e.getScrollerState();
-      null != t && t.scrollHeight === t.scrollTop + t.offsetHeight && o && !l && (null == p || p())
-    }, [o, p, l]),
+      null != t && t.scrollHeight === t.scrollTop + t.offsetHeight && a && !l && (null == p || p())
+    }, [a, p, l]),
     W = [],
     U = !0;
   null == n ? W = [(0, r.jsx)("div", {
-    className: a()(T.emptyPlaceholder, T.loadingPlaceholder),
+    className: o()(T.emptyPlaceholder, T.loadingPlaceholder),
     children: (0, r.jsx)(d.$jN, {})
   }, "spinner")] : 0 === n.length ? W.push((0, r.jsx)(i.Fragment, {
     children: _(v.Z.theme)
@@ -209,7 +209,7 @@ function D(e) {
   null != n && n.length > 0 && null != p && (F = l ? (0, r.jsx)("div", {
     className: T.loadingMore,
     children: (0, r.jsx)(d.$jN, {})
-  }, "loading-more-after") : o ? (0, r.jsx)("div", {
+  }, "loading-more-after") : a ? (0, r.jsx)("div", {
     className: T.hasMore,
     children: (0, r.jsx)(d.zxk, {
       look: d.zxk.Looks.FILLED,
@@ -238,9 +238,9 @@ function D(e) {
       maxHeight: D.height - 43 - 25
     };
   R && (H.maxHeight -= 40), L && (H.maxHeight -= 48);
-  let V = null != p && o;
+  let V = null != p && a;
   return (0, r.jsx)("div", {
-    className: a()(E, T.messagesPopoutWrap),
+    className: o()(E, T.messagesPopoutWrap),
     style: H,
     onClick: A,
     onDoubleClick: A,
@@ -248,7 +248,7 @@ function D(e) {
     children: (0, r.jsxs)(d.y5t, {
       component: m(),
       children: [(0, r.jsxs)(d.Den, {
-        className: a()(T.messagesPopout, y),
+        className: o()(T.messagesPopout, y),
         onScroll: V ? M : void 0,
         ref: Z,
         children: [(0, r.jsx)(c.bG, {
@@ -258,18 +258,18 @@ function D(e) {
               var t, n, {
                   ref: i
                 } = e,
-                o = function(e, t) {
+                a = function(e, t) {
                   if (null == e) return {};
                   var n, r, i = function(e, t) {
                     if (null == e) return {};
                     var n, r, i = {},
-                      o = Object.keys(e);
-                    for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                      a = Object.keys(e);
+                    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
                     return i
                   }(e, t);
                   if (Object.getOwnPropertySymbols) {
-                    var o = Object.getOwnPropertySymbols(e);
-                    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                    var a = Object.getOwnPropertySymbols(e);
+                    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
                   }
                   return i
                 }(e, ["ref"]);
@@ -286,7 +286,7 @@ function D(e) {
                 return e
               }({
                 ref: i
-              }, o), n = n = {
+              }, a), n = n = {
                 children: W
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -310,8 +310,8 @@ function L(e) {
   let {
     analyticsName: t,
     onFetch: n,
-    channel: o,
-    messages: a,
+    channel: a,
+    messages: o,
     hasMore: l,
     loading: s,
     loadMore: c,
@@ -326,7 +326,7 @@ function L(e) {
     onCloseMessage: j,
     listName: C
   } = e, P = (0, u.e7)([y.Z], () => {
-    let e = null != o ? y.Z.getMessages(o.id) : null;
+    let e = null != a ? y.Z.getMessages(a.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
 
@@ -334,21 +334,21 @@ function L(e) {
     let {
       id: r,
       blocked: i,
-      ignored: o,
-      author: a,
+      ignored: a,
+      author: o,
       channel_id: l
     } = e;
     if (i) p.Z.show({
       title: S.NW.string(S.t["j7eA/v"]),
       body: S.NW.formatToPlainString(S.t.dTNNgo, {
-        name: a.username
+        name: o.username
       }),
       confirmText: S.NW.string(S.t.BddRzc)
     });
-    else if (o) p.Z.show({
+    else if (a) p.Z.show({
       title: S.NW.string(S.t.XyWoKS),
       body: S.NW.formatToPlainString(S.t["8t8doK"], {
-        name: a.username
+        name: o.username
       }),
       confirmText: S.NW.string(S.t.BddRzc)
     });
@@ -358,12 +358,12 @@ function L(e) {
     }
   }
   i.useEffect(() => {
-    n(o)
-  }, [o, n]);
-  let w = i.useMemo(() => null == a ? void 0 : a.map(e => ({
+    n(a)
+  }, [a, n]);
+  let w = i.useMemo(() => null == o ? void 0 : o.map(e => ({
     message: e,
-    channel: o
-  })), [a, o]);
+    channel: a
+  })), [o, a]);
   return (0, r.jsx)(D, {
     className: N,
     scrollerClassName: O,
@@ -390,7 +390,7 @@ function L(e) {
           message: t,
           channel: n
         }), (0, r.jsx)(R, {
-          channel: o,
+          channel: a,
           message: t,
           jumping: P,
           canCloseAllMessages: f,

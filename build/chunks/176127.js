@@ -5,20 +5,20 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   l = n(435064),
   s = n(810196);
 
 function c() {
   var e, t;
-  let n = (0, a.Wu)([l.Z], () => {
+  let n = (0, o.Wu)([l.Z], () => {
     var e;
     let t = null === (e = l.Z.getLastClipsSession()) || void 0 === e ? void 0 : e.newClipIds;
     return null == t ? [] : l.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
   return (0, r.jsx)("div", {
-    className: o()(s.thumbnailStack, {
+    className: a()(s.thumbnailStack, {
       [s["height-1"]]: 1 === n.length,
       [s["height-2"]]: 2 === n.length,
       [s["height-3"]]: 3 === n.length,

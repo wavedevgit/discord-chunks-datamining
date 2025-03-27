@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => x
 }), n(47120), n(789020);
-var r, i, o, a = n(442837),
+var r, i, a, o = n(442837),
   l = n(433517),
   s = n(570140),
   c = n(314897),
@@ -15,7 +15,7 @@ var r, i, o, a = n(442837),
 let g = "ChannelFollowingBumpChannels",
   _ = new Set,
   b = new Set;
-class v extends(r = a.ZP.Store) {
+class v extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(c.default), _ = new Set(l.K.get(g))
   }
@@ -23,12 +23,12 @@ class v extends(r = a.ZP.Store) {
     return b.has(e)
   }
 }
-o = "ChannelFollowingPublishBumpStore", (i = "displayName") in v ? Object.defineProperty(v, i, {
-  value: o,
+a = "ChannelFollowingPublishBumpStore", (i = "displayName") in v ? Object.defineProperty(v, i, {
+  value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : v[i] = o;
+}) : v[i] = a;
 let x = new v(s.Z, {
   MESSAGE_CREATE: function(e) {
     var t;
@@ -38,9 +38,9 @@ let x = new v(s.Z, {
       optimistic: i
     } = e;
     if (i || _.has(n)) return !1;
-    let o = u.Z.getChannel(n),
-      a = p.default.getCurrentUser();
-    if (!(null != o && o.type === h.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != a && (null === (t = r.author) || void 0 === t ? void 0 : t.id) === a.id ? d.Z.can(h.Plq.SEND_MESSAGES, o) : d.Z.can(h.Plq.MANAGE_MESSAGES, o)) && !m.yE(Number(r.flags), h.iLy.CROSSPOSTED))) return !1;
+    let a = u.Z.getChannel(n),
+      o = p.default.getCurrentUser();
+    if (!(null != a && a.type === h.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != o && (null === (t = r.author) || void 0 === t ? void 0 : t.id) === o.id ? d.Z.can(h.Plq.SEND_MESSAGES, a) : d.Z.can(h.Plq.MANAGE_MESSAGES, a)) && !m.yE(Number(r.flags), h.iLy.CROSSPOSTED))) return !1;
     b.add(r.id)
   },
   MESSAGE_UPDATE: function(e) {

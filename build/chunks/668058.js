@@ -1,22 +1,22 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  $: () => o
+  $: () => a
 }), n(47120);
 var r = n(192379),
   i = n(881052);
 
-function o(e) {
+function a(e) {
   let {
     onError: t,
     onSuccess: n,
-    report: o
-  } = e, [a, l] = r.useState(!1);
+    report: a
+  } = e, [o, l] = r.useState(!1);
   return {
     reportFalsePositive: r.useCallback(async () => {
-      if (!a) {
+      if (!o) {
         l(!0);
         try {
-          await o(), null == n || n()
+          await a(), null == n || n()
         } catch (n) {
           let e = new i.Hx(n);
           null == t || t(e)
@@ -24,7 +24,7 @@ function o(e) {
           l(!1)
         }
       }
-    }, [a, t, n, o]),
-    isReportFalsePositiveLoading: a
+    }, [o, t, n, a]),
+    isReportFalsePositiveLoading: o
   }
 }

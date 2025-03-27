@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(990547),
   s = n(831209),
   c = n(442837),
@@ -29,7 +29,7 @@ function j(e) {
   var t;
   let {
     guildId: n
-  } = e, o = (0, c.e7)([_.Z], () => _.Z.getGuild(n)), {
+  } = e, a = (0, c.e7)([_.Z], () => _.Z.getGuild(n)), {
     loading: j,
     subscriptionsSettings: C
   } = (0, v.H)(n), {
@@ -60,13 +60,13 @@ function j(e) {
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.GUILD_SHOP_EMBED
   }, {
-    disableTrack: null == o
+    disableTrack: null == a
   });
   let P = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
   return j || !I ? (0, r.jsx)("div", {
-    className: a()(N.guildShopEmbed, N.spinnerContainer),
+    className: o()(N.guildShopEmbed, N.spinnerContainer),
     children: (0, r.jsx)(u.$jN, {})
-  }) : null == o || null == C ? null : (0, r.jsxs)("div", {
+  }) : null == a || null == C ? null : (0, r.jsxs)("div", {
     className: N.guildShopEmbed,
     children: [(0, r.jsx)(x.Z, {
       coverImageAsset: null !== (t = C.cover_image_asset) && void 0 !== t ? t : null
@@ -90,7 +90,7 @@ function j(e) {
       variant: "heading-md/semibold",
       color: "text-normal",
       children: O.NW.format(O.t.NZeik5, {
-        guildName: o.name
+        guildName: a.name
       })
     }), (0, r.jsx)(u.LZC, {
       size: 4
@@ -106,7 +106,7 @@ function j(e) {
     }), (0, r.jsxs)("div", {
       className: N.guildShopEmbedFooter,
       children: [(0, r.jsx)(m.Z, {
-        guild: o
+        guild: a
       }), (0, r.jsxs)("ul", {
         className: N.guildShopSummary,
         children: [(0, r.jsx)("li", {

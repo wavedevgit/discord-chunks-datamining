@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(493683),
+  a = n(442837),
+  o = n(493683),
   l = n(447543),
   s = n(100527),
   c = n(906732),
@@ -24,14 +24,14 @@ function v(e) {
   let {
     invite: n,
     getAcceptInviteContext: v
-  } = e, x = (0, o.e7)([p.default], () => p.default.getId()), y = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === x, E = n.state === g.r2o.ACCEPTING, {
+  } = e, x = (0, a.e7)([p.default], () => p.default.getId()), y = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === x, E = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: O
-  } = (0, c.ZP)(s.Z.INVITE_EMBED), N = (0, o.e7)([f.Z], () => {
+  } = (0, c.ZP)(s.Z.INVITE_EMBED), N = (0, a.e7)([f.Z], () => {
     var e;
     return null != n.inviter && f.Z.isFriend(null === (e = n.inviter) || void 0 === e ? void 0 : e.id)
   }), j = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", a.Z.openPrivateChannel([n.inviter.id])), (0, l.r$)(n, e, O)
+    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel([n.inviter.id])), (0, l.r$)(n, e, O)
   }, [n, O]), C = i.useCallback(() => {
     (0, l.r$)(n, "accept", O);
     let e = v("Invite Button Embed");

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(704215),
-  o = n(481060),
-  a = n(243778),
+  a = n(481060),
+  o = n(243778),
   l = n(970731),
   s = n(2818),
   c = n(921944),
@@ -28,7 +28,7 @@ let m = i.z.FOR_LATER_POPOUT_COACHMARK,
     content: u.NW.string(u.t.URrJq6),
     buttonCTA: u.NW.string(u.t["NX+WJC"]),
     buttonProps: {
-      color: o.Ttl.WHITE,
+      color: a.Ttl.WHITE,
       innerClassName: d.primaryButton
     },
     onClick: () => e(c.L.USER_DISMISS),
@@ -48,13 +48,13 @@ function g(e) {
     location: "ForLaterCoachmarkWeb"
   }, {
     autoTrackExposure: !1
-  }), [u, d] = (0, a.US)(l && t === (c ? "inbox-button" : "bookmarks-button") ? [m] : [], void 0);
-  return u !== m ? n : (0, r.jsx)(o.yRy, {
+  }), [u, d] = (0, o.US)(l && t === (c ? "inbox-button" : "bookmarks-button") ? [m] : [], void 0);
+  return u !== m ? n : (0, r.jsx)(a.yRy, {
     targetElementRef: i,
     renderPopout: () => h(d),
     position: "bottom",
     align: "right",
-    animation: o.yRy.Animation.TRANSLATE,
+    animation: a.yRy.Animation.TRANSLATE,
     shouldShow: !0,
     children: () => n
   })

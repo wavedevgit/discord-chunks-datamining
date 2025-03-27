@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  a = n(113434),
+  a = n(481060),
+  o = n(113434),
   l = n(497505),
   s = n(37303),
   c = n(722334),
@@ -19,10 +19,10 @@ function p(e) {
     quests: n,
     excludedQuests: p,
     isFetchingCurrentQuests: m
-  } = (0, a.J2)({
+  } = (0, o.J2)({
     fetchPolicy: "cache-or-network"
   }), f = i.useMemo(() => n.find(e => e.id === t), [t, n]), h = i.useMemo(() => p.find(e => e.id === t), [t, p]);
-  return m ? (0, r.jsx)(o.$jN, {
+  return m ? (0, r.jsx)(a.$jN, {
     className: d.spinner
   }) : null != h ? (0, r.jsx)(c.W, {
     questId: t

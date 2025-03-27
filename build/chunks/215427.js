@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => h
 });
-var r, i, o, a = n(442837),
+var r, i, a, o = n(442837),
   l = n(433517),
   s = n(570140),
   c = n(205355);
@@ -10,7 +10,7 @@ let u = "MaintenanceStore",
   d = null,
   p = null,
   m = null;
-class f extends(o = a.ZP.Store) {
+class f extends(a = o.ZP.Store) {
   initialize() {
     m = l.K.get(u)
   }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(481060),
   s = n(528144),
   c = n(118012),
@@ -21,20 +21,20 @@ let g = e => {
     let {
       speaker: n,
       guildId: i,
-      isEmbed: o
-    } = e, a = new m.Z(n.user);
+      isEmbed: a
+    } = e, o = new m.Z(n.user);
     return (0, r.jsxs)("div", {
       className: h.speaker,
       children: [(0, r.jsx)(l.qEK, {
-        src: a.getAvatarURL(i, o ? 16 : 24),
-        size: o ? l.EFr.SIZE_16 : l.EFr.SIZE_24,
+        src: o.getAvatarURL(i, a ? 16 : 24),
+        size: a ? l.EFr.SIZE_16 : l.EFr.SIZE_24,
         "aria-label": "".concat(n.nick, "-avatar"),
-        className: o ? null : h.avatar
+        className: a ? null : h.avatar
       }), (0, r.jsx)(c.Z, {
-        size: o ? c.Z.Sizes.SIZE_12 : c.Z.Sizes.SIZE_14,
+        size: a ? c.Z.Sizes.SIZE_12 : c.Z.Sizes.SIZE_14,
         color: c.Z.Colors.HEADER_SECONDARY,
         className: h.username,
-        children: null !== (t = n.nick) && void 0 !== t ? t : a.username
+        children: null !== (t = n.nick) && void 0 !== t ? t : o.username
       })]
     })
   },
@@ -46,8 +46,8 @@ let g = e => {
     if (null == t) return null;
     let i = new p.ZP(t),
       {
-        name: o,
-        description: a
+        name: a,
+        description: o
       } = i;
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.Z, {
@@ -70,7 +70,7 @@ let g = e => {
           className: h.guildInfo,
           children: [(0, r.jsx)(l.X6q, {
             variant: "heading-sm/semibold",
-            children: o
+            children: a
           }), (0, r.jsxs)("div", {
             className: h.speaker,
             children: [(0, r.jsx)("div", {
@@ -83,11 +83,11 @@ let g = e => {
             }) : null]
           })]
         })]
-      }), null != a && "" !== a && (0, r.jsx)(l.Text, {
+      }), null != o && "" !== o && (0, r.jsx)(l.Text, {
         color: "header-secondary",
         className: h.alignStart,
         variant: "text-sm/normal",
-        children: a
+        children: o
       })]
     })
   },
@@ -95,11 +95,11 @@ let g = e => {
     var t;
     let {
       stageInstance: n,
-      guild: o,
+      guild: a,
       isCard: m = !1,
       isEmbed: _ = !1,
       onClick: b
-    } = e, v = i.useMemo(() => null == o ? null : o instanceof p.ZP ? o : new p.ZP(o), [o]);
+    } = e, v = i.useMemo(() => null == a ? null : a instanceof p.ZP ? a : new p.ZP(a), [a]);
     if (null == n || null == v) return null;
     let {
       topic: x,
@@ -119,7 +119,7 @@ let g = e => {
             className: h.live
           }), (0, r.jsx)(l.X6q, {
             variant: "eyebrow",
-            className: a()(h.__invalid_label, h.live),
+            className: o()(h.__invalid_label, h.live),
             children: f.NW.string(f.t["X2K3//"])
           })]
         }), (0, r.jsxs)("div", {
@@ -131,13 +131,13 @@ let g = e => {
             width: 16,
             className: h.listeners
           }), (0, r.jsx)(l.X6q, {
-            className: a()(h.__invalid_label, h.listeners),
+            className: o()(h.__invalid_label, h.listeners),
             variant: "heading-sm/semibold",
             children: E
           })]
         })]
       }), _ && (0, r.jsxs)("div", {
-        className: a()(h.guild, {
+        className: o()(h.guild, {
           [h.embed]: _
         }),
         children: [(0, r.jsx)(u.ZP, {
@@ -157,12 +157,12 @@ let g = e => {
         })]
       }), (0, r.jsx)(s.Z, {
         size: m || _ ? s.Z.Sizes.SIZE_16 : s.Z.Sizes.SIZE_20,
-        className: a()(h.header, {
+        className: o()(h.header, {
           [h.embed]: _
         }),
         children: x
       }), (0, r.jsxs)("div", {
-        className: a()(h.members, {
+        className: o()(h.members, {
           [h.embed]: _
         }),
         children: [N.length > 0 && (0, r.jsxs)("div", {
@@ -174,7 +174,7 @@ let g = e => {
           }, e.user.id)), j > 0 ? (0, r.jsxs)("div", {
             className: h.speaker,
             children: [(0, r.jsx)("div", {
-              className: a()(h.icon, {
+              className: o()(h.icon, {
                 [h.embed]: _
               }),
               children: (0, r.jsx)(l.S6n, {

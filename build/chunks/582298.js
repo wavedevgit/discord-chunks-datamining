@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(430824),
-  a = n(646504),
+  a = n(430824),
+  o = n(646504),
   l = n(834129),
   s = n(981631),
   c = n(388032),
@@ -19,13 +19,13 @@ function d(e) {
       channel: m
     } = e,
     f = () => {
-      let e = o.Z.getGuild(m.getGuildId());
+      let e = a.Z.getGuild(m.getGuildId());
       null != e && ((0, i.ZDy)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("7654"), n.e("49049"), n.e("11117")]).then(n.bind(n, 560114));
         return n => {
-          var i, o;
+          var i, a;
           return (0, r.jsx)(t, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -43,22 +43,22 @@ function d(e) {
               })
             }
             return e
-          }({}, n), o = o = {
+          }({}, n), a = a = {
             guild: e,
             channel: m,
             source: s.t4x.INVITE_SYSTEM_MESSAGE
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(a)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
           }), i))
         }
-      }), (0, a.w)())
+      }), (0, o.w)())
     },
     h = (e, t) => (0, r.jsx)(i.eee, {
       className: u.inviteLink,

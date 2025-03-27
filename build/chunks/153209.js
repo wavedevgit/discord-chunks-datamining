@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   l = n(442837),
   s = n(524437),
   c = n(481060),
@@ -44,7 +44,7 @@ function j(e) {
   let {
     setTab: t,
     badgeState: n,
-    closePopout: o
+    closePopout: a
   } = e, {
     initialized: c,
     items: y,
@@ -61,14 +61,14 @@ function j(e) {
     return !1
   }, [T, P, S]);
   return (0, r.jsxs)("div", {
-    className: a()(E.container, {
+    className: o()(E.container, {
       [E.widerInbox]: I
     }),
     children: [(0, r.jsx)(v.Z, {
       tab: s.X.FOR_YOU,
       setTab: t,
       badgeState: n,
-      closePopout: o,
+      closePopout: a,
       children: A ? (0, r.jsx)(N, {
         onClick: () => {
           null != T && (g.d$.updateSetting(T.id), _.default.track(x.rMx.NOTIFICATION_CENTER_ACTION, {
