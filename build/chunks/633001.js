@@ -293,14 +293,14 @@ function z() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => P(I({}, e), {
     label: "".concat(e.label, " ").concat(k === e.value ? "(current)" : "")
-  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), W = (0, s.e7)([j.default], () => j.default.getFocusedPID()), U = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, T.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, Y] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), J = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), W = (0, s.e7)([j.default], () => j.default.getFocusedPID()), U = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, T.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, Y] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), K = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
   a.useEffect(() => {
     R(e => {
       for (let t of Object.keys(G)) e[Number(t)] = G[Number(t)];
       return e
     })
   }, [G]);
-  let [K, q] = a.useState({}), $ = a.useRef();
+  let [J, q] = a.useState({}), $ = a.useRef();
   a.useEffect(() => ($.current = setInterval(async () => {
     let e = x.ZP.getRunningGames(),
       t = [],
@@ -342,7 +342,7 @@ function z() {
       var t, n;
       return null !== (n = null === (t = Z[e]) || void 0 === t ? void 0 : t.fullscreenType) && void 0 !== n ? n : "Unknown"
     },
-    ei = J.filter(e => null == G[e.pid]);
+    ei = K.filter(e => null == G[e.pid]);
   return (0, r.jsx)(c.w0Z, {
     children: (0, r.jsxs)("div", {
       className: i()(w.panel, E.panel),
@@ -559,7 +559,7 @@ function z() {
                   variant: "text-sm/medium",
                   color: "text-secondary",
                   children: ["Original Screen Type: ", el(e.pid)]
-                }), null === (t = K[e.pid]) || void 0 === t ? void 0 : t.reverse().map(t => {
+                }), null === (t = J[e.pid]) || void 0 === t ? void 0 : t.reverse().map(t => {
                   let {
                     screenType: n,
                     timestamp: a

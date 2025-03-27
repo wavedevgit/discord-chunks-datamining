@@ -1,4 +1,4 @@
 /** Chunk was on 93886 **/
 e.exports = {
-  panel: "panel__6dc2e"
+  previewPanel: "previewPanel__6dc2e"
 }

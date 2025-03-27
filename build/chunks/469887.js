@@ -16,7 +16,8 @@ function u(e) {
   let {
     children: t,
     canBeShown: u,
-    onCTA: m
+    onCTA: m,
+    targetElementRef: g
   } = e;
   return (0, r.jsx)(a.ZP, {
     bypassAutoDismiss: !0,
@@ -27,6 +28,7 @@ function u(e) {
         markAsDismissed: u
       } = e;
       return a === i.z.VOICE_FILTER_LAUNCH_COACHMARK ? (0, r.jsx)(s.yRy, {
+        targetElementRef: g,
         renderPopout: () => (0, r.jsxs)("div", {
           className: d.popup,
           children: [(0, r.jsxs)("div", {

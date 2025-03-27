@@ -165,7 +165,7 @@ function T(e) {
     handleSeekBackBtnClick: V,
     handleSeekForwardBtnClick: q,
     handleControlBarPendingInteraction: B
-  } = e, F = (0, p.Q3)("ListSectionItem"), U = (0, v.km)(e => e.volume), Z = (0, v.km)(e => e.setVolume), Y = (0, v.km)(e => e.muted), W = (0, v.km)(e => e.setMuted), Q = (0, v.km)(e => e.transcriptEnabled), z = (0, v.km)(e => e.captionEnabled), G = (0, v.km)(e => e.fullScreenEnabled), H = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), K = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [X, $] = o.useState(Y ? 0 : U), [J, ee] = o.useState(!1), [et, en] = o.useState(!1), [{
+  } = e, F = (0, p.Q3)("ListSectionItem"), U = (0, v.km)(e => e.volume), Z = (0, v.km)(e => e.setVolume), Y = (0, v.km)(e => e.muted), Q = (0, v.km)(e => e.setMuted), W = (0, v.km)(e => e.transcriptEnabled), z = (0, v.km)(e => e.captionEnabled), G = (0, v.km)(e => e.fullScreenEnabled), H = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), K = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [X, $] = o.useState(Y ? 0 : U), [J, ee] = o.useState(!1), [et, en] = o.useState(!1), [{
     volumeAnimSpring: er
   }, eo] = (0, d.q_F)(() => ({
     from: {
@@ -187,8 +187,8 @@ function T(e) {
       }
     })
   }, [el]), ec = o.useCallback(() => {
-    null != i.current && (0 === X ? (ea(U), W(!1), es(S.id, U)) : (Z(X), ea(0), W(!0), es(S.id, 0)))
-  }, [i, X, ea, U, W, es, S.id, Z]), eu = () => {
+    null != i.current && (0 === X ? (ea(U), Q(!1), es(S.id, U)) : (Z(X), ea(0), Q(!0), es(S.id, 0)))
+  }, [i, X, ea, U, Q, es, S.id, Z]), eu = () => {
     ee(!0)
   }, ed = () => {
     ee(!1)
@@ -317,7 +317,7 @@ function T(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              ea(e), Z(e), es(S.id, e), et && (en(!1), B(!1)), Y && e > 0 && W(!1)
+              ea(e), Z(e), es(S.id, e), et && (en(!1), B(!1)), Y && e > 0 && Q(!1)
             },
             asValueChanges: e => {
               ea(e), et || (en(!0), B(!0))
@@ -340,7 +340,7 @@ function T(e) {
         animationTime: T,
         visible: I,
         onClick: L,
-        active: Q && x !== O.rq.ENDED,
+        active: W && x !== O.rq.ENDED,
         disabled: x === O.rq.ENDED,
         ariaLabel: C.NW.string(C.t.KCzjTk),
         tooltipLabel: C.NW.string(C.t.KCzjTk)

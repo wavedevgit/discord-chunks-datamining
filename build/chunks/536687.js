@@ -74,7 +74,7 @@ function k(e) {
     videoSessionId: L,
     impressionRef: R,
     parentModalOpenStartClockTime: M
-  } = e, V = (0, E.il)(D), q = (0, a.e7)([d.Z], () => d.Z.getState().theme), B = (0, s.wj)(q) ? P.BRd.DARK : P.BRd.LIGHT, F = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, p.aM)(), [Z, Y] = o.useState(V.progressSeconds), [W, Q] = o.useState(!1), {
+  } = e, V = (0, E.il)(D), q = (0, a.e7)([d.Z], () => d.Z.getState().theme), B = (0, s.wj)(q) ? P.BRd.DARK : P.BRd.LIGHT, F = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, p.aM)(), [Z, Y] = o.useState(V.progressSeconds), [Q, W] = o.useState(!1), {
     completedRatio: z,
     completedRatioDisplay: G
   } = (0, f.I)(D), [H, K] = (0, y.G6)(T.NW.string(T.t.RDE0SU), T.NW.string(T.t["+5kSoa"]), 1700), X = (null === (t = D.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? T.NW.string(T.t.vTgCW1) : T.NW.string(T.t.cfY4PD), $ = o.useCallback(() => {
@@ -132,10 +132,10 @@ function k(e) {
               position: "left",
               text: ee,
               onTooltipShow: () => {
-                Q(!0)
+                W(!0)
               },
               onTooltipHide: () => {
-                Q(!1)
+                W(!1)
               },
               children: e => (0, r.jsx)(c.P3F, w(A({
                 className: I.progressCont
@@ -144,7 +144,7 @@ function k(e) {
                   quest: D,
                   size: 48,
                   percentComplete: z,
-                  percentCompleteText: W ? G : void 0,
+                  percentCompleteText: Q ? G : void 0,
                   percentCompleteTextVariant: "text-sm/medium",
                   children: (0, r.jsx)(j.Z, {
                     className: I.questProgressRewardTile,

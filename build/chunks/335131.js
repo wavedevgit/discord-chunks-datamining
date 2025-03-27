@@ -9,6 +9,7 @@ n.d(t, {
   R2: () => k,
   Sm: () => S,
   fK: () => L,
+  fi: () => U,
   jr: () => D,
   mK: () => T,
   oK: () => N,
@@ -98,7 +99,7 @@ let S = e => {
     })
   },
   C = (e, t) => !!e == !!t,
-  R = (e, t) => C(null == e ? void 0 : e.noCache, null == t ? void 0 : t.noCache) && C(null == e ? void 0 : e.includeUnpublished, null == t ? void 0 : t.includeUnpublished) && C(null == e ? void 0 : e.includeBundles, null == t ? void 0 : t.includeBundles) && C(null == e ? void 0 : e.includePopularPicks, null == t ? void 0 : t.includePopularPicks) && C(null == e ? void 0 : e.includeDynamicBlocks, null == t ? void 0 : t.includeDynamicBlocks) && (null == e ? void 0 : e.countryCode) === (null == t ? void 0 : t.countryCode) && (null == e ? void 0 : e.paymentGateway) === (null == t ? void 0 : t.paymentGateway),
+  R = (e, t) => C(null == e ? void 0 : e.noCache, null == t ? void 0 : t.noCache) && C(null == e ? void 0 : e.includeUnpublished, null == t ? void 0 : t.includeUnpublished) && C(null == e ? void 0 : e.includeBundles, null == t ? void 0 : t.includeBundles) && C(null == e ? void 0 : e.includePopularPicks, null == t ? void 0 : t.includePopularPicks) && C(null == e ? void 0 : e.includeDynamicBlocks, null == t ? void 0 : t.includeDynamicBlocks) && (null == e ? void 0 : e.countryCode) === (null == t ? void 0 : t.countryCode) && (null == e ? void 0 : e.paymentGateway) === (null == t ? void 0 : t.paymentGateway) && (null == e ? void 0 : e.shopHomeConfig) === (null == t ? void 0 : t.shopHomeConfig),
   P = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CATEGORIES_FETCH",
@@ -271,4 +272,9 @@ let S = e => {
         error: t
       })
     }
+  }, U = e => {
+    s.Z.dispatch({
+      type: "COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE",
+      shopHomeConfigOverride: e
+    })
   }

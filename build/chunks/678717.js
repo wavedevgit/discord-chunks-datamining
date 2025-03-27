@@ -49,8 +49,8 @@ var g = n(392750),
   V = n(351930),
   X = n(771751),
   Y = n(596768),
-  J = n(56706),
-  K = n(621060),
+  K = n(56706),
+  J = n(621060),
   q = n(388032),
   $ = n(320316),
   Q = n(710662);
@@ -204,7 +204,7 @@ function et() {
       }), e.push({
         id: "voice_filters",
         name: "Voice Filters",
-        render: () => (0, r.jsx)(J.Z, {})
+        render: () => (0, r.jsx)(K.Z, {})
       }), e.push({
         id: "skill_trees",
         name: "Skill Trees",
@@ -215,7 +215,7 @@ function et() {
       TabBar: n,
       renderSelectedTab: l,
       selectedTabId: i
-    } = (0, K.Z)({
+    } = (0, J.Z)({
       tabs: t,
       initialSelectedTabId: null !== (e = f.Z.lastOpenTabId) && void 0 !== e ? e : void 0,
       onChangeTab: e => {

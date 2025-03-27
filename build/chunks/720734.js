@@ -984,6 +984,7 @@ function e9(e) {
           let l = s ? f.u04 : f.CJ0;
           return (0, r.jsx)("div", {
             children: (0, r.jsx)(ej.B, {
+              targetElementRef: S,
               onCTA: () => z(!0),
               canBeShown: !s,
               children: (e, t) => (0, r.jsx)(eG.Z, eJ({
