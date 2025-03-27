@@ -101,6 +101,7 @@ let U = 16 / 9,
       })),
       position: "right",
       spacing: 8,
+      clickTrap: !0,
       children: e => (0, r.jsx)(c.P3F, W(D({
         onContextMenu: e => d(n, e)
       }, e), {

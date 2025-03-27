@@ -70,6 +70,7 @@ let h = e => {
           newAnalyticsLocations: [l.Z.AVATAR]
         })),
         position: "left",
+        clickTrap: !0,
         children: e => (0, r.jsx)(a.qEK, f(m({}, e), {
           src: t.getAvatarURL(i, 24),
           "aria-label": t.username,

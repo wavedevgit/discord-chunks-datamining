@@ -1,6 +1,6 @@
 /**
   Module ID: 23682
-  Original File Name: 30b039bd836616a8
+  Original File Name: 6ad2035661071b63
 **/
 .imageUploader_e4d0bf {
     text-align: center;
@@ -1451,7 +1451,8 @@
 .footer__28554 {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 16px
+    gap: 16px;
+    border-top: 1px solid var(--border-subtle)
 }
 
 .guildRow__28554 {
@@ -1977,4 +1978,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=30b039bd836616a8.css.map*/
+/*# sourceMappingURL=6ad2035661071b63.css.map*/

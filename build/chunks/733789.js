@@ -112,6 +112,7 @@ class N extends i.PureComponent {
         newAnalyticsLocations: [s.Z.USERNAME]
       })),
       position: "right",
+      clickTrap: !0,
       children: t => (0, r.jsx)("span", E(_({
         ref: this.ref,
         className: m.username
@@ -168,6 +169,7 @@ class N extends i.PureComponent {
           newAnalyticsLocations: [s.Z.AVATAR]
         })),
         position: "right",
+        clickTrap: !0,
         children: t => (0, r.jsx)(a.ua7, {
           text: this.renderUserTooltip(e, l.startTime, l.endTime),
           "aria-label": (0, h.W5)(e, {

@@ -91,6 +91,7 @@ function v(e) {
     })),
     position: "right",
     spacing: 8,
+    clickTrap: !0,
     children: e => (0, r.jsx)(a.ua7, {
       text: l.userNick,
       position: "bottom",

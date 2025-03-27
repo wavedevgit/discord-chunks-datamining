@@ -328,6 +328,7 @@ function U(e) {
           newAnalyticsLocations: [d.Z.AVATAR]
         })),
         position: "right",
+        clickTrap: !0,
         children: n => (0, r.jsx)(c.qEK, M(k({}, n), {
           src: e.getAvatarURL(t.id, 24),
           "aria-label": e.username,

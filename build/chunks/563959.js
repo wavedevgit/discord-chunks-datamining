@@ -70,6 +70,7 @@ function g(e, t) {
         channelId: e.id,
         messageId: t.id
       })),
+      clickTrap: !0,
       children: e => (0, r.jsx)(o.eee, h(f({}, e), {
         children: i
       }))

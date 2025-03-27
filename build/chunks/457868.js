@@ -136,6 +136,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
       position: d.tq ? "window_center" : "left",
       spacing: 16,
       onShiftClick: V,
+      clickTrap: !0,
       children: (e, n) => {
         let {
           isShown: i

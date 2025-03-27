@@ -85,6 +85,7 @@ function b(e) {
           messageId: v,
           roleId: null == e ? void 0 : e.colorRoleId
         })),
+        clickTrap: !0,
         children: e => {
           var {
             onClick: t

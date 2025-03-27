@@ -145,6 +145,7 @@ function w(e) {
         channelId: o
       }, e))),
       position: s.tq ? "top" : "right",
+      clickTrap: !0,
       children: e => F(e)
     })
   })

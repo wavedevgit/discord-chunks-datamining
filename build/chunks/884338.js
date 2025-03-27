@@ -180,6 +180,7 @@ class A extends(r = o.PureComponent) {
       onRequestClose: () => this.setState({
         popoutUserId: null
       }),
+      clickTrap: !0,
       children: n => (0, i.jsxs)("div", y(b({
         className: s()(e, g.container, T(t)),
         ref: this._ref

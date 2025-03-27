@@ -1,6 +1,6 @@
 /**
   Module ID: 26530
-  Original File Name: 58f6f5126e3e70ec
+  Original File Name: 2f4192f86fddbca2
 **/
 .modal__28554 {
     max-height: 640px;
@@ -99,7 +99,8 @@
 .footer__28554 {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 16px
+    gap: 16px;
+    border-top: 1px solid var(--border-subtle)
 }
 
 .guildRow__28554 {
@@ -494,4 +495,4 @@
     background: var(--border-subtle)
 }
 
-/*# sourceMappingURL=58f6f5126e3e70ec.css.map*/
+/*# sourceMappingURL=2f4192f86fddbca2.css.map*/

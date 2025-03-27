@@ -105,6 +105,7 @@ function M(e) {
         rawText: n
       }), c.Z.startTyping(i.id)
     },
+    clickTrap: !0,
     children: e => (0, r.jsx)(I.Z, T({
       user: t,
       currentUser: f,

@@ -95,6 +95,7 @@ function j(e) {
         roleId: null == j ? void 0 : j.colorRoleId
       }, e)),
       position: "right",
+      clickTrap: !0,
       children: e => (0, r.jsx)(a.P3F, x(y({}, e), {
         tag: "span",
         className: v.threadCreatorName,

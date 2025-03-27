@@ -1,6 +1,6 @@
 /**
   Module ID: 66047
-  Original File Name: c4e32ccd8f0490a4
+  Original File Name: 427ee97f7abd28d4
 **/
 .container__1ce5d {
     position: relative
@@ -111,7 +111,8 @@
 .footer__28554 {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 16px
+    gap: 16px;
+    border-top: 1px solid var(--border-subtle)
 }
 
 .guildRow__28554 {
@@ -530,4 +531,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=c4e32ccd8f0490a4.css.map*/
+/*# sourceMappingURL=427ee97f7abd28d4.css.map*/

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var l = n(200651),
   i = n(192379),
-  s = n(780384),
-  r = n(481060),
+  r = n(780384),
+  s = n(481060),
   a = n(630810),
   o = n(43267),
   d = n(933557),
@@ -38,26 +38,26 @@ class S extends i.Component {
     let e, t, n;
     let {
       user: i,
-      channel: s
+      channel: r
     } = this.props;
-    if (null != i) t = i.getAvatarURL(null == s ? void 0 : s.guild_id, 32), n = p.ZP.getName(i);
-    else if (null != s && (t = (0, o.x)(s), n = (0, d.F6)(s, m.default, g.Z), null == t && null != s.guild_id)) {
-      let n = c.Z.getGuild(s.guild_id);
+    if (null != i) t = i.getAvatarURL(null == r ? void 0 : r.guild_id, 32), n = p.ZP.getName(i);
+    else if (null != r && (t = (0, o.x)(r), n = (0, d.F6)(r, m.default, g.Z), null == t && null != r.guild_id)) {
+      let n = c.Z.getGuild(r.guild_id);
       null != n && (null != n.icon ? t = v.ZP.getGuildIconURL({
-        id: s.guild_id,
+        id: r.guild_id,
         icon: n.icon,
         size: 32
       }) : e = (0, x.Zg)(n.name))
     }
-    return null == t || null == n ? null != e ? (0, l.jsx)(r.Text, {
+    return null == t || null == n ? null != e ? (0, l.jsx)(s.Text, {
       variant: "text-md/medium",
       className: I.acronym,
       "aria-hidden": !0,
       children: e
-    }) : null : (0, l.jsx)(r.qEK, {
+    }) : null : (0, l.jsx)(s.qEK, {
       src: t,
       "aria-label": n,
-      size: r.EFr.SIZE_32,
+      size: s.EFr.SIZE_32,
       className: I.inviteRowAvatar
     })
   }
@@ -71,17 +71,17 @@ class S extends i.Component {
       invited: a,
       hovered: o
     } = this.state;
-    return e = a ? (0, l.jsx)(r.zxk, {
-      look: r.zxk.Looks.LINK,
-      size: r.zxk.Sizes.SMALL,
+    return e = a ? (0, l.jsx)(s.zxk, {
+      look: s.zxk.Looks.LINK,
+      size: s.zxk.Sizes.SMALL,
       disabled: !0,
-      color: (0, s.wj)(u.Z.theme) ? r.zxk.Colors.WHITE : r.zxk.Colors.BRAND,
+      color: (0, r.wj)(u.Z.theme) ? s.zxk.Colors.WHITE : s.zxk.Colors.BRAND,
       children: N.NW.string(N.t["dVT14+"])
-    }) : (0, l.jsx)(r.zxk, {
-      color: r.zxk.Colors.GREEN,
-      look: o ? r.zxk.Looks.FILLED : r.zxk.Looks.OUTLINED,
+    }) : (0, l.jsx)(s.zxk, {
+      color: s.zxk.Colors.GREEN,
+      look: o ? s.zxk.Looks.FILLED : s.zxk.Looks.OUTLINED,
       className: I.inviteRowButton,
-      size: r.zxk.Sizes.SMALL,
+      size: s.zxk.Sizes.SMALL,
       submitting: i,
       onClick: this.handleClickInvite,
       children: N.NW.string(N.t.jYnGPD)

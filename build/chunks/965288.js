@@ -188,6 +188,7 @@ let Z = i.memo(function(e) {
       renderPopout: R,
       position: "right",
       spacing: 8,
+      clickTrap: !0,
       children: e => (0, r.jsx)(p.P3F, S(P({
         className: o()(I.tileContainer, {
           [I.singleIcon]: A || d,

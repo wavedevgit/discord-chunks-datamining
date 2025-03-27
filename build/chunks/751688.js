@@ -100,6 +100,7 @@ function g(e) {
     onRequestOpen: y,
     onRequestClose: O,
     ignoreModalClicks: E,
+    clickTrap: !0,
     children: e => {
       var {
         onClick: i

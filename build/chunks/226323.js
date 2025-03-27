@@ -167,6 +167,7 @@ function P(e) {
       guildId: D,
       channelId: _.id
     }, e)),
+    clickTrap: !0,
     children: e => (0, r.jsx)(s.ua7, {
       text: V,
       children: t => (0, r.jsx)(s.P3F, C(I({}, t, e), {

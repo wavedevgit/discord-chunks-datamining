@@ -63,7 +63,7 @@ class b extends i.Z {
   }
   getAvatarURL(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-      r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : s.$k,
       i = null != e ? this.guildMemberAvatars[e] : void 0;
     return null != i && null != e ? s.ZP.getGuildMemberAvatarURLSimple({
       guildId: e,

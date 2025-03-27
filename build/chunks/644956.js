@@ -108,6 +108,7 @@ function k(e) {
       roleId: a.id
     })),
     spacing: 14,
+    clickTrap: !0,
     children: (e, o) => {
       let {
         isShown: l

@@ -143,6 +143,7 @@ let A = i.memo(function(e) {
         })),
         position: "left",
         spacing: 16,
+        clickTrap: !0,
         children: e => {
           var t;
           return (0, r.jsxs)(u.P3F, T(Z({

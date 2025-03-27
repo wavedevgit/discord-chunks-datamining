@@ -132,6 +132,7 @@ class S extends i.PureComponent {
         }))),
         position: "top",
         align: "center",
+        clickTrap: !0,
         children: l => (0, r.jsx)(c.ua7, {
           text: n,
           children: n => {
