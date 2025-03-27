@@ -26,7 +26,7 @@ let _ = {
           src: d,
           className: n,
           alt: t,
-          height: 148
+          height: 120
         })
       }
     },
