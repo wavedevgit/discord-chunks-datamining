@@ -30,13 +30,13 @@ function E() {
     canSetInputDevice: j,
     canSetOutputDevice: C,
     inputDeviceId: O,
-    outputDeviceId: v
+    outputDeviceId: S
   } = (0, a.cj)([p.Z], () => ({
     canSetInputDevice: p.Z.supports(x.AN.AUDIO_INPUT_DEVICE),
     canSetOutputDevice: p.Z.supports(x.AN.AUDIO_OUTPUT_DEVICE),
     inputDeviceId: p.Z.getInputDeviceId(),
     outputDeviceId: p.Z.getOutputDeviceId()
-  })), S = (0, u.Z)(), T = (0, m.Z)();
+  })), v = (0, u.Z)(), T = (0, m.Z)();
   j || (e = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
@@ -50,7 +50,7 @@ function E() {
       onDownloadClick: () => (0, f.y)("Help Text Output Devices")
     })
   }));
-  let I = s()(S).values().first(),
+  let I = s()(v).values().first(),
     y = null != I ? I.disabled : null != e,
     A = s()(T).values().first(),
     P = null != A ? A.disabled : null != t;
@@ -92,7 +92,7 @@ function E() {
             location: "Settings",
             analyticsLocations: i
           }),
-          options: s().map(S, e => {
+          options: s().map(v, e => {
             let {
               id: t,
               name: n
@@ -112,7 +112,7 @@ function E() {
       children: (0, r.jsxs)(o.xJW, {
         title: N.NW.string(N.t.dl18zc),
         children: [(0, r.jsx)(o.q4e, {
-          value: v,
+          value: S,
           onChange: e => c.Z.setOutputDevice(e, {
             location: "Settings",
             analyticsLocations: i

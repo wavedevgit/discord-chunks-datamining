@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,10 +56,10 @@ function v(e, t) {
   }), e
 }
 
-function S(e) {
+function v(e) {
   let {
     guildId: t
-  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), x = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), S = (0, s.Ie)(null != t ? t : N.lds), T = i.useCallback(e => {
+  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), x = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), v = (0, s.Ie)(null != t ? t : N.lds), T = i.useCallback(e => {
     let n = (0, f._o)();
     e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), p.default.track(N.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: b.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
@@ -80,11 +80,11 @@ function S(e) {
         className: C.guildInfo,
         children: [(0, r.jsx)(o.aRk, {
           className: C.guildIcon,
-          children: (0, r.jsx)(o.LYs, v(O({
+          children: (0, r.jsx)(o.LYs, S(O({
             ariaLabel: l.toString(),
             name: l.toString(),
             icon: l.getIconURL(2 * x, !1, n)
-          }, S), {
+          }, v), {
             role: "treeitem"
           }))
         }), (0, r.jsx)(o.Text, {
@@ -158,7 +158,7 @@ function T() {
         }), (0, r.jsx)(o.zJl, {
           fade: !0,
           className: C.scroller,
-          children: c.map(e => (0, r.jsx)(S, {
+          children: c.map(e => (0, r.jsx)(v, {
             guildId: e
           }, e))
         }), (0, r.jsx)("div", {
@@ -216,7 +216,7 @@ function A(e) {
       let {
         default: e
       } = await n.e("83909").then(n.bind(n, 932374));
-      return n => (0, r.jsx)(e, v(O({}, n), {
+      return n => (0, r.jsx)(e, S(O({}, n), {
         onScrollToGuildsSection: t
       }))
     })

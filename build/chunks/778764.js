@@ -1,6 +1,6 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 }), n(47120), n(26686), n(266796), n(773603);
 var r = n(200651),
   i = n(192379),
@@ -59,17 +59,17 @@ function C(e) {
     onClose: a,
     ticket: o,
     challenge: u
-  } = e, f = (0, c.Dt)(), [E, j] = i.useState(""), [C, O] = i.useState(!0), [v, S] = i.useState(x.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
+  } = e, f = (0, c.Dt)(), [E, j] = i.useState(""), [C, O] = i.useState(!0), [S, v] = i.useState(x.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
     let e;
-    S(x.x.REGISTER);
+    v(x.x.REGISTER);
     let t = m.isPlatformEmbedded && p.ZP.supportsFeature(N.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      g.Z.captureException(e), A(b.NW.string(b.t.xSCvBQ)), S(x.x.INIT);
+      g.Z.captureException(e), A(b.NW.string(b.t.xSCvBQ)), v(x.x.INIT);
       return
     }
-    I(e), S(x.x.NAME)
+    I(e), v(x.x.NAME)
   };
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
@@ -80,13 +80,13 @@ function C(e) {
       children: [(0, r.jsxs)(l.X6q, {
         id: f,
         variant: "heading-lg/semibold",
-        children: [v === x.x.INIT && b.NW.string(b.t.vrOCCg), v === x.x.REGISTER && b.NW.string(b.t.wePEBA), v === x.x.NAME && b.NW.string(b.t["cY/IOj"])]
+        children: [S === x.x.INIT && b.NW.string(b.t.vrOCCg), S === x.x.REGISTER && b.NW.string(b.t.wePEBA), S === x.x.NAME && b.NW.string(b.t["cY/IOj"])]
       }), (0, r.jsx)(l.olH, {
         onClick: a,
         className: _.modalCloseButton
       })]
     }), (0, r.jsxs)(l.MyZ, {
-      activeSlide: v,
+      activeSlide: S,
       width: 440,
       children: [(0, r.jsxs)(l.Mi4, {
         id: x.x.INIT,
@@ -144,7 +144,7 @@ function C(e) {
             e.preventDefault(), (0, h.Sr)(E, o, T).then(async () => {
               await (0, d.Yn)(!1)
             }).then(() => a()).catch(() => {
-              A(b.NW.string(b.t.fEptJC)), S(x.x.INIT)
+              A(b.NW.string(b.t.fEptJC)), v(x.x.INIT)
             })
           },
           children: [(0, r.jsxs)(l.hzk, {
@@ -179,7 +179,7 @@ function C(e) {
               look: l.zxk.Looks.LINK,
               color: l.zxk.Colors.PRIMARY,
               onClick: () => {
-                S(x.x.INIT)
+                v(x.x.INIT)
               },
               children: b.NW.string(b.t["13/7kZ"])
             })]
@@ -224,7 +224,7 @@ function O(e) {
   })
 }
 
-function v() {
+function S() {
   let {
     credentials: e,
     hasFetchedCredentials: t

@@ -1,8 +1,8 @@
 /** Chunk was on 75607 **/
 n.d(t, {
   GF: () => O,
-  ZP: () => S,
-  yo: () => v
+  ZP: () => v,
+  yo: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -142,7 +142,7 @@ function O() {
   })
 }
 
-function v() {
+function S() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getIgnoredIDs());
   return (0, r.jsx)(C, {
     setting: x.s6.IGNORED_USERS,
@@ -151,7 +151,7 @@ function v() {
   })
 }
 
-function S() {
+function v() {
   return (0, r.jsxs)(h.U, {
     setting: x.s6.RESTRICTED_USERS,
     scrollPosition: f.FY.RESTRICTED_ACCOUNTS,
@@ -161,6 +161,6 @@ function S() {
       description: b.NW.format(b.t["0aNQo6"], {
         helpArticle: p.Z.getArticleURL(N.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, r.jsx)(O, {}), (0, r.jsx)(v, {})]
+    }), (0, r.jsx)(O, {}), (0, r.jsx)(S, {})]
   })
 }

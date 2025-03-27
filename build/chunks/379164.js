@@ -1,6 +1,6 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 n.d(t, {
-  Z: () => _
+  Z: () => m
 }), n(47120);
 var r = n(570140),
   i = n(447543),
@@ -14,13 +14,13 @@ var r = n(570140),
   p = n(621600),
   f = n(88658),
   h = n(981631);
-let _ = {
+let m = {
   acceptInvite(e) {
     let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
       n = (0, s.y)(),
       u = (0, s.h6)(),
       h = (0, s.U1)(),
-      _ = (0, s.yS)();
+      m = (0, s.yS)();
     i.ZP.acceptInvite({
       inviteKey: e.code,
       context: t,
@@ -55,7 +55,7 @@ let _ = {
         }), (0, a.m4)({
           location: "acceptInvite"
         }) && o.Z.updateGuildNotificationSettings(e.guild.id, {
-          muted: _
+          muted: m
         }, p.ZB.Muted)
       }
       this.close()

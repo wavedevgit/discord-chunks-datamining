@@ -31,19 +31,19 @@ function x(e) {
   } = (0, o.ZP)(), j = null != n, {
     userAvatarDecoration: C,
     guildAvatarDecoration: O,
-    pendingAvatarDecoration: v,
-    pendingErrors: S
+    pendingAvatarDecoration: S,
+    pendingErrors: v
   } = (0, g.$U)(t, n), T = (0, u.Z)("enable_avatar_decoration_uploads"), I = i.useCallback(() => (0, d.ps)({
     analyticsLocations: E,
     isTryItOutFlow: _,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = b ? l.gtL : l.zxk;
+  }), [E, _, n]), y = _ || void 0 !== S ? null != S : (j ? O : C) != null, A = b ? l.gtL : l.zxk;
   return (0, r.jsxs)(p.Z, {
     className: s,
     forcedDivider: x,
     hasBackground: !0,
     title: m,
-    errors: S,
+    errors: v,
     children: [(0, r.jsxs)("div", {
       className: f.buttonsContainer,
       children: [(0, r.jsx)(A, {

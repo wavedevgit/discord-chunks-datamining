@@ -4,7 +4,7 @@ n.d(t, {
   Mx: () => A,
   PZ: () => I,
   h4: () => P,
-  ic: () => S,
+  ic: () => v,
   n5: () => y,
   rU: () => R,
   s8: () => D
@@ -38,7 +38,7 @@ function O(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class v extends s.PureComponent {
+class S extends s.PureComponent {
   componentDidMount() {
     let {
       focused: e,
@@ -107,7 +107,7 @@ class v extends s.PureComponent {
     })
   }
 }
-class S extends s.Component {
+class v extends s.Component {
   renderIcon() {
     let {
       guild: e
@@ -165,7 +165,7 @@ class S extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -275,7 +275,7 @@ class T extends(r = s.Component) {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -357,7 +357,7 @@ class I extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -449,7 +449,7 @@ class y extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -492,7 +492,7 @@ class A extends s.Component {
       focused: r,
       id: s
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: s,
       onMouseEnter: e,
       onClick: t,
@@ -553,7 +553,7 @@ class R extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: l,
       onMouseEnter: e,
       onClick: t,
@@ -640,7 +640,7 @@ class D extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: l,
       onMouseEnter: e,
       onClick: t,

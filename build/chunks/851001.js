@@ -27,14 +27,14 @@ let C = i.forwardRef((e, t) => {
   let {
     className: C,
     isFooterVisible: O,
-    isDarkMode: v,
-    isReducedMotion: S
+    isDarkMode: S,
+    isReducedMotion: v
   } = e, {
     analyticsLocations: T
   } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
   return i.useEffect(() => {
-    !O || S || Z || null == D.current || D.current.play()
-  }, [O, S, Z]), (0, r.jsx)(c.Gt, {
+    !O || v || Z || null == D.current || D.current.play()
+  }, [O, v, Z]), (0, r.jsx)(c.Gt, {
     value: T,
     children: (0, r.jsxs)("div", {
       ref: t,
@@ -49,7 +49,7 @@ let C = i.forwardRef((e, t) => {
         inOfferExperience: P,
         containerClassName: b.footerCTAContainer,
         isMarketingPageV2Enabled: !0,
-        isDarkMode: v
+        isDarkMode: S
       }), (0, r.jsx)("div", {
         className: b.footerArtContainer,
         children: (0, r.jsx)(d.Z, {

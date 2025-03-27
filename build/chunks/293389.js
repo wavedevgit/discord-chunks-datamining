@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(981631),
   C = n(388032),
   O = n(362952),
-  v = n(423308),
-  S = n(612064),
+  S = n(423308),
+  v = n(612064),
   T = n(951565),
   I = n(802138);
 
@@ -74,7 +74,7 @@ function D(e) {
     label: null != e.name ? e.name : ""
   }));
   return (0, r.jsxs)(c.VqE, {
-    className: a()(O.addGamePopout, v.elevationBorderHigh),
+    className: a()(O.addGamePopout, S.elevationBorderHigh),
     "aria-label": C.NW.string(C.t.GTCx0t),
     children: [(0, r.jsx)(c.VcW, {
       placeholder: C.NW.string(C.t.XqMe3N),
@@ -92,7 +92,7 @@ function D(e) {
     }), (0, r.jsx)(c.$i$, {
       className: a()(I.marginTop8, I.marginBottom8)
     }), (0, r.jsxs)("div", {
-      className: a()(O.actions, S.horizontal),
+      className: a()(O.actions, v.horizontal),
       children: [(0, r.jsx)(c.zxk, {
         className: O.cancelButton,
         look: c.iLD.LINK,
@@ -116,7 +116,7 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: p
-  } = e, b = (0, l.cj)([g.ZP, f.Z, x.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, x.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = b.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
+  } = e, b = (0, l.cj)([g.ZP, f.Z, x.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, x.Z])), [_, E] = i.useState(!1), [S, I] = i.useState(null !== (t = b.name) && void 0 !== t ? t : "???"), P = a()(v.flexCenter, {
     [O.game]: !s,
     [O.activeGame]: s,
     [T.card]: !s,
@@ -140,7 +140,7 @@ function Z(e) {
   return (0, r.jsxs)("div", {
     className: P,
     children: [(0, r.jsxs)("div", {
-      className: a()(O.gameNameLastPlayed, S.vertical),
+      className: a()(O.gameNameLastPlayed, v.vertical),
       children: [b.verified && !p ? (0, r.jsxs)("div", {
         className: O.detectedApplication,
         children: [(0, r.jsx)("div", {
@@ -165,9 +165,9 @@ function Z(e) {
         className: a()(O.gameName, O.gameNameInput),
         type: "text",
         maxLength: 128,
-        value: v,
+        value: S,
         onBlur: function() {
-          b.name !== v && d.Z.editName(b, v)
+          b.name !== S && d.Z.editName(b, S)
         },
         onKeyDown: function(e) {
           13 === e.keyCode && (e.currentTarget.blur(), e.preventDefault())
@@ -190,7 +190,7 @@ function Z(e) {
         })
       }()]
     }), p ? null : _ ? null : (0, r.jsx)("div", {
-      className: a()(S.flexCenter, S.noWrap, S.justifyBetween, O.toggleContainer),
+      className: a()(v.flexCenter, v.noWrap, v.justifyBetween, O.toggleContainer),
       children: (0, r.jsx)(c.ua7, {
         text: C.NW.string(C.t["y0B+lp"]),
         children: e => {
@@ -228,7 +228,7 @@ function Z(e) {
         colorClass: O.fill
       });
       return (0, r.jsx)("div", {
-        className: a()(S.flexCenter, S.noWrap, S.justifyBetween, O.toggleContainer),
+        className: a()(v.flexCenter, v.noWrap, v.justifyBetween, O.toggleContainer),
         children: (0, r.jsx)(c.ua7, {
           text: C.NW.string(C.t.QmitzM),
           children: e => {
@@ -269,7 +269,7 @@ function Z(e) {
         }, e))
       }) : null;
       return (0, r.jsxs)("div", {
-        className: a()(S.flexCenter, S.noWrap, S.justifyBetween, O.toggleContainer),
+        className: a()(v.flexCenter, v.noWrap, v.justifyBetween, O.toggleContainer),
         children: [i, (0, r.jsx)(c.ua7, {
           text: C.NW.string(C.t["1+O+Tk"]),
           children: t => {
@@ -302,9 +302,9 @@ function Z(e) {
 
 function w() {
   return (0, r.jsx)("div", {
-    className: a()(S.flexCenter, O.notDetected, O.activeGame),
+    className: a()(v.flexCenter, O.notDetected, O.activeGame),
     children: (0, r.jsxs)("div", {
-      className: a()(O.gameNameLastPlayed, S.vertical),
+      className: a()(O.gameNameLastPlayed, v.vertical),
       children: [(0, r.jsx)("div", {
         className: O.gameName,
         children: C.NW.string(C.t["H68X9/"])

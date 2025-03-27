@@ -25,8 +25,8 @@ var r, i = n(230711),
   j = n(158897),
   C = n(290650),
   O = n(751125),
-  v = n(904505),
-  S = n(712626),
+  S = n(904505),
+  v = n(712626),
   T = n(386014),
   I = n(845571),
   y = n(220046),
@@ -83,8 +83,8 @@ let w = () => {
         description: m.NW.format(m.t.jRPQUF, {
           learnMoreLink: p
         }),
-        previewImage: S.Z,
-        videoUrl: g ? v.ZP : T.ZP
+        previewImage: v.Z,
+        videoUrl: g ? S.ZP : T.ZP
       },
       newAppStyles: {
         name: "newAppStyles",

@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(356659),
   C = n(981631),
   O = n(37113),
-  v = n(526761),
-  S = n(388032),
+  S = n(526761),
+  v = n(388032),
   T = n(513279),
   I = n(107248),
   y = n(802138);
@@ -54,57 +54,57 @@ function A() {
   let W = (0, l.e7)([m.default], () => m.default.locale),
     L = i.useMemo(() => [{
       value: j.OT.SECONDS_30,
-      label: S.NW.formatToPlainString(S.t["bTFv//"], {
+      label: v.NW.formatToPlainString(v.t["bTFv//"], {
         count: 30
       })
     }, {
       value: j.OT.MINUTES_1,
-      label: S.NW.formatToPlainString(S.t.ICo9Nj, {
+      label: v.NW.formatToPlainString(v.t.ICo9Nj, {
         count: 1
       })
     }, {
       value: j.OT.MINUTES_2,
-      label: S.NW.formatToPlainString(S.t.ICo9Nj, {
+      label: v.NW.formatToPlainString(v.t.ICo9Nj, {
         count: 2
       })
     }], [W]),
     B = i.useMemo(() => [{
       value: O.LY.RESOLUTION_480,
-      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+      label: v.NW.formatToPlainString(v.t.TEOC0N, {
         resolution: O.LY.RESOLUTION_480
       })
     }, {
       value: O.LY.RESOLUTION_720,
-      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+      label: v.NW.formatToPlainString(v.t.TEOC0N, {
         resolution: O.LY.RESOLUTION_720
       })
     }, {
       value: O.LY.RESOLUTION_1080,
-      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+      label: v.NW.formatToPlainString(v.t.TEOC0N, {
         resolution: O.LY.RESOLUTION_1080
       })
     }, {
       value: O.LY.RESOLUTION_1440,
-      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+      label: v.NW.formatToPlainString(v.t.TEOC0N, {
         resolution: O.LY.RESOLUTION_1440
       })
     }, {
       value: O.LY.RESOLUTION_SOURCE,
-      label: S.NW.string(S.t.XjXqzs)
+      label: v.NW.string(v.t.XjXqzs)
     }], [W]),
     M = i.useMemo(() => [{
       value: O.ws.FPS_15,
-      label: S.NW.formatToPlainString(S.t.Qb44XF, {
+      label: v.NW.formatToPlainString(v.t.Qb44XF, {
         fps: O.ws.FPS_15
       })
     }, {
       value: O.ws.FPS_30,
-      label: S.NW.formatToPlainString(S.t.Qb44XF, {
+      label: v.NW.formatToPlainString(v.t.Qb44XF, {
         fps: O.ws.FPS_30
       })
     }, {
       value: O.ws.FPS_60,
-      label: S.NW.formatToPlainString(S.t.Qb44XF, {
+      label: v.NW.formatToPlainString(v.t.Qb44XF, {
         fps: O.ws.FPS_60
       })
     }], [W]),
@@ -146,29 +146,29 @@ function A() {
       children: [!e && (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
-        children: S.NW.format(S.t.kiaF4e, {
+        children: v.NW.format(v.t.kiaF4e, {
           onClick: () => d.Z.open(C.oAB.VOICE, null, {
-            scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
+            scrollPosition: S.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
       }), R === N.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
-        children: S.NW.string(S.t.SIxrIC)
+        children: v.NW.string(v.t.SIxrIC)
       }) : null, (0, r.jsx)(o.j7V, {
         hideBorder: !0,
         disabled: !e,
         className: I.formItem,
         value: t,
-        note: S.NW.string(S.t["4Qw3ND"]),
+        note: v.NW.string(v.t["4Qw3ND"]),
         onChange: e => _.em({
           clipsEnabled: e,
           trackAnalytics: !0
         }),
-        children: S.NW.string(S.t.h8rgrK)
+        children: v.NW.string(v.t.h8rgrK)
       }), e && (0, r.jsx)(g.Z, {
         className: I.formItem,
-        children: S.NW.string(S.t["Z+Mfqa"])
+        children: v.NW.string(v.t["Z+Mfqa"])
       })]
     }), Z && w && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
@@ -179,12 +179,12 @@ function A() {
           disabled: !e,
           className: I.formItem,
           value: s,
-          note: S.NW.string(S.t.YP3ujo),
+          note: v.NW.string(v.t.YP3ujo),
           onChange: e => _._Q({
             enabled: e,
             trackAnalytics: !0
           }),
-          children: S.NW.string(S.t.yXvykp)
+          children: v.NW.string(v.t.yXvykp)
         })
       })]
     }), k && (0, r.jsxs)(r.Fragment, {
@@ -194,9 +194,9 @@ function A() {
           hideBorder: !0,
           className: I.formItem,
           value: n,
-          note: S.NW.string(S.t.m4Cjj4),
+          note: v.NW.string(v.t.m4Cjj4),
           onChange: e => _.N0(e),
-          children: S.NW.string(S.t["3zwNf3"])
+          children: v.NW.string(v.t["3zwNf3"])
         })
       })]
     }), (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
@@ -204,8 +204,8 @@ function A() {
       children: [(0, r.jsx)(E.Q, {
         className: I.formItem,
         select: _.eU,
-        title: S.NW.string(S.t.OgfUio),
-        note: S.NW.string(S.t.H7j4tb),
+        title: v.NW.string(v.t.OgfUio),
+        note: v.NW.string(v.t.H7j4tb),
         value: A,
         options: L
       }), (0, r.jsx)(E.Q, {
@@ -214,8 +214,8 @@ function A() {
           resolution: e,
           frameRate: P.frameRate
         }),
-        title: S.NW.string(S.t.aFudZG),
-        note: S.NW.string(S.t.nIrkW1),
+        title: v.NW.string(v.t.aFudZG),
+        note: v.NW.string(v.t.nIrkW1),
         value: P.resolution,
         options: B
       }), (0, r.jsx)(E.Q, {
@@ -224,14 +224,14 @@ function A() {
           resolution: P.resolution,
           frameRate: e
         }),
-        title: S.NW.string(S.t["2wScLy"]),
-        note: S.NW.string(S.t["Rf9+f3"]),
+        title: v.NW.string(v.t["2wScLy"]),
+        note: v.NW.string(v.t["Rf9+f3"]),
         value: P.frameRate,
         options: M
       }), (0, r.jsx)(E.O, {
         className: I.formItem,
-        title: S.NW.string(S.t.pf54ER),
-        note: S.NW.string(S.t["QyB/jI"]),
+        title: v.NW.string(v.t.pf54ER),
+        note: v.NW.string(v.t["QyB/jI"]),
         children: (0, r.jsx)("div", {
           className: T.keyRecorder,
           children: (0, r.jsx)(u.Z, {

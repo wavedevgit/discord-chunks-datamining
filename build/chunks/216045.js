@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(53691),
   C = n(267717),
   O = n(296810),
-  v = n(921813),
-  S = n(610794),
+  S = n(921813),
+  v = n(610794),
   T = n(935147),
   I = n(643879),
   y = n(373230),
@@ -116,7 +116,7 @@ function G() {
   return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
     value: J,
     children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)(O.Z, {
-      profilePreview: (0, r.jsx)(v.Z, (e = function(e) {
+      profilePreview: (0, r.jsx)(S.Z, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -152,7 +152,7 @@ function G() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)),
       children: (0, r.jsx)(L.Z, {})
-    }), et && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.$, {
+    }), et && (0, r.jsx)(v.Z, {}), (0, r.jsx)(c.$, {
       innerRef: er,
       onChange: e => ee(e),
       threshold: .25,

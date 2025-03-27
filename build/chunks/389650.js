@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(131951),
   C = n(556296),
   O = n(808506),
-  v = n(63063),
-  S = n(358085),
+  S = n(63063),
+  v = n(358085),
   T = n(13140),
   I = n(210887),
   y = n(659947),
@@ -100,7 +100,7 @@ class V extends i.PureComponent {
         color: d.Z.unsafe_rawColors.RED_400.css
       },
       children: R.NW.format(R.t.MOIaNT, {
-        keyboardNavArticle: v.Z.getArticleURL(A.BhN.KEYBOARD_NAVIGATION)
+        keyboardNavArticle: S.Z.getArticleURL(A.BhN.KEYBOARD_NAVIGATION)
       })
     }) : (0, r.jsx)(u.R94, {
       className: D.keybindMessage,
@@ -242,10 +242,10 @@ class G extends i.PureComponent {
     }), i.push({
       value: A.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
       label: R.NW.string(R.t.hurHWl)
-    })), t && ((0, S.isWindows)() || j.Z.getUseSystemScreensharePicker()) && i.push({
+    })), t && ((0, v.isWindows)() || j.Z.getUseSystemScreensharePicker()) && i.push({
       value: A.kg4.TOGGLE_GO_LIVE_STREAMING,
       label: R.NW.string(R.t.ybdjJC)
-    }), (0, S.isDesktop)() && (i.push({
+    }), (0, v.isDesktop)() && (i.push({
       value: A.kg4.NAVIGATE_BACK,
       label: R.NW.string(R.t.gRSaOT)
     }, {
@@ -283,7 +283,7 @@ class G extends i.PureComponent {
       [A.kg4.TOGGLE_VOICE_MODE]: R.NW.string(R.t.snm5YW),
       [A.kg4.TOGGLE_STREAMER_MODE]: R.NW.string(R.t.YszLLy)
     };
-    return (0, E.l)() && (r[A.kg4.TOGGLE_CAMERA] = R.NW.string(R.t.v1JBtL)), e && (r[A.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = R.NW.string(R.t.IoP5vb)), t && (0, S.isWindows)() && (r[A.kg4.TOGGLE_GO_LIVE_STREAMING] = R.NW.string(R.t.s4C239)), (0, S.isDesktop)() && (r[A.kg4.NAVIGATE_BACK] = R.NW.string(R.t.nKDlEh), r[A.kg4.NAVIGATE_FORWARD] = R.NW.string(R.t.DK0FFh), r[A.kg4.SOUNDBOARD] = (0, S.isWindows)() ? R.NW.string(R.t["5wJefH"]) : R.NW.string(R.t.gzjsSE), r[A.kg4.SOUNDBOARD_HOLD] = (0, S.isWindows)() ? R.NW.string(R.t.RRkZc3) : R.NW.string(R.t.laNlTk), n && (r[A.kg4.SAVE_CLIP] = R.NW.string(R.t.z3Wbam))), r
+    return (0, E.l)() && (r[A.kg4.TOGGLE_CAMERA] = R.NW.string(R.t.v1JBtL)), e && (r[A.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = R.NW.string(R.t.IoP5vb)), t && (0, v.isWindows)() && (r[A.kg4.TOGGLE_GO_LIVE_STREAMING] = R.NW.string(R.t.s4C239)), (0, v.isDesktop)() && (r[A.kg4.NAVIGATE_BACK] = R.NW.string(R.t.nKDlEh), r[A.kg4.NAVIGATE_FORWARD] = R.NW.string(R.t.DK0FFh), r[A.kg4.SOUNDBOARD] = (0, v.isWindows)() ? R.NW.string(R.t["5wJefH"]) : R.NW.string(R.t.gzjsSE), r[A.kg4.SOUNDBOARD_HOLD] = (0, v.isWindows)() ? R.NW.string(R.t.RRkZc3) : R.NW.string(R.t.laNlTk), n && (r[A.kg4.SAVE_CLIP] = R.NW.string(R.t.z3Wbam))), r
   }
   renderKeybinds(e) {
     return e.map(e => (0, r.jsx)("div", {
@@ -313,7 +313,7 @@ class G extends i.PureComponent {
       children: [(0, r.jsx)(u.hjN, {
         tag: u.RB0.H1,
         title: R.NW.string(R.t.T9DA2N),
-        children: S.isPlatformEmbedded ? (0, r.jsxs)(r.Fragment, {
+        children: v.isPlatformEmbedded ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(b.Z, {
             justify: b.Z.Justify.BETWEEN,
             className: w.marginBottom20,
@@ -415,7 +415,7 @@ function F() {
     keybinds: e,
     canGoLive: t,
     overlaySupported: n,
-    allowSoundboard: (0, S.isWindows)(),
+    allowSoundboard: (0, v.isWindows)(),
     enableClips: i
   })
 }

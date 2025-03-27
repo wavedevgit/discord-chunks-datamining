@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(572004),
   C = n(287880),
   O = n(714565),
-  v = n(202858),
-  S = n(726985),
+  S = n(202858),
+  v = n(726985),
   T = n(981631),
   I = n(815660),
   y = n(388032),
@@ -155,7 +155,7 @@ class k extends i.PureComponent {
       })
     }
     return (0, r.jsx)(f.F, {
-      setting: S.s6.ACCOUNT_SMS_BACKUP,
+      setting: v.s6.ACCOUNT_SMS_BACKUP,
       children: (0, r.jsxs)(o.hjN, {
         className: P.marginTop40,
         title: y.NW.string(y.t.uHAJ5u),
@@ -171,7 +171,7 @@ class k extends i.PureComponent {
     let {
       backupCodes: t
     } = this.props, n = (0, r.jsx)(f.F, {
-      setting: S.s6.ACCOUNT_VIEW_BACKUP_CODES,
+      setting: v.s6.ACCOUNT_VIEW_BACKUP_CODES,
       children: (0, r.jsx)(o.zxk, {
         onClick: this.sendMFABackupCodesVerificationKeyEmail,
         size: o.zxk.Sizes.SMALL,
@@ -238,7 +238,7 @@ class k extends i.PureComponent {
         }), (0, r.jsxs)(p.Z.Child, {
           wrap: !0,
           children: [(0, r.jsx)(f.F, {
-            setting: S.s6.ACCOUNT_REMOVE_2FA,
+            setting: v.s6.ACCOUNT_REMOVE_2FA,
             children: (0, r.jsx)(o.zxk, {
               onClick: this.handleDisableMFA,
               size: o.zxk.Sizes.SMALL,
@@ -247,16 +247,16 @@ class k extends i.PureComponent {
               children: y.NW.string(y.t["D+aE7u"])
             })
           }), (0, r.jsx)(f.F, {
-            setting: S.s6.ACCOUNT_ENABLE_2FA,
+            setting: v.s6.ACCOUNT_ENABLE_2FA,
             children: (0, r.jsx)(o.zxk, {
-              onClick: v.ZP.enableMFA,
+              onClick: S.ZP.enableMFA,
               size: o.PhG.SMALL,
               children: y.NW.string(y.t.cDgKtb)
             })
           })]
         })]
       }), e, this.renderMFASMS(), (0, r.jsx)(f.F, {
-        setting: S.s6.ACCOUNT_SECURITY_KEYS,
+        setting: v.s6.ACCOUNT_SECURITY_KEYS,
         children: (0, r.jsx)(N.Z, {})
       })]
     })
@@ -270,7 +270,7 @@ class k extends i.PureComponent {
         children: y.NW.string(y.t["8aDa1t"])
       }), (0, r.jsx)(o.xJW, {
         children: (0, r.jsx)(o.zxk, {
-          onClick: v.ZP.enableMFA,
+          onClick: S.ZP.enableMFA,
           size: o.PhG.SMALL,
           children: y.NW.string(y.t.cDgKtb)
         })

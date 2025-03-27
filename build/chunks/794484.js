@@ -54,8 +54,8 @@ let _ = e => {
       leftAlignHeaders: j = !1,
       showAllPerksButton: C,
       headerClassname: O,
-      isFullScreen: v = !0,
-      shouldAutoScroll: S = !1
+      isFullScreen: S = !0,
+      shouldAutoScroll: v = !1
     } = e, T = i.useRef(null), I = (0, u.Er)(), y = (0, m.v)(I), A = s === f.R0.WHATS_NEW, P = (0, u.IY)(), R = (0, p.x)();
     i.useEffect(() => {
       A && !y && (P(), R())
@@ -66,7 +66,7 @@ let _ = e => {
       Z = y && A;
     (0, g.r)({
       ref: T,
-      shouldScroll: Z || S,
+      shouldScroll: Z || v,
       onScrollEnd: D,
       onCleanup: D
     });
@@ -80,7 +80,7 @@ let _ = e => {
       M = (0, x.sP)({
         perksCards: k,
         variant: s,
-        isFullScreen: v,
+        isFullScreen: S,
         showTenureCard: null == I ? void 0 : I.showCard,
         isPremiumSubscriber: W,
         fractionalState: L,
@@ -122,8 +122,8 @@ let _ = e => {
           children: C
         }), (0, r.jsx)("div", {
           className: a()({
-            [b.cardContainer]: v,
-            [b.cardContainerNarrowWidth]: !v
+            [b.cardContainer]: S,
+            [b.cardContainerNarrowWidth]: !S
           }),
           children: M.map((e, t) => {
             var n, i;

@@ -1,6 +1,6 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  default: () => S
+  default: () => v
 }), n(47120), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -36,7 +36,7 @@ function O(e) {
     onClose: d
   } = e, [u, p] = i.useState(!1), b = (0, l.e7)([N.Z], () => N.Z.theme), {
     analyticsLocations: O
-  } = (0, h.ZP)(), [v, S] = i.useState(null);
+  } = (0, h.ZP)(), [S, v] = i.useState(null);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
@@ -48,21 +48,21 @@ function O(e) {
       })]
     }), (0, r.jsxs)(c.hzk, {
       className: j.body,
-      children: [null !== v && (0, r.jsx)(c.kzN, {
+      children: [null !== S && (0, r.jsx)(c.kzN, {
         className: j.error,
-        children: v
+        children: S
       }), E.NW.string(E.t.DY2CXl)]
     }), (0, r.jsxs)(c.mzw, {
       justify: f.Z.Justify.START,
       children: [(0, r.jsx)(c.zxk, {
         onClick: async () => {
           try {
-            p(!0), S(null);
+            p(!0), v(null);
             let e = (0, x.g)(t, 1);
             a()((0, _.uV)(e) <= (0, _.uV)(t.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await C(t, e, n, O), s()
           } catch (t) {
             let e = t instanceof m.HF ? t : new m.HF(t, t.code);
-            S(E.NW.string(e.code === g.SM.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq6 : E.t["5mlOCQ"])), p(!1)
+            v(E.NW.string(e.code === g.SM.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq6 : E.t["5mlOCQ"])), p(!1)
           }
         },
         submitting: u,
@@ -78,7 +78,7 @@ function O(e) {
   })
 }
 
-function v(e) {
+function S(e) {
   let {
     onClose: t
   } = e;
@@ -107,7 +107,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function v(e) {
   let t, {
       guildBoostSlotId: n,
       transitionState: s,
@@ -134,7 +134,7 @@ function S(e) {
       });
       break;
     case 2:
-      t = (0, r.jsx)(v, {
+      t = (0, r.jsx)(S, {
         onClose: a
       });
       break;

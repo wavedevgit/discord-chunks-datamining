@@ -25,8 +25,8 @@ var r = n(200651),
   j = n(197115),
   C = n(876917),
   O = n(210887),
-  v = n(751648),
-  S = n(822857),
+  S = n(751648),
+  v = n(822857),
   T = n(960919),
   I = n(275388),
   y = n(74538),
@@ -263,9 +263,9 @@ let eg = e => {
       analyticsLocations: ea
     } = (0, b.ZP)([...X ? [N.Z.COLLECTIBLES_SHOP_HOME_SCREEN] : [], N.Z.COLLECTIBLES_SHOP_CARD]), em = i.useRef(null), ex = (0, f.Z)(em), [eb, e_] = i.useState(!1), eE = ex || eb, ej = (0, en.f)(t), {
       previewingVariantIndex: eC
-    } = ej, eO = (0, B.T)(t), ev = (0, g.e7)([x.Z], () => x.Z.useReducedMotion), eS = y.ZP.canUseCollectibles(n), eT = i.useMemo(() => (0, D.BH)(t, eS), [t, eS]), eI = (0, D.G1)(t), ey = (0, D.rN)(t), [eA, eP, eR] = (0, g.Wu)([P.Z], () => [P.Z.isClaiming === t.skuId, null != P.Z.isClaiming && P.Z.isClaiming !== t.skuId, P.Z.purchases]), eD = (0, et.o)(t, eR, eC), eZ = (0, g.e7)([O.Z], () => (0, h.wjy)(O.Z.theme)), ew = (0, D.Yq)(t.skuId), ek = s.skuId === u.T.ANIME_V3 && (0, D.WW)(t.skuId), {
+    } = ej, eO = (0, B.T)(t), eS = (0, g.e7)([x.Z], () => x.Z.useReducedMotion), ev = y.ZP.canUseCollectibles(n), eT = i.useMemo(() => (0, D.BH)(t, ev), [t, ev]), eI = (0, D.G1)(t), ey = (0, D.rN)(t), [eA, eP, eR] = (0, g.Wu)([P.Z], () => [P.Z.isClaiming === t.skuId, null != P.Z.isClaiming && P.Z.isClaiming !== t.skuId, P.Z.purchases]), eD = (0, et.o)(t, eR, eC), eZ = (0, g.e7)([O.Z], () => (0, h.wjy)(O.Z.theme)), ew = (0, D.Yq)(t.skuId), ek = s.skuId === u.T.ANIME_V3 && (0, D.WW)(t.skuId), {
       hoverVariant: eW
-    } = (0, Z.E)("CollectiblesShopTallCard"), eL = s.skuId === u.T.STORM && "1268362891946627103" === t.skuId, eB = (0, k.hv)("CollectiblesShopTallCard"), eM = (0, R.o)(t, eR), eU = (0, ee.W)(t, eM), eV = (0, D.XM)(eU, eS, !1), {
+    } = (0, Z.E)("CollectiblesShopTallCard"), eL = s.skuId === u.T.STORM && "1268362891946627103" === t.skuId, eB = (0, k.hv)("CollectiblesShopTallCard"), eM = (0, R.o)(t, eR), eU = (0, ee.W)(t, eM), eV = (0, D.XM)(eU, ev, !1), {
       isPurchased: eG,
       isPartiallyOwnedBundle: eF
     } = (0, M.L)(eU), {
@@ -276,7 +276,7 @@ let eg = e => {
       isPurchased: eG
     }), eY = null !== eC ? eC : eM, [eK, eq] = i.useState(!1), {
       enabled: eX
-    } = (0, S.W)({
+    } = (0, v.W)({
       location: "collectibles_shop_tall_card"
     }), eJ = (0, _.N)("CollectiblesShopTallCard"), {
       handleCardVisibilityChange: eQ
@@ -311,7 +311,7 @@ let eg = e => {
         hasSufficientOrbs: e7
       } = (0, er.Ip)({
         product: t,
-        isPremiumUser: eS,
+        isPremiumUser: ev,
         tab: Q
       }),
       e9 = e => n => {
@@ -383,12 +383,12 @@ let eg = e => {
                 product: t,
                 analyticsLocations: ea,
                 onCloseCallback: () => {
-                  (0, v.vp)()
+                  (0, S.vp)()
                 }
               })
             },
             analyticsLocations: ea
-          }), (0, v.S6)()
+          }), (0, S.S6)()
         },
         children: eo.NW.format(eo.t.kAgx5O, {
           orbPrice: e3[0].amount,
@@ -420,7 +420,7 @@ let eg = e => {
         onClick: te,
         children: eo.NW.string(eo.t.GpnHfH)
       }),
-      tc = () => !eI || eS || ey ? !ez || eH ? tr() : eG ? tl() : eI ? ta() : e4 ? e7 ? ts() : tr() : Q === es.AW.ORBS ? to() : ti() : tt();
+      tc = () => !eI || ev || ey ? !ez || eH ? tr() : eG ? tl() : eI ? ta() : e4 ? e7 ? ts() : tr() : Q === es.AW.ORBS ? to() : ti() : tt();
     return (0, D.x6)(t) && null != eT && eT.discountPercentage < 0 ? null : (0, r.jsx)(p.$, {
       innerRef: em,
       onChange: eQ,
@@ -429,7 +429,7 @@ let eg = e => {
         children: (0, r.jsxs)(h.kL8, {
           className: a()(eZ ? ec.shopCardDark : ec.shopCard, {
             [ec.partiallyOwned]: eF && !eE,
-            [ec.shopCardAnimation]: !ev && eW !== Z.D.NO_MOVEMENT,
+            [ec.shopCardAnimation]: !eS && eW !== Z.D.NO_MOVEMENT,
             [eZ ? ec.shopCardDarkHighlighted : ec.shopCardHighlighted]: eE,
             [ec.mysteryShopCard]: eL
           }),
@@ -542,13 +542,13 @@ let eg = e => {
                   children: eo.NW.string(eo.t.rt69oq)
                 }) : eX ? (0, r.jsx)(K.e, {
                   displayPrices: e6,
-                  isPremiumUser: eS,
+                  isPremiumUser: ev,
                   discount: eT,
                   hasSufficientOrbs: e7
                 }) : (0, r.jsx)(H.Z, {
                   product: eU,
                   discount: eT,
-                  isPremiumUser: eS,
+                  isPremiumUser: ev,
                   className: ec.priceTag,
                   hideStrikethroughPrice: e$
                 })

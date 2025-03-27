@@ -25,7 +25,7 @@ var r = n(200651),
 function j() {
   let e = (0, a.e7)([u.Z], () => u.Z.getGameFriendCount()),
     [t] = (0, a.e7)([u.Z], () => {
-      let e = u.Z.getGameRelationships().values();
+      let e = u.Z.getGameRelationshipsByType(b.OGo.FRIEND);
       return [(0, s.chain)(e).filter(e => {
         let {
           type: t

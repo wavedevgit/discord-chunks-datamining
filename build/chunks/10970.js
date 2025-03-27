@@ -29,7 +29,7 @@ function N(e) {
     navigateToHome: _,
     subscriptionGroup: E,
     renewalSkuId: j
-  } = e, C = (0, a.y)(n, 100), O = (0, m.KK)(E.flags), v = O ? s.QTo : s.tBG, S = O ? f.NW.string(f.t["46YF2N"]) : f.NW.string(f.t.fFyGiI), T = null === (t = g.metadata) || void 0 === t ? void 0 : t.application_subscription_guild_id, I = (0, i.e7)([d.Z], () => O && null != T ? d.Z.getGuild(T) : void 0, [T, O]), y = (0, i.e7)([u.Z], () => {
+  } = e, C = (0, a.y)(n, 100), O = (0, m.KK)(E.flags), S = O ? s.QTo : s.tBG, v = O ? f.NW.string(f.t["46YF2N"]) : f.NW.string(f.t.fFyGiI), T = null === (t = g.metadata) || void 0 === t ? void 0 : t.application_subscription_guild_id, I = (0, i.e7)([d.Z], () => O && null != T ? d.Z.getGuild(T) : void 0, [T, O]), y = (0, i.e7)([u.Z], () => {
     if (null != j) return u.Z.get(j)
   }, [j]), A = (0, p.p)(g.currentPeriodEnd);
   return (0, r.jsxs)("div", {
@@ -49,10 +49,10 @@ function N(e) {
           children: [(0, r.jsxs)(s.X6q, {
             variant: "heading-md/normal",
             className: x.subInfoType,
-            children: [(0, r.jsx)(v, {
+            children: [(0, r.jsx)(S, {
               size: "xs",
               color: "currentColor"
-            }), " ", S]
+            }), " ", v]
           }), null != I && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/normal",

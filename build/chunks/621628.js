@@ -82,7 +82,7 @@ function C() {
       var e;
       return null === (e = p.Z.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
     })) && void 0 !== e ? e : new Uint8Array,
-    [O, v] = function(e, t) {
+    [O, S] = function(e, t) {
       let [n, r] = i.useState(() => {
         let n = c.K.get(e);
         return null != n ? n : t
@@ -91,8 +91,8 @@ function C() {
         c.K.set(e, n)
       }, [e, n]), [n, r]
     }("RecentDismissibleOverrides", []),
-    S = e => {
-      v(t => {
+    v = e => {
+      S(t => {
         let n = new Set(t);
         n.delete(e);
         let r = Array.from(n).slice(0, 4);
@@ -157,7 +157,7 @@ function C() {
         }), (0, r.jsx)(j, {
           items: T,
           dismissedContents: C,
-          handleChange: S
+          handleChange: v
         })]
       }) : null, I.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
@@ -168,7 +168,7 @@ function C() {
         }), (0, r.jsx)(j, {
           items: I,
           dismissedContents: C,
-          handleChange: S
+          handleChange: v
         })]
       }) : null, (0, r.jsx)(u.Z, {
         className: a()(_.marginBottom20, _.marginTop20),
@@ -178,7 +178,7 @@ function C() {
       }), (0, r.jsx)(j, {
         items: y,
         dismissedContents: C,
-        handleChange: S
+        handleChange: v
       })]
     })]
   })

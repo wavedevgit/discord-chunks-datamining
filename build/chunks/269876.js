@@ -28,8 +28,8 @@ function j() {
     autoThreshold: C
   } = (0, l.cj)([p.Z], () => p.Z.getModeOptions()), {
     inputMode: O,
-    automaticVADSupported: v,
-    isEnabled: S
+    automaticVADSupported: S,
+    isEnabled: v
   } = (0, l.cj)([p.Z], () => ({
     inputMode: p.Z.getMode(),
     automaticVADSupported: p.Z.supports(h.AN.AUTOMATIC_VAD),
@@ -98,7 +98,7 @@ function j() {
     title: f.NW.string(f.t["sqUm+v"]),
     titleId: E,
     className: x.sensitivity,
-    children: [v && (0, r.jsx)(g.FG, {
+    children: [S && (0, r.jsx)(g.FG, {
       children: e => (0, r.jsxs)("div", {
         className: a()(b.horizontal, _.marginBottom4),
         children: [(0, r.jsx)(u.vwX, {
@@ -114,7 +114,7 @@ function j() {
           onChange: e => I(j, e)
         })]
       })
-    }), y, !S && (0, r.jsx)(u.R94, {
+    }), y, !v && (0, r.jsx)(u.R94, {
       type: u.R94.Types.DESCRIPTION,
       className: a()(x.inputDisabledWarning, _.marginBottom8),
       children: f.NW.format(f.t["O13I+P"], {

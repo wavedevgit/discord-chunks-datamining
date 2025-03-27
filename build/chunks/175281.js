@@ -1,4 +1,4 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 n.d(t, {
   Z: () => A
 }), n(266796), n(47120), n(653041);
@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(442837),
   f = n(215569),
   h = n(481060),
-  _ = n(612226),
-  m = n(951483),
+  m = n(612226),
+  _ = n(951483),
   b = n(714338),
   g = n(607070),
   E = n(460181),
@@ -54,7 +54,7 @@ function I(e) {
       return null
   }
 }
-let P = [_.Q2.MESSAGE, _.Q2.NAVIGATION, _.Q2.VOICE_AND_VIDEO, _.Q2.CHAT, _.Q2.MISCELLANEOUS];
+let P = [m.Q2.MESSAGE, m.Q2.NAVIGATION, m.Q2.VOICE_AND_VIDEO, m.Q2.CHAT, m.Q2.MISCELLANEOUS];
 
 function j(e) {
   let {
@@ -68,13 +68,13 @@ function j(e) {
 }
 
 function T() {
-  let e = i.useMemo(() => u()((0, _.Rv)()).groupBy(e => e.group).value(), []);
+  let e = i.useMemo(() => u()((0, m.Rv)()).groupBy(e => e.group).value(), []);
   return (0, r.jsx)("div", {
     className: x.keyboardShortcutList,
     children: P.map(t => {
       let n = e[t],
-        i = (0, _.UD)(t),
-        o = (0, _.U6)(t);
+        i = (0, m.UD)(t),
+        o = (0, m.U6)(t);
       return (0, r.jsxs)("div", {
         className: x.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
@@ -284,7 +284,7 @@ function A(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [o, a] = i.useState(!1), [s, c] = i.useState(!1), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, _.Rv)(), []), {
+  } = e, [o, a] = i.useState(!1), [s, c] = i.useState(!1), u = i.useMemo(() => __OVERLAY__ ? (0, _.Zg)() : (0, m.Rv)(), []), {
     keyboardModeEnabled: d,
     useReducedMotion: E
   } = (0, p.cj)([g.Z], () => ({

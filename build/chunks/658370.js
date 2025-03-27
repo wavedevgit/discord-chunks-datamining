@@ -30,9 +30,9 @@ let x = e => {
     isPremiumGetCta: j,
     onCtaClick: C,
     cardVariant: O
-  } = e, v = (0, d.N)(), S = null == v ? void 0 : v.subscription_trial, T = (0, c.Ng)(), I = (0, l.Rt)({
-    intervalType: null == S ? void 0 : S.interval,
-    intervalCount: null == S ? void 0 : S.interval_count
+  } = e, S = (0, d.N)(), v = null == S ? void 0 : S.subscription_trial, T = (0, c.Ng)(), I = (0, l.Rt)({
+    intervalType: null == v ? void 0 : v.interval,
+    intervalCount: null == v ? void 0 : v.interval_count
   }), y = (0, o._)({
     defaultResponse: h.NW.string(h.t["8x0jKS"]),
     onNonTier2Subscriber: h.NW.string(h.t.IJI7ys),

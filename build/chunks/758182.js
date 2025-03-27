@@ -22,8 +22,8 @@ var l = n(149765),
   j = n(710845),
   C = n(38618),
   O = n(218543),
-  v = n(314897),
-  S = n(944486),
+  S = n(314897),
+  v = n(944486),
   T = n(914010),
   I = n(449934),
   y = n(576376),
@@ -70,7 +70,7 @@ async function G(e, t, n) {
   let l = C.Z.getSocket();
   l.connect();
   let c = null !== (r = T.Z.getGuildId()) && void 0 !== r ? r : null,
-    u = null !== (i = S.Z.getChannelId()) && void 0 !== i ? i : null,
+    u = null !== (i = v.Z.getChannelId()) && void 0 !== i ? i : null,
     m = performance.now(),
     g = O.Z.loadCachedMessages.measureAsyncWithoutNesting(() => V(e, c, u)),
     p = O.Z.fetchGuildCache.measureAsync(() => H(e, n)),
@@ -78,10 +78,10 @@ async function G(e, t, n) {
     f = null != e ? a.Z.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => _.Z.getAsync(e, null)) : Promise.resolve([]),
     E = null == e ? Promise.resolve({}) : a.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => b.Z.getAll(e)),
     j = null == e ? Promise.resolve([]) : a.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => x.Z.getAll(e)),
-    v = null == e ? Promise.resolve([]) : a.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => N.Z.getAll(e)),
+    S = null == e ? Promise.resolve([]) : a.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => N.Z.getAll(e)),
     [
       [I, y], A, R, Z, w, k, W
-    ] = await Promise.all([g, p, h, f, E, j, v]),
+    ] = await Promise.all([g, p, h, f, E, j, S]),
     L = performance.now() - m;
   if (D.verbose("cache loaded in ".concat(L, "ms (channel_history ").concat(I, "ms)")), null == y) return (0, P.Z)("database:history_cache_null"), D.verbose("finished without dispatching CACHE_LOADED"), [!1, null, 0];
   {
@@ -293,7 +293,7 @@ class q extends(r = o.ZP.Store) {
       return
     }
     try {
-      let t = v.default.getId(),
+      let t = S.default.getId(),
         r = E.Z.carefullyOpenDatabase(t),
         [i, s, a] = await O.Z.loadMiniCache.measureAsync(() => G(r, t, e));
       i ? (n(), await Y(r, t, s, a)) : (n(), await (K(() => d.Z.dispatch({

@@ -45,7 +45,7 @@ function _() {
     e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, b({}, e))) : l.mc()
   }, []), O = i.useCallback(e => {
     (0, c.BV)(e, o.Z.USER_SETTINGS)
-  }, []), v = i.useCallback(e => {
+  }, []), S = i.useCallback(e => {
     (0, a.h7j)(t => {
       var n, i;
       return (0, r.jsx)(a.ConfirmModal, (n = b({
@@ -87,7 +87,7 @@ function _() {
       setting: f.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
       children: (0, r.jsx)(a.j7V, {
         value: e,
-        onChange: v,
+        onChange: S,
         note: N.NW.string(N.t.Afc7l5),
         children: N.NW.string(N.t["eOC/Fx"])
       })

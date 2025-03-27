@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(440849),
   C = n(921801),
   O = n(196051),
-  v = n(441729),
-  S = n(626135),
+  S = n(441729),
+  v = n(626135),
   T = n(63063),
   I = n(695346),
   y = n(263937),
@@ -466,7 +466,7 @@ function er() {
         value: t,
         note: k.NW.string(k.t.Q7wgHR),
         onChange: e => {
-          S.default.track(D.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
+          v.default.track(D.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
             enabled: e,
             location: {
               section: D.jXE.SETTINGS_ACCESSIBILITY
@@ -481,7 +481,7 @@ function er() {
 
 function ei() {
   let e = I.OW.useSetting(),
-    t = (0, c.e7)([v.Z], () => v.Z.speechRate),
+    t = (0, c.e7)([S.Z], () => S.Z.speechRate),
     [n, s] = i.useState(!1);
   return m.Zh ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C.F, {

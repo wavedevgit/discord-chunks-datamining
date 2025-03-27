@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(197115),
   C = n(504983),
   O = n(703656),
-  v = n(594174),
-  S = n(580130),
+  S = n(594174),
+  v = n(580130),
   T = n(669079),
   I = n(74538),
   y = n(317941),
@@ -62,9 +62,9 @@ function Z(e) {
     onClickDetails: p
   }));
   let O = j ? R.NW.string(R.t["2cHUtr"]) : R.NW.string(R.t.O13yh4),
-    v = i.useCallback(() => g(!1), []),
+    S = i.useCallback(() => g(!1), []),
     {
-      outboundTitle: S,
+      outboundTitle: v,
       outboundTermsAndConditions: T
     } = n;
   return (0, r.jsxs)(r.Fragment, {
@@ -84,7 +84,7 @@ function Z(e) {
           }), (0, r.jsxs)("div", {
             children: [(0, r.jsx)(d.X6q, {
               variant: "heading-md/semibold",
-              children: S
+              children: v
             }), (0, r.jsx)(d.Text, {
               variant: "text-sm/normal",
               color: "text-normal",
@@ -129,7 +129,7 @@ function Z(e) {
           }
           return e
         }({}, e), i = i = {
-          onClose: v,
+          onClose: S,
           onClaim: l,
           code: s,
           outboundPromotion: n
@@ -144,19 +144,19 @@ function Z(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
         }), t))
       },
-      onCloseRequest: v
+      onCloseRequest: S
     })]
   })
 }
 let w = function() {
-  let e = (0, c.Wu)([S.Z], () => S.Z.getGiftable()),
+  let e = (0, c.Wu)([v.Z], () => v.Z.getGiftable()),
     [t, n] = o().partition(e, e => {
       let {
         giftCodeBatchId: t
       } = e;
       return null == t
     }),
-    s = (0, c.e7)([v.default], () => I.ZP.isPremiumExactly(v.default.getCurrentUser(), P.p9.TIER_2)),
+    s = (0, c.e7)([S.default], () => I.ZP.isPremiumExactly(S.default.getCurrentUser(), P.p9.TIER_2)),
     l = o().groupBy(t, e => (0, T.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
     [h, f] = i.useState(!1);
   i.useEffect(() => {

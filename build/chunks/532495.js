@@ -25,8 +25,8 @@ var i = n(512722),
   j = n(513901),
   C = n(451392),
   O = n(906364),
-  v = n(643879),
-  S = n(350327),
+  S = n(643879),
+  v = n(350327),
   T = n(621853),
   I = n(687158),
   y = n(25990),
@@ -85,7 +85,7 @@ function Z() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e
     }),
-    K = (0, v.SD)({
+    K = (0, S.SD)({
       userId: L.id,
       image: M
     }),
@@ -118,7 +118,7 @@ function Z() {
     }), (0, r.jsx)(O.Z, {
       sectionTitle: R.NW.string(R.t["+T3RIy"]),
       errors: Y.pronouns,
-      onPronounsChange: S.ID,
+      onPronounsChange: v.ID,
       pendingPronouns: F,
       currentPronouns: null !== (k = null == B ? void 0 : B.pronouns) && void 0 !== k ? k : ""
     }, "pronouns"), (0, r.jsx)(f.Z, {
@@ -139,20 +139,20 @@ function Z() {
       children: [(0, r.jsx)(_.Z, {
         showRemoveBannerButton: Q,
         errors: Y.banner,
-        onBannerChange: S.g_,
+        onBannerChange: v.g_,
         forcedDivider: !0
       }, "banner"), (0, r.jsx)(C.Z, {
         user: L,
         pendingAvatarSrc: K,
         pendingColors: z,
-        onThemeColorsChange: S.z5,
+        onThemeColorsChange: v.z5,
         forcedDivider: !0
       })]
     }) : (0, r.jsx)(E.Z, {
       user: L,
       savedUserColor: null == B ? void 0 : B.accentColor,
       pendingColor: H,
-      setPendingAccentColor: S.CM
+      setPendingAccentColor: v.CM
     }, "color"), (0, r.jsx)(p.Z, {
       sectionTitle: R.NW.string(R.t.NepzEx),
       errors: er,

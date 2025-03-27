@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(908951),
   C = n(703656),
   O = n(853872),
-  v = n(245950),
-  S = n(404203),
+  S = n(245950),
+  v = n(404203),
   T = n(330181),
   I = n(954821),
   y = n(980864),
@@ -156,7 +156,7 @@ let W = e => {
       expanded: p,
       handleToggleExpanded: x,
       subscriptionInfo: E
-    } = (0, v.Z)(t), [j, O] = i.useState(!1), M = (0, N.Dt)(), {
+    } = (0, S.Z)(t), [j, O] = i.useState(!1), M = (0, N.Dt)(), {
       analyticsLocations: U
     } = (0, h.ZP)(), {
       shouldHideGuildPurchaseEntryPoints: V
@@ -201,7 +201,7 @@ let W = e => {
     }) : null;
     return (0, r.jsxs)("div", {
       className: Z.container,
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(v.Z, {
         onClick: x,
         className: Z.headerContainer,
         children: e => {

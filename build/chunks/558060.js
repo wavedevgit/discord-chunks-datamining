@@ -1,6 +1,6 @@
-/** Chunk was on 74249 **/
+/** Chunk was on 87791 **/
 n.d(t, {
-  Z: () => g
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -12,10 +12,10 @@ var i = n(120356),
   c = n(200615),
   u = n(981631),
   d = n(388032),
-  h = n(302841);
+  p = n(302841);
 
-function b() {
-  return (b = Object.assign || function(e) {
+function f() {
+  return (f = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -24,7 +24,7 @@ function b() {
   }).apply(this, arguments)
 }
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,43 +56,43 @@ function f(e, t) {
   }), e
 }
 
-function g(e) {
+function _(e) {
   let {
     product: t,
     isPremiumUser: n,
     discount: i,
-    className: g,
-    nitroUpsell: O = !1,
-    hideStrikethroughPrice: v = !1
-  } = e, m = (0, a.ql)(t, u.tuJ.DEFAULT);
-  if (null == m) return null;
-  if (m.amount <= 0) return (0, r.jsx)("div", {
-    className: o()(h.priceTagsContainer, g),
+    className: _,
+    nitroUpsell: b = !1,
+    hideStrikethroughPrice: g = !1
+  } = e, E = (0, a.ql)(t, u.tuJ.DEFAULT);
+  if (null == E) return null;
+  if (E.amount <= 0) return (0, r.jsx)("div", {
+    className: o()(p.priceTagsContainer, _),
     children: (0, r.jsx)(s.F, {
-      price: m
+      price: E
     })
   });
-  let E = (0, a.ql)(t, u.tuJ.PREMIUM_TIER_2),
-    y = !n && !(0, a.x6)(t),
-    _ = (0, a.x6)(t) && n ? f(p({}, m), {
+  let v = (0, a.ql)(t, u.tuJ.PREMIUM_TIER_2),
+    O = !n && !(0, a.x6)(t),
+    y = (0, a.x6)(t) && n ? m(h({}, E), {
       amount: i.original
-    }) : m,
-    C = v && n,
-    P = v && !n;
+    }) : E,
+    C = g && n,
+    x = g && !n;
   return (0, r.jsxs)("div", {
-    className: o()(h.priceTagsContainer, g),
+    className: o()(p.priceTagsContainer, _),
     children: [!C && (0, r.jsx)(s.F, {
-      price: _,
+      price: y,
       discount: n ? a.f_ : i,
-      className: o()(h.price, {
-        [h.striked]: n,
-        [h.dimmed]: n,
-        [h.fullPrice]: y
+      className: o()(p.price, {
+        [p.striked]: n,
+        [p.dimmed]: n,
+        [p.fullPrice]: O
       })
-    }), null != E && !P && (0, r.jsx)(s.F, {
-      price: E,
+    }), null != v && !x && (0, r.jsx)(s.F, {
+      price: v,
       discount: n ? i : a.f_,
-      renderPrice: O ? e => (0, r.jsx)(l.Text, {
+      renderPrice: b ? e => (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         children: d.NW.format(d.t.Sv8iiY, {
           price: e,
@@ -100,28 +100,28 @@ function g(e) {
             text: e
           })
         })
-      }) : y ? e => d.NW.formatToPlainString(d.t.W3gIWF, {
+      }) : O ? e => d.NW.formatToPlainString(d.t.W3gIWF, {
         price: e
       }) : void 0,
-      className: o()(h.price, {
-        [h.dimmed]: !n,
-        [h.fullPrice]: y
+      className: o()(p.price, {
+        [p.dimmed]: !n,
+        [p.fullPrice]: O
       }),
       variant: n ? void 0 : "text-xs/semibold",
       icon: (0, r.jsx)(l.ua7, {
         text: d.NW.string(d.t.MPFyJy),
         "aria-label": d.NW.string(d.t.X3Ekj4),
         children: e => {
-          var t = b({}, function(e) {
+          var t = f({}, function(e) {
             if (null == e) throw TypeError("Cannot destructure " + e);
             return e
           }(e));
-          return (0, r.jsx)(l.SrA, f(p({
+          return (0, r.jsx)(l.SrA, m(h({
             size: "md",
             color: "currentColor"
           }, t), {
-            className: o()(h.premiumIcon, {
-              [h.fullPrice]: y
+            className: o()(p.premiumIcon, {
+              [p.fullPrice]: O
             })
           }))
         }

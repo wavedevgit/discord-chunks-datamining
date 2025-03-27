@@ -25,9 +25,9 @@ var i = n(512722),
   j = n(556296),
   C = n(808506),
   O = n(237997),
-  v = n(626135);
+  S = n(626135);
 n(63063);
-var S = n(13140),
+var v = n(13140),
   T = n(981631),
   I = n(388032),
   y = n(720447);
@@ -44,8 +44,8 @@ function P(e) {
     notifications_enabled: r,
     notifications_position: r ? n : null,
     text_notifications_mode: _.Z.isNotificationDisabled(x.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
-    hotkey: null != i ? (0, S.BB)(i.shortcut) : null,
-    text_activation_hotkey: null != s ? (0, S.BB)(s.shortcut) : null,
+    hotkey: null != i ? (0, v.BB)(i.shortcut) : null,
+    text_activation_hotkey: null != s ? (0, v.BB)(s.shortcut) : null,
     text_opacity_slider: O.default.getTextWidgetOpacity(),
     old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : C.default.enabled
   }
@@ -72,7 +72,7 @@ function D(e) {
     legacyEnabled: a
   } = (0, o.cj)([b.default], () => b.default.getGlobalEnabledStatus()), {
     avatarSizeMode: C,
-    displayNameMode: S,
+    displayNameMode: v,
     displayUserMode: D,
     textChatDisabled: Z,
     notificationPositionMode: w,
@@ -89,7 +89,7 @@ function D(e) {
   }), B = (0, g.$1)();
   return ! function() {
     let e = P(A);
-    l().isEqual(e, A) || (v.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), A = e)
+    l().isEqual(e, A) || (S.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), A = e)
   }(), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hjN, {
       className: t,
@@ -191,7 +191,7 @@ function D(e) {
             } = e;
             return u.Z.setDisplayNameMode(t)
           },
-          value: S
+          value: v
         })
       }), (0, r.jsx)(R, {
         title: I.NW.string(I.t.swsWWF),

@@ -50,7 +50,7 @@ function j() {
   } = (0, l.cj)([x.Z, g.Z], () => ({
     theme: x.Z.theme,
     platformZoom: g.Z.zoom
-  })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
+  })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -62,7 +62,7 @@ function j() {
       t(Math.round(window.outerWidth / window.innerWidth * 100))
     })
   }, []);
-  let S = f.isPlatformEmbedded ? n : e,
+  let v = f.isPlatformEmbedded ? n : e,
     T = (0, l.e7)([p.C], () => {
       var e, t;
       return (0, h.fD)() ? null === (t = p.C.getCurrentBuildOverride()) || void 0 === t ? void 0 : null === (e = t.overrides) || void 0 === e ? void 0 : e.discord_web : null
@@ -95,7 +95,7 @@ function j() {
             style: {
               display: "inline-block"
             },
-            children: ["Zoom: ", S, "%"]
+            children: ["Zoom: ", v, "%"]
           }), null != T ? (0, r.jsxs)(o.Text, {
             tag: "div",
             variant: "heading-lg/bold",
@@ -179,10 +179,10 @@ function j() {
             children: [(0, r.jsxs)(o.X6q, {
               variant: "eyebrow",
               children: [e, "px"]
-            }), 100 !== S ? (0, r.jsxs)(o.X6q, {
+            }), 100 !== v ? (0, r.jsxs)(o.X6q, {
               variant: "eyebrow",
               color: "text-muted",
-              children: ["(", e * S / 100, ")"]
+              children: ["(", e * v / 100, ")"]
             }) : null]
           }, e), O.map(t => {
             var n;
@@ -196,7 +196,7 @@ function j() {
                 }),
                 style: {
                   fontSize: e,
-                  fontWeight: v.get(t)
+                  fontWeight: S.get(t)
                 },
                 children: [(0, r.jsx)("p", {
                   children: i

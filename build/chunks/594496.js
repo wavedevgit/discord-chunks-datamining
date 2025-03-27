@@ -25,8 +25,8 @@ var i = n(512722),
   j = n(51144),
   C = n(18438),
   O = n(778825),
-  v = n(52597),
-  S = n(430131),
+  S = n(52597),
+  v = n(430131),
   T = n(133484),
   I = n(388032),
   y = n(471794);
@@ -109,7 +109,7 @@ function R(e) {
     K = E.ZP.canUsePremiumProfileCustomization(Z),
     q = (0, c.gd)(w, null == z ? void 0 : z.avatar),
     X = (0, c.f$)(W, null == Y ? void 0 : Y.banner),
-    J = (0, v.p)(M, null == Y ? void 0 : Y.themeColors),
+    J = (0, S.p)(M, null == Y ? void 0 : Y.themeColors),
     Q = null !== (t = null == Y ? void 0 : Y.bio) && void 0 !== t ? t : "",
     $ = null !== (n = null == Y ? void 0 : Y.pronouns) && void 0 !== n ? n : "",
     ee = (e, t, n) => {
@@ -117,7 +117,7 @@ function R(e) {
     };
   return (0, r.jsxs)("div", {
     className: y.sectionsContainer,
-    children: [(0, r.jsx)(S.Z, {
+    children: [(0, r.jsx)(v.Z, {
       errors: null !== (i = null == U ? void 0 : U.nick) && void 0 !== i ? i : null == H ? void 0 : H.nick,
       username: j.ZP.getName(Z),
       pendingNick: k,
@@ -127,7 +127,7 @@ function R(e) {
       sectionTitle: I.NW.string(I.t["+T3RIy"]),
       errors: null == U ? void 0 : U.pronouns,
       onPronounsChange: e => {
-        (0, v.xs)(e, $)
+        (0, S.xs)(e, $)
       },
       pendingPronouns: B,
       currentPronouns: $
@@ -190,7 +190,7 @@ function R(e) {
         pendingAvatarSrc: G,
         pendingColors: M,
         onThemeColorsChange: e => {
-          (0, v.ce)(e, null == Y ? void 0 : Y.themeColors)
+          (0, S.ce)(e, null == Y ? void 0 : Y.themeColors)
         },
         guildId: null == F ? void 0 : F.id,
         showResetThemeButton: J
@@ -207,7 +207,7 @@ function R(e) {
             }))
           })]
         }),
-        onBioChange: e => (0, v.qN)(e, Q),
+        onBioChange: e => (0, S.qN)(e, Q),
         errors: null !== (R = null == U ? void 0 : U.bio) && void 0 !== R ? R : null == H ? void 0 : H.bio,
         pendingBio: L,
         currentBio: Q,

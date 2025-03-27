@@ -33,8 +33,8 @@ function E(e) {
     changeAvatarButtonText: j,
     guildId: C,
     className: O,
-    disabled: v = !1,
-    isTryItOutFlow: S = !1,
+    disabled: S = !1,
+    isTryItOutFlow: v = !1,
     forcedDivider: T,
     withHighlight: I = !1
   } = e, y = I ? o.gtL : o.zxk, A = (0, u.Tq)({
@@ -44,8 +44,8 @@ function E(e) {
   let [R, D] = (0, c.US)(P), Z = R === l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = (0, m._)(), {
     recentAvatarsLimit: k
   } = (0, d.pC)(w), W = i.useCallback(() => {
-    D(f.L.TAKE_ACTION), (0, p.$r)(x.pC.AVATAR, C, S, S ? _ : void 0)
-  }, [C, S, D]);
+    D(f.L.TAKE_ACTION), (0, p.$r)(x.pC.AVATAR, C, v, v ? _ : void 0)
+  }, [C, v, D]);
   return (0, r.jsx)(h.Z, {
     className: O,
     title: E,
@@ -57,7 +57,7 @@ function E(e) {
       onClick: W
     }) : void 0,
     errors: n,
-    disabled: v,
+    disabled: S,
     forcedDivider: T,
     children: (0, r.jsxs)("div", {
       className: b.buttonsContainer,

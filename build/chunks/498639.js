@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(197115),
   C = n(911367),
   O = n(43747),
-  v = n(970815),
-  S = n(430824),
+  S = n(970815),
+  v = n(430824),
   T = n(78839),
   I = n(981631),
   y = n(474936),
@@ -77,7 +77,7 @@ function D(e) {
   }) : null
 }
 let Z = function() {
-  let [e, t] = i.useState(y.Si.TIER_2), [n, x] = i.useState(null), [N] = (0, a.Wu)([S.Z], () => [S.Z.getGuilds()]), [Z] = (0, a.Wu)([T.ZP], () => [T.ZP.getPremiumSubscription()]);
+  let [e, t] = i.useState(y.Si.TIER_2), [n, x] = i.useState(null), [N] = (0, a.Wu)([v.Z], () => [v.Z.getGuilds()]), [Z] = (0, a.Wu)([T.ZP], () => [T.ZP.getPremiumSubscription()]);
   (0, C.t)();
   let w = Object.values(N).map(e => ({
       value: e,
@@ -293,9 +293,9 @@ let Z = function() {
             children: [null !== Q && (0, r.jsxs)(l.Text, {
               variant: "text-sm/normal",
               children: ["Error fetching Virtual Currency Balance: ", Q.message]
-            }), (0, r.jsx)(v.A4, {
+            }), (0, r.jsx)(S.A4, {
               balance: null != X ? X : 0,
-              balanceWidgetMode: v.b6.SELECTED
+              balanceWidgetMode: S.b6.SELECTED
             })]
           })]
         }), (0, r.jsx)(l.xJW, {

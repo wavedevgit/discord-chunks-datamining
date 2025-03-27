@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(214852),
   C = n(621853),
   O = n(484459),
-  v = n(246946),
-  S = n(594174),
+  S = n(246946),
+  v = n(594174),
   T = n(78839),
   I = n(626135),
   y = n(111361),
@@ -52,7 +52,7 @@ let V = function(e) {
       analyticsLocations: V
     } = (0, f.ZP)(h.Z.PREMIUM_MARKETING),
     G = (0, l.e7)([T.ZP], () => T.ZP.hasFetchedSubscriptions()),
-    F = (0, l.e7)([S.default], () => S.default.getCurrentUser()),
+    F = (0, l.e7)([v.default], () => v.default.getCurrentUser()),
     H = null == F ? void 0 : F.id,
     z = (0, Z.N)(),
     Y = (0, D.Ng)(),
@@ -86,7 +86,7 @@ let V = function(e) {
       location_stack: s,
       load_duration_ms: J.current
     })
-  }, [s, q]), (0, l.e7)([v.Z], () => v.Z.enabled)) ? (0, r.jsx)(p.Z, {}) : n ? (0, r.jsx)(b.c8, {}) : t === L.EZ.ApplicationStoreHome && Q ? et && null == en ? (0, r.jsx)("div", {
+  }, [s, q]), (0, l.e7)([S.Z], () => S.Z.enabled)) ? (0, r.jsx)(p.Z, {}) : n ? (0, r.jsx)(b.c8, {}) : t === L.EZ.ApplicationStoreHome && Q ? et && null == en ? (0, r.jsx)("div", {
     className: a()(U.container, U.loading),
     children: (0, r.jsx)(c.$jN, {})
   }) : (0, r.jsx)(f.Gt, {

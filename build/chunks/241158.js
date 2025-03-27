@@ -49,8 +49,8 @@ let _ = e => {
       index: j,
       isCompact: C,
       isReducedMotion: O,
-      onClick: v
-    } = e, S = (0, g.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
+      onClick: S
+    } = e, v = (0, g.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
       let t;
       switch (e) {
         case p.dm.EMOJIS:
@@ -101,12 +101,12 @@ let _ = e => {
         color: "text-muted",
         className: N.whatsNewBoxDescription,
         children: s
-      }), null != x && null != v && (0, r.jsx)(c.zxk, {
+      }), null != x && null != S && (0, r.jsx)(c.zxk, {
         look: c.iLD.OUTLINED,
         color: R,
         className: a()(N.whatsNewBoxButton, P ? N.whatsNewBoxButtonWhite : N.whatsNewBoxButtonBrand),
         onClick: () => {
-          D(), v()
+          D(), S()
         },
         children: x
       })]
@@ -133,7 +133,7 @@ let _ = e => {
           ref: T,
           children: (0, r.jsx)("source", {
             src: _,
-            type: S ? f.m.MP4 : f.m.WEBM
+            type: v ? f.m.MP4 : f.m.WEBM
           })
         }, _)
       })

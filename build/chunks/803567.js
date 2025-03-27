@@ -25,8 +25,8 @@ var i = n(120356),
   j = n(802138);
 let C = n(775322),
   O = n(853453),
-  v = (0, u.hQ)(),
-  S = {
+  S = (0, u.hQ)(),
+  v = {
     page: _.ZY5.USER_SETTINGS,
     section: _.jXE.SETTINGS_VOICE_AND_VIDEO
   };
@@ -71,7 +71,7 @@ function I(e) {
   }), (0, r.jsxs)(o.hjN, {
     className: t ? void 0 : j.marginBottom20,
     children: [(0, r.jsx)(o.vwX, {
-      id: v,
+      id: S,
       tag: o.RB0.H3,
       className: j.marginBottom8,
       children: E.NW.string(E.t.t8QhiY)
@@ -82,7 +82,7 @@ function I(e) {
     }), (0, r.jsx)(o.FXm, {
       options: g,
       onChange: e => {
-        c.Z.setNoiseCancellation(2 === e.value, S), c.Z.setNoiseSuppression(1 === e.value, S)
+        c.Z.setNoiseCancellation(2 === e.value, v), c.Z.setNoiseSuppression(1 === e.value, v)
       },
       value: i ? 2 : +!!s
     }), m && (0, r.jsx)(o.ToO, {
@@ -128,7 +128,7 @@ function y(e) {
     hasEchoCancellation: g.Z.hasEchoCancellation(i),
     hasNoiseSuppression: g.Z.hasNoiseSuppression(i),
     hasAutomaticGainControl: g.Z.hasAutomaticGainControl(i)
-  }), [i]), O = n === _.pM4.VOICE_ACTIVITY && u, v = (0, r.jsxs)(N.Z, {
+  }), [i]), O = n === _.pM4.VOICE_ACTIVITY && u, S = (0, r.jsxs)(N.Z, {
     children: [(f || x || C) && (0, r.jsx)(o.R94, {
       className: t ? void 0 : j.marginBottom20,
       type: o.R94.Types.DESCRIPTION,
@@ -178,9 +178,9 @@ function y(e) {
       })
     })]
   });
-  return t ? v : (0, r.jsx)(o.hjN, {
+  return t ? S : (0, r.jsx)(o.hjN, {
     className: j.marginBottom20,
     title: E.NW.string(E.t["6I6GUl"]),
-    children: v
+    children: S
   })
 }

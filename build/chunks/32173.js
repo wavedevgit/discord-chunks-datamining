@@ -25,8 +25,8 @@ var s = n(399606),
   j = n(78839),
   C = n(424218),
   O = n(63063),
-  v = n(74538),
-  S = n(715037),
+  S = n(74538),
+  v = n(715037),
   T = n(780525),
   I = n(314684),
   y = n(687362),
@@ -88,13 +88,13 @@ let eC = () => {
   } = (0, s.cj)([j.ZP], () => ({
     premiumSubscription: j.ZP.getPremiumTypeSubscription(),
     isEligibleForReward: j.ZP.getIsSubscriptionEligibleForReward()
-  })), ev = null != eC ? v.ZP.getPremiumPlanItem(eC) : null, eS = (null != ev ? v.ZP.getSkuIdForPlan(ev.planId) : null) === W.Si.TIER_2, eT = E.default.getCurrentUser(), eI = (0, v.I5)(eT, W.p9.TIER_2), ey = (0, v.I5)(eT, W.p9.TIER_0), eA = (0, I.bq)({
+  })), eS = null != eC ? S.ZP.getPremiumPlanItem(eC) : null, ev = (null != eS ? S.ZP.getSkuIdForPlan(eS.planId) : null) === W.Si.TIER_2, eT = E.default.getCurrentUser(), eI = (0, S.I5)(eT, W.p9.TIER_2), ey = (0, S.I5)(eT, W.p9.TIER_0), eA = (0, I.bq)({
     showAnimations: !0
   }), eP = null != eA ? eA.initialPercentage : void 0, eR = null != eA ? eA.percentage : void 0, eD = (0, p.Z)(_.Z), eZ = (0, y.a)(), ew = (0, I.Kb)(L.qY), {
     isFractionalPremiumActive: ek
   } = (0, g.Z)(), eW = null != eC && eC.hasPremiumAtLeast(W.p9.TIER_2), eL = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
     enabled: eB
-  } = S.Z.useExperiment({
+  } = v.Z.useExperiment({
     location: "usePerksDiscoverabilityCards"
   }), eM = (0, x.Z)({
     scrollPosition: U.Y_.TRY_IT_OUT,
@@ -416,7 +416,7 @@ let eC = () => {
         helpdeskArticle: O.Z.getArticleURL(B.BhN.REFERRAL_PROGRAM)
       }),
       descriptionCta: G.NW.string(G.t.JST6jo),
-      isPremiumGetCta: !eS || void 0,
+      isPremiumGetCta: !ev || void 0,
       perkImage: el
     },
     serverProfiles: {

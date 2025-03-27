@@ -25,8 +25,8 @@ var r = n(200651),
   j = n(100527),
   C = n(906732),
   O = n(211242),
-  v = n(975298),
-  S = n(15640),
+  S = n(975298),
+  v = n(15640),
   T = n(89057),
   I = n(406128),
   y = n(703656),
@@ -104,7 +104,7 @@ function en() {
     i = (0, c.e7)([P.ZP], () => P.ZP.getPremiumTypeSubscription()),
     {
       fractionalState: s
-    } = (0, v.Z)(),
+    } = (0, S.Z)(),
     l = (0, W.W)(),
     o = null !== i && null !== i.planIdFromItems;
   if (!o && s === Y.a$.NONE) return null;
@@ -285,11 +285,11 @@ let es = function() {
     } = (0, C.ZP)(j.Z.PREMIUM_SETTINGS),
     n = (0, c.e7)([P.ZP], () => P.ZP.getPremiumTypeSubscription()),
     s = (0, c.e7)([P.ZP], () => P.ZP.hasFetchedSubscriptions()),
-    a = (0, S.V)(),
+    a = (0, v.V)(),
     [l, o] = i.useState(!0),
     {
       fractionalState: u
-    } = (0, v.Z)({
+    } = (0, S.Z)({
       forceFetch: !0
     }),
     h = (0, B.n)(),

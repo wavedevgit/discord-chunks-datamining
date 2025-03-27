@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(706454),
   C = n(726985),
   O = n(981631),
-  v = n(388032),
-  S = n(700292);
+  S = n(388032),
+  v = n(700292);
 class T extends i.PureComponent {
   componentDidMount() {
     c.Z.wait(() => {
@@ -47,9 +47,9 @@ class T extends i.PureComponent {
       isUpdatingPaymentSource: c
     } = this.props;
     return t ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-      className: S.__invalid_userSettingsBilling,
+      className: v.__invalid_userSettingsBilling,
       children: [e && 0 === Object.keys(n).length ? (0, r.jsx)("div", {
-        className: S.syncing,
+        className: v.syncing,
         children: (0, r.jsx)(o.$jN, {})
       }) : (0, r.jsx)(f.F, {
         setting: C.s6.BILLING_PAYMENT_METHODS,
@@ -64,11 +64,11 @@ class T extends i.PureComponent {
       }), (0, r.jsx)(f.F, {
         setting: C.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, r.jsx)("div", {
-          className: S.paymentHistory,
+          className: v.paymentHistory,
           children: (0, r.jsxs)(o.y5t, {
             component: (0, r.jsx)(o.vwX, {
               tag: "h1",
-              children: v.NW.string(v.t.obLrcH)
+              children: S.NW.string(S.t.obLrcH)
             }),
             children: [(0, r.jsx)(h.oQ, {}), (0, r.jsx)(g.Z, {
               locale: s
@@ -76,9 +76,9 @@ class T extends i.PureComponent {
           })
         })
       }), (0, r.jsx)(o.Zbd, {
-        className: S.codeRedemptionRedirect,
+        className: v.codeRedemptionRedirect,
         type: o.Zbd.Types.CUSTOM,
-        children: v.NW.format(v.t["8b+FXF"], {
+        children: S.NW.format(S.t["8b+FXF"], {
           onClick: this.handleRedemptionRedirect
         })
       })]

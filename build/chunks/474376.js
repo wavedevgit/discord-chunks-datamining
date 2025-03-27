@@ -31,14 +31,14 @@ function j(e) {
     {
       multiAccountUsers: O
     } = (0, x.L)(),
-    v = e => {
+    S = e => {
       e !== (null == t ? void 0 : t.id) && (g.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
         location: {
           section: b.jXE.USER_PROFILE
         }
       }), h.yD(e))
     },
-    S = O.map(i => {
+    v = O.map(i => {
       let s = new d.Z(i),
         o = s.id === (null == t ? void 0 : t.id),
         c = i.tokenStatus === f.q.INVALID,
@@ -84,11 +84,11 @@ function j(e) {
           })
         },
         action: () => {
-          null == e || e(), c ? (0, N.Z)() : v(s.id)
+          null == e || e(), c ? (0, N.Z)() : S(s.id)
         }
       }, s.id)
     });
-  return S.push((0, r.jsxs)(r.Fragment, {
+  return v.push((0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
       id: "manage-accounts",
       label: _.NW.string(_.t.WbFpq6),
@@ -96,5 +96,5 @@ function j(e) {
         null == e || e(), (0, N.Z)()
       }
     })]
-  })), S
+  })), v
 }

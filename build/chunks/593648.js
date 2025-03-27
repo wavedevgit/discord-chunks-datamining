@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(223683),
   C = n(312400),
   O = n(115345),
-  v = n(392888),
-  S = n(106371),
+  S = n(392888),
+  v = n(106371),
   T = n(995774),
   I = n(921801),
   y = n(460181),
@@ -527,7 +527,7 @@ function $() {
             setting: L.s6.NOTIFICATIONS_LAUNCH_MIGRATION,
             children: (0, r.jsx)(u.zxk, {
               onClick: () => {
-                (0, v.R)(!0)
+                (0, S.R)(!0)
               },
               children: "Launch Migration"
             })
@@ -597,7 +597,7 @@ function er() {
       name: U.NW.string(U.t["xu+UDQ"]),
       value: d.Ns.NOTIFICATIONS_DISABLED
     }];
-  return S.Z.getCurrentConfig({
+  return v.Z.getCurrentConfig({
     location: "webSettings"
   }).enableInAppNotifications ? (0, r.jsxs)(I.F, {
     setting: L.s6.NOTIFICATIONS_REACTIONS,

@@ -28,8 +28,8 @@ var r = n(192379),
   j = n(921157),
   C = n(667172),
   O = n(237292),
-  v = n(314897),
-  S = n(906467),
+  S = n(314897),
+  v = n(906467),
   T = n(283595),
   I = n(699516),
   y = n(663389),
@@ -49,7 +49,7 @@ function U(e) {
   let {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
-  } = e, r = S.Z.isDeveloper, i = [{
+  } = e, r = v.Z.isDeveloper, i = [{
     header: M.NW.string(M.t.cduTBA),
     settings: n ? [L.s6.ACCOUNT, L.s6.GAMES, L.s6.PROFILE_CUSTOMIZATION, L.s6.CONTENT_SOCIAL, L.s6.DATA_PRIVACY, L.s6.PRIVACY_FAMILY_CENTER, L.s6.THIRD_PARTY_ACCESS, L.s6.SESSIONS, L.s6.CLIPS] : [L.s6.ACCOUNT, L.s6.GAMES, L.s6.PROFILE_CUSTOMIZATION, L.s6.CONTENT_SOCIAL, L.s6.DATA_PRIVACY, L.s6.PRIVACY_FAMILY_CENTER, L.s6.AUTHORIZED_APPS, L.s6.SESSIONS, L.s6.CONNECTIONS, L.s6.CLIPS]
   }, {
@@ -83,7 +83,7 @@ function U(e) {
 
 function V() {
   var e, t, n, a;
-  let S = (0, _.YO)().length,
+  let v = (0, _.YO)().length,
     R = (0, b.U)(),
     W = (0, i.e7)([y.Z], () => y.Z.getProps().impressionSource),
     L = (0, x.gU)(),
@@ -116,7 +116,7 @@ function V() {
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
-  }), Q = (0, i.e7)([T.Z], () => T.Z.hasLibraryApplication()), $ = (0, i.e7)([v.default], () => v.default.hasTOTPEnabled()), ee = D.Sb.useSetting(), et = (0, h.Z)(), {
+  }), Q = (0, i.e7)([T.Z], () => T.Z.hasLibraryApplication()), $ = (0, i.e7)([S.default], () => S.default.hasTOTPEnabled()), ee = D.Sb.useSetting(), et = (0, h.Z)(), {
     hypeSquadRemoved: en
   } = g.Z.useExperiment({
     location: "settings"
@@ -135,7 +135,7 @@ function V() {
     autoTrackExposure: !1
   }), ec = (0, u.UQ)("SettingRendererUtils");
   return r.useMemo(() => (0, Z.i)({
-    unseenGiftCount: S,
+    unseenGiftCount: v,
     showPrepaidPaymentPastDueWarning: R,
     impressionSource: W,
     numOfPendingFamilyRequests: L,
@@ -161,7 +161,7 @@ function V() {
     isAllowGameFriendDMsVisible: el,
     useRefreshedVoiceAndVideo: eo,
     isEligibleForSensitiveContentDefaults: ec
-  }), [ee, V, es, ea, Q, ei, $, en, W, er, el, X, K, Y, H, M, z, et, L, q, F, J, R, S, eo, ec])
+  }), [ee, V, es, ea, Q, ei, $, en, W, er, el, X, K, Y, H, M, z, et, L, q, F, J, R, v, eo, ec])
 }
 
 function G(e) {

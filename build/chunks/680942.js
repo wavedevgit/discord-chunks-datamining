@@ -1,6 +1,6 @@
-/** Chunk was on 74249 **/
+/** Chunk was on 87791 **/
 n.d(t, {
-  Z: () => v
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -11,12 +11,12 @@ var r = n(200651),
   c = n(677232),
   u = n(884697),
   d = n(228624),
-  h = n(67409),
-  b = n(474936),
-  p = n(231338),
-  f = n(388032),
-  g = n(535156);
-let O = {
+  p = n(67409),
+  f = n(474936),
+  h = n(231338),
+  m = n(388032),
+  _ = n(535156);
+let b = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -62,21 +62,21 @@ let O = {
       ribbon: "#026530"
     }]
   },
-  v = e => {
+  g = e => {
     let {
       product: t,
       selectedVariantIndex: n,
-      returnRef: v,
-      onSuccess: m,
-      tooltipDelay: E,
-      isGiftEasterEggEnabled: y,
-      color: _ = o.Ttl.BRAND
+      returnRef: g,
+      onSuccess: E,
+      tooltipDelay: v,
+      isGiftEasterEggEnabled: O,
+      color: y = o.Ttl.BRAND
     } = e, {
       analyticsLocations: C
-    } = (0, a.ZP)(), P = i.useRef(null), j = (0, l.Z)(P), x = (0, d.hv)("CollectiblesShopGiftButton");
+    } = (0, a.ZP)(), x = i.useRef(null), S = (0, l.Z)(x), N = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(o.ua7, {
-      text: f.NW.string(f.t["JCFN//"]),
-      delay: E,
+      text: m.NW.string(m.t["JCFN//"]),
+      delay: v,
       children: e => {
         var i, l;
         return (0, r.jsx)(o.zxk, (i = function(e) {
@@ -97,34 +97,34 @@ let O = {
           }
           return e
         }({}, e), l = l = {
-          buttonRef: P,
-          className: g.giftButton,
-          color: _,
+          buttonRef: x,
+          className: _.giftButton,
+          color: y,
           look: o.zxk.Looks.FILLED,
           size: o.PhG.ICON,
-          innerClassName: g.giftButtonInner,
-          "aria-label": f.NW.string(f.t.PEjaCw),
+          innerClassName: _.giftButtonInner,
+          "aria-label": m.NW.string(m.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
-              skuId: (0, h.S)({
+              skuId: (0, p.S)({
                 product: t,
                 selectedVariantIndex: n
               }),
               isGift: !0,
-              giftingOrigin: b.Wt.SHOP_PAGE,
+              giftingOrigin: f.Wt.SHOP_PAGE,
               analyticsLocations: C,
-              returnRef: v,
-              variantsReturnStyle: x,
-              onClose: null != m ? e => {
-                e && m()
+              returnRef: g,
+              variantsReturnStyle: N,
+              onClose: null != E ? e => {
+                e && E()
               } : void 0
             })
           },
-          children: y ? (0, r.jsx)(c.Z, {
-            hovered: j,
+          children: O ? (0, r.jsx)(c.Z, {
+            hovered: S,
             isContentDismissed: !0,
-            themeOverride: p.BR.DARK,
-            boxColors: O
+            themeOverride: h.BR.DARK,
+            boxColors: b
           }) : (0, r.jsx)(o.OgN, {
             size: "md",
             color: "currentColor"

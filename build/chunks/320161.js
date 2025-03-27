@@ -25,17 +25,17 @@ function x(e) {
     onCopy: m,
     "aria-label": x,
     delay: N = h
-  } = e, [b, _] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [v] = i.useState(() => new a.V7), [S] = i.useState(() => new a.V7);
+  } = e, [b, _] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [S] = i.useState(() => new a.V7), [v] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
-      v.stop(), S.stop()
-    }, [v, S]), !c.wS) return (0, r.jsx)(r.Fragment, {
+      S.stop(), v.stop()
+    }, [S, v]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: d({})
   });
   let T = b >= f.length - 1,
     I = T ? l.FGA.RED : l.FGA.GREEN,
     y = E ? I : l.FGA.PRIMARY,
     A = () => {
-      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), C || _(b + 1), O(!0), j(!0), v.start(g, () => O(!1)), S.start(p, () => _(0))
+      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), C || _(b + 1), O(!0), j(!0), S.start(g, () => O(!1)), v.start(p, () => _(0))
     };
   return (0, r.jsx)(l.ua7, {
     text: (() => {
@@ -100,7 +100,7 @@ function x(e) {
             null == i || i();
             return
           }
-          v.stop(), O(!1)
+          S.stop(), O(!1)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

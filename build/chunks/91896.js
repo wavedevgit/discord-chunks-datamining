@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(653041), n(47120);
 var r, i = n(442837),
   o = n(759174),
@@ -28,23 +28,24 @@ function u(e) {
   }
 }
 let d = (e, t) => "".concat(t, "-").concat(e),
-  f = e => "app-id-".concat(e),
-  _ = e => "user-id-".concat(e);
+  f = e => "application-id-".concat(e),
+  _ = e => "user-id-".concat(e),
+  p = e => "relationship-type-".concat(e);
 
-function p(e) {
+function h(e) {
   let t = [];
-  return t.push(f(e.applicationId)), t.push(_(e.id)), t
+  return t.push(f(e.applicationId)), t.push(_(e.id)), t.push(p(e.type)), t
 }
-let h = new o.h(p, e => "".concat(e.since)),
-  m = 0,
+let m = new o.h(h, e => "".concat(e.since)),
   g = 0,
-  E = 0;
+  E = 0,
+  b = 0;
 
-function b() {
+function v() {
   let e = 0,
     t = 0,
     n = 0;
-  h.values().forEach(r => {
+  m.values().forEach(r => {
     let {
       type: i,
       id: o
@@ -55,48 +56,48 @@ function b() {
       if (s.Z.isSpam(o) || s.Z.isIgnored(o)) return;
       e += 1
     }
-  }), m = e, g = t, E = n
+  }), g = e, E = t, b = n
 }
 
-function v(e) {
-  h.set(d(e.id, e.applicationId), e)
+function y(e) {
+  m.set(d(e.id, e.applicationId), e)
 }
 
-function y(e, t) {
-  h.delete(d(e, t))
-}
-
-function O(e) {
-  h.clear(), e.gameRelationships.forEach(e => {
-    v(u(e))
-  }), b()
+function O(e, t) {
+  m.delete(d(e, t))
 }
 
 function I(e) {
-  v(e.gameRelationship), b()
+  m.clear(), e.gameRelationships.forEach(e => {
+    y(u(e))
+  }), v()
 }
 
 function S(e) {
-  y(e.userId, e.applicationId), b()
+  y(e.gameRelationship), v()
 }
-class T extends(r = i.ZP.Store) {
+
+function T(e) {
+  O(e.userId, e.applicationId), v()
+}
+class A extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.Z)
   }
   getPendingIncomingCount() {
-    return m
-  }
-  getPendingOutgoingCount() {
     return g
   }
-  getGameFriendCount() {
+  getPendingOutgoingCount() {
     return E
   }
+  getGameFriendCount() {
+    return b
+  }
   getGameFriendsForApplication(e) {
-    return h.values(f(e), !0).filter(e => e.type === l.OGo.FRIEND)
+    return m.values(f(e), !0).filter(e => e.type === l.OGo.FRIEND)
   }
   getGameRelationshipsForUser(e) {
-    return h.values(_(e), !0)
+    return m.values(_(e), !0)
   }
   getGameRelationshipsForUserByType(e, t) {
     return this.getGameRelationshipsForUser(e).filter(e => e.type === t)
@@ -105,18 +106,21 @@ class T extends(r = i.ZP.Store) {
     return this.getGameRelationshipsForUserByType(e, l.OGo.FRIEND)
   }
   getGameRelationshipCount() {
-    return h.size()
+    return m.size()
   }
   getGameRelationships() {
-    return h
+    return m
+  }
+  getGameRelationshipsByType(e) {
+    return m.values(p(e), !0)
   }
   getGameRelationshipsVersion() {
-    return h.version
+    return m.version
   }
 }
-c(T, "displayName", "GameRelationshipStore");
-let A = new T(a.Z, {
-  CONNECTION_OPEN: O,
-  GAME_RELATIONSHIP_ADD: I,
-  GAME_RELATIONSHIP_REMOVE: S
+c(A, "displayName", "GameRelationshipStore");
+let N = new A(a.Z, {
+  CONNECTION_OPEN: I,
+  GAME_RELATIONSHIP_ADD: S,
+  GAME_RELATIONSHIP_REMOVE: T
 })

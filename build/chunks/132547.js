@@ -29,9 +29,9 @@ let O = () => {
     t = i.useRef(null),
     [n, O] = i.useState(!1),
     {
-      analyticsLocations: v
+      analyticsLocations: S
     } = (0, o.ZP)(l.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
-    [S, T] = i.useState(!1);
+    [v, T] = i.useState(!1);
   (0, m.FM)();
   let I = "true" === new URLSearchParams(window.location.search).get("autoScroll");
   return window.history.replaceState({}, "", window.location.pathname), (0, r.jsxs)(r.Fragment, {
@@ -41,7 +41,7 @@ let O = () => {
       children: (0, r.jsx)("div", {
         className: j.container,
         children: (0, r.jsxs)(o.Gt, {
-          value: v,
+          value: S,
           children: [(0, r.jsx)(h.Z, {
             className: j.heroHeading,
             location: x.MQ.HOME
@@ -71,8 +71,8 @@ let O = () => {
           }), (0, r.jsx)(s.$, {
             innerRef: t,
             onChange: e => {
-              e && !S && (u.default.track(_.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                location_stack: v
+              e && !v && (u.default.track(_.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                location_stack: S
               }), T(!0))
             },
             children: (0, r.jsx)("div", {

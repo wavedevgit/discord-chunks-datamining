@@ -32,7 +32,7 @@ let f = function(e) {
     }
   }), C = {
     section: p.jXE.MARKETING_FLOATING_CTA
-  }, O = (0, o.ZP)(), v = (0, l.wjy)(O);
+  }, O = (0, o.ZP)(), S = (0, l.wjy)(O);
   return (0, r.jsx)(a.animated.div, {
     className: s()(h.wrapper, {
       [h.fullscreenWrapper]: f,
@@ -43,7 +43,7 @@ let f = function(e) {
       className: N ? h.innerWrapperV2 : h.innerWrapperV1,
       children: [(0, r.jsx)(m.Z, {
         className: s()(h.button, {
-          [h.subButton]: v
+          [h.subButton]: S
         }),
         subscriptionTier: null !== (n = null != x ? x : null == b ? void 0 : b.sku_id) && void 0 !== n ? n : E,
         premiumModalAnalyticsLocation: C,

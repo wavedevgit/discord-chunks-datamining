@@ -60,7 +60,7 @@ function b(e) {
     colorPickerMiddle: j,
     colorPickerFooter: C,
     showEyeDropper: O
-  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
+  } = e, S = i.useRef(null), v = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === v ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
   return i.useEffect(() => {
     (R !== j || D !== C) && w((0, l.Z)())
   }, [C, j, D, R]), (0, r.jsx)(d.yRy, {
@@ -93,7 +93,7 @@ function b(e) {
         return i
       }(e, ["onClick"]);
       return (0, r.jsxs)("div", {
-        ref: v,
+        ref: S,
         className: a()(f.colorSwatch, {
           [f.disabled]: _
         }),
@@ -107,7 +107,7 @@ function b(e) {
           className: f.swatch,
           "aria-label": h.NW.string(h.t.Qp04hI),
           focusProps: {
-            ringTarget: v
+            ringTarget: S
           },
           children: (0, r.jsx)(d.vdY, {
             size: "custom",

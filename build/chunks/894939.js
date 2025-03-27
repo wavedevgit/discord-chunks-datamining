@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(918257),
   C = n(970813),
   O = n(726985),
-  v = n(981631),
-  S = n(710111),
+  S = n(981631),
+  v = n(710111),
   T = n(388032),
   I = n(257233),
   y = n(802138);
@@ -37,7 +37,7 @@ function A(e) {
       guildId: t,
       soundId: n
     } = e;
-    return h.Z.getSound(t === S.hY ? S.X8 : t, n)
+    return h.Z.getSound(t === v.hY ? v.X8 : t, n)
   })
 }
 
@@ -75,7 +75,7 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), g = (0, x.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === x.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
+  } = (0, d.ZP)(), [s, c] = i.useState(v.hY), g = (0, x.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === x.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
   i.useEffect(() => {
     C && (0, f.tt)({
       location: n
@@ -96,7 +96,7 @@ function R(e) {
         title: T.NW.string(T.t.nzUc3N),
         children: (0, r.jsx)(o.R94, {
           children: T.NW.format(T.t.u9RWmp, {
-            helpdeskArticle: b.Z.getArticleURL(v.BhN.SOUNDBOARD)
+            helpdeskArticle: b.Z.getArticleURL(S.BhN.SOUNDBOARD)
           })
         })
       }), (0, r.jsx)(u.Z, {
@@ -106,10 +106,10 @@ function R(e) {
         }),
         globalOption: {
           label: T.NW.string(T.t.CpEUPz),
-          value: S.hY
+          value: v.hY
         },
         onChange: e => {
-          c(null == e ? S.hY : e.id)
+          c(null == e ? v.hY : e.id)
         },
         renderOptionSuffix: O,
         hideDivider: !0

@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(388032),
   C = n(214117),
   O = n(102655),
-  v = n(768236),
-  S = n(314907),
+  S = n(768236),
+  v = n(314907),
   T = n(826701);
 let I = () => (0, r.jsx)("div", {
     className: C.comparisonTablePill,
@@ -48,7 +48,7 @@ let I = () => (0, r.jsx)("div", {
         premiumType: n
       } = e,
       i = (0, u.ZP)();
-    t = n === E.p9.TIER_0 ? (0, o.wj)(i) ? O : v : (0, o.wj)(i) ? S : T;
+    t = n === E.p9.TIER_0 ? (0, o.wj)(i) ? O : S : (0, o.wj)(i) ? v : T;
     let s = (0, f.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
@@ -120,13 +120,13 @@ let I = () => (0, r.jsx)("div", {
         analyticsLocations: j
       } = (0, g.ZP)(m.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
       O = (0, l.e7)([h.ZP], () => h.ZP.hasFetchedSubscriptions()),
-      v = (0, p.V)(),
-      S = "PlanComparisonTable";
+      S = (0, p.V)(),
+      v = "PlanComparisonTable";
     (0, d.j)({
-      location: S + " auto on",
+      location: v + " auto on",
       autoTrackExposure: !0
     }), (0, d.j)({
-      location: S + " auto off",
+      location: v + " auto off",
       autoTrackExposure: !1
     });
     let T = (0, N.N)(),
@@ -138,7 +138,7 @@ let I = () => (0, r.jsx)("div", {
       W = (0, f.CY)(E.Xh.PREMIUM_MONTH_TIER_0),
       L = (0, f.CY)(E.Xh.PREMIUM_MONTH_TIER_2),
       B = (0, _.a)(W, L, Z, k);
-    if (!O || !v) return null;
+    if (!O || !S) return null;
     B.push({
       label: null,
       tier0Column: null,

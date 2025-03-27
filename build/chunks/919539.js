@@ -24,13 +24,13 @@ var r = n(200651),
   j = n(726985),
   C = n(736530),
   O = n(981631),
-  v = n(388032);
+  S = n(388032);
 
-function S(e) {
+function v(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, S = (0, f.c_)(), T = (0, p.q)(), I = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = i.useCallback(e => {
+  } = e, v = (0, f.c_)(), T = (0, p.q)(), I = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = i.useCallback(e => {
     let r = (0, m.gl)();
     e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), c.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: _.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -53,10 +53,10 @@ function S(e) {
       return
     }
     t ? P(e) : (n = !e, (0, b.V)({
-      header: v.NW.string(v.t.yAfu1t),
-      body: v.NW.string(v.t["Ry2z7+"]),
-      confirmText: v.NW.string(v.t.gm1Ven),
-      cancelText: v.NW.string(v.t.p89ACg),
+      header: S.NW.string(S.t.yAfu1t),
+      body: S.NW.string(S.t["Ry2z7+"]),
+      confirmText: S.NW.string(S.t.gm1Ven),
+      cancelText: S.NW.string(S.t.p89ACg),
       confirmButtonColor: s.zxk.Colors.BRAND,
       onConfirm: () => {
         h.mX.updateSetting(n), R(n, !1)
@@ -70,21 +70,21 @@ function S(e) {
     setting: j.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: E.FY.MESSAGE_REQUESTS_V2,
     children: n === C.T ? (0, r.jsx)(N.Z, {
-      title: v.NW.string(v.t["3o2ojo"]),
+      title: S.NW.string(S.t["3o2ojo"]),
       value: !T && !y,
       onChange: e => D(e, !1),
       disabled: T,
-      note: v.NW.format(v.t.wkm9a2, {
+      note: S.NW.format(S.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(O.BhN.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(N.Z, {
-      title: v.NW.string(v.t["3o2ojo"]),
+      title: S.NW.string(S.t["3o2ojo"]),
       value: !A,
       onChange: e => D(e, !0),
       disabled: I,
-      note: S ? v.NW.format(v.t.WpnWLS, {
+      note: v ? S.NW.format(S.t.WpnWLS, {
         helpdeskArticle: d.Z.getArticleURL(O.BhN.MESSAGE_REQUESTS)
-      }) : v.NW.format(v.t.wkm9a2, {
+      }) : S.NW.format(S.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(O.BhN.MESSAGE_REQUESTS)
       })
     })
@@ -96,7 +96,7 @@ function T(e) {
     ingress: t = E.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, f.is)();
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(v, {
     ingress: t,
     guildId: null != n ? n : i
   })

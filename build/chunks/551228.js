@@ -1,71 +1,71 @@
-/** Chunk was on 62880 **/
-l.d(n, {
-  ZP: () => j,
+/** Chunk was on 87791 **/
+n.d(t, {
+  ZP: () => m,
   pi: () => h,
-  te: () => m
-}), l(47120);
-var t = l(200651),
-  i = l(192379),
-  a = l(442837),
-  s = l(594174),
-  r = l(379357),
-  c = l(719247),
-  d = l(442550),
-  o = l(297781),
-  u = l(443487),
-  x = l(563504);
-let m = [o.XF];
+  te: () => f
+}), n(47120);
+var r = n(200651),
+  i = n(192379),
+  o = n(442837),
+  l = n(594174),
+  a = n(379357),
+  s = n(719247),
+  c = n(442550),
+  u = n(297781),
+  d = n(443487),
+  p = n(563504);
+let f = [u.XF];
 
 function h(e) {
-  var n, l, t, i;
-  let r = (0, a.e7)([c.Z], () => c.Z.getMatchingActivity(e)),
-    d = (0, a.e7)([s.default], () => s.default.getUser(e.author_id));
-  if (null == r || null == d) return {};
-  let o = e.extra.entries[0],
-    u = null !== (t = null !== (l = r.state) && void 0 !== l ? l : null === (n = o.media.artists[0]) || void 0 === n ? void 0 : n.name) && void 0 !== t ? t : o.media.title,
-    x = null !== (i = r.details) && void 0 !== i ? i : o.media.title;
+  var t, n, r, i;
+  let a = (0, o.e7)([s.Z], () => s.Z.getMatchingActivity(e)),
+    c = (0, o.e7)([l.default], () => l.default.getUser(e.author_id));
+  if (null == a || null == c) return {};
+  let u = e.extra.entries[0],
+    d = null !== (r = null !== (n = a.state) && void 0 !== n ? n : null === (t = u.media.artists[0]) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : u.media.title,
+    p = null !== (i = a.details) && void 0 !== i ? i : u.media.title;
   return {
-    activity: r,
-    artist: u,
-    currentEntry: o,
-    title: x,
-    user: d
+    activity: a,
+    artist: d,
+    currentEntry: u,
+    title: p,
+    user: c
   }
 }
-let j = i.memo(function(e) {
+let m = i.memo(function(e) {
   let {
-    entry: n,
-    channel: l,
+    entry: t,
+    channel: n,
     selected: i,
-    hovered: a
+    hovered: o
   } = e, {
-    activity: s,
-    artist: c
-  } = h(n), {
-    largeImage: j
-  } = (0, r.rv)({
-    entry: n
+    activity: l,
+    artist: s
+  } = h(t), {
+    largeImage: m
+  } = (0, a.rv)({
+    entry: t
   });
-  return null == s ? (0, t.jsx)(u.cA, {}) : (0, t.jsxs)(u.Zb, {
+  return null == l ? (0, r.jsx)(d.cA, {}) : (0, r.jsxs)(d.Zb, {
     selected: i,
-    children: [(0, t.jsxs)(u.e$, {
-      children: [(0, t.jsx)(u.F9, {
-        entry: n,
-        channelId: l.id,
-        guildId: l.guild_id
-      }), (0, t.jsx)(u.ll, {
-        children: c
-      }), (0, t.jsx)(o.Gk, {
-        location: o.Gt.CARD,
-        children: m.map((e, l) => (0, t.jsx)(e, {
-          entry: n,
-          hovered: a
-        }, l))
+    children: [(0, r.jsxs)(d.e$, {
+      children: [(0, r.jsx)(d.F9, {
+        entry: t,
+        channelId: n.id,
+        guildId: n.guild_id
+      }), (0, r.jsx)(d.ll, {
+        children: s
+      }), (0, r.jsx)(u.Gk, {
+        location: u.Gt.CARD,
+        children: f.map((e, n) => (0, r.jsx)(e, {
+          entry: t,
+          hovered: o
+        }, n))
       })]
-    }), (0, t.jsx)(d.f, {
-      src: null == j ? void 0 : j.src,
+    }), (0, r.jsx)(c.f, {
+      src: null == m ? void 0 : m.src,
       size: 48,
-      className: x.thumbnail
+      className: p.thumbnail
     })]
   })
 })

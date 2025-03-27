@@ -1,4 +1,4 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -14,7 +14,7 @@ var r, i = n(200651),
   f = n(388032),
   h = n(903590);
 
-function _(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = {
+let _ = {
   friction: 15,
   tension: 100
 };
@@ -52,13 +52,13 @@ class b extends(r = o.PureComponent) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          _(e, t, n[t])
+          m(e, t, n[t])
         })
       }
       return e
     }({
       toValue: Math.min(e, 250)
-    }, m)).start()
+    }, _)).start()
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
@@ -132,10 +132,10 @@ class b extends(r = o.PureComponent) {
     }
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), m(this, "state", {
       shown: !1,
       translateY: new s.Z.Value(0)
-    }), _(this, "rootRef", o.createRef()), _(this, "focusTimeout", new c.V7), _(this, "handleResultFocus", e => {
+    }), m(this, "rootRef", o.createRef()), m(this, "focusTimeout", new c.V7), m(this, "handleResultFocus", e => {
       let {
         node: t
       } = e;
@@ -152,5 +152,5 @@ class b extends(r = o.PureComponent) {
     })
   }
 }
-_(b, "contextType", u.Sfi);
+m(b, "contextType", u.Sfi);
 let g = b

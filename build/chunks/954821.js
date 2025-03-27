@@ -45,11 +45,11 @@ let N = e => {
     } = e, E = (0, u.Dt)(), j = (0, g.YB)(s), C = (null == j ? void 0 : null === (t = j.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
       analyticsLocations: O
     } = (0, d.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-      cancelSubscription: v,
-      error: S,
+      cancelSubscription: S,
+      error: v,
       submitting: T
     } = N(O), I = async () => {
-      await v(b.id) && _()
+      await S(b.id) && _()
     }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(b.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
       numChannels: y.length,
       numAdditionalBenefits: A.length,
@@ -69,8 +69,8 @@ let N = e => {
           className: x.closeButton,
           onClick: _
         })]
-      }), null != S ? (0, r.jsx)(l.kzN, {
-        children: S.message
+      }), null != v ? (0, r.jsx)(l.kzN, {
+        children: v.message
       }) : null, (0, r.jsxs)(l.hzk, {
         className: x.content,
         children: [(0, r.jsx)(l.X6q, {

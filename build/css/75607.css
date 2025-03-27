@@ -1,6 +1,6 @@
 /**
   Module ID: 75607
-  Original File Name: 71f0fa0424c71783
+  Original File Name: 49d74b0f8b6fe5ca
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -706,6 +706,27 @@ h1.title_feb59c,h2.title_feb59c {
     align-items: center
 }
 
+.container_d79086 {
+    display: inline-block;
+    vertical-align: top;
+    cursor: revert;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    contain: paint
+}
+
+.animatedText_d79086 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    transform-style: preserve-3d;
+    pointer-events: none;
+    width: 100%
+}
+
 .container__58c96 {
     padding: 8px 16px;
     background-color: var(--brand-500);
@@ -892,7 +913,23 @@ h1.title_feb59c,h2.title_feb59c {
 
 .menuItemLabel_af7fb7 {
     flex: 1;
-    display: flex
+    display: flex;
+    text-align: left
+}
+
+.menuItemIcon_af7fb7 {
+    align-self: flex-start;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.menuItemLabelHeader_af7fb7 {
+    display: flex;
+    align-items: center;
+    gap: 8px
 }
 
 .menuItemColor_af7fb7 {
@@ -951,6 +988,18 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: -6px
 }
 
+.durationButtons_af7fb7 {
+    margin-top: 6px;
+    margin-bottom: 2px;
+    display: flex;
+    grid-column-start: 2;
+    justify-content: space-between
+}
+
+.durationButton_af7fb7 {
+    height: 28px
+}
+
 .status_af7fb7 {
     grid-area: status span 2;
     display: flex;
@@ -1000,6 +1049,31 @@ h1.title_feb59c,h2.title_feb59c {
     display: flex;
     align-items: center;
     gap: 3px
+}
+
+.container__6bab6 {
+    padding: 8px 16px;
+    background-color: var(--brand-500);
+    color: var(--white);
+    position: relative;
+    border-radius: var(--radius-sm);
+    width: 160px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    bottom: 4px
+}
+
+.pointer__6bab6 {
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: 8px solid var(--brand-500);
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    pointer-events: none
 }
 
 .profileThemesArt__0a176 {
@@ -16975,4 +17049,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=71f0fa0424c71783.css.map*/
+/*# sourceMappingURL=49d74b0f8b6fe5ca.css.map*/

@@ -76,13 +76,13 @@ function O() {
   }, "footer")
 }
 
-function v() {
+function S() {
   return (0, r.jsx)(C, {
     height: 8
   }, "header")
 }
 
-function S() {
+function v() {
   return (0, r.jsx)("div", {
     className: x.voiceListSearchEmpty,
     children: (0, r.jsx)(a.Text, {
@@ -251,7 +251,7 @@ function I(e) {
           "aria-autocomplete": "list",
           spellCheck: !1
         })
-      }), 0 === D && "" !== T && (0, r.jsx)(S, {}), (D > 0 || "" === T) && (0, r.jsx)(a.Tvr, {
+      }), 0 === D && "" !== T && (0, r.jsx)(v, {}), (D > 0 || "" === T) && (0, r.jsx)(a.Tvr, {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.NW.string(f.t["+N3fW1"]),
@@ -284,7 +284,7 @@ function I(e) {
             }) : null
           }, i.id)
         },
-        renderListHeader: v,
+        renderListHeader: S,
         renderFooter: O,
         sectionHeight: 0,
         rowHeight: 34,

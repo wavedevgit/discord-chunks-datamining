@@ -56,14 +56,14 @@ function E(e) {
   }
   let C = (0, u.FI)(m[N.PC.CREATED_AT], h),
     O = null,
-    v = b.NW.string(b.t.wzzjk5);
+    S = b.NW.string(b.t.wzzjk5);
   return (null == j || 0 === j.length) && null == C && (O = (0, r.jsx)(l.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
     children: b.NW.format(b.t.Up2ni4, {
       helpdeskUrl: f.Z.getArticleURL(x.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), v = b.NW.string(b.t["LVh3//"])), a && (v = b.NW.string(b.t.i4jeWV)), (0, r.jsxs)("div", {
+  }, "label"), S = b.NW.string(b.t["LVh3//"])), a && (S = b.NW.string(b.t.i4jeWV)), (0, r.jsxs)("div", {
     className: _.metadataContainer,
     children: [O, null == j ? void 0 : j.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < j.length - 1 ? (0, r.jsx)("span", {
@@ -86,7 +86,7 @@ function E(e) {
       disabled: a,
       "aria-label": b.NW.string(b.t.sCkLYG),
       onClick: a ? void 0 : E,
-      children: v
+      children: S
     }, "refresh-button")]
   })
 }

@@ -23,8 +23,8 @@ var r, i = n(200651),
   j = n(942833),
   C = n(400916),
   O = n(916001),
-  v = n(539290),
-  S = n(336197),
+  S = n(539290),
+  v = n(336197),
   T = n(690221),
   I = n(219929),
   y = n(307643),
@@ -177,7 +177,7 @@ function el(e) {
   } = e, r = (0, _.hO)(t, n, {
     requireCurrentGuild: !1
   }), a = (0, j.C)(r), l = (0, m.e7)([D.Z], () => D.Z.getGuild(t)), o = (null == r ? void 0 : r.role_id) != null && (null == r ? void 0 : r.attachments_count) === 0 ? q.NW.string(q.t.H11qcX) : a, c = s.useCallback(async () => {
-    (null == l ? void 0 : l.hasFeature(z.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0 ? await (0, S.Z)(z.Z5c.GUILD_PRODUCT(t, n)) : await (0, S.Z)(z.Z5c.CHANNEL(t)), (0, p.xf)()
+    (null == l ? void 0 : l.hasFeature(z.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0 ? await (0, v.Z)(z.Z5c.GUILD_PRODUCT(t, n)) : await (0, v.Z)(z.Z5c.CHANNEL(t)), (0, p.xf)()
   }, [l, t, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [null != o && (0, i.jsx)(ea, {
@@ -611,9 +611,9 @@ class ec extends(r = s.PureComponent) {
     return e.isGuildProductPurchase ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
         className: X.sectionDivider
-      }), e.isSoftDeletedProduct ? (0, i.jsx)(v.Z, {
+      }), e.isSoftDeletedProduct ? (0, i.jsx)(S.Z, {
         className: X.warningBlock,
-        buttonPosition: v.E.RIGHT,
+        buttonPosition: S.E.RIGHT,
         notice: q.NW.string(q.t["3AvulJ"]),
         ctaLabel: q.NW.string(q.t.zoztQE),
         onClick: () => (0, h.Z)(ee(n))

@@ -25,8 +25,8 @@ var r = n(200651),
   j = n(165583),
   C = n(197115),
   O = n(504983),
-  v = n(626135),
-  S = n(210887),
+  S = n(626135),
+  v = n(210887),
   T = n(981631),
   I = n(921944),
   y = n(474936),
@@ -49,7 +49,7 @@ let R = () => {
     }, {
       autoTrackExposure: !u,
       disable: u
-    }), N = (0, x.Q3)("UserSettingsAppearanceClientThemes"), S = () => !a || l ? null : (0, r.jsxs)("div", {
+    }), N = (0, x.Q3)("UserSettingsAppearanceClientThemes"), v = () => !a || l ? null : (0, r.jsxs)("div", {
       className: P.tryItOutButtons,
       children: [(0, r.jsx)(o.zxk, {
         size: o.zxk.Sizes.MEDIUM,
@@ -66,7 +66,7 @@ let R = () => {
       })]
     });
     return i.useEffect(() => {
-      a && v.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+      a && S.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
         type: y.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
@@ -76,7 +76,7 @@ let R = () => {
         children: p ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(f.ZP.BasicAndGradient, {
             className: P.basicThemeSelectors,
-            renderCTAButtons: S
+            renderCTAButtons: v
           }), N && (0, r.jsx)(Z, {})]
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(f.ZP.Basic, {
@@ -87,7 +87,7 @@ let R = () => {
             type: O.Y.PREMIUM,
             children: [(0, r.jsx)(f.ZP.Gradient, {
               disabled: a,
-              renderCTAButtons: S
+              renderCTAButtons: v
             }), l && a && (0, r.jsxs)("div", {
               children: [(0, r.jsx)(o.zxk, {
                 className: P.previewThemeButtonWide,
@@ -115,10 +115,10 @@ function Z() {
     useForcedColors: t,
     gradientPreset: n,
     darkSidebar: i
-  } = (0, s.cj)([S.Z, u.Z, h.Z], () => ({
-    theme: S.Z.theme,
+  } = (0, s.cj)([v.Z, u.Z, h.Z], () => ({
+    theme: v.Z.theme,
     useForcedColors: u.Z.useForcedColors,
-    darkSidebar: S.Z.darkSidebar,
+    darkSidebar: v.Z.darkSidebar,
     gradientPreset: h.Z.gradientPreset
   }));
   return e !== T.BRd.LIGHT ? null : (0, r.jsx)(o.j7V, {

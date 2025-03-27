@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(888496),
   C = n(605236),
   O = n(565138),
-  v = n(297700),
-  S = n(553795),
+  S = n(297700),
+  v = n(553795),
   T = n(430824),
   I = n(771845),
   y = n(246946),
@@ -70,10 +70,10 @@ let F = e => {
       isJoining: a,
       joinErrorMessage: o,
       showJoinErrorMessage: c
-    } = (0, l.cj)([S.Z], () => ({
-      isJoining: S.Z.isJoining(s.id),
-      joinErrorMessage: "" === S.Z.joinErrorMessage(s.id) ? M.NW.string(M.t.j2d6Ki) : S.Z.joinErrorMessage(s.id),
-      showJoinErrorMessage: void 0 !== S.Z.joinErrorMessage(s.id)
+    } = (0, l.cj)([v.Z], () => ({
+      isJoining: v.Z.isJoining(s.id),
+      joinErrorMessage: "" === v.Z.joinErrorMessage(s.id) ? M.NW.string(M.t.j2d6Ki) : v.Z.joinErrorMessage(s.id),
+      showJoinErrorMessage: void 0 !== v.Z.joinErrorMessage(s.id)
     }), [s.id]);
   return null != (0, l.e7)([T.Z], () => T.Z.getGuild(s.guild.id), [s.guild.id]) || (i = (0, r.jsx)(u.zxk, {
     size: u.PhG.SMALL,
@@ -126,7 +126,7 @@ function H(e) {
     } = e,
     [h, x] = i.useState(o.friendSync),
     [C, O] = i.useState(o.visibility),
-    [S, T] = i.useState(o.metadataVisibility),
+    [v, T] = i.useState(o.metadataVisibility),
     [I, y] = i.useState(o.showActivity),
     [A, R] = i.useState(null),
     [B, V] = i.useState(null),
@@ -185,7 +185,7 @@ function H(e) {
         text: M.NW.string(M.t.Jebrw8),
         children: e => {
           var t, n;
-          return (0, r.jsx)(v.Z, (t = G({}, e), n = n = {
+          return (0, r.jsx)(S.Z, (t = G({}, e), n = n = {
             color: c.Z.unsafe_rawColors.TWITTER.css,
             children: (0, r.jsx)(u.kmB, {
               size: "xs",
@@ -344,7 +344,7 @@ function H(e) {
     })), (null === (t = N.Z.get(o.type)) || void 0 === t ? void 0 : t.hasMetadata) === !0 && (a = (0, r.jsx)(u.j7V, {
       className: U.connectionOptionSwitch,
       hideBorder: !0,
-      value: 1 === S,
+      value: 1 === v,
       onChange: function(e) {
         let {
           verified: t
@@ -541,8 +541,8 @@ function q(e) {
 }
 let X = () => {
   let e = (0, l.e7)([y.Z], () => y.Z.hidePersonalInformation),
-    t = (0, l.e7)([S.Z], () => S.Z.isFetching()),
-    n = (0, l.e7)([S.Z], () => S.Z.getAccounts()),
+    t = (0, l.e7)([v.Z], () => v.Z.isFetching()),
+    n = (0, l.e7)([v.Z], () => v.Z.getAccounts()),
     s = (0, x.ZP)();
   (0, l.e7)([I.ZP], () => I.ZP.getFlattenedGuildIds());
   let a = (0, l.e7)([R.default], () => R.default.locale);

@@ -24,8 +24,8 @@ var r = n(399606),
   j = n(680313),
   C = n(926433),
   O = n(302036),
-  v = n(994554),
-  S = n(1549),
+  S = n(994554),
+  v = n(1549),
   T = n(13327),
   I = n(59137),
   y = n(405991),
@@ -132,19 +132,19 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       stickers: {
         title: g.NW.string(g.t["1c+xwc"]),
         description: g.NW.string(g.t.hJG8ZG),
-        imageSource: B(n, v, k),
+        imageSource: B(n, S, k),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: g.NW.string(g.t.tzdIwM),
         description: g.NW.string(g.t.hJG8ZG),
-        imageSource: B(n, v, k),
+        imageSource: B(n, S, k),
         imageClassName: t.stickersImage
       },
       stickersPerkDiscoverability: {
         title: g.NW.string(g.t.tzdIwM),
         description: g.NW.string(g.t.FXlU29),
-        imageSource: B(n, v, k),
+        imageSource: B(n, S, k),
         imageClassName: t.stickersImage
       },
       streaming: {
@@ -156,7 +156,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       superReactions: {
         title: g.NW.string(g.t.uZt5q6),
         description: g.NW.string(g.t.ZK3Zoa),
-        imageSource: B(n, S, T),
+        imageSource: B(n, v, T),
         imageClassName: t.superReactionsImage
       },
       upload: {

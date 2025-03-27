@@ -55,8 +55,8 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = "isDefault";
-class S extends(r = s.PureComponent) {
+let S = "isDefault";
+class v extends(r = s.PureComponent) {
   componentWillUnmount() {
     u.Z.wait(() => {
       (0, m._H)(), (0, m.w7)()
@@ -204,9 +204,9 @@ class S extends(r = s.PureComponent) {
             }) : _.NW.string(_.t.VXndys)
           })]
         }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, i.jsx)(d.XZJ, {
-          name: v,
+          name: S,
           value: a,
-          onChange: (e, t) => this.handleFieldChange(t, v),
+          onChange: (e, t) => this.handleFieldChange(t, S),
           type: d.XZJ.Types.INVERTED,
           className: E.defaultSection,
           children: (0, i.jsx)(d.Text, {
@@ -292,7 +292,7 @@ class S extends(r = s.PureComponent) {
     }
   }
 }
-j(S, "defaultProps", {
+j(v, "defaultProps", {
   onDelete: () => {},
   onSubmit: () => {},
   onCancel: () => {}
@@ -300,4 +300,4 @@ j(S, "defaultProps", {
 let T = c.ZP.connectStores([h.Z], () => ({
   updateError: h.Z.editSourceError,
   removeError: h.Z.removeSourceError
-}))(S)
+}))(v)

@@ -1,6 +1,6 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  Z: () => S
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -24,7 +24,7 @@ var r = n(200651),
   j = n(474936),
   C = n(388032),
   O = n(370623);
-let v = e => {
+let S = e => {
     let t, {
       trialOffer: n,
       discountOffer: i
@@ -40,11 +40,11 @@ let v = e => {
       })
     })
   },
-  S = i.forwardRef((e, t) => {
+  v = i.forwardRef((e, t) => {
     var n, i;
     let {
       isFullscreen: s,
-      className: S,
+      className: v,
       buttonClassName: T,
       subscriptionTier: I,
       entrypoint: y,
@@ -56,11 +56,11 @@ let v = e => {
       value: P,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: a()(O.container, O.marketingPageV2Container, S),
+        className: a()(O.container, O.marketingPageV2Container, v),
         "data-testid": "v2-marketing-page-hero-header",
         children: (0, r.jsxs)("div", {
           className: O.marketingPageV2TextContainer,
-          children: [k && (0, r.jsx)(v, {
+          children: [k && (0, r.jsx)(S, {
             trialOffer: w,
             discountOffer: D
           }), (0, r.jsx)(o.X6q, {

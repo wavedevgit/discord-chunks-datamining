@@ -58,8 +58,8 @@ function C(e) {
     onLearnMore: t,
     selectedBackgroundOption: C,
     onSelectBackgroundOption: O,
-    currentDeviceId: v,
-    smallerBackgroundOptions: S,
+    currentDeviceId: S,
+    smallerBackgroundOptions: v,
     className: T
   } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
   i.useEffect(() => {
@@ -82,15 +82,15 @@ function C(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = W.current;
-    e ? (0, g.FU)(n, v, {
+    e ? (0, g.FU)(n, S, {
       track: !1
     }).catch(() => t(null)) : null != n && t(null)
-  }, [v]);
+  }, [S]);
   let L = e => {
-    O(e), (0, g.FU)(e, v, {
+    O(e), (0, g.FU)(e, S, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(b.NW.string(b.t.ejrSLS)), (0, g.FU)(null, v, {
+      A(b.NW.string(b.t.ejrSLS)), (0, g.FU)(null, S, {
         location: w.location
       })
     })
@@ -131,7 +131,7 @@ function C(e) {
           r()
         })
       },
-      smallerOptions: S
+      smallerOptions: v
     })]
   }) : null
 }

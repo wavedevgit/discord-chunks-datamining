@@ -44,10 +44,10 @@ let N = s().throttle(function(e, t) {
       return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
     }(E, e),
     O = e > 0 ? 0 : C.length - 1,
-    v = x(E, _),
-    S = v.indexOf(j) + e;
+    S = x(E, _),
+    v = S.indexOf(j) + e;
   for (; null != E && "" !== E;) {
-    if (l = v[S], f(E))
+    if (l = S[v], f(E))
       for (; null != l && "" !== l;) {
         if ("string" == typeof l) {
           if (m(E, l)) return (0, p.K)(E, l, !1, b(E, l))
@@ -87,10 +87,10 @@ let N = s().throttle(function(e, t) {
             guildId: E
           }))
         });
-        S += e, l = v[S]
+        v += e, l = S[v]
       }
     if (O += e, null == (E = C[O]) || "" === E) break;
-    v = x(E, _), S = e < 0 ? v.length - 1 : 0
+    S = x(E, _), v = e < 0 ? S.length - 1 : 0
   }
   g.S.dispatch(h.CkL.SHAKE_APP, {
     duration: 200,

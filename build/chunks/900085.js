@@ -1,4 +1,4 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -13,8 +13,8 @@ var r, i = n(200651),
   p = n(134616),
   f = n(714338),
   h = n(212819),
-  _ = n(815372),
-  m = n(14429),
+  m = n(815372),
+  _ = n(14429),
   b = n(576855),
   g = n(313201),
   E = n(991346),
@@ -456,7 +456,7 @@ class K extends o.PureComponent {
         selectedIndex: r
       } = this.props, {
         showScores: o
-      } = m.Z.getCurrentConfig({
+      } = _.Z.getCurrentConfig({
         location: "62f4be_1"
       }, {
         autoTrackExposure: !1
@@ -552,7 +552,7 @@ class K extends o.PureComponent {
             navigationRecord: n.record,
             score: o ? n.score : void 0,
             id: this.getRowId(t),
-            children: n.record.type === _.Ky.SETTINGS && (0, i.jsx)("div", {
+            children: n.record.type === m.Ky.SETTINGS && (0, i.jsx)("div", {
               className: M.miscContainer,
               children: k.NW.string(k.t["3D5yo6"])
             })

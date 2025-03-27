@@ -1,6 +1,6 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -24,11 +24,11 @@ var r = n(200651),
   j = n(388032),
   C = n(951084),
   O = n(865215);
-let v = e => {
+let S = e => {
   let t, n, {
       isAllPerksVisible: s,
-      setIsAllPerksVisible: v,
-      previousComponent: S,
+      setIsAllPerksVisible: S,
+      previousComponent: v,
       isFullScreen: T
     } = e,
     I = i.useRef(null),
@@ -60,9 +60,9 @@ let v = e => {
         children: [(0, r.jsx)(f.Z, {
           className: C.heroHeading,
           onBackClick: () => {
-            v(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
+            S(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
               current_component: b.MQ.SEE_ALL,
-              next_component: S,
+              next_component: v,
               interaction_component: "Back Button"
             })
           }

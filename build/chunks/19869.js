@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(931928),
   C = n(450272),
   O = n(981631),
-  v = n(388032),
-  S = n(747431),
+  S = n(388032),
+  v = n(747431),
   T = n(701905);
 
 function I() {
@@ -65,7 +65,7 @@ function y() {
     }), (0, r.jsx)(C.E_, {
       label: "Balance Widget Menu",
       children: (0, r.jsx)(N.V9, {
-        ctaText: v.NW.string(v.t["J+vlIS"]),
+        ctaText: S.NW.string(S.t["J+vlIS"]),
         ctaOnClick: O.dG4,
         isCoachmarkEnabled: !1
       })
@@ -152,14 +152,14 @@ function y() {
         },
         children: "Enter a number and click Set Balance to see the balance widget pill update:"
       }), (0, r.jsx)(a.FiK, {
-        className: S.numberInput,
+        className: v.numberInput,
         value: t,
         onChange: e => n(e)
       }), (0, r.jsx)(s.zx, {
         onClick: () => h(t),
         children: "Set Balance"
       }), (0, r.jsx)("div", {
-        className: S.interactivePillContainer,
+        className: v.interactivePillContainer,
         children: (0, r.jsx)(b.A4, {
           balance: p,
           balanceWidgetMode: j,
@@ -172,7 +172,7 @@ function y() {
         },
         children: "Enter a number (loading time in milliseconds) and click Simulate Loading State to see the balance widget pill update:"
       }), (0, r.jsx)(a.FiK, {
-        className: S.numberInput,
+        className: v.numberInput,
         value: _,
         onChange: e => E(e)
       }), (0, r.jsx)(s.zx, {
@@ -183,7 +183,7 @@ function y() {
         },
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
-        className: S.interactivePillContainer,
+        className: v.interactivePillContainer,
         children: (0, r.jsx)(b.A4, {
           balance: p,
           balanceWidgetMode: j,
@@ -193,8 +193,8 @@ function y() {
     }), (0, r.jsx)(C.E_, {
       label: "Balance Widget Card",
       children: (0, r.jsx)(x.L, {
-        ctaText: v.NW.string(v.t["H57f4+"]),
-        linkText: v.NW.string(v.t["7f4H7O"]),
+        ctaText: S.NW.string(S.t["H57f4+"]),
+        linkText: S.NW.string(S.t["7f4H7O"]),
         ctaOnClick: O.dG4
       })
     })]

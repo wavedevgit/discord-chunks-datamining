@@ -85,7 +85,7 @@ function j() {
       })
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Add Payment Step Body Connector View",
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(S, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, r.jsx)(o.X6q, {
@@ -104,7 +104,7 @@ function j() {
       })
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Add Payment Step Body Connector View",
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(S, {
         paymentRequestWallet: "applePay"
       })
     })]
@@ -151,7 +151,7 @@ function O(e) {
   })
 }
 
-function v(e) {
+function S(e) {
   let {
     paymentRequestWallet: t
   } = e, n = i.useRef(null), [s, a] = i.useState(!1), l = () => {
@@ -175,7 +175,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function v(e) {
   let {
     children: t
   } = e;
@@ -202,7 +202,7 @@ function T() {
       children: "Choose Payment Source Type Component"
     }), (0, r.jsx)(h.E_, {
       label: "All Payment Request Wallets Enabled",
-      children: (0, r.jsx)(S, {
+      children: (0, r.jsx)(v, {
         children: (0, r.jsx)(c.ZP, _(b({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
@@ -210,7 +210,7 @@ function T() {
       })
     }), (0, r.jsx)(h.E_, {
       label: "No Payment Wallets Enabled",
-      children: (0, r.jsx)(S, {
+      children: (0, r.jsx)(v, {
         children: (0, r.jsx)(c.ZP, _(b({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -218,7 +218,7 @@ function T() {
       })
     }), (0, r.jsx)(h.E_, {
       label: "Is Eligible for Trial",
-      children: (0, r.jsx)(S, {
+      children: (0, r.jsx)(v, {
         children: (0, r.jsx)(c.ZP, _(b({}, e), {
           isEligibleForTrial: !0,
           onChooseType: () => {},

@@ -1,49 +1,49 @@
-/** Chunk was on 62880 **/
-l.d(n, {
-  Z: () => u,
-  j: () => o
+/** Chunk was on 87791 **/
+n.d(t, {
+  Z: () => d,
+  j: () => u
 });
-var t = l(200651),
-  i = l(192379),
-  a = l(379357),
-  s = l(442550),
-  r = l(297781),
-  c = l(443487),
-  d = l(563504);
-let o = [r.OV, r.EE, r.Af, r.U9, r.n8, r.pQ],
-  u = i.memo(e => {
+var r = n(200651),
+  i = n(192379),
+  o = n(379357),
+  l = n(442550),
+  a = n(297781),
+  s = n(443487),
+  c = n(563504);
+let u = [a.OV, a.EE, a.Af, a.U9, a.n8, a.pQ],
+  d = i.memo(e => {
     let {
-      entry: n,
-      channel: l,
+      entry: t,
+      channel: n,
       selected: i,
-      hovered: u
+      hovered: d
     } = e, {
-      largeImage: x
-    } = (0, a.rv)({
-      entry: n,
+      largeImage: p
+    } = (0, o.rv)({
+      entry: t,
       showCoverImage: !1
     });
-    return (0, t.jsxs)(c.Zb, {
+    return (0, r.jsxs)(s.Zb, {
       selected: i,
-      children: [(0, t.jsxs)(c.e$, {
-        children: [(0, t.jsx)(c.F9, {
-          entry: n,
-          channelId: l.id,
-          guildId: l.guild_id
-        }), (0, t.jsx)(c.ll, {
-          children: n.extra.activity_name
-        }), (0, t.jsx)(r.Gk, {
-          location: r.Gt.CARD,
-          children: o.map((e, l) => (0, t.jsx)(e, {
-            entry: n,
-            hovered: u
-          }, l))
+      children: [(0, r.jsxs)(s.e$, {
+        children: [(0, r.jsx)(s.F9, {
+          entry: t,
+          channelId: n.id,
+          guildId: n.guild_id
+        }), (0, r.jsx)(s.ll, {
+          children: t.extra.activity_name
+        }), (0, r.jsx)(a.Gk, {
+          location: a.Gt.CARD,
+          children: u.map((e, n) => (0, r.jsx)(e, {
+            entry: t,
+            hovered: d
+          }, n))
         })]
-      }), (0, t.jsx)(s.f, {
-        alt: null == x ? void 0 : x.alt,
-        src: null == x ? void 0 : x.src,
+      }), (0, r.jsx)(l.f, {
+        alt: null == p ? void 0 : p.alt,
+        src: null == p ? void 0 : p.src,
         size: 48,
-        className: d.thumbnail
+        className: c.thumbnail
       })]
     })
   })

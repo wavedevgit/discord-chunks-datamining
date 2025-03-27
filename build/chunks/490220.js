@@ -30,7 +30,7 @@ function m(e) {
     tryItOutAvatar: j,
     tryItOutBanner: C,
     tryItOutAvatarDecoration: O,
-    tryItOutProfileEffectId: v
+    tryItOutProfileEffectId: S
   } = (0, s.cj)([c.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -48,7 +48,7 @@ function m(e) {
       })
     }
     return e
-  })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), S = (0, o.SD)({
+  })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), v = (0, o.SD)({
     userId: m.id,
     image: null != j ? j : f
   }), T = (0, l.Z)(O, !1);
@@ -58,10 +58,10 @@ function m(e) {
     pendingPronouns: b,
     pendingBio: _,
     pendingBanner: null !== (t = null != C ? C : x) && void 0 !== t ? t : n(466045),
-    pendingAvatar: S,
+    pendingAvatar: v,
     pendingThemeColors: null != E ? E : N,
     pendingAvatarDecoration: T,
-    pendingProfileEffectId: v,
+    pendingProfileEffectId: S,
     avatarClassName: null != j || null != f || h.enabled ? void 0 : u.spinningAvatar,
     canUsePremiumCustomization: !0,
     isTryItOutFlow: !0,

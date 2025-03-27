@@ -25,8 +25,8 @@ var i = n(120356),
   j = n(386733),
   C = n(474936),
   O = n(981631),
-  v = n(388032),
-  S = n(267625),
+  S = n(388032),
+  v = n(267625),
   T = n(872905),
   I = n(578478);
 
@@ -57,24 +57,24 @@ let A = e => {
       headingBottom: l
     } = Z();
     return (0, r.jsxs)("div", {
-      className: s()(S.container, t),
+      className: s()(v.container, t),
       "data-testid": "subscriber-nitro-home-hero-header",
       children: [(0, r.jsx)("img", {
         src: T,
         alt: "",
-        className: S.headerArt
+        className: v.headerArt
       }), (0, r.jsxs)("div", {
-        className: S.content,
+        className: v.content,
         children: [i, (0, r.jsx)(a.X6q, {
           variant: "display-lg",
           color: "always-white",
           children: n
         }), l, (0, r.jsx)("div", {
-          className: S.buttonContainer,
+          className: v.buttonContainer,
           children: (0, r.jsx)(b.Z, {
             color: a.Ttl.BRAND,
-            buttonText: v.NW.string(v.t["3KomGR"]),
-            className: S.button,
+            buttonText: S.NW.string(S.t["3KomGR"]),
+            className: v.button,
             isGift: !0
           })
         })]
@@ -99,22 +99,22 @@ let A = e => {
       children: [(0, r.jsx)("img", {
         src: I,
         alt: "",
-        className: S.headerArtV2
+        className: v.headerArtV2
       }), (0, r.jsx)("div", {
-        className: S.containerV2,
+        className: v.containerV2,
         "data-testid": "subscriber-nitro-home-hero-header",
         children: (0, r.jsxs)("div", {
-          className: S.contentV2,
+          className: v.contentV2,
           children: [l, (0, r.jsx)(a.X6q, {
             variant: "display-lg",
             color: "always-white",
             children: s
           }), o, i && (0, r.jsx)("div", {
-            className: S.buttonContainer,
+            className: v.buttonContainer,
             children: (0, r.jsx)(b.Z, {
               color: a.Ttl.BRAND,
-              buttonText: v.NW.string(v.t["3KomGR"]),
-              className: S.button,
+              buttonText: S.NW.string(S.t["3KomGR"]),
+              className: v.button,
               isGift: !0
             })
           }), (0, r.jsx)(j.Z, {})]
@@ -130,14 +130,14 @@ let A = e => {
       children: [(0, r.jsx)("img", {
         src: I,
         alt: "",
-        className: S.headerArtV2
+        className: v.headerArtV2
       }), (0, r.jsx)("div", {
-        className: S.reverseContainer,
+        className: v.reverseContainer,
         "data-testid": "subscriber-nitro-home-hero-header",
         children: (0, r.jsxs)("div", {
-          className: S.contentV2,
+          className: v.contentV2,
           children: [(0, r.jsx)("div", {
-            className: S.reverseTrialHomeHeader,
+            className: v.reverseTrialHomeHeader,
             children: (0, r.jsx)(a.X6q, {
               variant: "display-lg",
               color: "always-white",
@@ -155,30 +155,30 @@ let A = e => {
       location: n
     } = e, {
       analyticsLocations: i
-    } = (0, o.ZP)(l.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = v.NW.string(v.t.qYKftb), b = (0, N.b)(n), E = (0, r.jsx)(A, {
+    } = (0, o.ZP)(l.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = S.NW.string(S.t.qYKftb), b = (0, N.b)(n), E = (0, r.jsx)(A, {
       className: t
-    }), j = v.NW.string(v.t.ifwQZW), T = !1, {
+    }), j = S.NW.string(S.t.ifwQZW), T = !1, {
       fractionalState: I,
       endsAt: Z
     } = (0, d.Z)(), w = (0, c.Z)(Z, c.a.ENDS_IN);
-    a ? (j = v.NW.string(v.t.ifwQZW), E = (0, r.jsx)(R, {})) : b && (f = v.NW.string(v.t.qYKftb), j = v.NW.string(v.t.ifwQZW), E = (0, r.jsx)(P, {
+    a ? (j = S.NW.string(S.t.ifwQZW), E = (0, r.jsx)(R, {})) : b && (f = S.NW.string(S.t.qYKftb), j = S.NW.string(S.t.ifwQZW), E = (0, r.jsx)(P, {
       location: n
     }));
     let k = null;
     if (I !== C.a$.NONE && !a) {
-      m = !0, f = v.NW.string(v.t.vaqFvb), T = !0;
-      let e = v.NW.format(v.t["yR+oDA"], {
+      m = !0, f = S.NW.string(S.t.vaqFvb), T = !0;
+      let e = S.NW.format(S.t["yR+oDA"], {
         helpCenterLink: g.Z.getArticleURL(O.BhN.FRACTIONAL_PREMIUM_ABOUT)
       });
       k = (0, r.jsx)(u.Z, {
         text: e,
         "aria-label": e.toString(),
-        tooltipClassName: S.tooltip,
+        tooltipClassName: v.tooltip,
         position: "right",
         children: e => {
           var t, n;
           return (0, r.jsx)("div", (t = y({}, e), n = n = {
-            className: S.pillContainer,
+            className: v.pillContainer,
             children: (0, r.jsx)(x.Z, {
               countdownText: w,
               showInfoIcon: !0
@@ -197,14 +197,14 @@ let A = e => {
       })
     }
     let W = {
-        className: s()(S.trialPill, {
-          [S.hidden]: !m
+        className: s()(v.trialPill, {
+          [v.hidden]: !m
         }),
         text: f,
         colorOptions: _.VE.PREMIUM_TIER_2_WHITE_FILL
       },
       L = T ? (0, r.jsx)("div", {
-        className: S.flexCentered,
+        className: v.flexCentered,
         children: (0, r.jsx)(_.mn, y({}, W))
       }) : (0, r.jsx)(_.Cy, y({}, W));
     return (0, r.jsx)(o.Gt, {

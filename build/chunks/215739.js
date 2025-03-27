@@ -40,16 +40,24 @@ class p extends i.Z {
       if (null != t && "0" !== t && l.Z.getStatus() !== c.Skl.ONLINE) {
         let e = new Date(Number(t)).getTime() - new Date().getTime();
         e > 0 ? d.start(e, () => {
-          (0, o.Z)(c.Skl.ONLINE, l.Z.getStatus(), {
+          (0, o.Z)({
+            nextStatus: c.Skl.ONLINE,
+            prevStatus: l.Z.getStatus(),
+            analyticsContext: {
+              location: {
+                object: c.qAy.CUSTOM_STATUS_MANAGER
+              }
+            }
+          })
+        }, !0) : ((0, o.Z)({
+          nextStatus: c.Skl.ONLINE,
+          prevStatus: l.Z.getStatus(),
+          analyticsContext: {
             location: {
               object: c.qAy.CUSTOM_STATUS_MANAGER
             }
-          }, void 0)
-        }, !0) : ((0, o.Z)(c.Skl.ONLINE, l.Z.getStatus(), {
-          location: {
-            object: c.qAy.CUSTOM_STATUS_MANAGER
           }
-        }, void 0), d.stop())
+        }), d.stop())
       } else null != d && d.stop();
       let n = s.fv.getSetting();
       if (null != n && "0" !== n) {

@@ -29,20 +29,20 @@ function O(e) {
     className: t,
     showHeader: n = !0
   } = e, O = u.tU.useSetting(), {
-    enableViewerClipping: v
+    enableViewerClipping: S
   } = d.Z.useExperiment({
     location: "Clips Settings"
   }, {
     autoTrackExposure: !1
   }), {
-    analyticsLocations: S
+    analyticsLocations: v
   } = (0, o.ZP)(), T = (0, g.Go)(), {
     viewerClipsEnabled: I
   } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(m.Z);
   return i.useEffect(() => {
     (0, c.EW)(a.z.CLIPS_SETTINGS_BETA_TAG)
   }), (0, r.jsxs)(o.Gt, {
-    value: S,
+    value: v,
     children: [(T || n) && (0, r.jsx)(l.hjN, {
       className: t,
       tag: l.RB0.H1,
@@ -65,7 +65,7 @@ function O(e) {
           allowVoiceRecording: e
         }),
         children: _.NW.string(_.t.AGDDkJ)
-      }), v && y && (0, r.jsx)(l.j7V, {
+      }), S && y && (0, r.jsx)(l.j7V, {
         hideBorder: !0,
         className: j.formItem,
         value: I,

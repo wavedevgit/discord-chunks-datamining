@@ -45,7 +45,7 @@ function E() {
   let j = (0, m.$6)(t, e) || n,
     C = null != t && a()().diff(a()(t.created_at), "days") < x.eBq,
     O = j && C,
-    v = () => {
+    S = () => {
       _({
         header: N.NW.string(N.t.jxXMEx),
         body: N.NW.format(N.t.fSv59f, {
@@ -95,7 +95,7 @@ function E() {
           } = e;
           return (0, r.jsx)(o.zxk, {
             disabled: j,
-            onClick: v,
+            onClick: S,
             onMouseEnter: t,
             onMouseLeave: i,
             look: o.zxk.Looks.FILLED,

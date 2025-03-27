@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(526167),
   C = n(74538),
   O = n(140465),
-  v = n(278605),
-  S = n(286961),
+  S = n(278605),
+  v = n(286961),
   T = n(351367),
   I = n(91802),
   y = n(639119),
@@ -142,8 +142,8 @@ let eg = e => {
       ej = (0, c.wj)(eE),
       eC = b.default.getCurrentUser(),
       eO = (0, C.I5)(eC),
-      ev = (0, v.xP)("PremiumMarketingHome") && !eO && G,
-      [eS, eT] = i.useState(!1),
+      eS = (0, S.xP)("PremiumMarketingHome") && !eO && G,
+      [ev, eT] = i.useState(!1),
       [eI, ey] = i.useState(!1),
       [eA, eP] = i.useState(!1),
       [eR, eD] = i.useState(!1),
@@ -164,7 +164,7 @@ let eg = e => {
         location: "PremiumMarketingHome"
       }),
       eX = null !== (s = eK || eq) && void 0 !== s && s,
-      eJ = null === (n = (0, S.Z)()) || void 0 === n ? void 0 : n.billingSettingsMarketingBanner,
+      eJ = null === (n = (0, v.Z)()) || void 0 === n ? void 0 : n.billingSettingsMarketingBanner,
       {
         analyticsLocations: eQ
       } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
@@ -190,14 +190,14 @@ let eg = e => {
           active: !0,
           children: (0, r.jsx)(k.ZP, {
             innerRef: ee,
-            variant: ev ? k.NN.MARKETING_PAGE_V2 : k.NN.DEFAULT,
-            showWumpus: !ev,
-            tier0CTAButton: ev ? (0, r.jsx)(J.Z, {
-              forceInverted: ej && !ev,
+            variant: eS ? k.NN.MARKETING_PAGE_V2 : k.NN.DEFAULT,
+            showWumpus: !eS,
+            tier0CTAButton: eS ? (0, r.jsx)(J.Z, {
+              forceInverted: ej && !eS,
               showIcon: !1,
               subscriptionTier: et.Si.TIER_0,
               className: es.marginTopForButtons,
-              buttonTextClassName: ev ? es.v2SubButtonText : es.subButtonText,
+              buttonTextClassName: eS ? es.v2SubButtonText : es.subButtonText,
               buttonShineClassName: es.buttonShine
             }) : (0, r.jsx)(J.Z, {
               forceInverted: !0,
@@ -208,13 +208,13 @@ let eg = e => {
               color: d.Ttl.WHITE,
               buttonShineClassName: es.buttonShine
             }),
-            tier2CTAButton: ez !== et.Si.TIER_0 || ev ? (0, r.jsx)(J.Z, {
-              forceInverted: !ev,
+            tier2CTAButton: ez !== et.Si.TIER_0 || eS ? (0, r.jsx)(J.Z, {
+              forceInverted: !eS,
               showIcon: !1,
               subscriptionTier: et.Si.TIER_2,
               className: es.marginTopForButtons,
               hasActivePromotion: eX,
-              buttonTextClassName: ev ? es.v2SubButtonText : es.subButtonText,
+              buttonTextClassName: eS ? es.v2SubButtonText : es.subButtonText,
               buttonShineClassName: es.buttonShine,
               confirmationFooter: eq ? (0, r.jsx)(L.Z, {}) : void 0,
               planSelectBanner: eq ? (0, r.jsx)(B.Z, {}) : void 0
@@ -233,12 +233,12 @@ let eg = e => {
       e1 = (0, r.jsxs)("div", {
         className: a()(es.container, {
           [es.settingsContainer]: !W,
-          [es.containerBackground]: ev && ej
+          [es.containerBackground]: eS && ej
         }),
         "data-cy": "tier-0-marketing-page",
-        children: [ev && (0, r.jsx)("div", {
+        children: [eS && (0, r.jsx)("div", {
           className: es.heroHeaderSideGradient
-        }), ev && (0, r.jsx)("img", {
+        }), eS && (0, r.jsx)("img", {
           src: ea,
           className: es.heroHeaderBackgroundStars,
           alt: ""
@@ -248,7 +248,7 @@ let eg = e => {
             [es.zIndex1]: eY
           }),
           isFullscreen: W
-        }), !ev && (0, r.jsx)(ep, {
+        }), !eS && (0, r.jsx)(ep, {
           isFullscreen: W,
           inOfferExperience: eY
         }), !W && eV ? (0, r.jsx)(D.Z, {
@@ -256,14 +256,14 @@ let eg = e => {
           smallGap: !0
         }) : (0, r.jsxs)("div", {
           className: a()({
-            [es.heroHeadingV2Container]: ev
+            [es.heroHeadingV2Container]: eS
           }),
           children: [(0, r.jsx)(o.$, {
-            innerRef: ev ? ef : ex,
+            innerRef: eS ? ef : ex,
             onChange: e => eT(e),
             threshold: 0,
             active: !0,
-            children: ev ? (0, r.jsx)(X.Z, {
+            children: eS ? (0, r.jsx)(X.Z, {
               ref: ef,
               subscriptionTier: eM,
               isFullscreen: W || eY,
@@ -273,7 +273,7 @@ let eg = e => {
               ref: ex,
               subscriptionTier: eM,
               isFullscreen: W || eY,
-              isMarketingPageV2Enabled: ev,
+              isMarketingPageV2Enabled: eS,
               className: a()({
                 [es.fullscreenHero]: W,
                 [es.settingsHeroNoBackground]: !W && eY,
@@ -285,10 +285,10 @@ let eg = e => {
               entrypoint: U,
               isDarkMode: ej
             })
-          }), !ev && !0 === eq && (0, r.jsx)(A.W, {
+          }), !eS && !0 === eq && (0, r.jsx)(A.W, {
             isFullScreen: W,
             analyticsLocations: eQ
-          }), ev && (0, r.jsx)("div", {
+          }), eS && (0, r.jsx)("div", {
             className: es.heroHeadingV2ArtContainer,
             children: (0, r.jsx)(f.Z, {
               autoPlay: !e_,
@@ -311,7 +311,7 @@ let eg = e => {
           }), W && eV && (0, r.jsx)(R.Z, {
             localizedPricingPromo: eU
           })]
-        }), !ev && e0, U === et.EZ.UserSettings && null != eJ && (0, r.jsx)(w.C, {
+        }), !eS && e0, U === et.EZ.UserSettings && null != eJ && (0, r.jsx)(w.C, {
           className: es.giftPromoCard,
           config: eJ
         }), (0, r.jsx)(eh, {
@@ -319,18 +319,18 @@ let eg = e => {
           inOfferExperience: eY,
           setIsAllPerksVisible: eF,
           hasRenderedOnce: ew,
-          isMarketingPageV2Enabled: ev,
+          isMarketingPageV2Enabled: eS,
           isReducedMotion: e_
-        }), !ev && (0, r.jsx)(eg, {
+        }), !eS && (0, r.jsx)(eg, {
           isFullscreen: W
-        }), ev && e0, (0, r.jsxs)("div", {
+        }), eS && e0, (0, r.jsxs)("div", {
           className: es.planComparisonTableContainer,
-          children: [ev ? (0, r.jsx)(K.Z, {
+          children: [eS ? (0, r.jsx)(K.Z, {
             className: es.planComparisonTableV2
           }) : (0, r.jsx)(Y.Z, {
             className: es.planComparisonTable,
             hideCTAs: !0
-          }), W && !ev ? (0, r.jsxs)(r.Fragment, {
+          }), W && !eS ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("img", {
               src: eo,
               className: es.tableLeftSideDecoration,
@@ -345,13 +345,13 @@ let eg = e => {
               alt: ei.NW.string(ei.t.X4IxWF)
             })]
           }) : null]
-        }), !ev && (0, r.jsx)("div", {
+        }), !eS && (0, r.jsx)("div", {
           className: W ? es.footerSpacingFullscreen : es.footerSpacing
         }), (0, r.jsx)(z.Z, {
-          isVisible: !eS && !eA && !eI && ew,
+          isVisible: !ev && !eA && !eI && ew,
           isFullscreen: W,
           subscriptionTier: eM,
-          isMarketingPageV2: ev
+          isMarketingPageV2: eS
         }), (0, r.jsx)(o.$, {
           innerRef: eN,
           onChange: e => {
@@ -363,13 +363,13 @@ let eg = e => {
             ref: eN,
             className: es.bottomOfPageVisibilitySensor
           })
-        }), !ev && (0, r.jsx)("img", {
+        }), !eS && (0, r.jsx)("img", {
           src: el,
           className: es.bottomIllustration,
           width: 112,
           height: 85,
           alt: ei.NW.string(ei.t.X4IxWF)
-        }), ev && (0, r.jsx)(o.$, {
+        }), eS && (0, r.jsx)(o.$, {
           innerRef: eb,
           onChange: e => {
             ey(e)

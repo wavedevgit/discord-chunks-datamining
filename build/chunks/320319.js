@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(391110),
   C = n(484239),
   O = n(658370),
-  v = n(735825),
-  S = n(981631),
+  S = n(735825),
+  v = n(981631),
   T = n(921944),
   I = n(388032),
   y = n(194511);
@@ -75,9 +75,9 @@ let R = {
       forceShadow: b,
       cardType: C,
       confettiCanvas: O
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, x.Er)(), V = (0, x.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, x.Er)(), V = (0, x.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === S.EB.REDEEMABLE);
     i.useEffect(() => {
-      t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE && z(!0)
+      t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === S.EB.REDEEMABLE && z(!0)
     }, [V, t, U]);
     let Y = i.useCallback(() => {
         F(!0)
@@ -96,13 +96,13 @@ let R = {
       onHover: ee,
       onUnhover: et
     } = (0, _.Z)(5), en = (0, l.debounce)(() => {
-      f.default.track(S.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
+      f.default.track(v.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
         card_type: (0, l.snakeCase)(t),
         is_tenure_reward: t === E.u.TENURE_REWARD_COLLECTIBLE,
         reward_status: null == U ? void 0 : U.nitroTenureStatus
       })
     }, 800), er = (0, l.debounce)(() => {
-      null != w && f.default.track(S.rMx.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+      null != w && f.default.track(v.rMx.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
         card_type: (0, l.snakeCase)(t),
         function_name: (0, l.snakeCase)(w.name)
       })
@@ -116,7 +116,7 @@ let R = {
     });
     let es = X !== s || null == s || B || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI;
     return (i.useEffect(() => {
-      k && W && (M(!0), f.default.track(S.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+      k && W && (M(!0), f.default.track(v.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
       }), null != s && J(T.L.TAKE_ACTION))
     }, [k, W, s, t, J]), (0, g.Z)({
@@ -206,7 +206,7 @@ let R = {
             [y.reducedMotion]: k
           }),
           onTransitionEnd: e => {
-            W && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (M(!0), f.default.track(S.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+            W && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (M(!0), f.default.track(v.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
               card_type: t
             }), null != s && J(T.L.TAKE_ACTION))
           },
@@ -256,8 +256,8 @@ let Z = i.forwardRef((e, t) => {
     onClick: N,
     backgroundImage: _,
     pillText: E,
-    perkImage: v,
-    imageOverlayText: S
+    perkImage: S,
+    imageOverlayText: v
   } = e, T = x === j.R0.CARD_CAROUSEL_FIRST_ROW || x === j.R0.CARD_CAROUSEL_SECOND_ROW || x === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, b._)(f);
   return (0, r.jsxs)(u.P3F, {
     className: a()(y.card, p, null === (n = A.cardContainer) || void 0 === n ? void 0 : n.className, {
@@ -279,14 +279,14 @@ let Z = i.forwardRef((e, t) => {
       title: i,
       titleClassName: s,
       subtitle: l,
-      perkImage: v,
+      perkImage: S,
       isCarousel: T,
       descriptionCta: c,
       onCtaClick: m,
       perkComponent: h,
       subtitleClassName: y.cardSubtitle,
       cardVariant: f,
-      imageOverlayText: S
+      imageOverlayText: v
     }), I && (0, r.jsx)(O.Z, {
       title: i,
       titleClassName: s,

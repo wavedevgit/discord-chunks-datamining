@@ -23,7 +23,7 @@ function N(e) {
     previewEnabled: t,
     onEnablePreview: n,
     onCancelPreview: N
-  } = e, b = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), C = i.useRef(_), O = (0, o.O)(), v = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
+  } = e, b = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), C = i.useRef(_), O = (0, o.O)(), S = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
   return i.useEffect(() => () => {
     j.current && l.Z.wait(() => (0, d.Up)(C.current))
   }, []), (0, r.jsx)(m.Z, {
@@ -50,7 +50,7 @@ function N(e) {
       children: [(0, r.jsx)("div", {
         className: x.previewImage
       }), (0, r.jsx)(a.ua7, {
-        text: v ? null : f.NW.string(f.t["8jSzSU"]),
+        text: S ? null : f.NW.string(f.t["8jSzSU"]),
         children: e => {
           var t, i;
           return (0, r.jsx)(a.zxk, (t = function(e) {
@@ -72,7 +72,7 @@ function N(e) {
             return e
           }({}, e), i = i = {
             onClick: n,
-            disabled: !v,
+            disabled: !S,
             children: f.NW.string(f.t.JIf4v7)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);

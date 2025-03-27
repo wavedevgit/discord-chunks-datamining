@@ -28,13 +28,13 @@ function _(e) {
     confettiCanvas: E,
     userWasChurned: j = !1,
     userDiscountOffer: C
-  } = e, O = (0, o.ZP)(), v = (0, a.wj)(O) ? N : b, S = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, O = (0, o.ZP)(), S = (0, a.wj)(O) ? N : b, v = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   if (i.useEffect(() => {
-      null != S.current && null != y && I(!0)
-    }, [S, T, y]), null == C || null == y) return null;
+      null != v.current && null != y && I(!0)
+    }, [v, T, y]), null == C || null == y) return null;
   let D = f.NW.format(f.t.gPzMHR, {
       numMonths: C.discount.user_usage_limit,
       discountedPrice: y,
@@ -54,7 +54,7 @@ function _(e) {
       className: x.cancellationHeader,
       onClose: _
     }), (0, r.jsx)("div", {
-      ref: S,
+      ref: v,
       children: (0, r.jsx)(l.hzk, {
         className: x.body,
         children: null != y ? (0, r.jsxs)(r.Fragment, {
@@ -62,7 +62,7 @@ function _(e) {
             className: x.discountAppliedBody,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: v,
+              src: S,
               className: x.nitroIcon
             }), (0, r.jsx)(l.X6q, {
               variant: "heading-xl/bold",
@@ -75,7 +75,7 @@ function _(e) {
         }) : (0, r.jsx)(l.$jN, {})
       })
     }), !R && T && (0, r.jsx)(d.Z, {
-      confettiTarget: S.current,
+      confettiTarget: v.current,
       confettiCanvas: E,
       confettiVelocityMultiplier: .75
     })]

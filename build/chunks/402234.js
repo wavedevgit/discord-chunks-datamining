@@ -9,7 +9,7 @@ var r = n(442837),
 function a(e) {
   let {
     location: t
-  } = e, n = (0, r.e7)([s.Z], () => s.Z.getGameRelationships().size() > 0);
+  } = e, n = (0, r.e7)([s.Z], () => s.Z.getGameRelationshipCount() > 0);
   return (0, i.wn)({
     location: t
   }) && n

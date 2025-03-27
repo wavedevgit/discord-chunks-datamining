@@ -31,8 +31,8 @@ var r = n(192379),
   j = n(944880),
   C = n(513785),
   O = n(106255),
-  v = n(474936),
-  S = n(735825),
+  S = n(474936),
+  v = n(735825),
   T = n(981631);
 
 function I(e) {
@@ -71,19 +71,19 @@ function A() {
   var e;
   let t = function() {
       let e = (0, a.cj)([C.Z], () => C.Z.getState());
-      if (null != e) return e.userTenureRewardStatusByRewardId[S.Ft.FREE_AVATAR_DECO_1_MONTH]
+      if (null != e) return e.userTenureRewardStatusByRewardId[v.Ft.FREE_AVATAR_DECO_1_MONTH]
     }(),
     n = function(e) {
       let t = (0, a.e7)([x.Z], () => {
           var e;
-          return null !== (e = x.Z.getForApplication(v.CL)) && void 0 !== e ? e : R
+          return null !== (e = x.Z.getForApplication(S.CL)) && void 0 !== e ? e : R
         }, [], b.OL),
         n = (0, a.e7)([f.default], () => {
           let e = f.default.getCurrentUser();
-          return null != e && (0, _.M5)(e, v.p9.TIER_2)
+          return null != e && (0, _.M5)(e, S.p9.TIER_2)
         });
       if (null != (0, O.kG)(t) || n) return (0, O.MR)(e, t)
-    }([S.Ft.FREE_AVATAR_DECO_1_MONTH]),
+    }([v.Ft.FREE_AVATAR_DECO_1_MONTH]),
     i = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
     l = null != n,
     o = function() {
@@ -91,7 +91,7 @@ function A() {
         var e;
         return null !== (e = x.Z.getForApplication(T.XAJ)) && void 0 !== e ? e : R
       }, [], b.OL);
-      return (0, O.Cl)(S.qY, e)
+      return (0, O.Cl)(v.qY, e)
     }(),
     c = l && null != o && (0, O.C3)(o.skuId, i),
     d = null !== (e = null == t ? void 0 : t.next_tenure_reward_id) && void 0 !== e ? e : null == n ? void 0 : n.skuId;
@@ -102,13 +102,13 @@ function A() {
       tenureRewardType: (0, O.Xs)(d)
     };
     if (c) return y(I({}, e), {
-      nitroTenureStatus: S.EB.REDEEMED,
+      nitroTenureStatus: v.EB.REDEEMED,
       tenureRewardSkuId: n.skuId,
       showNotification: !0,
       showCard: !0
     });
     if (l) return y(I({}, e), {
-      nitroTenureStatus: S.EB.REDEEMABLE,
+      nitroTenureStatus: v.EB.REDEEMABLE,
       tenureRewardSkuId: n.skuId,
       showNotification: !0,
       showCard: !0
@@ -121,8 +121,8 @@ function A() {
       if (n < 0) return null;
       let i = !1,
         a = !1;
-      return t.next_tenure_reward_id === S.Ft.FREE_AVATAR_DECO_1_MONTH && (a = n <= S.bm, i = n <= S.dF), y(I({}, e), {
-        nitroTenureStatus: S.EB.PENDING,
+      return t.next_tenure_reward_id === v.Ft.FREE_AVATAR_DECO_1_MONTH && (a = n <= v.bm, i = n <= v.dF), y(I({}, e), {
+        nitroTenureStatus: v.EB.PENDING,
         tenureRewardSkuId: t.next_tenure_reward_id,
         redeemableInDays: 0 === r ? 1 : r,
         showNotification: a,
@@ -140,7 +140,7 @@ function P(e) {
   let {
     redeemableInDays: i = 0,
     tenureRewardSkuId: s
-  } = r, l = S.Ft.FREE_AVATAR_DECO_1_MONTH === s ? S.jW : null;
+  } = r, l = v.Ft.FREE_AVATAR_DECO_1_MONTH === s ? v.jW : null;
   if (null == l) return;
   let o = Math.min(l, Math.max(l - i, 0)),
     d = 100 * o / l;
@@ -153,9 +153,9 @@ let R = new Set,
   D = e => {
     if (null == e || (null == e ? void 0 : e.showNotification) === !1) return [];
     switch (e.nitroTenureStatus) {
-      case S.EB.PENDING:
+      case v.EB.PENDING:
         return [l.z.TENURE_REWARD_PENDING];
-      case S.EB.REDEEMABLE:
+      case v.EB.REDEEMABLE:
         return [l.z.TENURE_REWARD_REDEEMABLE];
       default:
         return []
@@ -178,7 +178,7 @@ let R = new Set,
     let t = null === (e = A()) || void 0 === e ? void 0 : e.nitroTenureStatus,
       n = (0, E.cG)({
         location: "Home"
-      }) && null != t && t === S.EB.REDEEMABLE,
+      }) && null != t && t === v.EB.REDEEMABLE,
       [r] = (0, h.US)(n ? [l.z.TENURE_REWARD_REDEEMABLE_CONFETTI] : []);
     return !!n && r === l.z.TENURE_REWARD_REDEEMABLE_CONFETTI
   },
@@ -198,12 +198,12 @@ let R = new Set,
   };
 
 function W() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : v.CL,
+  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S.CL,
     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = (0, a.e7)([x.Z], () => x.Z.isFetchingForApplication(e)),
     i = (0, a.e7)([f.default], () => {
       let e = f.default.getCurrentUser();
-      return null != e && (0, _.M5)(e, v.p9.TIER_2)
+      return null != e && (0, _.M5)(e, S.p9.TIER_2)
     }),
     s = r.useRef(!1);
   r.useEffect(() => {
@@ -216,7 +216,7 @@ function L() {
   let t = (0, E.oY)({
     location: "Home"
   });
-  W(v.CL), W(T.XAJ, t), B(S.qY);
+  W(S.CL), W(T.XAJ, t), B(v.qY);
   let n = A(),
     i = null !== (e = null == n ? void 0 : n.showCard) && void 0 !== e && e;
   r.useEffect(() => {

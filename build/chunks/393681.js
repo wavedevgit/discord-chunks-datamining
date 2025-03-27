@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(303172),
   C = n(518560),
   O = n(921801),
-  v = n(484459),
-  S = n(430824),
+  S = n(484459),
+  v = n(430824),
   T = n(325067),
   I = n(246946),
   y = n(663389),
@@ -84,7 +84,7 @@ class X extends i.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    (0, v.Z)(e.id, e.getAvatarURL(void 0, 80))
+    (0, S.Z)(e.id, e.getAvatarURL(void 0, 80))
   }
   componentWillUnmount() {
     m.Z.clearBackupCodes(), (0, g.Zy)()
@@ -352,7 +352,7 @@ class X extends i.PureComponent {
       {
         currentUser: t
       } = this.props,
-      n = S.Z.getGuilds();
+      n = v.Z.getGuilds();
     if (R.default.keys(n).filter(e => n[e].ownerId === t.id).length > 0) {
       this.setState({
         shouldRenderOwnedGuildsModal: !0

@@ -1,44 +1,52 @@
-/** Chunk was on 75607 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  i: () => i
+  Y: () => r
 });
-var r = n(818083);
-(0, r.B)({
-  kind: "user",
-  id: "2024-01_expiring_status",
-  label: "Expiring status Experiment ",
-  defaultConfig: {
-    expiringStatus: !1
-  },
-  treatments: [{
-    id: 1,
-    label: "allow expiring status",
-    config: {
-      expiringStatus: !0
-    }
-  }]
-});
-let i = (0, r.B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-01_expiring_status_v2",
   label: "Expiring status Experiment V2",
   defaultConfig: {
-    expiringStatus: !1,
-    defaultClickExpire: !1
+    showTempStatusOptions: !1,
+    expiringStatusProfileFeedback: !1,
+    hasNewStrings: !1,
+    hasDefaultClickOption: !1,
+    showNewHelpTooltip: !1,
+    hasButtonStyling: !1
   },
   treatments: [{
     id: 1,
-    label: "allow expiring status",
+    label: "Allow expiring status with profile feedback",
     config: {
-      expiringStatus: !0,
-      defaultClickExpire: !1
+      showTempStatusOptions: !0,
+      expiringStatusProfileFeedback: !0,
+      hasNewStrings: !0,
+      hasDefaultClickOption: !1,
+      showNewHelpTooltip: !1,
+      hasButtonStyling: !1
     }
   }, {
     id: 2,
-    label: "default change status click expires after 24h",
+    label: "Default click expiry and tooltip",
     config: {
-      expiringStatus: !0,
-      defaultClickExpire: !0
+      showTempStatusOptions: !0,
+      expiringStatusProfileFeedback: !0,
+      hasNewStrings: !0,
+      hasDefaultClickOption: !0,
+      showNewHelpTooltip: !0,
+      hasButtonStyling: !1
+    }
+  }, {
+    id: 3,
+    label: "New button inline option styling",
+    config: {
+      showTempStatusOptions: !0,
+      expiringStatusProfileFeedback: !0,
+      hasNewStrings: !0,
+      hasDefaultClickOption: !0,
+      showNewHelpTooltip: !1,
+      hasButtonStyling: !0
     }
   }]
 })

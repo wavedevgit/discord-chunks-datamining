@@ -35,13 +35,13 @@ function j(e) {
     })
   }, [n, t]);
 
-  function v(e, t) {
+  function S(e, t) {
     l.default.track(_.rMx.GUILD_DEFAULT_DMS_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
   }
-  let S = e => {
+  let v = e => {
     (0, h.V)({
       header: E.NW.string(E.t["uUr+GR"]),
       body: E.NW.string(E.t.hjGJBg),
@@ -49,10 +49,10 @@ function j(e) {
       cancelText: E.NW.string(E.t.p89ACg),
       confirmButtonColor: s.zxk.Colors.BRAND,
       onConfirm: () => {
-        u.gR.updateSetting(e), v(e, !1)
+        u.gR.updateSetting(e), S(e, !1)
       },
       onCancel: () => {
-        u.gR.updateSetting(e), u.h2.updateSetting(e ? o.default.keys(a.Z.getGuilds()) : []), v(e, !0)
+        u.gR.updateSetting(e), u.h2.updateSetting(e ? o.default.keys(a.Z.getGuilds()) : []), S(e, !0)
       }
     })
   };
@@ -63,7 +63,7 @@ function j(e) {
       note: E.NW.string(E.t.wbYDfX),
       value: !C,
       onChange: e => {
-        S(!e)
+        v(!e)
       }
     }) : (0, r.jsx)(p.Z, {
       title: E.NW.string(E.t.RAQUSE),

@@ -32,15 +32,15 @@ function N(e) {
     showResetThemeButton: j = !1,
     forcedDivider: C
   } = e, O = (0, u.ZP)(t.id, b), {
-    primaryColor: v,
-    secondaryColor: S
+    primaryColor: S,
+    secondaryColor: v
   } = (0, m.Z)({
     user: t,
     displayProfile: O,
     pendingThemeColors: i,
     isPreview: !0
   }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(b, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
-  if (null == v || null == S) return null;
+  if (null == S || null == v) return null;
   let P = e => {
     a(l()(e, null == O ? void 0 : O.themeColors) ? void 0 : e)
   };
@@ -55,8 +55,8 @@ function N(e) {
       children: [(0, r.jsx)("div", {
         className: x.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
-          onChange: e => P([e, S]),
-          color: v,
+          onChange: e => P([e, v]),
+          color: S,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
@@ -70,8 +70,8 @@ function N(e) {
       }), (0, r.jsx)("div", {
         className: x.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
-          onChange: e => P([v, e]),
-          color: S,
+          onChange: e => P([S, e]),
+          color: v,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {

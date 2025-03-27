@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(358085),
   C = n(709054),
   O = n(362352),
-  v = n(413182),
-  S = n(695346),
+  S = n(413182),
+  v = n(695346),
   T = n(726985),
   I = n(981631),
   y = n(388032),
@@ -34,7 +34,7 @@ var r = n(200651),
 
 function R(e) {
   let t = () => {
-    S.SE.updateSetting(e ? C.default.keys(_.Z.getGuilds()) : [])
+    v.SE.updateSetting(e ? C.default.keys(_.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -80,15 +80,15 @@ function R(e) {
 }
 
 function D() {
-  let e = S.G6.useSetting(),
-    t = S.Wz.useSetting(),
+  let e = v.G6.useSetting(),
+    t = v.Wz.useSetting(),
     n = (0, O.Yd)("activity privacy tab"),
     i = j.isPlatformEmbedded ? y.NW.string(y.t.MznbeH) : y.NW.string(y.t.oKqC4u),
     s = e => {
-      S.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
+      v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
     },
     l = e => {
-      S.Wz.updateSetting(e), R(e !== d.E5.OFF)
+      v.Wz.updateSetting(e), R(e !== d.E5.OFF)
     },
     o = [{
       value: d.E5.ON,
@@ -109,7 +109,7 @@ function D() {
         children: y.NW.string(y.t["8ka8lp"])
       }), (0, r.jsx)(m.j7V, {
         value: e,
-        onChange: e => S.G6.updateSetting(e),
+        onChange: e => v.G6.updateSetting(e),
         note: i,
         children: y.NW.string(y.t["4q/Ewc"])
       }), n ? (0, r.jsxs)(m.xJW, {
@@ -142,8 +142,8 @@ function D() {
 }
 
 function Z() {
-  let e = S.cP.useSetting(),
-    t = S.Ou.useSetting();
+  let e = v.cP.useSetting(),
+    t = v.Ou.useSetting();
   return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, r.jsxs)(m.hjN, {
@@ -155,12 +155,12 @@ function Z() {
       }), (0, r.jsx)(m.j7V, {
         value: e,
         note: y.NW.string(y.t.Hdh7sb),
-        onChange: e => S.cP.updateSetting(e),
+        onChange: e => v.cP.updateSetting(e),
         children: y.NW.string(y.t.WEWQQk)
       }), (0, r.jsx)(m.j7V, {
         value: t,
         note: y.NW.string(y.t.Czr3Bg),
-        onChange: e => S.Ou.updateSetting(e),
+        onChange: e => v.Ou.updateSetting(e),
         children: y.NW.string(y.t.UUvJVl)
       })]
     })
@@ -272,7 +272,7 @@ function B(e) {
     showHeader: n = !0
   } = e, {
     showRedesign: i
-  } = v.b.useExperiment({
+  } = S.b.useExperiment({
     location: "activity privacy tab"
   }), {
     showPerGuildActivityStatusSetting: s

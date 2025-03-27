@@ -1,6 +1,6 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -85,7 +85,7 @@ function O(e) {
   })
 }
 
-function v() {
+function S() {
   let {
     analyticsLocations: e
   } = (0, m.ZP)(), t = (0, l.e7)([p.Z], () => p.Z.getMode()), s = [{

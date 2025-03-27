@@ -1,6 +1,6 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 }), n(47120), n(266796), n(566702);
 var r = n(200651),
   i = n(192379),
@@ -25,7 +25,7 @@ var r = n(200651),
   C = n(388032),
   O = n(365680);
 
-function v() {
+function S() {
   let e;
   let {
     currentSession: t,
@@ -46,7 +46,7 @@ function v() {
         rejectWithError: !0
       })
     },
-    [_, v] = i.useState(new Set);
+    [_, S] = i.useState(new Set);
   return s ? (0, r.jsx)(m.Z, {}) : (e = null == t && 0 === n.length ? u ? (0, r.jsx)("div", {
     className: O.loading,
     children: (0, r.jsx)(d.$jN, {})
@@ -57,7 +57,7 @@ function v() {
         tag: d.RB0.H5,
         title: C.NW.string(C.t.LLS19v),
         titleClassName: O.groupTitle,
-        children: null != t ? (0, r.jsx)(S, {
+        children: null != t ? (0, r.jsx)(v, {
           session: t,
           current: !0
         }) : null
@@ -66,13 +66,13 @@ function v() {
         title: C.NW.string(C.t.xx1MWV),
         titleClassName: O.groupTitle,
         className: O.otherSessions,
-        children: [n.map(e => (0, r.jsx)(S, {
+        children: [n.map(e => (0, r.jsx)(v, {
           session: e,
           useChecks: _.size > 0,
           checked: _.has(e.id_hash),
           setChecked: t => {
             let n = new Set(_);
-            t ? n.add(e.id_hash) : n.delete(e.id_hash), v(n)
+            t ? n.add(e.id_hash) : n.delete(e.id_hash), S(n)
           }
         }, e.id_hash)), (null == a ? void 0 : a.mfaEnabled) ? null : (0, r.jsx)(T, {})]
       })]
@@ -134,7 +134,7 @@ function v() {
   }))
 }
 
-function S(e) {
+function v(e) {
   var t, n, i, s, l;
   let {
     session: o,
@@ -163,7 +163,7 @@ function S(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [N, x].filter(_.lm), v = [f, E].filter(_.lm);
+  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [N, x].filter(_.lm), S = [f, E].filter(_.lm);
   return (0, r.jsxs)("div", {
     className: a()(O.session, c ? O.currentSession : null),
     children: [(0, r.jsx)("div", {
@@ -190,12 +190,12 @@ function S(e) {
         variant: "text-sm/medium",
         className: O.sessionInfoRow,
         children: [(0, r.jsx)("span", {
-          children: v[0]
-        }), v.length > 1 && (0, r.jsxs)(r.Fragment, {
+          children: S[0]
+        }), S.length > 1 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
             children: "\xb7"
           }), (0, r.jsx)("span", {
-            children: v[1]
+            children: S[1]
           })]
         })]
       })]

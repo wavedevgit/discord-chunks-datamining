@@ -33,8 +33,8 @@ let C = {
       ctaText: n,
       ctaOnClick: s,
       isCoachmarkEnabled: O = !0,
-      linkText: v = E.NW.string(E.t.XRdyj4),
-      cardAlignment: S = C.START,
+      linkText: S = E.NW.string(E.t.XRdyj4),
+      cardAlignment: v = C.START,
       className: T
     } = e, {
       balance: I
@@ -91,7 +91,7 @@ let C = {
         onClick: U,
         showNotificationBadge: t
       }), P && (0, r.jsx)("div", {
-        className: a()(j.cardContainer, S, {
+        className: a()(j.cardContainer, v, {
           [j.hidden]: D,
           [j.visible]: !D
         }),
@@ -101,7 +101,7 @@ let C = {
           ctaOnClick: () => {
             U(), s()
           },
-          linkText: v
+          linkText: S
         })
       })]
     })

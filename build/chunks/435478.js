@@ -66,26 +66,27 @@ function h(e) {
   var {
     id: t,
     label: n,
-    icon: c,
-    hint: h,
-    renderSubmenu: f
-  } = e, x = p(e, ["id", "label", "icon", "hint", "renderSubmenu"]);
-  let N = (0, a.JA)(t),
+    sublabel: c,
+    icon: h,
+    hint: f,
+    renderSubmenu: x
+  } = e, N = p(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
+  let b = (0, a.JA)(t),
     {
-      onFocus: b
-    } = N,
-    _ = p(N, ["onFocus"]),
+      onFocus: _
+    } = b,
+    E = p(b, ["onFocus"]),
     {
-      id: E
+      id: j
     } = (0, a.f$)(),
-    [j, C] = i.useState(!1),
-    O = null != f;
+    [C, O] = i.useState(!1),
+    S = null != x;
   i.useLayoutEffect(() => {
-    if (O) return (0, s.N)(E, e => {
-      C(e === t)
+    if (S) return (0, s.N)(j, e => {
+      O(e === t)
     })
-  }, [t, E, O]);
-  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, _, x), {
+  }, [t, j, S]);
+  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, E, N), {
     role: "button",
     look: o.zxk.Looks.BLANK,
     innerClassName: u.menuItemInner,
@@ -94,24 +95,29 @@ function h(e) {
     fullWidth: !0,
     onMouseEnter: () => {
       var t;
-      null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e), b()
+      null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e), _()
     },
-    children: [(0, r.jsx)(c, {
-      size: "xs",
-      color: "currentColor"
+    children: [(0, r.jsx)("div", {
+      className: u.menuItemIcon,
+      children: (0, r.jsx)(h, {
+        size: "xs",
+        color: "currentColor"
+      })
     }), (0, r.jsxs)("div", {
       className: u.menuItemLabel,
-      children: [n, h]
-    }), O && (0, r.jsx)(l.Fbu, {
+      children: [(0, r.jsxs)("div", {
+        children: [n, c]
+      }), f]
+    }), S && (0, r.jsx)(l.Fbu, {
       size: "xs",
       color: "currentColor"
     })]
   }));
-  return O ? (0, r.jsx)(o.yRy, {
+  return S ? (0, r.jsx)(o.yRy, {
     spacing: 0,
-    renderPopout: f,
-    shouldShow: j,
-    onRequestClose: () => C(!1),
+    renderPopout: x,
+    shouldShow: C,
+    onRequestClose: () => O(!0),
     children: v
   }) : v()
 }

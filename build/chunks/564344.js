@@ -1,6 +1,6 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  Z: () => S
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -24,16 +24,16 @@ var r = n(200651),
   j = n(526761),
   C = n(726985),
   O = n(388032),
-  v = n(198270);
+  S = n(198270);
 
-function S() {
+function v() {
   c.Z.useExperiment({
     location: "profile_customization_auto"
   });
   let e = (0, s.e7)([u.Z], () => u.Z.getGuild()),
     t = (0, b.Z)(),
     n = (0, s.e7)([u.Z, f.Z], () => u.Z.showNotice() || f.Z.showNotice()),
-    S = null != e ? e : t,
+    v = null != e ? e : t,
     T = (0, s.e7)([x.default], () => x.default.getCurrentUser()),
     {
       subsection: I,
@@ -56,14 +56,14 @@ function S() {
         }), N.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === j.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)
+      t === j.NB.GUILD && null == e && null != v && (0, d.Fq)(v, A), y(t)
     }
   }
   i.useEffect(() => {
-    null != T && (0, g.Z)(T.id, T.getAvatarURL(null == S ? void 0 : S.id, 80), {
-      guildId: null == S ? void 0 : S.id
+    null != T && (0, g.Z)(T.id, T.getAvatarURL(null == v ? void 0 : v.id, 80), {
+      guildId: null == v ? void 0 : v.id
     })
-  }, [null == S ? void 0 : S.id, T]);
+  }, [null == v ? void 0 : v.id, T]);
   let Z = !0,
     w = !0;
   return P && 1 === R.length && (R.includes(C.s6.PROFILE_SERVER_PROFILES) ? (D(j.NB.GUILD), w = !1) : R.includes(C.s6.PROFILE_USER_PROFILE) && (D(j.NB.USER_PROFILE), Z = !1)), (0, r.jsx)(o.Gt, {
@@ -74,22 +74,22 @@ function S() {
         children: O.NW.string(O.t["vi7f+v"])
       }),
       children: [(0, r.jsxs)(a.njP, {
-        className: v.tabBar,
+        className: S.tabBar,
         type: "top",
         look: "brand",
         selectedItem: I,
         onItemSelect: D,
         children: [w ? (0, r.jsx)(a.njP.Item, {
-          className: v.tabBarItem,
+          className: S.tabBarItem,
           id: j.NB.USER_PROFILE,
           children: O.NW.string(O.t["OU3/Pj"])
         }, j.NB.USER_PROFILE) : null, Z ? (0, r.jsx)(a.njP.Item, {
-          className: v.tabBarItem,
+          className: S.tabBarItem,
           id: j.NB.GUILD,
           children: O.NW.string(O.t.kPHroa)
         }, j.NB.GUILD) : null]
       }), I === j.NB.GUILD ? (0, r.jsx)(m.Z, {
-        selectedGuild: S
+        selectedGuild: v
       }) : (0, r.jsx)(p.Z, {})]
     })
   })

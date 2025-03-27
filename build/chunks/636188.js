@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(678916),
   C = n(981631),
   O = n(190378),
-  v = n(486324),
-  S = n(474936),
+  S = n(486324),
+  v = n(474936),
   T = n(388032),
   I = n(819683);
 
@@ -160,7 +160,7 @@ function D(e) {
   }(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
   let O = (0, d.O)(),
     {
-      analyticsLocations: v
+      analyticsLocations: S
     } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_IMAGE_OPTION),
     P = (0, l.e7)([f.Z], () => null != E && f.Z.hasHotspot(E)),
     D = b ? (0, r.jsx)(p.Z, {
@@ -177,9 +177,9 @@ function D(e) {
 
   function Z() {
     null != E && P && (h.Kw(E), x.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: S.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
+      type: v.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
       location: O.location,
-      location_stack: v
+      location_stack: S
     }))
   }
   return (0, r.jsxs)(o.P3F, A(y({}, j), {
@@ -282,7 +282,7 @@ function k(e) {
   } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, u.ZP)(() => {
     x.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: S.cd.VIDEO_BACKGROUNDS_INLINE,
+      type: v.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
     })
@@ -319,7 +319,7 @@ function W(e) {
             } = e;
             return t(n, r, i)
           },
-          uploadType: v.pC.VIDEO_BACKGROUND,
+          uploadType: S.pC.VIDEO_BACKGROUND,
           filters: l,
           modalTitle: T.NW.string(T.t.yG2pUl),
           imageSpecifications: T.NW.string(T.t["72OaxM"]),

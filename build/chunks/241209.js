@@ -53,7 +53,7 @@ function _(e, t) {
 let E = new RegExp("https?://".concat(null !== (r = window.GLOBAL_ENV.CDN_HOST) && void 0 !== r ? r : ""));
 
 function j(e) {
-  return "string" == typeof e.content ? e.content : v(e.content)
+  return "string" == typeof e.content ? e.content : S(e.content)
 }
 let C = _(b({}, d().defaultRules), {
     heading: _(b({}, d().defaultRules.heading), {
@@ -145,8 +145,8 @@ let C = _(b({}, d().defaultRules), {
     })
   }),
   O = d().parserFor(C),
-  v = d().reactFor(d().ruleOutput(C, "react"));
-class S extends(i = a.PureComponent) {
+  S = d().reactFor(d().ruleOutput(C, "react"));
+class v extends(i = a.PureComponent) {
   render() {
     let {
       className: e,
@@ -163,8 +163,8 @@ class S extends(i = a.PureComponent) {
     })
   }
 }
-N(S, "rules", C), N(S, "defaultProps", {
+N(v, "rules", C), N(v, "defaultProps", {
   parser: O,
-  output: v
+  output: S
 });
-let T = S
+let T = v

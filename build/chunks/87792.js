@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(657825),
   C = n(198952),
   O = n(329242),
-  v = n(895328),
-  S = n(292352),
+  S = n(895328),
+  v = n(292352),
   T = n(981631),
   I = n(378392),
   y = n(388032),
@@ -81,13 +81,13 @@ function D(e) {
     isMoreLoading: p
   } = (0, h.G)({
     onError: n
-  }), x = S.tx.get(t), [b, _] = i.useState(S.iB), C = (0, g.Xi)({
+  }), x = v.tx.get(t), [b, _] = i.useState(v.iB), C = (0, g.Xi)({
     location: "family_center_activity_section_web"
   }), O = i.useCallback(() => {
-    _(e => e + S.iB), u(t)
+    _(e => e + v.iB), u(t)
   }, [t, u]);
   a()(x, "No text for action type");
-  let v = x.sectionHeader(c),
+  let S = x.sectionHeader(c),
     T = i.useCallback(e => {
       let {
         row: t
@@ -105,14 +105,14 @@ function D(e) {
         className: A.sectionHeader,
         variant: "eyebrow",
         color: "header-secondary",
-        children: v
+        children: S
       }), void 0 !== x.sectionDescription ? (0, r.jsx)(o.Text, {
         className: A.sectionDescription,
         variant: "text-md/medium",
         color: "text-muted",
         children: x.sectionDescription(null != s && s, C)
       }) : null]
-    }), [v, x, s, C]);
+    }), [S, x, s, C]);
   if (0 === l.length) return null;
   let R = l.slice(0, b);
   return (0, r.jsxs)("div", {
@@ -136,7 +136,7 @@ function D(e) {
         className: A.loadMore,
         variant: "text-sm/bold",
         children: y.NW.format(I.Z["7dMmJS"], {
-          pageSize: Math.min(c - R.length, S.iB)
+          pageSize: Math.min(c - R.length, v.iB)
         })
       })
     }) : null]
@@ -144,7 +144,7 @@ function D(e) {
 }
 let Z = () => {
     let e = (0, N.Z)(),
-      t = (0, b.mq)(S.ne.ACTIVE),
+      t = (0, b.mq)(v.ne.ACTIVE),
       n = (0, p.o)(y.NW.formatToPlainString(I.Z["7hqFl5"], {
         activeLinks: t.length
       }), y.NW.string(I.Z["Q/D/0d"])),
@@ -188,7 +188,7 @@ let Z = () => {
     })
   },
   k = () => {
-    let e = (0, b.mq)(S.ne.ACTIVE),
+    let e = (0, b.mq)(v.ne.ACTIVE),
       t = (0, l.e7)([u.Z], () => u.Z.getSelectedTeenId()),
       {
         selectTeenUser: n
@@ -211,7 +211,7 @@ let Z = () => {
       serialize: e => e,
       select: e => {
         n(e), c.default.track(T.rMx.FAMILY_CENTER_ACTION, {
-          action: S.YC.SelectTeen
+          action: v.YC.SelectTeen
         })
       },
       isSelected: e => e === t,
@@ -221,7 +221,7 @@ let Z = () => {
   W = e => {
     let {
       userId: t
-    } = e, n = (0, N.Z)(), i = (0, b.mq)(S.ne.ACTIVE), s = (0, m.Qr)(!!n), a = (0, b.Rd)(s);
+    } = e, n = (0, N.Z)(), i = (0, b.mq)(v.ne.ACTIVE), s = (0, m.Qr)(!!n), a = (0, b.Rd)(s);
     return n && 1 !== i.length ? (0, r.jsx)(k, {}) : (0, r.jsx)(w, {
       userId: t,
       subText: a
@@ -230,7 +230,7 @@ let Z = () => {
   L = e => {
     let {
       user: t
-    } = e, n = Array.from(S.tx.entries()), i = (0, f.kE)(), s = (0, m.t3)(), a = (0, b.Rd)(s);
+    } = e, n = Array.from(v.tx.entries()), i = (0, f.kE)(), s = (0, m.t3)(), a = (0, b.Rd)(s);
     return (0, r.jsxs)("div", {
       className: A.container,
       children: [(0, r.jsxs)("div", {
@@ -261,7 +261,7 @@ let Z = () => {
               return (0, r.jsx)(D, {
                 displayType: t
               }, "".concat(t, "-list"))
-            }) : (0, r.jsx)(v.Z, {
+            }) : (0, r.jsx)(S.Z, {
               className: A.emptyActivity,
               text: null != a ? a : ""
             })

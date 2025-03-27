@@ -23,8 +23,8 @@ var r, i = n(200651),
   j = n(78839),
   C = n(74538),
   O = n(807160),
-  v = n(981631),
-  S = n(474936),
+  S = n(981631),
+  v = n(474936),
   T = n(231338),
   I = n(388032),
   y = n(891978),
@@ -198,7 +198,7 @@ function k(e) {
   var t;
   let n = e.skuId,
     r = null === (t = e.subscription) || void 0 === t ? void 0 : t.items[0].planId;
-  return !(null == n || null == r || Object.values(S.Si).includes(n) || (0, C.PV)(r))
+  return !(null == n || null == r || Object.values(v.Si).includes(n) || (0, C.PV)(r))
 }
 
 function W(e) {
@@ -218,7 +218,7 @@ function W(e) {
     })), [t]),
     l = (0, u.Wu)([E.Z], () => E.Z.getPlanIdsForSkus(Array.from(a))),
     o = s.useCallback(() => l.length === r.size, [l, r]),
-    c = s.useMemo(() => t.filter(e => e.currency !== v.pKx.DISCORD_ORB), [t]);
+    c = s.useMemo(() => t.filter(e => e.currency !== S.pKx.DISCORD_ORB), [t]);
   return s.useEffect(() => {
     o() || g.Z.wait(() => {
       a.forEach(e => (0, f.GZ)(e, void 0, void 0, !0, void 0))

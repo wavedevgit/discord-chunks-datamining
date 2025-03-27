@@ -92,7 +92,7 @@ function O(e) {
   }))
 }
 
-function v(e) {
+function S(e) {
   let {
     guildTier: t,
     guildBoostSlot: n,
@@ -100,27 +100,27 @@ function v(e) {
     hasCancelableGuildBoostSlot: u,
     showAltText: m,
     isLastGuildBoostSlot: h
-  } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, a.e7)([g.default], () => g.default.getCurrentUser()), _ = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), E = i.useMemo(() => null != _ && _ > new Date, [_]), v = (0, p.tl)(n), {
-    fractionalState: S
+  } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, a.e7)([g.default], () => g.default.getCurrentUser()), _ = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), E = i.useMemo(() => null != _ && _ > new Date, [_]), S = (0, p.tl)(n), {
+    fractionalState: v
   } = (0, c.Z)();
   return (0, r.jsxs)("div", {
     className: C.boostContainer,
     children: [(0, r.jsxs)("div", {
       className: C.boostInnerContainer,
       children: [(0, r.jsx)(N.Z, {
-        isCanceled: v,
+        isCanceled: S,
         hasCooldown: E,
         useReducedMotion: f
       }), (0, r.jsx)("div", {
         className: C.boostDescriptionContainer,
-        children: null != _ && E && !v ? (0, r.jsx)(x.Z, {
+        children: null != _ && E && !S ? (0, r.jsx)(x.Z, {
           className: C.boostDescriptionInnerContainer,
           cooldown: _.getTime()
         }) : (0, r.jsx)(O, {
           guildTier: t,
           guildBoostSlot: n,
           showAltText: m,
-          isCanceled: v,
+          isCanceled: S,
           premiumSubscription: s
         })
       }), (0, r.jsx)(l.yRy, {
@@ -133,7 +133,7 @@ function v(e) {
             guildBoostSlot: n,
             premiumSubscription: s,
             hasCancelableGuildBoostSlot: u,
-            fractionalState: S,
+            fractionalState: v,
             user: b
           })
         },
@@ -183,7 +183,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function v(e) {
   let {
     guildId: t,
     guildBoostSlotRecords: n,
@@ -196,7 +196,7 @@ function S(e) {
     children: [(0, r.jsx)(b.Z, {
       guildId: t,
       boostingVariant: !1
-    }), n.map((e, t) => (0, r.jsx)(v, {
+    }), n.map((e, t) => (0, r.jsx)(S, {
       guildTier: null == o ? void 0 : o.premiumTier,
       guildBoostSlot: e,
       premiumSubscription: i,
@@ -231,7 +231,7 @@ function T(e) {
     children: [(0, r.jsx)(b.Z, {
       guildId: t,
       boostingVariant: !1
-    }), n.map((e, t) => (0, r.jsx)(v, {
+    }), n.map((e, t) => (0, r.jsx)(S, {
       guildTier: null == s ? void 0 : s.premiumTier,
       guildBoostSlot: o,
       premiumSubscription: i,
@@ -304,7 +304,7 @@ function y(e) {
     className: C.wrapper,
     children: [(0, r.jsx)("div", {
       className: C.container,
-      children: f.default.keys(l).map(e => (0, r.jsx)(S, {
+      children: f.default.keys(l).map(e => (0, r.jsx)(v, {
         guildId: e,
         guildBoostSlotRecords: l[e],
         premiumSubscription: n,

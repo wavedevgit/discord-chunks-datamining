@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(18438),
   C = n(778825),
   O = n(856607),
-  v = n(594496),
-  S = n(856768),
+  S = n(594496),
+  v = n(856768),
   T = n(981631),
   I = n(388032);
 
@@ -119,7 +119,7 @@ function R(e) {
         helpCenterLink: _.Z.getArticleURL(T.BhN.GUILD_PROFILES)
       })
     }), null != t ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(v.Z, {
         guildId: t.id,
         onChange: e => {
           null != e && (0, j.HP)(e)
@@ -135,7 +135,7 @@ function R(e) {
           canUsePremiumCustomization: E.ZP.canUsePremiumProfileCustomization(s),
           onUpsellClick: P
         })),
-        children: (0, r.jsx)(v.Z, {})
+        children: (0, r.jsx)(S.Z, {})
       })]
     }) : (0, r.jsx)(O.Z, {})]
   }) : (0, r.jsx)(o.$jN, {})

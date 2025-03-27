@@ -1,4 +1,4 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 let r;
 n.d(t, {
   Z: () => I
@@ -13,8 +13,8 @@ var i, o = n(442837),
   p = n(430824),
   f = n(701190),
   h = n(496675),
-  _ = n(594174),
-  m = n(998502),
+  m = n(594174),
+  _ = n(998502),
   b = n(981631),
   g = n(176505);
 
@@ -49,7 +49,7 @@ function S() {
 }
 class N extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, f.Z, _.default)
+    this.waitFor(p.Z, f.Z, m.default)
   }
   isOpen() {
     let e = __OVERLAY__ ? b.IlC.OVERLAY : b.IlC.APP;
@@ -80,7 +80,7 @@ let I = new N(l.Z, {
       } = t;
       if (null == e) return !1;
       if ((0, c.bc)(e.type)) {
-        if (null != d.Z.getChannel(e.id)) return (0, s.XU)(b.ME, e.id), m.ZP.focus(), !1
+        if (null != d.Z.getChannel(e.id)) return (0, s.XU)(b.ME, e.id), _.ZP.focus(), !1
       } else {
         if (null == n) return !1;
         if (null != p.Z.getGuild(n.id) && !(0, a.TY)(t)) {
@@ -95,7 +95,7 @@ let I = new N(l.Z, {
             }
             return null
           }(t);
-          return (0, s.XU)(n.id, e), m.ZP.focus(), !1
+          return (0, s.XU)(n.id, e), _.ZP.focus(), !1
         }
       }
     }

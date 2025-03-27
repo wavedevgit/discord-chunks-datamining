@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(810762),
   C = n(681833),
   O = n(856888),
-  v = n(921801),
-  S = n(246946),
+  S = n(921801),
+  v = n(246946),
   T = n(663389),
   I = n(351402),
   y = n(853872),
@@ -118,7 +118,7 @@ let q = function() {
     (0, g.Y2)(), d.jg(), (0, u.X8)(), d.tZ()
   }), function() {
     p.Z.clearSubsection()
-  }), []), S.Z.enabled) ? (0, r.jsx)(h.Z, {}) : m && _ ? P === V.cP ? (0, r.jsx)(j.Z, {
+  }), []), v.Z.enabled) ? (0, r.jsx)(h.Z, {}) : m && _ ? P === V.cP ? (0, r.jsx)(j.Z, {
     onGoBack: () => p.Z.clearSubsection()
   }) : P === V.XZ ? (0, r.jsx)(O.Z, {
     onGoBack: () => p.Z.clearSubsection()
@@ -147,7 +147,7 @@ let q = function() {
           fractionalPremiumInfo: z,
           activationDate: X
         })]
-      }), (0, r.jsx)(v.F, {
+      }), (0, r.jsx)(S.F, {
         setting: G.s6.SUBSCRIPTIONS_CREDITS,
         children: (0, r.jsx)(Y, {})
       }), W > 0 && (0, r.jsxs)(r.Fragment, {

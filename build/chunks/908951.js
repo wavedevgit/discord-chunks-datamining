@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(212895),
   C = n(296848),
   O = n(374649),
-  v = n(981631),
-  S = n(388032),
+  S = n(981631),
+  v = n(388032),
   T = n(505130),
   I = n(612064);
 
@@ -62,7 +62,7 @@ function y(e) {
     let n = _.Z.get(t.planIdForCurrencies);
     o()(null != e, "paymentSource not specified for change"), o()(null != n, "Unable to fetch plan");
     let r = (0, j.DE)(n.id, e.id, !1);
-    return r.length > 0 ? r[0] : v.pKx.USD
+    return r.length > 0 ? r[0] : S.pKx.USD
   }, z = e => {
     null != e && F(e, H(e), G)
   }, Y = e => {
@@ -106,7 +106,7 @@ function y(e) {
       onCloseCallback: () => {
         (0, u.fw)()
       },
-      onCloseRequest: v.dG4
+      onCloseRequest: S.dG4
     })
   };
   if (t.isPurchasedExternally) return (e => {
@@ -120,7 +120,7 @@ function y(e) {
         fullWidth: !0,
         look: d.zxk.Looks.FILLED,
         color: d.zxk.Colors.PRIMARY,
-        children: S.NW.string(S.t.SgX7RU)
+        children: v.NW.string(v.t.SgX7RU)
       })
     })
   })(t);
@@ -130,7 +130,7 @@ function y(e) {
     look: d.zxk.Looks.FILLED,
     color: s ? d.zxk.Colors.BRAND : d.zxk.Colors.PRIMARY,
     onClick: K,
-    children: S.NW.string(S.t.CpOiEB)
+    children: v.NW.string(v.t.CpOiEB)
   });
   {
     let e = _.Z.get(t.planIdForCurrencies);
@@ -141,7 +141,7 @@ function y(e) {
         let e = t.paymentSourceId;
         return (0, r.jsx)(h.Z, {
           prependOption: null == e ? {
-            label: S.NW.string(S.t.iA5vAw),
+            label: v.NW.string(v.t.iA5vAw),
             value: null
           } : null,
           className: l,
@@ -158,7 +158,7 @@ function y(e) {
         children: (0, r.jsxs)("div", {
           className: a()(T.currency, I.flex, I.alignCenter),
           children: [(0, r.jsx)("div", {
-            children: S.NW.string(S.t["0YjaXV"])
+            children: v.NW.string(v.t["0YjaXV"])
           }), (0, r.jsx)(p.Z, {
             className: T.currencyDropdown,
             selectedCurrency: U,

@@ -30,7 +30,7 @@ function b(e) {
     showBorder: j = !1,
     isTryItOutFlow: C = !1,
     initialSelectedEffectId: O
-  } = e, v = (0, m.Kg)(t, n), S = u.ZP.canUsePremiumProfileCustomization(t), {
+  } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
   } = (0, o.ZP)(), {
     pendingProfileEffectId: I,
@@ -41,11 +41,11 @@ function b(e) {
     guild: n
   }), [T, O, n]);
   i.useEffect(() => {
-    S && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+    v && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: f.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
       location_stack: T
     })
-  }, [S, T]);
+  }, [v, T]);
   let P = null != n,
     R = E ? l.gtL : l.zxk;
   return (0, r.jsx)(g.Z, {
@@ -65,13 +65,13 @@ function b(e) {
           [N.buttonHighlighted]: E
         }),
         children: x.NW.string(x.t["0nEVoK"])
-      }), (C || void 0 !== I ? null != I : null != v) && (0, r.jsx)(l.zxk, {
+      }), (C || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
         className: N.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: function() {
-          (0, m.s6)(null, v, null == n ? void 0 : n.id)
+          (0, m.s6)(null, S, null == n ? void 0 : n.id)
         },
         children: P ? x.NW.string(x.t.GJ3Fcn) : x.NW.string(x.t["Ld+f5e"])
       })]

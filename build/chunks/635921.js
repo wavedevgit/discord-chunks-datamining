@@ -26,8 +26,8 @@ var r = n(200651),
   j = n(318747),
   C = n(409100),
   O = n(474936),
-  v = n(388032),
-  S = n(370623);
+  S = n(388032),
+  v = n(370623);
 let T = e => {
     let {
       inOfferExperience: t,
@@ -38,17 +38,17 @@ let T = e => {
       isDarkMode: o
     } = e, c = (0, r.jsx)(C.Z, {
       forceInverted: o || !l,
-      className: a()(S.button, S.subButton, s, {
-        [S.extendedButton]: t && l,
-        [S.whiteSubButton]: l && !o
+      className: a()(v.button, v.subButton, s, {
+        [v.extendedButton]: t && l,
+        [v.whiteSubButton]: l && !o
       }),
       subscriptionTier: n
     }), d = t && l ? null : (0, r.jsx)(j.Z, {
-      className: a()(S.button, s),
+      className: a()(v.button, s),
       forceWhite: !l
     });
     return (0, r.jsxs)("div", {
-      className: a()(S.buttonContainer, i),
+      className: a()(v.buttonContainer, i),
       children: [c, " ", d]
     })
   },
@@ -58,13 +58,13 @@ let T = e => {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.A, {
-        className: t ? S.fullscreenSparkleStar1 : S.settingsSparkleStar1
+        className: t ? v.fullscreenSparkleStar1 : v.settingsSparkleStar1
       }), (0, r.jsx)(u.A, {
-        className: t ? S.fullscreenSparkleStar2 : S.settingsSparkleStar2
+        className: t ? v.fullscreenSparkleStar2 : v.settingsSparkleStar2
       }), (0, r.jsx)(u.A, {
-        className: t ? S.fullscreenSparkleStar3 : S.settingsSparkleStar3
+        className: t ? v.fullscreenSparkleStar3 : v.settingsSparkleStar3
       }), (0, r.jsx)(u.A, {
-        className: t ? S.fullscreenSparkleStar4 : S.settingsSparkleStar4
+        className: t ? v.fullscreenSparkleStar4 : v.settingsSparkleStar4
       })]
     })
   };
@@ -78,11 +78,11 @@ function y(e) {
   return (0, r.jsx)(o.Text, {
     variant: t,
     color: i ? "header-secondary" : "always-white",
-    className: a()(S.description, {
-      [S.descriptionBottomMargin]: n,
-      [S.descriptionV2]: i
+    className: a()(v.description, {
+      [v.descriptionBottomMargin]: n,
+      [v.descriptionV2]: i
     }),
-    children: v.NW.format(v.t.kt9wxs, {
+    children: S.NW.format(S.t.kt9wxs, {
       cheapestMonthlyPrice: s
     })
   })
@@ -103,29 +103,29 @@ let A = i.forwardRef((e, t) => {
     value: R,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: a()(S.container, u, {
-        [S.settingsContainer]: !s,
-        [S.affinityHeight]: !s && V
+      className: a()(v.container, u, {
+        [v.settingsContainer]: !s,
+        [v.affinityHeight]: !s && V
       }),
       "data-testid": "v2-marketing-page-hero-header",
       children: [(0, r.jsxs)("div", {
-        className: s ? S.fullscreenTextContainer : S.settingsTextContainer,
+        className: s ? v.fullscreenTextContainer : v.settingsTextContainer,
         children: [(0, r.jsx)(o.X6q, {
           variant: s ? "display-lg" : "display-md",
           color: "always-white",
-          children: v.NW.string(v.t.YCZldH)
+          children: S.NW.string(S.t.YCZldH)
         }), U ? (0, r.jsx)(E.Z, {
           referrer: M
         }) : V ? (0, r.jsx)("div", {
-          className: S.affinityDescription,
+          className: v.affinityDescription,
           children: (0, r.jsx)(b.Z, {
             textColor: "always-white",
             smallerText: !s
           })
         }) : (0, r.jsx)(y, {}), L || D ? (0, r.jsx)("div", {
-          className: S.buttonContainer,
+          className: v.buttonContainer,
           children: (0, r.jsx)(j.Z, {
-            className: a()(S.button, _),
+            className: a()(v.button, _),
             forceWhite: !0
           })
         }) : (0, r.jsx)(T, {

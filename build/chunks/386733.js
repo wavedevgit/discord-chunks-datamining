@@ -24,9 +24,9 @@ var r = n(200651),
   j = n(981631),
   C = n(388032),
   O = n(955048),
-  v = n(691766);
+  S = n(691766);
 
-function S(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -68,7 +68,7 @@ let I = e => {
       user: t,
       size: o.EFr.SIZE_32,
       animateOnHover: !0
-    }), a = null != t, l = a ? (0, r.jsx)(o.qEK, S({
+    }), a = null != t, l = a ? (0, r.jsx)(o.qEK, v({
       src: i,
       "aria-label": t.username,
       size: o.EFr.SIZE_32
@@ -81,7 +81,7 @@ let I = e => {
       text: C.NW.string(C.t.UnKHdn),
       shouldShow: !a,
       tooltipContentClassName: O.unsentTooltipContent,
-      children: e => (0, r.jsx)("div", T(S({
+      children: e => (0, r.jsx)("div", T(v({
         className: O.userAvatarProgressBarUnit
       }, e), {
         children: l
@@ -202,7 +202,7 @@ let I = e => {
                   let {
                     default: e
                   } = await n.e("47435").then(n.bind(n, 204387));
-                  return t => (0, r.jsx)(e, T(S({}, t), {
+                  return t => (0, r.jsx)(e, T(v({}, t), {
                     sourceAnalyticsLocations: w
                   }))
                 })
@@ -211,7 +211,7 @@ let I = e => {
               children: (0, r.jsxs)("div", {
                 className: O.expandedProgressBarSelectFriendsCTAInner,
                 children: [(0, r.jsx)("img", {
-                  src: v,
+                  src: S,
                   alt: "",
                   className: O.expandedProgressBarSelectFriendsIcon
                 }), D ? C.NW.string(C.t.SY9tyM) : C.NW.string(C.t.Lm2nFR)]

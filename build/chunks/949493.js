@@ -25,9 +25,9 @@ var i = n(921801),
   j = n(919539),
   C = n(726985),
   O = n(981631),
-  v = n(388032);
-let S = () => (0, r.jsx)(f.Z, {
-    title: v.NW.string(v.t["y62Z/f"]),
+  S = n(388032);
+let v = () => (0, r.jsx)(f.Z, {
+    title: S.NW.string(S.t["y62Z/f"]),
     webSetting: C.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: (0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(i.F, {
@@ -37,21 +37,21 @@ let S = () => (0, r.jsx)(f.Z, {
     })
   }),
   T = () => (0, r.jsxs)(f.Z, {
-    title: v.NW.string(v.t.xVRG4O),
+    title: S.NW.string(S.t.xVRG4O),
     webSetting: C.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(N.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
-    title: v.NW.string(v.t["1Qn8iY"]),
+    title: S.NW.string(S.t["1Qn8iY"]),
     webSetting: C.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(x.ZP, {})]
   }),
   y = () => {
-    let e = v.NW.format(v.t.VaxeGh, {
+    let e = S.NW.format(S.t.VaxeGh, {
       helpdeskArticle: s.Z.getArticleURL(O.BhN.SLAYER_GAME_FRIENDS)
     });
     return (0, r.jsx)(f.Z, {
-      title: v.NW.string(v.t.oPyABA),
+      title: S.NW.string(S.t.oPyABA),
       description: e,
       webSetting: C.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
       children: (0, r.jsx)(o.Z, {})
@@ -60,7 +60,7 @@ let S = () => (0, r.jsx)(f.Z, {
 
 function A() {
   return (0, r.jsxs)(a.N, {
-    header: v.NW.string(v.t["+o1pDQ"]),
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(S, {}), (0, r.jsx)(I, {}), (0, r.jsx)(y, {})]
+    header: S.NW.string(S.t["+o1pDQ"]),
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(v, {}), (0, r.jsx)(I, {}), (0, r.jsx)(y, {})]
   })
 }

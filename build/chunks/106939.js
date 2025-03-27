@@ -25,8 +25,8 @@ var r = n(200651),
   j = n(108427),
   C = n(210887),
   O = n(695346),
-  v = n(594174),
-  S = n(626135),
+  S = n(594174),
+  v = n(626135),
   T = n(260722),
   I = n(914788),
   y = n(841409),
@@ -140,7 +140,7 @@ function Y() {
       handleTabChange: m
     } = (0, y.Z)(),
     h = (0, N.Dt)(),
-    f = v.default.getCurrentUser(),
+    f = S.default.getCurrentUser(),
     _ = null != e,
     C = s && null != f && !_;
   (0, g.ZP)(() => {
@@ -166,7 +166,7 @@ function Y() {
         selectedTab: n,
         selectedTeenId: r
       } = D.current;
-      S.default.track(W.rMx.FAMILY_CENTER_VIEWED, {
+      v.default.track(W.rMx.FAMILY_CENTER_VIEWED, {
         is_considered_adult: e,
         num_of_accepted_links: t,
         selected_teen_id: r,
@@ -205,7 +205,7 @@ function K() {
   } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, b.wE)(d.z.FAMILY_CENTER_NEW_BADGE), l = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), _ = (0, A.M)(), D = (0, c.e7)([C.Z], () => C.Z.theme), {
     selectedTab: Z,
     handleTabChange: w
-  } = (0, y.Z)(), G = (0, N.Dt)(), H = v.default.getCurrentUser(), Y = null != t, K = l && null != H && !Y;
+  } = (0, y.Z)(), G = (0, N.Dt)(), H = S.default.getCurrentUser(), Y = null != t, K = l && null != H && !Y;
   (0, g.ZP)(() => {
     m.Y(W.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && T.ZP.initialPageLoad(), s || (0, b.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
@@ -229,7 +229,7 @@ function K() {
           selectedTab: n,
           selectedTeenId: r
         } = X.current;
-        S.default.track(W.rMx.FAMILY_CENTER_VIEWED, {
+        v.default.track(W.rMx.FAMILY_CENTER_VIEWED, {
           is_considered_adult: e,
           num_of_accepted_links: t,
           selected_teen_id: r,

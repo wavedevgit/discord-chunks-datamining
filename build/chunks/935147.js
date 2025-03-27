@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(267717),
   C = n(643879),
   O = n(350327),
-  v = n(996073),
-  S = n(25990),
+  S = n(996073),
+  v = n(25990),
   T = n(626135),
   I = n(74538),
   y = n(296810),
@@ -56,10 +56,10 @@ function V(e) {
     tryItOutBanner: X,
     tryItOutProfileEffectId: J,
     tryItOutAvatarDecoration: Q
-  } = (0, s.cj)([S.Z], () => {
+  } = (0, s.cj)([v.Z], () => {
     var e, t;
-    let n = S.Z.getAllPending(),
-      r = S.Z.getErrors();
+    let n = v.Z.getAllPending(),
+      r = v.Z.getErrors();
     return e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -77,7 +77,7 @@ function V(e) {
         })
       }
       return e
-    }({}, n, S.Z.getAllTryItOut()), t = t = {
+    }({}, n, v.Z.getAllTryItOut()), t = t = {
       errors: r
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -90,7 +90,7 @@ function V(e) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }), $ = (0, h.Z)(J), ee = i.useRef(null);
-  (0, v.Z)(ee, B.Y_.TRY_IT_OUT);
+  (0, S.Z)(ee, B.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: et,
     sourceAnalyticsLocations: en

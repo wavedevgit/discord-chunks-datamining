@@ -86,7 +86,7 @@ let _ = function() {
       }
     })
   }
-  let v = (0, p.aq)({
+  let S = (0, p.aq)({
     isBoostManagementDisabledForFractionalPremium: j
   });
   return (0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ let _ = function() {
       variant: "text-sm/medium",
       children: f.NW.format(f.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
-          let n = null != v,
+          let n = null != S,
             i = (0, r.jsx)(a.zxk, {
               className: x.cta,
               disabled: n,
@@ -111,8 +111,8 @@ let _ = function() {
               children: e
             }, t);
           return n ? (0, r.jsx)(c.Z, {
-            text: v,
-            "aria-label": v.toString(),
+            text: S,
+            "aria-label": S.toString(),
             children: e => (0, r.jsx)("span", b(N({}, e), {
               children: i
             }))

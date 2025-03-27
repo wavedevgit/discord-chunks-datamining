@@ -25,7 +25,7 @@ var r = n(200651),
   C = n(388032),
   O = n(802138);
 
-function v(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function S(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ async function T() {
 }
 
 function I(e) {
-  (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, S(v({
+  (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, v(S({
     header: C.NW.string(C.t["7UXEFx"]),
     confirmText: C.NW.string(C.t.BddRzc),
     cancelText: C.NW.string(C.t["ETE/oK"]),
@@ -99,7 +99,7 @@ function y(e) {
         function() {
           let e = C.NW.string(C.t["fKBB8/"]),
             t = C.NW.string(C.t.BvyxEx);
-          (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, S(v({
+          (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, v(S({
             header: e,
             confirmButtonColor: a.zxk.Colors.BRAND,
             confirmText: C.NW.string(C.t.BddRzc)
@@ -119,7 +119,7 @@ function y(e) {
           l = C.NW.formatToPlainString(C.t["ejOT9/"], {
             errorCode: s
           });
-        (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, S(v({
+        (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(S({
           header: n,
           confirmButtonColor: a.zxk.Colors.BRAND,
           confirmText: C.NW.string(C.t.BddRzc)

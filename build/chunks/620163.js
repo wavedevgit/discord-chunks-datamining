@@ -25,8 +25,8 @@ var i = n(990547),
   j = n(621628),
   C = n(243778),
   O = n(18438),
-  v = n(778825),
-  S = n(665166),
+  S = n(778825),
+  v = n(665166),
   T = n(442933),
   I = n(715495),
   y = n(158947),
@@ -79,8 +79,8 @@ var i = n(990547),
   ej = n(593648),
   eC = n(327885),
   eO = n(595242),
-  ev = n(463153),
-  eS = n(36192),
+  eS = n(463153),
+  ev = n(36192),
   eT = n(889029),
   eI = n(400287),
   ey = n(554042),
@@ -148,7 +148,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
     return Object.freeze({
       [eM.s6.SEARCH_NO_RESULTS]: {
         section: g.ID.CUSTOM,
-        element: ev.Z
+        element: eS.Z
       },
       [eM.s6.ACCOUNT_SECURITY_TAB]: {
         section: eU.oAB.ACCOUNT,
@@ -294,7 +294,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         newIndicator: (0, r.jsx)(eq, {}),
         newIndicatorDismissibleContentTypes: [...eK()],
         notice: {
-          stores: [F.Z, v.Z],
+          stores: [F.Z, S.Z],
           element: D.Z
         },
         onSettingsClose: () => {
@@ -507,7 +507,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t["+1h0k5"])],
         label: eF.NW.string(eF.t["+1h0k5"]),
         ariaLabel: eF.NW.string(eF.t["+1h0k5"]),
-        element: eS.Z,
+        element: ev.Z,
         newIndicatorDismissibleContentTypes: [s.z.AUTH_SESSIONS_NEW],
         impressionName: i.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
@@ -1814,7 +1814,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.INTL_TESTING,
         searchableTitles: ["Intl Testing", "i18n"],
         label: "Intl Testing",
-        element: S.Z,
+        element: v.Z,
         predicate: () => e$ || U.Z.isDeveloper
       },
       [eM.s6.PROFILE_EFFECTS_PREVIEW_TOOL]: {

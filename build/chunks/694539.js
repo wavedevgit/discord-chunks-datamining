@@ -26,7 +26,7 @@ let E = e => {
     back: n
   } = e, {
     upsertConfig: s
-  } = (0, h.E)(), E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [j, C] = i.useState(!0), O = i.useRef(null), [v, S] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState([]), [P, R] = i.useState(t.name);
+  } = (0, h.E)(), E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [j, C] = i.useState(!0), O = i.useRef(null), [S, v] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState([]), [P, R] = i.useState(t.name);
   i.useEffect(() => {
     let e = t.config.effects;
     e.length > 0 && A([...e].map(e => (e.src = (0, u.$j)(e.base64), e)))
@@ -63,7 +63,7 @@ let E = e => {
       children: [(0, r.jsxs)("div", {
         className: a()(N.col, N.preview),
         children: [(0, r.jsx)("img", {
-          src: v ? b : _,
+          src: S ? b : _,
           alt: "",
           width: 450
         }), j && (0, r.jsx)(x.Z, {
@@ -102,10 +102,10 @@ let E = e => {
               children: "Dark Theme"
             }), (0, r.jsx)("input", {
               type: "checkbox",
-              checked: v,
+              checked: S,
               className: N.checkBox,
               onChange: () => {
-                S(!v)
+                v(!S)
               }
             })]
           }), (0, r.jsxs)("div", {

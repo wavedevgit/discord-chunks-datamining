@@ -119,29 +119,29 @@ function j(e) {
     analyticsLocation: d
   } = e, [u, h] = i.useState(!1), {
     analyticsLocations: E
-  } = (0, g.ZP)(), [j, C] = i.useState(!1), O = (0, m.ZP)(), v = null, S = null, T = [x.O0b.PAST_DUE, x.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
+  } = (0, g.ZP)(), [j, C] = i.useState(!1), O = (0, m.ZP)(), S = null, v = null, T = [x.O0b.PAST_DUE, x.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
   switch (t.status) {
     case x.O0b.PAST_DUE:
-      S = N.NW.format(N.t["xaS18/"], {
+      v = N.NW.format(N.t["xaS18/"], {
         pauseDuration: l,
         resumeDate: I
       });
       break;
     case x.O0b.PAUSED:
-      S = N.NW.format(N.t.Vur3FR, {
+      v = N.NW.format(N.t.Vur3FR, {
         resumeDate: I
       });
       break;
     default:
-      S = N.NW.format(N.t.W85vFB, {
+      v = N.NW.format(N.t.W85vFB, {
         pauseDate: T,
         resumeDate: I,
         pauseDuration: l
       })
   }
-  return v = (0, r.jsx)("div", {
+  return S = (0, r.jsx)("div", {
     className: b.body,
-    children: S
+    children: v
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       premiumType: n,
@@ -161,7 +161,7 @@ function j(e) {
       children: [u ? (0, r.jsx)(c.kzN, {
         className: b.errorBlock,
         children: N.NW.string(N.t["5mlOCQ"])
-      }) : null, v]
+      }) : null, S]
     }), (0, r.jsx)(c.mzw, {
       justify: p.Z.Justify.START,
       children: (0, r.jsxs)("div", {

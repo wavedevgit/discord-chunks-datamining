@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = {
+let v = {
     enabled: !0,
     combosEnabled: !0,
     screenshakeEnabled: !1,
@@ -106,7 +106,7 @@ function D(e) {
     disabled: t,
     value: i[e.location],
     note: e.description,
-    onChange: t => s(v(O({}, i), {
+    onChange: t => s(S(O({}, i), {
       [e.location]: t
     })),
     children: e.title
@@ -142,11 +142,11 @@ function w(e) {
     value: t,
     note: j.NW.string(j.t.KuYbWF),
     onChange: e => {
-      e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || s) ? (0, o.h7j)(e => (0, r.jsx)(o.ConfirmModal, v(O({
+      e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || s) ? (0, o.h7j)(e => (0, r.jsx)(o.ConfirmModal, S(O({
         header: s ? j.NW.string(j.t["FxT+p6"]) : j.NW.string(j.t.TAZ4Fx),
         confirmText: j.NW.string(j.t.JFfinp),
         cancelText: j.NW.string(j.t["ETE/oK"]),
-        onConfirm: () => i(s ? S : {
+        onConfirm: () => i(s ? v : {
           enabled: !0,
           warningSeen: !0
         })

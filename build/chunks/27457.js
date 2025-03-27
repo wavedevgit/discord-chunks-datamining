@@ -1,4 +1,4 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 n.d(t, {
   BP: () => eb,
   ZP: () => eg
@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(607070),
   f = n(812206),
   h = n(835473),
-  _ = n(414910),
-  m = n(415635),
+  m = n(414910),
+  _ = n(415635),
   b = n(578976),
   g = n(925329),
   E = n(649739),
@@ -139,7 +139,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       pulseSpeakingIndicator: eL = !1,
       forceIdle: ew = !1,
       inOverlayPopout: eA = !1
-    } = e, eR = i.useContext(L.h9) || ew, [ek, eM] = i.useState(!1), eD = T.Sb.useSetting(), eZ = (0, a.e7)([k.default], () => k.default.isStreamInfoOverlayEnabled), [eU, eV] = i.useState(!1), eH = (0, a.e7)([R.default], () => R.default.getId()), eB = (0, a.e7)([U.default], () => U.default.getCurrentUser()), eW = H.type === en.fO.ACTIVITY ? null : null === (t = H.user) || void 0 === t ? void 0 : t.id, [eG] = (0, h.Z)(H.type === en.fO.ACTIVITY ? [H.applicationId] : []), eF = (0, a.e7)([v.Z], () => v.Z.getEnabled()), ez = (0, a.e7)([D.Z], () => null != eW && D.Z.isLocalVideoDisabled(eW, (0, _.Z)(H.type)), [eW, H.type]), eY = (0, a.e7)([D.Z], () => null != eW ? D.Z.getVideoToggleState(eW, (0, _.Z)(H.type)) : et.ZUi.NONE, [eW, H.type]), eK = eY === et.ZUi.AUTO_PROBING, {
+    } = e, eR = i.useContext(L.h9) || ew, [ek, eM] = i.useState(!1), eD = T.Sb.useSetting(), eZ = (0, a.e7)([k.default], () => k.default.isStreamInfoOverlayEnabled), [eU, eV] = i.useState(!1), eH = (0, a.e7)([R.default], () => R.default.getId()), eB = (0, a.e7)([U.default], () => U.default.getCurrentUser()), eW = H.type === en.fO.ACTIVITY ? null : null === (t = H.user) || void 0 === t ? void 0 : t.id, [eG] = (0, h.Z)(H.type === en.fO.ACTIVITY ? [H.applicationId] : []), eF = (0, a.e7)([v.Z], () => v.Z.getEnabled()), ez = (0, a.e7)([D.Z], () => null != eW && D.Z.isLocalVideoDisabled(eW, (0, m.Z)(H.type)), [eW, H.type]), eY = (0, a.e7)([D.Z], () => null != eW ? D.Z.getVideoToggleState(eW, (0, m.Z)(H.type)) : et.ZUi.NONE, [eW, H.type]), eK = eY === et.ZUi.AUTO_PROBING, {
       speaking: eX,
       ringing: eQ,
       hasVideo: eq
@@ -157,7 +157,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
           }
         }),
         u = (0, a.cj)([D.Z], () => {
-          let n = (0, _.Z)(t.type);
+          let n = (0, m.Z)(t.type);
           return e === s ? {
             muted: !1,
             deafened: !1
@@ -314,7 +314,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
     }
     let tf = i.useRef(null),
       th = H.type === en.fO.STREAM ? c.pzj : c.Odl,
-      t_ = e9 ? e_ : em;
+      tm = e9 ? em : e_;
     return (0, r.jsx)(d.Z, {
       section: et.jXE.VOICE_CHANNEL_TILE,
       children: (0, r.jsxs)("div", {
@@ -362,7 +362,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                 userId: eW
               }) : null, H.type === en.fO.USER ? (0, r.jsx)("div", {
                 className: ea.voiceChannelEffectsContainer,
-                children: (0, r.jsx)(m.Z, {
+                children: (0, r.jsx)(_.Z, {
                   userId: eW,
                   channelId: eg.id,
                   guildId: eg.getGuildId(),
@@ -381,7 +381,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                   color: "currentColor",
                   className: ea.selectedIcon
                 })
-              }) : null, ed.includes(H.type) ? null : (0, r.jsx)(t_, ec(es({
+              }) : null, ed.includes(H.type) ? null : (0, r.jsx)(tm, ec(es({
                 focused: eN,
                 width: eE,
                 inCall: ey,
@@ -492,7 +492,7 @@ function eh(e) {
   })
 }
 ep.displayName = "CallTile";
-let e_ = i.memo(e => {
+let em = i.memo(e => {
   let {
     idle: t,
     title: n,
@@ -502,7 +502,7 @@ let e_ = i.memo(e => {
     ignored: p,
     participantType: f,
     participantUserId: h,
-    platform: m,
+    platform: _,
     secureFramesVerified: b,
     onContextMenu: g,
     muted: E,
@@ -513,7 +513,7 @@ let e_ = i.memo(e => {
     hasVideo: x,
     hideAudioIcon: S,
     onToggleMute: N
-  } = e, I = (0, a.e7)([D.Z], () => null != h && D.Z.isLocalVideoAutoDisabled(h, (0, _.Z)(f)), [h, f]), P = (0, $.N)(o), j = (0, $.K)(o), [T, L] = i.useState(!1);
+  } = e, I = (0, a.e7)([D.Z], () => null != h && D.Z.isLocalVideoAutoDisabled(h, (0, m.Z)(f)), [h, f]), P = (0, $.N)(o), j = (0, $.K)(o), [T, L] = i.useState(!1);
   i.useEffect(() => {
     let e = !1,
       t = () => {
@@ -597,7 +597,7 @@ let e_ = i.memo(e => {
           })
         }) : null, t ? null : (0, r.jsx)(ef, {
           participantType: f,
-          platform: m,
+          platform: _,
           className: l()(ea.experimentTitleIcon, {
             [ea.compact]: j
           })
@@ -634,8 +634,8 @@ let e_ = i.memo(e => {
     })]
   })
 });
-e_.displayName = "CallTileOverlayV2";
-let em = i.memo(e => {
+em.displayName = "CallTileOverlayV2";
+let e_ = i.memo(e => {
   let {
     muted: t,
     deafened: n,
@@ -646,7 +646,7 @@ let em = i.memo(e => {
     title: p,
     width: f,
     hasVideo: h,
-    inCall: m,
+    inCall: _,
     localVideoDisabled: b,
     videoToggleState: E,
     focused: v,
@@ -660,7 +660,7 @@ let em = i.memo(e => {
     platform: P,
     application: j,
     secureFramesVerified: T
-  } = e, L = null, w = null, A = null, R = (0, $.K)(f), k = (0, $.N)(f), M = (0, a.e7)([D.Z], () => null != S && D.Z.isLocalVideoAutoDisabled(S, (0, _.Z)(x)), [S, x]);
+  } = e, L = null, w = null, A = null, R = (0, $.K)(f), k = (0, $.N)(f), M = (0, a.e7)([D.Z], () => null != S && D.Z.isLocalVideoAutoDisabled(S, (0, m.Z)(x)), [S, x]);
   if (!C) {
     if (i && x === en.fO.STREAM && h && !v) L = (0, r.jsx)(c.ua7, {
       text: el.NW.string(el.t.YqAjX1),
@@ -707,7 +707,7 @@ let em = i.memo(e => {
       }
     })
   }
-  m && D.Z.supports(eo.AN.VIDEO) || !h ? m && h && b && !M && (w = (0, r.jsx)(c.Amn, {
+  _ && D.Z.supports(eo.AN.VIDEO) || !h ? _ && h && b && !M && (w = (0, r.jsx)(c.Amn, {
     size: "md",
     color: "currentColor"
   })) : w = (0, r.jsx)(c.Odl, {
@@ -821,6 +821,6 @@ let em = i.memo(e => {
     })]
   })
 });
-em.displayName = "CallTileOverlay";
+e_.displayName = "CallTileOverlay";
 let eb = y.L,
   eg = ep

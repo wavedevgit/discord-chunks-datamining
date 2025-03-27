@@ -28,9 +28,9 @@ let j = function(e) {
     onClose: s,
     onConfirm: j,
     userDiscountOffer: C
-  } = e, [O, v] = i.useState(!1), [S, T] = i.useState(!1), I = async e => {
+  } = e, [O, S] = i.useState(!1), [v, T] = i.useState(!1), I = async e => {
     try {
-      T(!0), v(!1), await l.tn.post({
+      T(!0), S(!1), await l.tn.post({
         url: x.ANM.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: e
@@ -38,7 +38,7 @@ let j = function(e) {
         rejectWithError: !0
       }), j()
     } catch (e) {
-      v(!0)
+      S(!0)
     }
     T(!1)
   }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? _ : E, P = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, C), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
@@ -103,7 +103,7 @@ let j = function(e) {
             children: N.NW.string(N.t.zl7LZm)
           }), (0, r.jsx)(c.zxk, {
             size: c.PhG.SMALL,
-            submitting: S,
+            submitting: v,
             onClick: () => I(C.id),
             children: N.NW.string(N.t.CKSuZG)
           })]

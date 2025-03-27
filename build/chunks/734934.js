@@ -37,7 +37,9 @@ function p(e, t) {
     cancelText: f.NW.string(f.t.f3Pet7),
     confirmText: f.NW.string(f.t.BddRzc),
     onConfirm: () => {
-      (0, o.Z)(d.Skl.ONLINE)
+      (0, o.Z)({
+        nextStatus: d.Skl.ONLINE
+      })
     }
   })
 }

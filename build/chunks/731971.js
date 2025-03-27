@@ -1,9 +1,9 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 n.d(t, {
-  NQ: () => m,
+  NQ: () => _,
   U1: () => E,
   XW: () => u,
-  _J: () => _,
+  _J: () => m,
   aP: () => f,
   e7: () => h,
   h6: () => b,
@@ -119,8 +119,8 @@ let u = (0, r.U)(e => ({
     return e.nickname !== s.nickname || e.dmsAllowed !== s.dmsAllowed || e.showActivity !== c(e.guildSize) || e.mutedServer !== s.mutedServer
   },
   h = () => u.getState().inviteCode,
-  _ = () => u.getState().guildId,
-  m = () => u.getState().touched,
+  m = () => u.getState().guildId,
+  _ = () => u.getState().touched,
   b = () => u.getState().dmsAllowed,
   g = () => u.getState().nickname,
   E = () => u.getState().showActivity,

@@ -1,4 +1,4 @@
-/** Chunk was on 39340 **/
+/** Chunk was on 87791 **/
 n.d(t, {
   Z: () => D
 }), n(411104), n(47120);
@@ -15,8 +15,8 @@ var i = n(392711),
   p = n(93127),
   f = n(430824),
   h = n(594174),
-  _ = n(431),
-  m = n(626135),
+  m = n(431),
+  _ = n(626135),
   b = n(74538),
   g = n(557457),
   E = n(970645),
@@ -122,7 +122,7 @@ class M extends s.Z {
     super(...e), A(this, "_premiumPaymentModalCloseResolve", null), A(this, "_premiumPaymentModalCloseReject", null), A(this, "_maybeFetchPremiumOffer", async () => {
       let e = h.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = !(0, b.I5)(e) && _.Z.shouldFetchOffer();
+        let t = !(0, b.I5)(e) && m.Z.shouldFetchOffer();
         await (0, S.T)("PremiumManager", t)
       }
       l.Z.dispatch({
@@ -177,7 +177,7 @@ class M extends s.Z {
         resolution: (0, L.o6)(o.maxResolution.height),
         fps: (0, g.bp)(o.maxFrameRate)
       });
-      a.Z.sendNitroSystemMessage(e, d), m.default.track(j.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
+      a.Z.sendNitroSystemMessage(e, d), _.default.track(j.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
         type: P.cd.HD_STREAMING_VIEWER_UPSELL,
         location_section: null != t ? j.jXE.TEXT_IN_VOICE : j.jXE.CHANNEL_TEXT_AREA,
         location_object: j.qAy.MESSAGE,

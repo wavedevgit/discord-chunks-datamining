@@ -31,9 +31,9 @@ let o = {
       onAnimationEnd: _
     } = e, [E, j] = i.useState(null), {
       confettiCanvas: C
-    } = i.useContext(a.h), O = (0, s.uR)(null != x ? x : C, E), [v, S] = i.useState(!1);
+    } = i.useContext(a.h), O = (0, s.uR)(null != x ? x : C, E), [S, v] = i.useState(!1);
     i.useEffect(() => {
-      v && (null == _ || _())
+      S && (null == _ || _())
     });
     let T = i.useMemo(() => {
       if (null != d) return [{
@@ -118,7 +118,7 @@ let o = {
           })(Object(a)).forEach(function(e) {
             Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
           }), s
-        }(t.getBoundingClientRect(), g, p, h, f, N, b), null != m ? m : 50), r === e.length - 1 && null != _ && S(!0)
+        }(t.getBoundingClientRect(), g, p, h, f, N, b), null != m ? m : 50), r === e.length - 1 && null != _ && v(!0)
       }, 60 * r)), () => {
         for (let t of e) clearTimeout(t)
       }

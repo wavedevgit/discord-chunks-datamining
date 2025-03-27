@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(493773),
   C = n(887278),
   O = n(812206),
-  v = n(835473),
-  S = n(243778),
+  S = n(835473),
+  v = n(243778),
   T = n(594190),
   I = n(320724),
   y = n(925329),
@@ -264,9 +264,9 @@ function eb(e) {
       }
     }
     return (0, T.b6)(a, !1, [z.Z, Y.Z])
-  }, [a, d]), p = (0, g.e7)([T.ZP, z.Z, Y.Z], () => null == a ? null : (0, T.FZ)(a, [T.ZP, z.Z, Y.Z]), [a], o()), [x, b] = i.useState(m), [O, v] = i.useState(u), [S, I] = i.useState(!1);
+  }, [a, d]), p = (0, g.e7)([T.ZP, z.Z, Y.Z], () => null == a ? null : (0, T.FZ)(a, [T.ZP, z.Z, Y.Z]), [a], o()), [x, b] = i.useState(m), [O, S] = i.useState(u), [v, I] = i.useState(!1);
   i.useEffect(() => {
-    b(m), v(u)
+    b(m), S(u)
   }, [m, u]);
   let R = (0, C.$1)(),
     D = !(0, en.supportsOutOfProcess)(),
@@ -281,7 +281,7 @@ function eb(e) {
         o = !1;
       switch (t) {
         case P.AE.LEGACY_GAME:
-          v(e), f.Z.toggleOverlay(a, e, x), l = !e && O;
+          S(e), f.Z.toggleOverlay(a, e, x), l = !e && O;
           break;
         case P.AE.OOP_GAME:
           b(e), f.Z.toggleOverlay(a, O, e), o = !e && x;
@@ -314,13 +314,13 @@ function eb(e) {
         i = !1;
       switch (t) {
         case "game":
-          f.Z.toggleOverlay(a, e, e), v(e), b(e), r = !e && O, i = !e && x;
+          f.Z.toggleOverlay(a, e, e), S(e), b(e), r = !e && O, i = !e && x;
           break;
         case "global":
           N.Z.setEnabled(e, e), r = !e && Z, i = !e && k;
           break;
         case "both":
-          N.Z.setEnabled(e, e), f.Z.toggleOverlay(a, e, e), v(e), b(e), r = !e && Z || !e && O, i = !e && k || !e && x
+          N.Z.setEnabled(e, e), f.Z.toggleOverlay(a, e, e), S(e), b(e), r = !e && Z || !e && O, i = !e && k || !e && x
       }
       let s = null;
       if (r ? s = "game" === t ? P.AE.LEGACY_GAME : P.AE.LEGACY : i && (s = "game" === t ? P.AE.OOP_GAME : P.AE.OOP), null != s) {
@@ -422,7 +422,7 @@ function eb(e) {
   let [ei, es] = i.useMemo(() => q ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : K && J ? ["text-warning", h.TVs.colors.TEXT_WARNING.css] : K && X ? ["text-positive", h.TVs.colors.TEXT_POSITIVE.css] : K && Q ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [q, K, J, X, Q]);
   return null == a ? null : (0, r.jsxs)(ef, {
     onExpand: I,
-    className: S ? el.expandedContainer : void 0,
+    className: v ? el.expandedContainer : void 0,
     title: (0, r.jsxs)(r.Fragment, {
       children: [null !== (s = null !== (n = null !== (t = null == l ? void 0 : l.name) && void 0 !== t ? t : null == p ? void 0 : p.name) && void 0 !== n ? n : null == a ? void 0 : a.gameName) && void 0 !== s ? s : "", null != p && p.verified ? (0, r.jsx)(h.ua7, {
         text: ea.NW.string(ea.t["4PJP5u"]),
@@ -560,7 +560,7 @@ function ej() {
   let [e, t] = i.useState(!1), {
     legacyEnabled: n,
     oopEnabled: s
-  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), l = (0, v.Z)(a.map(e => e.id)), o = (0, C.$1)(), c = (e, t) => {
+  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), l = (0, S.Z)(a.map(e => e.id)), o = (0, C.$1)(), c = (e, t) => {
     var r, i;
     eN(t), N.Z.setEnabled(e, s);
     let a = null !== (i = null === (r = T.ZP.getCurrentGameForAnalytics()) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : null;
@@ -632,7 +632,7 @@ function eC() {
   let [e, t] = i.useState(!1), {
     oopEnabled: n,
     legacyEnabled: s
-  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = !(0, en.supportsOutOfProcess)(), l = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), o = (0, v.Z)(l.map(e => e.id)), c = (e, t) => {
+  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = !(0, en.supportsOutOfProcess)(), l = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), o = (0, S.Z)(l.map(e => e.id)), c = (e, t) => {
     var r, i;
     eN(t);
     let a = !e && n;
@@ -741,7 +741,7 @@ function eO() {
     })
   })
 }
-let ev = (e, t) => [{
+let eS = (e, t) => [{
   title: ea.t.eVE4LS,
   description: ea.t["72WNqq"],
   disabledSetting: R.OverlayNotificationDisabledSetting.TEXT_CHAT
@@ -759,11 +759,11 @@ let ev = (e, t) => [{
   disabledSetting: R.OverlayNotificationDisabledSetting.NOW_PLAYING
 }].filter(e => !1 !== e).filter(Boolean);
 
-function eS() {
+function ev() {
   let {
     allowActivityWidget: e,
     allowNowPlaying: t
-  } = (0, D.o4)("user_settings"), n = ev(e, t), i = e => t => {
+  } = (0, D.o4)("user_settings"), n = eS(e, t), i = e => t => {
     N.Z.setNotificationDisabledSetting(e, !t)
   }, s = (0, g.e7)([W.Z], () => W.Z.getDisabledNotifications());
   return (0, r.jsxs)("div", {
@@ -838,7 +838,7 @@ function eT(e) {
 }
 
 function eI() {
-  let [e, t] = (0, S.US)([p.z.OVERLAY_OOP_SETTINGS_NUX], void 0, !0), n = () => {
+  let [e, t] = (0, v.US)([p.z.OVERLAY_OOP_SETTINGS_NUX], void 0, !0), n = () => {
     t(ei.L.DISMISS)
   };
   return ((0, j.ZP)(() => () => {
@@ -906,12 +906,12 @@ function ey(e) {
         let e = T.ZP.getVisibleGame();
         return null == e ? null : e
       }, [], o()),
-      [n] = (0, v.Z)([null != e && null != e.id ? e.id : null != t && null != t.id ? t.id : void 0]);
+      [n] = (0, S.Z)([null != e && null != e.id ? e.id : null != t && null != t.id ? t.id : void 0]);
     return {
       runningGame: t,
       runningGameApplication: n
     }
-  }(), b = null == x ? void 0 : x.id, _ = (0, g.e7)([W.Z], () => W.Z.isLimitedInteractionOverrideEnabled(b), [b]), E = i.useMemo(() => null != f && (0, k.H8)(f.pid), [f]), C = (0, D.o4)("user_settings").overlayV3UI, O = (0, g.e7)([K.default], () => K.default.getCurrentUser()), S = (0, Z.Z)({
+  }(), b = null == x ? void 0 : x.id, _ = (0, g.e7)([W.Z], () => W.Z.isLimitedInteractionOverrideEnabled(b), [b]), E = i.useMemo(() => null != f && (0, k.H8)(f.pid), [f]), C = (0, D.o4)("user_settings").overlayV3UI, O = (0, g.e7)([K.default], () => K.default.getCurrentUser()), v = (0, Z.Z)({
     location: "overlay_user_settings"
   });
   (0, j.ZP)(() => {
@@ -941,7 +941,7 @@ function ey(e) {
     }), (0, r.jsxs)(h.hjN, {
       children: [(0, r.jsxs)("div", {
         className: el.overlayEnabledSettingsContainer,
-        children: [(0, r.jsx)(eO, {}), S && (0, r.jsx)(ep, {
+        children: [(0, r.jsx)(eO, {}), v && (0, r.jsx)(ep, {
           children: (0, r.jsx)(h.j7V, {
             value: p,
             onChange: e => N.Z.setShowKeybindIndicators(e),
@@ -1085,7 +1085,7 @@ function ey(e) {
         className: el.settingsDivider
       })]
     }), (0, r.jsx)(h.hjN, {
-      children: (0, r.jsx)(eS, {})
+      children: (0, r.jsx)(ev, {})
     })]
   })
 }

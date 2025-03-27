@@ -30,7 +30,7 @@ function N(e) {
     placeholder: N,
     currentBio: b,
     disabled: _ = !1
-  } = e, [E, j] = i.useState(null != d ? d : b), [C, O] = i.useState((0, l.JM)(E)), v = i.useRef(!1);
+  } = e, [E, j] = i.useState(null != d ? d : b), [C, O] = i.useState((0, l.JM)(E)), S = i.useRef(!1);
   return i.useEffect(() => {
     if (void 0 === d) {
       let e = (0, l.JM)(b);
@@ -57,12 +57,12 @@ function N(e) {
       richValue: C,
       type: a.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
-        v.current = !1
+        S.current = !1
       },
       onFocus: () => {
-        v.current = !0
+        S.current = !0
       },
-      focused: v.current,
+      focused: S.current,
       onSubmit: function() {
         return new Promise(e => {
           e({

@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(540059),
   C = n(605236),
   O = n(786761),
-  v = n(3148),
-  S = n(739566),
+  S = n(3148),
+  v = n(739566),
   T = n(753206),
   I = n(311476),
   y = n(921801),
@@ -88,31 +88,31 @@ let Y = {
   J = "1337",
   Q = e => {
     let t = 0;
-    return [(0, O.e5)(z(H({}, (0, v.ZP)({
+    return [(0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.oZxkEh)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, v.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: (0, d.wj)(e) ? U.NW.string(U.t["WGb/v7"]) : U.NW.string(U.t["62m4m5"])
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, v.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.a0Byo6)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, v.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.bmwEWF)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, v.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.hK9QW1)
     })), {
@@ -261,7 +261,7 @@ class ee extends i.Component {
         outline: !0,
         "aria-hidden": !0,
         children: s.map((t, n) => (0, r.jsx)(T.Z, {
-          author: (0, S.ZH)(t),
+          author: (0, v.ZH)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,

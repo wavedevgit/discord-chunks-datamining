@@ -160,14 +160,14 @@ function C() {
               removeAsset: R
             }, t)
           })
-        }), (0, r.jsx)(S, {
+        }), (0, r.jsx)(v, {
           label: "gradient override",
           onChange: e => P({
             name: p._j,
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, r.jsx)(v, {
+        }), (0, r.jsx)(S, {
           label: "set",
           onClick: () => {}
         })]
@@ -209,7 +209,7 @@ function O(e) {
   })
 }
 
-function v(e) {
+function S(e) {
   let {
     label: t,
     onClick: n
@@ -229,7 +229,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function v(e) {
   let {
     label: t,
     onChange: n

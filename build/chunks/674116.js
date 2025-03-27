@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(823087),
   C = n(232388),
   O = n(546997),
-  v = n(186934),
-  S = n(716210),
+  S = n(186934),
+  v = n(716210),
   T = n(520384),
   I = n(459674),
   y = n(167540),
@@ -113,7 +113,7 @@ function U() {
         children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)(A.Z, {}), (0, r.jsx)(c.F, {
           setting: w.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
           children: (0, r.jsx)(P.Z, {})
-        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(S.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(I.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(a.$i$, {
           className: B.marginBottom40

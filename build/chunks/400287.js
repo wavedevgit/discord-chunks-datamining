@@ -33,8 +33,8 @@ function b() {
     j = p.vF.useSetting(),
     C = p.H1.useSetting(),
     O = p.ev.useSetting(),
-    v = p.x4.useSetting(),
-    S = p.RS.useSetting(),
+    S = p.x4.useSetting(),
+    v = p.RS.useSetting(),
     T = p.NA.useSetting(),
     I = p.nc.useSetting(),
     {
@@ -52,7 +52,7 @@ function b() {
         setting: h.s6.CHAT_INLINE_MEDIA_LINKS,
         children: (0, r.jsx)(a.j7V, {
           className: s()(N.marginTop8, N.marginBottom20),
-          value: S,
+          value: v,
           onChange: p.RS.updateSetting,
           children: x.NW.string(x.t.U47N1t)
         })
@@ -60,7 +60,7 @@ function b() {
         setting: h.s6.CHAT_INLINE_MEDIA_UPLOADS,
         children: (0, r.jsx)(a.j7V, {
           className: s()(N.marginTop8, N.marginBottom20),
-          value: v,
+          value: S,
           note: x.NW.formatToPlainString(x.t.qjjvqK, {
             maxSize: 10
           }),
