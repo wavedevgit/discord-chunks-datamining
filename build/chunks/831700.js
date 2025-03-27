@@ -223,6 +223,7 @@ class et extends W.ZP {
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
         children: (0, r.jsx)(c.yRy, {
+          targetElementRef: this.channelItemRef,
           position: "right",
           renderPopout: this.renderPopout,
           spacing: 0,
@@ -252,6 +253,7 @@ class et extends W.ZP {
               return (0, r.jsx)(I.Z, {
                 channel: e,
                 children: (0, r.jsxs)(F.ZP, ee($({
+                  ref: this.channelItemRef,
                   className: J.iconVisibility,
                   iconClassName: l()({
                     [J.iconLive]: O
@@ -308,7 +310,7 @@ class et extends W.ZP {
       shouldShowActivities: !1,
       shouldShowGuildVerificationPopout: !1,
       hovered: !1
-    }), X(this, "ref", i.createRef()), X(this, "activitiesHideTimeout", new s.V7), X(this, "closeGuildVerificationPopout", () => {
+    }), X(this, "ref", i.createRef()), X(this, "channelItemRef", i.createRef()), X(this, "activitiesHideTimeout", new s.V7), X(this, "closeGuildVerificationPopout", () => {
       this.setState({
         shouldShowGuildVerificationPopout: !1
       })
