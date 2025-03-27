@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
-  l = n(481060),
-  o = n(139387),
+  o = n(481060),
+  l = n(139387),
   a = n(933557),
   s = n(699516),
   c = n(594174),
@@ -38,7 +38,7 @@ function g(e) {
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
   }, [n, t]), N = i.useCallback(e => {
-    x() && (e === (null == f ? void 0 : f.id) ? o.Z.stopEditingWebhook() : o.Z.startEditingWebhook(e))
+    x() && (e === (null == f ? void 0 : f.id) ? l.Z.stopEditingWebhook() : l.Z.startEditingWebhook(e))
   }, [x, f]);
   return (0, r.jsx)("div", {
     className: b.__invalid_list,
@@ -52,13 +52,13 @@ function g(e) {
           channel: t,
           webhooks: n,
           channelOptions: i,
-          lastCreatedWebhookId: o,
+          lastCreatedWebhookId: l,
           editedWebhook: g,
           errors: f,
           toggleWebhookExpand: h
         } = e;
         return (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(l.vwX, {
+          children: [(0, r.jsx)(o.vwX, {
             className: b.groupHeader,
             children: m.NW.format(m.t.TKDIZm, {
               channelHook: () => (0, r.jsx)("span", {
@@ -81,7 +81,7 @@ function g(e) {
               editedWebhook: g,
               channelOptions: i,
               isExpanded: (null == g ? void 0 : g.id) === e.id,
-              isNew: o === e.id,
+              isNew: l === e.id,
               onToggleExpand: () => h(e.id),
               errors: f
             }, e.id)

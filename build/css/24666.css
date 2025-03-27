@@ -1,6 +1,6 @@
 /**
   Module ID: 24666
-  Original File Name: 2f5dc850a145b968
+  Original File Name: 627a90d8eaf3e7db
 **/
 @value minColumnWidth: 460px;
 
@@ -1058,6 +1058,10 @@
     margin-right: 4px
 }
 
+.disabled__132c6 {
+    opacity: .5
+}
+
 .variantsPanel__6f029 {
     display: flex;
     flex-direction: row;
@@ -1374,7 +1378,7 @@
     mask-image: linear-gradient(180deg,var(--black-500) 100%,transparent 0)
 }
 
-.checkmarkWrapper_c3d04b {
+.cardStateIconWrapper_c3d04b {
     position: absolute;
     align-items: center;
     left: 0;
@@ -1382,7 +1386,7 @@
     top: 110px
 }
 
-.checkmark_c3d04b {
+.cardStateIcon_c3d04b {
     width: 100%;
     color: var(--interactive-active);
     transition: opacity .5s;
@@ -1541,6 +1545,10 @@
 
 .visual-refresh .productName_c3d04b {
     color: var(--header-primary)
+}
+
+.externalProductDimmed_c3d04b {
+    opacity: .35
 }
 
 .messageBlock__2d815 {
@@ -1725,4 +1733,4 @@
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=2f5dc850a145b968.css.map*/
+/*# sourceMappingURL=627a90d8eaf3e7db.css.map*/

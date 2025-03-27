@@ -1,4 +1,4 @@
-/** Chunk was on 48909 **/
+/** Chunk was on 39340 **/
 let r;
 n.d(t, {
   Z: () => I
@@ -44,10 +44,10 @@ let O = b.IlC.APP,
   C = !1,
   x = [];
 
-function N() {
+function S() {
   y = !0
 }
-class S extends(i = o.ZP.Store) {
+class N extends(i = o.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, f.Z, _.default)
   }
@@ -63,10 +63,10 @@ class S extends(i = o.ZP.Store) {
     }
   }
 }
-E(S, "displayName", "InviteModalStore");
-let I = new S(l.Z, {
-  OVERLAY_INITIALIZE: N,
-  CONNECTION_OPEN: N,
+E(N, "displayName", "InviteModalStore");
+let I = new N(l.Z, {
+  OVERLAY_INITIALIZE: S,
+  CONNECTION_OPEN: S,
   CONNECTION_CLOSED: function() {
     y = !1
   },

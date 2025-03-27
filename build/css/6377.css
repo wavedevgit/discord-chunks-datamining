@@ -1,6 +1,6 @@
 /**
   Module ID: 6377
-  Original File Name: 8ddc513395194f60
+  Original File Name: 58f6f5126e3e70ec
 **/
 .modal__28554 {
     max-height: 640px;
@@ -118,15 +118,54 @@
     border-radius: 8px
 }
 
-.guildContent__28554 {
-    display: flex;
+.inviteTarget__28554 {
     flex: 1;
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
 }
 
-.guildCount__28554 {
+.inviteTargetIcon__28554 {
+    flex: 0 0 auto
+}
+
+.inviteTargetHeading__28554 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xxs);
+    overflow: hidden
+}
+
+.inviteTargetContent__28554 {
+    display: flex;
+    align-items: center;
+    gap: 1ch
+}
+
+.guildPresence__28554 {
     display: flex;
     gap: 8px
+}
+
+.memberCount__28554,.onlineCount__28554 {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
+.dot__28554 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%
+}
+
+.memberCount__28554 .dot__28554 {
+    background: var(--status-offline)
+}
+
+.onlineCount__28554 .dot__28554 {
+    background: var(--status-online)
 }
 
 .settingsButton__28554 {
@@ -455,4 +494,4 @@
     background: var(--border-subtle)
 }
 
-/*# sourceMappingURL=8ddc513395194f60.css.map*/
+/*# sourceMappingURL=58f6f5126e3e70ec.css.map*/

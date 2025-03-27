@@ -1,6 +1,6 @@
 /** Chunk was on 59732 **/
 r.d(t, {
-  $p: () => a,
+  $p: () => o,
   AK: () => d,
   Es: () => c,
   U$: () => s,
@@ -8,12 +8,12 @@ r.d(t, {
 }), r(315314), r(309749), r(610138), r(216116), r(78328), r(815648), r(47120), r(411104), r(518263), r(970173), r(520712), r(268111), r(941497), r(32026), r(480839), r(744285), r(492257), r(873817), r(610885), r(126298);
 var n = r(392711),
   i = r(36793),
-  o = r(486324);
-async function a(e) {
+  a = r(486324);
+async function o(e) {
   let {
     file: t,
     image: n,
-    cropDimensions: a,
+    cropDimensions: o,
     cropOriginCoordinates: s,
     maxDimensions: l,
     imageRotation: c = 0
@@ -24,7 +24,7 @@ async function a(e) {
     sourceHeight: g
   } = (0, i.GS)({
     image: n,
-    cropDimensions: a,
+    cropDimensions: o,
     cropOriginCoordinates: s,
     maxDimensions: l,
     imageRotation: c
@@ -33,7 +33,7 @@ async function a(e) {
       let {
         data: n
       } = r;
-      if (n.type === o.u.CROP_GIF_COMPLETE) {
+      if (n.type === a.u.CROP_GIF_COMPLETE) {
         var i;
         e((i = new Blob([n.result]), new Promise(e => {
           let t = new FileReader;
@@ -43,11 +43,11 @@ async function a(e) {
             "string" == typeof n ? e(n) : e("")
           }, t.readAsDataURL(i)
         }))), p.terminate()
-      } else n.type === o.u.CROP_GIF_ERROR && (t(Error("Error cropping GIF")), p.terminate())
+      } else n.type === a.u.CROP_GIF_ERROR && (t(Error("Error cropping GIF")), p.terminate())
     }
   });
   return p.postMessage({
-    type: o.u.CROP_GIF_START,
+    type: a.u.CROP_GIF_START,
     gif: new Uint8Array(h),
     x: 0 | u,
     y: 0 | d,
@@ -68,39 +68,39 @@ function s(e, t, r) {
 }
 
 function l(e, t, r, n, i) {
-  let a = r,
+  let o = r,
     s = n,
-    l = i ? o.US : o.vJ;
-  return (r > l && (a = l, s = l / r * n), r / n < e) ? {
-    width: a,
+    l = i ? a.US : a.vJ;
+  return (r > l && (o = l, s = l / r * n), r / n < e) ? {
+    width: o,
     height: s
   } : {
-    width: t / s * a,
+    width: t / s * o,
     height: t
   }
 }
 
 function c(e, t, r, n) {
   switch (e) {
-    case o.pC.AVATAR:
-    case o.pC.AVATAR_DECORATION:
+    case a.pC.AVATAR:
+    case a.pC.AVATAR_DECORATION:
       return {
         width: t, height: r
       };
-    case o.pC.BANNER:
-      let i = n ? o.SP : o.qj;
-      return l(o.MY, i, t, r, n);
-    case o.pC.GUILD_BANNER:
-      let a = n ? o.t2 : o.C5;
-      return l(o.Ij, a, t, r, n);
-    case o.pC.VIDEO_BACKGROUND:
-      let s = n ? o.kP : o.PB;
-      return l(o.Ff, s, t, r, n);
-    case o.pC.SCHEDULED_EVENT_IMAGE:
-      let c = n ? o.tv : o.WV;
-      return l(o.ut, c, t, r, n);
-    case o.pC.HOME_HEADER:
-      return l(o.sX, o.SW, t, r, n)
+    case a.pC.BANNER:
+      let i = n ? a.SP : a.qj;
+      return l(a.MY, i, t, r, n);
+    case a.pC.GUILD_BANNER:
+      let o = n ? a.t2 : a.C5;
+      return l(a.Ij, o, t, r, n);
+    case a.pC.VIDEO_BACKGROUND:
+      let s = n ? a.kP : a.PB;
+      return l(a.Ff, s, t, r, n);
+    case a.pC.SCHEDULED_EVENT_IMAGE:
+      let c = n ? a.tv : a.WV;
+      return l(a.ut, c, t, r, n);
+    case a.pC.HOME_HEADER:
+      return l(a.sX, a.SW, t, r, n)
   }
 }
 
@@ -112,43 +112,43 @@ function u(e, t, r) {
       right: 0
     },
     i = e - r.width,
-    o = t - r.height;
-  return 0 !== i && (n.left = -Math.abs(i / 2), n.right = i / 2), 0 !== o && (n.bottom = -Math.abs(o / 2), n.top = o / 2), n
+    a = t - r.height;
+  return 0 !== i && (n.left = -Math.abs(i / 2), n.right = i / 2), 0 !== a && (n.bottom = -Math.abs(a / 2), n.top = a / 2), n
 }
 
 function d(e, t, r, n, i) {
-  let a = i ? o.US : o.vJ;
+  let o = i ? a.US : a.vJ;
   switch (e) {
-    case o.pC.AVATAR:
-    case o.pC.AVATAR_DECORATION:
+    case a.pC.AVATAR:
+    case a.pC.AVATAR_DECORATION:
       let s = Math.min(t, r);
       return {
         width: s, height: s
       };
-    case o.pC.BANNER:
-      let l = Math.min(t, a);
+    case a.pC.BANNER:
+      let l = Math.min(t, o);
       return {
-        width: l, height: l * (1 / o.MY)
+        width: l, height: l * (1 / a.MY)
       };
-    case o.pC.GUILD_BANNER:
-      let c = Math.min(t, a);
+    case a.pC.GUILD_BANNER:
+      let c = Math.min(t, o);
       return {
         width: c, height: Math.min(9 / 16 * c, n)
       };
-    case o.pC.VIDEO_BACKGROUND:
-      let u = Math.min(t, a);
+    case a.pC.VIDEO_BACKGROUND:
+      let u = Math.min(t, o);
       return {
         width: u, height: 9 / 16 * u
       };
-    case o.pC.SCHEDULED_EVENT_IMAGE:
-      let d = Math.min(t, a);
+    case a.pC.SCHEDULED_EVENT_IMAGE:
+      let d = Math.min(t, o);
       return {
         width: d, height: .4 * d
       };
-    case o.pC.HOME_HEADER:
-      let m = Math.min(t, a);
+    case a.pC.HOME_HEADER:
+      let m = Math.min(t, o);
       return {
-        width: m, height: m * (1 / o.sX)
+        width: m, height: m * (1 / a.sX)
       }
   }
 }

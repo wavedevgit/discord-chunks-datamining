@@ -14,18 +14,22 @@ var r = n(200651),
 function d(e) {
   var t;
   let {
-    orbPrice: n
-  } = e;
+    orbPrice: n,
+    isProductDisabled: l,
+    hasSufficientOrbs: s
+  } = e, d = l ? c.NW.string(c.t.wu4gyc) : c.NW.string(c.t.eFNRzc), m = l || !s;
   return (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsxs)("div", {
       className: u.orbText,
       children: [(0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
-        children: c.NW.string(c.t.eFNRzc)
+        className: m ? u.disabled : void 0,
+        children: d
       }), (0, r.jsx)(a.Z, {})]
     }), (0, r.jsx)(o.Z, {
-      orbAmount: null !== (t = null == n ? void 0 : n.amount) && void 0 !== t ? t : 1 / 0
+      orbAmount: null !== (t = null == n ? void 0 : n.amount) && void 0 !== t ? t : 1 / 0,
+      className: m ? u.disabled : void 0
     })]
   })
 }
@@ -36,23 +40,28 @@ function m(e) {
     prices: n,
     isPremiumUser: i,
     discount: a,
-    product: c
+    product: c,
+    hasSufficientOrbs: m,
+    isProductDisabled: p
   } = e;
   if (0 === n.length) return null;
   if (n[0].currency === s.pK.DISCORD_ORB) return (0, r.jsx)(d, {
-    orbPrice: n[0]
+    orbPrice: n[0],
+    isProductDisabled: p,
+    hasSufficientOrbs: m
   });
-  let m = !i;
+  let f = !i;
   return (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsx)(l.Z, {
       product: c,
       discount: a,
       isPremiumUser: i,
-      nitroUpsell: m,
-      className: m ? u.nitroUpsell : void 0
+      nitroUpsell: f,
+      className: f ? u.nitroUpsell : void 0
     }), n.length > 1 && n[1].currency === s.pK.DISCORD_ORB && (0, r.jsx)(o.Z, {
-      orbAmount: null !== (t = n[1].amount) && void 0 !== t ? t : 1 / 0
+      orbAmount: null !== (t = n[1].amount) && void 0 !== t ? t : 1 / 0,
+      className: p || !m ? u.disabled : void 0
     })]
   })
 }

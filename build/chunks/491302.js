@@ -4,8 +4,8 @@ n.d(t, {
 }), n(301563), n(653041);
 var r = n(200651),
   i = n(192379),
-  l = n(481060),
-  o = n(668781),
+  o = n(481060),
+  l = n(668781),
   a = n(139387),
   s = n(308063),
   c = n(600164),
@@ -32,9 +32,9 @@ function f(e) {
       discriminator: m.fo$
     })
   }, [t]), N = i.useCallback(() => {
-    (0, l.h7j)(e => {
+    (0, o.h7j)(e => {
       var n, i;
-      return (0, r.jsx)(l.ConfirmModal, (n = function(e) {
+      return (0, r.jsx)(o.ConfirmModal, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -59,13 +59,13 @@ function f(e) {
         cancelText: b.NW.string(b.t["ETE/oK"]),
         onConfirm: () => {
           s.Z.delete(t.guild_id, t.id).catch(() => {
-            o.Z.show({
+            l.Z.show({
               title: b.NW.string(b.t.LpbaFR),
               body: b.NW.string(b.t["/4TwKS"])
             })
           })
         },
-        children: (0, r.jsx)(l.Text, {
+        children: (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           children: b.NW.string(b.t.zO9jrK)
         })
@@ -82,7 +82,7 @@ function f(e) {
     })
   }, [t.guild_id, t.id, t.name]), O = [];
   null != t.source_channel && null != t.source_guild && (O.push({
-    icon: l.MqZ,
+    icon: o.MqZ,
     text: t.source_channel.name
   }), O.push({
     text: (0, r.jsx)("span", {
@@ -98,7 +98,7 @@ function f(e) {
   let y = null;
   return h && null != n && (y = (0, r.jsxs)("div", {
     className: g.body,
-    children: [(0, r.jsx)(l.$i$, {
+    children: [(0, r.jsx)(o.$i$, {
       className: g.topDivider
     }), (0, r.jsx)(c.Z, {
       children: (0, r.jsxs)(c.Z, {
@@ -106,9 +106,9 @@ function f(e) {
         children: [(0, r.jsxs)(c.Z, {
           children: [(0, r.jsx)(c.Z.Child, {
             basis: "50%",
-            children: (0, r.jsx)(l.xJW, {
+            children: (0, r.jsx)(o.xJW, {
               title: b.NW.string(b.t.I1o5gY),
-              children: (0, r.jsx)(l.oil, {
+              children: (0, r.jsx)(o.oil, {
                 value: n.name,
                 onChange: e => {
                   a.Z.updateWebhook({
@@ -121,9 +121,9 @@ function f(e) {
             })
           }), (0, r.jsx)(c.Z.Child, {
             basis: "50%",
-            children: (0, r.jsx)(l.xJW, {
+            children: (0, r.jsx)(o.xJW, {
               title: b.NW.string(b.t["4TuWfX"]),
-              children: (0, r.jsx)(l.q4e, {
+              children: (0, r.jsx)(o.q4e, {
                 value: n.channel_id,
                 options: f,
                 onChange: e => {
@@ -134,26 +134,26 @@ function f(e) {
               })
             })
           })]
-        }), (0, r.jsx)(l.$i$, {
+        }), (0, r.jsx)(o.$i$, {
           className: g.bottomDivider
         }), (0, r.jsx)(c.Z, {
-          children: (0, r.jsx)(l.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             onClick: N,
-            size: l.zxk.Sizes.SMALL,
-            color: l.zxk.Colors.RED,
-            look: l.zxk.Looks.LINK,
+            size: o.zxk.Sizes.SMALL,
+            color: o.zxk.Colors.RED,
+            look: o.zxk.Looks.LINK,
             className: g.removeButton,
             children: b.NW.string(b.t.CMy0Cg)
           })
         })]
       })
     })]
-  })), (0, r.jsx)(l.Zbd, {
+  })), (0, r.jsx)(o.Zbd, {
     editable: !0,
     className: g.card,
     children: (0, r.jsxs)(c.Z, {
       direction: c.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(l.P3F, {
+      children: [(0, r.jsx)(o.P3F, {
         className: g.header,
         "aria-expanded": h,
         onClick: j,

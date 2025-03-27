@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => E
 });
 var r = n(200651),
   i = n(192379),
@@ -9,10 +9,11 @@ var r = n(200651),
   a = n.n(o),
   s = n(568611),
   l = n(481060),
-  c = n(516817),
-  u = n(71930);
+  c = n(359135),
+  u = n(516817),
+  d = n(71930);
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,20 +22,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +46,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,102 +62,103 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = i.forwardRef(function(e, t) {
+let E = i.forwardRef(function(e, t) {
   var n, {
       avatar: o,
-      name: d,
-      nameplate: _,
-      children: m,
-      subText: g,
-      decorators: E,
-      onClick: b,
-      hovered: v,
-      selected: y,
-      muted: O,
-      to: I,
-      avatarClassName: S,
-      selectedClassName: T,
-      innerClassName: A,
-      wrapContent: N,
-      highlighted: C,
-      focusProps: R
+      name: f,
+      nameplate: p,
+      children: g,
+      subText: E,
+      decorators: b,
+      onClick: v,
+      hovered: y,
+      selected: O,
+      muted: I,
+      to: S,
+      avatarClassName: T,
+      selectedClassName: A,
+      innerClassName: N,
+      wrapContent: C,
+      highlighted: R,
+      focusProps: P
     } = e,
-    P = h(e, ["avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  P.className = a()(P.className, u.container, {
-    [u.selected]: y,
-    [u.highlighted]: C,
-    [u.active]: y,
-    [null != T ? T : ""]: y,
-    [u.clickable]: !y && (null != I || null != b),
-    [u.wrapperPlated]: null != _
-  }), P["aria-selected"] = null !== (n = P["aria-selected"]) && void 0 !== n ? n : y;
-  let w = i.useRef(null),
-    D = (0, r.jsxs)("div", {
-      className: a()(u.childContainer, {
-        [u.nameplated]: null != _
+    w = m(e, ["avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
+  w.className = a()(w.className, d.container, {
+    [d.selected]: O,
+    [d.highlighted]: R,
+    [d.active]: O,
+    [null != A ? A : ""]: O,
+    [d.clickable]: !O && (null != S || null != v),
+    [d.wrapperPlated]: null != p
+  }), w["aria-selected"] = null !== (n = w["aria-selected"]) && void 0 !== n ? n : O;
+  let D = i.useRef(null),
+    L = (0, r.jsxs)("div", {
+      className: a()(d.childContainer, {
+        [d.nameplated]: null != p
       }),
-      children: [(0, r.jsx)(c.Z, {
-        nameplate: _,
-        hovered: v,
-        selected: y,
-        content: w.current
+      children: [(0, r.jsx)(u.Z, {
+        nameplate: p,
+        hovered: y,
+        selected: O,
+        content: D.current,
+        placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
-        ref: w,
-        className: a()(A, u.layout, {
-          [u.muted]: !y && O,
-          [u.wrappedLayout]: N
+        ref: D,
+        className: a()(N, d.layout, {
+          [d.muted]: !O && I,
+          [d.wrappedLayout]: C
         }),
         children: [(0, r.jsx)("div", {
-          className: a()(u.avatar, S),
+          className: a()(d.avatar, T),
           children: o
         }), (0, r.jsxs)("div", {
-          className: u.content,
+          className: d.content,
           children: [(0, r.jsxs)("div", {
-            className: u.nameAndDecorators,
+            className: d.nameAndDecorators,
             children: [(0, r.jsx)("div", {
-              className: a()(u.name, {
-                [u.wrappedName]: N
+              className: a()(d.name, {
+                [d.wrappedName]: C
               }),
-              children: d
-            }), E]
-          }), null != g ? (0, r.jsx)("div", {
-            className: u.subText,
-            children: g
+              children: f
+            }), b]
+          }), null != E ? (0, r.jsx)("div", {
+            className: d.subText,
+            children: E
           }) : null]
-        }), null != m ? (0, r.jsx)("div", {
-          className: u.children,
-          children: m
+        }), null != g ? (0, r.jsx)("div", {
+          className: d.children,
+          children: g
         }) : null]
       })]
     });
-  return null != I ? (0, r.jsx)(l.tEY, p(f({}, R), {
-    children: (0, r.jsx)(s.rU, p(f({
-      to: I,
-      onClick: b
-    }, P), {
+  return null != S ? (0, r.jsx)(l.tEY, h(_({}, P), {
+    children: (0, r.jsx)(s.rU, h(_({
+      to: S,
+      onClick: v
+    }, w), {
       role: "listitem",
       ref: t,
-      children: D
+      children: L
     }))
-  })) : null != b ? (0, r.jsx)(l.P3F, p(f({
-    onClick: b,
-    focusProps: R
-  }, P), {
+  })) : null != v ? (0, r.jsx)(l.P3F, h(_({
+    onClick: v,
+    focusProps: P
+  }, w), {
     role: "listitem",
     innerRef: t,
-    children: D
-  })) : (0, r.jsx)(l.tEY, p(f({}, R), {
-    children: (0, r.jsx)("div", p(f({}, P), {
+    children: L
+  })) : (0, r.jsx)(l.tEY, h(_({}, P), {
+    children: (0, r.jsx)("div", h(_({}, w), {
       role: "listitem",
       ref: t,
-      children: D
+      children: L
     }))
   }))
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 50100 **/
+/** Chunk was on 66047 **/
 e.exports = {
   modal: "modal__28554",
   header: "header__28554",
@@ -17,9 +17,15 @@ e.exports = {
   disabled: "disabled__28554",
   footer: "footer__28554",
   guildRow: "guildRow__28554",
-  guildContent: "guildContent__28554",
   guildAsset: "guildAsset__28554",
-  guildCount: "guildCount__28554",
+  inviteTarget: "inviteTarget__28554",
+  inviteTargetIcon: "inviteTargetIcon__28554",
+  inviteTargetHeading: "inviteTargetHeading__28554",
+  inviteTargetContent: "inviteTargetContent__28554",
+  guildPresence: "guildPresence__28554",
+  memberCount: "memberCount__28554",
+  onlineCount: "onlineCount__28554",
+  dot: "dot__28554",
   settingsButton: "settingsButton__28554",
   buttonRow: "buttonRow__28554",
   button: "button__28554",

@@ -1,6 +1,6 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var n = r(200651);
 r(192379);
@@ -38,7 +38,7 @@ function u(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     application: t,
     timestamp: r,
@@ -91,14 +91,14 @@ function m(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     application: t,
     timestamp: r,
     compact: i,
     children: o
   } = e;
-  return (0, n.jsxs)(m, {
+  return (0, n.jsxs)(p, {
     application: t,
     timestamp: r,
     children: [i ? null : (0, n.jsx)(l.iWm, {

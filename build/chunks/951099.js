@@ -1,2 +1,2 @@
-/** Chunk was on 48909 **/
+/** Chunk was on 39340 **/
 e.exports = "/assets/600de8edafaf94b2.svg"

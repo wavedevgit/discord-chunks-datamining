@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(780384),
-  o = n(481060),
+  o = n(780384),
+  l = n(481060),
   a = n(668781),
   s = n(308063),
   c = n(493773),
@@ -32,7 +32,7 @@ function j(e) {
     } = e,
     I = (0, d.ZP)(),
     [S, E] = i.useState(null),
-    [w, P] = i.useState(null);
+    [P, w] = i.useState(null);
   if (null != j) t = j;
   else {
     let e = Object.values(O);
@@ -56,26 +56,26 @@ function j(e) {
           body: g.NW.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (P(e.id), E(e))
+      null != e && (w(e.id), E(e))
     }
   }, [C, t, n]);
   (0, c.ZP)(() => {
     0 === v.length && T()
   });
   let Z = null !== t;
-  return (0, r.jsxs)(o.hjN, {
-    children: [(0, r.jsx)(o.R94, {
-      type: o.geA.DESCRIPTION,
+  return (0, r.jsxs)(l.hjN, {
+    children: [(0, r.jsx)(l.R94, {
+      type: l.geA.DESCRIPTION,
       children: g.NW.format(g.t.WL0d0d, {
         helpdeskArticle: p.Z.getArticleURL(b.BhN.WEBHOOKS),
         developersArticle: b.EYA.API_DOCS_WEBHOOKS
       })
-    }), (0, r.jsx)(o.$i$, {
+    }), (0, r.jsx)(l.$i$, {
       className: f.headerDivider
     }), v.length > 0 ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.zxk, {
+      children: [(0, r.jsx)(l.zxk, {
         className: f.createButton,
-        size: o.zxk.Sizes.SMALL,
+        size: l.zxk.Sizes.SMALL,
         disabled: !Z,
         onClick: T,
         children: g.NW.string(g.t["nrO/HB"])
@@ -88,7 +88,7 @@ function j(e) {
         canNavigate: C
       })]
     }) : function(e, t, n) {
-      let i = (0, l.wj)(e) ? h : x;
+      let i = (0, o.wj)(e) ? h : x;
       return (0, r.jsxs)(u.Z, {
         direction: u.Z.Direction.VERTICAL,
         align: u.Z.Align.CENTER,
@@ -96,10 +96,10 @@ function j(e) {
           alt: "",
           src: i,
           className: f.emptyStateImage
-        }), (0, r.jsx)(o.X6q, {
+        }), (0, r.jsx)(l.X6q, {
           variant: "heading-md/semibold",
           children: g.NW.string(g.t.LzmsWl)
-        }), (0, r.jsx)(o.zxk, {
+        }), (0, r.jsx)(l.zxk, {
           className: f.emptyStateButton,
           disabled: !t,
           onClick: n,

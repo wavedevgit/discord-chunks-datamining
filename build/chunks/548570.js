@@ -398,7 +398,7 @@ class $ extends w.Z {
         client_state: a
       },
       d = JSON.stringify(u);
-    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = o.deflate(d).length, this.identifyCount += 1, this.send(w.j.IDENTIFY, u, !1)
+    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = o.deflate(d).length, this.identifyCount += 1, this.send(w.j.IDENTIFY, u, !1), v.default.track(x.rMx.SESSION_START_CLIENT, {})
   }
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;

@@ -1,14 +1,14 @@
-/** Chunk was on 50100 **/
+/** Chunk was on 66047 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var i = n(192379),
   r = n(924826),
   a = n(442837),
-  l = n(607070);
+  o = n(607070);
 
-function o(e, t, n) {
-  let o = (0, a.e7)([l.Z], () => l.Z.keyboardModeEnabled),
+function l(e, t, n) {
+  let l = (0, a.e7)([o.Z], () => o.Z.keyboardModeEnabled),
     s = i.useCallback(e => {
       let n = document.querySelector(e),
         i = t.current;
@@ -25,7 +25,7 @@ function o(e, t, n) {
         callback: () => requestAnimationFrame(() => e())
       })
     }), [t]),
-    u = i.useCallback(() => new Promise(e => {
+    d = i.useCallback(() => new Promise(e => {
       let n = t.current;
       if (null == n) return e();
       n.scrollTo({
@@ -35,10 +35,10 @@ function o(e, t, n) {
     }), [t]);
   return (0, r.ZP)({
     id: e,
-    isEnabled: o,
+    isEnabled: l,
     setFocus: s,
     scrollToStart: c,
-    scrollToEnd: u,
+    scrollToEnd: d,
     orientation: null == n ? void 0 : n.orientation
   })
 }

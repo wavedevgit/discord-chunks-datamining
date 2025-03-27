@@ -49,7 +49,7 @@ function _(e) {
         [f.hover]: n,
         [f.selected]: o,
         [f.account]: c === d.i.ACCOUNT,
-        [f.shopPreview]: c === d.i.SHOP_PREVIEW
+        [f.preview]: c === d.i.PREVIEW
       }),
       style: {
         maskImage: _.maskImage

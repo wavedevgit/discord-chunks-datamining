@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
-var r = n(200651);
-n(192379);
-var i = n(481060),
-  o = n(386019),
-  a = n(388032),
-  s = n(203396);
+var r = n(200651),
+  i = n(192379),
+  o = n(481060),
+  a = n(386019),
+  s = n(388032),
+  l = n(203396);
 
-function l(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -19,20 +19,20 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,30 +43,33 @@ function u(e, t) {
   return n
 }
 
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e) {
-  return (0, r.jsx)(o.Z, d(c({}, e), {
-    children: e => (0, r.jsx)(i.ua7, {
-      text: a.NW.string(a.t.UKOtz8),
+function _(e) {
+  let t = i.useRef(null);
+  return (0, r.jsx)(a.Z, f(u({}, e), {
+    children: e => (0, r.jsx)(o.ua7, {
+      targetElementRef: t,
+      text: s.NW.string(s.t.UKOtz8),
       "aria-label": !1,
-      children: t => (0, r.jsx)(i.P3F, d(c({}, t, e), {
-        "aria-label": a.NW.string(a.t.UKOtz8),
-        onClick: n => {
+      children: n => (0, r.jsx)(o.P3F, f(u({}, n, e), {
+        innerRef: t,
+        "aria-label": s.NW.string(s.t.UKOtz8),
+        onClick: t => {
           var r;
-          n.stopPropagation(), null === (r = t.onClick) || void 0 === r || r.call(t), e.onClick(n)
+          t.stopPropagation(), null === (r = n.onClick) || void 0 === r || r.call(n), e.onClick(t)
         },
-        onContextMenu: n => {
+        onContextMenu: t => {
           var r;
-          n.preventDefault(), null === (r = t.onClick) || void 0 === r || r.call(t), e.onClick(n)
+          t.preventDefault(), null === (r = n.onClick) || void 0 === r || r.call(n), e.onClick(t)
         },
-        className: s.contextMenu,
-        children: (0, r.jsx)(i.xhG, {
-          color: i.TVs.colors.INTERACTIVE_NORMAL,
+        className: l.contextMenu,
+        children: (0, r.jsx)(o.xhG, {
+          color: o.TVs.colors.INTERACTIVE_NORMAL,
           size: "xs"
         })
       }))

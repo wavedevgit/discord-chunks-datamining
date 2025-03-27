@@ -181,16 +181,16 @@ function _(e) {
     })]
   }) : null
 }
-let W = function(e) {
-  var t, {
-      avatarContainerClass: n = C.avatarContainer,
-      userNameClassName: i = C.usernameFont,
-      size: s = Z.ipw.SMALL,
-      selected: u = !1,
-      disabled: d = !1,
-      isOverlay: p = !1
+let W = l.forwardRef(function(e, t) {
+  var n, {
+      avatarContainerClass: i = C.avatarContainer,
+      userNameClassName: s = C.usernameFont,
+      size: u = Z.ipw.SMALL,
+      selected: d = !1,
+      disabled: p = !1,
+      isOverlay: b = !1
     } = e,
-    b = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -206,68 +206,69 @@ let W = function(e) {
       return l
     }(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
   let {
-    onClick: O,
-    onKeyDown: P,
-    onDoubleClick: N,
-    onContextMenu: x,
-    onMouseLeave: w,
-    onMouseDown: D,
-    priority: W,
-    speaking: k,
-    collapsed: M,
-    mute: L,
-    serverMute: U,
-    guildId: R,
-    nick: V,
-    isGuest: Y,
-    flipped: G,
-    className: B,
-    overlap: F,
-    "aria-label": z,
-    ringing: J,
-    user: H,
-    channelId: X
-  } = b, {
-    parentAnalyticsLocation: K
-  } = (0, f.ZP)(), Q = (0, c.bp)(), q = null != X ? j.Z.getChannel(X) : null, {
-    simplifiedSettingsEnabled: $
+    onClick: P,
+    onKeyDown: N,
+    onDoubleClick: x,
+    onContextMenu: w,
+    onMouseLeave: D,
+    onMouseDown: W,
+    priority: k,
+    speaking: M,
+    collapsed: L,
+    mute: U,
+    serverMute: R,
+    guildId: V,
+    nick: Y,
+    isGuest: G,
+    flipped: B,
+    className: F,
+    overlap: z,
+    "aria-label": J,
+    ringing: H,
+    user: X,
+    channelId: K
+  } = O, {
+    parentAnalyticsLocation: Q
+  } = (0, f.ZP)(), q = (0, c.bp)(), $ = null != K ? j.Z.getChannel(K) : null, {
+    simplifiedSettingsEnabled: ee
   } = (0, h.Z)({
     location: "VoiceUser"
-  }), [ee, et] = l.useState(!1);
+  }), [et, en] = l.useState(!1);
   return l.useEffect(() => {
     let e = !1,
       t = () => {
-        e === S.Z.isOpen() || (e = S.Z.isOpen()) || et(!1)
+        e === S.Z.isOpen() || (e = S.Z.isOpen()) || en(!1)
       };
     return S.Z.addChangeListener(t), () => S.Z.removeChangeListener(t)
   }, []), (0, r.jsx)(a.kL8, {
-    className: o()(B, {
+    ref: t,
+    className: o()(F, {
       [C.voiceUser]: !0,
-      [C.overlap]: F,
-      [C.selected]: u,
-      [C.clickable]: null != O,
-      [C.userSmall]: s === Z.ipw.SMALL,
-      [C.userLarge]: s === Z.ipw.LARGE,
-      [C.disabled]: !u && d,
-      [C.ringing]: J
+      [C.overlap]: z,
+      [C.selected]: d,
+      [C.clickable]: null != P,
+      [C.userSmall]: u === Z.ipw.SMALL,
+      [C.userLarge]: u === Z.ipw.LARGE,
+      [C.disabled]: !d && p,
+      [C.ringing]: H
     }),
     onClick: e => {
-      null == O || O(e, H)
+      null == P || P(e, X)
     },
     onDoubleClick: e => {
-      null == N || N(e, H)
+      null == x || x(e, X)
     },
     onContextMenu: e => {
-      null == x || x(e, H)
+      null == w || w(e, X)
     },
     onMouseLeave: e => {
-      null == w || w(e, H)
+      null == D || D(e, X)
     },
     onMouseDown: e => {
-      null == D || D(e, H)
+      null == W || W(e, X)
     },
-    onKeyDown: P,
-    "aria-label": null !== (t = null != z ? z : V) && void 0 !== t ? t : H.username,
+    onKeyDown: N,
+    "aria-label": null !== (n = null != J ? J : Y) && void 0 !== n ? n : X.username,
     focusProps: {
       offset: {
         right: 4
@@ -275,48 +276,48 @@ let W = function(e) {
     },
     children: (0, r.jsxs)("div", {
       className: o()(C.content, {
-        [C.flipped]: G
+        [C.flipped]: B
       }),
-      children: [W && !M ? (0, r.jsx)(a.ua7, {
+      children: [k && !L ? (0, r.jsx)(a.ua7, {
         text: T.NW.string(T.t.BVK71t),
         children: e => (0, r.jsx)("div", A({
           className: o()(C.iconPriortySpeaker, {
-            [C.iconPriortySpeakerSpeaking]: !L && !U && k
+            [C.iconPriortySpeakerSpeaking]: !U && !R && M
           })
         }, e))
       }) : null, (0, r.jsx)("div", {
-        className: o()(n, C.avatar, {
-          [C.avatarLarge]: s === Z.ipw.LARGE,
-          [C.avatarSmall]: s === Z.ipw.SMALL,
-          [C.avatarSpeaking]: k
+        className: o()(i, C.avatar, {
+          [C.avatarLarge]: u === Z.ipw.LARGE,
+          [C.avatarSmall]: u === Z.ipw.SMALL,
+          [C.avatarSpeaking]: M
         }),
         style: {
-          backgroundImage: "url(".concat(H.getAvatarURL(R, s === Z.ipw.LARGE ? 38 : 24), ")")
+          backgroundImage: "url(".concat(X.getAvatarURL(V, u === Z.ipw.LARGE ? 38 : 24), ")")
         }
       }), function() {
         var e, t;
         let n = (0, r.jsxs)("div", {
-            className: o()(i, {
+            className: o()(s, {
               [C.username]: !0,
-              [C.usernameSpeaking]: !L && !U && k
+              [C.usernameSpeaking]: !U && !R && M
             }),
-            children: [null != V ? V : I.ZP.getName(H), Y ? (0, r.jsxs)("span", {
+            children: [null != Y ? Y : I.ZP.getName(X), G ? (0, r.jsxs)("span", {
               className: C.guestSuffix,
               children: ["\xa0", T.NW.string(T.t["pFO/Pj"])]
             }) : ""]
           }),
           l = {
-            primaryGuild: H.primaryGuild,
-            userId: H.id,
-            contextGuildId: R,
-            isOverlay: p,
+            primaryGuild: X.primaryGuild,
+            userId: X.id,
+            contextGuildId: V,
+            isOverlay: b,
             disableTooltip: !0,
-            className: o()(C.clanTag, p && C.isOverlay),
+            className: o()(C.clanTag, b && C.isOverlay),
             profileViewedAnalytics: {
-              source: p ? Z.jXE.OVERLAY : Z.Sbl.VOICE_PANEL
+              source: b ? Z.jXE.OVERLAY : Z.Sbl.VOICE_PANEL
             }
           };
-        return !M || p ? (0, r.jsx)(y.Z, (e = A({}, l), t = t = {
+        return !L || b ? (0, r.jsx)(y.Z, (e = A({}, l), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -329,26 +330,26 @@ let W = function(e) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)) : null
       }(), (0, r.jsx)(_, A({
-        disabled: d
-      }, b)), $ && (M ? null : (0, r.jsx)(a.DY3, {
+        disabled: p
+      }, O)), ee && (L ? null : (0, r.jsx)(a.DY3, {
         text: T.NW.string(T.t["+1H47u"]),
         className: o()(C.optionsButtonContainer, {
-          [C.optionsContainerActive]: ee
+          [C.optionsContainerActive]: et
         }),
         children: (0, r.jsx)(a.P3F, {
           className: o()(C.optionsButton, {
-            [C.optionsActive]: ee
+            [C.optionsActive]: et
           }),
           onClick: function(e) {
-            null != R && null != q && ((0, m.v)(K, m.d.MORE), et(!0), (0, v.D)(e, H, q, {
-              context: Q
+            null != V && null != $ && ((0, m.v)(Q, m.d.MORE), en(!0), (0, v.D)(e, X, $, {
+              context: q
             }, (e, t) => {
               (0, g.o)({
                 menuName: e,
                 menuItemProps: t,
                 entrypoint: E.A5.THREE_DOT,
-                location: K,
-                targetUserId: H.id
+                location: Q,
+                targetUserId: X.id
               })
             }))
           },
@@ -360,7 +361,7 @@ let W = function(e) {
       }))]
     })
   })
-};
+});
 
 function k(e) {
   let {

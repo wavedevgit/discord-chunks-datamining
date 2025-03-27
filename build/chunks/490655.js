@@ -1,11 +1,11 @@
 /** Chunk was on 23682 **/
 n.d(t, {
-  Z: () => w
+  Z: () => P
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   a = n(442837),
   s = n(481060),
   c = n(139387),
@@ -49,13 +49,13 @@ function E(e, t) {
       return ""
   }
 }
-let w = i.memo(function(e) {
+let P = i.memo(function(e) {
   let {
     section: t,
     sectionId: n,
-    guild: l,
-    channel: w,
-    integrations: P,
+    guild: o,
+    channel: P,
+    integrations: w,
     editedIntegration: T,
     webhooks: Z,
     editedWebhook: W,
@@ -63,7 +63,7 @@ let w = i.memo(function(e) {
     refToScroller: A,
     errors: D,
     hasChanges: R
-  } = e, L = (0, a.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), M = (0, a.cj)([g.ZP], () => g.ZP.getChannels(null == l ? void 0 : l.id)), B = (0, a.cj)([f.Z], () => o().keyBy(M.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(C.Plq.MANAGE_WEBHOOKS, e)), "id")), U = (0, a.cj)([f.Z], () => o().keyBy(M.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(C.Plq.MANAGE_WEBHOOKS, e)), "id")), z = null != w ? w : L, H = t === C.b4C.APPLICATION ? n : null, [G, F] = i.useState(d.$x), V = i.useCallback(() => R() ? (h.S.dispatch(C.CkL.SHAKE_APP, {
+  } = e, L = (0, a.e7)([g.ZP], () => null != o ? g.ZP.getDefaultChannel(o.id) : null), M = (0, a.cj)([g.ZP], () => g.ZP.getChannels(null == o ? void 0 : o.id)), B = (0, a.cj)([f.Z], () => l().keyBy(M.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(C.Plq.MANAGE_WEBHOOKS, e)), "id")), U = (0, a.cj)([f.Z], () => l().keyBy(M.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(C.Plq.MANAGE_WEBHOOKS, e)), "id")), z = null != P ? P : L, H = t === C.b4C.APPLICATION ? n : null, [G, F] = i.useState(d.$x), V = i.useCallback(() => R() ? (h.S.dispatch(C.CkL.SHAKE_APP, {
     duration: 300,
     intensity: G
   }), F(Math.min(G + d.d7, d.w6)), h.S.dispatch(C.CkL.EMPHASIZE_NOTICE), !1) : (F(d.$x), !0), [R, G]), K = i.useCallback(e => !!V() && (c.Z.setSection(e), !0), [V]), {
@@ -78,16 +78,16 @@ let w = i.memo(function(e) {
       n = {},
       r = [],
       i = [];
-    if (null != P)
-      for (let r of P)
+    if (null != w)
+      for (let r of w)
         if ("discord" === r.type) {
           if (null != r.application) {
-            var l;
+            var o;
             e[r.application.id] = {
               application: r.application,
               integration: r,
               webhooks: []
-            }, (null === (l = r.application.bot) || void 0 === l ? void 0 : l.id) !== void 0 && (t[r.application.bot.id] = r.application.id)
+            }, (null === (o = r.application.bot) || void 0 === o ? void 0 : o.id) !== void 0 && (t[r.application.bot.id] = r.application.id)
           }
         } else r.type in n || (n[r.type] = []), n[r.type].push(r);
     for (let t of Z)(t.channel_id in B || t.channel_id in U) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === C.ylB.CHANNEL_FOLLOWER ? i.push(t) : r.push(t));
@@ -98,7 +98,7 @@ let w = i.memo(function(e) {
       customWebhooks: r,
       followedChannelWebhooks: i
     }
-  }, [P, B, U, Z]);
+  }, [w, B, U, Z]);
   i.useEffect(() => {
     if (!k) switch (t) {
       case C.b4C.TWITCH:
@@ -111,15 +111,15 @@ let w = i.memo(function(e) {
         null != H && (H in Y || H in q) || c.Z.setSection(C.b4C.OVERVIEW)
     }
   }, [q, Y, X, H, t, k]), i.useEffect(() => {
-    (null == l ? void 0 : l.id) != null && b.Z.getEntitlementsForGuildFetchState(l.id) === b.M.NOT_FETCHED && m.i1(l.id)
-  }, [null == l ? void 0 : l.id]), i.useEffect(() => () => {
+    (null == o ? void 0 : o.id) != null && b.Z.getEntitlementsForGuildFetchState(o.id) === b.M.NOT_FETCHED && m.i1(o.id)
+  }, [null == o ? void 0 : o.id]), i.useEffect(() => () => {
     c.Z.setSection(C.b4C.OVERVIEW, null)
   }, []);
   let Q = null;
   switch (t) {
     case C.b4C.TWITCH:
       null != X[C.ABu.TWITCH] && (Q = (0, r.jsx)(v.Z, {
-        guild: l,
+        guild: o,
         integrations: X[C.ABu.TWITCH],
         editedIntegration: T,
         labelText: I.NW.string(I.t.q4pBGx),
@@ -137,7 +137,7 @@ let w = i.memo(function(e) {
       break;
     case C.b4C.YOUTUBE:
       null != X[C.ABu.YOUTUBE] && (Q = (0, r.jsx)(v.Z, {
-        guild: l,
+        guild: o,
         integrations: X[C.ABu.YOUTUBE],
         editedIntegration: T,
         labelText: I.NW.string(I.t.aS6cKy),
@@ -156,7 +156,7 @@ let w = i.memo(function(e) {
       var ee;
       let et = null != H ? null !== (ee = q[Y[H]]) && void 0 !== ee ? ee : q[H] : null;
       null != et && (Q = (0, r.jsx)(j.Z, {
-        guild: l,
+        guild: o,
         applicationIntegration: et,
         editedWebhook: W,
         selectableWebhookChannels: B,
@@ -175,8 +175,8 @@ let w = i.memo(function(e) {
       break;
     case C.b4C.WEBHOOKS:
       Q = (0, r.jsx)(_.Z, {
-        guild: l,
-        channel: w,
+        guild: o,
+        channel: P,
         customWebhooks: $,
         editedWebhook: W,
         selectableWebhookChannels: function(e) {
@@ -204,18 +204,18 @@ let w = i.memo(function(e) {
       break;
     case C.b4C.LOBBIES_LINKED:
       Q = (0, r.jsx)(O.Z, {
-        guild: l
+        guild: o
       });
       break;
     default:
       Q = (0, r.jsx)(y.Z, {
-        guild: l,
-        channel: w,
+        guild: o,
+        channel: P,
         applicationIntegrations: q,
         builtInIntegrations: X,
         customWebhooks: $,
         followedChannelWebhooks: J,
-        isLoadingWebhooks: k || null == l,
+        isLoadingWebhooks: k || null == o,
         canCreateWebhook: null != z,
         onManageCustomWebhooks: () => {
           c.Z.setSection(C.b4C.WEBHOOKS)

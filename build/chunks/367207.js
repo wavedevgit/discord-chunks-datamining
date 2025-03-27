@@ -1,6 +1,6 @@
-/** Chunk was on 48909 **/
+/** Chunk was on 39340 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => D
 }), n(411104), n(47120);
 var r = n(200651);
 n(192379);
@@ -25,8 +25,8 @@ var i = n(392711),
   y = n(6242),
   C = n(467721),
   x = n(757692),
-  N = n(937579),
-  S = n(522558),
+  S = n(937579),
+  N = n(522558),
   I = n(11352),
   P = n(474936),
   j = n(981631),
@@ -123,7 +123,7 @@ class M extends s.Z {
       let e = h.default.getCurrentUser();
       if (null != e && e.verified) {
         let t = !(0, b.I5)(e) && _.Z.shouldFetchOffer();
-        await (0, N.T)("PremiumManager", t)
+        await (0, S.T)("PremiumManager", t)
       }
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
@@ -134,7 +134,7 @@ class M extends s.Z {
     }), A(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = S.w.getCurrentConfig({
+      } = N.w.getCurrentConfig({
         location: "PremiumManager"
       }, {
         autoTrackExposure: !1
@@ -186,4 +186,4 @@ class M extends s.Z {
     }, 200))
   }
 }
-let Z = new M
+let D = new M

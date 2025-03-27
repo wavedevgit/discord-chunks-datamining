@@ -15,15 +15,15 @@ function c(e) {
     channel: c,
     user: s,
     compact: u,
-    isRepliedMessage: m,
-    hideIcon: p = !1,
+    isRepliedMessage: p,
+    hideIcon: m = !1,
     children: d
   } = e;
-  return ((null == r ? void 0 : r.isSystemDM()) ? t = i.Z.Types.SYSTEM_DM : null != r && (0, l.Z)(r) ? t = (0, o.cp)(r) ? i.Z.Types.OFFICIAL : i.Z.Types.SERVER : (null == s ? void 0 : s.bot) ? t = i.Z.Types.BOT : null != c && c.isForumPost() && c.ownerId === (null == s ? void 0 : s.id) && !m && (t = i.Z.Types.ORIGINAL_POSTER), null == t) ? null : (0, n.jsx)(i.Z, {
+  return ((null == r ? void 0 : r.isSystemDM()) ? t = i.Z.Types.SYSTEM_DM : null != r && (0, l.Z)(r) ? t = (0, o.cp)(r) ? i.Z.Types.OFFICIAL : i.Z.Types.SERVER : (null == s ? void 0 : s.bot) ? t = i.Z.Types.BOT : null != c && c.isForumPost() && c.ownerId === (null == s ? void 0 : s.id) && !p && (t = i.Z.Types.ORIGINAL_POSTER), null == t) ? null : (0, n.jsx)(i.Z, {
     className: u ? a.botTagCompact : a.botTagCozy,
     type: t,
     verified: null == s ? void 0 : s.isVerifiedBot(),
-    hideIcon: p,
+    hideIcon: m,
     useRemSizes: !0,
     children: d
   })

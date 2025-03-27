@@ -1,6 +1,6 @@
 /**
   Module ID: 11117
-  Original File Name: 034254ac9b77e571
+  Original File Name: 58f6f5126e3e70ec
 **/
 .modal__28554 {
     max-height: 640px;
@@ -24,8 +24,76 @@
     display: flex
 }
 
-.closeButton__28554 {
+.body__28554,.closeButton__28554 {
     padding: 0
+}
+
+.body__28554.empty__28554 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.recipientList__28554 {
+    padding: var(--space-sm)
+}
+
+.recipientRow__28554 {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+    justify-content: space-between;
+    height: var(--custom-recipient-row-height);
+    padding: 0 var(--space-sm);
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.recipientRow__28554:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.recipientAsset__28554 {
+    width: 32px;
+    height: 32px
+}
+
+.recipientLabels__28554 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    overflow: hidden
+}
+
+.recipientLabel__28554,.recipientSublabel__28554 {
+    max-width: 100%
+}
+
+.checkbox__28554 {
+    flex: 0 1 auto
+}
+
+.disabled__28554 .recipientRow__28554 {
+    cursor: not-allowed
+}
+
+.disabled__28554 .recipientRow__28554:hover {
+    background-color: transparent;
+    background-color: initial
+}
+
+.disabled__28554 .recipientAsset__28554 {
+    opacity: .5
+}
+
+.disabled__28554 .label__28554 {
+    color: var(--header-muted)
+}
+
+.disabled__28554 .subLabel__28554 {
+    color: var(--text-muted)
 }
 
 .footer__28554 {
@@ -47,19 +115,57 @@
     height: 32px;
     width: 32px;
     background-color: var(--bg-mod-faint);
-    opacity: .12;
     border-radius: 8px
 }
 
-.guildContent__28554 {
-    display: flex;
+.inviteTarget__28554 {
     flex: 1;
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
 }
 
-.guildCount__28554 {
+.inviteTargetIcon__28554 {
+    flex: 0 0 auto
+}
+
+.inviteTargetHeading__28554 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xxs);
+    overflow: hidden
+}
+
+.inviteTargetContent__28554 {
+    display: flex;
+    align-items: center;
+    gap: 1ch
+}
+
+.guildPresence__28554 {
     display: flex;
     gap: 8px
+}
+
+.memberCount__28554,.onlineCount__28554 {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
+.dot__28554 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%
+}
+
+.memberCount__28554 .dot__28554 {
+    background: var(--status-offline)
+}
+
+.onlineCount__28554 .dot__28554 {
+    background: var(--status-online)
 }
 
 .settingsButton__28554 {
@@ -388,4 +494,4 @@
     background: var(--border-subtle)
 }
 
-/*# sourceMappingURL=034254ac9b77e571.css.map*/
+/*# sourceMappingURL=58f6f5126e3e70ec.css.map*/

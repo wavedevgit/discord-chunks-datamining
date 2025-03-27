@@ -1,6 +1,6 @@
 /**
   Module ID: 23682
-  Original File Name: a8c10a7fe4448c43
+  Original File Name: 30b039bd836616a8
 **/
 .imageUploader_e4d0bf {
     text-align: center;
@@ -1470,15 +1470,54 @@
     border-radius: 8px
 }
 
-.guildContent__28554 {
-    display: flex;
+.inviteTarget__28554 {
     flex: 1;
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
 }
 
-.guildCount__28554 {
+.inviteTargetIcon__28554 {
+    flex: 0 0 auto
+}
+
+.inviteTargetHeading__28554 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xxs);
+    overflow: hidden
+}
+
+.inviteTargetContent__28554 {
+    display: flex;
+    align-items: center;
+    gap: 1ch
+}
+
+.guildPresence__28554 {
     display: flex;
     gap: 8px
+}
+
+.memberCount__28554,.onlineCount__28554 {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
+.dot__28554 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%
+}
+
+.memberCount__28554 .dot__28554 {
+    background: var(--status-offline)
+}
+
+.onlineCount__28554 .dot__28554 {
+    background: var(--status-online)
 }
 
 .settingsButton__28554 {
@@ -1938,4 +1977,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=a8c10a7fe4448c43.css.map*/
+/*# sourceMappingURL=30b039bd836616a8.css.map*/

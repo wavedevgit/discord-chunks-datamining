@@ -1,21 +1,21 @@
 /** Chunk was on 23682 **/
 n.d(t, {
-  B: () => l
+  B: () => o
 }), n(653041), n(47120);
 var r = n(658722),
   i = n.n(r);
 
-function l(e, t, n) {
+function o(e, t, n) {
   if ("" === n) return e;
   let r = n.toLowerCase(),
-    l = [];
-  for (let o of e) {
+    o = [];
+  for (let l of e) {
     let {
       id: e,
       names: a
-    } = t(o);
-    if (e === n) return [o];
-    a.some(e => i()(r, e.toLowerCase())) && l.push(o)
+    } = t(l);
+    if (e === n) return [l];
+    a.some(e => i()(r, e.toLowerCase())) && o.push(l)
   }
-  return l
+  return o
 }

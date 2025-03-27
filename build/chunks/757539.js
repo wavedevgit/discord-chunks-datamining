@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(392711),
-  o = n(793030),
+  o = n(392711),
+  l = n(793030),
   a = n(481060),
   s = n(393903),
   c = n(388032),
@@ -20,14 +20,14 @@ function u(e) {
     hasInviteDisabledPermission: m,
     invitesDisabled: b,
     canCreateInvites: g
-  } = e, f = i.useMemo(() => (0, l.debounce)(n, 100), [n]), h = i.useCallback(e => {
+  } = e, f = i.useMemo(() => (0, o.debounce)(n, 100), [n]), h = i.useCallback(e => {
     let t = null == e ? void 0 : e.getBoundingClientRect();
     null != t && f(t.height)
   }, [f]), x = (0, s.y)(h);
   return (0, r.jsxs)("div", {
     ref: x,
     className: d.actions,
-    children: [(0, r.jsx)(o.X6, {
+    children: [(0, r.jsx)(l.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: d.eyebrow,

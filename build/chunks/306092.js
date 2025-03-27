@@ -1,4 +1,4 @@
-/** Chunk was on 71679 **/
+/** Chunk was on 74249 **/
 n.d(t, {
   e: () => u
 });
@@ -13,10 +13,12 @@ function c(e) {
   let {
     price: t,
     isPremiumUser: n,
-    discount: c
+    discount: c,
+    hasSufficientOrbs: u
   } = e;
   return t.currency === a.pK.DISCORD_ORB ? (0, r.jsx)(l.Z, {
-    orbAmount: t.amount
+    orbAmount: t.amount,
+    className: u ? void 0 : s.disabled
   }) : (0, r.jsx)(o.F, {
     price: t,
     discount: c,
@@ -32,14 +34,16 @@ function u(e) {
   let {
     displayPrices: t,
     isPremiumUser: n,
-    discount: i
+    discount: i,
+    hasSufficientOrbs: o
   } = e;
   return (0, r.jsx)("div", {
     className: s.priceLine,
     children: t.map((e, t) => (0, r.jsx)(c, {
       price: e,
       isPremiumUser: n,
-      discount: i
+      discount: i,
+      hasSufficientOrbs: o
     }, t))
   })
 }

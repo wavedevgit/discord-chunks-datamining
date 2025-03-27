@@ -43,7 +43,7 @@ let y = e => {
     children: [null != N && (0, r.jsx)(f.Z, {
       nameplate: N,
       hovered: O,
-      placement: d.i.SHOP_PREVIEW
+      placement: d.i.PREVIEW
     }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
       className: E.overlayContainer,
       children: [(0, r.jsx)("div", {

@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: c0d81a69338833a4
+  Original File Name: 34e38e8d0d30a8df
 **/
 .buttonContent_a83ec9 {
     width: 24px;
@@ -105,6 +105,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4px
+}
+
+.disabled__05bc9 {
+    opacity: .5
 }
 
 .modalRoot_c50f62 {
@@ -452,6 +456,11 @@
     margin-bottom: 4px
 }
 
+.disabledReason_c50f62 {
+    opacity: .7;
+    margin-bottom: 8px
+}
+
 .buttonsContainer_c50f62 {
     display: flex;
     flex-direction: column;
@@ -521,4 +530,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=c0d81a69338833a4.css.map*/
+/*# sourceMappingURL=34e38e8d0d30a8df.css.map*/

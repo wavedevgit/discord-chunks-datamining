@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(481060),
   s = n(388032),
   c = n(331818);
@@ -47,15 +47,15 @@ function m(e) {
   let {
     isDisabled: t,
     currentValue: n,
-    onChange: l
+    onChange: o
   } = e, s = (0, a.arW)({
     orientation: "horizontal",
     isDisabled: t
   }), m = i.useCallback(e => {
-    t || e === n || l(e)
-  }, [t, n, l]);
+    t || e === n || o(e)
+  }, [t, n, o]);
   return (0, r.jsx)("div", u(d({
-    className: o()(c.group, {
+    className: l()(c.group, {
       [c.disabled]: t
     })
   }, s), {
@@ -72,12 +72,12 @@ function b(e) {
     isSelected: t,
     itemValue: n,
     onClick: i
-  } = e, l = n ? c.allow : c.deny, p = n ? a.dz2 : a.Dio, m = n ? s.NW.string(s.t.RzDfSk) : s.NW.string(s.t["6639Oz"]), b = (0, a.xUy)({
+  } = e, o = n ? c.allow : c.deny, p = n ? a.dz2 : a.Dio, m = n ? s.NW.string(s.t.RzDfSk) : s.NW.string(s.t["6639Oz"]), b = (0, a.xUy)({
     isSelected: t,
     label: m
   });
   return (0, r.jsx)(a.P3F, u(d({
-    className: o()(c.item, l, {
+    className: l()(c.item, o, {
       [c.selected]: t
     }),
     onClick: i

@@ -1,6 +1,6 @@
 /**
   Module ID: 89762
-  Original File Name: 88f899030744bb56
+  Original File Name: 2a90f31adc6f440a
 **/
 @value minColumnWidth: 460px;
 
@@ -2100,6 +2100,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: 4px
 }
 
+.disabled__132c6 {
+    opacity: .5
+}
+
 .variantsPanel__6f029 {
     display: flex;
     flex-direction: row;
@@ -2416,7 +2420,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     mask-image: linear-gradient(180deg,var(--black-500) 100%,transparent 0)
 }
 
-.checkmarkWrapper_c3d04b {
+.cardStateIconWrapper_c3d04b {
     position: absolute;
     align-items: center;
     left: 0;
@@ -2424,7 +2428,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     top: 110px
 }
 
-.checkmark_c3d04b {
+.cardStateIcon_c3d04b {
     width: 100%;
     color: var(--interactive-active);
     transition: opacity .5s;
@@ -2583,6 +2587,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .productName_c3d04b {
     color: var(--header-primary)
+}
+
+.externalProductDimmed_c3d04b {
+    opacity: .35
 }
 
 .left_caab99 {
@@ -4280,4 +4288,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=88f899030744bb56.css.map*/
+/*# sourceMappingURL=2a90f31adc6f440a.css.map*/

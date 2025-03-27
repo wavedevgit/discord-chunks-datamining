@@ -1,5 +1,5 @@
 /** Chunk was on 7654 **/
-let l, i, r, s, a, o, d;
+let l, i, s, r, a, o, d;
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -13,20 +13,20 @@ var u, c, h, g = n(442837),
   f = n(496675),
   j = n(699516),
   S = n(981631),
-  b = n(245335);
-let E = new Set,
-  C = [],
+  C = n(245335);
+let b = new Set,
+  E = [],
   y = new Map;
 
-function _(e) {
+function T(e) {
   let t = new Set,
-    n = null == s || d === b.Iq.EMBEDDED_APPLICATION ? void 0 : s.id,
-    l = (0, N.rh)(E, n);
+    n = null == r || d === C.Iq.EMBEDDED_APPLICATION ? void 0 : r.id,
+    l = (0, N.rh)(b, n);
   for (let e of (null == l || j.Z.isBlocked(l.id) || t.add(l.id), x.Z.getUserAffinitiesUserIds())) t.add(e);
   let i = new Set;
-  return d === b.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === S.d4z.GUILD_TEXT).filter(e => f.Z.can(S.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, N.an)({
+  return d === C.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === S.d4z.GUILD_TEXT).filter(e => f.Z.can(S.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, N.an)({
     query: e,
-    omitUserIds: E,
+    omitUserIds: b,
     suggestedUserIds: t,
     maxRowsWithoutQuery: 100,
     omitGuildId: n,
@@ -35,8 +35,8 @@ function _(e) {
   })
 }
 
-function T(e) {
-  C = e, y = new Map, e.forEach((e, t) => {
+function _(e) {
+  E = e, y = new Map, e.forEach((e, t) => {
     y.set(e, {
       index: t
     })
@@ -47,7 +47,7 @@ class Z extends(u = g.ZP.Store) {
     this.waitFor(j.Z, x.Z)
   }
   getInviteSuggestionRows() {
-    return C
+    return E
   }
   getTotalSuggestionsCount() {
     return i
@@ -61,9 +61,9 @@ class Z extends(u = g.ZP.Store) {
     return null != t ? {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
-      numTotal: C.length,
+      numTotal: E.length,
       numAffinityConnections: n.size,
-      isFiltered: r
+      isFiltered: s
     } : null
   }
 }
@@ -82,25 +82,25 @@ let P = new Z(m.Z, {
       applicationId: c,
       inviteTargetType: h
     } = e;
-    s = null != u ? n : null, a = u, o = c, d = h, E = new Set([...t, ...j.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
+    r = null != u ? n : null, a = u, o = c, d = h, b = new Set([...t, ...j.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
       channel: a,
       applicationId: o,
       inviteTargetType: h
-    })]), r = !1;
+    })]), s = !1;
     let {
       rows: g,
       counts: m
-    } = _("");
-    T(g), l = m, i = C.length
+    } = T("");
+    _(g), l = m, i = E.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
       query: t
     } = e;
-    r = "" !== t;
+    s = "" !== t;
     let {
       rows: n
-    } = _(t);
-    T(n)
+    } = T(t);
+    _(n)
   }
 })

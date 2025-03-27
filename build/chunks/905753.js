@@ -1,9 +1,9 @@
 /** Chunk was on 23682 **/
-let r, i, l;
+let r, i, o;
 n.d(t, {
   Z: () => h
 }), n(977457), n(47120);
-var o, a = n(442837),
+var l, a = n(442837),
   s = n(570140),
   c = n(581364),
   d = n(399860);
@@ -21,9 +21,9 @@ let p = {},
   b = !1;
 
 function g() {
-  r = void 0, p = {}, m = {}, i = void 0, l = void 0, b = !1
+  r = void 0, p = {}, m = {}, i = void 0, o = void 0, b = !1
 }
-class f extends(o = a.ZP.Store) {
+class f extends(l = a.ZP.Store) {
   getApplicationPermissions() {
     return p
   }
@@ -37,7 +37,7 @@ class f extends(o = a.ZP.Store) {
     return i
   }
   getEditedCommand() {
-    return l
+    return o
   }
   isUnavailable() {
     return b
@@ -67,17 +67,17 @@ let h = new f(s.Z, {
     var t, n;
     let {
       applicationId: i,
-      commandId: l,
-      permissions: o
+      commandId: o,
+      permissions: l
     } = e;
     if (i !== r) return !1;
-    if (l === r) {
-      p = (0, d.tk)(o);
+    if (o === r) {
+      p = (0, d.tk)(l);
       return
     }
-    let a = m[l];
+    let a = m[o];
     if (null == a) return !1;
-    m[l] = (t = function(e) {
+    m[o] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -89,7 +89,7 @@ let h = new f(s.Z, {
       }
       return e
     }({}, a), n = n = {
-      permissions: (0, d.tk)(o)
+      permissions: (0, d.tk)(l)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -105,19 +105,19 @@ let h = new f(s.Z, {
     let {
       applicationId: t,
       commandId: n,
-      permissions: o
+      permissions: l
     } = e;
     if (t !== r) return !1;
-    n === r ? i = o : l = {
+    n === r ? i = l : o = {
       commandId: n,
-      permissions: o
+      permissions: l
     }
   },
   INTEGRATION_PERMISSION_SETTINGS_RESET: function(e) {
     let {
       commandId: t
     } = e;
-    null == t ? i = void 0 : l = void 0
+    null == t ? i = void 0 : o = void 0
   },
   INTEGRATION_PERMISSION_SETTINGS_COMMANDS_FETCH_FAILURE: function(e) {
     let {
@@ -133,8 +133,8 @@ let h = new f(s.Z, {
       permissions: i
     } = e;
     if (t !== r) return !1;
-    let l = Object.fromEntries(i.map(e => [e.id, e.permissions])),
-      o = {};
+    let o = Object.fromEntries(i.map(e => [e.id, e.permissions])),
+      l = {};
     for (let e of n)
       if (e.application_id === r) {
         let t = (0, c.Z8)({
@@ -142,8 +142,8 @@ let h = new f(s.Z, {
             command: e,
             applicationId: e.application_id
           }),
-          n = l[e.id];
-        null != n && (t.permissions = (0, d.tk)(n)), o[e.id] = t
-      } m = o
+          n = o[e.id];
+        null != n && (t.permissions = (0, d.tk)(n)), l[e.id] = t
+      } m = l
   }
 })

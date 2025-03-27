@@ -16,13 +16,11 @@ function c(e) {
   let {
     isContextless: n
   } = e;
-  if (n) return !0;
-  let r = a.ZP.getCurrentConfig({
+  return (null === (t = platform) || void 0 === t ? void 0 : t.name) !== "Firefox" && (!!n || a.ZP.getCurrentConfig({
     location: "shouldOpenActivityInPopoutWindow"
   }).enabled || s.Z.getCurrentConfig({
     location: "shouldOpenActivityInPopoutWindow"
-  }).enabled;
-  return (null === (t = platform) || void 0 === t ? void 0 : t.name) !== "Firefox" && r
+  }).enabled)
 }
 async function u(e, t) {
   let n;

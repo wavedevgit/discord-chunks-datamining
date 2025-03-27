@@ -133,6 +133,7 @@ class U extends(r = l.PureComponent) {
       onMouseEnter: r ? void 0 : this.handleMouseEnter,
       onMouseLeave: r ? void 0 : this.handleHidePreview,
       children: (0, i.jsx)(c.yRy, {
+        targetElementRef: this.domElementRef,
         preload: () => (0, j.Z)(l.id, l.getAvatarURL(o.guild_id, 80), {
           guildId: o.guild_id,
           channelId: o.id
@@ -325,17 +326,21 @@ class U extends(r = l.PureComponent) {
               }
               return i
             }(e, ["onClick", "onContextMenu"]);
-            return (0, i.jsx)(E.ZP, k({}, D, r))
+            return (0, i.jsx)(E.ZP, k({
+              ref: this.domElementRef
+            }, D, r))
           }
         })
       }
       return (0, i.jsx)(c.yRy, {
+        targetElementRef: this.domElementRef,
         position: "right",
         renderPopout: this.renderStreamPopout,
         shouldShow: l && !A,
         onRequestClose: this.handleHidePreview,
         spacing: 0,
         children: () => (0, i.jsx)(E.ZP, L(k({}, D), {
+          ref: this.domElementRef,
           onMouseDown: e.onMouseDown,
           onKeyDown: e.onKeyDown
         }))

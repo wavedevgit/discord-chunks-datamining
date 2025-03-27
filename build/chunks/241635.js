@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  l = n(481060),
-  o = n(749210),
+  o = n(481060),
+  l = n(749210),
   a = n(240872),
   s = n(605436),
   c = n(228643),
@@ -32,12 +32,12 @@ function b(e, t) {
   let x = (null === (n = t.tags) || void 0 === n ? void 0 : n.guild_connections) === null,
     j = t.managed && !x,
     v = null != t && (0, s.pM)(e.id, t.id);
-  return b || j || v || g.push((0, r.jsx)(l.kSQ, {
-    children: (0, r.jsx)(l.sNh, {
+  return b || j || v || g.push((0, r.jsx)(o.kSQ, {
+    children: (0, r.jsx)(o.sNh, {
       id: "delete-role",
       label: m.NW.string(m.t.oyYWHB),
       color: "danger",
-      icon: l.XHJ,
+      icon: o.XHJ,
       action: () => {
         a.Z.show({
           title: m.NW.string(m.t.YWISbW),
@@ -46,7 +46,7 @@ function b(e, t) {
           }),
           cancelText: m.NW.string(m.t["ETE/oK"]),
           onConfirm: async () => {
-            x && await (0, c.L_)(e.id, t.id, []), o.Z.deleteRole(e.id, t.id)
+            x && await (0, c.L_)(e.id, t.id, []), l.Z.deleteRole(e.id, t.id)
           }
         })
       }
