@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: 784b2d5694568980
+  Original File Name: f0fb60a84a89c91f
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -5131,6 +5131,21 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: var(--status-danger)
 }
 
+.chatWallpaperDMListCoachmarkContent_f36944 {
+    background: var(--background-tertiary);
+    padding: 8px;
+    max-width: 260px
+}
+
+.chatWallpaperDMListCoachmarkPointer_f36944 {
+    border-right: 6px solid var(--background-tertiary)
+}
+
+.chatWallpaperDMListCoachmarkArt_f36944 {
+    border-radius: var(--radius-sm);
+    width: 100%
+}
+
 .channel__972a0 {
     position: relative;
     max-width: 224px;
@@ -5882,4 +5897,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=784b2d5694568980.css.map*/
+/*# sourceMappingURL=f0fb60a84a89c91f.css.map*/

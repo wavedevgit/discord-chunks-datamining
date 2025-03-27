@@ -1,6 +1,6 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  Z: () => k
+  Z: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -59,31 +59,31 @@ function P(e, t) {
   }), e
 }
 
-function k(e) {
+function E(e) {
   var t, n;
   let {
     transitionState: l,
-    onClose: k,
-    sourceAnalyticsContext: w,
-    sourceAnalyticsLocations: E,
+    onClose: E,
+    sourceAnalyticsContext: k,
+    sourceAnalyticsLocations: w,
     prompt: T = null
   } = e, D = (0, b.p)({
     location: "CustomStatusModalWithPreview"
   }), B = (0, a.e7)([f.default], () => {
     var e;
     return null !== (e = f.default.getCurrentUser()) && void 0 !== e ? e : null
-  }), Z = (0, g.a)(), [A, z] = i.useState(null !== (t = null == Z ? void 0 : Z.state) && void 0 !== t ? t : ""), [M, L] = i.useState(null !== (n = null == Z ? void 0 : Z.emoji) && void 0 !== n ? n : null), [R, W] = i.useState((0, x.Z)()), U = i.useRef(null), H = i.useRef(null), [F, Y] = i.useState(null != T ? T : null), K = A.length > 0 || null != M, q = D && null != F ? F.label() : C.NW.string(C.t["xod36+"]);
+  }), Z = (0, g.a)(), [A, z] = i.useState(null !== (t = null == Z ? void 0 : Z.state) && void 0 !== t ? t : ""), [M, W] = i.useState(null !== (n = null == Z ? void 0 : Z.emoji) && void 0 !== n ? n : null), [L, R] = i.useState((0, x.Z)()), U = i.useRef(null), H = i.useRef(null), [F, Y] = i.useState(null != T ? T : null), K = A.length > 0 || null != M, q = D && null != F ? F.label() : C.NW.string(C.t["xod36+"]);
   i.useEffect(() => {
     h.default.track(y.rMx.OPEN_MODAL, {
       type: d.Z.CUSTOM_STATUS_MODAL,
-      location_stack: E
+      location_stack: w
     })
-  }, [E]), (0, c.ZP)(() => {
+  }, [w]), (0, c.ZP)(() => {
     var e, t;
     null === (e = U.current) || void 0 === e || e.focus(), null === (t = U.current) || void 0 === t || t.setSelection(A.length, A.length)
   });
   let G = e => {
-      null != e && L(null != e.id ? {
+      null != e && W(null != e.id ? {
         id: e.id,
         name: e.name,
         animated: e.animated
@@ -93,22 +93,23 @@ function k(e) {
         animated: !1
       })
     },
-    X = () => {
+    V = () => {
       (0, j.Z)({
         text: A,
         emojiInfo: M,
-        clearAfter: R,
-        analyticsContext: w,
+        clearAfter: L,
+        analyticsContext: k,
         prompt: F
-      }), k()
+      }), E()
     },
-    V = () => null == M ? null : () => (0, r.jsx)(u.Z, {
+    X = () => null == M ? null : () => (0, r.jsx)(u.Z, {
       className: N.emoji,
       emojiId: M.id,
       emojiName: M.name,
       animated: !!M.animated
     }),
-    $ = D ? C.NW.string(C.t.rp0aho) : C.NW.string(C.t.UcdRn5);
+    $ = D ? C.NW.string(C.t.rp0aho) : C.NW.string(C.t.UcdRn5),
+    Q = "custom-status-placeholder-text";
   return (0, r.jsxs)(s.Y0X, {
     transitionState: l,
     children: [(0, r.jsxs)(s.xBx, {
@@ -123,7 +124,7 @@ function k(e) {
       }), (0, r.jsx)("div", {
         className: N.headerCloseButton,
         children: (0, r.jsx)(s.olH, {
-          onClick: k
+          onClick: E
         })
       })]
     }), (0, r.jsxs)(s.hzk, {
@@ -156,7 +157,7 @@ function k(e) {
                     G(e), n && t()
                   },
                   pickerIntention: O.Hz.STATUS,
-                  onNavigateAway: k
+                  onNavigateAway: E
                 })
               },
               position: "left",
@@ -171,12 +172,13 @@ function k(e) {
                   active: n,
                   className: N.emojiButton,
                   tabIndex: 0,
-                  renderButtonContents: V()
+                  renderButtonContents: X()
                 }))
               }
             })
           }), (0, r.jsx)(s.Kx8, {
             autosize: !0,
+            "aria-describedby": Q,
             value: A,
             maxLength: _.s0,
             rows: 1,
@@ -186,10 +188,13 @@ function k(e) {
               z(e)
             },
             onKeyDown: e => {
-              "Enter" === e.key && X()
+              "Enter" === e.key && V()
             },
             className: N.input,
             inputRef: U
+          }), (0, r.jsx)(s.nn4, {
+            id: Q,
+            children: "".concat(C.NW.string(C.t.EVV6ub), ": ").concat(q)
           }), (A.length > 0 || null != M) && (0, r.jsx)("div", {
             className: N.clearButtonWrapper,
             children: (0, r.jsx)(s.zxk, {
@@ -203,7 +208,7 @@ function k(e) {
               },
               className: N.clearButton,
               onClick: () => {
-                z(""), L(null)
+                z(""), W(null)
               },
               look: s.zxk.Looks.BLANK,
               size: s.zxk.Sizes.NONE,
@@ -223,8 +228,8 @@ function k(e) {
             h.default.track(y.rMx.CUSTOM_STATUS_RANDOMIZER_CLICKED, {
               previous_prompt_type: null == F ? void 0 : F.value,
               new_prompt_type: null == e ? void 0 : e.value,
-              location_stack: E
-            }), z(""), Y(e)
+              location_stack: w
+            }), z(""), Y(e), null != e && s.uvj.announce(e.label())
           },
           children: [(0, r.jsx)(s.$2U, {
             size: "xs"
@@ -241,13 +246,13 @@ function k(e) {
           className: N.clearAfterSelectContainer,
           children: (0, r.jsx)(s.q4e, {
             maxVisibleItems: _.Q9.length,
-            value: R,
+            value: L,
             options: _.Q9.map(e => P(I({}, e), {
               key: e.value,
               value: e.value,
               label: e.label()
             })),
-            onChange: W,
+            onChange: R,
             look: s.qQH.CUSTOM,
             popoutWidth: 200,
             popoutPosition: "right"
@@ -256,7 +261,7 @@ function k(e) {
           type: "submit",
           size: s.zxk.Sizes.MEDIUM,
           color: s.zxk.Colors.BRAND,
-          onClick: X,
+          onClick: V,
           children: C.NW.string(C.t.R3BPHx)
         })]
       })

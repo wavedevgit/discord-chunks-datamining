@@ -64,9 +64,9 @@ function R() {
   let o = (0, a.Ie)("favorites"),
     {
       favoriteAdded: R,
-      clearFavoriteAdded: k
+      clearFavoriteAdded: L
     } = (0, P.up)(),
-    [L, M] = i.useState(!1),
+    [k, M] = i.useState(!1),
     {
       favoriteServerMuted: G,
       favoriteChannels: B
@@ -115,19 +115,19 @@ function R() {
     Y = F > 0 ? (0, v.N)(F) : null,
     q = (0, f.Q3)("FavoritesButton"),
     Q = i.useCallback(() => {
-      k()
-    }, [k]);
+      L()
+    }, [L]);
   return (0, r.jsxs)(m.H, {
     children: [(0, r.jsx)(g.Z, {
       selected: V,
-      hovered: L,
+      hovered: k,
       unread: H && !G,
       className: T.pill
     }), (0, r.jsx)(Z.Z, {
       onShow: Q,
       children: (0, r.jsx)(N.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: q || V || L,
+          selected: q || V || k,
           upperBadge: z,
           lowerBadge: Y,
           children: (0, r.jsx)(c.LYs, (e = A({}, o), t = t = {
@@ -139,7 +139,7 @@ function R() {
               pathname: w.Z5c.CHANNEL(w.I_8, U),
               state: D
             },
-            selected: V || L,
+            selected: V || k,
             onMouseEnter: () => M(!0),
             onMouseLeave: () => M(!1),
             onMouseDown: function() {

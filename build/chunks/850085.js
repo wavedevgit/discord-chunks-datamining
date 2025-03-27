@@ -32,10 +32,10 @@ let x = e => {
     uploadType: w = p.pC.AVATAR,
     showUpsellHeader: T = !1,
     analyticsPage: y
-  } = e, [I, O] = r.useState({
+  } = e, [I, j] = r.useState({
     width: 0,
     height: 0
-  }), [j, B] = r.useState({
+  }), [O, B] = r.useState({
     top: 0,
     bottom: 0,
     left: 0,
@@ -101,15 +101,15 @@ let x = e => {
       Z({
         width: n,
         height: i
-      }), O(r), B((0, m.kH)(n, i, r))
+      }), j(r), B((0, m.kH)(n, i, r))
     }, [z, w, M]),
     $ = r.useCallback(e => {
       let {
         x: t,
         y: n
       } = H.current;
-      if (P && (e.clientX !== t || e.clientY !== n)) q(e.clientX - S.x, e.clientY - S.y, j)
-    }, [j, P, S, q]),
+      if (P && (e.clientX !== t || e.clientY !== n)) q(e.clientX - S.x, e.clientY - S.y, O)
+    }, [O, P, S, q]),
     J = () => {
       k(!1)
     },

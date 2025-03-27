@@ -1,6 +1,6 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  Z: () => E
+  Z: () => w
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -61,7 +61,7 @@ function P(e, t) {
   }), e
 }
 
-function k(e) {
+function E(e) {
   return (0, r.jsxs)("div", {
     className: C.statusOptionItem,
     children: [(0, r.jsx)(s.qbd, {
@@ -71,7 +71,7 @@ function k(e) {
     }), e.label]
   })
 }
-class w extends i.PureComponent {
+class k extends i.PureComponent {
   componentDidMount() {
     let {
       sourceAnalyticsLocations: e,
@@ -199,7 +199,7 @@ class w extends i.PureComponent {
           label: e.label()
         })),
         onChange: this.handleChangeStatus,
-        renderOptionLabel: k
+        renderOptionLabel: E
       })
     })
   }
@@ -324,7 +324,7 @@ class w extends i.PureComponent {
     })
   }
 }
-let E = a.ZP.connectStores([h.Z, b.default], () => {
+let w = a.ZP.connectStores([h.Z, b.default], () => {
   let e = b.default.getCurrentUser();
   return o()(null != e, "CustomStatusModal: user cannot be null"), {
     customStatus: h.Z.getCustomStatusActivity(),
@@ -332,4 +332,4 @@ let E = a.ZP.connectStores([h.Z, b.default], () => {
   }
 }, {
   forwardRef: !0
-})(w)
+})(k)

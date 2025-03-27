@@ -99,7 +99,7 @@ let g = {
       innerClassName: a()(u.buttonInner, d),
       color: a()(i, g[o]),
       look: s.zx.Looks.FILLED,
-      size: s.zx.Sizes.NONE,
+      size: s.zx.Sizes.SMALL,
       onClick: E
     }, p))
   });

@@ -14,8 +14,8 @@ var i = n(200651),
   _ = n(594174),
   g = n(626135),
   f = n(74538),
-  m = n(981631),
-  b = n(486324),
+  b = n(981631),
+  m = n(486324),
   p = n(474936),
   h = n(388032),
   v = n(575658);
@@ -24,11 +24,11 @@ function N(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, N = (0, r.e7)([_.default], () => _.default.getCurrentUser()), C = f.ZP.canUseAnimatedAvatar(N), y = f.ZP.canUsePremiumProfileCustomization(N), x = n === b.pC.BANNER && y || n === b.pC.AVATAR && C, {
+  } = e, N = (0, r.e7)([_.default], () => _.default.getCurrentUser()), C = f.ZP.canUseAnimatedAvatar(N), y = f.ZP.canUsePremiumProfileCustomization(N), x = n === m.pC.BANNER && y || n === m.pC.AVATAR && C, {
     sourceAnalyticsLocations: E
   } = (0, s.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (o.useEffect(() => {
-      x || g.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
+      x || g.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
         location_stack: E
       })
@@ -43,7 +43,7 @@ function N(e) {
     showIcon: !1,
     premiumModalAnalyticsLocation: {
       section: t,
-      object: m.qAy.BUTTON_CTA
+      object: b.qAy.BUTTON_CTA
     },
     disableShine: !0
   });

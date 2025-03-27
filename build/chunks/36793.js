@@ -6,7 +6,7 @@ function n(e) {
     cropOriginCoordinates: n,
     maxDimensions: i,
     imageRotation: a = 0
-  } = e, r = t.naturalWidth / t.width, d = function(e, t) {
+  } = e, d = t.naturalWidth / t.width, r = function(e, t) {
     let {
       x: o,
       y: n
@@ -29,7 +29,7 @@ function n(e) {
           x: o, y: n
         }
     }
-  }(n, a), l = a % 180 != 0, u = o.width * r, c = o.height * r, _ = Math.min(u, i.width), s = Math.min(c, i.height), f = (l ? o.height : o.width) / 2, h = (l ? o.width : o.height) / 2, m = (t.width / 2 - f - d.x) * r, p = (t.height / 2 - h - d.y) * r, b = l ? c : u, w = l ? u : c, {
+  }(n, a), l = a % 180 != 0, u = o.width * d, c = o.height * d, _ = Math.min(u, i.width), s = Math.min(c, i.height), f = (l ? o.height : o.width) / 2, h = (l ? o.width : o.height) / 2, m = (t.width / 2 - f - r.x) * d, p = (t.height / 2 - h - r.y) * d, b = l ? c : u, w = l ? u : c, {
     x: g,
     y: x
   } = function(e, t, o) {
@@ -72,11 +72,9 @@ function i(e) {
     cropDimensions: o,
     cropOriginCoordinates: i,
     maxDimensions: a,
-    imageRotation: r = 0
-  } = e;
-  t.crossOrigin = "anonymous";
-  let {
-    sourceX: d,
+    imageRotation: d = 0
+  } = e, {
+    sourceX: r,
     sourceY: l,
     sourceWidth: u,
     sourceHeight: c,
@@ -91,21 +89,21 @@ function i(e) {
     cropDimensions: o,
     cropOriginCoordinates: i,
     maxDimensions: a,
-    imageRotation: r
+    imageRotation: d
   }), b = document.createElement("canvas");
   b.width = m, b.height = p;
   let w = b.getContext("2d");
-  return null != w && (w.rotate(r * Math.PI / 180), w.drawImage(t, d, l, u, c, _, s, f, h)), b.toDataURL("image/png")
+  return null != w && (w.rotate(d * Math.PI / 180), w.drawImage(t, r, l, u, c, _, s, f, h)), b.toDataURL("image/png")
 }
 
 function a(e, t, o) {
   let n = e.naturalWidth / e.naturalHeight,
     a = t,
-    r = o;
-  e.naturalWidth > e.naturalHeight ? a /= n : r *= n;
-  let d = {
+    d = o;
+  e.naturalWidth > e.naturalHeight ? a /= n : d *= n;
+  let r = {
     height: a,
-    width: r
+    width: d
   };
   return i({
     image: e,
@@ -117,7 +115,7 @@ function a(e, t, o) {
       x: 0,
       y: 0
     },
-    maxDimensions: d
+    maxDimensions: r
   })
 }
 o.d(t, {

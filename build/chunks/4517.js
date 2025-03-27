@@ -243,6 +243,7 @@ function Z(e) {
   }) : null, eo = void 0 === O || null != o && T ? null : (0, r.jsx)(u.Text, {
     variant: "text-sm/normal",
     color: "text-muted",
+    "aria-label": "".concat(N.NW.string(N.t.EVV6ub), ": ").concat(O),
     className: a()(C.statusText, T && C.italicPrompt),
     children: null != O ? O : ""
   }), ea = null == ei || "" === _ ? eo : ei, es = (0, r.jsxs)("div", {

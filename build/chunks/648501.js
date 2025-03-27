@@ -41,8 +41,8 @@ function I(e) {
     needSubscriptionToAccess: A,
     isNewChannel: D,
     muted: R,
-    resolvedUnreadSetting: k
-  } = e, L = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), G = (0, a.ZP)(n), B = (0, i.e7)([h.Z], () => !h.Z.can(x.Plq.CONNECT, n)), U = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, y.ZP)({
+    resolvedUnreadSetting: L
+  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), G = (0, a.ZP)(n), B = (0, i.e7)([h.Z], () => !h.Z.can(x.Plq.CONNECT, n)), U = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, y.ZP)({
     channel: n,
     locked: B,
     video: U || W,
@@ -51,8 +51,8 @@ function I(e) {
     var e, t;
     return null !== (t = null === (e = p.Z.getGuild(n.guild_id)) || void 0 === e ? void 0 : e.hasFeature(x.oNc.COMMUNITY)) && void 0 !== t && t
   });
-  if ((0, v.Z)(L)) return (0, r.jsx)(j.Z, {
-    mentionsCount: L,
+  if ((0, v.Z)(k)) return (0, r.jsx)(j.Z, {
+    mentionsCount: k,
     isMentionLowImportance: M
   });
   if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
@@ -63,7 +63,7 @@ function I(e) {
     color: o.Z.unsafe_rawColors.BRAND_260.css,
     className: P.newChannel
   });
-  if (!R && k === C.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(l.Text, {
+  if (!R && L === C.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(l.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: S.NW.format(S.t.GkAbqa, {

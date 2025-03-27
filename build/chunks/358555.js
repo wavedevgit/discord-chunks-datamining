@@ -15,8 +15,8 @@ var o = n(120356),
   _ = n(623624),
   g = n(290034),
   f = n(340541),
-  m = n(271383),
-  b = n(594174),
+  b = n(271383),
+  m = n(594174),
   p = n(267642),
   h = n(981631),
   v = n(388032),
@@ -27,9 +27,9 @@ function C(e) {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: o
-  } = e, r = (0, s.Q3)("PremiumGuildBadge"), c = (0, a.e7)([b.default, m.ZP], () => {
-    let e = b.default.getCurrentUser();
-    return m.ZP.isMember(t.id, null == e ? void 0 : e.id)
+  } = e, r = (0, s.Q3)("PremiumGuildBadge"), c = (0, a.e7)([m.default, b.ZP], () => {
+    let e = m.default.getCurrentUser();
+    return b.ZP.isMember(t.id, null == e ? void 0 : e.id)
   }), {
     premiumTier: d,
     premiumSubscriberCount: u

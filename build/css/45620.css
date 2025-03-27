@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 73aa8785bce158f5
+  Original File Name: 6ef294a0fb97c32b
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -503,14 +503,6 @@
     animation-delay: 4s,2.5s
 }
 
-.backgroundSecondary__08415 {
-    background-color: color-mix(in srgb,var(--background-secondary-alt) 50%,transparent)
-}
-
-.visual-refresh .backgroundSecondary__08415 {
-    background-color: var(--background-mod-faint)
-}
-
 .loadingContainer__08415 {
     display: flex;
     flex-direction: column;
@@ -979,4 +971,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=73aa8785bce158f5.css.map*/
+/*# sourceMappingURL=6ef294a0fb97c32b.css.map*/

@@ -22,8 +22,8 @@ var n = r(200651),
   A = r(511004),
   O = r(486324),
   w = r(981631),
-  D = r(678916),
-  y = r(388032),
+  y = r(678916),
+  D = r(388032),
   T = r(126847);
 
 function b(e) {
@@ -82,7 +82,7 @@ function _(e) {
         height: O.f, width: O.L0
       };
     case O.pC.VIDEO_BACKGROUND:
-      return D.HE;
+      return y.HE;
     case O.pC.AVATAR:
     case O.pC.AVATAR_DECORATION:
       return {
@@ -203,7 +203,7 @@ function j(e) {
     imageUri: r,
     originalAsset: a,
     transitionState: f,
-    onCrop: D,
+    onCrop: y,
     onClose: v,
     uploadType: j = O.pC.AVATAR,
     showUpsellHeader: G = !1,
@@ -412,7 +412,7 @@ function j(e) {
         maxDimensions: n,
         imageRotation: F
       });
-      await D({
+      await y({
         assetOrigin: function(e) {
           let {
             hasImageEdits: t,
@@ -427,7 +427,7 @@ function j(e) {
         file: t,
         originalAsset: a
       }), Q(!1), v()
-    }, [H, t, Z, F, ei, v, D, a, j]),
+    }, [H, t, Z, F, ei, v, y, a, j]),
     eC = i.useCallback(() => {
       if (null != z.current) {
         z.current(), z.current = null, Q(!1);
@@ -463,7 +463,7 @@ function j(e) {
         separator: !1,
         children: [(0, n.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          children: y.NW.string(y.t.DxAYCA)
+          children: D.NW.string(D.t.DxAYCA)
         }), (0, n.jsx)(c.olH, {
           onClick: v,
           className: T.modalCloseButton
@@ -480,7 +480,7 @@ function j(e) {
             }), (0, n.jsx)(c.Text, {
               variant: "text-md/normal",
               color: "text-danger",
-              children: y.NW.string(y.t["+ITMYW"])
+              children: D.NW.string(D.t["+ITMYW"])
             })]
           }) : (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {
@@ -492,6 +492,7 @@ function j(e) {
               }, ep()),
               className: o()(J ? T.imageDisabled : T.imageEnabled, T.rotationSupported),
               src: r,
+              crossOrigin: "anonymous",
               alt: "avatar",
               ref: P,
               onMouseDown: es,
@@ -523,15 +524,15 @@ function j(e) {
               disabled: J || q,
               equidistant: !0,
               hideBubble: !0,
-              "aria-label": y.NW.string(y.t.dnvZSk)
+              "aria-label": D.NW.string(D.t.dnvZSk)
             }, ee), (0, n.jsx)(c.XBm, {
               size: "md",
               color: "currentColor",
               className: T.zoomIcon
             })]
           }), (0, n.jsx)(c.ua7, {
-            text: y.NW.string(y.t.E36Wd3),
-            "aria-label": y.NW.string(y.t.LzFiKC),
+            text: D.NW.string(D.t.E36Wd3),
+            "aria-label": D.NW.string(D.t.LzFiKC),
             children: e => {
               var {
                 onClick: t
@@ -584,19 +585,19 @@ function j(e) {
           color: c.zxk.Colors.PRIMARY,
           onClick: eg,
           disabled: !Z,
-          children: y.NW.string(y.t.yBZMsb)
+          children: D.NW.string(D.t.yBZMsb)
         }), (0, n.jsx)(c.zxk, {
           className: T.linkButton,
           look: c.zxk.Looks.LINK,
           size: c.PhG.MIN,
           color: c.zxk.Colors.PRIMARY,
           onClick: eC,
-          children: y.NW.string(y.t["9TG40t"])
+          children: D.NW.string(D.t["9TG40t"])
         }), (0, n.jsx)(c.zxk, {
           submitting: J,
           onClick: eE,
           disabled: J || q,
-          children: y.NW.string(y.t.ZSHmKC)
+          children: D.NW.string(D.t.ZSHmKC)
         })]
       })]
     })

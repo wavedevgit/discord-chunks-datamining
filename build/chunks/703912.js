@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   Z: () => Z
-}), n(301563), n(47120), n(789020), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
+}), n(301563), n(789020), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(664751),
   i = n(373793),
   l = n(243814),
@@ -63,50 +63,58 @@ function T(e, t, n) {
 async function P(e, t, n) {
   let r, l, a, s, c, {
     client_id: u,
-    response_type: d = "code",
-    redirect_uri: g,
-    code_challenge: m,
-    code_challenge_method: N,
-    state: v,
-    nonce: I,
-    scope: C,
-    permissions: S,
-    guild_id: T,
-    channel_id: P,
-    prompt: j,
-    disable_guild_select: A,
-    integration_type: Z,
-    pid: x,
-    signal: w
+    response_type: N = "code",
+    redirect_uri: v,
+    code_challenge: I,
+    code_challenge_method: C,
+    state: S,
+    nonce: T,
+    scope: P,
+    permissions: j,
+    guild_id: A,
+    channel_id: Z,
+    prompt: x,
+    disable_guild_select: w,
+    integration_type: L,
+    pid: R,
+    signal: D
   } = e;
-  if (null == w ? void 0 : w.aborted) throw new O.Z({
+  if (null == D ? void 0 : D.aborted) throw new O.Z({
     errorCode: y.lTL.UNKNOWN_ERROR
   }, "Request aborted");
   if (null == u) throw new O.Z({
     errorCode: y.lTL.OAUTH2_ERROR
   }, "No Client ID provided");
-  if (null != g) throw new O.Z({
+  if (null != v) throw new O.Z({
     errorCode: y.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
-  let L = [];
-  if ("string" == typeof C ? L = C.split(" ").filter(e => e.length > 0) : Array.isArray(C) && (L = C), null == b.default.getCurrentUser()) throw new O.Z({
+  let k = [];
+  if ("string" == typeof P ? k = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (k = P), null == b.default.getCurrentUser()) throw new O.Z({
     errorCode: y.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
-  null != Z && (l = Number(Z));
+  if (null != L) l = Number(L);
+  else {
+    let e = e => {
+        var t;
+        return null != e && (0, _.yE)(e.flags, y.udG.EMBEDDED) && (null === (t = e.integrationTypesConfig) || void 0 === t ? void 0 : t[i.Y.USER_INSTALL]) != null
+      },
+      t = d.Z.getApplication(u);
+    l = e(t) ? i.Y.USER_INSTALL : e(t = m.ZP.createFromServer(await (0, g.UM)(u, D))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
+  }
   try {
     [a, {
       disclosures: s,
       allAcked: c
     }] = await Promise.all([(0, h.Ww)({
       clientId: u,
-      scopes: L,
-      responseType: d,
-      redirectUri: g,
-      codeChallenge: m,
-      codeChallengeMethod: N,
-      state: v,
+      scopes: k,
+      responseType: N,
+      redirectUri: v,
+      codeChallenge: I,
+      codeChallengeMethod: C,
+      state: S,
       integrationType: l,
-      signal: w
+      signal: D
     }), (0, p.de)(u)])
   } catch (t) {
     let {
@@ -116,21 +124,17 @@ async function P(e, t, n) {
       errorCode: y.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
   }
-  if (null == l) {
-    var R;
-    l = null != a.application.flags && (0, _.yE)(a.application.flags, y.udG.EMBEDDED) && (null === (R = a.application.integration_types_config) || void 0 === R ? void 0 : R[i.Y.USER_INSTALL]) != null ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
-  }
-  if (j === f.s.NONE && null != a && a.authorized && c) try {
+  if (x === f.s.NONE && null != a && a.authorized && c) try {
     return (await (0, h.Iq)({
       authorize: !0,
       clientId: u,
-      scopes: L,
-      responseType: d,
-      redirectUri: g,
-      codeChallenge: m,
-      codeChallengeMethod: N,
-      state: v,
-      nonce: I,
+      scopes: k,
+      responseType: N,
+      redirectUri: v,
+      codeChallenge: I,
+      codeChallengeMethod: C,
+      state: S,
+      nonce: T,
       integrationType: l
     })).location
   } catch (t) {
@@ -141,28 +145,28 @@ async function P(e, t, n) {
       errorCode: y.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorize Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
   }
-  null == n || n(a.application, P, x);
-  let D = E.Hn;
+  null == n || n(a.application, Z, R);
+  let M = E.Hn;
   try {
-    D = o.vB(null != S ? S : 0)
+    M = o.vB(null != j ? j : 0)
   } catch (e) {}
   return null != a.integration_type && Object.values(i.Y).includes(a.integration_type) && (r = new Map).set(a.integration_type, a), t({
     clientId: u,
     authorizations: r,
-    scopes: L,
-    parsedPermissions: D,
-    responseType: d,
-    redirectUri: g,
-    codeChallenge: m,
-    codeChallengeMethod: N,
-    state: v,
-    guildId: T,
-    channelId: P,
-    prompt: j,
-    disableGuildSelect: A,
+    scopes: k,
+    parsedPermissions: M,
+    responseType: N,
+    redirectUri: v,
+    codeChallenge: I,
+    codeChallengeMethod: C,
+    state: S,
+    guildId: A,
+    channelId: Z,
+    prompt: x,
+    disableGuildSelect: w,
     disclosures: s,
     integrationType: l,
-    pid: x
+    pid: R
   })
 }
 async function j(e, t, n) {

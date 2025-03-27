@@ -122,19 +122,18 @@ let C = new Set([y.Fu, y.JT]),
         let {
           socket: n,
           args: {
-            referrer_id: r,
-            custom_id: i,
-            message: l,
-            link_id: o
+            custom_id: r,
+            message: i,
+            link_id: l
           }
         } = e;
         (0, _.bu)(n.transport);
-        let a = (0, _._f)(n.application);
-        if (null == a) throw new b.Z({
+        let o = (0, _._f)(n.application);
+        if (null == o) throw new b.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "No application.");
-        let s = (0, O.Z)();
-        if (null == s) throw new b.Z({
+        let a = (0, O.Z)();
+        if (null == a) throw new b.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "No channel found");
         if (!(0, f.yE)(null !== (t = n.application.flags) && void 0 !== t ? t : 0, v.udG.EMBEDDED)) throw new b.Z({
@@ -142,14 +141,11 @@ let C = new Set([y.Fu, y.JT]),
         }, "This application cannot access this API");
         return new Promise(e => {
           (0, u._)({
-            applicationId: a,
-            channelId: s.id,
-            launchParams: {
-              referrerId: r,
-              customId: i,
-              linkId: o
-            },
-            message: l,
+            applicationId: o,
+            channelId: a.id,
+            customId: r,
+            linkId: l,
+            message: i,
             onShare: (t, n) => {
               e({
                 success: t,

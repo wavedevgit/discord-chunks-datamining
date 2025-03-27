@@ -25,8 +25,8 @@ var r = n(200651),
   S = n(496675),
   _ = n(158776),
   N = n(306680),
-  P = n(699516),
-  E = n(594174),
+  E = n(699516),
+  P = n(594174),
   Z = n(55935),
   L = n(823379),
   C = n(51144),
@@ -145,7 +145,7 @@ function A(e) {
     a = C.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    i = (0, c.e7)([P.Z], () => P.Z.getNickname(t.id)),
+    i = (0, c.e7)([E.Z], () => E.Z.getNickname(t.id)),
     o = (0, c.e7)([_.Z], () => _.Z.getStatus(t.id));
   return (0, r.jsx)(W, M(R({}, l), {
     icon: (0, r.jsx)(f.Z, {
@@ -185,9 +185,9 @@ function z(e) {
   } = e, l = I(e, ["channel", "subLabel"]);
   let s = (0, c.e7)([v.Z], () => v.Z.getGuild(null == t ? void 0 : t.guild_id)),
     a = (0, h.ZP)(t),
-    i = (0, c.e7)([O.Z, E.default, P.Z], () => {
+    i = (0, c.e7)([O.Z, P.default, E.Z], () => {
       let e = O.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, h.F6)(e, E.default, P.Z, !1)
+      return null == e ? null : (0, h.F6)(e, P.default, E.Z, !1)
     }),
     u = (0, c.e7)([N.ZP], () => N.ZP.lastMessageTimestamp(t.id, k.W.CHANNEL)),
     f = null == s ? void 0 : s.name;

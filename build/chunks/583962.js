@@ -1,7 +1,7 @@
 /** Chunk was on 92196 **/
 n.d(t, {
   PD: () => A,
-  ZP: () => k,
+  ZP: () => L,
   aR: () => D
 }), n(47120);
 var r = n(200651),
@@ -92,7 +92,7 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     tension: 180,
     friction: 80
   },
-  k = e => {
+  L = e => {
     let {
       guild: t,
       withMargin: n
@@ -101,20 +101,20 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     } = (0, g.ZP)(h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), {
       premiumSubscriberCount: b,
       id: O
-    } = t, E = (0, _.rF)(b, O), A = (0, _.FZ)(E, t.id), D = null == A, k = null != A ? A : E, L = (0, c.e7)([x.Z], () => {
+    } = t, E = (0, _.rF)(b, O), A = (0, _.FZ)(E, t.id), D = null == A, L = null != A ? A : E, k = (0, c.e7)([x.Z], () => {
       var e;
       return null !== (e = x.Z.getCountForGuild(O)) && void 0 !== e ? e : 0
     }), M = (0, c.e7)([v.Z], () => v.Z.can(P.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      L !== b && (0, j.v)(O, b)
-    }, [O, L, b]);
-    let G = "".concat(Math.min(100, b / (0, _.vn)(t.id)[k] * 100), "%"),
+      k !== b && (0, j.v)(O, b)
+    }, [O, k, b]);
+    let G = "".concat(Math.min(100, b / (0, _.vn)(t.id)[L] * 100), "%"),
       {
         current: B
       } = i.useRef(G),
       U = {
         from: {
-          width: L === b ? B : "0%"
+          width: k === b ? B : "0%"
         },
         to: {
           width: G
@@ -142,20 +142,20 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         })
       },
       H = I.NW.formatToPlainString(I.t["2oNfMT"], {
-        levelName: (0, _.e9)(k)
+        levelName: (0, _.e9)(L)
       }),
       z = I.NW.format(I.t.dhKnYm, {
         numBoosts: b,
-        numTotal: (0, _.vn)(t.id)[k]
+        numTotal: (0, _.vn)(t.id)[L]
       });
-    D && (H = (0, _.e9)(k), z = I.NW.format(I.t.B2byER, {
+    D && (H = (0, _.e9)(L), z = I.NW.format(I.t.B2byER, {
       numBoosts: b
     })), o && (H = H.toLocaleLowerCase());
     let Y = (0, s.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
         text: D ? I.NW.string(I.t["Y+V9go"]) : I.NW.formatToPlainString(I.t.UyDKl5, {
-          levelName: (0, _.nW)(k)
+          levelName: (0, _.nW)(L)
         }),
         color: d.ua7.Colors.BLACK,
         position: "top",

@@ -1,7 +1,6 @@
 /** Chunk was on 45620 **/
 "use strict";
 e.exports = {
-  backgroundSecondary: "backgroundSecondary__08415",
   loadingContainer: "loadingContainer__08415",
   blockContainer: "blockContainer__08415",
   topBlockContainer: "topBlockContainer__08415",

@@ -117,7 +117,6 @@ let O = e => {
       }
       return (0, r.jsx)("div", {
         className: o()(y.blockContainer, {
-          [y.backgroundSecondary]: l % 2 == 1,
           [y.topBlockContainer]: 0 === l
         }),
         children: d
