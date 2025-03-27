@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(171368),
   O = n(598077),
   x = n(271383),
-  C = n(626135),
-  j = n(275759),
+  j = n(626135),
+  C = n(275759),
   P = n(107484),
   T = n(977392),
   N = n(134433),
@@ -78,7 +78,7 @@ function A(e) {
       break;
     default:
       t = s
-  } else t = (0, j.n_)({
+  } else t = (0, C.n_)({
     connectionType: n,
     connectionMetadataField: o,
     operator: a,
@@ -112,7 +112,7 @@ function D(e) {
         f = _.Z.get(e),
         b = null == g ? void 0 : g.application,
         h = (null == b ? void 0 : b.bot) != null ? new O.Z(b.bot) : null;
-      return j.SJ.includes(null !== (t = null == b ? void 0 : b.id) && void 0 !== t ? t : "") ? c = (0, r.jsx)(I.Z, {
+      return C.SJ.includes(null !== (t = null == b ? void 0 : b.id) && void 0 !== t ? t : "") ? c = (0, r.jsx)(I.Z, {
         className: E.botTag,
         color: o,
         size: 16
@@ -168,7 +168,7 @@ function B(e) {
     guildId: d
   } = e;
   o.useEffect(() => {
-    C.default.track(k.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
+    j.default.track(k.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
       other_user_id: s,
       role_id: c
     }, (0, b.JS)(u), (0, b.hH)(d)))

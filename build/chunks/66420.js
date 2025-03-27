@@ -35,7 +35,7 @@ function s(e) {
         children: n
       }), null != s && (0, r.jsx)(o.xv, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-secondary",
         children: s
       })]
     }), u]

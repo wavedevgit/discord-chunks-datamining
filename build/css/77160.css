@@ -1,6 +1,6 @@
 /**
   Module ID: 77160
-  Original File Name: cf90cd5ca2fcafef
+  Original File Name: e62ffd396f784d95
 **/
 .container__2b26c {
     display: flex;
@@ -123,6 +123,10 @@
     padding: 0;
     font-size: 24px;
     width: 6ch
+}
+
+.tagChangeInfoBox__69ef9 {
+    margin-top: var(--spacing-12)
 }
 
 .pickerGrid__69ef9 {
@@ -364,4 +368,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=cf90cd5ca2fcafef.css.map*/
+/*# sourceMappingURL=e62ffd396f784d95.css.map*/

@@ -25,31 +25,32 @@ function v(e) {
     onClose: n,
     className: v,
     "data-jump-section": x
-  } = e, y = (0, o.e7)([m.default], () => m.default.getCurrentUser()), E = (0, l.Q3)("RecentsButton"), O = i.useRef(null), N = (0, o.e7)([p.ZP], () => (null == y ? void 0 : y.id) != null && p.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
-    enabled: j
+  } = e, y = i.useRef(null), E = (0, o.e7)([m.default], () => m.default.getCurrentUser()), O = (0, l.Q3)("RecentsButton"), N = i.useRef(null), j = (0, o.e7)([p.ZP], () => (null == E ? void 0 : E.id) != null && p.ZP.getMentionCount(E.id, g.W.NOTIFICATION_CENTER) > 0), {
+    enabled: C
   } = c.Z.useExperiment({
     location: "RecentsButton"
   }, {
     autoTrackExposure: !1
-  }), C = (0, o.e7)([s.Z], () => j && s.Z.getUnseenInviteCount() > 0), I = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE);
+  }), I = (0, o.e7)([s.Z], () => C && s.Z.getUnseenInviteCount() > 0), S = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: N
+      badgeForYou: j
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
       var o, l;
       return (0, r.jsxs)("div", {
-        ref: O,
+        ref: N,
         className: b.recentsIcon,
-        children: [j && (0, r.jsx)(h.Z, {
-          inboxIconRef: O,
+        children: [C && (0, r.jsx)(h.Z, {
+          inboxIconRef: N,
           recentsPopoutShown: t
         }), (0, r.jsx)(d.U, {
           location: "inbox-button",
+          targetElementRef: y,
           children: (0, r.jsx)(u.JO, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -68,14 +69,15 @@ function v(e) {
             }
             return e
           }({}, n), l = l = {
+            ref: y,
             className: v,
             onClick: e,
             icon: a.xx7,
-            iconSize: E ? I : void 0,
+            iconSize: O ? S : void 0,
             "aria-label": _.NW.string(_.t.GSmTKC),
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,
-            showBadge: N || C || i,
+            showBadge: j || I || i,
             "data-jump-section": x
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);

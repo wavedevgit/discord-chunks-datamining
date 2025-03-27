@@ -1,7 +1,7 @@
 /** Chunk was on 87626 **/
 let n;
 a.d(t, {
-  $: () => f
+  $: () => b
 });
 var s, r = a(200651),
   l = a(192379),
@@ -10,8 +10,8 @@ var s, r = a(200651),
   c = a(622535),
   d = a(213919),
   u = a(982905),
-  _ = a(794010),
-  p = a(66037),
+  p = a(794010),
+  _ = a(66037),
   h = a(231338),
   m = a(436620),
   N = a(330711),
@@ -150,7 +150,7 @@ let k = "Footer Navigation",
       tracking: "open_source"
     }]
   }],
-  b = e => {
+  f = e => {
     let {
       colorVariant: t,
       animate: a
@@ -170,7 +170,7 @@ let k = "Footer Navigation",
       })
     })
   };
-class f extends(s = l.PureComponent) {
+class b extends(s = l.PureComponent) {
   componentDidMount() {
     this.setState({
       token: (0, d.getToken)(),
@@ -217,8 +217,8 @@ class f extends(s = l.PureComponent) {
       children: N.Z.Messages.NAVIGATION_DOWNLOAD
     });
     let d = null != o ? h.$w.REGISTER_WITH_REDIRECT(o) : h.$w.REGISTER,
-      _ = N.Z.Messages.COMMON_SIGN_UP_NOW;
-    return e && (d = h.$w.ME, _ = N.Z.Messages.COMMON_OPEN_DISCORD), (0, r.jsx)(n, {
+      p = N.Z.Messages.COMMON_SIGN_UP_NOW;
+    return e && (d = h.$w.ME, p = N.Z.Messages.COMMON_OPEN_DISCORD), (0, r.jsx)(n, {
       eventName: k,
       className: (0, u.l)(I, "button", this.props.variant),
       data: {
@@ -226,7 +226,7 @@ class f extends(s = l.PureComponent) {
         googleAnalytics: !0
       },
       href: d,
-      children: _
+      children: p
     })
   }
   render() {
@@ -238,7 +238,7 @@ class f extends(s = l.PureComponent) {
       showWave: i
     } = this.props, {
       animateBackground: d,
-      token: _
+      token: p
     } = this.state, m = A().map(e => {
       let t = e.routes.map((e, t) => e.external ? (0, r.jsx)(n, {
         className: I.route,
@@ -248,7 +248,7 @@ class f extends(s = l.PureComponent) {
         },
         href: e.link,
         children: e.title
-      }, e.link || t) : (0, r.jsx)(p.Z, {
+      }, e.link || t) : (0, r.jsx)(_.Z, {
         avoidRouter: l,
         to: e.link,
         from: "footer_navigation",
@@ -277,7 +277,7 @@ class f extends(s = l.PureComponent) {
         ref: this.ref,
         className: o()((0, u.l)(I, "footer", e), s),
         style: t,
-        children: [i ? (0, r.jsx)(b, {
+        children: [i ? (0, r.jsx)(f, {
           colorVariant: e,
           animate: d
         }) : null, (0, r.jsxs)("div", {
@@ -314,7 +314,7 @@ class f extends(s = l.PureComponent) {
                   num: h.vS
                 })
               })]
-            }), this.renderAppButton(_)]
+            }), this.renderAppButton(p)]
           })]
         })]
       })
@@ -330,7 +330,7 @@ class f extends(s = l.PureComponent) {
       this.setState({
         animateBackground: e
       })
-    }), null != e.locale && N.Z.setLocale(e.locale), n = t => (0, r.jsx)(_.Z, function(e) {
+    }), null != e.locale && N.Z.setLocale(e.locale), n = t => (0, r.jsx)(p.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(a);
@@ -347,7 +347,7 @@ class f extends(s = l.PureComponent) {
     }, t))
   }
 }
-g(f, "Variants", O), g(f, "defaultProps", {
+g(b, "Variants", O), g(b, "defaultProps", {
   variant: O.PRIMARY,
   showWave: !0
 })

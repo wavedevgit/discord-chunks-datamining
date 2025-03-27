@@ -18,8 +18,8 @@ function u(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-let _ = c.j_.MAIN_NAVIGATION_MENU,
-  p = e => [{
+let p = c.j_.MAIN_NAVIGATION_MENU,
+  _ = e => [{
     route: c.am.DOWNLOAD,
     linkClicked: "download",
     title: d.Z.Messages.NAVIGATION_DOWNLOAD
@@ -98,7 +98,7 @@ let _ = c.j_.MAIN_NAVIGATION_MENU,
   }];
 class h extends(n = r.PureComponent) {
   render() {
-    let e = (0, l.fQ)(this.context.router),
+    let e = (0, l.f)(this.context.router),
       {
         isMobile: t,
         isVisible: a,
@@ -109,7 +109,7 @@ class h extends(n = r.PureComponent) {
       {
         sectionShown: h
       } = this.state;
-    return p(null != d.Z ? d.Z.getLocale().toLowerCase() : "").map(l => null != l.links ? (0, s.jsx)(o.Z, {
+    return _(null != d.Z ? d.Z.getLocale().toLowerCase() : "").map(l => null != l.links ? (0, s.jsx)(o.Z, {
       title: l.title,
       links: l.links,
       isOpen: h === l.title,
@@ -123,7 +123,7 @@ class h extends(n = r.PureComponent) {
       role: "none",
       children: (0, s.jsx)(r, {
         className: n.mainNavLink,
-        eventName: _,
+        eventName: p,
         data: l.linkClicked ? {
           linkClicked: l.linkClicked
         } : {},
@@ -143,7 +143,7 @@ class h extends(n = r.PureComponent) {
         children: (0, s.jsx)(r, {
           tag: "span",
           className: n.mainNavLink,
-          eventName: _,
+          eventName: p,
           data: {
             linkClicked: l.linkClicked
           },

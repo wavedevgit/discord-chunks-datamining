@@ -39,17 +39,19 @@ let m = i.z.FOR_LATER_POPOUT_COACHMARK,
 function g(e) {
   let {
     location: t,
-    children: n
+    children: n,
+    targetElementRef: i
   } = e, {
-    enabled: i,
-    inInbox: l
+    enabled: l,
+    inInbox: c
   } = s.Z.useExperiment({
     location: "ForLaterCoachmarkWeb"
   }, {
     autoTrackExposure: !1
-  }), [c, u] = (0, a.US)(i && t === (l ? "inbox-button" : "bookmarks-button") ? [m] : [], void 0);
-  return c !== m ? n : (0, r.jsx)(o.yRy, {
-    renderPopout: () => h(u),
+  }), [u, d] = (0, a.US)(l && t === (c ? "inbox-button" : "bookmarks-button") ? [m] : [], void 0);
+  return u !== m ? n : (0, r.jsx)(o.yRy, {
+    targetElementRef: i,
+    renderPopout: () => h(d),
     position: "bottom",
     align: "right",
     animation: o.yRy.Animation.TRANSLATE,

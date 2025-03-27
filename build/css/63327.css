@@ -1,6 +1,6 @@
 /**
   Module ID: 63327
-  Original File Name: 113088d77f78f5fa
+  Original File Name: 6786807f6654edf9
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -14266,6 +14266,10 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     width: 6ch
 }
 
+.tagChangeInfoBox__69ef9 {
+    margin-top: var(--spacing-12)
+}
+
 .pickerGrid__69ef9 {
     display: grid;
     grid-column-gap: 8px;
@@ -14400,4 +14404,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=113088d77f78f5fa.css.map*/
+/*# sourceMappingURL=6786807f6654edf9.css.map*/

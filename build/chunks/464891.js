@@ -25,8 +25,8 @@ var r = n(200651),
   v = n(869765),
   O = n(243317),
   x = n(621853),
-  C = n(823415),
-  j = n(754047),
+  j = n(823415),
+  C = n(754047),
   P = n(518950),
   T = n(484459),
   N = n(184301),
@@ -289,13 +289,13 @@ function $(e) {
         size: B,
         fallbackAvatar: !1
       })) && void 0 !== t ? t : L
-    }, [z, null === (t = f.application) || void 0 === t ? void 0 : t.icon, null === (n = f.application) || void 0 === n ? void 0 : n.id, A.avatar, B, L]), F = (0, C.nT)({
+    }, [z, null === (t = f.application) || void 0 === t ? void 0 : t.icon, null === (n = f.application) || void 0 === n ? void 0 : n.id, A.avatar, B, L]), F = (0, j.nT)({
       location: "MessageHeader"
     }), {
       showPopoutFromHover: Y,
       handleMouseEnter: X,
       handleMouseLeave: Q
-    } = (0, j.Z)({
+    } = (0, C.Z)({
       shouldShowPopoutOnHover: F,
       handlePreload: J
     });

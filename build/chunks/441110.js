@@ -29,6 +29,7 @@ let f = function(e) {
       channel_id: null == _ ? void 0 : _.id
     })
   }), null == _) ? null : (0, r.jsx)(s.W_, {
+    className: m.messagePopoutContent,
     children: (0, r.jsxs)("div", {
       className: m.popoutContainer,
       children: [(0, r.jsxs)("div", {
@@ -55,7 +56,6 @@ let f = function(e) {
         size: o.zxk.Sizes.SMALL,
         color: o.zxk.Colors.BRAND,
         className: m.ctaButton,
-        innerClassName: m.ctaButtonContent,
         fullWidth: !0,
         onClick: () => {
           i.ZP.trackWithMetadata(p.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {

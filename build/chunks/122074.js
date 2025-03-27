@@ -1,7 +1,7 @@
 /** Chunk was on 53912 **/
 n.d(t, {
-  U: () => I,
-  Uf: () => P,
+  U: () => P,
+  Uf: () => I,
   ng: () => C
 }), n(47120);
 var r = n(200651),
@@ -37,11 +37,11 @@ function C(e, t) {
   return (n.nestedEntry && t || !n.nestedEntry && !t) && r
 }
 
-function P(e, t, n) {
+function I(e, t, n) {
   return T(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
 }
 
-function I() {
+function P() {
   let e = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -55,7 +55,7 @@ function I() {
 }
 
 function T(e, t, a, C) {
-  var P, I;
+  var I, P;
   let T = (0, y.OR)(e),
     E = (0, y._c)(e, t),
     S = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
@@ -85,7 +85,7 @@ function T(e, t, a, C) {
     },
     F = A ? o.Text : O.Z,
     Y = (0, v.LB)(),
-    z = null !== (I = null === (P = Y.find(e => e.value === D)) || void 0 === P ? void 0 : P.label) && void 0 !== I ? I : m.NW.string(m.t.p3Hg5e),
+    z = null !== (P = null === (I = Y.find(e => e.value === D)) || void 0 === I ? void 0 : I.label) && void 0 !== P ? P : m.NW.string(m.t.p3Hg5e),
     B = (0, r.jsx)(o.IGR, {
       className: x.newBadge,
       text: m.NW.string(m.t.y2b7CA)

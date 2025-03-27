@@ -1,6 +1,6 @@
 /** Chunk was on 87626 **/
 a.d(t, {
-  p: () => p
+  p: () => _
 }), a(230036), a(47120);
 var n = a(200651),
   s = a(192379),
@@ -12,7 +12,7 @@ var n = a(200651),
   d = a(330711),
   u = a(499967);
 
-function _(e, t, a) {
+function p(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
     value: a,
     enumerable: !0,
@@ -20,7 +20,7 @@ function _(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-class p extends s.PureComponent {
+class _ extends s.PureComponent {
   componentDidMount() {
     this.callChangeLocale(d.Z.getLocale())
   }
@@ -75,26 +75,26 @@ class p extends s.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), p(this, "state", {
       languages: d.Z.getLanguages().filter(e => e.enabled),
       current: d.Z.getLocaleInfo(),
       isOpen: !1
-    }), _(this, "setLocale", e => {
+    }), p(this, "setLocale", e => {
       null != d.Z && (d.Z.setLocale(e), this.callChangeLocale(e))
-    }), _(this, "callChangeLocale", e => {
+    }), p(this, "callChangeLocale", e => {
       let {
         onChange: t
       } = this.props;
       null != t && t(e)
-    }), _(this, "open", () => {
+    }), p(this, "open", () => {
       this.setState({
         isOpen: !0
       })
-    }), _(this, "close", () => {
+    }), p(this, "close", () => {
       this.setState({
         isOpen: !1
       })
-    }), _(this, "toggle", () => {
+    }), p(this, "toggle", () => {
       let {
         isOpen: e
       } = this.state;

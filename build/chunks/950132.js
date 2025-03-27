@@ -8,13 +8,13 @@ var n, s, r, l = a(200651),
   c = a.n(o),
   d = a(948789),
   u = a(982905),
-  _ = a(66037),
-  p = a(231338),
+  p = a(66037),
+  _ = a(231338),
   h = a(28577);
-let m = p.j_.MAIN_NAVIGATION_MENU;
+let m = _.j_.MAIN_NAVIGATION_MENU;
 class N extends(r = i.PureComponent) {
   render() {
-    let e = (0, d.fQ)(this.context.router),
+    let e = (0, d.f)(this.context.router),
       {
         isOpen: t,
         dropdownLinks: a,
@@ -42,11 +42,11 @@ class N extends(r = i.PureComponent) {
         })
       }, t.route) : (0, l.jsx)("li", {
         className: (0, u.l)(h, "moreListItem", e(t.route) ? "Active" : "Inactive"),
-        children: (0, l.jsx)(_.Z, {
+        children: (0, l.jsx)(p.Z, {
           avoidRouter: s,
           className: h.moreListLink,
           to: t.route,
-          from: p.j_.MAIN_NAVIGATION_MENU,
+          from: _.j_.MAIN_NAVIGATION_MENU,
           role: "menuitem",
           children: (0, l.jsx)(n, {
             tag: "span",
