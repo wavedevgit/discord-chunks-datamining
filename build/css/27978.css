@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 801bfa66c59d53cf
+  Original File Name: 0cfa6cbf61555840
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1968,29 +1968,38 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: 1
 }
 
+.closeButtonPlated__972a0 {
+    opacity: 1;
+    opacity: initial;
+    width: 18px;
+    height: 18px
+}
+
+.innerCloseButtonPlated__972a0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--custom-nameplate-neutral);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    opacity: .9
+}
+
+.innerCloseButtonPlated__972a0:focus,.innerCloseButtonPlated__972a0:hover {
+    background-color: var(--custom-nameplate-neutral-hovered);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)
+}
+
 .closeIconPlated__972a0 {
     color: hsla(0,0%,100%,.9)
 }
 
 .theme-light .closeIconPlated__972a0 {
     color: rgba(0,0,0,.9)
-}
-
-.closeButtonBackgroundPlated__972a0 {
-    border-radius: 50%;
-    background-color: var(--custom-nameplate-neutral-hovered);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    opacity: .9;
-    height: 18px;
-    width: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.closeButtonBackgroundPlated__972a0:focus,.closeButtonBackgroundPlated__972a0:hover {
-    opacity: 1
 }
 
 .favoriteIcon__972a0 {
@@ -6033,4 +6042,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=801bfa66c59d53cf.css.map*/
+/*# sourceMappingURL=0cfa6cbf61555840.css.map*/

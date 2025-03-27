@@ -1,7 +1,7 @@
 /** Chunk was on 75607 **/
 n.d(t, {
-  Z: () => f
-}), n(47120), n(866573), n(642549), n(787622);
+  Z: () => x
+}), n(47120), n(301563), n(866573), n(642549), n(787622);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
@@ -13,7 +13,8 @@ var r = n(200651),
   u = n(451593),
   m = n(694539),
   g = n(146181);
-let p = e => {
+let p = "Make sure you're only uploading text files!",
+  h = e => {
     var t, n, i;
     let {
       effect: s,
@@ -47,7 +48,7 @@ let p = e => {
       })]
     })
   },
-  h = () => ({
+  f = () => ({
     id: (0, l.Z)(),
     name: "New Profile Effect",
     config: {
@@ -55,20 +56,22 @@ let p = e => {
     }
   });
 
-function f() {
+function x() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, u.E)(), [n, s] = i.useState(), l = i.useRef(null), f = i.useCallback((e, n) => {
-    if (!e.type.startsWith("text/")) return (0, d.Eo)("Make sure you're only uploading text files!");
-    t(JSON.parse(atob(n))), (0, d.XA)("Profile Effect (maybe??) imported!")
-  }, [t]), x = i.useCallback(e => {
+  } = (0, u.E)(), [n, s] = i.useState(), l = i.useRef(null), x = i.useCallback((e, n) => {
+    if (!e.type.startsWith("text/")) return (0, d.Eo)(p);
+    let [r, i] = n.split(",");
+    if (!r.includes("text/plain")) return (0, d.Eo)(p);
+    t(JSON.parse(atob(i))), (0, d.XA)("Profile Effect (maybe??) imported!")
+  }, [t]), N = i.useCallback(e => {
     var t;
     if ((null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null) {
       (0, d.Eo)("Error uploading file. Try again!");
       return
-    }(0, d.Kr)(e.currentTarget.files, f, d.Eo)
-  }, [f]);
+    }(0, d.Kr)(e.currentTarget.files, x, d.Eo)
+  }, [x]);
   return (0, r.jsxs)("div", {
     className: g.root,
     children: [null == n && (0, r.jsxs)(r.Fragment, {
@@ -82,7 +85,7 @@ function f() {
           })
         }), (0, r.jsx)("div", {
           className: g.grid,
-          children: Object.values(e).map(e => (0, r.jsx)(p, {
+          children: Object.values(e).map(e => (0, r.jsx)(h, {
             effect: e,
             onClick: e => {
               s(e)
@@ -99,12 +102,12 @@ function f() {
             children: "Import Shared Config"
           }), (0, r.jsx)(c.Z, {
             ref: l,
-            onChange: x,
+            onChange: N,
             multiple: !1
           })]
         }), (0, r.jsx)(o.zxk, {
           onClick: () => {
-            t(h())
+            t(f())
           },
           children: "Create New Effect"
         })]

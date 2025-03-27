@@ -154,19 +154,18 @@ function e6(e) {
     handleMouseLeave: c,
     renderNameTag: d,
     nameplate: u,
-    hovered: m,
-    "data-jump-section": g
-  } = e, p = (0, F.Q3)("RTC Avatar"), {
-    coloredIconsEnabled: h
+    "data-jump-section": m
+  } = e, g = (0, F.Q3)("RTC Avatar"), {
+    coloredIconsEnabled: p
   } = (0, eh.Z)({
     location: "RTC Avatar"
-  }), x = (0, R.Z)(null == s ? void 0 : s.avatarDecoration), N = (0, ew.NZ)({
-    avatarDecoration: x,
+  }), h = (0, R.Z)(null == s ? void 0 : s.avatarDecoration), x = (0, ew.NZ)({
+    avatarDecoration: h,
     size: (0, D.y9)(f.EFr.SIZE_32)
-  }), b = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
-    updateOpenPopoutRef: E,
-    highlightBadge: j,
-    setHighlightBadge: C
+  }), N = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
+    updateOpenPopoutRef: b,
+    highlightBadge: E,
+    setHighlightBadge: j
   } = function() {
     let e = i.useRef(null),
       t = i.useCallback(t => {
@@ -192,8 +191,8 @@ function e6(e) {
       highlightBadge: s ? n : void 0,
       setHighlightBadge: r
     }
-  }(), S = (0, $.A)(u), {
-    showTempStatusOptions: v
+  }(), C = (0, $.A)(u), {
+    showTempStatusOptions: S
   } = en.Y.useExperiment({
     location: "AvatarWithPopout"
   }, {
@@ -212,7 +211,7 @@ function e6(e) {
           className: eq.accountProfilePopoutWrapper,
           children: (0, r.jsx)(X.Z, {
             currentUser: s,
-            highlightBadge: j,
+            highlightBadge: E,
             onClose: () => {
               null == t || t()
             },
@@ -226,37 +225,33 @@ function e6(e) {
       spacing: 14,
       fixed: !0,
       onRequestClose: () => {
-        c(), C(void 0)
+        c(), j(void 0)
       },
       preload: () => (0, em.Z)(s, void 0, {
         withMutualGuilds: !1,
         withMutualFriends: !1
       }),
-      children: e => (E(e), (0, r.jsxs)(f.P3F, eQ(eJ({
-        style: S
+      children: e => (b(e), (0, r.jsxs)(f.P3F, eQ(eJ({
+        style: C
       }, e), {
         onClick: t => {
           var n;
           null === (n = e.onClick) || void 0 === n || n.call(e, t), null == o || o(t)
         },
         "aria-label": eK.NW.string(eK.t["3Uj+2t"]),
-        "data-jump-section": p ? g : void 0,
-        className: a()(eq.avatarWrapper, !p && h && eq.experiment, {
+        "data-jump-section": g ? m : void 0,
+        className: a()(eq.avatarWrapper, !g && p && eq.experiment, {
           [eq.plated]: null != u
         }),
-        children: [(0, r.jsx)(et.Z, {
-          nameplate: u,
-          hovered: m,
-          placement: ee.i.ACCOUNT
-        }), (0, r.jsx)(e$, {
-          size: p ? f.EFr["SIZE_".concat(b)] : f.EFr.SIZE_32,
-          src: s.getAvatarURL(void 0, p ? b - 4 : 32, !1),
-          avatarDecoration: N,
+        children: [(0, r.jsx)(e$, {
+          size: g ? f.EFr["SIZE_".concat(N)] : f.EFr.SIZE_32,
+          src: s.getAvatarURL(void 0, g ? N - 4 : 32, !1),
+          avatarDecoration: x,
           "aria-label": s.username,
           status: n ? ez.Skl.STREAMING : l,
           isSpeaking: t,
           className: eq.avatar,
-          pulseStatusIcon: v
+          pulseStatusIcon: S
         }), (0, r.jsx)("div", {
           className: a()(eq.nameTag, {
             [eq.canCopy]: ek.wS
@@ -354,11 +349,8 @@ class e3 extends i.PureComponent {
         "data-jump-section": t
       },
       onClick: n
-    } = e, {
-      hovered: i
-    } = this.state;
+    } = e;
     return (0, r.jsx)(e6, eQ(eJ({}, this.props), {
-      hovered: i,
       handleClick: n,
       handleMouseLeave: this.handleMouseLeave,
       renderNameTag: this.renderNameTag,
@@ -408,15 +400,20 @@ class e3 extends i.PureComponent {
   }
   render() {
     let {
-      currentUser: e
-    } = this.props;
+      currentUser: e,
+      nameplate: t
+    } = this.props, n = this.state.hovered;
     return null == e ? null : (0, r.jsx)(f.Wdt, {
       children: e => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: eq.container,
           onMouseEnter: this.handleMouseEnter,
           onMouseLeave: this.handleMouseLeave,
-          children: [this.renderNameZone(e), (0, r.jsx)(e8, eQ(eJ({}, this.props, this.state), {
+          children: [(0, r.jsx)(et.Z, {
+            nameplate: t,
+            hovered: n,
+            placement: ee.i.ACCOUNT
+          }), this.renderNameZone(e), (0, r.jsx)(e8, eQ(eJ({}, this.props, this.state), {
             handleMouseEnterMute: this.handleMouseEnterMute,
             handleMouseLeaveMute: this.handleMouseLeaveMute,
             handleToggleSelfMute: this.handleToggleSelfMute,

@@ -10,7 +10,7 @@ var r = {
   selected: "selected__4bbc6",
   account: "account__4bbc6",
   preview: "preview__4bbc6",
-  accountContainer: "accountContainer__4bbc6",
+  rtcOpened: "rtcOpened__4bbc6",
   videoContainer: "videoContainer__4bbc6"
 };
 e.exports = r

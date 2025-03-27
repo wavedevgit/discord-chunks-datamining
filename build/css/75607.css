@@ -1,6 +1,6 @@
 /**
   Module ID: 75607
-  Original File Name: ee9209e31815bf7b
+  Original File Name: 8ac40c4d61582a69
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -2350,6 +2350,7 @@ h1.title_feb59c,h2.title_feb59c {
     align-items: center;
     flex-shrink: 0;
     container-type: inline-size;
+    border-radius: inherit;
     padding: 0 8px 1px;
     z-index: 1
 }
@@ -17049,4 +17050,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=ee9209e31815bf7b.css.map*/
+/*# sourceMappingURL=8ac40c4d61582a69.css.map*/

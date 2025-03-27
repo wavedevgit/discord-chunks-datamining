@@ -115,7 +115,10 @@ let et = Y.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
       nameplate: t
     } = e, n = (0, U.A)(t);
     return (0, l.jsx)(f.P3F, $(J({
-      className: X.closeButton
+      className: o()(X.closeButton, {
+        [X.closeButtonPlated]: null != t
+      }),
+      style: n
     }, e), {
       focusProps: {
         offset: {
@@ -126,9 +129,8 @@ let et = Y.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
         }
       },
       children: (0, l.jsx)("div", {
-        style: n,
         className: o()({
-          [X.closeButtonBackgroundPlated]: null != t
+          [X.innerCloseButtonPlated]: null != t
         }),
         children: (0, l.jsx)(f.Dio, {
           size: "md",

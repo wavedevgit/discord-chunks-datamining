@@ -31,7 +31,7 @@ function B(e) {
     videoEnabled: n,
     onEnable: B,
     onClose: O
-  } = e, k = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
+  } = e, k = h.Z.getCameraComponent(), P = (0, u.Dt)(), y = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
     analyticsLocations: N
   } = (0, d.ZP)(_.Z.CAMERA_PREVIEW), D = a.useRef(null);
   a.useEffect(() => {
@@ -78,13 +78,13 @@ function B(e) {
       children: (0, o.jsxs)(r.Y0X, {
         className: I.modalRoot,
         size: r.CgR.DYNAMIC,
-        "aria-labelledby": y,
+        "aria-labelledby": P,
         transitionState: t,
         children: [(0, o.jsxs)(r.hzk, {
-          className: P ? I.contentWithVideoBackgrounds : I.content,
+          className: y ? I.contentWithVideoBackgrounds : I.content,
           scrollerRef: D,
           children: [(0, o.jsx)(r.X6q, {
-            id: y,
+            id: P,
             className: I.header,
             variant: "heading-xl/semibold",
             children: n ? x.NW.string(x.t.LAwwbW) : x.NW.string(x.t["/HITVF"])
