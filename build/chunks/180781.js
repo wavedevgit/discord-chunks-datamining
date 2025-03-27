@@ -1,6 +1,6 @@
 /** Chunk was on 81288 **/
 n.d(t, {
-  Z: () => m
+  Z: () => b
 });
 var i = n(200651);
 n(192379);
@@ -8,36 +8,36 @@ var o = n(442837),
   r = n(481060),
   a = n(906732),
   l = n(48217),
-  c = n(26323),
-  s = n(430824),
+  s = n(26323),
+  c = n(430824),
   d = n(914010),
   u = n(709586),
   _ = n(981631),
   g = n(30513),
-  b = n(388032),
-  f = n(150059);
+  f = n(388032),
+  m = n(150059);
 
-function m(e) {
+function b(e) {
   let {
     analyticsSection: t,
     analyticsPage: n,
-    isGIF: m,
+    isGIF: b,
     banner: p
-  } = e, h = (0, o.e7)([d.Z], () => d.Z.getGuildId()), v = (0, o.e7)([s.Z], () => s.Z.getGuild(h)), {
+  } = e, h = (0, o.e7)([d.Z], () => d.Z.getGuildId()), v = (0, o.e7)([c.Z], () => c.Z.getGuild(h)), {
     analyticsLocations: N
   } = (0, a.ZP)();
-  return null == v || v.hasFeature(_.oNc.ANIMATED_BANNER) || !m && v.hasFeature(_.oNc.BANNER) ? null : (0, i.jsxs)("div", {
-    className: f.container,
+  return null == v || v.hasFeature(_.oNc.ANIMATED_BANNER) || !b && v.hasFeature(_.oNc.BANNER) ? null : (0, i.jsxs)("div", {
+    className: m.container,
     children: [(0, i.jsx)(u.Z, {
-      className: f.guildBoostingIcon
+      className: m.guildBoostingIcon
     }), (0, i.jsx)(r.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: b.NW.string(b.t["56M7xc"])
+      children: f.NW.string(f.t["56M7xc"])
     }), (0, i.jsx)(r.zxk, {
       look: r.zxk.Looks.LINK,
       color: r.zxk.Colors.LINK,
-      className: f.subscribeButton,
+      className: m.subscribeButton,
       onClick: () => {
         if (null == v) return;
         let e = {
@@ -49,16 +49,16 @@ function m(e) {
           analyticsLocations: N,
           analyticsLocation: e,
           guild: v,
-          isGIF: m,
+          isGIF: b,
           banner: p
-        }) : (0, c.Z)({
+        }) : (0, s.Z)({
           analyticsLocations: N,
           analyticsSourceLocation: e,
           guild: v,
-          perks: m ? (0, g.zC)() : (0, g.XO)()
+          perks: b ? (0, g.zC)() : (0, g.XO)()
         })
       },
-      children: b.NW.string(b.t.WUHdZW)
+      children: f.NW.string(f.t.WUHdZW)
     })]
   })
 }

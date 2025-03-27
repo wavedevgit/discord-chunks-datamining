@@ -66,7 +66,7 @@ let w = new Map([
       } = e, r = f.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = h.Z.getMediaSessionId();
       if (null != r && null != o && !1 === p.Z.getInputDetected() && !i) return [x()]
     },
-    makeErrorContextKey: e => "".concat(e.mediaSessionId)
+    makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)
   }],
   [v.u.NO_INPUT_DEVICES, {
     getActiveErrors: e => {

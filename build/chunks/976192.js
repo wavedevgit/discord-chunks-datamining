@@ -1,51 +1,51 @@
 /** Chunk was on 70675 **/
-n.d(t, {
+t.d(n, {
   Z: () => N
 });
-var l = n(200651),
-  r = n(192379),
-  i = n(442837),
-  a = n(481060),
-  o = n(616780),
-  u = n(40851),
-  s = n(300284),
-  c = n(484459),
-  d = n(314897),
-  g = n(271383),
-  Z = n(430824),
-  b = n(496675),
-  f = n(594174),
-  p = n(981631),
-  O = n(388032),
-  m = n(992718);
+var l = t(200651),
+  r = t(192379),
+  i = t(442837),
+  a = t(481060),
+  o = t(616780),
+  u = t(40851),
+  s = t(300284),
+  c = t(484459),
+  d = t(314897),
+  g = t(271383),
+  Z = t(430824),
+  b = t(496675),
+  f = t(594174),
+  p = t(981631),
+  O = t(388032),
+  m = t(992718);
 
 function N(e) {
   let {
-    guildId: t,
+    guildId: n,
     userId: N,
     analyticsLocation: h,
     analyticsLocations: j,
     context: P,
-    icon: x
-  } = e, v = Z.Z.getGuild(t), y = d.default.getId(), E = (0, i.e7)([f.default], () => f.default.getUser(N)), _ = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, N), [t, N]);
-  (0, i.e7)([b.Z], () => b.Z.getGuildVersion(t), [t]);
+    icon: v
+  } = e, x = Z.Z.getGuild(n), y = d.default.getId(), E = (0, i.e7)([f.default], () => f.default.getUser(N)), _ = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, N), [n, N]);
+  (0, i.e7)([b.Z], () => b.Z.getGuildVersion(n), [n]);
   let C = r.useMemo(() => ({
-    [t]: [N]
-  }), [t, N]);
+    [n]: [N]
+  }), [n, N]);
   (0, o.$)(C);
-  let I = P === p.IlC.POPOUT,
-    S = (0, s.Z)({
-      guild: v,
+  let S = P === p.IlC.POPOUT,
+    I = (0, s.Z)({
+      guild: x,
       analyticsLocation: h
     }),
     T = (0, u.Aq)();
-  if (null == v || I) return null;
-  let W = y === N && (b.Z.can(p.Plq.CHANGE_NICKNAME, v) || b.Z.can(p.Plq.MANAGE_NICKNAMES, v)),
-    A = y === N,
-    U = b.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, N, v);
-  if (!(W || U || A) || null == E || _) return null;
-  let w = v.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
-    R = A ? w : O.NW.string(O.t.dilOFx);
+  if (null == x || S) return null;
+  let A = y === N && (b.Z.can(p.Plq.CHANGE_NICKNAME, x) || b.Z.can(p.Plq.MANAGE_NICKNAMES, x)),
+    W = y === N,
+    U = b.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, N, x);
+  if (!(A || U || W) || null == E || _) return null;
+  let w = x.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
+    R = W ? w : O.NW.string(O.t.dilOFx);
   return (0, l.jsx)(a.sNh, {
     id: "change-nickname",
     label: (0, l.jsx)("div", {
@@ -55,45 +55,45 @@ function N(e) {
         children: R
       })
     }),
-    icon: x,
+    icon: v,
     action: () => {
-      A ? ((0, c.Z)(E.id, E.getAvatarURL(t, 80), {
-        guildId: t
-      }), S(), T.dispatch(p.CkL.POPOUT_CLOSE), (0, a.pTH)()) : (0, a.ZDy)(async () => {
+      W ? ((0, c.Z)(E.id, E.getAvatarURL(n, 80), {
+        guildId: n
+      }), I(), T.dispatch(p.CkL.POPOUT_CLOSE), (0, a.pTH)()) : (0, a.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("17712").then(n.bind(n, 620021));
-        return n => {
+        } = await t.e("17712").then(t.bind(t, 620021));
+        return t => {
           var r, i;
           return (0, l.jsx)(e, (r = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                l = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), l.forEach(function(t) {
+            for (var n = 1; n < arguments.length; n++) {
+              var t = null != arguments[n] ? arguments[n] : {},
+                l = Object.keys(t);
+              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(t, e).enumerable
+              }))), l.forEach(function(n) {
                 var l;
-                l = n[t], t in e ? Object.defineProperty(e, t, {
+                l = t[n], n in e ? Object.defineProperty(e, n, {
                   value: l,
                   enumerable: !0,
                   configurable: !0,
                   writable: !0
-                }) : e[t] = l
+                }) : e[n] = l
               })
             }
             return e
-          }({}, n), i = i = {
-            guildId: t,
+          }({}, t), i = i = {
+            guildId: n,
             user: E,
             analyticsSource: h,
             analyticsLocations: j
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-            var n = Object.keys(e);
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
+            var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var l = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, l)
+              t.push.apply(t, l)
             }
-            return n
+            return t
           })(Object(i)).forEach(function(e) {
             Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
           }), r))

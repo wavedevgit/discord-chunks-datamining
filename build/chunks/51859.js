@@ -12,15 +12,15 @@ var r = t(200651),
   d = t(838968),
   u = t(660397),
   m = t(279604),
-  x = t(296260),
-  p = t(388032),
+  p = t(296260),
+  x = t(388032),
   v = t(709435);
 
 function _(e) {
   let {
     guildId: n,
     powerup: t
-  } = e, o = null != (0, c.Z)(n, t), [_, b] = i.useState(void 0), j = (0, l.Z)(t);
+  } = e, o = null != (0, c.Z)(n, t), [_, b] = i.useState(void 0), g = (0, l.Z)(t);
   return (0, m.KT)(_), (0, r.jsxs)(d.Z, {
     guildId: n,
     powerup: t,
@@ -29,7 +29,7 @@ function _(e) {
       children: (0, r.jsx)("img", {
         className: v.image,
         alt: "",
-        src: j
+        src: g
       })
     }), (0, r.jsxs)("div", {
       className: v.contentContainer,
@@ -43,7 +43,7 @@ function _(e) {
             [v.active]: o
           }),
           variant: "text-xs/semibold",
-          children: p.NW.string(x.Z.j2jUjY)
+          children: x.NW.string(p.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
         className: v.description,

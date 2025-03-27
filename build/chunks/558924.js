@@ -28,33 +28,33 @@ function j(e, t) {
   } = Z.Z.useExperiment({
     guildId: null == a ? void 0 : a.guild_id,
     location: "useRingHangupItem"
-  }), y = !f || (null == n ? void 0 : n.length) === 0 || null == t, _ = j && (null == a ? void 0 : a.guild_id) != null, P = null == i, W = null != i && i.type === m.fO.USER && i.ringing, E = [];
-  _ && !y && (P || W) && E.push(s.z.RING_USER_TO_VC_NEW_BADGE);
-  let [I, A] = (0, b.US)(E), S = I === s.z.RING_USER_TO_VC_NEW_BADGE;
+  }), y = !f || (null == n ? void 0 : n.length) === 0 || null == t, _ = j && (null == a ? void 0 : a.guild_id) != null, P = null == i, E = null != i && i.type === m.fO.USER && i.ringing, W = [];
+  _ && !y && (P || E) && W.push(s.z.RING_USER_TO_VC_NEW_BADGE);
+  let [I, A] = (0, b.US)(W), S = I === s.z.RING_USER_TO_VC_NEW_BADGE;
   return y ? null : P ? (0, l.jsx)(u.sNh, {
     id: "ring",
     label: _ ? (0, l.jsxs)("div", {
       className: O.label,
-      children: [p.NW.string(p.t["3Hv9qa"]), S && (0, l.jsx)(h, {})]
+      children: [p.NW.string(p.t["3Hv9qa"]), S && (0, l.jsx)(x, {})]
     }) : p.NW.string(p.t.bHa9kJ),
-    subtext: _ ? (0, l.jsx)(x, {
+    subtext: _ ? (0, l.jsx)(h, {
       channel: a
     }) : null,
     action: () => {
       S && A(v.L.TAKE_ACTION), c.Z.ring(t, [e.id])
     },
     className: O.menuItem
-  }) : W ? (0, l.jsx)(u.sNh, {
+  }) : E ? (0, l.jsx)(u.sNh, {
     id: "stop-ringing",
     label: (0, l.jsxs)("div", {
       className: O.label,
-      children: [p.NW.string(p.t.ygslb2), S && (0, l.jsx)(h, {})]
+      children: [p.NW.string(p.t.ygslb2), S && (0, l.jsx)(x, {})]
     }),
     subtext: _ ? (0, l.jsx)(u.Text, {
       variant: "text-xs/medium",
       className: r()(O.subtext, O.ringing),
       children: p.NW.format(p.t.dwfzZm, {
-        channelName: (0, l.jsx)(x, {
+        channelName: (0, l.jsx)(h, {
           channel: a
         })
       })
@@ -65,7 +65,7 @@ function j(e, t) {
     className: O.menuItem
   }) : null
 }
-let x = e => {
+let h = e => {
     let {
       channel: t
     } = e, n = (0, f.ZP)(t);
@@ -80,7 +80,7 @@ let x = e => {
       })]
     })
   },
-  h = () => (0, l.jsx)(u.IGR, {
+  x = () => (0, l.jsx)(u.IGR, {
     color: a.Z.BG_BRAND,
     text: p.NW.string(p.t.y2b7CA)
   })

@@ -12,8 +12,8 @@ var i = n(481060),
   d = n(100527),
   u = n(299206),
   c = n(976192),
-  g = n(276022),
-  f = n(777658),
+  f = n(276022),
+  g = n(777658),
   Z = n(858488),
   b = n(44652),
   O = n(185457),
@@ -28,8 +28,8 @@ var i = n(481060),
   y = n(47091),
   S = n(991307),
   C = n(37258),
-  x = n(931617),
-  M = n(700994),
+  M = n(931617),
+  x = n(700994),
   I = n(332031),
   A = n(981631),
   T = n(388032);
@@ -46,10 +46,10 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     page: A.ZY5.GUILD_CHANNEL,
     section: A.jXE.CHAT_USERNAME,
     object: A.qAy.CONTEXT_MENU_ITEM
-  }, W = (0, C.Z)({
+  }, L = (0, C.Z)({
     userId: t.id,
     guildId: n
-  }), L = (0, j.Z)(t, n, _), w = (0, p.Z)(t.id, _), k = (0, I.Z)(t.id), R = (0, N.Z)({
+  }), W = (0, j.Z)(t, n, _), w = (0, p.Z)(t.id, _), k = (0, I.Z)(t.id), R = (0, N.Z)({
     user: t,
     context: _
   }), B = (0, O.Z)({
@@ -58,18 +58,18 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     context: _
   }), V = (0, Z.Z)({
     user: t
-  }), q = (0, M.Z)(t.id), G = (0, S.Z)(t.id), F = (0, c.Z)({
+  }), q = (0, x.Z)(t.id), G = (0, S.Z)(t.id), F = (0, c.Z)({
     guildId: n,
     userId: t.id,
     analyticsLocation: D,
     context: _
-  }), H = (0, g.Z)({
+  }), Y = (0, f.Z)({
     user: t,
     guildId: n
-  }), Y = (0, E.Z)({
+  }), H = (0, E.Z)({
     user: t,
     guildId: n
-  }), Q = (0, s.Z)(null, t), K = (0, f.Z)({
+  }), Q = (0, s.Z)(null, t), K = (0, g.Z)({
     user: t
   }), J = (0, b.Z)({
     user: t
@@ -83,7 +83,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, m.Z)(t, n), et = (0, x.Z)(t.id, n), en = (0, P.Z)(t, n), el = (0, u.Z)({
+  }), ee = (0, m.Z)(t, n), et = (0, M.Z)(t.id, n), en = (0, P.Z)(t, n), el = (0, u.Z)({
     id: t.id,
     label: T.NW.string(T.t["/AXYnJ"])
   }), ei = t.isNonUserBot();
@@ -94,13 +94,13 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     onSelect: U,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [o && W, d && L, w, R, o && B, o && V, k]
+        children: [o && L, d && W, w, R, o && B, o && V, k]
       }), a && (0, l.jsx)(i.kSQ, {
         children: q
       }), (0, l.jsx)(i.kSQ, {
         children: o && Q
       }), (0, l.jsxs)(i.kSQ, {
-        children: [a && G, o && F, o && Y, K, J, X, H, o && $, o && z]
+        children: [a && G, o && F, o && H, K, J, X, Y, o && $, o && z]
       }), (0, l.jsx)(i.kSQ, {
         children: ee
       }), (0, l.jsxs)(i.kSQ, {

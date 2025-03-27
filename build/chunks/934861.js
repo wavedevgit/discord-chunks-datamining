@@ -3,9 +3,9 @@ t.d(n, {
   c: () => d,
   v: () => u
 });
-var o = t(200651);
+var r = t(200651);
 t(192379);
-var r = t(481060),
+var o = t(481060),
   i = t(493683),
   l = t(475413),
   s = t(388032);
@@ -13,17 +13,17 @@ var r = t(481060),
 function c(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      o = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      r = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), o.forEach(function(n) {
-      var o;
-      o = t[n], n in e ? Object.defineProperty(e, n, {
-        value: o,
+    }))), r.forEach(function(n) {
+      var r;
+      r = t[n], n in e ? Object.defineProperty(e, n, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[n] = o
+      }) : e[n] = r
     })
   }
   return e
@@ -31,18 +31,18 @@ function c(e) {
 
 function a(e, n) {
   if (null == e) return {};
-  var t, o, r = function(e, n) {
+  var t, r, o = function(e, n) {
     if (null == e) return {};
-    var t, o, r = {},
+    var t, r, o = {},
       i = Object.keys(e);
-    for (o = 0; o < i.length; o++) t = i[o], n.indexOf(t) >= 0 || (r[t] = e[t]);
-    return r
+    for (r = 0; r < i.length; r++) t = i[r], n.indexOf(t) >= 0 || (o[t] = e[t]);
+    return o
   }(e, n);
   if (Object.getOwnPropertySymbols) {
     var i = Object.getOwnPropertySymbols(e);
-    for (o = 0; o < i.length; o++) t = i[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+    for (r = 0; r < i.length; r++) t = i[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
   }
-  return r
+  return o
 }
 
 function d(e) {
@@ -50,9 +50,9 @@ function d(e) {
     userId: n,
     onClose: t
   } = e, d = a(e, ["userId", "onClose"]);
-  return (0, o.jsx)(l.tG, c({
+  return (0, r.jsx)(l.tG, c({
     action: "SEND_MESSAGE",
-    icon: r.kBi,
+    icon: o.kBi,
     text: s.NW.string(s.t.zROXER),
     onClick: () => {
       i.Z.openPrivateChannel(n), null == t || t()
@@ -65,9 +65,9 @@ function u(e) {
     userId: n,
     onClose: t
   } = e, d = a(e, ["userId", "onClose"]);
-  return (0, o.jsx)(l.ef, c({
+  return (0, r.jsx)(l.ef, c({
     action: "SEND_MESSAGE",
-    icon: r.kBi,
+    icon: o.kBi,
     tooltipText: s.NW.string(s.t.zROXER),
     onClick: () => {
       i.Z.openPrivateChannel(n), null == t || t()

@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => v
 }), t(653041);
-var o = t(442837),
-  r = t(468363),
+var r = t(442837),
+  o = t(468363),
   i = t(158776),
   l = t(885110),
   s = t(369566),
@@ -21,10 +21,10 @@ function v(e) {
     user: n,
     currentUser: t,
     guildId: v,
-    initialSubsection: g
+    initialSubsection: m
   } = e, {
-    voiceActivityStatusEnabled: m
-  } = (0, r.U)({
+    voiceActivityStatusEnabled: g
+  } = (0, o.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
     live: I,
@@ -38,7 +38,7 @@ function v(e) {
     userId: n.id,
     guildId: v,
     surface: "use-user-profile-modal-tab-bar-items"
-  }), Z = n.id === (null == t ? void 0 : t.id), P = (0, o.e7)([l.Z, i.Z], () => {
+  }), Z = n.id === (null == t ? void 0 : t.id), P = (0, r.e7)([l.Z, i.Z], () => {
     let e = Z ? l.Z.getStatus() : i.Z.getStatus(n.id);
     return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE
   }), N = null != h || I.length > 0, E = j.length > 0, {
@@ -51,10 +51,10 @@ function v(e) {
     section: p.oh.USER_INFO,
     text: y.NW.string(y.t.jGoPJS)
   }];
-  return !P && (N || m && null == h && null == O && null != x) ? w.push({
+  return !P && (N || g && null == h && null == O && null != x) ? w.push({
     section: p.oh.ACTIVITY,
     text: y.NW.string(y.t.chq59f)
-  }) : (E || null == _ && g === p.Tb.RECENT_ACTIVITY) && w.push({
+  }) : (E || null == _ && m === p.Tb.RECENT_ACTIVITY) && w.push({
     section: p.oh.ACTIVITY,
     text: y.NW.string(y.t.chq59f)
   }), !Z && A && (w.push({

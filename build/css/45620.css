@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 0efb0a813384f825
+  Original File Name: 73aa8785bce158f5
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -956,8 +956,7 @@
     --custom-guild-gutter: 72px;
     --custom-channel-gutter: 240px;
     position: fixed;
-    left: calc(72px + 240px);
-    left: calc(var(--custom-guild-gutter) + var(--custom-channel-gutter));
+    left: calc(var(--custom-guild-sidebar-width) + 25px);
     right: 0;
     bottom: -330px;
     height: 256px;
@@ -980,4 +979,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=0efb0a813384f825.css.map*/
+/*# sourceMappingURL=73aa8785bce158f5.css.map*/

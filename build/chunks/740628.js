@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => h
 }), t(47120);
-var o = t(200651),
-  r = t(192379),
+var r = t(200651),
+  o = t(192379),
   i = t(442837),
   l = t(706898),
   s = t(481060),
@@ -16,42 +16,42 @@ var o = t(200651),
   b = t(389190),
   y = t(428927),
   v = t(228168),
-  g = t(388032),
-  m = t(658266),
+  m = t(388032),
+  g = t(658266),
   I = t(363899);
 
 function j(e) {
   let {
     section: n,
     subsection: t,
-    user: r,
+    user: o,
     currentUser: i,
     displayProfile: l,
     guildId: s,
     onClose: c
   } = e;
-  return n === v.oh.ACTIVITY ? (0, o.jsx)(f.Z, {
-    user: r,
+  return n === v.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+    user: o,
     currentUser: i,
     displayProfile: l,
     guildId: s,
     onClose: c
-  }) : n === v.oh.MUTUAL_FRIENDS ? (0, o.jsx)(b.Z, {
-    user: r,
+  }) : n === v.oh.MUTUAL_FRIENDS ? (0, r.jsx)(b.Z, {
+    user: o,
     onClose: c
-  }) : n === v.oh.MUTUAL_GUILDS ? (0, o.jsx)(y.Z, {
-    user: r,
+  }) : n === v.oh.MUTUAL_GUILDS ? (0, r.jsx)(y.Z, {
+    user: o,
     onClose: c
-  }) : n === v.oh.BOT_DATA_ACCESS ? (0, o.jsx)(d.Z, {
-    user: r
-  }) : n === v.oh.BOT_INFO ? (0, o.jsx)(u.Z, {
-    user: r,
+  }) : n === v.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+    user: o
+  }) : n === v.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+    user: o,
     currentUser: i,
     displayProfile: l,
     subsection: t,
     onClose: c
-  }) : (0, o.jsx)(p.Z, {
-    user: r,
+  }) : (0, r.jsx)(p.Z, {
+    user: o,
     currentUser: i,
     displayProfile: l,
     subsection: t,
@@ -75,7 +75,7 @@ function h(e) {
   } = (0, a.KZ)(), Z = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
     section: P,
     subsection: N
-  }, E] = r.useState({
+  }, E] = o.useState({
     section: null !== (d = null === (n = y.find(e => {
       let {
         section: n
@@ -84,13 +84,13 @@ function h(e) {
     })) || void 0 === n ? void 0 : n.section) && void 0 !== d ? d : null === (t = y[0]) || void 0 === t ? void 0 : t.section,
     subsection: _
   });
-  r.useEffect(() => {
+  o.useEffect(() => {
     null == y.find(e => e.section === P) && E({
       section: y[0].section,
       subsection: void 0
     })
   }, [y, P]);
-  let S = r.useCallback(e => {
+  let S = o.useCallback(e => {
     O({
       action: "PRESS_SECTION",
       section: e
@@ -99,20 +99,20 @@ function h(e) {
       subsection: void 0
     })
   }, [O, E]);
-  return Z ? (0, o.jsx)("div", {
+  return Z ? (0, r.jsx)("div", {
     className: I.container,
-    children: (0, o.jsxs)("div", {
-      className: m.empty,
-      children: [(0, o.jsx)("div", {
-        className: m.emptyIconStreamerMode
-      }), (0, o.jsx)("div", {
-        className: m.emptyText,
-        children: g.NW.string(g.t.Br1ls7)
+    children: (0, r.jsxs)("div", {
+      className: g.empty,
+      children: [(0, r.jsx)("div", {
+        className: g.emptyIconStreamerMode
+      }), (0, r.jsx)("div", {
+        className: g.emptyText,
+        children: m.NW.string(m.t.Br1ls7)
       })]
     })
-  }) : (0, o.jsxs)("div", {
+  }) : (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, o.jsx)(l.n, {
+    children: [(0, r.jsx)(l.n, {
       className: I.tabBar,
       type: "top",
       selectedItem: P,
@@ -122,17 +122,17 @@ function h(e) {
           section: n,
           text: t
         } = e;
-        return (0, o.jsx)(l.n.Item, {
+        return (0, r.jsx)(l.n.Item, {
           className: I.tabBarItem,
           id: n,
           "aria-label": t,
-          children: (0, o.jsx)(s.Text, {
+          children: (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: t
           })
         }, n)
       })
-    }), (0, o.jsx)(j, {
+    }), (0, r.jsx)(j, {
       items: y,
       section: P,
       subsection: N,

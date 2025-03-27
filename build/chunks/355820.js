@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 81288 **/
 n.d(t, {
-  A: () => o,
-  P: () => i
+  A: () => r,
+  P: () => o
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2025-03_user_profile_editing_holdout_h1",
   label: "User Profile Editing Holdout Experiment",
@@ -20,30 +19,30 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
-  let {
-    location: t,
-    autoTrackExposure: n = !0
-  } = e, {
-    isInHoldout: i
-  } = r.getCurrentConfig({
-    location: t
-  }, {
-    autoTrackExposure: n
-  });
-  return i
-}
-
 function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    isInHoldout: i
-  } = r.useExperiment({
+    isInHoldout: o
+  } = i.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return i
+  return o
+}
+
+function r(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = !0
+  } = e, {
+    isInHoldout: o
+  } = i.useExperiment({
+    location: t
+  }, {
+    autoTrackExposure: n
+  });
+  return o
 }

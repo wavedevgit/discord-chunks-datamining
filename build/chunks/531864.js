@@ -40,7 +40,7 @@ let h = {
     top: 44,
     rotation: -48,
     size: h,
-    skuId: "1262491137394868308"
+    skuId: "1343751620965564426"
   }, {
     left: 470,
     top: 52,

@@ -7,15 +7,15 @@ var i = n(200651),
   r = n(442837),
   a = n(481060),
   l = n(100527),
-  c = n(906732),
-  s = n(118012),
+  s = n(906732),
+  c = n(118012),
   d = n(411477),
   u = n(197115),
   _ = n(594174),
   g = n(626135),
-  b = n(74538),
-  f = n(981631),
-  m = n(486324),
+  f = n(74538),
+  m = n(981631),
+  b = n(486324),
   p = n(474936),
   h = n(388032),
   v = n(575658);
@@ -24,16 +24,16 @@ function N(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, N = (0, r.e7)([_.default], () => _.default.getCurrentUser()), C = b.ZP.canUseAnimatedAvatar(N), y = b.ZP.canUsePremiumProfileCustomization(N), x = n === m.pC.BANNER && y || n === m.pC.AVATAR && C, {
-    sourceAnalyticsLocations: T
-  } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
+  } = e, N = (0, r.e7)([_.default], () => _.default.getCurrentUser()), C = f.ZP.canUseAnimatedAvatar(N), y = f.ZP.canUsePremiumProfileCustomization(N), x = n === b.pC.BANNER && y || n === b.pC.AVATAR && C, {
+    sourceAnalyticsLocations: E
+  } = (0, s.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (o.useEffect(() => {
-      x || g.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
+      x || g.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
-        location_stack: T
+        location_stack: E
       })
-    }, [x, t, T]), x) return null;
-  let E = (0, i.jsx)(u.Z, {
+    }, [x, t, E]), x) return null;
+  let T = (0, i.jsx)(u.Z, {
     className: v.__invalid_getNitroLink,
     size: a.zxk.Sizes.SMALL,
     look: a.zxk.Looks.LINK,
@@ -43,7 +43,7 @@ function N(e) {
     showIcon: !1,
     premiumModalAnalyticsLocation: {
       section: t,
-      object: f.qAy.BUTTON_CTA
+      object: m.qAy.BUTTON_CTA
     },
     disableShine: !0
   });
@@ -51,8 +51,8 @@ function N(e) {
     reducedRightPadding: !0,
     className: v.nitroPreviewUpsell,
     text: h.NW.format(h.t.Og8039, {}),
-    textSize: s.Z.Sizes.SIZE_14,
-    textColor: s.Z.Colors.HEADER_PRIMARY,
-    button: E
+    textSize: c.Z.Sizes.SIZE_14,
+    textColor: c.Z.Colors.HEADER_PRIMARY,
+    button: T
   })
 }

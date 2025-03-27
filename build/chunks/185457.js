@@ -1,50 +1,47 @@
 /** Chunk was on 98783 **/
 n.d(t, {
-  Z: () => N
+  Z: () => Z
 });
 var l = n(200651),
   i = n(192379),
   r = n(481060),
   a = n(906732),
-  o = n(748545),
-  s = n(531301),
-  u = n(171368),
-  c = n(314897),
-  d = n(246946),
-  g = n(626135),
-  f = n(981631),
-  b = n(228168),
-  Z = n(388032);
+  o = n(531301),
+  s = n(171368),
+  u = n(314897),
+  c = n(246946),
+  d = n(626135),
+  g = n(981631),
+  f = n(228168),
+  b = n(388032);
 
-function N(e) {
+function Z(e) {
   let {
     user: t,
     guildId: n,
-    channelId: N,
-    context: m
+    channelId: Z,
+    context: N
   } = e, {
-    id: v
+    id: m
   } = t, {
-    loading: p,
-    note: O
-  } = (0, s.Z)(v), j = !p && null != O && O.length > 0, x = m === f.IlC.POPOUT || m === f.IlC.OVERLAY, h = i.useContext(g.AnalyticsContext), {
-    analyticsLocations: y
-  } = (0, a.ZP)(), _ = (0, o.k)({
-    location: "useAddNoteItem"
-  });
-  return v === c.default.getId() || d.Z.hidePersonalInformation || x ? null : (0, l.jsx)(r.sNh, {
+    loading: v,
+    note: p
+  } = (0, o.Z)(m), O = !v && null != p && p.length > 0, j = N === g.IlC.POPOUT || N === g.IlC.OVERLAY, h = i.useContext(d.AnalyticsContext), {
+    analyticsLocations: x
+  } = (0, a.ZP)();
+  return m === u.default.getId() || c.Z.hidePersonalInformation || j ? null : (0, l.jsx)(r.sNh, {
     id: "note",
-    label: p ? Z.NW.string(Z.t["WLKx//"]) : j ? _ ? Z.NW.string(Z.t["gs+qcH"]) : Z.NW.string(Z.t.sHHsOD) : _ ? Z.NW.string(Z.t["1ZZttr"]) : Z.NW.string(Z.t.Dglxra),
+    label: v ? b.NW.string(b.t["WLKx//"]) : O ? b.NW.string(b.t["gs+qcH"]) : b.NW.string(b.t["1ZZttr"]),
     action: () => {
-      (0, u.openUserProfileModal)({
+      (0, s.openUserProfileModal)({
         userId: t.id,
-        section: b.oh.USER_INFO,
-        subsection: b.Tb.NOTE,
+        section: f.oh.USER_INFO,
+        subsection: f.Tb.NOTE,
         guildId: n,
-        channelId: N,
-        sourceAnalyticsLocations: y,
+        channelId: Z,
+        sourceAnalyticsLocations: x,
         analyticsLocation: h.location,
-        appContext: m
+        appContext: N
       })
     }
   })

@@ -12,23 +12,23 @@ var r = t(200651),
   d = t(984370),
   u = t(713081),
   m = t(905128),
-  x = t(27237),
-  p = t(51859),
+  p = t(27237),
+  x = t(51859),
   v = t(953478),
   _ = t(460608),
   b = t(279604),
-  j = t(332538),
-  g = t(535396),
+  g = t(332538),
+  j = t(535396),
   Z = t(296260),
   h = t(388032),
   f = t(518871);
-let N = [g.Us.LEVEL, g.Us.PERK];
+let N = [j.Us.LEVEL, j.Us.PERK];
 
 function C(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, o = (0, j.Z)(n);
+  } = e, o = (0, g.Z)(n);
   i.useEffect(() => {
     (0, u.Sn)(n), (0, u.Fm)(n)
   }, [n]), i.useEffect(() => {
@@ -66,11 +66,11 @@ function C(e) {
             description: o
           } = function(e) {
             switch (e) {
-              case g.Us.LEVEL:
+              case j.Us.LEVEL:
                 return {
                   title: h.NW.string(Z.Z["TXY/b2"]), description: h.NW.string(Z.Z.aJv4PD)
                 };
-              case g.Us.PERK:
+              case j.Us.PERK:
                 return {
                   title: h.NW.string(Z.Z.TV3Vm5), description: h.NW.string(Z.Z.NHjM1t)
                 }
@@ -90,19 +90,19 @@ function C(e) {
               })]
             }), (0, r.jsx)("div", {
               className: s()(f.powerupContainer, {
-                [f.powerupsLevelContainer]: e === g.Us.LEVEL
+                [f.powerupsLevelContainer]: e === j.Us.LEVEL
               }),
               children: t.map((e, i) => {
                 switch (e.type) {
-                  case g.Us.LEVEL:
-                    return (0, r.jsx)(x.ZP, {
+                  case j.Us.LEVEL:
+                    return (0, r.jsx)(p.ZP, {
                       guildId: n,
                       index: i,
                       powerup: e,
                       nextPowerup: t[i + 1]
                     }, "powerup-".concat(e.skuId));
-                  case g.Us.PERK:
-                    return (0, r.jsx)(p.Z, {
+                  case j.Us.PERK:
+                    return (0, r.jsx)(x.Z, {
                       guildId: n,
                       powerup: e
                     }, "powerup-".concat(e.skuId))

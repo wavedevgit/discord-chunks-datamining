@@ -1,10 +1,10 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  D: () => l
+  D: () => o
 });
 var r = n(818083),
   i = n(355820);
-let a = (0, r.B)({
+let l = (0, r.B)({
   kind: "user",
   id: "2025-01_user_profile_custom_status_edit_preview",
   label: "User Profile Custom Status Edit Preview",
@@ -29,7 +29,7 @@ let a = (0, r.B)({
   }]
 });
 
-function l(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
@@ -37,13 +37,13 @@ function l(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabledWithStatusSelection: l,
-    enabledWithoutSatusSelection: o
-  } = a.getCurrentConfig({
+    enabledWithStatusSelection: o,
+    enabledWithoutSatusSelection: a
+  } = l.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return l || o
+  return o || a
 }

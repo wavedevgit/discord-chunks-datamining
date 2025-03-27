@@ -30,7 +30,7 @@ function v(e) {
       muted: p,
       deafened: O = !1,
       localVideoDisabled: j = !1,
-      localVideoAutoDisabled: x = !1
+      localVideoAutoDisabled: h = !1
     } = (0, i.cj)([u.Z], () => n ? {
       muted: u.Z.isSelfMute(t),
       deafened: u.Z.isSelfDeaf(t)
@@ -39,11 +39,11 @@ function v(e) {
       localVideoDisabled: u.Z.isLocalVideoDisabled(e, t),
       localVideoAutoDisabled: u.Z.isLocalVideoAutoDisabled(e, t)
     }, [n, t, e]),
-    h = u.Z.supports(Z.AN.DISABLE_VIDEO) && !n ? (0, l.jsx)(r.S89, {
+    x = u.Z.supports(Z.AN.DISABLE_VIDEO) && !n ? (0, l.jsx)(r.S89, {
       id: "disable-video",
       label: N.NW.string(N.t["4MMsWF"]),
       action: () => {
-        if (x) {
+        if (h) {
           a.Z.show({
             title: N.NW.string(N.t.m2Hyj4),
             body: N.NW.string(N.t.EhaK6O),
@@ -57,7 +57,7 @@ function v(e) {
         o.Z.setDisableLocalVideo(e, n, t)
       },
       checked: j,
-      subtext: x ? (0, l.jsxs)("div", {
+      subtext: h ? (0, l.jsxs)("div", {
         className: m.videoPaused,
         children: [(0, l.jsx)(r.P4T, {
           size: "custom",
@@ -98,10 +98,10 @@ function v(e) {
       location: "User Context Menu"
     }),
     checked: O
-  }, "self-deafen"), h] : [(0, l.jsx)(r.S89, {
+  }, "self-deafen"), x] : [(0, l.jsx)(r.S89, {
     id: "mute",
     label: N.NW.string(N.t.sWmtIy),
     action: () => o.Z.toggleLocalMute(e, t),
     checked: p
-  }, "self-mute"), y, h]
+  }, "self-mute"), y, x]
 }

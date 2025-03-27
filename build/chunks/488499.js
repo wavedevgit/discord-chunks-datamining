@@ -13,16 +13,16 @@ function l(e) {
     type: t,
     analyticsPage: n,
     analyticsSection: l,
-    isGIF: c,
-    banner: s
+    isGIF: s,
+    banner: c
   } = e;
-  return [a.pC.BANNER, a.pC.AVATAR].includes(t) && c ? (0, i.jsx)(r.Z, {
+  return [a.pC.BANNER, a.pC.AVATAR].includes(t) && s ? (0, i.jsx)(r.Z, {
     analyticsSection: l,
     type: t
   }) : t === a.pC.GUILD_BANNER ? (0, i.jsx)(o.Z, {
     analyticsSection: l,
     analyticsPage: n,
-    isGIF: c,
-    banner: s
+    isGIF: s,
+    banner: c
   }) : null
 }

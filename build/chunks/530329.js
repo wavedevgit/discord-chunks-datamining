@@ -7,8 +7,8 @@ var i = n(200651),
   r = n(120356),
   a = n.n(r),
   l = n(53691),
-  c = n(378879),
-  s = n(981631),
+  s = n(378879),
+  c = n(981631),
   d = n(486324),
   u = n(388032),
   _ = n(511895);
@@ -33,9 +33,9 @@ function g(e) {
     return o
   }(e, ["uploadType", "className"]);
   let g = o.useCallback(() => {
-      (0, c.s)(t, void 0)
+      (0, s.s)(t, void 0)
     }, [t]),
-    b = o.useMemo(() => {
+    f = o.useMemo(() => {
       switch (t) {
         case d.pC.AVATAR:
           return u.NW.format(u.t["pvw/HB"], {
@@ -67,10 +67,10 @@ function g(e) {
     }
     return e
   }({
-    text: b,
+    text: f,
     button: u.NW.string(u.t.BmJkbW),
     buttonAnalyticsObject: {
-      section: s.jXE.USER_PROFILE
+      section: c.jXE.USER_PROFILE
     },
     className: a()(_.container, n)
   }, r))

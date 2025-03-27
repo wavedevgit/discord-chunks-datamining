@@ -142,6 +142,7 @@ class el extends i.Component {
       v = et(e, ["colorString", "colorRoleName", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]),
       y = null != b ? new Date(b) : null;
     return (0, r.jsx)(m.yRy, {
+      clickTrap: !0,
       preload: () => (0, D.Z)(o, {
         channelId: p.id,
         guildId: h
