@@ -726,26 +726,28 @@ function eh(e) {
     popoutPosition: d = "bottom",
     popoutAlign: p = "right",
     subscribeToGlobalHotkey: m = !1
-  } = e, [g, b] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), _ = l.useCallback(() => b(e => !e), []);
-  l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, _), () => {
-    V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, _)
-  }), [m, _]);
-  let C = (0, h.e7)([F.default], () => F.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  } = e, g = l.useRef(null), [b, _] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), C = l.useCallback(() => _(e => !e), []);
+  l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, C), () => {
+    V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, C)
+  }), [m, C]);
+  let v = (0, h.e7)([F.default], () => F.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return (l.useEffect(() => {
     (0, A._)()
-  }, []), null !== (t = null == C ? void 0 : C.bot) && void 0 !== t && t || null !== (n = null == C ? void 0 : C.isProvisional) && void 0 !== n && n) ? null : (0, i.jsx)(f.yRy, {
+  }, []), null !== (t = null == v ? void 0 : v.bot) && void 0 !== t && t || null !== (n = null == v ? void 0 : v.isProvisional) && void 0 !== n && n) ? null : (0, i.jsx)(f.yRy, {
+    targetElementRef: g,
     renderPopout: e => (0, i.jsx)(ep, ei(er({}, e), {
       onClose: e.closePopout,
       channel: r
     })),
     position: d,
-    shouldShow: g,
+    shouldShow: b,
     align: p,
-    onRequestClose: () => b(!1),
+    onRequestClose: () => _(!1),
     animation: f.yRy.Animation.NONE,
     clickTrap: !0,
     children: e => (0, i.jsx)(X.ZP.Icon, ei(er({}, e), {
-      onClick: _,
+      ref: g,
+      onClick: C,
       icon: null != s ? s : null == r ? f.kL_ : f.ejJ,
       className: a,
       iconClassName: o,
