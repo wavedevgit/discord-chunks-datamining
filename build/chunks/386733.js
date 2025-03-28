@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(100527),
   d = n(906732),
   u = n(518950),
@@ -66,25 +66,25 @@ let I = e => {
       eventHandlers: s
     } = (0, u.Z)({
       user: t,
-      size: o.EFr.SIZE_32,
+      size: l.EFr.SIZE_32,
       animateOnHover: !0
-    }), a = null != t, l = a ? (0, r.jsx)(o.qEK, v({
+    }), a = null != t, o = a ? (0, r.jsx)(l.qEK, v({
       src: i,
       "aria-label": t.username,
-      size: o.EFr.SIZE_32
-    }, s)) : (0, r.jsx)(o.X6q, {
+      size: l.EFr.SIZE_32
+    }, s)) : (0, r.jsx)(l.X6q, {
       variant: "heading-md/semibold",
       className: C.userAvatarProgressBarUnitNum,
       children: n
     });
-    return (0, r.jsx)(o.ua7, {
+    return (0, r.jsx)(l.ua7, {
       text: O.NW.string(O.t.UnKHdn),
       shouldShow: !a,
       tooltipContentClassName: C.unsentTooltipContent,
       children: e => (0, r.jsx)("div", T(v({
         className: C.userAvatarProgressBarUnit
       }, e), {
-        children: l
+        children: o
       }))
     })
   },
@@ -132,7 +132,7 @@ let I = e => {
   P = e => {
     let {
       isInSettings: t = !1
-    } = e, s = (0, l.e7)([f.Z], () => f.Z.getRecipientStatus()), {
+    } = e, s = (0, o.e7)([f.Z], () => f.Z.getRecipientStatus()), {
       referralSentUsers: u
     } = (0, b.G)(), I = i.useMemo(() => u.map(e => new m.Z(e)), [u]), {
       subscriberHomeVariant: y
@@ -166,7 +166,7 @@ let I = e => {
           })
         }), (0, r.jsxs)("div", {
           className: C.expandedProgressBarContent,
-          children: [(0, r.jsx)(o.X6q, {
+          children: [(0, r.jsx)(l.X6q, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: C.expandedProgressBarHeader,
             children: (0, E.$s)({
@@ -174,7 +174,7 @@ let I = e => {
             })
           }), (0, r.jsx)(A, {
             userRecords: I
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, E.Hg)({
               helpdeskArticle: Z,
@@ -185,20 +185,20 @@ let I = e => {
               [C.expandedProgressBarButtonContainerLayout]: !t
             }),
             children: [!t && !P && (0, r.jsx)(x.Z, {
-              color: o.Ttl.CUSTOM,
+              color: l.Ttl.CUSTOM,
               buttonText: O.NW.string(O.t.Ve9Ge3),
               className: a()(C.expandedProgressBarGiftingCTA, {
                 [C.expandedProgressBarGiftingCTALayout]: !t
               }),
-              look: o.iLD.OUTLINED,
+              look: l.iLD.OUTLINED,
               isGift: !0
-            }), (0, r.jsx)(o.gtL, {
+            }), (0, r.jsx)(l.gtL, {
               className: C.expandedProgressBarSelectFriendsCTA,
-              color: o.Ttl.CUSTOM,
+              color: l.Ttl.CUSTOM,
               onClick: () => {
                 g.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                   location_stack: w
-                }), (0, o.ZDy)(async () => {
+                }), (0, l.ZDy)(async () => {
                   let {
                     default: e
                   } = await n.e("47435").then(n.bind(n, 204387));

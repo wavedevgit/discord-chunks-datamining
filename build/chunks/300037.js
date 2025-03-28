@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(399606),
-  l = n(481060),
-  o = n(975298),
+  o = n(481060),
+  l = n(975298),
   c = n(565138),
   d = n(623624),
   u = n(678558),
@@ -27,12 +27,12 @@ let _ = function(e) {
     boostingVariant: i
   } = e, _ = (0, a.e7)([g.Z], () => g.Z.getGuild(n), [n]), E = (0, a.e7)([p.default], () => p.default.getCurrentUser()), {
     fractionalState: j
-  } = (0, o.Z)(), O = (0, m.y)("guild_boosting_setting_guild_info_card", E, j);
+  } = (0, l.Z)(), O = (0, m.y)("guild_boosting_setting_guild_info_card", E, j);
   return null == _ ? (0, r.jsx)("div", {
     className: s()(t, x.guildContainer),
     children: (0, r.jsx)("div", {
       className: x.guildInfoContainer,
-      children: (0, r.jsx)(l.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-lg/bold",
         children: b.NW.string(b.t["6Kwwur"])
       })
@@ -45,7 +45,7 @@ let _ = function(e) {
       size: c.Z.Sizes.LARGER
     }), (0, r.jsxs)("div", {
       className: x.guildInfoContainer,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-lg/bold",
         children: _.name
       }), (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ let _ = function(e) {
           className: x.guildBoostBadge,
           width: 16,
           height: 16
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
           children: b.NW.format(b.t["pob/cH"], {
@@ -62,7 +62,7 @@ let _ = function(e) {
           })
         }), (0, r.jsx)("div", {
           className: x.separator
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
           children: (0, f.nW)(_.premiumTier, {
@@ -79,12 +79,12 @@ let _ = function(e) {
         objectType: N.Qqv.BUY
       },
       pauseAnimation: !0,
-      size: l.zxk.Sizes.MEDIUM,
-      color: l.zxk.Colors.PRIMARY,
+      size: o.zxk.Sizes.MEDIUM,
+      color: o.zxk.Colors.PRIMARY,
       buttonText: b.NW.string(b.t.aBHecH),
       disabled: O
-    }) : (0, r.jsx)(l.zxk, {
-      color: l.zxk.Colors.PRIMARY,
+    }) : (0, r.jsx)(o.zxk, {
+      color: o.zxk.Colors.PRIMARY,
       onClick: () => {
         (0, d.f)({
           guildId: _.id,
@@ -93,7 +93,7 @@ let _ = function(e) {
           }
         })
       },
-      size: l.zxk.Sizes.MEDIUM,
+      size: o.zxk.Sizes.MEDIUM,
       disabled: O,
       children: b.NW.string(b.t.KLOhbG)
     })]

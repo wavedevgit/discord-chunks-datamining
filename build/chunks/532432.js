@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(704215),
-  o = n(481060),
+  o = n(704215),
+  l = n(481060),
   c = n(243778),
   d = n(643879),
   u = n(373230),
@@ -37,11 +37,11 @@ function E(e) {
     isTryItOutFlow: v = !1,
     forcedDivider: T,
     withHighlight: I = !1
-  } = e, y = I ? o.gtL : o.zxk, A = (0, u.Tq)({
+  } = e, y = I ? l.gtL : l.zxk, A = (0, u.Tq)({
     location: "AvatarSection"
   }), P = [];
-  A && P.push(l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
-  let [R, D] = (0, c.US)(P), Z = R === l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = (0, m._)(), {
+  A && P.push(o.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
+  let [R, D] = (0, c.US)(P), Z = R === o.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = (0, m._)(), {
     recentAvatarsLimit: k
   } = (0, d.pC)(w), W = i.useCallback(() => {
     D(f.L.TAKE_ACTION), (0, p.$r)(N.pC.AVATAR, O, v, v ? _ : void 0)
@@ -65,14 +65,14 @@ function E(e) {
         className: a()({
           [x.buttonHighlighted]: I
         }),
-        size: o.zxk.Sizes.SMALL,
+        size: l.zxk.Sizes.SMALL,
         onClick: W,
         children: null != j ? j : b.NW.string(b.t["4OynCA"])
-      }), t && (0, r.jsx)(o.zxk, {
+      }), t && (0, r.jsx)(l.zxk, {
         className: x.removeButton,
-        color: o.zxk.Colors.PRIMARY,
-        look: o.zxk.Looks.LINK,
-        size: o.zxk.Sizes.SMALL,
+        color: l.zxk.Colors.PRIMARY,
+        look: l.zxk.Looks.LINK,
+        size: l.zxk.Sizes.SMALL,
         onClick: () => s(null),
         children: null != O ? b.NW.string(b.t.TDjKDg) : b.NW.string(b.t.twB3f3)
       })]

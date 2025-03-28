@@ -6,16 +6,16 @@ var r = n(200651),
   i = n(442837),
   s = n(481060),
   a = n(626562),
-  l = n(885110),
-  o = n(51144),
+  o = n(885110),
+  l = n(51144),
   c = n(231338),
   d = n(388032),
   u = n(323552);
 
 function m() {
   var e;
-  let t = (0, i.e7)([l.Z], () => l.Z.getStatus()),
-    n = null !== (e = (0, o.u5)(t)) && void 0 !== e ? e : "",
+  let t = (0, i.e7)([o.Z], () => o.Z.getStatus()),
+    n = null !== (e = (0, l.u5)(t)) && void 0 !== e ? e : "",
     m = t === c.Sk.INVISIBLE || t === c.Sk.OFFLINE,
     g = (0, a.V)({
       location: "AccountProfilePopoutMenuItemStatusLabel"

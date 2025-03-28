@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(120356),
   s = n.n(i),
   a = n(84735),
-  l = n(993365),
-  o = n(429854);
+  o = n(993365),
+  l = n(429854);
 
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -104,13 +104,13 @@ function g(e) {
   return (0, r.jsx)(a.t, d(c({}, N), {
     children: (0, r.jsxs)("button", d(c({
       role: t,
-      className: s()(o.button, o[i], o[n])
+      className: s()(l.button, l[i], l[n])
     }, b), {
-      children: [null != p && "start" === h && (0, r.jsx)(x, {}), (0, r.jsx)(l.x, {
+      children: [null != p && "start" === h && (0, r.jsx)(x, {}), (0, r.jsx)(o.x, {
         tag: "span",
         variant: u[i],
         color: "none",
-        className: o.text,
+        className: l.text,
         lineClamp: 1,
         children: g
       }), null != p && "end" === h && (0, r.jsx)(x, {})]

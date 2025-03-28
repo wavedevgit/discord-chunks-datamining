@@ -7,8 +7,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(512969),
-  o = n(351773),
+  o = n(512969),
+  l = n(351773),
   c = n(100527),
   d = n(906732),
   u = n(335131),
@@ -38,7 +38,7 @@ let O = {
       className: T
     } = e, {
       balance: I
-    } = (0, p.A)(), [y, A] = i.useState(h.b.DEFAULT), [P, R] = i.useState(!1), [D, Z] = i.useState(!1), w = (0, l.TH)(), {
+    } = (0, p.A)(), [y, A] = i.useState(h.b.DEFAULT), [P, R] = i.useState(!1), [D, Z] = i.useState(!1), w = (0, o.TH)(), {
       analyticsLocations: k
     } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), W = i.useRef(null), {
       shouldOpen: L
@@ -51,7 +51,7 @@ let O = {
       isCoachmarkEnabled: C,
       onCloseCallback: x.dG4,
       onClickPill: x.dG4,
-      linkOnClick: () => {
+      secondaryCtaOnClick: () => {
         (0, m.navigateToQuestHome)()
       },
       ctaOnClick: () => {
@@ -75,7 +75,7 @@ let O = {
       V = i.useCallback(() => {
         P && U()
       }, [P, U]),
-      G = (0, o.Z)(null, V);
+      G = (0, l.Z)(null, V);
     return (0, r.jsxs)("div", {
       className: a()(j.container, T, {
         [j.hidden]: D,

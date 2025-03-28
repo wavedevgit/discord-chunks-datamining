@@ -6,17 +6,17 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(78839),
-  o = n(851718),
+  o = n(78839),
+  l = n(851718),
   c = n(388032),
   d = n(250076);
 
 function u(e) {
   let {
     onGoBack: t
-  } = e, n = (0, s.Wu)([l.ZP], () => {
+  } = e, n = (0, s.Wu)([o.ZP], () => {
     var e, t;
-    return null !== (t = null === (e = l.ZP.getActiveApplicationSubscriptions()) || void 0 === e ? void 0 : e.slice().sort((e, t) => {
+    return null !== (t = null === (e = o.ZP.getActiveApplicationSubscriptions()) || void 0 === e ? void 0 : e.slice().sort((e, t) => {
       var n, r, i, s;
       return (null !== (i = null === (n = e.createdAt) || void 0 === n ? void 0 : n.getTime()) && void 0 !== i ? i : e.currentPeriodStart.getTime()) - (null !== (s = null === (r = t.createdAt) || void 0 === r ? void 0 : r.getTime()) && void 0 !== s ? s : t.currentPeriodStart.getTime())
     })) && void 0 !== t ? t : []
@@ -27,7 +27,7 @@ function u(e) {
   })), (0, r.jsxs)("div", {
     children: [a, (0, r.jsx)("div", {
       className: d.subscriptionsContainer,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(l.Z, {
         subscriptions: n,
         updateHeader: (e, t) => {
           u((0, r.jsx)(m, {

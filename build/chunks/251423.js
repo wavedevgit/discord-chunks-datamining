@@ -1,17 +1,17 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  L: () => o
+  L: () => l
 });
 var r = n(192379),
   i = n(442837),
   s = n(570140),
   a = n(480387),
-  l = n(726745);
+  o = n(726745);
 
-function o() {
-  let e = (0, i.cj)([l.Z], () => ({
-    isLoading: l.Z.getIsValidatingUsers(),
-    multiAccountUsers: l.Z.getUsers()
+function l() {
+  let e = (0, i.cj)([o.Z], () => ({
+    isLoading: o.Z.getIsValidatingUsers(),
+    multiAccountUsers: o.Z.getUsers()
   }));
   return r.useEffect(() => {
     s.Z.wait(() => {

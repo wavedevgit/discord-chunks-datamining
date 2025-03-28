@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(442837),
-  l = n(780384),
-  o = n(481060),
+  o = n(780384),
+  l = n(481060),
   c = n(846027),
   d = n(600164),
   u = n(313201),
@@ -68,38 +68,38 @@ function I(e) {
   }), g.push({
     name: E.NW.string(E.t.wkYAl5),
     value: 0
-  }), (0, r.jsxs)(o.hjN, {
+  }), (0, r.jsxs)(l.hjN, {
     className: t ? void 0 : j.marginBottom20,
-    children: [(0, r.jsx)(o.vwX, {
+    children: [(0, r.jsx)(l.vwX, {
       id: S,
-      tag: o.RB0.H3,
+      tag: l.RB0.H3,
       className: j.marginBottom8,
       children: E.NW.string(E.t.t8QhiY)
-    }), (0, r.jsx)(o.R94, {
-      type: o.R94.Types.DESCRIPTION,
+    }), (0, r.jsx)(l.R94, {
+      type: l.R94.Types.DESCRIPTION,
       className: j.marginBottom8,
       children: E.NW.string(E.t.najZCQ)
-    }), (0, r.jsx)(o.FXm, {
+    }), (0, r.jsx)(l.FXm, {
       options: g,
       onChange: e => {
         c.Z.setNoiseCancellation(2 === e.value, v), c.Z.setNoiseSuppression(1 === e.value, v)
       },
       value: i ? 2 : +!!s
-    }), m && (0, r.jsx)(o.ToO, {
+    }), m && (0, r.jsx)(l.ToO, {
       className: j.marginBottom8,
-      type: o.Dd5.PRIMARY,
+      type: l.Dd5.PRIMARY,
       imageData: {
-        src: (0, l.ap)(n) ? O : C,
+        src: (0, o.ap)(n) ? O : C,
         width: 70,
         height: 40
       },
       align: d.Z.Align.CENTER,
-      body: (0, r.jsx)(o.eee, {
+      body: (0, r.jsx)(l.eee, {
         href: f.Z.getArticleURL(_.BhN.NOISE_SUPPRESSION),
         onClick: T,
         children: E.NW.string(E.t.hvVgAQ)
       })
-    }), t ? null : (0, r.jsx)(o.$i$, {})]
+    }), t ? null : (0, r.jsx)(l.$i$, {})]
   })
 }
 
@@ -109,7 +109,7 @@ function y(e) {
   } = e, {
     inputMode: n,
     inputDeviceId: i,
-    echoCancellation: l,
+    echoCancellation: o,
     automaticGainControl: d,
     vadAutoThreshold: u,
     vadUseKrisp: h
@@ -129,15 +129,15 @@ function y(e) {
     hasNoiseSuppression: g.Z.hasNoiseSuppression(i),
     hasAutomaticGainControl: g.Z.hasAutomaticGainControl(i)
   }), [i]), C = n === _.pM4.VOICE_ACTIVITY && u, S = (0, r.jsxs)(b.Z, {
-    children: [(f || N || O) && (0, r.jsx)(o.R94, {
+    children: [(f || N || O) && (0, r.jsx)(l.R94, {
       className: t ? void 0 : j.marginBottom20,
-      type: o.R94.Types.DESCRIPTION,
+      type: l.R94.Types.DESCRIPTION,
       children: E.NW.string(E.t["/Whuzs"])
     }), (0, r.jsx)(m.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
-      children: (0, r.jsx)(o.j7V, {
+      children: (0, r.jsx)(l.j7V, {
         className: t ? void 0 : s()(j.marginTop8, j.marginBottom20),
-        value: l,
+        value: o,
         onChange: e => c.Z.setEchoCancellation(e, {
           page: _.ZY5.USER_SETTINGS,
           section: _.jXE.SETTINGS_VOICE_AND_VIDEO
@@ -153,7 +153,7 @@ function y(e) {
       })
     }), (0, r.jsx)(m.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
-      children: (0, r.jsx)(o.j7V, {
+      children: (0, r.jsx)(l.j7V, {
         value: h,
         onChange: e => c.Z.setMode(n, {
           vadUseKrisp: e
@@ -165,7 +165,7 @@ function y(e) {
       })
     }), (0, r.jsx)(m.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
-      children: (0, r.jsx)(o.j7V, {
+      children: (0, r.jsx)(l.j7V, {
         value: d,
         onChange: e => c.Z.setAutomaticGainControl(e, {
           page: _.ZY5.USER_SETTINGS,
@@ -178,7 +178,7 @@ function y(e) {
       })
     })]
   });
-  return t ? S : (0, r.jsx)(o.hjN, {
+  return t ? S : (0, r.jsx)(l.hjN, {
     className: j.marginBottom20,
     title: E.NW.string(E.t["6I6GUl"]),
     children: S

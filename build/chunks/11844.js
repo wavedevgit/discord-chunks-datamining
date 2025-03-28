@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(399606),
   a = n(481060),
-  l = n(906732),
-  o = n(975298),
+  o = n(906732),
+  l = n(975298),
   c = n(125529),
   d = n(879892),
   u = n(124570),
@@ -53,11 +53,11 @@ let _ = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
-    } = (0, l.ZP)(),
+    } = (0, o.ZP)(),
     _ = (0, s.e7)([m.default], () => m.default.getCurrentUser()),
     {
       fractionalState: E
-    } = (0, o.Z)(),
+    } = (0, l.Z)(),
     j = (0, u.y)("guild_boosting_boost_cta", _, E);
 
   function O(n) {

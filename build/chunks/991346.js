@@ -10,8 +10,8 @@ var r = n(192379),
   i = n(442837),
   s = n(704215),
   a = n(493544),
-  l = n(634894),
-  o = n(211242),
+  o = n(634894),
+  l = n(211242),
   c = n(924557),
   d = n(706140),
   u = n(704454),
@@ -91,10 +91,10 @@ function V() {
     U = (0, c.Go)(),
     [V] = (0, d.cv)(U ? [s.z.CLIPS_SETTINGS_BETA_TAG] : []),
     G = "useGenerateUserSettingsSections";
-  (0, l.j)({
+  (0, o.j)({
     location: G + " auto on",
     autoTrackExposure: !0
-  }), (0, l.j)({
+  }), (0, o.j)({
     location: G + " auto off",
     autoTrackExposure: !1
   });
@@ -108,7 +108,7 @@ function V() {
     location: "settings"
   }), K = (0, O.v4)({
     location: "settings"
-  }), q = (0, o.Q)(), X = (0, E.Zy)({
+  }), q = (0, l.Q)(), X = (0, E.Zy)({
     location: B.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), {
     enabled: J
@@ -126,10 +126,10 @@ function V() {
   } = (0, i.cj)([I.Z], () => ({
     hasBlockedUsers: I.Z.getBlockedIDs().length > 0,
     hasIgnoredUsers: I.Z.getIgnoredIDs().length > 0
-  })), el = (0, m.B)({
+  })), eo = (0, m.B)({
     location: "SettingRendererUtils"
   }), {
-    showRefreshedSettings: eo
+    showRefreshedSettings: el
   } = (0, w.F)({
     location: "SettingRendererUtils",
     autoTrackExposure: !1
@@ -158,10 +158,10 @@ function V() {
     hypeSquadRemoved: en,
     hasIgnoredUsers: ea,
     hasBlockedUsers: es,
-    isAllowGameFriendDMsVisible: el,
-    useRefreshedVoiceAndVideo: eo,
+    isAllowGameFriendDMsVisible: eo,
+    useRefreshedVoiceAndVideo: el,
     isEligibleForSensitiveContentDefaults: ec
-  }), [ee, V, es, ea, Q, ei, $, en, W, er, el, X, K, Y, H, M, z, et, L, q, F, J, R, v, eo, ec])
+  }), [ee, V, es, ea, Q, ei, $, en, W, er, eo, X, K, Y, H, M, z, et, L, q, F, J, R, v, el, ec])
 }
 
 function G(e) {
@@ -181,20 +181,20 @@ function G(e) {
       parent: n
     }] = e;
     return [t, n]
-  })), a = new Set, l = e => {
+  })), a = new Set, o = e => {
     let t = i[e];
     if (null == t) return;
     a.add(e);
     let n = t.parent;
-    null != n && l(n)
-  }, o = e => {
+    null != n && o(n)
+  }, l = e => {
     for (let t of (a.add(e), Object.entries(s).filter(t => {
         let [n, r] = t;
         return r === e
       }).map(e => {
         let [t] = e;
         return t
-      }))) o(t)
+      }))) l(t)
   };
   for (let e of t.filter(e => e in i))
     if (!a.has(e)) {
@@ -202,7 +202,7 @@ function G(e) {
         a.clear();
         break
       }
-      Object.values(s).includes(e) && o(e), l(e)
+      Object.values(s).includes(e) && l(e), o(e)
     } return a
 }
 

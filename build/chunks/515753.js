@@ -23,8 +23,8 @@ var l = n(200651),
   O = n(326255),
   g = n(956221),
   S = n(747017),
-  T = n(385499),
-  I = n(570908),
+  I = n(385499),
+  T = n(570908),
   N = n(702321),
   b = n(201895),
   v = n(43267),
@@ -174,7 +174,7 @@ let et = Y.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
       "aria-posinset": O,
       "aria-setsize": g,
       listItemRef: S
-    } = e, T = ee(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+    } = e, I = ee(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     let N = (0, L.Q3)("PrivateChannelLinkButton");
     return (0, l.jsx)(P.Z, {
       className: o()(X.channel, {
@@ -200,8 +200,8 @@ let et = Y.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
             state: p
           },
           className: X.link
-        }, T), {
-          children: [(0, l.jsx)(I.Z, {
+        }, I), {
+          children: [(0, l.jsx)(T.Z, {
             selected: n,
             muted: !1,
             avatar: (0, l.jsx)(r, {
@@ -254,9 +254,9 @@ function es(e) {
   }, eS = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     null != e && (e.preventDefault(), e.stopPropagation()), p.Z.closePrivateChannel(i.id, d, t)
-  }, eT = () => {
+  }, eI = () => {
     p.Z.preload(Q.ME, i.id)
-  }, eI = e => {
+  }, eT = e => {
     e.stopPropagation()
   }, eN = e => {
     if (e.target === e.currentTarget) {
@@ -380,7 +380,7 @@ function es(e) {
         onBlur: () => ew(!1),
         onMouseEnter: eO,
         onMouseLeave: eg,
-        onMouseDown: eT,
+        onMouseDown: eI,
         onContextMenu: eb,
         "aria-setsize": z,
         "aria-posinset": B,
@@ -412,7 +412,7 @@ function es(e) {
               unread: eh
             })
           }, n), {
-            children: (0, l.jsx)(I.Z, {
+            children: (0, l.jsx)(T.Z, {
               ref: eG,
               avatar: eA(),
               selected: d,
@@ -423,16 +423,16 @@ function es(e) {
                 tooltipClassName: X.overflowTooltip,
                 children: eU
               }),
-              decorators: i.isSystemDM() ? (0, l.jsx)(T.Z, {
+              decorators: i.isSystemDM() ? (0, l.jsx)(I.Z, {
                 className: X.decorator,
-                type: T.Z.Types.SYSTEM_DM,
+                type: I.Z.Types.SYSTEM_DM,
                 verified: !0
               }) : null
             })
           })), e_ ? (0, l.jsx)(er, {}) : null, eZ ? (0, l.jsx)(ei, {}) : null, eD ? (0, l.jsx)(eo, {}) : null, (0, l.jsx)(el, {
             "aria-label": eP ? q.NW.string(q.t["26C4oq"]) : q.NW.string(q.t.jsvgc3),
             onClick: eP ? ev : eS,
-            onMouseDown: eI,
+            onMouseDown: eT,
             nameplate: H
           })]
         })

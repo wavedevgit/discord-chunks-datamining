@@ -7,8 +7,8 @@ n(192379);
 var i = n(525654),
   s = n.n(i),
   a = n(481060),
-  l = n(579806),
-  o = n(304761),
+  o = n(579806),
+  l = n(304761),
   c = n(320161),
   d = n(998502),
   u = n(388032),
@@ -17,17 +17,17 @@ var i = n(525654),
 function g() {
   var e, t, n, i, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "383701",
-    f = "0e7cfead9e53fb54be29bee1e96960c0d48226cf".substring(0, 7),
-    N = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
-    b = null === l.Z || void 0 === l.Z ? void 0 : null === (e = (t = l.Z.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t),
-    x = null === l.Z || void 0 === l.Z ? void 0 : null === (n = (i = l.Z.remoteApp).getAppArch) || void 0 === n ? void 0 : n.call(i),
-    _ = null === (g = o.C.getCurrentBuildOverride().overrides) || void 0 === g ? void 0 : g.discord_web,
+    h = "383748",
+    f = "cd6657c3ea6edd2625f2eb9a4d85c76da175de6d".substring(0, 7),
+    N = null === o.Z || void 0 === o.Z ? void 0 : o.Z.remoteApp.getVersion(),
+    b = null === o.Z || void 0 === o.Z ? void 0 : null === (e = (t = o.Z.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t),
+    x = null === o.Z || void 0 === o.Z ? void 0 : null === (n = (i = o.Z.remoteApp).getAppArch) || void 0 === n ? void 0 : n.call(i),
+    _ = null === (g = l.C.getCurrentBuildOverride().overrides) || void 0 === g ? void 0 : g.discord_web,
     E = function() {
       var e;
       let t = null === s() || void 0 === s() ? void 0 : null === (e = s().os) || void 0 === e ? void 0 : e.toString();
-      if (null == t || null == l.Z) return null;
-      let n = l.Z.os.release,
+      if (null == t || null == o.Z) return null;
+      let n = o.Z.os.release,
         [r, i, a] = d.ZP.parsedOSRelease;
       return t.includes("Windows 10") && void 0 !== a && a >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== r && r >= 20 && (t = "macOS ".concat(r - 9)), "".concat(t, " (").concat(n, ")")
     }(),

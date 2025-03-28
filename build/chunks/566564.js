@@ -174,7 +174,7 @@ let S = e => {
           numVisibleItems: i,
           isFetchingCategories: v,
           tab: g
-        }), g === y.AW.HOME && i >= w && (0, r.jsxs)("div", {
+        }), g !== y.AW.CATALOG && i >= w && (0, r.jsxs)("div", {
           className: k.endOfFeed,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",

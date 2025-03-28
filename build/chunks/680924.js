@@ -9,8 +9,8 @@ var i = n(481060),
 
 function a(e, t, n) {
   (0, i.h7j)(a => {
-    var l, o;
-    return (0, r.jsx)(i.ConfirmModal, (l = function(e) {
+    var o, l;
+    return (0, r.jsx)(i.ConfirmModal, (o = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -32,20 +32,20 @@ function a(e, t, n) {
       confirmText: s.NW.string(s.t.BddRzc),
       cancelText: s.NW.string(s.t["ETE/oK"]),
       onConfirm: n
-    }, a), o = o = {
+    }, a), l = l = {
       children: (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         children: t
       })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(o)).forEach(function(e) {
-      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-    }), l))
+    })(Object(l)).forEach(function(e) {
+      Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
+    }), o))
   })
 }

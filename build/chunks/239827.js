@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(388032),
+  o = n(481060),
+  l = n(388032),
   c = n(856909);
 let d = i.forwardRef(function(e, t) {
   var n, i, {
@@ -58,40 +58,40 @@ let d = i.forwardRef(function(e, t) {
   }, h), i = i = {
     children: [m, (0, r.jsxs)("div", {
       className: c.pageActions,
-      children: [(0, r.jsx)(l.P3F, {
+      children: [(0, r.jsx)(o.P3F, {
         className: a()(c.pageButtonPrev, {
           [c.disabled]: f
         }),
         tabIndex: f ? -1 : 0,
         onClick: f ? void 0 : () => u(s - 1),
-        children: (0, r.jsx)(l.V7D, {
+        children: (0, r.jsx)(o.V7D, {
           size: "md",
           color: "currentColor",
           className: c.pageButtonIcon,
-          "aria-label": o.NW.string(o.t.vgfxaG)
+          "aria-label": l.NW.string(l.t.vgfxaG)
         })
       }), p ? (0, r.jsx)("div", {
         className: c.pageIndicator,
-        children: o.NW.format(o.t.MtpIws, {
+        children: l.NW.format(l.t.MtpIws, {
           currentPage: s + 1,
           numPages: d
         })
       }) : (0, r.jsx)("div", {
         className: c.pageIndicator,
-        children: o.NW.format(o.t.bKI77e, {
+        children: l.NW.format(l.t.bKI77e, {
           currentPage: s + 1
         })
-      }), (0, r.jsx)(l.P3F, {
+      }), (0, r.jsx)(o.P3F, {
         className: a()(c.pageButtonNext, {
           [c.disabled]: N
         }),
         tabIndex: N ? -1 : 0,
         onClick: N ? void 0 : () => u(s + 1),
-        children: (0, r.jsx)(l.Fbu, {
+        children: (0, r.jsx)(o.Fbu, {
           size: "md",
           color: "currentColor",
           className: c.pageButtonIcon,
-          "aria-label": o.NW.string(o.t.XiOHRU)
+          "aria-label": l.NW.string(l.t.XiOHRU)
         })
       })]
     })]

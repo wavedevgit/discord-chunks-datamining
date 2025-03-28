@@ -7,8 +7,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(938839);
+  o = n(481060),
+  l = n(938839);
 
 function c(e) {
   let {
@@ -19,18 +19,18 @@ function c(e) {
     id: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(o.inputItem, s),
+    className: a()(l.inputItem, s),
     children: [(0, r.jsxs)("div", {
-      className: o.inputItemText,
-      children: [(0, r.jsx)(l.Text, {
+      className: l.inputItemText,
+      children: [(0, r.jsx)(o.Text, {
         tag: "label",
         variant: "text-md/medium",
-        className: o.inputItemTitle,
+        className: l.inputItemTitle,
         id: c,
         children: t
-      }), null != n && (0, r.jsx)(l.R94, {
-        className: o.__invalid_note,
-        type: l.R94.Types.DESCRIPTION,
+      }), null != n && (0, r.jsx)(o.R94, {
+        className: l.__invalid_note,
+        type: o.R94.Types.DESCRIPTION,
         children: n
       })]
     }), i]
@@ -79,9 +79,9 @@ function d(e) {
     return e
   }({}, g), n = n = {
     id: p,
-    children: (0, r.jsx)(l.PhF, {
+    children: (0, r.jsx)(o.PhF, {
       "aria-labelledby": p,
-      className: a()(o.selectControl, m),
+      className: a()(l.selectControl, m),
       options: s,
       isSelected: e => e === d,
       select: u,

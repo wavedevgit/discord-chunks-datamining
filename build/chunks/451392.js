@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(498607),
-  l = n.n(a),
-  o = n(692547),
+  o = n.n(a),
+  l = n(692547),
   c = n(481060),
   d = n(220082),
   u = n(687158),
@@ -39,10 +39,10 @@ function b(e) {
     displayProfile: C,
     pendingThemeColors: i,
     isPreview: !0
-  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
+  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
   if (null == S || null == v) return null;
   let P = e => {
-    a(l()(e, null == C ? void 0 : C.themeColors) ? void 0 : e)
+    a(o()(e, null == C ? void 0 : C.themeColors) ? void 0 : e)
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),

@@ -21,12 +21,12 @@ var l = n(192379),
   O = n(496675),
   g = n(306680),
   S = n(944486),
-  T = n(9156),
-  I = n(823379),
+  I = n(9156),
+  T = n(823379),
   N = n(540126),
   b = n(647086),
   v = n(231338);
-let m = [a.ZP, s.Z, u.ZP, d.Z, E.Z, p.Z, h.Z, _.Z, O.Z, g.ZP, S.Z, T.ZP];
+let m = [a.ZP, s.Z, u.ZP, d.Z, E.Z, p.Z, h.Z, _.Z, O.Z, g.ZP, S.Z, I.ZP];
 
 function A() {
   let [e, t] = l.useState(() => P());
@@ -38,7 +38,7 @@ function A() {
 
 function P() {
   let e = s.Z.getFavoriteChannels(),
-    t = T.ZP.isGuildCollapsed(b._),
+    t = I.ZP.isGuildCollapsed(b._),
     n = S.Z.getChannelId(),
     l = h.Z.getChannel(n),
     r = S.Z.getVoiceChannelId(),
@@ -69,8 +69,8 @@ function P() {
         p = null !== (c = u || E || !a ? d.Z.getActiveJoinedRelevantThreadsForParent(n.guild_id, n.id) : d.Z.getActiveJoinedUnreadThreadsForParent(n.guild_id, n.id)) && void 0 !== c ? c : {},
         h = (0, N.zR)(n, p, l, r, t),
         _ = C.Z.isCollapsed(n.id),
-        S = T.ZP.isChannelMuted(n.guild_id, n.id),
-        I = {
+        S = I.ZP.isChannelMuted(n.guild_id, n.id),
+        T = {
           id: n.id,
           record: n,
           category: o,
@@ -82,8 +82,8 @@ function P() {
           isFirstVoiceChannel: !1,
           subtitle: (0, N.Bz)(n, _, !1)
         };
-      return u || E || !i().isEmpty(p) || g.ZP.getMentionCount(n.id) > 0 ? I : t && S || a && (S || s || (0, f.vd)(n.type) || (0, f.vc)(n.type) && !1 === g.ZP.hasUnread(n.id)) ? null : I
-    }).filter(I.lm).sortBy(e => {
+      return u || E || !i().isEmpty(p) || g.ZP.getMentionCount(n.id) > 0 ? T : t && S || a && (S || s || (0, f.vd)(n.type) || (0, f.vc)(n.type) && !1 === g.ZP.hasUnread(n.id)) ? null : T
+    }).filter(T.lm).sortBy(e => {
       let {
         record: t
       } = e;
@@ -108,7 +108,7 @@ function P() {
       let {
         id: n,
         order: l
-      } = e, r = s.Z.getCategoryRecord(n), i = null !== (t = u[n]) && void 0 !== t ? t : [], o = T.ZP.isChannelMuted(b._, n), a = p.Z.isCollapsed(n), c = null;
+      } = e, r = s.Z.getCategoryRecord(n), i = null !== (t = u[n]) && void 0 !== t ? t : [], o = I.ZP.isChannelMuted(b._, n), a = p.Z.isCollapsed(n), c = null;
       return {
         isMuted: o,
         isCollapsed: a,

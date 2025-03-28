@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(430824),
-  l = n(626135),
-  o = n(709054),
+  o = n(626135),
+  l = n(709054),
   c = n(88658),
   d = n(976978),
   u = n(695346),
@@ -28,7 +28,7 @@ function j(e) {
     guildId: n
   } = e, N = (0, m.c_)(), j = u.h2.useSetting().includes(n), O = (0, d.q)(), C = i.useCallback(e => {
     let r = (0, c.YK)();
-    e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), l.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), o.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.Y.DIRECT_MESSAGES_TOGGLE,
       ingress: t,
       guild_id: n
@@ -36,7 +36,7 @@ function j(e) {
   }, [n, t]);
 
   function S(e, t) {
-    l.default.track(_.rMx.GUILD_DEFAULT_DMS_UPDATED, {
+    o.default.track(_.rMx.GUILD_DEFAULT_DMS_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
@@ -52,7 +52,7 @@ function j(e) {
         u.gR.updateSetting(e), S(e, !1)
       },
       onCancel: () => {
-        u.gR.updateSetting(e), u.h2.updateSetting(e ? o.default.keys(a.Z.getGuilds()) : []), S(e, !0)
+        u.gR.updateSetting(e), u.h2.updateSetting(e ? l.default.keys(a.Z.getGuilds()) : []), S(e, !0)
       }
     })
   };

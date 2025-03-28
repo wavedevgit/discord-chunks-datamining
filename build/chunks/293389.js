@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(692547),
+  o = n(442837),
+  l = n(692547),
   c = n(481060),
   d = n(224706),
   u = n(225433),
@@ -60,7 +60,7 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = l.ZP.connectStores([E.Z], () => ({
+let P = o.ZP.connectStores([E.Z], () => ({
     theme: E.Z.theme
   }))(c.ubH),
   R = (0, _.isWindows)();
@@ -68,7 +68,7 @@ let P = l.ZP.connectStores([E.Z], () => ({
 function D(e) {
   let {
     onClose: t
-  } = e, n = (0, l.e7)([g.ZP], () => g.ZP.getCandidateGames()), [s, o] = i.useState(null), u = n.map(e => ({
+  } = e, n = (0, o.e7)([g.ZP], () => g.ZP.getCandidateGames()), [s, l] = i.useState(null), u = n.map(e => ({
     key: e.pid,
     value: e,
     label: null != e.name ? e.name : ""
@@ -81,7 +81,7 @@ function D(e) {
       value: s,
       options: u,
       onChange: function(e) {
-        o(e)
+        l(e)
       },
       renderOptionLabel: e => (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
@@ -116,7 +116,7 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: p
-  } = e, x = (0, l.cj)([g.ZP, f.Z, N.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, N.Z])), [_, E] = i.useState(!1), [S, I] = i.useState(null !== (t = x.name) && void 0 !== t ? t : "???"), P = a()(v.flexCenter, {
+  } = e, x = (0, o.cj)([g.ZP, f.Z, N.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, N.Z])), [_, E] = i.useState(!1), [S, I] = i.useState(null !== (t = x.name) && void 0 !== t ? t : "???"), P = a()(v.flexCenter, {
     [C.game]: !s,
     [C.activeGame]: s,
     [T.card]: !s,
@@ -151,13 +151,13 @@ function Z(e) {
           children: e => (0, r.jsx)(h.Z, A(y({
             className: C.gameVerifiedIcon,
             size: 18,
-            color: o.Z.unsafe_rawColors.BRAND_500.css
+            color: l.Z.unsafe_rawColors.BRAND_500.css
           }, e), {
             children: (0, r.jsx)(c.kmB, {
               size: "custom",
               width: 18,
               height: 18,
-              color: o.Z.unsafe_rawColors.WHITE_500.css
+              color: l.Z.unsafe_rawColors.WHITE_500.css
             })
           }))
         })]
@@ -338,10 +338,10 @@ let W = (0, x.oH)(function() {
     let {
       className: t,
       showHeader: n = !0
-    } = e, s = (0, l.Wu)([g.ZP], () => g.ZP.getGamesSeen(!0)), {
-      runningGame: o,
+    } = e, s = (0, o.Wu)([g.ZP], () => g.ZP.getGamesSeen(!0)), {
+      runningGame: l,
       overrideExePaths: d
-    } = (0, l.cj)([g.ZP], () => ({
+    } = (0, o.cj)([g.ZP], () => ({
       runningGame: g.ZP.getVisibleGame(),
       overrideExePaths: W(...g.ZP.getOverrides())
     }));
@@ -349,11 +349,11 @@ let W = (0, x.oH)(function() {
       tag: "h1",
       title: n ? O.NW.string(O.t.AVDyEh) : null,
       className: t,
-      children: [null != o ? (0, r.jsx)(Z, {
-        rawGame: o,
-        isOverride: d.has(o.exePath),
+      children: [null != l ? (0, r.jsx)(Z, {
+        rawGame: l,
+        isOverride: d.has(l.exePath),
         nowPlaying: !0
-      }, (0, g.rH)(o)) : (0, r.jsx)(w, {}), (0, r.jsxs)("div", {
+      }, (0, g.rH)(l)) : (0, r.jsx)(w, {}), (0, r.jsxs)("div", {
         className: a()(C.nowPlayingAdd, I.marginReset, I.marginTop8, I.marginBottom20),
         children: [(0, r.jsx)("span", {
           children: O.NW.string(O.t.xwhoqK)

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(100527),
-  l = n(906732),
-  o = n(626135),
+  o = n(906732),
+  l = n(626135),
   c = n(335131),
   d = n(196033),
   u = n(981631),
@@ -17,7 +17,7 @@ var r = n(200651),
 let h = () => {
   let {
     analyticsLocations: e
-  } = (0, l.ZP)(a.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = i.useRef(null), {
+  } = (0, o.ZP)(a.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = i.useRef(null), {
     asset: n,
     popoutAsset: h,
     title: f,
@@ -26,7 +26,7 @@ let h = () => {
     revertTextColor: x
   } = (0, d.W)();
   return i.useEffect(() => {
-    o.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
+    l.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
       type: m.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: e,
       version: b

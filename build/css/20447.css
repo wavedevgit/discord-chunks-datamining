@@ -1,6 +1,6 @@
 /**
   Module ID: 20447
-  Original File Name: 2324289dc4c07ef1
+  Original File Name: 82495085be8d8ef0
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -16809,11 +16809,7 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
 .ctaButton__4d8b6 {
     width: 100%;
     height: 40px;
-    border-radius: 8px
-}
-
-.theme-light .link__4d8b6 {
-    color: var(--neutral-100)
+    border-radius: var(--radius-sm)
 }
 
 .theme-light .coachmarkTailSpine__4d8b6 {
@@ -16825,8 +16821,11 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     background: var(--white)
 }
 
-.link__4d8b6 {
-    color: var(--neutral-1);
+.secondaryButton__4d8b6 {
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-sm);
+    background: var(--bg-mod-subtle);
+    color: var(--text-primary);
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -16862,4 +16861,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=2324289dc4c07ef1.css.map*/
+/*# sourceMappingURL=82495085be8d8ef0.css.map*/

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(693789),
   a = n(481060),
-  l = n(37234),
-  o = n(100527),
+  o = n(37234),
+  l = n(100527),
   c = n(906732),
   d = n(335131),
   u = n(703656),
@@ -57,7 +57,7 @@ function y() {
     }
   }, {
     analyticsLocations: y
-  } = (0, c.ZP)(o.Z.PAYMENT_FLOW_TEST_PAGE);
+  } = (0, c.ZP)(l.Z.PAYMENT_FLOW_TEST_PAGE);
   return (0, r.jsxs)(O.$0, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
@@ -82,10 +82,10 @@ function y() {
         })
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, o.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
-            analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
+            analyticsSource: l.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), setTimeout(() => {
             (0, m.S6)()
           }, 500)
@@ -112,10 +112,10 @@ function y() {
         })]
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, o.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
-            analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
+            analyticsSource: l.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), e({
             forceOpen: !0,
             delayMS: 200
@@ -348,7 +348,7 @@ function P() {
       label: "Balance Widget Coachmark",
       children: (0, r.jsx)(E.E, {
         ctaOnClick: C.dG4,
-        linkOnClick: C.dG4
+        secondaryCtaOnClick: C.dG4
       })
     })]
   })

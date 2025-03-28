@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(780384),
-  l = n(481060),
-  o = n(410030),
+  o = n(481060),
+  l = n(410030),
   c = n(607070),
   d = n(530618),
   u = n(74538),
@@ -28,7 +28,7 @@ function _(e) {
     confettiCanvas: E,
     userWasChurned: j = !1,
     userDiscountOffer: O
-  } = e, C = (0, o.ZP)(), S = (0, a.wj)(C) ? b : x, v = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, C = (0, l.ZP)(), S = (0, a.wj)(C) ? b : x, v = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
@@ -42,8 +42,8 @@ function _(e) {
     }),
     Z = (0, r.jsx)("div", {
       className: N.whatYouLoseButtonContainer,
-      children: (0, r.jsx)(l.zxk, {
-        color: l.zxk.Colors.BRAND,
+      children: (0, r.jsx)(o.zxk, {
+        color: o.zxk.Colors.BRAND,
         onClick: _,
         children: f.NW.string(f.t["/r8g/v"])
       })
@@ -55,7 +55,7 @@ function _(e) {
       onClose: _
     }), (0, r.jsx)("div", {
       ref: v,
-      children: (0, r.jsx)(l.hzk, {
+      children: (0, r.jsx)(o.hzk, {
         className: N.body,
         children: null != y ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("div", {
@@ -64,7 +64,7 @@ function _(e) {
               alt: "",
               src: S,
               className: N.nitroIcon
-            }), (0, r.jsx)(l.X6q, {
+            }), (0, r.jsx)(o.X6q, {
               variant: "heading-xl/bold",
               children: j ? f.NW.string(f.t.gOOPaG) : f.NW.string(f.t.PZSyRk)
             })]
@@ -72,7 +72,7 @@ function _(e) {
             className: N.bodyString,
             children: D
           }), Z]
-        }) : (0, r.jsx)(l.$jN, {})
+        }) : (0, r.jsx)(o.$jN, {})
       })
     }), !R && T && (0, r.jsx)(d.Z, {
       confettiTarget: v.current,

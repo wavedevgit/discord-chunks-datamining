@@ -2,7 +2,7 @@
 n.d(t, {
   ED: () => O,
   fO: () => S,
-  qp: () => T
+  qp: () => I
 }), n(47120);
 var l = n(200651),
   r = n(192379),
@@ -67,14 +67,14 @@ let O = e => (0, l.jsx)(E.tE, _({
     let c = r.useRef(null),
       [p, h] = r.useState(22),
       C = r.useRef(null),
-      T = (0, s.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
-      I = r.useCallback(e => {
-        if (T) {
+      I = (0, s.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
+      T = r.useCallback(e => {
+        if (I) {
           let t = window.innerHeight - ((0, E.t4)() + S.COACHMARK_VERTICAL_OFFSET);
           return e.top <= t
         }
         return !0
-      }, [T]),
+      }, [I]),
       N = (0, o.e7)([d.Z], () => d.Z.getExpandedFolders().size);
     r.useEffect(() => {
       null !== c.current && c.current.updateElementOffsetsWithPolling()
@@ -91,7 +91,7 @@ let O = e => (0, l.jsx)(E.tE, _({
       offsetControlRef: c,
       backgroundElementRef: n,
       coachmarkRef: C,
-      calculateVisibility: I,
+      calculateVisibility: T,
       calculateBaseOffsets: v,
       onGetBackgroundElementDimensions: m,
       children: (0, l.jsx)(O, _({
@@ -104,7 +104,7 @@ let O = e => (0, l.jsx)(E.tE, _({
     })
   };
 S.COACHMARK_VERTICAL_OFFSET = 10;
-let T = e => {
+let I = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,

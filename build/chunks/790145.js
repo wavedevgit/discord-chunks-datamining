@@ -8,7 +8,7 @@ var i = n(120356),
   s = n.n(i),
   a = n(311435);
 
-function l(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function l(e) {
   return e
 }
 
-function o(e, t) {
+function l(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,11 +60,11 @@ let c = e => {
     }
     return i
   }(e, ["value", "text", "className", "lowImportance"]);
-  return null != n ? (0, r.jsx)("div", o(l({
+  return null != n ? (0, r.jsx)("div", l(o({
     className: s()(a.wrapper, i, c && a.lowImportance)
   }, d), {
     children: n
-  })) : t > 0 ? (0, r.jsx)("div", o(l({
+  })) : t > 0 ? (0, r.jsx)("div", l(o({
     className: s()(a.wrapper, i, c && a.lowImportance)
   }, d), {
     children: t

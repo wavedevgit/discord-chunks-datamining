@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(906732),
+  o = n(481060),
+  l = n(906732),
   c = n(864106),
   d = n(1585),
   u = n(580747),
@@ -28,7 +28,7 @@ function N(e) {
     isTryItOutFlow: _ = !1
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(), j = null != n, {
+  } = (0, l.ZP)(), j = null != n, {
     userAvatarDecoration: O,
     guildAvatarDecoration: C,
     pendingAvatarDecoration: S,
@@ -37,7 +37,7 @@ function N(e) {
     analyticsLocations: E,
     isTryItOutFlow: _,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== S ? null != S : (j ? C : O) != null, A = x ? l.gtL : l.zxk;
+  }), [E, _, n]), y = _ || void 0 !== S ? null != S : (j ? C : O) != null, A = x ? o.gtL : o.zxk;
   return (0, r.jsxs)(p.Z, {
     className: s,
     forcedDivider: N,
@@ -47,17 +47,17 @@ function N(e) {
     children: [(0, r.jsxs)("div", {
       className: f.buttonsContainer,
       children: [(0, r.jsx)(A, {
-        size: l.zxk.Sizes.SMALL,
+        size: o.zxk.Sizes.SMALL,
         onClick: I,
         className: a()({
           [f.buttonHighlighted]: x
         }),
         children: h.NW.string(h.t["Tna/TU"])
-      }), y && (0, r.jsx)(l.zxk, {
+      }), y && (0, r.jsx)(o.zxk, {
         className: f.removeButton,
-        color: l.zxk.Colors.PRIMARY,
-        look: l.zxk.Looks.LINK,
-        size: l.zxk.Sizes.SMALL,
+        color: o.zxk.Colors.PRIMARY,
+        look: o.zxk.Looks.LINK,
+        size: o.zxk.Sizes.SMALL,
         onClick: function() {
           (0, g.PO)(null == n ? void 0 : n.id, null)
         },
@@ -74,7 +74,7 @@ let b = e => {
   } = e;
   return (0, r.jsxs)("div", {
     className: f.overrideButtonsContainer,
-    children: [(0, r.jsx)(l.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-xs/bold",
       children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
     }), (0, r.jsx)(m.Z, {

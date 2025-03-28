@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(622535),
+  o = n(442837),
+  l = n(622535),
   c = n(481060),
   d = n(607070),
   u = n(100527),
@@ -41,7 +41,7 @@ let S = e => {
       analyticsLocations: P
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [R, D] = i.useState(!1),
-    Z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
+    Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion),
     w = (0, _.mN)(),
     {
       fractionalState: k
@@ -119,7 +119,7 @@ let S = e => {
           })]
         }), (0, r.jsx)("div", {
           className: O.footerSpacing
-        }), (0, r.jsx)(o.$, {
+        }), (0, r.jsx)(l.$, {
           innerRef: y,
           onChange: e => {
             e && !R && (p.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {

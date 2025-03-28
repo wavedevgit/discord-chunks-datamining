@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(442837),
-  l = n(481060),
-  o = n(346951),
+  o = n(481060),
+  l = n(346951),
   c = n(644744),
   d = n(792423),
   u = n(674985),
@@ -30,14 +30,14 @@ function f() {
       isVerified: e.verified
     }
   });
-  return (0, r.jsxs)(l.y5t, {
+  return (0, r.jsxs)(o.y5t, {
     component: (0, r.jsxs)("div", {
       className: h.intro,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-xxl/semibold",
         className: h.introHeader,
         children: null == e ? p.NW.string(p.t.iZowCQ) : p.NW.string(p.t.e7fL7O)
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-lg/normal",
         children: p.NW.string(p.t["6FaVFB"])
       })]
@@ -50,7 +50,7 @@ function f() {
       houseMembership: e,
       isClaimed: t,
       isVerified: n
-    }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(d.Z, {
+    }), (0, r.jsx)(l.Z, {}), (0, r.jsx)(d.Z, {
       isHypeSquadOnlineMember: null != e
     })]
   })

@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   s = n(230711),
   a = n(63063),
-  l = n(74538),
-  o = n(937615),
+  o = n(74538),
+  l = n(937615),
   c = n(981631),
   d = n(474936),
   u = n(388032),
@@ -44,8 +44,8 @@ let g = function(e) {
       })
     };
     let m = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
-      g = l.ZP.getDefaultPrice(m.id, n),
-      p = (0, o.og)((0, o.T4)(g.amount, g.currency), m.interval, m.intervalCount);
+      g = o.ZP.getDefaultPrice(m.id, n),
+      p = (0, l.og)((0, l.T4)(g.amount, g.currency), m.interval, m.intervalCount);
     return {
       subtitle: n ? u.NW.string(u.t.bhPzXV) : u.NW.string(u.t.Zs9h9f),
       flavor: u.NW.formatToPlainString(u.t.PGgTdH, {

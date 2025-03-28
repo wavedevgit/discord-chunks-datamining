@@ -6,16 +6,16 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(747545),
-  o = n(131951),
+  o = n(747545),
+  l = n(131951),
   c = n(388032),
   d = n(885377);
 
 function u() {
-  let e = o.Z.getCameraComponent(),
-    t = (0, s.e7)([o.Z], () => o.Z.getVideoDeviceId()),
+  let e = l.Z.getCameraComponent(),
+    t = (0, s.e7)([l.Z], () => l.Z.getVideoDeviceId()),
     [n, u] = i.useState(!1),
-    m = (0, s.e7)([o.Z], () => o.Z.isVideoAvailable());
+    m = (0, s.e7)([l.Z], () => l.Z.isVideoAvailable());
   return n ? (0, r.jsx)("div", {
     className: d.cameraWrapper,
     children: (0, r.jsxs)("div", {
@@ -25,7 +25,7 @@ function u() {
         width: 387,
         height: 218,
         disabled: !n
-      }), (0, r.jsx)(l.S, {})]
+      }), (0, r.jsx)(o.S, {})]
     })
   }) : (0, r.jsxs)("div", {
     className: d.cameraWrapper,

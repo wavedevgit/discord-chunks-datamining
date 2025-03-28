@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(927359),
   d = n(975298),
   u = n(125529),
@@ -54,7 +54,7 @@ let A = e => {
     } = e, {
       headingText: n,
       headingTop: i,
-      headingBottom: l
+      headingBottom: o
     } = Z();
     return (0, r.jsxs)("div", {
       className: s()(v.container, t),
@@ -69,7 +69,7 @@ let A = e => {
           variant: "display-lg",
           color: "always-white",
           children: n
-        }), l, (0, r.jsx)("div", {
+        }), o, (0, r.jsx)("div", {
           className: v.buttonContainer,
           children: (0, r.jsx)(x.Z, {
             color: a.Ttl.BRAND,
@@ -92,8 +92,8 @@ let A = e => {
       autoTrackExposure: !1
     }), i = n === f.p.VARIANT_2, {
       headingText: s,
-      headingTop: l,
-      headingBottom: o
+      headingTop: o,
+      headingBottom: l
     } = Z();
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("img", {
@@ -105,11 +105,11 @@ let A = e => {
         "data-testid": "subscriber-nitro-home-hero-header",
         children: (0, r.jsxs)("div", {
           className: v.contentV2,
-          children: [l, (0, r.jsx)(a.X6q, {
+          children: [o, (0, r.jsx)(a.X6q, {
             variant: "display-lg",
             color: "always-white",
             children: s
-          }), o, i && (0, r.jsx)("div", {
+          }), l, i && (0, r.jsx)("div", {
             className: v.buttonContainer,
             children: (0, r.jsx)(x.Z, {
               color: a.Ttl.BRAND,
@@ -155,7 +155,7 @@ let A = e => {
       location: n
     } = e, {
       analyticsLocations: i
-    } = (0, o.ZP)(l.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = S.NW.string(S.t.qYKftb), x = (0, b.b)(n), E = (0, r.jsx)(A, {
+    } = (0, l.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = S.NW.string(S.t.qYKftb), x = (0, b.b)(n), E = (0, r.jsx)(A, {
       className: t
     }), j = S.NW.string(S.t.ifwQZW), T = !1, {
       fractionalState: I,
@@ -207,7 +207,7 @@ let A = e => {
         className: v.flexCentered,
         children: (0, r.jsx)(_.mn, y({}, W))
       }) : (0, r.jsx)(_.Cy, y({}, W));
-    return (0, r.jsx)(o.Gt, {
+    return (0, r.jsx)(l.Gt, {
       value: i,
       children: (0, r.jsx)(D.Provider, {
         value: {

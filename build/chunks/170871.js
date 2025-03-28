@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(114487),
+  o = n(481060),
+  l = n(114487),
   c = n(219039),
   d = n(979264),
   u = n(308083),
@@ -32,7 +32,7 @@ function g(e) {
     className: a()(m.container, t),
     children: [(0, r.jsxs)("div", {
       className: m.guildPrefixContainer,
-      children: [(0, r.jsx)(o.b, {
+      children: [(0, r.jsx)(l.b, {
         guildId: p,
         guildName: h,
         guildIcon: f,
@@ -41,9 +41,9 @@ function g(e) {
         animate: !1
       }), (0, r.jsxs)("div", {
         className: m.details,
-        children: [(0, r.jsx)(l.ua7, {
+        children: [(0, r.jsx)(o.ua7, {
           text: h,
-          color: l.ua7.Colors.PRIMARY,
+          color: o.ua7.Colors.PRIMARY,
           shouldShow: _,
           children: e => {
             var t, n;

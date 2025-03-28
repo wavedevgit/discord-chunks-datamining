@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   c = n(268146),
   d = n(442837),
   u = n(433517),
@@ -179,7 +179,7 @@ class et extends i.Component {
     this.setState({
       loading: !1,
       buildOverrides: e,
-      loadedBuildOverrides: o().cloneDeep(e),
+      loadedBuildOverrides: l().cloneDeep(e),
       errors: {}
     })
   }
@@ -188,7 +188,7 @@ class et extends i.Component {
       buildOverrides: e,
       loadedBuildOverrides: t
     } = this.state;
-    return !o().isEqual(e, t)
+    return !l().isEqual(e, t)
   }
   componentDidMount() {
     this.refreshBuildOverrides()
@@ -199,7 +199,7 @@ class et extends i.Component {
     } = this.state;
     if (null == e) return [];
     let t = Object.keys(e);
-    return o().without(J, ...t)
+    return l().without(J, ...t)
   }
   renderEmpty() {
     return (0, r.jsxs)(g.ubH, {
@@ -221,7 +221,7 @@ class et extends i.Component {
       saving: t,
       errors: n
     } = this.state;
-    return null == e ? null : o().map(e, (e, i) => (0, r.jsx)(ee, {
+    return null == e ? null : l().map(e, (e, i) => (0, r.jsx)(ee, {
       project: i,
       overrideType: e.type,
       overrideId: e.id,
@@ -408,7 +408,7 @@ class et extends i.Component {
       })
     }), K(this, "handleDiscardChanges", () => {
       this.setState({
-        buildOverrides: o().cloneDeep(this.state.loadedBuildOverrides),
+        buildOverrides: l().cloneDeep(this.state.loadedBuildOverrides),
         errors: {},
         didSave: !1
       })
@@ -425,7 +425,7 @@ class et extends i.Component {
         let e = t.body;
         this.setState({
           buildOverrides: e,
-          loadedBuildOverrides: o().cloneDeep(e),
+          loadedBuildOverrides: l().cloneDeep(e),
           errors: {},
           didSave: !0,
           saving: !1
@@ -464,8 +464,8 @@ class en extends i.Component {
       userIdEntryError: i,
       allowedVersions: s,
       allowedVersionEntry: a,
-      allowedVersionEntryError: l,
-      allowLoggedOut: o,
+      allowedVersionEntryError: o,
+      allowLoggedOut: l,
       experiments: c,
       experimentsError: d
     } = this.state, u = G.S6.find(t => t.value === e), m = s.map(e => ({
@@ -503,7 +503,7 @@ class en extends i.Component {
                 autoFocus: !0,
                 value: a,
                 onKeyPress: this.handleAllowedVersionEnter,
-                error: l,
+                error: o,
                 onChange: this.handleAllowedVersionEntry,
                 placeholder: "Example: 34"
               })
@@ -566,7 +566,7 @@ class en extends i.Component {
         })]
       }), (0, r.jsx)(g.j7V, {
         onChange: this.handleAllowLoggedOut,
-        value: o,
+        value: l,
         children: "Allow logged out users"
       })]
     })
@@ -783,13 +783,13 @@ function er(e) {
   } = e, {
     horizontalSpacing: s,
     verticalSpacing: a,
-    maxHorizontalSpacing: l,
-    maxVerticalSpacing: o
+    maxHorizontalSpacing: o,
+    maxVerticalSpacing: l
   } = (0, T.i)(), c = i.useMemo(() => Array.from({
-    length: l + 1
-  }, (e, t) => t), [l]), d = i.useMemo(() => Array.from({
     length: o + 1
-  }, (e, t) => t), [o]);
+  }, (e, t) => t), [o]), d = i.useMemo(() => Array.from({
+    length: l + 1
+  }, (e, t) => t), [l]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.vwX, {
       tag: g.RB0.H1,
@@ -831,7 +831,7 @@ function er(e) {
         }), (0, r.jsx)(g.iRW, {
           initialValue: s,
           minValue: 0,
-          maxValue: l,
+          maxValue: o,
           markers: c,
           onValueChange: e => T.i.getState().setHorizontalSpacing(e),
           onValueRender: e => "".concat(Math.round(e), "px"),
@@ -849,7 +849,7 @@ function er(e) {
         }), (0, r.jsx)(g.iRW, {
           initialValue: a,
           minValue: 0,
-          maxValue: o,
+          maxValue: l,
           markers: d,
           onValueChange: e => T.i.getState().setVerticalSpacing(e),
           onValueRender: e => "".concat(Math.round(e), "px"),
@@ -869,18 +869,18 @@ function es() {
   let e = (0, y.XE)("developer_settings"),
     t = (0, d.e7)([A.default], () => A.default.getForcedRenderMode()),
     [n, s] = i.useState(!1),
-    [a, l] = i.useState(""),
-    o = e || t === _.R5.OUT_OF_PROCESS_V2 || t === _.R5.OUT_OF_PROCESS_V3 || t === _.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
+    [a, o] = i.useState(""),
+    l = e || t === _.R5.OUT_OF_PROCESS_V2 || t === _.R5.OUT_OF_PROCESS_V3 || t === _.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return (i.useEffect(() => {
     (async () => {
-      l(await (0, w.getOverlayURL)())
+      o(await (0, w.getOverlayURL)())
     })()
   }, []), n) ? {} : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: [F.buttonsContainer, z.marginBottom20].join(" "),
       children: [(0, r.jsx)(R.F, {
         setting: U.s6.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY,
-        children: o ? (0, r.jsx)(g.zxk, {
+        children: l ? (0, r.jsx)(g.zxk, {
           onClick: () => (0, P.f)(t),
           children: "Open Overlay"
         }) : (0, r.jsx)(g.zxk, {
@@ -989,8 +989,8 @@ let ea = d.ZP.connectStores([D.default], () => ({
     isLoggingGatewayEvents: i,
     isLoggingOverlayEvents: s,
     isLoggingAnalyticsEvents: a,
-    isAxeEnabled: l,
-    cssDebuggingEnabled: o,
+    isAxeEnabled: o,
+    cssDebuggingEnabled: l,
     layoutDebuggingEnabled: c,
     isSourceMapsEnabled: d,
     isAnalyticsDebuggerEnabled: u,
@@ -1088,7 +1088,7 @@ let ea = d.ZP.connectStores([D.default], () => ({
         }), (0, r.jsx)(R.F, {
           setting: U.s6.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING,
           children: (0, r.jsx)(g.j7V, {
-            value: l,
+            value: o,
             note: "Runs Axe auditing for accessibility while using the app. Violations get logged to the console. Only available in development",
             onChange: e => (0, f.y)({
               axeEnabled: e
@@ -1137,12 +1137,12 @@ let ea = d.ZP.connectStores([D.default], () => ({
       })
     }), (0, r.jsx)(er, {
       layoutDebuggingEnabled: c,
-      cssDebuggingEnabled: o
+      cssDebuggingEnabled: l
     })]
   })
 });
 
-function el() {
+function eo() {
   let e = (0, d.e7)([Z.Z], () => Z.Z.getSurveyOverride()),
     [t, n] = i.useState(null != e ? e : "");
   return (0, r.jsx)(R.F, {
@@ -1171,7 +1171,7 @@ function el() {
   })
 }
 
-function eo() {
+function el() {
   var e;
   let t = (0, d.e7)([O.Z], () => O.Z.overrideId()),
     [n, s] = i.useState(null !== (e = O.Z.overrideId()) && void 0 !== e ? e : "");
@@ -1224,7 +1224,7 @@ function eo() {
 class ec extends i.PureComponent {
   render() {
     return (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(ea, {}), (0, r.jsx)(es, {}), (0, r.jsx)(el, {}), (0, r.jsx)(eo, {}), (0, r.jsx)(et, {})]
+      children: [(0, r.jsx)(ea, {}), (0, r.jsx)(es, {}), (0, r.jsx)(eo, {}), (0, r.jsx)(el, {}), (0, r.jsx)(et, {})]
     })
   }
 }

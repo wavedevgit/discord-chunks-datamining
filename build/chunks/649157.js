@@ -6,14 +6,14 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(153867),
-  o = n(706454),
+  o = n(153867),
+  l = n(706454),
   c = n(388032),
   d = n(97350),
   u = n(444675);
 
 function m() {
-  let e = (0, s.e7)([o.default], () => o.default.locale),
+  let e = (0, s.e7)([l.default], () => l.default.locale),
     [t, m] = i.useState(e),
     [g] = i.useState(() => (0, c.u5)().map(e => {
       var t, i;
@@ -74,7 +74,7 @@ function m() {
       let {
         value: t
       } = e;
-      m(t), u.nextTick(() => l.ZP.updateLocale(t))
+      m(t), u.nextTick(() => o.ZP.updateLocale(t))
     }, []);
   return (0, r.jsx)(a.hjN, {
     tag: a.RB0.H1,

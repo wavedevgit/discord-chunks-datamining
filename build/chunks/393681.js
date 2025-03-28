@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(512722),
-  o = n.n(l),
+  o = n(512722),
+  l = n.n(o),
   c = n(442837),
   d = n(780384),
   u = n(481060),
@@ -380,14 +380,14 @@ class X extends i.PureComponent {
 let J = () => {
   let e = (0, c.e7)([A.default], () => {
       let e = A.default.getCurrentUser();
-      return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
+      return l()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
     }),
     t = (0, c.e7)([T.Z], () => T.Z.getBackupCodes()),
     n = (0, c.e7)([I.Z], () => I.Z.hidePersonalInformation),
     i = (0, c.e7)([Z.Z], () => Z.Z.theme),
     s = (0, E.b)(),
     a = (0, _.CC)(),
-    l = (0, c.e7)([D.default], () => D.default.locale),
+    o = (0, c.e7)([D.default], () => D.default.locale),
     d = (0, c.e7)([y.Z], () => y.Z.getSubsection());
   return (0, r.jsx)(X, {
     theme: i,
@@ -396,7 +396,7 @@ let J = () => {
     hide: n,
     shouldRenderPomeloWarning: s,
     forceMigrationExperiment: a,
-    locale: l,
+    locale: o,
     subsection: d
   })
 }

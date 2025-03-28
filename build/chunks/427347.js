@@ -7,8 +7,8 @@ n(192379);
 var i = n(704215),
   s = n(481060),
   a = n(230711),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(605236),
   d = n(314910),
   u = n(378364),
@@ -24,7 +24,7 @@ function b(e) {
     dismissibleContent: t
   } = e, n = m.Z.useIsEligible(), u = (0, c.wE)(t), {
     analyticsLocations: b
-  } = (0, o.ZP)(l.Z.HOLIDAY_COACHMARK), x = e => {
+  } = (0, l.ZP)(o.Z.HOLIDAY_COACHMARK), x = e => {
     (0, c.EW)(i.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
       dismissAction: e
     })

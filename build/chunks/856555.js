@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  EQ: () => m,
-  ZP: () => b
+  EQ: () => b,
+  ZP: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -11,9 +11,10 @@ var r = n(200651),
   s = n(930153),
   c = n(432792),
   u = n(981631),
-  d = n(388032);
+  d = n(388032),
+  p = n(326238);
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +33,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -47,18 +48,21 @@ function h(e, t) {
   }
   return i
 }
-let f = e => {
+let g = e => {
     var {
       tailLeftOffset: t = 22
-    } = e, n = h(e, ["tailLeftOffset"]);
-    return (0, r.jsx)(c.tE, p({
+    } = e, n = f(e, ["tailLeftOffset"]);
+    return (0, r.jsx)(c.tE, h({
       titleText: d.NW.string(d.t["duN28/"]),
       descriptionText: d.NW.string(d.t["Veu++f"]),
       ctaText: d.NW.string(d.t.F4SoLC),
-      tailLeftOffset: t
+      tailLeftOffset: t,
+      customIconSrcs: {
+        static: p.Z
+      }
     }, n))
   },
-  g = () => {
+  m = () => {
     let e = (0, o.Q3)("VirtualCurrency: ShopOnboardingCoachmark");
     return {
       getRequiredSpacingFromTop: i.useCallback(() => {
@@ -70,7 +74,7 @@ let f = e => {
       isVisualRefreshEnabled: e
     }
   },
-  m = e => {
+  b = e => {
     let {
       isVirtualCurrencyEnabled: t,
       listScrollerRef: n
@@ -104,16 +108,16 @@ let f = e => {
       onCtaClick: u.dG4
     }
   },
-  b = e => {
+  _ = e => {
     var t, n, {
         offsetControlRef: l,
         backgroundElementRef: a
       } = e,
-      u = h(e, ["offsetControlRef", "backgroundElementRef"]);
+      u = f(e, ["offsetControlRef", "backgroundElementRef"]);
     let {
       getRequiredSpacingFromTop: d,
-      tailLeftOffset: m
-    } = g(), b = i.useRef(null), _ = i.useCallback(e => {
+      tailLeftOffset: p
+    } = m(), b = i.useRef(null), _ = i.useCallback(e => {
       let t = (e.bottom + e.top) / 2;
       return !(t <= d() || t > window.innerHeight - (0, c.t4)())
     }, [d]), E = (0, o.Q3)("VirtualCurrency: ShopOnboardingCoachmark"), O = i.useCallback((e, t) => {
@@ -135,9 +139,9 @@ let f = e => {
       backgroundElementRef: a,
       calculateVisibility: _,
       calculateBaseOffsets: O,
-      children: (0, r.jsx)(f, (t = p({
+      children: (0, r.jsx)(g, (t = h({
         coachmarkRef: b,
-        tailLeftOffset: m
+        tailLeftOffset: p
       }, u), n = n = {
         renderTail: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(119617),
   a = n(745510),
-  l = n(675654);
-let o = {
+  o = n(675654);
+let l = {
     xMin: -40,
     xMax: 40,
     yMin: -40,
@@ -26,7 +26,7 @@ let o = {
       offsetYPercentageMax: h,
       offsetYPercentageMin: f,
       customConfettiCanvas: N,
-      speedValues: b = o,
+      speedValues: b = l,
       dragCoefficientValue: x = 1.66,
       onAnimationEnd: _
     } = e, [E, j] = i.useState(null), {
@@ -47,7 +47,7 @@ let o = {
       return e = e.map((n, r) => setTimeout(() => {
         C.createMultipleConfetti(function(e, t, n, r, i) {
           var s, a;
-          let d = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : o,
+          let d = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : l,
             u = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : 1.66,
             m = c(e.width, 100, n),
             g = c(e.height, 75, i),
@@ -76,7 +76,7 @@ let o = {
               })
             }
             return e
-          }({}, l.We), a = a = {
+          }({}, o.We), a = a = {
             position: {
               type: "static-random",
               minValue: {
@@ -101,8 +101,8 @@ let o = {
             },
             size: {
               type: "static-random",
-              minValue: l.Ko,
-              maxValue: l.Ko
+              minValue: o.Ko,
+              maxValue: o.Ko
             },
             dragCoefficient: {
               type: "static",
@@ -124,9 +124,9 @@ let o = {
       }
     }, [C, t, u, m, g, p, h, f, b, x, _]), (0, r.jsx)(s.Ji, {
       ref: j,
-      sprites: null != T ? T : l.CA,
-      colors: null != n ? n : l.Br,
-      spriteWidth: l.Ko,
-      spriteHeight: l.Ko
+      sprites: null != T ? T : o.CA,
+      colors: null != n ? n : o.Br,
+      spriteWidth: o.Ko,
+      spriteHeight: o.Ko
     })
   })

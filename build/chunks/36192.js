@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(544891),
+  o = n(442837),
+  l = n(544891),
   c = n(704215),
   d = n(481060),
   u = n(230711),
@@ -30,7 +30,7 @@ function S() {
   let {
     currentSession: t,
     otherSessions: n
-  } = (0, h.h)(), s = (0, l.e7)([N.Z], () => N.Z.hidePersonalInformation), a = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [u, g] = i.useState(!1);
+  } = (0, h.h)(), s = (0, o.e7)([N.Z], () => N.Z.hidePersonalInformation), a = (0, o.e7)([b.default], () => b.default.getCurrentUser()), [u, g] = i.useState(!1);
   i.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: j.L.AUTO
@@ -41,7 +41,7 @@ function S() {
     }
   }, []);
   let x = () => {
-      o.tn.post({
+      l.tn.post({
         url: E.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
       })
@@ -135,14 +135,14 @@ function S() {
 }
 
 function v(e) {
-  var t, n, i, s, l;
+  var t, n, i, s, o;
   let {
-    session: o,
+    session: l,
     current: c,
     setChecked: u,
     checked: m,
     useChecks: g
-  } = e, f = null !== (l = null === (t = o.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== l ? l : null === (n = o.client_info) || void 0 === n ? void 0 : n.ip, N = null === (i = o.client_info) || void 0 === i ? void 0 : i.platform, {
+  } = e, f = null !== (o = null === (t = l.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== o ? o : null === (n = l.client_info) || void 0 === n ? void 0 : n.ip, N = null === (i = l.client_info) || void 0 === i ? void 0 : i.platform, {
     text: b,
     icon: x
   } = function(e) {
@@ -163,7 +163,7 @@ function v(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [b, N].filter(_.lm), S = [f, E].filter(_.lm);
+  }(null === (s = l.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(l.approx_last_used_time), j = [b, N].filter(_.lm), S = [f, E].filter(_.lm);
   return (0, r.jsxs)("div", {
     className: a()(C.session, c ? C.currentSession : null),
     children: [(0, r.jsx)("div", {
@@ -210,7 +210,7 @@ function v(e) {
     }) : (0, r.jsx)(d.P3F, {
       className: C.sessionMoreButton,
       onClick: e => {
-        e.shiftKey ? null == u || u(!0) : (0, p.L$)(o.id_hash)
+        e.shiftKey ? null == u || u(!0) : (0, p.L$)(l.id_hash)
       },
       "aria-label": O.NW.string(O.t.E4MJNj),
       children: (0, r.jsx)(d.Dio, {
@@ -218,7 +218,7 @@ function v(e) {
         color: "currentColor"
       })
     })]
-  }, o.id_hash)
+  }, l.id_hash)
 }
 
 function T() {
