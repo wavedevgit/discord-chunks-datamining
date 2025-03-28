@@ -31,8 +31,8 @@ var r = n(192379),
   I = n(960048),
   S = n(709054),
   T = n(223683),
-  A = n(630114),
-  N = n(506712),
+  N = n(630114),
+  A = n(506712),
   C = n(468788),
   R = n(789662),
   P = n(981631),
@@ -103,7 +103,7 @@ function U(e, t) {
 
 function G(e, t) {
   return Object.values(g.Z.getGuilds()).some(n => {
-    let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(n, R.nf, e, t, !1) : (0, N.A)(n, e);
+    let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, A.q)(n, R.nf, e, t, !1) : (0, A.A)(n, e);
     return r === R.AR.UseGreyDot
   })
 }
@@ -126,7 +126,7 @@ function B() {
 
 function F(e, t, n, r, i) {
   var o;
-  let [a, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(e, t, n, r, !0) : (0, N.A)(e, n), c = null !== (o = n.filter(t => t.guild_id === e.id)[0]) && void 0 !== o ? o : {}, u = (0, A.Z)(e, null != i ? i : a, c, r, t);
+  let [a, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, A.q)(e, t, n, r, !0) : (0, A.A)(e, n), c = null !== (o = n.filter(t => t.guild_id === e.id)[0]) && void 0 !== o ? o : {}, u = (0, N.Z)(e, null != i ? i : a, c, r, t);
   return {
     guildId: e.id,
     mode: a,

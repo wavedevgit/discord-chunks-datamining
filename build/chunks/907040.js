@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(806966),
   S = n(28546),
   T = n(691251),
-  A = n(98528),
-  N = n(770812),
+  N = n(98528),
+  A = n(770812),
   C = n(434404),
   R = n(536442),
   P = n(609218),
@@ -155,7 +155,7 @@ let ec = (e, t) => {
       gridContainerProps: E,
       handleGridContainerKeyDown: b,
       isUsingKeyboardNavigation: O
-    } = (0, A.VO)({
+    } = (0, N.VO)({
       columnCounts: r,
       gridNavigatorId: q.Vr,
       itemGrid: a,
@@ -233,8 +233,8 @@ let ec = (e, t) => {
         shouldHidePickerActions: eI = !1,
         messageId: eS,
         renderHeader: eT,
-        listHeaderClassName: eA,
-        categoryListClassName: eN,
+        listHeaderClassName: eN,
+        categoryListClassName: eA,
         shouldShowSoundmojiInEmojiPicker: eC = !1
       } = e,
       {
@@ -275,7 +275,7 @@ let ec = (e, t) => {
       diversitySurrogate: v.ZP.diversitySurrogate
     })), e0 = (0, j.DV)(ej, c, l), e1 = null == e0 ? 0 : e0.locked.length + e0.unlocked.length, e2 = w.d4.useSetting(), e3 = i.useMemo(() => new Set(e2), [e2]), e4 = i.useCallback(e => {
       w.d4.updateSetting(Array.from(e))
-    }, []), e6 = (0, A.ep)({
+    }, []), e6 = (0, N.ep)({
       gridWrapperRef: eU,
       containerWidth: ec,
       listPaddingLeft: eo,
@@ -401,7 +401,7 @@ let ec = (e, t) => {
         channel: c,
         containerContext: e
       })
-    } else(null == ex ? void 0 : ex.type) === H.Bg.ROLE_SUBSCRIPTION ? s = (0, r.jsx)(N.Z, {
+    } else(null == ex ? void 0 : ex.type) === H.Bg.ROLE_SUBSCRIPTION ? s = (0, r.jsx)(A.Z, {
       onClose: () => eM(null),
       guildId: ex.guildId,
       emojiId: ex.emojiId
@@ -490,7 +490,7 @@ let ec = (e, t) => {
                 channelId: null == c ? void 0 : c.id,
                 messageId: eS,
                 isBurstReaction: eV,
-                listHeaderClassName: eA
+                listHeaderClassName: eN
               }) : null
             }))]
           }), (0, r.jsx)(W.k, {
@@ -501,7 +501,7 @@ let ec = (e, t) => {
             channel: c
           }), s]
         }), eI ? null : (0, r.jsx)(F.Z, {
-          className: a()($.categoryList, eN),
+          className: a()($.categoryList, eA),
           emojiListRef: eG,
           sectionDescriptors: e7,
           intention: l,

@@ -97,7 +97,7 @@ function I(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
-  return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, A({
+  return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, N({
     channelId: t,
     userId: n
   }))
@@ -121,7 +121,7 @@ function T(e) {
   clearTimeout(r[n]), r[n] = S(t, n), E[t] = r
 }
 
-function A(e) {
+function N(e) {
   let {
     channelId: t,
     userId: n
@@ -131,7 +131,7 @@ function A(e) {
   clearTimeout(i[n]), delete i[n], E[t] = i
 }
 
-function N(e) {
+function A(e) {
   let {
     channelId: t,
     message: {
@@ -139,7 +139,7 @@ function N(e) {
     },
     optimistic: r
   } = e;
-  return r && O(t), null != n && A({
+  return r && O(t), null != n && N({
     channelId: t,
     userId: n.id
   })
@@ -164,10 +164,10 @@ class P extends(i = o.ZP.Store) {
 _(P, "displayName", "TypingStore");
 let w = new P(s.Z, {
   TYPING_START: T,
-  TYPING_STOP: A,
+  TYPING_STOP: N,
   TYPING_START_LOCAL: y,
   TYPING_STOP_LOCAL: I,
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
-  MESSAGE_CREATE: N
+  MESSAGE_CREATE: A
 })

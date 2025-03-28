@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(497321),
   S = n(468026),
   T = n(317381),
-  A = n(513202),
-  N = n(279332),
+  N = n(513202),
+  A = n(279332),
   C = n(445446),
   R = n(979200),
   P = n(870822),
@@ -373,7 +373,7 @@ let eu = e => {
     } = e, O = o.id, I = i.useMemo(() => k.ZP.createFromServer(o), [o]), S = (0, _.e7)([Q.Z], () => {
       var e, t, n, r;
       return null === (r = Q.Z.settings.applications) || void 0 === r ? void 0 : null === (n = r.appSettings) || void 0 === n ? void 0 : null === (t = n[O]) || void 0 === t ? void 0 : null === (e = t.appDmSettings) || void 0 === e ? void 0 : e.dmDisabled
-    }, [O]), T = o.bot, A = (0, _.e7)([U.Z], () => U.Z.getDMFromUserId(null == T ? void 0 : T.id)), N = (0, _.e7)([F.ZP], () => null == A ? null : F.ZP.isChannelMuted(null, A)), [C, P] = i.useState(!1), [D, x] = i.useState(!1), j = L.Z.useExperiment({
+    }, [O]), T = o.bot, N = (0, _.e7)([U.Z], () => U.Z.getDMFromUserId(null == T ? void 0 : T.id)), A = (0, _.e7)([F.ZP], () => null == N ? null : F.ZP.isChannelMuted(null, N)), [C, P] = i.useState(!1), [D, x] = i.useState(!1), j = L.Z.useExperiment({
       location: "Authorized Applications"
     }, {
       autoTrackExposure: !0
@@ -519,24 +519,24 @@ let eu = e => {
         })
       }, q.fy.INFREQUENT_USER_ACTION)
     }, K = i.useCallback(async () => {
-      if (u()(null != T, "dm channel mute setting requires having a bot user"), null == A) {
+      if (u()(null != T, "dm channel mute setting requires having a bot user"), null == N) {
         let e = await b.Z.ensurePrivateChannel(T.id);
         y.Z.updateChannelOverrideSettings(null, e, {
           muted: !1
         }, W.ZB.Unmuted);
         return
       }
-      N ? y.Z.updateChannelOverrideSettings(null, A, {
+      A ? y.Z.updateChannelOverrideSettings(null, N, {
         muted: !1
       }, W.ZB.Unmuted) : (0, g.ZDy)(async () => {
         let {
           default: e
         } = await n.e("8246").then(n.bind(n, 540679));
         return t => (0, r.jsx)(e, eo({
-          channelId: A
+          channelId: N
         }, t))
       })
-    }, [A, T, N]), z = () => v ? (0, r.jsxs)("div", {
+    }, [N, T, A]), z = () => v ? (0, r.jsxs)("div", {
       className: en.appDetailsSection,
       children: [(0, r.jsx)(g.X6q, {
         variant: "heading-sm/medium",
@@ -570,7 +570,7 @@ let eu = e => {
           color: g.Ttl.PRIMARY,
           size: g.PhG.SMALL,
           onClick: K,
-          children: N ? et.NW.string(et.t.YqAjX1) : et.NW.string(et.t["w4m94+"])
+          children: A ? et.NW.string(et.t.YqAjX1) : et.NW.string(et.t["w4m94+"])
         })]
       }) : null]
     }) : null, J = (0, X.O)(o.id), ee = () => (0, r.jsxs)("div", {
@@ -607,7 +607,7 @@ let eu = e => {
       a = (0, _.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()),
       s = (0, _.e7)([U.Z, G.Z], () => U.Z.getChannel(G.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId(),
-      u = N.J.useExperiment({
+      u = A.J.useExperiment({
         location: "UserSettingsAuthedApps"
       }, {
         autoTrackExposure: !0
@@ -633,7 +633,7 @@ let eu = e => {
           applicationId: n.id
         });
         let r = a.get(n.id);
-        null != r && A.Z.leaveActivity({
+        null != r && N.Z.leaveActivity({
           location: r.location,
           applicationId: n.id,
           showFeedback: !1

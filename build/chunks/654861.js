@@ -142,12 +142,12 @@ var r = function(e) {
     return a
   }
 
-  function A(e, t) {
+  function N(e, t) {
     for (var n = []; t-- > 0;) n.push(0);
     return n.concat(e)
   }
 
-  function N(e, t) {
+  function A(e, t) {
     var n = Math.max(e.length, t.length);
     if (n <= 30) return S(e, t);
     n = Math.ceil(n / 2);
@@ -155,10 +155,10 @@ var r = function(e) {
       i = e.slice(0, n),
       o = t.slice(n),
       a = t.slice(0, n),
-      s = N(i, a),
-      l = N(r, o),
-      c = N(b(i, r), b(a, o)),
-      u = b(b(s, A(y(y(c, s), l), n)), A(l, 2 * n));
+      s = A(i, a),
+      l = A(r, o),
+      c = A(b(i, r), b(a, o)),
+      u = b(b(s, N(y(y(c, s), l), n)), N(l, 2 * n));
     return h(u), u
   }
 
@@ -334,7 +334,7 @@ var r = function(e) {
       if ((n = Math.abs(o)) < t) return new c(T(i, n), a);
       o = _(n)
     }
-    return C(i.length, o.length) ? new c(N(i, o), a) : new c(S(i, o), a)
+    return C(i.length, o.length) ? new c(A(i, o), a) : new c(S(i, o), a)
   }, c.prototype.times = c.prototype.multiply, u.prototype._multiplyBySmall = function(e) {
     return f(e.value * this.value) ? new u(e.value * this.value) : R(Math.abs(e.value), _(Math.abs(this.value)), this.sign !== e.sign)
   }, c.prototype._multiplyBySmall = function(e) {

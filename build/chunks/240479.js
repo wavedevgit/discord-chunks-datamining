@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120), n(773603), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -55,15 +55,15 @@ function T(e) {
   }) : null
 }
 
-function A(e) {
+function N(e) {
   let {
     sound: t,
     channel: n,
     closePopout: c,
     refreshPosition: g
-  } = e, v = t.guildId === O.X8, y = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), A = !v && null != y, [N, C] = i.useState(), R = (0, E.V2)({
+  } = e, v = t.guildId === O.X8, y = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !v && null != y, [A, C] = i.useState(), R = (0, E.V2)({
     location: "SoundmojiGuildInfo"
-  }), P = v || A || null != N || !R, [w, D] = i.useState(!P);
+  }), P = v || N || null != A || !R, [w, D] = i.useState(!P);
   i.useEffect(() => {
     !P && (D(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
       C(e)
@@ -74,7 +74,7 @@ function A(e) {
   let {
     buttonType: L,
     description: x
-  } = (0, b.Z)(t, n, A, N), M = L === b.y.JOIN_GUILD, k = !v && w, j = i.useMemo(() => A ? u.JO.createFromGuildRecord(y) : null != N ? u.JO.createFromDiscoverableGuild(N) : void 0, [y, A, N]);
+  } = (0, b.Z)(t, n, N, A), M = L === b.y.JOIN_GUILD, k = !v && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
   return k ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
     className: S.infoContainer,
     children: [(0, r.jsxs)(f.W_, {
@@ -97,17 +97,17 @@ function A(e) {
           variant: "eyebrow",
           color: "header-muted",
           className: S.infoExpandedGuildTitle,
-          children: A ? I.NW.string(I.t.tGDabm) : I.NW.string(I.t.rnOmOT)
+          children: N ? I.NW.string(I.t.tGDabm) : I.NW.string(I.t.rnOmOT)
         }), (0, r.jsx)("div", {
           className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(d.Oe, {
             expressionSourceGuild: j,
-            hasJoinedExpressionSourceGuild: A,
+            hasJoinedExpressionSourceGuild: N,
             isDisplayingJoinGuildButtonInPopout: M
           })
         }), (0, r.jsx)(T, {
           buttonType: L,
-          discoverableGuildId: null == N ? void 0 : N.id,
+          discoverableGuildId: null == A ? void 0 : A.id,
           closePopout: c
         })]
       })]

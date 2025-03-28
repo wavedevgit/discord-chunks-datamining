@@ -33,9 +33,9 @@ let E = new Map,
   I = new Set,
   S = new Map,
   T = !1,
-  A = [];
+  N = [];
 
-function N() {
+function A() {
   E.clear(), b.clear(), S.clear(), T = !1, O = 0, y = 0
 }
 
@@ -86,7 +86,7 @@ function x(e) {
   let {
     guildId: t
   } = e;
-  A = A.includes(t) ? o().without(A, t) : [...A, t]
+  N = N.includes(t) ? o().without(N, t) : [...N, t]
 }
 
 function M(e) {
@@ -235,12 +235,12 @@ class Y extends(r = a.ZP.Store) {
     return 2 === O && 2 === y
   }
   getShownAllGuildIds() {
-    return A
+    return N
   }
 }
 g(Y, "displayName", "SoundboardStore");
 let K = new Y(s.Z, {
-  LOGOUT: N,
+  LOGOUT: A,
   GUILD_SOUNDBOARD_FETCH: R,
   GUILD_SOUNDBOARD_SOUND_CREATE: D,
   GUILD_SOUNDBOARD_SOUND_UPDATE: D,

@@ -82,7 +82,7 @@ function g(e, t, n) {
   function T(e) {
     return (null == n ? void 0 : n.storedInformation) == null || null == n.storedInformation[e] ? null : n.storedInformation[e]
   }
-  let A = {
+  let N = {
     did_crash: t,
     renderer_crash_reason: null !== (u = null == n ? void 0 : n.rendererCrashReason) && void 0 !== u ? u : null,
     renderer_crash_exit_code: null !== (f = null == n ? void 0 : n.rendererCrashExitCode) && void 0 !== f ? f : null,
@@ -107,15 +107,15 @@ function g(e, t, n) {
     minidump_relative_crash_address: null,
     minidump_exception_module_version: null,
     minidump_exception_module_code_id: null
-  }, A);
+  }, N);
   console.log("AppCrashedFatalReport lastCrash:", n, e);
-  let N = null == n ? void 0 : n.minidumpInformation;
+  let A = null == n ? void 0 : n.minidumpInformation;
   return d({
     electron_crash_reporter_did_crash: e,
-    minidump_exception_type: null !== (b = null == N ? void 0 : N.exceptionString) && void 0 !== b ? b : null,
-    minidump_exception_module_name: null !== (v = null == N ? void 0 : N.exceptionModuleName) && void 0 !== v ? v : null,
-    minidump_relative_crash_address: null !== (y = null == N ? void 0 : N.relativeCrashAddress) && void 0 !== y ? y : null,
-    minidump_exception_module_version: null !== (O = null == N ? void 0 : N.exceptionModuleVersion) && void 0 !== O ? O : null,
-    minidump_exception_module_code_id: null !== (I = null == N ? void 0 : N.exceptionModuleCodeId) && void 0 !== I ? I : null
-  }, A)
+    minidump_exception_type: null !== (b = null == A ? void 0 : A.exceptionString) && void 0 !== b ? b : null,
+    minidump_exception_module_name: null !== (v = null == A ? void 0 : A.exceptionModuleName) && void 0 !== v ? v : null,
+    minidump_relative_crash_address: null !== (y = null == A ? void 0 : A.relativeCrashAddress) && void 0 !== y ? y : null,
+    minidump_exception_module_version: null !== (O = null == A ? void 0 : A.exceptionModuleVersion) && void 0 !== O ? O : null,
+    minidump_exception_module_code_id: null !== (I = null == A ? void 0 : A.exceptionModuleCodeId) && void 0 !== I ? I : null
+  }, N)
 }

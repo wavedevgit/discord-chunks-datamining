@@ -36,13 +36,13 @@ let O = +f.Z.Millis.MINUTE,
   T = (0, g.T)({
     location: b.dr.QUESTS_MANAGER
   }),
-  A = e => (0, s.V9)({
+  N = e => (0, s.V9)({
     streamType: v.lo.CALL,
     channelId: e,
     ownerId: "1"
   });
 
-function N() {
+function A() {
   let e = l.Z.getStreamerActiveStreamMetadata();
   if ((null == e ? void 0 : e.id) == null) return null;
   let t = u.Z.getDetectableGame(e.id);
@@ -71,7 +71,7 @@ function P(e) {
     channelId: o
   } = (0, s.my)(r), a = C(o), c = h.Z.quests.get(n);
   if (null == c || !R(c)) return "STOP";
-  let u = null === (t = N()) || void 0 === t ? void 0 : t.config,
+  let u = null === (t = A()) || void 0 === t ? void 0 : t.config,
     d = null != l.Z.getRTCStream(r) && null != u && E.r.build(u).application.id === i && a,
     f = null != D(c);
   return d || f ? "BEAT" : "BEAT_TERMINAL"
@@ -236,7 +236,7 @@ class M extends i.Z {
       }
       let r = () => {
         if (this.getActivelyProgressingQuestIds(t).has(e)) {
-          let t = A(e);
+          let t = N(e);
           (0, p.m0)({
             questId: e,
             streamKey: t
@@ -257,7 +257,7 @@ class M extends i.Z {
         let t = r.get(e);
         if (null != t && R(t)) {
           T.log("terminateHeartbeatV2 - sending terminal heartbeat for questId", e);
-          let t = A(e);
+          let t = N(e);
           (0, p.m0)({
             questId: e,
             streamKey: t,
@@ -290,7 +290,7 @@ class M extends i.Z {
       } = e;
       this.syncHeartbeats([r.X.PLAY_ON_DESKTOP]);
       let n = l.Z.getCurrentUserActiveStream(),
-        i = N();
+        i = A();
       if (null != n && null != i && i.id === t && R(i)) {
         T.log("handleEnrollmentSuccess - initiating heartbeat for stream"), this.initiateLegacyHeartbeat({
           streamKey: (0, s.V9)(n),
@@ -305,7 +305,7 @@ class M extends i.Z {
       } = w(t);
       if (null != a && null != o && R(o)) {
         T.log("handleEnrollmentSuccess - initiating heartbeat for activity"), this.initiateLegacyHeartbeat({
-          streamKey: A(o.id),
+          streamKey: N(o.id),
           applicationId: a.applicationId,
           questId: o.id
         });
@@ -329,7 +329,7 @@ class M extends i.Z {
       T.log("~ handleSendHeartbeatFailure -> Heartbeat failed:", t)
     }), y(this, "handleVoiceStateChange", () => {
       let e = l.Z.getCurrentUserActiveStream(),
-        t = N();
+        t = A();
       null != e && this._handleVoiceStateChange({
         streamKey: (0, s.V9)(e),
         channelId: e.channelId,
@@ -355,7 +355,7 @@ class M extends i.Z {
         activity: n
       } = x(e);
       if (null == t || !(0, m.pO)(t)) return;
-      let r = A(t.id),
+      let r = N(t.id),
         i = null == n && this.legacyStreamKeyToHeartbeatState.has(r),
         o = null != n && R(t) && !this.legacyStreamKeyToHeartbeatState.has(r);
       i ? (T.log("handleEmbeddedActivityUpdate - terminating heartbeat"), this.terminateLegacyHeartbeat({
@@ -374,7 +374,7 @@ class M extends i.Z {
         ownerId: r
       } = (0, s.my)(t);
       if (r !== c.default.getId()) return;
-      let i = N();
+      let i = A();
       if (null == i) {
         T.log("handleStreamCreate - calling terminateHeartbeat for streamKey ".concat(t)), this.terminateLegacyHeartbeat({
           streamKey: t,
@@ -392,7 +392,7 @@ class M extends i.Z {
         streamType: t,
         guildId: n,
         channelId: r
-      } = e, i = N(), o = (0, s.V9)({
+      } = e, i = A(), o = (0, s.V9)({
         streamType: t,
         guildId: n,
         channelId: r,

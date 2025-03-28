@@ -86,16 +86,16 @@ let E = e => {
       planSelectBanner: I
     } = e, S = m(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "planSelectBanner"]);
     let T = (0, a.ZP)(),
-      A = !y && ((0, i.wj)(T) || t),
-      N = (0, c.N)(),
-      C = null == N ? void 0 : N.subscription_trial,
+      N = !y && ((0, i.wj)(T) || t),
+      A = (0, c.N)(),
+      C = null == A ? void 0 : A.subscription_trial,
       R = (0, s.a5)({
         intervalType: null == C ? void 0 : C.interval,
         intervalCount: null == C ? void 0 : C.interval_count
       }),
       P = (0, l.Ng)(),
       w = null != C && n === C.sku_id,
-      D = (null == N ? void 0 : N.trial_id) === d.a7,
+      D = (null == A ? void 0 : A.trial_id) === d.a7,
       L = p ? f.NW.string(f.t.J61px8) : null != P ? b(n, v, g, P.discount.amount) : E({
         showTrialCTA: w,
         subscriptionTier: n,
@@ -105,8 +105,8 @@ let E = e => {
         subscriptionTrial: C
       });
     return (0, r.jsx)(u.Z, h({
-      color: A ? o.Ttl.BRAND_INVERTED : o.Ttl.BRAND,
-      buttonShineClassName: "buttonShineClassName" in S ? S.buttonShineClassName : A ? _.brandShine : void 0,
+      color: N ? o.Ttl.BRAND_INVERTED : o.Ttl.BRAND,
+      buttonShineClassName: "buttonShineClassName" in S ? S.buttonShineClassName : N ? _.brandShine : void 0,
       buttonText: L,
       buttonTextClassName: w ? _.freeTrialText : void 0,
       onlyShineOnHover: !0,

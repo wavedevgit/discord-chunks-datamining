@@ -68,9 +68,9 @@ class b extends i.Component {
       inReverseTrial: I,
       isDiscount: S,
       subscriptionPlan: T,
-      finePrintClassname: A
+      finePrintClassname: N
     } = this.props, {
-      hasAcceptedEULA: N,
+      hasAcceptedEULA: A,
       hasAcceptedWithdrawalWaiver: C
     } = this.state;
     return (l()(!O || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), o || null != e && !i || y) ? (0, r.jsxs)("div", {
@@ -80,7 +80,7 @@ class b extends i.Component {
         children: h.NW.string(h.t.Ogvn5u)
       }), null != e && (o || !i) ? (0, r.jsx)(u.XZJ, {
         type: u.XZJ.Types.INVERTED,
-        value: N,
+        value: A,
         onChange: this.handleToggleEULAAcceptance,
         disabled: s,
         className: m.checkbox,
@@ -101,7 +101,7 @@ class b extends i.Component {
           })
         })
       }) : null, null == b ? null : (0, r.jsx)("div", {
-        className: a()(m.finePrint, A),
+        className: a()(m.finePrint, N),
         children: b
       }), y ? (0, r.jsxs)("div", {
         className: c,

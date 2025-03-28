@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(880949),
   S = n(784222),
   T = n(149203),
-  A = n(981631),
-  N = n(957825),
+  N = n(981631),
+  A = n(957825),
   C = n(388032),
   R = n(337970);
 
@@ -102,9 +102,9 @@ function K(e) {
       [R.categoryItemRecentEmoji]: l.type === T.En.RECENT
     }),
     onClick: () => {
-      null != E && b.default.track(A.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+      null != E && b.default.track(N.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
         location: null == o ? void 0 : o.location,
-        tab: N.X1.EMOJI,
+        tab: A.X1.EMOJI,
         guild_id: E.id
       }), u(n)
     },
@@ -144,7 +144,7 @@ let z = e => {
   } = e, g = h.kJ.useStore(e => e.activeCategoryIndex), b = (0, S.Ni)({
     sectionDescriptors: o,
     emojiListRef: n
-  }), v = (0, _.O)(), O = (0, y.kI)(s, c, null == c ? void 0 : c.guild_id, d), I = i.useRef(null), A = (0, u.e7)([E.Z], () => E.Z.isFocused()), N = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
+  }), v = (0, _.O)(), O = (0, y.kI)(s, c, null == c ? void 0 : c.guild_id, d), I = i.useRef(null), N = (0, u.e7)([E.Z], () => E.Z.isFocused()), A = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
     let n = O[t];
     if (null != n) return (0, r.jsx)(K, {
       activeIndex: g,
@@ -153,10 +153,10 @@ let z = e => {
       category: n,
       categoryIndex: t,
       handleCategorySelect: b,
-      isWindowFocused: A,
-      useReducedMotion: N
+      isWindowFocused: N,
+      useReducedMotion: A
     }, t)
-  }), [g, v, O, b, A, N]), w = i.useMemo(() => [8, 8, 0, 8], []), D = i.useCallback((e, t) => {
+  }), [g, v, O, b, N, A]), w = i.useMemo(() => [8, 8, 0, 8], []), D = i.useCallback((e, t) => {
     let n = O[t];
     if (n.type === T.En.RECENT) return V;
     if (n.type === T.En.GUILD) {

@@ -49,7 +49,7 @@ var r = n(478497),
   },
   h = {},
   m = function e(t, n, o, a, s, c, d, f, m, g, E, b, v, y, O, I, S, T) {
-    for (var A, N = t, C = T, R = 0, P = !1; void 0 !== (C = C.get(h)) && !P;) {
+    for (var N, A = t, C = T, R = 0, P = !1; void 0 !== (C = C.get(h)) && !P;) {
       var w = C.get(t);
       if (R += 1, void 0 !== w) {
         if (w === R) throw RangeError("Cyclic object value");
@@ -57,35 +57,35 @@ var r = n(478497),
       }
       void 0 === C.get(h) && (R = 0)
     }
-    if ("function" == typeof g ? N = g(n, N) : N instanceof Date ? N = v(N) : "comma" === o && l(N) && (N = i.maybeMap(N, function(e) {
+    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = v(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
         return e instanceof Date ? v(e) : e
-      })), null === N) {
+      })), null === A) {
       if (c) return m && !I ? m(n, _.encoder, S, "key", y) : n;
-      N = ""
+      A = ""
     }
-    if (p(N) || i.isBuffer(N)) return m ? [O(I ? n : m(n, _.encoder, S, "key", y)) + "=" + O(m(N, _.encoder, S, "value", y))] : [O(n) + "=" + O(String(N))];
+    if (p(A) || i.isBuffer(A)) return m ? [O(I ? n : m(n, _.encoder, S, "key", y)) + "=" + O(m(A, _.encoder, S, "value", y))] : [O(n) + "=" + O(String(A))];
     var D = [];
-    if (void 0 === N) return D;
-    if ("comma" === o && l(N)) I && m && (N = i.maybeMap(N, m)), A = [{
-      value: N.length > 0 ? N.join(",") || null : void 0
+    if (void 0 === A) return D;
+    if ("comma" === o && l(A)) I && m && (A = i.maybeMap(A, m)), N = [{
+      value: A.length > 0 ? A.join(",") || null : void 0
     }];
-    else if (l(g)) A = g;
+    else if (l(g)) N = g;
     else {
-      var L = Object.keys(N);
-      A = E ? L.sort(E) : L
+      var L = Object.keys(A);
+      N = E ? L.sort(E) : L
     }
     var x = f ? n.replace(/\./g, "%2E") : n,
-      M = a && l(N) && 1 === N.length ? x + "[]" : x;
-    if (s && l(N) && 0 === N.length) return M + "[]";
-    for (var k = 0; k < A.length; ++k) {
-      var j = A[k],
-        U = "object" == typeof j && void 0 !== j.value ? j.value : N[j];
+      M = a && l(A) && 1 === A.length ? x + "[]" : x;
+    if (s && l(A) && 0 === A.length) return M + "[]";
+    for (var k = 0; k < N.length; ++k) {
+      var j = N[k],
+        U = "object" == typeof j && void 0 !== j.value ? j.value : A[j];
       if (!d || null !== U) {
         var G = b && f ? j.replace(/\./g, "%2E") : j,
-          B = l(N) ? "function" == typeof o ? o(M, G) : M : M + (b ? "." + G : "[" + G + "]");
+          B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (b ? "." + G : "[" + G + "]");
         T.set(t, R);
         var F = r();
-        F.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && I && l(N) ? null : m, g, E, b, v, y, O, I, S, F))
+        F.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && I && l(A) ? null : m, g, E, b, v, y, O, I, S, F))
       }
     }
     return D

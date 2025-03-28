@@ -27,8 +27,8 @@ function _(e, t) {
     waitForRefetch: I = !0,
     guildId: S,
     channelId: T,
-    joinRequestId: A,
-    abortSignal: N
+    joinRequestId: N,
+    abortSignal: A
   } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   if ("" === e || u.Z.isFetchingProfile(e, S)) return Promise.resolve();
   let C = u.Z.getUserProfile(e),
@@ -52,8 +52,8 @@ function _(e, t) {
       withMutualFriendsCount: E,
       friendToken: v,
       guildId: S,
-      joinRequestId: A,
-      abortSignal: N,
+      joinRequestId: N,
+      abortSignal: A,
       connectionsRoleId: null == S ? void 0 : null === (p = (0, a.Ur)({
         guildMember: c.ZP.getMember(S, e),
         channel: l.Z.getChannel(T)

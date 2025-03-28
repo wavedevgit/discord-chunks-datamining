@@ -15,12 +15,12 @@ let u = e => {
   let {
     channel: t,
     application: u,
-    onClose: m,
-    transitionState: b
-  } = e, p = (0, c.Q3)("IntegrationsEditLinkedLobbyModal"), j = (0, l.w)(t), h = a.useCallback(() => (m(), (0, o.ZDy)(async () => {
+    onClose: b,
+    transitionState: m
+  } = e, p = (0, c.Q3)("IntegrationsEditLinkedLobbyModal"), j = (0, l.w)(t), h = a.useCallback(() => (b(), (0, o.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([r.e("38902"), r.e("31907")]).then(r.bind(r, 366854));
+    } = await r.e("31907").then(r.bind(r, 366854));
     return r => {
       var a, o;
       return (0, n.jsx)(e, (a = function(e) {
@@ -54,9 +54,9 @@ let u = e => {
         Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
       }), a))
     }
-  })), [u, t.id, m]), O = (0, i.ZP)(t, !0);
+  })), [u, t.id, b]), O = (0, i.ZP)(t, !0);
   return (0, n.jsxs)(o.Y0X, {
-    transitionState: b,
+    transitionState: m,
     "aria-label": d.NW.string(d.t.OJknho),
     children: [(0, n.jsx)(o.xBx, {
       separator: !1,
@@ -100,7 +100,7 @@ let u = e => {
         color: o.zxk.Colors.RED,
         children: d.NW.string(d.t.LLWaxc)
       }), (0, n.jsx)(o.zxk, {
-        onClick: m,
+        onClick: b,
         look: p ? o.zxk.Looks.FILLED : o.zxk.Looks.LINK,
         color: o.zxk.Colors.PRIMARY,
         className: x.cancelButton,

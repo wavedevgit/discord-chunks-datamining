@@ -58,12 +58,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
+let A = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
 
 function C(e) {
   let {
@@ -112,7 +112,7 @@ function R(e) {
     height: 0
   }), p = s === v.q.SMALL;
   i.useEffect(() => {
-    if (null == t || !1 === N.includes(t.type)) return;
+    if (null == t || !1 === A.includes(t.type)) return;
     let e = URL.createObjectURL(t);
     d(e);
     let n = new Image;
@@ -146,7 +146,7 @@ function R(e) {
       })
     }, [u, p, n, f]),
     m = i.useCallback(() => {
-      null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, A(S({
+      null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, N(S({
         className: O.__invalid_modal
       }, e), {
         size: l.CgR.DYNAMIC,
@@ -256,11 +256,11 @@ function D(e) {
     canEdit: g = !0,
     hideFileName: I = !1,
     clip: T
-  } = e, N = null != T, C = (h = N ? v.q.CLIP : h) === v.q.SMALL, R = (0, s.e7)([m.Z], () => {
+  } = e, A = null != T, C = (h = A ? v.q.CLIP : h) === v.q.SMALL, R = (0, s.e7)([m.Z], () => {
     var e;
     return null === (e = m.Z.getChannel(t)) || void 0 === e ? void 0 : e.guild_id
   }), P = e => {
-    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, A(S({}, e), {
+    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, N(S({}, e), {
       draftType: n,
       upload: o,
       channelId: t,
@@ -284,7 +284,7 @@ function D(e) {
         className: a()({
           [O.action]: C
         }),
-        tooltip: N ? y.NW.string(y.t.MYgdY2) : y.NW.string(y.t.cuurzM),
+        tooltip: A ? y.NW.string(y.t.MYgdY2) : y.NW.string(y.t.cuurzM),
         onClick: () => c.Z.update(t, o.id, n, {
           spoiler: !o.spoiler
         }),
@@ -301,7 +301,7 @@ function D(e) {
             [O.actionBarIcon]: C
           })
         })
-      }) : null, g && !N ? (0, r.jsx)(b.Z, {
+      }) : null, g && !A ? (0, r.jsx)(b.Z, {
         className: a()({
           [O.action]: C
         }),
@@ -318,7 +318,7 @@ function D(e) {
         className: a()({
           [O.action]: C
         }),
-        tooltip: N ? y.NW.string(y.t.MskAXV) : y.NW.string(y.t.vN7REx),
+        tooltip: A ? y.NW.string(y.t.MskAXV) : y.NW.string(y.t.vN7REx),
         onClick: () => c.Z.remove(t, o.id, n),
         dangerous: !0,
         children: (0, r.jsx)(l.XHJ, {
@@ -342,14 +342,14 @@ function D(e) {
     children: [(0, r.jsx)(w, {
       upload: o,
       size: h
-    }), !I && !N && (0, r.jsx)("div", {
+    }), !I && !A && (0, r.jsx)("div", {
       className: O.filenameContainer,
       children: (0, r.jsx)(l.Text, {
         className: O.filename,
         variant: "text-sm/normal",
         children: null != p ? p : o.filename
       })
-    }), N && (0, r.jsxs)(r.Fragment, {
+    }), A && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {
         className: O.clipsFooter,
         createdAt: E.default.extractTimestamp(T.id),

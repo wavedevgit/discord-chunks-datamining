@@ -28,11 +28,11 @@ function m(e, t, n, m, g, E) {
   }
   if (T && !I) return E || (E = new r), b || u(e) ? i(e, t, n, m, g, E) : o(e, t, y, n, m, g, E);
   if (!(n & d)) {
-    var A = I && h.call(e, "__wrapped__"),
-      N = S && h.call(t, "__wrapped__");
-    if (A || N) {
-      var C = A ? e.value() : e,
-        R = N ? t.value() : t;
+    var N = I && h.call(e, "__wrapped__"),
+      A = S && h.call(t, "__wrapped__");
+    if (N || A) {
+      var C = N ? e.value() : e,
+        R = A ? t.value() : t;
       return E || (E = new r), g(C, R, n, m, E)
     }
   }

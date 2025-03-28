@@ -134,9 +134,9 @@ function I(e) {
 }
 var S = {},
   T = 1e4,
-  A = 0;
+  N = 0;
 
-function N(e, t) {
+function A(e, t) {
   var n = "" + t.end + t.strict + t.sensitive,
     r = S[n] || (S[n] = {});
   if (r[e]) return r[e];
@@ -145,7 +145,7 @@ function N(e, t) {
       regexp: u()(e, i, t),
       keys: i
     };
-  return A < T && (r[e] = o, A++), o
+  return N < T && (r[e] = o, N++), o
 }
 
 function C(e, t) {
@@ -163,7 +163,7 @@ function C(e, t) {
   return [].concat(r).reduce(function(t, n) {
     if (!n && "" !== n) return null;
     if (t) return t;
-    var r = N(n, {
+    var r = A(n, {
         end: o,
         strict: s,
         sensitive: c

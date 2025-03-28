@@ -30,8 +30,8 @@ var i = n(120356),
   I = n(800965),
   S = n(157813),
   T = n(25827),
-  A = n(131951),
-  N = n(636449),
+  N = n(131951),
+  A = n(636449),
   C = n(884338),
   R = n(349619),
   P = n(981631),
@@ -67,7 +67,7 @@ function k(e) {
     idle: D,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([A.Z], () => A.Z.isVideoEnabled()), G = (0, s.e7)([A.Z], () => Object.values(A.Z.getVideoDevices())[0]), B = !1 === (null === (t = null == G ? void 0 : G.disabled) || void 0 === t || t), F = (0, f.Z)([o])[0], V = (0, g.Z)(i), {
+  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null === (t = null == G ? void 0 : G.disabled) || void 0 === t || t), F = (0, f.Z)([o])[0], V = (0, g.Z)(i), {
     parentAnalyticsLocation: Z
   } = (0, d.ZP)(), H = e => {
     (0, p.v)(Z, p.d.CAMERA, e), c.Z.setVideoEnabled(e)
@@ -118,7 +118,7 @@ function k(e) {
         justify: h.Z.Justify.END,
         basis: "50%",
         align: h.Z.Align.CENTER,
-        children: [j || (0, N.R)({
+        children: [j || (0, A.R)({
           isContextless: k.location.kind === a.E.CONTEXTLESS
         }) ? null : (0, r.jsx)(I.Z, {
           className: L.rightPipIcon,

@@ -31,7 +31,7 @@ n.d(t, {
   sf: () => ei,
   tA: () => el,
   v_: () => Q,
-  yX: () => eA
+  yX: () => eN
 }), n(611060), n(47120), n(411104), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(653041);
 var r = n(230367),
   i = n(320215),
@@ -88,10 +88,10 @@ var r = n(230367),
   T = function(e) {
     return e[e.UNSET_SAFETY_SETTINGS_PRESET = 0] = "UNSET_SAFETY_SETTINGS_PRESET", e[e.BALANCED = 1] = "BALANCED", e[e.STRICT = 2] = "STRICT", e[e.RELAXED = 3] = "RELAXED", e[e.CUSTOM = 4] = "CUSTOM", e
   }({}),
-  A = function(e) {
+  N = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ALL = 1] = "ALL", e[e.BOOKMARKS = 2] = "BOOKMARKS", e[e.REMINDERS = 3] = "REMINDERS", e
   }({});
-class N extends a.C {
+class A extends a.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, o.C, {
@@ -307,7 +307,7 @@ class N extends a.C {
     }])
   }
 }
-let C = new N;
+let C = new A;
 class R extends a.C {
   create(e) {
     let t = {
@@ -2431,7 +2431,7 @@ class eI extends a.C {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          o.folders.push(eA.internalBinaryRead(e, e.uint32(), n));
+          o.folders.push(eN.internalBinaryRead(e, e.uint32(), n));
           break;
         case 2:
           if (i === r.TD.LengthDelimited)
@@ -2448,7 +2448,7 @@ class eI extends a.C {
     return o
   }
   internalBinaryWrite(e, t, n) {
-    for (let i = 0; i < e.folders.length; i++) eA.internalBinaryWrite(e.folders[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.folders.length; i++) eN.internalBinaryWrite(e.folders[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
     if (e.guildPositions.length) {
       t.tag(2, r.TD.LengthDelimited).fork();
       for (let n = 0; n < e.guildPositions.length; n++) t.fixed64(e.guildPositions[n]);
@@ -2463,7 +2463,7 @@ class eI extends a.C {
       name: "folders",
       kind: "message",
       repeat: 1,
-      T: () => eA
+      T: () => eN
     }, {
       no: 2,
       name: "guild_positions",
@@ -2548,8 +2548,8 @@ class eT extends a.C {
     }])
   }
 }
-let eA = new eT;
-class eN extends a.C {
+let eN = new eT;
+class eA extends a.C {
   create(e) {
     let t = {
       favoriteChannels: {},
@@ -2624,7 +2624,7 @@ class eN extends a.C {
     }])
   }
 }
-let eC = new eN;
+let eC = new eA;
 class eR extends a.C {
   create(e) {
     let t = {
@@ -3203,7 +3203,7 @@ class eK extends a.C {
       no: 1,
       name: "current_tab",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.ForLaterTab", A, "FOR_LATER_TAB_"]
+      T: () => ["discord_protos.discord_users.v1.ForLaterTab", N, "FOR_LATER_TAB_"]
     }])
   }
 }

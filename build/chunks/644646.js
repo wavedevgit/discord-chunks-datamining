@@ -28,7 +28,7 @@ let y = function(e) {
     quest: o,
     autoplay: y = !0,
     learnMoreStyle: O = null
-  } = e, I = (0, f.O5)(), S = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), T = i.useMemo(() => (0, p.fh)(o, p.eC.REWARD), [o]), A = i.useCallback(t => {
+  } = e, I = (0, f.O5)(), S = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), T = i.useMemo(() => (0, p.fh)(o, p.eC.REWARD), [o]), N = i.useCallback(t => {
     var n;
     (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), I({
       questId: o.id,
@@ -39,14 +39,14 @@ let y = function(e) {
       fromContent: e.questContent,
       questId: o.id
     }), null === (n = e.onClick) || void 0 === n || n.call(e, t)
-  }, [I, o.id, e]), N = i.useRef(null), C = i.useRef(y), R = (0, _.Bg)(o.config);
+  }, [I, o.id, e]), A = i.useRef(null), C = i.useRef(y), R = (0, _.Bg)(o.config);
   return i.useEffect(() => {
-    if (null != N.current) {
+    if (null != A.current) {
       if (!T.isAnimated || S) {
-        N.current.currentTime = 0, N.current.pause();
+        A.current.currentTime = 0, A.current.pause();
         return
       }
-      y && !C.current ? N.current.play() : !y && C.current && (N.current.currentTime = 0, N.current.pause()), C.current = y
+      y && !C.current ? A.current.play() : !y && C.current && (A.current.currentTime = 0, A.current.pause()), C.current = y
     }
   }, [y, T, S]), t = R ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
@@ -60,7 +60,7 @@ let y = function(e) {
       var t;
       return (0, r.jsx)(d.Z, {
         ref: t => {
-          e.current = t, N.current = t
+          e.current = t, A.current = t
         },
         autoPlay: !S && y,
         loop: !0,
@@ -87,7 +87,7 @@ let y = function(e) {
     children: t
   }) : (0, r.jsxs)(c.P3F, {
     className: a()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
-    onClick: A,
+    onClick: N,
     children: [t, (0, r.jsx)(c.ZX5, {
       className: v.shine,
       shineSize: c.rHe.SMALL

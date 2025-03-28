@@ -35,7 +35,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A() {
+function N() {
   let [e, t] = i.useState(!1);
   if (null == (0, d.e7)([p.C], () => {
       var e;
@@ -56,7 +56,7 @@ function A() {
     children: I.NW.string(I.t["/Nz9ra"])
   })
 }
-let N = a().throttle(e => {
+let A = a().throttle(e => {
   g.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
@@ -86,7 +86,7 @@ class C extends i.PureComponent {
       sentry_issue_id: i,
       uses_client_mods: r,
       error_level: "fatal"
-    }), N(r), y.ZP.cleanupDisplaySleep()
+    }), A(r), y.ZP.cleanupDisplaySleep()
   }
   _handleSubmitReport() {
     location.reload(!0)
@@ -120,7 +120,7 @@ class C extends i.PureComponent {
             size: f.PhG.LARGE,
             onClick: this._handleSubmitReport,
             children: I.NW.string(I.t["+hivLS"])
-          }), (0, r.jsx)(A, {})]
+          }), (0, r.jsx)(N, {})]
         });
       return (0, r.jsx)(m.Z, {
         title: I.NW.string(I.t["3h+n+/"]),

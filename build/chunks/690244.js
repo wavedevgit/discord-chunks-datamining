@@ -184,8 +184,8 @@ var I = function e(t) {
     "%WeakSetPrototype%": ["WeakSet", "prototype"]
   },
   T = n(390976),
-  A = n(706165),
-  N = T.call(Function.call, Array.prototype.concat),
+  N = n(706165),
+  A = T.call(Function.call, Array.prototype.concat),
   C = T.call(Function.apply, Array.prototype.splice),
   R = T.call(Function.call, String.prototype.replace),
   P = T.call(Function.call, String.prototype.slice),
@@ -204,7 +204,7 @@ var I = function e(t) {
   },
   M = function(e, t) {
     var n, r = e;
-    if (A(S, r) && (r = "%" + (n = S[r])[0] + "%"), A(y, r)) {
+    if (N(S, r) && (r = "%" + (n = S[r])[0] + "%"), N(y, r)) {
       var i = y[r];
       if (i === b && (i = I(r)), void 0 === i && !t) throw new c("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
@@ -226,13 +226,13 @@ e.exports = function(e, t) {
     a = i.value,
     s = !1,
     u = i.alias;
-  u && (r = u[0], C(n, N([0, 1], u)));
+  u && (r = u[0], C(n, A([0, 1], u)));
   for (var d = 1, f = !0; d < n.length; d += 1) {
     var p = n[d],
       h = P(p, 0, 1),
       m = P(p, -1);
     if (('"' === h || "'" === h || "`" === h || '"' === m || "'" === m || "`" === m) && h !== m) throw new l("property names with quotes must have matching quotes");
-    if ("constructor" !== p && f || (s = !0), r += "." + p, A(y, o = "%" + r + "%")) a = y[o];
+    if ("constructor" !== p && f || (s = !0), r += "." + p, N(y, o = "%" + r + "%")) a = y[o];
     else if (null != a) {
       if (!(p in a)) {
         if (!t) throw new c("base intrinsic for " + e + " exists, but the property is not available.");
@@ -241,7 +241,7 @@ e.exports = function(e, t) {
       if (_ && d + 1 >= n.length) {
         var g = _(a, p);
         a = (f = !!g) && "get" in g && !("originalValue" in g.get) ? g.get : a[p]
-      } else f = A(a, p), a = a[p];
+      } else f = N(a, p), a = a[p];
       f && !s && (y[o] = a)
     }
   }

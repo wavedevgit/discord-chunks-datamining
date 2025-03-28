@@ -149,7 +149,7 @@ class T extends(r = o.PureComponent) {
       barStyles: I,
       fillStyles: S,
       mini: T,
-      hideBubble: N,
+      hideBubble: A,
       defaultValue: C,
       orientation: R,
       onValueRender: P,
@@ -191,7 +191,7 @@ class T extends(r = o.PureComponent) {
       }) : null,
       H = null != P ? P(t) : "".concat(F.toFixed(0), "%"),
       W = null !== (e = null == D ? void 0 : D(t)) && void 0 !== e ? e : void 0;
-    return (0, i.jsx)(A, {
+    return (0, i.jsx)(N, {
       active: n,
       keyboardFocused: r && h.Z.keyboardModeEnabled,
       children: e => {
@@ -246,7 +246,7 @@ class T extends(r = o.PureComponent) {
               children: (0, i.jsx)(p.u, {
                 color: p.u.Colors.GREY,
                 hideOnClick: !1,
-                text: N || E ? null : H,
+                text: A || E ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", y(b({}, e), {
                   className: s()(g.grabber, x),
@@ -458,7 +458,7 @@ class T extends(r = o.PureComponent) {
   }
 }
 
-function A(e) {
+function N(e) {
   let {
     active: t,
     keyboardFocused: n,

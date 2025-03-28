@@ -33,19 +33,19 @@ function T(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let A = {},
-  N = {},
+let N = {},
+  A = {},
   C = {},
   R = 0;
 
 function P(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = A[e];
+    n = N[e];
   if (null != n) return n;
   let r = O.default.getCurrentUser();
   if (null == r) return E.Hn;
   let i = y.Z.getGuild(e);
-  return null == i ? E.Hn : A[e] = E.uB({
+  return null == i ? E.Hn : N[e] = E.uB({
     user: r,
     context: i,
     checkElevated: t
@@ -70,8 +70,8 @@ function w(e) {
 
 function D(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = N[e];
-  return null != n ? n : N[e] = w(e, t)
+    n = A[e];
+  return null != n ? n : A[e] = w(e, t)
 }
 
 function L(e) {
@@ -82,7 +82,7 @@ function L(e) {
 }
 
 function x() {
-  for (let e in A = {}, N = {}, C) C[e] += 1;
+  for (let e in N = {}, A = {}, C) C[e] += 1;
   R += 1
 }
 
@@ -119,8 +119,8 @@ function G(e) {
       user: r,
       context: n
     });
-  if (N[n.id] === i) return !1;
-  N[n.id] = i, R += 1, L(n.getGuildId())
+  if (A[n.id] === i) return !1;
+  A[n.id] = i, R += 1, L(n.getGuildId())
 }
 
 function B(e) {
@@ -138,7 +138,7 @@ function B(e) {
         user: r,
         context: t
       });
-    N[t.id] !== i && (N[t.id] = i, L(t.getGuildId()), n = !0)
+    A[t.id] !== i && (A[t.id] = i, L(t.getGuildId()), n = !0)
   }
   return !!n && (R += 1, n)
 }
@@ -175,17 +175,17 @@ function Y(e) {
   let {
     channel: t
   } = e;
-  return delete N[t.id], R += 1, L(t.guild_id), !1
+  return delete A[t.id], R += 1, L(t.guild_id), !1
 }
 
 function K(e) {
   let {
     guildId: t
   } = e;
-  delete A[t];
+  delete N[t];
   let n = b.Z.getMutableBasicGuildChannelsForGuild(t);
   o().forEach(n, e => {
-    delete N[e.id]
+    delete A[e.id]
   }), R += 1, L(t)
 }
 
@@ -199,18 +199,18 @@ function z(e) {
       user: r,
       context: n
     });
-  if (i === N[n.id]) return !1;
-  N[n.id] = i, R += 1
+  if (i === A[n.id]) return !1;
+  A[n.id] = i, R += 1
 }
 
 function q(e) {
   let {
     guildId: t
   } = e;
-  delete A[t];
+  delete N[t];
   let n = b.Z.getMutableBasicGuildChannelsForGuild(t);
   o().forEach(n, e => {
-    delete N[e.id]
+    delete A[e.id]
   }), R += 1, L(t)
 }
 
@@ -318,7 +318,7 @@ class X extends(r = s.ZP.Store) {
 }
 
 function J() {
-  N = {}, A = {}, C = {}, R = 0
+  A = {}, N = {}, C = {}, R = 0
 }
 T(X, "displayName", "PermissionStore");
 let $ = new X(l.Z, {

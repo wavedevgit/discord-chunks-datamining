@@ -92,7 +92,7 @@ function O(e) {
     }, 300);
     return () => clearTimeout(e)
   }, [T]);
-  let A = i.useMemo(() => {
+  let N = i.useMemo(() => {
     let e;
     if (null == b || 0 === b.length) return "";
     if (1 === b.length) e = (0, r.jsx)(y, {
@@ -135,7 +135,7 @@ function O(e) {
         [m.text]: !n,
         [m.responsiveText]: n
       }),
-      children: A
+      children: N
     }), (0, r.jsx)(u.zxk, {
       className: m.button,
       onClick: o,

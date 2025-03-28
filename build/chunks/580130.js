@@ -34,11 +34,11 @@ let m = {},
   S = new Set,
   T = {};
 
-function A() {
+function N() {
   m = {}, E = {}, b = {}, v = !1, y = !1, O = !1, I = new Set, S = new Set
 }
 
-function N(e) {
+function A(e) {
   m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
@@ -69,7 +69,7 @@ function w(e) {
     applicationId: t,
     entitlements: n
   } = e;
-  for (let e of (I.delete(t), S.add(t), n)) !0 !== e.consumed && N(e)
+  for (let e of (I.delete(t), S.add(t), n)) !0 !== e.consumed && A(e)
 }
 
 function D(e) {
@@ -90,7 +90,7 @@ function M(e) {
     entitlements: t,
     excludeEnded: n
   } = e;
-  for (let e of (y = !0, v = !1, O = !n, t)) N(e)
+  for (let e of (y = !0, v = !1, O = !n, t)) A(e)
 }
 
 function k() {
@@ -101,7 +101,7 @@ function j(e) {
   let {
     entitlements: t
   } = e;
-  for (let e of t) N(e)
+  for (let e of t) A(e)
 }
 
 function U(e) {
@@ -110,11 +110,11 @@ function U(e) {
   } = e;
   for (let e of t)
     if (null != e.entitlements)
-      for (let t of e.entitlements) N(t)
+      for (let t of e.entitlements) A(t)
 }
 
 function G(e) {
-  return N(e.entitlement)
+  return A(e.entitlement)
 }
 
 function B(e) {
@@ -227,7 +227,7 @@ let V = new F(l.Z, {
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
   ENTITLEMENT_DELETE: B,
-  LOGOUT: A,
+  LOGOUT: N,
   ENTITLEMENTS_FETCH_FOR_USER_START: x,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
   ENTITLEMENTS_FETCH_FOR_USER_FAIL: k

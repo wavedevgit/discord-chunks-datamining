@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(221292),
   S = n(485341),
   T = n(687158),
-  A = n(228168),
-  N = n(981631),
+  N = n(228168),
+  A = n(981631),
   C = n(215023),
   R = n(474936),
   P = n(681642),
@@ -110,12 +110,12 @@ function k(e) {
             return
           }
           if (c) {
-            if (t.preventDefault(), b.default.track(N.rMx.TIERED_TENURE_BADGE_CLICKED, {
+            if (t.preventDefault(), b.default.track(A.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
                 premium_type: F,
                 viewed_user_id: null == g ? void 0 : g.userId
               }), F) {
-              (null == g ? void 0 : g.userId) === (null == B ? void 0 : B.id) ? (0, h.uL)(N.Z5c.NITRO_HOME) : (0, f.k)({
+              (null == g ? void 0 : g.userId) === (null == B ? void 0 : B.id) ? (0, h.uL)(A.Z5c.NITRO_HOME) : (0, f.k)({
                 analyticsLocations: j,
                 displayProfile: g
               }), null == L || L();
@@ -139,7 +139,7 @@ function k(e) {
           if (null != r) return null == L || L(), r(t)
         },
         v = () => {
-          e.id === S.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, x({}, (0, _.mH)(p.jn.QUEST_BADGE))), G({
+          e.id === S.i && b.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, _.mH)(p.jn.QUEST_BADGE))), G({
             action: "HOVER_BADGE"
           }), (0, I.Qf)(x({
             badge: e.id,
@@ -155,7 +155,7 @@ function k(e) {
         text: O,
         "aria-label": e.description,
         forceOpen: null != k && k(e.id),
-        delay: A.vB,
+        delay: N.vB,
         children: (0, r.jsx)(a.eee, {
           onClick: E,
           onMouseEnter: v,
@@ -163,7 +163,7 @@ function k(e) {
           children: (0, r.jsx)("img", {
             alt: " ",
             "aria-hidden": !0,
-            src: null !== (t = e.iconSrc) && void 0 !== t ? t : (0, A.Ej)(e.icon),
+            src: null !== (t = e.iconSrc) && void 0 !== t ? t : (0, N.Ej)(e.icon),
             className: o()(D.badge, d)
           })
         })

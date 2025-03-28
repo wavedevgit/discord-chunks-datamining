@@ -3,7 +3,7 @@
 n.d(t, {
   Q4: () => R,
   Vv: () => S,
-  oO: () => A,
+  oO: () => N,
   po: () => T,
   x_: () => d.Z
 }), n(47120), n(301563);
@@ -115,7 +115,7 @@ function T(e, t) {
   }
 }
 
-function A(e) {
+function N(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (n) {
@@ -125,7 +125,7 @@ function A(e) {
   return null !== (t = E.find(t => e <= t)) && void 0 !== t ? t : E[E.length - 1]
 }
 
-function N(e) {
+function A(e) {
   let [t, n] = e.split("?");
   return [t, s.parse(n)]
 }
@@ -143,7 +143,7 @@ function C(e) {
     srcIsAnimated: f = !1
   } = e;
   if (t.startsWith("data:image")) return t;
-  let [_, p] = N(t);
+  let [_, p] = A(t);
   null != l && (p.format = l), null != u && (p.quality = u), d && f && (m.test(t) || g.test(t)) && (p.animated = !0), g.test(t) && (p.format = "webp");
   let h = (0, c.Tj)({
     width: o,

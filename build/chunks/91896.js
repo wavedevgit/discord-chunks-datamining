@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(653041), n(47120);
 var r, i = n(442837),
   o = n(759174),
@@ -80,7 +80,7 @@ function S(e) {
 function T(e) {
   O(e.userId, e.applicationId), v()
 }
-class A extends(r = i.ZP.Store) {
+class N extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.Z)
   }
@@ -118,8 +118,8 @@ class A extends(r = i.ZP.Store) {
     return m.version
   }
 }
-c(A, "displayName", "GameRelationshipStore");
-let N = new A(a.Z, {
+c(N, "displayName", "GameRelationshipStore");
+let A = new N(a.Z, {
   CONNECTION_OPEN: I,
   GAME_RELATIONSHIP_ADD: S,
   GAME_RELATIONSHIP_REMOVE: T

@@ -73,10 +73,10 @@ function y(e) {
     location: "gift-button"
   }, {
     autoTrackExposure: !1
-  }), T = (0, c.Q3)("ChannelPremiumGiftButton"), A = i.type === p.d4z.DM;
+  }), T = (0, c.Q3)("ChannelPremiumGiftButton"), N = i.type === p.d4z.DM;
   if (t) return null;
-  let N = () => {
-    S && A && null != b ? (0, a.ZDy)(async () => {
+  let A = () => {
+    S && N && null != b ? (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));
@@ -111,7 +111,7 @@ function y(e) {
       "aria-label": h.NW.string(h.t.Z1RnTk),
       "aria-haspopup": "dialog",
       onClick: () => {
-        N(), I()
+        A(), I()
       }
     }), O), {
       children: (0, r.jsx)(y, {

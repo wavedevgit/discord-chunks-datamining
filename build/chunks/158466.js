@@ -61,7 +61,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  var n, i, o, a, c, u, d, f, _, p, h, m, g, E, b, v, y, O, I, S, T, A, N, C, R, P, w, D;
+  var n, i, o, a, c, u, d, f, _, p, h, m, g, E, b, v, y, O, I, S, T, N, A, C, R, P, w, D;
   let L = e.substreams.find(e => !e.isRTX && !e.isFlexFEC);
   if (null == L) return;
   let x = e.substreams.reduce((e, t) => e + s(t.rtpStats), 0),
@@ -104,8 +104,8 @@ function d(e, t) {
     framesDroppedCongestionWindow: e.framesDroppedCongestionWindow,
     framesDroppedEncoder: e.framesDroppedEncoder,
     cpuLimitedResolution: e.cpuLimitedResolution,
-    encoderQualityVmaf: null !== (A = null === (u = L.encoderQualityStats) || void 0 === u ? void 0 : u.imageQualityVmaf_v061) && void 0 !== A ? A : void 0,
-    encoderQualityPsnr: null !== (N = null === (d = L.encoderQualityStats) || void 0 === d ? void 0 : d.imageQualityWebrtcPsnrDb) && void 0 !== N ? N : void 0,
+    encoderQualityVmaf: null !== (N = null === (u = L.encoderQualityStats) || void 0 === u ? void 0 : u.imageQualityVmaf_v061) && void 0 !== N ? N : void 0,
+    encoderQualityPsnr: null !== (A = null === (d = L.encoderQualityStats) || void 0 === d ? void 0 : d.imageQualityWebrtcPsnrDb) && void 0 !== A ? A : void 0,
     qualityDecodeErrors: null !== (C = null === (f = L.encoderQualityStats) || void 0 === f ? void 0 : f.decodeErrors) && void 0 !== C ? C : void 0,
     qualityDecoderReboots: null !== (R = null === (_ = L.encoderQualityStats) || void 0 === _ ? void 0 : _.decoderReboots) && void 0 !== R ? R : void 0,
     qualityScoreErrors: null !== (P = null === (p = L.encoderQualityStats) || void 0 === p ? void 0 : p.scoreErrors) && void 0 !== P ? P : void 0,
@@ -330,7 +330,7 @@ function _(e, t, n, i) {
   let {
     screenshare: S,
     camera: T,
-    audioDevice: A
+    audioDevice: N
   } = E;
   return {
     mediaEngineConnectionId: e,
@@ -343,7 +343,7 @@ function _(e, t, n, i) {
       capturedFramesStdev: T.capturedFramesStdev
     } : null,
     clips: O,
-    audioDevice: A,
+    audioDevice: N,
     rtp: {
       inbound: v,
       outbound: b

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  enable: () => A,
+  enable: () => N,
   isNotSupported: () => S,
   trackToggleSelfDeaf: () => C,
-  trackToggleSelfMute: () => N
+  trackToggleSelfMute: () => A
 });
 var r = n(200651);
 n(192379);
@@ -96,7 +96,7 @@ function T(e) {
   })
 }
 
-function A() {
+function N() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   return S() ? Promise.resolve(!1) : (f.default.track(h.rMx.PERMISSIONS_REQUESTED, {
     type: "audio"
@@ -123,7 +123,7 @@ function A() {
   }).then(() => !0))
 }
 
-function N(e) {
+function A(e) {
   let {
     usedKeybind: t = !1,
     location: n

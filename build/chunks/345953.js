@@ -61,10 +61,10 @@ function O(e, t) {
 let I = 300,
   S = 2e3,
   T = e => "AudioContextSettingsMigrated:".concat(e),
-  A = e => e === E.Yn.STREAM ? o.h.STREAM : o.h.USER;
+  N = e => e === E.Yn.STREAM ? o.h.STREAM : o.h.USER;
 
-function N(e, t, n) {
-  return e[t].volume !== A(n) || e[t].muted || e[t].soundboardMuted || delete e[t], e
+function A(e, t, n) {
+  return e[t].volume !== N(n) || e[t].muted || e[t].soundboardMuted || delete e[t], e
 }
 
 function C(e) {
@@ -89,7 +89,7 @@ function C(e) {
 function R(e) {
   return a.JY.create({
     muted: !1,
-    volume: A(e)
+    volume: N(e)
   })
 }
 
@@ -104,7 +104,7 @@ function P() {
         s = {};
       for (let [e, t] of Object.entries(r.localMutes)) s[e] = {
         muted: t,
-        volume: A(n),
+        volume: N(n),
         modifiedAt: a,
         soundboardMuted: !1
       };
@@ -130,7 +130,7 @@ function w(e, t, n, r) {
     a = (0, m.z)(n);
   if (null == a) return !1;
   let s = e[a];
-  return s[t] = null !== (i = s[t]) && void 0 !== i ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && N(s, t, n), C(s), !0
+  return s[t] = null !== (i = s[t]) && void 0 !== i ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && A(s, t, n), C(s), !0
 }
 
 function D() {

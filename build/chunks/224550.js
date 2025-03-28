@@ -40,8 +40,8 @@ let m = (e, t, n, r) => {
       renewalInvoice: I,
       paymentSourceType: S,
       hide: T,
-      purchaseType: A,
-      productLine: N,
+      purchaseType: N,
+      productLine: A,
       basePrice: C,
       currentSubscription: R
     } = e, P = (0, i.e7)([a.ZP], () => a.ZP.inReverseTrial());
@@ -52,7 +52,7 @@ let m = (e, t, n, r) => {
       t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(I.total, I.currency), t, n), g = (0, u.og)((0, u.T4)(I.subtotal, I.currency), t, n)
     } else null != E && (t = E.interval, n = E.intervalCount);
     let D = (0, o.K)({
-        purchaseType: A || f.GZQ.SUBSCRIPTION,
+        purchaseType: N || f.GZQ.SUBSCRIPTION,
         plan: E,
         premiumSubscription: null == R ? null : R,
         isGift: !!b,
@@ -91,7 +91,7 @@ let m = (e, t, n, r) => {
         default:
           throw Error("Unexpected interval: ".concat(t))
       }
-    } else if (A === f.GZQ.ONE_TIME) switch (N) {
+    } else if (N === f.GZQ.ONE_TIME) switch (A) {
       case f.POd.COLLECTIBLES:
         k = L, M = b ? p.NW.format(p.t.ofqyUl, {
           paidURL: f.EYA.PAID_TERMS
@@ -142,7 +142,7 @@ let m = (e, t, n, r) => {
         paidURL: f.EYA.PAID_TERMS,
         contactLink: f.EYA.CONTACT,
         helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-      }) : P && N === f.POd.BOOST && null != C ? p.NW.format(p.t["2nKy//"], {
+      }) : P && A === f.POd.BOOST && null != C ? p.NW.format(p.t["2nKy//"], {
         price: (0, u.T4)(C.amount, C.currency),
         paidServiceTermsArticle: f.EYA.PAID_TERMS,
         contactUsArticle: f.EYA.CONTACT,

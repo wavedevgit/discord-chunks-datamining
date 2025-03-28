@@ -8,11 +8,11 @@ n.d(t, {
   i7: () => S,
   kI: () => m,
   re: () => y,
-  tU: () => N,
+  tU: () => A,
   u0: () => I,
   uL: () => T,
   xU: () => v,
-  xt: () => A
+  xt: () => N
 }), n(411104), n(47120), n(653041), n(978209);
 var r = n(647943),
   i = n(581282),
@@ -100,7 +100,7 @@ function T(e, t, n) {
   return t in e.channels || (e.channels[t] = l.p5.create()), n(e.channels[t])
 }
 
-function A(e, t) {
+function N(e, t) {
   null == e.versions && (e.versions = c.L.create());
   let n = 0;
   for (let e of t) {
@@ -130,7 +130,7 @@ function A(e, t) {
   }
 }
 
-function N(e, t) {
+function A(e, t) {
   let n = Object.entries(e);
   if (n.length > t)
     for (n = a().sortBy(n, e => {

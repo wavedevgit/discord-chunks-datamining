@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 });
 var r, i = n(348327),
   o = n.n(i),
@@ -43,9 +43,9 @@ function O() {
   let I = (0, h.Lw)(v, u),
     S = (null == y ? void 0 : null === (e = y.party) || void 0 === e ? void 0 : e.id) === I ? y : null,
     T = _.Z.getMutableParticipants(v.id, p.pV.SPEAKER),
-    A = T.filter(e => e.type === p.Ui.STREAM).length,
-    N = T.length - A,
-    C = _.Z.getParticipantCount(s) - A,
+    N = T.filter(e => e.type === p.Ui.STREAM).length,
+    A = T.length - N,
+    C = _.Z.getParticipantCount(s) - N,
     R = (null == S ? void 0 : null === (t = S.party) || void 0 === t ? void 0 : t.size) != null ? S.party.size[1] : 0;
   return {
     application_id: E.gD,
@@ -60,7 +60,7 @@ function O() {
     },
     party: {
       id: I,
-      size: [N, Math.max(C, R)]
+      size: [A, Math.max(C, R)]
     }
   }
 }
@@ -86,7 +86,7 @@ function T(e) {
   } = e, o = null !== (r = null == y ? void 0 : null === (n = y.party) || void 0 === n ? void 0 : null === (t = n.size) || void 0 === t ? void 0 : t[1]) && void 0 !== r ? r : 0;
   return i === b.hes.RTC_CONNECTED && !(o > 0) && I()
 }
-class A extends(r = a.ZP.Store) {
+class N extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(l.Z, d.Z, m.Z, u.Z)
   }
@@ -94,8 +94,8 @@ class A extends(r = a.ZP.Store) {
     return y
   }
 }
-v(A, "displayName", "StageChannelSelfRichPresenceStore");
-let N = new A(s.Z, {
+v(N, "displayName", "StageChannelSelfRichPresenceStore");
+let A = new N(s.Z, {
   CONNECTION_OPEN: I,
   STAGE_INSTANCE_CREATE: I,
   STAGE_INSTANCE_UPDATE: I,

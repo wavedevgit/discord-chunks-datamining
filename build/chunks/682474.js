@@ -107,11 +107,11 @@ function T(e) {
   E(e.message.channel_id, e.message)
 }
 
-function A(e) {
+function N(e) {
   return b(e.channelId, e.id)
 }
 
-function N(e) {
+function A(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -135,8 +135,8 @@ d(C, "displayName", "ForumPostRecentMessageStore"), new C(o.Z, {
   CONNECTION_OPEN: O,
   MESSAGE_CREATE: S,
   MESSAGE_UPDATE: T,
-  MESSAGE_DELETE: A,
+  MESSAGE_DELETE: N,
   LOAD_FORUM_POSTS: I,
-  LOAD_ARCHIVED_THREADS_SUCCESS: N,
-  LOAD_THREADS_SUCCESS: N
+  LOAD_ARCHIVED_THREADS_SUCCESS: A,
+  LOAD_THREADS_SUCCESS: A
 })

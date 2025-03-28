@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(116854),
   S = n(166584),
   T = n(915014),
-  A = n(228168),
-  N = n(981631),
+  N = n(228168),
+  A = n(981631),
   C = n(231930);
 
 function R(e) {
@@ -54,7 +54,7 @@ function R(e) {
     className: C.body,
     children: [(0, r.jsx)(v.Z, {
       user: t,
-      profileType: A.y0.BITE_SIZE,
+      profileType: N.y0.BITE_SIZE,
       onOpenProfile: D,
       usernameIcon: t.hasAvatarForGuild(null == P ? void 0 : P.id) && (0, r.jsx)(I.Z, {
         user: t,
@@ -64,7 +64,7 @@ function R(e) {
       pronouns: null == R ? void 0 : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
-        profileType: A.y0.BITE_SIZE,
+        profileType: N.y0.BITE_SIZE,
         onClose: x
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -76,7 +76,7 @@ function R(e) {
           onOpenProfile: D
         })]
       })
-    }), k === N.OGo.PENDING_INCOMING && (0, r.jsx)(b.Z.Overlay, {
+    }), k === A.OGo.PENDING_INCOMING && (0, r.jsx)(b.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == P ? void 0 : P.id,

@@ -126,12 +126,12 @@ function T() {
   (v = p({}, v)).fontSize !== d.yqN.FONT_SIZE_DEFAULT && (v.fontSize = d.yqN.FONT_SIZE_DEFAULT), v.zoom !== d.yqN.ZOOM_DEFAULT && (v.zoom = d.yqN.ZOOM_DEFAULT, u.Z.setZoomFactor(v.zoom))
 }
 
-function A() {
+function N() {
   if (v.keyboardModeEnabled) return !1;
   (v = p({}, v)).keyboardModeEnabled = !0
 }
 
-function N() {
+function A() {
   if (!v.keyboardModeEnabled) return !1;
   (v = p({}, v)).keyboardModeEnabled = !1
 }
@@ -420,8 +420,8 @@ let z = new K(s.Z, {
   ACCESSIBILITY_SET_FONT_SIZE: I,
   ACCESSIBILITY_SET_ZOOM: S,
   ACCESSIBILITY_RESET_TO_DEFAULT: T,
-  ACCESSIBILITY_KEYBOARD_MODE_ENABLE: A,
-  ACCESSIBILITY_KEYBOARD_MODE_DISABLE: N,
+  ACCESSIBILITY_KEYBOARD_MODE_ENABLE: N,
+  ACCESSIBILITY_KEYBOARD_MODE_DISABLE: A,
   ACCESSIBILITY_COLORBLIND_TOGGLE: C,
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: R,
   ACCESSIBILITY_SET_SATURATION: w,

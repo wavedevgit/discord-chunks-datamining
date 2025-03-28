@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(238302),
   S = n(514361),
   T = n(572397),
-  A = n(705262),
-  N = n(981631),
+  N = n(705262),
+  A = n(981631),
   C = n(921944),
   R = n(474936),
   P = n(388032),
@@ -49,7 +49,7 @@ let D = () => (0, r.jsx)("div", {
     let {
       markAsDismissed: t
     } = e, n = (0, T.q)(), i = () => {
-      null != t && t(C.L.DISMISS), n(N.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, I.Mo)()
+      null != t && t(C.L.DISMISS), n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, I.Mo)()
     };
     return (0, r.jsxs)("div", {
       className: w.editorHeader,
@@ -78,7 +78,7 @@ let D = () => (0, r.jsx)("div", {
       intervalType: null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.interval,
       intervalCount: null == p ? void 0 : null === (n = p.subscription_trial) || void 0 === n ? void 0 : n.interval_count
     }), y = e => {
-      if (e) null == o || o(), null != a && a(C.L.PRIMARY), null != f && ((0, A.Yk)({
+      if (e) null == o || o(), null != a && a(C.L.PRIMARY), null != f && ((0, N.Yk)({
         isPersisted: !0,
         themeName: c.Us[f.id],
         analyticsLocations: s
@@ -103,7 +103,7 @@ let D = () => (0, r.jsx)("div", {
     } = (0, l.cj)([S.Z], () => ({
       isPreview: S.Z.isPreview
     })), [a, c] = i.useState(!1), d = (0, T.q)(), _ = () => {
-      null != t && t(C.L.DISMISS), d(N.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, I.Mo)(), n || f.Z.open()
+      null != t && t(C.L.DISMISS), d(A.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, I.Mo)(), n || f.Z.open()
     }, p = (0, s.EQ)({
       isPreview: o,
       isCoachmark: n,
@@ -147,14 +147,14 @@ function k(e) {
     isEditorOpen: S.Z.isEditorOpen,
     shouldEditorAnimate: n && !p.Z.useReducedMotion
   })), f = (0, T.q)();
-  i.useEffect(() => f(N.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
-    s && y.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
+  i.useEffect(() => f(A.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
+    s && y.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
       type: R.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: o
     })
   }, [s, o]);
   let g = (0, T.J)(),
-    E = (0, _.Z)(null, s ? g : N.dG4);
+    E = (0, _.Z)(null, s ? g : A.dG4);
   return i.useEffect(() => {
     if (s && !c) return g
   }, [s, c, g]), (0, r.jsx)(m.Gt, {
@@ -168,11 +168,11 @@ function k(e) {
           markAsDismissed: t
         }), (0, r.jsx)(u.Ttm, {
           className: w.editorBody,
-          children: (0, r.jsxs)(A.ZP, {
-            type: A.yH.EDITOR,
-            children: [!s && (0, r.jsx)(A.ZP.Basic, {
+          children: (0, r.jsxs)(N.ZP, {
+            type: N.yH.EDITOR,
+            children: [!s && (0, r.jsx)(N.ZP.Basic, {
               className: w.selectionGroup
-            }), (0, r.jsx)(A.ZP.Gradient, {
+            }), (0, r.jsx)(N.ZP.Gradient, {
               className: w.selectionGroup,
               isCoachmark: n
             })]

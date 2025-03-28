@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -117,11 +117,11 @@ class P extends i.PureComponent {
       attributes: a,
       children: s
     } = e;
-    "rtl" === a.dir && (a.style = N(T({}, a.style), {
+    "rtl" === a.dir && (a.style = A(T({}, a.style), {
       textAlign: "right"
     }));
     let l = null !== (t = null == o ? void 0 : o(e)) && void 0 !== t ? t : (0, b.Z)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", N(T({}, a), {
+    return null != l ? l : (0, r.jsx)("div", A(T({}, a), {
       children: s
     }))
   }
@@ -134,7 +134,7 @@ class P extends i.PureComponent {
       attributes: o,
       children: a
     } = e, s = null !== (t = null == i ? void 0 : i(e)) && void 0 !== t ? t : (0, v.Z)(n, e);
-    return null != s ? s : (0, r.jsx)("span", N(T({}, o), {
+    return null != s ? s : (0, r.jsx)("span", A(T({}, o), {
       children: a
     }))
   }
@@ -316,7 +316,7 @@ class P extends i.PureComponent {
         let {
           default: e
         } = await n.e("41984").then(n.bind(n, 343602));
-        return n => (0, r.jsx)(e, N(T({}, n), {
+        return n => (0, r.jsx)(e, A(T({}, n), {
           editor: t,
           text: m.bN.getSelectedText(t, !0)
         }))
@@ -365,7 +365,7 @@ class P extends i.PureComponent {
       }) : null, (0, r.jsx)(s.mH, {
         editor: t,
         value: [...this.state.initialValue],
-        children: (0, r.jsx)(s.CX, N(T({}, v), {
+        children: (0, r.jsx)(s.CX, A(T({}, v), {
           className: a()(I.markup, O.editor, n),
           decorate: this.decorate,
           renderElement: this.renderElement,

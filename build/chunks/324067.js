@@ -104,7 +104,7 @@ function T(e) {
   return n
 }
 
-function A(e) {
+function N(e) {
   let {
     guildId: t,
     user: n
@@ -113,7 +113,7 @@ function A(e) {
   h[t] = void 0, t === p && v(t)
 }
 
-function N() {
+function A() {
   if (null == p) return !1;
   v(p)
 }
@@ -187,8 +187,8 @@ let k = new M(o.Z, {
   CHANNEL_CREATE: S,
   CHANNEL_DELETE: S,
   CHANNEL_UPDATES: T,
-  GUILD_MEMBER_UPDATE: A,
-  CURRENT_USER_UPDATE: N,
+  GUILD_MEMBER_UPDATE: N,
+  CURRENT_USER_UPDATE: A,
   GUILD_ROLE_CREATE: C,
   GUILD_ROLE_UPDATE: C,
   GUILD_ROLE_DELETE: C,

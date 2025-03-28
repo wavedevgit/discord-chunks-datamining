@@ -71,9 +71,9 @@ function y(e) {
     className: I,
     disabledInputs: S,
     isTryItOutFlow: T,
-    onUpsellClick: A
+    onUpsellClick: N
   } = e, {
-    analyticsLocations: N
+    analyticsLocations: A
   } = (0, l.ZP)(), C = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, P = (0, r.jsx)(v, {
     src: m,
     avatarDecoration: E,
@@ -101,7 +101,7 @@ function y(e) {
         onChangeAvatarDecoration: () => {
           (0, c.ps)({
             guild: null == n ? void 0 : n,
-            analyticsLocations: N,
+            analyticsLocations: A,
             isTryItOutFlow: T
           })
         }
@@ -118,7 +118,7 @@ function y(e) {
       })]
     }))
   }) : (0, r.jsxs)(s.P3F, {
-    onClick: A,
+    onClick: N,
     className: o()(h.avatar, h.clickable),
     children: [P, (0, r.jsx)(s.SrA, {
       size: "custom",

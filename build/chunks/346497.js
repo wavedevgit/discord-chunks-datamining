@@ -29,9 +29,9 @@ var r = n(913527),
   I = n(474936),
   S = n(981631),
   T = n(388032);
-let A = 10;
+let N = 10;
 
-function N(e) {
+function A(e) {
   var t, n, r;
   let {
     experimentEnabled: o,
@@ -42,7 +42,7 @@ function N(e) {
     let e = (null === (t = s.metadata) || void 0 === t ? void 0 : t.ended_at) != null ? i()(s.metadata.ended_at) : null,
       r = null === (n = (0, f.Af)(s)) || void 0 === n ? void 0 : n.planId,
       o = null != r && f.ZP.getPremiumType(r) === I.p9.TIER_2;
-    u = null != e && o && e.add(A, "days").isAfter(i()())
+    u = null != e && o && e.add(N, "days").isAfter(i()())
   }
   if (null != a) {
     let e = null === (r = (0, f.Af)(a)) || void 0 === r ? void 0 : r.planId,
@@ -79,7 +79,7 @@ function C() {
     delay: _ ? -1 : d - f,
     disable: v
   });
-  let O = !N({
+  let O = !A({
       experimentEnabled: r,
       premiumSubscription: a,
       mostRecentSubscription: i
@@ -118,7 +118,7 @@ async function R() {
   if (n || r || !i || !o || (d.Z.shouldFetchOffer() && !(0, f.I5)(t) && await (0, _.T)("BogoPromotionUtils"), d.Z.hasFetchedOffer() && (d.Z.hasAnyUnexpiredOffer() || d.Z.hasAnyUnexpiredDiscountOffer()))) return !1;
   !u.ZP.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasPurchasedFlag(I.in.PREMIUM_TIER_2)) && await (0, a.ou)(), u.ZP.hasFetchedSubscriptions() || await (0, a.jg)();
   let l = u.ZP.getMostRecentPremiumTypeSubscription();
-  return !N({
+  return !A({
     experimentEnabled: i,
     premiumSubscription: u.ZP.getPremiumTypeSubscription(),
     mostRecentSubscription: l

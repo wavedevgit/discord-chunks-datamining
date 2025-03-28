@@ -3,7 +3,7 @@
 n.d(t, {
   PH: () => R,
   ZP: () => V,
-  sQ: () => N
+  sQ: () => A
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -70,21 +70,21 @@ function T(e, t) {
   return f.ZP.getMember(e, t.id)
 }
 
-function A(e, t, n) {
+function N(e, t, n) {
   var r;
   let i = null !== (r = null == t ? void 0 : t.nick) && void 0 !== r ? r : m.ZP.getName(n);
   return {
     member: t,
-    comparator: N(e, i)
+    comparator: A(e, i)
   }
 }
 
-function N(e, t) {
+function A(e, t) {
   return "".concat(e.selfStream ? "\0" : "\x01").concat(t.toLowerCase(), "\0").concat(e.userId)
 }
 
 function C(e, t, n) {
-  return A(n, T(e, t), t)
+  return N(n, T(e, t), t)
 }
 
 function R(e, t, n, r) {
@@ -123,7 +123,7 @@ class P {
           a = null !== (i = null == o ? void 0 : o.nick) && void 0 !== i ? i : m.ZP.getName(r);
         return this._voiceStates.set(e, y(b({}, n), {
           member: o,
-          comparator: N(t, a),
+          comparator: A(t, a),
           nick: a,
           voiceState: t
         })), !0
@@ -141,7 +141,7 @@ class P {
       if ((null == o ? void 0 : o.nick) !== (null === (r = t.member) || void 0 === r ? void 0 : r.nick) || (null == o ? void 0 : o.avatar) !== (null === (i = t.member) || void 0 === i ? void 0 : i.avatar)) {
         let {
           comparator: r
-        } = A(t.voiceState, o, n);
+        } = N(t.voiceState, o, n);
         return this._voiceStates.set(e, y(b({}, t), {
           member: o,
           comparator: r,

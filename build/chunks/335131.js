@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   B1: () => x,
-  DR: () => A,
+  DR: () => N,
   F$: () => P,
   K$: () => M,
   Ov: () => j,
@@ -12,7 +12,7 @@ n.d(t, {
   fi: () => U,
   jr: () => D,
   mK: () => T,
-  oK: () => N,
+  oK: () => A,
   oc: () => R,
   qg: () => w
 });
@@ -87,12 +87,12 @@ let S = e => {
     } = e;
     S(O(e, ["openInLayer", "tab"])), t ? (0, l.jN)(b.S9g.COLLECTIBLES_SHOP) : (0, u.uL)(n ? b.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : b.Z5c.COLLECTIBLES_SHOP)
   },
-  A = () => {
+  N = () => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_CLOSE"
     }), (0, l.xf)()
   },
-  N = e => {
+  A = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_DETAILS_OPEN",
       item: e

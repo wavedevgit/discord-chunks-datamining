@@ -1,17 +1,18 @@
-/** Chunk was on 17024 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
-var i = n(442837),
-  r = n(314897),
-  a = n(979651),
-  d = n(258609);
+var r = n(442837),
+  i = n(314897),
+  o = n(979651),
+  a = n(258609);
 
-function l() {
-  return (0, i.e7)([r.default, a.Z, d.Z], () => {
+function s() {
+  return (0, r.e7)([i.default, o.Z, a.Z], () => {
     var e;
-    let t = r.default.getId(),
-      n = d.Z.getRemoteSessionId();
-    return null !== (e = a.Z.getVoiceStateForSession(t, n)) && void 0 !== e ? e : void 0
+    let t = i.default.getId(),
+      n = a.Z.getRemoteSessionId();
+    return null !== (e = o.Z.getVoiceStateForSession(t, n)) && void 0 !== e ? e : void 0
   }, [])
 }

@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -293,7 +293,7 @@ function ep(e) {
   if (null == t) t = e.channel;
   else {
     var n;
-    t = t.merge(N(T({}, e.channel.toJS()), {
+    t = t.merge(A(T({}, e.channel.toJS()), {
       bitrate: null !== (n = e.channel.bitrate) && void 0 !== n ? n : t.bitrate
     }))
   }
@@ -306,7 +306,7 @@ function eh(e) {
     overwrite: n
   } = e, r = X(t);
   if (null == r) return !1;
-  J(r.set("permissionOverwrites", N(T({}, r.permissionOverwrites), {
+  J(r.set("permissionOverwrites", A(T({}, r.permissionOverwrites), {
     [n.id]: n
   })))
 }
@@ -384,12 +384,12 @@ function eT(e) {
   return null != t && !!t.isPrivate() && (J(t.addRecipient(e.user.id, e.nick, n)), !0)
 }
 
-function eA(e) {
+function eN(e) {
   let t = X(e.channelId);
   return null != t && !!t.isPrivate() && (J(t.removeRecipient(e.user.id)), !0)
 }
 
-function eN(e) {
+function eA(e) {
   let {
     messages: t
   } = e;
@@ -506,7 +506,7 @@ let ex = new eD(l.Z, {
   CHANNEL_CREATE: e_,
   CHANNEL_DELETE: eO,
   CHANNEL_RECIPIENT_ADD: eT,
-  CHANNEL_RECIPIENT_REMOVE: eA,
+  CHANNEL_RECIPIENT_REMOVE: eN,
   CHANNEL_UPDATES: eg,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   CONNECTION_OPEN: ei,
@@ -516,8 +516,8 @@ let ex = new eD(l.Z, {
   GUILD_DELETE: eS,
   LOAD_ARCHIVED_THREADS_SUCCESS: eb,
   LOAD_CHANNELS: el,
-  LOAD_MESSAGES_AROUND_SUCCESS: eN,
-  LOAD_MESSAGES_SUCCESS: eN,
+  LOAD_MESSAGES_AROUND_SUCCESS: eA,
+  LOAD_MESSAGES_SUCCESS: eA,
   LOAD_THREADS_SUCCESS: eb,
   LOGOUT: ew,
   OVERLAY_INITIALIZE: ed,

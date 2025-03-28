@@ -1,19 +1,19 @@
-/** Chunk was on 17024 **/
+/** Chunk was on 84181 **/
 n.d(t, {
-  F: () => _
+  F: () => p
 });
 var i = n(512722),
   r = n.n(i),
-  a = n(846027),
-  d = n(287734),
+  d = n(846027),
+  a = n(287734),
   l = n(131951),
-  s = n(254238),
-  o = n(893387);
+  _ = n(254238),
+  s = n(893387);
 
-function _(e, t) {
+function p(e, t) {
   var n;
   let i = null !== (n = e.sessionId) && void 0 !== n ? n : "";
-  (0, s._)(i), (0, s.s6)();
-  let _ = null != t ? t : e.channelId;
-  r()(null != _, "attempted to transfer to unknown channel"), e.selfMute !== l.Z.isSelfMute() && a.Z.toggleSelfMute(), e.selfDeaf !== l.Z.isSelfDeaf() && a.Z.toggleSelfDeaf(), (0, o.Z)(_, "discord_client", i), d.default.selectVoiceChannel(_, !1)
+  (0, _._)(i), (0, _.s6)();
+  let p = null != t ? t : e.channelId;
+  r()(null != p, "attempted to transfer to unknown channel"), e.selfMute !== l.Z.isSelfMute() && d.Z.toggleSelfMute(), e.selfDeaf !== l.Z.isSelfDeaf() && d.Z.toggleSelfDeaf(), (0, s.Z)(p, "discord_client", i), a.default.selectVoiceChannel(p, !1)
 }

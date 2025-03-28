@@ -25,8 +25,8 @@ var r, i = n(512722),
   I = n(33039),
   S = n(979651),
   T = n(413523),
-  A = n(354459),
-  N = n(981631);
+  N = n(354459),
+  A = n(981631);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -117,14 +117,14 @@ function Q(e) {
 function X(e) {
   var t;
   let n = E.Z.getChannel(e),
-    r = (null == n ? void 0 : n.isDM()) ? A.dF.AUTO : A.dF.NONE;
-  return null !== (t = k[e]) && void 0 !== t ? t : [r, A.dF.NONE]
+    r = (null == n ? void 0 : n.isDM()) ? N.dF.AUTO : N.dF.NONE;
+  return null !== (t = k[e]) && void 0 !== t ? t : [r, N.dF.NONE]
 }
 
 function J(e) {
   if (null == k[e]) return !1;
   let [t] = k[e];
-  return t !== A.dF.NONE
+  return t !== N.dF.NONE
 }
 
 function $(e) {
@@ -161,22 +161,22 @@ function en(e) {
     ee(e, null);
     return
   }
-  let r = A.dF.NONE,
-    i = n.toArray(T.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
-  if (null != i) o()(i.type === A.fO.STREAM, "Impossible condition"), r = i.id;
+  let r = N.dF.NONE,
+    i = n.toArray(T.sI.STREAM).find(e => e.type === N.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
+  if (null != i) o()(i.type === N.fO.STREAM, "Impossible condition"), r = i.id;
   else if (1 === n.size()) r = t;
   else if (1 === n.size(T.sI.VIDEO)) {
     let [e] = n.toArray(T.sI.VIDEO);
     r = e.id
   } else {
     var a;
-    let e = n.toArray().find(e => e.type === A.fO.USER && e.id !== t && !e.ringing);
+    let e = n.toArray().find(e => e.type === N.fO.USER && e.id !== t && !e.ringing);
     r = null !== (a = null == e ? void 0 : e.id) && void 0 !== a ? a : t
   }
   let [s] = X(e);
-  if (s !== A.dF.AUTO && s !== A.dF.NONE) {
+  if (s !== N.dF.AUTO && s !== N.dF.NONE) {
     let e = n.getParticipant(s);
-    (null == e || e.type === A.fO.STREAM && null == h.Z.getActiveStreamForStreamKey(e.id)) && (s = A.dF.NONE)
+    (null == e || e.type === N.fO.STREAM && null == h.Z.getActiveStreamForStreamKey(e.id)) && (s = N.dF.NONE)
   }
   ee(e, [s, r])
 }
@@ -184,8 +184,8 @@ function en(e) {
 function er(e) {
   let t = Y(e);
   if (0 === t.size()) return;
-  let n = eM(e) || et(t) ? N.WtW.VIDEO : N.WtW.VOICE;
-  n === N.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
+  let n = eM(e) || et(t) ? A.WtW.VIDEO : A.WtW.VOICE;
+  n === A.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
 }
 
 function ei(e) {
@@ -209,7 +209,7 @@ function es(e) {
     channelId: t,
     messageId: n
   } = e, r = eo(), i = E.Z.getChannel(t);
-  return null == t || null == n || (null == i ? void 0 : i.type) !== N.d4z.GUILD_VOICE && (null == i ? void 0 : i.type) !== N.d4z.GUILD_STAGE_VOICE || V[t] ? r : (Z[t] = !1, V[t] = !0, !0)
+  return null == t || null == n || (null == i ? void 0 : i.type) !== A.d4z.GUILD_VOICE && (null == i ? void 0 : i.type) !== A.d4z.GUILD_STAGE_VOICE || V[t] ? r : (Z[t] = !1, V[t] = !0, !0)
 }
 
 function el(e) {
@@ -345,10 +345,10 @@ function eI(e) {
     id: n
   } = e, r = Y(t);
   null == n && r.toArray(T.sI.STREAM).forEach(e => {
-    (0, A._5)(e) && r.updateParticipant(e.user.id)
+    (0, N._5)(e) && r.updateParticipant(e.user.id)
   });
   let [, i] = X(t);
-  if (ee(t, [null != n ? n : A.dF.NONE, i]), (0, _.DB)(n)) {
+  if (ee(t, [null != n ? n : N.dF.NONE, i]), (0, _.DB)(n)) {
     try {
       let {
         ownerId: e
@@ -365,12 +365,12 @@ function eS(e) {
   let {
     channel: t
   } = e;
-  if (t.type === N.d4z.GROUP_DM) {
+  if (t.type === A.d4z.GROUP_DM) {
     let e = t.originChannelId;
     if (null != e) {
       var n, r;
       return G[t.id] = {
-        [N.IlC.APP]: null !== (r = null === (n = G[e]) || void 0 === n ? void 0 : n[N.IlC.APP]) && void 0 !== r ? r : N.AEg.NORMAL
+        [A.IlC.APP]: null !== (r = null === (n = G[e]) || void 0 === n ? void 0 : n[A.IlC.APP]) && void 0 !== r ? r : A.AEg.NORMAL
       }, !0
     }
   }
@@ -386,7 +386,7 @@ function eT(e) {
   return delete V[t], delete Z[t], delete H[t], ei(t)
 }
 
-function eA(e) {
+function eN(e) {
   let {
     channelId: t,
     layout: n,
@@ -397,7 +397,7 @@ function eA(e) {
   })
 }
 
-function eN(e) {
+function eA(e) {
   let {
     streamKey: t
   } = e, {
@@ -534,7 +534,7 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getSelectedParticipantId(e) {
     let [t, n] = X(e);
-    return t === A.dF.NONE ? null : t !== A.dF.AUTO ? t : n === A.dF.NONE || n === A.dF.AUTO ? null : n
+    return t === N.dF.NONE ? null : t !== N.dF.AUTO ? t : n === N.dF.NONE || n === N.dF.AUTO ? null : n
   }
   getSelectedParticipant(e) {
     let t = this.getSelectedParticipantId(e);
@@ -553,14 +553,14 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getMode(e) {
     var t;
-    return null !== (t = U[e]) && void 0 !== t ? t : eM(e) ? N.WtW.VIDEO : N.WtW.VOICE
+    return null !== (t = U[e]) && void 0 !== t ? t : eM(e) ? A.WtW.VIDEO : A.WtW.VOICE
   }
   getLayout(e) {
     var t, n;
-    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : N.IlC.APP;
-    if (__OVERLAY__) return N.AEg.NORMAL;
+    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : A.IlC.APP;
+    if (__OVERLAY__) return A.AEg.NORMAL;
     let i = eM(e);
-    return null !== (n = null === (t = G[e]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : i ? N.AEg.NO_CHAT : N.AEg.NORMAL
+    return null !== (n = null === (t = G[e]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : i ? A.AEg.NO_CHAT : A.AEg.NORMAL
   }
   getChatOpen(e) {
     var t;
@@ -574,8 +574,8 @@ class ek extends(r = l.ZP.PersistedStore) {
     return null !== (t = Z[e]) && void 0 !== t && t
   }
   isFullscreenInContext() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N.IlC.APP;
-    return Object.values(G).some(t => t[e] === N.AEg.FULL_SCREEN)
+    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A.IlC.APP;
+    return Object.values(G).some(t => t[e] === A.AEg.FULL_SCREEN)
   }
   getStageStreamSize(e) {
     return H[e]
@@ -601,7 +601,7 @@ let ej = new ek(c.Z, {
   CALL_UPDATE: e_,
   CALL_DELETE: ep,
   CHANNEL_RTC_SELECT_PARTICIPANT: eI,
-  CHANNEL_RTC_UPDATE_LAYOUT: eA,
+  CHANNEL_RTC_UPDATE_LAYOUT: eN,
   CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: em,
   CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eg,
   CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: eb,
@@ -613,8 +613,8 @@ let ej = new ek(c.Z, {
   RTC_CONNECTION_PLATFORM: eP,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: ew,
   MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eD,
-  STREAM_CLOSE: eN,
-  STREAM_DELETE: eN,
+  STREAM_CLOSE: eA,
+  STREAM_DELETE: eA,
   STREAM_WATCH: eC,
   SPEAKING: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,

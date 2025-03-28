@@ -66,11 +66,11 @@ function T(e, t) {
   }), e
 }
 
-function A() {
+function N() {
   return new Set(l().months().map(e => e.toLowerCase()))
 }
 
-function N() {
+function A() {
   return new Set(l().weekdays().map(e => e.toLowerCase()))
 }
 
@@ -127,7 +127,7 @@ function V(e, t) {
   let n, r;
   let i = e.getFullMatch().trim().toLowerCase(),
     o = D()[i];
-  return null != o ? [n, r] = o() : A().has(i) ? [n, r] = w(i, "MMMM", "month") : N().has(i) ? [n, r] = w(i, "dddd", "day") : C().has(i) ? [n, r] = w(i, "YYYY", "year") : [n, r] = w(i, v.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
+  return null != o ? [n, r] = o() : N().has(i) ? [n, r] = w(i, "MMMM", "month") : A().has(i) ? [n, r] = w(i, "dddd", "day") : C().has(i) ? [n, r] = w(i, "YYYY", "year") : [n, r] = w(i, v.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
 }
 
 function Z(e) {
@@ -163,7 +163,7 @@ function H(e) {
 }
 
 function W() {
-  return [...Array.from(A()), ...Array.from(N()), ...Array.from(C()), ...Object.keys(D())]
+  return [...Array.from(N()), ...Array.from(A()), ...Array.from(C()), ...Object.keys(D())]
 }
 
 function Y() {

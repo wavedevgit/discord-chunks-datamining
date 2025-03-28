@@ -69,8 +69,8 @@ function b(e) {
     disabled: I,
     isFocused: S,
     menuItemProps: T,
-    action: A,
-    onClose: N,
+    action: N,
+    onClose: A,
     onFocus: C,
     className: R,
     focusedClassName: P,
@@ -85,9 +85,9 @@ function b(e) {
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
     if (null == j || j({
         type: c.U.DEFAULT
-      }), null == A) return !1;
-    e.shiftKey && D || L || N(), e.persist(), null == k || k(), requestAnimationFrame(() => A(e))
-  }, [A, N, k, D, L, j]);
+      }), null == N) return !1;
+    e.shiftKey && D || L || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
+  }, [N, A, k, D, L, j]);
   return i.useEffect(() => {
     S && ((0, u.F)(U), null == C || C())
   }, [S, C]), (0, r.jsxs)(s.P, E(m({

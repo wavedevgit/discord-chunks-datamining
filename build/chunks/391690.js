@@ -124,7 +124,7 @@ function T(e) {
   n.delete(t), r.installationPaths = n, E(t), v(t)
 }
 
-function A(e) {
+function N(e) {
   let {
     path: t,
     label: n,
@@ -134,7 +134,7 @@ function A(e) {
   null != n && "" !== n && r.pathLabels[t] !== n && b(t, n), i && r.defaultInstallationPath !== t && (r.defaultInstallationPath = t)
 }
 
-function N(e) {
+function A(e) {
   let {
     metadataPayload: t
   } = e;
@@ -187,7 +187,7 @@ let R = new C(a.Z, {
   DISPATCH_APPLICATION_CANCEL: O,
   INSTALLATION_LOCATION_ADD: S,
   INSTALLATION_LOCATION_REMOVE: T,
-  INSTALLATION_LOCATION_UPDATE: A,
-  INSTALLATION_LOCATION_FETCH_METADATA: N,
+  INSTALLATION_LOCATION_UPDATE: N,
+  INSTALLATION_LOCATION_FETCH_METADATA: A,
   DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: y
 })

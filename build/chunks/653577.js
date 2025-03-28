@@ -28,10 +28,10 @@ function v(e) {
   } = e, _ = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), O = null != _ && _.length > 0, j = (0, c.ZP)(t, !0), x = null != v && v.length > 0;
   if (i.useEffect(() => {
       O && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
-        guild_id: t.guild_id,
-        channel_id: t.id
+        channel_id: t.id,
+        guild_id: t.guild_id
       })
-    }, [t.id, O, t.guild_id]), null == t.guild_id) return null;
+    }, [O, t.id, t.guild_id]), null == t.guild_id) return null;
   let C = l()(m.statusDiv, n && j ? m.hoverable : null);
   return O ? (0, r.jsx)(s.P3F, {
     className: C,

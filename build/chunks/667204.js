@@ -27,8 +27,8 @@ var r = n(512722),
   I = n(117530),
   S = n(594174),
   T = n(403182),
-  A = n(823379),
-  N = n(861990),
+  N = n(823379),
+  A = n(861990),
   C = n(555573),
   R = n(160062),
   P = n(456007),
@@ -79,9 +79,9 @@ function F(e, t) {
   }), e
 }
 async function V(e) {
-  var t, n, r, a, l, u, d, p, h, m, g, E, b, O, S, T, A;
+  var t, n, r, a, l, u, d, p, h, m, g, E, b, O, S, T, N;
   let {
-    command: N,
+    command: A,
     optionValues: w,
     context: k,
     commandTargetId: j,
@@ -98,14 +98,14 @@ async function V(e) {
   null == k.autocomplete && o.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
     context: k,
-    command: N,
+    command: A,
     commandOrigin: q
   }), await v.Z.unarchiveThreadIfNecessary(k.channel.id);
   let Q = [],
     X = [],
     J = (0, x.D7)(q);
-  if (null != N.options)
-    for (let e of N.options) {
+  if (null != A.options)
+    for (let e of A.options) {
       let t;
       if (e.type === c.jw.SUB_COMMAND || e.type === c.jw.SUB_COMMAND_GROUP || !(e.name in w)) continue;
       let n = (null === (l = k.autocomplete) || void 0 === l ? void 0 : l.name) === e.name || void 0;
@@ -210,40 +210,40 @@ async function V(e) {
         focused: n
       }))
     }
-  if (null != N.subCommandPath)
-    for (let e = N.subCommandPath.length - 1; e >= 0; e -= 1) {
+  if (null != A.subCommandPath)
+    for (let e = A.subCommandPath.length - 1; e >= 0; e -= 1) {
       let {
         name: t,
         type: n
-      } = N.subCommandPath[e];
+      } = A.subCommandPath[e];
       Q = [{
         type: n,
         name: t,
         options: Q
       }]
     }
-  if (null != N.execute) return f.ZP.trackWithMetadata(M.rMx.APPLICATION_COMMAND_USED, {
-    command_id: N.id,
-    application_id: N.applicationId,
-    command_type: N.type,
+  if (null != A.execute) return f.ZP.trackWithMetadata(M.rMx.APPLICATION_COMMAND_USED, {
+    command_id: A.id,
+    application_id: A.applicationId,
+    command_type: A.type,
     location: z(q),
     source: Y
-  }), N.execute(Q, k);
-  if (N.inputType === L.iw.BUILT_IN || N.inputType === L.iw.BUILT_IN_TEXT || N.inputType === L.iw.BUILT_IN_INTEGRATION) return;
+  }), A.execute(Q, k);
+  if (A.inputType === L.iw.BUILT_IN || A.inputType === L.iw.BUILT_IN_TEXT || A.inputType === L.iw.BUILT_IN_INTEGRATION) return;
   let $ = {
-      version: N.version,
-      id: null !== (T = null === (t = N.rootCommand) || void 0 === t ? void 0 : t.id) && void 0 !== T ? T : N.id,
-      guild_id: N.guildId,
-      name: null !== (A = null === (n = N.rootCommand) || void 0 === n ? void 0 : n.name) && void 0 !== A ? A : N.untranslatedName,
-      type: N.type,
+      version: A.version,
+      id: null !== (T = null === (t = A.rootCommand) || void 0 === t ? void 0 : t.id) && void 0 !== T ? T : A.id,
+      guild_id: A.guildId,
+      name: null !== (N = null === (n = A.rootCommand) || void 0 === n ? void 0 : n.name) && void 0 !== N ? N : A.untranslatedName,
+      type: A.type,
       options: Q,
-      application_command: N.rootCommand
+      application_command: A.rootCommand
     },
     ee = () => {
       Z(w)
     };
-  null != j && ($.target_id = j), H && ($.client_supports_contextless_activity_launch = !0), null != k.autocomplete ? (0, C.GV)(N, k, $) : (s.Z.clearAll(k.channel.id, J), W({
-    applicationId: N.applicationId,
+  null != j && ($.target_id = j), H && ($.client_supports_contextless_activity_launch = !0), null != k.autocomplete ? (0, C.GV)(A, k, $) : (s.Z.clearAll(k.channel.id, J), W({
+    applicationId: A.applicationId,
     data: $,
     context: k,
     attachments: X,
@@ -252,7 +252,7 @@ async function V(e) {
     analytics_location: z(q),
     sectionName: B,
     source: Y,
-    interactionLifecycleOptions: await F(N, k, $)
+    interactionLifecycleOptions: await F(A, k, $)
   }))
 }
 let Z = e => {
@@ -260,7 +260,7 @@ let Z = e => {
       names: [e.name.replaceAll(":", "")],
       surrogates: "",
       unicodeVersion: 6
-    }) : "customEmoji" === e.type ? p.ZP.getCustomEmojiById(e.emojiId) : null).filter(A.lm));
+    }) : "customEmoji" === e.type ? p.ZP.getCustomEmojiById(e.emojiId) : null).filter(N.lm));
     t.length > 0 && o.Z.dispatch({
       type: "EMOJI_TRACK_USAGE",
       emojiUsed: t
@@ -444,7 +444,7 @@ async function Q(e, t, n, r) {
       totalSize: s,
       largestUploadedFileSize: l
     } = await q(i, !1);
-  if (l > Math.max(o, k.Y1) || s > N.zz) return a(l), !1;
+  if (l > Math.max(o, k.Y1) || s > A.zz) return a(l), !1;
   try {
     await (0, d.$)(i)
   } catch (e) {
@@ -455,5 +455,5 @@ async function Q(e, t, n, r) {
   return {
     totalSize: s,
     largestUploadedFileSize: l
-  } = await q(i, !0), !i.some(e => e.error === M.evJ.ENTITY_TOO_LARGE) && !(s > N.zz) || (a(l), !1)
+  } = await q(i, !0), !i.some(e => e.error === M.evJ.ENTITY_TOO_LARGE) && !(s > A.zz) || (a(l), !1)
 }

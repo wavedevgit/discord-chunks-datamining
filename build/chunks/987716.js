@@ -69,8 +69,8 @@ let S = e => {
     selectedGiftStyle: O,
     setSelectedGiftStyle: S,
     emojiConfetti: T,
-    soundEffect: A,
-    setEmojiConfetti: N,
+    soundEffect: N,
+    setEmojiConfetti: A,
     setSoundEffect: C
   } = (0, l.wD)(), [R, P] = i.useState(!1), w = i.useRef(null), D = (0, s.arW)({
     orientation: "horizontal"
@@ -105,13 +105,13 @@ let S = e => {
         children: [(0, r.jsx)("div", {
           className: b.sound,
           children: (0, r.jsx)(c.Z, {
-            sound: A,
+            sound: N,
             onSelect: B
           })
         }), (0, r.jsx)("div", {
           className: b.emoji,
           children: (0, r.jsx)(h.Z, {
-            setEmojiConfetti: N,
+            setEmojiConfetti: A,
             emojiConfetti: null == T ? void 0 : T
           })
         })]

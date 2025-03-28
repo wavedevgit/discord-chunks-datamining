@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $7: () => L,
-  $8: () => eN,
+  $8: () => eA,
   $e: () => d,
   $n: () => ez,
   A5: () => k,
@@ -87,8 +87,8 @@ n.d(t, {
   nL: () => ej,
   o4: () => v,
   p9: () => s,
-  pH: () => eA,
-  pj: () => A,
+  pH: () => eN,
+  pj: () => N,
   rB: () => ec,
   rV: () => I,
   rX: () => G,
@@ -308,8 +308,8 @@ let T = Object.freeze({
       intervalCount: 1
     }
   }),
-  A = new Set(["511651880837840896"]),
-  N = 16,
+  N = new Set(["511651880837840896"]),
+  A = 16,
   C = 8,
   R = 5,
   P = 30,
@@ -416,17 +416,17 @@ let eb = Object.freeze({
   eI = 0x3200000,
   eS = 0x6400000,
   eT = 5,
-  eA = {
+  eN = {
     [i.Eu4.NONE]: eT,
     [i.Eu4.TIER_1]: 10,
     [i.Eu4.TIER_2]: 15,
     [i.Eu4.TIER_3]: 30
   },
-  eN = {
-    [i.Eu4.NONE]: eA[i.Eu4.NONE],
-    [i.Eu4.TIER_1]: eA[i.Eu4.NONE] + eA[i.Eu4.TIER_1],
-    [i.Eu4.TIER_2]: eA[i.Eu4.NONE] + eA[i.Eu4.TIER_1] + eA[i.Eu4.TIER_2],
-    [i.Eu4.TIER_3]: eA[i.Eu4.NONE] + eA[i.Eu4.TIER_1] + eA[i.Eu4.TIER_2] + eA[i.Eu4.TIER_3]
+  eA = {
+    [i.Eu4.NONE]: eN[i.Eu4.NONE],
+    [i.Eu4.TIER_1]: eN[i.Eu4.NONE] + eN[i.Eu4.TIER_1],
+    [i.Eu4.TIER_2]: eN[i.Eu4.NONE] + eN[i.Eu4.TIER_1] + eN[i.Eu4.TIER_2],
+    [i.Eu4.TIER_3]: eN[i.Eu4.NONE] + eN[i.Eu4.TIER_1] + eN[i.Eu4.TIER_2] + eN[i.Eu4.TIER_3]
   },
   eC = {
     [i.Eu4.NONE]: ep,
@@ -444,7 +444,7 @@ let eb = Object.freeze({
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
         soundboardSounds: eC[i.Eu4.NONE],
-        stickers: eN[i.Eu4.NONE],
+        stickers: eA[i.Eu4.NONE],
         stageVideoUsers: i.B9o
       }
     },
@@ -457,7 +457,7 @@ let eb = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
         soundboardSounds: eC[i.Eu4.TIER_1],
-        stickers: eN[i.Eu4.TIER_1],
+        stickers: eA[i.Eu4.TIER_1],
         stageVideoUsers: i.B9o
       }
     },
@@ -470,7 +470,7 @@ let eb = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: eC[i.Eu4.TIER_2],
-        stickers: eN[i.Eu4.TIER_2],
+        stickers: eA[i.Eu4.TIER_2],
         stageVideoUsers: i.eez
       }
     },
@@ -483,7 +483,7 @@ let eb = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: eC[i.Eu4.TIER_3],
-        stickers: eN[i.Eu4.TIER_3],
+        stickers: eA[i.Eu4.TIER_3],
         stageVideoUsers: i.RcX
       }
     }
@@ -496,9 +496,9 @@ var ew = function(e) {
     return e.FREE = "free", e.PREMIUM_STANDARD = "premium-standard", e
   }({});
 let eL = {
-  "1024422698568122368": N,
-  "511651876987469824": N,
-  "511651885459963904": N,
+  "1024422698568122368": A,
+  "511651876987469824": A,
+  "511651885459963904": A,
   "944037208325619722": C,
   "642251038925127690": R
 };

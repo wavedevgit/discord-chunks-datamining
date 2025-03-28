@@ -32,8 +32,8 @@ function O(e) {
     textClassName: I,
     emojiClassName: S,
     textSize: T = "xs",
-    animate: A = !0,
-    hasQuest: N = !1,
+    animate: N = !0,
+    hasQuest: A = !1,
     hideEmoji: C = !1,
     hideTooltip: R = !1
   } = e, P = "activity-status-web", {
@@ -96,7 +96,7 @@ function O(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [null != e && !C && (0, r.jsx)(_.Z, {
           emoji: e,
-          animate: A,
+          animate: N,
           hideTooltip: R,
           className: S
         }), null != t && (0, r.jsx)(h.Z, {
@@ -115,6 +115,6 @@ function O(e) {
       variant: "text-".concat(T, "/normal"),
       className: a()(y.text, y.dot, I),
       children: b.l
-    }), G(), N && (0, r.jsx)(p.Z, {})]
+    }), G(), A && (0, r.jsx)(p.Z, {})]
   })
 }

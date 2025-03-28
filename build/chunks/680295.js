@@ -57,7 +57,7 @@ let y = e => {
       introDelay: y = u.lG
     } = e, O = i.useRef(null), [I, S] = i.useState([]);
     (0, m.Z)(b);
-    let [T, A] = i.useState(0), [N, C] = i.useState(0), {
+    let [T, N] = i.useState(0), [A, C] = i.useState(0), {
       accessibilityLabel: R
     } = b, [P, w] = i.useState(-y), {
       stop: D,
@@ -76,7 +76,7 @@ let y = e => {
       I.forEach(n => {
         let r = n.start + n.duration;
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
-      }), A(t), C(e)
+      }), N(t), C(e)
     }, [C, I]);
     let [k, j] = i.useState(!1);
     return i.useEffect(() => {
@@ -114,7 +114,7 @@ let y = e => {
             setHasPlayedThrough: j,
             urlQueryString: g,
             maxLoops: n,
-            loopEnd: N,
+            loopEnd: A,
             bannerAdjustment: t
           }, e.src + i)
         })

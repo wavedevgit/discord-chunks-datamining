@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -734,7 +734,7 @@ class x extends _.Z {
       };
       this.experimentFlags.has(O.V8.RESET_DECODER_ON_ERRORS) && (n.params["reset-on-errors"] = "1"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_ERRORS) && (n.params["fallback-after-errors"] = "3"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS) && (n.params["fallback-on-consecutive-errors"] = "1"), this.experimentFlags.has(O.V8.SIGNAL_AV1_HARDWARE_DECODE) && (n.params["hardware-av1-decode"] = "1");
       let r = this.hardwareH264 && this.useElectronVideo && y.Z.useDirectVideo ? "1" : "0";
-      n.params["hardware-h264"] = r, u.push(n), s.name === t && (d = N(T({}, n), {
+      n.params["hardware-h264"] = r, u.push(n), s.name === t && (d = A(T({}, n), {
         params: this.getCodecParams(s.name, !1)
       }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (d.params["fixed-rate-presentation-timestamps"] = "1"), d.params["hardware-h264"] = r)
     }
@@ -749,7 +749,7 @@ class x extends _.Z {
     return this.keyframeInterval > 0 && this.clipsKeyFrameInterval > 0 ? Math.min(this.keyframeInterval, this.clipsKeyFrameInterval) : Math.max(this.keyframeInterval, this.clipsKeyFrameInterval)
   }
   getConnectionTransportOptions() {
-    let e = N(T({
+    let e = A(T({
       selfMute: this.selfMute,
       inputMode: I.GO[this.inputMode],
       inputModeOptions: this.createInputModeOptions(),
@@ -856,7 +856,7 @@ class x extends _.Z {
         i.forEach((t, n) => {
           if (t.rid === e.rid) {
             let r = this.simulcastLQDisabledSsrc !== e.ssrc && e.active;
-            i[n] = N(T({}, t), {
+            i[n] = A(T({}, t), {
               ssrc: e.ssrc,
               rtxSsrc: e.rtxSsrc,
               active: r

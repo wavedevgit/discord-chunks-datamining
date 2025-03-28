@@ -203,33 +203,33 @@ let S = f(b(function(e) {
     return !0
   })),
   T = S,
-  A = e => Object.assign(f(e), {
+  N = e => Object.assign(f(e), {
     startsWith: t => {
       var n;
-      return A(g(e, (n = t, b(e => O(e) && e.startsWith(n)))))
+      return N(g(e, (n = t, b(e => O(e) && e.startsWith(n)))))
     },
     endsWith: t => {
       var n;
-      return A(g(e, (n = t, b(e => O(e) && e.endsWith(n)))))
+      return N(g(e, (n = t, b(e => O(e) && e.endsWith(n)))))
     },
     minLength: t => {
       let n;
-      return A(g(e, (n = t, b(e => O(e) && e.length >= n))))
+      return N(g(e, (n = t, b(e => O(e) && e.length >= n))))
     },
     maxLength: t => {
       let n;
-      return A(g(e, (n = t, b(e => O(e) && e.length <= n))))
+      return N(g(e, (n = t, b(e => O(e) && e.length <= n))))
     },
     includes: t => {
       var n;
-      return A(g(e, (n = t, b(e => O(e) && e.includes(n)))))
+      return N(g(e, (n = t, b(e => O(e) && e.includes(n)))))
     },
     regex: t => {
       var n;
-      return A(g(e, (n = t, b(e => O(e) && !!e.match(n)))))
+      return N(g(e, (n = t, b(e => O(e) && !!e.match(n)))))
     }
   }),
-  N = A(b(O)),
+  A = N(b(O)),
   C = (e, t) => b(n => y(n) && e <= n && t >= n),
   R = e => b(t => y(t) && t < e),
   P = e => b(t => y(t) && t > e),
@@ -390,7 +390,7 @@ var X = {
   select: v,
   any: S,
   _: T,
-  string: N,
+  string: A,
   between: C,
   lt: R,
   gt: P,

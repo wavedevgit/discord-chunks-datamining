@@ -19,16 +19,16 @@ var r, i, o, a, s = n(161581),
   I = s.Function,
   S = s.MessageChannel,
   T = s.String,
-  A = 0,
-  N = {},
+  N = 0,
+  A = {},
   C = "onreadystatechange";
 f(function() {
   r = s.location
 });
 var R = function(e) {
-    if (d(N, e)) {
-      var t = N[e];
-      delete N[e], t()
+    if (d(A, e)) {
+      var t = A[e];
+      delete A[e], t()
     }
   },
   P = function(e) {
@@ -46,11 +46,11 @@ b && v || (b = function(e) {
   m(arguments.length, 1);
   var t = u(e) ? e : I(e),
     n = p(arguments, 1);
-  return N[++A] = function() {
+  return A[++N] = function() {
     l(t, void 0, n)
-  }, i(A), A
+  }, i(N), N
 }, v = function(e) {
-  delete N[e]
+  delete A[e]
 }, E ? i = function(e) {
   y.nextTick(P(e))
 } : O && O.now ? i = function(e) {

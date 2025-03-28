@@ -62,18 +62,18 @@ function T(e) {
   }
 }
 
-function A(e) {
+function N(e) {
   let t = e instanceof d.ZP ? T(e) : e;
   for (let n of (E.set(e.id, t), b[e.name.toLowerCase()] = t, e.aliases)) b[n.toLowerCase()] = t;
   if ((0, _.isDesktop)())
     for (let n of e.executables) v[n.name] = t
 }
 
-function N(e) {
+function A(e) {
   let {
     detectableApplications: t
   } = e;
-  for (let e of t) A(e)
+  for (let e of t) N(e)
 }
 
 function C() {
@@ -89,13 +89,13 @@ function P(e) {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && O !== n && (O = n), t)) A(S(e));
+  for (let e of (null != n && O !== n && (O = n), t)) N(S(e));
   r = void 0, I = Date.now()
 }
 class w extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    null != e && (null != e.detectableGamesEtag && (O = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => A(e)))
+    null != e && (null != e.detectableGamesEtag && (O = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => N(e)))
   }
   getState() {
     return (0, _.isDesktop)() ? {
@@ -175,7 +175,7 @@ p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrati
   detectableGames: []
 }]);
 let D = new w(l.Z, {
-  OVERLAY_INITIALIZE: N,
+  OVERLAY_INITIALIZE: A,
   GAMES_DATABASE_FETCH: C,
   GAMES_DATABASE_FETCH_FAIL: R,
   GAMES_DATABASE_UPDATE: P

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $s: () => N,
+  $s: () => A,
   Ay: () => w,
   DE: () => D,
   Fv: () => S,
   Gw: () => E,
-  JQ: () => A,
+  JQ: () => N,
   Jw: () => R,
   Mr: () => I,
   VX: () => x,
@@ -227,7 +227,7 @@ function T(e, t, n, r) {
   })
 }
 
-function A(e) {
+function N(e) {
   for (let t of g) {
     let n = e[t];
     if (null != n && n.length > 0) return !0
@@ -235,12 +235,12 @@ function A(e) {
   return !1
 }
 
-function N() {
-  return A(v.getState())
+function A() {
+  return N(v.getState())
 }
 
 function C() {
-  return A(v())
+  return N(v())
 }
 
 function R(e) {

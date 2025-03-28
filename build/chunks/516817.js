@@ -25,22 +25,22 @@ function h(e) {
     placement: d
   } = e, h = (0, f.p)(t, n, o, l, d), g = (0, u.C)(n, o), E = (0, s.e7)([c.Z], () => c.Z.getChannelId()), [b, v] = (0, i.useState)(t), [y, O] = (0, i.useState)(!1), [I, S] = (0, i.useState)(!1), {
     fadeIn: T,
-    noFade: A
+    noFade: N
   } = (0, u.X)(l, I, d);
   (0, i.useEffect)(() => {
     null == b || null != t || y ? null != t && (v(t), O(!1)) : O(!0)
   }, [t, b, y]);
-  let N = (0, i.useCallback)(() => {
+  let A = (0, i.useCallback)(() => {
       y && (v(null), S(!1), O(!1))
     }, [y]),
     C = null != t ? t : b;
   return null == C ? null : (0, r.jsx)("div", {
-    onAnimationEnd: N,
+    onAnimationEnd: A,
     className: a()(p.container, {
       [p.rtcOpened]: d === _.i.ACCOUNT && null != E,
       [p.fadeOut]: y,
       [p.fadeIn]: T,
-      [p.noFade]: A
+      [p.noFade]: N
     }),
     style: I ? {
       background: h.background

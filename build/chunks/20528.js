@@ -34,8 +34,8 @@ function I(e, t, n) {
 }
 let S = (0, r.debounce)(a.xc, 1e3),
   T = new i.V7,
-  A = new i.V7,
-  N = 3 * b.Z.Millis.MINUTE,
+  N = new i.V7,
+  A = 3 * b.Z.Millis.MINUTE,
   C = 5 * b.Z.Millis.SECOND,
   R = 12 * b.Z.Millis.SECOND,
   P = null;
@@ -58,7 +58,7 @@ function D(e, t) {
 }
 
 function L(e, t) {
-  g.Z.getAllActiveStreamKeys().includes(e) || A.start(t ? R : C, () => {
+  g.Z.getAllActiveStreamKeys().includes(e) || N.start(t ? R : C, () => {
     o.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e
@@ -95,7 +95,7 @@ class x extends s.Z {
       let {
         streamKey: n
       } = e;
-      A.stop();
+      N.stop();
       let {
         ownerId: r,
         guildId: i
@@ -104,15 +104,15 @@ class x extends s.Z {
       let o = p.Z.getMemberCount(i);
       null != o && !(o < 2) && !(o > y.tB) && u.eo.getSetting() && S(n)
     }), I(this, "handleStreamUpdate", () => {
-      A.stop()
+      N.stop()
     }), I(this, "handleStreamDelete", e => {
       let {
         reason: t,
         streamKey: n
       } = e;
-      A.stop(), t === O.si2.STREAM_FULL && ((0, l.kr)(l.u.STREAM_FULL, (0, c.r)(n)), (0, a.aP)(n, !1), this.platformShowStreamFull())
+      N.stop(), t === O.si2.STREAM_FULL && ((0, l.kr)(l.u.STREAM_FULL, (0, c.r)(n)), (0, a.aP)(n, !1), this.platformShowStreamFull())
     }), I(this, "handleStreamClose", () => {
-      T.stop(), A.stop()
+      T.stop(), N.stop()
     }), I(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t
@@ -140,7 +140,7 @@ class x extends s.Z {
         if (this.platformHandleVoiceStateUpdate(e), t !== f.default.getId() && null != n) {
           if (i && w(n, t)) return;
           let e = d.Z.getActiveStreamForUser(t, r);
-          if (null != e && e.channelId === n && (i || e.state === O.jm8.ENDED || T.start(N, () => (0, a.aP)((0, v.V9)(e), !1)), i && e.state === O.jm8.ENDED)) {
+          if (null != e && e.channelId === n && (i || e.state === O.jm8.ENDED || T.start(A, () => (0, a.aP)((0, v.V9)(e), !1)), i && e.state === O.jm8.ENDED)) {
             T.stop();
             let e = d.Z.getStreamForUser(t, r);
             if (null == e) return;

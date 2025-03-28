@@ -122,17 +122,17 @@ let T = a.forwardRef(function(e, t) {
   return (0, o.jsx)("div", b(g({}, i), {
     ref: t,
     role: "tabpanel",
-    id: A(r),
+    id: N(r),
     tabIndex: -1,
     children: n
   }))
 });
 
-function A(e) {
+function N(e) {
   return "".concat(e.replace(/\s+/g, "-").toLowerCase(), "-tab")
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return;
   let n = {};
   return "Selected" === t ? (n.backgroundColor = e, n.color = d.Z.unsafe_rawColors.WHITE_500.css) : ("Hover" === t && (n.backgroundColor = (0, u.wK)(e, .1)), n.color = e), n
@@ -149,7 +149,7 @@ class C extends(r = a.Component) {
       active: o
     } = this.state;
     if (null != e) {
-      if ("side" === r) return null != t && n === t || o ? N(e, "Selected") : i ? N(e, "Hover") : N(e);
+      if ("side" === r) return null != t && n === t || o ? A(e, "Selected") : i ? A(e, "Hover") : A(e);
       if ("top" === r) return n === t ? {
         borderColor: e,
         color: e
@@ -193,7 +193,7 @@ class C extends(r = a.Component) {
       style: this.getStyle(),
       role: "tab",
       "aria-selected": p,
-      "aria-controls": p ? A("".concat(n)) : void 0,
+      "aria-controls": p ? N("".concat(n)) : void 0,
       "aria-disabled": a,
       tabIndex: p ? 0 : -1,
       onMouseEnter: null != i ? this.handleMouseOver : void 0,

@@ -39,14 +39,14 @@ function S(e, t, n, r, O, S, T) {
     case E:
       return e == t + "";
     case p:
-      var A = s;
+      var N = s;
     case g:
-      var N = r & c;
-      if (A || (A = l), e.size != t.size && !N) break;
+      var A = r & c;
+      if (N || (N = l), e.size != t.size && !A) break;
       var C = T.get(e);
       if (C) return C == t;
       r |= u, T.set(e, t);
-      var R = a(A(e), A(t), r, O, S, T);
+      var R = a(N(e), N(t), r, O, S, T);
       return T.delete(e), R;
     case b:
       if (I) return I.call(e) == I.call(t)

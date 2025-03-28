@@ -87,17 +87,17 @@ let I = {
       setConfettiCount: v,
       setShouldFireConfetti: S,
       tier: T,
-      tierMarkerAnimationPosition: A
+      tierMarkerAnimationPosition: N
     } = e, {
-      analyticsLocations: N
-    } = (0, l.ZP)(), C = (0, c.Z)(), R = p.oCV[T] - i.premiumSubscriberCount, P = T <= A || E, w = P && T <= i.premiumTier, D = P && T < i.premiumTier, L = P && T === i.premiumTier, {
+      analyticsLocations: A
+    } = (0, l.ZP)(), C = (0, c.Z)(), R = p.oCV[T] - i.premiumSubscriberCount, P = T <= N || E, w = P && T <= i.premiumTier, D = P && T < i.premiumTier, L = P && T === i.premiumTier, {
       scaleFactor: x
     } = (0, s.q_F)({
       from: {
         scaleFactor: 0
       },
       to: {
-        scaleFactor: A >= T || E && A + 1 === T || E && -1 === A && T === p.Eu4.NONE ? 1 : 0
+        scaleFactor: N >= T || E && N + 1 === T || E && -1 === N && T === p.Eu4.NONE ? 1 : 0
       },
       config: {
         tension: 360,
@@ -118,7 +118,7 @@ let I = {
 
     function k() {
       P && (0, f.u)({
-        analyticsLocations: N,
+        analyticsLocations: A,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
           section: p.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,

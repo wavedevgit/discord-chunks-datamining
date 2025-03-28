@@ -125,7 +125,7 @@ let L = i.forwardRef((e, t) => {
       null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, m.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("38902"), n.e("51529")]).then(n.bind(n, 228620));
+        } = await n.e("51529").then(n.bind(n, 228620));
         return n => null != t.options.channel ? (0, r.jsx)(e, k(A({}, n), {
           channel: t.options.channel
         })) : null
@@ -143,7 +143,7 @@ let L = i.forwardRef((e, t) => {
           if (null != i && null != a) return (0, m.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("38902"), n.e("51529")]).then(n.bind(n, 228620));
+            } = await n.e("51529").then(n.bind(n, 228620));
             return t => (0, r.jsx)(e, k(A({}, t), {
               channel: i
             }))

@@ -25,10 +25,10 @@ let _ = 100,
   y = 1,
   O = [],
   I = 350,
-  S = a()(A, I),
-  T = a()(N, I);
+  S = a()(N, I),
+  T = a()(A, I);
 
-function A(e, t) {
+function N(e, t) {
   c.default.track(f.rMx.SEARCH_STARTED, {
     channel_id: t,
     search_type: f.aib.SOUNDBOARD,
@@ -36,7 +36,7 @@ function A(e, t) {
   })
 }
 
-function N(e, t, n, r) {
+function A(e, t, n, r) {
   c.default.track(f.rMx.SEARCH_RESULT_VIEWED, {
     search_type: f.aib.SOUNDBOARD,
     channel_id: n,

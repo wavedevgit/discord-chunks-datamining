@@ -92,7 +92,7 @@ function E(e) {
       action: "UNIGNORE",
       analyticsLocations: y
     })
-  }), A = (0, f.Z)({
+  }), N = (0, f.Z)({
     user: t,
     guildId: n,
     location: O,
@@ -102,9 +102,9 @@ function E(e) {
       action: "REPORT",
       analyticsLocations: y
     })
-  }), N = [
+  }), A = [
     [m, I],
-    [T, S, A, (0, f.T)({
+    [T, S, N, (0, f.T)({
       user: t,
       guildId: n,
       location: O,
@@ -124,7 +124,7 @@ function E(e) {
       })
     })]
   ];
-  return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
+  return A.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
     value: y,
     children: (0, r.jsx)(o.yRy, {
       targetElementRef: b,
@@ -137,7 +137,7 @@ function E(e) {
           onSelect: void 0,
           onClose: t,
           "aria-label": h.NW.string(h.t.AXIHpa),
-          children: N.map((e, t) => (0, r.jsx)(o.kSQ, {
+          children: A.map((e, t) => (0, r.jsx)(o.kSQ, {
             children: e.map(e => e)
           }, t))
         })

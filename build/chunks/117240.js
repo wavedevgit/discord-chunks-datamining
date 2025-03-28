@@ -54,11 +54,11 @@ function T(e) {
   b = !0, v.start(r, () => (0, f.lx)())
 }
 
-function A(e) {
+function N(e) {
   o = new _.Z(e.user)
 }
 
-function N() {
+function A() {
   O()
 }
 class C extends(a = l.ZP.Store) {
@@ -81,9 +81,9 @@ let R = new C(d.Z, {
   BROWSER_HANDOFF_BEGIN: S,
   BROWSER_HANDOFF_FROM_APP: T,
   BROWSER_HANDOFF_UNAVAILABLE: O,
-  BROWSER_HANDOFF_SET_USER: A,
-  LOGIN: N,
-  LOGIN_SUCCESS: N,
-  LOGOUT: N,
-  REGISTER: N
+  BROWSER_HANDOFF_SET_USER: N,
+  LOGIN: A,
+  LOGIN_SUCCESS: A,
+  LOGOUT: A,
+  REGISTER: A
 })

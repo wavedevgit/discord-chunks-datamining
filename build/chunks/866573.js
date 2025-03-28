@@ -29,8 +29,8 @@ var r = n(147018),
       if (e.name === I && 25 === e.code) return e.constructor
     }
   }(),
-  A = T && T.prototype,
-  N = S.prototype,
+  N = T && T.prototype,
+  A = S.prototype,
   C = b.set,
   R = b.getterFor(O),
   P = "stack" in S(O),
@@ -53,7 +53,7 @@ var r = n(147018),
       i.name = O, c(this, "stack", l(1, E(i.stack, 1)))
     }
   },
-  L = D.prototype = s(N),
+  L = D.prototype = s(A),
   x = function(e) {
     return {
       enumerable: !0,
@@ -71,12 +71,12 @@ var k = a(function() {
     return !(new T instanceof S)
   }),
   j = k || a(function() {
-    return N.toString !== h || "2: 1" !== String(new T(1, 2))
+    return A.toString !== h || "2: 1" !== String(new T(1, 2))
   }),
   U = k || a(function() {
     return 25 !== new T(1, "DataCloneError").code
   }),
-  G = k || 25 !== T[I] || 25 !== A[I],
+  G = k || 25 !== T[I] || 25 !== N[I],
   B = y ? j || U || G : k;
 r({
   global: !0,

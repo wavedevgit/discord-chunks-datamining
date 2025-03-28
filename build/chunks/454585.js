@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(47120);
 var r = n(392711),
   i = n.n(r),
@@ -81,17 +81,17 @@ let h = {
   I = p(s.Z.GUILD_EVENT_RULES, [(0, a.Z)(h)]),
   S = p(s.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, a.Z)(h)]),
   T = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
-  A = {
+  N = {
     text: s.Z.RULES.text
   },
-  N = {
+  A = {
     combineAndInjectMentionRule: p,
     createReactRules: a.Z,
     defaultReactRuleOptions: h,
     defaultRules: m,
     guildEventRules: I,
     notifCenterV2MessagePreviewRules: T,
-    lockscreenWidgetMessageRules: A,
+    lockscreenWidgetMessageRules: N,
     astParserFor: o._p,
     reactParserFor: o.w4,
     parse: o.w4(m),

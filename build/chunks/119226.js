@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(627341);
 var r = n(200651);
 n(192379);
@@ -101,7 +101,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     sku: t
   } = e, {

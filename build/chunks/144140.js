@@ -70,11 +70,11 @@ function T(e) {
   O = o().omitBy(O, t => t.parentId === e), delete I[e]
 }
 
-function A(e, t) {
-  c.AW.has(e.type) && N(R(e), t)
+function N(e, t) {
+  c.AW.has(e.type) && A(R(e), t)
 }
 
-function N(e, t) {
+function A(e, t) {
   var n;
   let r = (null !== (n = I[e.parentId]) && void 0 !== n ? n : 0) + 1;
   I[e.parentId] = r, t(e)
@@ -100,7 +100,7 @@ function R(e) {
 }
 
 function P(e) {
-  A(e, t => {
+  N(e, t => {
     var n;
     null != e.messageCount && (t.count = e.messageCount);
     let r = null !== (n = t.mostRecentRawMessage) && void 0 !== n ? n : t.mostRecentMessage;
@@ -160,7 +160,7 @@ function j(e) {
   } = e;
   t.forEach(P), null == n || n.forEach(e => {
     let t = f.Z.getChannel(e.channel_id);
-    null != t && e.type !== m.uaV.THREAD_STARTER_MESSAGE && A(t, t => {
+    null != t && e.type !== m.uaV.THREAD_STARTER_MESSAGE && N(t, t => {
       t.mostRecentRawMessage = e, t.mostRecentMessage = null
     })
   })
@@ -207,7 +207,7 @@ function V(e) {
   if (n || r || null != i) return !1;
   let o = f.Z.getChannel(t.channel_id);
   if (null == o || !c.Ec.has(o.type) || !Z(o, t)) return !1;
-  A(o, e => {
+  N(o, e => {
     e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
@@ -222,7 +222,7 @@ function H(e) {
     message: n
   } = e, r = O[n.channel_id], i = null !== (t = null == r ? void 0 : r.mostRecentRawMessage) && void 0 !== t ? t : null == r ? void 0 : r.mostRecentMessage;
   if (null == r || null == i || i.id !== n.id) return !1;
-  N(r, e => {
+  A(r, e => {
     null != e.mostRecentMessage && (e.mostRecentMessage = (0, l.wi)(e.mostRecentMessage, n)), null != e.mostRecentRawMessage && (e.mostRecentRawMessage = (0, l.gx)(e.mostRecentRawMessage, n))
   })
 }
@@ -235,7 +235,7 @@ function W(e) {
   if (null == r) return !1;
   let i = p.default.castChannelIdAsMessageId(n) !== t,
     o = !y.has(t);
-  N(r, e => {
+  A(r, e => {
     var n;
     let r = null !== (n = e.mostRecentRawMessage) && void 0 !== n ? n : e.mostRecentMessage;
     null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && o ? Math.max(e.count - 1, 0) : e.count, y.add(t)
@@ -253,7 +253,7 @@ function Y(e) {
       r = !y.has(e);
     return t && r
   }).length;
-  i > 0 && N(r, e => {
+  i > 0 && A(r, e => {
     var n;
     let r = null !== (n = e.mostRecentRawMessage) && void 0 !== n ? n : e.mostRecentMessage;
     null != r && t.includes(r.id) && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count -= i, t.forEach(e => y.add(e))
@@ -266,7 +266,7 @@ function K(e) {
   if (e.isAfter || e.isBefore || e.hasMoreAfter) return t;
   let n = f.Z.getChannel(e.channelId);
   if (null == n || !c.Ec.has(n.type)) return t;
-  A(n, t => {
+  N(n, t => {
     if (0 === e.messages.length) t.mostRecentRawMessage = null, t.mostRecentMessage = null, t.count = 0;
     else {
       var n;

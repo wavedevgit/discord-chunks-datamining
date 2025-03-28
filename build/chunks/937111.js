@@ -178,14 +178,14 @@ function T(e) {
   }
 }
 
-function A(e) {
+function N(e) {
   let {
     guildId: t
   } = e;
   m(t)
 }
 
-function N(e) {
+function A(e) {
   let {
     guildId: t
   } = e;
@@ -226,8 +226,8 @@ let P = new R(o.Z, {
   USER_JOIN_REQUEST_GUILDS_FETCH: I,
   MEMBER_VERIFICATION_FORM_UPDATE: T,
   INVITE_ACCEPT_SUCCESS: O,
-  ACK_APPROVED_GUILD_JOIN_REQUEST: A,
-  USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW: N,
+  ACK_APPROVED_GUILD_JOIN_REQUEST: N,
+  USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW: A,
   USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR: C,
   USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: S
 })

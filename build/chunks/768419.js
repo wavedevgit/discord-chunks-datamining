@@ -23,8 +23,8 @@ var a, s = n(392711),
   I = n(606304),
   S = n(979651),
   T = n(626135),
-  A = n(81063),
-  N = n(70956),
+  N = n(81063),
+  A = n(70956),
   C = n(823379),
   R = n(781518),
   P = n(616922),
@@ -71,16 +71,16 @@ function M(e, t) {
 let k = h.Z.get(w.ABu.SPOTIFY),
   j = "wss://dealer.spotify.com/?access_token=",
   U = "hm://pusher/v1/connections/",
-  G = 30 * N.Z.Millis.SECOND,
-  B = 30 * N.Z.Millis.SECOND,
+  G = 30 * A.Z.Millis.SECOND,
+  B = 30 * A.Z.Millis.SECOND,
   F = 100,
-  V = 5 * N.Z.Millis.MINUTE,
-  Z = 5 * N.Z.Millis.SECOND,
-  H = 1.5 * N.Z.Millis.SECOND,
+  V = 5 * A.Z.Millis.MINUTE,
+  Z = 5 * A.Z.Millis.SECOND,
+  H = 1.5 * A.Z.Millis.SECOND,
   W = "Computer",
   Y = 5,
-  K = +N.Z.Millis.MINUTE,
-  z = 3 * N.Z.Millis.SECOND,
+  K = +A.Z.Millis.MINUTE,
+  z = 3 * A.Z.Millis.SECOND,
   q = 128,
   Q = {
     MESSAGE: "message",
@@ -392,7 +392,7 @@ function eT(e) {
   eo[t] = n, J.info("Devices updated for ".concat(t, ":"), n)
 }
 
-function eA(e) {
+function eN(e) {
   let {
     accountId: t,
     deviceId: n
@@ -400,7 +400,7 @@ function eA(e) {
   eg(t, n)
 }
 
-function eN(e) {
+function eA(e) {
   var t;
   let n, {
       activity: r,
@@ -665,7 +665,7 @@ class eU extends(a = u.ZP.Store) {
       return t.replace(/;/g, "")
     }).join("; "));
     let h = {},
-      m = null != a.image ? (0, A.f)(w.ABu.SPOTIFY, a.image.url) : null;
+      m = null != a.image ? (0, N.f)(w.ABu.SPOTIFY, a.image.url) : null;
     null != a.image && null != m && (h.large_image = m), a.type !== X && (h.large_text = a.name), null != _ && (t = _.uri), n = null != i && null != i.partyId ? i.partyId : "".concat(P.lS).concat(b.default.getId());
     let g = s.length > q ? s.substring(0, q - 3) + "..." : s,
       E = {
@@ -705,11 +705,11 @@ let eG = new eU(_.Z, {
     SPOTIFY_PROFILE_UPDATE: ex,
     SPOTIFY_PLAYER_STATE: eI,
     SPOTIFY_PLAYER_PLAY: eS,
-    ACTIVITY_PLAY: eN,
+    ACTIVITY_PLAY: eA,
     ACTIVITY_SYNC: eC,
     ACTIVITY_SYNC_STOP: eb,
     SPOTIFY_SET_DEVICES: eT,
-    SPOTIFY_SET_ACTIVE_DEVICE: eA,
+    SPOTIFY_SET_ACTIVE_DEVICE: eN,
     SPEAKING: eD,
     VOICE_STATE_UPDATES: eL,
     MEDIA_ENGINE_SET_GO_LIVE_SOURCE: eM

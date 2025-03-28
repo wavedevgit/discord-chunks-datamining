@@ -27,10 +27,10 @@ var r = n(200651),
   I = n(794324),
   S = n(474936),
   T = n(388032),
-  A = n(134442);
-let N = 90,
+  N = n(134442);
+let A = 90,
   C = 28,
-  R = (0, E.IC)(N),
+  R = (0, E.IC)(A),
   P = e => {
     let {
       category: t
@@ -40,7 +40,7 @@ let N = 90,
     return g.ZP.canUseCollectibles(a) ? t.summary : T.NW.format(T.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: o,
-        className: A.getPremiumHook,
+        className: N.getPremiumHook,
         onClick: () => {
           (0, _.Z)({
             subscriptionTier: S.Si.TIER_2,
@@ -65,10 +65,10 @@ let N = 90,
     return /.*\.png/i.test(t) ? (0, r.jsx)("img", {
       src: t,
       alt: "",
-      className: A.animationAsset
+      className: N.animationAsset
     }) : (0, r.jsx)(f.Z, {
       src: t,
-      className: A.animationAsset,
+      className: N.animationAsset,
       autoPlay: !0,
       loop: !0
     })
@@ -88,7 +88,7 @@ function D(e) {
   } = (0, I.tK)(t), S = !!(null == _ ? void 0 : _.showDarkBannerText);
   return (0, r.jsxs)(v.Z, {
     asset: p,
-    className: a()(A.shopBanner, n),
+    className: a()(N.shopBanner, n),
     style: null != o ? {
       background: "".concat((0, O.nH)(o), " border-box border-box"),
       outlineColor: o.border.toHslString()
@@ -96,20 +96,20 @@ function D(e) {
     children: [!d && null != g && f && (0, r.jsx)(w, {
       src: g
     }), (null == _ ? void 0 : _.addAttributionLogo) ? (0, r.jsxs)("div", {
-      className: A.discordLogo,
+      className: N.discordLogo,
       children: [(0, r.jsx)(c.gw7, {
         size: "custom",
         width: 28,
         height: 28,
         color: "currentColor",
-        className: A.discordIcon
+        className: N.discordIcon
       }), (0, r.jsx)(m.Z, {
-        className: A.discordWordmark
+        className: N.discordWordmark
       })]
     }) : (0, r.jsx)(c.LZC, {
       size: C
     }), (null == _ ? void 0 : _.addLogo) ? (0, r.jsx)("img", {
-      className: A.categoryLogo,
+      className: N.categoryLogo,
       src: (0, E.uV)(t.logo, {
         size: R
       }),
@@ -118,10 +118,10 @@ function D(e) {
         maxWidth: null == _ ? void 0 : _.logoMaxWidth
       }
     }) : (0, r.jsx)(c.LZC, {
-      size: N
+      size: A
     }), (0, r.jsx)(c.Text, {
-      className: a()(A.summary, {
-        [A.blackSummary]: S
+      className: a()(N.summary, {
+        [N.blackSummary]: S
       }),
       style: null != t.bannerTextColor ? {
         color: t.bannerTextColor
@@ -132,7 +132,7 @@ function D(e) {
       }) : t.summary
     }), !i && (0, r.jsx)(y.Z, {
       category: t,
-      className: A.limitedTimeBadge,
+      className: N.limitedTimeBadge,
       display: "banner"
     })]
   })

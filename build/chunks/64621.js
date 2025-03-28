@@ -32,8 +32,8 @@ function T(e) {
     children: n,
     user: T
   } = e, {
-    profileType: A
-  } = (0, h.z)(), N = (0, p.T)({
+    profileType: N
+  } = (0, h.z)(), A = (0, p.T)({
     location: "UserProfilePopoutInteractionCoachmark"
   }), C = (0, o.e7)([_.default], () => {
     var e;
@@ -43,7 +43,7 @@ function T(e) {
       type: t
     } = e;
     return t === g.IIU.CUSTOM_STATUS
-  })), P = () => !C && A === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? N && null == R : t === m.n_.STATUS ? N : t === m.n_.ACTIVITY && !N), [w, D] = i.useState(!1);
+  })), P = () => !C && N === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? A && null == R : t === m.n_.STATUS ? A : t === m.n_.ACTIVITY && !A), [w, D] = i.useState(!1);
   (0, l.Z)(() => D(!0), P() ? O : null);
   let {
     asset: L,
@@ -53,7 +53,7 @@ function T(e) {
     header: j,
     spacing: U,
     dismissibleContentType: G
-  } = N ? {
+  } = A ? {
     asset: y,
     assetClassName: b.profileImage,
     className: b.profileCoachmark,

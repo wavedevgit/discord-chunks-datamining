@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ch: () => N,
-  Tr: () => A
+  Ch: () => A,
+  Tr: () => N
 }), n(230036), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -268,7 +268,7 @@ class T extends i.Component {
     })
   }
 }
-class A extends T {
+class N extends T {
   isBrowserCompatible() {
     return (0, d.vu)() >= 61
   }
@@ -328,7 +328,7 @@ class A extends T {
     super(...e), g(this, "state", E({}, this.initialState)), g(this, "paymentRequestWallet", "googlePay")
   }
 }
-class N extends T {
+class A extends T {
   isBrowserCompatible() {
     return (0, d.G6)()
   }

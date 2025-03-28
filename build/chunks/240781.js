@@ -91,7 +91,7 @@ let O = [{
     } = e, h = (0, l.e7)([m.Z], () => m.Z.getStatus(t.id)), {
       product: g,
       purchase: S
-    } = (0, d.Z)(null == o ? void 0 : o.skuId), T = E.ZP.canUseCollectibles(t), A = (0, u.qS)(S), N = (0, u.G1)(g), C = !T && A, R = (0, p.M)(!N || T), P = (0, f.k)(g), w = i.useMemo(() => C ? v.NW.string(v.t.zrBmQE) : (0, s.EQ)([N, T, R]).with([!0, !0, !1], () => v.NW.string(v.t.L5hyz8)).with([!0, !1, !0], () => v.NW.string(v.t.q0PlFh)).with([!0, !1, !1], () => v.NW.string(v.t.ucqOV1)).otherwise(() => v.NW.string(v.t.UROtt7)), [C, N, T, R]);
+    } = (0, d.Z)(null == o ? void 0 : o.skuId), T = E.ZP.canUseCollectibles(t), N = (0, u.qS)(S), A = (0, u.G1)(g), C = !T && N, R = (0, p.M)(!A || T), P = (0, f.k)(g), w = i.useMemo(() => C ? v.NW.string(v.t.zrBmQE) : (0, s.EQ)([A, T, R]).with([!0, !0, !1], () => v.NW.string(v.t.L5hyz8)).with([!0, !1, !0], () => v.NW.string(v.t.q0PlFh)).with([!0, !1, !1], () => v.NW.string(v.t.ucqOV1)).otherwise(() => v.NW.string(v.t.UROtt7)), [C, A, T, R]);
     return null != g && (null == S || C) ? (0, r.jsxs)("div", {
       className: a()(y.modalPreview, y.shopPreviewContainer, _),
       children: [(0, r.jsx)("div", {

@@ -28,8 +28,8 @@ var r = n(200651),
   I = n(74538),
   S = n(272008),
   T = n(497505),
-  A = n(981631),
-  N = n(675654),
+  N = n(981631),
+  A = n(675654),
   C = n(474936),
   R = n(388032),
   P = n(269114),
@@ -43,7 +43,7 @@ function L(e) {
     onClose: h,
     quest: m,
     location: g
-  } = e, E = i.useRef(null), [b, v] = i.useState(null), y = i.useRef(new s.qA), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), I = (null === (t = m.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [A, C] = i.useState({
+  } = e, E = i.useRef(null), [b, v] = i.useState(null), y = i.useRef(new s.qA), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), I = (null === (t = m.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
     state: "loading"
   });
   i.useEffect(() => {
@@ -66,9 +66,9 @@ function L(e) {
       })
     })
   }, [m, g, I]);
-  let R = "loading" === A.state,
-    w = !O && !I && "claimed" === A.state,
-    D = "claimed" === A.state && null != A.entitlements && A.entitlements.items.some(e => e.consumed);
+  let R = "loading" === N.state,
+    w = !O && !I && "claimed" === N.state,
+    D = "claimed" === N.state && null != N.entitlements && N.entitlements.items.some(e => e.consumed);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: v,
@@ -85,22 +85,22 @@ function L(e) {
         hideShadow: !0,
         children: R ? (0, r.jsx)(c.$jN, {
           type: c.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === A.state ? (0, r.jsx)(x, {
-          errorReason: A.errorReason,
+        }) : "error" === N.state ? (0, r.jsx)(x, {
+          errorReason: N.errorReason,
           onClose: h
         }) : D ? (0, r.jsx)(k, {
-          duration: M(null !== (u = null === (n = A.entitlements) || void 0 === n ? void 0 : n.items) && void 0 !== u ? u : []),
+          duration: M(null !== (u = null === (n = N.entitlements) || void 0 === n ? void 0 : n.items) && void 0 !== u ? u : []),
           onClose: h
         }) : (0, r.jsx)(j, {
-          duration: M(null !== (d = null === (o = A.entitlements) || void 0 === o ? void 0 : o.items) && void 0 !== d ? d : []),
+          duration: M(null !== (d = null === (o = N.entitlements) || void 0 === o ? void 0 : o.items) && void 0 !== d ? d : []),
           onClose: h
         })
       })
     }), w && (0, r.jsx)(p.Z, {
       confettiTarget: E.current,
       confettiCanvas: b,
-      sprites: N.CA,
-      colors: N.Br
+      sprites: A.CA,
+      colors: A.Br
     })]
   })
 }
@@ -194,7 +194,7 @@ function k(e) {
         variant: "text-sm/normal",
         className: P.text,
         children: R.NW.format(R.t["jzW5/P"], {
-          helpCenterLink: O.Z.getArticleURL(A.BhN.FRACTIONAL_PREMIUM_ABOUT),
+          helpCenterLink: O.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
           date: s
         })
@@ -212,10 +212,10 @@ function j(e) {
     duration: t,
     onClose: n
   } = e, o = i.useCallback(() => {
-    u.Z.open(A.oAB.SUBSCRIPTIONS, null, {}), n()
+    u.Z.open(N.oAB.SUBSCRIPTIONS, null, {}), n()
   }, [n]);
   return (0, r.jsx)(c.f6W, {
-    theme: A.BRd.DARK,
+    theme: N.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: a()(P.claimedRootContainer, e),
       children: [(0, r.jsxs)("div", {
@@ -252,7 +252,7 @@ function j(e) {
           variant: "text-sm/normal",
           className: P.text,
           children: R.NW.format(R.t.KnH4jo, {
-            helpCenterLink: O.Z.getArticleURL(A.BhN.FRACTIONAL_PREMIUM_ABOUT),
+            helpCenterLink: O.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT),
             duration: t
           })
         }), (0, r.jsx)(c.zxk, {

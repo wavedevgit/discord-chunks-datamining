@@ -34,8 +34,8 @@ function I(e) {
     priceOptions: I,
     shouldShowUpdatedPaymentModal: S,
     isEligibleForDiscount: T,
-    discountAmountOff: A,
-    isEligibleForTrial: N
+    discountAmountOff: N,
+    isEligibleForTrial: A
   } = e, C = (0, l.e7)([_.default], () => _.default.locale), R = (0, l.e7)([p.Z], () => p.Z.get(n)), P = (0, d.Z)().fractionalState !== v.a$.NONE, {
     isGift: w,
     giftRecipient: D
@@ -77,20 +77,20 @@ function I(e) {
         })
       })]
     }),
-    Y = () => P ? (0, E.T4)(0, j.currency) : T && null != A && R.interval === v.rV.MONTH ? (0, E.T4)(j.amount - A, j.currency) : N ? (0, E.T4)(0, j.currency, {
+    Y = () => P ? (0, E.T4)(0, j.currency) : T && null != N && R.interval === v.rV.MONTH ? (0, E.T4)(j.amount - N, j.currency) : A ? (0, E.T4)(0, j.currency, {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }) : (0, E.T4)(j.amount, j.currency),
     K = () => {
-      if (T && null != A && R.interval === v.rV.MONTH) {
+      if (T && null != N && R.interval === v.rV.MONTH) {
         var e;
         return y.NW.format(y.t["VeE/4O"], {
           numMonths: null !== (e = null == B ? void 0 : B.discount.user_usage_limit) && void 0 !== e ? e : v.rt,
-          discountedPrice: (0, E.T4)(j.amount - A, j.currency),
+          discountedPrice: (0, E.T4)(j.amount - N, j.currency),
           regularPrice: (0, E.T4)(j.amount, j.currency)
         })
       }
-      return N ? y.NW.format(F, {
+      return A ? y.NW.format(F, {
         price: (0, E.T4)(j.amount, j.currency)
       }) : P ? y.NW.format(V, {
         price: (0, E.T4)(j.amount, j.currency)

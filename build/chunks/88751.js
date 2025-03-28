@@ -84,14 +84,14 @@ function T(e) {
   return t.length > 0
 }
 
-function A(e) {
+function N(e) {
   let {
     channels: t
   } = e;
   for (let e of t) delete g[e.id]
 }
 
-function N(e) {
+function A(e) {
   let {
     guildId: t
   } = e;
@@ -161,11 +161,11 @@ class L extends(r = a.ZP.Store) {
 }
 m(L, "displayName", "StageChannelRoleStore");
 let x = new L(s.Z, {
-  CHANNEL_UPDATES: A,
+  CHANNEL_UPDATES: N,
   CONNECTION_OPEN: w,
   GUILD_MEMBER_REMOVE: C,
   GUILD_MEMBER_UPDATE: C,
-  GUILD_ROLE_UPDATE: N,
+  GUILD_ROLE_UPDATE: A,
   PASSIVE_UPDATE_V2: P,
   VOICE_STATE_UPDATES: R,
   GUILD_CREATE: D,

@@ -50,7 +50,7 @@ function S(e) {
   let {
     soundboardSound: t,
     closePicker: O
-  } = e, S = (0, d.Iu)(e => e.searchQuery), T = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? void 0 : t.guildId)), N = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), C = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
+  } = e, S = (0, d.Iu)(e => e.searchQuery), T = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), N = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? void 0 : t.guildId)), A = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), C = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
   if (null != t && S.length > 0) return (0, r.jsx)(f.Z, {
     graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(s.Z, {
       emojiId: t.emojiId,
@@ -61,12 +61,12 @@ function S(e) {
       color: "currentColor",
       className: y.emoji
     }),
-    graphicSecondary: null != A ? (0, r.jsx)(u.Z, {
-      guild: A,
-      shouldAnimate: !N && C
+    graphicSecondary: null != N ? (0, r.jsx)(u.Z, {
+      guild: N,
+      shouldAnimate: !A && C
     }) : null,
     titlePrimary: t.name,
-    titleSecondary: null == A ? void 0 : A.name,
+    titleSecondary: null == N ? void 0 : N.name,
     isFavorite: T
   });
   let P = () => {

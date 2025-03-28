@@ -39,14 +39,14 @@ function v(e) {
         action: "OPEN_VOICE_GUILD"
       }), null == O || O()
     },
-    A = e => {
+    N = e => {
       e.stopPropagation(), a.default.selectVoiceChannel(v.id), (0, u.Kh)(v.id), null == y || y({
         action: "OPEN_VOICE_CHANNEL"
       }), null == O || O()
     },
-    N = I === m.y0.FULL_SIZE,
+    A = I === m.y0.FULL_SIZE,
     C = I === m.y0.PANEL,
-    R = !N && !C;
+    R = !A && !C;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: E.voiceChannelDivider
@@ -72,7 +72,7 @@ function v(e) {
           color: o.TVs.colors.INTERACTIVE_NORMAL,
           className: E.voiceIcon
         }), (0, r.jsx)(o.P3F, {
-          onClick: A,
+          onClick: N,
           className: E.clickableText,
           children: (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",

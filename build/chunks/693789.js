@@ -141,8 +141,8 @@ function S(e) {
     submitting: E = !1,
     type: S = "button",
     style: T,
-    wrapperClassName: A,
-    className: N,
+    wrapperClassName: N,
+    className: A,
     innerClassName: C,
     onClick: R,
     onDoubleClick: P,
@@ -161,7 +161,7 @@ function S(e) {
   } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     W = H && (null != L || null != x),
-    Y = W ? null : A,
+    Y = W ? null : N,
     K = O(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
@@ -184,7 +184,7 @@ function S(e) {
       disabled: h,
       style: T,
       rel: j,
-      className: a()(N, I({
+      className: a()(A, I({
         look: t,
         color: n,
         size: o,
@@ -204,7 +204,7 @@ function S(e) {
     }))
   }));
   return W ? (0, r.jsxs)("span", {
-    className: a()(f.disabledButtonWrapper, A, o, {
+    className: a()(f.disabledButtonWrapper, N, o, {
       [f.grow]: _,
       [f.fullWidth]: s
     }),

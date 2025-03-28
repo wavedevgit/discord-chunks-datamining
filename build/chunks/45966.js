@@ -83,11 +83,11 @@ function T(e, t, n) {
   })
 }
 
-function A(e, t, n) {
+function N(e, t, n) {
   return e.map(e => T(e, t, n))
 }
 
-function N(e) {
+function A(e) {
   let {
     guildId: t,
     prompts: n,
@@ -101,7 +101,7 @@ function N(e) {
   } = e;
   O = !1;
   let u = _.ZP.getOnboardingStatus(t) === _.uX.READY,
-    d = A(n, a, s);
+    d = N(n, a, s);
   b[t] = {
     enabled: i,
     mode: l,
@@ -124,7 +124,7 @@ function R(e) {
   let {
     guildId: u,
     updates: d
-  } = e, f = null !== (o = null !== (i = d.onboardingPromptsSeen) && void 0 !== i ? i : null === (t = b[u]) || void 0 === t ? void 0 : t.onboardingPromptsSeen) && void 0 !== o ? o : {}, _ = null !== (s = null !== (a = d.onboardingResponsesSeen) && void 0 !== a ? a : null === (n = b[u]) || void 0 === n ? void 0 : n.onboardingResponsesSeen) && void 0 !== s ? s : {}, p = A(null !== (c = null !== (l = d.prompts) && void 0 !== l ? l : null === (r = b[u]) || void 0 === r ? void 0 : r.prompts) && void 0 !== c ? c : [], f, _);
+  } = e, f = null !== (o = null !== (i = d.onboardingPromptsSeen) && void 0 !== i ? i : null === (t = b[u]) || void 0 === t ? void 0 : t.onboardingPromptsSeen) && void 0 !== o ? o : {}, _ = null !== (s = null !== (a = d.onboardingResponsesSeen) && void 0 !== a ? a : null === (n = b[u]) || void 0 === n ? void 0 : n.onboardingResponsesSeen) && void 0 !== s ? s : {}, p = N(null !== (c = null !== (l = d.prompts) && void 0 !== l ? l : null === (r = b[u]) || void 0 === r ? void 0 : r.prompts) && void 0 !== c ? c : [], f, _);
   b[u] = E(m({}, b[u], d), {
     prompts: p
   })
@@ -164,7 +164,7 @@ function D(e) {
   w(t, n);
   let o = b[t];
   if (null == o) return !1;
-  let a = A(o.prompts, r, i);
+  let a = N(o.prompts, r, i);
   b[t] = E(m({}, o), {
     prompts: a,
     onboardingPrompts: a.filter(e => e.inOnboarding),
@@ -268,7 +268,7 @@ h(U, "displayName", "GuildOnboardingPromptsStore");
 let G = new U(s.Z, {
   CONNECTION_OPEN: S,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: I,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: N,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: A,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: C,
   GUILD_ONBOARDING_SELECT_OPTION: P,
   GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,

@@ -108,7 +108,7 @@ function T(e) {
     channel: r
   } = e;
   if (!l.AW.has(r.type)) return !1;
-  if ((null === (t = r.threadMetadata) || void 0 === t ? void 0 : t.archived) === !0) return N(r);
+  if ((null === (t = r.threadMetadata) || void 0 === t ? void 0 : t.archived) === !0) return A(r);
   {
     let e = null !== (n = h[r.guild_id]) && void 0 !== n ? n : {};
     h[r.guild_id] = p(f({}, e), {
@@ -119,7 +119,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function N(e) {
   let {
     guildId: t,
     threads: n,
@@ -129,7 +129,7 @@ function A(e) {
   n.forEach(e => v(t, e))
 }
 
-function N(e) {
+function A(e) {
   let {
     guild_id: t,
     parent_id: n,
@@ -145,7 +145,7 @@ function C(e) {
   let {
     channel: t
   } = e;
-  return N(t)
+  return A(t)
 }
 
 function R(e) {
@@ -191,7 +191,7 @@ let D = new w(s.Z, {
   GUILD_DELETE: S,
   THREAD_CREATE: T,
   THREAD_UPDATE: T,
-  THREAD_LIST_SYNC: A,
+  THREAD_LIST_SYNC: N,
   THREAD_DELETE: C,
   CHANNEL_DELETE: R
 })

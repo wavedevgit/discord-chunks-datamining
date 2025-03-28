@@ -96,23 +96,23 @@ let v = e => {
     onClick: I,
     selected: S = !1
   } = e, T = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]);
-  let A = (0, s.k6)();
+  let N = (0, s.k6)();
   null == _ && null != m && (n = E(t = (0, c.Zg)(m)));
-  let N = i.useCallback(e => {
+  let A = i.useCallback(e => {
       if (null == O);
-      else if ("string" == typeof O) A.push(O);
+      else if ("string" == typeof O) N.push(O);
       else {
         let {
           pathname: e = "",
           state: t
         } = O;
-        A.push(e, t)
+        N.push(e, t)
       }
       null != I && I(e)
-    }, [A, O, I]),
+    }, [N, O, I]),
     C = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, r.jsxs)(l.P3F, p(f({}, T), {
-    onClick: N,
+    onClick: A,
     className: a()(v, u.wrapper, {
       [u.selected]: S
     }),

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(653041);
 var r, i = n(392711),
   o = n.n(i),
@@ -118,7 +118,7 @@ class T extends(r = a.ZP.PersistedStore) {
   }
 }
 _(T, "displayName", "StickersPersistedStore"), _(T, "persistKey", "StickersPersistedStoreV2");
-let A = new T(s.Z, {
+let N = new T(s.Z, {
   STICKER_TRACK_USAGE: y,
   USER_SETTINGS_PROTO_UPDATE: S
 })

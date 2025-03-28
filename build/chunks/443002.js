@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -26,12 +26,12 @@ var r = n(200651),
   I = n(981631),
   S = n(388032),
   T = n(37325);
-let A = function(e) {
+let N = function(e) {
   let {
     analyticsLocation: t,
     guild: n,
-    onClose: A
-  } = e, [N, C] = i.useState(!0), R = i.useRef(!1), P = (0, l.Z)(() => Date.now()), {
+    onClose: N
+  } = e, [A, C] = i.useState(!0), R = i.useRef(!1), P = (0, l.Z)(() => Date.now()), {
     analyticsLocations: w
   } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useCallback(() => {
     null != x.current && null != L.current && L.current.scrollTo({
@@ -39,7 +39,7 @@ let A = function(e) {
       animate: !0
     })
   }, []), k = (0, u.Ek)(n, "GuildBoostingMarketing"), j = i.useCallback(() => {
-    null == A || A(), _.default.track(I.rMx.MODAL_DISMISSED, {
+    null == N || N(), _.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
@@ -47,7 +47,7 @@ let A = function(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - P
     })
-  }, [A, t, w, P, n.id]), U = i.useCallback(e => {
+  }, [N, t, w, P, n.id]), U = i.useCallback(e => {
     e && !R.current && (_.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
@@ -72,7 +72,7 @@ let A = function(e) {
       window.removeEventListener("keydown", e)
     }
   }, [j]), (0, r.jsxs)(r.Fragment, {
-    children: [null != A && (0, r.jsx)(a.P3F, {
+    children: [null != N && (0, r.jsx)(a.P3F, {
       "aria-label": S.NW.string(S.t.cpT0Cg),
       onClick: j,
       className: T.closeIconWrapper,
@@ -138,7 +138,7 @@ let A = function(e) {
       })]
     }), (0, r.jsx)(g.Z, {
       guild: n,
-      isVisible: !N,
+      isVisible: !A,
       closeLayer: j
     })]
   })

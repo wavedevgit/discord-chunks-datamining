@@ -68,11 +68,11 @@ let S = {
     opacity: 1
   };
 
-function A() {
+function N() {
   return 500 !== a().random(1, 1e3) ? "call_ringing" : a().sample(["call_ringing_beat", "call_ringing_snow_halation"])
 }
 
-function N() {
+function A() {
   let e = (0, l.Wu)([g.Z, h.Z, u.ZP], () => g.Z.getIncomingCalls().filter(e => {
       let {
         channel: t
@@ -86,7 +86,7 @@ function N() {
     v = i.useRef(!1),
     O = (0, s.Z)(() => {
       let e = "call_ringing";
-      return a === b.YC.CLASSIC ? (0, f.tu)(A(), e) : (0, f.uk)("call_ringing", a)
+      return a === b.YC.CLASSIC ? (0, f.tu)(N(), e) : (0, f.uk)("call_ringing", a)
     }, [a]);
   return i.useEffect(() => () => {
     O.stop()
@@ -116,4 +116,4 @@ function N() {
     animatedStyle: e
   })))
 }
-let C = i.memo(N)
+let C = i.memo(A)

@@ -226,14 +226,14 @@ function I(e, t, n) {
 }
 let S = I.bind(null, "get"),
   T = I.bind(null, "post"),
-  A = I.bind(null, "put"),
-  N = I.bind(null, "patch"),
+  N = I.bind(null, "put"),
+  A = I.bind(null, "patch"),
   C = I.bind(null, "del"),
   R = {
     get: S,
     post: T,
-    put: A,
-    patch: N,
+    put: N,
+    patch: A,
     del: C
   };
 if (n.g.isServerRendering) {
@@ -244,7 +244,7 @@ if (n.g.isServerRendering) {
     body: null,
     text: ""
   });
-  S = e, T = e, A = e, N = e, C = e
+  S = e, T = e, N = e, A = e, C = e
 }
 
 function P() {

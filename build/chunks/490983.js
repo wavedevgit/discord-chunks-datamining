@@ -25,8 +25,8 @@ var r, i = n(658722),
   I = n(941128),
   S = n(70956),
   T = n(251625),
-  A = n(823379),
-  N = n(780570),
+  N = n(823379),
+  A = n(780570),
   C = n(358085),
   R = n(998502),
   P = n(804739),
@@ -96,7 +96,7 @@ function q(e, t, n, r, i) {
   let o = f.Z.getApplication(e.id);
   if (null == o) return null;
   let a = K(o, n);
-  return (t.add(e.id), (0, N.Je)(e) || O.Z.isInstalled(e.id, e.branchId)) ? {
+  return (t.add(e.id), (0, A.Je)(e) || O.Z.isInstalled(e.id, e.branchId)) ? {
     key: "".concat(e.id, "-").concat(e.branchId),
     application: o,
     libraryApplication: e,
@@ -114,7 +114,7 @@ function q(e, t, n, r, i) {
       branchId: e.branchId
     }),
     isUpdatingFlags: E.Z.isUpdatingFlags(e.id, e.branchId),
-    shouldShowInLibrary: (0, N.d0)(o, e, b.Z),
+    shouldShowInLibrary: (0, A.d0)(o, e, b.Z),
     defaultAction: (0, w.i)(e, O.Z, I.Z)
   } : null
 }
@@ -154,8 +154,8 @@ function X() {
       let n = g.Z.getGameByGameData(e);
       return null != n ? (t[n.id] = e.lastFocused * S.Z.Millis.SECOND, n.id) : null
     }),
-    i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, !0)).filter(A.lm),
-    o = [...r.map(r => Q(r, n, t, e)).filter(A.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
+    i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, !0)).filter(N.lm),
+    o = [...r.map(r => Q(r, n, t, e)).filter(N.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
   return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(o, k) && (k = o, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(Z(k).map(e => e.application).slice(0, x)), !0)
 }
 class J extends(r = u.ZP.Store) {

@@ -81,34 +81,34 @@ function b(e) {
     (0, u.Ub)(g, {
       object: _.qAy.GUILD_PROFILE
     }), null == h || h()
-  }, [g, h]), A = i.useMemo(() => ({
+  }, [g, h]), N = i.useMemo(() => ({
     size: o.zxk.Sizes.SMALL,
     fullWidth: !0,
     submitting: n
   }), [n]);
   switch (v) {
     case f.sE.IS_MEMBER:
-      return (0, r.jsx)(o.zxk, E(m({}, A), {
+      return (0, r.jsx)(o.zxk, E(m({}, N), {
         onClick: y,
         children: p.NW.string(p.t.KLOhbG)
       }));
     case f.sE.HAS_APPLICATION:
-      return (0, r.jsx)(o.zxk, E(m({}, A), {
+      return (0, r.jsx)(o.zxk, E(m({}, N), {
         onClick: O,
         children: p.NW.string(p.t["4yfIDg"])
       }));
     case f.sE.APPLY_TO_JOIN:
-      return (0, r.jsx)(o.zxk, E(m({}, A), {
+      return (0, r.jsx)(o.zxk, E(m({}, N), {
         onClick: S,
         children: p.NW.string(p.t["7XdMW1"])
       }));
     case f.sE.LURK_DISCOVERABLE:
-      return (0, r.jsx)(o.zxk, E(m({}, A), {
+      return (0, r.jsx)(o.zxk, E(m({}, N), {
         onClick: T,
         children: p.NW.string(p.t.eb9gDA)
       }));
     case f.sE.JOIN_VIA_INVITE:
-      return (0, r.jsx)(o.zxk, E(m({}, A), {
+      return (0, r.jsx)(o.zxk, E(m({}, N), {
         onClick: I,
         children: p.NW.string(p.t.eb9gDA)
       }));

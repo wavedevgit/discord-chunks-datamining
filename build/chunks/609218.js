@@ -36,23 +36,23 @@ function S(e) {
     description: I,
     enableSocialProof: S,
     analyticsLocationSection: T,
-    upsellViewedTrackingData: A,
-    onClose: N,
+    upsellViewedTrackingData: N,
+    onClose: A,
     onDisplay: C,
     onLearnMore: R
   } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), w = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
     !w && S && c.MH()
   }, [w, S]), i.useEffect(() => {
-    _.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, A), null == C || C()
-  }, [C, A]);
+    _.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
+  }, [C, N]);
   let D = P.length > 1 && S,
     L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
     x = () => {
       _.default.track(v.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: T,
         location_object: v.qAy.NAVIGATION_LINK
-      }), null == R || R(), (0, d.Z)(), N(), (0, u.xf)(), (0, f.uL)(v.Z5c.APPLICATION_STORE)
+      }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(v.Z5c.APPLICATION_STORE)
     },
     M = (0, m.N)(),
     k = i.useCallback(() => {
@@ -62,13 +62,13 @@ function S(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.YMn, {
       backdropStyle: l.fCB.DARK,
-      onClose: N,
+      onClose: A,
       "aria-label": y.NW.string(y.t.cpT0Cg),
       isVisible: !0
     }), (0, r.jsxs)("div", {
       className: a()(O.container, L()),
       children: [(0, r.jsx)(l.olH, {
-        onClick: N,
+        onClick: A,
         className: O.closeButton
       }), (0, r.jsxs)("div", {
         className: O.contentContainer,
@@ -110,7 +110,7 @@ function S(e) {
           size: l.zxk.Sizes.SMALL,
           color: l.zxk.Colors.CUSTOM,
           onClick: () => {
-            N()
+            A()
           },
           buttonText: k()
         })]

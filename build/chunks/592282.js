@@ -70,18 +70,18 @@ function y(e) {
     className: S,
     focusedClassName: T
   } = e, {
-    onInteraction: A
-  } = i.useContext(c.p), N = i.useRef(null), C = (0, f.Q3)("MenuCheckboxItem");
+    onInteraction: N
+  } = i.useContext(c.p), A = i.useRef(null), C = (0, f.Q3)("MenuCheckboxItem");
   i.useEffect(() => {
-    y && (0, u.F)(N)
+    y && (0, u.F)(A)
   }, [y]);
   let R = i.useCallback(e => {
-    I(e), null == A || A({
+    I(e), null == N || N({
       type: c.U.CHECKBOX
     })
-  }, [I, A]);
+  }, [I, N]);
   return (0, r.jsxs)(s.P, v(E({
-    innerRef: N,
+    innerRef: A,
     className: a()(m.item, m.checkboxContainer, m.labelContainer, h._[t], S, {
       [m.disabled]: b,
       [m.focused]: y,

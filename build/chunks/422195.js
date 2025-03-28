@@ -27,7 +27,7 @@ var r = n(200651),
   S = n(388032),
   T = n(627672);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -86,8 +86,8 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       var c, d;
       let f;
       let g = (null === (c = n[0]) || void 0 === c ? void 0 : c.type) === b.Ih.FAVORITE,
-        A = +!!g,
-        C = (null === (d = n[A]) || void 0 === d ? void 0 : d.type) === b.Ih.RECENT,
+        N = +!!g,
+        C = (null === (d = n[N]) || void 0 === d ? void 0 : d.type) === b.Ih.RECENT,
         P = n.length > 0,
         D = n.length;
       if (0 === o && g) return (0, r.jsx)("div", {
@@ -110,7 +110,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
           })
         })
       }, "favorites");
-      if (o === A && C) return (0, r.jsx)("div", {
+      if (o === N && C) return (0, r.jsx)("div", {
         role: "listitem",
         "aria-setsize": D,
         "aria-posinset": o,
@@ -118,7 +118,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
           "aria-label": S.NW.string(S.t.RxAmVF),
           className: a()(T.stickerCategory, T.stickerCategoryGeneric, {
             [T.stickerCategoryGenericDisabled]: P && !C,
-            [T.stickerCategoryGenericSelected]: !m && C && t === A
+            [T.stickerCategoryGenericSelected]: !m && C && t === N
           }),
           onClick: s,
           children: (0, r.jsx)(l.T39, {
@@ -160,7 +160,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
             role: "listitem",
             "aria-setsize": D,
             "aria-posinset": o,
-            children: (0, r.jsx)(l.P3F, R(N({}, e), {
+            children: (0, r.jsx)(l.P3F, R(A({}, e), {
               "aria-label": G,
               className: a()(T.stickerCategory, {
                 [T.firstPartyCategory]: U,
@@ -181,9 +181,9 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
           className: T.guildCategorySeparator
         }, "separator") : null]
       }, M.id)
-    }, [t, _, m, n]), A = i.useCallback((e, t) => t ? j : 0, []);
+    }, [t, _, m, n]), N = i.useCallback((e, t) => t ? j : 0, []);
     return {
-      getScrollOffsetForIndex: A,
+      getScrollOffsetForIndex: N,
       renderCategoryListItem: g,
       rowHeight: i.useCallback((e, t) => {
         let r = n[t],

@@ -106,7 +106,7 @@ function T(e) {
     S = b(e, ["contentDisplay", "fadeInOut"]);
   let T = {},
     {
-      analyticsLocations: A
+      analyticsLocations: N
     } = (0, _.ZP)();
   i.Children.forEach(S.children, (e, t) => {
     T[e.props.id] = {
@@ -116,16 +116,16 @@ function T(e) {
       index: t
     }
   });
-  let N = S.activeSlide,
+  let A = S.activeSlide,
     C = (0, d.Z)(S.activeSlide),
-    R = null !== (t = S.directionOverride) && void 0 !== t ? t : O(null != C ? T[C] : null, T[N]),
+    R = null !== (t = S.directionOverride) && void 0 !== t ? t : O(null != C ? T[C] : null, T[A]),
     {
       reducedMotion: P
     } = i.useContext(l.S),
     w = i.useContext(f.Z),
-    D = T[N].impressionName,
-    L = E(m({}, T[N].impressionProperties), {
-      location_stack: A
+    D = T[A].impressionName,
+    L = E(m({}, T[A].impressionProperties), {
+      location_stack: N
     });
   w({
     type: a.ImpressionTypes.MODAL,
@@ -139,13 +139,13 @@ function T(e) {
     ref: x,
     width: M = 0,
     height: k = 0
-  } = (0, u.Z)(N), j = m({}, y, S.springConfig, P.enabled ? {
+  } = (0, u.Z)(A), j = m({}, y, S.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
     width: null !== (n = S.width) && void 0 !== n ? n : M,
     height: k,
     config: j
-  }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(N, {
+  }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(A, {
     value: 0,
     from: {
       value: 1
@@ -161,7 +161,7 @@ function T(e) {
       let {
         item: n
       } = t;
-      n === N && null != S.onSlideReady && S.onSlideReady(n)
+      n === A && null != S.onSlideReady && S.onSlideReady(n)
     }
   }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
     width: F,
@@ -187,7 +187,7 @@ function T(e) {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
       return (0, r.jsx)(o.animated.div, {
-        ref: t === N ? x : null,
+        ref: t === A ? x : null,
         style: m({
           position: "absolute",
           display: g,

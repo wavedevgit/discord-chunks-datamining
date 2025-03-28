@@ -60,8 +60,8 @@ let _ = "no_payment_source",
   I = !1,
   S = !1,
   T = !1,
-  A = !1,
-  N = null,
+  N = !1,
+  A = null,
   C = new Set;
 
 function R(e) {
@@ -69,14 +69,14 @@ function R(e) {
 }
 
 function P(e) {
-  R(), p = e.skuId, m = e.applicationId, S = e.isIAP, g = e.analyticsLocation, N = e.context, A = e.isGift, T = !0, I = !1, r = e.resolve, i = e.reject, O = null, v = null, E = e.promotionId
+  R(), p = e.skuId, m = e.applicationId, S = e.isIAP, g = e.analyticsLocation, A = e.context, N = e.isGift, T = !0, I = !1, r = e.resolve, i = e.reject, O = null, v = null, E = e.promotionId
 }
 
 function w(e) {
   let {
     error: t
   } = e;
-  T = !1, N = null, R(t)
+  T = !1, A = null, R(t)
 }
 
 function D(e) {
@@ -142,15 +142,15 @@ function B() {
 }
 
 function F(e) {
-  A = e.isGift
+  N = e.isGift
 }
 
 function V(e) {
   let {
     locked: t
   } = e;
-  if (!t || null == N) return !1;
-  T = !1, N = null, R()
+  if (!t || null == A) return !1;
+  T = !1, A = null, R()
 }
 class Z extends(o = a.ZP.Store) {
   getPricesForSku(e) {
@@ -158,7 +158,7 @@ class Z extends(o = a.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? l.IlC.OVERLAY : l.IlC.APP;
-    return N === e && T
+    return A === e && T
   }
   get isPurchasingSKU() {
     return y
@@ -188,7 +188,7 @@ class Z extends(o = a.ZP.Store) {
     return h
   }
   get isGift() {
-    return A
+    return N
   }
   isFetchingSKU(e) {
     return C.has(e)

@@ -356,7 +356,7 @@ function T(e) {
   } : e
 }
 
-function A(e) {
+function N(e) {
   return function(e) {
     switch (e.type) {
       case "static":
@@ -377,7 +377,7 @@ function A(e) {
   }))
 }
 
-function N(e) {
+function A(e) {
   return function(e) {
     switch (e.type) {
       case "static":
@@ -412,8 +412,8 @@ function N(e) {
           h = S(e.minDuration),
           g = S(e.maxDuration),
           T = S(e.minDirection),
-          A = S(e.maxDirection);
-        return new m(new v(y(n.x, r.x), y(d.x, f.x), y(_.x, p.x), y(h.x, g.x), I(T.x, A.x), O(e.easingFunctions)[0]), new v(y(n.y, r.y), y(d.y, f.y), y(_.y, p.y), y(h.y, g.y), I(T.y, A.y), O(e.easingFunctions)[0]), e.uniformVectorValues)
+          N = S(e.maxDirection);
+        return new m(new v(y(n.x, r.x), y(d.x, f.x), y(_.x, p.x), y(h.x, g.x), I(T.x, N.x), O(e.easingFunctions)[0]), new v(y(n.y, r.y), y(d.y, f.y), y(_.y, p.y), y(h.y, g.y), I(T.y, N.y), O(e.easingFunctions)[0]), e.uniformVectorValues)
     }
   }(f(f({}, e), {
     valueType: "Vector2"
@@ -455,8 +455,8 @@ function C(e) {
           h = T(e.minDuration),
           m = T(e.maxDuration),
           S = T(e.minDirection),
-          A = T(e.maxDirection);
-        return new g(new v(y(n.x, r.x), y(d.x, f.x), y(_.x, p.x), y(h.x, m.x), I(S.x, A.x), O(e.easingFunctions)[0]), new v(y(n.y, r.y), y(d.y, f.y), y(_.y, p.y), y(h.y, m.y), I(S.y, A.y), O(e.easingFunctions)[0]), new v(y(n.z, r.z), y(d.z, f.z), y(_.z, p.z), y(h.z, m.z), I(S.z, A.z), O(e.easingFunctions)[0]), e.uniformVectorValues)
+          N = T(e.maxDirection);
+        return new g(new v(y(n.x, r.x), y(d.x, f.x), y(_.x, p.x), y(h.x, m.x), I(S.x, N.x), O(e.easingFunctions)[0]), new v(y(n.y, r.y), y(d.y, f.y), y(_.y, p.y), y(h.y, m.y), I(S.y, N.y), O(e.easingFunctions)[0]), new v(y(n.z, r.z), y(d.z, f.z), y(_.z, p.z), y(h.z, m.z), I(S.z, N.z), O(e.easingFunctions)[0]), e.uniformVectorValues)
     }
   }(f(f({}, e), {
     valueType: "Vector3"
@@ -492,13 +492,13 @@ function R(e, t, n, r, i) {
     }(null != r ? r : c, i, n);
   return new s({
     id: e,
-    position: N(o.position),
-    velocity: N(o.velocity),
+    position: A(o.position),
+    velocity: A(o.velocity),
     rotation: C(o.rotation),
-    dragCoefficient: N(o.dragCoefficient),
-    size: N(o.size),
-    opacity: A(o.opacity),
-    airResistanceArea: N(o.airResistanceArea),
+    dragCoefficient: A(o.dragCoefficient),
+    size: A(o.size),
+    opacity: N(o.opacity),
+    airResistanceArea: A(o.airResistanceArea),
     spriteX: d * n.spriteWidth + 2 * d,
     spriteY: u * n.spriteHeight + 2 * u,
     spriteWidth: n.spriteWidth,
@@ -562,7 +562,7 @@ var P = r.forwardRef(function(e, t) {
       T = r.useCallback(function() {
         return g.current.clear()
       }, []),
-      A = r.useCallback(function() {
+      N = r.useCallback(function() {
         return m.current
       }, []);
     r.useImperativeHandle(t, function() {
@@ -571,10 +571,10 @@ var P = r.forwardRef(function(e, t) {
         addConfetti: O,
         deleteConfetti: S,
         clearConfetti: T,
-        getCanvas: A
+        getCanvas: N
       }
-    }, [I, O, S, T, A]);
-    var N = r.useCallback(function(e, t) {
+    }, [I, O, S, T, N]);
+    var A = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           a = t.mouseHandler;
         if (null != i || null != a) {
@@ -620,25 +620,25 @@ var P = r.forwardRef(function(e, t) {
         }
       }, [s]),
       C = r.useCallback(function(e) {
-        return N(e, {
+        return A(e, {
           clickHandler: l
         })
-      }, [N, l]),
+      }, [A, l]),
       P = r.useCallback(function(e) {
-        return N(e, {
+        return A(e, {
           clickHandler: c
         })
-      }, [N, c]),
+      }, [A, c]),
       w = r.useCallback(function(e) {
-        return N(e, {
+        return A(e, {
           mouseHandler: u
         })
-      }, [N, u]),
+      }, [A, u]),
       D = r.useCallback(function(e) {
-        return N(e, {
+        return A(e, {
           mouseHandler: d
         })
-      }, [N, d]);
+      }, [A, d]);
     return r.useEffect(function() {
       var e = function(e, t, n) {
         null != n && window.addEventListener(e, t)

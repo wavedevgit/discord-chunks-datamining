@@ -4,7 +4,7 @@ n.d(t, {
   AZ: () => P,
   BM: () => j,
   Cj: () => f,
-  WY: () => N,
+  WY: () => A,
   YD: () => x,
   ZJ: () => m,
   aD: () => p,
@@ -182,9 +182,9 @@ let y = 30,
   I = 20,
   S = 30,
   T = 40,
-  A = 15;
+  N = 15;
 
-function N(e) {
+function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3,
     n = [],
     {
@@ -195,7 +195,7 @@ function N(e) {
     a = r,
     s = i,
     l = o;
-  s < y && (s += S), l > O && (l -= T), l < I && (l += A);
+  s < y && (s += S), l > O && (l -= T), l < I && (l += N);
   let c = 360 / (t + 1);
   for (; n.length < t;) {
     (a -= c) < 0 && (a += 360);

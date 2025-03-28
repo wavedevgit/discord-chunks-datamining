@@ -85,13 +85,13 @@ function T() {
   c = l(), h = !1, m = null, u = !1, d = null, g = []
 }
 
-function A() {
+function N() {
   var e, t, n;
   E = null !== (n = null === (t = a.Z.settings.userContent) || void 0 === t ? void 0 : null === (e = t.lastDismissedOutboundPromotionStartDate) || void 0 === e ? void 0 : e.value) && void 0 !== n ? n : null
 }
-class N extends(r = i.ZP.PersistedStore) {
+class A extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (c = e), this.waitFor(a.Z), this.syncWith([a.Z], A)
+    null != e && (c = e), this.waitFor(a.Z), this.syncWith([a.Z], N)
   }
   get outboundPromotions() {
     return g
@@ -127,8 +127,8 @@ class N extends(r = i.ZP.PersistedStore) {
     return c
   }
 }
-s(N, "displayName", "PromotionsStore"), s(N, "persistKey", "PromotionsPersistedStore");
-let C = new N(o.Z, {
+s(A, "displayName", "PromotionsStore"), s(A, "persistKey", "PromotionsPersistedStore");
+let C = new A(o.Z, {
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: b,
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH: v,
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_FAIL: y,

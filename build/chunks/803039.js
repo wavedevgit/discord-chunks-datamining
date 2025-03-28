@@ -137,7 +137,7 @@ function t(e) {
       keywords: b,
       contains: [S, a, I, e.C_BLOCK_COMMENT_MODE, p, h, y]
     },
-    A = {
+    N = {
       relevance: 0,
       match: [/\b/, t.concat("(?!fn\\b|function\\b|", v(g).join("\\b|"), "|", v(E).join("\\b|"), "\\b)"), r, t.concat(_, "*"), t.lookahead(/(?=\()/)],
       scope: {
@@ -145,8 +145,8 @@ function t(e) {
       },
       contains: [T]
     };
-  T.contains.push(A);
-  let N = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, y],
+  T.contains.push(N);
+  let A = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, y],
     C = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, o)),
       beginScope: "meta",
@@ -163,8 +163,8 @@ function t(e) {
           literal: m,
           keyword: ["new", "array"]
         },
-        contains: ["self", ...N]
-      }, ...N, {
+        contains: ["self", ...A]
+      }, ...A, {
         scope: "meta",
         variants: [{
           match: i
@@ -196,7 +196,7 @@ function t(e) {
     }, s, {
       scope: "variable.language",
       match: /\$this\b/
-    }, a, A, I, {
+    }, a, N, I, {
       match: [/const/, /\s/, r],
       scope: {
         1: "keyword",

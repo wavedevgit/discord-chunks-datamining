@@ -40,10 +40,10 @@ let _ = {
         I = (0, a.Z)(u),
         S = I ? "y" === h ? I.clientHeight || 0 : I.clientWidth || 0 : 0,
         T = y / 2 - O / 2,
-        A = g[b],
-        N = S - E[m] - g[v],
+        N = g[b],
+        A = S - E[m] - g[v],
         C = S / 2 - E[m] / 2 + T,
-        R = (0, l.u)(A, C, N),
+        R = (0, l.u)(N, C, A),
         P = h;
       n.modifiersData[o] = ((t = {})[P] = R, t.centerOffset = R - C, t)
     }

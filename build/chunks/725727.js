@@ -64,14 +64,14 @@ function g() {
       })
     })
   }, []);
-  let A = {};
+  let N = {};
   for (let {
       code: e,
       promotion: t
     }
-    of y) A[t.id] = e;
-  let N = m(n, g, E, A),
-    C = new Set(N.map(e => {
+    of y) N[t.id] = e;
+  let A = m(n, g, E, N),
+    C = new Set(A.map(e => {
       let {
         id: t
       } = e;
@@ -79,14 +79,14 @@ function g() {
     }));
   return {
     promotionsLoaded: b && (!T || null != e || E),
-    activeOutboundPromotions: N,
+    activeOutboundPromotions: A,
     claimedEndedOutboundPromotions: y.filter(e => {
       let {
         promotion: t
       } = e;
       return !C.has(t.id)
     }).filter(e => (0, f.ZC)(e.promotion)),
-    claimedOutboundPromotionCodeMap: A,
+    claimedOutboundPromotionCodeMap: N,
     addClaimedOutboundPromotionCode: I
   }
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(653041);
 var r, i = n(392711),
   o = n.n(i),
@@ -105,7 +105,7 @@ function T() {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), b.pendingUsages)
 }
-class A extends(r = a.ZP.PersistedStore) {
+class N extends(r = a.ZP.PersistedStore) {
   initialize(e) {
     null != e && (b = e), this.waitFor(u.ZP), this.syncWith([d.Z], T)
   }
@@ -126,8 +126,8 @@ class A extends(r = a.ZP.PersistedStore) {
     return v.frequently
   }
 }
-p(A, "displayName", "ApplicationFrecencyStore"), p(A, "persistKey", "ApplicationFrecency");
-let N = new A(s.Z, {
+p(N, "displayName", "ApplicationFrecencyStore"), p(N, "persistKey", "ApplicationFrecency");
+let A = new N(s.Z, {
   APPLICATION_COMMAND_USED: O,
   EMBEDDED_ACTIVITY_OPEN: I,
   USER_SETTINGS_PROTO_UPDATE: y

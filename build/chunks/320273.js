@@ -24,8 +24,8 @@ var r = n(147018),
   I = n(803938),
   S = n(879),
   T = n(981971),
-  A = n(11697),
-  N = n(202934),
+  N = n(11697),
+  A = n(202934),
   C = n(641236),
   R = n(976418),
   P = C("iterator"),
@@ -116,7 +116,7 @@ ed.prototype = {
     this.url = e, this.update()
   },
   parseObject: function(e) {
-    var t, n, r, i, a, s, l, c = A(e);
+    var t, n, r, i, a, s, l, c = N(e);
     if (c)
       for (n = (t = T(e, c)).next; !(r = o(n, t)).done;) {
         if ((s = o(a = (i = T(v(r.value))).next, i)).done || (l = o(a, i)).done || !o(a, i).done) throw H("Expected sequence with length 2");
@@ -158,13 +158,13 @@ var ef = function() {
 if (d(e_, {
     append: function(e, t) {
       var n = x(this);
-      N(arguments.length, 2), q(n.entries, {
+      A(arguments.length, 2), q(n.entries, {
         key: O(e),
         value: O(t)
       }), !s && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = x(this), n = N(arguments.length, 1), r = t.entries, i = O(e), o = n < 2 ? void 0 : arguments[1], a = void 0 === o ? o : O(o), l = 0; l < r.length;) {
+      for (var t = x(this), n = A(arguments.length, 1), r = t.entries, i = O(e), o = n < 2 ? void 0 : arguments[1], a = void 0 === o ? o : O(o), l = 0; l < r.length;) {
         var c = r[l];
         if (c.key === i && (void 0 === a || c.value === a)) {
           if (J(r, l, 1), void 0 !== a) break
@@ -174,19 +174,19 @@ if (d(e_, {
     },
     get: function(e) {
       var t = x(this).entries;
-      N(arguments.length, 1);
+      A(arguments.length, 1);
       for (var n = O(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
       var t = x(this).entries;
-      N(arguments.length, 1);
+      A(arguments.length, 1);
       for (var n = O(e), r = [], i = 0; i < t.length; i++) t[i].key === n && q(r, t[i].value);
       return r
     },
     has: function(e) {
-      for (var t = x(this).entries, n = N(arguments.length, 1), r = O(e), i = n < 2 ? void 0 : arguments[1], o = void 0 === i ? i : O(i), a = 0; a < t.length;) {
+      for (var t = x(this).entries, n = A(arguments.length, 1), r = O(e), i = n < 2 ? void 0 : arguments[1], o = void 0 === i ? i : O(i), a = 0; a < t.length;) {
         var s = t[a++];
         if (s.key === r && (void 0 === o || s.value === o)) return !0
       }
@@ -194,7 +194,7 @@ if (d(e_, {
     },
     set: function(e, t) {
       var n, r = x(this);
-      N(arguments.length, 1);
+      A(arguments.length, 1);
       for (var i = r.entries, o = !1, a = O(e), l = O(t), c = 0; c < i.length; c++)(n = i[c]).key === a && (o ? J(i, c--, 1) : (o = !0, n.value = l));
       o || q(i, {
         key: a,

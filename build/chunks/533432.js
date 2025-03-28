@@ -26,10 +26,10 @@ let m = i.forwardRef(function(e, t) {
       autoFocus: b,
       className: v,
       defaultSearchPlaceholder: y
-    } = e, O = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [S, T] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), A = i.useCallback(e => {
+    } = e, O = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [S, T] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), N = i.useCallback(e => {
       var t;
       u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null === (t = n.current) || void 0 === t || t.scrollTo(0)
-    }, [n]), N = i.useCallback(() => {
+    }, [n]), A = i.useCallback(() => {
       (0, d.ql)("")
     }, []), C = e => {
       switch (e.keyCode) {
@@ -52,10 +52,10 @@ let m = i.forwardRef(function(e, t) {
       ref: O,
       size: c.E1j.Sizes.MEDIUM,
       placeholder: null != T ? T : y,
-      onClear: N,
+      onClear: A,
       onKeyDown: C,
       onFocus: E,
-      onChange: A,
+      onChange: N,
       className: a()(v, {
         [h.searchBarFullRow]: m
       }),

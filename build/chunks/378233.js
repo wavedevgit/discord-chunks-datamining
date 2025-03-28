@@ -4,13 +4,13 @@ n.d(t, {
   B0: () => R,
   Hc: () => L,
   J8: () => x,
-  Q6: () => N,
+  Q6: () => A,
   V9: () => j,
   WD: () => D,
   X_: () => P,
   Zt: () => I,
   Zv: () => T,
-  _V: () => A,
+  _V: () => N,
   cv: () => k,
   gM: () => B,
   jl: () => M,
@@ -67,7 +67,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, A = e => null == e ? null : "".concat(e.name, ".").concat(S(e.format_type)), N = function(e) {
+}, N = e => null == e ? null : "".concat(e.name, ".").concat(S(e.format_type)), A = function(e) {
   let {
     isPreview: t = !1,
     size: n = f.lE

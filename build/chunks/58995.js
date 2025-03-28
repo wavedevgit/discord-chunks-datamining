@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(443603),
   S = n(981631),
   T = n(921944),
-  A = n(388032),
-  N = n(91015),
+  N = n(388032),
+  A = n(91015),
   C = n(25675);
 
 function R(e, t, n) {
@@ -77,10 +77,10 @@ function x(e) {
     isCoachmarkDismissed: o
   } = e, s = !o || i;
   return (0, r.jsxs)("div", {
-    className: N.iconContainer,
+    className: A.iconContainer,
     children: [(0, r.jsx)("div", {
-      className: a()(N.decorativeLayer, {
-        [N.decorativeLayerActive]: s
+      className: a()(A.decorativeLayer, {
+        [A.decorativeLayerActive]: s
       }),
       style: {
         zIndex: 3
@@ -90,8 +90,8 @@ function x(e) {
         importData: () => n.e("39298").then(n.t.bind(n, 324952, 19))
       })
     }), (0, r.jsx)("div", {
-      className: a()(N.giftIconButton, {
-        [N.giftIconButtonActive]: s
+      className: a()(A.giftIconButton, {
+        [A.giftIconButtonActive]: s
       }),
       style: {
         zIndex: 2
@@ -100,8 +100,8 @@ function x(e) {
         color: "currentColor"
       })
     }), (0, r.jsx)("div", {
-      className: a()(N.decorativeLayer, {
-        [N.decorativeLayerActive]: s
+      className: a()(A.decorativeLayer, {
+        [A.decorativeLayerActive]: s
       }),
       style: {
         zIndex: 1
@@ -136,7 +136,7 @@ function M(e) {
     (0, h.Z)({
       isGift: !0,
       giftRecipient: null == F ? void 0 : F,
-      giftMessage: A.NW.string(A.t["rX/m/f"]),
+      giftMessage: N.NW.string(N.t["rX/m/f"]),
       initialPlanId: null,
       analyticsLocations: o,
       analyticsObject: {
@@ -148,7 +148,7 @@ function M(e) {
     })
   };
   return (0, r.jsxs)("div", {
-    className: N.container,
+    className: A.container,
     onMouseEnter: () => {
       a || u(!0)
     },
@@ -161,7 +161,7 @@ function M(e) {
       markAsDismissed: G
     }), (0, r.jsx)(I.Z, D(P({
       innerClassName: C.button,
-      "aria-label": A.NW.string(A.t.Z1RnTk),
+      "aria-label": N.NW.string(N.t.Z1RnTk),
       isActive: !1,
       onClick: () => {
         H(), u(!1), (0, _.EW)(l.z.NITROWEEN_ANIMATED_GIFTING_ICON, {

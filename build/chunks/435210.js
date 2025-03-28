@@ -55,7 +55,7 @@ function c(e, n) {
     seen: [],
     stylize: d
   };
-  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), v(n) ? r.showHidden = n : n && t._extend(r, n), A(r.showHidden) && (r.showHidden = !1), A(r.depth) && (r.depth = 2), A(r.colors) && (r.colors = !1), A(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), _(r, e, r.depth)
+  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), v(n) ? r.showHidden = n : n && t._extend(r, n), N(r.showHidden) && (r.showHidden = !1), N(r.depth) && (r.depth = 2), N(r.colors) && (r.colors = !1), N(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), _(r, e, r.depth)
 }
 
 function u(e, t) {
@@ -89,20 +89,20 @@ function _(e, n, r) {
       var c = n.name ? ": " + n.name : "";
       return e.stylize("[Function" + c + "]", "special")
     }
-    if (N(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
+    if (A(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     if (R(n)) return e.stylize(Date.prototype.toString.call(n), "date");
     if (P(n)) return h(n)
   }
   var u = "",
     d = !1,
     v = ["{", "}"];
-  return (b(n) && (d = !0, v = ["[", "]"]), w(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), N(n) && (u = " " + RegExp.prototype.toString.call(n)), R(n) && (u = " " + Date.prototype.toUTCString.call(n)), P(n) && (u = " " + h(n)), 0 !== s.length || d && 0 != n.length) ? r < 0 ? N(n) ? e.stylize(RegExp.prototype.toString.call(n), "regexp") : e.stylize("[Object]", "special") : (e.seen.push(n), i = d ? m(e, n, r, l, s) : s.map(function(t) {
+  return (b(n) && (d = !0, v = ["[", "]"]), w(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), A(n) && (u = " " + RegExp.prototype.toString.call(n)), R(n) && (u = " " + Date.prototype.toUTCString.call(n)), P(n) && (u = " " + h(n)), 0 !== s.length || d && 0 != n.length) ? r < 0 ? A(n) ? e.stylize(RegExp.prototype.toString.call(n), "regexp") : e.stylize("[Object]", "special") : (e.seen.push(n), i = d ? m(e, n, r, l, s) : s.map(function(t) {
     return g(e, n, r, l, t, d)
   }), e.seen.pop(), E(i, u, v)) : v[0] + u + v[1]
 }
 
 function p(e, t) {
-  if (A(t)) return e.stylize("undefined", "undefined");
+  if (N(t)) return e.stylize("undefined", "undefined");
   if (S(t)) {
     var n = "'" + JSON.stringify(t).replace(/^"|"$/g, "").replace(/'/g, "\\'").replace(/\\"/g, '"') + "'";
     return e.stylize(n, "string")
@@ -129,7 +129,7 @@ function g(e, t, n, r, i, o) {
       return "  " + e
     }).join("\n").slice(2) : "\n" + s.split("\n").map(function(e) {
       return "   " + e
-    }).join("\n")) : s = e.stylize("[Circular]", "special")), A(a)) {
+    }).join("\n")) : s = e.stylize("[Circular]", "special")), N(a)) {
     if (o && i.match(/^\d+$/)) return s;
     (a = JSON.stringify("" + i)).match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/) ? (a = a.slice(1, -1), a = e.stylize(a, "name")) : (a = a.replace(/'/g, "\\'").replace(/\\"/g, '"').replace(/(^"|"$)/g, "'"), a = e.stylize(a, "string"))
   }
@@ -171,11 +171,11 @@ function T(e) {
   return "symbol" == typeof e
 }
 
-function A(e) {
+function N(e) {
   return void 0 === e
 }
 
-function N(e) {
+function A(e) {
   return C(e) && "[object RegExp]" === L(e)
 }
 
@@ -240,7 +240,7 @@ t.debuglog = function(e) {
   string: "green",
   date: "magenta",
   regexp: "red"
-}, t.types = n(842406), t.isArray = b, t.isBoolean = v, t.isNull = y, t.isNullOrUndefined = O, t.isNumber = I, t.isString = S, t.isSymbol = T, t.isUndefined = A, t.isRegExp = N, t.types.isRegExp = N, t.isObject = C, t.isDate = R, t.types.isDate = R, t.isError = P, t.types.isNativeError = P, t.isFunction = w, t.isPrimitive = D, t.isBuffer = n(102439);
+}, t.types = n(842406), t.isArray = b, t.isBoolean = v, t.isNull = y, t.isNullOrUndefined = O, t.isNumber = I, t.isString = S, t.isSymbol = T, t.isUndefined = N, t.isRegExp = A, t.types.isRegExp = A, t.isObject = C, t.isDate = R, t.types.isDate = R, t.isError = P, t.types.isNativeError = P, t.isFunction = w, t.isPrimitive = D, t.isBuffer = n(102439);
 var M = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function k() {

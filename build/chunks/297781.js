@@ -53,7 +53,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,7 +66,7 @@ function A(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,7 +78,7 @@ function N(e, t) {
 }
 
 function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,7 +120,7 @@ function M(e) {
   var {
     children: t
   } = e, n = R(e, ["children"]);
-  return (0, r.jsx)("div", C(A({
+  return (0, r.jsx)("div", C(N({
     className: S.badgeContainer
   }, n), {
     children: t
@@ -142,7 +142,7 @@ function k(e) {
   return (0, r.jsx)(f.ua7, {
     text: o,
     shouldShow: a,
-    children: e => (0, r.jsxs)(M, C(A({}, e), {
+    children: e => (0, r.jsxs)(M, C(N({}, e), {
       children: [(0, r.jsx)(t, {
         size: "xxs",
         color: null != i ? i : l
@@ -431,7 +431,7 @@ function X(e) {
   } : {
     defaultTextColor: "text-secondary"
   }, (0, r.jsx)(L.Provider, {
-    value: A({
+    value: N({
       location: n
     }, t),
     children: (0, r.jsx)("div", {

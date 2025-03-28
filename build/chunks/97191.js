@@ -1,5 +1,6 @@
-/** Chunk was on 78114 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   form: "form__08bd2",
   modalHeader: "modalHeader__08bd2",
   closeButton: "closeButton__08bd2",
@@ -14,4 +15,5 @@ e.exports = {
   container: "container__08bd2",
   cancelButton: "cancelButton__08bd2",
   modalFooter: "modalFooter__08bd2"
-}
+};
+e.exports = r

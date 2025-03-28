@@ -43,14 +43,14 @@ function m(e) {
     I(), y({
       action: E ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [I, E, y]), A = i.useCallback(() => {
+  }, [I, E, y]), N = i.useCallback(() => {
     S(), y({
       action: E ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [S, E, y]), N = null != m, C = (0, c.q)(m);
-  return N && null == C ? null : (0, r.jsxs)("div", {
+  }, [S, E, y]), A = null != m, C = (0, c.q)(m);
+  return A && null == C ? null : (0, r.jsxs)("div", {
     className: a()(h.container, b),
-    children: [N ? (0, r.jsx)(s.Text, {
+    children: [A ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.NW.format(E ? p.t.syHjLC : p.t.V15uUF, {
         username: v,
@@ -80,7 +80,7 @@ function m(e) {
         color: s.zxk.Colors.PRIMARY,
         size: s.zxk.Sizes.SMALL,
         className: h.button,
-        onClick: A,
+        onClick: N,
         children: p.NW.string(p.t.xuio0N)
       })]
     })]

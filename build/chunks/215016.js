@@ -48,8 +48,8 @@ function T(e) {
   }
   return e
 }
-let A = [d.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, d.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"],
-  N = 220,
+let N = [d.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, d.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"],
+  A = 220,
   C = 1220,
   R = Array.from({
     length: 16
@@ -192,7 +192,7 @@ class j extends i.PureComponent {
       imagePool: r
     } = this.props;
     this.state = {
-      color: null == n ? l().sample(A) : n,
+      color: null == n ? l().sample(N) : n,
       loaded: !1
     }, x(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: !0
@@ -228,7 +228,7 @@ class U extends i.PureComponent {
     })
   }
   getSectionHeight(e) {
-    return 1 === e ? N : 0
+    return 1 === e ? A : 0
   }
   renderEmptyFavorite(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];

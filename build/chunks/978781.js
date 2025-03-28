@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(768762),
   S = n(197115),
   T = n(210887),
-  A = n(727939),
-  N = n(981631),
+  N = n(727939),
+  A = n(981631),
   C = n(921944),
   R = n(474936),
   P = n(388032),
@@ -63,7 +63,7 @@ function M(e) {
   let {
     isCoachmark: t
   } = e, n = (0, v.q)();
-  return i.useEffect(() => ((0, E.Kq)(), n(N.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(N.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(y.ZP, {
+  return i.useEffect(() => ((0, E.Kq)(), n(A.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(y.ZP, {
     type: y.yH.EDITOR,
     children: (0, r.jsx)(y.ZP.BasicAndGradient, {
       isEditor: !0,
@@ -105,7 +105,7 @@ function j(e) {
         return t => (0, r.jsx)(e, L({
           analyticsSource: _.Z.APP_ICON_EDITOR,
           analyticsLocation: {
-            section: N.jXE.SETTINGS_APP_ICONS
+            section: A.jXE.SETTINGS_APP_ICONS
           }
         }, t))
       });
@@ -119,7 +119,7 @@ function j(e) {
         return t => (0, r.jsx)(e, L({
           analyticsSource: _.Z.CLIENT_THEMES_EDITOR,
           analyticsLocation: {
-            section: N.jXE.SETTINGS_CLIENT_THEMES
+            section: A.jXE.SETTINGS_CLIENT_THEMES
           }
         }, t))
       });
@@ -178,12 +178,12 @@ function U(e) {
     value: 1
   }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, y = i.useMemo(() => T.Z.theme, []), O = (0, v.J)(), I = i.useCallback(() => {
     _ && O(), m && (0, p.O7)()
-  }, [_, m, O]), S = (0, f.Z)(null, g ? I : N.dG4), R = i.useCallback(() => {
+  }, [_, m, O]), S = (0, f.Z)(null, g ? I : A.dG4), R = i.useCallback(() => {
     g && (0, u.ZI)({
       theme: y
     }), (0, p.G8)(), (0, E.Mo)(), I(), null == n || n(C.L.DISMISS)
   }, [I, n, g, y]);
-  return (0, r.jsx)(A.Z, {
+  return (0, r.jsx)(N.Z, {
     className: w.draggableContainer,
     children: (0, r.jsxs)("div", {
       ref: S,

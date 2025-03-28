@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ function R(e) {
     guildId: o,
     channelId: h,
     profileType: S,
-    animateOnHover: A,
+    animateOnHover: N,
     onOpenProfile: R,
     className: P,
     previewStatus: w
@@ -102,7 +102,7 @@ function R(e) {
     user: t,
     guildId: null != n ? n.guildId : o,
     size: V,
-    animateOnHover: A
+    animateOnHover: N
   }), K = (0, r.jsx)(C, {
     src: W,
     avatarDecoration: H,
@@ -115,10 +115,10 @@ function R(e) {
     statusTooltip: !0,
     statusTooltipDelay: v.vB
   });
-  return null == R ? (0, r.jsx)("div", N(T({}, Y), {
+  return null == R ? (0, r.jsx)("div", A(T({}, Y), {
     className: Z,
     children: K
-  })) : (0, r.jsx)(l.P3F, N(T({}, Y), {
+  })) : (0, r.jsx)(l.P3F, A(T({}, Y), {
     className: a()(Z, I.clickable),
     focusProps: {
       ringClassName: I.focusRing

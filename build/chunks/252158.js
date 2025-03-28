@@ -28,7 +28,7 @@ var r = n(570140),
   S = n(981631),
   T = n(65154);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,14 +37,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -184,7 +184,7 @@ let w = new Map([
     getActiveErrors: () => {
       var e, t, n;
       let r = null !== (n = null === (t = c.Z.getConnectionStats().find(e => e.connection.context === T.Yn.DEFAULT)) || void 0 === t ? void 0 : null === (e = t.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === e ? void 0 : e.sampleRateMismatchPercent) && void 0 !== n ? n : 0;
-      if (Math.abs(r) > C) return [N({
+      if (Math.abs(r) > C) return [A({
         audioCaptureSampleRateMismatchPercent: r
       }, x())]
     },
@@ -210,7 +210,7 @@ function L(e) {
       s = (0, l.Z)(g.Z.getQuality(), g.Z.getStatsHistory(r, i, o), a, e),
       c = n.id,
       f = g.Z.getMediaSessionId(c);
-    null != s && null != f && t.push(N({
+    null != s && null != f && t.push(A({
       streamError: s
     }, M(c)))
   }
@@ -218,7 +218,7 @@ function L(e) {
 }
 
 function x() {
-  return N({
+  return A({
     channelId: m.Z.getVoiceChannelId(),
     mediaSessionId: h.Z.getMediaSessionId(),
     rtcConnectionId: h.Z.getRTCConnectionId(),
@@ -230,7 +230,7 @@ function M(e) {
   let {
     channelId: t
   } = (0, s.my)(e), n = g.Z.getRTCConnection(e);
-  return N({
+  return A({
     channelId: t,
     mediaSessionId: null == n ? void 0 : n.getMediaSessionId(),
     rtcConnectionId: null == n ? void 0 : n.getRTCConnectionId(),
@@ -303,7 +303,7 @@ class j extends i.Z {
     !__OVERLAY__ && (0, y.b)(t, n)
   }
   constructor(...e) {
-    super(...e), A(this, "actions", {
+    super(...e), N(this, "actions", {
       MEDIA_ENGINE_SET_AUDIO_ENABLED: this.updateActiveErrors,
       AUDIO_INPUT_DETECTED: this.updateActiveErrors,
       AUDIO_SET_DISPLAY_SILENCE_WARNING: this.updateActiveErrors,

@@ -47,7 +47,7 @@ function I(e) {
 let S = 1e3;
 
 function T() {
-  let [e, t] = i.useState(!1), O = (0, l.VXO)(b.Xd), T = (0, E.Q3)("useDesktopRefreshOnboarding"), A = i.useMemo(() => T ? [a.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [T]), [N, C] = (0, _.US)(A), R = N === a.z.DESKTOP_REFRESH_ONBOARDING_MODAL, P = (0, o.e7)([h.default], () => h.default.getId());
+  let [e, t] = i.useState(!1), O = (0, l.VXO)(b.Xd), T = (0, E.Q3)("useDesktopRefreshOnboarding"), N = i.useMemo(() => T ? [a.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [T]), [A, C] = (0, _.US)(N), R = A === a.z.DESKTOP_REFRESH_ONBOARDING_MODAL, P = (0, o.e7)([h.default], () => h.default.getId());
   i.useLayoutEffect(() => {
     T && null != P && g.default.age(P) < m.Z.Millis.DAY && (0, f.EW)(a.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",

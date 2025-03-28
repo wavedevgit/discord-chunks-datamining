@@ -25,8 +25,8 @@ var r, i = n(654861),
   I = n(148959),
   S = n(815644),
   T = n(926951),
-  A = n(166884),
-  N = n(868616),
+  N = n(166884),
+  A = n(868616),
   C = n(450109),
   R = n(307320),
   P = n(615830),
@@ -308,7 +308,7 @@ class eE extends f.Z {
       let {
         shouldOverrideKrisp: e,
         overrideKrispSetting: n
-      } = N.Z.getCurrentConfig({
+      } = A.Z.getCurrentConfig({
         guildId: this.guildId,
         location: "handleReady"
       }, {
@@ -317,7 +317,7 @@ class eE extends f.Z {
       e && (n ? t.push("force_krisp_enabled") : t.push("force_krisp_disabled"))
     }
     if (L.Z.supports(er.AN.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
-      let e = A.Z.workerExperimentString();
+      let e = N.Z.workerExperimentString();
       null != e && t.push(e)
     }(0, S.f)("RtcConnection").enabled && t.push("audio_transport_cc"), this._selectedExperiments = t
   }
@@ -351,8 +351,8 @@ class eE extends f.Z {
       code: n,
       reason: r
     })), this._encountered_socket_failure = !0), x.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null === (l = this._connection) || void 0 === l || l.wasRemoteDisconnected());
-    let A = "Force Close" !== r;
-    if (A) {
+    let N = "Force Close" !== r;
+    if (N) {
       let e = this._backoff.fail(this.reconnect);
       this.logger.warn("Disconnect was not clean! reason=".concat(r, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
     }
@@ -392,7 +392,7 @@ class eE extends f.Z {
         hostname: this.hostname,
         port: this.port,
         protocol: this.protocol,
-        reconnect: A,
+        reconnect: N,
         reason: r,
         duration: this.getDuration()
       }), null === (d = this._voiceQuality) || void 0 === d ? void 0 : d.getMosStats(), null === (f = this._voiceQuality) || void 0 === f ? void 0 : f.getPacketStats(), null === (_ = this._voiceQuality) || void 0 === _ ? void 0 : _.getBytesStats(), null === (p = this._voiceQuality) || void 0 === p ? void 0 : p.getBufferStats(), null === (h = this._voiceQuality) || void 0 === h ? void 0 : h.getNetworkStats(), null === (m = this._voiceQuality) || void 0 === m ? void 0 : m.getSystemResourceStats(), null === (g = this._voiceQuality) || void 0 === g ? void 0 : g.getFrameOpStats(), null === (E = this._voiceQuality) || void 0 === E ? void 0 : E.getDurationStats(), null === (b = this._voiceQuality) || void 0 === b ? void 0 : b.getTransportStats(), null === (v = this._voiceQuality) || void 0 === v ? void 0 : v.getE2EEStats(), null === (y = this._voiceQuality) || void 0 === y ? void 0 : y.getAudioDeviceStats(), null === (I = this._voiceDuration) || void 0 === I ? void 0 : I.getDurationStats(), this.getAudioDeviceStates(), null === (S = this._systemResponsiveness) || void 0 === S ? void 0 : S.getPttQueueLatencyStats()), {
@@ -443,7 +443,7 @@ class eE extends f.Z {
       this._connection = null, e.destroy()
     }
     this.setState(en.hes.DISCONNECTED, {
-      willReconnect: A
+      willReconnect: N
     })
   }
   _handleResuming(e) {

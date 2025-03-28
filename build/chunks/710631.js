@@ -61,11 +61,11 @@ function I(e, t) {
 }
 let S = "max_uses",
   T = "User Invite Context Menu",
-  A = "context_menu";
+  N = "context_menu";
 
-function N(e, t) {
+function A(e, t) {
   s.Z.ensurePrivateChannel(e).then(e => {
-    null != d.Z.getChannel(e) && c.Z.sendInvite(e, t, A, null)
+    null != d.Z.getChannel(e) && c.Z.sendInvite(e, t, N, null)
   })
 }
 
@@ -83,19 +83,19 @@ function C(e) {
     }), t
   }, [n]), [v, O] = i.useState({});
 
-  function A(e, t) {
+  function N(e, t) {
     let n = f.ZP.getDefaultChannel(e.id, !0, E.Plq.CREATE_INSTANT_INVITE);
     if (null != n) {
       if (O(I(y({}, v), {
           [e.id]: !0
         })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) {
-        N(t, e.vanityURLCode);
+        A(t, e.vanityURLCode);
         return
       }
       l.ZP.createInvite(n.id, {
         [S]: 1,
         unique: !0
-      }, T).then(e => N(t, e.code))
+      }, T).then(e => A(t, e.code))
     }
   }
   return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(a.sNh, {
@@ -109,7 +109,7 @@ function C(e) {
       id: e.id,
       label: e.name,
       action: () => {
-        null == s || s(), A(e, t.id)
+        null == s || s(), N(e, t.id)
       }
     }, e.id))
   })

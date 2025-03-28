@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FH: () => N,
-  YG: () => A,
+  FH: () => A,
+  YG: () => N,
   ZP: () => w,
   uo: () => T
 }), n(301563), n(47120);
@@ -63,8 +63,8 @@ function S(e, t) {
   }), e
 }
 let T = /\.gif($|\?|#)/i,
-  A = /\.webp($|\?|#)/i,
-  N = /\.avif($|\?|#)/i,
+  N = /\.webp($|\?|#)/i,
+  A = /\.avif($|\?|#)/i,
   C = /\.png($|\?|#)/i,
   R = 400,
   P = 300;
@@ -76,7 +76,7 @@ class w extends(r = o.Component) {
       animated: r,
       srcIsAnimated: i
     } = e;
-    return r || T.test(null != n && "" !== n ? n : t) || null != i && i && (A.test(null != n && "" !== n ? n : t) || N.test(null != n && "" !== n ? n : t))
+    return r || T.test(null != n && "" !== n ? n : t) || null != i && i && (N.test(null != n && "" !== n ? n : t) || A.test(null != n && "" !== n ? n : t))
   }
   static isSrcPNG(e) {
     let {
@@ -88,7 +88,7 @@ class w extends(r = o.Component) {
     let {
       src: t
     } = e;
-    return N.test(t)
+    return A.test(t)
   }
   static getFormatQuality(e) {
     let {
@@ -323,8 +323,8 @@ class w extends(r = o.Component) {
       onClick: I,
       renderAccessory: S,
       tabIndex: T,
-      limitResponsiveWidth: A,
-      useFullWidth: N,
+      limitResponsiveWidth: N,
+      useFullWidth: A,
       placeholder: C,
       placeholderVersion: R,
       dataSafeSrc: P,
@@ -343,8 +343,8 @@ class w extends(r = o.Component) {
       minWidth: g,
       minHeight: E,
       mediaLayoutType: this.getType(),
-      limitResponsiveWidth: A,
-      useFullWidth: N,
+      limitResponsiveWidth: N,
+      useFullWidth: A,
       tabIndex: T,
       width: U,
       height: G,

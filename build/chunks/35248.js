@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => A,
-  a: () => N
+  M: () => N,
+  a: () => A
 }), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -44,7 +44,7 @@ function T(e, t, n, r, i) {
     r()
   })
 }
-let A = e => {
+let N = e => {
     let t, n, {
         step: o,
         onPurchaseComplete: a,
@@ -53,8 +53,8 @@ let A = e => {
       {
         selectedPlan: d,
         setSelectedPlanId: f,
-        setSelectedSkuId: A,
-        browserCheckoutState: N,
+        setSelectedSkuId: N,
+        browserCheckoutState: A,
         browserCheckoutStateLoadId: C,
         browserCheckoutStateSkuId: R,
         browserCheckoutStatePlanId: P,
@@ -81,8 +81,8 @@ let A = e => {
       }, n.delay ? S : 0);
       return () => clearTimeout(e)
     }, [d, D, w, u, x, L, t, n.delay]), i.useEffect(() => {
-      null !== R && (y.YQ.includes(R) && ((0, c.GZ)(R), (0, l.jg)()), A(R)), null !== P && f(P), C === w.loadId && N === b.Y.DONE && a()
-    }, [A, f, N, C, R, P, w, a]), (0, r.jsxs)("div", {
+      null !== R && (y.YQ.includes(R) && ((0, c.GZ)(R), (0, l.jg)()), N(R)), null !== P && f(P), C === w.loadId && A === b.Y.DONE && a()
+    }, [N, f, A, C, R, P, w, a]), (0, r.jsxs)("div", {
       className: I.body,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/bold",
@@ -94,7 +94,7 @@ let A = e => {
       })]
     })
   },
-  N = e => {
+  A = e => {
     let {
       onPrimaryClick: t,
       onBackClick: n

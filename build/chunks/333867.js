@@ -87,8 +87,8 @@ function O(e) {
     analyticsLocations: I,
     analyticsObject: S,
     giftRecipient: T,
-    variantsReturnStyle: A
-  } = e, N = !1, C = (0, i.Z)(), R = e => {
+    variantsReturnStyle: N
+  } = e, A = !1, C = (0, i.Z)(), R = e => {
     t = e
   }, P = u ? v : b;
   (0, o.ZDy)(async () => e => {
@@ -108,7 +108,7 @@ function O(e) {
         t(), null == E || E(e)
       },
       onComplete: () => {
-        N = !0, null == O || O()
+        A = !0, null == O || O()
       },
       returnRef: i,
       onStepChange: R
@@ -116,15 +116,15 @@ function O(e) {
   }, {
     modalKey: P,
     onCloseCallback: () => {
-      N || c.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
+      A || c.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: C,
         payment_type: f.Zuq[f.GZQ.ONE_TIME],
         location: S,
         is_gift: u,
         sku_id: n,
         location_stack: I
-      }), (0, a.fw)(), (0, s.p)(), null == E || E(N), N && (0, l.qg)({
-        variantsReturnStyle: A,
+      }), (0, a.fw)(), (0, s.p)(), null == E || E(A), A && (0, l.qg)({
+        variantsReturnStyle: N,
         location: "openCollectiblesPaymentModal"
       })
     },

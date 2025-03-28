@@ -14,7 +14,7 @@ var r = n(200651),
   p = n(146773),
   h = n(888651),
   f = n(619915),
-  g = n(339340),
+  g = n(117358),
   m = n(201895),
   b = n(718589),
   v = n(933557),
@@ -365,17 +365,10 @@ class et extends W.ZP {
     }), X(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
-        channel: i
+        channel: n
       } = this.props;
-      t && (e.stopPropagation(), (0, c.ZDy)(async () => {
-        let {
-          default: e
-        } = await Promise.resolve().then(n.bind(n, 339340));
-        return t => (0, r.jsx)(e, $({
-          channel: i
-        }, t))
-      }, {
-        modalKey: g.a
+      t && (e.stopPropagation(), (0, g.Z)({
+        channel: n
       }))
     }), X(this, "renderPopout", () => {
       let {

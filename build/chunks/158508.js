@@ -76,24 +76,24 @@ function y(e) {
     appContext: S = f.IlC.APP
   } = e, {
     id: T
-  } = t, A = (0, i.e7)([d.default], () => {
+  } = t, N = (0, i.e7)([d.default], () => {
     var e;
     return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === T
   }, [T]), {
-    isIgnored: N,
+    isIgnored: A,
     isBlocked: C
   } = (0, i.cj)([u.Z], () => ({
     isIgnored: u.Z.isIgnored(T),
     isBlocked: u.Z.isBlocked(T)
   }), [T]), R = [o.z.IGNORE_USER_NEW_BADGE], [P, w] = (0, c.US)(R), D = P === o.z.IGNORE_USER_NEW_BADGE;
-  return A || C ? null : (0, r.jsx)(a.sNh, {
+  return N || C ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
-    label: N ? p.NW.string(p.t["8wXU9P"]) : (0, r.jsxs)("div", {
+    label: A ? p.NW.string(p.t["8wXU9P"]) : (0, r.jsxs)("div", {
       className: h.label,
       children: [p.NW.string(p.t.ytCpKi), D ? (0, r.jsx)(v, {}) : null]
     }),
-    action: N ? () => {
+    action: A ? () => {
       null == O || O(), s.Z.unignoreUser(T, null != I ? I : "use-ignore-user-item-web", null != m ? m : void 0)
     } : () => {
       D && w(_.L.TAKE_ACTION), (0, a.ZDy)(async () => {

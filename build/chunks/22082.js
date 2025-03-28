@@ -17,12 +17,12 @@ var i, s, l, r = n(442837),
   I = n(70956),
   S = n(709054),
   y = n(981631);
-let E = new Set,
-  _ = {},
-  w = {};
+let w = new Set,
+  E = {},
+  _ = {};
 
 function m(e, t) {
-  let n = _[e];
+  let n = E[e];
   if (null != n && null != t && n.has(t)) {
     var i;
     !f.ZP.isOptInEnabled(e) || (null === (i = c.Z.getChannel(t)) || void 0 === i ? void 0 : i.isThread()) || null != v.ZP.ackMessageId(t) || a.Z.wait(() => (0, d.In)(t, !0, !0, S.default.atPreviousMillisecond(t)))
@@ -31,53 +31,53 @@ function m(e, t) {
 
 function b(e) {
   var t;
-  if (null != _[e]) return;
+  if (null != E[e]) return;
   let n = g.ZP.getChannels(e)[g.sH].map(e => e.channel.id),
     i = null === (t = C.ZP.getMember(e, u.default.getId())) || void 0 === t ? void 0 : t.joinedAt;
   if (null == i) return;
-  _[e] = new Set;
+  E[e] = new Set;
   let s = new Date(i).getTime();
-  0 !== n.length && (_[e] = new Set(n.filter(t => {
+  0 !== n.length && (E[e] = new Set(n.filter(t => {
     let n = S.default.extractTimestamp(t);
     return null == v.ZP.getTrackedAckMessageId(t) && n > Date.now() - I.Z.Millis.WEEK && n > h.Z.getGuildRecentsDismissedAt(e) && n > s && !f.ZP.isChannelOrParentOptedIn(e, t)
-  })), w[e] = Date.now())
+  })), _[e] = Date.now())
 }
 
-function N() {
-  S.default.keys(_).forEach(e => {
-    let t = _[e];
-    _[e] = new Set([...t].filter(t => !f.ZP.isChannelOrParentOptedIn(e, t)))
+function O() {
+  S.default.keys(E).forEach(e => {
+    let t = E[e];
+    E[e] = new Set([...t].filter(t => !f.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
-class O extends(i = r.ZP.Store) {
+class N extends(i = r.ZP.Store) {
   initialize() {
-    this.waitFor(g.ZP, u.default, C.ZP, f.ZP, v.ZP, h.Z), this.syncWith([f.ZP], N)
+    this.waitFor(g.ZP, u.default, C.ZP, f.ZP, v.ZP, h.Z), this.syncWith([f.ZP], O)
   }
   getNewChannelIds(e) {
     var t;
-    return null != e && null == _[e] && b(e), null != e && null !== (t = _[e]) && void 0 !== t ? t : E
+    return null != e && null == E[e] && b(e), null != e && null !== (t = E[e]) && void 0 !== t ? t : w
   }
   shouldIndicateNewChannel(e, t) {
     var n;
     if (null == e) return !1;
     let i = p.Z.getGuild(e);
-    return !!(null != i && i.hasFeature(y.oNc.COMMUNITY)) && (null != e && null == _[e] && b(e), (null === (n = _[e]) || void 0 === n ? void 0 : n.has(t)) && null == v.ZP.getTrackedAckMessageId(t))
+    return !!(null != i && i.hasFeature(y.oNc.COMMUNITY)) && (null != e && null == E[e] && b(e), (null === (n = E[e]) || void 0 === n ? void 0 : n.has(t)) && null == v.ZP.getTrackedAckMessageId(t))
   }
 }
-l = "NewChannelsStore", (s = "displayName") in O ? Object.defineProperty(O, s, {
+l = "NewChannelsStore", (s = "displayName") in N ? Object.defineProperty(N, s, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : O[s] = l;
-let L = new O(a.Z, {
+}) : N[s] = l;
+let L = new N(a.Z, {
   BULK_CLEAR_RECENTS: function(e) {
     let {
       guildId: t,
       channelIds: n
     } = e;
-    if (null == _[t]) return !1;
-    n.forEach(e => _[t].delete(e)), 0 === _[t].size && delete _[t]
+    if (null == E[t]) return !1;
+    n.forEach(e => E[t].delete(e)), 0 === E[t].size && delete E[t]
   },
   CHANNEL_ACK: () => !0,
   CHANNEL_SELECT: function(e) {
@@ -85,7 +85,7 @@ let L = new O(a.Z, {
       guildId: t,
       channelId: n
     } = e;
-    return null != t && (null == _[t] || w[t] < Date.now() - I.Z.Millis.HOUR ? (b(t), !0) : (null != n && m(t, n), !1))
+    return null != t && (null == E[t] || _[t] < Date.now() - I.Z.Millis.HOUR ? (b(t), !0) : (null != n && m(t, n), !1))
   },
   SIDEBAR_VIEW_CHANNEL: function(e) {
     let {
@@ -106,13 +106,13 @@ let L = new O(a.Z, {
     let {
       guild: t
     } = e;
-    delete _[t.id]
+    delete E[t.id]
   },
   CHANNEL_CREATE: function(e) {
     var t;
     let {
       channel: n
     } = e;
-    n.isVocal() || (_[n.guild_id] = null !== (t = _[n.guild_id]) && void 0 !== t ? t : new Set, _[n.guild_id].add(n.id))
+    n.isVocal() || (E[n.guild_id] = null !== (t = E[n.guild_id]) && void 0 !== t ? t : new Set, E[n.guild_id].add(n.id))
   }
 })

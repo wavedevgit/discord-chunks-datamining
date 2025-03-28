@@ -73,7 +73,7 @@ function m(e) {
     },
     className: a()(d.contentImage, f)
   });
-  let A = "height" === o ? {
+  let N = "height" === o ? {
     maxWidth: v,
     height: v
   } : {
@@ -85,7 +85,7 @@ function m(e) {
     text: p,
     shouldShow: E,
     children: e => (0, r.jsx)("img", h(_({}, e), {
-      style: A,
+      style: N,
       className: a()(d.contentImage, f),
       src: y && null != m ? m : t,
       "aria-hidden": g,

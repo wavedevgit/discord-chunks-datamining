@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(242291),
   S = n(830253),
   T = n(286654),
-  A = n(675654),
-  N = n(509571),
+  N = n(675654),
+  A = n(509571),
   C = n(388032),
   R = n(335886);
 
@@ -223,17 +223,17 @@ let W = i.forwardRef(function(e, t) {
     previewSound: eO,
     isPlayingSound: eI,
     isPreviewingSound: eS
-  } = (0, S.Z)(Y, null !== (y = null == K ? void 0 : K.id) && void 0 !== y ? y : null, null !== (P = eu ? E.AY.getSetting() : null === (n = E.kU.getSetting()) || void 0 === n ? void 0 : n.volume) && void 0 !== P ? P : 100, !eu && (null == K ? void 0 : K.isVocal()) ? N.w.VOICE : N.w.DEFAULT), {
+  } = (0, S.Z)(Y, null !== (y = null == K ? void 0 : K.id) && void 0 !== y ? y : null, null !== (P = eu ? E.AY.getSetting() : null === (n = E.kU.getSetting()) || void 0 === n ? void 0 : n.volume) && void 0 !== P ? P : 100, !eu && (null == K ? void 0 : K.isVocal()) ? A.w.VOICE : A.w.DEFAULT), {
     createMultipleConfettiAt: eT
-  } = i.useContext(p.h), eA = i.useRef(null), eN = H(Y.soundId, eA.current), eC = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eR = i.useRef(j), eP = i.useRef(new c.Xp), ew = Y.soundId === k, eD = "sound-".concat(Y.soundId), eL = (0, s.JA)(eD), ex = null != eg || null != eE, eM = !(0, I.Nq)(eb, Y, K) && !eu, ek = X || $ && !eM, ej = i.useRef(null), eU = (null !== (D = null === (o = ej.current) || void 0 === o ? void 0 : o.scrollHeight) && void 0 !== D ? D : 0) > (null !== (M = null === (u = ej.current) || void 0 === u ? void 0 : u.offsetHeight) && void 0 !== M ? M : 0), eG = null !== (F = h.Wq.useStore().bottomPosition) && void 0 !== F ? F : 0, eB = (null !== (W = null === (v = eA.current) || void 0 === v ? void 0 : v.getBoundingClientRect().bottom) && void 0 !== W ? W : 0) + 50 > eG ? "top" : "bottom", [eF, eV] = i.useState(!1), eZ = eM && eo;
+  } = i.useContext(p.h), eN = i.useRef(null), eA = H(Y.soundId, eN.current), eC = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eR = i.useRef(j), eP = i.useRef(new c.Xp), ew = Y.soundId === k, eD = "sound-".concat(Y.soundId), eL = (0, s.JA)(eD), ex = null != eg || null != eE, eM = !(0, I.Nq)(eb, Y, K) && !eu, ek = X || $ && !eM, ej = i.useRef(null), eU = (null !== (D = null === (o = ej.current) || void 0 === o ? void 0 : o.scrollHeight) && void 0 !== D ? D : 0) > (null !== (M = null === (u = ej.current) || void 0 === u ? void 0 : u.offsetHeight) && void 0 !== M ? M : 0), eG = null !== (F = h.Wq.useStore().bottomPosition) && void 0 !== F ? F : 0, eB = (null !== (W = null === (v = eN.current) || void 0 === v ? void 0 : v.getBoundingClientRect().bottom) && void 0 !== W ? W : 0) + 50 > eG ? "top" : "bottom", [eF, eV] = i.useState(!1), eZ = eM && eo;
 
   function eH() {
     ee || ey(er)
   }
 
   function eW(e) {
-    if (ew && !eC && (eR.current = Math.min(eR.current + G, U), Math.random() < eR.current && eT(eN.x, eN.y, void 0, void 0, {
-        sprite: A.vv
+    if (ew && !eC && (eR.current = Math.min(eR.current + G, U), Math.random() < eR.current && eT(eA.x, eA.y, void 0, void 0, {
+        sprite: N.vv
       })), null != en) {
       en(e);
       return
@@ -334,7 +334,7 @@ let W = i.forwardRef(function(e, t) {
       eR.current = Math.max(eR.current - G, j)
     }), () => e.stop()
   }, [ew]);
-  let eX = (0, g.a)(eA.current);
+  let eX = (0, g.a)(eN.current);
   return (0, r.jsxs)("li", {
     ref: t,
     className: a()(R.soundButtonWrapper, z),
@@ -384,7 +384,7 @@ let W = i.forwardRef(function(e, t) {
             [R.hasEmoji]: ex
           }),
           "aria-hidden": !0,
-          ref: eA,
+          ref: eN,
           children: [ex && (es ? (0, r.jsx)("div", {
             className: R.emojiCircle,
             children: (0, r.jsx)(f.Z, {

@@ -61,8 +61,8 @@ let y = Symbol("NO GUILD ID"),
   I = new Set,
   S = "premium",
   T = "guild_booster_lvl",
-  A = 0x7fffffff,
-  N = new Map,
+  N = 0x7fffffff,
+  A = new Map,
   C = new Map,
   R = new Map,
   P = new Map,
@@ -72,14 +72,14 @@ let y = Symbol("NO GUILD ID"),
   x = !1;
 
 function M(e) {
-  let t = N.get(e);
+  let t = A.get(e);
   if ((null == t ? void 0 : t.profileEffectExpiresAt) == null) return;
   let n = 1e3 * t.profileEffectExpiresAt + h.Cm - Date.now();
   if (n <= 0) t.profileEffectId = void 0, t.profileEffectExpiresAt = void 0, R.delete(e), er.emitChange();
   else {
     let t = R.get(e);
     if (null == t) return;
-    t.start(Math.min(A, n), () => M(e))
+    t.start(Math.min(N, n), () => M(e))
   }
 }
 
@@ -98,12 +98,12 @@ function k(e, t) {
     if (null == i) return;
     let n = i.get(t);
     if (null == n) return;
-    n.start(Math.min(A, o), () => k(e, t))
+    n.start(Math.min(N, o), () => k(e, t))
   }
 }
 
 function j() {
-  O.clear(), I.clear(), N.clear(), C.clear(), w.clear(), D.clear(), L.clear(), x = !1
+  O.clear(), I.clear(), A.clear(), C.clear(), w.clear(), D.clear(), L.clear(), x = !1
 }
 
 function U(e) {
@@ -138,7 +138,7 @@ function F(e) {
 }
 
 function V(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, A, x, j, U, G, F, V, Z, H, W, Y, K, z, q, Q;
+  var t, n, r, i, s, l, c, d, f, h, g, b, N, x, j, U, G, F, V, Z, H, W, Y, K, z, q, Q;
   let X = null !== (j = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== j ? j : y;
   if (null === (n = O.get(e.user.id)) || void 0 === n || n.delete(X), I.delete(e.user.id), null != e.mutual_guilds) {
     let t = {};
@@ -164,7 +164,7 @@ function V(e) {
   let J = null != e.premium_since ? new Date(e.premium_since) : null,
     $ = null != e.premium_guild_since ? new Date(e.premium_guild_since) : null,
     ee = e.application;
-  if (N.set(e.user.id, {
+  if (A.set(e.user.id, {
       userId: e.user.id,
       banner: null === (r = e.user_profile) || void 0 === r ? void 0 : r.banner,
       accentColor: null === (i = e.user_profile) || void 0 === i ? void 0 : i.accent_color,
@@ -210,7 +210,7 @@ function V(e) {
           })
         }) : e
       }) : e.badges
-    }), (null === (x = e.user_profile) || void 0 === x ? void 0 : null === (A = x.profile_effect) || void 0 === A ? void 0 : A.expires_at) != null) {
+    }), (null === (x = e.user_profile) || void 0 === x ? void 0 : null === (N = x.profile_effect) || void 0 === N ? void 0 : N.expires_at) != null) {
     let t = new o.V7;
     R.set(e.user.id, t), M(e.user.id)
   }
@@ -269,7 +269,7 @@ function H(e) {
     apiError: o
   } = e;
   null === (t = O.get(r)) || void 0 === t || t.delete(null != i ? i : y), I.delete(r);
-  let a = null !== (n = N.get(r)) && void 0 !== n ? n : {
+  let a = null !== (n = A.get(r)) && void 0 !== n ? n : {
     connectedAccounts: [],
     applicationRoleConnections: [],
     premiumSince: null,
@@ -285,7 +285,7 @@ function H(e) {
     lastFetched: 0,
     fetchError: void 0
   };
-  a.lastFetched = Date.now(), a.fetchError = o, N.set(r, a), (null == o ? void 0 : o.status) === 404 && (D.set(r, 0), w.set(r, []), L.set(r, []))
+  a.lastFetched = Date.now(), a.fetchError = o, A.set(r, a), (null == o ? void 0 : o.status) === 404 && (D.set(r, 0), w.set(r, []), L.set(r, []))
 }
 
 function W(e) {
@@ -299,9 +299,9 @@ function W(e) {
     theme_colors: l,
     profileEffectId: c,
     profileEffectExpiresAt: u
-  } = e, d = N.get(t);
+  } = e, d = A.get(t);
   if (null == d) return !1;
-  if (N.set(t, v(E({}, d), {
+  if (A.set(t, v(E({}, d), {
       accentColor: n,
       banner: r,
       bio: i,
@@ -372,7 +372,7 @@ function Q(e) {
 }
 
 function X(e) {
-  return [...N.keys()].reduce((e, t) => et(t) || e, !1)
+  return [...A.keys()].reduce((e, t) => et(t) || e, !1)
 }
 
 function J(e) {
@@ -384,12 +384,12 @@ function $(e) {
 }
 
 function ee() {
-  O.clear(), I.clear(), N.clear(), C.clear()
+  O.clear(), I.clear(), A.clear(), C.clear()
 }
 
 function et(e) {
   if (null == e) return !1;
-  let t = N.get(e);
+  let t = A.get(e);
   if (null == t) return !1;
   t.lastFetched = 0, t.fetchError = void 0
 }
@@ -408,7 +408,7 @@ class en extends f.Z {
     return x
   }
   getUserProfile(e) {
-    return N.get(e)
+    return A.get(e)
   }
   getGuildMemberProfile(e, t) {
     var n, r;
@@ -425,7 +425,7 @@ class en extends f.Z {
   }
   takeSnapshot() {
     let e = c.default.getId(),
-      t = N.get(e);
+      t = A.get(e);
     return null != t ? {
       version: en.LATEST_SNAPSHOT_VERSION,
       data: [{
@@ -466,7 +466,7 @@ class en extends f.Z {
           userId: t,
           profile: n
         } = e;
-        null != t && (null != n ? N.set(t, n) : N.delete(t))
+        null != t && (null != n ? A.set(t, n) : A.delete(t))
       })
     })
   }

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C1: () => A,
-  Mo: () => N,
+  C1: () => N,
+  Mo: () => A,
   QG: () => C,
   XQ: () => I,
   _U: () => w,
@@ -143,9 +143,9 @@ async function T(e, t) {
     updates: t
   })
 }
-let A = (0, r.debounce)((e, t) => T(e, t), 1e3);
+let N = (0, r.debounce)((e, t) => T(e, t), 1e3);
 
-function N(e, t) {
+function A(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 ? arguments[3] : void 0;
   if (null == e) return;

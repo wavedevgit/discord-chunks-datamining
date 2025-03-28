@@ -37,15 +37,15 @@ let v = "premiumRetentionEmojiPickerNotice",
         S || (0, u.jg)()
       }, [S]), null == I || !(0, p.zV)(I.status) || o) return null;
     let T = I.status === m.O0b.PAST_DUE ? (0, p.lY)(I).expiresDate : a()(I.currentPeriodStart).add(g.gh),
-      A = "".concat(I.id, ":").concat(T.toISOString());
-    if (y === A) return null;
-    let N = p.ZP.getPremiumType(I.planId) === g.p9.TIER_0 ? f.JX.PREMIUM_TIER_0 : p.ZP.getPremiumType(I.planId) === g.p9.TIER_1 ? f.JX.PREMIUM_TIER_1 : f.JX.PREMIUM_TIER_2;
+      N = "".concat(I.id, ":").concat(T.toISOString());
+    if (y === N) return null;
+    let A = p.ZP.getPremiumType(I.planId) === g.p9.TIER_0 ? f.JX.PREMIUM_TIER_0 : p.ZP.getPremiumType(I.planId) === g.p9.TIER_1 ? f.JX.PREMIUM_TIER_1 : f.JX.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
       className: b.premiumRetentionNotice,
       children: [(0, r.jsx)(c.SrA, {
         size: "md",
         className: b.premiumRetentionNoticeIcon,
-        color: N
+        color: A
       }), (0, r.jsxs)("div", {
         className: b.premiumRetentionNoticeContent,
         children: [(0, r.jsx)(c.Text, {
@@ -64,7 +64,7 @@ let v = "premiumRetentionEmojiPickerNotice",
         })]
       }), (0, r.jsx)(c.P3F, {
         onClick: () => {
-          l.K.set(v, A), y = A, O(!0)
+          l.K.set(v, N), y = N, O(!0)
         },
         children: (0, r.jsx)(c.Dio, {
           size: "md",

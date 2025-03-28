@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(47120);
 var r = n(392711),
   i = n(106351),
@@ -46,7 +46,7 @@ function I(e) {
 }
 let S = 50,
   T = 1e3;
-class A extends a.Z {
+class N extends a.Z {
   isChannelEligible(e, t) {
     switch (e.type) {
       case i.d.DM:
@@ -117,4 +117,4 @@ class A extends a.Z {
     })
   }
 }
-let N = new A
+let A = new N

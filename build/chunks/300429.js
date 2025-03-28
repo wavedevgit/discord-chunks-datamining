@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   S: () => _,
-  Z: () => A
+  Z: () => N
 }), n(47120);
 var r, i = n(442837),
   o = n(846519),
@@ -125,7 +125,7 @@ class T extends(r = i.ZP.Store) {
   }
 }
 d(T, "displayName", "SlowmodeStore");
-let A = new T(a.Z, {
+let N = new T(a.Z, {
   SLOWMODE_RESET_COOLDOWN: y,
   SLOWMODE_SET_COOLDOWN: O,
   UPLOAD_START: b,

@@ -95,7 +95,7 @@ function S(e) {
     nick: p,
     colorString: h,
     colorRoleName: y
-  } = (0, u.ZP)(o), S = O(i, o), T = (0, _.NE)(i, o), A = n.showThreadPromptOnReply && S >= v && T, N = () => (0, f.uL)(g.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
+  } = (0, u.ZP)(o), S = O(i, o), T = (0, _.NE)(i, o), N = n.showThreadPromptOnReply && S >= v && T, A = () => (0, f.uL)(g.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
 
   function C(e) {
     e.stopPropagation(), (0, d.qx)(i.id, !s)
@@ -111,7 +111,7 @@ function S(e) {
       children: [(0, r.jsxs)("div", {
         className: b.replyBar,
         children: [(0, r.jsx)(l.P3F, {
-          onClick: N,
+          onClick: A,
           focusProps: {
             offset: {
               top: -8,
@@ -174,7 +174,7 @@ function S(e) {
             onClick: R
           })]
         })]
-      }), A && (0, r.jsx)(I, {
+      }), N && (0, r.jsx)(I, {
         channel: i,
         message: o,
         replyChainLength: S

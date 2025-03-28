@@ -30,16 +30,16 @@ let T = function(e) {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: o
-  } = e, T = i.useRef(null), A = (0, s.e7)([h.default], () => h.default.getCurrentUser()), N = (0, s.e7)([m.Z], () => m.Z.boostSlots), {
+  } = e, T = i.useRef(null), N = (0, s.e7)([h.default], () => h.default.getCurrentUser()), A = (0, s.e7)([m.Z], () => m.Z.boostSlots), {
     analyticsLocations: C
   } = (0, u.ZP)(), {
     fractionalState: R
   } = (0, d.Z)({
     forceFetch: !1
-  }), P = i.useMemo(() => Object.keys(N).filter(e => {
-    let t = N[e];
+  }), P = i.useMemo(() => Object.keys(A).filter(e => {
+    let t = A[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
-  }), [N, n.id]), w = i.useMemo(() => (0, E.vx)(N).length > 0, [N]);
+  }), [A, n.id]), w = i.useMemo(() => (0, E.vx)(A).length > 0, [A]);
 
   function D() {
     (0, _.Z)({
@@ -133,7 +133,7 @@ let T = function(e) {
             fullWidth: !0
           })
         })
-      }), b.ZP.hasFreeBoosts(A, R) || b.ZP.isPremium(A, O.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
+      }), b.ZP.hasFreeBoosts(N, R) || b.ZP.isPremium(N, O.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
         className: a()(S.guildBoostCta, S.guildBoostCtaSecondary),
         innerClassName: a()(S.__invalid_guildBoostCtaContent, S.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,

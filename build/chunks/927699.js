@@ -34,10 +34,10 @@ function E(e) {
     innerClassName: v,
     disabled: y = !1,
     disableThemedBackground: O = !1
-  } = e, [I, S] = i.useState(null != f ? f : E), [T, A] = i.useState((0, c.JM)(I)), N = i.useRef(!1);
+  } = e, [I, S] = i.useState(null != f ? f : E), [T, N] = i.useState((0, c.JM)(I)), A = i.useRef(!1);
 
   function C(e, t, n) {
-    t !== I && (S(t), A(n), o(t))
+    t !== I && (S(t), N(n), o(t))
   }
 
   function R() {
@@ -49,11 +49,11 @@ function E(e) {
     })
   }
   return i.useEffect(() => {
-    N.current = !0
+    A.current = !0
   }, []), i.useEffect(() => {
     if (void 0 === f) {
       let e = (0, c.JM)(E);
-      S(E), A(e)
+      S(E), N(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
     className: a()(m.body, b),
@@ -72,12 +72,12 @@ function E(e) {
         richValue: T,
         type: l.Ie.CUSTOM_GIFT,
         onBlur: () => {
-          N.current = !1
+          A.current = !1
         },
         onFocus: () => {
-          N.current = !0
+          A.current = !0
         },
-        focused: N.current,
+        focused: A.current,
         onSubmit: R,
         disableThemedBackground: O
       }), (0, r.jsx)(s.nn4, {

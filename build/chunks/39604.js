@@ -42,8 +42,8 @@ var r = n(46973),
   I = n(550351),
   S = n(659487),
   T = n(711644),
-  A = n(259612),
-  N = n(356659),
+  N = n(259612),
+  A = n(356659),
   C = n(981631);
 
 function R(e, t, n) {
@@ -270,8 +270,8 @@ async function Z(e) {
       clipStats: t
     } = await (null != u ? s.saveClipForUser(u, i, l) : s.saveClip(i, l)), r = V(d, t);
     r.clip_save_time_ms = t.clipSaveTimeMs, r.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (r.decode_fps_during_clip = t.viewerDecodeFps, r.encode_fps_during_clip = t.viewerEncodeFps, r.target_fps = null), b.default.track(C.rMx.CLIP_SAVED, r);
-    let o = await (0, A.R)(a.Z.clips.getClipProtocolURLFromPath(i), 0);
-    return n.thumbnail = o, n.length = e, N.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (f = null == o ? void 0 : o.length) && void 0 !== f ? f : 0, " bytes thumbnail.")), await s.updateClipMetadata(i, JSON.stringify(n)), D(P({}, n), {
+    let o = await (0, N.R)(a.Z.clips.getClipProtocolURLFromPath(i), 0);
+    return n.thumbnail = o, n.length = e, A.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (f = null == o ? void 0 : o.length) && void 0 !== f ? f : 0, " bytes thumbnail.")), await s.updateClipMetadata(i, JSON.stringify(n)), D(P({}, n), {
       filepath: i
     })
   } catch (i) {
@@ -304,7 +304,7 @@ async function H(e) {
     v = null != e ? e : b,
     O = (() => {
       let e = null != v ? (0, c.my)(v).ownerId : void 0;
-      return e === h.default.getId() ? N.X9.STREAMER : null != e ? N.X9.VIEWER : N.X9.DECOUPLED
+      return e === h.default.getId() ? A.X9.STREAMER : null != e ? A.X9.VIEWER : A.X9.DECOUPLED
     })(),
     I = await (async () => {
       if (null == v) return;
@@ -315,7 +315,7 @@ async function H(e) {
       if (null != n) try {
         let e = (0, i.zS)(),
           t = await e.getNextVideoOutputFrame(n);
-        return (0, A.W)(t)
+        return (0, N.W)(t)
       } catch (e) {
         return
       }
@@ -335,11 +335,11 @@ async function H(e) {
       clip: e
     })
   } catch (e) {
-    N.jF.error("Clip Failed to Save", e), null == S || S.stop(), (0, d.GN)("clip_error", .5), o.Z.dispatch({
+    A.jF.error("Clip Failed to Save", e), null == S || S.stop(), (0, d.GN)("clip_error", .5), o.Z.dispatch({
       type: "CLIPS_SAVE_CLIP_ERROR"
     })
   }
-  N.jF.info("".concat(y.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - T), "ms"))
+  A.jF.info("".concat(y.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - T), "ms"))
 }
 
 function W(e, t) {
