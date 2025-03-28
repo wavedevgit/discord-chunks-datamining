@@ -1,6 +1,6 @@
 /**
   Module ID: 92196
-  Original File Name: 81e0ed12a571921e
+  Original File Name: e303dfaabb846b0f
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -5209,12 +5209,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
-.plated__972a0 {
+.linkPlated__972a0 {
     padding-right: 36px
-}
-
-.platedHover__972a0 {
-    padding-right: 12px
 }
 
 .linkButton__972a0 {
@@ -5319,6 +5315,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     .channel__972a0:focus-within .closeButton__972a0,.channel__972a0:hover .closeButton__972a0 {
         display: block
     }
+
+    .channel__972a0:focus-within .linkPlated__972a0,.channel__972a0:hover .linkPlated__972a0 {
+        padding-right: 10px
+    }
 }
 
 :where(.visual-refresh) .interactive__972a0 {
@@ -5348,14 +5348,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .link__972a0 {
     padding: 0 var(--space-16) 0 var(--space-xs)
-}
-
-:where(.visual-refresh) .plated__972a0 {
-    padding-right: 36px
-}
-
-:where(.visual-refresh) .plated__972a0:focus-within,:where(.visual-refresh) .platedHover__972a0 {
-    padding-right: 10px
 }
 
 :where(.visual-refresh) .channel__972a0:not(.dm__972a0) {
@@ -5897,4 +5889,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=81e0ed12a571921e.css.map*/
+/*# sourceMappingURL=e303dfaabb846b0f.css.map*/

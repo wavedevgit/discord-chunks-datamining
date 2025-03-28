@@ -29,8 +29,8 @@ var r, i = n(200651),
   C = n(913583),
   y = n(144114),
   T = n(541692),
-  A = n(952802),
-  P = n(108427),
+  P = n(952802),
+  A = n(108427),
   Z = n(365007),
   R = n(314897),
   w = n(117240),
@@ -135,7 +135,7 @@ class Q extends(r = o.PureComponent) {
           if ("AbortError" !== e.name) throw e
         })
       }).catch(() => {})
-    }), g.Z.getLocationMetadata(), (0, P.e)("login")
+    }), g.Z.getLocationMetadata(), (0, A.e)("login")
   }
   componentDidUpdate(e, t) {
     let {
@@ -291,7 +291,7 @@ class Q extends(r = o.PureComponent) {
       className: e,
       children: [(0, i.jsx)(M.R, {}), (0, i.jsxs)(x.gO, {
         className: K.marginTop20,
-        children: [(0, i.jsx)(A.Z, {
+        children: [(0, i.jsx)(P.Z, {
           className: K.marginBottom20,
           alpha2: t.alpha2,
           countryCode: t.code.split(" ")[0],
@@ -391,7 +391,7 @@ class Q extends(r = o.PureComponent) {
         }), n, (0, i.jsx)(p.y5t, {
           children: (0, i.jsxs)(x.gO, {
             className: K.marginTop20,
-            children: [(0, i.jsx)(A.Z, {
+            children: [(0, i.jsx)(P.Z, {
               alpha2: l.alpha2,
               countryCode: l.code.split(" ")[0],
               className: K.marginBottom20,

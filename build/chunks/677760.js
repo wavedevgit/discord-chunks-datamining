@@ -102,7 +102,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function P(e) {
   var {
     children: t,
     cardChildren: n,
@@ -150,7 +150,7 @@ function A(e) {
   })
 }
 
-function P(e) {
+function A(e) {
   let {
     invite: t
   } = e;
@@ -158,7 +158,7 @@ function P(e) {
   let n = e => null == t ? null : 1 === e ? (0, r.jsx)(v.X, {
     invite: t
   }) : null;
-  return (0, r.jsx)(A, O(S({
+  return (0, r.jsx)(P, O(S({
     startAnimHeightPx: 0,
     innerStyle: () => j.guildInfoInner
   }, e), {
@@ -188,7 +188,7 @@ function Z(e) {
     2: j.inviteCardInnerError,
     0: j.inviteCardInnerLoading
   };
-  return (0, r.jsx)(A, O(S({
+  return (0, r.jsx)(P, O(S({
     startAnimHeightPx: 200,
     innerStyle: e => i[e]
   }, e), {
@@ -217,7 +217,7 @@ function R(e) {
     contentClassName: j.centerAuthBoxContent,
     children: [(0, r.jsx)(Z, O(S({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(P, S({}, e))]
+    })), (0, r.jsx)(A, S({}, e))]
   })
 }
 

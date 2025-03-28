@@ -24,7 +24,7 @@ let b = () => {
     } catch (e) {
       O(e.body.message)
     }
-  }, A = async () => {
+  }, P = async () => {
     N(!0);
     try {
       let {
@@ -36,7 +36,7 @@ let b = () => {
     } finally {
       N(!1)
     }
-  }, P = (0, r.jsxs)(h.ZP, {
+  }, A = (0, r.jsxs)(h.ZP, {
     children: [(0, r.jsx)(h.Ee, {
       src: n(292824)
     }), (0, r.jsxs)(h.Dx, {
@@ -48,7 +48,7 @@ let b = () => {
       })]
     })]
   });
-  return v ? P : (0, r.jsxs)(h.ZP, {
+  return v ? A : (0, r.jsxs)(h.ZP, {
     children: [(0, r.jsx)(h.Dx, {
       children: m.NW.string(m.t.o4JNrK)
     }), (0, r.jsx)(h.DK, {
@@ -80,7 +80,7 @@ let b = () => {
         children: m.NW.string(m.t["5b60go"])
       }), (0, r.jsx)(h.zx, {
         className: _.marginTop20,
-        onClick: A,
+        onClick: P,
         submitting: x,
         children: m.NW.string(m.t.i4jeWV)
       })]

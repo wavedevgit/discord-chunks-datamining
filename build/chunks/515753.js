@@ -44,8 +44,8 @@ var l = n(200651),
   G = n(518950),
   k = n(199902),
   H = n(158776),
-  F = n(306680),
-  V = n(699516),
+  V = n(306680),
+  F = n(699516),
   B = n(111583),
   W = n(9156),
   z = n(594174),
@@ -244,10 +244,10 @@ function es(e) {
   }), eE = (0, E.e7)([W.ZP], () => W.ZP.isChannelMuted(i.getGuildId(), i.id)), {
     ignored: ef,
     blocked: ep
-  } = (0, E.cj)([V.Z], () => ({
-    ignored: V.Z.isIgnored(i.getRecipientId()),
-    blocked: V.Z.isBlocked(i.getRecipientId())
-  })), eh = (0, E.e7)([F.ZP], () => F.ZP.getMentionCount(i.id) > 0), eC = (0, m.ZP)(i), e_ = (0, E.e7)([R.Z], () => R.Z.isFavorite(i.id)), eO = () => {
+  } = (0, E.cj)([F.Z], () => ({
+    ignored: F.Z.isIgnored(i.getRecipientId()),
+    blocked: F.Z.isBlocked(i.getRecipientId())
+  })), eh = (0, E.e7)([V.ZP], () => V.ZP.getMentionCount(i.id) > 0), eC = (0, m.ZP)(i), e_ = (0, E.e7)([R.Z], () => R.Z.isFavorite(i.id)), eO = () => {
     Y(!0)
   }, eg = () => {
     Y(!1)
@@ -361,7 +361,7 @@ function es(e) {
       disableGuildProfile: !0,
       className: X.clanTag
     })]
-  }) : eC, [ex, ew] = r.useState(!1), eM = null !== (t = eE || eZ || eD) && void 0 !== t && t, eG = r.useRef(null);
+  }) : eC, ex = null !== (t = eE || eZ || eD) && void 0 !== t && t, ew = r.useRef(null);
   return (0, l.jsx)(u.mh, {
     id: i.id,
     children: e => {
@@ -376,8 +376,6 @@ function es(e) {
           ringTarget: es
         }),
         ref: es,
-        onFocus: () => ew(!0),
-        onBlur: () => ew(!1),
         onMouseEnter: eO,
         onMouseLeave: eg,
         onMouseDown: eI,
@@ -392,20 +390,19 @@ function es(e) {
           }),
           as: "div",
           onClick: eN,
-          muted: eM,
+          muted: ex,
           selected: d,
           children: [(0, l.jsx)(w.Z, {
             nameplate: H,
             selected: d,
             hovered: K,
-            content: eG.current,
+            content: ew.current,
             placement: x.i.CHANNEL
           }), (0, l.jsx)(c.rU, $(J({
             innerRef: ea,
             to: Q.Z5c.CHANNEL(Q.ME, i.id),
             className: o()(X.link, {
-              [X.plated]: null != H,
-              [X.platedHover]: null != H && (K || ex)
+              [X.linkPlated]: null != H
             }),
             "aria-label": (0, b.ZP)({
               channel: i,
@@ -413,11 +410,11 @@ function es(e) {
             })
           }, n), {
             children: (0, l.jsx)(T.Z, {
-              ref: eG,
+              ref: ew,
               avatar: eA(),
               selected: d,
               highlighted: eh,
-              muted: eM,
+              muted: ex,
               subText: em(),
               name: (0, l.jsx)(y.Z, {
                 tooltipClassName: X.overflowTooltip,

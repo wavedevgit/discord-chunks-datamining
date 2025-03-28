@@ -1,6 +1,6 @@
 /**
   Module ID: 82873
-  Original File Name: ddaf7bc291295da4
+  Original File Name: 47278e8e1fafd0db
 **/
 @value minColumnWidth: 460px;
 
@@ -815,12 +815,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
-.plated__972a0 {
+.linkPlated__972a0 {
     padding-right: 36px
-}
-
-.platedHover__972a0 {
-    padding-right: 12px
 }
 
 .linkButton__972a0 {
@@ -925,6 +921,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     .channel__972a0:focus-within .closeButton__972a0,.channel__972a0:hover .closeButton__972a0 {
         display: block
     }
+
+    .channel__972a0:focus-within .linkPlated__972a0,.channel__972a0:hover .linkPlated__972a0 {
+        padding-right: 10px
+    }
 }
 
 :where(.visual-refresh) .interactive__972a0 {
@@ -954,14 +954,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .link__972a0 {
     padding: 0 var(--space-16) 0 var(--space-xs)
-}
-
-:where(.visual-refresh) .plated__972a0 {
-    padding-right: 36px
-}
-
-:where(.visual-refresh) .plated__972a0:focus-within,:where(.visual-refresh) .platedHover__972a0 {
-    padding-right: 10px
 }
 
 :where(.visual-refresh) .channel__972a0:not(.dm__972a0) {
@@ -3698,4 +3690,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=ddaf7bc291295da4.css.map*/
+/*# sourceMappingURL=47278e8e1fafd0db.css.map*/

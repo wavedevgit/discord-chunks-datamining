@@ -30,7 +30,7 @@ var r = n(200651),
   y = n(388032),
   T = n(802138);
 
-function A(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 l.ZP.initialize();
-class P extends i.PureComponent {
+class A extends i.PureComponent {
   componentDidMount() {
     let {
       authenticated: e,
@@ -227,13 +227,13 @@ class P extends i.PureComponent {
     return null
   }
   constructor(...e) {
-    super(...e), A(this, "state", {
+    super(...e), P(this, "state", {
       error: null,
       continueOnWeb: !1,
       currentUser: null,
       sentVerification: !1,
       fetchingUser: !1
-    }), A(this, "refreshUser", () => {
+    }), P(this, "refreshUser", () => {
       this.setState({
         fetchingUser: !0
       }), p.k({
@@ -244,14 +244,14 @@ class P extends i.PureComponent {
       })).catch(() => this.setState({
         fetchingUser: !1
       }))
-    }), A(this, "handleLogout", () => {
+    }), P(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
       c.Z.logout(C.Z5c.GIFT_CODE_LOGIN(e))
-    }), A(this, "handleResendVerification", () => {
+    }), P(this, "handleResendVerification", () => {
       c.Z.verifyResend(), this.setState({
         sentVerification: !0
       })
-    }), A(this, "handleAccept", async () => {
+    }), P(this, "handleAccept", async () => {
       let {
         transitionTo: e,
         giftCode: t
@@ -269,7 +269,7 @@ class P extends i.PureComponent {
           error: e
         })
       }
-    }), A(this, "resolveGiftCode", () => {
+    }), P(this, "resolveGiftCode", () => {
       let {
         transitionTo: e
       } = this.props, t = this.getCode();
@@ -294,4 +294,4 @@ let Z = l.ZP.connectStores([b.Z, x.Z, f.default, N.Z, _.Z, g.Z], e => {
     libraryApplicationsFetched: x.Z.fetched,
     nativeAppState: g.Z.getState(t)
   }
-})(P)
+})(A)

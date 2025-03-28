@@ -333,7 +333,7 @@ H.displayName = "BaseChatWallpaperSelection";
 let q = function(e) {
   let {
     className: t,
-    position: n = C.VD2.BOTTOM_RIGHT,
+    position: n = C.VD2.TOP_RIGHT,
     config: o
   } = e, {
     analyticsLocations: s
@@ -416,6 +416,7 @@ let q = function(e) {
     children: (0, r.jsx)(b.Z, {
       className: a()(D.draggableContainer, t),
       defaultPosition: n,
+      topOffset: 88,
       children: (0, r.jsxs)("div", {
         className: D.container,
         children: [(null == o ? void 0 : o.pickerType) === 1 ? (0, r.jsx)(V, {

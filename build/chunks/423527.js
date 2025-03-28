@@ -28,8 +28,8 @@ var r, i = n(200651),
   C = n(792766),
   y = n(692483),
   T = n(100159),
-  A = n(473855),
-  P = n(726745),
+  P = n(473855),
+  A = n(726745),
   Z = n(929809),
   R = n(541692),
   w = n(986197),
@@ -458,9 +458,9 @@ class eu extends(r = o.PureComponent) {
         suggestions: y
       },
       authBoxClassName: T,
-      hasLoggedInAccounts: A
+      hasLoggedInAccounts: P
     } = this.props, {
-      subText: P,
+      subText: A,
       consentText: Z
     } = this.renderConsentComponents(), R = this.renderErrorMessage(), D = (0, i.jsx)(h.ua7, {
       text: !c && S ? en.NW.string(en.t.AY4IVF) : null,
@@ -578,7 +578,7 @@ class eu extends(r = o.PureComponent) {
         error: null != f ? f : ec(j),
         value: u,
         required: !0
-      }), (0, i.jsx)(O.Z, {}), D, R, Z, P, $.a ? null : (0, i.jsx)(I.zx, {
+      }), (0, i.jsx)(O.Z, {}), D, R, Z, A, $.a ? null : (0, i.jsx)(I.zx, {
         look: C ? I.zx.Looks.FILLED : I.zx.Looks.LINK,
         color: C ? I.zx.Colors.PRIMARY : I.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
@@ -601,7 +601,7 @@ class eu extends(r = o.PureComponent) {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: T,
-      children: [A && !C ? (0, i.jsx)(I.zx, {
+      children: [P && !C ? (0, i.jsx)(I.zx, {
         onClick: this.handleGotoLogin,
         look: I.zx.Looks.LINK,
         color: I.zx.Colors.PRIMARY,
@@ -631,7 +631,7 @@ class eu extends(r = o.PureComponent) {
       giftCode: r,
       guildTemplate: o
     } = this.props, a = null != n && null == n.guild && null == n.channel && null != n.inviter;
-    return null == n || a || t ? null != o ? this.renderFull(() => (0, i.jsx)(A.Z, {
+    return null == n || a || t ? null != o ? this.renderFull(() => (0, i.jsx)(P.Z, {
       guildTemplate: o
     }), !0) : null != r ? this.renderFull(() => (0, i.jsx)(q.Z, {
       giftCode: r
@@ -745,12 +745,12 @@ class eu extends(r = o.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([U.Z, G.default, f.Z, R.Z, P.Z], () => ({
+  let t = (0, d.cj)([U.Z, G.default, f.Z, R.Z, A.Z], () => ({
       consentRequired: U.Z.getAuthenticationConsentRequired(),
       authenticated: G.default.isAuthenticated(),
       isUnderage: f.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
-      hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()
+      hasLoggedInAccounts: A.Z.getHasLoggedInAccounts()
     })),
     n = (0, k.F4)(),
     r = (0, d.e7)([L.Z], () => L.Z.registrationUsernameSuggestion()),

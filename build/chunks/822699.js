@@ -29,8 +29,8 @@ var r = n(200651),
   C = n(82142),
   y = n(701190),
   T = n(626135),
-  A = n(81063),
-  P = n(449934),
+  P = n(81063),
+  A = n(449934),
   Z = n(768581),
   R = n(625054),
   w = n(645499),
@@ -122,13 +122,13 @@ class eS extends i.PureComponent {
     } = t, l = null !== (n = (0, o.parse)(i.search).redirect_to) && void 0 !== n ? n : null;
     (null == l || "" === l || !(0, w.B)(l) || l.startsWith($.Z5c.ME)) && (l = null);
     let s = null;
-    if (null == r) s = (0, P.gK)(l);
+    if (null == r) s = (0, A.gK)(l);
     else if ((null == r ? void 0 : r.state) === $.r2o.RESOLVED) {
       let {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != a && (s = (0, A.xF)(t.id, a, 1024)) : null != e && "string" == typeof e.splash && (s = Z.ZP.getGuildSplashURL({
+      null != t ? null != a && (s = (0, P.xF)(t.id, a, 1024)) : null != e && "string" == typeof e.splash && (s = Z.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
@@ -166,7 +166,7 @@ class eS extends i.PureComponent {
       let {
         target_application: t
       } = e;
-      null != t && (0, A.hR)(t.id, ["embedded_splash"]).then(e => {
+      null != t && (0, P.hR)(t.id, ["embedded_splash"]).then(e => {
         let [t] = e;
         return this.setState({
           backgroundId: t

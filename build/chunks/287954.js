@@ -96,27 +96,29 @@ function g(e) {
     interactionType: b,
     interactionSource: v,
     resetInteraction: y,
-    interactionSourceId: O
-  } = (0, o.Xo)(), I = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, S = v === E.sourceType && b === c.P.REACT, T = v === E.sourceType && b === c.P.REPLY, N = (S || T) && O === E.sourceId;
+    interactionSourceId: O,
+    interactionPopoutTargetRef: I
+  } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = v === E.sourceType && b === c.P.REACT, N = v === E.sourceType && b === c.P.REPLY, A = (T || N) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
+    targetElementRef: null != I ? I : void 0,
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, o = S ? a.Z : s.Z;
+      } = e, o = T ? a.Z : s.Z;
       return (0, r.jsx)(o, d({
         user: t,
         guildId: n,
         channelId: u,
         profileType: f,
         onClose: h,
-        modalKey: I,
+        modalKey: S,
         setPopoutRef: i
       }, E))
     },
     onRequestClose: () => {
       y(), null == h || h()
     },
-    shouldShow: N
+    shouldShow: A
   }, m(b, f)), {
     children: g
   }))

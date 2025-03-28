@@ -30,7 +30,7 @@ var r = n(200651),
 let y = n(515695),
   T = new f.Z("LoginQRSocket");
 
-function A(e) {
+function P(e) {
   let {
     text: t = ""
   } = e, [n, o] = i.useState(!1);
@@ -65,7 +65,7 @@ function A(e) {
     })
   })
 }
-let P = e => {
+let A = e => {
   let {
     className: t,
     children: n
@@ -90,12 +90,12 @@ function Z(e) {
     case 0:
     case 1:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(A, {
+        children: [(0, r.jsx)(P, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(g.Dx, {
           className: C.marginBottom8,
           children: S.NW.string(S.t.UPiHaG)
-        }), null != i ? (0, r.jsx)(P, {
+        }), null != i ? (0, r.jsx)(A, {
           children: i
         }) : (0, r.jsx)(g.DK, {
           children: S.NW.format(S.t["Qq+A6u"], {})

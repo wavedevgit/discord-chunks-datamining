@@ -48,17 +48,17 @@ let N = "mweb_handoff_nonce",
       }, {
         fingerprint: O
       })
-    }, [y, O]), A = c.K.get(N);
-    if ("null" === n && null === C && T("deep_link_failed"), null != n && "null" !== n && null == A && null === C && T("nonce_missing"), i.useEffect(() => {
-        if (null != A) {
+    }, [y, O]), P = c.K.get(N);
+    if ("null" === n && null === C && T("deep_link_failed"), null != n && "null" !== n && null == P && null === C && T("nonce_missing"), i.useEffect(() => {
+        if (null != P) {
           let e = c.K.get(v);
           (null == e || Date.now() >= e) && (T("nonce_expired"), S())
         }
-      }, [A, T]), i.useEffect(() => {
-        null != n && "null" !== n && null != A && null == C && s.tn.post({
+      }, [P, T]), i.useEffect(() => {
+        null != n && "null" !== n && null != P && null == C && s.tn.post({
           url: _.ANM.HANDOFF_EXCHANGE,
           body: {
-            key: A,
+            key: P,
             handoff_token: n
           },
           rejectWithError: !0
@@ -76,8 +76,8 @@ let N = "mweb_handoff_nonce",
         }).finally(() => {
           S()
         })
-      }, [n, A, C, O, T]), null == O) return null;
-    let P = null == C ? (0, r.jsxs)(r.Fragment, {
+      }, [n, P, C, O, T]), null == O) return null;
+    let A = null == C ? (0, r.jsxs)(r.Fragment, {
       children: [b.NW.string(b.t.uJ1Jsb), (0, r.jsx)("br", {}), b.NW.string(b.t.GHVWAg)]
     }) : j.has(C) ? b.NW.string(b.t.EPt55u) : I.has(C) ? b.NW.string(b.t.g87kTk) : void 0;
     return null != C && j.has(C) ? (0, r.jsx)("div", {
@@ -85,13 +85,13 @@ let N = "mweb_handoff_nonce",
       children: (0, r.jsx)(u.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
-        children: P
+        children: A
       })
     }) : (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
-        children: P
+        children: A
       }), (0, r.jsx)(u.zxk, {
         color: u.zxk.Colors.BRAND_INVERTED,
         onClick: () => {

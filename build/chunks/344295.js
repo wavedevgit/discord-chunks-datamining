@@ -29,8 +29,8 @@ var r = n(200651),
   C = n(626135),
   y = n(630388),
   T = n(63063),
-  A = n(782605),
-  P = n(954824),
+  P = n(782605),
+  A = n(954824),
   Z = n(588705),
   R = n(781428),
   w = n(423527),
@@ -74,7 +74,7 @@ class V extends i.PureComponent {
         flush: !0
       }), (0, I.e)("invite"), !W.KO) {
       let e = this.getInviteKey();
-      P.Z.launch("discord://" + L.Z5c.INVITE(e), () => void 0)
+      A.Z.launch("discord://" + L.Z5c.INVITE(e), () => void 0)
     }
     if (!t && e) {
       let e = this.getInviteKey(),
@@ -320,7 +320,7 @@ class V extends i.PureComponent {
         }
       }).catch(e => {
         if (e instanceof p.yZ || e instanceof p.Hx) {
-          let t = (0, A.O)(e.code);
+          let t = (0, P.O)(e.code);
           this.setState({
             error: {
               code: e.code,

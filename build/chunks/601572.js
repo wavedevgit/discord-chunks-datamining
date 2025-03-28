@@ -14,8 +14,8 @@ var o = n(200651),
   u = n(313201),
   b = n(695346),
   f = n(932724),
-  p = n(716161),
-  g = n(672339),
+  g = n(716161),
+  p = n(672339),
   m = n(898531),
   h = n(131951),
   S = n(594174),
@@ -46,7 +46,7 @@ function O(e) {
     await W(), i.Z.setVideoEnabled(!0), null == O || O()
   }, W = async () => {
     try {
-      await (0, g.wG)(w, {
+      await (0, p.wG)(w, {
         location: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -69,7 +69,7 @@ function O(e) {
         }, L.location)
       })
     } catch (e) {}
-    await k(), (0, p.Up)(w)
+    await k(), (0, g.Up)(w)
   };
   return (0, o.jsx)(s.Gt, {
     value: N,
