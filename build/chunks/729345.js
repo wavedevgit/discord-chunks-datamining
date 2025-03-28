@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => O
+  E: () => I
 }), n(26686);
 var r = n(544891),
   i = n(668757),
@@ -22,18 +22,36 @@ let g = 9437184,
   b = new d.Z("DebugUploadManager"),
   v = null,
   y = null;
-async function O(e, t) {
+
+function O(e) {
+  switch (e.code) {
+    case o.cz.GENERAL:
+      return s.Nk.UploadErrorGeneral;
+    case o.cz.NO_FILE:
+      return s.Nk.UploadErrorNoFile;
+    case o.cz.PROGRESS:
+      return s.Nk.UploadErrorProgress;
+    case o.cz.UPLOAD:
+      return s.Nk.UploadErrorUpload;
+    case o.cz.READ:
+      return s.Nk.UploadErrorRead;
+    default:
+      return
+  }
+}
+async function I(e, t) {
   try {
-    await I(e), await (0, a.u)(E, t)
+    await S(e), await (0, a.u)(E, t)
   } catch (t) {
     let e;
-    throw t instanceof o.n0 && (e = "UploadErrorCodes.".concat(o.cz[t.code])), (0, s.kr)(s.u.DEBUG_LOG_UPLOAD_FAILED, {
+    throw t instanceof o.n0 && (e = O(t)), (0, s.kr)({
+      type: s.u.DEBUG_LOG_UPLOAD_FAILED,
       underlyingError: e,
       errorMessage: t.message
     }), t
   }
 }
-async function I(e) {
+async function S(e) {
   try {
     let n, o, a, s;
     try {

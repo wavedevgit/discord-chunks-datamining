@@ -97,7 +97,7 @@ function L(e) {
           }),
           onClick: t
         })]
-      }), V && (0, r.jsx)(A.Z, {
+      }), V && n.isGuildVoice() && (0, r.jsx)(A.Z, {
         voiceChannel: n,
         onAction: j,
         onClose: L

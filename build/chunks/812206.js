@@ -167,12 +167,14 @@ function w(e) {
 
 function D(e) {
   let {
-    user: t,
-    application: n
-  } = e;
-  t.bot && null != n && N({
-    userId: t.id,
-    applicationId: n.id
+    userProfile: t
+  } = e, {
+    user: n,
+    application: r
+  } = t;
+  n.bot && null != r && N({
+    userId: n.id,
+    applicationId: r.id
   })
 }
 

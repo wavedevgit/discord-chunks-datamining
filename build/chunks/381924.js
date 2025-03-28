@@ -1,6 +1,6 @@
 /** Chunk was on 83331 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -12,16 +12,16 @@ var i = n(442837),
   s = n(496675),
   u = n(944486),
   d = n(981631),
-  f = n(388032);
+  Z = n(388032);
 
-function Z(e, t) {
+function f(e, t) {
   let n = (0, i.e7)([s.Z], () => s.Z.can(d.Plq.CONNECT, e), [e]),
-    Z = (0, i.e7)([u.Z], () => u.Z.getVoiceChannelId()),
+    f = (0, i.e7)([u.Z], () => u.Z.getVoiceChannelId()),
     b = (0, a.tT)(t),
-    O = Z === e.id;
+    O = f === e.id;
   return e.isGuildVocal() && n && null != b && !O ? (0, r.jsx)(l.sN, {
     id: "join-muted-custom-join-sound",
-    label: f.NW.string(f.t.saLMWV),
+    label: Z.NW.string(Z.t.saLMWV),
     action: () => {
       (0, c.Db)(e.id), o.default.selectVoiceChannel(e.id)
     }

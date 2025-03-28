@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  In: () => y,
-  Lr: () => E,
-  PR: () => v,
-  Sr: () => O,
-  k: () => g,
-  mB: () => b
+  In: () => b,
+  Lr: () => m,
+  PR: () => E,
+  Sr: () => v,
+  k: () => h,
+  mB: () => g
 }), n(789020);
 var r = n(512722),
   i = n.n(r),
@@ -19,31 +19,9 @@ var r = n(512722),
   d = n(594174),
   f = n(573261),
   _ = n(981631);
+let p = new a.Yd("UserProfileModalActionCreators");
 
-function p(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-  }) : e[t] = n, e
-}
-
-function h(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      p(e, t, n[t])
-    })
-  }
-  return e
-}
-let m = new a.Yd("UserProfileModalActionCreators");
-
-function g() {
+function h() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
     {
       withAnalyticsToken: t = !1
@@ -62,7 +40,7 @@ function g() {
   }), new u.Z(e.body)))
 }
 
-function E() {
+function m() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   return f.Z.patch({
@@ -79,7 +57,7 @@ function E() {
   }).then(() => !0, () => !1)
 }
 
-function b(e, t) {
+function g(e, t) {
   let n = d.default.getCurrentUser();
   i()(null != n, "setFlag: user cannot be undefined");
   let r = t ? n.flags | e : n.flags & ~e;
@@ -93,7 +71,7 @@ function b(e, t) {
   })
 }
 
-function v(e) {
+function E(e) {
   let t = d.default.getUser(e);
   return null != t ? Promise.resolve(t) : s.tn.get({
     url: _.ANM.USER(e),
@@ -104,7 +82,7 @@ function v(e) {
     user: t.body
   }), d.default.getUser(e)))
 }
-async function y(e) {
+async function b(e) {
   let {
     type: t,
     friendToken: n,
@@ -115,7 +93,7 @@ async function y(e) {
     connectionsRoleId: u,
     joinRequestId: d,
     abortSignal: f
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, p = arguments.length > 2 ? arguments[2] : void 0;
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, h = arguments.length > 2 ? arguments[2] : void 0;
   l.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
@@ -138,18 +116,19 @@ async function y(e) {
       signal: f,
       rejectWithError: !0
     });
-    null == p || p(c.body, a), l.Z.dispatch({
+    null == h || h(c.body, a), l.Z.dispatch({
       type: "USER_UPDATE",
       user: c.body.user
-    }), l.Z.dispatch(h({
-      type: "USER_PROFILE_FETCH_SUCCESS"
-    }, c.body)), null != a && null != c.body.guild_member && l.Z.dispatch({
+    }), l.Z.dispatch({
+      type: "USER_PROFILE_FETCH_SUCCESS",
+      userProfile: c.body
+    }), null != a && null != c.body.guild_member && l.Z.dispatch({
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildId: a,
       guildMember: c.body.guild_member
     })
   } catch (t) {
-    throw null != t && (null == t ? void 0 : t.body) != null && m.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
+    throw null != t && (null == t ? void 0 : t.body) != null && p.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
       type: "USER_PROFILE_FETCH_FAILURE",
       apiError: new c.Hx(t),
       userId: e,
@@ -157,7 +136,7 @@ async function y(e) {
     }), t
   }
 }
-async function O(e, t) {
+async function v(e, t) {
   l.Z.dispatch({
     type: "MUTUAL_FRIENDS_FETCH_START",
     userId: e
@@ -175,7 +154,7 @@ async function O(e, t) {
       mutualFriends: n.body
     })
   } catch (t) {
-    throw (null == t ? void 0 : t.body) != null && m.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
+    throw (null == t ? void 0 : t.body) != null && p.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
       type: "MUTUAL_FRIENDS_FETCH_FAILURE",
       userId: e
     }), t

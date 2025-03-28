@@ -19,7 +19,7 @@ let l = new Map;
 class c extends(r = i.ZP.Store) {
   hasActiveErrorOfType(e) {
     for (let {
-        error: t
+        type: t
       }
       of l.values())
       if (t === e) return !0;

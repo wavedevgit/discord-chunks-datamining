@@ -1,12 +1,16 @@
-/** Chunk was on 83331 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  W: () => o
+  W: () => a
 });
 var r = n(442837),
   i = n(314897),
-  l = n(979651);
+  o = n(979651);
 
-function o(e) {
-  var t;
-  return t = null == e ? void 0 : e.id, (0, r.e7)([l.Z, i.default], () => l.Z.isInChannel(t, i.default.getId()))
+function a(e) {
+  return s(null == e ? void 0 : e.id)
+}
+
+function s(e) {
+  return (0, r.e7)([o.Z, i.default], () => o.Z.isInChannel(e, i.default.getId()))
 }

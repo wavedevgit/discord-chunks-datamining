@@ -1,25 +1,22 @@
 /** Chunk was on 2026 **/
 n.d(t, {
-  M: () => f
-}), n(47120);
+  M: () => d
+});
 var r = n(200651),
-  i = n(192379),
-  a = n(442837),
-  l = n(980591),
-  o = n(921813),
-  s = n(643879),
-  c = n(317257),
-  u = n(25990),
-  d = n(74538),
-  m = n(755419),
-  p = n(798886);
-let f = e => {
+  i = n(442837),
+  a = n(921813),
+  l = n(643879),
+  s = n(25990),
+  o = n(74538),
+  c = n(755419),
+  u = n(798886);
+let d = e => {
   var t, n;
   let {
-    user: f
-  } = e, v = d.ZP.canUsePremiumProfileCustomization(f), h = (0, a.cj)([u.Z], () => u.Z.getAllPending()), {
-    pendingAvatar: b
-  } = h, x = function(e, t) {
+    user: d
+  } = e, m = o.ZP.canUsePremiumProfileCustomization(d), p = (0, i.cj)([s.Z], () => s.Z.getAllPending()), {
+    pendingAvatar: f
+  } = p, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -33,15 +30,13 @@ let f = e => {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(h, ["pendingAvatar"]), P = (0, s.SD)({
-    userId: f.id,
-    image: b
-  }), [g, C] = (0, i.useState)(!1);
-  return (0, l.Z)(() => {
-    C(!0)
-  }, 250), (0, r.jsx)("div", {
-    className: p.container,
-    children: (0, r.jsx)(o.Z, (t = function(e) {
+  }(p, ["pendingAvatar"]), h = (0, l.SD)({
+    userId: d.id,
+    image: f
+  });
+  return (0, r.jsx)("div", {
+    className: u.container,
+    children: (0, r.jsx)(a.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -58,12 +53,11 @@ let f = e => {
         })
       }
       return e
-    }({}, x), n = n = {
-      pendingAvatar: P,
-      user: f,
-      pendingBadges: [(0, m.X2)()],
-      shouldOpenBadgeTooltip: e => g && e === c.l.ORB_PROFILE_BADGE,
-      canUsePremiumCustomization: v,
+    }({}, v), n = n = {
+      pendingAvatar: h,
+      user: d,
+      pendingBadges: [(0, c.X2)()],
+      canUsePremiumCustomization: m,
       disabledInputs: !0,
       hideExampleButton: !0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

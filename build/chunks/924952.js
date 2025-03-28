@@ -1,6 +1,6 @@
 /** Chunk was on 83331 **/
 n.d(t, {
-  Z: () => f
+  Z: () => Z
 });
 var r = n(200651);
 n(192379);
@@ -13,11 +13,11 @@ var i = n(442837),
   u = n(765305),
   d = n(388032);
 
-function f(e, t, n) {
+function Z(e, t, n) {
   let {
-    canManageGuildEvent: f
-  } = (0, o.XJ)(null != n ? n : t), Z = (0, i.e7)([a.ZP], () => a.ZP.isActive(e)), b = (0, i.e7)([a.ZP], () => a.ZP.getGuildScheduledEvent(e), [e]), O = f(b);
-  if (null == e || !O || !Z || (null == b ? void 0 : b.entity_type) === u.WX.EXTERNAL) return null;
+    canManageGuildEvent: Z
+  } = (0, o.XJ)(null != n ? n : t), f = (0, i.e7)([a.ZP], () => a.ZP.isActive(e)), b = (0, i.e7)([a.ZP], () => a.ZP.getGuildScheduledEvent(e), [e]), O = Z(b);
+  if (null == e || !O || !f || (null == b ? void 0 : b.entity_type) === u.WX.EXTERNAL) return null;
   let j = () => {
     if (null == n ? void 0 : n.isGuildStageVoice()) {
       (0, c.NZ)(n);

@@ -10,14 +10,14 @@ var r = n(399606),
   l = n(397639),
   _ = n(19780),
   s = n(979651),
-  p = n(951206),
-  u = n(446226),
+  u = n(951206),
+  p = n(446226),
   o = n(937393),
-  I = n(721351),
-  g = n(981631),
-  N = n(388032);
+  g = n(721351),
+  I = n(981631),
+  c = n(388032);
 
-function E(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -36,7 +36,7 @@ function E(e) {
   return e
 }
 
-function c(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,7 +51,7 @@ function c(e, t) {
 
 function T(e) {
   let t = (0, r.e7)([_.Z], () => _.Z.getChannelId() === e.id),
-    T = (0, u.Z)(),
+    T = (0, p.Z)(),
     U = (null == T ? void 0 : T.channelId) === e.id,
     L = (0, l.V)(e) && !e.isPrivate(),
     O = (0, l.Z)(e),
@@ -66,38 +66,38 @@ function T(e) {
       });
       return
     }
-    t.type === g.ABu.XBOX ? (0, d.ZDy)(async () => {
+    t.type === I.ABu.XBOX ? (0, d.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("53419"), n.e("522")]).then(n.bind(n, 200623));
-      return n => (0, i.jsx)(t, c(E({}, n), {
+      return n => (0, i.jsx)(t, E(N({}, n), {
         channel: e
       }))
-    }) : (t.type === g.ABu.PLAYSTATION || t.type === g.ABu.PLAYSTATION_STAGING) && (0, d.ZDy)(async () => {
+    }) : (t.type === I.ABu.PLAYSTATION || t.type === I.ABu.PLAYSTATION_STAGING) && (0, d.ZDy)(async () => {
       let {
         default: r
       } = await n.e("638").then(n.bind(n, 543974));
-      return n => (0, i.jsx)(r, c(E({}, n), {
+      return n => (0, i.jsx)(r, E(N({}, n), {
         platform: t.type,
         channel: e
       }))
     })
   };
   return U ? (0, i.jsx)(d.sNh, {
-    label: N.NW.string(N.t.PlwgdX),
+    label: c.NW.string(c.t.PlwgdX),
     id: "handoff",
     action: () => {
-      (0, p.F)(T)
+      (0, u.F)(T)
     },
-    icon: (0, I.Z)(void 0),
+    icon: (0, g.Z)(void 0),
     disabled: y
   }) : D.map(e => {
     var n, r;
     return (0, i.jsx)(d.sNh, {
       id: "transfer-".concat(e.type, "-").concat(e.id),
-      label: (n = e.type, r = t, n === g.ABu.XBOX ? r ? N.NW.string(N.t["qVE/VF"]) : N.NW.string(N.t.E8euSk) : n === g.ABu.PLAYSTATION ? r ? N.NW.string(N.t.vzfxmZ) : N.NW.string(N.t.QxEYDg) : n === g.ABu.PLAYSTATION_STAGING ? r ? N.NW.string(N.t.BDiXtb) : N.NW.string(N.t["bhdB9/"]) : void 0),
+      label: (n = e.type, r = t, n === I.ABu.XBOX ? r ? c.NW.string(c.t["qVE/VF"]) : c.NW.string(c.t.E8euSk) : n === I.ABu.PLAYSTATION ? r ? c.NW.string(c.t.vzfxmZ) : c.NW.string(c.t.QxEYDg) : n === I.ABu.PLAYSTATION_STAGING ? r ? c.NW.string(c.t.BDiXtb) : c.NW.string(c.t["bhdB9/"]) : void 0),
       action: () => m(e),
-      icon: (0, I.Z)(e.type),
+      icon: (0, g.Z)(e.type),
       disabled: y
     }, e.id)
   })

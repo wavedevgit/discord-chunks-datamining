@@ -8,10 +8,7 @@ var r = n(442837),
 function l(e) {
   let t = e.id;
   return (0, r.e7)([i.Z], () => {
-    for (let {
-        context: e
-      }
-      of i.Z.getActiveErrors().values())
-      if (e.streamKey === t) return e.streamError
+    for (let e of i.Z.getActiveErrors().values())
+      if ("streamKey" in e && e.streamKey === t) return e.streamError
   }, [t])
 }
