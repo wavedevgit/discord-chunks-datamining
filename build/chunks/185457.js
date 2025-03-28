@@ -26,10 +26,10 @@ function Z(e) {
   } = t, {
     loading: v,
     note: p
-  } = (0, o.Z)(m), O = !v && null != p && p.length > 0, j = N === g.IlC.POPOUT || N === g.IlC.OVERLAY, h = i.useContext(d.AnalyticsContext), {
+  } = (0, o.Z)(m), O = !v && null != p && p.length > 0, h = N === g.IlC.POPOUT || N === g.IlC.OVERLAY, j = i.useContext(d.AnalyticsContext), {
     analyticsLocations: x
   } = (0, a.ZP)();
-  return m === u.default.getId() || c.Z.hidePersonalInformation || j ? null : (0, l.jsx)(r.sNh, {
+  return m === u.default.getId() || c.Z.hidePersonalInformation || h ? null : (0, l.jsx)(r.sNh, {
     id: "note",
     label: v ? b.NW.string(b.t["WLKx//"]) : O ? b.NW.string(b.t["gs+qcH"]) : b.NW.string(b.t["1ZZttr"]),
     action: () => {
@@ -40,7 +40,7 @@ function Z(e) {
         guildId: n,
         channelId: Z,
         sourceAnalyticsLocations: x,
-        analyticsLocation: h.location,
+        analyticsLocation: j.location,
         appContext: N
       })
     }

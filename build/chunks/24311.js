@@ -24,8 +24,8 @@ function Z(e) {
     joinCallVideo: m,
     id: v,
     onCall: p
-  } = e, O = (0, o.Aq)(), j = (0, i.e7)([u.default], () => u.default.getId() === t.id), h = (0, i.e7)([d.Z], () => d.Z.isBlocked(t.id)), x = (0, i.e7)([g.Z, c.Z], () => g.Z.getVoiceChannelId() === c.Z.getDMFromUserId(t.id));
-  if (j || Z === f.IlC.POPOUT || x || t.bot || t.isProvisional) return null;
+  } = e, O = (0, o.Aq)(), h = (0, i.e7)([u.default], () => u.default.getId() === t.id), j = (0, i.e7)([d.Z], () => d.Z.isBlocked(t.id)), x = (0, i.e7)([g.Z, c.Z], () => g.Z.getVoiceChannelId() === c.Z.getDMFromUserId(t.id));
+  if (h || Z === f.IlC.POPOUT || x || t.bot || t.isProvisional) return null;
   let y = () => {
       null == p || p(), a.Z.openPrivateChannel(t.id, !0, m), O.dispatch(f.CkL.POPOUT_CLOSE), (0, r.pTH)()
     },
@@ -60,6 +60,6 @@ function Z(e) {
         }, t))
       })
     } : y,
-    disabled: h
+    disabled: j
   })
 }

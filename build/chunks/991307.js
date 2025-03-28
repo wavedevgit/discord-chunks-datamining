@@ -29,8 +29,8 @@ function v(e) {
     {
       muted: p,
       deafened: O = !1,
-      localVideoDisabled: j = !1,
-      localVideoAutoDisabled: h = !1
+      localVideoDisabled: h = !1,
+      localVideoAutoDisabled: j = !1
     } = (0, i.cj)([u.Z], () => n ? {
       muted: u.Z.isSelfMute(t),
       deafened: u.Z.isSelfDeaf(t)
@@ -43,7 +43,7 @@ function v(e) {
       id: "disable-video",
       label: N.NW.string(N.t["4MMsWF"]),
       action: () => {
-        if (h) {
+        if (j) {
           a.Z.show({
             title: N.NW.string(N.t.m2Hyj4),
             body: N.NW.string(N.t.EhaK6O),
@@ -53,11 +53,11 @@ function v(e) {
           });
           return
         }
-        let n = j ? b.ZUi.MANUAL_ENABLED : b.ZUi.DISABLED;
+        let n = h ? b.ZUi.MANUAL_ENABLED : b.ZUi.DISABLED;
         o.Z.setDisableLocalVideo(e, n, t)
       },
-      checked: j,
-      subtext: h ? (0, l.jsxs)("div", {
+      checked: h,
+      subtext: j ? (0, l.jsxs)("div", {
         className: m.videoPaused,
         children: [(0, l.jsx)(r.P4T, {
           size: "custom",
