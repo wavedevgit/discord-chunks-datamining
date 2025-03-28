@@ -1,53 +1,54 @@
-/** Chunk was on 87791 **/
-n.d(t, {
-  E: () => f
-}), n(47120);
-var r = n(192379),
-  i = n(442837),
-  o = n(626135),
-  l = n(74538),
-  a = n(381585),
-  s = n(597688),
-  c = n(884697),
-  u = n(819490),
-  d = n(82892),
-  p = n(981631);
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
+  E: () => b
+}), r(47120);
+var n = r(192379),
+  i = r(442837),
+  o = r(626135),
+  l = r(74538),
+  a = r(381585),
+  s = r(597688),
+  c = r(884697),
+  u = r(819490),
+  d = r(82892),
+  p = r(981631);
 
-function f(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
-    f = (0, a.sp)(),
-    h = (0, i.e7)([s.Z], () => s.Z.getProduct(e)),
-    m = (0, d.x)(),
-    _ = l.ZP.canUseCollectibles(m),
-    b = r.useRef(null),
-    [g, E] = r.useState(!1),
-    [v, O] = r.useState(!1),
-    y = (0, u.B)("shop_product_card");
-  return r.useEffect(() => (g && null === b.current ? b.current = setTimeout(() => {
-    O(!0)
-  }, 1e3) : g || (null !== b.current && (clearTimeout(b.current), b.current = null), O(!1)), () => {
-    null !== b.current && (clearTimeout(b.current), b.current = null)
-  }), [g]), r.useEffect(() => {
-    if (v && y) {
-      let r = null != h ? (0, c.Vw)(h, _, !1) : null,
-        i = null != h ? (0, c.eu)(h, _, !1) : void 0;
+function b(e, t) {
+  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
+    b = (0, a.sp)(),
+    v = (0, i.e7)([s.Z], () => s.Z.getProduct(e)),
+    f = (0, d.x)(),
+    m = l.ZP.canUseCollectibles(f),
+    h = n.useRef(null),
+    [g, x] = n.useState(!1),
+    [y, _] = n.useState(!1),
+    O = (0, u.B)("shop_product_card");
+  return n.useEffect(() => (g && null === h.current ? h.current = setTimeout(() => {
+    _(!0)
+  }, 1e3) : g || (null !== h.current && (clearTimeout(h.current), h.current = null), _(!1)), () => {
+    null !== h.current && (clearTimeout(h.current), h.current = null)
+  }), [g]), n.useEffect(() => {
+    if (y && O) {
+      let n = null != v ? (0, c.Vw)(v, m, !1) : null,
+        i = null != v ? (0, c.eu)(v, m, !1) : void 0;
       o.default.track(p.rMx.COLLECTIBLES_TILE_IMPRESSION, {
-        collectibles_shop_session_id: null == f ? void 0 : f.sessionId,
+        collectibles_shop_session_id: null == b ? void 0 : b.sessionId,
         sku_id: e,
-        display_price: null == r ? void 0 : r.amount,
-        display_price_currency: null == r ? void 0 : r.currency.toString(),
+        display_price: null == n ? void 0 : n.amount,
+        display_price_currency: null == n ? void 0 : n.currency.toString(),
         display_price_strikethrough: i,
-        position: null == f ? void 0 : f.tilePosition,
+        position: null == b ? void 0 : b.tilePosition,
         page_type: t,
-        page_category: null == f ? void 0 : f.pageCategory,
-        page_section: null == f ? void 0 : f.pageSection,
-        type: n,
-        category_position: null == f ? void 0 : f.categoryPosition
+        page_category: null == b ? void 0 : b.pageCategory,
+        page_section: null == b ? void 0 : b.pageSection,
+        type: r,
+        category_position: null == b ? void 0 : b.categoryPosition
       })
     }
-  }, [null == f ? void 0 : f.sessionId, null == f ? void 0 : f.categoryPosition, null == f ? void 0 : f.pageCategory, null == f ? void 0 : f.pageSection, null == f ? void 0 : f.tilePosition, v, _, y, t, h, e, n]), {
+  }, [null == b ? void 0 : b.sessionId, null == b ? void 0 : b.categoryPosition, null == b ? void 0 : b.pageCategory, null == b ? void 0 : b.pageSection, null == b ? void 0 : b.tilePosition, y, m, O, t, v, e, r]), {
     handleCardVisibilityChange: e => {
-      E(e)
+      x(e)
     }
   }
 }

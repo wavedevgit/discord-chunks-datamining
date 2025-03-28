@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Y: () => u
 });
@@ -7,13 +7,13 @@ n(192379);
 var i = n(704215),
   s = n(231757),
   a = n(63063),
-  l = n(249881),
-  o = n(981631),
+  o = n(249881),
+  l = n(981631),
   c = n(388032),
   d = n(195794);
 let u = () => {
-  let e = a.Z.getArticleURL(o.BhN.XBOX_CONNECTION);
-  return (0, r.jsx)(l.t, {
+  let e = a.Z.getArticleURL(l.BhN.XBOX_CONNECTION);
+  return (0, r.jsx)(o.t, {
     title: c.NW.string(c.t["2okkZW"]),
     body: c.NW.format(c.t.OnERSU, {
       help_article: e
@@ -26,7 +26,7 @@ let u = () => {
     }),
     newIndicatorDismissibleContent: i.z.XBOX_ONE_WAY_RECONNECT,
     onClick: () => (0, s.Z)({
-      platformType: o.ABu.XBOX,
+      platformType: l.ABu.XBOX,
       location: "Xbox two way upsell"
     })
   })

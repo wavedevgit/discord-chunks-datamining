@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   slideAnimator: "slideAnimator_f8824b",
   title: "title_f8824b",

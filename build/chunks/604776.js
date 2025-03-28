@@ -92,12 +92,12 @@ let g = e => {
 
 function S() {
   let [e, t] = a.useState(!1), [n, l] = a.useState(!1), [s, d] = a.useState(o.a.PREMIUM_TIER_2_1_HOUR), [m, p] = a.useState([]), [S, N] = a.useState([]), [O, k] = a.useState([]), E = async e => {
-    await j(e), await P()
+    await j(e), await I()
   }, w = async e => {
-    await y(e), await P()
-  }, I = async () => {
-    await C(), await P()
+    await y(e), await I()
   }, P = async () => {
+    await C(), await I()
+  }, I = async () => {
     try {
       t(!0);
       let e = await v();
@@ -107,7 +107,7 @@ function S() {
     }
   }, Z = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION), R = e => e.filter(e => Object.values(o.a).includes(e.skuId) && null == e.startsAt);
   return a.useEffect(() => {
-    P()
+    I()
   }, []), a.useEffect(() => {
     N(Z(m)), k(R(m))
   }, [m]), (0, r.jsx)(c.zJl, {
@@ -192,7 +192,7 @@ function S() {
               size: c.zxk.Sizes.TINY,
               color: c.zxk.Colors.PRIMARY,
               look: c.zxk.Looks.OUTLINED,
-              onClick: () => I(),
+              onClick: () => P(),
               children: "Run fulfillment"
             }), (0, r.jsx)(c.zxk, {
               disabled: e,
@@ -205,7 +205,7 @@ function S() {
               disabled: e,
               look: c.zxk.Looks.BLANK,
               size: c.zxk.Sizes.ICON,
-              onClick: P,
+              onClick: I,
               children: (0, r.jsx)("span", {
                 title: "Refresh",
                 children: (0, r.jsx)(c.DuK, {

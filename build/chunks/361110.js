@@ -1,18 +1,19 @@
-/** Chunk was on 87791 **/
-n.d(t, {
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
   f: () => o
-}), n(47120);
-var r = n(192379),
-  i = n(979554);
+}), r(47120);
+var n = r(192379),
+  i = r(979554);
 let o = e => {
-  let [t, n] = (0, r.useState)(null);
+  let [t, r] = (0, n.useState)(null);
   return {
     previewingVariantIndex: t,
-    handleEntering: (0, r.useCallback)(t => {
-      (null == e ? void 0 : e.type) === i.Z.VARIANTS_GROUP && n(t)
+    handleEntering: (0, n.useCallback)(t => {
+      (null == e ? void 0 : e.type) === i.Z.VARIANTS_GROUP && r(t)
     }, [null == e ? void 0 : e.type]),
-    handleLeaving: (0, r.useCallback)(() => {
-      (null == e ? void 0 : e.type) === i.Z.VARIANTS_GROUP && n(null)
+    handleLeaving: (0, n.useCallback)(() => {
+      (null == e ? void 0 : e.type) === i.Z.VARIANTS_GROUP && r(null)
     }, [null == e ? void 0 : e.type])
   }
 }

@@ -1,5 +1,4 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
   Z: () => h
 }), n(47120);
@@ -7,8 +6,8 @@ var i = n(200651),
   r = n(192379),
   o = n(704215),
   l = n(481060),
-  s = n(243778),
-  a = n(921944),
+  a = n(243778),
+  s = n(921944),
   c = n(388032),
   d = n(63198),
   u = n(215916);
@@ -16,10 +15,10 @@ var i = n(200651),
 function h(e) {
   let {
     locked: t
-  } = e, [n, h] = (0, s.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], void 0, !0);
+  } = e, [n, h] = (0, a.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], void 0, !0);
   return (r.useEffect(() => {
     if (!t && n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) return () => {
-      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && h(a.L.AUTO_DISMISS)
+      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && h(s.L.AUTO_DISMISS)
     }
   }, [t, h, n]), t || n !== o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
     className: d.overlayInprocessBackgroundNux,

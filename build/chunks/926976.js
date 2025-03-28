@@ -198,10 +198,10 @@ let w = [{
       })
     }
   }],
-  I = {
+  P = {
     events: {
       label: "Events",
-      filter: e => Object.entries(I).filter(e => {
+      filter: e => Object.entries(P).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -224,7 +224,7 @@ let w = [{
       filter: e => e.event.startsWith("network_action")
     }
   },
-  P = {
+  I = {
     searchType: h.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -240,15 +240,15 @@ function Z() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     l = (0, d.e7)([_.Z], () => _.Z.loggedEventsVersion),
-    [o, s] = a.useState(() => Object.keys(I)),
+    [o, s] = a.useState(() => Object.keys(P)),
     [c, m] = a.useState(_.Z.loggedEvents),
     x = a.useCallback(e => {
       m(e)
     }, []);
-  (0, p.BO)(t, _.Z.loggedEvents, x, P, [l]);
+  (0, p.BO)(t, _.Z.loggedEvents, x, I, [l]);
   let h = c.filter(e => {
       for (let t of o)
-        if (I[t].filter(e)) return !0;
+        if (P[t].filter(e)) return !0;
       return !1
     }),
     [b, f] = a.useState(void 0),
@@ -281,7 +281,7 @@ function Z() {
         className: S.toolbarDivider
       }), (0, r.jsx)("div", {
         className: S.filters,
-        children: Object.entries(I).map(e => {
+        children: Object.entries(P).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
             className: i()(S.filter, o.includes(t) && S.activeFilter),

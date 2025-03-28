@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => h
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(410575),
   s = n(100527),
   a = n(89057),
-  l = n(536844),
-  o = n(625252),
+  o = n(536844),
+  l = n(625252),
   c = n(921801),
   d = n(541540),
   u = n(206339),
@@ -20,7 +20,7 @@ function h() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.F, {
       setting: m.s6.GIFT_NITRO,
-      children: (0, r.jsx)(l.Z, {
+      children: (0, r.jsx)(o.Z, {
         location: s.Z.USER_SETTINGS_GIFT_INVENTORY,
         className: p.giftNitro,
         imageClassName: p.giftNitroImage,
@@ -43,7 +43,7 @@ function h() {
       setting: m.s6.GIFT_INVENTORY_QUESTS,
       children: (0, r.jsx)(i.Z, {
         section: g.jXE.QUESTS,
-        children: (0, r.jsx)(o.Z, {})
+        children: (0, r.jsx)(l.Z, {})
       })
     }), (0, r.jsx)(c.F, {
       setting: m.s6.GIFT_INVENTORY_LIST,

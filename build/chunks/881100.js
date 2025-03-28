@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   N: () => M
 });
@@ -6,8 +6,8 @@ var r = n(399606),
   i = n(780384),
   s = n(230711),
   a = n(410030),
-  l = n(594174),
-  o = n(424218),
+  o = n(594174),
+  l = n(424218),
   c = n(74538),
   d = n(474936),
   u = n(981631),
@@ -16,14 +16,14 @@ var r = n(399606),
   p = n(323780),
   h = n(101732),
   f = n(450598),
-  x = n(633030),
-  N = n(97942),
-  b = n(269987),
+  N = n(633030),
+  b = n(97942),
+  x = n(269987),
   _ = n(548629),
   E = n(507084),
   j = n(680313),
-  C = n(926433),
-  O = n(302036),
+  O = n(926433),
+  C = n(302036),
   S = n(994554),
   v = n(1549),
   T = n(13327),
@@ -42,10 +42,10 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
   M = e => {
     let {
       styles: t
-    } = e, n = (0, a.ZP)(), i = (0, r.e7)([l.default], () => {
-      let e = l.default.getCurrentUser();
+    } = e, n = (0, a.ZP)(), i = (0, r.e7)([o.default], () => {
+      let e = o.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
-    }), M = (0, o.BU)(d.Uq / 1024, {
+    }), M = (0, l.BU)(d.Uq / 1024, {
       useKibibytes: !0
     });
     return {
@@ -95,7 +95,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
             onTryItOutClick: t
           })
         },
-        imageSource: N,
+        imageSource: b,
         imageClassName: t.perGuildProfilesImage
       },
       longerMessages: {
@@ -107,7 +107,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       moreGuilds: {
         title: g.NW.string(g.t.Bv8Pfn),
         description: g.NW.string(g.t.JMfaTU),
-        imageSource: B(n, x, w),
+        imageSource: B(n, N, w),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {
@@ -119,14 +119,14 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       remix: {
         title: g.NW.string(g.t.ZvulDg),
         description: g.NW.string(g.t["8GwCPT"]),
-        imageSource: B(n, b, _),
+        imageSource: B(n, x, _),
         imageClassName: t.remixingImage,
         isEarlyAccess: !0
       },
       soundboard: {
         title: g.NW.string(g.t["lGcW+f"]),
         description: g.NW.string(g.t["/fDyOz"]),
-        imageSource: B(n, C, O),
+        imageSource: B(n, O, C),
         imageClassName: t.soundboardImage
       },
       stickers: {

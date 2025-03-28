@@ -30,8 +30,8 @@ var r = n(200651),
   k = n(789086),
   E = n(206583),
   w = n(866235),
-  I = n(710662);
-let P = [{
+  P = n(710662);
+let I = [{
   key: "type",
   cellClassName: i()(w.cell, w.cellType),
   render(e) {
@@ -112,12 +112,12 @@ function R() {
       return (null === (e = S.Z.getFeedState(E.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [Z, R] = a.useState(""),
-    D = (0, u.e7)([j.Z, p.Z], () => {
+    A = (0, u.e7)([j.Z, p.Z], () => {
       var e, t, n;
       return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = p.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
     }, [Z]),
-    A = (0, v.Z)({
-      applicationId: D,
+    D = (0, v.Z)({
+      applicationId: A,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
@@ -131,14 +131,14 @@ function R() {
     z = (0, b.Z)(B).filter(y.lm),
     M = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
-    className: I.panel,
+    className: P.panel,
     children: (0, r.jsxs)(x.zJl, {
       className: w.content,
       children: [(0, r.jsxs)(x.hjN, {
         children: [(0, r.jsx)(x.vwX, {
           children: "Inventory"
         }), o.length > 0 && (0, r.jsx)(_.Z, {
-          columns: P,
+          columns: I,
           data: o
         }), (0, r.jsx)(x.LZC, {
           size: 8
@@ -203,10 +203,10 @@ function R() {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && R(e),
           onKeyDown: e => {
-            "Enter" === e.key && (Z === e.currentTarget.value ? null == A || A(e) : R(e.currentTarget.value))
+            "Enter" === e.key && (Z === e.currentTarget.value ? null == D || D(e) : R(e.currentTarget.value))
           },
-          error: Z.length > 0 && null == A ? "No game profile for ".concat(null != D ? D : Z + " - try by id", ".") : void 0,
-          style: null != A ? {
+          error: Z.length > 0 && null == D ? "No game profile for ".concat(null != A ? A : Z + " - try by id", ".") : void 0,
+          style: null != D ? {
             border: "1px solid green"
           } : {}
         }), (0, r.jsx)("ul", {

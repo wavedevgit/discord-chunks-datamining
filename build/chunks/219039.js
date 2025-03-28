@@ -1,6 +1,6 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
@@ -8,7 +8,7 @@ var i = n(481060),
   s = n(388032),
   a = n(639285);
 
-function l(e) {
+function o(e) {
   let {
     count: t
   } = e;

@@ -1,7 +1,28 @@
 /**
   Module ID: 89001
-  Original File Name: 9c7ba725d1b954c9
+  Original File Name: f3b7dd0ea27483b0
 **/
+.orbIconSVG__85200 {
+    height: 18px
+}
+
+.full-motion .loading__85200 {
+    animation-name: spin__85200;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes spin__85200 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+
 .stepBody__42615 {
     padding-top: 16px
 }
@@ -52,4 +73,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=9c7ba725d1b954c9.css.map*/
+/*# sourceMappingURL=f3b7dd0ea27483b0.css.map*/

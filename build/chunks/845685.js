@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   row: "row__89d80",
   divider: "divider__89d80",

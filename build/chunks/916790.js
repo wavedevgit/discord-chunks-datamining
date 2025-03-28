@@ -180,7 +180,7 @@ function w(e) {
     })]
   })
 }
-let I = [{
+let P = [{
     key: "action",
     cellClassName: T.actionColumn,
     render(e) {
@@ -203,7 +203,7 @@ let I = [{
       return "".concat(N(t.totalTime), " ms")
     }
   }],
-  P = {
+  I = {
     searchType: x.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -238,7 +238,7 @@ function Z() {
     v = a.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, b ? c : s, v, P);
+  (0, h.BO)(t, b ? c : s, v, I);
   let y = a.useCallback(e => {
       m(s), f(e)
     }, [s]),
@@ -264,7 +264,7 @@ function Z() {
         placeholder: "Search by action name"
       })]
     }), (0, r.jsx)(j.Z, {
-      columns: I,
+      columns: P,
       data: N,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)

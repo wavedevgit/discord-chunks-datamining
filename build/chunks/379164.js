@@ -1,26 +1,26 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
-  Z: () => m
+  Z: () => f
 }), n(47120);
 var r = n(570140),
   i = n(447543),
   o = n(87051),
   l = n(18438),
-  a = n(44609),
-  s = n(731971),
+  s = n(44609),
+  a = n(731971),
   c = n(695346),
-  u = n(626135),
-  d = n(782605),
-  p = n(621600),
-  f = n(88658),
+  d = n(626135),
+  u = n(782605),
+  _ = n(621600),
+  p = n(88658),
   h = n(981631);
-let m = {
+let f = {
   acceptInvite(e) {
     let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
-      n = (0, s.y)(),
-      u = (0, s.h6)(),
-      h = (0, s.U1)(),
-      m = (0, s.yS)();
+      n = (0, a.y)(),
+      d = (0, a.h6)(),
+      h = (0, a.U1)(),
+      f = (0, a.yS)();
     i.ZP.acceptInvite({
       inviteKey: e.code,
       context: t,
@@ -28,56 +28,56 @@ let m = {
         null == e || null == e.guild || null == e.channel || __OVERLAY__ || i.ZP.transitionToInvite(e)
       }
     }).then(() => {
-      if ((0, a.gY)({
+      if ((0, s.gY)({
           location: "acceptInvite"
         }) && null != e.guild) {
-        if (u) {
+        if (d) {
           if (c.h2.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, f.YK)());
+            let t = new Set((0, p.YK)());
             t.delete(e.guild.id), c.h2.updateSetting(Array.from(t))
           }
         } else {
           var t;
-          let n = new Set((0, f.YK)());
+          let n = new Set((0, p.YK)());
           n.add(null === (t = e.guild) || void 0 === t ? void 0 : t.id), c.h2.updateSetting(Array.from(n))
         }
         if (h) {
           if (c.SE.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, f._o)());
+            let t = new Set((0, p._o)());
             t.delete(e.guild.id), c.SE.updateSetting(Array.from(t))
           }
         } else {
-          let t = new Set((0, f._o)());
+          let t = new Set((0, p._o)());
           t.add(e.guild.id), c.SE.updateSetting(Array.from(t))
         }
         null != n && n.length > 0 && (0, l.iq)(e.guild.id, {
           nick: n
-        }), (0, a.m4)({
+        }), (0, s.m4)({
           location: "acceptInvite"
         }) && o.Z.updateGuildNotificationSettings(e.guild.id, {
-          muted: m
-        }, p.ZB.Muted)
+          muted: f
+        }, _.ZB.Muted)
       }
       this.close()
     }, e => {
       r.Z.dispatch({
         type: "INVITE_MODAL_ERROR",
-        message: (0, d.O)(e.code)
+        message: (0, u.O)(e.code)
       })
     })
   },
   close() {
-    let e = (0, s.e7)(),
-      t = (0, s._J)();
-    if ((0, a.gY)({
+    let e = (0, a.e7)(),
+      t = (0, a._J)();
+    if ((0, s.gY)({
         location: "closeInvite"
-      }) && (0, s.NQ)()) {
-      let n = (0, s.y)(),
-        r = (0, s.h6)(),
-        i = (0, s.U1)(),
-        o = (0, s.yS)(),
-        l = (0, s.aP)();
-      u.default.track(h.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+      }) && (0, a.NQ)()) {
+      let n = (0, a.y)(),
+        r = (0, a.h6)(),
+        i = (0, a.U1)(),
+        o = (0, a.yS)(),
+        l = (0, a.aP)();
+      d.default.track(h.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
         invite_code: e,
         guild_id: t,
         nickname_present: null != n && n.length > 0,
@@ -86,7 +86,7 @@ let m = {
         muted_server: o,
         changed_from_default: l
       })
-    }(0, s.oE)(), r.Z.dispatch({
+    }(0, a.oE)(), r.Z.dispatch({
       type: "INVITE_MODAL_CLOSE"
     })
   }

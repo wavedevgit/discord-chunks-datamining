@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   g: () => j
 }), n(653041);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   s = n(780384),
   a = n(481060),
-  l = n(44315),
-  o = n(540059),
+  o = n(44315),
+  l = n(540059),
   c = n(210887),
   d = n(598077),
   u = n(246946),
@@ -17,9 +17,9 @@ var i = n(442837),
   p = n(51144),
   h = n(480387),
   f = n(726745),
-  x = n(251423),
-  N = n(383832),
-  b = n(981631),
+  N = n(251423),
+  b = n(383832),
+  x = n(981631),
   _ = n(388032),
   E = n(853759);
 
@@ -27,20 +27,20 @@ function j(e) {
   let t = (0, i.e7)([m.default], () => m.default.getCurrentUser()),
     n = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation),
     j = (0, i.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
-    C = (0, o.R6)("useMultiAccountMenuItems"),
+    O = (0, l.R6)("useMultiAccountMenuItems"),
     {
-      multiAccountUsers: O
-    } = (0, x.L)(),
+      multiAccountUsers: C
+    } = (0, N.L)(),
     S = e => {
-      e !== (null == t ? void 0 : t.id) && (g.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+      e !== (null == t ? void 0 : t.id) && (g.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
         location: {
-          section: b.jXE.USER_PROFILE
+          section: x.jXE.USER_PROFILE
         }
       }), h.yD(e))
     },
-    v = O.map(i => {
+    v = C.map(i => {
       let s = new d.Z(i),
-        o = s.id === (null == t ? void 0 : t.id),
+        l = s.id === (null == t ? void 0 : t.id),
         c = i.tokenStatus === f.q.INVALID,
         u = n ? null : "#".concat(s.discriminator);
       return (0, r.jsx)(a.sNh, {
@@ -70,21 +70,21 @@ function j(e) {
                 variant: "text-sm/normal",
                 children: u
               })]
-            }), o && (0, r.jsx)(a.owK, {
+            }), l && (0, r.jsx)(a.owK, {
               size: "sm",
-              color: (0, l.Lq)(t ? b.Ilk.WHITE_500 : b.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
+              color: (0, o.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
+              secondaryColor: (0, o.Lq)(t && j || t && !O && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               className: E.activeIcon
             }), c && (0, r.jsx)(a.P4T, {
-              color: (0, l.Lq)(b.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
+              color: (0, o.Lq)(x.Ilk.RED_400),
+              secondaryColor: (0, o.Lq)(t && j || t && !O && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               size: "xs",
               className: E.activeIcon
             })]
           })
         },
         action: () => {
-          null == e || e(), c ? (0, N.Z)() : S(s.id)
+          null == e || e(), c ? (0, b.Z)() : S(s.id)
         }
       }, s.id)
     });
@@ -93,7 +93,7 @@ function j(e) {
       id: "manage-accounts",
       label: _.NW.string(_.t.WbFpq6),
       action: () => {
-        null == e || e(), (0, N.Z)()
+        null == e || e(), (0, b.Z)()
       }
     })]
   })), v

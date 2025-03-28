@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => g
 }), n(266796);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(913527),
-  l = n.n(a),
-  o = n(481060),
+  o = n.n(a),
+  l = n(481060),
   c = n(55935),
   d = n(955204),
   u = n(674680),
@@ -27,12 +27,12 @@ function g(e) {
       hideDescriptionUntilUnlock: h,
       onAction: f
     } = i,
-    x = h && !a,
-    N = a ? "header-primary" : "text-muted",
-    b = a ? "header-secondary" : "text-muted",
-    _ = l()(n),
+    N = h && !a,
+    b = a ? "header-primary" : "text-muted",
+    x = a ? "header-secondary" : "text-muted",
+    _ = o()(n),
     E = null != f && a,
-    j = E ? o.P3F : "div";
+    j = E ? l.P3F : "div";
   return (0, r.jsxs)(j, {
     className: s()(m.container, E && m.actionable),
     onClick: () => {
@@ -47,19 +47,19 @@ function g(e) {
       })
     }), (0, r.jsxs)("div", {
       className: m.nameContainer,
-      children: [null != n && (0, r.jsx)(o.Text, {
+      children: [null != n && (0, r.jsx)(l.Text, {
         variant: "text-xxs/semibold",
         color: "text-muted",
         className: m.unlocked,
         children: (0, c.Y4)(_)
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
-        color: N,
-        children: g()
-      }), (0, r.jsx)(o.Text, {
-        variant: "text-xs/normal",
         color: b,
-        children: x ? "?????" : p()
+        children: g()
+      }), (0, r.jsx)(l.Text, {
+        variant: "text-xs/normal",
+        color: x,
+        children: N ? "?????" : p()
       })]
     })]
   })

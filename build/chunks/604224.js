@@ -1,14 +1,14 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
 var i = n(100527),
   s = n(906732),
   a = n(10298),
-  l = n(526156),
-  o = n(406613),
+  o = n(526156),
+  l = n(406613),
   c = n(314394),
   d = n(625528),
   u = n(674116),
@@ -18,12 +18,12 @@ var i = n(100527),
   h = n(981631),
   f = n(388032);
 
-function x() {
+function N() {
   let {
     analyticsLocations: e
   } = (0, s.ZP)([i.Z.USER_SETTINGS_VOICE_AND_VIDEO]), {
     showRefreshedSettings: t
-  } = (0, o.F)({
+  } = (0, l.F)({
     location: "UserSettingsVoiceAndVideo"
   });
   if (!t) return (0, r.jsx)(u.Z, {});
@@ -48,7 +48,7 @@ function x() {
     value: e,
     children: (0, r.jsx)(a.N, {
       header: f.NW.string(f.t.B1fFpa),
-      children: (0, r.jsx)(l.Z, {
+      children: (0, r.jsx)(o.Z, {
         parentSetting: p.s6.VOICE_AND_VIDEO,
         settingsSection: h.oAB.VOICE,
         tabs: n

@@ -1,193 +1,193 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => P
 }), n(653041);
 var r = n(200651),
   l = n(192379),
-  a = n(120356),
-  o = n.n(a),
-  s = n(685816),
-  i = n(442837),
-  d = n(481060),
-  c = n(594174),
-  u = n(960048),
-  g = n(744112),
-  h = n(139668),
+  o = n(120356),
+  a = n.n(o),
+  i = n(685816),
+  s = n(442837),
+  c = n(481060),
+  u = n(594174),
+  d = n(960048),
+  b = n(744112),
+  p = n(139668),
   f = n(223143),
-  m = n(364111),
-  p = n(752053),
-  b = n(81136),
-  C = n(953655),
+  g = n(364111),
+  h = n(752053),
+  m = n(81136),
+  v = n(953655),
   _ = n(548685),
-  v = n(580914),
+  C = n(580914),
   x = n(963278),
-  k = n(384067),
-  j = n(215023),
-  S = n(388032),
-  y = n(39532);
-let O = e => {
+  O = n(384067),
+  y = n(215023),
+  j = n(388032),
+  k = n(39532);
+let S = e => {
     let {
       handleTransition: t,
       numVisibleItems: n,
-      isFetchingCategories: a,
-      tab: i
+      isFetchingCategories: o,
+      tab: s
     } = e, {
-      noCache: d,
-      includeUnpublished: c
-    } = (0, b.Z)(), {
-      isFetchingShopHome: u,
-      fetchShopHomeError: g,
-      shopBlocks: h,
+      noCache: c,
+      includeUnpublished: u
+    } = (0, m.Z)(), {
+      isFetchingShopHome: d,
+      fetchShopHomeError: b,
+      shopBlocks: p,
       refreshShopHome: f
-    } = (0, m.E)(i, {
-      noCache: d,
-      includeUnpublished: c,
+    } = (0, g.E)(s, {
+      noCache: c,
+      includeUnpublished: u,
       includeBundles: !0
-    }), j = l.useCallback(() => {
+    }), y = l.useCallback(() => {
       f()
     }, [f]);
-    if (null != g) return (0, r.jsx)(p.Z, {
-      onRetry: j,
-      errorOrigin: p.i.SHOP_PAGE,
-      errorMessage: g.message
+    if (null != b) return (0, r.jsx)(h.Z, {
+      onRetry: y,
+      errorOrigin: h.i.SHOP_PAGE,
+      errorMessage: b.message
     });
-    if (u || 0 === h.length) return (0, r.jsxs)("div", {
-      className: y.loadingContainer,
-      children: [(0, r.jsx)(v.Z, {
-        isLoading: u,
+    if (d || 0 === p.length) return (0, r.jsxs)("div", {
+      className: k.loadingContainer,
+      children: [(0, r.jsx)(C.Z, {
+        isLoading: d,
         handleTransition: t,
-        tab: i
-      }), (0, r.jsx)(C.Z, {
-        isLoading: u,
+        tab: s
+      }), (0, r.jsx)(v.Z, {
+        isLoading: d,
         handleTransition: t,
         categories: []
       }), (0, r.jsx)(_.Z, {
-        isLoading: u,
+        isLoading: d,
         handleTransition: t,
         numVisibleItems: n,
         rankedSkuIds: [],
-        tab: i
+        tab: s
       })]
     });
-    let S = (e, l) => {
+    let j = (e, l) => {
       if (null == e) return null;
-      let d = null;
+      let c = null;
       switch (e.type) {
-        case s.z.HERO:
-          d = (0, r.jsx)(v.Z, {
-            isLoading: u,
+        case i.z.HERO:
+          c = (0, r.jsx)(C.Z, {
+            isLoading: d,
             handleTransition: t,
             heroBlock: e,
-            tab: i
+            tab: s
           }, l);
           break;
-        case s.z.FEATURED:
-          d = (0, r.jsx)(C.Z, {
-            isLoading: u,
+        case i.z.FEATURED:
+          c = (0, r.jsx)(v.Z, {
+            isLoading: d,
             handleTransition: t,
             featuredBlockRecord: e
           }, l);
           break;
-        case s.z.FEED:
-          d = (0, r.jsx)(_.Z, {
-            isLoading: u || a,
+        case i.z.FEED:
+          c = (0, r.jsx)(_.Z, {
+            isLoading: d || o,
             handleTransition: t,
             numVisibleItems: n,
             rankedSkuIds: e.rankedSkuIds,
-            tab: i
+            tab: s
           }, l);
           break;
-        case s.z.WIDE_BANNER:
-          d = (0, r.jsx)(k.Z, {
+        case i.z.WIDE_BANNER:
+          c = (0, r.jsx)(O.Z, {
             handleTransition: t,
             wideBannerBlock: e,
-            tab: i
+            tab: s
           }, l);
           break;
-        case s.z.SHELF:
-          d = (0, r.jsx)(x.Z, {
+        case i.z.SHELF:
+          c = (0, r.jsx)(x.Z, {
             handleTransition: t,
             shelf: e,
-            tab: i
+            tab: s
           }, l);
           break;
         default:
           return null
       }
       return (0, r.jsx)("div", {
-        className: o()(y.blockContainer, {
-          [y.topBlockContainer]: 0 === l
+        className: a()(k.blockContainer, {
+          [k.topBlockContainer]: 0 === l
         }),
-        children: d
+        children: c
       }, l)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: h.map((e, t) => S(e, t))
+      children: p.map((e, t) => j(e, t))
     })
   },
-  E = e => {
+  P = e => {
     var t;
     let {
       isFullScreen: n,
-      handleTransition: a,
-      numVisibleItems: s,
-      tab: m
+      handleTransition: o,
+      numVisibleItems: i,
+      tab: g
     } = e, {
-      isFetchingCategories: C,
+      isFetchingCategories: v,
       fetchCategoriesError: _,
-      fetchPurchasesError: v,
+      fetchPurchasesError: C,
       claimError: x,
-      refreshCategories: k
+      refreshCategories: O
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), E = null !== (t = null != _ ? _ : v) && void 0 !== t ? t : x, I = (0, i.e7)([c.default], () => c.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), T = (0, h.R)("CollectiblesFeedShop"), {
-      noCache: L,
-      includeUnpublished: N
-    } = (0, b.Z)(), P = l.useCallback(() => {
-      k()
-    }, [k]);
-    if (null == I) return null;
-    if (null != E) {
+    }), P = null !== (t = null != _ ? _ : C) && void 0 !== t ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), I = (0, b.b)("Collectibles Shop Button"), w = (0, p.R)("CollectiblesFeedShop"), {
+      noCache: B,
+      includeUnpublished: T
+    } = (0, m.Z)(), N = l.useCallback(() => {
+      O()
+    }, [O]);
+    if (null == E) return null;
+    if (null != P) {
       let e = [];
-      null != _ ? e.push("shop load fetch categories error: ".concat(E.message)) : null != v ? e.push("shop load fetch purchase error: ".concat(E.message)) : e.push("shop load claim error: ".concat(E.message)), u.Z.captureMessage(e.join("\n"), {
+      null != _ ? e.push("shop load fetch categories error: ".concat(P.message)) : null != C ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), d.Z.captureMessage(e.join("\n"), {
         tags: {
-          isStaff: I.isStaff().toString(),
-          preloadEnabled: B.toString(),
-          disableCache: L.toString(),
-          includeUnpublished: N.toString()
+          isStaff: E.isStaff().toString(),
+          preloadEnabled: I.toString(),
+          disableCache: B.toString(),
+          includeUnpublished: T.toString()
         }
       })
     }
-    return null != _ ? (0, r.jsx)(p.Z, {
-      onRetry: P,
-      errorOrigin: p.i.SHOP_PAGE,
+    return null != _ ? (0, r.jsx)(h.Z, {
+      onRetry: N,
+      errorOrigin: h.i.SHOP_PAGE,
       errorMessage: _.message
     }) : (0, r.jsx)("div", {
-      className: o()(y.shop, {
-        [y.shopFullscreen]: n
+      className: a()(k.shop, {
+        [k.shopFullscreen]: n
       }),
       children: (0, r.jsxs)("div", {
-        className: o()(y.content, y.mainContent),
-        children: [(0, r.jsx)(O, {
-          handleTransition: a,
-          numVisibleItems: s,
-          isFetchingCategories: C,
-          tab: m
-        }), m === j.AW.HOME && s >= T && (0, r.jsxs)("div", {
-          className: y.endOfFeed,
-          children: [(0, r.jsx)(d.X6q, {
+        className: a()(k.content, k.mainContent),
+        children: [(0, r.jsx)(S, {
+          handleTransition: o,
+          numVisibleItems: i,
+          isFetchingCategories: v,
+          tab: g
+        }), g === y.AW.HOME && i >= w && (0, r.jsxs)("div", {
+          className: k.endOfFeed,
+          children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",
-            children: S.NW.string(S.t.Yr70c3)
-          }), (0, r.jsx)(d.zxk, {
-            className: y.endOfFeedButton,
+            children: j.NW.string(j.t.Yr70c3)
+          }), (0, r.jsx)(c.zxk, {
+            className: k.endOfFeedButton,
             onClick: () => {
-              a("shop all bottom", void 0, !0)
+              o("shop all bottom", void 0, !0)
             },
-            children: (0, r.jsx)(d.Text, {
+            children: (0, r.jsx)(c.Text, {
               variant: "text-md/medium",
               color: "always-white",
-              children: S.NW.string(S.t.AfrvRE)
+              children: j.NW.string(j.t.AfrvRE)
             })
           })]
         })]

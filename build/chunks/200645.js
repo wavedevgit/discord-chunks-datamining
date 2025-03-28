@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => p
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(358085),
+  o = n(481060),
+  l = n(358085),
   c = n(998502),
   d = n(388032),
   u = n(802138);
@@ -33,29 +33,29 @@ class g extends i.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, i = (0, o.isLinux)() ? d.NW.string(d.t["7pPjTU"]) : d.NW.string(d.t.ZkDZoq);
-    return (0, r.jsxs)(l.hjN, {
-      tag: l.RB0.H1,
+    } = this.state, i = (0, l.isLinux)() ? d.NW.string(d.t["7pPjTU"]) : d.NW.string(d.t.ZkDZoq);
+    return (0, r.jsxs)(o.hjN, {
+      tag: o.RB0.H1,
       title: i,
-      children: [(0, r.jsx)(l.vwX, {
+      children: [(0, r.jsx)(o.vwX, {
         children: d.NW.string(d.t["w/vU5u"])
-      }), (0, r.jsx)(l.j7V, {
+      }), (0, r.jsx)(o.j7V, {
         className: u.marginBottom20,
         value: e,
         note: d.NW.string(d.t["s/cQra"]),
         onChange: this.handleToggleOpenOnStartup,
         children: d.NW.string(d.t.WQm4p6)
-      }), (0, o.isWindows)() ? (0, r.jsx)(l.j7V, {
+      }), (0, l.isWindows)() ? (0, r.jsx)(o.j7V, {
         disabled: !e,
         className: a()(u.marginTop8, u.marginBottom20),
         value: !!e && t,
         note: d.NW.string(d.t.o2FSjI),
         onChange: this.handleToggleStartMinimized,
         children: d.NW.string(d.t.n7Yjen)
-      }) : null, (0, r.jsx)(l.vwX, {
+      }) : null, (0, r.jsx)(o.vwX, {
         className: a()(u.marginTop20, u.marginBottom8),
         children: d.NW.string(d.t.h0hFx8)
-      }), (0, r.jsx)(l.j7V, {
+      }), (0, r.jsx)(o.j7V, {
         className: u.marginBottom20,
         value: n,
         note: d.NW.string(d.t["mVuX+v"]),

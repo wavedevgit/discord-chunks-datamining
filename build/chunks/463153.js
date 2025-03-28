@@ -1,20 +1,20 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(793030),
   s = n(388032),
   a = n(651206),
-  l = n(258720);
+  o = n(258720);
 
-function o() {
+function l() {
   return (0, r.jsxs)("div", {
     className: a.container,
     children: [(0, r.jsx)("img", {
       className: a.emptySearchIcon,
-      src: l,
+      src: o,
       alt: ""
     }), (0, r.jsx)(i.xv, {
       variant: "text-md/normal",

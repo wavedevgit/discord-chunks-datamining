@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => g
 });
@@ -7,15 +7,15 @@ n(192379);
 var i = n(399606),
   s = n(481060),
   a = n(284056),
-  l = n(131951),
-  o = n(63063),
+  o = n(131951),
+  l = n(63063),
   c = n(981631),
   d = n(65154),
   u = n(388032),
   m = n(557453);
 
 function g() {
-  return (0, i.e7)([l.Z], () => l.Z.supports(d.AN.LOOPBACK)) ? (0, r.jsx)("div", {
+  return (0, i.e7)([o.Z], () => o.Z.supports(d.AN.LOOPBACK)) ? (0, r.jsx)("div", {
     className: m.micTest,
     children: (0, r.jsx)(a.Z, {
       title: u.NW.string(u.t.gyljWF),
@@ -25,7 +25,7 @@ function g() {
       captionNoVoice: (0, r.jsxs)(r.Fragment, {
         children: [u.NW.string(u.t["MA+OZm"]), (0, r.jsx)(s.eee, {
           className: m.micTestHelpLink,
-          href: o.Z.getArticleURL(c.BhN.NO_INPUT_DETECTED),
+          href: l.Z.getArticleURL(c.BhN.NO_INPUT_DETECTED),
           children: u.NW.string(u.t.RYKKo6)
         })]
       }),

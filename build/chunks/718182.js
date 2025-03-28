@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,17 +14,17 @@ var r = n(200651),
   p = n(108427),
   h = n(981631),
   g = n(388032),
-  _ = n(802138);
+  m = n(802138);
 
-function m(e) {
+function f(e) {
   return n.g.location.assign(e)
 }
 
-function f(e) {
+function _(e) {
   let {
     location: t,
-    transitionTo: o = m
-  } = e, [l, f] = i.useState("submitting");
+    transitionTo: o = f
+  } = e, [l, _] = i.useState("submitting");
 
   function b() {
     return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
@@ -36,37 +36,37 @@ function f(e) {
     (0, p.e)("authorize_ip");
     let e = (0, u.Z)(t);
     if (null == e) {
-      f("failed");
+      _("failed");
       return
     }(async () => {
       try {
-        await s.Z.authorizeIPAddress(e), f("succeeded")
+        await s.Z.authorizeIPAddress(e), _("succeeded")
       } catch (e) {
-        f("failed")
+        _("failed")
       }
     })()
   }), "failed" === l) ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
-      className: _.marginBottom20
+      className: m.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: _.marginBottom8,
+      className: m.marginBottom8,
       children: g.NW.string(g.t["f/54a2"])
     }), (0, r.jsx)(d.DK, {
-      className: _.marginBottom40,
+      className: m.marginBottom40,
       children: g.NW.string(g.t.i3ehMj)
     }), b()]
   }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),
-      className: _.marginBottom20
+      className: m.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: _.marginBottom8,
+      className: m.marginBottom8,
       children: g.NW.string(g.t.iG0SlJ)
     }), (0, r.jsx)(d.DK, {
-      className: _.marginBottom40,
+      className: m.marginBottom40,
       children: g.NW.string(g.t["Elv+qq"])
     }), b()]
   }) : (0, r.jsxs)(d.ZP, {

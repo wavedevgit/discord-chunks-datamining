@@ -1,4 +1,4 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
   Z: () => o
 });
@@ -10,10 +10,10 @@ let o = e => {
     product: t,
     analyticsLocations: o,
     overrideTitle: l,
-    overrideDescription: a,
-    shouldShowPromotionalExperience: s,
+    overrideDescription: s,
+    shouldShowPromotionalExperience: a,
     onCloseCallback: c,
-    itemConsumed: u
+    itemConsumed: d
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -40,9 +40,9 @@ let o = e => {
       product: t,
       analyticsLocations: o,
       overrideTitle: l,
-      overrideDescription: a,
-      shouldShowPromotionalExperience: s,
-      itemConsumed: u
+      overrideDescription: s,
+      shouldShowPromotionalExperience: a,
+      itemConsumed: d
     }, n))
   }, {
     onCloseCallback: c

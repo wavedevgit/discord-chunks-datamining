@@ -1,128 +1,128 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
-  Sr: () => C,
-  Xq: () => x,
+  Sr: () => v,
+  Xq: () => N,
   Zg: () => S
 }), n(411104);
 var r = n(186070),
   i = n(185514),
   o = n(360038),
   l = n(175724),
-  a = n(705371),
-  s = n(138976),
+  s = n(705371),
+  a = n(138976),
   c = n(167042),
-  u = n(239748),
-  d = n(337482),
-  p = n(679080),
-  f = n(510761),
+  d = n(239748),
+  u = n(337482),
+  _ = n(679080),
+  p = n(510761),
   h = n(189509),
-  m = n(673553),
-  _ = n(280492),
-  b = n(746887),
-  g = n(721383),
+  f = n(673553),
+  m = n(280492),
+  g = n(746887),
+  b = n(721383),
   E = n(743810),
-  v = n(981631),
+  C = n(981631),
   O = n(388032);
 
 function y() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = C[e];
+    let t = v[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let C = {
-    [v.EkH.SERVER_NEXT]: f.nq,
-    [v.EkH.SERVER_PREV]: f.X3,
-    [v.EkH.CHANNEL_NEXT]: i.tQ,
-    [v.EkH.CHANNEL_PREV]: i.x5,
-    [v.EkH.NAVIGATE_BACK]: i.Nx,
-    [v.EkH.NAVIGATE_FORWARD]: i.On,
-    [v.EkH.UNREAD_NEXT]: E.pd,
-    [v.EkH.UNREAD_PREV]: E.wk,
-    [v.EkH.MENTION_CHANNEL_NEXT]: E.Nv,
-    [v.EkH.MENTION_CHANNEL_PREV]: E.uX,
-    [v.EkH.TOGGLE_PREVIOUS_GUILD]: i.$c,
-    [v.EkH.JUMP_TO_GUILD]: o.u,
-    [v.EkH.SUBMIT]: h.z,
-    [v.EkH.TEXTAREA_FOCUS]: m.U,
-    [v.EkH.MARK_CHANNEL_READ]: l.f,
-    [v.EkH.MARK_SERVER_READ]: a.l,
-    [v.EkH.TOGGLE_MUTE]: _.iN,
-    [v.EkH.TOGGLE_DEAFEN]: _.oV,
-    [v.EkH.TOGGLE_CATEGORY_COLLAPSED]: b.u,
-    [v.EkH.SCROLL_UP]: d.B2,
-    [v.EkH.SCROLL_DOWN]: d.gN,
-    [v.EkH.SEARCH_EMOJIS]: p.S,
-    [v.EkH.TOGGLE_HOTKEYS]: g._,
-    [v.EkH.JUMP_TO_FIRST_UNREAD]: s.O,
-    [v.EkH.RETURN_TO_AUDIO_CHANNEL]: u.F,
-    [v.EkH.CALL_ACCEPT]: r.IL,
-    [v.EkH.CALL_START]: r.FI,
-    [v.EkH.QUICKSWITCHER_SHOW]: c.$
+let v = {
+    [C.EkH.SERVER_NEXT]: p.nq,
+    [C.EkH.SERVER_PREV]: p.X3,
+    [C.EkH.CHANNEL_NEXT]: i.tQ,
+    [C.EkH.CHANNEL_PREV]: i.x5,
+    [C.EkH.NAVIGATE_BACK]: i.Nx,
+    [C.EkH.NAVIGATE_FORWARD]: i.On,
+    [C.EkH.UNREAD_NEXT]: E.pd,
+    [C.EkH.UNREAD_PREV]: E.wk,
+    [C.EkH.MENTION_CHANNEL_NEXT]: E.Nv,
+    [C.EkH.MENTION_CHANNEL_PREV]: E.uX,
+    [C.EkH.TOGGLE_PREVIOUS_GUILD]: i.$c,
+    [C.EkH.JUMP_TO_GUILD]: o.u,
+    [C.EkH.SUBMIT]: h.z,
+    [C.EkH.TEXTAREA_FOCUS]: f.U,
+    [C.EkH.MARK_CHANNEL_READ]: l.f,
+    [C.EkH.MARK_SERVER_READ]: s.l,
+    [C.EkH.TOGGLE_MUTE]: m.iN,
+    [C.EkH.TOGGLE_DEAFEN]: m.oV,
+    [C.EkH.TOGGLE_CATEGORY_COLLAPSED]: g.u,
+    [C.EkH.SCROLL_UP]: u.B2,
+    [C.EkH.SCROLL_DOWN]: u.gN,
+    [C.EkH.SEARCH_EMOJIS]: _.S,
+    [C.EkH.TOGGLE_HOTKEYS]: b._,
+    [C.EkH.JUMP_TO_FIRST_UNREAD]: a.O,
+    [C.EkH.RETURN_TO_AUDIO_CHANNEL]: d.F,
+    [C.EkH.CALL_ACCEPT]: r.IL,
+    [C.EkH.CALL_START]: r.FI,
+    [C.EkH.QUICKSWITCHER_SHOW]: c.$
   },
-  x = {
-    [v.EkH.QUICKSWITCHER_SHOW]: c.$
+  N = {
+    [C.EkH.QUICKSWITCHER_SHOW]: c.$
   };
 
 function S() {
   return [{
     description: O.NW.string(O.t.bx4Uy8),
-    binds: y(v.EkH.SERVER_PREV, v.EkH.SERVER_NEXT)
+    binds: y(C.EkH.SERVER_PREV, C.EkH.SERVER_NEXT)
   }, {
     description: O.NW.string(O.t["+Wem6u"]),
-    binds: y(v.EkH.CHANNEL_PREV, v.EkH.CHANNEL_NEXT)
+    binds: y(C.EkH.CHANNEL_PREV, C.EkH.CHANNEL_NEXT)
   }, {
     description: O.NW.string(O.t["+2fcd3"]),
-    binds: y(v.EkH.NAVIGATE_BACK, v.EkH.NAVIGATE_FORWARD)
+    binds: y(C.EkH.NAVIGATE_BACK, C.EkH.NAVIGATE_FORWARD)
   }, {
     description: O.NW.string(O.t.eVmj1N),
-    binds: y(v.EkH.UNREAD_PREV, v.EkH.UNREAD_NEXT)
+    binds: y(C.EkH.UNREAD_PREV, C.EkH.UNREAD_NEXT)
   }, {
     description: O.NW.string(O.t.EcqS7e),
-    binds: y(v.EkH.MENTION_CHANNEL_PREV, v.EkH.MENTION_CHANNEL_NEXT),
+    binds: y(C.EkH.MENTION_CHANNEL_PREV, C.EkH.MENTION_CHANNEL_NEXT),
     groupEnd: !0
   }, {
     description: O.NW.string(O.t["Bqss7+"]),
-    binds: y(v.EkH.TOGGLE_PREVIOUS_GUILD)
+    binds: y(C.EkH.TOGGLE_PREVIOUS_GUILD)
   }, {
     description: O.NW.string(O.t.UaXAPz),
-    binds: y(v.EkH.MARK_SERVER_READ)
+    binds: y(C.EkH.MARK_SERVER_READ)
   }, {
     description: O.NW.string(O.t["5X9vFh"]),
-    binds: y(v.EkH.MARK_CHANNEL_READ)
+    binds: y(C.EkH.MARK_CHANNEL_READ)
   }, {
     description: O.NW.string(O.t.JoxNnp),
-    binds: y(v.EkH.SEARCH_EMOJIS),
+    binds: y(C.EkH.SEARCH_EMOJIS),
     groupEnd: !0
   }, {
     description: O.NW.string(O.t.tL6eVV),
-    binds: y(v.EkH.TOGGLE_MUTE)
+    binds: y(C.EkH.TOGGLE_MUTE)
   }, {
     description: O.NW.string(O.t["QXe/7e"]),
-    binds: y(v.EkH.TOGGLE_DEAFEN)
+    binds: y(C.EkH.TOGGLE_DEAFEN)
   }, {
     description: O.NW.string(O.t.d6UIio),
-    binds: y(v.EkH.CALL_ACCEPT)
+    binds: y(C.EkH.CALL_ACCEPT)
   }, {
     description: O.NW.string(O.t.IcEW09),
-    binds: y(v.EkH.MARK_CHANNEL_READ)
+    binds: y(C.EkH.MARK_CHANNEL_READ)
   }, {
     description: O.NW.string(O.t.WN2dsb),
-    binds: y(v.EkH.CALL_START),
+    binds: y(C.EkH.CALL_START),
     groupEnd: !0
   }, {
     description: O.NW.string(O.t.L3RYYG),
-    binds: y(v.EkH.SCROLL_UP, v.EkH.SCROLL_DOWN)
+    binds: y(C.EkH.SCROLL_UP, C.EkH.SCROLL_DOWN)
   }, {
     description: O.NW.string(O.t["3HAurK"]),
-    binds: y(v.EkH.JUMP_TO_FIRST_UNREAD)
+    binds: y(C.EkH.JUMP_TO_FIRST_UNREAD)
   }, {
     description: O.NW.string(O.t.rrYBEh),
-    binds: y(v.EkH.TEXTAREA_FOCUS)
+    binds: y(C.EkH.TEXTAREA_FOCUS)
   }, {
     description: O.NW.string(O.t.yYsRlJ),
-    binds: y(v.EkH.QUICKSWITCHER_SHOW)
+    binds: y(C.EkH.QUICKSWITCHER_SHOW)
   }]
 }

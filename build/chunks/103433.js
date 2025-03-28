@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => d
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(388032),
-  o = n(48215),
+  o = n(388032),
+  l = n(48215),
   c = n(505944);
 let d = e => {
   let {
@@ -16,31 +16,31 @@ let d = e => {
     onBackClick: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(o.container, t),
+    className: s()(l.container, t),
     "data-testid": "all-perks-hero-header",
     children: [(0, r.jsx)("img", {
       src: c,
       alt: "",
-      className: o.headerArt
+      className: l.headerArt
     }), (0, r.jsxs)("div", {
-      className: o.containerInner,
+      className: l.containerInner,
       children: [(0, r.jsx)("div", {
-        className: o.backButtonContainer,
+        className: l.backButtonContainer,
         children: (0, r.jsxs)(a.P3F, {
           onClick: n,
-          className: o.backButton,
+          className: l.backButton,
           children: [(0, r.jsx)(a.V7D, {
             color: "currentColor"
-          }), l.NW.string(l.t["13/7kZ"])]
+          }), o.NW.string(o.t["13/7kZ"])]
         })
       }), (0, r.jsx)("div", {
-        className: o.__invalid_contentContainer,
+        className: l.__invalid_contentContainer,
         children: (0, r.jsx)("div", {
-          className: o.content,
+          className: l.content,
           children: (0, r.jsx)(a.X6q, {
             variant: "display-lg",
             color: "always-white",
-            children: l.NW.string(l.t.hqjDX1)
+            children: o.NW.string(o.t.hqjDX1)
           })
         })
       })]

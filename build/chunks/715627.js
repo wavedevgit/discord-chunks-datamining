@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(119617),
   a = n(745510),
-  l = n(675654);
-let o = {
+  o = n(675654);
+let l = {
     xMin: -40,
     xMax: 40,
     yMin: -40,
@@ -25,13 +25,13 @@ let o = {
       offsetXPercentageMin: p,
       offsetYPercentageMax: h,
       offsetYPercentageMin: f,
-      customConfettiCanvas: x,
-      speedValues: N = o,
-      dragCoefficientValue: b = 1.66,
+      customConfettiCanvas: N,
+      speedValues: b = l,
+      dragCoefficientValue: x = 1.66,
       onAnimationEnd: _
     } = e, [E, j] = i.useState(null), {
-      confettiCanvas: C
-    } = i.useContext(a.h), O = (0, s.uR)(null != x ? x : C, E), [S, v] = i.useState(!1);
+      confettiCanvas: O
+    } = i.useContext(a.h), C = (0, s.uR)(null != N ? N : O, E), [S, v] = i.useState(!1);
     i.useEffect(() => {
       S && (null == _ || _())
     });
@@ -45,9 +45,9 @@ let o = {
       if (null == t) return;
       let e = Array(null != u ? u : 4).fill(0);
       return e = e.map((n, r) => setTimeout(() => {
-        O.createMultipleConfetti(function(e, t, n, r, i) {
+        C.createMultipleConfetti(function(e, t, n, r, i) {
           var s, a;
-          let d = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : o,
+          let d = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : l,
             u = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : 1.66,
             m = c(e.width, 100, n),
             g = c(e.height, 75, i),
@@ -55,9 +55,9 @@ let o = {
             h = c(e.height, 75, r),
             {
               xMin: f,
-              xMax: x,
-              yMin: N,
-              yMax: b
+              xMax: N,
+              yMin: b,
+              yMax: x
             } = d;
           return s = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ let o = {
               })
             }
             return e
-          }({}, l.We), a = a = {
+          }({}, o.We), a = a = {
             position: {
               type: "static-random",
               minValue: {
@@ -92,17 +92,17 @@ let o = {
               type: "static-random",
               minValue: {
                 x: f,
-                y: N
+                y: b
               },
               maxValue: {
-                x: x,
-                y: b
+                x: N,
+                y: x
               }
             },
             size: {
               type: "static-random",
-              minValue: l.Ko,
-              maxValue: l.Ko
+              minValue: o.Ko,
+              maxValue: o.Ko
             },
             dragCoefficient: {
               type: "static",
@@ -118,15 +118,15 @@ let o = {
           })(Object(a)).forEach(function(e) {
             Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
           }), s
-        }(t.getBoundingClientRect(), g, p, h, f, N, b), null != m ? m : 50), r === e.length - 1 && null != _ && v(!0)
+        }(t.getBoundingClientRect(), g, p, h, f, b, x), null != m ? m : 50), r === e.length - 1 && null != _ && v(!0)
       }, 60 * r)), () => {
         for (let t of e) clearTimeout(t)
       }
-    }, [O, t, u, m, g, p, h, f, N, b, _]), (0, r.jsx)(s.Ji, {
+    }, [C, t, u, m, g, p, h, f, b, x, _]), (0, r.jsx)(s.Ji, {
       ref: j,
-      sprites: null != T ? T : l.CA,
-      colors: null != n ? n : l.Br,
-      spriteWidth: l.Ko,
-      spriteHeight: l.Ko
+      sprites: null != T ? T : o.CA,
+      colors: null != n ? n : o.Br,
+      spriteWidth: o.Ko,
+      spriteHeight: o.Ko
     })
   })

@@ -15,7 +15,7 @@ n.d(t, {
   YE: () => ei,
   h9: () => eo,
   iw: () => en,
-  jC: () => U,
+  jC: () => W,
   jQ: () => G,
   lT: () => Y,
   rd: () => ed,
@@ -49,13 +49,13 @@ var r, a, l = n(192379),
   k = n(375924),
   E = n(596136),
   w = n(341901),
-  I = n(856308),
-  P = n(665352),
+  P = n(856308),
+  I = n(665352),
   Z = n(394900),
   R = n(661105),
   L = n(525169),
-  D = n(433517),
-  A = n(190558),
+  A = n(433517),
+  D = n(190558),
   B = n(231338);
 
 function z(e) {
@@ -115,26 +115,26 @@ let F = {
     REC_2100_HLG: k.Z,
     REC_2100_PQ: E.Z,
     XYZ_D50: w.Z,
-    XYZ_D65: I.Z
+    XYZ_D65: P.Z
   },
   G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
-Object.values(F).forEach(e => P.Z.register(e));
+Object.values(F).forEach(e => I.Z.register(e));
 let {
-  SemanticColors: W
-} = A.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: U
+} = D.V, W = U, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function V(e, t) {
   let [n, r] = l.useState(() => {
-    let n = D.K.get(e);
+    let n = A.K.get(e);
     return null != n ? n : t
   });
   return l.useEffect(() => {
-    D.K.set(e, n)
+    A.K.set(e, n)
   }, [e, n]), [n, r]
 }
 
 function X(e) {
-  let t = U[e];
+  let t = W[e];
   return {
     name: e,
     colors: Object.fromEntries(Object.values(B.BR).map(e => [e, {

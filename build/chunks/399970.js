@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(570140),
-  o = n(401430),
+  o = n(570140),
+  l = n(401430),
   c = n(155268),
   d = n(600164),
   u = n(313201),
@@ -17,21 +17,21 @@ var r = n(200651),
   h = n(802138);
 let f = /^\d+$|^$/;
 
-function x(e) {
+function N(e) {
   let {
     onClose: t,
     transitionState: n
   } = e, {
-    authorizedApplicationId: x,
-    authorizationError: N,
-    authorizing: b
+    authorizedApplicationId: N,
+    authorizationError: b,
+    authorizing: x
   } = (0, s.cj)([m.Z], () => ({
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != x ? x : ""), [j, C] = i.useState("8080"), [O, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != N ? N : ""), [j, O] = i.useState("8080"), [C, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
   async function I() {
-    o.q$();
+    l.q$();
     let e = function(e, t, n) {
       if (null == e) return null;
       switch (e) {
@@ -40,13 +40,13 @@ function x(e) {
         case "proxy":
           return (0, c.ZP)(n)
       }
-    }(O, j, _);
-    null != await o.Wt(_, e) && t()
+    }(C, j, _);
+    null != await l.Wt(_, e) && t()
   }
-  i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
-  let y = null != x && x === _,
+  i.useEffect(() => () => o.Z.wait(() => l.q$()), []);
+  let y = null != N && N === _,
     A = y ? function() {
-      o.mc(), E(""), S(null)
+      l.mc(), E(""), S(null)
     } : I;
   return (0, r.jsxs)(a.Y0X, {
     "aria-labelledby": v,
@@ -68,9 +68,9 @@ function x(e) {
         className: h.marginBottom20,
         type: a.R94.Types.DESCRIPTION,
         children: g.NW.string(g.t.a6Vilp)
-      }), null == N ? null : (0, r.jsx)(a.kzN, {
+      }), null == b ? null : (0, r.jsx)(a.kzN, {
         className: h.marginBottom20,
-        children: N
+        children: b
       }), (0, r.jsx)("form", {
         onSubmit: e => {
           e.preventDefault(), A()
@@ -89,14 +89,14 @@ function x(e) {
               onChange: function(e) {
                 E(e)
               },
-              disabled: b
+              disabled: x
             })
           }), (0, r.jsx)(a.xJW, {
             className: p.inputWrapper,
             title: g.NW.string(g.t["/GTqXF"]),
             children: (0, r.jsx)(a.q4e, {
               isDisabled: !T || "" === _,
-              value: O,
+              value: C,
               options: [{
                 value: "localhost",
                 label: g.NW.string(g.t["+Y9Y6u"]),
@@ -111,20 +111,20 @@ function x(e) {
               },
               placeholder: "URL Origin Type"
             })
-          }), "localhost" !== O ? null : (0, r.jsx)(a.xJW, {
+          }), "localhost" !== C ? null : (0, r.jsx)(a.xJW, {
             className: p.inputWrapper,
             title: g.NW.string(g.t.fF4zxs),
             required: !0,
             children: (0, r.jsx)(a.oil, {
               value: j,
               maxLength: 5,
-              onChange: e => C(e),
-              disabled: b
+              onChange: e => O(e),
+              disabled: x
             })
           }), (0, r.jsx)(a.zxk, {
-            submitting: b,
+            submitting: x,
             type: "submit",
-            disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
+            disabled: !T || 0 === _.length || "localhost" === C && 0 === j.length,
             color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
             children: y ? g.NW.string(g.t.d6TR3N) : g.NW.string(g.t.qwuK5O)
           })]

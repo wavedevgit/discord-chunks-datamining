@@ -1,43 +1,49 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 20447 **/
 n.d(t, {
-  p: () => s
-}), n(47120);
-var r = n(192379),
-  i = n(410030),
-  o = n(231338);
-
-function a(e, t, n, r) {
-  if (null == e) return;
-  let i = t === o.BR.LIGHT ? e.lightBackground : e.darkBackground,
-    a = n || r,
-    s = n ? "var(--background-modifier-hover)" : r ? "var(--background-modifier-selected)" : "".concat(i, "00"),
-    l = "".concat(i).concat(a ? "80" : "4D");
-  if (t !== o.BR.LIGHT) return "linear-gradient(90deg, ".concat(s, " 0%, ").concat(l, " 100%)");
-  let c = "linear-gradient(90deg, transparent, white)",
-    u = "linear-gradient(90deg, ".concat(s, " 0%, ").concat(l, " 100%)");
-  return "".concat(c, ", ").concat(u)
-}
-
-function s(e, t, n, o) {
-  let s = (0, i.ZP)(),
-    [l, c] = (0, r.useState)({});
-  return (0, r.useEffect)(() => {
-    if (null == e) return;
-    let r = a(e.palette, s, t, n);
-    if (null == o) {
-      c({
-        background: r
-      });
-      return
+  f: () => s
+});
+var r = n(200651);
+n(192379);
+var i = n(481060);
+let s = e => {
+  let {
+    analyticsLocations: t
+  } = e;
+  (0, i.ZDy)(async () => {
+    let {
+      default: e
+    } = await Promise.all([n.e("68440"), n.e("71459")]).then(n.bind(n, 612293));
+    return n => {
+      var i, s;
+      return (0, r.jsx)(e, (i = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: !0,
+              configurable: !0,
+              writable: !0
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, n), s = s = {
+        analyticsLocations: t
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+      }), i))
     }
-    let i = new ResizeObserver(e => {
-      let t = e[0].contentRect.width;
-      c({
-        background: r,
-        maskImage: "linear-gradient(to right, transparent ".concat(.9 * t, "px, black ").concat(1.1 * t, "px)")
-      })
-    });
-    return i.observe(o), () => i.disconnect()
-  }, [e, t, n, s, o]), l
+  })
 }

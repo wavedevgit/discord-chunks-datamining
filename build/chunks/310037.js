@@ -1,4 +1,4 @@
-/** Chunk was on 59500 **/
-i.exports = {
+/** Chunk was on 68317 **/
+e.exports = {
   content: "content_eecc8a"
 }

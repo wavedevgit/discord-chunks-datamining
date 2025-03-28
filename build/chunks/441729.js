@@ -1,6 +1,6 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r, i = n(442837),
   o = n(570140);
@@ -14,7 +14,7 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,35 +43,35 @@ let c = {
     speechRate: 1,
     currentMessage: null
   },
-  u = c;
-class d extends(r = i.ZP.DeviceSettingsStore) {
+  d = c;
+class u extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = a({}, c, null != e ? e : null)
+    d = s({}, c, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
       currentMessage: n
-    } = u;
+    } = d;
     return null !== n && n.channelId === e && n.messageId === t
   }
   get currentMessage() {
-    return u.currentMessage
+    return d.currentMessage
   }
   get speechRate() {
-    return u.speechRate
+    return d.speechRate
   }
   getUserAgnosticState() {
-    return u
+    return d
   }
 }
-l(d, "displayName", "TTSStore"), l(d, "persistKey", "TTSStore"), l(d, "migrations", []);
-let p = new d(o.Z, __OVERLAY__ ? {} : {
+l(u, "displayName", "TTSStore"), l(u, "persistKey", "TTSStore"), l(u, "migrations", []);
+let _ = new u(o.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: function(e) {
     let {
       messageId: t,
       channelId: n
     } = e;
-    u = s(a({}, u), {
+    d = a(s({}, d), {
       currentMessage: {
         messageId: t,
         channelId: n
@@ -79,12 +79,12 @@ let p = new d(o.Z, __OVERLAY__ ? {} : {
     })
   },
   STOP_SPEAKING: function() {
-    u = s(a({}, u), {
+    d = a(s({}, d), {
       currentMessage: null
     })
   },
   SET_TTS_SPEECH_RATE: function(e) {
-    u = s(a({}, u), {
+    d = a(s({}, d), {
       speechRate: e.speechRate
     })
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(928873),
-  o = n(748780),
+  o = n(928873),
+  l = n(748780),
   c = n(91192),
   d = n(906732),
   u = n(171368),
@@ -20,16 +20,16 @@ let p = e => {
     isLast: s,
     className: p
   } = e, [h, f] = i.useState(!1), {
-    analyticsLocations: x
-  } = (0, d.ZP)(), N = i.useCallback(() => {
+    analyticsLocations: N
+  } = (0, d.ZP)(), b = i.useCallback(() => {
     (0, u.openUserProfileModal)({
       userId: t,
-      sourceAnalyticsLocations: x,
+      sourceAnalyticsLocations: N,
       analyticsLocation: {
         section: m.jXE.FAMILY_CENTER
       }
     })
-  }, [t, x]), b = () => {
+  }, [t, N]), x = () => {
     f(!0)
   }, _ = () => {
     f(!1)
@@ -38,12 +38,12 @@ let p = e => {
     id: t,
     children: e => {
       var t, i;
-      return (0, r.jsx)(l.tE, {
+      return (0, r.jsx)(o.tE, {
         offset: {
           left: -8,
           right: -8
         },
-        children: (0, r.jsx)(o.Z.div, (t = function(e) {
+        children: (0, r.jsx)(l.Z.div, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -68,9 +68,9 @@ let p = e => {
             [g.last]: s,
             [g.active]: h
           }),
-          onMouseEnter: b,
+          onMouseEnter: x,
           onMouseLeave: _,
-          onClick: N
+          onClick: b
         }, e), i = i = {
           children: n(h)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

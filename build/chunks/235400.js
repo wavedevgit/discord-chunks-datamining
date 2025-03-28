@@ -147,7 +147,7 @@ function P(e) {
   };
   return i.useEffect(() => {
     v.default.track(T.rMx.OPEN_MODAL, {
-      type: "Edit Avatar Decoration Modal",
+      type: T.jXE.AVATAR_DECORATION_CUSTOMIZATION,
       location_stack: y
     })
   }, [y]), i.useEffect(() => () => {

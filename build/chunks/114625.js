@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => g
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(607070),
-  l = n(600164),
-  o = n(614277),
+  o = n(600164),
+  l = n(614277),
   c = n(388032),
   d = n(659638),
   u = n(436858),
@@ -16,10 +16,10 @@ var i = n(442837),
 
 function g() {
   let e = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
-  return (0, r.jsx)(o.O3, {
+  return (0, r.jsx)(l.O3, {
     children: (0, r.jsxs)(s.mzw, {
-      align: l.Z.Align.CENTER,
-      direction: l.Z.Direction.HORIZONTAL,
+      align: o.Z.Align.CENTER,
+      direction: o.Z.Direction.HORIZONTAL,
       className: d.container,
       children: [(0, r.jsxs)(s.Kqy, {
         direction: "horizontal",

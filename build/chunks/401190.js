@@ -1,21 +1,21 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(544891),
   i = n(570140),
   s = n(881052),
   a = n(981631);
-let l = {
+let o = {
     [a.gkr.HOUSE_1]: 1,
     [a.gkr.HOUSE_2]: 2,
     [a.gkr.HOUSE_3]: 3
   },
-  o = {
+  l = {
     joinHypeSquadOnline: e => r.tn.post({
       url: a.ANM.HYPESQUAD_ONLINE,
       body: {
-        house_id: l[e.houseID]
+        house_id: o[e.houseID]
       },
       oldFormErrors: !0,
       rejectWithError: !1

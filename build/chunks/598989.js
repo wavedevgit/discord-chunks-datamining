@@ -1,22 +1,22 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 55166 **/
 n.d(t, {
   S: () => l,
-  _: () => o
+  _: () => c
 });
-var r = n(442837),
-  i = n(594174),
-  s = n(74538),
+var i = n(442837),
+  r = n(594174),
+  o = n(74538),
   a = n(482207);
 
 function l() {
-  return (0, r.cj)([a.Z], () => ({
+  return (0, i.cj)([a.Z], () => ({
     avatars: a.Z.getAvatars(),
     loading: a.Z.isFetching,
     error: a.Z.fetchError
   }))
 }
 
-function o() {
-  let e = (0, r.e7)([i.default], () => i.default.getCurrentUser());
-  return s.ZP.canUseIncreasedRecentAvatarsLimit(e)
+function c() {
+  let e = (0, i.e7)([r.default], () => r.default.getCurrentUser());
+  return o.ZP.canUseIncreasedRecentAvatarsLimit(e)
 }

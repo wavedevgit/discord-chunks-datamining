@@ -1,13 +1,13 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
-  o: () => s
+  o: () => a
 });
 var r = n(544891),
   i = n(570140),
   o = n(355467),
   l = n(853872),
-  a = n(981631);
-async function s() {
+  s = n(981631);
+async function a() {
   try {
     i.Z.dispatch({
       type: "CHECKOUT_RECOVERY_STATUS_FETCH"
@@ -15,7 +15,7 @@ async function s() {
     let {
       body: e
     } = await r.tn.get({
-      url: a.ANM.CHECKOUT_RECOVERY,
+      url: s.ANM.CHECKOUT_RECOVERY,
       rejectWithError: !0
     }), t = (null == e ? void 0 : e.is_eligible) === !0;
     t && !l.Z.hasFetchedPaymentSources && await (0, o.tZ)(), i.Z.dispatch({

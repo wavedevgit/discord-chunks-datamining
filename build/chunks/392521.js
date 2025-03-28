@@ -1,18 +1,18 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  ZP: () => x,
-  u0: () => l
+  ZP: () => N,
+  u0: () => o
 });
 var r, i = n(200651);
 n(192379);
 var s = n(780384),
   a = n(410030),
-  l = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
-let o = "premium_tier_2_gradient",
+  o = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
+let l = "premium_tier_2_gradient",
   c = "premium_tier_2_fill",
   d = "white_gradient",
   u = (0, i.jsxs)("linearGradient", {
-    id: o,
+    id: l,
     x1: "0%",
     y1: "0%",
     x2: "100%",
@@ -137,23 +137,23 @@ let o = "premium_tier_2_gradient",
       }), p]
     })
   },
-  x = e => {
+  N = e => {
     let {
       className: t,
       variant: n
-    } = e, r = (0, a.ZP)(), l = (0, s.wj)(r) ? d : o, u = (0, s.wj)(r) ? "#F2F3F5" : "url(#".concat(c, ")");
+    } = e, r = (0, a.ZP)(), o = (0, s.wj)(r) ? d : l, u = (0, s.wj)(r) ? "#F2F3F5" : "url(#".concat(c, ")");
     switch (n) {
       case 0:
         return (0, i.jsx)(f, {
           className: t,
           fill: u,
-          gradient: l
+          gradient: o
         });
       case 1:
         return (0, i.jsx)(h, {
           className: t,
           fill: u,
-          gradient: l
+          gradient: o
         });
       default:
         return null

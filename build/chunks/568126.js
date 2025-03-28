@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => g
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(706454),
-  l = n(78839),
-  o = n(985754),
+  o = n(78839),
+  l = n(985754),
   c = n(222727),
   d = n(474494),
   u = n(981631),
@@ -18,10 +18,10 @@ let g = function(e) {
     localizedPricingPromo: t
   } = e, n = t.countryCode, g = (0, i.e7)([a.default], () => a.default.locale);
   (0, c.U)(u.jXE.SETTINGS_PREMIUM_BANNER, n);
-  let p = (0, i.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
+  let p = (0, i.e7)([o.ZP], () => o.ZP.getPremiumTypeSubscription()),
     {
       localizedPricingBannerBody: h
-    } = (0, o.vB)({
+    } = (0, l.vB)({
       localizedPricingPromo: t,
       subscription: p,
       forceSingleLine: !0,

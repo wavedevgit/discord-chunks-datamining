@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => A
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(921801),
   s = n(63063),
   a = n(10298),
-  l = n(924356),
-  o = n(945627),
+  o = n(924356),
+  l = n(945627),
   c = n(24400),
   d = n(122897),
   u = n(821035),
@@ -17,44 +17,44 @@ var i = n(921801),
   p = n(540204),
   h = n(546957),
   f = n(893996),
-  x = n(273927),
-  N = n(864239),
-  b = n(190014),
+  N = n(273927),
+  b = n(864239),
+  x = n(190014),
   _ = n(301812),
   E = n(988043),
   j = n(919539),
-  C = n(726985),
-  O = n(981631),
+  O = n(726985),
+  C = n(981631),
   S = n(388032);
 let v = () => (0, r.jsx)(f.Z, {
     title: S.NW.string(S.t["y62Z/f"]),
-    webSetting: C.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+    webSetting: O.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: (0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(i.F, {
-        setting: C.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+        setting: O.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
         children: (0, r.jsx)(p.Z, {})
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(b.Z, {})]
+      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(x.Z, {})]
     })
   }),
   T = () => (0, r.jsxs)(f.Z, {
     title: S.NW.string(S.t.xVRG4O),
-    webSetting: C.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(N.Z, {})]
+    webSetting: O.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(o.Z, {}), (0, r.jsx)(b.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
     title: S.NW.string(S.t["1Qn8iY"]),
-    webSetting: C.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(x.ZP, {})]
+    webSetting: O.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(N.ZP, {})]
   }),
   y = () => {
     let e = S.NW.format(S.t.VaxeGh, {
-      helpdeskArticle: s.Z.getArticleURL(O.BhN.SLAYER_GAME_FRIENDS)
+      helpdeskArticle: s.Z.getArticleURL(C.BhN.SLAYER_GAME_FRIENDS)
     });
     return (0, r.jsx)(f.Z, {
       title: S.NW.string(S.t.oPyABA),
       description: e,
-      webSetting: C.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
-      children: (0, r.jsx)(o.Z, {})
+      webSetting: O.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
+      children: (0, r.jsx)(l.Z, {})
     })
   };
 

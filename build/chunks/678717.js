@@ -31,20 +31,20 @@ var g = n(392750),
   k = n(903502),
   E = n(604776),
   w = n(912072),
-  I = n(272193),
-  P = n(685560),
+  P = n(272193),
+  I = n(685560),
   Z = n(735959),
   R = n(246992),
   L = n(496025),
-  D = n(442954),
-  A = n(633001),
+  A = n(442954),
+  D = n(633001),
   B = n(702904),
   z = n(178821),
   M = n(958328),
   F = n(315384),
   G = n(514866),
-  W = n(384207),
-  U = n(264603),
+  U = n(384207),
+  W = n(264603),
   H = n(678639),
   V = n(351930),
   X = n(771751),
@@ -96,7 +96,7 @@ function et() {
       return h.Z.isDeveloper && (e.push({
         id: "shop",
         name: "Shop",
-        render: () => (0, r.jsx)(W.C, {})
+        render: () => (0, r.jsx)(U.C, {})
       }), e.push({
         id: "quick_actions",
         name: "Quick Actions",
@@ -120,11 +120,11 @@ function et() {
       }), e.push({
         id: "overlay",
         name: "Overlay v3",
-        render: () => (0, r.jsx)(A.Z, {})
+        render: () => (0, r.jsx)(D.Z, {})
       }), e.push({
         id: "slayer_sdk",
         name: "Slayer SDK",
-        render: () => (0, r.jsx)(U.Z, {})
+        render: () => (0, r.jsx)(W.Z, {})
       })), e.push({
         id: "intl",
         name: "Intl",
@@ -160,7 +160,7 @@ function et() {
       }), e.push({
         id: "modals",
         name: "Modals",
-        render: () => (0, r.jsx)(D.Z, {})
+        render: () => (0, r.jsx)(A.Z, {})
       }), e.push({
         id: "affinity",
         name: "Affinity",
@@ -200,7 +200,7 @@ function et() {
       })), e.push({
         id: "gifting_intent",
         name: "Gifting Intent",
-        render: () => (0, r.jsx)(I.Z, {})
+        render: () => (0, r.jsx)(P.Z, {})
       }), e.push({
         id: "voice_filters",
         name: "Voice Filters",
@@ -208,7 +208,7 @@ function et() {
       }), e.push({
         id: "skill_trees",
         name: "Skill Trees",
-        render: () => (0, r.jsx)(P.Z, {})
+        render: () => (0, r.jsx)(I.Z, {})
       }), e
     }, []),
     {

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Y7: () => c,
   oc: () => u,
@@ -8,12 +8,12 @@ var r = n(990547),
   i = n(283693),
   s = n(570140),
   a = n(573261),
-  l = n(930441),
-  o = n(981631);
+  o = n(930441),
+  l = n(981631);
 async function c() {
   try {
     let e = await a.Z.get({
-      url: o.ANM.EMAIL_SETTINGS,
+      url: l.ANM.EMAIL_SETTINGS,
       trackedActionData: {
         event: r.NetworkActionNames.EMAIL_SETTINGS_FETCH,
         properties: e => {
@@ -45,7 +45,7 @@ async function d(e, t) {
   });
   try {
     let n = await a.Z.patch({
-      url: o.ANM.EMAIL_SETTINGS,
+      url: l.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
           categories: {
@@ -73,7 +73,7 @@ async function d(e, t) {
   }
 }
 async function u() {
-  let e = l.M0.reduce((e, t) => {
+  let e = o.M0.reduce((e, t) => {
     var n, r;
     return n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -111,7 +111,7 @@ async function u() {
   });
   try {
     let t = await a.Z.patch({
-      url: o.ANM.EMAIL_SETTINGS,
+      url: l.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
           categories: e

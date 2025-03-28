@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(2052),
-  o = n(594174),
+  o = n(2052),
+  l = n(594174),
   c = n(74538),
   d = n(716161),
   u = n(634041),
@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(898531),
   h = n(636188),
   f = n(678916),
-  x = n(981631),
-  N = n(869783),
-  b = n(388032),
+  N = n(981631),
+  b = n(869783),
+  x = n(388032),
   _ = n(215232);
 
 function E(e) {
@@ -53,25 +53,25 @@ function j(e, t) {
   }), e
 }
 
-function C(e) {
+function O(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: C,
-    onSelectBackgroundOption: O,
+    selectedBackgroundOption: O,
+    onSelectBackgroundOption: C,
     currentDeviceId: S,
     smallerBackgroundOptions: v,
     className: T
-  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
+  } = e, I = (0, s.e7)([l.default], () => l.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
   i.useEffect(() => {
     (0, d.XV)()
   }, []);
   let D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}),
     Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]),
-    w = (0, l.O)(),
+    w = (0, o.O)(),
     k = {
       isVideoBackgroundSupported: P,
-      onSelectBackgroundOption: O,
-      selectedBackgroundOption: C
+      onSelectBackgroundOption: C,
+      selectedBackgroundOption: O
     },
     W = i.useRef(k);
   i.useEffect(() => {
@@ -87,16 +87,16 @@ function C(e) {
     }).catch(() => t(null)) : null != n && t(null)
   }, [S]);
   let L = e => {
-    O(e), (0, g.FU)(e, S, {
+    C(e), (0, g.FU)(e, S, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(b.NW.string(b.t.ejrSLS)), (0, g.FU)(null, S, {
+      A(x.NW.string(x.t.ejrSLS)), (0, g.FU)(null, S, {
         location: w.location
       })
     })
   };
   return P ? (0, r.jsxs)(a.xJW, {
-    title: b.NW.string(b.t.lZTUPj),
+    title: x.NW.string(x.t.lZTUPj),
     className: T,
     children: [null != y ? (0, r.jsx)(a.kzN, {
       className: _.videoBackgroundError,
@@ -104,7 +104,7 @@ function C(e) {
     }) : null, (0, r.jsx)(h.Z, {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
-      selectedOption: C,
+      selectedOption: O,
       onSelectOption: L,
       onUpsellClick: () => {
         (0, a.ZDy)(async () => {
@@ -114,7 +114,7 @@ function C(e) {
           return n => (0, r.jsx)(e, j(E({}, n), {
             onLearnMore: t,
             analyticsSource: j(E({}, w.location), {
-              object: x.qAy.BUTTON_CTA
+              object: N.qAy.BUTTON_CTA
             })
           }))
         })
@@ -124,7 +124,7 @@ function C(e) {
         return new Promise(async r => {
           try {
             let r = await (0, d.Ff)(e, f.xV.BACKGROUND);
-            L(r), (0, m.g5)(r, t.type === N.m.MP4, n), A(null)
+            L(r), (0, m.g5)(r, t.type === b.m.MP4, n), A(null)
           } catch (e) {
             A(e.message)
           }

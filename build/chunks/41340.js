@@ -114,9 +114,9 @@ function g(e) {
       N(e.body.message)
     }
     v()
-  }, I = (null === (t = h.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === h.p9.TIER_0, P = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != P ? new Date(P).toISOString().substring(0, 10) : "";
+  }, P = (null === (t = h.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === h.p9.TIER_0, I = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != I ? new Date(I).toISOString().substring(0, 10) : "";
   return (0, r.jsxs)("div", {
-    className: i()(b.card, I ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
+    className: i()(b.card, P ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
     children: [(0, r.jsxs)(s.Text, {
       variant: "text-md/normal",
       children: ["Type: ", (() => {

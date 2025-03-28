@@ -1,12 +1,12 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(47120);
 var r, i = n(200651),
   s = n(192379),
   a = n(512722),
-  l = n.n(a),
-  o = n(442837),
+  o = n.n(a),
+  l = n(442837),
   c = n(481060),
   d = n(893776),
   u = n(468026),
@@ -103,9 +103,9 @@ p(f, "defaultProps", {
   size: c.zxk.Sizes.MEDIUM,
   color: c.zxk.Colors.BRAND
 });
-let x = o.ZP.connectStores([m.default], () => {
+let N = l.ZP.connectStores([m.default], () => {
   let e = m.default.getCurrentUser();
-  return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
+  return o()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e
   }
 })(f)

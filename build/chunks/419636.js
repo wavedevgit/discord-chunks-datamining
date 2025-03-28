@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => u
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   s = n(299379),
   a = n(447293),
-  l = n(58839),
-  o = n(981631),
+  o = n(58839),
+  l = n(981631),
   c = n(842906);
 let d = {
   offset: {
@@ -24,7 +24,7 @@ function u() {
       tabIndex: -1,
       rel: "author",
       title: "X",
-      href: (0, s.Z)(o.RK.TWITTER),
+      href: (0, s.Z)(l.RK.TWITTER),
       className: c.link,
       focusProps: d,
       children: (0, r.jsx)(i.TAi, {
@@ -38,7 +38,7 @@ function u() {
       rel: "author",
       title: "Instagram",
       tabIndex: -1,
-      href: o.fK7.INSTAGRAM_URL,
+      href: l.fK7.INSTAGRAM_URL,
       className: c.link,
       focusProps: d,
       children: (0, r.jsx)(i.gST, {
@@ -52,7 +52,7 @@ function u() {
       rel: "author",
       title: "Facebook",
       tabIndex: -1,
-      href: o.fK7.FACEBOOK_URL,
+      href: l.fK7.FACEBOOK_URL,
       className: c.link,
       focusProps: d,
       children: (0, r.jsx)(i.tdR, {
@@ -66,10 +66,10 @@ function u() {
       rel: "author",
       title: "YouTube",
       tabIndex: -1,
-      href: o.fK7.YOUTUBE_URL,
+      href: l.fK7.YOUTUBE_URL,
       className: c.link,
       focusProps: d,
-      children: (0, r.jsx)(l.Z, {
+      children: (0, r.jsx)(o.Z, {
         width: 16,
         height: 16,
         foreground: c.foreground,
@@ -80,7 +80,7 @@ function u() {
       rel: "author",
       title: "TikTok",
       tabIndex: -1,
-      href: o.fK7.TIKTOK_URL,
+      href: l.fK7.TIKTOK_URL,
       className: c.link,
       focusProps: d,
       children: (0, r.jsx)(a.Z, {

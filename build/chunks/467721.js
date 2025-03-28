@@ -1,6 +1,6 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r, i = n(442837),
   o = n(570140);
@@ -14,15 +14,15 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a() {
+function s() {
   return {
     lastTriggered: 0
   }
 }
-let s = a();
+let a = s();
 class c extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    s = function(e) {
+    a = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -33,21 +33,21 @@ class c extends(r = i.ZP.PersistedStore) {
         })
       }
       return e
-    }({}, a(), null != e ? e : {})
+    }({}, s(), null != e ? e : {})
   }
   getState() {
-    return s
+    return a
   }
   cooldownIsActive() {
-    return s.lastTriggered >= Date.now() - 1728e5
+    return a.lastTriggered >= Date.now() - 1728e5
   }
 }
 l(c, "displayName", "HDStreamingViewerStore"), l(c, "persistKey", "HDStreamingViewerStore");
-let u = new c(o.Z, {
+let d = new c(o.Z, {
   LOGOUT: function() {
-    s = a()
+    a = s()
   },
   HD_STREAMING_VIEWER_UPDATE_LAST_TRIGGERED: function(e) {
-    s.lastTriggered = Date.now()
+    a.lastTriggered = Date.now()
   }
 })

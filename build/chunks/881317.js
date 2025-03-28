@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => S
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,9 +14,9 @@ var r = n(200651),
   p = n(82554),
   h = n(726521),
   g = n(185625),
-  _ = n(314897),
-  m = n(63063),
-  f = n(981631),
+  m = n(314897),
+  f = n(63063),
+  _ = n(981631),
   b = n(388032),
   x = n(354689),
   N = n(802138);
@@ -103,8 +103,8 @@ let I = e => {
       })
     })
   },
-  S = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), h = (0, a.e7)([_.default], () => _.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
+  j = () => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), h = (0, a.e7)([m.default], () => m.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
       (0, g.qJ)().then(() => {
         t(!1), o(!0)
       }).catch(() => {
@@ -128,7 +128,7 @@ let I = e => {
       }), (0, r.jsx)(u.DK, {
         className: N.marginBottom8,
         children: b.NW.format(b.t["532l+v"], {
-          supportURL: m.Z.getArticleURL(f.BhN.COPYRIGHT_AND_IP_POLICY)
+          supportURL: f.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsxs)("div", {
         className: x.container,

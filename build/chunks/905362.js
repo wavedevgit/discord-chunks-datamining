@@ -1,16 +1,16 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 79536 **/
 n.d(t, {
   CK: () => d,
   SJ: () => u
 });
 var r = n(200651);
 n(192379);
-var i = n(704215),
-  o = n(481060),
-  l = n(645041),
-  a = n(693546);
+var o = n(704215),
+  i = n(481060),
+  a = n(645041),
+  c = n(693546);
 
-function s(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function s(e) {
   return e
 }
 
-function c(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,13 +43,13 @@ function c(e, t) {
 }
 
 function u(e) {
-  (0, o.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: t
     } = await n.e("95883").then(n.bind(n, 83521));
-    return n => (0, r.jsx)(t, c(s({}, n), {
+    return n => (0, r.jsx)(t, s(l({}, n), {
       onClose: t => {
-        (0, l.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e, !0, t), n.onClose()
+        (0, a.Qd)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, e, !0, t), n.onClose()
       },
       guildId: e
     }))
@@ -57,13 +57,13 @@ function u(e) {
 }
 
 function d(e, t) {
-  (0, o.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
-      default: i
+      default: o
     } = await Promise.all([n.e("82158"), n.e("42298")]).then(n.bind(n, 717057));
-    return n => (0, r.jsx)(i, c(s({}, n), {
+    return n => (0, r.jsx)(o, s(l({}, n), {
       onAccept: () => {
-        null != t && a.Z.ackUserGuildJoinRequest(e, t), n.onClose()
+        null != t && c.Z.ackUserGuildJoinRequest(e, t), n.onClose()
       },
       guildId: e
     }))

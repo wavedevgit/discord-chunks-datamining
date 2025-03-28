@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   PK: () => T,
   ZP: () => A,
@@ -8,8 +8,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(100527),
   d = n(906732),
   u = n(535322),
@@ -18,14 +18,14 @@ var r = n(200651),
   p = n(775412),
   h = n(104494),
   f = n(639119),
-  x = n(105759),
-  N = n(346497),
-  b = n(422034),
+  N = n(105759),
+  b = n(346497),
+  x = n(422034),
   _ = n(206127),
   E = n(710220),
   j = n(318747),
-  C = n(409100),
-  O = n(474936),
+  O = n(409100),
+  C = n(474936),
   S = n(388032),
   v = n(370623);
 let T = e => {
@@ -34,18 +34,18 @@ let T = e => {
       subscriptionTier: n,
       containerClassName: i,
       buttonClassName: s,
-      isMarketingPageV2Enabled: l,
-      isDarkMode: o
-    } = e, c = (0, r.jsx)(C.Z, {
-      forceInverted: o || !l,
+      isMarketingPageV2Enabled: o,
+      isDarkMode: l
+    } = e, c = (0, r.jsx)(O.Z, {
+      forceInverted: l || !o,
       className: a()(v.button, v.subButton, s, {
-        [v.extendedButton]: t && l,
-        [v.whiteSubButton]: l && !o
+        [v.extendedButton]: t && o,
+        [v.whiteSubButton]: o && !l
       }),
       subscriptionTier: n
-    }), d = t && l ? null : (0, r.jsx)(j.Z, {
+    }), d = t && o ? null : (0, r.jsx)(j.Z, {
       className: a()(v.button, s),
-      forceWhite: !l
+      forceWhite: !o
     });
     return (0, r.jsxs)("div", {
       className: a()(v.buttonContainer, i),
@@ -75,7 +75,7 @@ function y(e) {
     withBottomMargin: n = !0,
     isMarketingPageV2Enabled: i
   } = e, s = (0, _.$)();
-  return (0, r.jsx)(o.Text, {
+  return (0, r.jsx)(l.Text, {
     variant: t,
     color: i ? "header-secondary" : "always-white",
     className: a()(v.description, {
@@ -93,12 +93,12 @@ let A = i.forwardRef((e, t) => {
     isFullscreen: s,
     className: u,
     buttonClassName: _,
-    subscriptionTier: C,
+    subscriptionTier: O,
     entrypoint: A,
     isDarkMode: P
   } = e, {
     analyticsLocations: R
-  } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p._O)(), Z = (0, h.Ng)(), w = (0, h.Wp)(Z, O.Si.TIER_2) ? O.Si.TIER_2 : void 0, k = (0, f.N)(), W = (0, g.Nx)(), L = (0, N.Vi)(), B = (0, l.e7)([m.Z], () => m.Z.affinities), M = (0, x.Z)(), U = A === O.EZ.ApplicationStoreHome && null != M, V = B.length > 0;
+  } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p._O)(), Z = (0, h.Ng)(), w = (0, h.Wp)(Z, C.Si.TIER_2) ? C.Si.TIER_2 : void 0, k = (0, f.N)(), W = (0, g.Nx)(), L = (0, b.Vi)(), B = (0, o.e7)([m.Z], () => m.Z.affinities), M = (0, N.Z)(), U = A === C.EZ.ApplicationStoreHome && null != M, V = B.length > 0;
   return (0, r.jsx)(d.Gt, {
     value: R,
     children: (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ let A = i.forwardRef((e, t) => {
       "data-testid": "v2-marketing-page-hero-header",
       children: [(0, r.jsxs)("div", {
         className: s ? v.fullscreenTextContainer : v.settingsTextContainer,
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(l.X6q, {
           variant: s ? "display-lg" : "display-md",
           color: "always-white",
           children: S.NW.string(S.t.YCZldH)
@@ -118,7 +118,7 @@ let A = i.forwardRef((e, t) => {
           referrer: M
         }) : V ? (0, r.jsx)("div", {
           className: v.affinityDescription,
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(x.Z, {
             textColor: "always-white",
             smallerText: !s
           })
@@ -129,7 +129,7 @@ let A = i.forwardRef((e, t) => {
             forceWhite: !0
           })
         }) : (0, r.jsx)(T, {
-          subscriptionTier: null !== (i = null != C ? C : null == k ? void 0 : null === (n = k.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== i ? i : w,
+          subscriptionTier: null !== (i = null != O ? O : null == k ? void 0 : null === (n = k.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== i ? i : w,
           inOfferExperience: W,
           buttonClassName: _,
           isDarkMode: P

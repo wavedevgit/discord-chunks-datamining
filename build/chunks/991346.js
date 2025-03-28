@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Gj: () => G,
   Pt: () => V,
@@ -10,8 +10,8 @@ var r = n(192379),
   i = n(442837),
   s = n(704215),
   a = n(493544),
-  l = n(634894),
-  o = n(211242),
+  o = n(634894),
+  l = n(211242),
   c = n(924557),
   d = n(706140),
   u = n(704454),
@@ -20,14 +20,14 @@ var r = n(192379),
   p = n(592204),
   h = n(610697),
   f = n(880257),
-  x = n(631885),
-  N = n(223639),
-  b = n(160913),
+  N = n(631885),
+  b = n(223639),
+  x = n(160913),
   _ = n(725727),
   E = n(977156),
   j = n(921157),
-  C = n(667172),
-  O = n(237292),
+  O = n(667172),
+  C = n(237292),
   S = n(314897),
   v = n(906467),
   T = n(283595),
@@ -84,17 +84,17 @@ function U(e) {
 function V() {
   var e, t, n, a;
   let v = (0, _.YO)().length,
-    R = (0, b.U)(),
+    R = (0, x.U)(),
     W = (0, i.e7)([y.Z], () => y.Z.getProps().impressionSource),
-    L = (0, x.gU)(),
+    L = (0, N.gU)(),
     M = (0, k.bC)(),
     U = (0, c.Go)(),
     [V] = (0, d.cv)(U ? [s.z.CLIPS_SETTINGS_BETA_TAG] : []),
     G = "useGenerateUserSettingsSections";
-  (0, l.j)({
+  (0, o.j)({
     location: G + " auto on",
     autoTrackExposure: !0
-  }), (0, l.j)({
+  }), (0, o.j)({
     location: G + " auto off",
     autoTrackExposure: !1
   });
@@ -104,15 +104,15 @@ function V() {
     location: "settings"
   }), H = (0, p.Xo)({
     location: "settings"
-  }), z = null !== (n = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, O.y0)({
+  }), z = null !== (n = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, C.y0)({
     location: "settings"
-  }), K = (0, C.v4)({
+  }), K = (0, O.v4)({
     location: "settings"
-  }), q = (0, o.Q)(), X = (0, E.Zy)({
+  }), q = (0, l.Q)(), X = (0, E.Zy)({
     location: B.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), {
     enabled: J
-  } = N.Z.useExperiment({
+  } = b.Z.useExperiment({
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
@@ -126,10 +126,10 @@ function V() {
   } = (0, i.cj)([I.Z], () => ({
     hasBlockedUsers: I.Z.getBlockedIDs().length > 0,
     hasIgnoredUsers: I.Z.getIgnoredIDs().length > 0
-  })), el = (0, m.B)({
+  })), eo = (0, m.B)({
     location: "SettingRendererUtils"
   }), {
-    showRefreshedSettings: eo
+    showRefreshedSettings: el
   } = (0, w.F)({
     location: "SettingRendererUtils",
     autoTrackExposure: !1
@@ -158,10 +158,10 @@ function V() {
     hypeSquadRemoved: en,
     hasIgnoredUsers: ea,
     hasBlockedUsers: es,
-    isAllowGameFriendDMsVisible: el,
-    useRefreshedVoiceAndVideo: eo,
+    isAllowGameFriendDMsVisible: eo,
+    useRefreshedVoiceAndVideo: el,
     isEligibleForSensitiveContentDefaults: ec
-  }), [ee, V, es, ea, Q, ei, $, en, W, er, el, X, K, Y, H, M, z, et, L, q, F, J, R, v, eo, ec])
+  }), [ee, V, es, ea, Q, ei, $, en, W, er, eo, X, K, Y, H, M, z, et, L, q, F, J, R, v, el, ec])
 }
 
 function G(e) {
@@ -181,20 +181,20 @@ function G(e) {
       parent: n
     }] = e;
     return [t, n]
-  })), a = new Set, l = e => {
+  })), a = new Set, o = e => {
     let t = i[e];
     if (null == t) return;
     a.add(e);
     let n = t.parent;
-    null != n && l(n)
-  }, o = e => {
+    null != n && o(n)
+  }, l = e => {
     for (let t of (a.add(e), Object.entries(s).filter(t => {
         let [n, r] = t;
         return r === e
       }).map(e => {
         let [t] = e;
         return t
-      }))) o(t)
+      }))) l(t)
   };
   for (let e of t.filter(e => e in i))
     if (!a.has(e)) {
@@ -202,7 +202,7 @@ function G(e) {
         a.clear();
         break
       }
-      Object.values(s).includes(e) && o(e), l(e)
+      Object.values(s).includes(e) && l(e), o(e)
     } return a
 }
 

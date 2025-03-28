@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(906732),
+  o = n(481060),
+  l = n(906732),
   c = n(642619),
   d = n(626135),
   u = n(74538),
@@ -16,30 +16,30 @@ var r = n(200651),
   p = n(504983),
   h = n(981631),
   f = n(474936),
-  x = n(388032),
-  N = n(669228);
+  N = n(388032),
+  b = n(669228);
 
-function b(e) {
+function x(e) {
   let {
     user: t,
     guild: n,
     className: s,
-    sectionTitle: b,
+    sectionTitle: x,
     forcedDivider: _ = !1,
     withTutorial: E = !1,
     showBorder: j = !1,
-    isTryItOutFlow: C = !1,
-    initialSelectedEffectId: O
+    isTryItOutFlow: O = !1,
+    initialSelectedEffectId: C
   } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
-  } = (0, o.ZP)(), {
+  } = (0, l.ZP)(), {
     pendingProfileEffectId: I,
     errors: y
   } = (0, m.bd)(n), A = i.useCallback(() => (0, c.H)({
     analyticsLocations: T,
-    initialSelectedEffectId: O,
+    initialSelectedEffectId: C,
     guild: n
-  }), [T, O, n]);
+  }), [T, C, n]);
   i.useEffect(() => {
     v && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: f.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
@@ -47,33 +47,33 @@ function b(e) {
     })
   }, [v, T]);
   let P = null != n,
-    R = E ? l.gtL : l.zxk;
+    R = E ? o.gtL : o.zxk;
   return (0, r.jsx)(g.Z, {
     forcedDivider: _,
     borderType: p.Y.PREMIUM,
     hasBackground: !0,
-    title: b,
+    title: x,
     showBorder: j,
     errors: y,
     className: s,
     children: (0, r.jsxs)("div", {
-      className: N.buttonsContainer,
+      className: b.buttonsContainer,
       children: [(0, r.jsx)(R, {
-        size: l.zxk.Sizes.SMALL,
+        size: o.zxk.Sizes.SMALL,
         onClick: A,
         className: a()({
-          [N.buttonHighlighted]: E
+          [b.buttonHighlighted]: E
         }),
-        children: x.NW.string(x.t["0nEVoK"])
-      }), (C || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
-        className: N.removeButton,
-        color: l.zxk.Colors.PRIMARY,
-        look: l.zxk.Looks.LINK,
-        size: l.zxk.Sizes.SMALL,
+        children: N.NW.string(N.t["0nEVoK"])
+      }), (O || void 0 !== I ? null != I : null != S) && (0, r.jsx)(o.zxk, {
+        className: b.removeButton,
+        color: o.zxk.Colors.PRIMARY,
+        look: o.zxk.Looks.LINK,
+        size: o.zxk.Sizes.SMALL,
         onClick: function() {
           (0, m.s6)(null, S, null == n ? void 0 : n.id)
         },
-        children: P ? x.NW.string(x.t.GJ3Fcn) : x.NW.string(x.t["Ld+f5e"])
+        children: P ? N.NW.string(N.t.GJ3Fcn) : N.NW.string(N.t["Ld+f5e"])
       })]
     })
   })

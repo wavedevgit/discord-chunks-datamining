@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => u
 });
@@ -13,17 +13,17 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let l = {},
-  o = null;
+let o = {},
+  l = null;
 
 function c() {
-  l = {}, o = null
+  o = {}, l = null
 }
 class d extends(r = i.ZP.Store) {
   getEmailSettings() {
     return {
-      categories: l,
-      initialized: o
+      categories: o,
+      initialized: l
     }
   }
 }
@@ -35,19 +35,19 @@ let u = new d(s.Z, {
     let {
       settings: t
     } = e;
-    l = t.categories, o = t.initialized
+    o = t.categories, l = t.initialized
   },
   EMAIL_SETTINGS_UPDATE_SUCCESS: function(e) {
     let {
       settings: t
     } = e;
-    l = t.categories
+    o = t.categories
   },
   EMAIL_SETTINGS_UPDATE: function(e) {
     let {
       updates: t
     } = e;
-    l = function(e) {
+    o = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -58,6 +58,6 @@ let u = new d(s.Z, {
         })
       }
       return e
-    }({}, l, t)
+    }({}, o, t)
   }
 })

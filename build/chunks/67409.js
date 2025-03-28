@@ -1,13 +1,14 @@
-/** Chunk was on 87791 **/
-n.d(t, {
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
   S: () => i
 });
-var r = n(979554);
+var n = r(979554);
 let i = e => {
-  var t, n, i;
+  var t, r, i;
   let {
     product: o,
     selectedVariantIndex: l
   } = e;
-  return o.type === r.Z.VARIANTS_GROUP && null != l && null !== (i = null === (n = o.variants) || void 0 === n ? void 0 : null === (t = n[l]) || void 0 === t ? void 0 : t.skuId) && void 0 !== i ? i : o.skuId
+  return o.type === n.Z.VARIANTS_GROUP && null != l && null !== (i = null === (r = o.variants) || void 0 === r ? void 0 : null === (t = r[l]) || void 0 === t ? void 0 : t.skuId) && void 0 !== i ? i : o.skuId
 }

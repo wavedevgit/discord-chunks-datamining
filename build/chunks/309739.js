@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => B
 }), n(47120), n(566702);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(658722),
-  o = n.n(l),
+  o = n(658722),
+  l = n.n(o),
   c = n(442837),
   d = n(524437),
   u = n(780384),
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(410030),
   h = n(726542),
   f = n(116841),
-  x = n(295377),
-  N = n(921801),
-  b = n(553795),
+  N = n(295377),
+  b = n(921801),
+  x = n(553795),
   _ = n(430824),
   E = n(63063),
   j = n(358085),
-  C = n(709054),
-  O = n(362352),
+  O = n(709054),
+  C = n(362352),
   S = n(413182),
   v = n(695346),
   T = n(726985),
@@ -34,7 +34,7 @@ var r = n(200651),
 
 function R(e) {
   let t = () => {
-    v.SE.updateSetting(e ? C.default.keys(_.Z.getGuilds()) : [])
+    v.SE.updateSetting(e ? O.default.keys(_.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -82,15 +82,15 @@ function R(e) {
 function D() {
   let e = v.G6.useSetting(),
     t = v.Wz.useSetting(),
-    n = (0, O.Yd)("activity privacy tab"),
+    n = (0, C.Yd)("activity privacy tab"),
     i = j.isPlatformEmbedded ? y.NW.string(y.t.MznbeH) : y.NW.string(y.t.oKqC4u),
     s = e => {
       v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
     },
-    l = e => {
+    o = e => {
       v.Wz.updateSetting(e), R(e !== d.E5.OFF)
     },
-    o = [{
+    l = [{
       value: d.E5.ON,
       label: y.NW.string(y.t.UzGMHx)
     }, {
@@ -100,7 +100,7 @@ function D() {
       value: d.E5.OFF,
       label: y.NW.string(y.t.MIgNPD)
     }];
-  return (0, r.jsx)(N.F, {
+  return (0, r.jsx)(b.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, r.jsxs)(m.hjN, {
       children: [(0, r.jsx)(m.vwX, {
@@ -123,9 +123,9 @@ function D() {
             helpdeskArticle: E.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS)
           })
         }), (0, r.jsx)(m.q4e, {
-          options: o,
+          options: l,
           value: t,
-          onChange: e => l(e)
+          onChange: e => o(e)
         })]
       }) : (0, r.jsx)(m.j7V, {
         value: t === d.E5.OFF,
@@ -144,7 +144,7 @@ function D() {
 function Z() {
   let e = v.cP.useSetting(),
     t = v.Ou.useSetting();
-  return (0, r.jsx)(N.F, {
+  return (0, r.jsx)(b.F, {
     setting: T.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
@@ -168,7 +168,7 @@ function Z() {
 }
 
 function w() {
-  return (0, r.jsx)(N.F, {
+  return (0, r.jsx)(b.F, {
     setting: T.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, r.jsx)(m.hjN, {
       className: P.marginBottom40,
@@ -206,7 +206,7 @@ function W(e) {
   i.useEffect(() => {
     s(t.showActivity)
   }, [t]);
-  let l = h.Z.get(t.type);
+  let o = h.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.j7V, {
       className: A.switchRowContainer,
@@ -218,17 +218,17 @@ function W(e) {
       children: (0, r.jsxs)("div", {
         className: A.activitySwitchRow,
         children: [(0, r.jsx)("img", {
-          alt: l.name,
+          alt: o.name,
           className: A.connectionIcon,
-          src: (0, u.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
+          src: (0, u.wj)(a) ? o.icon.darkSVG : o.icon.lightSVG
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(m.Text, {
             variant: "text-md/semibold",
-            children: l.name
+            children: o.name
           }), (0, r.jsxs)(m.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: ['"', k(l), '"']
+            children: ['"', k(o), '"']
           })]
         })]
       })
@@ -239,14 +239,14 @@ function W(e) {
 }
 
 function L() {
-  let e = (0, c.e7)([b.Z], () => b.Z.getAccounts()),
+  let e = (0, c.e7)([x.Z], () => x.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => h.Z.isSupported(e.type) && I.vbS.has(e.type)), [e]),
     [n, s] = i.useState(""),
     a = i.useMemo(() => {
       let e = n.trim().toLowerCase();
-      return "" === e ? t : t.filter(t => o()(e, h.Z.get(t.type).name.toLowerCase()))
+      return "" === e ? t : t.filter(t => l()(e, h.Z.get(t.type).name.toLowerCase()))
     }, [t, n]);
-  return 0 === t.length ? null : (0, r.jsx)(N.F, {
+  return 0 === t.length ? null : (0, r.jsx)(b.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
@@ -277,7 +277,7 @@ function B(e) {
   }), {
     showPerGuildActivityStatusSetting: s
   } = (0, f.c)("activity privacy tab");
-  return s ? (0, r.jsx)(x.Z, {}) : (0, r.jsxs)(m.hjN, {
+  return s ? (0, r.jsx)(N.Z, {}) : (0, r.jsxs)(m.hjN, {
     className: t,
     tag: m.RB0.H1,
     title: n ? y.NW.string(y.t.Cq98yM) : null,

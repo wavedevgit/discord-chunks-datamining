@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => m,
   r: () => u
@@ -8,8 +8,8 @@ n(192379);
 var i = n(481060),
   s = n(518950),
   a = n(998502),
-  l = n(378392),
-  o = n(388032),
+  o = n(378392),
+  l = n(388032),
   c = n(760398);
 let d = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
   u = e => {
@@ -47,7 +47,7 @@ let d = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
         src: u,
         avatarDecoration: m,
         size: c,
-        "aria-label": o.NW.formatToPlainString(l.Z.kFj4h4, {
+        "aria-label": l.NW.formatToPlainString(o.Z.kFj4h4, {
           name: a.username
         })
       })

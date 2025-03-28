@@ -1,11 +1,12 @@
-/** Chunk was on 87791 **/
-n.d(t, {
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
   E: () => l,
   M: () => o
 });
-var r = n(818083),
-  i = n(987338);
-let o = (0, r.B)({
+var n = r(818083),
+  i = r(987338);
+let o = (0, n.B)({
     kind: "user",
     id: "2025-03_shop_hide_strikethrough_price",
     label: "Shop Hide Strikethrough Price Experiment",

@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 87ca904055c01e4d
+  Original File Name: 1e1f378bcda6ae4b
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -3744,7 +3744,11 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .root_c8dbe9 {
-    display: flex
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%
 }
 
 .root_c8dbe9 .sprite_c8dbe9 {
@@ -3775,13 +3779,14 @@ input[type=checked]:focus-visible+.label_df4aaf {
     width: 100%;
     height: 100%;
     filter: blur(100px);
-    background-color: var(--bg-animated-gradient-background-not-black)
+    background-color: var(--bg-animated-gradient-background-not-black);
+    contain: layout style size
 }
 
 .sphere__11664 {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translate3d(-50%,0,0)
 }
 
 .backgroundDark__11664 {
@@ -3801,7 +3806,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
     opacity: .66;
     border-radius: 50%;
     bottom: -600px;
-    transform: translateX(-50%) scaleX(.5) scaleY(.65)
+    transform: translate3d(-50%,0,0) scaleX(.5) scaleY(.65)
 }
 
 .foregroundRing__11664 {
@@ -3811,7 +3816,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
     opacity: .75;
     border-radius: 50%;
     bottom: -675px;
-    transform: translateX(-50%) scale(1)
+    transform: translate3d(-50%,0,0) scale(1)
 }
 
 .foregroundBase__11664 {
@@ -3821,23 +3826,31 @@ input[type=checked]:focus-visible+.label_df4aaf {
     opacity: .75;
     border-radius: 50%;
     bottom: -637.5px;
-    transform: translateX(-50%) scaleX(.64) scaleY(.56)
+    transform: translate3d(-50%,0,0) scaleX(.64) scaleY(.56)
 }
 
 .full-motion .backgroundDark__11664 {
-    animation: pulseBackgroundDark__11664 6s ease-in-out infinite
+    animation: pulseBackgroundDark__11664 6s ease-in-out infinite;
+    animation-play-state: paused
 }
 
 .full-motion .backgroundLight__11664 {
-    animation: pulseBackgroundLight__11664 6s ease-in-out infinite
+    animation: pulseBackgroundLight__11664 6s ease-in-out infinite;
+    animation-play-state: paused
 }
 
 .full-motion .foregroundRing__11664 {
-    animation: pulseForegroundRing__11664 4s ease-in-out infinite
+    animation: pulseForegroundRing__11664 4s ease-in-out infinite;
+    animation-play-state: paused
 }
 
 .full-motion .foregroundBase__11664 {
-    animation: pulseForeground__11664 4s ease-in-out infinite
+    animation: pulseForeground__11664 4s ease-in-out infinite;
+    animation-play-state: paused
+}
+
+.full-motion.app-focused.hardware-acceleration .backgroundDark__11664,.full-motion.app-focused.hardware-acceleration .backgroundLight__11664,.full-motion.app-focused.hardware-acceleration .foregroundBase__11664,.full-motion.app-focused.hardware-acceleration .foregroundRing__11664 {
+    animation-play-state: running
 }
 
 @keyframes pulseBackgroundDark__11664 {
@@ -3852,33 +3865,33 @@ input[type=checked]:focus-visible+.label_df4aaf {
 
 @keyframes pulseBackgroundLight__11664 {
     0%,to {
-        transform: translateX(-50%) scaleX(.65) scaleY(.75)
+        transform: translate3d(-50%,0,0) scaleX(.65) scaleY(.75)
     }
 
     50% {
-        transform: translateX(-50%) scaleX(.5) scaleY(.65)
+        transform: translate3d(-50%,0,0) scaleX(.5) scaleY(.65)
     }
 }
 
 @keyframes pulseForegroundRing__11664 {
     0%,to {
-        transform: translateX(-50%) scale(1);
+        transform: translate3d(-50%,0,0) scale(1);
         border-width: 15px
     }
 
     50% {
-        transform: translateX(-50%) scale(.834);
+        transform: translate3d(-50%,0,0) scale(.834);
         border-width: 25px
     }
 }
 
 @keyframes pulseForeground__11664 {
     0%,to {
-        transform: translateX(-50%) scaleX(.64) scaleY(.56)
+        transform: translate3d(-50%,0,0) scaleX(.64) scaleY(.56)
     }
 
     50% {
-        transform: translateX(-50%) scaleX(.81) scaleY(.81)
+        transform: translate3d(-50%,0,0) scaleX(.81) scaleY(.81)
     }
 }
 
@@ -15303,4 +15316,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=87ca904055c01e4d.css.map*/
+/*# sourceMappingURL=1e1f378bcda6ae4b.css.map*/

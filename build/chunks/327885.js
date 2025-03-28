@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => u
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   s = n(615287),
   a = n(32300),
-  l = n(371651),
-  o = n(3506),
+  o = n(371651),
+  l = n(3506),
   c = n(794704);
 
 function d(e) {
@@ -32,7 +32,7 @@ function d(e) {
 
 function u(e) {
   let t = (0, a.XE)("user_settings"),
-    n = (0, i.e7)([l.default], () => l.default.getForcedRenderMode()),
+    n = (0, i.e7)([o.default], () => o.default.getForcedRenderMode()),
     u = n === s.R5.OUT_OF_PROCESS_V2 || n === s.R5.OUT_OF_PROCESS_V3;
-  return t || u ? (0, r.jsx)(c.Z, d({}, e)) : (0, r.jsx)(o.Z, d({}, e))
+  return t || u ? (0, r.jsx)(c.Z, d({}, e)) : (0, r.jsx)(l.Z, d({}, e))
 }

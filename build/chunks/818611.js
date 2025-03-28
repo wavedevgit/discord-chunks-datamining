@@ -159,21 +159,19 @@ let A = 3,
     let {
       user: t,
       guild: n,
-      pendingAvatarDecoration: o,
-      selectedAvatarDecorationRef: a,
-      onSelect: l,
-      onOpenShop: c
-    } = e, d = (0, m.ZP)(), f = i.useCallback(() => {
-      c(void 0)
-    }, [c]), _ = (e, i, c, _) => {
+      pendingAvatarDecoration: i,
+      selectedAvatarDecorationRef: o,
+      onSelect: a,
+      onOpenShop: l
+    } = e, c = (0, m.ZP)(), d = (e, d, f, _) => {
       let {
         section: p,
         items: g
-      } = d[e];
-      return (0, s.EQ)(g[i]).with(m.Tm, () => (0, r.jsxs)(w, {
-        style: y({}, c),
-        isSelected: null === o,
-        onSelect: () => l(null),
+      } = c[e];
+      return (0, s.EQ)(g[d]).with(m.Tm, () => (0, r.jsxs)(w, {
+        style: y({}, f),
+        isSelected: null === i,
+        onSelect: () => a(null),
         children: [(0, r.jsx)(u.t6m, {
           size: "md",
           color: "currentColor",
@@ -184,8 +182,8 @@ let A = 3,
           children: (0, h.ad)(t, n) ? E.NW.string(E.t["GsW4/v"]) : E.NW.string(E.t.PoWNfX)
         })]
       }, _)).with(m.oT, () => (0, r.jsxs)(w, {
-        style: c,
-        onSelect: f,
+        style: f,
+        onSelect: l,
         children: [(0, r.jsx)(u.EOn, {
           size: "custom",
           width: 23,
@@ -198,21 +196,21 @@ let A = 3,
           children: E.NW.string(E.t.pWG4zc)
         })]
       }, _)).otherwise(e => {
-        let n = (null == o ? void 0 : o.id) === e.id;
+        let n = (null == i ? void 0 : i.id) === e.id;
         return (0, r.jsx)(D, {
-          style: y({}, c),
+          style: y({}, f),
           user: t,
           avatarDecoration: e,
           section: p,
-          innerRef: n ? a : void 0,
+          innerRef: n ? o : void 0,
           isSelected: n,
-          onSelect: () => l(e)
+          onSelect: () => a(e)
         }, _)
       })
-    }, p = (e, t) => {
+    }, f = (e, t) => {
       let {
         header: n
-      } = d[e];
+      } = c[e];
       return (0, r.jsx)("div", {
         className: b.headings,
         style: I(y({}, t), {
@@ -227,7 +225,7 @@ let A = 3,
       fade: !0,
       className: b.list,
       columns: A,
-      sections: d.map(e => {
+      sections: c.map(e => {
         let {
           items: t
         } = e;
@@ -238,10 +236,10 @@ let A = 3,
       paddingHorizontal: C,
       paddingVertical: 0,
       removeEdgeItemGutters: !0,
-      renderItem: _,
-      renderSection: p,
-      getSectionHeight: e => d[e].height,
-      getItemKey: (e, t) => d[e].items[t].id,
+      renderItem: d,
+      renderSection: f,
+      getSectionHeight: e => c[e].height,
+      getItemKey: (e, t) => c[e].items[t].id,
       getItemHeight: P
     })
   }

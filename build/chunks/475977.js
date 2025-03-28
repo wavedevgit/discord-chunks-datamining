@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => h
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(100527),
-  l = n(906732),
-  o = n(626135),
+  o = n(906732),
+  l = n(626135),
   c = n(335131),
   d = n(196033),
   u = n(981631),
@@ -17,21 +17,21 @@ var r = n(200651),
 let h = () => {
   let {
     analyticsLocations: e
-  } = (0, l.ZP)(a.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = i.useRef(null), {
+  } = (0, o.ZP)(a.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = i.useRef(null), {
     asset: n,
     popoutAsset: h,
     title: f,
-    body: x,
-    version: N,
-    revertTextColor: b
+    body: N,
+    version: b,
+    revertTextColor: x
   } = (0, d.W)();
   return i.useEffect(() => {
-    o.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
+    l.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
       type: m.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: e,
-      version: N
+      version: b
     })
-  }, [e, N]), (0, r.jsxs)("div", {
+  }, [e, b]), (0, r.jsxs)("div", {
     ref: t,
     className: p.container,
     style: {
@@ -50,13 +50,13 @@ let h = () => {
       className: p.mainColumn,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/extrabold",
-        color: b ? "redesign-button-overlay-text" : "currentColor",
+        color: x ? "redesign-button-overlay-text" : "currentColor",
         className: p.title,
         children: f
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        color: b ? "redesign-button-overlay-text" : "currentColor",
-        children: x
+        color: x ? "redesign-button-overlay-text" : "currentColor",
+        children: N
       })]
     }), (0, r.jsx)(s.zxk, {
       onClick: () => {

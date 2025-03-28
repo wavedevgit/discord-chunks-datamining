@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
   s = n(392711),
   a = n(442837),
-  l = n(481060),
-  o = n(230711),
+  o = n(481060),
+  l = n(230711),
   c = n(835473),
   d = n(372460),
   u = n(91896),
@@ -16,21 +16,21 @@ var r = n(200651),
   p = n(695346),
   h = n(546957),
   f = n(838436),
-  x = n(51331),
-  N = n(726985),
-  b = n(981631),
+  N = n(51331),
+  b = n(726985),
+  x = n(981631),
   _ = n(388032),
   E = n(167198);
 
 function j() {
   let e = (0, a.e7)([u.Z], () => u.Z.getGameFriendCount()),
     [t] = (0, a.e7)([u.Z], () => {
-      let e = u.Z.getGameRelationshipsByType(b.OGo.FRIEND);
+      let e = u.Z.getGameRelationshipsByType(x.OGo.FRIEND);
       return [(0, s.chain)(e).filter(e => {
         let {
           type: t
         } = e;
-        return t === b.OGo.FRIEND
+        return t === x.OGo.FRIEND
       }).map(e => {
         let {
           applicationId: t
@@ -76,8 +76,8 @@ function j() {
       }
       return e
     }, [p]),
-    x = i.useCallback(() => {
-      o.Z.open(b.oAB.AUTHORIZED_APPS)
+    N = i.useCallback(() => {
+      l.Z.open(x.oAB.AUTHORIZED_APPS)
     }, []);
   return (0, r.jsxs)("div", {
     className: E.header,
@@ -85,13 +85,13 @@ function j() {
       className: E.gameRelationships,
       children: [(0, r.jsxs)("div", {
         className: E.gameRelationshipsDetails,
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           children: _.NW.format(_.t.iPZSeX, {
             count: e
           })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           children: h
@@ -102,28 +102,28 @@ function j() {
       })]
     }), (0, r.jsx)("div", {
       className: E.divider
-    }), (0, r.jsxs)(l.P3F, {
-      onClick: x,
+    }), (0, r.jsxs)(o.P3F, {
+      onClick: N,
       className: E.manageGamesLink,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "interactive-normal",
         children: _.NW.format(_.t.oYaYOT, {})
-      }), (0, r.jsx)(l.Fbu, {
+      }), (0, r.jsx)(o.Fbu, {
         size: "xxs",
-        color: l.TVs.colors.INTERACTIVE_NORMAL,
+        color: o.TVs.colors.INTERACTIVE_NORMAL,
         className: E.manageGamesChevron
       })]
     })]
   })
 }
 
-function C() {
+function O() {
   let e = p._j.useSetting();
   return (0, r.jsxs)(h.Z, {
     children: [(0, r.jsx)(j, {}), (0, r.jsx)(f.U, {
-      setting: N.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-      children: (0, r.jsx)(x.Z, {
+      setting: b.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
+      children: (0, r.jsx)(N.Z, {
         title: _.NW.string(_.t["/U8Iwc"]),
         note: _.NW.string(_.t.WO2Hlp),
         value: e,

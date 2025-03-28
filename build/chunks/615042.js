@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   u: () => c
 });
@@ -6,8 +6,8 @@ var r = n(192379),
   i = n(442837),
   s = n(78839),
   a = n(960048),
-  l = n(715037),
-  o = n(29920);
+  o = n(715037),
+  l = n(29920);
 let c = () => {
   let {
     premiumSubscription: e,
@@ -19,13 +19,13 @@ let c = () => {
     isFetchingRewardEligibility: s.ZP.getIsFetchingSubscriptionRewardEligibility()
   })), {
     enabled: c
-  } = l.Z.useExperiment({
+  } = o.Z.useExperiment({
     location: "useMaybeFetchSubscriptionRewardEligibility"
   });
   r.useEffect(() => {
     let r = async e => {
       try {
-        await (0, o.b2)(e)
+        await (0, l.b2)(e)
       } catch (e) {
         a.Z.captureException(e)
       }

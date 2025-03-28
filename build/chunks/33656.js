@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(921801),
   d = n(663389),
   u = n(960412),
@@ -16,16 +16,16 @@ var r = n(200651),
   p = n(726985),
   h = n(388032),
   f = n(45341),
-  x = n(802138);
+  N = n(802138);
 
-function N(e) {
+function b(e) {
   let {
     label: t,
     onChange: n,
     enabled: i,
     subLabel: s
   } = e;
-  return (0, r.jsx)(o.j7V, {
+  return (0, r.jsx)(l.j7V, {
     value: !!i,
     onChange: n,
     note: s,
@@ -33,13 +33,13 @@ function N(e) {
   })
 }
 
-function b() {
-  let e = (0, l.e7)([d.Z], () => d.Z.getSubsection()),
+function x() {
+  let e = (0, o.e7)([d.Z], () => d.Z.getSubsection()),
     t = i.createRef(),
     {
       categories: n,
       initialized: s
-    } = (0, l.cj)([m.Z], () => m.Z.getEmailSettings());
+    } = (0, o.cj)([m.Z], () => m.Z.getEmailSettings());
   i.useEffect(() => {
     if (null == s)(0, u.Y7)();
     else if (e === g.vG.toUpperCase()) {
@@ -47,7 +47,7 @@ function b() {
       null == t || null === (n = t.current) || void 0 === n || n.scrollIntoView(!0)
     }
   }, [s, t, e]);
-  let b = g.M0.reduce((e, t) => e || !!n[t], !1),
+  let x = g.M0.reduce((e, t) => e || !!n[t], !1),
     _ = {
       [g.$Z.COMMUNICATION]: p.s6.NOTIFICATIONS_EMAILS_COMMUNICATION,
       [g.$Z.SOCIAL]: p.s6.NOTIFICATIONS_EMAILS_SOCIAL,
@@ -59,16 +59,16 @@ function b() {
     setting: p.s6.NOTIFICATIONS_EMAILS,
     children: [(0, r.jsx)("div", {
       ref: t
-    }), (0, r.jsxs)(o.hjN, {
-      className: x.marginTop40,
-      tag: o.RB0.H1,
+    }), (0, r.jsxs)(l.hjN, {
+      className: N.marginTop40,
+      tag: l.RB0.H1,
       title: h.NW.string(h.t.TPchzM),
       children: [g.Od.map(e => {
         let {
           category: t,
           label: i,
           subLabel: s
-        } = e, a = _[t], l = (0, r.jsx)(N, {
+        } = e, a = _[t], o = (0, r.jsx)(b, {
           label: i(),
           subLabel: s(),
           enabled: n[t],
@@ -78,22 +78,22 @@ function b() {
         }, i());
         return null != a ? (0, r.jsx)(c.F, {
           setting: a,
-          children: l
-        }, i()) : l
+          children: o
+        }, i()) : o
       }), (0, r.jsxs)(c.F, {
         setting: p.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
-        children: [(0, r.jsx)(o.zxk, {
+        children: [(0, r.jsx)(l.zxk, {
           className: f.marketingUnsubscribeButton,
-          disabled: !b,
-          look: o.iLD.LINK,
-          color: o.Ttl.LINK,
+          disabled: !x,
+          look: l.iLD.LINK,
+          color: l.Ttl.LINK,
           onClick: u.oc,
           children: h.NW.string(h.t.Ra9Pws)
-        }), (0, r.jsx)(o.R94, {
-          type: o.geA.DESCRIPTION,
+        }), (0, r.jsx)(l.R94, {
+          type: l.geA.DESCRIPTION,
           children: h.NW.string(h.t.iYjQ8f)
-        }), (0, r.jsx)(o.$i$, {
-          className: a()(x.marginTop40, x.marginBottom40)
+        }), (0, r.jsx)(l.$i$, {
+          className: a()(N.marginTop40, N.marginBottom40)
         })]
       })]
     })]

@@ -1,10 +1,10 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   NR: () => s,
-  Ob: () => o,
+  Ob: () => l,
   ZI: () => a,
   m1: () => c,
-  uc: () => l
+  uc: () => o
 });
 var r = n(987170),
   i = n(987338);
@@ -40,7 +40,7 @@ let s = (0, r.Z)({
       }
     }]
   }),
-  l = (0, r.Z)({
+  o = (0, r.Z)({
     kind: "user",
     id: "2024-07_ctp_open_nitro_multiple_buckets",
     label: "CTP open nitro - A/A test - Multiple buckets",
@@ -62,7 +62,7 @@ let s = (0, r.Z)({
       }
     }]
   }),
-  o = (0, r.Z)({
+  l = (0, r.Z)({
     kind: "user",
     id: "2024-07_ctp_open_nitro_everyone",
     label: "CTP open nitro - A/A test - Everyone",

@@ -1,6 +1,6 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
 var r, i = n(442837),
   o = n(570140);
@@ -13,45 +13,45 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = 12 * n(70956).Z.Millis.HOUR,
-  s = {
+let s = 12 * n(70956).Z.Millis.HOUR,
+  a = {
     profileThemesRelevanceExceeded: null,
     savedAt: null
   },
   c = {
     hasFetchedRelevance: !1
   },
-  u = s,
-  d = c;
-class p extends(r = i.ZP.PersistedStore) {
+  d = a,
+  u = c;
+class _ extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    d = c, u = s;
+    u = c, d = a;
     let t = new Date;
-    null != e && null != e.savedAt && t.getTime() - e.savedAt < a && (u = e)
+    null != e && null != e.savedAt && t.getTime() - e.savedAt < s && (d = e)
   }
   get hasFetchedRelevance() {
-    return d.hasFetchedRelevance
+    return u.hasFetchedRelevance
   }
   get profileThemesRelevanceExceeded() {
-    return u.profileThemesRelevanceExceeded
+    return d.profileThemesRelevanceExceeded
   }
   getState() {
-    return u
+    return d
   }
 }
-l(p, "displayName", "PerksRelevanceStore"), l(p, "persistKey", "PerksRelevanceStore");
-let f = new p(o.Z, {
+l(_, "displayName", "PerksRelevanceStore"), l(_, "persistKey", "PerksRelevanceStore");
+let p = new _(o.Z, {
   BILLING_PERKS_RELEVANCE_FETCH_START: function() {
-    d.hasFetchedRelevance = !0
+    u.hasFetchedRelevance = !0
   },
   BILLING_PERKS_RELEVANCE_FETCH_SUCCESS: function(e) {
     let {
       res: t
     } = e;
-    null != t && (u.profileThemesRelevanceExceeded = t.eligible, u.savedAt = new Date().getTime())
+    null != t && (d.profileThemesRelevanceExceeded = t.eligible, d.savedAt = new Date().getTime())
   },
   BILLING_PERKS_RELEVANCE_FETCH_FAIL: function() {},
   LOGOUT: function() {
-    d = c, u = s
+    u = c, d = a
   }
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => ef
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(622535),
+  o = n(442837),
+  l = n(622535),
   c = n(780384),
   d = n(481060),
   u = n(634894),
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(100527),
   h = n(906732),
   f = n(70097),
-  x = n(464824),
-  N = n(214852),
-  b = n(594174),
+  N = n(464824),
+  b = n(214852),
+  x = n(594174),
   _ = n(78839),
   E = n(626135),
   j = n(526167),
-  C = n(74538),
-  O = n(140465),
+  O = n(74538),
+  C = n(140465),
   S = n(278605),
   v = n(286961),
   T = n(351367),
@@ -60,8 +60,8 @@ var r = n(200651),
   ei = n(388032),
   es = n(658249),
   ea = n(499317),
-  el = n(865215),
-  eo = n(735035),
+  eo = n(865215),
+  el = n(735035),
   ec = n(786362),
   ed = n(181960),
   eu = n(313199),
@@ -90,33 +90,33 @@ let eg = e => {
       inOfferExperience: n,
       setIsAllPerksVisible: i,
       hasRenderedOnce: s,
-      isMarketingPageV2Enabled: l,
-      isReducedMotion: o
+      isMarketingPageV2Enabled: o,
+      isReducedMotion: l
     } = e;
     return t ? (0, r.jsxs)("div", {
       className: a()(es.whatsNewSectionBackground, {
-        [es.whatsNewSectionBackgroundV2]: l
+        [es.whatsNewSectionBackgroundV2]: o
       }),
-      children: [!l && (0, r.jsx)(F.Z, {
+      children: [!o && (0, r.jsx)(F.Z, {
         variant: Q.R0.WHATS_NEW,
         isFullScreen: t
-      }), l && (0, r.jsx)(W.Z, {
+      }), o && (0, r.jsx)(W.Z, {
         shouldLoadVideo: s,
-        isReducedMotion: o
-      }), l && (0, r.jsx)(W.Z, {
+        isReducedMotion: l
+      }), o && (0, r.jsx)(W.Z, {
         isBestOfNitro: !0,
         shouldLoadVideo: s,
-        isReducedMotion: o
-      }), !l && (0, r.jsx)(F.Z, {
+        isReducedMotion: l
+      }), !o && (0, r.jsx)(F.Z, {
         isFullScreen: t,
         showAllPerksButton: t ? (0, r.jsx)(ee.Z, {
           setIsAllPerksVisible: i,
           previousComponent: Q.MQ.MARKETING
         }) : void 0
-      }), n && !l && (0, r.jsx)(H.ZP, {
+      }), n && !o && (0, r.jsx)(H.ZP, {
         className: es.pdSparklesTop,
         variant: H.u0.TOP
-      }), n && !l && (0, r.jsx)(H.ZP, {
+      }), n && !o && (0, r.jsx)(H.ZP, {
         className: es.pdSparklesBottom,
         variant: H.u0.BOTTOM
       })]
@@ -128,37 +128,37 @@ let eg = e => {
       isFullscreen: W,
       entrypoint: U
     } = e;
-    (0, N.z)(x.X);
+    (0, b.z)(N.X);
     let G = U === et.EZ.ApplicationStoreHome,
       F = i.useRef(null),
       H = i.useRef(null),
       ee = i.useRef(null),
       ef = i.useRef(null),
-      ex = i.useRef(null),
       eN = i.useRef(null),
       eb = i.useRef(null),
-      e_ = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
+      ex = i.useRef(null),
+      e_ = (0, o.e7)([g.Z], () => g.Z.useReducedMotion),
       eE = (0, m.ZP)(),
       ej = (0, c.wj)(eE),
-      eC = b.default.getCurrentUser(),
-      eO = (0, C.I5)(eC),
-      eS = (0, S.xP)("PremiumMarketingHome") && !eO && G,
+      eO = x.default.getCurrentUser(),
+      eC = (0, O.I5)(eO),
+      eS = (0, S.xP)("PremiumMarketingHome") && !eC && G,
       [ev, eT] = i.useState(!1),
       [eI, ey] = i.useState(!1),
       [eA, eP] = i.useState(!1),
       [eR, eD] = i.useState(!1),
       eZ = (0, j.rO)(),
       [ew, ek] = i.useState(!1),
-      eW = (0, l.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
-      eL = null != eW ? (0, C.Af)(eW) : null,
-      eB = null != eL ? C.ZP.getSkuIdForPlan(eL.planId) : null,
+      eW = (0, o.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
+      eL = null != eW ? (0, O.Af)(eW) : null,
+      eB = null != eL ? O.ZP.getSkuIdForPlan(eL.planId) : null,
       eM = null !== eB && eB !== et.Si.TIER_2 ? et.Si.TIER_2 : null,
       eU = (0, I.n)(),
       eV = null != eU,
       [eG, eF] = i.useState(!1),
       eH = (0, y.N)(),
       ez = null == eH ? void 0 : null === (t = eH.subscription_trial) || void 0 === t ? void 0 : t.sku_id,
-      eY = (0, O.Nx)(),
+      eY = (0, C.Nx)(),
       eK = (0, Z.Vi)(),
       eq = (0, T.m)({
         location: "PremiumMarketingHome"
@@ -183,7 +183,7 @@ let eg = e => {
           [es.premiumTierCardsContainerSettings]: !W,
           [es.premiumTierCardsContainerFullscreen]: W
         }),
-        children: (0, r.jsx)(o.$, {
+        children: (0, r.jsx)(l.$, {
           innerRef: ee,
           onChange: e => eP(e),
           threshold: .1,
@@ -258,8 +258,8 @@ let eg = e => {
           className: a()({
             [es.heroHeadingV2Container]: eS
           }),
-          children: [(0, r.jsx)(o.$, {
-            innerRef: eS ? ef : ex,
+          children: [(0, r.jsx)(l.$, {
+            innerRef: eS ? ef : eN,
             onChange: e => eT(e),
             threshold: 0,
             active: !0,
@@ -270,7 +270,7 @@ let eg = e => {
               entrypoint: U,
               isDarkMode: ej
             }) : (0, r.jsx)(V.ZP, {
-              ref: ex,
+              ref: eN,
               subscriptionTier: eM,
               isFullscreen: W || eY,
               isMarketingPageV2Enabled: eS,
@@ -332,7 +332,7 @@ let eg = e => {
             hideCTAs: !0
           }), W && !eS ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("img", {
-              src: eo,
+              src: el,
               className: es.tableLeftSideDecoration,
               width: 197,
               height: 486,
@@ -352,30 +352,30 @@ let eg = e => {
           isFullscreen: W,
           subscriptionTier: eM,
           isMarketingPageV2: eS
-        }), (0, r.jsx)(o.$, {
-          innerRef: eN,
+        }), (0, r.jsx)(l.$, {
+          innerRef: eb,
           onChange: e => {
             e && !eR && (E.default.track(en.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: eQ
             }), eD(!0))
           },
           children: (0, r.jsx)("div", {
-            ref: eN,
+            ref: eb,
             className: es.bottomOfPageVisibilitySensor
           })
         }), !eS && (0, r.jsx)("img", {
-          src: el,
+          src: eo,
           className: es.bottomIllustration,
           width: 112,
           height: 85,
           alt: ei.NW.string(ei.t.X4IxWF)
-        }), eS && (0, r.jsx)(o.$, {
-          innerRef: eb,
+        }), eS && (0, r.jsx)(l.$, {
+          innerRef: ex,
           onChange: e => {
             ey(e)
           },
           children: (0, r.jsx)(q.Z, {
-            ref: eb,
+            ref: ex,
             isFooterVisible: eI,
             isDarkMode: ej,
             isReducedMotion: e_

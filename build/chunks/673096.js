@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -13,25 +13,25 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let l = [];
+let o = [];
 
-function o() {
-  l = []
+function l() {
+  o = []
 }
 class c extends(r = i.ZP.Store) {
   getSessions() {
-    return l
+    return o
   }
 }
 a(c, "displayName", "AuthSessionsStore");
 let d = new c(s.Z, {
-  LOGOUT: o,
-  LOGIN_SUCCESS: o,
+  LOGOUT: l,
+  LOGIN_SUCCESS: l,
   FETCH_AUTH_SESSIONS_SUCCESS: function(e) {
     let {
       sessions: t
     } = e;
-    l = t.map(e => {
+    o = t.map(e => {
       var t, n;
       return t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -61,12 +61,12 @@ let d = new c(s.Z, {
   LOGOUT_AUTH_SESSIONS_SUCCESS: function(e) {
     let {
       sessionIdHashes: t
-    } = e, n = [...l], r = !1;
+    } = e, n = [...o], r = !1;
     for (let e of t) {
       let t = n.findIndex(t => t.id_hash === e);
       t >= 0 && (n.splice(t, 1), r = !0)
     }
     if (!r) return !1;
-    l = n
+    o = n
   }
 })

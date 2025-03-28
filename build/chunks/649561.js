@@ -1,5 +1,4 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
   Z: () => T
 }), n(47120), n(177593);
@@ -7,8 +6,8 @@ var i = n(200651),
   r = n(192379),
   o = n(120356),
   l = n.n(o),
-  s = n(392711),
-  a = n.n(s),
+  a = n(392711),
+  s = n.n(a),
   c = n(818405),
   d = n(587158),
   u = n(286379),
@@ -142,7 +141,7 @@ class w extends r.PureComponent {
     })
   }
 }
-let L = a().throttle(() => {
+let L = s().throttle(() => {
   v.Z.increment({
     name: u.V.APP_CRASHED,
     tags: ["reason:".concat(c.v.UNHANDLED_JS_ERROR), "level:".concat(d.c.FATAL)]

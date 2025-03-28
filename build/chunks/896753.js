@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   sensitivity: "sensitivity_ac7648",
   sliderBar: "sliderBar_ac7648",

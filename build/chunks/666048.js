@@ -1,4 +1,5 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 71459 **/
+"use strict";
 e.exports = {
   priceLine: "priceLine__132c6",
   nitroIcon: "nitroIcon__132c6",

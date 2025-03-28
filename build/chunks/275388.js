@@ -1,18 +1,18 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
   q: () => c,
-  r: () => s
+  r: () => a
 });
 var r = n(200651),
   i = n(772848),
   o = n(481060),
   l = n(82856);
-let a = "orb-checkout-payment-modal-key",
-  s = () => (0, o.VXO)(a),
+let s = "orb-checkout-payment-modal-key",
+  a = () => (0, o.VXO)(s),
   c = e => {
     var {
       onCloseCallback: t
-    } = e, s = function(e, t) {
+    } = e, a = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -51,7 +51,7 @@ let a = "orb-checkout-payment-modal-key",
             })
           }
           return e
-        }({}, s, t), i = i = {
+        }({}, a, t), i = i = {
           loadId: c
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -67,8 +67,8 @@ let a = "orb-checkout-payment-modal-key",
     }, {
       onCloseCallback: t,
       onCloseRequest() {
-        (0, l.vp)(), (0, o.Mr3)(a)
+        (0, l.vp)(), (0, o.Mr3)(s)
       },
-      modalKey: a
+      modalKey: s
     })
   }

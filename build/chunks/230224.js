@@ -2,11 +2,11 @@
 n.d(t, {
   GB: () => y,
   JI: () => O,
-  UM: () => A,
+  UM: () => P,
   V6: () => T,
   WT: () => E,
   X7: () => I,
-  jq: () => P,
+  jq: () => A,
   mx: () => x
 }), n(411104);
 var r = n(200651),
@@ -21,9 +21,9 @@ var r = n(200651),
   p = n(768581),
   h = n(51144),
   g = n(245335),
-  _ = n(981631),
-  m = n(888592),
-  f = n(388032),
+  m = n(981631),
+  f = n(888592),
+  _ = n(388032),
   b = n(165160);
 let x = 100,
   N = e => {
@@ -37,22 +37,22 @@ let x = 100,
   v = e => e.target_type === g.Iq.STREAM && null != e.target_user,
   E = e => {
     var t;
-    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === _.d4z.GROUP_DM
+    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === m.d4z.GROUP_DM
   },
   I = e => null == e.channel && null == e.guild && null != e.inviter,
-  S = e => {
+  j = e => {
     var t;
     let n = N(e);
     return (null !== (t = null == n ? void 0 : n.memberCount) && void 0 !== t ? t : 0) > x
   },
-  j = e => e.state === _.r2o.ACCEPTED,
+  S = e => e.state === m.r2o.ACCEPTED,
   O = e => {
     let {
       guild_scheduled_event: t
     } = e;
     return null != t
   },
-  C = e => !O(e) && (!!I(e) || null != e.inviter && !j(e) && !S(e)),
+  C = e => !O(e) && (!!I(e) || null != e.inviter && !S(e) && !j(e)),
   y = e => {
     let {
       guild: t,
@@ -82,7 +82,7 @@ function T(e) {
     textClassName: i,
     className: o
   } = e, l = N(n);
-  return null == l || C(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === m.fQ ? null : (0, r.jsx)(s.EJ, {
+  return null == l || C(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === f.fQ ? null : (0, r.jsx)(s.EJ, {
     className: a()(b.activityCount, o),
     online: l.onlineCount,
     total: l.memberCount,
@@ -91,19 +91,19 @@ function T(e) {
   })
 }
 
-function P(e) {
+function A(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, o = i.useMemo(() => n ? null : v(t) && null != t.target_user ? p.ZP.getUserAvatarURL(t.target_user) : C(t) && null != t.inviter ? p.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = f.NW.string(f.t["3rE1Pz"]);
+  } = e, o = i.useMemo(() => n ? null : v(t) && null != t.target_user ? p.ZP.getUserAvatarURL(t.target_user) : C(t) && null != t.inviter ? p.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = _.NW.string(_.t["3rE1Pz"]);
   if (E(t)) {
     var c, u;
-    a = (null === (c = t.channel) || void 0 === c ? void 0 : c.name) != null && (null === (u = t.inviter) || void 0 === u ? void 0 : u.username) != null ? f.NW.format(f.t.Lu4h19, {
+    a = (null === (c = t.channel) || void 0 === c ? void 0 : c.name) != null && (null === (u = t.inviter) || void 0 === u ? void 0 : u.username) != null ? _.NW.format(_.t.Lu4h19, {
       username: t.inviter.username
-    }) : f.NW.string(f.t.OsdY8P)
-  } else v(t) && null != t.target_user ? a = f.NW.formatToPlainString(f.t.x2L32d, {
+    }) : _.NW.string(_.t.OsdY8P)
+  } else v(t) && null != t.target_user ? a = _.NW.formatToPlainString(_.t.x2L32d, {
     username: t.target_user.username
-  }) : j(t) ? a = f.NW.string(f.t["FDsl+P"]) : C(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
+  }) : S(t) ? a = _.NW.string(_.t["FDsl+P"]) : C(t) && null != t.inviter && (a = _.NW.format(_.t.spU2mJ, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ function P(e) {
   })
 }
 
-function A(e) {
+function P(e) {
   let t, n, i, {
     user: o,
     guild: a,
@@ -136,7 +136,7 @@ function A(e) {
     className: b.inviteJoinContainer,
     children: [(0, r.jsx)(s.DK, {
       className: b.appIn,
-      children: f.NW.string(f.t["3gg9fH"])
+      children: _.NW.string(_.t["3gg9fH"])
     }), (0, r.jsxs)("div", {
       className: b.guildContainer,
       children: [(0, r.jsx)(s.Vj, {
@@ -160,11 +160,11 @@ function A(e) {
     }))) : n = e
   } else if (null != o) {
     let e = h.ZP.getFormattedName(o);
-    n = f.NW.formatToPlainString(f.t["4aF92d"], {
+    n = _.NW.formatToPlainString(_.t["4aF92d"], {
       username: e
     }), i = (0, r.jsx)(s.DK, {
       className: b.directInviteSubTitle,
-      children: f.NW.format(f.t.Quj7HR, {
+      children: _.NW.format(_.t.Quj7HR, {
         username: e
       })
     })

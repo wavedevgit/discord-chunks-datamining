@@ -66,7 +66,7 @@ let C = (0, g.Un)({
     name: "ChannelSettings"
   }),
   T = (0, g.Un)({
-    createPromise: () => n.e("45620").then(n.bind(n, 838819)),
+    createPromise: () => Promise.all([n.e("68440"), n.e("45620")]).then(n.bind(n, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
   }),

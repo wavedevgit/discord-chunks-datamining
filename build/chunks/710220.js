@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => d
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   s = n(518950),
   a = n(182294),
-  l = n(388032),
-  o = n(612520),
+  o = n(388032),
+  l = n(612520),
   c = n(144343);
 
 function d(e) {
@@ -24,11 +24,11 @@ function d(e) {
     animateOnHover: !0
   });
   return (0, r.jsx)("div", {
-    className: o.attributionBannerContainer,
+    className: l.attributionBannerContainer,
     children: (0, r.jsxs)("div", {
-      className: n ? o.attributionBannerContentV2 : o.attributionBannerContent,
+      className: n ? l.attributionBannerContentV2 : l.attributionBannerContent,
       children: [(0, r.jsx)("div", {
-        className: n ? o.iconContainerV2 : o.iconContainer,
+        className: n ? l.iconContainerV2 : l.iconContainer,
         children: (0, r.jsx)(i.qEK, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -47,27 +47,27 @@ function d(e) {
           }
           return e
         }({
-          className: o.icon,
+          className: l.icon,
           src: u,
           "aria-label": t.username,
           size: a.EF.SIZE_32
         }, m))
       }), n ? (0, r.jsx)(i.X6q, {
         variant: "heading-lg/medium",
-        className: o.textContainer,
-        children: l.NW.format(l.t.IqxblZ, {
+        className: l.textContainer,
+        children: o.NW.format(o.t.IqxblZ, {
           username: d(t)
         })
       }) : (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
-        className: o.textContainer,
-        children: l.NW.format(l.t.IqxblZ, {
+        className: l.textContainer,
+        children: o.NW.format(o.t.IqxblZ, {
           username: d(t)
         })
       }), !n && (0, r.jsx)("img", {
         src: c,
         alt: "",
-        className: o.attributionIcon
+        className: l.attributionIcon
       })]
     })
   })

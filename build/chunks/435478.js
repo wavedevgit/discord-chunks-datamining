@@ -1,15 +1,15 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Mv: () => h,
   PB: () => f,
-  eq: () => x
+  eq: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(25441),
   a = n(91192),
-  l = n(657707),
-  o = n(481060),
+  o = n(657707),
+  l = n(481060),
   c = n(209613),
   d = n(475413),
   u = n(652480);
@@ -69,26 +69,27 @@ function h(e) {
     sublabel: c,
     icon: h,
     hint: f,
-    renderSubmenu: x
-  } = e, N = p(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
-  let b = (0, a.JA)(t),
+    renderSubmenu: N
+  } = e, b = p(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
+  let x = (0, a.JA)(t),
     {
       onFocus: _
-    } = b,
-    E = p(b, ["onFocus"]),
+    } = x,
+    E = p(x, ["onFocus"]),
     {
       id: j
     } = (0, a.f$)(),
-    [C, O] = i.useState(!1),
-    S = null != x;
+    [O, C] = i.useState(!1),
+    S = null != N;
   i.useLayoutEffect(() => {
     if (S) return (0, s.N)(j, e => {
-      O(e === t)
+      C(e === t)
     })
   }, [t, j, S]);
-  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, E, N), {
+  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, E, b), {
     role: "button",
-    look: o.zxk.Looks.BLANK,
+    look: l.zxk.Looks.BLANK,
+    size: l.zxk.Sizes.NONE,
     innerClassName: u.menuItemInner,
     color: u.menuItemColor,
     themeColor: "none",
@@ -108,16 +109,16 @@ function h(e) {
       children: [(0, r.jsxs)("div", {
         children: [n, c]
       }), f]
-    }), S && (0, r.jsx)(l.Fbu, {
+    }), S && (0, r.jsx)(o.Fbu, {
       size: "xs",
       color: "currentColor"
     })]
   }));
-  return S ? (0, r.jsx)(o.yRy, {
+  return S ? (0, r.jsx)(l.yRy, {
     spacing: 0,
-    renderPopout: x,
-    shouldShow: C,
-    onRequestClose: () => O(!0),
+    renderPopout: N,
+    shouldShow: O,
+    onRequestClose: () => C(!0),
     children: v
   }) : v()
 }
@@ -144,10 +145,10 @@ function f(e) {
   })
 }
 
-function x(e) {
+function N(e) {
   return (0, r.jsx)("div", {
     className: u.submenuPaddingContainer,
-    children: (0, r.jsx)(o.v2r, m({
+    children: (0, r.jsx)(l.v2r, m({
       variant: "fixed",
       hideScroller: !0,
       onSelect: void 0

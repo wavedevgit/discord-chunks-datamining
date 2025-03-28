@@ -2,17 +2,19 @@
 "use strict";
 n.d(t, {
   $U: () => p,
-  Jw: () => E,
-  Kg: () => h,
-  PO: () => v,
-  Wx: () => O,
-  ZT: () => I,
-  bd: () => m,
-  f$: () => T,
+  Jw: () => b,
+  Kg: () => m,
+  PO: () => y,
+  Wh: () => I,
+  Wx: () => T,
+  ZT: () => A,
+  _A: () => h,
+  bd: () => g,
+  f$: () => C,
   gc: () => _,
-  gd: () => S,
-  s6: () => y,
-  xQ: () => g
+  gd: () => N,
+  s6: () => S,
+  xQ: () => E
 }), n(653041);
 var r = n(192379),
   i = n(442837),
@@ -63,14 +65,28 @@ function p(e, t) {
   }
 }
 
-function h(e, t) {
+function h() {
+  let {
+    pendingUserNameplate: e,
+    userErrors: t
+  } = (0, i.cj)([f.Z], () => ({
+    pendingUserNameplate: f.Z.getPendingNameplate(),
+    userErrors: f.Z.getErrors().nameplate
+  }));
+  return {
+    pendingNameplate: e,
+    pendingErrors: t
+  }
+}
+
+function m(e, t) {
   return (0, i.e7)([u.Z], () => {
     var n, r;
     return null == t ? null === (n = u.Z.getUserProfile(e.id)) || void 0 === n ? void 0 : n.profileEffectId : null === (r = u.Z.getGuildMemberProfile(e.id, t.id)) || void 0 === r ? void 0 : r.profileEffectId
   }, [e, t])
 }
 
-function m(e) {
+function g(e) {
   return (0, i.cj)([f.Z, l.Z], () => null == e ? {
     pendingProfileEffectId: f.Z.getPendingProfileEffectId(),
     errors: f.Z.getErrors().profileEffect
@@ -80,23 +96,31 @@ function m(e) {
   }, [e])
 }
 
-function g(e, t) {
+function E(e, t) {
   (0, c.Cf)(e === t ? void 0 : e)
 }
 
-function E(e, t) {
+function b(e, t) {
   (0, o.I5)((null == e ? void 0 : e.imageUri) === t ? void 0 : e)
 }
 
-function b(e) {
+function v(e) {
   return e ? s.cV : o.cV
 }
 
-function v(e, t) {
-  b(null != e)(t)
+function y(e, t) {
+  v(null != e)(t)
 }
 
-function y(e, t, n) {
+function O() {
+  return o.KP
+}
+
+function I(e) {
+  O()(e)
+}
+
+function S(e, t, n) {
   if (e === t) {
     null == n ? (0, o.xn)(void 0) : (0, s.xn)(void 0);
     return
@@ -104,7 +128,7 @@ function y(e, t, n) {
   null == n ? (0, o.xn)(e) : (0, s.xn)(e)
 }
 
-function O(e, t, n) {
+function T(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
   return null != e ? "" === e ? {
     value: r ? n : null,
@@ -121,7 +145,7 @@ function O(e, t, n) {
   }
 }
 
-function I(e) {
+function A(e) {
   var t, n;
   let {
     pendingProfileEffectId: r,
@@ -130,10 +154,10 @@ function I(e) {
   return s && null != a ? o : s ? null : null != r ? r : null == i ? void 0 : i.profileEffectId
 }
 
-function S(e, t) {
+function N(e, t) {
   return void 0 === e ? null != t : null != e
 }
 
-function T(e, t) {
+function C(e, t) {
   return void 0 === e ? null != t : null != e
 }

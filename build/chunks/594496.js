@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => R
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(442837),
-  l = n(481060),
-  o = n(295474),
+  o = n(481060),
+  l = n(295474),
   c = n(150039),
   d = n(126631),
   u = n(433411),
@@ -17,14 +17,14 @@ var i = n(512722),
   p = n(513901),
   h = n(451392),
   f = n(906364),
-  x = n(643879),
-  N = n(621853),
-  b = n(271383),
+  N = n(643879),
+  b = n(621853),
+  x = n(271383),
   _ = n(594174),
   E = n(74538),
   j = n(51144),
-  C = n(18438),
-  O = n(778825),
+  O = n(18438),
+  C = n(778825),
   S = n(52597),
   v = n(430131),
   T = n(133484),
@@ -79,7 +79,7 @@ function R(e) {
     pendingThemeColors: M,
     errors: U,
     guild: V
-  } = (0, a.cj)([O.Z], () => {
+  } = (0, a.cj)([C.Z], () => {
     let {
       pendingAvatar: e,
       pendingNickname: t,
@@ -87,7 +87,7 @@ function R(e) {
       pendingPronouns: r,
       pendingBanner: i,
       pendingThemeColors: s
-    } = O.Z.getAllPending();
+    } = C.Z.getAllPending();
     return {
       pendingAvatar: e,
       pendingNickname: t,
@@ -95,17 +95,17 @@ function R(e) {
       pendingBio: n,
       pendingPronouns: r,
       pendingThemeColors: s,
-      errors: O.Z.getErrors(),
-      guild: O.Z.getGuild()
+      errors: C.Z.getErrors(),
+      guild: C.Z.getGuild()
     }
-  }), G = (0, x.SD)({
+  }), G = (0, N.SD)({
     userId: Z.id,
     image: w
   }), F = null != D ? D : V;
   s()(null != F, "guild should not be null");
-  let H = (0, o.gS)(F.id),
-    z = (0, a.e7)([b.ZP], () => null == F.id ? null : b.ZP.getMember(F.id, Z.id)),
-    Y = (0, a.e7)([N.Z], () => N.Z.getGuildMemberProfile(Z.id, F.id)),
+  let H = (0, l.gS)(F.id),
+    z = (0, a.e7)([x.ZP], () => null == F.id ? null : x.ZP.getMember(F.id, Z.id)),
+    Y = (0, a.e7)([b.Z], () => b.Z.getGuildMemberProfile(Z.id, F.id)),
     K = E.ZP.canUsePremiumProfileCustomization(Z),
     q = (0, c.gd)(w, null == z ? void 0 : z.avatar),
     X = (0, c.f$)(W, null == Y ? void 0 : Y.banner),
@@ -136,9 +136,9 @@ function R(e) {
       showOverlay: !K,
       children: [(0, r.jsx)(m.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t.lqaIxM), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t.lqaIxM), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -147,15 +147,15 @@ function R(e) {
           })]
         }),
         showRemoveAvatarButton: q,
-        onAvatarChange: e => ee(e, null == z ? void 0 : z.avatar, C.I5),
+        onAvatarChange: e => ee(e, null == z ? void 0 : z.avatar, O.I5),
         errors: null == U ? void 0 : U.avatar,
         guildId: F.id,
         disabled: !K
       }, "avatar"), (0, r.jsx)(u.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t["7v0T9P"]), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t["7v0T9P"]), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -167,9 +167,9 @@ function R(e) {
         guild: F
       }, "decoration"), (0, r.jsx)(p.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t.wR5wOj), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t.wR5wOj), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -182,7 +182,7 @@ function R(e) {
       }, "effect"), (0, r.jsx)(g.Z, {
         showRemoveBannerButton: X,
         errors: null == U ? void 0 : U.banner,
-        onBannerChange: e => ee(e, null == Y ? void 0 : Y.banner, C.g_),
+        onBannerChange: e => ee(e, null == Y ? void 0 : Y.banner, O.g_),
         guildId: null == F ? void 0 : F.id,
         disabled: !K
       }, "banner"), (0, r.jsx)(h.Z, {
@@ -197,9 +197,9 @@ function R(e) {
       }), (0, r.jsx)(d.Z, {
         placeholder: I.NW.string(I.t["/7NKgo"]),
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t.jGoPJS), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t.jGoPJS), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {

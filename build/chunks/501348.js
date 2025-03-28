@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => er
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(704215),
+  o = n(442837),
+  l = n(704215),
   c = n(524437),
   d = n(780384),
   u = n(481060),
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(493773),
   h = n(714338),
   f = n(857595),
-  x = n(607070),
-  N = n(627845),
-  b = n(514361),
+  N = n(607070),
+  b = n(627845),
+  x = n(514361),
   _ = n(600164),
   E = n(313201),
   j = n(540059),
-  C = n(605236),
-  O = n(786761),
+  O = n(605236),
+  C = n(786761),
   S = n(3148),
   v = n(739566),
   T = n(753206),
@@ -88,31 +88,31 @@ let Y = {
   J = "1337",
   Q = e => {
     let t = 0;
-    return [(0, O.e5)(z(H({}, (0, S.ZP)({
+    return [(0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.oZxkEh)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, S.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: (0, d.wj)(e) ? U.NW.string(U.t["WGb/v7"]) : U.NW.string(U.t["62m4m5"])
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, S.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.a0Byo6)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, S.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.bmwEWF)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, O.e5)(z(H({}, (0, S.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.hK9QW1)
     })), {
@@ -122,7 +122,7 @@ let Y = {
   },
   $ = () => {
     let e = (0, j.Q3)("ThemeTitle"),
-      t = (0, l.e7)([b.Z], () => b.Z.isPreview),
+      t = (0, o.e7)([x.Z], () => x.Z.isPreview),
       {
         enabled: n
       } = I.Z.useExperiment({
@@ -291,7 +291,7 @@ class ee extends i.Component {
       children: (0, r.jsx)(u.R94, {
         type: u.R94.Types.DEFAULT,
         className: V.forcedColorsWarning,
-        children: (0, N.b)() ? U.NW.format(U.t.Jae48P, {
+        children: (0, b.b)() ? U.NW.format(U.t.Jae48P, {
           onClick: () => {
             g.Z.open(L.oAB.ACCESSIBILITY)
           }
@@ -604,7 +604,7 @@ class et extends ee {
       }), this.renderMessageGroupSpacingSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), l = (0, r.jsxs)(y.F, {
+    }), o = (0, r.jsxs)(y.F, {
       setting: W.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-lg/medium",
@@ -613,7 +613,7 @@ class et extends ee {
       }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), o = (0, r.jsx)(y.F, {
+    }), l = (0, r.jsx)(y.F, {
       setting: W.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), d = (0, r.jsx)(u.Text, {
@@ -628,12 +628,12 @@ class et extends ee {
     return (0, r.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: U.NW.string(U.t["iHH+k5"]),
-      children: [this.renderVisualRefreshOverride(), t, n, s, a, l, o, d]
+      children: [this.renderVisualRefreshOverride(), t, n, s, a, o, l, d]
     })
   }
 }
 let en = e => {
-  (0, C.un)(e) || (0, C.EW)(e, {
+  (0, O.un)(e) || (0, O.EW)(e, {
     dismissAction: B.L.AUTO,
     forceTrack: !0
   })
@@ -647,21 +647,21 @@ function er() {
     s = Z.hg.useSetting(),
     a = Z.YC.useSetting();
   (0, p.ZP)(() => {
-    en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
+    en(l.z.CLIENT_THEMES_SETTINGS_BADGE), en(l.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(l.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, l.cj)([R.Z, D.ZP, x.Z, A.default, b.Z], () => {
+  let c = (0, o.cj)([R.Z, D.ZP, N.Z, A.default, x.Z], () => {
       var e, t;
       return {
         theme: R.Z.theme,
-        useForcedColors: x.Z.useForcedColors,
+        useForcedColors: N.Z.useForcedColors,
         useSystemTheme: D.ZP.useSystemTheme,
         darkSidebar: R.Z.darkSidebar,
-        fontSize: x.Z.fontSize,
-        zoom: x.Z.zoom,
-        messageGroupSpacing: x.Z.messageGroupSpacing,
+        fontSize: N.Z.fontSize,
+        zoom: N.Z.zoom,
+        messageGroupSpacing: N.Z.messageGroupSpacing,
         displayCompactAvatars: D.ZP.displayCompactAvatars,
         isStaff: null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
-        gradientPreset: b.Z.gradientPreset
+        gradientPreset: x.Z.gradientPreset
       }
     }),
     d = (0, j.nm)("UserSettingsAppearance"),

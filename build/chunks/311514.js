@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   labelSpacing: "labelSpacing__5f04d",
   applyChangesButton: "applyChangesButton__5f04d",

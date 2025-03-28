@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   D: () => d,
   F: () => c
@@ -8,15 +8,15 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(793030),
-  l = n(481060),
-  o = n(53024);
+  o = n(481060),
+  l = n(53024);
 let c = {
     SMALL: {
-      style: o.small,
+      style: l.small,
       text: "text-xs/normal"
     },
     MEDIUM: {
-      style: o.normal,
+      style: l.normal,
       text: "text-sm/normal"
     }
   },
@@ -27,16 +27,16 @@ let c = {
       size: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: o.iconRow,
+      className: l.iconRow,
       children: [t.map((e, t) => {
         let {
           src: n,
           alt: a
         } = e;
-        return (0, r.jsx)(l.ua7, {
+        return (0, r.jsx)(o.ua7, {
           text: a,
           children: e => {
-            var t, l;
+            var t, o;
             return (0, r.jsx)("img", (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -54,24 +54,24 @@ let c = {
                 })
               }
               return e
-            }({}, e), l = l = {
+            }({}, e), o = o = {
               src: n,
               alt: a,
-              className: s()(o.icon, i.style)
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+              className: s()(l.icon, i.style)
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, r)
               }
               return n
-            })(Object(l)).forEach(function(e) {
-              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
+            })(Object(o)).forEach(function(e) {
+              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
             }), t))
           }
         }, t)
       }), n > 4 && (0, r.jsx)("div", {
-        className: s()(o.overflow, i.style),
+        className: s()(l.overflow, i.style),
         children: (0, r.jsx)(a.xv, {
           variant: i.text,
           children: "+".concat(n - 3)

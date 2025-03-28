@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   attributionBannerContainer: "attributionBannerContainer_afe9b4",
   attributionBannerContent: "attributionBannerContent_afe9b4",

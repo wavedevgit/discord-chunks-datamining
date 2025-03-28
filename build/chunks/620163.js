@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   i: () => eJ
 }), n(653041), n(47120);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(990547),
   s = n(704215),
   a = n(692547),
-  l = n(481060),
-  o = n(570140),
+  o = n(481060),
+  l = n(570140),
   c = n(893776),
   d = n(37234),
   u = n(809206),
@@ -17,14 +17,14 @@ var i = n(990547),
   p = n(579806),
   h = n(782568),
   f = n(758182),
-  x = n(163379),
-  N = n(703288),
-  b = n(574755),
+  N = n(163379),
+  b = n(703288),
+  x = n(574755),
   _ = n(377171),
   E = n(540059),
   j = n(621628),
-  C = n(243778),
-  O = n(18438),
+  O = n(243778),
+  C = n(18438),
   S = n(778825),
   v = n(665166),
   T = n(442933),
@@ -61,8 +61,8 @@ var i = n(990547),
   ei = n(154022),
   es = n(393681),
   ea = n(309739),
-  el = n(64914),
-  eo = n(501348),
+  eo = n(64914),
+  el = n(501348),
   ec = n(795594),
   ed = n(443702),
   eu = n(327192),
@@ -71,14 +71,14 @@ var i = n(990547),
   ep = n(177508),
   eh = n(956699),
   ef = n(54942),
-  ex = n(293389),
-  eN = n(88624),
-  eb = n(387747),
+  eN = n(293389),
+  eb = n(88624),
+  ex = n(387747),
   e_ = n(389650),
   eE = n(649157),
   ej = n(593648),
-  eC = n(327885),
-  eO = n(595242),
+  eO = n(327885),
+  eC = n(595242),
   eS = n(463153),
   ev = n(36192),
   eT = n(889029),
@@ -112,14 +112,14 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
   },
   eq = () => {
     let e = eK(),
-      [t] = (0, C.US)(e);
+      [t] = (0, O.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(y.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(B.Z, {}) : null
   },
   eX = eP.Z,
   eJ = e => {
     let {
       unseenGiftCount: t,
-      showPrepaidPaymentPastDueWarning: C,
+      showPrepaidPaymentPastDueWarning: O,
       impressionSource: T,
       numOfPendingFamilyRequests: y,
       isOverlaySupported: L,
@@ -132,8 +132,8 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       paymentsBlocked: e2,
       isEligibleForQuests: e6,
       showGiftNitro: e3,
-      isStricterMessageRequestsEnabled: e8,
-      hasLibraryApplication: e4,
+      isStricterMessageRequestsEnabled: e4,
+      hasLibraryApplication: e8,
       hasTOTPEnabled: e7,
       developerMode: e9,
       isAdultUser: e5,
@@ -298,8 +298,8 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
           element: D.Z
         },
         onSettingsClose: () => {
-          o.Z.wait(() => {
-            (0, O.It)(), (0, u.P6)(), m.Z.clearSubsection(eU.oAB.PROFILE_CUSTOMIZATION)
+          l.Z.wait(() => {
+            (0, C.It)(), (0, u.P6)(), m.Z.clearSubsection(eU.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eU.Z5c.SETTINGS("profile-customization")
@@ -421,7 +421,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eF.NW.string(eF.t["3o2ojo"])],
         parent: eM.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-        predicate: () => !e8
+        predicate: () => !e4
       },
       [eM.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2]: {
         section: eU.oAB.CONTENT_AND_SOCIAL,
@@ -483,7 +483,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         ariaLabel: eF.NW.string(eH.Z.gntCQU),
         element: ef.Z,
         badgeCount: y,
-        newIndicator: (0, r.jsx)(l.IGR, {
+        newIndicator: (0, r.jsx)(o.IGR, {
           text: eF.NW.string(eF.t.y2b7CA),
           color: _.Z.BG_BRAND
         }),
@@ -545,8 +545,8 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t.z2jK6e)],
         label: eF.NW.string(eF.t.z2jK6e),
         ariaLabel: eF.NW.string(eF.t.z2jK6e),
-        icon: B ? (0, r.jsx)(N.Z, {}) : void 0,
-        element: b.Z,
+        icon: B ? (0, r.jsx)(b.Z, {}) : void 0,
+        element: x.Z,
         predicate: () => !eJ,
         url: eU.Z5c.SETTINGS("clips")
       },
@@ -585,7 +585,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.GUILD_BOOSTING,
         searchableTitles: [eF.NW.string(eF.t["+CbP2t"])],
         label: eF.NW.string(eF.t["+CbP2t"]),
-        element: eO.Z
+        element: eC.Z
       },
       [eM.s6.SUBSCRIPTIONS]: {
         section: eU.oAB.SUBSCRIPTIONS,
@@ -593,7 +593,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t.trSpHR)],
         label: eF.NW.string(eF.t.trSpHR),
         element: R.Z,
-        icon: C ? (0, r.jsx)(l.P4T, {
+        icon: O ? (0, r.jsx)(o.P4T, {
           size: "xs",
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
@@ -607,7 +607,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.INVENTORY,
         searchableTitles: [eF.NW.string(eF.t["jcSP+v"])],
         label: eF.NW.string(eF.t["jcSP+v"]),
-        element: eb.Z,
+        element: ex.Z,
         ariaLabel: eF.NW.string(eF.t["jcSP+v"]),
         badgeCount: t
       },
@@ -663,8 +663,8 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t["iHH+k5"])],
         label: eF.NW.string(eF.t["iHH+k5"]),
         ariaLabel: eF.NW.string(eF.t["iHH+k5"]),
-        element: eo.Z,
-        newIndicator: (0, r.jsx)(l.lBU, {
+        element: el.Z,
+        newIndicator: (0, r.jsx)(o.lBU, {
           text: eF.NW.string(eF.t.y2b7CA)
         }),
         newIndicatorDismissibleContentTypes: eY(),
@@ -694,7 +694,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.APPEARANCE,
         searchableTitles: ["List Spacing"],
         parent: eM.s6.APPEARANCE,
-        newIndicator: (0, r.jsx)(l.IGR, {
+        newIndicator: (0, r.jsx)(o.IGR, {
           text: eF.NW.string(eF.t.y2b7CA),
           color: _.Z.BG_BRAND
         }),
@@ -1434,7 +1434,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t["8/udY2"])],
         label: eF.NW.string(eF.t["8/udY2"]),
         ariaLabel: eF.NW.string(eF.t["8/udY2"]),
-        element: el.Z
+        element: eo.Z
       },
       [eM.s6.SETTINGS_ADVANCED_DEVELOPER_MODE]: {
         section: eU.oAB.ADVANCED,
@@ -1452,7 +1452,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.ADVANCED,
         searchableTitles: [eF.NW.string(eF.t.fi3UQE)],
         parent: eM.s6.SETTINGS_ADVANCED,
-        predicate: () => e4
+        predicate: () => e8
       },
       [eM.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
         section: eU.oAB.ADVANCED,
@@ -1498,19 +1498,19 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.REGISTERED_GAMES,
         searchableTitles: [eF.NW.string(eF.t.AVDyEh)],
         label: eF.NW.string(eF.t.AVDyEh),
-        element: ex.Z,
+        element: eN.Z,
         predicate: () => !eJ && (0, eZ.Jw)()
       },
       [eM.s6.OVERLAY]: {
         section: eU.oAB.OVERLAY,
         searchableTitles: [eF.NW.string(eF.t["9cb1U1"]), eF.NW.string(eF.t.HcoRu7)],
         label: eF.NW.string(eF.t["9cb1U1"]),
-        element: eC.Z,
+        element: eO.Z,
         predicate: () => !eJ && L
       },
       [eM.s6.CHANGELOG]: {
         section: "changelog",
-        onClick: () => (0, x.Z)(!0),
+        onClick: () => (0, N.Z)(!0),
         searchableTitles: [eF.NW.string(eF.t.LRmNAg)],
         label: eF.NW.string(eF.t.LRmNAg)
       },
@@ -1534,7 +1534,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.HYPESQUAD_ONLINE,
         searchableTitles: [eF.NW.string(eF.t["k0R+4e"])],
         label: eF.NW.string(eF.t["k0R+4e"]),
-        element: eN.Z,
+        element: eb.Z,
         predicate: () => !tt
       },
       [eM.s6.TOWNHALL]: {
@@ -1850,9 +1850,9 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eM.s6.LOGOUT]: {
         section: "logout",
         onClick: () => {
-          (0, l.h7j)(e => {
+          (0, o.h7j)(e => {
             var t, n;
-            return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
+            return (0, r.jsx)(o.ConfirmModal, (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -1876,7 +1876,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
               onCancel: e.onClose,
               onConfirm: () => c.Z.logout()
             }, e), n = n = {
-              children: (0, r.jsx)(l.Text, {
+              children: (0, r.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: eF.NW.string(eF.t.SUnWBA)
               })
@@ -1894,7 +1894,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         },
         label: eF.NW.string(eF.t["2jxGen"]),
         ariaLabel: eF.NW.string(eF.t["2jxGen"]),
-        icon: (0, r.jsx)(l.PBZ, {
+        icon: (0, r.jsx)(o.PBZ, {
           size: "xs",
           color: "currentColor"
         })

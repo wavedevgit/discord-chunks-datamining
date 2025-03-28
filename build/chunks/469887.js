@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   B: () => u
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(704215),
   s = n(481060),
   a = n(243778),
-  l = n(688465),
-  o = n(921944),
+  o = n(688465),
+  l = n(921944),
   c = n(388032),
   d = n(726797);
 
@@ -44,7 +44,7 @@ function u(e) {
             className: d.content,
             children: [(0, r.jsx)(s.P3F, {
               className: d.closeIcon,
-              onClick: () => u(o.L.USER_DISMISS),
+              onClick: () => u(l.L.USER_DISMISS),
               children: (0, r.jsx)(s.Dio, {})
             }), (0, r.jsx)("img", {
               src: n(414190),
@@ -55,7 +55,7 @@ function u(e) {
                 variant: "heading-md/semibold",
                 color: "header-primary",
                 className: d.heading,
-                children: [c.NW.string(c.t.MLt8Hx), (0, r.jsx)(l.Z, {
+                children: [c.NW.string(c.t.MLt8Hx), (0, r.jsx)(o.Z, {
                   className: d.betaTag
                 })]
               }), (0, r.jsx)(s.Text, {
@@ -68,7 +68,7 @@ function u(e) {
               look: s.zxk.Looks.FILLED,
               fullWidth: !0,
               onClick: () => {
-                u(o.L.TAKE_ACTION), m()
+                u(l.L.TAKE_ACTION), m()
               },
               children: c.NW.string(c.t["9WdoBw"])
             })]
@@ -83,7 +83,7 @@ function u(e) {
           let {
             isShown: r
           } = n;
-          return t(r, () => u(o.L.INDIRECT_ACTION))
+          return t(r, () => u(l.L.INDIRECT_ACTION))
         }
       }) : t(!1)
     }

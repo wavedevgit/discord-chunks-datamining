@@ -1,8 +1,9 @@
-/** Chunk was on 87791 **/
-n.d(t, {
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
   N: () => i
 });
-let r = (0, n(818083).B)({
+let n = (0, r(818083).B)({
     kind: "user",
     id: "2025-03_nameplate_new_release",
     label: "Nameplate New Release Experiment",
@@ -20,7 +21,7 @@ let r = (0, n(818083).B)({
   i = e => {
     let {
       showNewReleaseBadge: t
-    } = r.useExperiment({
+    } = n.useExperiment({
       location: e
     }, {
       autoTrackExposure: !1

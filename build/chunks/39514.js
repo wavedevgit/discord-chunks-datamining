@@ -14,23 +14,23 @@ var r = n(200651),
   p = n(232567),
   h = n(388905),
   g = n(362762),
-  _ = n(108427),
-  m = n(314897),
-  f = n(896797),
+  m = n(108427),
+  f = n(314897),
+  _ = n(896797),
   b = n(82142),
   x = n(283595),
   N = n(55563),
   v = n(669079),
   E = n(63063),
   I = n(51144),
-  S = n(481153),
-  j = n(781428),
+  j = n(481153),
+  S = n(781428),
   O = n(423527),
   C = n(981631),
   y = n(388032),
   T = n(802138);
 
-function P(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,13 +39,13 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 l.ZP.initialize();
-class A extends i.PureComponent {
+class P extends i.PureComponent {
   componentDidMount() {
     let {
       authenticated: e,
       isResolved: t
     } = this.props;
-    e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, _.e)("gift_code")
+    e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, m.e)("gift_code")
   }
   componentDidUpdate(e) {
     let {
@@ -170,7 +170,7 @@ class A extends i.PureComponent {
   renderAuthenticated(e, t) {
     let n = this.getErrorMessage(e);
     return (0, r.jsxs)(h.ZP, {
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(j.Z, {
         giftCode: e
       }), (0, r.jsx)(h.zx, {
         disabled: null != n,
@@ -212,7 +212,7 @@ class A extends i.PureComponent {
         let e = this.state.currentUser;
         return c || null == e ? this.renderSpinner(y.NW.string(y.t.bYb2nZ)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(i, e)
       }
-      return "login" === this.getMode() ? (0, r.jsx)(j.Z, {
+      return "login" === this.getMode() ? (0, r.jsx)(S.Z, {
         giftCodeSKU: t,
         giftCode: i,
         transitionTo: l,
@@ -227,13 +227,13 @@ class A extends i.PureComponent {
     return null
   }
   constructor(...e) {
-    super(...e), P(this, "state", {
+    super(...e), A(this, "state", {
       error: null,
       continueOnWeb: !1,
       currentUser: null,
       sentVerification: !1,
       fetchingUser: !1
-    }), P(this, "refreshUser", () => {
+    }), A(this, "refreshUser", () => {
       this.setState({
         fetchingUser: !0
       }), p.k({
@@ -244,14 +244,14 @@ class A extends i.PureComponent {
       })).catch(() => this.setState({
         fetchingUser: !1
       }))
-    }), P(this, "handleLogout", () => {
+    }), A(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
       c.Z.logout(C.Z5c.GIFT_CODE_LOGIN(e))
-    }), P(this, "handleResendVerification", () => {
+    }), A(this, "handleResendVerification", () => {
       c.Z.verifyResend(), this.setState({
         sentVerification: !0
       })
-    }), P(this, "handleAccept", async () => {
+    }), A(this, "handleAccept", async () => {
       let {
         transitionTo: e,
         giftCode: t
@@ -269,7 +269,7 @@ class A extends i.PureComponent {
           error: e
         })
       }
-    }), P(this, "resolveGiftCode", () => {
+    }), A(this, "resolveGiftCode", () => {
       let {
         transitionTo: e
       } = this.props, t = this.getCode();
@@ -279,7 +279,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let Z = l.ZP.connectStores([b.Z, x.Z, m.default, N.Z, f.Z, g.Z], e => {
+let Z = l.ZP.connectStores([b.Z, x.Z, f.default, N.Z, _.Z, g.Z], e => {
   let t = e.match.params.giftCode,
     n = b.Z.get(t),
     r = null != n ? N.Z.get(n.skuId) : null;
@@ -287,11 +287,11 @@ let Z = l.ZP.connectStores([b.Z, x.Z, m.default, N.Z, f.Z, g.Z], e => {
     giftCode: n,
     sku: r,
     libraryApplication: null != r && (null == n ? void 0 : n.entitlementBranches) != null ? v.z2(n.entitlementBranches, r, x.Z) : null,
-    authenticated: m.default.isAuthenticated(),
-    defaultRoute: f.Z.defaultRoute,
+    authenticated: f.default.isAuthenticated(),
+    defaultRoute: _.Z.defaultRoute,
     isResolved: b.Z.getIsResolved(t),
     isAccepting: b.Z.getIsAccepting(t),
     libraryApplicationsFetched: x.Z.fetched,
     nativeAppState: g.Z.getState(t)
   }
-})(A)
+})(P)

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => Z
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(442837),
-  l = n(809206),
-  o = n(634894),
+  o = n(809206),
+  l = n(634894),
   c = n(97992),
   d = n(328783),
   u = n(295474),
@@ -17,14 +17,14 @@ var i = n(512722),
   p = n(126631),
   h = n(433411),
   f = n(532432),
-  x = n(349177),
-  N = n(872736),
-  b = n(818420),
+  N = n(349177),
+  b = n(872736),
+  x = n(818420),
   _ = n(134795),
   E = n(610966),
   j = n(513901),
-  C = n(451392),
-  O = n(906364),
+  O = n(451392),
+  C = n(906364),
   S = n(643879),
   v = n(350327),
   T = n(621853),
@@ -94,10 +94,10 @@ function Z() {
     J = (0, g.gd)(M, L.avatar),
     Q = (0, g.f$)(V, null == B ? void 0 : B.banner),
     $ = "DefaultCustomizationSections";
-  (0, o.j)({
+  (0, l.j)({
     location: $ + " auto on",
     autoTrackExposure: !0
-  }), (0, o.j)({
+  }), (0, l.j)({
     location: $ + " auto off",
     autoTrackExposure: !1
   });
@@ -109,20 +109,20 @@ function Z() {
     es = (0, m.H)("DefaultCustomizationSections");
   return (0, r.jsxs)("div", {
     className: D.sectionsContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(N.Z, {
       placeholder: L.username,
       errors: en,
       currentGlobalName: L.globalName,
       pendingGlobalName: U,
-      onGlobalNameChange: l.UZ
-    }), (0, r.jsx)(O.Z, {
+      onGlobalNameChange: o.W0
+    }), (0, r.jsx)(C.Z, {
       sectionTitle: R.NW.string(R.t["+T3RIy"]),
       errors: Y.pronouns,
       onPronounsChange: v.ID,
       pendingPronouns: F,
       currentPronouns: null !== (k = null == B ? void 0 : B.pronouns) && void 0 !== k ? k : ""
     }, "pronouns"), (0, r.jsx)(f.Z, {
-      onAvatarChange: l.I5,
+      onAvatarChange: o.I5,
       showRemoveAvatarButton: J,
       errors: Y.avatar,
       sectionTitle: R.NW.string(R.t.lqaIxM),
@@ -130,7 +130,7 @@ function Z() {
     }, "avatar"), (0, r.jsx)(h.Z, {
       user: L,
       sectionTitle: R.NW.string(R.t["7v0T9P"])
-    }, "decoration"), es && (0, r.jsx)(b.Z, {
+    }, "decoration"), es && (0, r.jsx)(x.Z, {
       user: L
     }), (0, r.jsx)(j.Z, {
       user: L,
@@ -141,7 +141,7 @@ function Z() {
         errors: Y.banner,
         onBannerChange: v.g_,
         forcedDivider: !0
-      }, "banner"), (0, r.jsx)(C.Z, {
+      }, "banner"), (0, r.jsx)(O.Z, {
         user: L,
         pendingAvatarSrc: K,
         pendingColors: z,
@@ -161,7 +161,7 @@ function Z() {
       currentBio: null !== (W = null == B ? void 0 : B.bio) && void 0 !== W ? W : ""
     }, "bio"), ei.length > 0 && (0, r.jsx)(d.Z, {
       availableClans: ei
-    }), null != et && (0, r.jsx)(N.Z, {
+    }), null != et && (0, r.jsx)(b.Z, {
       legacyUsername: et
     }, "legacy_username")]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => f,
   n: () => g
@@ -6,8 +6,8 @@ n.d(t, {
 var r, i = n(200651),
   s = n(192379),
   a = n(120356),
-  l = n.n(a),
-  o = n(748780),
+  o = n.n(a),
+  l = n(748780),
   c = n(215569),
   d = n(315806);
 
@@ -40,7 +40,7 @@ let p = {
 };
 class h extends s.PureComponent {
   componentWillEnter(e) {
-    this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
+    this._animated.setValue(-this.props.direction), l.Z.spring(this._animated, m({
       toValue: 0
     }, this.props.springSettings)).start(e)
   }
@@ -48,12 +48,12 @@ class h extends s.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    o.Z.spring(this._animated, m({
+    l.Z.spring(this._animated, m({
       toValue: this.props.direction
     }, this.props.springSettings)).start(e)
   }
   getStyle() {
-    let e = o.Z.accelerate({
+    let e = l.Z.accelerate({
       transform: [{
         translateX: this._animated.interpolate({
           inputRange: [0, 1],
@@ -67,14 +67,14 @@ class h extends s.PureComponent {
     })), e
   }
   render() {
-    return (0, i.jsx)(o.Z.div, {
+    return (0, i.jsx)(l.Z.div, {
       style: this.getStyle(),
       className: d.item,
       children: this.props.children
     })
   }
   constructor(e) {
-    super(e), u(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
+    super(e), u(this, "_animated", void 0), this._animated = new l.Z.Value(-1 * e.direction)
   }
 }
 let f = e => {
@@ -84,15 +84,15 @@ let f = e => {
     direction: r,
     className: s,
     springSettings: a = p,
-    fadeInOut: o = !1
+    fadeInOut: l = !1
   } = e;
   return (0, i.jsx)(c.W, {
     component: "div",
-    className: l()(d.animator, s),
+    className: o()(d.animator, s),
     children: (0, i.jsx)(h, {
       direction: r,
       springSettings: a,
-      fadeInOut: o,
+      fadeInOut: l,
       children: t
     }, n)
   })

@@ -1,16 +1,16 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   $0: () => s.$0,
   DS: () => a.D,
   E_: () => s.E_,
-  lD: () => l
+  lD: () => o
 });
 var r = n(200651),
   i = n(481060),
   s = n(820759);
 n(246652);
 var a = n(774572);
-let l = e => {
+let o = e => {
   let {
     href: t
   } = e;

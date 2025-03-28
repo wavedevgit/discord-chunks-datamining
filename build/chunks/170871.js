@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(114487),
+  o = n(481060),
+  l = n(114487),
   c = n(219039),
   d = n(979264),
   u = n(308083),
@@ -22,28 +22,28 @@ function g(e) {
     guildId: p,
     guildName: h,
     guildIcon: f,
-    guildIconSize: x,
-    memberCount: N
-  } = e, b = i.useRef(null), [_, E] = i.useState(!1);
+    guildIconSize: N,
+    memberCount: b
+  } = e, x = i.useRef(null), [_, E] = i.useState(!1);
   return i.useEffect(() => {
-    let e = b.current;
+    let e = x.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
     className: a()(m.container, t),
     children: [(0, r.jsxs)("div", {
       className: m.guildPrefixContainer,
-      children: [(0, r.jsx)(o.b, {
+      children: [(0, r.jsx)(l.b, {
         guildId: p,
         guildName: h,
         guildIcon: f,
-        iconSize: x,
+        iconSize: N,
         className: m.guildPrefixIcon,
         animate: !1
       }), (0, r.jsxs)("div", {
         className: m.details,
-        children: [(0, r.jsx)(l.ua7, {
+        children: [(0, r.jsx)(o.ua7, {
           text: h,
-          color: l.ua7.Colors.PRIMARY,
+          color: o.ua7.Colors.PRIMARY,
           shouldShow: _,
           children: e => {
             var t, n;
@@ -65,7 +65,7 @@ function g(e) {
               }
               return e
             }({
-              ref: b
+              ref: x
             }, e), n = n = {
               className: m.guildName,
               children: h
@@ -80,8 +80,8 @@ function g(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
           }
-        }), null != N && (0, r.jsx)(c.Z, {
-          count: N
+        }), null != b && (0, r.jsx)(c.Z, {
+          count: b
         })]
       })]
     }), (0, r.jsx)("div", {

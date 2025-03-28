@@ -14,23 +14,23 @@ var r, i = n(200651),
   p = n(481060),
   h = n(570140),
   g = n(893776),
-  _ = n(899742),
-  m = n(579806),
-  f = n(743142),
+  m = n(899742),
+  f = n(579806),
+  _ = n(743142),
   b = n(254942),
   x = n(388905),
   N = n(379760),
   v = n(600164),
   E = n(100159),
   I = n(473855),
-  S = n(124860),
-  j = n(86779),
+  j = n(124860),
+  S = n(86779),
   O = n(726745),
   C = n(913583),
   y = n(144114),
   T = n(541692),
-  P = n(952802),
-  A = n(108427),
+  A = n(952802),
+  P = n(108427),
   Z = n(365007),
   R = n(314897),
   w = n(117240),
@@ -106,13 +106,13 @@ class Q extends(r = o.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    e && !t ? (0, _.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
+    e && !t ? (0, m.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
     }, null != n ? (0, E.Z)(n, !1, !1) : {}), {
       flush: !0
-    }), null == m.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+    }), null == f.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
       e && (0, Z.us)().then(e => {
         let {
           challenge: t,
@@ -135,7 +135,7 @@ class Q extends(r = o.PureComponent) {
           if ("AbortError" !== e.name) throw e
         })
       }).catch(() => {})
-    }), g.Z.getLocationMetadata(), (0, A.e)("login")
+    }), g.Z.getLocationMetadata(), (0, P.e)("login")
   }
   componentDidUpdate(e, t) {
     let {
@@ -165,7 +165,7 @@ class Q extends(r = o.PureComponent) {
       if (null != n.channel) return "dm_invite";
       if (null != n.inviter) return "friend_invite"
     }
-    return null != i ? (0, f.L)(i) : null
+    return null != i ? (0, _.L)(i) : null
   }
   get giftCodeSKUId() {
     let {
@@ -291,7 +291,7 @@ class Q extends(r = o.PureComponent) {
       className: e,
       children: [(0, i.jsx)(M.R, {}), (0, i.jsxs)(x.gO, {
         className: K.marginTop20,
-        children: [(0, i.jsx)(P.Z, {
+        children: [(0, i.jsx)(A.Z, {
           className: K.marginBottom20,
           alpha2: t.alpha2,
           countryCode: t.code.split(" ")[0],
@@ -391,7 +391,7 @@ class Q extends(r = o.PureComponent) {
         }), n, (0, i.jsx)(p.y5t, {
           children: (0, i.jsxs)(x.gO, {
             className: K.marginTop20,
-            children: [(0, i.jsx)(P.Z, {
+            children: [(0, i.jsx)(A.Z, {
               alpha2: l.alpha2,
               countryCode: l.code.split(" ")[0],
               className: K.marginBottom20,
@@ -471,7 +471,7 @@ class Q extends(r = o.PureComponent) {
         className: e,
         expanded: !0,
         children: this.renderDefaultForm(!0)
-      }), t && (0, i.jsx)(j.Z, {})]
+      }), t && (0, i.jsx)(S.Z, {})]
     })
   }
   renderGuildTemplate(e) {
@@ -493,7 +493,7 @@ class Q extends(r = o.PureComponent) {
       style: {
         padding: 0
       },
-      children: (0, i.jsx)(S.Cd, {
+      children: (0, i.jsx)(j.Cd, {
         mfaFinish: this.handleTokenSubmitMFA,
         mfaChallenge: e,
         onEarlyClose: () => {

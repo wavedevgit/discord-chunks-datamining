@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => _
 }), n(47120), n(411104);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(533307),
-  o = n(600164),
+  o = n(533307),
+  l = n(600164),
   c = n(930114),
   d = n(246946),
   u = n(626135),
@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function x(e) {
   return e
 }
 
-function N(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,14 +50,14 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class b extends i.Component {
+class x extends i.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return N(x({}, e), {
+    return b(N({}, e), {
       object: g.qAy.BUTTON_CTA
     })
   }
@@ -77,7 +77,7 @@ class b extends i.Component {
         children: p.NW.string(p.t.SeKIoa)
       }), (0, r.jsx)("form", {
         onSubmit: this.handleSubmit,
-        children: (0, r.jsxs)(o.Z, {
+        children: (0, r.jsxs)(l.Z, {
           children: [(0, r.jsx)(a.oil, {
             type: e ? "password" : "text",
             value: t,
@@ -130,13 +130,13 @@ class b extends i.Component {
         submitting: !0
       });
       try {
-        let e = await l.Z.resolveGiftCode(n);
+        let e = await o.Z.resolveGiftCode(n);
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: !0
         }), Error("Cannnot redeem promotion code as gift");
         u.default.track(g.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: N(x({}, this.analyticsLocation), {
+          location: b(N({}, this.analyticsLocation), {
             object: g.qAy.BUTTON_CTA
           })
         }), (0, c.V)({
@@ -160,7 +160,7 @@ class b extends i.Component {
 function _() {
   let e = i.useContext(u.AnalyticsContext),
     t = (0, s.e7)([d.Z], () => d.Z.enabled);
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(x, {
     analyticsContext: e,
     obscureInput: t
   })

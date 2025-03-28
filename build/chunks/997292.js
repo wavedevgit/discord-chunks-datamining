@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   r: () => p
 });
@@ -6,8 +6,8 @@ var r = n(106351),
   i = n(475179),
   s = n(816782),
   a = n(358221),
-  l = n(221292),
-  o = n(687158),
+  o = n(221292),
+  l = n(687158),
   c = n(433355),
   d = n(592125),
   u = n(944486),
@@ -23,9 +23,9 @@ let p = {
     if (null != t && null != n && n.type === r.d.GUILD_VOICE) return i.Z.updateChatOpen(t, !a.Z.getChatOpen(t)), !1;
     if (null != t && null != n && n.type === r.d.DM) {
       let e = c.ZP.getSection(t, null == n ? void 0 : n.isDM()),
-        r = (0, o.Of)(n.getRecipientId()),
+        r = (0, l.Of)(n.getRecipientId()),
         i = e === g.ULH.PROFILE;
-      return (0, l.TY)({
+      return (0, o.TY)({
         displayProfile: r,
         isProfileOpen: !i
       }), s.Z.toggleProfilePanelSection(), !1

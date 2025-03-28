@@ -13,23 +13,23 @@ var r, i = n(200651),
   p = n(846519),
   h = n(481060),
   g = n(893776),
-  _ = n(881052),
-  m = n(899370),
-  f = n(224841),
+  m = n(881052),
+  f = n(899370),
+  _ = n(224841),
   b = n(13430),
   x = n(213609),
   N = n(882037),
   v = n(254942),
   E = n(481230),
   I = n(388905),
-  S = n(853268),
-  j = n(639946),
+  j = n(853268),
+  S = n(639946),
   O = n(616952),
   C = n(792766),
   y = n(692483),
   T = n(100159),
-  P = n(473855),
-  A = n(726745),
+  A = n(473855),
+  P = n(726745),
   Z = n(929809),
   R = n(541692),
   w = n(986197),
@@ -191,7 +191,7 @@ class eu extends(r = o.PureComponent) {
       onRegister: c,
       usernameSuggestion: u,
       isMobileWebInviteRegistration: d
-    } = this.props, p = null != a ? a.code : null, h = null != s ? s.skuId : null, g = N.MD.getState(), m = (0, K.Ew)(u) ? null : t === u, f = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
+    } = this.props, p = null != a ? a.code : null, h = null != s ? s.skuId : null, g = N.MD.getState(), f = (0, K.Ew)(u) ? null : t === u, _ = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
     V.S.dispatch(X.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
@@ -199,12 +199,12 @@ class eu extends(r = o.PureComponent) {
     try {
       d || null == a ? await (0, E.R$)({
         email: e,
-        username: f,
+        username: _,
         globalName: b,
         consent: i,
         password: r,
         invite: p,
-        usedUsernameSuggestion: m,
+        usedUsernameSuggestion: f,
         guildTemplateCode: null == l ? void 0 : l.code,
         giftCodeSKUId: h,
         birthday: o,
@@ -213,13 +213,13 @@ class eu extends(r = o.PureComponent) {
         consent: i,
         invite: p,
         giftCodeSKUId: h,
-        usedUsernameSuggestion: m,
+        usedUsernameSuggestion: f,
         globalName: b
       }), null == c || c()
     } catch (t) {
       if (this.setState({
           registering: !1
-        }), !(t instanceof _.Hx)) return;
+        }), !(t instanceof m.Hx)) return;
       let e = (0, v.F)(t);
       this.setState({
         apiErrors: e
@@ -235,7 +235,7 @@ class eu extends(r = o.PureComponent) {
     } = this.state, {
       consentRequired: t
     } = this.props, n = null, r = null;
-    return t ? r = (0, i.jsx)(S.Z, {
+    return t ? r = (0, i.jsx)(j.Z, {
       value: e,
       onChange: e => this.setState({
         consent: e
@@ -317,7 +317,7 @@ class eu extends(r = o.PureComponent) {
     return (null == e ? void 0 : e.stage_instance) != null && null != e.guild ? (0, i.jsx)(C.Z, {
       stageInstance: e.stage_instance,
       guild: e.guild
-    }) : (null == e ? void 0 : e.guild_scheduled_event) != null ? (0, i.jsx)(j.r, {
+    }) : (null == e ? void 0 : e.guild_scheduled_event) != null ? (0, i.jsx)(S.r, {
       channel: e.channel,
       guildScheduledEvent: e.guild_scheduled_event
     }) : (0, i.jsx)(Y.Z, {
@@ -441,35 +441,35 @@ class eu extends(r = o.PureComponent) {
       globalNameFocused: d,
       emailClientError: p,
       usernameClientError: g,
-      passwordClientError: _,
-      dateOfBirthClientError: m,
-      registering: f,
+      passwordClientError: m,
+      dateOfBirthClientError: f,
+      registering: _,
       apiErrors: {
         email: x,
         username: N,
         global_name: v,
         password: E,
-        date_of_birth: S
+        date_of_birth: j
       } = {}
     } = this.state, {
-      consentRequired: j,
+      consentRequired: S,
       isMobileWebInviteRegistration: C,
       uniqueUsernameRegistrationConfig: {
         suggestions: y
       },
       authBoxClassName: T,
-      hasLoggedInAccounts: P
+      hasLoggedInAccounts: A
     } = this.props, {
-      subText: A,
+      subText: P,
       consentText: Z
     } = this.renderConsentComponents(), R = this.renderErrorMessage(), D = (0, i.jsx)(h.ua7, {
-      text: !c && j ? en.NW.string(en.t.AY4IVF) : null,
+      text: !c && S ? en.NW.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", el(ea({
         className: ei.marginTop20
       }, e), {
         children: (0, i.jsx)(I.zx, {
           type: "submit",
-          submitting: f,
+          submitting: _,
           disabled: !this.hasConsent() || this.state.isRateLimited,
           children: en.NW.string(en.t["3PatS0"])
         })
@@ -562,7 +562,7 @@ class eu extends(r = o.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? en.NW.string(en.t.EkokLy) : null
         }),
-        error: null != _ ? _ : ec(E),
+        error: null != m ? m : ec(E),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -575,10 +575,10 @@ class eu extends(r = o.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != m ? m : ec(S),
+        error: null != f ? f : ec(j),
         value: u,
         required: !0
-      }), (0, i.jsx)(O.Z, {}), D, R, Z, A, $.a ? null : (0, i.jsx)(I.zx, {
+      }), (0, i.jsx)(O.Z, {}), D, R, Z, P, $.a ? null : (0, i.jsx)(I.zx, {
         look: C ? I.zx.Looks.FILLED : I.zx.Looks.LINK,
         color: C ? I.zx.Colors.PRIMARY : I.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
@@ -601,7 +601,7 @@ class eu extends(r = o.PureComponent) {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: T,
-      children: [P && !C ? (0, i.jsx)(I.zx, {
+      children: [A && !C ? (0, i.jsx)(I.zx, {
         onClick: this.handleGotoLogin,
         look: I.zx.Looks.LINK,
         color: I.zx.Colors.PRIMARY,
@@ -625,13 +625,13 @@ class eu extends(r = o.PureComponent) {
       isUnderage: e,
       isMobileWebInviteRegistration: t
     } = this.props;
-    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(f.Z, {});
+    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(_.Z, {});
     let {
       invite: n,
       giftCode: r,
       guildTemplate: o
     } = this.props, a = null != n && null == n.guild && null == n.channel && null != n.inviter;
-    return null == n || a || t ? null != o ? this.renderFull(() => (0, i.jsx)(P.Z, {
+    return null == n || a || t ? null != o ? this.renderFull(() => (0, i.jsx)(A.Z, {
       guildTemplate: o
     }), !0) : null != r ? this.renderFull(() => (0, i.jsx)(q.Z, {
       giftCode: r
@@ -745,12 +745,12 @@ class eu extends(r = o.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([U.Z, G.default, m.Z, R.Z, A.Z], () => ({
+  let t = (0, d.cj)([U.Z, G.default, f.Z, R.Z, P.Z], () => ({
       consentRequired: U.Z.getAuthenticationConsentRequired(),
       authenticated: G.default.isAuthenticated(),
-      isUnderage: m.Z.isUnderageAnonymous(),
+      isUnderage: f.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
-      hasLoggedInAccounts: A.Z.getHasLoggedInAccounts()
+      hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()
     })),
     n = (0, k.F4)(),
     r = (0, d.e7)([L.Z], () => L.Z.registrationUsernameSuggestion()),

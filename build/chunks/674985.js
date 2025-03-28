@@ -1,10 +1,10 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => m
 });
 var r, i, s, a = n(442837),
-  l = n(570140),
-  o = n(594174),
+  o = n(570140),
+  l = n(594174),
   c = n(981631);
 let d = null;
 class u extends(s = a.ZP.Store) {
@@ -18,9 +18,9 @@ i = "HypeSquadStore", (r = "displayName") in u ? Object.defineProperty(u, r, {
   configurable: !0,
   writable: !0
 }) : u[r] = i;
-let m = new u(l.Z, {
+let m = new u(o.Z, {
   CONNECTION_OPEN: function() {
-    let e = o.default.getCurrentUser();
+    let e = l.default.getCurrentUser();
     null != e && (e.hasFlag(c.xW$.HYPESQUAD_ONLINE_HOUSE_1) ? d = c.gkr.HOUSE_1 : e.hasFlag(c.xW$.HYPESQUAD_ONLINE_HOUSE_2) ? d = c.gkr.HOUSE_2 : e.hasFlag(c.xW$.HYPESQUAD_ONLINE_HOUSE_3) && (d = c.gkr.HOUSE_3))
   },
   HYPESQUAD_ONLINE_MEMBERSHIP_LEAVE_SUCCESS: function() {

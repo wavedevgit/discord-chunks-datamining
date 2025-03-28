@@ -1,14 +1,14 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  L: () => N
+  L: () => b
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(442837),
-  l = n(693789),
-  o = n(481060),
+  o = n(693789),
+  l = n(481060),
   c = n(607070),
   d = n(70097),
   u = n(981631),
@@ -17,7 +17,7 @@ var i = n(120356),
   p = n(803812),
   h = n(477154),
   f = n(230114);
-let x = () => {
+let N = () => {
     let e = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
     return (0, r.jsx)("div", {
       className: g.assetContainer,
@@ -40,7 +40,7 @@ let x = () => {
       })
     })
   },
-  N = e => {
+  b = e => {
     let {
       ctaText: t,
       ctaOnClick: n,
@@ -49,23 +49,23 @@ let x = () => {
     } = e;
     return (0, r.jsxs)("div", {
       className: s()(g.container, p.baseCardOutline),
-      children: [(0, r.jsx)(x, {}), (0, r.jsx)(l.zx, {
+      children: [(0, r.jsx)(N, {}), (0, r.jsx)(o.zx, {
         className: g.ctaButton,
-        color: l.zx.Colors.BRAND,
-        look: l.zx.Looks.FILLED,
-        size: l.zx.Sizes.SMALL,
+        color: o.zx.Colors.BRAND,
+        look: o.zx.Looks.FILLED,
+        size: o.zx.Sizes.SMALL,
         onClick: n,
         fullWidth: !0,
         children: t
       }), (0, r.jsxs)("div", {
         className: g.linkContainer,
         children: [void 0 !== i && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(o.Text, {
+          children: [(0, r.jsxs)(l.Text, {
             variant: "text-xs/normal",
             className: g.linkPreText,
             children: [i, "\xa0"]
           }), " "]
-        }), (0, r.jsx)(o.eee, {
+        }), (0, r.jsx)(l.eee, {
           target: "_blank",
           rel: "author",
           href: u.yXt.HELP_ARTICLE_ORBS_FAQ,

@@ -1,17 +1,17 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   G: () => c,
-  Q: () => o
+  Q: () => l
 });
 var r = n(192379),
   i = n(442837),
   s = n(232567),
   a = n(594174),
-  l = n(276444);
-let o = 3;
+  o = n(276444);
+let l = 3;
 
 function c() {
-  let e = (0, i.Wu)([l.Z], () => l.Z.getSentUserIds()),
+  let e = (0, i.Wu)([o.Z], () => o.Z.getSentUserIds()),
     t = (0, i.Wu)([a.default], () => e.map(e => a.default.getUser(e)).filter(e => null != e));
   return r.useEffect(() => {
     e.forEach(e => {
@@ -19,7 +19,7 @@ function c() {
     })
   }, [e]), {
     referralSentUsers: t,
-    hasSentAllReferrals: e.length === o,
-    refreshAt: (0, i.e7)([l.Z], () => l.Z.getRefreshAt())
+    hasSentAllReferrals: e.length === l,
+    refreshAt: (0, i.e7)([o.Z], () => o.Z.getRefreshAt())
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   ZP: () => k,
   __: () => w,
@@ -7,8 +7,8 @@ n.d(t, {
 var r, i = n(230711),
   s = n(100527),
   a = n(906732),
-  l = n(300284),
-  o = n(526167),
+  o = n(300284),
+  l = n(526167),
   c = n(63063),
   d = n(981631),
   u = n(526761),
@@ -17,14 +17,14 @@ var r, i = n(230711),
   p = n(880511),
   h = n(985443),
   f = n(612253),
-  x = n(832287),
-  N = n(872532),
-  b = n(91342),
+  N = n(832287),
+  b = n(872532),
+  x = n(91342),
   _ = n(181708),
   E = n(821721),
   j = n(158897),
-  C = n(290650),
-  O = n(751125),
+  O = n(290650),
+  C = n(751125),
   S = n(904505),
   v = n(712626),
   T = n(386014),
@@ -36,14 +36,14 @@ var r, i = n(230711),
   D = n(825087),
   Z = ((r = {}).NEW_APP_STYLES = "newAppStyles", r.REFERRAL_PROGRAM = "referralProgram", r.SERVER_PROFILES = "serverProfiles", r.SHOW_YOUR_STYLE = "showYourStyle", r.YOUR_SPACE = "yourSpace", r.EMOJIS = "emojis", r.NO_LIMITS = "noLimits", r);
 let w = () => {
-    let e = (0, o.rO)();
+    let e = (0, l.rO)();
     return {
       emojis: {
         name: "emojis",
         title: m.NW.string(m.t.zY5PPT),
         description: m.NW.string(m.t.R5Xag4),
         previewImage: g,
-        videoUrl: e ? b.ZP : _.ZP,
+        videoUrl: e ? x.ZP : _.ZP,
         isCompact: !0
       },
       noLimits: {
@@ -51,7 +51,7 @@ let w = () => {
         title: m.NW.string(m.t["6b3ydH"]),
         description: m.NW.string(m.t["Y+IJys"]),
         previewImage: p,
-        videoUrl: e ? C.ZP : O.ZP,
+        videoUrl: e ? O.ZP : C.ZP,
         isCompact: !0
       }
     }
@@ -59,7 +59,7 @@ let w = () => {
   k = e => {
     let {
       analyticsLocations: t
-    } = (0, a.ZP)(s.Z.PREMIUM_MARKETING_BENTO_BOX), n = (0, l.Z)({
+    } = (0, a.ZP)(s.Z.PREMIUM_MARKETING_BENTO_BOX), n = (0, o.Z)({
       scrollPosition: u.Y_.TRY_IT_OUT,
       analyticsLocations: t
     }), r = () => {
@@ -67,14 +67,14 @@ let w = () => {
         openWithoutBackstack: !0,
         analyticsLocations: t
       })
-    }, g = (0, o.rO)(), p = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), b = {
+    }, g = (0, l.rO)(), p = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), x = {
       serverProfiles: {
         name: "serverProfiles",
         title: m.NW.string(m.t.I9TYMj),
         description: m.NW.string(m.t.HMSHeH),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
-        previewImage: N,
+        previewImage: b,
         videoUrl: g ? I.ZP : y.ZP
       },
       referralProgram: {
@@ -92,7 +92,7 @@ let w = () => {
         description: m.NW.string(m.t.HC5wVV),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: r,
-        previewImage: x,
+        previewImage: N,
         videoUrl: g ? E.ZP : j.ZP
       }
     }, _ = {
@@ -115,5 +115,5 @@ let w = () => {
         videoUrl: g ? R.Z : D.Z
       }
     };
-    return e ? _ : b
+    return e ? _ : x
   }

@@ -1,14 +1,14 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
 var i = n(704215),
   s = n(481060),
   a = n(230711),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(605236),
   d = n(314910),
   u = n(378364),
@@ -17,42 +17,42 @@ var i = n(704215),
   p = n(981631),
   h = n(921944),
   f = n(388032),
-  x = n(514231);
+  N = n(514231);
 
-function N(e) {
+function b(e) {
   let {
     dismissibleContent: t
   } = e, n = m.Z.useIsEligible(), u = (0, c.wE)(t), {
-    analyticsLocations: N
-  } = (0, o.ZP)(l.Z.HOLIDAY_COACHMARK), b = e => {
+    analyticsLocations: b
+  } = (0, l.ZP)(o.Z.HOLIDAY_COACHMARK), x = e => {
     (0, c.EW)(i.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
       dismissAction: e
     })
   }, _ = () => {
     a.Z.open(p.oAB.NOTIFICATIONS, null, {
-      analyticsLocations: N
-    }), b(h.L.SECONDARY)
+      analyticsLocations: b
+    }), x(h.L.SECONDARY)
   };
   return n && !u ? (0, r.jsx)(d.ZP, {
     children: (0, r.jsxs)("div", {
-      className: x.wrapper,
+      className: N.wrapper,
       children: [(0, r.jsxs)("div", {
-        className: x.backgroundWrapper,
+        className: N.backgroundWrapper,
         children: [(0, r.jsx)(g.Z, {
-          className: x.backgroundImage,
+          className: N.backgroundImage,
           pageMultiplier: 5
         }), (0, r.jsx)("div", {
-          className: x.backgroundOverlay
+          className: N.backgroundOverlay
         })]
       }), (0, r.jsx)("div", {
-        className: x.heroImage
+        className: N.heroImage
       }), (0, r.jsxs)("div", {
-        className: x.content,
+        className: N.content,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/bold",
             color: void 0,
-            className: x.specialText,
+            className: N.specialText,
             children: f.NW.string(f.t.zUhr3N)
           }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
@@ -60,15 +60,15 @@ function N(e) {
             children: f.NW.format(f.t.Xw2XUV, {
               settingsHook: (e, t) => (0, r.jsx)(s.P3F, {
                 tag: "span",
-                className: x.specialTextLink,
+                className: N.specialTextLink,
                 onClick: _,
                 children: e
               }, t)
             })
           })]
         }), (0, r.jsx)(s.P3F, {
-          className: x.closeClickable,
-          onClick: () => b(h.L.USER_DISMISS),
+          className: N.closeClickable,
+          onClick: () => x(h.L.USER_DISMISS),
           children: (0, r.jsx)(s.Dio, {
             color: "currentColor",
             size: "xs"
@@ -79,8 +79,8 @@ function N(e) {
   }) : null
 }
 
-function b() {
-  return null == u.Z.coachmarkDismissibleContent ? null : (0, r.jsx)(N, {
+function x() {
+  return null == u.Z.coachmarkDismissibleContent ? null : (0, r.jsx)(b, {
     dismissibleContent: u.Z.coachmarkDismissibleContent
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 87791 **/
+/** Chunk was on 20756 **/
 n.d(t, {
   Z: () => h
 });
@@ -7,11 +7,11 @@ n(192379);
 var i = n(481060),
   o = n(570140),
   l = n(468026),
-  a = n(317770),
-  s = n(981631),
+  s = n(317770),
+  a = n(981631),
   c = n(388032);
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,13 +29,13 @@ function u(e) {
   }
   return e
 }
-let d = "ActivityInviteManager",
-  p = () => {
+let u = "ActivityInviteManager",
+  _ = () => {
     o.Z.dispatch({
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
-class f extends a.Z {
+class p extends s.Z {
   _initialize() {
     o.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
@@ -46,30 +46,30 @@ class f extends a.Z {
     let {
       activity: t,
       isPrivate: o,
-      context: a
-    } = e, f = a === s.IlC.POPOUT ? i.u1M : i.z1l;
-    o ? (0, i.h7j)(e => (0, r.jsx)(l.default, u({
+      context: s
+    } = e, p = s === a.IlC.POPOUT ? i.u1M : i.z1l;
+    o ? (0, i.h7j)(e => (0, r.jsx)(l.default, d({
       title: c.NW.formatToPlainString(c.t["2tN7io"], {
         name: t.name
       }),
       body: c.NW.string(c.t.MAxtkp),
       confirmText: c.NW.string(c.t.BddRzc)
     }, e)), {
-      onCloseCallback: p,
-      modalKey: d
-    }, f) : (0, i.ZDy)(async () => {
+      onCloseCallback: _,
+      modalKey: u
+    }, p) : (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("79921").then(n.bind(n, 699099));
-      return t => (0, r.jsx)(e, u({}, t))
+      return t => (0, r.jsx)(e, d({}, t))
     }, {
-      onCloseCallback: p,
-      modalKey: d,
-      contextKey: f
+      onCloseCallback: _,
+      modalKey: u,
+      contextKey: p
     })
   }
   handleModalClose(e) {
-    (0, i.Mr3)(d)
+    (0, i.Mr3)(u)
   }
 }
-let h = new f
+let h = new p

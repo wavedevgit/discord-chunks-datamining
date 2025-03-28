@@ -1,5 +1,4 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
   Z: () => b
 });
@@ -7,8 +6,8 @@ var i = n(192379),
   r = n(149765),
   o = n(442837),
   l = n(367907),
-  s = n(731429),
-  a = n(188471),
+  a = n(731429),
+  s = n(188471),
   c = n(318885),
   d = n(592125),
   u = n(984933),
@@ -66,13 +65,13 @@ class Z extends i.Component {
         return n
       })(Object(h)).forEach(function(e) {
         Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
-      }), u)), (0, a.a)(g.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      }), u)), (0, s.a)(g.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
-      let e = (0, s.K)(d.Z.getChannel(n), !0);
-      (0, c.Q)(g.rMx.CHANNEL_OPENED, _({}, e, (0, l.$H)(n))), (0, a.a)(g.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      let e = (0, a.K)(d.Z.getChannel(n), !0);
+      (0, c.Q)(g.rMx.CHANNEL_OPENED, _({}, e, (0, l.$H)(n))), (0, s.a)(g.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -86,15 +85,15 @@ let b = o.ZP.connectStores([m.Z, v.Z, p.Z, y.default, O.default, u.ZP, f.Z, h.ZP
   let i = m.Z.getGuildId(),
     o = v.Z.getChannelId(i),
     l = p.Z.getGuild(i),
-    s = y.default.getCurrentUser(),
-    a = null !== (t = u.ZP.getChannels(null == l ? void 0 : l.id)[u.sH]) && void 0 !== t ? t : [],
-    c = a.length > 0 ? a.filter(e => {
+    a = y.default.getCurrentUser(),
+    s = null !== (t = u.ZP.getChannels(null == l ? void 0 : l.id)[u.sH]) && void 0 !== t ? t : [],
+    c = s.length > 0 ? s.filter(e => {
       let {
         channel: t
       } = e;
       return f.Z.can(r.$e(g.Plq.SEND_MESSAGES, g.Plq.VIEW_CHANNEL), t)
     }).length : 0,
-    d = null != s && null != i && null !== (n = null === (e = h.ZP.getMember(i, s.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== n && n;
+    d = null != a && null != i && null !== (n = null === (e = h.ZP.getMember(i, a.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== n && n;
   return {
     selectedGuild: i,
     selectedChannel: o,

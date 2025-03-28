@@ -1,16 +1,15 @@
 /** Chunk was on 63141 **/
-"use strict";
 n(47120);
 var i = n(200651),
   r = n(149765),
   o = n(481060),
   l = n(570140),
-  s = n(700785);
+  a = n(700785);
 __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
   var {
     clientId: t,
     authorizeProps: {
-      authorizations: a,
+      authorizations: s,
       permissions: c
     }
   } = e, d = function(e, t) {
@@ -40,7 +39,7 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
       location: n
     })
   }
-  let p = s.Hn;
+  let p = a.Hn;
   try {
     p = r.vB(null != c ? c : 0)
   } catch (e) {}(0, o.ZDy)(async () => {
@@ -67,7 +66,7 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
         }
         return e
       }({}, t, d), r = r = {
-        authorizations: new Map(a),
+        authorizations: new Map(s),
         permissions: p,
         callback: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

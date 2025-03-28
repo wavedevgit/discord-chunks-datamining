@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => V
 }), n(47120), n(266796);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(809206),
-  o = n(634894),
+  o = n(809206),
+  l = n(634894),
   c = n(100527),
   d = n(906732),
   u = n(335131),
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(884697),
   h = n(175756),
   f = n(104494),
-  x = n(639119),
-  N = n(211712),
-  b = n(629654),
+  N = n(639119),
+  b = n(211712),
+  x = n(629654),
   _ = n(53691),
   E = n(165583),
   j = n(267717),
-  C = n(643879),
-  O = n(350327),
+  O = n(643879),
+  C = n(350327),
   S = n(996073),
   v = n(25990),
   T = n(626135),
@@ -94,14 +94,14 @@ function V(e) {
   let {
     analyticsLocations: et,
     sourceAnalyticsLocations: en
-  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), [er, ei] = i.useState(Math.floor(Math.random() * N.J2.length)), es = e => {
+  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), [er, ei] = i.useState(Math.floor(Math.random() * b.J2.length)), es = e => {
     if (e) {
-      if ((0, l.I5)(q), (0, O.z5)(K), (0, O.ho)(X), null != Q) {
+      if ((0, o.I5)(q), (0, C.z5)(K), (0, C.ho)(X), null != Q) {
         let e = m.Z.getProduct(Q.skuId);
-        null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, l.cV)(Q)) : null != g.Z.getPurchase(Q.skuId) && (0, l.cV)(Q)
+        null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, o.cV)(Q)) : null != g.Z.getPurchase(Q.skuId) && (0, o.cV)(Q)
       }
       T.default.track(W.rMx.TRY_IT_OUT_PRESET_SELECTED, {
-        preset: N.J2[er].presetName
+        preset: b.J2[er].presetName
       })
     }
   };
@@ -114,14 +114,14 @@ function V(e) {
       location_stack: en
     })
   }, [en, V, G]);
-  let ea = (null === (n = (0, x.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === L.Si.TIER_2,
-    el = (0, f.Ng)(),
-    eo = (0, f.Wp)(el, L.Si.TIER_2),
+  let ea = (null === (n = (0, N.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === L.Si.TIER_2,
+    eo = (0, f.Ng)(),
+    el = (0, f.Wp)(eo, L.Si.TIER_2),
     ec = "TryOutPremiumSection";
-  return ((0, o.j)({
+  return ((0, l.j)({
     location: ec + " auto on",
     autoTrackExposure: !0
-  }), (0, o.j)({
+  }), (0, l.j)({
     location: ec + " auto off",
     autoTrackExposure: !1
   }), F) ? (0, r.jsx)(d.Gt, {
@@ -142,7 +142,7 @@ function V(e) {
           }), M.NW.string(M.t.gMlDNT)]
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(b.Z, {
+          children: [(0, r.jsx)(x.Z, {
             selectedIndex: er,
             setSelectedIndex: ei
           }), (0, r.jsx)(k.Z, {
@@ -163,24 +163,24 @@ function V(e) {
           }), (0, r.jsx)(w.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, C.SD)({
+            pendingAvatarSrc: (0, O.SD)({
               userId: V.id,
               image: null != q ? q : z
             }),
             pendingColors: null != K ? K : Y,
-            onThemeColorsChange: O.rf,
+            onThemeColorsChange: C.rf,
             showPremiumIcon: !1,
             preventDisabled: !0
           }), (0, r.jsx)(D.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
             showRemoveBannerButton: null != X,
-            onBannerChange: O.f4,
+            onBannerChange: C.f4,
             showPremiumIcon: !1
           }), (0, r.jsx)(P.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
-            onAvatarChange: O.c_,
+            onAvatarChange: C.c_,
             showRemoveAvatarButton: !1,
             changeAvatarButtonText: M.NW.string(M.t["7z0D1d"]),
             sectionTitle: M.NW.string(M.t.vtFfPT)
@@ -207,8 +207,8 @@ function V(e) {
         text: M.NW.format(M.t.TmfgIy, {
           onClick: () => (0, j.y)(es)
         }),
-        button: H ? M.NW.string(M.t.AfRWIy) : eo ? M.NW.formatToPlainString(M.t.bkQ4bG, {
-          percent: null == el ? void 0 : el.discount.amount
+        button: H ? M.NW.string(M.t.AfRWIy) : el ? M.NW.formatToPlainString(M.t.bkQ4bG, {
+          percent: null == eo ? void 0 : eo.discount.amount
         }) : M.NW.string(M.t.pj0XBA),
         position: "inline",
         showShadow: !1

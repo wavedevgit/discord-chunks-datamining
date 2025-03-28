@@ -1,27 +1,28 @@
-/** Chunk was on 87791 **/
-n.d(t, {
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
   F: () => u
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(481060),
-  l = n(906732),
-  a = n(963249),
-  s = n(474936),
-  c = n(504589);
+var n = r(200651),
+  i = r(192379),
+  o = r(481060),
+  l = r(906732),
+  a = r(963249),
+  s = r(474936),
+  c = r(504589);
 let u = e => {
   let {
     text: t
   } = e, {
-    analyticsLocations: n
+    analyticsLocations: r
   } = (0, l.ZP)(), u = i.useRef(null);
-  return (0, r.jsx)(o.P3F, {
+  return (0, n.jsx)(o.P3F, {
     className: c.subscribeNow,
     innerRef: u,
     onClick: () => {
       (0, a.Z)({
         subscriptionTier: s.Si.TIER_2,
-        analyticsLocations: n,
+        analyticsLocations: r,
         returnRef: u
       })
     },

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.r(e.exports = {
   button: "button__2723e",
   xs: "xs__2723e",

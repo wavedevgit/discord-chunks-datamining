@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 });
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(704215),
-  l = n(481060),
-  o = n(906732),
+  o = n(481060),
+  l = n(906732),
   c = n(605236),
   d = n(441167),
   u = n(695346),
@@ -16,19 +16,19 @@ var r = n(200651),
   p = n(435064),
   h = n(779618),
   f = n(39604),
-  x = n(703288),
-  N = n(491758),
-  b = n(233685),
+  N = n(703288),
+  b = n(491758),
+  x = n(233685),
   _ = n(388032),
   E = n(678519),
   j = n(107248),
-  C = n(802138);
+  O = n(802138);
 
-function O(e) {
+function C(e) {
   let {
     className: t,
     showHeader: n = !0
-  } = e, O = u.tU.useSetting(), {
+  } = e, C = u.tU.useSetting(), {
     enableViewerClipping: S
   } = d.Z.useExperiment({
     location: "Clips Settings"
@@ -36,36 +36,36 @@ function O(e) {
     autoTrackExposure: !1
   }), {
     analyticsLocations: v
-  } = (0, o.ZP)(), T = (0, g.Go)(), {
+  } = (0, l.ZP)(), T = (0, g.Go)(), {
     viewerClipsEnabled: I
   } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(m.Z);
   return i.useEffect(() => {
     (0, c.EW)(a.z.CLIPS_SETTINGS_BETA_TAG)
-  }), (0, r.jsxs)(o.Gt, {
+  }), (0, r.jsxs)(l.Gt, {
     value: v,
-    children: [(T || n) && (0, r.jsx)(l.hjN, {
+    children: [(T || n) && (0, r.jsx)(o.hjN, {
       className: t,
-      tag: l.RB0.H1,
+      tag: o.RB0.H1,
       title: n ? (0, r.jsxs)("div", {
         className: E.headerContainer,
-        children: [_.NW.string(_.t.z2jK6e), (0, r.jsx)(x.Z, {})]
+        children: [_.NW.string(_.t.z2jK6e), (0, r.jsx)(N.Z, {})]
       }) : null,
       children: T && (0, r.jsxs)("form", {
         onSubmit: e => e.preventDefault(),
-        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(b.Z, {})]
+        children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(x.Z, {})]
       })
-    }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
-      className: n || T ? C.marginTop20 : t,
-      children: [(0, r.jsx)(l.j7V, {
+    }), T && (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
+      className: n || T ? O.marginTop20 : t,
+      children: [(0, r.jsx)(o.j7V, {
         hideBorder: !0,
         className: j.formItem,
-        value: O,
+        value: C,
         note: _.NW.string(_.t["wW9/zc"]),
         onChange: e => f.yg({
           allowVoiceRecording: e
         }),
         children: _.NW.string(_.t.AGDDkJ)
-      }), S && y && (0, r.jsx)(l.j7V, {
+      }), S && y && (0, r.jsx)(o.j7V, {
         hideBorder: !0,
         className: j.formItem,
         value: I,

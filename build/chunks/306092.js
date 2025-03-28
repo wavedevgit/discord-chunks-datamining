@@ -1,28 +1,29 @@
-/** Chunk was on 87791 **/
-n.d(t, {
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
   e: () => u
 });
-var r = n(200651),
-  i = n(481060),
-  o = n(409116),
-  l = n(755007),
-  a = n(231338),
-  s = n(666048);
+var n = r(200651),
+  i = r(481060),
+  o = r(409116),
+  l = r(755007),
+  a = r(231338),
+  s = r(666048);
 
 function c(e) {
   let {
     price: t,
-    isPremiumUser: n,
+    isPremiumUser: r,
     discount: c,
     hasSufficientOrbs: u
   } = e;
-  return t.currency === a.pK.DISCORD_ORB ? (0, r.jsx)(l.Z, {
+  return t.currency === a.pK.DISCORD_ORB ? (0, n.jsx)(l.Z, {
     orbAmount: t.amount,
     className: u ? void 0 : s.disabled
-  }) : (0, r.jsx)(o.F, {
+  }) : (0, n.jsx)(o.F, {
     price: t,
     discount: c,
-    icon: n ? (0, r.jsx)(i.SrA, {
+    icon: r ? (0, n.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
       className: s.nitroIcon
@@ -33,15 +34,15 @@ function c(e) {
 function u(e) {
   let {
     displayPrices: t,
-    isPremiumUser: n,
+    isPremiumUser: r,
     discount: i,
     hasSufficientOrbs: o
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, n.jsx)("div", {
     className: s.priceLine,
-    children: t.map((e, t) => (0, r.jsx)(c, {
+    children: t.map((e, t) => (0, n.jsx)(c, {
       price: e,
-      isPremiumUser: n,
+      isPremiumUser: r,
       discount: i,
       hasSufficientOrbs: o
     }, t))

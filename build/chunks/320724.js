@@ -1,7 +1,7 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Ky: () => a,
-  P7: () => l
+  P7: () => o
 }), n(411104);
 var r = n(570140),
   i = n(358085),
@@ -19,7 +19,7 @@ function a() {
   })
 }
 
-function l() {
+function o() {
   if (!(0, i.isDesktop)()) throw Error("Attempted to stop observing candidate games on a non-desktop platform");
   s.ZP.clearCandidateGamesCallback(), r.Z.dispatch({
     type: "GAME_DETECTION_WATCH_CANDIDATE_GAMES_STOP"

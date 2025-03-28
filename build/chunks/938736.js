@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   $s: () => d,
   Hg: () => u,
@@ -8,20 +8,20 @@ var r = n(704215),
   i = n(605236),
   s = n(533525),
   a = n(796634),
-  l = n(388032);
-let o = e => {
+  o = n(388032);
+let l = e => {
     let {
       hasSentAll: t,
       hasSentAtLeastOne: n,
       numSentUsers: r,
       helpdeskArticle: i
     } = e;
-    return t ? l.NW.format(l.t["3OYZMT"], {
+    return t ? o.NW.format(o.t["3OYZMT"], {
       helpdeskArticle: i
-    }) : n ? l.NW.format(l.t.EkWiZm, {
+    }) : n ? o.NW.format(o.t.EkWiZm, {
       numFriends: a.Q - r,
       helpdeskArticle: i
-    }) : l.NW.format(l.t.FjrXCg, {
+    }) : o.NW.format(o.t.FjrXCg, {
       numFriends: a.Q,
       helpdeskArticle: i
     })
@@ -35,14 +35,14 @@ let o = e => {
     let {
       hasSentAll: t
     } = e;
-    return t ? l.NW.string(l.t.M47CJS) : l.NW.string(l.t.USo4s7)
+    return t ? o.NW.string(o.t.M47CJS) : o.NW.string(o.t.USo4s7)
   },
   u = e => {
     let {
       helpdeskArticle: t,
       referralsStatuses: n
     } = e;
-    return o({
+    return l({
       hasSentAll: n.sent >= a.Q,
       hasSentAtLeastOne: n.sent >= 1,
       numSentUsers: n.sent,

@@ -6,51 +6,51 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var l = n(120356),
-  a = n.n(l),
-  o = n(442837),
-  s = n(481060),
-  i = n(594174),
-  d = n(381585),
-  c = n(597688),
-  u = n(709999),
-  g = n(388032),
-  h = n(39532);
+  o = n.n(l),
+  a = n(442837),
+  i = n(481060),
+  s = n(594174),
+  c = n(381585),
+  u = n(597688),
+  d = n(709999),
+  b = n(388032),
+  p = n(39532);
 let f = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, f = (0, o.e7)([i.default], () => i.default.getCurrentUser());
+  } = e, f = (0, a.e7)([s.default], () => s.default.getCurrentUser());
   return null == f ? null : (0, r.jsxs)("div", {
-    className: a()(h.shelfBlockContainer, h.centeredSection),
+    className: o()(p.shelfBlockContainer, p.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: h.blockHeader,
-      children: [(0, r.jsx)(s.X6q, {
+      className: p.blockHeader,
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(s.zxk, {
-        color: s.Ttl.PRIMARY,
-        look: s.iLD.FILLED,
+      }), (0, r.jsx)(i.zxk, {
+        color: i.Ttl.PRIMARY,
+        look: i.iLD.FILLED,
         onClick: () => n("shelf block see all", t.categorySkuId),
-        children: g.NW.formatToPlainString(g.t.bc9RBA, {
+        children: b.NW.formatToPlainString(b.t.bc9RBA, {
           category_name: t.name
         })
       })]
     }), (0, r.jsx)("div", {
-      className: h.feed,
+      className: p.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
-          let a = c.Z.getCategoryForProduct(e),
-            o = c.Z.getProduct(e);
-          return null == a || null == o ? null : (0, r.jsx)(d.k0, {
+          let o = u.Z.getCategoryForProduct(e),
+            a = u.Z.getProduct(e);
+          return null == o || null == a ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: (0, r.jsx)(u.Z, {
-              product: o,
-              category: a,
+            children: (0, r.jsx)(d.Z, {
+              product: a,
+              category: o,
               user: f,
               tab: l,
               isInFeedView: !0

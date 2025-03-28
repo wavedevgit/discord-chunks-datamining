@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => A
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(660216),
   d = n(230711),
   u = n(825209),
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(131951),
   h = n(556296),
   f = n(924557),
-  x = n(435064),
-  N = n(894694),
-  b = n(779618),
+  N = n(435064),
+  b = n(894694),
+  x = n(779618),
   _ = n(39604),
   E = n(442334),
   j = n(356659),
-  C = n(981631),
-  O = n(37113),
+  O = n(981631),
+  C = n(37113),
   S = n(526761),
   v = n(388032),
   T = n(513279),
@@ -31,18 +31,18 @@ var r = n(200651),
   y = n(802138);
 
 function A() {
-  let e = (0, l.e7)([p.Z], () => p.Z.getHardwareEncoding()),
+  let e = (0, o.e7)([p.Z], () => p.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
       decoupledClipsEnabled: s,
       clipsLength: A,
       clipsQuality: P
-    } = (0, l.cj)([x.Z], () => x.Z.getSettings()),
-    R = (0, l.e7)([x.Z], () => x.Z.getHardwareClassification()),
-    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
-    Z = x.Z.isDecoupledGameClippingEnabled(),
-    w = (0, b.Z)(p.Z),
+    } = (0, o.cj)([N.Z], () => N.Z.getSettings()),
+    R = (0, o.e7)([N.Z], () => N.Z.getHardwareClassification()),
+    D = (0, o.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
+    Z = N.Z.isDecoupledGameClippingEnabled(),
+    w = (0, x.Z)(p.Z),
     {
       showClipsHeaderEntrypoint: k
     } = f.NV.useExperiment({
@@ -51,7 +51,7 @@ function A() {
       autoTrackExposure: !1
     });
   a()(null != D, "Save clip keybind unset");
-  let W = (0, l.e7)([m.default], () => m.default.locale),
+  let W = (0, o.e7)([m.default], () => m.default.locale),
     L = i.useMemo(() => [{
       value: j.OT.SECONDS_30,
       label: v.NW.formatToPlainString(v.t["bTFv//"], {
@@ -69,43 +69,43 @@ function A() {
       })
     }], [W]),
     B = i.useMemo(() => [{
-      value: O.LY.RESOLUTION_480,
+      value: C.LY.RESOLUTION_480,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_480
+        resolution: C.LY.RESOLUTION_480
       })
     }, {
-      value: O.LY.RESOLUTION_720,
+      value: C.LY.RESOLUTION_720,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_720
+        resolution: C.LY.RESOLUTION_720
       })
     }, {
-      value: O.LY.RESOLUTION_1080,
+      value: C.LY.RESOLUTION_1080,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_1080
+        resolution: C.LY.RESOLUTION_1080
       })
     }, {
-      value: O.LY.RESOLUTION_1440,
+      value: C.LY.RESOLUTION_1440,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_1440
+        resolution: C.LY.RESOLUTION_1440
       })
     }, {
-      value: O.LY.RESOLUTION_SOURCE,
+      value: C.LY.RESOLUTION_SOURCE,
       label: v.NW.string(v.t.XjXqzs)
     }], [W]),
     M = i.useMemo(() => [{
-      value: O.ws.FPS_15,
+      value: C.ws.FPS_15,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: O.ws.FPS_15
+        fps: C.ws.FPS_15
       })
     }, {
-      value: O.ws.FPS_30,
+      value: C.ws.FPS_30,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: O.ws.FPS_30
+        fps: C.ws.FPS_30
       })
     }, {
-      value: O.ws.FPS_60,
+      value: C.ws.FPS_60,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: O.ws.FPS_60
+        fps: C.ws.FPS_60
       })
     }], [W]),
     U = i.useCallback(e => {
@@ -141,21 +141,21 @@ function A() {
       }), t))
     }, [D]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.hjN, {
+    children: [(0, r.jsxs)(l.hjN, {
       disabled: !e,
       children: [!e && (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
         children: v.NW.format(v.t.kiaF4e, {
-          onClick: () => d.Z.open(C.oAB.VOICE, null, {
+          onClick: () => d.Z.open(O.oAB.VOICE, null, {
             scrollPosition: S.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === N.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
+      }), R === b.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
         children: v.NW.string(v.t.SIxrIC)
-      }) : null, (0, r.jsx)(o.j7V, {
+      }) : null, (0, r.jsx)(l.j7V, {
         hideBorder: !0,
         disabled: !e,
         className: I.formItem,
@@ -171,10 +171,10 @@ function A() {
         children: v.NW.string(v.t["Z+Mfqa"])
       })]
     }), Z && w && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
+      children: [(0, r.jsx)(l.$i$, {}), (0, r.jsx)(l.hjN, {
         className: y.marginTop20,
         disabled: !e,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           hideBorder: !0,
           disabled: !e,
           className: I.formItem,
@@ -188,9 +188,9 @@ function A() {
         })
       })]
     }), k && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
+      children: [(0, r.jsx)(l.$i$, {}), (0, r.jsx)(l.hjN, {
         className: y.marginTop20,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           hideBorder: !0,
           className: I.formItem,
           value: n,
@@ -199,7 +199,7 @@ function A() {
           children: v.NW.string(v.t["3zwNf3"])
         })
       })]
-    }), (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
+    }), (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
       className: y.marginTop20,
       children: [(0, r.jsx)(E.Q, {
         className: I.formItem,

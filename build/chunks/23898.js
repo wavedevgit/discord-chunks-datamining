@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   notificationSound: "notificationSound__6d8e5",
   soundName: "soundName__6d8e5",

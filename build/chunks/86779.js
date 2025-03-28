@@ -14,17 +14,17 @@ var r = n(200651),
   p = n(893776),
   h = n(314897),
   g = n(626135),
-  _ = n(70956),
-  m = n(970648),
-  f = n(981631),
+  m = n(70956),
+  f = n(970648),
+  _ = n(981631),
   b = n(388032),
   x = n(130437);
 let N = "mweb_handoff_nonce",
   v = "mweb_handoff_nonce_expiration",
-  E = +_.Z.Millis.MINUTE,
+  E = +m.Z.Millis.MINUTE,
   I = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  S = new Set(["deep_link_failed"]),
-  j = () => {
+  j = new Set(["deep_link_failed"]),
+  S = () => {
     c.K.remove(N), c.K.remove(v)
   },
   O = () => {
@@ -33,38 +33,38 @@ let N = "mweb_handoff_nonce",
         fingerprint: t,
         handoff_token: n
       } = (0, o.parse)(window.location.search),
-      _ = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
-      O = null != _ ? _ : null !== e ? e : void 0;
+      m = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
+      O = null != m ? m : null !== e ? e : void 0;
     i.useEffect(() => {
-      null !== _ && e !== _ && d.Z.dispatch({
+      null !== m && e !== m && d.Z.dispatch({
         type: "FINGERPRINT",
-        fingerprint: _
+        fingerprint: m
       })
-    }, [_, e]);
+    }, [m, e]);
     let [C, y] = i.useState(null), T = i.useCallback(e => {
-      y(e), g.default.track(f.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      y(e), g.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, a.K)(O)
       }, {
         fingerprint: O
       })
-    }, [y, O]), P = c.K.get(N);
-    if ("null" === n && null === C && T("deep_link_failed"), null != n && "null" !== n && null == P && null === C && T("nonce_missing"), i.useEffect(() => {
-        if (null != P) {
+    }, [y, O]), A = c.K.get(N);
+    if ("null" === n && null === C && T("deep_link_failed"), null != n && "null" !== n && null == A && null === C && T("nonce_missing"), i.useEffect(() => {
+        if (null != A) {
           let e = c.K.get(v);
-          (null == e || Date.now() >= e) && (T("nonce_expired"), j())
+          (null == e || Date.now() >= e) && (T("nonce_expired"), S())
         }
-      }, [P, T]), i.useEffect(() => {
-        null != n && "null" !== n && null != P && null == C && s.tn.post({
-          url: f.ANM.HANDOFF_EXCHANGE,
+      }, [A, T]), i.useEffect(() => {
+        null != n && "null" !== n && null != A && null == C && s.tn.post({
+          url: _.ANM.HANDOFF_EXCHANGE,
           body: {
-            key: P,
+            key: A,
             handoff_token: n
           },
           rejectWithError: !0
         }).then(e => p.Z.loginToken(e.body.token, !1)).then(() => {
-          g.default.track(f.rMx.LOGIN_SUCCESSFUL, {
-            source: f.uRl.MOBILE_WEB_HANDOFF,
+          g.default.track(_.rMx.LOGIN_SUCCESSFUL, {
+            source: _.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: !1,
             fingerprint: (0, a.K)(O)
           });
@@ -74,37 +74,37 @@ let N = "mweb_handoff_nonce",
         }).catch(() => {
           T("handoff_exchange")
         }).finally(() => {
-          j()
+          S()
         })
-      }, [n, P, C, O, T]), null == O) return null;
-    let A = null == C ? (0, r.jsxs)(r.Fragment, {
+      }, [n, A, C, O, T]), null == O) return null;
+    let P = null == C ? (0, r.jsxs)(r.Fragment, {
       children: [b.NW.string(b.t.uJ1Jsb), (0, r.jsx)("br", {}), b.NW.string(b.t.GHVWAg)]
-    }) : S.has(C) ? b.NW.string(b.t.EPt55u) : I.has(C) ? b.NW.string(b.t.g87kTk) : void 0;
-    return null != C && S.has(C) ? (0, r.jsx)("div", {
+    }) : j.has(C) ? b.NW.string(b.t.EPt55u) : I.has(C) ? b.NW.string(b.t.g87kTk) : void 0;
+    return null != C && j.has(C) ? (0, r.jsx)("div", {
       className: x.errorContainer,
       children: (0, r.jsx)(u.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
-        children: A
+        children: P
       })
     }) : (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
-        children: A
+        children: P
       }), (0, r.jsx)(u.zxk, {
         color: u.zxk.Colors.BRAND_INVERTED,
         onClick: () => {
-          let e = m.Z.generateNonce();
+          let e = f.Z.generateNonce();
           c.K.set(N, e), c.K.set(v, Date.now() + E);
-          let t = new URL(f.x0X),
+          let t = new URL(_.x0X),
             n = new URLSearchParams(window.location.search);
           n.delete("fingerprint"), n.delete("handoff_token");
           let r = new URLSearchParams;
-          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", O), t.search = r.toString(), g.default.track(f.rMx.DEEP_LINK_CLICKED, {
+          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", O), t.search = r.toString(), g.default.track(_.rMx.DEEP_LINK_CLICKED, {
             fingerprint: (0, a.K)(O),
             source: "mobile_web_handoff",
-            destination: f.x0X
+            destination: _.x0X
           }, {
             fingerprint: O,
             flush: !0

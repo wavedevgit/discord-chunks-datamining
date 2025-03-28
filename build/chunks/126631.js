@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(541716),
-  l = n(752305),
-  o = n(893718),
+  o = n(752305),
+  l = n(893718),
   c = n(313201),
   d = n(131704),
   u = n(993413),
@@ -19,42 +19,42 @@ let h = (0, c.hQ)(),
     id: "1",
     type: m.d4z.DM
   }),
-  x = (0, c.hQ)();
+  N = (0, c.hQ)();
 
-function N(e) {
+function b(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
     pendingBio: d,
-    placeholder: N,
-    currentBio: b,
+    placeholder: b,
+    currentBio: x,
     disabled: _ = !1
-  } = e, [E, j] = i.useState(null != d ? d : b), [C, O] = i.useState((0, l.JM)(E)), S = i.useRef(!1);
+  } = e, [E, j] = i.useState(null != d ? d : x), [O, C] = i.useState((0, o.JM)(E)), S = i.useRef(!1);
   return i.useEffect(() => {
     if (void 0 === d) {
-      let e = (0, l.JM)(b);
-      j(b), O(e)
+      let e = (0, o.JM)(x);
+      j(x), C(e)
     }
-  }, [d, b]), (0, r.jsxs)(u.Z, {
+  }, [d, x]), (0, r.jsxs)(u.Z, {
     title: t,
     titleId: h,
     description: g.NW.string(g.t.Bbw6AQ),
     errors: n,
     disabled: _,
-    children: [(0, r.jsx)(o.Z, {
-      "aria-describedby": x,
+    children: [(0, r.jsx)(l.Z, {
+      "aria-describedby": N,
       "aria-labelledby": h,
       className: p.bioTextAreaContainer,
       innerClassName: p.bioTextArea,
       maxCharacterCount: m.tPV,
       onChange: function(e, t, n) {
-        t !== E && (j(t), O(n), c(t))
+        t !== E && (j(t), C(n), c(t))
       },
-      placeholder: N,
+      placeholder: b,
       channel: f,
       textValue: E,
-      richValue: C,
+      richValue: O,
       type: a.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
         S.current = !1
@@ -72,7 +72,7 @@ function N(e) {
         })
       }
     }), (0, r.jsx)(s.nn4, {
-      id: x,
+      id: N,
       children: g.NW.format(g.t["+DFxLS"], {
         maxLength: m.tPV
       })

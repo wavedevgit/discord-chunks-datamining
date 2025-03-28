@@ -1,64 +1,64 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   l = n(192379),
-  a = n(120356),
-  o = n.n(a),
-  s = n(442837),
-  i = n(481060),
-  d = n(594174),
-  c = n(381585),
-  u = n(597688),
-  g = n(370039),
-  h = n(937510),
+  o = n(120356),
+  a = n.n(o),
+  i = n(442837),
+  s = n(481060),
+  c = n(594174),
+  u = n(381585),
+  d = n(597688),
+  b = n(370039),
+  p = n(937510),
   f = n(38900),
-  m = n(709999),
-  p = n(957058),
-  b = n(215023),
-  C = n(388032),
+  g = n(709999),
+  h = n(957058),
+  m = n(215023),
+  v = n(388032),
   _ = n(39532);
-let v = e => {
+let C = e => {
   let {
     isLoading: t,
     rankedSkuIds: n,
-    handleTransition: a,
-    numVisibleItems: v,
+    handleTransition: o,
+    numVisibleItems: C,
     tab: x
-  } = e, k = (0, s.e7)([d.default], () => d.default.getCurrentUser()), j = l.createRef(), S = (0, p.u)(), y = l.useMemo(() => S(n), [t, S, n]), O = (0, g.a)()(y), E = (0, h.l)(O);
-  return null == k ? null : (0, r.jsxs)("div", {
-    className: o()(_.popularPicksSection, _.centeredSection),
+  } = e, O = (0, i.e7)([c.default], () => c.default.getCurrentUser()), y = l.createRef(), j = (0, h.u)(), k = l.useMemo(() => j(n), [t, j, n]), S = (0, b.a)()(k), P = (0, p.l)(S);
+  return null == O ? null : (0, r.jsxs)("div", {
+    className: a()(_.popularPicksSection, _.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: _.blockHeader,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
-        children: x === b.AW.ORBS ? C.NW.string(C.t.dFgeub) : C.NW.string(C.t.ivaAAw)
-      }), x === b.AW.HOME && (0, r.jsx)(i.zxk, {
-        color: i.Ttl.PRIMARY,
-        look: i.iLD.FILLED,
-        onClick: () => a("shop all top"),
-        children: C.NW.string(C.t.xFcotb)
+        children: x === m.AW.ORBS ? v.NW.string(v.t.dFgeub) : v.NW.string(v.t.ivaAAw)
+      }), x === m.AW.HOME && (0, r.jsx)(s.zxk, {
+        color: s.Ttl.PRIMARY,
+        look: s.iLD.FILLED,
+        onClick: () => o("shop all top"),
+        children: v.NW.string(v.t.xFcotb)
       })]
     }), (0, r.jsx)("div", {
       className: _.feed,
-      ref: j,
+      ref: y,
       children: t ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(f.K, {}, t + 1))
       }) : (0, r.jsx)(r.Fragment, {
-        children: E.slice(0, v).map((e, t) => {
-          let n = u.Z.getCategoryForProduct(e.skuId);
-          return null == e || null == n ? null : (0, r.jsx)(c.k0, {
+        children: P.slice(0, C).map((e, t) => {
+          let n = d.Z.getCategoryForProduct(e.skuId);
+          return null == e || null == n ? null : (0, r.jsx)(u.k0, {
             newValue: {
               tilePosition: t,
               pageSection: "popular picks",
               categoryPosition: 2
             },
-            children: (0, r.jsx)(m.Z, {
+            children: (0, r.jsx)(g.Z, {
               product: e,
               category: n,
-              user: k,
+              user: O,
               tab: x,
               isInFeedView: !0
             }, e.skuId)

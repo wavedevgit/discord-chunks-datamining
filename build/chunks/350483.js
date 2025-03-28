@@ -1,14 +1,14 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651);
 n(192379);
 var i = n(392711),
   s = n.n(i),
   a = n(481060),
-  l = n(358230),
-  o = n(905423),
+  o = n(358230),
+  l = n(905423),
   c = n(984933),
   d = n(914010),
   u = n(771845),
@@ -18,40 +18,40 @@ var i = n(392711),
   h = n(981631),
   f = n(490897);
 
-function x(e, t) {
+function N(e, t) {
   return [{
     resourceId: e,
     type: f.W.GUILD_EVENT
-  }, ...e === h.ME ? m.Z.getPrivateChannelIds() : (0, l.Z)(e, {
+  }, ...e === h.ME ? m.Z.getPrivateChannelIds() : (0, o.Z)(e, {
     withVoiceChannels: t,
     withCurrentVoiceChannel: !0
   }).map(e => e.id)]
 }
-let N = s().throttle(function(e, t) {
+let b = s().throttle(function(e, t) {
   var i, s;
-  let l, {
+  let o, {
       channelPredicate: m = () => !0,
       guildPredicate: f = () => !0,
-      guildFeaturePredicate: N = () => !1,
-      ensureChatIsVisible: b = () => !1,
+      guildFeaturePredicate: b = () => !1,
+      ensureChatIsVisible: x = () => !1,
       withVoiceChannels: _ = !1
     } = t,
-    E = null !== (i = o.Z.getState().guildId) && void 0 !== i ? i : h.ME,
-    j = o.Z.getState().channelId,
-    C = function(e, t) {
+    E = null !== (i = l.Z.getState().guildId) && void 0 !== i ? i : h.ME,
+    j = l.Z.getState().channelId,
+    O = function(e, t) {
       let n = [h.ME, ...u.ZP.getFlattenedGuildIds()],
         r = n.indexOf(e);
       return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
     }(E, e),
-    O = e > 0 ? 0 : C.length - 1,
-    S = x(E, _),
+    C = e > 0 ? 0 : O.length - 1,
+    S = N(E, _),
     v = S.indexOf(j) + e;
   for (; null != E && "" !== E;) {
-    if (l = S[v], f(E))
-      for (; null != l && "" !== l;) {
-        if ("string" == typeof l) {
-          if (m(E, l)) return (0, p.K)(E, l, !1, b(E, l))
-        } else if ("object" == typeof l && N(l.resourceId, l.type)) return E !== d.Z.getGuildId() && (0, p.K)(E, null === (s = c.ZP.getDefaultChannel(E)) || void 0 === s ? void 0 : s.id), (0, a.ZDy)(async () => {
+    if (o = S[v], f(E))
+      for (; null != o && "" !== o;) {
+        if ("string" == typeof o) {
+          if (m(E, o)) return (0, p.K)(E, o, !1, x(E, o))
+        } else if ("object" == typeof o && b(o.resourceId, o.type)) return E !== d.Z.getGuildId() && (0, p.K)(E, null === (s = c.ZP.getDefaultChannel(E)) || void 0 === s ? void 0 : s.id), (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("77699")]).then(n.bind(n, 17671));
@@ -87,10 +87,10 @@ let N = s().throttle(function(e, t) {
             guildId: E
           }))
         });
-        v += e, l = S[v]
+        v += e, o = S[v]
       }
-    if (O += e, null == (E = C[O]) || "" === E) break;
-    S = x(E, _), v = e < 0 ? S.length - 1 : 0
+    if (C += e, null == (E = O[C]) || "" === E) break;
+    S = N(E, _), v = e < 0 ? S.length - 1 : 0
   }
   g.S.dispatch(h.CkL.SHAKE_APP, {
     duration: 200,

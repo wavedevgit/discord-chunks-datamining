@@ -1,45 +1,45 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  K: () => g,
-  Z: () => h
+  K: () => b,
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
 var l = n(120356),
-  a = n.n(l),
-  o = n(577852),
-  s = n(134442),
-  i = n(219574),
-  d = n(661252);
-let c = () => 4 * Math.random() + 8,
-  u = [c(), c(), c()],
-  g = () => (0, r.jsx)("div", {
-    className: a()(i.skeleton, d.shopCard),
+  o = n.n(l),
+  a = n(577852),
+  i = n(134442),
+  s = n(219574),
+  c = n(661252);
+let u = () => 4 * Math.random() + 8,
+  d = [u(), u(), u()],
+  b = () => (0, r.jsx)("div", {
+    className: o()(s.skeleton, c.shopCard),
     children: (0, r.jsxs)("div", {
-      className: i.cardBody,
+      className: s.cardBody,
       children: [(0, r.jsx)("div", {
-        className: i.cardAvatar
+        className: s.cardAvatar
       }), (0, r.jsx)("div", {
-        className: i.cardTitle
+        className: s.cardTitle
       }), (0, r.jsx)("div", {
-        className: i.cardDescription
+        className: s.cardDescription
       }), (0, r.jsx)("div", {
-        className: i.cardSummary
+        className: s.cardSummary
       })]
     })
   }),
-  h = () => (0, r.jsx)("div", {
-    className: o.skeletons,
-    children: u.map(e => (0, r.jsxs)("div", {
-      className: o.cardsContainer,
+  p = () => (0, r.jsx)("div", {
+    className: a.skeletons,
+    children: d.map(e => (0, r.jsxs)("div", {
+      className: a.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(i.skeleton, s.shopBanner),
+        className: o()(s.skeleton, i.shopBanner),
         children: (0, r.jsx)("div", {
-          className: i.bannerBody
+          className: s.bannerBody
         })
       }), Array.from({
         length: e
-      }, (e, t) => t).map(e => (0, r.jsx)(g, {}, e))]
+      }, (e, t) => t).map(e => (0, r.jsx)(b, {}, e))]
     }, e))
   })

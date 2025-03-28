@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   switchRowContainer: "switchRowContainer__6de8b",
   activitySwitchRow: "activitySwitchRow__6de8b",

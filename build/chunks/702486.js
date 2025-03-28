@@ -1,49 +1,49 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  _: () => i
+  _: () => s
 });
 var r = n(192379),
   l = n(772848),
-  a = n(638730),
-  o = n(626135);
-let s = (e, t, n, r) => {
+  o = n(638730),
+  a = n(626135);
+let i = (e, t, n, r) => {
     let {
       scrollTop: l = 0,
-      scrollOffset: a = 0,
-      scrollHeight: s = 0,
-      scrollWidth: i = 0
+      scrollOffset: o = 0,
+      scrollHeight: i = 0,
+      scrollWidth: s = 0
     } = r;
-    if (s > 0) {
-      let r = (l + a) / s;
-      r > 0 && o.default.track(e, {
+    if (i > 0) {
+      let r = (l + o) / i;
+      r > 0 && a.default.track(e, {
         scroll_visible_percent: r,
         source: n,
-        page_height: Math.round(s),
-        page_width: Math.round(i),
+        page_height: Math.round(i),
+        page_width: Math.round(s),
         page_session_id: t
       })
     }
   },
-  i = (e, t) => {
+  s = (e, t) => {
     let n = r.useRef(null),
-      o = r.useRef((0, l.Z)()),
-      i = (0, a.h)(s, 5e3, [], {
+      a = r.useRef((0, l.Z)()),
+      s = (0, o.h)(i, 5e3, [], {
         trailing: !0
       }),
-      d = r.useCallback(() => {
+      c = r.useCallback(() => {
         var r;
         let l = null === (r = n.current) || void 0 === r ? void 0 : r.getScrollerNode();
-        null != l && i(e, o.current, t, {
+        null != l && s(e, a.current, t, {
           scrollTop: l.scrollTop,
           scrollOffset: l.offsetHeight,
           scrollHeight: l.scrollHeight,
           scrollWidth: l.scrollWidth
         })
-      }, [i, e, t]);
+      }, [s, e, t]);
     return {
       scrollerRef: n,
-      scrollHandler: d,
-      sessionId: o.current
+      scrollHandler: c,
+      sessionId: a.current
     }
   }

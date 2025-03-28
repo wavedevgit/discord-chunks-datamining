@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => m
 }), n(653041);
 var r, i = n(442837),
   s = n(570140),
   a = n(381496),
-  l = n(430824);
+  o = n(430824);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,7 +26,7 @@ let c = {},
 d();
 class u extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (c = e), this.waitFor(l.Z)
+    null != e && (c = e), this.waitFor(o.Z)
   }
   getState() {
     return c
@@ -41,7 +41,7 @@ class u extends(r = i.ZP.PersistedStore) {
     return 0 !== c.lastFetched
   }
 }
-o(u, "displayName", "GuildAffinitiesStore"), o(u, "persistKey", "GuildAffinitiesStore");
+l(u, "displayName", "GuildAffinitiesStore"), l(u, "persistKey", "GuildAffinitiesStore");
 let m = new u(s.Z, {
   CONNECTION_OPEN: function() {
     return Date.now() - c.lastFetched > 864e5 && (0, a.j)(), !1

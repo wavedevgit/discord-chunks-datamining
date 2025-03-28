@@ -1,23 +1,23 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(47120);
 var r = n(192379),
   i = n(597688),
   s = n(884697),
   a = n(223143);
-let l = function(e) {
+let o = function(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    [n, l] = r.useState(),
+    [n, o] = r.useState(),
     {
-      categories: o,
+      categories: l,
       purchases: c
     } = (0, a.ZP)({
       location: "useTryItOutAvatarDecoration"
     });
   return r.useEffect(() => {
-    (null == n || 0 === n.size) && l(o)
-  }, [o, n]), r.useMemo(() => {
+    (null == n || 0 === n.size) && o(l)
+  }, [l, n]), r.useMemo(() => {
     if (null != e) return e;
     if (null == n || !t) return;
     let r = (0, s.iC)(c, n).filter(e => {

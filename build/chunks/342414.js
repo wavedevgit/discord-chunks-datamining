@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => w
 }), n(47120);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(927359),
   d = n(975298),
   u = n(125529),
@@ -17,14 +17,14 @@ var i = n(120356),
   p = n(775412),
   h = n(695349),
   f = n(520540),
-  x = n(501862),
-  N = n(533525),
-  b = n(197115),
+  N = n(501862),
+  b = n(533525),
+  x = n(197115),
   _ = n(823188),
   E = n(184176),
   j = n(386733),
-  C = n(474936),
-  O = n(981631),
+  O = n(474936),
+  C = n(981631),
   S = n(388032),
   v = n(267625),
   T = n(872905),
@@ -54,7 +54,7 @@ let A = e => {
     } = e, {
       headingText: n,
       headingTop: i,
-      headingBottom: l
+      headingBottom: o
     } = Z();
     return (0, r.jsxs)("div", {
       className: s()(v.container, t),
@@ -69,9 +69,9 @@ let A = e => {
           variant: "display-lg",
           color: "always-white",
           children: n
-        }), l, (0, r.jsx)("div", {
+        }), o, (0, r.jsx)("div", {
           className: v.buttonContainer,
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(x.Z, {
             color: a.Ttl.BRAND,
             buttonText: S.NW.string(S.t["3KomGR"]),
             className: v.button,
@@ -92,8 +92,8 @@ let A = e => {
       autoTrackExposure: !1
     }), i = n === f.p.VARIANT_2, {
       headingText: s,
-      headingTop: l,
-      headingBottom: o
+      headingTop: o,
+      headingBottom: l
     } = Z();
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("img", {
@@ -105,13 +105,13 @@ let A = e => {
         "data-testid": "subscriber-nitro-home-hero-header",
         children: (0, r.jsxs)("div", {
           className: v.contentV2,
-          children: [l, (0, r.jsx)(a.X6q, {
+          children: [o, (0, r.jsx)(a.X6q, {
             variant: "display-lg",
             color: "always-white",
             children: s
-          }), o, i && (0, r.jsx)("div", {
+          }), l, i && (0, r.jsx)("div", {
             className: v.buttonContainer,
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(x.Z, {
               color: a.Ttl.BRAND,
               buttonText: S.NW.string(S.t["3KomGR"]),
               className: v.button,
@@ -155,20 +155,20 @@ let A = e => {
       location: n
     } = e, {
       analyticsLocations: i
-    } = (0, o.ZP)(l.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = S.NW.string(S.t.qYKftb), b = (0, N.b)(n), E = (0, r.jsx)(A, {
+    } = (0, l.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = S.NW.string(S.t.qYKftb), x = (0, b.b)(n), E = (0, r.jsx)(A, {
       className: t
     }), j = S.NW.string(S.t.ifwQZW), T = !1, {
       fractionalState: I,
       endsAt: Z
     } = (0, d.Z)(), w = (0, c.Z)(Z, c.a.ENDS_IN);
-    a ? (j = S.NW.string(S.t.ifwQZW), E = (0, r.jsx)(R, {})) : b && (f = S.NW.string(S.t.qYKftb), j = S.NW.string(S.t.ifwQZW), E = (0, r.jsx)(P, {
+    a ? (j = S.NW.string(S.t.ifwQZW), E = (0, r.jsx)(R, {})) : x && (f = S.NW.string(S.t.qYKftb), j = S.NW.string(S.t.ifwQZW), E = (0, r.jsx)(P, {
       location: n
     }));
     let k = null;
-    if (I !== C.a$.NONE && !a) {
+    if (I !== O.a$.NONE && !a) {
       m = !0, f = S.NW.string(S.t.vaqFvb), T = !0;
       let e = S.NW.format(S.t["yR+oDA"], {
-        helpCenterLink: g.Z.getArticleURL(O.BhN.FRACTIONAL_PREMIUM_ABOUT)
+        helpCenterLink: g.Z.getArticleURL(C.BhN.FRACTIONAL_PREMIUM_ABOUT)
       });
       k = (0, r.jsx)(u.Z, {
         text: e,
@@ -179,7 +179,7 @@ let A = e => {
           var t, n;
           return (0, r.jsx)("div", (t = y({}, e), n = n = {
             className: v.pillContainer,
-            children: (0, r.jsx)(x.Z, {
+            children: (0, r.jsx)(N.Z, {
               countdownText: w,
               showInfoIcon: !0
             })
@@ -207,7 +207,7 @@ let A = e => {
         className: v.flexCentered,
         children: (0, r.jsx)(_.mn, y({}, W))
       }) : (0, r.jsx)(_.Cy, y({}, W));
-    return (0, r.jsx)(o.Gt, {
+    return (0, r.jsx)(l.Gt, {
       value: i,
       children: (0, r.jsx)(D.Provider, {
         value: {

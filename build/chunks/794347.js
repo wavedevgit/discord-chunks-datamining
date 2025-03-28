@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => N,
+  Z: () => b,
   _: () => h
 });
 var r, i = n(200651),
   s = n(192379),
   a = n(120356),
-  l = n.n(a),
-  o = n(692547),
+  o = n.n(a),
+  l = n(692547),
   c = n(477690),
   d = n(393238),
   u = n(162168),
@@ -20,42 +20,42 @@ let f = {
   GRAY: g.gray
 };
 
-function x(e) {
+function N(e) {
   return Math.round(e / p) * p
 }
 
-function N(e) {
+function b(e) {
   let {
     notchBackground: t,
     progress: n,
-    gradientStart: r = o.Z.unsafe_rawColors.YELLOW_260.css,
-    gradientEnd: a = o.Z.unsafe_rawColors.GREEN_360.css,
+    gradientStart: r = l.Z.unsafe_rawColors.YELLOW_260.css,
+    gradientEnd: a = l.Z.unsafe_rawColors.GREEN_360.css,
     className: c,
     children: m
   } = e, {
     ref: p,
     width: h
-  } = (0, d.Z)(), N = s.useMemo(() => null != h ? x(h) : 0, [h]), b = s.useMemo(() => {
-    let e = Math.abs(x(N * (100 - Math.max(0, Math.min(100, n))) / 100) - N);
+  } = (0, d.Z)(), b = s.useMemo(() => null != h ? N(h) : 0, [h]), x = s.useMemo(() => {
+    let e = Math.abs(N(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
     return {
       transform: "translateX(".concat(e, "px)")
     }
-  }, [n, N]), _ = s.useMemo(() => ({
-    width: "".concat(N, "px"),
+  }, [n, b]), _ = s.useMemo(() => ({
+    width: "".concat(b, "px"),
     background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(r, ", ").concat(a, ")")
-  }), [a, r, n, N]);
+  }), [a, r, n, b]);
   return (0, i.jsxs)("div", {
     className: g.wrapper,
     ref: p,
     children: [(0, i.jsxs)("div", {
-      className: l()(g.container, c),
+      className: o()(g.container, c),
       style: _,
       children: [(0, i.jsx)("div", {
         className: g.progress,
-        style: b
-      }), 0 !== N && (0, i.jsx)(u.Z, {
-        width: N,
-        className: l()(g.notches, f[t])
+        style: x
+      }), 0 !== b && (0, i.jsx)(u.Z, {
+        width: b,
+        className: o()(g.notches, f[t])
       })]
     }), m]
   })

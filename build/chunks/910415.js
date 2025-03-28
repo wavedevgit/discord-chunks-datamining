@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   deviceOptionCertified: "deviceOptionCertified_fe5040",
   deviceOption: "deviceOption_fe5040",

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   Z: () => m
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(588126),
-  o = n(643879),
+  o = n(588126),
+  l = n(643879),
   c = n(25990),
   d = n(921813),
   u = n(784596);
@@ -22,14 +22,14 @@ function m(e) {
     reducedMotion: h
   } = i.useContext(a.Sfi), {
     pendingAvatar: f,
-    pendingBanner: x,
-    pendingThemeColors: N,
-    pendingPronouns: b,
+    pendingBanner: N,
+    pendingThemeColors: b,
+    pendingPronouns: x,
     pendingBio: _,
     tryItOutThemeColors: E,
     tryItOutAvatar: j,
-    tryItOutBanner: C,
-    tryItOutAvatarDecoration: O,
+    tryItOutBanner: O,
+    tryItOutAvatarDecoration: C,
     tryItOutProfileEffectId: S
   } = (0, s.cj)([c.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -48,18 +48,18 @@ function m(e) {
       })
     }
     return e
-  })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), v = (0, o.SD)({
+  })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), v = (0, l.SD)({
     userId: m.id,
     image: null != j ? j : f
-  }), T = (0, l.Z)(O, !1);
+  }), T = (0, o.Z)(C, !1);
   return (0, r.jsx)(d.Z, {
     containerClassName: p,
     user: m,
-    pendingPronouns: b,
+    pendingPronouns: x,
     pendingBio: _,
-    pendingBanner: null !== (t = null != C ? C : x) && void 0 !== t ? t : n(466045),
+    pendingBanner: null !== (t = null != O ? O : N) && void 0 !== t ? t : n(466045),
     pendingAvatar: v,
-    pendingThemeColors: null != E ? E : N,
+    pendingThemeColors: null != E ? E : b,
     pendingAvatarDecoration: T,
     pendingProfileEffectId: S,
     avatarClassName: null != j || null != f || h.enabled ? void 0 : u.spinningAvatar,

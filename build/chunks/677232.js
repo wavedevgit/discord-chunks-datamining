@@ -1,15 +1,16 @@
-/** Chunk was on 87791 **/
-n.d(t, {
-  Z: () => b
-}), n(47120);
-var r = n(200651),
-  i = n(192379),
-  o = n(642128),
-  l = n(780384),
-  a = n(481060),
-  s = n(410030),
-  c = n(965645),
-  u = n(362061);
+/** Chunk was on 71459 **/
+"use strict";
+r.d(t, {
+  Z: () => h
+}), r(47120);
+var n = r(200651),
+  i = r(192379),
+  o = r(642128),
+  l = r(780384),
+  a = r(481060),
+  s = r(410030),
+  c = r(965645),
+  u = r(362061);
 let d = [{
     box: "#FFD89E",
     ribbon: "#FF7476"
@@ -54,34 +55,34 @@ let d = [{
     box: "#DB6F6F",
     ribbon: "#81C29F"
   }],
-  f = 1 / 300,
-  h = (0, o.animated)(c.Z),
-  m = (0, o.animated)(u.Z),
-  _ = (0, o.animated)(a.OgN),
-  b = i.memo(function(e) {
+  b = 1 / 300,
+  v = (0, o.animated)(c.Z),
+  f = (0, o.animated)(u.Z),
+  m = (0, o.animated)(a.OgN),
+  h = i.memo(function(e) {
     let {
       themeOverride: t,
-      hovered: n,
+      hovered: r,
       isContentDismissed: o,
       boxColors: c = {
         dark: d,
         light: p
       }
-    } = e, u = (0, s.ZP)(), [b, g] = function(e) {
-      let [t, n] = i.useState(!1), [r, o] = i.useState(Math.floor(7 * Math.random())), l = i.useRef(r);
+    } = e, u = (0, s.ZP)(), [h, g] = function(e) {
+      let [t, r] = i.useState(!1), [n, o] = i.useState(Math.floor(7 * Math.random())), l = i.useRef(n);
       return i.useEffect(() => {
-        l.current = r
+        l.current = n
       }), i.useEffect(() => {
         if (e) return;
-        let t = Math.random() <= f;
-        if (n(t), !t) {
+        let t = Math.random() <= b;
+        if (r(t), !t) {
           let e;
           do e = Math.floor(7 * Math.random()); while (e === l.current);
           o(e)
         }
-      }, [e]), [t, r]
-    }(n), E = (0, a.q_F)({
-      reverse: !n,
+      }, [e]), [t, n]
+    }(r), x = (0, a.q_F)({
+      reverse: !r,
       reset: !0,
       from: {
         scale: 1
@@ -93,13 +94,13 @@ let d = [{
         tension: 800,
         friction: 24
       }
-    }), v = o ? g : 0, O = (0, l.wj)(null != t ? t : u) ? c.dark[v] : c.light[v];
-    return !n && o ? (0, r.jsx)(_, {}) : o && b ? (0, r.jsx)(m, {
+    }), y = o ? g : 0, _ = (0, l.wj)(null != t ? t : u) ? c.dark[y] : c.light[y];
+    return !r && o ? (0, n.jsx)(m, {}) : o && h ? (0, n.jsx)(f, {
       isDark: (0, l.wj)(u),
-      style: E
-    }) : (0, r.jsx)(h, {
-      boxColor: O.box,
-      ribbonColor: O.ribbon,
-      style: E
+      style: x
+    }) : (0, n.jsx)(v, {
+      boxColor: _.box,
+      ribbonColor: _.ribbon,
+      style: x
     })
   })

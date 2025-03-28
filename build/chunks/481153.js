@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => S
+  Z: () => j
 });
 var r = n(200651),
   i = n(192379),
@@ -14,24 +14,24 @@ var r = n(200651),
   p = n(479446),
   h = n(981632),
   g = n(594174),
-  _ = n(509545),
-  m = n(55563),
-  f = n(296848),
+  m = n(509545),
+  f = n(55563),
+  _ = n(296848),
   b = n(981631),
   x = n(474936),
   N = n(388032),
   v = n(722515),
   E = n(612064),
   I = n(802138);
-let S = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
+let j = l.ZP.connectStores([f.Z, c.Z, m.Z, g.default], e => {
   let {
     giftCode: t
-  } = e, n = m.Z.get(t.skuId), {
+  } = e, n = f.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
     sku: n,
-    subscriptionPlan: null != r ? (0, f.oE)(r) : null,
+    subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
     gifter: g.default.getUser(t.userId)
   }
@@ -43,10 +43,10 @@ let S = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
     sku: l,
     application: c,
     subscriptionPlan: g
-  } = e, _ = null == o ? N.NW.string(N.t.lTGZAg) : N.NW.formatToPlainString(N.t.TjWdPT, {
+  } = e, m = null == o ? N.NW.string(N.t.lTGZAg) : N.NW.formatToPlainString(N.t.TjWdPT, {
     username: o.username
-  }), m = l.name;
-  return null != g && (m = N.NW.formatToPlainString(g.interval === x.rV.MONTH ? N.t.CTpcCQ : N.t.rgPWGx, {
+  }), f = l.name;
+  return null != g && (f = N.NW.formatToPlainString(g.interval === x.rV.MONTH ? N.t.CTpcCQ : N.t.rgPWGx, {
     skuName: l.name,
     intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
@@ -66,7 +66,7 @@ let S = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: _
+        children: m
       }), (0, r.jsxs)(u.Dx, {
         className: a()(I.marginTop8, E.flexCenter),
         children: [l.productLine !== b.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
@@ -74,7 +74,7 @@ let S = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
           className: v.applicationIcon,
           game: c,
           skuId: l.id
-        }), m]
+        }), f]
       })]
     })]
   })

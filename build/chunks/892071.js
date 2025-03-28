@@ -42,13 +42,14 @@ function f(e) {
     systemForcedColors: O,
     useReducedMotion: I,
     alwaysShowLinkDecorations: S,
-    children: T
-  } = e, A = window.CSS.supports("selector(::-webkit-scrollbar)"), N = "font-size: ".concat(h, "%; --saturation-factor: ").concat(b, ";"), C = a()((0, c.Z)(), (0, l.QeD)(f), "density-".concat(_), m, {
+    hardwareAccelerationEnabled: T,
+    children: A
+  } = e, N = window.CSS.supports("selector(::-webkit-scrollbar)"), C = "font-size: ".concat(h, "%; --saturation-factor: ").concat(b, ";"), R = a()((0, c.Z)(), (0, l.QeD)(f), "density-".concat(_), m, {
     "low-saturation": b <= l.AEw,
     "keyboard-mode": E,
     "decorate-links": S,
-    "no-webkit-scrollbar": !A,
-    "has-webkit-scrollbar": A,
+    "no-webkit-scrollbar": !N,
+    "has-webkit-scrollbar": N,
     "mouse-mode": g,
     "reduce-motion": I,
     "full-motion": !I,
@@ -58,14 +59,15 @@ function f(e) {
     "disable-forced-colors": !y && "active" === O,
     "enable-forced-colors": y,
     "visual-refresh": t,
+    "hardware-acceleration": T,
     "visual-refresh-chat-input": n
-  }, o), R = i.useMemo(() => ({
+  }, o), P = i.useMemo(() => ({
     lang: d,
-    style: N,
-    className: C
-  }), [d, N, C]);
+    style: C,
+    className: R
+  }), [d, C, R]);
   return (0, r.jsx)(u.Provider, {
-    value: R,
-    children: T
+    value: P,
+    children: A
   })
 }

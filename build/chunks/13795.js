@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   lockIcon: "lockIcon__2666b",
   userSettingsSecurityImage: "userSettingsSecurityImage__2666b",

@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 e.exports = {
   buttonsContainer: "buttonsContainer__89253",
   removeButton: "removeButton__89253",

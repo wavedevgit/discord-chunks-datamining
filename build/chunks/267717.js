@@ -1,4 +1,4 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
   default: () => h,
   y: () => p
@@ -8,8 +8,8 @@ n(192379);
 var i = n(481060),
   s = n(490220),
   a = n(594174),
-  l = n(98278),
-  o = n(790527),
+  o = n(98278),
+  l = n(790527),
   c = n(474936),
   d = n(981631),
   u = n(388032),
@@ -71,7 +71,7 @@ function h(e) {
     }
     return i
   }(e, ["user", "onClose"]);
-  return (0, r.jsx)(o.Z, g({
+  return (0, r.jsx)(l.Z, g({
     modalClassName: m.modal,
     modalContentClassName: m.modalContent,
     type: c.cd.TRY_IT_OUT_MODAL_UPSELL,
@@ -79,7 +79,7 @@ function h(e) {
     body: u.NW.string(u.t.KckEj4),
     glowUp: u.NW.string(u.t.reVc0N),
     onSecondaryClick: () => {
-      (0, l.$)(n)
+      (0, o.$)(n)
     },
     secondaryCTA: u.NW.string(u.t.PcTCBw),
     onClose: n,

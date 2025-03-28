@@ -20,10 +20,10 @@ var i = r(442837),
   b = r(706454),
   j = r(695346),
   x = r(265159),
-  P = r(25990),
-  v = r(594174),
-  y = r(55935),
-  O = r(74538),
+  v = r(25990),
+  y = r(594174),
+  O = r(55935),
+  P = r(74538),
   _ = r(388032),
   N = r(102850);
 
@@ -51,7 +51,7 @@ let C = e => {
       pendingProfileEffectRecord: r,
       product: u,
       purchase: d
-    } = e, p = (0, i.e7)([v.default], () => v.default.getCurrentUser()), m = (0, i.e7)([l.Z], () => l.Z.getProduct(null == r ? void 0 : r.skuId)), g = (0, i.e7)([b.default], () => b.default.locale), h = O.ZP.canUseCollectibles(p), j = (0, s.qS)(d), x = (0, s.G1)(u), P = !h && j, E = (null == d ? void 0 : d.expiresAt) != null ? (0, y.TD)(Date.now(), d.expiresAt) : null, C = (0, a.a)(d), S = (0, c.k)(m), w = (0, f.M)(!x || h), Z = I(P, x, h, w);
+    } = e, p = (0, i.e7)([y.default], () => y.default.getCurrentUser()), m = (0, i.e7)([l.Z], () => l.Z.getProduct(null == r ? void 0 : r.skuId)), g = (0, i.e7)([b.default], () => b.default.locale), h = P.ZP.canUseCollectibles(p), j = (0, s.qS)(d), x = (0, s.G1)(u), v = !h && j, E = (null == d ? void 0 : d.expiresAt) != null ? (0, O.TD)(Date.now(), d.expiresAt) : null, C = (0, a.a)(d), S = (0, c.k)(m), w = (0, f.M)(!x || h), Z = I(v, x, h, w);
     return null != r ? (0, n.jsx)("div", {
       className: t ? N.effectDescriptionNoGradient : N.effectDescriptionBorderWithGradient,
       children: (0, n.jsxs)("div", {
@@ -113,8 +113,8 @@ let C = e => {
       purchase: f,
       guild: b
     } = e, {
-      pendingGlobalName: v,
-      pendingNickname: y,
+      pendingGlobalName: y,
+      pendingNickname: O,
       pendingPronouns: _,
       pendingBio: I,
       pendingBanner: S,
@@ -122,15 +122,15 @@ let C = e => {
       pendingAvatarDecoration: Z,
       pendingThemeColors: k,
       pendingAccentColor: D
-    } = (0, i.cj)([u.Z, P.Z], () => E({
+    } = (0, i.cj)([u.Z, v.Z], () => E({
       pendingNickname: void 0,
       pendingGlobalName: void 0,
       pendingAccentColor: void 0
-    }, null != b ? u.Z.getAllPending() : P.Z.getAllPending())), T = O.ZP.isPremium(l), A = O.ZP.canUsePremiumProfileCustomization(l), B = (0, h.ZP)(l.id), G = !!(null == B ? void 0 : B.getPreviewBio(I).value), R = {
+    }, null != b ? u.Z.getAllPending() : v.Z.getAllPending())), T = P.ZP.isPremium(l), A = P.ZP.canUsePremiumProfileCustomization(l), B = (0, h.ZP)(l.id), G = !!(null == B ? void 0 : B.getPreviewBio(I).value), R = {
       user: l,
       guild: b,
-      pendingGlobalName: v,
-      pendingNickname: y,
+      pendingGlobalName: y,
+      pendingNickname: O,
       pendingPronouns: _,
       pendingBio: j.dN.useSetting() && null != I ? d.ZP.parse(void 0, I).content : I,
       pendingBanner: S,

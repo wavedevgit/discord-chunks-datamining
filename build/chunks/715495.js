@@ -1,13 +1,13 @@
-/** Chunk was on 75607 **/
+/** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(276264),
   d = n(205822),
   u = n(329013),
@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(780771),
   h = n(4242),
   f = n(996746),
-  x = n(711325),
-  N = n(852630),
-  b = n(731994),
+  N = n(711325),
+  b = n(852630),
+  x = n(731994),
   _ = n(276107);
 
 function E(e) {
@@ -53,13 +53,13 @@ function j(e, t) {
   }), e
 }
 
-function C() {
+function O() {
   var e;
-  let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [o, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: f,
-    removeToolsCache: N
+    removeToolsCache: b
   } = (0, g.L3)(), {
-    setImgCache: C
+    setImgCache: O
   } = (0, g.W_)(), A = (0, i.useCallback)(e => {
     let t = m[e];
     null != t && c({
@@ -80,36 +80,36 @@ function C() {
       preview: !0
     }))
   }, []), R = (0, i.useCallback)(e => {
-    N(e)
-  }, [N]);
+    b(e)
+  }, [b]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.controls,
       children: [(0, r.jsxs)("div", {
         className: _.toggles,
-        children: [(0, r.jsx)(o.zxk, {
+        children: [(0, r.jsx)(l.zxk, {
           className: _.toggleButton,
-          size: o.PhG.SMALL,
+          size: l.PhG.SMALL,
           onClick: () => {
             a(!1), n(e => !e)
           },
-          color: o.Ttl.PRIMARY,
+          color: l.Ttl.PRIMARY,
           children: "Toggle Themes"
-        }), (0, r.jsx)(o.zxk, {
+        }), (0, r.jsx)(l.zxk, {
           className: _.toggleButton,
-          size: o.PhG.SMALL,
+          size: l.PhG.SMALL,
           onClick: () => {
             n(!1), a(e => !e)
           },
-          color: o.Ttl.PRIMARY,
+          color: l.Ttl.PRIMARY,
           children: "Toggle Gradients"
         })]
       }), (0, r.jsxs)("div", {
         className: _.themePicker,
-        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(x.Z, {
-          selected: null == l ? void 0 : null === (e = l.palette) || void 0 === e ? void 0 : e.name,
+        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(N.Z, {
+          selected: null == o ? void 0 : null === (e = o.palette) || void 0 === e ? void 0 : e.name,
           onSelect: e => {
-            (null == l ? void 0 : l.src) != null && f(l.src, l.src, e), P(e)
+            (null == o ? void 0 : o.src) != null && f(o.src, o.src, e), P(e)
           }
         })]
       })]
@@ -117,36 +117,36 @@ function C() {
       className: _.main,
       children: [(0, r.jsxs)("div", {
         className: _.previews,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           children: "Memberlist"
         }), (0, r.jsx)(T, {
-          nameplate: l
-        }), (0, r.jsx)(o.Text, {
+          nameplate: o
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           children: "DMs"
         }), (0, r.jsx)(I, {
-          nameplate: l
-        }), (0, r.jsx)(o.Text, {
+          nameplate: o
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           children: "RTC"
         }), (0, r.jsx)(y, {
-          nameplate: l
+          nameplate: o
         })]
       }), (0, r.jsxs)("div", {
         className: _.buttons,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           children: "Drag background image to screen"
         }), (0, r.jsx)(d.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: b.pA,
+          icons: x.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               r = await n.arrayBuffer();
-            C(t, t, (0, h.xh)(r)), f(t, t, p.jD)
+            O(t, t, (0, h.xh)(r)), f(t, t, p.jD)
           }
         }), (0, r.jsx)("div", {
           className: _.uploadedArea,
@@ -154,7 +154,7 @@ function C() {
             let {
               url: t
             } = e;
-            return (0, r.jsx)(O, {
+            return (0, r.jsx)(C, {
               src: t,
               onSetStatic: A,
               removeAsset: R
@@ -176,7 +176,7 @@ function C() {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     src: t,
     onSetStatic: n,
@@ -184,10 +184,10 @@ function O(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: _.uploaded,
-    children: [(0, r.jsx)(o.P3F, {
+    children: [(0, r.jsx)(l.P3F, {
       onClick: () => i(t),
       className: _.xicon,
-      children: (0, r.jsx)(o.Dio, {
+      children: (0, r.jsx)(l.Dio, {
         size: "custom",
         width: 16,
         height: 16,
@@ -199,10 +199,10 @@ function O(e) {
       alt: ""
     }), (0, r.jsx)("div", {
       className: _.uploadedControls,
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, r.jsx)(l.zxk, {
         onClick: () => n(t),
-        size: o.PhG.TINY,
-        color: o.Ttl.PRIMARY,
+        size: l.PhG.TINY,
+        color: l.Ttl.PRIMARY,
         children: "set nameplate"
       })
     })]
@@ -216,13 +216,13 @@ function S(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: _.flex,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, r.jsx)(l.zxk, {
       disabled: !0,
-      size: o.PhG.SMALL,
-      color: o.Ttl.PRIMARY,
+      size: l.PhG.SMALL,
+      color: l.Ttl.PRIMARY,
       onClick: n,
       children: t
     })]
@@ -236,7 +236,7 @@ function v(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: _.hexInput,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: t
     }), (0, r.jsx)("input", {
@@ -252,12 +252,12 @@ function v(e) {
 function T(e) {
   let {
     nameplate: t
-  } = e, n = (0, l.e7)([m.default], () => m.default.getCurrentUser());
+  } = e, n = (0, o.e7)([m.default], () => m.default.getCurrentUser());
   return (0, r.jsx)("div", {
     className: _.preview,
     children: (0, r.jsxs)("div", {
       className: _.simArea,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(l.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
@@ -265,7 +265,7 @@ function T(e) {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(l.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
@@ -293,21 +293,21 @@ function I(e) {
     className: a()(_.preview, _.resizer),
     children: (0, r.jsxs)("div", {
       className: _.simArea,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(l.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(N.Z, {
+      }), (0, r.jsx)(b.Z, {
         nameplate: t
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(l.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(b.Z, {
           selected: !0,
           nameplate: t
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(b.Z, {
           selected: !0
         })]
       })]
