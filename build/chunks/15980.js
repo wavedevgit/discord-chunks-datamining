@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => m
 }), n(47120);
 var r, i, s, a = n(442837),
-  o = n(570140),
-  l = n(911969);
+  l = n(570140),
+  o = n(911969);
 let c = !1,
   d = [];
 class u extends(r = a.ZP.Store) {
@@ -24,7 +24,7 @@ s = "WebAuthnStore", (i = "displayName") in u ? Object.defineProperty(u, i, {
   configurable: !0,
   writable: !0
 }) : u[i] = s;
-let m = new u(o.Z, {
+let m = new u(l.Z, {
   LOGOUT: function() {
     d = [], c = !1
   },
@@ -35,18 +35,18 @@ let m = new u(o.Z, {
     let {
       credential: t
     } = e;
-    t.type === l.Pi.WEBAUTHN && void 0 === d.find(e => e.id === t.id) && (d = [...d, t])
+    t.type === o.Pi.WEBAUTHN && void 0 === d.find(e => e.id === t.id) && (d = [...d, t])
   },
   AUTHENTICATOR_UPDATE(e) {
     let {
       credential: t
     } = e;
-    t.type === l.Pi.WEBAUTHN && (d = d.map(e => e.id === t.id ? t : e))
+    t.type === o.Pi.WEBAUTHN && (d = d.map(e => e.id === t.id ? t : e))
   },
   AUTHENTICATOR_DELETE(e) {
     let {
       credential: t
     } = e;
-    t.type === l.Pi.WEBAUTHN && (d = d.filter(e => e.id !== t.id))
+    t.type === o.Pi.WEBAUTHN && (d = d.filter(e => e.id !== t.id))
   }
 })

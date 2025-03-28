@@ -353,7 +353,7 @@ let z = function(e) {
       updateChatWallpaper: G
     } = (0, S.x)(j),
     B = () => {
-      c(), (null == o ? void 0 : o.markDismissed) != null && o.markDismissed(R.L.USER_DISMISS)
+      (null == o ? void 0 : o.markDismissed) != null && o.markDismissed(R.L.USER_DISMISS), c()
     },
     Z = i.useCallback(() => {
       null != l && null != h && void 0 !== h.wallpaperId && (v.default.track(C.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {

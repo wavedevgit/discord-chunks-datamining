@@ -1,18 +1,18 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  D: () => o
+  D: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(734530),
   s = n(622999),
   a = n(246652);
-let o = e => {
+let l = e => {
   let {
     errorLabel: t,
     children: n,
-    elementOptions: o
-  } = e, l = Date.now();
+    elementOptions: l
+  } = e, o = Date.now();
   return (0, r.jsx)(a.k, {
     label: t,
     children: (0, r.jsx)(i.Elements, {
@@ -38,8 +38,8 @@ let o = e => {
         mode: "setup",
         currency: "usd",
         setup_future_usage: "off_session"
-      }, o),
+      }, l),
       children: n
     })
-  }, l)
+  }, o)
 }

@@ -115,12 +115,13 @@ function B(e) {
     window.clearTimeout(F.current), z.canCollapseOnBlur && !K && (X.current || ea(!1))
   }, [K, z, ea]), eg = o.useCallback(() => {
     var e;
-    (0, m.ze)({
+    (0, m.dA)({
       questId: s.id,
       event: P.rMx.QUEST_HOVER,
       properties: T(E({}, (0, m.mH)(g.jn.QUEST_BAR)), {
         impression_id: null === (e = D.current) || void 0 === e ? void 0 : e.getId()
-      })
+      }),
+      shouldExtendSession: !0
     }), X.current = !0, ep({
       withDelay: !0
     })

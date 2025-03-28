@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(314684),
-  l = n(404615),
+  l = n(314684),
+  o = n(404615),
   c = n(743612),
   d = n(735825),
   u = n(194511),
@@ -31,8 +31,8 @@ let h = e => {
       subtitleClassName: S,
       imageOverlayText: v
     } = e,
-    T = (0, l._)(C),
-    I = (0, o.Er)(),
+    T = (0, o._)(C),
+    I = (0, l.Er)(),
     y = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
   switch (null == I ? void 0 : I.nitroTenureStatus) {
     case d.EB.REDEEMABLE:

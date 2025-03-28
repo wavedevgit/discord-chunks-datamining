@@ -4,8 +4,8 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var i = r(120356),
-  o = r.n(i),
+var o = r(120356),
+  i = r.n(o),
   l = r(481060),
   a = r(55935),
   c = r(543388),
@@ -16,8 +16,8 @@ var i = r(120356),
 function p(e) {
   var t, r;
   let {
-    tooltipProps: i,
-    timeFormatted: o,
+    tooltipProps: o,
+    timeFormatted: i,
     children: l,
     compact: a,
     timestamp: c,
@@ -40,7 +40,7 @@ function p(e) {
       })
     }
     return e
-  }({}, i), r = r = {
+  }({}, o), r = r = {
     id: s,
     dateTime: c.toISOString(),
     children: null != l ? l : (0, n.jsxs)(n.Fragment, {
@@ -48,7 +48,7 @@ function p(e) {
         className: m.separator,
         "aria-hidden": !0,
         children: a ? "[" : " — "
-      }), o, a && (0, n.jsxs)("i", {
+      }), i, a && (0, n.jsxs)("i", {
         className: m.separator,
         "aria-hidden": !0,
         children: ["]", " "]
@@ -69,48 +69,48 @@ let d = function(e) {
   let {
     children: t,
     className: r,
-    compact: i = !1,
+    compact: o = !1,
     timestamp: d,
     isVisibleOnlyOnHover: f = !1,
     cozyAlt: b = !1,
     isInline: y = !0,
     id: g,
     isEdited: O = !1,
-    application: j,
-    tooltipPosition: h
-  } = e, v = new Date(d), x = (0, a.Hg)(v), P = i ? (0, a.vc)(v, "LT") : (0, a.Y4)(v, !0), S = i ? (0, s.Z)(P) : null, T = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
+    application: h,
+    tooltipPosition: j
+  } = e, v = new Date(d), x = (0, a.Hg)(v), P = o ? (0, a.vc)(v, "LT") : (0, a.Y4)(v, !0), S = o ? (0, s.Z)(P) : null, T = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: x
   }) : x;
   return (0, n.jsx)("span", {
-    className: o()(r, S, {
+    className: i()(r, S, {
       [m.timestamp]: !0,
       [m.timestampVisibleOnHover]: f,
       [m.timestampInline]: y,
       [m.alt]: b
     }),
-    children: null == j ? (0, n.jsx)(l.ua7, {
+    children: null == h ? (0, n.jsx)(l.ua7, {
       text: (0, a.vc)(v, "LLLL"),
       "aria-label": T,
       tooltipClassName: m.timestampTooltip,
-      position: h,
+      position: j,
       delay: 750,
       children: e => (0, n.jsx)(p, {
         tooltipProps: e,
         timeFormatted: P,
         timestamp: v,
         id: g,
-        compact: i,
+        compact: o,
         children: t
       })
     }) : (0, n.jsx)(c.Z, {
-      application: j,
+      application: h,
       timestamp: v,
-      compact: i,
+      compact: o,
       children: (0, n.jsx)(p, {
         timeFormatted: P,
         timestamp: v,
         id: g,
-        compact: i,
+        compact: o,
         children: t
       })
     })

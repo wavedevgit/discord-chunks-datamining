@@ -6,9 +6,9 @@ var r = n(392711),
   i = n.n(r),
   s = n(492435),
   a = n(353926),
-  o = n(987338);
+  l = n(987338);
 
-function l(e) {
+function o(e) {
   for (let t of e) {
     let e = a.Z.getUserExperimentDescriptor(t);
     if (null != e) return [t, e]
@@ -16,7 +16,7 @@ function l(e) {
   return null
 }
 let c = {
-  getFirstEligibleUserExperiment: l,
+  getFirstEligibleUserExperiment: o,
   isInExperimentBucket: function(e, t) {
     return a.Z.getUserExperimentBucket(e) === t
   },
@@ -25,12 +25,12 @@ let c = {
     if (null == e && null != t || null != e && null == t) return !1;
     if (null != e && null != t) {
       if (e.type !== t.type || e.bucket !== t.bucket || e.revision !== t.revision) return !1;
-      if (e.type === o.xY.USER && t.type === o.xY.USER) return i().isEqual(e.context, t.context)
+      if (e.type === l.xY.USER && t.type === l.xY.USER) return i().isEqual(e.context, t.context)
     }
     return !0
   },
   trackExposureToFirstEligibleUserExperiment: function(e) {
-    let t = l(e);
+    let t = o(e);
     if (null != t) {
       let [e, n] = t;
       return (0, s.W9)(e, n), n
@@ -38,6 +38,6 @@ let c = {
   },
   getExperimentBucketName: function(e) {
     let t;
-    return e === o.NZ.CONTROL ? "Control" : e === o.NZ.NOT_ELIGIBLE ? "Not Eligible" : "Treatment ".concat(e)
+    return e === l.NZ.CONTROL ? "Control" : e === l.NZ.NOT_ELIGIBLE ? "Not Eligible" : "Treatment ".concat(e)
   }
 }

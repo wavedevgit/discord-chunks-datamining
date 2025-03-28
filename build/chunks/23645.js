@@ -1,12 +1,12 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 }), n(47120);
 var r = n(192379),
   i = n(817080),
   s = n(579806),
   a = n(358085);
-class o extends r.Component {
+class l extends r.Component {
   getFileContents() {
     let {
       fileContents: e

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(481060),
-  l = n(100527),
+  l = n(481060),
+  o = n(100527),
   c = n(906732),
   d = n(70097),
   u = n(526167),
@@ -31,7 +31,7 @@ let O = i.forwardRef((e, t) => {
     isReducedMotion: v
   } = e, {
     analyticsLocations: T
-  } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
+  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
   return i.useEffect(() => {
     !C || v || Z || null == D.current || D.current.play()
   }, [C, v, Z]), (0, r.jsx)(c.Gt, {
@@ -39,7 +39,7 @@ let O = i.forwardRef((e, t) => {
     children: (0, r.jsxs)("div", {
       ref: t,
       className: a()(x.container, O),
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(l.X6q, {
         className: x.footerHeader,
         variant: "display-md",
         color: "header-primary",

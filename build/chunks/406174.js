@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(388032),
-  l = n(552975),
+  l = n(388032),
+  o = n(552975),
   c = n(609885),
   d = n(834300);
 
@@ -20,40 +20,40 @@ function u(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/bold",
-      children: o.NW.string(o.t["KzCF//"])
+      children: l.NW.string(l.t["KzCF//"])
     }), (0, r.jsx)(a.LZC, {
       size: 4
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
-      className: l.sectionDescription,
-      children: o.NW.string(o.t["3D7qCg"])
+      className: o.sectionDescription,
+      children: l.NW.string(l.t["3D7qCg"])
     }), (0, r.jsx)(a.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: s()(c.guildBoostingSubscriptionRow, l.card),
+      className: s()(c.guildBoostingSubscriptionRow, o.card),
       children: [(0, r.jsx)("img", {
         src: d,
         alt: "",
-        className: l.handImage
+        className: o.handImage
       }), (0, r.jsxs)("div", {
-        className: l.textContainer,
+        className: o.textContainer,
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-xl/semibold",
-          className: l.header,
-          children: o.NW.string(o.t["KzCF//"])
+          className: o.header,
+          children: l.NW.string(l.t["KzCF//"])
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
-          className: l.description,
-          children: o.NW.format(o.t["m+pcOD"], {
+          className: o.description,
+          children: l.NW.format(l.t["m+pcOD"], {
             numSubscriptions: n
           })
         })]
       }), (0, r.jsx)(a.zxk, {
         color: a.zxk.Colors.CUSTOM,
         size: a.zxk.Sizes.SMALL,
-        className: l.manageSubscriptionsButton,
+        className: o.manageSubscriptionsButton,
         onClick: t,
-        children: o.NW.string(o.t["3a8Xxs"])
+        children: l.NW.string(l.t["3a8Xxs"])
       })]
     })]
   })

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(660216),
-  l = n(40908),
+  l = n(660216),
+  o = n(40908),
   c = n(600164),
   d = n(415795),
   u = n(592125),
@@ -98,14 +98,14 @@ function T(e) {
   var t, n;
   let {
     keybind: s
-  } = e, l = i.useRef(s);
+  } = e, o = i.useRef(s);
   i.useEffect(() => {
-    l.current = s
+    o.current = s
   });
   let [d, u] = i.useState(null !== (n = null === (t = s.params) || void 0 === t ? void 0 : t.channelId) && void 0 !== n ? n : void 0), m = i.useCallback(() => {
     (0, a.ZDy)(async () => e => (0, r.jsx)(I, x(b({}, e), {
       onSelect: e => {
-        u(e), o.Z.setKeybind(x(b({}, l.current), {
+        u(e), l.Z.setKeybind(x(b({}, o.current), {
           params: {
             channelId: e
           }
@@ -139,7 +139,7 @@ function I(e) {
   let {
     transitionState: t,
     onClose: n,
-    onSelect: o
+    onSelect: l
   } = e, c = i.useId(), b = i.useRef(null), {
     mouseFocusEnabled: x,
     enableMouseFocus: _,
@@ -161,7 +161,7 @@ function I(e) {
     query: T,
     updateQuery: I,
     queryResults: y
-  } = (0, l.Z)({
+  } = (0, o.Z)({
     visible: !0,
     autocompleterResultTypes: E,
     autocompleterBeforeCreateSearchContext: j
@@ -233,7 +233,7 @@ function I(e) {
                   let e = y[P];
                   if ((null == e ? void 0 : e.type) === h.h8.VOICE_CHANNEL) return e.record
                 })();
-                null == e ? o(void 0) : o(e.id), n();
+                null == e ? l(void 0) : l(e.id), n();
                 break
               }
               case "arrowup":
@@ -275,7 +275,7 @@ function I(e) {
             focused: P === t,
             onMouseEnter: () => x.current && R(t),
             onClick: () => {
-              o(i.id), n()
+              l(i.id), n()
             },
             onFocus: () => R(t),
             children: null != a ? (0, r.jsx)("div", {
@@ -302,7 +302,7 @@ function y(e) {
   } = e, {
     channel: n,
     category: i,
-    guild: o
+    guild: l
   } = (0, s.cj)([u.Z, g.Z], () => {
     let e = null != t ? u.Z.getChannel(t) : void 0;
     return null != e ? {
@@ -328,9 +328,9 @@ function y(e) {
     onFocus: _,
     onMouseEnter: _,
     focused: !1,
-    children: null != o ? (0, r.jsx)("div", {
+    children: null != l ? (0, r.jsx)("div", {
       className: N.guildName,
-      children: o.name
+      children: l.name
     }) : null
   })
 }

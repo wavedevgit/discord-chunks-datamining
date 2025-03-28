@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(565138),
-  l = n(430824),
+  l = n(565138),
+  o = n(430824),
   c = n(771845),
   d = n(823379),
   u = n(997950),
@@ -23,7 +23,7 @@ function f() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
-  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), g = (0, s.e7)([l.Z], () => l.Z.getGuilds()), {
+  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), g = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
     hideGuildOptions: f,
     hideGlobalOption: N
   } = (0, m.b)(), b = n[0];
@@ -82,10 +82,10 @@ function f() {
           "aria-hidden": !0,
           className: p.guildSelectOptionIcon
         })
-      }) : (0, r.jsx)(o.Z, {
+      }) : (0, r.jsx)(l.Z, {
         className: p.guildSelectOptionIcon,
         guild: g[e.value],
-        size: o.Z.Sizes.SMALLER,
+        size: l.Z.Sizes.SMALLER,
         active: !0
       })
     }, [g]);

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(541716),
-  o = n(752305),
-  l = n(893718),
+  l = n(752305),
+  o = n(893718),
   c = n(313201),
   d = n(131704),
   u = n(993413),
@@ -30,10 +30,10 @@ function b(e) {
     placeholder: b,
     currentBio: x,
     disabled: _ = !1
-  } = e, [E, j] = i.useState(null != d ? d : x), [O, C] = i.useState((0, o.JM)(E)), S = i.useRef(!1);
+  } = e, [E, j] = i.useState(null != d ? d : x), [O, C] = i.useState((0, l.JM)(E)), S = i.useRef(!1);
   return i.useEffect(() => {
     if (void 0 === d) {
-      let e = (0, o.JM)(x);
+      let e = (0, l.JM)(x);
       j(x), C(e)
     }
   }, [d, x]), (0, r.jsxs)(u.Z, {
@@ -42,7 +42,7 @@ function b(e) {
     description: g.NW.string(g.t.Bbw6AQ),
     errors: n,
     disabled: _,
-    children: [(0, r.jsx)(l.Z, {
+    children: [(0, r.jsx)(o.Z, {
       "aria-describedby": N,
       "aria-labelledby": h,
       className: p.bioTextAreaContainer,

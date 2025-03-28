@@ -280,23 +280,22 @@ function ec(e) {
     }),
     {
       shouldShow: eW,
-      closeCoachmarkIfOpen: eV,
-      questId: eF
+      questId: eV
     } = eU,
-    eH = el(eU, ["shouldShow", "closeCoachmarkIfOpen", "questId"]),
-    ez = eG && eW,
-    eY = ez ? eF : void 0,
-    eq = ed.map(e => (0, r.jsx)(F.Z, {
+    eF = el(eU, ["shouldShow", "questId"]),
+    eH = eG && eW,
+    ez = eH ? eV : void 0,
+    eY = ed.map(e => (0, r.jsx)(F.Z, {
       id: e.id,
       name: e.name,
       icon: e.icon
     }, e.id));
   return (0, r.jsxs)(O.Gt, {
     value: ew,
-    children: [ez && (0, r.jsx)(w.fO, eo({
+    children: [eH && (0, r.jsx)(w.fO, eo({
       backgroundElementRef: eB,
       renderTail: !0
-    }, eH)), (0, r.jsx)(m.f6W, {
+    }, eF)), (0, r.jsx)(m.f6W, {
       theme: a,
       children: e => {
         var i, a;
@@ -340,13 +339,12 @@ function ec(e) {
                 }) : (0, r.jsx)("div", {
                   "aria-label": en.NW.string(en.t["7hB4kp"]),
                   children: eL.map(eR)
-                }), eq, n ? null : (0, r.jsx)(V.Z, {
+                }), eY, n ? null : (0, r.jsx)(V.Z, {
                   disableTooltip: y.length > 0,
                   lastTargetNode: eL[eL.length - 1]
                 }), (0, r.jsx)(K.Z, {}), !n && s ? (0, r.jsx)(H.Z, {
                   ref: eB,
-                  questId: eY,
-                  onClick: eV,
+                  questId: ez,
                   selected: eT,
                   className: er.discoveryIcon
                 }) : null, t ? null : (0, r.jsx)(W.Z, {})]
@@ -354,8 +352,7 @@ function ec(e) {
                 hideGradient: eP,
                 children: (0, r.jsx)(H.Z, {
                   ref: eB,
-                  questId: eY,
-                  onClick: eV,
+                  questId: ez,
                   selected: eT,
                   className: er.discoveryIcon
                 })

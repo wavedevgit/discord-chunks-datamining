@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(906732),
-  l = n(646476),
+  l = n(906732),
+  o = n(646476),
   c = n(197115),
   d = n(388032),
   u = n(566272),
@@ -23,14 +23,14 @@ let p = e => {
     analyticsLocation: h
   } = e, {
     analyticsLocations: f
-  } = (0, o.ZP)(p), N = (0, l.rK)(), {
+  } = (0, l.ZP)(p), N = (0, o.rK)(), {
     enabled: b
-  } = l.RO.useExperiment({
+  } = o.RO.useExperiment({
     location: "GiftNitro"
   }, {
     autoTrackExposure: N
   }), x = b && N;
-  return (0, r.jsx)(o.Gt, {
+  return (0, r.jsx)(l.Gt, {
     value: f,
     children: (0, r.jsxs)("div", {
       className: s()(u.container, t),

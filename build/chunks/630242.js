@@ -15,17 +15,18 @@ function u(e) {
   let {
     isSettingsOpen: t
   } = e, {
-    activePickerChannelId: n
-  } = (0, l.B)(), u = (0, r.e7)([a.Z], () => a.Z.getCurrentlySelectedChannelId()), {
-    canAccessPicker: d
+    activePickerChannelId: n,
+    openPickerForChannel: u
+  } = (0, l.B)(), d = (0, r.e7)([a.Z], () => a.Z.getCurrentlySelectedChannelId()), {
+    canAccessPicker: f
   } = (0, s.m)({
     location: "useChatWallpaperPickerConfig",
-    selectedChannelId: u
-  }), f = d && !t, [_, p] = (0, o.US)(f ? [i.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []);
-  if (!d) return;
-  let h = _ === i.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
-  if (n === u || h) return {
-    pickerType: h ? c.jQ.COACHMARK : c.jQ.DEFAULT,
-    markDismissed: h ? p : void 0
+    selectedChannelId: d
+  }), _ = f && !t, [p, h] = (0, o.US)(_ ? [i.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []);
+  if (!f) return;
+  let m = p === i.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
+  if (m && null != d && null == n && u(d), n === d) return {
+    pickerType: m ? c.jQ.COACHMARK : c.jQ.DEFAULT,
+    markDismissed: m ? h : void 0
   }
 }

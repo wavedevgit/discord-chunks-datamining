@@ -1,6 +1,6 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  nT: () => i
+  nT: () => o
 });
 let n = (0, r(818083).B)({
   kind: "user",
@@ -18,7 +18,7 @@ let n = (0, r(818083).B)({
   }]
 });
 
-function i(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: r = !0

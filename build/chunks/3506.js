@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(392711),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   c = n(481060),
   d = n(660216),
   u = n(13245),
@@ -70,26 +70,26 @@ function D(e) {
   } = e, {
     oopEnabled: i,
     legacyEnabled: a
-  } = (0, l.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
+  } = (0, o.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
     avatarSizeMode: O,
     displayNameMode: v,
     displayUserMode: D,
     textChatDisabled: Z,
     notificationPositionMode: w,
     shouldShowKeybindIndicators: k
-  } = (0, l.cj)([C.default, _.Z], () => ({
+  } = (0, o.cj)([C.default, _.Z], () => ({
     avatarSizeMode: C.default.getAvatarSizeMode(),
     displayNameMode: C.default.getDisplayNameMode(),
     displayUserMode: C.default.getDisplayUserMode(),
     notificationPositionMode: C.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: C.default.showKeybindIndicators,
     textChatDisabled: _.Z.isNotificationDisabled(N.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), W = (0, l.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, b.Z)({
+  })), W = (0, o.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, b.Z)({
     location: "overlay_user_settings"
   }), B = (0, g.$1)();
   return ! function() {
     let e = P(A);
-    o().isEqual(e, A) || (S.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), A = e)
+    l().isEqual(e, A) || (S.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), A = e)
   }(), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hjN, {
       className: t,

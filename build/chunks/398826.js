@@ -1,14 +1,14 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  A: () => o,
-  h: () => l
+  A: () => l,
+  h: () => o
 });
 var r = n(544891),
   i = n(570140),
   s = n(809206),
   a = n(981631);
 
-function o() {
+function l() {
   return i.Z.dispatch({
     type: "LOAD_DATA_HARVEST_TYPE_START"
   }), r.tn.get({
@@ -28,7 +28,7 @@ function o() {
   })
 }
 
-function l(e) {
+function o(e) {
   return (0, s.V3)(e).then(e => (null != e && null != e.body && i.Z.dispatch({
     type: "UPDATE_DATA_HARVEST_TYPE",
     harvestType: e.body

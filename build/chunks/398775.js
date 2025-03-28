@@ -7,8 +7,8 @@ var r = n(200651),
   i = n(192379),
   s = n(913527),
   a = n.n(s),
-  o = n(99945),
-  l = n(780384),
+  l = n(99945),
+  o = n(780384),
   c = n(481060),
   d = n(355467),
   u = n(493773),
@@ -28,12 +28,12 @@ async function _(e) {
     setHasError: i,
     setIsCancelling: s,
     analyticsLocations: a,
-    analyticsLocation: o
+    analyticsLocation: l
   } = e;
   try {
     s(!0), i(!1), await (0, d.Mg)(t, {
       pauseDuration: n
-    }, a, o), r()
+    }, a, l), r()
   } catch (e) {
     i(!0), s(!1)
   }
@@ -45,7 +45,7 @@ function E(e) {
     onClose: n,
     pauseDuration: s,
     setPauseDuration: a,
-    footer: l,
+    footer: o,
     premiumSubscription: d
   } = e, m = i.useCallback(e => {
     let {
@@ -60,7 +60,7 @@ function E(e) {
       } = (0, h.AT)(e),
       i = [];
     for (let e of n) {
-      let n = o.T[e];
+      let n = l.T[e];
       i.push({
         name: b.NW.formatToPlainString(t, {
           days: n - r
@@ -105,7 +105,7 @@ function E(e) {
       })
     }), (0, r.jsx)(c.mzw, {
       justify: p.Z.Justify.START,
-      children: l
+      children: o
     })]
   })
 }
@@ -115,15 +115,15 @@ function j(e) {
     premiumSubscription: t,
     premiumType: n,
     onClose: s,
-    pauseDuration: o,
+    pauseDuration: l,
     analyticsLocation: d
   } = e, [u, h] = i.useState(!1), {
     analyticsLocations: E
-  } = (0, g.ZP)(), [j, O] = i.useState(!1), C = (0, m.ZP)(), S = null, v = null, T = [N.O0b.PAST_DUE, N.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(o, "days").toDate();
+  } = (0, g.ZP)(), [j, O] = i.useState(!1), C = (0, m.ZP)(), S = null, v = null, T = [N.O0b.PAST_DUE, N.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
   switch (t.status) {
     case N.O0b.PAST_DUE:
       v = b.NW.format(b.t["xaS18/"], {
-        pauseDuration: o,
+        pauseDuration: l,
         resumeDate: I
       });
       break;
@@ -136,7 +136,7 @@ function j(e) {
       v = b.NW.format(b.t.W85vFB, {
         pauseDate: T,
         resumeDate: I,
-        pauseDuration: o
+        pauseDuration: l
       })
   }
   return S = (0, r.jsx)("div", {
@@ -168,11 +168,11 @@ function j(e) {
         className: x.whatYouLoseButtonContainer,
         children: [(0, r.jsx)(c.zxk, {
           color: c.zxk.Colors.RED,
-          disabled: j || null == o,
+          disabled: j || null == l,
           onClick: async () => {
             await _({
               premiumSubscription: t,
-              pauseDuration: o,
+              pauseDuration: l,
               setIsCancelling: O,
               setHasError: h,
               onClose: s,
@@ -183,7 +183,7 @@ function j(e) {
           children: b.NW.string(b.t["cY+Ooa"])
         }), (0, r.jsx)(c.zxk, {
           look: c.zxk.Looks.LINK,
-          color: (0, l.wj)(C) ? c.zxk.Colors.WHITE : c.zxk.Colors.PRIMARY,
+          color: (0, o.wj)(C) ? c.zxk.Colors.WHITE : c.zxk.Colors.PRIMARY,
           onClick: s,
           children: b.NW.string(b.t.h9tkAA)
         })]

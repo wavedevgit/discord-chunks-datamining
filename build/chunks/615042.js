@@ -6,8 +6,8 @@ var r = n(192379),
   i = n(442837),
   s = n(78839),
   a = n(960048),
-  o = n(715037),
-  l = n(29920);
+  l = n(715037),
+  o = n(29920);
 let c = () => {
   let {
     premiumSubscription: e,
@@ -19,13 +19,13 @@ let c = () => {
     isFetchingRewardEligibility: s.ZP.getIsFetchingSubscriptionRewardEligibility()
   })), {
     enabled: c
-  } = o.Z.useExperiment({
+  } = l.Z.useExperiment({
     location: "useMaybeFetchSubscriptionRewardEligibility"
   });
   r.useEffect(() => {
     let r = async e => {
       try {
-        await (0, l.b2)(e)
+        await (0, o.b2)(e)
       } catch (e) {
         a.Z.captureException(e)
       }

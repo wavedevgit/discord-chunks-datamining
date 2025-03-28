@@ -7,14 +7,14 @@ n(192379);
 var i = n(481060),
   s = n(921944),
   a = n(388032),
-  o = n(593297);
+  l = n(593297);
 
-function l(e) {
+function o(e) {
   let {
     markAsDismissed: t
   } = e;
   return (0, r.jsxs)(i.P3F, {
-    className: o.container,
+    className: l.container,
     onClick: () => {
       t(s.L.USER_DISMISS)
     },
@@ -27,7 +27,7 @@ function l(e) {
       variant: "text-xs/normal",
       children: a.NW.string(a.t.rYAs7O)
     }), (0, r.jsx)("div", {
-      className: o.pointer
+      className: l.pointer
     })]
   })
 }
@@ -43,7 +43,7 @@ function c(e) {
     align: "left",
     shouldShow: !0,
     animation: i.yRy.Animation.TRANSLATE,
-    renderPopout: () => (0, r.jsx)(l, {
+    renderPopout: () => (0, r.jsx)(o, {
       markAsDismissed: n
     }),
     children: t

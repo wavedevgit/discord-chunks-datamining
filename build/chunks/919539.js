@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(168107),
-  o = n(480916),
-  l = n(430824),
+  l = n(480916),
+  o = n(430824),
   c = n(626135),
   d = n(63063),
   u = n(709054),
@@ -49,7 +49,7 @@ function v(e) {
   function D(e, t) {
     var n;
     if ((0, g.SI)()) {
-      a.Z.showAgeVerificationGetStartedModal(o.cU.MESSAGE_REQUESTS_SETTINGS);
+      a.Z.showAgeVerificationGetStartedModal(l.cU.MESSAGE_REQUESTS_SETTINGS);
       return
     }
     t ? P(e) : (n = !e, (0, x.V)({
@@ -62,7 +62,7 @@ function v(e) {
         h.mX.updateSetting(n), R(n, !1)
       },
       onCancel: () => {
-        h.mX.updateSetting(n), h.zA.updateSetting(n ? u.default.keys(l.Z.getGuilds()) : []), R(n, !0)
+        h.mX.updateSetting(n), h.zA.updateSetting(n ? u.default.keys(o.Z.getGuilds()) : []), R(n, !0)
       }
     }))
   }

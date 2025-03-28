@@ -7,8 +7,8 @@ var r = n(913527),
   i = n.n(r),
   s = n(442837),
   a = n(780384),
-  o = n(410030),
-  l = n(726542),
+  l = n(410030),
+  o = n(726542),
   c = n(835473),
   d = n(594190),
   u = n(553795),
@@ -39,11 +39,11 @@ function N() {
 
 function b() {
   let e = (0, s.e7)([u.Z], () => u.Z.getAccounts()),
-    t = (0, o.ZP)(),
+    t = (0, l.ZP)(),
     n = e.length;
   return {
     assets: e.filter(e => h.vbS.has(e.type) && e.showActivity).slice(0, n > 4 ? 3 : 4).map(e => {
-      let n = l.Z.get(e.type);
+      let n = o.Z.get(e.type);
       return {
         src: (0, a.wj)(t) ? n.icon.darkSVG : n.icon.lightSVG,
         alt: n.name

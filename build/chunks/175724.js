@@ -6,8 +6,8 @@ var r = n(475179),
   i = n(904245),
   s = n(45114),
   a = n(40851),
-  o = n(358221),
-  l = n(623292),
+  l = n(358221),
+  o = n(623292),
   c = n(807092),
   d = n(6025),
   u = n(897473),
@@ -42,20 +42,20 @@ let v = {
     let n = E.Z.getGuildId(),
       i = _.Z.getChannelId(n),
       s = h.Z.getChannel(i),
-      l = p.ZP.getSection(i, null == s ? void 0 : s.isDM()) === S.ULH.SIDEBAR_CHAT ? p.ZP.getSidebarState(i) : null,
-      c = (null == l ? void 0 : l.type) === u.tI.VIEW_THREAD || (null == l ? void 0 : l.type) === u.tI.VIEW_CHANNEL ? l.channelId : null;
+      o = p.ZP.getSection(i, null == s ? void 0 : s.isDM()) === S.ULH.SIDEBAR_CHAT ? p.ZP.getSidebarState(i) : null,
+      c = (null == o ? void 0 : o.type) === u.tI.VIEW_THREAD || (null == o ? void 0 : o.type) === u.tI.VIEW_CHANNEL ? o.channelId : null;
     if (!1 === T(i) || !1 === T(c)) return !1;
-    if (null != i && (null == l ? void 0 : l.type) === u.tI.CREATE_THREAD) return d.Z.closeChannelSidebar(i), !1;
+    if (null != i && (null == o ? void 0 : o.type) === u.tI.CREATE_THREAD) return d.Z.closeChannelSidebar(i), !1;
     let m = I(i),
       g = I(c);
-    return null == i || m || g || null == l ? null != i && !m && o.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, !1) : C.S.dispatch(S.CkL.SCROLLTO_PRESENT) : d.Z.closeChannelSidebar(i), !1
+    return null == i || m || g || null == o ? null != i && !m && l.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, !1) : C.S.dispatch(S.CkL.SCROLLTO_PRESENT) : d.Z.closeChannelSidebar(i), !1
   }
 };
 
 function T(e) {
   if (null != e) {
     if (N.Z.isEditingAny(e)) return i.Z.endEditMessage(e), !1;
-    if (null != c.Z.getPendingReply(e)) return (0, l.A6)(e), !1;
+    if (null != c.Z.getPendingReply(e)) return (0, o.A6)(e), !1;
     if (null != m.Z.getStickerPreview(e, f.d.ChannelMessage)) return (0, g.qB)(e, f.d.ChannelMessage), !1
   }
 }

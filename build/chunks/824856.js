@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(561537),
-  l = n(269210),
+  l = n(561537),
+  o = n(269210),
   c = n(481060),
   d = n(58385),
   u = n(889989),
@@ -33,7 +33,7 @@ function N(e) {
     let e = E[0];
     return (0, m.xg)(e)
   }, [E]);
-  return null == j ? null : (0, r.jsxs)(o.l, {
+  return null == j ? null : (0, r.jsxs)(l.l, {
     className: a()(f.wrapper, s),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ function N(e) {
           description: i,
           icon: s
         } = e;
-        return (0, r.jsx)(l.Gm, {
+        return (0, r.jsx)(o.Gm, {
           header: n,
           icon: (0, u.n)(N, s),
           description: i

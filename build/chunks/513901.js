@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(481060),
-  l = n(906732),
+  l = n(481060),
+  o = n(906732),
   c = n(642619),
   d = n(626135),
   u = n(74538),
@@ -32,7 +32,7 @@ function x(e) {
     initialSelectedEffectId: C
   } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
-  } = (0, l.ZP)(), {
+  } = (0, o.ZP)(), {
     pendingProfileEffectId: I,
     errors: y
   } = (0, m.bd)(n), A = i.useCallback(() => (0, c.H)({
@@ -47,7 +47,7 @@ function x(e) {
     })
   }, [v, T]);
   let P = null != n,
-    R = E ? o.gtL : o.zxk;
+    R = E ? l.gtL : l.zxk;
   return (0, r.jsx)(g.Z, {
     forcedDivider: _,
     borderType: p.Y.PREMIUM,
@@ -59,17 +59,17 @@ function x(e) {
     children: (0, r.jsxs)("div", {
       className: b.buttonsContainer,
       children: [(0, r.jsx)(R, {
-        size: o.zxk.Sizes.SMALL,
+        size: l.zxk.Sizes.SMALL,
         onClick: A,
         className: a()({
           [b.buttonHighlighted]: E
         }),
         children: N.NW.string(N.t["0nEVoK"])
-      }), (O || void 0 !== I ? null != I : null != S) && (0, r.jsx)(o.zxk, {
+      }), (O || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
         className: b.removeButton,
-        color: o.zxk.Colors.PRIMARY,
-        look: o.zxk.Looks.LINK,
-        size: o.zxk.Sizes.SMALL,
+        color: l.zxk.Colors.PRIMARY,
+        look: l.zxk.Looks.LINK,
+        size: l.zxk.Sizes.SMALL,
         onClick: function() {
           (0, m.s6)(null, S, null == n ? void 0 : n.id)
         },

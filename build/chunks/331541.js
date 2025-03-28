@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(873546),
   a = n(852229),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(393238),
   d = n(727637),
   u = n(100527),
@@ -91,9 +91,9 @@ function J(e) {
   }), () => B.a.setState({
     isOpen: !1
   })), []);
-  let ea = (0, o.e7)([Z.Z], () => Z.Z.getStatus(t.id)),
-    eo = D.Cr.useSetting(),
-    el = (0, G.F)(eo),
+  let ea = (0, l.e7)([Z.Z], () => Z.Z.getStatus(t.id)),
+    el = D.Cr.useSetting(),
+    eo = (0, G.F)(el),
     {
       expiringStatusProfileFeedback: ec
     } = h.Y.useExperiment({
@@ -101,7 +101,7 @@ function J(e) {
     }, {
       autoTrackExposure: !1
     }),
-    ed = (0, o.e7)([w.Z], () => w.Z.hidePersonalInformation),
+    ed = (0, l.e7)([w.Z], () => w.Z.hidePersonalInformation),
     eu = (0, f.p)(),
     em = D.Sb.useSetting(),
     eg = (0, G.I)(ea),
@@ -124,7 +124,7 @@ function J(e) {
     value: en,
     children: (0, r.jsx)(x.Mt, {
       value: er,
-      children: (0, r.jsx)(l.VqE, {
+      children: (0, r.jsx)(o.VqE, {
         ref: ei,
         "aria-label": t.username,
         children: (0, r.jsxs)(T.Z, {
@@ -153,7 +153,7 @@ function J(e) {
           }), (null == et ? void 0 : et.profileEffectId) != null && (0, r.jsx)(b.Z, {
             profileEffectId: null == et ? void 0 : et.profileEffectId,
             isHovering: es
-          }), (0, r.jsxs)(l.Ttm, {
+          }), (0, r.jsxs)(o.Ttm, {
             className: K.body,
             children: [(0, r.jsx)(I.Z, {
               user: t,
@@ -200,7 +200,7 @@ function J(e) {
                     id: "edit-profile",
                     action: "EDIT_PROFILE",
                     label: Y.NW.string(Y.t.s5vZlZ),
-                    icon: l.vdY,
+                    icon: o.vdY,
                     onClick: () => {
                       eh(), n()
                     }
@@ -210,16 +210,16 @@ function J(e) {
                     id: "set-status",
                     action: "PRESS_SET_STATUS",
                     label: (0, r.jsx)(V.Z, {}),
-                    sublabel: ec && null != el && (0, r.jsx)(l.Text, {
+                    sublabel: ec && null != eo && (0, r.jsx)(o.Text, {
                       color: "currentColor",
                       variant: "text-xs/medium",
-                      children: el
+                      children: eo
                     }),
-                    icon: () => (0, r.jsx)(l.qbd, {
+                    icon: () => (0, r.jsx)(o.qbd, {
                       status: ea,
                       size: 12
                     }),
-                    hint: (eu || ea === H.Skl.DND) && (0, r.jsx)(l.owu, {
+                    hint: (eu || ea === H.Skl.DND) && (0, r.jsx)(o.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: s.tq ? void 0 : e => {
@@ -235,7 +235,7 @@ function J(e) {
                       })
                     },
                     onClick: s.tq ? () => {
-                      n(), (0, l.ZDy)(() => new Promise(e => e(e => {
+                      n(), (0, o.ZDy)(() => new Promise(e => e(e => {
                         var t, n, {
                             onClose: i
                           } = e,
@@ -254,11 +254,11 @@ function J(e) {
                             }
                             return i
                           }(e, ["onClose"]);
-                        return (0, r.jsx)(l.Y0X, (t = X({}, s), n = n = {
-                          size: l.CgR.SMALL,
+                        return (0, r.jsx)(o.Y0X, (t = X({}, s), n = n = {
+                          size: o.CgR.SMALL,
                           "aria-label": Y.NW.string(Y.t["3Uj+2t"]),
                           className: K.statusPickerModal,
-                          children: (0, r.jsx)(l.v2r, {
+                          children: (0, r.jsx)(o.v2r, {
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
                             "aria-label": Y.NW.string(Y.t.E13trK),
@@ -289,7 +289,7 @@ function J(e) {
                   children: [(0, r.jsx)(U.Mv, {
                     id: "switch-accounts",
                     action: "PRESS_SWITCH_ACCOUNTS",
-                    icon: l.lMe,
+                    icon: o.lMe,
                     label: Y.NW.string(Y.t.oMNyYG),
                     onClick: () => {
                       n(), (0, F.Z)()
@@ -311,7 +311,7 @@ function J(e) {
                     }), (0, r.jsx)(U.Mv, {
                       id: "copy-user-id",
                       action: "COPY_USER_ID",
-                      icon: l.VuL,
+                      icon: o.VuL,
                       label: Y.NW.string(Y.t["/AXYnJ"]),
                       onClick: () => {
                         (0, a.J)(t.id), n()

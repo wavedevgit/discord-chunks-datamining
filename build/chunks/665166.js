@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(947630),
   a = n(481060),
-  o = n(279403),
-  l = n(57781),
+  l = n(279403),
+  o = n(57781),
   c = n(388032);
 
 function d() {
@@ -36,35 +36,35 @@ function d() {
       children: [(0, r.jsx)(a.Text, {
         tag: "div",
         variant: "heading-lg/bold",
-        children: c.NW.format(l.Z.JJ0wpK, {})
+        children: c.NW.format(o.Z.JJ0wpK, {})
       }), (0, r.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: c.NW.format(o.Z.swfLzc, {})
+        children: c.NW.format(l.Z.swfLzc, {})
       }), (0, r.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: c.NW.format(l.Z["rmps8/"], {})
+        children: c.NW.format(o.Z["rmps8/"], {})
       }), (0, r.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: c.NW.format(l.Z.uczI4u, {
+        children: c.NW.format(o.Z.uczI4u, {
           linkTarget: console.log
         })
       }), (0, r.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: c.NW.format(l.Z.rdfRys, {})
+        children: c.NW.format(o.Z.rdfRys, {})
       }), (0, r.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: c.NW.format(l.Z["Q+eyqq"], {
+        children: c.NW.format(o.Z["Q+eyqq"], {
           count: 1
         })
       }), (0, r.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: c.NW.format(l.Z.XOdbAw, {
+        children: c.NW.format(o.Z.XOdbAw, {
           username: "some user",
           usernameHook: e => (0, r.jsx)("span", {
             style: {

@@ -7,8 +7,8 @@ n(192379);
 var i = n(990547),
   s = n(704215),
   a = n(692547),
-  o = n(481060),
-  l = n(570140),
+  l = n(481060),
+  o = n(570140),
   c = n(893776),
   d = n(37234),
   u = n(809206),
@@ -61,8 +61,8 @@ var i = n(990547),
   ei = n(154022),
   es = n(393681),
   ea = n(309739),
-  eo = n(64914),
-  el = n(501348),
+  el = n(64914),
+  eo = n(501348),
   ec = n(795594),
   ed = n(443702),
   eu = n(327192),
@@ -298,7 +298,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
           element: D.Z
         },
         onSettingsClose: () => {
-          l.Z.wait(() => {
+          o.Z.wait(() => {
             (0, C.It)(), (0, u.P6)(), m.Z.clearSubsection(eU.oAB.PROFILE_CUSTOMIZATION)
           })
         },
@@ -483,7 +483,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         ariaLabel: eF.NW.string(eH.Z.gntCQU),
         element: ef.Z,
         badgeCount: y,
-        newIndicator: (0, r.jsx)(o.IGR, {
+        newIndicator: (0, r.jsx)(l.IGR, {
           text: eF.NW.string(eF.t.y2b7CA),
           color: _.Z.BG_BRAND
         }),
@@ -593,7 +593,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t.trSpHR)],
         label: eF.NW.string(eF.t.trSpHR),
         element: R.Z,
-        icon: O ? (0, r.jsx)(o.P4T, {
+        icon: O ? (0, r.jsx)(l.P4T, {
           size: "xs",
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
@@ -663,8 +663,8 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t["iHH+k5"])],
         label: eF.NW.string(eF.t["iHH+k5"]),
         ariaLabel: eF.NW.string(eF.t["iHH+k5"]),
-        element: el.Z,
-        newIndicator: (0, r.jsx)(o.lBU, {
+        element: eo.Z,
+        newIndicator: (0, r.jsx)(l.lBU, {
           text: eF.NW.string(eF.t.y2b7CA)
         }),
         newIndicatorDismissibleContentTypes: eY(),
@@ -694,7 +694,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.APPEARANCE,
         searchableTitles: ["List Spacing"],
         parent: eM.s6.APPEARANCE,
-        newIndicator: (0, r.jsx)(o.IGR, {
+        newIndicator: (0, r.jsx)(l.IGR, {
           text: eF.NW.string(eF.t.y2b7CA),
           color: _.Z.BG_BRAND
         }),
@@ -1434,7 +1434,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t["8/udY2"])],
         label: eF.NW.string(eF.t["8/udY2"]),
         ariaLabel: eF.NW.string(eF.t["8/udY2"]),
-        element: eo.Z
+        element: el.Z
       },
       [eM.s6.SETTINGS_ADVANCED_DEVELOPER_MODE]: {
         section: eU.oAB.ADVANCED,
@@ -1850,9 +1850,9 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eM.s6.LOGOUT]: {
         section: "logout",
         onClick: () => {
-          (0, o.h7j)(e => {
+          (0, l.h7j)(e => {
             var t, n;
-            return (0, r.jsx)(o.ConfirmModal, (t = function(e) {
+            return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -1876,7 +1876,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
               onCancel: e.onClose,
               onConfirm: () => c.Z.logout()
             }, e), n = n = {
-              children: (0, r.jsx)(o.Text, {
+              children: (0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
                 children: eF.NW.string(eF.t.SUnWBA)
               })
@@ -1894,7 +1894,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         },
         label: eF.NW.string(eF.t["2jxGen"]),
         ariaLabel: eF.NW.string(eF.t["2jxGen"]),
-        icon: (0, r.jsx)(o.PBZ, {
+        icon: (0, r.jsx)(l.PBZ, {
           size: "xs",
           color: "currentColor"
         })

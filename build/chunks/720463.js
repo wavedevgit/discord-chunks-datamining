@@ -1,12 +1,12 @@
 /** Chunk was on 82081 **/
 n.d(t, {
-  BalanceWidgetEarnedOrbsCoachmarkModal: () => N,
-  E: () => y
+  BalanceWidgetEarnedOrbsCoachmarkModal: () => y,
+  E: () => N
 });
 var r = n(200651);
 n(192379);
-var o = n(120356),
-  a = n.n(o),
+var a = n(120356),
+  o = n.n(a),
   i = n(568611),
   s = n(442837),
   c = n(693789),
@@ -14,18 +14,18 @@ var o = n(120356),
   d = n(607070),
   b = n(70097),
   u = n(751648),
-  f = n(790542),
-  m = n(317257),
+  m = n(790542),
+  f = n(317257),
   p = n(970815),
   h = n(622562),
-  O = n(432792),
-  _ = n(981631),
+  _ = n(432792),
+  O = n(981631),
   g = n(388032),
   x = n(803812),
   j = n(981987),
   k = n(447489),
-  v = n(484885);
-let C = () => {
+  C = n(484885);
+let v = () => {
     let e = (0, s.e7)([d.Z], () => d.Z.useReducedMotion);
     return (0, r.jsx)("div", {
       className: j.centerContent,
@@ -38,7 +38,7 @@ let C = () => {
         loop: !0,
         className: j.orbAsset,
         children: [(0, r.jsx)("source", {
-          src: v.Z,
+          src: C.Z,
           type: "video/webm"
         }), (0, r.jsx)("img", {
           src: k.Z,
@@ -48,22 +48,24 @@ let C = () => {
       })
     })
   },
-  y = e => {
+  N = e => {
     let {
       earnedOrbsQuantity: t,
       descriptionText: n = g.NW.string(g.t["4YgBe3"]),
-      ctaText: o = g.NW.string(g.t.WYchdX),
+      ctaText: a = g.NW.string(g.t.WYchdX),
       linkText: s = g.NW.string(g.t["H57f4+"]),
       ctaOnClick: d,
       linkOnClick: b,
       linkTo: u
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(j.container, x.baseCardOutline),
-      children: [(0, r.jsx)(O.VK, {
+      className: o()(j.container, x.baseCardOutline),
+      children: [(0, r.jsx)(_.VK, {
         rightOffset: 20,
-        invertTail: !0
-      }), (0, r.jsx)(C, {}), (0, r.jsxs)("div", {
+        invertTail: !0,
+        tailSpineClassName: j.coachmarkTailSpine,
+        tailTargetInnerClassName: j.coachmarkTailTargetInner
+      }), (0, r.jsx)(v, {}), (0, r.jsxs)("div", {
         className: j.contentContainer,
         children: [(0, r.jsxs)("div", {
           className: j.textContainer,
@@ -85,7 +87,7 @@ let C = () => {
           look: c.zx.Looks.FILLED,
           onClick: d,
           fullWidth: !0,
-          children: o
+          children: a
         }), (0, r.jsx)(i.rU, {
           to: {
             pathname: u
@@ -101,40 +103,40 @@ let C = () => {
     })
   };
 
-function N(e) {
+function y(e) {
   var {
     earnedOrbsQuantity: t,
     backgroundElementRef: n,
-    onClickPill: o,
-    ctaOnClick: a,
+    onClickPill: a,
+    ctaOnClick: o,
     linkOnClick: i,
     onClose: s,
     onCloseCallback: c
   } = e;
   ! function(e, t) {
     if (null != e) {
-      var n, r, o = function(e, t) {
+      var n, r, a = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        var n, r, a = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+        return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
     }
   }(e, ["earnedOrbsQuantity", "backgroundElementRef", "onClickPill", "ctaOnClick", "linkOnClick", "onClose", "onCloseCallback"]);
   let {
     balance: l
-  } = (0, f.A)(), d = async () => {
+  } = (0, m.A)(), d = async () => {
     await (0, u.j2)(), await s(), c()
   };
   return (0, r.jsxs)(h.E, {
     className: j.coachmarkModalContainer,
     backgroundElementRef: n,
-    onGetBoundingRect: _.dG4,
+    onGetBoundingRect: O.dG4,
     getOffsetsRelativeToElement: () => ({
       top: 0,
       right: 0
@@ -148,14 +150,14 @@ function N(e) {
     },
     children: [(0, r.jsx)(p.A4, {
       onClick: async () => {
-        await d(), o()
+        await d(), a()
       },
       balance: l,
-      balanceWidgetMode: m.b.DEFAULT
-    }), (0, r.jsx)(y, {
+      balanceWidgetMode: f.b.DEFAULT
+    }), (0, r.jsx)(N, {
       earnedOrbsQuantity: t,
       ctaOnClick: async () => {
-        await d(), a()
+        await d(), o()
       },
       linkOnClick: async () => {
         await d(), i()

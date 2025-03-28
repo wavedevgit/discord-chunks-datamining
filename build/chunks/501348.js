@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(704215),
+  l = n(442837),
+  o = n(704215),
   c = n(524437),
   d = n(780384),
   u = n(481060),
@@ -122,7 +122,7 @@ let Y = {
   },
   $ = () => {
     let e = (0, j.Q3)("ThemeTitle"),
-      t = (0, o.e7)([x.Z], () => x.Z.isPreview),
+      t = (0, l.e7)([x.Z], () => x.Z.isPreview),
       {
         enabled: n
       } = I.Z.useExperiment({
@@ -604,7 +604,7 @@ class et extends ee {
       }), this.renderMessageGroupSpacingSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), o = (0, r.jsxs)(y.F, {
+    }), l = (0, r.jsxs)(y.F, {
       setting: W.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-lg/medium",
@@ -613,7 +613,7 @@ class et extends ee {
       }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), l = (0, r.jsx)(y.F, {
+    }), o = (0, r.jsx)(y.F, {
       setting: W.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), d = (0, r.jsx)(u.Text, {
@@ -628,7 +628,7 @@ class et extends ee {
     return (0, r.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: U.NW.string(U.t["iHH+k5"]),
-      children: [this.renderVisualRefreshOverride(), t, n, s, a, o, l, d]
+      children: [this.renderVisualRefreshOverride(), t, n, s, a, l, o, d]
     })
   }
 }
@@ -647,9 +647,9 @@ function er() {
     s = Z.hg.useSetting(),
     a = Z.YC.useSetting();
   (0, p.ZP)(() => {
-    en(l.z.CLIENT_THEMES_SETTINGS_BADGE), en(l.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(l.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
+    en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, o.cj)([R.Z, D.ZP, N.Z, A.default, x.Z], () => {
+  let c = (0, l.cj)([R.Z, D.ZP, N.Z, A.default, x.Z], () => {
       var e, t;
       return {
         theme: R.Z.theme,

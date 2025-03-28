@@ -308,10 +308,9 @@ let eg = i.memo(function(e) {
     listScrollerRef: v
   }), {
     shouldShow: I,
-    closeCoachmarkIfOpen: C,
-    onHandleScroll: S,
-    offsetControlRef: T
-  } = y, P = eo(y, ["shouldShow", "closeCoachmarkIfOpen", "onHandleScroll", "offsetControlRef"]);
+    onHandleScroll: C,
+    offsetControlRef: S
+  } = y, T = eo(y, ["shouldShow", "onHandleScroll", "offsetControlRef"]);
   return (0, r.jsxs)("nav", {
     className: er.privateChannels,
     "aria-label": et.NW.string(et.t.ZH9aPz),
@@ -346,7 +345,7 @@ let eg = i.memo(function(e) {
       selectedChannelId: g,
       showDMHeader: !0,
       listScrollerRef: v,
-      onHandleScroll: I ? S : void 0,
+      onHandleScroll: I ? C : void 0,
       children: [(0, r.jsx)(ea, {
         selected: null != m ? m === J.Z5c.FRIENDS : l === J.Z5c.FRIENDS
       }, "friends"), n && t ? (0, r.jsx)(es, {
@@ -367,7 +366,6 @@ let eg = i.memo(function(e) {
       }, "premium") : null, (0, r.jsx)(N.i, {
         selected: m === J.Z5c.COLLECTIBLES_SHOP || (null == l ? void 0 : l.startsWith(J.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: E,
-        onClick: C,
         locationState: {
           analyticsSource: {
             page: ef(l),
@@ -377,8 +375,8 @@ let eg = i.memo(function(e) {
         }
       }, "discord-shop"), I ? (0, r.jsx)(V.ZP, ei({
         backgroundElementRef: E,
-        offsetControlRef: T
-      }, P)) : null, p ? (0, r.jsx)(ed, {
+        offsetControlRef: S
+      }, T)) : null, p ? (0, r.jsx)(ed, {
         selected: null != l && l.startsWith(J.Z5c.FAMILY_CENTER) || null != m && m.startsWith(J.Z5c.FAMILY_CENTER)
       }, "family-center") : null, s ? (0, r.jsx)(em, {}, "section-divider-top") : null, h ? (0, r.jsx)(O.Z, {
         bottomDivider: s ? (0, r.jsx)(em, {}) : null

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(846027),
-  l = n(906732),
+  l = n(846027),
+  o = n(906732),
   c = n(920321),
   d = n(131951),
   u = n(388032);
@@ -23,7 +23,7 @@ function m() {
     })),
     {
       analyticsLocations: m
-    } = (0, l.ZP)(),
+    } = (0, o.ZP)(),
     g = i.useMemo(() => Object.values(e).map(e => {
       let {
         id: t,
@@ -41,7 +41,7 @@ function m() {
       options: g,
       value: t,
       isDisabled: !n,
-      onChange: e => o.Z.setVideoDevice(e, {
+      onChange: e => l.Z.setVideoDevice(e, {
         analyticsLocations: m
       }),
       "aria-label": u.NW.string(u.t["t9eQ/v"])
