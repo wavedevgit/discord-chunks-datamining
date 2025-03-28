@@ -70,7 +70,7 @@ function E(e) {
     };
   return g.set(t, o), o
 }
-let b = ["http:", "https:", "discord:"],
+let b = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   v = [d.b.TEXT, d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP],
   y = [...v, d.b.EMOJI, d.b.CUSTOM_EMOJI],
   O = [d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT],

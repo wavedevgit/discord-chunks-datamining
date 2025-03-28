@@ -6,8 +6,8 @@ var n = a(200651);
 a(192379);
 var l = a(481060),
   s = a(600164),
-  i = a(313201),
-  r = a(988158),
+  r = a(313201),
+  i = a(988158),
   o = a(388032),
   c = a(688405);
 
@@ -16,11 +16,11 @@ function d(t) {
     url: e,
     onClose: d,
     transitionState: u
-  } = t, x = (0, i.Dt)(), {
+  } = t, x = (0, r.Dt)(), {
     protocol: h,
     hostname: m,
     theRestOfTheUrl: b
-  } = (0, r.h)(e);
+  } = (0, i.h)(e);
   return (0, n.jsxs)(l.Y0X, {
     transitionState: u,
     "aria-labelledby": x,

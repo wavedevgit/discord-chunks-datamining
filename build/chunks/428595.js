@@ -143,6 +143,25 @@ let V = e => {
     autolink: M(L({}, a().defaultRules.autolink), {
       parse: F
     }),
+    mailto: M(L({}, a().defaultRules.mailto), {
+      requiredFirstCharacters: ["<"]
+    }),
+    tel: M(L({}, a().defaultRules.mailto), {
+      requiredFirstCharacters: ["<"],
+      match: a().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:[0-9]+)(?:-[0-9]+)*)>/),
+      parse(e) {
+        let t = e[1],
+          n = e[1];
+        return n.startsWith("tel:") || n.startsWith("sms:") || (n = "tel:" + n), {
+          type: "link",
+          content: [{
+            type: "text",
+            content: t
+          }],
+          target: n
+        }
+      }
+    }),
     url: M(L({}, a().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {

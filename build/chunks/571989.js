@@ -82,5 +82,7 @@ function _(e) {
 function p(e) {
   if ("null" === e.origin && e.pathname.startsWith("//")) return e.protocol;
   let t = "";
-  return "" !== e.username && (t += e.username), "" !== e.password && (t += ":" + e.password), "" !== t && (t += "@"), "".concat(e.protocol, "//").concat(t).concat(e.host)
+  "" !== e.username && (t += e.username), "" !== e.password && (t += ":" + e.password), "" !== t && (t += "@");
+  let n = "//" === e.href.substr(e.protocol.length, 2) ? "//" : "";
+  return "".concat(e.protocol).concat(n).concat(t).concat(e.host)
 }

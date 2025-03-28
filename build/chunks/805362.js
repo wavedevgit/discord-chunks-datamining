@@ -1,28 +1,28 @@
 /** Chunk was on 96473 **/
-t.d(e, {
+e.d(n, {
   default: () => c
 });
-var l = t(200651);
-t(192379);
-var r = t(481060),
-  i = t(239091),
-  o = t(358085),
-  a = t(905041),
-  u = t(388032);
+var l = e(200651);
+e(192379);
+var r = e(481060),
+  i = e(239091),
+  a = e(358085),
+  o = e(905041),
+  u = e(388032);
 
-function c(n) {
+function c(t) {
   let {
-    href: e,
-    textContent: t,
+    href: n,
+    textContent: e,
     onSelect: c
-  } = n, d = (0, a.Z)(e, t);
-  return o.isPlatformEmbedded && null != d ? (0, l.jsx)(r.v2r, {
+  } = t, s = (0, o.Z)(n, e);
+  return a.isPlatformEmbedded && null != s ? (0, l.jsx)(r.v2r, {
     navId: "image-context",
     onClose: i.Zy,
     "aria-label": u.NW.string(u.t.Zow2V1),
     onSelect: c,
     children: (0, l.jsx)(r.kSQ, {
-      children: d
+      children: s
     })
   }) : null
 }

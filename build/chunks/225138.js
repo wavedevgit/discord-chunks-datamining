@@ -92,23 +92,23 @@ function F(e) {
     textSelection: a,
     favoriteableType: U,
     favoriteableId: F,
-    favoriteableName: H,
-    itemHref: K,
-    itemSrc: z,
+    favoriteableName: z,
+    itemHref: H,
+    itemSrc: K,
     itemSafeSrc: B,
     itemTextContent: X,
     canReport: q,
     onHeightUpdate: J,
-    onSelect: Q,
-    onClose: V,
+    onSelect: V,
+    onClose: Q,
     navId: Y,
     ariaLabel: $,
     shouldHideMediaOptions: ee = !1
   } = e, et = (0, c.Z)(a), en = (0, f.Z)(a), er = (0, x.Z)(t, n), ei = (0, v.Z)(t, n), el = (0, j.Z)(t, n), ea = (0, I.Z)(t, n), eo = (0, S.Z)({
     type: U,
     id: F,
-    name: H
-  }), es = (0, D.Z)(t, n), ec = (0, Z.Z)(t, n), eu = (0, _.Z)(t), ed = (0, y.Z)(t, n), ef = (0, N.Z)(t, n), eg = (0, T.Z)(t, n), em = (0, M.Z)(t, n), eb = (0, E.Z)(t, n), ep = (0, A.Z)(t), eh = (0, A.e)(t), ev = (0, C.Z)(t, n), ey = (0, d.Z)(null != K ? K : z, X, t, {
+    name: z
+  }), es = (0, D.Z)(t, n), ec = (0, Z.Z)(t, n), eu = (0, _.Z)(t), ed = (0, y.Z)(t, n), ef = (0, N.Z)(t, n), eg = (0, T.Z)(t, n), em = (0, M.Z)(t, n), eb = (0, E.Z)(t, n), ep = (0, A.Z)(t), eh = (0, A.e)(t), ev = (0, C.Z)(t, n), ey = (0, d.Z)(null != H ? H : K, X, t, {
     shouldHideMediaOptions: ee
   }), eN = (0, u.Z)(B, t, {
     shouldHideMediaOptions: ee
@@ -125,9 +125,9 @@ function F(e) {
   }), ew = (0, L.Z)(t), eA = (0, g.Z)(t);
   return (0, r.jsxs)(l.v2r, {
     navId: Y,
-    onClose: V,
+    onClose: Q,
     "aria-label": $,
-    onSelect: Q,
+    onSelect: V,
     children: [(0, r.jsx)(l.kSQ, {
       children: et
     }), (0, r.jsx)(l.kSQ, {
