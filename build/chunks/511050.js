@@ -1,7 +1,7 @@
 /** Chunk was on 20565 **/
 r.d(t, {
   Z: () => p,
-  l: () => m
+  l: () => b
 });
 var n = r(192379),
   a = r(442837),
@@ -13,8 +13,8 @@ var n = r(192379),
   u = r(822857),
   d = r(981631),
   f = r(46140);
-let b = new o.Z("VirtualCurrency"),
-  m = e => {
+let m = new o.Z("VirtualCurrency"),
+  b = e => {
     let {
       location: t
     } = e, {
@@ -25,13 +25,13 @@ let b = new o.Z("VirtualCurrency"),
       if (!r) return null;
       let e = c.Z.getQuest(f.V6);
       return null == e ? null : (0, l.LM)(e.config)
-    }, [r]), m = (0, n.useCallback)(e => {
+    }, [r]), b = (0, n.useCallback)(e => {
       let {
         forceOpen: t,
         delayMS: r = 500
       } = e;
       if (null == o && !t) {
-        b.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(f.V6));
+        m.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(f.V6));
         return
       }
       if (!(0, s.wH)()) {
@@ -52,7 +52,7 @@ let b = new o.Z("VirtualCurrency"),
     }, []);
     return r ? {
       rewardOrbQuantity: o,
-      openIntroToOrbsClaimedCoachmark: m,
+      openIntroToOrbsClaimedCoachmark: b,
       closeIntroToOrbsClaimedCoachmark: p
     } : {
       rewardOrbQuantity: void 0,
@@ -60,4 +60,4 @@ let b = new o.Z("VirtualCurrency"),
       closeIntroToOrbsClaimedCoachmark: d.dG4
     }
   },
-  p = m
+  p = b

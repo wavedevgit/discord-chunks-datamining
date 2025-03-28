@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(392711),
-  l = n.n(o),
+  l = n(392711),
+  o = n.n(l),
   c = n(442837),
   d = n(692547),
   u = n(481060),
@@ -77,7 +77,7 @@ function B(e) {
   } = e;
   return t([f.Q2.MESSAGE, f.Q2.NAVIGATION, f.Q2.DND, f.Q2.CHAT, f.Q2.VOICE_AND_VIDEO, f.Q2.MISCELLANEOUS])
 }
-let M = l()((0, f.Rv)()).filter(e => e.description !== R.NW.string(R.t.HnNtEB)).groupBy(e => e.group).value(),
+let M = o()((0, f.Rv)()).filter(e => e.description !== R.NW.string(R.t.HnNtEB)).groupBy(e => e.group).value(),
   U = c.ZP.connectStores([I.Z], () => ({
     theme: I.Z.theme
   }))(u.ubH);
@@ -308,7 +308,7 @@ class G extends i.PureComponent {
   }
   render() {
     let e = this.props.enableClips,
-      t = l()(this.props.keybinds).reject(e => e.managed && ![A.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, A.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === A.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === A.kg4.SOUNDBOARD || e.action === A.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value();
+      t = o()(this.props.keybinds).reject(e => e.managed && ![A.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, A.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === A.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === A.kg4.SOUNDBOARD || e.action === A.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value();
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hjN, {
         tag: u.RB0.H1,
@@ -364,7 +364,7 @@ class G extends i.PureComponent {
             children: e.map((e, t) => {
               let n = (0, f.UD)(e),
                 s = (0, f.U6)(e),
-                o = M[e];
+                l = M[e];
               return (0, r.jsxs)("div", {
                 className: D.defaultKeybindGroup,
                 children: [(0, r.jsx)(u.X6q, {
@@ -378,7 +378,7 @@ class G extends i.PureComponent {
                   className: D.defaultKeybindGroupDescription,
                   variant: "text-sm/normal",
                   children: s
-                }), (0, r.jsx)(u.$i$, {}), o.map(e => (0, r.jsxs)(i.Fragment, {
+                }), (0, r.jsx)(u.$i$, {}), l.map(e => (0, r.jsxs)(i.Fragment, {
                   children: [(0, r.jsxs)("div", {
                     className: D.defaultKeybind,
                     children: [(0, r.jsx)(u.Text, {

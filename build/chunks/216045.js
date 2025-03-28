@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  o = n(442837),
-  l = n(704215),
+  l = n(442837),
+  o = n(704215),
   c = n(622535),
   d = n(481060),
   u = n(570140),
@@ -45,12 +45,12 @@ var r = n(200651),
 
 function G() {
   var e, t;
-  let n = (0, o.e7)([R.default], () => {
+  let n = (0, l.e7)([R.default], () => {
       let e = R.default.getCurrentUser();
       return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    s = (0, o.e7)([A.Z], () => A.Z.hidePersonalInformation),
-    G = (0, o.cj)([P.Z], () => P.Z.getAllPending()),
+    s = (0, l.e7)([A.Z], () => A.Z.hidePersonalInformation),
+    G = (0, l.cj)([P.Z], () => P.Z.getAllPending()),
     {
       pendingBio: F,
       pendingAvatar: H
@@ -74,7 +74,7 @@ function G() {
       userId: n.id,
       image: H
     }),
-    K = (0, o.e7)([P.Z], () => P.Z.showNotice()),
+    K = (0, l.e7)([P.Z], () => P.Z.showNotice()),
     q = k.dN.useSetting() && null != F ? _.ZP.parse(void 0, F).content : F,
     X = Z.ZP.canUsePremiumProfileCustomization(n),
     {
@@ -84,18 +84,18 @@ function G() {
     let e = (0, y.Tq)({
         location: "UserSettingsProfileCustomization"
       }),
-      t = (0, b.wE)(l.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+      t = (0, b.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
       n = e && !t;
     i.useEffect(() => {
-      n && (0, b.EW)(l.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+      n && (0, b.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
         forceTrack: !0
       })
     }, [n])
   }(),
   function() {
     let e = (0, E.H)("UserSettingsProfileCustomization"),
-      [t, n] = (0, x.US)(e ? [l.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
-      r = t === l.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
+      [t, n] = (0, x.US)(e ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
+      r = t === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
     i.useEffect(() => {
       r && n(M.L.TAKE_ACTION)
     }, [r, n])

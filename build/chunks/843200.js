@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(512722),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   c = n(481060),
   d = n(600164),
   u = n(594174),
@@ -44,9 +44,9 @@ function f(e) {
     isClaimed: f,
     isVerified: N,
     hasEmail: b
-  } = (0, l.cj)([u.default], () => {
+  } = (0, o.cj)([u.default], () => {
     let e = u.default.getCurrentUser();
-    return o()(null != e, "EmailNotice: currentUser cannot be undefined"), {
+    return l()(null != e, "EmailNotice: currentUser cannot be undefined"), {
       isClaimed: e.isClaimed(),
       isVerified: e.verified,
       hasEmail: null != e.email

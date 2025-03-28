@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: a97983f632216e54
+  Original File Name: 1c46f0b78ccba5dd
 **/
 .container__74da2 {
     position: relative;
@@ -315,6 +315,22 @@
     object-fit: contain
 }
 
+.icon__402f3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-backdrop);
+    padding: 4px;
+    border-radius: 4px;
+    height: 24px;
+    width: 24px;
+    color: var(--interactive-normal)
+}
+
+.icon__402f3:hover {
+    color: var(--interactive-active)
+}
+
 @value cardHeight 320px;
 
 @value bannerImageHeight 146px;
@@ -330,12 +346,16 @@
     height: 320px
 }
 
-.card__4cb8a:hover .iconMask__4cb8a {
+.card__4cb8a:focus .iconMask__4cb8a,.card__4cb8a:hover .iconMask__4cb8a {
     background-color: var(--background-tertiary)
 }
 
-.card__4cb8a:hover .contextMenu__4cb8a {
+.card__4cb8a:focus .contextMenu__4cb8a,.card__4cb8a:hover .contextMenu__4cb8a {
     display: flex
+}
+
+.card__4cb8a:focus .maximizeIcon__4cb8a,.card__4cb8a:hover .maximizeIcon__4cb8a {
+    opacity: 1
 }
 
 .header__4cb8a {
@@ -485,6 +505,18 @@
     justify-content: center;
     right: 16px;
     top: 130px
+}
+
+.maximizeIcon__4cb8a {
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+    position: absolute;
+    right: 8px;
+    top: 8px
+}
+
+.maximizeIcon__4cb8a:focus {
+    opacity: 1
 }
 
 .theme-dark .iconMask__4cb8a {
@@ -8770,4 +8802,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=a97983f632216e54.css.map*/
+/*# sourceMappingURL=1c46f0b78ccba5dd.css.map*/

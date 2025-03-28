@@ -6,7 +6,7 @@ var r, i = n(230383),
   s = n(731965),
   a = n(433517);
 
-function o(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -24,25 +24,25 @@ function o(e) {
   }
   return e
 }
-let l = "__DEBUG_PROFILE_EFFECTS_STORE",
+let o = "__DEBUG_PROFILE_EFFECTS_STORE",
   c = {
-    profileEffects: null !== (r = a.K.get(l)) && void 0 !== r ? r : {}
+    profileEffects: null !== (r = a.K.get(o)) && void 0 !== r ? r : {}
   },
   d = e => {
-    a.K.set(l, e.profileEffects)
+    a.K.set(o, e.profileEffects)
   },
   u = (0, i.U)(e => {
     var t, n;
-    return t = o({}, c), n = n = {
+    return t = l({}, c), n = n = {
       upsertConfig: t => (0, s.j)(() => {
         e(e => {
-          let n = o({}, e);
+          let n = l({}, e);
           return n.profileEffects[t.id] = t, d(n), n
         })
       }),
       deleteConfig: t => (0, s.j)(() => {
         e(e => {
-          let n = o({}, e);
+          let n = l({}, e);
           return delete n.profileEffects[t], d(n), n
         })
       })

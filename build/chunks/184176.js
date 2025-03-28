@@ -1,21 +1,21 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(823188),
   a = n(388032),
-  o = n(250563);
-let l = () => (0, r.jsxs)("div", {
-  className: o.banner,
+  l = n(250563);
+let o = () => (0, r.jsxs)("div", {
+  className: l.banner,
   children: [(0, r.jsx)(s.Cy, {
     text: a.NW.string(a.t.Y1q7jo),
-    className: o.trialPill,
+    className: l.trialPill,
     colorOptions: s.VE.PREMIUM_TIER_2_WHITE_FILL
   }), (0, r.jsx)("div", {
-    className: o.body,
+    className: l.body,
     children: (0, r.jsx)(i.Text, {
       color: "always-white",
       variant: "text-md/medium",

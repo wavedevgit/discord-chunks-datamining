@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(772848),
-  l = n(481060),
+  l = n(772848),
+  o = n(481060),
   c = n(53281),
   d = n(281598),
   u = n(451593),
@@ -18,14 +18,14 @@ let p = "Make sure you're only uploading text files!",
     var t, n, i;
     let {
       effect: s,
-      onClick: o
+      onClick: l
     } = e, {
       deleteConfig: c
     } = (0, u.E)();
-    return (0, r.jsxs)(l.P3F, {
+    return (0, r.jsxs)(o.P3F, {
       className: g.previewCard,
       onClick: () => {
-        o(s)
+        l(s)
       },
       children: [(0, r.jsx)("div", {
         className: g.previewCardImage,
@@ -34,12 +34,12 @@ let p = "Make sure you're only uploading text files!",
         }
       }), (0, r.jsxs)("div", {
         className: a()(g.previewCardFooter, g.row),
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/bold",
           children: s.name
-        }), (0, r.jsx)(l.zxk, {
-          color: l.Ttl.RED,
-          look: l.iLD.LINK,
+        }), (0, r.jsx)(o.zxk, {
+          color: o.Ttl.RED,
+          look: o.iLD.LINK,
           onClick: e => {
             e.preventDefault(), e.stopPropagation(), c(s.id)
           },
@@ -49,7 +49,7 @@ let p = "Make sure you're only uploading text files!",
     })
   },
   f = () => ({
-    id: (0, o.Z)(),
+    id: (0, l.Z)(),
     name: "New Profile Effect",
     config: {
       effects: []
@@ -60,7 +60,7 @@ function N() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, u.E)(), [n, s] = i.useState(), o = i.useRef(null), N = i.useCallback((e, n) => {
+  } = (0, u.E)(), [n, s] = i.useState(), l = i.useRef(null), N = i.useCallback((e, n) => {
     if (!e.type.startsWith("text/")) return (0, d.Eo)(p);
     let [r, i] = n.split(",");
     if (!r.includes("text/plain")) return (0, d.Eo)(p);
@@ -79,7 +79,7 @@ function N() {
         className: g.col,
         children: [(0, r.jsx)("div", {
           className: g.section,
-          children: (0, r.jsx)(l.X6q, {
+          children: (0, r.jsx)(o.X6q, {
             variant: "heading-lg/bold",
             children: "Profile Effects"
           })
@@ -96,16 +96,16 @@ function N() {
         className: a()(g.row, g.end, g.section),
         children: [(0, r.jsxs)("div", {
           className: g.uploadButton,
-          children: [(0, r.jsx)(l.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "always-white",
             children: "Import Shared Config"
           }), (0, r.jsx)(c.Z, {
-            ref: o,
+            ref: l,
             onChange: b,
             multiple: !1
           })]
-        }), (0, r.jsx)(l.zxk, {
+        }), (0, r.jsx)(o.zxk, {
           onClick: () => {
             t(f())
           },

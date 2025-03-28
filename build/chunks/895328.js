@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(289055),
-  l = n(802138),
+  l = n(289055),
+  o = n(802138),
   c = n(398008);
 let d = e => {
   let {
@@ -16,13 +16,13 @@ let d = e => {
     className: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(n, o.empty),
+    className: s()(n, l.empty),
     children: [(0, r.jsx)("img", {
-      className: o.image,
+      className: l.image,
       src: c,
       alt: ""
     }), (0, r.jsx)(a.Text, {
-      className: l.marginTop8,
+      className: o.marginTop8,
       variant: "text-sm/medium",
       color: "text-muted",
       children: t

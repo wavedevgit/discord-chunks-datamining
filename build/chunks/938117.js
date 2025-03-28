@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(2052),
-  l = n(594174),
+  l = n(2052),
+  o = n(594174),
   c = n(74538),
   d = n(716161),
   u = n(634041),
@@ -61,13 +61,13 @@ function O(e) {
     currentDeviceId: S,
     smallerBackgroundOptions: v,
     className: T
-  } = e, I = (0, s.e7)([l.default], () => l.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
+  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
   i.useEffect(() => {
     (0, d.XV)()
   }, []);
   let D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}),
     Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]),
-    w = (0, o.O)(),
+    w = (0, l.O)(),
     k = {
       isVideoBackgroundSupported: P,
       onSelectBackgroundOption: C,

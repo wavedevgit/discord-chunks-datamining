@@ -12,19 +12,19 @@ var n = r(200651),
   u = r(335131),
   d = r(70097),
   f = r(43747),
-  b = r(511050),
-  m = r(82856),
+  m = r(511050),
+  b = r(82856),
   p = r(272008),
   y = r(497505),
-  O = r(918701),
+  h = r(918701),
   j = r(46140),
   g = r(215023),
-  h = r(388032),
+  O = r(388032),
   C = r(435696),
   v = r(557256),
-  w = r(201284);
+  x = r(201284);
 
-function x() {
+function w() {
   let e = (0, o.e7)([i.Z], () => i.Z.useReducedMotion);
   return (0, n.jsx)(d.Z, {
     autoPlay: !e,
@@ -34,7 +34,7 @@ function x() {
     className: C.video,
     controls: !1,
     children: (0, n.jsx)("source", {
-      src: w.Z,
+      src: x.Z,
       type: "video/webm"
     })
   })
@@ -70,21 +70,21 @@ function S(e) {
         type: c.RAz.SPINNING_CIRCLE
       })
     }) : "success" === i ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(x, {}), (0, n.jsx)(c.X6q, {
+      children: [(0, n.jsx)(w, {}), (0, n.jsx)(c.X6q, {
         variant: "heading-lg/medium",
         color: "always-white",
         className: C.title,
-        children: h.NW.formatToPlainString(h.t.Kr9pYW, {
+        children: O.NW.formatToPlainString(O.t.Kr9pYW, {
           balance: a
         })
       }), (0, n.jsx)(c.Text, {
         variant: "text-xs/normal",
         className: C.subtext,
-        children: h.NW.string(h.t.EDUOIC)
+        children: O.NW.string(O.t.EDUOIC)
       }), (0, n.jsx)(c.zxk, {
         className: C.ctaBtn,
         onClick: o,
-        children: h.NW.string(h.t.WYchdX)
+        children: O.NW.string(O.t.WYchdX)
       })]
     }) : (0, n.jsxs)("div", {
       className: C.errorContainer,
@@ -98,16 +98,16 @@ function S(e) {
           variant: "heading-xl/medium",
           color: "always-white",
           className: C.errorHeader,
-          children: h.NW.string(h.t.tWYWJy)
+          children: O.NW.string(O.t.tWYWJy)
         }), (0, n.jsx)(c.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: h.NW.string(h.t.JNQRU1)
+          children: O.NW.string(O.t.JNQRU1)
         })]
       }), (0, n.jsx)(c.zxk, {
         className: C.ctaBtn,
         onClick: l,
-        children: h.NW.string(h.t.cpT0Cg)
+        children: O.NW.string(O.t.cpT0Cg)
       })]
     })]
   })
@@ -133,18 +133,18 @@ function N(e) {
       }
       return a
     }(e, ["quest", "onClose"]);
-  let d = (0, O.LM)(o.config),
+  let d = (0, h.LM)(o.config),
     {
-      balance: h
+      balance: O
     } = (0, f.A)(),
     C = function(e, t, r) {
       let [n, o] = a.useState("loading"), [c, i] = a.useState(!1), {
         balance: s
-      } = (0, f.A)(), u = (0, l.Z)(s), [d, b] = a.useState(!1);
+      } = (0, f.A)(), u = (0, l.Z)(s), [d, m] = a.useState(!1);
       return (a.useEffect(() => {
         let e = null;
         return "success" === n && t && (e = setTimeout(() => {
-          b(!0)
+          m(!0)
         }, 1e3)), () => {
           null != e && clearTimeout(e)
         }
@@ -164,17 +164,17 @@ function N(e) {
     }(o.id, o.preview, i.location),
     {
       openIntroToOrbsClaimedCoachmark: v
-    } = (0, b.Z)({
+    } = (0, m.Z)({
       location: "QuestsOrbsRewardModal"
     }),
-    w = a.useCallback(async function() {
+    x = a.useCallback(async function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      await (0, m.vp)({
+      await (0, b.vp)({
         hideImmediately: e
       }), c()
     }, [c]),
-    x = a.useCallback(() => {
-      w(!0), (0, u.mK)({
+    w = a.useCallback(() => {
+      x(!0), (0, u.mK)({
         openInLayer: !1,
         tab: g.AW.ORBS,
         analyticsLocations: [],
@@ -182,7 +182,7 @@ function N(e) {
       }), v({
         delayMS: 300
       })
-    }, [w, v, o.id]);
+    }, [x, v, o.id]);
   return (0, n.jsx)(S, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -202,9 +202,9 @@ function N(e) {
     return e
   }({}, i), r = r = {
     rewardAmount: d,
-    balance: h,
-    onClose: w,
-    onSubmit: x,
+    balance: O,
+    onClose: x,
+    onSubmit: w,
     state: C
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

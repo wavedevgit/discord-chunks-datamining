@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -9,28 +9,30 @@ var r = n(200651),
   a = n.n(o),
   i = n(180650),
   s = n(87290),
-  c = n(960048),
-  u = n(381585),
-  d = n(597688),
-  b = n(506800),
-  p = n(788822),
-  f = n(215023),
-  g = n(388032),
-  h = n(39532);
-let m = e => {
+  c = n(442933),
+  u = n(960048),
+  d = n(381585),
+  b = n(597688),
+  p = n(506800),
+  f = n(788822),
+  g = n(215023),
+  h = n(388032),
+  m = n(39532);
+let v = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
-    } = e, o = d.Z.getCategory(i.T.ROBERT), c = (0, b.c)("CollectiblesFeedShop") && null != o, u = d.Z.getCategory(i.T.ANIME_V2), m = l.useMemo(() => g.NW.string(new Date > f.gJ ? g.t.l0CjbW : g.t.uPewb2), []);
+    } = e, o = b.Z.getCategory(i.T.ROBERT), u = (0, p.c)("CollectiblesFeedShop") && null != o, d = (0, c.H)("CollectiblesFeedShop"), v = b.Z.getCategory(i.T.ANIME_V2), _ = l.useMemo(() => h.NW.string(new Date > g.gJ ? h.t.l0CjbW : h.t.uPewb2), []);
     return (0, r.jsx)("div", {
-      className: a()(h.col2, h.centeredSection),
+      className: a()(m.col2, m.centeredSection),
       children: null == n ? void 0 : n.subblocks.map((e, n) => {
         if (e.type === s.O.CATEGORY) {
-          let l = null != e.unpublishedAt ? g.NW.string(g.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? g.NW.string(g.t.PsL3bW) : e.categoryStoreListingId === (null == u ? void 0 : u.storeListingId) ? g.NW.string(g.t["o/oRJC"]) : void 0,
-            a = c && e.categoryStoreListingId === (null == o ? void 0 : o.storeListingId) ? m : l;
-          return (0, r.jsx)(p.q, {
+          let l = null != e.unpublishedAt ? h.NW.string(h.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? h.NW.string(h.t.PsL3bW) : e.categoryStoreListingId === (null == v ? void 0 : v.storeListingId) ? h.NW.string(h.t["o/oRJC"]) : void 0,
+            a = u && e.categoryStoreListingId === (null == o ? void 0 : o.storeListingId) ? _ : l,
+            i = 0 === n ? d ? h.NW.string(h.t["x41/V1"]) : l : a;
+          return (0, r.jsx)(f.q, {
             subblock: e,
-            badgeText: 0 === n ? l : a,
+            badgeText: i,
             handleTransition: t
           }, e.categoryStoreListingId)
         }
@@ -38,25 +40,25 @@ let m = e => {
       })
     })
   },
-  v = e => {
+  _ = e => {
     let {
       handleTransition: t,
       categories: n
-    } = e, l = (0, b.c)("CollectiblesFeedShop") && null != d.Z.getCategory(i.T.ROBERT);
-    if (null == n || n.length < 2) return c.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [o, s] = n, m = (null == o ? void 0 : o.unpublishedAt) != null ? g.NW.string(g.t["h/uBCQ"]) : void 0, v = g.NW.string(new Date > f.gJ ? g.t.l0CjbW : g.t.uPewb2), _ = l ? v : g.NW.string(g.t["o/oRJC"]);
+    } = e, l = (0, p.c)("CollectiblesFeedShop") && null != b.Z.getCategory(i.T.ROBERT);
+    if (null == n || n.length < 2) return u.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    let [o, s] = n, c = (null == o ? void 0 : o.unpublishedAt) != null ? h.NW.string(h.t["h/uBCQ"]) : void 0, v = h.NW.string(new Date > g.gJ ? h.t.l0CjbW : h.t.uPewb2), _ = l ? v : h.NW.string(h.t["o/oRJC"]);
     return (0, r.jsx)("div", {
-      className: a()(h.col2, h.centeredSection),
-      children: (0, r.jsxs)(u.k0, {
+      className: a()(m.col2, m.centeredSection),
+      children: (0, r.jsxs)(d.k0, {
         newValue: {
           categoryPosition: 1,
           pageSection: "featured_block"
         },
-        children: [null != o && (0, r.jsx)(p.q, {
+        children: [null != o && (0, r.jsx)(f.q, {
           category: o,
-          badgeText: m,
+          badgeText: c,
           handleTransition: t
-        }), null != s && (0, r.jsx)(p.q, {
+        }), null != s && (0, r.jsx)(f.q, {
           category: s,
           badgeText: _,
           handleTransition: t
@@ -64,7 +66,7 @@ let m = e => {
       })
     })
   },
-  _ = e => {
+  C = e => {
     let {
       isLoading: t,
       handleTransition: n,
@@ -72,23 +74,23 @@ let m = e => {
       featuredBlockRecord: o
     } = e;
     return t ? (0, r.jsxs)("div", {
-      className: a()(h.col2, h.centeredSection),
+      className: a()(m.col2, m.centeredSection),
       children: [(0, r.jsx)("div", {
-        className: a()(h.skeleton, h.featuredBlock),
+        className: a()(m.skeleton, m.featuredBlock),
         children: (0, r.jsx)("div", {
-          className: h.skeletonBody
+          className: m.skeletonBody
         })
       }), (0, r.jsx)("div", {
-        className: a()(h.skeleton, h.featuredBlock),
+        className: a()(m.skeleton, m.featuredBlock),
         children: (0, r.jsx)("div", {
-          className: h.skeletonBody
+          className: m.skeletonBody
         })
       })]
-    }) : null != o ? (0, r.jsx)(m, {
+    }) : null != o ? (0, r.jsx)(v, {
       featuredBlockRecord: o,
       handleTransition: n,
       isLoading: !1
-    }) : (0, r.jsx)(v, {
+    }) : (0, r.jsx)(_, {
       categories: l,
       handleTransition: n,
       isLoading: !1

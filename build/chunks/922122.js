@@ -144,7 +144,7 @@ function _(e) {
     itemGapPx: 20,
     maxLines: 1,
     containerWidth: m
-  }), j = a.useMemo(() => i.slice(0, b + 1), [b, i]), y = a.useMemo(() => i.slice(b + 1), [b, i]), O = a.useRef(null), P = a.useCallback(() => {
+  }), j = a.useMemo(() => i.slice(0, b + 1), [b, i]), y = a.useMemo(() => i.slice(b + 1), [b, i]), O = a.useRef(null), N = a.useCallback(() => {
     var e;
     let t = null === (e = O.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
     if (null == t || _.current === t.width) return;
@@ -154,11 +154,11 @@ function _(e) {
     null == d || d(r)
   }, [C, d]);
   a.useEffect(() => {
-    let e = (0, p.pP)(P);
+    let e = (0, p.pP)(N);
     return (0, p.YP)(e, document.body), () => (0, p.UC)(e, document.body)
-  }, [P]);
-  let I = 0 !== m,
-    N = (0, u.Q3)("GlobalDiscoveryHeaderTabs");
+  }, [N]);
+  let P = 0 !== m,
+    I = (0, u.Q3)("GlobalDiscoveryHeaderTabs");
   return (0, r.jsxs)("div", {
     className: l()(g.container, t),
     ref: O,
@@ -184,7 +184,7 @@ function _(e) {
           selectedTab: n
         })
       })]
-    }), I && (0, r.jsxs)(c.njP, {
+    }), P && (0, r.jsxs)(c.njP, {
       type: "top",
       look: "brand",
       selectedItem: n,
@@ -195,7 +195,7 @@ function _(e) {
         look: "brand",
         "aria-label": e.label,
         className: l()(g.tab, {
-          [g.selected]: !N && n === e.id
+          [g.selected]: !I && n === e.id
         }),
         children: e.label
       }, e.id)), 0 !== y.length ? (0, r.jsx)(f, {

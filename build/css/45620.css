@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: d20367561a998898
+  Original File Name: 8bf8ee6b9eadf37a
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -133,6 +133,12 @@
     height: 20px;
     color: var(--text-normal);
     margin-right: -6px
+}
+
+@media (max-width:1000px) {
+    .discordLogo__80679 {
+        display: none
+    }
 }
 
 .alignedRightContent__80679 {
@@ -1591,4 +1597,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=d20367561a998898.css.map*/
+/*# sourceMappingURL=8bf8ee6b9eadf37a.css.map*/

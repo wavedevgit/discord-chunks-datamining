@@ -4,7 +4,7 @@ n.d(t, {
   U_: () => E,
   VK: () => w,
   t4: () => v,
-  tE: () => I
+  tE: () => A
 }), n(47120), n(266796);
 var r = n(200651),
   a = n(192379),
@@ -138,7 +138,7 @@ let v = () => (0, m.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       })]
     })
   },
-  P = () => (0, s.e7)([d.Z], () => d.Z.useReducedMotion) ? (0, r.jsx)("img", {
+  I = () => (0, s.e7)([d.Z], () => d.Z.useReducedMotion) ? (0, r.jsx)("img", {
     src: g.Z,
     className: O.orbAsset,
     alt: "Orb"
@@ -155,7 +155,7 @@ let v = () => (0, m.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       alt: "Orb"
     })]
   }),
-  A = e => {
+  P = e => {
     let {
       titleText: t,
       descriptionText: n,
@@ -197,13 +197,13 @@ let v = () => (0, m.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       })]
     })
   },
-  I = e => {
+  A = e => {
     var t = j({}, function(e) {
       if (null == e) throw TypeError("Cannot destructure " + e);
       return e
     }(e));
-    return (0, r.jsx)(A, k({
-      iconComponent: (0, r.jsx)(P, {})
+    return (0, r.jsx)(P, k({
+      iconComponent: (0, r.jsx)(I, {})
     }, t))
   };
 

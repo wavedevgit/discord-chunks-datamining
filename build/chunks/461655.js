@@ -6,8 +6,8 @@ var r = n(314877),
   i = n(81825),
   s = n(630388),
   a = n(46141),
-  o = n(659181),
-  l = n(255078),
+  l = n(659181),
+  o = n(255078),
   c = n(981631),
   d = n(474936);
 
@@ -22,8 +22,8 @@ function u(e, t, n) {
 class m extends i.Z {
   static createFromServer(e) {
     let t = null != e.payment_source ? a.ZP.createFromServer(e.payment_source) : null,
-      n = null != e.sku ? o.Z.createFromServer(e.sku) : null,
-      r = null != e.subscription ? l.Z.createFromServer(e.subscription) : null;
+      n = null != e.sku ? l.Z.createFromServer(e.sku) : null,
+      r = null != e.subscription ? o.Z.createFromServer(e.subscription) : null;
     return new m({
       id: e.id,
       createdAt: new Date(e.created_at),

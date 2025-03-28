@@ -14,16 +14,18 @@ let c = a.memo(a.forwardRef(function(e, t) {
     onContextMenu: a,
     className: i,
     disabled: c,
-    children: d
+    children: d,
+    "aria-label": u
   } = e;
-  return (0, r.jsx)(o.P3F, {
-    innerRef: t,
+  return (0, r.jsx)(o.kL8, {
+    ref: t,
     className: l()(s.card, i, {
       [s.clickable]: null != n,
       [s.disabled]: c
     }),
     onContextMenu: a,
     onClick: c ? void 0 : n,
+    "aria-label": u,
     children: d
   })
 }))

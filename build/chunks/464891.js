@@ -25,8 +25,8 @@ var r = n(200651),
   v = n(869765),
   O = n(243317),
   x = n(621853),
-  C = n(823415),
-  j = n(754047),
+  j = n(823415),
+  C = n(754047),
   P = n(518950),
   T = n(484459),
   N = n(184301),
@@ -50,7 +50,7 @@ var r = n(200651),
   F = n(432957),
   V = n(121282);
 
-function q(e) {
+function K(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,7 +69,7 @@ function q(e) {
   return e
 }
 
-function K(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -140,9 +140,9 @@ function X(e) {
     user: null == t ? void 0 : t.author,
     compact: i,
     isRepliedMessage: !1
-  }), [t, n, i]), x = o.useRef(null), C = (0, c.e7)([S.Z], () => ee(i, h, s, S.Z.getGuild(a)), [i, h, s, a]), j = (0, c.e7)([S.Z], () => {
+  }), [t, n, i]), x = o.useRef(null), j = (0, c.e7)([S.Z], () => ee(i, h, s, S.Z.getGuild(a)), [i, h, s, a]), C = (0, c.e7)([S.Z], () => {
     let e = S.Z.getGuild(a);
-    return null == s ? null : 1 === C && null != e ? (0, r.jsx)(l.yRy, {
+    return null == s ? null : 1 === j && null != e ? (0, r.jsx)(l.yRy, {
       targetElementRef: x,
       animation: l.yRy.Animation.TRANSLATE,
       align: "center",
@@ -158,17 +158,17 @@ function X(e) {
         let {
           onClick: t
         } = e;
-        return (0, r.jsx)(m.Z, K(q({
+        return (0, r.jsx)(m.Z, q(K({
           ref: x
         }, s), {
           className: F.roleIcon,
           onClick: t
         }))
       }
-    }, "role-icon-children") : 2 === C ? (0, r.jsx)(m.Z, K(q({}, s), {
+    }, "role-icon-children") : 2 === j ? (0, r.jsx)(m.Z, q(K({}, s), {
       className: F.roleIcon
     }), "role-icon-children") : null
-  }, [C, s, a]), P = (0, c.Wu)([k.default, S.Z], () => {
+  }, [j, s, a]), P = (0, c.Wu)([k.default, S.Z], () => {
     let e = [],
       o = S.Z.getGuild(a),
       c = k.default.getCurrentUser(),
@@ -178,7 +178,7 @@ function X(e) {
     return (0, A.R)(null != s, "Message Username") && l && !i && !d && e.push((0, r.jsx)(et, {
       currentUserIsPremium: u,
       author: t.author
-    }, "nitro-author")), null != j && e.push(j), null != o && (e.push((0, r.jsx)(_.Z, {
+    }, "nitro-author")), null != C && e.push(C), null != o && (e.push((0, r.jsx)(_.Z, {
       guild: o,
       message: t
     }, "new-member")), e.push((0, r.jsx)(b.Z, {
@@ -190,7 +190,7 @@ function X(e) {
       userId: t.author.id,
       messageId: t.id
     }, "connections")), e
-  }, [t, n, s, i, j, a]);
+  }, [t, n, s, i, C, a]);
   return null == v ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(B.Z, {
       message: t,
@@ -325,7 +325,7 @@ let et = o.memo(function(e) {
         "aria-label": H.NW.formatToPlainString(H.t["8zbGNT"], {
           date: o
         }),
-        children: (0, r.jsx)("img", q({
+        children: (0, r.jsx)("img", K({
           alt: "",
           className: F.nitroBadgeSvg,
           src: V
@@ -391,14 +391,14 @@ let et = o.memo(function(e) {
           size: B,
           fallbackAvatar: !1
         })) && void 0 !== t ? t : L
-      }, [U, null === (t = f.application) || void 0 === t ? void 0 : t.icon, null === (n = f.application) || void 0 === n ? void 0 : n.id, A.avatar, B, L]), F = (0, C.nT)({
+      }, [U, null === (t = f.application) || void 0 === t ? void 0 : t.icon, null === (n = f.application) || void 0 === n ? void 0 : n.id, A.avatar, B, L]), F = (0, j.nT)({
         location: "MessageHeader"
       }), {
         showPopoutFromHover: V,
         onRequestClose: X,
         onMouseEnter: Q,
         onMouseLeave: J
-      } = (0, j.Z)({
+      } = (0, C.Z)({
         shouldShowPopoutOnHover: F,
         handlePreload: $
       });
@@ -417,7 +417,7 @@ let et = o.memo(function(e) {
                 null == X || X(), null == x || x()
               },
               clickTrap: T,
-              children: e => Y(K(q({}, W), {
+              children: e => Y(q(K({}, W), {
                 avatarSrc: H,
                 avatarDecorationSrc: G,
                 compact: b,
@@ -438,7 +438,7 @@ let et = o.memo(function(e) {
         }
         return (0, r.jsx)(d.Gt, {
           value: k,
-          children: Y(K(q({}, W), {
+          children: Y(q(K({}, W), {
             avatarSrc: H,
             avatarDecorationSrc: G,
             compact: b,
@@ -490,7 +490,7 @@ let et = o.memo(function(e) {
         children: [A && (0, r.jsx)(l.ua7, {
           text: H.NW.string(H.t.AeYyLy),
           children: e => (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(l.YlB, K(q({
+            children: [(0, r.jsx)(l.YlB, q(K({
               size: "xxs",
               color: "currentColor"
             }, e), {
@@ -499,17 +499,13 @@ let et = o.memo(function(e) {
               children: H.NW.string(H.t.AmHag4)
             })]
           })
-        }), (0, r.jsx)(X, {
+        }), (0, r.jsx)(X, q(K({}, e), {
           message: t,
           channel: x,
           compact: a,
-          guildId: e.guildId,
           roleIconProps: m,
-          renderPopout: T,
-          showUsernamePopout: e.showUsernamePopout,
-          onContextMenu: e.onContextMenu,
-          onPopoutRequestClose: e.onPopoutRequestClose
-        })]
+          renderPopout: T
+        }))]
       }),
       usernameSpanId: (0, L.XX)(t, _),
       usernameClassName: i()(F.headerText, {

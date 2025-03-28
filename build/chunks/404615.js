@@ -1,12 +1,12 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  _: () => l
+  _: () => o
 });
 var r = n(442837),
   i = n(607070),
   s = n(391110),
   a = n(496022);
-let o = {
+let l = {
     subtitle: {
       onlyShowOnHover: !1
     },
@@ -18,10 +18,10 @@ let o = {
       onlyShowOnHover: !0
     }
   },
-  l = e => {
+  o = e => {
     let t = (0, r.e7)([i.Z], () => i.Z.useReducedMotion),
       n = {
-        [s.zW.DEFAULT]: o,
+        [s.zW.DEFAULT]: l,
         [s.zW.REWARD]: {
           subtitle: {
             onlyShowOnHover: !0,

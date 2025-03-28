@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   s = n(706454),
   a = n(74538),
-  o = n(937615),
-  l = n(781320),
+  l = n(937615),
+  o = n(781320),
   c = n(474936),
   d = n(981631),
   u = n(388032),
@@ -61,7 +61,7 @@ let g = e => {
     })
   },
   f = (e, t, n, f, N) => {
-    let b = (0, l.r)({
+    let b = (0, o.r)({
         location: "useGetPlanComparisonTableRows"
       }).enabled,
       x = {
@@ -147,7 +147,7 @@ let g = e => {
           label: (0, r.jsx)(g, {
             text: u.NW.formatToPlainString(u.t.nyhDp6, {
               numBoosts: c.cb,
-              percentageOff: (0, o.T3)(s.default.locale, c.Rr / 100)
+              percentageOff: (0, l.T3)(s.default.locale, c.Rr / 100)
             })
           }),
           column1: (0, r.jsx)(h, {

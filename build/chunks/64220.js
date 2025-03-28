@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(921944),
-  o = n(388032),
-  l = n(761558);
+  l = n(388032),
+  o = n(761558);
 
 function c(e) {
   let {
@@ -21,16 +21,16 @@ function c(e) {
       clearTimeout(e)
     }
   }, [t]), (0, r.jsxs)(s.P3F, {
-    className: l.container,
+    className: o.container,
     onClick: () => {
       t(a.L.USER_DISMISS)
     },
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "always-white",
-      children: o.NW.string(o.t.fJNqJi)
+      children: l.NW.string(l.t.fJNqJi)
     }), (0, r.jsx)("div", {
-      className: l.pointer
+      className: o.pointer
     })]
   })
 }
@@ -39,15 +39,15 @@ function d(e) {
   let {
     children: t,
     markAsDismissed: n
-  } = e, [a, o] = i.useState(!1);
+  } = e, [a, l] = i.useState(!1);
   return i.useEffect(() => {
     let e = setTimeout(() => {
-      o(!0)
+      l(!0)
     }, 1e3);
     return () => {
       clearTimeout(e)
     }
-  }, [o]), (0, r.jsx)(s.yRy, {
+  }, [l]), (0, r.jsx)(s.yRy, {
     position: "top",
     align: "left",
     shouldShow: a,

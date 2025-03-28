@@ -208,6 +208,7 @@ let Z = e => {
         onChange: A.dG4,
         finePrint: (0, n.jsx)(i.Z, {
           isOrbCheckout: !0,
+          skuId: t,
           purchaseType: A.GZQ.ONE_TIME
         })
       })]

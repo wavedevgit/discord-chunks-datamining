@@ -30,19 +30,19 @@ let x = {
       categoryId: n,
       onSelectApplication: C,
       resetScroll: j
-    } = e, [y, O] = a.useState(1), P = a.useCallback(e => {
+    } = e, [y, O] = a.useState(1), N = a.useCallback(e => {
       O(e)
     }, []);
     a.useEffect(() => {
       O(1)
     }, [n]);
-    let I = a.useMemo(() => ({
+    let P = a.useMemo(() => ({
         query: _.EMPTY_QUERY,
         page: y,
         pageSize: _.PAGE_SIZE,
         categoryId: n
       }), [y, n]),
-      N = (0, l.e7)([u.Z], () => u.Z.getFetchState({
+      I = (0, l.e7)([u.Z], () => u.Z.getFetchState({
         query: _.EMPTY_QUERY,
         page: y,
         pageSize: _.PAGE_SIZE,
@@ -50,14 +50,14 @@ let x = {
       })),
       S = (0, l.cj)([u.Z], () => {
         var e;
-        return null !== (e = u.Z.getSearchResults(I)) && void 0 !== e ? e : x
+        return null !== (e = u.Z.getSearchResults(P)) && void 0 !== e ? e : x
       }),
       E = null !== (t = (0, s.Z)(S)) && void 0 !== t ? t : x,
       {
         results: T,
         totalPages: A,
         loadId: L
-      } = a.useMemo(() => N === d.M.FETCHING ? E : S, [N, E, S]),
+      } = a.useMemo(() => I === d.M.FETCHING ? E : S, [I, E, S]),
       R = a.useMemo(() => null == T ? void 0 : T.filter(e => e.type === i.s.APPLICATION), [T]),
       w = a.useCallback(e => {
         let {
@@ -96,13 +96,13 @@ let x = {
         position: t
       }), C(e)
     }, [L, C]);
-    return N === d.M.ERROR ? (0, r.jsx)("div", {
+    return I === d.M.ERROR ? (0, r.jsx)("div", {
       className: v.errorContainer,
       children: (0, r.jsx)(g.Z, {
         className: v.error
       })
     }) : (0, r.jsxs)(m.Z, {
-      loading: N === d.M.FETCHING,
+      loading: I === d.M.FETCHING,
       children: [(0, r.jsx)("div", {
         className: v.content,
         children: null == R ? void 0 : R.map((e, t) => {
@@ -122,7 +122,7 @@ let x = {
         disablePaginationGap: !0,
         hideMaxPage: !0,
         currentPage: y,
-        onPageChange: P
+        onPageChange: N
       })]
     })
   }

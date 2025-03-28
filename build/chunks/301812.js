@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(626135),
   a = n(63063),
-  o = n(88658),
-  l = n(695346),
+  l = n(88658),
+  o = n(695346),
   c = n(639814),
   d = n(838436),
   u = n(51331),
@@ -22,9 +22,9 @@ function b(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, c = l.SE.useSetting().includes(n), g = i.useCallback(e => {
-    let r = (0, o._o)();
-    e ? r.delete(n) : r.add(n), l.SE.updateSetting([...r]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+  } = e, c = o.SE.useSetting().includes(n), g = i.useCallback(e => {
+    let r = (0, l._o)();
+    e ? r.delete(n) : r.add(n), o.SE.updateSetting([...r]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: m.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: t,
       guild_id: n

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(658722),
-  l = n.n(o),
+  l = n(658722),
+  o = n.n(l),
   c = n(442837),
   d = n(524437),
   u = n(780384),
@@ -87,10 +87,10 @@ function D() {
     s = e => {
       v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
     },
-    o = e => {
+    l = e => {
       v.Wz.updateSetting(e), R(e !== d.E5.OFF)
     },
-    l = [{
+    o = [{
       value: d.E5.ON,
       label: y.NW.string(y.t.UzGMHx)
     }, {
@@ -123,9 +123,9 @@ function D() {
             helpdeskArticle: E.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS)
           })
         }), (0, r.jsx)(m.q4e, {
-          options: l,
+          options: o,
           value: t,
-          onChange: e => o(e)
+          onChange: e => l(e)
         })]
       }) : (0, r.jsx)(m.j7V, {
         value: t === d.E5.OFF,
@@ -206,7 +206,7 @@ function W(e) {
   i.useEffect(() => {
     s(t.showActivity)
   }, [t]);
-  let o = h.Z.get(t.type);
+  let l = h.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.j7V, {
       className: A.switchRowContainer,
@@ -218,17 +218,17 @@ function W(e) {
       children: (0, r.jsxs)("div", {
         className: A.activitySwitchRow,
         children: [(0, r.jsx)("img", {
-          alt: o.name,
+          alt: l.name,
           className: A.connectionIcon,
-          src: (0, u.wj)(a) ? o.icon.darkSVG : o.icon.lightSVG
+          src: (0, u.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(m.Text, {
             variant: "text-md/semibold",
-            children: o.name
+            children: l.name
           }), (0, r.jsxs)(m.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: ['"', k(o), '"']
+            children: ['"', k(l), '"']
           })]
         })]
       })
@@ -244,7 +244,7 @@ function L() {
     [n, s] = i.useState(""),
     a = i.useMemo(() => {
       let e = n.trim().toLowerCase();
-      return "" === e ? t : t.filter(t => l()(e, h.Z.get(t.type).name.toLowerCase()))
+      return "" === e ? t : t.filter(t => o()(e, h.Z.get(t.type).name.toLowerCase()))
     }, [t, n]);
   return 0 === t.length ? null : (0, r.jsx)(b.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,

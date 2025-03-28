@@ -250,5 +250,5 @@ let E = e => (null == e ? void 0 : e.premiumType) != null,
       isPartiallyOwnedBundle: n,
       isPurchased: r
     } = e;
-    return !n && !(f.xJ === (null == t ? void 0 : t.skuId) && r)
+    return !n && !(f.Vt.ORB_PROFILE_BADGE === (null == t ? void 0 : t.skuId) && r)
   }

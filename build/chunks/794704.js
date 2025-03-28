@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(348327),
-  l = n.n(o),
+  l = n(348327),
+  o = n.n(l),
   c = n(512722),
   d = n.n(c),
   u = n(392711),
@@ -60,8 +60,8 @@ var r = n(200651),
   ei = n(921944),
   es = n(987650),
   ea = n(388032),
-  eo = n(301883),
-  el = n(131970),
+  el = n(301883),
+  eo = n(131970),
   ec = n(730462);
 
 function ed(e) {
@@ -125,10 +125,10 @@ function ep(e) {
     children: [null != n && (0, r.jsx)(h.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      className: eo.formItemTitle,
+      className: el.formItemTitle,
       children: n
     }), (0, r.jsx)("div", {
-      className: a()(eo.rowContainer, i),
+      className: a()(el.rowContainer, i),
       children: t
     })]
   })
@@ -140,8 +140,8 @@ function eh(e) {
     icon: n,
     title: i,
     description: s,
-    action: o,
-    hint: l,
+    action: l,
+    hint: o,
     onClick: c,
     "aria-label": d,
     className: u
@@ -149,34 +149,34 @@ function eh(e) {
   return (0, r.jsxs)(h.kL8, {
     "aria-label": d,
     onClick: c,
-    className: a()(eo.groupContainer, u),
+    className: a()(el.groupContainer, u),
     children: [null != t && (0, r.jsx)("div", {
-      className: eo.groupHeader,
+      className: el.groupHeader,
       children: t
     }), (0, r.jsxs)("div", {
-      className: eo.groupContent,
+      className: el.groupContent,
       children: [null != n && (0, r.jsx)("div", {
-        className: eo.groupIcon,
+        className: el.groupIcon,
         children: n
       }), (0, r.jsxs)("div", {
-        className: eo.groupMainContent,
+        className: el.groupMainContent,
         children: [(0, r.jsx)(h.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          className: eo.groupTitle,
+          className: el.groupTitle,
           children: i
         }), null != s && (0, r.jsx)(h.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: s
-        }), null != l && (0, r.jsx)(h.Text, {
+        }), null != o && (0, r.jsx)(h.Text, {
           variant: "text-xxs/medium",
           color: "text-muted",
-          children: l
+          children: o
         })]
       }), (0, r.jsx)("div", {
-        className: eo.groupAction,
-        children: o
+        className: el.groupAction,
+        children: l
       })]
     })]
   })
@@ -187,7 +187,7 @@ function ef(e) {
     children: t,
     className: n,
     onExpand: s
-  } = e, o = function(e, t) {
+  } = e, l = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -202,27 +202,27 @@ function ef(e) {
     }
     return i
   }(e, ["children", "className", "onExpand"]);
-  let [l, c] = i.useState(!1), d = e => {
+  let [o, c] = i.useState(!1), d = e => {
     c(e), null == s || s(e)
   };
   return (0, r.jsx)(h.zF9, {
-    className: eo.collapseable,
+    className: el.collapseable,
     collapsibleContent: (0, r.jsx)("div", {
-      className: eo.groupCollapsedContainer,
+      className: el.groupCollapsedContainer,
       children: t
     }),
     children: e => {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(eh, eu(ed({}, o), {
+      return (0, r.jsx)(eh, eu(ed({}, l), {
         onClick: e => {
-          d(!l), null == t || t(e)
+          d(!o), null == t || t(e)
         },
-        className: a()(eo.mainCollapseableContainer, n),
+        className: a()(el.mainCollapseableContainer, n),
         action: (0, r.jsxs)("div", {
-          className: eo.groupCollapsedAction,
-          children: [o.action, l ? (0, r.jsx)(h.CJ0, {
+          className: el.groupCollapsedAction,
+          children: [l.action, o ? (0, r.jsx)(h.CJ0, {
             size: "custom",
             width: 20,
             height: 20,
@@ -247,8 +247,8 @@ function ex(e) {
   var t, n, s;
   let {
     runningGame: a,
-    runningGameApplication: o
-  } = e, c = null == a ? void 0 : a.pid, d = (0, g.e7)([w.default], () => null == a || null == c ? null : w.default.getTrackedGameByPid(c), [a, c], l()), {
+    runningGameApplication: l
+  } = e, c = null == a ? void 0 : a.pid, d = (0, g.e7)([w.default], () => null == a || null == c ? null : w.default.getTrackedGameByPid(c), [a, c], o()), {
     enabledLegacy: u,
     enabledOOP: m
   } = (0, g.cj)([z.Z, Y.Z], () => {
@@ -264,7 +264,7 @@ function ex(e) {
       }
     }
     return (0, T.b6)(a, !1, [z.Z, Y.Z])
-  }, [a, d]), p = (0, g.e7)([T.ZP, z.Z, Y.Z], () => null == a ? null : (0, T.FZ)(a, [T.ZP, z.Z, Y.Z]), [a], l()), [N, x] = i.useState(m), [C, S] = i.useState(u), [v, I] = i.useState(!1);
+  }, [a, d]), p = (0, g.e7)([T.ZP, z.Z, Y.Z], () => null == a ? null : (0, T.FZ)(a, [T.ZP, z.Z, Y.Z]), [a], o()), [N, x] = i.useState(m), [C, S] = i.useState(u), [v, I] = i.useState(!1);
   i.useEffect(() => {
     x(m), S(u)
   }, [m, u]);
@@ -277,21 +277,21 @@ function ex(e) {
     W = (e, t, n) => {
       var r, i, s;
       if (eb(n), null == a) return;
-      let o = !1,
-        l = !1;
+      let l = !1,
+        o = !1;
       switch (t) {
         case P.AE.LEGACY_GAME:
-          S(e), f.Z.toggleOverlay(a, e, N), o = !e && C;
+          S(e), f.Z.toggleOverlay(a, e, N), l = !e && C;
           break;
         case P.AE.OOP_GAME:
-          x(e), f.Z.toggleOverlay(a, C, e), l = !e && N;
+          x(e), f.Z.toggleOverlay(a, C, e), o = !e && N;
           break;
         case P.AE.LEGACY:
           b.Z.setEnabled(e, k), (0, P.ou)(e, P.AE.LEGACY, null !== (r = a.id) && void 0 !== r ? r : null);
           break;
         case P.AE.OOP:
           b.Z.setEnabled(Z, e), (0, P.ou)(e, P.AE.OOP, null !== (i = a.id) && void 0 !== i ? i : null)
-      }(o || l) && (0, B.l)(o ? P.AE.LEGACY_GAME : P.AE.OOP_GAME, null !== (s = a.id) && void 0 !== s ? s : null)
+      }(l || o) && (0, B.l)(l ? P.AE.LEGACY_GAME : P.AE.OOP_GAME, null !== (s = a.id) && void 0 !== s ? s : null)
     },
     L = (e, t) => {
       let n = !t && e,
@@ -324,8 +324,8 @@ function ex(e) {
       }
       let s = null;
       if (r ? s = "game" === t ? P.AE.LEGACY_GAME : P.AE.LEGACY : i && (s = "game" === t ? P.AE.OOP_GAME : P.AE.OOP), null != s) {
-        var o;
-        (0, B.l)(s, null !== (o = a.id) && void 0 !== o ? o : null)
+        var l;
+        (0, B.l)(s, null !== (l = a.id) && void 0 !== l ? l : null)
       }
     },
     U = R && D,
@@ -422,9 +422,9 @@ function ex(e) {
   let [ei, es] = i.useMemo(() => q ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : K && J ? ["text-warning", h.TVs.colors.TEXT_WARNING.css] : K && X ? ["text-positive", h.TVs.colors.TEXT_POSITIVE.css] : K && Q ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [q, K, J, X, Q]);
   return null == a ? null : (0, r.jsxs)(ef, {
     onExpand: I,
-    className: v ? eo.expandedContainer : void 0,
+    className: v ? el.expandedContainer : void 0,
     title: (0, r.jsxs)(r.Fragment, {
-      children: [null !== (s = null !== (n = null !== (t = null == o ? void 0 : o.name) && void 0 !== t ? t : null == p ? void 0 : p.name) && void 0 !== n ? n : null == a ? void 0 : a.gameName) && void 0 !== s ? s : "", null != p && p.verified ? (0, r.jsx)(h.ua7, {
+      children: [null !== (s = null !== (n = null !== (t = null == l ? void 0 : l.name) && void 0 !== t ? t : null == p ? void 0 : p.name) && void 0 !== n ? n : null == a ? void 0 : a.gameName) && void 0 !== s ? s : "", null != p && p.verified ? (0, r.jsx)(h.ua7, {
         text: ea.NW.string(ea.t["4PJP5u"]),
         children: e => (0, r.jsx)(A.Z, eu(ed({
           size: 16,
@@ -446,7 +446,7 @@ function ex(e) {
         size: "xxs",
         color: es
       }) : (0, r.jsx)("div", {
-        className: eo.playingDot
+        className: el.playingDot
       }), (0, r.jsx)(h.Text, {
         variant: "text-xs/semibold",
         color: ei,
@@ -454,7 +454,7 @@ function ex(e) {
       })]
     }),
     icon: (0, r.jsx)(y.Z, {
-      game: o,
+      game: l,
       pid: null == a ? void 0 : a.pid,
       size: y.Z.Sizes.MEDIUM
     }),
@@ -482,7 +482,7 @@ function ex(e) {
             e && !k ? W(e, P.AE.OOP, t) : W(e, P.AE.OOP_GAME, t)
           }
         }), (0, r.jsx)("div", {
-          className: eo.emptySpacer
+          className: el.emptySpacer
         })]
       })
     }), (0, r.jsx)(eh, {
@@ -498,7 +498,7 @@ function ex(e) {
             e && !Z ? W(e, P.AE.LEGACY, t) : W(e, P.AE.LEGACY_GAME, t)
           }
         }), (0, r.jsx)("div", {
-          className: eo.emptySpacer
+          className: el.emptySpacer
         })]
       })
     })]
@@ -523,8 +523,8 @@ function eE(e) {
     gameApplication: n,
     supportDisabled: s,
     getEnabledFromStatus: a,
-    onChange: o,
-    clientSettingType: l,
+    onChange: l,
+    clientSettingType: o,
     ariaLabel: c
   } = e, d = (0, g.cj)([T.ZP, z.Z, Y.Z], () => (0, T.FZ)(t, [T.ZP, z.Z, Y.Z])), u = (0, g.cj)([z.Z, Y.Z], () => (0, T.b6)(t, !1, [z.Z, Y.Z]), [t]), m = a(u), [p, f] = i.useState(m);
   i.useEffect(() => {
@@ -532,9 +532,9 @@ function eE(e) {
   }, [m]);
   let N = (e, n) => {
     let r = !e && p;
-    if (eb(n), f(e), o(e, d, u), r) {
+    if (eb(n), f(e), l(e, d, u), r) {
       var i, s;
-      (0, B.l)(l, null !== (s = null !== (i = d.id) && void 0 !== i ? i : null == t ? void 0 : t.id) && void 0 !== s ? s : null)
+      (0, B.l)(o, null !== (s = null !== (i = d.id) && void 0 !== i ? i : null == t ? void 0 : t.id) && void 0 !== s ? s : null)
     }
   };
   return (0, r.jsx)(eh, {
@@ -550,7 +550,7 @@ function eE(e) {
         disabled: s,
         onChange: (e, t) => N(e, t)
       }), (0, r.jsx)("div", {
-        className: eo.emptySpacer
+        className: el.emptySpacer
       })]
     })
   })
@@ -560,7 +560,7 @@ function ej() {
   let [e, t] = i.useState(!1), {
     legacyEnabled: n,
     oopEnabled: s
-  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), o = (0, S.Z)(a.map(e => e.id)), l = (0, O.$1)(), c = (e, t) => {
+  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), l = (0, S.Z)(a.map(e => e.id)), o = (0, O.$1)(), c = (e, t) => {
     var r, i;
     eb(t), b.Z.setEnabled(e, s);
     let a = null !== (i = null === (r = T.ZP.getCurrentGameForAnalytics()) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : null;
@@ -570,24 +570,24 @@ function ej() {
       enabledOOP: r
     } = n;
     f.Z.toggleOverlay(t, e, r)
-  }, u = i.useMemo(() => es.iP ? l ? ea.NW.string(ea.t.r9jEV1) : ea.NW.string(ea.t.OzInYm) : ea.NW.string(ea.t["8Ox6/P"]), [l]);
+  }, u = i.useMemo(() => es.iP ? o ? ea.NW.string(ea.t.r9jEV1) : ea.NW.string(ea.t.OzInYm) : ea.NW.string(ea.t["8Ox6/P"]), [o]);
   return 0 === a.length ? (0, r.jsx)(eh, {
     title: ea.NW.string(ea.t.BfFpW1),
     description: u,
     "aria-label": ea.NW.string(ea.t.BfFpW1),
-    className: eo.standaloneContainer,
+    className: el.standaloneContainer,
     action: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h.rsf, {
         checked: n,
-        disabled: l,
+        disabled: o,
         onChange: (e, t) => c(e, t)
       }), es.iP && (0, r.jsx)("div", {
-        className: eo.emptySpacer
+        className: el.emptySpacer
       })]
     })
   }) : (0, r.jsxs)(ef, {
     onExpand: t,
-    className: e ? eo.expandedContainer : void 0,
+    className: e ? el.expandedContainer : void 0,
     title: ea.NW.string(ea.t.BfFpW1),
     description: u,
     "aria-label": ea.NW.string(ea.t.BfFpW1),
@@ -595,24 +595,24 @@ function ej() {
       onClick: e => eb(e),
       children: (0, r.jsx)(h.rsf, {
         checked: n,
-        disabled: l,
+        disabled: o,
         onChange: (e, t) => c(e, t)
       })
     }),
     children: [(0, r.jsx)("div", {
-      className: eo.subtitleContainer,
+      className: el.subtitleContainer,
       children: (0, r.jsx)(h.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: ea.NW.string(ea.t.FzoWRk)
       })
     }), (0, r.jsx)(h.zJl, {
-      className: eo.scroller,
+      className: el.scroller,
       children: a.map((e, t) => (0, r.jsx)(eE, {
         rawGame: e,
         clientSettingType: P.AE.LEGACY_GAME,
-        supportDisabled: l,
-        gameApplication: o[t],
+        supportDisabled: o,
+        gameApplication: l[t],
         getEnabledFromStatus: e => {
           let {
             enabledLegacy: t
@@ -632,36 +632,36 @@ function eO() {
   let [e, t] = i.useState(!1), {
     oopEnabled: n,
     legacyEnabled: s
-  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = !(0, en.supportsOutOfProcess)(), o = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), l = (0, S.Z)(o.map(e => e.id)), c = (e, t) => {
+  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), a = !(0, en.supportsOutOfProcess)(), l = (0, g.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), o = (0, S.Z)(l.map(e => e.id)), c = (e, t) => {
     var r, i;
     eb(t);
     let a = !e && n;
     b.Z.setEnabled(s, e);
-    let o = null !== (i = null === (r = T.ZP.getCurrentGameForAnalytics()) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : null;
-    (0, P.ou)(e, P.AE.OOP, o), a && (0, B.l)(P.AE.OOP, o)
+    let l = null !== (i = null === (r = T.ZP.getCurrentGameForAnalytics()) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : null;
+    (0, P.ou)(e, P.AE.OOP, l), a && (0, B.l)(P.AE.OOP, l)
   }, d = (e, t, n) => {
     let {
       enabledLegacy: r
     } = n;
     f.Z.toggleOverlay(t, e, r)
   }, u = i.useMemo(() => es.iP ? a ? ea.NW.string(ea.t.C7bLTU) : ea.NW.string(ea.t.ndgADA) : ea.NW.string(ea.t.m7X4a2), [a]);
-  return 0 === o.length ? (0, r.jsx)(eh, {
+  return 0 === l.length ? (0, r.jsx)(eh, {
     title: ea.NW.string(ea.t["7BlVIi"]),
     description: u,
     "aria-label": ea.NW.string(ea.t["7BlVIi"]),
-    className: eo.standaloneContainer,
+    className: el.standaloneContainer,
     action: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h.rsf, {
         checked: n,
         disabled: a,
         onChange: (e, t) => c(e, t)
       }), es.iP && (0, r.jsx)("div", {
-        className: eo.emptySpacer
+        className: el.emptySpacer
       })]
     })
   }) : (0, r.jsxs)(ef, {
     onExpand: t,
-    className: e ? eo.expandedContainer : void 0,
+    className: e ? el.expandedContainer : void 0,
     title: ea.NW.string(ea.t["7BlVIi"]),
     description: u,
     "aria-label": ea.NW.string(ea.t["7BlVIi"]),
@@ -674,18 +674,18 @@ function eO() {
       })
     }),
     children: [(0, r.jsx)("div", {
-      className: eo.subtitleContainer,
+      className: el.subtitleContainer,
       children: (0, r.jsx)(h.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: ea.NW.string(ea.t.FzoWRk)
       })
     }), (0, r.jsx)(h.zJl, {
-      className: eo.scroller,
-      children: o.map((e, t) => (0, r.jsx)(eE, {
+      className: el.scroller,
+      children: l.map((e, t) => (0, r.jsx)(eE, {
         rawGame: e,
         clientSettingType: P.AE.OOP_GAME,
-        gameApplication: l[t],
+        gameApplication: o[t],
         supportDisabled: a,
         getEnabledFromStatus: e => {
           let {
@@ -710,11 +710,11 @@ function eC() {
     a = null != s && s.elevated && i;
   return (0, r.jsx)(ep, {
     children: (0, r.jsx)("div", {
-      className: eo.keybindMainContainer,
+      className: el.keybindMainContainer,
       children: (0, r.jsxs)("div", {
-        className: eo.keybindContainer,
+        className: el.keybindContainer,
         children: [(0, r.jsxs)("div", {
-          className: eo.keybindHeaderContainer,
+          className: el.keybindHeaderContainer,
           children: [(0, r.jsx)(h.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
@@ -722,11 +722,11 @@ function eC() {
           }), a && (0, r.jsx)(h.Text, {
             variant: "text-xs/normal",
             color: "text-warning",
-            className: eo.keybindAdminWarning,
+            className: el.keybindAdminWarning,
             children: ea.NW.string(ea.t.NsowVV)
           })]
         }), (0, r.jsx)("div", {
-          className: eo.keybindRecorderContainer,
+          className: el.keybindRecorderContainer,
           children: (0, r.jsx)(x.Z, {
             disabled: t && n,
             defaultValue: null != e ? e.shortcut : [],
@@ -767,15 +767,15 @@ function ev() {
     b.Z.setNotificationDisabledSetting(e, !t)
   }, s = (0, g.e7)([W.Z], () => W.Z.getDisabledNotifications());
   return (0, r.jsxs)("div", {
-    className: eo.notificationSettingsContainer,
+    className: el.notificationSettingsContainer,
     children: [(0, r.jsx)(h.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: ea.NW.string(ea.t.xOE5bG)
     }), n.map(e => (0, r.jsxs)(ep, {
-      className: eo.notificationItem,
+      className: el.notificationItem,
       children: [(0, r.jsxs)("div", {
-        className: eo.notificationDescriptionContainer,
+        className: el.notificationDescriptionContainer,
         children: [(0, r.jsx)(h.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
@@ -844,16 +844,16 @@ function eI() {
   return ((0, j.ZP)(() => () => {
     t(ei.L.AUTO_DISMISS)
   }), e !== p.z.OVERLAY_OOP_SETTINGS_NUX) ? null : (0, r.jsxs)("div", {
-    className: eo.overlaySettingsNux,
+    className: el.overlaySettingsNux,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("img", {
-        src: el.Z,
+        src: eo.Z,
         alt: ea.NW.string(ea.t.mdXZh4),
-        className: eo.nuxFirstImage
+        className: el.nuxFirstImage
       })
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: eo.mainTitleContainer,
+        className: el.mainTitleContainer,
         children: [(0, r.jsx)(h.X6q, {
           variant: "heading-xl/medium",
           color: "header-primary",
@@ -868,14 +868,14 @@ function eI() {
       children: (0, r.jsx)("img", {
         src: ec.Z,
         alt: ea.NW.string(ea.t.mdXZh4),
-        className: eo.nuxUserSettingsImage
+        className: el.nuxUserSettingsImage
       })
     }), (0, r.jsx)(h.zxk, {
-      className: eo.closeCircleButton,
+      className: el.closeCircleButton,
       onClick: () => n(),
       children: ea.NW.string(ea.t.Q26diI)
     }), (0, r.jsx)("div", {
-      className: eo.nuxDivider
+      className: el.nuxDivider
     })]
   })
 }
@@ -886,7 +886,7 @@ function ey(e) {
     className: s,
     showHeader: a
   } = e, {
-    avatarSizeMode: o,
+    avatarSizeMode: l,
     displayNameMode: c,
     displayUserMode: d,
     disableClickableRegions: u,
@@ -905,7 +905,7 @@ function ey(e) {
       t = (0, g.e7)([T.ZP], () => {
         let e = T.ZP.getVisibleGame();
         return null == e ? null : e
-      }, [], l()),
+      }, [], o()),
       [n] = (0, S.Z)([null != e && null != e.id ? e.id : null != t && null != t.id ? t.id : void 0]);
     return {
       runningGame: t,
@@ -930,17 +930,17 @@ function ey(e) {
       tag: h.RB0.H1,
       title: ea.NW.string(ea.t["9cb1U1"]),
       children: [O ? (0, r.jsx)(eI, {}) : null, (0, r.jsxs)("div", {
-        className: eo.overlayEnabledSettingsContainer,
+        className: el.overlayEnabledSettingsContainer,
         children: [(0, r.jsx)(ex, {
           runningGame: f,
           runningGameApplication: N
         }), (0, r.jsx)(eO, {}), (0, r.jsx)(ej, {})]
       }), (0, r.jsx)("div", {
-        className: eo.settingsDivider
+        className: el.settingsDivider
       })]
     }), (0, r.jsxs)(h.hjN, {
       children: [(0, r.jsxs)("div", {
-        className: eo.overlayEnabledSettingsContainer,
+        className: el.overlayEnabledSettingsContainer,
         children: [(0, r.jsx)(eC, {}), v && (0, r.jsx)(ep, {
           children: (0, r.jsx)(h.j7V, {
             value: p,
@@ -950,7 +950,7 @@ function ey(e) {
           })
         }), null != x && (0, r.jsxs)(ep, {
           children: [(0, r.jsxs)("div", {
-            className: eo.limitedInteractionOverrideContainer,
+            className: el.limitedInteractionOverrideContainer,
             children: [(0, r.jsx)(h.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
@@ -971,7 +971,7 @@ function ey(e) {
           })]
         }), (0, r.jsxs)(ep, {
           children: [(0, r.jsxs)("div", {
-            className: eo.limitedInteractionOverrideContainer,
+            className: el.limitedInteractionOverrideContainer,
             children: [(0, r.jsx)(h.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
@@ -990,12 +990,12 @@ function ey(e) {
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: eo.settingsDivider
+        className: el.settingsDivider
       })]
     }), (0, r.jsxs)(h.hjN, {
       title: ea.NW.string(ea.t.r1TZfn),
       children: [(0, r.jsxs)("div", {
-        className: eo.voiceSettingsContainer,
+        className: el.voiceSettingsContainer,
         children: [(0, r.jsx)(ep, {
           title: ea.NW.string(ea.t.dnvZSk),
           children: (0, r.jsx)(h.q4e, {
@@ -1006,9 +1006,9 @@ function ey(e) {
               label: ea.NW.string(ea.t.BKIKq6),
               value: er.ipw.SMALL
             }],
-            className: eo.select,
+            className: el.select,
             onChange: e => b.Z.setAvatarSizeMode(e),
-            value: o
+            value: l
           })
         }), (0, r.jsx)(ep, {
           title: ea.NW.string(ea.t.J0dpcH),
@@ -1023,15 +1023,15 @@ function ey(e) {
               label: ea.NW.string(ea.t.ekjlPD),
               value: er.wC$.NEVER
             }],
-            className: eo.select,
+            className: el.select,
             onChange: e => b.Z.setDisplayNameMode(e),
             value: c
           })
         }), (0, r.jsx)("div", {
-          className: eo.widgetContainer,
+          className: el.widgetContainer,
           children: O && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-              className: eo.voiceWidgetContainer,
+              className: el.voiceWidgetContainer,
               children: (0, r.jsx)(M.k, {
                 id: "voice-widget",
                 title: ea.NW.string(ea.t.KNJ6Vl),
@@ -1044,7 +1044,7 @@ function ey(e) {
                 overlayVoiceStates: R,
                 displayNameMode: c,
                 displayUserMode: d,
-                avatarSizeMode: o,
+                avatarSizeMode: l,
                 widget: er.Odu.VOICE,
                 anchorLeft: !0,
                 application: null,
@@ -1057,7 +1057,7 @@ function ey(e) {
                 isPreviewingInGame: !1
               })
             }), (0, r.jsxs)("div", {
-              className: eo.widgetHeaderContainer,
+              className: el.widgetHeaderContainer,
               children: [(0, r.jsx)(U.PI, {
                 children: ea.NW.string(ea.t.KNJ6Vl)
               }), (0, r.jsx)(U.ls, {}), (0, r.jsx)(U.RT, {
@@ -1076,13 +1076,13 @@ function ey(e) {
               label: ea.NW.string(ea.t["2OvIZW"]),
               value: er.OYC.ONLY_WHILE_SPEAKING
             }],
-            className: eo.select,
+            className: el.select,
             onChange: e => b.Z.setDisplayUserMode(e),
             value: d
           })
         })]
       }), (0, r.jsx)("div", {
-        className: eo.settingsDivider
+        className: el.settingsDivider
       })]
     }), (0, r.jsx)(h.hjN, {
       children: (0, r.jsx)(ev, {})

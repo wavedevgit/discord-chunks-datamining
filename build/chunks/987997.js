@@ -11,7 +11,7 @@ function a(e) {
   var t, n, {
       children: a
     } = e,
-    o = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -43,7 +43,7 @@ function a(e) {
       })
     }
     return e
-  }({}, o), n = n = {
+  }({}, l), n = n = {
     size: i.zxk.Sizes.SMALL,
     color: i.zxk.Colors.BRAND_INVERTED,
     className: s.button,

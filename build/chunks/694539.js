@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(979554),
-  l = n(442837),
+  l = n(979554),
+  o = n(442837),
   c = n(481060),
   d = n(53281),
   u = n(281598),
@@ -26,7 +26,7 @@ let E = e => {
     back: n
   } = e, {
     upsertConfig: s
-  } = (0, h.E)(), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), [j, O] = i.useState(!0), C = i.useRef(null), [S, v] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState([]), [P, R] = i.useState(t.name);
+  } = (0, h.E)(), E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [j, O] = i.useState(!0), C = i.useRef(null), [S, v] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState([]), [P, R] = i.useState(t.name);
   i.useEffect(() => {
     let e = t.config.effects;
     e.length > 0 && A([...e].map(e => (e.src = (0, u.$j)(e.base64), e)))
@@ -68,7 +68,7 @@ let E = e => {
           width: 450
         }), j && (0, r.jsx)(N.Z, {
           config: {
-            type: o.Z.PROFILE_EFFECT,
+            type: l.Z.PROFILE_EFFECT,
             title: "debug",
             description: "debug",
             accessibilityLabel: "debug",
@@ -215,7 +215,7 @@ let E = e => {
               isTryItOutFlow: !0
             }), (0, r.jsx)(N.Z, {
               config: {
-                type: o.Z.PROFILE_EFFECT,
+                type: l.Z.PROFILE_EFFECT,
                 title: "debug",
                 description: "debug",
                 accessibilityLabel: "debug",

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(846027),
   d = n(230711),
   u = n(825209),
@@ -34,15 +34,15 @@ function C(e) {
     {
       shortcut: i,
       delay: s
-    } = (0, o.cj)([p.Z], () => p.Z.getModeOptions());
-  return t = h.isPlatformEmbedded || n !== N.pM4.PUSH_TO_TALK ? (0, r.jsx)(l.R94, {
-    type: l.R94.Types.DESCRIPTION,
+    } = (0, l.cj)([p.Z], () => p.Z.getModeOptions());
+  return t = h.isPlatformEmbedded || n !== N.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.R94, {
+    type: o.R94.Types.DESCRIPTION,
     className: a()(x.pttToolsMessage, _.marginBottom8),
     children: b.NW.format(b.t.HVvn5e, {
       onClick: () => d.Z.setSection(N.oAB.KEYBINDS)
     })
-  }) : (0, r.jsx)(l.R94, {
-    type: l.R94.Types.DESCRIPTION,
+  }) : (0, r.jsx)(o.R94, {
+    type: o.R94.Types.DESCRIPTION,
     className: a()(x.pttToolsMessage, x.pttToolsWarning, _.marginBottom8),
     children: b.NW.format(b.t.zvMPOT, {
       onDownloadClick: () => (0, f.y)("Help Text PTT")
@@ -53,7 +53,7 @@ function C(e) {
       className: x.pttToolsFlex,
       children: [(0, r.jsx)("div", {
         className: x.column,
-        children: (0, r.jsx)(l.xJW, {
+        children: (0, r.jsx)(o.xJW, {
           title: b.NW.string(b.t.YkDjVF),
           children: (0, r.jsx)(u.Z, {
             defaultValue: i,
@@ -64,13 +64,13 @@ function C(e) {
         })
       }), (0, r.jsx)("div", {
         className: x.column,
-        children: (0, r.jsxs)(l.xJW, {
-          children: [(0, r.jsx)(l.vwX, {
+        children: (0, r.jsxs)(o.xJW, {
+          children: [(0, r.jsx)(o.vwX, {
             id: j,
-            tag: l.RB0.H5,
+            tag: o.RB0.H5,
             className: _.marginBottom8,
             children: b.NW.string(b.t.y0ShVl)
-          }), (0, r.jsx)(l.iRW, {
+          }), (0, r.jsx)(o.iRW, {
             initialValue: s,
             onValueChange: e => c.Z.setMode(n, {
               delay: e
@@ -88,7 +88,7 @@ function C(e) {
 function S() {
   let {
     analyticsLocations: e
-  } = (0, m.ZP)(), t = (0, o.e7)([p.Z], () => p.Z.getMode()), s = [{
+  } = (0, m.ZP)(), t = (0, l.e7)([p.Z], () => p.Z.getMode()), s = [{
     value: N.pM4.VOICE_ACTIVITY,
     name: b.NW.string(b.t.cHCEOD)
   }, {
@@ -98,7 +98,7 @@ function S() {
     let {
       value: i
     } = t;
-    i === N.pM4.PUSH_TO_TALK && E && (0, l.ZDy)(async () => {
+    i === N.pM4.PUSH_TO_TALK && E && (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
@@ -131,10 +131,10 @@ function S() {
     })
   }, [e]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.xJW, {
+    children: [(0, r.jsx)(o.xJW, {
       title: b.NW.string(b.t["pS+K2N"]),
       className: _.marginBottom20,
-      children: (0, r.jsx)(l.FXm, {
+      children: (0, r.jsx)(o.FXm, {
         onChange: a,
         options: s,
         value: t

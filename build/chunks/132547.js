@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(622535),
   a = n(481060),
-  o = n(100527),
-  l = n(906732),
+  l = n(100527),
+  o = n(906732),
   c = n(464824),
   d = n(214852),
   u = n(626135),
@@ -30,7 +30,7 @@ let C = () => {
     [n, C] = i.useState(!1),
     {
       analyticsLocations: S
-    } = (0, l.ZP)(o.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
+    } = (0, o.ZP)(l.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [v, T] = i.useState(!1);
   (0, m.FM)();
   let I = "true" === new URLSearchParams(window.location.search).get("autoScroll");
@@ -40,7 +40,7 @@ let C = () => {
       ref: e,
       children: (0, r.jsx)("div", {
         className: j.container,
-        children: (0, r.jsxs)(l.Gt, {
+        children: (0, r.jsxs)(o.Gt, {
           value: S,
           children: [(0, r.jsx)(h.Z, {
             className: j.heroHeading,
@@ -61,7 +61,7 @@ let C = () => {
             })
           }), (0, r.jsx)(p.Z, {
             className: j.giftNitro,
-            location: o.Z.PREMIUM_MARKETING_GIFT_SECTION,
+            location: l.Z.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {
               page: _.ZY5.NITRO_HOME,
               section: _.jXE.GIFT_BANNER

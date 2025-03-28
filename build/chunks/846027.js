@@ -98,7 +98,7 @@ let O = {
       return S() ? Promise.resolve() : (T({
         usedKeybind: n,
         location: o
-      }), u.Z.isEnabled()) ? r.Z.dispatch({
+      }), i = i && !u.Z.hasActiveCallKitCall(), u.Z.isEnabled()) ? r.Z.dispatch({
         type: "AUDIO_TOGGLE_SELF_MUTE",
         context: e,
         syncRemote: t,
@@ -107,12 +107,12 @@ let O = {
     },
     setSelfMute(e, t) {
       let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-      S() || r.Z.dispatch({
+      S() || (n = n && !u.Z.hasActiveCallKitCall(), r.Z.dispatch({
         type: "AUDIO_SET_SELF_MUTE",
         context: e,
         mute: t,
         playSoundEffect: n
-      })
+      }))
     },
     setTemporarySelfMute(e) {
       S() || r.Z.dispatch({

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(772848),
-  l = n(866442),
+  l = n(772848),
+  o = n(866442),
   c = n(692547),
   d = n(481060),
   u = n(699682),
@@ -60,9 +60,9 @@ function x(e) {
     colorPickerMiddle: j,
     colorPickerFooter: O,
     showEyeDropper: C
-  } = e, S = i.useRef(null), v = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, l.Rf)(s), A = y === v ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = i.useState((0, o.Z)());
+  } = e, S = i.useRef(null), v = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === v ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = i.useState((0, l.Z)());
   return i.useEffect(() => {
-    (R !== j || D !== O) && w((0, o.Z)())
+    (R !== j || D !== O) && w((0, l.Z)())
   }, [O, j, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
     renderPopout: e => (0, r.jsx)(d.Z$W, b(N({}, e), {

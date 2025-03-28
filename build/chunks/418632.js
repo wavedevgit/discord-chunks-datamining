@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(200651),
   s = n(192379),
   a = n(512722),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   c = n(481060),
   d = n(893776),
   u = n(468026),
@@ -103,9 +103,9 @@ p(f, "defaultProps", {
   size: c.zxk.Sizes.MEDIUM,
   color: c.zxk.Colors.BRAND
 });
-let N = l.ZP.connectStores([m.default], () => {
+let N = o.ZP.connectStores([m.default], () => {
   let e = m.default.getCurrentUser();
-  return o()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
+  return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e
   }
 })(f)

@@ -1,7 +1,7 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  $Z: () => o,
-  L$: () => l,
+  $Z: () => l,
+  L$: () => o,
   fw: () => a
 });
 var r = n(544891),
@@ -19,13 +19,13 @@ async function a() {
   }), t
 }
 
-function o() {
+function l() {
   i.Z.dispatch({
     type: "FETCH_AUTH_SESSIONS_SUCCESS",
     sessions: []
   })
 }
-async function l(e) {
+async function o(e) {
   if (Array.isArray(e)) {
     if (0 === e.length) return
   } else e = [e];

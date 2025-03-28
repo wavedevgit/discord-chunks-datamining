@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(660216),
   d = n(230711),
   u = n(825209),
@@ -31,16 +31,16 @@ var r = n(200651),
   y = n(802138);
 
 function A() {
-  let e = (0, o.e7)([p.Z], () => p.Z.getHardwareEncoding()),
+  let e = (0, l.e7)([p.Z], () => p.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
       decoupledClipsEnabled: s,
       clipsLength: A,
       clipsQuality: P
-    } = (0, o.cj)([N.Z], () => N.Z.getSettings()),
-    R = (0, o.e7)([N.Z], () => N.Z.getHardwareClassification()),
-    D = (0, o.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
+    } = (0, l.cj)([N.Z], () => N.Z.getSettings()),
+    R = (0, l.e7)([N.Z], () => N.Z.getHardwareClassification()),
+    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
     Z = N.Z.isDecoupledGameClippingEnabled(),
     w = (0, x.Z)(p.Z),
     {
@@ -51,7 +51,7 @@ function A() {
       autoTrackExposure: !1
     });
   a()(null != D, "Save clip keybind unset");
-  let W = (0, o.e7)([m.default], () => m.default.locale),
+  let W = (0, l.e7)([m.default], () => m.default.locale),
     L = i.useMemo(() => [{
       value: j.OT.SECONDS_30,
       label: v.NW.formatToPlainString(v.t["bTFv//"], {
@@ -141,7 +141,7 @@ function A() {
       }), t))
     }, [D]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(l.hjN, {
+    children: [(0, r.jsxs)(o.hjN, {
       disabled: !e,
       children: [!e && (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
@@ -155,7 +155,7 @@ function A() {
         look: g.z.WARNING,
         className: I.formItem,
         children: v.NW.string(v.t.SIxrIC)
-      }) : null, (0, r.jsx)(l.j7V, {
+      }) : null, (0, r.jsx)(o.j7V, {
         hideBorder: !0,
         disabled: !e,
         className: I.formItem,
@@ -171,10 +171,10 @@ function A() {
         children: v.NW.string(v.t["Z+Mfqa"])
       })]
     }), Z && w && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.$i$, {}), (0, r.jsx)(l.hjN, {
+      children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
         className: y.marginTop20,
         disabled: !e,
-        children: (0, r.jsx)(l.j7V, {
+        children: (0, r.jsx)(o.j7V, {
           hideBorder: !0,
           disabled: !e,
           className: I.formItem,
@@ -188,9 +188,9 @@ function A() {
         })
       })]
     }), k && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.$i$, {}), (0, r.jsx)(l.hjN, {
+      children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
         className: y.marginTop20,
-        children: (0, r.jsx)(l.j7V, {
+        children: (0, r.jsx)(o.j7V, {
           hideBorder: !0,
           className: I.formItem,
           value: n,
@@ -199,7 +199,7 @@ function A() {
           children: v.NW.string(v.t["3zwNf3"])
         })
       })]
-    }), (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
+    }), (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
       className: y.marginTop20,
       children: [(0, r.jsx)(E.Q, {
         className: I.formItem,
