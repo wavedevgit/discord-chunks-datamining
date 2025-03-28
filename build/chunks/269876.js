@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(46973),
+  o = n(442837),
+  l = n(46973),
   c = n(846519),
   d = n(692547),
   u = n(481060),
@@ -26,11 +26,11 @@ function j() {
   let [e, t] = i.useState(-100), [n, s] = i.useState(!1), {
     threshold: j,
     autoThreshold: O
-  } = (0, l.cj)([p.Z], () => p.Z.getModeOptions()), {
+  } = (0, o.cj)([p.Z], () => p.Z.getModeOptions()), {
     inputMode: C,
     automaticVADSupported: S,
     isEnabled: v
-  } = (0, l.cj)([p.Z], () => ({
+  } = (0, o.cj)([p.Z], () => ({
     inputMode: p.Z.getMode(),
     automaticVADSupported: p.Z.supports(h.AN.AUTOMATIC_VAD),
     isEnabled: p.Z.isEnabled()
@@ -49,9 +49,9 @@ function j() {
   i.useEffect(() => {
     let e = new c.V7;
     return e.start(1e3, () => {
-      p.Z.getMediaEngine().on(o.aB.VoiceActivity, T), e.stop()
+      p.Z.getMediaEngine().on(l.aB.VoiceActivity, T), e.stop()
     }), () => {
-      p.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, T), e.stop()
+      p.Z.getMediaEngine().removeListener(l.aB.VoiceActivity, T), e.stop()
     }
   }, []);
   let y = (0, r.jsx)("section", {

@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(481060),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(509545),
   d = n(74538),
   u = n(937615),
@@ -25,12 +25,12 @@ function N(e) {
     } = e,
     {
       analyticsLocations: N
-    } = (0, o.ZP)(),
+    } = (0, l.ZP)(),
     [b] = (0, m.ED)({
       subscriptionId: n.id,
       renewal: !0,
       analyticsLocations: N,
-      analyticsLocation: l.Z.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
+      analyticsLocation: o.Z.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
     });
   if (null == b) return null;
   let x = i ? f.finePrintWithOverheadSeparator : f.finePrint,

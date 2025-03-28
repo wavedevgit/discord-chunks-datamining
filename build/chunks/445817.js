@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(570140),
-  o = n(2052),
+  o = n(570140),
+  l = n(2052),
   c = n(932724),
   d = n(716161),
   u = n(672339),
@@ -23,9 +23,9 @@ function b(e) {
     previewEnabled: t,
     onEnablePreview: n,
     onCancelPreview: b
-  } = e, x = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), O = i.useRef(_), C = (0, o.O)(), S = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
+  } = e, x = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), O = i.useRef(_), C = (0, l.O)(), S = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
   return i.useEffect(() => () => {
-    j.current && l.Z.wait(() => (0, d.Up)(O.current))
+    j.current && o.Z.wait(() => (0, d.Up)(O.current))
   }, []), (0, r.jsx)(m.Z, {
     selectedBackgroundOption: _,
     onSelectBackgroundOption: e => {

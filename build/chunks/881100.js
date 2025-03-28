@@ -6,8 +6,8 @@ var r = n(399606),
   i = n(780384),
   s = n(230711),
   a = n(410030),
-  l = n(594174),
-  o = n(424218),
+  o = n(594174),
+  l = n(424218),
   c = n(74538),
   d = n(474936),
   u = n(981631),
@@ -42,10 +42,10 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
   M = e => {
     let {
       styles: t
-    } = e, n = (0, a.ZP)(), i = (0, r.e7)([l.default], () => {
-      let e = l.default.getCurrentUser();
+    } = e, n = (0, a.ZP)(), i = (0, r.e7)([o.default], () => {
+      let e = o.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
-    }), M = (0, o.BU)(d.Uq / 1024, {
+    }), M = (0, l.BU)(d.Uq / 1024, {
       useKibibytes: !0
     });
     return {

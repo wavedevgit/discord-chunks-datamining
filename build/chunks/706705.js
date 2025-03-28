@@ -1,14 +1,14 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(816112);
 
-function l() {
-  let [e, t] = i.useState(!1), [l, o] = i.useState(20), [c, d] = i.useState(80);
+function o() {
+  let [e, t] = i.useState(!1), [o, l] = i.useState(20), [c, d] = i.useState(80);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)(s.Kqy, {
       gap: 8,
@@ -21,10 +21,10 @@ function l() {
         children: [(0, r.jsx)(s.R94, {
           children: "Number of animations"
         }), (0, r.jsx)(s.iRW, {
-          initialValue: l,
+          initialValue: o,
           defaultValue: 20,
           onValueRender: e => "".concat(Math.round(e), " animations"),
-          asValueChanges: e => o(Math.round(e)),
+          asValueChanges: e => l(Math.round(e)),
           minValue: 1,
           maxValue: 500,
           markers: [1, ...Array.from({
@@ -55,7 +55,7 @@ function l() {
         "--animation-size": "".concat(c, "px")
       },
       children: Array.from({
-        length: l
+        length: o
       }).map((t, i) => e ? (0, r.jsx)(s.t7u, {
         eventTargetRef: {
           current: document.body

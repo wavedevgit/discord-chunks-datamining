@@ -12,8 +12,8 @@ n.d(t, {
 var r, i = n(200651),
   s = n(192379),
   a = n(481060),
-  l = n(456100),
-  o = n(815372),
+  o = n(456100),
+  l = n(815372),
   c = n(43267),
   d = n(933557),
   u = n(471445),
@@ -64,12 +64,12 @@ class S extends s.PureComponent {
       score: n,
       onContextMenu: r,
       id: s,
-      "aria-label": l
+      "aria-label": o
     } = this.props;
     return (0, i.jsxs)(a.P3F, {
       role: "option",
       id: s,
-      "aria-label": l,
+      "aria-label": o,
       "aria-selected": e,
       focusProps: {
         enabled: !1
@@ -163,10 +163,10 @@ class v extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: l
+      id: o
     } = this.props;
     return (0, i.jsx)(S, {
-      id: l,
+      id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -273,10 +273,10 @@ class T extends(r = s.Component) {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: l
+      id: o
     } = this.props;
     return (0, i.jsx)(S, {
-      id: l,
+      id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -355,10 +355,10 @@ class I extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: l
+      id: o
     } = this.props;
     return (0, i.jsx)(S, {
-      id: l,
+      id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -447,10 +447,10 @@ class y extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: l
+      id: o
     } = this.props;
     return (0, i.jsx)(S, {
-      id: l,
+      id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -551,10 +551,10 @@ class R extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: l
+      id: o
     } = this.props;
     return (0, i.jsx)(S, {
-      id: l,
+      id: o,
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
@@ -573,37 +573,37 @@ class D extends s.Component {
       children: r
     } = this.props, {
       enabled: s
-    } = l.c.getCurrentConfig({
+    } = o.c.getCurrentConfig({
       location: "QuickSwitcherResults"
     }, {
       autoTrackExposure: !0
     }), c = s ? a.iWm : a.jje;
     switch (n.type) {
-      case o.Ky.SHOP:
+      case l.Ky.SHOP:
         e = j.NW.string(j.t.pWG4zc), t = (0, i.jsx)(a.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case o.Ky.NITRO_HOME:
+      case l.Ky.NITRO_HOME:
         e = j.NW.string(j.t.Ipxkoq), t = (0, i.jsx)(a.SrA, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case o.Ky.QUEST_HOME:
+      case l.Ky.QUEST_HOME:
         e = j.NW.string(j.t.JALI2N), t = (0, i.jsx)(a.qDn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case o.Ky.APPS_HOME:
+      case l.Ky.APPS_HOME:
         e = j.NW.string(j.t.PHjkRE), t = (0, i.jsx)(c, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case o.Ky.SETTINGS:
+      case l.Ky.SETTINGS:
         var d;
         e = null !== (d = n.label) && void 0 !== d ? d : j.NW.string(j.t["3D5yo6"]), t = (0, i.jsx)(a.ewm, {
           size: "xs",
@@ -638,10 +638,10 @@ class D extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: l
+      id: o
     } = this.props;
     return (0, i.jsx)(S, {
-      id: l,
+      id: o,
       onMouseEnter: e,
       onClick: t,
       onFocus: n,

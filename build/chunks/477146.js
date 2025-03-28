@@ -1,13 +1,13 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  H: () => o,
-  X: () => l
+  H: () => l,
+  X: () => o
 });
 var r = n(605387),
   i = n.n(r);
 let s = e => i().decode(e),
   a = e => Math.round(e.frames.reduce((e, t) => e + t.delay, 0)),
-  l = async (e, t, n, r) => ({
+  o = async (e, t, n, r) => ({
     src: e,
     base64: t,
     loop: !1,
@@ -22,7 +22,7 @@ let s = e => i().decode(e),
     height: 880,
     width: 450,
     name: n.name
-  }), o = function(e) {
+  }), l = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "json",
       n = "\n[";
     return "json" === t && e.forEach((e, t) => {

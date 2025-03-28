@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(442837),
-  l = n(780384),
-  o = n(481060),
+  o = n(780384),
+  l = n(481060),
   c = n(600164),
   d = n(921801),
   u = n(210887),
@@ -24,18 +24,18 @@ function N(e) {
   } = e, n = (0, a.e7)([u.Z], () => u.Z.theme);
   return (0, r.jsx)(d.F, {
     setting: m.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO,
-    children: (0, r.jsx)(o.hjN, {
+    children: (0, r.jsx)(l.hjN, {
       className: s()({
         [p.marginBottom20]: !t
       }),
       title: g.NW.string(g.t.DSGme3),
-      children: (0, r.jsx)(o.ToO, {
+      children: (0, r.jsx)(l.ToO, {
         className: s()({
           [p.marginBottom20]: !t
         }),
-        type: o.Dd5.PRIMARY,
+        type: l.Dd5.PRIMARY,
         imageData: {
-          src: (0, l.ap)(n) ? h : f,
+          src: (0, o.ap)(n) ? h : f,
           width: 70,
           height: 40
         },

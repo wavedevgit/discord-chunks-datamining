@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(401430),
-  o = n(100527),
+  o = n(401430),
+  l = n(100527),
   c = n(415439),
   d = n(921801),
   u = n(695103),
@@ -42,9 +42,9 @@ function _() {
   let [e] = i.useState(() => m.ZP.getEnableHardwareAcceleration()), t = p.bm.useSetting(), n = p.Sb.useSetting(), _ = (0, s.e7)([u.Z], () => u.Z.testModeApplicationId), E = (0, s.e7)([g.ZP], () => g.ZP.showPlayAgain), j = i.useCallback(e => {
     p.bm.updateSetting(!e)
   }, []), O = i.useCallback(e => {
-    e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, x({}, e))) : l.mc()
+    e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, x({}, e))) : o.mc()
   }, []), C = i.useCallback(e => {
-    (0, c.BV)(e, o.Z.USER_SETTINGS)
+    (0, c.BV)(e, l.Z.USER_SETTINGS)
   }, []), S = i.useCallback(e => {
     (0, a.h7j)(t => {
       var n, i;

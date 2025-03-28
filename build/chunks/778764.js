@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(849055),
   a = n(442837),
-  l = n(481060),
-  o = n(239091),
+  o = n(481060),
+  l = n(239091),
   c = n(313201),
   d = n(202858),
   u = n(287880),
@@ -57,7 +57,7 @@ function O(e) {
   let {
     transitionState: t,
     onClose: a,
-    ticket: o,
+    ticket: l,
     challenge: u
   } = e, f = (0, c.Dt)(), [E, j] = i.useState(""), [O, C] = i.useState(!0), [S, v] = i.useState(N.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
     let e;
@@ -71,26 +71,26 @@ function O(e) {
     }
     I(e), v(N.x.NAME)
   };
-  return (0, r.jsxs)(l.Y0X, {
+  return (0, r.jsxs)(o.Y0X, {
     transitionState: t,
     "aria-labelledby": f,
-    children: [(0, r.jsxs)(l.xBx, {
+    children: [(0, r.jsxs)(o.xBx, {
       className: _.header,
       separator: !1,
-      children: [(0, r.jsxs)(l.X6q, {
+      children: [(0, r.jsxs)(o.X6q, {
         id: f,
         variant: "heading-lg/semibold",
         children: [S === N.x.INIT && x.NW.string(x.t.vrOCCg), S === N.x.REGISTER && x.NW.string(x.t.wePEBA), S === N.x.NAME && x.NW.string(x.t["cY/IOj"])]
-      }), (0, r.jsx)(l.olH, {
+      }), (0, r.jsx)(o.olH, {
         onClick: a,
         className: _.modalCloseButton
       })]
-    }), (0, r.jsxs)(l.MyZ, {
+    }), (0, r.jsxs)(o.MyZ, {
       activeSlide: S,
       width: 440,
-      children: [(0, r.jsxs)(l.Mi4, {
+      children: [(0, r.jsxs)(o.Mi4, {
         id: N.x.INIT,
-        children: [(0, r.jsxs)(l.hzk, {
+        children: [(0, r.jsxs)(o.hzk, {
           className: _.content,
           children: [(0, r.jsx)("div", {
             className: _.icon,
@@ -99,26 +99,26 @@ function O(e) {
               src: n(773072)
             })
           }), (0, r.jsx)("div", {
-            children: null != y && (0, r.jsx)(l.Text, {
+            children: null != y && (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "status-danger",
               children: y
             })
           }), (0, r.jsx)("div", {
-            children: (0, r.jsx)(l.Text, {
+            children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               children: x.NW.string(x.t.Lh5vTU)
             })
           })]
-        }), (0, r.jsx)(l.mzw, {
-          children: (0, r.jsx)(l.zxk, {
+        }), (0, r.jsx)(o.mzw, {
+          children: (0, r.jsx)(o.zxk, {
             onClick: P,
             children: x.NW.string(x.t.oibaQU)
           })
         })]
-      }), (0, r.jsxs)(l.Mi4, {
+      }), (0, r.jsxs)(o.Mi4, {
         id: N.x.REGISTER,
-        children: [(0, r.jsxs)(l.hzk, {
+        children: [(0, r.jsxs)(o.hzk, {
           className: _.content,
           children: [(0, r.jsx)("div", {
             className: _.icon,
@@ -127,27 +127,27 @@ function O(e) {
               src: n(773072)
             })
           }), (0, r.jsx)("div", {
-            children: (0, r.jsx)(l.Text, {
+            children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               children: x.NW.string(x.t.aVMiX1)
             })
           })]
-        }), (0, r.jsx)(l.mzw, {
-          children: (0, r.jsx)(l.zxk, {
+        }), (0, r.jsx)(o.mzw, {
+          children: (0, r.jsx)(o.zxk, {
             submitting: !0
           })
         })]
-      }), (0, r.jsx)(l.Mi4, {
+      }), (0, r.jsx)(o.Mi4, {
         id: N.x.NAME,
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, h.Sr)(E, o, T).then(async () => {
+            e.preventDefault(), (0, h.Sr)(E, l, T).then(async () => {
               await (0, d.Yn)(!1)
             }).then(() => a()).catch(() => {
               A(x.NW.string(x.t.fEptJC)), v(N.x.INIT)
             })
           },
-          children: [(0, r.jsxs)(l.hzk, {
+          children: [(0, r.jsxs)(o.hzk, {
             className: _.content,
             children: [(0, r.jsx)("div", {
               className: _.icon,
@@ -156,10 +156,10 @@ function O(e) {
                 src: n(637163)
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(l.Text, {
+              children: [(0, r.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: x.NW.string(x.t["Jzd+z8"])
-              }), (0, r.jsx)(l.oil, {
+              }), (0, r.jsx)(o.oil, {
                 className: _.input,
                 value: E,
                 onChange: e => {
@@ -169,15 +169,15 @@ function O(e) {
                 minLength: 1
               })]
             })]
-          }), (0, r.jsxs)(l.mzw, {
+          }), (0, r.jsxs)(o.mzw, {
             className: _.footer,
-            children: [(0, r.jsx)(l.zxk, {
+            children: [(0, r.jsx)(o.zxk, {
               type: "submit",
               disabled: O,
               children: x.NW.string(x.t["5dyZ1d"])
-            }), (0, r.jsx)(l.zxk, {
-              look: l.zxk.Looks.LINK,
-              color: l.zxk.Colors.PRIMARY,
+            }), (0, r.jsx)(o.zxk, {
+              look: o.zxk.Looks.LINK,
+              color: o.zxk.Colors.PRIMARY,
               onClick: () => {
                 v(N.x.INIT)
               },
@@ -195,16 +195,16 @@ function C(e) {
     onSelect: t,
     credential: i
   } = e;
-  return (0, r.jsxs)(l.v2r, {
+  return (0, r.jsxs)(o.v2r, {
     navId: "webauthn-credential-actions",
-    onClose: o.Zy,
+    onClose: l.Zy,
     "aria-label": x.NW.string(x.t["+nrTbG"]),
     onSelect: t,
-    children: [(0, r.jsx)(l.sNh, {
+    children: [(0, r.jsx)(o.sNh, {
       id: "webauthn-edit-credential-".concat(i.id),
       label: x.NW.string(x.t.bt75u7),
       action: () => {
-        (0, l.ZDy)(async () => {
+        (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("804").then(n.bind(n, 89616));
@@ -213,7 +213,7 @@ function C(e) {
           }, t))
         })
       }
-    }), (0, r.jsx)(l.sNh, {
+    }), (0, r.jsx)(o.sNh, {
       id: "webauthn-delete-credential-".concat(i.id),
       label: x.NW.string(x.t["+xgS+P"]),
       color: "danger",
@@ -236,32 +236,32 @@ function S() {
     t || (0, h.hL)()
   }, [t]);
   let [n, s] = i.useState(!1);
-  return (0, r.jsxs)(l.hjN, {
+  return (0, r.jsxs)(o.hjN, {
     title: x.NW.string(x.t.y7SXYW),
     className: _.settings,
-    children: [(0, r.jsx)(l.R94, {
-      type: l.R94.Types.DESCRIPTION,
+    children: [(0, r.jsx)(o.R94, {
+      type: o.R94.Types.DESCRIPTION,
       className: _.description,
       children: x.NW.string(x.t.TMukAA)
     }), e.length > 0 && (0, r.jsx)("div", {
       className: _.credentialList,
       children: e.map(e => (0, r.jsxs)("div", {
         className: _.credentialItem,
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           children: e.name
-        }), (0, r.jsx)(l.zxk, {
-          look: l.zxk.Looks.BLANK,
-          color: l.zxk.Colors.TRANSPARENT,
-          size: l.zxk.Sizes.ICON,
+        }), (0, r.jsx)(o.zxk, {
+          look: o.zxk.Looks.BLANK,
+          color: o.zxk.Colors.TRANSPARENT,
+          size: o.zxk.Sizes.ICON,
           onClick: t => {
-            (0, o.vq)(t, t => (0, r.jsx)(C, j(E({}, t), {
+            (0, l.vq)(t, t => (0, r.jsx)(C, j(E({}, t), {
               credential: e
             })))
           },
           "aria-label": x.NW.string(x.t["+nrTbG"]),
           innerClassName: _.credentialOptions,
-          children: (0, r.jsx)(l.Huf, {
+          children: (0, r.jsx)(o.Huf, {
             size: "md",
             className: _.__invalid_overflowIcon,
             colorClass: _.__invalid_overflowIconFg,
@@ -270,14 +270,14 @@ function S() {
         })]
       }, e.id))
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(l.zxk, {
+      children: (0, r.jsx)(o.zxk, {
         onClick: () => {
           s(!0), (0, h.L$)().then(e => {
             let {
               ticket: t,
               challenge: n
             } = e;
-            (0, l.h7j)(e => (0, r.jsx)(O, j(E({}, e), {
+            (0, o.h7j)(e => (0, r.jsx)(O, j(E({}, e), {
               ticket: t,
               challenge: n
             })))
@@ -289,7 +289,7 @@ function S() {
         },
         submitting: n,
         disabled: !u.Ae,
-        size: l.zxk.Sizes.SMALL,
+        size: o.zxk.Sizes.SMALL,
         children: x.NW.string(x.t.vrOCCg)
       })
     })]

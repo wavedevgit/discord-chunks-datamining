@@ -1,6 +1,6 @@
 /** Chunk was on 3743 **/
 n.d(t, {
-  Z: () => x
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -14,35 +14,37 @@ var i = n(442837),
   c = n(286961),
   u = n(594174),
   p = n(614277),
-  _ = n(961573);
+  _ = n(215023),
+  x = n(961573);
 
-function x(e) {
+function f(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: x
-  } = e, f = (0, i.e7)([u.default], () => u.default.getCurrentUser()), h = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
+    selectedGiftingPromotionReward: f
+  } = e, h = (0, i.e7)([u.default], () => u.default.getCurrentUser()), m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
     analyticsLocations: j
-  } = (0, o.ZP)(), m = l.EFr.SIZE_32, L = (0, a.Z)(null == x ? void 0 : x.assetId, m, !h), g = (0, c.Z)(), S = null == g ? void 0 : g.giftPurchaseConfirmation;
-  return null == n || null == S ? null : (0, r.jsx)(p.O3, {
+  } = (0, o.ZP)(), L = l.EFr.SIZE_32, g = (0, a.Z)(null == f ? void 0 : f.assetId, L, !m), S = (0, c.Z)(), y = null == S ? void 0 : S.giftPurchaseConfirmation;
+  return null == n || null == y ? null : (0, r.jsx)(p.O3, {
     children: (0, r.jsx)(l.mzw, {
       align: d.Z.Align.CENTER,
       children: (0, r.jsxs)("div", {
-        className: _.promotionalFooter,
+        className: x.promotionalFooter,
         children: [(0, r.jsx)(l.Xo$, {
-          "aria-label": null == f ? void 0 : f.username,
-          size: m,
-          src: null == f ? void 0 : f.getAvatarURL(void 0, (0, l.pxk)(m), !h),
-          avatarDecoration: L
+          "aria-label": null == h ? void 0 : h.username,
+          size: L,
+          src: null == h ? void 0 : h.getAvatarURL(void 0, (0, l.pxk)(L), !m),
+          avatarDecoration: g
         }), (0, r.jsx)(l.zxk, {
           onClick: () => {
             t(), (0, C.Z)({
               product: n,
               shouldShowPromotionalExperience: !0,
-              analyticsLocations: j
+              analyticsLocations: j,
+              purchaseType: _.o8.PROMOTIONAL
             })
           },
-          children: S.collectRewardButtonText()
+          children: y.collectRewardButtonText()
         })]
       })
     })

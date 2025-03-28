@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(410030),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(197115),
   d = n(626135),
   u = n(74538),
@@ -25,7 +25,7 @@ function b(e) {
     children: b
   } = e, x = (0, a.ZP)(), {
     analyticsLocations: _
-  } = (0, o.ZP)(l.Z.PREMIUM_UPSELL_OVERLAY);
+  } = (0, l.ZP)(o.Z.PREMIUM_UPSELL_OVERLAY);
   return (i.useEffect(() => {
     n && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
       location_stack: _,

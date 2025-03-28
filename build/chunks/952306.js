@@ -1,6 +1,6 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
@@ -8,7 +8,7 @@ var i = n(481060),
   s = n(723359),
   a = n(231338);
 
-function l(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -26,13 +26,13 @@ function l(e) {
   }
   return e
 }
-let o = {
+let l = {
   openNewUserAgeGateModal: e => {
     (0, i.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("63288"), n.e("1337"), n.e("64732")]).then(n.bind(n, 298237));
-      return t => (0, r.jsx)(e, l({}, t))
+      return t => (0, r.jsx)(e, o({}, t))
     }, {
       modalKey: s.$$,
       onCloseRequest: a.dG,
@@ -46,7 +46,7 @@ let o = {
       let {
         default: t
       } = await n.e("60827").then(n.bind(n, 324239));
-      return n => (0, r.jsx)(t, l({
+      return n => (0, r.jsx)(t, o({
         claimRequired: e
       }, n))
     }, {

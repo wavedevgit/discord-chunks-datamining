@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(913527),
   a = n.n(s),
-  l = n(442837),
-  o = n(846519),
+  o = n(442837),
+  l = n(846519),
   c = n(481060),
   d = n(533307),
   u = n(189907),
@@ -88,7 +88,7 @@ class y extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "_copyModeTimeout", new o.V7), I(this, "state", {
+    super(...e), I(this, "_copyModeTimeout", new l.V7), I(this, "state", {
       copyMode: c.uA3.DEFAULT
     }), I(this, "handleCopy", e => {
       let {
@@ -164,8 +164,8 @@ class A extends i.PureComponent {
       giftCodes: n,
       className: s,
       sku: a,
-      isFetching: l,
-      hideCodes: o,
+      isFetching: o,
+      hideCodes: l,
       giftStyle: d
     } = this.props, {
       isOpen: m
@@ -207,13 +207,13 @@ class A extends i.PureComponent {
           })
         })
       }), m ? (0, r.jsx)(u.Z.Body, {
-        children: l ? (0, r.jsx)(c.$jN, {
+        children: o ? (0, r.jsx)(c.$jN, {
           className: T.spinner
         }) : (0, r.jsxs)(i.Fragment, {
           children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, r.jsx)(y, {
             giftCode: e,
             sku: a,
-            hideCode: o
+            hideCode: l
           }, e.code))]
         })
       }) : null]
@@ -249,7 +249,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let P = l.ZP.connectStores([_.Z, b.Z, N.Z, m.Z, x.Z, f.default], e => {
+let P = o.ZP.connectStores([_.Z, b.Z, N.Z, m.Z, x.Z, f.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,

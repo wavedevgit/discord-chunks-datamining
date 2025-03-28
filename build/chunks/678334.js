@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,151 +22,152 @@ var r = n(200651),
   b = n(563132),
   v = n(632580),
   y = n(919778),
-  O = n(612853),
-  I = n(981631),
-  S = n(218586);
+  O = n(435020),
+  I = n(612853),
+  S = n(981631),
+  T = n(218586);
 
-function T(e) {
+function N(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: o,
-    onNext: T,
-    legalTermsNodeRef: N,
-    flashLegalTerms: A,
-    invoiceError: C,
-    planError: R,
-    onPurchaseError: P,
-    baseAnalyticsData: w,
-    flowStartTime: D,
-    trialId: L,
-    planGroup: x,
-    analyticsLocation: M,
-    purchaseTokenAuthState: k,
-    openInvoiceId: j,
-    metadata: U,
-    backButtonEligible: G,
-    disablePurchase: B,
-    isTrial: F = !1
+    onNext: N,
+    legalTermsNodeRef: A,
+    flashLegalTerms: C,
+    invoiceError: R,
+    planError: P,
+    onPurchaseError: w,
+    baseAnalyticsData: D,
+    flowStartTime: L,
+    trialId: x,
+    planGroup: M,
+    analyticsLocation: k,
+    purchaseTokenAuthState: j,
+    openInvoiceId: U,
+    metadata: G,
+    backButtonEligible: B,
+    disablePurchase: F,
+    isTrial: V = !1
   } = e, {
-    selectedPlan: V,
-    priceOptions: Z,
-    setHasAcceptedTerms: H,
-    setPurchaseError: W,
-    purchaseType: Y,
-    paymentSourceId: K,
-    paymentSources: z,
-    selectedSkuId: q,
-    skusById: Q,
-    skuPricePreviewsById: X,
-    referralCode: J,
-    contextMetadata: $,
-    invoicePreview: ee,
-    inReverseTrial: et
+    selectedPlan: Z,
+    priceOptions: H,
+    setHasAcceptedTerms: W,
+    setPurchaseError: Y,
+    purchaseType: K,
+    paymentSourceId: z,
+    paymentSources: q,
+    selectedSkuId: Q,
+    skusById: X,
+    skuPricePreviewsById: J,
+    referralCode: $,
+    contextMetadata: ee,
+    invoicePreview: et,
+    inReverseTrial: en
   } = (0, b.JL)(), {
-    isGift: en,
-    selectedGiftStyle: er,
-    customGiftMessage: ei,
-    emojiConfetti: eo,
-    soundEffect: ea,
-    giftRecipient: es,
-    selectedGiftingPromotionReward: el
-  } = (0, E.wD)(), ec = (0, u.a5)(V), eu = (0, m.MY)(es), ed = {};
-  ed.gift_style = er, ed.reward_sku_ids = ec && (null == el ? void 0 : el.skuId) != null ? [null == el ? void 0 : el.skuId] : [], eu === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (a()(null != es, "Gift recipient must be set at purchase review step for these gift options."), ed.recipient_id = es.id, ed.custom_message = ei, ed.emoji_id = null == eo ? void 0 : eo.id, ed.emoji_name = (null == eo ? void 0 : eo.id) == null ? null == eo ? void 0 : eo.surrogates : void 0, ed.sound_id = null == ea ? void 0 : ea.soundId);
-  let ef = null == V ? void 0 : V.id,
-    e_ = (0, y.sE)(L, Z.paymentSourceId, ef),
+    isGift: er,
+    selectedGiftStyle: ei,
+    customGiftMessage: eo,
+    emojiConfetti: ea,
+    soundEffect: es,
+    giftRecipient: el,
+    selectedGiftingPromotionReward: ec
+  } = (0, E.wD)(), eu = (0, u.a5)(Z), ed = (0, m.MY)(el), ef = {};
+  ef.gift_style = ei, ef.reward_sku_ids = eu && (null == ec ? void 0 : ec.skuId) != null ? [null == ec ? void 0 : ec.skuId] : [], ed === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (a()(null != el, "Gift recipient must be set at purchase review step for these gift options."), ef.recipient_id = el.id, ef.custom_message = eo, ef.emoji_id = null == ea ? void 0 : ea.id, ef.emoji_name = (null == ea ? void 0 : ea.id) == null ? null == ea ? void 0 : ea.surrogates : void 0, ef.sound_id = null == es ? void 0 : es.soundId);
+  let e_ = null == Z ? void 0 : Z.id,
+    ep = (0, y.sE)(x, H.paymentSourceId, e_),
     {
-      analyticsLocations: ep
+      analyticsLocations: eh
     } = (0, l.ZP)(),
-    eh = null != K ? z[K] : null,
-    [em, eg] = i.useState(e_),
-    [eE, eb] = i.useState(!1),
+    em = (0, O.m)(q, z),
+    [eg, eE] = i.useState(ep),
+    [eb, ev] = i.useState(!1),
     {
-      hasEntitlements: ev
-    } = (0, _.H)(ef, en),
-    ey = (0, g.Ap)(Z.paymentSourceId),
-    eO = ev || e_,
-    eI = (0, d.U)(),
-    eS = null,
-    eT = null;
-  if (Y === I.GZQ.ONE_TIME) {
-    var eN;
-    a()(null != q, "SKU must be selected for one-time purchases"), eS = null !== (eN = Q[q]) && void 0 !== eN ? eN : null, a()(null != eS, "SKU must exist and be fetched.");
-    let e = X[q],
-      t = null != K ? K : h.c;
-    eT = null != e ? e[t] : null
+      hasEntitlements: ey
+    } = (0, _.H)(e_, er),
+    eO = (0, g.Ap)(H.paymentSourceId),
+    eI = ey || ep,
+    eS = (0, d.U)(),
+    eT = null,
+    eN = null;
+  if (K === S.GZQ.ONE_TIME) {
+    var eA;
+    a()(null != Q, "SKU must be selected for one-time purchases"), eT = null !== (eA = X[Q]) && void 0 !== eA ? eA : null, a()(null != eT, "SKU must exist and be fetched.");
+    let e = J[Q],
+      t = null != z ? z : h.c;
+    eN = null != e ? e[t] : null
   }
-  let eA = async () => {
+  let eC = async () => {
     await (0, v.H)({
       setPurchaseState: n,
-      setHasAcceptedTerms: H,
-      setIsSubmitting: eg,
-      setPurchaseError: W,
-      hasRedirectURL: eE,
-      setHasRedirectURL: eb,
-      isGift: en,
-      baseAnalyticsData: w,
-      analyticsLocation: M,
-      analyticsLocations: ep,
-      flowStartTime: D,
-      subscriptionPlan: V,
-      planGroup: x,
-      trialId: L,
-      priceOptions: Z,
-      paymentSource: eh,
-      isPrepaidPaymentPastDue: eI,
-      openInvoiceId: j,
+      setHasAcceptedTerms: W,
+      setIsSubmitting: eE,
+      setPurchaseError: Y,
+      hasRedirectURL: eb,
+      setHasRedirectURL: ev,
+      isGift: er,
+      baseAnalyticsData: D,
+      analyticsLocation: k,
+      analyticsLocations: eh,
+      flowStartTime: L,
+      subscriptionPlan: Z,
+      planGroup: M,
+      trialId: x,
+      priceOptions: H,
+      paymentSource: em,
+      isPrepaidPaymentPastDue: eS,
+      openInvoiceId: U,
       premiumSubscription: t,
-      onNext: T,
-      metadata: U,
-      sku: eS,
-      skuPricePreview: eT,
-      purchaseType: Y,
-      referralCode: J,
-      loadId: $.loadId,
-      giftInfoOptions: ed,
-      invoicePreview: ee
+      onNext: N,
+      metadata: G,
+      sku: eT,
+      skuPricePreview: eN,
+      purchaseType: K,
+      referralCode: $,
+      loadId: ee.loadId,
+      giftInfoOptions: ef,
+      invoicePreview: et
     })
-  }, eC = {
-    baseAnalyticsData: w,
-    flowStartTime: D,
-    makePurchase: eA,
-    onNext: T,
-    onPurchaseError: P,
-    paymentSource: eh,
-    paymentSourceId: K,
-    purchaseTokenAuthState: k,
+  }, eR = {
+    baseAnalyticsData: D,
+    flowStartTime: L,
+    makePurchase: eC,
+    onNext: N,
+    onPurchaseError: w,
+    paymentSource: em,
+    paymentSourceId: z,
+    purchaseTokenAuthState: j,
     setPurchaseState: n
-  }, eR = i.useRef(eC);
+  }, eP = i.useRef(eR);
   i.useEffect(() => {
-    eR.current = eC
+    eP.current = eR
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = eR.current;
-    e_ && !en && null == t && e()
-  }, [e_, en, t]);
-  let eP = null != j || Y === I.GZQ.ONE_TIME && !en;
-  return e_ ? null : (0, r.jsxs)(s.mzw, {
+    } = eP.current;
+    ep && !er && null == t && e()
+  }, [ep, er, t]);
+  let ew = null != U || K === S.GZQ.ONE_TIME && !er;
+  return ep ? null : (0, r.jsxs)(s.mzw, {
     align: c.Z.Align.CENTER,
     children: [(0, r.jsx)(p.Z, {
-      legalTermsNodeRef: N,
-      invoiceError: C,
-      planError: R,
-      disablePurchase: B,
-      flashLegalTerms: A,
-      isSubmitting: em,
+      legalTermsNodeRef: A,
+      invoiceError: R,
+      planError: P,
+      disablePurchase: F,
+      flashLegalTerms: C,
+      isSubmitting: eg,
       premiumSubscription: t,
-      isGift: en,
-      planGroup: x,
-      isPrepaid: ey,
-      isTrial: F,
-      makePurchase: eA,
-      needsPaymentSource: null == eh && !eO,
-      onNext: T,
-      inReverseTrial: et
-    }), (0, r.jsx)(O.Z, {}), G && !eP ? (0, r.jsx)("div", {
-      className: S.back,
+      isGift: er,
+      planGroup: M,
+      isPrepaid: eO,
+      isTrial: V,
+      makePurchase: eC,
+      needsPaymentSource: null == em && !eI,
+      onNext: N,
+      inReverseTrial: en
+    }), (0, r.jsx)(I.Z, {}), B && !ew ? (0, r.jsx)("div", {
+      className: T.back,
       children: (0, r.jsx)(f.Z, {
         onClick: o
       })

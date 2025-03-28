@@ -13,7 +13,7 @@ var i = n(704215),
   u = n(63063),
   d = n(823188),
   p = n(114625),
-  h = n(711896),
+  h = n(72623),
   f = n(474936),
   g = n(981631),
   m = n(388032),
@@ -82,7 +82,7 @@ function N(e) {
           objectType: g.Qqv.TIER_2
         }),
         confirmationFooter: (0, r.jsx)(p.Z, {}),
-        planSelectBanner: (0, r.jsx)(h.Z, {}),
+        paymentModalBanner: (0, r.jsx)(h.Z, {}),
         onClose: e => {
           e && A()
         }

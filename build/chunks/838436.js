@@ -8,8 +8,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(921801),
-  o = n(3957),
+  o = n(921801),
+  l = n(3957),
   c = n(279743),
   d = n(974508),
   u = n(542080);
@@ -38,7 +38,7 @@ function g(e) {
     header: t,
     description: n,
     relatedId: i,
-    disabled: l
+    disabled: o
   } = e;
   return (0, r.jsxs)("div", {
     className: u.header,
@@ -48,7 +48,7 @@ function g(e) {
       children: (0, r.jsx)("label", {
         htmlFor: i,
         className: s()(u.title, {
-          [u.disabled]: l
+          [u.disabled]: o
         }),
         children: t
       })
@@ -56,7 +56,7 @@ function g(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       className: s()(u.description, {
-        [u.disabled]: l
+        [u.disabled]: o
       }),
       children: n
     })]
@@ -69,7 +69,7 @@ function p(e) {
     className: n,
     children: i
   } = e;
-  return (0, r.jsx)(l.F, {
+  return (0, r.jsx)(o.F, {
     setting: t,
     children: (0, r.jsx)("div", {
       className: s()(u.container, n),
@@ -85,8 +85,8 @@ function h(e) {
     children: i,
     scrollPosition: a,
     scrollHighlightDelay: m
-  } = e, g = (0, o.a)(a);
-  return (0, r.jsx)(l.F, {
+  } = e, g = (0, l.a)(a);
+  return (0, r.jsx)(o.F, {
     setting: t,
     children: (0, r.jsxs)("div", {
       className: s()(u.container, n, {

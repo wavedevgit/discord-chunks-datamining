@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(846027),
-  o = n(230711),
+  o = n(846027),
+  l = n(230711),
   c = n(921801),
   d = n(131951),
   u = n(663389),
@@ -49,7 +49,7 @@ function U() {
   })), t = (0, s.e7)([u.Z], () => u.Z.getSubsection()), n = i.createRef(), m = i.createRef();
   i.useEffect(() => {
     var e, r;
-    t === Z.GA && (null == n || null === (e = n.current) || void 0 === e || e.scrollIntoView(), o.Z.clearSubsection()), t === Z.gP && (null == m || null === (r = m.current) || void 0 === r || r.scrollIntoView(), o.Z.clearSubsection())
+    t === Z.GA && (null == n || null === (e = n.current) || void 0 === e || e.scrollIntoView(), l.Z.clearSubsection()), t === Z.gP && (null == m || null === (r = m.current) || void 0 === r || r.scrollIntoView(), l.Z.clearSubsection())
   }, [n, m, t]);
   let k = (0, p.Z)();
   return (0, r.jsxs)(a.hjN, {
@@ -127,7 +127,7 @@ function U() {
               look: a.zxk.Looks.OUTLINED,
               color: a.zxk.Colors.RED,
               onClick: () => {
-                (0, g.Z)(L.NW.string(L.t["/RXu6+"]), L.NW.string(L.t.sQ42iY), l.Z.reset)
+                (0, g.Z)(L.NW.string(L.t["/RXu6+"]), L.NW.string(L.t.sQ42iY), o.Z.reset)
               },
               size: a.zxk.Sizes.SMALL,
               children: L.NW.string(L.t["/RXu6+"])

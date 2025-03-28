@@ -1,6 +1,6 @@
 /** Chunk was on 3743 **/
 n.d(t, {
-  b: () => S
+  b: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -17,89 +17,90 @@ var r = n(200651),
   x = n(987209),
   f = n(563132),
   h = n(107998),
-  j = n(614277),
-  m = n(400981),
-  L = n(698708),
-  g = n(921944);
+  m = n(614277),
+  j = n(400981),
+  L = n(435020),
+  g = n(698708),
+  S = n(921944);
 
-function S(e) {
-  var t, n;
-  let l, {
-      handleClose: S,
-      planGroup: y,
-      onSubscriptionConfirmation: E,
-      renderPurchaseConfirmation: b,
-      postSuccessGuild: N,
+function y(e) {
+  let t, {
+      handleClose: n,
+      planGroup: l,
+      onSubscriptionConfirmation: y,
+      renderPurchaseConfirmation: E,
+      postSuccessGuild: b,
       followupSKUInfo: I,
-      continueSessionToInitialStep: v
+      continueSessionToInitialStep: N
     } = e,
     {
-      activeSubscription: P,
+      activeSubscription: T,
       paymentSources: M,
-      paymentSourceId: T,
-      selectedPlan: Z,
+      paymentSourceId: P,
+      selectedPlan: v,
       selectedSkuId: O,
-      step: w,
-      updatedSubscription: k,
-      startingPremiumSubscriptionPlanIdRef: U
+      step: Z,
+      updatedSubscription: w,
+      startingPremiumSubscriptionPlanIdRef: k
     } = (0, f.JL)(),
     {
       isGift: A,
-      giftRecipient: R,
-      giftCode: F,
-      hasSentMessage: B,
-      isSendingMessage: H,
-      sendGiftMessage: W,
-      claimableRewards: G,
-      selectedGiftingPromotionReward: D
+      giftRecipient: U,
+      giftCode: R,
+      hasSentMessage: F,
+      isSendingMessage: B,
+      sendGiftMessage: H,
+      claimableRewards: W,
+      selectedGiftingPromotionReward: G
     } = (0, x.wD)(),
     {
-      confirmationFooter: Y
+      confirmationFooter: D
     } = (0, h.zb)(),
-    z = null != Y,
-    K = (0, d.id)(Z, A, G),
-    X = (0, c.Z)(),
-    V = (0, d.a5)(Z),
-    Q = (0, d.tK)(null == D ? void 0 : D.skuId),
-    q = A && null != D && V;
-  s()(null != Z, "Expected plan to selected"), s()(null != O, "Expected selectedSkuId"), s()(null != w, "Step should be set");
+    Y = null != D,
+    z = (0, d.id)(v, A, W),
+    K = (0, c.Z)(),
+    X = (0, d.a5)(v),
+    V = (0, d.tK)(null == G ? void 0 : G.skuId),
+    Q = (0, L.$)(M, P),
+    q = A && null != G && X;
+  s()(null != v, "Expected plan to selected"), s()(null != O, "Expected selectedSkuId"), s()(null != Z, "Step should be set");
   let J = i.useCallback(() => {
-    S(), null == E || E()
-  }, [S, E]);
+    n(), null == y || y()
+  }, [n, y]);
   return i.useEffect(() => {
-    !(!A || null == R || null == F || B || H || (0, p.pO)(R)) && C.F.getCurrentConfig({
+    !(!A || null == U || null == R || F || B || (0, p.pO)(U)) && C.F.getCurrentConfig({
       location: "36b986_1"
-    }).enabled && W({
-      onSubscriptionConfirmation: E
+    }).enabled && H({
+      onSubscriptionConfirmation: y
     })
-  }, [W, A, R, F, B, H, E]), i.useEffect(() => {
-    null != X && null != X.reminderNotice && K && (0, a.wH)(o.z.GIFTING_PROMOTION_REMINDER, X.dismissibleContentVersion, {
-      dismissAction: g.L.INDIRECT_ACTION
+  }, [H, A, U, R, F, B, y]), i.useEffect(() => {
+    null != K && null != K.reminderNotice && z && (0, a.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
+      dismissAction: S.L.INDIRECT_ACTION
     })
-  }, [X, K]), l = null != b ? b(Z, J, k) : null != v ? (0, r.jsx)(u.VY, {}) : A ? (0, r.jsx)(u.TB, {
-    planId: Z.id,
+  }, [K, z]), t = null != E ? E(v, J, w) : null != N ? (0, r.jsx)(u.VY, {}) : A ? (0, r.jsx)(u.TB, {
+    planId: v.id,
     onClose: J
-  }) : U.current === Z.id ? (0, r.jsx)(u.ZP, {
-    planId: Z.id,
-    postSuccessGuild: N,
+  }) : k.current === v.id ? (0, r.jsx)(u.ZP, {
+    planId: v.id,
+    postSuccessGuild: b,
     onClose: J,
-    paymentSourceType: null === (t = M[null != T ? T : ""]) || void 0 === t ? void 0 : t.type,
-    hideClose: z
+    paymentSourceType: Q,
+    hideClose: Y
   }) : (0, r.jsx)(u.ZP, {
     followupSKUInfo: I,
-    startingPremiumSubscriptionPlanId: U.current,
-    planId: Z.id,
+    startingPremiumSubscriptionPlanId: k.current,
+    planId: v.id,
     onClose: J,
-    isDowngrade: null != P && (0, _.GY)(P, Z.id, y),
-    paymentSourceType: null === (n = M[null != T ? T : ""]) || void 0 === n ? void 0 : n.type,
-    hideClose: z
+    isDowngrade: null != T && (0, _.GY)(T, v.id, l),
+    paymentSourceType: Q,
+    hideClose: Y
   }), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(j.C3, {
-      children: [(0, r.jsx)(L.Z, {}), l]
-    }), null != Y && Y, q && null != Q && (0, r.jsx)(m.Z, {
+    children: [(0, r.jsxs)(m.C3, {
+      children: [(0, r.jsx)(g.Z, {}), t]
+    }), null != D && D, q && null != V && (0, r.jsx)(j.Z, {
       onClose: J,
-      selectedPromotionalDecoPurchaseRecord: Q,
-      selectedGiftingPromotionReward: D
+      selectedPromotionalDecoPurchaseRecord: V,
+      selectedGiftingPromotionReward: G
     })]
   })
 }

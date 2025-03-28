@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(704215),
-  l = n(481060),
-  o = n(906732),
+  o = n(481060),
+  l = n(906732),
   c = n(605236),
   d = n(441167),
   u = n(695346),
@@ -36,16 +36,16 @@ function C(e) {
     autoTrackExposure: !1
   }), {
     analyticsLocations: v
-  } = (0, o.ZP)(), T = (0, g.Go)(), {
+  } = (0, l.ZP)(), T = (0, g.Go)(), {
     viewerClipsEnabled: I
   } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(m.Z);
   return i.useEffect(() => {
     (0, c.EW)(a.z.CLIPS_SETTINGS_BETA_TAG)
-  }), (0, r.jsxs)(o.Gt, {
+  }), (0, r.jsxs)(l.Gt, {
     value: v,
-    children: [(T || n) && (0, r.jsx)(l.hjN, {
+    children: [(T || n) && (0, r.jsx)(o.hjN, {
       className: t,
-      tag: l.RB0.H1,
+      tag: o.RB0.H1,
       title: n ? (0, r.jsxs)("div", {
         className: E.headerContainer,
         children: [_.NW.string(_.t.z2jK6e), (0, r.jsx)(N.Z, {})]
@@ -54,9 +54,9 @@ function C(e) {
         onSubmit: e => e.preventDefault(),
         children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(x.Z, {})]
       })
-    }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
+    }), T && (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
       className: n || T ? O.marginTop20 : t,
-      children: [(0, r.jsx)(l.j7V, {
+      children: [(0, r.jsx)(o.j7V, {
         hideBorder: !0,
         className: j.formItem,
         value: C,
@@ -65,7 +65,7 @@ function C(e) {
           allowVoiceRecording: e
         }),
         children: _.NW.string(_.t.AGDDkJ)
-      }), S && y && (0, r.jsx)(l.j7V, {
+      }), S && y && (0, r.jsx)(o.j7V, {
         hideBorder: !0,
         className: j.formItem,
         value: I,

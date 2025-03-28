@@ -6,9 +6,9 @@ var r = n(392711),
   i = n.n(r),
   s = n(710845),
   a = n(9156),
-  l = n(287328);
+  o = n(287328);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,13 +20,13 @@ let c = new s.Z("ReadStates"),
   d = new class {
     async getAll(e) {
       let t = performance.now(),
-        n = await l.Z.userGuildSettings(e).getMany(),
+        n = await o.Z.userGuildSettings(e).getMany(),
         r = performance.now();
       return c.log("asynchronously loaded in ".concat(r - t, "ms (userGuildSettings: ").concat(n.length, ")")), n
     }
     resetInMemoryState() {}
     handleConnectionOpen(e, t) {
-      e.userGuildSettings.partial || l.Z.userGuildSettingsTransaction(t).delete(), this.write(e.userGuildSettings.entries, e.userGuildSettings.version, t)
+      e.userGuildSettings.partial || o.Z.userGuildSettingsTransaction(t).delete(), this.write(e.userGuildSettings.entries, e.userGuildSettings.version, t)
     }
     handleUserGuildSettingsUpdate(e, t) {
       let n = i().max(e.userGuildSettings.map(e => {
@@ -36,7 +36,7 @@ let c = new s.Z("ReadStates"),
       null != n && this.write(e.userGuildSettings, n, t)
     }
     write(e, t, n) {
-      let r = l.Z.userGuildSettingsTransaction(n);
+      let r = o.Z.userGuildSettingsTransaction(n);
       for (let t of e) {
         var i;
         let e = function(e, t) {
@@ -57,7 +57,7 @@ let c = new s.Z("ReadStates"),
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              o(e, t, n[t])
+              l(e, t, n[t])
             })
           }
           return e
@@ -66,13 +66,13 @@ let c = new s.Z("ReadStates"),
         });
         r.put(null !== (i = t.guild_id) && void 0 !== i ? i : "dm-sentinel", e)
       }
-      l.Z.nonGuildVersionsTransaction(n).put({
+      o.Z.nonGuildVersionsTransaction(n).put({
         id: "user_guild_settings_version",
         version: t
       })
     }
     constructor() {
-      o(this, "actions", {
+      l(this, "actions", {
         CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
         USER_GUILD_SETTINGS_FULL_UPDATE: (e, t) => this.handleUserGuildSettingsUpdate(e, t)
       })

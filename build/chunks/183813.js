@@ -17,8 +17,8 @@ var r = n(200651),
   x = n(987209),
   f = n(563132),
   h = n(409813),
-  j = n(614277),
-  m = n(981631),
+  m = n(614277),
+  j = n(981631),
   L = n(388032),
   g = n(177326);
 
@@ -33,13 +33,13 @@ function S(e) {
   } = (0, f.JL)(), {
     setSelectedGiftingPromotionReward: E,
     selectedGiftingPromotionReward: b,
-    claimableRewards: N
-  } = (0, x.wD)(), I = (0, o.e7)([p.default], () => p.default.getCurrentUser());
+    claimableRewards: I
+  } = (0, x.wD)(), N = (0, o.e7)([p.default], () => p.default.getCurrentUser());
   i.useEffect(() => {
-    let e = null != N && N.length > 0;
-    null == b && e && E(N[0])
-  }, [N, b, E]);
-  let v = e => {
+    let e = null != I && I.length > 0;
+    null == b && e && E(I[0])
+  }, [I, b, E]);
+  let T = e => {
       let t = e.skuId;
       return (0, r.jsx)(d.Z, {
         skuId: t,
@@ -49,24 +49,24 @@ function S(e) {
         className: g.giftSelectItem
       }, t)
     },
-    P = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
+    M = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
   s()(null != l, "Expected plan to selected"), s()(null != S, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let M = null == N ? void 0 : N.map(e => v(e)),
-    T = null != b && null != I ? (0, r.jsx)(C.Z, {
+  let P = null == I ? void 0 : I.map(e => T(e)),
+    v = null != b && null != N ? (0, r.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: b.assetId
       },
-      user: I,
+      user: N,
       guildId: null,
       avatarSize: a.EFr.SIZE_152
     }) : null,
-    Z = (0, r.jsx)(j.O3, {
+    O = (0, r.jsx)(m.O3, {
       children: (0, r.jsx)(a.mzw, {
         className: g.modalFooter,
         children: (0, r.jsx)(u.y, {
           onStepChange: e => {
-            null != I && null != b && _.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: I.id,
+            null != N && null != b && _.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: N.id,
               reward_sku_id: b.skuId
             }), t(e)
           },
@@ -78,19 +78,19 @@ function S(e) {
         })
       })
     }),
-    O = (0, r.jsx)(a.X6q, {
+    Z = (0, r.jsx)(a.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: L.NW.string(L.t["Rp0+ZG"])
     });
-  return P ? (0, r.jsxs)("div", {
+  return M ? (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(a.xBx, {
       children: (0, r.jsxs)(a.Kqy, {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [O, (0, r.jsx)(a.olH, {
+        children: [Z, (0, r.jsx)(a.olH, {
           onClick: n
         })]
       })
@@ -101,29 +101,29 @@ function S(e) {
         padding: {
           top: 24
         },
-        children: [T, (0, r.jsx)(a.Kqy, {
+        children: [v, (0, r.jsx)(a.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: M
+          children: P
         })]
       })
-    }), Z]
+    }), O]
   }) : (0, r.jsxs)("div", {
     className: g.stepBodySkuSelect,
     children: [(0, r.jsxs)("div", {
       className: g.bodyColumnLeft,
       children: [(0, r.jsx)("div", {
         className: g.header,
-        children: O
-      }), M]
+        children: Z
+      }), P]
     }), (0, r.jsx)(a.olH, {
       onClick: n,
       className: g.closeButton
     }), (0, r.jsx)("div", {
       className: g.bodyColumnRight,
-      children: T
-    }), Z]
+      children: v
+    }), O]
   })
 }

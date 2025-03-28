@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(503089),
-  o = n(906732),
+  o = n(503089),
+  l = n(906732),
   c = n(254901),
   d = n(18438),
   u = n(778825),
@@ -41,7 +41,7 @@ function v() {
     } = (0, _.Z)(),
     {
       analyticsLocations: A
-    } = (0, o.ZP)(),
+    } = (0, l.ZP)(),
     {
       hasSearchResults: P,
       searchResults: R
@@ -52,7 +52,7 @@ function v() {
       if (n) {
         b.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 300,
-          intensity: l.$x
+          intensity: o.$x
         }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
@@ -66,7 +66,7 @@ function v() {
   }, [null == v ? void 0 : v.id, T]);
   let Z = !0,
     w = !0;
-  return P && 1 === R.length && (R.includes(O.s6.PROFILE_SERVER_PROFILES) ? (D(j.NB.GUILD), w = !1) : R.includes(O.s6.PROFILE_USER_PROFILE) && (D(j.NB.USER_PROFILE), Z = !1)), (0, r.jsx)(o.Gt, {
+  return P && 1 === R.length && (R.includes(O.s6.PROFILE_SERVER_PROFILES) ? (D(j.NB.GUILD), w = !1) : R.includes(O.s6.PROFILE_USER_PROFILE) && (D(j.NB.USER_PROFILE), Z = !1)), (0, r.jsx)(l.Gt, {
     value: A,
     children: (0, r.jsxs)(a.y5t, {
       component: (0, r.jsx)(a.X6q, {

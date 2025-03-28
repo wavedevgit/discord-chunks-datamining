@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(642128),
-  l = n(481060),
-  o = n(410030),
+  o = n(481060),
+  l = n(410030),
   c = n(104494),
   d = n(639119),
   u = n(318747),
@@ -23,7 +23,7 @@ let f = function(e) {
     isFullscreen: f,
     subscriptionTier: N,
     isMarketingPageV2: b
-  } = e, x = null === (t = (0, d.N)()) || void 0 === t ? void 0 : t.subscription_trial, _ = (0, c.Ng)(), E = (0, c.Wp)(_, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, l.q_F)({
+  } = e, x = null === (t = (0, d.N)()) || void 0 === t ? void 0 : t.subscription_trial, _ = (0, c.Ng)(), E = (0, c.Wp)(_, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, o.q_F)({
     transform: i ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!i,
     config: {
@@ -32,7 +32,7 @@ let f = function(e) {
     }
   }), O = {
     section: p.jXE.MARKETING_FLOATING_CTA
-  }, C = (0, o.ZP)(), S = (0, l.wjy)(C);
+  }, C = (0, l.ZP)(), S = (0, o.wjy)(C);
   return (0, r.jsx)(a.animated.div, {
     className: s()(h.wrapper, {
       [h.fullscreenWrapper]: f,

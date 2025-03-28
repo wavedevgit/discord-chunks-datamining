@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(570140),
-  o = n(401430),
+  o = n(570140),
+  l = n(401430),
   c = n(155268),
   d = n(600164),
   u = n(313201),
@@ -31,7 +31,7 @@ function N(e) {
     authorizing: m.Z.isFetchingAuthorization
   })), [_, E] = i.useState(null != N ? N : ""), [j, O] = i.useState("8080"), [C, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
   async function I() {
-    o.q$();
+    l.q$();
     let e = function(e, t, n) {
       if (null == e) return null;
       switch (e) {
@@ -41,12 +41,12 @@ function N(e) {
           return (0, c.ZP)(n)
       }
     }(C, j, _);
-    null != await o.Wt(_, e) && t()
+    null != await l.Wt(_, e) && t()
   }
-  i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
+  i.useEffect(() => () => o.Z.wait(() => l.q$()), []);
   let y = null != N && N === _,
     A = y ? function() {
-      o.mc(), E(""), S(null)
+      l.mc(), E(""), S(null)
     } : I;
   return (0, r.jsxs)(a.Y0X, {
     "aria-labelledby": v,

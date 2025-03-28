@@ -83,8 +83,8 @@ let E = e => {
       useShorterCTA: v = !1,
       showGradient: y,
       confirmationFooter: O,
-      planSelectBanner: I
-    } = e, S = m(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "planSelectBanner"]);
+      paymentModalBanner: I
+    } = e, S = m(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner"]);
     let T = (0, a.ZP)(),
       N = !y && ((0, i.wj)(T) || t),
       A = (0, c.N)(),
@@ -113,6 +113,6 @@ let E = e => {
       subscriptionTier: n,
       showGradient: y,
       confirmationFooter: O,
-      planSelectBanner: I
+      paymentModalBanner: I
     }, S))
   }

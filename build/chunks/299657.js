@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(704215),
+  o = n(442837),
+  l = n(704215),
   c = n(481060),
   d = n(570140),
   u = n(355467),
@@ -51,8 +51,8 @@ let V = function(e) {
       sourceAnalyticsLocations: s,
       analyticsLocations: V
     } = (0, f.ZP)(h.Z.PREMIUM_MARKETING),
-    G = (0, l.e7)([T.ZP], () => T.ZP.hasFetchedSubscriptions()),
-    F = (0, l.e7)([v.default], () => v.default.getCurrentUser()),
+    G = (0, o.e7)([T.ZP], () => T.ZP.hasFetchedSubscriptions()),
+    F = (0, o.e7)([v.default], () => v.default.getCurrentUser()),
     H = null == F ? void 0 : F.id,
     z = (0, Z.N)(),
     Y = (0, D.Ng)(),
@@ -60,9 +60,9 @@ let V = function(e) {
     [q, X] = i.useState(!0),
     J = i.useRef(0),
     Q = (0, y.M5)(F, L.p9.TIER_2);
-  !0 !== (0, _.wE)(o.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE) && (0, _.EW)(o.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE, {
+  !0 !== (0, _.wE)(l.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE) && (0, _.EW)(l.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE, {
     dismissAction: M.L.TAKE_ACTION
-  }), !0 !== (0, _.wE)(o.z.PERMADECOS_NITRO_TAB_NEW_BADGE) && (0, _.EW)(o.z.PERMADECOS_NITRO_TAB_NEW_BADGE, {
+  }), !0 !== (0, _.wE)(l.z.PERMADECOS_NITRO_TAB_NEW_BADGE) && (0, _.EW)(l.z.PERMADECOS_NITRO_TAB_NEW_BADGE, {
     dismissAction: M.L.TAKE_ACTION
   });
   let $ = (0, R.n)(),
@@ -70,8 +70,8 @@ let V = function(e) {
     {
       enabled: et
     } = (0, w.D)(),
-    en = (0, l.e7)([O.Z], () => null != F ? O.Z.getUserProfile(F.id) : null),
-    er = (0, l.e7)([A.Z], () => A.Z.hasFetched);
+    en = (0, o.e7)([O.Z], () => null != F ? O.Z.getUserProfile(F.id) : null),
+    er = (0, o.e7)([A.Z], () => A.Z.hasFetched);
   return (i.useEffect(() => {
     er || u.MH()
   }, [er]), i.useEffect(() => {
@@ -86,7 +86,7 @@ let V = function(e) {
       location_stack: s,
       load_duration_ms: J.current
     })
-  }, [s, q]), (0, l.e7)([S.Z], () => S.Z.enabled)) ? (0, r.jsx)(p.Z, {}) : n ? (0, r.jsx)(x.c8, {}) : t === L.EZ.ApplicationStoreHome && Q ? et && null == en ? (0, r.jsx)("div", {
+  }, [s, q]), (0, o.e7)([S.Z], () => S.Z.enabled)) ? (0, r.jsx)(p.Z, {}) : n ? (0, r.jsx)(x.c8, {}) : t === L.EZ.ApplicationStoreHome && Q ? et && null == en ? (0, r.jsx)("div", {
     className: a()(U.container, U.loading),
     children: (0, r.jsx)(c.$jN, {})
   }) : (0, r.jsx)(f.Gt, {

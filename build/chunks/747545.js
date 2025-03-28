@@ -7,8 +7,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(209739),
-  o = n.n(l),
+  o = n(209739),
+  l = n.n(o),
   c = n(442837),
   d = n(846519),
   u = n(481060),
@@ -47,7 +47,7 @@ function I(e) {
     hideDeviceHeader: n = !1,
     hideCameraSettingsLink: i = !1,
     onLearnMore: s,
-    selectedBackgroundOption: l,
+    selectedBackgroundOption: o,
     onSelectBackgroundOption: d,
     renderCamera: T,
     hidePreviewToggle: I = !1,
@@ -107,7 +107,7 @@ function I(e) {
           isDisabled: !D,
           onChange: e => m.Z.setVideoDevice(e),
           "aria-label": C.NW.string(C.t["t9eQ/v"])
-        }), !i && !!(0, E.isWindows)() && !!E.isPlatformEmbedded && o().satisfies(g.Z.os.release, ">=10.0.22000") && (0, r.jsx)(u.R94, {
+        }), !i && !!(0, E.isWindows)() && !!E.isPlatformEmbedded && l().satisfies(g.Z.os.release, ">=10.0.22000") && (0, r.jsx)(u.R94, {
           className: S.cameraDeeplink,
           children: C.NW.format(C.t.aJYgRk, {
             onCameraSettingsClick: () => {
@@ -124,7 +124,7 @@ function I(e) {
       children: (0, r.jsx)(b.Z, {
         className: S.spacingTop24,
         onLearnMore: s,
-        selectedBackgroundOption: l,
+        selectedBackgroundOption: o,
         onSelectBackgroundOption: d,
         currentDeviceId: R,
         smallerBackgroundOptions: y

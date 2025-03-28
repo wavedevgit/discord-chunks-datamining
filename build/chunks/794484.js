@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(119617),
-  o = n(481060),
+  o = n(119617),
+  l = n(481060),
   c = n(975298),
   d = n(695349),
   u = n(314684),
@@ -25,7 +25,7 @@ let _ = e => {
       leftAlignHeaders: n,
       title: i,
       headerClassname: s
-    } = e, a = (0, r.jsx)(o.X6q, {
+    } = e, a = (0, r.jsx)(l.X6q, {
       variant: "heading-xxl/extrabold",
       color: "header-primary",
       className: null != s ? s : x.heading,
@@ -88,9 +88,9 @@ let _ = e => {
       }),
       U = M.some(e => null != e.pillText),
       [V, G] = i.useState(null),
-      F = i.useRef(new l.qA);
+      F = i.useRef(new o.qA);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(null == k ? void 0 : null === (t = k.tenureRewardCollectible) || void 0 === t ? void 0 : t.name) === h.u.TENURE_REWARD_COLLECTIBLE && (0, r.jsx)(l.O_, {
+      children: [(null == k ? void 0 : null === (t = k.tenureRewardCollectible) || void 0 === t ? void 0 : t.name) === h.u.TENURE_REWARD_COLLECTIBLE && (0, r.jsx)(o.O_, {
         ref: G,
         className: x.confettiCanvas,
         environment: F.current
@@ -105,7 +105,7 @@ let _ = e => {
           leftAlignHeaders: j,
           title: w.title,
           headerClassname: C
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(l.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
           className: a()(x.subtitle, {

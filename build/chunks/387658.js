@@ -150,7 +150,7 @@ function W(e) {
       try {
         await (0, A.L)({
           applicationId: n.applicationId,
-          channel: "channel" === t.type ? t.channel : void 0,
+          channel: t.channel,
           sectionName: r,
           location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
           entrypoint: i,

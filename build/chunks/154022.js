@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   c = n(442837),
   d = n(481060),
   u = n(230711),
@@ -74,10 +74,10 @@ function U(e, t) {
 let V = (0, N.hQ)(),
   G = (0, N.hQ)(),
   F = (0, N.hQ)(),
-  H = o().debounce(e => {
+  H = l().debounce(e => {
     (0, g.o2)(e)
   }, 250),
-  z = o().debounce(e => {
+  z = l().debounce(e => {
     (0, C.Ct)(e)
   }, 250);
 
@@ -343,8 +343,8 @@ function et() {
     {
       useReducedMotion: n,
       rawPrefersReducedMotion: s,
-      systemPrefersReducedMotion: l,
-      gifAutoPlayOverrideReason: o,
+      systemPrefersReducedMotion: o,
+      gifAutoPlayOverrideReason: l,
       animateEmojiOverrideReason: u
     } = (0, c.cj)([p.Z, y.Z], () => ({
       systemPrefersReducedMotion: p.Z.systemPrefersReducedMotion,
@@ -356,8 +356,8 @@ function et() {
     m = i.useRef(null);
   (0, A.Z)(m, P.rP.REDUCED_MOTION);
   let h = i.useCallback((e, t) => {
-      (0, g.Zt)(t ? "auto" : l)
-    }, [l]),
+      (0, g.Zt)(t ? "auto" : o)
+    }, [o]),
     f = i.useCallback(e => {
       (0, g.Zt)(e ? "reduce" : "no-preference")
     }, []);
@@ -393,7 +393,7 @@ function et() {
       children: (0, r.jsx)(d.j7V, {
         className: L.marginBottom20,
         value: e,
-        note: null != o ? (0, j.Z)(o) : void 0,
+        note: null != l ? (0, j.Z)(l) : void 0,
         onChange: I.QK.updateSetting,
         children: k.NW.string(k.t.Iayoh4)
       })

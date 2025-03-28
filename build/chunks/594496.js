@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(442837),
-  l = n(481060),
-  o = n(295474),
+  o = n(481060),
+  l = n(295474),
   c = n(150039),
   d = n(126631),
   u = n(433411),
@@ -103,7 +103,7 @@ function R(e) {
     image: w
   }), F = null != D ? D : V;
   s()(null != F, "guild should not be null");
-  let H = (0, o.gS)(F.id),
+  let H = (0, l.gS)(F.id),
     z = (0, a.e7)([x.ZP], () => null == F.id ? null : x.ZP.getMember(F.id, Z.id)),
     Y = (0, a.e7)([b.Z], () => b.Z.getGuildMemberProfile(Z.id, F.id)),
     K = E.ZP.canUsePremiumProfileCustomization(Z),
@@ -136,9 +136,9 @@ function R(e) {
       showOverlay: !K,
       children: [(0, r.jsx)(m.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t.lqaIxM), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t.lqaIxM), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -153,9 +153,9 @@ function R(e) {
         disabled: !K
       }, "avatar"), (0, r.jsx)(u.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t["7v0T9P"]), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t["7v0T9P"]), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -167,9 +167,9 @@ function R(e) {
         guild: F
       }, "decoration"), (0, r.jsx)(p.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t.wR5wOj), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t.wR5wOj), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -197,9 +197,9 @@ function R(e) {
       }), (0, r.jsx)(d.Z, {
         placeholder: I.NW.string(I.t["/7NKgo"]),
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [I.NW.string(I.t.jGoPJS), (0, r.jsx)(l.ua7, {
+          children: [I.NW.string(I.t.jGoPJS), (0, r.jsx)(o.ua7, {
             text: I.NW.string(I.t["5AFxuL"]),
-            children: e => (0, r.jsx)(l.SrA, P(A({
+            children: e => (0, r.jsx)(o.SrA, P(A({
               size: "md",
               color: "currentColor"
             }, e), {

@@ -127,8 +127,8 @@ let L = function(e) {
     shinyButtonClassName: Y,
     showGradient: K = !1,
     confirmationFooter: z,
-    planSelectBanner: q
-  } = e, Q = P(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "subscribeButtonText", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "overrideDisabledButtonText", "shinyButtonClassName", "showGradient", "confirmationFooter", "planSelectBanner"]);
+    paymentModalBanner: q
+  } = e, Q = P(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "subscribeButtonText", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "overrideDisabledButtonText", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner"]);
   let X = (0, a.e7)([h.default], () => h.default.getCurrentUser()),
     J = (0, a.e7)([g.Z], () => g.Z.isFocused()),
     $ = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
@@ -202,7 +202,7 @@ let L = function(e) {
         applicationId: Z,
         giftMessage: H,
         confirmationFooter: z,
-        planSelectBanner: q
+        paymentModalBanner: q
       })
     };
   if (L) return (0, r.jsxs)(s.zxk, R(A({

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(481060),
   s = n(410030),
   a = n(583901),
-  l = n(780771),
-  o = n(981631),
+  o = n(780771),
+  l = n(981631),
   c = n(508190);
 
 function d(e) {
@@ -22,8 +22,8 @@ function d(e) {
       children: "Preselected Gradient"
     }), (0, r.jsx)("div", {
       className: c.themes,
-      children: l.vs.map(e => {
-        let i = d !== o.BRd.LIGHT ? e.darkBackground : e.lightBackground,
+      children: o.vs.map(e => {
+        let i = d !== l.BRd.LIGHT ? e.darkBackground : e.lightBackground,
           s = t === e.name;
         return (0, r.jsx)(a.S4, {
           onSelect: () => n(e),

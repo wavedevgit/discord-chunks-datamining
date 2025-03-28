@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(442837),
   s = n(570140),
   a = n(314897),
-  l = n(57562),
-  o = n(351780),
+  o = n(57562),
+  l = n(351780),
   c = n(843693);
 
 function d(e, t, n) {
@@ -57,7 +57,7 @@ let h = new p(s.Z, {
     let {
       achievementId: t
     } = e;
-    if (!o.Z.isEnabled()) return !1;
+    if (!l.Z.isEnabled()) return !1;
     ! function(e) {
       var t, n;
       if (null == g.unlockedAchievements[e]) g.unlockedAchievements = (t = u({}, g.unlockedAchievements), n = n = {
@@ -75,7 +75,7 @@ let h = new p(s.Z, {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t), setTimeout(() => {
-        (0, l.D)(e, !0)
+        (0, o.D)(e, !0)
       }, 2e3)
     }(t)
   }

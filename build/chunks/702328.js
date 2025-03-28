@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(622535),
+  o = n(442837),
+  l = n(622535),
   c = n(780384),
   d = n(481060),
   u = n(634894),
@@ -38,7 +38,7 @@ var r = n(200651),
   k = n(823188),
   W = n(241158),
   L = n(114625),
-  B = n(711896),
+  B = n(72623),
   M = n(135785),
   U = n(498765),
   V = n(635921),
@@ -60,8 +60,8 @@ var r = n(200651),
   ei = n(388032),
   es = n(658249),
   ea = n(499317),
-  el = n(865215),
-  eo = n(735035),
+  eo = n(865215),
+  el = n(735035),
   ec = n(786362),
   ed = n(181960),
   eu = n(313199),
@@ -90,33 +90,33 @@ let eg = e => {
       inOfferExperience: n,
       setIsAllPerksVisible: i,
       hasRenderedOnce: s,
-      isMarketingPageV2Enabled: l,
-      isReducedMotion: o
+      isMarketingPageV2Enabled: o,
+      isReducedMotion: l
     } = e;
     return t ? (0, r.jsxs)("div", {
       className: a()(es.whatsNewSectionBackground, {
-        [es.whatsNewSectionBackgroundV2]: l
+        [es.whatsNewSectionBackgroundV2]: o
       }),
-      children: [!l && (0, r.jsx)(F.Z, {
+      children: [!o && (0, r.jsx)(F.Z, {
         variant: Q.R0.WHATS_NEW,
         isFullScreen: t
-      }), l && (0, r.jsx)(W.Z, {
+      }), o && (0, r.jsx)(W.Z, {
         shouldLoadVideo: s,
-        isReducedMotion: o
-      }), l && (0, r.jsx)(W.Z, {
+        isReducedMotion: l
+      }), o && (0, r.jsx)(W.Z, {
         isBestOfNitro: !0,
         shouldLoadVideo: s,
-        isReducedMotion: o
-      }), !l && (0, r.jsx)(F.Z, {
+        isReducedMotion: l
+      }), !o && (0, r.jsx)(F.Z, {
         isFullScreen: t,
         showAllPerksButton: t ? (0, r.jsx)(ee.Z, {
           setIsAllPerksVisible: i,
           previousComponent: Q.MQ.MARKETING
         }) : void 0
-      }), n && !l && (0, r.jsx)(H.ZP, {
+      }), n && !o && (0, r.jsx)(H.ZP, {
         className: es.pdSparklesTop,
         variant: H.u0.TOP
-      }), n && !l && (0, r.jsx)(H.ZP, {
+      }), n && !o && (0, r.jsx)(H.ZP, {
         className: es.pdSparklesBottom,
         variant: H.u0.BOTTOM
       })]
@@ -137,7 +137,7 @@ let eg = e => {
       eN = i.useRef(null),
       eb = i.useRef(null),
       ex = i.useRef(null),
-      e_ = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
+      e_ = (0, o.e7)([g.Z], () => g.Z.useReducedMotion),
       eE = (0, m.ZP)(),
       ej = (0, c.wj)(eE),
       eO = x.default.getCurrentUser(),
@@ -149,7 +149,7 @@ let eg = e => {
       [eR, eD] = i.useState(!1),
       eZ = (0, j.rO)(),
       [ew, ek] = i.useState(!1),
-      eW = (0, l.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
+      eW = (0, o.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
       eL = null != eW ? (0, O.Af)(eW) : null,
       eB = null != eL ? O.ZP.getSkuIdForPlan(eL.planId) : null,
       eM = null !== eB && eB !== et.Si.TIER_2 ? et.Si.TIER_2 : null,
@@ -183,7 +183,7 @@ let eg = e => {
           [es.premiumTierCardsContainerSettings]: !W,
           [es.premiumTierCardsContainerFullscreen]: W
         }),
-        children: (0, r.jsx)(o.$, {
+        children: (0, r.jsx)(l.$, {
           innerRef: ee,
           onChange: e => eP(e),
           threshold: .1,
@@ -217,7 +217,7 @@ let eg = e => {
               buttonTextClassName: eS ? es.v2SubButtonText : es.subButtonText,
               buttonShineClassName: es.buttonShine,
               confirmationFooter: eq ? (0, r.jsx)(L.Z, {}) : void 0,
-              planSelectBanner: eq ? (0, r.jsx)(B.Z, {}) : void 0
+              paymentModalBanner: eq ? (0, r.jsx)(B.Z, {}) : void 0
             }) : (0, r.jsx)(J.Z, {
               forceInverted: !0,
               showIcon: !1,
@@ -258,7 +258,7 @@ let eg = e => {
           className: a()({
             [es.heroHeadingV2Container]: eS
           }),
-          children: [(0, r.jsx)(o.$, {
+          children: [(0, r.jsx)(l.$, {
             innerRef: eS ? ef : eN,
             onChange: e => eT(e),
             threshold: 0,
@@ -332,7 +332,7 @@ let eg = e => {
             hideCTAs: !0
           }), W && !eS ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("img", {
-              src: eo,
+              src: el,
               className: es.tableLeftSideDecoration,
               width: 197,
               height: 486,
@@ -352,7 +352,7 @@ let eg = e => {
           isFullscreen: W,
           subscriptionTier: eM,
           isMarketingPageV2: eS
-        }), (0, r.jsx)(o.$, {
+        }), (0, r.jsx)(l.$, {
           innerRef: eb,
           onChange: e => {
             e && !eR && (E.default.track(en.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
@@ -364,12 +364,12 @@ let eg = e => {
             className: es.bottomOfPageVisibilitySensor
           })
         }), !eS && (0, r.jsx)("img", {
-          src: el,
+          src: eo,
           className: es.bottomIllustration,
           width: 112,
           height: 85,
           alt: ei.NW.string(ei.t.X4IxWF)
-        }), eS && (0, r.jsx)(o.$, {
+        }), eS && (0, r.jsx)(l.$, {
           innerRef: ex,
           onChange: e => {
             ey(e)

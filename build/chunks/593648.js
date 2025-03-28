@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   c = n(442837),
   d = n(524437),
   u = n(481060),
@@ -86,14 +86,14 @@ function Y(e) {
     disabled: i,
     onPreview: s,
     onChange: a,
-    tooltip: l
+    tooltip: o
   } = e;
   return (0, r.jsx)(u.j7V, {
     className: V.soundRow,
     value: n,
     onChange: a,
     disabled: i,
-    tooltipNote: l,
+    tooltipNote: o,
     children: (0, r.jsxs)("div", {
       className: V.notificationSound,
       children: [(0, r.jsx)("div", {
@@ -119,20 +119,20 @@ function K(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: s
-  } = e, l = i.useRef(), o = (0, E.p)(), c = i.useCallback((e, t) => {
-    t.stopPropagation(), t.preventDefault(), null != l.current && l.current.stop(), l.current = (0, y.GN)(e)
+  } = e, o = i.useRef(), l = (0, E.p)(), c = i.useCallback((e, t) => {
+    t.stopPropagation(), t.preventDefault(), null != o.current && o.current.stop(), o.current = (0, y.GN)(e)
   }, []), d = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
     n || r.push(e), g.default.setDisabledSounds(r)
   }, [t]);
   i.useEffect(() => () => {
     var e;
-    null === (e = l.current) || void 0 === e || e.stop()
+    null === (e = o.current) || void 0 === e || e.stop()
   });
   let m = [{
       label: U.NW.string(U.t.pz71xM),
       sound: "message1",
-      focusModeDisabled: o
+      focusModeDisabled: l
     }, {
       label: U.NW.string(U.t.hK51Ym),
       sound: "deafen"
@@ -330,10 +330,10 @@ class X extends i.PureComponent {
       disableUnreadBadge: n,
       taskbarFlash: i,
       disabledSounds: s,
-      disableAllSounds: l,
+      disableAllSounds: o,
       notifyMessagesInSelectedChannel: c,
       focusMode: d
-    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), g = o().range(1, 11).map(e => ({
+    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), g = l().range(1, 11).map(e => ({
       value: 60 * e,
       label: U.NW.formatToPlainString(U.t.iXLF9f, {
         minutes: e
@@ -390,7 +390,7 @@ class X extends i.PureComponent {
       }), this.renderTTS(), (0, r.jsx)(q, {}), (0, r.jsx)(u.xJW, {
         children: (0, r.jsx)(K, {
           disabledSounds: s,
-          disableAllSounds: l,
+          disableAllSounds: o,
           notifyMessagesInSelectedChannel: c
         })
       }), (0, r.jsx)(W.Z, {})]
@@ -484,7 +484,7 @@ function $() {
       autoTrackExposure: !1
     }),
     n = (0, c.e7)([P.ZP], () => P.ZP.useNewNotifications),
-    [s, l] = i.useState(!1);
+    [s, o] = i.useState(!1);
   return e && (n || t) ? (0, r.jsxs)(r.Fragment, {
     children: [n ? (0, r.jsx)(I.F, {
       setting: L.s6.NOTIFICATIONS_UNREAD_SETTINGS,
@@ -493,7 +493,7 @@ function $() {
         value: n,
         disabled: s || !n,
         note: U.NW.string(U.t.frbLrK),
-        onChange: () => ee(l),
+        onChange: () => ee(o),
         children: U.NW.string(U.t.z21l8P)
       })
     }) : t ? (0, r.jsx)(I.F, {

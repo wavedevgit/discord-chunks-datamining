@@ -1,19 +1,21 @@
 /** Chunk was on 20756 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
-var i = n(481060);
-let o = e => {
+var i = n(481060),
+  o = n(215023);
+let l = e => {
   let {
     product: t,
-    analyticsLocations: o,
-    overrideTitle: l,
-    overrideDescription: s,
-    shouldShowPromotionalExperience: a,
-    onCloseCallback: c,
-    itemConsumed: d
+    analyticsLocations: l,
+    overrideTitle: s,
+    overrideDescription: a,
+    shouldShowPromotionalExperience: c,
+    onCloseCallback: d,
+    itemConsumed: u,
+    purchaseType: _ = o.o8.FIAT
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -38,13 +40,14 @@ let o = e => {
       return e
     }({
       product: t,
-      analyticsLocations: o,
-      overrideTitle: l,
-      overrideDescription: s,
-      shouldShowPromotionalExperience: a,
-      itemConsumed: d
+      analyticsLocations: l,
+      overrideTitle: s,
+      overrideDescription: a,
+      shouldShowPromotionalExperience: c,
+      itemConsumed: u,
+      purchaseType: _
     }, n))
   }, {
-    onCloseCallback: c
+    onCloseCallback: d
   })
 }

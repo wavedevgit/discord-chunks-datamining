@@ -6,8 +6,8 @@ var r = n(192379),
   i = n(442837),
   s = n(704215),
   a = n(570140),
-  l = n(804501),
-  o = n(113434),
+  o = n(804501),
+  l = n(113434),
   c = n(581883),
   d = n(46140);
 let u = () => {
@@ -16,9 +16,9 @@ let u = () => {
       var e;
       return null === (e = c.Z.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
     })) && void 0 !== e ? e : new Uint8Array,
-    n = (0, l.x)(s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, t),
-    u = (0, l.x)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, t),
-    m = (0, l.x)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, t),
+    n = (0, o.x)(s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, t),
+    u = (0, o.x)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, t),
+    m = (0, o.x)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, t),
     g = r.useCallback(() => {
       n.isDismissed && n.handleToggleDismissState(), u.isDismissed && u.handleToggleDismissState(), m.isDismissed && m.handleToggleDismissState(), a.Z.dispatch({
         type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET"
@@ -26,7 +26,7 @@ let u = () => {
     }, [u, m, n]),
     {
       handleResetStatusClick: p
-    } = (0, o.kJ)(d.V6);
+    } = (0, l.kJ)(d.V6);
   return {
     resetOnboardingAnnouncementModal: g,
     resetQuestStatus: p

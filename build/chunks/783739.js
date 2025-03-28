@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(975298),
-  l = n(89057),
-  o = n(724884),
+  o = n(89057),
+  l = n(724884),
   c = n(290799),
   d = n(362948),
   u = n(124570),
@@ -36,7 +36,7 @@ function T(e) {
     forceFetch: !0
   }), B = (null == t ? void 0 : t.isPausedOrPausePending) === !0 && L === S.a$.NONE, M = (null == t ? void 0 : t.isPausedOrPausePending) !== !0 && L === S.a$.NONE, U = y && L === S.a$.FP_SUB_PAUSED;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(l.oQ, {
+    children: [(0, r.jsx)(o.oQ, {
       className: v.blockedPaymentsWarning
     }), (0, r.jsx)(_.Z, {
       hasGuildBoostSlots: D,
@@ -68,7 +68,7 @@ function T(e) {
       className: v.tierComparisonTable,
       hideHeading: !0,
       hideTier0: !0
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(l.Z, {
       cardClassName: v.boosterRecognitionCard
     }), (0, r.jsx)(c.Z, {
       className: v.faq

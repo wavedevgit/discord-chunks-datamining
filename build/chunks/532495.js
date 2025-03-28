@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(442837),
-  l = n(809206),
-  o = n(634894),
+  o = n(809206),
+  l = n(634894),
   c = n(97992),
   d = n(328783),
   u = n(295474),
@@ -94,10 +94,10 @@ function Z() {
     J = (0, g.gd)(M, L.avatar),
     Q = (0, g.f$)(V, null == B ? void 0 : B.banner),
     $ = "DefaultCustomizationSections";
-  (0, o.j)({
+  (0, l.j)({
     location: $ + " auto on",
     autoTrackExposure: !0
-  }), (0, o.j)({
+  }), (0, l.j)({
     location: $ + " auto off",
     autoTrackExposure: !1
   });
@@ -114,7 +114,7 @@ function Z() {
       errors: en,
       currentGlobalName: L.globalName,
       pendingGlobalName: U,
-      onGlobalNameChange: l.W0
+      onGlobalNameChange: o.W0
     }), (0, r.jsx)(C.Z, {
       sectionTitle: R.NW.string(R.t["+T3RIy"]),
       errors: Y.pronouns,
@@ -122,7 +122,7 @@ function Z() {
       pendingPronouns: F,
       currentPronouns: null !== (k = null == B ? void 0 : B.pronouns) && void 0 !== k ? k : ""
     }, "pronouns"), (0, r.jsx)(f.Z, {
-      onAvatarChange: l.I5,
+      onAvatarChange: o.I5,
       showRemoveAvatarButton: J,
       errors: Y.avatar,
       sectionTitle: R.NW.string(R.t.lqaIxM),

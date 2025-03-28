@@ -210,6 +210,7 @@ function F(e) {
         }),
         children: [(0, r.jsx)(N.Y, {}), a && (0, r.jsx)(N.a, {}), (0, r.jsx)(c.yRy, {
           position: "top",
+          align: "right",
           renderPopout: () => (0, r.jsx)(f.default, {
             renderInputModes: !0,
             renderInputVolume: !0,

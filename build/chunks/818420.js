@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(704215),
   a = n(481060),
-  l = n(906732),
-  o = n(243778),
+  o = n(906732),
+  l = n(243778),
   c = n(158947),
   d = n(318110),
   u = n(150039),
@@ -21,10 +21,10 @@ function f(e) {
     user: t
   } = e, {
     analyticsLocations: n
-  } = (0, l.ZP)(), f = t.nameplate, {
+  } = (0, o.ZP)(), f = t.nameplate, {
     pendingNameplate: N,
     pendingErrors: b
-  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, o.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = i.useCallback(() => {
+  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, l.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = i.useCallback(() => {
     E(g.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })
