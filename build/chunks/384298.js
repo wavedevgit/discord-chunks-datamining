@@ -45,7 +45,7 @@ function E(e) {
           action: "PRESS_JOIN_CALL_BUTTON"
         }), t.isGuildStageVoice() ? (0, c.Cq)(t) : (s.default.selectVoiceChannel(t.id), (0, l.Kh)(t.id)), null == E || E()
       }
-    }), O && (0, r.jsx)(p.ef, {
+    }), O && t.isGuildVocal() && (0, r.jsx)(p.ef, {
       icon: i.kBi,
       tooltipText: v ? g.NW.string(g.t.kkKapK) : g.NW.string(g.t.ZXxLQk),
       themeColor: v ? "secondary" : "primary",

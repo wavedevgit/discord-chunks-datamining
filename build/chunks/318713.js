@@ -11,9 +11,9 @@ var i = r(120356),
   c = r(543388),
   s = r(223021),
   u = r(388032),
-  p = r(432957);
+  m = r(432957);
 
-function m(e) {
+function p(e) {
   var t, r;
   let {
     tooltipProps: i,
@@ -45,11 +45,11 @@ function m(e) {
     dateTime: c.toISOString(),
     children: null != l ? l : (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("i", {
-        className: p.separator,
+        className: m.separator,
         "aria-hidden": !0,
         children: a ? "[" : " — "
       }), o, a && (0, n.jsxs)("i", {
-        className: p.separator,
+        className: m.separator,
         "aria-hidden": !0,
         children: ["]", " "]
       })]
@@ -83,18 +83,18 @@ let d = function(e) {
   }) : x;
   return (0, n.jsx)("span", {
     className: o()(r, S, {
-      [p.timestamp]: !0,
-      [p.timestampVisibleOnHover]: f,
-      [p.timestampInline]: y,
-      [p.alt]: b
+      [m.timestamp]: !0,
+      [m.timestampVisibleOnHover]: f,
+      [m.timestampInline]: y,
+      [m.alt]: b
     }),
     children: null == j ? (0, n.jsx)(l.ua7, {
       text: (0, a.vc)(v, "LLLL"),
       "aria-label": T,
-      tooltipClassName: p.timestampTooltip,
+      tooltipClassName: m.timestampTooltip,
       position: h,
       delay: 750,
-      children: e => (0, n.jsx)(m, {
+      children: e => (0, n.jsx)(p, {
         tooltipProps: e,
         timeFormatted: P,
         timestamp: v,
@@ -106,7 +106,7 @@ let d = function(e) {
       application: j,
       timestamp: v,
       compact: i,
-      children: (0, n.jsx)(m, {
+      children: (0, n.jsx)(p, {
         timeFormatted: P,
         timestamp: v,
         id: g,

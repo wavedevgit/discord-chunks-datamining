@@ -43,6 +43,11 @@ function d(e) {
         className: u.icon,
         color: s.TVs.colors.STATUS_POSITIVE.css
       });
+    case c.pC.INVITE:
+      return (0, r.jsx)(s._XJ, {
+        className: u.icon,
+        color: s.TVs.colors.TEXT_BRAND.css
+      });
     case c.pC.BOOKMARK:
       return (0, r.jsx)(s.plf, {
         className: u.icon,

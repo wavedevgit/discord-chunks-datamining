@@ -1,5 +1,5 @@
 /** Chunk was on 7654 **/
-let l, i, r, s, a, o, d;
+let l, i, s, r, a, o, d;
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -20,7 +20,7 @@ let b = new Set,
 
 function T(e) {
   let t = new Set,
-    n = null == s || d === C.Iq.EMBEDDED_APPLICATION ? void 0 : s.id,
+    n = null == r || d === C.Iq.EMBEDDED_APPLICATION ? void 0 : r.id,
     l = (0, N.rh)(b, n);
   for (let e of (null == l || j.Z.isBlocked(l.id) || t.add(l.id), x.Z.getUserAffinitiesUserIds())) t.add(e);
   let i = new Set;
@@ -63,7 +63,7 @@ class Z extends(u = g.ZP.Store) {
       isAffinitySuggestion: e.isSuggested,
       numTotal: E.length,
       numAffinityConnections: n.size,
-      isFiltered: r
+      isFiltered: s
     } : null
   }
 }
@@ -82,11 +82,11 @@ let P = new Z(m.Z, {
       applicationId: c,
       inviteTargetType: h
     } = e;
-    s = null != u ? n : null, a = u, o = c, d = h, b = new Set([...t, ...j.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
+    r = null != u ? n : null, a = u, o = c, d = h, b = new Set([...t, ...j.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
       channel: a,
       applicationId: o,
       inviteTargetType: h
-    })]), r = !1;
+    })]), s = !1;
     let {
       rows: g,
       counts: m
@@ -97,7 +97,7 @@ let P = new Z(m.Z, {
     let {
       query: t
     } = e;
-    r = "" !== t;
+    s = "" !== t;
     let {
       rows: n
     } = T(t);

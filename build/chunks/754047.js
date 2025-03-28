@@ -14,19 +14,19 @@ function l(e) {
   (0, i.zq)(() => () => {
     clearTimeout(c.current), clearTimeout(s.current), clearTimeout(u.current)
   });
-  let p = n.useRef(!1);
+  let m = n.useRef(!1);
   return t ? {
     showPopoutFromHover: l,
     handleMouseEnter: () => {
-      p.current = !0, c.current = setTimeout(() => {
-        p.current && r()
+      m.current = !0, c.current = setTimeout(() => {
+        m.current && r()
       }, o.a6), s.current = setTimeout(() => {
-        p.current && a(!0)
+        m.current && a(!0)
       }, o.JX)
     },
     handleMouseLeave: () => {
-      p.current = !1, u.current = setTimeout(() => {
-        p.current || a(!1)
+      m.current = !1, u.current = setTimeout(() => {
+        m.current || a(!1)
       }, o.Ig)
     }
   } : {}

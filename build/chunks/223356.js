@@ -1,19 +1,19 @@
 /** Chunk was on 83051 **/
-r.d(t, {
+i.d(t, {
   Tj: () => m,
   WG: () => u,
-  ZD: () => h,
+  ZD: () => v,
   pD: () => d
-}), r(653041), r(266796);
-var i = r(990547);
-r(804098);
-var n = r(544891),
-  l = r(729345),
-  o = r(210887);
-r(358085);
-var a = r(573261),
-  s = r(981631),
-  c = r(388032);
+}), i(653041), i(266796);
+var r = i(990547);
+i(804098);
+var n = i(544891),
+  l = i(729345),
+  a = i(210887);
+i(358085);
+var o = i(573261),
+  s = i(981631),
+  c = i(388032);
 async function u() {
   return (await n.tn.get({
     url: s.ANM.BUG_REPORTS,
@@ -22,8 +22,8 @@ async function u() {
 }
 
 function d(e) {
-  var t, r;
-  return null !== (r = null !== (t = null == e ? void 0 : e.name) && void 0 !== t ? t : "" + (null == e ? void 0 : e.squad)) && void 0 !== r ? r : ""
+  var t, i;
+  return null !== (i = null !== (t = null == e ? void 0 : e.name) && void 0 !== t ? t : "" + (null == e ? void 0 : e.squad)) && void 0 !== i ? i : ""
 }
 
 function m() {
@@ -49,7 +49,7 @@ function m() {
     value: 3
   }]
 }
-async function h(e, t, r) {
+async function v(e, t, i) {
   var n, c;
   let u = [{
     name: "name",
@@ -62,7 +62,7 @@ async function h(e, t, r) {
     value: "".concat(t.overridePlatformInformation)
   }, {
     name: "theme",
-    value: o.Z.theme
+    value: a.Z.theme
   }];
   "" !== e.description && u.push({
     name: "description",
@@ -106,12 +106,12 @@ async function h(e, t, r) {
     value: t.locale
   })), (0, l.E)(s.GU0.WEB_APP);
   try {
-    return await a.Z.post({
+    return await o.Z.post({
       url: s.ANM.BUG_REPORTS,
-      attachments: r,
+      attachments: i,
       fields: u,
       trackedActionData: {
-        event: i.NetworkActionNames.BUG_REPORT_SUBMIT,
+        event: r.NetworkActionNames.BUG_REPORT_SUBMIT,
         properties: {
           priority: e.priority,
           asana_inbox_id: d
