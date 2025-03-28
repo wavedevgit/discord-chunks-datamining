@@ -57,7 +57,7 @@ function v(e, t) {
     label: b.NW.string(b.t.NgXl3N),
     trackingArea: h.j_.ADD_APP,
     onClick() {
-      null == t || t(h.j_.ADD_APP), (0, m.LO)({
+      null == t || t(h.j_.ADD_APP), (0, m.L)({
         applicationId: e.id,
         customInstallUrl: v,
         installParams: x,

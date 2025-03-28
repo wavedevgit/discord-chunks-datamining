@@ -15,21 +15,25 @@ function l(e) {
     clearTimeout(s.current), clearTimeout(u.current), clearTimeout(m.current)
   }), t) ? {
     showPopoutFromHover: l,
-    handleMouseEnter: () => {
+    onRequestClose: () => {
+      a(!1)
+    },
+    onMouseEnter: () => {
       c.current = !0, s.current = setTimeout(() => {
         c.current && r()
       }, i.a6), u.current = setTimeout(() => {
         c.current && a(!0)
       }, i.JX)
     },
-    handleMouseLeave: () => {
+    onMouseLeave: () => {
       c.current = !1, m.current = setTimeout(() => {
         c.current || a(!1)
       }, i.Ig)
     }
   } : {
     showPopoutFromHover: !1,
-    handleMouseEnter: void 0,
-    handleMouseLeave: void 0
+    onRequestClose: void 0,
+    onMouseEnter: void 0,
+    onMouseLeave: void 0
   }
 }

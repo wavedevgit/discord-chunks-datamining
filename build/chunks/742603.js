@@ -35,8 +35,8 @@ var i = n(120356),
   A = n(339340),
   w = n(354459),
   R = n(981631),
-  M = n(231338),
-  k = n(388032),
+  k = n(231338),
+  M = n(388032),
   L = n(693911),
   D = n(509045);
 
@@ -176,13 +176,13 @@ function G(e) {
   } = (0, o.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), N = k.NW.string(k.t.BVZqJi);
-  t.isDM() ? N = k.NW.string(k.t.jN2DfX) : t.isGroupDM() && (N = k.NW.string(k.t["e5y+go"]));
+  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), N = M.NW.string(M.t.BVZqJi);
+  t.isDM() ? N = M.NW.string(M.t.jN2DfX) : t.isGroupDM() && (N = M.NW.string(M.t["e5y+go"]));
   let S = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != S && S.length > 0,
     B = (0, P.ZP)(t),
     F = T ? (0, r.jsx)(a.ua7, {
-      text: k.NW.string(k.t.Mgpxi4),
+      text: M.NW.string(M.t.Mgpxi4),
       delay: 500,
       position: "bottom",
       shouldShow: B,
@@ -227,7 +227,7 @@ function G(e) {
   return (0, r.jsxs)("div", {
     className: L.subtitleContainer,
     children: [(0, r.jsx)(a.f6W, {
-      theme: M.BR.DARK,
+      theme: k.BR.DARK,
       children: e => (0, r.jsxs)(C.ZP, {
         onDoubleClick: v.O,
         transparent: !0,
@@ -248,10 +248,10 @@ function G(e) {
         }) : null, (0, r.jsx)(C.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {
             children: [b, V && (0, r.jsx)(a.ua7, {
-              text: k.NW.string(k.t.QyZ4TU),
+              text: M.NW.string(M.t.QyZ4TU),
               children: e => (0, r.jsx)(a.tQf, U(W({}, e), {
                 size: "xs",
-                "aria-label": k.NW.string(k.t.VHXh8f),
+                "aria-label": M.NW.string(M.t.VHXh8f),
                 color: a.TVs.colors.INTERACTIVE_NORMAL,
                 className: L.secureFramesIcon
               }))

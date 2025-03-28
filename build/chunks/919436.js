@@ -204,7 +204,7 @@ class D extends(r = o.PureComponent) {
                 backgroundStyle: v ? "on-hover" : "always",
                 children: v ? (0, i.jsx)(m.Z, {
                   channel: e,
-                  size: c.EFr.SIZE_48,
+                  size: c.EFr.SIZE_40,
                   facepileSizeOverride: c.EFr.SIZE_32,
                   experimentLocation: "unread_gdm",
                   "aria-hidden": !0

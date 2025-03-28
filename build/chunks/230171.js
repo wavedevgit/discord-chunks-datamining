@@ -24,7 +24,7 @@ var r = n(200651),
   y = n(914010),
   E = n(594174),
   O = n(768581),
-  N = n(135431),
+  N = n(433534),
   j = n(506895),
   C = n(758199),
   I = n(943762),
@@ -126,7 +126,7 @@ function R(e) {
   var t, n, o;
   let {
     app: c
-  } = e, u = (0, N.Eb)({
+  } = e, u = (0, N.E)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

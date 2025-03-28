@@ -39,7 +39,7 @@ function b(e) {
   } = e, n = (0, c.sQ)({
     location: "ChannelChatWallpaper"
   }), i = (0, f.Z)(t.id);
-  return !(!n || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || d.t(t)) && null != i ? (0, r.jsx)(g, {
+  return !(!n || null == i || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || d.t(t) && !i.isPreview) ? (0, r.jsx)(g, {
     chatWallpaperState: i
   }) : null
 }

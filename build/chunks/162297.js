@@ -1,6 +1,6 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => F
+  Z: () => B
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -34,31 +34,32 @@ var r = n(200651),
   w = n(812206),
   Z = n(321231),
   k = n(230171),
-  R = n(981631),
-  D = n(49898),
-  L = n(388032),
-  M = n(149723),
-  W = n(413097),
-  U = n(970952);
+  R = n(433534),
+  D = n(981631),
+  L = n(49898),
+  M = n(388032),
+  W = n(149723),
+  U = n(413097),
+  F = n(970952);
 
-function F(e) {
+function B(e) {
   let {
     applicationId: t,
     embedUrl: n
   } = e, [a, o, s] = (0, l.Wu)([w.Z], () => [w.Z.getApplication(t), w.Z.isFetchingApplication(t), w.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
     null != a || o || s || A.ZP.fetchApplication(t)
-  }, [a, o, s, t]), null != a && (0, P.Eb)({
+  }, [a, o, s, t]), null != a && (0, R.E)({
     customInstallUrl: a.customInstallUrl,
     installParams: a.installParams,
     integrationTypesConfig: a.integrationTypesConfig
-  })) ? (0, r.jsx)(B, {
+  })) ? (0, r.jsx)(G, {
     application: a,
     embedUrl: n
   }) : null
 }
 
-function B(e) {
+function G(e) {
   var t;
   let {
     application: n,
@@ -69,11 +70,11 @@ function B(e) {
   }), {
     iconURL: A,
     name: w,
-    description: F
+    description: R
   } = i.useMemo(() => (0, _.sl)(n, {
-    fakeAppIconURL: W,
+    fakeAppIconURL: U,
     size: 56
-  }), [n]), B = i.useMemo(() => null != F ? (0, N.parseBioReact)(F) : null, [F]), [H, V] = i.useState(!1), z = i.useCallback(e => {
+  }), [n]), B = i.useMemo(() => null != R ? (0, N.parseBioReact)(R) : null, [R]), [G, V] = i.useState(!1), z = i.useCallback(e => {
     e && V(!0)
   }, []), K = (0, c.O)(z), Y = i.useCallback(() => {
     (0, h.h)({
@@ -85,14 +86,14 @@ function B(e) {
     })
   }, [n.id]);
   i.useEffect(() => {
-    H && Y()
-  }, [H, Y]);
+    G && Y()
+  }, [G, Y]);
   let X = (0, x.TK)(n.id, (0, v.PL)(!0, !1)),
     q = (0, x.TK)(n.id, (0, v.LD)(T, !1)),
     Q = X || q,
     J = n.isVerified && n.isDiscoverable,
     $ = (0, l.e7)([I.Z, j.Z], () => j.Z.getChannel(I.Z.getChannelId())),
-    ee = (0, l.e7)([C.Z], () => (null == $ ? void 0 : $.isPrivate()) || C.Z.can(R.Plq.SEND_MESSAGES, $)),
+    ee = (0, l.e7)([C.Z], () => (null == $ ? void 0 : $.isPrivate()) || C.Z.can(D.Plq.SEND_MESSAGES, $)),
     {
       analyticsLocations: et
     } = (0, f.ZP)(p.Z.APP_OAUTH2_LINK_EMBED),
@@ -116,20 +117,20 @@ function B(e) {
     onView: Y
   }) : (0, r.jsxs)("div", {
     ref: K,
-    className: M.embedContainer,
-    children: [(0, r.jsx)(G, {
+    className: W.embedContainer,
+    children: [(0, r.jsx)(H, {
       application: n,
       iconUrl: A
     }), (0, r.jsx)("img", {
-      className: M.icon,
+      className: W.icon,
       alt: n.name,
-      src: null != A ? A : U,
+      src: null != A ? A : F,
       "aria-hidden": !0,
       draggable: !1
     }), (0, r.jsxs)("div", {
-      className: M.body,
+      className: W.body,
       children: [(0, r.jsxs)("div", {
-        className: M.details,
+        className: W.details,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/bold",
           color: "interactive-active",
@@ -140,13 +141,13 @@ function B(e) {
           children: B
         })]
       }), (0, r.jsxs)("div", {
-        className: M.buttonContainer,
+        className: W.buttonContainer,
         children: [y && (0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.BRAND,
           type: "button",
           size: s.zxk.Sizes.MEDIUM,
           onClick: en,
-          children: L.NW.string(L.t.RscU7O)
+          children: M.NW.string(M.t.RscU7O)
         }), (Q || J) && ee && (0, r.jsx)(s.zxk, {
           color: y ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
           type: "button",
@@ -154,7 +155,7 @@ function B(e) {
           onClick: () => {
             var e;
             o.Y.USER_INSTALL in (null !== (e = n.integrationTypesConfig) && void 0 !== e ? e : {}) || Q ? (0, b.X)(n.id) : (0, E.transitionToGlobalDiscovery)({
-              tab: D.GlobalDiscoveryTab.APPS,
+              tab: L.GlobalDiscoveryTab.APPS,
               applicationId: n.id,
               newSessionState: {
                 guildId: T,
@@ -164,15 +165,15 @@ function B(e) {
               }
             })
           },
-          children: L.NW.string(L.t.fbcCzc)
+          children: M.NW.string(M.t.fbcCzc)
         }), !y && !Q && (0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.PRIMARY,
           type: "button",
           size: s.zxk.Sizes.MEDIUM,
           onClick: () => {
-            m.ZP.trackWithMetadata(R.rMx.APP_OAUTH2_LINK_EMBED_CTA_CLICKED, {
+            m.ZP.trackWithMetadata(D.rMx.APP_OAUTH2_LINK_EMBED_CTA_CLICKED, {
               application_id: n.id
-            }), (0, P.LO)({
+            }), (0, P.L)({
               applicationId: n.id,
               customInstallUrl: n.customInstallUrl,
               installParams: n.installParams,
@@ -181,14 +182,14 @@ function B(e) {
               source: "app_oauth2_link_embed"
             })
           },
-          children: L.NW.string(L.t.NgXl3N)
+          children: M.NW.string(M.t.NgXl3N)
         })]
       })]
     })]
   })
 }
 
-function G(e) {
+function H(e) {
   let {
     application: t,
     iconUrl: n
@@ -200,8 +201,8 @@ function G(e) {
   if ((0, _.ye)(t)) l = (0, r.jsx)(d.Z, {
     imageBackground: i,
     applicationName: t.name,
-    imageClassName: M.bannerImage,
-    imageNotFoundClassName: M.bannerImage
+    imageClassName: W.bannerImage,
+    imageNotFoundClassName: W.bannerImage
   });
   else if ((null == o ? void 0 : o.banner) != null) {
     let e = (0, T.aN)({
@@ -213,13 +214,13 @@ function G(e) {
     l = (0, r.jsx)("img", {
       alt: t.name,
       src: e,
-      className: M.bannerImage
+      className: W.bannerImage
     })
   } else s = {
     backgroundColor: a
   };
   return (0, r.jsx)("div", {
-    className: M.banner,
+    className: W.banner,
     style: s,
     children: l
   })

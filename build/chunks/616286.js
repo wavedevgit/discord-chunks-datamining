@@ -129,20 +129,20 @@ function O(e) {
     event: v.CkL.FOCUS_CHAT_BUTTON,
     handler: N ? null : R
   });
-  let [M, k] = i.useState(!1), L = i.useCallback(() => {
-    f && k(!0)
+  let [k, M] = i.useState(!1), L = i.useCallback(() => {
+    f && M(!0)
   }, [f]);
   (0, g.yp)({
     event: v.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
     handler: L
   }), i.useEffect(() => {
     let e;
-    return M && (e = setTimeout(() => {
-      k(!1)
+    return k && (e = setTimeout(() => {
+      M(!1)
     }, 3e3)), () => {
       clearTimeout(e)
     }
-  }, [M]);
+  }, [k]);
   let D = [t = f && N ? y.NW.string(y.t.DPgc5u) : P ? y.NW.string(y.t.nthdxM) : y.NW.string(y.t["5KxXrK"])];
   return T > 0 && D.push(y.NW.formatToPlainString(y.t["3l1GOz"], {
     mentionCount: T
@@ -173,6 +173,6 @@ function O(e) {
     wrapperClassName: o()(l, null != a && {
       [a]: S
     }),
-    forceTooltipOpen: M
+    forceTooltipOpen: k
   }, O))
 }

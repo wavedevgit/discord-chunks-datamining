@@ -88,7 +88,7 @@ function R(e, t) {
   return (0, m._I)(g.ZP.getName(e.user).toLocaleLowerCase()).localeCompare((0, m._I)(g.ZP.getName(t.user).toLocaleLowerCase()))
 }
 
-function M(e) {
+function k(e) {
   let {
     results: t
   } = e;
@@ -108,13 +108,13 @@ function M(e) {
   N = n, B.emitChange()
 }
 
-function k() {
-  return null != r && (r.destroy(), r = null), d.Z.getSearchContext(M, 1e3)
+function M() {
+  return null != r && (r.destroy(), r = null), d.Z.getSearchContext(k, 1e3)
 }
 
 function L(e) {
   if (e.key !== x.vTt) return !1;
-  j = !0, w(), r = k(), S = null, T("")
+  j = !0, w(), r = M(), S = null, T("")
 }
 
 function D(e) {
@@ -173,7 +173,7 @@ let B = new U(u.Z, {
     MODAL_PUSH: L,
     SHOW_ACTION_SHEET: L,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      j = !0, w(), r = k(), S = e.channelId, T("")
+      j = !0, w(), r = M(), S = e.channelId, T("")
     },
     MODAL_POP: D,
     HIDE_ACTION_SHEET: D,

@@ -76,9 +76,9 @@ let d = function(e) {
     isInline: y = !0,
     id: g,
     isEdited: O = !1,
-    application: h,
-    tooltipPosition: j
-  } = e, v = new Date(d), x = (0, a.Hg)(v), P = o ? (0, a.vc)(v, "LT") : (0, a.Y4)(v, !0), S = o ? (0, s.Z)(P) : null, T = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
+    application: j,
+    tooltipPosition: v
+  } = e, h = new Date(d), x = (0, a.Hg)(h), P = o ? (0, a.vc)(h, "LT") : (0, a.Y4)(h, !0), S = o ? (0, s.Z)(P) : null, T = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: x
   }) : x;
   return (0, n.jsx)("span", {
@@ -88,27 +88,27 @@ let d = function(e) {
       [m.timestampInline]: y,
       [m.alt]: b
     }),
-    children: null == h ? (0, n.jsx)(l.ua7, {
-      text: (0, a.vc)(v, "LLLL"),
+    children: null == j ? (0, n.jsx)(l.ua7, {
+      text: (0, a.vc)(h, "LLLL"),
       "aria-label": T,
       tooltipClassName: m.timestampTooltip,
-      position: j,
+      position: v,
       delay: 750,
       children: e => (0, n.jsx)(p, {
         tooltipProps: e,
         timeFormatted: P,
-        timestamp: v,
+        timestamp: h,
         id: g,
         compact: o,
         children: t
       })
     }) : (0, n.jsx)(c.Z, {
-      application: h,
-      timestamp: v,
+      application: j,
+      timestamp: h,
       compact: o,
       children: (0, n.jsx)(p, {
         timeFormatted: P,
-        timestamp: v,
+        timestamp: h,
         id: g,
         compact: o,
         children: t

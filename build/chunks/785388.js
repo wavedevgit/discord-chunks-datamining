@@ -26,9 +26,9 @@ var i = n(200651),
   _ = n(815605),
   S = n(222677),
   E = n(995774),
-  N = n(665906),
-  C = n(210887),
-  P = n(314897),
+  P = n(665906),
+  N = n(210887),
+  C = n(314897),
   R = n(592125),
   I = n(271383),
   w = n(542578),
@@ -68,7 +68,7 @@ function J(e) {
   return e
 }
 
-function K(e, t) {
+function X(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,7 +81,7 @@ function K(e, t) {
   }), e
 }
 
-function X(e) {
+function K(e) {
   return null == e.id ? v.ZP.convertSurrogateToName(e.name) : ":".concat(e.name, ":")
 }
 let Y = e => {
@@ -122,7 +122,7 @@ let Y = e => {
       size: "reaction"
     }), (0, i.jsx)(h.Text, {
       variant: "text-md/medium",
-      children: X(t)
+      children: K(t)
     })]
   })
 };
@@ -135,7 +135,7 @@ class q extends o.PureComponent {
       setSelected: o,
       reactionType: r,
       colors: s
-    } = this.props, l = X(e), u = function(e, t, n, o) {
+    } = this.props, l = K(e), u = function(e, t, n, o) {
       let r = null == e.id ? D.ZP.getURL(e.name) : k.ZP.getEmojiURL({
         id: e.id,
         animated: e.animated,
@@ -206,7 +206,7 @@ function $(e) {
     reactionType: s,
     onRemoveReactor: l,
     disableManage: c = !1
-  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, N.$R)(r), v = (0, u.e7)([A.Z], () => A.Z.can(W.Plq.MANAGE_MESSAGES, r) && g) || d === n.id, j = (0, u.e7)([I.ZP, R.Z, M.Z], () => U.ZP.getName(a, r.id, n));
+  } = e, d = (0, u.e7)([C.default], () => C.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, P.$R)(r), v = (0, u.e7)([A.Z], () => A.Z.can(W.Plq.MANAGE_MESSAGES, r) && g) || d === n.id, j = (0, u.e7)([I.ZP, R.Z, M.Z], () => U.ZP.getName(a, r.id, n));
   return (0, i.jsxs)(b.Z, {
     className: G.reactorDefault,
     onContextMenu: e => (0, F.Pv)(e, n, r),
@@ -407,9 +407,9 @@ function et(e) {
   }, [t]), b = o.useMemo(() => {
     let e = [];
     return f.forEach(t => {
-      t.burst_count > 0 && e.push(K(J({}, t), {
+      t.burst_count > 0 && e.push(X(J({}, t), {
         count: 0
-      })), t.count > 0 && e.push(K(J({}, t), {
+      })), t.count > 0 && e.push(X(J({}, t), {
         burst_count: 0
       }))
     }), e.sort((e, t) => {
@@ -430,7 +430,7 @@ function et(e) {
   } : null, f), S = o.useMemo(() => {
     var e;
     return null == x ? null : null !== (e = f.find(e => (0, E.ir)(e.emoji, x.emoji))) && void 0 !== e ? e : null
-  }, [f, x]), N = (0, u.e7)([g.Z], () => g.Z.saturation), P = (0, u.e7)([C.Z], () => (0, d.wj)(C.Z.theme));
+  }, [f, x]), P = (0, u.e7)([g.Z], () => g.Z.saturation), C = (0, u.e7)([N.Z], () => (0, d.wj)(N.Z.theme));
   if (o.useEffect(() => {
       (0 === f.length || null == x && null == S) && setImmediate(s)
     }, [s, f.length, S, x]), null == x || null == S) return (0, i.jsx)(h.$jN, {});
@@ -454,7 +454,7 @@ function et(e) {
             reactionType: n ? T.O.BURST : T.O.NORMAL,
             emoji: e.emoji,
             count: n ? e.burst_count : e.count,
-            colors: null != e.burst_colors ? (0, j.Z)(e.burst_colors, N, P) : void 0
+            colors: null != e.burst_colors ? (0, j.Z)(e.burst_colors, P, C) : void 0
           }, "".concat(n ? "burst-" : "normal-").concat(null !== (t = e.emoji.id) && void 0 !== t ? t : "", ":").concat(e.emoji.name))
         })
       }), (0, i.jsx)(ee, {

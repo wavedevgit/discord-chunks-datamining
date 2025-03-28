@@ -36,7 +36,7 @@ function I(e) {
     specMap: v,
     categoryTitle: y,
     userId: E
-  } = e, I = (0, c.e7)([b.Z], () => b.Z.getRoles(C.id)), P = j.Plq[s], S = null !== (l = null === (t = v[P.toString()]) || void 0 === t ? void 0 : t.title) && void 0 !== l ? l : (0, m.wt)(P), Z = null !== (a = null === (n = v[P.toString()]) || void 0 === n ? void 0 : n.description) && void 0 !== a ? a : "", T = x._o.has(P), A = x.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, C), [C]), M = i.useCallback(async e => {
+  } = e, I = (0, c.e7)([b.Z], () => b.Z.getRoles(C.id)), P = j.Plq[s], S = null !== (l = null === (t = v[P.toString()]) || void 0 === t ? void 0 : t.title) && void 0 !== l ? l : (0, m.wt)(P), Z = null !== (a = null === (n = v[P.toString()]) || void 0 === n ? void 0 : n.description) && void 0 !== a ? a : "", T = x._o.has(P), A = x.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, C), [C]), k = i.useCallback(async e => {
     R && (await f.Z.open(C.id, j.pNK.ROLES), await f.Z.selectRole(e))
   }, [R, C.id]);
   return (0, r.jsxs)("div", {
@@ -155,7 +155,7 @@ function I(e) {
         className: o()(N.roleTooltipItem, {
           [N.editable]: R && !(0, d.pM)(C.id, e)
         }),
-        onClick: () => M(e),
+        onClick: () => k(e),
         children: (0, r.jsx)(h.Z, {
           role: I[e],
           guildId: C.id,
@@ -177,10 +177,10 @@ function S(e) {
     location: l,
     className: a,
     onNavigate: d
-  } = e, p = (0, c.e7)([C.default], () => C.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, x.B2)(t, n, x.pd), S = Object.keys(_).length, Z = i.useMemo(() => null != h ? v.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? v.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, M] = i.useState(""), k = i.useMemo(() => s()(M, 300), []), L = i.useCallback(e => {
-    w(e), k(e)
-  }, [k]), D = i.useCallback(() => {
-    w(""), M("")
+  } = e, p = (0, c.e7)([C.default], () => C.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, x.B2)(t, n, x.pd), S = Object.keys(_).length, Z = i.useMemo(() => null != h ? v.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? v.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, k] = i.useState(""), M = i.useMemo(() => s()(k, 300), []), L = i.useCallback(e => {
+    w(e), M(e)
+  }, [M]), D = i.useCallback(() => {
+    w(""), k("")
   }, []), W = i.useMemo(() => {
     if (null == h || null == Z || null == f) return null;
     if (0 === S) return (0, r.jsx)(u.Text, {

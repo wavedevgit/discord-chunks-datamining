@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(456007),
   w = n(10718),
   R = n(998698),
-  M = n(895924),
-  k = n(581364),
+  k = n(895924),
+  M = n(581364),
   L = n(667204),
   D = n(404295),
   W = n(541716),
@@ -88,8 +88,8 @@ var r = n(200651),
   eA = n(459273),
   ew = n(585483),
   eR = n(709054),
-  eM = n(838440),
-  ek = n(127654),
+  ek = n(838440),
+  eM = n(127654),
   eL = n(979956),
   eD = n(655687),
   eW = n(165540),
@@ -206,7 +206,7 @@ class e3 extends i.PureComponent {
     } = this.props, {
       commandKey: n,
       interactionOptions: r
-    } = (0, k.XA)(e.interactionData), {
+    } = (0, M.XA)(e.interactionData), {
       command: i,
       application: l
     } = w.Xq({
@@ -216,7 +216,7 @@ class e3 extends i.PureComponent {
     if (null != i) {
       var o, a;
       let e = null != l ? {
-        type: M.Qi.APPLICATION,
+        type: k.Qi.APPLICATION,
         id: l.id,
         icon: l.icon,
         name: null !== (a = null == l ? void 0 : null === (o = l.bot) || void 0 === o ? void 0 : o.username) && void 0 !== a ? a : l.name,
@@ -226,7 +226,7 @@ class e3 extends i.PureComponent {
         channelId: t.id,
         command: i,
         section: e,
-        location: M.Vh.RECALL,
+        location: k.Vh.RECALL,
         initialValues: (0, A.Dw)(i, null != r ? r : [])
       })
     }
@@ -272,7 +272,7 @@ class e3 extends i.PureComponent {
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
       renderAppLauncherButton: g,
       renderAppCommandButton: b,
-      promptToUpload: ek.d,
+      promptToUpload: eM.d,
       highlighted: o,
       setEditorRef: e => this.editorRef = e,
       onCommandSentinelTyped: m,
@@ -404,7 +404,7 @@ class e3 extends i.PureComponent {
         chatInputType: d
       } = this.props, p = !1;
       if (null != l) {
-        if (l.inputType === M.iw.BUILT_IN_INTEGRATION) return ew.S.dispatch(ez.CkL.SHAKE_APP, {
+        if (l.inputType === k.iw.BUILT_IN_INTEGRATION) return ew.S.dispatch(ez.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), Promise.resolve({
@@ -412,12 +412,12 @@ class e3 extends i.PureComponent {
           shouldRefocus: !0
         });
         let e = R.Z.getCommandOrigin(c.id);
-        if (e === M.bB.APPLICATION_LAUNCHER || e === M.bB.IMAGE_RECS_MENU || e === M.bB.IMAGE_RECS_SUBMENU) {
+        if (e === k.bB.APPLICATION_LAUNCHER || e === k.bB.IMAGE_RECS_MENU || e === k.bB.IMAGE_RECS_SUBMENU) {
           var h;
           let {
             location: t,
             sectionName: n
-          } = null !== (h = (0, eU._U)(l)) && void 0 !== h ? h : {}, r = e === M.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
+          } = null !== (h = (0, eU._U)(l)) && void 0 !== h ? h : {}, r = e === k.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
           if (!await (0, S.L)({
               applicationId: l.applicationId,
               channel: c,
@@ -438,13 +438,13 @@ class e3 extends i.PureComponent {
             channel: c
           }
         });
-        if (l.inputType !== M.iw.BUILT_IN_TEXT) return Promise.resolve({
+        if (l.inputType !== k.iw.BUILT_IN_TEXT) return Promise.resolve({
           shouldClear: !0,
           shouldRefocus: !0
         });
         null != n && (t = null != n.content && "" !== n.content ? n.content : t, p = !0 === n.tts)
       }
-      return (0, eM.v)({
+      return (0, ek.v)({
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
@@ -493,7 +493,7 @@ class e3 extends i.PureComponent {
         };
         if (null != n && n.length > 0) {
           let e = (0, eL.KZ)(n);
-          if ((0, eL.Bf)(e, null == s ? void 0 : s.id)) return (0, ek.G)(c, e), {
+          if ((0, eL.Bf)(e, null == s ? void 0 : s.id)) return (0, eM.G)(c, e), {
             shouldClear: !1,
             shouldRefocus: !1
           };
@@ -638,8 +638,8 @@ class e7 extends i.PureComponent {
         }), I ? null : this.renderAppLauncherButton(), N ? null : this.renderAppCommandButton()]
       }),
       R = O && E,
-      M = R && E ? A : w,
-      k = o()({
+      k = R && E ? A : w,
+      M = o()({
         [eK.barWithAppLauncherButton]: j,
         [eK.barWithAppsDMsUI]: O
       });
@@ -689,7 +689,7 @@ class e7 extends i.PureComponent {
                   forceCozy: y,
                   filterAfterTimestamp: m,
                   showingQuarantineBanner: f,
-                  jumpBarClassName: k
+                  jumpBarClassName: M
                 }), y ? null : null !== (e = this.renderMessageBanner({
                   channel: n,
                   showQuarantinedUserBanner: f,
@@ -706,10 +706,10 @@ class e7 extends i.PureComponent {
                     channelId: n.id
                   }), n.isPrivate() ? (0, r.jsx)(eG.Z, {
                     channel: n,
-                    children: M
+                    children: k
                   }) : (0, r.jsx)(eV.Z, {
                     channel: n,
-                    children: M
+                    children: k
                   }), N ? null : (0, r.jsx)(_.Z, {
                     channel: n,
                     poggermodeEnabled: v
@@ -873,8 +873,8 @@ let e4 = i.memo(function(e) {
     commands: w
   });
   let R = i.useRef(null),
-    M = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    k = (0, Y.R6)("ChannelChat"),
+    k = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    M = (0, Y.R6)("ChannelChat"),
     L = (0, Y.Q3)("ChannelChat");
   return (0, r.jsx)(e7, {
     channel: t,
@@ -898,8 +898,8 @@ let e4 = i.memo(function(e) {
     isInitialLoading: j,
     showEntryPointAppCommandButton: null != N,
     entryPointCommandButtonRef: R,
-    isFailedAppDMLoad: M,
-    isRefreshChatInputEnabled: k,
+    isFailedAppDMLoad: k,
+    isRefreshChatInputEnabled: M,
     isRefreshEnabled: L,
     pendingScheduledMessage: y
   })

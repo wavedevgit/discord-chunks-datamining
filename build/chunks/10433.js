@@ -1,6 +1,6 @@
 /** Chunk was on 52272 **/
 n.d(t, {
-  Z: () => C
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -11,160 +11,161 @@ var r = n(200651),
   c = n(434650),
   u = n(321231),
   d = n(230171),
-  p = n(749681),
-  m = n(955415),
-  f = n(706454),
-  h = n(973616),
-  g = n(914010),
-  _ = n(626135),
-  b = n(135431),
-  v = n(471518),
-  x = n(370210),
-  y = n(258971),
-  E = n(981631),
-  O = n(49898),
-  N = n(388032),
-  j = n(997408);
+  p = n(433534),
+  m = n(749681),
+  f = n(955415),
+  h = n(706454),
+  g = n(973616),
+  _ = n(914010),
+  b = n(626135),
+  v = n(135431),
+  x = n(471518),
+  y = n(370210),
+  E = n(258971),
+  O = n(981631),
+  N = n(49898),
+  j = n(388032),
+  C = n(997408);
 
-function C(e) {
-  var t, n, C;
+function I(e) {
+  var t, n, I;
   let {
-    code: I,
-    message: S,
-    embedUrl: T
+    code: S,
+    message: T,
+    embedUrl: P
   } = e, {
-    enabled: P
+    enabled: A
   } = u.G.useExperiment({
     location: "ApplicationDirectoryProfileEmbed"
-  }), [A, w, Z] = (0, l.Wu)([x.Z], () => [x.Z.getApplication(I), x.Z.isInvalidApplication(I), x.Z.getApplicationFetchState(I)], [I]), k = (0, l.e7)([f.default], () => f.default.locale), R = (0, l.e7)([g.Z], () => {
+  }), [w, Z, k] = (0, l.Wu)([y.Z], () => [y.Z.getApplication(S), y.Z.isInvalidApplication(S), y.Z.getApplicationFetchState(S)], [S]), R = (0, l.e7)([h.default], () => h.default.locale), D = (0, l.e7)([_.Z], () => {
     var e;
-    return null !== (e = g.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), [D, L] = i.useState(!1), M = i.useCallback(e => {
-    e && L(!0)
-  }, []), W = (0, c.O)(M), U = i.useCallback(() => {
-    _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
-      application_id: I,
+    return null !== (e = _.Z.getGuildId()) && void 0 !== e ? e : void 0
+  }), [L, M] = i.useState(!1), W = i.useCallback(e => {
+    e && M(!0)
+  }, []), U = (0, c.O)(W), F = i.useCallback(() => {
+    b.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+      application_id: S,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
-      sender_user_id: S.author.id,
-      guild_id: R,
-      channel_id: S.channel_id
+      sender_user_id: T.author.id,
+      guild_id: D,
+      channel_id: T.channel_id
     })
-  }, [I, R, S.author.id, S.channel_id]);
+  }, [S, D, T.author.id, T.channel_id]);
   i.useEffect(() => {
-    (0, v.gZ)(I)
-  }, [I]), i.useEffect(() => {
-    D && Z === x.M.FETCHED && U()
-  }, [D, Z, U]), i.useEffect(() => {
-    D && w && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    (0, x.gZ)(S)
+  }, [S]), i.useEffect(() => {
+    L && k === y.M.FETCHED && F()
+  }, [L, k, F]), i.useEffect(() => {
+    L && Z && b.default.track(O.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
-      sender_user_id: S.author.id,
-      guild_id: R,
-      channel_id: S.channel_id
+      sender_user_id: T.author.id,
+      guild_id: D,
+      channel_id: T.channel_id
     })
-  }, [D, R, w, S.author.id, S.channel_id]);
-  let F = e => {
-    _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
-      application_id: I,
+  }, [L, D, Z, T.author.id, T.channel_id]);
+  let B = e => {
+    b.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
+      application_id: S,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       clicked_section: e,
-      guild_id: R,
-      channel_id: S.channel_id
-    }), (0, p.transitionToGlobalDiscovery)({
-      tab: O.GlobalDiscoveryTab.APPS,
-      applicationId: I,
+      guild_id: D,
+      channel_id: T.channel_id
+    }), (0, m.transitionToGlobalDiscovery)({
+      tab: N.GlobalDiscoveryTab.APPS,
+      applicationId: S,
       newSessionState: {
-        guildId: R,
+        guildId: D,
         entrypoint: {
-          name: y.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
+          name: E.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
         }
       }
     })
   };
-  if (P && null != A) return (0, r.jsx)(d.O, {
-    app: h.ZP.createFromServer(A),
-    embedUrl: T,
+  if (A && null != w) return (0, r.jsx)(d.O, {
+    app: g.ZP.createFromServer(w),
+    embedUrl: P,
     linkType: d.U.APP_DISCOVERY,
-    onView: U
+    onView: F
   });
-  if (w) return (0, r.jsxs)(m.Z, {
-    containerRef: W,
-    children: [(0, r.jsx)(m.Z.Header, {
-      text: N.NW.string(N.t.j4KtLS)
-    }), (0, r.jsx)(m.Z.Body, {
+  if (Z) return (0, r.jsxs)(f.Z, {
+    containerRef: U,
+    children: [(0, r.jsx)(f.Z.Header, {
+      text: j.NW.string(j.t.j4KtLS)
+    }), (0, r.jsx)(f.Z.Body, {
       children: (0, r.jsxs)("div", {
-        className: j.invalidBody,
-        children: [(0, r.jsx)(m.Z.Icon, {
+        className: C.invalidBody,
+        children: [(0, r.jsx)(f.Z.Icon, {
           expired: !0
-        }), (0, r.jsx)(m.Z.Info, {
+        }), (0, r.jsx)(f.Z.Info, {
           expired: !0,
-          title: N.NW.string(N.t.NaQLEx),
-          children: N.NW.string(N.t["0H5OT0"])
+          title: j.NW.string(j.t.NaQLEx),
+          children: j.NW.string(j.t["0H5OT0"])
         })]
       })
     })]
   });
-  if (null == A || Z === x.M.FETCHING) return (0, r.jsxs)(m.Z, {
-    containerRef: W,
-    children: [(0, r.jsx)(m.Z.Header, {
-      text: N.NW.string(N.t.m9hXGR)
-    }), (0, r.jsx)(m.Z.Body, {
+  if (null == w || k === y.M.FETCHING) return (0, r.jsxs)(f.Z, {
+    containerRef: U,
+    children: [(0, r.jsx)(f.Z.Header, {
+      text: j.NW.string(j.t.m9hXGR)
+    }), (0, r.jsx)(f.Z.Body, {
       resolving: !0
     })]
   });
-  let B = new Intl.NumberFormat(k, {
+  let G = new Intl.NumberFormat(R, {
       notation: "compact",
       compactDisplay: "short"
     }),
-    G = null !== (n = null === (t = A.directory_entry) || void 0 === t ? void 0 : t.guild_count) && void 0 !== n ? n : 0,
-    H = (0, b.Eb)({
-      customInstallUrl: A.custom_install_url,
-      installParams: A.install_params,
-      integrationTypesConfig: A.integration_types_config
+    H = null !== (n = null === (t = w.directory_entry) || void 0 === t ? void 0 : t.guild_count) && void 0 !== n ? n : 0,
+    V = (0, p.E)({
+      customInstallUrl: w.custom_install_url,
+      installParams: w.install_params,
+      integrationTypesConfig: w.integration_types_config
     }),
-    V = o.Y.GUILD_INSTALL in (null !== (C = A.integration_types_config) && void 0 !== C ? C : {}) && H;
-  return (0, r.jsxs)(m.Z, {
-    containerRef: W,
-    children: [(0, r.jsx)(m.Z.Header, {
-      text: N.NW.string(N.t.KC1oZ2)
-    }), (0, r.jsxs)(m.Z.Body, {
+    z = o.Y.GUILD_INSTALL in (null !== (I = w.integration_types_config) && void 0 !== I ? I : {}) && V;
+  return (0, r.jsxs)(f.Z, {
+    containerRef: U,
+    children: [(0, r.jsx)(f.Z.Header, {
+      text: j.NW.string(j.t.KC1oZ2)
+    }), (0, r.jsxs)(f.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: j.applicationInfoContainer,
-        children: [(0, r.jsx)(m.Z.Icon, {
-          application: h.ZP.createFromServer(A),
-          className: j.applicationIcon,
-          onClick: () => F("application_icon")
-        }), (0, r.jsx)(m.Z.Info, {
+        className: C.applicationInfoContainer,
+        children: [(0, r.jsx)(f.Z.Icon, {
+          application: g.ZP.createFromServer(w),
+          className: C.applicationIcon,
+          onClick: () => B("application_icon")
+        }), (0, r.jsx)(f.Z.Info, {
           title: (0, r.jsx)(s.P3F, {
-            onClick: () => F("application_name"),
-            children: A.name
+            onClick: () => B("application_name"),
+            children: w.name
           }),
-          children: G > 0 && V && (0, r.jsxs)(s.P3F, {
-            className: j.guildCountContainer,
-            onClick: () => F("application_guild_count"),
+          children: H > 0 && z && (0, r.jsxs)(s.P3F, {
+            className: C.guildCountContainer,
+            onClick: () => B("application_guild_count"),
             children: [(0, r.jsx)(s.Jmo, {
               size: "custom",
               color: "currentColor",
               width: 16,
               height: 16,
-              className: j.guildCountIcon
-            }), N.NW.format(N.t["6IW6Wl"], {
-              guildCount: B.format(G)
+              className: C.guildCountIcon
+            }), j.NW.format(j.t["6IW6Wl"], {
+              guildCount: G.format(H)
             })]
           })
         })]
-      }), H && (0, r.jsx)(m.Z.Button, {
+      }), V && (0, r.jsx)(f.Z.Button, {
         onClick: () => {
-          null != A && (0, b.LO)({
-            applicationId: I,
-            customInstallUrl: A.custom_install_url,
-            installParams: A.install_params,
-            integrationTypesConfig: A.integration_types_config,
-            guildId: R,
+          null != w && (0, v.L)({
+            applicationId: S,
+            customInstallUrl: w.custom_install_url,
+            installParams: w.install_params,
+            integrationTypesConfig: w.integration_types_config,
+            guildId: D,
             source: "app_directory_profile_embed"
           })
         },
-        color: m.Z.Button.Colors.GREEN,
-        children: N.NW.string(N.t.NgXl3N)
+        color: f.Z.Button.Colors.GREEN,
+        children: j.NW.string(j.t.NgXl3N)
       })]
     })]
   })

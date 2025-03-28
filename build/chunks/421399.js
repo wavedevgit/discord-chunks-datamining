@@ -18,9 +18,9 @@ var n, o = r(200651),
   y = r(372900),
   g = r(477734),
   O = r(823415),
-  h = r(754047),
-  j = r(184301),
-  v = r(768581),
+  j = r(754047),
+  v = r(184301),
+  h = r(768581),
   x = r(463396),
   P = r(981631),
   S = r(432957);
@@ -77,9 +77,9 @@ function E(e) {
       channel: f,
       userOverride: R,
       compact: E = !1,
-      withMentionPrefix: I = !1,
-      showPopout: k = !1,
-      className: C,
+      withMentionPrefix: C = !1,
+      showPopout: I = !1,
+      className: k,
       onClick: Z,
       onContextMenu: A,
       onPopoutRequestClose: _,
@@ -98,22 +98,22 @@ function E(e) {
       colorString: H,
       colorRoleName: W
     } = n,
-    J = null != l.messageReference && null != l.webhookId && l.hasFlag(P.iLy.IS_CROSSPOST),
-    X = (0, s.e7)([m.Z], () => m.Z.roleStyle),
-    V = (0, g.X$)(),
-    Y = {
+    q = null != l.messageReference && null != l.webhookId && l.hasFlag(P.iLy.IS_CROSSPOST),
+    J = (0, s.e7)([m.Z], () => m.Z.roleStyle),
+    X = (0, g.X$)(),
+    V = {
       className: S.username,
-      style: "username" === X && null != H ? {
+      style: "username" === J && null != H ? {
         color: H
       } : void 0,
       onClick: Z,
       onContextMenu: A,
-      children: (I ? "@" : "") + U
+      children: (C ? "@" : "") + U
     };
 
-  function q() {
+  function Y() {
     let e = null != R ? R : l.author;
-    return (0, j.Z)(e.id, null != n.guildMemberAvatar && null != B ? (0, v.JM)({
+    return (0, v.Z)(e.id, null != n.guildMemberAvatar && null != B ? (0, h.JM)({
       guildId: B,
       userId: e.id,
       avatar: n.guildMemberAvatar,
@@ -134,21 +134,24 @@ function E(e) {
     }),
     {
       showPopoutFromHover: K,
-      handleMouseEnter: ee,
-      handleMouseLeave: et
-    } = (0, h.Z)({
+      onRequestClose: ee,
+      onMouseEnter: et,
+      onMouseLeave: er
+    } = (0, j.Z)({
       shouldShowPopoutOnHover: Q,
-      handlePreload: q
+      handlePreload: Y
     });
-  if (null != M && null != k) {
+  if (null != M && null != I) {
     let e = (0, o.jsx)(u.yRy, {
       targetElementRef: F,
-      preload: J ? void 0 : q,
+      preload: q ? void 0 : Y,
       renderPopout: M,
-      shouldShow: k || K,
+      shouldShow: I || K,
       position: c.tq ? "window_center" : "right",
-      onRequestClose: _,
-      clickTrap: k,
+      onRequestClose: () => {
+        null == ee || ee(), null == _ || _()
+      },
+      clickTrap: I,
       children: e => {
         var {
           onClick: t
@@ -171,30 +174,30 @@ function E(e) {
           children: [(0, o.jsx)(u.P3F, w(T({
             tag: "span",
             innerRef: F
-          }, r, Y), {
-            className: a()(Y.className, S.clickable, C)
+          }, r, V), {
+            className: a()(V.className, S.clickable, k)
           })), $]
         })
       }
     });
     r = Q ? (0, o.jsx)("div", {
       className: S.hoverable,
-      onMouseEnter: ee,
-      onMouseLeave: et,
+      onMouseEnter: et,
+      onMouseLeave: er,
       children: e
     }) : e
   } else r = (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(u.P3F, w(T({}, Y), {
-      className: a()(Y.className, C)
+    children: [(0, o.jsx)(u.P3F, w(T({}, V), {
+      className: a()(V.className, k)
     })), $]
   });
-  let er = null != L ? L[0] : null,
-    en = null != L ? L[1] : null;
+  let en = null != L ? L[0] : null,
+    eo = null != L ? L[1] : null;
   return (0, o.jsxs)(d.Gt, {
     value: z,
-    children: [null != er && E ? (0, o.jsxs)(o.Fragment, {
-      children: [" ", er, " "]
-    }) : null, "dot" === X ? (0, o.jsx)(u.FhE, {
+    children: [null != en && E ? (0, o.jsxs)(o.Fragment, {
+      children: [" ", en, " "]
+    }) : null, "dot" === J ? (0, o.jsx)(u.FhE, {
       color: H,
       name: W,
       className: S.roleDot
@@ -203,6 +206,6 @@ function E(e) {
       userId: l.author.id,
       contextGuildId: B,
       className: S.clanTagChiplet
-    }), null != en ? en : null, null == er || E ? null : er, null != l && (0, x.f)(l) && V && D ? (0, o.jsx)(N, {}) : null]
+    }), null != eo ? eo : null, null == en || E ? null : en, null != l && (0, x.f)(l) && X && D ? (0, o.jsx)(N, {}) : null]
   })
 }

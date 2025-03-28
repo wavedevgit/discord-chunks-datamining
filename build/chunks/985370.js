@@ -39,10 +39,10 @@ let x = e => {
     mode: R
   } = (0, m.ZP)({
     location: "ActionBarSoundboardButton"
-  }), M = (0, b.Z)({
+  }), k = (0, b.Z)({
     location: "ActionBarSoundboardButton"
   }), {
-    coloredIconsEnabled: k,
+    coloredIconsEnabled: M,
     squareButtonsEnabled: L
   } = (0, g.Z)({
     location: "ActionBarSoundboardButton"
@@ -57,8 +57,8 @@ let x = e => {
   }, [I, P, j, x, l]), F = (j || P) && (l === C.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
     shouldShow: F,
-    animation: M ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
-    animationPosition: M ? "top" : "bottom",
+    animation: k ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
+    animationPosition: k ? "top" : "bottom",
     position: "bottom",
     align: "center",
     spacing: 16,
@@ -85,10 +85,10 @@ let x = e => {
       } = e;
       return (0, r.jsx)(h.Z, {
         isCenterButton: !0,
-        color: P ? k ? "primaryDark" : R === m.BK.GroupedButtonsRedMic || L ? "green" : void 0 : void 0,
+        color: P ? M ? "primaryDark" : R === m.BK.GroupedButtonsRedMic || L ? "green" : void 0 : void 0,
         totalCooldownSeconds: T,
         remainingCooldownSeconds: A,
-        className: o()(!M && y.controlButton, n),
+        className: o()(!k && y.controlButton, n),
         onKeyDown: e => {
           e.keyCode === v.yXg.ENTER && e.keyCode === v.yXg.SPACE && B(e, i)
         },

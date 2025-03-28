@@ -43,6 +43,8 @@ function S(e) {
       showForYouTab: e
     } = b.V.useExperiment({
       location: "RecentsPopout"
+    }, {
+      autoTrackExposure: !1
     }), t = (0, o.e7)([g.Z], () => {
       var e, t;
       return null !== (t = null === (e = g.Z.settings.inbox) || void 0 === e ? void 0 : e.currentTab) && void 0 !== t ? t : l.X.UNREADS

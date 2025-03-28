@@ -293,11 +293,12 @@ function $(e) {
       location: "MessageHeader"
     }), {
       showPopoutFromHover: Y,
-      handleMouseEnter: X,
-      handleMouseLeave: Q
+      onRequestClose: X,
+      onMouseEnter: Q,
+      onMouseLeave: J
     } = (0, C.Z)({
       shouldShowPopoutOnHover: F,
-      handlePreload: J
+      handlePreload: $
     });
     if (o.useEffect(() => {
         if (null != h) return R.S.subscribeKeyed(U.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(D), w), () => void R.S.unsubscribeKeyed(U.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(D), w)
@@ -306,11 +307,13 @@ function $(e) {
         let e = (0, r.jsx)(d.Gt, {
           value: k,
           children: (0, r.jsx)(l.yRy, {
-            preload: Z ? void 0 : J,
+            preload: Z ? void 0 : $,
             renderPopout: p,
             shouldShow: T || Y,
             position: s.tq ? "window_center" : "right",
-            onRequestClose: x,
+            onRequestClose: () => {
+              null == X || X(), null == x || x()
+            },
             clickTrap: T,
             children: e => q(K(V({}, W), {
               avatarSrc: H,
@@ -326,8 +329,8 @@ function $(e) {
           })
         });
         return F ? (0, r.jsx)("div", {
-          onMouseEnter: X,
-          onMouseLeave: Q,
+          onMouseEnter: Q,
+          onMouseLeave: J,
           children: e
         }) : e
       }
@@ -347,7 +350,7 @@ function $(e) {
       })
     }
 
-    function J() {
+    function $() {
       return (0, N.Z)(f.author.id, null != _.guildMemberAvatar && null != i ? M.ZP.getGuildMemberAvatarURLSimple({
         guildId: i,
         userId: f.author.id,

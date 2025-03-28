@@ -1,6 +1,6 @@
 /** Chunk was on 54589 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,12 +66,12 @@ function M(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     postId: t,
     isFirstMessage: n,
     isLastItem: l = !1,
-    parentChannelId: k
+    parentChannelId: M
   } = e, {
     ref: L,
     width: D
@@ -83,7 +83,7 @@ function k(e) {
     isLurking: X,
     isGuest: Q,
     isPendingMember: J
-  } = (0, _.Z)(V), $ = (0, s.e7)([E.Z], () => E.Z.getChannel(k)), ee = (0, I.Bs)($), et = (0, s.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
+  } = (0, _.Z)(V), $ = (0, s.e7)([E.Z], () => E.Z.getChannel(M)), ee = (0, I.Bs)($), et = (0, s.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -182,7 +182,7 @@ function k(e) {
         className: A.buttons,
         children: [(0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.F7oeDg),
-          children: e => (0, r.jsxs)(u.zxk, M(R({}, e), {
+          children: e => (0, r.jsxs)(u.zxk, k(R({}, e), {
             look: u.zxk.Looks.BLANK,
             size: u.zxk.Sizes.SMALL,
             onClick: eo,
@@ -197,7 +197,7 @@ function k(e) {
           }))
         }), (0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.WqhZsr),
-          children: e => (0, r.jsxs)(u.zxk, M(R({}, e), {
+          children: e => (0, r.jsxs)(u.zxk, k(R({}, e), {
             look: u.zxk.Looks.BLANK,
             size: u.zxk.Sizes.SMALL,
             onClick: ea,
@@ -217,7 +217,7 @@ function k(e) {
           }))
         }), !n && (0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.nFP4oa),
-          children: e => (0, r.jsx)(u.zxk, M(R({}, e), {
+          children: e => (0, r.jsx)(u.zxk, k(R({}, e), {
             look: u.zxk.Looks.BLANK,
             size: u.zxk.Sizes.SMALL,
             onClick: es,

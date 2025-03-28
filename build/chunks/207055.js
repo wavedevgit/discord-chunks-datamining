@@ -1,6 +1,6 @@
 /** Chunk was on 54589 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -41,7 +41,7 @@ let w = i.memo(e => {
     channel: g,
     sessionId: y,
     nick: A
-  } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [M, k, L] = (0, a.Wu)([v.Z], () => R ? [!v.Z.isSupported() || v.Z.isSelfMute() || v.Z.isSelfMutedTemporarily(), v.Z.isSelfDeaf(), !1] : [!v.Z.isSupported() || v.Z.isLocalMute(w), !1, v.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), W = (0, c.Z)({
+  } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [k, M, L] = (0, a.Wu)([v.Z], () => R ? [!v.Z.isSupported() || v.Z.isSelfMute() || v.Z.isSelfMutedTemporarily(), v.Z.isSelfDeaf(), !1] : [!v.Z.isSupported() || v.Z.isLocalMute(w), !1, v.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), W = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
   }), U = (0, a.e7)([C.ZP], () => C.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
@@ -79,10 +79,10 @@ let w = i.memo(e => {
       canDrag: e.canDrag && !U,
       otherClientSessionType: null == K ? void 0 : null === (t = K.clientInfo) || void 0 === t ? void 0 : t.os,
       voicePlatform: Q,
-      localMute: M && !R,
+      localMute: k && !R,
       localVideoDisabled: L,
-      mute: l || M,
-      deaf: o || k,
+      mute: l || k,
+      deaf: o || M,
       speaking: W,
       ringing: B,
       disconnected: J,
@@ -107,7 +107,7 @@ let w = i.memo(e => {
 });
 w.displayName = "ConnectedVoiceUser";
 let R = [],
-  M = function(e) {
+  k = function(e) {
     let {
       allowPreviews: t = !0,
       allowDragging: n = !0,
@@ -121,14 +121,14 @@ let R = [],
       withGuildIcon: C = !1,
       className: v,
       children: j
-    } = e, [O, E] = i.useState(null), [N, I] = i.useState(!1), P = i.useRef(null), T = (0, m.Es)(l.id, null != c ? c : R), M = i.useRef(new s.sW(50, () => {
+    } = e, [O, E] = i.useState(null), [N, I] = i.useState(!1), P = i.useRef(null), T = (0, m.Es)(l.id, null != c ? c : R), k = i.useRef(new s.sW(50, () => {
       E(P.current), P.current = null
-    })), k = i.useRef(new s.sW(175, () => {
+    })), M = i.useRef(new s.sW(175, () => {
       E(null)
     })), L = i.useCallback(e => {
-      t && (I(!0), k.current.cancel(), P.current = e, M.current.delay())
+      t && (I(!0), M.current.cancel(), P.current = e, k.current.delay())
     }, [t]), D = i.useCallback(e => {
-      t && (M.current.cancel(), O === e && (I(!1), k.current.delay()))
+      t && (k.current.cancel(), O === e && (I(!1), M.current.delay()))
     }, [t, O]), W = (0, a.Wu)([x.Z], () => {
       if (u) return [];
       let e = new Set;

@@ -33,8 +33,8 @@ var r, i = n(200651),
   A = n(93127),
   w = n(752048),
   R = n(131704),
-  M = n(592125),
-  k = n(341165),
+  k = n(592125),
+  M = n(341165),
   L = n(544610),
   D = n(19780),
   W = n(306680),
@@ -157,7 +157,7 @@ let ec = e => {
       onConfirm: t,
       channelIds: n
     } = e, r = el(e, ["onConfirm", "channelIds"]);
-    let l = (0, h.Wu)([M.Z], () => Array.from(n).map(M.Z.getChannel), [n]);
+    let l = (0, h.Wu)([k.Z], () => Array.from(n).map(k.Z.getChannel), [n]);
     return (0, i.jsxs)(f.ConfirmModal, ei(er({
       header: $.NW.string($.t.uFHxNT),
       confirmText: $.NW.string($.t.KCNNJi),
@@ -701,9 +701,9 @@ function ep(e) {
   var {
     channel: t
   } = e, n = el(e, ["channel"]);
-  let r = (0, h.cj)([L.Z, k.Z, B.Z], () => {
+  let r = (0, h.cj)([L.Z, M.Z, B.Z], () => {
     let e;
-    return null != t && null != (e = k.Z.getInvite(t.id)) && e.isExpired() && (e = null), ei(er({}, L.Z.getState()), {
+    return null != t && null != (e = M.Z.getInvite(t.id)) && e.isExpired() && (e = null), ei(er({}, L.Z.getState()), {
       invite: e,
       hideDiscriminator: B.Z.hidePersonalInformation,
       hideInstantInvites: B.Z.hideInstantInvites
@@ -759,7 +759,7 @@ function eh(e) {
 
 function ef(e) {
   let t = em(e);
-  return new Set(c()(M.Z.getMutablePrivateChannels()).values().filter(e => (0, R.bc)(e.type)).filter(e => em(e.recipients) === t).map(e => e.id).value())
+  return new Set(c()(k.Z.getMutablePrivateChannels()).values().filter(e => (0, R.bc)(e.type)).filter(e => em(e.recipients) === t).map(e => e.id).value())
 }
 
 function em(e) {

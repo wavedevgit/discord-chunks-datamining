@@ -21,7 +21,7 @@ let b = e => {
   } = e, b = (0, l.e7)([s.Z], () => s.Z.getProduct(null == r ? void 0 : r.skuId));
   return (0, n.jsxs)("div", {
     className: o()(p.previewBorder, {
-      [p.upsell]: !i
+      [p.upsell]: !i && null != r
     }),
     children: [(0, n.jsx)("div", {
       className: p.previewBox,
@@ -45,7 +45,7 @@ let b = e => {
           opacity: .9
         })]
       })
-    }), (0, n.jsxs)("div", {
+    }), null != r ? (0, n.jsxs)("div", {
       className: p.previewDescription,
       children: [(0, n.jsx)(a.Text, {
         variant: "text-sm/semibold",
@@ -54,6 +54,6 @@ let b = e => {
         variant: "text-sm/normal",
         children: d.NW.string(d.t.my5jxM)
       })]
-    })]
+    }) : null]
   })
 }

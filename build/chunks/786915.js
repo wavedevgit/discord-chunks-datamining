@@ -74,11 +74,11 @@ function v(e) {
       parentAnalyticsLocation: w
     } = (0, d.ZP)(),
     R = null == v ? void 0 : v.getGuildId(),
-    M = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R) : null, [R]),
-    k = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : void 0);
-  return null != k && (null == N ? void 0 : N.location.kind) === o.E.CONTEXTLESS ? (0, r.jsx)(g.Z, {
+    k = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R) : null, [R]),
+    M = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : void 0);
+  return null != M && (null == N ? void 0 : N.location.kind) === o.E.CONTEXTLESS ? (0, r.jsx)(g.Z, {
     onClick: () => {
-      null != w && (0, p.v)(w, p.d.INVITE), c.h7(k, !1, A)
+      null != w && (0, p.v)(w, p.d.INVITE), c.h7(M, !1, A)
     },
     iconComponent: null == t || E ? s.ejJ : s.gQj,
     label: null != t ? _.NW.string(_.t["OzOM/v"]) : _.NW.string(_.t["6F9ivr"]),
@@ -86,9 +86,9 @@ function v(e) {
     look: P,
     size: S,
     buttonText: Z
-  }) : null != M && null != v && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, v) ? (0, r.jsx)(g.Z, C({
+  }) : null != k && null != v && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, v) ? (0, r.jsx)(g.Z, C({
     onClick: () => {
-      l()(null != M, "guild cannot be null"), l()(null != v, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
+      l()(null != k, "guild cannot be null"), l()(null != v, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
         function(e) {
           let {
             guild: t,
@@ -130,7 +130,7 @@ function v(e) {
             contextKey: a === b.IlC.POPOUT ? s.u1M : s.z1l
           })
         }({
-          guild: M,
+          guild: k,
           channel: v,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,

@@ -1,6 +1,6 @@
 /**
   Module ID: 18895
-  Original File Name: fb8c687fd4d247cb
+  Original File Name: bfa7d8f98d31d973
 **/
 .effect_a9ddb3 {
     position: absolute;
@@ -1268,6 +1268,10 @@
     pointer-events: none
 }
 
+.obscuredThumbnailPlaceholder_faa96b {
+    background-color: var(--bg-mod-strong)
+}
+
 .body_faa96b {
     padding-bottom: 8px
 }
@@ -1470,4 +1474,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=fb8c687fd4d247cb.css.map*/
+/*# sourceMappingURL=bfa7d8f98d31d973.css.map*/

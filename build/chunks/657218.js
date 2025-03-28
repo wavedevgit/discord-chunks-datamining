@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(117530),
   w = n(459273),
   R = n(838440),
-  M = n(127654),
-  k = n(241309),
+  k = n(127654),
+  M = n(241309),
   L = n(928477),
   D = n(456077),
   W = n(488131),
@@ -193,7 +193,7 @@ function q(e) {
         let m = null !== (s = r.name) && void 0 !== s ? s : "",
           g = null == n && 0 === m.length,
           b = "" === e && (null == i || 0 === i.length) && 0 === l.length;
-        if (c(g ? (0, k.V_)() : null), d(b ? (0, k.T4)() : null), g || b) return h(!1), {
+        if (c(g ? (0, M.V_)() : null), d(b ? (0, M.T4)() : null), g || b) return h(!1), {
           shouldClear: !1,
           shouldRefocus: !0
         };
@@ -215,7 +215,7 @@ function q(e) {
         try {
           await f(e, i, l)
         } catch (e) {
-          return (null === (u = e.body) || void 0 === u ? void 0 : u.code) === B.evJ.AUTOMOD_TITLE_BLOCKED && c((0, k.Gx)(e.body, t)), h(!1), {
+          return (null === (u = e.body) || void 0 === u ? void 0 : u.code) === B.evJ.AUTOMOD_TITLE_BLOCKED && c((0, M.Gx)(e.body, t)), h(!1), {
             shouldClear: !1,
             shouldRefocus: !0
           }
@@ -341,7 +341,7 @@ function X(e) {
     updateThreadSettings: o,
     error: a,
     disabled: c
-  } = e, d = null !== (t = l.name) && void 0 !== t ? t : "", p = (0, k.Op)(a, {
+  } = e, d = null !== (t = l.name) && void 0 !== t ? t : "", p = (0, M.Op)(a, {
     content: d
   }), h = (0, L.Od)(n, i), f = null != i, m = (0, v.Dt)();
   return (0, r.jsx)(s.hjN, {
@@ -399,7 +399,7 @@ function Q(e) {
     handler: g
   });
   let y = (0, a.e7)([T.Z], () => T.Z.can(B.Plq.ATTACH_FILES, t)),
-    x = (0, k.Op)(p, {
+    x = (0, M.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -427,7 +427,7 @@ function Q(e) {
       onBlur: g,
       onChange: b,
       onSubmit: v,
-      promptToUpload: M.d
+      promptToUpload: k.d
     })]
   })
 }
