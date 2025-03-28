@@ -64,8 +64,8 @@ let u = function(e) {
     },
     hasThread: O,
     isSystemMessage: x,
-    hasReply: j
-  } = e, C = function(e, t) {
+    hasReply: C
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -90,10 +90,10 @@ let u = function(e) {
         [s.zalgo]: u,
         [s.hasThread]: O,
         [s.isSystemMessage]: x,
-        [s.hasReply]: j
+        [s.hasReply]: C
       }),
       ref: y
-    }, C), {
+    }, j), {
       role: "article",
       children: [p, g, (0, r.jsxs)("div", {
         className: s.contents,

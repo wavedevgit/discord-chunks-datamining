@@ -1,9 +1,9 @@
 /** Chunk was on 95477 **/
-r.d(t, {
+n.d(t, {
   X$: () => o,
   _f: () => i
-}), r(906732);
-let n = (0, r(818083).B)({
+}), n(906732);
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2023-08_remix_ga",
   label: "Remix General Available",
@@ -40,7 +40,7 @@ let n = (0, r(818083).B)({
 });
 
 function o() {
-  return n.useExperiment({
+  return r.useExperiment({
     location: "canSeeRemixBadge"
   }, {
     autoTrackExposure: !0
@@ -48,7 +48,7 @@ function o() {
 }
 
 function i() {
-  return !!n.useExperiment({
+  return !!r.useExperiment({
     location: "isRemixANitroPerkHook"
   }, {
     autoTrackExposure: !0

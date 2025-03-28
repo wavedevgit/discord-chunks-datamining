@@ -1,44 +1,44 @@
 /** Chunk was on 95477 **/
-r.d(t, {
+n.d(t, {
   Z: () => E,
   a: () => R
 });
-var n, o = r(200651),
-  i = r(192379),
-  l = r(120356),
-  a = r.n(l),
-  c = r(873546),
-  s = r(442837),
-  u = r(481060),
-  m = r(607070),
-  p = r(100527),
-  d = r(906732),
-  f = r(385499),
-  b = r(979264),
-  y = r(372900),
-  g = r(477734),
-  O = r(823415),
-  j = r(754047),
-  v = r(184301),
-  h = r(768581),
-  x = r(463396),
-  P = r(981631),
-  S = r(432957);
+var r, o = n(200651),
+  i = n(192379),
+  l = n(120356),
+  a = n.n(l),
+  c = n(873546),
+  s = n(442837),
+  u = n(481060),
+  m = n(607070),
+  p = n(100527),
+  d = n(906732),
+  f = n(385499),
+  b = n(979264),
+  y = n(372900),
+  g = n(477734),
+  O = n(823415),
+  j = n(754047),
+  v = n(184301),
+  h = n(768581),
+  x = n(463396),
+  P = n(981631),
+  S = n(432957);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -46,17 +46,17 @@ function T(e) {
 
 function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var R = ((n = {})[n.SYSTEM_TAG = 0] = "SYSTEM_TAG", n[n.BADGES = 1] = "BADGES", n);
+var R = ((r = {})[r.SYSTEM_TAG = 0] = "SYSTEM_TAG", r[r.BADGES = 1] = "BADGES", r);
 
 function N(e) {
   let {
@@ -71,8 +71,8 @@ function N(e) {
 
 function E(e) {
   var t;
-  let r, {
-      author: n,
+  let n, {
+      author: r,
       message: l,
       channel: f,
       userOverride: R,
@@ -97,7 +97,7 @@ function E(e) {
       nick: U,
       colorString: H,
       colorRoleName: W
-    } = n,
+    } = r,
     q = null != l.messageReference && null != l.webhookId && l.hasFlag(P.iLy.IS_CROSSPOST),
     J = (0, s.e7)([m.Z], () => m.Z.roleStyle),
     X = (0, g.X$)(),
@@ -113,10 +113,10 @@ function E(e) {
 
   function Y() {
     let e = null != R ? R : l.author;
-    return (0, v.Z)(e.id, null != n.guildMemberAvatar && null != B ? (0, h.JM)({
+    return (0, v.Z)(e.id, null != r.guildMemberAvatar && null != B ? (0, h.JM)({
       guildId: B,
       userId: e.id,
-      avatar: n.guildMemberAvatar,
+      avatar: r.guildMemberAvatar,
       size: 80
     }) : e.getAvatarURL(B, 80), {
       guildId: B,
@@ -124,11 +124,11 @@ function E(e) {
     })
   }
   let $ = i.useMemo(() => E ? (0, o.jsx)(b.ZP, {
-      primaryGuild: n.primaryGuild,
+      primaryGuild: r.primaryGuild,
       userId: l.author.id,
       contextGuildId: B,
       className: S.clanTagChiplet
-    }) : null, [E, n.primaryGuild, B, l.author.id]),
+    }) : null, [E, r.primaryGuild, B, l.author.id]),
     Q = (0, O.nT)({
       location: "BaseUsername"
     }),
@@ -136,7 +136,7 @@ function E(e) {
       showPopoutFromHover: K,
       onRequestClose: ee,
       onMouseEnter: et,
-      onMouseLeave: er
+      onMouseLeave: en
     } = (0, j.Z)({
       shouldShowPopoutOnHover: Q,
       handlePreload: Y
@@ -155,18 +155,18 @@ function E(e) {
       children: e => {
         var {
           onClick: t
-        } = e, r = function(e, t) {
+        } = e, n = function(e, t) {
           if (null == e) return {};
-          var r, n, o = function(e, t) {
+          var n, r, o = function(e, t) {
             if (null == e) return {};
-            var r, n, o = {},
+            var n, r, o = {},
               i = Object.keys(e);
-            for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+            for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
             return o
           }(e, t);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
-            for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
           }
           return o
         }(e, ["onClick"]);
@@ -174,38 +174,38 @@ function E(e) {
           children: [(0, o.jsx)(u.P3F, w(T({
             tag: "span",
             innerRef: F
-          }, r, V), {
+          }, n, V), {
             className: a()(V.className, S.clickable, k)
           })), $]
         })
       }
     });
-    r = Q ? (0, o.jsx)("div", {
+    n = Q ? (0, o.jsx)("div", {
       className: S.hoverable,
       onMouseEnter: et,
-      onMouseLeave: er,
+      onMouseLeave: en,
       children: e
     }) : e
-  } else r = (0, o.jsxs)(o.Fragment, {
+  } else n = (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(u.P3F, w(T({}, V), {
       className: a()(V.className, k)
     })), $]
   });
-  let en = null != L ? L[0] : null,
+  let er = null != L ? L[0] : null,
     eo = null != L ? L[1] : null;
   return (0, o.jsxs)(d.Gt, {
     value: z,
-    children: [null != en && E ? (0, o.jsxs)(o.Fragment, {
-      children: [" ", en, " "]
+    children: [null != er && E ? (0, o.jsxs)(o.Fragment, {
+      children: [" ", er, " "]
     }) : null, "dot" === J ? (0, o.jsx)(u.FhE, {
       color: H,
       name: W,
       className: S.roleDot
-    }) : null, r, !E && (0, o.jsx)(b.ZP, {
-      primaryGuild: n.primaryGuild,
+    }) : null, n, !E && (0, o.jsx)(b.ZP, {
+      primaryGuild: r.primaryGuild,
       userId: l.author.id,
       contextGuildId: B,
       className: S.clanTagChiplet
-    }), null != eo ? eo : null, null == en || E ? null : en, null != l && (0, x.f)(l) && X && D ? (0, o.jsx)(N, {}) : null]
+    }), null != eo ? eo : null, null == er || E ? null : er, null != l && (0, x.f)(l) && X && D ? (0, o.jsx)(N, {}) : null]
   })
 }

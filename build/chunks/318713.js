@@ -1,20 +1,20 @@
 /** Chunk was on 95477 **/
-r.d(t, {
+n.d(t, {
   Z: () => d
 });
-var n = r(200651);
-r(192379);
-var o = r(120356),
-  i = r.n(o),
-  l = r(481060),
-  a = r(55935),
-  c = r(543388),
-  s = r(223021),
-  u = r(388032),
-  m = r(432957);
+var r = n(200651);
+n(192379);
+var o = n(120356),
+  i = n.n(o),
+  l = n(481060),
+  a = n(55935),
+  c = n(543388),
+  s = n(223021),
+  u = n(388032),
+  m = n(432957);
 
 function p(e) {
-  var t, r;
+  var t, n;
   let {
     tooltipProps: o,
     timeFormatted: i,
@@ -23,52 +23,52 @@ function p(e) {
     timestamp: c,
     id: s
   } = e;
-  return (0, n.jsx)("time", (t = function(e) {
+  return (0, r.jsx)("time", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
-  }({}, o), r = r = {
+  }({}, o), n = n = {
     id: s,
     dateTime: c.toISOString(),
-    children: null != l ? l : (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)("i", {
+    children: null != l ? l : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("i", {
         className: m.separator,
         "aria-hidden": !0,
         children: a ? "[" : " — "
-      }), i, a && (0, n.jsxs)("i", {
+      }), i, a && (0, r.jsxs)("i", {
         className: m.separator,
         "aria-hidden": !0,
         children: ["]", " "]
       })]
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
 let d = function(e) {
   let {
     children: t,
-    className: r,
+    className: n,
     compact: o = !1,
     timestamp: d,
     isVisibleOnlyOnHover: f = !1,
@@ -81,20 +81,20 @@ let d = function(e) {
   } = e, h = new Date(d), x = (0, a.Hg)(h), P = o ? (0, a.vc)(h, "LT") : (0, a.Y4)(h, !0), S = o ? (0, s.Z)(P) : null, T = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: x
   }) : x;
-  return (0, n.jsx)("span", {
-    className: i()(r, S, {
+  return (0, r.jsx)("span", {
+    className: i()(n, S, {
       [m.timestamp]: !0,
       [m.timestampVisibleOnHover]: f,
       [m.timestampInline]: y,
       [m.alt]: b
     }),
-    children: null == j ? (0, n.jsx)(l.ua7, {
+    children: null == j ? (0, r.jsx)(l.ua7, {
       text: (0, a.vc)(h, "LLLL"),
       "aria-label": T,
       tooltipClassName: m.timestampTooltip,
       position: v,
       delay: 750,
-      children: e => (0, n.jsx)(p, {
+      children: e => (0, r.jsx)(p, {
         tooltipProps: e,
         timeFormatted: P,
         timestamp: h,
@@ -102,11 +102,11 @@ let d = function(e) {
         compact: o,
         children: t
       })
-    }) : (0, n.jsx)(c.Z, {
+    }) : (0, r.jsx)(c.Z, {
       application: j,
       timestamp: h,
       compact: o,
-      children: (0, n.jsx)(p, {
+      children: (0, r.jsx)(p, {
         timeFormatted: P,
         timestamp: h,
         id: g,

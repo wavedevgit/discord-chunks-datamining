@@ -1,8 +1,8 @@
 /** Chunk was on 95477 **/
-r.d(t, {
+n.d(t, {
   nT: () => o
 });
-let n = (0, r(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-02_show_popout_on_delayed_hover",
   label: "Show Profile Popout On Delayed Hover Experiment",
@@ -21,11 +21,11 @@ let n = (0, r(818083).B)({
 function o(e) {
   let {
     location: t,
-    autoTrackExposure: r = !0
+    autoTrackExposure: n = !0
   } = e;
-  return n.getCurrentConfig({
+  return r.getCurrentConfig({
     location: t
   }, {
-    autoTrackExposure: r
+    autoTrackExposure: n
   }).enabled
 }
