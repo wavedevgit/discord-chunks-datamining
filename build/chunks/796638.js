@@ -49,9 +49,9 @@ function b(e, t) {
       clearTimeout(e)
     }
   }, [t]);
-  let y = i.useRef({}),
+  let E = i.useRef({}),
     {
-      visibleParticipants: E,
+      visibleParticipants: y,
       participantTileWidth: O
     } = i.useMemo(() => {
       let n = Date.now(),
@@ -77,9 +77,9 @@ function b(e, t) {
         [m, p] = (0, l.partition)(i, d.Io),
         b = m.findIndex(v),
         g = null; - 1 !== b && (g = m[b], m.splice(b, 1));
-      let E = null == g || f ? e : e - r - s,
-        O = Math.max(0, Math.min(Math.floor((E - s) / (a + s)), u, t.length)),
-        S = Math.min((E - s) / O - s, r),
+      let y = null == g || f ? e : e - r - s,
+        O = Math.max(0, Math.min(Math.floor((y - s) / (a + s)), u, t.length)),
+        S = Math.min((y - s) / O - s, r),
         x = Math.max(0, O - p.length),
         j = p.slice(0, O),
         w = m.slice(0, x),
@@ -87,7 +87,7 @@ function b(e, t) {
       if (x > 0) {
         let e = [];
         for (let t of w) {
-          let n = y.current[t.id];
+          let n = E.current[t.id];
           null != n && n < x ? Z[n] = t : e.push(t)
         }
         for (let t = 0; t < Z.length; t++) {
@@ -99,7 +99,7 @@ function b(e, t) {
       }
       let C = Z.filter(c.lm),
         P = (0, l.keyBy)((0, l.range)(C.length), e => C[e].id);
-      y.current = P;
+      E.current = P;
       let N = [...j, ...C];
       return null != g && (f && N.length >= O ? N[Math.max(0, N.length - 1)] = g : N.push(g)), {
         visibleParticipants: N,
@@ -107,7 +107,7 @@ function b(e, t) {
       }
     }, [e, t, b, m, f, u, s, a, r]);
   return {
-    visibleParticipants: E,
+    visibleParticipants: y,
     participantTileWidth: O
   }
 }

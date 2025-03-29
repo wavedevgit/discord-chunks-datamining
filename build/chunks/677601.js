@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(100527),
   w = n(367907),
   R = n(906732),
-  k = n(213609),
-  M = n(600164),
+  M = n(213609),
+  k = n(600164),
   L = n(540059),
   D = n(211644),
   W = n(258609),
@@ -88,8 +88,8 @@ var r = n(200651),
   eA = n(742603),
   ew = n(71127),
   eR = n(221888),
-  ek = n(185935),
-  eM = n(900211),
+  eM = n(185935),
+  ek = n(900211),
   eL = n(18759),
   eD = n(522651),
   eW = n(795318),
@@ -343,7 +343,7 @@ class eX extends i.PureComponent {
             children: e => this.renderContent(e)
           })
         })
-      }), C && (0, r.jsx)(eM.Z, {
+      }), C && (0, r.jsx)(ek.Z, {
         minHeight: 230,
         maxHeight: u,
         resizableNode: this._wrapperRef,
@@ -392,7 +392,7 @@ class eX extends i.PureComponent {
     }), eV(this, "handleDisconnect", () => {
       this.props.layout === eF.AEg.FULL_SCREEN && this.handleFullScreen()
     }), eV(this, "trackCallTileContextMenuImpression", (e, t) => {
-      (0, k.h)({
+      (0, M.h)({
         type: c.ImpressionTypes.MENU,
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
@@ -546,8 +546,8 @@ class eX extends i.PureComponent {
       } = this.props;
       return this.inPopout || i === eF.AEg.FULL_SCREEN || null == t || n.isManaged() || (e = (0, r.jsx)(x.Z, {
         call: t
-      })), (0, r.jsx)(M.Z, {
-        justify: M.Z.Justify.END,
+      })), (0, r.jsx)(k.Z, {
+        justify: k.Z.Justify.END,
         children: e
       })
     }), eV(this, "renderBottomCenter", () => {
@@ -603,9 +603,9 @@ class eX extends i.PureComponent {
           analyticsLocation: n.type === eF.d4z.GUILD_VOICE ? eF.ZY5.GUILD_CHANNEL : eF.ZY5.DM_CHANNEL
         });
       return (0, r.jsxs)(r.Fragment, {
-        children: [C && !s ? v : null, _ ? (0, r.jsxs)(M.Z, {
+        children: [C && !s ? v : null, _ ? (0, r.jsxs)(k.Z, {
           className: eG.iconWrapper,
-          align: M.Z.Align.CENTER,
+          align: k.Z.Align.CENTER,
           grow: 0,
           children: [(0, r.jsx)(ei.Z, {
             label: f ? eH.NW.string(eH.t.kkKapK) : eH.NW.string(eH.t["5MstTk"]),
@@ -760,8 +760,8 @@ let eQ = function(e) {
     mode: I,
     layout: T,
     participantsOpen: w,
-    participantsListOpen: k,
-    chatOpen: M,
+    participantsListOpen: M,
+    chatOpen: k,
     selectedParticipant: F
   } = (0, d.cj)([eI.Z], () => {
     let e = g === eF.IlC.POPOUT,
@@ -811,7 +811,7 @@ let eQ = function(e) {
     eC = (0, eS.Z)(n, !0),
     {
       hasParticipantsPanel: ev
-    } = (0, ek.Z)({
+    } = (0, eM.Z)({
       location: "ChannelCall"
     }),
     {
@@ -839,7 +839,7 @@ let eQ = function(e) {
             guild: z,
             hasConnectPermission: ee,
             participantsOpen: w,
-            participantsListOpen: k && ev,
+            participantsListOpen: M && ev,
             enableSimplifiedCallSettings: ey,
             renderExternalHeader: l,
             appContext: g,
@@ -854,7 +854,7 @@ let eQ = function(e) {
             filteredParticipants: v,
             participantsVersion: x,
             layout: T,
-            chatOpen: M,
+            chatOpen: k,
             maxSidebarWidth: a - 550,
             shouldUseVoiceEffectsActionBar: eC,
             showGameConsoleCallButton: eu,

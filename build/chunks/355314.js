@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -63,18 +63,18 @@ function T(e, t) {
   return i
 }
 
-function N(e) {
+function A(e) {
   var {
     onClose: t
   } = e, n = S(e, ["onClose"]);
   let O = (0, o.e7)([d.default], () => d.default.getCurrentUser()),
     T = (0, o.e7)([c.Z], () => c.Z.theme),
-    N = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
-    A = T === b.BRd.LIGHT ? "light" : "dark",
+    A = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
+    N = T === b.BRd.LIGHT ? "light" : "dark",
     C = (0, r.jsx)("img", {
       className: y.art,
       alt: "File Upload Nitro Perk",
-      src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(A, "_v2.png")
+      src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(N, "_v2.png")
     }),
     R = i.useMemo(() => {
       let e = m.ZP.getUserMaxFileSize(O);
@@ -83,7 +83,7 @@ function N(e) {
       })
     }, [O]),
     P = (0, p.iL)({
-      guildId: N,
+      guildId: A,
       onClick: () => {
         window.open(h.Z.getArticleURL(b.BhN.NITRO_FAQ), "_blank")
       }

@@ -32,16 +32,16 @@ function O(e) {
     profileType: O
   } = (0, m.z)(), {
     analyticsLocations: I
-  } = (0, c.ZP)(), S = (0, p.W)(t), T = (0, u.ZP)(t, !0), N = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), A = i.useMemo(() => null == N || "" === N ? null : _.Z.parseVoiceChannelStatus(N, !0, {
+  } = (0, c.ZP)(), S = (0, p.W)(t), T = (0, u.ZP)(t, !0), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), N = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, !0, {
     channelId: t.id
-  }), [N, t.id]);
+  }), [A, t.id]);
   i.useEffect(() => {
-    null != A && h.default.track(b.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+    null != N && h.default.track(b.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       channel_id: t.id,
       guild_id: t.guild_id,
       location_stack: I
     })
-  }, [A, t.id, t.guild_id, I]);
+  }, [N, t.id, t.guild_id, I]);
   let C = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
@@ -54,18 +54,18 @@ function O(e) {
     className: y.clickable,
     onClick: C,
     children: [(0, r.jsx)(g.Z, {
-      text: null != A ? A : v.NW.string(v.t.Mgpxi4),
+      text: null != N ? N : v.NW.string(v.t.Mgpxi4),
       variant: "text-xs/normal",
       color: "text-secondary",
       className: y.text
     }), (0, r.jsx)(l.vdY, {
       color: "currentColor",
       size: "xxs",
-      className: a()(y.pencilIcon, null != A ? y.hidden : void 0),
+      className: a()(y.pencilIcon, null != N ? y.hidden : void 0),
       "aria-label": v.NW.string(v.t.bt75u7)
     })]
-  }) : null != A ? (0, r.jsx)(g.Z, {
-    text: A,
+  }) : null != N ? (0, r.jsx)(g.Z, {
+    text: N,
     variant: "text-xs/normal",
     color: "text-secondary",
     className: y.text

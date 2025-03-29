@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -137,7 +137,7 @@ function T(e) {
   })
 }
 
-function N(e, t, n) {
+function A(e, t, n) {
   return (0, r.jsxs)(c.Text, {
     variant: "text-xs/normal",
     className: b.titleRegion,
@@ -160,7 +160,7 @@ function N(e, t, n) {
     })]
   })
 }
-let A = e => {
+let N = e => {
   let {
     loading: t = !1,
     currentOverrides: n,
@@ -175,7 +175,7 @@ let A = e => {
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: b.wrapper,
-    children: [N(o, a, t), (0, r.jsxs)("div", {
+    children: [A(o, a, t), (0, r.jsxs)("div", {
       className: b.content,
       children: [(0, r.jsx)(f.Z, {
         className: b.icon

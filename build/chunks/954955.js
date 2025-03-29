@@ -50,11 +50,11 @@ function c(e, t, n) {
     void 0 !== _ && clearTimeout(_), h = 0, c = p = u = _ = void 0
   }
 
-  function N() {
+  function A() {
     return void 0 === _ ? f : S(i())
   }
 
-  function A() {
+  function N() {
     var e = i(),
       n = O(e);
     if (c = arguments, u = this, p = e, n) {
@@ -63,6 +63,6 @@ function c(e, t, n) {
     }
     return void 0 === _ && (_ = setTimeout(I, t)), f
   }
-  return t = o(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(o(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), A.cancel = T, A.flush = N, A
+  return t = o(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(o(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), N.cancel = T, N.flush = A, N
 }
 e.exports = c

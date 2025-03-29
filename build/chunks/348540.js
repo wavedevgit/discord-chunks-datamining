@@ -41,11 +41,11 @@ function Z(e) {
     onOpenProfile: w
   } = e, {
     relationshipType: R,
-    originApplicationId: k
+    originApplicationId: M
   } = (0, i.cj)([c.Z], () => ({
     relationshipType: c.Z.getRelationshipType(t.id),
     originApplicationId: c.Z.getOriginApplicationId(t.id)
-  })), M = (0, o.vh)(t.id), L = (0, a.Y)({
+  })), k = (0, o.vh)(t.id), L = (0, a.Y)({
     userId: t.id,
     location: "UserProfilePanelBody"
   }), D = (0, l.wn)({
@@ -79,9 +79,9 @@ function Z(e) {
       children: (0, r.jsx)(C.Z, {
         user: t,
         channelId: T.id,
-        applicationId: D ? k : void 0
+        applicationId: D ? M : void 0
       })
-    }), D && M.map(e => (0, r.jsx)(j.Z.Overlay, {
+    }), D && k.map(e => (0, r.jsx)(j.Z.Overlay, {
       children: (0, r.jsx)(C.Z, {
         user: t,
         isGameRelationship: !0,

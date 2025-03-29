@@ -28,8 +28,8 @@ var r = n(997945),
   I = n(234912),
   S = n(405571),
   T = n(730886),
-  N = n(473974),
-  A = n(563856);
+  A = n(473974),
+  N = n(563856);
 let C = 60;
 
 function R() {
@@ -79,7 +79,7 @@ function P() {
     name: i.NW.string(i.t.RSKXOD)
   }, {
     id: r.Ru.SUNSET,
-    iconSource: N,
+    iconSource: A,
     isPremium: !0,
     name: i.NW.string(i.t.ixdjPD)
   }, {
@@ -89,7 +89,7 @@ function P() {
     name: i.NW.string(i.t.cb78Li)
   }, {
     id: r.Ru.Y2K,
-    iconSource: A,
+    iconSource: N,
     isPremium: !0,
     name: i.NW.string(i.t["s+KoXF"])
   }, {

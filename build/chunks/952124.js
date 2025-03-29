@@ -53,8 +53,8 @@ function O(e) {
     trackUserProfileAction: S
   } = (0, m.KZ)(), {
     analyticsLocations: T,
-    newestAnalyticsLocation: N
-  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), A = c.J.useExperiment({
+    newestAnalyticsLocation: A
+  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), N = c.J.useExperiment({
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: !0
@@ -71,7 +71,7 @@ function O(e) {
   }), w = (0, _.Z)({
     user: t,
     guildId: n,
-    location: N,
+    location: A,
     color: "danger",
     onBlock: () => S({
       action: "BLOCK",
@@ -84,7 +84,7 @@ function O(e) {
   }), D = (0, p.Z)({
     user: t,
     guildId: n,
-    location: N,
+    location: A,
     onIgnore: () => S({
       action: "IGNORE",
       analyticsLocations: T
@@ -96,7 +96,7 @@ function O(e) {
   }), L = (0, h.Z)({
     user: t,
     guildId: n,
-    location: N,
+    location: A,
     color: "danger",
     onAction: () => S({
       action: "REPORT",
@@ -110,7 +110,7 @@ function O(e) {
       analyticsLocations: T
     })
   }), M = [
-    [v], A ? [P] : [],
+    [v], N ? [P] : [],
     [D, w, L],
     [(0, u.Z)({
       application: R,

@@ -64,9 +64,9 @@ function T(e, t) {
   }), e
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,7 +74,7 @@ function N(e, t) {
   return i
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -187,7 +187,7 @@ let M = e => {
       isVisible: t,
       onAnimationRest: n,
       targetElementRef: r
-    } = e, a = N(e, ["isVisible", "onAnimationRest", "targetElementRef"]);
+    } = e, a = A(e, ["isVisible", "onAnimationRest", "targetElementRef"]);
     let {
       reducedMotion: s
     } = o.useContext(m.S);
@@ -359,7 +359,7 @@ let F = e => {
     children: t,
     className: n,
     element: r = "div"
-  } = e, a = N(e, ["children", "className", "element"]);
+  } = e, a = A(e, ["children", "className", "element"]);
   return (0, i.jsx)(B, T(I({}, a), {
     children: e => o.createElement(r, null != n ? T(I({}, e), {
       className: n

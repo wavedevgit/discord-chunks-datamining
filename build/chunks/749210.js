@@ -27,9 +27,9 @@ var r = n(990547),
   I = n(573261),
   S = n(668781),
   T = n(981631),
-  N = n(388032);
+  A = n(388032);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,7 +45,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -87,8 +87,8 @@ function D(e, t) {
 }
 let L = e => {
     S.Z.show({
-      title: N.NW.string(N.t.cTaRxM),
-      body: N.NW.formatToPlainString(N.t["VSd+Ag"], {
+      title: A.NW.string(A.t.cTaRxM),
+      body: A.NW.formatToPlainString(A.t["VSd+Ag"], {
         quantity: e
       })
     })
@@ -103,8 +103,8 @@ let L = e => {
   },
   M = () => {
     S.Z.show({
-      title: N.NW.string(N.t.ZZlox8),
-      body: N.NW.string(N.t.ZUEGFh)
+      title: A.NW.string(A.t.ZZlox8),
+      body: A.NW.string(A.t.ZUEGFh)
     })
   };
 
@@ -302,7 +302,7 @@ let U = {
   }),
   async createRole(e, t, n) {
     let r = {
-      name: null != t && "" !== t ? t : N.NW.string(N.t.QBMHvL),
+      name: null != t && "" !== t ? t : A.NW.string(A.t.QBMHvL),
       color: null != n ? n : 0,
       permissions: y.Hn
     };

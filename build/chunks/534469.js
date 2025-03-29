@@ -36,8 +36,8 @@ var r = n(200651),
   A = n(492593),
   w = n(453687),
   R = n(348238),
-  k = n(62072),
-  M = n(38267),
+  M = n(62072),
+  k = n(38267),
   L = n(25015),
   D = n(689674),
   W = n(438075),
@@ -135,7 +135,7 @@ function en(e) {
     {
       popouts: f,
       setPopout: m
-    } = (0, M.Z)(i.id, Y.d$),
+    } = (0, k.Z)(i.id, Y.d$),
     g = (0, Z.ZP)(i),
     b = (0, w.iG)(i),
     _ = (0, w.Gx)(i);
@@ -193,7 +193,7 @@ function er(e) {
     popouts: B,
     selected: G,
     setPopout: Q
-  } = (0, M.Z)(a.id, Y.d$), et = x.RS.useSetting(), en = x.NA.useSetting(), er = (0, u.e7)([v.Z], () => v.Z.getMessageByReference(O)), ei = (0, m.A)((null !== (n = a.editedTimestamp) && void 0 !== n ? n : a.timestamp).valueOf()), {
+  } = (0, k.Z)(a.id, Y.d$), et = x.RS.useSetting(), en = x.NA.useSetting(), er = (0, u.e7)([v.Z], () => v.Z.getMessageByReference(O)), ei = (0, m.A)((null !== (n = a.editedTimestamp) && void 0 !== n ? n : a.timestamp).valueOf()), {
     handleMouseEnter: el,
     handleMouseLeave: eo,
     isHovered: ea
@@ -214,7 +214,7 @@ function er(e) {
     allowLinks: !0,
     previewLinkTarget: !0,
     viewingChannelId: j
-  }), eh = (0, k.Z)(s, h, es), ef = (0, Z.ZP)(a), em = (0, w.iG)(a, C), eg = (0, w.Gx)(a), eb = (0, H.Z)(e, ed, !1), e_ = i.useCallback(() => (0, y.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
+  }), eh = (0, M.Z)(s, h, es), ef = (0, Z.ZP)(a), em = (0, w.iG)(a, C), eg = (0, w.Gx)(a), eb = (0, H.Z)(e, ed, !1), e_ = i.useCallback(() => (0, y.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
     guildId: g,
     roleId: ef.iconRoleId
   });
@@ -311,7 +311,7 @@ let ei = i.memo(function(e) {
       popouts: em,
       selected: eg,
       setPopout: eb
-    } = (0, M.Z)(y.id, Y.d$),
+    } = (0, k.Z)(y.id, Y.d$),
     e_ = (0, R.qo)(y, Q, eb),
     eC = (0, R.Go)(y, Q),
     {
@@ -342,8 +342,8 @@ let ei = i.memo(function(e) {
     eA = eg || eZ || eT && eO,
     ew = eA || ej,
     eR = (0, u.e7)([j.Z], () => y.hasFlag(q.iLy.HAS_THREAD) && j.Z.getChannel(N.default.castMessageIdAsChannelId(y.id))),
-    ek = y.isFirstMessageInForumPost(Q),
-    eM = (0, m.A)((null !== (n = y.editedTimestamp) && void 0 !== n ? n : y.timestamp).valueOf()),
+    eM = y.isFirstMessageInForumPost(Q),
+    ek = (0, m.A)((null !== (n = y.editedTimestamp) && void 0 !== n ? n : y.timestamp).valueOf()),
     eL = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
     {
       content: eD,
@@ -352,13 +352,13 @@ let ei = i.memo(function(e) {
       hideSimpleEmbedContent: ep && eh,
       isInteracting: ew,
       formatInline: !1,
-      allowList: ek || eM,
-      allowHeading: ek || eM,
+      allowList: eM || ek,
+      allowHeading: eM || ek,
       allowLinks: !0,
       allowDevLinks: eL,
       previewLinkTarget: !0
     }),
-    eU = (0, k.Z)(P, et, eT),
+    eU = (0, M.Z)(P, et, eT),
     eB = (0, Z.ZP)(y),
     eF = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
     eH = function(e) {

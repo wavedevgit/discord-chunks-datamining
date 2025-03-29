@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -71,31 +71,31 @@ function T(e) {
   } = e, {
     channelAction: E,
     completed: b
-  } = (0, g.P3)(f, _), T = (0, g.K_)(f, null == E ? void 0 : E.channelId), N = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), A = (null == E ? void 0 : E.actionType) === m.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(!1), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
+  } = (0, g.P3)(f, _), T = (0, g.K_)(f, null == E ? void 0 : E.channelId), A = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), N = (null == E ? void 0 : E.actionType) === m.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(!1), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
     b ? s.Z.timing(w, {
       toValue: 0,
-      duration: N ? 1 : 350,
+      duration: A ? 1 : 350,
       easing: s.Z.Easing.quad,
-      delay: 500 * !A
+      delay: 500 * !N
     }).start(() => P(!0)) : s.Z.timing(w, {
       toValue: 1,
-      duration: N ? 1 : 350,
+      duration: A ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, w, A, N]), i.useEffect(() => {
+  }, [b, w, N, A]), i.useEffect(() => {
     b && R && s.Z.timing(D, {
       toValue: 1,
-      duration: 350 * !N,
+      duration: 350 * !A,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, D, R, N]);
+  }, [b, D, R, A]);
   let L = i.useCallback(() => {
     null != T && (0, h.gp)(f, T.channelId)
   }, [f, T]);
-  return null == E || A && !R ? null : (0, r.jsx)("div", {
+  return null == E || N && !R ? null : (0, r.jsx)("div", {
     className: a()(y.container, p),
     children: R && null != T ? (0, r.jsx)(s.Z.div, {
       style: {
@@ -166,7 +166,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     guildId: t,
     channel: n,

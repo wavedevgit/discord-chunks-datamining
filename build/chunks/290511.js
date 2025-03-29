@@ -5,14 +5,14 @@ n.d(t, {
   M$: () => f,
   NE: () => c,
   NO: () => u,
-  Oq: () => A,
+  Oq: () => N,
   RF: () => y,
   Un: () => v,
   X: () => m,
   YW: () => d,
   ae: () => O,
   b3: () => p,
-  cf: () => N,
+  cf: () => A,
   dr: () => S,
   fY: () => g,
   iU: () => l,
@@ -149,7 +149,7 @@ function T(e) {
   }
 }
 
-function N(e) {
+function A(e) {
   var t, n, r;
   return {
     prompts: e.prompts.map(T),
@@ -163,6 +163,6 @@ function N(e) {
   }
 }
 
-function A(e) {
+function N(e) {
   return null == e || null == e.id && null == e.name
 }

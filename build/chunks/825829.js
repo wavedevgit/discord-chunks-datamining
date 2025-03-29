@@ -87,14 +87,14 @@ function T(e) {
   return e.type === g.hBH.AUTO_MODERATION_NOTIFICATION
 }
 
-function N(e) {
+function A(e) {
   return e.type === g.hBH.AUTO_MODERATION_MESSAGE
 }
 
-function A(e, t) {
+function N(e, t) {
   var n, r, i, o, a;
   let [s] = null !== (n = e.embeds) && void 0 !== n ? n : [];
-  return null == s ? void 0 : N(s) ? null == s ? void 0 : null === (i = s.fields) || void 0 === i ? void 0 : null === (r = i.find(e => {
+  return null == s ? void 0 : A(s) ? null == s ? void 0 : null === (i = s.fields) || void 0 === i ? void 0 : null === (r = i.find(e => {
     let {
       rawName: n
     } = e;
@@ -114,27 +114,27 @@ function C(e) {
 }
 
 function R(e) {
-  let t = A(e, s.G.DECISION_OUTCOME);
+  let t = N(e, s.G.DECISION_OUTCOME);
   if (null != t) return t
 }
 
 function P(e) {
-  let t = A(e, s.G.QUARANTINE_USER);
+  let t = N(e, s.G.QUARANTINE_USER);
   if (null != t) return t
 }
 
 function w(e) {
-  let t = A(e, s.G.QUARANTINE_USER_ACTION);
+  let t = N(e, s.G.QUARANTINE_USER_ACTION);
   if (null != t) return t
 }
 
 function D(e) {
-  let t = A(e, s.G.BLOCK_PROFILE_UPDATE_TYPE);
+  let t = N(e, s.G.BLOCK_PROFILE_UPDATE_TYPE);
   if (null != t) return t
 }
 
 function L(e) {
-  let t = A(e, s.G.QUARANTINE_EVENT);
+  let t = N(e, s.G.QUARANTINE_EVENT);
   if (null != t) return t
 }
 
@@ -185,7 +185,7 @@ function M(e, t) {
 }
 
 function k(e, t, n) {
-  let r = A(e, s.G.VOICE_CHANNEL_STATUS_OUTCOME);
+  let r = N(e, s.G.VOICE_CHANNEL_STATUS_OUTCOME);
   if (null == r) return null;
   let i = "blocked" === r ? E.t.cLQrq6 : E.t.bma6cn;
   return E.NW.format(i, {
@@ -203,8 +203,8 @@ function j(e, t) {
     u = L(e),
     d = P(e),
     f = R(e),
-    _ = A(e, s.G.INTERACTION_CALLBACK_TYPE),
-    h = A(e, s.G.APPLICATION_NAME);
+    _ = N(e, s.G.INTERACTION_CALLBACK_TYPE),
+    h = N(e, s.G.APPLICATION_NAME);
   if (null != d) {
     let e = x(l, c, u);
     if (null != e) return e
@@ -261,14 +261,14 @@ function G(e) {
 
 function B(e) {
   var t;
-  let n = A(e, l.D.NOTIFICATION_TYPE),
-    r = A(e, l.D.JOIN_ATTEMPTS),
-    i = A(e, l.D.RAID_DATETIME),
-    o = A(e, l.D.DMS_SENT),
-    a = A(e, l.D.RAID_TYPE),
-    s = A(e, l.D.RESOLVED_REASON),
-    c = A(e, l.D.DECISION_ID),
-    u = A(e, l.D.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
+  let n = N(e, l.D.NOTIFICATION_TYPE),
+    r = N(e, l.D.JOIN_ATTEMPTS),
+    i = N(e, l.D.RAID_DATETIME),
+    o = N(e, l.D.DMS_SENT),
+    a = N(e, l.D.RAID_TYPE),
+    s = N(e, l.D.RESOLVED_REASON),
+    c = N(e, l.D.DECISION_ID),
+    u = N(e, l.D.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
   return {
     notificationType: null !== (t = G(n)) && void 0 !== t ? t : void 0,
     joinAttempts: null != r ? parseInt(r) : void 0,
@@ -282,23 +282,23 @@ function B(e) {
 }
 
 function F(e) {
-  let t = A(e, s.G.CHANNEL_ID),
-    n = A(e, s.G.ALERT_ACTIONS_EXECUTION),
+  let t = N(e, s.G.CHANNEL_ID),
+    n = N(e, s.G.ALERT_ACTIONS_EXECUTION),
     r = (0, h.t)(n);
   return {
     content: C(e),
-    ruleName: A(e, s.G.RULE_NAME),
-    decisionId: A(e, s.G.DECISION_ID),
-    keyword: A(e, s.G.KEYWORD),
-    keywordMatchedContent: A(e, s.G.KEYWORD_MATCHED_CONTENT),
-    flaggedMessageId: A(e, s.G.FLAGGED_MESSAGE_ID),
-    timeoutDuration: A(e, s.G.TIMEOUT_DURATION),
-    quarantineType: A(e, s.G.QUARANTINE_USER),
-    quarantineAction: A(e, s.G.QUARANTINE_USER_ACTION),
-    decisionReason: A(e, s.G.DECISION_REASON),
-    applicationName: A(e, s.G.APPLICATION_NAME),
-    interactionUserId: A(e, s.G.INTERACTION_USER_ID),
-    interactionCallbackType: A(e, s.G.INTERACTION_CALLBACK_TYPE),
+    ruleName: N(e, s.G.RULE_NAME),
+    decisionId: N(e, s.G.DECISION_ID),
+    keyword: N(e, s.G.KEYWORD),
+    keywordMatchedContent: N(e, s.G.KEYWORD_MATCHED_CONTENT),
+    flaggedMessageId: N(e, s.G.FLAGGED_MESSAGE_ID),
+    timeoutDuration: N(e, s.G.TIMEOUT_DURATION),
+    quarantineType: N(e, s.G.QUARANTINE_USER),
+    quarantineAction: N(e, s.G.QUARANTINE_USER_ACTION),
+    decisionReason: N(e, s.G.DECISION_REASON),
+    applicationName: N(e, s.G.APPLICATION_NAME),
+    interactionUserId: N(e, s.G.INTERACTION_USER_ID),
+    interactionCallbackType: N(e, s.G.INTERACTION_CALLBACK_TYPE),
     embedChannel: _.Z.getChannel(t),
     embedChannelId: t,
     alertActionsExecution: null != r ? r : void 0
@@ -336,6 +336,6 @@ function H(e) {
 }
 
 function W(e) {
-  return A(e, l.D.ACTION_BY_USER_ID)
+  return N(e, l.D.ACTION_BY_USER_ID)
 }
 let Y = void 0

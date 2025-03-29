@@ -25,8 +25,8 @@ var r, i, o = n(200651),
   I = n(36703),
   S = n(228488),
   T = n(540026),
-  N = n(528472),
-  A = n(455813),
+  A = n(528472),
+  N = n(455813),
   C = n(283756),
   R = n(793148),
   P = n(981631),
@@ -540,7 +540,7 @@ class J {
       location: "media_player"
     }).enabled, (0, g.x)({
       location: "media_player"
-    }).enabled && N.Z.getInstance().getCapabilities()
+    }).enabled && A.Z.getInstance().getCapabilities()
   }
 }
 class $ extends(i = a.PureComponent) {
@@ -772,7 +772,7 @@ class $ extends(i = a.PureComponent) {
         onClick: this.toggleFullscreen,
         node: (0, S.fn)(null == e ? void 0 : e.parentNode, e)
       }) : null
-    }) : (0, o.jsx)(A.Z, {
+    }) : (0, o.jsx)(N.Z, {
       onPlay: this.handleVideoClick,
       inactive: !r
     })

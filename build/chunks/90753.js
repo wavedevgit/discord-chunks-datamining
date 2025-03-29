@@ -19,8 +19,8 @@ let v = 1e3 / 60;
 
 function b(e, t, n, b) {
   let g = (0, o.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
-    y = (0, o.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
-    E = (0, o.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
+    E = (0, o.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
+    y = (0, o.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
     O = r.useRef({}),
     S = r.useRef(new i.Xp),
     x = r.useCallback(t => {
@@ -108,11 +108,11 @@ function b(e, t, n, b) {
         fallbackColor: g,
         linesDrawnAt: O,
         streamerId: t,
-        outlineColorDark: y,
-        outlineColorLight: E,
+        outlineColorDark: E,
+        outlineColorLight: y,
         channelId: b
       })
-    }, [e, b, g, y, E]);
+    }, [e, b, g, E, y]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;

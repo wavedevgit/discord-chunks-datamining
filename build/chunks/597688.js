@@ -31,8 +31,8 @@ let m = new Map,
   I = E,
   S = b,
   T = v,
-  N = null,
-  A = !1,
+  A = null,
+  N = !1,
   C = new Set,
   R = new Map,
   P = new Map,
@@ -58,13 +58,13 @@ let m = new Map,
     O.set(t, n), (C = new Set(C)).delete(t), (R = new Map(R)).delete(t), (P = new Map(P)).delete(t)
   },
   M = e => {
-    A = !0, r = void 0, o = void 0, w = e.options
+    N = !0, r = void 0, o = void 0, w = e.options
   },
   k = e => {
     let {
       error: t
     } = e;
-    y = m, O = g, T = v, A = !1, C = new Set, r = t, o = Date.now()
+    y = m, O = g, T = v, N = !1, C = new Set, r = t, o = Date.now()
   },
   j = e => {
     if (0 === e.categories.length) y = m, O = g;
@@ -75,7 +75,7 @@ let m = new Map,
         !t.has(r) && (null == e.unpublishedAt || e.unpublishedAt > n) && t.set(r, e)
       }), S = new Map([...(y = t).values()].map(e => [e.storeListingId, e])), O = new Map((0, _.Cs)(y, !0).map(e => [e.skuId, e])), I = new Map((0, _.Cs)(y, !1).map(e => [e.storeListingId, e]))
     }
-    G(e.categories, O), i = Date.now(), A = !1, r = void 0, o = void 0
+    G(e.categories, O), i = Date.now(), N = !1, r = void 0, o = void 0
   },
   U = e => {
     if (0 === e.shopHome.categories.length) return;
@@ -87,7 +87,7 @@ let m = new Map,
       T = v;
       return
     }
-    switch (N) {
+    switch (A) {
       case d.u.POPULAR:
         T = p.HU;
         break;
@@ -100,7 +100,7 @@ let m = new Map,
     }
   },
   B = () => {
-    y = m, O = g, T = v, i = void 0, A = !1, C = new Set, r = void 0, o = void 0, w = {}
+    y = m, O = g, T = v, i = void 0, N = !1, C = new Set, r = void 0, o = void 0, w = {}
   },
   F = () => {
     if (!u.Z.hasLoadedExperiments) return;
@@ -111,14 +111,14 @@ let m = new Map,
     }, {
       autoTrackExposure: !1
     });
-    e !== N && (i = void 0), N = e
+    e !== A && (i = void 0), A = e
   };
 class V extends(a = l.ZP.Store) {
   initialize() {
     this.syncWith([f.default], B), this.syncWith([u.Z], F)
   }
   get isFetchingCategories() {
-    return A
+    return N
   }
   isFetchingProduct(e) {
     return null != e && C.has(e)

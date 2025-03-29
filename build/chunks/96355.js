@@ -123,9 +123,9 @@
       I = (d - b) / s,
       S = (-u - E) / a,
       T = (-d - b) / s,
-      N = f(1, 0, O, I),
-      A = f(O, I, S, T);
-    return 0 === o && A > 0 && (A -= tt), 1 === o && A < 0 && (A += tt), [v, y, N, A]
+      A = f(1, 0, O, I),
+      N = f(O, I, S, T);
+    return 0 === o && N > 0 && (N -= tt), 1 === o && N < 0 && (N += tt), [v, y, A, N]
   }
 
   function p(e, t) {
@@ -225,7 +225,7 @@
     return t_[e][t]
   }
 
-  function N(e, t, n) {
+  function A(e, t, n) {
     var r, i, o, a = n.length - 1;
     if (0 === a) return 0;
     if (0 === e) {
@@ -233,18 +233,18 @@
       return i
     }
     for (r = Array(a), o = 0; o < a; o++) r[o] = a * (n[o + 1] - n[o]);
-    return N(e - 1, t, r)
+    return A(e - 1, t, r)
   }
 
-  function A(e, t, n) {
-    var r = N(1, n, e),
-      i = N(1, n, t);
+  function N(e, t, n) {
+    var r = A(1, n, e),
+      i = A(1, n, t);
     return Math.sqrt(r * r + i * i)
   }
 
   function C(e, t, n) {
     var r, i, o, a;
-    for (void 0 === n && (n = 1), r = n / 2, i = 0, o = 0; o < 20; o++) a = r * td[20][o] + r, i += tf[20][o] * A(e, t, a);
+    for (void 0 === n && (n = 1), r = n / 2, i = 0, o = 0; o < 20; o++) a = r * td[20][o] + r, i += tf[20][o] * N(e, t, a);
     return r * i
   }
 
@@ -272,8 +272,8 @@
       I = (-u - g) / a,
       S = (-d - E) / s,
       T = R(1, 0, y, O),
-      N = R(y, O, I, S);
-    return 0 === o && N > 0 && (N -= tp), 1 === o && N < 0 && (N += tp), [b, v, T, N]
+      A = R(y, O, I, S);
+    return 0 === o && A > 0 && (A -= tp), 1 === o && A < 0 && (A += tp), [b, v, T, A]
   }
 
   function w(e, t) {
@@ -475,10 +475,10 @@
   function en(e, t, n, r, i) {
     var o, a;
     if (i === eR(e, t, n, r) > 0)
-      for (o = t; o < n; o += r) a = eN(o, e[o], e[o + 1], a);
+      for (o = t; o < n; o += r) a = eA(o, e[o], e[o + 1], a);
     else
-      for (o = n - r; o >= t; o -= r) a = eN(o, e[o], e[o + 1], a);
-    return a && ev(a, a.next) && (eA(a), a = a.next), a
+      for (o = n - r; o >= t; o -= r) a = eA(o, e[o], e[o + 1], a);
+    return a && ev(a, a.next) && (eN(a), a = a.next), a
   }
 
   function er(e, t) {
@@ -488,7 +488,7 @@
     do
       if (n = !1, r.steiner || !ev(r, r.next) && 0 !== eb(r.prev, r, r.next)) r = r.next;
       else {
-        if (eA(r), (r = t = r.prev) === r.next) return null;
+        if (eN(r), (r = t = r.prev) === r.next) return null;
         n = !0
       } while (n || r !== t);
     return t
@@ -498,7 +498,7 @@
     if (e) {
       !a && o && e_(e, r, i, o);
       for (var s, l, c = e; e.prev !== e.next;)
-        if (s = e.prev, l = e.next, o ? ea(e, r, i, o) : eo(e)) t.push(s.i / n), t.push(e.i / n), t.push(l.i / n), eA(e), e = l.next, c = l.next;
+        if (s = e.prev, l = e.next, o ? ea(e, r, i, o) : eo(e)) t.push(s.i / n), t.push(e.i / n), t.push(l.i / n), eN(e), e = l.next, c = l.next;
         else if ((e = l) === c) {
         a ? 1 === a ? ei(e = es(e, t, n), t, n, r, i, o, 2) : 2 === a && el(e, t, n, r, i, o) : ei(er(e), t, n, r, i, o, 1);
         break
@@ -539,7 +539,7 @@
     do {
       var i = r.prev,
         o = r.next.next;
-      !ev(i, o) && ey(i, r, r.next, o) && eI(i, o) && eI(o, i) && (t.push(i.i / n), t.push(r.i / n), t.push(o.i / n), eA(r), eA(r.next), r = e = o), r = r.next
+      !ev(i, o) && ey(i, r, r.next, o) && eI(i, o) && eI(o, i) && (t.push(i.i / n), t.push(r.i / n), t.push(o.i / n), eN(r), eN(r.next), r = e = o), r = r.next
     } while (r !== e);
     return r
   }
@@ -684,12 +684,12 @@
     return e.next = t, t.prev = e, n.next = i, i.prev = n, r.next = n, n.prev = r, o.next = r, r.prev = o, r
   }
 
-  function eN(e, t, n, r) {
+  function eA(e, t, n, r) {
     var i = new eC(e, t, n);
     return r ? (i.next = r.next, i.prev = r, r.next.prev = i, r.next = i) : (i.prev = i, i.next = i), i
   }
 
-  function eA(e) {
+  function eN(e) {
     e.next.prev = e.prev, e.prev.next = e.next, e.prevZ && (e.prevZ.nextZ = e.nextZ), e.nextZ && (e.nextZ.prevZ = e.prevZ)
   }
 
@@ -729,7 +729,7 @@
     function n(e, t) {
       t.length && t.pop();
       for (var n = c[e < 0 ? ~e : e], r = 0, i = n.length; r < i; ++r) t.push(l(n[r], r));
-      e < 0 && tN(t, i)
+      e < 0 && tA(t, i)
     }
 
     function r(e) {
@@ -904,7 +904,7 @@
       a.area = t.area + o.area, a.type = "Polygon", a.arcs = a.arcs[0], n.splice(i, 1), n.shift(), n.splice(r(n, a.area), 0, a)
     }();
     if (t > n.length) throw RangeError("Can't collapse topology into " + t + " pieces.");
-    return tA(e, e.objects.triangles).features.map(function(e) {
+    return tN(e, e.objects.triangles).features.map(function(e) {
       return e.geometry.coordinates[0].pop(), e.geometry.coordinates[0]
     })
   }
@@ -1769,10 +1769,10 @@
         return u
       }
     },
-    tN = function(e, t) {
+    tA = function(e, t) {
       for (var n, r = e.length, i = r - t; i < --r;) n = e[i], e[i++] = e[r], e[r] = n
     },
-    tA = function(e, t) {
+    tN = function(e, t) {
       return "GeometryCollection" === t.type ? {
         type: "FeatureCollection",
         features: t.geometries.map(function(t) {

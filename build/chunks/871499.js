@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A,
+  Z: () => N,
   d: () => w
 }), n(47120);
 var r = n(200651),
@@ -78,9 +78,9 @@ function T(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = "https://cdn.discordapp.com/assets/content/3988d11030317ce331a0b327cac18a9c02a693041f9a7695bb13b3d4cb486e11.webm";
+let A = "https://cdn.discordapp.com/assets/content/3988d11030317ce331a0b327cac18a9c02a693041f9a7695bb13b3d4cb486e11.webm";
 
-function A(e) {
+function N(e) {
   let {
     label: t,
     onClick: n,
@@ -98,8 +98,8 @@ function A(e) {
     isActive: v = !1,
     tooltipPosition: O = "top",
     shouldShowTooltip: T = !0,
-    forceTooltipOpen: N = !1,
-    buttonRef: A,
+    forceTooltipOpen: A = !1,
+    buttonRef: N,
     grow: C,
     "aria-label": R,
     look: P,
@@ -112,14 +112,14 @@ function A(e) {
       text: t,
       "aria-label": R,
       shouldShow: T,
-      forceOpen: N,
+      forceOpen: A,
       children: e => {
         var {
           onClick: t,
           onContextMenu: m,
           onMouseEnter: O,
           onMouseLeave: T
-        } = e, N = S(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
+        } = e, A = S(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zxk, I(y({
           look: null != P ? P : l.zxk.Looks.BLANK,
           size: null != D ? D : l.zxk.Sizes.NONE,
@@ -152,10 +152,10 @@ function A(e) {
             [b.active]: v
           }, d),
           wrapperClassName: f,
-          buttonRef: A,
+          buttonRef: N,
           grow: C,
           "aria-label": R
-        }, N), {
+        }, A), {
           children: [(0, r.jsx)(h, {
             size: s.Z.md,
             className: a()(_, {
@@ -241,7 +241,7 @@ function w(e) {
     H = M || Z,
     W = H ? [b.experimentButton, V ? P[j] : R[j], x && null == T && b.fullRegionButton, V && !x && null != T && b.attachedButton] : [C[j]],
     Y = null !== (t = k.onContextMenu) && void 0 !== t ? t : T,
-    K = (0, r.jsx)(A, I(y({}, k), {
+    K = (0, r.jsx)(N, I(y({}, k), {
       grow: !1,
       onContextMenu: Y,
       iconClassName: a()(O, b.centerIcon, H && b.experimentControlIcon, H && x && null == T && b.fullRegionIcon),
@@ -282,7 +282,7 @@ function w(e) {
         autoPlay: !0,
         className: b.glowVideo,
         children: (0, r.jsx)("source", {
-          src: N,
+          src: A,
           type: "video/webm"
         })
       })

@@ -69,8 +69,8 @@ function b(e) {
     overflowCountClassName: I,
     hideOverflowCount: S = !1,
     disableUsernameTooltip: T = !1,
-    disableUserPopout: N = !1,
-    onClick: A,
+    disableUserPopout: A = !1,
+    onClick: N,
     onFocus: C,
     onUserClick: R,
     onUserPopoutRequestClose: P
@@ -86,7 +86,7 @@ function b(e) {
           guildId: s,
           channelId: h,
           nick: f.ZP.getNickname(s, h, e),
-          disablePopout: "function" == typeof N ? N(e.id) : N,
+          disablePopout: "function" == typeof A ? A(e.id) : A,
           onClick: R,
           onPopoutRequestClose: () => {
             D(!1), null == P || P()
@@ -138,7 +138,7 @@ function b(e) {
         className: a()(p.avatar, p.overflow, I),
         onFocus: C,
         onClick: e => {
-          null == A || A(e), D(!0)
+          null == N || N(e), D(!0)
         },
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,

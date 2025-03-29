@@ -26,8 +26,8 @@ var r = n(192379),
   I = n(592125),
   S = n(757266),
   T = n(650774),
-  N = n(430824),
-  A = n(283595),
+  A = n(430824),
+  N = n(283595),
   C = n(496675),
   R = n(699516),
   P = n(944486),
@@ -56,8 +56,8 @@ function B(e) {
     channelId: (0, p.pY)(null == V ? void 0 : V.location),
     userId: Z.id,
     activity: F
-  }), ee = (0, o.e7)([A.Z, O.Z, x.Z, S.Z], () => Q || null != q && (0, k.t)({
-    LibraryApplicationStore: A.Z,
+  }), ee = (0, o.e7)([N.Z, O.Z, x.Z, S.Z], () => Q || null != q && (0, k.t)({
+    LibraryApplicationStore: N.Z,
     LaunchableGameStore: O.Z,
     DispatchApplicationStore: x.Z,
     ConnectedAppsStore: S.Z,
@@ -73,7 +73,7 @@ function B(e) {
     activity: F,
     channelId: $,
     application: er
-  }), ea = (0, u.GK)(null != er ? er : void 0), es = (0, o.e7)([I.Z, N.Z, T.Z, R.Z, P.Z, D.Z, C.Z], () => null == V || ei ? (0, _.Z)({
+  }), ea = (0, u.GK)(null != er ? er : void 0), es = (0, o.e7)([I.Z, A.Z, T.Z, R.Z, P.Z, D.Z, C.Z], () => null == V || ei ? (0, _.Z)({
     user: Z,
     activity: F,
     application: er,
@@ -81,7 +81,7 @@ function B(e) {
     currentUser: X,
     isEmbedded: Q,
     ChannelStore: I.Z,
-    GuildStore: N.Z,
+    GuildStore: A.Z,
     GuildMemberCountStore: T.Z,
     RelationshipStore: R.Z,
     SelectedChannelStore: P.Z,

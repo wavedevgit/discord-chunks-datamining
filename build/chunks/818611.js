@@ -77,11 +77,11 @@ function T(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = 3,
-  A = 80,
+let A = 3,
+  N = 80,
   C = 12,
   R = 16,
-  P = () => A,
+  P = () => N,
   w = e => {
     var {
       children: t,
@@ -110,7 +110,7 @@ let N = 3,
       }),
       O = (0, _.Yq)(n.skuId),
       T = p.ZP.canUseCollectibles(t),
-      N = a === m.$0.PREMIUM_PURCHASE && !T,
+      A = a === m.$0.PREMIUM_PURCHASE && !T,
       C = i.useRef(null),
       R = (0, d.Z)(null != o ? o : C),
       {
@@ -118,7 +118,7 @@ let N = 3,
       } = (0, g.Z)({
         user: t,
         avatarDecorationOverride: n,
-        size: A,
+        size: N,
         onlyAnimateOnHover: !R
       }),
       D = () => a === m.$0.PURCHASE || a === m.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
@@ -144,7 +144,7 @@ let N = 3,
         className: b.iconBadge
       });
     return (0, r.jsxs)(w, I(y({
-      className: N ? b.decorationGridItemChurned : void 0,
+      className: A ? b.decorationGridItemChurned : void 0,
       innerRef: null != o ? o : C,
       isSelected: s
     }, h), {
@@ -224,7 +224,7 @@ let N = 3,
     return (0, r.jsx)(u.GMG, {
       fade: !0,
       className: b.list,
-      columns: N,
+      columns: A,
       sections: c.map(e => {
         let {
           items: t

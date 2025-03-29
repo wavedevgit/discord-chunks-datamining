@@ -49,7 +49,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function N(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -104,7 +104,7 @@ function D(e, t, n) {
     a = r ? v.Z.getActivities() : b.Z.getActivities(n, e),
     s = _.Z.getStreamForUser(n, e),
     l = y.default.getUser(n);
-  return null == l ? null : A(T({
+  return null == l ? null : N(T({
     type: "MEMBER"
   }, g.ZP.getMember(e, n)), {
     user: l,

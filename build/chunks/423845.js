@@ -22,8 +22,8 @@ var r = n(620014),
   I = n(58834),
   S = n(453342),
   T = 1,
-  N = 2,
-  A = 4,
+  A = 2,
+  N = 4,
   C = "[object Arguments]",
   R = "[object Array]",
   P = "[object Boolean]",
@@ -54,8 +54,8 @@ var r = n(620014),
 
 function et(e, t, n, R, P, w) {
   var D, M = t & T,
-    k = t & N,
-    U = t & A;
+    k = t & A,
+    U = t & N;
   if (n && (D = P ? n(e, R, P, w) : n(e)), void 0 !== D) return D;
   if (!y(e)) return e;
   var G = E(e);

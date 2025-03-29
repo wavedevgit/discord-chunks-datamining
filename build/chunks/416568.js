@@ -35,8 +35,8 @@ var r = n(200651),
   A = n(271383),
   D = n(430824),
   R = n(771845),
-  L = n(358085),
-  k = n(709054),
+  k = n(358085),
+  L = n(709054),
   M = n(727258),
   G = n(605951),
   B = n(474109),
@@ -95,7 +95,7 @@ function el(e, t) {
   }
   return i
 }
-let ea = (0, L.isWindows)() ? 4 : 12 * !(0, L.isMac)();
+let ea = (0, k.isWindows)() ? 4 : 12 * !(0, k.isMac)();
 class es {
   setGuildsTree(e) {
     this.guildsTree = e
@@ -173,7 +173,7 @@ class es {
 
 function ec(e) {
   let {
-    disableAppDownload: t = L.isPlatformEmbedded,
+    disableAppDownload: t = k.isPlatformEmbedded,
     isOverlay: n = !1,
     className: o,
     themeOverride: a
@@ -182,7 +182,7 @@ function ec(e) {
   } = (0, m.TCT)(), [h] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), b = (0, p.e7)([P.Z], () => P.Z.lurkingGuildIds()), y = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), ec = y.concat(ei), eu = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), ed = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ep, eh] = i.useState(!1), ef = i.useCallback(() => eh(!0), []), eg = i.useCallback(() => eh(!1), []), em = i.useRef(!1), [eb] = i.useState(() => new f.V7), ev = i.useRef(null), ey = i.useRef(null), e_ = (0, u.OP)(), {
+  }), b = (0, p.e7)([P.Z], () => P.Z.lurkingGuildIds()), y = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => L.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), ec = y.concat(ei), eu = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), ed = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ep, eh] = i.useState(!1), ef = i.useCallback(() => eh(!0), []), eg = i.useCallback(() => eh(!1), []), em = i.useRef(!1), [eb] = i.useState(() => new f.V7), ev = i.useRef(null), ey = i.useRef(null), e_ = (0, u.OP)(), {
     ref: eO
   } = e_, ej = el(e_, ["ref"]), ex = (0, m.mFp)(), [eC, eS] = i.useState(!1), [eP, eI] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eZ = i.useMemo(() => new es(h, eS, eI, () => {
     var e, t;
@@ -263,8 +263,8 @@ function ec(e) {
           return null
       }
     }, [ef, eg, ep, eZ.setNodeRef]),
-    eL = h.getRoots(),
-    ek = (0, C.Z)(),
+    ek = h.getRoots(),
+    eL = (0, C.Z)(),
     eM = (0, N.U)(),
     {
       enabled: eG
@@ -326,7 +326,7 @@ function ec(e) {
                 gap: "xs",
                 ref: eZ.scrollerRef,
                 onScroll: eZ.handleScroll,
-                children: [(0, r.jsx)(Y.u, {}), ek ? (0, r.jsx)(S.Z, {}) : null, (0, r.jsx)(q.Z, {
+                children: [(0, r.jsx)(Y.u, {}), eL ? (0, r.jsx)(S.Z, {}) : null, (0, r.jsx)(q.Z, {
                   isOnHubVerificationRoute: eA
                 }), (0, r.jsx)(U.Z, {}), eM, ec.map(e => (0, r.jsx)(ee.Z, {
                   guildId: e
@@ -335,13 +335,13 @@ function ec(e) {
                 }), (0, r.jsx)(Q.Z, {}), s ? (0, r.jsx)(m.Kqy, {
                   gap: "xs",
                   "aria-label": en.NW.string(en.t["7hB4kp"]),
-                  children: eL.map(eR)
+                  children: ek.map(eR)
                 }) : (0, r.jsx)("div", {
                   "aria-label": en.NW.string(en.t["7hB4kp"]),
-                  children: eL.map(eR)
+                  children: ek.map(eR)
                 }), eY, n ? null : (0, r.jsx)(V.Z, {
                   disableTooltip: y.length > 0,
-                  lastTargetNode: eL[eL.length - 1]
+                  lastTargetNode: ek[ek.length - 1]
                 }), (0, r.jsx)(K.Z, {}), !n && s ? (0, r.jsx)(H.Z, {
                   ref: eB,
                   questId: ez,

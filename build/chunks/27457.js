@@ -275,7 +275,7 @@ let eu = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
           pulseSpeakingIndicator: eP,
           inOverlayPopout: eR
         }), tu = (0, r.jsx)(J.T, {
-          userId: H.user.id,
+          participant: H,
           channelId: eb.id
         }), t_ = el.NW.formatToPlainString(el.t["iC/x/f"], {
           username: H.user.username

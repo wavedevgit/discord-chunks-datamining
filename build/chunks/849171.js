@@ -1,11 +1,11 @@
 /** Chunk was on 12416 **/
 n.d(t, {
   Ix: () => L,
-  OV: () => z,
+  OV: () => F,
   V_: () => W,
   Ym: () => U,
   ZP: () => Y,
-  ac: () => F,
+  ac: () => z,
   bn: () => M,
   nR: () => k
 }), n(47120);
@@ -24,8 +24,8 @@ var r, i = n(200651),
   v = n(527805),
   b = n(716600),
   g = n(778569),
-  y = n(563218),
-  E = n(318891),
+  E = n(563218),
+  y = n(318891),
   O = n(884338),
   S = n(719296),
   x = n(958185),
@@ -53,7 +53,7 @@ function U(e) {
   return e > 400 ? [u.EFr.SIZE_56, 56] : e > 300 ? [u.EFr.SIZE_32, 32] : [u.EFr.SIZE_24, 24]
 }
 
-function z(e) {
+function F(e) {
   let {
     avatarSize: t,
     guildId: n,
@@ -81,7 +81,7 @@ function z(e) {
   })
 }
 
-function F(e) {
+function z(e) {
   switch (e) {
     case 2:
       return u.zxk.Sizes.LARGE;
@@ -99,12 +99,12 @@ function V(e) {
     application: o,
     channel: h,
     width: b
-  } = e, g = W(b), [y] = U(b), E = (0, c.Wu)([_.default, N.default], () => Array.from(r).map(e => (0, p.J)(e, N.default) ? null : _.default.getUser(e.userId)).filter(R.lm)), O = (0, c.e7)([f.ZP], () => {
+  } = e, g = W(b), [E] = U(b), y = (0, c.Wu)([_.default, N.default], () => Array.from(r).map(e => (0, p.J)(e, N.default) ? null : _.default.getUser(e.userId)).filter(R.lm)), O = (0, c.e7)([f.ZP], () => {
     var e;
     return null !== (e = f.ZP.getEmbeddedActivitiesForChannel(h.id).find(e => e.applicationId === o.id)) && void 0 !== e ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(h.id).find(e => e.applicationId === o.id)
   }), {
     analyticsLocations: S
-  } = (0, w.ZP)(), x = (0, d.O)(), j = T.ZP.getName(h.getGuildId(), h.id, null == E ? void 0 : E[0]), C = (0, v.s5)({
+  } = (0, w.ZP)(), x = (0, d.O)(), j = T.ZP.getName(h.getGuildId(), h.id, null == y ? void 0 : y[0]), C = (0, v.s5)({
     userId: null === (t = _.default.getCurrentUser()) || void 0 === t ? void 0 : t.id,
     channelId: h.id,
     application: o
@@ -120,20 +120,20 @@ function V(e) {
   });
   return (0, i.jsxs)("div", {
     className: D.splash,
-    children: [(0, i.jsx)(z, {
-      avatarSize: y,
+    children: [(0, i.jsx)(F, {
+      avatarSize: E,
       guildId: P,
       channelId: h.id,
-      users: E
+      users: y
     }), (0, i.jsx)(u.Text, {
       className: a()(D.subheader, {
         [D.small]: 0 === g,
         [D.medium]: 1 === g
       }),
       variant: "text-sm/normal",
-      children: E.length > 1 ? A.NW.formatToPlainString(A.t.cpe6CA, {
+      children: y.length > 1 ? A.NW.formatToPlainString(A.t.cpe6CA, {
         username: j,
-        count: E.length - 1
+        count: y.length - 1
       }) : A.NW.formatToPlainString(A.t["7Uuia2"], {
         username: j
       })
@@ -159,7 +159,7 @@ function V(e) {
           })
         },
         submitting: L,
-        size: F(g),
+        size: z(g),
         className: D.button,
         look: u.iLD.FILLED,
         color: u.zxk.Colors.WHITE,
@@ -193,13 +193,13 @@ function Y(e) {
   return l.useEffect(() => {
     if (v && null != d && !N) {
       let e = (0, S.Z)(d.location.id, d.applicationId);
-      (0, E.jy)(e)
+      (0, y.jy)(e)
     }
   }, [v, d, N]), (0, i.jsx)(w.Gt, {
     value: s,
     children: (0, i.jsxs)("div", {
       className: D.container,
-      children: [v && null != d && (0, i.jsx)(y.Z, {
+      children: [v && null != d && (0, i.jsx)(E.Z, {
         className: D.iframe,
         embedId: (0, S.Z)(d.location.id, u)
       }), O && null != m && null != p && "" !== p ? (0, i.jsx)("img", {

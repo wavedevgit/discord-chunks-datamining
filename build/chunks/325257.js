@@ -65,7 +65,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = {
+let k = {
   analyticsSource: {
     page: E.ZY5.GUILD_CHANNEL,
     section: E.jXE.CHANNEL_LIST,
@@ -73,7 +73,7 @@ let L = {
   }
 };
 
-function k(e, t) {
+function L(e, t) {
   (0, f.jW)(e, async () => {
     let {
       default: e
@@ -99,7 +99,7 @@ let M = i.memo(function(e) {
     unavailable: Q = !1,
     badge: K = 0,
     isMentionLowImportance: J,
-    contextMenu: X = k,
+    contextMenu: X = L,
     draggable: $ = !1,
     sorting: ee = !1,
     preloadOnClick: et = !0,
@@ -142,11 +142,11 @@ let M = i.memo(function(e) {
   let eO = i.useCallback(() => {
       if (null != V) {
         (0, y.uL)(V, {
-          state: L
+          state: k
         });
         return
       }(0, _.X)(ei, {
-        state: L
+        state: k
       })
     }, [ei, V]),
     ej = i.useCallback(() => {

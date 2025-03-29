@@ -26,8 +26,8 @@ var r = n(664751),
   I = n(573261),
   S = n(278323),
   T = n(58642),
-  N = n(254854),
-  A = n(981631),
+  A = n(254854),
+  N = n(981631),
   C = n(701488),
   R = n(388032);
 let P = 3,
@@ -60,7 +60,7 @@ function D(e) {
     joinSessionId: f,
     secret: n,
     activity: _
-  }).then(e => 0 === e ? null : y.Z.waitConnected(t).then(() => Promise.race([y.Z.waitSubscribed(t, A.zMe.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : y.Z.waitConnected(t).then(() => Promise.race([y.Z.waitSubscribed(t, N.zMe.ACTIVITY_JOIN)]))).then(() => {
     l.Z.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -83,7 +83,7 @@ function L(e, t) {
 
 function x(e) {
   return a.tn.post({
-    url: A.ANM.OAUTH2_AUTHORIZE,
+    url: N.ANM.OAUTH2_AUTHORIZE,
     query: {
       client_id: e,
       response_type: "token",
@@ -135,7 +135,7 @@ async function M(e) {
     joinSessionId: m,
     secret: b,
     instanceId: void 0,
-    isContextlessActivity: (0, u.Z)(v, A.xjy.EMBEDDED) && (0, u.Z)(v, A.xjy.CONTEXTLESS)
+    isContextlessActivity: (0, u.Z)(v, N.xjy.EMBEDDED) && (0, u.Z)(v, N.xjy.CONTEXTLESS)
   }) ? 0 : Promise.resolve();
   if (h.Z.isConnected(t)) return Promise.resolve();
   let O = null;
@@ -169,7 +169,7 @@ async function M(e) {
       pids: e
     })
   }).catch(e => {
-    N.Z.show(A.kVF.LAUNCH_GAME_FAILURE, R.NW.string(R.t.YZEBdn)), l.Z.dispatch({
+    A.Z.show(N.kVF.LAUNCH_GAME_FAILURE, R.NW.string(R.t.YZEBdn)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: I
@@ -185,7 +185,7 @@ let k = {
     l.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
       pid: e
-    }), b.default.track(A.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
+    }), b.default.track(N.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
       game_name: t
     })
   },
@@ -195,10 +195,10 @@ let k = {
       let e = g.Z.getActiveLibraryApplication(r.id);
       if (null != e) {
         let r = e.getFlags(),
-          i = v.yE(r, A.eHb.OVERLAY_DISABLED);
-        t && i !== t && (r = v.x9(r, A.eHb.OVERLAY_DISABLED));
-        let o = v.yE(r, A.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== o && (r = v.x9(r, A.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
+          i = v.yE(r, N.eHb.OVERLAY_DISABLED);
+        t && i !== t && (r = v.x9(r, N.eHb.OVERLAY_DISABLED));
+        let o = v.yE(r, N.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== o && (r = v.x9(r, N.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
         return
       }
     }
@@ -257,7 +257,7 @@ let k = {
     let r = async e => {
       try {
         let t = await a.tn.get({
-          url: A.ANM.APPLICATIONS_GAMES_SUPPLEMENTAL,
+          url: N.ANM.APPLICATIONS_GAMES_SUPPLEMENTAL,
           query: {
             application_ids: e
           },
@@ -284,7 +284,7 @@ let k = {
       l.Z.dispatch({
         type: "GAMES_DATABASE_FETCH"
       }), I.Z.get({
-        url: A.ANM.APPLICATIONS_DETECTABLE,
+        url: N.ANM.APPLICATIONS_DETECTABLE,
         headers: {
           "If-None-Match": e
         },
@@ -337,7 +337,7 @@ let k = {
       executableName: s
     } = e, c = (0, f.F)(s);
     null != c && a.tn.post({
-      url: A.ANM.UNVERIFIED_APPLICATIONS,
+      url: N.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
         os: (0, O.getPlatformName)(),
@@ -368,7 +368,7 @@ let k = {
   },
   uploadIcon(e, t, n) {
     a.tn.post({
-      url: A.ANM.UNVERIFIED_APPLICATIONS_ICONS,
+      url: N.ANM.UNVERIFIED_APPLICATIONS_ICONS,
       body: {
         application_name: e,
         application_hash: t,

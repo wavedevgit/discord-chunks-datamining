@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(719296),
   w = n(651612),
   R = n(918559),
-  k = n(981631),
-  M = n(388032),
+  M = n(981631),
+  k = n(388032),
   L = n(928287);
 let D = T.u.SIZE_32,
   W = {
@@ -162,7 +162,7 @@ function U(e) {
     }, e.id)
   };
   return (0, r.jsx)(c.f6W, {
-    theme: k.BRd.DARK,
+    theme: M.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: o()(L.wrapper, W[Q], e),
       ref: X,
@@ -211,7 +211,7 @@ function U(e) {
               children: [(0, r.jsx)(w.Z, {
                 channelId: eu
               }), (0, r.jsx)(g.d, {
-                label: M.NW.string(M.t.brPQ5e),
+                label: k.NW.string(k.t.brPQ5e),
                 onClick: K,
                 iconComponent: c.dOc,
                 themeable: !0
@@ -226,7 +226,7 @@ function U(e) {
                 className: F ? void 0 : L.leaveActivityButton
               })
             }), F ? null : (0, r.jsx)(g.d, {
-              label: M.NW.string(M.t.brPQ5e),
+              label: k.NW.string(k.t.brPQ5e),
               onClick: K,
               iconComponent: c.dOc,
               themeable: !0,
@@ -241,12 +241,12 @@ function U(e) {
         maxHeight: l,
         resizableNode: X,
         onResize: e => {
-          x.S.dispatch(k.CkL.MANUAL_IFRAME_RESIZING, {
+          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !0
           }), ee(e)
         },
         onResizeEnd: e => {
-          x.S.dispatch(k.CkL.MANUAL_IFRAME_RESIZING, {
+          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !1
           }), et(e)
         }

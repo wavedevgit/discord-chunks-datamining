@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Y: () => E,
+  Y: () => y,
   Z: () => x
 }), n(47120);
 var r = n(200651),
@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(388032),
   g = n(563797);
 
-function y(e) {
+function E(e) {
   e.currentTarget.scrollTo(0, 0)
 }
-let E = i.memo(function(e) {
+let y = i.memo(function(e) {
   let {
     maxBodyLines: t,
     expand: n = !1,
@@ -31,7 +31,7 @@ let E = i.memo(function(e) {
     onDismissClick: u,
     onConfirmClick: m,
     onCancelClick: h,
-    onNotificationClick: E,
+    onNotificationClick: y,
     hint: O,
     cancelText: S,
     confirmText: x,
@@ -60,21 +60,21 @@ let E = i.memo(function(e) {
     U = i.useCallback(() => {
       A(!0)
     }, []),
-    z = i.useCallback(() => {
+    F = i.useCallback(() => {
       A(!1)
     }, []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: o()(g.overflowWrapper, R),
-      onScroll: y,
+      onScroll: E,
       children: (0, r.jsx)(c.P3F, {
         innerRef: I,
         ignoreKeyPress: !0,
         onMouseOver: U,
-        onMouseLeave: z,
-        onClick: E,
+        onMouseLeave: F,
+        onClick: y,
         className: o()(g.container, {
-          [g.clickable]: null != E
+          [g.clickable]: null != y
         }, _),
         children: function() {
           let e = null == C ? void 0 : C(D, k);
@@ -203,7 +203,7 @@ function x(e) {
       onConfirmClick: v,
       onCancelClick: b,
       renderFooter: g,
-      animationWrapperClassName: y
+      animationWrapperClassName: E
     }
   } = l, x = i.useCallback(() => {
     f(d)
@@ -249,10 +249,10 @@ function x(e) {
     springs: W,
     index: o,
     locked: a,
-    animationWrapperClassName: y,
+    animationWrapperClassName: E,
     children: (0, r.jsx)(S, {
       observe: 0 === o && !D,
-      children: (0, r.jsx)(E, (t = function(e) {
+      children: (0, r.jsx)(y, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

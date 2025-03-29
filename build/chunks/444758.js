@@ -65,7 +65,7 @@ let T = e => {
   return null == t ? void 0 : t.getGuildId()
 };
 
-function N(e) {
+function A(e) {
   return {
     type: "guild",
     guildId: e.id,
@@ -78,7 +78,7 @@ function N(e) {
   }
 }
 
-function A(e, t) {
+function N(e, t) {
   let n;
   let r = D((0, m.aF)(e.name, 32));
   return {
@@ -177,7 +177,7 @@ function L(e) {
 }
 
 function x() {
-  return A({
+  return N({
     name: v.NW.string(v.t.zLZPmp).toLowerCase(),
     type: b.d4z.UNKNOWN,
     iconType: "text"
@@ -193,14 +193,14 @@ function M(e, t, n, r, i) {
     channelId: t,
     messageId: n,
     originalLink: i,
-    inContent: null == o || a ? null : [N(o)],
+    inContent: null == o || a ? null : [A(o)],
     content: [x()]
   }
 }
 
 function k(e, t, n, r) {
-  let i = N(e),
-    o = A(t),
+  let i = A(e),
+    o = N(t),
     a = R(t.isForumPost);
   if (n && r) {
     if (t.isForumPost) {
@@ -208,7 +208,7 @@ function k(e, t, n, r) {
       if (null != e) {
         var s;
         return {
-          inContent: [A({
+          inContent: [N({
             name: e.name,
             type: e.type,
             iconType: null !== (s = (0, h.wl)(e)) && void 0 !== s ? s : "forum"
@@ -247,7 +247,7 @@ function j(e, t, n, r) {
     o = u.Z.getGuild(e.guildId);
   if (null == o) return e.isDm ? S(O({}, i), {
     guildId: b.ME,
-    inContent: [A(e)],
+    inContent: [N(e)],
     content: [R(!1)]
   }) : L(r);
   let a = e.guildId === n;

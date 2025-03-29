@@ -53,7 +53,7 @@ function y(e) {
     T = S ? E.NW.string(E.t["GoLM9/"]) : E.NW.formatToPlainString(E.t["h0u/Hh"], {
       serverName: null == I ? void 0 : I.name
     }),
-    N = S ? E.NW.string(E.t.PjZ7DQ) : E.NW.string(E.t.p8FG1N);
+    A = S ? E.NW.string(E.t.PjZ7DQ) : E.NW.string(E.t.p8FG1N);
   return (0, r.jsxs)("div", {
     className: b.container,
     children: [(0, r.jsx)("div", {
@@ -93,7 +93,7 @@ function y(e) {
         size: 24
       }), (0, r.jsx)(h.Z, {
         onClick: O,
-        children: N
+        children: A
       })]
     })]
   })

@@ -153,8 +153,8 @@ class O extends(r = o.PureComponent) {
         onBlur: I,
         onFocus: S,
         autoComplete: T,
-        inputProps: N,
-        hideSearchIcon: A,
+        inputProps: A,
+        hideSearchIcon: N,
         "aria-label": C = f.NW.string(f.t["5h0QOD"])
       } = e,
       R = E(e, ["query", "autoFocus", "onClear", "className", "placeholder", "iconClassName", "onKeyDown", "onKeyUp", "onKeyPress", "isLoading", "size", "disabled", "onChange", "onBlur", "onFocus", "autoComplete", "inputProps", "hideSearchIcon", "aria-label"]);
@@ -169,7 +169,7 @@ class O extends(r = o.PureComponent) {
       }, R), {
         children: (0, i.jsxs)("div", {
           className: _.inner,
-          children: [(0, i.jsx)("input", g(h({}, N), {
+          children: [(0, i.jsx)("input", g(h({}, A), {
             onFocus: S,
             onBlur: I,
             className: _.input,
@@ -184,7 +184,7 @@ class O extends(r = o.PureComponent) {
             autoComplete: T,
             "aria-label": C,
             ref: this.inputRef
-          })), !A && (0, i.jsx)(y, {
+          })), !N && (0, i.jsx)(y, {
             size: b,
             hasContent: t.length > 0,
             onClear: r,

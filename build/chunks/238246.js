@@ -17,8 +17,8 @@ var r, i = n(200651),
   v = n(280492),
   b = n(40851),
   g = n(607070),
-  y = n(899663),
-  E = n(636449),
+  E = n(899663),
+  y = n(636449),
   O = n(317381),
   S = n(496616),
   x = n(100527),
@@ -39,8 +39,8 @@ var r, i = n(200651),
   L = n(740492),
   W = n(358085),
   U = n(62883),
-  z = n(998502),
-  F = n(473159),
+  F = n(998502),
+  z = n(473159),
   V = n(928518),
   Y = n(981631),
   H = n(501787),
@@ -86,7 +86,7 @@ class X extends(r = l.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, F.O)(e), e.addEventListener("blur", this.handleBlur), W.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, z.O)(e), e.addEventListener("blur", this.handleBlur), W.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -151,7 +151,7 @@ class X extends(r = l.Component) {
     return (0, i.jsx)(u.VK, {
       children: (0, i.jsx)(k.w, {
         windowKey: r,
-        children: (0, i.jsx)(y.Z, {
+        children: (0, i.jsx)(E.Z, {
           children: (0, i.jsx)(Q, {
             guestWindow: c,
             className: d,
@@ -191,12 +191,12 @@ class X extends(r = l.Component) {
   constructor(...e) {
     super(...e), B(this, "rootRef", l.createRef()), B(this, "_cleanupWindowActionCreators", void 0), B(this, "_combokeys", null), B(this, "beforeUnload", e => {
       let t = () => {
-        V.Z.unmountWindow(this.props.windowKey), W.isPlatformEmbedded && z.ZP.close(this.props.windowKey)
+        V.Z.unmountWindow(this.props.windowKey), W.isPlatformEmbedded && F.ZP.close(this.props.windowKey)
       };
       if (null == this.props.connectedEmbeddedActivity || L.ZP.disableEmbeddedActivityPopOutAlert) t();
       else {
         if (!W.isPlatformEmbedded) return;
-        (0, E.R)({
+        (0, y.R)({
           isContextless: this.props.connectedEmbeddedActivity.location.kind === d.E.CONTEXTLESS
         }) ? t(): (e.returnValue = K.NW.string(K.t["bST/Y2"]), (0, S.Z)(() => {
           t()

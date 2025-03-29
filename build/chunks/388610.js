@@ -51,12 +51,12 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = O.QZA.CLOSED,
+let N = O.QZA.CLOSED,
   C = {},
   R = {},
   P = !1,
@@ -85,7 +85,7 @@ function M(e) {
 function k(e) {
   let t = y.Z.getChannel(e.channelId);
   if (null == t) return U();
-  A = O.QZA.OPEN, a = o = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != a && (a = a.set("nsfw", a.isNSFW())), s = y.Z.getChannel(a.parent_id), l = a.getGuildId(), C = {}, j({
+  N = O.QZA.OPEN, a = o = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != a && (a = a.set("nsfw", a.isNSFW())), s = y.Z.getChannel(a.parent_id), l = a.getGuildId(), C = {}, j({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: null != r ? r : O.CoT.OVERVIEW,
     subsection: i
@@ -106,20 +106,20 @@ function j(e) {
 }
 
 function U() {
-  w = !1, A = O.QZA.CLOSED, r = null, a = o = null, s = null, R = {}
+  w = !1, N = O.QZA.CLOSED, r = null, a = o = null, s = null, R = {}
 }
 
 function G() {
-  A = O.QZA.SUBMITTING, C = {}
+  N = O.QZA.SUBMITTING, C = {}
 }
 
 function B() {
-  o = a, A = O.QZA.OPEN
+  o = a, N = O.QZA.OPEN
 }
 
 function F(e) {
   var t;
-  A = O.QZA.OPEN, C = Object.keys(null !== (t = e.errors) && void 0 !== t ? t : {}).reduce((t, n) => {
+  N = O.QZA.OPEN, C = Object.keys(null !== (t = e.errors) && void 0 !== t ? t : {}).reduce((t, n) => {
     let r = e.errors[n];
     return (0, u.isArray)(r) ? t[n] = r.join("\n") : t[n] = r, t
   }, {})
@@ -157,11 +157,11 @@ function Z(e) {
     themeColor: I
   } = e;
   if (null == a) return !1;
-  null != t && (a = a.set("name", t)), null != r && (a = a.set("topic", r)), null != i && (a = a.set("bitrate", i)), null != o && (a = a.set("userLimit", o)), null != s && (a = a.set("nsfw", s)), null != l && (a = a.set("flags", l)), null != c && (a = a.set("rateLimitPerUser", c)), null != u && (a = a.set("defaultThreadRateLimitPerUser", u)), null != d && (a = a.set("threadMetadata", N(S({}, a.threadMetadata), {
+  null != t && (a = a.set("name", t)), null != r && (a = a.set("topic", r)), null != i && (a = a.set("bitrate", i)), null != o && (a = a.set("userLimit", o)), null != s && (a = a.set("nsfw", s)), null != l && (a = a.set("flags", l)), null != c && (a = a.set("rateLimitPerUser", c)), null != u && (a = a.set("defaultThreadRateLimitPerUser", u)), null != d && (a = a.set("threadMetadata", A(S({}, a.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != f && (a = a.set("threadMetadata", N(S({}, a.threadMetadata), {
+  }))), null != f && (a = a.set("threadMetadata", A(S({}, a.threadMetadata), {
     locked: f
-  }))), null != _ && (a = a.set("threadMetadata", N(S({}, a.threadMetadata), {
+  }))), null != _ && (a = a.set("threadMetadata", A(S({}, a.threadMetadata), {
     invitable: _
   }))), null != p && (a = a.set("defaultAutoArchiveDuration", p)), null != h && (a = a.set("template", h)), null != n && (a = a.set("type", n)), void 0 !== g && (a = a.set("rtcRegion", g)), null != E && (a = a.set("videoQualityMode", E)), void 0 !== m && (a = a.set("defaultReactionEmoji", m)), null != b && (a = a.set("availableTags", b)), null != v && (a = a.set("defaultSortOrder", v)), null != y && (a = a.set("defaultForumLayout", y)), void 0 !== O && (a = a.set("iconEmoji", O)), null != I && (a = a.set("themeColor", I)), V()
 }
@@ -193,7 +193,7 @@ function Y(e) {
 }
 
 function K(e) {
-  R = N(S({}, R), {
+  R = A(S({}, R), {
     [e.invite.code]: H(e.invite)
   })
 }
@@ -226,7 +226,7 @@ function X(e) {
     }
   } = e;
   if (null == a || a.id !== t) return !1;
-  A = O.QZA.CLOSED
+  N = O.QZA.CLOSED
 }
 
 function J(e) {
@@ -261,14 +261,14 @@ class $ extends(c = p.ZP.Store) {
     return a
   }
   getFormState() {
-    return A
+    return N
   }
   getCategory() {
     return s
   }
   getProps() {
     return {
-      submitting: A === O.QZA.SUBMITTING,
+      submitting: N === O.QZA.SUBMITTING,
       errors: C,
       channel: a,
       section: r,

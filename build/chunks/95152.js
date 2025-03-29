@@ -61,9 +61,9 @@ function S(e, t) {
   }), e
 }
 let T = 104,
-  N = 16;
+  A = 16;
 
-function A(e) {
+function N(e) {
   var t, n, o;
   let {
     file: s
@@ -91,7 +91,7 @@ function A(e) {
     })
   }, []);
   let m = (0, c.Z)(h),
-    g = Math.max(16, (N + T - (null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : 0)) / 2);
+    g = Math.max(16, (A + T - (null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -112,7 +112,7 @@ function A(e) {
 class C extends i.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== u.ow.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(A, {
+    return this.props.upload.item.platform !== u.ow.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(N, {
       file: this.props.upload.item.file
     }) : (0, r.jsx)("div", {
       className: a()(b.icon, {

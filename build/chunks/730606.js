@@ -28,8 +28,8 @@ var r = n(200651),
   I = n(545093),
   S = n(549635),
   T = n(981631),
-  N = n(388032),
-  A = n(806923);
+  A = n(388032),
+  N = n(806923);
 
 function C(e) {
   let {
@@ -78,8 +78,8 @@ function P(e) {
       isSingleMosaicItem: !0,
       onToggleObscurity: u,
       children: e => (0, r.jsx)("div", {
-        className: a()(A.obscureWrapper, {
-          [A.obscure]: e
+        className: a()(N.obscureWrapper, {
+          [N.obscure]: e
         }),
         children: t(e)
       })
@@ -145,15 +145,15 @@ function D(e) {
             e.stopPropagation(), m.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
           },
           icon: s.j,
-          tooltip: N.NW.string(N.t.vgfxaG),
-          className: a()(A.navPrev, e)
+          tooltip: A.NW.string(A.t.vgfxaG),
+          className: a()(N.navPrev, e)
         }), (0, r.jsx)(I.Z, {
           onClick: e => {
             e.stopPropagation(), m.S.dispatch(T.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: l.d4D,
-          tooltip: N.NW.string(N.t.XiOHRU),
-          className: a()(A.navNext, e)
+          tooltip: A.NW.string(A.t.XiOHRU),
+          className: a()(N.navNext, e)
         })]
       }) : void 0
     }), (0, r.jsx)(v.Z, {

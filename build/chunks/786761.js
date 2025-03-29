@@ -72,12 +72,12 @@ let T = new d.Z({
   username: "???"
 });
 
-function N(e) {
+function A(e) {
   var t;
   return null == e.author ? T : null != e.webhook_id ? new d.Z(e.author) : null !== (t = p.default.getUser(e.author.id)) && void 0 !== t ? t : new d.Z(e.author)
 }
 
-function A(e) {
+function N(e) {
   return !1
 }
 
@@ -101,8 +101,8 @@ function R(e) {
   let {
     reactions: p,
     interactionData: h
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, b = C(e), y = null !== (i = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== i ? i : [], I = null !== (o = e.mention_roles) && void 0 !== o ? o : [], T = null !== (a = e.mention_channels) && void 0 !== a ? a : [], R = e.message_reference, P = N(e), w = null, D = null == e ? void 0 : e.gift_info, x = e.gifting_prompt, j = null != e.interaction ? c.Z.createFromServer(e.interaction) : null, U = e.type === v.uaV.THREAD_STARTER_MESSAGE ? null === (r = e.referenced_message) || void 0 === r ? void 0 : null === (n = r.author) || void 0 === n ? void 0 : n.id : void 0, G = e.content;
-  return new u.ZP((e.type === v.uaV.PREMIUM_REFERRAL && (d = g.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, G = ""), A(e)) ? S(O({}, w), {
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, b = C(e), y = null !== (i = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== i ? i : [], I = null !== (o = e.mention_roles) && void 0 !== o ? o : [], T = null !== (a = e.mention_channels) && void 0 !== a ? a : [], R = e.message_reference, P = A(e), w = null, D = null == e ? void 0 : e.gift_info, x = e.gifting_prompt, j = null != e.interaction ? c.Z.createFromServer(e.interaction) : null, U = e.type === v.uaV.THREAD_STARTER_MESSAGE ? null === (r = e.referenced_message) || void 0 === r ? void 0 : null === (n = r.author) || void 0 === n ? void 0 : n.id : void 0, G = e.content;
+  return new u.ZP((e.type === v.uaV.PREMIUM_REFERRAL && (d = g.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, G = ""), N(e)) ? S(O({}, w), {
     id: e.id,
     channel_id: e.channel_id,
     type: v.uaV.DEFAULT,

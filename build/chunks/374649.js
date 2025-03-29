@@ -5,7 +5,7 @@ n.d(t, {
   Ox: () => T,
   hz: () => b,
   o5: () => I,
-  pV: () => N
+  pV: () => A
 }), n(47120), n(26686);
 var r = n(192379),
   i = n(512722),
@@ -258,7 +258,7 @@ function T(e) {
   return O(e, (0, r.useCallback)(() => y(t.current), [n]))
 }
 
-function N(e) {
+function A(e) {
   let t = e.subscriptionPlanPrice;
   return e.discounts.forEach(n => {
     let r = n.amount / e.quantity;

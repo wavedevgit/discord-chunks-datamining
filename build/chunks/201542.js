@@ -75,8 +75,8 @@ let S = i.memo(function(e) {
       waveform: g,
       durationSecs: S,
       onVolumeShow: T,
-      onVolumeHide: N,
-      onPlay: A,
+      onVolumeHide: A,
+      onPlay: N,
       onPause: C,
       onError: R
     } = e,
@@ -141,7 +141,7 @@ let S = i.memo(function(e) {
       played: F,
       currentTime: w,
       onPause: C,
-      onPlay: A
+      onPlay: N
     },
     es = i.useRef(ea);
   i.useEffect(() => {
@@ -244,7 +244,7 @@ let S = i.memo(function(e) {
       onValueChange: ee,
       onToggleMute: et,
       onVolumeShow: T,
-      onVolumeHide: N
+      onVolumeHide: A
     }), t]
   })
 })

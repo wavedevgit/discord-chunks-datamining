@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => A,
+  K: () => N,
   Z: () => P
 }), n(474991), n(398202), n(301563), n(566702);
 var r = n(200651);
@@ -37,7 +37,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function N(e) {
   }
   return e
 }
-let A = {
+let N = {
   results: {
     entries: []
   }
@@ -60,7 +60,7 @@ function C() {
     let {
       default: e
     } = await n.e("87549").then(n.bind(n, 913962));
-    return t => (0, r.jsx)(e, N({}, t))
+    return t => (0, r.jsx)(e, A({}, t))
   })
 }
 
@@ -72,7 +72,7 @@ let P = {
   stores: [f.Z, c.ZP, g.Z],
   matches: (e, t, n, r, i) => i.commands !== v.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== v.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
-    if (0 === n.length && r.commands !== v.L8.OLD_BUILT_INS) return A;
+    if (0 === n.length && r.commands !== v.L8.OLD_BUILT_INS) return N;
     if (r.commands === v.L8.OLD_BUILT_INS) {
       let r = (0, l.Kh)([a.yU.CHAT], !1, !1),
         i = RegExp("^".concat(E.Z.escape(n)), "i"),
@@ -81,7 +81,7 @@ let P = {
           guild: t
         }, v.AQ),
         s = l.Tm[O.bi.BUILT_IN];
-      return 0 === o.length ? A : {
+      return 0 === o.length ? N : {
         results: {
           entries: o.map(e => ({
             command: e,
@@ -106,14 +106,14 @@ let P = {
         scoreMethod: d.p.COMMAND_OR_APPLICATION,
         allowFetch: i
       });
-    if (null == s) return A;
+    if (null == s) return N;
     let f = s;
     if (o.hasSpaceTerminator) {
       let e = o.text.trim(),
         t = e + " ";
       f = f.filter(n => n.displayName === e || n.displayName.startsWith(t))
     }
-    return 0 === f.length ? A : {
+    return 0 === f.length ? N : {
       results: {
         entries: f.slice(0, v.AQ).map(e => ({
           command: e,

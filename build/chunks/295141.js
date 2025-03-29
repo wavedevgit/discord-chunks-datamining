@@ -3,7 +3,7 @@
 n.d(t, {
   HT: () => C,
   K5: () => v,
-  LB: () => N,
+  LB: () => A,
   MI: () => T,
   V_: () => I,
   X: () => b,
@@ -14,7 +14,7 @@ n.d(t, {
   eI: () => S,
   es: () => O,
   iW: () => y,
-  j8: () => A,
+  j8: () => N,
   nU: () => h,
   rD: () => m
 });
@@ -222,7 +222,7 @@ let _ = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, N = async (e, t, n) => {
+}, A = async (e, t, n) => {
   try {
     return (await r.tn.get({
       url: o.ANM.GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY(e, t, n),
@@ -231,7 +231,7 @@ let _ = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, A = async function(e) {
+}, N = async function(e) {
   let {
     signal: t
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};

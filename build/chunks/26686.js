@@ -30,14 +30,14 @@ var r = n(147018),
   T = l(function() {
     return '"\udf06\ud834"' !== h("\uDF06\uD834") || '"\udead"' !== h("\uDEAD")
   }),
-  N = function(e, t) {
+  A = function(e, t) {
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (void 0 === e || u(e)))) return n[1] = function(e, t) {
       if (c(r) && (t = a(r, this, p(e), t)), !u(t)) return t
     }, o(h, null, n)
   },
-  A = function(e, t, n) {
+  N = function(e, t, n) {
     var r = g(n, t - 1),
       i = g(n, t + 1);
     return m(O, e) && !m(I, i) || m(I, e) && !m(O, r) ? "\\u" + v(E(e, 0), 16) : e
@@ -50,7 +50,7 @@ h && r({
 }, {
   stringify: function(e, t, n) {
     var r = d(arguments),
-      i = o(S ? N : h, null, r);
-    return T && "string" == typeof i ? b(i, y, A) : i
+      i = o(S ? A : h, null, r);
+    return T && "string" == typeof i ? b(i, y, N) : i
   }
 })

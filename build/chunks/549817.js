@@ -26,9 +26,9 @@ var r = n(392711),
   I = n(816436),
   S = n(981631),
   T = n(372897),
-  N = n(490897);
+  A = n(490897);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,7 +44,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -154,8 +154,8 @@ let L = {
       a = y.Z.getEnabled(e) ? y.Z.getDefaultChannelIds(e) : [],
       [c, f] = (0, O.Ee)(e, t, a),
       b = [...o, ...a],
-      A = b.map(e => _.Z.getChannel(e)).filter(E.lm),
-      R = (0, I.v)(e, new Set(b), A, !0).length,
+      N = b.map(e => _.Z.getChannel(e)).filter(E.lm),
+      R = (0, I.v)(e, new Set(b), N, !0).length,
       D = null == n ? [] : n.options.map(e => e.id);
     if (m.default.track(S.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
         step: t.length - 1,
@@ -168,7 +168,7 @@ let L = {
         channels_granted: R,
         guild_onboarding_covered_channel_ids: c.map(e => e.id),
         guild_onboarding_uncovered_channel_ids: f.map(e => e.id)
-      })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, v.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
+      })), (0, s.Ju)(e, A.W.GUILD_ONBOARDING_QUESTION, v.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
       (0, u.zS)(e, b, []), (0, u.aq)(e, {
         optInEnabled: !0
       }), (0, u.og)(e, Array.from(i));

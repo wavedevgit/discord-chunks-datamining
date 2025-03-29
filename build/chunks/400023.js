@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(47481),
   w = n(977391),
   R = n(959258),
-  k = n(73274),
-  M = n(419388),
+  M = n(73274),
+  k = n(419388),
   L = n(406534),
   D = n(981631),
   W = n(388032),
@@ -123,7 +123,7 @@ let G = i.memo(function(e) {
       attachments: 8,
       fontSize: O,
       groupSpacing: l
-    }), [_, O, l]), V = (0, M.ZP)({
+    }), [_, O, l]), V = (0, k.ZP)({
       messages: m,
       channel: f,
       compact: _,
@@ -133,7 +133,7 @@ let G = i.memo(function(e) {
       canLoadMore: null == I,
       handleScrollToBottom: i.useCallback(() => R(!0), [R]),
       handleScrollFromBottom: i.useCallback(() => R(!1), [R])
-    }), z = (0, k.Z)({
+    }), z = (0, M.Z)({
       scrollerRef: V.ref,
       isEditing: null != j,
       keyboardModeEnabled: E,
@@ -276,8 +276,8 @@ let G = i.memo(function(e) {
     }(t), {
       messageGroupSpacing: Z,
       fontSize: w,
-      messageDisplayCompact: k,
-      renderSpoilers: M,
+      messageDisplayCompact: M,
+      renderSpoilers: k,
       keyboardModeEnabled: L
     } = function() {
       let e = y.jU.useSetting(),
@@ -361,13 +361,13 @@ let G = i.memo(function(e) {
       }
     }(t);
     return (0, r.jsx)(g.aQ.Provider, {
-      value: (0, T.Z)(M, u),
+      value: (0, T.Z)(k, u),
       children: (0, r.jsx)(R.v, {
         children: (0, r.jsx)(G, F(B({}, c), {
           messageGroupSpacing: Z,
           showNewMessagesBar: !0,
           channel: t,
-          messageDisplayCompact: !a && (o || k),
+          messageDisplayCompact: !a && (o || M),
           messages: W,
           channelStream: U,
           permissionVersion: p,

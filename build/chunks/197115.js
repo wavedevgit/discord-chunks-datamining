@@ -28,7 +28,7 @@ var i = n(120356),
   S = n(388032),
   T = n(748273);
 
-function N(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,14 +37,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -108,7 +108,7 @@ let L = function(e) {
   var {
     isGift: t,
     subscriptionTier: i,
-    onClick: N,
+    onClick: A,
     size: C,
     className: w,
     isTrialCTA: L,
@@ -149,7 +149,7 @@ let L = function(e) {
         (0, _.uL)(I.Z5c.LOGIN);
         return
       }
-      if (null == N || N(e), (null == $ ? void 0 : $.status) === I.O0b.ACCOUNT_HOLD) {
+      if (null == A || A(e), (null == $ ? void 0 : $.status) === I.O0b.ACCOUNT_HOLD) {
         (0, d.A3)(), l.Z.open(I.oAB.PREMIUM), null == G || G(!1);
         return
       }
@@ -162,7 +162,7 @@ let L = function(e) {
             var {
               onClose: n
             } = t, i = P(t, ["onClose"]);
-            return (0, r.jsx)(e, R(A({}, i), {
+            return (0, r.jsx)(e, R(N({}, i), {
               onClose: n
             }))
           }
@@ -178,7 +178,7 @@ let L = function(e) {
             var {
               onClose: n
             } = t, i = P(t, ["onClose"]);
-            return (0, r.jsx)(e, R(A({}, i), {
+            return (0, r.jsx)(e, R(N({}, i), {
               onClose: n
             }))
           }
@@ -192,7 +192,7 @@ let L = function(e) {
         initialPlanId: null,
         subscriptionTier: i,
         analyticsLocations: ee,
-        analyticsObject: A({
+        analyticsObject: N({
           object: I.qAy.BUTTON_CTA,
           objectType: c
         }, B),
@@ -205,7 +205,7 @@ let L = function(e) {
         paymentModalBanner: q
       })
     };
-  if (L) return (0, r.jsxs)(s.zxk, R(A({
+  if (L) return (0, r.jsxs)(s.zxk, R(N({
     size: C,
     className: w,
     innerClassName: T.premiumSubscribeButton,
@@ -221,7 +221,7 @@ let L = function(e) {
       children: null != x ? x : S.NW.string(S.t["Gd/XHB"])
     })]
   }));
-  if (t) return (0, r.jsxs)(s.zxk, R(A({
+  if (t) return (0, r.jsxs)(s.zxk, R(N({
     size: C,
     className: w,
     innerClassName: T.giftButton,
@@ -253,7 +253,7 @@ let L = function(e) {
 
   function e_(e) {
     var t, n;
-    return (0, r.jsxs)(s.gtL, R(A({
+    return (0, r.jsxs)(s.gtL, R(N({
       disabled: ed,
       onClick: eo,
       innerClassName: T.premiumSubscribeButton,

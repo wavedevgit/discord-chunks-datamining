@@ -62,9 +62,9 @@ function T(e, t) {
   }), e
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function N(e, t) {
   return i
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -94,9 +94,9 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       size: E,
       surrogateCodePoint: O,
       allowAnimatedEmoji: S,
-      selectedItemClassName: A,
+      selectedItemClassName: N,
       inNitroLockedSection: C
-    } = e, R = N(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
+    } = e, R = A(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
     let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
       w = () => {
         let e = n.allNamesString;
@@ -114,7 +114,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
           [y.emojiItemLarge]: o,
           [y.emojiItemMedium]: c,
           [y.emojiItemSelected]: u,
-          [null != A ? A : ""]: u,
+          [null != N ? N : ""]: u,
           [y.showPulse]: _
         }),
         "data-type": p.S.EMOJI,
@@ -149,7 +149,7 @@ function P(e) {
     isScrolling: y,
     isUsingKeyboardNavigation: O,
     showEmojiFavoriteTooltip: S,
-    surrogateCodePoint: A,
+    surrogateCodePoint: N,
     selectedItemClassName: P,
     getEmojiItemProps: w,
     isMediumSize: D,
@@ -191,7 +191,7 @@ function P(e) {
       ref: l,
       tabIndex: c,
       onFocus: u
-    } = s, d = N(s, ["ref", "tabIndex", "onFocus"]);
+    } = s, d = A(s, ["ref", "tabIndex", "onFocus"]);
     return (0, i.createElement)("li", T(I({}, d), {
       key: o,
       ref: W
@@ -222,7 +222,7 @@ function P(e) {
       columnIndex: q,
       rowIndex: f,
       size: K,
-      surrogateCodePoint: A,
+      surrogateCodePoint: N,
       selectedItemClassName: P,
       inNitroLockedSection: B
     }))

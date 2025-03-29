@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(474991), n(398202), n(301563), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(628735),
   i = n.n(r),
@@ -48,7 +48,7 @@ function S(e) {
 function T(e) {
   return null != e && I(s.parse(e).protocol)
 }
-let N = {
+let A = {
   URL_REGEX: E,
   isDiscordHostname: O,
   isDiscordLocalhost: function(e, t) {

@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(287954),
   S = n(660579),
   T = n(652853),
-  N = n(64621),
-  A = n(979038),
+  A = n(64621),
+  N = n(979038),
   C = n(448980),
   R = n(336383),
   P = n(194811),
@@ -229,7 +229,7 @@ function Z(e) {
     onClose: z
   }), eh = () => n.id === i.id ? null : (0, r.jsx)("div", {
     className: o()(B.actions, X),
-    children: (0, r.jsx)(A.Z, {
+    children: (0, r.jsx)(N.Z, {
       activity: F,
       user: n,
       onAction: et,
@@ -241,7 +241,7 @@ function Z(e) {
     eg = J === k.n_.ACTIVITY && $ === em;
   return (0, r.jsx)(f.Gt, {
     value: q,
-    children: (0, r.jsx)(N.Z, {
+    children: (0, r.jsx)(A.Z, {
       sourceType: k.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(I.Z, {

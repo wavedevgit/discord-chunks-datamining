@@ -76,8 +76,8 @@ function S(e, t) {
   return i
 }
 let T = 108e5,
-  N = 18e6,
-  A = 16,
+  A = 18e6,
+  N = 16,
   C = 2,
   R = {
     friction: 13,
@@ -198,8 +198,8 @@ function W(e) {
   var {
     selected: t = !1,
     lowerBadgeSize: n = {
-      width: A,
-      height: A
+      width: N,
+      height: N
     },
     highlight: r = !1,
     rounded: o = !1
@@ -321,11 +321,11 @@ class Y extends o.Component {
       spring: 0,
       immediate: !document.hasFocus(),
       config: D
-    }).start()), !s || H(this.props) || this.timeout.isStarted() ? H(this.props) && this.timeout.isStarted() && this.timeout.stop() : this.timeout.start(u()(T, N), this.handleTimeout)
+    }).start()), !s || H(this.props) || this.timeout.isStarted() ? H(this.props) && this.timeout.isStarted() && this.timeout.stop() : this.timeout.start(u()(T, A), this.handleTimeout)
   }
   getBadgePositionInterpolation(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : A + M(this.props.isVisualRefreshEnabled);
+      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : N + M(this.props.isVisualRefreshEnabled);
     if (null == e) return;
     let {
       spring: r
@@ -341,7 +341,7 @@ class Y extends o.Component {
     if (null == e) return;
     let {
       spring: n
-    } = e.springs, r = (null == t ? void 0 : t.width) != null ? t.width : A, i = (null == t ? void 0 : t.height) != null ? t.height : A;
+    } = e.springs, r = (null == t ? void 0 : t.width) != null ? t.width : N, i = (null == t ? void 0 : t.height) != null ? t.height : N;
     return {
       opacity: n.to([0, .5, 1], [0, 0, 1]),
       transform: n.to(e => "translate(".concat(r - e * r, "px, ").concat(i - e * i, "px)"))
@@ -411,13 +411,13 @@ class Y extends o.Component {
         }, "foreign-object")
       }, "svg")
     }, "wrapper");
-    let N = "".concat(v, "-upper_badge_masks"),
+    let A = "".concat(v, "-upper_badge_masks"),
       R = "".concat(v, "-lower_badge_masks"),
       P = "".concat(v, "-blob_mask"),
       w = "".concat(v, "-stroke_mask"),
       D = "".concat(v, "-highlight_mask"),
-      L = (null == a ? void 0 : a.width) != null ? a.width : A,
-      x = (null == a ? void 0 : a.height) != null ? a.height : A,
+      L = (null == a ? void 0 : a.width) != null ? a.width : N,
+      x = (null == a ? void 0 : a.height) != null ? a.height : N,
       M = {
         width: g ? f + 8 : f,
         height: g ? f + 8 : f,
@@ -446,7 +446,7 @@ class Y extends o.Component {
             d: this.getPathInterpolation(),
             id: P
           }), S ? (0, i.jsx)(d.animated.rect, {
-            id: N,
+            id: A,
             x: f - k + m,
             y: -m,
             width: k,
@@ -482,7 +482,7 @@ class Y extends o.Component {
             })
           }), S ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("use", {
-              href: "#".concat(N),
+              href: "#".concat(A),
               fill: "black"
             }), (0, i.jsx)("use", {
               href: "#".concat(R),
@@ -498,7 +498,7 @@ class Y extends o.Component {
             y: "-25%",
             fill: "white"
           }), (0, i.jsx)("use", {
-            href: "#".concat(N),
+            href: "#".concat(A),
             fill: "black"
           }), (0, i.jsx)("use", {
             href: "#".concat(R),
@@ -514,7 +514,7 @@ class Y extends o.Component {
           }), (0, i.jsxs)("g", {
             className: E.focusFill,
             children: [null != c ? (0, i.jsx)("use", {
-              href: "#".concat(N)
+              href: "#".concat(A)
             }) : null, null != r ? (0, i.jsx)("use", {
               href: "#".concat(R)
             }) : null]
@@ -589,7 +589,7 @@ function K(e) {
     v(!0)
   }, O = () => {
     v(!1)
-  }, I = null != h, S = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
+  }, I = null != h, S = null != m, T = o.useId(), A = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : N, x = (null == u ? void 0 : u.height) != null ? u.height : N, M = {
     width: n + 8,
     height: n + 8,
     x: -4,
@@ -616,7 +616,7 @@ function K(e) {
           d: G,
           id: P
         }), null != h ? (0, i.jsx)("rect", {
-          id: N,
+          id: A,
           className: E.badgeStroke,
           x: n - U + f,
           y: -f,
@@ -651,7 +651,7 @@ function K(e) {
             [E.isHighlighted]: d
           })
         }), I ? (0, i.jsx)("use", {
-          href: "#".concat(N),
+          href: "#".concat(A),
           fill: "black"
         }) : null, S ? (0, i.jsx)("use", {
           href: "#".concat(R),
@@ -666,7 +666,7 @@ function K(e) {
           y: "-25%",
           fill: "white"
         }), I ? (0, i.jsx)("use", {
-          href: "#".concat(N),
+          href: "#".concat(A),
           fill: "black"
         }) : null, S ? (0, i.jsx)("use", {
           href: "#".concat(R),
@@ -682,7 +682,7 @@ function K(e) {
         }), (0, i.jsxs)("g", {
           className: E.focusFill,
           children: [null != h ? (0, i.jsx)("use", {
-            href: "#".concat(N)
+            href: "#".concat(A)
           }) : null, null != m ? (0, i.jsx)("use", {
             href: "#".concat(R)
           }) : null]

@@ -30,8 +30,8 @@ var r = n(192379),
   I = n(594174),
   S = n(176354),
   T = n(267642),
-  N = n(111361),
-  A = n(392552),
+  A = n(111361),
+  N = n(392552),
   C = n(543241),
   R = n(304852),
   P = n(199257),
@@ -111,12 +111,12 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
       newlyAddedEmojis: Q
     } = (0, P.Z)(V, l), X = (0, s.Wu)([O.ZP], () => O.ZP.getFlattenedGuildIds(), []), J = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
       canCreateExpressions: $
-    } = (0, m.XJ)(F), ee = (0, s.e7)([I.default], () => I.default.getCurrentUser()), et = (0, N.I5)(ee), en = (0, g.B4)(), er = Z.getCustomEmoji(), ei = e => {
+    } = (0, m.XJ)(F), ee = (0, s.e7)([I.default], () => I.default.getCurrentUser()), et = (0, A.I5)(ee), en = (0, g.B4)(), er = Z.getCustomEmoji(), ei = e => {
       if (e.type === u.B.GUILD) return e.guildId
     }, eo = r.useMemo(() => o().groupBy(er, ei), [er]), {
       enabled: ea,
       treatment: es
-    } = A.Z.useExperiment({
+    } = N.Z.useExperiment({
       location: "EmojiPicker"
     }, {
       autoTrackExposure: !0,
@@ -149,10 +149,10 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
               v = _.guild,
               O = y.Z.getGuildId(),
               I = _.sectionId === w.En.TOP_GUILD_EMOJI,
-              N = !I && null != v && O === v.id && b.length < (0, T.y4)(v),
+              A = !I && null != v && O === v.id && b.length < (0, T.y4)(v),
               R = I && b.length < f && !ea,
-              P = null != v && I && ea && es === A.B.WITH_TOP_LIST && eo[v.id].length < (0, T.y4)(v),
-              D = i && $ && null != v && (N || R || P);
+              P = null != v && I && ea && es === N.B.WITH_TOP_LIST && eo[v.id].length < (0, T.y4)(v),
+              D = i && $ && null != v && (A || R || P);
             D && P && b.length === f && b.shift();
             let x = b.length > m && null != v && _.isNitroLocked,
               U = x && !J.has(v.id);

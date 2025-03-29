@@ -68,14 +68,14 @@ function O(e) {
     queryParams: E,
     allowPopups: v = !1,
     referrerPolicy: O = "origin"
-  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), N = (0, _.Z)(T, g, null == I ? window : I), A = y(b({}, E), {
+  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, _.Z)(T, g, null == I ? window : I), N = y(b({}, E), {
     frame_id: S,
     platform: h.S4.DESKTOP
   }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, o);
 
   function D(e) {
     var n;
-    null == a || a(e.target), T.current = e.target, N(!0), null === (n = e.target.contentWindow) || void 0 === n || n.postMessage([c.Z.HELLO, A], null != t ? t : "")
+    null == a || a(e.target), T.current = e.target, A(!0), null === (n = e.target.contentWindow) || void 0 === n || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
   }
   return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
     id: S
@@ -102,7 +102,7 @@ function O(e) {
       allowPopups: v
     }),
     className: n,
-    src: "".concat(t, "?").concat(new URLSearchParams(A))
+    src: "".concat(t, "?").concat(new URLSearchParams(N))
   }) : null
 }
 

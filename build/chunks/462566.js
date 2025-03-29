@@ -63,7 +63,7 @@ let v = function(e) {
     name: "",
     country: "",
     postalCode: ""
-  }), [S, T] = i.useState({}), [N, A] = i.useState({}), {
+  }), [S, T] = i.useState({}), [A, N] = i.useState({}), {
     setFocusLockDisabled: C
   } = i.useContext(s.M);
   i.useEffect(() => () => {
@@ -85,7 +85,7 @@ let v = function(e) {
   }, [S, O]);
 
   function D() {
-    A(w())
+    N(w())
   }
   i.useEffect(() => {
     let e = v.cardNumber && v.cardExpiry && v.cardCvc && 0 === Object.keys(w(!0)).length;
@@ -147,9 +147,9 @@ let v = function(e) {
     let n = g({}, O),
       r = g({}, S),
       i = {
-        name: N.name
+        name: A.name
       };
-    S[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.NW.string(_.t.lIkVsr)) : delete i[t], I(n), T(r), A(i)
+    S[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.NW.string(_.t.lIkVsr)) : delete i[t], I(n), T(r), N(i)
   }
 
   function M() {
@@ -193,7 +193,7 @@ let v = function(e) {
   return (0, r.jsxs)("div", {
     children: [M(), (0, r.jsx)(d.Z, {
       form: L,
-      errors: N,
+      errors: A,
       formError: n,
       values: O,
       onFieldChange: x,

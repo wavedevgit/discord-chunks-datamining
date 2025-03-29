@@ -18,8 +18,8 @@ var r = n(200651),
   v = n(835473),
   b = n(314897),
   g = n(592125),
-  y = n(594174),
-  E = n(849171),
+  E = n(594174),
+  y = n(849171),
   O = n(981631),
   S = n(388032),
   x = n(984270);
@@ -37,8 +37,8 @@ function j(e) {
     url: u
   } = (0, m.Z)({
     applicationId: s,
-    names: E.Ix,
-    size: E.bn
+    names: y.Ix,
+    size: y.bn
   }), d = i.useMemo(() => ({
     userId: t.user.id,
     activity: t.activity
@@ -67,7 +67,7 @@ function w(e) {
     channelId: n,
     participant: l,
     applicationId: m
-  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), w = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), Z = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), C = i.useMemo(() => null != Z ? [Z] : [], [Z]), P = (0, v.q)(m), {
+  } = e, p = (0, y.V_)(t), [j] = (0, y.Ym)(t), w = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), Z = (0, a.e7)([E.default, b.default], () => (0, d.J)(l, b.default) ? null : E.default.getUser(l.userId)), C = i.useMemo(() => null != Z ? [Z] : [], [Z]), P = (0, v.q)(m), {
     analyticsLocations: N
   } = (0, h.ZP)(), I = (0, c.O)(), _ = l.activity.session_id, R = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [T, A] = i.useState(!1), D = null == Z ? void 0 : Z.id, k = i.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (A(!0), await (0, u.Z)({
@@ -83,15 +83,15 @@ function w(e) {
   }, [m, D, I.location, N, _, n, R]);
   return null == w || null == Z || null == P ? null : (0, r.jsxs)("div", {
     className: x.splash,
-    children: [(0, r.jsx)(E.OV, {
+    children: [(0, r.jsx)(y.OV, {
       avatarSize: j,
       guildId: w.guild_id,
       channelId: w.id,
       users: C
     }), (0, r.jsx)(s.Text, {
       className: o()(x.subheader, {
-        [x.small]: p === E.nR.SMALL,
-        [x.medium]: p === E.nR.MEDIUM
+        [x.small]: p === y.nR.SMALL,
+        [x.medium]: p === y.nR.MEDIUM
       }),
       variant: "text-sm/normal",
       children: S.NW.formatToPlainString(S.t["7Uuia2"], {
@@ -99,8 +99,8 @@ function w(e) {
       })
     }), (0, r.jsx)(s.Text, {
       className: o()(x.header, {
-        [x.small]: p === E.nR.SMALL,
-        [x.medium]: p === E.nR.MEDIUM
+        [x.small]: p === y.nR.SMALL,
+        [x.medium]: p === y.nR.MEDIUM
       }),
       variant: "text-sm/normal",
       children: P.name
@@ -109,7 +109,7 @@ function w(e) {
       children: (0, r.jsx)(s.zxk, {
         onClick: k,
         submitting: T,
-        size: (0, E.ac)(p),
+        size: (0, y.ac)(p),
         className: x.button,
         color: s.zxk.Colors.PRIMARY,
         children: S.NW.string(S.t["4i2vj4"])

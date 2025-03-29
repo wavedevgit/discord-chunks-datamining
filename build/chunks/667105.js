@@ -33,8 +33,8 @@ var r = n(200651),
   I = n(920916),
   S = n(669041),
   T = n(341907),
-  N = n(46140),
-  A = n(981631),
+  A = n(46140),
+  N = n(981631),
   C = n(215023),
   R = n(388032);
 
@@ -194,7 +194,7 @@ function U(e) {
       case E.OH.UNACCEPTED:
         let e = R.NW.string(R.t.kUQLMD),
           t = h.jZ.ACCEPT_QUEST;
-        return p && (e = R.NW.string(R.t.umdNio), t = h.jZ.START_QUEST), b && (n.config.features.includes(N.S7.START_QUEST_CTA) ? (e = R.NW.string(R.t.E80Bdn), t = h.jZ.START_QUEST) : (e = R.NW.string(R.t.l7E81t), t = h.jZ.ACCEPT_QUEST)), {
+        return p && (e = R.NW.string(R.t.umdNio), t = h.jZ.START_QUEST), b && (n.config.features.includes(A.S7.START_QUEST_CTA) ? (e = R.NW.string(R.t.E80Bdn), t = h.jZ.START_QUEST) : (e = R.NW.string(R.t.l7E81t), t = h.jZ.ACCEPT_QUEST)), {
           text: e,
           tooltipText: e,
           onClick: () => {
@@ -203,7 +203,7 @@ function U(e) {
               questContentCTA: t,
               questContentPosition: s,
               questContentRowIndex: u
-            }), p ? (0, T.openVideoQuestModal)(n) : b && n.config.features.includes(N.S7.START_QUEST_CTA) && (0, f.uL)(A.Z5c.ACTIVITY_DETAILS(n.config.application.id))
+            }), p ? (0, T.openVideoQuestModal)(n) : b && n.config.features.includes(A.S7.START_QUEST_CTA) && (0, f.uL)(N.Z5c.ACTIVITY_DETAILS(n.config.application.id))
           }
         };
       case E.OH.ACCEPTED:

@@ -7,9 +7,9 @@ n.d(t, {
   a5: () => x,
   c4: () => L,
   g7: () => w,
-  jZ: () => A,
+  jZ: () => N,
   mE: () => B,
-  oQ: () => N,
+  oQ: () => A,
   rX: () => C,
   rY: () => P,
   rt: () => R,
@@ -64,7 +64,7 @@ function T(e, t, n) {
   }
 }
 
-function N(e, t, n) {
+function A(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     o = [];
   return (n.length > 0 || r) && o.push(S(e, t, i.BN.ROLE)), n.forEach(e => {
@@ -72,7 +72,7 @@ function N(e, t, n) {
   }), o
 }
 
-function A(e, t) {
+function N(e, t) {
   return T(e, t, i.BN.MEMBER)
 }
 

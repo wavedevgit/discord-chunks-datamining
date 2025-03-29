@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Db: () => A,
+  Db: () => N,
   HC: () => y,
   NQ: () => E,
   fe: () => x
@@ -247,20 +247,20 @@ let T = Object.freeze({
       delay: 1e3
     }
   }),
-  N = 1.2;
-class A extends(o = l.PureComponent) {
+  A = 1.2;
+class N extends(o = l.PureComponent) {
   static getNextScene(e) {
     switch (e) {
-      case A.Scenes.IDLE_ENTRY:
-        return A.Scenes.IDLE_LOOP;
-      case A.Scenes.BOOST_START:
-        return A.Scenes.BOOST_LOOP;
-      case A.Scenes.BOOST_END:
-        return A.Scenes.VICTORY;
-      case A.Scenes.VICTORY:
-        return A.Scenes.IDLE_ENTRY;
-      case A.Scenes.ERROR:
-        return A.Scenes.IDLE_LOOP;
+      case N.Scenes.IDLE_ENTRY:
+        return N.Scenes.IDLE_LOOP;
+      case N.Scenes.BOOST_START:
+        return N.Scenes.BOOST_LOOP;
+      case N.Scenes.BOOST_END:
+        return N.Scenes.VICTORY;
+      case N.Scenes.VICTORY:
+        return N.Scenes.IDLE_ENTRY;
+      case N.Scenes.ERROR:
+        return N.Scenes.IDLE_LOOP;
       default:
         return e
     }
@@ -283,7 +283,7 @@ class A extends(o = l.PureComponent) {
       delay: e.delay || 0
     }), f.Z.timing(this.backgroundAnimation.y, {
       toValue: e.toValue,
-      duration: e.duration * N,
+      duration: e.duration * A,
       delay: e.delay || 0
     })]).start()
   }
@@ -303,7 +303,7 @@ class A extends(o = l.PureComponent) {
       delay: T.BOOST_START.delay
     }), f.Z.timing(this.backgroundAnimation.y, {
       toValue: T.BOOST_START.toValue,
-      duration: T.BOOST_START.duration * N,
+      duration: T.BOOST_START.duration * A,
       delay: T.BOOST_START.delay
     })]).start()
   }
@@ -353,7 +353,7 @@ class A extends(o = l.PureComponent) {
     })), h(this, "didUnmount", !1), h(this, "animateIdleLoopBackground", () => {
       !this.didUnmount && (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
         toValue: T.IDLE_LOOP.toValue,
-        duration: T.IDLE_LOOP.duration * N,
+        duration: T.IDLE_LOOP.duration * A,
         easing: f.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
     }), h(this, "animateIdleLoopForeground", () => {
@@ -380,7 +380,7 @@ class A extends(o = l.PureComponent) {
     })
   }
 }
-h(A, "Scenes", O);
+h(N, "Scenes", O);
 var C = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(C || {});

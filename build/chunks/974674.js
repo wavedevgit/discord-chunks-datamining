@@ -79,12 +79,12 @@ function T(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = {
+let A = {
   tension: 1200,
   friction: 70
 };
 
-function A() {
+function N() {
   return document.hasFocus()
 }
 
@@ -359,17 +359,17 @@ function k(e) {
   } = e, T = {
     width: (0, h.px)(n),
     height: (0, h.px)(n)
-  }, N = null == p || m ? void 0 : R(p, E, v), A = S.size * g.hs, C = P(E, n, v, y), w = null != O && (0, r.jsx)("svg", {
-    width: A + I,
-    height: A,
-    viewBox: "0 0 ".concat(A + I, " ").concat(A),
+  }, A = null == p || m ? void 0 : R(p, E, v), N = S.size * g.hs, C = P(E, n, v, y), w = null != O && (0, r.jsx)("svg", {
+    width: N + I,
+    height: N,
+    viewBox: "0 0 ".concat(N + I, " ").concat(N),
     className: b.avatarDecoration,
     "aria-hidden": !0,
     children: (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
-      width: A,
-      height: A,
+      width: N,
+      height: N,
       mask: null != C ? "url(#".concat(C, ")") : void 0,
       children: (0, r.jsx)("div", {
         className: b.avatarStack,
@@ -392,7 +392,7 @@ function k(e) {
     onKeyDown: s,
     onMouseEnter: null != u ? u : void 0,
     onMouseLeave: null != d ? d : void 0,
-    "aria-label": N,
+    "aria-label": A,
     "aria-hidden": m,
     children: [t, w]
   }) : (0, r.jsxs)("div", {
@@ -402,7 +402,7 @@ function k(e) {
     onMouseEnter: null != u ? u : void 0,
     onMouseLeave: null != d ? d : void 0,
     role: "img",
-    "aria-label": N,
+    "aria-label": A,
     "aria-hidden": m,
     children: [t, w]
   })
@@ -443,12 +443,12 @@ function U(e) {
     "aria-hidden": O = !1,
     "aria-label": S,
     imageClassName: T
-  } = e, N = n !== m.Skl.UNKNOWN ? n : null, A = (0, h.UC)(i), C = null != N ? Math.ceil((A.status * h.D6 - A.status) / 2) : 0, R = A.size + C, P = (0, u.vj)(N, o);
+  } = e, A = n !== m.Skl.UNKNOWN ? n : null, N = (0, h.UC)(i), C = null != A ? Math.ceil((N.status * h.D6 - N.status) / 2) : 0, R = N.size + C, P = (0, u.vj)(A, o);
   return (0, r.jsx)(k, I(y({}, e), {
     ariaLabel: S,
     ariaHidden: O,
-    status: N,
-    specs: A,
+    status: A,
+    specs: N,
     typingOffset: C,
     children: (0, r.jsxs)("svg", {
       width: R,
@@ -459,30 +459,30 @@ function U(e) {
       children: [(0, r.jsx)("foreignObject", {
         x: 0,
         y: 0,
-        width: A.size,
-        height: A.size,
-        mask: "url(#".concat(w(N, i, s, l), ")"),
+        width: N.size,
+        height: N.size,
+        mask: "url(#".concat(w(A, i, s, l), ")"),
         children: (0, r.jsx)(j, {
           src: t,
           isSpeaking: _,
           className: T
         })
-      }), null != N && null != v ? x(v, s, A, N) : null, null != N ? (0, r.jsx)(d.u, {
-        text: g ? (0, p.u5)(N) : null,
+      }), null != A && null != v ? x(v, s, N, A) : null, null != A ? (0, r.jsx)(d.u, {
+        text: g ? (0, p.u5)(A) : null,
         "aria-label": !1,
         position: "top",
-        spacing: 5 + 1.5 * A.stroke,
+        spacing: 5 + 1.5 * N.stroke,
         delay: E,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", I(y({}, e, D(A, N, s, l)), {
+          children: [(0, r.jsx)("rect", I(y({}, e, D(N, A, s, l)), {
             fill: P,
-            mask: "url(#".concat((0, u.rs)(N, s, l), ")"),
+            mask: "url(#".concat((0, u.rs)(A, s, l), ")"),
             className: b.pointerEvents
           })), l ? (0, r.jsx)(c.b, {
             ref: f,
-            dotRadius: A.status / 4,
-            x: A.size - 1.375 * A.status - A.offset,
-            y: A.size - A.status / 1.333 - A.offset
+            dotRadius: N.status / 4,
+            x: N.size - 1.375 * N.status - N.offset,
+            y: N.size - N.status / 1.333 - N.offset
           }) : null]
         })
       }) : null]
@@ -541,10 +541,10 @@ function F(e) {
     isMobile: l,
     isTyping: _
   })), [V, E, O, l, _]), K = (0, f.q_F)({
-    config: N,
+    config: A,
     from: W,
     to: Y
-  }, A() ? "animate-always" : "animate-never"), {
+  }, N() ? "animate-always" : "animate-never"), {
     avatarCutoutX: z,
     avatarCutoutY: q,
     avatarCutoutWidth: Q,
@@ -567,7 +567,7 @@ function F(e) {
     }, {
       scale: 1
     }] : []
-  }, A() ? "animate-always" : "animate-never", [F, O]);
+  }, N() ? "animate-always" : "animate-never", [F, O]);
   return (0, r.jsx)(k, I(y({}, e), {
     ariaLabel: L,
     ariaHidden: D,

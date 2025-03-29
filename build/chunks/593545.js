@@ -186,7 +186,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     language: t,
     setLanguage: n
@@ -229,7 +229,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   return (0, r.jsx)(l.ua7, {
     text: p.NW.string(p.t["0PQYk5"]),
     children: t => (0, r.jsx)(l.P3F, v(E({}, t), {
@@ -289,7 +289,7 @@ function C(e) {
           setExpanded: d,
           isWholeFile: O,
           numLines: v
-        }), (0, r.jsx)(A, {
+        }), (0, r.jsx)(N, {
           url: n,
           fileName: i,
           fileSize: o,
@@ -303,7 +303,7 @@ function C(e) {
         url: n,
         fileName: i,
         fileSize: o
-      }), (0, r.jsx)(N, {
+      }), (0, r.jsx)(A, {
         language: f,
         setLanguage: m
       })]
@@ -348,7 +348,7 @@ function R(e) {
           url: t,
           fileName: n,
           fileSize: o
-        }), (0, r.jsx)(N, {
+        }), (0, r.jsx)(A, {
           language: d,
           setLanguage: f
         })]

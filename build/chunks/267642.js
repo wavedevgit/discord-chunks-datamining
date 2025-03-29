@@ -11,14 +11,14 @@ n.d(t, {
   _k: () => U,
   _p: () => R,
   aq: () => M,
-  cP: () => N,
+  cP: () => A,
   e9: () => C,
   f2: () => L,
   gZ: () => F,
   ge: () => P,
   ig: () => I,
   nL: () => H,
-  nW: () => A,
+  nW: () => N,
   rF: () => w,
   tb: () => D,
   tl: () => K,
@@ -71,7 +71,7 @@ let v = [h.Eu4.NONE, h.Eu4.TIER_1, h.Eu4.TIER_2, h.Eu4.TIER_3],
     let t = v[v.indexOf(e) - 1];
     return g._k[e] - g._k[t]
   },
-  N = e => [{
+  A = e => [{
     tier: h.Eu4.TIER_1,
     title: E.NW.string(E.t["lK+WOT"]),
     perks: [{
@@ -232,7 +232,7 @@ let v = [h.Eu4.NONE, h.Eu4.TIER_1, h.Eu4.TIER_2, h.Eu4.TIER_3],
     } : null].filter(f.lm)
   }];
 
-function A(e) {
+function N(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     {
       useLevels: n = !0

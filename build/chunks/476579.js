@@ -23,18 +23,18 @@ var r = n(161581),
   I = n(644659),
   S = s.PROPER,
   T = s.CONFIGURABLE,
-  N = "ArrayBuffer",
-  A = "DataView",
+  A = "ArrayBuffer",
+  N = "DataView",
   C = "prototype",
   R = "Wrong length",
   P = "Wrong index",
-  w = I.getterFor(N),
-  D = I.getterFor(A),
+  w = I.getterFor(A),
+  D = I.getterFor(N),
   L = I.set,
-  x = r[N],
+  x = r[A],
   M = x,
   k = M && M[C],
-  j = r[A],
+  j = r[N],
   U = j && j[C],
   G = Object.prototype,
   B = r.Array,
@@ -88,7 +88,7 @@ var r = n(161581),
     for (var u = a.bytes, d = s + a.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (a) {
-  var et = S && x.name !== N;
+  var et = S && x.name !== A;
   if (!d(function() {
       x(1)
     }) || !d(function() {
@@ -101,7 +101,7 @@ if (a) {
     })[C] = k;
     for (var en, er = b(x), ei = 0; er.length > ei;)(en = er[ei++]) in M || l(M, en, x[en]);
     k.constructor = M
-  } else et && T && l(x, "name", N);
+  } else et && T && l(x, "name", A);
   E && g(U) !== G && E(U, G);
   var eo = new j(new M(2)),
     ea = i(U.setInt8);
@@ -119,7 +119,7 @@ if (a) {
   f(this, k);
   var t = h(e);
   L(this, {
-    type: N,
+    type: A,
     bytes: V(B(t), 0),
     byteLength: t
   }), o || (this.byteLength = t, this.detached = !1)
@@ -131,7 +131,7 @@ if (a) {
   if (a < 0 || a > i) throw F("Wrong offset");
   if (n = void 0 === n ? i - a : p(n), a + n > i) throw F(R);
   L(this, {
-    type: A,
+    type: N,
     buffer: e,
     byteLength: n,
     byteOffset: a,
@@ -189,7 +189,7 @@ if (a) {
     ee(this, 8, e, X, t, arguments.length > 2 && arguments[2])
   }
 });
-O(M, N), O(j, A), e.exports = {
+O(M, A), O(j, N), e.exports = {
   ArrayBuffer: M,
   DataView: j
 }

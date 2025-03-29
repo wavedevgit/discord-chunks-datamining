@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   JA: () => D,
-  Jw: () => A,
+  Jw: () => N,
   Od: () => w,
   Wj: () => x,
   gK: () => L,
@@ -32,8 +32,8 @@ var r = n(192379),
   I = n(456077),
   S = n(124368),
   T = n(981631),
-  N = n(388032),
-  A = function(e) {
+  A = n(388032),
+  N = function(e) {
     return e[e.Disabled = 1] = "Disabled", e[e.Enabled = 2] = "Enabled", e[e.PrivateOnly = 3] = "PrivateOnly", e
   }({});
 
@@ -99,7 +99,7 @@ function D(e) {
       b = null !== (m = o.name) && void 0 !== m ? m : "";
     if ("" === b && d) {
       let e = w(t, n);
-      b = "" !== e ? e : N.NW.string(N.t["7Xm5QE"])
+      b = "" !== e ? e : A.NW.string(A.t["7Xm5QE"])
     }
     let O = (0, y.WD)(t),
       I = p.Z.getChannel(v.default.castMessageIdAsChannelId(n)),
@@ -180,8 +180,8 @@ async function k(e, t) {
   let r = e.isForumLikeChannel();
   try {
     n = await t(), null == n.body ? a.Z.show({
-      title: N.NW.string(N.t.j2d6Ki),
-      body: N.NW.string(N.t.fEptJC)
+      title: A.NW.string(A.t.j2d6Ki),
+      body: A.NW.string(A.t.fEptJC)
     }) : (o.Z.dispatch({
       type: "SLOWMODE_RESET_COOLDOWN",
       slowmodeType: g.S.CreateThread,
@@ -193,12 +193,12 @@ async function k(e, t) {
   } catch (t) {
     var i, s, c, d, f, _;
     if ((null === (i = t.body) || void 0 === i ? void 0 : i.code) === T.evJ.TOO_MANY_THREADS) a.Z.show({
-      title: r ? N.NW.string(N.t.vWNFk5) : N.NW.string(N.t["1KEdvL"]),
-      body: r ? N.NW.string(N.t.KGaiEB) : N.NW.string(N.t.P0wT5e)
+      title: r ? A.NW.string(A.t.vWNFk5) : A.NW.string(A.t["1KEdvL"]),
+      body: r ? A.NW.string(A.t.KGaiEB) : A.NW.string(A.t.P0wT5e)
     });
     else if ((null === (s = t.body) || void 0 === s ? void 0 : s.code) === T.evJ.TOO_MANY_ANNOUNCEMENT_THREADS) a.Z.show({
-      title: N.NW.string(N.t["1KEdvL"]),
-      body: N.NW.string(N.t.jDMxz8)
+      title: A.NW.string(A.t["1KEdvL"]),
+      body: A.NW.string(A.t.jDMxz8)
     });
     else if ((null === (c = t.body) || void 0 === c ? void 0 : c.code) === T.evJ.SLOWMODE_RATE_LIMITED) {
       let n = null !== (_ = t.body.retry_after) && void 0 !== _ ? _ : 0;
@@ -209,8 +209,8 @@ async function k(e, t) {
         cooldownMs: n * E.Z.Millis.SECOND
       })
     } else if (429 === t.status) a.Z.show({
-      title: r ? N.NW.string(N.t.vWNFk5) : N.NW.string(N.t["1KEdvL"]),
-      body: N.NW.string(N.t["Whhv4+"])
+      title: r ? A.NW.string(A.t.vWNFk5) : A.NW.string(A.t["1KEdvL"]),
+      body: A.NW.string(A.t["Whhv4+"])
     });
     else if (S.fZ.has(null === (d = t.body) || void 0 === d ? void 0 : d.code)) throw t;
     else {
@@ -226,8 +226,8 @@ async function k(e, t) {
         })
       });
       a.Z.show({
-        title: N.NW.string(N.t.j2d6Ki),
-        body: N.NW.string(N.t.fEptJC)
+        title: A.NW.string(A.t.j2d6Ki),
+        body: A.NW.string(A.t.fEptJC)
       })
     }
   }

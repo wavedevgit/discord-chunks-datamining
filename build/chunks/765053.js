@@ -100,7 +100,7 @@ var m = {
   T = function(e) {
     return I(e, "onChangeClientState") || function() {}
   },
-  N = function(e, t) {
+  A = function(e, t) {
     return t.filter(function(t) {
       return void 0 !== t[e]
     }).map(function(t) {
@@ -109,7 +109,7 @@ var m = {
       return f({}, e, t)
     }, {})
   },
-  A = function(e, t) {
+  N = function(e, t) {
     return t.filter(function(e) {
       return void 0 !== e[m.BASE]
     }).map(function(e) {
@@ -459,14 +459,14 @@ var Y = function(e, t) {
         r = n.setHelmet,
         i = null,
         o = {
-          baseTag: A(["href"], e = n.helmetInstances.get().map(function(e) {
+          baseTag: N(["href"], e = n.helmetInstances.get().map(function(e) {
             var t = f({}, e.props);
             return delete t.context, t
           })),
-          bodyAttributes: N("bodyAttributes", e),
+          bodyAttributes: A("bodyAttributes", e),
           defer: I(e, "defer"),
           encode: I(e, "encodeSpecialCharacters"),
-          htmlAttributes: N("htmlAttributes", e),
+          htmlAttributes: A("htmlAttributes", e),
           linkTags: C(m.LINK, ["rel", "href"], e),
           metaTags: C(m.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
           noscriptTags: C(m.NOSCRIPT, ["innerHTML"], e),
@@ -474,7 +474,7 @@ var Y = function(e, t) {
           scriptTags: C(m.SCRIPT, ["src", "innerHTML"], e),
           styleTags: C(m.STYLE, ["cssText"], e),
           title: S(e),
-          titleAttributes: N("titleAttributes", e),
+          titleAttributes: A("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };
       W.canUseDOM ? (t = o, q && cancelAnimationFrame(q), t.defer ? q = requestAnimationFrame(function() {

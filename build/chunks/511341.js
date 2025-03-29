@@ -63,10 +63,10 @@ function O(e) {
     onClose: S
   } = e, {
     resetInteraction: T,
-    setInteractionToast: N
+    setInteractionToast: A
   } = (0, f.Xo)(), {
-    theme: A
-  } = (0, p.z)(), C = (0, o.e7)([l.Z], () => l.Z.theme), R = (0, a.wj)(C) ? !(0, a.wj)(A) : (0, a.wj)(A), P = i.useRef(null);
+    theme: N
+  } = (0, p.z)(), C = (0, o.e7)([l.Z], () => l.Z.theme), R = (0, a.wj)(C) ? !(0, a.wj)(N) : (0, a.wj)(N), P = i.useRef(null);
   i.useEffect(() => {
     null == O || O(null == P ? void 0 : P.current)
   }, [P, O]), i.useEffect(() => {
@@ -92,7 +92,7 @@ function O(e) {
       sourceType: _,
       sourceDetails: b
     });
-    N(null);
+    A(null);
     try {
       await (0, d.Z)({
         userId: t.id,
@@ -103,7 +103,7 @@ function O(e) {
         entry: c
       })
     } catch (e) {}
-    N(h.P.REACT)
+    A(h.P.REACT)
   };
   return (0, r.jsx)(s.Z, {
     headerClassName: R ? v.noBoxShadowMargin : void 0,

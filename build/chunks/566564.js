@@ -141,10 +141,10 @@ let S = e => {
       refreshCategories: O
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null !== (t = null != _ ? _ : C) && void 0 !== t ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), I = (0, b.b)("Collectibles Shop Button"), w = (0, p.R)("CollectiblesFeedShop"), {
+    }), P = null !== (t = null != _ ? _ : C) && void 0 !== t ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, b.b)("Collectibles Shop Button"), I = (0, p.R)("CollectiblesFeedShop"), {
       noCache: B,
-      includeUnpublished: T
-    } = (0, m.Z)(), N = l.useCallback(() => {
+      includeUnpublished: N
+    } = (0, m.Z)(), T = l.useCallback(() => {
       O()
     }, [O]);
     if (null == E) return null;
@@ -153,14 +153,14 @@ let S = e => {
       null != _ ? e.push("shop load fetch categories error: ".concat(P.message)) : null != C ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), d.Z.captureMessage(e.join("\n"), {
         tags: {
           isStaff: E.isStaff().toString(),
-          preloadEnabled: I.toString(),
+          preloadEnabled: w.toString(),
           disableCache: B.toString(),
-          includeUnpublished: T.toString()
+          includeUnpublished: N.toString()
         }
       })
     }
     return null != _ ? (0, r.jsx)(h.Z, {
-      onRetry: N,
+      onRetry: T,
       errorOrigin: h.i.SHOP_PAGE,
       errorMessage: _.message
     }) : (0, r.jsx)("div", {
@@ -174,7 +174,7 @@ let S = e => {
           numVisibleItems: i,
           isFetchingCategories: v,
           tab: g
-        }), g !== y.AW.CATALOG && i >= w && (0, r.jsxs)("div", {
+        }), g !== y.AW.CATALOG && i >= I && (0, r.jsxs)("div", {
           className: k.endOfFeed,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",

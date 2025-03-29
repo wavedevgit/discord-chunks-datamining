@@ -76,7 +76,7 @@ function g(e) {
 function E(e, t) {
   var {
     streamId: n,
-    paused: o,
+    paused: o = !1,
     onReady: s,
     onResize: l,
     className: c
@@ -152,7 +152,4 @@ function E(e, t) {
     className: a()("media-engine-video", c),
     ref: p
   }, f))
-}
-E.defaultProps = {
-  paused: !1
 }

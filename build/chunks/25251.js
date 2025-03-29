@@ -60,10 +60,10 @@ let u = [],
   T = () => {
     v(u), h = null, i = void 0, f = !1
   },
-  N = e => {
+  A = e => {
     T()
   };
-class A extends(o = s.ZP.Store) {
+class N extends(o = s.ZP.Store) {
   get isFetching() {
     return f
   }
@@ -86,11 +86,11 @@ class A extends(o = s.ZP.Store) {
     return null != e ? p[e] : void 0
   }
 }
-c(A, "displayName", "ProfileEffectStore");
-let C = new A(l.Z, {
+c(N, "displayName", "ProfileEffectStore");
+let C = new N(l.Z, {
   USER_PROFILE_EFFECTS_FETCH: y,
   USER_PROFILE_EFFECTS_FETCH_SUCCESS: O,
   USER_PROFILE_EFFECTS_FETCH_FAILURE: I,
   PROFILE_EFFECTS_SET_TRY_IT_OUT: S,
-  LOGOUT: N
+  LOGOUT: A
 })

@@ -93,13 +93,13 @@ function S(e, t) {
     keyboardModeEnabled: O,
     onKeyDown: S,
     draftType: T,
-    size: N = 1
-  } = e, A = (0, s.JA)(n), {
+    size: A = 1
+  } = e, N = (0, s.JA)(n), {
     onFocus: C
-  } = A, R = v(A, ["onFocus"]), {
+  } = N, R = v(N, ["onFocus"]), {
     handleFocus: P,
     handleBlur: w
-  } = (0, f.b)(C), D = 0 === N, L = null != E, x = e => {
+  } = (0, f.b)(C), D = 0 === A, L = null != E, x = e => {
     if (O) {
       switch (e.which) {
         case _.yXg.D:
@@ -126,7 +126,7 @@ function S(e, t) {
       onBlur: w,
       onKeyDown: x,
       className: a()(h.upload, o, {
-        [h.sizeClip]: 2 === N
+        [h.sizeClip]: 2 === A
       }),
       ref: t,
       children: (0, r.jsxs)("div", {

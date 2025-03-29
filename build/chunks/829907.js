@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DH: () => A,
+  DH: () => N,
   H8: () => T,
   HD: () => d,
   PD: () => C,
@@ -114,14 +114,14 @@ function T(e) {
   let t = a.ZP.getGameForPID(e);
   return null != t && null != t.name && S(t)
 }
-let N = new Set([i.Jx.UNKNOWN, i.Jx.FULLSCREEN]);
+let A = new Set([i.Jx.UNKNOWN, i.Jx.FULLSCREEN]);
 
-function A(e, t, n) {
+function N(e, t, n) {
   if (e.overlayMethod !== r.gl.OutOfProcess && e.overlayMethod !== r.gl.OutOfProcessLimitedInteraction) return !1;
   if (!n) return !0;
   switch (t) {
     case i.Jx.UNKNOWN:
-      return N.has(e.previousFullscreenType);
+      return A.has(e.previousFullscreenType);
     case i.Jx.FULLSCREEN:
       return !0
   }

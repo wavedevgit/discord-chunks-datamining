@@ -56,7 +56,7 @@ function f(e) {
     enabled: b,
     autoFocusElement: v,
     useVirtualFocus: y
-  } = e, O = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(!1), [N, A] = r.useState(!1), [C, R] = r.useState(!1), [P] = r.useState(() => new a.$o(e => {
+  } = e, O = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(!1), [A, N] = r.useState(!1), [C, R] = r.useState(!1), [P] = r.useState(() => new a.$o(e => {
     let [t, n] = e.split(",").map(Number);
     return () => {
       T(!0), g({
@@ -75,7 +75,7 @@ function f(e) {
       let r = c(t, e, n);
       (null != h ? h(e, n, r) : Promise.resolve()).then(() => {
         let e = u(r);
-        null != e ? (w(e), A(!1)) : requestAnimationFrame(() => A(!0))
+        null != e ? (w(e), N(!1)) : requestAnimationFrame(() => N(!0))
       })
     }, [t, h, w]),
     L = r.useCallback(function() {
@@ -109,8 +109,8 @@ function f(e) {
     O.current && null == e && M(!0)
   }, []);
   r.useEffect(() => {
-    S && N && null != I && (w(I), A(!1))
-  }, [N, I]), r.useEffect(() => {
+    S && A && null != I && (w(I), N(!1))
+  }, [A, I]), r.useEffect(() => {
     S && (C || D(f, _), R(!1))
   }, [f, _]);
   let j = r.useCallback(e => {

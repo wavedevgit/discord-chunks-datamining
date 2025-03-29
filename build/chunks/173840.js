@@ -198,8 +198,8 @@ function O(e, {
 let I = /\b\B/,
   S = "[a-zA-Z]\\w*",
   T = "[a-zA-Z_]\\w*",
-  N = "\\b\\d+(\\.\\d+)?",
-  A = "(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)",
+  A = "\\b\\d+(\\.\\d+)?",
+  N = "(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)",
   C = "\\b(0b[01]+)",
   R = "!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|>>|>|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~",
   P = (e = {}) => {
@@ -293,10 +293,10 @@ var V = Object.freeze({
   C_LINE_COMMENT_MODE: k,
   C_NUMBER_MODE: {
     scope: "number",
-    begin: A,
+    begin: N,
     relevance: 0
   },
-  C_NUMBER_RE: A,
+  C_NUMBER_RE: N,
   END_SAME_AS_BEGIN: function(e) {
     return Object.assign(e, {
       "on:begin": (e, t) => {
@@ -316,10 +316,10 @@ var V = Object.freeze({
   },
   NUMBER_MODE: {
     scope: "number",
-    begin: N,
+    begin: A,
     relevance: 0
   },
-  NUMBER_RE: N,
+  NUMBER_RE: A,
   PHRASAL_WORDS_MODE: x,
   QUOTE_STRING_MODE: L,
   REGEXP_MODE: G,
@@ -630,13 +630,13 @@ let em = r,
           n = "";
         for (; t;) {
           n += x.substring(e, t.index);
-          let r = A.case_insensitive ? t[0].toLowerCase() : t[0],
+          let r = N.case_insensitive ? t[0].toLowerCase() : t[0],
             i = u(w, r);
           if (i) {
             let [e, o] = i;
             if (L.addText(n), n = "", l[r] = (l[r] || 0) + 1, l[r] <= eb && (M += o), e.startsWith("_")) n += t[0];
             else {
-              let n = A.classNameAliases[e] || e;
+              let n = N.classNameAliases[e] || e;
               p(t[0], n)
             }
           } else n += t[0];
@@ -674,14 +674,14 @@ let em = r,
             n++;
             continue
           }
-          let r = A.classNameAliases[e[n]] || e[n],
+          let r = N.classNameAliases[e[n]] || e[n],
             i = t[n];
           r ? p(i, r) : (x = i, d(), x = ""), n++
         }
       }
 
       function m(e, t) {
-        return e.scope && "string" == typeof e.scope && L.openNode(A.classNameAliases[e.scope] || e.scope), e.beginScope && (e.beginScope._wrap ? (p(x, A.classNameAliases[e.beginScope._wrap] || e.beginScope._wrap), x = "") : e.beginScope._multi && (h(e.beginScope, t), x = "")), w = Object.create(e, {
+        return e.scope && "string" == typeof e.scope && L.openNode(N.classNameAliases[e.scope] || e.scope), e.beginScope && (e.beginScope._wrap ? (p(x, N.classNameAliases[e.beginScope._wrap] || e.beginScope._wrap), x = "") : e.beginScope._multi && (h(e.beginScope, t), x = "")), w = Object.create(e, {
           parent: {
             value: w
           }
@@ -729,12 +729,12 @@ let em = r,
 
       function S() {
         let e = [];
-        for (let t = w; t !== A; t = t.parent) t.scope && e.unshift(t.scope);
+        for (let t = w; t !== N; t = t.parent) t.scope && e.unshift(t.scope);
         e.forEach(e => L.openNode(e))
       }
       let T = {};
 
-      function N(n, r) {
+      function A(n, r) {
         let o = r && r[0];
         if (x += n, null == o) return _(), 0;
         if ("begin" === T.type && "end" === r.type && T.index === r.index && "" === o) {
@@ -758,9 +758,9 @@ let em = r,
         if (j > 1e5 && j > 3 * r.index) throw Error("potential infinite loop, way more iterations than matches");
         return x += o, o.length
       }
-      let A = P(e);
-      if (!A) throw en(s.replace("{}", e)), Error('Unknown language: "' + e + '"');
-      let C = ed(A),
+      let N = P(e);
+      if (!N) throw en(s.replace("{}", e)), Error('Unknown language: "' + e + '"');
+      let C = ed(N),
         R = "",
         w = o || C,
         D = {},
@@ -772,17 +772,17 @@ let em = r,
         j = 0,
         U = !1;
       try {
-        if (A.__emitTokens) A.__emitTokens(t, L);
+        if (N.__emitTokens) N.__emitTokens(t, L);
         else {
           for (w.matcher.considerAll();;) {
             j++, U ? U = !1 : w.matcher.considerAll(), w.matcher.lastIndex = k;
             let e = w.matcher.exec(t);
             if (!e) break;
             let n = t.substring(k, e.index),
-              r = N(n, e);
+              r = A(n, e);
             k = e.index + r
           }
-          N(t.substring(k))
+          A(t.substring(k))
         }
         return L.finalize(), R = L.toHTML(), {
           language: e,
@@ -886,17 +886,17 @@ let em = r,
       C(), ei("10.6.0", "initHighlighting() deprecated.  Use highlightAll() now.")
     };
 
-    function N() {
+    function A() {
       C(), ei("10.6.0", "initHighlightingOnLoad() deprecated.  Use highlightAll() now.")
     }
-    let A = !1;
+    let N = !1;
 
     function C() {
       function e() {
         C()
       }
       if ("loading" === document.readyState) {
-        A || window.addEventListener("DOMContentLoaded", e, !1), A = !0;
+        N || window.addEventListener("DOMContentLoaded", e, !1), N = !0;
         return
       }
       document.querySelectorAll(c.cssSelector).forEach(S)
@@ -965,7 +965,7 @@ let em = r,
           c = eg(c, e)
         },
         initHighlighting: T,
-        initHighlightingOnLoad: N,
+        initHighlightingOnLoad: A,
         registerLanguage: R,
         unregisterLanguage: function(e) {
           for (let t of (delete r[e], Object.keys(i))) i[t] === e && delete i[t]

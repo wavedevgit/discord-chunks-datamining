@@ -20,15 +20,14 @@ function u(e) {
   } = (0, l.JN)({
     location: "StreamWarning"
   }), m = f ? function(e) {
-    if (null != e) {
-      var t;
-      let n = null === (t = (0, i.hp)(e.avError)) || void 0 === t ? void 0 : t.errorCode,
-        r = c.NW.formatToPlainString(c.t["ejOT9/"], {
-          errorCode: n
-        });
-      return s.Z.isDeveloper ? "".concat(r, " (").concat(e.errorType, ")") : r
-    }
-    return null
+    var t;
+    let n = null == e ? void 0 : e.avError;
+    if (null == n) return null;
+    let r = null === (t = (0, i.hp)(n)) || void 0 === t ? void 0 : t.errorCode,
+      l = c.NW.formatToPlainString(c.t["ejOT9/"], {
+        errorCode: r
+      });
+    return s.Z.isDeveloper ? "".concat(l, " (").concat(n, ")") : l
   }(u) : null;
   return null != d ? (0, r.jsx)(a.Z, {
     className: n,

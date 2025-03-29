@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A7: () => N,
+  A7: () => A,
   hQ: () => R,
   lo: () => w
 }), n(47120);
@@ -83,7 +83,7 @@ let I = "data-listbox-item-id",
     BRAND: m.selectedBrand
   });
 
-function N(e) {
+function A(e) {
   let [t, n] = i.useState(() => new Set(e));
   return [t, i.useCallback(e => {
     n(t => {
@@ -93,14 +93,14 @@ function N(e) {
   }, [])]
 }
 
-function A(e) {
+function N(e) {
   return String(e)
 }
 let C = i.createContext({
   activeDescendant: null,
   selected: new Set,
   setSelected: () => null,
-  itemToString: A
+  itemToString: N
 });
 
 function R(e) {
@@ -114,8 +114,8 @@ function R(e) {
     "aria-label": b,
     multiSelect: O = !1,
     autoFocus: T = !1,
-    maxVisibleItems: N = 5,
-    itemToString: R = A,
+    maxVisibleItems: A = 5,
+    itemToString: R = N,
     showScrollbar: P = !1
   } = e, [w, D] = i.useState(""), [L] = i.useState(!0), [x, M] = i.useState(null), k = i.useId(), j = i.useRef(null);
   i.useLayoutEffect(() => {
@@ -213,7 +213,7 @@ function R(e) {
               },
               children: (0, r.jsx)(W, v(E({}, s), {
                 style: {
-                  maxHeight: N * (S + 6)
+                  maxHeight: A * (S + 6)
                 },
                 "aria-multiselectable": O,
                 id: k,

@@ -154,7 +154,7 @@ let D = i.memo(function(e) {
     isSelectedVoice: Z,
     isLast: D,
     withGuildIcon: R
-  } = e, L = (0, s.e7)([y.ZP], () => y.ZP.getVoiceStatesForChannel(t), [t]), k = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
+  } = e, k = (0, s.e7)([y.ZP], () => y.ZP.getVoiceStatesForChannel(t), [t]), L = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
     unread: M,
     mentionCount: G,
     isMentionLowImportance: B
@@ -176,7 +176,7 @@ let D = i.memo(function(e) {
         channel: i
       }))
     })
-  }, [t.id]), H = null == L ? 0 : L.length, z = (0, a.JA)(t.id), {
+  }, [t.id]), H = null == k ? 0 : k.length, z = (0, a.JA)(t.id), {
     role: Y
   } = z, q = function(e, t) {
     if (null == e) return {};
@@ -250,7 +250,7 @@ let D = i.memo(function(e) {
               className: N.children,
               children: [H > 0 && t.userLimit > 0 ? (0, r.jsx)(O.Z, {
                 userCount: H,
-                video: k,
+                video: L,
                 channel: t
               }) : null, (0, _.Z)(G) ? (0, r.jsx)(j.Z, {
                 mentionsCount: G,
@@ -264,7 +264,7 @@ let D = i.memo(function(e) {
       channel: t,
       collapsed: !Z,
       collapsedMax: 6,
-      voiceStates: L,
+      voiceStates: k,
       location: C.Sbl.GUILD_CHANNEL_LIST
     })]
   })

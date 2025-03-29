@@ -94,7 +94,7 @@ let S = {
     [S.LARGER]: 64,
     [S.XLARGE]: 100
   },
-  N = {
+  A = {
     [S.SMOL]: [10, 10, 8, 6, 6, 4],
     [S.MINI]: [12, 12, 10, 10, 8, 6, 4],
     [S.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
@@ -104,7 +104,7 @@ let S = {
     [S.LARGER]: [19, 19, 17, 17, 15, 13, 11],
     [S.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
   };
-class A extends o.PureComponent {
+class N extends o.PureComponent {
   renderAcronym() {
     let {
       guild: e,
@@ -150,10 +150,10 @@ class A extends o.PureComponent {
         animate: I,
         tabIndex: S,
         iconSrc: T,
-        "aria-hidden": A
+        "aria-hidden": N
       } = n,
       C = O(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden"]),
-      R = N[c],
+      R = A[c],
       P = null != h ? d.P3F : "div";
     return (0, i.jsxs)(P, y(b({
       className: s()(g.icon, o, (0, m.l)(g, "iconSize", c), {
@@ -161,7 +161,7 @@ class A extends o.PureComponent {
         [g.iconInactive]: !l,
         [g.noIcon]: null == r.icon
       }),
-      "aria-hidden": A,
+      "aria-hidden": N,
       style: null == r.icon ? b({
         fontSize: (null !== (t = R[r.acronym.length]) && void 0 !== t ? t : R[R.length - 1]) * f
       }, u) : u,
@@ -221,7 +221,7 @@ let C = c.ZP.connectStores([p.Z], e => {
       backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != a ? a : T[o], n && p.Z.isFocused(), s))
     })
   }
-})((0, f.N)(e => (0, i.jsx)(A, b({}, e))));
+})((0, f.N)(e => (0, i.jsx)(N, b({}, e))));
 class R extends(r = o.PureComponent) {
   render() {
     return (0, i.jsx)(C, b({}, this.props))

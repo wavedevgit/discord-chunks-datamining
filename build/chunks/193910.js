@@ -64,9 +64,9 @@ function A(e) {
     draftType: A,
     editorTextContent: w,
     setValue: R,
-    openClips: k
+    openClips: M
   } = e, {
-    analyticsLocations: M
+    analyticsLocations: k
   } = (0, p.ZP)(), L = (0, g.Dt)({
     channel: t
   });
@@ -80,7 +80,7 @@ function A(e) {
   }
 
   function U() {
-    k()
+    M()
   }
 
   function B() {
@@ -135,7 +135,7 @@ function A(e) {
     }), (0, d.Z)({
       channel: t,
       openInPopout: !1,
-      analyticsLocations: M
+      analyticsLocations: k
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -216,7 +216,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.JOIN,
                 activity: n,
-                location: M[M.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "play");
@@ -230,7 +230,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.LISTEN,
                 activity: n,
-                location: M[M.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "listen");
@@ -244,7 +244,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.WATCH,
                 activity: n,
-                location: M[M.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "watch");

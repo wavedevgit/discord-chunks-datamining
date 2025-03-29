@@ -2,17 +2,16 @@
 "use strict";
 n.d(t, {
   B1: () => x,
-  DR: () => N,
+  DR: () => A,
   F$: () => P,
-  K$: () => M,
-  Ov: () => j,
-  R2: () => k,
+  Ov: () => k,
+  R2: () => M,
   Sm: () => S,
   fK: () => L,
-  fi: () => U,
+  fi: () => j,
   jr: () => D,
   mK: () => T,
-  oK: () => A,
+  oK: () => N,
   oc: () => R,
   qg: () => w
 });
@@ -74,7 +73,7 @@ function I(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-n(597688), n(574709), n(328347), n(874703), n(52030);
+n(597688), n(328347), n(874703), n(52030);
 let S = e => {
     s.Z.dispatch(y({
       type: "COLLECTIBLES_SHOP_OPEN"
@@ -87,12 +86,12 @@ let S = e => {
     } = e;
     S(O(e, ["openInLayer", "tab"])), t ? (0, l.jN)(b.S9g.COLLECTIBLES_SHOP) : (0, u.uL)(n ? b.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : b.Z5c.COLLECTIBLES_SHOP)
   },
-  N = () => {
+  A = () => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_CLOSE"
     }), (0, l.xf)()
   },
-  A = e => {
+  N = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_DETAILS_OPEN",
       item: e
@@ -216,11 +215,7 @@ let S = e => {
     } catch (e) {
       return (0, E.G)(new c.Hx(e)), !1
     }
-  }, M = e => {
-    s.Z.dispatch(y({
-      type: "COLLECTIBLES_CATEGORY_ITEMS_VIEWED"
-    }, e))
-  }, k = async e => {
+  }, M = async e => {
     let {
       release: t = i.P.PROD
     } = e;
@@ -246,7 +241,7 @@ let S = e => {
         type: "COLLECTIBLES_MARKETING_FETCH_FAILURE"
       })
     }
-  }, j = async (e, t) => {
+  }, k = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_HOME_FETCH",
       tab: e,
@@ -272,7 +267,7 @@ let S = e => {
         error: t
       })
     }
-  }, U = e => {
+  }, j = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE",
       shopHomeConfigOverride: e

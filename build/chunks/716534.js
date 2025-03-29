@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(351402),
   S = n(509545),
   T = n(669079),
-  N = n(74538),
-  A = n(937615),
+  A = n(74538),
+  N = n(937615),
   C = n(479446),
   R = n(374649),
   P = n(104494),
@@ -54,7 +54,7 @@ function W(e, t, n) {
     let {
       intervalType: e,
       intervalCount: a
-    } = N.ZP.getIntervalForInvoice(t), s = (0, A.og)((0, A.T4)(t.total, t.currency), e, a), l = null != n ? n : t.subscriptionPeriodEnd;
+    } = A.ZP.getIntervalForInvoice(t), s = (0, N.og)((0, N.T4)(t.total, t.currency), e, a), l = null != n ? n : t.subscriptionPeriodEnd;
     r = Z.NW.format(Z.t.ZzmrTk, {
       termsURL: F.EYA.TERMS,
       paidURL: F.EYA.PAID_TERMS,
@@ -108,11 +108,11 @@ function Y(e) {
     {
       isGift: eS,
       giftRecipient: eT,
-      selectedGiftStyle: eN
+      selectedGiftStyle: eA
     } = (0, m.wD)(),
-    eA = (0, P.Ng)(),
-    eC = null == eA ? void 0 : null === (t = eA.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => B.GP[e].skuId === em),
-    eR = !eS && null != eA && null != em && eC,
+    eN = (0, P.Ng)(),
+    eC = null == eN ? void 0 : null === (t = eN.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => B.GP[e].skuId === em),
+    eR = !eS && null != eN && null != em && eC,
     eP = (0, l.e7)([S.Z], () => S.Z.get(z));
   a()(null != eP, "Missing plan");
   let ew = [{
@@ -175,7 +175,7 @@ function Y(e) {
       hasEntitlements: eY,
       entitlements: eK
     } = (0, U.H)(eP.id, eS),
-    ez = (0, N.Ap)(Q.paymentSourceId),
+    ez = (0, A.Ap)(Q.paymentSourceId),
     eq = (0, b.sE)(ei, eH, z),
     eQ = (0, v.Kp)({
       isTrial: ed,
@@ -192,7 +192,7 @@ function Y(e) {
     e0 = eQ || e$.fractionalState === B.a$.NONE ? null : (0, r.jsx)(L.n, {
       fractionalPremiumInfo: e$
     }),
-    e1 = i.useMemo(() => (0, N.V7)({
+    e1 = i.useMemo(() => (0, A.V7)({
       skuId: em,
       isPremium: eE,
       multiMonthPlans: [],
@@ -222,7 +222,7 @@ function Y(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           children: Z.NW.format(Z.t.hXcaLS, {
-            price: (0, A.T4)(0, e3.currency, {
+            price: (0, N.T4)(0, e3.currency, {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0
             })
@@ -272,7 +272,7 @@ function Y(e) {
     e8 = Z.NW.formatToPlainString(Z.t["sBpy9/"], {
       planName: eP.name
     });
-  return eS && !eF ? e8 = Z.NW.string(Z.t.J5a0eX) : eS && eF ? e8 = "" : (0, N.PV)(eP.id) && (e8 = N.ZP.getBillingReviewSubheader(null, eP)), eq ? null : (0, r.jsxs)("div", {
+  return eS && !eF ? e8 = Z.NW.string(Z.t.J5a0eX) : eS && eF ? e8 = "" : (0, A.PV)(eP.id) && (e8 = A.ZP.getBillingReviewSubheader(null, eP)), eq ? null : (0, r.jsxs)("div", {
     className: H.stepBody,
     children: [null != ea && (0, r.jsxs)("div", {
       className: H.reviewWarningMessageContainer,
@@ -310,10 +310,10 @@ function Y(e) {
     }), !ed && "" !== e8 && (0, r.jsx)(u.vwX, {
       tag: u.RB0.H5,
       children: e8
-    }), eF && null != eN && (0, r.jsxs)(r.Fragment, {
+    }), eF && null != eA && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(M.Z, {
         defaultAnimationState: C.SR.LOOP,
-        giftStyle: eN,
+        giftStyle: eA,
         shouldAnimate: !0,
         className: H.giftMainAnimation
       }), (0, r.jsx)(G.s, {
@@ -372,7 +372,7 @@ function Y(e) {
           isGift: eS,
           paymentSourceType: eW,
           isEmbeddedIAP: ep,
-          basePrice: (0, N.aS)(eP.id, !1, eS, Q)
+          basePrice: (0, A.aS)(eP.id, !1, eS, Q)
         }),
         showPricingLink: eP.currency !== V.pK.USD,
         showWithdrawalWaiver: e4,

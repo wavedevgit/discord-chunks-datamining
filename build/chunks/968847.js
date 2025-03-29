@@ -136,7 +136,7 @@ function R(e) {
   return !!(null != r && r.hasFeature(x.oNc.COMMUNITY)) && A(n.guild_id)
 }
 
-function L(e) {
+function k(e) {
   let {
     channel: t
   } = e, n = g.Z.getChannel(t.id);
@@ -145,7 +145,7 @@ function L(e) {
   return !!(null != r && r.hasFeature(x.oNc.COMMUNITY)) && A(n.guild_id)
 }
 
-function k(e) {
+function L(e) {
   let {
     channelId: t
   } = e, n = g.Z.getChannel(t);
@@ -198,24 +198,24 @@ let B = new G(u.Z, {
       null != t && t.hasFeature(x.oNc.COMMUNITY) && A(e) && (n = !0)
     }), n
   },
-  CHANNEL_ACK: k,
-  CHANNEL_DELETE: L,
-  CHANNEL_LOCAL_ACK: k,
-  MESSAGE_ACK: k,
-  MESSAGE_CREATE: k,
-  MESSAGE_DELETE_BULK: k,
-  MESSAGE_DELETE: k,
+  CHANNEL_ACK: L,
+  CHANNEL_DELETE: k,
+  CHANNEL_LOCAL_ACK: L,
+  MESSAGE_ACK: L,
+  MESSAGE_CREATE: L,
+  MESSAGE_DELETE_BULK: L,
+  MESSAGE_DELETE: L,
   PASSIVE_UPDATE_V2: function(e) {
     let t = m.Z.getGuild(e.guildId);
     return !!(e.channels.length > 0 && null != t && t.hasFeature(x.oNc.COMMUNITY)) && A(e.guildId)
   },
-  RESORT_THREADS: k,
-  THREAD_CREATE: L,
-  THREAD_DELETE: L,
+  RESORT_THREADS: L,
+  THREAD_CREATE: k,
+  THREAD_DELETE: k,
   THREAD_LIST_SYNC: D,
   THREAD_MEMBER_UPDATE: R,
   THREAD_MEMBERS_UPDATE: R,
-  THREAD_UPDATE: L,
+  THREAD_UPDATE: k,
   BULK_CLEAR_RECENTS: D,
   CATEGORY_COLLAPSE_ALL: D,
   CATEGORY_EXPAND_ALL: D,

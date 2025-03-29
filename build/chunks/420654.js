@@ -66,8 +66,8 @@ let b = 57.75,
       context: v
     } = (0, c.KZ)(), {
       analyticsLocations: y
-    } = (0, l.ZP)(), [O, I] = i.useState(null), [S, T] = i.useState(!1), [N, A] = i.useState(!1), C = e => {
-      null != e && (I(e), T(!N && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > b && A(!0))
+    } = (0, l.ZP)(), [O, I] = i.useState(null), [S, T] = i.useState(!1), [A, N] = i.useState(!1), C = e => {
+      null != e && (I(e), T(!A && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > b && N(!0))
     }, R = () => {
       null == n || n(), (0, d.openUserProfileModal)(E(m({}, v), {
         userId: t.id,
@@ -82,14 +82,14 @@ let b = 57.75,
     return h || null == o || "" === o ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: C,
-        className: a()(p.descriptionClamp, N && p.maxBioHeight),
+        className: a()(p.descriptionClamp, A && p.maxBioHeight),
         onBlur: P,
         children: (0, r.jsx)(u.Z, {
           userBio: o,
           setLineClamp: !1,
           textColor: "header-primary"
         })
-      }), (S || N) && (0, r.jsx)(s.zxk, {
+      }), (S || A) && (0, r.jsx)(s.zxk, {
         look: s.zxk.Looks.BLANK,
         size: s.zxk.Sizes.NONE,
         className: p.viewFullBio,

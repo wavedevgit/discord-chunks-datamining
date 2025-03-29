@@ -1,6 +1,6 @@
 /**
   Module ID: 14721
-  Original File Name: 552f74e4e1e3a94e
+  Original File Name: 6e04d6febdff21f8
 **/
 .menu__43313 {
     max-height: 70vh
@@ -1866,6 +1866,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 .voiceFiltersFooterButton_e2f668 {
     border-radius: 8px;
     background: var(--bg-mod-faint);
+    border: 1px solid var(--border-subtle);
     width: 40px;
     height: 40px;
     flex-grow: 0
@@ -2515,4 +2516,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: var(--interactive-active)
 }
 
-/*# sourceMappingURL=552f74e4e1e3a94e.css.map*/
+/*# sourceMappingURL=6e04d6febdff21f8.css.map*/

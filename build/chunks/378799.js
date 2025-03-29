@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I7: () => A,
+  I7: () => N,
   SW: () => S,
   T_: () => C,
   _v: () => R,
@@ -332,19 +332,19 @@ function T() {
   return n ? E() : null !== (t = null === (e = I()) || void 0 === e ? void 0 : e.getLayoutMap()) && void 0 !== t ? t : E()
 }
 
-function N(e) {
+function A(e) {
   var t, n;
   return null !== (n = null === (t = I()) || void 0 === t ? void 0 : t.findCodeFromKeyboardLayoutMap(e)) && void 0 !== n ? n : void 0
 }
 
-function A(e) {
+function N(e) {
   var t, n, r, i;
   return null != e.key ? null !== (n = null === (t = I()) || void 0 === t ? void 0 : t.findKeyboardEventByKey(e.key, e.code, e.keyCode)) && void 0 !== n ? n : null : null != e.keyCode && null !== (i = null === (r = I()) || void 0 === r ? void 0 : r.findKeyboardEventByKeyCode(e.keyCode, e.code)) && void 0 !== i ? i : null
 }
 
 function C(e) {
   var t, n, r, i;
-  let o = N(e),
+  let o = A(e),
     a = null !== (n = null === (t = I()) || void 0 === t ? void 0 : t.findKeyboardEventByKey(e, o)) && void 0 !== n ? n : null;
   if (null != a) return a;
   try {

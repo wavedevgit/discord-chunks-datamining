@@ -11,9 +11,9 @@ n.d(t, {
   W0: () => O,
   W3: () => C,
   Zy: () => m,
-  b9: () => N,
+  b9: () => A,
   cV: () => I,
-  si: () => A,
+  si: () => N,
   ss: () => g,
   xn: () => T
 });
@@ -210,13 +210,13 @@ function T(e) {
   })
 }
 
-function N() {
+function A() {
   a.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
-function A() {
+function N() {
   a.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })

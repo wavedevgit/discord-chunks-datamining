@@ -98,8 +98,8 @@ function P(e) {
       A = u && null !== (o = null === (i = m.Z.getChannel(c)) || void 0 === i ? void 0 : i.isGuildStageVoice()) && void 0 !== o && o,
       D = !!u && null != f.Z.getActiveStreamForUser(T, e),
       R = (C ? (0, s.aK)(f.Z.getAllApplicationStreams()) : f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
-      L = u && E,
-      k = (() => {
+      k = u && E,
+      L = (() => {
         if (N) return P.length > 0;
         for (let e of P) {
           let t = m.Z.getChannel((0, a.pY)(e.location));
@@ -108,7 +108,7 @@ function P(e) {
         return !1
       })(),
       M = l.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return u ? (g = !0, b = (null == r ? void 0 : r.channel_id) === c, y = A, O = L, j = D, S = M) : (g = Z, b = null != r, y = I, O = w, j = R, S = k), {
+    return u ? (g = !0, b = (null == r ? void 0 : r.channel_id) === c, y = A, O = k, j = D, S = M) : (g = Z, b = null != r, y = I, O = w, j = R, S = L), {
       audio: g,
       video: O,
       screenshare: j,

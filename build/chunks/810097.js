@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   ZP: () => P,
-  _1: () => N,
-  jd: () => A
+  _1: () => A,
+  jd: () => N
 }), n(627341), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -63,8 +63,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = 2700,
-  A = "> -# *",
+let A = 2700,
+  N = "> -# *",
   C = {
     [b.n_.AVATAR]: () => v.NW.string(v.t["fEUP/v"]),
     [b.n_.STATUS]: () => v.NW.string(v.t.TKdBCw),
@@ -83,8 +83,8 @@ function P(e) {
     isVisible: o,
     isExpandable: O,
     interactionSourceId: S,
-    onAction: N,
-    renderMoreButtonPopout: A
+    onAction: A,
+    renderMoreButtonPopout: N
   } = e, P = (0, c.e7)([p.default], () => p.default.getId() === t.id), w = (0, h.Z)(t.id), {
     profileType: D
   } = (0, E.z)(), {
@@ -97,11 +97,11 @@ function P(e) {
       j && !k && U(!1)
     }, [j, k]), t.bot || P || !w) return null;
   let G = () => {
-      n === b.n_.AVATAR ? N({
+      n === b.n_.AVATAR ? A({
         action: "PRESS_REACT_AVATAR"
-      }) : n === b.n_.STATUS ? N({
+      }) : n === b.n_.STATUS ? A({
         action: "PRESS_REACT_CUSTOM_STATUS"
-      }) : N({
+      }) : A({
         action: "PRESS_REACT_ACTIVITY"
       }), null == L || L({
         interactionType: b.P.REACT,
@@ -110,11 +110,11 @@ function P(e) {
       }), D === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     B = () => {
-      n === b.n_.AVATAR ? N({
+      n === b.n_.AVATAR ? A({
         action: "PRESS_REPLY_AVATAR"
-      }) : n === b.n_.STATUS ? N({
+      }) : n === b.n_.STATUS ? A({
         action: "PRESS_REPLY_CUSTOM_STATUS"
-      }) : N({
+      }) : A({
         action: "PRESS_REPLY_ACTIVITY"
       }), null == L || L({
         interactionType: b.P.REPLY,
@@ -167,7 +167,7 @@ function P(e) {
           className: y.icon
         })
       })
-    }), null == A ? void 0 : A(e => (0, r.jsx)(d.DY3, {
+    }), null == N ? void 0 : N(e => (0, r.jsx)(d.DY3, {
       text: v.NW.string(v.t.UKOtz8),
       shouldShow: o,
       className: y.tooltipContainer,

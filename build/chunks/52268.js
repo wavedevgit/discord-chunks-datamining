@@ -105,10 +105,10 @@ let P = () => 80,
         title: k
       } = null !== (t = null == E ? void 0 : E.config) && void 0 !== t ? t : {},
       D = m.ZP.canUseCollectibles(r),
-      T = s === h.$0.PREMIUM_PURCHASE && !D,
-      A = (0, p.M)();
+      A = s === h.$0.PREMIUM_PURCHASE && !D,
+      T = (0, p.M)();
     return (0, n.jsxs)(_, y(v({
-      className: !T || P || A ? void 0 : j.decorationGridItemChurned,
+      className: !A || P || T ? void 0 : j.decorationGridItemChurned,
       innerRef: null != l ? l : S,
       isSelected: P
     }, N), {

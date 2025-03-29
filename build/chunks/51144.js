@@ -4,7 +4,7 @@ n.d(t, {
   EO: () => T,
   Fc: () => S,
   Ft: () => C,
-  W5: () => A,
+  W5: () => N,
   ZP: () => R,
   _T: () => b,
   oY: () => E,
@@ -82,7 +82,7 @@ function y(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null == e) return f;
   let r = v(e),
-    i = n ? A(e) : null !== (t = e.username) && void 0 !== t ? t : f;
+    i = n ? N(e) : null !== (t = e.username) && void 0 !== t ? t : f;
   return r === i ? r : null != r ? "".concat(r, " (").concat(i, ")") : i
 }
 
@@ -140,7 +140,7 @@ function T(e) {
   })
 }
 
-function N(e, t, n) {
+function A(e, t, n) {
   if (null == e) return l.NW.string(l.t.sKdZ6e);
   if (!m(e.username)) return f;
   let r = n;
@@ -149,10 +149,10 @@ function N(e, t, n) {
   return "never" !== t.decoration ? p(i) : i
 }
 
-function A(e, t) {
+function N(e, t) {
   let n = u({}, h, t),
     r = "auto" !== n.identifiable || o.Z.hidePersonalInformation;
-  return N(e, n, r)
+  return A(e, n, r)
 }
 
 function C(e) {
@@ -164,9 +164,9 @@ let R = {
   getName: E,
   useName: b,
   isNameConcealed: e => 4 === e.length && e.endsWith("..."),
-  getUserTag: A,
+  getUserTag: N,
   useUserTag: function(e, t) {
-    return N(e, u({}, h, t), (0, r.e7)([o.Z], () => o.Z.hidePersonalInformation))
+    return A(e, u({}, h, t), (0, r.e7)([o.Z], () => o.Z.hidePersonalInformation))
   },
   getFormattedName: y,
   getGlobalName: v,

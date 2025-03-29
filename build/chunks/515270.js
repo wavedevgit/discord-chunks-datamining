@@ -153,21 +153,21 @@ function T(e) {
     n && t.push(i), i.opensCodeBlock && (n = !0)
   }
 }
-let N = {
+let A = {
     max: 1 / 0,
     maxAge: +a.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  A = new(o())(N);
+  N = new(o())(A);
 
 function C(e, t) {
   let n = "".concat(e, "-").concat(t),
-    r = A.get(n);
+    r = N.get(n);
   if (null != r) return r;
   let i = s.default.highlight(t, e, !1);
   if (null == i || i.illegal) return null;
   let o = i.value.split("\n");
-  return A.set(n, o), o
+  return N.set(n, o), o
 }
 
 function R(e) {

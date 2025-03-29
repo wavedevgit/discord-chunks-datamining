@@ -38,7 +38,7 @@ let p = {},
   b = !0,
   g = null;
 
-function y(e) {
+function E(e) {
   if (null == h[e]) {
     let t = a.default.getUser(e);
     if (null == t) return;
@@ -47,7 +47,7 @@ function y(e) {
     r.src = n, h[e] = r
   }
 }
-class E extends(r = i.ZP.Store) {
+class y extends(r = i.ZP.Store) {
   get visibleOverlayCanvas() {
     return b
   }
@@ -64,8 +64,8 @@ class E extends(r = i.ZP.Store) {
     return g
   }
 }
-f(E, "displayName", "SharedCanvasStore");
-let O = new E(l.Z, {
+f(y, "displayName", "SharedCanvasStore");
+let O = new y(l.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
@@ -88,7 +88,7 @@ let O = new E(l.Z, {
         points: n
       }) : (0, u.P7)(e) && e.points.push(...n)
     }
-    y(r)
+    E(r)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
     var t, n, r, i, l;
@@ -122,7 +122,7 @@ let O = new E(l.Z, {
         animated: !1
       }, d.qh)
     }
-    y(f)
+    E(f)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {

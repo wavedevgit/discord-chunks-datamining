@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(271383),
   w = n(430824),
   R = n(607744),
-  k = n(496675),
-  M = n(594174),
+  M = n(496675),
+  k = n(594174),
   L = n(700785),
   D = n(862679),
   W = n(981631),
@@ -249,7 +249,7 @@ class z extends i.PureComponent {
     }), H(this, "handleResendVerification", () => {
       var e;
       c.Z.verifyResend();
-      let t = null === (e = M.default.getCurrentUser()) || void 0 === e ? void 0 : e.email;
+      let t = null === (e = k.default.getCurrentUser()) || void 0 === e ? void 0 : e.email;
       null != t && (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, V(G({}, e), {
         header: B.NW.string(B.t.LykQYm),
         confirmText: B.NW.string(B.t.BddRzc),
@@ -342,10 +342,10 @@ function Y(e) {
   let {
     channel: l,
     children: o
-  } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([E.Z], () => E.Z.isLurking(s)), b = (0, a.e7)([M.default], () => M.default.getCurrentUser()), C = null !== (t = null == b ? void 0 : b.isStaff()) && void 0 !== t && t, j = (0, a.e7)([A.ZP], () => {
+  } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([E.Z], () => E.Z.isLurking(s)), b = (0, a.e7)([k.default], () => k.default.getCurrentUser()), C = null !== (t = null == b ? void 0 : b.isStaff()) && void 0 !== t && t, j = (0, a.e7)([A.ZP], () => {
     var e, t;
     return null != b && null !== (t = null === (e = A.ZP.getMember(s, b.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== t && t
-  }), N = !!(0, y.Dc)(c), I = (j || u.notClaimed) && N, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([k.Z], () => k.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([x.Z], () => x.Z.getRequest(s)), [U, B] = (0, f.L_)(s), F = (0, f.Cc)(s), H = (null == D ? void 0 : D.applicationStatus) === v.wB.APPROVED, Y = i.useRef(B);
+  }), N = !!(0, y.Dc)(c), I = (j || u.notClaimed) && N, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([M.Z], () => M.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([x.Z], () => x.Z.getRequest(s)), [U, B] = (0, f.L_)(s), F = (0, f.Cc)(s), H = (null == D ? void 0 : D.applicationStatus) === v.wB.APPROVED, Y = i.useRef(B);
   i.useEffect(() => {
     Y.current = B
   }), i.useEffect(() => {

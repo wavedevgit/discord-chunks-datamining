@@ -29,10 +29,10 @@ function b(e) {
     } = e,
     b = (0, l.e7)([s.Z], () => s.Z.getWindow(h.KJ3.CHANNEL_CALL_POPOUT)),
     g = (0, m.Z)(),
-    y = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == g || (0, f.Z)((0, d.pY)(g.location)) || y !== p.Ez.PANEL) {
-    var E;
-    t = null !== (E = null == b ? void 0 : b.window) && void 0 !== E ? E : window
+    E = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
+  if (null == g || (0, f.Z)((0, d.pY)(g.location)) || E !== p.Ez.PANEL) {
+    var y;
+    t = null !== (y = null == b ? void 0 : b.window) && void 0 !== y ? y : window
   } else t = window;
   let O = i.useRef(null),
     S = i.useMemo(() => {

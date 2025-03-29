@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,7 +61,7 @@ function A(e, t) {
 }
 
 function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -106,18 +106,18 @@ function k(e, t) {
     tabIndex: n,
     className: o,
     renderButtonContents: T,
-    active: A,
+    active: N,
     onClick: R,
     "aria-controls": P,
     focusProps: w,
     shouldShowSoundmojiCoachmark: k = !1
-  } = e, [j, U] = i.useState(!1), [G, B] = i.useState(50), F = j || A, V = (0, b.l)(S, "emojiButton", F ? "Hovered" : "Normal"), Z = M(G, (0, f.Q3)("EmojiButton")), H = i.useCallback(() => {
+  } = e, [j, U] = i.useState(!1), [G, B] = i.useState(50), F = j || N, V = (0, b.l)(S, "emojiButton", F ? "Hovered" : "Normal"), Z = M(G, (0, f.Q3)("EmojiButton")), H = i.useCallback(() => {
     if (F) return;
     let e = Math.floor(Math.random() * D);
     U(!0), B(e), (0, p.x)(O.qR.EmojiButtonMouseEntered)
   }, [F, U, B]), W = i.useCallback(() => {
     U(!1)
-  }, [U]), Y = i.useCallback(() => (0, p.x)(O.qR.EmojiButtonFocused), []), K = (0, h.B4)(), [z, q] = (0, _.US)(K ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), Q = z === c.z.TRIAL_NUX_EMOJI_BUTTON, X = !A && Q, J = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = (0, m.V2)({
+  }, [U]), Y = i.useCallback(() => (0, p.x)(O.qR.EmojiButtonFocused), []), K = (0, h.B4)(), [z, q] = (0, _.US)(K ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), Q = z === c.z.TRIAL_NUX_EMOJI_BUTTON, X = !N && Q, J = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = (0, m.V2)({
     location: "EmojiButton"
   }), [ei, eo] = (0, _.US)(k && er ? [c.z.SOUNDMOJI_COACHMARK] : []), ea = !$ && ei === c.z.SOUNDMOJI_COACHMARK && !et;
   return (0, r.jsx)(u.yRy, {
@@ -138,7 +138,7 @@ function k(e, t) {
       onTooltipShow: () => ee(X),
       tooltipClassName: S.premiumTooltip,
       tooltipContentClassName: S.premiumTooltipContainer,
-      children: i => (0, r.jsx)(u.zxk, C(N({}, e), {
+      children: i => (0, r.jsx)(u.zxk, C(A({}, e), {
         buttonRef: t,
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.NONE,
@@ -160,7 +160,7 @@ function k(e, t) {
         },
         "aria-label": I.NW.string(I.t["59QgaG"]),
         "aria-controls": P,
-        "aria-expanded": A,
+        "aria-expanded": N,
         "aria-haspopup": "dialog",
         focusProps: w,
         onContextMenu: i.onContextMenu,
@@ -175,7 +175,7 @@ function k(e, t) {
             } = e;
             return (0, r.jsxs)(s.animated.div, {
               className: S.spriteContainer,
-              style: C(N({}, Z), {
+              style: C(A({}, Z), {
                 transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
               }),
               children: [(0, r.jsx)("div", {

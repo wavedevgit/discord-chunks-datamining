@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(284363),
   S = n(854218),
   T = n(682947),
-  N = n(981631),
-  A = n(388032),
+  A = n(981631),
+  N = n(388032),
   C = n(574360);
 
 function R(e, t, n) {
@@ -161,7 +161,7 @@ function k(e) {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: A.NW.format(A.t["dR/SVF"], {
+        children: N.NW.format(N.t["dR/SVF"], {
           count: t.premiumSubscriberCount
         })
       })
@@ -208,7 +208,7 @@ function U(e) {
       tooltipPosition: y,
       className: O,
       flowerStarClassName: T,
-      iconClassName: A,
+      iconClassName: N,
       badgeStrokeColor: R,
       badgeColor: w,
       disableBoostClick: x,
@@ -229,8 +229,8 @@ function U(e) {
       W && (e.stopPropagation(), e.preventDefault(), (0, h.f)({
         guildId: _.id,
         location: {
-          section: N.jXE.GUILD_HEADER,
-          object: N.qAy.BOOST_GEM_ICON
+          section: A.jXE.GUILD_HEADER,
+          object: A.qAy.BOOST_GEM_ICON
         }
       }))
     }, [W, _.id]);
@@ -295,7 +295,7 @@ function U(e) {
           size: "custom",
           width: er,
           height: er,
-          className: A,
+          className: N,
           color: null != t ? t : "currentColor"
         })
       }))

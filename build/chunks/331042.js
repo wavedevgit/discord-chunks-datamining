@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(642619),
   S = n(824393),
   T = n(341907),
-  N = n(317257),
-  A = n(594174),
+  A = n(317257),
+  N = n(594174),
   C = n(585483),
   R = n(597688),
   P = n(1870),
@@ -102,8 +102,8 @@ let es = 880,
     let {
       product: t,
       pairedProduct: n
-    } = e, [i] = t.items, o = null == n ? void 0 : n.items[0], a = (0, f.e7)([A.default], () => {
-      let e = A.default.getCurrentUser();
+    } = e, [i] = t.items, o = null == n ? void 0 : n.items[0], a = (0, f.e7)([N.default], () => {
+      let e = N.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
     });
     return (0, c.EQ)(t.type).with(u.Z.PROFILE_EFFECT, () => (0, r.jsx)("div", {
@@ -217,7 +217,7 @@ let es = 880,
         className: en.easterEggContainer,
         style: t ? u : c,
         children: (0, r.jsx)("img", {
-          src: n.src,
+          src: n.getSrc(),
           style: n.style,
           alt: "",
           "aria-hidden": "true"
@@ -245,10 +245,10 @@ let es = 880,
       shouldShowPromotionalExperience: b,
       itemConsumed: v = !0,
       purchaseType: y = X.o8.FIAT
-    } = e, O = (0, L.o)("CollectiblesCollectedModal"), I = (0, z.W)(t, E), T = (0, f.e7)([A.default], () => {
+    } = e, O = (0, L.o)("CollectiblesCollectedModal"), I = (0, z.W)(t, E), T = (0, f.e7)([N.default], () => {
       var e, t;
-      return null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
-    }), N = i.useMemo(() => {
+      return null !== (t = null === (e = N.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
+    }), A = i.useMemo(() => {
       if (!O) return;
       let e = I.type === u.Z.AVATAR_DECORATION ? (0, Q.R9)(I.skuId, T) : null;
       return null != e ? R.Z.getProduct(e) : void 0
@@ -285,12 +285,12 @@ let es = 880,
             categoryBannerOverride: (0, X.ZS)(I.categorySkuId)
           }), (0, r.jsx)(eu, {
             product: I,
-            pairedProduct: N,
+            pairedProduct: A,
             reducedMotion: P
           })]
         }), (0, r.jsx)(ef, {
           product: I,
-          pairedProduct: N,
+          pairedProduct: A,
           onClose: n,
           analyticsLocations: D,
           overrideTitle: c,
@@ -339,7 +339,7 @@ let es = 880,
     }), {
       firstAvatarDecoration: I,
       firstProfileEffect: S
-    } = (0, j.R)(n), A = (0, D.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE, R = i.useMemo(() => null != l ? l : X.Vt.ORB_PROFILE_BADGE === n.skuId ? et.NW.string(ee.Z.nvaTQk) : g ? et.NW.format(new Date < X.a$ ? et.t.BhGU09 : et.t.Jfv5Qk, {
+    } = (0, j.R)(n), N = (0, D.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE, R = i.useMemo(() => null != l ? l : X.Vt.ORB_PROFILE_BADGE === n.skuId ? et.NW.string(ee.Z.nvaTQk) : g ? et.NW.format(new Date < X.a$ ? et.t.BhGU09 : et.t.Jfv5Qk, {
       purchased_item: h,
       suggested_item: m
     }) : p && !f ? et.NW.string(et.t["1xr2SU"]) : et.NW.format(et.t.YNaxMj, {
@@ -353,7 +353,7 @@ let es = 880,
         color: _.Ttl.BRAND,
         onClick: () => {
           a(), C.S.dispatch(J.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {
-            highlightBadge: N.l.ORB_PROFILE_BADGE,
+            highlightBadge: A.l.ORB_PROFILE_BADGE,
             pendingBadges: [(0, H.X2)()]
           })
         },
@@ -386,9 +386,9 @@ let es = 880,
         }) : null != w ? w : (0, r.jsx)(ep, {
           product: n,
           onClose: a,
-          isPrimary: A,
+          isPrimary: N,
           analyticsLocations: s
-        }), A ? (0, r.jsx)(_.zxk, {
+        }), N ? (0, r.jsx)(_.zxk, {
           onClick: y,
           submitting: O,
           children: et.NW.string(et.t.MAS7uL)

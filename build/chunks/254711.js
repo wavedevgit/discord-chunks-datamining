@@ -27,8 +27,8 @@ var r = n(512722),
   I = n(51144),
   S = n(895924),
   T = n(689079),
-  N = n(981631),
-  A = n(590433),
+  A = n(981631),
+  N = n(590433),
   C = n(388032);
 
 function R(e, t, n) {
@@ -212,7 +212,7 @@ let L = n(227419).Z,
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && E.OW.getSetting() && v.Z.can(N.Plq.SEND_TTS_MESSAGES, t)
+      return null != t && !t.isPrivate() && E.OW.getSetting() && v.Z.can(A.Plq.SEND_TTS_MESSAGES, t)
     },
     execute: e => {
       var t;
@@ -282,7 +282,7 @@ let L = n(227419).Z,
       var t;
       let n = null !== (t = x(e, "message")) && void 0 !== t ? t : "";
       return {
-        content: (0, N.XmY)(n).trim()
+        content: (0, A.XmY)(n).trim()
       }
     }
   }, {
@@ -313,7 +313,7 @@ let L = n(227419).Z,
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && (v.Z.can(N.Plq.CHANGE_NICKNAME, t) || v.Z.can(N.Plq.MANAGE_NICKNAMES, t))
+      return null != t && !t.isPrivate() && (v.Z.can(A.Plq.CHANGE_NICKNAME, t) || v.Z.can(A.Plq.MANAGE_NICKNAMES, t))
     },
     execute: (e, t) => {
       var n;
@@ -323,7 +323,7 @@ let L = n(227419).Z,
       } = t;
       if (null == r || null == i) return;
       let o = null !== (n = x(e, "new_nick")) && void 0 !== n ? n : "";
-      l.Z.changeNickname(r.id, i.id, N.ME, o || "")
+      l.Z.changeNickname(r.id, i.id, A.ME, o || "")
     }
   }, {
     id: "-10",
@@ -414,7 +414,7 @@ let L = n(227419).Z,
       let {
         guild: t
       } = e;
-      return v.Z.can(N.Plq.KICK_MEMBERS, t)
+      return v.Z.can(A.Plq.KICK_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -424,7 +424,7 @@ let L = n(227419).Z,
       } = t;
       if (null == r || null == i) return;
       let o = null !== (n = x(e, "user")) && void 0 !== n ? n : "";
-      if (!v.Z.canManageUser(N.Plq.KICK_MEMBERS, o, r)) {
+      if (!v.Z.canManageUser(A.Plq.KICK_MEMBERS, o, r)) {
         d.Z.sendBotMessage(i.id, C.NW.string(C.t["6RIwPD"]));
         return
       }(async () => {
@@ -520,7 +520,7 @@ let L = n(227419).Z,
       let {
         guild: t
       } = e;
-      return v.Z.can(N.Plq.BAN_MEMBERS, t)
+      return v.Z.can(A.Plq.BAN_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -530,7 +530,7 @@ let L = n(227419).Z,
       } = t;
       if (null == r || null == i) return;
       let o = null !== (n = x(e, "user")) && void 0 !== n ? n : "";
-      if (!v.Z.canManageUser(N.Plq.BAN_MEMBERS, o, r)) {
+      if (!v.Z.canManageUser(A.Plq.BAN_MEMBERS, o, r)) {
         d.Z.sendBotMessage(i.id, C.NW.string(C.t.R27LJi));
         return
       }(async () => {
@@ -582,7 +582,7 @@ let L = n(227419).Z,
       },
       required: !0,
       get choices() {
-        return (0, A.tr)().map(e => D(P({}, e), {
+        return (0, N.tr)().map(e => D(P({}, e), {
           name: e.label,
           displayName: e.label
         }))
@@ -603,7 +603,7 @@ let L = n(227419).Z,
       let {
         guild: t
       } = e;
-      return v.Z.can(N.Plq.MODERATE_MEMBERS, t)
+      return v.Z.can(A.Plq.MODERATE_MEMBERS, t)
     },
     execute: (e, t) => {
       let {
@@ -672,7 +672,7 @@ let L = n(227419).Z,
       required: !0,
       get maxLength() {
         var j;
-        return (null === (j = y.default.getCurrentUser()) || void 0 === j ? void 0 : j.premiumType) ? N.en1 : N.J6R
+        return (null === (j = y.default.getCurrentUser()) || void 0 === j ? void 0 : j.premiumType) ? A.en1 : A.J6R
       }
     }],
     execute: (e, t) => {

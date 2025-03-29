@@ -64,13 +64,13 @@ function g(e) {
   i.useEffect(() => {
     I(null)
   }, [b, I]), l()(null != T, "Unknown step for current payment flow.");
-  let N = null !== (c = null == T ? void 0 : null === (t = T.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== c && c,
-    A = null == T ? void 0 : null === (n = T.options) || void 0 === n ? void 0 : n.bodyClassName,
+  let A = null !== (c = null == T ? void 0 : null === (t = T.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== c && c,
+    N = null == T ? void 0 : null === (n = T.options) || void 0 === n ? void 0 : n.bodyClassName,
     C = null == T ? void 0 : null === (o = T.options) || void 0 === o ? void 0 : o.sliderBodyClassName;
   return void 0 !== g && g && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
-    children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == b || N ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == b || A ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
-        className: a()(A, _.body, _.noRoundedCorners, {
+        className: a()(N, _.body, _.noRoundedCorners, {
           [_.reviewStep]: b === f.h8.REVIEW
         }),
         children: (0, r.jsx)(u.MyZ, {

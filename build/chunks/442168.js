@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => E
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -46,16 +46,16 @@ let v = {
     precision: 1e-4,
     bounce: 0
   },
-  y = {
+  E = {
     duration: 1e3
   };
 
-function E(e) {
+function y(e) {
   let {
     stream: t,
     inPopout: n
   } = e, {
-    reducedMotion: E
+    reducedMotion: y
   } = i.useContext(a.Sf), O = (0, i.useRef)(null), S = d.n.getState().clipsButtonRef, x = (0, f.V9)(t), j = (0, o.e7)([c.Z], () => c.Z.getActiveAnimation()), w = (0, o.Wu)([c.Z], () => c.Z.getStreamClipAnimations(x)), Z = (0, i.useRef)();
   i.useEffect(() => () => {
     (0, u.Gh)(x)
@@ -104,14 +104,14 @@ function E(e) {
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, E.enabled ? P(e) : C()),
+      }, y.enabled ? P(e) : C()),
       enter: e => [h({
         opacity: 1,
         visibility: "visible"
       }, P(e))],
       leave: h({
         opacity: 0
-      }, !E.enabled && h({
+      }, !y.enabled && h({
         height: 0,
         width: 0
       }, (() => {
@@ -120,7 +120,7 @@ function E(e) {
           left: Z.current.left + 12
         }
       })())),
-      config: E.enabled ? y : g,
+      config: y.enabled ? E : g,
       onRest: (e, t) => {
         null != t.item && null != w.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(x, t.item.timestamp)
       }

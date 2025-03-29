@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(899663),
   S = n(793903),
   T = n(213609),
-  N = n(613413),
-  A = n(94795),
+  A = n(613413),
+  N = n(94795),
   C = n(327943),
   R = n(907459),
   P = n(559407),
@@ -157,21 +157,21 @@ let eg = (0, en.Un)({
     em || !ec || ev || eI.push(d.z.CLIENT_THEMES_COACHMARK);
     let [eS, eT] = (0, F.US)(eI, ed.R.SIDEBAR, !0);
     eI.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
-    let eN = eS === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
-      eA = eS === d.z.CLIENT_THEMES_COACHMARK;
+    let eA = eS === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
+      eN = eS === d.z.CLIENT_THEMES_COACHMARK;
     i.useEffect(() => {
       null == (0, l.LX)(o, {
         path: "invite",
         exact: !1,
         strict: !1
-      }) && eN && !eA && ((0, A.nJ)(), h.Z.dispatch({
+      }) && eA && !eN && ((0, N.nJ)(), h.Z.dispatch({
         type: "APP_ICON_TRACK_IMPRESSION",
         markAsDismissed: eT
       }))
-    }, [eN, eA, eT, o]);
+    }, [eA, eN, eT, o]);
     let eC = i.useRef(document.body),
-      eR = ey || eA,
-      eP = eO && !eA,
+      eR = ey || eN,
+      eP = eO && !eN,
       ew = e_ || eh,
       {
         enabled: eD
@@ -210,26 +210,26 @@ let eg = (0, en.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: a()(v ? ef.mobileApp : ef.app),
                                 children: t
-                              }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(W.Z, {}), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {})]
+                              }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(A.Z, {}), (0, r.jsx)(W.Z, {}), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {})]
                             })
                           })
                         })
                       })
                     }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(m.Z, {}), eR && !eD && (0, r.jsx)(L.Z, {
-                      markAsDismissed: eA ? eT : () => {
+                      markAsDismissed: eN ? eT : () => {
                         (0, B.EW)(d.z.CLIENT_THEMES_COACHMARK, {
                           dismissAction: ed.L.INDIRECT_ACTION,
                           forceTrack: !0
                         })
                       },
-                      showClientThemesCoachmark: eA
+                      showClientThemesCoachmark: eN
                     }), eP && !eD && (0, r.jsx)(R.Z, {
-                      isCoachmark: eN,
+                      isCoachmark: eA,
                       markAsDismissed: eT
                     }), (eR || eP) && eD && (0, r.jsx)(q.Z, {
                       initialTab: eP ? q._.APP_ICONS : q._.CLIENT_THEMES,
                       markAsDismissed: eT,
-                      isCoachmark: eA
+                      isCoachmark: eN
                     }), (0, r.jsx)(er.Z, {}), (0, r.jsx)(G.Z, {
                       mobile: v
                     })]

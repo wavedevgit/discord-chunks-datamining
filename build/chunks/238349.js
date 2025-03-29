@@ -34,8 +34,8 @@ let v = [],
   I = new Set,
   S = s.z.LATEST_ACTIVITY,
   T = 0,
-  N = [],
-  A = !1,
+  A = [],
+  N = !1,
   C = [],
   R = a().chain(v),
   P = a().chain(v),
@@ -67,7 +67,7 @@ function k(e) {
 }
 
 function j() {
-  N = [], r = null, O = null, I = new Set, S = s.z.LATEST_ACTIVITY, T = 0, C = [], R = a().chain(v), P = a().chain(v), D.clear(), w.clear()
+  A = [], r = null, O = null, I = new Set, S = s.z.LATEST_ACTIVITY, T = 0, C = [], R = a().chain(v), P = a().chain(v), D.clear(), w.clear()
 }
 
 function U() {
@@ -97,9 +97,9 @@ function B(e) {
       id: t
     } = e;
     return t
-  }), T = 0, A = !0), 0 !== w.size && (C = C.filter(e => !w.has(e)), w.clear()), 0 !== D.size && (C = Array.from(new Set([...C, ...D])), D.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (P = a().chain(C).sort(M(s.z.LATEST_ACTIVITY)), R = a().chain(C).sort(M(s.z.CREATION_DATE)));
+  }), T = 0, N = !0), 0 !== w.size && (C = C.filter(e => !w.has(e)), w.clear()), 0 !== D.size && (C = Array.from(new Set([...C, ...D])), D.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (P = a().chain(C).sort(M(s.z.LATEST_ACTIVITY)), R = a().chain(C).sort(M(s.z.CREATION_DATE)));
   let n = (S === s.z.LATEST_ACTIVITY ? P : R).value(),
-    i = (N = 0 === I.size ? n : n.filter(k(I))).find(e => x(e));
+    i = (A = 0 === I.size ? n : n.filter(k(I))).find(e => x(e));
   r = null == i ? null : i
 }
 
@@ -174,7 +174,7 @@ function K(e) {
     channelId: t
   } = e;
   if (null == t || t !== O) return !1;
-  A = !1
+  N = !1
 }
 class z extends(i = l.ZP.Store) {
   initialize() {
@@ -184,7 +184,7 @@ class z extends(i = l.ZP.Store) {
     return T
   }
   getCanAckThreads() {
-    return A
+    return N
   }
   getThreadIds(e, t, n) {
     let r = e !== O,
@@ -194,10 +194,10 @@ class z extends(i = l.ZP.Store) {
       refreshThreadIds: !0
     }) : o ? B({
       sortThreadIds: !0
-    }) : i && B(), N
+    }) : i && B(), A
   }
   getCurrentThreadIds() {
-    return N
+    return A
   }
   getAndDeleteMostRecentUserCreatedThreadId() {
     let e = y;

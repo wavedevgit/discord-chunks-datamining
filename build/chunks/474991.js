@@ -23,9 +23,9 @@ var r = n(325008),
   I = n(440196),
   S = y("match"),
   T = i.RegExp,
-  N = T.prototype,
-  A = i.SyntaxError,
-  C = o(N.exec),
+  A = T.prototype,
+  N = i.SyntaxError,
+  C = o(A.exec),
   R = o("".charAt),
   P = o("".replace),
   w = o("".indexOf),
@@ -61,7 +61,7 @@ var r = n(325008),
           C(L, D(e, r + 1)) && (r += 2, l = !0), i += t, c++;
           continue;
         case ">" === t && l:
-          if ("" === u || E(a, u)) throw new A("Invalid capture group name");
+          if ("" === u || E(a, u)) throw new N("Invalid capture group name");
           a[u] = !0, o[o.length] = [u, c], l = !1, u = "";
           continue
       }
@@ -71,18 +71,18 @@ var r = n(325008),
   };
 if (a("RegExp", G)) {
   for (var V = function(e, t) {
-      var n, r, i, o, a, c, p = u(N, this),
+      var n, r, i, o, a, c, p = u(A, this),
         h = d(e),
         m = void 0 === t,
         g = [],
         E = e;
       if (!p && h && m && e.constructor === V) return e;
-      if ((h || u(N, e)) && (e = e.source, m && (t = _(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in x && (r = !!t && w(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in x && (i = !!t && w(t, "y") > -1) && U && (t = P(t, /y/g, "")), I && (e = (o = F(e))[0], g = o[1]), a = s(T(e, t), p ? this : N, V), (r || i || g.length) && (c = b(a), r && (c.dotAll = !0, c.raw = V(B(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if ((h || u(A, e)) && (e = e.source, m && (t = _(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in x && (r = !!t && w(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in x && (i = !!t && w(t, "y") > -1) && U && (t = P(t, /y/g, "")), I && (e = (o = F(e))[0], g = o[1]), a = s(T(e, t), p ? this : A, V), (r || i || g.length) && (c = b(a), r && (c.dotAll = !0, c.raw = V(B(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(a, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return a
     }, Z = c(T), H = 0; Z.length > H;) h(V, T, Z[H++]);
-  N.constructor = V, V.prototype = N, m(i, "RegExp", V, {
+  A.constructor = V, V.prototype = A, m(i, "RegExp", V, {
     constructor: !0
   })
 }

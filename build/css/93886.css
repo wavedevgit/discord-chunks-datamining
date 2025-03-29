@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 29c515c0d509a1e3
+  Original File Name: 27c05828e8153b9e
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2219,6 +2219,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .link__972a0 {
     padding: 0 var(--space-16) 0 var(--space-xs)
+}
+
+:where(.visual-refresh) .linkPlated__972a0 {
+    padding-right: 36px
 }
 
 :where(.visual-refresh) .channel__972a0:not(.dm__972a0) {
@@ -5188,4 +5192,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=29c515c0d509a1e3.css.map*/
+/*# sourceMappingURL=27c05828e8153b9e.css.map*/

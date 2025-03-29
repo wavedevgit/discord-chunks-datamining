@@ -32,7 +32,7 @@ function O(e) {
     children: O
   } = e, {
     selectedSkuId: I
-  } = (0, p.JL)(), [S, T] = i.useState(n), [N, A] = i.useState(), [C, R] = i.useState(!1), P = (0, _.pO)(S), w = (0, l.TX)(), {
+  } = (0, p.JL)(), [S, T] = i.useState(n), [A, N] = i.useState(), [C, R] = i.useState(!1), P = (0, _.pO)(S), w = (0, l.TX)(), {
     enabled: D
   } = c.O.useExperiment({
     location: "gift card"
@@ -55,8 +55,8 @@ function O(e) {
       giftMessage: f,
       giftRecipient: S,
       setGiftRecipient: T,
-      giftRecipientError: N,
-      setGiftRecipientError: A,
+      giftRecipientError: A,
+      setGiftRecipientError: N,
       validatingGiftRecipient: C,
       setValidatingGiftRecipient: R,
       soundEffect: F,

@@ -51,21 +51,21 @@ function y(e) {
     enabled: E
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
-  }), I = [{
+  }), w = [{
     tab: _.AW.HOME,
     displayText: C.NW.string(C.t.ijDDw8)
   }, {
     tab: _.AW.CATALOG,
     displayText: C.NW.string(C.t.xFcotb)
   }];
-  E && I.push({
+  E && w.push({
     tab: _.AW.ORBS,
     displayText: C.NW.string(C.t["KUYR+P"])
   });
-  let w = n ? v.DR : o,
+  let I = n ? v.DR : o,
     B = l.useCallback(() => {
-      t && (w(), (0, c.Ou)()), (0, p.navigateToQuestHome)()
-    }, [w, t]);
+      t && (I(), (0, c.Ou)()), (0, p.navigateToQuestHome)()
+    }, [I, t]);
   return (0, r.jsx)(s.f6W, {
     theme: k,
     children: e => (0, r.jsxs)(b.Z, {
@@ -80,7 +80,7 @@ function y(e) {
         children: C.NW.string(C.t.pWG4zc)
       }), (0, r.jsx)("div", {
         className: x.tabs,
-        children: I.map(e => {
+        children: w.map(e => {
           let {
             tab: t,
             displayText: n
@@ -100,7 +100,7 @@ function y(e) {
           ctaOnClick: B,
           className: x.balanceWidgetMenu
         }), t && (0, r.jsx)(u.Z, {
-          closeAction: w,
+          closeAction: I,
           keybind: "ESC"
         })]
       })]

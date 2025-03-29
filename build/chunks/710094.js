@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(614223),
   S = n(481595),
   T = n(435020),
-  N = n(51499),
-  A = n(678334),
+  A = n(51499),
+  N = n(678334),
   C = n(614277),
   R = n(474936),
   P = n(231338),
@@ -92,10 +92,10 @@ function L(e) {
   (0, p.t)();
   let eS = null !== (n = null != x ? x : F) && void 0 !== n ? n : null,
     eT = null != eS && (!ec || R.nG[eS].skus.includes(en)) ? eS : null,
-    eN = (0, d.N)(F),
-    eA = (0, u.Ng)(),
+    eA = (0, d.N)(F),
+    eN = (0, u.Ng)(),
     eC = {
-      user_trial_offer_id: null == eN ? void 0 : eN.id
+      user_trial_offer_id: null == eA ? void 0 : eA.id
     };
   i.useEffect(() => {
     null != J && null != ey.current && ey.current.scrollIntoView({
@@ -114,9 +114,9 @@ function L(e) {
     ew = null != et && R.o4.has(et.id) && null != eP && !(0, l.aQ)(eP) ? Error(w.NW.string(w.t["2ik8io"])) : null,
     eD = i.useRef(null),
     [eL, ex] = i.useState(null),
-    eM = !em && null != eN && null != en && R.nG[eN.trial_id].skus.includes(en),
-    ek = null == eA ? void 0 : null === (t = eA.discount) || void 0 === t ? void 0 : t.plan_ids,
-    ej = !em && null != eA && null != ek && null != et && ek.includes(et.id),
+    eM = !em && null != eA && null != en && R.nG[eA.trial_id].skus.includes(en),
+    ek = null == eN ? void 0 : null === (t = eN.discount) || void 0 === t ? void 0 : t.plan_ids,
+    ej = !em && null != eN && null != ek && null != et && ek.includes(et.id),
     eU = em && (0, h.pO)(eE),
     eG = null == V && null == Z && ed === P.GZ.SUBSCRIPTION,
     eB = (0, I.Kp)({
@@ -188,12 +188,12 @@ function L(e) {
   }))), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(v.P, {
       giftMessage: eg
-    }), !eU && (0, r.jsx)(N.Z, {
+    }), !eU && (0, r.jsx)(A.Z, {
       isEligibleForTrial: eM
     }), (0, r.jsxs)(C.C3, {
       children: [null != ev && ev, (0, r.jsx)(O.Z, {}), (0, r.jsx)(y.Z, {}), o]
     }), (0, r.jsx)(C.O3, {
-      children: (0, r.jsx)(A.Z, {
+      children: (0, r.jsx)(N.Z, {
         premiumSubscription: null != W ? W : null,
         setPurchaseState: eo,
         onBack: eH,

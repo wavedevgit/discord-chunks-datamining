@@ -239,14 +239,14 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   return {
     type: "autolink",
     content: e[1],
     originalMatch: e
   }
 }
-let A = {
+let N = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -263,13 +263,13 @@ let A = {
         type: "text",
         content: e[0],
         originalMatch: e
-      } : N(e)
+      } : A(e)
     },
     mailto: {
-      parse: N
+      parse: A
     },
     tel: {
-      parse: N
+      parse: A
     },
     codeBlockSyntax: {
       order: s.defaultRules.inlineCode.order - .1,
@@ -290,8 +290,8 @@ let A = {
     }
   },
   C = /(-# +)/,
-  R = (0, _.Z)([I, A]),
-  P = (0, _.Z)([S, A]),
+  R = (0, _.Z)([I, N]),
+  P = (0, _.Z)([S, N]),
   w = l._p(R),
   D = l._p(P),
   L = {

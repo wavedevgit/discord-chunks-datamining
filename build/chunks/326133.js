@@ -35,7 +35,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function N(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function A(e, t) {
 }
 
 function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,7 +88,7 @@ let w = 490,
   x = 200,
   M = 175,
   k = i.forwardRef(function(e, t) {
-    var n, o, T, A, P;
+    var n, o, T, N, P;
     let {
       channel: k,
       type: j,
@@ -97,7 +97,7 @@ let w = 490,
     } = e, B = (0, h.Dt)(), F = (0, l.e7)([E.Z], () => {
       var e;
       return null !== (e = E.Z.getGuild(k.guild_id)) && void 0 !== e ? e : null
-    }, [k.guild_id]), V = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
+    }, [k.guild_id]), V = i.useRef(), [Z, H, W] = (0, O.Z)(C(A({}, e), {
       guild: F
     }), t, V), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
     (0, p.KR)(B, Z.isVisible, K), b.Z.trackExposure({
@@ -140,7 +140,7 @@ let w = 490,
         [S.autocompleteTop]: Q
       },
       ee = w;
-    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === v.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
+    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (N = Z.query) || void 0 === N ? void 0 : N.type) === v.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(_.ZP, {
       id: B,
       className: a()(S.autocomplete, $),
@@ -153,7 +153,7 @@ let w = 490,
             var {
               ref: t
             } = e, n = R(e, ["ref"]);
-            return (0, r.jsx)(c.h21, C(N({
+            return (0, r.jsx)(c.h21, C(A({
               id: B,
               ref: e => {
                 var n;

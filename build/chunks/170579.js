@@ -71,13 +71,13 @@ let I = e => {
       renderAnimation: v,
       onClose: S,
       isGift: T,
-      upgradeToPremiumType: N,
-      headerTheme: A = b.nL.DEFAULT,
+      upgradeToPremiumType: A,
+      headerTheme: N = b.nL.DEFAULT,
       className: C,
       showTrialBadge: R = !1,
       showDiscountBadge: P = !1
-    } = e, w = N === b.p9.TIER_2;
-    n = N === b.p9.TIER_0 ? d.Z : N === b.p9.TIER_1 ? f.Z : u.Z;
+    } = e, w = A === b.p9.TIER_2;
+    n = A === b.p9.TIER_0 ? d.Z : A === b.p9.TIER_1 ? f.Z : u.Z;
     let D = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
       L = (0, m.Ng)(),
       x = null == L ? void 0 : null === (t = L.discount) || void 0 === t ? void 0 : t.amount;
@@ -87,7 +87,7 @@ let I = e => {
         [y.headerBackground]: !w,
         [y.tier2HeaderBackground]: w
       }, C),
-      children: [D || A !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
+      children: [D || N !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: y.snow,
         wind: 5
       }), (R || P) && (0, r.jsx)(_.Z, {
@@ -102,7 +102,7 @@ let I = e => {
               [y.nonTier2]: !w
             })
           }), (R || P) && (0, r.jsx)(I, {
-            isTier0: N === b.p9.TIER_0,
+            isTier0: A === b.p9.TIER_0,
             discountAmount: P ? x : void 0
           })]
         }), !i && (0, r.jsx)(s.olH, {

@@ -62,8 +62,8 @@ let y = "scientist:triggered",
   I = "userExperimentOverrides",
   S = "guildExperimentOverrides",
   T = 1,
-  N = new u.Z("ExperimentStore"),
-  A = !1,
+  A = new u.Z("ExperimentStore"),
+  N = !1,
   C = {},
   R = new Map,
   P = {},
@@ -271,7 +271,7 @@ function $(e) {
 
 function ee(e) {
   var t;
-  !j && "CONNECTION_OPEN" === e.type && Z(e.user) && (j = !0), "EXPERIMENTS_FETCH_SUCCESS" === e.type && A && "ready_payload" === w.source && _.default.track(m.rMx.EXPERIMENT_FETCH_IGNORED, {
+  !j && "CONNECTION_OPEN" === e.type && Z(e.user) && (j = !0), "EXPERIMENTS_FETCH_SUCCESS" === e.type && N && "ready_payload" === w.source && _.default.track(m.rMx.EXPERIMENT_FETCH_IGNORED, {
     fingerprint: e.fingerprint,
     current_snapshot_source: w.source,
     current_snapshot_session_id: w.sessionId,
@@ -291,7 +291,7 @@ function ee(e) {
     source: a,
     sessionId: s,
     fingerprint: l
-  }, !1), n(598984).Vx.trackExposure(), A = !0
+  }, !1), n(598984).Vx.trackExposure(), N = !0
 }
 
 function et(e) {
@@ -454,7 +454,7 @@ function ea(e) {
     serializedExperimentStore: t,
     user: n
   } = e;
-  !j && Z(n) && (j = !0), A = t.hasLoadedExperiments, C = t.trackedExposureExperiments, D = t.loadedUserExperiments, M = t.userExperimentOverrides, k = t.guildExperimentOverrides, w = v(E({}, w), {
+  !j && Z(n) && (j = !0), N = t.hasLoadedExperiments, C = t.trackedExposureExperiments, D = t.loadedUserExperiments, M = t.userExperimentOverrides, k = t.guildExperimentOverrides, w = v(E({}, w), {
     source: t.assignmentSource,
     sessionId: t.assignmentSessionId,
     fingerprint: t.assignmentFingerprint
@@ -462,7 +462,7 @@ function ea(e) {
 }
 
 function es() {
-  A = !0
+  N = !0
 }
 
 function el(e) {
@@ -471,11 +471,11 @@ function el(e) {
   } = e;
   s.K.remove(y), t || (s.K.remove(O), s.K.remove(I), s.K.remove(S), M = {}, k = {}), D = {}, w = v(E({}, w), {
     rawUserExperiments: []
-  }), C = {}, A = !1
+  }), C = {}, N = !1
 }
 
 function ec() {
-  A = !1, C = {}, L = {}, s.K.remove(y)
+  N = !1, C = {}, L = {}, s.K.remove(y)
 }
 
 function eu() {
@@ -522,7 +522,7 @@ function ef() {
   try {
     s.K.set(I, M)
   } catch (e) {
-    N.error("Error saving user experiment overrides, unsaved data will be lost", e), _.default.track(m.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    A.error("Error saving user experiment overrides, unsaved data will be lost", e), _.default.track(m.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveExperimentOverrides"
     })
@@ -530,7 +530,7 @@ function ef() {
   try {
     s.K.set(S, k)
   } catch (e) {
-    N.error("Error saving guild experiment overrides, unsaved data will be lost", e), _.default.track(m.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    A.error("Error saving guild experiment overrides, unsaved data will be lost", e), _.default.track(m.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveExperimentOverrides"
     })
@@ -544,7 +544,7 @@ function e_(e) {
       e: e
     })
   } catch (e) {
-    N.error("Error saving tracked exposure experiments, unsaved data will be lost", e), _.default.track(m.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    A.error("Error saving tracked exposure experiments, unsaved data will be lost", e), _.default.track(m.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveTrackedExposureExperiments"
     })
@@ -623,7 +623,7 @@ class eg extends f.Z {
     }
   }
   get hasLoadedExperiments() {
-    return A
+    return N
   }
   hasRegisteredExperiment(e) {
     return null != P[e]
@@ -707,7 +707,7 @@ class eg extends f.Z {
     for (let t in L)
       for (let n of (e[t] = JSON.parse(JSON.stringify(L[t])), e[t].populations)) n.filters = [];
     return {
-      hasLoadedExperiments: A,
+      hasLoadedExperiments: N,
       trackedExposureExperiments: C,
       loadedUserExperiments: D,
       loadedGuildExperiments: e,

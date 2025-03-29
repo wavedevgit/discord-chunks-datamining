@@ -107,7 +107,7 @@ let S = async e => {
       url: E.ANM.VOICE_CHANNEL_EFFECTS(t.id),
       body: e,
       rejectWithError: !1
-    }), N(t, n, r, c), o.Z.dispatch({
+    }), A(t, n, r, c), o.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_SENT_LOCAL"
     })
   } catch (e) {
@@ -122,7 +122,7 @@ let S = async e => {
 }, T = {
   [g.q.BASIC]: "Basic",
   [g.q.PREMIUM]: "Premium"
-}, N = (e, t, n, r) => {
+}, A = (e, t, n, r) => {
   let {
     unicode: i,
     custom: o,

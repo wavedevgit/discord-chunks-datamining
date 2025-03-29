@@ -44,8 +44,8 @@ let p = 365,
   I = [a.Ci.SA.weekday, a.Ci.SU.weekday],
   S = [a.Ci.FR.weekday, a.Ci.SA.weekday],
   T = [a.Ci.SU.weekday, a.Ci.MO.weekday],
-  N = [a.Ci.SU.weekday, a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday, a.Ci.SA.weekday],
-  A = new Set([0, 6]);
+  A = [a.Ci.SU.weekday, a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday, a.Ci.SA.weekday],
+  N = new Set([0, 6]);
 
 function C(e) {
   var t;
@@ -80,7 +80,7 @@ function C(e) {
         })
       })
     }];
-  return A.has(n.getDay()) ? (null === (t = s.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && o.push({
+  return N.has(n.getDay()) ? (null === (t = s.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && o.push({
     value: d.z.WEEKEND_ONLY,
     label: _.NW.string(_.t.hRpynZ)
   }) : o.push({
@@ -115,7 +115,7 @@ function D(e, t, n) {
 }
 
 function L(e) {
-  return new a.OG(N[e])
+  return new a.OG(A[e])
 }
 
 function x(e, t) {

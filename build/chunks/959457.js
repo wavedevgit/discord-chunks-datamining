@@ -32,8 +32,8 @@ function T(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let N = {},
-  A = {},
+let A = {},
+  N = {},
   C = {},
   R = {},
   P = {},
@@ -49,7 +49,7 @@ function M(e, t, n) {
     serverId: t,
     initialLayout: w,
     analyticsContext: n,
-    isStreamer: null != A[e],
+    isStreamer: null != N[e],
     parentMediaSessionId: O.Z.getMediaSessionId()
   })
 }
@@ -84,7 +84,7 @@ function G(e) {
     channelId: r,
     ownerId: b.default.getId()
   });
-  if (N[u] = i, c().forEach(D, e => {
+  if (A[u] = i, c().forEach(D, e => {
       let {
         analyticsContext: t,
         isOwner: n
@@ -92,7 +92,7 @@ function G(e) {
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
     }), R[u] = a, C[u] = o, null != o) {
     let e = f.ZP.getGameForPID(o);
-    null != e && (A[u] = {
+    null != e && (N[u] = {
       name: e.name,
       id: e.id,
       exe: e.exeName,
@@ -107,7 +107,7 @@ function B(e) {
     appContext: t,
     streamKey: n
   } = e;
-  N[n] = t, c().forEach(D, e => {
+  A[n] = t, c().forEach(D, e => {
     let {
       analyticsContext: n,
       isOwner: r
@@ -126,14 +126,14 @@ function F(e) {
   i = t;
   let a = D[t];
   if (null == a && null != n) {
-    null == C[t] && (A[t] = null);
+    null == C[t] && (N[t] = null);
     let e = (0, p.my)(t);
-    null == A[t] && null == R[t] && (A[t] = (0, h.L2)(e, y.Z));
+    null == N[t] && null == R[t] && (N[t] = (0, h.L2)(e, y.Z));
     let i = new _.A({
       streamRegion: r,
-      streamApplication: A[t],
+      streamApplication: N[t],
       streamSourceType: $(R[t]),
-      actionContext: N[t],
+      actionContext: A[t],
       numViewers: null != o ? o.length : 0,
       goLiveModalDurationMs: P[t]
     });

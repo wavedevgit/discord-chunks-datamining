@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120), n(566702);
 var r = n(200651),
   i = n(192379),
@@ -57,7 +57,7 @@ let S = (0, f.kt)({
         (0, _.vE)(r)
     }
   },
-  N = e => {
+  A = e => {
     switch (e) {
       case v.n_.ACTIVITY:
         return O.t.Qn081N;
@@ -70,7 +70,7 @@ let S = (0, f.kt)({
     }
   };
 
-function A(e) {
+function N(e) {
   let {
     user: t,
     guildId: n,
@@ -79,7 +79,7 @@ function A(e) {
     sourceType: f,
     sourceDetails: _,
     setPopoutRef: E,
-    modalKey: A,
+    modalKey: N,
     onAction: C,
     onClose: R,
     entry: P
@@ -138,13 +138,13 @@ function A(e) {
         [I.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
-        parentModalKey: A,
+        parentModalKey: N,
         emojiPickerCloseOnModalOuterClick: !0,
         className: I.input,
         innerClassName: I.inputInner,
         editorClassName: I.editor,
         type: c.Ie.USER_PROFILE_REPLY,
-        placeholder: O.NW.formatToPlainString(N(f), {
+        placeholder: O.NW.formatToPlainString(A(f), {
           username: p.ZP.getName(n, o, t)
         }),
         channel: S,

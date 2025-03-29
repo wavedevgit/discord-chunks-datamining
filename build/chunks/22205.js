@@ -18,8 +18,8 @@ var r = n(200651),
   v = n(493773),
   b = n(797614),
   g = n(703656),
-  y = n(594174),
-  E = n(254761),
+  E = n(594174),
+  y = n(254761),
   O = n(70956),
   S = n(960048),
   x = n(145597),
@@ -57,7 +57,7 @@ function A(e) {
     onReload: s,
     onDisable: c,
     onCrashDisabled: u
-  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), x = (0, d.e7)([y.default], () => y.default.getCurrentUser());
+  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), x = (0, d.e7)([E.default], () => E.default.getCurrentUser());
   (0, v.ZP)(() => (h.current = setTimeout(j, T), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
@@ -110,7 +110,7 @@ function A(e) {
     hint: L ? M : void 0,
     confirmText: N.NW.string(N.t.a3HlgI),
     cancelText: null != D ? N.NW.string(N.t.qIYnPj) : void 0,
-    icon: (0, r.jsx)(E.Z, {
+    icon: (0, r.jsx)(y.Z, {
       width: 40,
       height: 40,
       className: I.notificationIcon

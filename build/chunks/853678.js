@@ -148,8 +148,9 @@ let C = new Set([y.Fu, y.JT]),
             message: i,
             onShare: (t, n) => {
               e({
-                success: t,
-                didCopyLink: n
+                success: n || t,
+                didCopyLink: n,
+                didSendMessage: t
               })
             }
           })

@@ -115,7 +115,7 @@ function T(e) {
   a.upload(), o.push(a), b(t, i, o)
 }
 
-function N(e) {
+function A(e) {
   let {
     channelId: t,
     uploads: n,
@@ -124,7 +124,7 @@ function N(e) {
   b(t, r, n)
 }
 
-function A(e) {
+function N(e) {
   let {
     channelId: t,
     draftType: n
@@ -168,8 +168,8 @@ let P = new R(s.Z, {
   UPLOAD_ATTACHMENT_UPDATE_FILE: S,
   UPLOAD_ATTACHMENT_REMOVE_FILE: O,
   UPLOAD_ATTACHMENT_REMOVE_FILES: I,
-  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: A,
-  UPLOAD_ATTACHMENT_SET_UPLOADS: N,
+  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: N,
+  UPLOAD_ATTACHMENT_SET_UPLOADS: A,
   UPLOAD_ATTACHMENT_SET_FILE: T,
   SIDEBAR_CLOSE: C
 })

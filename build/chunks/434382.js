@@ -112,12 +112,12 @@ async function T(e) {
   }
 }
 
-function N() {
+function A() {
   S()
 }
 
-function A() {
-  I(), E = new Map, b = new Set, v = new Map, N()
+function N() {
+  I(), E = new Map, b = new Set, v = new Map, A()
 }
 class C extends o.Z {
   fetchLeaderboard(e) {
@@ -125,11 +125,11 @@ class C extends o.Z {
   }
   constructor(...e) {
     super(...e), _(this, "actions", {
-      POST_CONNECTION_OPEN: A,
-      CONNECTION_CLOSED: N,
-      WINDOW_FOCUS: N,
-      IDLE: N,
-      CHANNEL_SELECT: N
+      POST_CONNECTION_OPEN: N,
+      CONNECTION_CLOSED: A,
+      WINDOW_FOCUS: A,
+      IDLE: A,
+      CHANNEL_SELECT: A
     })
   }
 }

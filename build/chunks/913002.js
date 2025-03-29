@@ -79,7 +79,7 @@ function O(e) {
     g({
       action: "PRESS_EDIT_CUSTOM_STATUS"
     }), y(m), null == o || o()
-  }, N = () => {
+  }, A = () => {
     g({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
     }), f.Ok.updateSetting(void 0)
@@ -113,7 +113,7 @@ function O(e) {
         ref: b,
         className: a()(h.button, h.right),
         "aria-label": p.NW.string(p.t.wfYTHR),
-        onClick: N,
+        onClick: A,
         children: (0, r.jsx)(l.XHJ, {
           size: "xs",
           colorClass: h.icon

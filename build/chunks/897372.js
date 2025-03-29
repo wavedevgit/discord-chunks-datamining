@@ -23,8 +23,8 @@ var r, i = n(147018),
   I = n(644659),
   S = I.set,
   T = I.getterFor("URL"),
-  N = O.URLSearchParams,
-  A = O.getState,
+  A = O.URLSearchParams,
+  N = O.getState,
   C = s.URL,
   R = s.TypeError,
   P = s.parseInt,
@@ -202,8 +202,8 @@ var r, i = n(147018),
   eI = {},
   eS = {},
   eT = {},
-  eN = {},
   eA = {},
+  eN = {},
   eC = {},
   eR = {},
   eP = {},
@@ -225,7 +225,7 @@ var r, i = n(147018),
       this.searchParams = null
     } else {
       if (void 0 !== n && (r = new eV(n, !0)), i = this.parse(a, null, r)) throw R(i);
-      (o = A(new N)).bindURL(this), this.searchParams = o
+      (o = N(new A)).bindURL(this), this.searchParams = o
     }
   };
 eV.prototype = {
@@ -269,12 +269,12 @@ eV.prototype = {
             l.scheme = n.scheme, l.path = m(n.path), l.query = n.query, l.fragment = "", l.cannotBeABaseURL = !0, c = eF;
             break
           }
-          c = "file" === n.scheme ? ex : eN;
+          c = "file" === n.scheme ? ex : eA;
           continue;
         case eS:
           if ("/" === o && "/" === i[u + 1]) c = eR, u++;
           else {
-            c = eN;
+            c = eA;
             continue
           }
           break;
@@ -285,9 +285,9 @@ eV.prototype = {
           }
           c = eU;
           continue;
-        case eN:
+        case eA:
           if (l.scheme = n.scheme, o === r) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = n.query;
-          else if ("/" === o || "\\" === o && l.isSpecial()) c = eA;
+          else if ("/" === o || "\\" === o && l.isSpecial()) c = eN;
           else if ("?" === o) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = "", c = eB;
           else if ("#" === o) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eF;
           else {
@@ -295,7 +295,7 @@ eV.prototype = {
             continue
           }
           break;
-        case eA:
+        case eN:
           if (l.isSpecial() && ("/" === o || "\\" === o)) c = eR;
           else if ("/" === o) c = eP;
           else {

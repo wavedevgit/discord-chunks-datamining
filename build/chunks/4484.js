@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(780748),
   S = n(464581),
   T = n(732659),
-  N = n(86724),
-  A = n(847302),
+  A = n(86724),
+  N = n(847302),
   C = n(657198),
   R = n(321127),
   P = n(981631),
@@ -81,10 +81,10 @@ let D = i.forwardRef(function(e, t) {
     if (void 0 !== i && i !== a) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
-          e.previewMarkdown = !0, (0, A.KH)(e, D.guild_id, D.id)
+          e.previewMarkdown = !0, (0, N.KH)(e, D.guild_id, D.id)
         } finally {
           e.previewMarkdown = !1
-        }(0, A.KH)(e, D.guild_id, D.id), o = void 0
+        }(0, N.KH)(e, D.guild_id, D.id), o = void 0
       }
       "undo" !== t && void 0 !== i && i !== a && h.T.insertEntry(e, "other", !1, a, s), l = !0
     }
@@ -103,7 +103,7 @@ let D = i.forwardRef(function(e, t) {
     }
     let d = p.cr(e);
     if (null != d && d[0].command.id !== (null === (r = c.Z.getActiveCommand(D.id)) || void 0 === r ? void 0 : r.id) && h.T.withMergedEntry(e, () => {
-        (0, N.L)(e, D.id, null, !0)
+        (0, A.L)(e, D.id, null, !0)
       }), l) {
       if ("parent" === t) try {
         eg.current = !1, e.onChange()
@@ -164,7 +164,7 @@ let D = i.forwardRef(function(e, t) {
   (0, O.Z)(t, eO, D, eS), (0, T.Z)(eO, ep, V);
   let {
     handleKeyDown: eT,
-    handleKeyUp: eN
+    handleKeyUp: eA
   } = (0, I.Z)({
     editor: eO,
     channel: D,
@@ -178,7 +178,7 @@ let D = i.forwardRef(function(e, t) {
     hideAutocomplete: X,
     moveSelection: J
   }), {
-    handlePaste: eA,
+    handlePaste: eN,
     handleGlobalPaste: eC
   } = (0, S.Z)(eO, eE, F), eR = i.useCallback(e => {
     null == Q || Q()
@@ -224,9 +224,9 @@ let D = i.forwardRef(function(e, t) {
         onFocus: Z,
         onBlur: H,
         onClick: eR,
-        onPaste: eA,
+        onPaste: eN,
         onKeyDown: eT,
-        onKeyUp: eN,
+        onKeyUp: eA,
         decorateExtra: ew,
         renderExtraElement: eD,
         renderExtraLeaf: eL,

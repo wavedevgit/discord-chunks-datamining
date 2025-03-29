@@ -68,8 +68,8 @@ async function v(e) {
     analyticsLocation: I,
     analyticsLocations: S,
     flowStartTime: T,
-    subscriptionPlan: N,
-    planGroup: A,
+    subscriptionPlan: A,
+    planGroup: N,
     trialId: C,
     priceOptions: R,
     paymentSource: P,
@@ -104,15 +104,15 @@ async function v(e) {
       loadId: B,
       giftInfoOptions: F
     });
-    else if (i()(null != N, "Missing subscriptionPlan"), y) {
+    else if (i()(null != A, "Missing subscriptionPlan"), y) {
       i()(null != V, "Missing invoicePreview");
       let t = V.total,
         n = V.currency;
-      e = await (0, c.ZZ)(h.CL, N.skuId, {
+      e = await (0, c.ZZ)(h.CL, A.skuId, {
         expectedAmount: t,
         expectedCurrency: n,
         paymentSource: P,
-        subscriptionPlanId: N.id,
+        subscriptionPlanId: A.id,
         isGift: !0,
         loadId: B,
         giftInfoOptions: F
@@ -122,14 +122,14 @@ async function v(e) {
       currency: R.currency
     }, S, I, B);
     else if (null != L) {
-      let t = (0, f.al)(L, N.id, 1, new Set(A)),
+      let t = (0, f.al)(L, A.id, 1, new Set(N)),
         n = {
           paymentSource: P,
           currency: R.currency
         };
       L.isPausedAllowsResumeButNotUpdates ? n.status = p.O0b.ACTIVE : n.items = t, e = await (0, a.Mg)(L, n, S, I, B)
     } else e = await (0, l.Ld)({
-      planId: N.id,
+      planId: A.id,
       currency: R.currency,
       paymentSource: P,
       trialId: C,

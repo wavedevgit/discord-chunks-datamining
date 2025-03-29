@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(351402),
   S = n(853872),
   T = n(855775),
-  N = n(695103),
-  A = n(4912),
+  A = n(695103),
+  N = n(4912),
   C = n(630388),
   R = n(669079),
   P = n(987209),
@@ -94,7 +94,7 @@ function B(e) {
     ea = null != Z ? Z : T.c,
     es = null != eo ? eo[ea] : null;
   a()(null != ei, "SKU must exist and be fetched."), a()(null != B, "Application must exist.");
-  let el = (0, l.e7)([h.Z, N.Z], () => N.Z.inTestModeForApplication(B.id) || h.Z.inDevModeForApplication(B.id), [B.id]),
+  let el = (0, l.e7)([h.Z, A.Z], () => A.Z.inTestModeForApplication(B.id) || h.Z.inDevModeForApplication(B.id), [B.id]),
     ec = (0, l.e7)([O.Z], () => O.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(I.Z.ipCountryCodeWithFallback),
     ed = F === D.A.PURCHASING || F === D.A.COMPLETED,
@@ -113,13 +113,13 @@ function B(e) {
   }, [en, er, Z, ei.applicationId, ei.id, es, J, $]), (0, r.jsxs)("div", {
     className: U.stepBody,
     children: [el ? (0, r.jsx)(f.Z, {
-      icon: (0, c.GSL)(A.Z),
+      icon: (0, c.GSL)(N.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.WARNING,
       className: U.errorBlock,
       children: j.NW.string(j.t.OvMyMT)
     }, "TEST_MODE") : null, (0, C.yE)(B.flags, k.udG.EMBEDDED) && X === h.O.ERROR ? (0, r.jsx)(f.Z, {
-      icon: (0, c.GSL)(A.Z),
+      icon: (0, c.GSL)(N.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
       className: U.errorBlock,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -27,13 +27,13 @@ var r = n(200651),
   S = n(981631),
   T = n(218586);
 
-function N(e) {
+function A(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: o,
-    onNext: N,
-    legalTermsNodeRef: A,
+    onNext: A,
+    legalTermsNodeRef: N,
     flashLegalTerms: C,
     invoiceError: R,
     planError: P,
@@ -89,13 +89,13 @@ function N(e) {
     eI = ey || ep,
     eS = (0, d.U)(),
     eT = null,
-    eN = null;
+    eA = null;
   if (K === S.GZQ.ONE_TIME) {
-    var eA;
-    a()(null != Q, "SKU must be selected for one-time purchases"), eT = null !== (eA = X[Q]) && void 0 !== eA ? eA : null, a()(null != eT, "SKU must exist and be fetched.");
+    var eN;
+    a()(null != Q, "SKU must be selected for one-time purchases"), eT = null !== (eN = X[Q]) && void 0 !== eN ? eN : null, a()(null != eT, "SKU must exist and be fetched.");
     let e = J[Q],
       t = null != z ? z : h.c;
-    eN = null != e ? e[t] : null
+    eA = null != e ? e[t] : null
   }
   let eC = async () => {
     await (0, v.H)({
@@ -118,10 +118,10 @@ function N(e) {
       isPrepaidPaymentPastDue: eS,
       openInvoiceId: U,
       premiumSubscription: t,
-      onNext: N,
+      onNext: A,
       metadata: G,
       sku: eT,
-      skuPricePreview: eN,
+      skuPricePreview: eA,
       purchaseType: K,
       referralCode: $,
       loadId: ee.loadId,
@@ -132,7 +132,7 @@ function N(e) {
     baseAnalyticsData: D,
     flowStartTime: L,
     makePurchase: eC,
-    onNext: N,
+    onNext: A,
     onPurchaseError: w,
     paymentSource: em,
     paymentSourceId: z,
@@ -151,7 +151,7 @@ function N(e) {
   return ep ? null : (0, r.jsxs)(s.mzw, {
     align: c.Z.Align.CENTER,
     children: [(0, r.jsx)(p.Z, {
-      legalTermsNodeRef: A,
+      legalTermsNodeRef: N,
       invoiceError: R,
       planError: P,
       disablePurchase: F,
@@ -164,7 +164,7 @@ function N(e) {
       isTrial: V,
       makePurchase: eC,
       needsPaymentSource: null == em && !eI,
-      onNext: N,
+      onNext: A,
       inReverseTrial: en
     }), (0, r.jsx)(I.Z, {}), B && !ew ? (0, r.jsx)("div", {
       className: T.back,

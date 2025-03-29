@@ -48,7 +48,7 @@ function m(e, t) {
     className: b,
     initialAnimation: v,
     markers: y
-  } = e, [O, I] = i.useState(null), S = i.useRef(null), T = i.useRef(null), N = i.useRef(null), A = "custom" === m ? {
+  } = e, [O, I] = i.useState(null), S = i.useRef(null), T = i.useRef(null), A = i.useRef(null), N = "custom" === m ? {
     width: g,
     height: E
   } : (0, u.m)(m), C = !(0, f.Z)("lottie_hover_multiple_loop"), R = i.useContext(c.S).reducedMotion.enabled, {
@@ -58,20 +58,20 @@ function m(e, t) {
   }), w = R || !P, D = i.useRef(v);
   return i.useImperativeHandle(t, () => ({
     play: e => {
-      if (null != N.current) {
+      if (null != A.current) {
         if (T.current = e, w) {
           let t = y[e];
-          N.current.resetSegments(!0), N.current.setSegment(t.start + t.duration, t.start + t.duration), N.current.stop()
-        } else N.current.setLoop(!C && e.includes("hover")), N.current.resetSegments(!0), N.current.playSegments([y[e].start, y[e].start + y[e].duration], !0)
+          A.current.resetSegments(!0), A.current.setSegment(t.start + t.duration, t.start + t.duration), A.current.stop()
+        } else A.current.setLoop(!C && e.includes("hover")), A.current.resetSegments(!0), A.current.playSegments([y[e].start, y[e].start + y[e].duration], !0)
       }
     },
     stop: () => {
-      if (null == N.current || w) return
+      if (null == A.current || w) return
     },
     stopIfPlaying: e => {
-      null == N.current || w || T.current !== e || (N.current.resetSegments(!0), N.current.setSegment(y[e].start, y[e].start), N.current.stop())
+      null == A.current || w || T.current !== e || (A.current.resetSegments(!0), A.current.setSegment(y[e].start, y[e].start), A.current.stop())
     },
-    getDuration: e => null == N.current ? null : N.current.getDuration(e)
+    getDuration: e => null == A.current ? null : A.current.getDuration(e)
   }), [w, C, y]), i.useEffect(() => {
     null == O && p().then(e => I(e.default))
   }, [O, p]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
@@ -84,7 +84,7 @@ function m(e, t) {
       let e = y[i];
       n = [e.start, e.start + e.duration]
     }
-    null != S.current && (N.current = r.loadAnimation({
+    null != S.current && (A.current = r.loadAnimation({
       container: S.current,
       renderer: "svg",
       loop: !1,
@@ -94,12 +94,12 @@ function m(e, t) {
     }))
   }), () => {
     var e;
-    null === (e = N.current) || void 0 === e || e.destroy()
+    null === (e = A.current) || void 0 === e || e.destroy()
   }), [O, y]), (0, r.jsx)("div", {
     style: h({
       "--__lottieIconColor": null != o && "string" == typeof o ? o : null == o ? void 0 : o.css,
       display: "flex"
-    }, A),
+    }, N),
     className: a()(_.lottieIcon, s ? void 0 : _.lottieIconColors, b),
     ref: S
   })

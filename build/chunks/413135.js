@@ -204,7 +204,7 @@ function T(e, t, n, r, i) {
   return -1
 }
 
-function N(e, t, n, r) {
+function A(e, t, n, r) {
   n = Number(n) || 0;
   var i = e.length - n;
   r ? (r = Number(r)) > i && (r = i) : r = i;
@@ -218,7 +218,7 @@ function N(e, t, n, r) {
   return a
 }
 
-function A(e, t, n, r) {
+function N(e, t, n, r) {
   return X(K(t, e.length - n), e, n, r)
 }
 
@@ -376,10 +376,10 @@ r = 0x7fffffff, u.TYPED_ARRAY_SUPPORT = l(), u.TYPED_ARRAY_SUPPORT || "undefined
   r || (r = "utf8");
   for (var o = !1;;) switch (r) {
     case "hex":
-      return N(this, e, t, n);
+      return A(this, e, t, n);
     case "utf8":
     case "utf-8":
-      return A(this, e, t, n);
+      return N(this, e, t, n);
     case "ascii":
       return C(this, e, t, n);
     case "latin1":

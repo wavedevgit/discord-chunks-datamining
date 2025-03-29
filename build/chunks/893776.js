@@ -62,8 +62,8 @@ function S(e, t) {
   }), e
 }
 let T = new d.Z("AuthenticationActionCreators"),
-  N = 5e3,
-  A = null;
+  A = 5e3,
+  N = null;
 var C = function(e) {
   return e.MFA = "MFA", e.SUCCESS = "SUCCESS", e
 }({});
@@ -565,12 +565,12 @@ let w = {
       withGuildExperiments: e
     })
   },
-  getLocationMetadata: () => null != A ? A : (clearTimeout(r), r = setTimeout(() => {
+  getLocationMetadata: () => null != N ? N : (clearTimeout(r), r = setTimeout(() => {
     l.Z.dispatch({
       type: "SET_CONSENT_REQUIRED",
       consentRequired: !0
     })
-  }, N), A = a.tn.get({
+  }, A), N = a.tn.get({
     url: b.ANM.AUTH_LOCATION_METADATA,
     retries: 2,
     oldFormErrors: !0,
@@ -587,7 +587,7 @@ let w = {
     if (l.Z.dispatch({
         type: "SET_LOCATION_METADATA",
         countryCode: null !== (a = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.country_code) && void 0 !== a ? a : void 0
-      }), A = null, (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.promotional_email_opt_in) != null) {
+      }), N = null, (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.promotional_email_opt_in) != null) {
       let t = e.body.promotional_email_opt_in;
       (0, u.K4)({
         required: t.required,
@@ -599,7 +599,7 @@ let w = {
     clearTimeout(r), l.Z.dispatch({
       type: "SET_CONSENT_REQUIRED",
       consentRequired: !0
-    }), A = null
+    }), N = null
   })),
   closeSuspendedUser() {
     l.Z.dispatch({

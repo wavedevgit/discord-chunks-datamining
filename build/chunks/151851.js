@@ -27,10 +27,10 @@ var i = n(120356),
 let I = "#ffffff",
   S = e => v.ZP.close(e),
   T = e => v.ZP.minimize(e),
-  N = (e, t) => {
+  A = (e, t) => {
     (0, b.isMac)() && !t.altKey ? v.ZP.fullscreen(e) : v.ZP.maximize(e)
   },
-  A = e => {
+  N = e => {
     let {
       children: t,
       windowKey: n,
@@ -44,7 +44,7 @@ let I = "#ffffff",
       children: (0, r.jsx)(_.Z, {})
     }), c = (0, r.jsx)(s.P3F, {
       className: O.winButtonMinMax,
-      onClick: e => N(n, e),
+      onClick: e => A(n, e),
       "aria-label": y.NW.string(y.t.G1u0hI),
       tabIndex: -1,
       children: (0, r.jsx)(h.Z, {})
@@ -107,7 +107,7 @@ let I = "#ffffff",
             })
           }), (0, r.jsx)(s.P3F, {
             className: O.macButtonMaximize,
-            onClick: e => N(n, e),
+            onClick: e => A(n, e),
             "aria-label": y.NW.string(y.t["2nM3Pj"]),
             tabIndex: -1,
             children: (0, r.jsx)(m.Z, {
@@ -135,7 +135,7 @@ function R(e) {
   if (f) return null;
   switch (n) {
     case b.PlatformTypes.WINDOWS:
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(N, {
         windowKey: i,
         themeOverride: s,
         hasOpenLayer: _

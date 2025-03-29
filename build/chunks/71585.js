@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120), n(653041);
 var r, i = n(442837),
   o = n(570140),
@@ -89,7 +89,7 @@ function S() {
 function T() {
   _.hidden = !_.hidden
 }
-class N extends(r = i.ZP.PersistedStore) {
+class A extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     _ = l({}, _, null != e ? e : {})
   }
@@ -109,8 +109,8 @@ class N extends(r = i.ZP.PersistedStore) {
     _ = f()
   }
 }
-s(N, "displayName", "ContentInventoryPersistedStore"), s(N, "persistKey", "ContentInventoryPersistedStore");
-let A = new N(o.Z, {
+s(A, "displayName", "ContentInventoryPersistedStore"), s(A, "persistKey", "ContentInventoryPersistedStore");
+let N = new A(o.Z, {
   CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS: y,
   CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS: O,
   CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS: I,

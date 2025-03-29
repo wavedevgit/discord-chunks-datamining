@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120), n(789020);
 var r, i = n(442837),
   o = n(570140),
@@ -112,7 +112,7 @@ function T(e) {
     return n === h && i === m && (g = null != r ? r : null), a !== g && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === m ? p.delete(f.Yn.DEFAULT) || o : b(f.Yn.DEFAULT, n) || o : n === h && i !== m ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = b(f.Yn.DEFAULT, n) || o), o || e
   }, !1)
 }
-class N extends(r = i.ZP.Store) {
+class A extends(r = i.ZP.Store) {
   initialize() {
     this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(c.Z)
   }
@@ -156,8 +156,8 @@ class N extends(r = i.ZP.Store) {
     return null != h && this.isPrioritySpeaker(h, e) && this.isSpeaking(h, e)
   }
 }
-_(N, "displayName", "SpeakingStore");
-let A = new N(o.Z, {
+_(A, "displayName", "SpeakingStore");
+let N = new A(o.Z, {
   CONNECTION_OPEN: I,
   OVERLAY_INITIALIZE: I,
   SPEAKING: S,

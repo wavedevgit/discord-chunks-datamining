@@ -78,14 +78,14 @@ function v(e) {
 function y(e) {
   let {
     guild: t
-  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [g, E] = i.useState(0), y = i.useRef(null), O = Math.min(f.Eu4.TIER_3, t.premiumTier + 1), I = f.oCV[t.premiumTier], S = f.oCV[O], T = (t.premiumSubscriberCount - I) / (S - I), N = d.P[t.premiumTier], A = d.P[O], {
+  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [g, E] = i.useState(0), y = i.useRef(null), O = Math.min(f.Eu4.TIER_3, t.premiumTier + 1), I = f.oCV[t.premiumTier], S = f.oCV[O], T = (t.premiumSubscriberCount - I) / (S - I), A = d.P[t.premiumTier], N = d.P[O], {
     progressBarFillWidthFactor: C,
     isProgressBarAnimationComplete: R,
     setShouldFireConfetti: P,
     shouldFireConfetti: w,
     tierMarkerAnimationPosition: D
   } = v({
-    fillFactor: t.premiumTier === f.Eu4.TIER_3 ? 1 : T * (A - N) + N,
+    fillFactor: t.premiumTier === f.Eu4.TIER_3 ? 1 : T * (N - A) + A,
     isRevealed: s || n,
     useReducedMotion: n,
     premiumTier: t.premiumTier,

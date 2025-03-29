@@ -4,7 +4,7 @@ n.d(t, {
   D$: () => D,
   N4: () => U,
   UI: () => P,
-  Uu: () => N,
+  Uu: () => A,
   _N: () => w,
   cS: () => L,
   cZ: () => G,
@@ -73,15 +73,15 @@ function T(e, t) {
   }), e
 }
 
-function N() {
+function A() {
   return {
     text: void 0,
     image: void 0,
-    localCreationAnswerId: A()
+    localCreationAnswerId: N()
   }
 }
 
-function A() {
+function N() {
   return (0, o.Z)()
 }
 

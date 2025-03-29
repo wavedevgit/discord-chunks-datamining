@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(594174),
   S = n(709586),
   T = n(624138),
-  N = n(51144),
-  A = n(981631),
+  A = n(51144),
+  N = n(981631),
   C = n(674563),
   R = n(524484),
   P = n(388032),
@@ -112,7 +112,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       id: ec,
       tabIndex: eu,
       itemProps: ed
-    } = e, ef = null == G ? void 0 : G.id, e_ = N.ZP.useName(G), ep = (null === (t = I.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === ef, eh = i.useRef(null), [em, eg] = i.useState(!1), [eE, eb] = i.useState(null), {
+    } = e, ef = null == G ? void 0 : G.id, e_ = A.ZP.useName(G), ep = (null === (t = I.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === ef, eh = i.useRef(null), [em, eg] = i.useState(!1), [eE, eb] = i.useState(null), {
       voiceChannel: ev
     } = (0, f.Z)({
       userId: ef,
@@ -131,12 +131,12 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       size: l.EFr.SIZE_32,
       animateOnHover: !(n || em),
       guildId: z
-    }), [eN, eA] = i.useState(!1);
+    }), [eA, eN] = i.useState(!1);
     i.useEffect(() => {
-      n && eA(!1)
+      n && eN(!1)
     }, [n]);
     let eC = (0, v.Fr)(F),
-      eR = null != eC && !ep && n && !eN,
+      eR = null != eC && !ep && n && !eA,
       eP = () => {
         eg(!0)
       },
@@ -159,7 +159,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
               let {
                 type: t
               } = e;
-              return t === A.IIU.CUSTOM_STATUS
+              return t === N.IIU.CUSTOM_STATUS
             }),
             user: G,
             channel: K
@@ -211,7 +211,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       }),
       eU = (e, t) => {
         let n = H ? l.Xo$ : l.qEK,
-          i = (0, c.Z)(F) ? A.Skl.STREAMING : Z;
+          i = (0, c.Z)(F) ? N.Skl.STREAMING : Z;
         return i = t ? void 0 : i, (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(n, M(L({}, eT), {
             size: l.EFr.SIZE_32,
@@ -249,9 +249,9 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         memberListItemRef: eh,
         applicationStream: V
       }, e), {
-        closePopout: () => eA(!0)
+        closePopout: () => eN(!0)
       })),
-      eF = Z === A.Skl.OFFLINE;
+      eF = Z === N.Skl.OFFLINE;
     return null == G ? (0, r.jsx)(h.Z, {
       avatarSize: l.EFr.SIZE_32,
       className: w.placeholder

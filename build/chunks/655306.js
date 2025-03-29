@@ -3,7 +3,7 @@
 n.d(t, {
   Yy: () => y,
   ZP: () => C,
-  ai: () => A
+  ai: () => N
 }), n(47120), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -38,8 +38,8 @@ let b = 100,
   I = 3,
   S = 30 * _.Z.Millis.SECOND,
   T = 120 * _.Z.Millis.SECOND,
-  N = -1 !== (0, f.hY)();
-var A = function(e) {
+  A = -1 !== (0, f.hY)();
+var N = function(e) {
   return e.UserSSRCUpdate = "user-ssrc-update", e.Update = "update", e
 }({});
 class C extends o.Z {
@@ -212,7 +212,7 @@ class C extends o.Z {
         (n.includes(t) || void 0 !== o.remoteVideoSsrcs[t] && !(0, l.Z)(o.remoteVideoSsrcs[t], s)) && (o.remoteVideoSsrcs[t] = [...s], o.emit("user-ssrc-update", t, o.audioSsrcs[t], s))
       }
       for (let [e, n] of Object.entries(o.audioSsrcs))(null === (t = o.connection) || void 0 === t ? void 0 : t.getLocalMute(e)) && (a[n] = 0);
-      return N ? o.latestWants : (null == o.connection || i().isEqual(o.latestWants, a) || (o.latestWants = a, o.emit("update", a)), a)
+      return A ? o.latestWants : (null == o.connection || i().isEqual(o.latestWants, a) || (o.latestWants = a, o.emit("update", a)), a)
     }, this.incomingVideoEnabledChanged = () => {
       this.update()
     }, this.delayedCall = new c.sW(O, this.update), this.offscreenTimeout = new c.V7, h.w.on(h.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)

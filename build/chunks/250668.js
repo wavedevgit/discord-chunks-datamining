@@ -23,8 +23,8 @@ var r = n(147018),
   I = n(803938),
   S = n(838957),
   T = n(276321),
-  N = n(537443).f,
-  A = n(12367),
+  A = n(537443).f,
+  N = n(12367),
   C = n(335225).forEach,
   R = n(930990),
   P = n(4340),
@@ -112,9 +112,9 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
     };
   H ? s && (E = t(function(e, t, n, r) {
     return u(e, b), x(function() {
-      return y(t) ? ee(t) ? void 0 !== r ? new _(t, m(n, a), r) : void 0 !== n ? new _(t, m(n, a)) : new _(t) : q(t) ? J(E, t) : o(A, E, t) : new _(h(t))
+      return y(t) ? ee(t) ? void 0 !== r ? new _(t, m(n, a), r) : void 0 !== n ? new _(t, m(n, a)) : new _(t) : q(t) ? J(E, t) : o(N, E, t) : new _(h(t))
     }(), e, E)
-  }), T && T(E, Y), C(N(_), function(e) {
+  }), T && T(E, Y), C(A(_), function(e) {
     e in E || f(E, e, _[e])
   }), E.prototype = b) : (E = t(function(e, t, n, r) {
     u(e, b);
@@ -129,7 +129,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
         } else if ((s = p(r) * a) + d > f) throw B(X);
         l = s / a
       } else if (q(t)) return J(E, t);
-      else return o(A, E, t)
+      else return o(N, E, t)
     } else i = new F(s = (l = h(t)) * a);
     for (k(e, {
         buffer: i,

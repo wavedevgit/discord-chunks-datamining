@@ -51,7 +51,7 @@ var s = function(e, t) {
     }
     null != m && m === document.body && o(m) && !o(document.documentElement) || null != m && o(m, u) && h.push(m)
   }
-  for (var g = n.visualViewport ? n.visualViewport.width : innerWidth, E = n.visualViewport ? n.visualViewport.height : innerHeight, b = window.scrollX || pageXOffset, v = window.scrollY || pageYOffset, y = e.getBoundingClientRect(), O = y.height, I = y.width, S = y.top, T = y.right, N = y.bottom, A = y.left, C = "start" === s || "nearest" === s ? S : "end" === s ? N : S + O / 2, R = "center" === l ? A + I / 2 : "end" === l ? T : A, P = [], w = 0; w < h.length; w++) {
+  for (var g = n.visualViewport ? n.visualViewport.width : innerWidth, E = n.visualViewport ? n.visualViewport.height : innerHeight, b = window.scrollX || pageXOffset, v = window.scrollY || pageYOffset, y = e.getBoundingClientRect(), O = y.height, I = y.width, S = y.top, T = y.right, A = y.bottom, N = y.left, C = "start" === s || "nearest" === s ? S : "end" === s ? A : S + O / 2, R = "center" === l ? N + I / 2 : "end" === l ? T : N, P = [], w = 0; w < h.length; w++) {
     var D = h[w],
       L = D.getBoundingClientRect(),
       x = L.height,
@@ -60,7 +60,7 @@ var s = function(e, t) {
       j = L.right,
       U = L.bottom,
       G = L.left;
-    if ("if-needed" === i && S >= 0 && A >= 0 && N <= E && T <= g && S >= k && N <= U && A >= G && T <= j) break;
+    if ("if-needed" === i && S >= 0 && N >= 0 && A <= E && T <= g && S >= k && A <= U && N >= G && T <= j) break;
     var B = getComputedStyle(D),
       F = parseInt(B.borderLeftWidth, 10),
       V = parseInt(B.borderTopWidth, 10),

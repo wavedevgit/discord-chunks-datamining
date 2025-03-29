@@ -18,8 +18,8 @@ var r = n(200651),
   v = n(306381),
   b = n(610394),
   g = n(561064),
-  y = n(501787),
-  E = n(898104);
+  E = n(501787),
+  y = n(898104);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,7 +44,7 @@ let x = i.createContext(new class {
     var t;
     if (null == this.resizeObserver && (this.resizeObserver = new this.window.ResizeObserver(this.handleResize)), null == this.mutationObserver) {
       this.mutationObserver = new MutationObserver(this.handleMutations);
-      let e = m.Z.getWindow(y.$J);
+      let e = m.Z.getWindow(E.$J);
       null != e && this.mutationObserver.observe(null == e ? void 0 : e.document.body, {
         subtree: !0,
         attributes: !0
@@ -64,7 +64,7 @@ let x = i.createContext(new class {
   }
   updateZones() {
     if (!h.isPlatformEmbedded) return;
-    let e = m.Z.getWindow(y.$J);
+    let e = m.Z.getWindow(E.$J);
     null != e && f.Z.setClickZones(Array.from(this.zones.values()).map(t => {
       let {
         zone: n
@@ -130,7 +130,7 @@ function j(e) {
   }, [t, m, d]), (0, r.jsx)("div", {
     ref: f,
     style: l,
-    className: o()(n, E.clickable, c && E.debugMode),
+    className: o()(n, y.clickable, c && y.debugMode),
     "data-click-zone": !0,
     children: a
   })

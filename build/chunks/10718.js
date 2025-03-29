@@ -4,7 +4,7 @@ n.d(t, {
   Hf: () => O,
   JT: () => S,
   Nk: () => v,
-  Qm: () => N,
+  Qm: () => A,
   VB: () => y,
   Xq: () => E,
   YZ: () => T,
@@ -229,7 +229,7 @@ function T(e, t) {
   }, [i.result, n.result, t])
 }
 
-function N(e, t, n) {
+function A(e, t, n) {
   let i = (0, l.PL)(!0, !0),
     o = (0, l.em)(e, !0, !0);
   return r.useMemo(() => {
@@ -246,7 +246,7 @@ function N(e, t, n) {
     }
   }, [null == i ? void 0 : i.result, null == o ? void 0 : o.result, t, n])
 }
-let A = {
+let N = {
   id: "placeholder-section",
   type: u.Qi.APPLICATION,
   name: ""
@@ -268,6 +268,6 @@ function R(e, t) {
     untranslatedDescription: "",
     displayDescription: "",
     applicationId: "",
-    section: A
+    section: N
   }
 }

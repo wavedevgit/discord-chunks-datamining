@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(581364),
   S = n(56801),
   T = n(342687),
-  N = n(826298),
-  A = n(689079),
+  A = n(826298),
+  N = n(689079),
   C = n(981631),
   R = n(388032),
   P = n(535712),
@@ -72,7 +72,7 @@ let D = 512,
       },
       options: {
         placeholderCount: L,
-        limit: A.tn,
+        limit: N.tn,
         includeFrecency: !0
       },
       allowFetch: !0
@@ -109,7 +109,7 @@ let D = 512,
       }
     }, [J, $]);
     let es = i.useCallback(e => {
-        if (e.id === $ || e.id === A.bi.FRECENCY) {
+        if (e.id === $ || e.id === N.bi.FRECENCY) {
           var t;
           et(null), null === (t = H.current) || void 0 === t || t.scrollToSectionTop(0)
         } else et(e.id)
@@ -148,7 +148,7 @@ let D = 512,
     let ec = i.useCallback(e => {
         let t = q[e];
         if (null == t) return null;
-        let i = (0, N.ky)(t),
+        let i = (0, A.ky)(t),
           o = (0, r.jsx)(i, {
             channel: n,
             section: t,
@@ -188,7 +188,7 @@ let D = 512,
         let o = Q[t.sectionIndex],
           a = o.data[t.sectionRowIndex],
           s = "".concat(o.section.id, ":").concat(null !== (i = null == a ? void 0 : a.id) && void 0 !== i ? i : e);
-        if (null == a || o.section.id !== a.applicationId && o.section.id !== A.bi.FRECENCY || a.inputType === O.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
+        if (null == a || o.section.id !== a.applicationId && o.section.id !== N.bi.FRECENCY || a.inputType === O.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
         let l = z.find(e => e.id === a.applicationId);
         return (0, r.jsx)(f.ZP.NewCommand, {
           index: e,

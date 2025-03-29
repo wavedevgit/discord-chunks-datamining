@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dk: () => N,
+  Dk: () => A,
   QF: () => I,
   Sk: () => d.Skl,
   W5: () => P,
@@ -125,7 +125,7 @@ function T(e, t, n) {
   return "".concat(.5625 * e + n, "px ").concat(.75 * e + t, "px")
 }
 
-function N(e) {
+function A(e) {
   let {
     size: t,
     status: n,
@@ -195,7 +195,7 @@ function N(e) {
   }
 }
 
-function A(e) {
+function N(e) {
   return "-".concat(.216506 * e, ",-").concat(.25 * e, " ").concat(.216506 * e, ",0 -").concat(.216506 * e, ",").concat(.25 * e)
 }
 
@@ -236,7 +236,7 @@ function C(e, t, n) {
       ry: p,
       fill: "black"
     }), (0, r.jsx)(a.animated.polygon, {
-      points: A(t),
+      points: N(t),
       fill: "black",
       transform: h,
       style: {

@@ -18,8 +18,8 @@ var r = n(200651),
   v = n(484459),
   b = n(594174),
   g = n(626135),
-  y = n(74538),
-  E = n(557457),
+  E = n(74538),
+  y = n(557457),
   O = n(475674),
   S = n(981631),
   x = n(474936),
@@ -95,18 +95,18 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: I,
         premiumIndicator: _
       } = e,
-      R = (0, E.Wc)(a),
+      R = (0, y.Wc)(a),
       {
         analyticsLocations: T
       } = (0, p.ZP)(),
       A = null != (0, O.Z)(a);
     try {
-      t = (0, E.nG)(R)
+      t = (0, y.nG)(R)
     } catch (e) {
       t = !1
     }
     try {
-      l = (0, E.tR)(R)
+      l = (0, y.tR)(R)
     } catch (e) {
       l = !1
     }
@@ -115,7 +115,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         location: k
       } = (0, m.O)(),
       M = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
-      L = s && !y.ZP.isPremium(M, x.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
+      L = s && !E.ZP.isPremium(M, x.p9.TIER_1) && !E.ZP.canStreamQuality(E.ZP.StreamQuality.MID, M),
       W = i.useCallback(() => {
         L && D && (0, f.ZDy)(async () => {
           let {
@@ -149,9 +149,9 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           className: w.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: w.qualityResolution,
-          children: (0, E.ml)(R.maxResolution)
+          children: (0, y.ml)(R.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, E.bp)(R.maxFrameRate)
+          children: (0, y.bp)(R.maxFrameRate)
         })]
       }))
     });
@@ -172,7 +172,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: s,
       className: c,
       premiumIndicator: u
-    } = e, [d, m] = i.useState(!1), p = (0, E.Wc)(t), {
+    } = e, [d, m] = i.useState(!1), p = (0, y.Wc)(t), {
       reducedMotion: b
     } = i.useContext(f.Sfi), g = n && null != p;
     i.useEffect(() => {
@@ -180,7 +180,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         dispatchWait: !0
       })
     }, [t]);
-    let y = (0, f.Yzy)(g, {
+    let E = (0, f.Yzy)(g, {
         enter: {
           from: b.enabled ? _ : N,
           to: b.enabled ? R : I
@@ -200,7 +200,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       return (0, r.jsxs)("div", C(Z({
         className: o()(w.streamQualityIndicator, n)
       }, i), {
-        children: [y((e, n) => n ? (0, r.jsx)(a.animated.div, {
+        children: [E((e, n) => n ? (0, r.jsx)(a.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
             className: w.liveQualityIndicator,

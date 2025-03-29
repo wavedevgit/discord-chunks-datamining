@@ -58,18 +58,18 @@ function S(e) {
       relevance: 0
     },
     T = u.filter(e => "string" == typeof e).concat(["_|0"]),
-    N = {
+    A = {
       variants: [{
         className: "keyword",
         match: o(...u.filter(e => "string" != typeof e).concat(c).map(a), ...l)
       }]
     },
-    A = {
+    N = {
       $pattern: o(/\b\w+/, /#\w+/),
       keyword: T.concat(_),
       literal: d
     },
-    C = [E, S, N],
+    C = [E, S, A],
     R = [{
       match: r(/\./, o(...p)),
       relevance: 0
@@ -217,7 +217,7 @@ function S(e) {
     q = {
       begin: /</,
       end: />/,
-      keywords: A,
+      keywords: N,
       contains: [...h, ...C, ...K, P, z]
     };
   z.contains.push(q);
@@ -225,7 +225,7 @@ function S(e) {
       begin: /\(/,
       end: /\)/,
       relevance: 0,
-      keywords: A,
+      keywords: N,
       contains: ["self", {
         match: r(v, /\s*:/),
         keywords: "_|0",
@@ -241,7 +241,7 @@ function S(e) {
     J = {
       begin: /\(/,
       end: /\)/,
-      keywords: A,
+      keywords: N,
       contains: [{
         begin: o(n(r(v, /\s*:/)), n(r(v, /\s+/, v, /\s*:/))),
         end: /:/,
@@ -312,11 +312,11 @@ function S(e) {
         1: "keyword",
         3: "title.class"
       },
-      keywords: A,
+      keywords: N,
       contains: [X, ...C, {
         begin: /:/,
         end: /\{/,
-        keywords: A,
+        keywords: N,
         contains: [{
           scope: "title.class.inherited",
           match: y
@@ -326,7 +326,7 @@ function S(e) {
     };
   for (let e of B.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
-    t.keywords = A;
+    t.keywords = N;
     let n = [...C, ...R, ...w, x, B, ...Y];
     t.contains = [...n, {
       begin: /\(/,
@@ -336,7 +336,7 @@ function S(e) {
   }
   return {
     name: "Swift",
-    keywords: A,
+    keywords: N,
     contains: [...h, $, ee, er, ei, eo, et, en, {
       beginKeywords: "import",
       end: /$/,

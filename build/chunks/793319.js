@@ -1,7 +1,7 @@
 /** Chunk was on 54589 **/
 n.d(t, {
   NZ: () => eZ,
-  ZP: () => ek,
+  ZP: () => eM,
   r: () => eS
 }), n(47120);
 var r = n(200651),
@@ -36,8 +36,8 @@ var r = n(200651),
   A = n(258609),
   w = n(446226),
   R = n(569545),
-  k = n(74299),
-  M = n(803647),
+  M = n(74299),
+  k = n(803647),
   L = n(554747),
   D = n(95764),
   W = n(459502),
@@ -161,7 +161,7 @@ function eZ(e) {
       }(0, eC.Z)()
     },
     Z = () => {
-      (0, P.v)(c, P.d.STREAM, !1), (0, M.Z)(g)
+      (0, P.v)(c, P.d.STREAM, !1), (0, k.Z)(g)
     },
     A = (e, t) => {
       let n = null != e ? e : {
@@ -452,7 +452,7 @@ function eR(e) {
     entrypoint: ej.A5.CARET
   })
 }
-let ek = function(e) {
+let eM = function(e) {
   var t, n;
   let {
     channel: l,
@@ -477,14 +477,14 @@ let ek = function(e) {
   }), {
     cameraUnavailable: T,
     enabled: R
-  } = (0, es.Z)(), M = (0, ep.Z)(l), {
+  } = (0, es.Z)(), k = (0, ep.Z)(l), {
     suppress: L,
     selfMute: D,
     mute: U
   } = (0, eh.Z)(l), {
     canGoLive: B
   } = (0, u.cj)([er.Z], () => ({
-    canGoLive: (0, k.Z)(er.Z)
+    canGoLive: (0, M.Z)(er.Z)
   })), F = (0, w.Z)(), G = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), z = null != F, Y = (0, u.e7)([ei.Z], () => {
     var e;
     return (null !== (e = null == F ? void 0 : F.channelId) && void 0 !== e ? e : ei.Z.getVoiceChannelId()) === l.id
@@ -502,7 +502,7 @@ let ek = function(e) {
     children: (0, r.jsx)(ew, {
       channel: l,
       cameraUnavailable: T,
-      hasCameraPermission: M,
+      hasCameraPermission: k,
       currentUser: S
     })
   });
@@ -607,7 +607,7 @@ let ek = function(e) {
               } = t;
               return (0, r.jsx)(J.C, {
                 centerButton: !0,
-                hasPermission: M,
+                hasPermission: k,
                 enabled: R,
                 cameraUnavailable: T,
                 onChange: eS,
@@ -628,7 +628,7 @@ let ek = function(e) {
             currentUser: S,
             exitFullScreen: d,
             canGoLive: B,
-            hasPermission: M
+            hasPermission: k
           }), !z && (0, r.jsx)(eT, {
             channel: l,
             idle: null === (t = null == h ? void 0 : h.idle) || void 0 === t || t,
@@ -733,7 +733,7 @@ let ek = function(e) {
             } = t;
             return (0, r.jsx)(J.C, {
               centerButton: !0,
-              hasPermission: M,
+              hasPermission: k,
               className: eE.controlButton,
               enabled: R,
               cameraUnavailable: T,
@@ -753,7 +753,7 @@ let ek = function(e) {
           currentUser: S,
           exitFullScreen: d,
           canGoLive: B,
-          hasPermission: M
+          hasPermission: k
         }), m === eo.BK.MicPushToEnable ? (0, r.jsx)(p.yRy, {
           renderPopout: e => {
             let {

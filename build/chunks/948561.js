@@ -27,8 +27,8 @@ var r = n(952639),
   I = n(735020),
   S = n(774863),
   T = n(590773),
-  N = n(799525),
-  A = n(981631),
+  A = n(799525),
+  N = n(981631),
   C = n(526761);
 
 function R(e, t, n) {
@@ -210,7 +210,7 @@ function V(e) {
   }
   let n = e.filter(e => (0, v.OR)(e) && (0, O.HH)(e)),
     r = e.map(e => {
-      if (A.OBS.has(e.type) && null != e.messageReference) {
+      if (N.OBS.has(e.type) && null != e.messageReference) {
         let t = f.Z.getMessageByReference(e.messageReference);
         if (t.state === f.Y.LOADED && null != t.message && (0, v.OR)(t.message) && (0, O.HH)(t.message)) return t.message
       }
@@ -365,7 +365,7 @@ function Q(e) {
 }
 
 function X(e) {
-  (0, N.U)();
+  (0, A.U)();
   let {
     channelId: t
   } = e;

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ox: () => A,
+  Ox: () => N,
   QP: () => I,
   ob: () => R,
   q4: () => C
@@ -102,7 +102,7 @@ let T = {
     exitActive: g.exitActive,
     exitDone: g.exitDone
   },
-  N = {
+  A = {
     enter: g.enterReducedMotion,
     enterActive: g.enterActiveReducedMotion,
     enterDone: g.enterDoneReducedMotion,
@@ -111,10 +111,10 @@ let T = {
     exitDone: g.exitDoneReducedMotion
   };
 
-function A() {
+function N() {
   let {
     reducedMotion: e
-  } = i.useContext(f.Sfi), t = e.enabled ? N : T, n = I(e => e.fullScreenLayers);
+  } = i.useContext(f.Sfi), t = e.enabled ? A : T, n = I(e => e.fullScreenLayers);
   return (0, r.jsx)(s.Z, {
     children: n.map(e => (0, r.jsx)(l.Z, {
       classNames: t,
