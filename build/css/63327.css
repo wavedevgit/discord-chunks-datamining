@@ -1,6 +1,6 @@
 /**
   Module ID: 63327
-  Original File Name: 6786807f6654edf9
+  Original File Name: 855a588806794bf8
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -14254,7 +14254,11 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     border: 1px solid var(--border-subtle)
 }
 
-.tagInputWrapper__69ef9:focus-within,.tagInputWrapper__69ef9:hover {
+.tagInputWrapper__69ef9:hover {
+    border-color: var(--border-strong)
+}
+
+.tagInputWrapper__69ef9:focus-within {
     border-color: var(--brand-400)
 }
 
@@ -14264,6 +14268,10 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     padding: 0;
     font-size: 24px;
     width: 6ch
+}
+
+.tagInput__69ef9,.tagInput__69ef9:focus,.tagInput__69ef9:hover {
+    border: none
 }
 
 .tagChangeInfoBox__69ef9 {
@@ -14404,4 +14412,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=6786807f6654edf9.css.map*/
+/*# sourceMappingURL=855a588806794bf8.css.map*/

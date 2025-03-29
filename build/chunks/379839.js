@@ -31,37 +31,39 @@ function h(e) {
 
 function m(e, t, n, s, l) {
   let c = (0, i.ZP)(),
-    [u, d] = (0, r.useState)({}),
-    f = (0, o.Q3)("useNameplateStyle"),
-    _ = (0, a.C7)("useNameplateStyle");
-  return (0, r.useEffect)(() => {
-    if (null == e) return;
-    let r = g({
-      palette: e.palette,
+    u = (0, o.Q3)("useNameplateStyle"),
+    d = (0, a.C7)("useNameplateStyle"),
+    f = (0, r.useMemo)(() => null == t ? null : g({
+      palette: t.palette,
       theme: c,
-      hover: t,
-      selected: n,
+      hover: n,
+      selected: s,
       placement: l,
-      isVisualRefreshEnabled: f,
-      defaultPaletteOpacity: _
-    });
-    if (null == s) {
-      d({
-        background: r
+      isVisualRefreshEnabled: u,
+      defaultPaletteOpacity: d
+    }), [t, n, s, c, l, u, d]),
+    [_, p] = (0, r.useState)(null != f ? {
+      background: f
+    } : {});
+  return (0, r.useEffect)(() => {
+    if (null == f) return;
+    if (null == e || null == e.current) {
+      p({
+        background: f
       });
       return
     }
-    let i = new ResizeObserver(e => {
+    let t = new ResizeObserver(e => {
       let t = e[0].contentRect.width,
         n = .8 * t,
-        i = 1.1 * t;
-      d({
-        background: r,
-        maskImage: "linear-gradient(to right, rgba(0, 0, 0, .2) ".concat(n, "px, rgba(0, 0, 0, 1) ").concat(i, "px)")
+        r = 1.1 * t;
+      p({
+        background: f,
+        maskImage: "linear-gradient(to right, rgba(0, 0, 0, .2) ".concat(n, "px, rgba(0, 0, 0, 1) ").concat(r, "px)")
       })
     });
-    return i.observe(s), () => i.disconnect()
-  }, [e, t, n, c, s, l, f, _]), u
+    return t.observe(e.current), () => t.disconnect()
+  }, [e, f]), _
 }
 
 function g(e) {

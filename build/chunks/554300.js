@@ -107,7 +107,7 @@ let E = i.forwardRef(function(e, t) {
         nameplate: p,
         hovered: y,
         selected: O,
-        content: D.current,
+        content: D,
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
         ref: D,

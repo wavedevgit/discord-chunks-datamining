@@ -396,7 +396,7 @@ function es(e) {
             nameplate: H,
             selected: d,
             hovered: K,
-            content: ew.current,
+            content: ew,
             placement: x.i.CHANNEL
           }), (0, l.jsx)(c.rU, $(J({
             innerRef: ea,
