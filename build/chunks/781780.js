@@ -1,33 +1,33 @@
 /** Chunk was on 27278 **/
-t.d(n, {
+n.d(t, {
   Z: () => c
 });
-var o = t(200651),
-  r = t(963614),
-  a = t(208156),
-  i = t(701488),
-  l = t(859118);
+var r = n(200651),
+  o = n(963614),
+  i = n(208156),
+  l = n(701488),
+  a = n(859118);
 
 function c(e) {
-  var n, t, c;
+  var t, n, c;
   let {
-    channelId: _,
+    channelId: u,
     guildId: s,
-    embeddedActivity: u,
-    application: d
-  } = e, p = {
-    instance_id: null !== (c = null !== (t = u.compositeInstanceId) && void 0 !== t ? t : u.launchId) && void 0 !== c ? c : "",
-    location_id: null === (n = u.location) || void 0 === n ? void 0 : n.id,
-    launch_id: u.launchId,
-    referrer_id: u.referrerId,
-    custom_id: u.customId
+    embeddedActivity: d,
+    application: p
+  } = e, f = {
+    instance_id: null !== (c = null !== (n = d.compositeInstanceId) && void 0 !== n ? n : d.launchId) && void 0 !== c ? c : "",
+    location_id: null === (t = d.location) || void 0 === t ? void 0 : t.id,
+    launch_id: d.launchId,
+    referrer_id: d.referrerId,
+    custom_id: d.customId
   };
-  return null != s && "" !== s && (p.guild_id = s), null != _ && "" !== _ && (p.channel_id = _), (0, o.jsx)(a.J, {
-    allowPopups: (0, r.h)(d),
-    referrerPolicy: i.um.has(u.applicationId) ? "no-referrer" : "origin",
-    url: u.url,
-    queryParams: p,
-    className: l.iframe,
+  return null != s && "" !== s && (f.guild_id = s), null != u && "" !== u && (f.channel_id = u), (0, r.jsx)(i.J, {
+    allowPopups: (0, o.h)(p),
+    referrerPolicy: l.um.has(d.applicationId) ? "no-referrer" : "origin",
+    url: d.url,
+    queryParams: f,
+    className: a.iframe,
     shouldRefocus: !1
   })
 }

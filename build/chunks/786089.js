@@ -30,7 +30,7 @@ let T = (0, i.memo)(function(e) {
   var t, n, l, T, P, j;
   let {
     quest: A
-  } = e, [Z, x] = (0, i.useState)(!1), [w, L] = (0, i.useState)(24), [R, D] = (0, i.useState)(!1), k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+  } = e, [Z, x] = (0, i.useState)(!1), [L, w] = (0, i.useState)(24), [R, D] = (0, i.useState)(!1), k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: W,
     height: V = 0
   } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null === (t = A.userStatus) || void 0 === t ? void 0 : t.claimedAt, {
@@ -45,7 +45,7 @@ let T = (0, i.memo)(function(e) {
     let n = k.current.getBoundingClientRect(),
       r = M.current.getBoundingClientRect(),
       i = U.current.getBoundingClientRect();
-    L((r.top - n.top - i.height) / 2)
+    w((r.top - n.top - i.height) / 2)
   });
   let X = (0, u.wj)(B),
     J = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
@@ -96,7 +96,7 @@ let T = (0, i.memo)(function(e) {
         ref: U,
         className: S.decoWrapper,
         style: {
-          top: w
+          top: L
         },
         children: (0, r.jsx)(f.Z, {
           avatarDecorationOverride: Q,

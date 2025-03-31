@@ -1,4 +1,4 @@
-/** Chunk was on 2171 **/
+/** Chunk was on 12321 **/
 n.d(t, {
   Z: () => C
 });
@@ -23,8 +23,8 @@ var l = n(120356),
   h = n(606925),
   j = n(719216),
   S = n(429589),
-  P = n(636245),
-  N = n(697761),
+  N = n(636245),
+  P = n(697761),
   x = n(611459),
   I = n(544671),
   Z = n(757182),
@@ -95,7 +95,7 @@ let C = (0, u.Z)(e => {
       }
       if ((0, f.dS)(t)) {
         let e = (0, f.rq)(t);
-        return null == e ? null : (0, r.jsx)(P.Z, {
+        return null == e ? null : (0, r.jsx)(N.Z, {
           guildId: e.guildId,
           channelId: e.channelId,
           color: _,
@@ -122,7 +122,7 @@ let C = (0, u.Z)(e => {
           color: _,
           look: W,
           onAction: M
-        }, "join-activity-button"), (0, r.jsx)(N.Z, {
+        }, "join-activity-button"), (0, r.jsx)(P.Z, {
           activity: t,
           user: l,
           color: _,

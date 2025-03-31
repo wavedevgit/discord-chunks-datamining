@@ -1,41 +1,41 @@
-/** Chunk was on 76977 **/
+/** Chunk was on 45585 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var i = n(200651);
 n(192379);
 var r = n(120356),
   s = n.n(r),
   o = n(481060),
-  a = n(518084),
-  l = n(981631),
+  l = n(518084),
+  a = n(981631),
   c = n(388032),
-  d = n(331432);
-let u = function(e) {
+  u = n(331432);
+let d = function(e) {
   let t;
   let {
     title: n,
     header: r,
-    children: u,
+    children: d,
     renderSettings: h,
     onDragStart: p
   } = e;
-  return t = null != n ? (0, i.jsxs)(a.ZP.Bar, {
-    className: s()(d.header, d.draggableStartArea),
+  return t = null != n ? (0, i.jsxs)(l.ZP.Bar, {
+    className: s()(u.header, u.draggableStartArea),
     onMouseDown: p,
-    children: [(0, i.jsx)(a.ZP.Content, {
-      className: s()(d.headerTitle, d.draggableStartArea),
+    children: [(0, i.jsx)(l.ZP.Content, {
+      className: s()(u.headerTitle, u.draggableStartArea),
       dynamicSize: !0,
       children: n
-    }), (0, i.jsx)(a.ZP.Content, {
+    }), (0, i.jsx)(l.ZP.Content, {
       children: (0, i.jsx)(o.yRy, {
         position: "right",
-        renderPopout: null != h ? h : l.dG4,
+        renderPopout: null != h ? h : a.dG4,
         autoInvert: !1,
         children: e => {
           var t, n;
-          return (0, i.jsx)(a.ZP.Icon, (t = function(e) {
+          return (0, i.jsx)(l.ZP.Icon, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -69,10 +69,10 @@ let u = function(e) {
       })
     })]
   }) : r, (0, i.jsxs)("div", {
-    className: d.sidebar,
+    className: u.sidebar,
     children: [t, (0, i.jsx)("div", {
-      className: d.children,
-      children: u
+      className: u.children,
+      children: d
     })]
   })
 }

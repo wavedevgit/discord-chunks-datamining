@@ -1,11 +1,11 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
   Z: () => x
 }), n(653041), n(47120);
 var i = n(200651),
   r = n(192379),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   a = n(486016),
   s = n(804570),
   c = n(624864),
@@ -16,41 +16,41 @@ var i = n(200651),
   f = n(371467),
   m = n(981631),
   g = n(388032),
-  O = n(173293);
-let v = [];
+  v = n(173293);
+let y = [];
 
-function y(e) {
+function O(e) {
   return e.notification.id
 }
 
-function E(e, t, n, r) {
+function b(e, t, n, r) {
   let {
-    index: l,
-    notification: o,
+    index: o,
+    notification: l,
     locked: a
   } = t;
   return (0, i.jsx)(p.Z, {
-    index: l,
-    notification: o,
+    index: o,
+    notification: l,
     locked: a,
     transitionState: n,
     cleanUp: r
   }, e)
 }
 
-function b(e) {
+function _(e) {
   return (0, i.jsx)("div", {
-    className: O.container,
+    className: v.container,
     children: e
   })
 }
-let j = e => r.useState(() => new h.AS(e))[0],
+let E = e => r.useState(() => new h.AS(e))[0],
   x = r.memo(function(e) {
     let {
       locked: t,
       showEmpty: n = !0
-    } = e, p = (0, l.e7)([f.Z, c.Z], () => {
-      if (c.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return v;
+    } = e, p = (0, o.e7)([f.Z, c.Z], () => {
+      if (c.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return y;
       let e = [],
         n = 0;
       for (let i of f.Z.getNotifications()) {
@@ -62,18 +62,18 @@ let j = e => r.useState(() => new h.AS(e))[0],
         }), n++)
       }
       return e
-    }, [t], u.E6), O = j(t);
-    return (r.useLayoutEffect(() => O.updateState(p, t)), r.useLayoutEffect(() => (O.initialize((0, d.i)()), () => O.cleanUp()), [O]), 0 !== p.length || t) ? (0, i.jsx)(h.S4.Provider, {
-      value: O,
-      children: (0, i.jsx)(o.W3x, {
+    }, [t], u.E6), v = E(t);
+    return (r.useLayoutEffect(() => v.updateState(p, t)), r.useLayoutEffect(() => (v.initialize((0, d.i)()), () => v.cleanUp()), [v]), 0 !== p.length || t) ? (0, i.jsx)(h.S4.Provider, {
+      value: v,
+      children: (0, i.jsx)(l.W3x, {
         items: p,
-        renderItem: E,
-        getItemKey: y,
-        wrapChildren: b
+        renderItem: b,
+        getItemKey: O,
+        wrapChildren: _
       })
     }) : n ? t ? null : (0, i.jsx)(s.E, {
       emptyText: g.NW.string(g.t.O1Nbjo),
-      icon: o.Dkj,
+      icon: l.Dkj,
       absolute: !0
     }) : null
   })

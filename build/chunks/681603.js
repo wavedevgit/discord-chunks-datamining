@@ -1,6 +1,6 @@
-/** Chunk was on 63141 **/
+/** Chunk was on 86507 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var i = n(192379),
   r = n(149765),
@@ -9,17 +9,17 @@ var i = n(192379),
   a = n(731429),
   s = n(188471),
   c = n(318885),
-  d = n(592125),
-  u = n(984933),
-  h = n(271383),
-  p = n(430824),
+  u = n(592125),
+  d = n(984933),
+  p = n(271383),
+  h = n(430824),
   f = n(496675),
-  v = n(944486),
-  m = n(914010),
-  y = n(594174),
-  O = n(237997),
-  E = n(145597),
-  g = n(981631);
+  m = n(944486),
+  g = n(914010),
+  v = n(594174),
+  y = n(237997),
+  O = n(145597),
+  b = n(981631);
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +39,7 @@ function _(e) {
   }
   return e
 }
-class Z extends i.Component {
+class E extends i.Component {
   componentDidUpdate(e) {
     if (this.props.locked) return null;
     let {
@@ -50,28 +50,28 @@ class Z extends i.Component {
       postableChannelCount: o
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
-      var u, h;
-      (0, c.Q)(g.rMx.GUILD_VIEWED, (u = _({}, i ? {
+      var d, p;
+      (0, c.Q)(b.rMx.GUILD_VIEWED, (d = _({}, i ? {
         is_pending: i,
         preview_enabled: r
-      } : {}), h = h = {
+      } : {}), p = p = {
         postable_channels: o
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(h)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
-      }), u)), (0, s.a)(g.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      })(Object(p)).forEach(function(e) {
+        Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(p, e))
+      }), d)), (0, s.a)(b.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
-      let e = (0, a.K)(d.Z.getChannel(n), !0);
-      (0, c.Q)(g.rMx.CHANNEL_OPENED, _({}, e, (0, l.$H)(n))), (0, s.a)(g.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      let e = (0, a.K)(u.Z.getChannel(n), !0);
+      (0, c.Q)(b.rMx.CHANNEL_OPENED, _({}, e, (0, l.$H)(n))), (0, s.a)(b.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -80,26 +80,26 @@ class Z extends i.Component {
     return null
   }
 }
-let b = o.ZP.connectStores([m.Z, v.Z, p.Z, y.default, O.default, u.ZP, f.Z, h.ZP], () => {
+let x = o.ZP.connectStores([g.Z, m.Z, h.Z, v.default, y.default, d.ZP, f.Z, p.ZP], () => {
   var e, t, n;
-  let i = m.Z.getGuildId(),
-    o = v.Z.getChannelId(i),
-    l = p.Z.getGuild(i),
-    a = y.default.getCurrentUser(),
-    s = null !== (t = u.ZP.getChannels(null == l ? void 0 : l.id)[u.sH]) && void 0 !== t ? t : [],
+  let i = g.Z.getGuildId(),
+    o = m.Z.getChannelId(i),
+    l = h.Z.getGuild(i),
+    a = v.default.getCurrentUser(),
+    s = null !== (t = d.ZP.getChannels(null == l ? void 0 : l.id)[d.sH]) && void 0 !== t ? t : [],
     c = s.length > 0 ? s.filter(e => {
       let {
         channel: t
       } = e;
-      return f.Z.can(r.$e(g.Plq.SEND_MESSAGES, g.Plq.VIEW_CHANNEL), t)
+      return f.Z.can(r.$e(b.Plq.SEND_MESSAGES, b.Plq.VIEW_CHANNEL), t)
     }).length : 0,
-    d = null != a && null != i && null !== (n = null === (e = h.ZP.getMember(i, a.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== n && n;
+    u = null != a && null != i && null !== (n = null === (e = p.ZP.getMember(i, a.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== n && n;
   return {
     selectedGuild: i,
     selectedChannel: o,
-    locked: O.default.isLocked((0, E.getPID)()),
-    hasPreviewEnabled: null == l ? void 0 : l.features.has(g.oNc.PREVIEW_ENABLED),
-    isMemberPending: d,
+    locked: y.default.isLocked((0, O.getPID)()),
+    hasPreviewEnabled: null == l ? void 0 : l.features.has(b.oNc.PREVIEW_ENABLED),
+    isMemberPending: u,
     postableChannelCount: c
   }
-})(Z)
+})(E)

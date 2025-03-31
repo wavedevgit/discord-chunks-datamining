@@ -1,11 +1,11 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  l = n(904245),
-  o = n(13245),
+  o = n(904245),
+  l = n(13245),
   a = n(45114),
   s = n(493773),
   c = n(655687),
@@ -16,57 +16,57 @@ var i = n(200651),
   f = n(849522),
   m = n(145597),
   g = n(981631),
-  O = n(880679);
+  v = n(880679);
 
-function v(e) {
+function y(e) {
   let {
     id: t,
     replyToMessageId: n,
-    channel: v,
-    onSend: y
-  } = e, E = (0, f.Z)(), {
-    placeholder: b,
-    accessibilityLabel: j
+    channel: y,
+    onSend: O
+  } = e, b = (0, f.Z)(), {
+    placeholder: _,
+    accessibilityLabel: E
   } = (0, c.Z)({
-    channel: v
+    channel: y
   }), [x, I] = r.useState(() => (0, d.H2)()), {
-    textValue: S,
-    richValue: N
-  } = x, [C, Z] = r.useState(!1), w = r.useCallback(() => Z(!0), []), P = r.useCallback(() => Z(!1), []);
+    textValue: j,
+    richValue: C
+  } = x, [S, N] = r.useState(!1), Z = r.useCallback(() => N(!0), []), w = r.useCallback(() => N(!1), []);
   (0, s.ZP)(() => {
-    (0, a.In)(v.id, !0, !0, n, {
+    (0, a.In)(y.id, !0, !0, n, {
       section: g.jXE.OVERLAY
     })
   });
-  let _ = r.useCallback((e, t, n) => {
+  let P = r.useCallback((e, t, n) => {
       I({
         textValue: t,
         richValue: n
       })
     }, []),
     T = r.useCallback(e => {
-      "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
+      "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    D = r.useCallback(() => (S.length > E || (l.Z.sendMessage(v.id, h.ZP.parse(v, S), !1), o.Z.setInputLocked(!0, (0, m.getPID)()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == y || y(S)), Promise.resolve({
+    k = r.useCallback(() => (j.length > b || (o.Z.sendMessage(y.id, h.ZP.parse(y, j), !1), l.Z.setInputLocked(!0, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == O || O(j)), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
-    })), [S, E, v, t, y]);
+    })), [j, b, y, t, O]);
   return (0, i.jsx)("div", {
-    className: O.container,
+    className: v.container,
     children: (0, i.jsx)(p.Z, {
-      innerClassName: O.textArea,
-      onChange: _,
-      placeholder: b,
-      accessibilityLabel: j,
-      channel: v,
-      textValue: S,
-      richValue: N,
+      innerClassName: v.textArea,
+      onChange: P,
+      placeholder: _,
+      accessibilityLabel: E,
+      channel: y,
+      textValue: j,
+      richValue: C,
       type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: !1,
-      onBlur: P,
-      onFocus: w,
-      focused: C,
-      onSubmit: D,
+      onBlur: w,
+      onFocus: Z,
+      focused: S,
+      onSubmit: k,
       onKeyDown: T,
       autoCompletePosition: "bottom",
       disableThemedBackground: !0

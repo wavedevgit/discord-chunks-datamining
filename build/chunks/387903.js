@@ -1,6 +1,6 @@
-/** Chunk was on 2171 **/
+/** Chunk was on 12321 **/
 n.d(t, {
-  Y: () => G,
+  Y: () => B,
   Z: () => X
 }), n(789020), n(47120);
 var r, l, i = n(200651),
@@ -21,8 +21,8 @@ var r, l, i = n(200651),
   h = n(810568),
   j = n(168524),
   S = n(565138),
-  P = n(707409),
-  N = n(424678),
+  N = n(707409),
+  P = n(424678),
   x = n(750154),
   I = n(81063),
   Z = n(768581),
@@ -61,13 +61,13 @@ function Y(e) {
   }
   return e
 }
-var G = ((l = {}).ACTIVITY_FEED = "ActivityFeed", l.STREAM_PREVIEW = "StreamPreview", l.VOICE_CHANNEL = "VoiceChannel", l);
-let B = {
+var B = ((l = {}).ACTIVITY_FEED = "ActivityFeed", l.STREAM_PREVIEW = "StreamPreview", l.VOICE_CHANNEL = "VoiceChannel", l);
+let F = {
     StreamPreview: [108, 60],
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  F = (0, f.Z)(class extends o.PureComponent {
+  G = (0, f.Z)(class extends o.PureComponent {
     render() {
       return (0, i.jsx)("div", {
         className: R.timestamp,
@@ -189,7 +189,7 @@ class J extends(r = o.PureComponent) {
       application_id: d
     } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
-    (0, W.Z)(e) && (l = B[c]);
+    (0, W.Z)(e) && (l = F[c]);
     let f = (0, D.Z)(e),
       m = null != u.large_image ? (0, i.jsx)("img", {
         alt: null !== (t = u.large_text) && void 0 !== t ? t : "",
@@ -324,7 +324,7 @@ class J extends(r = o.PureComponent) {
     else if (!(0, A.Z)(e)) {
       if (l = r, o = r, (0, D.Z)(e) && null != r) l = U.NW.format(U.t.uU9le3, {
         artists: o,
-        artistsHook: (t, n) => (0, i.jsx)(N.Z, {
+        artistsHook: (t, n) => (0, i.jsx)(P.Z, {
           artists: r,
           linkClassName: R.bodyLink,
           canOpen: null != e.sync_id,
@@ -389,11 +389,11 @@ class J extends(r = o.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, C.Z)(e) ? (0, i.jsx)(F, {
+    return null == n ? null : (0, C.Z)(e) ? (0, i.jsx)(G, {
       timestamps: n
-    }) : (0, i.jsx)(P.ZP, {
+    }) : (0, i.jsx)(N.ZP, {
       start: n.start,
-      location: P.ZP.Locations.USER_ACTIVITY,
+      location: N.ZP.Locations.USER_ACTIVITY,
       className: R.playTime,
       isApplicationStreaming: null != t
     })
@@ -520,7 +520,7 @@ class J extends(r = o.PureComponent) {
     })
   }
 }
-V(J, "Types", G);
+V(J, "Types", B);
 let H = e => {
   var t, n, r, l, o;
   let a = (0, j.Z)({
@@ -543,5 +543,5 @@ let H = e => {
     Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
   }), l))
 };
-H.Types = G;
+H.Types = B;
 let X = H

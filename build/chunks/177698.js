@@ -74,11 +74,11 @@ let _ = (0, g.Z)(e => {
       });
       return
     }
-    let w = i.z1l;
+    let L = i.z1l;
     null != Z && null != (0, o.ZP)({
       application: Z,
       channelId: y
-    }) ? w = i.u1M : x && (w = i.u1M), (0, i.h7j)(e => {
+    }) ? L = i.u1M : x && (L = i.u1M), (0, i.h7j)(e => {
       var t, i;
       return (0, r.jsx)(s.OAuth2AuthorizeModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -131,7 +131,7 @@ let _ = (0, g.Z)(e => {
           errorCode: b.lTL.OAUTH2_ERROR
         }, "User cancelled authorization"))
       }
-    }, w)
+    }, L)
   })
 }, function(e, t, n) {
   if (u.default.isReady(null != n ? n : 0) || !d.isPlatformEmbedded) return;

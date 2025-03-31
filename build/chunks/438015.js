@@ -1,15 +1,15 @@
-/** Chunk was on 76977 **/
+/** Chunk was on 45585 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(47120);
 var i = n(200651),
   r = n(192379),
   s = n(13245),
   o = n(593481),
-  a = n(981631);
+  l = n(981631);
 
-function l(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,16 +27,16 @@ class c extends r.Component {
       }
     } = this;
     switch (r) {
-      case a._vf.TOP_LEFT:
-      case a._vf.BOTTOM_LEFT:
+      case l._vf.TOP_LEFT:
+      case l._vf.BOTTOM_LEFT:
         e = 0;
         break;
       default:
         t = 0
     }
     switch (r) {
-      case a._vf.BOTTOM_LEFT:
-      case a._vf.BOTTOM_RIGHT:
+      case l._vf.BOTTOM_LEFT:
+      case l._vf.BOTTOM_RIGHT:
         n = 0;
         break;
       default:
@@ -59,10 +59,10 @@ class c extends r.Component {
           props: {
             renderFooter: r,
             onNotificationShow: s,
-            onDismissClick: a,
+            onDismissClick: l,
             onNotificationClick: c,
-            onConfirmClick: d,
-            onCancelClick: u
+            onConfirmClick: u,
+            onCancelClick: d
           }
         }
       }
@@ -88,17 +88,17 @@ class c extends r.Component {
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          l(e, t, n[t])
+          a(e, t, n[t])
         })
       }
       return e
     }({}, h), t = t = {
       locked: n,
       onNotificationShow: this.handleNotificationShow,
-      onDismissClick: null != a ? this.handleDismissClick : void 0,
+      onDismissClick: null != l ? this.handleDismissClick : void 0,
       onNotificationClick: null != c ? this.handleNotificationClick : null,
-      onConfirmClick: null != d ? this.handleConfirmClick : null,
-      onCancelClick: null != u ? this.handleCancelClick : null,
+      onConfirmClick: null != u ? this.handleConfirmClick : null,
+      onCancelClick: null != d ? this.handleCancelClick : null,
       renderFooter: this.renderFooter,
       expand: !n
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -113,7 +113,7 @@ class c extends r.Component {
     }), e))
   }
   constructor(...e) {
-    super(...e), l(this, "handleNotificationShow", () => {
+    super(...e), a(this, "handleNotificationShow", () => {
       let {
         id: e,
         props: {
@@ -121,7 +121,7 @@ class c extends r.Component {
         }
       } = this.props.notification;
       t(e)
-    }), l(this, "handleDismissClick", e => {
+    }), a(this, "handleDismissClick", e => {
       let {
         id: t,
         props: {
@@ -129,7 +129,7 @@ class c extends r.Component {
         }
       } = this.props.notification;
       s.Z.updateNotificationStatus(t), null == n || n(e, t)
-    }), l(this, "handleNotificationClick", e => {
+    }), a(this, "handleNotificationClick", e => {
       let {
         id: t,
         props: {
@@ -137,7 +137,7 @@ class c extends r.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), l(this, "handleConfirmClick", e => {
+    }), a(this, "handleConfirmClick", e => {
       let {
         id: t,
         props: {
@@ -145,7 +145,7 @@ class c extends r.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), l(this, "handleCancelClick", e => {
+    }), a(this, "handleCancelClick", e => {
       let {
         id: t,
         props: {
@@ -153,7 +153,7 @@ class c extends r.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), l(this, "renderFooter", e => {
+    }), a(this, "renderFooter", e => {
       let {
         id: t,
         props: {
@@ -164,4 +164,4 @@ class c extends r.Component {
     })
   }
 }
-let d = c
+let u = c

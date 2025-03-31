@@ -62,9 +62,9 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = [];
+let L = [];
 
-function L() {
+function w() {
   c.Z.setSection(P.pJs.ADD_FRIEND)
 }
 
@@ -81,7 +81,7 @@ function D(e) {
   let {
     section: t,
     showSpamCta: n
-  } = e, l = i.useMemo(() => n ? R : t !== P.pJs.PENDING ? L : void 0, [n, t]);
+  } = e, l = i.useMemo(() => n ? R : t !== P.pJs.PENDING ? w : void 0, [n, t]);
   return (0, r.jsx)("div", {
     className: A.emptyStateContainer,
     children: (0, r.jsx)(N.Z, {
@@ -98,7 +98,7 @@ let k = function(e) {
   } = (0, h.ZP)(p.Z.FRIENDS_LIST), {
     rows: l,
     section: c
-  } = (0, a.cj)([_.ZP], () => _.ZP.getState()), L = (0, a.e7)([E.Z], () => E.Z.isFocused()), {
+  } = (0, a.cj)([_.ZP], () => _.ZP.getState()), w = (0, a.e7)([E.Z], () => E.Z.isFocused()), {
     relationshipCount: k,
     hasBlockedOrIgnored: M
   } = (0, a.cj)([b.Z], () => ({
@@ -131,20 +131,20 @@ let k = function(e) {
     switch (c) {
       case P.pJs.PENDING:
         return (0, r.jsx)(v.Z, x(Z({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case P.pJs.SUGGESTIONS:
         return (0, r.jsx)(S.Z, x(Z({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case P.pJs.ONLINE:
       case P.pJs.ALL:
       default:
         return (0, r.jsx)(O.Z, x(Z({}, n), {
-          isFocused: L
+          isFocused: w
         }), t)
     }
-  }, [L, c]), B = i.useCallback(e => {
+  }, [w, c]), B = i.useCallback(e => {
     W(x(Z({}, G), {
       [c]: e
     }))
@@ -153,7 +153,7 @@ let k = function(e) {
       [c]: ""
     }))
   }, [G, c]), F = i.useMemo(() => c === P.pJs.PENDING && (l.filter(P.pJs.SPAM).length > 0 || l.filter(P.pJs.PENDING_IGNORED).length > 0), [l, c]), z = i.useMemo(() => l.filter(c, G[c]), [l, G, c]), Y = U && c === P.pJs.PENDING, K = i.useMemo(() => {
-    if (!Y) return w;
+    if (!Y) return L;
     let e = [];
     return z.forEach(t => {
       let {

@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(540059),
   Z = n(724383),
   x = n(135864),
-  w = n(372900),
-  L = n(63568),
+  L = n(372900),
+  w = n(63568),
   R = n(6039),
   D = n(637853),
   k = n(326145),
@@ -165,7 +165,7 @@ let ey = (0, u.Un)({
         default:
           return
       }
-    }), h = (0, P.C4)(l, "channel_renderer"), f = (0, L.jS)(l, "ChannelRenderer");
+    }), h = (0, P.C4)(l, "channel_renderer"), f = (0, w.jS)(l, "ChannelRenderer");
     if (null != l && null != o && (0, eb.AB)(o)) switch (o) {
       case eb.oC.ROLE_SUBSCRIPTIONS:
         return h ? (0, r.jsx)(eC, {
@@ -229,7 +229,7 @@ let ey = (0, u.Un)({
     }
     return (0, r.jsx)(I.Z, {})
   },
-  ew = i.memo(function() {
+  eL = i.memo(function() {
     let {
       guildId: e,
       channelId: t
@@ -239,7 +239,7 @@ let ey = (0, u.Un)({
       guildId: e
     }, e) : (0, r.jsx)(ep.Z, {})
   }),
-  eL = e => (0, r.jsx)(ex, ev({}, e)),
+  ew = e => (0, r.jsx)(ex, ev({}, e)),
   eR = e => {
     let {
       location: t
@@ -481,7 +481,7 @@ function eK(e) {
           themeOverride: n
         }), !a && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(Z, (i = ev({}, x), l = l = {
-            children: (0, r.jsx)(ew, {})
+            children: (0, r.jsx)(eL, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -546,7 +546,7 @@ function eq() {
     children: [h && !u && !_ && (0, r.jsx)(G.Z, {
       className: eN.guilds,
       themeOverride: n
-    }), (0, r.jsx)(w.Z.Provider, {
+    }), (0, r.jsx)(L.Z.Provider, {
       value: (null == f ? void 0 : f.params.guildId) === em.ME ? void 0 : null == f ? void 0 : f.params.guildId,
       children: (0, r.jsxs)("div", {
         className: eN.base,
@@ -628,7 +628,7 @@ function eq() {
                   path: [em.Z5c.CHANNEL_THREAD_VIEW(J.Hw.guildId(), J.Hw.channelId(), ":threadId", ":messageId?"), em.Z5c.CHANNEL(em.ME, J.Hw.channelId()), em.Z5c.CHANNEL(J.Hw.guildId(), J.Hw.channelId({
                     optional: !0
                   }), ":messageId?")],
-                  render: eL,
+                  render: ew,
                   impressionName: c.ImpressionNames.GUILD_CHANNEL,
                   disableTrack: !0
                 }), (0, r.jsx)(v.Z, {

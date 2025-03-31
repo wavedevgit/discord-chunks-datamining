@@ -67,7 +67,7 @@ function Z(e) {
     iconClassName: l,
     className: Z,
     innerClassName: x
-  } = e, w = function(e, t) {
+  } = e, L = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -82,7 +82,7 @@ function Z(e) {
     }
     return i
   }(e, ["channel", "iconClassName", "className", "innerClassName"]);
-  let L = i.useRef(null),
+  let w = i.useRef(null),
     R = (0, m.Q3)("SoundBoardRTCPanelButton"),
     {
       coloredIconsEnabled: D
@@ -126,7 +126,7 @@ function Z(e) {
       onMouseLeave: $
     }
   } = (0, c.j)(), ee = e => (0, r.jsx)(u.yRy, {
-    targetElementRef: L,
+    targetElementRef: w,
     animation: u.yRy.Animation.FADE,
     shouldShow: W,
     position: "top",
@@ -147,7 +147,7 @@ function Z(e) {
       })
     },
     children: t => (0, r.jsx)("div", {
-      ref: L,
+      ref: w,
       children: (0, r.jsx)(u.zxk, A(j(A(j({}, e, t), {
         className: o()(Z, {
           [P.buttonActive]: W && !D,
@@ -163,16 +163,16 @@ function Z(e) {
         },
         onMouseEnter: t => {
           var n, r;
-          null === (n = w.onMouseEnter) || void 0 === n || n.call(w, t), null == e || null === (r = e.onMouseEnter) || void 0 === r || r.call(e), J()
+          null === (n = L.onMouseEnter) || void 0 === n || n.call(L, t), null == e || null === (r = e.onMouseEnter) || void 0 === r || r.call(e), J()
         },
         onMouseLeave: t => {
           var n, r;
-          null === (n = w.onMouseLeave) || void 0 === n || n.call(w, t), null == e || null === (r = e.onMouseLeave) || void 0 === r || r.call(e), $()
+          null === (n = L.onMouseLeave) || void 0 === n || n.call(L, t), null == e || null === (r = e.onMouseLeave) || void 0 === r || r.call(e), $()
         },
         onContextMenu: q,
         fullWidth: !0,
         size: R ? u.zxk.Sizes.MEDIUM : u.zxk.Sizes.SMALL
-      }), w), {
+      }), L), {
         children: (0, r.jsx)(Q, {
           className: l,
           size: "sm",
@@ -189,7 +189,7 @@ function Z(e) {
   }), (0, r.jsx)(h.Gt, {
     value: Y,
     children: (0, r.jsx)(u.ua7, {
-      targetElementRef: L,
+      targetElementRef: w,
       text: k ? T.NW.string(T.t["Ox4/zc"]) : M ? T.NW.string(T.t["+YBKYG"]) : U ? T.NW.string(T.t.X1lQlp) : T.NW.string(T.t["6EJvHh"]),
       children: e => ee(e)
     })

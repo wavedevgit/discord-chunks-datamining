@@ -1,11 +1,11 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
   Z: () => m
 });
 var i = n(26151),
   r = n(13245),
-  l = n(287734),
-  o = n(43267),
+  o = n(287734),
+  l = n(43267),
   a = n(933557),
   s = n(699516),
   c = n(594174),
@@ -18,11 +18,11 @@ var i = n(26151),
 function m(e) {
   let t = (0, a.F6)(e, c.default, s.Z),
     n = f.NW.string(f.t.ssrVzM),
-    m = (0, o.x)(e),
+    m = (0, l.x)(e),
     g = (0, u.Z)(e),
     {
-      trackView: O,
-      trackClick: v
+      trackView: v,
+      trackClick: y
     } = (0, d.R)(p.n0.IncomingCall, {
       notif_type: p.n0.IncomingCall,
       notif_user_id: g,
@@ -37,13 +37,13 @@ function m(e) {
     confirmText: f.NW.string(f.t["0D/6R0"]),
     cancelText: f.NW.string(f.t.BVN4pK),
     onNotificationShow: () => {
-      O()
+      v()
     },
     onConfirmClick: (t, n) => {
-      if (v("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
+      if (y("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
       else {
         if (e.type !== h.d4z.GUILD_VOICE) return;
-        l.default.selectVoiceChannel(e.id)
+        o.default.selectVoiceChannel(e.id)
       }
       r.Z.updateNotificationStatus(n), r.Z.track(h.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",
@@ -53,10 +53,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      v("decline"), i.Z.stopRinging(e.id)
+      y("decline"), i.Z.stopRinging(e.id)
     },
     onDismissClick: () => {
-      v("dismiss")
+      y("dismiss")
     }
   }
 }

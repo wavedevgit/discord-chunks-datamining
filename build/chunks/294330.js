@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   Eo: () => R,
-  VD: () => w,
+  VD: () => L,
   ZP: () => D
 }), n(47120), n(266796);
 var r = n(200651),
@@ -35,13 +35,13 @@ var r = n(200651),
   Z = n(330065),
   x = n(755386);
 
-function w(e) {
+function L(e) {
   let {
     guild: t,
     onClick: l,
     onView: a
-  } = e, b = (0, g.Q3)("BaseGlobalDiscoveryServersCard"), [_, I] = i.useState(!1), [w, L] = i.useState(!1), [R, D] = i.useState(!1), k = i.useRef(null), M = i.useCallback(async () => {
-    L(!0);
+  } = e, b = (0, g.Q3)("BaseGlobalDiscoveryServersCard"), [_, I] = i.useState(!1), [L, w] = i.useState(!1), [R, D] = i.useState(!1), k = i.useRef(null), M = i.useCallback(async () => {
+    w(!0);
     try {
       await l(t.id)
     } catch (n) {
@@ -52,7 +52,7 @@ function w(e) {
         body: null !== (e = t.getAnyErrorMessage()) && void 0 !== e ? e : P.NW.string(P.t.eAn6z8)
       })
     } finally {
-      L(!1)
+      w(!1)
     }
   }, [t.id, l]), U = i.useCallback(e => {
     e && !_ && (I(!0), null == a || a(t.id))
@@ -117,7 +117,7 @@ function w(e) {
   });
   return (0, r.jsxs)("div", {
     className: j.container,
-    children: [w && (0, r.jsx)("div", {
+    children: [L && (0, r.jsx)("div", {
       className: j.spinnerContainer,
       children: (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.PULSING_ELLIPSIS,
@@ -132,7 +132,7 @@ function w(e) {
         ref: k,
         className: j.card,
         onClick: M,
-        disabled: w,
+        disabled: L,
         onContextMenu: G,
         "aria-label": P.NW.string(P.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
@@ -226,13 +226,13 @@ function w(e) {
   })
 }
 
-function L(e) {
+function w(e) {
   let {
     guildId: t,
     onClick: n,
     onView: i
   } = e, l = (0, a.e7)([I.Z], () => I.Z.getGuild(t));
-  return null == l ? null : (0, r.jsx)(w, {
+  return null == l ? null : (0, r.jsx)(L, {
     guild: l,
     onClick: n,
     onView: i
@@ -255,7 +255,7 @@ function R(e) {
     state: n,
     cleanUp: i,
     animate: a.current,
-    children: (0, r.jsx)(L, {
+    children: (0, r.jsx)(w, {
       guildId: t.guildId,
       onClick: l,
       onView: o
@@ -276,4 +276,4 @@ function R(e) {
     })
   })
 }
-let D = i.memo(L)
+let D = i.memo(w)

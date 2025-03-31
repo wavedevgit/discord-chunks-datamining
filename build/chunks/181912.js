@@ -1,4 +1,4 @@
-/** Chunk was on 76977 **/
+/** Chunk was on 45585 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -7,23 +7,23 @@ var i = n(26151),
   r = n(13245),
   s = n(287734),
   o = n(43267),
-  a = n(933557),
-  l = n(593481),
+  l = n(933557),
+  a = n(593481),
   c = n(614554),
-  d = n(699516),
-  u = n(594174),
+  u = n(699516),
+  d = n(594174),
   h = n(312839),
   p = n(981631),
   f = n(987650),
   g = n(388032);
 
 function m(e) {
-  let t = (0, a.F6)(e, u.default, d.Z),
+  let t = (0, l.F6)(e, d.default, u.Z),
     n = g.NW.string(g.t.ssrVzM),
     m = (0, o.x)(e),
     y = (0, c.Z)(e),
     {
-      trackView: _,
+      trackView: O,
       trackClick: v
     } = (0, h.R)(f.n0.IncomingCall, {
       notif_type: f.n0.IncomingCall,
@@ -36,11 +36,11 @@ function m(e) {
     icon: m,
     title: t,
     body: n,
-    hint: e => (0, l.QR)(e, (0, h.P)(), g.t["Odi54+"]),
+    hint: e => (0, a.QR)(e, (0, h.P)(), g.t["Odi54+"]),
     confirmText: g.NW.string(g.t["0D/6R0"]),
     cancelText: g.NW.string(g.t.BVN4pK),
     onNotificationShow: () => {
-      _()
+      O()
     },
     onConfirmClick: () => {
       if (p.TPd.CALLABLE.has(e.type)) r.Z.callPrivateChannel(e.id);

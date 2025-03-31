@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(496675),
   Z = n(594174),
   x = n(662868),
-  w = n(981631),
-  L = n(765305),
+  L = n(981631),
+  w = n(765305),
   R = n(388032),
   D = n(712774);
 
@@ -83,7 +83,7 @@ function U(e) {
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == U ? void 0 : U.id
     })
-  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, a.Wu)([I.Z], () => [...new Set(I.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, a.e7)([I.Z], () => null != B ? I.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, a.e7)([A.Z], () => A.Z.can(w.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, a.e7)([Z.default], () => Z.default.getUser(K), [K]);
+  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, a.Wu)([I.Z], () => [...new Set(I.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, a.e7)([I.Z], () => null != B ? I.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, a.e7)([A.Z], () => A.Z.can(L.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, a.e7)([Z.default], () => Z.default.getUser(K), [K]);
   i.useEffect(() => {
     null != K && (0, u.PR)(K)
   }, [K]);
@@ -166,7 +166,7 @@ function U(e) {
         }
       }
     } else {
-      if (t.entity_type === L.WX.STAGE_INSTANCE && _) {
+      if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
         let e = R.NW.string(R.t.ZYO5OD);
         return (null == o ? void 0 : o.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != o && (e = R.NW.string(R.t.btSGOj)), {
           noticeType: 0,
@@ -202,7 +202,7 @@ function U(e) {
           })
         }
       }
-      if (t.entity_type === L.WX.EXTERNAL) {
+      if (t.entity_type === w.WX.EXTERNAL) {
         let e = (0, O.cS)(t);
         if (null == e) return {
           noticeType: null
@@ -242,7 +242,7 @@ function U(e) {
           })
         }
       }
-      if (t.entity_type === L.WX.VOICE && null != i) {
+      if (t.entity_type === w.WX.VOICE && null != i) {
         let e = (0, p.KS)(i),
           n = f.ZP.getUserCount(t.id, E);
         return {

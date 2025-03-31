@@ -1,17 +1,17 @@
-/** Chunk was on 24491 **/
+/** Chunk was on 29709 **/
 n.d(t, {
-  Z: () => P
+  Z: () => O
 }), n(47120);
-var r, i = n(392711),
-  l = n.n(i),
-  u = n(442837),
-  o = n(570140),
-  c = n(598077),
-  a = n(594174),
-  s = n(388380),
+var i, r = n(392711),
+  l = n.n(r),
+  o = n(442837),
+  s = n(570140),
+  a = n(598077),
+  c = n(594174),
+  u = n(388380),
   d = n(72937);
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,27 +20,27 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 let g = {},
-  O = 0,
-  y = !1,
-  p = !1;
+  f = 0,
+  N = !1,
+  h = !1;
 
-function h(e) {
+function y(e) {
   var t;
   let n = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
   return {
     key: e.suggested_user.id,
     name: null === (t = l().first(e.reasons)) || void 0 === t ? void 0 : t.name,
-    user: new c.Z(e.suggested_user),
+    user: new a.Z(e.suggested_user),
     mutualFriendsCount: e.mutual_friends_count,
     contactNames: n
   }
 }
-class E extends(r = u.ZP.Store) {
+class m extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(a.default)
+    this.waitFor(c.default)
   }
   getSuggestionCount() {
-    return O
+    return f
   }
   getSuggestions() {
     return Object.entries(g).map(e => {
@@ -52,33 +52,33 @@ class E extends(r = u.ZP.Store) {
     return g[e]
   }
 }
-f(E, "displayName", "FriendSuggestionStore");
-let P = new E(o.Z, {
+p(m, "displayName", "FriendSuggestionStore");
+let O = new m(s.Z, {
   CONNECTION_OPEN: function(e) {
-    g = {}, (O = e.friendSuggestionCount) > 0 ? (p = !0, y || !p || (y = !0, p = !1, s.Z.fetch())) : (0, d.Z)()
+    g = {}, (f = e.friendSuggestionCount) > 0 ? (h = !0, N || !h || (N = !0, h = !1, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
-    let r = h(e.suggestion);
-    if (null != g[r.key]) return !1;
-    O++, t = function(e) {
+    let i = y(e.suggestion);
+    if (null != g[i.key]) return !1;
+    f++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          f(e, t, n[t])
+        }))), i.forEach(function(t) {
+          p(e, t, n[t])
         })
       }
       return e
     }({}, g), n = n = {
-      [r.key]: r
+      [i.key]: i
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(n)).forEach(function(e) {
@@ -86,13 +86,13 @@ let P = new E(o.Z, {
     }), g = t
   },
   FRIEND_SUGGESTION_DELETE: function(e) {
-    O = Math.max(0, --O), delete g[e.suggestedUserId]
+    f = Math.max(0, --f), delete g[e.suggestedUserId]
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    y = !1, t = e.suggestions, g = l().chain(t).map(e => h(e)).keyBy(e => e.key).value(), O = l().keys(g).length
+    N = !1, t = e.suggestions, g = l().chain(t).map(e => y(e)).keyBy(e => e.key).value(), f = l().keys(g).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    y = !1, g = {}
+    N = !1, g = {}
   }
 })

@@ -1,20 +1,20 @@
-/** Chunk was on 76977 **/
+/** Chunk was on 45585 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var i = n(224706),
   r = n(13245),
   s = n(864060),
   o = n(593481),
-  a = n(312839),
-  l = n(987650),
+  l = n(312839),
+  a = n(987650),
   c = n(388032);
 
-function d(e, t, n, d, u) {
+function u(e, t, n, u, d) {
   if (null == t.activity) return null;
   let h = t.activity.type,
-    p = u.session_id;
+    p = d.session_id;
   if (null == p) return null;
   let {
     icon: f,
@@ -22,9 +22,9 @@ function d(e, t, n, d, u) {
     body: m
   } = (0, s.Xi)(e, t, n), {
     trackView: y,
-    trackClick: _
-  } = (0, a.R)(l.n0.ActivityInvite, {
-    notif_type: l.n0.ActivityInvite,
+    trackClick: O
+  } = (0, l.R)(a.n0.ActivityInvite, {
+    notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
     message_type: t.type,
@@ -32,13 +32,13 @@ function d(e, t, n, d, u) {
     channel_id: e.id,
     channel_type: e.type,
     activity_type: h,
-    activity_name: u.name
+    activity_name: d.name
   });
   return {
     icon: f,
     title: g,
     body: m,
-    hint: e => (0, o.QR)(e, (0, a.P)(), c.t.aB5xLy),
+    hint: e => (0, o.QR)(e, (0, l.P)(), c.t.aB5xLy),
     onNotificationShow: () => {
       y()
     },
@@ -47,14 +47,14 @@ function d(e, t, n, d, u) {
       i.Z.join({
         userId: n.id,
         sessionId: p,
-        applicationId: d.id,
+        applicationId: u.id,
         channelId: e.id,
         messageId: t.id,
-        activity: u
-      }), r.Z.updateNotificationStatus(o), _("join")
+        activity: d
+      }), r.Z.updateNotificationStatus(o), O("join")
     },
     onDismissClick: () => {
-      _("dismiss")
+      O("dismiss")
     }
   }
 }

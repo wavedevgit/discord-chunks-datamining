@@ -296,6 +296,31 @@ let y = "migrated",
       },
       version: m.H
     },
+    [h.Odu.FRIENDS]: {
+      minSize: {
+        width: 350,
+        height: 350
+      },
+      resizeX: !1,
+      resizeY: !0,
+      dragAnywhere: !0,
+      layoutPolicy: "OPTIONAL_DEFAULT",
+      defaultSettings: {
+        anchor: {
+          left: void 0,
+          top: O,
+          bottom: void 0,
+          right: I
+        },
+        size: {
+          fixed: !0,
+          height: 500,
+          width: 350
+        },
+        pinned: !1
+      },
+      version: m.H
+    },
     [h.Odu.CLICK_ZONE_DEBUG]: {
       minSize: {
         width: 50,

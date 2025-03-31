@@ -1,4 +1,4 @@
-/** Chunk was on 14721 **/
+/** Chunk was on 98447 **/
 n.d(t, {
   w: () => N
 });
@@ -46,7 +46,7 @@ function N(e) {
     voiceListRef: i,
     showSectionHeaders: a = !1,
     query: l
-  } = e, s = E(), c = (0, d.e7)([p.default], () => (0, g.I5)(p.default.getCurrentUser())), N = P(l, c), S = Math.ceil(N.length / t), {
+  } = e, s = E(), c = (0, d.e7)([p.default], () => (0, g.I5)(p.default.getCurrentUser())), N = S(l, c), P = Math.ceil(N.length / t), {
     isNativeModuleLoaded: w,
     isNativeModuleLoading: T,
     catalogLastFetchTime: L
@@ -99,7 +99,7 @@ function N(e) {
           voiceFilter: n,
           hasNitro: c,
           analyticsContext: {
-            gridRows: S,
+            gridRows: P,
             gridColumns: t,
             interactedRow: e,
             interactedColumn: i
@@ -114,7 +114,7 @@ function N(e) {
       children: y.NW.string(j[e])
     }),
     sectionHeaderHeight: !1 === a ? void 0 : e => x[e],
-    rowCount: S,
+    rowCount: P,
     rowHeight: 130,
     onScroll: n,
     ref: i,
@@ -139,7 +139,7 @@ let E = () => (0, d.e7)([v.Z], () => {
     var e;
     return !Object.keys(null !== (e = v.Z.getVoiceFilterModels()) && void 0 !== e ? e : {}).length && (v.Z.getCatalogFetchFailed() || v.Z.hasNativeModuleFailed())
   }),
-  S = (e, t) => {
+  P = (e, t) => {
     let n = (0, c._I)(t.toLowerCase());
     return "" === n ? e : e.filter(e => {
       let {
@@ -148,8 +148,8 @@ let E = () => (0, d.e7)([v.Z], () => {
       return s()(n, r)
     })
   },
-  P = (e, t) => (0, d.Wu)([v.Z], () => {
+  S = (e, t) => (0, d.Wu)([v.Z], () => {
     let n = v.Z.getVoiceFilters(),
       r = v.Z.getSortedVoiceFilters();
-    return S(t ? Object.values(n) : r, e)
+    return P(t ? Object.values(n) : r, e)
   }, [e, t])

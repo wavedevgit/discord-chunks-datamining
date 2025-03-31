@@ -1,31 +1,31 @@
 /** Chunk was on 27278 **/
-t.r(n), t.d(n, {
-  default: () => p
+n.r(t), n.d(t, {
+  default: () => f
 });
-var o = t(200651);
-t(192379);
-var r = t(442837),
-  a = t(522474),
-  i = t(238246),
-  l = t(358085),
-  c = t(228488),
-  _ = t(952561),
-  s = t(701011),
-  u = t(932174),
-  d = t(388032);
+var r = n(200651);
+n(192379);
+var o = n(442837),
+  i = n(522474),
+  l = n(238246),
+  a = n(358085),
+  c = n(228488),
+  u = n(952561),
+  s = n(701011),
+  d = n(932174),
+  p = n(388032);
 
-function p(e) {
-  var n;
+function f(e) {
+  var t;
   let {
-    windowKey: t
-  } = e, p = (0, _.Z)(), {
-    currentDocument: f,
-    rootNode: b
-  } = (0, u.Z)(), m = (0, r.e7)([a.Z], () => (0, c.rB)(b, f), [b, f]);
-  return (0, o.jsx)(i.Z, {
-    withTitleBar: l.isPlatformEmbedded && !m,
-    windowKey: t,
-    title: null !== (n = null == p ? void 0 : p.name) && void 0 !== n ? n : d.NW.string(d.t.IC5Anp),
-    children: (0, o.jsx)(s.Z, {})
+    windowKey: n
+  } = e, f = (0, u.Z)(), {
+    currentDocument: m,
+    rootNode: v
+  } = (0, d.Z)(), b = (0, o.e7)([i.Z], () => (0, c.rB)(v, m), [v, m]);
+  return (0, r.jsx)(l.Z, {
+    withTitleBar: a.isPlatformEmbedded && !b,
+    windowKey: n,
+    title: null !== (t = null == f ? void 0 : f.name) && void 0 !== t ? t : p.NW.string(p.t.IC5Anp),
+    children: (0, r.jsx)(s.Z, {})
   })
 }

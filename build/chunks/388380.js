@@ -1,29 +1,29 @@
-/** Chunk was on 24491 **/
+/** Chunk was on 29709 **/
 n.d(t, {
-  Z: () => u
+  Z: () => o
 });
-var r = n(544891),
-  i = n(570140),
+var i = n(544891),
+  r = n(570140),
   l = n(981631);
-let u = {
+let o = {
   async fetch() {
     try {
-      let e = await r.tn.get({
+      let e = await i.tn.get({
         url: l.ANM.FRIEND_SUGGESTIONS,
         rejectWithError: !0
       });
-      i.Z.dispatch({
+      r.Z.dispatch({
         type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS",
         suggestions: e.body
       })
     } catch (e) {
-      i.Z.dispatch({
+      r.Z.dispatch({
         type: "LOAD_FRIEND_SUGGESTIONS_FAILURE"
       })
     }
   },
   ignore(e) {
-    r.tn.del({
+    i.tn.del({
       url: l.ANM.FRIEND_SUGGESTION(e),
       rejectWithError: !0
     })

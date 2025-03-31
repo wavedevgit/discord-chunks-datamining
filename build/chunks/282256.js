@@ -1,4 +1,4 @@
-/** Chunk was on 2171 **/
+/** Chunk was on 12321 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
@@ -71,17 +71,17 @@ let f = l.memo(function(e) {
       handleResize: v,
       positionTrackerRef: h
     },
-    P = l.useRef(S);
+    N = l.useRef(S);
   l.useEffect(() => {
-    P.current = S
+    N.current = S
   }), l.useEffect(() => {
     let {
       handleResize: e,
       positionTrackerRef: t
-    } = P.current;
+    } = N.current;
     null != t.current && e()
   }, [j]);
-  let N = (0, a.O)(v);
+  let P = (0, a.O)(v);
   return (0, r.jsxs)("div", {
     className: o()(p.container, f && p.isOverlayContainer),
     ref: h,
@@ -90,7 +90,7 @@ let f = l.memo(function(e) {
       children: i
     }), (0, r.jsx)("div", {
       className: p.chipletParent,
-      ref: N,
+      ref: P,
       children: (0, r.jsx)("span", {
         className: o()(p.chipletContainer, !j && f && p.noPadding),
         ref: b,

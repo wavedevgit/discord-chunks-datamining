@@ -1,12 +1,12 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 });
 var i = n(200651);
 n(192379);
 var r = n(13245),
-  l = n(45114),
-  o = n(937889),
+  o = n(45114),
+  l = n(937889),
   a = n(864060),
   s = n(703656),
   c = n(460181),
@@ -17,23 +17,23 @@ var r = n(13245),
   f = n(610394),
   m = n(516542),
   g = n(618373),
-  O = n(620954),
-  v = n(987650),
-  y = n(981631),
-  E = n(388032);
+  v = n(620954),
+  y = n(987650),
+  O = n(981631),
+  b = n(388032);
 
-function b(e, t, n, b) {
-  var j;
+function _(e, t, n, _) {
+  var E;
   let {
     icon: x,
     title: I,
-    body: S
+    body: j
   } = (0, a.Xi)(e, t, n), {
-    trackView: N,
-    trackClick: C
-  } = (0, O.R)(v.n0.TextChat, {
-    notif_type: v.n0.TextChat,
-    notif_user_id: null === (j = t.author) || void 0 === j ? void 0 : j.id,
+    trackView: C,
+    trackClick: S
+  } = (0, v.R)(y.n0.TextChat, {
+    notif_type: y.n0.TextChat,
+    notif_user_id: null === (E = t.author) || void 0 === E ? void 0 : E.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -43,30 +43,30 @@ function b(e, t, n, b) {
   return {
     icon: x,
     title: I,
-    body: t.content.length > 0 ? (0, o.ZP)(t, {
+    body: t.content.length > 0 ? (0, l.ZP)(t, {
       noStyleAndInteraction: !0,
       formatInline: !0,
       hideSimpleEmbedContent: !1
-    }).content : S,
-    hint: (e, t) => e && !t ? null : (0, g.Q)((0, O.P)(), E.t.ykjOAA, E.NW.string(E.t.jZkzVF)),
+    }).content : j,
+    hint: (e, t) => e && !t ? null : (0, g.Q)((0, v.P)(), b.t.ykjOAA, b.NW.string(b.t.jZkzVF)),
     maxBodyLines: 2,
-    renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
+    renderFooter: (n, r, o) => n && !o ? (0, i.jsx)(m.Z, {
       id: r,
       replyToMessageId: t.id,
       channel: e,
-      onSend: () => C("send")
+      onSend: () => S("send")
     }) : null,
     onNotificationShow: () => {
-      b && (0, c.GN)(u.Ay, u.yk), N()
+      _ && (0, c.GN)(u.Ay, u.yk), C()
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
-      (0, l.In)(e.id, !0, !0, t.id, {
-        section: y.jXE.OVERLAY
-      }), f.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, s.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      (0, o.In)(e.id, !0, !0, t.id, {
+        section: O.jXE.OVERLAY
+      }), f.ZP.isInputLocked(n) ? (S("unlock"), r.Z.setInputLocked(!1, n)) : (S("jump"), (0, s.uL)(O.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
-      C("dismiss")
+      S("dismiss")
     }
   }
 }

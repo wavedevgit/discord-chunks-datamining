@@ -1,5 +1,4 @@
-/** Chunk was on 76977 **/
-"use strict";
+/** Chunk was on 63141 **/
 e.exports = {
   icon: "icon__99ff4",
   voiceIcon: "voiceIcon__99ff4",

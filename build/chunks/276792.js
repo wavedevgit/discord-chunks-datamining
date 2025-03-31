@@ -115,22 +115,22 @@ function N(e) {
         }
       })
   }
-  let w = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  let L = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
       children: ["\xa0", (0, r.jsx)(o.eee, {
         className: b.termsApplyAnchor,
         href: u.Z.getArticleURL(I.helpArticleId),
         children: m.NW.string(m.t["sBp+u7"])
       })]
     }) : void 0,
-    L = {
+    w = {
       type: "video",
       src: P ? I.heroArtVideoLinkLightTheme : I.videoLink
     };
-  null != I.heroArtVideoSubtitles && (L.subtitles = I.heroArtVideoSubtitles.map(e => ({
+  null != I.heroArtVideoSubtitles && (w.subtitles = I.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: !1
-  }))), ("" !== I.heroArtImageLinkDarkTheme || "" !== I.heroArtImageLinkLightTheme) && (L = {
+  }))), ("" !== I.heroArtImageLinkDarkTheme || "" !== I.heroArtImageLinkLightTheme) && (w = {
     type: "image",
     src: P ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
   });
@@ -145,9 +145,9 @@ function N(e) {
     header: I.header,
     modalTopExtra: D,
     subHeader: I.subheader,
-    subHeaderExtra: w,
+    subHeaderExtra: L,
     body: I.body,
-    heroArt: L,
+    heroArt: w,
     featureCards: I.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,

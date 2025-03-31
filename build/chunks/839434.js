@@ -1,39 +1,39 @@
-/** Chunk was on 76977 **/
+/** Chunk was on 45585 **/
 "use strict";
 n.d(t, {
-  Z: () => ea
+  Z: () => el
 }), n(47120), n(230036);
 var i, r = n(200651),
   s = n(192379),
   o = n(120356),
-  a = n.n(o),
-  l = n(442837),
+  l = n.n(o),
+  a = n(442837),
   c = n(692547),
-  d = n(477690),
-  u = n(481060),
+  u = n(477690),
+  d = n(481060),
   h = n(239091),
   p = n(765250),
   f = n(13245),
   g = n(872810),
   m = n(586902),
   y = n(835473),
-  _ = n(933557),
+  O = n(933557),
   v = n(600164),
-  b = n(118012),
-  O = n(594190),
-  x = n(925329),
-  S = n(569545),
-  E = n(914923),
+  x = n(118012),
+  b = n(594190),
+  S = n(925329),
+  E = n(569545),
+  j = n(914923),
   N = n(165393),
-  j = n(989941),
+  Z = n(989941),
   C = n(552282),
   I = n(345243),
-  Z = n(565799),
-  P = n(501655),
+  P = n(565799),
+  _ = n(501655),
   w = n(786915),
   T = n(7188),
-  k = n(597998),
-  D = n(199902),
+  D = n(597998),
+  k = n(199902),
   M = n(314897),
   A = n(592125),
   R = n(77498),
@@ -41,10 +41,10 @@ var i, r = n(200651),
   z = n(944486),
   W = n(606304),
   V = n(449224),
-  B = n(938475),
-  U = n(237997),
-  G = n(136015),
-  F = n(51144),
+  U = n(938475),
+  B = n(237997),
+  F = n(136015),
+  G = n(51144),
   H = n(145597),
   Y = n(244073),
   K = n(876205),
@@ -98,64 +98,64 @@ function es(e) {
     user: i,
     nick: o,
     displayNameMode: c,
-    displayUserMode: d,
-    size: u = q.ipw.LARGE,
+    displayUserMode: u,
+    size: d = q.ipw.LARGE,
     onClick: h,
     onContextMenu: p,
     context: f,
     guildId: g,
     voiceState: y
-  } = e, _ = (0, Q.Z)({
+  } = e, O = (0, Q.Z)({
     location: "overlay_voice_widget"
-  }), v = (0, l.e7)([U.default], () => U.default.showKeybindIndicators), b = (0, l.e7)([M.default], () => M.default.getId()), O = (0, l.e7)([L.Z], () => L.Z.isLocalMute(i.id)), x = (0, l.e7)([D.Z], () => D.Z.getCurrentUserActiveStream()), S = (0, l.Wu)([D.Z], () => null != x ? D.Z.getViewerIds(x) : []), E = (0, m.Z)({
+  }), v = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), x = (0, a.e7)([M.default], () => M.default.getId()), b = (0, a.e7)([L.Z], () => L.Z.isLocalMute(i.id)), S = (0, a.e7)([k.Z], () => k.Z.getCurrentUserActiveStream()), E = (0, a.Wu)([k.Z], () => null != S ? k.Z.getViewerIds(S) : []), j = (0, m.Z)({
     userId: i.id,
     context: f
-  }), N = (0, l.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), j = (0, l.e7)([D.Z], () => null != D.Z.getStreamForUser(i.id, g)), C = s.useMemo(() => null != x && x.ownerId !== i.id && S.includes(i.id), [x, i.id, S]);
-  if (d === q.OYC.ONLY_WHILE_SPEAKING && n && !E) return null;
-  let I = i.id === b,
+  }), N = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), Z = (0, a.e7)([k.Z], () => null != k.Z.getStreamForUser(i.id, g)), C = s.useMemo(() => null != S && S.ownerId !== i.id && E.includes(i.id), [S, i.id, E]);
+  if (u === q.OYC.ONLY_WHILE_SPEAKING && n && !j) return null;
+  let I = i.id === x,
     {
-      mute: Z,
-      selfMute: P,
+      mute: P,
+      selfMute: _,
       suppress: w,
       deaf: T,
       selfDeaf: A
     } = y,
-    R = _ && v,
-    z = P && (!I || !R);
+    R = O && v,
+    z = _ && (!I || !R);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(k.ZP, {
+    children: [(0, r.jsx)(D.ZP, {
       guildId: g,
       onClick: n ? void 0 : e => null == h ? void 0 : h(e, i),
       onContextMenu: n ? void 0 : e => null == p ? void 0 : p(e, i),
-      className: a()(et.voiceUserWrapper, {
-        [et.faded]: !E,
+      className: l()(et.voiceUserWrapper, {
+        [et.faded]: !j,
         [et.interactive]: !n
       }),
       user: i,
       nick: o,
       speaking: !1,
       flipped: t,
-      isStreaming: j,
-      iconClassName: a()(et.voiceIcon, {
+      isStreaming: Z,
+      iconClassName: l()(et.voiceIcon, {
         [et.locked]: n
       }),
       isWatching: C,
       isOverlay: !0,
-      size: u,
+      size: d,
       priority: N,
-      mute: Z || z || O,
-      localMute: O,
-      serverMute: Z || w,
+      mute: P || z || b,
+      localMute: b,
+      serverMute: P || w,
       deaf: T || A,
       serverDeaf: T,
-      userNameClassName: a()(et.username, {
+      userNameClassName: l()(et.username, {
         [et.locked]: n,
-        [et.hidden]: n && (c === q.wC$.NEVER || !E && c === q.wC$.ONLY_WHILE_SPEAKING)
+        [et.hidden]: n && (c === q.wC$.NEVER || !j && c === q.wC$.ONLY_WHILE_SPEAKING)
       })
     }), I && R && (0, r.jsx)(K.Z, {
-      value: P,
+      value: _,
       action: q.kg4.TOGGLE_MUTE,
-      shouldShow: !Z && !w
+      shouldShow: !P && !w
     })]
   })
 }
@@ -168,27 +168,27 @@ class eo extends(i = s.PureComponent) {
       displayUserMode: i,
       locked: s,
       isPreviewingInGame: o,
-      channel: l,
+      channel: a,
       anchor: c,
-      avatarSizeMode: u
+      avatarSizeMode: d
     } = this.props, h = null != c.right, p = t.map(t => {
-      var a;
+      var l;
       let {
         user: c,
-        voiceState: d,
+        voiceState: u,
         member: p
       } = t;
-      if (null == c || null == l || null == e) return null;
+      if (null == c || null == a || null == e) return null;
       let f = s || o;
       return (0, r.jsx)(es, {
-        guildId: null == l ? void 0 : l.guild_id,
+        guildId: null == a ? void 0 : a.guild_id,
         user: c,
-        nick: null !== (a = null == p ? void 0 : p.nick) && void 0 !== a ? a : F.ZP.getName(c),
+        nick: null !== (l = null == p ? void 0 : p.nick) && void 0 !== l ? l : G.ZP.getName(c),
         flipped: h,
-        voiceState: d,
+        voiceState: u,
         displayNameMode: n,
         displayUserMode: i,
-        size: u,
+        size: d,
         locked: f,
         onContextMenu: this.handleUserContextMenu,
         onClick: this.handleUserContextMenu,
@@ -196,11 +196,11 @@ class eo extends(i = s.PureComponent) {
       }, c.id)
     });
     return (0, r.jsx)(J.ZP.Body, {
-      className: a()({
-        [d.Z.VOICE_WIDGET_TOP_MARGIN]: s,
+      className: l()({
+        [u.Z.VOICE_WIDGET_TOP_MARGIN]: s,
         [et.lockedContainer]: s
       }),
-      children: (0, r.jsx)(k.eJ, {
+      children: (0, r.jsx)(D.eJ, {
         className: et.voiceList,
         children: p
       })
@@ -213,39 +213,39 @@ class eo extends(i = s.PureComponent) {
       isPreviewingInGame: n
     } = this.props;
     return (0, r.jsxs)(J.ZP.Bar, {
-      className: a()(et.draggableStartArea, {
+      className: l()(et.draggableStartArea, {
         [et.preview]: n
       }),
       children: [(0, r.jsxs)(J.ZP.Content, {
         dynamicSize: !0,
-        className: a()(et.content, {
+        className: l()(et.content, {
           [et.hidden]: n
         }),
-        children: [(0, r.jsx)(u.Vni, {
+        children: [(0, r.jsx)(d.Vni, {
           size: "custom",
           color: c.Z.unsafe_rawColors.WHITE_500.css,
           width: 20,
           height: 20,
-          className: a()(et.icon, et.faded, et.dragIcon)
-        }), (0, r.jsx)(u.gj8, {
+          className: l()(et.icon, et.faded, et.dragIcon)
+        }), (0, r.jsx)(d.gj8, {
           size: "custom",
           color: c.Z.unsafe_rawColors.WHITE_500.css,
           width: 20,
           height: 20,
-          className: a()(et.icon, et.faded, et.speakerIcon)
-        }), (0, r.jsx)(b.Z, {
+          className: l()(et.icon, et.faded, et.speakerIcon)
+        }), (0, r.jsx)(x.Z, {
           color: c.Z.unsafe_rawColors.PRIMARY_200.css,
           className: et.title,
           children: t
         })]
       }), n ? null : (0, r.jsx)(J.ZP.Icon, {
-        icon: u.ewm,
+        icon: d.ewm,
         label: ee.NW.string(ee.t.NiTd0d),
         onClick: this.handleOpenVoiceSettings,
         tooltipPosition: "left",
         size: 18
       }), n ? null : (0, r.jsx)(J.ZP.Icon, {
-        icon: e ? u.QVc : u.k5M,
+        icon: e ? d.QVc : d.k5M,
         label: e ? ee.NW.string(ee.t.cSu80t) : ee.NW.string(ee.t.cM8Vnp),
         onClick: this.handlePin,
         tooltipPosition: "left",
@@ -262,17 +262,17 @@ class eo extends(i = s.PureComponent) {
       isPreviewingInGame: i,
       channel: s,
       application: o,
-      streamMetadata: l,
+      streamMetadata: a,
       streamApplication: c,
-      stream: d
+      stream: u
     } = this.props;
-    if (t || null == d || null == s) return null;
+    if (t || null == u || null == s) return null;
     let {
       sanitizedTitle: h,
       title: p
-    } = (0, E.Z)(l);
+    } = (0, j.Z)(a);
     return (0, r.jsx)(J.ZP.Bar, {
-      className: a()(et.streamerControls, {
+      className: l()(et.streamerControls, {
         [et.hidden]: i,
         [et.unpinned]: !n
       }),
@@ -281,7 +281,7 @@ class eo extends(i = s.PureComponent) {
         dynamicSize: !0,
         children: [(0, r.jsxs)("div", {
           className: et.streamerInner,
-          children: [(null == c ? void 0 : c.id) != null && c.id === (null == o ? void 0 : o.id) ? (0, r.jsx)(x.Z, {
+          children: [(null == c ? void 0 : c.id) != null && c.id === (null == o ? void 0 : o.id) ? (0, r.jsx)(S.Z, {
             className: et.gameIcon,
             game: o
           }) : (0, r.jsx)(N.Z, {
@@ -290,7 +290,7 @@ class eo extends(i = s.PureComponent) {
             direction: v.Z.Direction.VERTICAL,
             justify: v.Z.Justify.BETWEEN,
             className: et.streamerInfo,
-            children: [(0, r.jsx)(u.Text, {
+            children: [(0, r.jsx)(d.Text, {
               className: et.streaming,
               variant: "text-sm/normal",
               children: ee.NW.string(ee.t.XKYej4)
@@ -303,25 +303,25 @@ class eo extends(i = s.PureComponent) {
           children: [(0, r.jsx)("div", {
             className: et.streamerIconWrapper,
             children: (0, r.jsx)(w.Z, {
-              stream: d,
+              stream: u,
               iconClassName: et.streamerIcon,
               appContext: q.IlC.OVERLAY
             })
           }), (0, r.jsx)("div", {
             className: et.streamerIconWrapper,
             children: (0, r.jsx)(T.Z, {
-              stream: d,
+              stream: u,
               appContext: q.IlC.OVERLAY
             })
           }), (0, r.jsx)("div", {
             className: et.streamerIconWrapper,
-            children: (0, r.jsx)(u.DY3, {
+            children: (0, r.jsx)(d.DY3, {
               text: ee.NW.string(ee.t.S5anIS),
-              children: (0, r.jsx)(u.zxk, {
+              children: (0, r.jsx)(d.zxk, {
                 onClick: this.handleStopStream,
-                look: u.zxk.Looks.BLANK,
-                size: u.zxk.Sizes.NONE,
-                children: (0, r.jsx)(u.g5r, {
+                look: d.zxk.Looks.BLANK,
+                size: d.zxk.Sizes.NONE,
+                children: (0, r.jsx)(d.g5r, {
                   size: "md",
                   color: "currentColor",
                   className: et.streamerIcon
@@ -360,15 +360,15 @@ class eo extends(i = s.PureComponent) {
       channel: o
     } = this.props;
     if (null == o || null == e || !this.shouldDisplay()) return null;
-    let l = q.t_t.UNPINNED;
-    return i && (l = q.t_t.PINNED), s && (l = q.t_t.IN_GAME_PREVIEW), n && (l = q.t_t.IN_GAME), (0, r.jsxs)(J.ZP, {
-      type: l,
+    let a = q.t_t.UNPINNED;
+    return i && (a = q.t_t.PINNED), s && (a = q.t_t.IN_GAME_PREVIEW), n && (a = q.t_t.IN_GAME), (0, r.jsxs)(J.ZP, {
+      type: a,
       width: 380,
       children: [n ? null : this.renderHeader(), this.renderVoiceUsers(), this.renderStreamerSettings(), n ? null : (0, r.jsx)(Y.Z, {
-        className: a()({
+        className: l()({
           [et.preview]: s
         }),
-        contentClassName: a()({
+        contentClassName: l()({
           [et.hidden]: s
         }),
         channel: o,
@@ -399,7 +399,7 @@ class eo extends(i = s.PureComponent) {
         channel: t,
         title: i
       } = this.props;
-      (0, u.ZDy)(async () => {
+      (0, d.ZDy)(async () => {
         let {
           default: s
         } = await n.e("66063").then(n.bind(n, 344516));
@@ -426,54 +426,54 @@ class eo extends(i = s.PureComponent) {
       let {
         stream: e
       } = this.props;
-      null != e && g.g((0, S.V9)(e))
+      null != e && g.g((0, E.V9)(e))
     })
   }
 }
 
-function ea(e) {
+function el(e) {
   var t;
-  let n = (0, l.e7)([z.Z, A.Z], () => A.Z.getChannel(z.Z.getVoiceChannelId())),
-    i = (0, _.ZP)(n),
+  let n = (0, a.e7)([z.Z, A.Z], () => A.Z.getChannel(z.Z.getVoiceChannelId())),
+    i = (0, O.ZP)(n),
     o = function() {
-      let [e] = (0, l.e7)([B.ZP, Z.Z, z.Z, A.Z], () => {
+      let [e] = (0, a.e7)([U.ZP, P.Z, z.Z, A.Z], () => {
         let e = A.Z.getChannel(z.Z.getVoiceChannelId());
         return null == e ? [
           [], -1
-        ] : e.isGuildStageVoice() ? [Z.Z.getMutableParticipants(e.id, P.pV.SPEAKER), Z.Z.getParticipantsVersion(e.id)] : [B.ZP.getVoiceStatesForChannel(e), B.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], G.Q), t = (0, l.e7)([M.default], () => M.default.getId()), n = (0, Q.Z)({
+        ] : e.isGuildStageVoice() ? [P.Z.getMutableParticipants(e.id, _.pV.SPEAKER), P.Z.getParticipantsVersion(e.id)] : [U.ZP.getVoiceStatesForChannel(e), U.ZP.getVoiceStateVersion(e.getGuildId())]
+      }, [], F.Q), t = (0, a.e7)([M.default], () => M.default.getId()), n = (0, Q.Z)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? -1 : +(n.user.id === t)) : e, [e, t, n])
     }(),
-    a = (0, l.e7)([D.Z], () => D.Z.getStreamerActiveStreamMetadata()),
-    c = (0, l.e7)([O.ZP, V.Z, R.Z], () => {
+    l = (0, a.e7)([k.Z], () => k.Z.getStreamerActiveStreamMetadata()),
+    c = (0, a.e7)([b.ZP, V.Z, R.Z], () => {
       var e;
-      let t = (0, j.Z)(O.ZP, V.Z);
+      let t = (0, Z.Z)(b.ZP, V.Z);
       return null != t ? null === (e = R.Z.getGameByGameData(t)) || void 0 === e ? void 0 : e.id : null
     }),
-    d = (0, y.q)(c),
-    u = (0, l.cj)([O.ZP, V.Z, D.Z, U.default], () => {
-      let e = (0, j.Z)(O.ZP, V.Z),
-        t = D.Z.getCurrentUserActiveStream();
+    u = (0, y.q)(c),
+    d = (0, a.cj)([b.ZP, V.Z, k.Z, B.default], () => {
+      let e = (0, Z.Z)(b.ZP, V.Z),
+        t = k.Z.getCurrentUserActiveStream();
       return {
-        displayUserMode: U.default.getDisplayUserMode(),
-        displayNameMode: U.default.getDisplayNameMode(),
-        avatarSizeMode: U.default.getAvatarSizeMode(),
-        streamApplication: (null == a ? void 0 : a.pid) === (0, H.getPID)() ? (0, C.Z)(e) : null,
+        displayUserMode: B.default.getDisplayUserMode(),
+        displayNameMode: B.default.getDisplayNameMode(),
+        avatarSizeMode: B.default.getAvatarSizeMode(),
+        streamApplication: (null == l ? void 0 : l.pid) === (0, H.getPID)() ? (0, C.Z)(e) : null,
         stream: t
       }
     });
-  return (0, r.jsx)(eo, er(ei(er(ei({}, u), {
-    application: d
+  return (0, r.jsx)(eo, er(ei(er(ei({}, d), {
+    application: u
   }), e), {
     sortedVoiceStates: o,
     channel: n,
     title: null != i ? i : "",
-    streamMetadata: a,
-    streamApplication: null !== (t = u.streamApplication) && void 0 !== t ? t : {
+    streamMetadata: l,
+    streamApplication: null !== (t = d.streamApplication) && void 0 !== t ? t : {
       id: null,
-      name: null == a ? void 0 : a.sourceName
+      name: null == l ? void 0 : l.sourceName
     }
   }))
 }

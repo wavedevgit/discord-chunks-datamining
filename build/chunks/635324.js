@@ -2,14 +2,14 @@
 n(47120);
 var i = n(200651),
   r = n(149765),
-  o = n(481060),
-  l = n(570140),
-  a = n(700785);
-__OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
+  a = n(481060),
+  o = n(570140),
+  s = n(700785);
+__OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
   var {
     clientId: t,
     authorizeProps: {
-      authorizations: s,
+      authorizations: l,
       permissions: c
     }
   } = e, d = function(e, t) {
@@ -17,32 +17,32 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        o = Object.keys(e);
-      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        a = Object.keys(e);
+      for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e.authorizeProps, ["authorizations", "permissions"]);
-  let u = "OAuth2Authorize_".concat(t, "_").concat(d.guildId, "_").concat(d.channelId);
+  let _ = "OAuth2Authorize_".concat(t, "_").concat(d.guildId, "_").concat(d.channelId);
 
-  function h(e) {
+  function u(e) {
     let {
       location: n
     } = e;
-    l.Z.dispatch({
+    o.Z.dispatch({
       type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE",
       clientId: t,
       location: n
     })
   }
-  let p = a.Hn;
+  let f = s.Hn;
   try {
-    p = r.vB(null != c ? c : 0)
-  } catch (e) {}(0, o.ZDy)(async () => {
+    f = r.vB(null != c ? c : 0)
+  } catch (e) {}(0, a.ZDy)(async () => {
     let {
       OAuth2AuthorizeModal: e
     } = await Promise.resolve().then(n.bind(n, 69580));
@@ -66,9 +66,9 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
         }
         return e
       }({}, t, d), r = r = {
-        authorizations: new Map(s),
-        permissions: p,
-        callback: h
+        authorizations: new Map(l),
+        permissions: f,
+        callback: u
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -81,9 +81,9 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
       }), n))
     }
   }, {
-    modalKey: u,
+    modalKey: _,
     onCloseRequest: () => {
-      (0, o.Mr3)(u), h({})
+      (0, a.Mr3)(_), u({})
     }
   })
 })

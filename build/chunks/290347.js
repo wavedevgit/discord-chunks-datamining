@@ -111,15 +111,15 @@ function P(e) {
     header: A,
     headerClassName: Z,
     subHeader: x,
-    subHeaderExtra: w,
-    featureCards: L,
+    subHeaderExtra: L,
+    featureCards: w,
     changeLogId: R,
     button: D,
     body: k
   } = e, {
     onClose: M,
     transitionState: U
-  } = n, G = (0, p.Dt)(), W = L.length % 2 == 0, V = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(!1), [X, J] = i.useState(!0), $ = i.useRef(B), ee = i.useRef(F), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(C), eo = i.useRef(!1);
+  } = n, G = (0, p.Dt)(), W = w.length % 2 == 0, V = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(!1), [X, J] = i.useState(!0), $ = i.useRef(B), ee = i.useRef(F), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(C), eo = i.useRef(!1);
 
   function ea() {
     let e = Date.now(),
@@ -254,16 +254,16 @@ function P(e) {
       }) : null, (0, r.jsxs)(s.X6q, {
         variant: "heading-lg/semibold",
         className: v.subHeader,
-        children: [x, null == w ? void 0 : w()]
+        children: [x, null == L ? void 0 : L()]
       }), null != k && (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
         className: v.bodyText,
         children: k
-      }), L.length > 0 && (0, r.jsx)("div", {
+      }), w.length > 0 && (0, r.jsx)("div", {
         className: o()(v.featureCardGroup, {
           [v.wideStyle]: W
         }),
-        children: L.map((e, t) => (0, r.jsx)(T, I(y({}, e), {
+        children: w.map((e, t) => (0, r.jsx)(T, I(y({}, e), {
           wideStyle: W
         }), "".concat(e.header, "_").concat(t)))
       }), D()]

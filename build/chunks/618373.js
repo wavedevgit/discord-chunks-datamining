@@ -1,12 +1,12 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
   Q: () => u
 });
 var i = n(200651);
 n(192379);
 var r = n(442837),
-  l = n(481060),
-  o = n(594190),
+  o = n(481060),
+  l = n(594190),
   a = n(809357),
   s = n(44359),
   c = n(388032);
@@ -27,10 +27,10 @@ function d(e) {
     messageWithoutKeybind: u,
     highlightAdminWarningIfElevated: d = !1
   } = e, p = (0, a.o)();
-  return (0, r.e7)([o.ZP], () => {
-    let e = o.ZP.getVisibleGame();
-    return null != e && e.elevated && o.ZP.canShowAdminWarning
-  }) ? (0, i.jsx)(l.Text, {
+  return (0, r.e7)([l.ZP], () => {
+    let e = l.ZP.getVisibleGame();
+    return null != e && e.elevated && l.ZP.canShowAdminWarning
+  }) ? (0, i.jsx)(o.Text, {
     variant: "text-xxs/semibold",
     color: d ? "text-warning" : "text-muted",
     children: c.NW.string(c.t.PIeSHB)

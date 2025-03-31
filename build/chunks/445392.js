@@ -1,37 +1,37 @@
-/** Chunk was on 68992 **/
-var o, r = t(442837),
-  i = t(570140);
+/** Chunk was on 98447 **/
+var r, i = n(442837),
+  a = n(570140);
 
-function a(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[n] = t, e
+  }) : e[t] = n, e
 }
-let c = 10 * t(70956).Z.Millis.MINUTE,
-  l = {
+let l = 10 * n(70956).Z.Millis.MINUTE,
+  s = {
     lastUsedCommandId: null,
     lastUsedTimeMs: null
   };
-class d extends(o = r.ZP.PersistedStore) {
+class c extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (l.lastUsedCommandId = e.lastUsedCommandId, l.lastUsedTimeMs = e.lastUsedTimeMs)
+    null != e && (s.lastUsedCommandId = e.lastUsedCommandId, s.lastUsedTimeMs = e.lastUsedTimeMs)
   }
   getState() {
-    return l
+    return s
   }
   getLastUsedCommandId() {
     let e = Date.now();
-    return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (e > l.lastUsedTimeMs + c && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
+    return null == s.lastUsedTimeMs || null == s.lastUsedCommandId ? null : (e > s.lastUsedTimeMs + l && (s.lastUsedCommandId = null, s.lastUsedTimeMs = null), s.lastUsedCommandId)
   }
 }
-a(d, "displayName", "AppLauncherLastUsedCommandStore"), a(d, "persistKey", "AppLauncherLastUsedCommandStore"), new d(i.Z, {
+o(c, "displayName", "AppLauncherLastUsedCommandStore"), o(c, "persistKey", "AppLauncherLastUsedCommandStore"), new c(a.Z, {
   APPLICATION_COMMAND_USED: function(e) {
     let {
-      command: n
+      command: t
     } = e;
-    l.lastUsedCommandId = n.id, l.lastUsedTimeMs = Date.now()
+    s.lastUsedCommandId = t.id, s.lastUsedTimeMs = Date.now()
   }
 })

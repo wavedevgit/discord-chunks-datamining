@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(452081),
   Z = n(46140),
   x = n(981631),
-  w = n(215023),
-  L = n(388032),
+  L = n(215023),
+  w = n(388032),
   R = n(642601);
 let D = function() {
   var e;
@@ -77,10 +77,10 @@ let D = function() {
     window.open(v.Z.getArticleURL(x.BhN.QUESTS_LEARN_MORE))
   }, [H]);
   (0, d.Tt)({
-    location: L.NW.string(L.t.JALI2N)
+    location: w.NW.string(w.t.JALI2N)
   });
-  let z = H ? L.NW.format(L.t.BCBIlp, {}) : L.NW.format(L.t.lmMBf3, {}),
-    Y = H ? L.NW.format(L.t.U9FY0N, {}) : L.NW.string(L.t.oWCrBg);
+  let z = H ? w.NW.format(w.t.BCBIlp, {}) : w.NW.format(w.t.lmMBf3, {}),
+    Y = H ? w.NW.format(w.t.U9FY0N, {}) : w.NW.string(w.t.oWCrBg);
   return (0, r.jsx)("div", {
     className: R.container,
     children: V ? (0, r.jsxs)(E.Z, {
@@ -92,11 +92,11 @@ let D = function() {
         icon: a.qDn,
         children: (0, r.jsx)(N.V9, {
           cardAlignment: N.ek.END,
-          ctaText: L.NW.string(L.t["J+vlIS"]),
+          ctaText: w.NW.string(w.t["J+vlIS"]),
           ctaOnClick: () => {
             (0, u.mK)({
               openInLayer: !1,
-              tab: w.AW.ORBS,
+              tab: L.AW.ORBS,
               analyticsLocations: [],
               analyticsSource: s.Z.QUEST_HOME_PAGE
             })
@@ -106,7 +106,7 @@ let D = function() {
         title: z,
         description: Y,
         button: (0, r.jsx)(h.u, {
-          text: L.NW.string(L.t.hvVgAQ),
+          text: w.NW.string(w.t.hvVgAQ),
           onClick: F
         }),
         className: R.bannerContainer,
@@ -137,7 +137,7 @@ let D = function() {
           title: z,
           description: Y,
           button: (0, r.jsx)(h.u, {
-            text: L.NW.string(L.t.hvVgAQ),
+            text: w.NW.string(w.t.hvVgAQ),
             onClick: F
           }),
           className: R.bannerContainer,

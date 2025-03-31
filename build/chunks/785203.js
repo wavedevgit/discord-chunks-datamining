@@ -48,8 +48,8 @@ function I(e) {
     A = (0, N.rF)(j, n) !== v.Eu4.NONE,
     Z = !(null != r && Date.now() - r <= 432e5) && !P && T && A,
     x = (0, s.m)(n),
-    w = (0, l.e7)([_.Z], () => _.Z.isVisible(e)),
-    L = d.Z.useShouldShowChannelNotice(n),
+    L = (0, l.e7)([_.Z], () => _.Z.isVisible(e)),
+    w = d.Z.useShouldShowChannelNotice(n),
     R = (0, p.h6)(e),
     {
       enableStudyGroup: D
@@ -71,8 +71,8 @@ function I(e) {
   if (I) return 1;
   if (S) return 2;
   if (x || null != U) return 3;
-  if (w) return 4;
-  else if (L) return 5;
+  if (L) return 4;
+  else if (w) return 5;
   else if (k) return 6;
   else if (M) return 7;
   else if (G) return 8;

@@ -1,12 +1,12 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
   P: () => d,
   R: () => u
 }), n(301563);
 var i = n(13245),
   r = n(556296),
-  l = n(237997),
-  o = n(13140),
+  o = n(237997),
+  l = n(13140),
   a = n(145597),
   s = n(987650),
   c = n(981631);
@@ -17,8 +17,8 @@ function u(e, t) {
       i.Z.track(c.rMx.NOTIFICATION_VIEWED, t), i.Z.notificationEvent(e, s.bv.Viewed)
     },
     trackClick(n) {
-      var r, o;
-      let u = l.default.isLocked((0, a.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY;
+      var r, l;
+      let u = o.default.isLocked((0, a.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY;
       i.Z.track(c.rMx.NOTIFICATION_CLICKED, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -36,18 +36,18 @@ function u(e, t) {
           })
         }
         return e
-      }({}, t), o = o = {
+      }({}, t), l = l = {
         location: u,
         action_type: n
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r)), i.Z.notificationEvent(e, s.bv.Clicked)
     }
   }
@@ -55,5 +55,5 @@ function u(e, t) {
 
 function d() {
   let e = r.ZP.getOverlayKeybind();
-  return null != e ? (0, o.BB)(e.shortcut, !0).split(" + ") : ["???"]
+  return null != e ? (0, l.BB)(e.shortcut, !0).split(" + ") : ["???"]
 }

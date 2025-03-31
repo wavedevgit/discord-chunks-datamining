@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => L
+  Z: () => w
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -82,12 +82,12 @@ function x(e) {
   })
 }
 
-function w(e) {
+function L(e) {
   var t, n, l, c;
   let {
     nodeRef: _,
     quest: E
-  } = e, O = (0, u.O5)(), P = (0, a.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), [w, L] = i.useState(!1), R = i.useCallback(() => L(!0), []), D = i.useCallback(() => L(!1), []), k = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), P = (0, a.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), [L, w] = i.useState(!1), R = i.useCallback(() => w(!0), []), D = i.useCallback(() => w(!1), []), k = i.useCallback(e => {
     e.stopPropagation()
   }, []), M = i.useCallback(() => {
     (0, d.AH)(E.id, {
@@ -182,7 +182,7 @@ function w(e) {
         })]
       })]
     }), B && !H && (0, r.jsx)(C.Z, {
-      autoplay: w,
+      autoplay: L,
       className: A.rewardTileWithInstructions,
       quest: E,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -225,11 +225,11 @@ function w(e) {
     })]
   })
 }
-let L = function(e) {
+let w = function(e) {
   return (0, r.jsx)(O.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(w, Z({
+    children: t => (0, r.jsx)(L, Z({
       nodeRef: t
     }, e))
   })

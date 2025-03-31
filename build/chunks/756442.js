@@ -1,5 +1,4 @@
-/** Chunk was on 76977 **/
-"use strict";
+/** Chunk was on 63141 **/
 e.exports = {
   footer: "footer__8e8b5",
   ctaButton: "ctaButton__8e8b5"

@@ -1,11 +1,11 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
   Z: () => c
 });
 var i = n(224706),
   r = n(13245),
-  l = n(864060),
-  o = n(620954),
+  o = n(864060),
+  l = n(620954),
   a = n(987650),
   s = n(388032);
 
@@ -18,10 +18,10 @@ function c(e, t, n, c, u) {
     icon: h,
     title: f,
     body: m
-  } = (0, l.Xi)(e, t, n), {
+  } = (0, o.Xi)(e, t, n), {
     trackView: g,
-    trackClick: O
-  } = (0, o.R)(a.n0.ActivityInvite, {
+    trackClick: v
+  } = (0, l.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
@@ -40,7 +40,7 @@ function c(e, t, n, c, u) {
       g()
     },
     confirmText: s.NW.string(s.t.VJlc0d),
-    onConfirmClick: (l, o) => {
+    onConfirmClick: (o, l) => {
       var a;
       i.Z.join({
         userId: n.id,
@@ -49,10 +49,10 @@ function c(e, t, n, c, u) {
         channelId: e.id,
         messageId: t.id,
         activity: u
-      }), r.Z.updateNotificationStatus(o), O("join")
+      }), r.Z.updateNotificationStatus(l), v("join")
     },
     onDismissClick: () => {
-      O("dismiss")
+      v("dismiss")
     }
   }
 }

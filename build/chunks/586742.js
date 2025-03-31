@@ -1,11 +1,11 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
-  Z: () => A
+  Z: () => D
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(442837),
   s = n(481060),
   c = n(239091),
@@ -16,20 +16,20 @@ var i = n(200651),
   f = n(27457),
   m = n(796638),
   g = n(592125),
-  O = n(131951),
-  v = n(944486),
-  y = n(237997),
-  E = n(136015),
-  b = n(444295),
-  j = n(906037),
+  v = n(131951),
+  y = n(944486),
+  O = n(237997),
+  b = n(136015),
+  _ = n(444295),
+  E = n(906037),
   x = n(804570),
   I = n(501787),
-  S = n(981631),
-  N = n(65154),
-  C = n(388032),
-  Z = n(989424);
+  j = n(981631),
+  C = n(65154),
+  S = n(388032),
+  N = n(989424);
 
-function w(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -48,7 +48,7 @@ function w(e) {
   return e
 }
 
-function P(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,53 +60,53 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = r.memo(function(e) {
+let P = r.memo(function(e) {
     var t;
     let {
       participant: n,
       channel: r,
-      context: l
-    } = e, o = null === (t = n.user) || void 0 === t ? void 0 : t.id;
-    return (0, a.e7)([O.Z], () => null != n.user && null != l && null != r && O.Z.isLocalVideoDisabled(o, l), [o, n.user, l, r]) ? null : (0, i.jsx)(f.ZP, w({}, e))
+      context: o
+    } = e, l = null === (t = n.user) || void 0 === t ? void 0 : t.id;
+    return (0, a.e7)([v.Z], () => null != n.user && null != o && null != r && v.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(f.ZP, Z({}, e))
   }),
   T = r.memo(function(e) {
     let {
-      context: t = N.Yn.DEFAULT,
-      participants: l,
-      locked: o,
+      context: t = C.Yn.DEFAULT,
+      participants: o,
+      locked: l,
       channel: a,
       width: s,
       height: u,
       shouldDisplay: d
     } = e, p = r.useCallback((e, r) => {
-      let l = e.user;
-      (0, b.Ws)(S.Odu.VIDEO, {
-        type: b.Qu.CAMERA,
-        value: b.bk.SETTINGS_OPENED,
-        userId: null == l ? void 0 : l.id
+      let o = e.user;
+      (0, _.Ws)(j.Odu.VIDEO, {
+        type: _.Qu.CAMERA,
+        value: _.bk.SETTINGS_OPENED,
+        userId: null == o ? void 0 : o.id
       }), (0, c.jW)(r, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
-        return n => (0, i.jsx)(e, P(w({}, n), {
-          user: l,
+        return n => (0, i.jsx)(e, w(Z({}, n), {
+          user: o,
           mediaEngineContext: t,
           onWatchStream: () => {
-            (0, b.Ws)(S.Odu.VIDEO, {
-              type: b.Qu.GO_LIVE,
-              value: b.bk.ENABLED,
-              userId: null == l ? void 0 : l.id
+            (0, _.Ws)(j.Odu.VIDEO, {
+              type: _.Qu.GO_LIVE,
+              value: _.bk.ENABLED,
+              userId: null == o ? void 0 : o.id
             })
           }
         }))
       })
-    }, [t]), f = (0, b.ee)(() => new Set(l.map(e => {
+    }, [t]), f = (0, _.ee)(() => new Set(o.map(e => {
       var t;
       return null === (t = e.user) || void 0 === t ? void 0 : t.id
-    })), [l]);
+    })), [o]);
     r.useEffect(() => {
-      d && (0, b.zi)(S.Odu.VIDEO, {
-        locked: y.default.isInstanceLocked(),
+      d && (0, _.zi)(j.Odu.VIDEO, {
+        locked: O.default.isInstanceLocked(),
         shownUserIds: Array.from(f),
         liveUserIds: Array.from(f),
         contentInventoryIds: []
@@ -117,29 +117,29 @@ let _ = r.memo(function(e) {
       height: u
     }), [s, u]);
     return (0, i.jsx)(i.Fragment, {
-      children: l.map(e => (0, i.jsx)(_, {
+      children: o.map(e => (0, i.jsx)(P, {
         participant: e,
         width: s,
-        className: Z.tile,
+        className: N.tile,
         containerStyle: m,
         fit: h.L.COVER,
         channel: a,
         inPopout: !0,
         inCall: !0,
         noBorder: !0,
-        onContextMenu: o ? void 0 : p,
-        forceIdle: o,
+        onContextMenu: l ? void 0 : p,
+        forceIdle: l,
         paused: !d,
         inOverlayPopout: !0,
         context: t
       }, e.id))
     })
   }),
-  D = r.memo(function(e) {
+  k = r.memo(function(e) {
     let {
-      context: t = N.Yn.DEFAULT,
+      context: t = C.Yn.DEFAULT,
       participants: n,
-      participantsVersion: l,
+      participantsVersion: o,
       locked: a,
       widget: c,
       channel: u,
@@ -149,25 +149,25 @@ let _ = r.memo(function(e) {
       containerRef: f
     } = e, m = "boolean" != typeof c.meta.horizontal || c.meta.horizontal, g = n.length > 0 && null != t && null != u && (!a || c.pinned);
     r.useEffect(() => {
-      (0, j.m3)({
+      (0, E.m3)({
         locked: a,
         pinned: c.pinned,
         widget: c.type,
         isPreviewingInGame: !1
       }, g)
     }, [a, c, g]);
-    let O = r.useMemo(() => ({
+    let v = r.useMemo(() => ({
         opacity: c.opacity
       }), [c.opacity]),
-      v = r.useMemo(() => o()({
-        [Z.videoList]: !0,
-        [Z.vertical]: !m,
-        [Z.hidden]: !g && a
+      y = r.useMemo(() => l()({
+        [N.videoList]: !0,
+        [N.vertical]: !m,
+        [N.hidden]: !g && a
       }), [m, g, a]);
     return 0 !== n.length || a ? null == u ? null : (0, i.jsx)("div", {
       ref: f,
-      className: v,
-      style: O,
+      className: y,
+      style: v,
       children: (0, i.jsx)(T, {
         context: t,
         participants: n,
@@ -176,24 +176,24 @@ let _ = r.memo(function(e) {
         width: d,
         height: p,
         shouldDisplay: g,
-        participantsVersion: l
+        participantsVersion: o
       })
     }) : h ? (0, i.jsx)("div", {
       ref: f,
       children: (0, i.jsx)(x.E, {
-        emptyText: C.NW.string(C.t["aTiM4+"]),
+        emptyText: S.NW.string(S.t["aTiM4+"]),
         icon: s.Odl,
         absolute: !0
       })
     }) : null
   });
 
-function A(e) {
-  let t = (0, a.e7)([v.Z, g.Z], () => g.Z.getChannel(v.Z.getVoiceChannelId())),
+function D(e) {
+  let t = (0, a.e7)([y.Z, g.Z], () => g.Z.getChannel(y.Z.getVoiceChannelId())),
     n = null == t ? void 0 : t.id,
-    [l, o] = (0, a.e7)([p.Z], () => null == n ? [
+    [o, l] = (0, a.e7)([p.Z], () => null == n ? [
       [], 0
-    ] : [p.Z.getVideoParticipants(n), p.Z.getParticipantsVersion(n)], [n], E.Q),
+    ] : [p.Z.getVideoParticipants(n), p.Z.getParticipantsVersion(n)], [n], b.Q),
     s = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
       width: c,
@@ -201,30 +201,30 @@ function A(e) {
       ref: f
     } = (0, d.Z)(e.locked, e.widget.pinned),
     {
-      participantTileWidth: O,
-      visibleParticipants: y
-    } = (0, m.ZB)(s ? null != c ? c : e.width : null != h ? h : e.height, l, {
+      participantTileWidth: v,
+      visibleParticipants: O
+    } = (0, m.ZB)(s ? null != c ? c : e.width : null != h ? h : e.height, o, {
       tileWidth: I.vZ,
       tileMinWidth: I.mo,
       tileMargin: I.F$,
       limit: 8,
       cropSelfVideo: !0,
-      version: o
+      version: l
     }),
-    b = {
+    _ = {
       id: e.widget.id,
       size: e.widget.size,
       containerWidth: e.width,
       containerHeight: e.height
     },
-    j = r.useRef(b);
-  return r.useLayoutEffect(() => void(j.current = b)), r.useLayoutEffect(() => {
+    E = r.useRef(_);
+  return r.useLayoutEffect(() => void(E.current = _)), r.useLayoutEffect(() => {
     let {
       size: e,
       id: t,
       containerWidth: n,
       containerHeight: i
-    } = j.current;
+    } = E.current;
     (s && e.height > e.width || !s && e.width > e.height) && (0, u.nv)({
       widgetId: t,
       size: {
@@ -233,12 +233,12 @@ function A(e) {
         height: n
       }
     })
-  }, [s]), (0, i.jsx)(D, P(w({}, e), {
+  }, [s]), (0, i.jsx)(k, w(Z({}, e), {
     channel: t,
-    participants: y,
-    participantsVersion: o,
-    width: s ? O : null != c ? c : e.width,
-    height: s ? null != h ? h : e.height : O,
+    participants: O,
+    participantsVersion: l,
+    width: s ? v : null != c ? c : e.width,
+    height: s ? null != h ? h : e.height : v,
     containerRef: f
   }))
 }

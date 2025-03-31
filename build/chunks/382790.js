@@ -1,23 +1,23 @@
-/** Chunk was on 76977 **/
+/** Chunk was on 45585 **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => S
 }), n(47120);
 var i, r = n(200651),
   s = n(192379),
   o = n(120356),
-  a = n.n(o),
-  l = n(442837),
+  l = n.n(o),
+  a = n(442837),
   c = n(552062),
-  d = n(416568),
-  u = n(914010),
+  u = n(416568),
+  d = n(914010),
   h = n(518084),
   p = n(178528),
   f = n(669083),
   g = n(483962),
   m = n(711553),
   y = n(388032),
-  _ = n(604948);
+  O = n(604948);
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function x(e) {
   let {
     closePopout: t
   } = e;
@@ -36,7 +36,7 @@ function b(e) {
     onClose: t
   })
 }
-class O extends(i = s.PureComponent) {
+class b extends(i = s.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
@@ -48,15 +48,15 @@ class O extends(i = s.PureComponent) {
       onDragStart: this.onDragStart
     }, e) : (0, r.jsx)(m.Z, {
       title: y.NW.string(y.t.YUU0RE),
-      renderSettings: b,
+      renderSettings: x,
       onDragStart: this.onDragStart,
       children: (0, r.jsx)(g.Z, {})
     }), o = n ? "div" : h.ZP;
     return (0, r.jsxs)(o, {
-      className: a()(_.base, {
-        [_.widget]: !n
+      className: l()(O.base, {
+        [O.widget]: !n
       }, i),
-      children: [(0, r.jsx)(d.Z, {
+      children: [(0, r.jsx)(u.Z, {
         isOverlay: !0,
         disableAppDownload: !0,
         isVisible: !t
@@ -72,9 +72,9 @@ class O extends(i = s.PureComponent) {
     })
   }
 }
-v(O, "defaultProps", {
+v(b, "defaultProps", {
   contained: !1
 });
-let x = l.ZP.connectStores([u.Z], () => ({
-  selectedGuildId: u.Z.getGuildId()
-}))(O)
+let S = a.ZP.connectStores([d.Z], () => ({
+  selectedGuildId: d.Z.getGuildId()
+}))(b)

@@ -1,5 +1,4 @@
-/** Chunk was on 76977 **/
-"use strict";
+/** Chunk was on 63141 **/
 e.exports = {
   keybindIndicator: "keybindIndicator__1921e",
   keybindIcon: "keybindIcon__1921e",

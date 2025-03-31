@@ -1,4 +1,4 @@
-/** Chunk was on 54030 **/
+/** Chunk was on 86507 **/
 e.exports = {
   recentChannelsMenu: "recentChannelsMenu__711d3",
   recentChannelsMenuHeader: "recentChannelsMenuHeader__711d3",

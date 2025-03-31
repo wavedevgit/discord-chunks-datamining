@@ -199,29 +199,29 @@ class A {
 }
 let Z = !0,
   x = !1,
-  w = N.pJs.ONLINE,
-  L = new A,
+  L = N.pJs.ONLINE,
+  w = new A,
   R = !0,
   D = !1;
 
 function k() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  Z && (e || w !== N.pJs.ONLINE && w !== N.pJs.ADD_FRIEND) && !x && (Z = !1, x = !0, s.Z.fetchRelationships())
+  Z && (e || L !== N.pJs.ONLINE && L !== N.pJs.ADD_FRIEND) && !x && (Z = !1, x = !0, s.Z.fetchRelationships())
 }
 
 function M() {
-  if (Z = !0, R ? x = !1 : k(), L = L.reset(), D) return;
-  let e = L.getRelationshipCounts();
-  w = 0 === e[N.OGo.FRIEND] ? 0 !== e[N.OGo.PENDING_INCOMING] ? N.pJs.PENDING : N.pJs.ADD_FRIEND : N.pJs.ONLINE
+  if (Z = !0, R ? x = !1 : k(), w = w.reset(), D) return;
+  let e = w.getRelationshipCounts();
+  L = 0 === e[N.OGo.FRIEND] ? 0 !== e[N.OGo.PENDING_INCOMING] ? N.pJs.PENDING : N.pJs.ADD_FRIEND : N.pJs.ONLINE
 }
 
 function U() {
-  L = R ? new A : L.reset()
+  w = R ? new A : w.reset()
 }
 
 function G(e) {
   return function() {
-    return !R && !!L.update(e) && (L = L.clone(), !0)
+    return !R && !!w.update(e) && (w = w.clone(), !0)
   }
 }
 class W extends(r = o.ZP.Store) {
@@ -231,8 +231,8 @@ class W extends(r = o.ZP.Store) {
   getState() {
     return {
       fetching: x,
-      section: w,
-      rows: L
+      section: L,
+      rows: w
     }
   }
 }
@@ -242,7 +242,7 @@ let V = new W(a.Z, {
     M()
   },
   FRIENDS_SET_SECTION: function(e) {
-    w = e.section, k()
+    L = e.section, k()
   },
   CHANNEL_SELECT: function(e) {
     let {
@@ -257,6 +257,6 @@ let V = new W(a.Z, {
     Z = !0, x = !0
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
-    w = e.section, D = !0
+    L = e.section, D = !0
   }
 })

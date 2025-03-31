@@ -33,7 +33,7 @@ var r = n(200651),
   Z = n(388032),
   x = n(402204);
 
-function w(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function w(e) {
   return e
 }
 
-function L(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -124,7 +124,7 @@ let D = e => {
         })
       }, [b, _, a, N]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [O && (0, r.jsx)(k, {}), (0, r.jsx)(u.Qj, L(w({
+      children: [O && (0, r.jsx)(k, {}), (0, r.jsx)(u.Qj, w(L({
         selected: t,
         route: j.Z5c.COLLECTIBLES_SHOP,
         icon: null != o ? o : s.EOn,
@@ -138,7 +138,7 @@ let D = e => {
       }))]
     })
   },
-  U = e => (0, r.jsx)(M, L(w({}, e), {
+  U = e => (0, r.jsx)(M, w(L({}, e), {
     children: (0, r.jsx)(D, {})
   })),
   G = i.memo(function(e) {
@@ -203,7 +203,7 @@ let D = e => {
       allowOverflow: !0,
       hideOnClick: !1,
       "aria-label": "string" == typeof V ? V : Z.NW.string(Z.t.rSXaxc),
-      children: e => (0, r.jsxs)(M, L(w(L(w({
+      children: e => (0, r.jsxs)(M, w(L(w(L({
         className: null != y.entryPointClassName ? (0, _.l)(x, y.entryPointClassName) : void 0
       }, I), {
         icon: y.entryPointIcon
@@ -249,7 +249,7 @@ let D = e => {
       delay: 100,
       hideOnClick: !1,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(M, L(w({}, n, e), {
+      children: e => (0, r.jsx)(M, w(L({}, n, e), {
         children: (0, r.jsx)(D, {
           color: t.badgeColor
         })
@@ -278,7 +278,7 @@ let D = e => {
       animation: s.yRy.Animation.TRANSLATE,
       closeOnScroll: !0,
       onRequestClose: () => n(A.L.USER_DISMISS),
-      children: t => (0, r.jsx)(M, L(w({}, e), {
+      children: t => (0, r.jsx)(M, w(L({}, e), {
         onClick: o,
         children: (0, r.jsx)(D, {})
       }))
@@ -301,20 +301,20 @@ let D = e => {
       onClick: n,
       listItemRef: l
     };
-    if (s) return (0, r.jsx)(B, w({}, c));
+    if (s) return (0, r.jsx)(B, L({}, c));
     if (null != o) switch (o.type) {
       case T.k2.TOOLTIP:
-        return (0, r.jsx)(V, L(w({}, c), {
+        return (0, r.jsx)(V, w(L({}, c), {
           displayOptions: o
         }));
       case T.k2.COACHTIP:
-        return (0, r.jsx)(W, L(w({}, c), {
+        return (0, r.jsx)(W, w(L({}, c), {
           displayOptions: o
         }));
       case T.k2.BADGE:
-        return (0, r.jsx)(U, w({}, c))
+        return (0, r.jsx)(U, L({}, c))
     }
     return (0, r.jsxs)(r.Fragment, {
-      children: [a && (0, r.jsx)(H, {}), (0, r.jsx)(M, w({}, c))]
+      children: [a && (0, r.jsx)(H, {}), (0, r.jsx)(M, L({}, c))]
     })
   }

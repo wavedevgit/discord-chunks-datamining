@@ -1,4 +1,4 @@
-/** Chunk was on 14721 **/
+/** Chunk was on 98447 **/
 n.d(t, {
   y: () => N
 }), n(47120), n(266796);
@@ -92,7 +92,7 @@ function N(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), S = E ? c.Iy5 : c.X_q, P = i.useCallback(() => (0, f.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), L = i.useRef(0), k = n !== a ? L.current + 1 : L.current;
+  }(), P = E ? c.Iy5 : c.X_q, S = i.useCallback(() => (0, f.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), L = i.useRef(0), k = n !== a ? L.current + 1 : L.current;
   i.useEffect(() => {
     L.current = k
   }, [k]);
@@ -262,7 +262,7 @@ function N(e) {
             tabIndex: Z ? 0 : -1
           }, e), {
             onClick: () => O(),
-            children: (0, r.jsx)(S, {
+            children: (0, r.jsx)(P, {
               size: "custom",
               width: 20,
               height: 20,
@@ -284,7 +284,7 @@ function N(e) {
             },
             tabIndex: Z ? 0 : -1
           }, e), {
-            onClick: P,
+            onClick: S,
             children: (0, r.jsx)(c.k$p, {
               size: "custom",
               width: 20,

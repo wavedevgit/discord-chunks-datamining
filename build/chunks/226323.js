@@ -97,8 +97,8 @@ function P(e) {
       user: A,
       nick: Z,
       mute: x,
-      deaf: w,
-      serverMute: L,
+      deaf: L,
+      serverMute: w,
       serverDeaf: R
     } = e,
     D = (0, a.e7)([E.Z], () => E.Z.isLocalMute(A.id)),
@@ -128,8 +128,8 @@ function P(e) {
       if (i) return T.mute
     }({
       serverDeaf: R,
-      deaf: w,
-      serverMute: L,
+      deaf: L,
+      serverMute: w,
       mute: x,
       localMute: D
     })) && void 0 !== l ? l : {},

@@ -1,4 +1,4 @@
-/** Chunk was on 14721 **/
+/** Chunk was on 98447 **/
 n.d(t, {
   l: () => F
 }), n(47120);
@@ -27,8 +27,8 @@ var r = n(200651),
   N = n(799143),
   O = n(358820),
   E = n(448697),
-  S = n(365831),
-  P = n(639539),
+  P = n(365831),
+  S = n(639539),
   w = n(627325),
   T = n(981631),
   L = n(354459),
@@ -177,7 +177,7 @@ function F(e) {
         className: D.upsellCountdownContainer,
         children: [null != G && (0, r.jsx)(l.animated.div, {
           style: Q,
-          children: (0, r.jsx)(P.J, {
+          children: (0, r.jsx)(S.J, {
             catalogUpdateTime: G,
             isScrolled: Y
           })
@@ -204,7 +204,7 @@ function F(e) {
             })
           })
         })]
-      }), (0, r.jsx)(S.y, {}), (0, r.jsx)(E.R, {}), (0, r.jsxs)("div", {
+      }), (0, r.jsx)(P.y, {}), (0, r.jsx)(E.R, {}), (0, r.jsxs)("div", {
         className: o()(D.voiceFiltersFooter, {
           [D.hasActiveVoice]: null != J
         }),

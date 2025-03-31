@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => i
+  C: () => i,
+  X: () => o
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -28,4 +29,13 @@ function i(e) {
   }, {
     autoTrackExposure: !0
   })
+}
+
+function o(e) {
+  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  return r.getCurrentConfig({
+    location: e
+  }, {
+    autoTrackExposure: t
+  }).enabled
 }

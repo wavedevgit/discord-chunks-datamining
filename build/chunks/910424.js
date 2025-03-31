@@ -1,4 +1,4 @@
-/** Chunk was on 2171 **/
+/** Chunk was on 12321 **/
 n.d(t, {
   Z: () => h
 }), n(47120);
@@ -59,8 +59,8 @@ function h(e) {
     applicationStream: j,
     onAction: S
   } = e, {
-    activeStream: P,
-    watchingOtherStream: N
+    activeStream: N,
+    watchingOtherStream: P
   } = (0, l.cj)([d.Z], () => ({
     activeStream: d.Z.getActiveStreamForApplicationStream(j),
     watchingOtherStream: null != j && d.Z.getAllActiveStreamsForChannel(j.channelId).filter(e => {
@@ -69,7 +69,7 @@ function h(e) {
       } = e;
       return t !== j.ownerId
     }).length > 0
-  })), x = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [I, Z] = (0, u.wq)(x), E = (0, c.Aq)(), w = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, T = e => {
+  })), x = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [I, Z] = (0, u.wq)(x), E = (0, c.Aq)(), w = null != N && null != j && N.state !== g.jm8.ENDED && N.ownerId === j.ownerId, T = e => {
     null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), w || (0, s.iV)(j, {
       forceMultiple: e
     }), E.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
@@ -92,7 +92,7 @@ function h(e) {
         color: "currentColor",
         className: y.streamIcon
       }), C]
-    }), "play"), N && !w ? (0, r.jsx)(i.ua7, {
+    }), "play"), P && !w ? (0, r.jsx)(i.ua7, {
       text: b.NW.string(b.t.wCrzur),
       children: e => (0, r.jsx)(m.Z, v(O(v(O({}, e), {
         onClick: () => {

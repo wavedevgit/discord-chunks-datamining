@@ -1,12 +1,12 @@
-/** Chunk was on 50751 **/
+/** Chunk was on 86507 **/
 n.d(t, {
   Z: () => d
 });
 var i = n(200651);
 n(192379);
 var r = n(120356),
-  l = n.n(r),
-  o = n(442837),
+  o = n.n(r),
+  l = n(442837),
   a = n(592125),
   s = n(944486),
   c = n(293224),
@@ -15,9 +15,9 @@ var r = n(120356),
 function d(e) {
   let {
     locked: t
-  } = e, n = (0, o.e7)([s.Z], () => s.Z.getVoiceChannelId()), r = (0, o.e7)([a.Z], () => a.Z.getChannel(n)), d = null != r;
+  } = e, n = (0, l.e7)([s.Z], () => s.Z.getVoiceChannelId()), r = (0, l.e7)([a.Z], () => a.Z.getChannel(n)), d = null != r;
   return (0, i.jsxs)("div", {
-    className: l()({
+    className: o()({
       [u.panelContainer]: !0,
       [u.locked]: t
     }),
@@ -45,7 +45,7 @@ function d(e) {
           locked: t
         })]
       }), (0, i.jsx)("div", {
-        className: l()(u.buttonSection, d && u.inCall),
+        className: o()(u.buttonSection, d && u.inCall),
         children: (0, i.jsx)(c.c_, {
           voiceChannel: r,
           locked: t
