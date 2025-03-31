@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(392711),
-  l = n(990547),
+  l = n(392711),
+  o = n(990547),
   c = n(399606),
   d = n(704215),
   u = n(481060),
@@ -95,16 +95,16 @@ let R = {
       isEasterEggTriggered: $,
       onHover: ee,
       onUnhover: et
-    } = (0, _.Z)(5), en = (0, o.debounce)(() => {
+    } = (0, _.Z)(5), en = (0, l.debounce)(() => {
       f.default.track(v.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
-        card_type: (0, o.snakeCase)(t),
+        card_type: (0, l.snakeCase)(t),
         is_tenure_reward: t === E.u.TENURE_REWARD_COLLECTIBLE,
         reward_status: null == U ? void 0 : U.nitroTenureStatus
       })
-    }, 800), er = (0, o.debounce)(() => {
+    }, 800), er = (0, l.debounce)(() => {
       null != w && f.default.track(v.rMx.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
-        card_type: (0, o.snakeCase)(t),
-        function_name: (0, o.snakeCase)(w.name)
+        card_type: (0, l.snakeCase)(t),
+        function_name: (0, l.snakeCase)(w.name)
       })
     }, 800), ei = i.useRef(null);
     e = P(A({
@@ -120,8 +120,8 @@ let R = {
         card_type: t
       }), null != s && J(T.L.TAKE_ACTION))
     }, [k, W, s, t, J]), (0, g.Z)({
-      type: l.ImpressionTypes.VIEW,
-      name: l.ImpressionNames.PREMIUM_MARKETING_TENURE_REWARD_CARD,
+      type: o.ImpressionTypes.VIEW,
+      name: o.ImpressionNames.PREMIUM_MARKETING_TENURE_REWARD_CARD,
       properties: {
         user_tenure_reward_id: null == U ? void 0 : U.tenureRewardStatusId,
         tenure_reward_id: null == U ? void 0 : U.tenureRewardSkuId,
@@ -132,8 +132,8 @@ let R = {
     }, {
       disableTrack: t !== E.u.TENURE_REWARD_COLLECTIBLE || null == U
     }), (0, g.Z)({
-      type: l.ImpressionTypes.VIEW,
-      name: l.ImpressionNames.PERK_DISCOVERABILITY_CARD,
+      type: o.ImpressionTypes.VIEW,
+      name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
       properties: {
         name: t
       }
@@ -243,8 +243,8 @@ let Z = i.forwardRef((e, t) => {
   let {
     title: i,
     titleClassName: s = "",
-    subtitle: o = "",
-    description: l = "",
+    subtitle: l = "",
+    description: o = "",
     descriptionCta: c = "",
     isPremiumGetCta: d,
     onCtaClick: m,
@@ -258,7 +258,7 @@ let Z = i.forwardRef((e, t) => {
     pillText: E,
     perkImage: S,
     imageOverlayText: v
-  } = e, T = N === j.R0.CARD_CAROUSEL_FIRST_ROW || N === j.R0.CARD_CAROUSEL_SECOND_ROW || N === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== l || "" !== c || "" !== o && f === j.zW.REWARD, A = (0, x._)(f);
+  } = e, T = N === j.R0.CARD_CAROUSEL_FIRST_ROW || N === j.R0.CARD_CAROUSEL_SECOND_ROW || N === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, x._)(f);
   return (0, r.jsxs)(u.P3F, {
     className: a()(y.card, p, null === (n = A.cardContainer) || void 0 === n ? void 0 : n.className, {
       [y.clickable]: null != b,
@@ -278,7 +278,7 @@ let Z = i.forwardRef((e, t) => {
     }), (0, r.jsx)(O.Z, {
       title: i,
       titleClassName: s,
-      subtitle: o,
+      subtitle: l,
       perkImage: S,
       isCarousel: T,
       descriptionCta: c,
@@ -290,8 +290,8 @@ let Z = i.forwardRef((e, t) => {
     }), I && (0, r.jsx)(C.Z, {
       title: i,
       titleClassName: s,
-      subtitle: o,
-      description: l,
+      subtitle: l,
+      description: o,
       descriptionCta: c,
       isPremiumGetCta: d,
       onCtaClick: m,

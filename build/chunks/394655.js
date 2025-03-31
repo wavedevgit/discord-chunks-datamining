@@ -6,17 +6,17 @@ var r = n(200651),
   i = n(905405),
   s = n(63063),
   a = n(695346),
-  o = n(838436),
-  l = n(51331),
+  l = n(838436),
+  o = n(51331),
   c = n(726985),
   d = n(981631),
   u = n(388032);
 
 function m() {
   let e = (0, i.p)();
-  return (0, r.jsx)(o.U, {
+  return (0, r.jsx)(l.U, {
     setting: c.s6.PRIVACY_KEYWORD_FILTER_V2,
-    children: (0, r.jsx)(l.Z, {
+    children: (0, r.jsx)(o.Z, {
       value: e,
       onChange: e => a.gw.updateSetting({
         profanity: e,

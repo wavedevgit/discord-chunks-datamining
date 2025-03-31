@@ -213,7 +213,7 @@ function F(e) {
 }
 
 function V(e) {
-  return e === b._b.TEXT
+  return e === b._b.TEXT || e === b._b.PLAY_TAB || e === b._b.QUICK_LAUNCHER
 }
 
 function Z(e) {

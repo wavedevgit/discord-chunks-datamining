@@ -1,7 +1,7 @@
 /** Chunk was on 20447 **/
 n.d(t, {
   SI: () => c,
-  nS: () => o
+  nS: () => l
 });
 var r = n(81643),
   i = n(818083);
@@ -59,7 +59,7 @@ let s = (0, i.B)({
       }
     }]
   }),
-  o = e => {
+  l = e => {
     let t = a.useExperiment({
         location: e
       }, {
@@ -72,7 +72,7 @@ let s = (0, i.B)({
       });
     return t.dmOffByDefault || n.dmOffByDefault
   },
-  l = e => {
+  o = e => {
     let t = a.getCurrentConfig({
         location: e
       }, {
@@ -85,4 +85,4 @@ let s = (0, i.B)({
       });
     return t.messageRequestOnByDefault || n.messageRequestOnByDefault
   },
-  c = () => (0, r.sf)() && l("shouldAgeVerifyForDMDefaultOff")
+  c = () => (0, r.sf)() && o("shouldAgeVerifyForDMDefaultOff")

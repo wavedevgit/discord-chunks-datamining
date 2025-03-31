@@ -7,8 +7,8 @@ n(192379);
 var i = n(921801),
   s = n(63063),
   a = n(10298),
-  o = n(924356),
-  l = n(945627),
+  l = n(924356),
+  o = n(945627),
   c = n(24400),
   d = n(122897),
   u = n(821035),
@@ -39,7 +39,7 @@ let v = () => (0, r.jsx)(f.Z, {
   T = () => (0, r.jsxs)(f.Z, {
     title: S.NW.string(S.t.xVRG4O),
     webSetting: O.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(o.Z, {}), (0, r.jsx)(b.Z, {})]
+    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(b.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
     title: S.NW.string(S.t["1Qn8iY"]),
@@ -54,7 +54,7 @@ let v = () => (0, r.jsx)(f.Z, {
       title: S.NW.string(S.t.oPyABA),
       description: e,
       webSetting: O.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
-      children: (0, r.jsx)(l.Z, {})
+      children: (0, r.jsx)(o.Z, {})
     })
   };
 

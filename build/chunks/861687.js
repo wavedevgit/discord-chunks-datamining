@@ -363,6 +363,7 @@ class ev extends f.Z {
       null != e && this.context === eo.Yn.DEFAULT && (e.stop(), this._sentVideo && e.getOutboundStats().forEach(t => {
         var n;
         (null !== (n = t.num_frames) && void 0 !== n ? n : 0) > 0 && U.default.track(ei.rMx.VIDEO_STREAM_ENDED, ec(es(ec(es({}, this._getAnalyticsProperties()), {
+          app_hardware_acceleration_enabled: G.Z.getAppHardwareAccelerationEnabled(),
           media_session_id: this.getMediaSessionId(),
           sender_user_id: this.userId,
           reason: r,
@@ -377,6 +378,7 @@ class ev extends f.Z {
         var n;
         let i = e.getInboundStats(t);
         (null !== (n = null == i ? void 0 : i.num_frames) && void 0 !== n ? n : 0) > 0 && U.default.track(ei.rMx.VIDEO_STREAM_ENDED, es(ec(es({}, this._getAnalyticsProperties()), {
+          app_hardware_acceleration_enabled: G.Z.getAppHardwareAccelerationEnabled(),
           media_session_id: this.getMediaSessionId(),
           sender_user_id: t,
           reason: r,
@@ -727,8 +729,7 @@ class ev extends f.Z {
       rtc_connection_id: this.getRTCConnectionId(),
       context: this.context,
       voice_backend_version: this.voiceVersion,
-      rtc_worker_backend_version: this.rtcWorkerVersion,
-      app_hardware_acceleration_enabled: G.Z.getAppHardwareAccelerationEnabled()
+      rtc_worker_backend_version: this.rtcWorkerVersion
     }
   }
   _handleClientConnect(e) {
@@ -745,6 +746,7 @@ class ev extends f.Z {
       let t = a.getInboundStats(e),
         n = null !== (i = null == t ? void 0 : t.num_frames) && void 0 !== i ? i : 0;
       null != t && n > 0 && (U.default.track(ei.rMx.VIDEO_STREAM_ENDED, es(ec(es({}, this._getAnalyticsProperties()), {
+        app_hardware_acceleration_enabled: G.Z.getAppHardwareAccelerationEnabled(),
         media_session_id: this.getMediaSessionId(),
         sender_user_id: e,
         reason: "User disconnected",

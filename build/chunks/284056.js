@@ -7,8 +7,8 @@ var r = n(200651),
   i = n(192379),
   s = n(392711),
   a = n.n(s),
-  o = n(442837),
-  l = n(46973),
+  l = n(442837),
+  o = n(46973),
   c = n(846519),
   d = n(481060),
   u = n(846027),
@@ -34,7 +34,7 @@ class E extends i.PureComponent {
     this._initTimeout.start(1e3, this.setupVoiceActivity)
   }
   componentWillUnmount() {
-    this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), p.Z.getMediaEngine().removeListener(l.aB.VoiceActivity, this.handleVoiceActivity)
+    this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), p.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, this.handleVoiceActivity)
   }
   _micTestStart() {
     let {
@@ -45,8 +45,8 @@ class E extends i.PureComponent {
       outputVolume: i,
       inputMode: s,
       vadAutoThreshold: a,
-      vadThreshold: o,
-      location: l,
+      vadThreshold: l,
+      location: o,
       isDeafened: c
     } = this.props, d = !1;
     e && !c && (u.Z.toggleSelfDeaf(), d = !0), u.Z.setLoopback("mic_test", !0), this._micTestStartTime = Date.now(), this.setState({
@@ -60,8 +60,8 @@ class E extends i.PureComponent {
       output_device_volume: i,
       input_mode: s,
       input_sensitivity_is_automatic: a,
-      input_sensitivity_threshold: Math.round(o),
-      location: l
+      input_sensitivity_threshold: Math.round(l),
+      location: o
     })
   }
   _micTestStop() {
@@ -101,8 +101,8 @@ class E extends i.PureComponent {
       notchBackground: i,
       buttonTest: s,
       buttonStop: a,
-      buttonClassName: o,
-      buttonColor: l,
+      buttonClassName: l,
+      buttonColor: o,
       isDeafened: c,
       buttonMinWidth: u,
       measureButtonRef: m
@@ -131,8 +131,8 @@ class E extends i.PureComponent {
             buttonRef: m,
             grow: !0,
             size: d.zxk.Sizes.SMALL,
-            className: o,
-            color: l,
+            className: l,
+            color: o,
             children: N
           }), (0, r.jsx)("div", {
             className: x.buttonSizerSpacer
@@ -150,8 +150,8 @@ class E extends i.PureComponent {
               onMouseEnter: t,
               onMouseLeave: n,
               size: d.zxk.Sizes.SMALL,
-              className: o,
-              color: l,
+              className: l,
+              color: o,
               style: null != u ? {
                 minWidth: u
               } : {
@@ -175,7 +175,7 @@ class E extends i.PureComponent {
       isDetectingInput: !0,
       didDeafenUser: !1
     }), _(this, "setupVoiceActivity", () => {
-      p.Z.getMediaEngine().on(l.aB.VoiceActivity, this.handleVoiceActivity)
+      p.Z.getMediaEngine().on(o.aB.VoiceActivity, this.handleVoiceActivity)
     }), _(this, "handleVoiceActivity", e => {
       let {
         isMicTesting: t
@@ -205,12 +205,12 @@ function j(e) {
   let {
     inputDevice: i,
     outputDevice: s,
-    modeOptions: l,
+    modeOptions: o,
     inputVolume: c,
     outputVolume: d,
     inputMode: u,
     isDeafened: g
-  } = (0, o.cj)([p.Z], () => {
+  } = (0, l.cj)([p.Z], () => {
     let e = p.Z.getInputDeviceId(),
       t = p.Z.getInputDevices(),
       n = a().find(t, t => {
@@ -227,19 +227,19 @@ function j(e) {
         } = e;
         return t === r
       }),
-      o = p.Z.getModeOptions(),
-      l = p.Z.getInputVolume(),
+      l = p.Z.getModeOptions(),
+      o = p.Z.getInputVolume(),
       c = p.Z.getOutputVolume();
     return {
       inputDevice: n,
       outputDevice: s,
-      modeOptions: o,
-      inputVolume: l,
+      modeOptions: l,
+      inputVolume: o,
       outputVolume: c,
       inputMode: p.Z.getMode(),
       isDeafened: p.Z.isSelfDeaf()
     }
-  }), f = (0, o.e7)([h.Z], () => h.Z.isConnected()), {
+  }), f = (0, l.e7)([h.Z], () => h.Z.isConnected()), {
     ref: N,
     width: b
   } = (0, m.Z)();
@@ -260,8 +260,8 @@ function j(e) {
     outputVolume: d,
     inputMode: u,
     isDeafened: g,
-    vadThreshold: l.threshold,
-    vadAutoThreshold: l.autoThreshold,
+    vadThreshold: o.threshold,
+    vadAutoThreshold: o.autoThreshold,
     inputDeviceName: null !== (t = null == i ? void 0 : i.name) && void 0 !== t ? t : "",
     outputDeviceName: null !== (n = null == s ? void 0 : s.name) && void 0 !== n ? n : "",
     measureButtonRef: N,

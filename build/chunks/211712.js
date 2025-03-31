@@ -7,8 +7,8 @@ var r = n(388032),
   i = n(201016),
   s = n(673497),
   a = n(421450),
-  o = n(977787),
-  l = n(892814),
+  l = n(977787),
+  o = n(892814),
   c = n(947557),
   d = n(808236),
   u = n(265665),
@@ -35,13 +35,13 @@ let p = [{
   presetName: "starlit_dream",
   presetBackgroundUrl: m.Z,
   themeColors: [5123751, 590625],
-  bannerImageUrl: o.Z,
+  bannerImageUrl: l.Z,
   avatarDecorationSkuId: "1144058844004233369"
 }, {
   presetName: "neon_space",
   presetBackgroundUrl: g.Z,
   themeColors: [6094952, 1007678],
-  bannerImageUrl: l.Z
+  bannerImageUrl: o.Z
 }];
 
 function h(e) {

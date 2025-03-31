@@ -2,17 +2,17 @@
 n.d(t, {
   X8: () => g,
   tI: () => m,
-  uj: () => o
+  uj: () => l
 }), n(653041);
 var r = n(512722),
   i = n.n(r),
   s = n(981631),
   a = n(388032);
-let o = () => {
+let l = () => {
     let e = Object.keys(s.gkr);
     return e[Math.floor(Math.random() * e.length)]
   },
-  l = () => {
+  o = () => {
     let e = [];
     for (; e.length < 5;) {
       let t = Math.floor(15 * Math.random());
@@ -43,7 +43,7 @@ let o = () => {
     let e = u(),
       t = c(),
       n = d();
-    return l().map(r => {
+    return o().map(r => {
       let s = t[r],
         a = n[r];
       return i()(null != s && null != a, "Invalid HypeSquad quiz question index"), {

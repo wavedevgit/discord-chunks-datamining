@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(481060),
-  l = n(388032),
+  l = n(481060),
+  o = n(388032),
   c = n(742291);
 let d = i.createContext({
   isOpen: !1,
@@ -33,11 +33,11 @@ u.Toggle = function(e) {
   } = e, {
     isOpen: s,
     toggleOpen: u
-  } = i.useContext(d), m = s ? o.u04 : o.CJ0, g = null != n ? n : s ? l.NW.string(l.t.fgq1go) : l.NW.string(l.t.XJuakJ);
-  return (0, r.jsxs)(o.P3F, {
+  } = i.useContext(d), m = s ? l.u04 : l.CJ0, g = null != n ? n : s ? o.NW.string(o.t.fgq1go) : o.NW.string(o.t.XJuakJ);
+  return (0, r.jsxs)(l.P3F, {
     className: a()(c.toggle, t),
     onClick: u,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "heading-sm/semibold",
       tag: "div",
       color: "currentColor",

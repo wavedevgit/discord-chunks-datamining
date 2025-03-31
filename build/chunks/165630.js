@@ -5,9 +5,9 @@ n.d(t, {
 var r, i = n(442837),
   s = n(570140),
   a = n(381496),
-  o = n(430824);
+  l = n(430824);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,7 +26,7 @@ let c = {},
 d();
 class u extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (c = e), this.waitFor(o.Z)
+    null != e && (c = e), this.waitFor(l.Z)
   }
   getState() {
     return c
@@ -41,7 +41,7 @@ class u extends(r = i.ZP.PersistedStore) {
     return 0 !== c.lastFetched
   }
 }
-l(u, "displayName", "GuildAffinitiesStore"), l(u, "persistKey", "GuildAffinitiesStore");
+o(u, "displayName", "GuildAffinitiesStore"), o(u, "persistKey", "GuildAffinitiesStore");
 let m = new u(s.Z, {
   CONNECTION_OPEN: function() {
     return Date.now() - c.lastFetched > 864e5 && (0, a.j)(), !1

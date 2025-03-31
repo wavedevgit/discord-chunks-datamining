@@ -8,7 +8,7 @@ var r = n(544891),
   s = n(981631),
   a = n(388032);
 
-function o(e) {
+function l(e) {
   return null != e && null != e.body && i.Z.dispatch({
     type: "UPDATE_CONSENTS",
     consents: function(e) {
@@ -32,7 +32,7 @@ function o(e) {
   }), e.body
 }
 
-function l(e) {
+function o(e) {
   let t;
   throw Error(e.status >= 500 && e.status <= 599 ? a.NW.string(a.t.cvJdtr) : null != e && null != e.body && null != e.body.message ? e.body.message : a.NW.string(a.t.cvJdtr))
 }
@@ -42,7 +42,7 @@ function c() {
     url: s.ANM.SETTINGS_CONSENT,
     oldFormErrors: !0,
     rejectWithError: !1
-  }).then(o, e => Promise.reject(Error(e.body.message)))
+  }).then(l, e => Promise.reject(Error(e.body.message)))
 }
 
 function d(e, t) {
@@ -54,5 +54,5 @@ function d(e, t) {
     },
     oldFormErrors: !0,
     rejectWithError: !1
-  }).then(o, l)
+  }).then(l, o)
 }

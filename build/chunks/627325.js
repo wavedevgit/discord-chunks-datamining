@@ -12,32 +12,18 @@ var r = n(200651),
   d = n(442837),
   u = n(692547),
   _ = n(670900),
-  m = n(481060),
-  f = n(218867),
-  p = n(594174),
-  g = n(111361),
-  v = n(709706),
-  h = n(358820),
-  b = n(990525),
-  y = n(388032),
-  C = n(697993);
-let x = [51],
-  j = [y.t.OpqAoq],
-  I = () => (0, r.jsxs)("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: "40",
-    height: "40",
-    "aria-hidden": "true",
-    children: [(0, r.jsx)("path", {
-      fill: u.Z.colors.INTERACTIVE_MUTED.css,
-      "fill-rule": "evenodd",
-      d: "M20 38.333c2.702 0 5.267-.584 7.577-1.634a6.64 6.64 0 0 1-.911-3.366c0-1.043.315-2.127.589-2.913.305-.877.706-1.792 1.126-2.619.414-.816.896-1.645 1.388-2.318.238-.326.552-.718.93-1.064.19-.174.47-.405.833-.608.34-.19.97-.478 1.8-.478s1.462.289 1.8.478c.364.203.644.434.834.608.378.346.693.738.93 1.064q.206.281.406.592A18.3 18.3 0 0 0 38.332 20C38.333 9.875 30.126 1.667 20 1.667S1.666 9.875 1.666 20s8.208 18.333 18.333 18.333m-9.167-16.666a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m18.333 0a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m-16.33 6.385c.764.512 1.8.307 2.311-.458A5.83 5.83 0 0 1 20 25a5.83 5.83 0 0 1 4.852 2.594 1.667 1.667 0 1 0 2.77-1.854A9.16 9.16 0 0 0 20 21.667a9.16 9.16 0 0 0-7.622 4.073c-.512.765-.307 1.8.458 2.312",
-      "clip-rule": "evenodd"
-    }), (0, r.jsx)("path", {
-      fill: u.Z.colors.INTERACTIVE_MUTED.css,
-      d: "M35.528 29.75c-.773-1.622-1.737-3.083-2.195-3.083-.834 0-3.334 4.825-3.334 6.666a3.331 3.331 0 0 0 3.333 3.333 3.333 3.333 0 0 0 3.334-3.333c0-.827-.505-2.259-1.138-3.583"
-    })]
-  });
+  m = n(495056),
+  f = n(481060),
+  p = n(218867),
+  g = n(594174),
+  v = n(111361),
+  h = n(709706),
+  b = n(358820),
+  y = n(990525),
+  C = n(388032),
+  x = n(697993);
+let j = [51],
+  I = [C.t.OpqAoq];
 
 function N(e) {
   let {
@@ -46,56 +32,61 @@ function N(e) {
     voiceListRef: i,
     showSectionHeaders: a = !1,
     query: l
-  } = e, s = E(), c = (0, d.e7)([p.default], () => (0, g.I5)(p.default.getCurrentUser())), N = S(l, c), P = Math.ceil(N.length / t), {
+  } = e, s = E(), c = (0, d.e7)([g.default], () => (0, v.I5)(g.default.getCurrentUser())), N = S(l, c), P = Math.ceil(N.length / t), {
     isNativeModuleLoaded: w,
     isNativeModuleLoading: T,
     catalogLastFetchTime: L
-  } = (0, d.cj)([v.Z], () => ({
-    isNativeModuleLoaded: v.Z.isNativeModuleLoaded(),
-    isNativeModuleLoading: v.Z.isNativeModuleLoading(),
-    catalogLastFetchTime: v.Z.getCatalogLastFetchTime()
+  } = (0, d.cj)([h.Z], () => ({
+    isNativeModuleLoaded: h.Z.isNativeModuleLoaded(),
+    isNativeModuleLoading: h.Z.isNativeModuleLoading(),
+    catalogLastFetchTime: h.Z.getCatalogLastFetchTime()
   }));
   return l && 0 === N.length ? (0, r.jsxs)("div", {
-    className: C.iconMessage,
+    className: x.iconMessage,
     children: [(0, r.jsx)(_._, {
       width: 40,
       height: 40,
       size: "custom",
       color: u.Z.colors.INTERACTIVE_MUTED
-    }), (0, r.jsx)(m.X6q, {
+    }), (0, r.jsx)(f.X6q, {
       variant: "heading-sm/medium",
       color: "header-muted",
-      children: y.NW.string(y.t.ZzukHh)
+      children: C.NW.string(C.t.ZzukHh)
     })]
   }) : s ? (0, r.jsxs)("div", {
-    className: C.iconMessage,
-    children: [(0, r.jsx)(I, {}), (0, r.jsx)(m.X6q, {
+    className: x.iconMessage,
+    children: [(0, r.jsx)(m.a, {
+      width: 40,
+      height: 40,
+      size: "custom",
+      color: u.Z.colors.INTERACTIVE_MUTED
+    }), (0, r.jsx)(f.X6q, {
       variant: "heading-md/normal",
       color: "header-muted",
-      children: y.NW.string(y.t.DpZNJy)
-    }), (0, r.jsx)(m.Text, {
+      children: C.NW.string(C.t.DpZNJy)
+    }), (0, r.jsx)(f.Text, {
       variant: "text-sm/normal",
       color: "header-muted",
-      children: y.NW.format(y.t["5afO9f"], {
-        onClick: w ? h.wV : h.r5
+      children: C.NW.format(C.t["5afO9f"], {
+        onClick: w ? b.wV : b.r5
       })
     })]
   }) : T || null == L ? (0, r.jsx)("div", {
-    className: C.loading,
-    children: (0, r.jsx)(m.$jN, {
-      type: m.$jN.Type.CHASING_DOTS,
+    className: x.loading,
+    children: (0, r.jsx)(f.$jN, {
+      type: f.$jN.Type.CHASING_DOTS,
       animated: !0
     })
-  }) : (0, r.jsx)(f.Z, {
+  }) : (0, r.jsx)(p.Z, {
     fade: !0,
-    className: o()(C.container, {
-      [C.hasHeaders]: a
+    className: o()(x.container, {
+      [x.hasHeaders]: a
     }),
     renderRow: e => {
       let n = e * t,
         i = N.slice(n, n + t);
       return (0, r.jsx)(O, {
-        children: i.map((n, i) => (0, r.jsx)(b.J, {
+        children: i.map((n, i) => (0, r.jsx)(y.J, {
           voiceFilter: n,
           hasNitro: c,
           analyticsContext: {
@@ -107,13 +98,13 @@ function N(e) {
         }, null == n ? void 0 : n.id))
       }, e)
     },
-    renderSectionHeader: !1 === a ? void 0 : e => (0, r.jsx)(m.Text, {
+    renderSectionHeader: !1 === a ? void 0 : e => (0, r.jsx)(f.Text, {
       variant: "text-sm/medium",
       color: "header-muted",
-      className: C.header,
-      children: y.NW.string(j[e])
+      className: x.header,
+      children: C.NW.string(I[e])
     }),
-    sectionHeaderHeight: !1 === a ? void 0 : e => x[e],
+    sectionHeaderHeight: !1 === a ? void 0 : e => j[e],
     rowCount: P,
     rowHeight: 130,
     onScroll: n,
@@ -128,28 +119,28 @@ function O(e) {
   } = e, n = i.useRef(null);
   return (0, r.jsx)("div", {
     ref: n,
-    className: C.row,
-    children: (0, r.jsx)(m.JcV, {
+    className: x.row,
+    children: (0, r.jsx)(f.JcV, {
       containerRef: n,
       children: t
     })
   })
 }
-let E = () => (0, d.e7)([v.Z], () => {
+let E = () => (0, d.e7)([h.Z], () => {
     var e;
-    return !Object.keys(null !== (e = v.Z.getVoiceFilterModels()) && void 0 !== e ? e : {}).length && (v.Z.getCatalogFetchFailed() || v.Z.hasNativeModuleFailed())
+    return !Object.keys(null !== (e = h.Z.getVoiceFilterModels()) && void 0 !== e ? e : {}).length && (h.Z.getCatalogFetchFailed() || h.Z.hasNativeModuleFailed())
   }),
   P = (e, t) => {
     let n = (0, c._I)(t.toLowerCase());
     return "" === n ? e : e.filter(e => {
       let {
         name: t
-      } = e, r = (0, c._I)(y.NW.string(t)).toLowerCase();
+      } = e, r = (0, c._I)(C.NW.string(t)).toLowerCase();
       return s()(n, r)
     })
   },
-  S = (e, t) => (0, d.Wu)([v.Z], () => {
-    let n = v.Z.getVoiceFilters(),
-      r = v.Z.getSortedVoiceFilters();
+  S = (e, t) => (0, d.Wu)([h.Z], () => {
+    let n = h.Z.getVoiceFilters(),
+      r = h.Z.getSortedVoiceFilters();
     return P(t ? Object.values(n) : r, e)
   }, [e, t])

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(512722),
-  l = n.n(o),
+  l = n(512722),
+  o = n.n(l),
   c = n(442837),
   d = n(692547),
   u = n(481060),
@@ -79,17 +79,17 @@ let H = Z.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
 function z(e) {
   var t, s;
   let {
-    className: o,
-    user: l
+    className: l,
+    user: o
   } = e, c = i.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, _.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, N] = i.useState(!1);
   i.useEffect(() => {
     N(null != c.current && c.current.scrollWidth > c.current.clientWidth)
-  }, [l.username]);
-  let b = !l.isClaimed(),
-    x = m && !l.isPomelo() && !l.hasVerifiedEmailOrPhone() || b,
+  }, [o.username]);
+  let b = !o.isClaimed(),
+    x = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || b,
     E = x ? U.NW.string(U.t["7Ngnys"]) : void 0;
   return (0, r.jsxs)("div", {
-    className: a()(V.field, o),
+    className: a()(V.field, l),
     children: [(0, r.jsx)("div", {
       className: V.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -104,12 +104,12 @@ function z(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: l.username
-          }), !l.isPomelo() && (0, r.jsxs)(u.Text, {
+            children: o.username
+          }), !o.isPomelo() && (0, r.jsxs)(u.Text, {
             tag: "span",
             color: "header-secondary",
             variant: "text-md/normal",
-            children: ["#", l.discriminator]
+            children: ["#", o.discriminator]
           })]
         })]
       })
@@ -171,12 +171,12 @@ function Y(e) {
   var t, n;
   let {
     user: s,
-    className: o
-  } = e, l = (0, _.gS)(), c = null !== (n = null == l ? void 0 : null === (t = l.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = D.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
+    className: l
+  } = e, o = (0, _.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = D.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
   return i.useEffect(() => {
     h(null != g.current && g.current.scrollWidth > g.current.clientWidth)
   }, [m]), (0, r.jsxs)("div", {
-    className: a()(V.field, o),
+    className: a()(V.field, l),
     children: [(0, r.jsx)("div", {
       className: V.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -225,15 +225,15 @@ function K(e) {
     censor: n,
     revealLabel: s,
     hideLabel: a
-  } = e, [o, l] = i.useState(!1), c = o ? t : n(t);
+  } = e, [l, o] = i.useState(!1), c = l ? t : n(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [c, (0, r.jsx)(u.zxk, {
       look: u.zxk.Looks.LINK,
       size: u.zxk.Sizes.MIN,
       color: u.zxk.Colors.LINK,
-      "aria-label": o ? a : s,
-      onClick: () => l(!o),
-      children: o ? U.NW.string(U.t.fgq1go) : U.NW.string(U.t.dcztdX)
+      "aria-label": l ? a : s,
+      onClick: () => o(!l),
+      children: l ? U.NW.string(U.t.fgq1go) : U.NW.string(U.t.dcztdX)
     })]
   })
 }
@@ -320,11 +320,11 @@ function X(e) {
   } = e;
   if (!s.isClaimed()) return null;
   let {
-    phone: o,
-    email: l
-  } = s, c = null != o;
+    phone: l,
+    email: o
+  } = s, c = null != l;
   return t = c ? (0, r.jsx)(K, {
-    text: o,
+    text: l,
     censor: k.n,
     revealLabel: U.NW.string(U.t.eY3xlZ),
     hideLabel: U.NW.string(U.t.jllbv7)
@@ -347,7 +347,7 @@ function X(e) {
       })
     }), (0, r.jsxs)("div", {
       className: V.fieldButtonList,
-      children: [c && null != l ? (0, r.jsx)(u.zxk, {
+      children: [c && null != o ? (0, r.jsx)(u.zxk, {
         className: a()(V.fieldButton, V.removeButton),
         size: u.zxk.Sizes.SMALL,
         look: u.zxk.Looks.LINK,
@@ -424,7 +424,7 @@ function Q() {
 function $(e) {
   let {
     className: t
-  } = e, n = (0, N.l6)(), s = (0, N.Jm)(), o = !n || s, l = i.useMemo(() => n ? s ? U.NW.string(U.t.dJOmCw) : U.NW.string(U.t["Y0A/1N"]) : U.NW.string(U.t.Qdv3DA), [n, s]);
+  } = e, n = (0, N.l6)(), s = (0, N.Jm)(), l = !n || s, o = i.useMemo(() => n ? s ? U.NW.string(U.t.dJOmCw) : U.NW.string(U.t["Y0A/1N"]) : U.NW.string(U.t.Qdv3DA), [n, s]);
   return (0, r.jsxs)("div", {
     className: a()(V.field, t),
     children: [(0, r.jsx)("div", {
@@ -438,11 +438,11 @@ function $(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: l
+            children: o
           })
         })]
       })
-    }), o && (0, r.jsx)(u.zxk, {
+    }), l && (0, r.jsx)(u.zxk, {
       className: V.fieldButton,
       size: u.zxk.Sizes.SMALL,
       color: u.zxk.Colors.PRIMARY,
@@ -457,13 +457,13 @@ function ee() {
   var e;
   let t = (0, c.e7)([P.default], () => {
       let e = P.default.getCurrentUser();
-      return l()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
+      return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
     n = (0, v.ZP)(t.id),
     i = (0, S.Z)(n),
     s = w.co.useSetting(),
     a = (0, c.e7)([A.Z], () => A.Z.getErrors()),
-    o = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],
+    l = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],
     {
       avatarSrc: d,
       avatarDecorationSrc: m
@@ -513,11 +513,11 @@ function ee() {
       })]
     }), (0, r.jsxs)("div", {
       className: V.background,
-      children: [null != o ? (0, r.jsx)(u.Text, {
+      children: [null != l ? (0, r.jsx)(u.Text, {
         className: V.avatarError,
         variant: "text-xs/normal",
         color: "text-danger",
-        children: o
+        children: l
       }) : null, (0, r.jsxs)("div", {
         className: V.fieldList,
         children: [(0, r.jsx)(C.F, {

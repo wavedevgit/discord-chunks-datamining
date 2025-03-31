@@ -7,8 +7,8 @@ n(192379);
 var i = n(524437),
   s = n(481060),
   a = n(168107),
-  o = n(480916),
-  l = n(247206),
+  l = n(480916),
+  o = n(247206),
   c = n(294602),
   d = n(880257),
   u = n(63063),
@@ -28,10 +28,10 @@ function b() {
       explicitContentNonFriendDm: x
     } = (0, c.B)(),
     _ = e => {
-      if ((0, l.Ks)()) {
-        a.Z.showAgeVerificationGetStartedModal(o.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
+      if ((0, o.Ks)()) {
+        a.Z.showAgeVerificationGetStartedModal(l.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
         return
-      }(0, l.zj)(e)
+      }(0, o.zj)(e)
     },
     E = [{
       value: i.Q4.BLUR,

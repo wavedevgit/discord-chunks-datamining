@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(200651),
   s = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(600164),
+  l = n.n(a),
+  o = n(600164),
   c = n(698550);
 
 function d(e, t, n) {
@@ -26,7 +26,7 @@ class u extends(r = s.PureComponent) {
       onMouseLeave: r
     } = this.props;
     return (0, i.jsx)("div", {
-      className: o()(c.card, t),
+      className: l()(c.card, t),
       onMouseEnter: n,
       onMouseLeave: r,
       children: e
@@ -39,9 +39,9 @@ d(u, "Header", e => {
     className: n,
     splashArtURL: r
   } = e;
-  return (0, i.jsxs)(l.Z, {
-    className: o()(c.header, n),
-    align: l.Z.Align.CENTER,
+  return (0, i.jsxs)(o.Z, {
+    className: l()(c.header, n),
+    align: o.Z.Align.CENTER,
     children: [(0, i.jsx)("div", {
       className: c.splashArt,
       style: null != r ? {
@@ -55,7 +55,7 @@ d(u, "Header", e => {
     className: n
   } = e;
   return (0, i.jsx)("div", {
-    className: o()(c.body, n),
+    className: l()(c.body, n),
     children: t
   })
 });

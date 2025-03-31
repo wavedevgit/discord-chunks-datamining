@@ -10,8 +10,8 @@ var r = n(140492),
   i = n(475468),
   s = n(703656),
   a = n(769654),
-  o = n(944486),
-  l = n(914010),
+  l = n(944486),
+  o = n(914010),
   c = n(358085),
   d = n(981631);
 let u = {
@@ -29,10 +29,10 @@ let u = {
     comboKeysBindGlobal: !0,
     action() {
       let e;
-      if (null != l.Z.getGuildId()) e = d.ME;
+      if (null != o.Z.getGuildId()) e = d.ME;
       else {
-        let t = l.Z.getLastSelectedGuildId();
-        null != t && (e = t, (0, i.K)(t, o.Z.getChannelId(t)))
+        let t = o.Z.getLastSelectedGuildId();
+        null != t && (e = t, (0, i.K)(t, l.Z.getChannelId(t)))
       }
       return null != e && (0, a.X)(e), !1
     }

@@ -120,7 +120,7 @@ function L(e) {
   })
 }
 
-function A(e) {
+function D(e) {
   let {
     trackedGame: t
   } = e, n = (0, s.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), a = (0, s.e7)([v.Z], () => v.Z.getGameForPID(t.pid));
@@ -196,7 +196,7 @@ function A(e) {
   })
 }
 
-function D(e) {
+function A(e) {
   let {
     pid: t
   } = e, n = (0, s.cj)([j.default], () => j.default.getOverlayPIDStatuses()), a = (0, s.cj)([p.default], () => p.default.getTrackedGames()), l = (0, s.e7)([j.default], () => j.default.isInputLocked(t), [t]), i = (0, s.e7)([j.default], () => j.default.DEV_isInputLockedV3(t), [t]), o = (0, s.e7)([j.default], () => j.default.DEV_isInputLocked(t), [t]), d = (0, s.e7)([j.default], () => j.default.isReady(t), [t]);
@@ -498,7 +498,7 @@ function z() {
               variant: "text-sm/normal",
               color: "text-normal",
               children: "No running games"
-            }), Object.values(G).map(e => (0, r.jsx)(A, {
+            }), Object.values(G).map(e => (0, r.jsx)(D, {
               trackedGame: e
             }, e.pid))]
           })
@@ -509,7 +509,7 @@ function z() {
           variant: "text-sm/normal",
           color: "text-normal",
           children: "No tracked game times"
-        }), Object.values(G).map(e => (0, r.jsx)(D, {
+        }), Object.values(G).map(e => (0, r.jsx)(A, {
           pid: e.pid
         }, e.pid)), (0, r.jsxs)("div", {
           children: [(0, r.jsxs)(c.Text, {

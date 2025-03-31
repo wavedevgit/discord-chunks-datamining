@@ -7,8 +7,8 @@ n(192379);
 var i = n(924628),
   s = n(493773),
   a = n(630759),
-  o = n(398826),
-  l = n(10298),
+  l = n(398826),
+  o = n(10298),
   c = n(623196),
   d = n(993315),
   u = n(883382),
@@ -49,8 +49,8 @@ function E() {
 
 function j() {
   return (0, s.ZP)(() => {
-    (0, i.I)(), (0, o.A)()
-  }), (0, r.jsxs)(l.N, {
+    (0, i.I)(), (0, l.A)()
+  }), (0, r.jsxs)(o.N, {
     header: b.NW.string(b.t.OAuOHB),
     children: [(0, r.jsx)(E, {}), (0, r.jsx)(_, {}), (0, r.jsx)(x, {})]
   })

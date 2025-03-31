@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(793030),
-  o = n(481060),
-  l = n(230711),
+  l = n(481060),
+  o = n(230711),
   c = n(695346),
   d = n(903002),
   u = n(214492),
@@ -24,7 +24,7 @@ function b(e) {
     headerAssetSrc: t,
     headerText: n,
     description: i,
-    assets: l = [],
+    assets: o = [],
     assetCount: c = 0,
     disabled: u = !1,
     onClick: m
@@ -65,12 +65,12 @@ function b(e) {
         }), (0, r.jsxs)("div", {
           className: h.manageContainer,
           children: [(0, r.jsx)(d.D, {
-            assets: l,
+            assets: o,
             assetCount: c,
             size: d.F.MEDIUM
-          }), (0, r.jsx)(o.zxk, {
+          }), (0, r.jsx)(l.zxk, {
             onClick: m,
-            color: o.zxk.Colors.PRIMARY,
+            color: l.zxk.Colors.PRIMARY,
             children: "Manage"
           })]
         })]
@@ -97,7 +97,7 @@ function x() {
       description: p.NW.string(g.Z.ctRS3d),
       assets: t,
       assetCount: n,
-      onClick: () => l.Z.open(m.oAB.REGISTERED_GAMES),
+      onClick: () => o.Z.open(m.oAB.REGISTERED_GAMES),
       disabled: e
     }), (0, r.jsx)(b, {
       headerAssetSrc: N,
@@ -105,7 +105,7 @@ function x() {
       description: p.NW.string(g.Z.DU5UXF),
       assets: i,
       assetCount: s,
-      onClick: () => l.Z.open(m.oAB.CONNECTIONS),
+      onClick: () => o.Z.open(m.oAB.CONNECTIONS),
       disabled: e
     })]
   })

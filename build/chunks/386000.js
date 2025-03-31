@@ -56,7 +56,7 @@ function v(e) {
     coloredIconsEnabled: Z
   } = (0, g.Z)({
     location: "MuteButton"
-  }), T = t || n || v, A = y ? _.d : _.Z, w = (0, h.Z)(t, n, v, x, P === m.BK.GroupedButtonsRedMic), R = (0, c.O)(T ? "unmute" : "mute"), M = (0, u.P)(T ? "unmute" : "mute"), {
+  }), T = t || n || v, A = y ? _.d : _.Z, w = (0, h.Z)(t, n, v, x, P === m.BK.GroupedButtonsRedMic || S), R = (0, c.O)(T ? "unmute" : "mute"), M = (0, u.P)(T ? "unmute" : "mute"), {
     activeVoice: k
   } = (0, b.o)(), L = null != k, D = L ? M : R, {
     events: W,

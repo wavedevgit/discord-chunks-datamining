@@ -112,12 +112,12 @@ function R() {
       return (null === (e = S.Z.getFeedState(E.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [Z, R] = a.useState(""),
-    A = (0, u.e7)([j.Z, p.Z], () => {
+    D = (0, u.e7)([j.Z, p.Z], () => {
       var e, t, n;
       return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = p.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
     }, [Z]),
-    D = (0, v.Z)({
-      applicationId: A,
+    A = (0, v.Z)({
+      applicationId: D,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
@@ -203,10 +203,10 @@ function R() {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && R(e),
           onKeyDown: e => {
-            "Enter" === e.key && (Z === e.currentTarget.value ? null == D || D(e) : R(e.currentTarget.value))
+            "Enter" === e.key && (Z === e.currentTarget.value ? null == A || A(e) : R(e.currentTarget.value))
           },
-          error: Z.length > 0 && null == D ? "No game profile for ".concat(null != A ? A : Z + " - try by id", ".") : void 0,
-          style: null != D ? {
+          error: Z.length > 0 && null == A ? "No game profile for ".concat(null != D ? D : Z + " - try by id", ".") : void 0,
+          style: null != A ? {
             border: "1px solid green"
           } : {}
         }), (0, r.jsx)("ul", {

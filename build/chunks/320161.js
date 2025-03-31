@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(392711),
   a = n(846519),
-  o = n(481060),
-  l = n(626135),
+  l = n(481060),
+  o = n(626135),
   c = n(572004),
   d = n(70956),
   u = n(981631),
@@ -32,18 +32,18 @@ function N(e) {
     children: d({})
   });
   let T = x >= f.length - 1,
-    I = T ? o.FGA.RED : o.FGA.GREEN,
-    y = E ? I : o.FGA.PRIMARY,
+    I = T ? l.FGA.RED : l.FGA.GREEN,
+    y = E ? I : l.FGA.PRIMARY,
     A = () => {
-      null == m || m(), (0, c.JG)(n), l.default.track(u.rMx.TEXT_COPIED), O || _(x + 1), C(!0), j(!0), S.start(g, () => C(!1)), v.start(p, () => _(0))
+      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), O || _(x + 1), C(!0), j(!0), S.start(g, () => C(!1)), v.start(p, () => _(0))
     };
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(l.ua7, {
     text: (() => {
       var e;
       if (!E) return t;
       let n = (0, s.clamp)(x - 1, 0, f.length - 1),
         i = null !== (e = f[n]) && void 0 !== e ? e : f[0];
-      return (0, r.jsx)(o.UkV, {
+      return (0, r.jsx)(l.UkV, {
         isShaking: T,
         children: i()
       })

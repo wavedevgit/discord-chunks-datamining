@@ -88,10 +88,11 @@ function u(e, t, n, u, d) {
         properties: s({
           progress: (0, i.bA)(t.current.currentTime, t.current.duration),
           video_timestamp_seconds: t.current.currentTime,
-          video_session_id: u
+          video_session_id: u,
+          video_asset_id: d
         }, c(n))
       })
-    }, [b, t, u, n, p]),
+    }, [b, t, u, n, p, d]),
     C = r.useCallback(e => {
       null != t.current && p({
         questId: b,

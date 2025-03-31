@@ -9,8 +9,8 @@ var r = n(442837),
   i = n(493683),
   s = n(153867),
   a = n(636449),
-  o = n(774226),
-  l = n(122613),
+  l = n(774226),
+  o = n(122613),
   c = n(100527),
   d = n(87005),
   u = n(895924),
@@ -41,7 +41,7 @@ async function E(e, t, n) {
     let d = null == h.Z.getDMFromUserId(r.id);
     try {
       s = (0, a.R)({
-        isContextless: (0, o.Kb)(e)
+        isContextless: (0, l.Kb)(e)
       }) ? await i.Z.getOrEnsurePrivateChannel(r.id) : await i.Z.openPrivateChannel([r.id], !1, !1, c.Z.APP_DMS_QUICK_LAUNCHER)
     } catch (e) {
       t(void 0)
@@ -62,7 +62,7 @@ async function E(e, t, n) {
         return
       }
     }
-    await (0, l.Z)({
+    await (0, o.Z)({
       targetApplicationId: e.id,
       channelId: s,
       analyticsLocations: n,

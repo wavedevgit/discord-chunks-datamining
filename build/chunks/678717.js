@@ -36,8 +36,8 @@ var g = n(392750),
   Z = n(735959),
   R = n(246992),
   L = n(496025),
-  A = n(442954),
-  D = n(633001),
+  D = n(442954),
+  A = n(633001),
   B = n(702904),
   z = n(178821),
   M = n(958328),
@@ -120,7 +120,7 @@ function et() {
       }), e.push({
         id: "overlay",
         name: "Overlay v3",
-        render: () => (0, r.jsx)(D.Z, {})
+        render: () => (0, r.jsx)(A.Z, {})
       }), e.push({
         id: "slayer_sdk",
         name: "Slayer SDK",
@@ -160,7 +160,7 @@ function et() {
       }), e.push({
         id: "modals",
         name: "Modals",
-        render: () => (0, r.jsx)(A.Z, {})
+        render: () => (0, r.jsx)(D.Z, {})
       }), e.push({
         id: "affinity",
         name: "Affinity",

@@ -1,33 +1,33 @@
 /** Chunk was on 20447 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(422988);
+  l = n(422988);
 
-function l(e) {
+function o(e) {
   let {
     message: t,
     error: n,
     onClick: i,
-    submitting: l,
+    submitting: o,
     className: c,
     ctaMessage: d
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(o.container, c),
+    className: s()(l.container, c),
     children: [(0, r.jsxs)("div", {
-      className: o.textContainer,
+      className: l.textContainer,
       children: [(0, r.jsx)(a.P4T, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor",
-        className: o.warningIcon
+        className: l.warningIcon
       }), (0, r.jsx)(a.LZC, {
         size: 10,
         horizontal: !0
@@ -35,11 +35,11 @@ function l(e) {
         children: [(0, r.jsx)(a.LZC, {
           size: 1
         }), (0, r.jsx)(a.Text, {
-          className: o.info,
+          className: l.info,
           variant: "text-sm/normal",
           children: t
         }), null != n && (0, r.jsx)(a.Text, {
-          className: s()(o.info, o.error),
+          className: s()(l.info, l.error),
           variant: "text-sm/normal",
           children: n
         })]
@@ -48,12 +48,12 @@ function l(e) {
       size: 16,
       horizontal: !0
     }), (0, r.jsx)(a.zxk, {
-      className: o.undoButton,
+      className: l.undoButton,
       color: a.zxk.Colors.LINK,
       look: a.zxk.Looks.LINK,
       size: a.zxk.Sizes.ICON,
       onClick: i,
-      submitting: l,
+      submitting: o,
       children: d
     })]
   })

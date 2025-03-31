@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(399606),
-  l = n(481060),
+  l = n(399606),
+  o = n(481060),
   c = n(607070),
   d = n(100527),
   u = n(906732),
@@ -25,14 +25,14 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
       isShowingAll: t,
       onClick: n
     } = e;
-    return (0, r.jsxs)(l.P3F, {
+    return (0, r.jsxs)(o.P3F, {
       onClick: n,
       className: x.customButton,
-      children: [t ? b.NW.string(b.t.maZaNz) : b.NW.string(b.t["37C26e"]), t ? (0, r.jsx)(l.u04, {
+      children: [t ? b.NW.string(b.t.maZaNz) : b.NW.string(b.t["37C26e"]), t ? (0, r.jsx)(o.u04, {
         size: "md",
         color: "currentColor",
         className: x.arrow
-      }) : (0, r.jsx)(l.CJ0, {
+      }) : (0, r.jsx)(o.CJ0, {
         size: "md",
         color: "currentColor",
         className: x.arrow
@@ -45,7 +45,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
       description: n,
       className: i,
       imageSource: s,
-      imageClassName: o,
+      imageClassName: l,
       titleBadge: c,
       isNew: p = !1,
       isEarlyAccess: h = !1
@@ -65,13 +65,13 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
         }) : null, (0, r.jsx)("img", {
           src: s,
           alt: "",
-          className: a()(o, x.perksCardArt)
+          className: a()(l, x.perksCardArt)
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsxs)(l.X6q, {
+          children: [(0, r.jsxs)(o.X6q, {
             variant: "heading-lg/extrabold",
             className: x.perkCardHeading,
             children: [t, " ", c]
-          }), (0, r.jsx)(l.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             className: x.perkCardDescription,
             children: "function" == typeof n ? n(f) : n
@@ -86,7 +86,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
       isSubscriberNitroHome: n = !1
     } = e, [s, d] = i.useState(!1), m = (0, f.N)({
       styles: x
-    }), g = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), {
+    }), g = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), {
       analyticsLocations: b
     } = (0, u.ZP)(), O = (0, p._f)(), C = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
     return (0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
         [x.subscriberNitroHome]: n,
         [x.reducedMotion]: g
       }),
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",
         className: x.perksTitle,
         children: _(n)

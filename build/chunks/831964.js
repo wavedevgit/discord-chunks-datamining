@@ -7,8 +7,8 @@ n.d(t, {
 var r, i = n(230711),
   s = n(100527),
   a = n(906732),
-  o = n(300284),
-  l = n(526167),
+  l = n(300284),
+  o = n(526167),
   c = n(63063),
   d = n(981631),
   u = n(526761),
@@ -36,7 +36,7 @@ var r, i = n(230711),
   D = n(825087),
   Z = ((r = {}).NEW_APP_STYLES = "newAppStyles", r.REFERRAL_PROGRAM = "referralProgram", r.SERVER_PROFILES = "serverProfiles", r.SHOW_YOUR_STYLE = "showYourStyle", r.YOUR_SPACE = "yourSpace", r.EMOJIS = "emojis", r.NO_LIMITS = "noLimits", r);
 let w = () => {
-    let e = (0, l.rO)();
+    let e = (0, o.rO)();
     return {
       emojis: {
         name: "emojis",
@@ -59,7 +59,7 @@ let w = () => {
   k = e => {
     let {
       analyticsLocations: t
-    } = (0, a.ZP)(s.Z.PREMIUM_MARKETING_BENTO_BOX), n = (0, o.Z)({
+    } = (0, a.ZP)(s.Z.PREMIUM_MARKETING_BENTO_BOX), n = (0, l.Z)({
       scrollPosition: u.Y_.TRY_IT_OUT,
       analyticsLocations: t
     }), r = () => {
@@ -67,7 +67,7 @@ let w = () => {
         openWithoutBackstack: !0,
         analyticsLocations: t
       })
-    }, g = (0, l.rO)(), p = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), x = {
+    }, g = (0, o.rO)(), p = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), x = {
       serverProfiles: {
         name: "serverProfiles",
         title: m.NW.string(m.t.I9TYMj),

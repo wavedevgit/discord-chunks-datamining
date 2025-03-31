@@ -6,13 +6,13 @@ var r = n(544891),
   i = n(570140),
   s = n(230307),
   a = n(70956),
-  o = n(981631);
-let l = 6 * a.Z.Millis.HOUR;
+  l = n(981631);
+let o = 6 * a.Z.Millis.HOUR;
 async function c() {
   let e = s.Z.lastFetched;
-  if (!(null != e && Date.now() - e < l)) try {
+  if (!(null != e && Date.now() - e < o)) try {
     let e = await r.tn.get({
-      url: o.ANM.USER_ACTIVITY_STATISTICS,
+      url: l.ANM.USER_ACTIVITY_STATISTICS,
       oldFormErrors: !0,
       rejectWithError: !1
     });

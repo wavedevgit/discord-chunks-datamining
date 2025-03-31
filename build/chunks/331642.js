@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(692547),
-  o = n(481060),
-  l = n(596454),
+  l = n(481060),
+  o = n(596454),
   c = n(594174),
   d = n(74538),
   u = n(242291),
@@ -21,12 +21,12 @@ var r = n(200651),
 function b(e) {
   let {
     onSelect: t
-  } = e, [n, a] = i.useState(!1), l = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(l);
+  } = e, [n, a] = i.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o);
 
   function m(e) {
     u && (a(!1), null == t || t(e))
   }
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(l.yRy, {
     shouldShow: n,
     position: "left",
     onRequestClose: () => a(!1),
@@ -34,7 +34,7 @@ function b(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.VqE, {
+      return (0, r.jsx)(l.VqE, {
         children: (0, r.jsx)(p.Z, {
           suppressPlaySound: !0,
           shouldShowUpsell: !1,
@@ -71,7 +71,7 @@ function b(e) {
           a(!n)
         },
         text: f.NW.string(f.t.uOe0Aw),
-        children: (0, r.jsx)(o.vdY, {
+        children: (0, r.jsx)(l.vdY, {
           size: "md",
           color: "currentColor",
           className: N.secondaryIcon
@@ -102,7 +102,7 @@ function x(e) {
   return (0, r.jsx)(h.hU, {
     onClick: n,
     text: i,
-    children: (0, r.jsx)(o.gj8, {
+    children: (0, r.jsx)(l.gj8, {
       size: "md",
       color: "currentColor",
       className: N.secondaryIconActive
@@ -120,17 +120,17 @@ function _(e) {
     className: N.soundButtonSettingContainer,
     children: [(0, r.jsxs)("div", {
       className: N.container,
-      children: [u && (0, r.jsx)(l.Z, {
+      children: [u && (0, r.jsx)(o.Z, {
         emojiId: c,
         emojiName: d,
         className: N.emoji
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "header-primary",
         className: N.soundText,
         children: null == t ? f.NW.string(f.t.PoWNfX) : n ? f.NW.format(f.t.B6HU6O, {
           soundName: t.name,
-          subtextHook: e => (0, r.jsx)(o.Text, {
+          subtextHook: e => (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",
             color: "header-secondary",
             tag: "span",
@@ -139,7 +139,7 @@ function _(e) {
         }) : t.name
       }), s ? (0, r.jsx)(x, {
         sound: t
-      }) : (0, r.jsx)(o.gj8, {
+      }) : (0, r.jsx)(l.gj8, {
         size: "md",
         color: "currentColor",
         className: N.secondaryIconDisabled
@@ -151,7 +151,7 @@ function _(e) {
       }), s && !n && (0, r.jsx)(h.hU, {
         onClick: () => i(null),
         text: f.NW.string(f.t.jmtcGB),
-        children: (0, r.jsx)(o.XHJ, {
+        children: (0, r.jsx)(l.XHJ, {
           size: "md",
           color: a.Z.unsafe_rawColors.RED_400.css,
           className: N.secondaryIcon
