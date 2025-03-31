@@ -20,7 +20,7 @@ var C = B(200651),
   d = B(116175),
   n = B(155174),
   M = B(388032),
-  L = B(935921);
+  L = B(86986);
 let X = [d.ZD.LEAF, d.ZD.SWORD, d.ZD.HEART, d.ZD.FIRE, d.ZD.WATER_DROP, d.ZD.SKULL, d.ZD.MOON, d.ZD.LIGHTNING, d.ZD.COMPASS, d.ZD.TOADSTOOL],
   s = [{
     primary: "#ff1c90",

@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 82218 **/
 "use strict";
 r.d(t, {
   Z: () => v
@@ -12,7 +12,7 @@ var n = r(200651),
   c = r(22267),
   u = r(594174),
   d = r(388032),
-  p = r(881837);
+  p = r(306205);
 let b = e => {
     let {
       nameplate: t,

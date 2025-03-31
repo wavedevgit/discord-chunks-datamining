@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   Z: () => ee
 }), n(47120);
@@ -41,7 +41,7 @@ var r = n(200651),
   B = n(815660),
   M = n(801461),
   U = n(388032),
-  V = n(736513);
+  V = n(923359);
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -150,7 +150,7 @@ function z(e) {
           if (g) {
             let {
               default: e
-            } = await Promise.all([n.e("85342"), n.e("23396")]).then(n.bind(n, 193049));
+            } = await Promise.all([n.e("85342"), n.e("41155")]).then(n.bind(n, 193049));
             return t => (0, r.jsx)(e, G({
               source: M.Kq.USER_SETTINGS_EDIT
             }, t))
@@ -252,7 +252,7 @@ function q(e) {
       handleClick: () => (0, u.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("9343"), n.e("19855")]).then(n.bind(n, 642298));
+        } = await Promise.all([n.e("9343"), n.e("63097")]).then(n.bind(n, 642298));
         return t => (0, r.jsx)(e, G({}, t))
       })
     };
@@ -273,7 +273,7 @@ function q(e) {
         handleClick: () => (0, u.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("9343"), n.e("19855")]).then(n.bind(n, 642298));
+          } = await Promise.all([n.e("9343"), n.e("63097")]).then(n.bind(n, 642298));
           return t => (0, r.jsx)(e, G({}, t))
         })
       }

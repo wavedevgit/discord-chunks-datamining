@@ -1,5 +1,6 @@
-/** Chunk was on 59288 **/
-e.exports = {
-  userAvatar: "userAvatar__9ec1a",
-  svg: "svg__9ec1a"
-}
+/** Chunk was on web.js **/
+"use strict";
+var r = {
+  nowrap: "nowrap__5db79"
+};
+e.exports = r

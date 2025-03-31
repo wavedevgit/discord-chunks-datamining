@@ -82,7 +82,7 @@ function y() {
     (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([r.e("76540"), r.e("13981")]).then(r.bind(r, 628908));
+      } = await Promise.all([r.e("76540"), r.e("73404")]).then(r.bind(r, 628908));
       return r => (0, n.jsx)(t, u(d({}, r), {
         isTotp: e
       }))

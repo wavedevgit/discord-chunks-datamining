@@ -193,7 +193,8 @@ function h(e) {
     vanityURLCode: e.vanity_url_code,
     premiumSubscriberCount: e.premium_subscription_count,
     nsfwLevel: e.nsfw_level,
-    memberCount: e.approximate_member_count
+    memberCount: e.approximate_member_count,
+    premiumTier: e.premium_tier
   };
   return new a.ZP(t)
 }

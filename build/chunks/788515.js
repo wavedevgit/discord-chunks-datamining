@@ -1,9 +1,14 @@
-/** Chunk was on 92457 **/
+/** Chunk was on 13323 **/
 e.exports = {
-  container: "container__14de9",
-  guildContainer: "guildContainer__14de9",
-  header: "header__14de9",
-  guildInfo: "guildInfo__14de9",
-  guildIconMask: "guildIconMask__14de9",
-  guildIcon: "guildIcon__14de9"
+  body: "body__996b0",
+  confirmDiscountContent: "confirmDiscountContent__996b0",
+  confirmDiscountDescription: "confirmDiscountDescription__996b0",
+  confirmDiscountIcon: "confirmDiscountIcon__996b0",
+  confirmDiscountLegalese: "confirmDiscountLegalese__996b0",
+  confirmDiscountLegaleseText: "confirmDiscountLegaleseText__996b0",
+  confirmDiscountButtons: "confirmDiscountButtons__996b0",
+  confrimDiscountsButtonsError: "confrimDiscountsButtonsError__996b0",
+  confrimDiscountsButtonsNoError: "confrimDiscountsButtonsNoError__996b0",
+  redemptionFailedMessage: "redemptionFailedMessage__996b0",
+  redemptionFailedMessageCopy: "redemptionFailedMessageCopy__996b0"
 }

@@ -1,6 +1,15 @@
-/** Chunk was on 54030 **/
-e.exports = {
-  buttonContainer: "buttonContainer__7e329",
-  keybind: "keybind__7e329",
-  button: "button__7e329"
-}
+/** Chunk was on web.js **/
+"use strict";
+var r = {
+  botTag: "botTag__82f07",
+  px: "px__82f07",
+  rem: "rem__82f07",
+  botTagOP: "botTagOP__82f07 botTag__82f07",
+  botTagRegular: "botTagRegular__82f07 botTag__82f07",
+  botTagInvert: "botTagInvert__82f07 botTag__82f07",
+  botTagAI: "botTagAI__82f07 botTag__82f07",
+  botTagRemix: "botTagRemix__82f07",
+  botTagVerified: "botTagVerified__82f07",
+  botText: "botText__82f07"
+};
+e.exports = r

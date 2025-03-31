@@ -36,7 +36,7 @@ var i = n(120356),
   D = n(981631),
   L = n(701488),
   x = n(388032),
-  M = n(203396);
+  M = n(24981);
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

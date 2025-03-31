@@ -1,4 +1,4 @@
-/** Chunk was on 54589 **/
+/** Chunk was on 34059 **/
 n.d(t, {
   Z: () => j
 });
@@ -20,7 +20,7 @@ var r = n(200651),
   _ = n(501655),
   C = n(504185),
   v = n(388032),
-  y = n(603779);
+  y = n(370223);
 let x = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
   j = function(e) {
     let {

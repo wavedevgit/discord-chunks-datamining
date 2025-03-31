@@ -1,8 +1,6 @@
-/** Chunk was on 88119 **/
+/** Chunk was on 97811 **/
 e.exports = {
-  gatedContent: "gatedContent__7184c",
-  image: "image__7184c",
-  title: "title__7184c",
-  description: "description__7184c",
-  action: "action__7184c"
+  container: "container__9ddd5",
+  avatar: "avatar__9ddd5",
+  username: "username__9ddd5"
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   Z: () => x
 }), n(266796);
@@ -14,7 +14,7 @@ var r, i, s, a = n(200651),
   h = n(122289),
   f = n(624138),
   N = n(388032),
-  b = n(579933);
+  b = n(159200);
 class x extends(r = l.PureComponent) {
   get typeString() {
     let {

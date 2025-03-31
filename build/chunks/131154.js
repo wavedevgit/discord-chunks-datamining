@@ -1,58 +1,58 @@
-/** Chunk was on 96173 **/
-t.d(n, {
-  Z: () => l
+/** Chunk was on 93024 **/
+n.d(t, {
+  Z: () => s
 });
-var i = t(200651);
-t(192379);
-var a = t(120356),
-  r = t.n(a),
-  o = t(481060),
-  d = t(388032),
-  _ = t(783641);
+var r = n(200651);
+n(192379);
+var i = n(120356),
+  l = n.n(i),
+  o = n(481060),
+  a = n(388032),
+  c = n(795691);
 
-function l(e) {
+function s(e) {
   let {
-    guild: n,
-    speakers: t,
-    speakerCount: a,
-    className: l
-  } = e, c = t.slice(0, 5), s = c.map(e => {
-    var t, a;
-    return (0, i.jsxs)("div", {
-      className: _.speakerContainer,
-      children: [(0, i.jsx)(o.qEK, {
-        src: null == e ? void 0 : null === (t = e.user) || void 0 === t ? void 0 : t.getAvatarURL(n.id, 20),
+    guild: t,
+    speakers: n,
+    speakerCount: i,
+    className: s
+  } = e, d = n.slice(0, 5), u = d.map(e => {
+    var n, i;
+    return (0, r.jsxs)("div", {
+      className: c.speakerContainer,
+      children: [(0, r.jsx)(o.qEK, {
+        src: null == e ? void 0 : null === (n = e.user) || void 0 === n ? void 0 : n.getAvatarURL(t.id, 20),
         size: o.EFr.SIZE_20,
-        className: _.avatar,
+        className: c.avatar,
         "aria-label": "".concat(null == e ? void 0 : e.userNick, "-avatar")
-      }), (0, i.jsx)("div", {
-        className: _.textInGridContainer,
-        children: (0, i.jsx)(o.Text, {
+      }), (0, r.jsx)("div", {
+        className: c.textInGridContainer,
+        children: (0, r.jsx)(o.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          className: _.textInGrid,
+          className: c.textInGrid,
           children: null == e ? void 0 : e.userNick
         })
       })]
-    }, null == e ? void 0 : null === (a = e.user) || void 0 === a ? void 0 : a.id)
-  }), p = a - c.length;
-  return (0, i.jsxs)("div", {
-    className: r()(_.grid, l),
-    children: [s, p > 0 && (0, i.jsxs)("div", {
-      className: _.speakerContainer,
-      children: [(0, i.jsx)("div", {
-        className: _.iconMicrophone,
-        children: (0, i.jsx)(o.S6n, {
+    }, null == e ? void 0 : null === (i = e.user) || void 0 === i ? void 0 : i.id)
+  }), h = i - d.length;
+  return (0, r.jsxs)("div", {
+    className: l()(c.grid, s),
+    children: [u, h > 0 && (0, r.jsxs)("div", {
+      className: c.speakerContainer,
+      children: [(0, r.jsx)("div", {
+        className: c.iconMicrophone,
+        children: (0, r.jsx)(o.S6n, {
           size: "custom",
           color: "currentColor",
           height: 12
         })
-      }), (0, i.jsx)(o.Text, {
+      }), (0, r.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        className: _.textInGrid,
-        children: d.NW.format(d.t["185ggI"], {
-          count: p
+        className: c.textInGrid,
+        children: a.NW.format(a.t["185ggI"], {
+          count: h
         })
       })]
     })]

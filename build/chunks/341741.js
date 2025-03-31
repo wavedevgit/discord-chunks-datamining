@@ -1,0 +1,4 @@
+/** Chunk was on 34059 **/
+e.exports = {
+  clickableChannelTextArea: "clickableChannelTextArea_d8b277"
+}

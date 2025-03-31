@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   Z: () => m
 });
@@ -11,7 +11,7 @@ var i = n(873546),
   o = n(892729),
   c = n(949914),
   d = n(388032),
-  u = n(940840);
+  u = n(259545);
 let m = e => {
   let {
     onGoBack: t

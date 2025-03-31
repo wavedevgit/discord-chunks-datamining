@@ -1,6 +1,9 @@
-/** Chunk was on 65396 **/
+/** Chunk was on web.js **/
 "use strict";
-i.exports = {
-  classificationEvidenceCard: "classificationEvidenceCard_f57acb",
-  classificationEvidenceMessageAttachment: "classificationEvidenceMessageAttachment_f57acb"
-}
+var r = {
+  scrollbar: "scrollbar__506b3",
+  scrollbarDefault: "scrollbarDefault__506b3 scrollbar__506b3",
+  scrollbarGhost: "scrollbarGhost__506b3 scrollbar__506b3",
+  scrollbarGhostHairline: "scrollbarGhostHairline__506b3 scrollbar__506b3"
+};
+e.exports = r

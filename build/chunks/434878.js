@@ -64,7 +64,7 @@ var r = n(200651),
   es = n(981631),
   eo = n(124368),
   ec = n(388032),
-  ed = n(639556);
+  ed = n(142418);
 
 function eu(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -633,11 +633,11 @@ function e_(e) {
       isEnabled: !er && e1,
       channel: t
     }),
-    e8 = e6.containerProps,
+    e4 = e6.containerProps,
     {
-      ref: e4
-    } = e8,
-    e2 = eh(e8, ["ref"]),
+      ref: e8
+    } = e4,
+    e2 = eh(e4, ["ref"]),
     e5 = k.ZP.getSidebarState(t.id),
     e7 = null != e5 && (0, k.D5)(e5),
     te = (0, g.e7)([k.ZP], () => k.ZP.getSection(t.id)) === es.ULH.MEMBERS;
@@ -670,7 +670,7 @@ function e_(e) {
           children: (0, r.jsx)(p.GMG, eu({
             ref: e => {
               var t;
-              e4.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null, eX(e)
+              e8.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null, eX(e)
             },
             itemGutter: 16,
             padding: 24,

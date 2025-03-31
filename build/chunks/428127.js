@@ -1,4 +1,4 @@
-/** Chunk was on 92196 **/
+/** Chunk was on 73181 **/
 n.d(t, {
   Z: () => y
 });
@@ -15,7 +15,7 @@ var r = n(200651),
   h = n(934415),
   f = n(968847),
   g = n(388032),
-  m = n(361676);
+  m = n(279833);
 let b = {
   friction: 30,
   tension: 300

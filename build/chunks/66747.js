@@ -41,7 +41,7 @@ var r = n(200651),
   k = n(285173),
   A = n(981631),
   B = n(388032),
-  W = n(351641);
+  W = n(67769);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {

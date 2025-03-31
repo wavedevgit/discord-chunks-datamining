@@ -1,11 +1,11 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   Z: () => l
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(481060),
-  a = n(816112);
+  a = n(281214);
 
 function l() {
   let [e, t] = i.useState(!1), [l, o] = i.useState(20), [c, d] = i.useState(80);

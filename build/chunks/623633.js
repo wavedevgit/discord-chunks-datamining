@@ -1,16 +1,16 @@
-/** Chunk was on 99245 **/
+/** Chunk was on 91344 **/
 t.d(n, {
-  Z: () => u
+  Z: () => o
 });
-var i = t(442837),
-  l = t(592125),
-  r = t(944486);
+var r = t(442837),
+  i = t(592125),
+  l = t(944486);
 
-function u() {
-  return (0, i.e7)([r.Z, l.Z], () => {
-    let e = r.Z.getVoiceChannelId();
+function o() {
+  return (0, r.e7)([l.Z, i.Z], () => {
+    let e = l.Z.getVoiceChannelId();
     if (null != e) {
-      let n = l.Z.getChannel(e);
+      let n = i.Z.getChannel(e);
       if (null == n ? void 0 : n.isGuildStageVoice()) return n
     }
     return null

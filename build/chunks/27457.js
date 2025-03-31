@@ -1,4 +1,4 @@
-/** Chunk was on 20756 **/
+/** Chunk was on 72663 **/
 n.d(t, {
   BP: () => eg,
   ZP: () => eb
@@ -61,7 +61,7 @@ var r = n(200651),
   ei = n(524484),
   eo = n(65154),
   el = n(388032),
-  es = n(454698);
+  es = n(230808);
 
 function ea(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -188,8 +188,8 @@ let eu = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
     }, [e$, e0, eb.hdStreamingUntil]);
     let e4 = (0, T.o)(H, eG),
       e1 = (0, I.lL)("CallTile", !0, eG, e4),
-      e6 = (0, s.e7)([A.Z], () => H.type === en.fO.USER && null != eW ? A.Z.getEffectForUserId(eW) : null),
-      e3 = (0, s.e7)([V.Z], () => V.Z.getVoicePlatformForChannel(eb.id, null != eW ? eW : et.lds)),
+      e3 = (0, s.e7)([A.Z], () => H.type === en.fO.USER && null != eW ? A.Z.getEffectForUserId(eW) : null),
+      e6 = (0, s.e7)([V.Z], () => V.Z.getVoicePlatformForChannel(eb.id, null != eW ? eW : et.lds)),
       {
         simplifiedSettingsEnabled: e9
       } = (0, F.Z)({
@@ -356,8 +356,8 @@ let eu = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
               focusProps: {
                 offset: 1
               },
-              children: [null != e6 && null != eW ? (0, r.jsx)(R.Z, {
-                voiceChannelEffect: e6,
+              children: [null != e3 && null != eW ? (0, r.jsx)(R.Z, {
+                voiceChannelEffect: e3,
                 onComplete: () => (0, A.H)(eW),
                 userId: eW
               }) : null, H.type === en.fO.USER ? (0, r.jsx)("div", {
@@ -389,7 +389,7 @@ let eu = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                 hasVideo: null != eq && eq
               }, eJ), {
                 idle: ew,
-                platform: e3,
+                platform: e6,
                 title: (0, z.Z)(eb, H),
                 blocked: eI,
                 ignored: eT,
@@ -407,7 +407,7 @@ let eu = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                 channelId: eb.id
               }) : null, ey && !eN ? (0, r.jsx)("div", {
                 className: l()(es.border, {
-                  [es.voiceChannelEffect]: !ex && null != e6,
+                  [es.voiceChannelEffect]: !ex && null != e3,
                   [es.speaking]: eQ && !ex
                 })
               }) : null]

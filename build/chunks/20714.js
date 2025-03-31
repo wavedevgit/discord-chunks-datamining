@@ -1,9 +1,5 @@
-/** Chunk was on 95676 **/
+/** Chunk was on 88610 **/
 e.exports = {
-  container: "container_fcf29c",
-  flexContainer: "flexContainer_fcf29c",
-  shrinkingContainer: "shrinkingContainer_fcf29c",
-  actions: "actions_fcf29c",
-  resetButton: "resetButton_fcf29c",
-  message: "message_fcf29c"
+  emptyStateContainer: "emptyStateContainer_cce1d3",
+  emptyStateImage: "emptyStateImage_cce1d3"
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 46022 **/
+/** Chunk was on 82218 **/
+"use strict";
 e.exports = {
-  assetContainer: "assetContainer__99d56",
-  closeIcon: "closeIcon__99d56"
+  orbPriceTag: "orbPriceTag__5dbac"
 }

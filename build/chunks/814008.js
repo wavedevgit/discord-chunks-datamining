@@ -21,7 +21,7 @@ var s = r(200651),
   v = r(203377),
   b = r(981631),
   f = r(388032),
-  j = r(980365);
+  j = r(625234);
 let S = RegExp("^[A-Za-z0-9\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF-]+$", "u"),
   y = e => {
     var t;

@@ -1,61 +1,61 @@
-/** Chunk was on 89540 **/
-o.d(e, {
-  q: () => s,
-  z: () => c
-}), o(266796);
-var t = o(200651);
-o(192379);
-var r = o(120356),
-  i = o.n(r),
-  l = o(481060),
-  a = o(639001);
+/** Chunk was on 34059 **/
+n.d(t, {
+  q: () => c,
+  z: () => s
+}), n(266796);
+var r = n(200651);
+n(192379);
+var i = n(120356),
+  l = n.n(i),
+  o = n(481060),
+  a = n(388043);
 
-function c(n) {
+function s(e) {
   let {
-    children: e
-  } = n;
-  return (0, t.jsx)("div", {
+    children: t
+  } = e;
+  return (0, r.jsx)("div", {
     className: a.cellGroup,
-    children: (0, t.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: a.content,
-      children: e
+      children: t
     })
   })
 }
 
-function s(n) {
+function c(e) {
   let {
-    icon: e,
-    title: o,
-    description: r,
-    iconClassName: c,
-    color: s,
-    listType: d = "icon",
-    index: u
-  } = n;
-  return (0, t.jsxs)("div", {
+    icon: t,
+    title: n,
+    description: i,
+    iconClassName: s,
+    color: c,
+    listType: u = "icon",
+    index: d
+  } = e;
+  return (0, r.jsxs)("div", {
     className: a.cell,
-    children: ["numbered" === d && null != u ? (0, t.jsx)(l.X6q, {
+    children: ["numbered" === u && null != d ? (0, r.jsx)(o.X6q, {
       variant: "heading-md/semibold",
       color: "text-brand",
       className: a.number,
-      children: u + 1
-    }) : null != e && (0, t.jsx)("div", {
+      children: d + 1
+    }) : null != t && (0, r.jsx)("div", {
       className: a.iconContainer,
-      children: (0, t.jsx)(e, {
-        color: null != s ? s : "currentColor",
-        className: i()(a.icon, c)
+      children: (0, r.jsx)(t, {
+        color: null != c ? c : "currentColor",
+        className: l()(a.icon, s)
       })
-    }), (0, t.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: a.textContainer,
-      children: [(0, t.jsx)(l.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: o
-      }), null != r && (0, t.jsx)(l.Text, {
+        children: n
+      }), null != i && (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: r
+        children: i
       })]
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 54589 **/
+/** Chunk was on 34059 **/
 n.d(t, {
   Z: () => eh
 }), n(47120);
@@ -52,7 +52,7 @@ var r = n(200651),
   X = n(998502),
   Q = n(981631),
   J = n(388032),
-  $ = n(582525);
+  $ = n(205145);
 
 function ee(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -188,7 +188,7 @@ class ea extends i.Component {
       (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("29618")]).then(n.bind(n, 757387)), t = z.Z.isInChannel(H.Z.getVoiceChannelId(), this.props.user.id);
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387)), t = z.Z.isInChannel(H.Z.getVoiceChannelId(), this.props.user.id);
         return n => (0, r.jsx)(e, en(et({}, n), {
           user: this.props.user,
           guildId: this.props.guildId,

@@ -164,6 +164,9 @@ function B(e) {
 }
 
 function F(e) {
+  if ((0, P.AB)(e)) return {
+    channel_static_route: e
+  };
   let t = u.Z.getChannel(e);
   if (null == t) return {
     channel_id: e

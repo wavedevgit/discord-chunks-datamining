@@ -1,4 +1,4 @@
-/** Chunk was on 63327 **/
+/** Chunk was on 70040 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -11,7 +11,7 @@ var i = n(120356),
   l = n(709586),
   o = n(267642),
   c = n(388032),
-  d = n(523963);
+  d = n(621826);
 let u = e => {
   let t, n, i, {
       guildFeature: u,

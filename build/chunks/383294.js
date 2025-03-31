@@ -1,157 +1,203 @@
 /** Chunk was on 20565 **/
-r.d(t, {
-  default: () => N
-}), r(47120);
-var n = r(200651),
-  a = r(192379),
-  o = r(442837),
-  c = r(481060),
-  l = r(110924),
-  i = r(607070),
-  s = r(100527),
-  u = r(335131),
-  d = r(70097),
-  f = r(43747),
-  m = r(511050),
-  b = r(82856),
-  p = r(272008),
-  y = r(497505),
-  h = r(918701),
-  j = r(46140),
-  g = r(215023),
-  O = r(388032),
-  C = r(435696),
-  v = r(557256),
-  x = r(201284);
+n.d(t, {
+  default: () => Z
+}), n(47120);
+var r = n(200651),
+  a = n(192379),
+  o = n(120356),
+  c = n.n(o),
+  l = n(642128),
+  i = n(442837),
+  s = n(481060),
+  u = n(110924),
+  d = n(607070),
+  f = n(100527),
+  m = n(335131),
+  b = n(70097),
+  y = n(43747),
+  p = n(511050),
+  h = n(82856),
+  j = n(272008),
+  g = n(497505),
+  O = n(918701),
+  C = n(46140),
+  v = n(215023),
+  x = n(388032),
+  w = n(72523),
+  N = n(557256),
+  S = n(639118),
+  _ = n(942847);
 
-function w() {
-  let e = (0, o.e7)([i.Z], () => i.Z.useReducedMotion);
-  return (0, n.jsx)(d.Z, {
-    autoPlay: !e,
-    loop: !0,
-    muted: !0,
-    playsInline: !0,
-    className: C.video,
-    controls: !1,
-    children: (0, n.jsx)("source", {
-      src: x.Z,
-      type: "video/webm"
-    })
+function k() {
+  let e = (0, i.e7)([d.Z], () => d.Z.useReducedMotion),
+    [t, n] = a.useState(!e),
+    o = a.useRef(null);
+  a.useEffect(() => {
+    if (!t && !e) {
+      var n;
+      null === (n = o.current) || void 0 === n || n.play()
+    }
+  }, [t, e]);
+  let u = (0, s.q_F)({
+    from: {
+      y: 50
+    },
+    to: {
+      y: 0
+    },
+    config: {
+      tension: 170,
+      friction: 26
+    }
+  });
+  return (0, r.jsxs)(l.animated.div, {
+    className: w.videoLayers,
+    style: u,
+    children: [(0, r.jsx)(b.Z, {
+      ref: o,
+      autoPlay: !1,
+      loop: !0,
+      muted: !0,
+      playsInline: !0,
+      className: c()(w.rotateVideo, {
+        [w.hidden]: t
+      }),
+      controls: !1,
+      children: (0, r.jsx)("source", {
+        src: _.Z,
+        type: "video/webm"
+      })
+    }), (0, r.jsx)(b.Z, {
+      autoPlay: !0,
+      muted: !0,
+      playsInline: !0,
+      className: c()(w.entryVideo, {
+        [w.hidden]: !t
+      }),
+      controls: !1,
+      onEnded: () => {
+        n(!1)
+      },
+      children: (0, r.jsx)("source", {
+        src: S.Z,
+        type: "video/webm"
+      })
+    })]
   })
 }
 
-function S(e) {
+function P(e) {
   let {
     transitionState: t,
-    rewardAmount: r,
+    rewardAmount: n,
     balance: a,
     onSubmit: o,
-    onClose: l,
-    state: i
+    onClose: c,
+    state: l
   } = e;
-  return (0, n.jsxs)(c.Y0X, {
+  return (0, r.jsxs)(s.Y0X, {
     transitionState: t,
-    size: c.CgR.DYNAMIC,
-    className: C.modal,
-    children: [(0, n.jsxs)("div", {
-      className: C.header,
-      children: [null != r && (0, n.jsxs)(c.Text, {
+    size: s.CgR.DYNAMIC,
+    className: w.modal,
+    children: [(0, r.jsxs)("div", {
+      className: w.header,
+      children: [null != n && (0, r.jsxs)(s.Text, {
         variant: "text-sm/bold",
         color: "always-white",
-        className: C.amountLabel,
-        children: ["+", r]
-      }), (0, n.jsx)(c.olH, {
-        className: C.closeBtn,
-        onClick: l
+        className: w.amountLabel,
+        children: ["+", n]
+      }), (0, r.jsx)(s.olH, {
+        className: w.closeBtn,
+        onClick: c
       })]
-    }), "loading" === i ? (0, n.jsx)("div", {
-      className: C.spinnerContainer,
-      children: (0, n.jsx)(c.$jN, {
-        type: c.RAz.SPINNING_CIRCLE
+    }), "loading" === l ? (0, r.jsx)("div", {
+      className: w.spinnerContainer,
+      children: (0, r.jsx)(s.$jN, {
+        type: s.RAz.SPINNING_CIRCLE
       })
-    }) : "success" === i ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(w, {}), (0, n.jsx)(c.X6q, {
+    }) : "success" === l ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(k, {}), (0, r.jsx)(s.X6q, {
         variant: "heading-lg/medium",
         color: "always-white",
-        className: C.title,
-        children: O.NW.formatToPlainString(O.t.Kr9pYW, {
+        className: w.title,
+        children: x.NW.formatToPlainString(x.t.Kr9pYW, {
           balance: a
         })
-      }), (0, n.jsx)(c.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
-        className: C.subtext,
-        children: O.NW.string(O.t.EDUOIC)
-      }), (0, n.jsx)(c.zxk, {
-        className: C.ctaBtn,
+        className: w.subtext,
+        children: x.NW.string(x.t.EDUOIC)
+      }), (0, r.jsx)(s.zxk, {
+        className: w.ctaBtn,
         onClick: o,
-        children: O.NW.string(O.t.WYchdX)
+        children: x.NW.string(x.t.WYchdX)
       })]
-    }) : (0, n.jsxs)("div", {
-      className: C.errorContainer,
-      children: [(0, n.jsx)("img", {
+    }) : (0, r.jsxs)("div", {
+      className: w.errorContainer,
+      children: [(0, r.jsx)("img", {
         alt: "",
-        className: C.errorImage,
-        src: v
-      }), (0, n.jsxs)("div", {
-        className: C.errorContentContainer,
-        children: [(0, n.jsx)(c.X6q, {
+        className: w.errorImage,
+        src: N
+      }), (0, r.jsxs)("div", {
+        className: w.errorContentContainer,
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-xl/medium",
           color: "always-white",
-          className: C.errorHeader,
-          children: O.NW.string(O.t.tWYWJy)
-        }), (0, n.jsx)(c.Text, {
+          className: w.errorHeader,
+          children: x.NW.string(x.t.tWYWJy)
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: O.NW.string(O.t.JNQRU1)
+          children: x.NW.string(x.t.JNQRU1)
         })]
-      }), (0, n.jsx)(c.zxk, {
-        className: C.ctaBtn,
-        onClick: l,
-        children: O.NW.string(O.t.cpT0Cg)
+      }), (0, r.jsx)(s.zxk, {
+        className: w.ctaBtn,
+        onClick: c,
+        children: x.NW.string(x.t.cpT0Cg)
       })]
     })]
   })
 }
 
-function N(e) {
-  var t, r, {
+function Z(e) {
+  var t, n, {
       quest: o,
       onClose: c
     } = e,
-    i = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
-      var r, n, a = function(e, t) {
+      var n, r, a = function(e, t) {
         if (null == e) return {};
-        var r, n, a = {},
+        var n, r, a = {},
           o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
         return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
       return a
     }(e, ["quest", "onClose"]);
-  let d = (0, h.LM)(o.config),
+  let i = (0, O.LM)(o.config),
     {
-      balance: O
-    } = (0, f.A)(),
-    C = function(e, t, r) {
-      let [n, o] = a.useState("loading"), [c, i] = a.useState(!1), {
-        balance: s
-      } = (0, f.A)(), u = (0, l.Z)(s), [d, m] = a.useState(!1);
+      balance: s
+    } = (0, y.A)(),
+    d = function(e, t, n) {
+      let [r, o] = a.useState("loading"), [c, l] = a.useState(!1), {
+        balance: i
+      } = (0, y.A)(), s = (0, u.Z)(i), [d, f] = a.useState(!1);
       return (a.useEffect(() => {
         let e = null;
-        return "success" === n && t && (e = setTimeout(() => {
-          m(!0)
+        return "success" === r && t && (e = setTimeout(() => {
+          f(!0)
         }, 1e3)), () => {
           null != e && clearTimeout(e)
         }
-      }, [n, t]), a.useEffect(() => {
-        !c && null != s && null != u && s > u && i(!0)
-      }, [s, u, c]), a.useEffect(() => {
-        (0, p.QB)(e, y.y$.CROSS_PLATFORM, r).then(e => {
+      }, [r, t]), a.useEffect(() => {
+        !c && null != i && null != s && i > s && l(!0)
+      }, [i, s, c]), a.useEffect(() => {
+        (0, j.QB)(e, g.y$.CROSS_PLATFORM, n).then(e => {
           if ((null == e ? void 0 : e.claimedAt) != null) {
             o("success");
             return
@@ -160,60 +206,60 @@ function N(e) {
         }).catch(() => {
           o("error")
         })
-      }, [e, r]), "error" === n) ? n : "success" === n && (c || d) ? "success" : "loading"
-    }(o.id, o.preview, i.location),
+      }, [e, n]), "error" === r) ? r : "success" === r && (c || d) ? "success" : "loading"
+    }(o.id, o.preview, l.location),
     {
-      openIntroToOrbsClaimedCoachmark: v
-    } = (0, m.Z)({
+      openIntroToOrbsClaimedCoachmark: b
+    } = (0, p.Z)({
       location: "QuestsOrbsRewardModal"
     }),
     x = a.useCallback(async function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      await (0, b.vp)({
+      await (0, h.vp)({
         hideImmediately: e
       }), c()
     }, [c]),
     w = a.useCallback(() => {
-      x(!0), (0, u.mK)({
+      x(!0), (0, m.mK)({
         openInLayer: !1,
-        tab: g.AW.ORBS,
+        tab: v.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: o.id === j.V6 ? s.Z.INTRO_TO_ORBS_QUEST : s.Z.QUEST_HOME_PAGE
-      }), v({
+        analyticsSource: o.id === C.V6 ? f.Z.INTRO_TO_ORBS_QUEST : f.Z.QUEST_HOME_PAGE
+      }), b({
         delayMS: 300
       })
-    }, [x, v, o.id]);
-  return (0, n.jsx)(S, (t = function(e) {
+    }, [x, b, o.id]);
+  return (0, r.jsx)(P, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
-  }({}, i), r = r = {
-    rewardAmount: d,
-    balance: O,
+  }({}, l), n = n = {
+    rewardAmount: i,
+    balance: s,
     onClose: x,
     onSubmit: w,
-    state: C
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+    state: d
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }

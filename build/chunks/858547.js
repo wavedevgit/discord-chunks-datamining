@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  wrapper: "wrapper__4106a"
-};
-e.exports = r
+/** Chunk was on 93886 **/
+e.exports = {
+  lineClamp: "lineClamp__0b48b"
+}

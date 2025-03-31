@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   Z: () => d
 });
@@ -9,7 +9,7 @@ var i = n(481060),
   a = n(391110),
   l = n(981631),
   o = n(388032),
-  c = n(951084);
+  c = n(26526);
 let d = e => {
   let {
     setIsAllPerksVisible: t,

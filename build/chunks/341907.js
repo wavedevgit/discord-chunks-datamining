@@ -93,7 +93,7 @@ function k(e) {
   (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("37447"), n.e("64838"), n.e("48923"), n.e("59644")]).then(n.bind(n, 985866));
+    } = await Promise.all([n.e("37447"), n.e("64838"), n.e("48923"), n.e("4605")]).then(n.bind(n, 985866));
     return n => (0, r.jsx)(e, L(w({}, n), {
       questId: t,
       questContentPosition: o,
@@ -198,7 +198,7 @@ function V(e) {
 }
 
 function Z() {
-  return Promise.all([n.e("29976"), n.e("32249"), n.e("31117")]).then(n.bind(n, 536687))
+  return Promise.all([n.e("29976"), n.e("32249"), n.e("63689")]).then(n.bind(n, 536687))
 }
 
 function H(e) {

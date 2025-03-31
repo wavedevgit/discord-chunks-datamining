@@ -1,6 +1,6 @@
 /**
   Module ID: 20565
-  Original File Name: de28eea73d9fdef5
+  Original File Name: 8acdd4f971d26da4
 **/
 .modal_cf1d1c {
     background-color: var(--black);
@@ -63,9 +63,24 @@
     grid-area: close-btn
 }
 
-.video_cf1d1c {
-    width: 150px;
-    margin: 20px 50px 25px
+.videoLayers_cf1d1c {
+    display: grid;
+    grid-template: "layer" 1fr/1fr;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px
+}
+
+.entryVideo_cf1d1c,.rotateVideo_cf1d1c {
+    grid-area: layer;
+    width: 100%;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.hidden_cf1d1c {
+    display: none
 }
 
 .title_cf1d1c {
@@ -86,4 +101,4 @@
     margin-top: 32px
 }
 
-/*# sourceMappingURL=de28eea73d9fdef5.css.map*/
+/*# sourceMappingURL=8acdd4f971d26da4.css.map*/

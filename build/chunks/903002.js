@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   D: () => d,
   F: () => c
@@ -9,7 +9,7 @@ var i = n(120356),
   s = n.n(i),
   a = n(793030),
   l = n(481060),
-  o = n(53024);
+  o = n(363221);
 let c = {
     SMALL: {
       style: o.small,

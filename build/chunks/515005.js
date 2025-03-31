@@ -22,7 +22,7 @@ var r = n(200651),
   b = n(490095),
   v = n(981631),
   y = n(388032),
-  O = n(551307);
+  O = n(943261);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -140,7 +140,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("83914")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("79106")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, S({
                 guildId: e.guild_id
               }, n))

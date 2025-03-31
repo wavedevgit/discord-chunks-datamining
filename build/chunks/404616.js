@@ -63,8 +63,8 @@ var i = n(200651),
   ee = n(981631),
   et = n(217702),
   en = n(388032),
-  ei = n(890104),
-  eo = n(509045);
+  ei = n(591483),
+  eo = n(50398);
 
 function er(e) {
   for (var t = 1; t < arguments.length; t++) {

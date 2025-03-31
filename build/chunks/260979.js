@@ -1,11 +1,11 @@
-/** Chunk was on 54589 **/
+/** Chunk was on 34059 **/
 n.d(t, {
   Z: () => a
 }), n(653041);
 var r = n(200651),
   i = n(192379),
   l = n(965288),
-  o = n(422732);
+  o = n(233662);
 let a = i.memo(function(e) {
   let {
     channel: t,

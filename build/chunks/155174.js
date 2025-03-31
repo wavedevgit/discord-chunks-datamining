@@ -5,8 +5,8 @@ B.d(g, {
 });
 let {
   createLoader: C
-} = B(947630), Q = C({
+} = B(164484), Q = C({
   "en-US": () => B.e("90959").then(B.bind(B, 586657))
 }, "en-US"), {
   makeMessagesProxy: w
-} = B(947630), D = w(Q)
+} = B(164484), D = w(Q)

@@ -1,10 +1,7 @@
-/** Chunk was on 8655 **/
+/** Chunk was on 18259 **/
 e.exports = {
-  container: "container_cacd02",
-  bumpBox: "bumpBox_cacd02",
-  icon: "icon_cacd02",
-  publish: "publish_cacd02",
-  tagline: "tagline_cacd02",
-  hidePermanently: "hidePermanently_cacd02",
-  closeIcon: "closeIcon_cacd02"
+  spacing: "spacing_b3ae06",
+  card: "card_b3ae06 spacing_b3ae06",
+  error: "error_b3ae06",
+  warning: "warning_b3ae06"
 }

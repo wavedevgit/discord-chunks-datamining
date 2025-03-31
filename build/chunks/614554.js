@@ -1,11 +1,11 @@
-/** Chunk was on 86507 **/
+/** Chunk was on 63141 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var i = n(314897),
   r = n(981631);
 
-function o(e) {
+function a(e) {
   if (r.TPd.CALLABLE.has(e.type)) {
     var t;
     return (null === (t = e.recipients) || void 0 === t ? void 0 : t.length) === 1 ? e.recipients[0] : null

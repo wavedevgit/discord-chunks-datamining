@@ -1,8 +1,8 @@
-/** Chunk was on 52272 **/
+/** Chunk was on 83379 **/
 n.d(t, {
-  $p: () => e9,
+  $p: () => e6,
   BB: () => e5,
-  ZP: () => e6
+  ZP: () => e9
 }), n(47120), n(301563), n(789020), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(411104), n(13667), n(390547);
 var r, i = n(200651),
   a = n(192379),
@@ -102,8 +102,8 @@ var r, i = n(200651),
   eV = n(981631),
   ez = n(474936),
   eK = n(388032),
-  eY = n(260346),
-  eX = n(944951),
+  eY = n(649547),
+  eX = n(220631),
   eq = n(680674);
 
 function eQ(e, t, n) {
@@ -158,8 +158,8 @@ function e0() {
   })
 }
 let e1 = 15 * e_.Z.Millis.MINUTE,
-  e3 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
-  e2 = (e, t, n) => () => {
+  e2 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
+  e3 = (e, t, n) => () => {
     let r = null != t ? t : n;
     if (null == r) return null;
     let {
@@ -199,7 +199,7 @@ class e5 extends(r = a.Component) {
     let {
       channel: t
     } = this.props;
-    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e3.has(e))
+    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e2.has(e))
   }
   shouldComponentUpdate(e, t) {
     var n, r;
@@ -742,7 +742,7 @@ class e5 extends(r = a.Component) {
       } = this.props, p = r.channel_id, m = r.id, f = (0, eO.BP)(e, p, m, s, c);
       if (e.type === eV.hBH.GIFT) return null;
       let h = (0, i.jsx)(Z.h.Provider, {
-        value: e2(e.url, e.image, e.video),
+        value: e3(e.url, e.image, e.video),
         children: (0, i.jsx)(E.ZP, eJ({
           className: eX.embedWrapper,
           embed: e,
@@ -795,7 +795,7 @@ class e5 extends(r = a.Component) {
   }
 }
 
-function e6(e) {
+function e9(e) {
   var t;
   let {
     channel: n,
@@ -856,7 +856,7 @@ eQ(e5, "defaultProps", {
   renderEmbeds: !0,
   compact: !1
 });
-let e9 = e => {
+let e6 = e => {
   var t, {
       message: n,
       channel: r,

@@ -1,70 +1,70 @@
-/** Chunk was on 68317 **/
-n.d(t, {
-  default: () => p
+/** Chunk was on 59500 **/
+s.d(n, {
+  default: () => g
 });
-var o = n(200651);
-n(192379);
-var a = n(481060),
-  r = n(546957),
-  i = n(190014),
-  c = n(301812),
-  l = n(988043),
-  _ = n(919539),
-  s = n(526761),
-  d = n(388032),
-  u = n(310037);
+var t = s(200651);
+s(192379);
+var e = s(481060),
+  r = s(546957),
+  c = s(190014),
+  d = s(301812),
+  a = s(988043),
+  l = s(919539),
+  o = s(526761),
+  x = s(388032),
+  u = s(954035);
 
-function b(e) {
+function h(i) {
   let {
-    guildId: t
-  } = e;
-  return (0, o.jsxs)(r.Z, {
-    children: [(0, o.jsx)(l.Z, {
-      ingress: s.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, o.jsx)(_.Z, {
-      ingress: s.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, o.jsx)(c.Z, {
-      ingress: s.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, o.jsx)(i.Z, {
-      ingress: s.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, o.jsx)(a.Text, {
+    guildId: n
+  } = i;
+  return (0, t.jsxs)(r.Z, {
+    children: [(0, t.jsx)(a.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
+    }), (0, t.jsx)(l.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
+    }), (0, t.jsx)(d.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
+    }), (0, t.jsx)(c.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
+    }), (0, t.jsx)(e.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: d.NW.format(d.t.LNsV09, {
+      children: x.NW.format(x.t.LNsV09, {
         policyLink: "https://discord.com/safety/360043709612-our-policies"
       })
     })]
   })
 }
 
-function p(e) {
+function g(i) {
   let {
-    guild: t,
-    transitionState: n,
+    guild: n,
+    transitionState: s,
     onClose: r
-  } = e, i = "".concat(d.NW.string(d.t.BayiAg), "—").concat(null != t ? t.toString() : "??");
-  return (0, o.jsxs)(a.Y0X, {
-    transitionState: n,
-    size: a.CgR.SMALL,
-    "aria-label": i,
-    children: [(0, o.jsx)(a.xBx, {
-      children: (0, o.jsx)(a.X6q, {
+  } = i, c = "".concat(x.NW.string(x.t.BayiAg), "—").concat(null != n ? n.toString() : "??");
+  return (0, t.jsxs)(e.Y0X, {
+    transitionState: s,
+    size: e.CgR.SMALL,
+    "aria-label": c,
+    children: [(0, t.jsx)(e.xBx, {
+      children: (0, t.jsx)(e.X6q, {
         variant: "heading-lg/semibold",
-        children: i
+        children: c
       })
-    }), (0, o.jsx)(a.hzk, {
+    }), (0, t.jsx)(e.hzk, {
       className: u.content,
-      children: (0, o.jsx)(b, {
-        guildId: t.id
+      children: (0, t.jsx)(h, {
+        guildId: n.id
       })
-    }), (0, o.jsx)(a.mzw, {
-      children: (0, o.jsx)(a.zxk, {
+    }), (0, t.jsx)(e.mzw, {
+      children: (0, t.jsx)(e.zxk, {
         onClick: () => r(),
-        children: d.NW.string(d.t.i4jeWV)
+        children: x.NW.string(x.t.i4jeWV)
       })
     })]
   })

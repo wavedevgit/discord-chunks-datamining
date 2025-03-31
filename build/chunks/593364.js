@@ -1,4 +1,4 @@
-/** Chunk was on 92196 **/
+/** Chunk was on 73181 **/
 n.d(t, {
   N: () => o
 });
@@ -11,4 +11,4 @@ function o(e) {
     count: e
   })
 }
-n(460562), n(820500)
+n(460562), n(5601)

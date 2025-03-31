@@ -1,4 +1,4 @@
-/** Chunk was on 54589 **/
+/** Chunk was on 34059 **/
 n.d(t, {
   Z: () => ta
 }), n(47120), n(653041);
@@ -114,10 +114,10 @@ var r = n(200651),
   e7 = n(918559),
   e4 = n(354459),
   e6 = n(921944),
-  e9 = n(440493),
-  e5 = n(157925),
+  e5 = n(440493),
+  e9 = n(157925),
   e8 = n(388032),
-  te = n(678431);
+  te = n(688044);
 
 function tt(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -201,7 +201,7 @@ class tl extends i.PureComponent {
     s()(null != i, "Missing user in Channel.openDMContextMenu"), (0, b.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("20875"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("75046")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("20875"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("32698")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         user: i,
         channelSelected: !0,
@@ -362,7 +362,7 @@ class tl extends i.PureComponent {
         guildId: t
       }))
     }, {
-      onCloseCallback: () => G.Z.viewPrompt(e9.r.REAL_NAME_PROMPT, t),
+      onCloseCallback: () => G.Z.viewPrompt(e5.r.REAL_NAME_PROMPT, t),
       modalKey: "Guild Hub Real Name Modal"
     }), l && (0, m.ZDy)(async () => {
       let {
@@ -840,7 +840,7 @@ let to = (0, j.Z)(tl),
     }), i.useEffect(() => {
       var e, t, n;
       let r = (0, eb.s1)();
-      if ((null == r ? void 0 : null === (e = r.location) || void 0 === e ? void 0 : e.state) === e5.Df) {
+      if ((null == r ? void 0 : null === (e = r.location) || void 0 === e ? void 0 : e.state) === e9.Df) {
         let {
           channelId: e
         } = null !== (n = (0, ep.Qj)(null == r ? void 0 : null === (t = r.location) || void 0 === t ? void 0 : t.pathname)) && void 0 !== n ? n : {};

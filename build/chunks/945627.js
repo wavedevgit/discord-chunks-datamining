@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   Z: () => O
 }), n(47120), n(653041);
@@ -20,7 +20,7 @@ var r = n(200651),
   b = n(726985),
   x = n(981631),
   _ = n(388032),
-  E = n(167198);
+  E = n(985680);
 
 function j() {
   let e = (0, a.e7)([u.Z], () => u.Z.getGameFriendCount()),

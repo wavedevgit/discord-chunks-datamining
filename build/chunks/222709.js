@@ -1,4 +1,4 @@
-/** Chunk was on 52272 **/
+/** Chunk was on 83379 **/
 n.d(t, {
   Z: () => m
 });
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(528144),
   u = n(212342),
   d = n(388032),
-  p = n(438379);
+  p = n(640977);
 let m = e => {
   let {
     channelId: t,

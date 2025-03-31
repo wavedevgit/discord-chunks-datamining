@@ -14,7 +14,7 @@ var i = n(200651),
   d = n(987650),
   h = n(981631),
   p = n(388032),
-  f = n(469626);
+  f = n(772);
 let g = Object.values(d.wF).map(e => 100 * e),
   m = (0, a.hQ)();
 class y extends r.PureComponent {

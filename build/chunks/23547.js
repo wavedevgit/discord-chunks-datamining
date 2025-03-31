@@ -1,30 +1,30 @@
 /** Chunk was on 20565 **/
-r.d(t, {
+n.d(t, {
   Mm: () => b,
   jj: () => f,
   wH: () => d
 });
-var n = r(200651),
-  a = r(192379),
-  o = r(442837),
-  c = r(481060),
-  l = r(751648),
-  i = r(479766);
+var r = n(200651),
+  a = n(192379),
+  o = n(442837),
+  c = n(481060),
+  l = n(751648),
+  i = n(479766);
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -51,8 +51,8 @@ function b(e) {
     l && !a ? !(t = s({}, e)).isCoachmarkEnabled || (0, c.ZDy)(async () => {
       let {
         BalanceWidgetEarnedOrbsCoachmarkModal: e
-      } = await r.e("82081").then(r.bind(r, 720463));
-      return r => (0, n.jsx)(e, s({}, t, r))
+      } = await n.e("82081").then(n.bind(n, 720463));
+      return n => (0, r.jsx)(e, s({}, t, n))
     }, m) : !l && a && f()
   }, [l, e]), s({}, t)
 }

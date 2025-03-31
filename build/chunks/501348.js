@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   Z: () => er
 }), n(47120);
@@ -41,8 +41,8 @@ var r = n(200651),
   B = n(921944),
   M = n(959517),
   U = n(388032),
-  V = n(658749),
-  G = n(802138);
+  V = n(379673),
+  G = n(685786);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

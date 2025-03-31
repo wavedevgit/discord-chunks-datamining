@@ -49,7 +49,7 @@ var c = {
   "./champion_19.jpg": "790427",
   "./champion_2.jpg": "372989",
   "./champion_20.jpg": "97039",
-  "./champion_200.jpg": "63369",
+  "./champion_200.jpg": "625894",
   "./champion_201.jpg": "307331",
   "./champion_202.jpg": "903041",
   "./champion_203.jpg": "541963",

@@ -1,4 +1,4 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 13323 **/
 n.d(t, {
   f: () => s
 });
@@ -12,7 +12,7 @@ let s = e => {
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("68440"), n.e("71459")]).then(n.bind(n, 612293));
+    } = await Promise.all([n.e("68440"), n.e("82218")]).then(n.bind(n, 612293));
     return n => {
       var i, s;
       return (0, r.jsx)(e, (i = function(e) {

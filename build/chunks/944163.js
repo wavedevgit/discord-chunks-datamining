@@ -1,92 +1,92 @@
-/** Chunk was on 97574 **/
-r.d(t, {
-  Z: () => d,
-  t: () => c
-}), r(266796);
-var n, l = r(392711),
-  i = r.n(l),
-  a = r(442837),
-  o = r(570140),
-  s = r(246364);
+/** Chunk was on 99840 **/
+t.d(n, {
+  Z: () => h,
+  t: () => d
+}), t(266796);
+var r, o = t(392711),
+  i = t.n(o),
+  a = t(442837),
+  s = t(570140),
+  l = t(246364);
 
-function h(e, t, r) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: r,
+function c(e, n, t) {
+  return n in e ? Object.defineProperty(e, n, {
+    value: t,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = r, e
+  }) : e[n] = t, e
 }
-let c = {
+let d = {
     version: "",
     description: "",
     formFields: []
   },
-  v = {};
-class u extends(n = a.ZP.Store) {
+  u = {};
+class m extends(r = a.ZP.Store) {
   get(e) {
-    if (null != e) return v[e]
+    if (null != e) return u[e]
   }
   getRulesPrompt(e) {
-    var t;
-    return i().find(null === (t = v[e]) || void 0 === t ? void 0 : t.formFields, s.J)
+    var n;
+    return i().find(null === (n = u[e]) || void 0 === n ? void 0 : n.formFields, l.J)
   }
 }
-h(u, "displayName", "MemberVerificationFormStore");
-let d = new u(o.Z, {
+c(m, "displayName", "MemberVerificationFormStore");
+let h = new m(s.Z, {
   INVITE_ACCEPT_SUCCESS: function(e) {
     let {
-      invite: t
+      invite: n
     } = e, {
-      member_verification_form: r
-    } = t, {
-      guild: n
-    } = t;
-    if (null != n && null != r) {
-      var l;
-      return v[n.id] = {
-        version: r.version,
-        description: null !== (l = r.description) && void 0 !== l ? l : "",
-        formFields: r.form_fields,
-        guild: n
+      member_verification_form: t
+    } = n, {
+      guild: r
+    } = n;
+    if (null != r && null != t) {
+      var o;
+      return u[r.id] = {
+        version: t.version,
+        description: null !== (o = t.description) && void 0 !== o ? o : "",
+        formFields: t.form_fields,
+        guild: r
       }, !0
     }
     return !1
   },
   MEMBER_VERIFICATION_FORM_UPDATE: function(e) {
     let {
-      form: t,
-      guildId: r
+      form: n,
+      guildId: t
     } = e;
-    if (null == t) v[r] = c;
+    if (null == n) u[t] = d;
     else {
-      var n;
-      let e = null !== (n = v[r]) && void 0 !== n ? n : c;
-      v[r] = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            h(e, t, r[t])
+      var r;
+      let e = null !== (r = u[t]) && void 0 !== r ? r : d;
+      u[t] = function(e) {
+        for (var n = 1; n < arguments.length; n++) {
+          var t = null != arguments[n] ? arguments[n] : {},
+            r = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(t, e).enumerable
+          }))), r.forEach(function(n) {
+            c(e, n, t[n])
           })
         }
         return e
-      }({}, e, t)
+      }({}, e, n)
     }
   },
   MEMBER_VERIFICATION_FORM_FETCH_FAIL: function(e) {
-    var t;
+    var n;
     let {
-      guildId: r
+      guildId: t
     } = e;
-    v[r] = null !== (t = v[r]) && void 0 !== t ? t : c
+    u[t] = null !== (n = u[t]) && void 0 !== n ? n : d
   },
   GUILD_DELETE: function(e) {
     let {
-      guild: t
+      guild: n
     } = e;
-    delete v[null == t ? void 0 : t.id]
+    delete u[null == n ? void 0 : n.id]
   }
 })
