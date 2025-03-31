@@ -1,6 +1,6 @@
 /**
   Module ID: 73181
-  Original File Name: 08bb48eaab104c6e
+  Original File Name: cb8fb3eb61a5b024
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2928,11 +2928,18 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     position: relative
 }
 
-.lottie__877f0 {
+.lottieContainer__877f0 {
     position: absolute;
-    height: 32px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     border-radius: var(--radius-xs);
     overflow: hidden
+}
+
+.lottie__877f0 {
+    height: 34px
 }
 
 .textImportant__877f0 {
@@ -5878,4 +5885,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=08bb48eaab104c6e.css.map*/
+/*# sourceMappingURL=cb8fb3eb61a5b024.css.map*/

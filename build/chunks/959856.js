@@ -236,7 +236,6 @@ class N extends l.Z {
   createReplayConnection(e, t) {
     throw Error("Connection replay is not supported.")
   }
-  setUseDirectVideo(e) {}
   setOnVideoContainerResized(e) {}
   setMaxSyncDelayOverride(e) {}
   rankRtcRegions(e) {

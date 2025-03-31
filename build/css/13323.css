@@ -1,6 +1,6 @@
 /**
   Module ID: 13323
-  Original File Name: 82495085be8d8ef0
+  Original File Name: b630c8c970ac89c5
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -9911,7 +9911,8 @@ html .invoiceCancelRow_b9f95d {
 .row__93529 {
     flex-direction: row;
     align-items: center;
-    gap: 8px
+    gap: 8px;
+    margin-bottom: 16px
 }
 
 .col__93529,.row__93529 {
@@ -9936,7 +9937,7 @@ html .invoiceCancelRow_b9f95d {
 }
 
 .section__93529 {
-    margin: 8px 0
+    margin: 12px 0
 }
 
 .root__93529 {
@@ -9977,8 +9978,10 @@ html .invoiceCancelRow_b9f95d {
     margin-top: 20px
 }
 
-.controls__93529 {
-    margin-top: 224px
+.dangerControls__93529 {
+    margin: 12px 0;
+    display: flex;
+    justify-content: center
 }
 
 .options__93529 {
@@ -10009,13 +10012,13 @@ html .invoiceCancelRow_b9f95d {
 
 .bottomControls__93529 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
-    margin-top: 20px
+    margin: 12px 0
 }
 
 .shareSection__93529 {
-    padding: 4px;
+    padding: 4px 12px;
     border: 1px solid var(--redesign-button-primary-alt-border);
     border-radius: 4px
 }
@@ -10056,7 +10059,27 @@ html .invoiceCancelRow_b9f95d {
 
 .layerPreview__93529 {
     border-radius: 8px;
-    height: 250px
+    height: 250px;
+    border: 1px solid var(--border-strong)
+}
+
+.staticFramesContainer__93529 {
+    display: flex;
+    margin-top: 12px;
+    gap: 12px
+}
+
+.staticFramePreviewContainer__93529 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px
+}
+
+.staticFramePreview__93529 {
+    height: 250px;
+    border: 1px solid var(--border-strong);
+    border-radius: 4px
 }
 
 .clickable__2debe {
@@ -16861,4 +16884,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=82495085be8d8ef0.css.map*/
+/*# sourceMappingURL=b630c8c970ac89c5.css.map*/

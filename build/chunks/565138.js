@@ -150,12 +150,14 @@ class N extends o.PureComponent {
         animate: I,
         tabIndex: S,
         iconSrc: T,
-        "aria-hidden": N
+        "aria-hidden": N,
+        lossless: C,
+        iconSize: R
       } = n,
-      C = O(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden"]),
-      R = A[c],
-      P = null != h ? d.P3F : "div";
-    return (0, i.jsxs)(P, y(b({
+      P = O(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
+      w = A[c],
+      D = null != h ? d.P3F : "div";
+    return (0, i.jsxs)(D, y(b({
       className: s()(g.icon, o, (0, m.l)(g, "iconSize", c), {
         [null !== (e = (0, m.l)(g, "iconActive", c)) && void 0 !== e ? e : ""]: l,
         [g.iconInactive]: !l,
@@ -163,11 +165,11 @@ class N extends o.PureComponent {
       }),
       "aria-hidden": N,
       style: null == r.icon ? b({
-        fontSize: (null !== (t = R[r.acronym.length]) && void 0 !== t ? t : R[R.length - 1]) * f
+        fontSize: (null !== (t = w[r.acronym.length]) && void 0 !== t ? t : w[w.length - 1]) * f
       }, u) : u,
       onClick: null != E || null == h ? void 0 : h,
       tabIndex: S
-    }, C), {
+    }, P), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))
   }

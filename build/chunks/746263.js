@@ -61,7 +61,7 @@ function N() {
     profileEffects: e,
     upsertConfig: t
   } = (0, u.E)(), [n, s] = i.useState(), l = i.useRef(null), N = i.useCallback((e, n) => {
-    if (!e.type.startsWith("text/")) return (0, d.Eo)(p);
+    if (null == n || !e.type.startsWith("text/")) return (0, d.Eo)(p);
     let [r, i] = n.split(",");
     if (!r.includes("text/plain")) return (0, d.Eo)(p);
     t(JSON.parse(atob(i))), (0, d.XA)("Profile Effect (maybe??) imported!")

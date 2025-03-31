@@ -91,12 +91,18 @@ let y = {
             className: e,
             color: "currentColor"
           }),
-          background: (null == _ ? void 0 : _.popout) != null && (0, r.jsx)(a.kci, {
-            className: b.lottie,
-            nextScene: I,
-            sceneSegments: y,
-            importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-            onScenePlay: N
+          background: (null == _ ? void 0 : _.popout) != null && (0, r.jsx)("div", {
+            className: b.lottieContainer,
+            children: (0, r.jsx)(a.kci, {
+              nextScene: I,
+              className: b.lottie,
+              sceneSegments: y,
+              importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
+              onScenePlay: N,
+              rendererSettings: {
+                preserveAspectRatio: "xMidYMid slice"
+              }
+            })
           }),
           text: (0, r.jsx)("span", {
             className: l()({

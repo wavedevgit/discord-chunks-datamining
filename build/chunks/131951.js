@@ -1749,10 +1749,10 @@ class rt extends(s = h.ZP.Store) {
     return ej
   }
   getVideoComponent() {
-    return ej.supports(eh.AN.DIRECT_VIDEO) && ej.setUseDirectVideo(!0), ej.Video
+    return ej.Video
   }
   getCameraComponent() {
-    return ej.supports(eh.AN.DIRECT_VIDEO) && ej.setUseDirectVideo(!0), ej.Camera
+    return ej.Camera
   }
   isEnabled() {
     return eB

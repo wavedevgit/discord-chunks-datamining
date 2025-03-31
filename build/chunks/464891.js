@@ -142,57 +142,52 @@ function X(e) {
     user: null == t ? void 0 : t.author,
     compact: i,
     isRepliedMessage: !1
-  }), [t, n, i]), x = o.useRef(null), j = (0, c.e7)([S.Z], () => ee(i, h, s, S.Z.getGuild(a)), [i, h, s, a]), C = (0, c.e7)([S.Z], () => {
-    let e = S.Z.getGuild(a);
-    return null == s ? null : 1 === j && null != e ? (0, r.jsx)(l.yRy, {
-      targetElementRef: x,
-      animation: l.yRy.Animation.TRANSLATE,
-      align: "center",
-      autoInvert: !0,
-      nudgeAlignIntoViewport: !0,
-      position: "right",
-      renderPopout: () => (0, r.jsx)(W.Z, {
-        roleIcon: s,
-        guild: e
-      }),
-      clickTrap: !0,
-      children: e => {
-        let {
-          onClick: t
-        } = e;
-        return (0, r.jsx)(m.Z, q(K({
-          ref: x
-        }, s), {
-          className: F.roleIcon,
-          onClick: t
-        }))
-      }
-    }, "role-icon-children") : 2 === j ? (0, r.jsx)(m.Z, q(K({}, s), {
-      className: F.roleIcon
-    }), "role-icon-children") : null
-  }, [j, s, a]), P = (0, c.Wu)([k.default, S.Z], () => {
+  }), [t, n, i]), x = o.useRef(null), j = (0, c.e7)([S.Z], () => S.Z.getGuild(a)), C = o.useMemo(() => ee(i, h, s, j), [i, h, s, j]), P = o.useMemo(() => null == s ? null : 1 === C && null != j ? (0, r.jsx)(l.yRy, {
+    targetElementRef: x,
+    animation: l.yRy.Animation.TRANSLATE,
+    align: "center",
+    autoInvert: !0,
+    nudgeAlignIntoViewport: !0,
+    position: "right",
+    renderPopout: () => (0, r.jsx)(W.Z, {
+      roleIcon: s,
+      guild: j
+    }),
+    clickTrap: !0,
+    children: e => {
+      let {
+        onClick: t
+      } = e;
+      return (0, r.jsx)(m.Z, q(K({
+        ref: x
+      }, s), {
+        className: F.roleIcon,
+        onClick: t
+      }))
+    }
+  }, "role-icon-children") : 2 === C ? (0, r.jsx)(m.Z, q(K({}, s), {
+    className: F.roleIcon
+  }), "role-icon-children") : null, [C, s, j]), T = (0, c.e7)([k.default], () => k.default.getCurrentUser()), N = o.useMemo(() => {
     let e = [],
-      o = S.Z.getGuild(a),
-      c = k.default.getCurrentUser(),
-      l = Z.ZP.isPremium(t.author),
-      u = Z.ZP.isPremium(c),
-      d = null == n ? void 0 : n.isPrivate();
-    return (0, A.R)(null != s, "Message Username") && l && !i && !d && e.push((0, r.jsx)(et, {
-      currentUserIsPremium: u,
+      o = Z.ZP.isPremium(t.author),
+      a = Z.ZP.isPremium(T),
+      c = null == n ? void 0 : n.isPrivate();
+    return (0, A.R)(null != s, "Message Username") && o && !i && !c && e.push((0, r.jsx)(et, {
+      currentUserIsPremium: a,
       author: t.author
-    }, "nitro-author")), null != C && e.push(C), null != o && (e.push((0, r.jsx)(_.Z, {
-      guild: o,
+    }, "nitro-author")), null != P && e.push(P), null != j && (e.push((0, r.jsx)(_.Z, {
+      guild: j,
       message: t
     }, "new-member")), e.push((0, r.jsx)(b.Z, {
-      guild: o,
+      guild: j,
       message: t
-    }, "leaderboard-champion"))), null != n && null != o && e.push((0, r.jsx)(g.Z, {
-      guild: o,
+    }, "leaderboard-champion"))), null != n && null != j && e.push((0, r.jsx)(g.Z, {
+      guild: j,
       channel: n,
       userId: t.author.id,
       messageId: t.id
     }, "connections")), e
-  }, [t, n, s, i, C, a]);
+  }, [t, n, s, i, P, j, T]);
   return null == v ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(B.Z, {
       message: t,
@@ -207,7 +202,7 @@ function X(e) {
       onPopoutRequestClose: y,
       decorations: {
         [B.a.SYSTEM_TAG]: O,
-        [B.a.BADGES]: P
+        [B.a.BADGES]: N
       },
       renderRemixTag: !0
     }), i && (0, r.jsxs)(r.Fragment, {

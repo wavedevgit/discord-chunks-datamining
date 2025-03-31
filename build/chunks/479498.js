@@ -76,16 +76,18 @@ class E extends(r = o.PureComponent) {
       pauseWhileUnfocused: r,
       pause: i,
       isWindowFocused: o,
-      useReducedMotion: a
-    } = this.props, [s, {
-      default: l
+      useReducedMotion: a,
+      rendererSettings: s
+    } = this.props, [l, {
+      default: c
     }] = await Promise.all([e(), Promise.resolve().then(n.t.bind(n, 500923, 23))]);
-    null != this.animationRef && (this.animation = l.loadAnimation({
+    null != this.animationRef && (this.animation = c.loadAnimation({
       container: this.animationRef,
       renderer: "svg",
       loop: !0,
       autoplay: !0,
-      animationData: s
+      animationData: l,
+      rendererSettings: s
     }), this.animation.addEventListener("loopComplete", this.handleLoopComplete), this.animation.addEventListener("complete", this.handleComplete), this.animation.addEventListener("enterFrame", this.handleEnterFrame), this.playScene(t), (r && !o || i || a) && this.animation.pause())
   }
   componentWillUnmount() {

@@ -30,9 +30,10 @@ function O(e) {
       onClose: N,
       onCopyLink: E,
       onShare: P,
-      transitionState: Z
+      referrerId: Z,
+      transitionState: L
     } = e,
-    L = function(e, t) {
+    C = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -46,42 +47,42 @@ function O(e) {
         for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
       return l
-    }(e, ["applicationId", "customId", "linkId", "message", "onClose", "onCopyLink", "onShare", "transitionState"]);
-  let [C] = (0, u.Z)([h]), w = (0, s.e7)([p.default], () => p.default.getCurrentUser()), [k, T] = l.useState(!1), [D, R] = l.useState(""), [M, I] = l.useState("");
+    }(e, ["applicationId", "customId", "linkId", "message", "onClose", "onCopyLink", "onShare", "referrerId", "transitionState"]);
+  let [w] = (0, u.Z)([h]), k = (0, s.e7)([p.default], () => p.default.getCurrentUser()), [T, D] = l.useState(!1), [R, M] = l.useState(""), [I, W] = l.useState("");
   l.useEffect(() => {
-    I((0, o.H)({
+    W((0, o.H)({
       applicationId: h,
-      referrerId: null == w ? void 0 : w.id,
+      referrerId: null != Z ? Z : null == k ? void 0 : k.id,
       customId: O,
       linkId: S
     }))
-  }, [h, w, O, S, I]);
-  let W = l.useRef(0),
-    [A, U] = l.useState([]),
-    z = A.length,
-    H = z >= 5;
+  }, [h, k, O, S, Z, W]);
+  let A = l.useRef(0),
+    [U, z] = l.useState([]),
+    H = U.length,
+    q = H >= 5;
   l.useEffect(() => {
-    if ("" === D) {
+    if ("" === R) {
       var e;
-      null === (e = F.current) || void 0 === e || e.focus()
+      null === (e = B.current) || void 0 === e || e.focus()
     }
-  }, [D]);
-  let q = l.useCallback(() => {
-      R("")
-    }, [R]),
-    F = l.useRef(null),
+  }, [R]);
+  let F = l.useCallback(() => {
+      M("")
+    }, [M]),
+    B = l.useRef(null),
     {
-      results: B,
-      updateSearchText: G
+      results: G,
+      updateSearchText: X
     } = (0, f.s)({
-      selectedDestinations: A,
+      selectedDestinations: U,
       includeMissingDMs: !0
     }),
-    X = l.useCallback(e => {
-      R(e), G(e)
-    }, [R, G]),
     V = l.useCallback(e => {
-      U(t => {
+      M(e), X(e)
+    }, [M, X]),
+    J = l.useCallback(e => {
+      z(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
@@ -89,32 +90,32 @@ function O(e) {
           } = t;
           return n === e.type && r === e.id
         });
-        if (-1 === n) return H ? t : (R(""), W.current += 1, [e, ...t]);
+        if (-1 === n) return q ? t : (M(""), A.current += 1, [e, ...t]);
         let r = [...t];
-        return r.splice(n, 1), W.current += 1, r
+        return r.splice(n, 1), A.current += 1, r
       })
-    }, [H]),
-    J = l.useCallback(async e => {
-      if (null == C) return;
+    }, [q]),
+    K = l.useCallback(async e => {
+      if (null == w) return;
       let t = g.NW.formatToMarkdownString(g.t.dZJpdH, {
-          applicationName: C.name,
-          link: M
+          applicationName: w.name,
+          link: I
         }),
         n = "".concat(_, "\n\n").concat(t);
-      T(!0), (await Promise.all(e.map(d.qx))).filter(m.lm).forEach(async e => {
+      D(!0), (await Promise.all(e.map(d.qx))).filter(m.lm).forEach(async e => {
         let t = b.Z.getChannel(e);
         null != t && await i.Z.sendMessage(e, c.ZP.parse(t, n), !1)
       }), (0, a.showToast)((0, a.createToast)(g.NW.formatToPlainString(g.t.jQULqK, {
-        applicationName: C.name
+        applicationName: w.name
       }), a.ToastType.SUCCESS)), P(!0), N()
-    }, [_, M, N, P, C]),
-    K = B.length > 0 ? (0, r.jsx)(y.Q, {
+    }, [_, I, N, P, w]),
+    Q = G.length > 0 ? (0, r.jsx)(y.Q, {
       paddingBottom: 16,
       paddingTop: 16,
-      rowData: B,
-      handleToggleDestination: V,
-      selectedDestinations: A,
-      disableSelection: H
+      rowData: G,
+      handleToggleDestination: J,
+      selectedDestinations: U,
+      disableSelection: q
     }) : (0, r.jsxs)(a.hzk, {
       className: j.noResults,
       children: [(0, r.jsx)("img", {
@@ -145,8 +146,8 @@ function O(e) {
     }
     return e
   }({
-    transitionState: Z
-  }, L), n = n = {
+    transitionState: L
+  }, C), n = n = {
     className: j.modalRoot,
     children: [(0, r.jsxs)(a.xBx, {
       className: j.header,
@@ -172,27 +173,27 @@ function O(e) {
           onClick: N
         })]
       }), (0, r.jsx)(a.E1j, {
-        ref: F,
+        ref: B,
         size: a.E1j.Sizes.MEDIUM,
-        query: D,
-        onChange: X,
-        onClear: q,
+        query: R,
+        onChange: V,
+        onClear: F,
         placeholder: g.NW.string(g.t["5h0QOD"]),
         "aria-label": g.NW.string(g.t["5h0QOD"]),
         autoFocus: !0
       })]
-    }), K, (0, r.jsx)(a.mzw, {
+    }), Q, (0, r.jsx)(a.mzw, {
       className: j.footer,
       children: (0, r.jsxs)("div", {
         className: j.copySendBar,
         children: [(0, r.jsx)(v, {
-          link: M,
+          link: I,
           onCopyLink: E
         }), (0, r.jsx)(a.zxk, {
           className: j.sendWithMessage,
-          onClick: () => J(A),
-          submitting: k,
-          disabled: !(z > 0),
+          onClick: () => K(U),
+          submitting: T,
+          disabled: !(H > 0),
           children: g.NW.string(g.t.TXNS7e)
         })]
       })
