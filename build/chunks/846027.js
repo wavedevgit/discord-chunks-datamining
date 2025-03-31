@@ -312,13 +312,19 @@ let O = {
       })
     },
     setSidechainCompression(e) {
-      S() || ((0, a.Z)("stream_attenuation_enabled", e, u.Z.getSidechainCompression()), r.Z.dispatch({
+      let {
+        analyticsLocations: t
+      } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+      S() || ((0, a.Z)("stream_attenuation_enabled", e, u.Z.getSidechainCompression(), t), r.Z.dispatch({
         type: "AUDIO_SET_SIDECHAIN_COMPRESSION",
         enabled: e
       }))
     },
     setSidechainCompressionStrength(e) {
-      S() || ((0, a.Z)("stream_attenuation_strength", e, u.Z.getSidechainCompressionStrength()), r.Z.dispatch({
+      let {
+        analyticsLocations: t
+      } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+      S() || ((0, a.Z)("stream_attenuation_strength", e, u.Z.getSidechainCompressionStrength(), t), r.Z.dispatch({
         type: "AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH",
         strength: e
       }))

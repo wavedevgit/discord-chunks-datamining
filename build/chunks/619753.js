@@ -269,10 +269,10 @@ function U(e) {
   }, {
     postProcessor: c,
     shouldFilterKeywords: B
-  }), X = i.useRef(null), [Q, J] = i.useState(!1);
+  }), X = i.useRef(null), [J, Q] = i.useState(!1);
   i.useEffect(() => {
     let e = X.current;
-    null != e && null != e.offsetWidth && null != e.scrollWidth && J(e.offsetWidth < e.scrollWidth)
+    null != e && null != e.offsetWidth && null != e.scrollWidth && Q(e.offsetWidth < e.scrollWidth)
   }, []);
   let $ = [H, z, G].filter(e => null != e).join(", ");
   return (0, r.jsx)(g.aQ.Provider, {
@@ -291,7 +291,7 @@ function U(e) {
             color: "currentColor"
           }), (0, r.jsx)(s.ua7, {
             text: H,
-            shouldShow: Q,
+            shouldShow: J,
             children: e => (0, r.jsxs)("span", L(k({}, e), {
               ref: X,
               className: M.channelNameText,

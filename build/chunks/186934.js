@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -9,43 +9,50 @@ var i = n(120356),
   a = n(442837),
   l = n(481060),
   o = n(846027),
-  c = n(921801),
-  d = n(131951),
-  u = n(726985),
-  m = n(388032),
-  g = n(685786);
+  c = n(906732),
+  d = n(921801),
+  u = n(131951),
+  m = n(726985),
+  g = n(388032),
+  p = n(685786);
 
-function p(e) {
+function h(e) {
   let {
     refreshStyles: t = !1
   } = e, {
     sidechainEnabled: n,
     sidechainStrength: i
-  } = (0, a.cj)([d.Z], () => ({
-    sidechainEnabled: d.Z.getSidechainCompression(),
-    sidechainStrength: d.Z.getSidechainCompressionStrength()
-  })), p = (0, r.jsxs)(r.Fragment, {
+  } = (0, a.cj)([u.Z], () => ({
+    sidechainEnabled: u.Z.getSidechainCompression(),
+    sidechainStrength: u.Z.getSidechainCompressionStrength()
+  })), {
+    analyticsLocations: h
+  } = (0, c.ZP)(), f = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.j7V, {
-      className: t ? null : s()(g.marginTop8, g.marginBottom20),
+      className: t ? null : s()(p.marginTop8, p.marginBottom20),
       value: n,
-      onChange: e => o.Z.setSidechainCompression(e),
-      note: m.NW.string(m.t.zlA23N),
+      onChange: e => o.Z.setSidechainCompression(e, {
+        analyticsLocations: h
+      }),
+      note: g.NW.string(g.t.zlA23N),
       hideBorder: t,
-      children: m.NW.string(m.t["/jwMtr"])
+      children: g.NW.string(g.t["/jwMtr"])
     }), (0, r.jsx)(l.xJW, {
-      title: m.NW.string(m.t.fhEzfn),
+      title: g.NW.string(g.t.fhEzfn),
       children: (0, r.jsx)(l.iRW, {
         initialValue: i,
         minValue: 1,
-        onValueChange: e => o.Z.setSidechainCompressionStrength(e)
+        onValueChange: e => o.Z.setSidechainCompressionStrength(e, {
+          analyticsLocations: h
+        })
       })
     })]
   });
-  return (0, r.jsx)(c.F, {
-    setting: u.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
-    children: t ? p : (0, r.jsx)(l.hjN, {
-      className: g.marginBottom20,
-      children: p
+  return (0, r.jsx)(d.F, {
+    setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
+    children: t ? f : (0, r.jsx)(l.hjN, {
+      className: p.marginBottom20,
+      children: f
     })
   })
 }

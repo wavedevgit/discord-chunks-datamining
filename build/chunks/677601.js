@@ -1,6 +1,6 @@
 /** Chunk was on 34059 **/
 n.d(t, {
-  Z: () => eQ
+  Z: () => eJ
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -50,8 +50,8 @@ var r = n(200651),
   q = n(880395),
   K = n(740492),
   X = n(221241),
-  Q = n(793319),
-  J = n(3861),
+  J = n(793319),
+  Q = n(3861),
   $ = n(493754),
   ee = n(937995),
   et = n(618158),
@@ -275,7 +275,7 @@ class eX extends i.PureComponent {
       children: i && this.popoutOpen && !this.inPopout ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(z.Z, {
           channel: p
-        }), (0, r.jsx)(J.Z, {
+        }), (0, r.jsx)(Q.Z, {
           ref: this._contentRef,
           inCall: i,
           paused: this.paused,
@@ -556,7 +556,7 @@ class eX extends i.PureComponent {
         inCall: t,
         layout: n
       } = this.props;
-      return t || n === eF.AEg.MINIMUM || n === eF.AEg.NORMAL ? (0, r.jsx)(Q.ZP, {
+      return t || n === eF.AEg.MINIMUM || n === eF.AEg.NORMAL ? (0, r.jsx)(J.ZP, {
         exitFullScreen: this.maybeLeaveFullScreen,
         channel: e,
         onDisconnectCall: this.handleDisconnect,
@@ -735,7 +735,7 @@ class eX extends i.PureComponent {
     })
   }
 }
-let eQ = function(e) {
+let eJ = function(e) {
   var t;
   let {
     channel: n,
@@ -783,8 +783,8 @@ let eQ = function(e) {
     selectedStream: G
   } = (0, d.cj)([ed.Z], () => ({
     selectedStream: null != F ? ed.Z.getActiveStreamForStreamKey(F.id) : null
-  }), [F]), z = (0, d.e7)([em.Z], () => em.Z.getGuild(n.getGuildId())), Y = (0, d.e7)([ef.Z], () => ef.Z.getCall(n.id), [n.id]), q = (0, d.e7)([eb.ZP], () => eb.ZP.getMentionCount(n.id), [n.id]), Q = (0, d.e7)([ep.default], () => ep.default.getId()), {
-    popoutWindow: J,
+  }), [F]), z = (0, d.e7)([em.Z], () => em.Z.getGuild(n.getGuildId())), Y = (0, d.e7)([ef.Z], () => ef.Z.getCall(n.id), [n.id]), q = (0, d.e7)([eb.ZP], () => eb.ZP.getMentionCount(n.id), [n.id]), J = (0, d.e7)([ep.default], () => ep.default.getId()), {
+    popoutWindow: Q,
     popoutWindowAlwaysOnTop: $
   } = (0, d.cj)([V.Z], () => ({
     popoutWindow: V.Z.getWindow(eF.KJ3.CHANNEL_CALL_POPOUT),
@@ -844,7 +844,7 @@ let eQ = function(e) {
             renderExternalHeader: l,
             appContext: g,
             call: Y,
-            popoutWindow: J,
+            popoutWindow: Q,
             popoutWindowAlwaysOnTop: $,
             mentionCount: q,
             selectedStream: G,
@@ -858,7 +858,7 @@ let eQ = function(e) {
             maxSidebarWidth: a - 550,
             shouldUseVoiceEffectsActionBar: eC,
             showGameConsoleCallButton: eu,
-            currentUserId: Q,
+            currentUserId: J,
             selectedParticipant: F,
             allActiveStreams: H,
             useNewInviteButton: eo,

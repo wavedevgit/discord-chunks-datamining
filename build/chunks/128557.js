@@ -127,7 +127,7 @@ function U(e) {
     handleMessage: q,
     handlePersonalize: K,
     handleDownload: X,
-    handleAddApplication: Q
+    handleAddApplication: J
   } = function(e) {
     let t = i.useCallback(() => {
         h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
@@ -199,7 +199,7 @@ function U(e) {
         }))
       }, [e])
     }
-  }(l), J = !(H || G || V || z), {
+  }(l), Q = !(H || G || V || z), {
     titleAnimatedStyle: $,
     opacities: ee
   } = function(e) {
@@ -238,7 +238,7 @@ function U(e) {
       } : {},
       opacities: r
     }
-  }(J), [et, en] = i.useState([]), er = et.length > 0, ei = (0, f.Q3)("WelcomeArea");
+  }(Q), [et, en] = i.useState([]), er = et.length > 0, ei = (0, f.Q3)("WelcomeArea");
   if (i.useEffect(() => {
       (async () => {
         try {
@@ -251,7 +251,7 @@ function U(e) {
   let el = [];
   p || (U && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: J ? {
+    style: Q ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
@@ -262,7 +262,7 @@ function U(e) {
     })
   }, "invite")), B && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: J ? {
+    style: Q ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
@@ -273,7 +273,7 @@ function U(e) {
     })
   }, "customize")), F && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: J ? {
+    style: Q ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
@@ -284,7 +284,7 @@ function U(e) {
     })
   }, "message")), (0, E.isWeb)() && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: J ? {
+    style: Q ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
@@ -295,14 +295,14 @@ function U(e) {
     })
   }, "download")), el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: J ? {
+    style: Q ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.vdZ : A,
       header: Z.NW.string(Z.t.IhHDEB),
       completed: er,
-      onClick: Q
+      onClick: J
     })
   }, "addapp")));
   let eo = x ? Z.NW.string(Z.t["1ach9P"]) : Z.NW.string(Z.t["ezm+/v"]);

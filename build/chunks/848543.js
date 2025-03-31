@@ -112,7 +112,8 @@ function Z(e) {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => (0, r.jsx)(e, A(j({
-        guildId: B
+        guildId: B,
+        sourceAnalyticsLocations: Y
       }, t), {
         onInteraction: (0, g.u)("SoundboardContextMenu", p.Z.RTC_PANEL)
       }))

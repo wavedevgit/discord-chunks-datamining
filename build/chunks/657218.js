@@ -271,14 +271,14 @@ function q(e) {
                 updateThreadSettings: g,
                 privateThreadMode: v
               }) : null]
-            }), (0, r.jsx)(J, {
+            }), (0, r.jsx)(Q, {
               parentChannel: t,
               parentMessageId: n
             })]
           })
         }), (0, r.jsxs)("div", {
           className: H.submitContainer,
-          children: [(0, r.jsx)(Q, {
+          children: [(0, r.jsx)(J, {
             parentChannel: t,
             textAreaState: _,
             setTextAreaState: C,
@@ -371,7 +371,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     parentChannel: t,
     textAreaState: n,
@@ -432,7 +432,7 @@ function Q(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     parentChannel: t,
     parentMessageId: n

@@ -50,8 +50,8 @@ var r = n(200651),
   q = n(823379),
   K = n(51144),
   X = n(998502),
-  Q = n(981631),
-  J = n(388032),
+  J = n(981631),
+  Q = n(388032),
   $ = n(205145);
 
 function ee(e, t, n) {
@@ -203,7 +203,7 @@ class ea extends i.Component {
       } = this.props, n = "@".concat(K.ZP.getUserTag(e, {
         decoration: "never"
       })), r = "<@".concat(e.id, ">");
-      Y.S.dispatchToLastSubscribed(Q.CkL.INSERT_TEXT, {
+      Y.S.dispatchToLastSubscribed(J.CkL.INSERT_TEXT, {
         plainText: n,
         rawText: r
       }), _.Z.startTyping(t.id)
@@ -214,8 +214,8 @@ class ea extends i.Component {
       null != t && (e.stopPropagation(), (0, w.f)({
         guildId: t,
         location: {
-          section: Q.jXE.MEMBER_LIST,
-          object: Q.qAy.BOOST_GEM_ICON
+          section: J.jXE.MEMBER_LIST,
+          object: J.qAy.BOOST_GEM_ICON
         }
       }))
     }), ee(this, "renderUserPopout", e => (0, r.jsx)(W.Z, en(et({}, e), {
@@ -258,7 +258,7 @@ let es = i.memo(e => {
       guildId: l,
       size: 16
     }), a = (0, h.e7)([U.default], () => new Intl.NumberFormat(U.default.locale).format(i), [i]);
-    return t === Q.Skl.UNKNOWN ? (0, r.jsx)("div", {
+    return t === J.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: $.membersGroup,
       children: (0, r.jsx)("div", {
         className: $.memberGroupsPlaceholder
@@ -266,7 +266,7 @@ let es = i.memo(e => {
     }) : (0, r.jsxs)(S.Z, {
       className: $.membersGroup,
       children: [(0, r.jsx)(m.nn4, {
-        children: J.NW.format(J.t.UaqbkZ, {
+        children: Q.NW.format(Q.t.UaqbkZ, {
           title: n,
           count: i
         })
@@ -345,7 +345,7 @@ class ed extends i.Component {
             component: (0, r.jsx)(m.nn4, {
               children: (0, r.jsx)(m.H, {
                 id: l,
-                children: J.NW.format(J.t.JBQxV1, {
+                children: Q.NW.format(Q.t.JBQxV1, {
                   channel: n.name
                 })
               })
@@ -358,7 +358,7 @@ class ed extends i.Component {
                 } = n, s = er(n, ["ref", "role"]);
                 return (0, r.jsx)(m.aVo, et({
                   innerRole: a,
-                  innerAriaLabel: J.NW.string(J.t["9Oq93t"]),
+                  innerAriaLabel: Q.NW.string(Q.t["9Oq93t"]),
                   ref: e => {
                     var t;
                     this._list = e, this.props.listRef.current = e, l.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
@@ -531,14 +531,14 @@ class ed extends i.Component {
       this.hasContentFeed() && (t = t.filter(e => e.section !== P.T));
       let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(q.lm);
       if (0 === r.length) return;
-      let i = r.reduce((e, t) => (t.type !== B.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === Q.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
+      let i = r.reduce((e, t) => (t.type !== B.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === J.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
         num_users_visible: 0,
         num_users_visible_with_mobile_indicator: 0,
         num_users_visible_with_game_activity: 0,
         num_users_visible_with_activity: 0,
         num_users_visible_with_avatar_decoration: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(Q.rMx.MEMBER_LIST_VIEWED, et({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(J.rMx.MEMBER_LIST_VIEWED, et({}, i))
     })
   }
 }

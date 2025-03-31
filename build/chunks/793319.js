@@ -52,8 +52,8 @@ var r = n(200651),
   q = n(402113),
   K = n(197016),
   X = n(386e3),
-  Q = n(698877),
-  J = n(25827),
+  J = n(698877),
+  Q = n(25827),
   $ = n(875527),
   ee = n(306609),
   et = n(199902),
@@ -186,7 +186,7 @@ function eZ(e) {
           return i
         }(n, ["onClick"]),
         o = null != g;
-      return (0, r.jsx)(Q.O, eP(eI({}, l), {
+      return (0, r.jsx)(J.O, eP(eI({}, l), {
         centerButton: !0,
         disabled: s || !a,
         className: h ? void 0 : eE.controlButton,
@@ -338,7 +338,7 @@ let eA = i.memo(function(e) {
             onPopoutClick: v.length > 0 ? i : null
           }));
         case "STREAM":
-          return (0, r.jsx)(Q.O, eP(eI({}, c), {
+          return (0, r.jsx)(J.O, eP(eI({}, c), {
             hasPermission: !0,
             streamActive: !0,
             color: "disconnect",
@@ -419,7 +419,7 @@ function ew(e) {
     location: "JoinCall"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(J.C, {
+    children: [(0, r.jsx)(Q.C, {
       enabled: !0,
       centerButton: !0,
       join: !0,
@@ -489,7 +489,7 @@ let eM = function(e) {
     var e;
     return (null !== (e = null == F ? void 0 : F.channelId) && void 0 !== e ? e : ei.Z.getVoiceChannelId()) === l.id
   }), q = (0, O.Z)(l, !0), K = (0, u.e7)([C.ZP], () => C.ZP.getSelfEmbeddedActivityForChannel(l.id)), {
-    reachedLimit: Q,
+    reachedLimit: J,
     limit: et
   } = (0, eu.Z)(l), {
     analyticsLocations: en
@@ -605,14 +605,14 @@ let eM = function(e) {
               } = e, {
                 isShown: i
               } = t;
-              return (0, r.jsx)(J.C, {
+              return (0, r.jsx)(Q.C, {
                 centerButton: !0,
                 hasPermission: k,
                 enabled: R,
                 cameraUnavailable: T,
                 onChange: eS,
                 onCameraUnavailable: e_.Z,
-                channelLimitReached: Q,
+                channelLimitReached: J,
                 channelLimit: et,
                 popoutOpen: i,
                 onPopoutClick: n
@@ -731,7 +731,7 @@ let eM = function(e) {
             } = e, {
               isShown: i
             } = t;
-            return (0, r.jsx)(J.C, {
+            return (0, r.jsx)(Q.C, {
               centerButton: !0,
               hasPermission: k,
               className: eE.controlButton,
@@ -739,7 +739,7 @@ let eM = function(e) {
               cameraUnavailable: T,
               onChange: eS,
               onCameraUnavailable: e_.Z,
-              channelLimitReached: Q,
+              channelLimitReached: J,
               channelLimit: et,
               popoutOpen: i,
               onPopoutClick: n

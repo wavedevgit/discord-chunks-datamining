@@ -142,8 +142,8 @@ let G = i.memo(function(e) {
       channelStreamMarkup: q,
       newMessagesBar: K,
       jumpToPresentBar: X,
-      forumPostActionBar: Q,
-      safetyWarningBanner: J
+      forumPostActionBar: J,
+      safetyWarningBanner: Q
     } = (0, L.Z)({
       channel: f,
       messages: m,
@@ -209,9 +209,9 @@ let G = i.memo(function(e) {
       });
     return (0, r.jsxs)(a.bG, {
       navigator: z,
-      children: [null != J && J, (0, r.jsxs)("div", {
+      children: [null != Q && Q, (0, r.jsxs)("div", {
         className: o()(U.messagesWrapper, n, "group-spacing-".concat(l)),
-        children: [null == J && K, (0, r.jsxs)(c.eTT, F(B({
+        children: [null == Q && K, (0, r.jsxs)(c.eTT, F(B({
           ref: er,
           customTheme: !0,
           className: o()(d, U.scroller),
@@ -223,7 +223,7 @@ let G = i.memo(function(e) {
         }, $), {
           tabIndex: -1,
           role: "group",
-          children: [Q, (0, r.jsxs)("ol", F(B({
+          children: [J, (0, r.jsxs)("ol", F(B({
             className: U.scrollerInner,
             "aria-label": W.NW.formatToPlainString(W.t.XarRiI, {
               channelName: f.name

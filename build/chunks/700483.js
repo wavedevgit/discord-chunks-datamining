@@ -50,8 +50,8 @@ var r = n(200651),
   q = n(146085),
   K = n(88751),
   X = n(427679),
-  Q = n(368442),
-  J = n(600518),
+  J = n(368442),
+  Q = n(600518),
   $ = n(485287),
   ee = n(754277),
   et = n(719100),
@@ -327,7 +327,7 @@ function ef(e) {
     iconComponent: i ? s.xjP : s.RZG,
     color: c && !i ? "green" : void 0,
     onClick: () => {
-      (0, b.v)(n, b.d.STAGE_MUSIC, i), (0, J.v)(!i)
+      (0, b.v)(n, b.d.STAGE_MUSIC, i), (0, Q.v)(!i)
     }
   }) : (0, r.jsx)(M.d, {
     isActive: c ? o : !o,
@@ -335,7 +335,7 @@ function ef(e) {
     iconComponent: o ? s.RZG : s.xjP,
     color: c && o ? "green" : void 0,
     onClick: () => {
-      (0, b.v)(n, b.d.STAGE_MUSIC, !o), (0, J.z)(!o)
+      (0, b.v)(n, b.d.STAGE_MUSIC, !o), (0, Q.z)(!o)
     }
   })
 }
@@ -354,14 +354,14 @@ let em = i.memo(function(e) {
   } = (0, N.Z)(), x = (0, S.Z)(t), {
     limit: j,
     reachedLimit: O
-  } = (0, I.Z)(t), M = (0, a.e7)([H.default], () => H.default.getCurrentUser()), k = (0, a.e7)([U.Z], () => (0, v.Z)(U.Z)), W = (0, a.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, Q.PK)(t.id), V = j > 0, z = O && !G || null != B && B.user.id !== (null == M ? void 0 : M.id), q = (0, P.Z)({
+  } = (0, I.Z)(t), M = (0, a.e7)([H.default], () => H.default.getCurrentUser()), k = (0, a.e7)([U.Z], () => (0, v.Z)(U.Z)), W = (0, a.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, J.PK)(t.id), V = j > 0, z = O && !G || null != B && B.user.id !== (null == M ? void 0 : M.id), q = (0, P.Z)({
     location: "SpeakerControlTray"
   }), {
     coloredIconsEnabled: K,
     simplifiedSettingsEnabled: X
   } = (0, E.Z)({
     location: "SpeakerControlTray"
-  }), J = (0, _.u)("AudioDeviceMenu", n, {
+  }), Q = (0, _.u)("AudioDeviceMenu", n, {
     entrypoint: eo.A5.CARET
   });
   if (null == M) return null;
@@ -434,7 +434,7 @@ let em = i.memo(function(e) {
               renderOutputVolume: X,
               renderDeafen: X,
               simplified: X,
-              onInteraction: J
+              onInteraction: Q
             })
           })
         },
@@ -503,7 +503,7 @@ let em = i.memo(function(e) {
               onClose: t,
               renderInputDevices: !0,
               renderOutputDevices: !0,
-              onInteraction: J
+              onInteraction: Q
             })
           })
         },

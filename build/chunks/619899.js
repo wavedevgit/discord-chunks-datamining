@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  N9: () => g,
-  ex: () => b,
-  zL: () => E
+  N9: () => E,
+  ex: () => v,
+  zL: () => b
 }), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(192379),
   i = n(392711),
   o = n(230383),
   a = n(731965),
-  s = n(451593);
+  s = n(451593),
+  l = n(477146);
 
-function l(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,20 +21,20 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,15 +45,15 @@ function u(e, t) {
   return n
 }
 
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +61,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -68,26 +69,26 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
-  if ("object" !== m(e) || null === e) return e;
+function h(e, t) {
+  if ("object" !== g(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
   if (void 0 !== n) {
     var r = n.call(e, t || "default");
-    if ("object" !== m(r)) return r;
+    if ("object" !== g(r)) return r;
     throw TypeError("@@toPrimitive must return a primitive value.")
   }
   return ("string" === t ? String : Number)(e)
 }
 
-function h(e) {
-  var t = p(e, "string");
-  return "symbol" === m(t) ? t : String(t)
+function m(e) {
+  var t = h(e, "string");
+  return "symbol" === g(t) ? t : String(t)
 }
 
-function m(e) {
+function g(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let g = (0, o.U)(e => ({
+let E = (0, o.U)(e => ({
     previewEnabled: !1,
     assets: {},
     previewProfileEffectId: null,
@@ -99,12 +100,12 @@ let g = (0, o.U)(e => ({
         let r = e.assets[t];
         null != r && URL.revokeObjectURL(r.src);
         let i = URL.createObjectURL(n),
-          o = c({}, e.assets);
+          o = u({}, e.assets);
         return o[t] = {
           type: t,
           name: n.name,
           src: i
-        }, d(c({}, e), {
+        }, f(u({}, e), {
           assets: o
         })
       })
@@ -118,8 +119,8 @@ let g = (0, o.U)(e => ({
           {
             [t]: i
           } = r,
-          o = f(r, [t].map(h));
-        return d(c({}, e), {
+          o = _(r, [t].map(m));
+        return f(u({}, e), {
           assets: o,
           previewEnabled: Object.keys(o).length > 0
         })
@@ -137,23 +138,32 @@ let g = (0, o.U)(e => ({
       previewEnabled: null != t
     }))
   })),
-  E = e => g(t => {
+  b = e => E(t => {
     var n;
     return t.previewEnabled ? null === (n = t.assets[e]) || void 0 === n ? void 0 : n.src : null
   }),
-  b = e => {
+  v = e => {
     let {
       previewEnabled: t,
       previewProfileEffectId: n
-    } = g(), o = t ? n : null, a = (0, s.m)(o);
+    } = E(), o = t ? n : null, a = (0, s.m)(o);
     return r.useMemo(() => {
       if (null == a || null == e) return null;
-      let t = (0, i.cloneDeep)(e);
-      return t.title = a.name, t.effects = a.config.effects.map(e => {
-        let {
-          base64: t
-        } = e;
-        return f(e, ["base64"])
-      }), t
+      let {
+        effects: t,
+        staticFrames: n
+      } = a.config, r = null != n && Object.keys(n).length > 0;
+      if (0 === t.length && !r) return null;
+      let o = (0, i.cloneDeep)(e);
+      if (o.title = a.name, o.effects = t.map(e => {
+          let {
+            base64: t
+          } = e;
+          return _(e, ["base64"])
+        }), r) {
+        var s, c, u, d, f, p;
+        o.reducedMotionSrc = null !== (d = null === (s = n[l.wT.REDUCED_MOTION]) || void 0 === s ? void 0 : s.src) && void 0 !== d ? d : "", o.staticFrameSrc = null !== (f = null === (c = n[l.wT.STATIC]) || void 0 === c ? void 0 : c.src) && void 0 !== f ? f : "", o.thumbnailPreviewSrc = null !== (p = null === (u = n[l.wT.THUMBNAIL]) || void 0 === u ? void 0 : u.src) && void 0 !== p ? p : ""
+      }
+      return o
     }, [a, e])
   }

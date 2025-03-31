@@ -1,6 +1,6 @@
 /**
   Module ID: 13323
-  Original File Name: b630c8c970ac89c5
+  Original File Name: 00b45dafc5074d77
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -7617,6 +7617,10 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     box-shadow: 0 12px 36px 0 rgba(0,0,0,.12)
 }
 
+.subscribeButton__3ce43 {
+    margin-right: 12px
+}
+
 .headerArt__3ce43,.headerArtV2__3ce43 {
     width: 100%;
     pointer-events: none
@@ -10047,7 +10051,7 @@ html .invoiceCancelRow_b9f95d {
 }
 
 .layers__93529 {
-    margin-top: 24px;
+    margin-top: 8px;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
 }
 
@@ -10055,6 +10059,13 @@ html .invoiceCancelRow_b9f95d {
     padding: 8px;
     background: var(--bg-base-secondary);
     border-radius: 8px
+}
+
+.layerPreviewContainer__93529 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px
 }
 
 .layerPreview__93529 {
@@ -16884,4 +16895,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=b630c8c970ac89c5.css.map*/
+/*# sourceMappingURL=00b45dafc5074d77.css.map*/

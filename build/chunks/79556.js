@@ -67,7 +67,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class k extends P.ZP {
+class L extends P.ZP {
   componentWillUnmount() {
     this.resetTextChannelPopoutTimers()
   }
@@ -244,7 +244,7 @@ class k extends P.ZP {
     })
   }
 }
-let L = (0, d.B)(k);
+let k = (0, d.B)(L);
 
 function M(e) {
   let {
@@ -283,8 +283,8 @@ function M(e) {
     muted: l,
     enableActivities: T,
     resolvedUnreadSetting: f
-  }), k = (0, h.ZP)(t);
-  return (0, r.jsx)(L, R(D({}, d, g, e), {
+  }), L = (0, h.ZP)(t);
+  return (0, r.jsx)(k, R(D({}, d, g, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: P,
@@ -293,7 +293,7 @@ function M(e) {
     isFavoriteSuggestion: o && !N,
     canShowThreadPreviewForUser: Z,
     channelInfo: A,
-    embeddedApps: k,
+    embeddedApps: L,
     resolvedUnreadSetting: f,
     hasChannelInfo: null != A,
     enableActivities: T

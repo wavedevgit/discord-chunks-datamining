@@ -53,7 +53,7 @@ function U(e) {
     location: "ActivityPanelFocusedView"
   }), H = (0, S.Z)(), G = (0, a.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), Y = (0, N.gb)(G), q = (0, N.uF)(Y), K = i.useCallback(() => {
     (0, O.tg)(R.Ez.PIP)
-  }, []), X = i.useRef(null), Q = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
+  }, []), X = i.useRef(null), J = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), Q = J !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -142,7 +142,7 @@ function U(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r) : l
       }, [s, e, n, t])
-    }(J, $, l);
+    }(Q, $, l);
   if (null == H) return null;
   let ef = [];
   null != ec && (ef = Array.from(ec.embeddedActivity.userIds).map(e => y.default.getUser(e)).filter(e => null != e && void 0 !== e));
@@ -164,12 +164,12 @@ function U(e) {
   return (0, r.jsx)(c.f6W, {
     theme: M.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: o()(L.wrapper, W[Q], e),
+      className: o()(L.wrapper, W[J], e),
       ref: X,
       style: eh,
       children: [null == B ? void 0 : B(), (0, r.jsxs)("div", {
         className: L.activityPanelContainer,
-        children: [J ? null : (0, r.jsx)("div", {
+        children: [Q ? null : (0, r.jsx)("div", {
           className: L.header,
           children: (0, r.jsx)(s.x, {
             color: "header-primary",
@@ -236,7 +236,7 @@ function U(e) {
             className: L.flex
           })]
         }) : null]
-      }), J ? (0, r.jsx)(h.Z, {
+      }), Q ? (0, r.jsx)(h.Z, {
         minHeight: 480,
         maxHeight: l,
         resizableNode: X,

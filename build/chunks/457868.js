@@ -122,7 +122,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
       user: b
     });
     if (null == b) return null;
-    let Q = null == u ? void 0 : u.premiumSince;
+    let J = null == u ? void 0 : u.premiumSince;
     return (0, r.jsx)(h.yRy, {
       preload: () => (0, N.Z)(b, {
         guildId: t.guild_id,
@@ -157,7 +157,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
           isMobile: x,
           selected: i,
           applicationStream: M,
-          premiumSince: null == Q ? null : new Date(Q),
+          premiumSince: null == J ? null : new Date(J),
           onClickPremiumGuildIcon: K,
           itemProps: k,
           lostPermissionTooltipText: D ? void 0 : H.NW.string(H.t["/QcoT0"]),
@@ -167,7 +167,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
       }
     })
   }),
-  Q = i.memo(function(e) {
+  J = i.memo(function(e) {
     let {
       id: t,
       label: n,
@@ -197,7 +197,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
       })]
     })
   }),
-  J = i.memo(function(e) {
+  Q = i.memo(function(e) {
     let {
       channel: t
     } = e;
@@ -307,7 +307,7 @@ function $(e) {
               let {
                 section: t
               } = e, i = d[t];
-              return (0, r.jsx)(Q, {
+              return (0, r.jsx)(J, {
                 id: i.id,
                 label: i.label,
                 count: i.userIds.length,
@@ -331,7 +331,7 @@ function $(e) {
               }, l[i])
             },
             footerHeight: e => 80 * (d[e] === f && t.type === F.d4z.PRIVATE_THREAD),
-            renderFooter: e => d[e.section] === f ? (0, r.jsx)(J, {
+            renderFooter: e => d[e.section] === f ? (0, r.jsx)(Q, {
               channel: t
             }, "footer") : null,
             innerAriaLabel: H.NW.string(H.t["9Oq93t"]),

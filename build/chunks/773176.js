@@ -50,8 +50,8 @@ var r = n(200651),
   q = n(176354),
   K = n(823379),
   X = n(970257),
-  Q = n(418476),
-  J = n(151007),
+  J = n(418476),
+  Q = n(151007),
   $ = n(432376),
   ee = n(373662),
   et = n(996861),
@@ -216,8 +216,8 @@ function em(e) {
     }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (Z = Z && C);
     let T = (0, X.a4)(n),
-      A = (0, J.Z)(n, t, C),
-      w = !t.isSystemDM() && (0, Q.Z)(n, d) && p && !m,
+      A = (0, Q.Z)(n, t, C),
+      w = !t.isSystemDM() && (0, J.Z)(n, d) && p && !m,
       {
         disableReactionCreates: R
       } = (0, $.Z)({

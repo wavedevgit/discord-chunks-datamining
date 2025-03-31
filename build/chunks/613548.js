@@ -69,7 +69,7 @@ function X(e) {
   return e
 }
 
-function Q(e, t) {
+function J(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,7 +82,7 @@ function Q(e, t) {
   }), e
 }
 
-function J(e) {
+function Q(e) {
   let {
     channelId: t,
     guildId: n
@@ -97,7 +97,7 @@ function J(e) {
       text: q.NW.formatToPlainString(q.t.JjdizM, {
         username: e.user.username
       }),
-      children: l => (0, r.jsx)(L.ZP, Q(X({}, l), {
+      children: l => (0, r.jsx)(L.ZP, J(X({}, l), {
         className: o()(K.speaker, {
           [K.last]: t === i.length - 1
         }),
@@ -161,7 +161,7 @@ function $(e) {
       shouldPrioritizeGroupPlusIcon: !0
     }, "invite-button"))
   }
-  return en && e_.push((0, r.jsx)(J, {
+  return en && e_.push((0, r.jsx)(Q, {
     channelId: et,
     guildId: n.guild_id
   }, "current-speaker")), e_.push((0, r.jsx)(g.Z, {
@@ -188,7 +188,7 @@ function $(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(M.Z, Q(X({}, e), {
+      return (0, i.createElement)(M.Z, J(X({}, e), {
         buttonRef: L,
         isActive: n,
         count: ei,
@@ -234,7 +234,7 @@ function $(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(A.Z, Q(X({
+      return (0, i.createElement)(A.Z, J(X({
         buttonRef: D
       }, e), {
         key: "more-options",

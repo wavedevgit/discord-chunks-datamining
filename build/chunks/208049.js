@@ -173,10 +173,11 @@ function w(e, t) {
   })
 }
 
-function D(e) {
+function D(e, t) {
   a.Z.dispatch({
     type: "USER_SOUNDBOARD_SET_VOLUME",
-    volume: e
+    volume: e,
+    location: t
   })
 }
 

@@ -80,14 +80,14 @@ let F = i.memo(function(e) {
     editorTextContent: V,
     setValue: z,
     canOnlyUseTextCommands: Y
-  } = e, q = (0, p.bp)(), K = i.useRef(null), X = (0, a.e7)([P.Z], () => P.Z.getActivities()), Q = (0, a.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), J = (0, a.e7)([m.Z], () => m.Z.getLastClipsSession()), $ = (0, a.Wu)([m.Z], () => m.Z.getNewClipIds()), ee = (0, a.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(H.id)), {
+  } = e, q = (0, p.bp)(), K = i.useRef(null), X = (0, a.e7)([P.Z], () => P.Z.getActivities()), J = (0, a.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), Q = (0, a.e7)([m.Z], () => m.Z.getLastClipsSession()), $ = (0, a.Wu)([m.Z], () => m.Z.getNewClipIds()), ee = (0, a.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(H.id)), {
     showClipsHeaderEntrypoint: et
   } = f.NV.useExperiment({
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: !1
-  }), en = (0, a.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), er = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), ei = (0, a.e7)([E.Z], () => E.Z.hasLayers()), el = (0, a.e7)([m.Z], () => m.Z.hasClips()), [eo, ea] = i.useState(null), es = (0, f.Go)() && (Q || el), ec = H.isPrivate(), eu = (0, a.e7)([I.Z], () => ec || I.Z.can(M.Plq.ATTACH_FILES, H) && I.Z.can(M.Plq.SEND_MESSAGES, H)), ed = (0, d.Z)(J);
-  (null == ed ? void 0 : ed.newClipIds.length) !== (null == J ? void 0 : J.newClipIds.length) && (null !== (t = null == J ? void 0 : J.newClipIds.length) && void 0 !== t ? t : 0) > 0 && null == eo && en && ee && !er && !et && !ei && ea("recentClips");
+  }), en = (0, a.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), er = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), ei = (0, a.e7)([E.Z], () => E.Z.hasLayers()), el = (0, a.e7)([m.Z], () => m.Z.hasClips()), [eo, ea] = i.useState(null), es = (0, f.Go)() && (J || el), ec = H.isPrivate(), eu = (0, a.e7)([I.Z], () => ec || I.Z.can(M.Plq.ATTACH_FILES, H) && I.Z.can(M.Plq.SEND_MESSAGES, H)), ed = (0, d.Z)(Q);
+  (null == ed ? void 0 : ed.newClipIds.length) !== (null == Q ? void 0 : Q.newClipIds.length) && (null !== (t = null == Q ? void 0 : Q.newClipIds.length) && void 0 !== t ? t : 0) > 0 && null == eo && en && ee && !er && !et && !ei && ea("recentClips");
   let ep = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, T.G)(H, []) : (0, T.d)(e, H, G, {
         requireConfirm: !0,
@@ -175,7 +175,7 @@ let F = i.memo(function(e) {
           case "recentClips":
             return (0, r.jsx)(g.Z, B(U({}, e), {
               onOpenClips: ef,
-              lastClipsSession: J
+              lastClipsSession: Q
             }));
           case "attachMenu":
             return (0, r.jsx)(w.Z, B(U({}, e), {

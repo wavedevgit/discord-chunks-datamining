@@ -54,18 +54,18 @@ function Z(e) {
   }, [D]), q = (0, c.bp)() === N.IlC.POPOUT, {
     analyticsLocations: K,
     parentAnalyticsLocation: X
-  } = (0, _.ZP)(), Q = i.useCallback(() => {
+  } = (0, _.ZP)(), J = i.useCallback(() => {
     (0, C.v)(X, C.d.ACTIVITY), (0, b.Z)({
       channel: t,
       openInPopout: q,
       analyticsLocations: K
     })
-  }, [K, t, q, X]), J = [];
-  M || J.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, f.Z)(t.id) && !M && J.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), M || J.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  }, [K, t, q, X]), Q = [];
+  M || Q.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, f.Z)(t.id) && !M && Q.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), M || Q.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let $ = i.useRef(!1),
     ee = i.useRef(null);
   return (0, r.jsx)(v.ZP, {
-    contentTypes: J,
+    contentTypes: Q,
     children: e => {
       let {
         visibleContent: i,
@@ -133,7 +133,7 @@ function Z(e) {
                   isActivityActive: V,
                   className: U ? "" : S.controlButton,
                   onClick: () => {
-                    Q(), (i === o.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === o.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(I.L.TAKE_ACTION)
+                    J(), (i === o.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === o.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(I.L.TAKE_ACTION)
                   },
                   onMouseEnter: Y,
                   onMouseLeave: W

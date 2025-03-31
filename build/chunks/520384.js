@@ -1,35 +1,38 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
   s = n(481060),
-  a = n(921801),
-  l = n(695346),
-  o = n(569550),
-  c = n(726985),
-  d = n(388032),
-  u = n(685786);
+  a = n(906732),
+  l = n(921801),
+  o = n(695346),
+  c = n(569550),
+  d = n(726985),
+  u = n(388032),
+  m = n(685786);
 
-function m(e) {
+function g(e) {
   let {
     refreshStyles: t = !1
-  } = e, n = l.I0.useSetting(), m = i.useCallback(e => {
-    (0, o.Z)("stream_previews_disabled", e, l.I0.getSetting()), l.I0.updateSetting(e)
-  }, []), g = (0, r.jsx)(s.j7V, {
+  } = e, n = o.I0.useSetting(), {
+    analyticsLocations: g
+  } = (0, a.ZP)(), p = i.useCallback(e => {
+    (0, c.Z)("stream_previews_disabled", e, o.I0.getSetting(), g), o.I0.updateSetting(e)
+  }, [g]), h = (0, r.jsx)(s.j7V, {
     value: n,
-    onChange: m,
-    note: d.NW.string(d.t.jTNPHB),
+    onChange: p,
+    note: u.NW.string(u.t.jTNPHB),
     hideBorder: t,
-    children: d.NW.string(d.t["1CzWUF"])
+    children: u.NW.string(u.t["1CzWUF"])
   });
-  return (0, r.jsx)(a.F, {
-    setting: c.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
-    children: t ? g : (0, r.jsx)(s.hjN, {
-      className: u.marginBottom20,
-      title: d.NW.string(d.t.OBwCXF),
-      children: g
+  return (0, r.jsx)(l.F, {
+    setting: d.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
+    children: t ? h : (0, r.jsx)(s.hjN, {
+      className: m.marginBottom20,
+      title: u.NW.string(u.t.OBwCXF),
+      children: h
     })
   })
 }

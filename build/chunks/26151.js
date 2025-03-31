@@ -65,6 +65,10 @@ let h = {
         },
         oldFormErrors: !0,
         rejectWithError: !0
+      }), n.type === _.d4z.GUILD_VOICE && null != t && i.Z.dispatch({
+        type: "GUILD_LOCAL_RING_START",
+        ringing: t,
+        guildId: n.guild_id
       });
       return
     }

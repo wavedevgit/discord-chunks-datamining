@@ -81,8 +81,8 @@ function k(e) {
     disableReactionUpdates: q,
     disableReactionCreates: K,
     isLurking: X,
-    isGuest: Q,
-    isPendingMember: J
+    isGuest: J,
+    isPendingMember: Q
   } = (0, _.Z)(V), $ = (0, s.e7)([E.Z], () => E.Z.getChannel(k)), ee = (0, I.Bs)($), et = (0, s.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
@@ -143,8 +143,8 @@ function k(e) {
             readOnly: !1,
             useChatFontScaling: !1,
             isLurking: X,
-            isGuest: Q,
-            isPendingMember: J,
+            isGuest: J,
+            isPendingMember: Q,
             emoji: ee,
             type: b.O.NORMAL,
             hideCount: !0,
@@ -160,8 +160,8 @@ function k(e) {
           disableReactionCreates: !0,
           disableReactionUpdates: q,
           isLurking: X,
-          isGuest: Q,
-          isPendingMember: J,
+          isGuest: J,
+          isPendingMember: Q,
           maxReactions: W,
           className: A.reactions,
           useChatFontScaling: !1,

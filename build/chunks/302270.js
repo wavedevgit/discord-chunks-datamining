@@ -1,6 +1,6 @@
 /** Chunk was on 34059 **/
 n.d(t, {
-  Z: () => Q
+  Z: () => J
 });
 var r = n(200651),
   i = n(192379),
@@ -172,7 +172,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   var t;
   let {
     inPopout: n,
@@ -264,7 +264,7 @@ function Q(e) {
   return E ? (0, r.jsxs)("div", {
     children: [T, (0, r.jsxs)("div", {
       className: Y.boostUpsell,
-      children: [(0, r.jsx)(J, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(Q, {}), (0, r.jsxs)("div", {
         className: Y.text,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
@@ -314,7 +314,7 @@ function Q(e) {
   }) : T
 }
 
-function J() {
+function Q() {
   return (0, r.jsxs)("svg", {
     width: "36",
     height: "36",

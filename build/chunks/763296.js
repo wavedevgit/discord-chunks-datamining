@@ -125,9 +125,10 @@ function G(e) {
   } = e, o = (null !== (t = b.get(r)) && void 0 !== t ? t : 0) - 1, a = (null !== (n = S.get(i)) && void 0 !== n ? n : 0) - 1;
   o <= 0 ? b.delete(r) : b.set(r, o), a <= 0 ? S.delete(i) : S.set(i, a)
 }
-let B = o().debounce(e => {
+let B = o().debounce((e, t) => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
-    volume: Math.round((0, f.P)(e))
+    volume: Math.round((0, f.P)(e)),
+    location_stack: t
   }), l.kU.updateSetting({
     volume: e
   })
@@ -135,9 +136,10 @@ let B = o().debounce(e => {
 
 function F(e) {
   let {
-    volume: t
+    volume: t,
+    location: n
   } = e;
-  B(t)
+  B(t, n)
 }
 
 function V(e) {

@@ -1,6 +1,6 @@
 /** Chunk was on 73181 **/
 n.d(t, {
-  u: () => k
+  u: () => L
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -54,8 +54,8 @@ function R(e) {
     badge: b,
     link: v,
     showProgressBadge: y
-  } = e, _ = (0, l.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [x, C] = i.useState(!1), [w, R] = i.useState(null), [k, L] = i.useState(0), M = (0, o.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
-    R(null), L(0), clearTimeout(w)
+  } = e, _ = (0, l.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [x, C] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, o.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
+    R(null), k(0), clearTimeout(w)
   };
   if (null == f) return null;
   let U = T.NW.string(T.t.YUU0RE);
@@ -94,7 +94,7 @@ function R(e) {
         onMouseEnter: () => j(!0),
         onMouseLeave: () => j(!1),
         onClick: () => {
-          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(B, 500)), L(k + 1), 15 === k)) {
+          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(B, 500)), k(L + 1), 15 === L)) {
             B();
             let e = !a.K.get(Z.wli);
             a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), C(!0), setTimeout(() => {
@@ -150,7 +150,7 @@ function R(e) {
   })
 }
 
-function k() {
+function L() {
   let e = (0, C.n)(),
     t = (0, l.e7)([j.Z, O.Z], () => {
       let e = (0, c.E)(j.Z.activeItems, O.Z),

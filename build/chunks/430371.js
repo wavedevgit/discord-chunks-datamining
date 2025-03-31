@@ -83,25 +83,25 @@ function P(e) {
     V = p.default.getId(),
     [z, Y] = i.useState(null),
     [q, K] = i.useState(!0),
-    [X, Q] = i.useState(!1),
-    J = M.type === y.fO.ACTIVITY || M.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
-    $ = (0, u.Z)(J ? M.applicationId : void 0),
-    ee = !J && null != M.streamId,
+    [X, J] = i.useState(!1),
+    Q = M.type === y.fO.ACTIVITY || M.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
+    $ = (0, u.Z)(Q ? M.applicationId : void 0),
+    ee = !Q && null != M.streamId,
     et = U <= 2 * I + 144,
     en = k && !et,
     er = (0, c.Z)(en),
     ei = B === v.AEg.MINIMUM || B === v.AEg.NORMAL,
-    el = !et && (!ei || J),
+    el = !et && (!ei || Q),
     eo = (0, m.Z)(el, 100),
     ea = (null !== (t = (0, c.Z)(M.id)) && void 0 !== t ? t : M.id) !== M.id,
     es = 0;
-  (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
-  let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, J, W, U, es, $]),
+  (Q || en) && (es += 72), Q && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
+  let ec = i.useMemo(() => Q && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, Q, W, U, es, $]),
     eu = U - 2 * es,
-    ed = J && $ ? W : eu * ec,
+    ed = Q && $ ? W : eu * ec,
     ep = Math.floor(Math.min(W, ed) / ec),
     eh = U > W / ec + 72 + I + 8;
-  n = en || J ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
+  n = en || Q ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
     let e = setTimeout(() => {
       K(!1)
     }, 250);
@@ -115,10 +115,10 @@ function P(e) {
       config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
-      onStart: () => Q(!0),
+      onStart: () => J(!0),
       onChange: () => f.S.dispatch(v.CkL.REMEASURE_TARGET),
       onRest: () => {
-        Q(!1), f.S.dispatch(v.CkL.REMEASURE_TARGET)
+        J(!1), f.S.dispatch(v.CkL.REMEASURE_TARGET)
       }
     }, "animate-always"),
     em = (0, s.q_F)({

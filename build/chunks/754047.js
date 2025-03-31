@@ -19,10 +19,11 @@ function l(e) {
       a(!1)
     },
     onMouseEnter: () => {
+      let e;
       c.current = !0, s.current = setTimeout(() => {
-        c.current && n()
-      }, i.a6), u.current = setTimeout(() => {
-        c.current && a(!0)
+        c.current && (e = n())
+      }, i.a6), u.current = setTimeout(async () => {
+        c.current && (null != e && await e, a(!0))
       }, i.JX)
     },
     onMouseLeave: () => {

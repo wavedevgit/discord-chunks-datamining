@@ -334,9 +334,11 @@ function ef(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, q({}, t))
+      return t => (0, r.jsx)(e, q({
+        sourceAnalyticsLocations: ev
+      }, t))
     })
-  }, []), e4 = i.useCallback(() => em ? (0, r.jsx)(y.Hh, {
+  }, [ev]), e4 = i.useCallback(() => em ? (0, r.jsx)(y.Hh, {
     renderPopout: () => (0, r.jsx)(y.hq, {}),
     tooltipText: Y.NW.string(Y.t["19lt29"]),
     position: "top",
