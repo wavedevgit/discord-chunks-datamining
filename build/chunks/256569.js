@@ -106,8 +106,8 @@ function f(e) {
     })
   }, [P]);
   i.useEffect(() => {
-    !W && k !== Z && s(Z)
-  }, [s, k, Z, W]), i.useEffect(() => {
+    k !== Z && s(Z)
+  }, [s, k, Z]), i.useEffect(() => {
     !W && c(R)
   }, [c, R, W]);
   let G = i.useCallback(function() {
