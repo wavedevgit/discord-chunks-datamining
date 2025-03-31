@@ -1,11 +1,11 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  Z: () => E
+  Z: () => b
 }), n(47120);
 var r = n(200651),
-  o = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(192379),
+  o = n(120356),
+  i = n.n(o),
   a = n(481060),
   s = n(497505),
   c = n(720293),
@@ -46,18 +46,18 @@ function f(e) {
   let {
     ctaBtnLabel: t,
     title: n,
-    subtitle: o,
-    onCTAClick: i
+    subtitle: l,
+    onCTAClick: o
   } = e;
   return (0, r.jsxs)("div", {
     className: d.endScreenCtaContainer,
     children: [(0, r.jsx)(v, {
       title: n,
-      subtitle: o
+      subtitle: l
     }), (0, r.jsx)(g, {
       label: t,
       icon: a.d4D,
-      onClick: i
+      onClick: o
     })]
   })
 }
@@ -85,20 +85,20 @@ function g(e) {
   let {
     label: t,
     icon: n,
-    onClick: i,
+    onClick: o,
     className: s
-  } = e, [c, u] = o.useState(!1), m = () => {
+  } = e, [c, u] = l.useState(!1), m = () => {
     u(!0)
   }, p = () => {
     u(!1)
   };
   return (0, r.jsxs)(a.P3F, {
-    className: l()(d.endScreenCtaBtn, d.accentOnHover, s),
+    className: i()(d.endScreenCtaBtn, d.accentOnHover, s),
     onMouseEnter: m,
     onMouseLeave: p,
     onFocus: m,
     onBlur: p,
-    onClick: i,
+    onClick: o,
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
       className: d.endScreenCtaBtnTitle,
@@ -110,14 +110,14 @@ function g(e) {
     })]
   })
 }
-let E = function(e) {
+let b = function(e) {
   let {
     quest: t,
     ctaBtnLabel: n,
-    title: i,
-    subtitle: l,
+    title: o,
+    subtitle: i,
     onCTAClick: a
-  } = e, s = o.useMemo(() => (0, c.z)(c.i.VIDEO_PLAYER_THUMBNAIL, t), [t]);
+  } = e, s = l.useMemo(() => (0, c.z)(c.i.VIDEO_PLAYER_THUMBNAIL, t), [t]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m, {
       asset: s
@@ -129,8 +129,8 @@ let E = function(e) {
         quest: t,
         asset: s
       }), (0, r.jsx)(f, {
-        title: i,
-        subtitle: l,
+        title: o,
+        subtitle: i,
         ctaBtnLabel: n,
         onCTAClick: a
       })]

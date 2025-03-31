@@ -94,14 +94,16 @@ function Y(e) {
     onMouseLeave: u,
     onKeyDown: d,
     showCommunicationDisabledStyles: p = !1,
-    className: g
+    className: g,
+    avatarImgRef: m
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
+      ref: m,
       onClick: a,
       onContextMenu: s,
-      onMouseDown: c,
       onKeyDown: d,
+      onMouseDown: c,
       onMouseEnter: l,
       onMouseLeave: u,
       src: t,
@@ -366,81 +368,83 @@ let et = o.memo(function(e) {
         onClickAvatar: O,
         onPopoutRequestClose: x,
         showAvatarPopout: T
-      } = a, [S, w] = o.useState(!1), {
-        analyticsLocations: k
-      } = (0, d.ZP)(u.Z.AVATAR), E = (0, c.e7)([I.ZP], () => {
+      } = a, S = o.useRef(null), [w, k] = o.useState(!1), {
+        analyticsLocations: E
+      } = (0, d.ZP)(u.Z.AVATAR), Z = (0, c.e7)([I.ZP], () => {
         var e;
         return null !== (e = a.displayCompactAvatars) && void 0 !== e ? e : I.ZP.displayCompactAvatars
-      }), Z = null != f.messageReference && null != f.webhookId && f.hasFlag(z.iLy.IS_CROSSPOST), A = f.author, {
-        id: D
-      } = A, B = b ? 32 : 80, {
-        avatarSrc: L,
-        avatarDecorationSrc: G,
-        eventHandlers: W
+      }), A = null != f.messageReference && null != f.webhookId && f.hasFlag(z.iLy.IS_CROSSPOST), D = f.author, {
+        id: B
+      } = D, L = b ? 32 : 80, {
+        avatarSrc: G,
+        avatarDecorationSrc: W,
+        eventHandlers: U
       } = (0, P.Z)({
-        user: A,
+        user: D,
         guildId: i,
-        size: B,
-        animateOnHover: null != h ? !S : !y,
+        size: L,
+        animateOnHover: null != h ? !w : !y,
         showPending: !0
-      }), U = f.isInteractionPlaceholder(), H = o.useMemo(() => {
+      }), H = f.isInteractionPlaceholder(), F = o.useMemo(() => {
         var e, t;
-        return U && null == A.avatar && (null === (e = f.application) || void 0 === e ? void 0 : e.icon) != null && null !== (t = M.ZP.getApplicationIconURL({
+        return H && null == D.avatar && (null === (e = f.application) || void 0 === e ? void 0 : e.icon) != null && null !== (t = M.ZP.getApplicationIconURL({
           id: f.application.id,
           icon: f.application.icon,
-          size: B,
+          size: L,
           fallbackAvatar: !1
-        })) && void 0 !== t ? t : L
-      }, [U, null === (t = f.application) || void 0 === t ? void 0 : t.icon, null === (n = f.application) || void 0 === n ? void 0 : n.id, A.avatar, B, L]), F = (0, j.nT)({
+        })) && void 0 !== t ? t : G
+      }, [H, null === (t = f.application) || void 0 === t ? void 0 : t.icon, null === (n = f.application) || void 0 === n ? void 0 : n.id, D.avatar, L, G]), V = (0, j.nT)({
         location: "MessageHeader"
       }), {
-        showPopoutFromHover: V,
-        onRequestClose: X,
-        onMouseEnter: Q,
-        onMouseLeave: J
+        showPopoutFromHover: X,
+        onRequestClose: Q,
+        onMouseEnter: J,
+        onMouseLeave: $
       } = (0, C.Z)({
-        shouldShowPopoutOnHover: F,
-        handlePreload: $
+        shouldShowPopoutOnHover: V,
+        handlePreload: ee
       });
       if (o.useEffect(() => {
-          if (null != h) return R.S.subscribeKeyed(z.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(D), w), () => void R.S.unsubscribeKeyed(z.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(D), w)
-        }, [D, h]), !b || E) {
+          if (null != h) return R.S.subscribeKeyed(z.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(B), k), () => void R.S.unsubscribeKeyed(z.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(B), k)
+        }, [B, h]), !b || Z) {
         if (null != p && null != T) {
           let e = (0, r.jsx)(d.Gt, {
-            value: k,
+            value: E,
             children: (0, r.jsx)(l.yRy, {
-              preload: Z ? void 0 : $,
+              targetElementRef: S,
+              preload: A || T || X ? void 0 : ee,
               renderPopout: p,
-              shouldShow: T || V,
+              shouldShow: T || X,
               position: s.tq ? "window_center" : "right",
               onRequestClose: () => {
-                null == X || X(), null == x || x()
+                null == Q || Q(), null == x || x()
               },
               clickTrap: T,
-              children: e => Y(q(K({}, W), {
-                avatarSrc: H,
-                avatarDecorationSrc: G,
+              children: e => Y(q(K({}, U), {
+                avatarSrc: F,
+                avatarDecorationSrc: W,
                 compact: b,
                 onClick: O,
                 onContextMenu: v,
                 onMouseDown: e.onMouseDown,
                 onKeyDown: e.onKeyDown,
                 showCommunicationDisabledStyles: g,
-                className: m
+                className: m,
+                avatarImgRef: S
               }))
             })
           });
-          return F ? (0, r.jsx)("div", {
-            onMouseEnter: Q,
-            onMouseLeave: J,
+          return V ? (0, r.jsx)("div", {
+            onMouseEnter: J,
+            onMouseLeave: $,
             children: e
           }) : e
         }
         return (0, r.jsx)(d.Gt, {
-          value: k,
-          children: Y(q(K({}, W), {
-            avatarSrc: H,
-            avatarDecorationSrc: G,
+          value: E,
+          children: Y(q(K({}, U), {
+            avatarSrc: F,
+            avatarDecorationSrc: W,
             compact: b,
             onClick: O,
             onContextMenu: v,
@@ -452,7 +456,7 @@ let et = o.memo(function(e) {
         })
       }
 
-      function $() {
+      function ee() {
         return (0, N.Z)(f.author.id, null != _.guildMemberAvatar && null != i ? M.ZP.getGuildMemberAvatarURLSimple({
           guildId: i,
           userId: f.author.id,

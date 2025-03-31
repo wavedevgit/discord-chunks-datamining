@@ -144,7 +144,7 @@ function E(e) {
   if (null != M && null != I) {
     let e = (0, o.jsx)(u.yRy, {
       targetElementRef: F,
-      preload: q ? void 0 : Y,
+      preload: q || I || K ? void 0 : Y,
       renderPopout: M,
       shouldShow: I || K,
       position: c.tq ? "window_center" : "right",

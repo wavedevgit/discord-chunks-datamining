@@ -1,6 +1,6 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  e: () => o
+  e: () => l
 });
 let r = (0, n(818083).B)({
     id: "2025-01_video_quests_end_card_cta_v2",
@@ -23,7 +23,7 @@ let r = (0, n(818083).B)({
       }
     }]
   }),
-  o = e => {
+  l = e => {
     let {
       location: t
     } = e;
