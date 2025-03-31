@@ -75,21 +75,22 @@ function b(e, t) {
 function v(e) {
   var {
     channel: t,
-    centerButton: n = !1
-  } = e, p = E(e, ["channel", "centerButton"]);
+    centerButton: n = !1,
+    onCallJoined: p
+  } = e, m = E(e, ["channel", "centerButton", "onCallJoined"]);
   let {
-    parentAnalyticsLocation: m
-  } = (0, s.ZP)(), b = n ? d.d : d.Z, v = t.isManaged() || !t.isPrivate() ? _.NW.string(_.t.S0W8Z2) : _.NW.string(_.t["0D/6R0"]), y = (0, c.Z)({
+    parentAnalyticsLocation: b
+  } = (0, s.ZP)(), v = n ? d.d : d.Z, y = t.isManaged() || !t.isPrivate() ? _.NW.string(_.t.S0W8Z2) : _.NW.string(_.t["0D/6R0"]), O = (0, c.Z)({
     location: "JoinCallButton"
-  }), O = i.useCallback(() => {
-    (0, l.v)(m, l.d.JOIN_CALL), a.default.selectVoiceChannel(t.id)
-  }, [t.id, m]);
-  return i.useEffect(() => (u.S.subscribe(f.CkL.CALL_ACCEPT, O), () => {
-    u.S.unsubscribe(f.CkL.CALL_ACCEPT, O)
-  }), [O]), (0, r.jsx)(b, g(h({}, p), {
+  }), I = i.useCallback(() => {
+    null == p || p(), (0, l.v)(b, l.d.JOIN_CALL), a.default.selectVoiceChannel(t.id)
+  }, [t.id, p, b]);
+  return i.useEffect(() => (u.S.subscribe(f.CkL.CALL_ACCEPT, I), () => {
+    u.S.unsubscribe(f.CkL.CALL_ACCEPT, I)
+  }), [I]), (0, r.jsx)(v, g(h({}, m), {
     iconComponent: o.Csw,
-    label: v,
-    onClick: O,
-    fullRegionButton: y
+    label: y,
+    onClick: I,
+    fullRegionButton: O
   }))
 }
