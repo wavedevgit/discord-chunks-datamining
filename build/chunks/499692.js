@@ -1,6 +1,6 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => N
+  Z: () => P
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -72,7 +72,7 @@ function O(e) {
     })]
   })
 }
-let N = function(e) {
+let P = function(e) {
   let {
     onSelectApplication: t
   } = e, n = (0, u.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? o.E.PREVIEW : o.E.ACTIVE, i = (0, u.e7)([f.Z], () => f.Z.getFetchState({

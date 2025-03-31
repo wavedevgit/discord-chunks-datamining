@@ -166,7 +166,7 @@ function X(e) {
   } = e;
   _.add(t), U(t, {
     userStatus: r
-  }), Z(n)
+  }), null != n && Z(n)
 }
 
 function J(e) {
@@ -174,7 +174,7 @@ function J(e) {
     questId: t,
     streamKey: n
   } = e;
-  null == m.get(n) && (m = new Map(m)).set(n, {
+  null != n && null == m.get(n) && (m = new Map(m)).set(n, {
     questId: t,
     streamKey: n,
     firstFailedAt: Date.now()

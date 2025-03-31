@@ -343,9 +343,9 @@ let i = {
     inlineRequire: () => n(175255).Z,
     neverLoadBeforeConnectionOpen: !0
   },
-  QuestManager: {
+  QuestProgressManager: {
     actions: ["QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "PASSIVE_UPDATE_V2", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_UPDATE_V2", "QUESTS_PREVIEW_UPDATE_SUCCESS"],
-    inlineRequire: () => n(901751).ZP,
+    inlineRequire: () => n(427081).Z,
     neverLoadBeforeConnectionOpen: !0
   },
   QuestFetchManager: {

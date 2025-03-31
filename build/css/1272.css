@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: c64ed01cfa47d6ec
+  Original File Name: b431b5b4ce2e9b0c
 **/
 .container__74da2 {
     position: relative;
@@ -1164,23 +1164,29 @@
     display: none
 }
 
-.bannerImage__955a3 {
-    position: absolute;
+.bannerAsset__955a3 {
+    grid-area: layer;
     width: 100%;
-    height: 758px;
-    display: flex;
-    flex-direction: column;
-    background-image: url(https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background-2.png);
-    background-size: auto 532px;
-    background-repeat: no-repeat;
-    background-position: 50%
+    height: 100%;
+    max-height: 348px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 1300px
+}
+
+.orbsBannerAsset__955a3 {
+    -o-object-position: 75% 50%;
+    object-position: 75% 50%
+}
+
+.oversizedImg__955a3 {
+    transform: scale(1.5) translate(-40px,20px)
 }
 
 .bannerGradient__955a3 {
-    position: absolute;
-    top: 174px;
+    grid-area: layer;
     width: 100%;
-    height: 350px
+    height: 348px
 }
 
 .tabs__955a3 {
@@ -1204,16 +1210,33 @@
     background: linear-gradient(180deg,transparent 49.93%,rgba(0,0,0,.2) 84.02%)
 }
 
+.theme-dark .orbsGradient__955a3 {
+    background: linear-gradient(0deg,var(--brand-500),transparent 33%);
+    opacity: .25
+}
+
 .theme-dark .bannerContainer__955a3 {
     background-color: #0c1522
+}
+
+.theme-dark .orbsContainer__955a3 {
+    background-color: #000
 }
 
 .theme-light .bannerGradient__955a3 {
     background: linear-gradient(180deg,transparent 68%,#f2f3f5),radial-gradient(circle at center,transparent 45.68%,rgba(171,183,249,.61) 69.72%,#bec8ff 100%)
 }
 
+.theme-light .orbsGradient__955a3 {
+    background: radial-gradient(circle at center,transparent 45.68%,rgba(171,183,249,.61) 69.72%,#bec8ff 100%)
+}
+
 .theme-light .bannerContainer__955a3 {
     background-color: #909ff1
+}
+
+.theme-light .orbsContainer__955a3 {
+    background-color: #fff
 }
 
 .container_a592e1 {
@@ -8807,4 +8830,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=c64ed01cfa47d6ec.css.map*/
+/*# sourceMappingURL=b431b5b4ce2e9b0c.css.map*/

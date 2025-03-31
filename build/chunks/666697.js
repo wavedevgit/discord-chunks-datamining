@@ -1,6 +1,6 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
 var r = n(200651),
   a = n(192379),
@@ -24,13 +24,13 @@ var r = n(200651),
   j = n(213746),
   y = n(979007),
   O = n(981631),
-  N = n(388032),
-  P = n(59637);
-let I = function(e) {
+  P = n(388032),
+  I = n(59637);
+let N = function(e) {
   let {
     applicationId: t,
     onSelectApplication: n,
-    onScroll: I,
+    onScroll: N,
     initialTab: S,
     onButtonsVisibilityChange: E
   } = e, T = a.useRef(null), A = (0, i.e7)([u.Z], () => u.Z.getApplication(t)), L = (0, i.e7)([u.Z], () => u.Z.getApplicationFetchState(t));
@@ -87,10 +87,10 @@ let I = function(e) {
   }, [null == A ? void 0 : A.id, M]);
   let U = a.useMemo(() => [{
       id: y.GlobalDiscoveryAppsSections.ABOUT,
-      label: N.NW.string(N.t.DkyHMD)
+      label: P.NW.string(P.t.DkyHMD)
     }, {
       id: y.GlobalDiscoveryAppsSections.STORE,
-      label: N.NW.string(N.t.jgEXGB)
+      label: P.NW.string(P.t.jgEXGB)
     }], []),
     F = a.useMemo(() => {
       if (null == A) return null;
@@ -113,30 +113,30 @@ let I = function(e) {
     }, [t]),
     H = w === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
-    onScroll: I,
+    onScroll: N,
     ref: T,
     children: (0, r.jsx)(o.Z, {
       children: null == A ? null == L || L === u.M.FETCHING ? (0, r.jsx)("div", {
-        className: P.centerContainer,
+        className: I.centerContainer,
         children: (0, r.jsx)(h.Z, {
           loading: !0
         })
       }) : (0, r.jsx)("div", {
-        className: P.centerContainer,
+        className: I.centerContainer,
         children: (0, r.jsx)(g.Z, {
-          className: P.error
+          className: I.error
         })
       }) : (0, r.jsxs)("div", {
-        className: P.detailContainer,
+        className: I.detailContainer,
         children: [(0, r.jsx)(v.Z, {
           application: A,
           onButtonsVisibilityChange: E
         }), (0, r.jsxs)("div", {
-          className: P.contentContainer,
+          className: I.contentContainer,
           children: [(0, r.jsxs)("div", {
-            className: P.contentTabsContainer,
+            className: I.contentTabsContainer,
             children: [R && (0, r.jsx)("div", {
-              className: P.contentTabs,
+              className: I.contentTabs,
               children: (0, r.jsx)(s.Z, {
                 tabs: U,
                 onTabSelect: V,
@@ -150,7 +150,7 @@ let I = function(e) {
               similarLoadId: null == G ? void 0 : G.loadId
             })]
           }), H && (0, r.jsx)(x.Z, {
-            className: P.sidebar,
+            className: I.sidebar,
             application: A,
             view: "side"
           })]

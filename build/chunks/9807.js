@@ -79,7 +79,7 @@ let O = e => {
       renderLinkComponent: g.iT
     }))
   },
-  N = e => {
+  P = e => {
     var {
       containerClassName: t,
       className: n
@@ -88,11 +88,11 @@ let O = e => {
       className: o()(n, t)
     }))
   },
-  P = {
+  I = {
     width: 1280,
     height: 720
   },
-  I = {
+  N = {
     width: 640,
     height: 360
   },
@@ -108,9 +108,9 @@ let O = e => {
     } = e;
     if (i.type === _.s9s.YOUTUBE_VIDEO) t = C({
       url: (0, _.n8r)(i.youtubeVideoId)
-    }, P), n = C({
+    }, I), n = C({
       url: "".concat((0, _.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
-    }, I), r = u.pn.YOUTUBE;
+    }, N), r = u.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
         r = null != i.height ? i.height : 0;
@@ -143,7 +143,7 @@ let O = e => {
         autoMute: m,
         onMute: p,
         autoPlay: h,
-        renderImageComponent: N,
+        renderImageComponent: P,
         renderVideoComponent: O,
         renderLinkComponent: g.iT
       })

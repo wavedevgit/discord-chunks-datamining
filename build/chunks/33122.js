@@ -1,7 +1,7 @@
 /** Chunk was on 37697 **/
 n.d(t, {
   Z: () => R,
-  r: () => N
+  r: () => P
 }), n(47120);
 var r, a = n(200651),
   i = n(192379),
@@ -55,7 +55,7 @@ function O() {
     return n
   }, n
 }
-let N = {
+let P = {
     SMALL: {
       width: 640,
       height: 360,
@@ -67,11 +67,11 @@ let N = {
       margin: 20
     }
   },
-  P = {
+  I = {
     width: 1920,
     height: 1080
   },
-  I = {
+  N = {
     width: 1280,
     height: 720
   },
@@ -107,9 +107,9 @@ let N = {
     } = e;
     if (i.type === x.s9s.YOUTUBE_VIDEO) t = y({
       url: (0, x.n8r)(i.youtubeVideoId)
-    }, P), n = y({
+    }, I), n = y({
       url: "".concat((0, x.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
-    }, I), r = p.pn.YOUTUBE;
+    }, N), r = p.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
         r = null != i.height ? i.height : 0;
@@ -277,8 +277,8 @@ class L extends(r = i.PureComponent) {
     }), j(this, "getItemSize", () => {
       let {
         width: e
-      } = this.props, t = N.MEDIUM;
-      return null != e && e < t.width && (t = N.SMALL), t
+      } = this.props, t = P.MEDIUM;
+      return null != e && e < t.width && (t = P.SMALL), t
     }), j(this, "setItem", (e, t) => {
       let {
         props: {

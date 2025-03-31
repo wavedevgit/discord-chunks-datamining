@@ -24,9 +24,9 @@ var r = n(200651),
   j = n(594174),
   y = n(626135),
   O = n(572004),
-  N = n(135431),
-  P = n(272048),
-  I = n(881294),
+  P = n(135431),
+  I = n(272048),
+  N = n(881294),
   S = n(258971),
   E = n(98449),
   T = n(981631),
@@ -107,11 +107,11 @@ function Z(e) {
     onClickInstallApplication: d,
     canInstall: u
   } = function(e) {
-    let t = (0, I.nu)(),
+    let t = (0, N.nu)(),
       n = a.useCallback(() => {
         var t;
         let n = null !== (t = S.z8.getField("guildId")) && void 0 !== t ? t : void 0;
-        (0, N.L)({
+        (0, P.L)({
           applicationId: e.id,
           customInstallUrl: e.custom_install_url,
           installParams: e.install_params,
@@ -129,10 +129,10 @@ function Z(e) {
       }
     }, [t, n]), {
       onClickInstallApplication: a.useCallback(() => {
-        if ((0, I.zZ)(T.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
+        if ((0, N.zZ)(T.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
             application_id: e.id
           }), (o.tq || o.Em) && null == e.custom_install_url) {
-          let t = (0, N.E)({
+          let t = (0, P.E)({
             applicationId: e.id,
             customInstallUrl: e.custom_install_url,
             installParams: e.install_params,
@@ -152,7 +152,7 @@ function Z(e) {
             auth_type: null != e.custom_install_url ? "custom_url" : "in_app",
             source: "product_page",
             device_platform: o.tq ? "mobile_web" : "desktop_web"
-          }), (0, I.rf)({
+          }), (0, N.rf)({
             [R]: "true"
           })
         }
@@ -228,8 +228,8 @@ let M = a.forwardRef(function(e, t) {
     autoTrackExposure: !0
   }).enabled, _ = e => "".concat(location.protocol, "//").concat(location.host).concat(T.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e)), {
     analyticsLocations: y
-  } = (0, m.ZP)(), N = a.useCallback(() => {
-    (0, I.zZ)(T.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+  } = (0, m.ZP)(), P = a.useCallback(() => {
+    (0, N.zZ)(T.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
     }), (0, O.JG)(_(n.id)), (0, c.showToast)((0, c.createToast)(A.NW.string(A.t["L/PwZW"]), c.ToastType.SUCCESS))
   }, [n.id]), S = (0, s.e7)([C.default], () => C.default.locale), R = a.useCallback(() => {
@@ -245,7 +245,7 @@ let M = a.forwardRef(function(e, t) {
   }), G = (0, v.Z)({
     application: n,
     onItemClick: () => {
-      (0, I.zZ)(T.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+      (0, N.zZ)(T.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
         application_id: n.id
       })
     }
@@ -260,7 +260,7 @@ let M = a.forwardRef(function(e, t) {
       children: (0, r.jsx)(c.sNh, {
         id: "copy",
         label: A.NW.string(A.t.z4sP5O),
-        action: N,
+        action: P,
         icon: c.xPt
       })
     }) : null, (0, r.jsx)(c.kSQ, {
@@ -273,7 +273,7 @@ let M = a.forwardRef(function(e, t) {
     }), null != M ? (0, r.jsx)(c.kSQ, {
       children: M
     }) : null]
-  }), [M, R, N, o, G]), {
+  }), [M, R, P, o, G]), {
     onClickLaunchActivity: B,
     isSubmitting: W
   } = function(e, t) {
@@ -282,7 +282,7 @@ let M = a.forwardRef(function(e, t) {
       i = null == e ? void 0 : null === (n = e.bot) || void 0 === n ? void 0 : n.id,
       l = null != i && (0, f.BQ)(e) && (0, f.ye)(e),
       [o, c] = a.useState(!1),
-      d = (0, I.nu)(),
+      d = (0, N.nu)(),
       m = (0, s.e7)([j.default], () => j.default.getCurrentUser()),
       h = (0, s.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
       _ = a.useCallback(async (t, n, r) => {
@@ -312,10 +312,10 @@ let M = a.forwardRef(function(e, t) {
     }, [d, l, i, r, t, m, _]);
     let b = a.useCallback(async () => {
       if (null != i) {
-        if ((0, I.zZ)(T.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
+        if ((0, N.zZ)(T.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
             application_id: r
           }), !d) {
-          (0, I.rf)({
+          (0, N.rf)({
             [w]: "true"
           });
           return
@@ -329,7 +329,7 @@ let M = a.forwardRef(function(e, t) {
     }
   }(n, y), {
     enabled: U
-  } = (0, P.E)("GlobalDiscoveryAppsDetailActions"), F = U && null != B, V = F ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND;
+  } = (0, I.E)("GlobalDiscoveryAppsDetailActions"), F = U && null != B, V = F ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND;
   return (0, r.jsxs)("div", {
     ref: t,
     children: [(0, r.jsxs)("div", {
@@ -353,7 +353,7 @@ let M = a.forwardRef(function(e, t) {
         }),
         innerClassName: L.innerIconButton,
         "aria-label": A.NW.string(A.t.z4sP5O),
-        onClick: N,
+        onClick: P,
         children: (0, r.jsx)(c.xPt, {
           size: "xs",
           color: "currentColor"

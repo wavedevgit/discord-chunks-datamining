@@ -26,7 +26,7 @@ let m = function(e) {
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : void 0, [v, h]), N = f && null != b;
+  }) : void 0, [v, h]), P = f && null != b;
   return (0, r.jsx)(i.$, {
     innerRef: _,
     onChange: C,
@@ -82,14 +82,14 @@ let m = function(e) {
                 children: h.name
               })
             })
-          }), N || j ? (0, r.jsxs)("div", {
+          }), P || j ? (0, r.jsxs)("div", {
             className: p.infoContainer,
-            children: [N ? (0, r.jsx)(l.Text, {
+            children: [P ? (0, r.jsx)(l.Text, {
               className: p.appCategory,
               variant: "text-xs/medium",
               color: "text-normal",
               children: b.name
-            }) : null, N && j ? (0, r.jsx)(l.Text, {
+            }) : null, P && j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
               children: "•"
@@ -102,7 +102,7 @@ let m = function(e) {
             className: p.description,
             variant: "text-sm/medium",
             color: "header-secondary",
-            lineClamp: N || j ? 2 : 3,
+            lineClamp: P || j ? 2 : 3,
             children: null !== (m = null === (n = h.directory_entry) || void 0 === n ? void 0 : n.short_description) && void 0 !== m ? m : h.description
           })]
         })]

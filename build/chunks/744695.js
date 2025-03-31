@@ -150,8 +150,8 @@ function v(e) {
     let e = (0, d.pP)(O);
     return (0, d.YP)(e, document.body), () => (0, d.UC)(e, document.body)
   }, [O]);
-  let N = 0 !== u,
-    P = j.some(e => e.id === n);
+  let P = 0 !== u,
+    I = j.some(e => e.id === n);
   return (0, r.jsxs)("div", {
     className: l()(h.container, t),
     ref: y,
@@ -172,10 +172,10 @@ function v(e) {
           tabs: j,
           onTabSelect: s,
           selectedTab: n,
-          selected: P
+          selected: I
         })
       })]
-    }), N && (0, r.jsxs)("div", {
+    }), P && (0, r.jsxs)("div", {
       className: h.tabs,
       children: [C.map(e => (0, r.jsx)(_, {
         id: e.id,
@@ -186,7 +186,7 @@ function v(e) {
         tabs: j,
         onTabSelect: s,
         selectedTab: n,
-        selected: P
+        selected: I
       }) : null]
     })]
   })

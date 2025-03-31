@@ -8,12 +8,10 @@ var r = n(200651),
 
 function l() {
   let e = (0, a.C)();
-  return (0, r.jsxs)("div", {
+  return (0, r.jsx)("div", {
     className: i.gradientBackground,
-    children: [(0, r.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: e
-    }), (0, r.jsx)("div", {
-      className: i.gradientOverlay
-    })]
+    })
   })
 }

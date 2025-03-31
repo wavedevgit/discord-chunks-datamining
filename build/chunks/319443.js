@@ -24,9 +24,9 @@ var r = n(200651),
   j = n(626135),
   y = n(471518),
   O = n(31569),
-  N = n(370210),
-  P = n(678694),
-  I = n(216780),
+  P = n(370210),
+  I = n(678694),
+  N = n(216780),
   S = n(881294),
   E = n(975907),
   T = n(119014),
@@ -47,7 +47,7 @@ function W(e) {
     applicationId: t,
     hideDetailHeaderButtons: n,
     onClickBack: i
-  } = e, o = (0, s.e7)([N.Z], () => N.Z.getApplication(t)), [d, u] = a.useState(n), p = a.useCallback(() => {
+  } = e, o = (0, s.e7)([P.Z], () => P.Z.getApplication(t)), [d, u] = a.useState(n), p = a.useCallback(() => {
     u(n)
   }, [n]);
   return (0, r.jsxs)("div", {
@@ -118,7 +118,7 @@ let F = function() {
   let n = (0, s.e7)([x.default], () => !x.default.isAuthenticated()),
     {
       onScroll: i,
-      scrollPosition: N,
+      scrollPosition: P,
       resetScrollPosition: k
     } = (0, u.M)(),
     F = (0, A.Xh)(),
@@ -132,8 +132,8 @@ let F = function() {
       query: q,
       categoryId: K
     } = (null == F ? void 0 : F.type) === A.m_.SEARCH ? F : {},
-    Q = (0, s.e7)([P.Z], () => P.Z.getCategories()),
-    J = a.useMemo(() => [(0, I.KQ)(), ...Q], [Q]),
+    Q = (0, s.e7)([I.Z], () => I.Z.getCategories()),
+    J = a.useMemo(() => [(0, N.KQ)(), ...Q], [Q]),
     $ = a.useMemo(() => J.find(e => e.id === Number(K)), [J, K]),
     {
       tabs: ee,
@@ -213,14 +213,14 @@ let F = function() {
       scroll_visible_percentile: (t + n) / r,
       current_page: a
     })
-  }, 200), eN = a.useCallback((e, t) => {
+  }, 200), eP = a.useCallback((e, t) => {
     i(e), eO({
       scrollTop: e.currentTarget.scrollTop,
       offsetHeight: e.currentTarget.offsetHeight,
       scrollHeight: e.currentTarget.scrollHeight,
       location: t
     })
-  }, [eO, i]), eP = ec ? c.iWm : c.jje;
+  }, [eO, i]), eI = ec ? c.iWm : c.jje;
   return (0, r.jsxs)("div", {
     className: l()(B.outerContainer, {
       [B.loggedOutContainer]: n
@@ -231,11 +231,11 @@ let F = function() {
         selectedTabId: et,
         handleTransition: ex,
         tabs: ee,
-        icon: eP,
+        icon: eI,
         state: ed || eu ? h.r.SEARCH : h.r.DEFAULT,
         onAvailableWidthChange: e_,
         children: [!ej && (0, r.jsx)(m.z6, {
-          scrollPosition: N
+          scrollPosition: P
         }), ed ? (0, r.jsx)(W, {
           applicationId: Y,
           hideDetailHeaderButtons: er,
@@ -267,7 +267,7 @@ let F = function() {
       }) : (0, r.jsxs)(m.ZP, {
         variant: ej ? m._6.RELATIVE : m._6.OVERLAY,
         children: [!ej && (0, r.jsx)(m.z6, {
-          scrollPosition: N
+          scrollPosition: P
         }), ed ? (0, r.jsx)(W, {
           applicationId: Y,
           hideDetailHeaderButtons: er,
@@ -277,7 +277,7 @@ let F = function() {
             icon: c.j9r,
             onClick: ey
           }) : (0, r.jsx)(m.aV, {
-            icon: eP
+            icon: eI
           }), eu ? (0, r.jsx)(c.X6q, {
             variant: "heading-lg/semibold",
             color: "header-primary",
@@ -304,20 +304,20 @@ let F = function() {
           })]
         })]
       }), ed ? (0, r.jsx)(w.Z, {
-        onScroll: e => eN(e, A.m_.APPLICATION),
+        onScroll: e => eP(e, A.m_.APPLICATION),
         onSelectApplication: eC,
         applicationId: Y,
         initialTab: X,
         onButtonsVisibilityChange: ea
       }) : eu ? (0, r.jsx)(D.Z, {
         onSelectApplication: eC,
-        onScroll: e => eN(e, A.m_.SEARCH)
+        onScroll: e => eP(e, A.m_.SEARCH)
       }) : et === M.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(Z.Z, {
-        onScroll: e => eN(e, A.m_.HOME),
+        onScroll: e => eP(e, A.m_.HOME),
         onSelectApplication: eC
       }) : (0, r.jsx)(R.Z, {
         tabId: Number(et),
-        onScroll: e => eN(e, A.m_.CATEGORY),
+        onScroll: e => eP(e, A.m_.CATEGORY),
         onSelectApplication: eC
       })]
     })]

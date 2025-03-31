@@ -25,22 +25,22 @@ function b(e) {
     previewStatus: j,
     placeHolderText: x,
     transitionState: v
-  } = e, g = (0, o.ZP)(t.id);
+  } = e, S = (0, o.ZP)(t.id);
   return (0, r.jsxs)(c.Z, {
     user: t,
-    displayProfile: g,
+    displayProfile: S,
     profileType: f.y0.BITE_SIZE,
     className: h.profilePreviewContainer,
     children: [(0, r.jsxs)("header", {
       children: [(0, r.jsx)(u.Z, {
         user: t,
-        displayProfile: g,
+        displayProfile: S,
         profileType: f.y0.BITE_SIZE
       }), (0, r.jsx)("div", {
         inert: "",
         children: (0, r.jsx)(a.Z, {
           user: t,
-          displayProfile: g,
+          displayProfile: S,
           profileType: f.y0.BITE_SIZE,
           previewStatus: j,
           className: h.avatar
@@ -54,8 +54,8 @@ function b(e) {
         placeholderText: x,
         hasEntered: v === i.Dvm.ENTERED
       })]
-    }), (null == g ? void 0 : g.profileEffectId) != null && (0, r.jsx)(l.Z, {
-      profileEffectId: g.profileEffectId
+    }), (null == S ? void 0 : S.profileEffectId) != null && (0, r.jsx)(l.Z, {
+      profileEffectId: S.profileEffectId
     }), (0, r.jsx)("div", {
       className: h.usernameContainer,
       inert: "",
@@ -63,9 +63,9 @@ function b(e) {
         user: t,
         profileType: f.y0.BITE_SIZE,
         nickname: m.ZP.getName(null, null, t),
-        pronouns: null == g ? void 0 : g.pronouns,
+        pronouns: null == S ? void 0 : S.pronouns,
         tags: (0, r.jsx)(s.Z, {
-          displayProfile: g,
+          displayProfile: S,
           profileType: f.y0.BITE_SIZE
         })
       })
