@@ -346,7 +346,7 @@ class v {
   jumpToMessage(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       n = arguments.length > 2 ? arguments[2] : void 0,
-      r = arguments.length > 3 ? arguments[3] : void 0,
+      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
       i = arguments.length > 4 ? arguments[4] : void 0;
     return this.mutate(o => {
       o.jumped = !0, o.jumpedToPresent = !1, o.jumpType = null != i ? i : a.SR.ANIMATED, o.jumpTargetId = e, o.jumpTargetOffset = null != e && null != n ? n : 0, o.jumpSequenceId = o.jumpSequenceId + 1, o.jumpFlash = t, o.jumpReturnTargetId = r, o.ready = !0, o.loadingMore = !1
@@ -462,7 +462,7 @@ class v {
     })
   }
   constructor(e) {
-    _(this, "channelId", void 0), _(this, "ready", void 0), _(this, "jumpType", void 0), _(this, "jumpTargetId", void 0), _(this, "jumpTargetOffset", void 0), _(this, "jumpSequenceId", void 0), _(this, "jumped", void 0), _(this, "jumpedToPresent", void 0), _(this, "jumpFlash", void 0), _(this, "jumpReturnTargetId", void 0), _(this, "focusTargetId", void 0), _(this, "hasMoreBefore", void 0), _(this, "hasMoreAfter", void 0), _(this, "loadingMore", void 0), _(this, "revealedMessageId", void 0), _(this, "cached", void 0), _(this, "hasFetched", void 0), _(this, "error", void 0), _(this, "_array", []), _(this, "_before", void 0), _(this, "_after", void 0), _(this, "_map", {}), this.channelId = e, this.ready = !1, this.jumpTargetId = null, this.jumpTargetOffset = 0, this.jumpSequenceId = 1, this.jumped = !1, this.jumpedToPresent = !1, this.jumpType = a.SR.ANIMATED, this.jumpFlash = !0, this.jumpReturnTargetId = null, this.hasMoreBefore = !0, this.hasMoreAfter = !1, this.loadingMore = !1, this.revealedMessageId = null, this._clearMessages(), this._before = new b(!0), this._after = new b(!1), this.cached = !1, this.hasFetched = !1, this.error = !1
+    _(this, "channelId", void 0), _(this, "ready", void 0), _(this, "jumpType", void 0), _(this, "jumpTargetId", void 0), _(this, "jumpTargetOffset", void 0), _(this, "jumpSequenceId", void 0), _(this, "jumped", void 0), _(this, "jumpedToPresent", void 0), _(this, "jumpFlash", void 0), _(this, "jumpReturnTargetId", void 0), _(this, "focusTargetId", void 0), _(this, "hasMoreBefore", void 0), _(this, "hasMoreAfter", void 0), _(this, "loadingMore", void 0), _(this, "revealedMessageId", void 0), _(this, "cached", void 0), _(this, "hasFetched", void 0), _(this, "error", void 0), _(this, "_array", []), _(this, "_before", void 0), _(this, "_after", void 0), _(this, "_map", {}), this.channelId = e, this.ready = !1, this.jumpTargetId = null, this.jumpTargetOffset = 0, this.jumpSequenceId = 1, this.jumped = !1, this.jumpedToPresent = !1, this.jumpType = a.SR.ANIMATED, this.jumpFlash = !0, this.jumpReturnTargetId = null, this.focusTargetId = null, this.hasMoreBefore = !0, this.hasMoreAfter = !1, this.loadingMore = !1, this.revealedMessageId = null, this._clearMessages(), this._before = new b(!0), this._after = new b(!1), this.cached = !1, this.hasFetched = !1, this.error = !1
   }
 }
 _(v, "_channelMessages", {});

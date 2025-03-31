@@ -1,6 +1,6 @@
 /**
   Module ID: 13323
-  Original File Name: 00b45dafc5074d77
+  Original File Name: d2e58efed6a7c978
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -10089,8 +10089,10 @@ html .invoiceCancelRow_b9f95d {
 
 .staticFramePreview__93529 {
     height: 250px;
+    aspect-ratio: 450/880;
     border: 1px solid var(--border-strong);
-    border-radius: 4px
+    border-radius: 4px;
+    margin-bottom: 4px
 }
 
 .clickable__2debe {
@@ -16895,4 +16897,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=00b45dafc5074d77.css.map*/
+/*# sourceMappingURL=d2e58efed6a7c978.css.map*/

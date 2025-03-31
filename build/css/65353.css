@@ -1,6 +1,6 @@
 /**
   Module ID: 65353
-  Original File Name: 9b8960905fe5486b
+  Original File Name: 60268a9d8d30f0f2
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -214,8 +214,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1260,4 +1260,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=9b8960905fe5486b.css.map*/
+/*# sourceMappingURL=60268a9d8d30f0f2.css.map*/

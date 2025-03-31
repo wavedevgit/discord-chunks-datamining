@@ -1,6 +1,6 @@
 /**
   Module ID: 30526
-  Original File Name: ee344468d235874e
+  Original File Name: f58ce4a40282d1ab
 **/
 @value minColumnWidth: 460px;
 
@@ -1375,8 +1375,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -3645,4 +3645,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=ee344468d235874e.css.map*/
+/*# sourceMappingURL=f58ce4a40282d1ab.css.map*/
