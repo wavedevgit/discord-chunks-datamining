@@ -78,13 +78,13 @@ function w(e) {
   } = (0, c.Z)(), {
     ref: O,
     height: w
-  } = (0, c.Z)(), E = (0, a.e7)([p.Z], () => p.Z.lifetimePoints > 0), S = (0, a.e7)([u.Z, l.Z], () => {
+  } = (0, c.Z)(), S = (0, a.e7)([p.Z], () => p.Z.lifetimePoints > 0), E = (0, a.e7)([u.Z, l.Z], () => {
     let e = l.Z.getWindow(n);
     return null == e || !u.Z.isFocused((0, f.ZY)(e))
   });
   return (0, s.useEffect)(() => {
     d.default.track(j.rMx.CLICKER_GAME_LAUNCHED, {
-      launch_type: E ? "CONTINUE" : "NEW"
+      launch_type: S ? "CONTINUE" : "NEW"
     })
   }, []), (0, r.jsxs)("div", {
     ref: o,
@@ -95,7 +95,7 @@ function w(e) {
         items: b.nw,
         width: m,
         height: g,
-        isPaused: S,
+        isPaused: E,
         windowKey: n
       })
     }), (0, r.jsxs)("div", {
@@ -106,7 +106,7 @@ function w(e) {
           items: b.uK,
           width: m,
           height: g,
-          isPaused: S,
+          isPaused: E,
           windowKey: n
         })
       }), (0, r.jsxs)("div", {
@@ -115,7 +115,7 @@ function w(e) {
           items: b.rQ,
           width: m,
           height: g,
-          isPaused: S,
+          isPaused: E,
           windowKey: n
         }), (0, r.jsx)(_, {}), (0, r.jsx)("div", {
           className: Z.pointsItems,
@@ -123,7 +123,7 @@ function w(e) {
             items: b.ci,
             width: m,
             height: g,
-            isPaused: S,
+            isPaused: E,
             windowKey: n
           })
         })]
@@ -134,7 +134,7 @@ function w(e) {
           items: b.Ou,
           width: m,
           height: w,
-          isPaused: S,
+          isPaused: E,
           windowKey: n
         })
       })]
@@ -152,7 +152,7 @@ function w(e) {
           items: b.WY,
           width: m,
           height: g,
-          isPaused: S,
+          isPaused: E,
           windowKey: n
         })]
       })]
@@ -162,7 +162,7 @@ function w(e) {
         items: b.wT,
         width: m,
         height: g,
-        isPaused: S,
+        isPaused: E,
         windowKey: n
       }), (0, r.jsx)(N.Z, {})]
     }), (0, r.jsx)(C, {}), (0, r.jsx)(h.Z, {})]

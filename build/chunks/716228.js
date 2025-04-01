@@ -46,8 +46,8 @@ function P(e) {
 }
 let C = n(97996),
   w = n(675755),
-  E = [_],
-  S = [N, O, j],
+  S = [_],
+  E = [N, O, j],
   I = [{
     src: Z,
     colorize: !1
@@ -172,7 +172,7 @@ function R(e) {
             className: "left" === e ? x.imageFlipped : x.image,
             isPaused: O,
             interval: 200,
-            sources: 0 === _ ? E : S,
+            sources: 0 === _ ? S : E,
             onLoopEnd: $
           })]
         }))

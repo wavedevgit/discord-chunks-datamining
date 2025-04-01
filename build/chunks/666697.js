@@ -47,12 +47,12 @@ let N = function(e) {
     })
   }, [t]), a.useEffect(() => () => E(!0), [E]);
   let R = null == A ? void 0 : A.storefront_available,
-    [w, k] = a.useState(null != S ? S : y.GlobalDiscoveryAppsSections.ABOUT),
-    Z = a.useCallback(e => {
+    [w, Z] = a.useState(null != S ? S : y.GlobalDiscoveryAppsSections.ABOUT),
+    k = a.useCallback(e => {
       var t;
       null === (t = T.current) || void 0 === t || t.scrollTo({
         to: 0
-      }), k(y.GlobalDiscoveryAppsSections.ABOUT), n(e)
+      }), Z(y.GlobalDiscoveryAppsSections.ABOUT), n(e)
     }, [n]);
   a.useEffect(() => {
     (null == A ? void 0 : A.storefront_available) && null != t && (0, l.Z)(t)
@@ -61,12 +61,12 @@ let N = function(e) {
     M = (0, i.e7)([p.Z], () => p.Z.getFetchState({
       applicationId: null == A ? void 0 : A.id
     })),
-    G = (0, i.e7)([p.Z], () => p.Z.getSimilarApplications({
+    z = (0, i.e7)([p.Z], () => p.Z.getSimilarApplications({
       applicationId: null == A ? void 0 : A.id
     })),
-    z = a.useMemo(() => null == G ? void 0 : G.applications.slice(0, 3), [G]),
+    G = a.useMemo(() => null == z ? void 0 : z.applications.slice(0, 3), [z]),
     B = {
-      displayedSimilarApplications: z,
+      displayedSimilarApplications: G,
       previousView: D
     },
     W = a.useRef(B);
@@ -109,7 +109,7 @@ let N = function(e) {
       (0, m.zZ)(O.rMx.APP_DIRECTORY_PROFILE_TAB_CLICKED, {
         application_id: t,
         tab_name: e
-      }), k(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, _.Gp)(O.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, _.Gp)(O.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
+      }), Z(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, _.Gp)(O.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, _.Gp)(O.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
     }, [t]),
     H = w === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
@@ -145,9 +145,9 @@ let N = function(e) {
             }), F, (0, r.jsx)(C.Z, {
               applicationId: t,
               fetchState: M,
-              similarApplications: z,
-              onSelectApplication: Z,
-              similarLoadId: null == G ? void 0 : G.loadId
+              similarApplications: G,
+              onSelectApplication: k,
+              similarLoadId: null == z ? void 0 : z.loadId
             })]
           }), H && (0, r.jsx)(x.Z, {
             className: I.sidebar,

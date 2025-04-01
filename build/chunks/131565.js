@@ -1,39 +1,49 @@
 /** Chunk was on 34059 **/
 n.d(t, {
-  Z: () => h
-});
+  Z: () => f
+}), n(47120);
 var r = n(200651),
   i = n(192379),
   l = n(442837),
   o = n(357352),
-  a = n(411149),
-  s = n(115215),
-  c = n(151480),
-  u = n(680783),
-  d = n(443491);
+  a = n(565942),
+  s = n(411149),
+  c = n(115215),
+  u = n(151480),
+  d = n(680783),
+  p = n(443491);
 
-function p(e) {
+function h(e) {
   let {
     chatWallpaperState: t
-  } = e, n = (0, l.e7)([a.Z], () => {
-    let e = a.Z.getWallpaperById(t.wallpaperId);
+  } = e, n = (0, l.e7)([s.Z], () => {
+    let e = s.Z.getWallpaperById(t.wallpaperId);
     return null == e ? null : (0, o.I)(e.default.asset)
-  });
+  }), [c, d] = i.useState(n);
   return (i.useEffect(() => {
-    null == n && t.isViewable && a.Z.shouldFetchWallpapers && (0, c.k9)()
-  }, [n, t.isViewable]), t.isViewable && null != n) ? (0, r.jsx)("div", {
-    className: d.wallpaperContainer,
+    null == n && t.isViewable && s.Z.shouldFetchWallpapers && (0, u.k9)()
+  }, [n, t.isViewable]), i.useEffect(() => {
+    if (c !== n) {
+      if (null == n) {
+        d(null);
+        return
+      }(0, a.p)(n, e => {
+        e === n && d(e)
+      })
+    }
+  }, [c, n]), t.isViewable && null != c) ? (0, r.jsx)("div", {
+    className: p.wallpaperContainer,
     style: {
-      backgroundImage: "url(".concat(n, ")")
+      backgroundImage: "url(".concat(c, ")")
     }
   }) : null
 }
 
-function h(e) {
+function f(e) {
   let {
     channel: t
-  } = e, n = (0, u.Z)(t.id);
-  return !(null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || s.t(t) && !n.isPreview) ? (0, r.jsx)(p, {
+  } = e, n = (0, d.Z)(t.id);
+  return !(null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || c.t(t) && !n.isPreview) ? (0, r.jsx)(h, {
     chatWallpaperState: n
   }) : null
 }

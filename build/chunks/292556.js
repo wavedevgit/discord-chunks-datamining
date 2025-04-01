@@ -47,7 +47,7 @@ function c(e, t) {
 }
 let u = {
   setDesktopType(e) {
-    __OVERLAY__ || i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
+    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
       notifications_enabled: e === o.qrD.ALL
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_DESKTOP_TYPE",
@@ -102,7 +102,7 @@ let u = {
     })
   },
   setPermissionsState(e, t) {
-    __OVERLAY__ || i.default.track(o.rMx.ENABLE_NOTIFICATIONS, {
+    i.default.track(o.rMx.ENABLE_NOTIFICATIONS, {
       enabled: e === o.$Ab.ENABLED,
       source: t
     }), r.Z.dispatch({

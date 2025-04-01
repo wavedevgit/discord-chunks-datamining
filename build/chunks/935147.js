@@ -1,7 +1,7 @@
 /** Chunk was on 13323 **/
 n.d(t, {
   Z: () => V
-}), n(47120), n(266796);
+}), n(266796);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(175756),
   f = n(104494),
   b = n(639119),
-  N = n(211712),
+  N = n(402567),
   x = n(629654),
   _ = n(53691),
   E = n(165583),
@@ -89,19 +89,22 @@ function V(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
-  }), $ = (0, h.Z)(J), ee = i.useRef(null);
-  (0, v.Z)(ee, B.Y_.TRY_IT_OUT);
+  }), $ = (0, h.Z)(J), {
+    preset: ee,
+    onShuffle: et
+  } = (0, N.Z)(), en = i.useRef(null);
+  (0, v.Z)(en, B.Y_.TRY_IT_OUT);
   let {
-    analyticsLocations: et,
-    sourceAnalyticsLocations: en
-  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), [er, ei] = i.useState(Math.floor(Math.random() * N.J2.length)), es = e => {
+    analyticsLocations: er,
+    sourceAnalyticsLocations: ei
+  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), es = e => {
     if (e) {
       if ((0, o.I5)(q), (0, C.z5)(K), (0, C.ho)(X), null != Q) {
         let e = m.Z.getProduct(Q.skuId);
         null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, o.cV)(Q)) : null != g.Z.getPurchase(Q.skuId) && (0, o.cV)(Q)
       }
       T.default.track(W.rMx.TRY_IT_OUT_PRESET_SELECTED, {
-        preset: N.J2[er].presetName
+        preset: ee
       })
     }
   };
@@ -111,9 +114,9 @@ function V(e) {
       location: {
         page: W.ZY5.USER_SETTINGS
       },
-      location_stack: en
+      location_stack: ei
     })
-  }, [en, V, G]);
+  }, [ei, V, G]);
   let ea = (null === (n = (0, b.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === L.Si.TIER_2,
     eo = (0, f.Ng)(),
     el = (0, f.Wp)(eo, L.Si.TIER_2),
@@ -125,9 +128,9 @@ function V(e) {
     location: ec + " auto off",
     autoTrackExposure: !1
   }), F) ? (0, r.jsx)(d.Gt, {
-    value: et,
+    value: er,
     children: (0, r.jsxs)(R.Z, {
-      ref: ee,
+      ref: en,
       className: U.tryItOutSection,
       type: R.Y.PREMIUM,
       isShown: !0,
@@ -143,8 +146,8 @@ function V(e) {
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(x.Z, {
-            selectedIndex: er,
-            setSelectedIndex: ei
+            preset: ee,
+            onShuffle: et
           }), (0, r.jsx)(k.Z, {
             user: V
           })]

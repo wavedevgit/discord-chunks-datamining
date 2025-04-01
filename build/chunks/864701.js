@@ -121,11 +121,11 @@ function Z(e) {
       t = g.current.filter(t => t.x !== e.x || t.y !== e.y),
       n = g.current.length - t.length;
     g.current = t, n > 0 && (p(), (0, a.KH)(d.yN.SNEK, o.getPoints(n)))
-  }, [p, o]), E = (0, s.useCallback)(() => {
+  }, [p, o]), S = (0, s.useCallback)(() => {
     var e;
     let t = null === (e = n.current) || void 0 === e ? void 0 : e.getContext("2d");
     null != t && (Z(), w(), t.clearRect(0, 0, 422.4, 278.4), _(t), P(t), C(t))
-  }, [w, _, C, P, Z]), S = (0, s.useCallback)(() => {
+  }, [w, _, C, P, Z]), E = (0, s.useCallback)(() => {
     if (g.current.length < 10 && .2 > Math.random()) {
       let e = function e(t) {
         let n = function() {
@@ -159,11 +159,11 @@ function Z(e) {
   }, []);
   return (0, l.Z)({
     isPaused: t,
-    onInterval: E,
+    onInterval: S,
     interval: 500
   }), (0, l.Z)({
     isPaused: t,
-    onInterval: S,
+    onInterval: E,
     interval: 1e3
   }), (0, r.jsx)("canvas", {
     ref: n,

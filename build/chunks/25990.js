@@ -159,13 +159,11 @@ function Y(e) {
 
 function K(e) {
   let {
-    preset: {
-      themeColors: t,
-      bannerImage: n,
-      avatarDecoration: r
-    }
+    banner: t,
+    themeColors: n,
+    avatarDecoration: r
   } = e;
-  _ = t, g = n, h = r
+  g = t, _ = n, h = r
 }
 
 function z() {

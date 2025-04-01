@@ -88,7 +88,7 @@ let x = {
         onSuccessCallback: () => {}
       })
     }, [n, j, w, y]);
-    let k = a.useCallback((e, t) => {
+    let Z = a.useCallback((e, t) => {
       (0, p.zZ)(b.rMx.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
         current_page: f.m_.SEARCH,
         application_id: e,
@@ -110,7 +110,7 @@ let x = {
             let n = e.data;
             return (0, r.jsx)(h.Z, {
               application: n,
-              onSelectApplication: e => k(e, t)
+              onSelectApplication: e => Z(e, t)
             }, n.id)
           }
           return null

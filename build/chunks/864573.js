@@ -42,7 +42,7 @@ function P(e) {
     width: i,
     height: P,
     windowKey: C
-  } = e, w = u.Mq[b.yN.BOUNCING_LOGO], E = (0, s.useRef)(null), S = (0, s.useRef)([]), I = (0, g.eR)(v), k = (0, s.useRef)([]), M = (0, a.e7)([d.Z], () => d.Z.getNumPurchasesForItemUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_MORE_LOGOS)) + 1, W = (0, a.e7)([d.Z], () => d.Z.hasPurchasedUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_CORNERS)), R = (0, a.e7)([d.Z], () => d.Z.getNumPurchasesForItemUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_SPEED)), A = (0, a.e7)([d.Z], () => d.Z.hasPurchasedUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_COLORS)), T = null !== (t = b.SZ[R]) && void 0 !== t ? t : b.SZ["0"], L = i / 1920 * T, B = P / 1080 * T, [D, F] = (0, p.Z)(b.yN.BOUNCING_LOGO), U = (0, s.useRef)(null !== (n = D.count) && void 0 !== n ? n : 0);
+  } = e, w = u.Mq[b.yN.BOUNCING_LOGO], S = (0, s.useRef)(null), E = (0, s.useRef)([]), I = (0, g.eR)(v), k = (0, s.useRef)([]), M = (0, a.e7)([d.Z], () => d.Z.getNumPurchasesForItemUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_MORE_LOGOS)) + 1, W = (0, a.e7)([d.Z], () => d.Z.hasPurchasedUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_CORNERS)), R = (0, a.e7)([d.Z], () => d.Z.getNumPurchasesForItemUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_SPEED)), A = (0, a.e7)([d.Z], () => d.Z.hasPurchasedUpgrade(b.yN.BOUNCING_LOGO, b.uv.BOUNCING_LOGO_COLORS)), T = null !== (t = b.SZ[R]) && void 0 !== t ? t : b.SZ["0"], L = i / 1920 * T, B = P / 1080 * T, [D, F] = (0, p.Z)(b.yN.BOUNCING_LOGO), U = (0, s.useRef)(null !== (n = D.count) && void 0 !== n ? n : 0);
   (0, s.useEffect)(() => {
     var e;
     U.current = null !== (e = D.count) && void 0 !== e ? e : 0
@@ -61,7 +61,7 @@ function P(e) {
     }, x.src = h
   }, []), (0, s.useEffect)(() => {
     if (!(i < 71) && !(P < 53))
-      for (let e = 0; e < M - S.current.length; e++) S.current.push({
+      for (let e = 0; e < M - E.current.length; e++) E.current.push({
         x: j(i - 71),
         y: j(P - 53),
         directionX: Z(),
@@ -69,12 +69,12 @@ function P(e) {
         color: A ? _() : 0
       })
   }, [A, P, M, i]), (0, s.useEffect)(() => {
-    S.current.forEach(e => {
+    E.current.forEach(e => {
       e.x = j(i - 71), e.y = j(P - 53)
     })
   }, [P, i]);
   let G = (0, s.useCallback)(e => {
-      S.current.forEach(t => {
+      E.current.forEach(t => {
         t.x += t.directionX * L * e, t.y += t.directionY * B * e;
         let n = t.x <= 0,
           r = t.x >= i - 71,
@@ -86,7 +86,7 @@ function P(e) {
       })
     }, [A, P, F, L, B, i]),
     K = (0, s.useCallback)(() => {
-      S.current.forEach(e => {
+      E.current.forEach(e => {
         let t = e.x <= 0 || e.x >= i - 71,
           n = e.y <= 0 || e.y >= P - 53;
         (t || n) && ((0, l.KH)(b.yN.BOUNCING_LOGO, w.getPoints(t && n, W, A)), I())
@@ -94,8 +94,8 @@ function P(e) {
     }, [i, P, w, W, A, I]),
     V = (0, s.useCallback)(() => {
       var e;
-      let t = null === (e = E.current) || void 0 === e ? void 0 : e.getContext("2d");
-      null != t && (t.clearRect(0, 0, i, P), S.current.forEach(e => {
+      let t = null === (e = S.current) || void 0 === e ? void 0 : e.getContext("2d");
+      null != t && (t.clearRect(0, 0, i, P), E.current.forEach(e => {
         let {
           x: n,
           y: r,
@@ -112,7 +112,7 @@ function P(e) {
     isPaused: o,
     windowKey: C
   }), (0, r.jsx)("canvas", {
-    ref: E,
+    ref: S,
     className: y.canvas,
     width: i,
     height: P

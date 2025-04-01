@@ -81,7 +81,7 @@ function j(e) {
       shownMutualGuilds: e,
       hiddenMutualGuilds: t
     }
-  }, [c, h]), w = R.length, k = function(e, t, n, r, a) {
+  }, [c, h]), w = R.length, Z = function(e, t, n, r, a) {
     if (0 === t && 0 === e) return null;
     if (t > 0 && 0 === n) return g.NW.formatToPlainString(g.t.pnzE1t, {
       mutualGuildCount: t
@@ -97,7 +97,7 @@ function j(e) {
       nonMutualGuildCount: l.format(n)
     })
   }(E, T, A, N, O);
-  return 0 === L.length && null == k ? null : (0, a.jsxs)("div", {
+  return 0 === L.length && null == Z ? null : (0, a.jsxs)("div", {
     className: o()(j, f.wrapper),
     children: [(0, a.jsx)("div", {
       className: o()(f.icons, I),
@@ -145,10 +145,10 @@ function j(e) {
         height: P,
         className: f.defaultIcon
       })
-    }), null != k ? (0, a.jsx)(d.Text, {
+    }), null != Z ? (0, a.jsx)(d.Text, {
       variant: y,
       color: "header-secondary",
-      children: k
+      children: Z
     }) : null]
   })
 }
