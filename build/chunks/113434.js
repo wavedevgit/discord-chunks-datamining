@@ -12,6 +12,7 @@ n.d(t, {
   J2: () => U,
   Jf: () => et,
   KX: () => ed,
+  KZ: () => eN,
   OH: () => ef,
   Qy: () => eT,
   Rf: () => ee,
@@ -33,8 +34,7 @@ n.d(t, {
   uA: () => en,
   vf: () => eI,
   z: () => J,
-  z6: () => el,
-  zP: () => eN
+  z6: () => el
 }), n(47120), n(230036), n(653041), n(266796), n(627341);
 var r = n(192379),
   i = n(512722),
@@ -702,8 +702,12 @@ function eT(e) {
 }
 
 function eN(e) {
-  return (0, d.e7)([T.Z], () => {
-    var t;
-    return null != e ? null === (t = T.Z.questToDeliverForPlacement.get(e)) || void 0 === t ? void 0 : t.decisionId : void 0
+  let t = (0, A.Zp)(e);
+  return (0, d.cj)([T.Z], () => {
+    let e = null != t ? T.Z.questToDeliverForPlacement.get(t) : void 0;
+    return {
+      decisionId: null == e ? void 0 : e.decisionId,
+      adIdentifiers: null == e ? void 0 : e.adIdentifiers
+    }
   })
 }

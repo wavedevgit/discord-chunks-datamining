@@ -46,7 +46,7 @@ function P(e) {
 }
 let C = n(874332),
   w = n(225334),
-  S = function(e) {
+  E = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
       n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
       r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
@@ -78,7 +78,7 @@ let C = n(874332),
       }
     }
   },
-  E = () => [Z.NW.string(j.Z.TXLQ3d), Z.NW.string(j.Z.TC42mZ), Z.NW.string(j.Z.h3tura), Z.NW.string(j.Z["sAbI/v"]), Z.NW.string(j.Z.NJ4o2t), Z.NW.string(j.Z.sUsj8f), Z.NW.string(j.Z.jMKjJC), Z.NW.string(j.Z.J6uWam)];
+  S = () => [Z.NW.string(j.Z.TXLQ3d), Z.NW.string(j.Z.TC42mZ), Z.NW.string(j.Z.h3tura), Z.NW.string(j.Z["sAbI/v"]), Z.NW.string(j.Z.NJ4o2t), Z.NW.string(j.Z.sUsj8f), Z.NW.string(j.Z.jMKjJC), Z.NW.string(j.Z.J6uWam)];
 
 function I(e) {
   let {
@@ -223,7 +223,7 @@ function M(e) {
   let U = (0, s.useCallback)(() => {
       var e, t, n;
       o && (c.push({
-        text: null !== (e = (0, a.sample)(E())) && void 0 !== e ? e : "",
+        text: null !== (e = (0, a.sample)(S())) && void 0 !== e ? e : "",
         variation: 50 * Math.random()
       }), d([...c]), .05 > Math.random() && F()), T((t = P({}, A), n = n = {
         [(0, l.Z)()]: R
@@ -292,7 +292,7 @@ function M(e) {
       var s, o, i, a;
       return (0, r.jsx)(I, {
         text: e.text,
-        position: P({}, S(e.variation, null === (s = n.current) || void 0 === s ? void 0 : s.offsetTop, null === (o = n.current) || void 0 === o ? void 0 : o.offsetLeft, null === (i = n.current) || void 0 === i ? void 0 : i.offsetWidth, null === (a = n.current) || void 0 === a ? void 0 : a.offsetHeight)[t % Object.keys(S(0)).length])
+        position: P({}, E(e.variation, null === (s = n.current) || void 0 === s ? void 0 : s.offsetTop, null === (o = n.current) || void 0 === o ? void 0 : o.offsetLeft, null === (i = n.current) || void 0 === i ? void 0 : i.offsetWidth, null === (a = n.current) || void 0 === a ? void 0 : a.offsetHeight)[t % Object.keys(E(0)).length])
       }, t)
     })]
   })

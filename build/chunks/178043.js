@@ -28,8 +28,8 @@ var r = n(200651),
   P = n(388032),
   C = n(896021),
   w = n(300090),
-  S = n(965084),
-  E = n(702536);
+  E = n(965084),
+  S = n(702536);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -343,18 +343,18 @@ function A(e) {
       className: C.imagery,
       children: [(0, r.jsx)("img", {
         className: C.windowImage,
-        src: E,
+        src: S,
         alt: ""
       }), (0, r.jsx)(M, {}), (0, r.jsx)("img", {
         className: C.windowImage,
-        src: E,
+        src: S,
         alt: ""
       })]
     }), (0, r.jsxs)("div", {
       className: C.footer,
       children: [(0, r.jsx)("img", {
         className: f ? C.arrowRightActive : void 0,
-        src: S,
+        src: E,
         alt: ""
       }), (0, r.jsx)(v.Z, {
         disabled: W || h,

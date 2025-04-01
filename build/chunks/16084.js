@@ -173,8 +173,9 @@ async function N(e, t, n) {
         let t = await (0, m.EH)(r.type);
         e.return_url = (0, i.K0)() + g.ANM.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(r.type, null != t ? t : "", "success")
       }
-      null != l && (e.expected_amount = l), null != u && (e.expected_currency = u), e.gift_info_options = v, null != S && (e.country_code = S), e.purchase_token = (0, p.d)()
+      e.gift_info_options = v, null != S && (e.country_code = S)
     }
+    null != l && (e.expected_amount = l), null != u && (e.expected_currency = u), e.purchase_token = (0, p.d)();
     let n = await i.tn.post({
       url: g.ANM.STORE_SKU_PURCHASE(t),
       body: e,

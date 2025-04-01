@@ -343,10 +343,12 @@ function G(e, t) {
 }
 
 function B(e, t) {
-  let n = L(t),
-    r = g.oCV[n],
-    i = e.filter(e => null != e.endsAt);
-  return r - (e.length - i.length)
+  var n;
+  if ((null === (n = u.Z.getGuild(t)) || void 0 === n ? void 0 : n.hasFeature(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === !0) return 0;
+  let r = L(t),
+    i = g.oCV[r],
+    o = e.filter(e => null != e.endsAt);
+  return i - (e.length - o.length)
 }
 let F = [{
   tier: g.Eu4.TIER_3,

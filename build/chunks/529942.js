@@ -26,7 +26,7 @@ function d(e) {
     maxSpeed: h,
     isPaused: v,
     children: x
-  } = e, [N, O] = (0, s.useState)(0), [j, Z] = (0, s.useState)(null !== (t = i().sample(u)) && void 0 !== t ? t : u[0]), _ = (0, s.useRef)(i().random(y, h)), P = (0, s.useRef)(i().random(f, p)), C = "right" === j ? -d : o + d, w = "right" === j ? o + d : -d, [S, E] = (0, l.q_F)(() => ({
+  } = e, [N, O] = (0, s.useState)(0), [j, Z] = (0, s.useState)(null !== (t = i().sample(u)) && void 0 !== t ? t : u[0]), _ = (0, s.useRef)(i().random(y, h)), P = (0, s.useRef)(i().random(f, p)), C = "right" === j ? -d : o + d, w = "right" === j ? o + d : -d, [E, S] = (0, l.q_F)(() => ({
     x: i().random(o),
     y: 0,
     rotateZ: 0
@@ -36,19 +36,19 @@ function d(e) {
     return (async () => {
       var t, n;
       let r = (w - C) / P.current,
-        s = Math.abs((S.x.get() - C) / r),
+        s = Math.abs((E.x.get() - C) / r),
         a = P.current - s;
       for (let n = 0; n < a && !e; n++) {
-        let e = S.x.get(),
-          n = S.y.get(),
+        let e = E.x.get(),
+          n = E.y.get(),
           s = (t = i().random(m, g), null != b && (n + t > b || n + t < -b) ? t < 0 ? -b : b : t),
-          o = S.x.get() + r,
+          o = E.x.get() + r,
           a = "right" === j ? Math.min(o, w) : Math.max(o, w),
           l = s - n,
           u = Math.abs(a - e),
           d = 180 / Math.PI * Math.atan2(l, u) * ("right" === j ? 1 : -1),
           f = Math.sqrt(u ** 2 + l ** 2) / _.current * 1e3;
-        await E({
+        await S({
           x: a,
           y: s,
           rotateZ: d,
@@ -62,7 +62,7 @@ function d(e) {
         P.current = i().random(f, p), _.current = i().random(y, h);
         let e = null !== (n = i().sample(u)) && void 0 !== n ? n : u[0],
           t = "right" === e ? -d : o + d;
-        await E({
+        await S({
           x: t,
           y: 0,
           rotateZ: 0,
@@ -73,12 +73,12 @@ function d(e) {
     })(), () => {
       e = !0
     }
-  }, [S.x, S.y, j, w, d, N, h, p, b, g, y, f, m, E, _, C, o]), (0, s.useEffect)(() => {
+  }, [E.x, E.y, j, w, d, N, h, p, b, g, y, f, m, S, _, C, o]), (0, s.useEffect)(() => {
     try {
-      v ? (S.x.pause(), S.y.pause(), S.rotateZ.pause()) : (S.x.resume(), S.y.resume(), S.rotateZ.resume())
+      v ? (E.x.pause(), E.y.pause(), E.rotateZ.pause()) : (E.x.resume(), E.y.resume(), E.rotateZ.resume())
     } catch (e) {}
-  }, [S.rotateZ, S.x, S.y, v]), (0, r.jsx)(a.animated.div, {
-    style: S,
+  }, [E.rotateZ, E.x, E.y, v]), (0, r.jsx)(a.animated.div, {
+    style: E,
     className: n,
     children: x(j)
   })

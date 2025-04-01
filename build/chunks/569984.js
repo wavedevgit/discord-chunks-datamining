@@ -346,11 +346,13 @@ function ev(e) {
   let {
     decisionId: t,
     quest: n,
-    placement: r
+    placement: r,
+    adIdentifiers: i
   } = e;
   null == n ? b.delete(r) : b.set(r, {
     decisionId: t,
-    quest: n
+    quest: n,
+    adIdentifiers: i
   })
 }
 

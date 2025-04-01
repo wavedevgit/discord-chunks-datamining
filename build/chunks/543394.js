@@ -57,7 +57,7 @@ function P(e) {
     windowKey: b
   } = e, y = c.Mq[f.yN.RAIN];
   (0, u.is)(N, m);
-  let [h, v] = (0, s.useState)(null), [x, P] = (0, s.useState)(null), C = (0, o.uR)(h, x), w = (0, i.e7)([a.Z], () => a.Z.getWindow(b)), S = (0, s.useCallback)(() => {
+  let [h, v] = (0, s.useState)(null), [x, P] = (0, s.useState)(null), C = (0, o.uR)(h, x), w = (0, i.e7)([a.Z], () => a.Z.getWindow(b)), E = (0, s.useCallback)(() => {
     var e, t;
     C.createConfetti((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -100,7 +100,7 @@ function P(e) {
     }), e))
   }, [C, g]);
   return (0, l.Z)({
-    onInterval: S,
+    onInterval: E,
     interval: 1e3 / 60,
     isPaused: m || !C.isReady
   }), (0, r.jsxs)(r.Fragment, {

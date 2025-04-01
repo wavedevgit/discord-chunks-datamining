@@ -451,7 +451,7 @@ let et = o.memo(function(e) {
         })
       }
 
-      function ee() {
+      function ee(e) {
         return (0, N.Z)(f.author.id, null != _.guildMemberAvatar && null != i ? M.ZP.getGuildMemberAvatarURLSimple({
           guildId: i,
           userId: f.author.id,
@@ -459,7 +459,8 @@ let et = o.memo(function(e) {
           size: 80
         }) : f.author.getAvatarURL(void 0, 80, !1), {
           guildId: i,
-          channelId: f.channel_id
+          channelId: f.channel_id,
+          abortSignal: e
         })
       }
     }({

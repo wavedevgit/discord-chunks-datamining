@@ -111,16 +111,17 @@ function E(e) {
       children: (C ? "@" : "") + U
     };
 
-  function Y() {
-    let e = null != R ? R : l.author;
-    return (0, v.Z)(e.id, null != r.guildMemberAvatar && null != B ? (0, h.JM)({
+  function Y(e) {
+    let t = null != R ? R : l.author;
+    return (0, v.Z)(t.id, null != r.guildMemberAvatar && null != B ? (0, h.JM)({
       guildId: B,
-      userId: e.id,
+      userId: t.id,
       avatar: r.guildMemberAvatar,
       size: 80
-    }) : e.getAvatarURL(B, 80), {
+    }) : t.getAvatarURL(B, 80), {
       guildId: B,
-      channelId: l.channel_id
+      channelId: l.channel_id,
+      abortSignal: e
     })
   }
   let $ = i.useMemo(() => E ? (0, o.jsx)(b.ZP, {

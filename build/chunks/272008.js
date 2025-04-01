@@ -405,14 +405,15 @@ async function j(e) {
   try {
     let t = await (0, l.G)(),
       n = await (0, s.Gy)(),
-      r = await i.tn.get({
+      r = (await i.tn.get({
         url: E.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == t ? void 0 : t.uuid, n.uuid),
         rejectWithError: !1
-      });
+      })).body;
     o.Z.dispatch({
       type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS",
-      decisionId: r.body.request_id,
-      quest: (0, p.q6)(r.body.quest),
+      decisionId: r.request_id,
+      quest: (0, p.q6)(r.quest),
+      adIdentifiers: (0, p.Sf)(r.ad_identifiers),
       placement: e
     })
   } catch (t) {

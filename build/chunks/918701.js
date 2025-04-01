@@ -29,6 +29,7 @@ n.d(t, {
   PM: () => el,
   Qe: () => G,
   Rs: () => es,
+  Sf: () => tm,
   U3: () => X,
   V$: () => e8,
   Vl: () => ez,
@@ -914,4 +915,15 @@ function tp(e, t) {
 function th(e) {
   var t, n, r, i;
   return null !== (i = null !== (r = null === (t = e.videoMetadata) || void 0 === t ? void 0 : t.messages.videoEndCtaButtonLabel) && void 0 !== r ? r : null === (n = e.videoMetadata) || void 0 === n ? void 0 : n.messages.videoEndCtaTitle) && void 0 !== i ? i : D.NW.string(D.t.iiTtpK)
+}
+
+function tm(e) {
+  return null != e ? {
+    campaignId: e.campaign_id,
+    adsetId: e.adset_id,
+    adId: e.ad_id,
+    creativeId: e.creative_id,
+    creativeType: e.creative_type,
+    questId: e.quest_id
+  } : void 0
 }

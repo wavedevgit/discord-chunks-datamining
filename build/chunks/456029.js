@@ -49,20 +49,20 @@ function _(e) {
     height: _,
     width: P,
     isPaused: C
-  } = e, [w, S] = (0, s.useState)({}), E = (0, s.useRef)(), I = (0, i.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, W] = (0, u.Z)(b.yN.WEEDS), R = null !== (t = M.count) && void 0 !== t ? t : 0;
+  } = e, [w, E] = (0, s.useState)({}), S = (0, s.useRef)(), I = (0, i.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, W] = (0, u.Z)(b.yN.WEEDS), R = null !== (t = M.count) && void 0 !== t ? t : 0;
   (0, d.Z)(Z, R);
   let A = (0, p.eR)(j),
     T = e => {
       var t;
-      null === (t = E.current) || void 0 === t || t.removeDrop(e), A(), W({
+      null === (t = S.current) || void 0 === t || t.removeDrop(e), A(), W({
         count: R + 1
       })
     },
     L = e => {
-      delete w[e], S(O({}, w))
+      delete w[e], E(O({}, w))
     };
   return I ? null : (0, r.jsx)(g.Z, {
-    ref: E,
+    ref: S,
     isPaused: C,
     itemId: b.yN.WEEDS,
     chance: .2,
@@ -72,7 +72,7 @@ function _(e) {
     dropPadding: 60,
     onPointsAdded: () => {
       var e, t, n;
-      S((t = O({}, w), n = n = {
+      E((t = O({}, w), n = n = {
         [(0, o.Z)()]: null !== (e = k.points) && void 0 !== e ? e : 0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

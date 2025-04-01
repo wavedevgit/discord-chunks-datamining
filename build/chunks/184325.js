@@ -89,18 +89,18 @@ function k(e) {
     className: o()(D.container, i),
     "aria-label": w.NW.string(w.t.VWV0y8),
     role: "group",
-    children: n.map(e => {
-      var t;
-      let n = e.id === m.l.ORB_PROFILE_BADGE,
-        i = (0, y.fv)(e.id),
-        c = null != i || e.id === P.a,
-        E = t => {
+    children: n.map((e, t) => {
+      var n;
+      let i = e.id === m.l.ORB_PROFILE_BADGE,
+        c = (0, y.fv)(e.id),
+        E = null != c || e.id === P.a,
+        v = t => {
           if (G({
               action: "PRESS_BADGE"
             }), (0, I.NE)(x({
               badge: e.id,
               analyticsLocations: j
-            }, U)), n) {
+            }, U)), i) {
             (0, u.mK)({
               openInLayer: !1,
               tab: C.AW.ORBS,
@@ -109,7 +109,7 @@ function k(e) {
             });
             return
           }
-          if (c) {
+          if (E) {
             if (t.preventDefault(), b.default.track(A.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
                 premium_type: F,
@@ -133,12 +133,12 @@ function k(e) {
               displayProfile: g
             }), void(null == L || L())
           }
-          let r = null != e.link ? (0, s.default)(e.link, {
+          let n = null != e.link ? (0, s.default)(e.link, {
             analyticsLocations: j
           }) : null;
-          if (null != r) return null == L || L(), r(t)
+          if (null != n) return null == L || L(), n(t)
         },
-        v = () => {
+        O = () => {
           e.id === S.i && b.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, _.mH)(p.jn.QUEST_BADGE))), G({
             action: "HOVER_BADGE"
           }), (0, I.Qf)(x({
@@ -146,28 +146,28 @@ function k(e) {
             analyticsLocations: j
           }, U))
         },
-        O = M({
+        T = M({
           badge: e,
-          tieredTenureBadge: c && e.id !== P.a ? i : void 0,
+          tieredTenureBadge: E && e.id !== P.a ? c : void 0,
           currentUserOwnsOrbBadge: Z
         });
       return (0, r.jsx)(a.DY3, {
-        text: O,
+        text: T,
         "aria-label": e.description,
         forceOpen: null != k && k(e.id),
         delay: N.vB,
         children: (0, r.jsx)(a.eee, {
-          onClick: E,
-          onMouseEnter: v,
+          onClick: v,
+          onMouseEnter: O,
           href: e.link,
           children: (0, r.jsx)("img", {
             alt: " ",
             "aria-hidden": !0,
-            src: null !== (t = e.iconSrc) && void 0 !== t ? t : (0, N.Ej)(e.icon),
+            src: null !== (n = e.iconSrc) && void 0 !== n ? n : (0, N.Ej)(e.icon),
             className: o()(D.badge, d)
           })
         })
-      }, e.id)
+      }, "".concat(e.id, "-").concat(t))
     })
   })
 }

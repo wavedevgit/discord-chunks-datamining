@@ -101,9 +101,9 @@ function P() {
       return t >= j(n) ? e(t, n + 1) : n
     }(P, 1),
     w = j(C - 1),
-    S = j(C),
-    E = P - w,
-    I = S - w,
+    E = j(C),
+    S = P - w,
+    I = E - w,
     k = c + 1,
     M = Math.floor(.1 * (j(k) - j(k - 1))),
     W = (0, g.eR)(N);
@@ -132,7 +132,7 @@ function P() {
         variant: "text-sm/medium",
         color: "clicker-game-brand",
         children: v.NW.format(h.Z.Rfy3Cg, {
-          currentExperience: Math.floor(E),
+          currentExperience: Math.floor(S),
           requiredExperience: I,
           experienceHook: (e, t) => (0, r.jsx)("span", {
             className: x.monospace,
@@ -142,7 +142,7 @@ function P() {
         })
       })]
     }), (0, r.jsx)(_, {
-      percent: E / I * 100
+      percent: S / I * 100
     }), k < C ? (0, r.jsx)(m.Z, {
       className: x.claimButton,
       onClick: R,
