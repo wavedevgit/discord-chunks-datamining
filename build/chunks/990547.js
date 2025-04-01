@@ -79,8 +79,8 @@ function S(e, t) {
   }), e
 }
 let T = "deviceProperties",
-  A = "referralProperties",
-  N = {},
+  N = "referralProperties",
+  A = {},
   C = {},
   R = window.DiscordNative;
 if (null != R) {
@@ -236,10 +236,10 @@ function V(e, t) {
 function Z() {
   let e = p.K.get(T);
   null == e && (e = G(), p.K.set(T, e));
-  let t = p.K.get(A);
-  null == t && (t = F(), p.K.set(A, t));
-  let n = h.x.get(A);
-  return null == n && (n = V(F(), "_current"), h.x.set(A, n)), O({}, e, B(), t, n)
+  let t = p.K.get(N);
+  null == t && (t = F(), p.K.set(N, t));
+  let n = h.x.get(N);
+  return null == n && (n = V(F(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
 }
 
 function H() {
@@ -254,14 +254,14 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "384581", "384581"), 10);
+  let o = parseInt((n = "384606", "384606"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r
 }
 
 function Y(e) {
-  return null != N[e] && N[e] > Date.now()
+  return null != A[e] && A[e] > Date.now()
 }
 if (null == r) try {
   r = Z()
@@ -297,7 +297,7 @@ let z = e => {
           if (s()(e, a)) return Promise.resolve();
           C[t] = a
         }
-        N[t] = Date.now() + l.throttlePeriod
+        A[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
         if (Math.random() > l.throttlePercent) return Promise.resolve()
       } else c()(!1, "Unsupported analytics event config: ".concat(l))

@@ -22,8 +22,8 @@ var r = n(200651),
   h = n(626135),
   j = n(102172),
   S = n(687516),
-  N = n(718805),
-  P = n(871118),
+  P = n(718805),
+  N = n(871118),
   x = n(981631),
   I = n(388032),
   Z = n(492978);
@@ -53,7 +53,7 @@ class E extends l.PureComponent {
     return (0, r.jsxs)(s.P3F, {
       onClick: t,
       className: Z.previewContainer,
-      children: [(0, r.jsx)(P.Z, {
+      children: [(0, r.jsx)(N.Z, {
         className: Z.previewImage,
         stream: e
       }), i ? (0, r.jsx)("div", {
@@ -62,7 +62,7 @@ class E extends l.PureComponent {
           variant: "text-sm/normal",
           color: "none",
           className: Z.white,
-          children: (0, N.Z)(e, n, l, o)
+          children: (0, P.Z)(e, n, l, o)
         })
       }) : null]
     })
@@ -138,7 +138,7 @@ function w(e) {
       }
       return l
     }(e, ["user", "channel"]);
-  let [c, d] = (0, a.Wu)([v.Z, b.Z, y.Z, f.Z], () => (0, j.p9)(o, v.Z, b.Z, y.Z, f.Z)), p = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), h = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(p)), N = (0, a.e7)([g.default], () => g.default.getId()), P = (0, S.Cf)(p), x = (0, a.e7)([O.Z], () => (0, S.Um)(p, O.Z)), I = l.useMemo(() => ({
+  let [c, d] = (0, a.Wu)([v.Z, b.Z, y.Z, f.Z], () => (0, j.p9)(o, v.Z, b.Z, y.Z, f.Z)), p = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), h = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(p)), P = (0, a.e7)([g.default], () => g.default.getId()), N = (0, S.Cf)(p), x = (0, a.e7)([O.Z], () => (0, S.Um)(p, O.Z)), I = l.useMemo(() => ({
     [o.guild_id]: [i.id]
   }), [o.guild_id, i.id]);
   return (0, u.$)(I), (0, r.jsx)(E, (t = function(e) {
@@ -162,10 +162,10 @@ function w(e) {
     canWatch: c,
     unavailableReason: d,
     user: i,
-    streamApplication: P,
+    streamApplication: N,
     stream: p,
     activeStream: h,
-    currentUserId: N,
+    currentUserId: P,
     activity: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

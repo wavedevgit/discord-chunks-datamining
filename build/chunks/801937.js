@@ -61,8 +61,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = new _.Z("ChoosePaymentSourceType"),
-  N = {
+let N = new _.Z("ChoosePaymentSourceType"),
+  A = {
     [E.HeQ.CARD]: p.ZP.Types.UNKNOWN,
     [E.HeQ.PAYPAL]: p.ZP.Types.PAYPAL,
     [E.HeQ.SOFORT]: p.ZP.Types.SOFORT,
@@ -137,7 +137,7 @@ class M extends i.PureComponent {
     var e;
     let t = null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : [];
     if (0 === t.length || !this.arePaymentRequestWalletsLoading()) return;
-    A.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(L, " ms"));
+    N.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(L, " ms"));
     let n = t.reduce((e, t) => T(I({}, e), {
       ["".concat(t, "Loaded")]: !0
     }), {});
@@ -163,7 +163,7 @@ class M extends i.PureComponent {
   createPaymentButtons(e) {
     return e.map(e => {
       var t;
-      let n = N[e],
+      let n = A[e],
         i = h.Wo[e](),
         o = null === (t = this.props.localizedPromo) || void 0 === t ? void 0 : t.paymentSourceTypes.includes(e);
       return (0, r.jsx)(l.zxk, {

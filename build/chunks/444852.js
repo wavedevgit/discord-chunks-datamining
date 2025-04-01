@@ -27,8 +27,8 @@ var r = n(392711),
   I = n(756315),
   S = n(569545),
   T = n(297733),
-  A = n(981631),
-  N = n(65154);
+  N = n(981631),
+  A = n(65154);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -184,7 +184,7 @@ class k extends s.Z {
           state: e
         }, t, n), {
           streamKey: this._streamKey
-        }))), e === A.hes.RTC_CONNECTED) {
+        }))), e === N.hes.RTC_CONNECTED) {
         var r;
         null === (r = this._connection) || void 0 === r || r.on(o.Sh.ScreenshareFinish, (e, t, n, r, i, o, a, s, l, c, u, d, p, h, m, g) => {
           let E = this.getMediaSessionId(),
@@ -217,7 +217,7 @@ class k extends s.Z {
                 exe: x,
                 distributor: M
               } = (0, f.G8)(w);
-            y.default.track(A.rMx.SCREENSHARE_FINISHED, R({
+            y.default.track(N.rMx.SCREENSHARE_FINISHED, R({
               screenshare_frames: e,
               videohook_frames: t,
               hybrid_dxgi_frames: n,
@@ -234,7 +234,7 @@ class k extends s.Z {
               desktop_capturer_type: u,
               media_session_id: E,
               rtc_connection_id: b,
-              context: N.Yn.STREAM,
+              context: A.Yn.STREAM,
               screens: d,
               windows: p,
               activity: h,
@@ -299,7 +299,7 @@ class k extends s.Z {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       sender_user_id: i,
-      context: N.Yn.STREAM,
+      context: A.Yn.STREAM,
       guild_id: o,
       stream_region: e,
       stream_source_type: n,
@@ -317,7 +317,7 @@ class k extends s.Z {
   }
   _trackVideoStartStats() {
     let e = this.isOwner ? (0, T.Z)() : null;
-    y.default.track(A.rMx.VIDEO_STREAM_STARTED, w(R({}, this._getStreamAnalyticsProperties(), e), {
+    y.default.track(N.rMx.VIDEO_STREAM_STARTED, w(R({}, this._getStreamAnalyticsProperties(), e), {
       connection_type: g.Z.getType(),
       effective_connection_speed: g.Z.getEffectiveConnectionSpeed(),
       service_provider: g.Z.getServiceProvider(),
@@ -347,7 +347,7 @@ class k extends s.Z {
       } : {};
     a.getOutboundStats().forEach(t => {
       var r;
-      (null !== (r = t.num_frames) && void 0 !== r ? r : 0) > 0 && y.default.track(A.rMx.VIDEO_STREAM_ENDED, w(R({}, o, i, s, this._videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
+      (null !== (r = t.num_frames) && void 0 !== r ? r : 0) > 0 && y.default.track(N.rMx.VIDEO_STREAM_ENDED, w(R({}, o, i, s, this._videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
         app_hardware_acceleration_enabled: O.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -359,7 +359,7 @@ class k extends s.Z {
     }), a.getInboundParticipants().forEach(t => {
       var r;
       let l = a.getInboundStats(t);
-      (null !== (r = null == l ? void 0 : l.num_frames) && void 0 !== r ? r : 0) > 0 && y.default.track(A.rMx.VIDEO_STREAM_ENDED, w(R({}, o, i, s, this._videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
+      (null !== (r = null == l ? void 0 : l.num_frames) && void 0 !== r ? r : 0) > 0 && y.default.track(N.rMx.VIDEO_STREAM_ENDED, w(R({}, o, i, s, this._videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
         app_hardware_acceleration_enabled: O.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -394,7 +394,7 @@ class k extends s.Z {
       sessionId: e,
       guildId: u,
       channelId: d,
-      context: N.Yn.STREAM,
+      context: A.Yn.STREAM,
       rtcServerId: n,
       parentMediaSessionId: l
     }), C(this, "analyticsContext", void 0), C(this, "_videoStreamStats", void 0), C(this, "_streamContext", void 0), C(this, "_streamKey", void 0), C(this, "_isStreamer", void 0), C(this, "_updateVideoStreamId", void 0), C(this, "_bandwidthSamples", []), C(this, "_goliveCurrentMaxResolution", void 0), this._streamContext = c, this._streamKey = t, this._isStreamer = s, this._videoStreamStats = new I.Z(r, this.isOwner), this.analyticsContext = o, this._updateVideoStreamId = i().debounce((e, t) => {
@@ -410,7 +410,7 @@ class k extends s.Z {
         userId: i,
         streamId: e,
         rtcServerId: t,
-        context: N.Yn.STREAM
+        context: A.Yn.STREAM
       }))
     }, 200), this._videoStreamStats.start(), this._initializeEvents()
   }

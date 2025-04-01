@@ -7,9 +7,9 @@ var r = n(200651),
   i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(655464);
-let o = () => (0, r.jsx)("hr", {
-    className: l.sectionDivider
+  o = n(655464);
+let l = () => (0, r.jsx)("hr", {
+    className: o.sectionDivider
   }),
   c = e => {
     let {
@@ -19,13 +19,13 @@ let o = () => (0, r.jsx)("hr", {
       className: c
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o, {}), (0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l, {}), (0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
-        className: l.labelSpacing,
+        className: o.labelSpacing,
         children: t
       }), (0, r.jsx)("div", {
-        className: s()(l.container, c, {
-          [l.verticalContainer]: "vertical" === i
+        className: s()(o.container, c, {
+          [o.verticalContainer]: "vertical" === i
         }),
         children: n
       })]
@@ -36,7 +36,7 @@ let o = () => (0, r.jsx)("hr", {
       children: t
     } = e;
     return (0, r.jsx)("div", {
-      className: l.section,
+      className: o.section,
       children: t
     })
   }

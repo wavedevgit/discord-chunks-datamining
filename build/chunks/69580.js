@@ -31,8 +31,8 @@ var r = n(200651),
   I = n(434650),
   S = n(367907),
   T = n(702493),
-  A = n(424602),
-  N = n(728345),
+  N = n(424602),
+  A = n(728345),
   C = n(979200),
   R = n(388905),
   P = n(560067),
@@ -224,7 +224,7 @@ function em(e) {
 
 function eg(e) {
   var t, n, o, a, l;
-  let m, g, T, A, R, P, {
+  let m, g, T, N, R, P, {
       clientId: D,
       responseType: j,
       redirectUri: ee,
@@ -244,8 +244,8 @@ function eg(e) {
       cancelCompletesFlow: eI = !0,
       isTrustedName: eS = !1,
       isEmbeddedFlow: eT = !1,
-      callback: eA,
-      callbackWithoutPost: eN,
+      callback: eN,
+      callbackWithoutPost: eA,
       onClose: eC,
       disclosures: eR,
       isExternalStandaloneOAuthPage: eP = !1
@@ -261,7 +261,7 @@ function eg(e) {
     return null == ew && null == ev && (null !== (e = null == em ? void 0 : em.length) && void 0 !== e ? e : 0) === 0 && null == ee
   }, [ew, null == em ? void 0 : em.length, ee, ev]), [e2, e3] = i.useState(null);
   i.useEffect(() => {
-    e1 && N.ZP.fetchApplication(D).then(e => e3(x.ZP.createFromServer(e)))
+    e1 && A.ZP.fetchApplication(D).then(e => e3(x.ZP.createFromServer(e)))
   }, [D, e1]);
   let e4 = i.useMemo(() => {
       var e, t;
@@ -320,12 +320,12 @@ function eg(e) {
     }
   }, [D, eD, eR, te, eG, tn, ej]);
   let tr = i.useCallback(async e => {
-      if (null != eN) {
-        eF(!0), eN(e);
+      if (null != eA) {
+        eF(!0), eA(e);
         return
       }
       if (!e && !eI) {
-        null != eA && (eA({
+        null != eN && (eN({
           application: null == ex ? void 0 : ex.application,
           guild: eJ
         }), null == eC || eC());
@@ -354,7 +354,7 @@ function eg(e) {
         });
         if (e && (await (0, C.x9)(D, e9), setTimeout(() => {
             y.Z.fetch()
-          }, 100)), null != eA) eA({
+          }, 100)), null != eN) eN({
           application: null == ex ? void 0 : ex.application,
           location: n.location,
           guild: eJ
@@ -373,7 +373,7 @@ function eg(e) {
         let e = t.body;
         (null == e ? void 0 : e.message) != null && "" !== e.message ? eG(Error(e.message)) : eG(e), ej("AUTHORIZE_SCOPES"), eF(!1)
       }
-    }, [eN, eI, eA, null == ex ? void 0 : ex.application, eJ, eC, D, e6, j, ee, eo, el, eu, ef, e7, eq, eW, e$, eK, e9]),
+    }, [eA, eI, eN, null == ex ? void 0 : ex.application, eJ, eC, D, e6, j, ee, eo, el, eu, ef, e7, eq, eW, e$, eK, e9]),
     ti = i.useRef(!1),
     to = i.useCallback(async () => {
       if (!k.default.isAuthenticated()) {
@@ -573,7 +573,7 @@ function eg(e) {
   }
   if (tp && null != ex) {
     let e = null === (a = ex.bot) || void 0 === a ? void 0 : a.approximate_guild_count;
-    A = (0, r.jsxs)(r.Fragment, {
+    N = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(K.Z, {
         application: ex.application,
         scopes: e6,
@@ -613,7 +613,7 @@ function eg(e) {
       children: (0, r.jsx)(h.zx, {
         onClick: null != T ? () => ej(T) : () => tr(!0),
         submitting: eB,
-        disabled: null == A || t_,
+        disabled: null == N || t_,
         children: t_ ? ea.NW.string(ea.t.BwwiSE) : null != T ? ea.NW.string(ea.t["3PatS0"]) : ea.NW.string(ea.t["y+/PEx"])
       })
     }) : (0, r.jsx)("div", {
@@ -641,7 +641,7 @@ function eg(e) {
     body: m,
     footer: P,
     nextStep: T,
-    appDetails: A,
+    appDetails: N,
     sendAuthorize: tr,
     hasContentBackground: tf,
     minimalPadding: tg
@@ -657,7 +657,7 @@ function eE(e, t) {
     searchParams: s
   } = null !== (n = B.Z.toURLSafe(t.location)) && void 0 !== n ? n : {}, l = B.Z.isDiscordHostname(null != o ? o : null) || window.location.host === o;
   if (l && a === ei.Z5c.OAUTH2_AUTHORIZED) {
-    let e = A._f.getCurrentConfig({
+    let e = N._f.getCurrentConfig({
         location: "inAppOAuth2ModalCallback"
       }, {
         autoTrackExposure: !1

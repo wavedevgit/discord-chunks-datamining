@@ -44,12 +44,12 @@ function T(e) {
     userId: r
   } = e, o = l.default.getId(), a = d.Z.getEnabled();
   if (null != t) {
-    if (a && (0, f.Z)(t.name)) return N(t.name, r, n);
+    if (a && (0, f.Z)(t.name)) return A(t.name, r, n);
     r === o && (y = [...y, t.name].slice(-1 * E), i().isEqual(y, g) ? (I.play(), v.stop(), y = [], (0, u.ME)(!a)) : v.start(p, () => y = []))
   }
 }
 
-function A(e) {
+function N(e) {
   let {
     completingUserId: t,
     waitingUserId: n,
@@ -60,7 +60,7 @@ function A(e) {
   }), O[i].delay()
 }
 
-function N(e, t, n) {
+function A(e, t, n) {
   var r;
   let i = b(t, n);
   if (null != d.Z.getWaitingHighFive(n, t)) return;
@@ -84,7 +84,7 @@ class C extends a.Z {
   constructor(...e) {
     super(...e), _(this, "actions", {
       VOICE_CHANNEL_EFFECT_SEND: T,
-      HIGH_FIVE_COMPLETE: A
+      HIGH_FIVE_COMPLETE: N
     })
   }
 }

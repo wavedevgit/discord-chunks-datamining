@@ -1,6 +1,8 @@
-/** Chunk was on 61323 **/
+/** Chunk was on 13323 **/
 e.exports = {
-  header: "header_d42a20",
-  content: "content_d42a20",
-  footer: "footer_d42a20"
+  button: "button_f42dca",
+  buttonEnabled: "buttonEnabled_f42dca button_f42dca",
+  buttonDisabled: "buttonDisabled_f42dca button_f42dca",
+  borderWhite: "borderWhite_f42dca",
+  borderGreen: "borderGreen_f42dca"
 }

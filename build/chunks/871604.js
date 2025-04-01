@@ -35,7 +35,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function A(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ function R(e) {
   var {
     user: t,
     closePopout: n
-  } = e, T = N(e, ["user", "closePopout"]);
+  } = e, T = A(e, ["user", "closePopout"]);
   let C = (0, o.e7)([v.Z], () => {
       var e;
       return null === (e = v.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
@@ -102,7 +102,7 @@ function R(e) {
           }), (0, a.Mr3)((0, y.z)(x, w)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: C.id
           })
-        } else(0, b.L)(A({
+        } else(0, b.L)(N({
           applicationId: C.id
         }, C))
       }
@@ -134,8 +134,8 @@ function R(e) {
     children: e => {
       var {
         onClick: t
-      } = e, n = N(e, ["onClick"]);
-      return (0, r.jsx)(O.tG, A({
+      } = e, n = A(e, ["onClick"]);
+      return (0, r.jsx)(O.tG, N({
         action: "PRESS_ADD_APP",
         text: k,
         icon: G,
@@ -143,7 +143,7 @@ function R(e) {
         onClick: M
       }, n, T))
     }
-  }) : (0, r.jsx)(O.tG, A({
+  }) : (0, r.jsx)(O.tG, N({
     action: "PRESS_ADD_APP",
     text: k,
     icon: G,

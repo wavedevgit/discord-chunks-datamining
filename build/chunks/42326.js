@@ -1,43 +1,43 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => c
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
-  o = n(481060),
-  a = n(618158),
+var l = n(120356),
+  i = n.n(l),
+  a = n(481060),
+  o = n(618158),
   s = n(297638);
 
-function c(e) {
+function u(e) {
   let {
     errorMessage: t,
     className: n,
-    errorDetailMessage: i
-  } = e, c = "";
-  return null != t && null != i ? c = "".concat(t, " ").concat(i) : null != t && (c = t), (0, r.jsx)(o.DY3, {
-    className: l()(n, s.root),
+    errorDetailMessage: l
+  } = e, u = "";
+  return null != t && null != l ? u = "".concat(t, " ").concat(l) : null != t && (u = t), (0, r.jsx)(a.DY3, {
+    className: i()(n, s.root),
     text: (0, r.jsxs)("div", {
-      children: [t, null != i && (0, r.jsx)(o.Text, {
+      children: [t, null != l && (0, r.jsx)(a.Text, {
         variant: "text-sm/semibold",
         color: "text-muted",
         style: {
           marginTop: "10px"
         },
-        children: i
+        children: l
       })]
     }),
     position: "bottom",
-    color: o.FGA.GREY,
-    "aria-label": c,
-    children: (0, r.jsx)(a.Z, {
-      children: (0, r.jsx)(o.P4T, {
+    color: a.FGA.GREY,
+    "aria-label": u,
+    children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(a.P4T, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor",
-        "aria-label": c,
+        "aria-label": u,
         className: s.warningIcon
       })
     })

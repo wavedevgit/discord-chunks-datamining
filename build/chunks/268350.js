@@ -6,11 +6,11 @@ n.d(t, {
   Il: () => T,
   Jf: () => R,
   SA: () => L,
-  Um: () => N,
+  Um: () => A,
   eu: () => P,
   hW: () => x,
   lY: () => C,
-  pk: () => A,
+  pk: () => N,
   qB: () => w
 }), n(653041);
 var r = n(392711),
@@ -117,7 +117,7 @@ let I = async (e, t) => {
     type: "STICKER_FETCH_SUCCESS",
     sticker: t
   })
-}, A = async e => {
+}, N = async e => {
   let {
     body: t
   } = await o.tn.get({
@@ -131,7 +131,7 @@ let I = async (e, t) => {
       user: new d.Z(e.user)
     }) : e)
   })
-}, N = async e => {
+}, A = async e => {
   await o.tn.del({
     url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: !1

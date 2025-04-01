@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(752305),
   S = n(30465),
   T = n(140963),
-  A = n(4484),
-  N = n(925994),
+  N = n(4484),
+  A = n(925994),
   C = n(981631),
   R = n(388032),
   P = n(998735);
@@ -91,7 +91,7 @@ class j extends i.Component {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
       var t, n;
       let e;
-      e = this.props.useSlate ? this.props.textValue : (0, N.sk)(this.props.richValue, {
+      e = this.props.useSlate ? this.props.textValue : (0, A.sk)(this.props.richValue, {
         mode: "plain"
       }), null === (t = (n = this.props).onChange) || void 0 === t || t.call(n, null, e, (0, I.JM)(e))
     } else this.props.textValue !== e.textValue && this.saveCurrentTextThrottled()
@@ -210,7 +210,7 @@ class j extends i.Component {
       useSlate: b,
       spellcheckEnabled: y,
       useNewSlashCommands: S,
-      canOnlyUseTextCommands: N,
+      canOnlyUseTextCommands: A,
       className: R,
       id: w,
       required: L,
@@ -267,13 +267,13 @@ class j extends i.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, H = b ? (0, r.jsx)(A.Z, x(D({
+    }, H = b ? (0, r.jsx)(N.Z, x(D({
       ref: this.ref
     }, Z), {
       type: g,
       value: u ? (0, I.JM)("") : c,
       canUseCommands: null === (t = g.commands) || void 0 === t ? void 0 : t.enabled,
-      canOnlyUseTextCommands: N
+      canOnlyUseTextCommands: A
     })) : (0, r.jsx)(T.Z, x(D({
       ref: this.ref
     }, Z), {

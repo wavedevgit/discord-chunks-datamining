@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(533307),
-  o = n(600164),
+  o = n(533307),
+  l = n(600164),
   c = n(930114),
   d = n(246946),
   u = n(626135),
@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function N(e) {
   return e
 }
 
-function b(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ class x extends i.Component {
         location: e
       }
     } = this.props;
-    return b(N({}, e), {
+    return N(b({}, e), {
       object: g.qAy.BUTTON_CTA
     })
   }
@@ -77,7 +77,7 @@ class x extends i.Component {
         children: p.NW.string(p.t.SeKIoa)
       }), (0, r.jsx)("form", {
         onSubmit: this.handleSubmit,
-        children: (0, r.jsxs)(o.Z, {
+        children: (0, r.jsxs)(l.Z, {
           children: [(0, r.jsx)(a.oil, {
             type: e ? "password" : "text",
             value: t,
@@ -130,13 +130,13 @@ class x extends i.Component {
         submitting: !0
       });
       try {
-        let e = await l.Z.resolveGiftCode(n);
+        let e = await o.Z.resolveGiftCode(n);
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: !0
         }), Error("Cannnot redeem promotion code as gift");
         u.default.track(g.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: b(N({}, this.analyticsLocation), {
+          location: N(b({}, this.analyticsLocation), {
             object: g.qAy.BUTTON_CTA
           })
         }), (0, c.V)({

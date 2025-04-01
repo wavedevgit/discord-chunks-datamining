@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
@@ -8,7 +8,7 @@ var i = n(642128),
   s = n(481060),
   a = n(126037);
 
-function l(e) {
+function o(e) {
   let {
     text: t
   } = e, n = (0, s.Yzy)(t, {

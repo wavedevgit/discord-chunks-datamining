@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(570140),
   d = n(497321),
   u = n(100527),
@@ -16,20 +16,20 @@ var r = n(200651),
   p = n(296810),
   h = n(921813),
   f = n(643879),
-  N = n(621853),
-  b = n(246946),
+  b = n(621853),
+  N = n(246946),
   x = n(594174),
   _ = n(63063),
   E = n(74538),
   j = n(18438),
-  C = n(778825),
-  O = n(856607),
-  S = n(594496),
-  v = n(856768),
+  O = n(778825),
+  C = n(856607),
+  v = n(594496),
+  S = n(856768),
   T = n(981631),
   I = n(388032);
 
-function A(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function A(e) {
   return e
 }
 
-function y(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,12 +62,12 @@ function y(e, t) {
 }
 
 function P(e) {
-  (0, o.ZDy)(async () => {
+  (0, l.ZDy)(async () => {
     let {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
-    return n => (0, r.jsx)(t, A({
-      source: y(A({}, e), {
+    return n => (0, r.jsx)(t, y({
+      source: A(y({}, e), {
         page: T.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
@@ -79,11 +79,11 @@ function R(e) {
     selectedGuild: t
   } = e, {
     analyticsLocations: n
-  } = (0, g.ZP)(u.Z.GUILD_PROFILE), s = (0, l.e7)([x.default], () => {
+  } = (0, g.ZP)(u.Z.GUILD_PROFILE), s = (0, o.e7)([x.default], () => {
     let e = x.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), R = (0, l.e7)([N.Z], () => !N.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), Z = (0, l.cj)([C.Z], () => y(A({}, C.Z.getAllPending()), {
-    source: C.Z.getSource()
+  }), R = (0, o.e7)([b.Z], () => !b.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, o.e7)([N.Z], () => N.Z.hidePersonalInformation), Z = (0, o.cj)([O.Z], () => A(y({}, O.Z.getAllPending()), {
+    source: O.Z.getSource()
   })), {
     source: w,
     pendingAvatar: k
@@ -113,13 +113,13 @@ function R(e) {
     })
   }, [w]), D) ? (0, r.jsx)(d.Z, {}) : R ? (0, r.jsxs)(g.Gt, {
     value: n,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: I.NW.format(I.t["/PTB2N"], {
         helpCenterLink: _.Z.getArticleURL(T.BhN.GUILD_PROFILES)
       })
     }), null != t ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(v.Z, {
+      children: [(0, r.jsx)(S.Z, {
         guildId: t.id,
         onChange: e => {
           null != e && (0, j.HP)(e)
@@ -128,15 +128,15 @@ function R(e) {
         previewTitle: I.NW.formatToPlainString(I.t.Tc0slJ, {
           guildName: null == t ? void 0 : t.name
         }),
-        profilePreview: (0, r.jsx)(h.Z, y(A({}, W), {
+        profilePreview: (0, r.jsx)(h.Z, A(y({}, W), {
           pendingAvatar: L,
           user: s,
           guild: t,
           canUsePremiumCustomization: E.ZP.canUsePremiumProfileCustomization(s),
           onUpsellClick: P
         })),
-        children: (0, r.jsx)(S.Z, {})
+        children: (0, r.jsx)(v.Z, {})
       })]
-    }) : (0, r.jsx)(O.Z, {})]
-  }) : (0, r.jsx)(o.$jN, {})
+    }) : (0, r.jsx)(C.Z, {})]
+  }) : (0, r.jsx)(l.$jN, {})
 }

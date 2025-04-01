@@ -1,21 +1,21 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 n.d(t, {
   P7: () => p,
   RR: () => m,
-  UN: () => u,
-  bg: () => h,
+  UN: () => c,
+  bg: () => E,
   hn: () => d,
   np: () => f
 });
 var r = n(979590),
-  i = n.n(r),
-  l = n(866442),
-  o = n(220082),
-  a = n(594174),
+  l = n.n(r),
+  i = n(866442),
+  a = n(220082),
+  o = n(594174),
   s = n(984063),
-  c = n(813900);
+  u = n(813900);
 
-function u(e) {
+function c(e) {
   let t = e.current,
     n = null == t ? void 0 : t.getContext("2d");
   null != t && null != n && n.clearRect(0, 0, t.width, t.height)
@@ -25,12 +25,12 @@ function d(e, t) {
   let {
     width: n,
     height: r,
-    left: i,
-    top: l
+    left: l,
+    top: i
   } = e.getBoundingClientRect();
   return {
-    x: (t.clientX - i) / n,
-    y: (t.clientY - l) / r
+    x: (t.clientX - l) / n,
+    y: (t.clientY - i) / r
   }
 }
 
@@ -50,17 +50,17 @@ function p(e) {
   return e.type === s.W.LINE
 }
 
-function h(e, t, n, r) {
+function E(e, t, n, r) {
   var s;
-  let u = a.default.getUser(e),
-    d = null == u ? void 0 : u.getAvatarURL(null, c.Ks),
-    f = null != d ? null === (s = o.SR.getState().palette[d]) || void 0 === s ? void 0 : s[0] : null,
-    m = null != f ? "#".concat(i()({
+  let c = o.default.getUser(e),
+    d = null == c ? void 0 : c.getAvatarURL(null, u.Ks),
+    f = null != d ? null === (s = a.SR.getState().palette[d]) || void 0 === s ? void 0 : s[0] : null,
+    m = null != f ? "#".concat(l()({
       r: f[0],
       g: f[1],
       b: f[2]
     }).toHex()) : r,
-    p = (0, l.Bd)((0, l._i)(m)) > .5 ? n : t;
+    p = (0, i.Bd)((0, i._i)(m)) > .5 ? n : t;
   return {
     fillColor: m,
     outlineColor: p

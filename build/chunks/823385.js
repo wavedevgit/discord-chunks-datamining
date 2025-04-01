@@ -25,8 +25,8 @@ var i, o = n(392711),
   I = n(944486),
   S = n(914010),
   T = n(9156),
-  A = n(483360),
-  N = n(823379),
+  N = n(483360),
+  A = n(823379),
   C = n(981631),
   R = n(388032);
 
@@ -80,7 +80,7 @@ function K() {
   switch (U) {
     case u.h8.USER: {
       let e = h.default.getId();
-      return A.ZP.getRecentlyTalked(r, 100).filter(t => {
+      return N.ZP.getRecentlyTalked(r, 100).filter(t => {
         let {
           record: n
         } = t;
@@ -88,26 +88,26 @@ function K() {
       })
     }
     case u.h8.APPLICATION:
-      return A.ZP.queryApplications({
+      return N.ZP.queryApplications({
         query: "",
         limit: 100,
         fuzzy: !0
       });
     case u.h8.GUILD:
-      return A.ZP.queryGuilds({
+      return N.ZP.queryGuilds({
         query: "",
         limit: 100,
         fuzzy: !0
       });
     case u.h8.TEXT_CHANNEL:
-      return A.ZP.queryChannels({
+      return N.ZP.queryChannels({
         query: "",
         guildId: S.Z.getGuildId(),
         limit: 100,
         fuzzy: !0
       });
     case u.h8.VOICE_CHANNEL:
-      return A.ZP.queryChannels({
+      return N.ZP.queryChannels({
         query: "",
         guildId: S.Z.getGuildId(),
         limit: 100,
@@ -125,7 +125,7 @@ function K() {
   o.length > 0 && i.push((0, u.o6)(R.NW.string(R.t["80lOZ2"])), ...o);
   let s = W(e => e === r || Z.includes(e));
   s.length > 0 && i.push((0, u.o6)(R.NW.string(R.t["4B63jY"])), ...s);
-  let l = O.ZP.getMentionChannelIds().filter(e => e !== r && !Z.includes(e)).map(e => Y(e)).filter(N.lm).reverse();
+  let l = O.ZP.getMentionChannelIds().filter(e => e !== r && !Z.includes(e)).map(e => Y(e)).filter(A.lm).reverse();
   if (l.length > 0 && (i.push((0, u.o6)(R.NW.string(R.t["61Df19"]))), i = i.concat(l)), null != n) {
     let e = E.ZP.getSelectableChannelIds(n).filter(e => {
       let t = m.Z.getChannel(e);

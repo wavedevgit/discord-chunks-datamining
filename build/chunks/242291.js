@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C0: () => N,
+  C0: () => A,
   GN: () => C,
   M2: () => w,
-  Nq: () => A,
+  Nq: () => N,
   SZ: () => x,
   aC: () => L,
   pI: () => S,
@@ -43,12 +43,12 @@ function T(e, t) {
   return (null == t ? void 0 : t.guild_id) == null || f.Z.can(I.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === O.X8 || e.guildId === (null == t ? void 0 : t.guild_id)
 }
 
-function A(e, t, n) {
+function N(e, t, n) {
   let r = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
   return (h.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? void 0 : n.guild_id) || t.guildId === O.X8) && T(t, n) && (!r || t.available)
 }
 
-function N(e) {
+function A(e) {
   let {
     mute: t,
     suppress: n
@@ -79,7 +79,7 @@ async function w(e) {
   let i = r.guildId === O.hY ? O.X8 : r.guildId,
     a = E.Z.getSound(i, r.soundId);
   if (null != a) {
-    if (!T(a, n) || !A(t, a, n, !0) || !N(n)) return null;
+    if (!T(a, n) || !N(t, a, n, !0) || !A(n)) return null;
     R(a, n.id)
   }
 }

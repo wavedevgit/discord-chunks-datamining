@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(780384),
-  l = n(481060),
-  o = n(410030),
+  o = n(481060),
+  l = n(410030),
   c = n(726542),
   d = n(122021),
   u = n(231757),
@@ -22,25 +22,25 @@ let h = e => {
     className: i,
     innerClassName: h,
     onConnect: f
-  } = e, N = (0, o.ZP)(), b = c.Z.get((0, d.rR)(n));
-  return (0, r.jsx)(l.ua7, {
-    text: b.name,
+  } = e, b = (0, l.ZP)(), N = c.Z.get((0, d.rR)(n));
+  return (0, r.jsx)(o.ua7, {
+    text: N.name,
     children: e => {
       let {
-        onMouseEnter: o,
+        onMouseEnter: l,
         onMouseLeave: d
       } = e;
       return (0, r.jsx)("div", {
         className: s()(p.wrapper, i),
-        children: (0, r.jsx)(l.tEY, {
+        children: (0, r.jsx)(o.tEY, {
           children: (0, r.jsx)("button", {
-            onMouseEnter: o,
+            onMouseEnter: l,
             onMouseLeave: d,
             className: s()(p.inner, h),
             type: "button",
             disabled: t,
             style: {
-              backgroundImage: "url('".concat((0, a.wj)(N) ? b.icon.darkSVG : b.icon.lightSVG, "')")
+              backgroundImage: "url('".concat((0, a.wj)(b) ? N.icon.darkSVG : N.icon.lightSVG, "')")
             },
             onClick: null != f ? f : () => (function(e) {
               let t = c.Z.get(e);
@@ -53,7 +53,7 @@ let h = e => {
                 platform_type: t.type
               })
             })(n),
-            "aria-label": b.name
+            "aria-label": N.name
           })
         })
       })

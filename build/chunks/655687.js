@@ -1,52 +1,52 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(933557),
-  i = n(981631),
-  l = n(388032);
+  l = n(981631),
+  i = n(388032);
 
-function o(e) {
+function a(e) {
   let {
     channel: t,
     isReadonly: n = !1,
-    isCreatingThread: o = !1
-  } = e, a = (0, r.ZP)(t, !0), s = (0, r.ZP)(t, !1);
-  return null == t || null == a ? {
-    placeholder: l.NW.string(l.t.MKDeyM),
-    accessibilityLabel: l.NW.string(l.t.MKDeyM)
-  } : o ? {
-    placeholder: l.NW.string(l.t.YzpScX),
-    accessibilityLabel: l.NW.string(l.t.YzpScX)
+    isCreatingThread: a = !1
+  } = e, o = (0, r.ZP)(t, !0), s = (0, r.ZP)(t, !1);
+  return null == t || null == o ? {
+    placeholder: i.NW.string(i.t.MKDeyM),
+    accessibilityLabel: i.NW.string(i.t.MKDeyM)
+  } : a ? {
+    placeholder: i.NW.string(i.t.YzpScX),
+    accessibilityLabel: i.NW.string(i.t.YzpScX)
   } : n ? {
-    placeholder: l.NW.string(l.t.RRvRp6),
-    accessibilityLabel: l.NW.string(l.t.RRvRp6)
+    placeholder: i.NW.string(i.t.RRvRp6),
+    accessibilityLabel: i.NW.string(i.t.RRvRp6)
   } : t.isForumPost() ? {
-    placeholder: l.NW.formatToPlainString(l.t.Y6qWLS, {
-      channel: a
+    placeholder: i.NW.formatToPlainString(i.t.Y6qWLS, {
+      channel: o
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.KffKoa, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.KffKoa, {
       channel: s
     })
-  } : i.TPd.THREADS.has(t.type) ? {
-    placeholder: l.NW.formatToPlainString(l.t["8lzR/f"], {
-      channel: a
+  } : l.TPd.THREADS.has(t.type) ? {
+    placeholder: i.NW.formatToPlainString(i.t["8lzR/f"], {
+      channel: o
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.UZIMWV, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.UZIMWV, {
       channel: s
     })
-  } : t.type === i.d4z.DM ? {
-    placeholder: l.NW.formatToPlainString(l.t["4c+CAw"], {
-      channel: a
+  } : t.type === l.d4z.DM ? {
+    placeholder: i.NW.formatToPlainString(i.t["4c+CAw"], {
+      channel: o
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.fqOxbW, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.fqOxbW, {
       channel: s
     })
   } : {
-    placeholder: l.NW.formatToPlainString(l.t["8lzR/f"], {
-      channel: a
+    placeholder: i.NW.formatToPlainString(i.t["8lzR/f"], {
+      channel: o
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.ih7ZSE, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.ih7ZSE, {
       channel: s
     })
   }

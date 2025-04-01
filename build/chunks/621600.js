@@ -3,14 +3,14 @@
 n.d(t, {
   $R: () => b,
   GA: () => S,
-  I: () => A,
+  I: () => N,
   UE: () => E,
   Wq: () => v,
   ZB: () => g,
   jz: () => I,
   rU: () => T,
   sK: () => O,
-  wK: () => N
+  wK: () => A
 }), n(789020), n(47120);
 var r = n(367907),
   i = n(601992),
@@ -154,10 +154,10 @@ function I(e, t, n, s, d, _) {
       }
     },
     S = I(s),
-    T = I(A(e, t), n),
-    N = y(S, T, "RETURN_PREVIOUS_WHEN_CHANGED"),
+    T = I(N(e, t), n),
+    A = y(S, T, "RETURN_PREVIOUS_WHEN_CHANGED"),
     C = o.Z.getChannel(t),
-    R = null !== (g = N("channel_flags")) && void 0 !== g ? g : 0,
+    R = null !== (g = A("channel_flags")) && void 0 !== g ? g : 0,
     P = (null !== (E = T.channel_flags) && void 0 !== E ? E : 0) ^ R,
     w = 0 === (0, l.M1)(P, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED),
     D = null !== (v = null === (h = a.Z.getLastMessage(t)) || void 0 === h ? void 0 : h.type) && void 0 !== v ? v : null;
@@ -168,11 +168,11 @@ function I(e, t, n, s, d, _) {
     update_type: u.I.CHANNEL,
     label: d,
     parent_id: null != C ? C.parent_id : null,
-    channel_flags_old: N("channel_flags"),
-    channel_is_muted_old: N("channel_is_muted"),
-    channel_muted_until_old: N("channel_muted_until"),
-    channel_is_overridden_old: N("channel_is_overridden"),
-    channel_message_notification_settings_old: N("channel_message_notification_settings"),
+    channel_flags_old: A("channel_flags"),
+    channel_is_muted_old: A("channel_is_muted"),
+    channel_muted_until_old: A("channel_muted_until"),
+    channel_is_overridden_old: A("channel_is_overridden"),
+    channel_message_notification_settings_old: A("channel_message_notification_settings"),
     is_opt_in_only_change: w,
     last_message_type: D
   }))
@@ -199,7 +199,7 @@ function T(e) {
   return e.forEach(e => t.set(e, S(e))), t
 }
 
-function A(e, t) {
+function N(e, t) {
   let n = s.ZP.isChannelMuted(e, t),
     r = s.ZP.getChannelMuteConfig(e, t);
   return {
@@ -210,7 +210,7 @@ function A(e, t) {
   }
 }
 
-function N(e, t) {
+function A(e, t) {
   let n = new Map;
-  return t.forEach(t => n.set(t, A(e, t))), n
+  return t.forEach(t => n.set(t, N(e, t))), n
 }

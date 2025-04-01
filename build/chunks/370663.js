@@ -1,32 +1,32 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(192379),
-  i = n(772848),
-  l = n(125268);
-let o = () => {};
+  l = n(772848),
+  i = n(125268);
+let a = () => {};
 
-function a(e, t, n) {
-  let a = r.useRef((0, i.Z)()),
+function o(e, t, n) {
+  let o = r.useRef((0, l.Z)()),
     s = r.useRef(Date.now()),
-    c = r.useCallback((r, i) => {
-      let o = {
+    u = r.useCallback((r, l) => {
+      let a = {
         x: r,
-        y: i,
+        y: l,
         deltaTime: Date.now() - s.current
       };
-      (0, l.oW)(t, a.current, e, n, o), (0, l.cV)(a.current, e, n, [o])
+      (0, i.oW)(t, o.current, e, n, a), (0, i.cV)(o.current, e, n, [a])
     }, [t, n, e]),
-    u = r.useCallback((e, t, n) => {
-      a.current = (0, i.Z)(), s.current = Date.now(), c(t, n)
-    }, [c]),
-    d = r.useCallback((e, t, n) => c(t, n), [c]),
-    f = r.useCallback((e, t, n) => u(e, t, n), [u]);
+    c = r.useCallback((e, t, n) => {
+      o.current = (0, l.Z)(), s.current = Date.now(), u(t, n)
+    }, [u]),
+    d = r.useCallback((e, t, n) => u(t, n), [u]),
+    f = r.useCallback((e, t, n) => c(e, t, n), [c]);
   return r.useMemo(() => ({
-    handleMouseDown: u,
+    handleMouseDown: c,
     handleMouseMove: d,
-    handleMouseUp: o,
+    handleMouseUp: a,
     handleMouseEnter: f
-  }), [u, f, d])
+  }), [c, f, d])
 }

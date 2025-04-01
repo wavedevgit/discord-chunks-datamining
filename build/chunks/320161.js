@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(392711),
   a = n(846519),
-  l = n(481060),
-  o = n(626135),
+  o = n(481060),
+  l = n(626135),
   c = n(572004),
   d = n(70956),
   u = n(981631),
@@ -17,43 +17,43 @@ let g = d.Z.Millis.SECOND,
   h = d.Z.Millis.HALF_SECOND,
   f = [() => m.NW.string(m.t.MSaeTU), () => m.NW.string(m.t.UmrCw8), () => m.NW.string(m.t.gKE0Ji), () => m.NW.string(m.t["4DSKbm"]), () => m.NW.string(m.t["+8ENdX"]), () => m.NW.string(m.t.GlWHv7), () => m.NW.string(m.t.hIzxU1), () => m.NW.string(m.t["26uMPD"]), () => m.NW.string(m.t.uFs7R0), () => m.NW.string(m.t.bLXdcX), () => m.NW.string(m.t.gPg9fX)];
 
-function N(e) {
+function b(e) {
   let {
     text: t,
     copyValue: n,
     children: d,
     onCopy: m,
-    "aria-label": N,
-    delay: b = h
-  } = e, [x, _] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [S] = i.useState(() => new a.V7), [v] = i.useState(() => new a.V7);
+    "aria-label": b,
+    delay: N = h
+  } = e, [x, _] = i.useState(0), [E, j] = i.useState(!1), [O, C] = i.useState(!1), [v] = i.useState(() => new a.V7), [S] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
-      S.stop(), v.stop()
-    }, [S, v]), !c.wS) return (0, r.jsx)(r.Fragment, {
+      v.stop(), S.stop()
+    }, [v, S]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: d({})
   });
   let T = x >= f.length - 1,
-    I = T ? l.FGA.RED : l.FGA.GREEN,
-    A = E ? I : l.FGA.PRIMARY,
-    y = () => {
-      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), C || _(x + 1), O(!0), j(!0), S.start(g, () => O(!1)), v.start(p, () => _(0))
+    I = T ? o.FGA.RED : o.FGA.GREEN,
+    y = E ? I : o.FGA.PRIMARY,
+    A = () => {
+      null == m || m(), (0, c.JG)(n), l.default.track(u.rMx.TEXT_COPIED), O || _(x + 1), C(!0), j(!0), v.start(g, () => C(!1)), S.start(p, () => _(0))
     };
-  return (0, r.jsx)(l.ua7, {
+  return (0, r.jsx)(o.ua7, {
     text: (() => {
       var e;
       if (!E) return t;
       let n = (0, s.clamp)(x - 1, 0, f.length - 1),
         i = null !== (e = f[n]) && void 0 !== e ? e : f[0];
-      return (0, r.jsx)(l.UkV, {
+      return (0, r.jsx)(o.UkV, {
         isShaking: T,
         children: i()
       })
     })(),
-    delay: b,
-    "aria-label": N,
-    color: A,
-    forceOpen: C,
+    delay: N,
+    "aria-label": b,
+    color: y,
+    forceOpen: O,
     onAnimationRest: (e, t) => {
-      !C && E && t.phase === u.UkZ.LEAVE && j(!1)
+      !O && E && t.phase === u.UkZ.LEAVE && j(!1)
     },
     children: e => {
       var t, n, {
@@ -93,14 +93,14 @@ function N(e) {
         return i
       }(e, ["onClick", "onMouseEnter"])), n = n = {
         onClick: () => {
-          null == r || r(), y()
+          null == r || r(), A()
         },
         onMouseEnter: () => {
           if (!E) {
             null == i || i();
             return
           }
-          S.stop(), O(!1)
+          v.stop(), C(!1)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

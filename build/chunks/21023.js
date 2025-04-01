@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   s = n(706454),
   a = n(74538),
-  l = n(937615),
-  o = n(781320),
+  o = n(937615),
+  l = n(781320),
   c = n(474936),
   d = n(981631),
   u = n(388032),
@@ -60,8 +60,8 @@ let g = e => {
       })]
     })
   },
-  f = (e, t, n, f, N) => {
-    let b = (0, o.r)({
+  f = (e, t, n, f, b) => {
+    let N = (0, l.r)({
         location: "useGetPlanComparisonTableRows"
       }).enabled,
       x = {
@@ -147,7 +147,7 @@ let g = e => {
           label: (0, r.jsx)(g, {
             text: u.NW.formatToPlainString(u.t.nyhDp6, {
               numBoosts: c.cb,
-              percentageOff: (0, l.T3)(s.default.locale, c.Rr / 100)
+              percentageOff: (0, o.T3)(s.default.locale, c.Rr / 100)
             })
           }),
           column1: (0, r.jsx)(h, {
@@ -322,7 +322,7 @@ let g = e => {
           column2: (0, r.jsx)(h, {
             includes: !0
           }),
-          withBottomBorder: b
+          withBottomBorder: N
         },
         23: {
           label: (0, r.jsx)(g, {
@@ -337,7 +337,7 @@ let g = e => {
           withBottomBorder: !1
         }
       },
-      _ = N === c.a$.FP_ONLY,
+      _ = b === c.a$.FP_ONLY,
       E = [x[0], x[1], x[2], x[3], x[4], x[5], x[6], ..._ ? [] : [x[7]], x[8], x[9], x[10], x[11], ..._ ? [] : [x[12]], x[13], x[14], x[15], x[16], x[17], x[22]];
-    return b && E.push(x[23]), E
+    return N && E.push(x[23]), E
   }

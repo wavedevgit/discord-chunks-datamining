@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(570140),
   d = n(355467),
   u = n(230711),
@@ -16,16 +16,16 @@ var r = n(200651),
   p = n(390954),
   h = n(89057),
   f = n(921801),
-  N = n(246946),
-  b = n(594174),
+  b = n(246946),
+  N = n(594174),
   x = n(351402),
   _ = n(853872),
   E = n(78839),
   j = n(706454),
-  C = n(726985),
-  O = n(981631),
-  S = n(388032),
-  v = n(750882);
+  O = n(726985),
+  C = n(981631),
+  v = n(388032),
+  S = n(750882);
 class T extends i.PureComponent {
   componentDidMount() {
     c.Z.wait(() => {
@@ -33,7 +33,7 @@ class T extends i.PureComponent {
     })
   }
   handleRedemptionRedirect() {
-    u.Z.setSection(O.oAB.INVENTORY)
+    u.Z.setSection(C.oAB.INVENTORY)
   }
   render() {
     let {
@@ -43,42 +43,42 @@ class T extends i.PureComponent {
       defaultPaymentSourceId: i,
       locale: s,
       premiumSubscription: a,
-      isRemovingPaymentSource: l,
+      isRemovingPaymentSource: o,
       isUpdatingPaymentSource: c
     } = this.props;
     return t ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-      className: v.__invalid_userSettingsBilling,
+      className: S.__invalid_userSettingsBilling,
       children: [e && 0 === Object.keys(n).length ? (0, r.jsx)("div", {
-        className: v.syncing,
-        children: (0, r.jsx)(o.$jN, {})
+        className: S.syncing,
+        children: (0, r.jsx)(l.$jN, {})
       }) : (0, r.jsx)(f.F, {
-        setting: C.s6.BILLING_PAYMENT_METHODS,
+        setting: O.s6.BILLING_PAYMENT_METHODS,
         children: (0, r.jsx)(p.Z, {
           paymentSources: n,
           defaultPaymentSourceId: i,
-          premiumSubscriptionPaymentSourceId: null != a && a.status !== O.O0b.CANCELED ? a.paymentSourceId : null,
+          premiumSubscriptionPaymentSourceId: null != a && a.status !== C.O0b.CANCELED ? a.paymentSourceId : null,
           locale: s,
-          removing: l,
+          removing: o,
           submitting: c
         })
       }), (0, r.jsx)(f.F, {
-        setting: C.s6.BILLING_TRANSACTION_HISTORY,
+        setting: O.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, r.jsx)("div", {
-          className: v.paymentHistory,
-          children: (0, r.jsxs)(o.y5t, {
-            component: (0, r.jsx)(o.vwX, {
+          className: S.paymentHistory,
+          children: (0, r.jsxs)(l.y5t, {
+            component: (0, r.jsx)(l.vwX, {
               tag: "h1",
-              children: S.NW.string(S.t.obLrcH)
+              children: v.NW.string(v.t.obLrcH)
             }),
             children: [(0, r.jsx)(h.oQ, {}), (0, r.jsx)(g.Z, {
               locale: s
             })]
           })
         })
-      }), (0, r.jsx)(o.Zbd, {
-        className: v.codeRedemptionRedirect,
-        type: o.Zbd.Types.CUSTOM,
-        children: S.NW.format(S.t["8b+FXF"], {
+      }), (0, r.jsx)(l.Zbd, {
+        className: S.codeRedemptionRedirect,
+        type: l.Zbd.Types.CUSTOM,
+        children: v.NW.format(v.t["8b+FXF"], {
           onClick: this.handleRedemptionRedirect
         })
       })]
@@ -87,12 +87,12 @@ class T extends i.PureComponent {
 }
 
 function I() {
-  let e = (0, l.cj)([j.default, x.Z, _.Z, b.default, N.Z, E.ZP], () => {
+  let e = (0, o.cj)([j.default, x.Z, _.Z, N.default, b.Z, E.ZP], () => {
     let e = E.ZP.getPremiumTypeSubscription(),
-      t = b.default.getCurrentUser();
+      t = N.default.getCurrentUser();
     return a()(null != t, "UserSettingsBilling: currentUser cannot be undefined"), {
       locale: j.default.locale,
-      hide: N.Z.enabled,
+      hide: b.Z.enabled,
       isClaimed: t.isClaimed(),
       isVerified: t.verified,
       premiumSubscription: e,

@@ -27,11 +27,11 @@ let O = e => e.preventDefault(),
   I = .7,
   S = 33,
   T = 1.55,
-  A = {
+  N = {
     tension: 1100,
     friction: 40
   },
-  N = {
+  A = {
     tension: 1600,
     friction: 60
   };
@@ -98,11 +98,11 @@ let P = e => {
       positionRef: _,
       withLoadingIndicator: h,
       onError: m
-    } = e, g = i.useRef(null), E = i.useRef(null), [O, I] = i.useState(!0), [S, T] = i.useState(!1), A = i.useRef(!1);
-    A.current = t && u;
-    let N = null == s ? (0, b.Q6)(a) : s;
-    return (l()(null != N, "Unable to determine sticker asset URL. Sticker ID: ".concat(a.id)), i.useEffect(() => {
-      if (null == g.current || null == N) return;
+    } = e, g = i.useRef(null), E = i.useRef(null), [O, I] = i.useState(!0), [S, T] = i.useState(!1), N = i.useRef(!1);
+    N.current = t && u;
+    let A = null == s ? (0, b.Q6)(a) : s;
+    return (l()(null != A, "Unable to determine sticker asset URL. Sticker ID: ".concat(a.id)), i.useEffect(() => {
+      if (null == g.current || null == A) return;
       let e = Math.min(2, (0, p.x_)());
       g.current.width = o * e, g.current.height = o * e;
       let t = !1;
@@ -113,7 +113,7 @@ let P = e => {
         null != g.current && (E.current = new e({
           canvas: g.current,
           animationId: a.id,
-          assetUrl: N,
+          assetUrl: A,
           assetData: c,
           onInitialDraw: () => {
             t || I(!1)
@@ -121,16 +121,16 @@ let P = e => {
           onError: () => {
             t || (I(!1), T(!0), null == m || m())
           }
-        }), A.current && E.current.setState(!0))
+        }), N.current && E.current.setState(!0))
       })(), () => {
         var e;
         null === (e = E.current) || void 0 === e || e.drop(), E.current = null, t = !0
       }
-    }, [N, o, a.id, c, m]), i.useEffect(() => {
+    }, [A, o, a.id, c, m]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null === (e = E.current) || void 0 === e || e.setState(t && u, n)
-    }, [a, t, u]), null == N) ? null : (0, r.jsx)("div", {
+    }, [a, t, u]), null == A) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
       "aria-label": S ? v.NW.string(v.t.yEvsKy) : R(a),
@@ -159,10 +159,10 @@ let P = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: _
-    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, v] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), A = null != _ ? _ : (0, b.Q6)(n, {
+    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, v] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, b.Q6)(n, {
       isPreview: !t || !p || !o,
       size: s
-    }), N = i.useCallback(() => {
+    }), A = i.useCallback(() => {
       g(!1)
     }, []), w = i.useCallback(() => {
       v(!0)
@@ -177,7 +177,7 @@ let P = e => {
     }, []), i.useLayoutEffect(() => {
       var e;
       (null === (e = T.current) || void 0 === e ? void 0 : e.complete) === !0 && g(!1)
-    }, []), null == A) ? null : (0, r.jsx)(d.$, {
+    }, []), null == N) ? null : (0, r.jsx)(d.$, {
       innerRef: u,
       ref: S,
       onChange: h,
@@ -194,10 +194,10 @@ let P = e => {
           children: C((0, r.jsx)("img", {
             className: y.pngImage,
             alt: R(n),
-            src: A,
+            src: N,
             draggable: !1,
             onError: w,
-            onLoad: N,
+            onLoad: A,
             onContextMenu: O,
             ref: T
           }), n.id)
@@ -225,12 +225,12 @@ let P = e => {
         opacity: 1
       },
       leave: g,
-      config: A
+      config: N
     }), b = i.useRef(null), v = (0, f.q_F)({
       ref: b,
       transform: a || p ? "translateY(0)" : "translateY(-25px)",
       opacity: +!!a,
-      config: N
+      config: A
     }, "animate-always");
     return (0, c.useChain)(a ? [m, b] : [b, m], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
       className: y.positionedLayer,

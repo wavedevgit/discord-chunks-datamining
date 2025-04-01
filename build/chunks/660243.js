@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(793030),
-  l = n(481060),
-  o = n(230711),
+  o = n(481060),
+  l = n(230711),
   c = n(695346),
   d = n(903002),
   u = n(214492),
@@ -17,14 +17,14 @@ var i = n(120356),
   p = n(388032),
   h = n(949166),
   f = n(146036),
-  N = n(510176);
+  b = n(510176);
 
-function b(e) {
+function N(e) {
   let {
     headerAssetSrc: t,
     headerText: n,
     description: i,
-    assets: o = [],
+    assets: l = [],
     assetCount: c = 0,
     disabled: u = !1,
     onClick: m
@@ -65,12 +65,12 @@ function b(e) {
         }), (0, r.jsxs)("div", {
           className: h.manageContainer,
           children: [(0, r.jsx)(d.D, {
-            assets: o,
+            assets: l,
             assetCount: c,
             size: d.F.MEDIUM
-          }), (0, r.jsx)(l.zxk, {
+          }), (0, r.jsx)(o.zxk, {
             onClick: m,
-            color: l.zxk.Colors.PRIMARY,
+            color: o.zxk.Colors.PRIMARY,
             children: "Manage"
           })]
         })]
@@ -91,21 +91,21 @@ function x() {
     } = (0, u.hs)();
   return (0, r.jsxs)("div", {
     className: h.cardsContainer,
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(N, {
       headerAssetSrc: f,
       headerText: p.NW.string(p.t.CQkyMj),
       description: p.NW.string(g.Z.ctRS3d),
       assets: t,
       assetCount: n,
-      onClick: () => o.Z.open(m.oAB.REGISTERED_GAMES),
+      onClick: () => l.Z.open(m.oAB.REGISTERED_GAMES),
       disabled: e
-    }), (0, r.jsx)(b, {
-      headerAssetSrc: N,
+    }), (0, r.jsx)(N, {
+      headerAssetSrc: b,
       headerText: p.NW.string(p.t["3fe7U1"]),
       description: p.NW.string(g.Z.DU5UXF),
       assets: i,
       assetCount: s,
-      onClick: () => o.Z.open(m.oAB.CONNECTIONS),
+      onClick: () => l.Z.open(m.oAB.CONNECTIONS),
       disabled: e
     })]
   })

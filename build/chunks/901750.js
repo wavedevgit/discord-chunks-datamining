@@ -1,17 +1,17 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(388032),
   a = n(349689);
-let l = function(e) {
+let o = function(e) {
   let {
     hasGuildBoostSlots: t,
-    hasAppliedGuildBoosts: l,
-    hasBoostPerk: o,
+    hasAppliedGuildBoosts: o,
+    hasBoostPerk: l,
     canAddBoosts: c
   } = e;
   return (0, r.jsxs)("div", {
@@ -38,8 +38,8 @@ let l = function(e) {
           return i ? t ? r && !n ? s.NW.format(s.t.s9zQyM, {}) : s.NW.format(s.t.Rb8Jho, {}) : s.NW.string(s.t["2rh0b2"]) : s.NW.format(s.t.Rb8Jho, {})
         }({
           hasGuildBoostSlots: t,
-          hasBoostPerk: o,
-          hasAppliedGuildBoosts: l,
+          hasBoostPerk: l,
+          hasAppliedGuildBoosts: o,
           canAddBoosts: c
         })
       }), (0, r.jsx)("svg", {

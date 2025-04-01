@@ -84,8 +84,8 @@ async function O(e) {
     closeLayer: I,
     onSubscriptionConfirmation: S,
     onSubscribeComplete: T,
-    guild: A,
-    handleSubscribeModalClose: N,
+    guild: N,
+    handleSubscribeModalClose: A,
     disablePremiumUpsell: C,
     inPopout: R,
     applicationId: P,
@@ -115,7 +115,7 @@ async function O(e) {
   let M = (0, f.vx)(c.Z.boostSlots),
     k = M.length,
     j = e => {
-      null == O || O(), null == N || N(e)
+      null == O || O(), null == A || A(e)
     },
     U = () => {
       null == O || O(), null == I || I(), d.default.track(p.rMx.MODAL_DISMISSED, {
@@ -137,7 +137,7 @@ async function O(e) {
           onClose: e => {
             i(), j(e)
           },
-          selectedGuild: A,
+          selectedGuild: N,
           locationSection: p.ZY5.PREMIUM_GUILD_USER_MODAL,
           guildBoostSlots: e
         }))
@@ -153,7 +153,7 @@ async function O(e) {
     analyticsLocations: t,
     analyticsLocation: h,
     analyticsSourceLocation: g,
-    guildId: A.id,
+    guildId: N.id,
     closeLayer: U,
     totalNumberOfSlotsToAssign: null != v ? v : 1,
     onCloseModal: j,

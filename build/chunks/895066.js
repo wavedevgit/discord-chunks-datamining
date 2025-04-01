@@ -255,8 +255,8 @@ class f {
             var r, o, a, s, l, c, d, f, _, p, h, m, g, E, b, v, y, O, I;
             let S = null !== (r = e.transport.ping) && void 0 !== r ? r : 0,
               T = t.packetsReceived,
-              A = t.packetsLost,
-              N = t.bytesReceived,
+              N = t.packetsLost,
+              A = t.bytesReceived,
               C = t.nackCount,
               R = null !== (o = t.fecPacketsReceived) && void 0 !== o ? o : 0,
               P = null !== (a = t.fecPacketsDiscarded) && void 0 !== a ? a : 0,
@@ -288,13 +288,13 @@ class f {
               };
             if (null != this.inboundStats[n]) {
               let e = T - this.inboundStats[n].packetsReceived,
-                r = A - this.inboundStats[n].packetsLost,
+                r = N - this.inboundStats[n].packetsLost,
                 o = 0,
                 a = this.inboundStats[n].mosBuckets;
               e > 0 && r >= 0 && (o = this.calculateMos(S + w, i().clamp(r / (e + r), 0, 1)), a[Math.floor(o)]++), this.inboundStats[n] = u({
                 packetsReceived: T,
-                bytesReceived: N,
-                packetsLost: A,
+                bytesReceived: A,
+                packetsLost: N,
                 nackCount: null != C ? C : 0,
                 fecPacketsReceived: R,
                 fecPacketsDiscarded: P,
@@ -317,8 +317,8 @@ class f {
               }
             } else this.inboundStats[n] = u({
               packetsReceived: T,
-              bytesReceived: N,
-              packetsLost: A,
+              bytesReceived: A,
+              packetsLost: N,
               nackCount: null != C ? C : 0,
               fecPacketsReceived: R,
               fecPacketsDiscarded: P,

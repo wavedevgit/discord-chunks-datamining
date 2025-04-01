@@ -33,7 +33,7 @@ function E(e) {
     v(!0)
   }, []), T = i.useCallback(() => {
     v(!1)
-  }, []), A = i.useCallback(e => {
+  }, []), N = i.useCallback(e => {
     var r;
     v(!1);
     let i = {
@@ -50,11 +50,11 @@ function E(e) {
   }, [t, n]);
   i.useEffect(() => {
     let e = O.current;
-    return null == y && (null == e || e.addEventListener("dragover", S, !1), null == e || e.addEventListener("dragleave", T, !1), null == e || e.addEventListener("drop", A, !1)), () => {
-      null == e || e.removeEventListener("dragover", S, !1), null == e || e.removeEventListener("dragleave", T, !1), null == e || e.removeEventListener("drop", A, !1)
+    return null == y && (null == e || e.addEventListener("dragover", S, !1), null == e || e.addEventListener("dragleave", T, !1), null == e || e.addEventListener("drop", N, !1)), () => {
+      null == e || e.removeEventListener("dragover", S, !1), null == e || e.removeEventListener("dragleave", T, !1), null == e || e.removeEventListener("drop", N, !1)
     }
-  }, [y, S, T, A]);
-  let N = e => {
+  }, [y, S, T, N]);
+  let A = e => {
     var r, i;
     if (null != t && (null === (i = e.currentTarget) || void 0 === i ? void 0 : null === (r = i.files) || void 0 === r ? void 0 : r[0]) != null) {
       let r = {
@@ -121,7 +121,7 @@ function E(e) {
           children: "Drag and drop or click to upload file"
         }), (0, r.jsx)(c.Z, {
           ref: E,
-          onChange: N,
+          onChange: A,
           multiple: !1,
           tabIndex: -1,
           "aria-hidden": !0,

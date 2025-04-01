@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(47120);
 var r = n(570140),
   i = n(147913),
@@ -104,4 +104,4 @@ class T extends i.Z {
     })
   }
 }
-let A = new T
+let N = new T

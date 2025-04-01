@@ -23,8 +23,8 @@ var r = n(581031),
   I = r([].push),
   S = r("".replace),
   T = r("".split),
-  A = r("".toLowerCase),
-  N = function(e) {
+  N = r("".toLowerCase),
+  A = function(e) {
     for (var t = [], n = 0, r = e.length; n < r;) {
       var i = y(e, n++);
       if (i >= 55296 && i <= 56319 && n < r) {
@@ -44,7 +44,7 @@ var r = n(581031),
   },
   P = function(e) {
     var t, n, r = [],
-      l = (e = N(e)).length,
+      l = (e = A(e)).length,
       c = d,
       _ = 0,
       p = u;
@@ -59,12 +59,12 @@ var r = n(581031),
       for (_ += (y - c) * S, c = y, t = 0; t < e.length; t++) {
         if ((n = e[t]) < c && ++_ > i) throw g(h);
         if (n === c) {
-          for (var T = _, A = o;;) {
-            var P = A <= p ? a : A >= p + s ? s : A - p;
+          for (var T = _, N = o;;) {
+            var P = N <= p ? a : N >= p + s ? s : N - p;
             if (T < P) break;
             var w = T - P,
               D = o - P;
-            I(r, v(C(P + w % D))), T = b(w / D), A += o
+            I(r, v(C(P + w % D))), T = b(w / D), N += o
           }
           I(r, v(C(T))), p = R(_, S, E === m), _ = 0, E++
         }
@@ -75,7 +75,7 @@ var r = n(581031),
   };
 e.exports = function(e) {
   var t, n, r = [],
-    i = T(S(A(e), p, "."), ".");
+    i = T(S(N(e), p, "."), ".");
   for (t = 0; t < i.length; t++) I(r, E(_, n = i[t]) ? "xn--" + P(n) : n);
   return O(r, ".")
 }

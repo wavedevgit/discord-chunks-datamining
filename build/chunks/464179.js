@@ -79,8 +79,8 @@ let y = "US",
     value: e.alpha2,
     label: e.name
   })).filter(e => "KP" !== e.value && "SY" !== e.value),
-  A = (0, u.hQ)(),
   N = (0, u.hQ)(),
+  A = (0, u.hQ)(),
   C = (0, u.hQ)(),
   R = (0, u.hQ)(),
   P = (0, u.hQ)(),
@@ -98,7 +98,7 @@ let M = {
   },
   k = e => ({
     name: "name",
-    id: A,
+    id: N,
     title: () => _.NW.string(_.t.vyuULS),
     autoComplete: "name",
     getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? p.width100 : p.width60,
@@ -106,7 +106,7 @@ let M = {
   }),
   j = e => ({
     name: "country",
-    id: N,
+    id: A,
     title: () => _.NW.string(_.t.eDdrAA),
     autoComplete: "country",
     getClassNameForLayout: e => {

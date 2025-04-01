@@ -1,12 +1,12 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  k: () => l
+  k: () => o
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(655464);
-class l extends i.PureComponent {
+class o extends i.PureComponent {
   componentDidCatch(e, t) {
     console.error("Error rendering component (LocalErrorBoundary): ", e), this.setState({
       error: e,

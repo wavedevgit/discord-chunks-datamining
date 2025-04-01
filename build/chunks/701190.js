@@ -132,13 +132,13 @@ function T(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   return h(e.code, e => {
     e.state = s.r2o.APP_OPENED
   })
 }
 
-function N(e) {
+function A(e) {
   return h(e.code, e => {
     e.state = s.r2o.APP_NOT_OPENED
   })
@@ -170,6 +170,6 @@ let R = new C(o.Z, {
   INVITE_ACCEPT_SUCCESS: I,
   INVITE_ACCEPT_FAILURE: S,
   INVITE_APP_OPENING: T,
-  INVITE_APP_OPENED: A,
-  INVITE_APP_NOT_OPENED: N
+  INVITE_APP_OPENED: N,
+  INVITE_APP_NOT_OPENED: A
 })

@@ -28,8 +28,8 @@ var i = n(658722),
   I = n(285651),
   S = n(822179),
   T = n(926491),
-  A = n(373228),
-  N = n(601070),
+  N = n(373228),
+  A = n(601070),
   C = n(675478),
   R = n(131704),
   P = n(598077),
@@ -124,9 +124,9 @@ let es = new h.Z("AutocompleteUtils"),
   eI = [],
   eS = (r = n(786074).Z).MENTION_EVERYONE,
   eT = r.MENTION_HERE,
-  eA = r.LAUNCHABLE_APPLICATIONS;
+  eN = r.LAUNCHABLE_APPLICATIONS;
 
-function eN() {
+function eA() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
     t = arguments.length > 1 ? arguments[1] : void 0;
   return eb * e * (null != t ? t : 1)
@@ -210,14 +210,14 @@ function eD(e) {
 
 function eL(e) {
   switch (e) {
-    case A.MO.STICKER_NAME:
+    case N.MO.STICKER_NAME:
       return eh;
-    case A.MO.CORRELATED_EMOJI:
+    case N.MO.CORRELATED_EMOJI:
       return em;
-    case A.MO.TAG:
+    case N.MO.TAG:
       return eE;
-    case A.MO.GUILD_NAME:
-    case A.MO.PACK_NAME:
+    case N.MO.GUILD_NAME:
+    case N.MO.PACK_NAME:
       return eg;
     default:
       return 1
@@ -426,7 +426,7 @@ let eF = {
         allowSnowflake: p
       } = e,
       h = ek(n, c);
-    t = null != r ? s()(L.ZP.getChannels(r)[l]).map(e => e.channel).concat(N.Z.computeAllActiveJoinedThreads(r)).value() : s()(w.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(N.Z.computeAllActiveJoinedThreads()).value();
+    t = null != r ? s()(L.ZP.getChannels(r)[l]).map(e => e.channel).concat(A.Z.computeAllActiveJoinedThreads(r)).value() : s()(w.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(A.Z.computeAllActiveJoinedThreads()).value();
     let m = {},
       g = [],
       E = D.Z.getMaxScore();
@@ -449,7 +449,7 @@ let eF = {
         0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (eM(l, e.type) && (c = Math.max(c - e_, ef / 2)), c = Math.min(c + Math.min(null !== (b = D.Z.getScoreWithoutFetchingLatest(e.id)) && void 0 !== b ? b : 0 / E, 1) * ep, c >= ec ? el : ec), g.push({
           type: (0, R.bw)(e.type) ? J.h8.VOICE_CHANNEL : J.h8.TEXT_CHANNEL,
           record: e,
-          score: eN(c, _[e.id]),
+          score: eA(c, _[e.id]),
           comparator: (0, f.F6)(e, V.default, G.Z),
           sortable: i
         }))
@@ -476,7 +476,7 @@ let eF = {
       n > 0 && c.push({
         type: J.h8.GUILD,
         record: e,
-        score: eN(n, o[e.id]),
+        score: eA(n, o[e.id]),
         comparator: e.toString(),
         sortable: t
       })
@@ -503,7 +503,7 @@ let eF = {
       a > 0 && u.push({
         type: J.h8.GROUP_DM,
         record: e,
-        score: eN(a, o[e.id]),
+        score: eA(a, o[e.id]),
         comparator: (0, f.F6)(e, V.default, G.Z),
         sortable: n
       })
@@ -520,7 +520,7 @@ let eF = {
       exactQuery: RegExp("^".concat(K.Z.escape(o)), "i"),
       containQuery: RegExp(K.Z.escape(o), "i"),
       queryLower: o
-    }, s = eA(), l = [];
+    }, s = eN(), l = [];
     for (let {
         application: e
       }
@@ -563,7 +563,7 @@ let eF = {
           i > 0 && l.push({
             type: J.h8.IN_APP_NAVIGATION,
             record: u.FL.fromType(t),
-            score: eN(i),
+            score: eA(i),
             comparator: n,
             sortable: n
           })
@@ -572,7 +572,7 @@ let eF = {
     return eo.getState().options.forEach(e => {
       var t;
       let n = [e.title].concat(e.searchableTitles),
-        i = null !== (t = (0, a.max)(n.map(e => eN(eP(e.toLocaleLowerCase(), o, r))))) && void 0 !== t ? t : 0;
+        i = null !== (t = (0, a.max)(n.map(e => eA(eP(e.toLocaleLowerCase(), o, r))))) && void 0 !== t ? t : 0;
       i > 0 && l.push({
         type: J.h8.IN_APP_NAVIGATION,
         record: u.FL.fromType(u.Ky.SETTINGS, e.path, e.title),
@@ -862,7 +862,7 @@ let eF = {
             type: r,
             value: i
           } = n, o = eL(r), a = 0;
-          t ? i === e ? a = el * o : u.test(i) ? a = ec * o : (r === A.MO.GUILD_NAME || r === A.MO.PACK_NAME || r === A.MO.STICKER_NAME) && d.test(i) && (a = eu * o) : i === e && (a = el * o, f = i), a > c && (c = a, f = i)
+          t ? i === e ? a = el * o : u.test(i) ? a = ec * o : (r === N.MO.GUILD_NAME || r === N.MO.PACK_NAME || r === N.MO.STICKER_NAME) && d.test(i) && (a = eu * o) : i === e && (a = el * o, f = i), a > c && (c = a, f = i)
         }
         let p = S.Z.stickerFrecencyWithoutFetchingLatest.getScore(s);
         null != p && (c *= p / 100), c > 0 && null != f && !a.has(_.id) && (a.add(_.id), l.push({

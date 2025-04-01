@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(399606),
   a = n(481060),
-  l = n(906732),
-  o = n(975298),
+  o = n(906732),
+  l = n(975298),
   c = n(125529),
   d = n(879892),
   u = n(124570),
@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(267642),
   h = n(981631),
   f = n(388032),
-  N = n(456985);
+  b = n(456985);
 
-function b(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,14 +53,14 @@ let _ = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
-    } = (0, l.ZP)(),
+    } = (0, o.ZP)(),
     _ = (0, s.e7)([m.default], () => m.default.getCurrentUser()),
     {
       fractionalState: E
-    } = (0, o.Z)(),
+    } = (0, l.Z)(),
     j = (0, u.y)("guild_boosting_boost_cta", _, E);
 
-  function C(n) {
+  function O(n) {
     null != e.current && (0, a.Mr3)(e.current), (0, d.u)({
       analyticsLocation: {
         page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
@@ -72,13 +72,13 @@ let _ = function() {
       guild: n
     })
   }
-  async function O() {
+  async function C() {
     e.current = await (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
-      return t => (0, r.jsx)(e, x(b({}, t), {
-        onSelectGuild: C
+      return t => (0, r.jsx)(e, x(N({}, t), {
+        onSelectGuild: O
       }))
     }, {
       onCloseRequest: () => {
@@ -86,34 +86,34 @@ let _ = function() {
       }
     })
   }
-  let S = (0, p.aq)({
+  let v = (0, p.aq)({
     isBoostManagementDisabledForFractionalPremium: j
   });
   return (0, r.jsxs)("div", {
-    className: N.wrapper,
+    className: b.wrapper,
     children: [(0, r.jsx)(g.Z, {
-      className: N.boostIcon,
+      className: b.boostIcon,
       width: 16,
       height: 16
     }), (0, r.jsx)(a.Text, {
-      className: N.copy,
+      className: b.copy,
       color: "header-secondary",
       variant: "text-sm/medium",
       children: f.NW.format(f.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
-          let n = null != S,
+          let n = null != v,
             i = (0, r.jsx)(a.zxk, {
-              className: N.cta,
+              className: b.cta,
               disabled: n,
               color: a.zxk.Colors.LINK,
               look: a.zxk.Looks.LINK,
-              onClick: n ? void 0 : O,
+              onClick: n ? void 0 : C,
               children: e
             }, t);
           return n ? (0, r.jsx)(c.Z, {
-            text: S,
-            "aria-label": S.toString(),
-            children: e => (0, r.jsx)("span", x(b({}, e), {
+            text: v,
+            "aria-label": v.toString(),
+            children: e => (0, r.jsx)("span", x(N({}, e), {
               children: i
             }))
           }, t) : i

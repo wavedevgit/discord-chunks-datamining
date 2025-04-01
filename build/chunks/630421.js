@@ -52,15 +52,15 @@ function _(e) {
     };
   y = S.x, I = S.y;
   var T = p.hasOwnProperty("x"),
-    A = p.hasOwnProperty("y"),
-    N = r.t$,
+    N = p.hasOwnProperty("y"),
+    A = r.t$,
     C = r.we,
     R = window;
   if (g) {
     var P = (0, i.Z)(l),
       w = "clientHeight",
       D = "clientWidth";
-    P === (0, o.Z)(l) && (P = (0, a.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (C = r.I, I -= (b && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, I *= m ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (N = r.F2, y -= (b && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, y *= m ? 1 : -1)
+    P === (0, o.Z)(l) && (P = (0, a.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (C = r.I, I -= (b && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, I *= m ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (A = r.F2, y -= (b && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, y *= m ? 1 : -1)
   }
   var L = Object.assign({
       position: h
@@ -72,7 +72,7 @@ function _(e) {
       x: y,
       y: I
     };
-  return (y = x.x, I = x.y, m) ? Object.assign({}, L, ((n = {})[C] = A ? "0" : "", n[N] = T ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + y + "px, " + I + "px)" : "translate3d(" + y + "px, " + I + "px, 0)", n)) : Object.assign({}, L, ((t = {})[C] = A ? I + "px" : "", t[N] = T ? y + "px" : "", t.transform = "", t))
+  return (y = x.x, I = x.y, m) ? Object.assign({}, L, ((n = {})[C] = N ? "0" : "", n[A] = T ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + y + "px, " + I + "px)" : "translate3d(" + y + "px, " + I + "px, 0)", n)) : Object.assign({}, L, ((t = {})[C] = N ? I + "px" : "", t[A] = T ? y + "px" : "", t.transform = "", t))
 }
 let p = {
   name: "computeStyles",

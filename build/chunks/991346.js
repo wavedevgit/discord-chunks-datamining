@@ -10,8 +10,8 @@ var r = n(192379),
   i = n(442837),
   s = n(704215),
   a = n(493544),
-  l = n(634894),
-  o = n(211242),
+  o = n(634894),
+  l = n(211242),
   c = n(924557),
   d = n(706140),
   u = n(704454),
@@ -20,20 +20,20 @@ var r = n(192379),
   p = n(592204),
   h = n(610697),
   f = n(880257),
-  N = n(631885),
-  b = n(223639),
+  b = n(631885),
+  N = n(223639),
   x = n(160913),
   _ = n(725727),
   E = n(977156),
   j = n(921157),
-  C = n(667172),
-  O = n(237292),
-  S = n(314897),
-  v = n(906467),
+  O = n(667172),
+  C = n(237292),
+  v = n(314897),
+  S = n(906467),
   T = n(283595),
   I = n(699516),
-  A = n(663389),
-  y = n(594174),
+  y = n(663389),
+  A = n(594174),
   P = n(202527),
   R = n(413182),
   D = n(695346),
@@ -49,7 +49,7 @@ function U(e) {
   let {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
-  } = e, r = v.Z.isDeveloper, i = [{
+  } = e, r = S.Z.isDeveloper, i = [{
     header: M.NW.string(M.t.cduTBA),
     settings: n ? [L.s6.ACCOUNT, L.s6.GAMES, L.s6.PROFILE_CUSTOMIZATION, L.s6.CONTENT_SOCIAL, L.s6.DATA_PRIVACY, L.s6.PRIVACY_FAMILY_CENTER, L.s6.THIRD_PARTY_ACCESS, L.s6.SESSIONS, L.s6.CLIPS] : [L.s6.ACCOUNT, L.s6.GAMES, L.s6.PROFILE_CUSTOMIZATION, L.s6.CONTENT_SOCIAL, L.s6.DATA_PRIVACY, L.s6.PRIVACY_FAMILY_CENTER, L.s6.AUTHORIZED_APPS, L.s6.SESSIONS, L.s6.CONNECTIONS, L.s6.CLIPS]
   }, {
@@ -59,7 +59,7 @@ function U(e) {
   }, {
     header: M.NW.string(M.t.f2n1TE),
     divider: !0,
-    settings: [L.s6.APPEARANCE, L.s6.ACCESSIBILITY, L.s6.VOICE_AND_VIDEO, L.s6.POGGERMODE, L.s6.CHAT, L.s6.NOTIFICATIONS, L.s6.KEYBINDS, L.s6.LANGUAGE, L.s6.WINDOW_SETTINGS, L.s6.LINUX_SETTINGS, L.s6.STREAMER_MODE, L.s6.SETTINGS_ADVANCED]
+    settings: [L.s6.APPEARANCE, L.s6.ACCESSIBILITY, L.s6.VOICE_AND_VIDEO, L.s6.CLICKER_GAME, L.s6.POGGERMODE, L.s6.CHAT, L.s6.NOTIFICATIONS, L.s6.KEYBINDS, L.s6.LANGUAGE, L.s6.WINDOW_SETTINGS, L.s6.LINUX_SETTINGS, L.s6.STREAMER_MODE, L.s6.SETTINGS_ADVANCED]
   }, {
     divider: !0,
     settings: [L.s6.CHANGELOG, L.s6.MERCHANDISE, L.s6.HYPESQUAD, L.s6.TOWNHALL]
@@ -83,18 +83,18 @@ function U(e) {
 
 function V() {
   var e, t, n, a;
-  let v = (0, _.YO)().length,
+  let S = (0, _.YO)().length,
     R = (0, x.U)(),
-    W = (0, i.e7)([A.Z], () => A.Z.getProps().impressionSource),
-    L = (0, N.gU)(),
+    W = (0, i.e7)([y.Z], () => y.Z.getProps().impressionSource),
+    L = (0, b.gU)(),
     M = (0, k.bC)(),
     U = (0, c.Go)(),
     [V] = (0, d.cv)(U ? [s.z.CLIPS_SETTINGS_BETA_TAG] : []),
     G = "useGenerateUserSettingsSections";
-  (0, l.j)({
+  (0, o.j)({
     location: G + " auto on",
     autoTrackExposure: !0
-  }), (0, l.j)({
+  }), (0, o.j)({
     location: G + " auto off",
     autoTrackExposure: !1
   });
@@ -104,19 +104,19 @@ function V() {
     location: "settings"
   }), H = (0, p.Xo)({
     location: "settings"
-  }), z = null !== (n = null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, O.y0)({
+  }), z = null !== (n = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, C.y0)({
     location: "settings"
-  }), K = (0, C.v4)({
+  }), K = (0, O.v4)({
     location: "settings"
-  }), q = (0, o.Q)(), X = (0, E.Zy)({
+  }), q = (0, l.Q)(), X = (0, E.Zy)({
     location: B.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), {
     enabled: J
-  } = b.Z.useExperiment({
+  } = N.Z.useExperiment({
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
-  }), Q = (0, i.e7)([T.Z], () => T.Z.hasLibraryApplication()), $ = (0, i.e7)([S.default], () => S.default.hasTOTPEnabled()), ee = D.Sb.useSetting(), et = (0, h.Z)(), {
+  }), Q = (0, i.e7)([T.Z], () => T.Z.hasLibraryApplication()), $ = (0, i.e7)([v.default], () => v.default.hasTOTPEnabled()), ee = D.Sb.useSetting(), et = (0, h.Z)(), {
     hypeSquadRemoved: en
   } = g.Z.useExperiment({
     location: "settings"
@@ -126,16 +126,16 @@ function V() {
   } = (0, i.cj)([I.Z], () => ({
     hasBlockedUsers: I.Z.getBlockedIDs().length > 0,
     hasIgnoredUsers: I.Z.getIgnoredIDs().length > 0
-  })), el = (0, m.B)({
+  })), eo = (0, m.B)({
     location: "SettingRendererUtils"
   }), {
-    showRefreshedSettings: eo
+    showRefreshedSettings: el
   } = (0, w.F)({
     location: "SettingRendererUtils",
     autoTrackExposure: !1
   }), ec = (0, u.UQ)("SettingRendererUtils");
   return r.useMemo(() => (0, Z.i)({
-    unseenGiftCount: v,
+    unseenGiftCount: S,
     showPrepaidPaymentPastDueWarning: R,
     impressionSource: W,
     numOfPendingFamilyRequests: L,
@@ -158,10 +158,10 @@ function V() {
     hypeSquadRemoved: en,
     hasIgnoredUsers: ea,
     hasBlockedUsers: es,
-    isAllowGameFriendDMsVisible: el,
-    useRefreshedVoiceAndVideo: eo,
+    isAllowGameFriendDMsVisible: eo,
+    useRefreshedVoiceAndVideo: el,
     isEligibleForSensitiveContentDefaults: ec
-  }), [ee, V, es, ea, Q, ei, $, en, W, er, el, X, K, Y, H, M, z, et, L, q, F, J, R, v, eo, ec])
+  }), [ee, V, es, ea, Q, ei, $, en, W, er, eo, X, K, Y, H, M, z, et, L, q, F, J, R, S, el, ec])
 }
 
 function G(e) {
@@ -181,20 +181,20 @@ function G(e) {
       parent: n
     }] = e;
     return [t, n]
-  })), a = new Set, l = e => {
+  })), a = new Set, o = e => {
     let t = i[e];
     if (null == t) return;
     a.add(e);
     let n = t.parent;
-    null != n && l(n)
-  }, o = e => {
+    null != n && o(n)
+  }, l = e => {
     for (let t of (a.add(e), Object.entries(s).filter(t => {
         let [n, r] = t;
         return r === e
       }).map(e => {
         let [t] = e;
         return t
-      }))) o(t)
+      }))) l(t)
   };
   for (let e of t.filter(e => e in i))
     if (!a.has(e)) {
@@ -202,7 +202,7 @@ function G(e) {
         a.clear();
         break
       }
-      Object.values(s).includes(e) && o(e), l(e)
+      Object.values(s).includes(e) && l(e), o(e)
     } return a
 }
 

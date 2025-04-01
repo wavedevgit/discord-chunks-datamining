@@ -100,16 +100,16 @@ function T(e) {
   o.TO.CAMERA_BACKGROUND_LIVE in t && (m = !0)
 }
 
-function A() {
+function N() {
   g !== c.Z.getVoiceChannelId() && (E = !1), I() && (E = !0), g = c.Z.getVoiceChannelId()
 }
 
-function N() {
+function A() {
   m = !1, E = !1, g = null, b = {}
 }
 class C extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, c.Z, l.Z), this.syncWith([c.Z, l.Z], A)
+    this.waitFor(s.Z, c.Z, l.Z), this.syncWith([c.Z, l.Z], N)
   }
   get videoFilterAssets() {
     return b
@@ -128,5 +128,5 @@ let R = new C(a.Z, {
   VIDEO_FILTER_ASSET_DELETE_SUCCESS: O,
   VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: S,
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: T,
-  LOGOUT: N
+  LOGOUT: A
 })

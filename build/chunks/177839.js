@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(399606),
-  o = n(481060),
+  o = n(399606),
+  l = n(481060),
   c = n(607070),
   d = n(100527),
   u = n(906732),
@@ -16,23 +16,23 @@ var r = n(200651),
   p = n(477734),
   h = n(626135),
   f = n(881100),
-  N = n(981631),
-  b = n(388032),
+  b = n(981631),
+  N = n(388032),
   x = n(621337);
-let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
+let _ = e => e ? N.NW.string(N.t.QX14gI) : N.NW.string(N.t.RGadQU),
   E = e => {
     let {
       isShowingAll: t,
       onClick: n
     } = e;
-    return (0, r.jsxs)(o.P3F, {
+    return (0, r.jsxs)(l.P3F, {
       onClick: n,
       className: x.customButton,
-      children: [t ? b.NW.string(b.t.maZaNz) : b.NW.string(b.t["37C26e"]), t ? (0, r.jsx)(o.u04, {
+      children: [t ? N.NW.string(N.t.maZaNz) : N.NW.string(N.t["37C26e"]), t ? (0, r.jsx)(l.u04, {
         size: "md",
         color: "currentColor",
         className: x.arrow
-      }) : (0, r.jsx)(o.CJ0, {
+      }) : (0, r.jsx)(l.CJ0, {
         size: "md",
         color: "currentColor",
         className: x.arrow
@@ -45,7 +45,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
       description: n,
       className: i,
       imageSource: s,
-      imageClassName: l,
+      imageClassName: o,
       titleBadge: c,
       isNew: p = !1,
       isEarlyAccess: h = !1
@@ -65,13 +65,13 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
         }) : null, (0, r.jsx)("img", {
           src: s,
           alt: "",
-          className: a()(l, x.perksCardArt)
+          className: a()(o, x.perksCardArt)
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsxs)(o.X6q, {
+          children: [(0, r.jsxs)(l.X6q, {
             variant: "heading-lg/extrabold",
             className: x.perkCardHeading,
             children: [t, " ", c]
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             className: x.perkCardDescription,
             children: "function" == typeof n ? n(f) : n
@@ -80,22 +80,22 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
       })
     })
   },
-  C = e => {
+  O = e => {
     let {
       className: t,
       isSubscriberNitroHome: n = !1
     } = e, [s, d] = i.useState(!1), m = (0, f.N)({
       styles: x
-    }), g = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), {
-      analyticsLocations: b
-    } = (0, u.ZP)(), C = (0, p._f)(), O = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, C ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
+    }), g = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), {
+      analyticsLocations: N
+    } = (0, u.ZP)(), O = (0, p._f)(), C = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
     return (0, r.jsxs)("div", {
       className: a()(x.perksContainer, t, {
         [x.partiallyHidden]: n && !s,
         [x.subscriberNitroHome]: n,
         [x.reducedMotion]: g
       }),
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(l.X6q, {
         variant: "heading-xxl/extrabold",
         className: x.perksTitle,
         children: _(n)
@@ -103,7 +103,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
         className: a()(x.perkCardContainer, {
           [x.perkCardContainerExpanded]: s
         }),
-        children: O.map(e => null != e && (0, r.jsx)(j, function(e) {
+        children: C.map(e => null != e && (0, r.jsx)(j, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -129,8 +129,8 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
           }),
           children: (0, r.jsx)(E, {
             onClick: () => {
-              h.default.track(N.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-                location_stack: b,
+              h.default.track(b.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                location_stack: N,
                 was_expanded: s
               }), d(!s)
             },

@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => S
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(622535),
+  o = n(442837),
+  l = n(622535),
   c = n(481060),
   d = n(607070),
   u = n(100527),
@@ -16,24 +16,24 @@ var r = n(200651),
   p = n(626135),
   h = n(695349),
   f = n(103433),
-  N = n(166021),
-  b = n(32173),
+  b = n(166021),
+  N = n(32173),
   x = n(391110),
   _ = n(75077),
   E = n(981631),
   j = n(388032),
-  C = n(26526),
-  O = n(865215);
-let S = e => {
+  O = n(26526),
+  C = n(865215);
+let v = e => {
   let t, n, {
       isAllPerksVisible: s,
-      setIsAllPerksVisible: S,
-      previousComponent: v,
+      setIsAllPerksVisible: v,
+      previousComponent: S,
       isFullScreen: T
     } = e,
     I = i.useRef(null),
-    A = i.useRef(null),
-    y = Object.entries((0, b.Z)()).reduce((e, t) => {
+    y = i.useRef(null),
+    A = Object.entries((0, N.Z)()).reduce((e, t) => {
       let [n, r] = t;
       return !1 !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
@@ -41,42 +41,42 @@ let S = e => {
       analyticsLocations: P
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [R, D] = i.useState(!1),
-    Z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
+    Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion),
     w = (0, _.mN)(),
     {
       fractionalState: k
     } = (0, g.Z)(),
     W = (0, h.W)();
   return w ? (t = j.NW.string(j.t["+vt7w8"]), n = j.NW.string(j.t.LgHbnJ)) : (t = j.NW.string(j.t.LgHbnJ), n = j.NW.string(j.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
-    className: a()(C.allPerksScroller, {
-      [C.open]: s,
-      [C.openCloseReduceMotion]: Z
+    className: a()(O.allPerksScroller, {
+      [O.open]: s,
+      [O.openCloseReduceMotion]: Z
     }),
     ref: I,
     children: (0, r.jsx)("div", {
-      className: C.container,
+      className: O.container,
       children: (0, r.jsxs)(m.Gt, {
         value: P,
         children: [(0, r.jsx)(f.Z, {
-          className: C.heroHeading,
+          className: O.heroHeading,
           onBackClick: () => {
-            S(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
+            v(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
               current_component: x.MQ.SEE_ALL,
-              next_component: v,
+              next_component: S,
               interaction_component: "Back Button"
             })
           }
         }), (0, r.jsxs)("div", {
-          className: C.column,
+          className: O.column,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: C.heading,
+            className: O.heading,
             children: t
-          }), (0, r.jsx)(N.Z, {
-            className: C.cardCarousel,
+          }), (0, r.jsx)(b.Z, {
+            className: O.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: y,
+              perksCards: A,
               variant: x.R0.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: w,
               isFullScreen: T,
@@ -87,12 +87,12 @@ let S = e => {
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: C.heading,
+            className: O.heading,
             children: n
-          }), (0, r.jsx)(N.Z, {
-            className: C.cardCarousel,
+          }), (0, r.jsx)(b.Z, {
+            className: O.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: y,
+              perksCards: A,
               variant: x.R0.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: w,
               isFullScreen: T,
@@ -103,12 +103,12 @@ let S = e => {
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: C.heading,
+            className: O.heading,
             children: j.NW.string(j.t.LTaxu7)
-          }), (0, r.jsx)(N.Z, {
-            className: C.cardCarousel,
+          }), (0, r.jsx)(b.Z, {
+            className: O.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: y,
+              perksCards: A,
               variant: x.R0.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: w,
               isFullScreen: T,
@@ -118,21 +118,21 @@ let S = e => {
             cardType: x.R0.CARD_CAROUSEL_THIRD_ROW
           })]
         }), (0, r.jsx)("div", {
-          className: C.footerSpacing
-        }), (0, r.jsx)(o.$, {
-          innerRef: A,
+          className: O.footerSpacing
+        }), (0, r.jsx)(l.$, {
+          innerRef: y,
           onChange: e => {
             e && !R && (p.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: P
             }), D(!0))
           },
           children: (0, r.jsx)("div", {
-            ref: A,
-            className: C.bottomOfPageVisibilitySensor
+            ref: y,
+            className: O.bottomOfPageVisibilitySensor
           })
         }), (0, r.jsx)("img", {
-          src: O,
-          className: C.bottomIllustration,
+          src: C,
+          className: O.bottomIllustration,
           width: 112,
           height: 85,
           alt: j.NW.string(j.t.X4IxWF)

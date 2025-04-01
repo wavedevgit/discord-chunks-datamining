@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $z: () => R,
-  BH: () => N,
+  BH: () => A,
   BO: () => w,
   D7: () => x,
   Dd: () => C,
@@ -12,7 +12,7 @@ n.d(t, {
   XA: () => j,
   Z8: () => O,
   bD: () => P,
-  nG: () => A,
+  nG: () => N,
   qJ: () => U,
   t0: () => G,
   tI: () => M
@@ -203,7 +203,7 @@ function T(e) {
   })), l
 }
 
-function A(e, t) {
+function N(e, t) {
   return l().flatMap(e, e => (a()(null != e.id, "Missing command id"), T({
     rootCommand: e,
     command: e,
@@ -213,7 +213,7 @@ function A(e, t) {
   })))
 }
 
-function N(e) {
+function A(e) {
   return m.Xyh.test(e.trim())
 }
 

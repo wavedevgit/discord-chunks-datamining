@@ -381,7 +381,7 @@ function T(e) {
   if (null != r[t] && r[t].version === o) return !1;
   let s = [];
   n.forEach((e, t) => {
-    let n = A(e.type),
+    let n = N(e.type),
       r = v(E({}, e), {
         zIndex: t
       });
@@ -397,7 +397,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let t = r[y];
   if (null != t)
     for (let n of t.widgets) {
@@ -407,7 +407,7 @@ function A(e) {
   return null
 }
 
-function N(e, t) {
+function A(e, t) {
   let n = i[e];
   if (null == n) return !1;
   let o = r[n.layoutId];
@@ -421,14 +421,14 @@ function C(e) {
     size: r,
     opacity: i
   } = e;
-  return N(t, (e, t) => x(e, n, r, i))
+  return A(t, (e, t) => x(e, n, r, i))
 }
 
 function R(e) {
   let {
     widgetId: t
   } = e;
-  return N(t, (e, t) => P(t, e.id))
+  return A(t, (e, t) => P(t, e.id))
 }
 
 function P(e, t) {
@@ -446,7 +446,7 @@ function w(e) {
     widgetId: t,
     meta: n
   } = e;
-  return N(t, (e, t) => {
+  return A(t, (e, t) => {
     D(e, n)
   })
 }
@@ -464,7 +464,7 @@ function L(e) {
   let {
     widgetId: t
   } = e;
-  return N(t, (e, t) => {
+  return A(t, (e, t) => {
     G(e)
   })
 }

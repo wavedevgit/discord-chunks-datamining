@@ -1,22 +1,22 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 });
 var r = n(192379),
-  i = n(442837),
-  l = n(569545),
-  o = n(959457),
-  a = n(626135),
+  l = n(442837),
+  i = n(569545),
+  a = n(959457),
+  o = n(626135),
   s = n(981631),
-  c = n(474936);
+  u = n(474936);
 
-function u(e, t) {
+function c(e, t) {
   let {
     handleMouseDown: n,
-    handleMouseMove: u,
+    handleMouseMove: c,
     handleMouseUp: d,
     handleMouseEnter: f
-  } = e, m = r.useRef(null), p = (0, i.e7)([o.Z], () => o.Z.getRTCConnection((0, l.V9)(t))), h = r.useCallback((e, t, r) => {
+  } = e, m = r.useRef(null), p = (0, l.e7)([a.Z], () => a.Z.getRTCConnection((0, i.V9)(t))), E = r.useCallback((e, t, r) => {
     m.current = Date.now(), n(e, t, r)
   }, [n]);
   return {
@@ -24,9 +24,9 @@ function u(e, t) {
       if (d(e, t, n), null != m.current) {
         if (null != p) {
           var r;
-          r = Date.now() - m.current, a.default.track(s.rMx.PREMIUM_FEATURE_USAGE, {
-            feature_name: "".concat(c.QP.SHARED_CANVAS, "_").concat(e.type),
-            feature_tier: c.h1.FREE,
+          r = Date.now() - m.current, o.default.track(s.rMx.PREMIUM_FEATURE_USAGE, {
+            feature_name: "".concat(u.QP.SHARED_CANVAS, "_").concat(e.type),
+            feature_tier: u.h1.FREE,
             media_session_id: p.getMediaSessionId(),
             parent_media_session_id: p.parentMediaSessionId,
             guild_id: p.guildId,
@@ -36,8 +36,8 @@ function u(e, t) {
         m.current = null
       }
     }, [d, p]),
-    handleMouseDown: h,
-    handleMouseMove: u,
+    handleMouseDown: E,
+    handleMouseMove: c,
     handleMouseEnter: f
   }
 }

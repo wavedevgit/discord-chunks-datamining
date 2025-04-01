@@ -96,8 +96,8 @@ function v(e) {
     },
     onComponentMount: S,
     asset: T,
-    markAsDismissed: A,
-    caretPosition: N = "caretTopCenter",
+    markAsDismissed: N,
+    caretPosition: A = "caretTopCenter",
     buttonLayout: C = 0
   } = e;
   (0, s.ZP)(() => {
@@ -105,13 +105,13 @@ function v(e) {
   });
   let R = null != m,
     P = e => {
-      v(e), null == A || A(l.L.PRIMARY)
+      v(e), null == N || N(l.L.PRIMARY)
     },
     w = () => {
-      null == y || y(), null == A || A(l.L.SECONDARY)
+      null == y || y(), null == N || N(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
-    className: o()(n, g[t], c.upsellTooltipWrapper, c[N]),
+    className: o()(n, g[t], c.upsellTooltipWrapper, c[A]),
     children: [T, null == i ? null : (0, r.jsx)(a.X6q, {
       color: E[t],
       className: o()(u, c.upsellTooltipHeader),

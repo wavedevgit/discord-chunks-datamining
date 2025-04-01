@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(846027),
   d = n(921801),
   u = n(131951),
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(388032),
   f = n(685786);
 
-function N(e) {
+function b(e) {
   let {
     refreshStyles: t = !1
-  } = e, n = (0, l.e7)([u.Z], () => u.Z.getExperimentalEncoders());
+  } = e, n = (0, o.e7)([u.Z], () => u.Z.getExperimentalEncoders());
   return (0, r.jsx)(d.F, {
     setting: p.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_EXPERIMENTAL_ENCODERS,
-    children: (0, r.jsx)(o.j7V, {
+    children: (0, r.jsx)(l.j7V, {
       className: a()(f.marginTop8, f.marginBottom20),
       value: n,
       onChange: c.Z.setExperimentalEncoders,
@@ -33,21 +33,21 @@ function N(e) {
   })
 }
 
-function b(e) {
+function N(e) {
   let {
     refreshStyles: t = !1
   } = e, {
     openH264: n,
     hardwareEncoding: s
-  } = (0, l.cj)([u.Z], () => ({
+  } = (0, o.cj)([u.Z], () => ({
     openH264: u.Z.getOpenH264(),
     hardwareEncoding: u.Z.getHardwareEncoding()
-  })), b = i.useRef(null);
-  (0, m.Z)(b, g.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
+  })), N = i.useRef(null);
+  (0, m.Z)(N, g.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
   let x = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.F, {
       setting: p.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
-      children: (0, r.jsx)(o.j7V, {
+      children: (0, r.jsx)(l.j7V, {
         className: t ? null : a()(f.marginTop8, f.marginBottom20),
         value: n,
         onChange: c.Z.setOpenH264,
@@ -56,11 +56,11 @@ function b(e) {
       })
     }), (0, r.jsx)(d.F, {
       setting: p.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_HARDWARE_ACCELERATION,
-      children: (0, r.jsx)(o.j7V, {
+      children: (0, r.jsx)(l.j7V, {
         style: {
           scrollMarginTop: "48px"
         },
-        containerRef: b,
+        containerRef: N,
         className: t ? null : a()(f.marginTop8, f.marginBottom20),
         value: s,
         onChange: c.Z.setHardwareEncoding,
@@ -68,13 +68,13 @@ function b(e) {
         hideBorder: t,
         children: h.NW.string(h.t.Sln58f)
       })
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(b, {
       refreshStyles: t
     })]
   });
   return (0, r.jsx)(d.F, {
     setting: p.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-    children: t ? x : (0, r.jsx)(o.hjN, {
+    children: t ? x : (0, r.jsx)(l.hjN, {
       className: f.marginBottom20,
       title: h.NW.string(h.t.Tceiq6),
       children: x

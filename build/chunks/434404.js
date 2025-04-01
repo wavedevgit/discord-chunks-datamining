@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -230,10 +230,10 @@ let P = new s.Z("GuildSettingsActionCreators"),
         rulesChannelId: v,
         safetyAlertsChannelId: I,
         discoverySplash: S,
-        publicUpdatesChannelId: A,
+        publicUpdatesChannelId: N,
         premiumProgressBarEnabled: C,
         profile: R
-      } = t, w = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, D = N(T({
+      } = t, w = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, D = A(T({
         name: n,
         description: r,
         icon: a,
@@ -251,7 +251,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
         system_channel_flags: E,
         rules_channel_id: v,
         discovery_splash: S,
-        public_updates_channel_id: A,
+        public_updates_channel_id: N,
         safety_alerts_channel_id: I
       }, null != C ? {
         premium_progress_bar_enabled: C

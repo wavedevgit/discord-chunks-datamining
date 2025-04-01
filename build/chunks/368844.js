@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Ah: () => E,
-  CB: () => A,
+  CB: () => N,
   aU: () => O,
-  cp: () => N,
+  cp: () => A,
   eL: () => S,
   vg: () => T,
   zy: () => I
@@ -153,7 +153,7 @@ function T(e, t) {
   return null == n[0] && null != r[0]
 }
 
-function A(e, t) {
+function N(e, t) {
   var n;
   let r = s.Z.getChannel(t);
   if (null == r) return !1;
@@ -161,7 +161,7 @@ function A(e, t) {
   return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === o.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => h(e) || m(e)))
 }
 
-function N(e) {
+function A(e) {
   return e.reduce((e, t) => ({
     containsVideo: e.containsVideo || t.isVideo,
     containsGif: e.containsGif || (0, i.d$)(t.src)

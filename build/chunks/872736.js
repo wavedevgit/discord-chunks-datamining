@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
@@ -8,7 +8,7 @@ var i = n(481060),
   s = n(695346),
   a = n(388032);
 
-function l(e) {
+function o(e) {
   let t = s.R_.useSetting();
   return (0, r.jsx)(i.j7V, {
     hideBorder: !0,

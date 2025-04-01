@@ -27,29 +27,29 @@ let p = function(e) {
     [b, v] = i.useState(!1),
     [y, O] = i.useState(!1),
     [I, S] = i.useState(null),
-    [T, A] = i.useState({}),
-    N = (0, o.useElements)(),
+    [T, N] = i.useState({}),
+    A = (0, o.useElements)(),
     C = i.useCallback(() => {
-      if (null != N) switch (n) {
+      if (null != A) switch (n) {
         case "cardNumber": {
-          let e = N.getElement(o.CardNumberElement);
+          let e = A.getElement(o.CardNumberElement);
           if (null == e) return;
           e.off("change"), e.off("focus"), e.off("blur");
           break
         }
         case "cardExpiry": {
-          let e = N.getElement(o.CardExpiryElement);
+          let e = A.getElement(o.CardExpiryElement);
           if (null == e) return;
           e.off("change"), e.off("focus"), e.off("blur");
           break
         }
         case "cardCvc": {
-          let e = N.getElement(o.CardCvcElement);
+          let e = A.getElement(o.CardCvcElement);
           if (null == e) return;
           e.off("change"), e.off("focus"), e.off("blur")
         }
       }
-    }, [N, n]),
+    }, [A, n]),
     R = i.useCallback(e => {
       y || e.empty || O(!0), null != p && p(e.complete), null != e.error && v(!1)
     }, [y, p]),
@@ -60,9 +60,9 @@ let p = function(e) {
       v(!1), null == m || m()
     }, [m]),
     D = i.useCallback(() => {
-      if (null != N) switch (n) {
+      if (null != A) switch (n) {
         case "cardNumber": {
-          let e = N.getElement(o.CardNumberElement);
+          let e = A.getElement(o.CardNumberElement);
           if (null == e) return;
           e.on("change", e => {
             g !== e.brand && E(e.brand), e.empty && y ? S(d.NW.string(d.t.eOIfu7)) : null != e.error ? S(d.NW.string(d.t.x4pWtL)) : S(null), R(e)
@@ -70,7 +70,7 @@ let p = function(e) {
           break
         }
         case "cardExpiry": {
-          let e = N.getElement(o.CardExpiryElement);
+          let e = A.getElement(o.CardExpiryElement);
           if (null == e) return;
           e.on("change", e => {
             null != e.error || e.empty && y ? S(d.NW.string(d.t["9/zZdn"])) : S(null), R(e)
@@ -78,14 +78,14 @@ let p = function(e) {
           break
         }
         case "cardCvc": {
-          let e = N.getElement(o.CardCvcElement);
+          let e = A.getElement(o.CardCvcElement);
           if (null == e) return;
           e.on("change", e => {
             null != e.error || e.empty && y ? S(d.NW.string(d.t.ro4isb)) : S(null), R(e)
           }), e.on("focus", P), e.on("blur", w)
         }
       }
-    }, [w, R, P, g, N, y, n]);
+    }, [w, R, P, g, A, y, n]);
   i.useEffect(() => (D(), () => {
     C()
   }), [D, C]);
@@ -142,7 +142,7 @@ let p = function(e) {
     if (null == e) return;
     let n = window.getComputedStyle(e),
       r = n.getPropertyValue("font-family");
-    A({
+    N({
       base: {
         fontFamily: r,
         fontWeight: n.getPropertyValue("font-weight"),

@@ -63,18 +63,18 @@ function T() {
   }
 }
 
-function A() {
+function N() {
   return (0, b.Z)({
     LayerStore: u.Z,
     PopoutWindowStore: l.Z
   }) ? I() : S()
 }
-class N extends s.Z {
+class A extends s.Z {
   _initialize() {
-    _.Z.addChangeListener(T), p.Z.addChangeListener(T), f.Z.addChangeListener(T), h.Z.addChangeListener(T), l.Z.addChangeListener(T), g.ZP.addChangeListener(T), u.Z.addChangeListener(A)
+    _.Z.addChangeListener(T), p.Z.addChangeListener(T), f.Z.addChangeListener(T), h.Z.addChangeListener(T), l.Z.addChangeListener(T), g.ZP.addChangeListener(T), u.Z.addChangeListener(N)
   }
   _terminate() {
-    _.Z.removeChangeListener(T), p.Z.removeChangeListener(T), f.Z.removeChangeListener(T), h.Z.removeChangeListener(T), l.Z.removeChangeListener(T), g.ZP.removeChangeListener(T), u.Z.removeChangeListener(A)
+    _.Z.removeChangeListener(T), p.Z.removeChangeListener(T), f.Z.removeChangeListener(T), h.Z.removeChangeListener(T), l.Z.removeChangeListener(T), g.ZP.removeChangeListener(T), u.Z.removeChangeListener(N)
   }
 }
-let C = new N
+let C = new A

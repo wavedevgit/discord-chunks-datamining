@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(568611),
-  o = n(435935),
+  o = n(568611),
+  l = n(435935),
   c = n(442837),
   d = n(481060),
   u = n(37234),
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(695346),
   h = n(981631),
   f = n(930441),
-  N = n(378392),
-  b = n(388032),
+  b = n(378392),
+  N = n(388032),
   x = n(500378),
   _ = n(685786);
 let E = () => {
@@ -33,28 +33,28 @@ let E = () => {
     children: [(0, r.jsx)(d.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: b.NW.string(N.Z.USIXU1)
+      children: N.NW.string(b.Z.USIXU1)
     }), (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop8, _.marginBottom20),
       value: e,
-      note: b.NW.string(N.Z["5MdB3t"]),
+      note: N.NW.string(b.Z["5MdB3t"]),
       hideBorder: !0,
       onChange: p.Ex.updateSetting,
-      children: b.NW.string(N.Z.zkEceX)
+      children: N.NW.string(b.Z.zkEceX)
     }), e ? (0, r.jsx)(d.Zbd, {
       className: x.enableCard,
       type: d.Zbd.Types.CUSTOM,
       outline: !0,
-      children: (0, r.jsxs)(o.k, {
-        justify: o.k.Justify.END,
-        children: [(0, r.jsx)(o.k.Child, {
+      children: (0, r.jsxs)(l.k, {
+        justify: l.k.Justify.END,
+        children: [(0, r.jsx)(l.k.Child, {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: b.NW.string(N.Z.xAVm7O)
+            children: N.NW.string(b.Z.xAVm7O)
           })
         }), (0, r.jsx)(d.P3F, {
-          children: (0, r.jsx)(l.rU, {
+          children: (0, r.jsx)(o.rU, {
             onClick: u.xf,
             to: {
               pathname: h.Z5c.FAMILY_CENTER,
@@ -62,7 +62,7 @@ let E = () => {
                 scrollRestoration: !1
               }
             },
-            children: b.NW.string(N.Z.cUIXFR)
+            children: N.NW.string(b.Z.cUIXFR)
           })
         }), (0, r.jsx)(d.G2e, {
           icon: d.ZSh,
@@ -73,12 +73,12 @@ let E = () => {
     }) : null, (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop20, _.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
-      note: b.NW.string(N.Z["y34S4+"]),
+      note: N.NW.string(b.Z["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
         (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
-      children: b.NW.string(N.Z.irvJKS)
+      children: N.NW.string(b.Z.irvJKS)
     })]
   })
 }

@@ -7,7 +7,7 @@ var r = n(200651),
   s = n(481060),
   a = n(218872);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,7 +15,7 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = /[^0-9]/g;
+let l = /[^0-9]/g;
 class c extends i.PureComponent {
   componentDidUpdate(e) {
     let t = this._inputRef;
@@ -30,7 +30,7 @@ class c extends i.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          l(e, t, n[t])
+          o(e, t, n[t])
         })
       }
       return e
@@ -50,20 +50,20 @@ class c extends i.PureComponent {
     }), e))
   }
   constructor(...e) {
-    super(...e), l(this, "_inputRef", void 0), l(this, "selectionStart", 0), l(this, "setRef", e => {
+    super(...e), o(this, "_inputRef", void 0), o(this, "selectionStart", 0), o(this, "setRef", e => {
       let {
         inputRef: t
       } = this.props;
       this._inputRef = e, null != t && t(e)
-    }), l(this, "handleChange", (e, t) => {
+    }), o(this, "handleChange", (e, t) => {
       let {
         value: n,
         onChange: r
       } = this.props, i = this._inputRef;
       if (e === n || null == i || null == n) return;
       let s = (0, a.M)(e),
-        l = i.selectionStart;
-      s === n && s.length <= 3 && n.includes("/") && !e.includes("/") ? s = s.replace(o, "") : s === n && e.includes("/") && !n.includes("/") && (s += "/"), s.length > e.length && (l += s.length - e.length), this.selectionStart = l, null != r && r(s, t)
+        o = i.selectionStart;
+      s === n && s.length <= 3 && n.includes("/") && !e.includes("/") ? s = s.replace(l, "") : s === n && e.includes("/") && !n.includes("/") && (s += "/"), s.length > e.length && (o += s.length - e.length), this.selectionStart = o, null != r && r(s, t)
     })
   }
 }

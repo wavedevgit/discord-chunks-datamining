@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,14 +48,14 @@ function A(e) {
   }
   return e
 }
-let N = O.kod,
+let A = O.kod,
   C = {},
   R = new Set,
   P = 0;
 
 function w(e) {
   var t;
-  let n = C[null != e ? e : N];
+  let n = C[null != e ? e : A];
   return {
     unread: !1,
     unreadByType: {},
@@ -70,7 +70,7 @@ function w(e) {
 
 function D(e) {
   var t;
-  return C[null != e ? e : N] = null !== (t = C[null != e ? e : N]) && void 0 !== t ? t : w(e)
+  return C[null != e ? e : A] = null !== (t = C[null != e ? e : A]) && void 0 !== t ? t : w(e)
 }
 
 function L(e) {
@@ -98,7 +98,7 @@ function j(e, t, n) {
 
 function U(e) {
   switch (e) {
-    case N:
+    case A:
     case null:
     case void 0:
       return null;
@@ -114,7 +114,7 @@ function G(e, t) {
 
 function B(e, t) {
   let n = w(e);
-  return n.mentionCounts = A({}, t.mentionCounts), n.unreadByType = A({}, t.unreadByType), n
+  return n.mentionCounts = N({}, t.mentionCounts), n.unreadByType = N({}, t.unreadByType), n
 }
 
 function F(e) {
@@ -130,7 +130,7 @@ function Z(e, t, n) {
       isMentionLowImportance: r
     } = e;
     r ? t.lowImportanceMentionCount += n : t.highImportanceMentionCount += n
-  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : N] = t, null != e && (t.unread ? R.add(e) : R.delete(e)), P++, L(null != e ? e : N), !0)
+  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : A] = t, null != e && (t.unread ? R.add(e) : R.delete(e)), P++, L(null != e ? e : A), !0)
 }
 
 function H(e, t) {
@@ -234,7 +234,7 @@ function Y(e, t) {
   }
   F(r);
   let f = D(n);
-  return (r.unread !== f.unread || r.highImportanceMentionCount !== f.highImportanceMentionCount || r.lowImportanceMentionCount !== f.lowImportanceMentionCount) && (C[null != n ? n : N] = r, null != n && (r.unread ? R.add(n) : R.delete(n)), P++, L(null != n ? n : N), !0)
+  return (r.unread !== f.unread || r.highImportanceMentionCount !== f.highImportanceMentionCount || r.lowImportanceMentionCount !== f.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? R.add(n) : R.delete(n)), P++, L(null != n ? n : A), !0)
 }
 
 function K(e) {
@@ -438,7 +438,7 @@ function eg(e) {
     userGuildSettings: t
   } = e, n = new Set(t.map(e => {
     var t;
-    return null !== (t = e.guild_id) && void 0 !== t ? t : N
+    return null !== (t = e.guild_id) && void 0 !== t ? t : A
   }));
   return f.default.keys(C).reduce((e, t) => n.has(t) && Y(t) || e, !1)
 }
@@ -519,7 +519,7 @@ class ey extends b.Z {
     let t = 0;
     for (let n in C) {
       let r = C[n];
-      (!0 !== e || n !== N) && (t += r.highImportanceMentionCount)
+      (!0 !== e || n !== A) && (t += r.highImportanceMentionCount)
     }
     return t
   }
@@ -527,18 +527,18 @@ class ey extends b.Z {
     let t = 0;
     for (let n in C) {
       let r = C[n];
-      (!0 !== e || n !== N) && (t += r.ncMentionCount)
+      (!0 !== e || n !== A) && (t += r.ncMentionCount)
     }
     return t
   }
   getPrivateChannelMentionCount() {
     var e;
-    let t = C[N];
+    let t = C[A];
     return null !== (e = null == t ? void 0 : t.highImportanceMentionCount) && void 0 !== e ? e : 0
   }
   getMentionCountForPrivateChannel(e) {
     var t, n;
-    return null !== (n = null === (t = C[N]) || void 0 === t ? void 0 : t.mentionCounts[e]) && void 0 !== n ? n : 0
+    return null !== (n = null === (t = C[A]) || void 0 === t ? void 0 : t.mentionCounts[e]) && void 0 !== n ? n : 0
   }
   getGuildChangeSentinel(e) {
     return D(e).sentinel

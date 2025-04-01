@@ -40,7 +40,7 @@ function _(e) {
     canAnimate: !1
   }));
   let T = h(c.thumbnail) && !y,
-    A = (null === (t = c.thumbnail) || void 0 === t ? void 0 : t.filename) != null && (null === (r = c.thumbnail) || void 0 === r ? void 0 : null === (n = r.filename) || void 0 === n ? void 0 : n.startsWith(u._j));
+    N = (null === (t = c.thumbnail) || void 0 === t ? void 0 : t.filename) != null && (null === (r = c.thumbnail) || void 0 === r ? void 0 : null === (n = r.filename) || void 0 === n ? void 0 : n.startsWith(u._j));
   return {
     title: null !== (i = c.title) && void 0 !== i ? i : "",
     subtitle: c.description,
@@ -60,7 +60,7 @@ function _(e) {
     avatarUrl: S,
     shouldShowBlurredThumbnailImage: y,
     shouldContainMediaWithBackground: T,
-    shouldSpoiler: A,
+    shouldSpoiler: N,
     obscureAwaitingScan: !1,
     flags: c.flags,
     contentScanVersion: c.content_scan_version

@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(474936),
   S = n(981631),
   T = n(388032),
-  A = n(610555),
-  N = n(769860);
+  N = n(610555),
+  A = n(769860);
 
 function C(e, t) {
   if (null == e) return {};
@@ -165,26 +165,26 @@ function P(e) {
         buttonText: null != z ? z : e
       })
     },
-    eI = X ? a()(A.artContainer, A.artContainerBoxShadow, G) : a()(A.artContainer, G),
+    eI = X ? a()(N.artContainer, N.artContainerBoxShadow, G) : a()(N.artContainer, G),
     eS = null;
   return null != ed.artURL ? eS = (0, r.jsx)("img", {
-    className: A.art,
+    className: N.art,
     alt: "",
     src: ed.artURL
   }) : null != ed.artElement && (eS = ed.artElement), (0, r.jsxs)(l.Y0X, {
-    className: a()(A.root, !eh && j),
+    className: a()(N.root, !eh && j),
     "aria-label": R,
     transitionState: V,
     children: [null != eS && (0, r.jsxs)("div", {
       className: eI,
       children: [eS, q ? (0, r.jsx)("img", {
-        className: A.sparkleBadge,
+        className: N.sparkleBadge,
         alt: "",
-        src: N
+        src: A
       }) : null]
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: a()(en ? A.enhancedContent : A.content, !eh && U),
+      className: a()(en ? N.enhancedContent : N.content, !eh && U),
       children: $ ? (0, r.jsx)(l.$jN, {}) : eh ? (0, r.jsx)(b.ZP, {
         onClose: Z,
         type: P,
@@ -196,37 +196,37 @@ function P(e) {
         trialOffer: e_,
         children: k
       }) : (0, r.jsxs)("div", {
-        className: A.contentContainer,
+        className: N.contentContainer,
         children: [es, (0, r.jsxs)("div", {
-          className: A.bodyContent,
+          className: N.bodyContent,
           children: [(0, r.jsxs)(l.X6q, {
-            className: a()(A.header, {
-              [A.enhancedHeader]: en
+            className: a()(N.header, {
+              [N.enhancedHeader]: en
             }, B),
             variant: "heading-xl/bold",
             children: [R, Q ? (0, r.jsx)(f.Z, {
-              className: A.betaTag
+              className: N.betaTag
             }) : null]
           }), ev ? (0, r.jsx)(y.Z, {
             affinities: eb
           }) : void 0, ea, (0, r.jsx)(l.Text, {
             variant: ec ? "text-sm/normal" : "text-md/normal",
-            className: a()(F, A.subHeader),
+            className: a()(F, N.subHeader),
             children: x
           })]
         })]
       })
     }), (0, r.jsxs)(l.mzw, {
-      className: a()(A.footer, eu, {
-        [A.enhancedFooter]: en
+      className: a()(N.footer, eu, {
+        [N.enhancedFooter]: en
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(A.primaryActions, {
-          [A.enhancedPrimaryActions]: en
+        className: a()(N.primaryActions, {
+          [N.enhancedPrimaryActions]: en
         }),
         children: [null != K ? (0, r.jsx)(l.zxk, {
-          className: a()(A.secondaryAction, {
-            [A.enhancedSecondaryAction]: en
+          className: a()(N.secondaryAction, {
+            [N.enhancedSecondaryAction]: en
           }),
           onClick: Y,
           size: l.zxk.Sizes.SMALL,
@@ -243,7 +243,7 @@ function P(e) {
       })]
     }), en ? (0, r.jsx)(l.olH, {
       onClick: Z,
-      className: A.closeButton
+      className: N.closeButton
     }) : null, el]
   })
 }

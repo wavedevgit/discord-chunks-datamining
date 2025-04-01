@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(230711),
-  l = n(124570),
-  o = n(267642),
+  o = n(124570),
+  l = n(267642),
   c = n(981631),
   d = n(474936),
   u = n(388032),
@@ -50,8 +50,8 @@ function h(e) {
     guildBoostSlot: t,
     onClose: h,
     hasCancelableGuildBoostSlot: f,
-    premiumSubscription: N,
-    onSelect: b,
+    premiumSubscription: b,
+    onSelect: N,
     fractionalState: x,
     user: _
   } = e, E = {
@@ -71,23 +71,23 @@ function h(e) {
       disabled: !1
     }
   };
-  switch (N.status) {
+  switch (b.status) {
     case c.O0b.PAST_DUE:
       E.cancel.disabled = !0, E.cancel.subtext = u.NW.string(u.t.WnL6DQ), E.uncancel.disabled = !0;
       break;
     case c.O0b.PAUSE_PENDING:
     case c.O0b.PAUSED:
       x === d.a$.NONE && (E.transfer.disabled = !0, E.transfer.subtext = u.NW.string(u.t.LiLRRU)), E.cancel.subtext = u.NW.string(u.t["1ywaWF"]), E.cancel.disabled = !0, E.uncancel.disabled = !0
-  }(0, l.y)("guild_boost_slot_popout", _, x) && (E.cancel.subtext = u.NW.string(u.t.dq4vq6), E.cancel.disabled = !0, E.uncancel.disabled = !0);
-  let j = i.useMemo(() => N.isPausedOrPausePending && x === d.a$.NONE ? (0, r.jsx)(s.sNh, {
+  }(0, o.y)("guild_boost_slot_popout", _, x) && (E.cancel.subtext = u.NW.string(u.t.dq4vq6), E.cancel.disabled = !0, E.uncancel.disabled = !0);
+  let j = i.useMemo(() => b.isPausedOrPausePending && x === d.a$.NONE ? (0, r.jsx)(s.sNh, {
     id: "manage-subscription",
     label: u.NW.string(u.t.obRG6e),
     action: () => a.Z.open(c.oAB.SUBSCRIPTIONS),
     iconLeft: s.WGR,
     className: m.manageSubscription
-  }) : null, [x, N]);
+  }) : null, [x, b]);
   return (0, r.jsxs)(s.v2r, {
-    onSelect: b,
+    onSelect: N,
     navId: "subscription-context",
     variant: "fixed",
     "aria-label": u.NW.string(u.t.ogxXGh),
@@ -108,7 +108,7 @@ function h(e) {
         })
       },
       disabled: E.transfer.disabled
-    }), (0, o.tl)(t) ? (0, r.jsx)(s.sNh, {
+    }), (0, l.tl)(t) ? (0, r.jsx)(s.sNh, {
       id: "uncancel",
       label: E.uncancel.label,
       subtext: E.uncancel.subtext,

@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(600164),
-  l = n(339325),
-  o = n(685786);
+  o = n(339325),
+  l = n(685786);
 
 function c(e) {
   let {
@@ -17,17 +17,17 @@ function c(e) {
   return (0, r.jsx)(r.Fragment, {
     children: t.map((e, t) => (0, r.jsxs)(a.Z, {
       align: a.Z.Align.CENTER,
-      className: s()(o.marginTop20, l.feature, {
-        [l.featureBorder]: 0 !== t
+      className: s()(l.marginTop20, o.feature, {
+        [o.featureBorder]: 0 !== t
       }),
       children: [null != e.icon ? (0, r.jsx)("div", {
-        className: s()(l.icon, e.icon)
+        className: s()(o.icon, e.icon)
       }) : null, (0, r.jsxs)("div", {
         children: [null != e.title ? (0, r.jsx)("div", {
-          className: s()(o.marginBottom8, l.title),
+          className: s()(l.marginBottom8, o.title),
           children: e.title
         }) : null, (0, r.jsx)("div", {
-          className: l.description,
+          className: o.description,
           children: e.description
         })]
       })]

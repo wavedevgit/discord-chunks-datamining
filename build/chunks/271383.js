@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -167,7 +167,7 @@ function z(e) {
     colorString: y,
     colorStrings: O,
     colorRoleId: S,
-    iconRoleId: A,
+    iconRoleId: N,
     hoistRoleId: C,
     highestRoleId: P
   } = K(l, c), D = {
@@ -180,7 +180,7 @@ function z(e) {
     colorString: y,
     colorStrings: O,
     colorRoleId: S,
-    iconRoleId: A,
+    iconRoleId: N,
     hoistRoleId: C,
     highestRoleId: P,
     premiumSince: u,
@@ -195,7 +195,7 @@ function z(e) {
   if (r === v.default.getId()) {
     if (h.Z.isViewingRoles(o) || h.Z.isFullServerPreview(o)) {
       let e = h.Z.getViewingRoles(o);
-      w[o] = N(T({}, D, h.Z.getMemberOptions(o)), {
+      w[o] = A(T({}, D, h.Z.getMemberOptions(o)), {
         roles: null != e ? b.default.keys(e) : []
       })
     } else null != w[o] && delete w[o]
@@ -250,11 +250,11 @@ function ee(e) {
 
 function et(e) {
   for (let t of e)
-    if (null != t.member && (null == D[t.id] ? D[t.id] = t.member : D[t.id] = N(T({}, t.member), {
+    if (null != t.member && (null == D[t.id] ? D[t.id] = t.member : D[t.id] = A(T({}, t.member), {
         roles: t.member.roles
       }), null != R[t.id])) {
       let e = R[t.id];
-      null != e[t.member.userId] && (e[t.member.userId] = N(T({}, e[t.member.userId]), {
+      null != e[t.member.userId] && (e[t.member.userId] = A(T({}, e[t.member.userId]), {
         roles: t.member.roles
       }))
     }
@@ -615,14 +615,14 @@ function eT(e) {
     members: Object.entries(n.resolved.members).map(e => {
       var t, r;
       let [i, o] = e, a = null === (r = n.resolved) || void 0 === r ? void 0 : null === (t = r.users) || void 0 === t ? void 0 : t[i];
-      if (null != a) return N(T({}, o), {
+      if (null != a) return A(T({}, o), {
         user: a
       })
     }).filter(e => null != e)
   })
 }
 
-function eA(e) {
+function eN(e) {
   var t;
   if ((null === (t = e.resolved) || void 0 === t ? void 0 : t.members) == null) return;
   let n = y.Z.getChannel(e.channel_id);
@@ -631,25 +631,25 @@ function eA(e) {
     members: Object.entries(e.resolved.members).map(t => {
       var n, r;
       let [i, o] = t, a = null === (r = e.resolved) || void 0 === r ? void 0 : null === (n = r.users) || void 0 === n ? void 0 : n[i];
-      if (null != a) return N(T({}, o), {
+      if (null != a) return A(T({}, o), {
         user: a
       })
     }).filter(e => null != e)
   })
 }
 
-function eN(e) {
+function eA(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => eA(e))
+  t.forEach(e => eN(e))
 }
 
 function eC(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => eN({
+  t.forEach(e => eA({
     messages: e
   }))
 }
@@ -800,10 +800,10 @@ let ew = new eP(l.Z, {
   LOCAL_MESSAGES_LOADED: en,
   MESSAGE_CREATE: eT,
   MESSAGE_UPDATE: eT,
-  LOAD_MESSAGES_SUCCESS: eN,
-  LOAD_MESSAGES_AROUND_SUCCESS: eN,
-  LOAD_PINNED_MESSAGES_SUCCESS: eN,
-  LOAD_RECENT_MENTIONS_SUCCESS: eN,
+  LOAD_MESSAGES_SUCCESS: eA,
+  LOAD_MESSAGES_AROUND_SUCCESS: eA,
+  LOAD_PINNED_MESSAGES_SUCCESS: eA,
+  LOAD_RECENT_MENTIONS_SUCCESS: eA,
   SEARCH_FINISH: eC,
   MOD_VIEW_SEARCH_FINISH: eC,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eh,

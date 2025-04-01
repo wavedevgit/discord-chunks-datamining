@@ -127,7 +127,7 @@ let I = e => {
       enableClick: u = !0,
       channelId: g,
       messageId: b
-    } = e, [y, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
+    } = e, [y, I] = i.useState(String(Date.now())), [S, N] = i.useState(!1), [A, C] = i.useState(!1), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, O(v({}, e), {
         emojiName: t.name,
@@ -143,9 +143,9 @@ let I = e => {
       "aria-label": t.name
     }, p.b_), {
       position: o,
-      shouldShow: !N,
+      shouldShow: !A,
       onTooltipShow: () => {
-        A(!0), u && (T({
+        N(!0), u && (T({
           emojiNode: t,
           isCustomEmoji: !0,
           nonce: w
@@ -159,12 +159,12 @@ let I = e => {
         },
         onClick: u ? t => {
           var n;
-          A(!1), C(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
+          N(!1), C(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
         } : void 0,
         onMouseLeave: () => {
           S && (f.default.track(h.rMx.CLOSE_POPOUT, {
             nonce: w
-          }), A(!1))
+          }), N(!1))
         },
         tag: "span",
         className: a()(E.emojiContainer, {
@@ -186,7 +186,7 @@ let I = e => {
       onRequestClose: () => {
         f.default.track(h.rMx.CLOSE_POPOUT, {
           nonce: w
-        }), A(!1), C(!1)
+        }), N(!1), C(!1)
       },
       autoInvert: !0,
       nudgeAlignIntoViewport: !0,

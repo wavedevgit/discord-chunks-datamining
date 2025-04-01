@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(897291),
   S = n(466711),
   T = n(319417),
-  A = n(728386),
-  N = n(998735);
+  N = n(728386),
+  A = n(998735);
 
 function C(e) {
   let {
@@ -84,7 +84,7 @@ function R(e) {
   }, "gif")), Z && null == k && G.push((0, r.jsx)(O.Z, {
     disabled: I,
     channel: S
-  }, "confetti")), !Z && (null === (m = y.stickers) || void 0 === m ? void 0 : m.button) != null && null == k && D && G.push((0, r.jsx)(A.Z, {
+  }, "confetti")), !Z && (null === (m = y.stickers) || void 0 === m ? void 0 : m.button) != null && null == k && D && G.push((0, r.jsx)(N.Z, {
     disabled: I,
     type: y
   }, "sticker"))), (null === (n = y.emojis) || void 0 === n ? void 0 : n.button) != null && (null == k || null != j && j.type !== s.jw.ATTACHMENT) && G.push((0, r.jsx)(b.Z, {
@@ -94,7 +94,7 @@ function R(e) {
     onClick: R,
     disabled: I || M
   }, "submit")), V && null != L && G.push(L), 0 === G.length) ? null : (0, r.jsx)("div", {
-    className: N.buttons,
+    className: A.buttons,
     children: G
   })
 }

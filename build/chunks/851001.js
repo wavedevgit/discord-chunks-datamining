@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(100527),
+  o = n(481060),
+  l = n(100527),
   c = n(906732),
   d = n(70097),
   u = n(526167),
@@ -16,40 +16,40 @@ var r = n(200651),
   p = n(639119),
   h = n(635921),
   f = n(474936),
-  N = n(869783),
-  b = n(388032),
+  b = n(869783),
+  N = n(388032),
   x = n(927247),
   _ = n(839526),
   E = n(4046),
   j = n(423741);
-let C = i.forwardRef((e, t) => {
+let O = i.forwardRef((e, t) => {
   var n, s;
   let {
-    className: C,
-    isFooterVisible: O,
-    isDarkMode: S,
-    isReducedMotion: v
+    className: O,
+    isFooterVisible: C,
+    isDarkMode: v,
+    isReducedMotion: S
   } = e, {
     analyticsLocations: T
-  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), A = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, y = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
+  } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
   return i.useEffect(() => {
-    !O || v || Z || null == D.current || D.current.play()
-  }, [O, v, Z]), (0, r.jsx)(c.Gt, {
+    !C || S || Z || null == D.current || D.current.play()
+  }, [C, S, Z]), (0, r.jsx)(c.Gt, {
     value: T,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: a()(x.container, C),
-      children: [(0, r.jsx)(l.X6q, {
+      className: a()(x.container, O),
+      children: [(0, r.jsx)(o.X6q, {
         className: x.footerHeader,
         variant: "display-md",
         color: "header-primary",
-        children: b.NW.string(b.t.lEw32t)
+        children: N.NW.string(N.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
-        subscriptionTier: null !== (s = null == y ? void 0 : null === (n = y.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : A,
+        subscriptionTier: null !== (s = null == A ? void 0 : null === (n = A.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : y,
         inOfferExperience: P,
         containerClassName: x.footerCTAContainer,
         isMarketingPageV2Enabled: !0,
-        isDarkMode: S
+        isDarkMode: v
       }), (0, r.jsx)("div", {
         className: x.footerArtContainer,
         children: (0, r.jsx)(d.Z, {
@@ -63,7 +63,7 @@ let C = i.forwardRef((e, t) => {
           ref: D,
           children: (0, r.jsx)("source", {
             src: R ? _.Z : j.Z,
-            type: R ? N.m.MP4 : N.m.WEBM
+            type: R ? b.m.MP4 : b.m.WEBM
           })
         })
       }), (0, r.jsx)("div", {

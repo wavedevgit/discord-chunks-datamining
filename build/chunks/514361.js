@@ -32,8 +32,8 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let T = !1,
-  A = !0,
-  N = !1,
+  N = !0,
+  A = !1,
   C = e => {
     let {
       presetId: t
@@ -70,7 +70,7 @@ let T = !1,
     } = e, r = E.default.getCurrentUser();
     if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, v.Fc)(r)) return;
     let i = g.Z.getChannel(t);
-    null != i && (0, m.zi)(i.type) && (N = !0)
+    null != i && (0, m.zi)(i.type) && (A = !0)
   };
 
 function x() {
@@ -82,12 +82,12 @@ function M() {
 }
 
 function k() {
-  A && (r = void 0), N = !1, T = !1
+  N && (r = void 0), A = !1, T = !1
 }
 let j = () => {
     let e = !b.ZP.canUseClientThemes(E.default.getCurrentUser());
-    if (e === A) return !1;
-    A = e
+    if (e === N) return !1;
+    N = e
   },
   U = () => {
     if (!u.Z.shouldSync("appearance")) return !1;
@@ -117,7 +117,7 @@ class B extends(o = a.ZP.PersistedStore) {
     null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? O.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], j), this.syncWith([u.Z], U), this.syncWith([h.Z], G)
   }
   getState() {
-    return A ? {} : {
+    return N ? {} : {
       gradientPresetId: null == r ? void 0 : r.id
     }
   }
@@ -131,10 +131,10 @@ class B extends(o = a.ZP.PersistedStore) {
     return T
   }
   get isPreview() {
-    return A
+    return N
   }
   get isCoachmark() {
-    return N
+    return A
   }
   get mobilePendingThemeIndex() {
     return i

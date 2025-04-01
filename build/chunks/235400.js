@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(818611),
   S = n(981631),
   T = n(474936),
-  A = n(388032),
-  N = n(858496);
+  N = n(388032),
+  A = n(858496);
 
 function C(e) {
   let {
@@ -69,29 +69,29 @@ function C(e) {
   }, [l, f]), Z = (0, p.M)(), H = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(a.zxk, {
     onClick: F,
     disabled: G,
-    children: A.NW.string(A.t.d6sv6u)
+    children: N.NW.string(N.t.d6sv6u)
   }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(a.zxk, {
-    className: N.modalFooterShopButton,
+    className: A.modalFooterShopButton,
     onClick: () => V(null == x ? void 0 : x.skuId),
-    children: A.NW.string(A.t.fYfGgI)
+    children: N.NW.string(N.t.fYfGgI)
   }) : (0, r.jsx)(m.Z, {
     subscriptionTier: T.Si.TIER_2,
     showGradient: Z,
-    buttonText: v.ZP.isPremium(t) ? A.NW.string(A.t.KXLX7u) : Z ? A.NW.string(A.t.pj0XBA) : A.NW.string(A.t.mr4K7O)
+    buttonText: v.ZP.isPremium(t) ? N.NW.string(N.t.KXLX7u) : Z ? N.NW.string(N.t.pj0XBA) : N.NW.string(N.t.mr4K7O)
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(a.xBx, {
       separator: !1,
-      className: N.modalHeader,
+      className: A.modalHeader,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
-        children: A.NW.string(A.t["Tna/TU"])
+        children: N.NW.string(N.t["Tna/TU"])
       }), (0, r.jsx)(a.olH, {
-        className: N.modalCloseButton,
+        className: A.modalCloseButton,
         onClick: f
       })]
     }), (0, r.jsxs)(a.hzk, {
-      className: N.modalContent,
+      className: A.modalContent,
       scrollbarType: "none",
       children: [(0, r.jsx)(I.Z, {
         user: t,
@@ -101,7 +101,7 @@ function C(e) {
         onSelect: B,
         onOpenShop: V
       }), (0, r.jsx)(O.Z, {
-        className: N.modalPreview,
+        className: A.modalPreview,
         user: t,
         guildId: null == C ? void 0 : C.id,
         avatarDecorationOverride: D
@@ -113,7 +113,7 @@ function C(e) {
         look: a.zxk.Looks.LINK,
         color: a.zxk.Colors.PRIMARY,
         onClick: f,
-        children: A.NW.string(A.t["ETE/oK"])
+        children: N.NW.string(N.t["ETE/oK"])
       }), Z && (0, u.G1)(x) && (0, r.jsx)(h.Z, {
         product: x,
         onSecondaryClick: f
@@ -141,7 +141,7 @@ function R(e) {
     isFetchingPurchases: I
   } = (0, f.ZP)({
     location: "AvatarDecorationModal"
-  }), T = O || I && 0 === y.size, A = () => {
+  }), T = O || I && 0 === y.size, N = () => {
     u(), null == c || c()
   };
   return i.useEffect(() => {
@@ -153,10 +153,10 @@ function R(e) {
     value: g,
     children: (0, r.jsx)(a.Y0X, {
       transitionState: t,
-      className: N.modal,
+      className: A.modal,
       size: T ? a.CgR.DYNAMIC : a.CgR.MEDIUM,
       children: T ? (0, r.jsx)(a.$jN, {
-        className: N.spinner,
+        className: A.spinner,
         type: a.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(C, {
         user: m,
@@ -166,7 +166,7 @@ function R(e) {
         analyticsLocations: g,
         initialSelectedDecoration: d,
         initialSelectedDecorationId: _,
-        onClose: A,
+        onClose: N,
         isTryItOutFlow: p
       })
     })

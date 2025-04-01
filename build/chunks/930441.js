@@ -1,15 +1,15 @@
 /** Chunk was on 13323 **/
 n.d(t, {
   $Z: () => a,
-  M0: () => l,
-  Od: () => o,
+  M0: () => o,
+  Od: () => l,
   vG: () => s
 });
 var r, i = n(388032);
 let s = "emails";
 var a = ((r = {}).COMMUNICATION = "communication", r.SOCIAL = "social", r.TIPS = "tips", r.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", r.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", r.FAMILY_CENTER_DIGEST = "family_center_digest", r);
-let l = ["tips", "recommendations_and_events", "updates_and_announcements"],
-  o = [{
+let o = ["tips", "recommendations_and_events", "updates_and_announcements"],
+  l = [{
     category: "communication",
     label: () => i.NW.string(i.t["B75+xc"]),
     subLabel: () => i.NW.string(i.t.ZHg9TU)

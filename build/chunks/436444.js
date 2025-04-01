@@ -87,18 +87,18 @@ let S = {
       isProgressBarAnimationComplete: b,
       setConfettiCount: y,
       setShouldFireConfetti: T,
-      tier: A,
-      tierMarkerAnimationPosition: N
+      tier: N,
+      tierMarkerAnimationPosition: A
     } = e, {
       analyticsLocations: C
-    } = (0, l.ZP)(), R = (0, c.Z)(), P = (0, u.Z)(i.id).available, w = h.oCV[A] - P, D = A <= N || b, L = D && A <= i.premiumTier, x = D && A < i.premiumTier, M = D && A === i.premiumTier, {
+    } = (0, l.ZP)(), R = (0, c.Z)(), P = (0, u.Z)(i.id).available, w = h.oCV[N] - P, D = N <= A || b, L = D && N <= i.premiumTier, x = D && N < i.premiumTier, M = D && N === i.premiumTier, {
       scaleFactor: k
     } = (0, s.q_F)({
       from: {
         scaleFactor: 0
       },
       to: {
-        scaleFactor: N >= A || b && N + 1 === A || b && -1 === N && A === h.Eu4.NONE ? 1 : 0
+        scaleFactor: A >= N || b && A + 1 === N || b && -1 === A && N === h.Eu4.NONE ? 1 : 0
       },
       config: {
         tension: 360,
@@ -110,8 +110,8 @@ let S = {
         style: {
           transform: k.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== h.Eu4.NONE && (0, r.jsx)(d.Z, {
-        tier: A,
+      }), N !== h.Eu4.NONE && (0, r.jsx)(d.Z, {
+        tier: N,
         color: "currentColor",
         className: E.boostedTierIcon
       })]
@@ -124,7 +124,7 @@ let S = {
           page: h.ZY5.PREMIUM_GUILD_USER_MODAL,
           section: h.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
           object: h.qAy.SUBSCRIBE_TO_TIER_BUTTON,
-          objectType: I(A)
+          objectType: I(N)
         },
         numberOfBoostsToAdd: w,
         guild: i
@@ -137,16 +137,16 @@ let S = {
       } : {};
     return (0, r.jsx)(s.ua7, {
       text: L ? g.NW.formatToPlainString(g.t["1o48kp"], {
-        tierName: (0, f.nW)(A, {
+        tierName: (0, f.nW)(N, {
           useLevels: !1
         })
       }) : g.NW.formatToPlainString(g.t.r6NN6e, {
         numBoostsRequired: w,
-        tierName: (0, f.nW)(A, {
+        tierName: (0, f.nW)(N, {
           useLevels: !1
         })
       }),
-      shouldShow: A !== h.Eu4.NONE,
+      shouldShow: N !== h.Eu4.NONE,
       children: e => (0, r.jsxs)(B, O(v({
         className: o()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: L,
@@ -155,12 +155,12 @@ let S = {
           [E.progressBarMarkerCurrent]: M
         }),
         style: {
-          left: "".concat(100 * S[A], "%")
+          left: "".concat(100 * S[N], "%")
         }
       }, e, F), {
         children: [!L && (0, r.jsx)("div", {
           className: E.boostedTierIconBackground
-        }), L && A === h.Eu4.TIER_3 ? (0, r.jsx)(p.m, {
+        }), L && N === h.Eu4.TIER_3 ? (0, r.jsx)(p.m, {
           confettiTriggerRef: n,
           setConfettiCount: y,
           setShouldFireConfetti: T,
@@ -168,7 +168,7 @@ let S = {
         }) : j, (0, r.jsxs)(s.Text, {
           className: E.progressBarMarkerLabel,
           variant: "text-md/normal",
-          children: [L && A !== h.Eu4.NONE && (0, r.jsx)(s.dz2, {
+          children: [L && N !== h.Eu4.NONE && (0, r.jsx)(s.dz2, {
             size: "md",
             color: "currentColor",
             className: E.progressBarMarkerUnlockedIcon

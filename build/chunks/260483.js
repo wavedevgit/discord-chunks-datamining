@@ -118,14 +118,14 @@ function T(e) {
   p(t.id)
 }
 
-function A(e) {
+function N(e) {
   let {
     channel: t
   } = e;
   delete f[t.id]
 }
 
-function N(e) {
+function A(e) {
   let t = !1;
   for (let n of e.messages) t = R(n.thread) || t;
   return t
@@ -184,6 +184,6 @@ let D = new w(s.Z, {
   MOD_VIEW_SEARCH_FINISH: C,
   LOAD_THREADS_SUCCESS: S,
   LOAD_ARCHIVED_THREADS_SUCCESS: S,
-  THREAD_DELETE: A,
-  LOAD_MESSAGES_SUCCESS: N
+  THREAD_DELETE: N,
+  LOAD_MESSAGES_SUCCESS: A
 })

@@ -33,24 +33,24 @@ let O = e => {
     location: S
   } = (0, c.O)(), {
     analyticsLocations: T
-  } = (0, d.ZP)(), A = (0, s.e7)([m.Z], () => m.Z.getGuild(n)), {
-    canManageAllExpressions: N
-  } = (0, h.XJ)(A), C = null != A && 0 === (0, g.A3)(A.premiumTier) && !A.hasFeature(E.oNc.MORE_STICKERS);
+  } = (0, d.ZP)(), N = (0, s.e7)([m.Z], () => m.Z.getGuild(n)), {
+    canManageAllExpressions: A
+  } = (0, h.XJ)(N), C = null != N && 0 === (0, g.A3)(N.premiumTier) && !N.hasFeature(E.oNc.MORE_STICKERS);
   if (i.useEffect(() => {
-      N && C && O && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
+      A && C && O && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
         location: S,
-        guild_id: null == A ? void 0 : A.id,
+        guild_id: null == N ? void 0 : N.id,
         channel_id: null == o ? void 0 : o.id,
         type: "Expression Picker Inline Sticker Upsell",
         location_stack: T
       }), I(!0))
-    }, [C, A, o, S, O, I, T, N]), null == A || !N) return null;
+    }, [C, N, o, S, O, I, T, A]), null == N || !A) return null;
   if (C) {
     let e = () => {
       (0, _.Z)({
         analyticsLocations: T,
         analyticsSourceLocation: S,
-        guild: A,
+        guild: N,
         perks: (0, b.hC)()
       })
     };

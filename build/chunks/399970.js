@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(570140),
-  o = n(401430),
+  o = n(570140),
+  l = n(401430),
   c = n(155268),
   d = n(600164),
   u = n(313201),
@@ -17,21 +17,21 @@ var r = n(200651),
   h = n(685786);
 let f = /^\d+$|^$/;
 
-function N(e) {
+function b(e) {
   let {
     onClose: t,
     transitionState: n
   } = e, {
-    authorizedApplicationId: N,
-    authorizationError: b,
+    authorizedApplicationId: b,
+    authorizationError: N,
     authorizing: x
   } = (0, s.cj)([m.Z], () => ({
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != N ? N : ""), [j, C] = i.useState("8080"), [O, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != b ? b : ""), [j, O] = i.useState("8080"), [C, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
   async function I() {
-    o.q$();
+    l.q$();
     let e = function(e, t, n) {
       if (null == e) return null;
       switch (e) {
@@ -40,22 +40,22 @@ function N(e) {
         case "proxy":
           return (0, c.ZP)(n)
       }
-    }(O, j, _);
-    null != await o.Wt(_, e) && t()
+    }(C, j, _);
+    null != await l.Wt(_, e) && t()
   }
-  i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
-  let A = null != N && N === _,
-    y = A ? function() {
-      o.mc(), E(""), S(null)
+  i.useEffect(() => () => o.Z.wait(() => l.q$()), []);
+  let y = null != b && b === _,
+    A = y ? function() {
+      l.mc(), E(""), v(null)
     } : I;
   return (0, r.jsxs)(a.Y0X, {
-    "aria-labelledby": v,
+    "aria-labelledby": S,
     transitionState: n,
     children: [(0, r.jsxs)(a.xBx, {
       justify: d.Z.Justify.BETWEEN,
       separator: !1,
       children: [(0, r.jsx)(a.vwX, {
-        id: v,
+        id: S,
         tag: "h1",
         className: h.marginReset,
         children: g.NW.string(g.t.f8fzk5)
@@ -68,12 +68,12 @@ function N(e) {
         className: h.marginBottom20,
         type: a.R94.Types.DESCRIPTION,
         children: g.NW.string(g.t.a6Vilp)
-      }), null == b ? null : (0, r.jsx)(a.kzN, {
+      }), null == N ? null : (0, r.jsx)(a.kzN, {
         className: h.marginBottom20,
-        children: b
+        children: N
       }), (0, r.jsx)("form", {
         onSubmit: e => {
-          e.preventDefault(), y()
+          e.preventDefault(), A()
         },
         children: (0, r.jsxs)(d.Z, {
           direction: d.Z.Direction.VERTICAL,
@@ -96,7 +96,7 @@ function N(e) {
             title: g.NW.string(g.t["/GTqXF"]),
             children: (0, r.jsx)(a.q4e, {
               isDisabled: !T || "" === _,
-              value: O,
+              value: C,
               options: [{
                 value: "localhost",
                 label: g.NW.string(g.t["+Y9Y6u"]),
@@ -107,26 +107,26 @@ function N(e) {
                 key: "proxy"
               }],
               onChange: function(e) {
-                S(e)
+                v(e)
               },
               placeholder: "URL Origin Type"
             })
-          }), "localhost" !== O ? null : (0, r.jsx)(a.xJW, {
+          }), "localhost" !== C ? null : (0, r.jsx)(a.xJW, {
             className: p.inputWrapper,
             title: g.NW.string(g.t.fF4zxs),
             required: !0,
             children: (0, r.jsx)(a.oil, {
               value: j,
               maxLength: 5,
-              onChange: e => C(e),
+              onChange: e => O(e),
               disabled: x
             })
           }), (0, r.jsx)(a.zxk, {
             submitting: x,
             type: "submit",
-            disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
-            color: A ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
-            children: A ? g.NW.string(g.t.d6TR3N) : g.NW.string(g.t.qwuK5O)
+            disabled: !T || 0 === _.length || "localhost" === C && 0 === j.length,
+            color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
+            children: y ? g.NW.string(g.t.d6TR3N) : g.NW.string(g.t.qwuK5O)
           })]
         })
       })]

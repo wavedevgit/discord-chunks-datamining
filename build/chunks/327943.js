@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 });
 var r, i = n(442837),
   o = n(570140),
@@ -91,7 +91,7 @@ class T extends(r = i.ZP.PersistedStore) {
   }
 }
 _(T, "displayName", "AppIconPersistedStoreState"), _(T, "persistKey", "AppIconPersistedStoreState");
-let A = new T(o.Z, {
+let N = new T(o.Z, {
   APP_ICON_UPDATED: v,
   APP_ICON_EDITOR_OPEN: y,
   APP_ICON_EDITOR_CLOSE: O,

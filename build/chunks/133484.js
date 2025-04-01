@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(410030),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(197115),
   d = n(626135),
   u = n(74538),
@@ -16,16 +16,16 @@ var r = n(200651),
   p = n(388032),
   h = n(73121),
   f = n(699623),
-  N = n(820350);
+  b = n(820350);
 
-function b(e) {
+function N(e) {
   let {
     user: t,
     showOverlay: n,
-    children: b
+    children: N
   } = e, x = (0, a.ZP)(), {
     analyticsLocations: _
-  } = (0, o.ZP)(l.Z.PREMIUM_UPSELL_OVERLAY);
+  } = (0, l.ZP)(o.Z.PREMIUM_UPSELL_OVERLAY);
   return (i.useEffect(() => {
     n && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
       location_stack: _,
@@ -34,7 +34,7 @@ function b(e) {
   }, [n, _]), n) ? (0, r.jsxs)("div", {
     className: h.upsellOverlayContainer,
     children: [(0, r.jsx)("div", {
-      children: b
+      children: N
     }), (0, r.jsxs)("div", {
       className: h.upsellOverlay,
       children: [(0, r.jsx)("img", {
@@ -45,7 +45,7 @@ function b(e) {
             case m.BRd.DARK:
               return f;
             case m.BRd.LIGHT:
-              return N
+              return b
           }
         }(x)
       }), (0, r.jsxs)("div", {
@@ -66,5 +66,5 @@ function b(e) {
         subscriptionTier: g.Si.TIER_2
       })]
     })]
-  }) : b
+  }) : N
 }

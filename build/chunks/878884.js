@@ -43,14 +43,14 @@ function S(e, t, n) {
   h.set(e.id, i)
 }
 
-function N(e) {
+function P(e) {
   let t = v.delete(e),
     n = h.delete(e),
     r = j.delete(e);
   return t || n || r
 }
 
-function P() {
+function N() {
   var e;
   let t = f.Z.getChannelId();
   if (null == t) return !1;
@@ -71,7 +71,7 @@ function x() {
 }
 class I extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], P)
+    this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], N)
   }
   get desyncedVoiceStatesCount() {
     return v.size()
@@ -114,7 +114,7 @@ let Z = new I(s.Z, {
         userId: r,
         channelId: l
       } = t;
-      return l === n && !!N(r) || e
+      return l === n && !!P(r) || e
     }, !1)
   },
   RTC_CONNECTION_CLIENT_CONNECT: function(e) {
@@ -135,6 +135,6 @@ let Z = new I(s.Z, {
       userId: t,
       context: n
     } = e;
-    return n === a.Yn.DEFAULT && N(t)
+    return n === a.Yn.DEFAULT && P(t)
   }
 })

@@ -93,7 +93,7 @@ function m(e, t) {
     } = t, I = p(t, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]);
     let S = i.useRef(null),
       T = i.useRef(null),
-      [A, N] = i.useState(!1),
+      [N, A] = i.useState(!1),
       {
         scrollerRef: C,
         getScrollerState: R
@@ -105,8 +105,8 @@ function m(e, t) {
       getScrollerState: R
     }, (0, l.Ue)(C, R, P)), [C, R, P]);
     let w = i.useCallback(e => {
-      null == S.current ? N(!0) : clearTimeout(S.current), S.current = setTimeout(() => {
-        S.current = null, N(!1)
+      null == S.current ? A(!0) : clearTimeout(S.current), S.current = setTimeout(() => {
+        S.current = null, A(!1)
       }, 200), null != E && E(e)
     }, [E]);
     return i.useEffect(() => () => clearTimeout(S.current), []), (0, l.zn)({
@@ -128,7 +128,7 @@ function m(e, t) {
         [c.customTheme]: y,
         [e]: !0,
         [c.managedReactiveScroller]: !0,
-        [c.scrolling]: A && v
+        [c.scrolling]: N && v
       }),
       style: O,
       dir: b,
@@ -139,7 +139,7 @@ function m(e, t) {
         children: (0, r.jsxs)("div", {
           ref: T,
           className: a()(g, c.content),
-          children: [f, A && (0, r.jsx)("div", {
+          children: [f, N && (0, r.jsx)("div", {
             className: c.pointerCover
           })]
         })

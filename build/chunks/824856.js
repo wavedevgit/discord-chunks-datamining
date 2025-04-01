@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(266796);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(561537),
-  o = n(269210),
+  o = n(561537),
+  l = n(269210),
   c = n(481060),
   d = n(58385),
   u = n(889989),
@@ -17,23 +17,23 @@ var r = n(200651),
   h = n(993553),
   f = n(129282);
 
-function N(e) {
+function b(e) {
   let {
     cta: t,
     storeListing: n,
     className: s
   } = e, {
-    applicationId: N,
-    benefits: b,
+    applicationId: b,
+    benefits: N,
     description: x
-  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(N, n.thumbnail, 256), [N, n.thumbnail]), {
+  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
     data: E
   } = (0, d.X)(n.skuId), j = i.useMemo(() => {
     if (null == E || 0 === E.length) return null;
     let e = E[0];
     return (0, m.xg)(e)
   }, [E]);
-  return null == j ? null : (0, r.jsxs)(l.l, {
+  return null == j ? null : (0, r.jsxs)(o.l, {
     className: a()(f.wrapper, s),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
@@ -60,18 +60,18 @@ function N(e) {
         variant: "text-sm/medium",
         children: x
       })
-    }), null != b && b.length > 0 && (0, r.jsx)("div", {
+    }), null != N && N.length > 0 && (0, r.jsx)("div", {
       className: f.benefits,
-      children: b.map(e => {
+      children: N.map(e => {
         let {
           id: t,
           name: n,
           description: i,
           icon: s
         } = e;
-        return (0, r.jsx)(o.Gm, {
+        return (0, r.jsx)(l.Gm, {
           header: n,
-          icon: (0, u.n)(N, s),
+          icon: (0, u.n)(b, s),
           description: i
         }, t)
       })

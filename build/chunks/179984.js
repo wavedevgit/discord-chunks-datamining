@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(780384),
+  o = n(442837),
+  l = n(780384),
   c = n(481060),
   d = n(634894),
   u = n(410030),
@@ -16,20 +16,20 @@ var r = n(200651),
   p = n(975298),
   h = n(15640),
   f = n(594174),
-  N = n(78839),
-  b = n(74538),
+  b = n(78839),
+  N = n(74538),
   x = n(775412),
   _ = n(104494),
   E = n(639119),
   j = n(230916),
-  C = n(346497),
-  O = n(823188),
-  S = n(21023),
-  v = n(318747),
+  O = n(346497),
+  C = n(823188),
+  v = n(21023),
+  S = n(318747),
   T = n(409100),
   I = n(474936),
-  A = n(388032),
-  y = n(67431),
+  y = n(388032),
+  A = n(67431),
   P = n(102655),
   R = n(768236),
   D = n(314907),
@@ -54,19 +54,19 @@ function w(e) {
   return e
 }
 let k = () => {
-    let e = (0, C.W1)();
-    return (0, r.jsx)(O.Cy, {
+    let e = (0, O.W1)();
+    return (0, r.jsx)(C.Cy, {
       text: e,
-      className: y.bogoPillWithSparkles,
-      colorOptions: O.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+      className: A.bogoPillWithSparkles,
+      colorOptions: C.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
   W = () => (0, r.jsx)("div", {
-    className: y.mostPopularPill,
+    className: A.mostPopularPill,
     children: (0, r.jsx)(c.X6q, {
-      className: y.mostPopularText,
+      className: A.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
-      children: A.NW.string(A.t["o/oRJC"])
+      children: y.NW.string(y.t["o/oRJC"])
     })
   }),
   L = e => {
@@ -74,11 +74,11 @@ let k = () => {
         premiumType: n
       } = e,
       i = (0, u.ZP)();
-    t = n === I.p9.TIER_0 ? (0, o.wj)(i) ? P : R : (0, o.wj)(i) ? D : Z;
-    let s = (0, b.Px)(n);
+    t = n === I.p9.TIER_0 ? (0, l.wj)(i) ? P : R : (0, l.wj)(i) ? D : Z;
+    let s = (0, N.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
-      className: y.logo,
+      className: A.logo,
       alt: s
     })
   },
@@ -89,18 +89,18 @@ let k = () => {
       column2: i
     } = e;
     return (0, r.jsxs)("tr", {
-      className: a()(y.headerRow, y.rowBottomBorder, y.topBorderRadius),
+      className: a()(A.headerRow, A.rowBottomBorder, A.topBorderRadius),
       children: [(0, r.jsx)("th", {
         scope: "col",
-        className: y.headerLabelCell,
+        className: A.headerLabelCell,
         children: t
       }), (0, r.jsx)("th", {
         scope: "col",
-        className: y.headerCell,
+        className: A.headerCell,
         children: n
       }), (0, r.jsx)("th", {
         scope: "col",
-        className: a()(y.headerCell, y.topBorderRadius),
+        className: a()(A.headerCell, A.topBorderRadius),
         children: i
       })]
     })
@@ -111,33 +111,33 @@ let k = () => {
       column1: n,
       column2: i,
       withBottomBorder: s = !0,
-      withTopBorderRadius: l = !1,
-      withBottomBorderRadius: o = !1,
+      withTopBorderRadius: o = !1,
+      withBottomBorderRadius: l = !1,
       buttonsRow: c = !1,
       shortRow: d = !1
     } = e;
     return (0, r.jsxs)("tr", {
-      className: a()(y.row, {
-        [y.wideRow]: c,
-        [y.topBorderRadius]: l,
-        [y.bottomBorderRadius]: o,
-        [y.rowBottomBorder]: s,
-        [y.shortRow]: d
+      className: a()(A.row, {
+        [A.wideRow]: c,
+        [A.topBorderRadius]: o,
+        [A.bottomBorderRadius]: l,
+        [A.rowBottomBorder]: s,
+        [A.shortRow]: d
       }),
       children: [(0, r.jsx)("th", {
         scope: "row",
-        className: y.labelCell,
+        className: A.labelCell,
         children: t
       }), (0, r.jsx)("td", {
-        className: a()(y.cell, {
-          [y.buttonsCell]: c
+        className: a()(A.cell, {
+          [A.buttonsCell]: c
         }),
         children: n
       }), (0, r.jsx)("td", {
-        className: a()(y.cell, {
-          [y.topBorderRadius]: l,
-          [y.bottomBorderRadius]: o,
-          [y.buttonsCell]: c
+        className: a()(A.cell, {
+          [A.topBorderRadius]: o,
+          [A.bottomBorderRadius]: l,
+          [A.buttonsCell]: c
         }),
         children: i
       })]
@@ -156,7 +156,7 @@ let k = () => {
       {
         analyticsLocations: V
       } = (0, g.ZP)(m.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
-      G = (0, l.e7)([N.ZP], () => N.ZP.hasFetchedSubscriptions()),
+      G = (0, o.e7)([b.ZP], () => b.ZP.hasFetchedSubscriptions()),
       F = (0, h.V)(),
       H = "PlanComparisonTable";
     (0, d.j)({
@@ -167,27 +167,27 @@ let k = () => {
       autoTrackExposure: !1
     });
     let z = (0, u.ZP)(),
-      Y = (0, o.ap)(z),
-      K = (0, l.e7)([f.default], () => f.default.getCurrentUser()),
-      q = (0, b.M5)(K, I.p9.TIER_2),
+      Y = (0, l.ap)(z),
+      K = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
+      q = (0, N.M5)(K, I.p9.TIER_2),
       X = (0, E.N)(),
       J = null == X ? void 0 : null === (t = X.subscription_trial) || void 0 === t ? void 0 : t.sku_id,
       Q = (0, x.rT)(),
       $ = (0, _.Ng)(),
       ee = null != $ && (0, _.Wp)($, I.Si.TIER_2),
       et = (0, j.A)(I.Xh.PREMIUM_MONTH_TIER_2),
-      en = "".concat(et, "/").concat((0, b.eP)(I.rV.MONTH)),
-      er = (0, b.CY)(I.Xh.PREMIUM_MONTH_TIER_0),
-      ei = (0, b.CY)(I.Xh.PREMIUM_MONTH_TIER_2),
+      en = "".concat(et, "/").concat((0, N.eP)(I.rV.MONTH)),
+      er = (0, N.CY)(I.Xh.PREMIUM_MONTH_TIER_0),
+      ei = (0, N.CY)(I.Xh.PREMIUM_MONTH_TIER_2),
       es = (0, p.Z)(),
-      ea = (0, S.n)(er, ei, ee, en, es.fractionalState),
-      el = (0, C.Vi)();
+      ea = (0, v.n)(er, ei, ee, en, es.fractionalState),
+      eo = (0, O.Vi)();
     if (!G || !F) return null;
-    let eo = {
+    let el = {
       label: (0, r.jsx)(c.X6q, {
-        className: y.__invalid_textColor,
+        className: A.__invalid_textColor,
         variant: "heading-lg/extrabold",
-        children: A.NW.string(A.t.ED4UVF)
+        children: y.NW.string(y.t.ED4UVF)
       }),
       column1: (0, r.jsx)(L, {
         premiumType: I.p9.TIER_0
@@ -207,70 +207,70 @@ let k = () => {
     }) : ea.push({
       label: null,
       column1: (0, r.jsxs)(r.Fragment, {
-        children: [J === I.Si.TIER_2 || el ? (0, r.jsx)(T.Z, {
-          className: y.button,
+        children: [J === I.Si.TIER_2 || eo ? (0, r.jsx)(T.Z, {
+          className: A.button,
           subscriptionTier: I.Si.TIER_0,
           showIcon: !1,
           look: c.iLD.OUTLINED,
           color: Y ? c.Ttl.BRAND : c.Ttl.WHITE,
           buttonShineClassName: void 0
         }) : (0, r.jsx)(T.Z, {
-          className: y.button,
+          className: A.button,
           subscriptionTier: I.Si.TIER_0,
           showIcon: !1
-        }), Q === I.p9.TIER_2 || null != J ? null : (0, r.jsx)(v.Z, {
-          className: y.button,
+        }), Q === I.p9.TIER_2 || null != J ? null : (0, r.jsx)(S.Z, {
+          className: A.button,
           subscriptionTier: I.Si.TIER_0
         })]
       }),
       column2: (0, r.jsxs)(r.Fragment, {
         children: [J === I.Si.TIER_0 ? (0, r.jsx)(T.Z, {
-          className: y.button,
+          className: A.button,
           subscriptionTier: I.Si.TIER_2,
           showIcon: !1,
           look: c.iLD.OUTLINED,
           color: Y ? c.Ttl.BRAND : c.Ttl.WHITE,
           buttonShineClassName: void 0
         }) : (0, r.jsx)(T.Z, {
-          className: y.button,
+          className: A.button,
           subscriptionTier: I.Si.TIER_2,
           showIcon: !1,
-          hasActivePromotion: el
-        }), Q === I.p9.TIER_0 || null != J ? null : (0, r.jsx)(v.Z, {
-          className: y.button,
+          hasActivePromotion: eo
+        }), Q === I.p9.TIER_0 || null != J ? null : (0, r.jsx)(S.Z, {
+          className: A.button,
           subscriptionTier: I.Si.TIER_2
         })]
       }),
       withBottomBorder: !1,
       withBottomBorderRadius: !0,
       buttonsRow: null == J
-    }), n = D ? null : null != J || null != Q ? (0, r.jsx)(O.Cy, {
-      text: null != J ? A.NW.string(A.t.IBYG5e) : A.NW.string(A.t.ce1v3d),
-      className: y.freeTrialPillWithSparkles,
-      colorOptions: J === I.Si.TIER_0 ? Y ? O.VE.PREMIUM_TIER_0_GRADIENT_FILL : O.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? O.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : O.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : O.VE.PREMIUM_TIER_2_WHITE_FILL
-    }) : el ? (0, r.jsx)(k, {}) : (0, r.jsx)(W, {});
+    }), n = D ? null : null != J || null != Q ? (0, r.jsx)(C.Cy, {
+      text: null != J ? y.NW.string(y.t.IBYG5e) : y.NW.string(y.t.ce1v3d),
+      className: A.freeTrialPillWithSparkles,
+      colorOptions: J === I.Si.TIER_0 ? Y ? C.VE.PREMIUM_TIER_0_GRADIENT_FILL : C.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? C.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : C.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : C.VE.PREMIUM_TIER_2_WHITE_FILL
+    }) : eo ? (0, r.jsx)(k, {}) : (0, r.jsx)(W, {});
     let ec = J === I.Si.TIER_0 || Q === I.p9.TIER_0 || U === I.p9.TIER_0;
     return (0, r.jsx)(g.Gt, {
       value: V,
       children: (0, r.jsxs)("div", {
-        className: a()(y.root, s),
+        className: a()(A.root, s),
         "data-testid": "v2-marketing-page-comparison-table",
         children: [(0, r.jsx)(c.X6q, {
-          className: a()(y.titleText, y.__invalid_textColor),
+          className: a()(A.titleText, A.__invalid_textColor),
           variant: "heading-xxl/extrabold",
-          children: null != R ? R : A.NW.string(A.t.FIbMh4)
+          children: null != R ? R : y.NW.string(y.t.FIbMh4)
         }), (0, r.jsxs)("div", {
-          className: y.tableWrapper,
+          className: A.tableWrapper,
           children: [(0, r.jsx)("div", {
             className: a()(Z, {
-              [y.tier0ColumnOuter]: ec,
-              [y.tier2ColumnOuter]: !ec
+              [A.tier0ColumnOuter]: ec,
+              [A.tier2ColumnOuter]: !ec
             }),
             children: !ec && n
           }), (0, r.jsxs)("table", {
-            className: y.table,
+            className: A.table,
             children: [(0, r.jsx)("thead", {
-              children: (0, r.jsx)(B, w({}, eo))
+              children: (0, r.jsx)(B, w({}, el))
             }), (0, r.jsx)("tbody", {
               children: ea.map((e, t) => {
                 var n, r;

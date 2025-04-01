@@ -37,7 +37,7 @@ let E = "IncomingCallStore",
   S = new Set,
   T = !1;
 
-function A() {
+function N() {
   let e = h.Z.windowSize();
   return null != r && r.x + b.width < e.width && r.y + b.height < e.height ? r : {
     x: e.width / 2 - b.width / 2,
@@ -45,7 +45,7 @@ function A() {
   }
 }
 
-function N(e) {
+function A(e) {
   if (null == e || null == I.get(e)) return !1;
   I.delete(e), (S = new Set(S)).delete(e)
 }
@@ -67,14 +67,14 @@ function C(e) {
       {
         x: r,
         y: i
-      } = A();
+      } = N();
     return I.set(t, {
       channel: e,
       x: r + n,
       y: i + n
     }), void(S = new Set(S)).add(t)
   }
-  return !!S.has(t) && !r && N(t)
+  return !!S.has(t) && !r && A(t)
 }
 
 function R(e) {
@@ -84,14 +84,14 @@ function R(e) {
   return !!("GUILD_RING_STOP" !== e.type || d.Z.getCurrentConfig({
     guildId: e.guildId,
     location: "IncomingCallDelete"
-  }).enabled && e.ringing.includes(f.default.getId())) && N(t)
+  }).enabled && e.ringing.includes(f.default.getId())) && A(t)
 }
 
 function P(e) {
   let {
     channelId: t
   } = e;
-  return N(t)
+  return A(t)
 }
 
 function w(e) {
@@ -109,7 +109,7 @@ function D(e) {
   let {
     channel: t
   } = e;
-  return N(t.id)
+  return A(t.id)
 }
 
 function L() {
@@ -121,7 +121,7 @@ function x() {
   S.forEach(t => {
     var n;
     let r = t;
-    null != (null === (n = _.Z.getChannel(r)) || void 0 === n ? void 0 : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
+    null != (null === (n = _.Z.getChannel(r)) || void 0 === n ? void 0 : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || A(r))
   })
 }
 class M extends(i = o.ZP.Store) {

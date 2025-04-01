@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  l = n(442837),
-  o = n(704215),
+  o = n(442837),
+  l = n(704215),
   c = n(622535),
   d = n(481060),
   u = n(570140),
@@ -16,20 +16,20 @@ var r = n(200651),
   p = n(634894),
   h = n(100527),
   f = n(906732),
-  N = n(475977),
-  b = n(605236),
+  b = n(475977),
+  N = n(605236),
   x = n(243778),
   _ = n(957730),
   E = n(442933),
   j = n(53691),
-  C = n(267717),
-  O = n(296810),
-  S = n(921813),
-  v = n(610794),
+  O = n(267717),
+  C = n(296810),
+  v = n(921813),
+  S = n(610794),
   T = n(935147),
   I = n(643879),
-  A = n(373230),
-  y = n(246946),
+  y = n(373230),
+  A = n(246946),
   P = n(25990),
   R = n(594174),
   D = n(626135),
@@ -45,12 +45,12 @@ var r = n(200651),
 
 function G() {
   var e, t;
-  let n = (0, l.e7)([R.default], () => {
+  let n = (0, o.e7)([R.default], () => {
       let e = R.default.getCurrentUser();
       return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    s = (0, l.e7)([y.Z], () => y.Z.hidePersonalInformation),
-    G = (0, l.cj)([P.Z], () => P.Z.getAllPending()),
+    s = (0, o.e7)([A.Z], () => A.Z.hidePersonalInformation),
+    G = (0, o.cj)([P.Z], () => P.Z.getAllPending()),
     {
       pendingBio: F,
       pendingAvatar: H
@@ -74,28 +74,28 @@ function G() {
       userId: n.id,
       image: H
     }),
-    K = (0, l.e7)([P.Z], () => P.Z.showNotice()),
+    K = (0, o.e7)([P.Z], () => P.Z.showNotice()),
     q = k.dN.useSetting() && null != F ? _.ZP.parse(void 0, F).content : F,
     X = Z.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: J
     } = (0, f.ZP)(h.Z.PROFILE);
   ! function() {
-    let e = (0, A.Tq)({
+    let e = (0, y.Tq)({
         location: "UserSettingsProfileCustomization"
       }),
-      t = (0, b.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+      t = (0, N.wE)(l.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
       n = e && !t;
     i.useEffect(() => {
-      n && (0, b.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+      n && (0, N.EW)(l.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
         forceTrack: !0
       })
     }, [n])
   }(),
   function() {
     let e = (0, E.H)("UserSettingsProfileCustomization"),
-      [t, n] = (0, x.US)(e ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
-      r = t === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
+      [t, n] = (0, x.US)(e ? [l.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
+      r = t === l.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
     i.useEffect(() => {
       r && n(M.L.TAKE_ACTION)
     }, [r, n])
@@ -115,8 +115,8 @@ function G() {
   }), en = !X, er = i.useRef(null);
   return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
     value: J,
-    children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(O.Z, {
-      profilePreview: (0, r.jsx)(S.Z, (e = function(e) {
+    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(C.Z, {
+      profilePreview: (0, r.jsx)(v.Z, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -152,7 +152,7 @@ function G() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)),
       children: (0, r.jsx)(L.Z, {})
-    }), et && (0, r.jsx)(v.Z, {}), (0, r.jsx)(c.$, {
+    }), et && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.$, {
       innerRef: er,
       onChange: e => ee(e),
       threshold: .25,
@@ -169,7 +169,7 @@ function G() {
       className: V.floatingNitroUpsell,
       showUpsell: en && !$,
       text: U.NW.format(U.t.TmfgIy, {
-        onClick: () => (0, C.y)()
+        onClick: () => (0, O.y)()
       }),
       textVariant: "heading-md/medium",
       button: (0, r.jsxs)(d.gtL, {

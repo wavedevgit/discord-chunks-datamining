@@ -32,8 +32,8 @@ function E(e) {
     shouldShowUpsell: I = !0,
     gridNotice: S,
     inExpressionPicker: T,
-    soundButtonOverlay: A,
-    listPadding: N,
+    soundButtonOverlay: N,
+    listPadding: A,
     renderHeader: C,
     defaultSoundsOnly: R
   } = e, P = (0, s.e7)([h.Z], () => h.Z.isFetchingSounds() || h.Z.isFetchingDefaultSounds()), {
@@ -65,8 +65,8 @@ function E(e) {
         suppressPlaySound: y,
         shouldShowUpsell: I,
         gridNotice: S,
-        soundButtonOverlay: A,
-        listPadding: N,
+        soundButtonOverlay: N,
+        listPadding: A,
         renderHeader: C,
         defaultSoundsOnly: R,
         inExpressionPicker: T,

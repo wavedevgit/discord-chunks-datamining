@@ -7,17 +7,17 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(313201),
-  o = n(36703),
+  o = n(313201),
+  l = n(36703),
   c = n(555428);
-let d = (0, l.hQ)();
+let d = (0, o.hQ)();
 
 function u(e) {
   let {
     volume: t,
     title: n,
     description: i,
-    label: l,
+    label: o,
     onVolumeChange: u,
     refreshStyles: m = !1
   } = e;
@@ -36,10 +36,10 @@ function u(e) {
     }), (0, r.jsx)("div", {
       className: c.soundboardColumn,
       children: (0, r.jsx)(a.xJW, {
-        title: l,
+        title: o,
         titleId: d,
         children: (0, r.jsx)(a.iRW, {
-          initialValue: (0, o.P)(t),
+          initialValue: (0, l.P)(t),
           maxValue: 100,
           onValueRender: e => "".concat(e.toFixed(0), "%"),
           onValueChange: u,

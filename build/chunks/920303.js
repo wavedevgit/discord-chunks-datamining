@@ -34,11 +34,11 @@ let b = 25,
   I = !1,
   S = null,
   T = s.z.LATEST_ACTIVITY,
-  A = [],
-  N = 0;
+  N = [],
+  A = 0;
 
 function C() {
-  v = !1, y = !0, O = !1, I = !1, S = null, T = s.z.LATEST_ACTIVITY, r = new Set, N = 0, A = []
+  v = !1, y = !0, O = !1, I = !1, S = null, T = s.z.LATEST_ACTIVITY, r = new Set, A = 0, N = []
 }
 
 function R(e, t) {
@@ -52,16 +52,16 @@ function P(e) {
 function w(e) {
   if (e.channelId !== S || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
   let t = e.threads.filter(e => f.AW.has(e.type)).map(e => e.id);
-  A = A.concat(t);
+  N = N.concat(t);
   let n = _.Z.getChannel(S);
   null != n && n.isForumLikeChannel() && (0, d.Hr)({
     guildId: n.guild_id,
     channelId: n.id,
-    numArchivedThreads: A.length,
+    numArchivedThreads: N.length,
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), L(), O = e.hasMore, N = e.offset + b, v = !1, y = !1
+  }), L(), O = e.hasMore, A = e.offset + b, v = !1, y = !1
 }
 
 function D(e) {
@@ -71,9 +71,9 @@ function D(e) {
 function L() {
   if (null == S) return !1;
   let e = !O,
-    t = _.Z.getChannel(A[A.length - 1]),
+    t = _.Z.getChannel(N[N.length - 1]),
     n = null == t ? null : R(t, T);
-  A = a()(_.Z.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
+  N = a()(_.Z.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
     var i;
     if (0 !== r.size && (null === (i = t.appliedTags) || void 0 === i ? void 0 : i.some(e => r.has(e))) !== !0) return !1;
     if (e || null == n) return !0;
@@ -95,8 +95,8 @@ function M(e) {
 }
 
 function k(e) {
-  if (!(A.indexOf(e) >= 0)) return !1;
-  A = A.filter(t => t !== e)
+  if (!(N.indexOf(e) >= 0)) return !1;
+  N = N.filter(t => t !== e)
 }
 
 function j(e) {
@@ -121,7 +121,7 @@ class B extends(i = l.ZP.Store) {
     return O && !v && !I
   }
   get nextOffset() {
-    return N
+    return A
   }
   get isInitialLoad() {
     return y
@@ -130,7 +130,7 @@ class B extends(i = l.ZP.Store) {
     return S === e && T === t && (0, h.OL)(r, n) ? v : (C(), !1)
   }
   getThreads(e, t, n) {
-    return S === e && T === t && (0, h.OL)(r, n) ? A : G
+    return S === e && T === t && (0, h.OL)(r, n) ? N : G
   }
 }
 E(B, "displayName", "ArchivedThreadsStore");

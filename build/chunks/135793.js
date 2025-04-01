@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(235894),
   S = n(883998),
   T = n(576645),
-  A = n(981631),
-  N = n(921944),
+  N = n(981631),
+  A = n(921944),
   C = n(388032),
   R = n(216826),
   P = n(99713);
@@ -84,7 +84,7 @@ let M = 190,
       source: u
     } = e, d = h.Z.getChannel(t);
     null != d && ((0, f.EW)(s.z.CONFETTI_POTION_UPSELL, {
-      dismissAction: N.L.INDIRECT_ACTION
+      dismissAction: A.L.INDIRECT_ACTION
     }), (0, l.ZDy)(async () => {
       let {
         default: e
@@ -144,12 +144,12 @@ function B(e) {
     entitlement: v,
     fetchedEntitlement: O,
     error: S
-  } = (0, T.t6)(y.D1), N = g || S, {
+  } = (0, T.t6)(y.D1), A = g || S, {
     analyticsLocations: C
   } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != v && !v.consumed, P = m || !O;
   (0, i.useEffect)(() => () => {
-    N && (0, E.SN)(y.D1)
-  }, [N, c]);
+    A && (0, E.SN)(y.D1)
+  }, [A, c]);
   let w = (0, i.useCallback)(() => {
       null != _ && ((0, l.pTH)(), o(_))
     }, [_, o]),
@@ -167,7 +167,7 @@ function B(e) {
     x = (0, i.useMemo)(() => {
       if (null != v) {
         if ("apply" === s) return 3;
-        if (v.type === A.qc2.DEVELOPER_GIFT) return 1;
+        if (v.type === N.qc2.DEVELOPER_GIFT) return 1;
         if (R) return 2
       }
       return 0
@@ -253,7 +253,7 @@ let F = e => {
           color: "text-link",
           variant: "text-sm/normal",
           children: C.NW.format(C.t["jerM9/"], {
-            helpCenterLink: m.Z.getArticleURL(A.BhN.CONFETTI_POTION)
+            helpCenterLink: m.Z.getArticleURL(N.BhN.CONFETTI_POTION)
           })
         })]
       }), (0, r.jsx)("div", {
@@ -368,7 +368,7 @@ let F = e => {
       numPotions: t
     } = (0, T.t6)(y.D1);
     if (null == t || 0 === t) return null;
-    let n = (null == e ? void 0 : e.type) === A.qc2.DEVELOPER_GIFT ? C.t["b+P6ra"] : C.t.RiQ4cn;
+    let n = (null == e ? void 0 : e.type) === N.qc2.DEVELOPER_GIFT ? C.t["b+P6ra"] : C.t.RiQ4cn;
     return (0, r.jsxs)("div", {
       className: R.remaining,
       children: [(0, r.jsx)(l.l22, {

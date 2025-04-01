@@ -29,8 +29,8 @@ function v(e) {
     locale: I,
     theme: S,
     focused: T,
-    currentWindow: A,
-    fontScale: N,
+    currentWindow: N,
+    fontScale: A,
     fontScaleClass: C,
     keyboardModeEnabled: R,
     saturation: P,
@@ -58,7 +58,7 @@ function v(e) {
       alwaysShowLinkDecorations: c.Z.alwaysShowLinkDecorations,
       confettiMode: _.Z.confettiMode
     }
-  }), j = (0, u.Z)(A, __OVERLAY__ || T), U = 0;
+  }), j = (0, u.Z)(N, __OVERLAY__ || T), U = 0;
   1 !== P && (U = (0, l.OdO)(U, l.bgu.REDUCE_SATURATION_ENABLED));
   let G = (0, E.A)();
   return (0, r.jsx)(l.wMY, {
@@ -73,7 +73,7 @@ function v(e) {
       theme: S,
       density: G,
       focused: T,
-      fontScale: N,
+      fontScale: A,
       fontScaleClass: C,
       keyboardModeEnabled: R,
       mouseMode: j,

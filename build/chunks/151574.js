@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(490095),
   S = n(652136),
   T = n(626135),
-  A = n(280930),
-  N = n(606301),
+  N = n(280930),
+  A = n(606301),
   C = n(278754),
   R = n(981631),
   P = n(388032),
@@ -192,12 +192,12 @@ let W = i.memo(function(e) {
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, A.Z)(V, D, o), {
+  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(V, D, o), {
     analyticsLocations: $
   } = (0, p.ZP)(_.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
     debouncedSetTextInputValue: et
-  } = (0, A.m)({
+  } = (0, N.m)({
     setTextInputValue: W,
     setHasDismissed: x,
     setHasSelection: X,
@@ -260,7 +260,7 @@ let W = i.memo(function(e) {
     el = i.useRef([]),
     ec = i.useRef(!1);
   i.useEffect(() => {
-    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, N.Tk)(V), K(V))), ec.current = eo
+    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(V), K(V))), ec.current = eo
   }, [m, eo, J, V]);
   let eu = !eo,
     ed = eo ? J : el.current;

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(704215),
-  o = n(481060),
+  o = n(704215),
+  l = n(481060),
   c = n(243778),
   d = n(643879),
   u = n(373230),
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(654904),
   h = n(993413),
   f = n(921944),
-  N = n(486324),
-  b = n(388032),
+  b = n(486324),
+  N = n(388032),
   x = n(895019);
 let _ = [{
   name: "gif",
@@ -31,50 +31,50 @@ function E(e) {
     onAvatarChange: s,
     sectionTitle: E,
     changeAvatarButtonText: j,
-    guildId: C,
-    className: O,
-    disabled: S = !1,
-    isTryItOutFlow: v = !1,
+    guildId: O,
+    className: C,
+    disabled: v = !1,
+    isTryItOutFlow: S = !1,
     forcedDivider: T,
     withHighlight: I = !1
-  } = e, A = I ? o.gtL : o.zxk, y = (0, u.Tq)({
+  } = e, y = I ? l.gtL : l.zxk, A = (0, u.Tq)({
     location: "AvatarSection"
   }), P = [];
-  y && P.push(l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
-  let [R, D] = (0, c.US)(P), Z = R === l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = (0, m._)(), {
+  A && P.push(o.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
+  let [R, D] = (0, c.US)(P), Z = R === o.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = (0, m._)(), {
     recentAvatarsLimit: k
   } = (0, d.pC)(w), W = i.useCallback(() => {
-    D(f.L.TAKE_ACTION), (0, p.$r)(N.pC.AVATAR, C, v, v ? _ : void 0)
-  }, [C, v, D]);
+    D(f.L.TAKE_ACTION), (0, p.$r)(b.pC.AVATAR, O, S, S ? _ : void 0)
+  }, [O, S, D]);
   return (0, r.jsx)(h.Z, {
-    className: O,
+    className: C,
     title: E,
     titleIcon: Z ? (0, r.jsx)(g.Z, {
       className: x.newBadge
     }) : void 0,
-    description: y ? b.NW.format(b.t.U4tZfX, {
+    description: A ? N.NW.format(N.t.U4tZfX, {
       recentAvatarsLimit: k,
       onClick: W
     }) : void 0,
     errors: n,
-    disabled: S,
+    disabled: v,
     forcedDivider: T,
     children: (0, r.jsxs)("div", {
       className: x.buttonsContainer,
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(y, {
         className: a()({
           [x.buttonHighlighted]: I
         }),
-        size: o.zxk.Sizes.SMALL,
+        size: l.zxk.Sizes.SMALL,
         onClick: W,
-        children: null != j ? j : b.NW.string(b.t["4OynCA"])
-      }), t && (0, r.jsx)(o.zxk, {
+        children: null != j ? j : N.NW.string(N.t["4OynCA"])
+      }), t && (0, r.jsx)(l.zxk, {
         className: x.removeButton,
-        color: o.zxk.Colors.PRIMARY,
-        look: o.zxk.Looks.LINK,
-        size: o.zxk.Sizes.SMALL,
+        color: l.zxk.Colors.PRIMARY,
+        look: l.zxk.Looks.LINK,
+        size: l.zxk.Sizes.SMALL,
         onClick: () => s(null),
-        children: null != C ? b.NW.string(b.t.TDjKDg) : b.NW.string(b.t.twB3f3)
+        children: null != O ? N.NW.string(N.t.TDjKDg) : N.NW.string(N.t.twB3f3)
       })]
     })
   })

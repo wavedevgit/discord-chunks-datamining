@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(481060),
-  o = n(600164),
+  o = n(481060),
+  l = n(600164),
   c = n(490529),
   d = n(981631),
   u = n(388032),
@@ -36,12 +36,12 @@ let p = {
     [d.gkr.HOUSE_2]: n(797148),
     [d.gkr.HOUSE_3]: n(374347)
   },
-  N = e => ({
+  b = e => ({
     [d.gkr.HOUSE_1]: u.NW.string(u.t.CpG10d),
     [d.gkr.HOUSE_2]: u.NW.string(u.t.VNPE6u),
     [d.gkr.HOUSE_3]: u.NW.string(u.t.KNfiTU)
   })[e];
-class b extends i.Component {
+class N extends i.Component {
   render() {
     let {
       houseMembership: e,
@@ -57,24 +57,24 @@ class b extends i.Component {
         className: a()(m.membershipDialog, p[e]),
         children: (0, r.jsxs)("div", {
           className: m.membershipDialogContent,
-          children: [(0, r.jsxs)(o.Z, {
-            children: [(0, r.jsxs)(o.Z.Child, {
+          children: [(0, r.jsxs)(l.Z, {
+            children: [(0, r.jsxs)(l.Z.Child, {
               grow: 1,
               shrink: 1,
-              children: [(0, r.jsx)(l.Text, {
+              children: [(0, r.jsx)(o.Text, {
                 className: m.membershipDialogHeading,
                 variant: "text-xs/bold",
                 children: u.NW.string(u.t.KZoEIy)
-              }), (0, r.jsx)(l.X6q, {
+              }), (0, r.jsx)(o.X6q, {
                 className: m.membershipDialogHouseName,
                 variant: "heading-sm/semibold",
                 children: t
-              }), (0, r.jsx)(l.Text, {
+              }), (0, r.jsx)(o.Text, {
                 className: m.membershipDialogHouseDescription,
                 variant: "text-md/normal",
-                children: N(e)
+                children: b(e)
               })]
-            }), (0, r.jsx)(o.Z.Child, {
+            }), (0, r.jsx)(l.Z.Child, {
               className: m.houseLogoWrapper,
               grow: 0,
               shrink: 0,
@@ -85,10 +85,10 @@ class b extends i.Component {
                 alt: t
               })
             })]
-          }), (0, r.jsxs)(l.Text, {
+          }), (0, r.jsxs)(o.Text, {
             className: m.membershipDialogSwitchHouses,
             variant: "text-md/normal",
-            children: [u.NW.string(u.t.zD3mqK), (0, r.jsx)(l.P3F, {
+            children: [u.NW.string(u.t.zD3mqK), (0, r.jsx)(o.P3F, {
               className: m.membershipDialogSwitchHousesAction,
               onClick: this.handleJoinHypeSquadClick,
               tag: "span",
@@ -100,27 +100,27 @@ class b extends i.Component {
     }
     return (0, r.jsxs)("div", {
       className: m.joinCTAWrapper,
-      children: [(0, r.jsxs)(o.Z, {
+      children: [(0, r.jsxs)(l.Z, {
         className: m.joinCTA,
-        align: o.Z.Align.CENTER,
-        justify: o.Z.Justify.CENTER,
-        direction: o.Z.Direction.HORIZONTAL,
-        children: [(0, r.jsx)(o.Z.Child, {
+        align: l.Z.Align.CENTER,
+        justify: l.Z.Justify.CENTER,
+        direction: l.Z.Direction.HORIZONTAL,
+        children: [(0, r.jsx)(l.Z.Child, {
           grow: 0,
           shrink: 0,
-          children: (0, r.jsx)(l.Text, {
+          children: (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: u.NW.string(u.t.Uq6KRk)
           })
-        }), (0, r.jsx)(o.Z.Child, {
+        }), (0, r.jsx)(l.Z.Child, {
           grow: 0,
           shrink: 0,
-          children: (0, r.jsx)(l.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             onClick: this.handleJoinHypeSquadClick,
             children: u.NW.string(u.t["1GWQKi"])
           })
         })]
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: m.newsletterWarning,
         variant: "text-sm/normal",
         children: u.NW.string(u.t["3kUvgo"])
@@ -129,7 +129,7 @@ class b extends i.Component {
   }
   constructor(...e) {
     super(...e), g(this, "handleJoinHypeSquadClick", () => {
-      (0, l.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("83264").then(n.bind(n, 711184));

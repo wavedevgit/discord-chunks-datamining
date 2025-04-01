@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(230711),
-  o = n(528084),
+  o = n(230711),
+  l = n(528084),
   c = n(44429);
 let d = e => {
   var t;
@@ -22,13 +22,13 @@ let d = e => {
   } = e, {
     viewableTabs: p,
     filteredTab: h
-  } = (0, o.a)(n, d), f = null != m ? n[m] : null, N = null !== (t = null != f ? f : h) && void 0 !== t ? t : p[0];
+  } = (0, l.a)(n, d), f = null != m ? n[m] : null, b = null !== (t = null != f ? f : h) && void 0 !== t ? t : p[0];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.njP, {
       className: c.tabBar,
-      selectedItem: N.setting,
+      selectedItem: b.setting,
       onItemSelect: e => {
-        l.Z.setSection(i, e), null == g || g(e)
+        o.Z.setSection(i, e), null == g || g(e)
       },
       orientation: "horizontal",
       type: "top",
@@ -40,13 +40,13 @@ let d = e => {
         children: e.title
       }, e.setting))
     }), (0, r.jsx)(a.njP.Panel, {
-      id: N.setting,
-      "aria-labelledby": N.title,
+      id: b.setting,
+      "aria-labelledby": b.title,
       className: s()(c.tabBarPanel, u),
       children: (e => {
         let t = e.component;
         return "function" == typeof t ? (0, r.jsx)(t, {}) : t
-      })(N)
+      })(b)
     })]
   })
 }

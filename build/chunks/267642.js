@@ -3,7 +3,7 @@
 n.d(t, {
   A3: () => S,
   FZ: () => I,
-  Je: () => N,
+  Je: () => A,
   Jh: () => L,
   KK: () => K,
   Qi: () => Z,
@@ -67,8 +67,8 @@ let O = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
   },
   S = (e, t) => null != t && t.hasFeature(g.oNc.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
   T = e => b.pH[e],
-  A = (e, t) => null != t && t.hasFeature(g.oNc.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
-  N = e => {
+  N = (e, t) => null != t && t.hasFeature(g.oNc.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
+  A = e => {
     if (e === g.Eu4.NONE) return b._k[e];
     let t = O[O.indexOf(e) - 1];
     return b._k[e] - b._k[t]
@@ -92,8 +92,8 @@ let O = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.NW.formatToPlainString(v.t.NRuk5u, {
-        soundCount: N(g.Eu4.TIER_1),
-        totalSoundCount: A(g.Eu4.TIER_1)
+        soundCount: A(g.Eu4.TIER_1),
+        totalSoundCount: N(g.Eu4.TIER_1)
       }),
       description: v.NW.string(v.t.Oq7OVl),
       icon: 13
@@ -135,8 +135,8 @@ let O = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.NW.formatToPlainString(v.t.NRuk5u, {
-        soundCount: N(g.Eu4.TIER_2),
-        totalSoundCount: A(g.Eu4.TIER_2)
+        soundCount: A(g.Eu4.TIER_2),
+        totalSoundCount: N(g.Eu4.TIER_2)
       }),
       description: v.NW.string(v.t.pEYlPT),
       icon: 13
@@ -194,8 +194,8 @@ let O = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.NW.formatToPlainString(v.t.NRuk5u, {
-        soundCount: N(g.Eu4.TIER_3),
-        totalSoundCount: A(g.Eu4.TIER_3)
+        soundCount: A(g.Eu4.TIER_3),
+        totalSoundCount: N(g.Eu4.TIER_3)
       }),
       description: v.NW.string(v.t["8omJSU"]),
       icon: 13

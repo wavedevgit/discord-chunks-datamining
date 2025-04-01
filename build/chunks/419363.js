@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  M9: () => l,
+  M9: () => o,
   Zh: () => i,
   e6: () => s,
   iq: () => a
@@ -22,6 +22,6 @@ function a(e, t) {
   i && (e.voice = t, speechSynthesis.speak(e))
 }
 
-function l() {
+function o() {
   i && speechSynthesis.cancel()
 }

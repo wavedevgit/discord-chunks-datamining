@@ -60,8 +60,8 @@ function I(e, t) {
 }
 let S = 200,
   T = 200,
-  A = +_.Z.Millis.MINUTE,
-  N = {},
+  N = +_.Z.Millis.MINUTE,
+  A = {},
   C = "content",
   R = "file://",
   P = !1,
@@ -213,7 +213,7 @@ function H(e) {
 
 function W(e) {
   let t = Date.now(),
-    n = t - A;
+    n = t - N;
   x = (x = [{
     bytes: e,
     timestamp: t
@@ -236,7 +236,7 @@ let K = o().throttle(H, S),
   q = o().throttle(Y, S);
 
 function Q(e, t, n) {
-  let r = n(N[t]),
+  let r = n(A[t]),
     i = n(e[t]);
   return null != r && null != i && 0 !== r ? Math.max(i - r, 0) : 0
 }
@@ -253,7 +253,7 @@ function X(e) {
   for (let e in r)
     for (let t in r[e]) {
       let a = (0, p.Tu)(e, t);
-      if (n[a] = B(r[e][t]), null != N[a]) {
+      if (n[a] = B(r[e][t]), null != A[a]) {
         let e = Q(n, a, F);
         e > 0 && K(w += e);
         let r = Q(n, a, V);
@@ -290,39 +290,39 @@ function X(e) {
         })
       }
     }
-  o || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), N = n, j = !0
+  o || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), A = n, j = !0
 }
 class J extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(u.default)
   }
   getState(e, t) {
-    return N[(0, p.Tu)(e, t)]
+    return A[(0, p.Tu)(e, t)]
   }
   isUpToDate(e, t) {
-    let n = N[(0, p.Tu)(e, t)];
+    let n = A[(0, p.Tu)(e, t)];
     return null != n && n.type === b.vxO.UP_TO_DATE
   }
   shouldPatch(e, t) {
-    let n = N[(0, p.Tu)(e, t)];
+    let n = A[(0, p.Tu)(e, t)];
     return null != n && !0 === n.shouldPatch
   }
   isInstalled(e, t) {
-    let n = N[(0, p.Tu)(e, t)];
+    let n = A[(0, p.Tu)(e, t)];
     return null != n ? n.type !== b.vxO.UNINSTALLING : E.Z.shouldBeInstalled(e, t)
   }
   supportsCloudSync(e, t) {
     null == t && (t = e);
-    let n = N[(0, p.Tu)(e, t)];
+    let n = A[(0, p.Tu)(e, t)];
     return null != n && null != n.storage && !!n.storage.sync
   }
   isLaunchable(e, t) {
     if (!(0, m.Q)()) return !1;
-    let n = N[(0, p.Tu)(e, t)];
+    let n = A[(0, p.Tu)(e, t)];
     return null != n && n.type === b.vxO.UP_TO_DATE && null != n.launchOptions && 0 !== n.launchOptions.length
   }
   getDefaultLaunchOption(e, t) {
-    let n = N[(0, p.Tu)(e, t)];
+    let n = A[(0, p.Tu)(e, t)];
     if (null == n) return null;
     let {
       defaultLaunchOptionId: r,
@@ -331,7 +331,7 @@ class J extends(r = a.ZP.Store) {
     return null == r || null == i ? null : i[r]
   }
   getLaunchOptions(e, t) {
-    let n = N[(0, p.Tu)(e, t)];
+    let n = A[(0, p.Tu)(e, t)];
     return null == n || null == n.launchOptions ? [] : Object.values(n.launchOptions)
   }
   getHistoricalTotalBytesRead() {

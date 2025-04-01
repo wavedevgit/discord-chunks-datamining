@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => R,
-  aQ: () => A
+  aQ: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -139,8 +139,8 @@ let O = e => {
       })
     })
   },
-  A = i.createContext(!1);
-class N extends i.PureComponent {
+  N = i.createContext(!1);
+class A extends i.PureComponent {
   renderWithTooltip(e) {
     return (0, r.jsx)(l.ua7, {
       position: "left",
@@ -171,7 +171,7 @@ class N extends i.PureComponent {
       isVerifiedTeen: f
     } = this.props, {
       visible: p
-    } = this.state, h = (0, r.jsx)(A.Consumer, {
+    } = this.state, h = (0, r.jsx)(N.Consumer, {
       children: h => {
         let g = h || p || !o;
         return [_.wk.EXPLICIT_CONTENT, _.wk.POTENTIAL_EXPLICIT_CONTENT].includes(s) && !t ? (0, r.jsxs)("div", {
@@ -235,7 +235,7 @@ class N extends i.PureComponent {
     } = this.props, {
       visible: d
     } = this.state;
-    return (0, r.jsx)(A.Consumer, {
+    return (0, r.jsx)(N.Consumer, {
       children: f => {
         let p = f || d;
         return [_.wk.EXPLICIT_CONTENT, _.wk.POTENTIAL_EXPLICIT_CONTENT].includes(s) ? (0, r.jsxs)("div", {
@@ -289,7 +289,7 @@ class N extends i.PureComponent {
       className: n
     } = this.props, {
       visible: o
-    } = this.state, s = (0, r.jsx)(A.Consumer, {
+    } = this.state, s = (0, r.jsx)(N.Consumer, {
       children: s => {
         let c = s || o,
           u = i.Children.toArray(e(c)),
@@ -401,7 +401,7 @@ class N extends i.PureComponent {
 let C = e => {
   let t = (0, f.m8)() && e.reason === _.wk.EXPLICIT_CONTENT,
     n = (0, d.Jm)();
-  return (0, r.jsx)(N, v(E({}, e), {
+  return (0, r.jsx)(A, v(E({}, e), {
     shouldAgeVerify: t,
     isVerifiedTeen: n
   }))

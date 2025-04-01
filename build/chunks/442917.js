@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(501640),
   S = n(569545),
   T = n(74299),
-  A = n(863908),
-  N = n(803647),
+  N = n(863908),
+  A = n(803647),
   C = n(266910),
   R = n(788983),
   P = n(703656),
@@ -140,7 +140,7 @@ class ef extends i.PureComponent {
     } = this.props;
     if (!(0, eo._5)(e)) return null;
     let n = this.activeStreamForSelectedParticipant;
-    return null == n ? null : (0, A.Z)(n, e.user, e.user.id === t, this.streamerPaused)
+    return null == n ? null : (0, N.Z)(n, e.user, e.user.id === t, this.streamerPaused)
   }
   componentDidMount() {
     let {
@@ -289,7 +289,7 @@ class ef extends i.PureComponent {
       let {
         participantOnScreen: e
       } = this.props;
-      a()((0, eo._5)(e), "cannot stop stream for non streamer"), (0, y.v)(m.Z.VIDEO_PIP, y.d.STREAM, !1), (0, N.Z)(e.stream)
+      a()((0, eo._5)(e), "cannot stop stream for non streamer"), (0, y.v)(m.Z.VIDEO_PIP, y.d.STREAM, !1), (0, A.Z)(e.stream)
     }), el(this, "handleHidePIP", () => {
       let {
         channel: e

@@ -37,7 +37,7 @@ var h = n(592125),
   S = n(350585),
   T = n(50398);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -46,14 +46,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -84,7 +84,7 @@ function P(e) {
     text: t.name,
     delay: 750,
     position: "top",
-    children: e => (0, r.jsx)(a.Z, N({
+    children: e => (0, r.jsx)(a.Z, A({
       src: t.src,
       emojiName: t.name,
       animated: !1
@@ -100,7 +100,7 @@ function w(e) {
     text: t.name,
     delay: 750,
     position: "top",
-    children: e => (0, r.jsx)(a.Z, N({
+    children: e => (0, r.jsx)(a.Z, A({
       emojiId: t.emojiId,
       emojiName: t.name,
       animated: t.animated
@@ -151,7 +151,7 @@ function L(e) {
       "aria-label": y.ZP.getUserTag(l, {
         decoration: "never"
       }),
-      children: e => (0, r.jsx)(o.P3F, R(N({
+      children: e => (0, r.jsx)(o.P3F, R(A({
         tag: "span"
       }, e), {
         children: d

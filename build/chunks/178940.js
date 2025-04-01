@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => N,
+  F: () => A,
   X: () => T
 }), n(978209), n(47120);
 var r, i = n(200651),
@@ -111,7 +111,7 @@ class T extends(r = o.PureComponent) {
             height: c
           }
         })
-      }), (0, i.jsx)(N, E({}, this.props)), u ? null : g]
+      }), (0, i.jsx)(A, E({}, this.props)), u ? null : g]
     })
   }
   constructor(...e) {
@@ -124,7 +124,7 @@ class T extends(r = o.PureComponent) {
   }
 }
 
-function A(e, t) {
+function N(e, t) {
   var n;
   let {
     value: r,
@@ -161,7 +161,7 @@ function A(e, t) {
   return a
 }
 
-function N(e) {
+function A(e) {
   let t = (0, p.Q3)("Checkbox"),
     {
       indicatorClassName: n,
@@ -173,7 +173,7 @@ function N(e) {
       color: f,
       disabled: _
     } = e,
-    h = A(e, t),
+    h = N(e, t),
     g = o.useMemo(() => r ? t ? d.Z.colors.WHITE.css : "inverted" === u || "row" === u ? d.Z.colors.WHITE.css : null != f ? f : d.Z.unsafe_rawColors.BRAND_500.css : d.Z.unsafe_rawColors.TRANSPARENT.css, [r, u, f, t]);
   return (0, i.jsx)("div", {
     className: s()(m.checkbox, l, n, {

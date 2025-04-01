@@ -75,9 +75,9 @@ function b(e) {
         location: "guild_profile"
       }
     }), null == n || n())
-  }, [n, b]), A = i.useCallback(e => {
+  }, [n, b]), N = i.useCallback(e => {
     e.stopPropagation(), t.visibility !== d.k.PUBLIC_WITH_RECRUITMENT && null != b ? T(e) : s.Z.openMemberVerificationModal(g, void 0, b), null == n || n()
-  }, [g, T, n, t.visibility, b]), N = i.useCallback(async e => {
+  }, [g, T, n, t.visibility, b]), A = i.useCallback(async e => {
     e.stopPropagation(), O(!0);
     try {
       await (0, u.Ub)(g, {
@@ -104,12 +104,12 @@ function b(e) {
       }));
     case f.sE.APPLY_TO_JOIN:
       return (0, r.jsx)(o.zxk, E(m({}, C), {
-        onClick: A,
+        onClick: N,
         children: p.NW.string(p.t["7XdMW1"])
       }));
     case f.sE.LURK_DISCOVERABLE:
       return (0, r.jsx)(o.zxk, E(m({}, C), {
-        onClick: N,
+        onClick: A,
         children: p.NW.string(p.t.eb9gDA)
       }));
     case f.sE.JOIN_VIA_INVITE:

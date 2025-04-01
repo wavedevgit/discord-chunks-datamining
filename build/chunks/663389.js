@@ -45,9 +45,9 @@ let f = c.QZA.CLOSED,
   I = null,
   S = [],
   T = null,
-  A = null;
+  N = null;
 
-function N(e) {
+function A(e) {
   v = !0, C(e)
 }
 
@@ -66,11 +66,11 @@ function C(e) {
       newPassword: null,
       claimed: s.isClaimed()
     }
-  }), O = null !== (r = e.onClose) && void 0 !== r ? r : null, I = null !== (i = e.analyticsLocation) && void 0 !== i ? i : null, S = null !== (o = e.analyticsLocations) && void 0 !== o ? o : [], A = null !== (a = e.impressionSource) && void 0 !== a ? a : null
+  }), O = null !== (r = e.onClose) && void 0 !== r ? r : null, I = null !== (i = e.analyticsLocation) && void 0 !== i ? i : null, S = null !== (o = e.analyticsLocations) && void 0 !== o ? o : [], N = null !== (a = e.impressionSource) && void 0 !== a ? a : null
 }
 
 function R() {
-  f = c.QZA.CLOSED, v = !1, E = null, T = null, b = null, _ = null, p = null, h = {}, m = {}, O = null, I = null, S = [], A = null
+  f = c.QZA.CLOSED, v = !1, E = null, T = null, b = null, _ = null, p = null, h = {}, m = {}, O = null, I = null, S = [], N = null
 }
 
 function P(e) {
@@ -168,7 +168,7 @@ class U extends(r = a.ZP.Store) {
       analyticsLocation: I,
       analyticsLocations: S,
       initialSection: T,
-      impressionSource: A
+      impressionSource: N
     }
   }
   get onClose() {
@@ -177,7 +177,7 @@ class U extends(r = a.ZP.Store) {
 }
 u(U, "displayName", "UserSettingsModalStore");
 let G = new U(s.Z, {
-  USER_SETTINGS_MODAL_OPEN: N,
+  USER_SETTINGS_MODAL_OPEN: A,
   USER_SETTINGS_MODAL_INIT: C,
   USER_SETTINGS_MODAL_CLOSE: R,
   LOGOUT: R,

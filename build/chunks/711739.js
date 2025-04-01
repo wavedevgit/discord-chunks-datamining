@@ -115,12 +115,12 @@ let y = function(e) {
     }
     return o.join("")
   },
-  A = function(e) {
+  N = function(e) {
     return b(e, function(e) {
       return u.test(e) ? S(e.slice(4).toLowerCase()) : e
     })
   },
-  N = function(e) {
+  A = function(e) {
     return b(e, function(e) {
       return d.test(e) ? "xn--" + T(e) : e
     })
@@ -133,7 +133,7 @@ let y = function(e) {
     },
     decode: S,
     encode: T,
-    toASCII: N,
-    toUnicode: A
+    toASCII: A,
+    toUnicode: N
   };
 e.exports = C

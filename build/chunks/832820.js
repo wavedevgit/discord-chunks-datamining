@@ -48,15 +48,15 @@ let b = function(e) {
     numPotions: v
   }) : m.NW.format(m.t.RiQ4cn, {
     numPotions: v
-  }) : m.NW.string(m.t.hvVgAQ), [v, b]), [A, N] = i.useState(!1 === s);
+  }) : m.NW.string(m.t.hvVgAQ), [v, b]), [N, A] = i.useState(!1 === s);
   i.useEffect(() => {
     !1 === s && O()
   }, [s, O]);
   let C = i.useCallback(() => {
-      N(!1)
+      A(!1)
     }, []),
     R = i.useCallback(e => {
-      y(e), N(!1)
+      y(e), A(!1)
     }, [y]),
     P = i.useCallback(() => {
       (0, f.s)({
@@ -70,13 +70,13 @@ let b = function(e) {
     className: g.bar,
     children: [(0, r.jsx)(_.Z, {
       channel: t,
-      shouldShow: A,
+      shouldShow: N,
       onRequestClose: C,
       setEmojiConfetti: R,
       position: "top",
       align: "left",
       children: () => (0, r.jsxs)(a.P3F, {
-        onClick: () => N(!A),
+        onClick: () => A(!N),
         className: g.emojiSelectContainer,
         children: [(0, r.jsx)("div", {
           className: g.emojiIconContainer,

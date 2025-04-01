@@ -29,8 +29,8 @@ var r = n(525654),
   I = n(931261),
   S = n(15274),
   T = n(924301),
-  A = n(461014),
-  N = n(82085),
+  N = n(461014),
+  A = n(82085),
   C = n(264229),
   R = n(652898),
   P = n(895886),
@@ -496,12 +496,12 @@ let ey = {
       guild: s
     } = e;
     if (null != s && (null === (r = s.features) || void 0 === r ? void 0 : r.includes($.oNc.HUB))) {
-      N.Z.onOpenHubInvite(e);
+      A.Z.onOpenHubInvite(e);
       return
     }
     let l = (0, K.yE)(null !== (i = e.flags) && void 0 !== i ? i : 0, a.$.IS_APPLICATION_BYPASS);
-    if (null != s && !l && (0, A.u)(s)) {
-      (0, A._)(s.id);
+    if (null != s && !l && (0, N.u)(s)) {
+      (0, N._)(s.id);
       return
     }
     if (null == o) return;

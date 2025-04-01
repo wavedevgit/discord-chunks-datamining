@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dp: () => N,
+  Dp: () => A,
   Hh: () => C,
   ZP: () => R,
   hq: () => T
@@ -84,7 +84,7 @@ function T() {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     sound: t,
     forceShowBetaLabel: n = !1
@@ -119,13 +119,13 @@ function A(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(b.infoContainer, b.infoTooltip),
-    children: [(0, r.jsx)(A, {
+    children: [(0, r.jsx)(N, {
       sound: t
     }), (0, r.jsxs)("div", {
       className: b.infoSoundContainer,

@@ -109,12 +109,12 @@ let y = e => {
     T = i.useCallback(() => {
       S.dispatch(h.CkL.POPOUT_SHOW)
     }, [S]),
-    A = i.useCallback(() => {
+    N = i.useCallback(() => {
       S.dispatch(h.CkL.POPOUT_HIDE)
     }, [S]);
   return (0, r.jsx)(d.W5, {
     onMount: T,
-    onUnmount: A,
+    onUnmount: N,
     targetRef: y,
     overrideTargetRect: f,
     position: null != _ ? _ : "right",

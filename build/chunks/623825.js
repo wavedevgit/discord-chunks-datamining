@@ -1,12 +1,12 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 function r(e) {
   return e <= 220
 }
 
-function i(e) {
+function l(e) {
   return e <= 124
 }
 n.d(t, {
   K: () => r,
-  N: () => i
+  N: () => l
 })

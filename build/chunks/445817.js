@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(570140),
-  o = n(2052),
+  o = n(570140),
+  l = n(2052),
   c = n(932724),
   d = n(716161),
   u = n(672339),
@@ -16,28 +16,28 @@ var r = n(200651),
   p = n(594174),
   h = n(981631),
   f = n(388032),
-  N = n(305653);
+  b = n(305653);
 
-function b(e) {
+function N(e) {
   let {
     previewEnabled: t,
     onEnablePreview: n,
-    onCancelPreview: b
-  } = e, x = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), C = i.useRef(_), O = (0, o.O)(), S = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
+    onCancelPreview: N
+  } = e, x = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), O = i.useRef(_), C = (0, l.O)(), v = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
   return i.useEffect(() => () => {
-    j.current && l.Z.wait(() => (0, d.Up)(C.current))
+    j.current && o.Z.wait(() => (0, d.Up)(O.current))
   }, []), (0, r.jsx)(m.Z, {
     selectedBackgroundOption: _,
     onSelectBackgroundOption: e => {
-      j.current = !0, C.current = e, E(e), (0, u.wG)(e, {
-        location: O.location
+      j.current = !0, O.current = e, E(e), (0, u.wG)(e, {
+        location: C.location
       }).catch(h.dG4)
     },
-    onCancelPreview: b,
+    onCancelPreview: N,
     renderCamera: e => t ? (0, r.jsx)("div", {
-      className: N.cameraWrapper,
+      className: b.cameraWrapper,
       children: (0, r.jsxs)("div", {
-        className: N.camera,
+        className: b.camera,
         children: [(0, r.jsx)(x, {
           deviceId: e,
           width: 387,
@@ -46,11 +46,11 @@ function b(e) {
         }), (0, r.jsx)(m.S, {})]
       })
     }) : (0, r.jsxs)("div", {
-      className: N.cameraWrapper,
+      className: b.cameraWrapper,
       children: [(0, r.jsx)("div", {
-        className: N.previewImage
+        className: b.previewImage
       }), (0, r.jsx)(a.ua7, {
-        text: S ? null : f.NW.string(f.t["8jSzSU"]),
+        text: v ? null : f.NW.string(f.t["8jSzSU"]),
         children: e => {
           var t, i;
           return (0, r.jsx)(a.zxk, (t = function(e) {
@@ -72,7 +72,7 @@ function b(e) {
             return e
           }({}, e), i = i = {
             onClick: n,
-            disabled: !S,
+            disabled: !v,
             children: f.NW.string(f.t.JIf4v7)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);

@@ -128,11 +128,11 @@ class S extends(r = o.Component) {
       id: I,
       rows: S,
       flex: T,
-      autosize: A,
-      required: N,
+      autosize: N,
+      required: A,
       onInvalid: C,
       inputRef: R
-    } = this.props, P = A ? _.l : "textarea", w = this.hasError(), D = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = N ? _.l : "textarea", w = this.hasError(), D = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
       className: s()(m.inputWrapper, {
         [h.flex]: T
@@ -163,7 +163,7 @@ class S extends(r = o.Component) {
             minLength: l,
             maxLength: f ? void 0 : u,
             spellCheck: E,
-            required: N,
+            required: A,
             onChange: this.onChange,
             onBlur: this.onBlur,
             onFocus: this.onFocus,

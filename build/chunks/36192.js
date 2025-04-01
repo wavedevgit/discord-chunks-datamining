@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => S
+  Z: () => v
 }), n(47120), n(266796), n(566702);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(442837),
-  o = n(544891),
+  o = n(442837),
+  l = n(544891),
   c = n(704215),
   d = n(481060),
   u = n(230711),
@@ -16,21 +16,21 @@ var r = n(200651),
   p = n(43015),
   h = n(136097),
   f = n(605236),
-  N = n(246946),
-  b = n(594174),
+  b = n(246946),
+  N = n(594174),
   x = n(460562),
   _ = n(823379),
   E = n(981631),
   j = n(921944),
-  C = n(388032),
-  O = n(616130);
+  O = n(388032),
+  C = n(616130);
 
-function S() {
+function v() {
   let e;
   let {
     currentSession: t,
     otherSessions: n
-  } = (0, h.h)(), s = (0, l.e7)([N.Z], () => N.Z.hidePersonalInformation), a = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [u, g] = i.useState(!1);
+  } = (0, h.h)(), s = (0, o.e7)([b.Z], () => b.Z.hidePersonalInformation), a = (0, o.e7)([N.default], () => N.default.getCurrentUser()), [u, g] = i.useState(!1);
   i.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: j.L.AUTO
@@ -41,75 +41,75 @@ function S() {
     }
   }, []);
   let x = () => {
-      o.tn.post({
+      l.tn.post({
         url: E.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
       })
     },
-    [_, S] = i.useState(new Set);
+    [_, v] = i.useState(new Set);
   return s ? (0, r.jsx)(m.Z, {}) : (e = null == t && 0 === n.length ? u ? (0, r.jsx)("div", {
-    className: O.loading,
+    className: C.loading,
     children: (0, r.jsx)(d.$jN, {})
   }) : null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: O.sessions,
+      className: C.sessions,
       children: [(0, r.jsx)(d.hjN, {
         tag: d.RB0.H5,
-        title: C.NW.string(C.t.LLS19v),
-        titleClassName: O.groupTitle,
-        children: null != t ? (0, r.jsx)(v, {
+        title: O.NW.string(O.t.LLS19v),
+        titleClassName: C.groupTitle,
+        children: null != t ? (0, r.jsx)(S, {
           session: t,
           current: !0
         }) : null
       }), !(n.length > 0) && (null == a ? void 0 : a.mfaEnabled) ? null : (0, r.jsxs)(d.hjN, {
         tag: d.RB0.H5,
-        title: C.NW.string(C.t.xx1MWV),
-        titleClassName: O.groupTitle,
-        className: O.otherSessions,
-        children: [n.map(e => (0, r.jsx)(v, {
+        title: O.NW.string(O.t.xx1MWV),
+        titleClassName: C.groupTitle,
+        className: C.otherSessions,
+        children: [n.map(e => (0, r.jsx)(S, {
           session: e,
           useChecks: _.size > 0,
           checked: _.has(e.id_hash),
           setChecked: t => {
             let n = new Set(_);
-            t ? n.add(e.id_hash) : n.delete(e.id_hash), S(n)
+            t ? n.add(e.id_hash) : n.delete(e.id_hash), v(n)
           }
         }, e.id_hash)), (null == a ? void 0 : a.mfaEnabled) ? null : (0, r.jsx)(T, {})]
       })]
     }), n.length > 0 ? (0, r.jsxs)(d.hjN, {
       tag: d.RB0.H5,
-      title: _.size > 0 ? C.NW.string(C.t.mMEmRE) : C.NW.string(C.t.Vij32N),
+      title: _.size > 0 ? O.NW.string(O.t.mMEmRE) : O.NW.string(O.t.Vij32N),
       children: [(0, r.jsx)(d.R94, {
         type: d.geA.DESCRIPTION,
-        children: C.NW.string(C.t.OTXyaW)
+        children: O.NW.string(O.t.OTXyaW)
       }), (0, r.jsx)(d.zxk, {
         look: d.zxk.Looks.OUTLINED,
         color: d.zxk.Colors.RED,
         size: d.zxk.Sizes.SMALL,
-        className: O.logOutAllButton,
+        className: C.logOutAllButton,
         onClick: () => {
           _.size > 0 ? (0, p.L$)(Array.from(_)) : (0, p.L$)(n.map(e => e.id_hash))
         },
-        children: _.size > 0 ? C.NW.formatToPlainString(C.t["83CPLi"], {
+        children: _.size > 0 ? O.NW.formatToPlainString(O.t["83CPLi"], {
           count: _.size
-        }) : C.NW.string(C.t.cLmmeX)
+        }) : O.NW.string(O.t.cLmmeX)
       })]
     }) : null]
   }), (0, r.jsxs)(d.hjN, {
     tag: d.RB0.H1,
-    title: C.NW.string(C.t["+1h0k5"]),
+    title: O.NW.string(O.t["+1h0k5"]),
     children: [(0, r.jsx)(d.R94, {
       type: d.geA.DESCRIPTION,
-      className: O.description,
-      children: C.NW.string(C.t.zZp619)
+      className: C.description,
+      children: O.NW.string(O.t.zZp619)
     }), (null == a ? void 0 : a.isStaff()) ? (0, r.jsxs)("div", {
-      className: O.tools,
+      className: C.tools,
       children: [(0, r.jsx)(d.Text, {
-        className: O.toolsTitle,
+        className: C.toolsTitle,
         variant: "text-md/bold",
         children: "DEV TOOLS"
       }), (0, r.jsx)(d.Text, {
-        className: O.toolsTitle,
+        className: C.toolsTitle,
         variant: "text-sm/normal",
         color: "text-danger",
         children: "These tools are only shown to staff users."
@@ -134,16 +134,16 @@ function S() {
   }))
 }
 
-function v(e) {
-  var t, n, i, s, l;
+function S(e) {
+  var t, n, i, s, o;
   let {
-    session: o,
+    session: l,
     current: c,
     setChecked: u,
     checked: m,
     useChecks: g
-  } = e, f = null !== (l = null === (t = o.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== l ? l : null === (n = o.client_info) || void 0 === n ? void 0 : n.ip, N = null === (i = o.client_info) || void 0 === i ? void 0 : i.platform, {
-    text: b,
+  } = e, f = null !== (o = null === (t = l.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== o ? o : null === (n = l.client_info) || void 0 === n ? void 0 : n.ip, b = null === (i = l.client_info) || void 0 === i ? void 0 : i.platform, {
+    text: N,
     icon: x
   } = function(e) {
     switch (null == e ? void 0 : e.toLowerCase().trim()) {
@@ -151,7 +151,7 @@ function v(e) {
       case void 0:
       case "":
         return {
-          text: C.NW.string(C.t.cDHCNT), icon: d.pzj
+          text: O.NW.string(O.t.cDHCNT), icon: d.pzj
         };
       case "ios":
       case "android":
@@ -163,20 +163,20 @@ function v(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [b, N].filter(_.lm), S = [f, E].filter(_.lm);
+  }(null === (s = l.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(l.approx_last_used_time), j = [N, b].filter(_.lm), v = [f, E].filter(_.lm);
   return (0, r.jsxs)("div", {
-    className: a()(O.session, c ? O.currentSession : null),
+    className: a()(C.session, c ? C.currentSession : null),
     children: [(0, r.jsx)("div", {
-      className: O.sessionIcon,
+      className: C.sessionIcon,
       children: (0, r.jsx)(x, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: O.sessionInfo,
+      className: C.sessionInfo,
       children: [(0, r.jsxs)(d.Text, {
         variant: "eyebrow",
-        className: O.sessionInfoRow,
+        className: C.sessionInfoRow,
         children: [(0, r.jsx)("span", {
           children: j[0]
         }), j.length > 1 && (0, r.jsxs)(r.Fragment, {
@@ -188,19 +188,19 @@ function v(e) {
         })]
       }), (0, r.jsxs)(d.Text, {
         variant: "text-sm/medium",
-        className: O.sessionInfoRow,
+        className: C.sessionInfoRow,
         children: [(0, r.jsx)("span", {
-          children: S[0]
-        }), S.length > 1 && (0, r.jsxs)(r.Fragment, {
+          children: v[0]
+        }), v.length > 1 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
             children: "\xb7"
           }), (0, r.jsx)("span", {
-            children: S[1]
+            children: v[1]
           })]
         })]
       })]
     }), c ? null : g ? (0, r.jsx)("div", {
-      className: O.sessionCheckbox,
+      className: C.sessionCheckbox,
       children: (0, r.jsx)(d.XZJ, {
         onChange: (e, t) => {
           null == u || u(t)
@@ -208,43 +208,43 @@ function v(e) {
         value: m
       })
     }) : (0, r.jsx)(d.P3F, {
-      className: O.sessionMoreButton,
+      className: C.sessionMoreButton,
       onClick: e => {
-        e.shiftKey ? null == u || u(!0) : (0, p.L$)(o.id_hash)
+        e.shiftKey ? null == u || u(!0) : (0, p.L$)(l.id_hash)
       },
-      "aria-label": C.NW.string(C.t.E4MJNj),
+      "aria-label": O.NW.string(O.t.E4MJNj),
       children: (0, r.jsx)(d.Dio, {
         size: "md",
         color: "currentColor"
       })
     })]
-  }, o.id_hash)
+  }, l.id_hash)
 }
 
 function T() {
   return (0, r.jsxs)("div", {
-    className: a()(O.session, O.legacySession),
+    className: a()(C.session, C.legacySession),
     children: [(0, r.jsx)("div", {
-      className: O.sessionIcon,
+      className: C.sessionIcon,
       children: (0, r.jsx)(x.Z, {
         width: "32",
         height: "32"
       })
     }), (0, r.jsxs)("div", {
-      className: O.sessionInfo,
+      className: C.sessionInfo,
       children: [(0, r.jsx)(d.Text, {
         variant: "eyebrow",
-        className: O.sessionInfoRow,
+        className: C.sessionInfoRow,
         color: "text-muted",
         children: (0, r.jsx)("span", {
-          children: C.NW.string(C.t.iUa0sr)
+          children: O.NW.string(O.t.iUa0sr)
         })
       }), (0, r.jsx)(d.Text, {
         variant: "text-sm/medium",
-        className: O.sessionInfoRow,
+        className: C.sessionInfoRow,
         color: "text-muted",
         children: (0, r.jsx)("span", {
-          children: C.NW.format(C.t["044+8v"], {
+          children: O.NW.format(O.t["044+8v"], {
             onClick: () => u.Z.setSection(E.oAB.ACCOUNT, null, {
               analyticsLocations: [g.Z.USER_SETTINGS_SESSIONS]
             })

@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(448980),
   S = n(336383),
   T = n(194811),
-  A = n(373826),
-  N = n(315324),
+  N = n(373826),
+  A = n(315324),
   C = n(262210),
   R = n(670451),
   P = n(881530),
@@ -144,18 +144,18 @@ function B(e) {
         size: "xxs",
         color: a.TVs.colors.TEXT_NORMAL,
         className: M.voiceIcon
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(N.Z, {
         variant: "heading-sm/semibold",
         text: B.name
       })]
-    }) : (0, c.Z)(i) ? (0, r.jsx)(A.Z, {
+    }) : (0, c.Z)(i) ? (0, r.jsx)(N.Z, {
       variant: "heading-sm/semibold",
       text: i.name
-    }) : (0, r.jsx)(A.Z, {
+    }) : (0, r.jsx)(N.Z, {
       variant: "heading-sm/semibold",
       text: null !== (e = i.details) && void 0 !== e ? e : i.name
     })
-  }, en = () => (0, u.Z)(i) && null != U ? (0, r.jsx)(A.Z, {
+  }, en = () => (0, u.Z)(i) && null != U ? (0, r.jsx)(N.Z, {
     variant: "text-xs/normal",
     text: x.NW.formatToPlainString(x.t["hq/Qzc"], {
       guildName: U.name
@@ -165,15 +165,15 @@ function B(e) {
         action: "OPEN_VOICE_GUILD"
       }), null == V || V()
     }
-  }) : (0, c.Z)(i) ? (0, r.jsx)(A.Z, {
+  }) : (0, c.Z)(i) ? (0, r.jsx)(N.Z, {
     variant: "text-xs/normal",
     text: i.details
-  }) : (0, r.jsx)(A.Z, {
+  }) : (0, r.jsx)(N.Z, {
     text: i.state,
     variant: "text-xs/normal"
   }), er = () => {
     var e;
-    return i.type === D.IIU.WATCHING ? null : (0, c.Z)(i) ? ei() : (0, r.jsx)(A.Z, {
+    return i.type === D.IIU.WATCHING ? null : (0, c.Z)(i) ? ei() : (0, r.jsx)(N.Z, {
       text: null === (e = i.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
@@ -181,10 +181,10 @@ function B(e) {
     var e, t, n, o;
     return (null === (e = i.party) || void 0 === e ? void 0 : e.size) == null && i.application_id === L.Zc ? (0, r.jsxs)("div", {
       className: M.gameState,
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: i.state
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: x.NW.formatToPlainString(x.t["u//9Bw"], {
           count: "0",
@@ -193,10 +193,10 @@ function B(e) {
       })]
     }) : (0, l.Z)(i) && (null === (t = i.party) || void 0 === t ? void 0 : t.size) != null && (null === (n = i.party) || void 0 === n ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
       className: M.gameState,
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: i.state
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: 0 === i.party.size[1] ? x.NW.formatToPlainString(x.t.IM4J4e, {
           count: i.party.size[0]
@@ -205,7 +205,7 @@ function B(e) {
           max: i.party.size[1]
         })
       })]
-    }) : null == i.party ? (0, r.jsx)(A.Z, {
+    }) : null == i.party ? (0, r.jsx)(N.Z, {
       variant: "text-xs/normal",
       text: i.state
     }) : null
@@ -229,7 +229,7 @@ function B(e) {
       }), $(e)
     },
     children: [et(), en(), er()]
-  }), es = () => null == U || null == B ? null : (0, r.jsx)(N.Z, {
+  }), es = () => null == U || null == B ? null : (0, r.jsx)(A.Z, {
     user: t,
     guild: U,
     channel: B,

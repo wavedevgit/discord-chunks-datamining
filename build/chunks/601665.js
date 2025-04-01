@@ -26,9 +26,9 @@ var r = n(200651),
   I = n(161572),
   S = n(228168),
   T = n(388032),
-  A = n(888113);
+  N = n(888113);
 
-function N(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,7 +44,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ function R(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: N,
+    guildId: A,
     channelId: R,
     messageId: P,
     roleId: w,
@@ -67,11 +67,11 @@ function R(e) {
   } = (0, c.ZP)([...M, l.Z.BITE_SIZE_PROFILE_POPOUT]), j = (0, f.ZB)({
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
-    guildId: N,
+    guildId: A,
     channelId: R,
     messageId: P,
     roleId: w
-  }), U = (0, p.ZP)(t.id, N), G = (0, o.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), B = (0, o.e7)([u.ZP], () => null != N ? u.ZP.getMember(N, t.id) : null), F = i.useRef(null), V = (0, s.Z)(F);
+  }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), F = i.useRef(null), V = (0, s.Z)(F);
   i.useEffect(() => {
     null == L || L(null == F ? void 0 : F.current)
   }, [F, L]);
@@ -106,21 +106,21 @@ function R(e) {
             profileType: S.y0.BITE_SIZE,
             children: (0, r.jsx)(E.Z, {
               user: t,
-              guildId: N,
+              guildId: A,
               viewProfileItem: H(),
               onCloseProfile: D
             })
           }), (0, r.jsxs)("header", {
-            className: A.header,
+            className: N.header,
             children: [(0, r.jsx)(m.Z, {
               user: t,
               displayProfile: U,
-              guildId: N,
+              guildId: A,
               profileType: S.y0.BITE_SIZE
             }), (0, r.jsx)(h.Z, {
               user: t,
               displayProfile: U,
-              guildId: N,
+              guildId: A,
               channelId: R,
               profileType: S.y0.BITE_SIZE,
               onOpenProfile: x ? void 0 : Z
@@ -141,7 +141,7 @@ function R(e) {
             onClose: D
           }), (0, r.jsx)(I.Z, {
             user: t,
-            guildId: N,
+            guildId: A,
             channelId: R,
             onClose: D
           })]

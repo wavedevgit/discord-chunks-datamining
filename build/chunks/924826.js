@@ -33,23 +33,23 @@ function u(e) {
     disableClickOnSpace: y = !1
   } = e, O = r.useRef(n ? (0, l.jb)(t, n) : null), I = r.useRef(!1), S = r.useRef(null), T = r.useRef(u);
 
-  function A(e) {
+  function N(e) {
     var t;
     return (null !== (t = S.current) && void 0 !== t ? t : document).querySelector(e)
   }
 
-  function N(e) {
+  function A(e) {
     var t;
-    null === (t = A(e)) || void 0 === t || t.focus()
+    null === (t = N(e)) || void 0 === t || t.focus()
   }
   r.useLayoutEffect(() => {
     T.current = u
   }, [u]);
   let C = r.useCallback((e, t) => {
-      T.current && (null != h ? h : N)(e, t)
+      T.current && (null != h ? h : A)(e, t)
     }, [h]),
     R = r.useCallback(e => {
-      T.current && (null != m ? m : N)(e)
+      T.current && (null != m ? m : A)(e)
     }, [m]),
     P = r.useCallback(e => {
       if (O.current = e, null == e) {
@@ -91,7 +91,7 @@ function u(e) {
     function r(e) {
       !e.currentTarget.contains(e.relatedTarget) && (L(!1), requestAnimationFrame(() => {
         let e = O.current;
-        null !== e && null == A((0, l.P1)(e)) && R((0, l.P1)(t, l.kn))
+        null !== e && null == N((0, l.P1)(e)) && R((0, l.P1)(t, l.kn))
       }))
     }
     async function i() {
@@ -100,7 +100,7 @@ function u(e) {
       let n = O.current;
       if (g && null !== n) {
         let t = (0, l.P1)(n),
-          r = A(t);
+          r = N(t);
         if (null != r && (!0 !== I.current || await (0, a.JJ)(e, r))) return C(t, (0, l.x3)(n))
       }
       let r = await (0, a.KG)(e, c(t, S));
@@ -118,7 +118,7 @@ function u(e) {
         let t = O.current;
         if (null != t) {
           var e;
-          return null !== (e = A((0, l.P1)(t))) && void 0 !== e ? e : void 0
+          return null !== (e = N((0, l.P1)(t))) && void 0 !== e ? e : void 0
         }
         return
       }
@@ -165,7 +165,7 @@ function u(e) {
           let t = O.current;
           if (null != t) {
             var i;
-            let n = A((0, l.P1)(t)),
+            let n = N((0, l.P1)(t)),
               r = null !== (i = null == n ? void 0 : n.ownerDocument) && void 0 !== i ? i : document,
               o = E || n === r.activeElement;
             null != n && o && (e.preventDefault(), e.stopPropagation(), null == n || n.click())

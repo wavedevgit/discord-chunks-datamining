@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(772848),
-  o = n(866442),
+  o = n(772848),
+  l = n(866442),
   c = n(692547),
   d = n(481060),
   u = n(699682),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(388032),
   f = n(122645);
 
-function N(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function N(e) {
   return e
 }
 
-function b(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,20 +58,20 @@ function x(e) {
     disabled: _,
     label: E,
     colorPickerMiddle: j,
-    colorPickerFooter: C,
-    showEyeDropper: O
-  } = e, S = i.useRef(null), v = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), A = (0, o.Rf)(s), y = A === v ? T : A, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
+    colorPickerFooter: O,
+    showEyeDropper: C
+  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, l.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = i.useState((0, o.Z)());
   return i.useEffect(() => {
-    (R !== j || D !== C) && w((0, l.Z)())
-  }, [C, j, D, R]), (0, r.jsx)(d.yRy, {
+    (R !== j || D !== O) && w((0, o.Z)())
+  }, [O, j, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
-    renderPopout: e => (0, r.jsx)(d.Z$W, b(N({}, e), {
+    renderPopout: e => (0, r.jsx)(d.Z$W, N(b({}, e), {
       value: s,
       onChange: t,
       suggestedColors: x,
       middle: j,
-      footer: C,
-      showEyeDropper: O
+      footer: O,
+      showEyeDropper: C
     })),
     onRequestClose: n,
     children: e => {
@@ -93,21 +93,21 @@ function x(e) {
         return i
       }(e, ["onClick"]);
       return (0, r.jsxs)("div", {
-        ref: S,
+        ref: v,
         className: a()(f.colorSwatch, {
           [f.disabled]: _
         }),
-        children: [(0, r.jsx)(d.P3F, b(N({}, n), {
+        children: [(0, r.jsx)(d.P3F, N(b({}, n), {
           tabIndex: _ ? -1 : 0,
           onClick: _ ? p.dG4 : t,
           style: {
-            backgroundColor: A,
-            borderColor: y
+            backgroundColor: y,
+            borderColor: A
           },
           className: f.swatch,
           "aria-label": h.NW.string(h.t.Qp04hI),
           focusProps: {
-            ringTarget: S
+            ringTarget: v
           },
           children: (0, r.jsx)(d.vdY, {
             size: "custom",

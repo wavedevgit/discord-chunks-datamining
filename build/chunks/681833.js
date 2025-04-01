@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(987997),
-  o = n(388032),
+  o = n(987997),
+  l = n(388032),
   c = n(735594),
   d = n(537014),
   u = n(845904);
@@ -21,13 +21,13 @@ function m(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/bold",
-      children: o.NW.string(o.t["48ywCg"])
+      children: l.NW.string(l.t["48ywCg"])
     }), (0, r.jsx)(a.LZC, {
       size: 4
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       className: c.sectionDescription,
-      children: o.NW.string(o.t.VWxmSk)
+      children: l.NW.string(l.t.VWxmSk)
     }), (0, r.jsx)(a.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
@@ -41,18 +41,18 @@ function m(e) {
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-xl/semibold",
           className: c.header,
-          children: o.NW.string(o.t["48ywCg"])
+          children: l.NW.string(l.t["48ywCg"])
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           className: c.description,
-          children: o.NW.format(o.t["/esXLi"], {
+          children: l.NW.format(l.t["/esXLi"], {
             numSubscriptions: n
           })
         })]
-      }), (0, r.jsx)(l.Z, {
+      }), (0, r.jsx)(o.Z, {
         color: a.zxk.Colors.BRAND,
         onClick: t,
-        children: o.NW.string(o.t.z5YcJy)
+        children: l.NW.string(l.t.z5YcJy)
       })]
     })]
   })

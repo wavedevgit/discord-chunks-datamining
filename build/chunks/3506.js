@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(392711),
-  l = n.n(a),
-  o = n(442837),
+  o = n.n(a),
+  l = n(442837),
   c = n(481060),
   d = n(660216),
   u = n(13245),
@@ -17,37 +17,37 @@ var i = n(512722),
   p = n(594190),
   h = n(212632),
   f = n(444295),
-  N = n(486016),
-  b = n(809357),
+  b = n(486016),
+  N = n(809357),
   x = n(371651),
   _ = n(624864),
   E = n(957148),
   j = n(556296),
-  C = n(808506),
-  O = n(237997),
-  S = n(626135);
+  O = n(808506),
+  C = n(237997),
+  v = n(626135);
 n(63063);
-var v = n(13140),
+var S = n(13140),
   T = n(981631),
   I = n(388032),
-  A = n(549745);
-let y = P(null);
+  y = n(549745);
+let A = P(null);
 
 function P(e) {
   var t;
-  let n = O.default.getNotificationPositionMode(),
+  let n = C.default.getNotificationPositionMode(),
     r = n !== T._vf.DISABLED,
     i = j.ZP.getOverlayKeybind(),
     s = j.ZP.getOverlayChatKeybind();
   return {
-    enabled: C.default.enabled,
+    enabled: O.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
-    text_notifications_mode: _.Z.isNotificationDisabled(N.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
-    hotkey: null != i ? (0, v.BB)(i.shortcut) : null,
-    text_activation_hotkey: null != s ? (0, v.BB)(s.shortcut) : null,
-    text_opacity_slider: O.default.getTextWidgetOpacity(),
-    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : C.default.enabled
+    text_notifications_mode: _.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
+    hotkey: null != i ? (0, S.BB)(i.shortcut) : null,
+    text_activation_hotkey: null != s ? (0, S.BB)(s.shortcut) : null,
+    text_opacity_slider: C.default.getTextWidgetOpacity(),
+    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : O.default.enabled
   }
 }
 
@@ -58,7 +58,7 @@ function R(e) {
   } = e;
   return (0, r.jsx)(c.xJW, {
     title: n,
-    className: A.userSettingsOverlayField,
+    className: y.userSettingsOverlayField,
     children: t
   })
 }
@@ -70,38 +70,38 @@ function D(e) {
   } = e, {
     oopEnabled: i,
     legacyEnabled: a
-  } = (0, o.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
-    avatarSizeMode: C,
-    displayNameMode: v,
+  } = (0, l.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
+    avatarSizeMode: O,
+    displayNameMode: S,
     displayUserMode: D,
     textChatDisabled: Z,
     notificationPositionMode: w,
     shouldShowKeybindIndicators: k
-  } = (0, o.cj)([O.default, _.Z], () => ({
-    avatarSizeMode: O.default.getAvatarSizeMode(),
-    displayNameMode: O.default.getDisplayNameMode(),
-    displayUserMode: O.default.getDisplayUserMode(),
-    notificationPositionMode: O.default.getNotificationPositionMode(),
-    shouldShowKeybindIndicators: O.default.showKeybindIndicators,
-    textChatDisabled: _.Z.isNotificationDisabled(N.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), W = (0, o.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, b.Z)({
+  } = (0, l.cj)([C.default, _.Z], () => ({
+    avatarSizeMode: C.default.getAvatarSizeMode(),
+    displayNameMode: C.default.getDisplayNameMode(),
+    displayUserMode: C.default.getDisplayUserMode(),
+    notificationPositionMode: C.default.getNotificationPositionMode(),
+    shouldShowKeybindIndicators: C.default.showKeybindIndicators,
+    textChatDisabled: _.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT)
+  })), W = (0, l.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, N.Z)({
     location: "overlay_user_settings"
   }), B = (0, g.$1)();
   return ! function() {
-    let e = P(y);
-    l().isEqual(e, y) || (S.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), y = e)
+    let e = P(A);
+    o().isEqual(e, A) || (v.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), A = e)
   }(), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hjN, {
       className: t,
       tag: c.RB0.H1,
       title: n ? I.NW.string(I.t["9cb1U1"]) : null,
       children: [!1, (0, r.jsxs)("div", {
-        className: A.enableOverlaySection,
+        className: y.enableOverlaySection,
         children: [(0, r.jsx)(c.xJW, {
           title: I.NW.string(I.t.XkaTrq),
-          className: A.enableOverlayItem,
+          className: y.enableOverlayItem,
           children: (0, r.jsx)(c.j7V, {
-            className: A.enableSwitch,
+            className: y.enableSwitch,
             value: a,
             disabled: B,
             note: B ? I.NW.string(I.t.Eb0lnJ) : null,
@@ -116,7 +116,7 @@ function D(e) {
           })
         }), (0, r.jsx)(c.xJW, {
           title: I.NW.string(I.t.VsAZcH),
-          className: A.enableOverlayItem,
+          className: y.enableOverlayItem,
           children: (0, r.jsx)(m.Z, {
             disabled: !a,
             defaultValue: null != W ? W.shortcut : [],
@@ -170,7 +170,7 @@ function D(e) {
             } = e;
             return u.Z.setAvatarSizeMode(t)
           },
-          value: C
+          value: O
         })
       }), (0, r.jsx)(R, {
         title: I.NW.string(I.t.J0dpcH),
@@ -191,7 +191,7 @@ function D(e) {
             } = e;
             return u.Z.setDisplayNameMode(t)
           },
-          value: v
+          value: S
         })
       }), (0, r.jsx)(R, {
         title: I.NW.string(I.t.swsWWF),
@@ -222,11 +222,11 @@ function D(e) {
     }), (0, r.jsxs)(c.hjN, {
       tag: c.RB0.H1,
       title: I.NW.string(I.t["3GMnLi"]),
-      className: A.notificationSection,
+      className: y.notificationSection,
       children: [(0, r.jsx)(R, {
         title: I.NW.string(I.t.IQv8Eh),
         children: (0, r.jsx)("div", {
-          className: A.notificationSettings,
+          className: y.notificationSettings,
           children: (0, r.jsx)(h.Z, {
             position: w,
             onChange: (e, t) => u.Z.setNotificationPositionMode(t)
@@ -237,8 +237,8 @@ function D(e) {
           value: w !== T._vf.DISABLED && !Z,
           disabled: w === T._vf.DISABLED,
           onChange: function() {
-            let e = _.Z.isNotificationDisabled(N.OverlayNotificationDisabledSetting.TEXT_CHAT);
-            u.Z.setNotificationDisabledSetting(N.OverlayNotificationDisabledSetting.TEXT_CHAT, !e)
+            let e = _.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT);
+            u.Z.setNotificationDisabledSetting(b.OverlayNotificationDisabledSetting.TEXT_CHAT, !e)
           },
           hideBorder: !0,
           children: I.NW.string(I.t.Fy5kPj)

@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   Az: () => b,
-  Eg: () => N,
+  Eg: () => A,
   IZ: () => v,
   PP: () => E,
   Ub: () => g,
   c6: () => T,
   m9: () => I,
-  mT: () => A,
+  mT: () => N,
   qn: () => O,
   rC: () => S,
   tI: () => y
@@ -194,7 +194,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let t = a.Z.getLoadId(e);
   d.default.track(f.rMx.GUILD_DISCOVERY_GUILD_JOIN_CLICKED, {
     guild_id: e,
@@ -202,7 +202,7 @@ function A(e) {
     guild_size: c.Z.getMemberCount(e)
   })
 }
-async function N(e) {
+async function A(e) {
   try {
     var t, n;
     let o = await i.tn.get({

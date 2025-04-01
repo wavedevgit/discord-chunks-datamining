@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(45521),
   S = n(285651),
   T = n(217590),
-  A = n(453070),
-  N = n(926491),
+  N = n(453070),
+  A = n(926491),
   C = n(373228),
   R = n(462109),
   P = n(422195),
@@ -107,7 +107,7 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
     i.useImperativeHandle(t, () => ({
       onPickerOpen: ex
     }));
-    let el = (0, A.Sd)(c),
+    let el = (0, N.Sd)(c),
       ec = 0 === el.filter(e => e.type !== C.Ih.EMPTY_GUILD_UPSELL).length,
       eu = (0, m.ep)({
         gridWrapperRef: Q,
@@ -120,9 +120,9 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       ef = i.useMemo(() => new Set(ed), [ed]),
       e_ = (0, l.e7)([v.default], () => v.default.getCurrentUser()),
       ep = i.useMemo(() => (0, M.S)(eo, e_, c), [eo, e_, c]),
-      eh = (0, A.RJ)(),
-      em = (0, A.LZ)(),
-      eg = (0, l.cj)([N.Z], () => N.Z.getAllGuildStickers()),
+      eh = (0, N.RJ)(),
+      em = (0, N.LZ)(),
+      eg = (0, l.cj)([A.Z], () => A.Z.getAllGuildStickers()),
       {
         sendable: eE = [],
         sendableWithPremium: eb = []
@@ -136,9 +136,9 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         rowCount: eI,
         rowCountBySection: eS,
         stickersGrid: eT,
-        gutterWidth: eA,
-        columnCounts: eN
-      } = (0, A.el)({
+        gutterWidth: eN,
+        columnCounts: eA
+      } = (0, N.el)({
         filteredStickers: ep,
         stickersCategories: el,
         collapsedStickersCategories: ef,
@@ -176,7 +176,7 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         handleGridContainerKeyDown: eD,
         isUsingKeyboardNavigation: eL
       } = (0, R.t)({
-        columnCounts: eN,
+        columnCounts: eA,
         stickersListRef: ee,
         stickersGrid: eT,
         onGridItemSelect: eC,
@@ -190,7 +190,7 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         t = [];
       if (null !== e) {
         var n;
-        t = null !== (n = N.Z.getStickersByGuildId(e)) && void 0 !== n ? n : []
+        t = null !== (n = A.Z.getStickersByGuildId(e)) && void 0 !== n ? n : []
       }
       let r = 0;
       null != eg && [...eg.values()].forEach(e => {
@@ -242,7 +242,7 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             getStickerItemProps: eR,
             getStickerRowProps: eP,
             gridWidth: eu,
-            gutterWidth: eA,
+            gutterWidth: eN,
             isUsingKeyboardNavigation: eL,
             onSelectSticker: ey,
             rowCount: eI,
@@ -260,7 +260,7 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       })]
     })
   }),
-  ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
+  ei = (e, t) => ((0, N.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
     id: k.nZ,
     "aria-labelledby": k.ED,

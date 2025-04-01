@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(626135),
   a = n(63063),
-  l = n(88658),
-  o = n(695346),
+  o = n(88658),
+  l = n(695346),
   c = n(639814),
   d = n(838436),
   u = n(51331),
@@ -16,15 +16,15 @@ var r = n(200651),
   p = n(726985),
   h = n(736530),
   f = n(981631),
-  N = n(388032);
+  b = n(388032);
 
-function b(e) {
+function N(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, c = o.iH.useSetting().includes(n), g = i.useCallback(e => {
-    let r = (0, l.rr)();
-    e ? r.delete(n) : r.add(n), o.iH.updateSetting([...r]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+  } = e, c = l.iH.useSetting().includes(n), g = i.useCallback(e => {
+    let r = (0, o.rr)();
+    e ? r.delete(n) : r.add(n), l.iH.updateSetting([...r]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: m.Y.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
       ingress: t,
       guild_id: n
@@ -33,10 +33,10 @@ function b(e) {
   return n === h.T ? null : (0, r.jsx)(d.U, {
     setting: p.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_JOINING_V2,
     children: (0, r.jsx)(u.Z, {
-      title: N.NW.string(N.t["T+nevL"]),
+      title: b.NW.string(b.t["T+nevL"]),
       value: !c,
       onChange: g,
-      note: N.NW.format(N.t.jXKQCg, {
+      note: b.NW.format(b.t.jXKQCg, {
         helpdeskArticle: a.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })
@@ -48,7 +48,7 @@ function x(e) {
     ingress: t = g.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, c.is)();
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(N, {
     ingress: t,
     guildId: null != n ? n : i
   })

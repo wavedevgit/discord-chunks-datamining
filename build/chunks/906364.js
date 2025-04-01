@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
@@ -8,12 +8,12 @@ var i = n(481060),
   s = n(993413),
   a = n(388032);
 
-function l(e) {
+function o(e) {
   let {
     sectionTitle: t,
     errors: n,
-    onPronounsChange: l,
-    pendingPronouns: o,
+    onPronounsChange: o,
+    pendingPronouns: l,
     placeholder: c,
     currentPronouns: d,
     disabled: u = !1
@@ -25,9 +25,9 @@ function l(e) {
     children: (0, r.jsx)(i.oil, {
       placeholder: null != c ? c : a.NW.string(a.t.NPEUUl),
       maxLength: 40,
-      value: null != o ? o : d,
+      value: null != l ? l : d,
       onChange: function(e) {
-        l(e === d ? void 0 : e)
+        o(e === d ? void 0 : e)
       },
       disabled: u
     })

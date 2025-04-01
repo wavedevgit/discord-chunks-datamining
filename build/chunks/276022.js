@@ -25,7 +25,7 @@ function m(e) {
     guildId: E,
     context: b,
     onItemClick: v
-  } = e, y = null !== (t = null == g ? void 0 : g.id) && void 0 !== t ? t : null == m ? void 0 : m.id, O = f.Z.getGuild(E), I = (0, o.e7)([_.Z], () => null != O ? _.Z.can(p.Plq.MANAGE_GUILD, O) : null), S = !0, T = !0, A = (0, c.LD)(E, T), N = (0, c.PL)(S, T), {
+  } = e, y = null !== (t = null == g ? void 0 : g.id) && void 0 !== t ? t : null == m ? void 0 : m.id, O = f.Z.getGuild(E), I = (0, o.e7)([_.Z], () => null != O ? _.Z.can(p.Plq.MANAGE_GUILD, O) : null), S = !0, T = !0, N = (0, c.LD)(E, T), A = (0, c.PL)(S, T), {
     isUserApp: C,
     isGuildApp: R
   } = i.useMemo(() => {
@@ -34,8 +34,8 @@ function m(e) {
       isGuildApp: !1,
       isUserApp: !1
     };
-    let i = Object.values(null !== (n = null === (e = A.result) || void 0 === e ? void 0 : e.sections) && void 0 !== n ? n : {}),
-      o = Object.values(null !== (r = null === (t = N.result) || void 0 === t ? void 0 : t.sections) && void 0 !== r ? r : {});
+    let i = Object.values(null !== (n = null === (e = N.result) || void 0 === e ? void 0 : e.sections) && void 0 !== n ? n : {}),
+      o = Object.values(null !== (r = null === (t = A.result) || void 0 === t ? void 0 : t.sections) && void 0 !== r ? r : {});
     return {
       isGuildApp: i.some(e => {
         var t;
@@ -46,7 +46,7 @@ function m(e) {
         return (null === (t = e.descriptor.application) || void 0 === t ? void 0 : t.id) === y
       })
     }
-  }, [A, N, y]);
+  }, [N, A, y]);
   i.useEffect(() => {
     n(360606)
   }, []);

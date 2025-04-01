@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(544989),
   S = n(171368),
   T = n(228168),
-  A = n(388032),
-  N = n(888113);
+  N = n(388032),
+  A = n(888113);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,7 @@ function P(e) {
     V = !x && (0, c.Z)(t.id),
     Z = () => V ? (0, r.jsx)(o.sNh, {
       id: "view-profile",
-      label: A.NW.string(A.t["+Xp3ho"]),
+      label: N.NW.string(N.t["+Xp3ho"]),
       action: () => {
         F(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
@@ -109,7 +109,7 @@ function P(e) {
               viewProfileItem: Z()
             })
           }), (0, r.jsxs)("header", {
-            className: N.header,
+            className: A.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
               displayProfile: k,
@@ -123,11 +123,11 @@ function P(e) {
               profileType: T.y0.BITE_SIZE,
               onOpenProfile: V ? F : void 0
             }), t.isClyde() && (0, r.jsx)(u.Z, {
-              className: N.headerTag
+              className: A.headerTag
             })]
           }), (0, r.jsxs)(o.Ttm, {
             fade: !0,
-            className: N.body,
+            className: A.body,
             children: [(0, r.jsx)(y.Z, {
               user: t,
               profileType: T.y0.BITE_SIZE,
@@ -145,7 +145,7 @@ function P(e) {
               textColor: "header-primary"
             })]
           }), (0, r.jsx)("footer", {
-            className: N.footer
+            className: A.footer
           })]
         }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(d.Z, {
           profileEffectId: null == k ? void 0 : k.profileEffectId,

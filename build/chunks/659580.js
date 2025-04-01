@@ -1,6 +1,6 @@
 /** Chunk was on 12321 **/
 n.d(t, {
-  default: () => N
+  default: () => P
 });
 var r = n(200651);
 n(192379);
@@ -24,12 +24,12 @@ var l = n(990547),
   j = n(388032),
   S = n(530016);
 
-function N(e) {
+function P(e) {
   let {
     onClose: t,
     renderOutputDevices: n = !1,
-    renderInputDevices: N = !1,
-    renderInputModes: P = !1,
+    renderInputDevices: P = !1,
+    renderInputModes: N = !1,
     renderInputVolume: x = !1,
     renderOutputVolume: I = !1,
     renderDeafen: Z = !1,
@@ -66,7 +66,7 @@ function N(e) {
       onClose: t,
       navId: "audio-device-context",
       "aria-label": j.NW.string(j.t.ZR1Ss7),
-      children: [N ? _ : null, n ? W : null, !E && P ? (0, r.jsx)(a.kSQ, {
+      children: [P ? _ : null, n ? W : null, !E && N ? (0, r.jsx)(a.kSQ, {
         label: j.NW.string(j.t["pS+K2N"]),
         children: k
       }) : null, (0, r.jsxs)(a.kSQ, {
@@ -78,7 +78,7 @@ function N(e) {
             location: "AudioDeviceMenu"
           }),
           checked: R
-        }, "self-deafen") : null, E && N && b.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
+        }, "self-deafen") : null, E && P && b.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
           checked: V === h.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: j.NW.string(j.t.Q8gkVF),

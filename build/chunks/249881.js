@@ -6,16 +6,16 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(243778),
-  l = n(921944),
-  o = n(388032),
+  o = n(921944),
+  l = n(388032),
   c = n(529584);
 let d = e => {
     let {
       markAsDismissed: t
     } = e;
-    return i.useEffect(() => t(l.L.UNKNOWN), [t]), (0, r.jsx)(s.IGR, {
+    return i.useEffect(() => t(o.L.UNKNOWN), [t]), (0, r.jsx)(s.IGR, {
       className: c.newBadge,
-      text: o.NW.string(o.t.y2b7CA)
+      text: l.NW.string(l.t.y2b7CA)
     })
   },
   u = e => {
@@ -23,7 +23,7 @@ let d = e => {
       title: t,
       body: n,
       img: i,
-      newIndicatorDismissibleContent: l,
+      newIndicatorDismissibleContent: o,
       onClick: u
     } = e;
     return (0, r.jsxs)("div", {
@@ -33,13 +33,13 @@ let d = e => {
         children: [(0, r.jsxs)("div", {
           className: c.headerText,
           children: [(0, r.jsx)(a.ZP, {
-            contentTypes: [l],
+            contentTypes: [o],
             children: e => {
               let {
                 visibleContent: t,
                 markAsDismissed: n
               } = e;
-              return t === l ? (0, r.jsx)(d, {
+              return t === o ? (0, r.jsx)(d, {
                 markAsDismissed: n
               }) : null
             }
@@ -55,7 +55,7 @@ let d = e => {
         size: s.PhG.MEDIUM,
         onClick: u,
         className: c.reconnectButton,
-        children: o.NW.string(o.t.vD60Pj)
+        children: l.NW.string(l.t.vD60Pj)
       })]
     })
   }

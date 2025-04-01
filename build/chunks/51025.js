@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A1: () => N,
+  A1: () => A,
   LO: () => v,
   S1: () => E,
   Wx: () => P,
@@ -12,7 +12,7 @@ n.d(t, {
   ob: () => b,
   pC: () => S,
   v4: () => T,
-  wO: () => A,
+  wO: () => N,
   wi: () => R
 }), n(411104);
 var r = n(544891),
@@ -144,11 +144,11 @@ function T() {
   _.Z.resume()
 }
 
-function A() {
+function N() {
   _.Z.pause()
 }
 
-function N(e, t) {
+function A(e, t) {
   i.Z.dispatch({
     type: "DISPATCH_APPLICATION_MOVE_UP",
     applicationId: e,

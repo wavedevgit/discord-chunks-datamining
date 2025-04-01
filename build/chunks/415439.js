@@ -1,16 +1,16 @@
 /** Chunk was on 13323 **/
 n.d(t, {
   BV: () => j,
-  FW: () => C,
+  FW: () => O,
   Kt: () => E,
-  ZC: () => O
+  ZC: () => C
 });
 var r = n(442837),
   i = n(493683),
   s = n(153867),
   a = n(636449),
-  l = n(774226),
-  o = n(122613),
+  o = n(774226),
+  l = n(122613),
   c = n(100527),
   d = n(87005),
   u = n(895924),
@@ -19,8 +19,8 @@ var r = n(442837),
   p = n(973616),
   h = n(592125),
   f = n(626135),
-  N = n(823379),
-  b = n(728345),
+  b = n(823379),
+  N = n(728345),
   x = n(812206),
   _ = n(981631);
 async function E(e, t, n) {
@@ -29,7 +29,7 @@ async function E(e, t, n) {
   if (null == r) try {
     var s;
     if (r = null === (s = x.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot, null == r) {
-      let t = await (0, b.UM)(e.id);
+      let t = await (0, N.UM)(e.id);
       e = t, r = p.ZP.createFromServer(t).bot
     }
   } catch (e) {
@@ -41,7 +41,7 @@ async function E(e, t, n) {
     let d = null == h.Z.getDMFromUserId(r.id);
     try {
       s = (0, a.R)({
-        isContextless: (0, l.Kb)(e)
+        isContextless: (0, o.Kb)(e)
       }) ? await i.Z.getOrEnsurePrivateChannel(r.id) : await i.Z.openPrivateChannel([r.id], !1, !1, c.Z.APP_DMS_QUICK_LAUNCHER)
     } catch (e) {
       t(void 0)
@@ -62,7 +62,7 @@ async function E(e, t, n) {
         return
       }
     }
-    await (0, o.Z)({
+    await (0, l.Z)({
       targetApplicationId: e.id,
       channelId: s,
       analyticsLocations: n,
@@ -82,15 +82,15 @@ function j(e, t) {
   })
 }
 
-function C() {
+function O() {
   let e = (0, r.e7)([g.ZP], () => g.ZP.showPlayAgain),
     {
       frecentApps: t
-    } = O();
+    } = C();
   return e && t.length > 0
 }
 
-function O() {
+function C() {
   let {
     frecentApps: e,
     loading: t
@@ -103,7 +103,7 @@ function O() {
     includeAuthorizedAppsAndFetch: !1
   });
   return {
-    frecentApps: e.map(e => e.application).filter(N.lm),
+    frecentApps: e.map(e => e.application).filter(b.lm),
     loading: t
   }
 }

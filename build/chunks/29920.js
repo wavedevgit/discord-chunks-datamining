@@ -2,14 +2,14 @@
 n.d(t, {
   Ei: () => d,
   He: () => c,
-  b2: () => l,
-  es: () => o
+  b2: () => o,
+  es: () => l
 });
 var r = n(544891),
   i = n(570140),
   s = n(960048),
   a = n(981631);
-async function l(e) {
+async function o(e) {
   i.Z.dispatch({
     type: "BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START"
   });
@@ -35,7 +35,7 @@ async function l(e) {
   }
 }
 
-function o(e) {
+function l(e) {
   i.Z.dispatch({
     type: "BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS",
     eligible: e

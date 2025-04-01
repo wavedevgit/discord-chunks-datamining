@@ -33,8 +33,8 @@ let p = {
       I = n.tether,
       S = void 0 === I || I,
       T = n.tetherOffset,
-      A = void 0 === T ? 0 : T,
-      N = (0, u.Z)(t, {
+      N = void 0 === T ? 0 : T,
+      A = (0, u.Z)(t, {
         boundary: b,
         rootBoundary: v,
         padding: O,
@@ -48,9 +48,9 @@ let p = {
       L = t.modifiersData.popperOffsets,
       x = t.rects.reference,
       M = t.rects.popper,
-      k = "function" == typeof A ? A(Object.assign({}, t.rects, {
+      k = "function" == typeof N ? N(Object.assign({}, t.rects, {
         placement: t.placement
-      })) : A,
+      })) : N,
       j = "number" == typeof k ? {
         mainAxis: k,
         altAxis: k
@@ -69,8 +69,8 @@ let p = {
           V = "y" === w ? r.I : r.F2,
           Z = "y" === w ? "height" : "width",
           H = L[w],
-          W = H + N[F],
-          Y = H - N[V],
+          W = H + A[F],
+          Y = H - A[V],
           K = S ? -M[Z] / 2 : 0,
           z = R === r.BL ? x[Z] : M[Z],
           q = R === r.BL ? -M[Z] : -x[Z],
@@ -98,8 +98,8 @@ let p = {
           ef = "x" === w ? r.I : r.F2,
           e_ = L[D],
           ep = "y" === D ? "height" : "width",
-          eh = e_ + N[ed],
-          em = e_ - N[ef],
+          eh = e_ + A[ed],
+          em = e_ - A[ef],
           eg = -1 !== [r.we, r.t$].indexOf(C),
           eE = null != (eu = null == U ? void 0 : U[D]) ? eu : 0,
           eb = eg ? eh : e_ - x[ep] - M[ep] - eE + j.altAxis,

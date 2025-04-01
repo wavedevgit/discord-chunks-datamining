@@ -78,7 +78,7 @@ function T(e, t) {
     preset: n,
     resolution: v,
     fps: O
-  } = (0, o.cj)([u.Z], () => u.Z.getState()), T = (0, o.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, o.e7)([h.default], () => h.default.getCurrentUser()), N = (0, o.e7)([f.Z], () => {
+  } = (0, o.cj)([u.Z], () => u.Z.getState()), T = (0, o.e7)([_.Z], () => _.Z.getGoLiveSource()), N = (0, o.e7)([h.default], () => h.default.getCurrentUser()), A = (0, o.e7)([f.Z], () => {
     var t;
     return null === (t = f.Z.getGuild(null == e ? void 0 : e.guildId)) || void 0 === t ? void 0 : t.premiumTier
   }), {
@@ -113,7 +113,7 @@ function T(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, v, t, A, N, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, v, t, N, A, R);
       return (0, r.jsx)(a.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
@@ -126,7 +126,7 @@ function T(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, w, A, N, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, w, N, A, R);
       return (0, r.jsx)(a.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),

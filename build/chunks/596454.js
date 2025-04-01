@@ -79,7 +79,7 @@ function S(e, t) {
 n(37310);
 let T = __OVERLAY__ ? () => (0, s.e7)([p.default], () => p.default.isInstanceFocused()) : g.n;
 
-function A(e) {
+function N(e) {
   var t, n, {
       src: o,
       alt: s,
@@ -90,8 +90,8 @@ function A(e) {
       messageId: b,
       animated: y,
       size: S = "default",
-      isInteracting: A = !1,
-      shouldAnimate: N,
+      isInteracting: N = !1,
+      shouldAnimate: A,
       onMouseEnter: C,
       onMouseLeave: R,
       canSelect: P = !0,
@@ -105,16 +105,16 @@ function A(e) {
   } = i.useContext(u.Rm), F = _.Yk.useSetting(), V = T(), Z = null == w ? F : w, H = E.kV[S], W = i.useRef(null), Y = i.useMemo(() => {
     if (null != o) return o;
     if (null != f) {
-      let e = !0 === N && Z;
+      let e = !0 === A && Z;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: V && !0 === y && (e || x || !0 === A),
+        animated: V && !0 === y && (e || x || !0 === N),
         size: H
       })
     }
     if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
-  }, [y, Z, f, p, H, V, x, A, N, o]), K = i.useCallback(() => {
+  }, [y, Z, f, p, H, V, x, N, A, o]), K = i.useCallback(() => {
     null != Y && (U.current = (0, d.po)(Y, e => {
       e || j(Date.now())
     }))
@@ -176,7 +176,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   var {
     registerInnerRef: t
   } = e, n = I(e, ["registerInnerRef"]);
@@ -190,12 +190,12 @@ function N(e) {
   } = i.useContext(c.G), u = i.useCallback(e => {
     s(e), null == t || t(e)
   }, [t, s]);
-  return (0, r.jsx)(A, O(v({}, n), {
+  return (0, r.jsx)(N, O(v({}, n), {
     registerAnimatedElementRef: u,
     shouldAnimate: a && !l
   }))
 }
 
 function C(e) {
-  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && void 0 === e.shouldAnimate ? (0, r.jsx)(N, v({}, e)) : (0, r.jsx)(A, v({}, e))
+  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && void 0 === e.shouldAnimate ? (0, r.jsx)(A, v({}, e)) : (0, r.jsx)(N, v({}, e))
 }

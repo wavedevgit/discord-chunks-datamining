@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   c = n(442837),
   d = n(524437),
   u = n(481060),
@@ -16,20 +16,20 @@ var r = n(200651),
   p = n(87051),
   h = n(419363),
   f = n(818083),
-  N = n(688465),
-  b = n(487419),
+  b = n(688465),
+  N = n(487419),
   x = n(197344),
   _ = n(476756),
   E = n(734934),
   j = n(223683),
-  C = n(312400),
-  O = n(115345),
-  S = n(392888),
-  v = n(106371),
+  O = n(312400),
+  C = n(115345),
+  v = n(392888),
+  S = n(106371),
   T = n(995774),
   I = n(921801),
-  A = n(460181),
-  y = n(292959),
+  y = n(460181),
+  A = n(292959),
   P = n(9156),
   R = n(912101),
   D = n(358085),
@@ -86,14 +86,14 @@ function Y(e) {
     disabled: i,
     onPreview: s,
     onChange: a,
-    tooltip: l
+    tooltip: o
   } = e;
   return (0, r.jsx)(u.j7V, {
     className: V.soundRow,
     value: n,
     onChange: a,
     disabled: i,
-    tooltipNote: l,
+    tooltipNote: o,
     children: (0, r.jsxs)("div", {
       className: V.notificationSound,
       children: [(0, r.jsx)("div", {
@@ -119,20 +119,20 @@ function K(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: s
-  } = e, l = i.useRef(), o = (0, E.p)(), c = i.useCallback((e, t) => {
-    t.stopPropagation(), t.preventDefault(), null != l.current && l.current.stop(), l.current = (0, A.GN)(e)
+  } = e, o = i.useRef(), l = (0, E.p)(), c = i.useCallback((e, t) => {
+    t.stopPropagation(), t.preventDefault(), null != o.current && o.current.stop(), o.current = (0, y.GN)(e)
   }, []), d = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
     n || r.push(e), g.default.setDisabledSounds(r)
   }, [t]);
   i.useEffect(() => () => {
     var e;
-    null === (e = l.current) || void 0 === e || e.stop()
+    null === (e = o.current) || void 0 === e || e.stop()
   });
   let m = [{
       label: U.NW.string(U.t.pz71xM),
       sound: "message1",
-      focusModeDisabled: o
+      focusModeDisabled: l
     }, {
       label: U.NW.string(U.t.hK51Ym),
       sound: "deafen"
@@ -239,7 +239,7 @@ function K(e) {
 }
 
 function q() {
-  let e = (0, c.e7)([b.Z], () => b.Z.getGuildAlertSettings()),
+  let e = (0, c.e7)([N.Z], () => N.Z.getGuildAlertSettings()),
     [t, n] = i.useState(null),
     s = Z.default.keys(e).map(t => {
       let n = e[t];
@@ -253,7 +253,7 @@ function q() {
     children: [(0, r.jsxs)(u.X6q, {
       variant: "heading-lg/semibold",
       className: a()(V.titleWithBeta, G.marginBottom20),
-      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(N.Z, {})]
+      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(b.Z, {})]
     }), (0, r.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
       className: G.marginBottom20,
@@ -330,10 +330,10 @@ class X extends i.PureComponent {
       disableUnreadBadge: n,
       taskbarFlash: i,
       disabledSounds: s,
-      disableAllSounds: l,
+      disableAllSounds: o,
       notifyMessagesInSelectedChannel: c,
       focusMode: d
-    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), g = o().range(1, 11).map(e => ({
+    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), g = l().range(1, 11).map(e => ({
       value: 60 * e,
       label: U.NW.formatToPlainString(U.t.iXLF9f, {
         minutes: e
@@ -390,7 +390,7 @@ class X extends i.PureComponent {
       }), this.renderTTS(), (0, r.jsx)(q, {}), (0, r.jsx)(u.xJW, {
         children: (0, r.jsx)(K, {
           disabledSounds: s,
-          disableAllSounds: l,
+          disableAllSounds: o,
           notifyMessagesInSelectedChannel: c
         })
       }), (0, r.jsx)(W.Z, {})]
@@ -471,20 +471,20 @@ function Q() {
 }
 
 function $() {
-  let e = C.xT.useExperiment({
+  let e = O.xT.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
     }).enabled,
     {
       manuallyOpen: t
-    } = C.fs.useExperiment({
+    } = O.fs.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
     }),
     n = (0, c.e7)([P.ZP], () => P.ZP.useNewNotifications),
-    [s, l] = i.useState(!1);
+    [s, o] = i.useState(!1);
   return e && (n || t) ? (0, r.jsxs)(r.Fragment, {
     children: [n ? (0, r.jsx)(I.F, {
       setting: L.s6.NOTIFICATIONS_UNREAD_SETTINGS,
@@ -493,7 +493,7 @@ function $() {
         value: n,
         disabled: s || !n,
         note: U.NW.string(U.t.frbLrK),
-        onChange: () => ee(l),
+        onChange: () => ee(o),
         children: U.NW.string(U.t.z21l8P)
       })
     }) : t ? (0, r.jsx)(I.F, {
@@ -527,7 +527,7 @@ function $() {
             setting: L.s6.NOTIFICATIONS_LAUNCH_MIGRATION,
             children: (0, r.jsx)(u.zxk, {
               onClick: () => {
-                (0, S.R)(!0)
+                (0, v.R)(!0)
               },
               children: "Launch Migration"
             })
@@ -552,14 +552,14 @@ function $() {
 async function ee(e) {
   e(!0);
   let t = await (0, j.Tn)();
-  0 === t.length ? await (0, O.oL)() : m.Z.show({
+  0 === t.length ? await (0, C.oL)() : m.Z.show({
     title: U.NW.string(U.t["cY+Ooa"]),
     body: U.NW.format(U.t["7zTJJS"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
     cancelText: U.NW.string(U.t["ETE/oK"]),
     confirmText: U.NW.string(U.t.Rm96T0),
-    onConfirm: O.oL
+    onConfirm: C.oL
   }), e(!1)
 }
 
@@ -571,14 +571,14 @@ function et(e) {
 }
 
 function en() {
-  let e = (0, c.cj)([y.Z], () => ({
-    disableUnreadBadge: y.Z.getDisableUnreadBadge(),
-    taskbarFlash: y.Z.taskbarFlash,
-    disabledSounds: y.Z.getDisabledSounds(),
-    disableAllSounds: y.Z.getDisableAllSounds(),
-    desktopType: y.Z.getDesktopType(),
-    ttsType: y.Z.getTTSType(),
-    notifyMessagesInSelectedChannel: y.Z.getNotifyMessagesInSelectedChannel()
+  let e = (0, c.cj)([A.Z], () => ({
+    disableUnreadBadge: A.Z.getDisableUnreadBadge(),
+    taskbarFlash: A.Z.taskbarFlash,
+    disabledSounds: A.Z.getDisabledSounds(),
+    disableAllSounds: A.Z.getDisableAllSounds(),
+    desktopType: A.Z.getDesktopType(),
+    ttsType: A.Z.getTTSType(),
+    notifyMessagesInSelectedChannel: A.Z.getNotifyMessagesInSelectedChannel()
   }));
   return (0, r.jsx)(et, z(H({}, e), {
     afkTimeout: w.CM.useSetting()
@@ -597,7 +597,7 @@ function er() {
       name: U.NW.string(U.t["xu+UDQ"]),
       value: d.Ns.NOTIFICATIONS_DISABLED
     }];
-  return v.Z.getCurrentConfig({
+  return S.Z.getCurrentConfig({
     location: "webSettings"
   }).enableInAppNotifications ? (0, r.jsxs)(I.F, {
     setting: L.s6.NOTIFICATIONS_REACTIONS,

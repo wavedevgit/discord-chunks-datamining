@@ -75,8 +75,8 @@ class S extends a.Z {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: T,
       CONNECTION_RESUMED: T,
-      CONNECTION_CLOSED: N,
-      APP_STATE_UPDATE: A
+      CONNECTION_CLOSED: A,
+      APP_STATE_UPDATE: N
     })
   }
 }
@@ -85,11 +85,11 @@ function T() {
   I = !0, R(v, !0)
 }
 
-function A(e) {
+function N(e) {
   I && "active" !== e.state && (clearTimeout(O), O = null, C(!1))
 }
 
-function N() {
+function A() {
   I && (clearTimeout(O), O = null, C(!1))
 }
 async function C(e) {

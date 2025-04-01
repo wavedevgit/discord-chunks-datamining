@@ -155,7 +155,7 @@ function T(e) {
   return !!d.Z.getMessages(t.channel_id).ready && v(t)
 }
 
-function A(e) {
+function N(e) {
   let {
     messageId: t,
     channelId: n
@@ -169,7 +169,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     message: t
   } = e, n = t.id, r = t.channel_id;
@@ -272,10 +272,10 @@ let U = new j(s.Z, {
   MOD_VIEW_SEARCH_FINISH: S,
   LOAD_THREADS_SUCCESS: M,
   LOAD_ARCHIVED_THREADS_SUCCESS: M,
-  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
+  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: N,
   LOAD_FORUM_POSTS: k,
   MESSAGE_CREATE: T,
-  MESSAGE_UPDATE: N,
+  MESSAGE_UPDATE: A,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
   CREATE_PENDING_REPLY: L,

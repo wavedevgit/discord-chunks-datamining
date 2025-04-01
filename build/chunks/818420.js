@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(704215),
   a = n(481060),
-  l = n(906732),
-  o = n(243778),
+  o = n(906732),
+  l = n(243778),
   c = n(158947),
   d = n(318110),
   u = n(150039),
@@ -21,14 +21,14 @@ function f(e) {
     user: t
   } = e, {
     analyticsLocations: n
-  } = (0, l.ZP)(), f = t.nameplate, {
-    pendingNameplate: N,
-    pendingErrors: b
-  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, o.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, C = i.useCallback(() => {
+  } = (0, o.ZP)(), f = t.nameplate, {
+    pendingNameplate: b,
+    pendingErrors: N
+  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, l.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = i.useCallback(() => {
     E(g.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })
-  }, [n, E]), O = i.useCallback(() => {
+  }, [n, E]), C = i.useCallback(() => {
     (0, u.Wh)(null)
   }, []);
   return (0, r.jsx)(m.Z, {
@@ -36,18 +36,18 @@ function f(e) {
     titleIcon: j ? (0, r.jsx)(c.Z, {
       className: h.newBadge
     }) : void 0,
-    errors: b,
+    errors: N,
     children: (0, r.jsxs)("div", {
       className: h.section,
       children: [(0, r.jsx)(a.zxk, {
         size: a.zxk.Sizes.SMALL,
-        onClick: C,
+        onClick: O,
         children: p.NW.string(p.t.NzNLv7)
-      }), (void 0 === N ? null != f : null != N) && (0, r.jsx)(a.zxk, {
+      }), (void 0 === b ? null != f : null != b) && (0, r.jsx)(a.zxk, {
         size: a.zxk.Sizes.SMALL,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.LINK,
-        onClick: O,
+        onClick: C,
         children: p.NW.string(p.t.Vskkdn)
       })]
     })

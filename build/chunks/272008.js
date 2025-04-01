@@ -6,7 +6,7 @@ n.d(t, {
   CS: () => y,
   EW: () => L,
   OR: () => x,
-  QB: () => A,
+  QB: () => N,
   T0: () => D,
   Wf: () => P,
   cT: () => U,
@@ -17,7 +17,7 @@ n.d(t, {
   lL: () => G,
   m0: () => S,
   nE: () => R,
-  pf: () => N,
+  pf: () => A,
   qm: () => k,
   w: () => j,
   xw: () => I
@@ -194,7 +194,7 @@ async function T(e, t) {
     }
   }
 }
-async function A(e, t, n) {
+async function N(e, t, n) {
   if (!f.Z.isClaimingReward(e)) {
     o.Z.dispatch({
       type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -228,7 +228,7 @@ async function A(e, t, n) {
     }
   }
 }
-async function N(e) {
+async function A(e) {
   if (!f.Z.isFetchingRewardCode(e)) {
     o.Z.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",

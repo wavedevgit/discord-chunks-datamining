@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  S: () => l,
+  S: () => o,
   V: () => a
 });
 var r = n(200651),
@@ -30,7 +30,7 @@ function a(e) {
       ConfirmModal: e
     } = await Promise.resolve().then(n.bind(n, 481060));
     return n => {
-      var a, l;
+      var a, o;
       return (0, r.jsx)(e, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -48,26 +48,26 @@ function a(e) {
           })
         }
         return e
-      }({}, n, s), l = l = {
+      }({}, n, s), o = o = {
         children: (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           children: t
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
       }), a))
     }
   })
 }
 
-function l(e) {
+function o(e) {
   let {
     message: t
   } = e;

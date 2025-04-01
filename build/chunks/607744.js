@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(47120), n(789020), n(653041);
 var r, i = n(442837),
   o = n(570140),
@@ -120,7 +120,7 @@ function T(e) {
   } = e;
   g(t)
 }
-class A extends(r = i.ZP.Store) {
+class N extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, u.default)
   }
@@ -132,8 +132,8 @@ class A extends(r = i.ZP.Store) {
     return this.getCheck(e).canChat
   }
 }
-_(A, "displayName", "GuildVerificationStore");
-let N = new A(o.Z, {
+_(N, "displayName", "GuildVerificationStore");
+let A = new N(o.Z, {
   CONNECTION_OPEN: b,
   CONNECTION_CLOSED: v,
   CURRENT_USER_UPDATE: S,

@@ -35,8 +35,8 @@ function I(e, t, n) {
 }
 let S = "SELECTABLE",
   T = "VOCAL",
-  A = null,
-  N = {},
+  N = null,
+  A = {},
   C = {},
   R = {},
   P = null,
@@ -64,7 +64,7 @@ function k(e) {
 }
 
 function j(e) {
-  let t = N[e];
+  let t = A[e];
   return null == t && (t = W(e)), t
 }
 
@@ -125,12 +125,12 @@ function Z(e) {
 }
 
 function H() {
-  N = {}, w = {}, C = {}, R = {}, null != A && W(A)
+  A = {}, w = {}, C = {}, R = {}, null != N && W(N)
 }
 
 function W(e) {
   let t = k(e);
-  return N[e] = t, w[e] = [], Z(t), G(t), Y(t), en(e), t
+  return A[e] = t, w[e] = [], Z(t), G(t), Y(t), en(e), t
 }
 
 function Y(e) {
@@ -154,7 +154,7 @@ function K(e) {
     }
   } = e;
   if (null == t) return !1;
-  N[t] = void 0, A === t && W(t)
+  A[t] = void 0, N === t && W(t)
 }
 
 function z(e) {
@@ -163,7 +163,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete N[t], delete C[t], delete R[t], delete w[t], !0
+  return delete A[t], delete C[t], delete R[t], delete w[t], !0
 }
 
 function q(e) {
@@ -172,7 +172,7 @@ function q(e) {
     user: n
   } = e;
   if (h.default.getId() !== n.id) return !1;
-  N[t] = void 0, t === A && W(t)
+  A[t] = void 0, t === N && W(t)
 }
 
 function Q(e) {
@@ -187,7 +187,7 @@ function X(e) {
     }
   } = e;
   if (null == t) return !1;
-  N[t] = void 0, t === A && W(t)
+  A[t] = void 0, t === N && W(t)
 }
 
 function J(e) {
@@ -198,7 +198,7 @@ function J(e) {
     let {
       guild_id: t
     } = e;
-    null != t && (N[t] = void 0, n = !0, A === t && W(t))
+    null != t && (A[t] = void 0, n = !0, N === t && W(t))
   }
   return n
 }
@@ -207,7 +207,7 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  N[t] = void 0, t === A && W(t)
+  A[t] = void 0, t === N && W(t)
 }
 
 function ee(e, t) {
@@ -221,7 +221,7 @@ function ee(e, t) {
 function et(e, t) {
   let n = E.Z.getGuild(t);
   if (null != n && ee(e, n)) return !0;
-  let r = N[t];
+  let r = A[t];
   null == r && (r = W(t));
   let {
     [S]: i, [T]: o
@@ -248,7 +248,7 @@ function er(e, t) {
   P = t;
   let r = null !== (n = null == e ? void 0 : e.getGuildId()) && void 0 !== n ? n : null;
   if (null == r) return !1;
-  N[r] = void 0, r === A && W(r)
+  A[r] = void 0, r === N && W(r)
 }
 
 function ei(e) {
@@ -275,7 +275,7 @@ function ea(e) {
   let {
     guildId: t
   } = e;
-  if (A = null != t ? t : null, null == t || null != N[t]) return !1;
+  if (N = null != t ? t : null, null == t || null != A[t]) return !1;
   W(t)
 }
 
@@ -287,7 +287,7 @@ class el extends(r = s.ZP.Store) {
     this.waitFor(E.Z, g.ZP, m.Z, b.Z, h.default, c.Z, d.Z), this.syncWith([d.Z], es)
   }
   getAllGuilds() {
-    return N
+    return A
   }
   getChannels(e) {
     return null != e ? j(e) : L

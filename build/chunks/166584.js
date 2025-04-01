@@ -57,13 +57,13 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -174,8 +174,8 @@ function L(e) {
       children: e => {
         var {
           ref: t
-        } = e, n = N(e, ["ref"]);
-        return (0, r.jsxs)("div", A(S({
+        } = e, n = A(e, ["ref"]);
+        return (0, r.jsxs)("div", N(S({
           className: O.root,
           "aria-label": W,
           ref: t

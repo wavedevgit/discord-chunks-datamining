@@ -405,8 +405,8 @@ class y extends o.Z {
         framesNetwork: I,
         packets: S,
         packetsLost: T,
-        nackCount: A,
-        pliCount: N,
+        nackCount: N,
+        pliCount: A,
         qpSum: C,
         pauseCount: R,
         freezeCount: P,
@@ -437,8 +437,8 @@ class y extends o.Z {
       num_frames_codec_error: y,
       time_to_first_frame_ms: e.timeToFirstFrame,
       num_frames_dropped: v,
-      num_nacks: A,
-      num_plis: N,
+      num_nacks: N,
+      num_plis: A,
       qp_sum: C,
       num_keyframes: x,
       cryptor_passthrough_count: M,
@@ -479,8 +479,8 @@ class y extends o.Z {
           var I = this.connection.getRemoteVideoSinkWants(t);
           (null == I || 0 === I) && (null == T ? void 0 : T.quality) === _ && (I = this.connection.getRemoteVideoSinkWants("any")), O = (null != I ? I : 0) > 0
         }
-        let A = this.videoStopped.value || !O;
-        if (A !== S.isVideoStopped && S.setVideoStopped(A, f.Mq.SenderStopped), !A) {
+        let N = this.videoStopped.value || !O;
+        if (N !== S.isVideoStopped && S.setVideoStopped(N, f.Mq.SenderStopped), !N) {
           S.appendAndIncrementStats(f.z4.parseOutboundStats(r, e)), S.encoderCodec !== f.u7.UNKNOWN && u.add(S.encoderCodec);
           let t = null == T ? void 0 : T.maxBitrate;
           S.appendTargetRates(null == T ? void 0 : T.maxFrameRate, null !== (l = r.bitrateTarget) && void 0 !== l ? l : Math.min(null !== (o = s.availableOutgoingBitrate) && void 0 !== o ? o : 0, null != t ? t : 0), t, s.availableOutgoingBitrate), S.averageEncodeTime = null !== (c = r.averageEncodeTime) && void 0 !== c ? c : 0, S.framesDroppedRateLimiter = null !== (d = r.framesDroppedRateLimiter) && void 0 !== d ? d : null, S.framesDroppedEncoderQueue = null !== (p = r.framesDroppedEncoderQueue) && void 0 !== p ? p : null, S.framesDroppedCongestionWindow = null !== (m = r.framesDroppedCongestionWindow) && void 0 !== m ? m : null, S.framesDroppedEncoder = null !== (g = r.framesDroppedEncoder) && void 0 !== g ? g : null, this.hqSimulcastStreamEncoded.value = null !== (E = r.hqSimulcastStreamEncoded) && void 0 !== E && E, this.lqSimulcastStreamEncoded.value = null !== (b = r.lqSimulcastStreamEncoded) && void 0 !== b && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null !== (v = r.bandwidthLimitedResolution) && void 0 !== v && v, this.bandwidthLimitedFramerate.value = null !== (y = r.bandwidthLimitedFrameRate) && void 0 !== y && y

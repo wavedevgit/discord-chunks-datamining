@@ -26,8 +26,8 @@ var i = n(512969),
   I = n(70956),
   S = n(198620),
   T = n(981631),
-  A = n(176505),
-  N = n(388032);
+  N = n(176505),
+  A = n(388032);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ function P(e) {
     l && R.log("Skipping fetch because channelId is null");
     return
   }
-  if ((0, A.AB)(n)) {
+  if ((0, N.AB)(n)) {
     l && R.log("Skipping fetch because channelId is a static route");
     return
   }
@@ -248,8 +248,8 @@ function V(e) {
   if (t.body.code === T.evJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
     let e = t.body.retry_after;
     null != e && l.Z.show({
-      title: N.NW.string(N.t["Whhv4+"]),
-      body: N.NW.formatToPlainString(N.t.qoxdQE, {
+      title: A.NW.string(A.t["Whhv4+"]),
+      body: A.NW.formatToPlainString(A.t.qoxdQE, {
         retryAfterMinutes: Math.ceil(e / 60)
       })
     })

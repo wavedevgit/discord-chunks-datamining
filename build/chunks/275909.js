@@ -1,32 +1,32 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(283029),
-  l = n(682263);
-let o = function(e) {
+  o = n(682263);
+let l = function(e) {
   let {
     className: t,
     hasCooldown: i,
-    isCanceled: o,
+    isCanceled: l,
     useReducedMotion: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(l.boostIconContainer, t),
-    children: [o ? (0, r.jsx)("img", {
-      className: s()(l.boostIcon, l.boostIconCanceled),
+    className: s()(o.boostIconContainer, t),
+    children: [l ? (0, r.jsx)("img", {
+      className: s()(o.boostIcon, o.boostIconCanceled),
       src: n(457026),
       alt: ""
     }) : (0, r.jsx)(a.Z, {
-      className: l.boostIcon,
+      className: o.boostIcon,
       boostInCooldown: i,
       useReducedMotion: c
-    }), !o && i && (0, r.jsx)("img", {
-      className: l.snowflake,
+    }), !l && i && (0, r.jsx)("img", {
+      className: o.snowflake,
       src: n(765028),
       alt: ""
     })]

@@ -1,46 +1,46 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
-  o = n(481060),
-  a = n(871118),
+var l = n(120356),
+  i = n.n(l),
+  a = n(481060),
+  o = n(871118),
   s = n(388032),
-  c = n(230808);
+  u = n(230808);
 
-function u(e) {
+function c(e) {
   let {
     stream: t,
     isSmall: n,
-    selected: i,
-    isSelfStream: u
+    selected: l,
+    isSelfStream: c
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Z, {
-      className: l()(c.absoluteFill, c.streamPreviewOpacity),
+    children: [(0, r.jsx)(o.Z, {
+      className: i()(u.absoluteFill, u.streamPreviewOpacity),
       stream: t,
       noText: !0
-    }), !i && (0, r.jsxs)("div", {
-      className: l()(c.content, c.streamUnavailable, {
-        [c.small]: n
+    }), !l && (0, r.jsxs)("div", {
+      className: i()(u.content, u.streamUnavailable, {
+        [u.small]: n
       }),
-      children: [(0, r.jsx)(o.Text, {
-        className: c.streamUnavailableText,
+      children: [(0, r.jsx)(a.Text, {
+        className: u.streamUnavailableText,
         color: "always-white",
         variant: n ? "text-sm/semibold" : "text-md/semibold",
-        children: u ? s.NW.string(s.t.UeEwj4) : s.NW.string(s.t["1i3tSU"])
-      }), (0, r.jsx)(o.DY3, {
-        text: u ? s.NW.string(s.t["ro/HNz"]) : s.NW.string(s.t.UPf6ZG),
-        className: c.darkCircle,
+        children: c ? s.NW.string(s.t.UeEwj4) : s.NW.string(s.t["1i3tSU"])
+      }), (0, r.jsx)(a.DY3, {
+        text: c ? s.NW.string(s.t["ro/HNz"]) : s.NW.string(s.t.UPf6ZG),
+        className: u.darkCircle,
         children: (0, r.jsx)("div", {
-          children: (0, r.jsx)(o.o8v, {
+          children: (0, r.jsx)(a.o8v, {
             size: "md",
             color: "currentColor",
-            className: c.stopStreamIcon,
-            colorClass: c.stopStreamForeground
+            className: u.stopStreamIcon,
+            colorClass: u.stopStreamForeground
           })
         })
       })]

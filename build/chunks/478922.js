@@ -91,8 +91,8 @@ function g(e, t, n) {
         getItemHeight: I,
         getSectionHeight: S,
         chunkSize: T,
-        renderSection: A,
-        renderItem: N,
+        renderSection: N,
+        renderItem: A,
         getSectionProps: C,
         itemGutter: R,
         removeEdgeItemGutters: P,
@@ -206,14 +206,14 @@ function g(e, t, n) {
               s = null == C ? void 0 : C(n);
             return null != i && null != o ? (0, r.jsxs)("div", p(f({}, s), {
               style: f({}, i, null !== (t = null == s ? void 0 : s.style) && void 0 !== t ? t : {}),
-              children: [null != A && null != a && A(n, a, e), o.map(e => {
+              children: [null != N && null != a && N(n, a, e), o.map(e => {
                 let [t, n, r] = e, i = X[t];
-                return null != i ? N(n, r, i, t, J) : null
+                return null != i ? A(n, r, i, t, J) : null
               })]
             }), e) : null
           })
         })
-      }), [$, N, A, X, ee, C, J])]
+      }), [$, A, N, X, ee, C, J])]
     }))
   })
 }

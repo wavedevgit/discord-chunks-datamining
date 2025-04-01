@@ -23,8 +23,8 @@ var f = 0,
   I = 15,
   S = 16,
   T = 7,
-  A = 256,
-  N = 16,
+  N = 256,
+  A = 16,
   C = 17,
   R = 18,
   P = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
@@ -131,7 +131,7 @@ function J(e) {
   for (t = 0; t < b; t++) e.dyn_ltree[2 * t] = 0;
   for (t = 0; t < v; t++) e.dyn_dtree[2 * t] = 0;
   for (t = 0; t < y; t++) e.bl_tree[2 * t] = 0;
-  e.dyn_ltree[2 * A] = 1, e.opt_len = e.static_len = 0, e.last_lit = e.matches = 0
+  e.dyn_ltree[2 * N] = 1, e.opt_len = e.static_len = 0, e.last_lit = e.matches = 0
 }
 
 function $(e) {
@@ -157,7 +157,7 @@ function er(e, t, n) {
   var r, i, o, a, s = 0;
   if (0 !== e.last_lit)
     do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? Y(e, i, t) : (Y(e, (o = U[i]) + E + 1, t), 0 !== (a = P[o]) && W(e, i -= G[o], a), Y(e, o = Z(--r), n), 0 !== (a = w[o]) && W(e, r -= B[o], a)); while (s < e.last_lit);
-  Y(e, A, t)
+  Y(e, N, t)
 }
 
 function ei(e, t) {
@@ -180,7 +180,7 @@ function eo(e, t, n) {
     s = 0,
     l = 7,
     c = 4;
-  for (0 === a && (l = 138, c = 3), t[(n + 1) * 2 + 1] = 65535, r = 0; r <= n; r++) i = a, a = t[(r + 1) * 2 + 1], (!(++s < l) || i !== a) && (s < c ? e.bl_tree[2 * i] += s : 0 !== i ? (i !== o && e.bl_tree[2 * i]++, e.bl_tree[2 * N]++) : s <= 10 ? e.bl_tree[2 * C]++ : e.bl_tree[2 * R]++, s = 0, o = i, 0 === a ? (l = 138, c = 3) : i === a ? (l = 6, c = 3) : (l = 7, c = 4))
+  for (0 === a && (l = 138, c = 3), t[(n + 1) * 2 + 1] = 65535, r = 0; r <= n; r++) i = a, a = t[(r + 1) * 2 + 1], (!(++s < l) || i !== a) && (s < c ? e.bl_tree[2 * i] += s : 0 !== i ? (i !== o && e.bl_tree[2 * i]++, e.bl_tree[2 * A]++) : s <= 10 ? e.bl_tree[2 * C]++ : e.bl_tree[2 * R]++, s = 0, o = i, 0 === a ? (l = 138, c = 3) : i === a ? (l = 6, c = 3) : (l = 7, c = 4))
 }
 
 function ea(e, t, n) {
@@ -193,7 +193,7 @@ function ea(e, t, n) {
     if (i = a, a = t[(r + 1) * 2 + 1], !(++s < l) || i !== a) {
       if (s < c)
         do Y(e, i, e.bl_tree); while (0 != --s);
-      else 0 !== i ? (i !== o && (Y(e, i, e.bl_tree), s--), Y(e, N, e.bl_tree), W(e, s - 3, 2)) : s <= 10 ? (Y(e, C, e.bl_tree), W(e, s - 3, 3)) : (Y(e, R, e.bl_tree), W(e, s - 11, 7));
+      else 0 !== i ? (i !== o && (Y(e, i, e.bl_tree), s--), Y(e, A, e.bl_tree), W(e, s - 3, 2)) : s <= 10 ? (Y(e, C, e.bl_tree), W(e, s - 3, 3)) : (Y(e, R, e.bl_tree), W(e, s - 11, 7));
       s = 0, o = i, 0 === a ? (l = 138, c = 3) : i === a ? (l = 6, c = 3) : (l = 7, c = 4)
     }
 }
@@ -231,7 +231,7 @@ function ef(e, t, n, r) {
 }
 
 function e_(e) {
-  W(e, _ << 1, 3), Y(e, A, M), z(e)
+  W(e, _ << 1, 3), Y(e, N, M), z(e)
 }
 
 function ep(e, t, n, r) {

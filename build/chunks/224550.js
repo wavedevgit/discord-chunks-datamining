@@ -40,21 +40,21 @@ let g = (e, t, n, r) => {
       isEmbeddedIAP: I,
       renewalInvoice: S,
       paymentSourceType: T,
-      hide: A,
-      purchaseType: N,
+      hide: N,
+      purchaseType: A,
       productLine: C,
       basePrice: R,
       currentSubscription: P,
       skuId: w
     } = e, D = (0, i.e7)([a.ZP], () => a.ZP.inReverseTrial());
-    if (A) return null;
+    if (N) return null;
     let L = null == e.planGroup ? [] : e.planGroup;
     if (null != S) {
       let e = c.ZP.getIntervalForInvoice(S);
       t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(S.total, S.currency), t, n), E = (0, u.og)((0, u.T4)(S.subtotal, S.currency), t, n)
     } else null != b && (t = b.interval, n = b.intervalCount);
     let x = (0, o.K)({
-        purchaseType: N || f.GZQ.SUBSCRIPTION,
+        purchaseType: A || f.GZQ.SUBSCRIPTION,
         plan: b,
         premiumSubscription: null == P ? null : P,
         isGift: !!v,
@@ -97,7 +97,7 @@ let g = (e, t, n, r) => {
         default:
           throw Error("Unexpected interval: ".concat(t))
       }
-    } else if (N === f.GZQ.ONE_TIME) switch (C) {
+    } else if (A === f.GZQ.ONE_TIME) switch (C) {
       case f.POd.COLLECTIBLES:
         U = M, j = v ? h.NW.format(h.t.ofqyUl, {
           paidURL: f.EYA.PAID_TERMS

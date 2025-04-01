@@ -22,8 +22,8 @@ var r = "function" == typeof Map && Map.prototype,
   I = Array.prototype.concat,
   S = Array.prototype.join,
   T = Array.prototype.slice,
-  A = Math.floor,
-  N = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
+  N = Math.floor,
+  A = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
   C = Object.getOwnPropertySymbols,
   R = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
   P = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
@@ -37,7 +37,7 @@ function x(e, t) {
   if (e === 1 / 0 || e === -1 / 0 || e != e || e && e > -1e3 && e < 1e3 || O.call(/e/, t)) return t;
   var n = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
   if ("number" == typeof e) {
-    var r = e < 0 ? -A(-e) : A(e);
+    var r = e < 0 ? -N(-e) : N(e);
     if (r !== e) {
       var i = String(r),
         o = E.call(t, i.length + 1);
@@ -98,9 +98,9 @@ function K(e) {
 }
 
 function z(e) {
-  if (!e || "object" != typeof e || !N) return !1;
+  if (!e || "object" != typeof e || !A) return !1;
   try {
-    return N.call(e), !0
+    return A.call(e), !0
   } catch (e) {}
   return !1
 }
@@ -143,8 +143,8 @@ e.exports = function e(t, r, i, s) {
   }
   if ("function" == typeof t && !V(t)) {
     var O = J(t),
-      A = ep(t, v);
-    return "[Function" + (O ? ": " + O : " (anonymous)") + "]" + (A.length > 0 ? " { " + S.call(A, ", ") + " }" : "")
+      N = ep(t, v);
+    return "[Function" + (O ? ": " + O : " (anonymous)") + "]" + (N.length > 0 ? " { " + S.call(N, ", ") + " }" : "")
   }
   if (K(t)) {
     var C = P ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : R.call(t);
@@ -185,7 +185,7 @@ e.exports = function e(t, r, i, s) {
   if (ei(t)) return ec("WeakSet");
   if (en(t)) return ec("WeakRef");
   if (W(t)) return el(v(Number(t)));
-  if (z(t)) return el(v(N.call(t)));
+  if (z(t)) return el(v(A.call(t)));
   if (Y(t)) return el(p.call(t));
   if (H(t)) return el(v(String(t)));
   if ("undefined" != typeof window && t === window) return "{ [object Window] }";

@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -118,7 +118,7 @@ let j = e => {
       },
       delay: o
     }, "animate-always");
-    return (0, r.jsx)(_.P3F, N(T({}, s), {
+    return (0, r.jsx)(_.P3F, A(T({}, s), {
       role: "option",
       "aria-selected": 0 === a,
       onClick: () => i(n),
@@ -158,7 +158,7 @@ let j = e => {
           var {
             ref: n
           } = e, i = C(e, ["ref"]);
-          return (0, r.jsx)(c.animated.div, N(T({}, i), {
+          return (0, r.jsx)(c.animated.div, A(T({}, i), {
             id: t,
             ref: n,
             className: a()(I.diversitySelectorOptions, {

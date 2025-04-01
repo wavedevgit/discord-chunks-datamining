@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   c = n(642128),
   d = n(442837),
   u = n(481060),
@@ -23,29 +23,29 @@ function h(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, s = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [l, h] = i.useState({
+  } = e, s = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [o, h] = i.useState({
     x: 0,
     y: 0
-  }), f = i.useMemo(() => o().throttle(e => {
+  }), f = i.useMemo(() => l().throttle(e => {
     if (!s) h({
       x: (window.innerWidth - e.pageX * n) / 90,
       y: (window.innerHeight - e.pageY * n) / 90
     })
   }, 20), [n, s]);
   i.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
-  let [N, b] = (0, u.q_F)(() => ({
+  let [b, N] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
     config: p
   }));
   return i.useEffect(() => {
-    b({
-      x: l.x,
-      y: l.y
+    N({
+      x: o.x,
+      y: o.y
     })
-  }, [l.x, l.y, b]), (0, r.jsx)(c.animated.div, {
+  }, [o.x, o.y, N]), (0, r.jsx)(c.animated.div, {
     style: {
-      transform: (0, c.to)([N.x, N.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
+      transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
     className: a()(g.background, t)
   })

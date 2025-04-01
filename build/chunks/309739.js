@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(658722),
-  o = n.n(l),
+  o = n(658722),
+  l = n.n(o),
   c = n(442837),
   d = n(524437),
   u = n(780384),
@@ -16,25 +16,25 @@ var r = n(200651),
   p = n(410030),
   h = n(726542),
   f = n(116841),
-  N = n(295377),
-  b = n(921801),
+  b = n(295377),
+  N = n(921801),
   x = n(553795),
   _ = n(430824),
   E = n(63063),
   j = n(358085),
-  C = n(709054),
-  O = n(362352),
-  S = n(413182),
-  v = n(695346),
+  O = n(709054),
+  C = n(362352),
+  v = n(413182),
+  S = n(695346),
   T = n(726985),
   I = n(981631),
-  A = n(388032),
-  y = n(894884),
+  y = n(388032),
+  A = n(894884),
   P = n(685786);
 
 function R(e) {
   let t = () => {
-    v.SE.updateSetting(e ? C.default.keys(_.Z.getGuilds()) : [])
+    S.SE.updateSetting(e ? O.default.keys(_.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -56,15 +56,15 @@ function R(e) {
       }
       return e
     }({
-      header: A.NW.string(A.t["uUr+GR"]),
-      confirmText: A.NW.string(A.t.gm1Ven),
-      cancelText: A.NW.string(A.t.p89ACg),
+      header: y.NW.string(y.t["uUr+GR"]),
+      confirmText: y.NW.string(y.t.gm1Ven),
+      cancelText: y.NW.string(y.t.p89ACg),
       onCancel: t,
       confirmButtonColor: m.zxk.Colors.BRAND
     }, e), i = i = {
       children: (0, r.jsx)(m.Text, {
         variant: "text-md/normal",
-        children: A.NW.string(A.t.EFu2Ki)
+        children: y.NW.string(y.t.EFu2Ki)
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
@@ -80,60 +80,60 @@ function R(e) {
 }
 
 function D() {
-  let e = v.G6.useSetting(),
-    t = v.Wz.useSetting(),
-    n = (0, O.Yd)("activity privacy tab"),
-    i = j.isPlatformEmbedded ? A.NW.string(A.t.MznbeH) : A.NW.string(A.t.oKqC4u),
+  let e = S.G6.useSetting(),
+    t = S.Wz.useSetting(),
+    n = (0, C.Yd)("activity privacy tab"),
+    i = j.isPlatformEmbedded ? y.NW.string(y.t.MznbeH) : y.NW.string(y.t.oKqC4u),
     s = e => {
-      v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
+      S.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
     },
-    l = e => {
-      v.Wz.updateSetting(e), R(e !== d.E5.OFF)
+    o = e => {
+      S.Wz.updateSetting(e), R(e !== d.E5.OFF)
     },
-    o = [{
+    l = [{
       value: d.E5.ON,
-      label: A.NW.string(A.t.UzGMHx)
+      label: y.NW.string(y.t.UzGMHx)
     }, {
       value: d.E5.ON_FOR_LARGE_GUILDS,
-      label: A.NW.string(A.t.OFqxQU)
+      label: y.NW.string(y.t.OFqxQU)
     }, {
       value: d.E5.OFF,
-      label: A.NW.string(A.t.MIgNPD)
+      label: y.NW.string(y.t.MIgNPD)
     }];
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, r.jsxs)(m.hjN, {
       children: [(0, r.jsx)(m.vwX, {
         tag: m.RB0.H5,
         className: P.marginBottom8,
-        children: A.NW.string(A.t["8ka8lp"])
+        children: y.NW.string(y.t["8ka8lp"])
       }), (0, r.jsx)(m.j7V, {
         value: e,
-        onChange: e => v.G6.updateSetting(e),
+        onChange: e => S.G6.updateSetting(e),
         note: i,
-        children: A.NW.string(A.t["4q/Ewc"])
+        children: y.NW.string(y.t["4q/Ewc"])
       }), n ? (0, r.jsxs)(m.xJW, {
         tag: m.RB0.H3,
-        title: A.NW.string(A.t.ffGYGx),
+        title: y.NW.string(y.t.ffGYGx),
         children: [(0, r.jsx)(m.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: P.marginBottom8,
-          children: A.NW.format(A.t.aUxRra, {
+          children: y.NW.format(y.t.aUxRra, {
             helpdeskArticle: E.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS)
           })
         }), (0, r.jsx)(m.q4e, {
-          options: o,
+          options: l,
           value: t,
-          onChange: e => l(e)
+          onChange: e => o(e)
         })]
       }) : (0, r.jsx)(m.j7V, {
         value: t === d.E5.OFF,
-        note: A.NW.format(A.t["+5/xu7"], {
+        note: y.NW.format(y.t["+5/xu7"], {
           helpdeskArticle: E.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
         onChange: e => s(!e),
-        children: A.NW.string(A.t.D5GXTU)
+        children: y.NW.string(y.t.D5GXTU)
       }), (0, r.jsx)(m.$i$, {
         className: a()(P.marginBottom20, P.marginTop20)
       })]
@@ -142,39 +142,39 @@ function D() {
 }
 
 function Z() {
-  let e = v.cP.useSetting(),
-    t = v.Ou.useSetting();
-  return (0, r.jsx)(b.F, {
+  let e = S.cP.useSetting(),
+    t = S.Ou.useSetting();
+  return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
       children: [(0, r.jsx)(m.vwX, {
         tag: m.RB0.H5,
         className: P.marginBottom8,
-        children: A.NW.string(A.t.VOszPD)
+        children: y.NW.string(y.t.VOszPD)
       }), (0, r.jsx)(m.j7V, {
         value: e,
-        note: A.NW.string(A.t.Hdh7sb),
-        onChange: e => v.cP.updateSetting(e),
-        children: A.NW.string(A.t.WEWQQk)
+        note: y.NW.string(y.t.Hdh7sb),
+        onChange: e => S.cP.updateSetting(e),
+        children: y.NW.string(y.t.WEWQQk)
       }), (0, r.jsx)(m.j7V, {
         value: t,
-        note: A.NW.string(A.t.Czr3Bg),
-        onChange: e => v.Ou.updateSetting(e),
-        children: A.NW.string(A.t.UUvJVl)
+        note: y.NW.string(y.t.Czr3Bg),
+        onChange: e => S.Ou.updateSetting(e),
+        children: y.NW.string(y.t.UUvJVl)
       })]
     })
   })
 }
 
 function w() {
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, r.jsx)(m.hjN, {
       className: P.marginBottom40,
       children: (0, r.jsx)(m.ToO, {
         type: m.ToO.Types.PRIMARY,
-        body: A.NW.format(A.t.xvCsx8, {
+        body: y.NW.format(y.t.xvCsx8, {
           termsLink: I.EYA.TERMS,
           privacyLink: I.EYA.PRIVACY
         })
@@ -185,15 +185,15 @@ function w() {
 let k = e => {
   switch (e.type) {
     case I.ABu.SPOTIFY:
-      return A.NW.format(A.t["5sYPnp"], {
+      return y.NW.format(y.t["5sYPnp"], {
         name: e.name
       });
     case I.ABu.CRUNCHYROLL:
-      return A.NW.format(A.t.Ge29Z2, {
+      return y.NW.format(y.t.Ge29Z2, {
         name: e.name
       });
     default:
-      return A.NW.format(A.t.nmMsys, {
+      return y.NW.format(y.t.nmMsys, {
         game: e.name
       })
   }
@@ -206,34 +206,34 @@ function W(e) {
   i.useEffect(() => {
     s(t.showActivity)
   }, [t]);
-  let l = h.Z.get(t.type);
+  let o = h.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.j7V, {
-      className: y.switchRowContainer,
+      className: A.switchRowContainer,
       hideBorder: !0,
       value: n,
       onChange: function(e) {
         s(e), g.Z.setShowActivity(t.type, t.id, e)
       },
       children: (0, r.jsxs)("div", {
-        className: y.activitySwitchRow,
+        className: A.activitySwitchRow,
         children: [(0, r.jsx)("img", {
-          alt: l.name,
-          className: y.connectionIcon,
-          src: (0, u.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
+          alt: o.name,
+          className: A.connectionIcon,
+          src: (0, u.wj)(a) ? o.icon.darkSVG : o.icon.lightSVG
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(m.Text, {
             variant: "text-md/semibold",
-            children: l.name
+            children: o.name
           }), (0, r.jsxs)(m.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: ['"', k(l), '"']
+            children: ['"', k(o), '"']
           })]
         })]
       })
     }), (0, r.jsx)("div", {
-      className: y.divider
+      className: A.divider
     })]
   })
 }
@@ -244,21 +244,21 @@ function L() {
     [n, s] = i.useState(""),
     a = i.useMemo(() => {
       let e = n.trim().toLowerCase();
-      return "" === e ? t : t.filter(t => o()(e, h.Z.get(t.type).name.toLowerCase()))
+      return "" === e ? t : t.filter(t => l()(e, h.Z.get(t.type).name.toLowerCase()))
     }, [t, n]);
-  return 0 === t.length ? null : (0, r.jsx)(b.F, {
+  return 0 === t.length ? null : (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
       children: [(0, r.jsx)(m.vwX, {
         tag: m.RB0.H5,
         className: P.marginBottom8,
-        children: A.NW.string(A.t["4F2KoK"])
+        children: y.NW.string(y.t["4F2KoK"])
       }), (0, r.jsx)(m.oil, {
-        className: y.searchInput,
+        className: A.searchInput,
         value: n,
         onChange: s,
-        placeholder: A.NW.string(A.t.WPrtoa)
+        placeholder: y.NW.string(y.t.WPrtoa)
       }), a.map(e => (0, r.jsx)(W, {
         account: e
       }, e.id))]
@@ -272,15 +272,15 @@ function B(e) {
     showHeader: n = !0
   } = e, {
     showRedesign: i
-  } = S.b.useExperiment({
+  } = v.b.useExperiment({
     location: "activity privacy tab"
   }), {
     showPerGuildActivityStatusSetting: s
   } = (0, f.c)("activity privacy tab");
-  return s ? (0, r.jsx)(N.Z, {}) : (0, r.jsxs)(m.hjN, {
+  return s ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(m.hjN, {
     className: t,
     tag: m.RB0.H1,
-    title: n ? A.NW.string(A.t.Cq98yM) : null,
+    title: n ? y.NW.string(y.t.Cq98yM) : null,
     children: [(0, r.jsx)(D, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {}), i && (0, r.jsx)(L, {})]
   })
 }

@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(494391),
-  o = n(663526);
+  o = n(494391),
+  l = n(663526);
 let c = e => {
   let {
     icon: t,
@@ -17,11 +17,11 @@ let c = e => {
     description: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(o.container, l.box),
+    className: s()(l.container, o.box),
     children: [(0, r.jsx)("div", {
-      className: o.circle,
+      className: l.circle,
       children: (0, r.jsx)(t, {
-        className: s()(o.icon, n),
+        className: s()(l.icon, n),
         size: "custom",
         width: 20,
         height: 20,
@@ -30,7 +30,7 @@ let c = e => {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/bold",
-        className: o.header,
+        className: l.header,
         children: (0, r.jsx)(a.y5t, {
           children: i
         })

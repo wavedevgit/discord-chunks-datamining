@@ -1,6 +1,6 @@
 /** Chunk was on 12321 **/
 n.d(t, {
-  Y: () => B,
+  Y: () => F,
   Z: () => X
 }), n(789020), n(47120);
 var r, l, i = n(200651),
@@ -21,8 +21,8 @@ var r, l, i = n(200651),
   h = n(810568),
   j = n(168524),
   S = n(565138),
-  N = n(707409),
-  P = n(424678),
+  P = n(707409),
+  N = n(424678),
   x = n(750154),
   I = n(81063),
   Z = n(768581),
@@ -61,8 +61,8 @@ function Y(e) {
   }
   return e
 }
-var B = ((l = {}).ACTIVITY_FEED = "ActivityFeed", l.STREAM_PREVIEW = "StreamPreview", l.VOICE_CHANNEL = "VoiceChannel", l);
-let F = {
+var F = ((l = {}).ACTIVITY_FEED = "ActivityFeed", l.STREAM_PREVIEW = "StreamPreview", l.VOICE_CHANNEL = "VoiceChannel", l);
+let B = {
     StreamPreview: [108, 60],
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
@@ -189,7 +189,7 @@ class J extends(r = o.PureComponent) {
       application_id: d
     } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
-    (0, W.Z)(e) && (l = F[c]);
+    (0, W.Z)(e) && (l = B[c]);
     let f = (0, D.Z)(e),
       m = null != u.large_image ? (0, i.jsx)("img", {
         alt: null !== (t = u.large_text) && void 0 !== t ? t : "",
@@ -324,7 +324,7 @@ class J extends(r = o.PureComponent) {
     else if (!(0, A.Z)(e)) {
       if (l = r, o = r, (0, D.Z)(e) && null != r) l = U.NW.format(U.t.uU9le3, {
         artists: o,
-        artistsHook: (t, n) => (0, i.jsx)(P.Z, {
+        artistsHook: (t, n) => (0, i.jsx)(N.Z, {
           artists: r,
           linkClassName: R.bodyLink,
           canOpen: null != e.sync_id,
@@ -391,9 +391,9 @@ class J extends(r = o.PureComponent) {
     } = e;
     return null == n ? null : (0, C.Z)(e) ? (0, i.jsx)(G, {
       timestamps: n
-    }) : (0, i.jsx)(N.ZP, {
+    }) : (0, i.jsx)(P.ZP, {
       start: n.start,
-      location: N.ZP.Locations.USER_ACTIVITY,
+      location: P.ZP.Locations.USER_ACTIVITY,
       className: R.playTime,
       isApplicationStreaming: null != t
     })
@@ -520,7 +520,7 @@ class J extends(r = o.PureComponent) {
     })
   }
 }
-V(J, "Types", B);
+V(J, "Types", F);
 let H = e => {
   var t, n, r, l, o;
   let a = (0, j.Z)({
@@ -543,5 +543,5 @@ let H = e => {
     Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
   }), l))
 };
-H.Types = B;
+H.Types = F;
 let X = H

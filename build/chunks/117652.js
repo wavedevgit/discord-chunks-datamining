@@ -27,8 +27,8 @@ var i = n(442837),
   I = n(563132),
   S = n(409813),
   T = n(614277),
-  A = n(981631),
-  N = n(474936),
+  N = n(981631),
+  A = n(474936),
   C = n(388032),
   R = n(214650),
   P = n(570148);
@@ -112,16 +112,16 @@ function M(e) {
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: !1
-  }), Y = H && M === N.Wt.DM_CHANNEL, K = W === _.u.POPULAR ? C.NW.string(C.t.Kwgrrq) : C.NW.string(C.t.r1huYW), z = async (e, t) => {
+  }), Y = H && M === A.Wt.DM_CHANNEL, K = W === _.u.POPULAR ? C.NW.string(C.t.Kwgrrq) : C.NW.string(C.t.r1huYW), z = async (e, t) => {
     j(!0), null != m && S(), await (0, c.B1)(e.id, t) || S(C.NW.string(C.t["4kgVqa"])), j(!1)
   };
   (0, a.ZP)(() => {
-    null != U && null != D && (v.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != U && null != D && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
     }), z(D, U))
   });
   let q = e => {
-      v.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != D && z(D, e), G(e)
     },
@@ -207,7 +207,7 @@ function M(e) {
         children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != m || null == D || D.id === (null == Z ? void 0 : Z.id) || s.length > N.$n,
+          disabled: null != m || null == D || D.id === (null == Z ? void 0 : Z.id) || s.length > A.$n,
           loading: w
         })
       })

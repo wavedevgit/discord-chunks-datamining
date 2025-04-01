@@ -76,17 +76,17 @@ function T() {
       }
     })
   }
-  let A = p.Z.getActivity();
-  null != A && e.push(O({
+  let N = p.Z.getActivity();
+  null != N && e.push(O({
     type: v.IIU.LISTENING
-  }, A)), o()(I, e) || (I = e)
+  }, N)), o()(I, e) || (I = e)
 }
 
-function A() {
+function N() {
   S = {}, T()
 }
 
-function N(e) {
+function A(e) {
   let {
     socketId: t,
     pid: n,
@@ -140,8 +140,8 @@ class P extends(r = l.ZP.Store) {
 y(P, "displayName", "LocalActivityStore");
 let w = new P(c.Z, {
   OVERLAY_INITIALIZE: R,
-  START_SESSION: A,
-  LOCAL_ACTIVITY_UPDATE: N,
+  START_SESSION: N,
+  LOCAL_ACTIVITY_UPDATE: A,
   RPC_APP_DISCONNECTED: C,
   RUNNING_GAMES_CHANGE: T,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: T,

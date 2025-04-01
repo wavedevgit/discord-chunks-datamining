@@ -26,8 +26,8 @@ var r = n(873546),
   I = n(336197),
   S = n(977156),
   T = n(341907),
-  A = n(540709),
-  N = n(881706),
+  N = n(540709),
+  A = n(881706),
   C = n(701190),
   R = n(944486),
   P = n(914010),
@@ -259,5 +259,5 @@ function B(e) {
     t({
       tab: r.SERVERS
     })
-  }), !0) : o || null == (0, N.v)(e) ? void 0 : t => (null == t || t.preventDefault(), A.Z.show(e), !0)
+  }), !0) : o || null == (0, A.v)(e) ? void 0 : t => (null == t || t.preventDefault(), N.Z.show(e), !0)
 }

@@ -1,14 +1,14 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(442837),
-  l = n(481060),
-  o = n(706454),
+  o = n(481060),
+  l = n(706454),
   c = n(78839),
   d = n(985754),
   u = n(222727),
@@ -17,20 +17,20 @@ var i = n(120356),
   p = n(474936),
   h = n(981631),
   f = n(160961);
-let N = function(e) {
+let b = function(e) {
   let {
     localizedPricingPromo: t,
     smallGap: n
-  } = e, i = t.countryCode, N = (0, a.e7)([o.default], () => o.default.locale);
+  } = e, i = t.countryCode, b = (0, a.e7)([l.default], () => l.default.locale);
   (0, u.U)(h.jXE.SETTINGS_PREMIUM_BANNER, i);
-  let b = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
+  let N = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
     {
       localizedPricingBannerHeader: x,
       localizedPricingBannerBody: _
     } = (0, d.vB)({
       localizedPricingPromo: t,
-      subscription: b,
-      userLocale: N
+      subscription: N,
+      userLocale: b
     }),
     E = i.toLowerCase() + "Banner";
   return (0, r.jsxs)("div", {
@@ -40,13 +40,13 @@ let N = function(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: s()(f[E], f.bannerImageContainer)
-    }), (0, r.jsx)(l.X6q, {
+    }), (0, r.jsx)(o.X6q, {
       className: f.bannerHeading,
       variant: "heading-xl/semibold",
       children: x
     }), (0, r.jsx)("div", {
       className: f.textContainer,
-      children: (0, r.jsx)(l.Text, {
+      children: (0, r.jsx)(o.Text, {
         color: "none",
         variant: "text-md/normal",
         className: f.bannerBody,

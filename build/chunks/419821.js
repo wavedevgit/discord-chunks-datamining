@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  l = n(399606),
-  o = n(481060),
+  o = n(399606),
+  l = n(481060),
   c = n(594174),
   d = n(933970),
   u = n(340453),
@@ -19,8 +19,8 @@ var r = n(200651),
 function f(e) {
   let {
     user: t
-  } = e, s = (0, l.e7)([c.default], () => c.default.getCurrentUser()), f = i.useCallback(() => {
-    a()(void 0 !== s, "User must be logged in to accept a link request"), (0, o.ZDy)(async () => {
+  } = e, s = (0, o.e7)([c.default], () => c.default.getCurrentUser()), f = i.useCallback(() => {
+    a()(void 0 !== s, "User must be logged in to accept a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("50872").then(n.bind(n, 442673));
@@ -70,7 +70,7 @@ function f(e) {
     }), (0, r.jsx)("div", {
       className: h.actions,
       children: (0, r.jsx)(d.Z, {
-        icon: o.Dio,
+        icon: l.Dio,
         tooltip: p.NW.string(g.Z.l20ZZm),
         onClick: f
       })

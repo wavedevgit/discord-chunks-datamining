@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => N,
+  C: () => A,
   default: () => T
 }), n(47120);
 var r = n(200651),
@@ -69,7 +69,7 @@ function T(e) {
     transitionState: o,
     onClose: a,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, y] = i.useState(0), [T, N] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, y] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -82,7 +82,7 @@ function T(e) {
       choice_id: e.key
     }))
   }, P = async e => {
-    1 === e && (await N({
+    1 === e && (await A({
       width: "100%"
     }), a())
   };
@@ -119,7 +119,7 @@ function T(e) {
           })]
         }), (0, r.jsx)(l.hzk, {
           className: g.modalContent,
-          children: n.choices.map(e => (0, r.jsx)(A, {
+          children: n.choices.map(e => (0, r.jsx)(N, {
             choice: e,
             onClick: R
           }, e.key))
@@ -157,7 +157,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     className: t,
     choice: n,
@@ -173,7 +173,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let t = !1;
   (0, l.ZDy)(async () => {
     let {

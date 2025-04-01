@@ -46,7 +46,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -147,7 +147,7 @@ function Y(e) {
         e.lazyPrivateChannels = (null !== (t = e.lazyPrivateChannels) && void 0 !== t ? t : []).map(e => (0, f.kt)(e)), s.Z.dispatch(e);
         break;
       case "THREAD_LIST_SYNC":
-        s.Z.dispatch(N(T({}, e), {
+        s.Z.dispatch(A(T({}, e), {
           threads: e.threads.map(e => (0, f.kt)(e))
         }));
         break;
@@ -160,7 +160,7 @@ function Y(e) {
         });
         break;
       case "USER_SETTINGS_PROTO_UPDATE":
-        s.Z.dispatch(N(T({}, e), {
+        s.Z.dispatch(A(T({}, e), {
           settings: {
             proto: (0, d.kI)(e.settings.type, e.settings.proto),
             type: e.settings.type

@@ -62,7 +62,7 @@ function T() {
   return !1
 }
 
-function A(e) {
+function N(e) {
   let {
     guildId: t,
     userIds: n
@@ -70,7 +70,7 @@ function A(e) {
   return v(t).updateMembersByMemberIds(n)
 }
 
-function N(e) {
+function A(e) {
   let {
     chunks: t
   } = e, n = !1;
@@ -399,7 +399,7 @@ let J = new X(o.Z, {
   PASSIVE_UPDATE_V2: Z,
   GUILD_CREATE: I,
   GUILD_DELETE: S,
-  GUILD_MEMBERS_CHUNK_BATCH: N,
+  GUILD_MEMBERS_CHUNK_BATCH: A,
   GUILD_MEMBER_ADD: T,
   GUILD_MEMBER_UPDATE: T,
   GUILD_MEMBER_UPDATE_LOCAL: C,
@@ -420,5 +420,5 @@ let J = new X(o.Z, {
   MEMBER_SAFETY_SEARCH_STATE_UPDATE: z,
   FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS: q,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: Q,
-  MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH: A
+  MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH: N
 })

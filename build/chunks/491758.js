@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => y
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(660216),
   d = n(230711),
   u = n(825209),
@@ -16,32 +16,32 @@ var r = n(200651),
   p = n(131951),
   h = n(556296),
   f = n(924557),
-  N = n(435064),
-  b = n(894694),
+  b = n(435064),
+  N = n(894694),
   x = n(779618),
   _ = n(39604),
   E = n(442334),
   j = n(356659),
-  C = n(981631),
-  O = n(37113),
-  S = n(526761),
-  v = n(388032),
+  O = n(981631),
+  C = n(37113),
+  v = n(526761),
+  S = n(388032),
   T = n(719818),
   I = n(133881),
-  A = n(685786);
+  y = n(685786);
 
-function y() {
-  let e = (0, l.e7)([p.Z], () => p.Z.getHardwareEncoding()),
+function A() {
+  let e = (0, o.e7)([p.Z], () => p.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
       decoupledClipsEnabled: s,
-      clipsLength: y,
+      clipsLength: A,
       clipsQuality: P
-    } = (0, l.cj)([N.Z], () => N.Z.getSettings()),
-    R = (0, l.e7)([N.Z], () => N.Z.getHardwareClassification()),
-    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
-    Z = N.Z.isDecoupledGameClippingEnabled(),
+    } = (0, o.cj)([b.Z], () => b.Z.getSettings()),
+    R = (0, o.e7)([b.Z], () => b.Z.getHardwareClassification()),
+    D = (0, o.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
+    Z = b.Z.isDecoupledGameClippingEnabled(),
     w = (0, x.Z)(p.Z),
     {
       showClipsHeaderEntrypoint: k
@@ -51,61 +51,61 @@ function y() {
       autoTrackExposure: !1
     });
   a()(null != D, "Save clip keybind unset");
-  let W = (0, l.e7)([m.default], () => m.default.locale),
+  let W = (0, o.e7)([m.default], () => m.default.locale),
     L = i.useMemo(() => [{
       value: j.OT.SECONDS_30,
-      label: v.NW.formatToPlainString(v.t["bTFv//"], {
+      label: S.NW.formatToPlainString(S.t["bTFv//"], {
         count: 30
       })
     }, {
       value: j.OT.MINUTES_1,
-      label: v.NW.formatToPlainString(v.t.ICo9Nj, {
+      label: S.NW.formatToPlainString(S.t.ICo9Nj, {
         count: 1
       })
     }, {
       value: j.OT.MINUTES_2,
-      label: v.NW.formatToPlainString(v.t.ICo9Nj, {
+      label: S.NW.formatToPlainString(S.t.ICo9Nj, {
         count: 2
       })
     }], [W]),
     B = i.useMemo(() => [{
-      value: O.LY.RESOLUTION_480,
-      label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_480
+      value: C.LY.RESOLUTION_480,
+      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+        resolution: C.LY.RESOLUTION_480
       })
     }, {
-      value: O.LY.RESOLUTION_720,
-      label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_720
+      value: C.LY.RESOLUTION_720,
+      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+        resolution: C.LY.RESOLUTION_720
       })
     }, {
-      value: O.LY.RESOLUTION_1080,
-      label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_1080
+      value: C.LY.RESOLUTION_1080,
+      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+        resolution: C.LY.RESOLUTION_1080
       })
     }, {
-      value: O.LY.RESOLUTION_1440,
-      label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: O.LY.RESOLUTION_1440
+      value: C.LY.RESOLUTION_1440,
+      label: S.NW.formatToPlainString(S.t.TEOC0N, {
+        resolution: C.LY.RESOLUTION_1440
       })
     }, {
-      value: O.LY.RESOLUTION_SOURCE,
-      label: v.NW.string(v.t.XjXqzs)
+      value: C.LY.RESOLUTION_SOURCE,
+      label: S.NW.string(S.t.XjXqzs)
     }], [W]),
     M = i.useMemo(() => [{
-      value: O.ws.FPS_15,
-      label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: O.ws.FPS_15
+      value: C.ws.FPS_15,
+      label: S.NW.formatToPlainString(S.t.Qb44XF, {
+        fps: C.ws.FPS_15
       })
     }, {
-      value: O.ws.FPS_30,
-      label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: O.ws.FPS_30
+      value: C.ws.FPS_30,
+      label: S.NW.formatToPlainString(S.t.Qb44XF, {
+        fps: C.ws.FPS_30
       })
     }, {
-      value: O.ws.FPS_60,
-      label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: O.ws.FPS_60
+      value: C.ws.FPS_60,
+      label: S.NW.formatToPlainString(S.t.Qb44XF, {
+        fps: C.ws.FPS_60
       })
     }], [W]),
     U = i.useCallback(e => {
@@ -141,72 +141,72 @@ function y() {
       }), t))
     }, [D]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.hjN, {
+    children: [(0, r.jsxs)(l.hjN, {
       disabled: !e,
       children: [!e && (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
-        children: v.NW.format(v.t.kiaF4e, {
-          onClick: () => d.Z.open(C.oAB.VOICE, null, {
-            scrollPosition: S.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
+        children: S.NW.format(S.t.kiaF4e, {
+          onClick: () => d.Z.open(O.oAB.VOICE, null, {
+            scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === b.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
+      }), R === N.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
-        children: v.NW.string(v.t.SIxrIC)
-      }) : null, (0, r.jsx)(o.j7V, {
+        children: S.NW.string(S.t.SIxrIC)
+      }) : null, (0, r.jsx)(l.j7V, {
         hideBorder: !0,
         disabled: !e,
         className: I.formItem,
         value: t,
-        note: v.NW.string(v.t["4Qw3ND"]),
+        note: S.NW.string(S.t["4Qw3ND"]),
         onChange: e => _.em({
           clipsEnabled: e,
           trackAnalytics: !0
         }),
-        children: v.NW.string(v.t.h8rgrK)
+        children: S.NW.string(S.t.h8rgrK)
       }), e && (0, r.jsx)(g.Z, {
         className: I.formItem,
-        children: v.NW.string(v.t["Z+Mfqa"])
+        children: S.NW.string(S.t["Z+Mfqa"])
       })]
     }), Z && w && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
-        className: A.marginTop20,
+      children: [(0, r.jsx)(l.$i$, {}), (0, r.jsx)(l.hjN, {
+        className: y.marginTop20,
         disabled: !e,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           hideBorder: !0,
           disabled: !e,
           className: I.formItem,
           value: s,
-          note: v.NW.string(v.t.YP3ujo),
+          note: S.NW.string(S.t.YP3ujo),
           onChange: e => _._Q({
             enabled: e,
             trackAnalytics: !0
           }),
-          children: v.NW.string(v.t.yXvykp)
+          children: S.NW.string(S.t.yXvykp)
         })
       })]
     }), k && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
-        className: A.marginTop20,
-        children: (0, r.jsx)(o.j7V, {
+      children: [(0, r.jsx)(l.$i$, {}), (0, r.jsx)(l.hjN, {
+        className: y.marginTop20,
+        children: (0, r.jsx)(l.j7V, {
           hideBorder: !0,
           className: I.formItem,
           value: n,
-          note: v.NW.string(v.t.m4Cjj4),
+          note: S.NW.string(S.t.m4Cjj4),
           onChange: e => _.N0(e),
-          children: v.NW.string(v.t["3zwNf3"])
+          children: S.NW.string(S.t["3zwNf3"])
         })
       })]
-    }), (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
-      className: A.marginTop20,
+    }), (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
+      className: y.marginTop20,
       children: [(0, r.jsx)(E.Q, {
         className: I.formItem,
         select: _.eU,
-        title: v.NW.string(v.t.OgfUio),
-        note: v.NW.string(v.t.H7j4tb),
-        value: y,
+        title: S.NW.string(S.t.OgfUio),
+        note: S.NW.string(S.t.H7j4tb),
+        value: A,
         options: L
       }), (0, r.jsx)(E.Q, {
         className: I.formItem,
@@ -214,8 +214,8 @@ function y() {
           resolution: e,
           frameRate: P.frameRate
         }),
-        title: v.NW.string(v.t.aFudZG),
-        note: v.NW.string(v.t.nIrkW1),
+        title: S.NW.string(S.t.aFudZG),
+        note: S.NW.string(S.t.nIrkW1),
         value: P.resolution,
         options: B
       }), (0, r.jsx)(E.Q, {
@@ -224,14 +224,14 @@ function y() {
           resolution: P.resolution,
           frameRate: e
         }),
-        title: v.NW.string(v.t["2wScLy"]),
-        note: v.NW.string(v.t["Rf9+f3"]),
+        title: S.NW.string(S.t["2wScLy"]),
+        note: S.NW.string(S.t["Rf9+f3"]),
         value: P.frameRate,
         options: M
       }), (0, r.jsx)(E.O, {
         className: I.formItem,
-        title: v.NW.string(v.t.pf54ER),
-        note: v.NW.string(v.t["QyB/jI"]),
+        title: S.NW.string(S.t.pf54ER),
+        note: S.NW.string(S.t["QyB/jI"]),
         children: (0, r.jsx)("div", {
           className: T.keyRecorder,
           children: (0, r.jsx)(u.Z, {

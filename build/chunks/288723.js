@@ -25,7 +25,7 @@ let d = {
       n = e.options,
       o = e.name;
     if (!t.modifiersData[o]._skip) {
-      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, v = n.flipVariations, y = void 0 === v || v, O = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I) === I, T = h || (S || !y ? [(0, r.Z)(I)] : u(I)), A = [I].concat(T).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, v = n.flipVariations, y = void 0 === v || v, O = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I) === I, T = h || (S || !y ? [(0, r.Z)(I)] : u(I)), N = [I].concat(T).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,
@@ -34,8 +34,8 @@ let d = {
             flipVariations: y,
             allowedAutoPlacements: O
           }) : n)
-        }, []), N = t.rects.reference, C = t.rects.popper, R = new Map, P = !0, w = A[0], D = 0; D < A.length; D++) {
-        var L = A[D],
+        }, []), A = t.rects.reference, C = t.rects.popper, R = new Map, P = !0, w = N[0], D = 0; D < N.length; D++) {
+        var L = N[D],
           x = (0, i.Z)(L),
           M = (0, c.Z)(L) === l.BL,
           k = [l.we, l.I].indexOf(x) >= 0,
@@ -48,7 +48,7 @@ let d = {
             padding: m
           }),
           G = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
-        N[j] > C[j] && (G = (0, r.Z)(G));
+        A[j] > C[j] && (G = (0, r.Z)(G));
         var B = (0, r.Z)(G),
           F = [];
         if (f && F.push(U[x] <= 0), p && F.push(U[G] <= 0, U[B] <= 0), F.every(function(e) {
@@ -61,7 +61,7 @@ let d = {
       }
       if (P)
         for (var V = y ? 3 : 1, Z = function(e) {
-            var t = A.find(function(t) {
+            var t = N.find(function(t) {
               var n = R.get(t);
               if (n) return n.slice(0, e).every(function(e) {
                 return e

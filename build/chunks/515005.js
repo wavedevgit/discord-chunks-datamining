@@ -57,13 +57,13 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -117,7 +117,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       height: B,
       padding: G
     }), [G, B]), [Q, X] = (0, f.Z)(null, 300);
-    return (0, r.jsx)("div", A(S({
+    return (0, r.jsx)("div", N(S({
       className: O.row,
       style: z
     }, null == I ? void 0 : I(k)), {
@@ -152,10 +152,10 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             tabIndex: K,
             onFocus: z
           } = U,
-          J = N(U, ["ref", "tabIndex", "onFocus"]);
+          J = A(U, ["ref", "tabIndex", "onFocus"]);
         switch (e.type) {
           case m.al.CREATE_STICKER:
-            return (0, r.jsx)("div", A(S({}, J), {
+            return (0, r.jsx)("div", N(S({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
                 className: a()(O.createSticker, j, {
@@ -193,7 +193,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                   return t => (0, r.jsx)(e, S({}, t))
                 })
               };
-            return (0, i.createElement)("div", A(S({}, J), {
+            return (0, i.createElement)("div", N(S({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
               className: a()(O.sticker, j, {

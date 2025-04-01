@@ -6,8 +6,8 @@ var r = n(399606),
   i = n(780384),
   s = n(230711),
   a = n(410030),
-  l = n(594174),
-  o = n(424218),
+  o = n(594174),
+  l = n(424218),
   c = n(74538),
   d = n(474936),
   u = n(981631),
@@ -16,20 +16,20 @@ var r = n(399606),
   p = n(323780),
   h = n(101732),
   f = n(450598),
-  N = n(633030),
-  b = n(97942),
+  b = n(633030),
+  N = n(97942),
   x = n(269987),
   _ = n(548629),
   E = n(507084),
   j = n(680313),
-  C = n(926433),
-  O = n(302036),
-  S = n(994554),
-  v = n(1549),
+  O = n(926433),
+  C = n(302036),
+  v = n(994554),
+  S = n(1549),
   T = n(13327),
   I = n(59137),
-  A = n(405991),
-  y = n(24615),
+  y = n(405991),
+  A = n(24615),
   P = n(193943),
   R = n(334347),
   D = n(943734),
@@ -42,10 +42,10 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
   M = e => {
     let {
       styles: t
-    } = e, n = (0, a.ZP)(), i = (0, r.e7)([l.default], () => {
-      let e = l.default.getCurrentUser();
+    } = e, n = (0, a.ZP)(), i = (0, r.e7)([o.default], () => {
+      let e = o.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
-    }), M = (0, o.BU)(d.Uq / 1024, {
+    }), M = (0, l.BU)(d.Uq / 1024, {
       useKibibytes: !0
     });
     return {
@@ -65,7 +65,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
         title: g.NW.string(g.t["/xvEMz"]),
         description: g.NW.string(g.t.HKWdjo),
         className: t.clientThemesCard,
-        imageSource: y,
+        imageSource: A,
         imageClassName: t.clientThemesImage
       },
       customAppIcons: {
@@ -95,7 +95,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
             onTryItOutClick: t
           })
         },
-        imageSource: b,
+        imageSource: N,
         imageClassName: t.perGuildProfilesImage
       },
       longerMessages: {
@@ -107,7 +107,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       moreGuilds: {
         title: g.NW.string(g.t.Bv8Pfn),
         description: g.NW.string(g.t.JMfaTU),
-        imageSource: B(n, N, w),
+        imageSource: B(n, b, w),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {
@@ -126,25 +126,25 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       soundboard: {
         title: g.NW.string(g.t["lGcW+f"]),
         description: g.NW.string(g.t["/fDyOz"]),
-        imageSource: B(n, C, O),
+        imageSource: B(n, O, C),
         imageClassName: t.soundboardImage
       },
       stickers: {
         title: g.NW.string(g.t["1c+xwc"]),
         description: g.NW.string(g.t.hJG8ZG),
-        imageSource: B(n, S, k),
+        imageSource: B(n, v, k),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: g.NW.string(g.t.tzdIwM),
         description: g.NW.string(g.t.hJG8ZG),
-        imageSource: B(n, S, k),
+        imageSource: B(n, v, k),
         imageClassName: t.stickersImage
       },
       stickersPerkDiscoverability: {
         title: g.NW.string(g.t.tzdIwM),
         description: g.NW.string(g.t.FXlU29),
-        imageSource: B(n, S, k),
+        imageSource: B(n, v, k),
         imageClassName: t.stickersImage
       },
       streaming: {
@@ -156,7 +156,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       superReactions: {
         title: g.NW.string(g.t.uZt5q6),
         description: g.NW.string(g.t.ZK3Zoa),
-        imageSource: B(n, v, T),
+        imageSource: B(n, S, T),
         imageClassName: t.superReactionsImage
       },
       upload: {
@@ -172,7 +172,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       videoBackground: {
         title: g.NW.string(g.t.NaGpTU),
         description: g.NW.string(g.t["A8O/Q0"]),
-        imageSource: B(n, I, A),
+        imageSource: B(n, I, y),
         imageClassName: t.videoBackgroundImage
       }
     }

@@ -63,7 +63,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,14 +71,14 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = [8, 8, 8, 8],
+let A = [8, 8, 8, 8],
   C = 40;
 
 function R(e) {
@@ -199,7 +199,7 @@ function x(e) {
     soundboardListRef: t,
     categories: n,
     shouldUpsellLockedCategories: o,
-    listPadding: a = N,
+    listPadding: a = A,
     guildId: s,
     inExpressionPicker: c
   } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), m = (0, h.I5)(_, E.p9.TIER_2), b = i.useCallback((e, t, n, i) => {

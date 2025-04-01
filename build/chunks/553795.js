@@ -76,11 +76,11 @@ function T(e) {
   E[e.integrationId] = e.joining
 }
 
-function A(e) {
+function N(e) {
   y[e.integrationId] = void 0 !== e.error ? e.error : ""
 }
 
-function N(e) {
+function A(e) {
   let {
     platformType: t,
     id: n,
@@ -144,7 +144,7 @@ let P = new R(o.Z, {
   CONNECTION_OPEN: I,
   USER_CONNECTIONS_UPDATE: S,
   USER_CONNECTIONS_INTEGRATION_JOINING: T,
-  USER_CONNECTION_UPDATE: N,
-  USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: A,
+  USER_CONNECTION_UPDATE: A,
+  USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: N,
   USER_CONNECTIONS_CALLBACK: C
 })

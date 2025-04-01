@@ -98,7 +98,7 @@ function g(e) {
     resetInteraction: y,
     interactionSourceId: O,
     interactionPopoutTargetRef: I
-  } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = v === E.sourceType && b === c.P.REACT, A = v === E.sourceType && b === c.P.REPLY, N = (T || A) && O === E.sourceId;
+  } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = v === E.sourceType && b === c.P.REACT, N = v === E.sourceType && b === c.P.REPLY, A = (T || N) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     targetElementRef: null != I ? I : void 0,
     renderPopout: e => {
@@ -118,7 +118,7 @@ function g(e) {
     onRequestClose: () => {
       y(), null == h || h()
     },
-    shouldShow: N
+    shouldShow: A
   }, m(b, f)), {
     children: g
   }))

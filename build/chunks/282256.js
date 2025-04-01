@@ -71,17 +71,17 @@ let f = l.memo(function(e) {
       handleResize: v,
       positionTrackerRef: h
     },
-    N = l.useRef(S);
+    P = l.useRef(S);
   l.useEffect(() => {
-    N.current = S
+    P.current = S
   }), l.useEffect(() => {
     let {
       handleResize: e,
       positionTrackerRef: t
-    } = N.current;
+    } = P.current;
     null != t.current && e()
   }, [j]);
-  let P = (0, a.O)(v);
+  let N = (0, a.O)(v);
   return (0, r.jsxs)("div", {
     className: o()(p.container, f && p.isOverlayContainer),
     ref: h,
@@ -90,7 +90,7 @@ let f = l.memo(function(e) {
       children: i
     }), (0, r.jsx)("div", {
       className: p.chipletParent,
-      ref: P,
+      ref: N,
       children: (0, r.jsx)("span", {
         className: o()(p.chipletContainer, !j && f && p.noPadding),
         ref: b,

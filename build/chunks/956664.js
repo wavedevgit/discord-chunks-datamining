@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Bo: () => N,
+  Bo: () => A,
   Dc: () => h,
   OF: () => I,
-  QB: () => A,
+  QB: () => N,
   Tj: () => c,
   XN: () => O,
   _H: () => g,
@@ -141,11 +141,11 @@ function T(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let t = e.split(";base64,");
   return i()(2 === t.length, "Input data is not a valid image."), atob(t[1]).length
 }
-async function N(e, t, n) {
+async function A(e, t, n) {
   let r = C(e);
   return new File([await r.arrayBuffer()], t, {
     type: n

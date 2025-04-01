@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(642128),
-  o = n(481060),
+  o = n(642128),
+  l = n(481060),
   c = n(320319),
   d = n(423153);
 let u = e => {
@@ -26,26 +26,26 @@ let u = e => {
   }, []), i.useEffect(() => {
     g(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
   }, [f, p]);
-  let N = m > 0,
-    b = i.useCallback(e => ({
+  let b = m > 0,
+    N = i.useCallback(e => ({
       x: (e - m) * 100
     }), [m]),
-    [x, _] = (0, o.bYB)(t.length, b);
+    [x, _] = (0, l.bYB)(t.length, N);
   return i.useEffect(() => {
-    _(b)
-  }, [_, b]), (0, r.jsx)("div", {
+    _(N)
+  }, [_, N]), (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsxs)("div", {
       className: d.cardContainer,
-      children: [f > p && (0, r.jsx)(o.P3F, {
-        onClick: N ? () => {
+      children: [f > p && (0, r.jsx)(l.P3F, {
+        onClick: b ? () => {
           g(e => 0 === e ? f - p : e - 1)
         } : void 0,
         className: a()({
-          [d.leftArrow]: N,
-          [d.inactiveArrow]: !N
+          [d.leftArrow]: b,
+          [d.inactiveArrow]: !b
         }),
-        children: (0, r.jsx)(o.whL, {
+        children: (0, r.jsx)(l.whL, {
           className: d.arrowIcon,
           colorClass: d.arrowIcon
         })
@@ -54,12 +54,12 @@ let u = e => {
         children: x.map((e, n) => {
           var i, a;
           let {
-            x: o
+            x: l
           } = e;
-          return (0, r.jsx)(l.animated.div, {
+          return (0, r.jsx)(o.animated.div, {
             className: d.card,
             style: {
-              transform: null == o ? void 0 : o.to(e => "translate3d(".concat(e, "%,0,0)"))
+              transform: null == l ? void 0 : l.to(e => "translate3d(".concat(e, "%,0,0)"))
             },
             children: (0, r.jsx)(c.Z, (i = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -92,12 +92,12 @@ let u = e => {
             }), i), "".concat(t[n].name, "_").concat(n, "_perks_card"))
           }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
         })
-      }), f > p && (0, r.jsx)(o.P3F, {
+      }), f > p && (0, r.jsx)(l.P3F, {
         onClick: () => {
           g(e => e >= f - p ? 0 : e + 1)
         },
         className: d.rightArrow,
-        children: (0, r.jsx)(o.ZSh, {
+        children: (0, r.jsx)(l.ZSh, {
           className: d.arrowIcon,
           colorClass: d.arrowIcon
         })

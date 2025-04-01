@@ -35,7 +35,7 @@ let h = 750,
   S = !1;
 class T extends a.Z {
   initialize() {
-    this.waitFor(r.Z), this.waitFor(o.Z), this.waitFor(i.Z), this.syncWith([s.Z], () => !0), this.syncWith([o.Z], A)
+    this.waitFor(r.Z), this.waitFor(o.Z), this.waitFor(i.Z), this.syncWith([s.Z], () => !0), this.syncWith([o.Z], N)
   }
   loadCache() {
     let e = this.readSnapshot(T.LATEST_SNAPSHOT_VERSION);
@@ -109,7 +109,7 @@ class T extends a.Z {
       CACHE_LOADED_LAZY: () => this.loadCache(),
       CHANNEL_DELETE: P,
       CHANNEL_UPDATES: R,
-      CONNECTION_OPEN_SUPPLEMENTAL: N,
+      CONNECTION_OPEN_SUPPLEMENTAL: A,
       GUILD_DELETE: L,
       LOGIN_SUCCESS: x,
       THREAD_DELETE: D,
@@ -118,12 +118,12 @@ class T extends a.Z {
   }
 }
 
-function A() {
+function N() {
   let e = o.Z.getChannelId();
   null != e && T.recordChannel(e)
 }
 
-function N() {
+function A() {
   T.dropUnreachableChannels(), T.replaceLru((0, _.J)(O, h + g))
 }
 

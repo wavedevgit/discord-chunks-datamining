@@ -101,14 +101,14 @@ function T(e) {
   return !!p.has(t) && v(t)
 }
 
-function A(e) {
+function N(e) {
   let {
     guildId: t,
     user: n
   } = e, r = c.default.getCurrentUser();
   return !!(n.id === (null == r ? void 0 : r.id) && p.has(t)) && v(t)
 }
-class N extends(r = o.ZP.Store) {
+class A extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(l.Z)
   }
@@ -135,8 +135,8 @@ class N extends(r = o.ZP.Store) {
     return this.buildRoles(e), null !== (t = g.get(e)) && void 0 !== t && t
   }
 }
-f(N, "displayName", "SubscriptionRoleStore");
-let C = new N(a.Z, {
+f(A, "displayName", "SubscriptionRoleStore");
+let C = new A(a.Z, {
   CONNECTION_OPEN: O,
   LOGOUT: O,
   GUILD_CREATE: S,
@@ -145,5 +145,5 @@ let C = new N(a.Z, {
   GUILD_ROLE_CREATE: T,
   GUILD_ROLE_UPDATE: T,
   GUILD_ROLE_DELETE: T,
-  GUILD_MEMBER_UPDATE: A
+  GUILD_MEMBER_UPDATE: N
 })

@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(780384),
-  l = n(481060),
-  o = n(410030),
+  o = n(481060),
+  l = n(410030),
   c = n(197115),
   d = n(474936),
   u = n(388032),
@@ -34,10 +34,10 @@ let g = e => {
     }
     return i
   }(e, ["className", "forceWhite", "giftMessage", "subscriptionTier"]);
-  let h = (0, o.ZP)(),
+  let h = (0, l.ZP)(),
     f = (0, a.wj)(h) || n,
-    N = f ? l.Ttl.WHITE : l.Ttl.BRAND,
-    b = g === d.Si.TIER_0 ? u.NW.string(u.t.rk4Uu7) : u.NW.string(u.t.Ve9Ge3);
+    b = f ? o.Ttl.WHITE : o.Ttl.BRAND,
+    N = g === d.Si.TIER_0 ? u.NW.string(u.t.rk4Uu7) : u.NW.string(u.t.Ve9Ge3);
   return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -57,9 +57,9 @@ let g = e => {
     return e
   }({
     isGift: !0,
-    color: N,
-    look: l.iLD.OUTLINED,
-    buttonText: b,
+    color: b,
+    look: o.iLD.OUTLINED,
+    buttonText: N,
     giftMessage: i,
     className: s()(t, m.giftButton, f ? m.buttonWhite : m.buttonBrand),
     subscriptionTier: g

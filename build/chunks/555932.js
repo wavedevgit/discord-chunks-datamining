@@ -79,18 +79,18 @@ function y(e) {
 function O(e) {
   let {
     guild: t
-  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, m] = i.useState(!1), [E, b] = i.useState(0), O = i.useRef(null), I = Math.min(_.Eu4.TIER_3, t.premiumTier + 1), S = _.oCV[t.premiumTier], T = _.oCV[I], A = (0, c.Z)(t.id).available, N = A / (T - S), C = f.P[t.premiumTier], R = f.P[I], {
+  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, m] = i.useState(!1), [E, b] = i.useState(0), O = i.useRef(null), I = Math.min(_.Eu4.TIER_3, t.premiumTier + 1), S = _.oCV[t.premiumTier], T = _.oCV[I], N = (0, c.Z)(t.id).available, A = N / (T - S), C = f.P[t.premiumTier], R = f.P[I], {
     progressBarFillWidthFactor: P,
     isProgressBarAnimationComplete: w,
     setShouldFireConfetti: D,
     shouldFireConfetti: L,
     tierMarkerAnimationPosition: x
   } = y({
-    fillFactor: t.premiumTier === _.Eu4.TIER_3 ? 1 : N * (R - C) + C,
+    fillFactor: t.premiumTier === _.Eu4.TIER_3 ? 1 : A * (R - C) + C,
     isRevealed: s || n,
     useReducedMotion: n,
     premiumTier: t.premiumTier,
-    guildBoostCount: S + A
+    guildBoostCount: S + N
   });
   return i.useEffect(() => {
     let e = window.setTimeout(() => {
@@ -102,11 +102,11 @@ function O(e) {
   }, []), (0, r.jsxs)("div", {
     className: h.progressBar,
     role: "progressbar",
-    "aria-valuenow": S + A,
+    "aria-valuenow": S + N,
     "aria-valuetext": t.premiumTier === _.Eu4.NONE ? p.NW.formatToPlainString(p.t.Ukqm9v, {
-      numSubscriptionsApplied: S + A
+      numSubscriptionsApplied: S + N
     }) : p.NW.formatToPlainString(p.t.qWunaW, {
-      numSubscriptionsApplied: S + A,
+      numSubscriptionsApplied: S + N,
       tierName: (0, u.nW)(t.premiumTier, {
         useLevels: !1
       })

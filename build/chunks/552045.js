@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(785681),
-  o = n(841409),
+  o = n(785681),
+  l = n(841409),
   c = n(880257),
   d = n(631885),
   u = n(568671),
@@ -17,14 +17,14 @@ var i = n(120356),
   p = n(388032),
   h = n(510676),
   f = n(494391),
-  N = n(633488),
-  b = n(361848);
+  b = n(633488),
+  N = n(361848);
 let x = () => {
     let e = (0, d.mq)(m.ne.ACTIVE),
       t = (0, c.Z)(),
       {
         handleTabChange: n
-      } = (0, o.Z)();
+      } = (0, l.Z)();
     return (0, d.VM)() || t && e.length > 0 ? null : (0, r.jsx)("div", {
       className: h.button,
       children: t ? (0, r.jsx)(a.zxk, {
@@ -37,8 +37,8 @@ let x = () => {
   },
   _ = () => {
     let e = (0, c.Z)(),
-      t = (0, l.o)(p.NW.string(g.Z.T7GyW1), p.NW.string(g.Z.goKE2d)),
-      n = (0, l.o)(p.NW.format(g.Z.MXjDSk, {
+      t = (0, o.o)(p.NW.string(g.Z.T7GyW1), p.NW.string(g.Z.goKE2d)),
+      n = (0, o.o)(p.NW.format(g.Z.MXjDSk, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"
       }), p.NW.format(g.Z.EMCf6u, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
@@ -64,7 +64,7 @@ let x = () => {
       }), (0, r.jsx)("div", {
         className: h.headerImage,
         children: (0, r.jsx)("img", {
-          src: e ? N : b,
+          src: e ? b : N,
           alt: p.NW.string(g.Z.ffg6xc)
         })
       })]

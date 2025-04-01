@@ -105,7 +105,7 @@ function T(e) {
   delete g[t.id]
 }
 
-function A(e) {
+function N(e) {
   let {
     channelId: t,
     messageId: n,
@@ -132,7 +132,7 @@ function A(e) {
   }
 }
 
-function N(e) {
+function A(e) {
   var t;
   let {
     channelId: n,
@@ -216,9 +216,9 @@ let D = new w(l.Z, {
   CONNECTION_RESUMED: I,
   CHANNEL_SELECT: S,
   CHANNEL_DELETE: T,
-  CALL_CREATE: A,
+  CALL_CREATE: N,
   CALL_UPDATE: C,
   CALL_DELETE: R,
-  CALL_ENQUEUE_RING: N,
+  CALL_ENQUEUE_RING: A,
   VOICE_CHANNEL_SELECT: P
 })

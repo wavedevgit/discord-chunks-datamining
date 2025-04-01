@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(512722),
-  o = n.n(l),
+  o = n(512722),
+  l = n.n(o),
   c = n(442837),
   d = n(692547),
   u = n(481060),
@@ -16,20 +16,20 @@ var r = n(200651),
   p = n(279837),
   h = n(168107),
   f = n(480916),
-  N = n(81643),
-  b = n(952306),
+  b = n(81643),
+  N = n(952306),
   x = n(299206),
   _ = n(295474),
   E = n(144114),
   j = n(918505),
-  C = n(332473),
-  O = n(921801),
-  S = n(485341),
-  v = n(687158),
+  O = n(332473),
+  C = n(921801),
+  v = n(485341),
+  S = n(687158),
   T = n(518950),
   I = n(184325),
-  A = n(867176),
-  y = n(25990),
+  y = n(867176),
+  A = n(25990),
   P = n(594174),
   R = n(572004),
   D = n(51144),
@@ -79,17 +79,17 @@ let H = Z.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
 function z(e) {
   var t, s;
   let {
-    className: l,
-    user: o
-  } = e, c = i.useRef(null), m = (0, j.o9)(), g = (0, C.b)(), p = (0, _.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, N] = i.useState(!1);
+    className: o,
+    user: l
+  } = e, c = i.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, _.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, b] = i.useState(!1);
   i.useEffect(() => {
-    N(null != c.current && c.current.scrollWidth > c.current.clientWidth)
-  }, [o.username]);
-  let b = !o.isClaimed(),
-    x = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || b,
+    b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
+  }, [l.username]);
+  let N = !l.isClaimed(),
+    x = m && !l.isPomelo() && !l.hasVerifiedEmailOrPhone() || N,
     E = x ? U.NW.string(U.t["7Ngnys"]) : void 0;
   return (0, r.jsxs)("div", {
-    className: a()(V.field, l),
+    className: a()(V.field, o),
     children: [(0, r.jsx)("div", {
       className: V.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -104,12 +104,12 @@ function z(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: o.username
-          }), !o.isPomelo() && (0, r.jsxs)(u.Text, {
+            children: l.username
+          }), !l.isPomelo() && (0, r.jsxs)(u.Text, {
             tag: "span",
             color: "header-secondary",
             variant: "text-md/normal",
-            children: ["#", o.discriminator]
+            children: ["#", l.discriminator]
           })]
         })]
       })
@@ -171,12 +171,12 @@ function Y(e) {
   var t, n;
   let {
     user: s,
-    className: l
-  } = e, o = (0, _.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = D.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
+    className: o
+  } = e, l = (0, _.gS)(), c = null !== (n = null == l ? void 0 : null === (t = l.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = D.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
   return i.useEffect(() => {
     h(null != g.current && g.current.scrollWidth > g.current.clientWidth)
   }, [m]), (0, r.jsxs)("div", {
-    className: a()(V.field, l),
+    className: a()(V.field, o),
     children: [(0, r.jsx)("div", {
       className: V.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -225,15 +225,15 @@ function K(e) {
     censor: n,
     revealLabel: s,
     hideLabel: a
-  } = e, [l, o] = i.useState(!1), c = l ? t : n(t);
+  } = e, [o, l] = i.useState(!1), c = o ? t : n(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [c, (0, r.jsx)(u.zxk, {
       look: u.zxk.Looks.LINK,
       size: u.zxk.Sizes.MIN,
       color: u.zxk.Colors.LINK,
-      "aria-label": l ? a : s,
-      onClick: () => o(!l),
-      children: l ? U.NW.string(U.t.fgq1go) : U.NW.string(U.t.dcztdX)
+      "aria-label": o ? a : s,
+      onClick: () => l(!o),
+      children: o ? U.NW.string(U.t.fgq1go) : U.NW.string(U.t.dcztdX)
     })]
   })
 }
@@ -283,7 +283,7 @@ function q(e) {
     buttonAriaLabel: U.NW.string(U.t.BleMPD),
     buttonColor: u.zxk.Colors.BRAND,
     valueMessage: U.NW.string(U.t.qxk9zs),
-    handleClick: () => b.Z.openClaimAccountModal()
+    handleClick: () => N.Z.openClaimAccountModal()
   };
   return (0, r.jsxs)("div", {
     className: a()(V.field, i),
@@ -320,11 +320,11 @@ function X(e) {
   } = e;
   if (!s.isClaimed()) return null;
   let {
-    phone: l,
-    email: o
-  } = s, c = null != l;
+    phone: o,
+    email: l
+  } = s, c = null != o;
   return t = c ? (0, r.jsx)(K, {
-    text: l,
+    text: o,
     censor: k.n,
     revealLabel: U.NW.string(U.t.eY3xlZ),
     hideLabel: U.NW.string(U.t.jllbv7)
@@ -347,7 +347,7 @@ function X(e) {
       })
     }), (0, r.jsxs)("div", {
       className: V.fieldButtonList,
-      children: [c && null != o ? (0, r.jsx)(u.zxk, {
+      children: [c && null != l ? (0, r.jsx)(u.zxk, {
         className: a()(V.fieldButton, V.removeButton),
         size: u.zxk.Sizes.SMALL,
         look: u.zxk.Looks.LINK,
@@ -424,7 +424,7 @@ function Q() {
 function $(e) {
   let {
     className: t
-  } = e, n = (0, N.l6)(), s = (0, N.Jm)(), l = !n || s, o = i.useMemo(() => n ? s ? U.NW.string(U.t.dJOmCw) : U.NW.string(U.t["Y0A/1N"]) : U.NW.string(U.t.Qdv3DA), [n, s]);
+  } = e, n = (0, b.l6)(), s = (0, b.Jm)(), o = !n || s, l = i.useMemo(() => n ? s ? U.NW.string(U.t.dJOmCw) : U.NW.string(U.t["Y0A/1N"]) : U.NW.string(U.t.Qdv3DA), [n, s]);
   return (0, r.jsxs)("div", {
     className: a()(V.field, t),
     children: [(0, r.jsx)("div", {
@@ -438,11 +438,11 @@ function $(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: o
+            children: l
           })
         })]
       })
-    }), l && (0, r.jsx)(u.zxk, {
+    }), o && (0, r.jsx)(u.zxk, {
       className: V.fieldButton,
       size: u.zxk.Sizes.SMALL,
       color: u.zxk.Colors.PRIMARY,
@@ -457,13 +457,13 @@ function ee() {
   var e;
   let t = (0, c.e7)([P.default], () => {
       let e = P.default.getCurrentUser();
-      return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
+      return l()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
-    n = (0, v.ZP)(t.id),
-    i = (0, S.Z)(n),
+    n = (0, S.ZP)(t.id),
+    i = (0, v.Z)(n),
     s = w.co.useSetting(),
-    a = (0, c.e7)([y.Z], () => y.Z.getErrors()),
-    l = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],
+    a = (0, c.e7)([A.Z], () => A.Z.getErrors()),
+    o = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],
     {
       avatarSrc: d,
       avatarDecorationSrc: m
@@ -473,7 +473,7 @@ function ee() {
     });
   return (0, r.jsxs)("div", {
     className: V.accountProfileCard,
-    children: [(0, r.jsx)(A.b, {
+    children: [(0, r.jsx)(y.b, {
       user: t,
       displayProfile: n,
       avatarSize: u.EFr.SIZE_80,
@@ -513,37 +513,37 @@ function ee() {
       })]
     }), (0, r.jsxs)("div", {
       className: V.background,
-      children: [null != l ? (0, r.jsx)(u.Text, {
+      children: [null != o ? (0, r.jsx)(u.Text, {
         className: V.avatarError,
         variant: "text-xs/normal",
         color: "text-danger",
-        children: l
+        children: o
       }) : null, (0, r.jsxs)("div", {
         className: V.fieldList,
-        children: [(0, r.jsx)(O.F, {
+        children: [(0, r.jsx)(C.F, {
           setting: W.s6.ACCOUNT_DISPLAY_NAME,
           children: (0, r.jsx)(Y, {
             className: V.fieldSpacerBottom,
             user: t
           })
-        }), (0, r.jsx)(O.F, {
+        }), (0, r.jsx)(C.F, {
           setting: W.s6.ACCOUNT_USERNAME,
           children: (0, r.jsx)(z, {
             user: t
           })
-        }), (0, r.jsx)(O.F, {
+        }), (0, r.jsx)(C.F, {
           setting: W.s6.ACCOUNT_EMAIL,
           children: (0, r.jsx)(q, {
             className: V.fieldSpacer,
             user: t
           })
-        }), (0, r.jsx)(O.F, {
+        }), (0, r.jsx)(C.F, {
           setting: W.s6.ACCOUNT_PHONE_NUMBER,
           children: (0, r.jsx)(X, {
             className: V.fieldSpacer,
             user: t
           })
-        }), (0, r.jsx)(O.F, {
+        }), (0, r.jsx)(C.F, {
           setting: W.s6.ACCOUNT_AGE_GROUP,
           children: (0, r.jsx)($, {
             className: V.fieldSpacer

@@ -32,16 +32,16 @@ let y = e => {
     showStatus: I,
     showWumpus: S,
     isPurchased: T = !1
-  } = e, A = (0, a.e7)([_.Z], () => (0, s.wj)(_.Z.theme)), N = null != n ? (0, m.EU)(n) : i, C = (0, a.e7)([p.Z], () => p.Z.getStatus(t.id)), R = A ? "#706F74" : "#aaaab2";
+  } = e, N = (0, a.e7)([_.Z], () => (0, s.wj)(_.Z.theme)), A = null != n ? (0, m.EU)(n) : i, C = (0, a.e7)([p.Z], () => p.Z.getStatus(t.id)), R = N ? "#706F74" : "#aaaab2";
   return (0, r.jsxs)("div", {
     className: o()(y, E.nameplatePreview, {
       [E.nameplatePurchased]: T && !O
     }),
     style: {
-      color: A ? "white" : "black"
+      color: N ? "white" : "black"
     },
-    children: [null != N && (0, r.jsx)(f.Z, {
-      nameplate: N,
+    children: [null != A && (0, r.jsx)(f.Z, {
+      nameplate: A,
       hovered: O,
       placement: d.i.PREVIEW
     }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
@@ -64,7 +64,7 @@ let y = e => {
         className: o()(E.avatarContainer, S && E.avatarVisible),
         children: (0, r.jsx)(c.Z, {
           avatar: (0, r.jsx)(l.qEK, {
-            src: A ? b : v,
+            src: N ? b : v,
             size: l.EFr.SIZE_32,
             "aria-label": g.NW.string(g.t.cqpybG),
             status: l.Skl.ONLINE,

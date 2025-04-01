@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(873546),
   a = n(852229),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   c = n(393238),
   d = n(727637),
   u = n(100527),
@@ -16,20 +16,20 @@ var r = n(200651),
   p = n(429467),
   h = n(440051),
   f = n(734934),
-  N = n(300284),
-  b = n(680295),
+  b = n(300284),
+  N = n(680295),
   x = n(785717),
   _ = n(687158),
   E = n(899007),
   j = n(648052),
-  C = n(867176),
-  O = n(537006),
-  S = n(483424),
-  v = n(681837),
+  O = n(867176),
+  C = n(537006),
+  v = n(483424),
+  S = n(681837),
   T = n(502762),
   I = n(530),
-  A = n(309494),
-  y = n(4517),
+  y = n(309494),
+  A = n(4517),
   P = n(171368),
   R = n(420654),
   D = n(695346),
@@ -91,9 +91,9 @@ function J(e) {
   }), () => B.a.setState({
     isOpen: !1
   })), []);
-  let ea = (0, l.e7)([Z.Z], () => Z.Z.getStatus(t.id)),
-    el = D.Cr.useSetting(),
-    eo = (0, G.F)(el),
+  let ea = (0, o.e7)([Z.Z], () => Z.Z.getStatus(t.id)),
+    eo = D.Cr.useSetting(),
+    el = (0, G.F)(eo),
     {
       expiringStatusProfileFeedback: ec
     } = h.Y.useExperiment({
@@ -101,22 +101,22 @@ function J(e) {
     }, {
       autoTrackExposure: !1
     }),
-    ed = (0, l.e7)([w.Z], () => w.Z.hidePersonalInformation),
+    ed = (0, o.e7)([w.Z], () => w.Z.hidePersonalInformation),
     eu = (0, f.p)(),
     em = D.Sb.useSetting(),
     eg = (0, G.I)(ea),
     ep = (0, M.g)(n),
-    eh = (0, N.Z)({
+    eh = (0, b.Z)({
       analyticsLocations: en
     }),
     ef = (0, L.I5)(t),
-    eN = (0, g.p)({
+    eb = (0, g.p)({
       location: "AccountProfilePopout"
     }),
-    eb = i.useMemo(() => (0, p.Z)(), []),
+    eN = i.useMemo(() => (0, p.Z)(), []),
     ex = e => {
       null == n || n(), (0, P.openUserProfileModal)(X({
-        customStatusPrompt: eb,
+        customStatusPrompt: eN,
         sourceAnalyticsLocations: en
       }, er, e))
     };
@@ -124,7 +124,7 @@ function J(e) {
     value: en,
     children: (0, r.jsx)(x.Mt, {
       value: er,
-      children: (0, r.jsx)(o.VqE, {
+      children: (0, r.jsx)(l.VqE, {
         ref: ei,
         "aria-label": t.username,
         children: (0, r.jsxs)(T.Z, {
@@ -134,7 +134,7 @@ function J(e) {
           profileType: z.y0.BITE_SIZE,
           children: [(0, r.jsxs)("header", {
             className: q.header,
-            children: [(0, r.jsx)(C.Z, {
+            children: [(0, r.jsx)(O.Z, {
               user: t,
               displayProfile: et,
               profileType: z.y0.BITE_SIZE
@@ -143,17 +143,17 @@ function J(e) {
               displayProfile: et,
               profileType: z.y0.BITE_SIZE,
               onOpenProfile: ee ? void 0 : ex
-            }), (0, r.jsx)(y.Z, {
+            }), (0, r.jsx)(A.Z, {
               location: "AccountProfilePopout",
               user: t,
               profileType: z.y0.BITE_SIZE,
               onCloseProfile: n,
-              prompt: eN ? eb : null
+              prompt: eb ? eN : null
             })]
-          }), (null == et ? void 0 : et.profileEffectId) != null && (0, r.jsx)(b.Z, {
+          }), (null == et ? void 0 : et.profileEffectId) != null && (0, r.jsx)(N.Z, {
             profileEffectId: null == et ? void 0 : et.profileEffectId,
             isHovering: es
-          }), (0, r.jsxs)(o.Ttm, {
+          }), (0, r.jsxs)(l.Ttm, {
             className: K.body,
             children: [(0, r.jsx)(I.Z, {
               user: t,
@@ -170,9 +170,9 @@ function J(e) {
                 shouldOpenBadgeTooltip: null != $ ? e => e === $ : void 0
               }),
               nicknameIcons: (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(v.Z, {
+                children: [(0, r.jsx)(S.Z, {
                   userId: t.id
-                }), (0, r.jsx)(A.Z, {
+                }), (0, r.jsx)(y.Z, {
                   user: t,
                   isHovering: es
                 })]
@@ -182,10 +182,10 @@ function J(e) {
               bio: null == et ? void 0 : et.bio,
               hidePersonalInformation: ed,
               onClose: n
-            }), (0, r.jsx)(O.Z, {
+            }), (0, r.jsx)(C.Z, {
               isPremiumUser: ef,
               onInteraction: n
-            }), (0, r.jsx)(S.Z, {
+            }), (0, r.jsx)(v.Z, {
               user: t,
               currentUser: t,
               displayProfile: et,
@@ -200,7 +200,7 @@ function J(e) {
                     id: "edit-profile",
                     action: "EDIT_PROFILE",
                     label: Y.NW.string(Y.t.s5vZlZ),
-                    icon: o.vdY,
+                    icon: l.vdY,
                     onClick: () => {
                       eh(), n()
                     }
@@ -210,16 +210,16 @@ function J(e) {
                     id: "set-status",
                     action: "PRESS_SET_STATUS",
                     label: (0, r.jsx)(V.Z, {}),
-                    sublabel: ec && null != eo && (0, r.jsx)(o.Text, {
+                    sublabel: ec && null != el && (0, r.jsx)(l.Text, {
                       color: "currentColor",
                       variant: "text-xs/medium",
-                      children: eo
+                      children: el
                     }),
-                    icon: () => (0, r.jsx)(o.qbd, {
+                    icon: () => (0, r.jsx)(l.qbd, {
                       status: ea,
                       size: 12
                     }),
-                    hint: (eu || ea === H.Skl.DND) && (0, r.jsx)(o.owu, {
+                    hint: (eu || ea === H.Skl.DND) && (0, r.jsx)(l.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: s.tq ? void 0 : e => {
@@ -235,7 +235,7 @@ function J(e) {
                       })
                     },
                     onClick: s.tq ? () => {
-                      n(), (0, o.ZDy)(() => new Promise(e => e(e => {
+                      n(), (0, l.ZDy)(() => new Promise(e => e(e => {
                         var t, n, {
                             onClose: i
                           } = e,
@@ -254,11 +254,11 @@ function J(e) {
                             }
                             return i
                           }(e, ["onClose"]);
-                        return (0, r.jsx)(o.Y0X, (t = X({}, s), n = n = {
-                          size: o.CgR.SMALL,
+                        return (0, r.jsx)(l.Y0X, (t = X({}, s), n = n = {
+                          size: l.CgR.SMALL,
                           "aria-label": Y.NW.string(Y.t["3Uj+2t"]),
                           className: K.statusPickerModal,
-                          children: (0, r.jsx)(o.v2r, {
+                          children: (0, r.jsx)(l.v2r, {
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
                             "aria-label": Y.NW.string(Y.t.E13trK),
@@ -289,7 +289,7 @@ function J(e) {
                   children: [(0, r.jsx)(U.Mv, {
                     id: "switch-accounts",
                     action: "PRESS_SWITCH_ACCOUNTS",
-                    icon: o.lMe,
+                    icon: l.lMe,
                     label: Y.NW.string(Y.t.oMNyYG),
                     onClick: () => {
                       n(), (0, F.Z)()
@@ -311,7 +311,7 @@ function J(e) {
                     }), (0, r.jsx)(U.Mv, {
                       id: "copy-user-id",
                       action: "COPY_USER_ID",
-                      icon: o.VuL,
+                      icon: l.VuL,
                       label: Y.NW.string(Y.t["/AXYnJ"]),
                       onClick: () => {
                         (0, a.J)(t.id), n()

@@ -32,8 +32,8 @@ var r = n(200651),
   I = n(585602),
   S = n(474936),
   T = n(981631),
-  A = n(388032),
-  N = n(670966);
+  N = n(388032),
+  A = n(670966);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -98,30 +98,30 @@ function x(e, t, n, r) {
       return (0, g.Gf)(e.subscriptionPlanId, i, n, r);
     case S.Xh.PREMIUM_3_MONTH_GUILD:
     case S.Xh.PREMIUM_6_MONTH_GUILD:
-      return A.NW.format(A.t.YAIIWl, {
+      return N.NW.format(N.t.YAIIWl, {
         num: e.quantity,
         intervalCount: t.intervalCount
       });
     case S.Xh.PREMIUM_MONTH_GUILD:
-      return A.NW.format(A.t["3BYyio"], {
+      return N.NW.format(N.t["3BYyio"], {
         num: e.quantity
       });
     case S.Xh.PREMIUM_YEAR_GUILD:
-      return A.NW.format(A.t.JVW4UF, {
+      return N.NW.format(N.t.JVW4UF, {
         num: e.quantity
       })
   }
   switch (t.interval) {
     case S.rV.MONTH:
-      if (1 === t.intervalCount) return A.NW.formatToPlainString(A.t["6oq129"], {
+      if (1 === t.intervalCount) return N.NW.formatToPlainString(N.t["6oq129"], {
         planName: t.name
       });
-      return A.NW.formatToPlainString(A.t["9ydggY"], {
+      return N.NW.formatToPlainString(N.t["9ydggY"], {
         planName: t.name,
         intervalCount: t.intervalCount
       });
     case S.rV.YEAR:
-      return A.NW.formatToPlainString(A.t.V6UFQE, {
+      return N.NW.formatToPlainString(N.t.V6UFQE, {
         planName: t.name
       })
   }
@@ -146,18 +146,18 @@ function M(e) {
     intervalCount: null == m ? void 0 : m.interval_count
   }));
   !0 === o && (b = (0, r.jsxs)("div", {
-    className: N.invoiceItemLabelWithIcon,
+    className: A.invoiceItemLabelWithIcon,
     children: [(0, r.jsxs)("div", {
       children: [b, " "]
     }), (0, r.jsx)(u.ua7, {
-      text: A.NW.format(A.t.UDop9f, {}),
-      "aria-label": A.NW.string(A.t.P68ePD),
-      tooltipClassName: N.invoiceItemTooltip,
+      text: N.NW.format(N.t.UDop9f, {}),
+      "aria-label": N.NW.string(N.t.P68ePD),
+      tooltipClassName: A.invoiceItemTooltip,
       children: e => (0, r.jsx)(u.idN, w(R({
         size: "md",
         color: "currentColor"
       }, e), {
-        className: N.invoiceItemLabelIcon
+        className: A.invoiceItemLabelIcon
       }))
     })]
   }));
@@ -183,17 +183,17 @@ function k(e) {
     tooltipAriaLabel: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: N.invoiceItemLabelWithIcon,
+    className: A.invoiceItemLabelWithIcon,
     children: [t, (0, r.jsx)(u.ua7, {
       clickableOnMobile: !0,
       text: n,
       "aria-label": i,
-      tooltipClassName: N.invoiceItemTooltip,
+      tooltipClassName: A.invoiceItemTooltip,
       children: e => (0, r.jsx)(u.idN, w(R({
         size: "md",
         color: "currentColor"
       }, e), {
-        className: N.invoiceItemLabelIcon
+        className: A.invoiceItemLabelIcon
       }))
     })]
   })
@@ -210,7 +210,7 @@ function j(e) {
       currency: t.currency,
       isPrepaidPaymentSource: n
     }) : null, 0 !== l && null != a && null != s ? (0, r.jsx)(O.R$, {
-      label: A.NW.formatToPlainString(A.t.a3cAOj, {
+      label: N.NW.formatToPlainString(N.t.a3cAOj, {
         numGuildSubscriptions: a.quantity,
         planName: (0, g.Gf)(s.id, !1, n)
       }),
@@ -218,7 +218,7 @@ function j(e) {
     }) : null, (0, r.jsx)(I.Z, {
       invoice: t
     }), (0, r.jsx)(O.KU, {}), (0, r.jsx)(O.Ji, {
-      label: A.NW.format(t.taxInclusive ? n ? A.t.BqdxQk : A.t.XH4raG : A.t.RUI48P, {}),
+      label: N.NW.format(t.taxInclusive ? n ? N.t.BqdxQk : N.t.XH4raG : N.t.RUI48P, {}),
       value: t.currency === T.pKx.USD ? (0, E.T4)(t.total, t.currency) : "".concat((0, E.T4)(t.total, t.currency), "*")
     })]
   })
@@ -248,23 +248,23 @@ function U(e) {
       referralTrialOfferId: o
     }), 0 === h || f ? null : (0, r.jsx)(O.R$, {
       label: (0, r.jsx)(k, {
-        label: A.NW.formatToPlainString(A.t.ZSVgeX, {
+        label: N.NW.formatToPlainString(N.t.ZSVgeX, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
-        tooltipText: A.NW.string(A.t.JmwQJC)
+        tooltipText: N.NW.string(N.t.JmwQJC)
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(O.R$, {
       label: (0, r.jsx)(k, {
-        label: A.NW.string(A.t["+as5ZW"]),
-        tooltipText: A.NW.format(A.t.UDop9f, {}),
-        tooltipAriaLabel: A.NW.string(A.t.P68ePD)
+        label: N.NW.string(N.t["+as5ZW"]),
+        tooltipText: N.NW.format(N.t.UDop9f, {}),
+        tooltipAriaLabel: N.NW.string(N.t.P68ePD)
       }),
       value: (0, E.T4)(m, t.currency)
     }) : null, (0, r.jsx)(I.Z, {
       invoice: t
     }), (0, r.jsx)(O.KU, {}), (0, r.jsx)(O.Ji, {
-      label: A.NW.format(t.taxInclusive ? i ? A.t.BqdxQk : A.t.XH4raG : A.t.RUI48P, {}),
+      label: N.NW.format(t.taxInclusive ? i ? N.t.BqdxQk : N.t.XH4raG : N.t.RUI48P, {}),
       value: t.currency === T.pKx.USD ? (0, E.T4)(t.total, t.currency) : "".concat((0, E.T4)(t.total, t.currency), "*")
     })]
   })
@@ -300,8 +300,8 @@ function F(e) {
     intervalCount: s
   } = (0, g.dn)(n);
   return i !== a || o !== s || t.subscriptionPeriodEnd.getTime() === n.subscriptionPeriodStart.getTime() ? null : (0, r.jsx)("div", {
-    className: N.subscriptionPeriodResetNotice,
-    children: A.NW.format(A.t.JWWD4O, {
+    className: A.subscriptionPeriodResetNotice,
+    children: N.NW.format(N.t.JWWD4O, {
       renewalDate: t.subscriptionPeriodEnd
     })
   })
@@ -322,7 +322,7 @@ function V(e) {
       extended: !0
     }), null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(O.q9, {
-        children: A.NW.string(A.t.tuqjWV)
+        children: N.NW.string(N.t.tuqjWV)
       }), B(G((0, v.j)(n.invoiceItems))).map(e => (0, r.jsx)(M, {
         invoiceItem: e,
         currency: n.currency,
@@ -331,7 +331,7 @@ function V(e) {
         extended: !0
       })]
     }) : null, (0, r.jsx)(O.q9, {
-      children: A.NW.string(A.t.qxVrh4)
+      children: N.NW.string(N.t.qxVrh4)
     }), B(G((0, v.j)(i.invoiceItems))).map(e => {
       let n = null != s && !s.some(t => t.subscriptionPlanId === e.subscriptionPlanId && t.quantity === e.quantity);
       return (0, r.jsx)(M, {
@@ -339,15 +339,15 @@ function V(e) {
         currency: i.currency,
         showGuildSubscriptionAdjustmentTooltip: d && (e.subscriptionPlanId === S.Xh.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === S.Xh.PREMIUM_YEAR_GUILD || e.subscriptionPlanId === S.Xh.PREMIUM_3_MONTH_GUILD || e.subscriptionPlanId === S.Xh.PREMIUM_6_MONTH_GUILD),
         className: a()({
-          [N.subscriptionAddedInvoiceItem]: !t || n
+          [A.subscriptionAddedInvoiceItem]: !t || n
         })
       }, e.id)
     }), (0, r.jsx)(I.Z, {
       invoice: i
     }), (0, r.jsx)(O.KU, {}), (0, r.jsx)(O.R$, {
-      label: A.NW.string(A.t.AChTLS),
+      label: N.NW.string(N.t.AChTLS),
       value: (0, E.og)((0, E.T4)(i.total, i.currency), c, u),
-      className: N.subscriptionCostRow
+      className: A.subscriptionCostRow
     })]
   })
 }
@@ -372,16 +372,16 @@ function Z(e) {
         intervalCount: null == c ? void 0 : c.interval_count
       }),
       t = (null == c ? void 0 : c.interval) === S.rV.DAY && (null == c ? void 0 : c.interval_count) < 28 ? 2 : 7;
-    return null != l ? l : A.NW.format(A.t["2FvcjI"], {
+    return null != l ? l : N.NW.format(N.t["2FvcjI"], {
       duration: e,
       days: t,
       contactLink: T.EYA.CONTACT,
       helpdeskArticle: m.Z.getArticleURL(T.BhN.PREMIUM_TRIAL)
     })
   }
-  let f = i.taxInclusive ? A.t["hay+go"] : A.t.da0lkp;
+  let f = i.taxInclusive ? N.t["hay+go"] : N.t.da0lkp;
   return (0, r.jsx)(r.Fragment, {
-    children: A.NW.format(f, {
+    children: N.NW.format(f, {
       rate: (0, E.og)((0, E.T4)(i.subtotal, i.currency), u, d),
       renewalDate: null != s ? s : a ? null != n ? n.subscriptionPeriodEnd : i.subscriptionPeriodStart : i.subscriptionPeriodEnd,
       contactLink: T.EYA.CONTACT,
@@ -424,10 +424,10 @@ function H(e) {
     }), !m && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(u.P3F, {
         onClick: () => I(e => !e),
-        className: N.subscriptionDetailsToggle,
-        children: [y ? A.NW.string(A.t.aBcRbG) : A.NW.string(A.t.X6duqq), (0, r.jsx)(h.Z, {
+        className: A.subscriptionDetailsToggle,
+        children: [y ? N.NW.string(N.t.aBcRbG) : N.NW.string(N.t.X6duqq), (0, r.jsx)(h.Z, {
           direction: y ? h.Z.Directions.UP : h.Z.Directions.DOWN,
-          className: N.subscriptionDetailsToggleCaret
+          className: A.subscriptionDetailsToggleCaret
         })]
       }), y ? (0, r.jsx)(V, {
         isUpdate: s,
@@ -456,30 +456,30 @@ function W(e) {
     _ = f - l,
     p = (0, E.T4)(_, d),
     h = (0, E.T4)(f, d);
-  return t = a ? (0, g.L7)(n.interval, !0, void 0, void 0, !0, (0, g.Rd)(n.id)) : A.NW.formatToPlainString(A.t.LQLxkZ, {
+  return t = a ? (0, g.L7)(n.interval, !0, void 0, void 0, !0, (0, g.Rd)(n.id)) : N.NW.formatToPlainString(N.t.LQLxkZ, {
     planName: (0, g.Gf)(n.id, !1, o)
   }), (0, r.jsxs)("div", {
     className: i,
     children: [(0, r.jsx)(u.vwX, {
-      children: A.NW.string(A.t.PEjaCw)
+      children: N.NW.string(N.t.PEjaCw)
     }), l >= 0 && !1 === c ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/bold",
-        className: N.purchaseDetailsHeaderText,
+        className: A.purchaseDetailsHeaderText,
         children: t
       }), (0, r.jsxs)(O.PO, {
         className: i,
         children: [(0, r.jsx)(O.q9, {
-          children: A.NW.string(A.t.sail9P)
+          children: N.NW.string(N.t.sail9P)
         }), (0, r.jsx)(O.R$, {
           label: t,
           value: p
         }), (0, r.jsx)(I.Z, {
           invoice: s
         }), (0, r.jsx)(O.KU, {}), (0, r.jsx)(O.R$, {
-          label: A.NW.string(A.t.txajQE),
+          label: N.NW.string(N.t.txajQE),
           value: h,
-          className: N.subscriptionCostRow
+          className: A.subscriptionCostRow
         })]
       })]
     }) : (0, r.jsx)(u.X6q, {
@@ -495,9 +495,9 @@ function Y(e) {
       plan: i
     } = e,
     o = (0, v.j)(n.invoiceItems).find(e => e.subscriptionPlanId === i.id);
-  return l()(null != o, "newPlanInvoiceItem can not be null"), i.interval === S.rV.MONTH ? t = n.taxInclusive ? A.t.v9QeOD : A.t.FALkOz : i.interval === S.rV.YEAR ? t = n.taxInclusive ? A.t.ECT4Aw : A.t["0HQxKS"] : l()(!1, "Invalid interval type"), (0, r.jsx)(u.Text, {
+  return l()(null != o, "newPlanInvoiceItem can not be null"), i.interval === S.rV.MONTH ? t = n.taxInclusive ? N.t.v9QeOD : N.t.FALkOz : i.interval === S.rV.YEAR ? t = n.taxInclusive ? N.t.ECT4Aw : N.t["0HQxKS"] : l()(!1, "Invalid interval type"), (0, r.jsx)(u.Text, {
     variant: "text-md/normal",
-    children: A.NW.format(t, {
+    children: N.NW.format(t, {
       price: (0, E.T4)(o.subscriptionPlanPrice, n.currency)
     })
   })

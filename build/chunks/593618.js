@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(160404),
   S = n(777861),
   T = n(565799),
-  A = n(501655),
-  N = n(517334),
+  N = n(501655),
+  A = n(517334),
   C = n(344185),
   R = n(199902),
   P = n(984933),
@@ -94,7 +94,7 @@ function Z(e) {
       } = e;
       return t.id
     }), ...Object.values(C.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
-    r = (0, N.ZP)(t),
+    r = (0, A.ZP)(t),
     o = i.useMemo(() => r.map(e => e.id), [r]),
     a = (0, c.e7)([x.ZP], () => x.ZP.getVoiceStates(t), [t]),
     s = (0, c.Wu)([w.Z], () => w.Z.getBlockedOrIgnoredIDs()),
@@ -114,7 +114,7 @@ function Z(e) {
     }),
     _ = (0, c.Wu)([T.Z], () => l().flatMap(o, t => {
       if (t === e.afkChannelId) return [];
-      let n = T.Z.getMutableParticipants(t, A.pV.SPEAKER).filter(e => e.type === A.Ui.VOICE).map(e => {
+      let n = T.Z.getMutableParticipants(t, N.pV.SPEAKER).filter(e => e.type === N.Ui.VOICE).map(e => {
         let {
           user: t
         } = e;
@@ -124,7 +124,7 @@ function Z(e) {
     })),
     m = (0, c.e7)([T.Z], () => {
       let e = 0;
-      for (let t of o) e += T.Z.getParticipantCount(t, A.pV.AUDIENCE);
+      for (let t of o) e += T.Z.getParticipantCount(t, N.pV.AUDIENCE);
       return e
     }),
     g = (0, c.Wu)([R.Z], () => {

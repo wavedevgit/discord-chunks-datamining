@@ -25,8 +25,8 @@ var r, i = n(392711),
   I = n(955132),
   S = n(645436),
   T = n(344651),
-  A = n(981631),
-  N = n(526761);
+  N = n(981631),
+  A = n(526761);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,7 +88,7 @@ function V(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), (0, y.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), !1
+  }), (0, y.isIOS)() && M === N.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), !1
 }
 
 function Z() {
@@ -97,7 +97,7 @@ function Z() {
 
 function H(e) {
   var t;
-  e.settings.type === N.yP.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && Z()
+  e.settings.type === A.yP.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && Z()
 }
 
 function W(e) {
@@ -149,12 +149,12 @@ function z(e) {
 }
 
 function q(e) {
-  if (e.state !== A.hes.DISCONNECTED) return !1;
+  if (e.state !== N.hes.DISCONNECTED) return !1;
   e.willReconnect && (null != e.streamKey ? I.Wb.streamPing(e.streamKey) : I.Wb.voiceServerPing())
 }
 
 function Q(e) {
-  return (0, y.isIOS)() ? (f.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (S.Y(!1), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
+  return (0, y.isIOS)() ? (f.default.isAuthenticated() && (M === N.$7l.INACTIVE && e.state === N.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : M === N.$7l.BACKGROUND && e.state === N.$7l.ACTIVE && I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), M = e.state) : e.state === N.$7l.ACTIVE && (S.Y(!1), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
 }
 
 function X() {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   T: () => b,
-  Z: () => A
+  Z: () => N
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -94,7 +94,7 @@ class T extends(r = l.ZP.Store) {
   }
 }
 m(T, "displayName", "ContentInventoryActivityStore");
-let A = new T(c.Z, {
+let N = new T(c.Z, {
   CONNECTION_OPEN: I,
   CONTENT_INVENTORY_SET_FEED: O
 })

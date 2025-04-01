@@ -6,7 +6,7 @@ var r = n(200651),
   a = n(192379),
   l = n(481060),
   i = n(406432),
-  o = n(451593),
+  o = n(373071),
   s = n(726862),
   c = n(619899),
   d = n(18868),
@@ -44,7 +44,7 @@ let x = () => (0, l.ZDy)(async () => {
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
       } = (0, c.N9)(),
-      i = a.useMemo(() => Object.values(e).map(e => ({
+      i = a.useMemo(() => e.map(e => ({
         label: e.name,
         value: e.id
       })), [e]);

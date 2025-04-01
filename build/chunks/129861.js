@@ -130,9 +130,9 @@ let y = e => {
       I = t.isVerifiedBot(),
       S = d.ZP.getName(t),
       T = i ? b : null != n ? n : S,
-      A = t.isPomelo() || l;
-    if (A || T !== b) {
-      let e = T === b && A && i ? d.ZP.getUserTag(t, {
+      N = t.isPomelo() || l;
+    if (N || T !== b) {
+      let e = T === b && N && i ? d.ZP.getUserTag(t, {
           forcePomelo: l
         }) : T,
         n = o && e !== "@".concat(b) ? d.ZP.getUserTag(t) : void 0;

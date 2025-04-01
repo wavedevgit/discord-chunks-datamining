@@ -5,8 +5,8 @@ n.d(t, {
   T4: () => R,
   XK: () => D,
   g5: () => L,
-  gZ: () => A,
-  i6: () => N,
+  gZ: () => N,
+  i6: () => A,
   yC: () => P
 }), n(47120);
 var r = n(261470),
@@ -33,7 +33,7 @@ let v = 1e3,
   I = 864e5,
   S = 6e5,
   T = new Map;
-async function A(e) {
+async function N(e) {
   var t;
   let n = Date.now(),
     i = null !== (t = T.get(e)) && void 0 !== t ? t : 0;
@@ -66,7 +66,7 @@ async function A(e) {
     })
   }
 }
-async function N(e) {
+async function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     n = Date.now(),
     r = _.Z.getApplicationFetchState(e),

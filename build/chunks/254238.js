@@ -62,7 +62,7 @@ async function y() {
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == e ? void 0 : e.type) === m.ABu.PLAYSTATION || (null == e ? void 0 : e.type) === m.ABu.PLAYSTATION_STAGING) && (null == e ? void 0 : e.commandId) != null && (null == e ? void 0 : e.deviceId) != null && n.push(w(e.type, e.deviceId, e.commandId)), null != t && n.push(N(t));
+  ((null == e ? void 0 : e.type) === m.ABu.PLAYSTATION || (null == e ? void 0 : e.type) === m.ABu.PLAYSTATION_STAGING) && (null == e ? void 0 : e.commandId) != null && (null == e ? void 0 : e.deviceId) != null && n.push(w(e.type, e.deviceId, e.commandId)), null != t && n.push(A(t));
   try {
     await Promise.all(n)
   } catch (e) {
@@ -118,7 +118,7 @@ function T(e, t, n, r) {
     }, r)
   }), v("AUDIO_SETTINGS_UPDATE", e))
 }
-async function A() {
+async function N() {
   let e;
   try {
     let t = null != c.Z.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
@@ -137,7 +137,7 @@ async function A() {
   return e
 }
 
-function N(e) {
+function A(e) {
   return o.tn.del({
     url: m.ANM.CONNECT_REQUEST(e),
     rejectWithError: !1
@@ -240,6 +240,6 @@ async function w(e, t, n) {
 }
 async function D(e, t, n) {
   await _.Z.maybeShowPTTAlert(e), await y();
-  let r = await A();
+  let r = await N();
   await P(e, t, n, r), (0, h.Z)(n.id, e)
 }

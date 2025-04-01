@@ -77,16 +77,16 @@ function f(e) {
     getScrollerState: g,
     forceUpdate: b
   }), {
-    items: A
-  } = v.current, N = null, {
+    items: N
+  } = v.current, A = null, {
     scrollTop: C
   } = g();
-  for (let e of A) {
+  for (let e of N) {
     if (0 === C) break;
     if ("footer" === e.type || "header" === e.type || null == e.anchorId) continue;
     let t = "row" === e.type ? e.row : void 0;
     if (e.offsetTop >= C) {
-      N = {
+      A = {
         id: e.anchorId,
         section: e.section,
         row: t,
@@ -112,7 +112,7 @@ function f(e) {
   return (0, r.useLayoutEffect)(() => void(v.current = P)), u(l({}, P), {
     listComputer: y,
     forceUpdateOnChunkChange: T,
-    anchor: N,
+    anchor: A,
     isSidebarVisible: R
   })
 }

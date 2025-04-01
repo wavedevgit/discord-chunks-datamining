@@ -3,8 +3,8 @@ n.d(t, {
   Dp: () => p,
   Gw: () => f,
   Op: () => E,
-  gx: () => b,
-  iG: () => N,
+  gx: () => N,
+  iG: () => b,
   mN: () => j,
   oo: () => h,
   sP: () => _
@@ -13,8 +13,8 @@ var r = n(278074),
   i = n(442837),
   s = n(780384),
   a = n(594174),
-  l = n(78839),
-  o = n(74538),
+  o = n(78839),
+  l = n(74538),
   c = n(781320),
   d = n(391110),
   u = n(474936),
@@ -54,7 +54,7 @@ let p = e => {
     }
   };
 
-function N(e, t) {
+function b(e, t) {
   switch (e) {
     case m.EB.PENDING:
       return null != t ? g.NW.formatToPlainString(g.t.a1eKDg, {
@@ -68,7 +68,7 @@ function N(e, t) {
       return ""
   }
 }
-let b = (e, t, n) => (0, s.wj)(e) ? t : n,
+let N = (e, t, n) => (0, s.wj)(e) ? t : n,
   x = e => {
     let {
       cards: t,
@@ -80,26 +80,26 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
         card: n
       } = e;
       t.length < s && t.push(n)
-    }, l = () => {
+    }, o = () => {
       a({
         card: n.specialShopPerks
       })
     }, {
-      enabled: o
+      enabled: l
     } = c.G.getCurrentConfig({
       location: "getWhatsNewRow"
     }, {
       autoTrackExposure: !1
-    }), d = C();
+    }), d = O();
     return null != n.collectibleDeco && a({
       card: n.collectibleDeco
     }), null != n.tenureBadge && a({
       card: n.tenureBadge
     }), null != n.tenureRewardCollectible && !0 === i && a({
       card: n.tenureRewardCollectible
-    }), o && a({
+    }), l && a({
       card: n.permadecos
-    }), r && d ? (0 === t.length && l(), a({
+    }), r && d ? (0 === t.length && o(), a({
       card: n.newAppStylesUpdateJune2024
     }), a({
       card: n.serverProfiles
@@ -111,7 +111,7 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
       card: n.serverProfiles
     })), a({
       card: n.earlyAccess
-    }), l(), a({
+    }), o(), a({
       card: n.unlimitedSuperReactions
     }), t
   },
@@ -122,14 +122,14 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
       isFullScreen: i,
       showTenureCard: s,
       isPremiumSubscriber: a,
-      fractionalState: l,
-      isInReverseTrial: o
+      fractionalState: o,
+      isInReverseTrial: l
     } = e, c = [];
     switch (n) {
       case d.R0.PERKS_DISCOVERABILITY:
         c = (0, r.EQ)({
           isPremiumSubscriber: a,
-          fractionalState: l
+          fractionalState: o
         }).with({
           isPremiumSubscriber: !1
         }, () => [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons]).with({
@@ -154,26 +154,26 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
       case d.R0.CARD_CAROUSEL_SECOND_ROW:
         c = (0, r.EQ)({
           isPremiumSubscriber: a,
-          fractionalState: l
+          fractionalState: o
         }).with({
           isPremiumSubscriber: !1
         }, () => [t.customSoundsEverywhere, t.specialStickerAccess]).with({
           fractionalState: u.a$.FP_ONLY
-        }, () => o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]).otherwise(() => [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]);
+        }, () => l ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]).otherwise(() => [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]);
         break;
       case d.R0.CARD_CAROUSEL_THIRD_ROW:
         c = (0, r.EQ)({
-          fractionalState: l
+          fractionalState: o
         }).with({
           fractionalState: u.a$.FP_ONLY
-        }, () => o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge]).otherwise(() => [t.entranceSoundsSeeAllVariation, t.badge])
+        }, () => l ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge]).otherwise(() => [t.entranceSoundsSeeAllVariation, t.badge])
     }
     return i || (c = c.filter(e => !e.hideOnNarrowScreen)), c
   },
   E = e => {
-    let t = (0, i.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
-      n = null != t ? o.ZP.getPremiumPlanItem(t) : null,
-      r = (null != n ? o.ZP.getSkuIdForPlan(n.planId) : null) === u.Si.TIER_2;
+    let t = (0, i.e7)([o.ZP], () => o.ZP.getPremiumTypeSubscription()),
+      n = null != t ? l.ZP.getPremiumPlanItem(t) : null,
+      r = (null != n ? l.ZP.getSkuIdForPlan(n.planId) : null) === u.Si.TIER_2;
     return e ? r ? {
       title: g.NW.string(g.t.Aw5DRk),
       subtitle: g.NW.string(g.t.aHdO6u)
@@ -187,9 +187,9 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
   },
   j = () => {
     let e = (0, i.e7)([a.default], () => a.default.getCurrentUser());
-    return (0, o.I5)(e)
+    return (0, l.I5)(e)
   },
-  C = () => {
+  O = () => {
     let e = a.default.getCurrentUser();
-    return (0, o.M5)(e, u.p9.TIER_2)
+    return (0, l.M5)(e, u.p9.TIER_2)
   }

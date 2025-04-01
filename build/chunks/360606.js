@@ -44,8 +44,8 @@ let g = [],
   I = !1,
   S = p.QZA.CLOSED,
   T = {},
-  A = !1,
-  N = null;
+  N = !1,
+  A = null;
 
 function C(e) {
   let {
@@ -63,7 +63,7 @@ function R(e) {
     section: t,
     sectionId: n
   } = e;
-  i = t, N = n
+  i = t, A = n
 }
 
 function P(e) {
@@ -79,14 +79,14 @@ function P(e) {
     let e = z(y.id);
     null != e && (y = e)
   }
-  b = null, S = p.QZA.OPEN, T = {}, A = !1
+  b = null, S = p.QZA.OPEN, T = {}, N = !1
 }
 
 function w() {
-  r = null, g = [], E = [], b = null, v = null, y = null, S = p.QZA.CLOSED, A = !1
+  r = null, g = [], E = [], b = null, v = null, y = null, S = p.QZA.CLOSED, N = !1
 }
 let D = s().debounce(() => {
-  A && (null != v ? s().isEqual(v, K(v.id)) && (A = !1) : null != y && s().isEqual(y, z(y.id)) && (A = !1), A || Q.emitChange())
+  N && (null != v ? s().isEqual(v, K(v.id)) && (N = !1) : null != y && s().isEqual(y, z(y.id)) && (N = !1), N || Q.emitChange())
 }, 500);
 
 function L(e) {
@@ -94,7 +94,7 @@ function L(e) {
     settings: t
   } = e;
   if (null == v) return !1;
-  v = m({}, v), null != t.enableEmoticons && v.enable_emoticons !== t.enableEmoticons && (v.enable_emoticons = t.enableEmoticons, A = !0), null != t.expireBehavior && v.expire_behavior !== t.expireBehavior && (v.expire_behavior = t.expireBehavior, A = !0), null != t.expireGracePeriod && v.expire_grace_period !== t.expireGracePeriod && (v.expire_grace_period = t.expireGracePeriod, A = !0), A && D()
+  v = m({}, v), null != t.enableEmoticons && v.enable_emoticons !== t.enableEmoticons && (v.enable_emoticons = t.enableEmoticons, N = !0), null != t.expireBehavior && v.expire_behavior !== t.expireBehavior && (v.expire_behavior = t.expireBehavior, N = !0), null != t.expireGracePeriod && v.expire_grace_period !== t.expireGracePeriod && (v.expire_grace_period = t.expireGracePeriod, N = !0), N && D()
 }
 
 function x(e) {
@@ -102,7 +102,7 @@ function x(e) {
     settings: t
   } = e;
   if (null == y) return !1;
-  y = m({}, y), null != t.name && y.name !== t.name && (y.name = t.name, A = !0), void 0 !== t.avatar && y.avatar !== t.avatar && (y.avatar = t.avatar, A = !0), null != t.channelId && y.channel_id !== t.channelId && (y.channel_id = t.channelId, A = !0), A && D()
+  y = m({}, y), null != t.name && y.name !== t.name && (y.name = t.name, N = !0), void 0 !== t.avatar && y.avatar !== t.avatar && (y.avatar = t.avatar, N = !0), null != t.channelId && y.channel_id !== t.channelId && (y.channel_id = t.channelId, N = !0), N && D()
 }
 
 function M() {
@@ -140,7 +140,7 @@ function j(e) {
       });
     if (null != r) {
       let n = m({}, t, r);
-      (null == v ? void 0 : v.id) !== n.id || (!1 === n.enabled ? v = null : A || (v = n)), g[e] = n
+      (null == v ? void 0 : v.id) !== n.id || (!1 === n.enabled ? v = null : N || (v = n)), g[e] = n
     } else(null == v ? void 0 : v.id) === t.id && (v = null), g.splice(e, 1)
   }
   g = [...g], D()
@@ -164,7 +164,7 @@ function U(e) {
       });
       if (null != r) {
         let n = m({}, t, r);
-        E[e] = n, A || (null == y ? void 0 : y.id) !== n.id || (y = n)
+        E[e] = n, N || (null == y ? void 0 : y.id) !== n.id || (y = n)
       } else(null == y ? void 0 : y.id) === t.id && (y = null), E.splice(e, 1)
     }
     for (let e of i) null == E.find(t => {
@@ -181,7 +181,7 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, v = null, y = null, T = {}, A = !0
+  b = t, v = null, y = null, T = {}, N = !0
 }
 
 function B(e) {
@@ -189,7 +189,7 @@ function B(e) {
     commandId: t
   } = e;
   if (null == b || b !== t) return !1;
-  b = null, T = {}, A = !1
+  b = null, T = {}, N = !1
 }
 
 function F(e) {
@@ -197,11 +197,11 @@ function F(e) {
     integrationId: t
   } = e, n = K(t);
   if (null == n) return !1;
-  v = n, b = null, y = null, T = {}, A = !1
+  v = n, b = null, y = null, T = {}, N = !1
 }
 
 function V() {
-  v = null, T = {}, A = !1
+  v = null, T = {}, N = !1
 }
 
 function Z(e) {
@@ -209,11 +209,11 @@ function Z(e) {
     webhookId: t
   } = e, n = z(t);
   if (null == n) return !1;
-  y = n, b = null, v = null, T = {}, A = !1
+  y = n, b = null, v = null, T = {}, N = !1
 }
 
 function H() {
-  y = null, T = {}, A = !1
+  y = null, T = {}, N = !1
 }
 
 function W() {
@@ -246,7 +246,7 @@ class q extends(o = l.ZP.Store) {
     this.waitFor(_.Z, f.Z, d.Z)
   }
   hasChanges() {
-    return A
+    return N
   }
   get guild() {
     return r
@@ -276,7 +276,7 @@ class q extends(o = l.ZP.Store) {
     return null != i ? i : p.b4C.OVERVIEW
   }
   getSectionId() {
-    return N
+    return A
   }
   getIntegration(e) {
     return K(e)

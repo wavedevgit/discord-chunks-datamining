@@ -1,77 +1,77 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 75862 **/
 n.d(t, {
-  L: () => v,
-  Z: () => g
+  L: () => g,
+  Z: () => h
 }), n(47120);
-var r, i = n(200651),
-  l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r, l = n(200651),
+  i = n(192379),
+  a = n(120356),
+  o = n.n(a),
   s = n(46973),
-  c = n(846519),
-  u = n(481060),
+  u = n(846519),
+  c = n(481060),
   d = n(763520),
   f = n(878001),
   m = n(70956),
   p = n(153066),
-  h = n(93019),
-  v = ((r = {}).CONTAIN = "contain", r.COVER = "cover", r);
-let b = 20 * m.Z.Millis.SECOND,
-  g = l.memo(function(e) {
+  E = n(93019),
+  g = ((r = {}).CONTAIN = "contain", r.COVER = "cover", r);
+let v = 20 * m.Z.Millis.SECOND,
+  h = i.memo(function(e) {
     let {
       streamId: t,
       onResize: n,
       wrapperClassName: r,
-      videoComponent: o,
+      videoComponent: a,
       className: m,
-      fit: v = "contain",
-      mirror: g = !1,
-      paused: E = !1,
-      streamPreviewURL: y,
-      videoSpinnerContext: O,
-      userId: S,
-      streamKey: x
-    } = e, [j, w] = l.useState(!0), [Z] = l.useState(() => new d.o("VideoStream")), C = l.useRef(new c.V7), P = O === d.m.SELF_STREAM || O === d.m.REMOTE_STREAM ? s.Yn.STREAM : s.Yn.DEFAULT;
-    l.useEffect(() => {
-      if (E || null == t) return;
-      let e = C.current;
-      return e.start(b, () => {
-        (0, f.K)(t, S, P, x)
+      fit: g = "contain",
+      mirror: h = !1,
+      paused: S = !1,
+      streamPreviewURL: b,
+      videoSpinnerContext: y,
+      userId: O,
+      streamKey: Z
+    } = e, [I, j] = i.useState(!0), [x] = i.useState(() => new d.o("VideoStream")), _ = i.useRef(new u.V7), N = y === d.m.SELF_STREAM || y === d.m.REMOTE_STREAM ? s.Yn.STREAM : s.Yn.DEFAULT;
+    i.useEffect(() => {
+      if (S || null == t) return;
+      let e = _.current;
+      return e.start(v, () => {
+        (0, f.K)(t, O, N, Z)
       }), () => {
         e.stop()
       }
-    }, [E, t, P, x, S]), l.useEffect(() => {
-      E || (j ? Z.onSpinnerStarted() : null != t && Z.trackSpinnerDuration(O, S, t))
-    }, [j, E, t, Z, O, S]);
-    let N = l.useCallback(() => {
-      w(!1), C.current.stop(), (0, f.w)(P, S)
-    }, [S, P]);
-    return (0, i.jsxs)("div", {
-      className: a()(h.wrapper, r),
-      children: [null != t && (0, i.jsx)(o, {
-        className: a()(h.video, (0, p.l)(h, "video", v), {
-          [h.mirror]: g
+    }, [S, t, N, Z, O]), i.useEffect(() => {
+      S || (I ? x.onSpinnerStarted() : null != t && x.trackSpinnerDuration(y, O, t))
+    }, [I, S, t, x, y, O]);
+    let w = i.useCallback(() => {
+      j(!1), _.current.stop(), (0, f.w)(N, O)
+    }, [O, N]);
+    return (0, l.jsxs)("div", {
+      className: o()(E.wrapper, r),
+      children: [null != t && (0, l.jsx)(a, {
+        className: o()(E.video, (0, p.l)(E, "video", g), {
+          [E.mirror]: h
         }, m),
         streamId: t,
         onResize: n,
-        onReady: N,
-        paused: E
-      }), E ? null : (0, i.jsx)("div", {
-        className: a()(h.previewWrapper, {
-          [h.loading]: j
+        onReady: w,
+        paused: S
+      }), S ? null : (0, l.jsx)("div", {
+        className: o()(E.previewWrapper, {
+          [E.loading]: I
         }),
-        children: j && (0, i.jsxs)(l.Fragment, {
-          children: [null != y ? (0, i.jsx)("img", {
-            src: y,
+        children: I && (0, l.jsxs)(i.Fragment, {
+          children: [null != b ? (0, l.jsx)("img", {
+            src: b,
             alt: "",
-            className: h.previewImage
-          }) : (0, i.jsx)("div", {
-            className: h.emptyPreviewWrapper,
-            children: (0, i.jsx)("div", {
-              className: h.emptyPreview
+            className: E.previewImage
+          }) : (0, l.jsx)("div", {
+            className: E.emptyPreviewWrapper,
+            children: (0, l.jsx)("div", {
+              className: E.emptyPreview
             })
-          }), (0, i.jsx)(u.$jN, {
-            className: h.spinner
+          }), (0, l.jsx)(c.$jN, {
+            className: E.spinner
           })]
         })
       })]

@@ -7,37 +7,37 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(536442),
-  l = n(406826);
+  o = n(406826);
 
-function o(e) {
+function l(e) {
   let {
     hotspotLocation: t
-  } = e, [n, o] = (0, i.Wu)([a.qc], () => [a.qc.hasHotspot(t, !0), a.qc.getHotspotOverride(t)]);
+  } = e, [n, l] = (0, i.Wu)([a.qc], () => [a.qc.hasHotspot(t, !0), a.qc.getHotspotOverride(t)]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.xJW, {
       title: t,
-      className: l.hotspotSwitch,
+      className: o.hotspotSwitch,
       children: [n ? (0, r.jsx)(s.DY3, {
-        className: l.iconContainer,
+        className: o.iconContainer,
         element: "span",
         text: "Active",
         children: (0, r.jsx)(s.dz2, {
           size: "md",
           color: "currentColor",
-          className: l.checkmark
+          className: o.checkmark
         })
       }) : (0, r.jsx)(s.DY3, {
-        className: l.iconContainer,
+        className: o.iconContainer,
         element: "span",
         text: "Inactive",
         children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",
-          className: l.xmark
+          className: o.xmark
         })
       }), (0, r.jsx)(s.q4e, {
-        className: l.overrideSelect,
-        value: o,
+        className: o.overrideSelect,
+        value: l,
         options: [{
           value: void 0,
           label: "No Override"
@@ -63,11 +63,11 @@ function c(e) {
     tag: s.RB0.H1,
     className: t,
     children: [(0, r.jsx)(s.Text, {
-      className: l.helpText,
+      className: o.helpText,
       tag: "p",
       variant: "text-sm/normal",
       children: 'All the "hotspots" in app, and their current status. Use the select menu to override them on or off.'
-    }), Object.keys(a.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, r.jsx)(o, {
+    }), Object.keys(a.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, r.jsx)(l, {
       hotspotLocation: e
     }, e))]
   })

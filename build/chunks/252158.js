@@ -26,8 +26,8 @@ var r = n(570140),
   I = n(303284),
   S = n(272395),
   T = n(674503),
-  A = n(981631),
-  N = n(65154);
+  N = n(981631),
+  A = n(65154);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -202,7 +202,7 @@ let M = {
       let {
         activeStreams: t
       } = e;
-      return t.filter(e => e.state === A.jm8.FAILED).map(e => R({
+      return t.filter(e => e.state === N.jm8.FAILED).map(e => R({
         type: y.u.STREAM_FAILED_TO_START
       }, (0, I.rT)((0, s.V9)(e))))
     },
@@ -213,7 +213,7 @@ let M = {
       let {
         activeStreams: t
       } = e;
-      return t.filter(e => e.state === A.jm8.RECONNECTING).map(e => R({
+      return t.filter(e => e.state === N.jm8.RECONNECTING).map(e => R({
         type: y.u.STREAM_RECONNECTING
       }, (0, I.rT)((0, s.V9)(e))))
     },
@@ -222,7 +222,7 @@ let M = {
   [y.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH]: {
     getActiveErrors: () => {
       var e, t, n;
-      let r = null !== (n = null === (t = c.Z.getFirstConnectionStatsByContext(N.Yn.DEFAULT)) || void 0 === t ? void 0 : null === (e = t.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === e ? void 0 : e.sampleRateMismatchPercent) && void 0 !== n ? n : 0;
+      let r = null !== (n = null === (t = c.Z.getFirstConnectionStatsByContext(A.Yn.DEFAULT)) || void 0 === t ? void 0 : null === (e = t.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === e ? void 0 : e.sampleRateMismatchPercent) && void 0 !== n ? n : 0;
       if (Math.abs(r) > D) return [R({
         type: y.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
         audioCaptureSampleRateMismatchPercent: r
@@ -272,7 +272,7 @@ function U(e) {
       i = n.stream.ownerId,
       o = i === d.default.getId();
     if (!o && null == u.Z.getActiveStreamForUser(i, r)) continue;
-    let a = o && null != _.Z.getHookError(A.K3D.SOUND),
+    let a = o && null != _.Z.getHookError(N.K3D.SOUND),
       s = (0, l.Z)(g.Z.getQuality(), g.Z.getStatsHistory(r, i, o), a, e),
       c = n.id,
       f = g.Z.getMediaSessionId(c);

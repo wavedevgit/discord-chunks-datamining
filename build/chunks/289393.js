@@ -52,12 +52,12 @@ function T(e) {
   return m.values(f(e))
 }
 
-function A(e) {
+function N(e) {
   var t;
-  for (let n of (m.set(e.id, e), S.set(e.guild_id, e.application_id), null !== (t = e.subscription_listings) && void 0 !== t ? t : [])) N(n)
+  for (let n of (m.set(e.id, e), S.set(e.guild_id, e.application_id), null !== (t = e.subscription_listings) && void 0 !== t ? t : [])) A(n)
 }
 
-function N(e) {
+function A(e) {
   g.set(e.id, e)
 }
 
@@ -87,7 +87,7 @@ function w(e) {
     settings: r,
     subscriptionTrials: i
   } = e;
-  for (let e of (E[t] = 2, n)) A(e);
+  for (let e of (E[t] = 2, n)) N(e);
   for (let e of (v[t] = r, i)) y[e.id] = e
 }
 
@@ -102,7 +102,7 @@ function L(e) {
   let {
     listing: t
   } = e;
-  A(t)
+  N(t)
 }
 
 function x(e) {
@@ -123,7 +123,7 @@ function k(e) {
   let {
     groupListing: t
   } = e;
-  A(t)
+  N(t)
 }
 
 function j(e) {
@@ -131,14 +131,14 @@ function j(e) {
     listing: t,
     groupListing: n
   } = e;
-  N(t), A(n)
+  A(t), N(n)
 }
 
 function U(e) {
   let {
     listing: t
   } = e;
-  N(t)
+  A(t)
 }
 
 function G(e) {

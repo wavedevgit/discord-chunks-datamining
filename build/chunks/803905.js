@@ -3,7 +3,7 @@
 n.d(t, {
   $0: () => P,
   AN: () => j,
-  Ct: () => N,
+  Ct: () => A,
   DU: () => V,
   EQ: () => F,
   Ej: () => S,
@@ -11,7 +11,7 @@ n.d(t, {
   O1: () => O,
   O8: () => D,
   Pl: () => I,
-  Ry: () => A,
+  Ry: () => N,
   Uw: () => x,
   ZE: () => k,
   _G: () => y,
@@ -77,8 +77,8 @@ let p = new _(r.q.ANIMATED_EMOJIS),
   I = new _("profileBadges"),
   S = new _(r.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
   T = new _("collectibles"),
-  A = new _(r.q.INCREASED_RECENT_AVATARS_LIMIT),
-  N = new _("appIcons"),
+  N = new _(r.q.INCREASED_RECENT_AVATARS_LIMIT),
+  A = new _("appIcons"),
   C = new _(r.q.CLIENT_THEMES),
   R = new _("boostDiscount"),
   P = new _("freeBoosts"),
@@ -96,9 +96,9 @@ let U = new _(r.q.INCREASED_GUILD_LIMIT),
   F = new _("uploadLargeFiles"),
   V = new _(r.q.CHAT_WALLPAPERS),
   Z = Object.freeze({
-    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, m, I, j, B, F, N]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, v, y, I, R, w, x, B, F, N]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, v, y, O, I, S, C, R, P, w, D, x, M, k, j, U, G, B, F, N, T, L, b, A, V])
+    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, m, I, j, B, F, A]),
+    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, v, y, I, R, w, x, B, F, A]),
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, v, y, O, I, S, C, R, P, w, D, x, M, k, j, U, G, B, F, A, T, L, b, N, V])
   }),
   H = [R, P];
 

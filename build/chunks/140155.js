@@ -104,11 +104,11 @@ function T() {
   y.loading = !0
 }
 
-function A() {
+function N() {
   y.loading = !1, y.initialized = !0, y.errored = !0
 }
 
-function N(e) {
+function A(e) {
   return v(E({}, e), {
     kind: "notification-center-item",
     message: null != e.message ? (0, c.e5)(e.message) : void 0,
@@ -160,11 +160,11 @@ function R(e) {
     hasMore: n,
     cursor: r
   } = e;
-  y.loading && (y.loading = !1, y.initialized = !0, y.errored = !1, y.isDataStale = !1, null != r && y.notifCenterIds.has(r) || (y.paginationHasMore = t.length > 0 && n, y.paginationCursor = t.length > 0 ? r : void 0), y.notifCenterItems = [...y.notifCenterItems, ...t.map(N).filter(e => !y.notifCenterIds.has(e.id))], y.notifCenterItems.sort((e, t) => _.default.compare(t.id, e.id)), t.forEach(e => y.notifCenterIds.add(e.id)))
+  y.loading && (y.loading = !1, y.initialized = !0, y.errored = !1, y.isDataStale = !1, null != r && y.notifCenterIds.has(r) || (y.paginationHasMore = t.length > 0 && n, y.paginationCursor = t.length > 0 ? r : void 0), y.notifCenterItems = [...y.notifCenterItems, ...t.map(A).filter(e => !y.notifCenterIds.has(e.id))], y.notifCenterItems.sort((e, t) => _.default.compare(t.id, e.id)), t.forEach(e => y.notifCenterIds.add(e.id)))
 }
 
 function P(e) {
-  let t = "NOTIFICATION_CENTER_ITEM_CREATE" === e.type ? N(e.item) : e.item;
+  let t = "NOTIFICATION_CENTER_ITEM_CREATE" === e.type ? A(e.item) : e.item;
   if (!y.initialized || !O(t) || y.notifCenterIds.has(t.id)) return !1;
   y.notifCenterIds.add(t.id), y.notifCenterItems = [t, ...y.notifCenterItems], y.notifCenterItems.sort((e, t) => _.default.compare(t.id, e.id))
 }
@@ -388,7 +388,7 @@ let z = new K(o.Z, {
   NOTIFICATION_CENTER_ITEM_DELETE: w,
   NOTIFICATION_CENTER_ITEM_DELETE_FAILURE: P,
   LOAD_NOTIFICATION_CENTER_ITEMS: T,
-  LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: A,
+  LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: N,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: R,
   RESET_NOTIFICATION_CENTER: () => S(),
   NOTIFICATION_CENTER_SET_ACTIVE: M,

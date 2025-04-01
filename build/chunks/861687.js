@@ -25,8 +25,8 @@ var r, i = n(654861),
   I = n(148959),
   S = n(815644),
   T = n(926951),
-  A = n(166884),
-  N = n(868616),
+  N = n(166884),
+  A = n(868616),
   C = n(450109),
   R = n(307320),
   P = n(615830),
@@ -310,7 +310,7 @@ class ev extends f.Z {
       let {
         shouldOverrideKrisp: e,
         overrideKrispSetting: n
-      } = N.Z.getCurrentConfig({
+      } = A.Z.getCurrentConfig({
         guildId: this.guildId,
         location: "handleReady"
       }, {
@@ -319,7 +319,7 @@ class ev extends f.Z {
       e && (n ? t.push("force_krisp_enabled") : t.push("force_krisp_disabled"))
     }
     if (L.Z.supports(eo.AN.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
-      let e = A.Z.workerExperimentString();
+      let e = N.Z.workerExperimentString();
       null != e && t.push(e)
     }(0, S.f)("RtcConnection").enabled && t.push("audio_transport_cc"), this._selectedExperiments = t
   }
@@ -346,15 +346,15 @@ class ev extends f.Z {
     }), this.setState(ei.hes.AUTHENTICATING)
   }
   async _handleDisconnect(e, t, n, r) {
-    var i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, v, y, I, S, T, A;
+    var i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, v, y, I, S, T, N;
     this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (U.default.track(ei.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ec(es({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
       code: n,
       reason: r
     })), this._encountered_socket_failure = !0), x.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null === (l = this._connection) || void 0 === l || l.wasRemoteDisconnected());
-    let N = "Force Close" !== r;
-    if (N) {
+    let A = "Force Close" !== r;
+    if (A) {
       let e = this._backoff.fail(this.reconnect);
       this.logger.warn("Disconnect was not clean! reason=".concat(r, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
     }
@@ -397,7 +397,7 @@ class ev extends f.Z {
         hostname: this.hostname,
         port: this.port,
         protocol: this.protocol,
-        reconnect: N,
+        reconnect: A,
         reason: r,
         duration: this.getDuration()
       }), null === (f = this._voiceQuality) || void 0 === f ? void 0 : f.getMosStats(), null === (_ = this._voiceQuality) || void 0 === _ ? void 0 : _.getPacketStats(), null === (p = this._voiceQuality) || void 0 === p ? void 0 : p.getBytesStats(), null === (h = this._voiceQuality) || void 0 === h ? void 0 : h.getBufferStats(), null === (m = this._voiceQuality) || void 0 === m ? void 0 : m.getNetworkStats(), null === (g = this._voiceQuality) || void 0 === g ? void 0 : g.getSystemResourceStats(), null === (E = this._voiceQuality) || void 0 === E ? void 0 : E.getFrameOpStats(), null === (b = this._voiceQuality) || void 0 === b ? void 0 : b.getDurationStats(), null === (v = this._voiceQuality) || void 0 === v ? void 0 : v.getTransportStats(), null === (y = this._voiceQuality) || void 0 === y ? void 0 : y.getE2EEStats(), null === (I = this._voiceQuality) || void 0 === I ? void 0 : I.getAudioDeviceStats(), null === (S = this._voiceDuration) || void 0 === S ? void 0 : S.getDurationStats(), this.getAudioDeviceStates(), null === (T = this._systemResponsiveness) || void 0 === T ? void 0 : T.getPttQueueLatencyStats()), {
@@ -423,7 +423,7 @@ class ev extends f.Z {
         encryption_mode: this._encryptionMode,
         channel_count: this.channelIds.size,
         device_performance_class: (0, O.Z)(),
-        num_fast_udp_reconnects: null != this._connection ? null === (A = this._connection) || void 0 === A ? void 0 : A.getNumFastUdpReconnects() : null,
+        num_fast_udp_reconnects: null != this._connection ? null === (N = this._connection) || void 0 === N ? void 0 : N.getNumFastUdpReconnects() : null,
         parent_media_session_id: this.parentMediaSessionId,
         audio_subsystem: L.Z.getMediaEngine().getAudioSubsystem(),
         audio_layer: L.Z.getMediaEngine().getAudioLayer(),
@@ -449,7 +449,7 @@ class ev extends f.Z {
       this._connection = null, e.destroy()
     }
     this.setState(ei.hes.DISCONNECTED, {
-      willReconnect: N
+      willReconnect: A
     })
   }
   _handleResuming(e) {

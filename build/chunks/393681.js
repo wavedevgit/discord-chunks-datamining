@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(512722),
-  o = n.n(l),
+  o = n(512722),
+  l = n.n(o),
   c = n(442837),
   d = n(780384),
   u = n(481060),
@@ -16,20 +16,20 @@ var r = n(200651),
   p = n(497321),
   h = n(279837),
   f = n(952306),
-  N = n(600164),
-  b = n(690221),
+  b = n(600164),
+  N = n(690221),
   x = n(346585),
   _ = n(347649),
   E = n(332473),
   j = n(303172),
-  C = n(518560),
-  O = n(921801),
-  S = n(484459),
-  v = n(430824),
+  O = n(518560),
+  C = n(921801),
+  v = n(484459),
+  S = n(430824),
   T = n(325067),
   I = n(246946),
-  A = n(663389),
-  y = n(594174),
+  y = n(663389),
+  A = n(594174),
   P = n(626135),
   R = n(709054),
   D = n(706454),
@@ -84,7 +84,7 @@ class X extends i.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    (0, S.Z)(e.id, e.getAvatarURL(void 0, 80))
+    (0, v.Z)(e.id, e.getAvatarURL(void 0, 80))
   }
   componentWillUnmount() {
     m.Z.clearBackupCodes(), (0, g.Zy)()
@@ -148,7 +148,7 @@ class X extends i.PureComponent {
       messageType: u.QYI.WARNING,
       children: [this.props.forceMigrationExperiment ? H.NW.format(H.t.zT1hgo, {
         date: (0, x.IE)(this.props.locale)
-      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(b.Z, {
+      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(N.Z, {
         className: z.noticeTextButton,
         onClick: () => (0, j.Z)(F.Kq.USER_SETTINGS),
         children: H.NW.string(H.t.LhlgY2)
@@ -185,7 +185,7 @@ class X extends i.PureComponent {
             src: n(511391)
           }), H.NW.string(H.t.FsmBy8)]
         })
-      }) : null, (0, r.jsx)(O.F, {
+      }) : null, (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_CHANGE_PASSWORD,
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(u.zxk, {
@@ -197,17 +197,17 @@ class X extends i.PureComponent {
             children: H.NW.string(H.t["FRep5+"])
           })
         })
-      }), (0, r.jsx)(O.F, {
+      }), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        children: (0, r.jsxs)(N.Z, {
-          align: N.Z.Align.STRETCH,
-          children: [(0, r.jsx)(N.Z.Child, {
+        children: (0, r.jsxs)(b.Z, {
+          align: b.Z.Align.STRETCH,
+          children: [(0, r.jsx)(b.Z.Child, {
             wrap: !0,
             children: (0, r.jsx)(L.Z, {
               backupCodes: e
             })
-          }), t.mfaEnabled ? null : (0, r.jsx)(N.Z, {
-            align: N.Z.Align.CENTER,
+          }), t.mfaEnabled ? null : (0, r.jsx)(b.Z, {
+            align: b.Z.Align.CENTER,
             basis: "323px",
             grow: 0,
             children: (0, r.jsx)("img", {
@@ -294,13 +294,13 @@ class X extends i.PureComponent {
   }
   renderSecuritySettingsRedesign() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [this.renderConfirmModals(), (0, r.jsx)(O.F, {
+      children: [this.renderConfirmModals(), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_PROFILE,
         children: this.renderAccountSettings(!1)
-      }), (0, r.jsx)(O.F, {
+      }), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
-      }), (0, r.jsx)(O.F, {
+      }), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_REMOVAL,
         children: this.renderAccountRemovalSettings()
       })]
@@ -328,7 +328,7 @@ class X extends i.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.NW.string(H.t["Vov/9v"]),
-          component: C.Z,
+          component: O.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })
@@ -352,7 +352,7 @@ class X extends i.PureComponent {
       {
         currentUser: t
       } = this.props,
-      n = v.Z.getGuilds();
+      n = S.Z.getGuilds();
     if (R.default.keys(n).filter(e => n[e].ownerId === t.id).length > 0) {
       this.setState({
         shouldRenderOwnedGuildsModal: !0
@@ -378,17 +378,17 @@ class X extends i.PureComponent {
   }
 }
 let J = () => {
-  let e = (0, c.e7)([y.default], () => {
-      let e = y.default.getCurrentUser();
-      return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
+  let e = (0, c.e7)([A.default], () => {
+      let e = A.default.getCurrentUser();
+      return l()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
     }),
     t = (0, c.e7)([T.Z], () => T.Z.getBackupCodes()),
     n = (0, c.e7)([I.Z], () => I.Z.hidePersonalInformation),
     i = (0, c.e7)([Z.Z], () => Z.Z.theme),
     s = (0, E.b)(),
     a = (0, _.CC)(),
-    l = (0, c.e7)([D.default], () => D.default.locale),
-    d = (0, c.e7)([A.Z], () => A.Z.getSubsection());
+    o = (0, c.e7)([D.default], () => D.default.locale),
+    d = (0, c.e7)([y.Z], () => y.Z.getSubsection());
   return (0, r.jsx)(X, {
     theme: i,
     currentUser: e,
@@ -396,7 +396,7 @@ let J = () => {
     hide: n,
     shouldRenderPomeloWarning: s,
     forceMigrationExperiment: a,
-    locale: l,
+    locale: o,
     subsection: d
   })
 }

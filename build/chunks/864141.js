@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(194811),
   S = n(373826),
   T = n(340266),
-  A = n(788858),
-  N = n(849755),
+  N = n(788858),
+  A = n(849755),
   C = n(384298),
   R = n(670451),
   P = n(228168),
@@ -80,7 +80,7 @@ function L(e) {
           variant: "heading-sm/semibold",
           color: "text-normal",
           className: D.voiceChannelHeading,
-          children: [(0, r.jsx)(A.Z, {
+          children: [(0, r.jsx)(N.Z, {
             channel: n,
             size: "xxs",
             color: l.TVs.colors.TEXT_NORMAL,
@@ -97,7 +97,7 @@ function L(e) {
           }),
           onClick: t
         })]
-      }), V && n.isGuildVoice() && (0, r.jsx)(N.Z, {
+      }), V && n.isGuildVoice() && (0, r.jsx)(A.Z, {
         voiceChannel: n,
         onAction: j,
         onClose: L

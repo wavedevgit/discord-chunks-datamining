@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(692547),
   a = n(531057),
-  l = n(865824),
-  o = n(481060),
+  o = n(865824),
+  l = n(481060),
   c = n(388032),
   d = n(772343);
 
@@ -31,14 +31,14 @@ function u(e) {
       }
       return i
     }(e, ["children", "lineClamp"]);
-  let [p, h] = i.useState(!1), [f, N] = i.useState(null), b = null != f && (0, r.jsx)("button", {
+  let [p, h] = i.useState(!1), [f, b] = i.useState(null), N = null != f && (0, r.jsx)("button", {
     className: d.button,
     onClick: () => h(e => !e),
-    children: (0, r.jsxs)(o.Text, {
+    children: (0, r.jsxs)(l.Text, {
       className: d.seeMore,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [p ? c.NW.string(c.t["JQX/PT"]) : c.NW.string(c.t.Fbrd8P), p ? (0, r.jsx)(l.u, {
+      children: [p ? c.NW.string(c.t["JQX/PT"]) : c.NW.string(c.t.Fbrd8P), p ? (0, r.jsx)(o.u, {
         color: s.Z.colors.TEXT_BRAND,
         size: "xs"
       }) : (0, r.jsx)(a.C, {
@@ -52,7 +52,7 @@ function u(e) {
       scrollHeight: e,
       clientHeight: t
     } = x;
-    e > t && N({
+    e > t && b({
       truncatedHeight: t,
       expandedHeight: e
     })
@@ -62,7 +62,7 @@ function u(e) {
   }, [E, u, m]);
   let j = "auto";
   return null != f && (j = p ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.Text, (t = function(e) {
+    children: [(0, r.jsx)(l.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -96,6 +96,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), b]
+    }), t)), N]
   })
 }

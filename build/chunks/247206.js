@@ -81,12 +81,12 @@ let I = {
     [v.TI.NON_FRIENDS.valueOf()]: i.Q4.BLUR,
     [v.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
   },
-  A = {
+  N = {
     [v.TI.DISABLED.valueOf()]: i.Q4.BLUR,
     [v.TI.NON_FRIENDS.valueOf()]: i.Q4.BLOCK,
     [v.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
   },
-  N = 1,
+  A = 1,
   C = e => {
     let {
       setting: t,
@@ -122,7 +122,7 @@ let I = {
     } = e;
     if (!t) return i.Q4.BLUR;
     let r = u.UP.getSetting();
-    return n ? T[r] : A[r]
+    return n ? T[r] : N[r]
   },
   w = e => {
     let {
@@ -244,7 +244,7 @@ function W(e, t) {
   let n = Math.min(Math.floor((Date.now() - e) / 1e3), 3);
   l.Z.increment({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
-    tags: ["timingBucket:".concat(n), "source:".concat(t), "metricVersion:".concat(N)]
+    tags: ["timingBucket:".concat(n), "source:".concat(t), "metricVersion:".concat(A)]
   })
 }
 
@@ -268,7 +268,7 @@ function Y(e) {
     attachment_ids_v2: u
   }), l.Z.increment({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
-    tags: ["metricVersion:".concat(N)]
+    tags: ["metricVersion:".concat(A)]
   }), l.Z.distribution({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION
   }, (null !== (i = null == u ? void 0 : u.length) && void 0 !== i ? i : 0) + (null !== (o = null == f ? void 0 : f.length) && void 0 !== o ? o : 0))

@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   s = n(518950),
   a = n(998502),
-  l = n(631885),
-  o = n(329242),
+  o = n(631885),
+  l = n(329242),
   c = n(941192);
 let d = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK;
 
@@ -17,7 +17,7 @@ function u(e) {
   let {
     otherUser: a,
     status: u
-  } = e, m = (0, l.j_)(a.id, u), {
+  } = e, m = (0, o.j_)(a.id, u), {
     avatarSrc: g,
     avatarDecorationSrc: p,
     eventHandlers: h
@@ -65,7 +65,7 @@ function u(e) {
       className: c.userPreview,
       children: [(0, r.jsx)("div", {
         className: c.userContainerWithTimestamp,
-        children: (0, r.jsx)(o.Z, {
+        children: (0, r.jsx)(l.Z, {
           user: a
         })
       }), (0, r.jsx)(i.Text, {

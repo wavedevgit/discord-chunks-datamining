@@ -28,13 +28,13 @@ function _(e) {
     primaryColor: null,
     secondaryColor: null
   };
-  let A = null == h ? void 0 : h.getPreviewThemeColors(m),
-    N = null !== (t = null == A ? void 0 : A[0]) && void 0 !== t ? t : (0, r._i)(I),
-    C = null !== (n = null == A ? void 0 : A[1]) && void 0 !== n ? n : (0, r._i)(S),
-    R = v ? b : null !== (_ = (0, d.V3)(N)) && void 0 !== _ ? _ : b;
+  let N = null == h ? void 0 : h.getPreviewThemeColors(m),
+    A = null !== (t = null == N ? void 0 : N[0]) && void 0 !== t ? t : (0, r._i)(I),
+    C = null !== (n = null == N ? void 0 : N[1]) && void 0 !== n ? n : (0, r._i)(S),
+    R = v ? b : null !== (_ = (0, d.V3)(A)) && void 0 !== _ ? _ : b;
   return T && (R === f.BRd.DARK && (0, o.wj)(b) ? R = b : R === f.BRd.DARK && (0, o.ap)(b) && (R = f.BRd.DARKER)), {
     theme: R,
-    primaryColor: N,
+    primaryColor: A,
     secondaryColor: C
   }
 }

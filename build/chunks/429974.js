@@ -70,8 +70,8 @@ async function O(e) {
       subsection: I,
       guildId: S,
       channelId: T,
-      friendToken: A,
-      analyticsLocation: N,
+      friendToken: N,
+      analyticsLocation: A,
       showGuildProfile: C = !0,
       appContext: R,
       customStatusPrompt: P
@@ -101,7 +101,7 @@ async function O(e) {
       user: D,
       currentUser: L,
       guildId: S,
-      friendToken: A,
+      friendToken: N,
       initialSection: O,
       initialSubsection: I,
       channelId: T,
@@ -128,7 +128,7 @@ async function O(e) {
     profile_user_status: Z,
     profile_has_nitro_customization: (null == x ? void 0 : x.banner) != null,
     profile_has_profile_effect: (null == x ? void 0 : x.profileEffectId) != null
-  }, null == N ? null : (0, f.expandLocation)(N)))
+  }, null == A ? null : (0, f.expandLocation)(A)))
 }
 
 function I() {

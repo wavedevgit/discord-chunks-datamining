@@ -49,14 +49,14 @@ function T() {
   return s > 0 ? l : null
 }
 
-function A(e) {
+function N(e) {
   let t = c.Z.getFirstConnectionStatsByContext(e);
   if (null == t) return null;
   let n = t.stats.rtp.outbound.find(e => "video" === e.type);
   return null == n ? null : (0, o.lG)(null == n ? void 0 : n.encoderImplementationName)
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == t) return null;
   let n = c.Z.getFirstConnectionStatsByContext(e);
   if (null == n) return null;
@@ -123,7 +123,7 @@ function w(e, t) {
     eo = null != K ? K.ownerId : Y,
     ea = null != K ? null == q ? void 0 : q.getVoiceParticipantType() : er ? "sender" : "receiver";
   h = null != L && null != K ? er ? null == q ? void 0 : null === (r = q.getOutboundStats()) || void 0 === r ? void 0 : r.find(e => e.quality === O.y7) : null == q ? void 0 : q.getInboundStats(K.ownerId) : er ? null !== (c = i().maxBy(null !== (o = null == q ? void 0 : q.getOutboundStats()) && void 0 !== o ? o : [], e => e.num_frames)) && void 0 !== c ? c : null : null != eo ? null == q ? void 0 : q.getInboundStats(eo) : null, (0, g.q)().then(t => {
-    var n, r, i, o, s, l, c, u, d, g, v, O, R, P, L, Y, Q, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, eb, ev, ey, eO, eI, eS, eT, eA, eN;
+    var n, r, i, o, s, l, c, u, d, g, v, O, R, P, L, Y, Q, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, eb, ev, ey, eO, eI, eS, eT, eN, eA;
     let eC = {
       error_name: e.valueOf(),
       error_code: m.errorCode,
@@ -148,8 +148,8 @@ function w(e, t) {
       num_packets: null !== (es = null == h ? void 0 : h.num_packets) && void 0 !== es ? es : 0,
       num_bytes: null !== (el = null == h ? void 0 : h.num_bytes) && void 0 !== el ? el : 0,
       video_codec: null != G ? G : C(ei, er, eo),
-      video_encoder: null !== (ec = null != B ? B : A(ei)) && void 0 !== ec ? ec : null,
-      video_decoder: null !== (eu = null != F ? F : N(ei, eo)) && void 0 !== eu ? eu : null,
+      video_encoder: null !== (ec = null != B ? B : N(ei)) && void 0 !== ec ? ec : null,
+      video_decoder: null !== (eu = null != F ? F : A(ei, eo)) && void 0 !== eu ? eu : null,
       audio_capture_sample_rate_mismatch_percent: null != V ? V : null,
       incoming_video_stopped_for_occlusion: !a.w.isIncomingVideoEnabled(),
       sender_user_id: null !== (ed = null == K ? void 0 : K.ownerId) && void 0 !== ed ? ed : null,
@@ -174,8 +174,8 @@ function w(e, t) {
       gpu_device_sub_sys_id: null !== (eI = null == t ? void 0 : t.gpu_device_sub_sys_id) && void 0 !== eI ? eI : null,
       gpu_device_revision: null !== (eS = null == t ? void 0 : t.gpu_device_revision) && void 0 !== eS ? eS : null,
       gpu_driver_version: null !== (eT = null == t ? void 0 : t.gpu_driver_version) && void 0 !== eT ? eT : null,
-      cpu_usage: null !== (eA = b.Z.getCurrentCPUUsagePercent()) && void 0 !== eA ? eA : null,
-      memory_usage: null !== (eN = b.Z.getCurrentMemoryUsageKB()) && void 0 !== eN ? eN : null,
+      cpu_usage: null !== (eN = b.Z.getCurrentCPUUsagePercent()) && void 0 !== eN ? eN : null,
+      memory_usage: null !== (eA = b.Z.getCurrentMemoryUsageKB()) && void 0 !== eA ? eA : null,
       outbound_bitrate_estimate: I(ei),
       inbound_bitrate_estimate: S(ei),
       hardware_enabled: f.Z.getHardwareEncoding(),

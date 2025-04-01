@@ -1,20 +1,20 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  l = n(929055);
+  o = n(929055);
 
-function o(e) {
+function l(e) {
   let {
     icon: t,
     tooltip: n,
     onClick: i,
-    className: o
+    className: l
   } = e, c = e => {
     e.preventDefault(), e.stopPropagation(), i(e)
   };
@@ -42,9 +42,9 @@ function o(e) {
       }({}, e), d = d = {
         "aria-label": n,
         onClick: c,
-        className: s()(l.actionButton, o),
+        className: s()(o.actionButton, l),
         children: (0, r.jsx)(t, {
-          className: l.icon,
+          className: o.icon,
           color: "currentColor"
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {

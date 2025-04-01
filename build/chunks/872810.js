@@ -40,7 +40,7 @@ n(287734);
 var S = n(981631),
   T = n(70722);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,14 +49,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ function N(e) {
 let C = 2;
 
 function R(e, t, n) {
-  s.Z.dispatch(N({
+  s.Z.dispatch(A({
     type: "STREAM_START",
     streamType: null != e ? T.lo.GUILD : T.lo.CALL,
     guildId: e,
@@ -194,7 +194,7 @@ async function U(e) {
 }
 
 function G(e) {
-  (0, y.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
+  (0, y.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(A({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }

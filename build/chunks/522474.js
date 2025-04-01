@@ -61,8 +61,8 @@ let O = new d.Z("PopoutWindowStore"),
   I = {},
   S = {},
   T = {},
-  A = {},
   N = {},
+  A = {},
   C = new Set,
   R = "app-mount",
   P = () => q.emitChange(),
@@ -96,8 +96,8 @@ function x(e) {
 function M(e) {
   let t = T[e];
   o()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", P), t.removeEventListener("blur", P), t.removeEventListener("resize", w);
-  let n = A[e];
-  o()(null != n, "Window root was null while unmounting"), n.unmount(), delete T[e], delete S[e], delete N[e], delete A[e]
+  let n = N[e];
+  o()(null != n, "Window root was null while unmounting"), n.unmount(), delete T[e], delete S[e], delete A[e], delete N[e]
 }
 
 function k(e, t, r) {
@@ -119,7 +119,7 @@ function j(e, t) {
 
 function U(e) {
   let t = T[e],
-    n = N[e];
+    n = A[e];
   if (null == t) {
     O.warn("Failed to open window", e);
     return
@@ -127,7 +127,7 @@ function U(e) {
   let r = t.document;
   (0, h.uF)(r, P), t.addEventListener("focus", P), t.addEventListener("blur", P), t.addEventListener("resize", w), D ? L(e, t) : j(e, t);
   let i = (0, l.createRoot)(r.getElementById(R));
-  o()(null != i, "No render target for popout!"), A[e] = i, i.render(n(e))
+  o()(null != i, "No render target for popout!"), N[e] = i, i.render(n(e))
 }
 
 function G(e) {
@@ -163,7 +163,7 @@ function G(e) {
     }, u)
   }
   let h = window.open(g.Z5c.POPOUT_WINDOW, t, (0, m.Z)(u));
-  h.windowKey = t, i ? O.verbose("Opening out of process overlay window", t) : null == h || h.focus(), T[t] = h, N[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, d), S[t] = d, p.ZP.isAlwaysOnTop(t).then(e => S[t] = e)), C.add(t)
+  h.windowKey = t, i ? O.verbose("Opening out of process overlay window", t) : null == h || h.focus(), T[t] = h, A[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, d), S[t] = d, p.ZP.isAlwaysOnTop(t).then(e => S[t] = e)), C.add(t)
 }
 
 function B(e) {
@@ -262,7 +262,7 @@ class z extends(r = c.ZP.PersistedStore) {
     return I
   }
   isWindowFullyInitialized(e) {
-    return null != T[e] && null != A[e] && null != N[e]
+    return null != T[e] && null != N[e] && null != A[e]
   }
   isWindowFullScreen(e) {
     var t, n;

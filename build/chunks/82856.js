@@ -3,7 +3,7 @@
 n.d(t, {
   Pe: () => y,
   S6: () => l.S6,
-  lJ: () => A,
+  lJ: () => N,
   vp: () => I
 });
 var r = n(200651),
@@ -99,7 +99,7 @@ function T(e) {
   }, e, t)), S)
 }
 
-function A(e) {
+function N(e) {
   let {
     shouldOpen: t
   } = (0, o.cj)([u.Z], () => ({
@@ -112,7 +112,7 @@ function A(e) {
     shouldOpen: t
   }
 }
-let N = {
+let A = {
   getOffsetsRelativeToElement: () => ({
     top: 0,
     right: 0
@@ -154,7 +154,7 @@ function C(e) {
   return (0, r.jsx)(f.E, g(h({
     backgroundElementRef: t,
     onGetBoundingRect: _.dG4
-  }, N), {
+  }, A), {
     children: y ? null : (0, r.jsx)(d.A4, {
       onClick: async e => {
         void 0 !== n && n(e), await p()

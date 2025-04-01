@@ -24,8 +24,8 @@ var r = n(200651),
   h = n(880395),
   j = n(221241),
   S = n(314897),
-  N = n(592125),
-  P = n(979651),
+  P = n(592125),
+  N = n(979651),
   x = n(574254),
   I = n(374129),
   Z = n(639351),
@@ -86,8 +86,8 @@ function M(e) {
     embeddedApplication: h,
     otherClientSessionType: j,
     voicePlatform: S,
-    application: N,
-    guildId: P,
+    application: P,
+    guildId: N,
     channelId: x,
     user: w,
     disconnected: W
@@ -166,7 +166,7 @@ function M(e) {
       size: y.ZP.Sizes.SMALL
     })
   }, "stream"));
-  let Y = null != N && !(0, E.yE)(N.flags, T.udG.EMBEDDED);
+  let Y = null != P && !(0, E.yE)(P.flags, T.udG.EMBEDDED);
   return 0 !== M.length || null != L || Y ? (0, r.jsxs)("div", {
     className: o()(_.icons, t),
     children: [(0, r.jsxs)("div", {
@@ -175,9 +175,9 @@ function M(e) {
     }), Y && (0, r.jsx)("div", {
       className: _.iconGroup,
       children: (0, r.jsx)(U, {
-        application: N,
+        application: P,
         iconClassName: v,
-        guildId: P,
+        guildId: N,
         channelId: x,
         userId: w.id
       }, "".concat(w.id, "-game"))
@@ -219,8 +219,8 @@ let L = l.forwardRef(function(e, t) {
     speaking: R,
     collapsed: V,
     mute: Y,
-    serverMute: B,
-    guildId: F,
+    serverMute: F,
+    guildId: B,
     nick: G,
     isGuest: z,
     flipped: J,
@@ -232,11 +232,11 @@ let L = l.forwardRef(function(e, t) {
     channelId: $
   } = v, {
     parentAnalyticsLocation: ee
-  } = (0, m.ZP)(), et = (0, u.bp)(), en = null != $ ? N.Z.getChannel($) : null, {
+  } = (0, m.ZP)(), et = (0, u.bp)(), en = null != $ ? P.Z.getChannel($) : null, {
     simplifiedSettingsEnabled: er
   } = (0, j.Z)({
     location: "VoiceUser"
-  }), el = (0, a.e7)([S.default, P.Z], () => P.Z.isInChannel($, S.default.getId())), [ei, eo] = l.useState(!1);
+  }), el = (0, a.e7)([S.default, N.Z], () => N.Z.isInChannel($, S.default.getId())), [ei, eo] = l.useState(!1);
   return l.useEffect(() => {
     let e = !1,
       t = () => {
@@ -285,7 +285,7 @@ let L = l.forwardRef(function(e, t) {
         text: D.NW.string(D.t.BVK71t),
         children: e => (0, r.jsx)("div", W({
           className: o()(_.iconPriortySpeaker, {
-            [_.iconPriortySpeakerSpeaking]: !Y && !B && R
+            [_.iconPriortySpeakerSpeaking]: !Y && !F && R
           })
         }, e))
       }) : null, (0, r.jsx)("div", {
@@ -295,14 +295,14 @@ let L = l.forwardRef(function(e, t) {
           [_.avatarSpeaking]: R
         }),
         style: {
-          backgroundImage: "url(".concat(q.getAvatarURL(F, d === T.ipw.LARGE ? 38 : 24), ")")
+          backgroundImage: "url(".concat(q.getAvatarURL(B, d === T.ipw.LARGE ? 38 : 24), ")")
         }
       }), function() {
         var e, t;
         let n = (0, r.jsxs)("div", {
             className: o()(c, {
               [_.username]: !0,
-              [_.usernameSpeaking]: !Y && !B && R
+              [_.usernameSpeaking]: !Y && !F && R
             }),
             children: [null != G ? G : w.ZP.getName(q), z ? (0, r.jsxs)("span", {
               className: _.guestSuffix,
@@ -312,7 +312,7 @@ let L = l.forwardRef(function(e, t) {
           l = {
             primaryGuild: q.primaryGuild,
             userId: q.id,
-            contextGuildId: F,
+            contextGuildId: B,
             isOverlay: y,
             disableTooltip: !0,
             className: o()(_.clanTag, y && _.isOverlay),
@@ -344,7 +344,7 @@ let L = l.forwardRef(function(e, t) {
             [_.optionsActive]: ei
           }),
           onClick: function(e) {
-            null != F && null != en && ((0, g.v)(ee, g.d.MORE), eo(!0), (0, h.D)(e, q, en, {
+            null != B && null != en && ((0, g.v)(ee, g.d.MORE), eo(!0), (0, h.D)(e, q, en, {
               context: et
             }, (e, t) => {
               (0, b.o)({

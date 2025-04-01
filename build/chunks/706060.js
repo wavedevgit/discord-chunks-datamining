@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(772848),
   a = n(481060),
-  l = n(259580),
-  o = n(991346),
+  o = n(259580),
+  l = n(991346),
   c = n(367443);
 
 function d(e) {
@@ -25,13 +25,13 @@ function u(e) {
   let {
     setting: t,
     children: n,
-    depth: o
-  } = e, [m, g] = i.useState(1 === o), p = i.useCallback(() => {
+    depth: l
+  } = e, [m, g] = i.useState(1 === l), p = i.useCallback(() => {
     g(!m)
   }, [m, g]);
   if (0 === n.length) return (0, r.jsx)("div", {
     style: {
-      marginLeft: 8 * o
+      marginLeft: 8 * l
     },
     className: c.settingNode,
     children: (0, r.jsx)(d, {
@@ -44,12 +44,12 @@ function u(e) {
     children: n.sort((e, t) => e.setting.localeCompare(t.setting)).sort((e, t) => e.children.length - t.children.length).map(e => (0, r.jsx)(u, {
       setting: e.setting,
       children: e.children,
-      depth: o + 1
+      depth: l + 1
     }, (0, s.Z)()))
   }) : null;
   return (0, r.jsxs)("div", {
     style: {
-      marginLeft: 8 * o
+      marginLeft: 8 * l
     },
     className: c.settingNode,
     children: [(0, r.jsxs)(a.P3F, {
@@ -58,8 +58,8 @@ function u(e) {
       children: [(0, r.jsx)(d, {
         setting: t,
         hasChildren: n.length > 0
-      }), (0, r.jsx)(l.Z, {
-        direction: m ? l.Z.Directions.DOWN : l.Z.Directions.RIGHT,
+      }), (0, r.jsx)(o.Z, {
+        direction: m ? o.Z.Directions.DOWN : o.Z.Directions.RIGHT,
         className: c.headerCaret
       })]
     }), h]
@@ -67,7 +67,7 @@ function u(e) {
 }
 
 function m() {
-  let e = (0, o.Pt)(),
+  let e = (0, l.Pt)(),
     t = [],
     n = Object.keys(e).filter(t => {
       let n = e[t];

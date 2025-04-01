@@ -1,14 +1,14 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  V9: () => O,
-  ek: () => C
+  V9: () => C,
+  ek: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  l = n(512969),
-  o = n(351773),
+  o = n(512969),
+  l = n(351773),
   c = n(100527),
   d = n(906732),
   u = n(335131),
@@ -17,38 +17,38 @@ var r = n(200651),
   p = n(790542),
   h = n(317257),
   f = n(120786),
-  N = n(970815),
-  b = n(82856),
+  b = n(970815),
+  N = n(82856),
   x = n(981631),
   _ = n(215023),
   E = n(388032),
   j = n(788369);
-let C = {
+let O = {
     START: j.alignLeft,
     END: j.alignRight
   },
-  O = e => {
+  C = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: s,
-      isCoachmarkEnabled: O = !0,
-      linkText: S = E.NW.string(E.t.XRdyj4),
-      cardAlignment: v = C.START,
+      isCoachmarkEnabled: C = !0,
+      linkText: v = E.NW.string(E.t.XRdyj4),
+      cardAlignment: S = O.START,
       className: T
     } = e, {
       balance: I
-    } = (0, p.A)(), [A, y] = i.useState(h.b.DEFAULT), [P, R] = i.useState(!1), [D, Z] = i.useState(!1), w = (0, l.TH)(), {
+    } = (0, p.A)(), [y, A] = i.useState(h.b.DEFAULT), [P, R] = i.useState(!1), [D, Z] = i.useState(!1), w = (0, o.TH)(), {
       analyticsLocations: k
     } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), W = i.useRef(null), {
       shouldOpen: L
-    } = (0, b.lJ)({
+    } = (0, N.lJ)({
       backgroundElementRef: W
     }), {
       shouldOpen: B
     } = (0, g.Mm)({
       backgroundElementRef: W,
-      isCoachmarkEnabled: O,
+      isCoachmarkEnabled: C,
       onCloseCallback: x.dG4,
       onClickPill: x.dG4,
       secondaryCtaOnClick: () => {
@@ -64,34 +64,34 @@ let C = {
       }
     }), M = B || L;
     i.useEffect(() => {
-      if (!O) return;
+      if (!C) return;
       let e = (0, g.wH)();
-      (0, b.Pe)() || e || M ? (Z(!0), R(!1)) : Z(!1)
-    }, [O, M]);
+      (0, N.Pe)() || e || M ? (Z(!0), R(!1)) : Z(!1)
+    }, [C, M]);
     let U = i.useCallback(() => {
         let e = !P;
-        y(e ? h.b.SELECTED : h.b.DEFAULT), R(e)
+        A(e ? h.b.SELECTED : h.b.DEFAULT), R(e)
       }, [P]),
       V = i.useCallback(() => {
         P && U()
       }, [P, U]),
-      G = (0, o.Z)(null, V);
+      G = (0, l.Z)(null, V);
     return (0, r.jsxs)("div", {
       className: a()(j.container, T, {
         [j.hidden]: D,
         [j.visible]: !D
       }),
-      children: [(0, r.jsx)(N.A4, {
+      children: [(0, r.jsx)(b.A4, {
         ref: W,
         balance: I,
-        balanceWidgetMode: M ? h.b.DEFAULT : A,
+        balanceWidgetMode: M ? h.b.DEFAULT : y,
         onMouseDown: e => {
           e.stopPropagation()
         },
         onClick: U,
         showNotificationBadge: t
       }), P && (0, r.jsx)("div", {
-        className: a()(j.cardContainer, v, {
+        className: a()(j.cardContainer, S, {
           [j.hidden]: D,
           [j.visible]: !D
         }),
@@ -101,9 +101,9 @@ let C = {
           ctaOnClick: () => {
             U(), s()
           },
-          linkText: S
+          linkText: v
         })
       })]
     })
   };
-O.CardAlignment = C
+C.CardAlignment = O

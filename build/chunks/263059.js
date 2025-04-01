@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(64621),
   S = n(448980),
   T = n(336383),
-  A = n(194811),
-  N = n(373826),
+  N = n(194811),
+  A = n(373826),
   C = n(262210),
   R = n(666984),
   P = n(386019),
@@ -93,10 +93,10 @@ function M(e) {
   let z = () => {
       var e, t;
       let o = null !== (t = null === (e = L.state) || void 0 === e ? void 0 : e.split(";")) && void 0 !== t ? t : [];
-      return 0 === o.length ? null : null == L.sync_id ? (0, r.jsx)(N.Z, {
+      return 0 === o.length ? null : null == L.sync_id ? (0, r.jsx)(A.Z, {
         variant: "text-xs/normal",
         text: o.join(", ")
-      }) : (0, r.jsx)(N.Z, {
+      }) : (0, r.jsx)(A.Z, {
         variant: "text-xs/normal",
         text: o.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
@@ -174,7 +174,7 @@ function M(e) {
             }),
             onAction: Y,
             onClose: j,
-            children: [(0, r.jsx)(A.Z, x({}, Z)), (0, r.jsx)("div", {
+            children: [(0, r.jsx)(N.Z, x({}, Z)), (0, r.jsx)("div", {
               className: D.body,
               children: (0, r.jsxs)("div", {
                 className: a()(D.content, G),
@@ -190,7 +190,7 @@ function M(e) {
                 }), (0, r.jsxs)("div", {
                   className: D.details,
                   children: [(0, r.jsxs)("div", {
-                    children: [(0, r.jsx)(N.Z, {
+                    children: [(0, r.jsx)(A.Z, {
                       variant: "heading-sm/semibold",
                       text: L.details,
                       onClick: () => {

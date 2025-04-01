@@ -60,8 +60,8 @@ let y = "default",
   I = [],
   S = [],
   T = 0,
-  A = null,
   N = null,
+  A = null,
   C = {},
   R = null,
   P = null,
@@ -161,11 +161,11 @@ function F(e) {
   let {
     clip: r
   } = e;
-  T = Math.max(T - 1, 0), N = v(E({
+  T = Math.max(T - 1, 0), A = v(E({
     applicationName: r.applicationName,
     ended: !1
-  }, N), {
-    newClipIds: [...null !== (t = null == N ? void 0 : N.newClipIds) && void 0 !== t ? t : [], r.id]
+  }, A), {
+    newClipIds: [...null !== (t = null == A ? void 0 : A.newClipIds) && void 0 !== t ? t : [], r.id]
   }), L = v(E({}, L), {
     newClipIds: [...null !== (n = L.newClipIds) && void 0 !== n ? n : [], r.id]
   }), S = S.filter(e => {
@@ -199,14 +199,14 @@ function H(e) {
   let {
     channelId: t
   } = e;
-  A = t
+  N = t
 }
 
 function W(e) {
   let {
     channelId: t
   } = e;
-  t !== A && (A = null)
+  t !== N && (N = null)
 }
 
 function Y(e) {
@@ -214,7 +214,7 @@ function Y(e) {
     applicationName: t
   } = e;
   if (R = null, !L.clipsSettings.clipsEnabled) return !1;
-  N = {
+  A = {
     applicationName: t,
     newClipIds: [],
     ended: !1
@@ -241,7 +241,7 @@ function z(e) {
     r = null !== (i = null == e ? void 0 : e.name) && void 0 !== i ? i : r
   }
   if (null == r || "" === r) return !1;
-  N = {
+  A = {
     applicationName: r,
     newClipIds: [],
     ended: !1
@@ -252,8 +252,8 @@ function q(e) {
   let {
     streamKey: t
   } = e;
-  if (P = null, w[t] = [], null == N || (0, l.my)(t).ownerId !== c.default.getId()) return !1;
-  N = 0 === N.newClipIds.length ? null : v(E({}, N), {
+  if (P = null, w[t] = [], null == A || (0, l.my)(t).ownerId !== c.default.getId()) return !1;
+  A = 0 === A.newClipIds.length ? null : v(E({}, A), {
     ended: !0
   })
 }
@@ -272,8 +272,8 @@ function X(e) {
 }
 
 function J() {
-  if (null == N) return !1;
-  N = null
+  if (null == A) return !1;
+  A = null
 }
 
 function $() {
@@ -325,10 +325,10 @@ class er extends(r = i.ZP.DeviceSettingsStore) {
     return L.clipsSettings
   }
   getLastClipsSession() {
-    return N
+    return A
   }
   getClipsWarningShown(e) {
-    return A === e
+    return N === e
   }
   getActiveAnimation() {
     return P

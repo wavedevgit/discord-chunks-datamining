@@ -38,8 +38,8 @@ var I = function(e) {
 }({});
 let S = !1,
   T = 0,
-  A = 0,
-  N = !1,
+  N = 0,
+  A = !1,
   C = {};
 
 function R() {
@@ -51,10 +51,10 @@ function P() {
 }
 
 function w() {
-  let e = P() && (A > 0 || S && 0 === T);
-  if (e !== N) {
+  let e = P() && (N > 0 || S && 0 === T);
+  if (e !== A) {
     var t, n;
-    N = e, null === (n = f.Z.getMediaEngine()) || void 0 === n || null === (t = n.setNativeDesktopVideoSourcePickerActive) || void 0 === t || t.call(n, N)
+    A = e, null === (n = f.Z.getMediaEngine()) || void 0 === n || null === (t = n.setNativeDesktopVideoSourcePickerActive) || void 0 === t || t.call(n, A)
   }
 }
 
@@ -65,8 +65,8 @@ function D() {
 }
 
 function L() {
-  return (0, o.useEffect)(() => (A++, w(), () => {
-    --A, w()
+  return (0, o.useEffect)(() => (N++, w(), () => {
+    --N, w()
   }), [])
 }
 

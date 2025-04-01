@@ -23,10 +23,10 @@ var r = n(197187),
   I = o([].push),
   S = o("".indexOf),
   T = o("".slice),
-  A = function(e) {
+  N = function(e) {
     return void 0 === e ? e : String(e)
   },
-  N = function() {
+  A = function() {
     return "$0" === "a".replace(/./, "$0")
   }(),
   C = function() {
@@ -52,16 +52,16 @@ a("replace", function(e, t, n) {
     for (var b = []; null !== (w = E(a, s)) && (I(b, w), m);) {
       "" === _(w[0]) && (a.lastIndex = h(s, f(a.lastIndex), P))
     }
-    for (var N = "", C = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D, L = _((w = b[R])[0]), x = v(y(d(w.index), s.length), 0), M = [], k = 1; k < w.length; k++) I(M, A(w[k]));
+    for (var A = "", C = 0, R = 0; R < b.length; R++) {
+      for (var P, w, D, L = _((w = b[R])[0]), x = v(y(d(w.index), s.length), 0), M = [], k = 1; k < w.length; k++) I(M, N(w[k]));
       var j = w.groups;
       if (p) {
         var U = O([L], M, x, s);
         void 0 !== j && I(U, j), D = _(r(i, void 0, U))
       } else D = g(L, s, x, M, j, i);
-      x >= C && (N += T(s, C, x) + D, C = x + L.length)
+      x >= C && (A += T(s, C, x) + D, C = x + L.length)
     }
-    return N + T(s, C)
+    return A + T(s, C)
   }]
 }, !!s(function() {
   var e = /./;
@@ -71,4 +71,4 @@ a("replace", function(e, t, n) {
       a: "7"
     }, e
   }, "7" !== "".replace(e, "$<a>")
-}) || !N || C)
+}) || !A || C)

@@ -48,18 +48,18 @@ function u(e) {
         }])
       }
     }, [n, d, h, _, I]),
-    A = (0, a.D)(p || E, v, T),
-    N = A.state,
-    C = A.styles,
-    R = A.forceUpdate,
-    P = A.update,
+    N = (0, a.D)(p || E, v, T),
+    A = N.state,
+    C = N.styles,
+    R = N.forceUpdate,
+    P = N.update,
     w = r.useMemo(function() {
       return {
         ref: y,
         style: C.popper,
-        placement: N ? N.placement : n,
-        hasPopperEscaped: N && N.modifiersData.hide ? N.modifiersData.hide.hasPopperEscaped : null,
-        isReferenceHidden: N && N.modifiersData.hide ? N.modifiersData.hide.isReferenceHidden : null,
+        placement: A ? A.placement : n,
+        hasPopperEscaped: A && A.modifiersData.hide ? A.modifiersData.hide.hasPopperEscaped : null,
+        isReferenceHidden: A && A.modifiersData.hide ? A.modifiersData.hide.isReferenceHidden : null,
         arrowProps: {
           style: C.arrow,
           ref: S
@@ -67,6 +67,6 @@ function u(e) {
         forceUpdate: R || s,
         update: P || l
       }
-    }, [y, S, n, N, C, P, R]);
+    }, [y, S, n, A, C, P, R]);
   return (0, o.$p)(g)(w)
 }

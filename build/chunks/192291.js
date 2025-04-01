@@ -20,11 +20,11 @@ var r, i, o, a = n(212036),
   I = O.enforce,
   S = O.get,
   T = l.Int8Array,
-  A = T && T.prototype,
-  N = l.Uint8ClampedArray,
-  C = N && N.prototype,
+  N = T && T.prototype,
+  A = l.Uint8ClampedArray,
+  C = A && A.prototype,
   R = T && E(T),
-  P = A && E(A),
+  P = N && E(N),
   w = Object.prototype,
   D = l.TypeError,
   L = v("toStringTag"),
@@ -84,7 +84,7 @@ var r, i, o, a = n(212036),
               o.prototype[e] = t
             } catch (e) {}
           }
-        }(!P[e] || n) && h(P, e, n ? t : k && A[e] || t, r)
+        }(!P[e] || n) && h(P, e, n ? t : k && N[e] || t, r)
     }
   },
   Y = function(e, t, n) {

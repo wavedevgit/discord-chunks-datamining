@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N,
+  Z: () => A,
   u: () => O
 }), n(653041), n(47120);
 var r, i = n(200651),
@@ -91,7 +91,7 @@ function T() {
       return g.size24
   }
 }
-class A extends(r = o.PureComponent) {
+class N extends(r = o.PureComponent) {
   renderUsers() {
     let {
       users: e,
@@ -230,11 +230,11 @@ class A extends(r = o.PureComponent) {
     })
   }
 }
-E(A, "defaultProps", {
+E(N, "defaultProps", {
   max: 10,
   renderMoreUsers: S,
   renderIcon: !1,
   showDefaultAvatarsForNullUsers: !1,
   size: O.SIZE_24
 });
-let N = A
+let A = N

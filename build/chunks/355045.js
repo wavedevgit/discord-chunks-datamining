@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -26,12 +26,12 @@ var r = n(200651),
   I = n(474936),
   S = n(388032),
   T = n(866231);
-let A = function(e) {
+let N = function(e) {
   let {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: o
-  } = e, A = i.useRef(null), N = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
+  } = e, N = i.useRef(null), A = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
     analyticsLocations: R
   } = (0, u.ZP)(), {
     fractionalState: P
@@ -111,11 +111,11 @@ let A = function(e) {
     }), (0, r.jsxs)("div", {
       className: T.guildBoostCtas,
       children: [(0, r.jsx)(l.$, {
-        innerRef: A,
+        innerRef: N,
         onChange: o,
         threshold: .9,
         children: (0, r.jsx)("div", {
-          ref: A,
+          ref: N,
           className: a()(T.guildBoostCta, T.guildBoostCtaBoostWrapper),
           children: (0, r.jsx)(y.Z, {
             className: T.guildBoostCtaBoost,
@@ -134,7 +134,7 @@ let A = function(e) {
             fullWidth: !0
           })
         })
-      }), v.ZP.hasFreeBoosts(N, P) || v.ZP.isPremium(N, I.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
+      }), v.ZP.hasFreeBoosts(A, P) || v.ZP.isPremium(A, I.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
         className: a()(T.guildBoostCta, T.guildBoostCtaSecondary),
         innerClassName: a()(T.__invalid_guildBoostCtaContent, T.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,

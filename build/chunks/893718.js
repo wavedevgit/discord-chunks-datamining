@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(271668),
   S = n(404295),
   T = n(326133),
-  A = n(405701),
-  N = n(570220),
+  N = n(405701),
+  A = n(570220),
   C = n(540059),
   R = n(28546),
   P = n(805680),
@@ -182,7 +182,7 @@ function eT(e) {
   }, [e])
 }
 
-function eA(e) {
+function eN(e) {
   let {
     editorRef: t,
     disabled: n,
@@ -208,7 +208,7 @@ function eA(e) {
   }, [n, r, o, a.drafts.type, t, l, s])
 }
 
-function eN(e, t) {
+function eA(e, t) {
   return i.useCallback((n, r, i) => {
     let o = e.current;
     null != n && null != o && (Q.default.track(ef.rMx.SOUNDMOJI_SELECT, {
@@ -454,13 +454,13 @@ function ej(e, t) {
     isSubmitButtonEnabled: E.Z.isSubmitButtonEnabled
   })), tS = (0, _.e7)([K.Z], () => K.Z.isEnabled()), tT = i.useRef(F);
   tT.current = F;
-  let tA = i.useCallback((e, t, n) => {
+  let tN = i.useCallback((e, t, n) => {
     var r;
     t === e_.GI && "" === tT.current && (null === (r = ep.commands) || void 0 === r ? void 0 : r.enabled) && (null == e5 || e5()), null == eU || eU(e, t, n)
   }, [eU, e5, null === (o = ep.commands) || void 0 === o ? void 0 : o.enabled]);
   eC(ep, tp);
   let {
-    eventEmitter: tN,
+    eventEmitter: tA,
     handleEditorSelectionChanged: tC
   } = eR(tr, F, V), {
     submitting: tR,
@@ -470,14 +470,14 @@ function ej(e, t) {
     autocompleteRef: tD,
     handleMaybeShowAutocomplete: tL,
     handleHideAutocomplete: tx
-  } = eP(), tM = eS(tP, ep, tr), tk = eT(tr), tj = eA({
+  } = eP(), tM = eS(tP, ep, tr), tk = eT(tr), tj = eN({
     editorRef: tr,
     disabled: tp,
     textValue: F,
     channelId: eo.id,
     chatInputType: ep,
     submit: eZ
-  }), tU = eN(tr, eo), tG = i.useCallback(() => {
+  }), tU = eA(tr, eo), tG = i.useCallback(() => {
     var e;
     return null == to ? void 0 : null === (e = to.current) || void 0 === e ? void 0 : e.hide()
   }, []), {
@@ -492,8 +492,8 @@ function ej(e, t) {
     shouldHideExpressionPicker: tY,
     handleAutocompleteVisibilityChange: tK,
     handleOuterClick: tz
-  } = ex(ep, tN, tr);
-  (0, ee.S)(tN, eo.guild_id, eo.id);
+  } = ex(ep, tA, tr);
+  (0, ee.S)(tA, eo.guild_id, eo.id);
   let tq = null != ej,
     tQ = tp && !((tf || t_) && tg) || tR && (null === (s = ep.submit) || void 0 === s ? void 0 : s.useDisabledStylesOnSubmit),
     tX = null;
@@ -552,8 +552,8 @@ function ej(e, t) {
         children: [nt, ne]
       })]
     }) : null;
-  return (0, r.jsx)(N.f6, {
-    value: tN,
+  return (0, r.jsx)(A.f6, {
+    value: tA,
     children: (0, r.jsxs)(v.Gt, {
       value: e8,
       children: [t$ && tE ? (0, r.jsx)(ed.Z, {
@@ -623,7 +623,7 @@ function ej(e, t) {
                 maxCharacterCount: null != ez ? ez : ty,
                 allowNewLines: eQ,
                 "aria-describedby": eJ,
-                onChange: tA,
+                onChange: tN,
                 onResize: tF,
                 onBlur: eB,
                 onFocus: eF,
@@ -648,7 +648,7 @@ function ej(e, t) {
               })
             }), e9 ? (0, r.jsxs)("div", {
               className: eh.rightAccessories,
-              children: [t4 ? (0, r.jsx)(A.Z, {
+              children: [t4 ? (0, r.jsx)(N.Z, {
                 channel: eo
               }) : null, null !== (x = null == ey ? void 0 : ey()) && void 0 !== x ? x : null, (null === (l = ep.submit) || void 0 === l ? void 0 : l.button) != null && ((null === (u = ep.submit) || void 0 === u ? void 0 : u.ignorePreference) || tO) ? (0, r.jsx)(er.Z, {
                 onClick: tw,
@@ -679,7 +679,7 @@ function ej(e, t) {
           onSendSticker: tj,
           onVisibilityChange: tK,
           editorHeight: tB,
-          setValue: (e, t) => null == tA ? void 0 : tA(null, e, t),
+          setValue: (e, t) => null == tN ? void 0 : tN(null, e, t),
           position: e1
         }), (0, r.jsx)(k.Z, {
           textValue: F,

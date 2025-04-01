@@ -106,23 +106,23 @@ let j = a.Z.Types,
         var e;
         return p.Z.getChannel(null === (e = m.Z.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
       }),
-      N = (0, l.e7)([d.Z], () => i ? d.Z.getAnyStreamForUser(n.id) : null),
-      P = (0, l.e7)([f.Z, m.Z, p.Z], () => {
+      P = (0, l.e7)([d.Z], () => i ? d.Z.getAnyStreamForUser(n.id) : null),
+      N = (0, l.e7)([f.Z, m.Z, p.Z], () => {
         var e, r;
         return (0, o.Z)(t, b.xjy.EMBEDDED) ? f.Z.getGuild(null === (e = p.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
       }),
-      x = (0, l.e7)([f.Z], () => null != N ? f.Z.getGuild(N.guildId) : null),
+      x = (0, l.e7)([f.Z], () => null != P ? f.Z.getGuild(P.guildId) : null),
       I = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
     return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, v(O({}, j), {
       activity: t,
       user: n,
       application: I,
       hideHeader: g,
-      activityGuild: null != P ? P : x,
+      activityGuild: null != N ? N : x,
       showChannelDetails: y,
       channel: y ? S : void 0,
       renderActions: s ? () => (0, r.jsx)(h, v(O({}, j), {
-        applicationStream: N,
+        applicationStream: P,
         activity: t,
         user: n
       })) : null,

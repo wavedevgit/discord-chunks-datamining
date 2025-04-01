@@ -192,10 +192,10 @@
     T = function(e) {
       return null !== e && "object" === i(e)
     },
-    A = function(e) {
+    N = function(e) {
       return T(e) && "function" == typeof e.then
     },
-    N = function(e) {
+    A = function(e) {
       return T(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
     },
     C = "[object Object]",
@@ -229,12 +229,12 @@
     w = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
     D = function(e) {
       var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w;
-      if (null === e || N(e)) return e;
+      if (null === e || A(e)) return e;
       throw Error(t)
     },
     L = function(e) {
       var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w;
-      if (A(e)) return {
+      if (N(e)) return {
         tag: "async",
         stripePromise: Promise.resolve(e).then(function(e) {
           return D(e, t)
@@ -454,8 +454,8 @@
             y = n.onShippingAddressChange,
             O = n.onShippingRateChange,
             T = q("mounts <".concat(r, ">")),
-            A = "elements" in T ? T.elements : null,
-            N = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
+            N = "elements" in T ? T.elements : null,
+            A = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
             C = l(t.useState(null), 2),
             R = C[0],
             w = C[1],
@@ -464,11 +464,11 @@
           I(R, "blur", u), I(R, "focus", d), I(R, "escape", p), I(R, "click", h), I(R, "loaderror", m), I(R, "loaderstart", g), I(R, "networkschange", E), I(R, "confirm", b), I(R, "cancel", v), I(R, "shippingaddresschange", y), I(R, "shippingratechange", O), I(R, "change", _), f && (i = "expressCheckout" === e ? f : function() {
             f(R)
           }), I(R, "ready", i), t.useLayoutEffect(function() {
-            if (null === D.current && null !== L.current && (A || N)) {
+            if (null === D.current && null !== L.current && (N || A)) {
               var t = null;
-              N ? t = N.createElement(e, c) : A && (t = A.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
+              A ? t = A.createElement(e, c) : N && (t = N.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
             }
-          }, [A, N, c]);
+          }, [N, A, c]);
           var x = S(c);
           return t.useEffect(function() {
             if (D.current) {
@@ -627,6 +627,6 @@
     eI = J("shippingAddress", $),
     eS = J("paymentMethodMessaging", $),
     eT = J("affirmMessage", $),
-    eA = J("afterpayClearpayMessage", $);
-  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eA, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = j, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = ev, e.ShippingAddressElement = eI, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
+    eN = J("afterpayClearpayMessage", $);
+  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eN, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = j, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = ev, e.ShippingAddressElement = eI, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
 })

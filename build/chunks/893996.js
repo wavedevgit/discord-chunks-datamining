@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -8,15 +8,15 @@ var i = n(481060),
   s = n(921801),
   a = n(968427);
 
-function l(e) {
+function o(e) {
   let {
     children: t,
     title: n,
-    description: l,
-    webSetting: o
+    description: o,
+    webSetting: l
   } = e;
   return (0, r.jsx)(s.F, {
-    setting: o,
+    setting: l,
     children: (0, r.jsxs)("div", {
       className: a.category,
       children: [(0, r.jsxs)("div", {
@@ -25,10 +25,10 @@ function l(e) {
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: n
-        }), null != l ? (0, r.jsx)(i.Text, {
+        }), null != o ? (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: l
+          children: o
         }) : null]
       }), (0, r.jsx)("div", {
         className: a.categoryContent,

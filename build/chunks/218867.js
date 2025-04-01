@@ -30,14 +30,14 @@ let u = i.memo(i.forwardRef((e, t) => {
     stickyHeaders: I = !1,
     className: S,
     hideScrollbar: T = !1,
-    fade: A = !1,
-    initialScrollTop: N = 0,
+    fade: N = !1,
+    initialScrollTop: A = 0,
     role: C = "list"
   } = e, [R, P] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), M = i.useRef(-1);
   (0, l.Ng)(() => {
     var e;
     let t = null === (e = L.current) || void 0 === e ? void 0 : e.getScrollerNode();
-    null != t && (t.scrollTop = N)
+    null != t && (t.scrollTop = A)
   });
   let k = i.useCallback(() => {
       let e = "function" == typeof O ? O() : O;
@@ -281,7 +281,7 @@ let u = i.memo(i.forwardRef((e, t) => {
     height: Z
   }), [Z]), J = T ? s.xV : s.h2;
   return (0, r.jsxs)(J, {
-    fade: A,
+    fade: N,
     className: a()(c.scroller, S),
     ref: L,
     onScroll: K,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   a: () => T,
-  default: () => N
+  default: () => A
 }), n(47120), n(757143), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -27,15 +27,15 @@ var r = n(200651),
   I = n(388032),
   S = n(694010);
 let T = "VoiceChannelStatusModal",
-  A = 500;
+  N = 500;
 
-function N(e) {
+function A(e) {
   let {
     channel: t,
     transitionState: n,
     sourceAnalyticsLocations: o,
-    onClose: N
-  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, M] = i.useState(null), k = (0, s.e7)([v.default], () => v.default.getCurrentUser()), j = P.length > A, U = (0, g.Q3)("VoiceChannelStatusModal");
+    onClose: A
+  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, M] = i.useState(null), k = (0, s.e7)([v.default], () => v.default.getCurrentUser()), j = P.length > N, U = (0, g.Q3)("VoiceChannelStatusModal");
   i.useEffect(() => {
     y.default.track(O.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -63,7 +63,7 @@ function N(e) {
       }
     },
     F = async e => {
-      P === C && N(), null == e || e.preventDefault(), M(null), L(!0);
+      P === C && A(), null == e || e.preventDefault(), M(null), L(!0);
       let n = P.length,
         r = P.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = E.ZP.parse(void 0, P),
@@ -80,7 +80,7 @@ function N(e) {
             raw_length: n,
             text_length: r,
             location_stack: o
-          }), N()) : G(e)
+          }), A()) : G(e)
         } catch (e) {
           G(e)
         }
@@ -107,7 +107,7 @@ function N(e) {
           separator: !1,
           children: [(0, r.jsx)(c.olH, {
             className: S.closeButton,
-            onClick: N
+            onClick: A
           }), (0, r.jsx)("div", {
             className: S.headerImage
           }), (0, r.jsx)(c.vwX, {
@@ -138,8 +138,8 @@ function N(e) {
             canMentionChannels: !1,
             allowNewLines: !1,
             parentModalKey: T,
-            maxCharacterCount: A,
-            showRemainingCharsAfterCount: A / 2,
+            maxCharacterCount: N,
+            showRemainingCharsAfterCount: N / 2,
             emojiPickerCloseOnModalOuterClick: !0
           }), null != x ? (0, r.jsx)(c.kzN, {
             className: S.error,
@@ -154,7 +154,7 @@ function N(e) {
           look: c.zxk.Looks.FILLED,
           color: c.zxk.Colors.PRIMARY,
           className: S.cancelButton,
-          onClick: N,
+          onClick: A,
           children: I.NW.string(I.t["ETE/oK"])
         }), (0, r.jsx)(c.zxk, {
           onClick: F,

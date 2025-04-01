@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(810097),
   S = n(64621),
   T = n(913002),
-  A = n(228168),
-  N = n(388032),
+  N = n(228168),
+  A = n(388032),
   C = n(132398);
 
 function R(e, t, n) {
@@ -98,9 +98,9 @@ function F(e) {
     profileType: t,
     children: n
   } = e, i = {
-    [C.biteSize]: t === A.y0.BITE_SIZE,
-    [C.fullSize]: t === A.y0.FULL_SIZE,
-    [C.panel]: t === A.y0.PANEL
+    [C.biteSize]: t === N.y0.BITE_SIZE,
+    [C.fullSize]: t === N.y0.FULL_SIZE,
+    [C.panel]: t === N.y0.PANEL
   };
   return (0, r.jsx)("div", {
     className: a()(C.referenceContainer, i),
@@ -124,9 +124,9 @@ function V(e) {
   } = (0, p.ZP)(), {
     trackUserProfileAction: l
   } = (0, b.KZ)(), c = {
-    [C.biteSize]: t === A.y0.BITE_SIZE,
-    [C.fullSize]: t === A.y0.FULL_SIZE,
-    [C.panel]: t === A.y0.PANEL
+    [C.biteSize]: t === N.y0.BITE_SIZE,
+    [C.fullSize]: t === N.y0.FULL_SIZE,
+    [C.panel]: t === N.y0.PANEL
   }, d = () => {
     l({
       action: "PRESS_ADD_CUSTOM_STATUS"
@@ -140,7 +140,7 @@ function V(e) {
         prompt: o
       }))
     })
-  }, f = null != o ? o.label() : N.NW.string(N.t.evw0o6), _ = (0, r.jsxs)("div", {
+  }, f = null != o ? o.label() : A.NW.string(A.t.evw0o6), _ = (0, r.jsxs)("div", {
     className: a()(C.content, c),
     children: [(0, r.jsx)(u.oFk, {
       size: "xs",
@@ -158,7 +158,7 @@ function V(e) {
       children: _
     }), (0, r.jsx)(u.P3F, {
       className: a()(C.container, C.editable, c),
-      "aria-label": N.NW.string(N.t["zrpF/f"]),
+      "aria-label": A.NW.string(A.t["zrpF/f"]),
       onClick: d,
       focusProps: {
         ringClassName: C.ring
@@ -197,9 +197,9 @@ function Z(e) {
   } = e, S = (0, y.yi)(), {
     trackUserProfileAction: T
   } = (0, b.KZ)(), R = {
-    [C.biteSize]: p === A.y0.BITE_SIZE,
-    [C.fullSize]: p === A.y0.FULL_SIZE,
-    [C.panel]: p === A.y0.PANEL
+    [C.biteSize]: p === N.y0.BITE_SIZE,
+    [C.fullSize]: p === N.y0.FULL_SIZE,
+    [C.panel]: p === N.y0.PANEL
   }, P = (0, h.p)({
     location: "CustomStatusBubble"
   }), w = null != o ? M : 0, D = k + w, L = j + w, x = i.useRef(null), V = i.useRef(null), Z = i.useRef(null), H = i.useRef(D), W = i.useRef(L), Y = null != o && null == _, [K, z] = i.useState(!1), [q, Q] = i.useState(!0), [X, J] = i.useState(!Y && O), $ = !Y && O && K;
@@ -236,7 +236,7 @@ function Z(e) {
     emoji: o,
     animate: m,
     hideTooltip: !1,
-    tooltipDelay: A.vB,
+    tooltipDelay: N.vB,
     className: C.statusEmoji
   }) : null, ea = null != _ ? (0, r.jsx)(u.Text, {
     variant: "text-sm/normal",
@@ -245,7 +245,7 @@ function Z(e) {
   }) : null, es = void 0 === I || null != o && P ? null : (0, r.jsx)(u.Text, {
     variant: "text-sm/normal",
     color: "text-muted",
-    "aria-label": "".concat(N.NW.string(N.t.EVV6ub), ": ").concat(I),
+    "aria-label": "".concat(A.NW.string(A.t.EVV6ub), ": ").concat(I),
     className: a()(C.statusText, P && C.italicPrompt),
     children: null != I ? I : ""
   }), el = null == ea || "" === _ ? es : ea, ec = (0, r.jsxs)("div", {
@@ -280,7 +280,7 @@ function Z(e) {
         role: "tooltip",
         tabIndex: 0,
         className: a()(C.container, R, g),
-        "aria-label": N.NW.formatToPlainString(N.t.UpF5QU, {
+        "aria-label": A.NW.formatToPlainString(A.t.UpF5QU, {
           emoji: null !== (t = null == o ? void 0 : o.name) && void 0 !== t ? t : "",
           status: _
         }),
@@ -305,7 +305,7 @@ function Z(e) {
         role: "tooltip",
         tabIndex: 0,
         className: a()(C.container, R, g),
-        "aria-label": N.NW.formatToPlainString(N.t.UpF5QU, {
+        "aria-label": A.NW.formatToPlainString(A.t.UpF5QU, {
           emoji: null !== (n = null == o ? void 0 : o.name) && void 0 !== n ? n : "",
           status: _
         }),
@@ -365,12 +365,12 @@ function W(e) {
     interactionType: d,
     interactionSource: f,
     resetInteraction: _
-  } = (0, y.Xo)(), p = f === A.n_.STATUS && d === A.P.REACT, h = f === A.n_.STATUS && d === A.P.REPLY, m = p || h, E = i.useRef(t), v = i.useRef(n);
+  } = (0, y.Xo)(), p = f === N.n_.STATUS && d === N.P.REACT, h = f === N.n_.STATUS && d === N.P.REPLY, m = p || h, E = i.useRef(t), v = i.useRef(n);
   i.useEffect(() => {
-    f === A.n_.STATUS && ((E.current !== t || v.current !== n) && _(), E.current = t, v.current = n)
+    f === N.n_.STATUS && ((E.current !== t || v.current !== n) && _(), E.current = t, v.current = n)
   }, [f, _, t, n]);
-  let [T, N] = i.useState(!1), R = i.useCallback(e => {
-    (e || !m) && N(e)
+  let [T, A] = i.useState(!1), R = i.useCallback(e => {
+    (e || !m) && A(e)
   }, [m]), w = () => {
     if (null == t) return n;
     let e = null != t.id ? "`" + ":".concat(t.name, ":") + "`" : g.ZP.translateSurrogatesToInlineEmoji(t.name);
@@ -382,11 +382,11 @@ function W(e) {
     channelId: s,
     profileType: l,
     sourceDetails: w(),
-    sourceType: A.n_.STATUS,
+    sourceType: N.n_.STATUS,
     onAction: u,
-    onClose: () => N(!1),
+    onClose: () => A(!1),
     children: () => (0, r.jsx)(S.Z, {
-      sourceType: A.n_.STATUS,
+      sourceType: N.n_.STATUS,
       user: o,
       children: (0, r.jsx)(Z, D(P({}, c), {
         emoji: t,
@@ -396,7 +396,7 @@ function W(e) {
         onShowToolbar: R,
         renderToolbar: e => (0, r.jsx)(I.ZP, {
           user: o,
-          sourceType: A.n_.STATUS,
+          sourceType: N.n_.STATUS,
           isVisible: T && !m,
           isExpandable: e,
           onAction: u

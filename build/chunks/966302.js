@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(898531),
   S = n(923973),
   T = n(82965),
-  A = n(189771),
-  N = n(560688),
+  N = n(189771),
+  A = n(560688),
   C = n(88479),
   R = n(136995),
   P = n(25827),
@@ -139,7 +139,7 @@ function eo(e) {
   } = (0, m.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, S.Z)(), _ = (0, A.Z)(n), p = (0, T.Z)({
+  } = (0, S.Z)(), _ = (0, N.Z)(n), p = (0, T.Z)({
     location: "CallActionButtons"
   }), g = i.useRef(null);
   return (0, r.jsxs)("div", {
@@ -189,7 +189,7 @@ function eo(e) {
           channel: n,
           onPopoutClick: o > 1 ? i : null,
           popoutOpen: a,
-          onCameraUnavailable: N.Z,
+          onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
             (0, B.v)(s, B.d.JOIN_VIDEO_CALL), M.default.track(Z.rMx.RING_CALL_ACCEPTED, Q({
@@ -225,7 +225,7 @@ function ea(e) {
     id: I.id,
     icon: I.icon,
     size: er
-  }) : null, T = null !== (t = (0, g.x)(h, er, !0)) && void 0 !== t ? t : S, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([D.Z], () => [D.Z.supports(H.AN.VIDEO), Object.keys(D.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, P = (0, l.e7)([x.Z], () => x.Z.isFocused()), L = (0, l.e7)([j.Z], () => j.Z.getMode(h.id)), M = i.useCallback(e => {
+  }) : null, T = null !== (t = (0, g.x)(h, er, !0)) && void 0 !== t ? t : S, N = (0, E.ZP)(h), [A, C] = (0, l.Wu)([D.Z], () => [D.Z.supports(H.AN.VIDEO), Object.keys(D.Z.getVideoDevices()).length]), R = null != I ? "".concat(N, ", ").concat(I.name) : N, P = (0, l.e7)([x.Z], () => x.Z.isFocused()), L = (0, l.e7)([j.Z], () => j.Z.getMode(h.id)), M = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), G = (0, c.q_F)({
     value: +!!y,
@@ -239,7 +239,7 @@ function ea(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
-  let B = L === Z.WtW.VIDEO && N && C > 0,
+  let B = L === Z.WtW.VIDEO && A && C > 0,
     F = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == S ? (0, r.jsx)("div", {
         className: a()(K.icon, Y.wrapper, Y.ringingIncoming),

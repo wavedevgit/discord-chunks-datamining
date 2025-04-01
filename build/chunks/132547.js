@@ -1,13 +1,13 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(47120), n(610138), n(216116), n(78328), n(815648), n(301563);
 var r = n(200651),
   i = n(192379),
   s = n(622535),
   a = n(481060),
-  l = n(100527),
-  o = n(906732),
+  o = n(100527),
+  l = n(906732),
   c = n(433811),
   d = n(214852),
   u = n(626135),
@@ -16,22 +16,22 @@ var r = n(200651),
   p = n(536844),
   h = n(342414),
   f = n(615042),
-  N = n(391110),
-  b = n(71363),
+  b = n(391110),
+  N = n(71363),
   x = n(781800),
   _ = n(981631),
   E = n(388032),
   j = n(26526),
-  C = n(865215);
-let O = () => {
+  O = n(865215);
+let C = () => {
   (0, d.z)(c.X), (0, f.u)();
   let e = i.useRef(null),
     t = i.useRef(null),
-    [n, O] = i.useState(!1),
+    [n, C] = i.useState(!1),
     {
-      analyticsLocations: S
-    } = (0, o.ZP)(l.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
-    [v, T] = i.useState(!1);
+      analyticsLocations: v
+    } = (0, l.ZP)(o.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
+    [S, T] = i.useState(!1);
   (0, m.FM)();
   let I = "true" === new URLSearchParams(window.location.search).get("autoScroll");
   return window.history.replaceState({}, "", window.location.pathname), (0, r.jsxs)(r.Fragment, {
@@ -40,13 +40,13 @@ let O = () => {
       ref: e,
       children: (0, r.jsx)("div", {
         className: j.container,
-        children: (0, r.jsxs)(o.Gt, {
-          value: S,
+        children: (0, r.jsxs)(l.Gt, {
+          value: v,
           children: [(0, r.jsx)(h.Z, {
             className: j.heroHeading,
-            location: N.MQ.HOME
+            location: b.MQ.HOME
           }), (0, r.jsx)(g.Z, {
-            variant: N.R0.WHATS_NEW,
+            variant: b.R0.WHATS_NEW,
             className: j.whatsNew,
             noBackground: !0,
             leftAlignHeaders: !0,
@@ -56,12 +56,12 @@ let O = () => {
             noBackground: !0,
             leftAlignHeaders: !0,
             showAllPerksButton: (0, r.jsx)(x.Z, {
-              setIsAllPerksVisible: O,
-              previousComponent: N.MQ.HOME
+              setIsAllPerksVisible: C,
+              previousComponent: b.MQ.HOME
             })
           }), (0, r.jsx)(p.Z, {
             className: j.giftNitro,
-            location: l.Z.PREMIUM_MARKETING_GIFT_SECTION,
+            location: o.Z.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {
               page: _.ZY5.NITRO_HOME,
               section: _.jXE.GIFT_BANNER
@@ -71,8 +71,8 @@ let O = () => {
           }), (0, r.jsx)(s.$, {
             innerRef: t,
             onChange: e => {
-              e && !v && (u.default.track(_.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                location_stack: S
+              e && !S && (u.default.track(_.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                location_stack: v
               }), T(!0))
             },
             children: (0, r.jsx)("div", {
@@ -80,7 +80,7 @@ let O = () => {
               className: j.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {
-            src: C,
+            src: O,
             className: j.bottomIllustration,
             width: 112,
             height: 85,
@@ -88,10 +88,10 @@ let O = () => {
           })]
         })
       })
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(N.Z, {
       isAllPerksVisible: n,
-      setIsAllPerksVisible: O,
-      previousComponent: N.MQ.HOME
+      setIsAllPerksVisible: C,
+      previousComponent: b.MQ.HOME
     })]
   })
 }

@@ -22,8 +22,8 @@ var r, i = n(754793),
   I = 4,
   S = 0,
   T = 2,
-  A = 8,
-  N = 9,
+  N = 8,
+  A = 9,
   C = 15,
   R = 8,
   P = 286,
@@ -195,7 +195,7 @@ function ef(e) {
 }
 
 function e_() {
-  this.strm = null, this.status = 0, this.pending_buf = null, this.pending_buf_size = 0, this.pending_out = 0, this.pending = 0, this.wrap = 0, this.gzhead = null, this.gzindex = 0, this.method = A, this.last_flush = -1, this.w_size = 0, this.w_bits = 0, this.w_mask = 0, this.window = null, this.window_size = 0, this.prev = null, this.head = null, this.ins_h = 0, this.hash_size = 0, this.hash_bits = 0, this.hash_mask = 0, this.hash_shift = 0, this.block_start = 0, this.match_length = 0, this.prev_match = 0, this.match_available = 0, this.strstart = 0, this.match_start = 0, this.lookahead = 0, this.prev_length = 0, this.max_chain_length = 0, this.max_lazy_match = 0, this.level = 0, this.strategy = 0, this.good_match = 0, this.nice_match = 0, this.dyn_ltree = new i.Buf16(2 * L), this.dyn_dtree = new i.Buf16((2 * w + 1) * 2), this.bl_tree = new i.Buf16((2 * D + 1) * 2), $(this.dyn_ltree), $(this.dyn_dtree), $(this.bl_tree), this.l_desc = null, this.d_desc = null, this.bl_desc = null, this.bl_count = new i.Buf16(x + 1), this.heap = new i.Buf16(2 * P + 1), $(this.heap), this.heap_len = 0, this.heap_max = 0, this.depth = new i.Buf16(2 * P + 1), $(this.depth), this.l_buf = 0, this.lit_bufsize = 0, this.last_lit = 0, this.d_buf = 0, this.opt_len = 0, this.static_len = 0, this.matches = 0, this.insert = 0, this.bi_buf = 0, this.bi_valid = 0
+  this.strm = null, this.status = 0, this.pending_buf = null, this.pending_buf_size = 0, this.pending_out = 0, this.pending = 0, this.wrap = 0, this.gzhead = null, this.gzindex = 0, this.method = N, this.last_flush = -1, this.w_size = 0, this.w_bits = 0, this.w_mask = 0, this.window = null, this.window_size = 0, this.prev = null, this.head = null, this.ins_h = 0, this.hash_size = 0, this.hash_bits = 0, this.hash_mask = 0, this.hash_shift = 0, this.block_start = 0, this.match_length = 0, this.prev_match = 0, this.match_available = 0, this.strstart = 0, this.match_start = 0, this.lookahead = 0, this.prev_length = 0, this.max_chain_length = 0, this.max_lazy_match = 0, this.level = 0, this.strategy = 0, this.good_match = 0, this.nice_match = 0, this.dyn_ltree = new i.Buf16(2 * L), this.dyn_dtree = new i.Buf16((2 * w + 1) * 2), this.bl_tree = new i.Buf16((2 * D + 1) * 2), $(this.dyn_ltree), $(this.dyn_dtree), $(this.bl_tree), this.l_desc = null, this.d_desc = null, this.bl_desc = null, this.bl_count = new i.Buf16(x + 1), this.heap = new i.Buf16(2 * P + 1), $(this.heap), this.heap_len = 0, this.heap_max = 0, this.depth = new i.Buf16(2 * P + 1), $(this.depth), this.l_buf = 0, this.lit_bufsize = 0, this.last_lit = 0, this.d_buf = 0, this.opt_len = 0, this.static_len = 0, this.matches = 0, this.insert = 0, this.bi_buf = 0, this.bi_valid = 0
 }
 
 function ep(e) {
@@ -215,14 +215,14 @@ function em(e, t) {
 function eg(e, t, n, r, o, a) {
   if (!e) return m;
   var s = 1;
-  if (t === b && (t = 6), r < 0 ? (s = 0, r = -r) : r > 15 && (s = 2, r -= 16), o < 1 || o > N || n !== A || r < 8 || r > 15 || t < 0 || t > 9 || a < 0 || a > I) return X(e, m);
+  if (t === b && (t = 6), r < 0 ? (s = 0, r = -r) : r > 15 && (s = 2, r -= 16), o < 1 || o > A || n !== N || r < 8 || r > 15 || t < 0 || t > 9 || a < 0 || a > I) return X(e, m);
   8 === r && (r = 9);
   var l = new e_;
   return e.state = l, l.strm = e, l.wrap = s, l.gzhead = null, l.w_bits = r, l.w_size = 1 << l.w_bits, l.w_mask = l.w_size - 1, l.hash_bits = o + 7, l.hash_size = 1 << l.hash_bits, l.hash_mask = l.hash_size - 1, l.hash_shift = ~~((l.hash_bits + M - 1) / M), l.window = new i.Buf8(2 * l.w_size), l.head = new i.Buf16(l.hash_size), l.prev = new i.Buf16(l.w_size), l.lit_bufsize = 1 << o + 6, l.pending_buf_size = 4 * l.lit_bufsize, l.pending_buf = new i.Buf8(l.pending_buf_size), l.d_buf = +l.lit_bufsize, l.l_buf = 3 * l.lit_bufsize, l.level = t, l.strategy = a, l.method = n, eh(e)
 }
 
 function eE(e, t) {
-  return eg(e, t, A, C, R, S)
+  return eg(e, t, N, C, R, S)
 }
 
 function eb(e, t) {
@@ -231,7 +231,7 @@ function eb(e, t) {
   if (i.strm = e, n = i.last_flush, i.last_flush = t, i.status === G) {
     if (2 === i.wrap) e.adler = 0, en(i, 31), en(i, 139), en(i, 8), i.gzhead ? (en(i, +!!i.gzhead.text + 2 * !!i.gzhead.hcrc + 4 * !!i.gzhead.extra + 8 * !!i.gzhead.name + 16 * !!i.gzhead.comment), en(i, 255 & i.gzhead.time), en(i, i.gzhead.time >> 8 & 255), en(i, i.gzhead.time >> 16 & 255), en(i, i.gzhead.time >> 24 & 255), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= y || i.level < 2)), en(i, 255 & i.gzhead.os), i.gzhead.extra && i.gzhead.extra.length && (en(i, 255 & i.gzhead.extra.length), en(i, i.gzhead.extra.length >> 8 & 255)), i.gzhead.hcrc && (e.adler = s(e.adler, i.pending_buf, i.pending, 0)), i.gzindex = 0, i.status = B) : (en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= y || i.level < 2)), en(i, Q), i.status = H);
     else {
-      var n, i, a, l, g = A + (i.w_bits - 8 << 4) << 8,
+      var n, i, a, l, g = N + (i.w_bits - 8 << 4) << 8,
         b = -1;
       g |= (b = i.strategy >= y || i.level < 2 ? 0 : i.level < 6 ? 1 : 6 === i.level ? 2 : 3) << 6, 0 !== i.strstart && (g |= U), g += 31 - g % 31, i.status = H, er(i, g), 0 !== i.strstart && (er(i, e.adler >>> 16), er(i, 65535 & e.adler)), e.adler = 1
     }
