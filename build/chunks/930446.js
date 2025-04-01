@@ -2,7 +2,8 @@
 "use strict";
 n.d(t, {
   GG: () => u,
-  Gy: () => c
+  Gy: () => c,
+  S9: () => d
 });
 var r = n(772848),
   i = n(70956),
@@ -14,7 +15,7 @@ let s = 12,
 function c() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
     t = Date.now();
-  return null == l || d(l) ? l = {
+  return null == l || f(l) ? l = {
     uuid: (0, r.Z)(),
     initialized: t,
     lastUsed: t
@@ -25,7 +26,11 @@ function u() {
   l = null
 }
 
-function d(e) {
+function d() {
+  return l
+}
+
+function f(e) {
   let t = Date.now();
   if (t < e.initialized) return o.Z.addBreadcrumb({
     category: "ad",

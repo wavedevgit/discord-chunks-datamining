@@ -1,7 +1,7 @@
 /** Chunk was on 13323 **/
 n.d(t, {
   Z: () => C
-}), n(47120), n(26686), n(653041);
+}), n(47120), n(653041), n(26686);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
@@ -83,7 +83,21 @@ let j = {
           [e]: (0, h.z)(t, n)
         }))
       })
-    }, U = e => {
+    }, U = (e, t) => {
+      let n = B(e);
+      null != n && (0, h.i0)(n, e => {
+        w(r => {
+          let i = [...r],
+            s = r[t];
+          if (null == s) return r;
+          let a = _({}, s);
+          return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
+            src: e,
+            filename: n.name
+          }), i[t] = a, i
+        })
+      })
+    }, V = e => {
       W(t => E(_({}, t), {
         [e]: null
       }))
@@ -100,18 +114,18 @@ let j = {
         })))
       })
     }, [t.config.stillFrames]);
-    let V = {
+    let G = {
         effect: t,
         upsertConfig: s
       },
-      G = i.useRef(V);
+      F = i.useRef(G);
     return (i.useEffect(() => {
-      G.current = V
+      F.current = G
     }), i.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
-      } = G.current;
+      } = F.current;
       t({
         id: e.id,
         name: R,
@@ -287,7 +301,7 @@ let j = {
                     size: c.PhG.TINY,
                     color: c.Ttl.RED,
                     look: c.iLD.OUTLINED,
-                    onClick: () => U(t),
+                    onClick: () => V(t),
                     children: "Clear"
                   })]
                 }, t)
@@ -351,13 +365,21 @@ let j = {
                 alt: ""
               }), null != e.randomizedSources && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(c.X6q, {
-                  variant: "heading-sm/bold",
+                  variant: "heading-md/bold",
                   children: "Alternatives"
-                }), e.randomizedSources.map((e, t) => (0, r.jsx)("img", {
-                  src: e.src,
-                  className: b.layerPreview,
-                  alt: ""
-                }, t))]
+                }), e.randomizedSources.map((e, t) => {
+                  var n;
+                  return (0, r.jsxs)("div", {
+                    children: [null != e.filename && (0, r.jsx)(c.X6q, {
+                      variant: "heading-sm/semibold",
+                      children: e.filename
+                    }), (0, r.jsx)("img", {
+                      src: e.src,
+                      className: b.layerPreview,
+                      alt: ""
+                    })]
+                  }, null !== (n = e.filename) && void 0 !== n ? n : "randomized-".concat(t))
+                })]
               })]
             }), (0, r.jsxs)("div", {
               className: a()(b.grid, b.section),
@@ -448,21 +470,7 @@ let j = {
                   children: "Add Alternative"
                 }), (0, r.jsx)(d.Z, {
                   ref: T,
-                  onChange: e => {
-                    let n = e.currentTarget.files;
-                    if (null == n) return;
-                    let r = n[0],
-                      i = new FileReader;
-                    i.onload = e => {
-                      w(n => {
-                        if (null == e.target || "string" != typeof e.target.result) return n;
-                        let r = [...n];
-                        return null == n[t].randomizedSources && (n[t].randomizedSources = []), n[t].randomizedSources.push({
-                          src: e.target.result
-                        }), r
-                      })
-                    }, i.readAsDataURL(r)
-                  },
+                  onChange: e => U(e, t),
                   multiple: !1
                 })]
               }), (0, r.jsx)(c.zxk, {
