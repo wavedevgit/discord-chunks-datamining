@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: c99ee611e43886e9
+  Original File Name: 62f8e13368d4f50c
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -4914,27 +4914,27 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-top: 12px
 }
 
-.container_ccfb90 {
-    padding: 16px;
-    max-width: 480px
+.modalRoot__5d321 {
+    padding: 8px;
+    max-width: 600px
 }
 
-.modalHeader_ccfb90 {
+.modalHeader__5d321 {
     justify-content: center;
     margin-bottom: 8px
 }
 
-.modalContent_ccfb90 {
+.modalContent__5d321 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.instructionsList_ccfb90 {
+.instructionsList__5d321 {
     margin-left: 16px
 }
 
-.instructionsList_ccfb90 li {
+.instructionsList__5d321 li {
     color: var(--text-secondary);
     list-style-type: disc;
     list-style-position: inside;
@@ -5052,6 +5052,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: 8px
 }
 
+.instructionsButton__77347 {
+    margin-left: auto
+}
+
 .uploadedFileListItem__77347 {
     display: flex;
     flex-direction: row;
@@ -5076,6 +5080,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     z-index: 1
 }
 
+.divider__77347 {
+    margin: 8px 0 16px
+}
+
 .container__0ccef {
     display: flex;
     flex-direction: column;
@@ -5090,7 +5098,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 12px;
+    padding: 0 12px;
     overflow-y: auto
 }
 
@@ -5199,4 +5207,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=c99ee611e43886e9.css.map*/
+/*# sourceMappingURL=62f8e13368d4f50c.css.map*/

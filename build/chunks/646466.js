@@ -1,59 +1,75 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  O: () => f
+  O: () => v
 }), n(47120);
 var r = n(200651),
   a = n(192379),
   l = n(481060),
   i = n(406432),
-  o = n(373071),
-  s = n(726862),
-  c = n(619899),
-  d = n(18868),
-  u = n(281598),
-  m = n(407121);
-let x = () => (0, l.ZDy)(async () => {
-    let {
-      default: e
-    } = await Promise.resolve().then(n.bind(n, 726862));
-    return t => (0, r.jsx)(e, function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({}, t))
-  }, {
-    modalKey: s.c,
-    onCloseRequest: () => (0, l.Mr3)(s.c)
-  }),
-  h = () => {
-    let e = (0, o.sg)(),
+  o = n(511010),
+  s = n(373071),
+  c = n(637443),
+  d = n(619899),
+  u = n(18868),
+  m = n(281598),
+  x = n(407121);
+
+function h(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+let p = () => {
+    (0, l.nfh)(c.g) ? (0, l.Mr3)(c.g) : (0, l.ZDy)(async () => {
+      let {
+        ShopAssetsPreviewInstructionModal: e
+      } = await Promise.resolve().then(n.bind(n, 637443));
+      return t => (0, r.jsx)(e, h({}, t))
+    }, {
+      modalKey: c.g,
+      onCloseRequest: () => (0, l.Mr3)(c.g)
+    })
+  },
+  b = () => {
+    (0, l.nfh)(c.c) ? (0, l.Mr3)(c.c) : (0, l.ZDy)(async () => {
+      let {
+        ShopPFXPreviewInstructionModal: e
+      } = await Promise.resolve().then(n.bind(n, 637443));
+      return t => (0, r.jsx)(e, h({}, t))
+    }, {
+      modalKey: c.c,
+      onCloseRequest: () => (0, l.Mr3)(c.c)
+    })
+  },
+  f = () => {
+    let e = (0, s.sg)(),
       {
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
-      } = (0, c.N9)(),
+      } = (0, d.N9)(),
       i = a.useMemo(() => e.map(e => ({
         label: e.name,
         value: e.id
       })), [e]);
     return (0, r.jsxs)("div", {
-      className: m.profileEffectPreviewSelector,
+      className: x.profileEffectPreviewSelector,
       children: [(0, r.jsx)(l.LZC, {
         size: 16
       }), (0, r.jsxs)("div", {
-        className: m.headingContainer,
+        className: x.headingContainer,
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-md/bold",
           children: "Preview Profile Effect"
@@ -62,6 +78,14 @@ let x = () => (0, l.ZDy)(async () => {
           size: l.zxk.Sizes.TINY,
           onClick: () => n(null),
           children: "Clear"
+        }), (0, r.jsx)(l.zxk, {
+          look: l.zxk.Looks.BLANK,
+          size: l.zxk.Sizes.SMALL,
+          onClick: b,
+          className: x.instructionsButton,
+          children: (0, r.jsx)(l.idN, {
+            color: l.TVs.colors.BG_BRAND
+          })
         })]
       }), (0, r.jsx)(l.q4e, {
         options: i,
@@ -70,24 +94,24 @@ let x = () => (0, l.ZDy)(async () => {
       })]
     })
   },
-  p = e => {
+  _ = e => {
     let {
       handleClearIgnoredFiles: t
     } = e, {
       assets: n,
       deleteAsset: i,
       clearAssets: o
-    } = (0, c.N9)(), s = a.useMemo(() => Object.values(n).map(e => ({
+    } = (0, d.N9)(), s = a.useMemo(() => Object.values(n).map(e => ({
       label: e.name,
       value: e.type
-    })), [n]), d = a.useCallback(e => i(e), [i]), u = a.useCallback(() => {
+    })), [n]), c = a.useCallback(e => i(e), [i]), u = a.useCallback(() => {
       o(), t()
     }, [o, t]);
     return 0 === s.length ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
         size: 16
       }), (0, r.jsxs)("div", {
-        className: m.headingContainer,
+        className: x.headingContainer,
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Uploaded Assets"
@@ -99,12 +123,12 @@ let x = () => (0, l.ZDy)(async () => {
         })]
       }), (0, r.jsx)("ul", {
         children: s.map(e => (0, r.jsxs)("li", {
-          className: m.uploadedFileListItem,
+          className: x.uploadedFileListItem,
           children: [(0, r.jsx)(l.zxk, {
-            innerClassName: m.removeFileButtonInnerContents,
+            innerClassName: x.removeFileButtonInnerContents,
             look: l.zxk.Looks.BLANK,
             size: l.zxk.Sizes.ICON,
-            onClick: () => d(e.value),
+            onClick: () => c(e.value),
             children: (0, r.jsx)(l.Dio, {
               color: l.TVs.colors.TEXT_DANGER
             })
@@ -116,7 +140,7 @@ let x = () => (0, l.ZDy)(async () => {
       })]
     })
   },
-  b = e => {
+  g = e => {
     let {
       ignoredFiles: t,
       handleClearIgnoredFiles: n
@@ -125,7 +149,7 @@ let x = () => (0, l.ZDy)(async () => {
       children: [(0, r.jsx)(l.LZC, {
         size: 16
       }), (0, r.jsxs)("div", {
-        className: m.headingContainer,
+        className: x.headingContainer,
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Ignored Files"
@@ -137,7 +161,7 @@ let x = () => (0, l.ZDy)(async () => {
         })]
       }), (0, r.jsx)("ul", {
         children: t.map((e, t) => (0, r.jsx)("li", {
-          className: m.ignoredFileListItem,
+          className: x.ignoredFileListItem,
           children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             children: e
@@ -146,59 +170,61 @@ let x = () => (0, l.ZDy)(async () => {
       })]
     })
   },
-  f = () => {
+  v = () => {
     let [e, t] = a.useState([]), {
       upsertAsset: n,
-      previewEnabled: o,
-      setPreviewEnabled: s
-    } = (0, c.N9)(), f = a.useCallback((e, r) => {
-      let a = u.Kj[e.name];
+      previewEnabled: s,
+      setPreviewEnabled: c
+    } = (0, d.N9)(), h = a.useCallback((e, r) => {
+      let a = m.Kj[e.name];
       if (null == a) {
         t(t => [...t, e.name]);
         return
       }
       n(a, e)
-    }, [n]), _ = a.useCallback(async e => {
+    }, [n]), b = a.useCallback(async e => {
       t([]);
-      let n = await (0, u.RF)(e),
+      let n = await (0, m.RF)(e),
         r = !1;
       n.forEach(e => {
-        ((0, i.tw)(e.type) || (0, i.X2)(e.type)) && (r = !0, (0, u.ZK)(e, f, u.Eo))
-      }), r ? s(!0) : (0, d.Y)()
-    }, [f, s]), g = a.useCallback(() => t([]), []);
+        ((0, i.tw)(e.type) || (0, i.X2)(e.type)) && (r = !0, (0, m.ZK)(e, h, m.Eo))
+      }), r ? c(!0) : (0, u.Y)()
+    }, [h, c]), v = a.useCallback(() => t([]), []);
     return (0, r.jsxs)("div", {
-      className: m.container,
-      children: [(0, r.jsx)(d.L, {
-        onDrop: _
+      className: x.container,
+      children: [(0, r.jsx)(o.Z, {
+        className: x.divider
+      }), (0, r.jsx)(u.L, {
+        onDrop: b
       }), (0, r.jsxs)("div", {
-        className: m.uploadInstructionsContainer,
-        children: [(0, r.jsx)(l.Text, {
+        className: x.previewToggleContainer,
+        children: [(0, r.jsx)(l.rsf, {
+          checked: s,
+          onChange: e => c(e)
+        }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: "To upload assets for preview, drop them in this panel."
+          children: "Enable Preview"
         }), (0, r.jsx)(l.zxk, {
           look: l.zxk.Looks.BLANK,
           size: l.zxk.Sizes.SMALL,
-          onClick: x,
+          onClick: p,
+          className: x.instructionsButton,
           children: (0, r.jsx)(l.idN, {
             color: l.TVs.colors.BG_BRAND
           })
         })]
-      }), (0, r.jsxs)("div", {
-        className: m.previewToggleContainer,
-        children: [(0, r.jsx)(l.rsf, {
-          checked: o,
-          onChange: e => s(e)
-        }), (0, r.jsx)(l.Text, {
-          variant: "text-md/normal",
-          children: "Enable Preview"
-        })]
-      }), (0, r.jsx)(h, {}), (0, r.jsx)(p, {
-        handleClearIgnoredFiles: g
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(l.Text, {
+        variant: "text-md/normal",
+        children: "Drop files in this panel to begin preview."
+      }), (0, r.jsx)(f, {}), (0, r.jsx)(_, {
+        handleClearIgnoredFiles: v
+      }), (0, r.jsx)(g, {
         ignoredFiles: e,
-        handleClearIgnoredFiles: g
+        handleClearIgnoredFiles: v
       }), (0, r.jsx)(l.LZC, {
         size: 16
+      }), (0, r.jsx)(o.Z, {
+        className: x.divider
       })]
     })
   }

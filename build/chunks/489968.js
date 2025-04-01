@@ -34,7 +34,7 @@ function j() {
         windowKey: e
       }), {
         defaultWidth: 854,
-        defaultHeight: 480
+        defaultHeight: 768
       })
     },
     j = () => {

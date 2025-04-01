@@ -16,17 +16,22 @@ function u(e) {
     isSettingsOpen: t
   } = e, {
     activePickerChannelId: n,
-    openPickerForChannel: u
-  } = (0, l.B)(), d = (0, r.e7)([a.Z], () => a.Z.getCurrentlySelectedChannelId()), {
-    canAccessPicker: f
+    openPickerForChannel: u,
+    setLastShownChatWallpaperPickerType: d,
+    lastShownChatWallpaperPickerType: f
+  } = (0, l.B)(), _ = (0, r.e7)([a.Z], () => a.Z.getCurrentlySelectedChannelId()), {
+    canAccessPicker: p
   } = (0, s.m)({
     location: "useChatWallpaperPickerConfig",
-    selectedChannelId: d
-  }), _ = f && !t, [p, h] = (0, o.US)(_ ? [i.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []);
-  if (!f) return;
-  let m = p === i.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
-  if (m && null != d && null == n && u(d), n === d) return {
-    pickerType: m ? c.jQ.COACHMARK : c.jQ.DEFAULT,
-    markDismissed: m ? h : void 0
+    selectedChannelId: _
+  }), h = p && !t, [m, g] = (0, o.US)(h ? [i.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []);
+  if (!p) return;
+  let E = m === i.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
+  if (E && null != _ && null == n && f !== c.jQ.COACHMARK && u(_), n === _) {
+    let e = E ? c.jQ.COACHMARK : c.jQ.DEFAULT;
+    return f !== e && d(e), {
+      pickerType: e,
+      markDismissed: E ? g : void 0
+    }
   }
 }

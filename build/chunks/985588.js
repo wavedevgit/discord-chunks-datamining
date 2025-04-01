@@ -56,7 +56,7 @@ function E(e) {
     l = (0, r.e7)([u.ZP, d.Z], () => {
       let t = null == n ? void 0 : n.guild_id;
       if (null == t) return !1;
-      let r = null !== u.ZP.getMember(t, e.id),
+      let r = null != u.ZP.getMember(t, e.id),
         i = d.Z.getCheck(t).canChat;
       return r && i
     }),
