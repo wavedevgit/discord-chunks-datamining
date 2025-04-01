@@ -1,7 +1,7 @@
 /** Chunk was on 34059 **/
 n.d(t, {
   Q: () => U,
-  Z: () => H
+  Z: () => F
 });
 var r = n(200651),
   i = n(192379),
@@ -123,7 +123,7 @@ let U = 16 / 9,
       }))
     })
   },
-  F = e => {
+  H = e => {
     let {
       stageParticipant: t,
       rtcParticipant: n,
@@ -170,7 +170,7 @@ let U = 16 / 9,
       children: a && n.type === M.fO.USER && (0, r.jsx)(R.Z, {})
     }, m)
   },
-  H = i.memo(function(e) {
+  F = i.memo(function(e) {
     var t;
     let {
       participant: i,
@@ -254,7 +254,7 @@ let U = 16 / 9,
             })
         }
       };
-    return O.type !== M.fO.USER || (null === (t = O.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? (0, r.jsx)(F, {
+    return O.type !== M.fO.USER || (null === (t = O.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? (0, r.jsx)(H, {
       stageParticipant: i,
       rtcParticipant: O,
       channel: l,

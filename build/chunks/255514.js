@@ -90,8 +90,8 @@ let q = e => {
     node: t,
     reportType: n,
     reportSubType: q,
-    history: V,
-    onSelectChild: H,
+    history: H,
+    onSelectChild: V,
     onModalClose: K,
     onSubmit: Y,
     multiSelect: Q,
@@ -105,7 +105,7 @@ let q = e => {
       isValid: n
     }, ef(r), eh((0, s.VP)(er, el, ee, r, em))
   }, ev = l.useMemo(() => e => {
-    H({
+    V({
       nodeRef: t.id,
       destination: e,
       textInput: null != er || null != el ? ep : void 0,
@@ -114,7 +114,7 @@ let q = e => {
         state: em
       } : void 0
     })
-  }, [t, H, ee, em, ep, er, el]);
+  }, [t, V, ee, em, ep, er, el]);
   l.useEffect(() => {
     null != Q && ex(Q), null != $ && ef($)
   }, [Q, $]);
@@ -160,7 +160,7 @@ let q = e => {
       }), null != ei && (0, r.jsx)(D.Z, {
         element: ei
       }), null != F(t, "breadcrumbs") && (0, r.jsx)(m.Z, {
-        history: V
+        history: H
       }), null != F(t, "message_preview") && ("message" === n.name || "first_dm" === n.name) && (0, r.jsx)(T.Z, {
         message: n.record
       }), null != F(t, "user_preview") && "user" === n.name ? (0, r.jsx)(R.Z, {
@@ -268,7 +268,7 @@ let q = e => {
         }
       },
       onBackClicked: e.onNavigateBack,
-      canNavigateBack: V.length > 0
+      canNavigateBack: H.length > 0
     }), (0, r.jsx)(i.olH, {
       className: U.closeButton,
       onClick: K

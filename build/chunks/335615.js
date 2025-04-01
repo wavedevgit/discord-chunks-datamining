@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(347475),
   U = n(706454),
   B = n(662594),
-  F = n(430824),
-  H = n(944486),
+  H = n(430824),
+  F = n(944486),
   G = n(111583),
   V = n(594174),
   z = n(979651),
@@ -188,7 +188,7 @@ class ea extends i.Component {
       (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387)), t = z.Z.isInChannel(H.Z.getVoiceChannelId(), this.props.user.id);
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387)), t = z.Z.isInChannel(F.Z.getVoiceChannelId(), this.props.user.id);
         return n => (0, r.jsx)(e, en(et({}, n), {
           user: this.props.user,
           guildId: this.props.guildId,
@@ -233,9 +233,9 @@ let es = i.memo(e => {
       channel: i,
       user: l,
       index: o
-    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([G.Z], () => G.Z.isTyping(i.id, l.id)), u = (0, h.e7)([V.default], () => V.default.getCurrentUser()), d = (0, h.e7)([F.Z], () => {
+    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([G.Z], () => G.Z.isTyping(i.id, l.id)), u = (0, h.e7)([V.default], () => V.default.getCurrentUser()), d = (0, h.e7)([H.Z], () => {
       var e;
-      return null != t ? null === (e = F.Z.getRole(i.guild_id, t)) || void 0 === e ? void 0 : e.name : void 0
+      return null != t ? null === (e = H.Z.getRole(i.guild_id, t)) || void 0 === e ? void 0 : e.name : void 0
     }, [i, t]), p = (0, M.K)({
       location: "ChannelMembers",
       user: l

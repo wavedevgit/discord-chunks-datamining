@@ -1,16 +1,17 @@
-/** Chunk was on 34588 **/
+/** Chunk was on 6536 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => p
 });
-var r = n(200651);
-n(192379);
-var o = n(120356),
-  a = n.n(o),
-  i = n(481060),
-  s = n(373232);
+var r = n(200651),
+  o = n(192379),
+  a = n(120356),
+  i = n.n(a),
+  s = n(481060),
+  c = n(477747),
+  l = n(373232);
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +30,7 @@ function c(e) {
   return e
 }
 
-function l(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -41,31 +42,33 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = function(e) {
+let p = function(e) {
   var {
     className: t,
     compact: n = !1,
-    contentOnly: o = !1,
-    zalgo: u = !0,
-    disableInteraction: d = !1,
-    childrenRepliedMessage: p,
-    childrenExecutedCommand: g,
-    childrenHeader: m,
-    childrenSystemMessage: f,
-    childrenButtons: _,
-    childrenMessageContent: b,
-    childrenAccessories: h,
-    messageRef: y,
-    focusProps: v = {
+    contentOnly: a = !1,
+    zalgo: p = !0,
+    disableInteraction: g = !1,
+    childrenRepliedMessage: m,
+    childrenExecutedCommand: f,
+    childrenHeader: _,
+    childrenSystemMessage: b,
+    childrenButtons: h,
+    childrenMessageContent: y,
+    childrenAccessories: v,
+    messageRef: O,
+    focusProps: x = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: O,
-    isSystemMessage: x,
-    hasReply: j
-  } = e, C = function(e, t) {
+    hasThread: C,
+    isSystemMessage: j,
+    hasReply: P,
+    authorHasGradientRole: T = !1,
+    guildId: N
+  } = e, I = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -79,32 +82,35 @@ let u = function(e) {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
-  }(e, ["className", "compact", "contentOnly", "zalgo", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply"]);
-  let P = (0, r.jsx)(i.tEY, l(c({}, v), {
-    children: (0, r.jsxs)("div", l(c({
-      className: a()(t, {
-        [s.wrapper]: !0,
-        [s.contentOnly]: o,
-        [s.compact]: n,
-        [s.cozy]: !n,
-        [s.zalgo]: u,
-        [s.hasThread]: O,
-        [s.isSystemMessage]: x,
-        [s.hasReply]: j
-      }),
-      ref: y
-    }, C), {
-      role: "article",
-      children: [p, g, (0, r.jsxs)("div", {
-        className: s.contents,
-        children: [f, m, null == f && b]
-      }), h, null != _ ? (0, r.jsx)("div", {
-        className: s.buttonContainer,
-        children: _
-      }) : null]
-    }))
-  }));
-  return d ? (0, r.jsx)(i.Rny, {
-    children: P
-  }) : P
+  }(e, ["className", "compact", "contentOnly", "zalgo", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "authorHasGradientRole", "guildId"]);
+  let w = (0, c.Z)(N, "BaseMessage"),
+    S = !!o.isValidElement(_) && !!w && T,
+    k = (0, r.jsx)(s.tEY, d(u({}, x), {
+      children: (0, r.jsxs)("div", d(u({
+        className: i()(t, {
+          [l.gradient]: S,
+          [l.wrapper]: !0,
+          [l.contentOnly]: a,
+          [l.compact]: n,
+          [l.cozy]: !n,
+          [l.zalgo]: p,
+          [l.hasThread]: C,
+          [l.isSystemMessage]: j,
+          [l.hasReply]: P
+        }),
+        ref: O
+      }, I), {
+        role: "article",
+        children: [m, f, (0, r.jsxs)("div", {
+          className: l.contents,
+          children: [b, _, null == b && y]
+        }), v, null != h ? (0, r.jsx)("div", {
+          className: l.buttonContainer,
+          children: h
+        }) : null]
+      }))
+    }));
+  return g ? (0, r.jsx)(s.Rny, {
+    children: k
+  }) : k
 }

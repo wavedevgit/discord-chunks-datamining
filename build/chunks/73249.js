@@ -1,6 +1,6 @@
-/** Chunk was on 65176 **/
+/** Chunk was on 89590 **/
 n.d(t, {
-  Z: () => W
+  Z: () => B
 }), n(47120);
 var a = n(200651),
   r = n(192379),
@@ -22,8 +22,8 @@ var a = n(200651),
   h = n(358085),
   S = n(998502),
   v = n(254109),
-  E = n(212459),
-  C = n(369171),
+  C = n(212459),
+  E = n(369171),
   T = n(701865),
   j = n(388032),
   P = n(711461);
@@ -124,11 +124,11 @@ let N = r.forwardRef(function(e, t) {
   })
 });
 
-function A() {
+function w() {
   let {
     zoomed: e,
     setZoomed: t
-  } = (0, E.Y)();
+  } = (0, C.Y)();
   return (0, a.jsx)(N, {
     onClick: () => {
       (0, v.yg)(e ? v.uG.ZOOM_OUT_BUTTON_PRESSED : v.uG.ZOOM_IN_BUTTON_PRESSED), t(!e)
@@ -138,7 +138,7 @@ function A() {
   })
 }
 
-function w(e) {
+function A(e) {
   var t, n;
   let {
     item: o
@@ -310,7 +310,7 @@ function Z(e, t, n) {
   }, n), t) : null
 }
 
-function B(e) {
+function G(e) {
   var t, n;
   let {
     item: o
@@ -345,7 +345,7 @@ function B(e) {
     }
   }) : null
 }
-let W = r.memo(function(e) {
+let B = r.memo(function(e) {
   let {
     item: t,
     hideMediaOptions: n
@@ -353,21 +353,21 @@ let W = r.memo(function(e) {
     var e;
     !o && (null === (e = s.current) || void 0 === e ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
   }, [o]);
-  return ("IMAGE" === t.type || !n) && (0, a.jsx)(C.ZP, {
-    mode: C.lx.FOCUS_SENSITIVE,
+  return ("IMAGE" === t.type || !n) && (0, a.jsx)(E.ZP, {
+    mode: E.lx.FOCUS_SENSITIVE,
     children: e => (0, a.jsxs)("div", {
       ref: s,
       className: i()(P.actionButtons, e),
       onClick: e => e.stopPropagation(),
       onMouseLeave: u,
-      children: ["IMAGE" === t.type && (0, a.jsx)(A, {}), !n && (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(w, {
+      children: ["IMAGE" === t.type && (0, a.jsx)(w, {}), !n && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(A, {
           item: t
         }), (0, a.jsx)(L, {
           item: t
         }), (0, a.jsx)(R, {
           item: t
-        }), (0, a.jsx)(B, {
+        }), (0, a.jsx)(G, {
           item: t
         })]
       })]

@@ -32,7 +32,7 @@ function b() {
     endsAt: l()(0),
     currentEntitlementId: "",
     unactivatedUnits: [],
-    fetched: i
+    fetched: !1
   });
   return (0, d.ZP)(() => {
     (null != t || e) && (p.Z.fetchingAllEntitlements || (0, u.p0)({

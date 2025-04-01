@@ -50,8 +50,8 @@ function I(e) {
     autoTrackExposure: !1
   }), M = (0, s.Z)(_.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
   if (null == t || null != w) return null;
-  let F = (0, m.Z)(t),
-    H = !Z && F,
+  let H = (0, m.Z)(t),
+    F = !Z && H,
     G = !Z && B,
     V = k && M,
     z = R && n;
@@ -59,7 +59,7 @@ function I(e) {
     value: S,
     children: [(0, r.jsxs)("div", {
       className: N.voiceEffectsActionBar,
-      children: [H && (0, r.jsx)(O.Z, {
+      children: [F && (0, r.jsx)(O.Z, {
         channel: t,
         themeable: P
       }), G && (0, r.jsx)(x.Z, {
@@ -77,7 +77,7 @@ function I(e) {
       }), z && (0, r.jsx)(v.Z, {}), z && (0, r.jsx)(y.Z, {
         channel: t
       }), z && (0, r.jsx)(E.Z, {})]
-    }), I && (H || G || V || U || T || z) && (0, r.jsx)("div", {
+    }), I && (F || G || V || U || T || z) && (0, r.jsx)("div", {
       className: N.divider
     })]
   })

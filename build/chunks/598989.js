@@ -1,7 +1,7 @@
 /** Chunk was on 54061 **/
 n.d(t, {
   S: () => l,
-  _: () => d
+  _: () => _
 });
 var o = n(442837),
   i = n(594174),
@@ -16,7 +16,7 @@ function l() {
   }))
 }
 
-function d() {
+function _() {
   let e = (0, o.e7)([i.default], () => i.default.getCurrentUser());
   return r.ZP.canUseIncreasedRecentAvatarsLimit(e)
 }

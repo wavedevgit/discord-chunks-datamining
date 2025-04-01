@@ -1,27 +1,27 @@
 /** Chunk was on 95477 **/
 n.d(t, {
-  Z: () => d
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
-var o = n(120356),
-  i = n.n(o),
-  l = n(481060),
+var l = n(120356),
+  o = n.n(l),
+  i = n(481060),
   a = n(55935),
-  c = n(543388),
-  s = n(223021),
+  s = n(543388),
+  c = n(223021),
   u = n(388032),
-  m = n(373232);
+  d = n(373232);
 
-function p(e) {
+function m(e) {
   var t, n;
   let {
-    tooltipProps: o,
-    timeFormatted: i,
-    children: l,
+    tooltipProps: l,
+    timeFormatted: o,
+    children: i,
     compact: a,
-    timestamp: c,
-    id: s
+    timestamp: s,
+    id: c
   } = e;
   return (0, r.jsx)("time", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -40,16 +40,16 @@ function p(e) {
       })
     }
     return e
-  }({}, o), n = n = {
-    id: s,
-    dateTime: c.toISOString(),
-    children: null != l ? l : (0, r.jsxs)(r.Fragment, {
+  }({}, l), n = n = {
+    id: c,
+    dateTime: s.toISOString(),
+    children: null != i ? i : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("i", {
-        className: m.separator,
+        className: d.separator,
         "aria-hidden": !0,
         children: a ? "[" : " — "
-      }), i, a && (0, r.jsxs)("i", {
-        className: m.separator,
+      }), o, a && (0, r.jsxs)("i", {
+        className: d.separator,
         "aria-hidden": !0,
         children: ["]", " "]
       })]
@@ -65,52 +65,52 @@ function p(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
-let d = function(e) {
+let p = function(e) {
   let {
     children: t,
     className: n,
-    compact: o = !1,
-    timestamp: d,
+    compact: l = !1,
+    timestamp: p,
     isVisibleOnlyOnHover: f = !1,
-    cozyAlt: b = !1,
-    isInline: y = !0,
-    id: g,
+    cozyAlt: g = !1,
+    isInline: b = !0,
+    id: y,
     isEdited: O = !1,
-    application: j,
-    tooltipPosition: v
-  } = e, h = new Date(d), x = (0, a.Hg)(h), P = o ? (0, a.vc)(h, "LT") : (0, a.Y4)(h, !0), S = o ? (0, s.Z)(P) : null, T = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
+    application: v,
+    tooltipPosition: h
+  } = e, j = new Date(p), x = (0, a.Hg)(j), S = l ? (0, a.vc)(j, "LT") : (0, a.Y4)(j, !0), P = l ? (0, c.Z)(S) : null, N = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: x
   }) : x;
   return (0, r.jsx)("span", {
-    className: i()(n, S, {
-      [m.timestamp]: !0,
-      [m.timestampVisibleOnHover]: f,
-      [m.timestampInline]: y,
-      [m.alt]: b
+    className: o()(n, P, {
+      [d.timestamp]: !0,
+      [d.timestampVisibleOnHover]: f,
+      [d.timestampInline]: b,
+      [d.alt]: g
     }),
-    children: null == j ? (0, r.jsx)(l.ua7, {
-      text: (0, a.vc)(h, "LLLL"),
-      "aria-label": T,
-      tooltipClassName: m.timestampTooltip,
-      position: v,
+    children: null == v ? (0, r.jsx)(i.ua7, {
+      text: (0, a.vc)(j, "LLLL"),
+      "aria-label": N,
+      tooltipClassName: d.timestampTooltip,
+      position: h,
       delay: 750,
-      children: e => (0, r.jsx)(p, {
+      children: e => (0, r.jsx)(m, {
         tooltipProps: e,
-        timeFormatted: P,
-        timestamp: h,
-        id: g,
-        compact: o,
+        timeFormatted: S,
+        timestamp: j,
+        id: y,
+        compact: l,
         children: t
       })
-    }) : (0, r.jsx)(c.Z, {
-      application: j,
-      timestamp: h,
-      compact: o,
-      children: (0, r.jsx)(p, {
-        timeFormatted: P,
-        timestamp: h,
-        id: g,
-        compact: o,
+    }) : (0, r.jsx)(s.Z, {
+      application: v,
+      timestamp: j,
+      compact: l,
+      children: (0, r.jsx)(m, {
+        timeFormatted: S,
+        timestamp: j,
+        id: y,
+        compact: l,
         children: t
       })
     })

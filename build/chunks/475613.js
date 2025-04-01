@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(503817),
   l = n(211065),
-  o = n(66630);
+  a = n(66630);
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,5 +46,5 @@ function s(e) {
   }(e, ["location"]);
   return (0, i.D)({
     location: t
-  }) ? (0, r.jsx)(o.Z, a({}, n)) : (0, r.jsx)(l.Z, a({}, n))
+  }) ? (0, r.jsx)(a.Z, o({}, n)) : (0, r.jsx)(l.Z, o({}, n))
 }

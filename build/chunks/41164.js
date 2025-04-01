@@ -6,8 +6,8 @@ var i = n(200651);
 n(192379);
 var a = n(481060),
   l = n(230711),
-  r = n(181211),
-  o = n(188879),
+  o = n(181211),
+  r = n(188879),
   s = n(981631),
   c = n(726985),
   d = n(388032),
@@ -19,7 +19,7 @@ let p = e => {
     onClose: n,
     classificationId: p,
     source: h
-  } = e, f = (0, r.Z)(), g = () => {
+  } = e, f = (0, o.Z)(), g = () => {
     n(), l.Z.open(s.oAB.ACCOUNT, c.s6.PRIVACY_AND_SAFETY_STANDING)
   };
   return (0, i.jsxs)(a.Y0X, {
@@ -37,7 +37,7 @@ let p = e => {
       })]
     }), (0, i.jsx)(a.hzk, {
       className: u.modalContent,
-      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(o.Z, {
+      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(r.Z, {
         classificationId: p,
         source: h,
         onError: g,

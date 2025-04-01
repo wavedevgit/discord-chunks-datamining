@@ -1,6 +1,6 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  D: () => o
+  D: () => a
 });
 var r = n(818083),
   i = n(355820);
@@ -29,7 +29,7 @@ let l = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
@@ -37,13 +37,13 @@ function o(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabledWithStatusSelection: o,
-    enabledWithoutSatusSelection: a
+    enabledWithStatusSelection: a,
+    enabledWithoutSatusSelection: o
   } = l.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return o || a
+  return a || o
 }

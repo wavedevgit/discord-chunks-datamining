@@ -1,12 +1,12 @@
 /** Chunk was on 18831 **/
 n.d(t, {
-  Z: () => r
+  Z: () => o
 });
 var i = n(200651);
 n(192379);
 var a = n(481060),
   l = n(570140);
-let r = {
+let o = {
   open(e) {
     l.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_OPEN",

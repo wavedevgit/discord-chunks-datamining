@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(541716),
   U = n(752305),
   B = n(516887),
-  F = n(974251),
-  H = n(893718),
+  H = n(974251),
+  F = n(893718),
   G = n(436660),
   V = n(131565),
   z = n(603009),
@@ -95,8 +95,8 @@ var r = n(200651),
   eW = n(979956),
   eU = n(655687),
   eB = n(165540),
-  eF = n(583027),
-  eH = n(25007),
+  eH = n(583027),
+  eF = n(25007),
   eG = n(685006),
   eV = n(685722),
   ez = n(199649),
@@ -254,7 +254,7 @@ class e6 extends i.PureComponent {
       pendingScheduledMessage: _
     } = this.props, {
       contentWarningProps: C
-    } = this.state, y = (0, r.jsx)(H.Z, {
+    } = this.state, y = (0, r.jsx)(F.Z, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
@@ -420,7 +420,7 @@ class e6 extends i.PureComponent {
           let {
             location: t,
             sectionName: n
-          } = null !== (h = (0, eF._U)(l)) && void 0 !== h ? h : {}, r = e === k.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
+          } = null !== (h = (0, eH._U)(l)) && void 0 !== h ? h : {}, r = e === k.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
           if (!await (0, S.L)({
               applicationId: l.applicationId,
               channel: c,
@@ -431,7 +431,7 @@ class e6 extends i.PureComponent {
             shouldClear: !1,
             shouldRefocus: !0
           });
-          (0, eF.SC)(l)
+          (0, eH.SC)(l)
         }
         let n = await (0, L.Z)({
           command: l,
@@ -539,7 +539,7 @@ class e6 extends i.PureComponent {
       var t, n;
       let r = null === (t = this.editorRef) || void 0 === t ? void 0 : t.getSlateEditor();
       null != r && (G.Q.select(r, []), r.insertText(e), null === (n = this.editorRef) || void 0 === n || n.focus())
-    }), e$(this, "renderAttachButton", (e, t) => (0, r.jsx)(F.Z, {
+    }), e$(this, "renderAttachButton", (e, t) => (0, r.jsx)(H.Z, {
       className: t,
       channel: this.props.channel,
       draftType: eO.d.ChannelMessage,
@@ -687,7 +687,7 @@ class e5 extends i.PureComponent {
               }), B && (0, r.jsx)(eq.Z, {
                 recipientUser: S,
                 voiceChannel: Z
-              }), (0, r.jsx)(eH.Z, {
+              }), (0, r.jsx)(eF.Z, {
                 channel: n,
                 guild: i,
                 narrow: w

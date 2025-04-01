@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => er
-}), n(301563), n(757143), n(653041), n(47120), n(566702), n(474991), n(398202);
+}), n(301563), n(757143), n(653041), n(627494), n(47120), n(566702), n(474991), n(398202);
 var r = n(392711),
   i = n.n(r),
   o = n(477660),
@@ -148,10 +148,10 @@ let V = e => {
     }),
     tel: M(L({}, a().defaultRules.mailto), {
       requiredFirstCharacters: ["<"],
-      match: a().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:[0-9]+)(?:-[0-9]+)*)>/),
+      match: a().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:([0-9]+|\([0-9]+\)))(?:[- .\/]?([0-9]+|\([0-9]+\)))+)>/),
       parse(e) {
         let t = e[1],
-          n = e[1];
+          n = e[1].replaceAll(/[ \/]+/g, "-");
         return n.startsWith("tel:") || n.startsWith("sms:") || (n = "tel:" + n), {
           type: "link",
           content: [{

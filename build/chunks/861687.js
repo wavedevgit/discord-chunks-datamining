@@ -388,61 +388,63 @@ class ev extends f.Z {
           hardware_enabled: L.Z.getHardwareEncoding()
         }), i, e.getNetworkStats(), e.getCodecUsageStats("receiver", t)))
       }));
-      let t = k.Z.shouldIncludePreferredRegion() ? k.Z.getPreferredRegion() : null,
-        n = await (null === (c = this._systemResources) || void 0 === c ? void 0 : c.getBatteryLevelStats()),
-        i = L.Z.getSettings(),
-        o = D.Z.getChannel(this.channelId),
-        a = null === (d = C.Z.getFirstConnectionStatsByContext(eo.Yn.DEFAULT)) || void 0 === d ? void 0 : null === (u = d.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === u ? void 0 : u.sampleRateMismatchPercent;
-      U.default.track(ei.rMx.VOICE_DISCONNECT, ec(es(ec(es({}, this._getAnalyticsProperties()), {
-        hostname: this.hostname,
-        port: this.port,
-        protocol: this.protocol,
-        reconnect: A,
-        reason: r,
-        duration: this.getDuration()
-      }), null === (f = this._voiceQuality) || void 0 === f ? void 0 : f.getMosStats(), null === (_ = this._voiceQuality) || void 0 === _ ? void 0 : _.getPacketStats(), null === (p = this._voiceQuality) || void 0 === p ? void 0 : p.getBytesStats(), null === (h = this._voiceQuality) || void 0 === h ? void 0 : h.getBufferStats(), null === (m = this._voiceQuality) || void 0 === m ? void 0 : m.getNetworkStats(), null === (g = this._voiceQuality) || void 0 === g ? void 0 : g.getSystemResourceStats(), null === (E = this._voiceQuality) || void 0 === E ? void 0 : E.getFrameOpStats(), null === (b = this._voiceQuality) || void 0 === b ? void 0 : b.getDurationStats(), null === (v = this._voiceQuality) || void 0 === v ? void 0 : v.getTransportStats(), null === (y = this._voiceQuality) || void 0 === y ? void 0 : y.getE2EEStats(), null === (I = this._voiceQuality) || void 0 === I ? void 0 : I.getAudioDeviceStats(), null === (S = this._voiceDuration) || void 0 === S ? void 0 : S.getDurationStats(), this.getAudioDeviceStates(), null === (T = this._systemResponsiveness) || void 0 === T ? void 0 : T.getPttQueueLatencyStats()), {
-        media_session_id: this.getMediaSessionId(),
-        channel_bitrate: null != o ? o.bitrate : null,
-        cloudflare_best_region: t,
-        connect_count: this._connectCount,
-        ping_average: Math.round(this.getAveragePing()),
-        ping_bad_count: this._pingBadCount,
-        ping_timeout: this._pingTimeouts.length,
-        input_detected: this._inputDetected,
-        no_input_detected_notice: L.Z.getNoInputDetectedNotice(),
-        audio_input_mode: i.mode,
-        automatic_audio_input_sensitivity_enabled: i.modeOptions.autoThreshold,
-        audio_input_sensitivity: i.modeOptions.threshold,
-        echo_cancellation_enabled: i.echoCancellation,
-        sidechain_compression_enabled: i.sidechainCompression,
-        noise_suppression_enabled: i.noiseSuppression,
-        noise_cancellation_enabled: i.noiseCancellation,
-        noise_canceller_error: this._noiseCancellationError,
-        automatic_gain_control_enabled: i.automaticGainControl,
-        voice_output_volume: i.outputVolume,
-        encryption_mode: this._encryptionMode,
-        channel_count: this.channelIds.size,
-        device_performance_class: (0, O.Z)(),
-        num_fast_udp_reconnects: null != this._connection ? null === (N = this._connection) || void 0 === N ? void 0 : N.getNumFastUdpReconnects() : null,
-        parent_media_session_id: this.parentMediaSessionId,
-        audio_subsystem: L.Z.getMediaEngine().getAudioSubsystem(),
-        audio_layer: L.Z.getMediaEngine().getAudioLayer(),
-        automatic_audio_subsystem: i.automaticAudioSubsystem,
-        participant_type: this.getVoiceParticipantType(),
-        audio_capture_sample_rate_mismatch_percent: a,
-        battery_usage: null == n ? void 0 : n.batteryUsageRounded
-      }));
-      let s = this.getMediaSessionId();
+      let t = this.getMediaSessionId();
       L.Z.getMediaEngine().getCodecSurvey().then(e => {
-        let t = JSON.parse(e);
-        if (null == t || null == t.available_video_encoders || null == t.available_video_decoders) throw Error("codec survey is not available");
-        U.default.track(ei.rMx.VOICE_CODEC_DETECTED, ec(es({}, t), {
+        let n = JSON.parse(e);
+        if (null == n || null == n.available_video_encoders || null == n.available_video_decoders) throw Error("codec survey is not available");
+        U.default.track(ei.rMx.VOICE_CODEC_DETECTED, ec(es({}, n), {
           rtc_connection_id: this.getRTCConnectionId(),
-          media_session_id: s
+          media_session_id: t
         }))
       }).catch(e => {
         this.logger.warn(e)
-      }), this._trackMLSFailures()
+      }), this._trackMLSFailures();
+      let n = k.Z.shouldIncludePreferredRegion() ? k.Z.getPreferredRegion() : null,
+        i = L.Z.getSettings(),
+        o = D.Z.getChannel(this.channelId),
+        a = null === (u = C.Z.getFirstConnectionStatsByContext(eo.Yn.DEFAULT)) || void 0 === u ? void 0 : null === (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === c ? void 0 : c.sampleRateMismatchPercent,
+        s = ec(es(ec(es({}, this._getAnalyticsProperties()), {
+          hostname: this.hostname,
+          port: this.port,
+          protocol: this.protocol,
+          reconnect: A,
+          reason: r,
+          duration: this.getDuration()
+        }), null === (d = this._voiceQuality) || void 0 === d ? void 0 : d.getMosStats(), null === (f = this._voiceQuality) || void 0 === f ? void 0 : f.getPacketStats(), null === (_ = this._voiceQuality) || void 0 === _ ? void 0 : _.getBytesStats(), null === (p = this._voiceQuality) || void 0 === p ? void 0 : p.getBufferStats(), null === (h = this._voiceQuality) || void 0 === h ? void 0 : h.getNetworkStats(), null === (m = this._voiceQuality) || void 0 === m ? void 0 : m.getSystemResourceStats(), null === (g = this._voiceQuality) || void 0 === g ? void 0 : g.getFrameOpStats(), null === (E = this._voiceQuality) || void 0 === E ? void 0 : E.getDurationStats(), null === (b = this._voiceQuality) || void 0 === b ? void 0 : b.getTransportStats(), null === (v = this._voiceQuality) || void 0 === v ? void 0 : v.getE2EEStats(), null === (y = this._voiceQuality) || void 0 === y ? void 0 : y.getAudioDeviceStats(), null === (I = this._voiceDuration) || void 0 === I ? void 0 : I.getDurationStats(), this.getAudioDeviceStates(), null === (S = this._systemResponsiveness) || void 0 === S ? void 0 : S.getPttQueueLatencyStats()), {
+          media_session_id: this.getMediaSessionId(),
+          channel_bitrate: null != o ? o.bitrate : null,
+          cloudflare_best_region: n,
+          connect_count: this._connectCount,
+          ping_average: Math.round(this.getAveragePing()),
+          ping_bad_count: this._pingBadCount,
+          ping_timeout: this._pingTimeouts.length,
+          input_detected: this._inputDetected,
+          no_input_detected_notice: L.Z.getNoInputDetectedNotice(),
+          audio_input_mode: i.mode,
+          automatic_audio_input_sensitivity_enabled: i.modeOptions.autoThreshold,
+          audio_input_sensitivity: i.modeOptions.threshold,
+          echo_cancellation_enabled: i.echoCancellation,
+          sidechain_compression_enabled: i.sidechainCompression,
+          noise_suppression_enabled: i.noiseSuppression,
+          noise_cancellation_enabled: i.noiseCancellation,
+          noise_canceller_error: this._noiseCancellationError,
+          automatic_gain_control_enabled: i.automaticGainControl,
+          voice_output_volume: i.outputVolume,
+          encryption_mode: this._encryptionMode,
+          channel_count: this.channelIds.size,
+          device_performance_class: (0, O.Z)(),
+          num_fast_udp_reconnects: null != this._connection ? null === (T = this._connection) || void 0 === T ? void 0 : T.getNumFastUdpReconnects() : null,
+          parent_media_session_id: this.parentMediaSessionId,
+          audio_subsystem: L.Z.getMediaEngine().getAudioSubsystem(),
+          audio_layer: L.Z.getMediaEngine().getAudioLayer(),
+          automatic_audio_subsystem: i.automaticAudioSubsystem,
+          participant_type: this.getVoiceParticipantType(),
+          audio_capture_sample_rate_mismatch_percent: a
+        }),
+        l = await (null === (N = this._systemResources) || void 0 === N ? void 0 : N.getBatteryLevelStats());
+      U.default.track(ei.rMx.VOICE_DISCONNECT, ec(es({}, s), {
+        battery_usage: null == l ? void 0 : l.batteryUsageRounded
+      }))
     }
     if (this._pingTimeouts = [], this._pings = [], this._connectCompletedTime = 0, this._pingBadCount = 0, this._inputDetected = !1, this._mediaSessionId = null, null === (i = this._voiceQuality) || void 0 === i || i.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null === (o = this._voiceDuration) || void 0 === o || o.stop(), this._voiceDuration = null, null === (a = this._videoQuality) || void 0 === a || a.stop(), this._videoQuality = null, this._videoHealthManager = null, null === (s = this._localMediaSinkWantsManager) || void 0 === s || s.reset(), this._secureFramesState = null, this._userIds = new Set([this.userId]), this._secureFramesRosterMap.clear(), null != this._connection) {
       let e = this._connection;

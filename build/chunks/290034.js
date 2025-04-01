@@ -8,19 +8,19 @@ var o = n(120356),
   r = n.n(o),
   a = n(297700),
   l = n(471885),
-  s = n(981631),
-  c = n(153274);
+  c = n(981631),
+  s = n(153274);
 let d = {
-    [s.Eu4.NONE]: c.iconBackgroundTierNone,
-    [s.Eu4.TIER_1]: c.iconBackgroundTierOne,
-    [s.Eu4.TIER_2]: c.iconBackgroundTierTwo,
-    [s.Eu4.TIER_3]: c.iconBackgroundTierThree
+    [c.Eu4.NONE]: s.iconBackgroundTierNone,
+    [c.Eu4.TIER_1]: s.iconBackgroundTierOne,
+    [c.Eu4.TIER_2]: s.iconBackgroundTierTwo,
+    [c.Eu4.TIER_3]: s.iconBackgroundTierThree
   },
   u = {
-    [s.Eu4.NONE]: c.iconTierNone,
-    [s.Eu4.TIER_1]: c.iconTierOne,
-    [s.Eu4.TIER_2]: c.iconTierTwo,
-    [s.Eu4.TIER_3]: c.iconTierThree
+    [c.Eu4.NONE]: s.iconTierNone,
+    [c.Eu4.TIER_1]: s.iconTierOne,
+    [c.Eu4.TIER_2]: s.iconTierTwo,
+    [c.Eu4.TIER_3]: s.iconTierThree
   };
 
 function _(e) {
@@ -28,15 +28,15 @@ function _(e) {
     premiumTier: t,
     iconBackgroundClassName: n,
     iconClassName: o,
-    size: s
+    size: c
   } = e;
   return (0, i.jsx)(a.Z, {
     className: r()(n, d[t]),
-    size: s,
+    size: c,
     children: (0, i.jsx)(l.Z, {
       tier: t,
       color: "currentColor",
-      className: r()(o, c.boostedGuildIconGem, u[t])
+      className: r()(o, s.boostedGuildIconGem, u[t])
     })
   })
 }

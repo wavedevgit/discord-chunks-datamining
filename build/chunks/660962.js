@@ -89,11 +89,11 @@ function W(e) {
 }
 
 function L(e) {
-  var t, s;
+  var t, s, a, l, o;
   let {
-    role: a,
-    guildId: l
-  } = e, o = (s = T.NW.string(T.t.Mi9KbW), i.useMemo(() => {
+    role: c,
+    guildId: m
+  } = e, g = (o = T.NW.string(T.t.Mi9KbW), i.useMemo(() => {
     var e, t;
     let r = (0, f.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -114,7 +114,7 @@ function L(e) {
       return e
     }({}, (0, b.ZP)({
       channelId: "1337",
-      content: s
+      content: o
     })), t = t = {
       state: S.yb.SENT,
       id: "31337"
@@ -134,31 +134,36 @@ function L(e) {
       discriminator: "0000",
       bot: !1
     }), r.author.getAvatarURL = () => n(52008), r
-  }, [s])), c = {
-    nick: o.author.username,
-    colorString: null !== (t = a.colorString) && void 0 !== t ? t : void 0
-  }, m = {
+  }, [o])), N = {
+    nick: g.author.username,
+    colorStrings: {
+      primaryColor: null === (t = c.colorStrings) || void 0 === t ? void 0 : t.primaryColor,
+      secondaryColor: null === (s = c.colorStrings) || void 0 === s ? void 0 : s.secondaryColor,
+      tertiaryColor: null === (a = c.colorStrings) || void 0 === a ? void 0 : a.tertiaryColor
+    },
+    colorString: null !== (l = c.colorString) && void 0 !== l ? l : void 0
+  }, v = {
     src: R,
-    name: a.name
-  }, g = {
+    name: c.name
+  }, _ = {
     src: Z,
-    name: a.name
-  }, N = (0, h.oC)(l, a), v = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
+    name: c.name
+  }, C = (0, h.oC)(m, c), O = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
   return (0, r.jsx)(u.Rny, {
     children: (0, r.jsx)("div", {
       className: P.previewContainer,
       "aria-hidden": !0,
       "data-disable-adaptive-theme": !0,
-      children: v.map(e => (0, r.jsx)(u.f6W, {
+      children: O.map(e => (0, r.jsx)(u.f6W, {
         theme: e,
         children: t => (0, r.jsx)("div", {
           className: t,
           children: (0, r.jsx)("div", {
             className: P.messageContainer,
             children: (0, r.jsx)(x.Z, {
-              author: c,
-              message: o,
-              roleIcon: null != N ? N : (0, d.ap)(e) ? g : m,
+              author: N,
+              message: g,
+              roleIcon: null != C ? C : (0, d.ap)(e) ? _ : v,
               isGroupStart: !0
             })
           })

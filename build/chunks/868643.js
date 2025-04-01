@@ -1,34 +1,34 @@
-/** Chunk was on 87267 **/
+/** Chunk was on 89590 **/
 n.d(t, {
-  a: () => p,
-  h: () => f
+  a: () => m,
+  h: () => p
 }), n(789020);
-var r = n(192379),
-  i = n(442837),
+var a = n(192379),
+  r = n(442837),
   o = n(430198),
-  a = n(592125),
-  l = n(430824),
+  i = n(592125),
+  c = n(430824),
   s = n(630388),
-  c = n(981631);
-let u = c.iLy.CROSSPOSTED | c.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | c.iLy.GUILD_FEED_HIDDEN | c.iLy.HAS_SNAPSHOT | c.iLy.HAS_THREAD | c.iLy.IS_CROSSPOST | c.iLy.IS_VOICE_MESSAGE | c.iLy.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | c.iLy.SUPPRESS_EMBEDS | c.iLy.SUPPRESS_NOTIFICATIONS | c.iLy.URGENT | c.iLy.IS_COMPONENTS_V2;
+  l = n(981631);
+let u = l.iLy.CROSSPOSTED | l.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | l.iLy.GUILD_FEED_HIDDEN | l.iLy.HAS_SNAPSHOT | l.iLy.HAS_THREAD | l.iLy.IS_CROSSPOST | l.iLy.IS_VOICE_MESSAGE | l.iLy.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | l.iLy.SUPPRESS_EMBEDS | l.iLy.SUPPRESS_NOTIFICATIONS | l.iLy.URGENT | l.iLy.IS_COMPONENTS_V2;
 
 function d(e) {
-  return !!(e.state !== c.yb.SEND_FAILED && c.V$x.FORWARDABLE.has(e.type)) && null == e.poll && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, s.Ge)(e.flags, u)
-}
-
-function f(e) {
-  var t;
-  if (!d(e)) return !1;
-  let n = null === (t = a.Z.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.guild_id;
-  return !(null != n && o.Z.isChannelOrThreadParentGated(n, e.channel_id))
+  return !!(e.state !== l.yb.SEND_FAILED && l.V$x.FORWARDABLE.has(e.type)) && null == e.poll && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, s.Ge)(e.flags, u)
 }
 
 function p(e) {
-  let t = (0, i.e7)([l.Z, o.Z, a.Z], () => {
+  var t;
+  if (!d(e)) return !1;
+  let n = null === (t = i.Z.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.guild_id;
+  return !(null != n && o.Z.isChannelOrThreadParentGated(n, e.channel_id))
+}
+
+function m(e) {
+  let t = (0, r.e7)([c.Z, o.Z, i.Z], () => {
     var t, n;
     if (null == e) return !0;
-    let r = null === (t = a.Z.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.guild_id;
-    return !!(null != r && (null === (n = l.Z.getGuild(r)) || void 0 === n ? void 0 : n.hasFeature(c.oNc.FORWARDING_DISABLED))) || null != r && o.Z.isChannelOrThreadParentGated(r, e.channel_id)
+    let a = null === (t = i.Z.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.guild_id;
+    return !!(null != a && (null === (n = c.Z.getGuild(a)) || void 0 === n ? void 0 : n.hasFeature(l.oNc.FORWARDING_DISABLED))) || null != a && o.Z.isChannelOrThreadParentGated(a, e.channel_id)
   });
-  return r.useMemo(() => !t && null != e && d(e), [t, e])
+  return a.useMemo(() => !t && null != e && d(e), [t, e])
 }

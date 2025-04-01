@@ -1,4 +1,4 @@
-/** Chunk was on 34588 **/
+/** Chunk was on 6536 **/
 "use strict";
 n.d(t, {
   Z: () => T
@@ -24,9 +24,9 @@ var o = n(442837),
   v = n(981631),
   O = n(176505),
   x = n(388032),
-  j = n(878870);
+  C = n(878870);
 
-function C(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,19 +65,19 @@ let T = e => {
     name: T
   } = t;
   (0, i.ZP)(() => {
-    h.default.track(v.rMx.OPEN_POPOUT, C({
+    h.default.track(v.rMx.OPEN_POPOUT, j({
       type: "Role Icon Popout",
       guild_id: n.id
     }, (0, s.v_)(m.Z.getChannel(_.Z.getChannelId(n.id)))))
   });
   let N = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
     I = (0, p.Z)(N),
-    S = I ? x.NW.formatToPlainString(x.t.t0928f, {
+    w = I ? x.NW.formatToPlainString(x.t.t0928f, {
       name: T
     }) : x.NW.formatToPlainString(x.t.UDDkGx, {
       name: T
     }),
-    w = P(C({}, t), {
+    S = P(j({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
@@ -94,41 +94,41 @@ let T = e => {
   return (0, r.jsx)(a.VqE, {
     children: (0, r.jsx)(y.W_, {
       children: (0, r.jsxs)("div", {
-        className: j.popoutContainer,
+        className: C.popoutContainer,
         children: [(0, r.jsxs)("div", {
-          className: j.mainContent,
+          className: C.mainContent,
           children: [(0, r.jsx)("div", {
-            className: j.roleIconContainer,
-            children: (0, r.jsx)(l.Z, P(C({}, w), {
+            className: C.roleIconContainer,
+            children: (0, r.jsx)(l.Z, P(j({}, S), {
               enableTooltip: !1,
-              className: j.__invalid_roleIcon,
+              className: C.__invalid_roleIcon,
               enableHeight: !1
             }))
           }), (0, r.jsxs)("div", {
-            className: j.truncatingText,
+            className: C.truncatingText,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-md/semibold",
-              className: j.roleName,
+              className: C.roleName,
               children: (0, r.jsx)(c.Z, {
                 children: T
               })
             }), (0, r.jsx)(a.Text, {
               variant: "text-sm/normal",
-              children: S
+              children: w
             })]
           })]
         }), (0, r.jsxs)(a.zxk, {
           size: a.zxk.Sizes.SMALL,
           color: a.zxk.Colors.PRIMARY,
-          className: j.ctaButton,
-          innerClassName: j.ctaButtonContent,
+          className: C.ctaButton,
+          innerClassName: C.ctaButtonContent,
           fullWidth: !0,
           onClick: k,
           autoFocus: !0,
           children: [(0, r.jsx)(b.Z, {
             width: 14,
             height: 14,
-            className: j.boosterBadge
+            className: C.boosterBadge
           }), x.NW.string(x.t["H930+P"])]
         })]
       })

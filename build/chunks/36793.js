@@ -29,7 +29,7 @@ function i(e) {
           x: n, y: i
         }
     }
-  }(i, r), s = r % 180 != 0, c = n.width * a, d = n.height * a, u = Math.min(c, o.width), _ = Math.min(d, o.height), g = (s ? n.height : n.width) / 2, f = (s ? n.width : n.height) / 2, b = (t.width / 2 - g - l.x) * a, m = (t.height / 2 - f - l.y) * a, p = s ? d : c, h = s ? c : d, {
+  }(i, r), c = r % 180 != 0, s = n.width * a, d = n.height * a, u = Math.min(s, o.width), _ = Math.min(d, o.height), g = (c ? n.height : n.width) / 2, b = (c ? n.width : n.height) / 2, f = (t.width / 2 - g - l.x) * a, m = (t.height / 2 - b - l.y) * a, p = c ? d : s, h = c ? s : d, {
     x: v,
     y: N
   } = function(e, t, n) {
@@ -51,16 +51,16 @@ function i(e) {
           x: -t, y: 0
         }
     }
-  }(c, d, r);
+  }(s, d, r);
   return {
-    sourceX: b,
+    sourceX: f,
     sourceY: m,
     sourceWidth: p,
     sourceHeight: h,
     destinationX: v,
     destinationY: N,
-    destinationWidth: s ? _ : u,
-    destinationHeight: s ? u : _,
+    destinationWidth: c ? _ : u,
+    destinationHeight: c ? u : _,
     canvasWidth: u,
     canvasHeight: _
   }
@@ -75,14 +75,14 @@ function o(e) {
     imageRotation: a = 0
   } = e, {
     sourceX: l,
-    sourceY: s,
-    sourceWidth: c,
+    sourceY: c,
+    sourceWidth: s,
     sourceHeight: d,
     destinationX: u,
     destinationY: _,
     destinationWidth: g,
-    destinationHeight: f,
-    canvasWidth: b,
+    destinationHeight: b,
+    canvasWidth: f,
     canvasHeight: m
   } = i({
     image: t,
@@ -91,9 +91,9 @@ function o(e) {
     maxDimensions: r,
     imageRotation: a
   }), p = document.createElement("canvas");
-  p.width = b, p.height = m;
+  p.width = f, p.height = m;
   let h = p.getContext("2d");
-  return null != h && (h.rotate(a * Math.PI / 180), h.drawImage(t, l, s, c, d, u, _, g, f)), p.toDataURL("image/png")
+  return null != h && (h.rotate(a * Math.PI / 180), h.drawImage(t, l, c, s, d, u, _, g, b)), p.toDataURL("image/png")
 }
 
 function r(e, t, n) {

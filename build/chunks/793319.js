@@ -43,8 +43,8 @@ var r = n(200651),
   W = n(459502),
   U = n(576645),
   B = n(140465),
-  F = n(800966),
-  H = n(641015),
+  H = n(800966),
+  F = n(641015),
   G = n(618158),
   V = n(390322),
   z = n(791592),
@@ -214,7 +214,7 @@ function eZ(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return O(!0), (0, r.jsx)(F.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return O(!0), (0, r.jsx)(H.h, {
             buttonRef: b,
             dismissed: !1,
             onDismiss: () => {
@@ -485,9 +485,9 @@ let ek = function(e) {
     canGoLive: B
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, k.Z)(er.Z)
-  })), F = (0, w.Z)(), G = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), z = null != F, Y = (0, u.e7)([ei.Z], () => {
+  })), H = (0, w.Z)(), G = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), z = null != H, Y = (0, u.e7)([ei.Z], () => {
     var e;
-    return (null !== (e = null == F ? void 0 : F.channelId) && void 0 !== e ? e : ei.Z.getVoiceChannelId()) === l.id
+    return (null !== (e = null == H ? void 0 : H.channelId) && void 0 !== e ? e : ei.Z.getVoiceChannelId()) === l.id
   }), q = (0, O.Z)(l, !0), K = (0, u.e7)([C.ZP], () => C.ZP.getSelfEmbeddedActivityForChannel(l.id)), {
     reachedLimit: Q,
     limit: et
@@ -507,7 +507,7 @@ let ek = function(e) {
     })
   });
   let eC = ef && !q,
-    ev = (0, H.Z)(l),
+    ev = (0, F.Z)(l),
     ey = eb ? e => {
       (0, f.jW)(e, () => Promise.resolve(() => (0, r.jsx)(E.default, {
         onClose: f.Zy,

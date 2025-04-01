@@ -1,4 +1,4 @@
-/** Chunk was on 65176 **/
+/** Chunk was on 89590 **/
 n.r(t), n.d(t, {
   default: () => h
 }), n(47120);
@@ -28,8 +28,8 @@ function h(e) {
     shouldRedactExplicitContent: h,
     shouldHideMediaOptions: S = !1,
     className: v,
-    transitionState: E
-  } = e, C = function(e, t) {
+    transitionState: C
+  } = e, E = function(e, t) {
     if (null == e) return {};
     var n, a, r = function(e, t) {
       if (null == e) return {};
@@ -51,7 +51,7 @@ function h(e) {
     }
   }, [t]), r.useEffect(() => {
     var e, t;
-    E === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), E === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v));
+    C === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), C === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v));
     let n = () => {
         u.Z.disable(), u.Z.enableTemp(l.P)
       },
@@ -62,16 +62,16 @@ function h(e) {
     return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", a), () => {
       null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", a), u.Z.disableTemp()
     }
-  }, [E]);
+  }, [C]);
   let D = r.useCallback(e => {
       j(e), (0, m.yg)(m.uG.SELECTED_ITEM_CHANGE)
     }, []),
     N = r.useMemo(() => ({
       zoomed: P,
       setZoomed: x,
-      entering: E === s.Dvm.ENTERING || null == E
-    }), [P, E]),
-    A = n[T];
+      entering: C === s.Dvm.ENTERING || null == C
+    }), [P, C]),
+    w = n[T];
   return (0, a.jsx)(s.f6W, {
     theme: I ? y.BRd.MIDNIGHT : y.BRd.DARK,
     children: e => {
@@ -96,8 +96,8 @@ function h(e) {
       }({
         hideShadow: !0,
         className: i()(O.carouselModal, e),
-        transitionState: E
-      }, C), o = o = {
+        transitionState: C
+      }, E), o = o = {
         size: s.CgR.DYNAMIC,
         animation: c.fM.SUBTLE,
         fullscreenOnMobile: !1,
@@ -106,7 +106,7 @@ function h(e) {
         children: (0, a.jsxs)(_.z.Provider, {
           value: N,
           children: [(0, a.jsx)(f.Z, {
-            item: A,
+            item: w,
             hideMediaOptions: S,
             onClose: t
           }), (0, a.jsx)("div", {

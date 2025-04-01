@@ -1,4 +1,4 @@
-/** Chunk was on 681 **/
+/** Chunk was on 72581 **/
 n.d(t, {
   default: () => I
 }), n(47120), n(266796);
@@ -15,8 +15,8 @@ var a = n(200651),
   p = n(592125),
   g = n(703558),
   h = n(430824),
-  f = n(375954),
-  _ = n(403182),
+  _ = n(375954),
+  f = n(403182),
   b = n(709054),
   y = n(127654),
   v = n(979956),
@@ -33,8 +33,8 @@ function I(e) {
   let {
     threadId: n,
     attachments: I,
-    sendMessage: S,
-    transitionState: w,
+    sendMessage: w,
+    transitionState: S,
     onClose: M
   } = e, A = (0, d.Dt)(), D = (0, r.e7)([p.Z], () => p.Z.getChannel(n), [n]), N = (0, r.e7)([h.Z], () => h.Z.getGuild(null == D ? void 0 : D.getGuildId()), [D]), k = (0, r.e7)([p.Z], () => p.Z.getChannel(null == D ? void 0 : D.parent_id), [D]), z = null === (t = I[0]) || void 0 === t ? void 0 : t.item, [L, Z] = i.useState(null);
   i.useEffect(() => {
@@ -51,9 +51,9 @@ function I(e) {
     W = i.useCallback(() => {
       (0, x.xI)({
         added: !1
-      }), S(), M()
-    }, [S, M]),
-    F = i.useCallback(() => {
+      }), w(), M()
+    }, [w, M]),
+    G = i.useCallback(() => {
       null != D && null != N && ((0, x.xI)({
         added: !0
       }), function(e) {
@@ -67,14 +67,14 @@ function I(e) {
         o.on("start", () => {
           a(!0)
         }), o.on("progress", e => {
-          let l = (0, _.dg)(i.id);
+          let l = (0, f.dg)(i.id);
           e.currentSize > l && (o.cancel(), a(!1), r(), (0, y.G)(t, (0, v.KZ)(n)))
         }), o.on("error", (e, n, i) => {
           a(!1), n === j.evJ.EXPLICIT_CONTENT && (r(), l.Z.sendExplicitMediaClydeError(t.id, null == i ? void 0 : i.attachments, u.UU.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), s.Z.clearAll(t.id, g.d.ChannelMessage))
         }), o.on("complete", () => {
           a(!1), r(), s.Z.clearAll(t.id, g.d.ChannelMessage)
         });
-        let d = f.Z.getMessages(t.id).get(b.default.castChannelIdAsMessageId(t.id)),
+        let d = _.Z.getMessages(t.id).get(b.default.castChannelIdAsMessageId(t.id)),
           m = null != d ? d.attachments : [];
         o.uploadFiles(n, {
           attachments: [...m]
@@ -90,7 +90,7 @@ function I(e) {
       }))
     }, [D, I, B, N, M]);
   return null == k ? null : (0, a.jsxs)(o.Y0X, {
-    transitionState: w,
+    transitionState: S,
     size: o.CgR.SMALL,
     className: E.modalRoot,
     "aria-labelledby": A,
@@ -134,7 +134,7 @@ function I(e) {
         color: o.zxk.Colors.BRAND,
         className: E.__invalid_button,
         submitting: U,
-        onClick: F,
+        onClick: G,
         autoFocus: !0,
         children: P.NW.string(P.t.d611xM)
       })]

@@ -3,34 +3,34 @@ n.d(t, {
   Z: () => a
 }), n(47120);
 var r = n(192379),
-  o = n(493773),
-  i = n(81897),
-  l = n(228168);
+  l = n(493773),
+  o = n(81897),
+  i = n(228168);
 
 function a(e) {
   let {
     shouldShowPopoutOnHover: t,
     handlePreload: n
-  } = e, [a, c] = r.useState(!1), s = r.useRef(!1), u = (0, i.Z)(), m = r.useRef(void 0), p = r.useRef(void 0), d = r.useRef(void 0);
-  return ((0, o.zq)(() => {
-    clearTimeout(m.current), clearTimeout(p.current), clearTimeout(d.current)
+  } = e, [a, s] = r.useState(!1), c = r.useRef(!1), u = (0, o.Z)(), d = r.useRef(void 0), m = r.useRef(void 0), p = r.useRef(void 0);
+  return ((0, l.zq)(() => {
+    clearTimeout(d.current), clearTimeout(m.current), clearTimeout(p.current)
   }), t) ? {
     showPopoutFromHover: a,
     onRequestClose: () => {
-      c(!1)
+      s(!1)
     },
     onMouseEnter: () => {
       let e;
-      s.current = !0, m.current = setTimeout(() => {
-        s.current && (e = n(u))
-      }, l.a6), p.current = setTimeout(async () => {
-        s.current && (null != e && await e, c(!0))
-      }, l.JX)
+      c.current = !0, d.current = setTimeout(() => {
+        c.current && (e = n(u))
+      }, i.a6), m.current = setTimeout(async () => {
+        c.current && (null != e && await e, s(!0))
+      }, i.JX)
     },
     onMouseLeave: () => {
-      s.current = !1, d.current = setTimeout(() => {
-        s.current || c(!1)
-      }, l.Ig)
+      c.current = !1, p.current = setTimeout(() => {
+        c.current || s(!1)
+      }, i.Ig)
     }
   } : {
     showPopoutFromHover: !1,

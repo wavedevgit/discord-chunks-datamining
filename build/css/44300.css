@@ -1,6 +1,6 @@
 /**
   Module ID: 44300
-  Original File Name: fc4052c9faa0cd41
+  Original File Name: 41644572cc5abe21
 **/
 .closeButton__47998 {
     position: absolute;
@@ -835,6 +835,11 @@
     overflow: hidden
 }
 
+.gradient_c19a55.compact_c19a55 .header_c19a55,.gradient_c19a55.cozy_c19a55 .header_c19a55,.zalgo_c19a55.gradient_c19a55.compact_c19a55 .header_c19a55,.zalgo_c19a55.gradient_c19a55.cozy_c19a55 .header_c19a55 {
+    overflow: visible;
+    position: relative
+}
+
 .compact_c19a55 .header_c19a55 {
     display: inline
 }
@@ -1469,4 +1474,4 @@
     border-radius: 8px
 }
 
-/*# sourceMappingURL=fc4052c9faa0cd41.css.map*/
+/*# sourceMappingURL=41644572cc5abe21.css.map*/

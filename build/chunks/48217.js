@@ -1,6 +1,6 @@
 /** Chunk was on 96977 **/
 n.d(t, {
-  c: () => f
+  c: () => b
 });
 var i = n(200651);
 n(192379);
@@ -8,8 +8,8 @@ var o = n(481060),
   r = n(269128),
   a = n(358555),
   l = n(267642),
-  s = n(26323),
-  c = n(30513),
+  c = n(26323),
+  s = n(30513),
   d = n(981631),
   u = n(388032),
   _ = n(785965);
@@ -41,7 +41,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function b(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: n,
@@ -49,7 +49,7 @@ function f(e) {
     isGIF: r,
     banner: a
   } = e, _ = r ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
-  null != _ && (0, s.Z)({
+  null != _ && (0, c.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
     guild: o,
@@ -69,6 +69,6 @@ function f(e) {
       })
     },
     perkIntro: u.NW.string(u.t.ZuItcH),
-    perks: r ? (0, c.zC)() : (0, c.XO)()
+    perks: r ? (0, s.zC)() : (0, s.XO)()
   })
 }

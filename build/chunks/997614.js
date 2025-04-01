@@ -78,9 +78,9 @@ function T(e) {
   } = (0, a.j)(), D = t.getGuildId(), {
     mute: W,
     suppress: U
-  } = (0, _.Z)(t), B = (0, l.e7)([y.Z], () => y.Z.isDeaf()), F = W || U || B, H = (0, p.sR)({
-    isSoundboardButtonDisabled: F
-  }), [G, V] = (0, d.cv)(H), {
+  } = (0, _.Z)(t), B = (0, l.e7)([y.Z], () => y.Z.isDeaf()), H = W || U || B, F = (0, p.sR)({
+    isSoundboardButtonDisabled: H
+  }), [G, V] = (0, d.cv)(F), {
     analyticsLocations: z
   } = (0, u.ZP)(), {
     mode: Y
@@ -130,7 +130,7 @@ function T(e) {
       let {
         closePopout: n
       } = e;
-      return F ? null : (0, r.jsx)(C.Z, {
+      return H ? null : (0, r.jsx)(C.Z, {
         children: (0, r.jsx)(f.Z, {
           guildId: D,
           channel: t,
@@ -147,7 +147,7 @@ function T(e) {
       themeable: T,
       label: Q(),
       iconComponent: k,
-      disabled: F,
+      disabled: H,
       onContextMenu: J
     }, e), {
       onClick: t => {
@@ -165,7 +165,7 @@ function T(e) {
       themeable: T,
       label: Q(),
       iconComponent: s.KY1,
-      disabled: F,
+      disabled: H,
       onContextMenu: J
     }, e), {
       onClick: t => {

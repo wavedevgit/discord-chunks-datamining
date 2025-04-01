@@ -8,14 +8,14 @@ var o = n(120356),
   r = n.n(o),
   a = n(442837),
   l = n(481060),
-  s = n(540059),
-  c = n(666188),
+  c = n(540059),
+  s = n(666188),
   d = n(372769),
   u = n(523751),
   _ = n(623624),
   g = n(290034),
-  f = n(340541),
-  b = n(271383),
+  b = n(340541),
+  f = n(271383),
   m = n(594174),
   p = n(267642),
   h = n(981631),
@@ -27,16 +27,16 @@ function C(e) {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: o
-  } = e, r = (0, s.Q3)("PremiumGuildBadge"), c = (0, a.e7)([m.default, b.ZP], () => {
+  } = e, r = (0, c.Q3)("PremiumGuildBadge"), s = (0, a.e7)([m.default, f.ZP], () => {
     let e = m.default.getCurrentUser();
-    return b.ZP.isMember(t.id, null == e ? void 0 : e.id)
+    return f.ZP.isMember(t.id, null == e ? void 0 : e.id)
   }), {
     premiumTier: d,
     premiumSubscriberCount: u
   } = t;
   if (0 === u && d === h.Eu4.NONE) return null;
-  let f = e => {
-      e.stopPropagation(), e.preventDefault(), c && !o && (0, _.f)({
+  let b = e => {
+      e.stopPropagation(), e.preventDefault(), s && !o && (0, _.f)({
         guildId: t.id,
         location: {
           section: h.jXE.GUILD_HEADER,
@@ -82,7 +82,7 @@ function C(e) {
           return e
         }({}, e), o = o = {
           className: N.__invalid_premiumGuildIcon,
-          onClick: f,
+          onClick: b,
           children: (0, i.jsx)(g.Z, {
             size: r ? 18 : 16,
             premiumTier: d,
@@ -109,9 +109,9 @@ function y(e) {
     guild: t,
     disableColor: n,
     disableBoostClick: o
-  } = e, a = (0, c.Z)(t), _ = (0, s.Q3)("GuildStatusBadge"), {
+  } = e, a = (0, s.Z)(t), _ = (0, c.Q3)("GuildStatusBadge"), {
     enabled: g
-  } = (0, f._k)({
+  } = (0, b._k)({
     location: "guild_status_badge"
   });
   return a ? (0, i.jsx)("div", {
@@ -163,8 +163,8 @@ function x(e) {
     }
     return o
   }(e, ["guild", "disableBoostClick"]);
-  let r = !(0, s.Q3)("GuildHeaderGuildBadge") && o.isBannerVisible;
-  return (0, c.Z)(t) ? (0, i.jsx)(y, {
+  let r = !(0, c.Q3)("GuildHeaderGuildBadge") && o.isBannerVisible;
+  return (0, s.Z)(t) ? (0, i.jsx)(y, {
     guild: t,
     disableColor: !1,
     disableBoostClick: n

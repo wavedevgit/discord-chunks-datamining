@@ -1,6 +1,6 @@
-/** Chunk was on 34588 **/
+/** Chunk was on 23115 **/
 "use strict";
-n.r(e.exports = {
+r.r(e.exports = {
   video: "video__1689b",
   container: "container__1689b",
   image: "image__1689b",

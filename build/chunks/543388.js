@@ -1,15 +1,15 @@
 /** Chunk was on 95477 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
-var o = n(913527),
-  i = n.n(o),
-  l = n(481060),
+var l = n(913527),
+  o = n.n(l),
+  i = n(481060),
   a = n(925329),
-  c = n(388032),
-  s = n(585487);
+  s = n(388032),
+  c = n(585487);
 
 function u(e) {
   let {
@@ -21,16 +21,16 @@ function u(e) {
       size: a.Z.Sizes.LARGE,
       game: t
     }), (0, r.jsxs)("div", {
-      className: s.textContainer,
-      children: [(0, r.jsx)(l.Text, {
-        className: s.timestamp,
+      className: c.textContainer,
+      children: [(0, r.jsx)(i.Text, {
+        className: c.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: i()(n).format("LLLL")
-      }), (0, r.jsx)(l.Text, {
+        children: o()(n).format("LLLL")
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
-        children: c.NW.format(c.t.J3s8JC, {
+        children: s.NW.format(s.t.J3s8JC, {
           applicationName: t.name
         })
       })]
@@ -38,25 +38,25 @@ function u(e) {
   })
 }
 
-function m(e) {
+function d(e) {
   let {
     application: t,
     timestamp: n,
-    children: o
+    children: l
   } = e;
-  return (0, r.jsx)(l.ua7, {
+  return (0, r.jsx)(i.ua7, {
     hideOnClick: !0,
     position: "top",
-    "aria-label": c.NW.string(c.t["5nMcv7"]),
-    tooltipClassName: s.gameMessageTooltip,
-    tooltipContentClassName: s.gameMessageTooltipContent,
+    "aria-label": s.NW.string(s.t["5nMcv7"]),
+    tooltipClassName: c.gameMessageTooltip,
+    tooltipContentClassName: c.gameMessageTooltipContent,
     text: (0, r.jsx)(u, {
       application: t,
       timestamp: n
     }),
     children: e => {
       var t, n;
-      return (0, r.jsx)(l.P3F, (t = function(e) {
+      return (0, r.jsx)(i.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -76,7 +76,7 @@ function m(e) {
       }({
         tag: "span"
       }, e), n = n = {
-        children: o
+        children: l
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -91,21 +91,21 @@ function m(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     application: t,
     timestamp: n,
-    compact: o,
-    children: i
+    compact: l,
+    children: o
   } = e;
-  return (0, r.jsxs)(m, {
+  return (0, r.jsxs)(d, {
     application: t,
     timestamp: n,
-    children: [o ? null : (0, r.jsx)(l.iWm, {
-      className: s.gameIcon,
+    children: [l ? null : (0, r.jsx)(i.iWm, {
+      className: c.gameIcon,
       size: "custom",
       width: 14,
       height: 14
-    }), i]
+    }), o]
   })
 }
