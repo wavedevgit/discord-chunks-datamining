@@ -47,7 +47,7 @@ let f = (0, l.hQ)(),
       return null == t ? null : (0, r.jsx)(r.Fragment, {
         children: b(t)
       })
-    }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), O = i.useCallback(() => (0, d.nE)(null, !1), []);
+    }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
     return (0, r.jsxs)(o.Z, {
       title: p.NW.string(p.t.Pdd1nZ),
       titleId: f,
@@ -64,7 +64,7 @@ let f = (0, l.hQ)(),
         renderOptionValue: x,
         renderOptionLabel: b,
         serialize: j,
-        clear: O,
+        clear: C,
         clearable: null != l
       })]
     })

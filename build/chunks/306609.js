@@ -1,4 +1,4 @@
-/** Chunk was on 9857 **/
+/** Chunk was on 69787 **/
 n.d(t, {
   l: () => F
 }), n(47120);
@@ -20,9 +20,9 @@ var r = n(200651),
   h = n(221241),
   b = n(594174),
   y = n(626135),
-  C = n(111361),
-  x = n(74538),
-  j = n(709706),
+  x = n(111361),
+  j = n(74538),
+  C = n(709706),
   I = n(378441),
   N = n(799143),
   O = n(358820),
@@ -34,8 +34,8 @@ var r = n(200651),
   L = n(354459),
   k = n(474936),
   Z = n(938779),
-  A = n(388032),
-  D = n(113124);
+  D = n(388032),
+  A = n(113124);
 
 function W(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,9 +85,9 @@ function F(e) {
     onElementResizeEnd: e => {},
     orientation: u.y.VERTICAL_TOP
   });
-  (0, A.j1)(Z.M);
-  let H = (0, s.e7)([b.default], () => (0, C.I5)(b.default.getCurrentUser())),
-    G = (0, s.e7)([j.Z], () => j.Z.getCatalogUpdateTime()),
+  (0, D.j1)(Z.M);
+  let H = (0, s.e7)([b.default], () => (0, x.I5)(b.default.getCurrentUser())),
+    G = (0, s.e7)([C.Z], () => C.Z.getCatalogUpdateTime()),
     [Y, q] = i.useState(!1),
     [X, K] = i.useState(!1),
     {
@@ -137,22 +137,22 @@ function F(e) {
     value: B,
     children: (0, r.jsxs)("div", {
       ref: U,
-      className: o()(D.voiceFiltersPopout, {
-        [D.wide]: n
+      className: o()(A.voiceFiltersPopout, {
+        [A.wide]: n
       }),
       style: {
         height: 500
       },
       children: [(0, r.jsx)("div", {
-        className: D.resizeHandle,
+        className: A.resizeHandle,
         onMouseDown: V,
         children: (0, r.jsx)("div", {
-          className: D.resizePill
+          className: A.resizePill
         })
       }), (0, r.jsx)(c.E1j, {
         size: c.E1j.Sizes.MEDIUM,
-        placeholder: A.NW.string(A.t.hHCZJS),
-        className: D.voiceFiltersHeader,
+        placeholder: D.NW.string(D.t.hHCZJS),
+        className: A.voiceFiltersHeader,
         autoFocus: !0,
         onChange: R,
         query: F,
@@ -174,7 +174,7 @@ function F(e) {
         style: M(W({}, ee), {
           display: ee.opacity.to(e => 0 === e ? "none" : "block")
         }),
-        className: D.upsellCountdownContainer,
+        className: A.upsellCountdownContainer,
         children: [null != G && (0, r.jsx)(l.animated.div, {
           style: Q,
           children: (0, r.jsx)(S.J, {
@@ -182,31 +182,31 @@ function F(e) {
             isScrolled: Y
           })
         }), (0, r.jsx)("div", {
-          className: D.upsellContainer,
+          className: A.upsellContainer,
           children: (0, r.jsx)(l.animated.div, {
             style: $,
             children: (0, r.jsx)(g.p, {
               showUpsell: !0,
-              text: A.NW.format(A.t["XMDm8/"], {
-                nitroTierName: (0, x.Px)(k.p9.TIER_2),
+              text: D.NW.format(D.t["XMDm8/"], {
+                nitroTierName: (0, j.Px)(k.p9.TIER_2),
                 onClick: () => (0, v.i)()
               }),
-              button: A.NW.string(A.t.cRCCJy),
+              button: D.NW.string(D.t.cRCCJy),
               buttonAnalyticsObject: {
                 section: T.jXE.VOICE_FILTERS_FLOATING_UPSELL
               },
               showShadow: !1,
               position: "inline",
-              className: D.upsell,
+              className: A.upsell,
               buttonSize: "sm",
               useLockIcon: !0,
-              buttonStyles: D.subscribeButton
+              buttonStyles: A.subscribeButton
             })
           })
         })]
       }), (0, r.jsx)(P.y, {}), (0, r.jsx)(E.R, {}), (0, r.jsxs)("div", {
-        className: o()(D.voiceFiltersFooter, {
-          [D.hasActiveVoice]: null != J
+        className: o()(A.voiceFiltersFooter, {
+          [A.hasActiveVoice]: null != J
         }),
         children: [(0, r.jsx)(N.Y, {}), a && (0, r.jsx)(N.a, {}), (0, r.jsx)(c.yRy, {
           position: "top",
@@ -227,8 +227,8 @@ function F(e) {
             size: c.zxk.Sizes.MIN,
             look: c.zxk.Looks.BLANK,
             grow: !1,
-            className: D.voiceFiltersFooterButton,
-            innerClassName: D.voiceFiltersFooterButtonInner,
+            className: A.voiceFiltersFooterButton,
+            innerClassName: A.voiceFiltersFooterButtonInner,
             onClick: t => {
               var n;
               y.default.track(T.rMx.VOICE_FILTER_VOICE_SETTINGS_CLICKED, {

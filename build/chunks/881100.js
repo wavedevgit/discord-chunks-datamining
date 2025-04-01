@@ -22,14 +22,14 @@ var r = n(399606),
   _ = n(548629),
   E = n(507084),
   j = n(680313),
-  O = n(926433),
-  C = n(302036),
+  C = n(926433),
+  O = n(302036),
   S = n(994554),
   v = n(1549),
   T = n(13327),
   I = n(59137),
-  y = n(405991),
-  A = n(24615),
+  A = n(405991),
+  y = n(24615),
   P = n(193943),
   R = n(334347),
   D = n(943734),
@@ -65,7 +65,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
         title: g.NW.string(g.t["/xvEMz"]),
         description: g.NW.string(g.t.HKWdjo),
         className: t.clientThemesCard,
-        imageSource: A,
+        imageSource: y,
         imageClassName: t.clientThemesImage
       },
       customAppIcons: {
@@ -126,7 +126,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       soundboard: {
         title: g.NW.string(g.t["lGcW+f"]),
         description: g.NW.string(g.t["/fDyOz"]),
-        imageSource: B(n, O, C),
+        imageSource: B(n, C, O),
         imageClassName: t.soundboardImage
       },
       stickers: {
@@ -172,7 +172,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       videoBackground: {
         title: g.NW.string(g.t.NaGpTU),
         description: g.NW.string(g.t["A8O/Q0"]),
-        imageSource: B(n, I, y),
+        imageSource: B(n, I, A),
         imageClassName: t.videoBackgroundImage
       }
     }

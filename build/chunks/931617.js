@@ -61,10 +61,10 @@ function N(e, n) {
       }
     }, [e, n, N]);
   if (__OVERLAY__ || null == v || null == N || !x) return null;
-  let E = Z.Z.getHighestRole(N),
-    _ = Object.values(h).filter(e => !(0, u.pM)(N.id, e.id)),
-    C = y && !O ? _.map(t => {
-      let r = t.managed || !Z.Z.isRoleHigher(N, E, t),
+  let _ = Z.Z.getHighestRole(N),
+    E = Object.values(h).filter(e => !(0, u.pM)(N.id, e.id)),
+    C = y && !O ? E.map(t => {
+      let r = t.managed || !Z.Z.isRoleHigher(N, _, t),
         i = -1 !== v.indexOf(t.id);
       return r && !i ? null : (0, l.jsx)(a.S89, {
         id: t.id,
@@ -75,7 +75,7 @@ function N(e, n) {
         },
         checked: i
       }, t.id)
-    }) : _.filter(e => -1 !== v.indexOf(e.id)).map(e => (0, u.pM)(N.id, e.id) ? null : (0, l.jsx)(a.sNh, {
+    }) : E.filter(e => -1 !== v.indexOf(e.id)).map(e => (0, u.pM)(N.id, e.id) ? null : (0, l.jsx)(a.sNh, {
       id: e.id,
       label: () => m(e, j)
     }, e.id));

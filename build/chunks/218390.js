@@ -23,14 +23,14 @@ var r = n(200651),
   _ = n(410030),
   E = n(607070),
   j = n(100527),
-  O = n(906732),
-  C = n(211242),
+  C = n(906732),
+  O = n(211242),
   S = n(975298),
   v = n(15640),
   T = n(89057),
   I = n(406128),
-  y = n(703656),
-  A = n(246946),
+  A = n(703656),
+  y = n(246946),
   P = n(78839),
   R = n(483444),
   D = n(626135),
@@ -158,7 +158,7 @@ function en() {
           D.default.track(K.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: "to_premium_home_button",
             target: "premium home page"
-          }), (0, h.xf)(), (0, y.uL)(K.Z5c.APPLICATION_STORE)
+          }), (0, h.xf)(), (0, A.uL)(K.Z5c.APPLICATION_STORE)
         },
         children: (0, r.jsx)(m.Text, {
           className: X.tierCardButtonCTA,
@@ -279,10 +279,10 @@ function ei() {
   })
 }
 let es = function() {
-  let e = (0, C.Q)(),
+  let e = (0, O.Q)(),
     {
       analyticsLocations: t
-    } = (0, O.ZP)(j.Z.PREMIUM_SETTINGS),
+    } = (0, C.ZP)(j.Z.PREMIUM_SETTINGS),
     n = (0, c.e7)([P.ZP], () => P.ZP.getPremiumTypeSubscription()),
     s = (0, c.e7)([P.ZP], () => P.ZP.hasFetchedSubscriptions()),
     a = (0, v.V)(),
@@ -294,17 +294,17 @@ let es = function() {
     }),
     h = (0, B.n)(),
     N = null == h ? void 0 : h.countryCode,
-    _ = (0, c.e7)([A.Z], () => A.Z.enabled),
+    _ = (0, c.e7)([y.Z], () => y.Z.enabled),
     E = i.useRef(null),
-    y = "PremiumManagementSettings";
+    A = "PremiumManagementSettings";
   (0, x.j)({
-    location: y + " auto on",
+    location: A + " auto on",
     autoTrackExposure: !0
   }), (0, x.j)({
-    location: y + " auto off",
+    location: A + " auto off",
     autoTrackExposure: !1
-  }), (0, U.B)(y);
-  let R = (0, M.b)(y);
+  }), (0, U.B)(A);
+  let R = (0, M.b)(A);
   i.useEffect(() => {
     g.Z.wait(async () => {
       _ || e || await Promise.all([p.jg(), p.tZ(), (0, f.Y2)(N, null, K.JjL.DISCOVERY)]), o(!1)
@@ -321,7 +321,7 @@ let es = function() {
   });
   if (!k && !W || l) return (0, r.jsx)(m.$jN, {});
   let L = null !== n && null != n.trialId;
-  return (0, r.jsx)(O.Gt, {
+  return (0, r.jsx)(C.Gt, {
     value: t,
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {

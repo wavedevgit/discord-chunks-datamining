@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => A
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -23,44 +23,44 @@ var i = n(921801),
   _ = n(301812),
   E = n(988043),
   j = n(919539),
-  O = n(726985),
-  C = n(981631),
+  C = n(726985),
+  O = n(981631),
   S = n(388032);
 let v = () => (0, r.jsx)(f.Z, {
     title: S.NW.string(S.t["y62Z/f"]),
-    webSetting: O.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+    webSetting: C.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: (0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(i.F, {
-        setting: O.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+        setting: C.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
         children: (0, r.jsx)(p.Z, {})
       }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(x.Z, {})]
     })
   }),
   T = () => (0, r.jsxs)(f.Z, {
     title: S.NW.string(S.t.xVRG4O),
-    webSetting: O.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    webSetting: C.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(b.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
     title: S.NW.string(S.t["1Qn8iY"]),
-    webSetting: O.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+    webSetting: C.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(N.ZP, {})]
   }),
-  y = () => {
+  A = () => {
     let e = S.NW.format(S.t.VaxeGh, {
-      helpdeskArticle: s.Z.getArticleURL(C.BhN.SLAYER_GAME_FRIENDS)
+      helpdeskArticle: s.Z.getArticleURL(O.BhN.SLAYER_GAME_FRIENDS)
     });
     return (0, r.jsx)(f.Z, {
       title: S.NW.string(S.t.oPyABA),
       description: e,
-      webSetting: O.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
+      webSetting: C.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
       children: (0, r.jsx)(o.Z, {})
     })
   };
 
-function A() {
+function y() {
   return (0, r.jsxs)(a.N, {
     header: S.NW.string(S.t["+o1pDQ"]),
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(v, {}), (0, r.jsx)(I, {}), (0, r.jsx)(y, {})]
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(v, {}), (0, r.jsx)(I, {}), (0, r.jsx)(A, {})]
   })
 }

@@ -29,15 +29,15 @@ function N(e) {
   } = e, {
     analyticsLocations: E
   } = (0, o.ZP)(), j = null != n, {
-    userAvatarDecoration: O,
-    guildAvatarDecoration: C,
+    userAvatarDecoration: C,
+    guildAvatarDecoration: O,
     pendingAvatarDecoration: S,
     pendingErrors: v
   } = (0, g.$U)(t, n), T = (0, u.Z)("enable_avatar_decoration_uploads"), I = i.useCallback(() => (0, d.ps)({
     analyticsLocations: E,
     isTryItOutFlow: _,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== S ? null != S : (j ? C : O) != null, A = x ? l.gtL : l.zxk;
+  }), [E, _, n]), A = _ || void 0 !== S ? null != S : (j ? O : C) != null, y = x ? l.gtL : l.zxk;
   return (0, r.jsxs)(p.Z, {
     className: s,
     forcedDivider: N,
@@ -46,14 +46,14 @@ function N(e) {
     errors: v,
     children: [(0, r.jsxs)("div", {
       className: f.buttonsContainer,
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(y, {
         size: l.zxk.Sizes.SMALL,
         onClick: I,
         className: a()({
           [f.buttonHighlighted]: x
         }),
         children: h.NW.string(h.t["Tna/TU"])
-      }), y && (0, r.jsx)(l.zxk, {
+      }), A && (0, r.jsx)(l.zxk, {
         className: f.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,

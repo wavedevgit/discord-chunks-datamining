@@ -52,25 +52,25 @@ let _ = e => {
       variant: s = f.R0.PERKS_DISCOVERABILITY,
       noBackground: E = !1,
       leftAlignHeaders: j = !1,
-      showAllPerksButton: O,
-      headerClassname: C,
+      showAllPerksButton: C,
+      headerClassname: O,
       isFullScreen: S = !0,
       shouldAutoScroll: v = !1
-    } = e, T = i.useRef(null), I = (0, u.Er)(), y = (0, m.v)(I), A = s === f.R0.WHATS_NEW, P = (0, u.IY)(), R = (0, p.x)();
+    } = e, T = i.useRef(null), I = (0, u.Er)(), A = (0, m.v)(I), y = s === f.R0.WHATS_NEW, P = (0, u.IY)(), R = (0, p.x)();
     i.useEffect(() => {
-      A && !y && (P(), R())
-    }, [P, R, A, y]);
+      y && !A && (P(), R())
+    }, [P, R, y, A]);
     let D = () => {
-        A && y && P()
+        y && A && P()
       },
-      Z = y && A;
+      Z = A && y;
     (0, g.r)({
       ref: T,
       shouldScroll: Z || v,
       onScrollEnd: D,
       onCleanup: D
     });
-    let w = (0, N.Op)(A),
+    let w = (0, N.Op)(y),
       k = (0, h.Z)(),
       W = (0, N.mN)(),
       {
@@ -101,25 +101,25 @@ let _ = e => {
           [x.leftAlignSection]: j
         }, n),
         children: [(0, r.jsx)(_, {
-          showAllPerksButton: O,
+          showAllPerksButton: C,
           leftAlignHeaders: j,
           title: w.title,
-          headerClassname: C
+          headerClassname: O
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
           className: a()(x.subtitle, {
-            [x.subtitle]: null == O || j,
-            [x.subtitleWithButton]: null != O && !j,
-            [x.fullWidth]: A || j,
+            [x.subtitle]: null == C || j,
+            [x.subtitleWithButton]: null != C && !j,
+            [x.fullWidth]: y || j,
             [x.moreSubtitleMargin]: U,
             [x.leftAlignSubtitle]: j,
             [x.centerAlignSubtitle]: !j
           }),
           children: w.subtitle
-        }), !j && null != O && (0, r.jsx)("div", {
+        }), !j && null != C && (0, r.jsx)("div", {
           className: x.showAllPerksButtonCenter,
-          children: O
+          children: C
         }), (0, r.jsx)("div", {
           className: a()({
             [x.cardContainer]: S,

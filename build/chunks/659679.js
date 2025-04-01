@@ -12,8 +12,8 @@ var i = t(793030),
   c = t(709586),
   d = t(709054),
   u = t(296260),
-  m = t(388032),
-  p = t(41074);
+  p = t(388032),
+  m = t(41074);
 
 function x(e) {
   let {
@@ -29,21 +29,21 @@ function x(e) {
     }
   }, [n]);
   return (0, r.jsx)(a.Z, {
-    className: p.systemMessageContainer,
-    contentClassName: p.systemMessageContent,
+    className: m.systemMessageContainer,
+    contentClassName: m.systemMessageContent,
     iconNode: (0, r.jsx)(c.Z, {
-      className: p.icon,
+      className: m.icon,
       width: 16,
       height: 16
     }),
-    iconContainerClassName: p.iconContainer,
-    timestampClassName: p.timestamp,
+    iconContainerClassName: m.iconContainer,
+    timestampClassName: m.timestamp,
     timestamp: t,
     compact: !0,
     children: (0, r.jsxs)("span", {
-      className: p.boostMessage,
+      className: m.boostMessage,
       children: [(0, r.jsx)(s.PUh, {
-        className: p.boostMessageUser,
+        className: m.boostMessageUser,
         name: (0, r.jsx)(i.xv, {
           color: "currentColor",
           variant: "text-md/semibold",
@@ -54,7 +54,7 @@ function x(e) {
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: m.NW.string(u.Z.plwH8f)
+        children: p.NW.string(u.Z.plwH8f)
       })]
     })
   })

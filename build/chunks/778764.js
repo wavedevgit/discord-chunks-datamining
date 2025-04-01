@@ -53,20 +53,20 @@ function j(e, t) {
   }), e
 }
 
-function O(e) {
+function C(e) {
   let {
     transitionState: t,
     onClose: a,
     ticket: o,
     challenge: u
-  } = e, f = (0, c.Dt)(), [E, j] = i.useState(""), [O, C] = i.useState(!0), [S, v] = i.useState(N.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
+  } = e, f = (0, c.Dt)(), [E, j] = i.useState(""), [C, O] = i.useState(!0), [S, v] = i.useState(N.x.INIT), [T, I] = i.useState(""), [A, y] = i.useState(null), P = async () => {
     let e;
     v(N.x.REGISTER);
     let t = m.isPlatformEmbedded && p.ZP.supportsFeature(b.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      g.Z.captureException(e), A(x.NW.string(x.t.xSCvBQ)), v(N.x.INIT);
+      g.Z.captureException(e), y(x.NW.string(x.t.xSCvBQ)), v(N.x.INIT);
       return
     }
     I(e), v(N.x.NAME)
@@ -99,10 +99,10 @@ function O(e) {
               src: n(773072)
             })
           }), (0, r.jsx)("div", {
-            children: null != y && (0, r.jsx)(l.Text, {
+            children: null != A && (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "status-danger",
-              children: y
+              children: A
             })
           }), (0, r.jsx)("div", {
             children: (0, r.jsx)(l.Text, {
@@ -144,7 +144,7 @@ function O(e) {
             e.preventDefault(), (0, h.Sr)(E, o, T).then(async () => {
               await (0, d.Yn)(!1)
             }).then(() => a()).catch(() => {
-              A(x.NW.string(x.t.fEptJC)), v(N.x.INIT)
+              y(x.NW.string(x.t.fEptJC)), v(N.x.INIT)
             })
           },
           children: [(0, r.jsxs)(l.hzk, {
@@ -163,7 +163,7 @@ function O(e) {
                 className: _.input,
                 value: E,
                 onChange: e => {
-                  j(e), C(0 === e.length)
+                  j(e), O(0 === e.length)
                 },
                 autoFocus: !0,
                 minLength: 1
@@ -173,7 +173,7 @@ function O(e) {
             className: _.footer,
             children: [(0, r.jsx)(l.zxk, {
               type: "submit",
-              disabled: O,
+              disabled: C,
               children: x.NW.string(x.t["5dyZ1d"])
             }), (0, r.jsx)(l.zxk, {
               look: l.zxk.Looks.LINK,
@@ -190,7 +190,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     onSelect: t,
     credential: i
@@ -255,7 +255,7 @@ function S() {
           color: l.zxk.Colors.TRANSPARENT,
           size: l.zxk.Sizes.ICON,
           onClick: t => {
-            (0, o.vq)(t, t => (0, r.jsx)(C, j(E({}, t), {
+            (0, o.vq)(t, t => (0, r.jsx)(O, j(E({}, t), {
               credential: e
             })))
           },
@@ -277,7 +277,7 @@ function S() {
               ticket: t,
               challenge: n
             } = e;
-            (0, l.h7j)(e => (0, r.jsx)(O, j(E({}, e), {
+            (0, l.h7j)(e => (0, r.jsx)(C, j(E({}, e), {
               ticket: t,
               challenge: n
             })))

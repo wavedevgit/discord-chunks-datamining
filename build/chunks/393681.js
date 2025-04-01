@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(347649),
   E = n(332473),
   j = n(303172),
-  O = n(518560),
-  C = n(921801),
+  C = n(518560),
+  O = n(921801),
   S = n(484459),
   v = n(430824),
   T = n(325067),
   I = n(246946),
-  y = n(663389),
-  A = n(594174),
+  A = n(663389),
+  y = n(594174),
   P = n(626135),
   R = n(709054),
   D = n(706454),
@@ -185,7 +185,7 @@ class X extends i.PureComponent {
             src: n(511391)
           }), H.NW.string(H.t.FsmBy8)]
         })
-      }) : null, (0, r.jsx)(C.F, {
+      }) : null, (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_CHANGE_PASSWORD,
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(u.zxk, {
@@ -197,7 +197,7 @@ class X extends i.PureComponent {
             children: H.NW.string(H.t["FRep5+"])
           })
         })
-      }), (0, r.jsx)(C.F, {
+      }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
         children: (0, r.jsxs)(N.Z, {
           align: N.Z.Align.STRETCH,
@@ -294,13 +294,13 @@ class X extends i.PureComponent {
   }
   renderSecuritySettingsRedesign() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [this.renderConfirmModals(), (0, r.jsx)(C.F, {
+      children: [this.renderConfirmModals(), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_PROFILE,
         children: this.renderAccountSettings(!1)
-      }), (0, r.jsx)(C.F, {
+      }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
-      }), (0, r.jsx)(C.F, {
+      }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_REMOVAL,
         children: this.renderAccountRemovalSettings()
       })]
@@ -328,7 +328,7 @@ class X extends i.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.NW.string(H.t["Vov/9v"]),
-          component: O.Z,
+          component: C.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })
@@ -378,8 +378,8 @@ class X extends i.PureComponent {
   }
 }
 let J = () => {
-  let e = (0, c.e7)([A.default], () => {
-      let e = A.default.getCurrentUser();
+  let e = (0, c.e7)([y.default], () => {
+      let e = y.default.getCurrentUser();
       return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
     }),
     t = (0, c.e7)([T.Z], () => T.Z.getBackupCodes()),
@@ -388,7 +388,7 @@ let J = () => {
     s = (0, E.b)(),
     a = (0, _.CC)(),
     l = (0, c.e7)([D.default], () => D.default.locale),
-    d = (0, c.e7)([y.Z], () => y.Z.getSubsection());
+    d = (0, c.e7)([A.Z], () => A.Z.getSubsection());
   return (0, r.jsx)(X, {
     theme: i,
     currentUser: e,

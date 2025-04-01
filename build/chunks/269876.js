@@ -25,9 +25,9 @@ let E = (0, g.hQ)();
 function j() {
   let [e, t] = i.useState(-100), [n, s] = i.useState(!1), {
     threshold: j,
-    autoThreshold: O
+    autoThreshold: C
   } = (0, l.cj)([p.Z], () => p.Z.getModeOptions()), {
-    inputMode: C,
+    inputMode: O,
     automaticVADSupported: S,
     isEnabled: v
   } = (0, l.cj)([p.Z], () => ({
@@ -41,7 +41,7 @@ function j() {
   }
 
   function I(e, t) {
-    m.Z.setMode(C, {
+    m.Z.setMode(O, {
       threshold: e,
       autoThreshold: t
     })
@@ -54,12 +54,12 @@ function j() {
       p.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, T), e.stop()
     }
   }, []);
-  let y = (0, r.jsx)("section", {
+  let A = (0, r.jsx)("section", {
     className: a()(N.inputSensitivityToggle, N.manual),
     children: (0, r.jsx)(u.iRW, {
       initialValue: j + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => I(-((100 - e) * 1), O),
+      onValueChange: e => I(-((100 - e) * 1), C),
       barStyles: {
         background: d.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -80,7 +80,7 @@ function j() {
       })
     })
   });
-  return O && (y = (0, r.jsxs)("section", {
+  return C && (A = (0, r.jsxs)("section", {
     className: N.inputSensitivityToggle,
     children: [(0, r.jsx)("div", {
       className: N.inputSensitivitySlider,
@@ -110,11 +110,11 @@ function j() {
           })
         }), (0, r.jsx)(u.rsf, {
           id: e,
-          checked: O,
+          checked: C,
           onChange: e => I(j, e)
         })]
       })
-    }), y, !v && (0, r.jsx)(u.R94, {
+    }), A, !v && (0, r.jsx)(u.R94, {
       type: u.R94.Types.DESCRIPTION,
       className: a()(N.inputDisabledWarning, _.marginBottom8),
       children: f.NW.format(f.t["O13I+P"], {

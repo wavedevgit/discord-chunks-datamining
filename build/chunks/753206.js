@@ -1,4 +1,4 @@
-/** Chunk was on 99120 **/
+/** Chunk was on 53884 **/
 n.d(t, {
   Z: () => f
 });
@@ -8,8 +8,8 @@ var r = n(200651),
   l = n.n(o),
   a = n(628238),
   s = n(492593),
-  c = n(25015),
-  u = n(963550),
+  u = n(25015),
+  c = n(963550),
   d = n(845080),
   p = n(649547);
 let f = i.memo(function(e) {
@@ -24,7 +24,7 @@ let f = i.memo(function(e) {
     disableInteraction: y
   } = e, h = (0, a.A)((null !== (t = o.editedTimestamp) && void 0 !== t ? t : o.timestamp).valueOf()), {
     content: O
-  } = (0, c.Z)(o, {
+  } = (0, u.Z)(o, {
     hideSimpleEmbedContent: b,
     allowList: h,
     allowHeading: h,
@@ -68,7 +68,7 @@ let f = i.memo(function(e) {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
     }), n)),
-    childrenMessageContent: (0, u.Z)(e, O),
+    childrenMessageContent: (0, c.Z)(e, O),
     disableInteraction: y
   })
 })

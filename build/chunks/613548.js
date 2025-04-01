@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(961048),
   w = n(179424),
   R = n(786915),
-  M = n(975146),
-  k = n(991617),
+  k = n(975146),
+  M = n(991617),
   L = n(597998),
   D = n(606304),
   W = n(594174),
@@ -69,7 +69,7 @@ function X(e) {
   return e
 }
 
-function J(e, t) {
+function Q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,7 +82,7 @@ function J(e, t) {
   }), e
 }
 
-function Q(e) {
+function J(e) {
   let {
     channelId: t,
     guildId: n
@@ -97,7 +97,7 @@ function Q(e) {
       text: q.NW.formatToPlainString(q.t.JjdizM, {
         username: e.user.username
       }),
-      children: l => (0, r.jsx)(L.ZP, J(X({}, l), {
+      children: l => (0, r.jsx)(L.ZP, Q(X({}, l), {
         className: o()(K.speaker, {
           [K.last]: t === i.length - 1
         }),
@@ -161,7 +161,7 @@ function $(e) {
       shouldPrioritizeGroupPlusIcon: !0
     }, "invite-button"))
   }
-  return en && e_.push((0, r.jsx)(Q, {
+  return en && e_.push((0, r.jsx)(J, {
     channelId: et,
     guildId: n.guild_id
   }, "current-speaker")), e_.push((0, r.jsx)(g.Z, {
@@ -188,7 +188,7 @@ function $(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(M.Z, J(X({}, e), {
+      return (0, i.createElement)(k.Z, Q(X({}, e), {
         buttonRef: L,
         isActive: n,
         count: ei,
@@ -199,7 +199,7 @@ function $(e) {
   }, "call-members-popout")), a && !ee && e_.push(null != er ? (0, r.jsx)(w.Z, {
     className: K.button,
     channelId: et
-  }, "deselect-participant") : (0, r.jsx)(k.Z, {
+  }, "deselect-participant") : (0, r.jsx)(M.Z, {
     className: K.button,
     channelId: et,
     isHorizontal: !0
@@ -234,7 +234,7 @@ function $(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(A.Z, J(X({
+      return (0, i.createElement)(A.Z, Q(X({
         buttonRef: D
       }, e), {
         key: "more-options",
@@ -244,7 +244,7 @@ function $(e) {
     }
   }, "more-options-popout")), (ep || eu) && !ee && e_.push((0, r.jsx)(v.ZP.Divider, {
     className: K.divider
-  }, "divider")), ep && e_.push((0, r.jsx)(M.Z, {
+  }, "divider")), ep && e_.push((0, r.jsx)(k.Z, {
     className: o()(K.button, {
       [K.lastButton]: s
     }),

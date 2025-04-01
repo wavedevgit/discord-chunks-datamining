@@ -268,7 +268,7 @@ let U = d().throttle(h.OQ, 1e3),
       o = (0, P.y4)(l),
       c = Math.min(o - s, o - a),
       d = l.premiumTier,
-      u = (0, P.FZ)(d, l.id);
+      u = (0, P.FZ)(d);
     return null == u || d === A.Eu4.TIER_3 || c > 0 ? null : (c > o ? (t = W.NW.formatToPlainString(W.t.j0UH0t, {
       level: u
     }), n = W.NW.formatToPlainString(W.t.VQeyKy, {

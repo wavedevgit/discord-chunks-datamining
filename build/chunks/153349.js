@@ -1,6 +1,6 @@
 /** Chunk was on 34059 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -113,10 +113,10 @@ let A = i.memo(function(e) {
       (0, y.DT)(t, l.user.id, !1)
     }
 
-    function M() {
+    function k() {
       (0, y.DT)(t, l.user.id, !0)
     }
-    let k = e => {
+    let M = e => {
       (0, d.jW)(e, async () => {
         let {
           default: e
@@ -148,7 +148,7 @@ let A = i.memo(function(e) {
           var t;
           return (0, r.jsxs)(u.P3F, T(Z({
             className: S.participantMemberContainer,
-            onContextMenu: k
+            onContextMenu: M
           }, e), {
             children: [(0, r.jsx)(p.Z, {
               size: u.EFr.SIZE_40,
@@ -189,7 +189,7 @@ let A = i.memo(function(e) {
           innerClassName: o()(S.buttonContainer, S.buttonMargin),
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
-          onClick: M,
+          onClick: k,
           children: (0, r.jsx)(u.Dio, {
             size: "xs",
             color: "currentColor"
@@ -209,7 +209,7 @@ let A = i.memo(function(e) {
       children: P.NW.string(P.t.GYCh0d)
     })
   }),
-  M = i.memo(function() {
+  k = i.memo(function() {
     return (0, r.jsxs)("div", {
       className: S.emptyStateContainer,
       children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(u.Text, {
@@ -226,7 +226,7 @@ let A = i.memo(function(e) {
     })
   });
 
-function k(e) {
+function M(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
@@ -266,7 +266,7 @@ function k(e) {
               channel: t
             }, "rts-toggle");
           case 1: {
-            if (0 === l.length) return (0, r.jsx)(M, {}, "participants-empty");
+            if (0 === l.length) return (0, r.jsx)(k, {}, "participants-empty");
             let e = l[i];
             return (0, r.jsx)(w, {
               channel: t,

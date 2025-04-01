@@ -23,14 +23,14 @@ var r = n(200651),
   _ = n(410575),
   E = n(941129),
   j = n(634894),
-  O = n(586902),
-  C = n(980591),
+  C = n(586902),
+  O = n(980591),
   S = n(468363),
   v = n(326255),
   T = n(747017),
   I = n(963056),
-  y = n(570928),
-  A = n(100527),
+  A = n(570928),
+  y = n(100527),
   P = n(906732),
   R = n(676742),
   D = n(1585),
@@ -77,14 +77,14 @@ var r = n(200651),
   e_ = n(378441),
   eE = n(358820),
   ej = n(469887),
-  eO = n(306609),
-  eC = n(199902),
+  eC = n(306609),
+  eO = n(199902),
   eS = n(314897),
   ev = n(592125),
   eT = n(819640),
   eI = n(131951),
-  ey = n(19780),
-  eA = n(885110),
+  eA = n(19780),
+  ey = n(885110),
   eP = n(246946),
   eR = n(594174),
   eD = n(78839),
@@ -165,7 +165,7 @@ function e6(e) {
   }), x = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
     updateOpenPopoutRef: E,
     highlightBadge: j,
-    setHighlightBadge: O,
+    setHighlightBadge: C,
     pendingBadges: S,
     setPendingBadges: v
   } = function() {
@@ -178,7 +178,7 @@ function e6(e) {
       [n, r] = i.useState(),
       [s, a] = i.useState(),
       [l, o] = i.useState(!1);
-    return (0, C.Z)(() => o(!0), 750), i.useEffect(() => {
+    return (0, O.Z)(() => o(!0), 750), i.useEffect(() => {
       let t = t => {
         var n;
         let {
@@ -233,7 +233,7 @@ function e6(e) {
       spacing: 14,
       fixed: !0,
       onRequestClose: () => {
-        c(), O(void 0), v(void 0)
+        c(), C(void 0), v(void 0)
       },
       preload: () => (0, em.Z)(s, void 0, {
         withMutualGuilds: !1,
@@ -318,7 +318,7 @@ class e3 extends i.PureComponent {
         status: s,
         applicationStream: n,
         voiceChannel: l ? o : void 0
-      })) return (0, r.jsx)(y.Z, {
+      })) return (0, r.jsx)(A.Z, {
       hoverText: a,
       forceHover: e,
       children: (0, r.jsx)(T.Z, {
@@ -336,7 +336,7 @@ class e3 extends i.PureComponent {
       } = e;
       return t === ez.IIU.CUSTOM_STATUS
     });
-    return null != c ? (0, r.jsx)(y.Z, {
+    return null != c ? (0, r.jsx)(A.Z, {
       hoverText: a,
       forceHover: e,
       children: (0, r.jsx)(G.Z, {
@@ -344,7 +344,7 @@ class e3 extends i.PureComponent {
         emojiClassName: eq.emoji,
         className: eq.customStatus
       })
-    }) : null != s && s !== ez.Skl.UNKNOWN && i.isPomelo() ? (0, r.jsx)(y.Z, {
+    }) : null != s && s !== ez.Skl.UNKNOWN && i.isPomelo() ? (0, r.jsx)(A.Z, {
       hoverText: a,
       forceHover: e,
       children: (0, r.jsx)(I.Z, {
@@ -450,13 +450,13 @@ class e3 extends i.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, B.Z)(e, t, ez.jXE.ACCOUNT_PANEL), (0, M.v)(A.Z.ACCOUNT, M.d.MIC, n)
+      (0, B.Z)(e, t, ez.jXE.ACCOUNT_PANEL), (0, M.v)(y.Z.ACCOUNT, M.d.MIC, n)
     }), eX(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, L.Z)(e, ez.jXE.ACCOUNT_PANEL), (0, M.v)(A.Z.ACCOUNT, M.d.DEAFEN, !t)
+      (0, L.Z)(e, ez.jXE.ACCOUNT_PANEL), (0, M.v)(y.Z.ACCOUNT, M.d.DEAFEN, !t)
     }), eX(this, "handleOpenAccountSettings", () => {
       this.handleOpenSettings()
     }), eX(this, "handleOpenSettings", function() {
@@ -476,10 +476,10 @@ class e3 extends i.PureComponent {
           user: t,
           premiumSubscription: this.props.premiumSubscription,
           webBuildOverride: this.props.webBuildOverride,
-          onInteraction: (0, U.u)("UserSettingsCogContextMenu", A.Z.ACCOUNT)
+          onInteraction: (0, U.u)("UserSettingsCogContextMenu", y.Z.ACCOUNT)
         }))
       })
-    }), eX(this, "audioOnInteractionHandler", (0, U.u)("AudioDeviceMenu", A.Z.ACCOUNT)), eX(this, "handleInputAudioContextMenu", (e, t) => {
+    }), eX(this, "audioOnInteractionHandler", (0, U.u)("AudioDeviceMenu", y.Z.ACCOUNT)), eX(this, "handleInputAudioContextMenu", (e, t) => {
       (0, b.jW)(e, async () => {
         let {
           default: e
@@ -679,8 +679,8 @@ function e8() {
       activities: s,
       streaming: a,
       status: l
-    } = (0, o.cj)([eA.Z], () => {
-      let e = eA.Z.getActivities();
+    } = (0, o.cj)([ey.Z], () => {
+      let e = ey.Z.getActivities();
       return {
         activities: e,
         streaming: null != e.find(e => {
@@ -689,19 +689,19 @@ function e8() {
           } = e;
           return t === ez.IIU.STREAMING
         }),
-        status: eA.Z.getStatus()
+        status: ey.Z.getStatus()
       }
     }),
-    d = (0, o.e7)([eC.Z], () => eC.Z.getAnyStreamForUser(n)),
-    u = (0, O.Z)({
+    d = (0, o.e7)([eO.Z], () => eO.Z.getAnyStreamForUser(n)),
+    u = (0, C.Z)({
       userId: n
     }),
     m = eU.ZP.useUserTag(t, {
       decoration: "never"
     }),
     g = (0, o.e7)([eP.Z], () => eP.Z.hidePersonalInformation),
-    p = (0, o.e7)([ey.Z, ev.Z], () => {
-      let e = ey.Z.getChannelId();
+    p = (0, o.e7)([eA.Z, ev.Z], () => {
+      let e = eA.Z.getChannelId();
       return null != e ? ev.Z.getChannel(e) : null
     }),
     {
@@ -711,7 +711,7 @@ function e8() {
     } = (0, eN.Z)(p),
     {
       selfDeaf: _,
-      deaf: C
+      deaf: O
     } = (0, ef.Z)(p),
     v = (0, o.e7)([Z.C], () => {
       var e;
@@ -719,8 +719,8 @@ function e8() {
     }),
     T = (0, o.e7)([eD.ZP], () => eD.ZP.getPremiumTypeSubscription()),
     I = (0, o.e7)([eI.Z], () => eI.Z.getSpeakingWhileMuted()),
-    y = (0, o.e7)([eT.Z], () => eT.Z.hasLayers()),
-    R = (0, f.s9z)(f.JQI) || y || eM.s.isDisallowPopupsSet(),
+    A = (0, o.e7)([eT.Z], () => eT.Z.hasLayers()),
+    R = (0, f.s9z)(f.JQI) || A || eM.s.isDisallowPopupsSet(),
     D = (0, er.b)(),
     k = (0, o.e7)([Y.Z], () => null != Y.Z.getAwaitingRemoteSessionInfo()),
     W = (0, el.D)(),
@@ -775,7 +775,7 @@ function e8() {
     }(),
     {
       analyticsLocations: X
-    } = (0, P.ZP)(A.Z.ACCOUNT),
+    } = (0, P.ZP)(y.Z.ACCOUNT),
     J = (0, Q.K)({
       location: "Account",
       user: t
@@ -798,7 +798,7 @@ function e8() {
       premiumSubscription: T,
       selfDeaf: _,
       selfMute: b,
-      serverDeaf: C,
+      serverDeaf: O,
       serverMute: h,
       speaking: u,
       speakingWhileMuted: I,
@@ -872,13 +872,13 @@ function e9(e) {
     onClick: _,
     onContextMenu: E,
     nameplate: j
-  } = e, O = t || s || n, C = i.useRef(null), S = i.useRef(null), v = (0, m.O)(O ? "unmute" : "mute"), T = (0, g.P)(O ? "unmute" : "mute"), {
+  } = e, C = t || s || n, O = i.useRef(null), S = i.useRef(null), v = (0, m.O)(C ? "unmute" : "mute"), T = (0, g.P)(C ? "unmute" : "mute"), {
     activeVoice: I
-  } = (0, e_.o)(), y = null != I, R = (0, ex.z)(I), D = (0, o.e7)([ey.Z], () => ey.Z.isConnected()), {
+  } = (0, e_.o)(), A = null != I, R = (0, ex.z)(I), D = (0, o.e7)([eA.Z], () => eA.Z.isConnected()), {
     Component: Z,
     events: w,
     play: k
-  } = y ? T : v, L = n || s ? f.v0G : Z, {
+  } = A ? T : v, L = n || s ? f.v0G : Z, {
     mode: B
   } = (0, ep.ZP)({
     location: "RTC Microphone Button"
@@ -888,24 +888,24 @@ function e9(e) {
     location: "RTC Microphone Button"
   }), U = null != d ? d : (0, W.Z)(t, n, s, c, B === ep.BK.GroupedButtonsRedMic), {
     analyticsLocations: V
-  } = (0, P.ZP)(A.Z.AUDIO_INPUT_BUTTON), G = (0, eb.Hu)({
-    location: A.Z.AUDIO_INPUT_BUTTON,
+  } = (0, P.ZP)(y.Z.AUDIO_INPUT_BUTTON), G = (0, eb.Hu)({
+    location: y.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   });
-  i.useEffect(() => () => k(), [O, k]);
+  i.useEffect(() => () => k(), [C, k]);
   let F = i.useCallback(e => {
       E(e, V)
     }, [E, V]),
     [H, z] = i.useState(!1),
     Y = i.useCallback(e => {
       var t;
-      if ((0, l.k)(null == e ? void 0 : e.target, Node) && (null === (t = C.current) || void 0 === t ? void 0 : t.contains(e.target))) return h.F;
+      if ((0, l.k)(null == e ? void 0 : e.target, Node) && (null === (t = O.current) || void 0 === t ? void 0 : t.contains(e.target))) return h.F;
       z(!1)
     }, []),
     [K, q] = i.useState(!1);
   return i.useEffect(() => {
     let e;
-    return D && y && (e = setTimeout(() => {
+    return D && A && (e = setTimeout(() => {
       q(!0), e = setTimeout(() => q(!1), e1)
     }, 300)), () => {
       q(!1), clearTimeout(e)
@@ -913,7 +913,7 @@ function e9(e) {
   }, [D]), (0, r.jsx)(P.Gt, {
     value: V,
     children: (0, r.jsxs)("div", {
-      ref: C,
+      ref: O,
       className: eq.micButtonParent,
       children: [(0, r.jsx)(eG.Z, {
         tooltipText: U,
@@ -930,7 +930,7 @@ function e9(e) {
           size: "custom",
           width: 20,
           height: 20,
-          color: O ? f.TVs.colors.STATUS_DANGER : "currentColor",
+          color: C ? f.TVs.colors.STATUS_DANGER : "currentColor",
           className: N
         }),
         onClick: _,
@@ -939,9 +939,9 @@ function e9(e) {
         className: a()({
           [eq.micButtonWithMenu]: G
         }),
-        redGlow: O && M,
+        redGlow: C && M,
         "aria-label": eK.NW.string(eK.t["w4m94+"]),
-        "aria-checked": O,
+        "aria-checked": C,
         disabled: c
       }), G && (0, r.jsx)(f.yRy, {
         targetElementRef: S,
@@ -957,7 +957,7 @@ function e9(e) {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(eO.l, {
+          return (0, r.jsx)(eC.l, {
             onSettingsButtonClick: t
           })
         },
@@ -1009,13 +1009,13 @@ function e9(e) {
                   size: "custom",
                   width: 12,
                   height: 12,
-                  color: M && O ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
+                  color: M && C ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
                 }),
                 role: "button",
                 className: a()([eq.buttonChevron], {
-                  [eq.redGlow]: O && M
+                  [eq.redGlow]: C && M
                 }),
-                redGlow: O && M,
+                redGlow: C && M,
                 "aria-label": eK.NW.string(eK.t.Hapb4O),
                 disabled: c,
                 onClick: e => {
@@ -1052,7 +1052,7 @@ function e5(e) {
     location: "RTC Microphone Button"
   }), {
     analyticsLocations: _
-  } = (0, P.ZP)(A.Z.AUDIO_OUTPUT_BUTTON);
+  } = (0, P.ZP)(y.Z.AUDIO_OUTPUT_BUTTON);
   i.useEffect(() => () => p(), [m, p]);
   let E = i.useCallback(e => {
     o(e, _)

@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(47481),
   w = n(977391),
   R = n(959258),
-  M = n(73274),
-  k = n(419388),
+  k = n(73274),
+  M = n(419388),
   L = n(406534),
   D = n(981631),
   W = n(388032),
@@ -123,7 +123,7 @@ let G = i.memo(function(e) {
       attachments: 8,
       fontSize: O,
       groupSpacing: l
-    }), [_, O, l]), V = (0, k.ZP)({
+    }), [_, O, l]), V = (0, M.ZP)({
       messages: m,
       channel: f,
       compact: _,
@@ -133,7 +133,7 @@ let G = i.memo(function(e) {
       canLoadMore: null == I,
       handleScrollToBottom: i.useCallback(() => R(!0), [R]),
       handleScrollFromBottom: i.useCallback(() => R(!1), [R])
-    }), z = (0, M.Z)({
+    }), z = (0, k.Z)({
       scrollerRef: V.ref,
       isEditing: null != j,
       keyboardModeEnabled: E,
@@ -142,8 +142,8 @@ let G = i.memo(function(e) {
       channelStreamMarkup: q,
       newMessagesBar: K,
       jumpToPresentBar: X,
-      forumPostActionBar: J,
-      safetyWarningBanner: Q
+      forumPostActionBar: Q,
+      safetyWarningBanner: J
     } = (0, L.Z)({
       channel: f,
       messages: m,
@@ -209,9 +209,9 @@ let G = i.memo(function(e) {
       });
     return (0, r.jsxs)(a.bG, {
       navigator: z,
-      children: [null != Q && Q, (0, r.jsxs)("div", {
+      children: [null != J && J, (0, r.jsxs)("div", {
         className: o()(U.messagesWrapper, n, "group-spacing-".concat(l)),
-        children: [null == Q && K, (0, r.jsxs)(c.eTT, F(B({
+        children: [null == J && K, (0, r.jsxs)(c.eTT, F(B({
           ref: er,
           customTheme: !0,
           className: o()(d, U.scroller),
@@ -223,7 +223,7 @@ let G = i.memo(function(e) {
         }, $), {
           tabIndex: -1,
           role: "group",
-          children: [J, (0, r.jsxs)("ol", F(B({
+          children: [Q, (0, r.jsxs)("ol", F(B({
             className: U.scrollerInner,
             "aria-label": W.NW.formatToPlainString(W.t.XarRiI, {
               channelName: f.name
@@ -276,8 +276,8 @@ let G = i.memo(function(e) {
     }(t), {
       messageGroupSpacing: Z,
       fontSize: w,
-      messageDisplayCompact: M,
-      renderSpoilers: k,
+      messageDisplayCompact: k,
+      renderSpoilers: M,
       keyboardModeEnabled: L
     } = function() {
       let e = y.jU.useSetting(),
@@ -361,13 +361,13 @@ let G = i.memo(function(e) {
       }
     }(t);
     return (0, r.jsx)(g.aQ.Provider, {
-      value: (0, T.Z)(k, u),
+      value: (0, T.Z)(M, u),
       children: (0, r.jsx)(R.v, {
         children: (0, r.jsx)(G, F(B({}, c), {
           messageGroupSpacing: Z,
           showNewMessagesBar: !0,
           channel: t,
-          messageDisplayCompact: !a && (o || M),
+          messageDisplayCompact: !a && (o || k),
           messages: W,
           channelStream: U,
           permissionVersion: p,

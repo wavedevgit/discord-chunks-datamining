@@ -61,7 +61,7 @@ function m(e) {
         powerups: u,
         unlocked: d,
         appliedBoosts: p
-      } = m, h = t - p, f = new Set(null !== (n = null === (e = c.get(g.Us.PERK)) || void 0 === e ? void 0 : e.map(e => e.skuId)) && void 0 !== n ? n : []).difference(new Set(null !== (r = null == o ? void 0 : o.seenPerkSkuIds) && void 0 !== r ? r : []));
+      } = m, h = t - (null != p ? p : 0), f = new Set(null !== (n = null === (e = c.get(g.Us.PERK)) || void 0 === e ? void 0 : e.map(e => e.skuId)) && void 0 !== n ? n : []).difference(new Set(null !== (r = null == o ? void 0 : o.seenPerkSkuIds) && void 0 !== r ? r : []));
       if (f.size > 0) return {
         type: g.Us.PERK,
         powerup: u.get(l().sample(Array.from(f))),

@@ -1,4 +1,4 @@
-/** Chunk was on 9857 **/
+/** Chunk was on 69787 **/
 n.d(t, {
   o: () => b
 });
@@ -25,7 +25,7 @@ function b(e) {
   let {
     onClose: n,
     markAsDismissed: b
-  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), C = (t = null == y ? void 0 : y.premiumType) === p.p9.TIER_2 ? v.NW.string(v.t.jqO5Qk) : null == t ? v.NW.string(v.t.f2qjw8) : v.NW.string(v.t.SblICQ), x = _.ZP.canUseCustomCallSounds(y);
+  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), x = (t = null == y ? void 0 : y.premiumType) === p.p9.TIER_2 ? v.NW.string(v.t.jqO5Qk) : null == t ? v.NW.string(v.t.f2qjw8) : v.NW.string(v.t.SblICQ), j = _.ZP.canUseCustomCallSounds(y);
   return (0, r.jsxs)(d.Z, {
     isShown: !0,
     type: d.Y.PREMIUM,
@@ -52,8 +52,8 @@ function b(e) {
       })]
     }), (0, r.jsx)(o.x, {
       variant: "text-sm/normal",
-      children: C
-    }), x ? (0, r.jsx)(a.zx, {
+      children: x
+    }), j ? (0, r.jsx)(a.zx, {
       onClick: function() {
         s.Z.open(m.oAB.VOICE, g.GA), null == n || n(), null == b || b(f.L.PRIMARY)
       },

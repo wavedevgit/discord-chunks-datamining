@@ -1,7 +1,7 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => eC,
-  u: () => eO
+  Z: () => eO,
+  u: () => eC
 }), n(266796);
 var r, i = n(200651);
 n(192379);
@@ -23,14 +23,14 @@ var s = n(399606),
   _ = n(131951),
   E = n(594174),
   j = n(78839),
-  O = n(424218),
-  C = n(63063),
+  C = n(424218),
+  O = n(63063),
   S = n(74538),
   v = n(715037),
   T = n(780525),
   I = n(314684),
-  y = n(687362),
-  A = n(943180),
+  A = n(687362),
+  y = n(943180),
   P = n(229555),
   R = n(768865),
   D = n(119269),
@@ -77,23 +77,23 @@ var s = n(399606),
   e_ = n(371435),
   eE = n(83663),
   ej = n(230540),
-  eO = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.TENURE_BADGE = "tenureBadge", r.PERMADECOS = "permadecos", r);
-let eC = () => {
+  eC = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.TENURE_BADGE = "tenureBadge", r.PERMADECOS = "permadecos", r);
+let eO = () => {
   let {
     analyticsLocations: e
-  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, c.ZP)(), r = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), eO = (0, O.BU)(W.Uq / 1024, {
+  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, c.ZP)(), r = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), eC = (0, C.BU)(W.Uq / 1024, {
     useKibibytes: !0
   }), {
-    premiumSubscription: eC,
+    premiumSubscription: eO,
     isEligibleForReward: eS
   } = (0, s.cj)([j.ZP], () => ({
     premiumSubscription: j.ZP.getPremiumTypeSubscription(),
     isEligibleForReward: j.ZP.getIsSubscriptionEligibleForReward()
-  })), ev = null != eC ? S.ZP.getPremiumPlanItem(eC) : null, eT = (null != ev ? S.ZP.getSkuIdForPlan(ev.planId) : null) === W.Si.TIER_2, eI = E.default.getCurrentUser(), ey = (0, S.I5)(eI, W.p9.TIER_2), eA = (0, S.I5)(eI, W.p9.TIER_0), eP = (0, I.bq)({
+  })), ev = null != eO ? S.ZP.getPremiumPlanItem(eO) : null, eT = (null != ev ? S.ZP.getSkuIdForPlan(ev.planId) : null) === W.Si.TIER_2, eI = E.default.getCurrentUser(), eA = (0, S.I5)(eI, W.p9.TIER_2), ey = (0, S.I5)(eI, W.p9.TIER_0), eP = (0, I.bq)({
     showAnimations: !0
-  }), eR = null != eP ? eP.initialPercentage : void 0, eD = null != eP ? eP.percentage : void 0, eZ = (0, p.Z)(_.Z), ew = (0, y.a)(), ek = (0, I.Kb)(L.qY), {
+  }), eR = null != eP ? eP.initialPercentage : void 0, eD = null != eP ? eP.percentage : void 0, eZ = (0, p.Z)(_.Z), ew = (0, A.a)(), ek = (0, I.Kb)(L.qY), {
     isFractionalPremiumActive: eW
-  } = (0, g.Z)(), eL = null != eC && eC.hasPremiumAtLeast(W.p9.TIER_2), eB = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
+  } = (0, g.Z)(), eL = null != eO && eO.hasPremiumAtLeast(W.p9.TIER_2), eB = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
     enabled: eM
   } = v.Z.useExperiment({
     location: "usePerksDiscoverabilityCards"
@@ -126,7 +126,7 @@ let eC = () => {
       },
       perkImage: X
     },
-    clips: ey ? {
+    clips: eA ? {
       name: "clips",
       title: F.NW.string(F.t.z2jK6e),
       subtitle: F.NW.string(F.t["hxy0/f"]),
@@ -139,7 +139,7 @@ let eC = () => {
           analyticsLocations: e
         })
       } : () => {
-        window.open(C.Z.getArticleURL(B.BhN.CLIPS), "_blank")
+        window.open(O.Z.getArticleURL(B.BhN.CLIPS), "_blank")
       },
       perkImage: $
     } : {
@@ -150,7 +150,7 @@ let eC = () => {
       pillText: F.NW.string(F.t.EYxi0t),
       perkImage: $
     },
-    earlyAccess: ey ? {
+    earlyAccess: eA ? {
       name: "earlyAccess",
       title: F.NW.string(F.t.UkLVeH),
       subtitle: F.NW.string(F.t.xf9ePj),
@@ -164,7 +164,7 @@ let eC = () => {
       isPremiumGetCta: !0,
       perkImage: et
     },
-    earlyAccessSeeAllVariant: ey ? {
+    earlyAccessSeeAllVariant: eA ? {
       name: "earlyAccessSeeAllVariant",
       title: F.NW.string(F.t.UkLVeH),
       subtitle: F.NW.string(F.t.xf9ePj),
@@ -178,7 +178,7 @@ let eC = () => {
       isPremiumGetCta: !0,
       perkImage: en
     },
-    entranceSounds: ey ? {
+    entranceSounds: eA ? {
       name: "entranceSounds",
       title: F.NW.string(F.t["f4M+Hx"]),
       subtitle: F.NW.string(F.t["7ZCYvL"]),
@@ -193,7 +193,7 @@ let eC = () => {
       description: F.NW.string(F.t["3smf/f"]),
       perkImage: ei
     },
-    entranceSoundsSeeAllVariation: ey ? {
+    entranceSoundsSeeAllVariation: eA ? {
       name: "entranceSoundsSeeAllVariation",
       title: F.NW.string(F.t["f4M+Hx"]),
       subtitle: F.NW.string(F.t["7ZCYvL"]),
@@ -217,7 +217,7 @@ let eC = () => {
       onCtaClick: eU,
       perkImage: J
     },
-    remixing: ey ? {
+    remixing: eA ? {
       name: "remixing",
       title: F.NW.string(F.t["H+v6eX"]),
       subtitle: F.NW.string(F.t.wmbOAg),
@@ -258,7 +258,7 @@ let eC = () => {
       perkImage: e_.Z,
       imageOverlayText: F.NW.string(F.t.lcYttb)
     },
-    specialMemberPricing: ey ? {
+    specialMemberPricing: eA ? {
       name: "specialMemberPricing",
       title: F.NW.string(F.t["0Mykgo"]),
       subtitle: F.NW.string(F.t.opgqDQ),
@@ -274,7 +274,7 @@ let eC = () => {
       isPremiumGetCta: !0,
       perkImage: eu
     },
-    specialMemberPricingSeeAllVariant: ey ? {
+    specialMemberPricingSeeAllVariant: eA ? {
       name: "specialMemberPricingSeeAllVariant",
       title: F.NW.string(F.t["0Mykgo"]),
       subtitle: F.NW.string(F.t.opgqDQ),
@@ -290,7 +290,7 @@ let eC = () => {
       isPremiumGetCta: !0,
       perkImage: em
     },
-    specialShopPerks: ey ? {
+    specialShopPerks: eA ? {
       name: "specialShopPerks",
       title: F.NW.string(F.t.U68LpK),
       subtitle: F.NW.string(F.t.chRZiY),
@@ -307,7 +307,7 @@ let eC = () => {
       onCtaClick: eG,
       perkImage: eu
     },
-    unlimitedSuperReactions: ey ? {
+    unlimitedSuperReactions: eA ? {
       name: "unlimitedSuperReactions",
       title: F.NW.string(F.t.hpgmOz),
       subtitle: F.NW.string(F.t.Hxujsr),
@@ -384,10 +384,10 @@ let eC = () => {
     largeUploads: {
       name: "largeUploads",
       title: F.NW.formatToPlainString(F.t.jqhAdH, {
-        premiumMaxSize: eO
+        premiumMaxSize: eC
       }),
       subtitle: F.NW.formatToPlainString(F.t["HI+cfn"], {
-        premiumMaxSize: eO
+        premiumMaxSize: eC
       }),
       perkImage: eN,
       description: F.NW.string(F.t["R0gx+/"])
@@ -404,9 +404,9 @@ let eC = () => {
       title: F.NW.string(F.t.XQCSrq),
       subtitle: F.NW.string(F.t.HC5wVV),
       description: F.NW.string(F.t.ee7wQ0),
-      descriptionCta: ey || eA ? F.NW.string(F.t.y9TxXV) : F.NW.string(F.t.d8o6lZ),
-      isPremiumGetCta: !(ey || eA),
-      onCtaClick: ey || eA ? eF : void 0,
+      descriptionCta: eA || ey ? F.NW.string(F.t.y9TxXV) : F.NW.string(F.t.d8o6lZ),
+      isPremiumGetCta: !(eA || ey),
+      onCtaClick: eA || ey ? eF : void 0,
       perkImage: ea
     },
     referralProgram: {
@@ -414,7 +414,7 @@ let eC = () => {
       title: F.NW.string(F.t.tPY4o6),
       subtitle: F.NW.string(F.t.JY0grK),
       description: F.NW.format(F.t["2JqTFx"], {
-        helpdeskArticle: C.Z.getArticleURL(B.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: O.Z.getArticleURL(B.BhN.REFERRAL_PROGRAM)
       }),
       descriptionCta: F.NW.string(F.t.JST6jo),
       isPremiumGetCta: !eT || void 0,
@@ -424,9 +424,9 @@ let eC = () => {
       name: "serverProfiles",
       title: F.NW.string(F.t.I9TYMj),
       subtitle: F.NW.string(F.t.HMSHeH),
-      descriptionCta: ey ? F.NW.string(F.t.jVcuVV) : F.NW.string(F.t.JST6jo),
-      isPremiumGetCta: !ey,
-      onCtaClick: ey ? eU : void 0,
+      descriptionCta: eA ? F.NW.string(F.t.jVcuVV) : F.NW.string(F.t.JST6jo),
+      isPremiumGetCta: !eA,
+      onCtaClick: eA ? eU : void 0,
       perkImage: ed
     },
     permadecos: {
@@ -434,16 +434,16 @@ let eC = () => {
       title: F.NW.string(F.t["57ngoq"]),
       subtitle: F.NW.string(F.t.piFFjY),
       description: F.NW.format(F.t.Pd7olp, {
-        learnMoreLink: C.Z.getArticleURL(B.BhN.PERMADECOS)
+        learnMoreLink: O.Z.getArticleURL(B.BhN.PERMADECOS)
       }),
-      descriptionCta: ey ? F.NW.string(F.t.jVcuVV) : F.NW.string(F.t.JST6jo),
-      isPremiumGetCta: !ey,
-      onCtaClick: ey ? () => {
+      descriptionCta: eA ? F.NW.string(F.t.jVcuVV) : F.NW.string(F.t.JST6jo),
+      isPremiumGetCta: !eA,
+      onCtaClick: eA ? () => {
         eB || (0, f.EW)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
           dismissAction: U.L.TAKE_ACTION
         }), eU()
       } : void 0,
-      pillText: eB || !ey ? void 0 : F.NW.string(F.t.y2b7CA).toLocaleUpperCase(),
+      pillText: eB || !eA ? void 0 : F.NW.string(F.t.y2b7CA).toLocaleUpperCase(),
       perkImage: ej.Z
     }
   };
@@ -489,8 +489,8 @@ let eC = () => {
   }
   let {
     enabled: ez
-  } = (0, A.D)();
-  return ez && ey && eL && (eH.tenureBadge = {
+  } = (0, y.D)();
+  return ez && eA && eL && (eH.tenureBadge = {
     name: "tenureBadge",
     title: F.NW.string(F.t.rnsqpa),
     pillText: F.NW.string(F.t.jyYgZ2).toLocaleUpperCase(),

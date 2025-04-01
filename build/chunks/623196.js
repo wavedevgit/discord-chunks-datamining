@@ -43,8 +43,8 @@ function E() {
     [s, E] = i.useState(!1);
   if (null == e) return null;
   let j = (0, m.$6)(t, e) || n,
-    O = null != t && a()().diff(a()(t.created_at), "days") < N.eBq,
-    C = j && O,
+    C = null != t && a()().diff(a()(t.created_at), "days") < N.eBq,
+    O = j && C,
     S = () => {
       _({
         header: b.NW.string(b.t.jxXMEx),
@@ -76,7 +76,7 @@ function E() {
       description: b.NW.format(b.t.P3kNfn, {
         helpdeskArticle: u.Z.getArticleURL(N.BhN.GDPR_REQUEST_DATA)
       })
-    }), C ? (0, r.jsx)(o.Zbd, {
+    }), O ? (0, r.jsx)(o.Zbd, {
       className: x.card,
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",

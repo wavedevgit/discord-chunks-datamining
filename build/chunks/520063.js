@@ -59,11 +59,11 @@ function h(e, n, h) {
     v = (0, i.e7)([Z.Z], () => Z.Z.getGuild(n), [n]),
     x = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
     y = (0, u.Z)(P, "Context Menu"),
-    E = (0, d.Xb)(P);
+    _ = (0, d.Xb)(P);
   if ((null == x ? void 0 : x.id) === e.id) return [y];
   if (null == v || null == P || null == x) return [];
-  let _ = E || P.ownerId === x.id && P.type === p.d4z.PRIVATE_THREAD;
-  return [_ ? (0, l.jsx)(a.sNh, {
+  let E = _ || P.ownerId === x.id && P.type === p.d4z.PRIVATE_THREAD;
+  return [E ? (0, l.jsx)(a.sNh, {
     id: "remove",
     label: P.isForumPost() ? O.NW.formatToPlainString(O.t.v2KNNz, {
       user: e.username
@@ -74,7 +74,7 @@ function h(e, n, h) {
     action: () => c.Z.removeMember(P, e.id, "Context Menu")
   }) : null, (0, s.BK)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "kick",
-    label: _ ? O.NW.formatToPlainString(O.t["1Ie87u"], {
+    label: E ? O.NW.formatToPlainString(O.t["1Ie87u"], {
       user: e.username
     }) : O.NW.formatToPlainString(O.t["9l/iTU"], {
       user: e.username
@@ -91,7 +91,7 @@ function h(e, n, h) {
     })
   }) : null, (0, s.mm)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "ban",
-    label: _ ? O.NW.formatToPlainString(O.t.i62APT, {
+    label: E ? O.NW.formatToPlainString(O.t.i62APT, {
       user: e.username
     }) : O.NW.formatToPlainString(O.t.WnpUBg, {
       user: e.username

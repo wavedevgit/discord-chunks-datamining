@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(55563),
   E = n(259580),
   j = n(572004),
-  O = n(669079),
-  C = n(296848),
+  C = n(669079),
+  O = n(296848),
   S = n(474936),
   v = n(388032),
   T = n(743919);
@@ -36,7 +36,7 @@ function I(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class y extends i.PureComponent {
+class A extends i.PureComponent {
   componentWillUnmount() {
     this._copyModeTimeout.stop()
   }
@@ -65,7 +65,7 @@ class y extends i.PureComponent {
       className: T.giftCodeRow,
       children: [(0, r.jsx)(c.kO8, {
         className: T.codeText,
-        value: (0, O.Nz)(t.code),
+        value: (0, C.Nz)(t.code),
         text: this.copyButtonText,
         mode: n,
         supportsCopy: j.wS,
@@ -95,7 +95,7 @@ class y extends i.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, O.dM)(t, n);
+      (0, C.dM)(t, n);
       try {
         (0, j.JG)(e), this.setState({
           copyMode: c.uA3.SUCCESS
@@ -113,7 +113,7 @@ class y extends i.PureComponent {
     })
   }
 }
-class A extends i.PureComponent {
+class y extends i.PureComponent {
   componentDidMount() {
     this._loadedAt = Date.now()
   }
@@ -210,7 +210,7 @@ class A extends i.PureComponent {
         children: l ? (0, r.jsx)(c.$jN, {
           className: T.spinner
         }) : (0, r.jsxs)(i.Fragment, {
-          children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, r.jsx)(y, {
+          children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, r.jsx)(A, {
             giftCode: e,
             sku: a,
             hideCode: o
@@ -263,7 +263,7 @@ let P = l.ZP.connectStores([_.Z, b.Z, N.Z, m.Z, x.Z, f.default], e => {
     isFetching: N.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: N.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: m.Z.getApplication(i.applicationId),
-    subscriptionPlan: null != n ? (0, C.oE)(n) : null,
+    subscriptionPlan: null != n ? (0, O.oE)(n) : null,
     giftCodes: s
   }
-})(A)
+})(y)

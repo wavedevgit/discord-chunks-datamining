@@ -52,7 +52,7 @@ function S(e) {
   let {
     appliedGuildBoosts: t,
     guildId: n
-  } = e, i = (0, v.gZ)(t, n), s = (0, v.nW)((0, v.rF)(t.length, n));
+  } = e, i = (0, v.gZ)(t, n), s = (0, v.nW)((0, v.Jh)(n));
   if (null == i || null == s) return null;
   let l = (0, v._k)(t, n);
   return (0, r.jsxs)(a.Wn, {

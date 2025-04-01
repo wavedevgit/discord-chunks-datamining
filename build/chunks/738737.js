@@ -1,4 +1,4 @@
-/** Chunk was on 9857 **/
+/** Chunk was on 69787 **/
 n.d(t, {
   Z: () => s
 });
@@ -35,8 +35,8 @@ function s(e) {
       STEPS: l
     } = await Promise.all([n.e("17938"), n.e("57301")]).then(n.bind(n, 7305));
     return n => {
-      var C, x, {
-          onClose: j
+      var x, j, {
+          onClose: C
         } = n,
         I = function(e, t) {
           if (null == e) return {};
@@ -59,7 +59,7 @@ function s(e) {
         skuIDs: [y],
         children: (0, r.jsx)(o.c1, {
           children: (0, r.jsx)(a.KB, {
-            children: (0, r.jsx)(i, (C = function(e) {
+            children: (0, r.jsx)(i, (x = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -76,10 +76,10 @@ function s(e) {
                 })
               }
               return e
-            }({}, I), x = x = {
+            }({}, I), j = j = {
               initialPlanId: t,
               onClose: e => {
-                j(), null == u || u(e)
+                C(), null == u || u(e)
               },
               analyticsLocations: f,
               analyticsObject: _,
@@ -92,16 +92,16 @@ function s(e) {
               trialId: c,
               trialFooterMessageOverride: d,
               reviewWarningMessage: b
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(C, Object.getOwnPropertyDescriptors(x)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(j)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, r)
               }
               return n
-            })(Object(x)).forEach(function(e) {
-              Object.defineProperty(C, e, Object.getOwnPropertyDescriptor(x, e))
-            }), C))
+            })(Object(j)).forEach(function(e) {
+              Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(j, e))
+            }), x))
           })
         })
       })

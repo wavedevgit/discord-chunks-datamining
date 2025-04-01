@@ -30,26 +30,26 @@ function b(e) {
     className: _,
     showPremiumIcon: E = !0,
     showResetThemeButton: j = !1,
-    forcedDivider: O
-  } = e, C = (0, u.ZP)(t.id, x), {
+    forcedDivider: C
+  } = e, O = (0, u.ZP)(t.id, x), {
     primaryColor: S,
     secondaryColor: v
   } = (0, m.Z)({
     user: t,
-    displayProfile: C,
+    displayProfile: O,
     pendingThemeColors: i,
     isPreview: !0
-  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
+  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), A = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), y = (0, d.Cf)(I, A, !1);
   if (null == S || null == v) return null;
   let P = e => {
-    a(l()(e, null == C ? void 0 : C.themeColors) ? void 0 : e)
+    a(l()(e, null == O ? void 0 : O.themeColors) ? void 0 : e)
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),
     disabled: !T && !b,
     className: s()(N.__invalid_profileThemesSection, _),
     showPremiumIcon: E,
-    forcedDivider: O,
+    forcedDivider: C,
     children: (0, r.jsxs)("div", {
       className: N.sectionContainer,
       children: [(0, r.jsx)("div", {
@@ -57,7 +57,7 @@ function b(e) {
         children: (0, r.jsx)(p.Z, {
           onChange: e => P([e, v]),
           color: S,
-          suggestedColors: A,
+          suggestedColors: y,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
             className: N.colorSwatchLabel,
@@ -72,7 +72,7 @@ function b(e) {
         children: (0, r.jsx)(p.Z, {
           onChange: e => P([S, e]),
           color: v,
-          suggestedColors: A,
+          suggestedColors: y,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
             className: N.colorSwatchLabel,

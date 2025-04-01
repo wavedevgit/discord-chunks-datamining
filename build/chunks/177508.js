@@ -52,8 +52,8 @@ function E(e, t) {
   }), e
 }
 let j = Object.keys(d.zxk.Colors).filter(e => "CUSTOM" !== e),
-  O = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
-  C = Object.keys(d.zxk.Sizes).filter(e => "NONE" !== e);
+  C = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
+  O = Object.keys(d.zxk.Sizes).filter(e => "NONE" !== e);
 
 function S() {
   return (0, r.jsxs)("div", {
@@ -91,8 +91,8 @@ function v() {
 }
 let T = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
   I = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
-  y = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
-  A = ["critical", "warning", "positive", "info"],
+  A = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
+  y = ["critical", "warning", "positive", "info"],
   P = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
 
 function R() {
@@ -116,7 +116,7 @@ function R() {
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: y.map(e => (0, r.jsxs)("div", {
+        children: A.map(e => (0, r.jsxs)("div", {
           className: x.color,
           style: {
             padding: 16,
@@ -144,7 +144,7 @@ function R() {
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: A.map(e => {
+        children: y.map(e => {
           let t = "var(--text-feedback-".concat(e, ")");
           return (0, r.jsxs)("div", {
             className: x.color,
@@ -236,7 +236,7 @@ function D() {
 }
 
 function Z() {
-  let [e, t] = i.useState(!1), n = j.flatMap(e => [...O.map(t => (0, r.jsxs)(d.zxk, {
+  let [e, t] = i.useState(!1), n = j.flatMap(e => [...C.map(t => (0, r.jsxs)(d.zxk, {
     color: d.zxk.Colors[e],
     look: d.zxk.Looks[t],
     fullWidth: !0,
@@ -246,7 +246,7 @@ function Z() {
     children: [e.toLowerCase(), " - ", t.toLowerCase()]
   }, e + t)), (0, r.jsx)("hr", {
     className: x.sectionDivider
-  }, e + "divider")]), s = C.flatMap(e => (0, r.jsx)(d.zxk, {
+  }, e + "divider")]), s = O.flatMap(e => (0, r.jsx)(d.zxk, {
     color: d.zxk.Colors.BRAND,
     look: d.zxk.Looks.FILLED,
     size: d.zxk.Sizes[e],

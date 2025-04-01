@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(78839),
   E = n(626135),
   j = n(526167),
-  O = n(74538),
-  C = n(140465),
+  C = n(74538),
+  O = n(140465),
   S = n(278605),
   v = n(286961),
   T = n(351367),
   I = n(91802),
-  y = n(639119),
-  A = n(879214),
+  A = n(639119),
+  y = n(879214),
   P = n(8647),
   R = n(568126),
   D = n(605289),
@@ -140,25 +140,25 @@ let eg = e => {
       e_ = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
       eE = (0, m.ZP)(),
       ej = (0, c.wj)(eE),
-      eO = x.default.getCurrentUser(),
-      eC = (0, O.I5)(eO),
-      eS = (0, S.xP)("PremiumMarketingHome") && !eC && G,
+      eC = x.default.getCurrentUser(),
+      eO = (0, C.I5)(eC),
+      eS = (0, S.xP)("PremiumMarketingHome") && !eO && G,
       [ev, eT] = i.useState(!1),
-      [eI, ey] = i.useState(!1),
-      [eA, eP] = i.useState(!1),
+      [eI, eA] = i.useState(!1),
+      [ey, eP] = i.useState(!1),
       [eR, eD] = i.useState(!1),
       eZ = (0, j.rO)(),
       [ew, ek] = i.useState(!1),
       eW = (0, l.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
-      eL = null != eW ? (0, O.Af)(eW) : null,
-      eB = null != eL ? O.ZP.getSkuIdForPlan(eL.planId) : null,
+      eL = null != eW ? (0, C.Af)(eW) : null,
+      eB = null != eL ? C.ZP.getSkuIdForPlan(eL.planId) : null,
       eM = null !== eB && eB !== et.Si.TIER_2 ? et.Si.TIER_2 : null,
       eU = (0, I.n)(),
       eV = null != eU,
       [eG, eF] = i.useState(!1),
-      eH = (0, y.N)(),
+      eH = (0, A.N)(),
       ez = null == eH ? void 0 : null === (t = eH.subscription_trial) || void 0 === t ? void 0 : t.sku_id,
-      eY = (0, C.Nx)(),
+      eY = (0, O.Nx)(),
       eK = (0, Z.Vi)(),
       eq = (0, T.m)({
         location: "PremiumMarketingHome"
@@ -285,7 +285,7 @@ let eg = e => {
               entrypoint: U,
               isDarkMode: ej
             })
-          }), !eS && !0 === eq && (0, r.jsx)(A.W, {
+          }), !eS && !0 === eq && (0, r.jsx)(y.W, {
             isFullScreen: W,
             analyticsLocations: eQ
           }), eS && (0, r.jsx)("div", {
@@ -348,7 +348,7 @@ let eg = e => {
         }), !eS && (0, r.jsx)("div", {
           className: W ? es.footerSpacingFullscreen : es.footerSpacing
         }), (0, r.jsx)(z.Z, {
-          isVisible: !ev && !eA && !eI && ew,
+          isVisible: !ev && !ey && !eI && ew,
           isFullscreen: W,
           subscriptionTier: eM,
           isMarketingPageV2: eS
@@ -372,7 +372,7 @@ let eg = e => {
         }), eS && (0, r.jsx)(o.$, {
           innerRef: ex,
           onChange: e => {
-            ey(e)
+            eA(e)
           },
           children: (0, r.jsx)(q.Z, {
             ref: ex,

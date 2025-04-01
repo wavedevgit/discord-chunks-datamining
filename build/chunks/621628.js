@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(47120), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(733860), n(230036);
 var r = n(200651),
   i = n(192379),
@@ -65,7 +65,7 @@ function j(e) {
   })
 }
 
-function O() {
+function C() {
   var e;
   let t = (0, N.ZP)(e => e.recentlyShown),
     {
@@ -78,11 +78,11 @@ function O() {
       newUserMinAgeRequiredOverridden: f.Z.newUserMinAgeRequiredOverridden
     })),
     [b, E] = i.useState(""),
-    O = null !== (e = (0, l.e7)([p.Z], () => {
+    C = null !== (e = (0, l.e7)([p.Z], () => {
       var e;
       return null === (e = p.Z.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
     })) && void 0 !== e ? e : new Uint8Array,
-    [C, S] = function(e, t) {
+    [O, S] = function(e, t) {
       let [n, r] = i.useState(() => {
         let n = c.K.get(e);
         return null != n ? n : t
@@ -100,8 +100,8 @@ function O() {
       })
     },
     T = t.map(e => o.z[e]),
-    I = C.filter(e => e.toLowerCase().includes(b.toLowerCase())).filter(e => !T.includes(e)),
-    y = Object.keys(o.z).filter(e => !T.includes(e)).filter(e => !C.includes(e)).filter(e => e.toLowerCase().includes(b.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    I = O.filter(e => e.toLowerCase().includes(b.toLowerCase())).filter(e => !T.includes(e)),
+    A = Object.keys(o.z).filter(e => !T.includes(e)).filter(e => !O.includes(e)).filter(e => e.toLowerCase().includes(b.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.hjN, {
       title: "Dismissible Content Fatigue",
@@ -156,7 +156,7 @@ function O() {
           })
         }), (0, r.jsx)(j, {
           items: T,
-          dismissedContents: O,
+          dismissedContents: C,
           handleChange: v
         })]
       }) : null, I.length > 0 ? (0, r.jsxs)(r.Fragment, {
@@ -167,7 +167,7 @@ function O() {
           })
         }), (0, r.jsx)(j, {
           items: I,
-          dismissedContents: O,
+          dismissedContents: C,
           handleChange: v
         })]
       }) : null, (0, r.jsx)(u.Z, {
@@ -176,8 +176,8 @@ function O() {
           children: "Available Dismissible Contents"
         })
       }), (0, r.jsx)(j, {
-        items: y,
-        dismissedContents: O,
+        items: A,
+        dismissedContents: C,
         handleChange: v
       })]
     })]

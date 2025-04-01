@@ -176,7 +176,7 @@ let M = i.forwardRef((e, t) => {
   let {
     guild: o,
     onClose: a
-  } = e, s = (0, b.Ek)(o, "GuildPowerupsMarketingPowerupCards");
+  } = e, s = (0, b.Ek)(o.id, "GuildPowerupsMarketingPowerupCards");
   i.useEffect(() => {
     s && ((0, g.Sn)(o.id), (0, g.Fm)(o.id))
   }, [s, o.id]);

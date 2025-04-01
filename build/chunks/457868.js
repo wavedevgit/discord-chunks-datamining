@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(885110),
   w = n(111583),
   R = n(594174),
-  M = n(499033),
-  k = n(626135),
+  k = n(499033),
+  M = n(626135),
   L = n(585483),
   D = n(700785),
   W = n(51144),
@@ -88,7 +88,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
     } = e, s = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, o)), u = (0, p.e7)([S.ZP], () => S.ZP.getMember(t.guild_id, o)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == u ? void 0 : u.colorRoleId) != null ? null === (e = Z.Z.getRole(t.guild_id, u.colorRoleId)) || void 0 === e ? void 0 : e.name : void 0
-    }, [t.guild_id, u]), b = (0, p.e7)([R.default], () => R.default.getUser(o)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), v = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), O = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), M = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
+    }, [t.guild_id, u]), b = (0, p.e7)([R.default], () => R.default.getUser(o)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), v = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), O = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), k = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), M = (0, c.JA)(o), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -122,7 +122,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
       user: b
     });
     if (null == b) return null;
-    let J = null == u ? void 0 : u.premiumSince;
+    let Q = null == u ? void 0 : u.premiumSince;
     return (0, r.jsx)(h.yRy, {
       preload: () => (0, N.Z)(b, {
         guildId: t.guild_id,
@@ -156,10 +156,10 @@ let q = U.ZP.getEnableHardwareAcceleration(),
           guildId: t.guild_id,
           isMobile: x,
           selected: i,
-          applicationStream: M,
-          premiumSince: null == J ? null : new Date(J),
+          applicationStream: k,
+          premiumSince: null == Q ? null : new Date(Q),
           onClickPremiumGuildIcon: K,
-          itemProps: k,
+          itemProps: M,
           lostPermissionTooltipText: D ? void 0 : H.NW.string(H.t["/QcoT0"]),
           isOwner: U,
           nameplate: X
@@ -167,7 +167,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
       }
     })
   }),
-  J = i.memo(function(e) {
+  Q = i.memo(function(e) {
     let {
       id: t,
       label: n,
@@ -197,7 +197,7 @@ let q = U.ZP.getEnableHardwareAcceleration(),
       })]
     })
   }),
-  Q = i.memo(function(e) {
+  J = i.memo(function(e) {
     let {
       channel: t
     } = e;
@@ -281,7 +281,7 @@ function $(e) {
     }
   }(l, K), v = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
-      k.default.track(F.rMx.MEMBER_LIST_VIEWED, {
+      M.default.track(F.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id
@@ -307,7 +307,7 @@ function $(e) {
               let {
                 section: t
               } = e, i = d[t];
-              return (0, r.jsx)(J, {
+              return (0, r.jsx)(Q, {
                 id: i.id,
                 label: i.label,
                 count: i.userIds.length,
@@ -331,7 +331,7 @@ function $(e) {
               }, l[i])
             },
             footerHeight: e => 80 * (d[e] === f && t.type === F.d4z.PRIVATE_THREAD),
-            renderFooter: e => d[e.section] === f ? (0, r.jsx)(Q, {
+            renderFooter: e => d[e.section] === f ? (0, r.jsx)(J, {
               channel: t
             }, "footer") : null,
             innerAriaLabel: H.NW.string(H.t["9Oq93t"]),
@@ -364,7 +364,7 @@ function ee(e) {
           size: "lg",
           color: "currentColor"
         })
-      }), (0, r.jsx)(M.Z, {
+      }), (0, r.jsx)(k.Z, {
         className: G.emptyStateStars
       })]
     }), (0, r.jsx)(h.X6q, {

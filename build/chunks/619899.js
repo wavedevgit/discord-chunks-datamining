@@ -146,12 +146,12 @@ let E = (0, o.U)(e => ({
     let {
       previewEnabled: t,
       previewProfileEffectId: n
-    } = E(), o = t ? n : null, a = (0, s.m)(o);
+    } = E(), o = t ? n : null, a = (0, s.mr)(o);
     return r.useMemo(() => {
       if (null == a || null == e) return null;
       let {
         effects: t,
-        staticFrames: n
+        stillFrames: n
       } = a.config, r = null != n && Object.keys(n).length > 0;
       if (0 === t.length && !r) return null;
       let o = (0, i.cloneDeep)(e);
@@ -162,7 +162,7 @@ let E = (0, o.U)(e => ({
           return _(e, ["base64"])
         }), r) {
         var s, c, u, d, f, p;
-        o.reducedMotionSrc = null !== (d = null === (s = n[l.wT.REDUCED_MOTION]) || void 0 === s ? void 0 : s.src) && void 0 !== d ? d : "", o.staticFrameSrc = null !== (f = null === (c = n[l.wT.STATIC]) || void 0 === c ? void 0 : c.src) && void 0 !== f ? f : "", o.thumbnailPreviewSrc = null !== (p = null === (u = n[l.wT.THUMBNAIL]) || void 0 === u ? void 0 : u.src) && void 0 !== p ? p : ""
+        o.reducedMotionSrc = null !== (d = null === (s = n[l.cq.REDUCED_MOTION]) || void 0 === s ? void 0 : s.src) && void 0 !== d ? d : "", o.staticFrameSrc = null !== (f = null === (c = n[l.cq.STATIC]) || void 0 === c ? void 0 : c.src) && void 0 !== f ? f : "", o.thumbnailPreviewSrc = null !== (p = null === (u = n[l.cq.THUMBNAIL]) || void 0 === u ? void 0 : u.src) && void 0 !== p ? p : ""
       }
       return o
     }, [a, e])

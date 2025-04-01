@@ -23,31 +23,31 @@ var i = n(512722),
   _ = n(624864),
   E = n(957148),
   j = n(556296),
-  O = n(808506),
-  C = n(237997),
+  C = n(808506),
+  O = n(237997),
   S = n(626135);
 n(63063);
 var v = n(13140),
   T = n(981631),
   I = n(388032),
-  y = n(549745);
-let A = P(null);
+  A = n(549745);
+let y = P(null);
 
 function P(e) {
   var t;
-  let n = C.default.getNotificationPositionMode(),
+  let n = O.default.getNotificationPositionMode(),
     r = n !== T._vf.DISABLED,
     i = j.ZP.getOverlayKeybind(),
     s = j.ZP.getOverlayChatKeybind();
   return {
-    enabled: O.default.enabled,
+    enabled: C.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
     text_notifications_mode: _.Z.isNotificationDisabled(N.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
     hotkey: null != i ? (0, v.BB)(i.shortcut) : null,
     text_activation_hotkey: null != s ? (0, v.BB)(s.shortcut) : null,
-    text_opacity_slider: C.default.getTextWidgetOpacity(),
-    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : O.default.enabled
+    text_opacity_slider: O.default.getTextWidgetOpacity(),
+    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : C.default.enabled
   }
 }
 
@@ -58,7 +58,7 @@ function R(e) {
   } = e;
   return (0, r.jsx)(c.xJW, {
     title: n,
-    className: y.userSettingsOverlayField,
+    className: A.userSettingsOverlayField,
     children: t
   })
 }
@@ -71,37 +71,37 @@ function D(e) {
     oopEnabled: i,
     legacyEnabled: a
   } = (0, o.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
-    avatarSizeMode: O,
+    avatarSizeMode: C,
     displayNameMode: v,
     displayUserMode: D,
     textChatDisabled: Z,
     notificationPositionMode: w,
     shouldShowKeybindIndicators: k
-  } = (0, o.cj)([C.default, _.Z], () => ({
-    avatarSizeMode: C.default.getAvatarSizeMode(),
-    displayNameMode: C.default.getDisplayNameMode(),
-    displayUserMode: C.default.getDisplayUserMode(),
-    notificationPositionMode: C.default.getNotificationPositionMode(),
-    shouldShowKeybindIndicators: C.default.showKeybindIndicators,
+  } = (0, o.cj)([O.default, _.Z], () => ({
+    avatarSizeMode: O.default.getAvatarSizeMode(),
+    displayNameMode: O.default.getDisplayNameMode(),
+    displayUserMode: O.default.getDisplayUserMode(),
+    notificationPositionMode: O.default.getNotificationPositionMode(),
+    shouldShowKeybindIndicators: O.default.showKeybindIndicators,
     textChatDisabled: _.Z.isNotificationDisabled(N.OverlayNotificationDisabledSetting.TEXT_CHAT)
   })), W = (0, o.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, b.Z)({
     location: "overlay_user_settings"
   }), B = (0, g.$1)();
   return ! function() {
-    let e = P(A);
-    l().isEqual(e, A) || (S.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), A = e)
+    let e = P(y);
+    l().isEqual(e, y) || (S.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), y = e)
   }(), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hjN, {
       className: t,
       tag: c.RB0.H1,
       title: n ? I.NW.string(I.t["9cb1U1"]) : null,
       children: [!1, (0, r.jsxs)("div", {
-        className: y.enableOverlaySection,
+        className: A.enableOverlaySection,
         children: [(0, r.jsx)(c.xJW, {
           title: I.NW.string(I.t.XkaTrq),
-          className: y.enableOverlayItem,
+          className: A.enableOverlayItem,
           children: (0, r.jsx)(c.j7V, {
-            className: y.enableSwitch,
+            className: A.enableSwitch,
             value: a,
             disabled: B,
             note: B ? I.NW.string(I.t.Eb0lnJ) : null,
@@ -116,7 +116,7 @@ function D(e) {
           })
         }), (0, r.jsx)(c.xJW, {
           title: I.NW.string(I.t.VsAZcH),
-          className: y.enableOverlayItem,
+          className: A.enableOverlayItem,
           children: (0, r.jsx)(m.Z, {
             disabled: !a,
             defaultValue: null != W ? W.shortcut : [],
@@ -170,7 +170,7 @@ function D(e) {
             } = e;
             return u.Z.setAvatarSizeMode(t)
           },
-          value: O
+          value: C
         })
       }), (0, r.jsx)(R, {
         title: I.NW.string(I.t.J0dpcH),
@@ -222,11 +222,11 @@ function D(e) {
     }), (0, r.jsxs)(c.hjN, {
       tag: c.RB0.H1,
       title: I.NW.string(I.t["3GMnLi"]),
-      className: y.notificationSection,
+      className: A.notificationSection,
       children: [(0, r.jsx)(R, {
         title: I.NW.string(I.t.IQv8Eh),
         children: (0, r.jsx)("div", {
-          className: y.notificationSettings,
+          className: A.notificationSettings,
           children: (0, r.jsx)(h.Z, {
             position: w,
             onChange: (e, t) => u.Z.setNotificationPositionMode(t)

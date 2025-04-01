@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(200651),
   i = n(192379),
@@ -53,14 +53,14 @@ function j(e, t) {
   }), e
 }
 
-function O() {
+function C() {
   var e;
   let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: f,
     removeToolsCache: b
   } = (0, g.L3)(), {
-    setImgCache: O
-  } = (0, g.W_)(), A = (0, i.useCallback)(e => {
+    setImgCache: C
+  } = (0, g.W_)(), y = (0, i.useCallback)(e => {
     let t = m[e];
     null != t && c({
       src: t.url,
@@ -130,7 +130,7 @@ function O() {
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           children: "RTC"
-        }), (0, r.jsx)(y, {
+        }), (0, r.jsx)(A, {
           nameplate: l
         })]
       }), (0, r.jsxs)("div", {
@@ -146,7 +146,7 @@ function O() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               r = await n.arrayBuffer();
-            O(t, t, (0, h.xh)(r)), f(t, t, p.jD)
+            C(t, t, (0, h.xh)(r)), f(t, t, p.jD)
           }
         }), (0, r.jsx)("div", {
           className: _.uploadedArea,
@@ -154,9 +154,9 @@ function O() {
             let {
               url: t
             } = e;
-            return (0, r.jsx)(C, {
+            return (0, r.jsx)(O, {
               src: t,
-              onSetStatic: A,
+              onSetStatic: y,
               removeAsset: R
             }, t)
           })
@@ -176,7 +176,7 @@ function O() {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     src: t,
     onSetStatic: n,
@@ -315,7 +315,7 @@ function I(e) {
   })
 }
 
-function y(e) {
+function A(e) {
   let {
     nameplate: t
   } = e;

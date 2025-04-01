@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Y: () => v,
-  Z: () => _
+  Z: () => _,
+  u: () => v
 });
 var r = t(200651);
 t(192379);
@@ -13,22 +13,22 @@ var i = t(120356),
   c = t(192371),
   d = t(279604),
   u = t(296260),
-  m = t(388032),
-  p = t(728214);
+  p = t(388032),
+  m = t(728214);
 
 function x(e) {
   let {
     dateString: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.inline,
+    className: m.inline,
     children: [(0, r.jsx)(s.owK, {
       size: "xs",
       color: s.TVs.colors.STATUS_WARNING
     }), (0, r.jsx)(s.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
-      children: m.NW.formatToMarkdownString(u.Z["ol/ao6"], {
+      children: p.NW.formatToMarkdownString(u.Z["ol/ao6"], {
         dateString: (0, c.Z)(n)
       })
     })]
@@ -42,9 +42,9 @@ function v(e) {
     className: i
   } = e, c = (0, l.Z)(n, t);
   return (0, r.jsxs)("div", {
-    className: o()(p.labelContainer, i),
+    className: o()(m.labelContainer, i),
     children: [(0, r.jsxs)("div", {
-      className: o()(p.inline, p.inlineBoost),
+      className: o()(m.inline, m.inlineBoost),
       children: [(0, r.jsx)(a.Z, {}), (0, r.jsx)(s.Text, {
         tag: "div",
         variant: "heading-md/bold",
@@ -53,14 +53,14 @@ function v(e) {
     }), null != c && ((null == c ? void 0 : c.ends_at) != null ? (0, r.jsx)(x, {
       dateString: c.ends_at
     }) : (0, r.jsxs)("div", {
-      className: p.inline,
+      className: m.inline,
       children: [(0, r.jsx)(s.owK, {
         size: "xs",
         color: s.TVs.colors.STATUS_POSITIVE
       }), (0, r.jsx)(s.Text, {
         color: "text-positive",
         variant: "text-sm/bold",
-        children: m.NW.string(u.Z.FFLkm5)
+        children: p.NW.string(u.Z.FFLkm5)
       })]
     }))]
   })
@@ -72,15 +72,15 @@ function _(e) {
     powerup: t,
     className: i,
     children: a
-  } = e, c = (0, l.Z)(n, t), u = null != c, m = (null == c ? void 0 : c.ends_at) != null, {
+  } = e, c = (0, l.Z)(n, t), u = null != c, p = (null == c ? void 0 : c.ends_at) != null, {
     onShowMore: x
   } = (0, d.ZP)(n, t);
   return (0, r.jsx)(s.kL8, {
     "aria-label": t.title,
     onClick: x,
-    className: o()(p.container, {
-      [p.active]: u,
-      [p.warning]: m
+    className: o()(m.container, {
+      [m.active]: u,
+      [m.warning]: p
     }, i),
     children: a
   })

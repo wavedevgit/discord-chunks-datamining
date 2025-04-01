@@ -1,6 +1,6 @@
 /** Chunk was on 34059 **/
 n.d(t, {
-  Z: () => eJ
+  Z: () => eQ
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(100527),
   w = n(367907),
   R = n(906732),
-  M = n(213609),
-  k = n(600164),
+  k = n(213609),
+  M = n(600164),
   L = n(540059),
   D = n(211644),
   W = n(258609),
@@ -50,8 +50,8 @@ var r = n(200651),
   q = n(880395),
   K = n(740492),
   X = n(221241),
-  J = n(793319),
-  Q = n(3861),
+  Q = n(793319),
+  J = n(3861),
   $ = n(493754),
   ee = n(937995),
   et = n(618158),
@@ -88,8 +88,8 @@ var r = n(200651),
   eA = n(742603),
   ew = n(71127),
   eR = n(221888),
-  eM = n(185935),
-  ek = n(900211),
+  ek = n(185935),
+  eM = n(900211),
   eL = n(18759),
   eD = n(522651),
   eW = n(795318),
@@ -275,7 +275,7 @@ class eX extends i.PureComponent {
       children: i && this.popoutOpen && !this.inPopout ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(z.Z, {
           channel: p
-        }), (0, r.jsx)(Q.Z, {
+        }), (0, r.jsx)(J.Z, {
           ref: this._contentRef,
           inCall: i,
           paused: this.paused,
@@ -343,7 +343,7 @@ class eX extends i.PureComponent {
             children: e => this.renderContent(e)
           })
         })
-      }), C && (0, r.jsx)(ek.Z, {
+      }), C && (0, r.jsx)(eM.Z, {
         minHeight: 230,
         maxHeight: u,
         resizableNode: this._wrapperRef,
@@ -392,7 +392,7 @@ class eX extends i.PureComponent {
     }), eV(this, "handleDisconnect", () => {
       this.props.layout === eF.AEg.FULL_SCREEN && this.handleFullScreen()
     }), eV(this, "trackCallTileContextMenuImpression", (e, t) => {
-      (0, M.h)({
+      (0, k.h)({
         type: c.ImpressionTypes.MENU,
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
@@ -546,8 +546,8 @@ class eX extends i.PureComponent {
       } = this.props;
       return this.inPopout || i === eF.AEg.FULL_SCREEN || null == t || n.isManaged() || (e = (0, r.jsx)(x.Z, {
         call: t
-      })), (0, r.jsx)(k.Z, {
-        justify: k.Z.Justify.END,
+      })), (0, r.jsx)(M.Z, {
+        justify: M.Z.Justify.END,
         children: e
       })
     }), eV(this, "renderBottomCenter", () => {
@@ -556,7 +556,7 @@ class eX extends i.PureComponent {
         inCall: t,
         layout: n
       } = this.props;
-      return t || n === eF.AEg.MINIMUM || n === eF.AEg.NORMAL ? (0, r.jsx)(J.ZP, {
+      return t || n === eF.AEg.MINIMUM || n === eF.AEg.NORMAL ? (0, r.jsx)(Q.ZP, {
         exitFullScreen: this.maybeLeaveFullScreen,
         channel: e,
         onDisconnectCall: this.handleDisconnect,
@@ -603,9 +603,9 @@ class eX extends i.PureComponent {
           analyticsLocation: n.type === eF.d4z.GUILD_VOICE ? eF.ZY5.GUILD_CHANNEL : eF.ZY5.DM_CHANNEL
         });
       return (0, r.jsxs)(r.Fragment, {
-        children: [C && !s ? v : null, _ ? (0, r.jsxs)(k.Z, {
+        children: [C && !s ? v : null, _ ? (0, r.jsxs)(M.Z, {
           className: eG.iconWrapper,
-          align: k.Z.Align.CENTER,
+          align: M.Z.Align.CENTER,
           grow: 0,
           children: [(0, r.jsx)(ei.Z, {
             label: f ? eH.NW.string(eH.t.kkKapK) : eH.NW.string(eH.t["5MstTk"]),
@@ -735,7 +735,7 @@ class eX extends i.PureComponent {
     })
   }
 }
-let eJ = function(e) {
+let eQ = function(e) {
   var t;
   let {
     channel: n,
@@ -760,8 +760,8 @@ let eJ = function(e) {
     mode: I,
     layout: T,
     participantsOpen: w,
-    participantsListOpen: M,
-    chatOpen: k,
+    participantsListOpen: k,
+    chatOpen: M,
     selectedParticipant: F
   } = (0, d.cj)([eI.Z], () => {
     let e = g === eF.IlC.POPOUT,
@@ -783,8 +783,8 @@ let eJ = function(e) {
     selectedStream: G
   } = (0, d.cj)([ed.Z], () => ({
     selectedStream: null != F ? ed.Z.getActiveStreamForStreamKey(F.id) : null
-  }), [F]), z = (0, d.e7)([em.Z], () => em.Z.getGuild(n.getGuildId())), Y = (0, d.e7)([ef.Z], () => ef.Z.getCall(n.id), [n.id]), q = (0, d.e7)([eb.ZP], () => eb.ZP.getMentionCount(n.id), [n.id]), J = (0, d.e7)([ep.default], () => ep.default.getId()), {
-    popoutWindow: Q,
+  }), [F]), z = (0, d.e7)([em.Z], () => em.Z.getGuild(n.getGuildId())), Y = (0, d.e7)([ef.Z], () => ef.Z.getCall(n.id), [n.id]), q = (0, d.e7)([eb.ZP], () => eb.ZP.getMentionCount(n.id), [n.id]), Q = (0, d.e7)([ep.default], () => ep.default.getId()), {
+    popoutWindow: J,
     popoutWindowAlwaysOnTop: $
   } = (0, d.cj)([V.Z], () => ({
     popoutWindow: V.Z.getWindow(eF.KJ3.CHANNEL_CALL_POPOUT),
@@ -811,7 +811,7 @@ let eJ = function(e) {
     eC = (0, eS.Z)(n, !0),
     {
       hasParticipantsPanel: ev
-    } = (0, eM.Z)({
+    } = (0, ek.Z)({
       location: "ChannelCall"
     }),
     {
@@ -839,12 +839,12 @@ let eJ = function(e) {
             guild: z,
             hasConnectPermission: ee,
             participantsOpen: w,
-            participantsListOpen: M && ev,
+            participantsListOpen: k && ev,
             enableSimplifiedCallSettings: ey,
             renderExternalHeader: l,
             appContext: g,
             call: Y,
-            popoutWindow: Q,
+            popoutWindow: J,
             popoutWindowAlwaysOnTop: $,
             mentionCount: q,
             selectedStream: G,
@@ -854,11 +854,11 @@ let eJ = function(e) {
             filteredParticipants: v,
             participantsVersion: x,
             layout: T,
-            chatOpen: k,
+            chatOpen: M,
             maxSidebarWidth: a - 550,
             shouldUseVoiceEffectsActionBar: eC,
             showGameConsoleCallButton: eu,
-            currentUserId: J,
+            currentUserId: Q,
             selectedParticipant: F,
             allActiveStreams: H,
             useNewInviteButton: eo,

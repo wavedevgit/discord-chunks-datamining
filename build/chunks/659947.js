@@ -59,7 +59,7 @@ function j(e) {
   }), e.setLimit(1 / 0)
 }
 
-function O(e) {
+function C(e) {
   let {
     height: t
   } = e;
@@ -70,14 +70,14 @@ function O(e) {
   })
 }
 
-function C() {
-  return (0, r.jsx)(O, {
+function O() {
+  return (0, r.jsx)(C, {
     height: 16
   }, "footer")
 }
 
 function S() {
-  return (0, r.jsx)(O, {
+  return (0, r.jsx)(C, {
     height: 8
   }, "header")
 }
@@ -120,7 +120,7 @@ function T(e) {
       align: c.Z.Align.STRETCH,
       children: [(0, r.jsx)("div", {
         className: N.selectedVoiceChannel,
-        children: (0, r.jsx)(y, {
+        children: (0, r.jsx)(A, {
           channelId: d
         })
       }), (0, r.jsx)(c.Z.Child, {
@@ -143,7 +143,7 @@ function I(e) {
   } = e, c = i.useId(), b = i.useRef(null), {
     mouseFocusEnabled: x,
     enableMouseFocus: _,
-    disableMouseFocus: O
+    disableMouseFocus: C
   } = function() {
     let e = i.useRef(!1),
       t = i.useCallback(() => {
@@ -160,12 +160,12 @@ function I(e) {
   }(), {
     query: T,
     updateQuery: I,
-    queryResults: y
+    queryResults: A
   } = (0, o.Z)({
     visible: !0,
     autocompleterResultTypes: E,
     autocompleterBeforeCreateSearchContext: j
-  }), A = function(e) {
+  }), y = function(e) {
     let t = "" !== e,
       n = (0, s.Wu)([m.ZP, u.Z, p.Z], () => {
         let e = p.Z.getGuildId();
@@ -199,13 +199,13 @@ function I(e) {
       row: P
     })
   }, [P]);
-  let D = null != A ? A.length : y.length,
+  let D = null != y ? y.length : A.length,
     Z = (() => {
-      if (null != A) {
+      if (null != y) {
         var e;
-        return null === (e = A[P]) || void 0 === e ? void 0 : e.id
+        return null === (e = y[P]) || void 0 === e ? void 0 : e.id
       }
-      let t = y[P];
+      let t = A[P];
       if ((null == t ? void 0 : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
     })();
   return (0, r.jsx)("div", {
@@ -221,7 +221,7 @@ function I(e) {
           value: T,
           onChange: I,
           onKeyDown: function(e) {
-            O();
+            C();
             let t = e.key.toLowerCase();
             if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
               case "escape":
@@ -229,8 +229,8 @@ function I(e) {
                 break;
               case "enter": {
                 let e = (() => {
-                  if (null != A) return A[P];
-                  let e = y[P];
+                  if (null != y) return y[P];
+                  let e = A[P];
                   if ((null == e ? void 0 : e.type) === h.h8.VOICE_CHANNEL) return e.record
                 })();
                 null == e ? l(void 0) : l(e.id), n();
@@ -261,8 +261,8 @@ function I(e) {
           let {
             row: t
           } = e, i = (() => {
-            if (null != A) return A[t];
-            let e = y[t];
+            if (null != y) return y[t];
+            let e = A[t];
             if ((null == e ? void 0 : e.type) === h.h8.VOICE_CHANNEL) return e.record
           })();
           if (null == i) return null;
@@ -285,7 +285,7 @@ function I(e) {
           }, i.id)
         },
         renderListHeader: S,
-        renderFooter: C,
+        renderFooter: O,
         sectionHeight: 0,
         rowHeight: 34,
         className: N.voiceChannelList,
@@ -296,7 +296,7 @@ function I(e) {
   })
 }
 
-function y(e) {
+function A(e) {
   let {
     channelId: t
   } = e, {

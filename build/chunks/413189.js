@@ -56,7 +56,7 @@ function O(e) {
     onClickNitro: () => {
       (0, u.uL)(v.Z5c.NITRO_HOME)
     }
-  })) : N = y.NW.string(y.t["6JSOu7"]), (null == D ? void 0 : D.isViewable) && L && (j = (0, r.jsx)(o.zxk, {
+  })) : N = y.NW.string(y.t["6JSOu7"]), (null == D ? void 0 : D.isViewable) && L && !W && (j = (0, r.jsx)(o.zxk, {
     className: E.action,
     onClick: () => {
       g.X(I, T, {
@@ -70,6 +70,7 @@ function O(e) {
     content: O,
     subtitle: N,
     action: j,
-    compact: S
+    compact: S,
+    message: C
   }))
 }

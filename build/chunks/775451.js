@@ -1,7 +1,7 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  V9: () => C,
-  ek: () => O
+  V9: () => O,
+  ek: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -23,22 +23,22 @@ var r = n(200651),
   _ = n(215023),
   E = n(388032),
   j = n(788369);
-let O = {
+let C = {
     START: j.alignLeft,
     END: j.alignRight
   },
-  C = e => {
+  O = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: s,
-      isCoachmarkEnabled: C = !0,
+      isCoachmarkEnabled: O = !0,
       linkText: S = E.NW.string(E.t.XRdyj4),
-      cardAlignment: v = O.START,
+      cardAlignment: v = C.START,
       className: T
     } = e, {
       balance: I
-    } = (0, p.A)(), [y, A] = i.useState(h.b.DEFAULT), [P, R] = i.useState(!1), [D, Z] = i.useState(!1), w = (0, l.TH)(), {
+    } = (0, p.A)(), [A, y] = i.useState(h.b.DEFAULT), [P, R] = i.useState(!1), [D, Z] = i.useState(!1), w = (0, l.TH)(), {
       analyticsLocations: k
     } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), W = i.useRef(null), {
       shouldOpen: L
@@ -48,7 +48,7 @@ let O = {
       shouldOpen: B
     } = (0, g.Mm)({
       backgroundElementRef: W,
-      isCoachmarkEnabled: C,
+      isCoachmarkEnabled: O,
       onCloseCallback: x.dG4,
       onClickPill: x.dG4,
       secondaryCtaOnClick: () => {
@@ -64,13 +64,13 @@ let O = {
       }
     }), M = B || L;
     i.useEffect(() => {
-      if (!C) return;
+      if (!O) return;
       let e = (0, g.wH)();
       (0, b.Pe)() || e || M ? (Z(!0), R(!1)) : Z(!1)
-    }, [C, M]);
+    }, [O, M]);
     let U = i.useCallback(() => {
         let e = !P;
-        A(e ? h.b.SELECTED : h.b.DEFAULT), R(e)
+        y(e ? h.b.SELECTED : h.b.DEFAULT), R(e)
       }, [P]),
       V = i.useCallback(() => {
         P && U()
@@ -84,7 +84,7 @@ let O = {
       children: [(0, r.jsx)(N.A4, {
         ref: W,
         balance: I,
-        balanceWidgetMode: M ? h.b.DEFAULT : y,
+        balanceWidgetMode: M ? h.b.DEFAULT : A,
         onMouseDown: e => {
           e.stopPropagation()
         },
@@ -106,4 +106,4 @@ let O = {
       })]
     })
   };
-C.CardAlignment = O
+O.CardAlignment = C

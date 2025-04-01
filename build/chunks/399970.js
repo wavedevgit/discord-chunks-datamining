@@ -29,7 +29,7 @@ function N(e) {
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != N ? N : ""), [j, O] = i.useState("8080"), [C, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != N ? N : ""), [j, C] = i.useState("8080"), [O, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
   async function I() {
     o.q$();
     let e = function(e, t, n) {
@@ -40,12 +40,12 @@ function N(e) {
         case "proxy":
           return (0, c.ZP)(n)
       }
-    }(C, j, _);
+    }(O, j, _);
     null != await o.Wt(_, e) && t()
   }
   i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
-  let y = null != N && N === _,
-    A = y ? function() {
+  let A = null != N && N === _,
+    y = A ? function() {
       o.mc(), E(""), S(null)
     } : I;
   return (0, r.jsxs)(a.Y0X, {
@@ -73,7 +73,7 @@ function N(e) {
         children: b
       }), (0, r.jsx)("form", {
         onSubmit: e => {
-          e.preventDefault(), A()
+          e.preventDefault(), y()
         },
         children: (0, r.jsxs)(d.Z, {
           direction: d.Z.Direction.VERTICAL,
@@ -96,7 +96,7 @@ function N(e) {
             title: g.NW.string(g.t["/GTqXF"]),
             children: (0, r.jsx)(a.q4e, {
               isDisabled: !T || "" === _,
-              value: C,
+              value: O,
               options: [{
                 value: "localhost",
                 label: g.NW.string(g.t["+Y9Y6u"]),
@@ -111,22 +111,22 @@ function N(e) {
               },
               placeholder: "URL Origin Type"
             })
-          }), "localhost" !== C ? null : (0, r.jsx)(a.xJW, {
+          }), "localhost" !== O ? null : (0, r.jsx)(a.xJW, {
             className: p.inputWrapper,
             title: g.NW.string(g.t.fF4zxs),
             required: !0,
             children: (0, r.jsx)(a.oil, {
               value: j,
               maxLength: 5,
-              onChange: e => O(e),
+              onChange: e => C(e),
               disabled: x
             })
           }), (0, r.jsx)(a.zxk, {
             submitting: x,
             type: "submit",
-            disabled: !T || 0 === _.length || "localhost" === C && 0 === j.length,
-            color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
-            children: y ? g.NW.string(g.t.d6TR3N) : g.NW.string(g.t.qwuK5O)
+            disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
+            color: A ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
+            children: A ? g.NW.string(g.t.d6TR3N) : g.NW.string(g.t.qwuK5O)
           })]
         })
       })]

@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(687158),
   E = n(899007),
   j = n(648052),
-  O = n(867176),
-  C = n(537006),
+  C = n(867176),
+  O = n(537006),
   S = n(483424),
   v = n(681837),
   T = n(502762),
   I = n(530),
-  y = n(309494),
-  A = n(4517),
+  A = n(309494),
+  y = n(4517),
   P = n(171368),
   R = n(420654),
   D = n(695346),
@@ -134,7 +134,7 @@ function J(e) {
           profileType: z.y0.BITE_SIZE,
           children: [(0, r.jsxs)("header", {
             className: q.header,
-            children: [(0, r.jsx)(O.Z, {
+            children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: et,
               profileType: z.y0.BITE_SIZE
@@ -143,7 +143,7 @@ function J(e) {
               displayProfile: et,
               profileType: z.y0.BITE_SIZE,
               onOpenProfile: ee ? void 0 : ex
-            }), (0, r.jsx)(A.Z, {
+            }), (0, r.jsx)(y.Z, {
               location: "AccountProfilePopout",
               user: t,
               profileType: z.y0.BITE_SIZE,
@@ -172,7 +172,7 @@ function J(e) {
               nicknameIcons: (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(v.Z, {
                   userId: t.id
-                }), (0, r.jsx)(y.Z, {
+                }), (0, r.jsx)(A.Z, {
                   user: t,
                   isHovering: es
                 })]
@@ -182,7 +182,7 @@ function J(e) {
               bio: null == et ? void 0 : et.bio,
               hidePersonalInformation: ed,
               onClose: n
-            }), (0, r.jsx)(C.Z, {
+            }), (0, r.jsx)(O.Z, {
               isPremiumUser: ef,
               onInteraction: n
             }), (0, r.jsx)(S.Z, {

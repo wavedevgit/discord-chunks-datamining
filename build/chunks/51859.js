@@ -10,9 +10,9 @@ var r = t(200651),
   l = t(156732),
   c = t(690786),
   d = t(838968),
-  u = t(660397),
-  m = t(279604),
-  p = t(296260),
+  u = t(262212),
+  p = t(279604),
+  m = t(296260),
   x = t(388032),
   v = t(728214);
 
@@ -20,8 +20,8 @@ function _(e) {
   let {
     guildId: n,
     powerup: t
-  } = e, o = null != (0, c.Z)(n, t), [_, b] = i.useState(void 0), g = (0, l.Z)(t);
-  return (0, m.KT)(_), (0, r.jsxs)(d.Z, {
+  } = e, o = null != (0, c.Z)(n, t), [_, f] = i.useState(void 0), g = (0, l.Z)(t);
+  return (0, p.KT)(_), (0, r.jsxs)(d.Z, {
     guildId: n,
     powerup: t,
     children: [(0, r.jsx)("div", {
@@ -43,13 +43,13 @@ function _(e) {
             [v.active]: o
           }),
           variant: "text-xs/semibold",
-          children: x.NW.string(p.Z.j2jUjY)
+          children: x.NW.string(m.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
         className: v.description,
         variant: "text-sm/medium",
         children: t.description
-      }), (0, r.jsx)(d.Y, {
+      }), (0, r.jsx)(d.u, {
         guildId: n,
         powerup: t
       })]
@@ -58,7 +58,7 @@ function _(e) {
       children: (0, r.jsx)(u.ZP, {
         guildId: n,
         powerup: t,
-        onError: b
+        onError: f
       })
     })]
   })

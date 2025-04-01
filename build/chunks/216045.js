@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(957730),
   E = n(442933),
   j = n(53691),
-  O = n(267717),
-  C = n(296810),
+  C = n(267717),
+  O = n(296810),
   S = n(921813),
   v = n(610794),
   T = n(935147),
   I = n(643879),
-  y = n(373230),
-  A = n(246946),
+  A = n(373230),
+  y = n(246946),
   P = n(25990),
   R = n(594174),
   D = n(626135),
@@ -49,7 +49,7 @@ function G() {
       let e = R.default.getCurrentUser();
       return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    s = (0, l.e7)([A.Z], () => A.Z.hidePersonalInformation),
+    s = (0, l.e7)([y.Z], () => y.Z.hidePersonalInformation),
     G = (0, l.cj)([P.Z], () => P.Z.getAllPending()),
     {
       pendingBio: F,
@@ -81,7 +81,7 @@ function G() {
       analyticsLocations: J
     } = (0, f.ZP)(h.Z.PROFILE);
   ! function() {
-    let e = (0, y.Tq)({
+    let e = (0, A.Tq)({
         location: "UserSettingsProfileCustomization"
       }),
       t = (0, b.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
@@ -115,7 +115,7 @@ function G() {
   }), en = !X, er = i.useRef(null);
   return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
     value: J,
-    children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(O.Z, {
       profilePreview: (0, r.jsx)(S.Z, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -169,7 +169,7 @@ function G() {
       className: V.floatingNitroUpsell,
       showUpsell: en && !$,
       text: U.NW.format(U.t.TmfgIy, {
-        onClick: () => (0, O.y)()
+        onClick: () => (0, C.y)()
       }),
       textVariant: "heading-md/medium",
       button: (0, r.jsxs)(d.gtL, {

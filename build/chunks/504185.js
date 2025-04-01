@@ -35,8 +35,8 @@ var r = n(200651),
   A = n(107169),
   w = n(891551),
   R = n(314897),
-  M = n(979696),
-  k = n(430824),
+  k = n(979696),
+  M = n(430824),
   L = n(496675),
   D = n(944486),
   W = n(358085),
@@ -51,8 +51,8 @@ var r = n(200651),
   q = n(302270),
   K = n(308177),
   X = n(700483),
-  J = n(686468),
-  Q = n(801405),
+  Q = n(686468),
+  J = n(801405),
   $ = n(903108),
   ee = n(981631),
   et = n(354459),
@@ -83,7 +83,7 @@ function es(e) {
   } = (0, g.ZP)(), d = t.getGuildId(), p = (0, s.e7)([D.Z], () => D.Z.getMostRecentSelectedTextChannelId(d), [d]), h = R.default.getId(), f = !(0, s.e7)([b.Z], () => b.Z.isFullscreenInContext(n)) && (!W.isPlatformEmbedded || W.isPlatformEmbedded && U.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), m = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== h, C = i.useMemo(() => {
     var e;
     return null !== (e = null == o ? void 0 : o.window) && void 0 !== e ? e : window
-  }, [o]), v = (0, Q.Z)({
+  }, [o]), v = (0, J.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
@@ -117,7 +117,7 @@ function es(e) {
 function ec(e) {
   let {
     channel: t
-  } = e, n = (0, f.bp)(), i = (0, s.e7)([L.Z], () => L.Z.can(ee.Plq.CREATE_INSTANT_INVITE, t)), l = (0, s.e7)([k.Z], () => k.Z.getGuild(t.guild_id)), o = (0, s.e7)([G.Z], () => G.Z.getStageInstanceByChannel(t.id)), a = i || (null == o ? void 0 : o.invite_code) != null, c = (0, O.Q3)("StageChannelInviteButton");
+  } = e, n = (0, f.bp)(), i = (0, s.e7)([L.Z], () => L.Z.can(ee.Plq.CREATE_INSTANT_INVITE, t)), l = (0, s.e7)([M.Z], () => M.Z.getGuild(t.guild_id)), o = (0, s.e7)([G.Z], () => G.Z.getStageInstanceByChannel(t.id)), a = i || (null == o ? void 0 : o.invite_code) != null, c = (0, O.Q3)("StageChannelInviteButton");
   return null != l && a ? (0, r.jsx)(P.Z, {
     size: c ? u.zxk.Sizes.MEDIUM : u.zxk.Sizes.SMALL,
     color: c ? u.zxk.Colors.TRANSPARENT : er.customInviteButtonColors,
@@ -154,9 +154,9 @@ function eu(e) {
       isOnStartStageScreen: R
     } = (0, V.ZP)();
   (0, V.MV)(n);
-  let k = (0, s.e7)([M.Z], () => M.Z.getToastsEnabled(n.id)),
+  let M = (0, s.e7)([k.Z], () => k.Z.getToastsEnabled(n.id)),
     W = (0, $.Z)(n) ? null != N ? "84px" : "124px" : null != N ? "0px" : "48px";
-  return w && R && (W = "0px"), t = R ? (0, r.jsx)(J.Z, {
+  return w && R && (W = "0px"), t = R ? (0, r.jsx)(Q.Z, {
     channel: n,
     onContinueClick: () => {
       (0, V.Ku)(!1), x || (0, B.TM)(n)
@@ -211,7 +211,7 @@ function eu(e) {
       showRequestToSpeakSidebar: c,
       channel: n
     }),
-    renderChatToasts: () => !k || _ || I ? null : (0, r.jsx)(C.ZP, {
+    renderChatToasts: () => !M || _ || I ? null : (0, r.jsx)(C.ZP, {
       children: (0, r.jsx)(S.Z, {
         className: o()(er.chatToasts, {
           [er.rtsSidebarOpen]: c
@@ -250,7 +250,7 @@ function ed(e) {
   } = (0, s.cj)([b.Z], () => ({
     chatOpen: b.Z.getChatOpen(t.id),
     participantsListOpen: b.Z.getParticipantsListOpen(t.id)
-  }), [t.id]), Z = (0, s.e7)([k.Z], () => k.Z.getGuild(t.guild_id), [t.guild_id]), {
+  }), [t.id]), Z = (0, s.e7)([M.Z], () => M.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: T
   } = (0, x.Z)({
     location: "StageChannelCall"
@@ -283,7 +283,7 @@ function ed(e) {
   let {
     width: A = 0,
     ref: w
-  } = (0, p.Z)(), R = A - 550, M = !O || O && I === ee.IlC.POPOUT;
+  } = (0, p.Z)(), R = A - 550, k = !O || O && I === ee.IlC.POPOUT;
   return (0, r.jsx)(g.Gt, {
     value: E,
     children: (0, r.jsxs)(C.B2, {
@@ -313,11 +313,11 @@ function ed(e) {
           chatOpen: P
         }) : null, (0, r.jsxs)("div", {
           className: er.channelChatWrapper,
-          children: [P && M && (0, r.jsx)(v.Z, {
+          children: [P && k && (0, r.jsx)(v.Z, {
             channel: t,
             guild: Z,
             maxWidth: R
-          }), S && T && M && (0, r.jsx)(y.Z, {
+          }), S && T && k && (0, r.jsx)(y.Z, {
             channel: t,
             maxWidth: R
           })]

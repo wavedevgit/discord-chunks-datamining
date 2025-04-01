@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(275759),
   E = n(231757),
   j = n(888496),
-  O = n(605236),
-  C = n(565138),
+  C = n(605236),
+  O = n(565138),
   S = n(297700),
   v = n(553795),
   T = n(430824),
   I = n(771845),
-  y = n(246946),
-  A = n(626135),
+  A = n(246946),
+  y = n(626135),
   P = n(63063),
   R = n(706454),
   D = n(349728),
@@ -88,8 +88,8 @@ let F = e => {
     className: U.integrationWrapper,
     children: [(0, r.jsxs)("div", {
       className: U.integration,
-      children: [(0, r.jsx)(C.Z, {
-        size: C.Z.Sizes.SMALL,
+      children: [(0, r.jsx)(O.Z, {
+        size: O.Z.Sizes.SMALL,
         guild: s.guild,
         className: U.guildIcon
       }), (0, r.jsxs)("div", {
@@ -125,20 +125,20 @@ function H(e) {
       locale: p
     } = e,
     [h, N] = i.useState(o.friendSync),
-    [O, C] = i.useState(o.visibility),
+    [C, O] = i.useState(o.visibility),
     [v, T] = i.useState(o.metadataVisibility),
-    [I, y] = i.useState(o.showActivity),
-    [A, R] = i.useState(null),
+    [I, A] = i.useState(o.showActivity),
+    [y, R] = i.useState(null),
     [B, V] = i.useState(null),
     [H, z] = i.useState(!1),
     [Y, K] = i.useState([]),
     q = (0, x.rR)(o.type),
     X = b.Z.get(q);
   i.useEffect(() => {
-    N(o.friendSync), C(o.visibility), T(o.metadataVisibility), y(o.showActivity)
+    N(o.friendSync), O(o.visibility), T(o.metadataVisibility), A(o.showActivity)
   }, [o]);
   let J = {
-      inProgressVisibility: A,
+      inProgressVisibility: y,
       inProgressMetadataVisibility: B
     },
     Q = i.useRef(J);
@@ -150,7 +150,7 @@ function H(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = Q.current;
-    null != e && (C(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (T(t), g.Z.setMetadataVisibility(o.type, o.id, t), V(null))
+    null != e && (O(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (T(t), g.Z.setMetadataVisibility(o.type, o.id, t), V(null))
   }, [o]);
 
   function $() {
@@ -333,7 +333,7 @@ function H(e) {
       hideBorder: !0,
       value: I,
       onChange: function(e) {
-        y(e), g.Z.setShowActivity(o.type, o.id, e)
+        A(e), g.Z.setShowActivity(o.type, o.id, e)
       },
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
@@ -358,7 +358,7 @@ function H(e) {
         }
         T(n), g.Z.setMetadataVisibility(o.type, o.id, n)
       },
-      disabled: 1 !== O || null == o.metadata,
+      disabled: 1 !== C || null == o.metadata,
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
         children: M.NW.string(M.t.FYKGsL)
@@ -370,7 +370,7 @@ function H(e) {
         children: [(0, r.jsx)(u.j7V, {
           className: U.connectionOptionSwitch,
           hideBorder: !0,
-          value: 1 === O,
+          value: 1 === C,
           onChange: function(e) {
             let {
               verified: t
@@ -382,7 +382,7 @@ function H(e) {
               });
               return
             }
-            C(n), g.Z.setVisibility(o.type, o.id, n)
+            O(n), g.Z.setVisibility(o.type, o.id, n)
           },
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/semibold",
@@ -426,7 +426,7 @@ function H(e) {
 
 function z() {
   return i.useEffect(() => () => {
-    (0, O.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
+    (0, C.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: B.L.AUTO
     })
   }, []), (0, r.jsxs)("div", {
@@ -450,7 +450,7 @@ function Y(e) {
   let t = b.Z.get(e);
   (0, E.Z)({
     platformType: t.type
-  }), A.default.track(W.rMx.ACCOUNT_LINK_STEP, {
+  }), y.default.track(W.rMx.ACCOUNT_LINK_STEP, {
     previous_step: "desktop connections",
     current_step: "desktop oauth",
     platform_type: t.type
@@ -540,7 +540,7 @@ function q(e) {
   })
 }
 let X = () => {
-  let e = (0, l.e7)([y.Z], () => y.Z.hidePersonalInformation),
+  let e = (0, l.e7)([A.Z], () => A.Z.hidePersonalInformation),
     t = (0, l.e7)([v.Z], () => v.Z.isFetching()),
     n = (0, l.e7)([v.Z], () => v.Z.getAccounts()),
     s = (0, N.ZP)();

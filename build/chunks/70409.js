@@ -18,7 +18,7 @@ function u(e) {
     guild: t,
     numSounds: n,
     isOutOfSlots: u
-  } = e, m = t.premiumTier, g = (0, a.FZ)(m, t.id), p = o._k[m] - 2;
+  } = e, m = t.premiumTier, g = (0, a.FZ)(m), p = o._k[m] - 2;
   if (null == g || m === l.Eu4.TIER_3 || n < p) return null;
   let h = u ? {
     color: i.Ttl.GREEN,

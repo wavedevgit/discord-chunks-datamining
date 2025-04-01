@@ -28,8 +28,8 @@ function m(e) {
     pendingBio: _,
     tryItOutThemeColors: E,
     tryItOutAvatar: j,
-    tryItOutBanner: O,
-    tryItOutAvatarDecoration: C,
+    tryItOutBanner: C,
+    tryItOutAvatarDecoration: O,
     tryItOutProfileEffectId: S
   } = (0, s.cj)([c.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -51,13 +51,13 @@ function m(e) {
   })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), v = (0, o.SD)({
     userId: m.id,
     image: null != j ? j : f
-  }), T = (0, l.Z)(C, !1);
+  }), T = (0, l.Z)(O, !1);
   return (0, r.jsx)(d.Z, {
     containerClassName: p,
     user: m,
     pendingPronouns: x,
     pendingBio: _,
-    pendingBanner: null !== (t = null != O ? O : N) && void 0 !== t ? t : n(466045),
+    pendingBanner: null !== (t = null != C ? C : N) && void 0 !== t ? t : n(466045),
     pendingAvatar: v,
     pendingThemeColors: null != E ? E : b,
     pendingAvatarDecoration: T,

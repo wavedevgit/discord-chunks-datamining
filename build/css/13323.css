@@ -1,6 +1,6 @@
 /**
   Module ID: 13323
-  Original File Name: d2e58efed6a7c978
+  Original File Name: e54a621d8d85af42
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -10074,20 +10074,20 @@ html .invoiceCancelRow_b9f95d {
     border: 1px solid var(--border-strong)
 }
 
-.staticFramesContainer__93529 {
+.stillFramesContainer__93529 {
     display: flex;
     margin-top: 12px;
     gap: 12px
 }
 
-.staticFramePreviewContainer__93529 {
+.stillFramePreviewContainer__93529 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px
 }
 
-.staticFramePreview__93529 {
+.stillFramePreview__93529 {
     height: 250px;
     aspect-ratio: 450/880;
     border: 1px solid var(--border-strong);
@@ -12658,166 +12658,6 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     border-radius: var(--radius-sm);
     overflow: hidden;
     margin-bottom: 20px
-}
-
-.button__2723e {
-    box-sizing: border-box;
-    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
-    background: initial;
-    color: inherit;
-    padding: 0;
-    margin: 0;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: auto;
-    max-width: 100%;
-    text-align: left;
-    font-weight: 400;
-    font-size: medium;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-4);
-    border-radius: var(--radius-sm);
-    border: 1px solid transparent;
-    transition: background-color .3s ease;
-    cursor: pointer
-}
-
-.xs__2723e {
-    padding: 7px 11px;
-    min-height: 32px
-}
-
-.sm__2723e {
-    padding: 11px 15px;
-    min-height: 40px
-}
-
-.md__2723e {
-    padding: 11px 23px;
-    min-height: 44px
-}
-
-.lg__2723e {
-    padding: 15px 31px;
-    min-height: 56px
-}
-
-.lg__2723e .text__2723e {
-    font-size: 18px
-}
-
-:where(.visual-refresh) .primary__2723e {
-    color: var(--white);
-    background-color: var(--button-filled-brand-background);
-    border-color: var(--button-filled-brand-border)
-}
-
-:where(.visual-refresh) .primary__2723e:hover {
-    background-color: var(--button-filled-brand-background-hover)
-}
-
-:where(.visual-refresh) .primary__2723e:active {
-    background-color: var(--button-filled-brand-background-active)
-}
-
-:where(.visual-refresh) .secondary__2723e {
-    color: var(--text-primary);
-    background-color: var(--bg-mod-subtle);
-    border-color: var(--border-faint)
-}
-
-:where(.visual-refresh) .secondary__2723e:hover {
-    background-color: var(--button-secondary-background-hover)
-}
-
-:where(.visual-refresh) .secondary__2723e:active {
-    background-color: var(--bg-mod-faint)
-}
-
-:where(.visual-refresh) .tertiary__2723e {
-    color: var(--text-primary);
-    background-color: transparent;
-    border-color: transparent
-}
-
-:where(.visual-refresh) .tertiary__2723e:hover {
-    background-color: var(--bg-mod-subtle)
-}
-
-:where(.visual-refresh) .tertiary__2723e:active {
-    background-color: var(--bg-mod-faint)
-}
-
-:where(.visual-refresh) .destructive-primary__2723e {
-    color: var(--white);
-    background-color: var(--button-danger-background);
-    border-color: var(--button-danger-border)
-}
-
-:where(.visual-refresh) .destructive-primary__2723e:hover {
-    background-color: var(--button-danger-background-hover)
-}
-
-:where(.visual-refresh) .destructive-primary__2723e:active {
-    background-color: var(--button-danger-background-active)
-}
-
-:where(.visual-refresh) .destructive-secondary__2723e {
-    color: var(--text-feedback-critical);
-    background-color: var(--bg-mod-subtle);
-    border-color: var(--border-faint)
-}
-
-:where(.visual-refresh) .destructive-secondary__2723e:hover {
-    background-color: var(--button-secondary-background-hover)
-}
-
-:where(.visual-refresh) .destructive-secondary__2723e:active {
-    background-color: var(--bg-mod-faint)
-}
-
-:where(.visual-refresh) .active__2723e {
-    color: var(--white);
-    background-color: var(--button-positive-background);
-    border-color: var(--button-positive-border)
-}
-
-:where(.visual-refresh) .active__2723e:hover {
-    background-color: var(--button-positive-background-hover)
-}
-
-:where(.visual-refresh) .active__2723e:active {
-    background-color: var(--button-positive-background-active)
-}
-
-:where(.visual-refresh) .overlay-primary__2723e {
-    color: var(--black);
-    background-color: var(--white);
-    border-color: transparent
-}
-
-:where(.visual-refresh) .overlay-primary__2723e:hover {
-    background-color: var(--button-filled-white-background-hover)
-}
-
-:where(.visual-refresh) .overlay-primary__2723e:active {
-    background-color: var(--button-filled-white-background-active)
-}
-
-:where(.visual-refresh) .overlay-secondary__2723e {
-    color: var(--white);
-    background-color: rgba(0,0,0,.54);
-    border-color: transparent
-}
-
-:where(.visual-refresh) .overlay-secondary__2723e:hover {
-    background-color: rgba(0,0,0,.64)
-}
-
-:where(.visual-refresh) .overlay-secondary__2723e:active {
-    background-color: rgba(0,0,0,.72)
 }
 
 .animationObj__6b4ea {
@@ -16897,4 +16737,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=d2e58efed6a7c978.css.map*/
+/*# sourceMappingURL=e54a621d8d85af42.css.map*/

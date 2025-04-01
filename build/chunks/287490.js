@@ -67,7 +67,7 @@ function b(e) {
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), O = (0, r.jsx)(o.P3F, {
+  })), C = (0, r.jsx)(o.P3F, {
     onClick: x,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
@@ -89,7 +89,7 @@ function b(e) {
   return m ? (0, r.jsxs)("div", {
     className: h.group,
     children: [(0, r.jsxs)(o.hjN, {
-      children: [O, (0, r.jsxs)("div", {
+      children: [C, (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.xJW, {
           title: "Bucket Override",
           children: (0, r.jsx)(o.q4e, {
@@ -155,7 +155,7 @@ function b(e) {
   }) : (0, r.jsx)("div", {
     className: h.group,
     children: (0, r.jsx)(o.hjN, {
-      children: O
+      children: C
     })
   })
 }
@@ -173,7 +173,7 @@ function x(e) {
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), [j, O] = (0, l.Wu)([u.Z, d.Z], () => {
+  })), [j, C] = (0, l.Wu)([u.Z, d.Z], () => {
     let e = a().sortBy(a().values(u.Z.getGuilds()), e => e.name.toLowerCase()),
       t = {},
       r = [];
@@ -185,7 +185,7 @@ function x(e) {
     }
     let s = a()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
     return [r.join("\n"), s]
-  }), C = (0, r.jsx)(o.P3F, {
+  }), O = (0, r.jsx)(o.P3F, {
     onClick: x,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
@@ -207,7 +207,7 @@ function x(e) {
   return m ? (0, r.jsxs)("div", {
     className: h.group,
     children: [(0, r.jsxs)(o.hjN, {
-      children: [C, (0, r.jsxs)("div", {
+      children: [O, (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.xJW, {
           title: "Bucket Override",
           children: (0, r.jsx)(o.q4e, {
@@ -229,7 +229,7 @@ function x(e) {
         className: h.description,
         children: [(0, r.jsxs)(o.R94, {
           type: o.geA.DESCRIPTION,
-          children: ["Current Assignments: ", O]
+          children: ["Current Assignments: ", C]
         }), null == _ ? (0, r.jsx)(o.R94, {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -281,7 +281,7 @@ function x(e) {
   }) : (0, r.jsx)("div", {
     className: h.group,
     children: (0, r.jsx)(o.hjN, {
-      children: C
+      children: O
     })
   })
 }

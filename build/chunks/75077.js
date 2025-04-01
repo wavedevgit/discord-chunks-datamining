@@ -90,7 +90,7 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
       location: "getWhatsNewRow"
     }, {
       autoTrackExposure: !1
-    }), d = O();
+    }), d = C();
     return null != n.collectibleDeco && a({
       card: n.collectibleDeco
     }), null != n.tenureBadge && a({
@@ -189,7 +189,7 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
     let e = (0, i.e7)([a.default], () => a.default.getCurrentUser());
     return (0, o.I5)(e)
   },
-  O = () => {
+  C = () => {
     let e = a.default.getCurrentUser();
     return (0, o.M5)(e, u.p9.TIER_2)
   }

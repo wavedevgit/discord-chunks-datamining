@@ -139,7 +139,10 @@ function F(e) {
     });
     a = M(t, n, i), D[t] = a
   }
-  L = []
+  d.Z.dispatch({
+    type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
+    context: S.Yn.STREAM
+  }), L = []
 }
 
 function V(e) {
@@ -156,9 +159,9 @@ function Z(e) {
     e.updateStats(t)
   }), t.filter(e => {
     let {
-      connection: t
+      context: t
     } = e;
-    return t.context === S.Yn.STREAM
+    return t === S.Yn.STREAM
   }).forEach(e => {
     let {
       stats: t

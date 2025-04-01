@@ -640,7 +640,17 @@ function tC() {
   }), ej.on(m.aB.ConnectionStats, e => {
     b.Z.dispatch({
       type: "MEDIA_ENGINE_CONNECTION_STATS",
-      connectionStats: e
+      connectionStats: e.map(e => {
+        let {
+          stats: t,
+          connection: n
+        } = e;
+        return {
+          stats: t,
+          mediaEngineConnectionId: n.mediaEngineConnectionId,
+          context: n.context
+        }
+      })
     })
   }), ej.setOnVideoContainerResized((e, t, n) => {
     b.Z.wait(() => b.Z.dispatch({

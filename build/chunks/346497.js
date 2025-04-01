@@ -32,26 +32,26 @@ var r = n(913527),
 let A = 10;
 
 function N(e) {
-  var t, n, r;
+  var t, n;
   let {
-    experimentEnabled: o,
-    premiumSubscription: a,
-    mostRecentSubscription: s
-  } = e, l = !1, u = !1;
-  if (null != s && s.status === S.O0b.ENDED) {
-    let e = (null === (t = s.metadata) || void 0 === t ? void 0 : t.ended_at) != null ? i()(s.metadata.ended_at) : null,
-      r = null === (n = (0, f.Af)(s)) || void 0 === n ? void 0 : n.planId,
-      o = null != r && f.ZP.getPremiumType(r) === I.p9.TIER_2;
-    u = null != e && o && e.add(A, "days").isAfter(i()())
+    experimentEnabled: r,
+    premiumSubscription: o,
+    mostRecentSubscription: a
+  } = e, s = !1, l = !1;
+  if (null != a && a.status === S.O0b.ENDED) {
+    let e = a.endedAt,
+      n = null === (t = (0, f.Af)(a)) || void 0 === t ? void 0 : t.planId,
+      r = null != n && f.ZP.getPremiumType(n) === I.p9.TIER_2;
+    l = null != e && r && i()().subtract(A, "days").isAfter(e)
   }
-  if (null != a) {
-    let e = null === (r = (0, f.Af)(a)) || void 0 === r ? void 0 : r.planId,
+  if (null != o) {
+    let e = null === (n = (0, f.Af)(o)) || void 0 === n ? void 0 : n.planId,
       t = null != e && f.ZP.getPremiumType(e) === I.p9.TIER_2,
-      n = c.default.getCurrentUser(),
-      i = (null == a ? void 0 : a.trialId) != null && f.ZP.isPremiumExactly(n, I.p9.TIER_0);
-    l = t || i
+      r = c.default.getCurrentUser(),
+      i = (null == o ? void 0 : o.trialId) != null && f.ZP.isPremiumExactly(r, I.p9.TIER_0);
+    s = t || i
   }
-  return !o || l || u
+  return !r || s || l
 }
 
 function C() {

@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  ZP: () => f
+  ZP: () => Z
 }), t(47120);
 var r = t(200651),
   i = t(192379),
@@ -11,16 +11,16 @@ var r = t(200651),
   c = t(808189),
   d = t(413335),
   u = t(690786),
-  m = t(838968),
-  p = t(660397),
+  p = t(838968),
+  m = t(262212),
   x = t(279604),
   v = t(981631),
   _ = t(296260),
-  b = t(388032),
+  f = t(388032),
   g = t(713234),
-  j = t(728214);
+  b = t(728214);
 
-function Z(e) {
+function j(e) {
   let n, {
     active: t,
     nextActive: i,
@@ -70,13 +70,13 @@ function h(e) {
       children: (0, r.jsx)(a.xv, {
         color: "text-muted",
         variant: "text-sm/medium",
-        children: b.NW.string(_.Z.nIj3LS)
+        children: f.NW.string(_.Z.nIj3LS)
       })
     })]
   })
 }
 
-function f(e) {
+function Z(e) {
   let n, {
       guildId: t,
       index: o,
@@ -86,29 +86,29 @@ function f(e) {
     c = null != (0, u.Z)(t, s),
     d = null != (0, u.Z)(t, l),
     [v, _] = i.useState(void 0);
-  return (0, x.KT)(v), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(m.Z, {
+  return (0, x.KT)(v), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(p.Z, {
     guildId: t,
     powerup: s,
     className: g.card,
-    children: [(0, r.jsx)(Z, {
+    children: [(0, r.jsx)(j, {
       position: n,
       active: c,
       nextActive: d
     }), (0, r.jsxs)("div", {
-      className: j.contentContainer,
+      className: b.contentContainer,
       children: [(0, r.jsx)(a.X6, {
         variant: "heading-md/bold",
         children: s.title
       }), (0, r.jsx)(h, {
         index: o
-      }), (0, r.jsx)(m.Y, {
+      }), (0, r.jsx)(p.u, {
         className: g.footer,
         guildId: t,
         powerup: s
       })]
     }), (0, r.jsx)("div", {
-      className: j.buttonContainer,
-      children: (0, r.jsx)(p.ZP, {
+      className: b.buttonContainer,
+      children: (0, r.jsx)(m.ZP, {
         guildId: t,
         powerup: s,
         onError: _

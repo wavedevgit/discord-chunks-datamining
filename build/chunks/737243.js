@@ -38,7 +38,7 @@ let h = i.memo(function(e) {
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
     })
-  }, [y]), M = i.useCallback(() => (0, p.Z)({
+  }, [y]), k = i.useCallback(() => (0, p.Z)({
     message: h,
     channel: f,
     compact: m,
@@ -69,7 +69,7 @@ let h = i.memo(function(e) {
     onClickTargetUsername: T,
     onTargetUserContextMenu: Z,
     onPopoutRequestClose: R,
-    renderTargetMessage: M
+    renderTargetMessage: k
   })
 });
 

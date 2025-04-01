@@ -43,7 +43,7 @@ async function E(e) {
     case g.oC.MEMBER_SAFETY:
       return (0, a.lv)(t);
     case g.oC.GUILD_BOOSTS:
-      return (0, u.gV)(E, "isAccessibleChannelOrThread");
+      return (0, u.gV)(t, "isAccessibleChannelOrThread");
     default:
       (0, p.vE)(n)
   }

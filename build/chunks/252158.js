@@ -222,7 +222,7 @@ let M = {
   [y.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH]: {
     getActiveErrors: () => {
       var e, t, n;
-      let r = null !== (n = null === (t = c.Z.getConnectionStats().find(e => e.connection.context === N.Yn.DEFAULT)) || void 0 === t ? void 0 : null === (e = t.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === e ? void 0 : e.sampleRateMismatchPercent) && void 0 !== n ? n : 0;
+      let r = null !== (n = null === (t = c.Z.getFirstConnectionStatsByContext(N.Yn.DEFAULT)) || void 0 === t ? void 0 : null === (e = t.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === e ? void 0 : e.sampleRateMismatchPercent) && void 0 !== n ? n : 0;
       if (Math.abs(r) > D) return [R({
         type: y.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
         audioCaptureSampleRateMismatchPercent: r

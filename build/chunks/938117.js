@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -53,15 +53,15 @@ function j(e, t) {
   }), e
 }
 
-function O(e) {
+function C(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: O,
-    onSelectBackgroundOption: C,
+    selectedBackgroundOption: C,
+    onSelectBackgroundOption: O,
     currentDeviceId: S,
     smallerBackgroundOptions: v,
     className: T
-  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
+  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [A, y] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
   i.useEffect(() => {
     (0, d.XV)()
   }, []);
@@ -70,8 +70,8 @@ function O(e) {
     w = (0, l.O)(),
     k = {
       isVideoBackgroundSupported: P,
-      onSelectBackgroundOption: C,
-      selectedBackgroundOption: O
+      onSelectBackgroundOption: O,
+      selectedBackgroundOption: C
     },
     W = i.useRef(k);
   i.useEffect(() => {
@@ -87,10 +87,10 @@ function O(e) {
     }).catch(() => t(null)) : null != n && t(null)
   }, [S]);
   let L = e => {
-    C(e), (0, g.FU)(e, S, {
+    O(e), (0, g.FU)(e, S, {
       location: w.location
-    }).then(() => A(null)).catch(() => {
-      A(x.NW.string(x.t.ejrSLS)), (0, g.FU)(null, S, {
+    }).then(() => y(null)).catch(() => {
+      y(x.NW.string(x.t.ejrSLS)), (0, g.FU)(null, S, {
         location: w.location
       })
     })
@@ -98,13 +98,13 @@ function O(e) {
   return P ? (0, r.jsxs)(a.xJW, {
     title: x.NW.string(x.t.lZTUPj),
     className: T,
-    children: [null != y ? (0, r.jsx)(a.kzN, {
+    children: [null != A ? (0, r.jsx)(a.kzN, {
       className: _.videoBackgroundError,
-      children: y
+      children: A
     }) : null, (0, r.jsx)(h.Z, {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
-      selectedOption: O,
+      selectedOption: C,
       onSelectOption: L,
       onUpsellClick: () => {
         (0, a.ZDy)(async () => {
@@ -124,9 +124,9 @@ function O(e) {
         return new Promise(async r => {
           try {
             let r = await (0, d.Ff)(e, f.xV.BACKGROUND);
-            L(r), (0, m.g5)(r, t.type === b.m.MP4, n), A(null)
+            L(r), (0, m.g5)(r, t.type === b.m.MP4, n), y(null)
           } catch (e) {
-            A(e.message)
+            y(e.message)
           }
           r()
         })

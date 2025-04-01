@@ -26,7 +26,7 @@ let o = (0, r.B)({
 
 function a(e, t) {
   return o.useExperiment({
-    guildId: null == e ? void 0 : e.id,
+    guildId: e,
     location: t
   }, {
     autoTrackExposure: !1
@@ -35,7 +35,7 @@ function a(e, t) {
 
 function s(e, t) {
   return o.getCurrentConfig({
-    guildId: null == e ? void 0 : e.id,
+    guildId: e,
     location: t
   }, {
     autoTrackExposure: !1

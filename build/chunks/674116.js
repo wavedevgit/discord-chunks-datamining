@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(625205),
   E = n(325808),
   j = n(823087),
-  O = n(232388),
-  C = n(546997),
+  C = n(232388),
+  O = n(546997),
   S = n(186934),
   v = n(716210),
   T = n(520384),
   I = n(459674),
-  y = n(167540),
-  A = n(267006),
+  A = n(167540),
+  y = n(267006),
   P = n(803567),
   R = n(269876),
   D = n(976758),
@@ -101,7 +101,7 @@ function U() {
           scrollMarginTop: "48px"
         },
         ref: m
-      }), (0, r.jsx)(y.Z, {})]
+      }), (0, r.jsx)(A.Z, {})]
     }), (0, r.jsx)(c.F, {
       setting: w.s6.VOICE_AND_VIDEO_ADVANCED,
       children: (0, r.jsxs)(a.y5t, {
@@ -110,10 +110,10 @@ function U() {
           className: B.marginBottom20,
           children: L.NW.string(L.t["8/udY2"])
         }),
-        children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)(A.Z, {}), (0, r.jsx)(c.F, {
+        children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)(y.Z, {}), (0, r.jsx)(c.F, {
           setting: w.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
           children: (0, r.jsx)(P.Z, {})
-        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(S.Z, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(S.Z, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(I.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(a.$i$, {
           className: B.marginBottom40

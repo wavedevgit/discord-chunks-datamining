@@ -39,15 +39,15 @@ let x = () => (0, l.ZDy)(async () => {
     onCloseRequest: () => (0, l.Mr3)(s.c)
   }),
   h = () => {
-    let {
-      profileEffects: e
-    } = (0, o.E)(), {
-      previewProfileEffectId: t,
-      setPreviewProfileEffectId: n
-    } = (0, c.N9)(), i = a.useMemo(() => Object.values(e).map(e => ({
-      label: e.name,
-      value: e.id
-    })), [e]);
+    let e = (0, o.sg)(),
+      {
+        previewProfileEffectId: t,
+        setPreviewProfileEffectId: n
+      } = (0, c.N9)(),
+      i = a.useMemo(() => Object.values(e).map(e => ({
+        label: e.name,
+        value: e.id
+      })), [e]);
     return (0, r.jsxs)("div", {
       className: m.profileEffectPreviewSelector,
       children: [(0, r.jsx)(l.LZC, {

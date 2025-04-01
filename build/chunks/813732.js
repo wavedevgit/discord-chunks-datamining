@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(925329),
   E = n(406174),
   j = n(810762),
-  O = n(681833),
-  C = n(856888),
+  C = n(681833),
+  O = n(856888),
   S = n(921801),
   v = n(246946),
   T = n(663389),
   I = n(351402),
-  y = n(853872),
-  A = n(78839),
+  A = n(853872),
+  y = n(78839),
   P = n(580130),
   R = n(626135),
   D = n(63063),
@@ -90,23 +90,23 @@ function K() {
   })
 }
 let q = function() {
-  let e = (0, l.e7)([A.ZP], () => A.ZP.getPremiumTypeSubscription()),
+  let e = (0, l.e7)([y.ZP], () => y.ZP.getPremiumTypeSubscription()),
     t = (0, N.Z)({
       subscriptionFilter: e => B.eS.has(e.status)
     }),
     n = t.length > 1,
-    s = (0, l.e7)([y.Z], () => null != e && null != e.paymentSourceId ? y.Z.getPaymentSource(e.paymentSourceId) : null, [e]),
-    m = (0, l.e7)([A.ZP], () => A.ZP.hasFetchedSubscriptions()),
+    s = (0, l.e7)([A.Z], () => null != e && null != e.paymentSourceId ? A.Z.getPaymentSource(e.paymentSourceId) : null, [e]),
+    m = (0, l.e7)([y.ZP], () => y.ZP.hasFetchedSubscriptions()),
     x = (0, l.e7)([I.Z], () => I.Z.isBusy),
     _ = (0, b.V)(),
     P = (0, l.e7)([T.Z], () => T.Z.getSubsection()),
-    Z = (0, l.e7)([A.ZP], () => {
+    Z = (0, l.e7)([y.ZP], () => {
       var e, t;
-      return null !== (t = null === (e = A.ZP.getActiveApplicationSubscriptions()) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
+      return null !== (t = null === (e = y.ZP.getActiveApplicationSubscriptions()) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
     }),
-    W = (0, l.e7)([A.ZP], () => {
+    W = (0, l.e7)([y.ZP], () => {
       var e;
-      return Object.values(null !== (e = A.ZP.getSubscriptions()) && void 0 !== e ? e : {}).filter(e => e.type === U.NYc.GUILD).filter(e => e.status !== U.O0b.ENDED).length
+      return Object.values(null !== (e = y.ZP.getSubscriptions()) && void 0 !== e ? e : {}).filter(e => e.type === U.NYc.GUILD).filter(e => e.status !== U.O0b.ENDED).length
     }),
     z = (0, f.Z)({
       forceFetch: !0
@@ -120,7 +120,7 @@ let q = function() {
     p.Z.clearSubsection()
   }), []), v.Z.enabled) ? (0, r.jsx)(h.Z, {}) : m && _ ? P === V.cP ? (0, r.jsx)(j.Z, {
     onGoBack: () => p.Z.clearSubsection()
-  }) : P === V.XZ ? (0, r.jsx)(C.Z, {
+  }) : P === V.XZ ? (0, r.jsx)(O.Z, {
     onGoBack: () => p.Z.clearSubsection()
   }) : (0, r.jsx)("div", {
     className: H.container,
@@ -156,7 +156,7 @@ let q = function() {
           onClickManageSubscription: () => p.Z.setSection(U.oAB.SUBSCRIPTIONS, V.cP)
         })]
       }), Z > 0 && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(K, {}), (0, r.jsx)(O.Z, {
+        children: [(0, r.jsx)(K, {}), (0, r.jsx)(C.Z, {
           count: Z,
           onClickManageSubscription: () => {
             p.Z.setSection(U.oAB.SUBSCRIPTIONS, V.XZ), R.default.track(U.rMx.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)

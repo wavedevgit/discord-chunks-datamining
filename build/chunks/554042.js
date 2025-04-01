@@ -50,7 +50,7 @@ function j() {
   } = (0, l.cj)([N.Z, g.Z], () => ({
     theme: N.Z.theme,
     platformZoom: g.Z.zoom
-  })), [j, O] = i.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
+  })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -67,8 +67,8 @@ function j() {
       var e, t;
       return (0, h.fD)() ? null === (t = p.C.getCurrentBuildOverride()) || void 0 === t ? void 0 : null === (e = t.overrides) || void 0 === e ? void 0 : e.discord_web : null
     }),
-    [I, y] = (0, m.R)("playground-overrideText", null),
-    [A, P] = (0, m.R)("playground-defaultText", E[0].value),
+    [I, A] = (0, m.R)("playground-overrideText", null),
+    [y, P] = (0, m.R)("playground-defaultText", E[0].value),
     R = i.useCallback(e => {
       let t = E.find(t => {
         let {
@@ -76,8 +76,8 @@ function j() {
         } = t;
         return n === e
       });
-      "" === e || null == e ? (P(E[0].value), y(null)) : null != t ? P(t.value) : (P("custom"), y(e))
-    }, [y, P]);
+      "" === e || null == e ? (P(E[0].value), A(null)) : null != t ? P(t.value) : (P("custom"), A(e))
+    }, [A, P]);
   return (0, r.jsx)("div", {
     className: _.fullscreen,
     style: {
@@ -111,7 +111,7 @@ function j() {
             className: _.select,
             options: E,
             onChange: e => R(e),
-            value: A
+            value: y
           })
         }), (0, r.jsx)(o.xJW, {
           children: (0, r.jsx)("div", {
@@ -157,7 +157,7 @@ function j() {
               value: "mono"
             }],
             onChange: e => {
-              O(e.value)
+              C(e.value)
             },
             value: j
           })
@@ -167,7 +167,7 @@ function j() {
         })]
       }), (0, r.jsxs)("div", {
         className: _.textGrid,
-        children: [(0, r.jsx)("div", {}), C.map(e => (0, r.jsx)("div", {
+        children: [(0, r.jsx)("div", {}), O.map(e => (0, r.jsx)("div", {
           className: _.columnHeading,
           children: (0, r.jsx)(o.X6q, {
             variant: "eyebrow",
@@ -184,9 +184,9 @@ function j() {
               color: "text-muted",
               children: ["(", e * v / 100, ")"]
             }) : null]
-          }, e), C.map(t => {
+          }, e), O.map(t => {
             var n;
-            let i = null !== (n = "custom" === A ? I : A) && void 0 !== n ? n : "";
+            let i = null !== (n = "custom" === y ? I : y) && void 0 !== n ? n : "";
             return (0, r.jsx)("div", {
               className: _.textSample,
               children: (0, r.jsxs)("div", {

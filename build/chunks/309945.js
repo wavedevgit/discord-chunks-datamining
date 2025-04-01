@@ -11,8 +11,8 @@ var r = t(200651),
   c = t(899667),
   d = t(905128),
   u = t(296260),
-  m = t(388032),
-  p = t(519175);
+  p = t(388032),
+  m = t(519175);
 
 function x(e) {
   let {
@@ -26,17 +26,17 @@ function x(e) {
     return null !== (t = null == v ? void 0 : null === (n = v.filter) || void 0 === n ? void 0 : null === (e = n.call(v, e => !e.ended && null == e.endsAt)) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
   }, [v]);
   return _ <= 0 ? null : (0, r.jsxs)("div", {
-    className: p.container,
+    className: m.container,
     children: [(0, r.jsx)(o.P4T, {
       color: l.Z.colors.TEXT_WARNING,
-      className: p.icon
+      className: m.icon
     }), (0, r.jsx)(s.xv, {
       variant: "text-md/semibold",
       color: "text-warning",
-      children: m.NW.string(u.Z.n5hQhY)
+      children: p.NW.string(u.Z.n5hQhY)
     }), (0, r.jsx)(s.xv, {
       variant: "text-sm/medium",
-      children: m.NW.formatToPlainString(u.Z.iAaAiI, {
+      children: p.NW.formatToPlainString(u.Z.iAaAiI, {
         boostCount: _,
         perksString: t.map(e => e.title).join(", ")
       })

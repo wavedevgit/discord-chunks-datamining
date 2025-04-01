@@ -60,71 +60,71 @@ let g = (0, i.Kb)([d.Z, u.Z, p.Z], {
   useStateHook: i.cj
 });
 
-function h(e, t) {
+function h(e) {
   let {
-    data: r
-  } = g(e), i = null == r ? void 0 : r.parentSku, o = null == r ? void 0 : r.sku, c = null == r ? void 0 : r.storeListing, u = null == r ? void 0 : r.subscriptionPlans, d = l.useCallback(() => {
-    if ((null == o ? void 0 : o.applicationId) == null || (null == o ? void 0 : o.id) == null || (null == o ? void 0 : o.flags) == null || o.applicationId !== t) return null;
+    data: t
+  } = g(e), r = null == t ? void 0 : t.parentSku, i = null == t ? void 0 : t.sku, o = null == t ? void 0 : t.storeListing, c = null == t ? void 0 : t.subscriptionPlans, u = l.useCallback(() => {
+    if ((null == i ? void 0 : i.applicationId) == null || (null == i ? void 0 : i.id) == null || (null == i ? void 0 : i.flags) == null) return null;
     (0, a.h7j)(e => {
       let {
         onClose: t,
         transitionState: r
       } = e;
       return (0, n.jsx)(y.SubscriptionDetailsModal, {
-        appId: o.applicationId,
-        subscriptionType: (0, s.KW)(o.flags) ? "user" : "guild",
+        appId: i.applicationId,
+        subscriptionType: (0, s.KW)(i.flags) ? "user" : "guild",
         onClose: t,
-        skuId: o.id,
+        skuId: i.id,
         transitionState: r,
         guildId: null
       })
     })
-  }, [null == o ? void 0 : o.applicationId, null == o ? void 0 : o.id, null == o ? void 0 : o.flags, t]), p = l.useCallback(() => {
-    if (null == o) return null;
+  }, [null == i ? void 0 : i.applicationId, null == i ? void 0 : i.id, null == i ? void 0 : i.flags]), d = l.useCallback(() => {
+    if (null == i) return null;
     (0, a.h7j)(e => {
       let {
         onClose: t,
         transitionState: r
       } = e;
       return (0, n.jsx)(O.ItemDetailsModal, {
-        appId: o.applicationId,
-        skuId: o.id,
+        appId: i.applicationId,
+        skuId: i.id,
         onClose: t,
         transitionState: r
       })
     })
-  }, [o]);
-  if (null != o && null != c && (null == o || o.type !== m.epS.SUBSCRIPTION || null != i)) {
-    if (null == e || null != o && !o.available || null != o && o.applicationId !== t) return {
+  }, [i]);
+  if (null != i && null != o && (null == i || i.type !== m.epS.SUBSCRIPTION || null != r)) {
+    if (null == e || null != i && !i.available) return {
       disabled: !0,
       label: j.NW.string(j.t.CHa0vL)
     };
-    if (o.type === m.epS.SUBSCRIPTION) {
-      if (null == u || 0 === u.length) return {
+    if (i.type === m.epS.SUBSCRIPTION) {
+      if (null == c || 0 === c.length) return {
         disabled: !0,
         label: j.NW.string(j.t.CHa0vL)
       };
-      let e = u[0],
+      let e = c[0],
         t = (0, f.aS)(e.id);
       return {
         disabled: !1,
         label: j.NW.formatToPlainString(j.t["c6Q+Bw"], {
-          skuName: o.name,
+          skuName: i.name,
           price: (0, b.T4)(t.amount, t.currency)
         }),
-        onClick: d
+        onClick: u
       }
     }
-    return null == o.price ? {
+    return null == i.price ? {
       disabled: !0,
       label: j.NW.string(j.t.CHa0vL)
     } : {
       disabled: !1,
       label: j.NW.formatToPlainString(j.t["c6Q+Bw"], {
-        skuName: o.name,
-        price: (0, b.T4)(o.price.amount, o.price.currency)
+        skuName: i.name,
+        price: (0, b.T4)(i.price.amount, i.price.currency)
       }),
-      onClick: p
+      onClick: d
     }
   }
 }

@@ -1,14 +1,25 @@
-/** Chunk was on 59207 **/
-t.exports = {
-  categoryButton: "categoryButton__7ac97",
-  modalRoot: "modalRoot__7ac97",
-  modalContent: "modalContent__7ac97",
-  header: "header__7ac97",
-  wumpusImageContainer: "wumpusImageContainer__7ac97",
-  shopImageContainer: "shopImageContainer__7ac97",
-  nitroButton: "nitroButton__7ac97",
-  nitroBasicButton: "nitroBasicButton__7ac97",
-  shopButton: "shopButton__7ac97",
-  cursorPointer: "cursorPointer__7ac97",
-  buttonText: "buttonText__7ac97"
+/** Chunk was on 99014 **/
+n.d(t, {
+  Z: () => i
+});
+var r = n(192379),
+  o = n(481060),
+  s = n(434404),
+  a = n(535396),
+  c = n(981631);
+
+function i(e, t) {
+  let n = r.useCallback(n => {
+    if (n.stopPropagation(), t.type !== a.Us.LEVEL) switch ((0, o.Mr3)(a.H2), t.skuId) {
+      case a.IN:
+        s.Z.open(e, c.pNK.TAG, c.jXE.GUILD_POWERUPS_OVERVIEW_CARD);
+        return;
+      case a.If:
+        s.Z.open(e, c.pNK.ROLES, c.jXE.GUILD_POWERUPS_OVERVIEW_CARD);
+        return;
+      default:
+        return
+    }
+  }, [e, t]);
+  return t.type === a.Us.PERK ? n : void 0
 }

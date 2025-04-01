@@ -1,46 +1,46 @@
 /**
   Module ID: 30642
-  Original File Name: cae0443a3983e706
+  Original File Name: 676446ece9be4bb9
 **/
-.container__2b26c {
+.container__6f9f7 {
     display: flex;
     gap: var(--spacing-8)
 }
 
-.tooltipContainer__2b26c {
+.tooltipContainer__6f9f7 {
     display: flex;
     flex-direction: column;
     text-align: center
 }
 
-.primaryButton__2b26c {
+.primaryButton__6f9f7 {
     flex-grow: 1
 }
 
-.secondaryButton__2b26c {
+.secondaryButton__6f9f7 {
     min-width: 0;
     width: auto
 }
 
-.buttonInner__2b26c {
+.buttonInner__6f9f7 {
     align-items: center;
     justify-content: center;
     display: flex
 }
 
-.secondaryButtonInner__2b26c {
+.secondaryButtonInner__6f9f7 {
     gap: 2px
 }
 
-.buttonWrapper__2b26c {
+.buttonWrapper__6f9f7 {
     flex-grow: 1
 }
 
-.dot__2b26c {
+.dot__6f9f7 {
     margin: 0 4px 0 6px
 }
 
-.boost__2b26c {
+.boost__6f9f7 {
     align-self: center;
     justify-self: center
 }
@@ -355,12 +355,15 @@
 
 .powerupImage__61aee {
     align-self: center;
-    justify-content: center;
+    justify-self: center;
     -o-object-fit: contain;
     object-fit: contain;
-    -o-object-position: center;
-    object-position: center;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box
+}
+
+.gradientRoleColorsImage__61aee {
+    padding: 0 var(--spacing-16)
 }
 
 .exampleImage__61aee {
@@ -376,4 +379,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=cae0443a3983e706.css.map*/
+/*# sourceMappingURL=676446ece9be4bb9.css.map*/

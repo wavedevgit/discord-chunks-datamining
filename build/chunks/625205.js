@@ -28,8 +28,8 @@ function E() {
     analyticsLocations: i
   } = (0, d.ZP)(), E = (0, a.e7)([h.Z], () => h.Z.theme), {
     canSetInputDevice: j,
-    canSetOutputDevice: O,
-    inputDeviceId: C,
+    canSetOutputDevice: C,
+    inputDeviceId: O,
     outputDeviceId: S
   } = (0, a.cj)([p.Z], () => ({
     canSetInputDevice: p.Z.supports(N.AN.AUDIO_INPUT_DEVICE),
@@ -43,7 +43,7 @@ function E() {
     children: b.NW.format(b.t["1iK6UV"], {
       onDownloadClick: () => (0, f.y)("Help Text Input Devices")
     })
-  })), O || (t = (0, r.jsx)(o.R94, {
+  })), C || (t = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
     children: b.NW.format(b.t.Ow0dbG, {
@@ -51,9 +51,9 @@ function E() {
     })
   }));
   let I = s()(v).values().first(),
-    y = null != I ? I.disabled : null != e,
-    A = s()(T).values().first(),
-    P = null != A ? A.disabled : null != t;
+    A = null != I ? I.disabled : null != e,
+    y = s()(T).values().first(),
+    P = null != y ? y.disabled : null != t;
 
   function R(e) {
     let t, {
@@ -87,7 +87,7 @@ function E() {
       children: (0, r.jsxs)(o.xJW, {
         title: b.NW.string(b.t.hHMYbW),
         children: [(0, r.jsx)(o.q4e, {
-          value: C,
+          value: O,
           onChange: e => c.Z.setInputDevice(e, {
             location: "Settings",
             analyticsLocations: i
@@ -102,7 +102,7 @@ function E() {
               label: n
             }
           }),
-          isDisabled: y,
+          isDisabled: A,
           renderOptionValue: D,
           renderOptionLabel: R
         }), e]

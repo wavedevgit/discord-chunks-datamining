@@ -392,7 +392,7 @@ class ev extends f.Z {
         n = await (null === (c = this._systemResources) || void 0 === c ? void 0 : c.getBatteryLevelStats()),
         i = L.Z.getSettings(),
         o = D.Z.getChannel(this.channelId),
-        a = null === (d = C.Z.getConnectionStats().find(e => e.connection.context === eo.Yn.DEFAULT)) || void 0 === d ? void 0 : null === (u = d.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === u ? void 0 : u.sampleRateMismatchPercent;
+        a = null === (d = C.Z.getFirstConnectionStatsByContext(eo.Yn.DEFAULT)) || void 0 === d ? void 0 : null === (u = d.stats.rtp.outbound.find(e => "audio" === e.type)) || void 0 === u ? void 0 : u.sampleRateMismatchPercent;
       U.default.track(ei.rMx.VOICE_DISCONNECT, ec(es(ec(es({}, this._getAnalyticsProperties()), {
         hostname: this.hostname,
         port: this.port,

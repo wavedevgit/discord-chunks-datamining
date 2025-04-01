@@ -22,19 +22,19 @@ var r = n(200651),
   _ = n(901750),
   E = n(112863),
   j = n(701157),
-  O = n(912152),
-  C = n(615603),
+  C = n(912152),
+  O = n(615603),
   S = n(474936),
   v = n(201824);
 
 function T(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, s.e7)([f.Z], () => f.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), y = N.ZP.isPremium(I, S.p9.TIER_2), A = (0, s.e7)([g.Z], () => g.Z.affinities), P = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = A.length > 0 || P.length > 0, D = T.length > 0, Z = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), w = Z.length > 0, k = T.length > Z.length, W = (0, s.e7)([m.Z], () => m.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, s.e7)([f.Z], () => f.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), A = N.ZP.isPremium(I, S.p9.TIER_2), y = (0, s.e7)([g.Z], () => g.Z.affinities), P = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = y.length > 0 || P.length > 0, D = T.length > 0, Z = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), w = Z.length > 0, k = T.length > Z.length, W = (0, s.e7)([m.Z], () => m.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: L
   } = (0, a.Z)({
     forceFetch: !0
-  }), B = (null == t ? void 0 : t.isPausedOrPausePending) === !0 && L === S.a$.NONE, M = (null == t ? void 0 : t.isPausedOrPausePending) !== !0 && L === S.a$.NONE, U = y && L === S.a$.FP_SUB_PAUSED;
+  }), B = (null == t ? void 0 : t.isPausedOrPausePending) === !0 && L === S.a$.NONE, M = (null == t ? void 0 : t.isPausedOrPausePending) !== !0 && L === S.a$.NONE, U = A && L === S.a$.FP_SUB_PAUSED;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.oQ, {
       className: v.blockedPaymentsWarning
@@ -43,7 +43,7 @@ function T(e) {
       hasAppliedGuildBoosts: w,
       hasBoostPerk: U,
       canAddBoosts: M
-    }), !(0, u.y)("guild_boosting_settings", I, L) && (0, r.jsx)(O.Z, {
+    }), !(0, u.y)("guild_boosting_settings", I, L) && (0, r.jsx)(C.Z, {
       hasAppliedGuildBoosts: w,
       hasBoostPerk: U,
       hasGuildAffinitiesOrInGuild: R,
@@ -58,7 +58,7 @@ function T(e) {
     }) : (0, r.jsx)(x.Z, {
       guildBoostSlots: n,
       premiumSubscription: t
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(O.Z, {
       guildBoostSlots: T,
       fractionalPremiumState: L
     }), (0, r.jsx)(j.Z, {

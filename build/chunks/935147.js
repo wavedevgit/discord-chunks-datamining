@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(53691),
   E = n(165583),
   j = n(267717),
-  O = n(643879),
-  C = n(350327),
+  C = n(643879),
+  O = n(350327),
   S = n(996073),
   v = n(25990),
   T = n(626135),
   I = n(74538),
-  y = n(296810),
-  A = n(433411),
+  A = n(296810),
+  y = n(433411),
   P = n(532432),
   R = n(504983),
   D = n(134795),
@@ -96,7 +96,7 @@ function V(e) {
     sourceAnalyticsLocations: en
   } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), [er, ei] = i.useState(Math.floor(Math.random() * b.J2.length)), es = e => {
     if (e) {
-      if ((0, l.I5)(q), (0, C.z5)(K), (0, C.ho)(X), null != Q) {
+      if ((0, l.I5)(q), (0, O.z5)(K), (0, O.ho)(X), null != Q) {
         let e = m.Z.getProduct(Q.skuId);
         null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, l.cV)(Q)) : null != g.Z.getPurchase(Q.skuId) && (0, l.cV)(Q)
       }
@@ -132,7 +132,7 @@ function V(e) {
       type: R.Y.PREMIUM,
       isShown: !0,
       hasBackground: !0,
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(A.Z, {
         layoutClassName: U.tryItOutLayout,
         previewTitle: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.SrA, {
@@ -163,28 +163,28 @@ function V(e) {
           }), (0, r.jsx)(w.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, O.SD)({
+            pendingAvatarSrc: (0, C.SD)({
               userId: V.id,
               image: null != q ? q : z
             }),
             pendingColors: null != K ? K : Y,
-            onThemeColorsChange: C.rf,
+            onThemeColorsChange: O.rf,
             showPremiumIcon: !1,
             preventDisabled: !0
           }), (0, r.jsx)(D.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
             showRemoveBannerButton: null != X,
-            onBannerChange: C.f4,
+            onBannerChange: O.f4,
             showPremiumIcon: !1
           }), (0, r.jsx)(P.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
-            onAvatarChange: C.c_,
+            onAvatarChange: O.c_,
             showRemoveAvatarButton: !1,
             changeAvatarButtonText: M.NW.string(M.t["7z0D1d"]),
             sectionTitle: M.NW.string(M.t.vtFfPT)
-          }), (0, r.jsx)(A.Z, {
+          }), (0, r.jsx)(y.Z, {
             isTryItOutFlow: !0,
             className: U.customizationSection,
             user: V,

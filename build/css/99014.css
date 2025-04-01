@@ -1,7 +1,62 @@
 /**
   Module ID: 99014
-  Original File Name: 427fad4a9eb96682
+  Original File Name: 7a6c544692fc92b5
 **/
+.container__6f9f7 {
+    display: flex;
+    gap: var(--spacing-8)
+}
+
+.tooltipContainer__6f9f7 {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.primaryButton__6f9f7 {
+    flex-grow: 1
+}
+
+.secondaryButton__6f9f7 {
+    min-width: 0;
+    width: auto
+}
+
+.buttonInner__6f9f7 {
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.secondaryButtonInner__6f9f7 {
+    gap: 2px
+}
+
+.buttonWrapper__6f9f7 {
+    flex-grow: 1
+}
+
+.dot__6f9f7 {
+    margin: 0 4px 0 6px
+}
+
+.boost__6f9f7 {
+    align-self: center;
+    justify-self: center
+}
+
+.container_ec8ca9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.disabled_ec8ca9 {
+    flex-direction: row-reverse;
+    gap: var(--spacing-8);
+    justify-content: end
+}
+
 .icon_f4b9b5 {
     filter: saturate(1);
     filter: saturate(var(--saturation-factor,1))
@@ -86,49 +141,6 @@
     margin-left: var(--spacing-4)
 }
 
-.container__2b26c {
-    display: flex;
-    gap: var(--spacing-8)
-}
-
-.tooltipContainer__2b26c {
-    display: flex;
-    flex-direction: column;
-    text-align: center
-}
-
-.primaryButton__2b26c {
-    flex-grow: 1
-}
-
-.secondaryButton__2b26c {
-    min-width: 0;
-    width: auto
-}
-
-.buttonInner__2b26c {
-    align-items: center;
-    justify-content: center;
-    display: flex
-}
-
-.secondaryButtonInner__2b26c {
-    gap: 2px
-}
-
-.buttonWrapper__2b26c {
-    flex-grow: 1
-}
-
-.dot__2b26c {
-    margin: 0 4px 0 6px
-}
-
-.boost__2b26c {
-    align-self: center;
-    justify-self: center
-}
-
 .close_b30d08 {
     position: absolute;
     top: var(--spacing-16);
@@ -170,4 +182,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=427fad4a9eb96682.css.map*/
+/*# sourceMappingURL=7a6c544692fc92b5.css.map*/

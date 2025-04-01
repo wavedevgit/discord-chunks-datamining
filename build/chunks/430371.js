@@ -69,8 +69,8 @@ function P(e) {
       popoutWindow: A,
       inCall: w,
       channel: R,
-      selectedParticipant: M,
-      showParticipants: k = !0,
+      selectedParticipant: k,
+      showParticipants: M = !0,
       className: L,
       paused: D,
       width: W,
@@ -83,25 +83,25 @@ function P(e) {
     V = p.default.getId(),
     [z, Y] = i.useState(null),
     [q, K] = i.useState(!0),
-    [X, J] = i.useState(!1),
-    Q = M.type === y.fO.ACTIVITY || M.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
-    $ = (0, u.Z)(Q ? M.applicationId : void 0),
-    ee = !Q && null != M.streamId,
+    [X, Q] = i.useState(!1),
+    J = k.type === y.fO.ACTIVITY || k.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
+    $ = (0, u.Z)(J ? k.applicationId : void 0),
+    ee = !J && null != k.streamId,
     et = U <= 2 * I + 144,
-    en = k && !et,
+    en = M && !et,
     er = (0, c.Z)(en),
     ei = B === v.AEg.MINIMUM || B === v.AEg.NORMAL,
-    el = !et && (!ei || Q),
+    el = !et && (!ei || J),
     eo = (0, m.Z)(el, 100),
-    ea = (null !== (t = (0, c.Z)(M.id)) && void 0 !== t ? t : M.id) !== M.id,
+    ea = (null !== (t = (0, c.Z)(k.id)) && void 0 !== t ? t : k.id) !== k.id,
     es = 0;
-  (Q || en) && (es += 72), Q && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
-  let ec = i.useMemo(() => Q && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, Q, W, U, es, $]),
+  (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
+  let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, J, W, U, es, $]),
     eu = U - 2 * es,
-    ed = Q && $ ? W : eu * ec,
+    ed = J && $ ? W : eu * ec,
     ep = Math.floor(Math.min(W, ed) / ec),
     eh = U > W / ec + 72 + I + 8;
-  n = en || Q ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
+  n = en || J ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
     let e = setTimeout(() => {
       K(!1)
     }, 250);
@@ -115,10 +115,10 @@ function P(e) {
       config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
-      onStart: () => J(!0),
+      onStart: () => Q(!0),
       onChange: () => f.S.dispatch(v.CkL.REMEASURE_TARGET),
       onRest: () => {
-        J(!1), f.S.dispatch(v.CkL.REMEASURE_TARGET)
+        Q(!1), f.S.dispatch(v.CkL.REMEASURE_TARGET)
       }
     }, "animate-always"),
     em = (0, s.q_F)({
@@ -139,7 +139,7 @@ function P(e) {
         clamp: !0
       })
     }, "animate-always"),
-    e_ = (0, s.Yzy)(M, {
+    e_ = (0, s.Yzy)(k, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, a.config.stiff), {
         clamp: !0
@@ -158,7 +158,7 @@ function P(e) {
     eC = i.useCallback(e => {
       Y(e), K(!1)
     }, []),
-    ev = en || D ? [] : (0, _.n3)(Z, M, V),
+    ev = en || D ? [] : (0, _.n3)(Z, k, V),
     {
       visibleParticipants: ey,
       participantTileWidth: ex
@@ -220,7 +220,7 @@ function P(e) {
           },
           children: (0, r.jsx)(d.Z, {
             channelId: R.id,
-            isParticipantsOpen: k,
+            isParticipantsOpen: M,
             isVertical: !0
           })
         }) : null]
@@ -238,9 +238,9 @@ function P(e) {
           onDoubleClick: S,
           participants: ey,
           participantTileWidth: ex,
-          selectedParticipantId: M.id,
+          selectedParticipantId: k.id,
           inCall: w,
-          paused: D || X || !k,
+          paused: D || X || !M,
           popoutWindow: A
         })
       })]

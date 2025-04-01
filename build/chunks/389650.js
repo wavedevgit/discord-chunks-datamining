@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(74299),
   E = n(365023),
   j = n(131951),
-  O = n(556296),
-  C = n(808506),
+  C = n(556296),
+  O = n(808506),
   S = n(63063),
   v = n(358085),
   T = n(13140),
   I = n(210887),
-  y = n(659947),
-  A = n(981631),
+  A = n(659947),
+  y = n(981631),
   P = n(420212),
   R = n(388032),
   D = n(238265),
@@ -100,7 +100,7 @@ class V extends i.PureComponent {
         color: d.Z.unsafe_rawColors.RED_400.css
       },
       children: R.NW.format(R.t.MOIaNT, {
-        keyboardNavArticle: S.Z.getArticleURL(A.BhN.KEYBOARD_NAVIGATION)
+        keyboardNavArticle: S.Z.getArticleURL(y.BhN.KEYBOARD_NAVIGATION)
       })
     }) : (0, r.jsx)(u.R94, {
       className: D.keybindMessage,
@@ -170,7 +170,7 @@ class V extends i.PureComponent {
     let {
       action: e
     } = this.props.keybind;
-    if (e === A.kg4.SWITCH_TO_VOICE_CHANNEL) return (0, r.jsx)(y.Z, {
+    if (e === y.kg4.SWITCH_TO_VOICE_CHANNEL) return (0, r.jsx)(A.Z, {
       keybind: this.props.keybind
     })
   }
@@ -209,62 +209,62 @@ class G extends i.PureComponent {
       allowSoundboard: n,
       enableClips: r
     } = this.props, i = [{
-      value: A.kg4.UNASSIGNED,
+      value: y.kg4.UNASSIGNED,
       label: R.NW.string(R.t["0Uh57+"])
     }, {
-      value: A.kg4.PUSH_TO_TALK,
+      value: y.kg4.PUSH_TO_TALK,
       label: R.NW.string(R.t.Y5lgTE)
     }, {
-      value: A.kg4.PUSH_TO_TALK_PRIORITY,
+      value: y.kg4.PUSH_TO_TALK_PRIORITY,
       label: R.NW.string(R.t.DkSwJy)
     }, {
-      value: A.kg4.PUSH_TO_MUTE,
+      value: y.kg4.PUSH_TO_MUTE,
       label: R.NW.string(R.t.hSCRqa)
     }, {
-      value: A.kg4.TOGGLE_MUTE,
+      value: y.kg4.TOGGLE_MUTE,
       label: R.NW.string(R.t.PlkYKC)
     }, {
-      value: A.kg4.TOGGLE_DEAFEN,
+      value: y.kg4.TOGGLE_DEAFEN,
       label: R.NW.string(R.t.NvGq1N)
     }, {
-      value: A.kg4.TOGGLE_VOICE_MODE,
+      value: y.kg4.TOGGLE_VOICE_MODE,
       label: R.NW.string(R.t.Wa5H9f)
     }, {
-      value: A.kg4.TOGGLE_STREAMER_MODE,
+      value: y.kg4.TOGGLE_STREAMER_MODE,
       label: R.NW.string(R.t.BK0NcX)
     }];
     return (0, E.l)() && i.push({
-      value: A.kg4.TOGGLE_CAMERA,
+      value: y.kg4.TOGGLE_CAMERA,
       label: R.NW.string(R.t.hf8JVV)
     }), e && (i.push({
-      value: A.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
+      value: y.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
       label: R.NW.string(R.t.VsAZcH)
     }), i.push({
-      value: A.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
+      value: y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
       label: R.NW.string(R.t.hurHWl)
     })), t && ((0, v.isWindows)() || j.Z.getUseSystemScreensharePicker()) && i.push({
-      value: A.kg4.TOGGLE_GO_LIVE_STREAMING,
+      value: y.kg4.TOGGLE_GO_LIVE_STREAMING,
       label: R.NW.string(R.t.ybdjJC)
     }), (0, v.isDesktop)() && (i.push({
-      value: A.kg4.NAVIGATE_BACK,
+      value: y.kg4.NAVIGATE_BACK,
       label: R.NW.string(R.t.gRSaOT)
     }, {
-      value: A.kg4.NAVIGATE_FORWARD,
+      value: y.kg4.NAVIGATE_FORWARD,
       label: R.NW.string(R.t.zOXpjY)
     }, {
-      value: A.kg4.SWITCH_TO_VOICE_CHANNEL,
+      value: y.kg4.SWITCH_TO_VOICE_CHANNEL,
       label: R.NW.string(R.t.ty7Lx8)
     }, {
-      value: A.kg4.DISCONNECT_FROM_VOICE_CHANNEL,
+      value: y.kg4.DISCONNECT_FROM_VOICE_CHANNEL,
       label: R.NW.string(R.t.CV7mT0)
     }), n && i.push({
-      value: A.kg4.SOUNDBOARD,
+      value: y.kg4.SOUNDBOARD,
       label: R.NW.string(R.t.yPH4xs)
     }, {
-      value: A.kg4.SOUNDBOARD_HOLD,
+      value: y.kg4.SOUNDBOARD_HOLD,
       label: R.NW.string(R.t["1xFbPz"])
     }), r && i.push({
-      value: A.kg4.SAVE_CLIP,
+      value: y.kg4.SAVE_CLIP,
       label: R.NW.string(R.t.U4URzM)
     })), i
   }
@@ -274,16 +274,16 @@ class G extends i.PureComponent {
       canGoLive: t,
       enableClips: n
     } = this.props, r = {
-      [A.kg4.UNASSIGNED]: R.NW.string(R.t.rvlNLi),
-      [A.kg4.PUSH_TO_MUTE]: R.NW.string(R.t.xtESio),
-      [A.kg4.PUSH_TO_TALK]: R.NW.string(R.t.wTcBS0),
-      [A.kg4.PUSH_TO_TALK_PRIORITY]: R.NW.string(R.t.FhHvWF),
-      [A.kg4.TOGGLE_MUTE]: R.NW.string(R.t.X2fbUl),
-      [A.kg4.TOGGLE_DEAFEN]: R.NW.string(R.t.MjREZW),
-      [A.kg4.TOGGLE_VOICE_MODE]: R.NW.string(R.t.snm5YW),
-      [A.kg4.TOGGLE_STREAMER_MODE]: R.NW.string(R.t.YszLLy)
+      [y.kg4.UNASSIGNED]: R.NW.string(R.t.rvlNLi),
+      [y.kg4.PUSH_TO_MUTE]: R.NW.string(R.t.xtESio),
+      [y.kg4.PUSH_TO_TALK]: R.NW.string(R.t.wTcBS0),
+      [y.kg4.PUSH_TO_TALK_PRIORITY]: R.NW.string(R.t.FhHvWF),
+      [y.kg4.TOGGLE_MUTE]: R.NW.string(R.t.X2fbUl),
+      [y.kg4.TOGGLE_DEAFEN]: R.NW.string(R.t.MjREZW),
+      [y.kg4.TOGGLE_VOICE_MODE]: R.NW.string(R.t.snm5YW),
+      [y.kg4.TOGGLE_STREAMER_MODE]: R.NW.string(R.t.YszLLy)
     };
-    return (0, E.l)() && (r[A.kg4.TOGGLE_CAMERA] = R.NW.string(R.t.v1JBtL)), e && (r[A.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = R.NW.string(R.t.IoP5vb)), t && (0, v.isWindows)() && (r[A.kg4.TOGGLE_GO_LIVE_STREAMING] = R.NW.string(R.t.s4C239)), (0, v.isDesktop)() && (r[A.kg4.NAVIGATE_BACK] = R.NW.string(R.t.nKDlEh), r[A.kg4.NAVIGATE_FORWARD] = R.NW.string(R.t.DK0FFh), r[A.kg4.SOUNDBOARD] = (0, v.isWindows)() ? R.NW.string(R.t["5wJefH"]) : R.NW.string(R.t.gzjsSE), r[A.kg4.SOUNDBOARD_HOLD] = (0, v.isWindows)() ? R.NW.string(R.t.RRkZc3) : R.NW.string(R.t.laNlTk), n && (r[A.kg4.SAVE_CLIP] = R.NW.string(R.t.z3Wbam))), r
+    return (0, E.l)() && (r[y.kg4.TOGGLE_CAMERA] = R.NW.string(R.t.v1JBtL)), e && (r[y.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = R.NW.string(R.t.IoP5vb)), t && (0, v.isWindows)() && (r[y.kg4.TOGGLE_GO_LIVE_STREAMING] = R.NW.string(R.t.s4C239)), (0, v.isDesktop)() && (r[y.kg4.NAVIGATE_BACK] = R.NW.string(R.t.nKDlEh), r[y.kg4.NAVIGATE_FORWARD] = R.NW.string(R.t.DK0FFh), r[y.kg4.SOUNDBOARD] = (0, v.isWindows)() ? R.NW.string(R.t["5wJefH"]) : R.NW.string(R.t.gzjsSE), r[y.kg4.SOUNDBOARD_HOLD] = (0, v.isWindows)() ? R.NW.string(R.t.RRkZc3) : R.NW.string(R.t.laNlTk), n && (r[y.kg4.SAVE_CLIP] = R.NW.string(R.t.z3Wbam))), r
   }
   renderKeybinds(e) {
     return e.map(e => (0, r.jsx)("div", {
@@ -308,7 +308,7 @@ class G extends i.PureComponent {
   }
   render() {
     let e = this.props.enableClips,
-      t = o()(this.props.keybinds).reject(e => e.managed && ![A.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, A.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === A.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === A.kg4.SOUNDBOARD || e.action === A.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value();
+      t = o()(this.props.keybinds).reject(e => e.managed && ![y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, y.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === y.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === y.kg4.SOUNDBOARD || e.action === y.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value();
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hjN, {
         tag: u.RB0.H1,
@@ -340,7 +340,7 @@ class G extends i.PureComponent {
           textVariant: "text-lg/medium",
           className: D.browserNotice,
           children: R.NW.format(R.t.mPi3Fx, {
-            downloadLink: A.EYA.DOWNLOAD
+            downloadLink: y.EYA.DOWNLOAD
           })
         })
       }), (0, r.jsx)(u.$i$, {}), (0, r.jsxs)(u.hjN, {
@@ -407,9 +407,9 @@ class G extends i.PureComponent {
 }
 
 function F() {
-  let e = (0, c.e7)([O.ZP], () => O.ZP.getState()),
+  let e = (0, c.e7)([C.ZP], () => C.ZP.getState()),
     t = (0, c.e7)([j.Z], () => (0, _.Z)(j.Z)),
-    n = (0, c.e7)([C.default], () => C.default.isSupported()),
+    n = (0, c.e7)([O.default], () => O.default.isSupported()),
     i = (0, b.Go)();
   return (0, r.jsx)(G, {
     keybinds: e,

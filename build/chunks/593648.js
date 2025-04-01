@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(476756),
   E = n(734934),
   j = n(223683),
-  O = n(312400),
-  C = n(115345),
+  C = n(312400),
+  O = n(115345),
   S = n(392888),
   v = n(106371),
   T = n(995774),
   I = n(921801),
-  y = n(460181),
-  A = n(292959),
+  A = n(460181),
+  y = n(292959),
   P = n(9156),
   R = n(912101),
   D = n(358085),
@@ -120,7 +120,7 @@ function K(e) {
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: s
   } = e, l = i.useRef(), o = (0, E.p)(), c = i.useCallback((e, t) => {
-    t.stopPropagation(), t.preventDefault(), null != l.current && l.current.stop(), l.current = (0, y.GN)(e)
+    t.stopPropagation(), t.preventDefault(), null != l.current && l.current.stop(), l.current = (0, A.GN)(e)
   }, []), d = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
     n || r.push(e), g.default.setDisabledSounds(r)
@@ -471,14 +471,14 @@ function Q() {
 }
 
 function $() {
-  let e = O.xT.useExperiment({
+  let e = C.xT.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
     }).enabled,
     {
       manuallyOpen: t
-    } = O.fs.useExperiment({
+    } = C.fs.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
@@ -552,14 +552,14 @@ function $() {
 async function ee(e) {
   e(!0);
   let t = await (0, j.Tn)();
-  0 === t.length ? await (0, C.oL)() : m.Z.show({
+  0 === t.length ? await (0, O.oL)() : m.Z.show({
     title: U.NW.string(U.t["cY+Ooa"]),
     body: U.NW.format(U.t["7zTJJS"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
     cancelText: U.NW.string(U.t["ETE/oK"]),
     confirmText: U.NW.string(U.t.Rm96T0),
-    onConfirm: C.oL
+    onConfirm: O.oL
   }), e(!1)
 }
 
@@ -571,14 +571,14 @@ function et(e) {
 }
 
 function en() {
-  let e = (0, c.cj)([A.Z], () => ({
-    disableUnreadBadge: A.Z.getDisableUnreadBadge(),
-    taskbarFlash: A.Z.taskbarFlash,
-    disabledSounds: A.Z.getDisabledSounds(),
-    disableAllSounds: A.Z.getDisableAllSounds(),
-    desktopType: A.Z.getDesktopType(),
-    ttsType: A.Z.getTTSType(),
-    notifyMessagesInSelectedChannel: A.Z.getNotifyMessagesInSelectedChannel()
+  let e = (0, c.cj)([y.Z], () => ({
+    disableUnreadBadge: y.Z.getDisableUnreadBadge(),
+    taskbarFlash: y.Z.taskbarFlash,
+    disabledSounds: y.Z.getDisabledSounds(),
+    disableAllSounds: y.Z.getDisableAllSounds(),
+    desktopType: y.Z.getDesktopType(),
+    ttsType: y.Z.getTTSType(),
+    notifyMessagesInSelectedChannel: y.Z.getNotifyMessagesInSelectedChannel()
   }));
   return (0, r.jsx)(et, z(H({}, e), {
     afkTimeout: w.CM.useSetting()

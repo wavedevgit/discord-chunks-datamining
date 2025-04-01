@@ -23,22 +23,22 @@ var i = n(512722),
   _ = n(134795),
   E = n(610966),
   j = n(513901),
-  O = n(451392),
-  C = n(906364),
+  C = n(451392),
+  O = n(906364),
   S = n(643879),
   v = n(350327),
   T = n(621853),
   I = n(687158),
-  y = n(25990),
-  A = n(594174),
+  A = n(25990),
+  y = n(594174),
   P = n(74538),
   R = n(388032),
   D = n(926308);
 
 function Z() {
   var e, t, n, i, Z, w, k, W;
-  let L = (0, a.e7)([A.default], () => {
-      let e = A.default.getCurrentUser();
+  let L = (0, a.e7)([y.default], () => {
+      let e = y.default.getCurrentUser();
       return s()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
     }),
     B = (0, a.e7)([T.Z], () => T.Z.getUserProfile(L.id)),
@@ -51,10 +51,10 @@ function Z() {
       pendingAccentColor: H,
       pendingThemeColors: z,
       errors: Y
-    } = (0, a.cj)([y.Z], () => {
+    } = (0, a.cj)([A.Z], () => {
       var e, t;
-      let n = y.Z.getAllPending(),
-        r = y.Z.getErrors();
+      let n = A.Z.getAllPending(),
+        r = A.Z.getErrors();
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -115,7 +115,7 @@ function Z() {
       currentGlobalName: L.globalName,
       pendingGlobalName: U,
       onGlobalNameChange: l.W0
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(O.Z, {
       sectionTitle: R.NW.string(R.t["+T3RIy"]),
       errors: Y.pronouns,
       onPronounsChange: v.ID,
@@ -141,7 +141,7 @@ function Z() {
         errors: Y.banner,
         onBannerChange: v.g_,
         forcedDivider: !0
-      }, "banner"), (0, r.jsx)(O.Z, {
+      }, "banner"), (0, r.jsx)(C.Z, {
         user: L,
         pendingAvatarSrc: K,
         pendingColors: z,

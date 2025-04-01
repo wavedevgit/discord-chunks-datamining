@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(75077),
   E = n(981631),
   j = n(388032),
-  O = n(26526),
-  C = n(865215);
+  C = n(26526),
+  O = n(865215);
 let S = e => {
   let t, n, {
       isAllPerksVisible: s,
@@ -32,8 +32,8 @@ let S = e => {
       isFullScreen: T
     } = e,
     I = i.useRef(null),
-    y = i.useRef(null),
-    A = Object.entries((0, b.Z)()).reduce((e, t) => {
+    A = i.useRef(null),
+    y = Object.entries((0, b.Z)()).reduce((e, t) => {
       let [n, r] = t;
       return !1 !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
@@ -48,17 +48,17 @@ let S = e => {
     } = (0, g.Z)(),
     W = (0, h.W)();
   return w ? (t = j.NW.string(j.t["+vt7w8"]), n = j.NW.string(j.t.LgHbnJ)) : (t = j.NW.string(j.t.LgHbnJ), n = j.NW.string(j.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
-    className: a()(O.allPerksScroller, {
-      [O.open]: s,
-      [O.openCloseReduceMotion]: Z
+    className: a()(C.allPerksScroller, {
+      [C.open]: s,
+      [C.openCloseReduceMotion]: Z
     }),
     ref: I,
     children: (0, r.jsx)("div", {
-      className: O.container,
+      className: C.container,
       children: (0, r.jsxs)(m.Gt, {
         value: P,
         children: [(0, r.jsx)(f.Z, {
-          className: O.heroHeading,
+          className: C.heroHeading,
           onBackClick: () => {
             S(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
               current_component: x.MQ.SEE_ALL,
@@ -67,16 +67,16 @@ let S = e => {
             })
           }
         }), (0, r.jsxs)("div", {
-          className: O.column,
+          className: C.column,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: O.heading,
+            className: C.heading,
             children: t
           }), (0, r.jsx)(N.Z, {
-            className: O.cardCarousel,
+            className: C.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: A,
+              perksCards: y,
               variant: x.R0.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: w,
               isFullScreen: T,
@@ -87,12 +87,12 @@ let S = e => {
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: O.heading,
+            className: C.heading,
             children: n
           }), (0, r.jsx)(N.Z, {
-            className: O.cardCarousel,
+            className: C.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: A,
+              perksCards: y,
               variant: x.R0.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: w,
               isFullScreen: T,
@@ -103,12 +103,12 @@ let S = e => {
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: O.heading,
+            className: C.heading,
             children: j.NW.string(j.t.LTaxu7)
           }), (0, r.jsx)(N.Z, {
-            className: O.cardCarousel,
+            className: C.cardCarousel,
             cards: (0, _.sP)({
-              perksCards: A,
+              perksCards: y,
               variant: x.R0.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: w,
               isFullScreen: T,
@@ -118,21 +118,21 @@ let S = e => {
             cardType: x.R0.CARD_CAROUSEL_THIRD_ROW
           })]
         }), (0, r.jsx)("div", {
-          className: O.footerSpacing
+          className: C.footerSpacing
         }), (0, r.jsx)(o.$, {
-          innerRef: y,
+          innerRef: A,
           onChange: e => {
             e && !R && (p.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: P
             }), D(!0))
           },
           children: (0, r.jsx)("div", {
-            ref: y,
-            className: O.bottomOfPageVisibilitySensor
+            ref: A,
+            className: C.bottomOfPageVisibilitySensor
           })
         }), (0, r.jsx)("img", {
-          src: C,
-          className: O.bottomIllustration,
+          src: O,
+          className: C.bottomIllustration,
           width: 112,
           height: 85,
           alt: j.NW.string(j.t.X4IxWF)

@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => y
+  Z: () => A
 }), n(653041);
 var r = n(200651);
 n(192379);
@@ -23,8 +23,8 @@ var i = n(120356),
   _ = n(981631),
   E = n(388032),
   j = n(685786);
-let O = n(775322),
-  C = n(853453),
+let C = n(775322),
+  O = n(853453),
   S = (0, u.hQ)(),
   v = {
     page: _.ZY5.USER_SETTINGS,
@@ -89,7 +89,7 @@ function I(e) {
       className: j.marginBottom8,
       type: o.Dd5.PRIMARY,
       imageData: {
-        src: (0, l.ap)(n) ? O : C,
+        src: (0, l.ap)(n) ? C : O,
         width: 70,
         height: 40
       },
@@ -103,7 +103,7 @@ function I(e) {
   })
 }
 
-function y(e) {
+function A(e) {
   let {
     refreshStyles: t = !1
   } = e, {
@@ -123,13 +123,13 @@ function y(e) {
   })), {
     hasEchoCancellation: f,
     hasNoiseSuppression: N,
-    hasAutomaticGainControl: O
+    hasAutomaticGainControl: C
   } = (0, a.cj)([g.Z], () => ({
     hasEchoCancellation: g.Z.hasEchoCancellation(i),
     hasNoiseSuppression: g.Z.hasNoiseSuppression(i),
     hasAutomaticGainControl: g.Z.hasAutomaticGainControl(i)
-  }), [i]), C = n === _.pM4.VOICE_ACTIVITY && u, S = (0, r.jsxs)(b.Z, {
-    children: [(f || N || O) && (0, r.jsx)(o.R94, {
+  }), [i]), O = n === _.pM4.VOICE_ACTIVITY && u, S = (0, r.jsxs)(b.Z, {
+    children: [(f || N || C) && (0, r.jsx)(o.R94, {
       className: t ? void 0 : j.marginBottom20,
       type: o.R94.Types.DESCRIPTION,
       children: E.NW.string(E.t["/Whuzs"])
@@ -159,7 +159,7 @@ function y(e) {
           vadUseKrisp: e
         }),
         note: E.NW.string(E.t.LoOB1N),
-        disabled: !C,
+        disabled: !O,
         hideBorder: t,
         children: E.NW.string(E.t.BbESsr)
       })
@@ -172,7 +172,7 @@ function y(e) {
           section: _.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
         note: E.NW.string(E.t["6EjbvL"]),
-        disabled: O,
+        disabled: C,
         hideBorder: t,
         children: E.NW.string(E.t.cUMdHx)
       })

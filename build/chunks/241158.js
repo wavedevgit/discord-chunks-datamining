@@ -47,10 +47,10 @@ let _ = e => {
       videoUrl: _,
       shouldLoadVideo: E,
       index: j,
-      isCompact: O,
-      isReducedMotion: C,
+      isCompact: C,
+      isReducedMotion: O,
       onClick: S
-    } = e, v = (0, g.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
+    } = e, v = (0, g.rO)(), T = i.useRef(null), I = i.useRef(0), A = function(e) {
       let t;
       switch (e) {
         case p.dm.EMOJIS:
@@ -75,25 +75,25 @@ let _ = e => {
           t = b.yourStyleBackground
       }
       return t
-    }(t), A = (0, d.ZP)(), P = (0, o.wj)(A), R = P ? c.Ttl.WHITE : c.Ttl.BRAND, D = (0, l.debounce)(() => {
+    }(t), y = (0, d.ZP)(), P = (0, o.wj)(y), R = P ? c.Ttl.WHITE : c.Ttl.BRAND, D = (0, l.debounce)(() => {
       m.default.track(h.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
         box_type: (0, l.snakeCase)(t)
       })
     }, 800), Z = () => {
-      null == T.current || C || (T.current.currentTime = I.current, T.current.play())
+      null == T.current || O || (T.current.currentTime = I.current, T.current.play())
     }, w = () => {
-      null == T.current || C || (I.current = T.current.currentTime, T.current.pause())
+      null == T.current || O || (I.current = T.current.currentTime, T.current.pause())
     }, k = () => (0, r.jsxs)("div", {
       className: a()({
-        [b.whatsNewTextBoxOuter]: !O,
-        [b.compactTextBox]: O
+        [b.whatsNewTextBoxOuter]: !C,
+        [b.compactTextBox]: C
       }),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/extrabold",
         color: "header-primary",
         className: a()({
-          [b.whatsNewBoxHeader]: !O,
-          [b.compactBoxHeader]: O
+          [b.whatsNewBoxHeader]: !C,
+          [b.compactBoxHeader]: C
         }),
         children: n
       }), (0, r.jsx)(c.Text, {
@@ -116,8 +116,8 @@ let _ = e => {
       } = e;
       return (0, r.jsx)("div", {
         className: a()({
-          [b.whatsNewArtContainer]: !O,
-          [b.compactBoxArtContainer]: O
+          [b.whatsNewArtContainer]: !C,
+          [b.compactBoxArtContainer]: C
         }),
         children: (0, r.jsx)(u.Z, {
           playsInline: !0,
@@ -126,9 +126,9 @@ let _ = e => {
           poster: x,
           loop: !0,
           className: a()({
-            [b.perkBoxVideo]: !O,
-            [b.leftSideArt]: t && !O,
-            [b.compactBoxVideo]: O
+            [b.perkBoxVideo]: !C,
+            [b.leftSideArt]: t && !C,
+            [b.compactBoxVideo]: C
           }),
           ref: T,
           children: (0, r.jsx)("source", {
@@ -139,9 +139,9 @@ let _ = e => {
       })
     }, L = j % 2 == 0;
     return (0, r.jsx)("div", {
-      className: a()(y, {
-        [b.whatsNewBoxContainer]: !O,
-        [b.compactBoxContainer]: O
+      className: a()(A, {
+        [b.whatsNewBoxContainer]: !C,
+        [b.compactBoxContainer]: C
       }),
       onMouseEnter: Z,
       onFocus: Z,

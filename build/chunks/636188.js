@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(647177),
   E = n(63985),
   j = n(678916),
-  O = n(981631),
-  C = n(190378),
+  C = n(981631),
+  O = n(190378),
   S = n(486324),
   v = n(474936),
   T = n(388032),
   I = n(446202);
 
-function y(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function y(e) {
   return e
 }
 
-function A(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -158,7 +158,7 @@ function D(e) {
     }
     return i
   }(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
-  let C = (0, d.O)(),
+  let O = (0, d.O)(),
     {
       analyticsLocations: S
     } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_IMAGE_OPTION),
@@ -176,13 +176,13 @@ function D(e) {
     });
 
   function Z() {
-    null != E && P && (h.Kw(E), N.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+    null != E && P && (h.Kw(E), N.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
       type: v.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
-      location: C.location,
+      location: O.location,
       location_stack: S
     }))
   }
-  return (0, r.jsxs)(o.P3F, A(y({}, j), {
+  return (0, r.jsxs)(o.P3F, y(A({}, j), {
     className: a()(I.backgroundOption, {
       [I.backgroundOptionSelected]: s
     }),
@@ -191,7 +191,7 @@ function D(e) {
       let {
         default: e
       } = await n.e("99414").then(n.bind(n, 187658));
-      return n => (0, r.jsx)(e, A(y({}, n), {
+      return n => (0, r.jsx)(e, y(A({}, n), {
         backgroundOption: t,
         optionIsInUse: s
       }))
@@ -235,10 +235,10 @@ function w(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = !1
-  } = e, s = (0, l.e7)([f.Z], () => f.Z.hasHotspot(C.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, s = (0, l.e7)([f.Z], () => f.Z.hasHotspot(O.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
   function a() {
-    h.Kw(C.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
+    h.Kw(O.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
   let c = s ? T.NW.string(T.t["5TUJOj"]) : n;
   return (0, r.jsxs)(o.DY3, {
@@ -281,7 +281,7 @@ function k(e) {
     analyticsLocations: i
   } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, u.ZP)(() => {
-    N.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+    N.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
       type: v.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
@@ -309,7 +309,7 @@ function W(e) {
         let {
           default: e
         } = await Promise.all([n.e("91689"), n.e("55849"), n.e("15536")]).then(n.bind(n, 192277));
-        return n => (0, r.jsx)(e, y({
+        return n => (0, r.jsx)(e, A({
           maxFileSizeBytes: j.SJ,
           onComplete: e => {
             let {
@@ -379,7 +379,7 @@ function L(e) {
             assetHash: e.asset,
             size: 720
           });
-          return null == n ? null : (0, i.createElement)(D, A(y({}, t), {
+          return null == n ? null : (0, i.createElement)(D, y(A({}, t), {
             key: e.id,
             option: e,
             source: n,
@@ -394,7 +394,7 @@ function L(e) {
         return (0, r.jsx)(o.ua7, {
           text: e.name,
           "aria-label": e.name,
-          children: n => (0, i.createElement)(D, A(y({}, n), {
+          children: n => (0, i.createElement)(D, y(A({}, n), {
             key: e.id,
             option: e.id,
             source: e.source,

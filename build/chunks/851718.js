@@ -95,8 +95,8 @@ function p(e) {
       });
     case c.j.SWITCH_APP_PLANS:
       let {
-        route: O
-      } = p, C = function(e, t) {
+        route: C
+      } = p, O = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -111,7 +111,7 @@ function p(e) {
         }
         return i
       }(p, ["route"]);
-      return (0, r.jsx)(d.Z, g(m({}, C), {
+      return (0, r.jsx)(d.Z, g(m({}, O), {
         navigateToHome: N
       }));
     default:

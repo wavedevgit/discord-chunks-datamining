@@ -11,11 +11,12 @@ var r = n(200651),
 function s(e) {
   let {
     channel: t,
-    content: n,
-    subtitle: s,
-    compact: c,
-    action: u
-  } = e;
+    message: n,
+    content: s,
+    subtitle: c,
+    compact: u,
+    action: d
+  } = e, p = n.reactions.length > 0;
   return (0, r.jsxs)(o.Z, {
     iconNode: t.isGroupDM() ? (0, r.jsx)(i.Dkj, {
       size: "md",
@@ -25,19 +26,20 @@ function s(e) {
       color: "var(--premium-tier-2-purple-for-gradients-2)"
     }),
     iconContainerClassName: l.iconContainer,
-    compact: c,
+    compact: u,
     contentClassName: l.content,
+    className: p ? l.withReactions : l.noReactions,
     children: [(0, r.jsxs)("div", {
       className: l.textContainer,
       children: [(0, r.jsx)(a.xv, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: n
-      }), null != s && (0, r.jsx)(a.xv, {
+        children: s
+      }), null != c && (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: s
+        children: c
       })]
-    }), u]
+    }), d]
   })
 }

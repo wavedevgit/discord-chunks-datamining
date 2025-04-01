@@ -31,14 +31,14 @@ function x() {
     _ = p.R$.useSetting(),
     E = p.cC.useSetting(),
     j = p.vF.useSetting(),
-    O = p.H1.useSetting(),
-    C = p.ev.useSetting(),
+    C = p.H1.useSetting(),
+    O = p.ev.useSetting(),
     S = p.x4.useSetting(),
     v = p.RS.useSetting(),
     T = p.NA.useSetting(),
     I = p.nc.useSetting(),
     {
-      analyticsLocations: y
+      analyticsLocations: A
     } = (0, o.ZP)(l.Z.TEXT_AND_IMAGES);
   return (0, r.jsxs)(a.hjN, {
     tag: a.RB0.H1,
@@ -71,7 +71,7 @@ function x() {
         setting: h.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
         children: (0, r.jsx)(a.j7V, {
           className: s()(b.marginTop8, b.marginBottom40),
-          value: O,
+          value: C,
           note: N.NW.string(N.t.T0rbtL),
           onChange: p.H1.updateSetting,
           children: N.NW.string(N.t["w8j+yc"])
@@ -108,7 +108,7 @@ function x() {
         setting: h.s6.CHAT_EMOJI_EMOTICONS,
         children: (0, r.jsx)(a.j7V, {
           className: b.marginBottom40,
-          value: C,
+          value: O,
           note: d.Z.parse(N.NW.string(N.t["20dvub"])),
           onChange: p.ev.updateSetting,
           children: N.NW.string(N.t["79qal5"])
@@ -133,7 +133,7 @@ function x() {
                 location: {
                   section: f.jXE.SETTINGS_TEXT_AND_IMAGES
                 },
-                location_stack: y
+                location_stack: A
               }), (0, c.AW)(!e)
             },
             children: N.NW.string(N.t["479+PT"])
@@ -150,7 +150,7 @@ function x() {
                 location: {
                   section: f.jXE.SETTINGS_TEXT_AND_IMAGES
                 },
-                location_stack: y
+                location_stack: A
               }), p.fq.updateSetting(e)
             },
             children: N.NW.string(N.t["29xPVV"])

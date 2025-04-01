@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(474936),
   w = n(526761),
   R = n(388032),
-  M = n(230127);
-let k = T.Hz.CHAT,
+  k = n(230127);
+let M = T.Hz.CHAT,
   L = {
     section: S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
@@ -51,7 +51,7 @@ function W(e) {
   } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = v.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([x.Z], () => x.Z.getState().animationType), F = i.useRef(!1), H = (0, f.wC)(n.guild_id), G = (0, l.uniqBy)([...H, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
-    intention: k
+    intention: M
   })).slice(0, Z.e5), V = (null !== (t = j.Z.recentlyUsedEmojis) && void 0 !== t ? t : []).filter(e => !G.slice(0, Z.e5 - 1).some(t => t.name === e.name));
   V.length > 0 && G.splice(G.length - 1, 1, V[0]);
   let z = (0, O.Iu)(B),
@@ -80,23 +80,23 @@ function W(e) {
     K = e => {
       F.current = e, e && p.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_EXPANDED, {
         channel_id: X,
-        guild_id: J
+        guild_id: Q
       })
     },
     {
       id: X,
-      guild_id: J
+      guild_id: Q
     } = n;
   i.useEffect(() => {
     p.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_EFFECT_BAR_VIEWED, {
       channel_id: X,
-      guild_id: J
+      guild_id: Q
     })
-  }, [X, J]);
-  let Q = T ? [a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
+  }, [X, Q]);
+  let J = T ? [a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
     $ = B === P.q.PREMIUM;
   return (0, r.jsx)(h.ZP, {
-    contentTypes: Q,
+    contentTypes: J,
     children: e => {
       let {
         visibleContent: t,
@@ -109,7 +109,7 @@ function W(e) {
         renderPopout: () => (0, r.jsx)("div", {
           onMouseEnter: C,
           children: (0, r.jsx)(g.ZP, {
-            className: M.reducedMotionTooltip,
+            className: k.reducedMotionTooltip,
             header: R.NW.string(R.t["6gGHnZ"]),
             content: R.NW.string(R.t.S2RGUF),
             onClick: () => {
@@ -139,7 +139,7 @@ function W(e) {
               onChange: () => {
                 if (U) return p.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_EFFECT_FANCY_ANIMATION_TOGGLED, {
                   channel_id: X,
-                  guild_id: J,
+                  guild_id: Q,
                   enabled: !$
                 }), c.Z.dispatch({
                   type: "VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE"

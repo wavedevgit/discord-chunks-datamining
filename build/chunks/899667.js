@@ -1,12 +1,12 @@
-/** Chunk was on 80784 **/
+/** Chunk was on 40245 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
 var l, o, r, i = n(442837),
   a = n(570140);
 let c = {},
-  _ = null,
-  d = [],
+  d = null,
+  _ = [],
   s = !1,
   u = !1,
   p = null,
@@ -23,10 +23,10 @@ class C extends(l = i.ZP.Store) {
     return null != c[e] ? c[e].lastFetchedAt : null
   }
   getCurrentUserAppliedBoosts() {
-    return d
+    return _
   }
   getAppliedGuildBoost(e) {
-    return d.find(t => t.id === e)
+    return _.find(t => t.id === e)
   }
   get isModifyingAppliedBoost() {
     return u
@@ -38,7 +38,7 @@ class C extends(l = i.ZP.Store) {
     return S
   }
   get cooldownEndsAt() {
-    return _
+    return d
   }
   get isFetchingCurrentUserAppliedBoosts() {
     return s
@@ -65,13 +65,13 @@ let m = new C(a.Z, {
     let {
       appliedGuildBoosts: t
     } = e;
-    s = !1, d = t
+    s = !1, _ = t
   },
   APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: function(e) {
     let {
       endsAt: t
     } = e;
-    _ = t
+    d = t
   },
   GUILD_UNAPPLY_BOOST_START: f,
   GUILD_APPLY_BOOST_START: f,
@@ -79,7 +79,7 @@ let m = new C(a.Z, {
     let {
       appliedGuildBoost: t
     } = e, n = new Set(t.map(e => e.id));
-    d = [...t, ...d.filter(e => !n.has(e.id))], p = null, u = !1
+    _ = [...t, ..._.filter(e => !n.has(e.id))], p = null, u = !1
   },
   GUILD_APPLY_BOOST_FAIL: function(e) {
     let {
@@ -91,7 +91,7 @@ let m = new C(a.Z, {
     let {
       boostId: t
     } = e;
-    d = d.filter(e => e.id !== t), u = !1
+    _ = _.filter(e => e.id !== t), u = !1
   },
   GUILD_UNAPPLY_BOOST_FAIL: function(e) {
     let {

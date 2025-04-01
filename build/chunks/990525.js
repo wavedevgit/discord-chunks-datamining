@@ -1,4 +1,4 @@
-/** Chunk was on 9857 **/
+/** Chunk was on 69787 **/
 n.d(t, {
   J: () => y
 }), n(47120);
@@ -44,25 +44,25 @@ let y = e => {
     analyticsContext: a
   } = e, {
     activeVoice: y,
-    mostRecentlyRequestedVoiceId: C
-  } = (0, p.o)(), x = (0, f.z)(t.id), j = t.id === y, I = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !j, O = !j && t.id === C, [E, P] = i.useState(!1);
+    mostRecentlyRequestedVoiceId: x
+  } = (0, p.o)(), j = (0, f.z)(t.id), C = t.id === y, I = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !C, O = !C && t.id === x, [E, P] = i.useState(!1);
   i.useEffect(() => {
     let e = O ? setTimeout(() => P(O), 200) : void 0;
     return () => {
       clearTimeout(e), P(!1)
     }
   }, [O]);
-  let S = null == x ? void 0 : x.previewSoundURLs,
+  let S = null == j ? void 0 : j.previewSoundURLs,
     [w, T] = i.useState(0),
     {
       isPlaying: L,
       playSound: k,
       stopSound: Z,
-      preloadSound: A
+      preloadSound: D
     } = (0, d.Z)(null != S ? S[w] : null, {
       soundId: t.id
     }),
-    D = h[t.styleKey],
+    A = h[t.styleKey],
     W = i.useCallback(() => {
       n || !I ? ((0, _.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, b({
         voice_filter_id: t.id
@@ -75,16 +75,16 @@ let y = e => {
         volume: .5
       }), (.25 > Math.random() || w > 0) && null != S && T(e => (e + 1) % S.length)
     }, [a, k, w, S, t.id]),
-    F = null != x ? v.NW.string(x.name) : "";
+    F = null != j ? v.NW.string(j.name) : "";
   return (0, r.jsxs)("div", {
-    className: o()(h.filter, D, {
-      [h.selected]: j,
-      [h.locked]: I && !j
+    className: o()(h.filter, A, {
+      [h.selected]: C,
+      [h.locked]: I && !C
     }),
     children: [(0, r.jsxs)(s.P3F, {
       className: h.selector,
       onClick: W,
-      onMouseEnter: A,
+      onMouseEnter: D,
       children: [(0, r.jsxs)("div", {
         className: h.iconTreatmentsWrapper,
         children: [(0, r.jsxs)("div", {
@@ -94,12 +94,12 @@ let y = e => {
           children: [(0, r.jsx)("img", {
             className: h.thumbnail,
             alt: "",
-            src: null == x ? void 0 : x.iconURL,
+            src: null == j ? void 0 : j.iconURL,
             draggable: !1
           }), (0, r.jsx)("div", {
             className: h.insetBorder
           })]
-        }), j && (0, r.jsx)("div", {
+        }), C && (0, r.jsx)("div", {
           className: h.iconCircle,
           children: (0, r.jsx)(s.owK, {
             size: "md",
@@ -107,7 +107,7 @@ let y = e => {
             colorClass: h.checkmark,
             secondaryColor: l.Z.unsafe_rawColors.WHITE_500.css
           })
-        }), I && !j && (0, r.jsx)("div", {
+        }), I && !C && (0, r.jsx)("div", {
           className: o()([h.iconCircle, h.lockedCircle]),
           children: (0, r.jsx)(s.mBM, {
             size: "custom",

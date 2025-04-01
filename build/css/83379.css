@@ -1,6 +1,6 @@
 /**
   Module ID: 83379
-  Original File Name: 5513aa94d6c23b6b
+  Original File Name: 88bad9bd8d82487f
 **/
 .descriptionText__535f5 {
     margin-top: 4px;
@@ -8217,17 +8217,25 @@ html .progress__61462 {
 }
 
 .iconContainer__4bcae {
+    padding-top: 0
+}
+
+.content__4bcae,.iconContainer__4bcae {
     display: flex;
     align-self: center
 }
 
 .content__4bcae {
-    display: flex;
     flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: var(--spacing-12);
-    padding-bottom: var(--spacing-12)
+    justify-content: space-between
+}
+
+.noReactions__4bcae {
+    min-height: var(--spacing-64)
+}
+
+.withReactions__4bcae {
+    margin-top: var(--spacing-12)
 }
 
 .textContainer__4bcae {
@@ -12246,4 +12254,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=5513aa94d6c23b6b.css.map*/
+/*# sourceMappingURL=88bad9bd8d82487f.css.map*/

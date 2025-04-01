@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(615287),
   E = n(386506),
   j = n(865427),
-  O = n(802098),
-  C = n(663993),
+  C = n(802098),
+  O = n(663993),
   S = n(600164),
   v = n(118012),
   T = n(482215),
   I = n(38618),
-  y = n(32300),
-  A = n(371651),
+  A = n(32300),
+  y = n(371651),
   P = n(398269),
   R = n(921801),
   D = n(857192),
@@ -574,7 +574,7 @@ class en extends i.Component {
   renderPayloadBlock() {
     let e = JSON.stringify(this.generatePayload(), null, 2),
       t = () => e,
-      i = (0, r.jsx)(C.GI, {
+      i = (0, r.jsx)(O.GI, {
         createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
         webpackId: 364964,
         renderFallback: t,
@@ -866,8 +866,8 @@ function ei() {
 }
 
 function es() {
-  let e = (0, y.XE)("developer_settings"),
-    t = (0, d.e7)([A.default], () => A.default.getForcedRenderMode()),
+  let e = (0, A.XE)("developer_settings"),
+    t = (0, d.e7)([y.default], () => y.default.getForcedRenderMode()),
     [n, s] = i.useState(!1),
     [a, l] = i.useState(""),
     o = e || t === _.R5.OUT_OF_PROCESS_V2 || t === _.R5.OUT_OF_PROCESS_V3 || t === _.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
@@ -1173,8 +1173,8 @@ function el() {
 
 function eo() {
   var e;
-  let t = (0, d.e7)([O.Z], () => O.Z.overrideId()),
-    [n, s] = i.useState(null !== (e = O.Z.overrideId()) && void 0 !== e ? e : "");
+  let t = (0, d.e7)([C.Z], () => C.Z.overrideId()),
+    [n, s] = i.useState(null !== (e = C.Z.overrideId()) && void 0 !== e ? e : "");
   return (0, r.jsx)(R.F, {
     setting: U.s6.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE,
     children: (0, r.jsx)(g.hjN, {

@@ -35,8 +35,8 @@ var r = n(200651),
   A = n(881454),
   w = n(435921),
   R = n(538548),
-  M = n(753033),
-  k = n(15717);
+  k = n(753033),
+  M = n(15717);
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -127,7 +127,7 @@ function U(e) {
     handleMessage: q,
     handlePersonalize: K,
     handleDownload: X,
-    handleAddApplication: J
+    handleAddApplication: Q
   } = function(e) {
     let t = i.useCallback(() => {
         h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
@@ -199,7 +199,7 @@ function U(e) {
         }))
       }, [e])
     }
-  }(l), Q = !(H || G || V || z), {
+  }(l), J = !(H || G || V || z), {
     titleAnimatedStyle: $,
     opacities: ee
   } = function(e) {
@@ -238,7 +238,7 @@ function U(e) {
       } : {},
       opacities: r
     }
-  }(Q), [et, en] = i.useState([]), er = et.length > 0, ei = (0, f.Q3)("WelcomeArea");
+  }(J), [et, en] = i.useState([]), er = et.length > 0, ei = (0, f.Q3)("WelcomeArea");
   if (i.useEffect(() => {
       (async () => {
         try {
@@ -251,7 +251,7 @@ function U(e) {
   let el = [];
   p || (U && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: Q ? {
+    style: J ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
@@ -262,29 +262,29 @@ function U(e) {
     })
   }, "invite")), B && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: Q ? {
+    style: J ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
-      iconUrl: ei ? u.$_T : M,
+      iconUrl: ei ? u.$_T : k,
       header: Z.NW.string(Z.t.c5kxPj),
       completed: z,
       onClick: K
     })
   }, "customize")), F && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: Q ? {
+    style: J ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
-      iconUrl: ei ? u.qMX : k,
+      iconUrl: ei ? u.qMX : M,
       header: Z.NW.string(Z.t["SoP7+v"]),
       completed: V,
       onClick: q
     })
   }, "message")), (0, E.isWeb)() && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: Q ? {
+    style: J ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
@@ -295,14 +295,14 @@ function U(e) {
     })
   }, "download")), el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
-    style: Q ? {
+    style: J ? {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.vdZ : A,
       header: Z.NW.string(Z.t.IhHDEB),
       completed: er,
-      onClick: J
+      onClick: Q
     })
   }, "addapp")));
   let eo = x ? Z.NW.string(Z.t["1ach9P"]) : Z.NW.string(Z.t["ezm+/v"]);

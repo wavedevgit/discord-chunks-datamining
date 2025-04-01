@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -80,7 +80,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
       })
     })
   },
-  O = e => {
+  C = e => {
     let {
       className: t,
       isSubscriberNitroHome: n = !1
@@ -88,7 +88,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
       styles: x
     }), g = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), {
       analyticsLocations: b
-    } = (0, u.ZP)(), O = (0, p._f)(), C = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
+    } = (0, u.ZP)(), C = (0, p._f)(), O = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, C ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
     return (0, r.jsxs)("div", {
       className: a()(x.perksContainer, t, {
         [x.partiallyHidden]: n && !s,
@@ -103,7 +103,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
         className: a()(x.perkCardContainer, {
           [x.perkCardContainerExpanded]: s
         }),
-        children: C.map(e => null != e && (0, r.jsx)(j, function(e) {
+        children: O.map(e => null != e && (0, r.jsx)(j, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

@@ -1,6 +1,6 @@
 /** Chunk was on 34059 **/
 n.d(t, {
-  Z: () => J
+  Z: () => Q
 });
 var r = n(200651),
   i = n(192379),
@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(430824),
   w = n(496675),
   R = n(626135),
-  M = n(431328),
-  k = n(501655),
+  k = n(431328),
+  M = n(501655),
   L = n(200498),
   D = n(146085),
   W = n(427679),
@@ -95,7 +95,7 @@ function X(e) {
   } = (0, a.cj)([f.Z], () => ({
     chatOpen: f.Z.getChatOpen(n.id),
     participantsListOpen: f.Z.getParticipantsListOpen(n.id)
-  }), [n.id]), w = (0, L.B)(n.id), R = (0, M.Rk)(n.id, k.pV.REQUESTED_TO_SPEAK_ONLY), {
+  }), [n.id]), w = (0, L.B)(n.id), R = (0, k.Rk)(n.id, M.pV.REQUESTED_TO_SPEAK_ONLY), {
     preventIdle: D,
     allowIdle: W
   } = (0, I.Y)("popup"), {
@@ -172,14 +172,14 @@ function X(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   var t;
   let {
     inPopout: n,
     channel: l,
     toggleRequestToSpeakSidebar: d,
     showRequestToSpeakSidebar: p
-  } = e, h = (0, _.ZP)(l), f = (0, a.e7)([W.Z], () => W.Z.getStageInstanceByChannel(l.id)), m = (0, M.Io)(l.id), g = (0, M.Rk)(l.id, k.pV.AUDIENCE), b = (0, a.e7)([A.Z], () => A.Z.getGuild(l.guild_id), [l.guild_id]), C = null !== (t = null == b ? void 0 : b.maxStageVideoChannelUsers) && void 0 !== t ? t : 0, v = (null == b ? void 0 : b.isCommunity()) ? C < H.TU7 : (null == b ? void 0 : b.premiumTier) !== H.Eu4.TIER_3 && C <= H.eez, E = (0, F.Z)(l), N = (0, a.e7)([w.Z], () => w.Z.can(D.yP, l)), I = (0, y.Q3)("StageChannelCallHeader"), P = () => {
+  } = e, h = (0, _.ZP)(l), f = (0, a.e7)([W.Z], () => W.Z.getStageInstanceByChannel(l.id)), m = (0, k.Io)(l.id), g = (0, k.Rk)(l.id, M.pV.AUDIENCE), b = (0, a.e7)([A.Z], () => A.Z.getGuild(l.guild_id), [l.guild_id]), C = null !== (t = null == b ? void 0 : b.maxStageVideoChannelUsers) && void 0 !== t ? t : 0, v = (null == b ? void 0 : b.isCommunity()) ? C < H.TU7 : (null == b ? void 0 : b.premiumTier) !== H.Eu4.TIER_3 && C <= H.eez, E = (0, F.Z)(l), N = (0, a.e7)([w.Z], () => w.Z.can(D.yP, l)), I = (0, y.Q3)("StageChannelCallHeader"), P = () => {
     u.Z.updateStageVideoLimitBoostUpsellDismissed(l.id, !0), R.default.track(H.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: l.guild_id,
       type: V.cd.VIDEO_STAGE_LIMIT,
@@ -264,7 +264,7 @@ function J(e) {
   return E ? (0, r.jsxs)("div", {
     children: [T, (0, r.jsxs)("div", {
       className: Y.boostUpsell,
-      children: [(0, r.jsx)(Q, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(J, {}), (0, r.jsxs)("div", {
         className: Y.text,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
@@ -314,7 +314,7 @@ function J(e) {
   }) : T
 }
 
-function Q() {
+function J() {
   return (0, r.jsxs)("svg", {
     width: "36",
     height: "36",

@@ -101,7 +101,7 @@ function P(e) {
   } = e, l = (0, c.Z)(t), v = (0, f.Z)(t), E = (0, b.Z)(t.id), N = (0, g.Z)(t), I = (0, C.Z)({
     id: t.id,
     label: O.NW.string(O.t.DQ797u)
-  }), P = (0, u.Z)(t), S = (0, d.Z)(t), Z = (0, p.Z)(t, "Toolbar Overflow"), T = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = y.vF.useSetting(), M = (0, a.e7)([x.Z], () => !o().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
+  }), P = (0, u.Z)(t), S = (0, d.Z)(t), Z = (0, p.Z)(t, "Toolbar Overflow"), T = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = y.vF.useSetting(), k = (0, a.e7)([x.Z], () => !o().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(s.v2r, {
     navId: "thread-context",
     onClose: n,
@@ -110,7 +110,7 @@ function P(e) {
     children: [(0, r.jsxs)(s.kSQ, {
       children: [Z, A]
     }), (0, r.jsxs)(s.kSQ, {
-      children: [N, T, E, R && !M ? (0, r.jsx)(s.sNh, {
+      children: [N, T, E, R && !k ? (0, r.jsx)(s.sNh, {
         id: "open",
         label: O.NW.string(O.t.bX7EaG),
         action: function() {

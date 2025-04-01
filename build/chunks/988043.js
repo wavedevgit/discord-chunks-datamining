@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -26,7 +26,7 @@ function j(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, N = (0, m.c_)(), j = u.h2.useSetting().includes(n), O = (0, d.q)(), C = i.useCallback(e => {
+  } = e, N = (0, m.c_)(), j = u.h2.useSetting().includes(n), C = (0, d.q)(), O = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), l.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.Y.DIRECT_MESSAGES_TOGGLE,
@@ -61,7 +61,7 @@ function j(e) {
     children: n === x.T ? (0, r.jsx)(p.Z, {
       title: E.NW.string(E.t.RAQUSE),
       note: E.NW.string(E.t.wbYDfX),
-      value: !O,
+      value: !C,
       onChange: e => {
         v(!e)
       }
@@ -69,12 +69,12 @@ function j(e) {
       title: E.NW.string(E.t.RAQUSE),
       note: N ? E.NW.string(E.t.V0ka0d) : E.NW.string(E.t.G7c3Xl),
       value: !j,
-      onChange: C
+      onChange: O
     })
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     ingress: t = N.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n

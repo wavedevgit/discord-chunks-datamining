@@ -74,12 +74,12 @@ function j() {
       children: "Payment Request Components - Google Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Default View",
-      children: (0, r.jsx)(O, {
+      children: (0, r.jsx)(C, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Connector View",
-      children: (0, r.jsx)(O, {
+      children: (0, r.jsx)(C, {
         paymentRequestWallet: "googlePay",
         renderConnectorView: !0
       })
@@ -93,12 +93,12 @@ function j() {
       children: "Payment Request Components - Apple Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Default View",
-      children: (0, r.jsx)(O, {
+      children: (0, r.jsx)(C, {
         paymentRequestWallet: "applePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Connector View",
-      children: (0, r.jsx)(O, {
+      children: (0, r.jsx)(C, {
         renderConnectorView: !0,
         paymentRequestWallet: "applePay"
       })
@@ -111,7 +111,7 @@ function j() {
   })
 }
 
-function O(e) {
+function C(e) {
   let t = i.useRef(null),
     n = {
       paymentLabel: f.NW.string(f.t.ZURqX1),
@@ -129,7 +129,7 @@ function O(e) {
   return e.renderStepBody ? (0, r.jsx)(p.t, x({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(d.Ch, x({}, n, e)) : (0, r.jsx)(d.Tr, x({}, n, e))
 }
 
-function C(e) {
+function O(e) {
   let {
     children: t,
     footer: n,
@@ -157,7 +157,7 @@ function S(e) {
   } = e, n = i.useRef(null), [s, a] = i.useState(!1), l = () => {
     null != n.current && n.current.show()
   };
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(O, {
     footer: (0, r.jsx)(g.Z, {
       primaryCTA: g.Z.CTAType.CONTINUE,
       primaryText: f.NW.string("applePay" === t ? f.t.WoXvJC : f.t.wnVVr6),
@@ -165,7 +165,7 @@ function S(e) {
       onPrimary: () => l(),
       onBack: () => {}
     }),
-    children: (0, r.jsx)(O, {
+    children: (0, r.jsx)(C, {
       renderConnectorView: !0,
       renderStepBody: !0,
       paymentRequestWallet: t,
@@ -179,7 +179,7 @@ function v(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(O, {
     className: N.choosePaymentTypeModal,
     children: (0, r.jsx)("div", {
       className: N.choosePaymentTypeContainer,
@@ -235,7 +235,7 @@ let I = {
     APPLE_AND_GPAY_DISABLED: "Express Checkout Element - Google Pay and Apple Pay Disabled",
     CONFIGURABLE: "Express Checkout Element - Configurable"
   },
-  y = {
+  A = {
     GPAY_FILTERED: {
       wallets: {
         googlePay: "always",
@@ -255,7 +255,7 @@ let I = {
       }
     }
   },
-  A = {
+  y = {
     appearance: {
       theme: "flat",
       variables: {
@@ -278,9 +278,9 @@ let I = {
   R = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function D() {
-  let [e, t] = i.useState(R(A)), [n, a] = i.useState(A), [l, c] = i.useState(R(P)), [d, m] = i.useState(P), [g, p] = i.useState(null), [f, b] = i.useState((0, r.jsx)(h.DS, {
+  let [e, t] = i.useState(R(y)), [n, a] = i.useState(y), [l, c] = i.useState(R(P)), [d, m] = i.useState(P), [g, p] = i.useState(null), [f, b] = i.useState((0, r.jsx)(h.DS, {
     errorLabel: I.CONFIGURABLE,
-    elementOptions: A,
+    elementOptions: y,
     children: (0, r.jsx)(s.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
@@ -404,14 +404,14 @@ function Z() {
             children: "expressCheckoutElement.options:"
           }), (0, r.jsx)(u.Z, {
             className: N.markdown,
-            children: "".concat("``").concat(R(y[e]), " ").concat("``")
+            children: "".concat("``").concat(R(A[e]), " ").concat("``")
           }), (0, r.jsx)(h.DS, {
             errorLabel: t,
             children: (0, r.jsx)(s.ExpressCheckoutElement, {
               onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
               },
-              options: y[e]
+              options: A[e]
             })
           })]
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 99120 **/
+/** Chunk was on 53884 **/
 n.d(t, {
   Ii: () => b,
   LX: () => f,
@@ -14,14 +14,14 @@ var r = n(544891),
   l = n(314897),
   a = n(594174),
   s = n(970606),
-  c = n(308083),
-  u = n(981631);
+  u = n(308083),
+  c = n(981631);
 async function d(e) {
   let t = await r.tn.get({
-    url: u.ANM.GUILD_CLAN_DISCOVERY_INFO(e),
+    url: c.ANM.GUILD_CLAN_DISCOVERY_INFO(e),
     rejectWithError: !1
   });
-  return (0, c.Gh)(t.body)
+  return (0, u.Gh)(t.body)
 }
 async function p(e, t, n) {
   try {
@@ -31,7 +31,7 @@ async function p(e, t, n) {
       source: n
     });
     let o = await r.tn.put({
-      url: u.ANM.USER_SET_CLAN_IDENTITY,
+      url: c.ANM.USER_SET_CLAN_IDENTITY,
       body: {
         identity_guild_id: e,
         identity_enabled: t
@@ -104,7 +104,7 @@ async function m(e) {
     type: "CLAN_SETTINGS_FETCH_START"
   });
   let t = await r.tn.get({
-    url: u.ANM.CLAN_SETTINGS(e),
+    url: c.ANM.CLAN_SETTINGS(e),
     rejectWithError: !1
   });
   i.Z.dispatch({
@@ -121,7 +121,7 @@ async function b(e, t) {
   try {
     var n, l, a, s;
     let o = await r.tn.patch({
-      url: u.ANM.CLAN_SETTINGS(e),
+      url: c.ANM.CLAN_SETTINGS(e),
       body: {
         tag: t.tag,
         description: t.description,
@@ -154,7 +154,7 @@ async function b(e, t) {
 async function y(e) {
   try {
     await r.tn.post({
-      url: u.ANM.DISABLE_CLAN(e),
+      url: c.ANM.DISABLE_CLAN(e),
       rejectWithError: !0
     })
   } catch (e) {

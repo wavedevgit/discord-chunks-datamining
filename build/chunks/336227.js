@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => l
 }), n(653041);
-var o = n(192379),
-  r = n(823379),
+var r = n(192379),
+  o = n(823379),
   s = n(267642),
   a = n(535396),
   c = n(296260),
@@ -19,27 +19,27 @@ function l(e) {
     includeStickers: !0,
     includeSoundboards: !0
   };
-  return o.useMemo(() => {
-    let o = [],
+  return r.useMemo(() => {
+    let r = [],
       u = (0, a.d5)();
-    return t && o.push({
+    return t && r.push({
       perkIcon: s.Ro.EMOJI,
       description: i.NW.formatToPlainString(c.Z.NXvV09, {
         totalEmojis: e.features.total_emoji_slots,
         additionalEmojis: e.features.additional_emoji_slots
       })
-    }), n && o.push({
+    }), n && r.push({
       perkIcon: s.Ro.STICKER,
       description: i.NW.formatToPlainString(c.Z.ZEvvPz, {
         totalStickers: e.features.total_sticker_slots,
         additionalStickers: e.features.additional_sticker_slots
       })
-    }), l && o.push({
+    }), l && r.push({
       perkIcon: s.Ro.SOUNDBOARD,
       description: i.NW.formatToPlainString(c.Z["s9u/Ex"], {
         totalSoundboards: e.features.total_sound_slots,
         additionalSoundboards: e.features.additional_sound_slots
       })
-    }), o.concat(e.features.features.map(e => u[e]).filter(r.lm))
+    }), r.concat(e.features.features.map(e => u[e]).filter(o.lm))
   }, [e, t, n, l])
 }

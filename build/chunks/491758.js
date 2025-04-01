@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => A
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -22,25 +22,25 @@ var r = n(200651),
   _ = n(39604),
   E = n(442334),
   j = n(356659),
-  O = n(981631),
-  C = n(37113),
+  C = n(981631),
+  O = n(37113),
   S = n(526761),
   v = n(388032),
   T = n(719818),
   I = n(133881),
-  y = n(685786);
+  A = n(685786);
 
-function A() {
+function y() {
   let e = (0, l.e7)([p.Z], () => p.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
       decoupledClipsEnabled: s,
-      clipsLength: A,
+      clipsLength: y,
       clipsQuality: P
     } = (0, l.cj)([N.Z], () => N.Z.getSettings()),
     R = (0, l.e7)([N.Z], () => N.Z.getHardwareClassification()),
-    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
+    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
     Z = N.Z.isDecoupledGameClippingEnabled(),
     w = (0, x.Z)(p.Z),
     {
@@ -69,43 +69,43 @@ function A() {
       })
     }], [W]),
     B = i.useMemo(() => [{
-      value: C.LY.RESOLUTION_480,
+      value: O.LY.RESOLUTION_480,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_480
+        resolution: O.LY.RESOLUTION_480
       })
     }, {
-      value: C.LY.RESOLUTION_720,
+      value: O.LY.RESOLUTION_720,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_720
+        resolution: O.LY.RESOLUTION_720
       })
     }, {
-      value: C.LY.RESOLUTION_1080,
+      value: O.LY.RESOLUTION_1080,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_1080
+        resolution: O.LY.RESOLUTION_1080
       })
     }, {
-      value: C.LY.RESOLUTION_1440,
+      value: O.LY.RESOLUTION_1440,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_1440
+        resolution: O.LY.RESOLUTION_1440
       })
     }, {
-      value: C.LY.RESOLUTION_SOURCE,
+      value: O.LY.RESOLUTION_SOURCE,
       label: v.NW.string(v.t.XjXqzs)
     }], [W]),
     M = i.useMemo(() => [{
-      value: C.ws.FPS_15,
+      value: O.ws.FPS_15,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: C.ws.FPS_15
+        fps: O.ws.FPS_15
       })
     }, {
-      value: C.ws.FPS_30,
+      value: O.ws.FPS_30,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: C.ws.FPS_30
+        fps: O.ws.FPS_30
       })
     }, {
-      value: C.ws.FPS_60,
+      value: O.ws.FPS_60,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: C.ws.FPS_60
+        fps: O.ws.FPS_60
       })
     }], [W]),
     U = i.useCallback(e => {
@@ -147,7 +147,7 @@ function A() {
         look: g.z.WARNING,
         className: I.formItem,
         children: v.NW.format(v.t.kiaF4e, {
-          onClick: () => d.Z.open(O.oAB.VOICE, null, {
+          onClick: () => d.Z.open(C.oAB.VOICE, null, {
             scrollPosition: S.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
@@ -172,7 +172,7 @@ function A() {
       })]
     }), Z && w && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
-        className: y.marginTop20,
+        className: A.marginTop20,
         disabled: !e,
         children: (0, r.jsx)(o.j7V, {
           hideBorder: !0,
@@ -189,7 +189,7 @@ function A() {
       })]
     }), k && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.$i$, {}), (0, r.jsx)(o.hjN, {
-        className: y.marginTop20,
+        className: A.marginTop20,
         children: (0, r.jsx)(o.j7V, {
           hideBorder: !0,
           className: I.formItem,
@@ -200,13 +200,13 @@ function A() {
         })
       })]
     }), (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
-      className: y.marginTop20,
+      className: A.marginTop20,
       children: [(0, r.jsx)(E.Q, {
         className: I.formItem,
         select: _.eU,
         title: v.NW.string(v.t.OgfUio),
         note: v.NW.string(v.t.H7j4tb),
-        value: A,
+        value: y,
         options: L
       }), (0, r.jsx)(E.Q, {
         className: I.formItem,

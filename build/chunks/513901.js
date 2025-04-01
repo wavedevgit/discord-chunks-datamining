@@ -28,18 +28,18 @@ function x(e) {
     forcedDivider: _ = !1,
     withTutorial: E = !1,
     showBorder: j = !1,
-    isTryItOutFlow: O = !1,
-    initialSelectedEffectId: C
+    isTryItOutFlow: C = !1,
+    initialSelectedEffectId: O
   } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
   } = (0, o.ZP)(), {
     pendingProfileEffectId: I,
-    errors: y
-  } = (0, m.bd)(n), A = i.useCallback(() => (0, c.H)({
+    errors: A
+  } = (0, m.bd)(n), y = i.useCallback(() => (0, c.H)({
     analyticsLocations: T,
-    initialSelectedEffectId: C,
+    initialSelectedEffectId: O,
     guild: n
-  }), [T, C, n]);
+  }), [T, O, n]);
   i.useEffect(() => {
     v && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: f.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
@@ -54,18 +54,18 @@ function x(e) {
     hasBackground: !0,
     title: x,
     showBorder: j,
-    errors: y,
+    errors: A,
     className: s,
     children: (0, r.jsxs)("div", {
       className: b.buttonsContainer,
       children: [(0, r.jsx)(R, {
         size: l.zxk.Sizes.SMALL,
-        onClick: A,
+        onClick: y,
         className: a()({
           [b.buttonHighlighted]: E
         }),
         children: N.NW.string(N.t["0nEVoK"])
-      }), (O || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
+      }), (C || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
         className: b.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,

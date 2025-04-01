@@ -19,6 +19,7 @@ function c(e) {
   });
   return (0, r.jsx)(l.Z, {
     channel: n,
+    message: t,
     compact: c,
     content: p
   })

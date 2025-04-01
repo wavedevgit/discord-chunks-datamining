@@ -36,7 +36,7 @@ function _(e) {
     w = (0, b.lN)(!(0, f.r1)(e.id)),
     E = e.hasFeature(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     T = (0, o.jS)(e.id, "Guild Sidebar"),
-    A = (0, g.Ek)(e, "useGuildActionRow"),
+    A = (0, g.Ek)(e.id, "useGuildActionRow"),
     D = (0, m.Z)(e.id);
   return N && I.push(v.z.GUILD_HUB_HEADER_OPTIONS), !S && j && C && null != x && x.length > 0 ? I.push(v.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && I.push(v.z.GUILD_PREMIUM_PROGRESS_BAR), !N && j && I.push(v.z.GUILD_HOME), t && I.push(v.z.GUILD_SCHEDULED_EVENTS), !N && Z && w && I.push(v.z.CHANNELS_AND_ROLES), _ && I.push(v.z.GUILD_ROLE_SUBSCRIPTIONS), O && I.push(v.z.GUILD_SHOP), !T && n && I.push(v.z.GUILD_MEMBER_APPLICATIONS), P && (Z || E || T && e.hasFeature(y.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && I.push(v.z.GUILD_MOD_DASH_MEMBER_SAFETY), A && D && I.push(v.z.GUILD_BOOSTS), I
 }

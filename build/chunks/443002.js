@@ -38,7 +38,7 @@ let A = function(e) {
       to: x.current.offsetTop,
       animate: !0
     })
-  }, []), k = (0, u.Ek)(n, "GuildBoostingMarketing"), j = i.useCallback(() => {
+  }, []), k = (0, u.Ek)(n.id, "GuildBoostingMarketing"), j = i.useCallback(() => {
     null == A || A(), _.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,

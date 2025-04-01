@@ -42,17 +42,17 @@ let b = e => {
       listing: o,
       subscription: x,
       onClose: _
-    } = e, E = (0, u.Dt)(), j = (0, g.YB)(s), O = (null == j ? void 0 : null === (t = j.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
-      analyticsLocations: C
+    } = e, E = (0, u.Dt)(), j = (0, g.YB)(s), C = (null == j ? void 0 : null === (t = j.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
+      analyticsLocations: O
     } = (0, d.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: S,
       error: v,
       submitting: T
-    } = b(C), I = async () => {
+    } = b(O), I = async () => {
       await S(x.id) && _()
-    }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(x.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
-      numChannels: y.length,
-      numAdditionalBenefits: A.length,
+    }, A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(x.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
+      numChannels: A.length,
+      numAdditionalBenefits: y.length,
       subscriptionEndDate: P
     });
     return (0, r.jsxs)(l.Y0X, {
@@ -61,7 +61,7 @@ let b = e => {
       "aria-labelledby": E,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("img", {
-          src: O,
+          src: C,
           alt: "",
           className: N.headerImage
         }), (0, r.jsx)(l.olH, {

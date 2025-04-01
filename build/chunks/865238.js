@@ -53,13 +53,13 @@ function S(e) {
     buyer: l,
     onClose: a,
     dismissibleContent: S
-  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([y.Z], () => y.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [M, k] = (0, i.useState)(!1);
+  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([y.Z], () => y.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
-    k(!0)
+    M(!0)
   }, []);
   let L = (0, i.useContext)(m.h9),
     D = (0, d.q_F)({
-      from: M ? {
+      from: k ? {
         opacity: 0,
         transform: "translateX(-50%) translateY(30px) scale(0.9)"
       } : {},
@@ -70,7 +70,7 @@ function S(e) {
       config: {
         duration: 250,
         easing: P,
-        immediate: !M
+        immediate: !k
       }
     }),
     {

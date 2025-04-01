@@ -74,7 +74,7 @@ function O(e) {
     guild: t,
     themeResponsive: n = !0,
     onButtonClick: o
-  } = e, g = (0, f.Ek)(t, "GuildBoostingMarketing"), b = (0, c.e7)([d.Z], () => {
+  } = e, g = (0, f.Ek)(t.id, "GuildBoostingMarketing"), b = (0, c.e7)([d.Z], () => {
     var e, n;
     return null === (n = d.Z.getStateForGuild(t.id)) || void 0 === n ? void 0 : null === (e = n.catalog) || void 0 === e ? void 0 : e.get(_.Us.PERK)
   }), [O, I] = i.useState(!1), [S, T] = (0, u.q_F)(() => ({

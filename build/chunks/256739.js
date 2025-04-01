@@ -22,7 +22,7 @@ e.exports = {
   layerForm: "layerForm__93529",
   layerPreviewContainer: "layerPreviewContainer__93529",
   layerPreview: "layerPreview__93529",
-  staticFramesContainer: "staticFramesContainer__93529",
-  staticFramePreviewContainer: "staticFramePreviewContainer__93529",
-  staticFramePreview: "staticFramePreview__93529"
+  stillFramesContainer: "stillFramesContainer__93529",
+  stillFramePreviewContainer: "stillFramePreviewContainer__93529",
+  stillFramePreview: "stillFramePreview__93529"
 }

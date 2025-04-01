@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(63063),
   E = n(74538),
   j = n(18438),
-  O = n(778825),
-  C = n(856607),
+  C = n(778825),
+  O = n(856607),
   S = n(594496),
   v = n(856768),
   T = n(981631),
   I = n(388032);
 
-function y(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function y(e) {
   return e
 }
 
-function A(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,8 +66,8 @@ function P(e) {
     let {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
-    return n => (0, r.jsx)(t, y({
-      source: A(y({}, e), {
+    return n => (0, r.jsx)(t, A({
+      source: y(A({}, e), {
         page: T.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
@@ -82,8 +82,8 @@ function R(e) {
   } = (0, g.ZP)(u.Z.GUILD_PROFILE), s = (0, l.e7)([x.default], () => {
     let e = x.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), R = (0, l.e7)([N.Z], () => !N.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), Z = (0, l.cj)([O.Z], () => A(y({}, O.Z.getAllPending()), {
-    source: O.Z.getSource()
+  }), R = (0, l.e7)([N.Z], () => !N.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), Z = (0, l.cj)([C.Z], () => y(A({}, C.Z.getAllPending()), {
+    source: C.Z.getSource()
   })), {
     source: w,
     pendingAvatar: k
@@ -128,7 +128,7 @@ function R(e) {
         previewTitle: I.NW.formatToPlainString(I.t.Tc0slJ, {
           guildName: null == t ? void 0 : t.name
         }),
-        profilePreview: (0, r.jsx)(h.Z, A(y({}, W), {
+        profilePreview: (0, r.jsx)(h.Z, y(A({}, W), {
           pendingAvatar: L,
           user: s,
           guild: t,
@@ -137,6 +137,6 @@ function R(e) {
         })),
         children: (0, r.jsx)(S.Z, {})
       })]
-    }) : (0, r.jsx)(C.Z, {})]
+    }) : (0, r.jsx)(O.Z, {})]
   }) : (0, r.jsx)(o.$jN, {})
 }

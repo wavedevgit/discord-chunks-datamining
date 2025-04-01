@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,30 +22,30 @@ var r = n(200651),
   _ = n(839526),
   E = n(4046),
   j = n(423741);
-let O = i.forwardRef((e, t) => {
+let C = i.forwardRef((e, t) => {
   var n, s;
   let {
-    className: O,
-    isFooterVisible: C,
+    className: C,
+    isFooterVisible: O,
     isDarkMode: S,
     isReducedMotion: v
   } = e, {
     analyticsLocations: T
-  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
+  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), A = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, y = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
   return i.useEffect(() => {
-    !C || v || Z || null == D.current || D.current.play()
-  }, [C, v, Z]), (0, r.jsx)(c.Gt, {
+    !O || v || Z || null == D.current || D.current.play()
+  }, [O, v, Z]), (0, r.jsx)(c.Gt, {
     value: T,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: a()(x.container, O),
+      className: a()(x.container, C),
       children: [(0, r.jsx)(l.X6q, {
         className: x.footerHeader,
         variant: "display-md",
         color: "header-primary",
         children: b.NW.string(b.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
-        subscriptionTier: null !== (s = null == A ? void 0 : null === (n = A.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : y,
+        subscriptionTier: null !== (s = null == y ? void 0 : null === (n = y.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : A,
         inOfferExperience: P,
         containerClassName: x.footerCTAContainer,
         isMarketingPageV2Enabled: !0,

@@ -23,14 +23,14 @@ var r = n(200651),
   _ = n(639119),
   E = n(311476),
   j = n(165583),
-  O = n(197115),
-  C = n(504983),
+  C = n(197115),
+  O = n(504983),
   S = n(626135),
   v = n(210887),
   T = n(981631),
   I = n(921944),
-  y = n(474936),
-  A = n(388032),
+  A = n(474936),
+  y = n(388032),
   P = n(837079);
 let R = () => {
     (0, b.EW)(a.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
@@ -42,7 +42,7 @@ let R = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, g.ZP)(m.Z.USER_SETTINGS), a = (0, s.e7)([h.Z], () => h.Z.isPreview), l = (null === (t = (0, _.N)()) || void 0 === t ? void 0 : null === (e = t.subscription_trial) || void 0 === e ? void 0 : e.sku_id) === y.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, y.Si.TIER_2), u = !a || l, {
+    } = (0, g.ZP)(m.Z.USER_SETTINGS), a = (0, s.e7)([h.Z], () => h.Z.isPreview), l = (null === (t = (0, _.N)()) || void 0 === t ? void 0 : null === (e = t.subscription_trial) || void 0 === e ? void 0 : e.sku_id) === A.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, A.Si.TIER_2), u = !a || l, {
       enabled: p
     } = E.Z.getCurrentConfig({
       location: "UserSettingsAppearanceClientThemes"
@@ -55,19 +55,19 @@ let R = () => {
         size: o.zxk.Sizes.MEDIUM,
         color: p ? o.zxk.Colors.BRAND : o.zxk.Colors.PRIMARY,
         onClick: () => R(),
-        children: p ? A.NW.string(A.t.SKNnqq) : A.NW.string(A.t["E+COuL"])
-      }), (0, r.jsx)(O.Z, {
+        children: p ? y.NW.string(y.t.SKNnqq) : y.NW.string(y.t["E+COuL"])
+      }), (0, r.jsx)(C.Z, {
         showGradient: p,
-        subscriptionTier: y.Si.TIER_2,
-        buttonText: p ? A.NW.string(A.t.pj0XBA) : d ? A.NW.formatToPlainString(A.t.bkQ4bG, {
+        subscriptionTier: A.Si.TIER_2,
+        buttonText: p ? y.NW.string(y.t.pj0XBA) : d ? y.NW.formatToPlainString(y.t.bkQ4bG, {
           percent: null == c ? void 0 : c.discount.amount
-        }) : A.NW.string(A.t.mr4K7O),
+        }) : y.NW.string(y.t.mr4K7O),
         className: P.premiumCta
       })]
     });
     return i.useEffect(() => {
       a && S.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: y.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+        type: A.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
     }, [a, n]), (0, r.jsxs)("div", {
@@ -81,10 +81,10 @@ let R = () => {
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(f.ZP.Basic, {
             className: P.basicThemeSelectors
-          }), b && (0, r.jsx)(Z, {}), (0, r.jsxs)(C.Z, {
+          }), b && (0, r.jsx)(Z, {}), (0, r.jsxs)(O.Z, {
             className: P.featureBorder,
             isShown: a,
-            type: C.Y.PREMIUM,
+            type: O.Y.PREMIUM,
             children: [(0, r.jsx)(f.ZP.Gradient, {
               disabled: a,
               renderCTAButtons: v
@@ -93,12 +93,12 @@ let R = () => {
                 className: P.previewThemeButtonWide,
                 color: o.zxk.Colors.PRIMARY,
                 onClick: () => R(),
-                children: A.NW.string(A.t["E+COuL"])
+                children: y.NW.string(y.t["E+COuL"])
               }), (0, r.jsx)("div", {
                 className: P.premiumTier2Divider
               }), (0, r.jsx)(j.ZP, {
-                type: y.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
-                subscriptionTier: y.Si.TIER_2
+                type: A.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
+                subscriptionTier: A.Si.TIER_2
               })]
             })]
           })]
@@ -129,7 +129,7 @@ function Z() {
     className: P.darkSidebarToggle,
     children: (0, r.jsx)("span", {
       className: P.title,
-      children: A.NW.string(A.t.yF54Ki)
+      children: y.NW.string(y.t.yF54Ki)
     })
   })
 }
@@ -139,6 +139,6 @@ let w = () => {
   return e ? null : (0, r.jsx)(o.zxk, {
     size: t ? o.PhG.MEDIUM : o.PhG.SMALL,
     onClick: R,
-    children: A.NW.string(A.t.qYXrkZ)
+    children: y.NW.string(y.t.qYXrkZ)
   })
 }

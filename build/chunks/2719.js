@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(295474),
   E = n(144114),
   j = n(918505),
-  O = n(332473),
-  C = n(921801),
+  C = n(332473),
+  O = n(921801),
   S = n(485341),
   v = n(687158),
   T = n(518950),
   I = n(184325),
-  y = n(867176),
-  A = n(25990),
+  A = n(867176),
+  y = n(25990),
   P = n(594174),
   R = n(572004),
   D = n(51144),
@@ -81,7 +81,7 @@ function z(e) {
   let {
     className: l,
     user: o
-  } = e, c = i.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, _.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, N] = i.useState(!1);
+  } = e, c = i.useRef(null), m = (0, j.o9)(), g = (0, C.b)(), p = (0, _.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, N] = i.useState(!1);
   i.useEffect(() => {
     N(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
@@ -462,7 +462,7 @@ function ee() {
     n = (0, v.ZP)(t.id),
     i = (0, S.Z)(n),
     s = w.co.useSetting(),
-    a = (0, c.e7)([A.Z], () => A.Z.getErrors()),
+    a = (0, c.e7)([y.Z], () => y.Z.getErrors()),
     l = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],
     {
       avatarSrc: d,
@@ -473,7 +473,7 @@ function ee() {
     });
   return (0, r.jsxs)("div", {
     className: V.accountProfileCard,
-    children: [(0, r.jsx)(y.b, {
+    children: [(0, r.jsx)(A.b, {
       user: t,
       displayProfile: n,
       avatarSize: u.EFr.SIZE_80,
@@ -520,30 +520,30 @@ function ee() {
         children: l
       }) : null, (0, r.jsxs)("div", {
         className: V.fieldList,
-        children: [(0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(O.F, {
           setting: W.s6.ACCOUNT_DISPLAY_NAME,
           children: (0, r.jsx)(Y, {
             className: V.fieldSpacerBottom,
             user: t
           })
-        }), (0, r.jsx)(C.F, {
+        }), (0, r.jsx)(O.F, {
           setting: W.s6.ACCOUNT_USERNAME,
           children: (0, r.jsx)(z, {
             user: t
           })
-        }), (0, r.jsx)(C.F, {
+        }), (0, r.jsx)(O.F, {
           setting: W.s6.ACCOUNT_EMAIL,
           children: (0, r.jsx)(q, {
             className: V.fieldSpacer,
             user: t
           })
-        }), (0, r.jsx)(C.F, {
+        }), (0, r.jsx)(O.F, {
           setting: W.s6.ACCOUNT_PHONE_NUMBER,
           children: (0, r.jsx)(X, {
             className: V.fieldSpacer,
             user: t
           })
-        }), (0, r.jsx)(C.F, {
+        }), (0, r.jsx)(O.F, {
           setting: W.s6.ACCOUNT_AGE_GROUP,
           children: (0, r.jsx)($, {
             className: V.fieldSpacer

@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(719296),
   w = n(651612),
   R = n(918559),
-  M = n(981631),
-  k = n(388032),
+  k = n(981631),
+  M = n(388032),
   L = n(635707);
 let D = T.u.SIZE_32,
   W = {
@@ -53,7 +53,7 @@ function U(e) {
     location: "ActivityPanelFocusedView"
   }), H = (0, S.Z)(), G = (0, a.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), Y = (0, N.gb)(G), q = (0, N.uF)(Y), K = i.useCallback(() => {
     (0, O.tg)(R.Ez.PIP)
-  }, []), X = i.useRef(null), J = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), Q = J !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
+  }, []), X = i.useRef(null), Q = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -142,7 +142,7 @@ function U(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r) : l
       }, [s, e, n, t])
-    }(Q, $, l);
+    }(J, $, l);
   if (null == H) return null;
   let ef = [];
   null != ec && (ef = Array.from(ec.embeddedActivity.userIds).map(e => y.default.getUser(e)).filter(e => null != e && void 0 !== e));
@@ -162,14 +162,14 @@ function U(e) {
     }, e.id)
   };
   return (0, r.jsx)(c.f6W, {
-    theme: M.BRd.DARK,
+    theme: k.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: o()(L.wrapper, W[J], e),
+      className: o()(L.wrapper, W[Q], e),
       ref: X,
       style: eh,
       children: [null == B ? void 0 : B(), (0, r.jsxs)("div", {
         className: L.activityPanelContainer,
-        children: [Q ? null : (0, r.jsx)("div", {
+        children: [J ? null : (0, r.jsx)("div", {
           className: L.header,
           children: (0, r.jsx)(s.x, {
             color: "header-primary",
@@ -211,7 +211,7 @@ function U(e) {
               children: [(0, r.jsx)(w.Z, {
                 channelId: eu
               }), (0, r.jsx)(g.d, {
-                label: k.NW.string(k.t.brPQ5e),
+                label: M.NW.string(M.t.brPQ5e),
                 onClick: K,
                 iconComponent: c.dOc,
                 themeable: !0
@@ -226,7 +226,7 @@ function U(e) {
                 className: F ? void 0 : L.leaveActivityButton
               })
             }), F ? null : (0, r.jsx)(g.d, {
-              label: k.NW.string(k.t.brPQ5e),
+              label: M.NW.string(M.t.brPQ5e),
               onClick: K,
               iconComponent: c.dOc,
               themeable: !0,
@@ -236,17 +236,17 @@ function U(e) {
             className: L.flex
           })]
         }) : null]
-      }), Q ? (0, r.jsx)(h.Z, {
+      }), J ? (0, r.jsx)(h.Z, {
         minHeight: 480,
         maxHeight: l,
         resizableNode: X,
         onResize: e => {
-          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
+          x.S.dispatch(k.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !0
           }), ee(e)
         },
         onResizeEnd: e => {
-          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
+          x.S.dispatch(k.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !1
           }), et(e)
         }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => I
 }), n(47120);
 var r = n(442837),
   i = n(570140);
@@ -44,77 +44,94 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = new Map;
+let c = 864e5,
+  u = 36e5,
+  d = new Map,
+  f = {},
+  _ = {};
 
-function u(e) {
-  return e.values().reduce((e, t) => {
+function p(e) {
+  return Array.from(e.values()).reduce((e, t) => {
     var n, r, i;
     return e + (null !== (i = null === (r = t.sku) || void 0 === r ? void 0 : null === (n = r.powerup_metadata) || void 0 === n ? void 0 : n.boost_price) && void 0 !== i ? i : 0)
   }, 0)
 }
 
-function d(e) {
-  return c.has(e) || c.set(e, {
+function h(e) {
+  return d.has(e) || d.set(e, {
     powerups: new Map,
     unlocked: new Map,
     catalog: new Map,
     appliedBoosts: 0
-  }), c.get(e)
-}
-
-function f(e) {
-  let {
-    guildId: t,
-    powerups: n,
-    catalog: r
-  } = e, i = d(t), o = new Map(c);
-  o.set(t, l(a({}, i), {
-    powerups: n,
-    catalog: r
-  })), c = o
-}
-
-function _(e) {
-  let {
-    guildId: t,
-    unlocked: n
-  } = e, r = d(t), i = u(n), o = new Map(c);
-  o.set(t, l(a({}, r), {
-    unlocked: n,
-    appliedBoosts: i
-  })), c = o
-}
-
-function p(e, t) {
-  let {
-    guildId: n,
-    entitlements: r
-  } = e, i = d(n);
-  r.forEach(e => {
-    t ? i.unlocked.set(e.sku_id, e) : i.unlocked.delete(e.sku_id)
-  });
-  let o = u(i.unlocked),
-    s = new Map(c);
-  s.set(n, l(a({}, i), {
-    appliedBoosts: o
-  })), c = s
-}
-
-function h(e) {
-  p(e, !0)
+  }), d.get(e)
 }
 
 function m(e) {
-  p(e, !1)
+  let {
+    guildId: t,
+    powerups: n,
+    catalog: r
+  } = e, i = h(t), o = new Map(d);
+  o.set(t, l(a({}, i), {
+    powerups: n,
+    catalog: r
+  })), d = o, f[t] = Date.now()
 }
-class g extends r.ZP.Store {
+
+function g(e) {
+  let {
+    guildId: t,
+    unlocked: n
+  } = e, r = h(t), i = p(n), o = new Map(d);
+  o.set(t, l(a({}, r), {
+    unlocked: n,
+    appliedBoosts: i
+  })), d = o, _[t] = Date.now()
+}
+
+function E(e, t) {
+  let {
+    guildId: n,
+    entitlements: r
+  } = e, i = h(n);
+  r.forEach(e => {
+    t ? i.unlocked.set(e.sku_id, e) : i.unlocked.delete(e.sku_id)
+  });
+  let o = p(i.unlocked),
+    s = new Map(d);
+  s.set(n, l(a({}, i), {
+    appliedBoosts: o
+  })), d = s
+}
+
+function b(e) {
+  E(e, !0)
+}
+
+function v(e) {
+  E(e, !1)
+}
+
+function y() {
+  d = new Map, f = {}, _ = {}
+}
+class O extends r.ZP.Store {
   getStateForGuild(e) {
-    return c.get(e)
+    return null != e ? d.get(e) : void 0
+  }
+  shouldFetchCatalogForGuild(e) {
+    let t = f[e];
+    return null == t || t + c < Date.now()
+  }
+  shouldFetchPowerupsForGuild(e) {
+    let t = _[e];
+    return null == t || t + u < Date.now()
   }
 }
-let E = new g(i.Z, {
-  GUILD_POWERUP_CATALOG_FETCH_SUCCESS: f,
-  GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: _,
-  GUILD_POWERUP_ENTITLEMENTS_CREATE: h,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: m
+let I = new O(i.Z, {
+  LOGOUT: y,
+  GUILD_POWERUP_CATALOG_FETCH_SUCCESS: m,
+  GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: g,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: b,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: v
 })

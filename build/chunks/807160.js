@@ -21,14 +21,14 @@ var r, i = n(200651),
   _ = n(267101),
   E = n(240864),
   j = n(942833),
-  O = n(400916),
-  C = n(916001),
+  C = n(400916),
+  O = n(916001),
   S = n(539290),
   v = n(336197),
   T = n(690221),
   I = n(219929),
-  y = n(307643),
-  A = n(378233),
+  A = n(307643),
+  y = n(378233),
   P = n(419922),
   R = n(46141),
   D = n(430824),
@@ -212,7 +212,7 @@ function eo(e) {
         color: "header-secondary",
         className: X.guildProductBenefitLabel,
         children: q.NW.string(q.t.hxawo6)
-      }), (0, i.jsx)(O.Z, {
+      }), (0, i.jsx)(C.Z, {
         guildId: r,
         productId: a.id
       })]
@@ -224,7 +224,7 @@ function eo(e) {
         color: "header-secondary",
         className: X.guildProductBenefitLabel,
         children: q.NW.string(q.t.gWBNen)
-      }), (0, i.jsx)(C.Z, {
+      }), (0, i.jsx)(O.Z, {
         role: c
       })]
     })]
@@ -549,7 +549,7 @@ class ec extends(r = s.PureComponent) {
     } else if (null != m) {
       var f;
       if (t = r.isGuildProductPurchase && r.isSoftDeletedProduct ? q.NW.string(q.t.O7uLm5) : m.name, null != o) {
-        let t = (0, A.Zt)(o);
+        let t = (0, y.Zt)(o);
         e = (0, i.jsx)(P.Z, {
           disableAnimation: !u,
           isInteracting: u,
@@ -772,7 +772,7 @@ function ed(e) {
     }
   }), b = (0, m.e7)([f.Z], () => null != u ? f.Z.getApplication(u) : null);
   s.useEffect(() => {
-    g && null != u && (0, y.UM)(u)
+    g && null != u && (0, A.UM)(u)
   }, [u, g]);
   let x = (0, m.e7)([D.Z], () => D.Z.getGuild(null == h ? void 0 : h.guildId)),
     _ = c ? h : void 0,

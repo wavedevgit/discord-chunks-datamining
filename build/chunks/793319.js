@@ -1,7 +1,7 @@
 /** Chunk was on 34059 **/
 n.d(t, {
   NZ: () => eZ,
-  ZP: () => eM,
+  ZP: () => ek,
   r: () => eS
 }), n(47120);
 var r = n(200651),
@@ -36,8 +36,8 @@ var r = n(200651),
   A = n(258609),
   w = n(446226),
   R = n(569545),
-  M = n(74299),
-  k = n(803647),
+  k = n(74299),
+  M = n(803647),
   L = n(554747),
   D = n(95764),
   W = n(459502),
@@ -52,8 +52,8 @@ var r = n(200651),
   q = n(402113),
   K = n(197016),
   X = n(386e3),
-  J = n(698877),
-  Q = n(25827),
+  Q = n(698877),
+  J = n(25827),
   $ = n(875527),
   ee = n(306609),
   et = n(199902),
@@ -161,7 +161,7 @@ function eZ(e) {
       }(0, eC.Z)()
     },
     Z = () => {
-      (0, P.v)(c, P.d.STREAM, !1), (0, k.Z)(g)
+      (0, P.v)(c, P.d.STREAM, !1), (0, M.Z)(g)
     },
     A = (e, t) => {
       let n = null != e ? e : {
@@ -186,7 +186,7 @@ function eZ(e) {
           return i
         }(n, ["onClick"]),
         o = null != g;
-      return (0, r.jsx)(J.O, eP(eI({}, l), {
+      return (0, r.jsx)(Q.O, eP(eI({}, l), {
         centerButton: !0,
         disabled: s || !a,
         className: h ? void 0 : eE.controlButton,
@@ -338,7 +338,7 @@ let eA = i.memo(function(e) {
             onPopoutClick: v.length > 0 ? i : null
           }));
         case "STREAM":
-          return (0, r.jsx)(J.O, eP(eI({}, c), {
+          return (0, r.jsx)(Q.O, eP(eI({}, c), {
             hasPermission: !0,
             streamActive: !0,
             color: "disconnect",
@@ -419,7 +419,7 @@ function ew(e) {
     location: "JoinCall"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(Q.C, {
+    children: [(0, r.jsx)(J.C, {
       enabled: !0,
       centerButton: !0,
       join: !0,
@@ -452,7 +452,7 @@ function eR(e) {
     entrypoint: ej.A5.CARET
   })
 }
-let eM = function(e) {
+let ek = function(e) {
   var t, n;
   let {
     channel: l,
@@ -477,19 +477,19 @@ let eM = function(e) {
   }), {
     cameraUnavailable: T,
     enabled: R
-  } = (0, es.Z)(), k = (0, ep.Z)(l), {
+  } = (0, es.Z)(), M = (0, ep.Z)(l), {
     suppress: L,
     selfMute: D,
     mute: U
   } = (0, eh.Z)(l), {
     canGoLive: B
   } = (0, u.cj)([er.Z], () => ({
-    canGoLive: (0, M.Z)(er.Z)
+    canGoLive: (0, k.Z)(er.Z)
   })), F = (0, w.Z)(), G = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), z = null != F, Y = (0, u.e7)([ei.Z], () => {
     var e;
     return (null !== (e = null == F ? void 0 : F.channelId) && void 0 !== e ? e : ei.Z.getVoiceChannelId()) === l.id
   }), q = (0, O.Z)(l, !0), K = (0, u.e7)([C.ZP], () => C.ZP.getSelfEmbeddedActivityForChannel(l.id)), {
-    reachedLimit: J,
+    reachedLimit: Q,
     limit: et
   } = (0, eu.Z)(l), {
     analyticsLocations: en
@@ -502,7 +502,7 @@ let eM = function(e) {
     children: (0, r.jsx)(ew, {
       channel: l,
       cameraUnavailable: T,
-      hasCameraPermission: k,
+      hasCameraPermission: M,
       currentUser: S
     })
   });
@@ -605,14 +605,14 @@ let eM = function(e) {
               } = e, {
                 isShown: i
               } = t;
-              return (0, r.jsx)(Q.C, {
+              return (0, r.jsx)(J.C, {
                 centerButton: !0,
-                hasPermission: k,
+                hasPermission: M,
                 enabled: R,
                 cameraUnavailable: T,
                 onChange: eS,
                 onCameraUnavailable: e_.Z,
-                channelLimitReached: J,
+                channelLimitReached: Q,
                 channelLimit: et,
                 popoutOpen: i,
                 onPopoutClick: n
@@ -628,7 +628,7 @@ let eM = function(e) {
             currentUser: S,
             exitFullScreen: d,
             canGoLive: B,
-            hasPermission: k
+            hasPermission: M
           }), !z && (0, r.jsx)(eT, {
             channel: l,
             idle: null === (t = null == h ? void 0 : h.idle) || void 0 === t || t,
@@ -731,15 +731,15 @@ let eM = function(e) {
             } = e, {
               isShown: i
             } = t;
-            return (0, r.jsx)(Q.C, {
+            return (0, r.jsx)(J.C, {
               centerButton: !0,
-              hasPermission: k,
+              hasPermission: M,
               className: eE.controlButton,
               enabled: R,
               cameraUnavailable: T,
               onChange: eS,
               onCameraUnavailable: e_.Z,
-              channelLimitReached: J,
+              channelLimitReached: Q,
               channelLimit: et,
               popoutOpen: i,
               onPopoutClick: n
@@ -753,7 +753,7 @@ let eM = function(e) {
           currentUser: S,
           exitFullScreen: d,
           canGoLive: B,
-          hasPermission: k
+          hasPermission: M
         }), m === eo.BK.MicPushToEnable ? (0, r.jsx)(p.yRy, {
           renderPopout: e => {
             let {

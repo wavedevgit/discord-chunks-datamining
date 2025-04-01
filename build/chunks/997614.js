@@ -70,9 +70,9 @@ function T(e) {
   } = e, {
     parentAnalyticsLocation: R
   } = (0, u.ZP)(), {
-    Component: M,
+    Component: k,
     events: {
-      onMouseEnter: k,
+      onMouseEnter: M,
       onMouseLeave: L
     }
   } = (0, a.j)(), D = t.getGuildId(), {
@@ -95,11 +95,11 @@ function T(e) {
     location: "ActionBarSoundboardButton"
   });
 
-  function J() {
+  function Q() {
     return W ? P.NW.string(P.t["Ox4/zc"]) : U ? P.NW.string(P.t["+YBKYG"]) : B ? P.NW.string(P.t.X1lQlp) : void 0
   }
 
-  function Q(e) {
+  function J(e) {
     null != D && (0, c.jW)(e, async () => {
       let {
         default: e
@@ -145,16 +145,16 @@ function T(e) {
     },
     children: e => q ? (0, r.jsx)(v.d, Z(S({
       themeable: T,
-      label: J(),
-      iconComponent: M,
+      label: Q(),
+      iconComponent: k,
       disabled: F,
-      onContextMenu: Q
+      onContextMenu: J
     }, e), {
       onClick: t => {
         (0, j.v)(R, j.d.SOUNDBOARD), null == e || e.onClick(t)
       },
       onMouseEnter: t => {
-        e.onMouseEnter(t), k()
+        e.onMouseEnter(t), M()
       },
       onMouseLeave: () => {
         e.onMouseLeave(), L()
@@ -163,10 +163,10 @@ function T(e) {
       className: ""
     })) : (0, r.jsx)(v.Z, Z(S({
       themeable: T,
-      label: J(),
+      label: Q(),
       iconComponent: s.KY1,
       disabled: F,
-      onContextMenu: Q
+      onContextMenu: J
     }, e), {
       onClick: t => {
         (0, j.v)(R, j.d.SOUNDBOARD), null == e || e.onClick(t)

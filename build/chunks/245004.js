@@ -119,7 +119,7 @@ function y(e) {
 let O = function(e) {
   let {
     guild: t
-  } = e, n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), s = (0, l.Ek)(t, "GuildBoostingMarketingTopPerksCards");
+  } = e, n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), s = (0, l.Ek)(t.id, "GuildBoostingMarketingTopPerksCards");
   return (0, r.jsxs)("div", {
     className: d.wrapper,
     children: [(0, r.jsx)(o.X6q, {

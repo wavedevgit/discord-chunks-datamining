@@ -23,14 +23,14 @@ var r = n(200651),
   _ = n(984370),
   E = n(797614),
   j = n(108427),
-  O = n(210887),
-  C = n(695346),
+  C = n(210887),
+  O = n(695346),
   S = n(594174),
   v = n(626135),
   T = n(260722),
   I = n(914788),
-  y = n(841409),
-  A = n(652262),
+  A = n(841409),
+  y = n(652262),
   P = n(880257),
   R = n(631885),
   D = n(830746),
@@ -134,30 +134,30 @@ function Y() {
     t = (0, R.M8)(),
     n = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE),
     s = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()),
-    a = (0, A.M)(),
+    a = (0, y.M)(),
     {
       selectedTab: l,
       handleTabChange: m
-    } = (0, y.Z)(),
+    } = (0, A.Z)(),
     h = (0, b.Dt)(),
     f = S.default.getCurrentUser(),
     _ = null != e,
-    O = s && null != f && !_;
+    C = s && null != f && !_;
   (0, g.ZP)(() => {
     (0, j.e)("family-center"), T.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
       forceTrack: !0
     })
   });
-  let C = {
+  let O = {
       isConsideredAdult: e,
       numOfAcceptedRequests: t,
       selectedTab: l,
       selectedTeenId: a
     },
-    D = i.useRef(C);
+    D = i.useRef(O);
   return (i.useEffect(() => {
-    D.current = C
+    D.current = O
   }), i.useEffect(() => {
     if (s && _) {
       let {
@@ -177,8 +177,8 @@ function Y() {
       })
     }
   }, [s, _]), i.useEffect(() => {
-    O && (0, p.mN)(L.L0.FAMILY_CENTER)
-  }, [O]), O) ? null : (0, r.jsxs)("main", {
+    C && (0, p.mN)(L.L0.FAMILY_CENTER)
+  }, [C]), C) ? null : (0, r.jsxs)("main", {
     className: V.container,
     "aria-label": U.NW.string(M.Z.RZqaJi),
     children: [(0, r.jsx)(N.yY, {
@@ -202,10 +202,10 @@ function Y() {
 function K() {
   let {
     analyticsLocations: e
-  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), l = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), _ = (0, A.M)(), D = (0, c.e7)([O.Z], () => O.Z.theme), {
+  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), l = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), _ = (0, y.M)(), D = (0, c.e7)([C.Z], () => C.Z.theme), {
     selectedTab: Z,
     handleTabChange: w
-  } = (0, y.Z)(), G = (0, b.Dt)(), H = S.default.getCurrentUser(), Y = null != t, K = l && null != H && !Y;
+  } = (0, A.Z)(), G = (0, b.Dt)(), H = S.default.getCurrentUser(), Y = null != t, K = l && null != H && !Y;
   (0, g.ZP)(() => {
     m.Y(W.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && T.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
@@ -240,8 +240,8 @@ function K() {
         })
       }
     }, [l, Y]), i.useEffect(() => {
-      let e = C.Ex.getSetting();
-      l && t && void 0 === e && C.Ex.updateSetting(!0)
+      let e = O.Ex.getSetting();
+      l && t && void 0 === e && O.Ex.updateSetting(!0)
     }, [l, t]), i.useEffect(() => {
       K && (0, p.mN)(L.L0.FAMILY_CENTER)
     }, [K]), K) return null;

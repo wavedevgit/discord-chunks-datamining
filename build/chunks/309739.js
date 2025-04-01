@@ -22,19 +22,19 @@ var r = n(200651),
   _ = n(430824),
   E = n(63063),
   j = n(358085),
-  O = n(709054),
-  C = n(362352),
+  C = n(709054),
+  O = n(362352),
   S = n(413182),
   v = n(695346),
   T = n(726985),
   I = n(981631),
-  y = n(388032),
-  A = n(894884),
+  A = n(388032),
+  y = n(894884),
   P = n(685786);
 
 function R(e) {
   let t = () => {
-    v.SE.updateSetting(e ? O.default.keys(_.Z.getGuilds()) : [])
+    v.SE.updateSetting(e ? C.default.keys(_.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -56,15 +56,15 @@ function R(e) {
       }
       return e
     }({
-      header: y.NW.string(y.t["uUr+GR"]),
-      confirmText: y.NW.string(y.t.gm1Ven),
-      cancelText: y.NW.string(y.t.p89ACg),
+      header: A.NW.string(A.t["uUr+GR"]),
+      confirmText: A.NW.string(A.t.gm1Ven),
+      cancelText: A.NW.string(A.t.p89ACg),
       onCancel: t,
       confirmButtonColor: m.zxk.Colors.BRAND
     }, e), i = i = {
       children: (0, r.jsx)(m.Text, {
         variant: "text-md/normal",
-        children: y.NW.string(y.t.EFu2Ki)
+        children: A.NW.string(A.t.EFu2Ki)
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
@@ -82,8 +82,8 @@ function R(e) {
 function D() {
   let e = v.G6.useSetting(),
     t = v.Wz.useSetting(),
-    n = (0, C.Yd)("activity privacy tab"),
-    i = j.isPlatformEmbedded ? y.NW.string(y.t.MznbeH) : y.NW.string(y.t.oKqC4u),
+    n = (0, O.Yd)("activity privacy tab"),
+    i = j.isPlatformEmbedded ? A.NW.string(A.t.MznbeH) : A.NW.string(A.t.oKqC4u),
     s = e => {
       v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
     },
@@ -92,13 +92,13 @@ function D() {
     },
     o = [{
       value: d.E5.ON,
-      label: y.NW.string(y.t.UzGMHx)
+      label: A.NW.string(A.t.UzGMHx)
     }, {
       value: d.E5.ON_FOR_LARGE_GUILDS,
-      label: y.NW.string(y.t.OFqxQU)
+      label: A.NW.string(A.t.OFqxQU)
     }, {
       value: d.E5.OFF,
-      label: y.NW.string(y.t.MIgNPD)
+      label: A.NW.string(A.t.MIgNPD)
     }];
   return (0, r.jsx)(b.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS,
@@ -106,20 +106,20 @@ function D() {
       children: [(0, r.jsx)(m.vwX, {
         tag: m.RB0.H5,
         className: P.marginBottom8,
-        children: y.NW.string(y.t["8ka8lp"])
+        children: A.NW.string(A.t["8ka8lp"])
       }), (0, r.jsx)(m.j7V, {
         value: e,
         onChange: e => v.G6.updateSetting(e),
         note: i,
-        children: y.NW.string(y.t["4q/Ewc"])
+        children: A.NW.string(A.t["4q/Ewc"])
       }), n ? (0, r.jsxs)(m.xJW, {
         tag: m.RB0.H3,
-        title: y.NW.string(y.t.ffGYGx),
+        title: A.NW.string(A.t.ffGYGx),
         children: [(0, r.jsx)(m.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: P.marginBottom8,
-          children: y.NW.format(y.t.aUxRra, {
+          children: A.NW.format(A.t.aUxRra, {
             helpdeskArticle: E.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS)
           })
         }), (0, r.jsx)(m.q4e, {
@@ -129,11 +129,11 @@ function D() {
         })]
       }) : (0, r.jsx)(m.j7V, {
         value: t === d.E5.OFF,
-        note: y.NW.format(y.t["+5/xu7"], {
+        note: A.NW.format(A.t["+5/xu7"], {
           helpdeskArticle: E.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
         onChange: e => s(!e),
-        children: y.NW.string(y.t.D5GXTU)
+        children: A.NW.string(A.t.D5GXTU)
       }), (0, r.jsx)(m.$i$, {
         className: a()(P.marginBottom20, P.marginTop20)
       })]
@@ -151,17 +151,17 @@ function Z() {
       children: [(0, r.jsx)(m.vwX, {
         tag: m.RB0.H5,
         className: P.marginBottom8,
-        children: y.NW.string(y.t.VOszPD)
+        children: A.NW.string(A.t.VOszPD)
       }), (0, r.jsx)(m.j7V, {
         value: e,
-        note: y.NW.string(y.t.Hdh7sb),
+        note: A.NW.string(A.t.Hdh7sb),
         onChange: e => v.cP.updateSetting(e),
-        children: y.NW.string(y.t.WEWQQk)
+        children: A.NW.string(A.t.WEWQQk)
       }), (0, r.jsx)(m.j7V, {
         value: t,
-        note: y.NW.string(y.t.Czr3Bg),
+        note: A.NW.string(A.t.Czr3Bg),
         onChange: e => v.Ou.updateSetting(e),
-        children: y.NW.string(y.t.UUvJVl)
+        children: A.NW.string(A.t.UUvJVl)
       })]
     })
   })
@@ -174,7 +174,7 @@ function w() {
       className: P.marginBottom40,
       children: (0, r.jsx)(m.ToO, {
         type: m.ToO.Types.PRIMARY,
-        body: y.NW.format(y.t.xvCsx8, {
+        body: A.NW.format(A.t.xvCsx8, {
           termsLink: I.EYA.TERMS,
           privacyLink: I.EYA.PRIVACY
         })
@@ -185,15 +185,15 @@ function w() {
 let k = e => {
   switch (e.type) {
     case I.ABu.SPOTIFY:
-      return y.NW.format(y.t["5sYPnp"], {
+      return A.NW.format(A.t["5sYPnp"], {
         name: e.name
       });
     case I.ABu.CRUNCHYROLL:
-      return y.NW.format(y.t.Ge29Z2, {
+      return A.NW.format(A.t.Ge29Z2, {
         name: e.name
       });
     default:
-      return y.NW.format(y.t.nmMsys, {
+      return A.NW.format(A.t.nmMsys, {
         game: e.name
       })
   }
@@ -209,17 +209,17 @@ function W(e) {
   let l = h.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.j7V, {
-      className: A.switchRowContainer,
+      className: y.switchRowContainer,
       hideBorder: !0,
       value: n,
       onChange: function(e) {
         s(e), g.Z.setShowActivity(t.type, t.id, e)
       },
       children: (0, r.jsxs)("div", {
-        className: A.activitySwitchRow,
+        className: y.activitySwitchRow,
         children: [(0, r.jsx)("img", {
           alt: l.name,
-          className: A.connectionIcon,
+          className: y.connectionIcon,
           src: (0, u.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(m.Text, {
@@ -233,7 +233,7 @@ function W(e) {
         })]
       })
     }), (0, r.jsx)("div", {
-      className: A.divider
+      className: y.divider
     })]
   })
 }
@@ -253,12 +253,12 @@ function L() {
       children: [(0, r.jsx)(m.vwX, {
         tag: m.RB0.H5,
         className: P.marginBottom8,
-        children: y.NW.string(y.t["4F2KoK"])
+        children: A.NW.string(A.t["4F2KoK"])
       }), (0, r.jsx)(m.oil, {
-        className: A.searchInput,
+        className: y.searchInput,
         value: n,
         onChange: s,
-        placeholder: y.NW.string(y.t.WPrtoa)
+        placeholder: A.NW.string(A.t.WPrtoa)
       }), a.map(e => (0, r.jsx)(W, {
         account: e
       }, e.id))]
@@ -280,7 +280,7 @@ function B(e) {
   return s ? (0, r.jsx)(N.Z, {}) : (0, r.jsxs)(m.hjN, {
     className: t,
     tag: m.RB0.H1,
-    title: n ? y.NW.string(y.t.Cq98yM) : null,
+    title: n ? A.NW.string(A.t.Cq98yM) : null,
     children: [(0, r.jsx)(D, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {}), i && (0, r.jsx)(L, {})]
   })
 }

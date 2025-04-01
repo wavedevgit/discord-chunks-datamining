@@ -23,14 +23,14 @@ var i = n(990547),
   _ = n(377171),
   E = n(540059),
   j = n(621628),
-  O = n(243778),
-  C = n(18438),
+  C = n(243778),
+  O = n(18438),
   S = n(778825),
   v = n(665166),
   T = n(442933),
   I = n(715495),
-  y = n(158947),
-  A = n(351780),
+  A = n(158947),
+  y = n(351780),
   P = n(231765),
   R = n(813732),
   D = n(398140),
@@ -77,14 +77,14 @@ var i = n(990547),
   e_ = n(389650),
   eE = n(649157),
   ej = n(593648),
-  eO = n(327885),
-  eC = n(595242),
+  eC = n(327885),
+  eO = n(595242),
   eS = n(463153),
   ev = n(36192),
   eT = n(889029),
   eI = n(400287),
-  ey = n(554042),
-  eA = n(936982),
+  eA = n(554042),
+  ey = n(936982),
   eP = n(200645),
   eR = n(287490),
   eD = n(706060),
@@ -112,16 +112,16 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
   },
   eq = () => {
     let e = eK(),
-      [t] = (0, O.US)(e);
-    return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(y.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(B.Z, {}) : null
+      [t] = (0, C.US)(e);
+    return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(A.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(B.Z, {}) : null
   },
   eX = eP.Z,
   eJ = e => {
     let {
       unseenGiftCount: t,
-      showPrepaidPaymentPastDueWarning: O,
+      showPrepaidPaymentPastDueWarning: C,
       impressionSource: T,
-      numOfPendingFamilyRequests: y,
+      numOfPendingFamilyRequests: A,
       isOverlaySupported: L,
       isClipsBetaTagShowing: B = !1,
       shouldMergeGameSettings: eJ,
@@ -299,7 +299,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         },
         onSettingsClose: () => {
           o.Z.wait(() => {
-            (0, C.It)(), (0, u.P6)(), m.Z.clearSubsection(eU.oAB.PROFILE_CUSTOMIZATION)
+            (0, O.It)(), (0, u.P6)(), m.Z.clearSubsection(eU.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eU.Z5c.SETTINGS("profile-customization")
@@ -482,7 +482,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eF.NW.string(eH.Z.gntCQU),
         ariaLabel: eF.NW.string(eH.Z.gntCQU),
         element: ef.Z,
-        badgeCount: y,
+        badgeCount: A,
         newIndicator: (0, r.jsx)(l.IGR, {
           text: eF.NW.string(eF.t.y2b7CA),
           color: _.Z.BG_BRAND
@@ -532,7 +532,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t["Ig/XFR"]), eF.NW.string(eF.t["3fe7U1"]), eF.NW.string(eF.t["f6kk+v"])],
         label: eF.NW.string(eF.t["Ig/XFR"]),
         parent: eM.s6.CONNECTIONS,
-        element: eA.Z
+        element: ey.Z
       },
       [eM.s6.CONNECTIONS_CONNECTED_ACCOUNTS]: {
         section: eU.oAB.CONNECTIONS,
@@ -585,7 +585,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.GUILD_BOOSTING,
         searchableTitles: [eF.NW.string(eF.t["+CbP2t"])],
         label: eF.NW.string(eF.t["+CbP2t"]),
-        element: eC.Z
+        element: eO.Z
       },
       [eM.s6.SUBSCRIPTIONS]: {
         section: eU.oAB.SUBSCRIPTIONS,
@@ -593,7 +593,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eF.NW.string(eF.t.trSpHR)],
         label: eF.NW.string(eF.t.trSpHR),
         element: R.Z,
-        icon: O ? (0, r.jsx)(l.P4T, {
+        icon: C ? (0, r.jsx)(l.P4T, {
           size: "xs",
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
@@ -1116,7 +1116,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eF.NW.string(eF.t.AtCukJ),
         ariaLabel: eF.NW.string(eF.t.AtCukJ),
         element: P.Z,
-        predicate: () => A.Z.settingsVisible,
+        predicate: () => y.Z.settingsVisible,
         icon: (0, r.jsx)("img", {
           alt: "",
           src: n(348621),
@@ -1505,7 +1505,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.OVERLAY,
         searchableTitles: [eF.NW.string(eF.t["9cb1U1"]), eF.NW.string(eF.t.HcoRu7)],
         label: eF.NW.string(eF.t["9cb1U1"]),
-        element: eO.Z,
+        element: eC.Z,
         predicate: () => !eJ && L
       },
       [eM.s6.CHANGELOG]: {
@@ -1771,7 +1771,7 @@ let eY = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eU.oAB.TEXT_PLAYGROUND,
         searchableTitles: ["Text Playground"],
         label: "Text Playground",
-        element: ey.Z,
+        element: eA.Z,
         predicate: () => (0, er.D)() || U.Z.isDeveloper
       },
       [eM.s6.DESIGN_SYSTEMS]: {

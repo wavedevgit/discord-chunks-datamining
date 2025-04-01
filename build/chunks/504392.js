@@ -11,18 +11,18 @@ var r = t(200651),
   c = t(413335),
   d = t(984370),
   u = t(713081),
-  m = t(905128),
-  p = t(27237),
+  p = t(905128),
+  m = t(27237),
   x = t(51859),
   v = t(953478),
   _ = t(460608),
-  b = t(279604),
+  f = t(279604),
   g = t(332538),
-  j = t(535396),
-  Z = t(296260),
+  b = t(535396),
+  j = t(296260),
   h = t(388032),
-  f = t(133104);
-let N = [j.Us.LEVEL, j.Us.PERK];
+  Z = t(133104);
+let N = [b.Us.LEVEL, b.Us.PERK];
 
 function C(e) {
   let {
@@ -34,17 +34,17 @@ function C(e) {
   }, [n]), i.useEffect(() => {
     (0, u.jd)(n)
   }, [n, o]);
-  let C = (0, a.e7)([m.Z], () => m.Z.getStateForGuild(n)),
+  let C = (0, a.e7)([p.Z], () => p.Z.getStateForGuild(n)),
     w = i.useRef(!1);
   return (i.useEffect(() => {
     var e, r;
     if (null == t) return;
     let i = null == C ? void 0 : null === (r = C.powerups) || void 0 === r ? void 0 : null === (e = r.get) || void 0 === e ? void 0 : e.call(r, t);
-    null == i || w.current || ((0, b.KE)(n, i), w.current = !0)
+    null == i || w.current || ((0, f.KE)(n, i), w.current = !0)
   }, [n, t, null == C ? void 0 : C.powerups]), (null == C ? void 0 : C.catalog) == null) ? null : (0, r.jsxs)("div", {
-    className: f.container,
+    className: Z.container,
     children: [(0, r.jsxs)(d.Z, {
-      className: f.toolbar,
+      className: Z.toolbar,
       hideSearch: !0,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(d.Z.Icon, {
@@ -52,12 +52,12 @@ function C(e) {
         disabled: !0,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
-        children: h.NW.string(Z.Z.yv3DJC)
+        children: h.NW.string(j.Z.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
-      className: f.contentContainer,
+      className: Z.contentContainer,
       children: [(0, r.jsx)("div", {
-        className: f.powerupsContainer,
+        className: Z.powerupsContainer,
         children: N.map(e => {
           let t = C.catalog.get(e);
           if (null == t) return;
@@ -66,18 +66,18 @@ function C(e) {
             description: o
           } = function(e) {
             switch (e) {
-              case j.Us.LEVEL:
+              case b.Us.LEVEL:
                 return {
-                  title: h.NW.string(Z.Z["TXY/b2"]), description: h.NW.string(Z.Z.aJv4PD)
+                  title: h.NW.string(j.Z["TXY/b2"]), description: h.NW.string(j.Z.aJv4PD)
                 };
-              case j.Us.PERK:
+              case b.Us.PERK:
                 return {
-                  title: h.NW.string(Z.Z.TV3Vm5), description: h.NW.string(Z.Z.NHjM1t)
+                  title: h.NW.string(j.Z.TV3Vm5), description: h.NW.string(j.Z.NHjM1t)
                 }
             }
           }(e);
           return (0, r.jsxs)("div", {
-            className: f.powerupsSection,
+            className: Z.powerupsSection,
             children: [(0, r.jsxs)("div", {
               children: [(0, r.jsx)(l.X6q, {
                 color: "header-primary",
@@ -89,19 +89,19 @@ function C(e) {
                 children: o
               })]
             }), (0, r.jsx)("div", {
-              className: s()(f.powerupContainer, {
-                [f.powerupsLevelContainer]: e === j.Us.LEVEL
+              className: s()(Z.powerupContainer, {
+                [Z.powerupsLevelContainer]: e === b.Us.LEVEL
               }),
               children: t.map((e, i) => {
                 switch (e.type) {
-                  case j.Us.LEVEL:
-                    return (0, r.jsx)(p.ZP, {
+                  case b.Us.LEVEL:
+                    return (0, r.jsx)(m.ZP, {
                       guildId: n,
                       index: i,
                       powerup: e,
                       nextPowerup: t[i + 1]
                     }, "powerup-".concat(e.skuId));
-                  case j.Us.PERK:
+                  case b.Us.PERK:
                     return (0, r.jsx)(x.Z, {
                       guildId: n,
                       powerup: e
@@ -112,7 +112,7 @@ function C(e) {
           }, "section-".concat(e))
         })
       }), (0, r.jsxs)("div", {
-        className: f.sidebarContainer,
+        className: Z.sidebarContainer,
         children: [(0, r.jsx)(v.Z, {
           guildId: n
         }), (0, r.jsx)(_.Z, {

@@ -41,9 +41,9 @@ function x(e) {
 function _() {
   let [e] = i.useState(() => m.ZP.getEnableHardwareAcceleration()), t = p.bm.useSetting(), n = p.Sb.useSetting(), _ = (0, s.e7)([u.Z], () => u.Z.testModeApplicationId), E = (0, s.e7)([g.ZP], () => g.ZP.showPlayAgain), j = i.useCallback(e => {
     p.bm.updateSetting(!e)
-  }, []), O = i.useCallback(e => {
-    e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, x({}, e))) : l.mc()
   }, []), C = i.useCallback(e => {
+    e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, x({}, e))) : l.mc()
+  }, []), O = i.useCallback(e => {
     (0, c.BV)(e, o.Z.USER_SETTINGS)
   }, []), S = i.useCallback(e => {
     (0, a.h7j)(t => {
@@ -104,7 +104,7 @@ function _() {
       children: (0, r.jsx)(a.j7V, {
         value: null != _,
         note: b.NW.string(b.t["52hMnJ"]),
-        onChange: O,
+        onChange: C,
         children: b.NW.string(b.t.erOqlp)
       })
     }), (0, r.jsx)(d.F, {
@@ -112,7 +112,7 @@ function _() {
       children: (0, r.jsx)(a.j7V, {
         value: E,
         note: b.NW.string(b.t["B/qU4O"]),
-        onChange: C,
+        onChange: O,
         children: b.NW.string(b.t.qDZryM)
       })
     })]

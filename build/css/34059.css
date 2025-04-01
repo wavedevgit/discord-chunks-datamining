@@ -1,6 +1,6 @@
 /**
   Module ID: 34059
-  Original File Name: cc2b1687b0c616e0
+  Original File Name: d2b7ef00f04642a7
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -6002,6 +6002,17 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     gap: 4px
 }
 
+.buttonContainer__6ca73 {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.button__6ca73 {
+    margin-right: 8px
+}
+
 .searchBar__3e00d {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
@@ -6519,17 +6530,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     justify-self: flex-end;
     color: var(--interactive-normal);
     min-width: 24px
-}
-
-.buttonContainer__6ca73 {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-
-.button__6ca73 {
-    margin-right: 8px
 }
 
 .sharePromptContainer__56d6c {
@@ -9491,6 +9491,112 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .clickableChannelTextArea_d8b277 {
     cursor: pointer
+}
+
+.chatHeaderBar_a53846 {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    --__header-bar-background: var(--background-primary)
+}
+
+.chatHeaderBar_a53846:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    box-shadow: var(--elevation-low);
+    z-index: 1;
+    pointer-events: none
+}
+
+.chatHeaderBarInfo_a53846 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center
+}
+
+.chatHeaderBarText_a53846 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px
+}
+
+.chatHeaderBarButton_a53846 {
+    margin-left: 16px;
+    padding: 12px 8px;
+    background-color: var(--bg-mod-subtle);
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-sm)
+}
+
+.chatHeaderBarButtonInner_a53846 {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.voiceIcon_a53846 {
+    color: var(--interactive-active)
+}
+
+.voiceIconRinging_a53846 {
+    color: var(--text-danger)
+}
+
+.guildIcon_a53846 {
+    align-items: center;
+    color: var(--text-normal);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%
+}
+
+.mask_a53846 {
+    display: block
+}
+
+.guildAcronym_a53846 {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.guildIconWithoutImage_a53846 {
+    background-color: var(--background-tertiary)
+}
+
+.theme-dark .themed_a53846 {
+    background: var(--bg-overlay-2,var(--__header-bar-background))
+}
+
+.theme-light .themed_a53846 {
+    background: var(--bg-overlay-1,var(--__header-bar-background))
+}
+
+.visual-refresh .chatHeaderBar_a53846 {
+    padding-left: calc(var(--custom-message-margin-horizontal) + var(--custom-chat-aligned-icon-offset));
+    border-bottom: 1px solid var(--border-subtle);
+    --__header-bar-background: var(--background-base-lower)
+}
+
+.visual-refresh .chatHeaderBar_a53846:after {
+    display: none
+}
+
+.visual-refresh .guildIconWithoutImage_a53846 {
+    background-color: var(--background-mod-normal)
+}
+
+.enable-forced-colors.visual-refresh .container_a53846 {
+    border-bottom-width: 1px
 }
 
 .chat_f75fb0 {
@@ -15221,4 +15327,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=cc2b1687b0c616e0.css.map*/
+/*# sourceMappingURL=d2b7ef00f04642a7.css.map*/

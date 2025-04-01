@@ -30,9 +30,9 @@ let f = function(e) {
       tension: 120,
       friction: 12
     }
-  }), O = {
+  }), C = {
     section: p.jXE.MARKETING_FLOATING_CTA
-  }, C = (0, o.ZP)(), S = (0, l.wjy)(C);
+  }, O = (0, o.ZP)(), S = (0, l.wjy)(O);
   return (0, r.jsx)(a.animated.div, {
     className: s()(h.wrapper, {
       [h.fullscreenWrapper]: f,
@@ -46,11 +46,11 @@ let f = function(e) {
           [h.subButton]: S
         }),
         subscriptionTier: null !== (n = null != N ? N : null == x ? void 0 : x.sku_id) && void 0 !== n ? n : E,
-        premiumModalAnalyticsLocation: O,
+        premiumModalAnalyticsLocation: C,
         isPersistentCTA: !0
       }), (0, r.jsx)(u.Z, {
         className: h.button,
-        premiumModalAnalyticsLocation: O
+        premiumModalAnalyticsLocation: C
       })]
     })
   })

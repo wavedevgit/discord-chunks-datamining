@@ -26,12 +26,12 @@ var r = n(392711),
 
 function I(e) {
   var t, n;
-  return null !== (n = null === (t = c.Z.getConnectionStats().find(t => t.connection.context === e)) || void 0 === t ? void 0 : t.stats.transport.outboundBitrateEstimate) && void 0 !== n ? n : null
+  return null !== (n = null === (t = c.Z.getFirstConnectionStatsByContext(e)) || void 0 === t ? void 0 : t.stats.transport.outboundBitrateEstimate) && void 0 !== n ? n : null
 }
 
 function S(e) {
   var t, n;
-  return null !== (n = null === (t = c.Z.getConnectionStats().find(t => t.connection.context === e)) || void 0 === t ? void 0 : t.stats.transport.inboundBitrateEstimate) && void 0 !== n ? n : null
+  return null !== (n = null === (t = c.Z.getFirstConnectionStatsByContext(e)) || void 0 === t ? void 0 : t.stats.transport.inboundBitrateEstimate) && void 0 !== n ? n : null
 }
 
 function T() {
@@ -39,8 +39,8 @@ function T() {
   let e = {};
   for (let s of ["videohookFrames", "hybridDxgiFrames", "hybridGdiFrames", "hybridVideohookFrames", "hybridGraphicsCaptureFrames", "hybridGdiBitBltFrames", "hybridGdiPrintWindowFrames", "quartzFrames", "screenCaptureKitFrames"]) {
     var t, n, r, i, o, a;
-    let l = null !== (o = null === (n = c.Z.getLastConnectionStats().find(e => e.connection.context === O.Yn.STREAM)) || void 0 === n ? void 0 : null === (t = n.stats.screenshare) || void 0 === t ? void 0 : t[s]) && void 0 !== o ? o : 0,
-      u = null !== (a = null === (i = c.Z.getConnectionStats().find(e => e.connection.context === O.Yn.STREAM)) || void 0 === i ? void 0 : null === (r = i.stats.screenshare) || void 0 === r ? void 0 : r[s]) && void 0 !== a ? a : 0;
+    let l = null !== (o = null === (n = c.Z.getLastConnectionStats().find(e => e.context === O.Yn.STREAM)) || void 0 === n ? void 0 : null === (t = n.stats.screenshare) || void 0 === t ? void 0 : t[s]) && void 0 !== o ? o : 0,
+      u = null !== (a = null === (i = c.Z.getFirstConnectionStatsByContext(O.Yn.STREAM)) || void 0 === i ? void 0 : null === (r = i.stats.screenshare) || void 0 === r ? void 0 : r[s]) && void 0 !== a ? a : 0;
     e[s] = u - l
   }
   let s = -1,
@@ -50,7 +50,7 @@ function T() {
 }
 
 function A(e) {
-  let t = c.Z.getConnectionStats().find(t => t.connection.context === e);
+  let t = c.Z.getFirstConnectionStatsByContext(e);
   if (null == t) return null;
   let n = t.stats.rtp.outbound.find(e => "video" === e.type);
   return null == n ? null : (0, o.lG)(null == n ? void 0 : n.encoderImplementationName)
@@ -58,7 +58,7 @@ function A(e) {
 
 function N(e, t) {
   if (null == t) return null;
-  let n = c.Z.getConnectionStats().find(t => t.connection.context === e);
+  let n = c.Z.getFirstConnectionStatsByContext(e);
   if (null == n) return null;
   let r = n.stats.rtp.inbound[t];
   if (null == r) return null;
@@ -68,7 +68,7 @@ function N(e, t) {
 
 function C(e, t, n) {
   var r, i, a, s;
-  let l = null === (r = c.Z.getConnectionStats().find(t => t.connection.context === e)) || void 0 === r ? void 0 : r.stats.rtp,
+  let l = null === (r = c.Z.getFirstConnectionStatsByContext(e)) || void 0 === r ? void 0 : r.stats.rtp,
     u = null;
   return t ? u = null !== (i = null == l ? void 0 : l.outbound.find(e => "video" === e.type)) && void 0 !== i ? i : null : null != n && (u = null !== (s = null == l ? void 0 : null === (a = l.inbound[n]) || void 0 === a ? void 0 : a.find(e => "video" === e.type)) && void 0 !== s ? s : null), (0, o.bU)(null == u ? void 0 : u.codec.name)
 }

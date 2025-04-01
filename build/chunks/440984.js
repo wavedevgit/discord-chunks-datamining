@@ -27,17 +27,17 @@ function _(e) {
     onClose: _,
     confettiCanvas: E,
     userWasChurned: j = !1,
-    userDiscountOffer: O
-  } = e, C = (0, o.ZP)(), S = (0, a.wj)(C) ? b : x, v = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    userDiscountOffer: C
+  } = e, O = (0, o.ZP)(), S = (0, a.wj)(O) ? b : x, v = i.useRef(null), [T, I] = i.useState(!1), A = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), y = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
-  }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
+  }), P = (0, m.T4)(y.amount, y.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   if (i.useEffect(() => {
-      null != v.current && null != y && I(!0)
-    }, [v, T, y]), null == O || null == y) return null;
+      null != v.current && null != A && I(!0)
+    }, [v, T, A]), null == C || null == A) return null;
   let D = f.NW.format(f.t.gPzMHR, {
-      numMonths: O.discount.user_usage_limit,
-      discountedPrice: y,
+      numMonths: C.discount.user_usage_limit,
+      discountedPrice: A,
       regularPrice: P
     }),
     Z = (0, r.jsx)("div", {
@@ -57,7 +57,7 @@ function _(e) {
       ref: v,
       children: (0, r.jsx)(l.hzk, {
         className: N.body,
-        children: null != y ? (0, r.jsxs)(r.Fragment, {
+        children: null != A ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("div", {
             className: N.discountAppliedBody,
             children: [(0, r.jsx)("img", {

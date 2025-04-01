@@ -419,7 +419,7 @@ let i = {
     neverLoadBeforeConnectionOpen: !0
   },
   GuildPowerupsManager: {
-    actions: ["LOGOUT", "GUILD_POWERUP_ENTITLEMENTS_CREATE", "GUILD_POWERUP_ENTITLEMENTS_DELETE"],
+    actions: ["GUILD_POWERUP_ENTITLEMENTS_CREATE", "GUILD_POWERUP_ENTITLEMENTS_DELETE"],
     inlineRequire: () => n(909123).Z,
     neverLoadBeforeConnectionOpen: !0,
     hasStoreChangeListeners: !0

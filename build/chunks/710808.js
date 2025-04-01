@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => y
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(726985),
   E = n(981631),
   j = n(65154),
-  O = n(388032),
-  C = n(685786);
+  C = n(388032),
+  O = n(685786);
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,25 +63,25 @@ async function T() {
 
 function I(e) {
   (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, v(S({
-    header: O.NW.string(O.t["7UXEFx"]),
-    confirmText: O.NW.string(O.t.BddRzc),
-    cancelText: O.NW.string(O.t["ETE/oK"]),
+    header: C.NW.string(C.t["7UXEFx"]),
+    confirmText: C.NW.string(C.t.BddRzc),
+    cancelText: C.NW.string(C.t["ETE/oK"]),
     onCancel: t.onClose,
     onConfirm: () => l.Z.setDebugLogging(e)
   }, t), {
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
-      children: O.NW.string(O.t.IYPrRk)
+      children: C.NW.string(C.t.IYPrRk)
     })
   })))
 }
 
-function y(e) {
+function A(e) {
   let {
     refreshStyles: t = !1
   } = e, [n, d] = i.useState(!1), {
-    debugLogging: y,
-    aecDumpEnabled: A
+    debugLogging: A,
+    aecDumpEnabled: y
   } = (0, s.cj)([f.Z], () => ({
     aecDumpSupported: f.Z.isAecDumpSupported(),
     debugLogging: f.Z.getDebugLogging(),
@@ -97,12 +97,12 @@ function y(e) {
           }
         }), await (0, m.E)(E.GU0.RTC),
         function() {
-          let e = O.NW.string(O.t["fKBB8/"]),
-            t = O.NW.string(O.t.BvyxEx);
+          let e = C.NW.string(C.t["fKBB8/"]),
+            t = C.NW.string(C.t.BvyxEx);
           (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, v(S({
             header: e,
             confirmButtonColor: a.zxk.Colors.BRAND,
-            confirmText: O.NW.string(O.t.BddRzc)
+            confirmText: C.NW.string(C.t.BddRzc)
           }, n), {
             children: (0, r.jsx)(a.Text, {
               variant: "text-md/normal",
@@ -113,16 +113,16 @@ function y(e) {
     } catch (e) {
       ! function(e) {
         var t;
-        let n = O.NW.string(O.t.QZg0Jy),
-          i = null != e ? e : O.NW.string(O.t.VzHcSk),
+        let n = C.NW.string(C.t.QZg0Jy),
+          i = null != e ? e : C.NW.string(C.t.VzHcSk),
           s = null === (t = (0, g.hp)(g.u.DEBUG_LOG_UPLOAD_FAILED)) || void 0 === t ? void 0 : t.errorCode,
-          l = O.NW.formatToPlainString(O.t["ejOT9/"], {
+          l = C.NW.formatToPlainString(C.t["ejOT9/"], {
             errorCode: s
           });
         (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(S({
           header: n,
           confirmButtonColor: a.zxk.Colors.BRAND,
-          confirmText: O.NW.string(O.t.BddRzc)
+          confirmText: C.NW.string(C.t.BddRzc)
         }, e), {
           children: (0, r.jsxs)("div", {
             style: {
@@ -156,18 +156,18 @@ function y(e) {
             isStreamInfoOverlayEnabled: e
           })
         },
-        note: O.NW.string(O.t.kBXuW1),
+        note: C.NW.string(C.t.kBXuW1),
         hideBorder: t,
-        children: O.NW.string(O.t["0CEP6e"])
+        children: C.NW.string(C.t["0CEP6e"])
       })
     }), (0, r.jsx)(p.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
       children: (0, r.jsx)(a.j7V, {
-        value: A,
+        value: y,
         onChange: e => l.Z.setAecDump(e),
-        note: O.NW.string(O.t["xl9+Iy"]),
+        note: C.NW.string(C.t["xl9+Iy"]),
         hideBorder: t,
-        children: O.NW.string(O.t["r6K+TE"])
+        children: C.NW.string(C.t["r6K+TE"])
       })
     }), (0, r.jsxs)(p.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
@@ -175,33 +175,33 @@ function y(e) {
         hideBorder: !0,
         value: R,
         onChange: e => c.TC(e),
-        note: O.NW.string(O.t.Lm72RU),
-        children: O.NW.string(O.t.U4FgFB)
+        note: C.NW.string(C.t.Lm72RU),
+        children: C.NW.string(C.t.U4FgFB)
       }), (0, r.jsx)(a.xJW, {
         children: (0, r.jsx)(u.Z, {
-          className: C.marginBottom20,
+          className: O.marginBottom20,
           children: (0, r.jsx)(u.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, r.jsx)(a.zxk, {
               size: a.zxk.Sizes.SMALL,
               onClick: () => c.z4(),
-              children: O.NW.string(O.t.nJnOHB)
+              children: C.NW.string(C.t.nJnOHB)
             })
           })
         })
       }), t ? null : (0, r.jsx)(a.$i$, {
-        className: C.marginBottom20
+        className: O.marginBottom20
       })]
     }), (0, r.jsx)(p.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(a.j7V, {
           hideBorder: !0,
-          value: y,
+          value: A,
           onChange: I,
-          note: O.NW.string(O.t["/7ak9f"]),
-          children: O.NW.string(O.t["726JHB"])
+          note: C.NW.string(C.t["/7ak9f"]),
+          children: C.NW.string(C.t["726JHB"])
         }), (0, r.jsx)(a.xJW, {
           children: (0, r.jsxs)(u.Z, {
             children: [(0, r.jsx)(u.Z.Child, {
@@ -211,7 +211,7 @@ function y(e) {
                 disabled: n,
                 size: a.zxk.Sizes.SMALL,
                 onClick: D,
-                children: O.NW.string(O.t["3UB9aW"])
+                children: C.NW.string(C.t["3UB9aW"])
               })
             }), (0, r.jsx)(u.Z.Child, {
               grow: 0,
@@ -219,7 +219,7 @@ function y(e) {
               children: (0, r.jsx)(a.zxk, {
                 size: a.zxk.Sizes.SMALL,
                 onClick: T,
-                children: O.NW.string(O.t.nuPtYm)
+                children: C.NW.string(C.t.nuPtYm)
               })
             })]
           })
@@ -228,8 +228,8 @@ function y(e) {
     })]
   });
   return t ? Z : (0, r.jsx)(a.hjN, {
-    className: C.marginBottom40,
-    title: O.NW.string(O.t.OFpL3d),
+    className: O.marginBottom40,
+    title: C.NW.string(C.t.OFpL3d),
     children: Z
   })
 }

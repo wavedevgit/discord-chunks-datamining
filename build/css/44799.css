@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 3e70b78a1b19c3de
+  Original File Name: e7fd14cf6e862c15
 **/
 .container__98cbd {
     min-width: 220px;
@@ -122,45 +122,45 @@
     }
 }
 
-.container__2b26c {
+.container__6f9f7 {
     display: flex;
     gap: var(--spacing-8)
 }
 
-.tooltipContainer__2b26c {
+.tooltipContainer__6f9f7 {
     display: flex;
     flex-direction: column;
     text-align: center
 }
 
-.primaryButton__2b26c {
+.primaryButton__6f9f7 {
     flex-grow: 1
 }
 
-.secondaryButton__2b26c {
+.secondaryButton__6f9f7 {
     min-width: 0;
     width: auto
 }
 
-.buttonInner__2b26c {
+.buttonInner__6f9f7 {
     align-items: center;
     justify-content: center;
     display: flex
 }
 
-.secondaryButtonInner__2b26c {
+.secondaryButtonInner__6f9f7 {
     gap: 2px
 }
 
-.buttonWrapper__2b26c {
+.buttonWrapper__6f9f7 {
     flex-grow: 1
 }
 
-.dot__2b26c {
+.dot__6f9f7 {
     margin: 0 4px 0 6px
 }
 
-.boost__2b26c {
+.boost__6f9f7 {
     align-self: center;
     justify-self: center
 }
@@ -499,4 +499,4 @@
     border-left: 1px solid var(--border-subtle)
 }
 
-/*# sourceMappingURL=3e70b78a1b19c3de.css.map*/
+/*# sourceMappingURL=e7fd14cf6e862c15.css.map*/

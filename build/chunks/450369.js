@@ -35,8 +35,8 @@ var r = n(200651),
   A = n(88751),
   w = n(252132),
   R = n(329262),
-  M = n(981631),
-  k = n(354459),
+  k = n(981631),
+  M = n(354459),
   L = n(50730);
 
 function D(e) {
@@ -145,7 +145,7 @@ let U = 16 / 9,
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), N = i.useCallback((e, t) => {
-      if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, v.V9)(t) === e.id && t.state !== M.jm8.ENDED).length) {
+      if (e.type === M.fO.STREAM && 0 === j.filter(t => (0, v.V9)(t) === e.id && t.state !== k.jm8.ENDED).length) {
         if (!(0, y.p9)(l, T.Z, S.Z, Z.Z, C.Z)[0]) return;
         (0, p.rn)((0, v.my)(e.id), {
           forceMultiple: t.shiftKey
@@ -155,7 +155,7 @@ let U = 16 / 9,
     return (0, r.jsx)(w.Z, {
       participant: n,
       aspectRatio: U,
-      fit: n.type === k.fO.USER ? x.L.COVER : void 0,
+      fit: n.type === M.fO.USER ? x.L.COVER : void 0,
       blocked: g,
       ignored: _,
       channel: l,
@@ -167,7 +167,7 @@ let U = 16 / 9,
       paused: !1,
       pulseSpeakingIndicator: !f.enabled,
       width: o,
-      children: a && n.type === k.fO.USER && (0, r.jsx)(R.Z, {})
+      children: a && n.type === M.fO.USER && (0, r.jsx)(R.Z, {})
     }, m)
   },
   H = i.memo(function(e) {
@@ -187,7 +187,7 @@ let U = 16 / 9,
     let {
       user: x
     } = i, O = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), E = (0, s.e7)([A.ZP], () => A.ZP.isModerator(x.id, l.id), [l.id, x.id]);
-    if (null == O || O.type === k.fO.ACTIVITY || O.type === k.fO.PRESENCE_EMBEDDED_ACTIVITY) return null;
+    if (null == O || O.type === M.fO.ACTIVITY || O.type === M.fO.PRESENCE_EMBEDDED_ACTIVITY) return null;
     let I = e => {
         (0, g.h)({
           type: a.ImpressionTypes.MENU,
@@ -201,9 +201,9 @@ let U = 16 / 9,
       },
       S = (e, t, i, o) => {
         switch (e.type) {
-          case k.fO.HIDDEN_STREAM:
-          case k.fO.STREAM:
-            I(k.TH.STREAM), (0, d.jW)(t, async () => {
+          case M.fO.HIDDEN_STREAM:
+          case M.fO.STREAM:
+            I(M.TH.STREAM), (0, d.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
@@ -214,24 +214,24 @@ let U = 16 / 9,
                 onInteraction: (0, _.u)("StreamContextMenu", u, {
                   entrypoint: o,
                   targetUserId: x.id,
-                  tileType: k.TH.STREAM
+                  tileType: M.TH.STREAM
                 })
               }))
             }, {
               context: p
             });
             return;
-          case k.fO.USER:
+          case M.fO.USER:
           default:
-            if (I(k.TH.USER), y && i) return (0, j.D)(t, x, l, {
+            if (I(M.TH.USER), y && i) return (0, j.D)(t, x, l, {
               context: p
             }, (e, t) => (0, _.o)({
               menuName: e,
               menuItemProps: t,
-              entrypoint: k.A5.THREE_DOT,
+              entrypoint: M.A5.THREE_DOT,
               targetUserId: x.id,
               location: u,
-              tileType: k.TH.USER
+              tileType: M.TH.USER
             }));
             (0, d.jW)(t, async () => {
               let {
@@ -246,7 +246,7 @@ let U = 16 / 9,
                 showChatItems: !1,
                 onInteraction: (0, _.u)("GuildChannelUserContextMenu", u, {
                   targetUserId: x.id,
-                  tileType: k.TH.USER
+                  tileType: M.TH.USER
                 })
               }))
             }, {
@@ -254,7 +254,7 @@ let U = 16 / 9,
             })
         }
       };
-    return O.type !== k.fO.USER || (null === (t = O.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? (0, r.jsx)(F, {
+    return O.type !== M.fO.USER || (null === (t = O.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? (0, r.jsx)(F, {
       stageParticipant: i,
       rtcParticipant: O,
       channel: l,
@@ -263,7 +263,7 @@ let U = 16 / 9,
       width: c,
       isModerator: E,
       onContextMenu: S,
-      inPopout: p === M.IlC.POPOUT
+      inPopout: p === k.IlC.POPOUT
     }) : (0, r.jsx)(B, {
       stageParticipant: i,
       rtcParticipant: O,
@@ -273,6 +273,6 @@ let U = 16 / 9,
       width: c,
       isModerator: E,
       onContextMenu: S,
-      inPopout: p === M.IlC.POPOUT
+      inPopout: p === k.IlC.POPOUT
     })
   })

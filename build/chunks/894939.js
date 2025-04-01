@@ -22,15 +22,15 @@ var r = n(200651),
   _ = n(581883),
   E = n(738486),
   j = n(918257),
-  O = n(970813),
-  C = n(726985),
+  C = n(970813),
+  O = n(726985),
   S = n(981631),
   v = n(710111),
   T = n(388032),
   I = n(647222),
-  y = n(685786);
+  A = n(685786);
 
-function A(e) {
+function y(e) {
   return (0, l.e7)([h.Z], () => {
     if (null == e) return null;
     let {
@@ -46,14 +46,14 @@ function P(e) {
     refreshStyles: t = !1
   } = e, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(g.F, {
-      setting: C.s6.VOICE_AND_VIDEO_SOUNDBOARD,
+      setting: O.s6.VOICE_AND_VIDEO_SOUNDBOARD,
       children: [(0, r.jsx)(j.Z, {
         refreshStyles: t
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(C.Z, {
         refreshStyles: t
       })]
     }), (0, r.jsxs)(g.F, {
-      setting: C.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
+      setting: O.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
       children: [t ? null : (0, r.jsx)(o.$i$, {
         className: I.callSoundsDivider
       }), (0, r.jsx)(R, {
@@ -64,7 +64,7 @@ function P(e) {
   return t ? n : (0, r.jsx)(o.hjN, {
     className: I.container,
     tag: o.RB0.H1,
-    titleClassName: y.__invalid_marginBottom16,
+    titleClassName: A.__invalid_marginBottom16,
     title: T.NW.string(T.t.ABjMWF),
     children: n
   })
@@ -75,15 +75,15 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = i.useState(v.hY), g = (0, N.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === N.zx.GLOBAL, O = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
+  } = (0, d.ZP)(), [s, c] = i.useState(v.hY), g = (0, N.tT)(s), _ = y(g), j = (null == g ? void 0 : g.type) === N.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
   i.useEffect(() => {
-    O && (0, f.tt)({
+    C && (0, f.tt)({
       location: n
     })
-  }, [O, n]), i.useEffect(() => {
+  }, [C, n]), i.useEffect(() => {
     (0, p.w)()
   }, []);
-  let C = i.useCallback((e, t) => {
+  let O = i.useCallback((e, t) => {
       let {
         inDropdown: n
       } = t;
@@ -111,11 +111,11 @@ function R(e) {
         onChange: e => {
           c(null == e ? v.hY : e.id)
         },
-        renderOptionSuffix: C,
+        renderOptionSuffix: O,
         hideDivider: !0
       }), (0, r.jsxs)(m.Z, {
         className: a()({
-          [y.marginTop20]: !t
+          [A.marginTop20]: !t
         }),
         title: T.NW.format(T.t.I2TsYG, {
           nitroWheelHook: () => (0, r.jsx)(o.SrA, {
@@ -131,7 +131,7 @@ function R(e) {
           onSelect: e => {
             null == e ? (0, f.aC)(s, n) : (0, f.SZ)(s, e, n)
           }
-        }), O && (0, r.jsx)(o.Wn, {
+        }), C && (0, r.jsx)(o.Wn, {
           className: I.notice,
           messageType: o.QYI.WARNING,
           children: T.NW.string(T.t.WkPsFR)
@@ -149,7 +149,7 @@ function D(e) {
   } = e, n = (0, l.e7)([_.Z], () => {
     var e, n, r;
     return null === (r = _.Z.settings.guilds) || void 0 === r ? void 0 : null === (n = r.guilds) || void 0 === n ? void 0 : null === (e = n[t]) || void 0 === e ? void 0 : e.joinSound
-  }), i = A(n);
+  }), i = y(n);
   if (null == n || null == i) return null;
   let {
     emojiId: s,

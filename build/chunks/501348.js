@@ -22,14 +22,14 @@ var r = n(200651),
   _ = n(600164),
   E = n(313201),
   j = n(540059),
-  O = n(605236),
-  C = n(786761),
+  C = n(605236),
+  O = n(786761),
   S = n(3148),
   v = n(739566),
   T = n(753206),
   I = n(311476),
-  y = n(921801),
-  A = n(594174),
+  A = n(921801),
+  y = n(594174),
   P = n(358085),
   R = n(210887),
   D = n(740492),
@@ -88,31 +88,31 @@ let Y = {
   J = "1337",
   Q = e => {
     let t = 0;
-    return [(0, C.e5)(z(H({}, (0, S.ZP)({
+    return [(0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.oZxkEh)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, S.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: (0, d.wj)(e) ? U.NW.string(U.t["WGb/v7"]) : U.NW.string(U.t["62m4m5"])
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, S.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.a0Byo6)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, S.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.bmwEWF)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, S.ZP)({
+    })), (0, O.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.hK9QW1)
     })), {
@@ -310,7 +310,7 @@ class ee extends i.Component {
     }) : (0, r.jsxs)(u.xJW, {
       className: G.marginTop8,
       title: (0, r.jsx)($, {}),
-      children: [(0, r.jsx)(w.i, {}), (0, r.jsx)(y.F, {
+      children: [(0, r.jsx)(w.i, {}), (0, r.jsx)(A.F, {
         setting: W.s6.APPEARANCE_ICON,
         children: (0, r.jsx)(k.c, {})
       }), (0, r.jsx)(u.j7V, {
@@ -350,7 +350,7 @@ class ee extends i.Component {
       isRefreshEnabled: e,
       density: t
     } = this.props;
-    return e ? (0, r.jsxs)(y.F, {
+    return e ? (0, r.jsxs)(A.F, {
       setting: W.s6.APPEARANCE_LIST_SPACING,
       children: [(0, r.jsxs)(u.xJW, {
         title: (0, r.jsx)("div", {
@@ -445,16 +445,16 @@ class ee extends i.Component {
     return (0, r.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: U.NW.string(U.t["iHH+k5"]),
-      children: [this.renderVisualRefreshOverride(), (0, r.jsxs)(y.F, {
+      children: [this.renderVisualRefreshOverride(), (0, r.jsxs)(A.F, {
         setting: W.s6.APPEARANCE_THEME,
         children: [this.renderPreview(), this.renderTheme()]
-      }), (0, r.jsx)(y.F, {
+      }), (0, r.jsx)(A.F, {
         setting: W.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
         children: this.renderDisplayMode()
-      }), this.renderListSpacing(), (0, r.jsx)(y.F, {
+      }), this.renderListSpacing(), (0, r.jsx)(A.F, {
         setting: W.s6.APPEARANCE_SCALING_SPACING,
         children: this.renderScalingAndSpacing()
-      }), (0, r.jsxs)(y.F, {
+      }), (0, r.jsxs)(A.F, {
         setting: W.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
         children: [this.renderTimestampHourCycle(), (0, r.jsx)(u.$i$, {
           className: G.marginTop8
@@ -523,10 +523,10 @@ class et extends ee {
   render() {
     let {
       density: e
-    } = this.props, t = (0, r.jsxs)(y.F, {
+    } = this.props, t = (0, r.jsxs)(A.F, {
       setting: W.s6.APPEARANCE_THEME,
       children: [this.renderPreview(), this.renderTheme()]
-    }), n = (0, r.jsx)(y.F, {
+    }), n = (0, r.jsx)(A.F, {
       setting: W.s6.APPEARANCE_ICON,
       children: (0, r.jsx)(k.c, {})
     }), i = [{
@@ -538,7 +538,7 @@ class et extends ee {
     }, {
       name: U.NW.string(U.t["4cuYHx"]),
       value: c.Pi.COZY
-    }], s = (0, r.jsxs)(y.F, {
+    }], s = (0, r.jsxs)(A.F, {
       setting: W.s6.APPEARANCE_LIST_SPACING,
       children: [(0, r.jsxs)(u.xJW, {
         title: (0, r.jsx)(u.Text, {
@@ -558,7 +558,7 @@ class et extends ee {
       }), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), a = (0, r.jsxs)(y.F, {
+    }), a = (0, r.jsxs)(A.F, {
       setting: W.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
       children: [(0, r.jsxs)(u.Kqy, {
         gap: 8,
@@ -604,7 +604,7 @@ class et extends ee {
       }), this.renderMessageGroupSpacingSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), l = (0, r.jsxs)(y.F, {
+    }), l = (0, r.jsxs)(A.F, {
       setting: W.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-lg/medium",
@@ -613,7 +613,7 @@ class et extends ee {
       }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), o = (0, r.jsx)(y.F, {
+    }), o = (0, r.jsx)(A.F, {
       setting: W.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), d = (0, r.jsx)(u.Text, {
@@ -633,7 +633,7 @@ class et extends ee {
   }
 }
 let en = e => {
-  (0, O.un)(e) || (0, O.EW)(e, {
+  (0, C.un)(e) || (0, C.EW)(e, {
     dismissAction: B.L.AUTO,
     forceTrack: !0
   })
@@ -649,7 +649,7 @@ function er() {
   (0, p.ZP)(() => {
     en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, l.cj)([R.Z, D.ZP, N.Z, A.default, x.Z], () => {
+  let c = (0, l.cj)([R.Z, D.ZP, N.Z, y.default, x.Z], () => {
       var e, t;
       return {
         theme: R.Z.theme,
@@ -660,7 +660,7 @@ function er() {
         zoom: N.Z.zoom,
         messageGroupSpacing: N.Z.messageGroupSpacing,
         displayCompactAvatars: D.ZP.displayCompactAvatars,
-        isStaff: null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
+        isStaff: null !== (t = null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
         gradientPreset: x.Z.gradientPreset
       }
     }),

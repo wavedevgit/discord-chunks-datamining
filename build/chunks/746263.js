@@ -21,7 +21,7 @@ let p = "Make sure you're only uploading text files!",
       onClick: l
     } = e, {
       deleteConfig: c
-    } = (0, u.E)();
+    } = (0, u.Eu)();
     return (0, r.jsxs)(o.P3F, {
       className: g.previewCard,
       onClick: () => {
@@ -60,18 +60,19 @@ function N() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, u.E)(), [n, s] = i.useState(), l = i.useRef(null), N = i.useCallback((e, n) => {
+  } = (0, u.Eu)(), [n, s] = i.useState(), N = i.useRef(null), b = i.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, d.Eo)(p);
     let [r, i] = n.split(",");
     if (!r.includes("text/plain")) return (0, d.Eo)(p);
-    t(JSON.parse(atob(i))), (0, d.XA)("Profile Effect (maybe??) imported!")
-  }, [t]), b = i.useCallback(e => {
+    let s = JSON.parse(atob(i));
+    s.id = (0, l.Z)(), t(s), (0, d.XA)("Profile Effect (maybe??) imported!")
+  }, [t]), x = i.useCallback(e => {
     var t;
     if ((null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null) {
       (0, d.Eo)("Error uploading file. Try again!");
       return
-    }(0, d.Kr)(e.currentTarget.files, N, d.Eo)
-  }, [N]);
+    }(0, d.Kr)(e.currentTarget.files, b, d.Eo)
+  }, [b]);
   return (0, r.jsxs)("div", {
     className: g.root,
     children: [null == n && (0, r.jsxs)(r.Fragment, {
@@ -101,8 +102,8 @@ function N() {
             color: "always-white",
             children: "Import Shared Config"
           }), (0, r.jsx)(c.Z, {
-            ref: l,
-            onChange: b,
+            ref: N,
+            onChange: x,
             multiple: !1
           })]
         }), (0, r.jsx)(o.zxk, {

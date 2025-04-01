@@ -31,28 +31,28 @@ function E(e) {
     onAvatarChange: s,
     sectionTitle: E,
     changeAvatarButtonText: j,
-    guildId: O,
-    className: C,
+    guildId: C,
+    className: O,
     disabled: S = !1,
     isTryItOutFlow: v = !1,
     forcedDivider: T,
     withHighlight: I = !1
-  } = e, y = I ? o.gtL : o.zxk, A = (0, u.Tq)({
+  } = e, A = I ? o.gtL : o.zxk, y = (0, u.Tq)({
     location: "AvatarSection"
   }), P = [];
-  A && P.push(l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
+  y && P.push(l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
   let [R, D] = (0, c.US)(P), Z = R === l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = (0, m._)(), {
     recentAvatarsLimit: k
   } = (0, d.pC)(w), W = i.useCallback(() => {
-    D(f.L.TAKE_ACTION), (0, p.$r)(N.pC.AVATAR, O, v, v ? _ : void 0)
-  }, [O, v, D]);
+    D(f.L.TAKE_ACTION), (0, p.$r)(N.pC.AVATAR, C, v, v ? _ : void 0)
+  }, [C, v, D]);
   return (0, r.jsx)(h.Z, {
-    className: C,
+    className: O,
     title: E,
     titleIcon: Z ? (0, r.jsx)(g.Z, {
       className: x.newBadge
     }) : void 0,
-    description: A ? b.NW.format(b.t.U4tZfX, {
+    description: y ? b.NW.format(b.t.U4tZfX, {
       recentAvatarsLimit: k,
       onClick: W
     }) : void 0,
@@ -61,7 +61,7 @@ function E(e) {
     forcedDivider: T,
     children: (0, r.jsxs)("div", {
       className: x.buttonsContainer,
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(A, {
         className: a()({
           [x.buttonHighlighted]: I
         }),
@@ -74,7 +74,7 @@ function E(e) {
         look: o.zxk.Looks.LINK,
         size: o.zxk.Sizes.SMALL,
         onClick: () => s(null),
-        children: null != O ? b.NW.string(b.t.TDjKDg) : b.NW.string(b.t.twB3f3)
+        children: null != C ? b.NW.string(b.t.TDjKDg) : b.NW.string(b.t.twB3f3)
       })]
     })
   })

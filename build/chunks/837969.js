@@ -146,7 +146,7 @@ function d(e) {
         R = r.useCallback(() => {
           !E && (g ? P(v(t, d), d) : T(!0))
         }, [v, t, P, g, E, d, T]),
-        M = r.useCallback(e => {
+        k = r.useCallback(e => {
           !e.currentTarget.contains(e.relatedTarget) && requestAnimationFrame(() => {
             if (null == c(s(v, t, d))) {
               P(t);
@@ -155,19 +155,19 @@ function d(e) {
             N(!1)
           })
         }, [v, t, d, P]),
-        k = r.useRef(null);
+        M = r.useRef(null);
       r.useLayoutEffect(() => {
-        let e = k.current;
-        if (null != e) return e.addEventListener("focusin", w), e.addEventListener("focus", R), e.addEventListener("focusout", M), () => {
-          e.removeEventListener("focusin", w), e.removeEventListener("focus", R), e.removeEventListener("focusout", M)
+        let e = M.current;
+        if (null != e) return e.addEventListener("focusin", w), e.addEventListener("focus", R), e.addEventListener("focusout", k), () => {
+          e.removeEventListener("focusin", w), e.removeEventListener("focus", R), e.removeEventListener("focusout", k)
         }
-      }, [R, w, M]);
+      }, [R, w, k]);
       let L = r.useCallback(() => ({
           role: "list",
           tabIndex: E && g ? -1 : 0,
           id: t,
           onKeyDown: A,
-          ref: k
+          ref: M
         }), [t, E, A, g]),
         D = r.useCallback(e => {
           let {

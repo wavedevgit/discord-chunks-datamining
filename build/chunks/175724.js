@@ -22,22 +22,22 @@ var r = n(475179),
   _ = n(944486),
   E = n(914010),
   j = n(574254),
-  O = n(451478),
-  C = n(585483),
+  C = n(451478),
+  O = n(585483),
   S = n(981631);
 let v = {
   binds: ["esc", "shift+pagedown"],
   comboKeysBindGlobal: !0,
   action(e) {
-    if (O.Z.isElementFullScreen()) return !1;
-    if (C.S.hasSubscribers(S.CkL.CALL_DECLINE)) return C.S.dispatch(S.CkL.CALL_DECLINE), !1;
+    if (C.Z.isElementFullScreen()) return !1;
+    if (O.S.hasSubscribers(S.CkL.CALL_DECLINE)) return O.S.dispatch(S.CkL.CALL_DECLINE), !1;
     if (j.Z.close()) return !1;
-    if (C.S.hasSubscribers(S.CkL.MEDIA_MODAL_CLOSE)) return C.S.dispatch(S.CkL.MEDIA_MODAL_CLOSE), !1;
+    if (O.S.hasSubscribers(S.CkL.MEDIA_MODAL_CLOSE)) return O.S.dispatch(S.CkL.MEDIA_MODAL_CLOSE), !1;
     let t = (0, a.AN)(e);
     if (null == t ? void 0 : t.hasSubscribers(S.CkL.POPOUT_CLOSE)) return t.dispatch(S.CkL.POPOUT_CLOSE), !1;
-    if (C.S.hasSubscribers(S.CkL.CLOSE_GIF_PICKER)) return C.S.dispatch(S.CkL.CLOSE_GIF_PICKER), !1;
-    if (C.S.hasSubscribers(S.CkL.MODAL_CLOSE)) return C.S.dispatch(S.CkL.MODAL_CLOSE), !1;
-    if (C.S.hasSubscribers(S.CkL.SEARCH_RESULTS_CLOSE)) return C.S.dispatch(S.CkL.SEARCH_RESULTS_CLOSE), !1;
+    if (O.S.hasSubscribers(S.CkL.CLOSE_GIF_PICKER)) return O.S.dispatch(S.CkL.CLOSE_GIF_PICKER), !1;
+    if (O.S.hasSubscribers(S.CkL.MODAL_CLOSE)) return O.S.dispatch(S.CkL.MODAL_CLOSE), !1;
+    if (O.S.hasSubscribers(S.CkL.SEARCH_RESULTS_CLOSE)) return O.S.dispatch(S.CkL.SEARCH_RESULTS_CLOSE), !1;
     if (null == t ? void 0 : t.hasSubscribers(S.CkL.POPOUT_CLOSE_AFTER_MODALS)) return t.dispatch(S.CkL.POPOUT_CLOSE_AFTER_MODALS), !1;
     let n = E.Z.getGuildId(),
       i = _.Z.getChannelId(n),
@@ -48,7 +48,7 @@ let v = {
     if (null != i && (null == o ? void 0 : o.type) === u.tI.CREATE_THREAD) return d.Z.closeChannelSidebar(i), !1;
     let m = I(i),
       g = I(c);
-    return null == i || m || g || null == o ? null != i && !m && l.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, !1) : C.S.dispatch(S.CkL.SCROLLTO_PRESENT) : d.Z.closeChannelSidebar(i), !1
+    return null == i || m || g || null == o ? null != i && !m && l.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, !1) : O.S.dispatch(S.CkL.SCROLLTO_PRESENT) : d.Z.closeChannelSidebar(i), !1
   }
 };
 

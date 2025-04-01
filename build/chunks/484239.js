@@ -26,14 +26,14 @@ let h = e => {
       onCtaClick: _,
       perkComponent: E,
       subtitle: j = "",
-      descriptionCta: O = "",
-      cardVariant: C,
+      descriptionCta: C = "",
+      cardVariant: O,
       subtitleClassName: S,
       imageOverlayText: v
     } = e,
-    T = (0, o._)(C),
+    T = (0, o._)(O),
     I = (0, l.Er)(),
-    y = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
+    A = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
   switch (null == I ? void 0 : I.nitroTenureStatus) {
     case d.EB.REDEEMABLE:
       n = p, i = "unlocked icon";
@@ -47,7 +47,7 @@ let h = e => {
     default:
       n = void 0, i = ""
   }
-  let A = null != v;
+  let y = null != v;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: s()(u.cover, u.below)
@@ -65,8 +65,8 @@ let h = e => {
       children: [(0, r.jsx)("img", {
         src: b,
         alt: "",
-        className: x ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
-      }), A ? (0, r.jsx)("div", {
+        className: x ? y ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+      }), y ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(a.Text, {
           className: u.imageOverlayText,
@@ -76,9 +76,9 @@ let h = e => {
       }) : null]
     }), null != E && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
-      children: [E, 0 !== O.length && null != _ && (0, r.jsx)(a.zxk, {
+      children: [E, 0 !== C.length && null != _ && (0, r.jsx)(a.zxk, {
         className: N,
-        disabled: !y,
+        disabled: !A,
         fullWidth: !0,
         onClick: _,
         children: (0, r.jsxs)("div", {
@@ -86,7 +86,7 @@ let h = e => {
           children: [(0, r.jsx)("img", {
             alt: i,
             src: n
-          }), O]
+          }), C]
         })
       })]
     })]

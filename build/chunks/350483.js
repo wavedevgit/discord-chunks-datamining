@@ -38,12 +38,12 @@ let b = s().throttle(function(e, t) {
     } = t,
     E = null !== (i = o.Z.getState().guildId) && void 0 !== i ? i : h.ME,
     j = o.Z.getState().channelId,
-    O = function(e, t) {
+    C = function(e, t) {
       let n = [h.ME, ...u.ZP.getFlattenedGuildIds()],
         r = n.indexOf(e);
       return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
     }(E, e),
-    C = e > 0 ? 0 : O.length - 1,
+    O = e > 0 ? 0 : C.length - 1,
     S = N(E, _),
     v = S.indexOf(j) + e;
   for (; null != E && "" !== E;) {
@@ -89,7 +89,7 @@ let b = s().throttle(function(e, t) {
         });
         v += e, l = S[v]
       }
-    if (C += e, null == (E = O[C]) || "" === E) break;
+    if (O += e, null == (E = C[O]) || "" === E) break;
     S = N(E, _), v = e < 0 ? S.length - 1 : 0
   }
   g.S.dispatch(h.CkL.SHAKE_APP, {

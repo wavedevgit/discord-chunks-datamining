@@ -27,9 +27,9 @@ function j(e) {
   let t = (0, i.e7)([m.default], () => m.default.getCurrentUser()),
     n = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation),
     j = (0, i.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
-    O = (0, o.R6)("useMultiAccountMenuItems"),
+    C = (0, o.R6)("useMultiAccountMenuItems"),
     {
-      multiAccountUsers: C
+      multiAccountUsers: O
     } = (0, N.L)(),
     S = e => {
       e !== (null == t ? void 0 : t.id) && (g.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
@@ -38,7 +38,7 @@ function j(e) {
         }
       }), h.yD(e))
     },
-    v = C.map(i => {
+    v = O.map(i => {
       let s = new d.Z(i),
         o = s.id === (null == t ? void 0 : t.id),
         c = i.tokenStatus === f.q.INVALID,
@@ -73,11 +73,11 @@ function j(e) {
             }), o && (0, r.jsx)(a.owK, {
               size: "sm",
               color: (0, l.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && j || t && !O && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               className: E.activeIcon
             }), c && (0, r.jsx)(a.P4T, {
               color: (0, l.Lq)(x.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && j || t && !O && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               size: "xs",
               className: E.activeIcon
             })]

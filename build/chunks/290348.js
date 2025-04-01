@@ -1,10 +1,10 @@
-/** Chunk was on 99120 **/
+/** Chunk was on 53884 **/
 n.d(t, {
   B7: () => er,
-  Ek: () => W,
+  Ek: () => G,
   F2: () => X,
   GM: () => $,
-  GP: () => U,
+  GP: () => W,
   H9: () => q,
   Lo: () => J,
   PK: () => x,
@@ -26,8 +26,8 @@ var r = n(192379),
   l = n(392711),
   a = n(772848),
   s = n(866442),
-  c = n(731965),
-  u = n(442837),
+  u = n(731965),
+  c = n(442837),
   d = n(80932),
   p = n(749210),
   f = n(211266),
@@ -43,8 +43,8 @@ var r = n(192379),
   S = n(22902),
   E = n(403474),
   w = n(944537),
-  D = n(293810),
-  N = n(981631),
+  N = n(293810),
+  D = n(981631),
   P = n(474936);
 
 function C(e) {
@@ -98,7 +98,7 @@ function T(e, t, n) {
 }
 
 function L(e, t) {
-  let n = (0, u.e7)([h.Z], () => h.Z.getSubscriptionListing(e)),
+  let n = (0, c.e7)([h.Z], () => h.Z.getSubscriptionListing(e)),
     i = (0, f.Z)(() => t);
   return r.useMemo(() => i(n), [n, i])
 }
@@ -165,22 +165,22 @@ function R(e, t) {
   }, [n, o, i])
 }
 
-function W(e, t) {
+function G(e, t) {
   let n = (0, j.Z)(t, e);
   return T(e, "roleColor", r.useMemo(() => {
     var e;
-    return null !== (e = null == n ? void 0 : n.color) && void 0 !== e ? e : N.p6O
+    return null !== (e = null == n ? void 0 : n.color) && void 0 !== e ? e : D.p6O
   }, [n]))
 }
 
-function U(e, t) {
+function W(e, t) {
   let n = (0, j.Z)(t, e);
   return T(e, "channelAccessFormat", r.useMemo(() => null == n ? w.I.SOME_CHANNELS_ACCESS : (0, O.MT)(n) ? w.I.ALL_CHANNELS_ACCESS : w.I.SOME_CHANNELS_ACCESS, [n]))
 }
-let G = [];
+let U = [];
 
 function F(e) {
-  let t = L(e, e => null == e ? G : e.role_benefits.benefits.filter(m.rC));
+  let t = L(e, e => null == e ? U : e.role_benefits.benefits.filter(m.rC));
   return T(e, "channelBenefits", t)
 }
 let H = [];
@@ -202,7 +202,7 @@ function K(e, t) {
 
 function Y(e, t) {
   let n = (0, j.Z)(t, e),
-    i = (0, u.Wu)([v.ZP], () => v.ZP.getGuildEmoji(t), [t]);
+    i = (0, c.Wu)([v.ZP], () => v.ZP.getGuildEmoji(t), [t]);
   return T(e, "tierEmojiIds", r.useMemo(() => null == n ? V : K(i, n.id), [i, n]))
 }
 
@@ -240,7 +240,7 @@ function q(e) {
     var e, r, i, o, l;
     return {
       price: null !== (e = null != n ? n : null == t ? void 0 : t.price) && void 0 !== e ? e : 0,
-      currency: null !== (r = null == t ? void 0 : t.currency) && void 0 !== r ? r : N.pKx.USD,
+      currency: null !== (r = null == t ? void 0 : t.currency) && void 0 !== r ? r : D.pKx.USD,
       interval: null !== (i = null == t ? void 0 : t.interval) && void 0 !== i ? i : P.rV.MONTH,
       interval_count: null !== (o = null == t ? void 0 : t.interval_count) && void 0 !== o ? o : 1,
       id: null !== (l = null == t ? void 0 : t.id) && void 0 !== l ? l : ""
@@ -249,7 +249,7 @@ function q(e) {
 }
 
 function $(e) {
-  (0, c.j)(() => {
+  (0, u.j)(() => {
     w.n.setState(t => ({
       listings: Z(C({}, t.listings), {
         [e]: t.listings.nonexistantEditStateId
@@ -268,16 +268,16 @@ async function ee(e) {
     s = w.n.getState().listings[n];
   o()(null != s, "edit state does not exist");
   let {
-    roleColor: c,
-    roleIcon: u,
+    roleColor: u,
+    roleIcon: c,
     trialLimit: f,
     trialInterval: g,
     tierEmojiIds: m
   } = s;
-  (void 0 !== c || void 0 !== u) && await p.Z.updateRole(t, i, {
-    color: c,
-    icon: null == u ? void 0 : u.icon,
-    unicodeEmoji: null == u ? void 0 : u.unicodeEmoji
+  (void 0 !== u || void 0 !== c) && await p.Z.updateRole(t, i, {
+    color: u,
+    icon: null == c ? void 0 : c.icon,
+    unicodeEmoji: null == c ? void 0 : c.unicodeEmoji
   });
   let y = h.Z.getSubscriptionTrial(a);
   if ((null != f || null != g || null != y && null == g) && await b.I1(t, a, {
@@ -317,8 +317,8 @@ async function et(e) {
   let {
     name: a,
     description: s,
-    channelBenefits: c,
-    intangibleBenefits: u,
+    channelBenefits: u,
+    intangibleBenefits: c,
     priceTier: d,
     image: p,
     channelAccessFormat: f
@@ -326,8 +326,8 @@ async function et(e) {
   o()(null != a, "no name provided"), o()(null != s, "no description provided"), o()(null != d, "no priceTier provided"), o()(null != p, "no image provided");
   let v = f === w.I.ALL_CHANNELS_ACCESS,
     g = r;
-  null == g && (g = (await b.uw(t, {})).id), null != c && c.length > 0 && await (0, _.r4)(t, c);
-  let m = [...null != c ? c : [], ...null != u ? u : []],
+  null == g && (g = (await b.uw(t, {})).id), null != u && u.length > 0 && await (0, _.r4)(t, u);
+  let m = [...null != u ? u : [], ...null != c ? c : []],
     y = (0, _.yL)(n, t);
   return b.dA({
     guildId: t,
@@ -356,7 +356,7 @@ function en() {
         editStateId: r,
         groupListingId: a,
         onBeforeDispatchNewListing: s,
-        onAfterDispatchNewListing: u
+        onAfterDispatchNewListing: c
       } = e, d = r, p = h.Z.getSubscriptionListing(d);
       try {
         if (t(!0), i(void 0), null != p) o()(null != a, "groupListingId is null"), await
@@ -371,15 +371,15 @@ function en() {
           let s = w.n.getState().listings[r];
           o()(null != s, "edit state does not exist");
           let {
-            name: c,
-            description: u,
+            name: u,
+            description: c,
             channelBenefits: d,
             intangibleBenefits: p,
             priceTier: f,
             image: v,
             channelAccessFormat: g
           } = s, y = {};
-          if (c !== a.name && (y.name = c), u !== a.description && (y.description = u), f !== (null === (t = a.subscription_plans[0]) || void 0 === t ? void 0 : t.price) && (y.priceTier = f), null != v && (y.image = v), null != g && (y.can_access_all_channels = g === w.I.ALL_CHANNELS_ACCESS), null != d || null != p) {
+          if (u !== a.name && (y.name = u), c !== a.description && (y.description = c), f !== (null === (t = a.subscription_plans[0]) || void 0 === t ? void 0 : t.price) && (y.priceTier = f), null != v && (y.image = v), null != g && (y.can_access_all_channels = g === w.I.ALL_CHANNELS_ACCESS), null != d || null != p) {
             let e = a.role_benefits.benefits.filter(m.rC),
               t = a.role_benefits.benefits.filter(m.lL),
               n = [...null != d ? d : e, ...null != p ? p : t];
@@ -404,14 +404,14 @@ function en() {
             groupListingId: a,
             onBeforeDispatchNewListing: s
           });
-          f = d = e.id, (0, c.j)(() => {
+          f = d = e.id, (0, u.j)(() => {
             w.n.setState(e => ({
               listings: Z(C({}, e.listings), {
                 [f]: e.listings[r],
                 [r]: void 0
               })
             }))
-          }), null == u || u(e)
+          }), null == c || c(e)
         }
         return await ee({
           guildId: n,
@@ -435,19 +435,19 @@ function er(e, t) {
     o = (0, w.n)(e => e.editStateIdsForGroup[t]),
     l = (0, w.n)(e => e.setEditStateIdsForGroup),
     s = (0, w.n)(e => e.setListing),
-    c = r.useMemo(() => [...i.map(e => {
+    u = r.useMemo(() => [...i.map(e => {
       let {
         id: t
       } = e;
       return t
     }), ...null != o ? o : []], [o, i]),
-    u = r.useCallback(() => {
+    c = r.useCallback(() => {
       let e = (0, a.Z)();
       l(t, t => [...null != t ? t : [], e])
     }, [t, l]);
   return {
-    editStateIds: c,
-    addNewEditStateId: u,
+    editStateIds: u,
+    addNewEditStateId: c,
     addNewEditStateFromTemplate: r.useCallback(e => {
       let n = (0, a.Z)();
       return l(t, e => [...null != e ? e : [], n]), e.listings.forEach(t => {
@@ -459,7 +459,7 @@ function er(e, t) {
           intangibleBenefits: t.additional_perks,
           channelBenefits: t.channels.map(e => ({
             ref_id: e.id,
-            ref_type: D.Qs.CHANNEL,
+            ref_type: N.Qs.CHANNEL,
             description: e.description,
             name: e.name,
             emoji_name: e.emoji_name

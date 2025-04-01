@@ -1,6 +1,6 @@
 /** Chunk was on 13323 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(47120), n(26686), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -52,24 +52,24 @@ function E(e, t) {
   }), e
 }
 let j = {
-    [h.wT.THUMBNAIL]: null,
-    [h.wT.STATIC]: null,
-    [h.wT.REDUCED_MOTION]: null
+    [h.cq.THUMBNAIL]: null,
+    [h.cq.STATIC]: null,
+    [h.cq.REDUCED_MOTION]: null
   },
-  O = "debug",
-  C = e => {
+  C = "debug",
+  O = e => {
     let {
       effect: t,
       back: n
     } = e, {
       upsertConfig: s
-    } = (0, p.E)(), C = (0, o.e7)([m.default], () => m.default.getCurrentUser()), [S, v] = i.useState(!0), T = i.useRef(null), [I, y] = i.useState(!1), [A, P] = i.useState(!1), [R, D] = i.useState(t.name), [Z, w] = i.useState([]), [k, W] = i.useState(j), L = i.useMemo(() => ({
+    } = (0, p.Eu)(), O = (0, o.e7)([m.default], () => m.default.getCurrentUser()), [S, v] = i.useState(!0), T = i.useRef(null), [I, A] = i.useState(!1), [y, P] = i.useState(!1), [R, D] = i.useState(t.name), [Z, w] = i.useState([]), [k, W] = i.useState(j), L = i.useMemo(() => ({
       type: l.Z.PROFILE_EFFECT,
-      id: O,
-      skuId: O,
-      title: O,
-      description: O,
-      accessibilityLabel: O,
+      id: C,
+      skuId: C,
+      title: C,
+      description: C,
+      accessibilityLabel: C,
       reducedMotionSrc: "",
       effects: Z,
       animationType: 0
@@ -80,7 +80,7 @@ let j = {
       let n = B(t);
       null != n && (0, h.i0)(n, t => {
         W(r => E(_({}, r), {
-          [e]: (0, h.I6)(t, n)
+          [e]: (0, h.z)(t, n)
         }))
       })
     }, U = e => {
@@ -92,14 +92,14 @@ let j = {
       let e = t.config.effects;
       e.length > 0 && w([...e].map(e => (e.src = (0, h.$j)(e.base64), e)))
     }, [t.config.effects]), i.useEffect(() => {
-      let e = t.config.staticFrames;
+      let e = t.config.stillFrames;
       null != e && Object.entries(e).forEach(e => {
         let [t, n] = e;
         null != n && (n.src = (0, h.$j)(n.base64), W(e => E(_({}, e), {
           [t]: n
         })))
       })
-    }, [t.config.staticFrames]);
+    }, [t.config.stillFrames]);
     let V = {
         effect: t,
         upsertConfig: s
@@ -117,10 +117,10 @@ let j = {
         name: R,
         config: {
           effects: Z,
-          staticFrames: k
+          stillFrames: k
         }
       })
-    }, [Z, k, R]), null == C) ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
+    }, [Z, k, R]), null == O) ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
       className: N.root,
       children: [(0, r.jsx)("div", {
         className: N.row,
@@ -166,7 +166,7 @@ let j = {
                 checked: I,
                 className: N.checkBox,
                 onChange: () => {
-                  y(!I)
+                  A(!I)
                 }
               })]
             }), (0, r.jsxs)("div", {
@@ -176,10 +176,10 @@ let j = {
                 children: "Show User Profile"
               }), (0, r.jsx)("input", {
                 type: "checkbox",
-                checked: A,
+                checked: y,
                 className: N.checkBox,
                 onChange: () => {
-                  P(!A)
+                  P(!y)
                 }
               })]
             })]
@@ -208,21 +208,21 @@ let j = {
               color: c.Ttl.GREEN,
               children: ["Upload thumbnail.png", (0, r.jsx)(d.Z, {
                 ref: T,
-                onChange: e => M(h.wT.THUMBNAIL, e),
+                onChange: e => M(h.cq.THUMBNAIL, e),
                 multiple: !1
               })]
             }), (0, r.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload static.png", (0, r.jsx)(d.Z, {
                 ref: T,
-                onChange: e => M(h.wT.STATIC, e),
+                onChange: e => M(h.cq.STATIC, e),
                 multiple: !1
               })]
             }), (0, r.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload reduced_motion.png", (0, r.jsx)(d.Z, {
                 ref: T,
-                onChange: e => M(h.wT.REDUCED_MOTION, e),
+                onChange: e => M(h.cq.REDUCED_MOTION, e),
                 multiple: !1
               })]
             })]
@@ -269,19 +269,19 @@ let j = {
             className: N.section,
             children: [(0, r.jsx)(c.X6q, {
               variant: "heading-lg/bold",
-              children: "Static Frames"
+              children: "Still Frames"
             }), (0, r.jsx)("div", {
-              className: N.staticFramesContainer,
+              className: N.stillFramesContainer,
               children: Object.entries(k).map(e => {
                 let [t, n] = e;
                 return (0, r.jsxs)("div", {
-                  className: N.staticFramePreviewContainer,
+                  className: N.stillFramePreviewContainer,
                   children: [(0, r.jsx)(c.X6q, {
                     variant: "heading-sm/bold",
                     children: t
                   }), (0, r.jsx)("img", {
                     src: null == n ? void 0 : n.src,
-                    className: N.staticFramePreview,
+                    className: N.stillFramePreview,
                     alt: ""
                   }), null != n && (0, r.jsx)(c.zxk, {
                     size: c.PhG.TINY,
@@ -313,10 +313,10 @@ let j = {
               })]
             })]
           }), (0, r.jsx)("div", {
-            children: A && (0, r.jsxs)("div", {
+            children: y && (0, r.jsxs)("div", {
               className: a()(N.userProfilePreview, N.preview),
               children: [(0, r.jsx)(u.Z, {
-                user: C,
+                user: O,
                 pendingAvatar: void 0,
                 pendingProfileEffectId: null,
                 canUsePremiumCustomization: !0,

@@ -23,14 +23,14 @@ var r, i = n(230711),
   _ = n(181708),
   E = n(821721),
   j = n(158897),
-  O = n(290650),
-  C = n(751125),
+  C = n(290650),
+  O = n(751125),
   S = n(904505),
   v = n(712626),
   T = n(386014),
   I = n(845571),
-  y = n(220046),
-  A = n(385874),
+  A = n(220046),
+  y = n(385874),
   P = n(371e3),
   R = n(377679),
   D = n(825087),
@@ -51,7 +51,7 @@ let w = () => {
         title: m.NW.string(m.t["6b3ydH"]),
         description: m.NW.string(m.t["Y+IJys"]),
         previewImage: p,
-        videoUrl: e ? O.ZP : C.ZP,
+        videoUrl: e ? C.ZP : O.ZP,
         isCompact: !0
       }
     }
@@ -75,7 +75,7 @@ let w = () => {
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
         previewImage: b,
-        videoUrl: g ? I.ZP : y.ZP
+        videoUrl: g ? I.ZP : A.ZP
       },
       referralProgram: {
         name: "referralProgram",
@@ -103,7 +103,7 @@ let w = () => {
         descriptionCta: m.NW.string(m.t.jVcuVV),
         previewImage: f,
         onClick: n,
-        videoUrl: g ? A.Z : P.Z
+        videoUrl: g ? y.Z : P.Z
       },
       yourSpace: {
         name: "yourSpace",

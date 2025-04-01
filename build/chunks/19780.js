@@ -139,7 +139,10 @@ function T(e, t) {
 
 function A() {
   if (null == r) return !1;
-  O = r.getDuration(), r.destroy(), r = null, y = null
+  O = r.getDuration(), r.destroy(), r = null, y = null, s.Z.dispatch({
+    type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
+    context: h.Yn.DEFAULT
+  })
 }
 
 function N(e) {
