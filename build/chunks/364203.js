@@ -347,8 +347,8 @@ let Q = function(e) {
   let k = (0, u.e7)([O.Z], () => O.Z.isFetchingWallpapers),
     j = (0, u.e7)([O.Z], () => O.Z.getWallpaperById(null == m ? void 0 : m.wallpaperId));
   i.useEffect(() => {
-    null != j && D(j.isBlurred)
-  }, [j]);
+    null != j && D(j.isBlurred && E)
+  }, [j, E]);
   let U = i.useCallback(() => {
       c()
     }, [c]),

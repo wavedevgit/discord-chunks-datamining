@@ -145,9 +145,10 @@ class I extends i.PureComponent {
       activity: e,
       isPreview: t,
       isGameLaunchable: n,
-      isInBrowser: r
+      isInBrowser: r,
+      isSender: i
     } = this.props;
-    return !!t || !(this.isDeadInvite() || !this.isActionType(v.mFx.JOIN) || !(0, g.Z)(e, v.xjy.JOIN) || !this.hasPartySize() || this.isPartyFull() || this.isInParty()) && (!!this.isEmbeddedActivityApplication() || !r && !!n)
+    return !!t || !(i || this.isDeadInvite() || !this.isActionType(v.mFx.JOIN) || !(0, g.Z)(e, v.xjy.JOIN) || !this.hasPartySize() || this.isPartyFull() || this.isInParty()) && (!!this.isEmbeddedActivityApplication() || !r && !!n)
   }
   canSendInvite() {
     let {

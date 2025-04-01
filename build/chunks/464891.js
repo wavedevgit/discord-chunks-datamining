@@ -126,32 +126,33 @@ function Y(e) {
 function X(e) {
   let {
     message: t,
-    channel: n,
-    guildId: a,
-    compact: i = !1,
-    roleIconProps: s,
-    showUsernamePopout: u,
-    renderPopout: d,
-    onClickUsername: p,
-    onContextMenu: f,
-    displayCompactAvatars: h = !1,
-    onPopoutRequestClose: y
-  } = e, v = (0, D.ZP)(t), O = o.useMemo(() => (0, U.x)({
+    author: n,
+    channel: a,
+    guildId: i,
+    compact: s = !1,
+    roleIconProps: u,
+    showUsernamePopout: d,
+    renderPopout: p,
+    onClickUsername: f,
+    onContextMenu: h,
+    displayCompactAvatars: y = !1,
+    onPopoutRequestClose: v
+  } = e, O = (0, D.ZP)(t, n), x = o.useMemo(() => (0, U.x)({
     message: t,
-    channel: n,
+    channel: a,
     user: null == t ? void 0 : t.author,
-    compact: i,
+    compact: s,
     isRepliedMessage: !1
-  }), [t, n, i]), x = o.useRef(null), C = (0, c.e7)([w.Z], () => w.Z.getGuild(a)), j = o.useMemo(() => ee(i, h, s, C), [i, h, s, C]), P = o.useMemo(() => null == s ? null : 1 === j && null != C ? (0, r.jsx)(l.yRy, {
-    targetElementRef: x,
+  }), [t, a, s]), C = o.useRef(null), j = (0, c.e7)([w.Z], () => w.Z.getGuild(i)), P = o.useMemo(() => ee(s, y, u, j), [s, y, u, j]), T = o.useMemo(() => null == u ? null : 1 === P && null != j ? (0, r.jsx)(l.yRy, {
+    targetElementRef: C,
     animation: l.yRy.Animation.TRANSLATE,
     align: "center",
     autoInvert: !0,
     nudgeAlignIntoViewport: !0,
     position: "right",
     renderPopout: () => (0, r.jsx)(W.Z, {
-      roleIcon: s,
-      guild: C
+      roleIcon: u,
+      guild: j
     }),
     clickTrap: !0,
     children: e => {
@@ -159,53 +160,53 @@ function X(e) {
         onClick: t
       } = e;
       return (0, r.jsx)(m.Z, q(K({
-        ref: x
-      }, s), {
+        ref: C
+      }, u), {
         className: F.roleIcon,
         onClick: t
       }))
     }
-  }, "role-icon-children") : 2 === j ? (0, r.jsx)(m.Z, q(K({}, s), {
+  }, "role-icon-children") : 2 === P ? (0, r.jsx)(m.Z, q(K({}, u), {
     className: F.roleIcon
-  }), "role-icon-children") : null, [j, s, C]), T = (0, c.e7)([k.default], () => k.default.getCurrentUser()), N = o.useMemo(() => {
+  }), "role-icon-children") : null, [P, u, j]), N = (0, c.e7)([k.default], () => k.default.getCurrentUser()), I = o.useMemo(() => {
     let e = [],
-      o = Z.ZP.isPremium(t.author),
-      a = Z.ZP.isPremium(T),
-      c = null == n ? void 0 : n.isPrivate();
-    return (0, A.R)(null != s, "Message Username") && o && !i && !c && e.push((0, r.jsx)(et, {
-      currentUserIsPremium: a,
+      n = Z.ZP.isPremium(t.author),
+      o = Z.ZP.isPremium(N),
+      i = null == a ? void 0 : a.isPrivate();
+    return (0, A.R)(null != u, "Message Username") && n && !s && !i && e.push((0, r.jsx)(et, {
+      currentUserIsPremium: o,
       author: t.author
-    }, "nitro-author")), null != P && e.push(P), null != C && (e.push((0, r.jsx)(_.Z, {
-      guild: C,
+    }, "nitro-author")), null != T && e.push(T), null != j && (e.push((0, r.jsx)(_.Z, {
+      guild: j,
       message: t
     }, "new-member")), e.push((0, r.jsx)(b.Z, {
-      guild: C,
+      guild: j,
       message: t
-    }, "leaderboard-champion"))), null != n && null != C && e.push((0, r.jsx)(g.Z, {
-      guild: C,
-      channel: n,
+    }, "leaderboard-champion"))), null != a && null != j && e.push((0, r.jsx)(g.Z, {
+      guild: j,
+      channel: a,
       userId: t.author.id,
       messageId: t.id
     }, "connections")), e
-  }, [t, n, s, i, P, C, T]);
-  return null == v ? null : (0, r.jsxs)(r.Fragment, {
+  }, [t, a, u, s, T, j, N]);
+  return null == O ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(B.Z, {
       message: t,
-      channel: n,
-      author: v,
-      compact: i,
-      roleIcon: s,
-      showPopout: u,
-      renderPopout: d,
-      onClick: p,
-      onContextMenu: f,
-      onPopoutRequestClose: y,
+      channel: a,
+      author: O,
+      compact: s,
+      roleIcon: u,
+      showPopout: d,
+      renderPopout: p,
+      onClick: f,
+      onContextMenu: h,
+      onPopoutRequestClose: v,
       decorations: {
-        [B.a.SYSTEM_TAG]: O,
-        [B.a.BADGES]: N
+        [B.a.SYSTEM_TAG]: x,
+        [B.a.BADGES]: I
       },
       renderRemixTag: !0
-    }), i && (0, r.jsxs)(r.Fragment, {
+    }), s && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("i", {
         className: F.separator,
         children: ":"

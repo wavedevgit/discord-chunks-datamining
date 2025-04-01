@@ -18,9 +18,9 @@ var r = n(512722),
   u = n(594174),
   d = n(51144);
 
-function f(e) {
-  let t = _(e);
-  return i()(null != t, "Result cannot be null because the message is not null"), t
+function f(e, t) {
+  let n = _(e);
+  return i()(null != n, "Result cannot be null because the message is not null"), null != t ? t : n
 }
 
 function _(e) {

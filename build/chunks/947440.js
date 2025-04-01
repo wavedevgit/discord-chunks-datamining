@@ -206,18 +206,18 @@ function M(t, e) {
         to((0, U.pY)(i.location), i.applicationId)
       }
     }, "self-embedded-".concat(i.applicationId)))
-  }), $.forEach((t, e) => {
-    t.type === F.IIU.PLAYING && (0, Y.Z)(t, F.xjy.JOIN) ? tc.push((0, n.jsx)(a.sNh, {
+  }), $.forEach((t, i) => {
+    (null == e ? void 0 : e.id) !== Z.default.getId() && (t.type === F.IIU.PLAYING && (0, Y.Z)(t, F.xjy.JOIN) ? tc.push((0, n.jsx)(a.sNh, {
       id: "invite-to-join",
       label: J.NW.string(J.t["3fRyS0"]),
       subtext: t.name,
       action: () => tl(F.mFx.JOIN, t)
-    }, "self".concat(e))) : t.type === F.IIU.LISTENING && (0, Y.Z)(t, F.xjy.SYNC) && tc.push((0, n.jsx)(a.sNh, {
+    }, "self".concat(i))) : t.type === F.IIU.LISTENING && (0, Y.Z)(t, F.xjy.SYNC) && tc.push((0, n.jsx)(a.sNh, {
       id: "invite-to-listen",
       label: J.NW.string(J.t["5vvGpa"]),
       subtext: t.name,
       action: () => tl(F.mFx.LISTEN, t)
-    }, "self".concat(e)))
+    }, "self".concat(i))))
   }), tc.length > 0 && tc.push((0, n.jsx)(a.Clw, {})), z.forEach((i, l) => {
     let o = (0, Y.Z)(i, F.xjy.EMBEDDED),
       d = (0, Y.Z)(i, F.xjy.CONTEXTLESS);

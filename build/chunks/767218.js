@@ -23,7 +23,7 @@ function p(e) {
     children: [(0, o.jsxs)("div", {
       className: d.headerContainer,
       children: [(0, o.jsx)(a.Z, {
-        fill: 0 !== t ? s.Z.colors.HEADER_MUTED.css : void 0
+        color: 0 !== t ? s.Z.colors.HEADER_MUTED : void 0
       }), (0, o.jsx)(i.X6, {
         color: 0 !== t ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
