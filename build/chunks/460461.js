@@ -68,17 +68,17 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   w = () => {
     var e;
     let t = i.useRef(null),
-      n = (0, s.e7)([v.Z], () => v.Z.getGuild()),
-      [d, P] = i.useState(!1);
+      d = (0, s.e7)([v.Z], () => v.Z.getGuild()),
+      [P, w] = i.useState(!1);
     i.useEffect(() => {
-      d || null == n || ((0, g.le)(), (0, g.aC)(n.id), (0, g.i3)(n.id), P(!0))
-    }, [n, d]);
+      P || null == d || ((0, g.le)(), (0, g.aC)(d.id), (0, g.i3)(d.id), w(!0))
+    }, [d, P]);
     let {
-      canManageGuild: w
+      canManageGuild: R
     } = (0, s.cj)([b.Z], () => ({
-      canManageGuild: b.Z.can(I.Plq.MANAGE_GUILD, n)
-    })), R = (0, s.e7)([v.Z], () => v.Z.isGuildMetadataLoaded()), Z = (0, s.e7)([v.Z], () => null != n ? v.Z.getMetadata() : null), D = (0, s.e7)([v.Z], () => null != n && (null == Z ? void 0 : Z.isPublished) ? v.Z.getSlug() : null), [A, k] = i.useState([!0]), [W, L] = i.useState(!0), [M, G] = i.useState([!1]), [U, B] = i.useState([""]), F = e => {
-      let t = Object.entries(y.z).filter(e => !U.includes(e[1].presentation)).map(e => ({
+      canManageGuild: b.Z.can(I.Plq.MANAGE_GUILD, d)
+    })), Z = (0, s.e7)([v.Z], () => v.Z.isGuildMetadataLoaded()), D = (0, s.e7)([v.Z], () => null != d ? v.Z.getMetadata() : null), A = (0, s.e7)([v.Z], () => null != d && (null == D ? void 0 : D.isPublished) ? v.Z.getSlug() : null), [k, W] = i.useState([!0]), [L, M] = i.useState(!0), [G, U] = i.useState([!1]), [B, F] = i.useState([""]), z = e => {
+      let t = Object.entries(y.z).filter(e => !B.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
       }));
@@ -86,7 +86,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         label: e,
         value: e
       })
-    }, z = e => {
+    }, H = e => {
       try {
         var t, n, r, i;
         let s = new URL(e).hostname.split(".");
@@ -99,107 +99,116 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       }
     };
     i.useEffect(() => {
-      if (null !== Z) {
+      if (null !== D) {
         let e = [],
           t = [];
-        Z.socialLinks.forEach((n, r) => {
+        D.socialLinks.forEach((n, r) => {
           if ("" !== n) {
-            let i = z(n);
+            let i = H(n);
             null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
           } else e[r] = !0
-        }), B(t), k(e), L(e.every(e => !0 === e))
+        }), F(t), W(e), M(e.every(e => !0 === e))
       }
-    }, [Z]);
-    let H = (0, s.e7)([v.Z], () => null != n ? v.Z.getErrors() : null);
-    if (null == n || null == Z) return null;
-    let V = e => {
+    }, [D]);
+    let V = (0, s.e7)([v.Z], () => null != d ? v.Z.getErrors() : null);
+    if (null == d || null == D) return null;
+    let Y = e => {
         N.Z.updateGuild({
           discoverySplash: e
         })
       },
-      Y = e => {
-        (0, g.W1)(n.id, e), e ? (0, g.Vv)({
-          guildId: n.id,
-          primaryCategoryId: Z.primaryCategoryId,
-          keywords: Z.keywords,
-          emojiDiscoverabilityEnabled: Z.emojiDiscoverabilityEnabled,
-          partnerActionedTimestamp: Z.partnerActionedTimestamp,
-          partnerApplicationTimestamp: Z.partnerApplicationTimestamp,
-          isPublished: !0,
-          reasonsToJoin: Z.reasonsToJoin,
-          socialLinks: Z.socialLinks,
-          about: Z.about
-        }) : (0, g.Vv)({
-          guildId: n.id,
-          primaryCategoryId: Z.primaryCategoryId,
-          keywords: Z.keywords,
-          emojiDiscoverabilityEnabled: Z.emojiDiscoverabilityEnabled,
-          partnerActionedTimestamp: Z.partnerActionedTimestamp,
-          partnerApplicationTimestamp: Z.partnerApplicationTimestamp,
-          isPublished: !1,
-          reasonsToJoin: Z.reasonsToJoin,
-          socialLinks: Z.socialLinks,
-          about: Z.about
-        }), N.Z.saveGuild(n.id, {
-          discoverySplash: n.discoverySplash,
-          description: n.description
-        })
-      },
-      K = (e, t) => {
-        let r = [...Z.socialLinks],
-          i = [...U],
-          s = [...A];
-        i[t] = e, r[t] = y.z[e].baseUrl, s[t] = !0, k(s), B(i), L(s.every(e => !0 === e)), (0, g.t$)(n.id, r)
+      K = e => {
+        let t = () => {
+          (0, g.W1)(d.id, e), e ? (0, g.Vv)({
+            guildId: d.id,
+            primaryCategoryId: D.primaryCategoryId,
+            keywords: D.keywords,
+            emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: D.partnerActionedTimestamp,
+            partnerApplicationTimestamp: D.partnerApplicationTimestamp,
+            isPublished: !0,
+            reasonsToJoin: D.reasonsToJoin,
+            socialLinks: D.socialLinks,
+            about: D.about
+          }) : (0, g.Vv)({
+            guildId: d.id,
+            primaryCategoryId: D.primaryCategoryId,
+            keywords: D.keywords,
+            emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: D.partnerActionedTimestamp,
+            partnerApplicationTimestamp: D.partnerApplicationTimestamp,
+            isPublished: !1,
+            reasonsToJoin: D.reasonsToJoin,
+            socialLinks: D.socialLinks,
+            about: D.about
+          }), N.Z.saveGuild(d.id, {
+            discoverySplash: d.discoverySplash,
+            description: d.description
+          })
+        };
+        if (e) {
+          t();
+          return
+        }
+        null != d.vanityURLCode ? n.e("66731").then(n.bind(n, 241485)).then(e => {
+          e.default.open(t)
+        }) : t()
       },
       q = (e, t) => {
-        let r = [...Z.socialLinks],
-          i = r[t],
-          s = e;
-        0 === i.length && s.length > 1 && !1 === RegExp("^https?:").test(s) && (s = "https://" + s), !/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(s) && (r[t] = s, (0, g.t$)(n.id, r))
+        let n = [...D.socialLinks],
+          r = [...B],
+          i = [...k];
+        r[t] = e, n[t] = y.z[e].baseUrl, i[t] = !0, W(i), F(r), M(i.every(e => !0 === e)), (0, g.t$)(d.id, n)
       },
-      X = e => {
-        let t = [...M];
-        t.splice(e, 1), G(t);
-        let r = [...A];
-        r.splice(e, 1), k(r);
-        let i = [...U];
-        i.splice(e, 1), B(i);
-        let s = [...Z.socialLinks];
-        s.splice(e, 1), (0, g.t$)(n.id, s)
+      X = (e, t) => {
+        let n = [...D.socialLinks],
+          r = n[t],
+          i = e;
+        0 === r.length && i.length > 1 && !1 === RegExp("^https?:").test(i) && (i = "https://" + i), !/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) && (n[t] = i, (0, g.t$)(d.id, n))
       },
       Q = e => {
-        let {
-          reason: t = "",
-          emoji_name: n = ""
-        } = e;
-        return null !== t && t.length >= 10 && t.length <= 128 && null !== n
+        let t = [...G];
+        t.splice(e, 1), U(t);
+        let n = [...k];
+        n.splice(e, 1), W(n);
+        let r = [...B];
+        r.splice(e, 1), F(r);
+        let i = [...D.socialLinks];
+        i.splice(e, 1), (0, g.t$)(d.id, i)
       },
       J = e => {
         let {
           reason: t = "",
           emoji_name: n = ""
         } = e;
+        return null !== t && t.length >= 10 && t.length <= 128 && null !== n
+      },
+      $ = e => {
+        let {
+          reason: t = "",
+          emoji_name: n = ""
+        } = e;
         return (null === t || "" === t) && null === n
       },
-      $ = [{
+      ee = [{
         title: E.NW.string(E.t["/SWsHx"]),
         items: [{
           description: E.NW.string(E.t.DU8jFx),
-          completed: null !== n.discoverySplash && "" !== n.discoverySplash
+          completed: null !== d.discoverySplash && "" !== d.discoverySplash
         }, {
           description: E.NW.string(E.t.SW5OHx),
-          completed: null !== n.description && "" !== n.description
+          completed: null !== d.description && "" !== d.description
         }, {
           description: E.NW.string(E.t.m3b3WF),
-          completed: null !== Z.about && Z.about.length >= 300 && Z.about.length <= 2400
+          completed: null !== D.about && D.about.length >= 300 && D.about.length <= 2400
         }, {
           description: E.NW.string(E.t.qpx5MD),
-          completed: null !== Z.reasonsToJoin && Z.reasonsToJoin.every(e => J(e) || Q(e)) && Z.reasonsToJoin.filter(Q).length >= 2
+          completed: null !== D.reasonsToJoin && D.reasonsToJoin.every(e => $(e) || J(e)) && D.reasonsToJoin.filter(J).length >= 2
         }]
       }],
-      ee = (e, t) => {
-        let n = [...M];
-        n[e] = t, G(n)
+      et = (e, t) => {
+        let n = [...G];
+        n[e] = t, U(n)
       };
     return (0, r.jsx)("div", {
       className: S.settingsColumn,
@@ -231,8 +240,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       learnMoreURL: j.Z.getArticleURL(I.BhN.SERVER_WEB_PAGES)
                     })]
                   }), (() => {
-                    if (!Z.isPublished || null == D) return;
-                    let e = T + D;
+                    if (!D.isPublished || null == A) return;
+                    let e = T + A;
                     return (0, r.jsxs)(l.hjN, {
                       className: S.noDividerFormSection,
                       children: [(0, r.jsx)(l.vwX, {
@@ -251,7 +260,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                   })(), (0, r.jsx)(l.$i$, {
                     className: S.divider
                   }), (() => {
-                    if (null != n) return (0, r.jsxs)(r.Fragment, {
+                    if (null != d) return (0, r.jsxs)(r.Fragment, {
                       children: [(0, r.jsxs)(l.hjN, {
                         children: [(0, r.jsx)(l.vwX, {
                           className: S.formTitle,
@@ -262,30 +271,30 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           children: E.NW.string(E.t.MVXonJ)
                         })]
                       }), (0, r.jsx)(_.E, {
-                        guildId: n.id,
-                        guildMetadata: Z,
-                        isDisabled: !w
+                        guildId: d.id,
+                        guildMetadata: D,
+                        isDisabled: !R
                       }), (0, r.jsxs)(l.hjN, {
                         className: S.noDividerFormSection,
                         children: [(0, r.jsx)(l.vwX, {
                           className: S.formTitle,
                           children: E.NW.string(E.t.oOPlPD)
                         }), (0, r.jsx)(C.Z, {
-                          guild: n,
-                          guildMetadata: Z,
-                          disabled: !w
+                          guild: d,
+                          guildMetadata: D,
+                          disabled: !R
                         })]
-                      }), (null == H ? void 0 : H.category) != null ? (0, r.jsx)(l.Text, {
+                      }), (null == V ? void 0 : V.category) != null ? (0, r.jsx)(l.Text, {
                         color: "text-danger",
                         className: S.error,
                         variant: "text-sm/normal",
-                        children: H.category
+                        children: V.category
                       }) : null]
                     })
                   })(), (0, r.jsx)(l.$i$, {
                     className: S.divider
                   }), (() => {
-                    if (null != n) return (0, r.jsxs)(r.Fragment, {
+                    if (null != d) return (0, r.jsxs)(r.Fragment, {
                       children: [(0, r.jsxs)(l.hjN, {
                         className: S.twoColumnFormSection,
                         children: [(0, r.jsxs)("div", {
@@ -300,27 +309,27 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             size: l.zxk.Sizes.SMALL,
                             color: l.zxk.Colors.PRIMARY,
                             children: [E.NW.string(E.t.yG2pUl), (0, r.jsx)(h.ZP, {
-                              disabled: !w,
-                              onChange: V
+                              disabled: !R,
+                              onChange: Y
                             })]
                           })]
                         }), (0, r.jsx)(f.Z, {
-                          image: n.discoverySplash,
+                          image: d.discoverySplash,
                           makeURL: e => x.ZP.getGuildDiscoverySplashURL({
-                            id: n.id,
+                            id: d.id,
                             splash: e,
                             size: 512 * (0, p.x_)()
                           }),
-                          disabled: !w,
-                          onChange: V,
+                          disabled: !R,
+                          onChange: Y,
                           hint: E.NW.string(E.t.uPvxqK),
                           imageClassName: S.imageUploaderInnerSquare,
                           hideSize: !0
                         })]
-                      }), (null == H ? void 0 : H.discovery_splash) != null ? (0, r.jsx)(l.Text, {
+                      }), (null == V ? void 0 : V.discovery_splash) != null ? (0, r.jsx)(l.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: H.discovery_splash
+                        children: V.discovery_splash
                       }) : null]
                     })
                   })(), (0, r.jsx)(l.$i$, {
@@ -334,7 +343,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       type: l.geA.DESCRIPTION,
                       children: E.NW.string(E.t.IBi6h4)
                     }), (0, r.jsx)(l.Kx8, {
-                      value: null !== n.description ? n.description : "",
+                      value: null !== d.description ? d.description : "",
                       placeholder: E.NW.string(E.t.rFa9Ul),
                       onChange: e => {
                         var t;
@@ -343,16 +352,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         })
                       },
                       maxLength: 120,
-                      disabled: !w
+                      disabled: !R
                     })]
                   }), (0, r.jsx)(l.$i$, {
                     className: S.divider
                   }), (() => {
-                    if (null == Z) return null;
-                    let e = 0 === Z.reasonsToJoin.length ? [, , , , ].fill({
+                    if (null == D) return null;
+                    let e = 0 === D.reasonsToJoin.length ? [, , , , ].fill({
                       reason: "",
                       emoji_name: null
-                    }) : Z.reasonsToJoin;
+                    }) : D.reasonsToJoin;
                     return (0, r.jsxs)(l.hjN, {
                       children: [(0, r.jsx)(l.vwX, {
                         className: S.formTitle,
@@ -366,13 +375,13 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: (0, r.jsx)(O.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
-                          guildId: n.id,
+                          guildId: d.id,
                           reasons: e
                         })
-                      }), (null == H ? void 0 : H.reasons_to_join) != null ? (0, r.jsx)(l.Text, {
+                      }), (null == V ? void 0 : V.reasons_to_join) != null ? (0, r.jsx)(l.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: H.reasons_to_join
+                        children: V.reasons_to_join
                       }) : null]
                     })
                   })(), (0, r.jsx)(l.$i$, {
@@ -389,20 +398,20 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }), (0, r.jsx)(l.Kx8, {
                         showCharacterCount: !0,
                         className: S.textArea,
-                        value: Z.about,
+                        value: D.about,
                         placeholder: E.NW.string(E.t.TduTbm),
                         onChange: e => {
-                          (0, g.mA)(n.id, e)
+                          (0, g.mA)(d.id, e)
                         },
                         minLength: 300,
                         maxLength: 2400,
-                        disabled: !w,
-                        defaultDirty: (null === (e = Z.about) || void 0 === e ? void 0 : e.length) > 0
-                      }, "text-area-".concat(R))]
-                    }), (null == H ? void 0 : H.about) != null ? (0, r.jsx)(l.Text, {
+                        disabled: !R,
+                        defaultDirty: (null === (e = D.about) || void 0 === e ? void 0 : e.length) > 0
+                      }, "text-area-".concat(Z))]
+                    }), (null == V ? void 0 : V.about) != null ? (0, r.jsx)(l.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: H.about
+                      children: V.about
                     }) : null]
                   }), (0, r.jsx)(l.$i$, {
                     className: S.divider
@@ -414,59 +423,59 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       className: S.description,
                       type: l.geA.DESCRIPTION,
                       children: E.NW.string(E.t.d3kA9f)
-                    }), Z.socialLinks.map((e, t) => (0, r.jsxs)("div", {
+                    }), D.socialLinks.map((e, t) => (0, r.jsxs)("div", {
                       className: S.socialLinksContainer,
-                      onMouseOver: () => ee(t, !0),
-                      onFocus: () => ee(t, !0),
-                      onMouseOut: () => ee(t, !1),
-                      onBlur: () => ee(t, !1),
+                      onMouseOver: () => et(t, !0),
+                      onFocus: () => et(t, !0),
+                      onMouseOut: () => et(t, !1),
+                      onBlur: () => et(t, !1),
                       children: [(0, r.jsx)(l.q4e, {
-                        className: Z.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
-                        options: F(U[t]),
+                        className: D.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
+                        options: z(B[t]),
                         placeholder: E.NW.string(E.t.xSALIC),
-                        value: U[t],
-                        onChange: e => K(e, t),
-                        isDisabled: !w
+                        value: B[t],
+                        onChange: e => q(e, t),
+                        isDisabled: !R
                       }, "dropdown-" + t), (0, r.jsx)(l.oil, {
                         value: e,
-                        className: Z.isPublished ? S.socialLinksMax : S.socialLinksMin,
-                        onChange: e => q(e, t),
+                        className: D.isPublished ? S.socialLinksMax : S.socialLinksMin,
+                        onChange: e => X(e, t),
                         placeholder: E.NW.string(E.t.Q6o4pK),
                         maxLength: 150,
-                        disabled: !w
-                      }, "link-" + t), A[t] ? (0, r.jsx)(l.owK, {
+                        disabled: !R
+                      }, "link-" + t), k[t] ? (0, r.jsx)(l.owK, {
                         size: "custom",
-                        className: Z.isPublished ? S.validationButtonMax : S.validationButtonMin,
+                        className: D.isPublished ? S.validationButtonMax : S.validationButtonMin,
                         color: a.Z.unsafe_rawColors.GREEN_230.css,
                         width: 20,
                         height: 20
                       }, "validation-passed-" + t) : (0, r.jsx)(l.k$p, {
                         size: "custom",
-                        className: Z.isPublished ? S.validationButtonMax : S.validationButtonMin,
+                        className: D.isPublished ? S.validationButtonMax : S.validationButtonMin,
                         color: a.Z.unsafe_rawColors.RED_400.css,
                         width: 20,
                         height: 20
-                      }, "validation-failed-" + t), w && (0, r.jsx)(o.Z, {
-                        className: M[t] ? Z.isPublished ? S.deleteButtonMax : S.deleteButtonMin : Z.isPublished ? S.deleteButtonHiddenMax : S.deleteButtonHiddenMin,
-                        onClick: () => X(t)
+                      }, "validation-failed-" + t), R && (0, r.jsx)(o.Z, {
+                        className: G[t] ? D.isPublished ? S.deleteButtonMax : S.deleteButtonMin : D.isPublished ? S.deleteButtonHiddenMax : S.deleteButtonHiddenMin,
+                        onClick: () => Q(t)
                       }, "delete-button-" + t)]
-                    }, "social-container-" + t)), (null == H ? void 0 : H.social_links) != null ? (0, r.jsx)(l.Text, {
+                    }, "social-container-" + t)), (null == V ? void 0 : V.social_links) != null ? (0, r.jsx)(l.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: H.social_links
+                      children: V.social_links
                     }) : null, (0, r.jsx)(l.zxk, {
                       size: l.zxk.Sizes.SMALL,
                       color: l.zxk.Colors.PRIMARY,
                       onClick: () => {
-                        if (Z.socialLinks.length < 9) {
-                          let e = [...Z.socialLinks];
-                          (0, g.t$)(n.id, e.concat("")), B(U.concat(""))
+                        if (D.socialLinks.length < 9) {
+                          let e = [...D.socialLinks];
+                          (0, g.t$)(d.id, e.concat("")), F(B.concat(""))
                         }
                       },
-                      disabled: !w || Z.socialLinks.length >= 9,
+                      disabled: !R || D.socialLinks.length >= 9,
                       children: E.NW.string(E.t.QvovjY)
                     })]
-                  }), Z.isPublished && (0, r.jsxs)(r.Fragment, {
+                  }), D.isPublished && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(l.$i$, {
                       className: S.divider
                     }), (0, r.jsxs)(l.hjN, {
@@ -480,24 +489,24 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }), (0, r.jsx)(l.zxk, {
                         size: l.zxk.Sizes.SMALL,
                         color: l.zxk.Colors.RED,
-                        onClick: () => Y(!1),
-                        disabled: !w,
+                        onClick: () => K(!1),
+                        disabled: !R,
                         children: E.NW.string(E.t["DCHd/P"])
                       })]
                     })]
-                  }), (null == H ? void 0 : H.is_published) != null ? (0, r.jsx)(l.Text, {
+                  }), (null == V ? void 0 : V.is_published) != null ? (0, r.jsx)(l.Text, {
                     color: "text-danger",
                     variant: "text-sm/normal",
-                    children: H.is_published
+                    children: V.is_published
                   }) : null]
-                }), !Z.isPublished && (0, r.jsx)("div", {
+                }), !D.isPublished && (0, r.jsx)("div", {
                   className: S.checklist,
                   children: (0, r.jsx)(m.Z, {
                     title: E.NW.string(E.t["2kCyn5"]),
-                    children: $,
+                    children: ee,
                     buttonLabel: E.NW.string(E.t.tVK6S0),
-                    buttonCallback: () => Y(!0),
-                    disabled: !w || !W
+                    buttonCallback: () => K(!0),
+                    disabled: !R || !L
                   })
                 })]
               })

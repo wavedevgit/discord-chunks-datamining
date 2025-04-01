@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 36e6628a677e9209
+  Original File Name: 42bacd28b7a7cd6a
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2499,8 +2499,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -5439,4 +5439,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=36e6628a677e9209.css.map*/
+/*# sourceMappingURL=42bacd28b7a7cd6a.css.map*/
