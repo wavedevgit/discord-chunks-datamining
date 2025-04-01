@@ -135,16 +135,17 @@ let E = new u.Z("RPCCommandsOverlay"),
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         let {
-          lock: a
+          lock: a,
+          context: s
         } = (0, m.jU)(t);
         return new Promise(e => {
           (0, i.ZDy)(async () => {
             let {
-              default: t
+              default: e
             } = await n.e("45406").then(n.bind(n, 344516));
-            return n => {
-              var i, s;
-              return (0, r.jsx)(t, (i = function(e) {
+            return t => {
+              var n, i;
+              return (0, r.jsx)(e, (n = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -161,22 +162,27 @@ let E = new u.Z("RPCCommandsOverlay"),
                   })
                 }
                 return e
-              }({}, n), s = s = {
+              }({}, t), i = i = {
                 mediaEngineContext: o,
                 title: l.application.name,
                 onClose: () => {
-                  n.onClose(), a(), e()
+                  t.onClose()
                 }
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var r = Object.getOwnPropertySymbols(e);
                   n.push.apply(n, r)
                 }
                 return n
-              })(Object(s)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-              }), i))
+              })(Object(i)).forEach(function(e) {
+                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+              }), n))
+            }
+          }, {
+            contextKey: s === _.IlC.POPOUT ? i.u1M : i.z1l,
+            onCloseCallback: () => {
+              a(), e()
             }
           })
         })

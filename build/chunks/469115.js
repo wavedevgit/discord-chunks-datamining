@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Qf: () => f,
-  XV: () => d,
-  bV: () => _,
-  qt: () => p
+  Qf: () => _,
+  XV: () => f,
+  bV: () => p,
+  qt: () => h
 }), n(47120);
 var r = n(392711),
   i = n(524437),
@@ -139,9 +139,10 @@ let s = [{
     getName: () => a.NW.string(a.t["abMn9/"]),
     midpointPercentage: 50
   }],
-  l = [{
+  l = o.BR.DARK,
+  c = [{
     id: i.Us.SUNSET,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_SUNSET_1,
       stop: 27.57
@@ -154,7 +155,7 @@ let s = [{
     midpointPercentage: 35
   }, {
     id: i.Us.CHROMA_GLOW,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_CHROMA_GLOW_1,
       stop: 3.94
@@ -176,7 +177,7 @@ let s = [{
     midpointPercentage: 15
   }, {
     id: i.Us.FOREST,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_FOREST_1,
       stop: 11.2
@@ -198,7 +199,7 @@ let s = [{
     midpointPercentage: 50
   }, {
     id: i.Us.CRIMSON_MOON,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_CRIMSON_MOON_1,
       stop: 16.17
@@ -211,7 +212,7 @@ let s = [{
     midpointPercentage: 30
   }, {
     id: i.Us.MIDNIGHT_BLURPLE,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_MIDNIGHT_BLURPLE_1,
       stop: 11.21
@@ -224,7 +225,7 @@ let s = [{
     midpointPercentage: 24
   }, {
     id: i.Us.MARS,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_MARS_1,
       stop: 14.61
@@ -237,7 +238,7 @@ let s = [{
     midpointPercentage: 50
   }, {
     id: i.Us.DUSK,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_DUSK_1,
       stop: 12.84
@@ -250,7 +251,7 @@ let s = [{
     midpointPercentage: 50
   }, {
     id: i.Us.UNDER_THE_SEA,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_UNDER_THE_SEA_1,
       stop: 1.91
@@ -266,7 +267,7 @@ let s = [{
     midpointPercentage: 50
   }, {
     id: i.Us.RETRO_STORM,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_RETRO_STORM_1,
       stop: 5.64
@@ -285,7 +286,7 @@ let s = [{
     midpointPercentage: 61
   }, {
     id: i.Us.NEON_NIGHTS,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_NEON_NIGHTS_1,
       stop: 0
@@ -301,7 +302,7 @@ let s = [{
     midpointPercentage: 50
   }, {
     id: i.Us.STRAWBERRY_LEMONADE,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_STRAWBERRY_LEMONADE_1,
       stop: 18.79
@@ -317,7 +318,7 @@ let s = [{
     midpointPercentage: 32
   }, {
     id: i.Us.AURORA,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_AURORA_1,
       stop: 10.39
@@ -339,7 +340,7 @@ let s = [{
     midpointPercentage: 34
   }, {
     id: i.Us.SEPIA,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_SEPIA_1,
       stop: 14.14
@@ -351,9 +352,9 @@ let s = [{
     getName: () => a.NW.string(a.t["Z+Un4+"]),
     midpointPercentage: 50
   }],
-  c = {
+  u = {
     id: i.Us.BLURPLE_TWILIGHT,
-    theme: o.BR.DARK,
+    theme: l,
     colors: [{
       token: o.Il.BG_GRADIENT_BLURPLE_TWILIGHT_1,
       stop: 11.18
@@ -365,7 +366,7 @@ let s = [{
     getName: () => a.NW.string(a.t.Mfoe3t),
     midpointPercentage: 50
   },
-  u = {
+  d = {
     id: i.Us.EASTER_EGG,
     theme: o.BR.LIGHT,
     colors: [{
@@ -379,10 +380,10 @@ let s = [{
     getName: () => a.NW.string(a.t.mFinbW),
     midpointPercentage: 50
   },
-  d = [...s, ...l, c, u],
-  f = [c, ...l, ...s, u],
-  _ = [{
-    theme: o.BR.DARKER,
+  f = [...s, ...c, u, d],
+  _ = [u, ...c, ...s, d],
+  p = [{
+    theme: l,
     getName: () => a.NW.string(a.t.b8Cei4)
   }, {
     theme: o.BR.LIGHT,
@@ -394,4 +395,4 @@ let s = [{
     theme: "system",
     getName: () => a.NW.string(a.t.zlvNOj)
   }],
-  p = (0, r.keyBy)(d, "id")
+  h = (0, r.keyBy)(f, "id")

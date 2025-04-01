@@ -123,7 +123,7 @@ E(C, "displayName", "ThemeStore"), E(C, "persistKey", "ThemeStore"), E(C, "migra
   return "amoled" === t && (t = "midnight"), y(b({}, e), {
     theme: t
   })
-}]);
+}, e => e]);
 let x = new C(a.Z, {
   CACHE_LOADED: N,
   CONNECTION_OPEN: R,
