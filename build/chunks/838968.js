@@ -5,8 +5,8 @@ t.d(n, {
 });
 var r = t(200651);
 t(192379);
-var i = t(120356),
-  o = t.n(i),
+var o = t(120356),
+  i = t.n(o),
   s = t(481060),
   a = t(413335),
   l = t(690786),
@@ -39,12 +39,12 @@ function v(e) {
   let {
     guildId: n,
     powerup: t,
-    className: i
+    className: o
   } = e, c = (0, l.Z)(n, t);
   return (0, r.jsxs)("div", {
-    className: o()(m.labelContainer, i),
+    className: i()(m.labelContainer, o),
     children: [(0, r.jsxs)("div", {
-      className: o()(m.inline, m.inlineBoost),
+      className: i()(m.inline, m.inlineBoost),
       children: [(0, r.jsx)(a.Z, {}), (0, r.jsx)(s.Text, {
         tag: "div",
         variant: "heading-md/bold",
@@ -70,7 +70,7 @@ function _(e) {
   let {
     guildId: n,
     powerup: t,
-    className: i,
+    className: o,
     children: a
   } = e, c = (0, l.Z)(n, t), u = null != c, p = (null == c ? void 0 : c.ends_at) != null, {
     onShowMore: x
@@ -78,10 +78,10 @@ function _(e) {
   return (0, r.jsx)(s.kL8, {
     "aria-label": t.title,
     onClick: x,
-    className: o()(m.container, {
+    className: i()(m.container, {
       [m.active]: u,
       [m.warning]: p
-    }, i),
+    }, o),
     children: a
   })
 }

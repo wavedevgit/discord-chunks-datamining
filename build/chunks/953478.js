@@ -1,11 +1,11 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => b
+  Z: () => g
 });
 var r = t(200651);
 t(192379);
-var i = t(793030),
-  o = t(442837),
+var o = t(793030),
+  i = t(442837),
   s = t(481060),
   a = t(678558),
   l = t(343649),
@@ -18,34 +18,34 @@ var i = t(793030),
   v = t(981631),
   _ = t(296260),
   f = t(388032),
-  g = t(424882);
+  b = t(424882);
 
-function b(e) {
+function g(e) {
   let {
     guildId: n
-  } = e, t = (0, o.e7)([d.Z], () => d.Z.getGuild(n)), {
-    available: b,
+  } = e, t = (0, i.e7)([d.Z], () => d.Z.getGuild(n)), {
+    available: g,
     spent: j,
     total: h
   } = (0, p.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
-    className: g.container,
+    className: b.container,
     children: [(0, r.jsxs)("div", {
-      className: g.headerContainer,
-      children: [(0, r.jsx)(i.xv, {
+      className: b.headerContainer,
+      children: [(0, r.jsx)(o.xv, {
         variant: "eyebrow",
         children: f.NW.string(_.Z.hjvcLC)
-      }), (0, r.jsx)(i.xv, {
-        className: g.learnMore,
+      }), (0, r.jsx)(o.xv, {
+        className: b.learnMore,
         variant: "text-xs/semibold",
         children: f.NW.format(_.Z.fXE30d, {
           helpDeskArticle: u.Z.getArticleURL(v.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: g.contentContainer,
+      className: b.contentContainer,
       children: [(0, r.jsx)(x.Z, {
-        count: b,
+        count: g,
         type: x.b.AVAILABLE
       }), (0, r.jsx)(x.Z, {
         count: j,
@@ -57,7 +57,7 @@ function b(e) {
     }), (0, r.jsx)(m.Z, {
       guildId: n
     }), (0, r.jsx)(a.Z, {
-      className: g.boostButton,
+      className: b.boostButton,
       guild: t,
       analyticsLocation: {
         page: v.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -67,7 +67,7 @@ function b(e) {
       size: s.PhG.LARGE,
       intent: l.P.NONE,
       icon: (0, r.jsx)(c.Z, {
-        className: g.boostButtonIcon
+        className: b.boostButtonIcon
       })
     })]
   })

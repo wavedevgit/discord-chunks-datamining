@@ -4,8 +4,8 @@ t.d(n, {
 });
 var r = t(200651);
 t(192379);
-var i = t(793030),
-  o = t(442837),
+var o = t(793030),
+  i = t(442837),
   s = t(481060),
   a = t(834129),
   l = t(271383),
@@ -21,7 +21,7 @@ function x(e) {
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
     username: x,
     roleColor: v
-  } = (0, o.cj)([l.ZP], () => {
+  } = (0, i.cj)([l.ZP], () => {
     var e, t, r;
     return {
       username: null !== (r = l.ZP.getNick(n.guildId, n.userId)) && void 0 !== r ? r : null === (e = n.user) || void 0 === e ? void 0 : e.username,
@@ -44,14 +44,14 @@ function x(e) {
       className: m.boostMessage,
       children: [(0, r.jsx)(s.PUh, {
         className: m.boostMessageUser,
-        name: (0, r.jsx)(i.xv, {
+        name: (0, r.jsx)(o.xv, {
           color: "currentColor",
           variant: "text-md/semibold",
           lineClamp: 1,
           children: x
         }),
         color: null != v ? v : void 0
-      }), (0, r.jsx)(i.xv, {
+      }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
         children: p.NW.string(u.Z.plwH8f)

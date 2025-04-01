@@ -3,9 +3,9 @@ t.d(n, {
   Z: () => _
 }), t(47120), t(266796);
 var r = t(200651),
-  i = t(192379),
-  o = t(120356),
-  s = t.n(o),
+  o = t(192379),
+  i = t(120356),
+  s = t.n(i),
   a = t(793030),
   l = t(156732),
   c = t(690786),
@@ -20,7 +20,7 @@ function _(e) {
   let {
     guildId: n,
     powerup: t
-  } = e, o = null != (0, c.Z)(n, t), [_, f] = i.useState(void 0), g = (0, l.Z)(t);
+  } = e, i = null != (0, c.Z)(n, t), [_, f] = o.useState(void 0), b = (0, l.Z)(t);
   return (0, p.KT)(_), (0, r.jsxs)(d.Z, {
     guildId: n,
     powerup: t,
@@ -29,7 +29,7 @@ function _(e) {
       children: (0, r.jsx)("img", {
         className: v.image,
         alt: "",
-        src: g
+        src: b
       })
     }), (0, r.jsxs)("div", {
       className: v.contentContainer,
@@ -40,7 +40,7 @@ function _(e) {
           children: t.title
         }), t.bundle && (0, r.jsx)(a.xv, {
           className: s()(v.bundle, {
-            [v.active]: o
+            [v.active]: i
           }),
           variant: "text-xs/semibold",
           children: x.NW.string(m.Z.j2jUjY)

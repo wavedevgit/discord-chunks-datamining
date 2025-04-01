@@ -3,8 +3,8 @@ t.d(n, {
   Z: () => x
 });
 var r = t(200651),
-  i = t(192379),
-  o = t(657707),
+  o = t(192379),
+  i = t(657707),
   s = t(793030),
   a = t(442837),
   l = t(692547),
@@ -21,13 +21,13 @@ function x(e) {
   } = e, x = (0, a.e7)([d.Z], () => {
     var e, t;
     return null !== (t = null === (e = d.Z.getStateForGuild(n)) || void 0 === e ? void 0 : e.appliedBoosts) && void 0 !== t ? t : 0
-  }), v = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = x - i.useMemo(() => {
+  }), v = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = x - o.useMemo(() => {
     var e, n, t;
     return null !== (t = null == v ? void 0 : null === (n = v.filter) || void 0 === n ? void 0 : null === (e = n.call(v, e => !e.ended && null == e.endsAt)) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
   }, [v]);
   return _ <= 0 ? null : (0, r.jsxs)("div", {
     className: m.container,
-    children: [(0, r.jsx)(o.P4T, {
+    children: [(0, r.jsx)(i.P4T, {
       color: l.Z.colors.TEXT_WARNING,
       className: m.icon
     }), (0, r.jsx)(s.xv, {

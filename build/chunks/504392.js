@@ -3,9 +3,9 @@ t.d(n, {
   Z: () => C
 }), t(266796);
 var r = t(200651),
-  i = t(192379),
-  o = t(120356),
-  s = t.n(o),
+  o = t(192379),
+  i = t(120356),
+  s = t.n(i),
   a = t(442837),
   l = t(481060),
   c = t(413335),
@@ -17,30 +17,30 @@ var r = t(200651),
   v = t(953478),
   _ = t(460608),
   f = t(279604),
-  g = t(332538),
-  b = t(535396),
+  b = t(332538),
+  g = t(535396),
   j = t(296260),
   h = t(388032),
   Z = t(133104);
-let N = [b.Us.LEVEL, b.Us.PERK];
+let N = [g.Us.LEVEL, g.Us.PERK];
 
 function C(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, o = (0, g.Z)(n);
-  i.useEffect(() => {
+  } = e, i = (0, b.Z)(n);
+  o.useEffect(() => {
     (0, u.Sn)(n), (0, u.Fm)(n)
-  }, [n]), i.useEffect(() => {
+  }, [n]), o.useEffect(() => {
     (0, u.jd)(n)
-  }, [n, o]);
+  }, [n, i]);
   let C = (0, a.e7)([p.Z], () => p.Z.getStateForGuild(n)),
-    w = i.useRef(!1);
-  return (i.useEffect(() => {
+    w = o.useRef(!1);
+  return (o.useEffect(() => {
     var e, r;
     if (null == t) return;
-    let i = null == C ? void 0 : null === (r = C.powerups) || void 0 === r ? void 0 : null === (e = r.get) || void 0 === e ? void 0 : e.call(r, t);
-    null == i || w.current || ((0, f.KE)(n, i), w.current = !0)
+    let o = null == C ? void 0 : null === (r = C.powerups) || void 0 === r ? void 0 : null === (e = r.get) || void 0 === e ? void 0 : e.call(r, t);
+    null == o || w.current || ((0, f.KE)(n, o), w.current = !0)
   }, [n, t, null == C ? void 0 : C.powerups]), (null == C ? void 0 : C.catalog) == null) ? null : (0, r.jsxs)("div", {
     className: Z.container,
     children: [(0, r.jsxs)(d.Z, {
@@ -62,15 +62,15 @@ function C(e) {
           let t = C.catalog.get(e);
           if (null == t) return;
           let {
-            title: i,
-            description: o
+            title: o,
+            description: i
           } = function(e) {
             switch (e) {
-              case b.Us.LEVEL:
+              case g.Us.LEVEL:
                 return {
                   title: h.NW.string(j.Z["TXY/b2"]), description: h.NW.string(j.Z.aJv4PD)
                 };
-              case b.Us.PERK:
+              case g.Us.PERK:
                 return {
                   title: h.NW.string(j.Z.TV3Vm5), description: h.NW.string(j.Z.NHjM1t)
                 }
@@ -82,26 +82,26 @@ function C(e) {
               children: [(0, r.jsx)(l.X6q, {
                 color: "header-primary",
                 variant: "heading-lg/semibold",
-                children: i
+                children: o
               }), (0, r.jsx)(l.Text, {
                 color: "text-muted",
                 variant: "text-sm/medium",
-                children: o
+                children: i
               })]
             }), (0, r.jsx)("div", {
               className: s()(Z.powerupContainer, {
-                [Z.powerupsLevelContainer]: e === b.Us.LEVEL
+                [Z.powerupsLevelContainer]: e === g.Us.LEVEL
               }),
-              children: t.map((e, i) => {
+              children: t.map((e, o) => {
                 switch (e.type) {
-                  case b.Us.LEVEL:
+                  case g.Us.LEVEL:
                     return (0, r.jsx)(m.ZP, {
                       guildId: n,
-                      index: i,
+                      index: o,
                       powerup: e,
-                      nextPowerup: t[i + 1]
+                      nextPowerup: t[o + 1]
                     }, "powerup-".concat(e.skuId));
-                  case b.Us.PERK:
+                  case g.Us.PERK:
                     return (0, r.jsx)(x.Z, {
                       guildId: n,
                       powerup: e
