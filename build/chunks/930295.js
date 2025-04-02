@@ -268,10 +268,11 @@ class C extends(r = o.Component) {
       A.has(e.key) && this.handlePreload()
     }), O(this, "handleDocumentMouseDown", e => {
       let {
-        ignoreModalClicks: t
-      } = this.props, n = e.target, r = this.domElementRef.current;
-      if (null != r) {
-        if ((0, p.t)(r, n) || t && (0, h.$s)()) return;
+        ignoreModalClicks: t,
+        overridePositionRef: n
+      } = this.props, r = e.target, i = (null != n ? n : this.domElementRef).current;
+      if (null != i) {
+        if ((0, p.t)(i, r) || t && (0, h.$s)()) return;
         this.isValidClickStart = !0
       }
     }), O(this, "handleDocumentMouseUp", e => {

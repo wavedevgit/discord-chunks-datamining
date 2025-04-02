@@ -292,29 +292,32 @@ let D = e => {
       locationState: i,
       listItemRef: l
     } = e, {
-      shopButtonDisplayOptions: o
-    } = (0, C.Z)(), a = (0, O.b)("Collectibles Shop Button"), {
-      shouldShowCoachmark: s
-    } = (0, I.Z)(), c = {
+      shopButtonDisplayOptions: o,
+      dismissShopButtonDC: a
+    } = (0, C.Z)(), s = (0, O.b)("Collectibles Shop Button"), {
+      shouldShowCoachmark: c
+    } = (0, I.Z)(), u = {
       selected: t,
       locationState: i,
-      onClick: n,
+      onClick: () => {
+        c || a(), null == n || n()
+      },
       listItemRef: l
     };
-    if (s) return (0, r.jsx)(B, L({}, c));
+    if (c) return (0, r.jsx)(B, L({}, u));
     if (null != o) switch (o.type) {
       case T.k2.TOOLTIP:
-        return (0, r.jsx)(V, w(L({}, c), {
+        return (0, r.jsx)(V, w(L({}, u), {
           displayOptions: o
         }));
       case T.k2.COACHTIP:
-        return (0, r.jsx)(W, w(L({}, c), {
+        return (0, r.jsx)(W, w(L({}, u), {
           displayOptions: o
         }));
       case T.k2.BADGE:
-        return (0, r.jsx)(U, L({}, c))
+        return (0, r.jsx)(U, L({}, u))
     }
     return (0, r.jsxs)(r.Fragment, {
-      children: [a && (0, r.jsx)(H, {}), (0, r.jsx)(M, L({}, c))]
+      children: [s && (0, r.jsx)(H, {}), (0, r.jsx)(M, L({}, u))]
     })
   }

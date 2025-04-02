@@ -28,7 +28,8 @@ function N() {
       explicitContentNonFriendDm: x
     } = (0, c.B)(),
     _ = e => {
-      if ((0, l.Ks)()) {
+      let t = Object.values(e);
+      if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) {
         a.Z.showAgeVerificationGetStartedModal(o.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
         return
       }(0, l.zj)(e)

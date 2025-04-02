@@ -157,7 +157,9 @@ let I = {
             })
           })]
         }), (0, r.jsx)("div", {
-          className: a()(w.row, w.feed, w.feedSingleRow),
+          className: a()(w.row, w.feed, {
+            [w.feedSingleRow]: v !== S.AW.ORBS
+          }),
           children: t ? (0, r.jsx)(r.Fragment, {
             children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(O.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 83379
-  Original File Name: 88bad9bd8d82487f
+  Original File Name: 6ae6207c8481c68c
 **/
 .descriptionText__535f5 {
     margin-top: 4px;
@@ -8227,6 +8227,8 @@ html .progress__61462 {
 
 .content__4bcae {
     flex: 1;
+    flex-wrap: wrap;
+    gap: 8px;
     justify-content: space-between
 }
 
@@ -12254,4 +12256,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=88bad9bd8d82487f.css.map*/
+/*# sourceMappingURL=6ae6207c8481c68c.css.map*/
