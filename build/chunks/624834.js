@@ -14,12 +14,12 @@ var r = n(200651),
   f = n(620662),
   m = n(778569),
   p = n(100527),
-  E = n(906732),
-  g = n(835473),
+  g = n(906732),
+  E = n(835473),
   v = n(314897),
   h = n(592125),
-  S = n(594174),
-  b = n(849171),
+  b = n(594174),
+  S = n(849171),
   y = n(981631),
   O = n(388032),
   Z = n(496110);
@@ -31,19 +31,19 @@ function I(e) {
     channelId: i
   } = e, {
     analyticsLocations: a
-  } = (0, E.ZP)(p.Z.PRESENCE_ACTIVITY_TILE), {
+  } = (0, g.ZP)(p.Z.PRESENCE_ACTIVITY_TILE), {
     activity: o
-  } = t, s = o.application_id, [u] = (0, g.Z)([s]), {
+  } = t, s = o.application_id, [u] = (0, E.Z)([s]), {
     url: c
   } = (0, m.Z)({
     applicationId: s,
-    names: b.Ix,
-    size: b.bn
+    names: S.Ix,
+    size: S.bn
   }), d = l.useMemo(() => ({
     userId: t.user.id,
     activity: t.activity
   }), [t]);
-  return (0, r.jsx)(E.Gt, {
+  return (0, r.jsx)(g.Gt, {
     value: a,
     children: (0, r.jsxs)("div", {
       className: Z.container,
@@ -67,9 +67,9 @@ function j(e) {
     channelId: n,
     participant: i,
     applicationId: m
-  } = e, p = (0, b.V_)(t), [I] = (0, b.Ym)(t), j = (0, o.e7)([h.Z], () => h.Z.getChannel(n)), x = (0, o.e7)([S.default, v.default], () => (0, d.J)(i, v.default) ? null : S.default.getUser(i.userId)), _ = l.useMemo(() => null != x ? [x] : [], [x]), N = (0, g.q)(m), {
+  } = e, p = (0, S.V_)(t), [I] = (0, S.Ym)(t), j = (0, o.e7)([h.Z], () => h.Z.getChannel(n)), x = (0, o.e7)([b.default, v.default], () => (0, d.J)(i, v.default) ? null : b.default.getUser(i.userId)), N = l.useMemo(() => null != x ? [x] : [], [x]), _ = (0, E.q)(m), {
     analyticsLocations: w
-  } = (0, E.ZP)(), P = (0, u.O)(), R = i.activity.session_id, A = (0, f.Z)(i.activity, y.xjy.EMBEDDED) && (0, f.Z)(i.activity, y.xjy.CONTEXTLESS), [C, T] = l.useState(!1), D = null == x ? void 0 : x.id, M = l.useCallback(async e => {
+  } = (0, g.ZP)(), P = (0, u.O)(), R = i.activity.session_id, A = (0, f.Z)(i.activity, y.xjy.EMBEDDED) && (0, f.Z)(i.activity, y.xjy.CONTEXTLESS), [C, T] = l.useState(!1), D = null == x ? void 0 : x.id, M = l.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (T(!0), await (0, c.Z)({
       applicationId: m,
       activityChannelId: n,
@@ -81,17 +81,17 @@ function j(e) {
       isContextlessActivity: A
     }), T(!1))
   }, [m, D, P.location, w, R, n, A]);
-  return null == j || null == x || null == N ? null : (0, r.jsxs)("div", {
+  return null == j || null == x || null == _ ? null : (0, r.jsxs)("div", {
     className: Z.splash,
-    children: [(0, r.jsx)(b.OV, {
+    children: [(0, r.jsx)(S.OV, {
       avatarSize: I,
       guildId: j.guild_id,
       channelId: j.id,
-      users: _
+      users: N
     }), (0, r.jsx)(s.Text, {
       className: a()(Z.subheader, {
-        [Z.small]: p === b.nR.SMALL,
-        [Z.medium]: p === b.nR.MEDIUM
+        [Z.small]: p === S.nR.SMALL,
+        [Z.medium]: p === S.nR.MEDIUM
       }),
       variant: "text-sm/normal",
       children: O.NW.formatToPlainString(O.t["7Uuia2"], {
@@ -99,17 +99,17 @@ function j(e) {
       })
     }), (0, r.jsx)(s.Text, {
       className: a()(Z.header, {
-        [Z.small]: p === b.nR.SMALL,
-        [Z.medium]: p === b.nR.MEDIUM
+        [Z.small]: p === S.nR.SMALL,
+        [Z.medium]: p === S.nR.MEDIUM
       }),
       variant: "text-sm/normal",
-      children: N.name
+      children: _.name
     }), (0, r.jsx)("div", {
       className: Z.buttons,
       children: (0, r.jsx)(s.zxk, {
         onClick: M,
         submitting: C,
-        size: (0, b.ac)(p),
+        size: (0, S.ac)(p),
         className: Z.button,
         color: s.zxk.Colors.PRIMARY,
         children: O.NW.string(O.t["4i2vj4"])

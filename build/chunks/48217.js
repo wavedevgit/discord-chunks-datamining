@@ -1,58 +1,59 @@
-/** Chunk was on 96977 **/
+/** Chunk was on 97590 **/
+"use strict";
 n.d(t, {
-  c: () => b
+  c: () => p
 });
-var i = n(200651);
+var r = n(200651);
 n(192379);
-var o = n(481060),
-  r = n(269128),
+var i = n(481060),
+  s = n(269128),
   a = n(358555),
   l = n(267642),
-  c = n(26323),
-  s = n(30513),
+  o = n(26323),
+  c = n(30513),
   d = n(981631),
   u = n(388032),
-  _ = n(785965);
+  m = n(785965);
 
 function g(e) {
   let {
     guild: t,
     banner: n
   } = e;
-  return (0, i.jsx)("div", {
-    className: _.guildBanner,
+  return (0, r.jsx)("div", {
+    className: m.guildBanner,
     style: {
       backgroundImage: "url(".concat(n)
     },
-    children: (0, i.jsxs)("div", {
-      className: _.guildHeader,
-      children: [(0, i.jsx)(a.Z, {
+    children: (0, r.jsxs)("div", {
+      className: m.guildHeader,
+      children: [(0, r.jsx)(a.Z, {
         guild: t,
         isBannerVisible: !0
-      }), (0, i.jsx)(o.X6q, {
-        className: _.guildName,
+      }), (0, r.jsx)(i.X6q, {
+        className: m.guildName,
         variant: "heading-md/semibold",
         children: t.toString()
-      }), (0, i.jsx)(r.Z, {
-        className: _.dropdown,
+      }), (0, r.jsx)(s.Z, {
+        className: m.dropdown,
         open: !1
       })]
     })
   })
 }
 
-function b(e) {
+function p(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: n,
-    guild: o,
-    isGIF: r,
+    guild: i,
+    isGIF: s,
     banner: a
-  } = e, _ = r ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
-  null != _ && (0, c.Z)({
+  } = e, m = s ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
+  null != m && (0, o.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
-    guild: o,
+    guild: i,
     headerProps: {
       title: u.NW.string(u.t["rv2H+/"]),
       subtitle: function(e, t) {
@@ -62,13 +63,13 @@ function b(e) {
         }) : u.NW.formatToPlainString(u.t.B253V1, {
           targetLevelOrPlan: n
         })
-      }(_, r),
-      image: (0, i.jsx)(g, {
-        guild: o,
+      }(m, s),
+      image: (0, r.jsx)(g, {
+        guild: i,
         banner: a
       })
     },
     perkIntro: u.NW.string(u.t.ZuItcH),
-    perks: r ? (0, s.zC)() : (0, s.XO)()
+    perks: s ? (0, c.zC)() : (0, c.XO)()
   })
 }

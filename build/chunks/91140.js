@@ -1,51 +1,51 @@
-/** Chunk was on 72663 **/
-n.d(t, {
-  W: () => d,
+/** Chunk was on 62880 **/
+l.d(n, {
+  W: () => o,
   Z: () => u
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(379357),
-  l = n(442550),
-  s = n(297781),
-  a = n(443487),
-  c = n(220359);
-let d = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
+var t = l(200651),
+  i = l(192379),
+  a = l(379357),
+  s = l(442550),
+  r = l(297781),
+  c = l(443487),
+  d = l(220359);
+let o = [r.OV, r.EE, r.Af, r.U9, r.wO, r.f, r.n8, r.v1, r.pQ],
   u = i.memo(e => {
-    var t;
+    var n;
     let {
-      entry: n,
+      entry: l,
       channel: i,
       selected: u,
-      hovered: _
+      hovered: x
     } = e, {
-      largeImage: p
-    } = (0, o.rv)({
-      entry: n,
+      largeImage: m
+    } = (0, a.rv)({
+      entry: l,
       showCoverImage: !1
     });
-    return (0, r.jsxs)(a.Zb, {
+    return (0, t.jsxs)(c.Zb, {
       selected: u,
-      children: [(0, r.jsxs)(a.e$, {
-        children: [(0, r.jsx)(a.F9, {
-          entry: n,
+      children: [(0, t.jsxs)(c.e$, {
+        children: [(0, t.jsx)(c.F9, {
+          entry: l,
           channelId: i.id,
           guildId: i.guild_id
-        }), (0, r.jsx)(a.ll, {
-          children: n.extra.game_name
-        }), (0, r.jsx)(s.Gk, {
-          location: s.Gt.CARD,
-          children: d.map((e, t) => (0, r.jsx)(e, {
-            entry: n,
-            hovered: _
-          }, t))
+        }), (0, t.jsx)(c.ll, {
+          children: l.extra.game_name
+        }), (0, t.jsx)(r.Gk, {
+          location: r.Gt.CARD,
+          children: o.map((e, n) => (0, t.jsx)(e, {
+            entry: l,
+            hovered: x
+          }, n))
         })]
-      }), (0, r.jsx)(l.f, {
-        alt: null !== (t = null == p ? void 0 : p.text) && void 0 !== t ? t : null == p ? void 0 : p.alt,
-        src: null == p ? void 0 : p.src,
+      }), (0, t.jsx)(s.f, {
+        alt: null !== (n = null == m ? void 0 : m.text) && void 0 !== n ? n : null == m ? void 0 : m.alt,
+        src: null == m ? void 0 : m.src,
         size: 48,
-        className: c.thumbnail,
-        showTooltip: (null == p ? void 0 : p.text) != null
+        className: d.thumbnail,
+        showTooltip: (null == m ? void 0 : m.text) != null
       })]
     })
   })

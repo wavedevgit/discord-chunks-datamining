@@ -1,79 +1,79 @@
 /** Chunk was on 53937 **/
-l.d(t, {
+t.d(l, {
   ZP: () => g,
   pn: () => p
 });
-var n, r = l(200651),
-  i = l(192379),
-  s = l(591759),
-  a = l(817857);
+var n, r = t(200651),
+  i = t(192379),
+  s = t(591759),
+  a = t(817857);
 
 function o(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var l = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(l);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(l, e).enumerable
-    }))), n.forEach(function(t) {
+  for (var l = 1; l < arguments.length; l++) {
+    var t = null != arguments[l] ? arguments[l] : {},
+      n = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), n.forEach(function(l) {
       var n;
-      n = l[t], t in e ? Object.defineProperty(e, t, {
+      n = t[l], l in e ? Object.defineProperty(e, l, {
         value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[l] = n
     })
   }
   return e
 }
 
-function u(e, t) {
+function d(e, l) {
   if (null == e) return {};
-  var l, n, r = function(e, t) {
+  var t, n, r = function(e, l) {
     if (null == e) return {};
-    var l, n, r = {},
+    var t, n, r = {},
       i = Object.keys(e);
-    for (n = 0; n < i.length; n++) l = i[n], t.indexOf(l) >= 0 || (r[l] = e[l]);
+    for (n = 0; n < i.length; n++) t = i[n], l.indexOf(t) >= 0 || (r[t] = e[t]);
     return r
-  }(e, t);
+  }(e, l);
   if (Object.getOwnPropertySymbols) {
     var i = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < i.length; n++) l = i[n], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l])
+    for (n = 0; n < i.length; n++) t = i[n], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
   }
   return r
 }
 
-function d(e, t) {
-  let l = s.Z.toURLSafe(null != e ? e : "");
-  if (null === l) return "";
-  if (null == t) return l.toString();
-  for (let e in t) {
-    let n = t[e];
-    null != n && l.searchParams.set(e, n)
+function u(e, l) {
+  let t = s.Z.toURLSafe(null != e ? e : "");
+  if (null === t) return "";
+  if (null == l) return t.toString();
+  for (let e in l) {
+    let n = l[e];
+    null != n && t.searchParams.set(e, n)
   }
-  return l.toString()
+  return t.toString()
 }
 
 function c(e) {
   var {
-    src: t,
-    autoMute: l
-  } = e, n = u(e, ["src", "autoMute"]);
+    src: l,
+    autoMute: t
+  } = e, n = d(e, ["src", "autoMute"]);
   let s = i.useRef(null),
     a = i.useCallback(e => {
       if (e.data["x-tiktok-player"] && "https://www.tiktok.com" === e.origin && "onPlayerReady" === e.data.type) {
-        var t, n, r, i;
-        l && (null === (i = s.current) || void 0 === i || null === (r = i.contentWindow) || void 0 === r || r.postMessage({
+        var l, n, r, i;
+        t && (null === (i = s.current) || void 0 === i || null === (r = i.contentWindow) || void 0 === r || r.postMessage({
           type: "mute",
           "x-tiktok-player": !0
-        }, e.origin)), null === (n = s.current) || void 0 === n || null === (t = n.contentWindow) || void 0 === t || t.postMessage({
+        }, e.origin)), null === (n = s.current) || void 0 === n || null === (l = n.contentWindow) || void 0 === l || l.postMessage({
           type: "play",
           "x-tiktok-player": !0
         }, e.origin)
       }
-    }, [l]);
+    }, [t]);
   i.useEffect(() => (window.addEventListener("message", a), () => window.removeEventListener("message", a)), [a]);
-  let c = d(t, {
+  let c = u(l, {
     utm_source: "discord.gg"
   });
   return (0, r.jsx)(m, o({
@@ -84,21 +84,21 @@ function c(e) {
 
 function h(e) {
   var {
-    src: t,
-    autoMute: l
-  } = e, n = u(e, ["src", "autoMute"]);
-  let i = d(t, {
+    src: l,
+    autoMute: t
+  } = e, n = d(e, ["src", "autoMute"]);
+  let i = u(l, {
     autoplay: "1",
     auto_play: "1",
-    mute: l ? "1" : void 0
+    mute: t ? "1" : void 0
   });
   return (0, r.jsx)(m, o({
     src: i
   }, n))
 }
-let m = i.forwardRef(function(e, t) {
+let m = i.forwardRef(function(e, l) {
   return (0, r.jsx)("iframe", o({
-    ref: t,
+    ref: l,
     className: a.embedIframe,
     allow: "autoplay",
     frameBorder: 0,

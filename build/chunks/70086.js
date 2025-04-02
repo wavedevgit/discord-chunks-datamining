@@ -1,29 +1,28 @@
-/** Chunk was on 70040 **/
-"use strict";
-n.d(t, {
-  P: () => o
+/** Chunk was on 55666 **/
+B.d(g, {
+  P: () => E
 });
-var r = n(200651);
-n(192379);
-var i = n(481060),
-  s = n(709586),
-  a = n(388032),
-  l = n(214828);
+var C = B(200651);
+B(192379);
+var Q = B(481060),
+  w = B(709586),
+  D = B(388032),
+  f = B(214828);
 
-function o(e) {
+function E(A) {
   let {
-    onClick: t,
-    className: n
-  } = e;
-  return (0, r.jsxs)(i.gtL, {
-    color: i.zxk.Colors.GREEN,
-    className: n,
-    innerClassName: l.upsellButton,
-    onClick: t,
-    children: [(0, r.jsx)(s.Z, {
+    onClick: g,
+    className: B
+  } = A;
+  return (0, C.jsxs)(Q.gtL, {
+    color: Q.zxk.Colors.GREEN,
+    className: B,
+    innerClassName: f.upsellButton,
+    onClick: g,
+    children: [(0, C.jsx)(w.Z, {
       height: 16,
       width: 16,
-      className: l.premiumUpsellBadge
-    }), " ", a.NW.string(a.t["+7XY39"])]
+      className: f.premiumUpsellBadge
+    }), " ", D.NW.string(D.t["+7XY39"])]
   })
 }

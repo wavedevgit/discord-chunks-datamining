@@ -1,21 +1,21 @@
 /** Chunk was on 53937 **/
-l.d(t, {
+t.d(l, {
   L: () => i,
   Z: () => s
 });
-var n = l(729594),
-  r = l(981631);
+var n = t(729594),
+  r = t(981631);
 
 function i(e) {
   return "music.apple.com" === e
 }
 
 function s(e) {
-  var t;
-  if (null == e.url || (null === (t = e.provider) || void 0 === t ? void 0 : t.name) !== "Apple Music" || e.type !== r.hBH.ARTICLE && e.type !== r.hBH.LINK) return !1;
+  var l;
+  if (null == e.url || (null === (l = e.provider) || void 0 === l ? void 0 : l.name) !== "Apple Music" || e.type !== r.hBH.ARTICLE && e.type !== r.hBH.LINK) return !1;
   try {
-    let t = n.parse(e.url, !0).host;
-    return i(t)
+    let l = n.parse(e.url, !0).host;
+    return i(l)
   } catch (e) {
     return !1
   }

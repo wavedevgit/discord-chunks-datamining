@@ -14,12 +14,12 @@ var r = n(200651),
   f = n(481060),
   m = n(2052),
   p = n(906732),
-  E = n(194082),
-  g = n(484459),
+  g = n(194082),
+  E = n(484459),
   v = n(594174),
   h = n(626135),
-  S = n(74538),
-  b = n(557457),
+  b = n(74538),
+  S = n(557457),
   y = n(475674),
   O = n(981631),
   Z = n(474936),
@@ -45,7 +45,7 @@ function x(e) {
   return e
 }
 
-function _(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
+let _ = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
   w = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
@@ -73,10 +73,10 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1
   },
   C = {
-    borderRadius: "".concat(N, "px ").concat(N, "px ").concat(N, "px ").concat(N, "px")
+    borderRadius: "".concat(_, "px ").concat(_, "px ").concat(_, "px ").concat(_, "px")
   },
   T = {
-    borderRadius: "0px ".concat(N, "px ").concat(N, "px 0px")
+    borderRadius: "0px ".concat(_, "px ").concat(_, "px 0px")
   },
   D = {
     mass: 1,
@@ -89,24 +89,24 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         participant: o,
         isUpsellEnabled: s,
         shape: d,
-        size: g,
-        didTrackUpsellViewed: N,
+        size: E,
+        didTrackUpsellViewed: _,
         setDidTrackUpsellViewed: w,
         className: P,
         premiumIndicator: R
       } = e,
-      A = (0, b.Wc)(o),
+      A = (0, S.Wc)(o),
       {
         analyticsLocations: C
       } = (0, p.ZP)(),
       T = null != (0, y.Z)(o);
     try {
-      t = (0, b.nG)(A)
+      t = (0, S.nG)(A)
     } catch (e) {
       t = !1
     }
     try {
-      i = (0, b.tR)(A)
+      i = (0, S.tR)(A)
     } catch (e) {
       i = !1
     }
@@ -115,32 +115,32 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         location: M
       } = (0, m.O)(),
       k = (0, u.e7)([v.default], () => v.default.getCurrentUser()),
-      L = s && !S.ZP.isPremium(k, Z.p9.TIER_1) && !S.ZP.canStreamQuality(S.ZP.StreamQuality.MID, k),
+      L = s && !b.ZP.isPremium(k, Z.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, k),
       U = l.useCallback(() => {
         L && D && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, _(x({}, t), {
+          return t => (0, r.jsx)(e, N(x({}, t), {
             analyticsSource: M
           }))
         })
       }, [L, D, M]);
     if (l.useEffect(() => {
-        !N && D && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !_ && D && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: Z.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
           location_stack: C
         }), w(!0))
-      }, [t, i, D, N, w, C]), null == A) return null;
+      }, [t, i, D, _, w, C]), null == A) return null;
     let F = (0, r.jsx)(f.ua7, {
       text: T ? I.NW.string(I.t.q8TiVl) : D ? I.NW.string(I.t.IHgpEh) : I.NW.string(I.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, _(x({}, e), {
+      children: e => (0, r.jsxs)(f.P3F, N(x({}, e), {
         onClick: U,
-        className: a()(j.qualityIndicator, g, E.eE[d], T ? j.qualityIndicatorLowQuality : j.qualityIndicatorFullQuality, {
+        className: a()(j.qualityIndicator, E, g.eE[d], T ? j.qualityIndicatorLowQuality : j.qualityIndicatorFullQuality, {
           [j.clickable]: L && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
@@ -149,9 +149,9 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           className: j.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: j.qualityResolution,
-          children: (0, b.ml)(A.maxResolution)
+          children: (0, S.ml)(A.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, b.bp)(A.maxFrameRate)
+          children: (0, S.bp)(A.maxFrameRate)
         })]
       }))
     });
@@ -172,15 +172,15 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: s,
       className: u,
       premiumIndicator: c
-    } = e, [d, m] = l.useState(!1), p = (0, b.Wc)(t), {
+    } = e, [d, m] = l.useState(!1), p = (0, S.Wc)(t), {
       reducedMotion: v
     } = l.useContext(f.Sfi), h = n && null != p;
     l.useEffect(() => {
-      (0, g.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, E.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: !0
       })
     }, [t]);
-    let S = (0, f.Yzy)(h, {
+    let b = (0, f.Yzy)(h, {
         enter: {
           from: v.enabled ? R : w,
           to: v.enabled ? A : P
@@ -197,10 +197,10 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: l
       } = e;
-      return (0, r.jsxs)("div", _(x({
+      return (0, r.jsxs)("div", N(x({
         className: a()(j.streamQualityIndicator, n)
       }, l), {
-        children: [S((e, n) => n ? (0, r.jsx)(o.animated.div, {
+        children: [b((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
           children: (0, r.jsx)(M, {
             className: j.liveQualityIndicator,
@@ -215,8 +215,8 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         }) : null), (0, r.jsx)(o.animated.div, {
           style: y,
           className: j.liveIndicator,
-          children: (0, r.jsx)(E.ZP, {
-            look: E.jZ.RED,
+          children: (0, r.jsx)(g.ZP, {
+            look: g.jZ.RED,
             size: s,
             shape: h ? f.Dv2.ROUND_RIGHT : f.Dv2.ROUND
           })

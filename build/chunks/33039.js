@@ -61,7 +61,7 @@ function g(e, t) {
   if (null == r) return;
   let i = r[null != t ? t : a.kod];
   if (null != i) {
-    for (let e of Object.values(s.Yn))(n === e || null == n) && delete i[e];
+    for (let t of Object.values(s.Yn))(n === t || null == n) && (delete i[t], delete h[m(null != n ? n : t, e)]);
     p[e][null != t ? t : a.kod] = i
   }
 }
@@ -74,7 +74,7 @@ function E(e, t, n, r) {
     [r]: {
       streamId: n
     }
-  })
+  }), delete h[m(r, e)]
 }
 
 function b(e) {
@@ -117,7 +117,7 @@ function O(e) {
     } = t;
     if (null == o && r === f) {
       if (i !== _) return e;
-      p = {}
+      p = {}, h = {}
     } else {
       if (null != o || (null === (n = p[r]) || void 0 === n ? void 0 : n[null != s ? s : a.kod]) == null) return e;
       g(r, s)

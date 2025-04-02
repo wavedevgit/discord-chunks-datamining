@@ -11,12 +11,12 @@ var r, l, i, a = n(442837),
   f = n(959457),
   m = n(630759),
   p = n(729303),
-  E = n(651941),
-  g = n(981631);
+  g = n(651941),
+  E = n(981631);
 let v = new Map,
   h = new Map,
-  S = !1,
-  b = null;
+  b = !1,
+  S = null;
 
 function y() {
   return f.Z.getAllActiveStreamKeys().reduce((e, t) => {
@@ -36,8 +36,8 @@ function O() {
     if (n !== e && !0 !== v.get(e)) {
       r = !1;
       break
-    } let l = r !== S;
-  return S = r, l
+    } let l = r !== b;
+  return b = r, l
 }
 
 function Z(e) {
@@ -49,7 +49,7 @@ function Z(e) {
       let t = d.Z.getSecureFramesRosterMapEntry(e);
       if (null == t) return !1;
       let n = new Uint8Array(t),
-        r = E.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
+        r = g.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
         l = (0, m.UB)(e, [d.Z, f.Z]),
         i = r && !l,
         a = i !== v.get(e);
@@ -61,14 +61,14 @@ function Z(e) {
 }
 
 function I() {
-  v.clear(), h.clear(), S = !1
+  v.clear(), h.clear(), b = !1
 }
 class j extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, E.Z, d.Z, f.Z)
+    this.waitFor(p.Z, g.Z, d.Z, f.Z)
   }
   isCallVerified() {
-    return S
+    return b
   }
   isStreamVerified(e) {
     return h.get(e)
@@ -89,8 +89,8 @@ let x = new j(s.Z, {
     let {
       channelId: t
     } = e;
-    if (t === b) return !1;
-    b = t, I()
+    if (t === S) return !1;
+    S = t, I()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -98,7 +98,7 @@ let x = new j(s.Z, {
       state: n,
       context: r
     } = e;
-    if (n !== g.hes.DISCONNECTED) return !1;
+    if (n !== E.hes.DISCONNECTED) return !1;
     switch (r) {
       case o.Yn.STREAM:
         if (null == t) return !1;

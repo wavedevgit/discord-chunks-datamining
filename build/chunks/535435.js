@@ -1,4 +1,4 @@
-/** Chunk was on 70040 **/
+/** Chunk was on 97590 **/
 "use strict";
 e.exports = {
   serverBoostTabItem: "serverBoostTabItem_cbe0b4",

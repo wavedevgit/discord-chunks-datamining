@@ -1,49 +1,49 @@
-/** Chunk was on 72663 **/
-n.d(t, {
+/** Chunk was on 62880 **/
+l.d(n, {
   Z: () => u,
-  j: () => d
+  j: () => o
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(379357),
-  l = n(442550),
-  s = n(297781),
-  a = n(443487),
-  c = n(220359);
-let d = [s.OV, s.EE, s.Af, s.U9, s.n8, s.pQ],
+var t = l(200651),
+  i = l(192379),
+  a = l(379357),
+  s = l(442550),
+  r = l(297781),
+  c = l(443487),
+  d = l(220359);
+let o = [r.OV, r.EE, r.Af, r.U9, r.n8, r.pQ],
   u = i.memo(e => {
     let {
-      entry: t,
-      channel: n,
+      entry: n,
+      channel: l,
       selected: i,
       hovered: u
     } = e, {
-      largeImage: _
-    } = (0, o.rv)({
-      entry: t,
+      largeImage: x
+    } = (0, a.rv)({
+      entry: n,
       showCoverImage: !1
     });
-    return (0, r.jsxs)(a.Zb, {
+    return (0, t.jsxs)(c.Zb, {
       selected: i,
-      children: [(0, r.jsxs)(a.e$, {
-        children: [(0, r.jsx)(a.F9, {
-          entry: t,
-          channelId: n.id,
-          guildId: n.guild_id
-        }), (0, r.jsx)(a.ll, {
-          children: t.extra.activity_name
-        }), (0, r.jsx)(s.Gk, {
-          location: s.Gt.CARD,
-          children: d.map((e, n) => (0, r.jsx)(e, {
-            entry: t,
+      children: [(0, t.jsxs)(c.e$, {
+        children: [(0, t.jsx)(c.F9, {
+          entry: n,
+          channelId: l.id,
+          guildId: l.guild_id
+        }), (0, t.jsx)(c.ll, {
+          children: n.extra.activity_name
+        }), (0, t.jsx)(r.Gk, {
+          location: r.Gt.CARD,
+          children: o.map((e, l) => (0, t.jsx)(e, {
+            entry: n,
             hovered: u
-          }, n))
+          }, l))
         })]
-      }), (0, r.jsx)(l.f, {
-        alt: null == _ ? void 0 : _.alt,
-        src: null == _ ? void 0 : _.src,
+      }), (0, t.jsx)(s.f, {
+        alt: null == x ? void 0 : x.alt,
+        src: null == x ? void 0 : x.src,
         size: 48,
-        className: c.thumbnail
+        className: d.thumbnail
       })]
     })
   })

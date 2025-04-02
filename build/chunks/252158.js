@@ -361,6 +361,7 @@ class G extends i.Z {
       MEDIA_SESSION_JOINED: this.updateActiveErrors,
       RTC_CONNECTION_UPDATE_ID: this.updateActiveErrors,
       RTC_CONNECTION_USER_CREATE: this.updateActiveErrors,
+      RTC_CONNECTION_VIDEO: this.updateActiveErrors,
       VIDEO_STREAM_READY_TIMEOUT: this.updateActiveErrors,
       CLEAR_VIDEO_STREAM_READY_TIMEOUT: this.updateActiveErrors,
       REPORT_AV_ERROR: this.handleReportAVError

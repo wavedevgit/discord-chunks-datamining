@@ -16,9 +16,9 @@ var r = n(200651),
   f = n(124197);
 let m = 112,
   p = 16 / 9 * 112 + 8,
-  E = 10 * s.Z.Millis.SECOND;
+  g = 10 * s.Z.Millis.SECOND;
 
-function g(e) {
+function E(e) {
   var t;
   let n = o.default.getId();
   return e.type === d.fO.USER && e.user.id === n && (null === (t = e.voiceState) || void 0 === t ? void 0 : t.selfVideo)
@@ -44,14 +44,14 @@ function v(e, t) {
   l.useEffect(() => {
     let e = setTimeout(() => {
       h(Date.now())
-    }, E);
+    }, g);
     return () => {
       clearTimeout(e)
     }
   }, [t]);
-  let S = l.useRef({}),
+  let b = l.useRef({}),
     {
-      visibleParticipants: b,
+      visibleParticipants: S,
       participantTileWidth: y
     } = l.useMemo(() => {
       let n = Date.now(),
@@ -68,18 +68,18 @@ function v(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < E ? r = "\x04" : (null === (n = e.voiceState) || void 0 === n ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < g ? r = "\x04" : (null === (n = e.voiceState) || void 0 === n ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
         [m, p] = (0, i.partition)(l, d.Io),
-        v = m.findIndex(g),
+        v = m.findIndex(E),
         h = null; - 1 !== v && (h = m[v], m.splice(v, 1));
-      let b = null == h || f ? e : e - r - s,
-        y = Math.max(0, Math.min(Math.floor((b - s) / (o + s)), c, t.length)),
-        O = Math.min((b - s) / y - s, r),
+      let S = null == h || f ? e : e - r - s,
+        y = Math.max(0, Math.min(Math.floor((S - s) / (o + s)), c, t.length)),
+        O = Math.min((S - s) / y - s, r),
         Z = Math.max(0, y - p.length),
         I = p.slice(0, y),
         j = m.slice(0, Z),
@@ -87,7 +87,7 @@ function v(e, t) {
       if (Z > 0) {
         let e = [];
         for (let t of j) {
-          let n = S.current[t.id];
+          let n = b.current[t.id];
           null != n && n < Z ? x[n] = t : e.push(t)
         }
         for (let t = 0; t < x.length; t++) {
@@ -97,17 +97,17 @@ function v(e, t) {
           x[t] = n
         }
       }
-      let _ = x.filter(u.lm),
-        N = (0, i.keyBy)((0, i.range)(_.length), e => _[e].id);
-      S.current = N;
-      let w = [...I, ..._];
+      let N = x.filter(u.lm),
+        _ = (0, i.keyBy)((0, i.range)(N.length), e => N[e].id);
+      b.current = _;
+      let w = [...I, ...N];
       return null != h && (f && w.length >= y ? w[Math.max(0, w.length - 1)] = h : w.push(h)), {
         visibleParticipants: w,
         participantTileWidth: O
       }
     }, [e, t, v, m, f, c, s, o, r]);
   return {
-    visibleParticipants: b,
+    visibleParticipants: S,
     participantTileWidth: y
   }
 }
@@ -124,12 +124,12 @@ function h(e) {
     inCall: u,
     popoutWindow: d,
     paused: m = !1
-  } = e, E = null != d;
+  } = e, g = null != d;
   return (0, r.jsx)("div", {
     className: f.root,
     children: t.map(e => {
       if (null == e) return null;
-      let t = g(e);
+      let t = E(e);
       return (0, r.jsx)("div", {
         className: f.tileSizer,
         style: t ? {
@@ -147,7 +147,7 @@ function h(e) {
           width: t ? p : n,
           inCall: u,
           paused: m,
-          inPopout: E
+          inPopout: g
         })
       }, e.id)
     })

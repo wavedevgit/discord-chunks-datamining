@@ -2,12 +2,12 @@
 n.d(t, {
   AX: () => u,
   BR: () => d,
-  Bo: () => g,
+  Bo: () => E,
   Df: () => f,
   LT: () => v,
   ZZ: () => m,
   cV: () => c,
-  fW: () => E,
+  fW: () => g,
   gr: () => p,
   oW: () => s
 });
@@ -85,7 +85,7 @@ function p(e, t, n) {
   })
 }
 
-function E(e, t) {
+function g(e, t) {
   i.Z.dispatch({
     type: "SHARED_CANVAS_CLEAR_DRAWABLES",
     drawables: e,
@@ -93,7 +93,7 @@ function E(e, t) {
   })
 }
 
-function g(e) {
+function E(e) {
   i.Z.dispatch({
     type: "SHARED_CANVAS_SET_DRAW_MODE",
     drawMode: e

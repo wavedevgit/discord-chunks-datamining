@@ -14,13 +14,13 @@ var r = n(192379),
   f = n(88315),
   m = n(262433),
   p = n(400321),
-  E = n(813900);
-let g = 1e3 / 60;
+  g = n(813900);
+let E = 1e3 / 60;
 
 function v(e, t, n, v) {
   let h = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
-    S = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK_500).hex(),
-    b = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
+    b = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK_500).hex(),
+    S = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
     y = r.useRef({}),
     O = r.useRef(new l.Xp),
     Z = r.useCallback(t => {
@@ -40,10 +40,10 @@ function v(e, t, n, v) {
         if (0 === n.length) return;
         let f = t.current;
         if (null == f) return;
-        let E = f.getContext("2d");
-        if (null == E) return;
+        let g = f.getContext("2d");
+        if (null == g) return;
         let {
-          width: g,
+          width: E,
           height: v
         } = f.getBoundingClientRect(), h = [];
         n.forEach(e => {
@@ -91,8 +91,8 @@ function v(e, t, n, v) {
             }
           }({
             drawable: e,
-            context: E,
-            canvasWidth: g,
+            context: g,
+            canvasWidth: E,
             canvasHeight: v,
             fallbackColor: r,
             outlineColorDark: o,
@@ -108,11 +108,11 @@ function v(e, t, n, v) {
         fallbackColor: h,
         linesDrawnAt: y,
         streamerId: t,
-        outlineColorDark: S,
-        outlineColorLight: b,
+        outlineColorDark: b,
+        outlineColorLight: S,
         channelId: v
       })
-    }, [e, v, h, S, b]);
+    }, [e, v, h, b, S]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
@@ -129,11 +129,11 @@ function v(e, t, n, v) {
     let t = c.Z.getDrawables(n),
       r = m.U.getState().particles,
       l = t.length > 0 || Object.keys(r).length > 0;
-    l && null == O.current._ref && (null == O.current._ref ? (Z(n), O.current.start(g, () => Z(n))) : l || null == O.current._ref || (O.current.stop(), (0, f.UN)(e)))
+    l && null == O.current._ref && (null == O.current._ref ? (Z(n), O.current.start(E, () => Z(n))) : l || null == O.current._ref || (O.current.stop(), (0, f.UN)(e)))
   }, [e, Z, n]);
   r.useEffect(() => {
     let e = O.current;
-    return c.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, E.Ks)), () => {
+    return c.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, g.Ks)), () => {
       c.Z.removeChangeListener(I), e.stop()
     }
   })

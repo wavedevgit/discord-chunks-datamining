@@ -1,22 +1,22 @@
 /** Chunk was on 53937 **/
-l.d(t, {
-  Z: () => d
-}), l(866573), l(642549), l(787622);
-var n = l(200651),
-  r = l(192379),
-  i = l(70097),
-  s = l(947849),
-  a = l(981631),
-  o = l(388032);
+t.d(l, {
+  Z: () => u
+}), t(866573), t(642549), t(787622);
+var n = t(200651),
+  r = t(192379),
+  i = t(70097),
+  s = t(947849),
+  a = t(981631),
+  o = t(388032);
 
-function u(e) {
+function d(e) {
   let {
-    poster: t,
-    src: l,
+    poster: l,
+    src: t,
     width: s,
     height: o,
-    naturalWidth: u,
-    naturalHeight: d,
+    naturalWidth: d,
+    naturalHeight: u,
     play: c = !0,
     className: h,
     alt: m,
@@ -29,11 +29,11 @@ function u(e) {
     null != e && (c ? e.play().catch(e => {
       if (!(e instanceof DOMException) || "NotAllowedError" !== e.name) throw e
     }) : e.pause())
-  }, [c]), u <= a.N_j && d <= a.XKF || u <= a.XKF && d <= a.N_j) ? (0, n.jsx)(i.Z, {
+  }, [c]), d <= a.N_j && u <= a.XKF || d <= a.XKF && u <= a.N_j) ? (0, n.jsx)(i.Z, {
     ref: g,
     className: h,
-    poster: t,
-    src: l,
+    poster: l,
+    src: t,
     width: s,
     height: o,
     responsive: p,
@@ -45,37 +45,37 @@ function u(e) {
     "aria-label": m
   }) : (0, n.jsx)("img", {
     alt: "",
-    src: t,
+    src: l,
     width: s,
     height: o
   })
 }
 
-function d(e) {
+function u(e) {
   var {
-    src: t,
-    poster: l,
+    src: l,
+    poster: t,
     naturalWidth: r,
     naturalHeight: i,
     responsive: a,
-    autoPlay: d,
+    autoPlay: u,
     className: c,
     playable: h = !0,
     renderImageComponent: m,
     alt: p = o.NW.string(o.t.I5gL2N),
     sourceMetadata: g
-  } = e, b = function(e, t) {
+  } = e, b = function(e, l) {
     if (null == e) return {};
-    var l, n, r = function(e, t) {
+    var t, n, r = function(e, l) {
       if (null == e) return {};
-      var l, n, r = {},
+      var t, n, r = {},
         i = Object.keys(e);
-      for (n = 0; n < i.length; n++) l = i[n], t.indexOf(l) >= 0 || (r[l] = e[l]);
+      for (n = 0; n < i.length; n++) t = i[n], l.indexOf(t) >= 0 || (r[t] = e[t]);
       return r
-    }(e, t);
+    }(e, l);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) l = i[n], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l])
+      for (n = 0; n < i.length; n++) t = i[n], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
     }
     return r
   }(e, ["src", "poster", "naturalWidth", "naturalHeight", "responsive", "autoPlay", "className", "playable", "renderImageComponent", "alt", "sourceMetadata"]);
@@ -83,44 +83,44 @@ function d(e) {
     children: e => {
       var s, o;
       return m((s = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var l = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(l);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(l, e).enumerable
-          }))), n.forEach(function(t) {
+        for (var l = 1; l < arguments.length; l++) {
+          var t = null != arguments[l] ? arguments[l] : {},
+            n = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(t, e).enumerable
+          }))), n.forEach(function(l) {
             var n;
-            n = l[t], t in e ? Object.defineProperty(e, t, {
+            n = t[l], l in e ? Object.defineProperty(e, l, {
               value: n,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = n
+            }) : e[l] = n
           })
         }
         return e
       }({}, b), o = o = {
         alt: p,
-        src: l,
+        src: t,
         containerClassName: c,
-        autoPlay: d,
+        autoPlay: u,
         animated: h,
         responsive: a,
         renderAccessory: e,
         tabIndex: h ? 0 : -1,
-        dataSafeSrc: t,
+        dataSafeSrc: l,
         children(e) {
           let {
-            src: l,
+            src: t,
             size: s,
             animating: o,
-            alt: d
+            alt: u
           } = e;
-          return (0, n.jsx)(u, {
-            alt: d,
+          return (0, n.jsx)(d, {
+            alt: u,
             className: c,
-            poster: l,
-            src: t,
+            poster: t,
+            src: l,
             width: s.width,
             height: s.height,
             naturalWidth: r,
@@ -131,13 +131,13 @@ function d(e) {
         },
         sourceMetadata: g,
         analyticsSource: "LazyGIFV"
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-        var l = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(o)) : (function(e, l) {
+        var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
-          l.push.apply(l, n)
+          t.push.apply(t, n)
         }
-        return l
+        return t
       })(Object(o)).forEach(function(e) {
         Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
       }), s))

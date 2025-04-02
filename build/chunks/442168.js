@@ -1,6 +1,6 @@
 /** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => b
+  Z: () => S
 });
 var r = n(200651),
   l = n(192379),
@@ -15,7 +15,7 @@ var r = n(200651),
   m = n(314910),
   p = n(764777);
 
-function E(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function E(e) {
   }
   return e
 }
-let g = {
+let E = {
     visibility: "hidden"
   },
   v = {
@@ -46,33 +46,33 @@ let g = {
     precision: 1e-4,
     bounce: 0
   },
-  S = {
+  b = {
     duration: 1e3
   };
 
-function b(e) {
+function S(e) {
   let {
     stream: t,
     inPopout: n
   } = e, {
-    reducedMotion: b
+    reducedMotion: S
   } = l.useContext(o.Sf), y = (0, l.useRef)(null), O = d.n.getState().clipsButtonRef, Z = (0, f.V9)(t), I = (0, a.e7)([u.Z], () => u.Z.getActiveAnimation()), j = (0, a.Wu)([u.Z], () => u.Z.getStreamClipAnimations(Z)), x = (0, l.useRef)();
   l.useEffect(() => () => {
     (0, c.Gh)(Z)
   }, [Z]);
-  let _ = () => {
+  let N = () => {
       var e;
       let t = null === (e = y.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
-      return null == t || n ? g : {
+      return null == t || n ? E : {
         width: t.width,
         height: t.height,
         top: t.top,
         left: t.left
       }
     },
-    N = e => {
+    _ = e => {
       let t = null == O ? void 0 : O.getBoundingClientRect();
-      if (x.current = t, e.timestamp !== I || null == t || n) return g;
+      if (x.current = t, e.timestamp !== I || null == t || n) return E;
       let {
         top: r,
         left: l
@@ -100,18 +100,18 @@ function b(e) {
     A = (0, s.Yzy)(j, {
       ref: R,
       keys: e => e.timestamp,
-      from: e => E({
+      from: e => g({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, b.enabled ? N(e) : _()),
-      enter: e => [E({
+      }, S.enabled ? _(e) : N()),
+      enter: e => [g({
         opacity: 1,
         visibility: "visible"
-      }, N(e))],
-      leave: E({
+      }, _(e))],
+      leave: g({
         opacity: 0
-      }, !b.enabled && E({
+      }, !S.enabled && g({
         height: 0,
         width: 0
       }, (() => {
@@ -120,7 +120,7 @@ function b(e) {
           left: x.current.left + 12
         }
       })())),
-      config: b.enabled ? S : h,
+      config: S.enabled ? b : h,
       onRest: (e, t) => {
         null != t.item && null != j.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(Z, t.item.timestamp)
       }

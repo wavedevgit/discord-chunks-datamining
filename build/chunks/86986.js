@@ -1,4 +1,4 @@
-/** Chunk was on 70040 **/
+/** Chunk was on 97590 **/
 "use strict";
 e.exports = {
   spinnerContainer: "spinnerContainer__69ef9",
@@ -7,6 +7,7 @@ e.exports = {
   description: "description__69ef9",
   title: "title__69ef9",
   enableSwitchContainer: "enableSwitchContainer__69ef9",
+  boostingLinkContainer: "boostingLinkContainer__69ef9",
   memberApplicationsInfo: "memberApplicationsInfo__69ef9",
   sectionTitle: "sectionTitle__69ef9",
   section: "section__69ef9",
