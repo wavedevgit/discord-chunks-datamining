@@ -2104,17 +2104,20 @@ class e_ extends a.C {
         case 5:
           o.createdAtMs = e.fixed64().toString();
           break;
+        case 6:
+          o.label = s.Gm.internalBinaryRead(e, e.uint32(), n, o.label);
+          break;
         default:
           let a = n.readUnknownField;
           if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-          let s = e.skip(i);
-          !1 !== a && (!0 === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
+          let l = e.skip(i);
+          !1 !== a && (!0 === a ? r.z.onRead : a)(this.typeName, o, t, i, l)
       }
     }
     return o
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.text && t.tag(1, r.TD.LengthDelimited).string(e.text), "0" !== e.emojiId && t.tag(2, r.TD.Bit64).fixed64(e.emojiId), "" !== e.emojiName && t.tag(3, r.TD.LengthDelimited).string(e.emojiName), "0" !== e.expiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.expiresAtMs), "0" !== e.createdAtMs && t.tag(5, r.TD.Bit64).fixed64(e.createdAtMs);
+    "" !== e.text && t.tag(1, r.TD.LengthDelimited).string(e.text), "0" !== e.emojiId && t.tag(2, r.TD.Bit64).fixed64(e.emojiId), "" !== e.emojiName && t.tag(3, r.TD.LengthDelimited).string(e.emojiName), "0" !== e.expiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.expiresAtMs), "0" !== e.createdAtMs && t.tag(5, r.TD.Bit64).fixed64(e.createdAtMs), e.label && s.Gm.internalBinaryWrite(e.label, t.tag(6, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -2144,6 +2147,11 @@ class e_ extends a.C {
       name: "created_at_ms",
       kind: "scalar",
       T: 6
+    }, {
+      no: 6,
+      name: "label",
+      kind: "message",
+      T: () => s.Gm
     }])
   }
 }
