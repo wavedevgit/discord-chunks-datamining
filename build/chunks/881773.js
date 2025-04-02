@@ -163,7 +163,7 @@ function N(e) {
     handleSeekForwardBtnClick: R,
     handleControlBarPendingInteraction: M,
     onVolumeChange: V
-  } = e, B = (0, p.Q3)("ListSectionItem"), F = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), U = (0, f.km)(e => e.muted), q = (0, f.km)(e => e.setMuted), Y = (0, f.km)(e => e.transcriptEnabled), W = (0, f.km)(e => e.captionEnabled), Q = (0, f.km)(e => e.fullScreenEnabled), z = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), G = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [H, K] = l.useState(U ? 0 : F), [X, $] = l.useState(!1), [J, ee] = l.useState(!1), [{
+  } = e, B = (0, p.Q3)("ListSectionItem"), F = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), U = (0, f.km)(e => e.muted), q = (0, f.km)(e => e.setMuted), Y = (0, f.km)(e => e.transcriptEnabled), W = (0, f.km)(e => e.captionEnabled), Q = (0, f.km)(e => e.fullScreenEnabled), G = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [H, K] = l.useState(U ? 0 : F), [X, $] = l.useState(!1), [J, ee] = l.useState(!1), [{
     volumeAnimSpring: et
   }, en] = (0, d.q_F)(() => ({
     from: {
@@ -188,7 +188,7 @@ function N(e) {
         k();
         break;
       case E.Y1.SPACE:
-        G || (e.preventDefault(), k());
+        z || (e.preventDefault(), k());
         break;
       case E.Y1.SEEK_BACK:
         L();
@@ -205,15 +205,15 @@ function N(e) {
       case E.Y1.MUTE:
         eo()
     }
-  }, [A, I, k, L, R, eo, G]);
+  }, [A, I, k, L, R, eo, z]);
   l.useEffect(() => {
     null != er.current && er.current.focus()
   }, []), l.useEffect(() => (en({
     volumeAnimSpring: J || X ? 1 : 0,
-    immediate: z
+    immediate: G
   }), () => {
     et.stop()
-  }), [J, X, en, z, et]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
+  }), [J, X, en, G, et]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
     window.removeEventListener("keydown", es)
   }), [es]);
   let ec = 0 === H ? d.OyP : H < .5 ? d.X2j : d.gj8,

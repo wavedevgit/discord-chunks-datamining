@@ -75,8 +75,8 @@ function I(e) {
     impressionRef: R,
     parentModalOpenStartClockTime: M
   } = e, V = (0, b.il)(D), B = (0, a.e7)([d.Z], () => d.Z.getState().theme), F = (0, s.wj)(B) ? P.BRd.DARK : P.BRd.LIGHT, Z = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, p.aM)(), [q, Y] = l.useState(V.progressSeconds), [W, Q] = l.useState(!1), {
-    completedRatio: z,
-    completedRatioDisplay: G
+    completedRatio: G,
+    completedRatioDisplay: z
   } = (0, f.I)(D), [H, K] = (0, y.G6)(T.NW.string(T.t.RDE0SU), T.NW.string(T.t["+5kSoa"]), 1700), X = (null === (t = D.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? T.NW.string(T.t.vTgCW1) : T.NW.string(T.t.cfY4PD), $ = l.useCallback(() => {
     (0, b.f2)(D.id, {
       content: g.jn.VIDEO_MODAL,
@@ -143,8 +143,8 @@ function I(e) {
                 children: (0, r.jsx)(S.Z, {
                   quest: D,
                   size: 48,
-                  percentComplete: z,
-                  percentCompleteText: W ? G : void 0,
+                  percentComplete: G,
+                  percentCompleteText: W ? z : void 0,
                   percentCompleteTextVariant: "text-sm/medium",
                   children: (0, r.jsx)(j.Z, {
                     className: k.questProgressRewardTile,
