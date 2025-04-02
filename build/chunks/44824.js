@@ -1,6 +1,6 @@
 /** Chunk was on 53937 **/
 l.d(t, {
-  Z: () => u
+  Z: () => d
 }), l(866573), l(642549), l(787622);
 var n = l(200651),
   r = l(192379),
@@ -9,14 +9,14 @@ var n = l(200651),
   a = l(981631),
   o = l(388032);
 
-function d(e) {
+function u(e) {
   let {
     poster: t,
     src: l,
     width: s,
     height: o,
-    naturalWidth: d,
-    naturalHeight: u,
+    naturalWidth: u,
+    naturalHeight: d,
     play: c = !0,
     className: h,
     alt: m,
@@ -29,7 +29,7 @@ function d(e) {
     null != e && (c ? e.play().catch(e => {
       if (!(e instanceof DOMException) || "NotAllowedError" !== e.name) throw e
     }) : e.pause())
-  }, [c]), d <= a.N_j && u <= a.XKF || d <= a.XKF && u <= a.N_j) ? (0, n.jsx)(i.Z, {
+  }, [c]), u <= a.N_j && d <= a.XKF || u <= a.XKF && d <= a.N_j) ? (0, n.jsx)(i.Z, {
     ref: g,
     className: h,
     poster: t,
@@ -51,14 +51,14 @@ function d(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   var {
     src: t,
     poster: l,
     naturalWidth: r,
     naturalHeight: i,
     responsive: a,
-    autoPlay: u,
+    autoPlay: d,
     className: c,
     playable: h = !0,
     renderImageComponent: m,
@@ -103,7 +103,7 @@ function u(e) {
         alt: p,
         src: l,
         containerClassName: c,
-        autoPlay: u,
+        autoPlay: d,
         animated: h,
         responsive: a,
         renderAccessory: e,
@@ -114,10 +114,10 @@ function u(e) {
             src: l,
             size: s,
             animating: o,
-            alt: u
+            alt: d
           } = e;
-          return (0, n.jsx)(d, {
-            alt: u,
+          return (0, n.jsx)(u, {
+            alt: d,
             className: c,
             poster: l,
             src: t,

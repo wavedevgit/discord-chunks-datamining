@@ -10,8 +10,8 @@ var r = l(120356),
   s = l(729594),
   a = l(388032),
   o = l(461976);
-let d = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"],
-  u = (e, t, l) => "https://".concat(e, "/embed/").concat(t, "?locale=").concat(l),
+let u = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"],
+  d = (e, t, l) => "https://".concat(e, "/embed/").concat(t, "?locale=").concat(l),
   c = ["PlayStation"],
   h = (e, t) => {
     let {
@@ -20,9 +20,9 @@ let d = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"]
     } = t, r = [];
     switch (null != n && (r = n.split("/")), e) {
       case "PlayStation":
-        if (null == l || !d.includes(l) || 2 !== r.length) break;
+        if (null == l || !u.includes(l) || 2 !== r.length) break;
         return {
-          embedUrl: u(l, r[1], a.NW.currentLocale), style: {
+          embedUrl: d(l, r[1], a.NW.currentLocale), style: {
             width: 400,
             height: 300,
             borderRadius: 6
@@ -43,11 +43,11 @@ function m(e) {
   } catch (e) {
     return null
   }
-  let d = h(r, a);
-  return null == d ? null : (0, n.jsx)("iframe", {
-    src: d.embedUrl,
+  let u = h(r, a);
+  return null == u ? null : (0, n.jsx)("iframe", {
+    src: u.embedUrl,
     className: i()(o.embedIFrame, e.className),
-    style: d.style,
+    style: u.style,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
   })
 }

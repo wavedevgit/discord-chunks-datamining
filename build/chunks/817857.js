@@ -42,6 +42,7 @@ e.exports = {
   embedField: "embedField__623de",
   embedMedia: "embedMedia__623de",
   embedAmazonMusic: "embedAmazonMusic__623de",
+  embedAppleMusic: "embedAppleMusic__623de",
   embedSpotify: "embedSpotify__623de",
   hiddenEmbed: "hiddenEmbed__623de",
   spoilerEmbed: "spoilerEmbed__623de hiddenEmbed__623de",

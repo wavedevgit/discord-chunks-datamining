@@ -27,7 +27,7 @@ function o(e) {
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   if (null == e) return {};
   var l, n, r = function(e, t) {
     if (null == e) return {};
@@ -43,7 +43,7 @@ function d(e, t) {
   return r
 }
 
-function u(e, t) {
+function d(e, t) {
   let l = s.Z.toURLSafe(null != e ? e : "");
   if (null === l) return "";
   if (null == t) return l.toString();
@@ -58,7 +58,7 @@ function c(e) {
   var {
     src: t,
     autoMute: l
-  } = e, n = d(e, ["src", "autoMute"]);
+  } = e, n = u(e, ["src", "autoMute"]);
   let s = i.useRef(null),
     a = i.useCallback(e => {
       if (e.data["x-tiktok-player"] && "https://www.tiktok.com" === e.origin && "onPlayerReady" === e.data.type) {
@@ -73,7 +73,7 @@ function c(e) {
       }
     }, [l]);
   i.useEffect(() => (window.addEventListener("message", a), () => window.removeEventListener("message", a)), [a]);
-  let c = u(t, {
+  let c = d(t, {
     utm_source: "discord.gg"
   });
   return (0, r.jsx)(m, o({
@@ -86,8 +86,8 @@ function h(e) {
   var {
     src: t,
     autoMute: l
-  } = e, n = d(e, ["src", "autoMute"]);
-  let i = u(t, {
+  } = e, n = u(e, ["src", "autoMute"]);
+  let i = d(t, {
     autoplay: "1",
     auto_play: "1",
     mute: l ? "1" : void 0

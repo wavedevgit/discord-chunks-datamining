@@ -1,6 +1,6 @@
 /**
   Module ID: 83379
-  Original File Name: 283fd98553d50601
+  Original File Name: 2a5512367277b46e
 **/
 .descriptionText__535f5 {
     margin-top: 4px;
@@ -3069,11 +3069,11 @@ html .progress__61462 {
     opacity: .4
 }
 
-.background-opacity-low .embedAmazonMusic__623de,.background-opacity-low .embedSpotify__623de {
+.background-opacity-low .embedAmazonMusic__623de,.background-opacity-low .embedAppleMusic__623de,.background-opacity-low .embedSpotify__623de {
     opacity: .8
 }
 
-.background-opacity-low .embedAmazonMusic__623de:hover,.background-opacity-low .embedSpotify__623de:hover {
+.background-opacity-low .embedAmazonMusic__623de:hover,.background-opacity-low .embedAppleMusic__623de:hover,.background-opacity-low .embedSpotify__623de:hover {
     opacity: 1
 }
 
@@ -3117,11 +3117,11 @@ html .progress__61462 {
     opacity: .4
 }
 
-.background-opacity-medium .embedAmazonMusic__623de,.background-opacity-medium .embedSpotify__623de {
+.background-opacity-medium .embedAmazonMusic__623de,.background-opacity-medium .embedAppleMusic__623de,.background-opacity-medium .embedSpotify__623de {
     opacity: .8
 }
 
-.background-opacity-medium .embedAmazonMusic__623de:hover,.background-opacity-medium .embedSpotify__623de:hover {
+.background-opacity-medium .embedAmazonMusic__623de:hover,.background-opacity-medium .embedAppleMusic__623de:hover,.background-opacity-medium .embedSpotify__623de:hover {
     opacity: 1
 }
 
@@ -3157,11 +3157,11 @@ html .progress__61462 {
     opacity: .4
 }
 
-.background-opacity-high .embedAmazonMusic__623de,.background-opacity-high .embedSpotify__623de {
+.background-opacity-high .embedAmazonMusic__623de,.background-opacity-high .embedAppleMusic__623de,.background-opacity-high .embedSpotify__623de {
     opacity: .9
 }
 
-.background-opacity-high .embedAmazonMusic__623de:hover,.background-opacity-high .embedSpotify__623de:hover {
+.background-opacity-high .embedAmazonMusic__623de:hover,.background-opacity-high .embedAppleMusic__623de:hover,.background-opacity-high .embedSpotify__623de:hover {
     opacity: 1
 }
 
@@ -3212,7 +3212,7 @@ html .progress__61462 {
     justify-self: auto!important
 }
 
-.overlay-unlocked .embedAmazonMusic__623de,.overlay-unlocked .embedSpotify__623de,.overlay-unlocked .embedThumbnail__623de {
+.overlay-unlocked .embedAmazonMusic__623de,.overlay-unlocked .embedAppleMusic__623de,.overlay-unlocked .embedSpotify__623de,.overlay-unlocked .embedThumbnail__623de {
     opacity: 1
 }
 
@@ -12264,4 +12264,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=283fd98553d50601.css.map*/
+/*# sourceMappingURL=2a5512367277b46e.css.map*/

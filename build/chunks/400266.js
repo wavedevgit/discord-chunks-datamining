@@ -1,6 +1,6 @@
 /** Chunk was on 53937 **/
 l.d(t, {
-  Z: () => u
+  Z: () => d
 }), l(757143), l(301563);
 var n = l(200651);
 l(192379);
@@ -9,9 +9,9 @@ var r = l(120356),
   s = l(729594),
   a = l(785992),
   o = l(616922),
-  d = l(817857);
+  u = l(817857);
 
-function u(e) {
+function d(e) {
   let {
     className: t,
     embed: {
@@ -20,24 +20,24 @@ function u(e) {
   } = e;
   if (null == l) return null;
   let r = null,
-    u = null;
+    d = null;
   try {
     let e = s.parse(l.replace(/intl-[^/]+\//, ""), !0);
-    r = e.host, u = e.pathname
+    r = e.host, d = e.pathname
   } catch (e) {
     return null
   }
-  if (!(0, a.E)(r) || null == u) return null;
-  let c = u.split("/"),
+  if (!(0, a.E)(r) || null == d) return null;
+  let c = d.split("/"),
     h = null != c[1] ? c[1].toLowerCase() : null,
     m = null != c[3] ? c[3].toLowerCase() : null,
     p = c[4];
   if (!["track", "playlist", "album", "artist", "user", "show", "episode"].includes(null != h ? h : "") || "user" === h && "playlist" !== m) return null;
-  "user" === h && "playlist" === m && null != p && (u = "/playlist/".concat(p));
+  "user" === h && "playlist" === m && null != p && (d = "/playlist/".concat(p));
   let g = 352;
   return "track" === h ? g = 80 : ("episode" === h || "show" === h) && (g = 232), (0, n.jsx)("iframe", {
-    className: i()(d.embedSpotify, t),
-    src: o.C7.EMBED(u),
+    className: i()(u.embedSpotify, t),
+    src: o.C7.EMBED(d),
     style: {
       maxWidth: 400,
       minWidth: 300,

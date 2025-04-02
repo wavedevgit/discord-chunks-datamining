@@ -1,6 +1,6 @@
 /**
   Module ID: 73181
-  Original File Name: 885f1275e6d1febd
+  Original File Name: f52d745787559aae
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2209,6 +2209,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .folderIconContent__93fc9 {
     background-color: var(--background-primary)
+}
+
+.visual-refresh .folderWrapperCollapsed__93fc9 {
+    height: 44px;
+    margin-top: -4px
 }
 
 .wrapper_ef3116 {
@@ -5960,4 +5965,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=885f1275e6d1febd.css.map*/
+/*# sourceMappingURL=f52d745787559aae.css.map*/

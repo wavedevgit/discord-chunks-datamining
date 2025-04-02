@@ -80,8 +80,8 @@ let Z = e => {
             buttonText: y.NW.string(y.t["2pG5GR"]),
             className: s()(A.button, A.subscribeButton)
           }), (0, r.jsx)(O.Z, {
-            color: h.isFractionalPremiumActive ? o.Ttl.WHITE : o.Ttl.BRAND,
-            look: h.isFractionalPremiumActive ? o.zxk.Looks.OUTLINED : o.zxk.Looks.FILLED,
+            color: f ? o.Ttl.WHITE : o.Ttl.BRAND,
+            look: f ? o.zxk.Looks.OUTLINED : o.zxk.Looks.FILLED,
             buttonText: y.NW.string(y.t["3KomGR"]),
             className: A.button,
             isGift: !0

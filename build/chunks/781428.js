@@ -122,6 +122,11 @@ class Q extends(r = o.PureComponent) {
           errors: {}
         }), h.Z.dispatch({
           type: "PASSWORDLESS_START"
+        }), D.default.track(F.rMx.LOGIN_ATTEMPTED, {
+          source: F.uRl.PASSWORDLESS_CONDITIONAL_UI,
+          login_method: "passwordless",
+          login_source: this.loginSource,
+          gift_code_sku_id: this.giftCodeSKUId
         }), g.Z.loginWebAuthn({
           ticket: n,
           credential: JSON.stringify(e),
