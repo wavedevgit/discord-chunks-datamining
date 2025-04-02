@@ -100,10 +100,11 @@ function u(e, t, n, u, d) {
         properties: s({
           video_timestamp_seconds: t.current.currentTime,
           pause_reason: e,
-          video_session_id: u
+          video_session_id: u,
+          video_asset_id: d
         }, c(n))
       })
-    }, [b, t, u, n, p]),
+    }, [b, t, u, n, p, d]),
     j = r.useCallback(e => {
       null != t.current && null != e && p({
         questId: b,
@@ -111,10 +112,11 @@ function u(e, t, n, u, d) {
         properties: s({
           video_timestamp_seconds: t.current.currentTime,
           reason: e,
-          video_session_id: u
+          video_session_id: u,
+          video_asset_id: d
         }, c(n))
       })
-    }, [b, t, u, n, p]),
+    }, [b, t, u, n, p, d]),
     y = r.useCallback((e, n) => {
       null != t.current && p({
         questId: b,
@@ -122,10 +124,11 @@ function u(e, t, n, u, d) {
         properties: {
           video_timestamp_seconds: t.current.currentTime,
           video_state: n,
-          video_session_id: u
+          video_session_id: u,
+          video_asset_id: d
         }
       })
-    }, [b, t, u, p]),
+    }, [b, t, u, p, d]),
     _ = r.useCallback(e => {
       null != t.current && (v.current += 1, p({
         questId: b,
@@ -220,11 +223,23 @@ function u(e, t, n, u, d) {
       null != t.current && p({
         questId: b,
         event: e ? a.rMx.QUEST_VIDEO_FULLSCREEN_ENTERED : a.rMx.QUEST_VIDEO_FULLSCREEN_EXITED,
-        properties: {
-          video_session_id: u
-        }
+        properties: s({
+          video_session_id: u,
+          video_asset_id: d
+        }, c(n))
       })
-    }, [b, t, u, p]),
-    trackQuestVideoError: P
+    }, [b, t, u, n, p, d]),
+    trackQuestVideoError: P,
+    trackQuestVideoVolumeChanged: r.useCallback(e => {
+      null != t.current && p({
+        questId: b,
+        event: a.rMx.QUEST_VIDEO_VOLUME_CHANGED,
+        properties: s({
+          volume_threshold: e > 0 && e < 1 ? .5 : e,
+          video_session_id: u,
+          video_asset_id: d
+        }, c(n))
+      })
+    }, [b, t, d, u, n, p])
   }
 }
