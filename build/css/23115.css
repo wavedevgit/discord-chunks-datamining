@@ -1,6 +1,6 @@
 /**
   Module ID: 23115
-  Original File Name: 3c3b5b119559cf68
+  Original File Name: 059f6964e49c3bbd
 **/
 .loadingWrapper__5a143 {
     display: flex;
@@ -132,6 +132,10 @@
 .embedFull__623de {
     border-left: 4px solid var(--background-tertiary);
     background: var(--background-secondary)
+}
+
+.embedFull__623de.isHidden__623de {
+    border-left: 0
 }
 
 .visual-refresh .embedFull__623de {
@@ -683,6 +687,10 @@
     filter: blur(var(--__obscured-background-blur-radius)) brightness(var(--__obscured-background-brightness))
 }
 
+.hiddenExplicitEmbed__623de.embedFull__623de {
+    border-left: 0
+}
+
 .justifyAuto__623de {
     justify-self: auto!important
 }
@@ -1193,4 +1201,4 @@
     justify-content: center
 }
 
-/*# sourceMappingURL=3c3b5b119559cf68.css.map*/
+/*# sourceMappingURL=059f6964e49c3bbd.css.map*/

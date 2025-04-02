@@ -16,7 +16,7 @@ var r, l = n(200651),
   f = n(385499),
   g = n(979264),
   b = n(372900),
-  y = n(732241),
+  y = n(142375),
   O = n(477747),
   v = n(477734),
   h = n(823415),
@@ -27,7 +27,7 @@ var r, l = n(200651),
   N = n(981631),
   w = n(373232);
 
-function T(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function T(e) {
   return e
 }
 
-function R(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -83,8 +83,8 @@ function Z(e) {
       showPopout: I = !1,
       className: A,
       onClick: _,
-      onContextMenu: L,
-      onPopoutRequestClose: M,
+      onContextMenu: M,
+      onPopoutRequestClose: L,
       renderPopout: D,
       renderRemixTag: F = !1,
       decorations: G
@@ -100,15 +100,15 @@ function Z(e) {
       nick: q,
       colorString: J,
       colorStrings: X,
-      colorRoleName: $
+      colorRoleName: V
     } = r,
-    V = null != i.messageReference && null != i.webhookId && i.hasFlag(N.iLy.IS_CROSSPOST),
-    Y = (0, c.e7)([d.Z], () => d.Z.roleStyle),
-    Q = "username" === Y,
+    Y = null != i.messageReference && null != i.webhookId && i.hasFlag(N.iLy.IS_CROSSPOST),
+    $ = (0, c.e7)([d.Z], () => d.Z.roleStyle),
+    Q = "username" === $,
     K = (0, v.X$)(),
     ee = (0, O.Z)(U, "BaseUsername"),
     et = Q && ee && null != X && null != X.primaryColor && null != X.secondaryColor,
-    en = (0, y.$)(null == X ? void 0 : X.primaryColor, null == X ? void 0 : X.secondaryColor, null == X ? void 0 : X.tertiaryColor),
+    en = (0, y.N)(null == X ? void 0 : X.primaryColor, null == X ? void 0 : X.secondaryColor, null == X ? void 0 : X.tertiaryColor),
     {
       text: er,
       glow: el,
@@ -120,16 +120,16 @@ function Z(e) {
     },
     ei = {
       className: a()([w.username, et && er.gradientClassName, et && eo.gradientClassName]),
-      style: Q ? et && null != X ? T({}, er.gradientStyle) : null != J ? {
+      style: Q ? et && null != X ? R({}, er.gradientStyle) : null != J ? {
         color: J
       } : void 0 : void 0,
       onClick: _,
-      onContextMenu: L,
+      onContextMenu: M,
       children: W + q
     },
     ea = {
       className: a()([el.gradientClassName, eo.gradientClassName]),
-      style: R(T({}, el.gradientStyle), {
+      style: T(R({}, el.gradientStyle), {
         inset: 0
       })
     };
@@ -168,12 +168,12 @@ function Z(e) {
   if (null != D && null != I) {
     let e = (0, l.jsx)(u.yRy, {
       targetElementRef: B,
-      preload: V || I || ed ? void 0 : es,
+      preload: Y || I || ed ? void 0 : es,
       renderPopout: D,
       shouldShow: I || ed,
       position: s.tq ? "window_center" : "right",
       onRequestClose: () => {
-        null == em || em(), null == M || M()
+        null == em || em(), null == L || L()
       },
       clickTrap: I,
       children: e => {
@@ -195,12 +195,12 @@ function Z(e) {
           return l
         }(e, ["onClick"]);
         return (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsx)(u.P3F, R(T({
+          children: [(0, l.jsx)(u.P3F, T(R({
             tag: "span",
             innerRef: B
           }, n, ei), {
             className: a()(ei.className, w.clickable, A)
-          })), et && (0, l.jsx)("span", R(T({}, ea), {
+          })), et && (0, l.jsx)("span", T(R({}, ea), {
             children: W + q
           })), ec]
         })
@@ -213,9 +213,9 @@ function Z(e) {
       children: e
     }) : e
   } else n = (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(u.P3F, R(T({}, ei), {
+    children: [(0, l.jsx)(u.P3F, T(R({}, ei), {
       className: a()(ei.className, A)
-    })), et && (0, l.jsx)("span", R(T({}, ea), {
+    })), et && (0, l.jsx)("span", T(R({}, ea), {
       children: W + q
     })), ec]
   });
@@ -225,9 +225,9 @@ function Z(e) {
     value: H,
     children: [null != eg && Z ? (0, l.jsxs)(l.Fragment, {
       children: [" ", eg, " "]
-    }) : null, "dot" === Y ? (0, l.jsx)(u.FhE, {
+    }) : null, "dot" === $ ? (0, l.jsx)(u.FhE, {
       color: J,
-      name: $,
+      name: V,
       className: w.roleDot
     }) : null, n, !Z && (0, l.jsx)(g.ZP, {
       primaryGuild: r.primaryGuild,

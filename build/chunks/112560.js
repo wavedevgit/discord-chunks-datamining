@@ -52,7 +52,7 @@ function u(e) {
       color: "text-muted",
       selectable: !0,
       children: u
-    }) : null, null != c ? (0, r.jsx)(a.Text, {
+    }) : null, null != c && (null == u || "small" !== d) ? (0, r.jsx)(a.Text, {
       color: "none",
       className: l.description,
       variant: "text-sm/medium",

@@ -2,6 +2,7 @@
 e.exports = {
   embedFull: "embedFull__623de embed__623de",
   embed: "embed__623de",
+  isHidden: "isHidden__623de",
   inlineMediaEmbed: "inlineMediaEmbed__623de embed__623de",
   embedAuthorName: "embedAuthorName__623de",
   embedAuthorNameLink: "embedAuthorNameLink__623de embedLink__623de embedAuthorName__623de",
@@ -43,7 +44,6 @@ e.exports = {
   embedAmazonMusic: "embedAmazonMusic__623de",
   embedSpotify: "embedSpotify__623de",
   hiddenEmbed: "hiddenEmbed__623de",
-  isHidden: "isHidden__623de",
   spoilerEmbed: "spoilerEmbed__623de hiddenEmbed__623de",
   hiddenExplicitEmbed: "hiddenExplicitEmbed__623de hiddenEmbed__623de",
   justifyAuto: "justifyAuto__623de",

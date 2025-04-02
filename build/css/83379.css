@@ -1,6 +1,6 @@
 /**
   Module ID: 83379
-  Original File Name: 6ae6207c8481c68c
+  Original File Name: 283fd98553d50601
 **/
 .descriptionText__535f5 {
     margin-top: 4px;
@@ -2651,6 +2651,10 @@ html .progress__61462 {
     background: var(--background-secondary)
 }
 
+.embedFull__623de.isHidden__623de {
+    border-left: 0
+}
+
 .visual-refresh .embedFull__623de {
     background: var(--background-surface-high);
     border: 1px solid var(--border-subtle);
@@ -3198,6 +3202,10 @@ html .progress__61462 {
 
 .hiddenExplicitEmbed__623de.isHidden__623de .grid__623de {
     filter: blur(var(--__obscured-background-blur-radius)) brightness(var(--__obscured-background-brightness))
+}
+
+.hiddenExplicitEmbed__623de.embedFull__623de {
+    border-left: 0
 }
 
 .justifyAuto__623de {
@@ -12256,4 +12264,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=6ae6207c8481c68c.css.map*/
+/*# sourceMappingURL=283fd98553d50601.css.map*/
