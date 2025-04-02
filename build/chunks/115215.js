@@ -1,18 +1,11 @@
 /** Chunk was on 83379 **/
 n.d(t, {
-  Y: () => s,
-  t: () => l
+  t: () => a
 });
 var r = n(602715),
-  i = n(630388),
-  a = n(709054),
-  o = n(981631);
+  i = n(630388);
 
-function l(e) {
+function a(e) {
   var t;
   return (0, i.yE)(null !== (t = e.recipientFlags) && void 0 !== t ? t : 0, r.V.DISMISSED_CURRENT_CHAT_WALLPAPER)
-}
-
-function s(e) {
-  return e.type === o.uaV.CHAT_WALLPAPER_SET && a.default.isProbablyAValidSnowflake(e.content) ? e.content : null
 }

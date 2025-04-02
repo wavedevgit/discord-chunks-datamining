@@ -1,46 +1,46 @@
 /** Chunk was on 74920 **/
 n.d(t, {
-  default: () => m
+  default: () => h
 });
 var r = n(200651),
   a = n(192379),
-  l = n(704215),
-  o = n(481060),
-  s = n(211266),
-  i = n(605236),
+  o = n(704215),
+  l = n(481060),
+  i = n(211266),
+  s = n(605236),
   c = n(624659),
   u = n(626135),
   d = n(263226),
-  x = n(225634),
-  N = n(981631),
-  h = n(388032);
+  m = n(225634),
+  x = n(981631),
+  N = n(388032);
 
-function m(e) {
+function h(e) {
   let {
     transitionState: t,
-    onClose: m,
+    onClose: h,
     guildId: f,
     guildName: b
-  } = e, E = (0, s.Z)(x.S);
+  } = e, _ = (0, i.Z)(m.S);
   return a.useEffect(() => {
-    u.default.track(N.rMx.OPEN_MODAL, {
+    u.default.track(x.rMx.OPEN_MODAL, {
       type: "Guild Leave Report"
     })
   }, []), (0, r.jsx)(c.Z, {
-    header: h.NW.string(h.t.YT6YAA),
-    body: h.NW.formatToPlainString(h.t.xpn2vL, {
+    header: N.NW.string(N.t.YT6YAA),
+    body: N.NW.formatToPlainString(N.t.xpn2vL, {
       server: b
     }),
-    problems: E,
+    problems: _,
     onSubmit: function(e) {
       let {
         problem: t,
         dontShowAgain: a,
-        feedback: s
+        feedback: i
       } = e;
-      a && (0, i.EW)(l.z.GUILD_LEAVE_FEEDBACK);
+      a && (0, s.EW)(o.z.GUILD_LEAVE_FEEDBACK);
       let c = null == t;
-      (0, d.Z)(f, t, s, c), c || (0, o.ZDy)(async () => {
+      (0, d.Z)(f, t, i, c), c || (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
@@ -62,13 +62,13 @@ function m(e) {
           }
           return e
         }({
-          body: h.NW.string(h.t.Gxbt29)
+          body: N.NW.string(N.t.Gxbt29)
         }, t))
       })
     },
-    onClose: m,
+    onClose: h,
     transitionState: t,
-    otherKey: x.G.OTHER,
+    otherKey: m.G.OTHER,
     hasCloseButton: !0
   })
 }

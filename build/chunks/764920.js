@@ -5,19 +5,19 @@ n.d(t, {
 var o = n(200651),
   i = n(120356),
   a = n.n(i),
-  s = n(481060),
+  r = n(481060),
   l = n(572539),
-  r = n(531578),
+  s = n(531578),
   c = n(542627);
 let u = {
-  [r.aZ.BAD]: {
+  [s.aZ.BAD]: {
     face: c.sadFace,
     thumb: c.thumbsDown
   },
-  [r.aZ.NEUTRAL]: {
+  [s.aZ.NEUTRAL]: {
     face: c.neutralFace
   },
-  [r.aZ.GOOD]: {
+  [s.aZ.GOOD]: {
     face: c.happyFace,
     thumb: c.thumbsUp
   }
@@ -25,11 +25,11 @@ let u = {
 
 function d(e) {
   let {
-    ratingOptions: t = r.rN,
+    ratingOptions: t = s.rN,
     emojiKind: n = "face",
     textLabels: i,
     selectedRating: d,
-    onChangeRating: _
+    onChangeRating: b
   } = e;
   return null != i ? (0, o.jsx)("div", {
     className: c.textLabels,
@@ -44,12 +44,12 @@ function d(e) {
         value: e,
         className: a()(c.emojiContainer, d === e ? c.selected : null)
       })),
-      onClick: e => _(e.value)
+      onClick: e => b(e.value)
     })
   }) : (0, o.jsx)("div", {
     className: a()(c.ratingSelector, c.emojis),
-    children: t.map(e => (0, o.jsx)(s.P3F, {
-      onClick: () => _(e),
+    children: t.map(e => (0, o.jsx)(r.P3F, {
+      onClick: () => b(e),
       "aria-label": e,
       className: c.emojiContainer,
       children: (0, o.jsx)("div", {

@@ -1,12 +1,12 @@
 /** Chunk was on 72135 **/
 n.d(t, {
-  Z: () => o,
-  f: () => l
+  Z: () => l,
+  f: () => o
 });
 var r, a = n(388032),
-  l = ((r = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", r.CONFUSING_LANGUAGE = "I found the language confusing", r.OTHER = "Other", r);
+  o = ((r = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", r.CONFUSING_LANGUAGE = "I found the language confusing", r.OTHER = "Other", r);
 
-function o() {
+function l() {
   return [{
     label: a.NW.string(a.t.cigGCQ),
     code: 2,

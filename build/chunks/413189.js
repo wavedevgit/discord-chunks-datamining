@@ -24,53 +24,53 @@ var r = n(200651),
   E = n(918360);
 
 function O(e) {
-  var t, n;
-  let O, N, j;
+  var t, n, O;
+  let N, j, C;
   let {
-    message: C,
-    channel: I,
-    compact: S
-  } = e, T = h.Y(C), P = (0, m.sQ)({
+    message: I,
+    channel: S,
+    compact: T
+  } = e, P = null === (t = I.chatWallpaperInfo) || void 0 === t ? void 0 : t.wallpaperId, A = (0, m.sQ)({
     location: "ChatWallpaperSetSystemMessage"
-  }), A = (0, s.ZP)(C), w = (0, o.wjy)((0, l.ZP)()), {
-    chatWallpaper: Z,
-    isUpdatingChatWallpaperFlag: k,
-    lastSetMessageId: R
+  }), w = (0, s.ZP)(I), Z = (0, o.wjy)((0, l.ZP)()), {
+    chatWallpaper: k,
+    isUpdatingChatWallpaperFlag: R,
+    lastSetMessageId: D
   } = (0, a.cj)([f.Z], () => ({
-    chatWallpaper: f.Z.getWallpaperById(T),
-    isUpdatingChatWallpaperFlag: f.Z.isUpdatingChatWallpaperFlagForChannel(I.id),
-    lastSetMessageId: f.Z.getLastSetWallpaperMessageIdForChannel(I.id)
-  })), D = (0, _.Z)(I.id), L = R === C.id, M = (0, a.e7)([d.default], () => d.default.getCurrentUser()), W = (null == M ? void 0 : M.id) === C.author.id, U = (0, c.m)(x.p9.TIER_2), F = h.t(I);
+    chatWallpaper: f.Z.getWallpaperById(P),
+    isUpdatingChatWallpaperFlag: f.Z.isUpdatingChatWallpaperFlagForChannel(S.id),
+    lastSetMessageId: f.Z.getLastSetWallpaperMessageIdForChannel(S.id)
+  })), L = (0, _.Z)(S.id), M = D === I.id, W = (0, a.e7)([d.default], () => d.default.getCurrentUser()), U = (null == W ? void 0 : W.id) === I.author.id, F = (0, c.m)(x.p9.TIER_2), B = h.t(S);
   return (i.useEffect(() => {
-    null == Z && f.Z.shouldFetchWallpapers && g.k9()
-  }, [Z]), null == T) ? null : (O = w ? W ? y.NW.format(y.t.z847Tk, {
-    wallpaper_name: null !== (t = null == Z ? void 0 : Z.label) && void 0 !== t ? t : y.t["UQMV/P"]
+    null == k && f.Z.shouldFetchWallpapers && g.k9()
+  }, [k]), null == P) ? null : (N = Z ? U ? y.NW.format(y.t.z847Tk, {
+    wallpaper_name: null !== (n = null == k ? void 0 : k.label) && void 0 !== n ? n : y.t["UQMV/P"]
   }) : y.NW.format(y.t["+lKndX"], {
-    username: null == A ? void 0 : A.nick,
-    wallpaper_name: null !== (n = null == Z ? void 0 : Z.label) && void 0 !== n ? n : y.t["UQMV/P"]
+    username: null == w ? void 0 : w.nick,
+    wallpaper_name: null !== (O = null == k ? void 0 : k.label) && void 0 !== O ? O : y.t["UQMV/P"]
   }) : y.NW.format(y.t.dBxFsL, {
     learnMoreLink: p.Z.getArticleURL(v.BhN.DM_WALLPAPERS)
-  }), P ? F && L ? N = y.NW.formatToPlainString(y.t.PzTpVV, {
-    wallpaperName: null == Z ? void 0 : Z.label
-  }) : W || U || !L || (N = y.NW.format(y.t.JwUhHh, {
+  }), A ? B && M ? j = y.NW.formatToPlainString(y.t.PzTpVV, {
+    wallpaperName: null == k ? void 0 : k.label
+  }) : U || F || !M || (j = y.NW.format(y.t.JwUhHh, {
     onClickNitro: () => {
       (0, u.uL)(v.Z5c.NITRO_HOME)
     }
-  })) : N = y.NW.string(y.t["6JSOu7"]), (null == D ? void 0 : D.isViewable) && L && !W && (j = (0, r.jsx)(o.zxk, {
+  })) : j = y.NW.string(y.t["6JSOu7"]), (null == L ? void 0 : L.isViewable) && M && !U && (C = (0, r.jsx)(o.zxk, {
     className: E.action,
     onClick: () => {
-      g.X(I, T, {
-        shouldClear: !F
+      g.X(S, P, {
+        shouldClear: !B
       })
     },
-    submitting: k,
-    children: y.NW.string(F ? y.t.o6850d : y.t["/ubFp6"])
+    submitting: R,
+    children: y.NW.string(B ? y.t.o6850d : y.t["/ubFp6"])
   })), (0, r.jsx)(b.Z, {
-    channel: I,
-    content: O,
-    subtitle: N,
-    action: j,
-    compact: S,
-    message: C
+    channel: S,
+    content: N,
+    subtitle: j,
+    action: C,
+    compact: T,
+    message: I
   }))
 }

@@ -2,13 +2,13 @@
 n.d(t, {
   CE: () => c,
   F5: () => i,
-  TL: () => o,
-  YA: () => r
+  TL: () => r,
+  YA: () => o
 });
 var a, l, s = n(388032),
-  r = ((a = {}).TOO_MANY_NOTIFICATIONS = "too_many_notifications", a.TEMPORARY_BREAK = "temporary_break", a.ANNOYING = "annoying", a.UNSAFE = "unsafe", a.SPAM = "spam", a.OTHER = "other", a);
+  o = ((a = {}).TOO_MANY_NOTIFICATIONS = "too_many_notifications", a.TEMPORARY_BREAK = "temporary_break", a.ANNOYING = "annoying", a.UNSAFE = "unsafe", a.SPAM = "spam", a.OTHER = "other", a);
 
-function o() {
+function r() {
   return [{
     value: "too_many_notifications",
     label: s.NW.string(s.t.bQHhT0)

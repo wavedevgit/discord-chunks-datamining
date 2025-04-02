@@ -1,6 +1,6 @@
 /**
   Module ID: 74920
-  Original File Name: 18a416af17f0974d
+  Original File Name: aba5b1255c089075
 **/
 .root__66e7e {
     border-radius: 8px;
@@ -53,6 +53,10 @@
     background-color: var(--background-mod-normal)
 }
 
+.modalRoot__6c12c {
+    max-height: 900px
+}
+
 .headerContainer__6c12c {
     flex-direction: column
 }
@@ -64,7 +68,7 @@
 }
 
 .helpdeskLink__6c12c {
-    margin-top: 8px
+    margin-top: var(--space-8)
 }
 
 .header__6c12c,.ratingBody__6c12c {
@@ -73,7 +77,7 @@
 }
 
 .ratingBody__6c12c {
-    margin-top: 8px;
+    margin-top: var(--space-8);
     color: var(--text-normal)
 }
 
@@ -82,7 +86,15 @@
 }
 
 .problemInfo__6c12c {
-    margin-bottom: 24px
+    margin-bottom: var(--space-24)
+}
+
+.ratingSelectorContainer__6c12c {
+    padding: var(--space-16) var(--space-24)
+}
+
+.presetList__6c12c {
+    padding-bottom: var(--space-8)
 }
 
 .hidden__6c12c {
@@ -147,4 +159,4 @@
     padding: var(--modal-vertical-padding) var(--modal-horizontal-padding)
 }
 
-/*# sourceMappingURL=18a416af17f0974d.css.map*/
+/*# sourceMappingURL=aba5b1255c089075.css.map*/

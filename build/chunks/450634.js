@@ -9,12 +9,12 @@ var a = n(200651),
   r = n(142497),
   c = n(626135),
   s = n(672655),
-  d = n(768015),
-  u = n(701488),
+  u = n(768015),
+  d = n(701488),
   m = n(981631),
   b = n(190378),
   _ = n(388032);
-let f = [u.K8.OTHER, u.K8.ADS, u.K8.NOT_FUN];
+let f = [d.K8.OTHER, d.K8.ADS, d.K8.NOT_FUN];
 
 function p(e) {
   var t;
@@ -46,13 +46,14 @@ function p(e) {
     problems: (0, s.Z)(!0, j),
     freeformNeededProblems: f,
     onSubmit: function(e) {
+      var t;
       let {
-        rating: t,
-        problem: i,
-        dontShowAgain: o,
-        feedback: s
+        rating: i,
+        problem: o,
+        dontShowAgain: s,
+        feedback: d
       } = e;
-      o && function(e) {
+      s && function(e) {
         let {
           applicationId: t,
           rating: n
@@ -62,18 +63,18 @@ function p(e) {
           rating: n
         }), (0, r.Kw)(b.v.POST_ACTIVITY_FEEDBACK)
       }({
-        rating: t,
+        rating: i,
         applicationId: h.id
-      }), null != t && ((0, d.Z)({
-        problem: i,
+      }), null != i && ((0, u.Z)({
+        problem: null !== (t = null == o ? void 0 : o.value) && void 0 !== t ? t : null,
         channel: p,
         embeddedActivityLocation: x,
-        feedback: s,
+        feedback: d,
         activityApplication: h,
         analyticsData: g,
         location: "Activity End",
-        rating: t
-      }), null != i && (0, l.ZDy)(async () => {
+        rating: i
+      }), null != o && (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
@@ -101,6 +102,6 @@ function p(e) {
     },
     onClose: v,
     transitionState: N,
-    otherKey: u.K8.OTHER
+    otherKey: d.K8.OTHER
   })
 }

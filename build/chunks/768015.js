@@ -14,7 +14,7 @@ function l(e) {
     activityApplication: r,
     analyticsData: c,
     location: s,
-    rating: d = null
+    rating: u = null
   } = e;
   a.default.track(i.rMx.ACTIVITY_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function l(e) {
     application_id: null == r ? void 0 : r.id,
     application_name: null == r ? void 0 : r.name,
     location: s,
-    rating: d,
+    rating: u,
     feedback: o,
     embedded_activity_location_kind: l.kind
   }, c))

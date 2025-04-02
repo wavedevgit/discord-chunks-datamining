@@ -414,18 +414,20 @@ function Y(e) {
       previewText: s,
       previewEmoji: c,
       placeholderText: u,
-      prompt: d
+      prompt: d,
+      disableEdit: f = !1
     } = e,
-    f = L(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText", "prompt"]);
-  let h = (0, l.e7)([E.default], () => E.default.getId() === o.id),
-    g = (0, m.Z)(o.id),
+    h = L(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText", "prompt", "disableEdit"]);
+  let g = (0, m.Z)(o.id),
     {
       analyticsLocations: b
     } = (0, p.ZP)(_.Z.PROFILE_CUSTOM_STATUS),
-    y = (0, v.T)({
+    y = (0, l.e7)([E.default], () => E.default.getId() === o.id),
+    O = y && !f,
+    I = (0, v.T)({
       location: i
     }),
-    O = !h && !o.bot && y;
+    S = !y && !o.bot && I;
   if (null != s || null != c) {
     let e = null != c ? c : null,
       t = null != s && "" !== s ? s : null;
@@ -435,37 +437,37 @@ function Y(e) {
         emoji: e,
         text: t,
         placeholderText: u
-      }, f))
+      }, h))
     })
   }
-  let I = null !== (t = null == g ? void 0 : g.emoji) && void 0 !== t ? t : null,
-    S = null !== (n = null == g ? void 0 : g.state) && void 0 !== n ? n : null,
-    T = null != S && "" !== S ? S : null;
-  return null != I || null != T || h ? null == I && null == T ? (0, r.jsx)(p.Gt, {
+  let T = null !== (t = null == g ? void 0 : g.emoji) && void 0 !== t ? t : null,
+    N = null !== (n = null == g ? void 0 : g.state) && void 0 !== n ? n : null,
+    A = null != N && "" !== N ? N : null;
+  return null != T || null != A || O ? null == T && null == A ? (0, r.jsx)(p.Gt, {
     value: b,
     children: (0, r.jsx)(V, P({
       onCloseProfile: a,
       prompt: d
-    }, f))
-  }) : O ? (0, r.jsx)(p.Gt, {
+    }, h))
+  }) : S ? (0, r.jsx)(p.Gt, {
     value: b,
     children: (0, r.jsx)(W, P({
       user: o,
-      emoji: I,
-      text: T
-    }, f))
-  }) : h ? (0, r.jsx)(p.Gt, {
+      emoji: T,
+      text: A
+    }, h))
+  }) : O ? (0, r.jsx)(p.Gt, {
     value: b,
     children: (0, r.jsx)(H, P({
-      emoji: I,
-      text: T,
+      emoji: T,
+      text: A,
       onCloseProfile: a
-    }, f))
+    }, h))
   }) : (0, r.jsx)(p.Gt, {
     value: b,
     children: (0, r.jsx)(Z, P({
-      emoji: I,
-      text: T
-    }, f))
+      emoji: T,
+      text: A
+    }, h))
   }) : null
 }

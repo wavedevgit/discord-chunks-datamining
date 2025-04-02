@@ -1,6 +1,6 @@
 /**
   Module ID: 87995
-  Original File Name: 4c917a527b420296
+  Original File Name: 8d69ac41785de6df
 **/
 .root__66e7e {
     border-radius: 8px;
@@ -61,13 +61,12 @@
 }
 
 .textLabels__5c58b {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto
+    width: 100%
 }
 
-.emojis__5c58b {
-    margin: 4px auto 0
+.emojis__5c58b,.textLabels__5c58b {
+    margin-left: auto;
+    margin-right: auto
 }
 
 .emoji__5c58b {
@@ -101,7 +100,7 @@
     transform: scale(1.06)
 }
 
-.emojiContainer__5c58b.selected__5c58b .emoji__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
+.emojiContainer__5c58b .emoji__5c58b.selected__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
     filter: none;
     opacity: 1
 }
@@ -126,6 +125,10 @@
     background-image: url(/assets/8f1e1e90bea53650.svg)
 }
 
+.modalRoot__6c12c {
+    max-height: 900px
+}
+
 .headerContainer__6c12c {
     flex-direction: column
 }
@@ -137,7 +140,7 @@
 }
 
 .helpdeskLink__6c12c {
-    margin-top: 8px
+    margin-top: var(--space-8)
 }
 
 .header__6c12c,.ratingBody__6c12c {
@@ -146,7 +149,7 @@
 }
 
 .ratingBody__6c12c {
-    margin-top: 8px;
+    margin-top: var(--space-8);
     color: var(--text-normal)
 }
 
@@ -155,7 +158,15 @@
 }
 
 .problemInfo__6c12c {
-    margin-bottom: 24px
+    margin-bottom: var(--space-24)
+}
+
+.ratingSelectorContainer__6c12c {
+    padding: var(--space-16) var(--space-24)
+}
+
+.presetList__6c12c {
+    padding-bottom: var(--space-8)
 }
 
 .hidden__6c12c {
@@ -182,4 +193,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=4c917a527b420296.css.map*/
+/*# sourceMappingURL=8d69ac41785de6df.css.map*/

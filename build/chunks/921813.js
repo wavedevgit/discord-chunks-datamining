@@ -119,7 +119,8 @@ function C(e) {
         }), !U && (0, r.jsx)(m.Z, {
           location: "ProfileCustomizationPreview",
           user: t,
-          profileType: T.y0.BITE_SIZE
+          profileType: T.y0.BITE_SIZE,
+          disableEdit: j
         })]
       }), (0, r.jsx)(O.Z, {
         user: t,

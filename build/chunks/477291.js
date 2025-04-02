@@ -50,19 +50,20 @@ function d(e, t) {
 }
 
 function f(e, t, n) {
+  var r;
   let {
-    rating: r,
-    problem: a,
-    feedback: l
+    rating: a,
+    problem: l,
+    feedback: c
   } = n;
   (0, o.Z)({
-    problem: a,
+    problem: null !== (r = null == l ? void 0 : l.value) && void 0 !== r ? r : null,
     summary: e,
-    feedback: l,
+    feedback: c,
     guildId: t.guild_id,
     channelId: t.id,
     location: "Summary divider",
-    rating: r
+    rating: a
   }), (0, i.showToast)((0, i.createToast)(s.NW.string(s.t["d9+vQ0"]), i.ToastType.SUCCESS))
 }
 

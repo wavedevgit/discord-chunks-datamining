@@ -1,6 +1,6 @@
 /** Chunk was on 18912 **/
 n.d(e, {
-  default: () => g
+  default: () => h
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -55,7 +55,11 @@ class f extends l.PureComponent {
           title: u.NW.string(u.t["6Y1t5O"]),
           children: (0, r.jsx)(s.q4e, {
             placeholder: u.NW.string(u.t.U0kGk5),
-            options: (0, i.Z)(t, !1),
+            options: (0, i.Z)({
+              isStreamer: t,
+              isEndStream: !1,
+              showVibesHoneypot: !1
+            }),
             onChange: this.handleChanged,
             value: l,
             maxVisibleItems: 4
@@ -127,4 +131,4 @@ class f extends l.PureComponent {
     })
   }
 }
-let g = f
+let h = f
