@@ -1,4 +1,4 @@
-/** Chunk was on 12321 **/
+/** Chunk was on 93602 **/
 n.d(t, {
   Z: () => b
 }), n(47120);
@@ -21,8 +21,8 @@ function b(e) {
     channelId: t,
     guildId: n,
     userId: b,
-    containerDimensions: y
-  } = e, O = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [v, h] = l.useState([]), j = v.length < 50;
+    containerDimensions: O
+  } = e, y = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [h, v] = l.useState([]), j = h.length < 50;
   l.useEffect(() => {
     function e(e) {
       var r;
@@ -35,7 +35,7 @@ function b(e) {
       } = e;
       if (null != b && b !== o || u.Z.getEnabled() && (0, d.Z)(null !== (r = null == a ? void 0 : a.name) && void 0 !== r ? r : "")) return;
       let g = null != a && null != s && null != f;
-      if (l === t && !O && j && g) {
+      if (l === t && !y && j && g) {
         let e = (0, p._r)(a),
           r = null != a.id && !a.animated,
           l = {
@@ -46,7 +46,7 @@ function b(e) {
             url: e,
             userId: o
           };
-        h(e => [...e, l]), c.ZP.trackWithMetadata(m.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
+        v(e => [...e, l]), c.ZP.trackWithMetadata(m.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
@@ -55,23 +55,23 @@ function b(e) {
     return a.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       a.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, b, O, j]);
+  }, [t, n, b, y, j]);
   let S = l.useCallback(e => {
-    h(t => {
+    v(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
-  return O ? null : (0, r.jsx)("div", {
+  return y ? null : (0, r.jsx)("div", {
     className: g.effectsWrapper,
     style: {
-      width: y.width
+      width: O.width
     },
     children: (0, r.jsx)("div", {
       className: g.effects,
-      children: v.map(e => (0, r.jsx)(f.Z, {
-        containerDimensions: y,
+      children: h.map(e => (0, r.jsx)(f.Z, {
+        containerDimensions: O,
         effect: e,
         onComplete: S
       }, e.id))

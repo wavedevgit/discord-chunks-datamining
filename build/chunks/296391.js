@@ -57,6 +57,7 @@ function x(e) {
     children: [!R && (M || B) ? (0, r.jsxs)(p.Z, {
       children: [B && (0, r.jsx)(m.Z, {
         user: n,
+        currentUser: t,
         voiceChannel: C,
         onClose: P
       }), null != T && (0, r.jsx)(v.Z, {

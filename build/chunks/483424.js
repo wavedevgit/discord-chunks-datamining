@@ -43,6 +43,7 @@ function p(e) {
   });
   return I || null == b ? I || null == v ? S && !I && null != y ? (0, r.jsx)(f.Z, {
     user: t,
+    currentUser: n,
     voiceChannel: y,
     className: m,
     onClose: g

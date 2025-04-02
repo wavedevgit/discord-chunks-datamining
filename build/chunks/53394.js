@@ -54,10 +54,10 @@ function u(e) {
     type: a.cd.RECENT_AVATARS_ROADBLOCK_UPSELL,
     title: l.NW.string(l.t.O8YHNT),
     body: l.NW.format(l.t.MW3mAg, {
-      recentAvatarsLimit: i.Ul
+      recentAvatarsLimit: i.zW
     }),
     glowUp: l.NW.format(l.t.MW3mAg, {
-      recentAvatarsLimit: i.Ul
+      recentAvatarsLimit: i.zW
     }),
     onSecondaryClick: () => {
       null == f || f(), (0, o.$)(t)

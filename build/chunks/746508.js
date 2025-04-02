@@ -620,39 +620,36 @@ class eX extends i.PureComponent {
       remoteVoiceState: n,
       enableActivities: i,
       voiceStates: l,
-      selfStream: a,
-      isPrivateChannelWithEnabledActivities: s
+      selfStream: o,
+      isPrivateChannelWithEnabledActivities: a
     } = this.props;
     if (null == e || null != n) return null;
-    let c = em.default.getId();
+    let s = em.default.getId();
     if (e.isGuildStageVoice()) {
       if (!(0, $.tu)(e.guild_id) || !t) return null;
-      let n = l.find(e => e.user.id === c);
+      let n = l.find(e => e.user.id === s);
       if (null == n || n.voiceState.suppress) return null
     }
-    let u = (e.isGuildVoice() || s) && i,
+    let c = (e.isGuildVoice() || a) && i,
       {
-        reachedLimit: d
+        reachedLimit: u
       } = (0, ea.t)(e),
-      p = (0, $.xJ)(e.id);
+      d = (0, $.xJ)(e.id);
     return (0, r.jsxs)("div", {
       className: eM.actionButtons,
       children: [(0, r.jsx)(eK, {
         channel: e,
-        enableActivities: u,
-        disabled: !p && d
+        enableActivities: c,
+        disabled: !d && u
       }), (0, r.jsx)(eQ, {
         channel: e,
         canGoLive: t,
-        enableActivities: u,
-        disabled: e.isGuildStageVoice() && (p && null == a || !p && d)
-      }), u ? (0, r.jsx)(eq, {
+        enableActivities: c,
+        disabled: e.isGuildStageVoice() && (d && null == o || !d && u)
+      }), c ? (0, r.jsx)(eq, {
         channel: e,
         enableActivities: i
       }) : null, (0, q.Z)(e) ? (0, r.jsx)(Q.Z, {
-        className: o()(eM.button, eM.buttonColor),
-        innerClassName: eM.buttonContents,
-        iconClassName: eM.buttonIcon,
         channel: e,
         focusProps: eH
       }) : null]

@@ -1,4 +1,4 @@
-/** Chunk was on 12321 **/
+/** Chunk was on 93602 **/
 n.d(t, {
   Z: () => s
 });
@@ -23,11 +23,11 @@ function s(e) {
   } = e, {
     label: g,
     tooltip: b,
-    loading: y,
-    disabled: O,
-    onClick: v
-  } = (0, o.Ih)(t, n, s), h = () => {
-    null == m || m(), v()
+    loading: O,
+    disabled: y,
+    onClick: h
+  } = (0, o.Ih)(t, n, s), v = () => {
+    null == m || m(), h()
   };
   return (0, r.jsx)(l.ua7, {
     text: b,
@@ -43,11 +43,11 @@ function s(e) {
         look: d,
         color: p,
         fullWidth: f,
-        onClick: h,
+        onClick: v,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: O,
-        submitting: y,
+        disabled: y,
+        submitting: O,
         children: [(0, r.jsx)(i.Z, {
           width: 16,
           height: 16

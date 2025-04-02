@@ -1,4 +1,4 @@
-/** Chunk was on 12321 **/
+/** Chunk was on 93602 **/
 n.d(t, {
   P: () => j,
   Z: () => S
@@ -18,9 +18,9 @@ var l = n(442837),
   m = n(979651),
   g = n(153066),
   b = n(981631),
-  y = n(834601);
+  O = n(834601);
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function v(e, t) {
   }), e
 }
 
-function h(e) {
+function v(e) {
   let {
     type: t,
     source: n,
@@ -65,7 +65,7 @@ function h(e) {
     actionColor: p
   } = e;
   return (0, r.jsx)(s.Z, {
-    className: (0, g.l)(y, "actions", t),
+    className: (0, g.l)(O, "actions", t),
     type: t,
     source: n,
     activity: l,
@@ -86,7 +86,7 @@ let j = a.Z.Types,
       useStoreStream: i = !0,
       showActions: s = !0,
       hideHeader: g = !1,
-      showChannelDetails: y = !1
+      showChannelDetails: O = !1
     } = e, j = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
@@ -111,17 +111,17 @@ let j = a.Z.Types,
         var e, r;
         return (0, o.Z)(t, b.xjy.EMBEDDED) ? f.Z.getGuild(null === (e = p.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
       }),
-      x = (0, l.e7)([f.Z], () => null != P ? f.Z.getGuild(P.guildId) : null),
-      I = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
-    return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, v(O({}, j), {
+      I = (0, l.e7)([f.Z], () => null != P ? f.Z.getGuild(P.guildId) : null),
+      E = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
+    return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(y({}, j), {
       activity: t,
       user: n,
-      application: I,
+      application: E,
       hideHeader: g,
-      activityGuild: null != N ? N : x,
-      showChannelDetails: y,
-      channel: y ? S : void 0,
-      renderActions: s ? () => (0, r.jsx)(h, v(O({}, j), {
+      activityGuild: null != N ? N : I,
+      showChannelDetails: O,
+      channel: O ? S : void 0,
+      renderActions: s ? () => (0, r.jsx)(v, h(y({}, j), {
         applicationStream: P,
         activity: t,
         user: n

@@ -51,8 +51,8 @@ function f(e) {
 }
 
 function _(e) {
-  let t = e ? c.Ul : c.h,
-    n = c.Ul - t;
+  let t = e ? c.zW : c.PH,
+    n = c.zW - t;
   return {
     recentAvatarsLimit: t,
     numberOfLockedAvatarSlots: n

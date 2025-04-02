@@ -1,4 +1,4 @@
-/** Chunk was on 12321 **/
+/** Chunk was on 93602 **/
 n.d(t, {
   Z: () => Z
 }), n(47120);
@@ -13,10 +13,10 @@ var r, l, i, o = n(442837),
   m = n(594174),
   g = n(979651),
   b = n(938475),
-  y = n(981631),
-  O = n(354459);
-let v = new c.Z,
-  h = new c.Z,
+  O = n(981631),
+  y = n(354459);
+let h = new c.Z,
+  v = new c.Z,
   j = new Set;
 
 function S(e, t, n) {
@@ -24,10 +24,10 @@ function S(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    l = (0, b.PH)(r, null != t ? t : y.ME, e.id);
-  v.set(e.id, l);
+    l = (0, b.PH)(r, null != t ? t : O.ME, e.id);
+  h.set(e.id, l);
   let i = {
-    type: O.fO.USER,
+    type: y.fO.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -40,12 +40,12 @@ function S(e, t, n) {
     userNick: d.ZP.getName(t, n, e),
     localVideoDisabled: !1
   };
-  h.set(e.id, i)
+  v.set(e.id, i)
 }
 
 function P(e) {
-  let t = v.delete(e),
-    n = h.delete(e),
+  let t = h.delete(e),
+    n = v.delete(e),
     r = j.delete(e);
   return t || n || r
 }
@@ -66,44 +66,44 @@ function N() {
   }), r
 }
 
-function x() {
-  v.clear(), h.clear(), j.clear()
+function I() {
+  h.clear(), v.clear(), j.clear()
 }
-class I extends(r = o.ZP.Store) {
+class E extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], N)
   }
   get desyncedVoiceStatesCount() {
-    return v.size()
+    return h.size()
   }
   getDesyncedUserIds() {
-    return v.keys()
+    return h.keys()
   }
   getDesyncedVoiceStates() {
-    return v.values()
-  }
-  getDesyncedParticipants() {
     return h.values()
   }
+  getDesyncedParticipants() {
+    return v.values()
+  }
 }
-i = "RTCConnectionDesyncStore", (l = "displayName") in I ? Object.defineProperty(I, l, {
+i = "RTCConnectionDesyncStore", (l = "displayName") in E ? Object.defineProperty(E, l, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : I[l] = i;
-let Z = new I(s.Z, {
+}) : E[l] = i;
+let Z = new E(s.Z, {
   CONNECTION_OPEN: function() {
-    x()
+    I()
   },
-  VOICE_CHANNEL_SELECT: x,
+  VOICE_CHANNEL_SELECT: I,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
-    if (n !== a.Yn.DEFAULT || t !== y.hes.DISCONNECTED) return !1;
-    x()
+    if (n !== a.Yn.DEFAULT || t !== O.hes.DISCONNECTED) return !1;
+    I()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {

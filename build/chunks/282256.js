@@ -1,4 +1,4 @@
-/** Chunk was on 12321 **/
+/** Chunk was on 93602 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
@@ -34,21 +34,21 @@ let f = l.memo(function(e) {
       return l
     }(e, ["children", "isOverlay", "contextGuildId"]);
   let b = l.useRef(null),
-    [y, O] = l.useState({
+    [O, y] = l.useState({
       maskImage: "none"
     }),
-    v = (0, c.Z)(() => {
+    h = (0, c.Z)(() => {
       var e, t;
       if (f) {
-        O({
+        y({
           maskImage: "none"
         });
         return
       }
-      let n = null === (e = h.current) || void 0 === e ? void 0 : e.getBoundingClientRect(),
+      let n = null === (e = v.current) || void 0 === e ? void 0 : e.getBoundingClientRect(),
         r = null === (t = b.current) || void 0 === t ? void 0 : t.getBoundingClientRect();
       if (null == n || null == r) {
-        O({
+        y({
           maskImage: "none"
         });
         return
@@ -56,20 +56,20 @@ let f = l.memo(function(e) {
       let l = r.right - n.right,
         i = r.width - l;
       if (i > r.width) {
-        O({
+        y({
           maskImage: "none"
         });
         return
       }
-      O({
+      y({
         maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(i, "px)")
       })
     }),
-    h = (0, s.y)(v),
+    v = (0, s.y)(h),
     j = (0, u.p0)(g.userId, m),
     S = {
-      handleResize: v,
-      positionTrackerRef: h
+      handleResize: h,
+      positionTrackerRef: v
     },
     P = l.useRef(S);
   l.useEffect(() => {
@@ -81,10 +81,10 @@ let f = l.memo(function(e) {
     } = P.current;
     null != t.current && e()
   }, [j]);
-  let N = (0, a.O)(v);
+  let N = (0, a.O)(h);
   return (0, r.jsxs)("div", {
     className: o()(p.container, f && p.isOverlayContainer),
-    ref: h,
+    ref: v,
     children: [(0, r.jsx)("div", {
       className: p.usernameContainer,
       children: i
@@ -94,7 +94,7 @@ let f = l.memo(function(e) {
       children: (0, r.jsx)("span", {
         className: o()(p.chipletContainer, !j && f && p.noPadding),
         ref: b,
-        style: y,
+        style: O,
         children: (0, r.jsx)(d.ZP, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

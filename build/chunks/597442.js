@@ -5,7 +5,7 @@ n.d(t, {
   T: () => _
 });
 var r, i = n(192379),
-  o = n(610521),
+  o = n(380259),
   a = n(442837),
   s = n(607070);
 
@@ -50,14 +50,14 @@ function d(e, t) {
 let f = null !== (r = document.getElementById("app-mount")) && void 0 !== r ? r : document;
 
 function _(e) {
-  var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-    r = (0, a.e7)([s.Z], () => s.Z.keyboardModeEnabled),
-    l = i.useRef(!1);
-  return l.current = !r, (0, o.ZP)(e, d(c({}, n), {
-    disableReturnRef: l,
-    attachTo: null !== (t = n.attachTo) && void 0 !== t ? t : f,
-    returnRef: n.returnRef
+  var t, n, r;
+  let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+    u = (0, a.e7)([s.Z], () => s.Z.keyboardModeEnabled),
+    _ = i.useRef(!1);
+  return _.current = !u, (0, o.ZP)(e, d(c({}, l), {
+    disableReturnRef: _,
+    attachTo: null !== (r = null !== (n = l.attachTo) && void 0 !== n ? n : null === (t = e.current) || void 0 === t ? void 0 : t.ownerDocument) && void 0 !== r ? r : f,
+    returnRef: l.returnRef
   }))
 }
 

@@ -1,8 +1,8 @@
-/** Chunk was on 12321 **/
+/** Chunk was on 93602 **/
 n.d(t, {
-  Es: () => y,
-  Eu: () => v,
-  bt: () => O
+  Es: () => O,
+  Eu: () => h,
+  bt: () => y
 }), n(47120), n(653041);
 var r = n(192379),
   l = n(392711),
@@ -19,12 +19,12 @@ var r = n(192379),
   g = n(979651),
   b = n(823379);
 
-function y(e, t) {
+function O(e, t) {
   let n = (0, i.e7)([p.Z, f.Z], () => e === f.Z.getChannelId() ? p.Z.getDesyncedVoiceStates() : null),
     o = (0, i.Wu)([a.Z], () => null == e ? [] : [...a.Z.getGuildRingingUsers(e)]),
     c = (0, i.Wu)([m.default], () => o.map(e => m.default.getUser(e)).filter(b.lm)),
     g = (0, i.e7)([u.Z], () => u.Z.getBasicChannel(e)),
-    y = r.useMemo(() => c.map(e => ({
+    O = r.useMemo(() => c.map(e => ({
       voiceState: new s.Z(e.id),
       user: e,
       member: (null == g ? void 0 : g.guild_id) != null ? d.ZP.getMember(null == g ? void 0 : g.guild_id, e.id) : null,
@@ -45,10 +45,10 @@ function y(e, t) {
         return t
       }), 0, e)
     }), n.length > 0) ? [...r, ...n] : r
-  })(n, t, y), [n, t, y])
+  })(n, t, O), [n, t, O])
 }
 
-function O(e, t) {
+function y(e, t) {
   let n = (0, i.e7)([p.Z, f.Z], () => e === f.Z.getChannelId() ? p.Z.getDesyncedParticipants() : null);
   return r.useMemo(() => (function(e, t) {
     if (null == e || 0 === e.length) return t;
@@ -59,7 +59,7 @@ function O(e, t) {
   })(n, t), [n, t])
 }
 
-function v(e, t) {
+function h(e, t) {
   let n = (0, i.e7)([c.default], () => c.default.getId() === t),
     l = (0, i.e7)([f.Z], () => f.Z.getChannelId()),
     o = r.useRef(null),

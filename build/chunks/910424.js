@@ -1,6 +1,6 @@
-/** Chunk was on 12321 **/
+/** Chunk was on 93602 **/
 n.d(t, {
-  Z: () => h
+  Z: () => v
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -17,9 +17,9 @@ var l = n(442837),
   m = n(915863),
   g = n(981631),
   b = n(388032),
-  y = n(515914);
+  O = n(515914);
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,11 +51,11 @@ function v(e, t) {
   }), e
 }
 
-function h(e) {
+function v(e) {
   let {
     isCurrentUser: t,
     color: n,
-    look: h,
+    look: v,
     applicationStream: j,
     onAction: S
   } = e, {
@@ -69,43 +69,43 @@ function h(e) {
       } = e;
       return t !== j.ownerId
     }).length > 0
-  })), x = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [I, Z] = (0, u.wq)(x), E = (0, c.Aq)(), w = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, T = e => {
+  })), I = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [E, Z] = (0, u.wq)(I), x = (0, c.Aq)(), w = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, C = e => {
     null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), w || (0, s.iV)(j, {
       forceMultiple: e
-    }), E.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
+    }), x.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == j) return null;
-  let C = (0, u.P9)(Z);
-  t ? C = b.NW.string(b.t.XvBdeX) : w && (C = b.NW.string(b.t.JH1SJy));
+  let T = (0, u.P9)(Z);
+  t ? T = b.NW.string(b.t.XvBdeX) : w && (T = b.NW.string(b.t.JH1SJy));
   let A = {
     color: n,
-    look: h
+    look: v
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.Z, v(O({
-      disabled: t || w || !I,
-      onClick: () => T(!1)
+    children: [(0, r.jsxs)(m.Z, h(y({
+      disabled: t || w || !E,
+      onClick: () => C(!1)
     }, A), {
       fullWidth: !0,
       children: [(0, r.jsx)(i.hGI, {
         size: "md",
         color: "currentColor",
-        className: y.streamIcon
-      }), C]
+        className: O.streamIcon
+      }), T]
     }), "play"), N && !w ? (0, r.jsx)(i.ua7, {
       text: b.NW.string(b.t.wCrzur),
-      children: e => (0, r.jsx)(m.Z, v(O(v(O({}, e), {
+      children: e => (0, r.jsx)(m.Z, h(y(h(y({}, e), {
         onClick: () => {
           var t;
-          null === (t = e.onClick) || void 0 === t || t.call(e), T(!0)
+          null === (t = e.onClick) || void 0 === t || t.call(e), C(!0)
         }
       }), A), {
-        className: y.iconButton,
-        size: y.iconButtonSize,
+        className: O.iconButton,
+        size: O.iconButtonSize,
         children: (0, r.jsx)(i.OgY, {
           size: "xs",
           color: "currentColor",
-          className: y.iconSize
+          className: O.iconSize
         })
       }))
     }) : null]
