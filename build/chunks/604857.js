@@ -30,7 +30,7 @@ function d(e) {
       grow: !1,
       compact: !f
     }), (0, r.jsx)(a.zxk, {
-      color: a.Ttl.BRAND,
+      color: f ? a.Ttl.PRIMARY : a.Ttl.BRAND,
       onClick: p,
       children: l.NW.string(l.t.cpT0Cg)
     })]

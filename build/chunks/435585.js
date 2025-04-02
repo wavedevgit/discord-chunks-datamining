@@ -154,14 +154,14 @@ function u(e, t, n, u, d) {
         }, c(n))
       }))
     }, [b, t, d, u, n, p]),
-    D = r.useCallback((e, t) => {
+    N = r.useCallback((e, t) => {
       f({
         questId: b,
         questContent: e,
         questContentCTA: t
       })
     }, [b, f]),
-    N = r.useCallback(e => {
+    D = r.useCallback(e => {
       if (null != t.current) {
         var r, l;
         p({
@@ -215,10 +215,10 @@ function u(e, t, n, u, d) {
     trackQuestVideoResumed: C,
     trackQuestVideoPaused: j,
     trackQuestVideoFocusChange: y,
-    trackQuestContentClick: D,
+    trackQuestContentClick: N,
     trackQuestVideoBufferingStarted: _,
     trackQuestVideoBufferingEnded: x,
-    trackWatchTimeAnalytics: N,
+    trackWatchTimeAnalytics: D,
     trackQuestVideoFullscreenChanged: r.useCallback(e => {
       null != t.current && p({
         questId: b,

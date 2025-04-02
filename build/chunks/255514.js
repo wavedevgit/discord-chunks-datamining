@@ -35,8 +35,8 @@ var r = n(200651),
   W = n(521332),
   L = n(905434),
   w = n(196627),
-  D = n(289809),
-  A = n(739319),
+  A = n(289809),
+  D = n(739319),
   R = n(842401),
   M = n(375790),
   B = n(981631),
@@ -90,8 +90,8 @@ let q = e => {
     node: t,
     reportType: n,
     reportSubType: q,
-    history: H,
-    onSelectChild: V,
+    history: V,
+    onSelectChild: H,
     onModalClose: K,
     onSubmit: Y,
     multiSelect: Q,
@@ -105,7 +105,7 @@ let q = e => {
       isValid: n
     }, ef(r), eh((0, s.VP)(er, el, ee, r, em))
   }, ev = l.useMemo(() => e => {
-    V({
+    H({
       nodeRef: t.id,
       destination: e,
       textInput: null != er || null != el ? ep : void 0,
@@ -114,7 +114,7 @@ let q = e => {
         state: em
       } : void 0
     })
-  }, [t, V, ee, em, ep, er, el]);
+  }, [t, H, ee, em, ep, er, el]);
   l.useEffect(() => {
     null != Q && ex(Q), null != $ && ef($)
   }, [Q, $]);
@@ -155,12 +155,12 @@ let q = e => {
       })]
     }), (0, r.jsxs)(i.hzk, {
       className: U.body,
-      children: [null != et && (0, r.jsx)(A.Z, {
+      children: [null != et && (0, r.jsx)(D.Z, {
         element: et
-      }), null != ei && (0, r.jsx)(D.Z, {
+      }), null != ei && (0, r.jsx)(A.Z, {
         element: ei
       }), null != F(t, "breadcrumbs") && (0, r.jsx)(m.Z, {
-        history: H
+        history: V
       }), null != F(t, "message_preview") && ("message" === n.name || "first_dm" === n.name) && (0, r.jsx)(T.Z, {
         message: n.record
       }), null != F(t, "user_preview") && "user" === n.name ? (0, r.jsx)(R.Z, {
@@ -268,7 +268,7 @@ let q = e => {
         }
       },
       onBackClicked: e.onNavigateBack,
-      canNavigateBack: H.length > 0
+      canNavigateBack: V.length > 0
     }), (0, r.jsx)(i.olH, {
       className: U.closeButton,
       onClick: K

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   Z: () => p
-});
+}), n(301563);
 var r = n(192379),
   i = n(873546),
   l = n(442837),
@@ -17,18 +17,20 @@ function p(e) {
     children: t,
     deepLinkType: n,
     path: i,
-    paramsBuilder: p
-  } = e, h = (0, s.L)(), f = (0, l.e7)([c.default], () => {
+    paramsBuilder: p,
+    search: h
+  } = e, f = (0, s.L)(), g = (0, l.e7)([c.default], () => {
     var e;
     return null !== (e = c.default.getFingerprint()) && void 0 !== e ? e : c.default.getId()
-  }), g = (0, l.e7)([a.Z], () => a.Z.getState(i), [i]), m = r.useMemo(() => null == p ? {
+  }), m = (0, l.e7)([a.Z], () => a.Z.getState(i), [i]), b = r.useMemo(() => null == p ? {
     path: i,
-    fingerprint: f
-  } : p(i, f), [i, p, f]);
+    fingerprint: g,
+    search: h
+  } : p(i, g, h), [i, p, g, h]);
   return r.useEffect(() => {
-    !d && h && null == g && o.Z.openNativeAppModal(i, u.Etm.DEEP_LINK, {
+    !d && f && null == m && o.Z.openNativeAppModal(i, u.Etm.DEEP_LINK, {
       type: n,
-      params: m
+      params: b
     })
-  }, [g, i, m, n, h]), t
+  }, [m, i, b, n, f]), t
 }

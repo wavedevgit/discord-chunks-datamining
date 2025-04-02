@@ -43,6 +43,8 @@ function u(e) {
       return "quest_home";
     case "DISCOVERY_GAME_RESULTS":
       return "discovery_game";
+    case "SHOP":
+      return "shop";
     default:
       return e
   }

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B5: () => I,
+  B5: () => T,
   PI: () => y,
-  WD: () => N,
-  aM: () => A,
-  ui: () => C
-}), n(230036), n(411104);
+  WD: () => C,
+  aM: () => R,
+  ui: () => P
+}), n(47120), n(230036), n(411104);
 var r = n(200651),
   i = n(192379),
   o = n(772848),
@@ -60,8 +60,13 @@ function E(e, t) {
 }
 let b = 60,
   v = 1,
-  y = .5;
-class O {
+  y = .5,
+  O = new Set;
+
+function I(e, t) {
+  return "".concat(e, "_").concat(t)
+}
+class S {
   getId() {
     return this.id
   }
@@ -78,12 +83,18 @@ class O {
     questContentRowIndex: u,
     minViewTimeSeconds: g = v
   }) {
-    var I = this;
+    var T = this;
     h(this, "id", void 0), h(this, "quests", void 0), h(this, "questContent", void 0), h(this, "triggeredByStatusChange", void 0), h(this, "trackGuildAndChannelMetadata", void 0), h(this, "questContentPosition", void 0), h(this, "questContentRowIndex", void 0), h(this, "adDecisionData", void 0), h(this, "heartbeatTimeoutId", void 0), h(this, "lastBeatTime", void 0), h(this, "minViewTimeReachedTimeoutId", void 0), h(this, "minViewTimeSeconds", void 0), h(this, "minViewportPercentage", void 0), h(this, "isRunning", !1), h(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
         (0, _.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, c._b)(this.questContent)), {
           impressionId: this.id
-        }), (0, c.dA)({
+        });
+        let t = !1,
+          n = (0, d.Zp)(this.questContent);
+        if (null != n) {
+          let r = I(e.id, n);
+          (t = !O.has(r) && (0, d.VB)(this.questContent)) && O.add(r)
+        }(0, c.dA)({
           questId: e.id,
           event: p.rMx.QUEST_CONTENT_VIEWED,
           properties: m({
@@ -92,28 +103,28 @@ class O {
             triggered_by_status_change: this.triggeredByStatusChange
           }, this.commonProperties(e)),
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
-          shouldExtendSession: (0, d.VB)(this.questContent)
+          shouldExtendSession: t
         })
       })
     }), h(this, "beat", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      I.quests.forEach(t => {
-        if (null != I.lastBeatTime) {
-          let n = Math.round(Date.now() - I.lastBeatTime);
+      T.quests.forEach(t => {
+        if (null != T.lastBeatTime) {
+          let n = Math.round(Date.now() - T.lastBeatTime);
           (0, _.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
-            impressionId: I.id
+            impressionId: T.id
           }), (0, c.dA)({
             questId: t.id,
             event: p.rMx.QUEST_CONTENT_VIEW_TIME,
             properties: m({
               is_termination_beat: e,
               viewed_time_ms: n,
-              triggered_by_status_change: I.triggeredByStatusChange
-            }, I.commonProperties(t)),
-            trackGuildAndChannelMetadata: I.trackGuildAndChannelMetadata
+              triggered_by_status_change: T.triggeredByStatusChange
+            }, T.commonProperties(t)),
+            trackGuildAndChannelMetadata: T.trackGuildAndChannelMetadata
           })
         }
-      }), I.lastBeatTime = Date.now()
+      }), T.lastBeatTime = Date.now()
     }), h(this, "commonProperties", e => {
       var t, n;
       return m(E(m({
@@ -126,7 +137,7 @@ class O {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new O({
+      return this.stop(), new S({
         questContent: this.questContent,
         adDecisionData: this.adDecisionData,
         questOrQuests: this.quests,
@@ -153,32 +164,32 @@ class O {
       }), this.isRunning = !0
     }), h(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-      e && I.beat(!0), I.lastBeatTime = void 0, clearInterval(I.heartbeatTimeoutId), clearTimeout(I.minViewTimeReachedTimeoutId), I.isRunning = !1
+      e && T.beat(!0), T.lastBeatTime = void 0, clearInterval(T.heartbeatTimeoutId), clearTimeout(T.minViewTimeReachedTimeoutId), T.isRunning = !1
     }), this.id = (0, o.Z)(), this.adDecisionData = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = g, this.minViewportPercentage = y, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = u
   }
 }
-let I = (e, t) => {
+let T = (e, t) => {
     let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
     return "".concat(n, "_").concat(t)
   },
-  S = e => {
+  N = e => {
     let t = Array.isArray(e) ? null : (0, c.uk)(e),
       n = (0, s.Z)(t);
     return t !== n
   },
-  T = i.createContext(void 0);
+  A = i.createContext(void 0);
 
-function N() {
-  let e = i.useContext(T);
+function C() {
+  let e = i.useContext(A);
   return null == e ? void 0 : e.current
 }
 
-function A() {
+function R() {
   var e;
-  return null === (e = N()) || void 0 === e ? void 0 : e.getId()
+  return null === (e = C()) || void 0 === e ? void 0 : e.getId()
 }
 
-function C(e) {
+function P(e) {
   let {
     visible: t,
     visibleChanged: n,
@@ -186,14 +197,14 @@ function C(e) {
     focused: a,
     focusedChanged: s,
     impression: l
-  } = e, c = S(e.questOrQuests), d = (0, u.KZ)(e.questContent);
+  } = e, c = N(e.questOrQuests), d = (0, u.KZ)(e.questContent);
   return i.useEffect(() => () => {
     null != l.current && l.current.stop()
   }, [l]), i.useEffect(() => {
     let r = a && t,
       i = (n || s || c) && r,
       o = (n || s) && !r || c;
-    (i || o) && null != l.current && l.current.stop(), i && (l.current = new O({
+    (i || o) && null != l.current && l.current.stop(), i && (l.current = new S({
       adDecisionData: d,
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
@@ -203,7 +214,7 @@ function C(e) {
       trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
       minViewTimeSeconds: e.minViewTimeSeconds
     }), l.current.start())
-  }, [a, t, l, s, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, c, e.minViewTimeSeconds, d]), (0, r.jsx)(T.Provider, {
+  }, [a, t, l, s, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, c, e.minViewTimeSeconds, d]), (0, r.jsx)(A.Provider, {
     value: l,
     children: e.children(o, l)
   })

@@ -71,7 +71,7 @@ class v extends(o = a.ZP.Store) {
   }
   isBlockedDomain(e) {
     let t = (0, u.U)() ? (0, s.PJ)(e) : this._isBlockedDomain(e);
-    return "" !== t ? (f.default.track(h.rMx.LINK_SECURITY_CHECK_BLOCKED, {
+    return "" !== t && null !== t ? (f.default.track(h.rMx.LINK_SECURITY_CHECK_BLOCKED, {
       blocked_domain: t
     }), t) : null
   }

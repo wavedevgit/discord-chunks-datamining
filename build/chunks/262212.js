@@ -1,6 +1,6 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  Nn: () => I,
+  Nn: () => y,
   ZP: () => x
 });
 var r = n(200651),
@@ -89,7 +89,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function I(e) {
   var {
     guildId: t,
     powerup: n
@@ -106,7 +106,7 @@ function y(e) {
   }))
 }
 
-function I(e) {
+function y(e) {
   var {
     guildId: t,
     powerup: n,
@@ -115,16 +115,16 @@ function I(e) {
   } = e, d = g(e, ["guildId", "powerup", "compact", "onError"]);
   let {
     onActivate: f,
-    isLoading: y,
-    error: I,
+    isLoading: I,
+    error: y,
     onShowDeactivate: x
   } = (0, p.ZP)(t, n), N = null != (0, u.Z)(t, n), {
     disabled: k,
     reason: h
   } = (0, l.Z)(t, n, N);
   return o.useEffect(() => {
-    null == i || i(I)
-  }, [I, i]), (0, r.jsx)(c.ua7, {
+    null == i || i(y)
+  }, [y, i]), (0, r.jsx)(c.ua7, {
     delay: 100,
     "aria-label": null != h ? h : N ? m.NW.string(b.Z.TZsu1d) : void 0,
     text: null != h ? h : N ? (0, r.jsxs)("div", {
@@ -149,7 +149,7 @@ function I(e) {
       "aria-label": m.NW.string(N ? b.Z.TZsu1d : b.Z.gSxlHR),
       disabled: k,
       onClick: N ? x : f,
-      submitting: y
+      submitting: I
     }), d), {
       children: (0, r.jsx)(v, {
         powerup: n,
@@ -169,13 +169,13 @@ function x(e) {
   } = e, c = null != (0, u.Z)(n, o), i = f.uc.has(o.skuId), l = !c || !i;
   return (0, r.jsxs)("div", {
     className: a()(O.container, t),
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(y, {
       guildId: n,
       powerup: o,
       onError: s,
       grow: l,
       compact: !l
-    }), i && c && (0, r.jsx)(y, {
+    }), i && c && (0, r.jsx)(I, {
       guildId: n,
       powerup: o
     })]

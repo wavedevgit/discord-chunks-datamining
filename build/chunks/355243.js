@@ -32,7 +32,7 @@ function f(e) {
     onClick: E,
     onScrubBack: O,
     onScrubForward: h
-  } = e, [S, C] = l.useState(null), [j, y] = l.useState(null), [_, x] = l.useState(null), [D, N] = l.useState(!1), P = l.useRef(null), T = e => {
+  } = e, [S, C] = l.useState(null), [j, y] = l.useState(null), [_, x] = l.useState(null), [N, D] = l.useState(!1), P = l.useRef(null), T = e => {
     P.current = e, C(e)
   };
   l.useEffect(() => {
@@ -75,13 +75,13 @@ function f(e) {
         o && null != E && E(m(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        o && (null != k.current && T(k.current.getBoundingClientRect()), N(!0), w(e))
+        o && (null != k.current && T(k.current.getBoundingClientRect()), D(!0), w(e))
       },
       onMouseLeave: e => {
-        o && (N(!1), y(null))
+        o && (D(!1), y(null))
       },
       onMouseMove: e => {
-        o && D && w(e)
+        o && N && w(e)
       },
       onKeyDown: A,
       tabIndex: o ? void 0 : -1,
@@ -93,7 +93,7 @@ function f(e) {
       },
       children: [null == v ? void 0 : v.map(e => (0, r.jsx)("div", {
         className: i()(d.buffer, {
-          [d.bufferHovered]: D
+          [d.bufferHovered]: N
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
@@ -110,9 +110,9 @@ function f(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != f ? f : void 0,
-        size: D ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
+        size: N ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != L && (0, r.jsx)(a.Text, {
+      }), N && null != L && (0, r.jsx)(a.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -120,7 +120,7 @@ function f(e) {
           color: "#FFFFFF"
         },
         children: L
-      }), D && o && null != R && (0, r.jsx)("div", {
+      }), N && o && null != R && (0, r.jsx)("div", {
         className: d.grabber,
         style: {
           right: "".concat(R - 6, "px")

@@ -20,8 +20,8 @@ let u = o.forwardRef((e, n) => {
     glowBlur: p = .4,
     percentCompleteText: _,
     percentCompleteTextVariant: C = "text-lg/medium",
-    children: b
-  } = e, g = (0, c.E)(t, o > 0), v = a / 2, m = a / 2 - u / 2, x = 2 * Math.PI * m, S = x - o * x, y = {
+    children: v
+  } = e, g = (0, c.E)(t, o > 0), b = a / 2, m = a / 2 - u / 2, x = 2 * Math.PI * m, S = x - o * x, y = {
     strokeDasharray: "".concat(x, " ").concat(x),
     strokeDashoffset: S
   }, B = {
@@ -41,7 +41,7 @@ let u = o.forwardRef((e, n) => {
     children: [(0, r.jsxs)("div", {
       className: f.inner,
       style: k,
-      children: [b, (0, r.jsxs)(d.animated.div, {
+      children: [v, (0, r.jsxs)(d.animated.div, {
         style: {
           opacity: h
         },
@@ -95,8 +95,8 @@ let u = o.forwardRef((e, n) => {
         strokeWidth: u,
         fill: "transparent",
         r: m,
-        cx: v,
-        cy: v,
+        cx: b,
+        cy: b,
         stroke: "url(#linear)",
         style: B
       }), (0, r.jsx)("circle", {
@@ -104,8 +104,8 @@ let u = o.forwardRef((e, n) => {
         strokeWidth: u,
         fill: "transparent",
         r: m,
-        cx: v,
-        cy: v,
+        cx: b,
+        cy: b,
         stroke: g.foreground,
         style: y
       })]

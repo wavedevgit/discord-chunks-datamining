@@ -1,6 +1,6 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  Z: () => N
+  Z: () => D
 }), n(566702), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -91,7 +91,7 @@ function x(e) {
     })]
   })
 }
-let D = l.forwardRef(function(e, t) {
+let N = l.forwardRef(function(e, t) {
   let {
     iconComponent: n,
     animationTime: l,
@@ -146,13 +146,13 @@ let D = l.forwardRef(function(e, t) {
   }
 });
 
-function N(e) {
+function D(e) {
   var t, n;
   let {
     videoRef: o,
     playerState: O,
     animSpring: y,
-    visible: N,
+    visible: D,
     seekForwardEnabled: P,
     hideCaptionBtn: T,
     handlePlaybackBtnClick: k,
@@ -224,27 +224,27 @@ function N(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: S.videoControlsGroup,
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(N, {
         iconComponent: eu,
         animationTime: y,
-        visible: N,
+        visible: D,
         ariaLabel: ed,
         tooltipLabel: ed,
         shortcut: E.Y1.PLAYBACK,
         onClick: k,
         ref: er
-      }), (0, r.jsx)(D, {
+      }), (0, r.jsx)(N, {
         iconComponent: g.d,
         animationTime: y,
-        visible: N,
+        visible: D,
         onClick: L,
         ariaLabel: h.NW.string(h.t.r9s3Ul),
         tooltipLabel: h.NW.string(h.t.r9s3Ul),
         shortcut: E.Y1.SEEK_BACK
-      }), (0, r.jsx)(D, {
+      }), (0, r.jsx)(N, {
         iconComponent: b.o,
         animationTime: y,
-        visible: N,
+        visible: D,
         onClick: R,
         disabled: !P,
         ariaLabel: P ? h.NW.string(h.t.zWDcND) : h.NW.string(h.t.xXh3y8),
@@ -258,7 +258,7 @@ function N(e) {
         opacity: (0, a.to)([y.to({
           range: [0, 1],
           output: [0, 1]
-        })], e => "".concat(N ? e : Math.pow(e, 8)))
+        })], e => "".concat(D ? e : Math.pow(e, 8)))
       },
       children: [(0, r.jsxs)("div", {
         onMouseEnter: ei,
@@ -266,10 +266,10 @@ function N(e) {
         onFocus: ei,
         onBlur: ea,
         className: S.volumeControlGroup,
-        children: [(0, r.jsx)(D, {
+        children: [(0, r.jsx)(N, {
           iconComponent: ec,
           animationTime: y,
-          visible: N,
+          visible: D,
           onClick: eo,
           ariaLabel: h.NW.string(h.t["eIl+AA"]),
           tooltipLabel: h.NW.string(h.t["eIl+AA"]),
@@ -280,7 +280,7 @@ function N(e) {
             opacity: (0, a.to)([et.to({
               range: [0, 1],
               output: [0, 1]
-            })], e => "".concat(N ? e : Math.pow(e, 8))),
+            })], e => "".concat(D ? e : Math.pow(e, 8))),
             width: (0, a.to)([et.to({
               range: [0, 1],
               output: [0, 100]
@@ -325,28 +325,28 @@ function N(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: i()(S.videoControlsGroup, S.videoControlsGroupEnd),
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(N, {
         iconComponent: d.hH0,
         animationTime: y,
-        visible: N,
+        visible: D,
         onClick: w,
         active: Y && O !== E.rq.ENDED,
         disabled: O === E.rq.ENDED,
         ariaLabel: h.NW.string(h.t.KCzjTk),
         tooltipLabel: h.NW.string(h.t.KCzjTk)
-      }), !T && (0, r.jsx)(D, {
+      }), !T && (0, r.jsx)(N, {
         iconComponent: v.c,
         animationTime: y,
-        visible: N,
+        visible: D,
         active: W,
         onClick: A,
         ariaLabel: h.NW.string(h.t.bDSZOz),
         tooltipLabel: h.NW.string(h.t.bDSZOz),
         shortcut: E.Y1.CAPTION
-      }), (0, r.jsx)(D, {
+      }), (0, r.jsx)(N, {
         iconComponent: Q ? d.wvt : d.NpZ,
         animationTime: y,
-        visible: N,
+        visible: D,
         onClick: I,
         ariaLabel: h.NW.string(h.t.vKZT5u),
         tooltipLabel: h.NW.string(h.t.vKZT5u),

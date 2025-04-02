@@ -131,7 +131,7 @@ function H(e) {
         children: D.NW.string(D.t.EJ4k19)
       }), (0, r.jsx)(d.Text, {
         className: L.subtitle,
-        variant: "text-xs/medium",
+        variant: "text-sm/medium",
         children: t ? D.NW.string(D.t.MnUZLS) : D.NW.string(D.t.frNDKS)
       })]
     }), (0, r.jsx)(d.olH, {

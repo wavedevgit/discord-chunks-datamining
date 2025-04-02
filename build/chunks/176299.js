@@ -295,6 +295,7 @@ let eI = (0, u.Un)({
       return Object.values(e_.AW).includes(n) ? (0, r.jsx)(g.Z, {
         deepLinkType: eO.jE.SHOP,
         path: t.location.pathname,
+        search: t.location.search,
         children: (0, r.jsx)(S.Z, ev({
           isFullScreen: e,
           tab: n
