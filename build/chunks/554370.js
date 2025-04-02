@@ -39,8 +39,8 @@ var i = n(200651),
   R = n(371651),
   W = n(624864),
   M = n(610394),
-  z = n(388627),
-  V = n(319414),
+  V = n(388627),
+  z = n(319414),
   U = n(561064),
   G = n(987650),
   F = n(757744),
@@ -207,7 +207,7 @@ function er(e) {
     n.removeEventListener("keydown", ei), n.removeEventListener("keyup", ei), Y && (n.removeEventListener("focus", et), n.removeEventListener("blur", en))
   }), ! function() {
     let e = r.useRef(!1),
-      t = (0, z.pL)(),
+      t = (0, V.pL)(),
       n = b.Z.getVoiceChannelId(),
       i = v.Z.getChannel(n),
       o = null != i ? y.Z.getGuild(i.guild_id) : null,
@@ -274,7 +274,7 @@ function er(e) {
             [H.layoutLocked]: o,
             [H.layoutUnlocked]: !o
           })
-        }), (0, i.jsx)(V.Z, {}), !t && Y && (0, i.jsx)($, {
+        }), (0, i.jsx)(z.Z, {}), !t && Y && (0, i.jsx)($, {
           locked: o,
           focused: u
         }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(D.Z, {

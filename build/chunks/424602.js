@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  PM: () => d,
   _f: () => a,
   aZ: () => u,
   aq: () => o,
@@ -96,3 +97,28 @@ function u(e, t) {
     autoTrackExposure: !0
   }).enabled
 }
+let d = (0, r.B)({
+  kind: "user",
+  id: "2025-03_app_launcher_pep_button_label",
+  label: "Change PEP Button Label To Play",
+  defaultConfig: {
+    enabled: !1,
+    altLayout: !1
+  },
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  treatments: [{
+    id: 1,
+    label: "Change PEP Button Label To Play",
+    config: {
+      enabled: !0,
+      altLayout: !1
+    }
+  }, {
+    id: 2,
+    label: "Change PEP Button Label To Play With Alt Layout",
+    config: {
+      enabled: !0,
+      altLayout: !0
+    }
+  }]
+})

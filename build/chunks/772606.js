@@ -1,28 +1,28 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var i = n(200651),
-  l = n(192379),
-  r = n(120356),
-  o = n.n(r),
+  r = n(192379),
+  l = n(120356),
+  o = n.n(l),
   a = n(481060),
-  s = n(695676),
-  c = n(388032),
-  u = n(894044);
+  c = n(695676),
+  s = n(388032),
+  d = n(894044);
 
-function d(e) {
+function u(e) {
   let {
     className: t
   } = e, {
     goBack: n
-  } = (0, s.hH)(), r = l.useCallback(() => {
+  } = (0, c.hH)(), l = r.useCallback(() => {
     n()
   }, [n]);
   return (0, i.jsx)(a.P3F, {
-    onClick: r,
-    className: o()(u.clickable, t),
-    "aria-label": c.NW.string(c.t.ybUZqq),
+    onClick: l,
+    className: o()(d.clickable, t),
+    "aria-label": s.NW.string(s.t.ybUZqq),
     children: (0, i.jsx)(a.j9r, {
       size: "sm",
       color: a.TVs.colors.INTERACTIVE_ACTIVE

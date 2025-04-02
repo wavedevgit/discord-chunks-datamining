@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -36,7 +36,7 @@ function E(e) {
   } = e, S = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null !== (t = null == Z ? void 0 : Z.details.additionalSearchQuery) && void 0 !== t ? t : {}), R = (0, v.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
-  }), k = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
+  }), M = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), k = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
   (0, u.Ng)(() => {
     let e = null == Z ? void 0 : Z.details.scrollOffset;
     if (null != e) {
@@ -137,7 +137,7 @@ function E(e) {
         showNoResultsAlt: !1
       }
     }, [R.result, U]);
-  return null == k || null == M || null == H ? null : (0, r.jsxs)("div", {
+  return null == M || null == k || null == H ? null : (0, r.jsxs)("div", {
     className: o()(j.container, I),
     children: [(0, r.jsx)(y.Z, {
       guildId: E,

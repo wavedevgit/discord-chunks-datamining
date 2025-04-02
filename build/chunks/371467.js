@@ -38,8 +38,8 @@ var i, r = n(512722),
   R = n(388627),
   W = n(996050),
   M = n(609626),
-  z = n(421824),
-  V = n(777036),
+  V = n(421824),
+  z = n(777036),
   U = n(955978),
   G = n(333727),
   F = n(585708),
@@ -252,7 +252,7 @@ function em(e) {
       location: "OverlayV3StartRinging"
     }).enabled || x.Z.getStatus() === H.Skl.DND || h.QZ.getSetting()) return !1;
   let o = en.find(e => e.type === L.kL.TEXT && e.channelId === t && e.messageType === H.uaV.CALL);
-  null != o && ed(o.id), eh((0, V.Z)(r), {
+  null != o && ed(o.id), eh((0, z.Z)(r), {
     priority: L.Tu.HIGH,
     expirationExternallyManaged: !0,
     type: L.kL.INCOMING_CALL,
@@ -394,18 +394,18 @@ let ev = new eg(s.Z, {
     }))
   },
   CLIPS_SAVE_CLIP_START: function() {
-    eh((0, z.f)(Y.NW.string(Y.t.NBMK9v)))
+    eh((0, V.f)(Y.NW.string(Y.t.NBMK9v)))
   },
   CLIPS_SAVE_CLIP: function() {
-    eh((0, z.f)(Y.NW.format(Y.t.KLhk6u, {
+    eh((0, V.f)(Y.NW.format(Y.t.KLhk6u, {
       duration: (0, Z.A)(u.Z.getSettings().clipsLength / 1e3, !0)
     })))
   },
   CLIPS_SAVE_CLIP_ERROR: function() {
-    eh((0, z.f)(Y.NW.string(Y.t["1ZbZur"])))
+    eh((0, V.f)(Y.NW.string(Y.t["1ZbZur"])))
   },
   STREAM_START: function(e) {
-    let t = (0, z.y)();
+    let t = (0, V.y)();
     null != t && eh(t)
   }
 })

@@ -3,17 +3,17 @@ n.d(t, {
   o: () => a
 }), n(230036);
 var i = n(192379),
-  l = n(442837),
-  r = n(115130),
+  r = n(442837),
+  l = n(115130),
   o = n(701488);
 let a = () => {
   let {
     isEnabled: e,
     lastUsedObject: t
-  } = (0, l.cj)([r.Z], () => ({
-    isEnabled: r.Z.getIsEnabled(),
-    lastUsedObject: r.Z.getLastUsedObject()
-  }), []), n = (0, l.Wu)([r.Z], () => r.Z.getDeveloperShelfItems(), []);
+  } = (0, r.cj)([l.Z], () => ({
+    isEnabled: l.Z.getIsEnabled(),
+    lastUsedObject: l.Z.getLastUsedObject()
+  }), []), n = (0, r.Wu)([l.Z], () => l.Z.getDeveloperShelfItems(), []);
   return i.useMemo(() => e ? n.map(e => {
     var t, n;
     return {
@@ -50,7 +50,7 @@ let a = () => {
     }
   }).sort((e, n) => {
     let i = t[e.application.id],
-      l = t[n.application.id];
-    return null == i ? 1 : null == l ? -1 : l - i
+      r = t[n.application.id];
+    return null == i ? 1 : null == r ? -1 : r - i
   }) : [], [n, e, t])
 }

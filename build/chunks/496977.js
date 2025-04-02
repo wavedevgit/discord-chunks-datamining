@@ -1,16 +1,16 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => s
+  Z: () => c
 }), n(653041);
 var i = n(192379),
-  l = n(442837),
-  r = n(835473),
+  r = n(442837),
+  l = n(835473),
   o = n(541099),
   a = n(695676);
 
-function s() {
-  let e = (0, l.e7)([o.Z], () => o.Z.initialState(), []),
-    t = (0, r.q)(null == e ? void 0 : e.applicationId);
+function c() {
+  let e = (0, r.e7)([o.Z], () => o.Z.initialState(), []),
+    t = (0, l.q)(null == e ? void 0 : e.applicationId);
   return i.useMemo(() => {
     if (null == e) return;
     let n = [{

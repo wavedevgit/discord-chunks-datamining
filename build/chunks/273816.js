@@ -78,21 +78,21 @@ function O(e) {
   let M = r.useCallback(() => {
       S(), D(), A()
     }, [S, D, A]),
-    [z, V] = r.useState(!0),
+    [V, z] = r.useState(!0),
     [U, G] = r.useState(!0),
     [F, B] = r.useState(!0),
     [H, Y] = r.useState(!0),
     [Q, K] = r.useState(!0);
   return t && !n ? null : (0, i.jsxs)("div", {
     className: l()(g.panelGroup, !o && g.rightAligned),
-    children: [(z || !t) && (0, i.jsxs)("div", {
+    children: [(V || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: z,
-          onChange: (e, t) => V(t)
+          value: V,
+          onChange: (e, t) => z(t)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",

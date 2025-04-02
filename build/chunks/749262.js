@@ -1,7 +1,9 @@
-/** Chunk was on 88610 **/
+/** Chunk was on 35755 **/
 e.exports = {
   container: "container__95856",
   monetizationDisclosureContainerStyle: "monetizationDisclosureContainerStyle__95856",
+  experimentLayout: "experimentLayout__95856",
+  altLayout: "altLayout__95856",
   videoContainer: "videoContainer__95856",
   videoCover: "videoCover__95856",
   video: "video__95856",
@@ -16,6 +18,9 @@ e.exports = {
   primaryEntryPointWarningMessage: "primaryEntryPointWarningMessage__95856",
   entrypointContainer: "entrypointContainer__95856",
   developerShelfControlsContainer: "developerShelfControlsContainer__95856",
+  experimentTitleContainer: "experimentTitleContainer__95856",
+  entryPointCheckbox: "entryPointCheckbox__95856",
+  entryPointCheckboxLabel: "entryPointCheckboxLabel__95856",
   entryPointContainerFlexChild: "entryPointContainerFlexChild__95856",
   expandableDescriptionClickable: "expandableDescriptionClickable__95856",
   overflowHidden: "overflowHidden__95856",

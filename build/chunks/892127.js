@@ -92,8 +92,8 @@ let I = r.memo(function(e) {
     zIndex: L,
     size: R,
     anchor: W
-  } = t, M = (0, h.w_)(R, P), z = (0, h.KR)(W, P), {
-    minSize: V,
+  } = t, M = (0, h.w_)(R, P), V = (0, h.KR)(W, P), {
+    minSize: z,
     resizeX: U,
     resizeY: G,
     dragAnywhere: F
@@ -122,9 +122,9 @@ let I = r.memo(function(e) {
     }, S),
     id: D,
     size: M,
-    anchor: z,
+    anchor: V,
     container: H,
-    minSize: null != V ? V : {
+    minSize: null != z ? z : {
       width: 0,
       height: 0
     },

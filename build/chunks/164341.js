@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 e.exports = {
   voiceChannelEffectEmojiContainer: "voiceChannelEffectEmojiContainer__66db8",
   voiceChannelEffectEmoji: "voiceChannelEffectEmoji__66db8"

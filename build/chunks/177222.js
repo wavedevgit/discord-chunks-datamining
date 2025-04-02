@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => R
 });
@@ -57,7 +57,7 @@ function R(e) {
     user: t,
     currentUser: n,
     channel: R
-  } = e, k = __OVERLAY__, M = (0, g.ZP)(t.id), L = (0, c.ZP)(), D = (0, f.ZB)({
+  } = e, M = __OVERLAY__, k = (0, g.ZP)(t.id), L = (0, c.ZP)(), D = (0, f.ZB)({
     layout: "SIMPLIFIED_DM_PANEL",
     userId: t.id,
     channelId: R.id
@@ -82,7 +82,7 @@ function R(e) {
         children: (0, r.jsxs)(y.Z, {
           ref: U,
           user: t,
-          displayProfile: M,
+          displayProfile: k,
           profileType: Z.y0.PANEL,
           themeOverride: L,
           children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
@@ -104,7 +104,7 @@ function R(e) {
               className: A.header,
               children: [(0, r.jsx)(C.Z, {
                 user: t,
-                displayProfile: M,
+                displayProfile: k,
                 profileType: Z.y0.PANEL,
                 animateOnHover: !B,
                 className: A.banner
@@ -114,10 +114,10 @@ function R(e) {
               }), (0, r.jsx)(_.Z, {
                 location: "UserProfilePanel",
                 user: t,
-                displayProfile: M,
+                displayProfile: k,
                 channelId: R.id,
                 profileType: Z.y0.PANEL,
-                onOpenProfile: k ? void 0 : G
+                onOpenProfile: M ? void 0 : G
               }), (0, r.jsx)(N.Z, {
                 location: "UserProfilePanel",
                 user: t,
@@ -129,14 +129,14 @@ function R(e) {
             }), (0, r.jsx)(P.Z, {
               user: t,
               currentUser: n,
-              displayProfile: M,
+              displayProfile: k,
               channel: R,
               isHovering: null == H.interactionType && B,
-              onOpenProfile: k ? void 0 : G
+              onOpenProfile: M ? void 0 : G
             }), (0, r.jsx)(S.Z, {
               user: t
             })]
-          }), !k && (0, r.jsx)("footer", {
+          }), !M && (0, r.jsx)("footer", {
             className: A.footer,
             children: (0, r.jsx)(a.zxk, {
               fullWidth: !0,
@@ -151,8 +151,8 @@ function R(e) {
               },
               children: T.NW.string(T.t["+Xp3ho"])
             })
-          }), (null == M ? void 0 : M.profileEffectId) != null && (0, r.jsx)(h.Z, {
-            profileEffectId: null == M ? void 0 : M.profileEffectId,
+          }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(h.Z, {
+            profileEffectId: null == k ? void 0 : k.profileEffectId,
             isHovering: B
           })]
         })

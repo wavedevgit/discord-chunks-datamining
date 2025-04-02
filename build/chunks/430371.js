@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -69,8 +69,8 @@ function P(e) {
       popoutWindow: A,
       inCall: w,
       channel: R,
-      selectedParticipant: k,
-      showParticipants: M = !0,
+      selectedParticipant: M,
+      showParticipants: k = !0,
       className: L,
       paused: D,
       width: W,
@@ -84,16 +84,16 @@ function P(e) {
     [z, Y] = i.useState(null),
     [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
-    J = k.type === y.fO.ACTIVITY || k.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
-    $ = (0, u.Z)(J ? k.applicationId : void 0),
-    ee = !J && null != k.streamId,
+    J = M.type === y.fO.ACTIVITY || M.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
+    $ = (0, u.Z)(J ? M.applicationId : void 0),
+    ee = !J && null != M.streamId,
     et = U <= 2 * I + 144,
-    en = M && !et,
+    en = k && !et,
     er = (0, c.Z)(en),
     ei = B === v.AEg.MINIMUM || B === v.AEg.NORMAL,
     el = !et && (!ei || J),
     eo = (0, m.Z)(el, 100),
-    ea = (null !== (t = (0, c.Z)(k.id)) && void 0 !== t ? t : k.id) !== k.id,
+    ea = (null !== (t = (0, c.Z)(M.id)) && void 0 !== t ? t : M.id) !== M.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
   let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, J, W, U, es, $]),
@@ -139,7 +139,7 @@ function P(e) {
         clamp: !0
       })
     }, "animate-always"),
-    e_ = (0, s.Yzy)(k, {
+    e_ = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, a.config.stiff), {
         clamp: !0
@@ -158,7 +158,7 @@ function P(e) {
     eC = i.useCallback(e => {
       Y(e), K(!1)
     }, []),
-    ev = en || D ? [] : (0, _.n3)(Z, k, V),
+    ev = en || D ? [] : (0, _.n3)(Z, M, V),
     {
       visibleParticipants: ey,
       participantTileWidth: ex
@@ -220,7 +220,7 @@ function P(e) {
           },
           children: (0, r.jsx)(d.Z, {
             channelId: R.id,
-            isParticipantsOpen: M,
+            isParticipantsOpen: k,
             isVertical: !0
           })
         }) : null]
@@ -238,9 +238,9 @@ function P(e) {
           onDoubleClick: S,
           participants: ey,
           participantTileWidth: ex,
-          selectedParticipantId: k.id,
+          selectedParticipantId: M.id,
           inCall: w,
-          paused: D || X || !M,
+          paused: D || X || !k,
           popoutWindow: A
         })
       })]

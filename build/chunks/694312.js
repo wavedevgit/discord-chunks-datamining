@@ -3,46 +3,46 @@ n.d(t, {
   E: () => m
 }), n(47120);
 var i = n(192379),
-  l = n(442837),
-  r = n(424602),
+  r = n(442837),
+  l = n(424602),
   o = n(835473),
   a = n(594174),
-  s = n(695103),
-  c = n(823379),
-  u = n(358085),
-  d = n(317381),
+  c = n(695103),
+  s = n(823379),
+  d = n(358085),
+  u = n(317381),
   p = n(761122);
 
 function m(e, t) {
-  let n = (0, l.e7)([a.default], a.default.getCurrentUser),
-    m = (0, l.Wu)([d.ZP], () => d.ZP.getShelfActivities(e)),
-    h = (0, l.e7)([s.Z], () => s.Z.testModeEmbeddedApplicationId),
-    f = m.map(e => e.application_id),
-    v = null != h ? [h, ...f] : f,
-    N = (0, o.Z)(v),
-    x = "channel" in t && (0, r.aZ)(t.channel, "useActivityShelfData()"),
-    y = i.useMemo(() => N.filter(c.lm), [N]),
-    b = i.useMemo(() => null != h && y.length > 0 && y[0].id === h && null != y[0].embeddedActivityConfig ? [{
-      activity: y[0].embeddedActivityConfig,
-      application: y[0]
-    }] : [], [y, h]),
-    g = i.useMemo(() => m.map(e => {
-      let t = y.find(t => t.id === e.application_id);
+  let n = (0, r.e7)([a.default], a.default.getCurrentUser),
+    m = (0, r.Wu)([u.ZP], () => u.ZP.getShelfActivities(e)),
+    f = (0, r.e7)([c.Z], () => c.Z.testModeEmbeddedApplicationId),
+    h = m.map(e => e.application_id),
+    b = null != f ? [f, ...h] : h,
+    v = (0, o.Z)(b),
+    C = "channel" in t && (0, l.aZ)(t.channel, "useActivityShelfData()"),
+    _ = i.useMemo(() => v.filter(s.lm), [v]),
+    x = i.useMemo(() => null != f && _.length > 0 && _[0].id === f && null != _[0].embeddedActivityConfig ? [{
+      activity: _[0].embeddedActivityConfig,
+      application: _[0]
+    }] : [], [_, f]),
+    y = i.useMemo(() => m.map(e => {
+      let t = _.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(c.lm), [m, y]);
-  return i.useMemo(() => [...b, ...g].filter(e => {
+    }).filter(s.lm), [m, _]);
+  return i.useMemo(() => [...x, ...y].filter(e => {
     var t;
     let {
       activity: n
     } = e;
-    return (null !== (t = n.supported_platforms) && void 0 !== t ? t : []).includes((0, p.Z)((0, u.getOS)()))
+    return (null !== (t = n.supported_platforms) && void 0 !== t ? t : []).includes((0, p.Z)((0, d.getOS)()))
   }).filter(e => {
     let {
       activity: t
     } = e;
     return !t.requires_age_gate || (null == n ? void 0 : n.nsfwAllowed) === !0 || (null == n ? void 0 : n.nsfwAllowed) == null
-  }).filter(e => !x || e.application.id !== r.gu), [null == n ? void 0 : n.nsfwAllowed, g, x, b])
+  }).filter(e => !C || e.application.id !== l.gu), [null == n ? void 0 : n.nsfwAllowed, y, C, x])
 }

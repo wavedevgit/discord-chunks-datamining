@@ -1,6 +1,6 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -42,7 +42,7 @@ function R(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class k extends i.PureComponent {
+class M extends i.PureComponent {
   componentDidMount() {
     N.S.subscribe(S.CkL.CALL_START, this.handleVoiceClick)
   }
@@ -179,7 +179,7 @@ class k extends i.PureComponent {
   }
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     channel: n
@@ -203,7 +203,7 @@ function M(e) {
       w(!0)
     }, 250);
     return () => clearTimeout(e)
-  }, []), a || (null == N ? void 0 : N.bot)) ? null : (0, r.jsx)(k, {
+  }, []), a || (null == N ? void 0 : N.bot)) ? null : (0, r.jsx)(M, {
     channel: n,
     mode: s,
     inCall: c,

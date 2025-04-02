@@ -33,8 +33,8 @@ var i = n(200651),
   _ = n(95398),
   S = n(247206),
   E = n(406432),
-  P = n(169525),
-  N = n(566006),
+  N = n(169525),
+  P = n(566006),
   C = n(255269),
   R = n(937889),
   I = n(443877),
@@ -143,17 +143,17 @@ let ea = 72,
     let S = o.useRef(null),
       {
         handleLeftClick: E,
-        handleRightClick: P
+        handleRightClick: N
       } = (0, Q.Z)({
         facepileRef: S,
         goToThread: n,
         channel: m
       }),
-      N = (0, h.JA)(t),
+      P = (0, h.JA)(t),
       {
         role: C,
         onFocus: R
-      } = N,
+      } = P,
       I = function(e, t) {
         if (null == e) return {};
         var n, i, o = function(e, t) {
@@ -168,7 +168,7 @@ let ea = 72,
           for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
         }
         return o
-      }(N, ["role", "onFocus"]),
+      }(P, ["role", "onFocus"]),
       {
         isFocused: w,
         handleFocus: Z,
@@ -178,7 +178,7 @@ let ea = 72,
       ref: T,
       "data-item-id": t,
       onClick: E,
-      onContextMenu: P,
+      onContextMenu: N,
       className: a()(ei.container, c, {
         [ei.isOpen]: g
       }),
@@ -187,7 +187,7 @@ let ea = 72,
         focusProps: {
           ringTarget: T
         },
-        onContextMenu: P,
+        onContextMenu: N,
         "aria-label": en.NW.formatToPlainString(en.t.pgYN6e, {
           title: m.name,
           count: v
@@ -458,7 +458,7 @@ function em(e) {
     burst_count: 0,
     me: !1,
     me_burst: !1,
-    type: N.O.NORMAL,
+    type: P.O.NORMAL,
     emojiSize: "reaction",
     emojiSizeTooltip: "reaction"
   })
@@ -481,7 +481,7 @@ function ef(e) {
     isLurking: s,
     isPendingMember: l,
     useChatFontScaling: !1,
-    type: r.burst_count >= r.count ? N.O.BURST : N.O.NORMAL,
+    type: r.burst_count >= r.count ? P.O.BURST : P.O.NORMAL,
     emojiSize: "reaction",
     emojiSizeTooltip: "reaction"
   }, r), "".concat(null !== (t = r.emoji.id) && void 0 !== t ? t : 0, ":").concat(r.emoji.name))
@@ -546,32 +546,29 @@ function ev(e) {
   let t, n, {
       firstMedia: o,
       shouldObscure: r,
-      obscureReason: s
+      obscureReason: s,
+      shouldShowAgeVerification: l
     } = e,
-    l = (0, p.e7)([B.Z], () => B.Z.isFocused()),
-    c = (0, E.d$)(o.src),
-    u = M.QK.useSetting(),
-    d = (0, P.MC)(s),
-    h = (0, S.m8)() && s === P.wk.EXPLICIT_CONTENT,
+    c = (0, p.e7)([B.Z], () => B.Z.isFocused()),
+    u = (0, E.d$)(o.src),
+    d = M.QK.useSetting(),
+    h = (0, N.MC)(s),
     {
       src: m,
       width: g,
       height: b,
       alt: v
     } = o;
-  if (b > g ? n = es : t = ea, h) {
+  if (b > g ? n = es : t = ea, l) {
     var j;
-    return (0, i.jsx)(f.P3F, {
-      "aria-label": null !== (j = null != d ? d : v) && void 0 !== j ? j : en.NW.string(en.t.hqwnc3),
+    return (0, i.jsx)("div", {
+      "aria-label": null !== (j = null != h ? h : v) && void 0 !== j ? j : en.NW.string(en.t.hqwnc3),
       className: a()(ei.thumbnailContainer, ei.obscuredThumbnailPlaceholder),
       style: {
         maxWidth: t,
         maxHeight: n,
         height: b,
         width: g
-      },
-      onClick: function(e) {
-        e.stopPropagation(), e.preventDefault(), e.nativeEvent.stopImmediatePropagation(), O.Z.showAgeVerificationGetStartedModal(y.cU.FORUM_POST_MEDIA_PREVIEW)
       }
     })
   }
@@ -581,7 +578,7 @@ function ev(e) {
     maxWidth: n,
     width: g,
     height: b,
-    alt: null != v && r ? d : v,
+    alt: null != v && r ? h : v,
     className: ei.thumbnailContainer,
     imageClassName: a()({
       [ei.obscured]: r,
@@ -593,9 +590,9 @@ function ev(e) {
     maxWidth: n,
     width: g,
     height: b,
-    alt: null != v && r ? d : v,
-    autoPlay: u,
-    animated: c && !r && l,
+    alt: null != v && r ? h : v,
+    autoPlay: d,
+    animated: u && !r && c,
     srcIsAnimated: o.srcIsAnimated,
     containerClassName: ei.thumbnailContainer,
     imageClassName: a()({
@@ -609,19 +606,22 @@ function ej(e) {
   let {
     channel: t,
     firstMedia: n
-  } = e, [o, r] = (0, P.hL)({
+  } = e, [o, r] = (0, N.hL)({
     media: n,
     channel: t
-  });
+  }), a = (0, S.m8)() && r === N.wk.EXPLICIT_CONTENT;
   return (0, i.jsx)(f.Rny, {
     enabled: !0,
     children: (0, i.jsxs)("div", {
       className: ei.bodyMedia,
-      onClick: e => e.stopPropagation(),
+      onClick: function(e) {
+        e.stopPropagation(), a && (e.preventDefault(), e.nativeEvent.stopImmediatePropagation(), O.Z.showAgeVerificationGetStartedModal(y.cU.FORUM_POST_MEDIA_PREVIEW))
+      },
       children: [(0, i.jsx)(ev, {
         firstMedia: n,
         shouldObscure: o,
-        obscureReason: r
+        obscureReason: r,
+        shouldShowAgeVerification: a
       }), o && (0, i.jsx)(J.Z, {
         iconClassname: ei.obscuredTag,
         obscureReason: r

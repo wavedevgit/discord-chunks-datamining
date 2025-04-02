@@ -1,4 +1,4 @@
-/** Chunk was on 88610 **/
+/** Chunk was on 35755 **/
 e.exports = {
   drawerSizingWrapper: "drawerSizingWrapper__9c62c",
   contentWrapper: "contentWrapper__9c62c",

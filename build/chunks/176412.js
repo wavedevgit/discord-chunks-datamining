@@ -77,20 +77,21 @@ function N(e) {
     launchingComponentId: u,
     submitting: m = !1,
     fetchesApplication: E = !0,
-    onConfirmActivityLaunchChecksAlertOpen: O
-  } = e, g = (0, s.O)(), I = (0, p.Qv)({
+    onConfirmActivityLaunchChecksAlertOpen: O,
+    playSolo: g = !1
+  } = e, I = (0, s.O)(), j = (0, p.Qv)({
     context: t,
     applicationId: n.id,
     fetchesApplication: E
-  }), j = (0, w.Q)(I), S = (0, a.e7)([h.Z], () => h.Z.entrypoint()), N = o.useMemo(() => {
+  }), S = (0, w.Q)(j), N = (0, a.e7)([h.Z], () => h.Z.entrypoint()), T = o.useMemo(() => {
     var e, i, r;
-    if ("channel" !== t.type) return null !== (r = null === (e = n.bot) || void 0 === e ? void 0 : e.id) && void 0 !== r ? r : null === (i = (0, b.If)(t, n.id).descriptor) || void 0 === i ? void 0 : i.botId
-  }, [t, n.id, n.bot]), T = (0, p.w1)({
+    if ("channel" !== t.type || g) return null !== (r = null === (e = n.bot) || void 0 === e ? void 0 : e.id) && void 0 !== r ? r : null === (i = (0, b.If)(t, n.id).descriptor) || void 0 === i ? void 0 : i.botId
+  }, [t, n.id, n.bot, g]), D = (0, p.w1)({
     applicationId: n.id,
-    botUserIdForAppDM: N,
+    botUserIdForAppDM: T,
     embeddedActivitiesManager: f.Z,
     context: t,
-    locationObject: g.location,
+    locationObject: I.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
@@ -99,22 +100,22 @@ function N(e) {
         location: i,
         application_id: t,
         section_name: r,
-        action: j,
-        source: S
+        action: S,
+        source: N
       })
     },
     launchingComponentId: u,
     commandOrigin: y.bB.APPLICATION_LAUNCHER,
     sectionName: r,
-    source: S,
+    source: N,
     fetchesApplication: E,
     onConfirmActivityLaunchChecksAlertOpen: O
-  }), D = d.Ttl.BRAND, C = null != l ? l : A.NW.string(A.t.zKX8Nj);
-  return j === p.JS.JOIN ? (D = d.Ttl.GREEN, C = A.NW.string(A.t.d9PsMj)) : j !== p.JS.LEAVE || m || (D = d.Ttl.RED, C = A.NW.string(A.t["Hi1/aW"])), {
-    onActivityItemSelected: T,
-    activityAction: j,
-    buttonColor: D,
-    buttonText: C
+  }), C = d.Ttl.BRAND, L = null != l ? l : A.NW.string(A.t.zKX8Nj);
+  return S === p.JS.JOIN ? (C = d.Ttl.GREEN, L = A.NW.string(A.t.d9PsMj)) : S !== p.JS.LEAVE || m || (C = d.Ttl.RED, L = A.NW.string(A.t["Hi1/aW"])), {
+    onActivityItemSelected: D,
+    activityAction: S,
+    buttonColor: C,
+    buttonText: L
   }
 }
 

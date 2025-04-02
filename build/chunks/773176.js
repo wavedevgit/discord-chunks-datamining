@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => eC
 }), n(47120);
@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(222677),
   w = n(995774),
   R = n(931651),
-  k = n(280845),
-  M = n(2818),
+  M = n(280845),
+  k = n(2818),
   L = n(768943),
   D = n(665906),
   W = n(695346),
@@ -213,7 +213,7 @@ function em(e) {
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, _]), j = (0, k.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (Z = Z && C);
     let T = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),
@@ -244,7 +244,7 @@ function em(e) {
       ee = (0, y.a)(n),
       {
         enabled: et
-      } = M.Z.useExperiment({
+      } = k.Z.useExperiment({
         location: "message_utilities"
       }),
       en = (0, c.e7)([L.Z], () => null != L.Z.getSavedMessage(t.id, n.id)),

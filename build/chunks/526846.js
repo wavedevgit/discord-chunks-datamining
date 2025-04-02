@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   m: () => D
 }), n(789020), n(266796);
@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(981631),
   w = n(388032),
   R = n(41443);
-let k = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
-  M = "vc-activities-".concat((0, a.Z)());
+let M = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
+  k = "vc-activities-".concat((0, a.Z)());
 
 function L(e) {
   var t;
@@ -51,16 +51,16 @@ function L(e) {
       let e = (0, d.e7)([O.default], () => O.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
         (0, v.XK)({
-          surface: k,
+          surface: M,
           activeState: e
         })
       }, [e]), {
         fetchState: (0, d.e7)([y.Z], () => y.Z.getFetchState({
-          surface: k,
+          surface: M,
           activeState: e
         })),
         voiceBannerCollection: (0, d.e7)([y.Z], () => y.Z.getCollections({
-          surface: k,
+          surface: M,
           activeState: e
         }))[0]
       }
@@ -130,11 +130,11 @@ let D = i.forwardRef(function(e, t) {
   }, [x, O]), i.useEffect(() => {
     s || c()
   }, [c, s]);
-  let k = (0, h.bp)(),
+  let M = (0, h.bp)(),
     {
       analyticsLocations: D
     } = (0, g.ZP)(m.Z.ACTIVITIES_MINI_SHELF),
-    W = k === A.IlC.POPOUT,
+    W = M === A.IlC.POPOUT,
     U = (n = a.getGuildId(), l = a, (0, P.Z)({
       guildId: n,
       context: {
@@ -169,13 +169,13 @@ let D = i.forwardRef(function(e, t) {
     children: (0, r.jsx)(j.Z, {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
-        "aria-labelledby": M,
+        "aria-labelledby": k,
         className: v,
         children: [(0, r.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, r.jsx)(p.nn4, {
             children: (0, r.jsx)(p.H, {
-              id: M,
+              id: k,
               children: w.NW.string(w.t["2lnYtL"])
             })
           })

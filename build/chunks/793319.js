@@ -1,7 +1,7 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   NZ: () => eZ,
-  ZP: () => ek,
+  ZP: () => eM,
   r: () => eS
 }), n(47120);
 var r = n(200651),
@@ -36,8 +36,8 @@ var r = n(200651),
   A = n(258609),
   w = n(446226),
   R = n(569545),
-  k = n(74299),
-  M = n(803647),
+  M = n(74299),
+  k = n(803647),
   L = n(554747),
   D = n(95764),
   W = n(459502),
@@ -161,7 +161,7 @@ function eZ(e) {
       }(0, eC.Z)()
     },
     Z = () => {
-      (0, P.v)(c, P.d.STREAM, !1), (0, M.Z)(g)
+      (0, P.v)(c, P.d.STREAM, !1), (0, k.Z)(g)
     },
     A = (e, t) => {
       let n = null != e ? e : {
@@ -452,7 +452,7 @@ function eR(e) {
     entrypoint: ej.A5.CARET
   })
 }
-let ek = function(e) {
+let eM = function(e) {
   var t, n;
   let {
     channel: l,
@@ -476,7 +476,7 @@ let ek = function(e) {
     return s()(null != e, "CenterControlTray: currentUser cannot be undefined"), e
   }), {
     cameraUnavailable: R,
-    enabled: M
+    enabled: k
   } = (0, es.Z)(), L = (0, ep.Z)(l), {
     suppress: D,
     selfMute: U,
@@ -484,7 +484,7 @@ let ek = function(e) {
   } = (0, eh.Z)(l), {
     canGoLive: H
   } = (0, u.cj)([er.Z], () => ({
-    canGoLive: (0, k.Z)(er.Z)
+    canGoLive: (0, M.Z)(er.Z)
   })), G = (0, w.Z)(), z = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), Y = null != G, q = (0, u.e7)([ei.Z], () => {
     var e;
     return (null !== (e = null == G ? void 0 : G.channelId) && void 0 !== e ? e : ei.Z.getVoiceChannelId()) === l.id
@@ -610,7 +610,7 @@ let ek = function(e) {
               return (0, r.jsx)(J.C, {
                 centerButton: !0,
                 hasPermission: L,
-                enabled: M,
+                enabled: k,
                 cameraUnavailable: R,
                 onChange: eS,
                 onCameraUnavailable: e_.Z,
@@ -737,7 +737,7 @@ let ek = function(e) {
               centerButton: !0,
               hasPermission: L,
               className: eE.controlButton,
-              enabled: M,
+              enabled: k,
               cameraUnavailable: R,
               onChange: eS,
               onCameraUnavailable: e_.Z,

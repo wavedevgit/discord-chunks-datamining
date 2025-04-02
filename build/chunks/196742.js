@@ -1,56 +1,66 @@
 /** Chunk was on 31981 **/
 n.d(t, {
-  default: () => P
+  default: () => Z
 });
 var r = n(200651),
-  o = n(192379),
-  c = n(442837),
-  s = n(481060),
-  i = n(809206),
-  a = n(410030),
+  c = n(192379),
+  o = n(442837),
+  i = n(481060),
+  a = n(809206),
+  s = n(410030),
   l = n(906732),
   d = n(1585),
-  f = n(164946),
-  u = n(25990),
-  p = n(594174),
-  b = n(668826),
-  g = n(120421),
-  O = n(477839),
-  j = n(884479),
-  y = n(388032),
-  h = n(873608),
-  m = n(688401),
-  x = n(609051),
-  k = n(411384);
+  f = n(335131),
+  u = n(1870),
+  p = n(228624),
+  b = n(164946),
+  g = n(25990),
+  O = n(594174),
+  j = n(668826),
+  y = n(120421),
+  h = n(477839),
+  m = n(884479),
+  k = n(388032),
+  x = n(873608),
+  P = n(688401),
+  v = n(609051),
+  w = n(411384);
 
-function P(e) {
+function Z(e) {
   var t, n, {
-      analyticsLocations: P
+      analyticsLocations: Z
     } = e,
-    v = function(e, t) {
+    C = function(e, t) {
       if (null == e) return {};
-      var n, r, o = function(e, t) {
+      var n, r, c = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
-          c = Object.keys(e);
-        for (r = 0; r < c.length; r++) n = c[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        var n, r, c = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (c[n] = e[n]);
+        return c
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var c = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < c.length; r++) n = c[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n])
       }
-      return o
+      return c
     }(e, ["analyticsLocations"]);
-  let w = (0, c.e7)([p.default], () => p.default.getCurrentUser()),
-    N = (0, a.ZP)(),
+  let N = (0, o.e7)([O.default], () => O.default.getCurrentUser()),
+    z = (0, s.ZP)(),
     {
-      analyticsLocations: Z
-    } = (0, l.ZP)(P),
-    C = (0, c.e7)([g.Z], () => g.Z.isRedeemingPrize);
-  return (0, o.useEffect)(() => {
-    null != w && (0, b.YM)(w)
-  }, []), (0, r.jsxs)(s.Y0X, (t = function(e) {
+      analyticsLocations: D
+    } = (0, l.ZP)(Z),
+    E = (0, o.e7)([y.Z], () => y.Z.isRedeemingPrize),
+    S = (0, o.e7)([u.Z], () => u.Z.isFetching),
+    M = (0, p.hv)("ClickerGameRedeemPrizeModal");
+  return (0, c.useEffect)(() => {
+    null != N && (async () => {
+      await (0, j.YM)(N), (0, f.qg)({
+        variantsReturnStyle: M,
+        location: "ClickerGameRedeemPrizeModal"
+      })
+    })()
+  }, []), (0, r.jsxs)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -67,45 +77,45 @@ function P(e) {
       })
     }
     return e
-  }({}, v), n = n = {
+  }({}, C), n = n = {
     children: [(0, r.jsx)("img", {
-      className: h.decorationBackground,
-      src: "light" === N ? x : m,
+      className: x.decorationBackground,
+      src: "light" === z ? v : P,
       alt: ""
-    }), (0, r.jsxs)(s.hzk, {
-      className: h.content,
+    }), (0, r.jsxs)(i.hzk, {
+      className: x.content,
       children: [(0, r.jsx)("img", {
-        className: h.decoration,
-        src: k.Z,
+        className: x.decoration,
+        src: w.Z,
         alt: ""
-      }), (0, r.jsx)(s.X6q, {
-        className: h.header,
+      }), (0, r.jsx)(i.X6q, {
+        className: x.header,
         variant: "heading-md/bold",
-        children: y.NW.string(j.Z.B0jZ3t)
-      }), (0, r.jsx)(s.Text, {
+        children: k.NW.string(m.Z.B0jZ3t)
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: y.NW.string(j.Z.aexiND)
+        children: k.NW.string(m.Z.aexiND)
       })]
-    }), (0, r.jsxs)(s.mzw, {
-      children: [(0, r.jsx)(s.zxk, {
+    }), (0, r.jsxs)(i.mzw, {
+      children: [(0, r.jsx)(i.zxk, {
         onClick: () => {
-          v.onClose(), (0, d.ps)({
-            initialSelectedDecorationId: O.MH,
-            analyticsLocations: Z,
+          C.onClose(), (0, d.ps)({
+            initialSelectedDecorationId: h.MH,
+            analyticsLocations: D,
             onClose: () => {
-              let e = u.Z.getAllPending(),
-                t = (0, f.ED)(e);
-              (0, i.Mn)(t), (0, i.si)()
+              let e = g.Z.getAllPending(),
+                t = (0, b.ED)(e);
+              (0, a.Mn)(t), (0, a.si)()
             }
           })
         },
-        submitting: C,
-        children: y.NW.string(y.t["Tna/TU"])
-      }), (0, r.jsx)(s.zxk, {
-        onClick: v.onClose,
-        look: s.zxk.Looks.LINK,
-        color: s.zxk.Colors.PRIMARY,
-        children: y.NW.string(y.t["ETE/oK"])
+        submitting: E || S,
+        children: k.NW.string(k.t["Tna/TU"])
+      }), (0, r.jsx)(i.zxk, {
+        onClick: C.onClose,
+        look: i.zxk.Looks.LINK,
+        color: i.zxk.Colors.PRIMARY,
+        children: k.NW.string(k.t["ETE/oK"])
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

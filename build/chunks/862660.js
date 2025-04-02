@@ -1,4 +1,4 @@
-/** Chunk was on 88610 **/
+/** Chunk was on 35755 **/
 e.exports = {
   sortDropdown: "sortDropdown__27f60",
   sortDropdownInner: "sortDropdownInner__27f60",

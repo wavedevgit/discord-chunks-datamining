@@ -51,8 +51,8 @@ function C(e) {
     height: "number" == typeof n.height ? n.height : 144
   }, W = (0, o.e7)([v.Z], () => v.Z.getVoiceChannelId()), {
     width: M,
-    height: z,
-    ref: V
+    height: V,
+    ref: z
   } = (0, c.Z)(), U = (0, o.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
@@ -109,7 +109,7 @@ function C(e) {
       layout: s,
       tileWidth: c
     }
-  }(!1, X.length, null != M ? M : L - A, null != z ? z : R - A, $), en = {
+  }(!1, X.length, null != M ? M : L - A, null != V ? V : R - A, $), en = {
     id: t,
     width: L,
     height: R,
@@ -229,7 +229,7 @@ function C(e) {
     style: {
       opacity: Z
     },
-    ref: V,
+    ref: z,
     children: (0, i.jsx)(O.Z, {
       widgetId: t,
       tileWidth: ee,

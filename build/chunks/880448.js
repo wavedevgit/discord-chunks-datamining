@@ -1,32 +1,32 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => r
+  Z: () => l
 });
 var i = n(200651);
 n(192379);
-var l = n(325767);
+var r = n(325767);
 
-function r(e) {
+function l(e) {
   var t, n, {
-      width: r = 24,
+      width: l = 24,
       height: o = 24,
       color: a = "currentColor",
-      foreground: s
+      foreground: c
     } = e,
-    c = function(e, t) {
+    s = function(e, t) {
       if (null == e) return {};
-      var n, i, l = function(e, t) {
+      var n, i, r = function(e, t) {
         if (null == e) return {};
-        var n, i, l = {},
-          r = Object.keys(e);
-        for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (l[n] = e[n]);
-        return l
+        var n, i, r = {},
+          l = Object.keys(e);
+        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
-      return l
+      return r
     }(e, ["width", "height", "color", "foreground"]);
   return (0, i.jsx)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -45,15 +45,15 @@ function r(e) {
       })
     }
     return e
-  }({}, (0, l.Z)(c)), n = n = {
-    width: r,
+  }({}, (0, r.Z)(s)), n = n = {
+    width: l,
     height: o,
     viewBox: "0 0 24 24",
     fill: "none",
     children: (0, i.jsx)("path", {
       d: "M7.39344 5.33333L5.33333 7.39344V16.6065L7.39348 18.6667H16.6065L18.6667 16.6065V7.39344L16.6065 5.33333H7.39344ZM11.0485 15.6879H9.20459C9.20459 14.1627 7.96392 12.922 6.43868 12.922V11.078C7.96392 11.078 9.20459 9.83735 9.20459 8.31211H11.0485C11.0485 9.82534 10.3057 11.159 9.17607 12C10.3057 12.8411 11.0485 14.1747 11.0485 15.6879ZM17.5556 12.922C16.0304 12.922 14.7896 14.1627 14.7896 15.6879H12.9457C12.9457 14.1747 13.6885 12.8411 14.8181 12C13.6885 11.159 12.9457 9.82534 12.9457 8.31211H14.7896C14.7896 9.83735 16.0304 11.078 17.5556 11.078V12.922Z",
       fill: a,
-      className: s
+      className: c
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

@@ -1,6 +1,6 @@
 /**
   Module ID: 30526
-  Original File Name: ee344468d235874e
+  Original File Name: 5f4445cb673d44cc
 **/
 @value minColumnWidth: 460px;
 
@@ -3226,12 +3226,15 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-items: center;
     flex-direction: row;
     gap: var(--spacing-4);
-    opacity: 1;
-    margin-top: var(--spacing-8)
+    opacity: 1
 }
 
 .hiddenVoiceStates_adebba.locked_adebba {
     opacity: .4
+}
+
+.hiddenVoiceStates_adebba.flipped_adebba {
+    flex-direction: row-reverse
 }
 
 .hiddenVoiceStatesAvatar_adebba {
@@ -3645,4 +3648,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=ee344468d235874e.css.map*/
+/*# sourceMappingURL=5f4445cb673d44cc.css.map*/

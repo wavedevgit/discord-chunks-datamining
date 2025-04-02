@@ -1,174 +1,174 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Q2: () => I,
-  pe: () => O
+  Q2: () => O,
+  pe: () => A
 }), n(47120), n(653041), n(301563), n(86693), n(536091);
 var i = n(192379),
-  l = n(392711),
-  r = n.n(l),
+  r = n(392711),
+  l = n.n(r),
   o = n(373793),
   a = n(288385),
-  s = n(442837),
-  c = n(911969),
-  u = n(127255),
-  d = n(654455),
+  c = n(442837),
+  s = n(911969),
+  d = n(127255),
+  u = n(654455),
   p = n(213459),
   m = n(807169),
-  h = n(104793),
-  f = n(822245),
-  v = n(471518),
-  N = n(177653),
-  x = n(631827),
-  y = n(424602),
-  b = n(827498),
-  g = n(783097),
-  j = n(689079),
-  C = n(665692);
+  f = n(104793),
+  h = n(822245),
+  b = n(471518),
+  v = n(177653),
+  C = n(631827),
+  _ = n(424602),
+  x = n(827498),
+  y = n(783097),
+  N = n(689079),
+  g = n(665692);
 
-function E(e, t) {
-  let n = f.Z.getScoreWithoutLoadingLatest(e.id);
-  return f.Z.getScoreWithoutLoadingLatest(t.id) - n
+function j(e, t) {
+  let n = h.Z.getScoreWithoutLoadingLatest(e.id);
+  return h.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
 function P(e, t) {
-  let n = (0, g.$d)(e),
-    i = (0, g.$d)(t);
+  let n = (0, y.$d)(e),
+    i = (0, y.$d)(t);
   return (0, p.un)(n, i)
 }
 
-function A(e, t) {
+function E(e, t) {
   return (0, p.un)(e.displayName, t.displayName)
 }
 
-function O(e) {
+function A(e) {
   let {
     context: t,
     query: n,
-    commandLimit: l,
+    commandLimit: r,
     applicationLimit: o,
     searchesCommands: a = !0,
-    searchesBots: s = !0,
-    searchesActivities: f = !0
+    searchesBots: c = !0,
+    searchesActivities: h = !0
   } = e;
-  n.startsWith("".concat(C.GI)) && (n = n.substring(1));
+  n.startsWith("".concat(g.GI)) && (n = n.substring(1));
   let {
-    commands: v,
-    commandSectionMap: N,
-    loading: b
+    commands: b,
+    commandSectionMap: v,
+    loading: x
   } = function(e) {
     var t, n;
     let {
-      context: l,
-      includeBuiltIn: r = !0,
+      context: r,
+      includeBuiltIn: l = !0,
       allowFetch: o = !0
-    } = e, a = (0, p.em)(l, !0, o), s = (0, p.PL)(!0, o);
+    } = e, a = (0, p.em)(r, !0, o), c = (0, p.PL)(!0, o);
     return i.useMemo(() => {
       var e, t, n, i, o;
-      let c = null !== (n = null === (e = a.result) || void 0 === e ? void 0 : e.sections) && void 0 !== n ? n : {},
-        u = null !== (i = null === (t = s.result) || void 0 === t ? void 0 : t.sections) && void 0 !== i ? i : {},
-        d = [...Object.keys(c), ...Object.keys(u).filter(e => !(e in c))];
-      r && d.push(j.bi.BUILT_IN);
-      let m = "channel" in l && (0, y.aZ)(l.channel, "AppLauncherSearchUtils.useApplicationCommandsInContext()"),
-        h = [],
-        f = {};
-      for (let e of d) {
-        let t = (0, p.If)(l, e),
+      let s = null !== (n = null === (e = a.result) || void 0 === e ? void 0 : e.sections) && void 0 !== n ? n : {},
+        d = null !== (i = null === (t = c.result) || void 0 === t ? void 0 : t.sections) && void 0 !== i ? i : {},
+        u = [...Object.keys(s), ...Object.keys(d).filter(e => !(e in s))];
+      l && u.push(N.bi.BUILT_IN);
+      let m = "channel" in r && (0, _.aZ)(r.channel, "AppLauncherSearchUtils.useApplicationCommandsInContext()"),
+        f = [],
+        h = {};
+      for (let e of u) {
+        let t = (0, p.If)(r, e),
           n = null !== (o = t.sectionCommands) && void 0 !== o ? o : [];
-        h.push(...n), n.forEach(e => {
-          null != t.descriptor && (f[e.id] = t.descriptor)
+        f.push(...n), n.forEach(e => {
+          null != t.descriptor && (h[e.id] = t.descriptor)
         })
       }
       return {
-        commands: h.filter(e => !m || e.applicationId !== y.gu),
-        commandSectionMap: f,
-        loading: !0 === a.fetchState.fetching || !0 === s.fetchState.fetching
+        commands: f.filter(e => !m || e.applicationId !== _.gu),
+        commandSectionMap: h,
+        loading: !0 === a.fetchState.fetching || !0 === c.fetchState.fetching
       }
-    }, [l, r, a.fetchState.fetching, null === (t = a.result) || void 0 === t ? void 0 : t.sections, s.fetchState.fetching, null === (n = s.result) || void 0 === n ? void 0 : n.sections])
+    }, [r, l, a.fetchState.fetching, null === (t = a.result) || void 0 === t ? void 0 : t.sections, c.fetchState.fetching, null === (n = c.result) || void 0 === n ? void 0 : n.sections])
   }({
     context: t,
     includeBuiltIn: !0
   }), {
-    apps: O
+    apps: A
   } = function(e) {
     let {
       context: t,
       onlyWithCommands: n,
-      includeBuiltIn: l,
-      allowFetch: r = !0,
+      includeBuiltIn: r,
+      allowFetch: l = !0,
       includeEmbeddedApps: o,
       includeNonEmbeddedApps: a
-    } = e, s = "channel" === t.type ? t.channel : void 0, u = (0, m.Hs)(s, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, p.em)(t, u, r), h = (0, p.PL)(u, r), f = i.useCallback(e => {
+    } = e, c = "channel" === t.type ? t.channel : void 0, d = (0, m.Hs)(c, [s.yU.CHAT]).hasBaseAccessPermissions, u = (0, p.em)(t, d, l), f = (0, p.PL)(d, l), h = i.useCallback(e => {
       let t = e.descriptor.application;
-      return null != t && (!!(o && (0, g.ye)(t)) || null != t && a && !(0, g.ye)(t) && (!n || Object.keys(e.commands).length > 0))
-    }, [o, a, n]), v = [], N = new Set;
-    if (null != d.result)
-      for (let e of Object.values(d.result.sections)) {
+      return null != t && (!!(o && (0, y.ye)(t)) || null != t && a && !(0, y.ye)(t) && (!n || Object.keys(e.commands).length > 0))
+    }, [o, a, n]), b = [], v = new Set;
+    if (null != u.result)
+      for (let e of Object.values(u.result.sections)) {
         let t = e.descriptor.application;
-        null != t && f(e) && (v.push(t), N.add(t.id))
+        null != t && h(e) && (b.push(t), v.add(t.id))
       }
-    if (null != h.result)
-      for (let e of Object.values(h.result.sections)) {
+    if (null != f.result)
+      for (let e of Object.values(f.result.sections)) {
         let t = e.descriptor.application;
-        null != t && !N.has(t.id) && f(e) && v.push(t)
+        null != t && !v.has(t.id) && h(e) && b.push(t)
       }
-    a && l && v.push(g.Wx);
-    let x = "channel" in t && (0, y.aZ)(t.channel, "AppLauncherSearchUtils.useApplicationsInContext()");
+    a && r && b.push(y.Wx);
+    let C = "channel" in t && (0, _.aZ)(t.channel, "AppLauncherSearchUtils.useApplicationsInContext()");
     return {
-      apps: v.filter(e => !x || e.id !== y.gu),
-      loading: (null == d ? void 0 : d.fetchState.fetching) === !0 || (null == h ? void 0 : h.fetchState.fetching) === !0
+      apps: b.filter(e => !C || e.id !== _.gu),
+      loading: (null == u ? void 0 : u.fetchState.fetching) === !0 || (null == f ? void 0 : f.fetchState.fetching) === !0
     }
   }({
     context: t,
     onlyWithCommands: !0,
     includeBuiltIn: !0,
-    includeEmbeddedApps: f,
-    includeNonEmbeddedApps: s
-  }), I = (0, u.Z)({
+    includeEmbeddedApps: h,
+    includeNonEmbeddedApps: c
+  }), O = (0, d.Z)({
     guildId: "channel" === t.type ? t.channel.guild_id : null,
     context: t
-  }), _ = i.useMemo(() => {
-    var e, i, r, o, s, u;
+  }), I = i.useMemo(() => {
+    var e, i, l, o, c, d;
     if (!a) return [];
-    return (0, x.N)(v, {
-      limit: l,
+    return (0, C.N)(b, {
+      limit: r,
       filterPredicates: [function(e) {
-        let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT]),
+        let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [s.yU.CHAT]),
           n = {};
         return i => {
           let {
-            context: l,
-            userId: r,
+            context: r,
+            userId: l,
             roleIds: o,
             isImpersonating: a
           } = t;
           if (!(i.applicationId in n)) {
             let {
               descriptor: t,
-              isGuildInstalled: s,
-              isUserInstalled: c
-            } = (0, p.If)(e, i.applicationId), u = (null == l ? void 0 : l.guild_id) != null ? h.ML(null == t ? void 0 : t.permissions, l.guild_id, r, o, a) : null, d = (null == l ? void 0 : l.guild_id) != null ? h.ZJ(null == t ? void 0 : t.permissions, l, l.guild_id) : null;
+              isGuildInstalled: c,
+              isUserInstalled: s
+            } = (0, p.If)(e, i.applicationId), d = (null == r ? void 0 : r.guild_id) != null ? f.ML(null == t ? void 0 : t.permissions, r.guild_id, l, o, a) : null, u = (null == r ? void 0 : r.guild_id) != null ? f.ZJ(null == t ? void 0 : t.permissions, r, r.guild_id) : null;
             n[i.applicationId] = {
               descriptor: t,
-              applicationAllowedForUser: u,
-              applicationAllowedForChannel: d,
-              isGuildInstalled: s,
-              isUserInstalled: c
+              applicationAllowedForUser: d,
+              applicationAllowedForChannel: u,
+              isGuildInstalled: c,
+              isUserInstalled: s
             }
           }
           let {
-            descriptor: s,
-            applicationAllowedForChannel: c,
-            applicationAllowedForUser: u,
-            isGuildInstalled: d,
+            descriptor: c,
+            applicationAllowedForChannel: s,
+            applicationAllowedForUser: d,
+            isGuildInstalled: u,
             isUserInstalled: m
           } = n[i.applicationId];
-          return h.Ft(i, t, {
-            applicationAllowedForUser: u,
-            applicationAllowedForChannel: c,
-            commandBotId: null == s ? void 0 : s.botId,
-            isGuildInstalled: d,
+          return f.Ft(i, t, {
+            applicationAllowedForUser: d,
+            applicationAllowedForChannel: s,
+            commandBotId: null == c ? void 0 : c.botId,
+            isGuildInstalled: u,
             isUserInstalled: m
-          }) === h.mF.ALLOWED
+          }) === f.mF.ALLOWED
         }
       }(t)],
       bucketPredicates: [(i = e = n, e => {
@@ -181,13 +181,13 @@ function O(e) {
           i = t.slice(1).join(" ");
         return e => {
           let t = e.untranslatedName,
-            l = e.displayName;
-          return !!(t.startsWith(n) && t.split(" ").slice(1).join(" ").startsWith(i) || l.startsWith(n) && l.split(" ").slice(1).join(" ").startsWith(i))
+            r = e.displayName;
+          return !!(t.startsWith(n) && t.split(" ").slice(1).join(" ").startsWith(i) || r.startsWith(n) && r.split(" ").slice(1).join(" ").startsWith(i))
         }
-      }(e), (r = e, e => {
+      }(e), (l = e, e => {
         let t = e.untranslatedName,
           n = e.displayName;
-        return t.includes(r) || n.includes(r)
+        return t.includes(l) || n.includes(l)
       }), (o = e, e => {
         var t;
         for (let {
@@ -197,48 +197,48 @@ function O(e) {
           of null !== (t = e.options) && void 0 !== t ? t : [])
           if (n.startsWith(o) || "".concat(e.untranslatedName, " ").concat(n).startsWith(o) || null != e.displayName && "".concat(e.displayName, " ").concat(n).startsWith(o) || null != i && (i.startsWith(o) || "".concat(e.untranslatedName, " ").concat(i).startsWith(o) || null != e.displayName && "".concat(e.displayName, " ").concat(i).startsWith(o))) return !0;
         return !1
-      }), (s = e, e => {
+      }), (c = e, e => {
         var t;
         for (let {
             name: n,
             serverLocalizedName: i
           }
           of null !== (t = e.options) && void 0 !== t ? t : [])
-          if (n.includes(s) || (null == i ? void 0 : i.includes(s))) return !0;
+          if (n.includes(c) || (null == i ? void 0 : i.includes(c))) return !0;
         return !1
       })],
-      sortComparers: [(u = {
+      sortComparers: [(d = {
         channel: "channel" === t.type ? t.channel : void 0
       }, (e, t) => {
-        let n = d.ZP.getScoreWithoutLoadingLatest(u, e);
-        return d.ZP.getScoreWithoutLoadingLatest(u, t) - n
-      }), A]
+        let n = u.ZP.getScoreWithoutLoadingLatest(d, e);
+        return u.ZP.getScoreWithoutLoadingLatest(d, t) - n
+      }), E]
     })
-  }, [a, v, l, t, n]), S = i.useMemo(() => {
-    if (0 === _.length) return [];
-    let e = new Map(O.map(e => [e.id, e]));
-    return r().compact(_.map(t => {
+  }, [a, b, r, t, n]), S = i.useMemo(() => {
+    if (0 === I.length) return [];
+    let e = new Map(A.map(e => [e.id, e]));
+    return l().compact(I.map(t => {
       var n;
       let i = e.get(t.applicationId);
       if (null == i) return null;
-      let l = null !== (n = N[t.id]) && void 0 !== n ? n : null;
+      let r = null !== (n = v[t.id]) && void 0 !== n ? n : null;
       return {
         command: t,
         application: i,
-        section: l
+        section: r
       }
     }))
-  }, [O, _, N]), T = i.useMemo(() => {
-    var e, i, l, r, a;
-    let u = [];
-    if (f) {
-      let e = new Set(O.map(e => {
+  }, [A, I, v]), T = i.useMemo(() => {
+    var e, i, r, l, a;
+    let d = [];
+    if (h) {
+      let e = new Set(A.map(e => {
         let {
           id: t
         } = e;
         return t
       }));
-      u.push(...O), u.push(...I.filter(t => {
+      d.push(...A), d.push(...O.filter(t => {
         let {
           application: {
             id: n
@@ -251,122 +251,122 @@ function O(e) {
         } = e;
         return t
       }))
-    } else s && (u = O);
-    return (0, x.N)(u, {
+    } else c && (d = A);
+    return (0, C.N)(d, {
       limit: o,
       filterPredicates: [function(e) {
-        let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
+        let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [s.yU.CHAT, s.yU.PRIMARY_ENTRY_POINT]);
         return n => {
           let {
             context: i,
-            userId: l,
-            roleIds: r,
+            userId: r,
+            roleIds: l,
             isImpersonating: o
           } = t, {
             descriptor: a,
-            sectionCommands: s,
-            isGuildInstalled: c,
-            isUserInstalled: u
-          } = (0, p.If)(e, n.id), d = (null == i ? void 0 : i.guild_id) != null ? h.ML(null == a ? void 0 : a.permissions, i.guild_id, l, r, o) : null, m = (null == i ? void 0 : i.guild_id) != null ? h.ZJ(null == a ? void 0 : a.permissions, i, i.guild_id) : null;
-          return null == s || !(s.length > 0) || s.some(e => h.Ft(e, t, {
-            applicationAllowedForUser: d,
+            sectionCommands: c,
+            isGuildInstalled: s,
+            isUserInstalled: d
+          } = (0, p.If)(e, n.id), u = (null == i ? void 0 : i.guild_id) != null ? f.ML(null == a ? void 0 : a.permissions, i.guild_id, r, l, o) : null, m = (null == i ? void 0 : i.guild_id) != null ? f.ZJ(null == a ? void 0 : a.permissions, i, i.guild_id) : null;
+          return null == c || !(c.length > 0) || c.some(e => f.Ft(e, t, {
+            applicationAllowedForUser: u,
             applicationAllowedForChannel: m,
             commandBotId: null == a ? void 0 : a.botId,
-            isGuildInstalled: c,
-            isUserInstalled: u
-          }) === h.mF.ALLOWED)
+            isGuildInstalled: s,
+            isUserInstalled: d
+          }) === f.mF.ALLOWED)
         }
       }(t)],
-      bucketPredicates: [(i = e = n, e => (0, g.$d)(e).toLocaleLowerCase().startsWith(i.toLocaleLowerCase())), (l = e, e => (0, g.$d)(e).toLocaleLowerCase().includes(l.toLocaleLowerCase())), (r = e, e => {
+      bucketPredicates: [(i = e = n, e => (0, y.$d)(e).toLocaleLowerCase().startsWith(i.toLocaleLowerCase())), (r = e, e => (0, y.$d)(e).toLocaleLowerCase().includes(r.toLocaleLowerCase())), (l = e, e => {
         var t, n;
-        let i = null === (t = (0, g.jD)(e)) || void 0 === t ? void 0 : t.toLocaleLowerCase();
-        return null !== (n = null == i ? void 0 : i.startsWith(r.toLocaleLowerCase())) && void 0 !== n && n
+        let i = null === (t = (0, y.jD)(e)) || void 0 === t ? void 0 : t.toLocaleLowerCase();
+        return null !== (n = null == i ? void 0 : i.startsWith(l.toLocaleLowerCase())) && void 0 !== n && n
       }), (a = e, e => {
         var t, n;
-        let i = null === (t = (0, g.jD)(e)) || void 0 === t ? void 0 : t.toLocaleLowerCase();
+        let i = null === (t = (0, y.jD)(e)) || void 0 === t ? void 0 : t.toLocaleLowerCase();
         return null !== (n = null == i ? void 0 : i.includes(a.toLocaleLowerCase())) && void 0 !== n && n
       })],
-      sortComparers: [E, P]
+      sortComparers: [j, P]
     })
-  }, [s, f, o, t, n, O, I]), L = S.length > 0, R = T.length > 0;
+  }, [c, h, o, t, n, A, O]), L = S.length > 0, R = T.length > 0;
   return {
     commandResults: S,
     hasCommandResults: L,
     applicationResults: T,
     hasApplicationResults: R,
     isEmptyState: !L && !R,
-    loading: b && a
+    loading: x && a
   }
 }
 
-function I(e) {
+function O(e) {
   let {
     context: t,
     query: n,
-    fetches: l = !0,
-    pageLimit: r = 1 / 0,
-    entrypoint: c
+    fetches: r = !0,
+    pageLimit: l = 1 / 0,
+    entrypoint: s
   } = e;
-  n.startsWith("".concat(C.GI)) && (n = n.substring(1));
-  let u = c === b._b.VOICE,
-    d = "channel" === t.type ? t.channel.guild_id : void 0,
+  n.startsWith("".concat(g.GI)) && (n = n.substring(1));
+  let d = s === x._b.VOICE,
+    u = "channel" === t.type ? t.channel.guild_id : void 0,
     [p, m] = i.useState(1),
-    h = i.useRef(p);
-  h.current = p;
+    f = i.useRef(p);
+  f.current = p;
   let {
-    fetchState: f,
-    totalPages: x
-  } = (0, s.cj)([N.Z], () => {
+    fetchState: h,
+    totalPages: C
+  } = (0, c.cj)([v.Z], () => {
     var e, t;
     return {
-      fetchState: N.Z.getFetchState({
+      fetchState: v.Z.getFetchState({
         query: n,
-        guildId: d,
+        guildId: u,
         page: p,
         integrationType: o.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: !0,
-        excludeNonEmbeddedApps: u,
+        excludeNonEmbeddedApps: d,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
         source: a.F.APP_LAUNCHER
       }),
-      totalPages: null !== (t = null === (e = N.Z.getSearchResults({
+      totalPages: null !== (t = null === (e = v.Z.getSearchResults({
         query: n,
-        guildId: d,
+        guildId: u,
         page: p,
         integrationType: o.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: !0,
-        excludeNonEmbeddedApps: u,
+        excludeNonEmbeddedApps: d,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
         source: a.F.APP_LAUNCHER
       })) || void 0 === e ? void 0 : e.totalPages) && void 0 !== t ? t : 0
     }
-  }, [n, d, p, u]), y = i.useMemo(() => Array.from({
-    length: f === N.M.FETCHED || f === N.M.ERROR ? p : p - 1
+  }, [n, u, p, d]), _ = i.useMemo(() => Array.from({
+    length: h === v.M.FETCHED || h === v.M.ERROR ? p : p - 1
   }, (e, t) => {
-    var i, l;
-    return null !== (l = null === (i = N.Z.getSearchResults({
+    var i, r;
+    return null !== (r = null === (i = v.Z.getSearchResults({
       query: n,
-      guildId: d,
+      guildId: u,
       page: t + 1,
       integrationType: o.Y.USER_INSTALL,
       minUserInstallCommandCount: 1,
       excludeAppsWithCustomInstallUrl: !0,
-      excludeNonEmbeddedApps: u,
+      excludeNonEmbeddedApps: d,
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
       source: a.F.APP_LAUNCHER
-    })) || void 0 === i ? void 0 : i.results) && void 0 !== l ? l : []
-  }), [f, d, n, p, u]), g = i.useCallback(() => {
-    let e = y.length;
-    f === N.M.FETCHED && e === h.current && e > 0 && e < x && e < r && y[e - 1].length > 0 && (h.current++, m(e => e + 1))
-  }, [f, r, y, x]), j = i.useCallback(e => {
+    })) || void 0 === i ? void 0 : i.results) && void 0 !== r ? r : []
+  }), [h, u, n, p, d]), y = i.useCallback(() => {
+    let e = _.length;
+    h === v.M.FETCHED && e === f.current && e > 0 && e < C && e < l && _[e - 1].length > 0 && (f.current++, m(e => e + 1))
+  }, [h, l, _, C]), N = i.useCallback(e => {
     let {
       query: t,
       page: n,
       guildId: i
     } = e;
-    v.yC({
+    b.yC({
       query: t,
       guildId: i,
       options: {
@@ -374,23 +374,23 @@ function I(e) {
         integrationType: o.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: !0,
-        excludeNonEmbeddedApps: u,
+        excludeNonEmbeddedApps: d,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
         source: a.F.APP_LAUNCHER
       }
     })
-  }, [u]);
+  }, [d]);
   return i.useEffect(() => {
-    l && j({
+    r && N({
       query: n,
       page: p,
-      guildId: d
+      guildId: u
     })
-  }, [n, d, j, p, l]), i.useEffect(() => {
+  }, [n, u, N, p, r]), i.useEffect(() => {
     m(1)
-  }, [d, n]), {
-    fetchState: f,
-    applicationResults: y.flat(),
-    fetchNextPage: g
+  }, [u, n]), {
+    fetchState: h,
+    applicationResults: _.flat(),
+    fetchNextPage: y
   }
 }

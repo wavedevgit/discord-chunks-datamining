@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => L
 }), n(47120), n(653041);
@@ -65,7 +65,7 @@ function A(e, t) {
 let w = [],
   R = N.ZP.getEnableHardwareAcceleration();
 
-function k(e) {
+function M(e) {
   let {
     user: t,
     channel: i,
@@ -125,7 +125,7 @@ function k(e) {
   })
 }
 
-function M(e, t) {
+function k(e, t) {
   if (e.listItems.length !== t.listItems.length) return !1;
   for (let n = 0; n < e.listItems.length; n++) {
     let r = e.listItems[n],
@@ -167,7 +167,7 @@ function L(e) {
     return {
       listItems: o
     }
-  }, [t], M);
+  }, [t], k);
   i.useEffect(() => {
     x.default.track(P.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
@@ -190,7 +190,7 @@ function L(e) {
             children: ["".concat(S.NW.string(S.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
               type: p.Z.Types.STAFF_ONLY_DM
             })]
-          }), c.map(e => (0, r.jsx)(k, {
+          }), c.map(e => (0, r.jsx)(M, {
             user: e.user,
             status: e.status,
             activities: e.activities,

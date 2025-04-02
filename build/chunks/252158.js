@@ -83,7 +83,7 @@ let M = {
         voiceChannelId: t,
         voiceState: n
       } = e, r = f.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = h.Z.getMediaSessionId();
-      if (null != r && null != o && !1 === p.Z.getInputDetected() && !i) return [R({
+      if (null != r && null != o && !1 === p.Z.getInputDetected() && !i && !p.Z.isSelfMute()) return [R({
         type: y.u.NO_AUDIO_INPUT_DETECTED
       }, (0, I.Y9)())]
     },

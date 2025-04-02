@@ -1,4 +1,4 @@
-/** Chunk was on 88610 **/
+/** Chunk was on 35755 **/
 e.exports = {
   header: "header__32c75",
   viewMore: "viewMore__32c75",

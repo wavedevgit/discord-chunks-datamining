@@ -71,13 +71,12 @@ function p(e) {
     isMuted: e
   })
 }
-
-function h(e) {
+async function h(e) {
   i.Z.dispatch({
     type: "CLICKER_GAME_REDEEM_PRIZE_START"
   });
   try {
-    r.tn.post({
+    await r.tn.post({
       url: a.ANM.HOLIDAY_REDEEM_PRIZE,
       body: {
         prize_hash: e.id.split("").reduce((e, t) => e + Number.parseInt(t), 0)

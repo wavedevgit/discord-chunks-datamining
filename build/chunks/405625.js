@@ -1,20 +1,20 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(653041), n(47120), n(230036);
 var i = n(192379),
-  l = n(911969),
-  r = n(822245),
+  r = n(911969),
+  l = n(822245),
   o = n(675478),
   a = n(358085),
-  s = n(194188),
-  c = n(761122);
+  c = n(194188),
+  s = n(761122);
 
-function u(e) {
+function d(e) {
   o.DZ.loadIfNecessary();
   let {
     enabled: t
-  } = s.x.getCurrentConfig({
+  } = c.x.getCurrentConfig({
     location: "useActivityShelfItemsSorting"
   }, {
     autoTrackExposure: !1
@@ -25,15 +25,15 @@ function u(e) {
     let i = [...n];
     return i.sort((e, i) => {
       if (!t) {
-        let t = r.Z.getScoreWithoutLoadingLatest(e),
-          n = r.Z.getScoreWithoutLoadingLatest(i);
+        let t = l.Z.getScoreWithoutLoadingLatest(e),
+          n = l.Z.getScoreWithoutLoadingLatest(i);
         if (t !== n) return n - t
       }
       return n.findIndex(t => t === e) < n.findIndex(e => e === i) ? -1 : 1
-    }), d(e, i)
+    }), u(e, i)
   }, [e, t])
 }
-let d = (e, t) => {
+let u = (e, t) => {
   let n = [...e],
     i = 0;
   return t.forEach(e => {
@@ -44,13 +44,13 @@ let d = (e, t) => {
     }
   }), n.map((e, t) => [e, t]).filter(e => {
     var t, n;
-    let [i] = e, r = null === (n = i.application.embeddedActivityConfig) || void 0 === n ? void 0 : null === (t = n.client_platform_config[(0, c.Z)((0, a.getOS)())]) || void 0 === t ? void 0 : t.label_type;
-    return !!r && (r === l.ww.NEW || r === l.ww.UPDATED)
+    let [i] = e, l = null === (n = i.application.embeddedActivityConfig) || void 0 === n ? void 0 : null === (t = n.client_platform_config[(0, s.Z)((0, a.getOS)())]) || void 0 === t ? void 0 : t.label_type;
+    return !!l && (l === r.ww.NEW || l === r.ww.UPDATED)
   }).forEach(e => {
-    let [t, i] = e, l = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : i;
-    if (l < i) {
+    let [t, i] = e, r = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : i;
+    if (r < i) {
       let e = n[i];
-      n.splice(i, 1), n = [...n.slice(0, l), e, ...n.slice(l)]
+      n.splice(i, 1), n = [...n.slice(0, r), e, ...n.slice(r)]
     }
   }), n
 }

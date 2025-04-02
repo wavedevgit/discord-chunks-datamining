@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => N
 });
@@ -66,7 +66,7 @@ let E = i.memo(function(e) {
     setPopout: Z,
     isReplySpineClickable: T,
     showReplySpine: A
-  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), k = (0, c.p)(), M = (0, u.A)((null !== (t = n.editedTimestamp) && void 0 !== t ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
+  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), M = (0, c.p)(), k = (0, u.A)((null !== (t = n.editedTimestamp) && void 0 !== t ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
     if (null == w) return null;
     let e = (0, a.Z)(w);
     if (e.type === y.uaV.USER_JOIN) {
@@ -98,7 +98,7 @@ let E = i.memo(function(e) {
       let t = {
           formatInline: !0,
           allowLinks: !0,
-          shouldFilterKeywords: k
+          shouldFilterKeywords: M
         },
         n = e.isFirstMessageInForumPost(N) ? O(j({}, t), {
           noStyleAndInteraction: !0,
@@ -106,13 +106,13 @@ let E = i.memo(function(e) {
           allowList: !0
         }) : O(j({}, t), {
           formatInline: !0,
-          allowHeading: M,
-          allowList: M
+          allowHeading: k,
+          allowList: k
         });
       return (0, g.ZP)(e, n).content
     }
     return null
-  }, [w, R, N, M, k]), {
+  }, [w, R, N, k, M]), {
     isReplyAuthorBlocked: D,
     isReplyAuthorIgnored: W
   } = (0, l.cj)([f.Z], () => ({

@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => e9
 }), n(47120), n(301563), n(566702), n(789020);
@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(456007),
   w = n(10718),
   R = n(998698),
-  k = n(895924),
-  M = n(581364),
+  M = n(895924),
+  k = n(581364),
   L = n(667204),
   D = n(404295),
   W = n(541716),
@@ -88,8 +88,8 @@ var r = n(200651),
   eA = n(626135),
   ew = n(934415),
   eR = n(459273),
-  ek = n(585483),
-  eM = n(709054),
+  eM = n(585483),
+  ek = n(709054),
   eL = n(838440),
   eD = n(127654),
   eW = n(979956),
@@ -209,7 +209,7 @@ class e6 extends i.PureComponent {
     } = this.props, {
       commandKey: n,
       interactionOptions: r
-    } = (0, M.XA)(e.interactionData), {
+    } = (0, k.XA)(e.interactionData), {
       command: i,
       application: l
     } = w.Xq({
@@ -219,7 +219,7 @@ class e6 extends i.PureComponent {
     if (null != i) {
       var o, a;
       let e = null != l ? {
-        type: k.Qi.APPLICATION,
+        type: M.Qi.APPLICATION,
         id: l.id,
         icon: l.icon,
         name: null !== (a = null == l ? void 0 : null === (o = l.bot) || void 0 === o ? void 0 : o.username) && void 0 !== a ? a : l.name,
@@ -229,7 +229,7 @@ class e6 extends i.PureComponent {
         channelId: t.id,
         command: i,
         section: e,
-        location: k.Vh.RECALL,
+        location: M.Vh.RECALL,
         initialValues: (0, A.Dw)(i, null != r ? r : [])
       })
     }
@@ -337,14 +337,14 @@ class e6 extends i.PureComponent {
           return;
         case eK.yXg.ARROW_UP:
           if (i || l) return;
-          if (e.preventDefault(), t) eZ.Z.getUploadCount(r.id, eO.d.ChannelMessage) > 0 ? ek.S.dispatchToLastSubscribed(eK.CkL.FOCUS_ATTACHMENT_AREA) : ek.S.dispatchToLastSubscribed(eK.CkL.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) eZ.Z.getUploadCount(r.id, eO.d.ChannelMessage) > 0 ? eM.S.dispatchToLastSubscribed(eK.CkL.FOCUS_ATTACHMENT_AREA) : eM.S.dispatchToLastSubscribed(eK.CkL.FOCUS_MESSAGES, {
             atEnd: !0
           });
           else {
             let {
               channel: e
             } = this.props, t = eI.Z.getLastChatCommandMessage(e.id), n = eI.Z.getLastEditableMessage(e.id);
-            null != t && null != n ? eM.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
+            null != t && null != n ? ek.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
           }
           return;
         case eK.yXg.ESCAPE:
@@ -407,7 +407,7 @@ class e6 extends i.PureComponent {
         chatInputType: d
       } = this.props, p = !1;
       if (null != l) {
-        if (l.inputType === k.iw.BUILT_IN_INTEGRATION) return ek.S.dispatch(eK.CkL.SHAKE_APP, {
+        if (l.inputType === M.iw.BUILT_IN_INTEGRATION) return eM.S.dispatch(eK.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), Promise.resolve({
@@ -415,12 +415,12 @@ class e6 extends i.PureComponent {
           shouldRefocus: !0
         });
         let e = R.Z.getCommandOrigin(c.id);
-        if (e === k.bB.APPLICATION_LAUNCHER || e === k.bB.IMAGE_RECS_MENU || e === k.bB.IMAGE_RECS_SUBMENU) {
+        if (e === M.bB.APPLICATION_LAUNCHER || e === M.bB.IMAGE_RECS_MENU || e === M.bB.IMAGE_RECS_SUBMENU) {
           var h;
           let {
             location: t,
             sectionName: n
-          } = null !== (h = (0, eH._U)(l)) && void 0 !== h ? h : {}, r = e === k.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
+          } = null !== (h = (0, eH._U)(l)) && void 0 !== h ? h : {}, r = e === M.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
           if (!await (0, S.L)({
               applicationId: l.applicationId,
               channel: c,
@@ -441,7 +441,7 @@ class e6 extends i.PureComponent {
             channel: c
           }
         });
-        if (l.inputType !== k.iw.BUILT_IN_TEXT) return Promise.resolve({
+        if (l.inputType !== M.iw.BUILT_IN_TEXT) return Promise.resolve({
           shouldClear: !0,
           shouldRefocus: !0
         });
@@ -462,10 +462,10 @@ class e6 extends i.PureComponent {
           valid: h,
           failureReason: m
         } = e;
-        if (!h) return m === eK.zYc.SLOWMODE_COOLDOWN ? (ek.S.dispatch(eK.CkL.SHAKE_APP, {
+        if (!h) return m === eK.zYc.SLOWMODE_COOLDOWN ? (eM.S.dispatch(eK.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
-        }), ek.S.dispatch(eK.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
+        }), eM.S.dispatch(eK.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
           shouldClear: !1,
           shouldRefocus: !0
         }) : {
@@ -567,13 +567,13 @@ class e5 extends i.PureComponent {
     } : null
   }
   componentDidMount() {
-    ek.S.subscribe(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+    eM.S.subscribe(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
   }
   componentDidUpdate(e) {
     (this.props.isEditing !== e.isEditing || this.props.hasModalOpen !== e.hasModalOpen) && (this.props.isEditing || this.props.hasModalOpen ? this.handleInputBlur() : this.handleInputFocus())
   }
   componentWillUnmount() {
-    ek.S.unsubscribe(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+    eM.S.unsubscribe(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
   }
   render() {
     var e;
@@ -611,7 +611,7 @@ class e5 extends i.PureComponent {
         className: eQ.channelBottomBarArea,
         children: (0, r.jsx)(eV.Z, {})
       }),
-      k = (0, r.jsxs)("div", {
+      M = (0, r.jsxs)("div", {
         className: eQ.channelBottomBarArea,
         children: [(0, r.jsx)(eC.Z, {
           childRef: this.channelTextAreaFormRef,
@@ -642,8 +642,8 @@ class e5 extends i.PureComponent {
           })
         }), I ? null : this.renderAppLauncherButton(), N ? null : this.renderAppCommandButton()]
       }),
-      M = O && E,
-      L = M && E ? R : k,
+      k = O && E,
+      L = k && E ? R : M,
       D = o()({
         [eJ.barWithAppLauncherButton]: j,
         [eJ.barWithAppsDMsUI]: O
@@ -715,7 +715,7 @@ class e5 extends i.PureComponent {
                   ref: this.inputFormRef,
                   onSubmit: e2,
                   className: o()(eQ.form, {
-                    [eQ.formWithLoadedChatInput]: !M
+                    [eQ.formWithLoadedChatInput]: !k
                   }),
                   children: [v && (0, r.jsx)(eu.Z, {
                     channelId: n.id
@@ -774,12 +774,12 @@ class e5 extends i.PureComponent {
       } = this.props;
       if (t) switch (e.which) {
         case eK.yXg.ARROW_LEFT:
-          n === W.Ie.SIDEBAR && ek.S.dispatch(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === W.Ie.SIDEBAR && eM.S.dispatch(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eS.Z.getChannelId()
           });
           return;
         case eK.yXg.ARROW_RIGHT:
-          n === W.Ie.NORMAL && ek.S.dispatch(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === W.Ie.NORMAL && eM.S.dispatch(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: ex.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
@@ -888,8 +888,8 @@ let e9 = i.memo(function(e) {
     commands: w
   });
   let R = i.useRef(null),
-    k = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    M = (0, Y.R6)("ChannelChat"),
+    M = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    k = (0, Y.R6)("ChannelChat"),
     L = (0, Y.Q3)("ChannelChat"),
     W = (0, d.e7)([eS.Z], () => eS.Z.getVoiceChannelId()),
     U = (0, d.e7)([ej.Z], () => ej.Z.getChannel(W)),
@@ -916,8 +916,8 @@ let e9 = i.memo(function(e) {
     isInitialLoading: j,
     showEntryPointAppCommandButton: null != N,
     entryPointCommandButtonRef: R,
-    isFailedAppDMLoad: k,
-    isRefreshChatInputEnabled: M,
+    isFailedAppDMLoad: M,
+    isRefreshChatInputEnabled: k,
     isRefreshEnabled: L,
     pendingScheduledMessage: y,
     recipientUser: B,

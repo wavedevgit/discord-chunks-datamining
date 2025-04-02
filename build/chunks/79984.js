@@ -1,22 +1,22 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var i = n(200651),
-  l = n(192379),
-  r = n(120356),
-  o = n.n(r),
+  r = n(192379),
+  l = n(120356),
+  o = n.n(l),
   a = n(442837),
-  s = n(481060),
-  c = n(607070),
-  u = n(882859);
+  c = n(481060),
+  s = n(607070),
+  d = n(882859);
 
-function d() {
-  let e = (0, a.e7)([c.Z], () => c.Z.useReducedMotion),
+function u() {
+  let e = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
     {
       styleLarge: t,
       styleSmall: n
-    } = l.useMemo(() => ({
+    } = r.useMemo(() => ({
       styleLarge: {
         width: "".concat(10 + 50 * Math.random(), "%")
       },
@@ -25,28 +25,28 @@ function d() {
       }
     }), []);
   return (0, i.jsxs)("div", {
-    className: o()(u.container, {
-      [u.noAnimation]: e
+    className: o()(d.container, {
+      [d.noAnimation]: e
     }),
     children: [(0, i.jsx)("div", {
-      className: u.iconPlaceholder
+      className: d.iconPlaceholder
     }), (0, i.jsxs)("div", {
-      className: u.textContainer,
+      className: d.textContainer,
       children: [(0, i.jsx)("div", {
-        className: u.textPlaceholder,
+        className: d.textPlaceholder,
         style: t,
-        children: (0, i.jsx)(s.X6q, {
-          className: u.hidden,
+        children: (0, i.jsx)(c.X6q, {
+          className: d.hidden,
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: "_"
         })
       }), (0, i.jsx)("div", {
-        className: u.textPlaceholder,
+        className: d.textPlaceholder,
         style: n,
-        children: (0, i.jsx)(s.Text, {
-          className: u.hidden,
+        children: (0, i.jsx)(c.Text, {
+          className: d.hidden,
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
@@ -54,7 +54,7 @@ function d() {
         })
       })]
     }), (0, i.jsx)("div", {
-      className: u.underline
+      className: d.underline
     })]
   })
 }

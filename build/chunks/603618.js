@@ -41,8 +41,8 @@ var i = n(200651),
   R = n(801077),
   W = n(237997),
   M = n(630388),
-  z = n(5192),
-  V = n(709054),
+  V = n(5192),
+  z = n(709054),
   U = n(444295),
   G = n(388627),
   F = n(981631),
@@ -255,7 +255,7 @@ function J(e) {
           className: H.username,
           variant: "text-md/medium",
           color: "header-primary",
-          children: z.ZP.getName(void 0, void 0, o)
+          children: V.ZP.getName(void 0, void 0, o)
         }), null != l && (0, i.jsx)(_.ZP, {
           className: H.liveIndicator
         })]
@@ -390,7 +390,7 @@ function ee(e) {
           var t, n, i, r, o, l, u;
           let d = null !== (o = null === (n = e.activity) || void 0 === n ? void 0 : null === (t = n.timestamps) || void 0 === t ? void 0 : t.start) && void 0 !== o ? o : Date.now();
           return {
-            id: V.default.fromTimestamp(d),
+            id: z.default.fromTimestamp(d),
             author_id: e.activityUser.id,
             extra: {
               type: "played_game_extra",

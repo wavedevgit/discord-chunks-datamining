@@ -1,6 +1,6 @@
 /**
   Module ID: 13323
-  Original File Name: 6184906a781264db
+  Original File Name: fe08f158bddf2591
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -334,7 +334,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -14880,6 +14880,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     gap: 4px
 }
 
+.sliderContainer__9d98d {
+    padding-left: 4px;
+    width: 100%
+}
+
 .formItemTitle__9d98d {
     margin-bottom: 4px
 }
@@ -17037,4 +17042,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=6184906a781264db.css.map*/
+/*# sourceMappingURL=fe08f158bddf2591.css.map*/

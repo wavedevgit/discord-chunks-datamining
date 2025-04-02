@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => Z
 });
@@ -41,22 +41,22 @@ let Z = function(e, t, n) {
       A = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
       w = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
       R = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
-      k = _.Z.getMessage(t, e),
-      M = f.Z.getChannel(t);
-    if (null == k || null == M) return;
+      M = _.Z.getMessage(t, e),
+      k = f.Z.getChannel(t);
+    if (null == M || null == k) return;
     let L = h.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        r && (S(M) || k.canDeleteOwnMessage(L)) && (n.preventDefault(), (0, I.$Z)(M, k, n));
+        r && (S(k) || M.canDeleteOwnMessage(L)) && (n.preventDefault(), (0, I.$Z)(k, M, n));
         break;
       case "c":
-        ((0, x.isMac)() ? w : A) && v.wS && (n.preventDefault(), (0, v.JG)(k.content));
+        ((0, x.isMac)() ? w : A) && v.wS && (n.preventDefault(), (0, v.JG)(M.content));
         break;
       case "e":
-        r && !M.isSystemDM() && (0, O.Z)(k, L) && (n.preventDefault(), (0, I.Hd)(M, k));
+        r && !k.isSystemDM() && (0, O.Z)(M, L) && (n.preventDefault(), (0, I.Hd)(k, M));
         break;
       case "p":
-        (r || R) && !M.isSystemDM() && !(0, E.Z)(k) && (S(M) || M.isPrivate()) && (n.preventDefault(), (0, I.rY)(M, k, n));
+        (r || R) && !k.isSystemDM() && !(0, E.Z)(M) && (S(k) || k.isPrivate()) && (n.preventDefault(), (0, I.rY)(k, M, n));
         break;
       case "+":
         (r || R) && function(e) {
@@ -74,35 +74,35 @@ let Z = function(e, t, n) {
               isActiveChannelOrUnarchivableThread: (0, u.RG)(e)
             });
           return !r && n
-        }(M) && (n.preventDefault(), y.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, k.id, {
+        }(k) && (n.preventDefault(), y.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, M.id, {
           emojiPicker: !0
         }));
         break;
       case "r":
-        (r || R) && (0, c.o)(M, k) && (n.preventDefault(), (0, I.HH)(M, k, n));
+        (r || R) && (0, c.o)(k, M) && (n.preventDefault(), (0, I.HH)(k, M, n));
         break;
       case "f":
         (r || R) && (0, l.WT)({
           location: "keyboard-shortcut"
         }, {
           autoTrackExposure: !1
-        }).canForwardMessages && (0, o.h)(k) && (n.preventDefault(), (0, a.l8)({
-          message: k,
+        }).canForwardMessages && (0, o.h)(M) && (n.preventDefault(), (0, a.l8)({
+          message: M,
           source: "keyboard-shortcut"
         }));
         break;
       case "t":
-        if (r && (0, u.ki)(M, k)) n.preventDefault(), (0, d.R6)(M, k, "Message Shortcut");
-        else if (k.hasFlag(P.iLy.HAS_THREAD)) {
-          let e = f.Z.getChannel(j.default.castMessageIdAsChannelId(k.id));
+        if (r && (0, u.ki)(k, M)) n.preventDefault(), (0, d.R6)(k, M, "Message Shortcut");
+        else if (M.hasFlag(P.iLy.HAS_THREAD)) {
+          let e = f.Z.getChannel(j.default.castMessageIdAsChannelId(M.id));
           null != e && (r || R) && (n.preventDefault(), (0, d.ok)(e, R))
         }
         break;
       case "enter":
-        T && (n.preventDefault(), (0, I.B8)(M, k));
+        T && (n.preventDefault(), (0, I.B8)(k, M));
         break;
       case "escape":
-        m.Z.isEditing(M.id, k.id) ? i.Z.endEditMessage(M.id) : y.S.dispatch(P.CkL.TEXTAREA_FOCUS)
+        m.Z.isEditing(k.id, M.id) ? i.Z.endEditMessage(k.id) : y.S.dispatch(P.CkL.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

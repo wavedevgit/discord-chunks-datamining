@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => W
 }), n(47120);
@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(474936),
   w = n(526761),
   R = n(388032),
-  k = n(230127);
-let M = T.Hz.CHAT,
+  M = n(230127);
+let k = T.Hz.CHAT,
   L = {
     section: S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
@@ -51,7 +51,7 @@ function W(e) {
   } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = v.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([x.Z], () => x.Z.getState().animationType), H = i.useRef(!1), F = (0, f.wC)(n.guild_id), G = (0, l.uniqBy)([...F, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
-    intention: M
+    intention: k
   })).slice(0, Z.e5), V = (null !== (t = j.Z.recentlyUsedEmojis) && void 0 !== t ? t : []).filter(e => !G.slice(0, Z.e5 - 1).some(t => t.name === e.name));
   V.length > 0 && G.splice(G.length - 1, 1, V[0]);
   let z = (0, O.Iu)(B),
@@ -109,7 +109,7 @@ function W(e) {
         renderPopout: () => (0, r.jsx)("div", {
           onMouseEnter: C,
           children: (0, r.jsx)(g.ZP, {
-            className: k.reducedMotionTooltip,
+            className: M.reducedMotionTooltip,
             header: R.NW.string(R.t["6gGHnZ"]),
             content: R.NW.string(R.t.S2RGUF),
             onClick: () => {

@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => w
 }), n(47120);
@@ -36,10 +36,10 @@ var r = n(200651),
 function w(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(!1), a = (0, m.ZP)(t, !0), w = t.guild_id, R = (0, d.e7)([x.Z], () => null != w ? x.Z.getRoles(w) : void 0), k = (0, d.e7)([O.default, x.Z], () => {
+  } = e, [n, l] = i.useState(!1), a = (0, m.ZP)(t, !0), w = t.guild_id, R = (0, d.e7)([x.Z], () => null != w ? x.Z.getRoles(w) : void 0), M = (0, d.e7)([O.default, x.Z], () => {
     var e;
     return O.default.getUser(null === (e = x.Z.getGuild(w)) || void 0 === e ? void 0 : e.ownerId)
-  }), M = i.useMemo(() => null != w ? s()(R).sortBy(e => -e.position).filter(e => !(0, g.pM)(w, e.id)).value() : [], [w, R]), L = i.useMemo(() => s()(M).filter(e => {
+  }), k = i.useMemo(() => null != w ? s()(R).sortBy(e => -e.position).filter(e => !(0, g.pM)(w, e.id)).value() : [], [w, R]), L = i.useMemo(() => s()(k).filter(e => {
     if (null == w) return !1;
     let n = E.I0({
       forceRoles: {
@@ -48,9 +48,9 @@ function w(e) {
       context: t
     });
     return c.e$(n, Z.Plq.ADMINISTRATOR) || c.e$(n, Z.Plq.VIEW_CHANNEL)
-  }).value(), [t, w, M]), D = (0, d.Wu)([O.default], () => {
+  }).value(), [t, w, k]), D = (0, d.Wu)([O.default], () => {
     let e = {};
-    for (let n of (null != k && (e[k.id] = k), Object.values(t.permissionOverwrites))) {
+    for (let n of (null != M && (e[M.id] = M), Object.values(t.permissionOverwrites))) {
       if (n.type !== f.BN.MEMBER || null != e[n.id]) continue;
       let t = O.default.getUser(n.id);
       null != t && (e[t.id] = t)
@@ -66,7 +66,7 @@ function w(e) {
         l = c.e$(i.allow, Z.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
-  }, [t, k]), W = j.Z.can(Z.Plq.MANAGE_CHANNELS, t) || j.Z.can(Z.Plq.MANAGE_ROLES, t), U = i.useCallback(() => l(!1), []);
+  }, [t, M]), W = j.Z.can(Z.Plq.MANAGE_CHANNELS, t) || j.Z.can(Z.Plq.MANAGE_ROLES, t), U = i.useCallback(() => l(!1), []);
   return (0, r.jsxs)(P.ZP, {
     channelId: t.id,
     children: [(0, r.jsx)(P.Kq, {

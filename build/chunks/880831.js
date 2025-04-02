@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => T,
   z: () => S
@@ -59,7 +59,7 @@ function Z(e) {
     trailingIconClass: P.messageContentTrailingIcon,
     leadingIconClass: P.messageContentLeadingIcon,
     iconSize: I.WW
-  }), R = (0, C.cv)(n), k = R.length > 0 ? R.map(e => (0, r.jsx)(v.Z, {
+  }), R = (0, C.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(v.Z, {
     className: P.sticker,
     size: 128,
     sticker: e,
@@ -78,9 +78,9 @@ function Z(e) {
       className: o()(P.messageContentWrapper, {
         [P.mentioned]: n.mentioned
       }),
-      children: [null != k ? null : w, null !== (t = null != T ? T : k) && void 0 !== t ? t : (0, r.jsx)("span", {
+      children: [null != M ? null : w, null !== (t = null != T ? T : M) && void 0 !== t ? t : (0, r.jsx)("span", {
         children: Z
-      }), null != k ? null : A]
+      }), null != M ? null : A]
     }), (0, r.jsx)("img", {
       alt: "",
       src: (null == s ? void 0 : s.guildMemberAvatar) != null && null != d ? (0, j.JM)({

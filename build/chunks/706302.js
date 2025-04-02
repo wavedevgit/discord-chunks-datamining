@@ -1,21 +1,21 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => r
+  Z: () => l
 });
 var i = n(812236),
-  l = n(989573);
+  r = n(989573);
 
-function r(e) {
+function l(e) {
   let {
     context: t,
     applicationId: n,
-    botUserId: r
+    botUserId: l
   } = e, o = (0, i.ms)({
     context: t,
     applicationId: n,
-    botUserId: r
-  }), a = (0, l.Z)({
+    botUserId: l
+  }), a = (0, r.Z)({
     context: t
   });
-  return o && null != r && !a
+  return o && null != l && !a
 }

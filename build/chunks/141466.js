@@ -34,6 +34,7 @@ e.exports = {
   widgetContainer: "widgetContainer__9d98d",
   select: "select__9d98d",
   widgetHeaderContainer: "widgetHeaderContainer__9d98d",
+  sliderContainer: "sliderContainer__9d98d",
   formItemTitle: "formItemTitle__9d98d",
   overlaySettingsNux: "overlaySettingsNux__9d98d",
   closeCircleButton: "closeCircleButton__9d98d",

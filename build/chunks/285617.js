@@ -1,4 +1,4 @@
-/** Chunk was on 88610 **/
+/** Chunk was on 35755 **/
 e.exports = {
   activityNewBadge: "activityNewBadge__44107",
   activityUpdatedBadge: "activityUpdatedBadge__44107"

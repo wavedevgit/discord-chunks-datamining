@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 004641c265eb33d5
+  Original File Name: 5c8fdbfbd38b43a2
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -4227,12 +4227,15 @@ span.clanTag__07f91.isOverlay__07f91 {
     align-items: center;
     flex-direction: row;
     gap: var(--spacing-4);
-    opacity: 1;
-    margin-top: var(--spacing-8)
+    opacity: 1
 }
 
 .hiddenVoiceStates_adebba.locked_adebba {
     opacity: .4
+}
+
+.hiddenVoiceStates_adebba.flipped_adebba {
+    flex-direction: row-reverse
 }
 
 .hiddenVoiceStatesAvatar_adebba {
@@ -4363,4 +4366,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     height: 52px
 }
 
-/*# sourceMappingURL=004641c265eb33d5.css.map*/
+/*# sourceMappingURL=5c8fdbfbd38b43a2.css.map*/

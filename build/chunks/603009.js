@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => T
 }), n(47120);
@@ -82,14 +82,14 @@ function Z(e) {
       },
       delay: 200
     }, "animate-always"),
-    k = (0, x.Zp)(n, T),
-    M = k ? P.NW.formatToPlainString(P.t.qFqINz, {
+    M = (0, x.Zp)(n, T),
+    k = M ? P.NW.formatToPlainString(P.t.qFqINz, {
       guildName: n.name
     }) : P.NW.formatToPlainString(P.t.bFwASk, {
       guildName: n.name
     }),
-    L = k ? P.NW.string(P.t.eA1ymp) : P.NW.string(P.t.MF0Ntb),
-    D = k ? P.NW.formatToPlainString(P.t["60PXOz"], {
+    L = M ? P.NW.string(P.t.eA1ymp) : P.NW.string(P.t.MF0Ntb),
+    D = M ? P.NW.formatToPlainString(P.t["60PXOz"], {
       guildName: n.name
     }) : P.NW.formatToPlainString(P.t.i27ioq, {
       guildName: n.name
@@ -143,7 +143,7 @@ function Z(e) {
               children: (0, r.jsx)(c.X6q, {
                 variant: "heading-md/bold",
                 color: "header-primary",
-                children: M
+                children: k
               })
             }), (0, r.jsx)("div", {
               children: (0, r.jsx)(c.Text, {

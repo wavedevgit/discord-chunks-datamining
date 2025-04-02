@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 e.exports = {
   animationMiddle: "animationMiddle__8177b",
   modal: "modal__8177b",

@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => O
 }), n(47120), n(566702);
@@ -68,7 +68,7 @@ let O = e => {
         searchResults: f.Z.getSearchResults(O.id, e)
       }
     }),
-    [k, M] = i.useState(A),
+    [M, k] = i.useState(A),
     L = "" !== A,
     {
       showHubEventsList: D
@@ -90,7 +90,7 @@ let O = e => {
       mostRecentQuery: e,
       showHubEventsList: t
     } = U.current;
-    h.c$(O.id), h.YZ(O.id), t && p.c(O.id), M(e)
+    h.c$(O.id), h.YZ(O.id), t && p.c(O.id), k(e)
   }, [O.id]), i.useEffect(() => {
     d.default.track(x.rMx.GUILD_DIRECTORY_CHANNEL_VIEWED, {
       directory_channel_id: O.id,
@@ -141,17 +141,17 @@ let O = e => {
       })
     } : void 0,
     H = e => {
-      0 !== k.trim().length && e.charCode === x.yXg.ENTER && (h.Rq(O.id, k), d.default.track(x.rMx.GUILD_DIRECTORY_SEARCH, {
+      0 !== M.trim().length && e.charCode === x.yXg.ENTER && (h.Rq(O.id, M), d.default.track(x.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: O.id,
         directory_guild_id: E.id
       }))
     },
     F = () => {
-      M(""), h.So(O.id)
+      k(""), h.So(O.id)
     };
   return L ? (0, r.jsx)(v.Z, {
-    searchQuery: k,
-    setSearchQuery: M,
+    searchQuery: M,
+    setSearchQuery: k,
     mostRecentQuery: A,
     handleSearchKeyPress: H,
     handleClearSearch: F,
@@ -171,8 +171,8 @@ let O = e => {
     })
   }) : (0, r.jsx)(_.Z, {
     channel: O,
-    searchQuery: k,
-    setSearchQuery: M,
+    searchQuery: M,
+    setSearchQuery: k,
     handleSearchKeyPress: H,
     handleClearSearch: F,
     handleCreateOrAddGuild: B,

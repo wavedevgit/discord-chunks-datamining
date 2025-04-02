@@ -1,109 +1,109 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => N
+  Z: () => v
 }), n(47120);
 var i = n(200651),
-  l = n(192379),
-  r = n(392711),
+  r = n(192379),
+  l = n(392711),
   o = n(780384),
   a = n(481060),
-  s = n(410030),
-  c = n(220082),
-  u = n(564334),
-  d = n(302221),
+  c = n(410030),
+  s = n(220082),
+  d = n(564334),
+  u = n(302221),
   p = n(783097),
   m = n(772606),
-  h = n(488977),
-  f = n(320599);
+  f = n(488977),
+  h = n(320599);
 
-function v(e) {
-  let [t, n] = l.useState(void 0);
-  return l.useEffect(() => {
+function b(e) {
+  let [t, n] = r.useState(void 0);
+  return r.useEffect(() => {
     null != e.current && n(getComputedStyle(e.current))
   }, [e]), t
 }
 
-function N(e) {
+function v(e) {
   let {
     application: t,
     context: n,
-    name: N,
-    iconURL: x,
-    scrollerRef: y,
-    sectionName: b
-  } = e, g = (0, o.ap)((0, s.ZP)()), j = l.useRef(null), C = l.useRef(null), E = l.useRef(null), P = l.useRef(null), A = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), O = (0, c.ZP)("number" == typeof x ? "" : x, null != A ? A : ""), I = l.useMemo(() => {
+    name: v,
+    iconURL: C,
+    scrollerRef: _,
+    sectionName: x
+  } = e, y = (0, o.ap)((0, c.ZP)()), N = r.useRef(null), g = r.useRef(null), j = r.useRef(null), P = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), A = (0, s.ZP)("number" == typeof C ? "" : C, null != E ? E : ""), O = r.useMemo(() => {
     var e, t;
-    let n = (0, r.compact)([u.Z.parseHexString(O), u.Z.parseHexString(g ? "#000000" : "#ffffff")]);
-    return null !== (t = null === (e = (0, d.k8)({
+    let n = (0, l.compact)([d.Z.parseHexString(A), d.Z.parseHexString(y ? "#000000" : "#ffffff")]);
+    return null !== (t = null === (e = (0, u.k8)({
       colors: n,
       ratio: 5,
       saturationFactor: .6
-    })) || void 0 === e ? void 0 : e.toHexString()) && void 0 !== t ? t : O
-  }, [O, g]), _ = v(j), S = v(C), T = l.useCallback(() => {
+    })) || void 0 === e ? void 0 : e.toHexString()) && void 0 !== t ? t : A
+  }, [A, y]), I = b(N), S = b(g), T = r.useCallback(() => {
     var e, t, n, i;
-    let l = y.current,
-      o = j.current,
-      a = E.current,
-      s = null == P ? void 0 : P.current,
-      c = parseInt(null !== (e = null == _ ? void 0 : _.height) && void 0 !== e ? e : ""),
-      u = parseInt(null !== (t = null == S ? void 0 : S.height) && void 0 !== t ? t : "");
-    if (null != l && null != o && null != a && !isNaN(c) && !isNaN(u)) {
-      let e = null !== (n = l.scrollTop) && void 0 !== n ? n : 0,
-        t = 0 !== l.scrollHeight ? l.scrollHeight : u + 20,
-        d = 0 !== l.clientHeight ? l.clientHeight : u + 20,
-        p = u - c,
-        m = (0, r.clamp)(t - d, p + 1, u + 20),
-        h = p === m ? 1 : (0, r.clamp)((e - p) / (m - p), 0, 1);
-      o.style.filter = "brightness(".concat(1 + ((g ? 1.4 : .6) - 1) * h, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(O, " ").concat((1 - h) * 100, "%, ").concat(I, ")"), a.style.opacity = "".concat(0 + +h), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * h, "px)"), null != s && (s.style.opacity = "".concat(1 + -1 * h))
+    let r = _.current,
+      o = N.current,
+      a = j.current,
+      c = null == P ? void 0 : P.current,
+      s = parseInt(null !== (e = null == I ? void 0 : I.height) && void 0 !== e ? e : ""),
+      d = parseInt(null !== (t = null == S ? void 0 : S.height) && void 0 !== t ? t : "");
+    if (null != r && null != o && null != a && !isNaN(s) && !isNaN(d)) {
+      let e = null !== (n = r.scrollTop) && void 0 !== n ? n : 0,
+        t = 0 !== r.scrollHeight ? r.scrollHeight : d + 20,
+        u = 0 !== r.clientHeight ? r.clientHeight : d + 20,
+        p = d - s,
+        m = (0, l.clamp)(t - u, p + 1, d + 20),
+        f = p === m ? 1 : (0, l.clamp)((e - p) / (m - p), 0, 1);
+      o.style.filter = "brightness(".concat(1 + ((y ? 1.4 : .6) - 1) * f, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(A, " ").concat((1 - f) * 100, "%, ").concat(O, ")"), a.style.opacity = "".concat(0 + +f), a.style.transform = "translateY(".concat((i = s / 4) + (0 - i) * f, "px)"), null != c && (c.style.opacity = "".concat(1 + -1 * f))
     }
-  }, [I, O, null == S ? void 0 : S.height, g, y, null == _ ? void 0 : _.height]);
-  return l.useEffect(() => {
+  }, [O, A, null == S ? void 0 : S.height, y, _, null == I ? void 0 : I.height]);
+  return r.useEffect(() => {
     T()
-  }, [T, g]), l.useEffect(() => {
-    let e = y.current,
+  }, [T, y]), r.useEffect(() => {
+    let e = _.current,
       t = () => {
         T()
       };
     return null == e || e.addEventListener("scroll", t), () => {
       null == e || e.removeEventListener("scroll", t)
     }
-  }, [y, T]), (0, i.jsxs)(i.Fragment, {
+  }, [_, T]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
-      className: f.stickyContainer,
+      className: h.stickyContainer,
       children: [(0, i.jsx)("div", {
-        className: f.stickyBannerContainer,
+        className: h.stickyBannerContainer,
         children: (0, i.jsx)("div", {
-          className: f.stickyBanner,
-          ref: j
+          className: h.stickyBanner,
+          ref: N
         })
       }), (0, i.jsx)("div", {
-        className: f.backButtonContainer,
+        className: h.backButtonContainer,
         children: (0, i.jsx)(m.Z, {
-          className: f.headerButton
+          className: h.headerButton
         })
       }), (0, i.jsx)("div", {
-        className: f.nameContainer,
+        className: h.nameContainer,
         children: (0, i.jsx)(a.X6q, {
-          ref: E,
-          className: f.textApplicationName,
+          ref: j,
+          className: h.textApplicationName,
           variant: "heading-lg/extrabold",
-          children: N
+          children: v
         })
       })]
     }), (0, p.BQ)(t) ? (0, i.jsx)("div", {
       ref: P,
-      className: f.moreMenuButtonContainer,
-      children: (0, i.jsx)(h.Z, {
+      className: h.moreMenuButtonContainer,
+      children: (0, i.jsx)(f.Z, {
         application: t,
         context: n,
-        className: f.headerButton,
-        sectionName: b
+        className: h.headerButton,
+        sectionName: x
       })
     }) : null, (0, i.jsx)("div", {
-      ref: C,
-      className: f.bannerBackground,
+      ref: g,
+      className: h.bannerBackground,
       style: {
-        backgroundColor: O
+        backgroundColor: A
       }
     })]
   })

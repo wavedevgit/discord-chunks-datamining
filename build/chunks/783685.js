@@ -1,43 +1,46 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => d
+  Z: () => p
 }), n(47120);
 var i = n(200651),
-  l = n(192379),
-  r = n(481060),
+  r = n(192379),
+  l = n(481060),
   o = n(626135),
-  a = n(827498),
+  a = n(424602),
+  c = n(827498),
   s = n(915346),
-  c = n(981631),
+  d = n(981631),
   u = n(388032);
 
-function d(e) {
+function p(e) {
   let {
     botUserId: t,
     applicationId: n,
-    buttonSize: d,
-    analyticsLocations: p
-  } = e, [m, h] = l.useState(!1), f = l.useRef(null), v = l.useCallback(async () => {
-    o.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+    buttonSize: p,
+    analyticsLocations: m
+  } = e, [f, h] = r.useState(!1), b = r.useRef(null), v = r.useCallback(async () => {
+    o.default.track(d.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
-      button_action: a._y.OPEN_APP_DM
+      button_action: c._y.OPEN_APP_DM
     }), h(!0);
     try {
       await (0, s.W)({
         appId: n,
         botId: t,
-        analyticsLocations: p
+        analyticsLocations: m
       })
     } catch (e) {}
-    clearTimeout(f.current), h(!1)
-  }, [t, n, p]);
-  return (0, i.jsx)(r.zxk, {
+    clearTimeout(b.current), h(!1)
+  }, [t, n, m]), C = a.PM.useExperiment({
+    location: "AppTryItOutButton()"
+  }).enabled ? u.NW.string(u.t["e+CzPj"]) : u.NW.string(u.t.AUM8hY);
+  return (0, i.jsx)(l.zxk, {
     type: "submit",
-    size: d,
-    color: r.zxk.Colors.PRIMARY,
-    submitting: m,
+    size: p,
+    color: l.zxk.Colors.PRIMARY,
+    submitting: f,
     onClick: v,
-    "aria-label": u.NW.string(u.t.AUM8hY),
-    children: u.NW.string(u.t.AUM8hY)
+    "aria-label": C,
+    children: C
   })
 }

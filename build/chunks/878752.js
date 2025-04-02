@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => I
 }), n(47120);
@@ -43,17 +43,17 @@ function I(e) {
     guildId: null == t ? void 0 : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: k
+    enableViewerClipping: M
   } = d.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
-  }), M = (0, s.Z)(_.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
+  }), k = (0, s.Z)(_.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
   if (null == t || null != w) return null;
   let H = (0, m.Z)(t),
     F = !Z && H,
     G = !Z && B,
-    V = k && M,
+    V = M && k,
     z = R && n;
   return (0, r.jsxs)(a.Gt, {
     value: S,

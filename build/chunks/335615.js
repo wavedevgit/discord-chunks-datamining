@@ -1,4 +1,4 @@
-/** Chunk was on 34059 **/
+/** Chunk was on 86331 **/
 n.d(t, {
   Z: () => eh
 }), n(47120);
@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(540059),
   w = n(623624),
   R = n(518738),
-  k = n(570096),
-  M = n(850020),
+  M = n(570096),
+  k = n(850020),
   L = n(155409),
   D = n(184301),
   W = n(347475),
@@ -236,7 +236,7 @@ let es = i.memo(e => {
     } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([G.Z], () => G.Z.isTyping(i.id, l.id)), u = (0, h.e7)([V.default], () => V.default.getCurrentUser()), d = (0, h.e7)([H.Z], () => {
       var e;
       return null != t ? null === (e = H.Z.getRole(i.guild_id, t)) || void 0 === e ? void 0 : e.name : void 0
-    }, [i, t]), p = (0, M.K)({
+    }, [i, t]), p = (0, k.K)({
       location: "ChannelMembers",
       user: l
     });
@@ -461,7 +461,7 @@ class ed extends i.Component {
             channel: this.props.channel,
             index: i
           }), e);
-          return o.entry.content_type === p.s.LEADERBOARD ? (0, r.jsx)(k.N, {
+          return o.entry.content_type === p.s.LEADERBOARD ? (0, r.jsx)(M.N, {
             children: t
           }, e) : t
         }

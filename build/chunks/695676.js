@@ -1,12 +1,12 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  gc: () => r,
+  gc: () => l,
   hH: () => a,
   uX: () => o
 });
-var i, l = n(192379),
-  r = ((i = {}).HOME = "home", i.LIST = "list", i.APPLICATION = "application", i);
-let o = l.createContext({
+var i, r = n(192379),
+  l = ((i = {}).HOME = "home", i.LIST = "list", i.APPLICATION = "application", i);
+let o = r.createContext({
   history: [],
   discard: {},
   currentView: void 0,
@@ -18,5 +18,5 @@ let o = l.createContext({
 });
 
 function a() {
-  return l.useContext(o)
+  return r.useContext(o)
 }

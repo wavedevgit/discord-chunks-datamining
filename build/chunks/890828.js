@@ -182,7 +182,7 @@ let k = e => [e.userId, ... function(e) {
       })
     })
   }),
-  z = r.memo(function(e) {
+  V = r.memo(function(e) {
     let {
       sectionHeader: t,
       channelIds: n,
@@ -223,7 +223,7 @@ let k = e => [e.userId, ... function(e) {
     })
   });
 
-function V(e) {
+function z(e) {
   let {
     searchQuery: t,
     currentVoiceChannel: n,
@@ -262,7 +262,7 @@ function V(e) {
   }();
   return o.length > 0 || c.length > 0 ? (0, i.jsxs)(s.zJl, {
     className: l()(T.channelList, T.channelListWrapper),
-    children: [o.length > 0 && (0, i.jsx)(z, {
+    children: [o.length > 0 && (0, i.jsx)(V, {
       sectionHeader: P.NW.string(P.t.lnk2NT),
       channelIds: o.slice(0, 3),
       hasQuery: !1,
@@ -270,7 +270,7 @@ function V(e) {
       currentVoiceChannel: n,
       onSelect: r,
       scrollable: !1
-    }), c.length > 0 && (0, i.jsx)(z, {
+    }), c.length > 0 && (0, i.jsx)(V, {
       sectionHeader: P.NW.string(P.t["0lvb9P"]),
       channelIds: c.slice(0, 8),
       hasQuery: !1,
@@ -364,7 +364,7 @@ function G(e) {
           "aria-label": P.NW.string(P.t.UyA6SU)
         }
       })
-    }), v ? (0, i.jsx)(z, {
+    }), v ? (0, i.jsx)(V, {
       sectionHeader: O ? P.NW.format(P.t.qdXiQ0, b) : P.NW.format(P.t["Aq+8wM"], b),
       channelIds: h.map(e => {
         let {
@@ -376,7 +376,7 @@ function G(e) {
       query: d,
       currentVoiceChannel: o,
       onSelect: g
-    }) : (0, i.jsx)(V, {
+    }) : (0, i.jsx)(z, {
       searchQuery: d,
       currentVoiceChannel: o,
       onSelect: g

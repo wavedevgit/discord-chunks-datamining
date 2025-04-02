@@ -1,32 +1,32 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(266796);
 var i = n(200651),
-  l = n(192379),
-  r = n(481060),
+  r = n(192379),
+  l = n(481060),
   o = n(239091),
   a = n(973616),
-  s = n(783097),
-  c = n(176412),
-  u = n(570949),
-  d = n(753972),
+  c = n(783097),
+  s = n(176412),
+  d = n(570949),
+  u = n(753972),
   p = n(532309),
   m = n(857524),
-  h = n(413097);
+  f = n(413097);
 
-function f(e) {
+function h(e) {
   var t;
   let {
     command: n,
-    application: f,
-    onClick: v,
-    query: N,
-    searchResultsPosition: x
-  } = e, y = l.useCallback(e => {
-    if ((0, s.BQ)(f)) {
-      let t = f instanceof a.ZP ? f : a.ZP.createFromServer(f);
-      (0, o.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
+    application: h,
+    onClick: b,
+    query: v,
+    searchResultsPosition: C
+  } = e, _ = r.useCallback(e => {
+    if ((0, c.BQ)(h)) {
+      let t = h instanceof a.ZP ? h : a.ZP.createFromServer(h);
+      (0, o.vq)(e, e => (0, i.jsx)(d.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -47,54 +47,54 @@ function f(e) {
         application: t
       }, e)))
     }
-  }, [f]), {
-    iconURL: b,
-    name: g,
-    description: j
-  } = l.useMemo(() => (0, s.sl)(f, {
-    fakeAppIconURL: h
-  }), [f]), C = l.useMemo(() => {
+  }, [h]), {
+    iconURL: x,
+    name: y,
+    description: N
+  } = r.useMemo(() => (0, c.sl)(h, {
+    fakeAppIconURL: f
+  }), [h]), g = r.useMemo(() => {
     var e;
-    let t = null !== (e = null == n ? void 0 : n.displayDescription) && void 0 !== e ? e : j;
-    return null == t ? null : (0, c.ae)(t, void 0)
-  }, [j, null == n ? void 0 : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: E
+    let t = null !== (e = null == n ? void 0 : n.displayDescription) && void 0 !== e ? e : N;
+    return null == t ? null : (0, s.ae)(t, void 0)
+  }, [N, null == n ? void 0 : n.displayDescription]), {
+    trackSearchResultsItemImpressionRef: j
   } = (0, p.Z)({
-    applicationId: f.id,
+    applicationId: h.id,
     commandId: null == n ? void 0 : n.id,
-    query: N,
-    searchResultsPosition: x
+    query: v,
+    searchResultsPosition: C
   });
-  return (0, i.jsx)(r.P3F, {
+  return (0, i.jsx)(l.P3F, {
     className: m.clickable,
-    innerRef: e => E.current = e,
-    onClick: v,
-    onContextMenu: y,
-    children: (0, i.jsxs)(r.Rny, {
+    innerRef: e => j.current = e,
+    onClick: b,
+    onContextMenu: _,
+    children: (0, i.jsxs)(l.Rny, {
       className: m.focusBlock,
-      children: [(0, i.jsx)(d.Z, {
-        src: b,
+      children: [(0, i.jsx)(u.Z, {
+        src: x,
         className: m.icon,
         "aria-hidden": !0,
         rendersPlaceholder: !0
       }), (0, i.jsxs)("div", {
         className: m.cmdDetails,
-        children: [(0, i.jsx)(r.X6q, {
+        children: [(0, i.jsx)(l.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
-          children: null !== (t = null == n ? void 0 : n.displayName) && void 0 !== t ? t : g
-        }), (0, i.jsx)(r.Text, {
+          children: null !== (t = null == n ? void 0 : n.displayName) && void 0 !== t ? t : y
+        }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: C
+          children: g
         })]
-      }), null != n ? (0, i.jsx)(r.Text, {
+      }), null != n ? (0, i.jsx)(l.Text, {
         className: m.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: g
+        children: y
       }) : null, (0, i.jsx)("div", {
         className: m.underline
       })]
