@@ -1,6 +1,6 @@
 /**
   Module ID: 73181
-  Original File Name: f52d745787559aae
+  Original File Name: 98c31ded67b7c712
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2238,6 +2238,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: var(--custom-guild-list-width)
 }
 
+.visual-refresh.refresh-fast-follow-guild-bg .wrapper_ef3116 {
+    background-color: var(--app-background-frame)
+}
+
 @supports (grid-template-columns:subgrid) and (white-space-collapse:collapse) {
     .visual-refresh .wrapper_ef3116 {
         grid-area: guildsList
@@ -4350,6 +4354,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
+.refresh-fast-follow-avatars .header_f37cb1 {
+    padding-left: min(var(--space-md),18px)
+}
+
 .primaryInfo_f37cb1 {
     justify-content: space-between;
     height: 24px
@@ -5965,4 +5973,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=f52d745787559aae.css.map*/
+/*# sourceMappingURL=98c31ded67b7c712.css.map*/

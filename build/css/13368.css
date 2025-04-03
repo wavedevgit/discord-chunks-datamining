@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 5c8fdbfbd38b43a2
+  Original File Name: 0bce09eb1319c9b1
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -2555,6 +2555,10 @@
     display: none
 }
 
+:where(.visual-refresh.refresh-fast-follow-avatars) .wrapper__2ea32 {
+    margin-left: min(var(--space-xs),var(--space-8))
+}
+
 .enable-forced-colors .unread__2ea32 {
     background-color: Highlight;
     height: 10px;
@@ -4366,4 +4370,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     height: 52px
 }
 
-/*# sourceMappingURL=5c8fdbfbd38b43a2.css.map*/
+/*# sourceMappingURL=0bce09eb1319c9b1.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 10451
-  Original File Name: 60337d5567272b1a
+  Original File Name: a5de9300949ff714
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -2971,6 +2971,10 @@ h1.title_feb59c,h2.title_feb59c {
 .visual-refresh .micButtonParent__37e49 .buttonChevronIcon__37e49 {
     width: 16px;
     height: 16px
+}
+
+.visual-refresh.refresh-fast-follow-avatars .container__37e49 {
+    padding: min(var(--space-xs),var(--space-8))
 }
 
 .theme-dark .iconForeground__37e49 {
@@ -17096,4 +17100,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=60337d5567272b1a.css.map*/
+/*# sourceMappingURL=a5de9300949ff714.css.map*/

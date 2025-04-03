@@ -1,0 +1,69 @@
+/**
+  Module ID: 4848
+  Original File Name: 540ef8e928b69ddd
+**/
+.gradientButtonContainer__488d9 {
+    position: relative;
+    width: 154px;
+    height: 50px;
+    margin: 10px 10px 0 0
+}
+
+.colorSelectorPopoutContainer__488d9 {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%
+}
+
+.colorSelectorPopoutContainer__488d9[data-position=left] {
+    left: 0
+}
+
+.colorSelectorPopoutContainer__488d9[data-position=right] {
+    right: 0
+}
+
+.gradientSwatch__488d9 {
+    height: 100%;
+    pointer-events: none;
+    border-radius: var(--radius-xs)
+}
+
+.colorPickerDropperLeft__488d9,.colorPickerDropperRight__488d9 {
+    position: absolute;
+    top: var(--spacing-8);
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-round);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.colorPickerDropperLeft__488d9 {
+    left: var(--spacing-8)
+}
+
+.colorPickerDropperRight__488d9 {
+    right: var(--spacing-8)
+}
+
+.colorPickerDropperInner__488d9 {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px rgba(0,0,0,.05),0 0 13px rgba(0,0,0,.15)
+}
+
+.colorPickerDropperGradient__488d9 {
+    color: #fff;
+    fill: #fff
+}
+
+/*# sourceMappingURL=540ef8e928b69ddd.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 86331
-  Original File Name: 8f7d4621d5f88e4e
+  Original File Name: fca32cd07627ca3f
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -8462,6 +8462,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     padding-right: var(--space-xs)
 }
 
+.visual-refresh.refresh-fast-follow-avatars .form_f75fb0 {
+    padding-left: min(var(--space-xs),var(--space-8));
+    padding-right: min(var(--space-xs),var(--space-8))
+}
+
 .visual-refresh .content_f75fb0:before {
     display: none
 }
@@ -14024,4 +14029,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=8f7d4621d5f88e4e.css.map*/
+/*# sourceMappingURL=fca32cd07627ca3f.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 37865
-  Original File Name: 462b9824939d9a95
+  Original File Name: 8cefad5c21d8fd64
 **/
 .icon__2894c {
     display: block;
@@ -501,6 +501,10 @@
 
 :where(.visual-refresh) .children__2ea32:empty {
     display: none
+}
+
+:where(.visual-refresh.refresh-fast-follow-avatars) .wrapper__2ea32 {
+    margin-left: min(var(--space-xs),var(--space-8))
 }
 
 .enable-forced-colors .unread__2ea32 {
@@ -2197,4 +2201,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=462b9824939d9a95.css.map*/
+/*# sourceMappingURL=8cefad5c21d8fd64.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: ec0525dbb8f3f897
+  Original File Name: 8535f00a12ea9ff4
 **/
 .container__74da2 {
     position: relative;
@@ -5105,14 +5105,18 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .visual-refresh .panels_c48ade {
+    --custom-panels-spacing: var(--space-xs);
     position: absolute;
     background: var(--bg-overlay-floating,var(--background-base-low));
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-faint);
     left: var(--space-xs);
+    left: var(--custom-panels-spacing);
     bottom: var(--space-xs);
+    bottom: var(--custom-panels-spacing);
     justify-content: space-between;
     width: calc(100% - var(--space-xs)*2);
+    width: calc(100% - var(--custom-panels-spacing)*2);
     box-sizing: border-box
 }
 
@@ -5139,6 +5143,10 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     height: 100%;
     box-sizing: border-box;
     position: relative
+}
+
+.visual-refresh.refresh-fast-follow-avatars .panels_c48ade {
+    --custom-panels-spacing: min(var(--space-xs),var(--space-8))
 }
 
 .visual-refresh.custom-theme-background .panels_c48ade {
@@ -8075,6 +8083,10 @@ html .tabBadge__35e86 {
     background: var(--bg-overlay-app-frame,var(--bg-base-tertiary))
 }
 
+.visual-refresh.refresh-fast-follow-guild-bg .bg__960e4 {
+    background: var(--bg-overlay-app-frame,var(--app-background-frame))
+}
+
 .platform-win .layer__960e4 {
     top: -22px;
     padding-top: 22px
@@ -8851,4 +8863,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=ec0525dbb8f3f897.css.map*/
+/*# sourceMappingURL=8535f00a12ea9ff4.css.map*/

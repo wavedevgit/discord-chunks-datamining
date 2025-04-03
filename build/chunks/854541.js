@@ -98,20 +98,21 @@ function w(e) {
     disabled: l = !1,
     style: u = {},
     onClick: d,
-    "aria-label": _
-  } = e, h = (0, s.JA)("color-".concat(t)), g = null != t ? (0, c.Rf)(t) : u.backgroundColor, b = !1;
+    isGradient: _ = !1,
+    "aria-label": h
+  } = e, g = (0, s.JA)("color-".concat(t)), b = null != t ? (0, c.Rf)(t) : u.backgroundColor, y = !1;
 
-  function y() {
+  function I() {
     let e = 16,
       t = 16;
     if ((i || n) && (e = 32, t = 24), o) return (0, r.jsx)(p.dz2, {
       size: "custom",
       width: e,
       height: t,
-      color: (0, m.Lq)(b ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      color: (0, m.Lq)(y ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
-  return i && !o ? b = !0 : (i || o) && (b = (0, c.Bd)(t) > .1), (0, r.jsx)(f.t, {
+  return i && !o ? y = !0 : (i || o) && (y = (0, c.Bd)(t) > .1), (0, r.jsx)(f.t, {
     offset: -2,
     children: (0, r.jsxs)("button", S(O({
       type: "button",
@@ -119,23 +120,24 @@ function w(e) {
         [v.disabled]: l,
         [v.default]: n,
         [v.custom]: i,
-        [v.noColor]: null == t
+        [v.noColor]: null == t,
+        [v.gradientPreset]: _
       }),
       disabled: l,
       onClick: () => null == d ? void 0 : d(t),
       style: S(O({}, u), {
-        backgroundColor: g
+        backgroundColor: b
       }),
-      "aria-label": null != _ ? _ : g
-    }, h), {
+      "aria-label": null != h ? h : b
+    }, g), {
       children: [i ? (0, r.jsx)(p.vdY, {
         size: "custom",
         className: v.colorPickerDropper,
         colorClass: v.colorPickerDropperFg,
         width: 14,
         height: 14,
-        color: (0, m.Lq)(b ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
-      }) : null, y()]
+        color: (0, m.Lq)(y ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      }) : null, I()]
     }))
   })
 }
@@ -288,59 +290,76 @@ function x(e) {
 let M = i.memo(x);
 
 function k(e) {
+  let t, n;
   let {
-    className: t,
-    defaultColor: n,
-    customColor: i,
-    colors: o,
-    value: c,
-    disabled: u,
-    onChange: d,
-    renderDefaultButton: f,
-    renderCustomButton: _,
-    colorContainerClassName: p
-  } = e, h = e => (0, r.jsx)("div", {
+    className: i,
+    defaultColor: o,
+    customColor: c,
+    colors: u,
+    value: d,
+    disabled: f,
+    onChange: _,
+    renderDefaultButton: p,
+    renderCustomButton: h,
+    colorContainerClassName: m,
+    isGradient: g,
+    renderGradientCustomButton: E
+  } = e, b = e => (0, r.jsx)("div", {
     className: v.colorPickerRow,
     children: e.map(e => (0, r.jsx)(w, {
       color: e,
-      isSelected: e === c,
-      onClick: d,
-      disabled: u
+      isSelected: e === d,
+      onClick: _,
+      disabled: f,
+      isGradient: g
     }, e))
-  }), m = o.slice(0, o.length / 2), g = o.slice(o.length / 2, o.length), E = (0, l.ZP)({
+  });
+  g ? (t = u.slice(0, 6), n = u.slice(6, 12)) : (t = u.slice(0, u.length / 2), n = u.slice(u.length / 2, u.length));
+  let y = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
     scrollToStart: R,
     scrollToEnd: R
   });
   return (0, r.jsx)(s.bG, {
-    navigator: E,
+    navigator: y,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
-          ref: o
-        } = e, s = T(e, ["ref"]);
+          ref: s
+        } = e, l = T(e, ["ref"]);
         return (0, r.jsxs)("div", S(O({
-          className: a()(v.container, t),
-          ref: o
-        }, s), {
-          children: [(0, r.jsx)("div", {
-            className: a()(v.defaultContainer, p),
-            children: f({
-              value: c,
-              color: n,
-              onChange: d,
-              disabled: u
-            })
-          }), (0, r.jsx)("div", {
-            className: a()(v.customContainer, p),
-            children: _({
-              value: c,
-              customColor: i,
-              disabled: u
+          className: a()(v.container, i, {
+            [v.gradient]: g
+          }),
+          ref: s
+        }, l), {
+          children: [!g && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)("div", {
+              className: a()(v.defaultContainer, m),
+              children: p({
+                value: d,
+                color: o,
+                onChange: _,
+                disabled: f
+              })
+            }), (0, r.jsx)("div", {
+              className: a()(v.customContainer, m),
+              children: h({
+                value: d,
+                customColor: c,
+                disabled: f
+              })
+            })]
+          }), g && null != E && (0, r.jsx)("div", {
+            children: E({
+              value: d,
+              startColor: o,
+              endColor: o,
+              disabled: f
             })
           }), (0, r.jsxs)("div", {
-            children: [h(m), h(g)]
+            children: [b(t), b(n)]
           })]
         }))
       }
