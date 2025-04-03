@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(481060),
   l = n(489863),
   c = n(388032),
-  u = n(336944);
+  u = n(340181);
 let d = 5;
 
 function f(e) {
@@ -33,7 +33,7 @@ function f(e) {
     }, [_, n]), i.useEffect(() => {
       g.current && (null == h ? null != f && _(null) : h.channels.some(e => e.id === f) || _(null))
     }, [h, _, f, n]), null == n) return null;
-  let E = null == h || h.guildId !== n ? [] : (null !== (t = null == h ? void 0 : h.channels) && void 0 !== t ? t : []).map(e => ({
+  let E = null == h || h.guildId !== n ? [] : (null != (t = null == h ? void 0 : h.channels) ? t : []).map(e => ({
     value: e.id,
     label: e.name
   }));

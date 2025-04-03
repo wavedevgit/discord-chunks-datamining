@@ -66,11 +66,11 @@ function b(e) {
   t === u.HeQ.PAYPAL && (r = n)
 }
 
-function v() {
+function y() {
   _ = null
 }
 
-function y() {
+function v() {
   p = null
 }(0, c.isDesktop)() && (window.popupBridge = {
   getReturnUrlPrefix: () => {
@@ -101,8 +101,8 @@ let I = new O(l.Z, {
     BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: m,
     BILLING_POPUP_BRIDGE_CALLBACK: E,
     BILLING_POPUP_BRIDGE_STATE_UPDATE: b,
-    BRAINTREE_TEARDOWN_PAYPAL_CLIENT: v,
+    BRAINTREE_TEARDOWN_PAYPAL_CLIENT: y,
     BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: g,
-    BRAINTREE_TEARDOWN_VENMO_CLIENT: y
+    BRAINTREE_TEARDOWN_VENMO_CLIENT: v
   }),
   S = I

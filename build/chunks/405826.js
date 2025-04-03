@@ -28,12 +28,9 @@ let p = 250,
 
 function g(e) {
   var t;
-  e = null !== (t = f.Z[e]) && void 0 !== t ? t : e;
+  e = null != (t = f.Z[e]) ? t : e;
   let n = (0, r.parse)(e.replace(/[_-]/g, "-"));
-  if (null == n || null == n.langtag.language || null == n.langtag.region) {
-    h.error("".concat(e, " is not a valid locale."));
-    return
-  }
+  if (null == n || null == n.langtag.language || null == n.langtag.region) return void h.error("".concat(e, " is not a valid locale."));
   let {
     language: i,
     region: o
@@ -52,7 +49,7 @@ class E {
   }
   setLocale(e) {
     var t;
-    null === (t = m.setLocale(e)) || void 0 === t || t.then(t => {
+    null == (t = m.setLocale(e)) || t.then(t => {
       h.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
     })
   }
@@ -67,7 +64,7 @@ class E {
     return e.forEach(e => {
       var n;
       let [r] = e.split("-");
-      t[r] = null !== (n = t[r]) && void 0 !== n ? n : e
+      t[r] = null != (n = t[r]) ? n : e
     }), t
   }
   isMisspelled(e, t) {
@@ -89,7 +86,7 @@ class E {
       if (-1 !== e.indexOf(i)) this.setLocale(i);
       else {
         var o;
-        let e = null !== (o = r[n]) && void 0 !== o ? o : f.Z[t];
+        let e = null != (o = r[n]) ? o : f.Z[t];
         null != e && this.setLocale(e)
       }
     }), m.on("spellcheck-result", (e, t) => {
@@ -98,19 +95,19 @@ class E {
   }
 }
 let b = o().debounce((e, t) => {
-  let n = y(t);
+  let n = v(t);
   null != n && e.detectLanguage(n)
 }, p);
 
-function v(e) {
+function y(e) {
   null != document.body && document.body.addEventListener("beforeinput", t => b(e, t.target), !0)
 }
 
-function y(e) {
+function v(e) {
   return null == e ? null : (0, a.k)(e, HTMLInputElement) || (0, a.k)(e, HTMLTextAreaElement) ? e.value : (0, a.k)(e) && e.hasAttribute("contenteditable") ? e.textContent : void 0
 }
 async function O() {
   var e;
-  let t = new E((null !== (e = await m.getAvailableDictionaries()) && void 0 !== e ? e : []).map(g).filter(u.lm));
-  return v(t), t
+  let t = new E((null != (e = await m.getAvailableDictionaries()) ? e : []).map(g).filter(u.lm));
+  return y(t), t
 }

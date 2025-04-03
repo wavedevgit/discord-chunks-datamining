@@ -21,8 +21,8 @@ var r = n(990547),
   g = n(944486),
   E = n(914010),
   b = n(594174),
-  v = n(626135),
-  y = n(700785),
+  y = n(626135),
+  v = n(700785),
   O = n(74538),
   I = n(573261),
   S = n(668781),
@@ -127,13 +127,13 @@ let U = {
         loadId: p,
         lurkLocation: h
       } = c,
-      v = null !== (t = c.lurker) && void 0 !== t && t,
-      y = b.default.getCurrentUser();
-    if (null !== (r = null == y ? void 0 : y.hasFlag(T.xW$.QUARANTINED)) && void 0 !== r && r) return (0, u.default)(), new Promise((e, t) => t(Error()));
+      y = null != (t = c.lurker) && t,
+      v = b.default.getCurrentUser();
+    if (null != (r = null == v ? void 0 : v.hasFlag(T.xW$.QUARANTINED)) && r) return (0, u.default)(), new Promise((e, t) => t(Error()));
     a.Z.wait(() => a.Z.dispatch({
       type: "GUILD_JOIN",
       guildId: e,
-      lurker: v,
+      lurker: y,
       source: d,
       loadId: p
     }));
@@ -143,10 +143,10 @@ let U = {
         i = await o.tn.put({
           url: T.ANM.GUILD_JOIN(e),
           query: {
-            lurker: v,
-            session_id: v ? _.default.getSessionId() : null,
+            lurker: y,
+            session_id: y ? _.default.getSessionId() : null,
             recommendation_load_id: p,
-            location: v && null != h ? h : null
+            location: y && null != h ? h : null
           },
           context: {
             source: d
@@ -168,7 +168,7 @@ let U = {
           type: "ONLINE_GUILD_MEMBER_COUNT_UPDATE",
           guildId: i.body.id,
           count: i.body.approximate_presence_count
-        }), !v) {
+        }), !y) {
         let {
           default: t
         } = await Promise.resolve().then(n.bind(n, 17181));
@@ -179,11 +179,11 @@ let U = {
       }
       return i
     } catch (t) {
-      if ((null === (i = t.body) || void 0 === i ? void 0 : i.code) === T.evJ.TOO_MANY_USER_GUILDS) {
+      if ((null == (i = t.body) ? void 0 : i.code) === T.evJ.TOO_MANY_USER_GUILDS) {
         let e = b.default.getCurrentUser();
         O.ZP.canUseIncreasedGuildCap(e) || (null == e ? void 0 : e.isStaff()) ? L(T.tHP) : L(T.DZw)
       }
-      throw (null === (s = t.body) || void 0 === s ? void 0 : s.code) === T.evJ.GUILD_AT_CAPACITY && M(), v && (null === (l = t.body) || void 0 === l ? void 0 : l.code) === T.evJ.UNKNOWN_GUILD && x(e), t
+      throw (null == (s = t.body) ? void 0 : s.code) === T.evJ.GUILD_AT_CAPACITY && M(), y && (null == (l = t.body) ? void 0 : l.code) === T.evJ.UNKNOWN_GUILD && x(e), t
     }
   },
   waitForGuild: k,
@@ -304,7 +304,7 @@ let U = {
     let r = {
       name: null != t && "" !== t ? t : N.NW.string(N.t.QBMHvL),
       color: null != n ? n : 0,
-      permissions: y.Hn
+      permissions: v.Hn
     };
     try {
       let t = await o.tn.post({
@@ -428,7 +428,7 @@ let U = {
     })
   },
   createGuildFolderLocal(e, t) {
-    v.default.track(T.rMx.GUILD_FOLDER_CREATED), a.Z.dispatch({
+    y.default.track(T.rMx.GUILD_FOLDER_CREATED), a.Z.dispatch({
       type: "GUILD_FOLDER_CREATE_LOCAL",
       sourceIds: e,
       name: t
@@ -450,7 +450,7 @@ let U = {
   },
   toggleGuildFolderExpand(e) {
     let t = p.Z.isFolderExpanded(e);
-    v.default.track(T.rMx.GUILD_FOLDER_CLICKED, {
+    y.default.track(T.rMx.GUILD_FOLDER_CLICKED, {
       source: "sidebar",
       action: t ? "collapsed" : "expanded"
     }), a.Z.dispatch({
@@ -477,10 +477,7 @@ let U = {
     })
   },
   nsfwReturnToSafety(e) {
-    if (null == e) {
-      (0, f.uL)(T.Z5c.FRIENDS);
-      return
-    }
+    if (null == e) return void(0, f.uL)(T.Z5c.FRIENDS);
     let t = h.ZP.getDefaultChannel(e);
     null == t || t.isNSFW() ? (0, f.uL)(T.Z5c.FRIENDS) : (0, f.uL)(T.Z5c.CHANNEL(e, t.id))
   },

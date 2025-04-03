@@ -20,16 +20,16 @@ var r = n(200651),
   g = n(713081),
   E = n(905128),
   b = n(50101),
-  v = n(156732),
-  y = n(690786),
+  y = n(156732),
+  v = n(690786),
   O = n(639777),
   I = n(441536),
   S = n(535396),
   T = n(981631),
-  N = n(296260),
+  N = n(680278),
   A = n(388032),
-  C = n(383388),
-  R = n(258892);
+  C = n(840969),
+  R = n(501867);
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ function x(e) {
     onClose: o
   } = e, {
     analyticsLocations: l
-  } = (0, f.ZP)(), g = null != (0, y.Z)(t, n), E = (0, c.e7)([h.Z, m.Z], () => (0, O.D)(m.Z, h.Z.getGuild(t))), [b, S] = i.useState(!1), [P, D] = i.useState(!1), x = P, M = i.useCallback(() => {
+  } = (0, f.ZP)(), g = null != (0, v.Z)(t, n), E = (0, c.e7)([h.Z, m.Z], () => (0, O.D)(m.Z, h.Z.getGuild(t))), [b, S] = i.useState(!1), [P, D] = i.useState(!1), x = P, M = i.useCallback(() => {
     let e = h.Z.getGuild(t);
     null != e && (0, _.u)({
       analyticsLocation: {
@@ -111,7 +111,7 @@ function x(e) {
     config: j
   }), V = i.useCallback(e => {
     e && S(!0)
-  }, []), Z = (0, d.O)(V), H = (0, v.Z)(n);
+  }, []), Z = (0, d.O)(V), H = (0, y.Z)(n);
   return (0, r.jsxs)("div", {
     className: a()(R.topPerksCard, R.animatedTopPerksCard, C.powerupCard, {
       [R.animate]: b
@@ -181,7 +181,7 @@ let M = i.forwardRef((e, t) => {
     s && ((0, g.Sn)(o.id), (0, g.Fm)(o.id))
   }, [s, o.id]);
   let u = (0, c.e7)([E.Z], () => E.Z.getStateForGuild(o.id)),
-    d = null !== (n = null == u ? void 0 : u.catalog.get(S.Us.PERK)) && void 0 !== n ? n : [];
+    d = null != (n = null == u ? void 0 : u.catalog.get(S.Us.PERK)) ? n : [];
   return s && 0 !== d.length ? (0, r.jsxs)("div", {
     ref: t,
     className: C.container,

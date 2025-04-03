@@ -21,8 +21,8 @@ var r, i = n(392711),
   g = n(271383),
   E = n(430824),
   b = n(496675),
-  v = n(699516),
-  y = n(594174),
+  y = n(699516),
+  v = n(594174),
   O = n(981631);
 
 function I(e, t, n) {
@@ -139,7 +139,7 @@ function Y(e) {
   e[S].forEach(e => {
     let {
       channel: r
-    } = e, i = (0, u.F6)(r, y.default, v.Z), o = Object.prototype.hasOwnProperty.call(n, i) ? n[i] : null;
+    } = e, i = (0, u.F6)(r, v.default, y.Z), o = Object.prototype.hasOwnProperty.call(n, i) ? n[i] : null;
     null == o ? n[i] = 1 : (n[i] = o + 1, i += "~".concat(o)), t[r.id] = {
       id: r.id,
       name: i
@@ -240,13 +240,13 @@ function et(e, t) {
 }
 
 function en(e) {
-  et(y.default.getCurrentUser(), e) ? R[e] = !0 : delete R[e]
+  et(v.default.getCurrentUser(), e) ? R[e] = !0 : delete R[e]
 }
 
 function er(e, t) {
   var n;
   P = t;
-  let r = null !== (n = null == e ? void 0 : e.getGuildId()) && void 0 !== n ? n : null;
+  let r = null != (n = null == e ? void 0 : e.getGuildId()) ? n : null;
   if (null == r) return !1;
   A[r] = void 0, r === N && W(r)
 }
@@ -299,7 +299,7 @@ class el extends(r = s.ZP.Store) {
   getFirstChannel(e, t) {
     var n;
     let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-    return null !== (n = this.getFirstChannelOfType(e, t, S)) && void 0 !== n ? n : r ? this.getFirstChannelOfType(e, t, T) : null
+    return null != (n = this.getFirstChannelOfType(e, t, S)) ? n : r ? this.getFirstChannelOfType(e, t, T) : null
   }
   getDefaultChannel(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -332,12 +332,12 @@ class el extends(r = s.ZP.Store) {
   }
   getDirectoryChannelIds(e) {
     var t, n;
-    return null !== (n = null === (t = w[e]) || void 0 === t ? void 0 : t.map(e => {
+    return null != (n = null == (t = w[e]) ? void 0 : t.map(e => {
       let {
         channel: t
       } = e;
       return t.id
-    })) && void 0 !== n ? n : x
+    })) ? n : x
   }
   hasSelectableChannel(e, t) {
     return this.getSelectableChannelIds(e).includes(t)
@@ -353,7 +353,7 @@ class el extends(r = s.ZP.Store) {
   }
   getTextChannelNameDisambiguations(e) {
     var t;
-    return null != e && null !== (t = C[e]) && void 0 !== t ? t : M
+    return null != e && null != (t = C[e]) ? t : M
   }
 }
 I(el, "displayName", "GuildChannelStore");

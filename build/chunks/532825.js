@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e, t) {
+e.exports = function(e, t) {
   if (null == e) return {};
   var n = {};
   for (var r in e)
@@ -7,5 +7,4 @@ function t(e, t) {
       if (t.includes(r)) continue;
       n[r] = e[r]
     } return n
-}
-e.exports = t, e.exports.__esModule = !0, e.exports.default = e.exports
+}, e.exports.__esModule = !0, e.exports.default = e.exports

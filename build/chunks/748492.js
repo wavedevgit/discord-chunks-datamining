@@ -24,8 +24,8 @@ var i = n(120356),
   g = n(189771),
   E = n(560688),
   b = n(618158),
-  v = n(922745),
-  y = n(871499),
+  y = n(922745),
+  v = n(871499),
   O = n(402113),
   I = n(800965),
   S = n(157813),
@@ -37,15 +37,15 @@ var i = n(120356),
   P = n(981631),
   w = n(231338),
   D = n(388032),
-  L = n(720275),
-  x = n(435465);
+  L = n(816083),
+  x = n(992955);
 
 function M(e) {
   let {
     onClick: t,
     isExpanded: n
   } = e;
-  return (0, r.jsx)(y.Z, {
+  return (0, r.jsx)(v.Z, {
     iconClassName: o()(L.arrowIcon, {
       [L.arrowIconExpanded]: n
     }),
@@ -61,13 +61,13 @@ function k(e) {
     channel: i,
     applicationId: o,
     onMouseDown: l,
-    onMouseMove: y,
+    onMouseMove: v,
     onMouseLeave: S,
     onJumpToChannel: C,
     idle: D,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null === (t = null == G ? void 0 : G.disabled) || void 0 === t || t), F = (0, f.Z)([o])[0], V = (0, g.Z)(i), {
+  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), F = (0, f.Z)([o])[0], V = (0, g.Z)(i), {
     parentAnalyticsLocation: Z
   } = (0, d.ZP)(), H = e => {
     (0, p.v)(Z, p.d.CAMERA, e), c.Z.setVideoEnabled(e)
@@ -78,14 +78,14 @@ function k(e) {
   };
   return (0, r.jsxs)("div", {
     className: x.videoControls,
-    onMouseMove: y,
+    onMouseMove: v,
     onMouseDown: l,
     onMouseLeave: S,
     children: [(0, r.jsx)("div", {
       className: x.topControls,
-      children: (0, r.jsx)(v.r, {
+      children: (0, r.jsx)(y.r, {
         idle: D,
-        title: null !== (n = null == F ? void 0 : F.name) && void 0 !== n ? n : i.name,
+        title: null != (n = null == F ? void 0 : F.name) ? n : i.name,
         onJumpToChannel: C,
         preventIdleComponent: b.Z
       })
@@ -156,9 +156,9 @@ function j(e) {
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
       className: x.topControls,
-      children: (0, r.jsx)(v.r, {
+      children: (0, r.jsx)(y.r, {
         idle: d,
-        title: null !== (t = null == h ? void 0 : h.name) && void 0 !== t ? t : n.name,
+        title: null != (t = null == h ? void 0 : h.name) ? t : n.name,
         onJumpToChannel: u,
         preventIdleComponent: b.Z
       })
@@ -222,9 +222,9 @@ function G(e) {
         color: "currentColor",
         className: L.menuIcon
       }), s && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(v.r, {
+        children: [(0, r.jsx)(y.r, {
           idle: !s,
-          title: null !== (t = null == g ? void 0 : g.name) && void 0 !== t ? t : u.name,
+          title: null != (t = null == g ? void 0 : g.name) ? t : u.name,
           onJumpToChannel: d,
           preventIdleComponent: b.Z
         }), (0, r.jsxs)("div", {

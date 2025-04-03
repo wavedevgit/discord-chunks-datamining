@@ -22,9 +22,9 @@ var i = n(252258),
   g = n(317381),
   E = n(719296),
   b = n(958185),
-  v = n(981631);
+  y = n(981631);
 
-function y(e, t, n) {
+function v(e, t, n) {
   if ((0, m.R)({
       isContextless: t.location.kind === i.E.CONTEXTLESS
     }) || d.Z.isOpen(n)) return !1;
@@ -32,7 +32,7 @@ function y(e, t, n) {
     let e = r;
     o.Z.wait(() => a.xv(e))
   }
-  o.Z.wait(() => a.bA(n, v.NYg.EMBED_IFRAME, {
+  o.Z.wait(() => a.bA(n, y.NYg.EMBED_IFRAME, {
     channel: e
   })), r = n
 }
@@ -54,12 +54,12 @@ function S(e) {
 
 function T() {
   let e = g.ZP.getConnectedActivityChannelId(),
-    t = g.ZP.getSelfEmbeddedActivityForChannel(null != e ? e : v.lds),
+    t = g.ZP.getSelfEmbeddedActivityForChannel(null != e ? e : y.lds),
     n = c.Z.getChannel(e);
   if (null == e || null == n || null == t) return O();
   {
     let e = (0, E.Z)(t.location.id, t.applicationId);
-    return y(n, t, e)
+    return v(n, t, e)
   }
 }
 

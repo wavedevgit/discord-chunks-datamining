@@ -12,7 +12,7 @@ var r = n(200651),
   c = n(555573),
   u = n(665692),
   d = n(388032),
-  f = n(848907);
+  f = n(168362);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,16 +59,14 @@ function g(e) {
       className: g,
       activeCommand: E,
       activeOption: b,
-      optionStates: v,
-      channelId: y
+      optionStates: y,
+      channelId: v
     } = e,
     O = i.useCallback(e => {
       var t;
-      let i = null == E ? void 0 : null === (t = E.rootCommand) || void 0 === t ? void 0 : t.id;
-      if (null == i) {
-        e.preventDefault();
-        return
-      }(0, s.jW)(e, async () => {
+      let i = null == E || null == (t = E.rootCommand) ? void 0 : t.id;
+      if (null == i) return void e.preventDefault();
+      (0, s.jW)(e, async () => {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
@@ -77,17 +75,17 @@ function g(e) {
           label: d.NW.string(d.t.oJ1Mu7)
         }))
       })
-    }, [null == E ? void 0 : null === (t = E.rootCommand) || void 0 === t ? void 0 : t.id]),
+    }, [null == E || null == (t = E.rootCommand) ? void 0 : t.id]),
     I = i.useCallback(() => {
       c.Po({
-        channelId: y,
+        channelId: v,
         command: null,
         section: null
       })
-    }, [y]);
+    }, [v]);
   if (null == E) return null;
   if (null != b) {
-    let e = v[b.name].lastValidationResult;
+    let e = y[b.name].lastValidationResult;
     o = b.displayName, _ = b.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
   } else o = "".concat(u.GI).concat(E.displayName), _ = E.displayDescription, h = null;
   return (0, r.jsxs)("div", {

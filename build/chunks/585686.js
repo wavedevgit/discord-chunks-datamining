@@ -10,7 +10,7 @@ function i(e) {
   let {
     stepConfigs: n,
     breadcrumbs: i
-  } = e, [o, a] = r.useState(null === (t = n[0]) || void 0 === t ? void 0 : t.key), s = r.useRef(null);
+  } = e, [o, a] = r.useState(null == (t = n[0]) ? void 0 : t.key), s = r.useRef(null);
   return r.useEffect(() => {
     s.current = o
   }, [s, o]), {
@@ -19,7 +19,7 @@ function i(e) {
     setStep: a,
     breadcrumbsData: n.filter(e => {
       var t;
-      return null != e.key && (null == e ? void 0 : null === (t = e.options) || void 0 === t ? void 0 : t.useBreadcrumbLabel) != null
+      return null != e.key && (null == e || null == (t = e.options) ? void 0 : t.useBreadcrumbLabel) != null
     }).map(e => ({
       id: e.key,
       useBreadcrumbLabel: e.options.useBreadcrumbLabel

@@ -75,8 +75,8 @@ let _ = e => {
     } = e,
     h = d(e, ["size", "width", "height", "color", "colorClass"]);
   let m = (0, a.m)(s),
-    g = null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : c,
-    E = null !== (n = null == m ? void 0 : m.height) && void 0 !== n ? n : f;
+    g = null != (t = null == m ? void 0 : m.width) ? t : c,
+    E = null != (n = null == m ? void 0 : m.height) ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, o.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,

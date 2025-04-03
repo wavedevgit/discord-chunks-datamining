@@ -45,27 +45,27 @@ function u(e) {
   } = e, [a, u] = i.useState(!1), d = i.useRef(new Set), f = i.useRef(null);
   i.useEffect(() => (f.current = new o.sW(n, () => u(!0)), f.current.delay(), () => {
     var e;
-    null === (e = f.current) || void 0 === e || e.cancel(), f.current = null
+    null == (e = f.current) || e.cancel(), f.current = null
   }), [n]);
   let _ = i.useCallback(e => {
       var t;
-      u(!1), d.current.add(e), null === (t = f.current) || void 0 === t || t.cancel()
+      u(!1), d.current.add(e), null == (t = f.current) || t.cancel()
     }, [d, f, u]),
     p = i.useCallback(e => {
       if (d.current.delete(e), 0 === d.current.size) {
         var t;
-        null === (t = f.current) || void 0 === t || t.delay()
+        null == (t = f.current) || t.delay()
       }
     }, [d, f]),
     h = i.useCallback(() => {
       if (u(!1), 0 === d.current.size) {
         var e;
-        null === (e = f.current) || void 0 === e || e.delay()
+        null == (e = f.current) || e.delay()
       }
     }, [d, f, u]),
     m = i.useCallback(() => {
       var e;
-      !(d.current.size > 0) && (null === (e = f.current) || void 0 === e || e.cancel(), u(!0))
+      d.current.size > 0 || (null == (e = f.current) || e.cancel(), u(!0))
     }, [f, u]),
     g = i.useMemo(() => ({
       onAllowIdle: p,

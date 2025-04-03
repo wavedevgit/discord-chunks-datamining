@@ -41,7 +41,7 @@ function g(e) {
   let i = l.ZP.getMember(n.id, r.id);
   if (null != i) {
     var s;
-    if ((0, a.yE)(null !== (s = i.flags) && void 0 !== s ? s : 0, f.q.BYPASSES_VERIFICATION)) return;
+    if ((0, a.yE)(null != (s = i.flags) ? s : 0, f.q.BYPASSES_VERIFICATION)) return;
     let e = new Set;
     for (let t of i.roles) {
       let r = c.Z.getRole(n.id, t);
@@ -55,21 +55,21 @@ function g(e) {
     p = +n.joinedAt + 6e4 * d.YeM.MEMBER_AGE - Date.now(),
     g = n.verificationLevel >= d.sFg.LOW && !r.isClaimed(),
     b = !1,
-    v = !1,
     y = !1,
+    v = !1,
     O = !1;
-  r.isPhoneVerified() || r.isStaff() || (b = n.verificationLevel >= d.sFg.LOW && !r.verified, v = n.verificationLevel >= d.sFg.VERY_HIGH, y = n.verificationLevel >= d.sFg.MEDIUM && _ > 0, O = n.verificationLevel >= d.sFg.HIGH && p > 0);
+  r.isPhoneVerified() || r.isStaff() || (b = n.verificationLevel >= d.sFg.LOW && !r.verified, y = n.verificationLevel >= d.sFg.VERY_HIGH, v = n.verificationLevel >= d.sFg.MEDIUM && _ > 0, O = n.verificationLevel >= d.sFg.HIGH && p > 0);
   let I = [];
-  O && I.push(p), y && I.push(_), I.length > 0 && (t = setTimeout(() => o.Z.dispatch({
+  O && I.push(p), v && I.push(_), I.length > 0 && (t = setTimeout(() => o.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
   }), Math.max(...I))), m[e] = {
     notClaimed: g,
     notEmailVerified: b,
-    notPhoneVerified: v,
-    newAccount: y,
+    notPhoneVerified: y,
+    newAccount: v,
     newMember: O,
-    canChat: !(g || b || v || y || O),
+    canChat: !(g || b || y || v || O),
     accountDeadline: new Date(Date.now() + _),
     memberDeadline: new Date(Date.now() + p),
     timeoutRef: t
@@ -85,11 +85,11 @@ function b() {
   for (let e in h.clear(), m) E(e)
 }
 
-function v() {
+function y() {
   s.default.keys(m).forEach(E)
 }
 
-function y(e) {
+function v(e) {
   h.delete(e.guild.id), g(e.guild.id)
 }
 
@@ -106,7 +106,7 @@ function I(e) {
     guildId: n,
     user: r
   } = e;
-  if (r.id !== (null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
+  if (r.id !== (null == (t = u.default.getCurrentUser()) ? void 0 : t.id)) return !1;
   h.delete(n)
 }
 
@@ -126,7 +126,7 @@ class N extends(r = i.ZP.Store) {
   }
   getCheck(e) {
     var t;
-    return null == e ? p : (h.has(e) || g(e), null !== (t = m[e]) && void 0 !== t ? t : p)
+    return null == e ? p : (h.has(e) || g(e), null != (t = m[e]) ? t : p)
   }
   canChatInGuild(e) {
     return this.getCheck(e).canChat
@@ -135,10 +135,10 @@ class N extends(r = i.ZP.Store) {
 _(N, "displayName", "GuildVerificationStore");
 let A = new N(o.Z, {
   CONNECTION_OPEN: b,
-  CONNECTION_CLOSED: v,
+  CONNECTION_CLOSED: y,
   CURRENT_USER_UPDATE: S,
-  GUILD_CREATE: y,
-  GUILD_UPDATE: y,
+  GUILD_CREATE: v,
+  GUILD_UPDATE: v,
   GUILD_DELETE: O,
   GUILD_MEMBER_UPDATE: I,
   GUILD_VERIFICATION_CHECK: T

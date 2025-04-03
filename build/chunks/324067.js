@@ -37,7 +37,7 @@ function b(e, t) {
   e.index = t
 }
 
-function v(e) {
+function y(e) {
   let t = u.ZP.getChannels(e),
     n = g(),
     r = e => {
@@ -45,7 +45,7 @@ function v(e) {
       let {
         channel: r
       } = e;
-      (null !== (t = n[null != r.parent_id ? r.parent_id : "null"]) && void 0 !== t ? t : n.null).push({
+      (null != (t = n[null != r.parent_id ? r.parent_id : "null"]) ? t : n.null).push({
         channel: r,
         index: -1
       })
@@ -61,8 +61,8 @@ function v(e) {
   }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, a.Z)(n._categories, n).forEach(b), h[e] = n, n
 }
 
-function y() {
-  h = {}, null != p && v(p)
+function v() {
+  h = {}, null != p && y(p)
 }
 
 function O(e) {
@@ -71,7 +71,7 @@ function O(e) {
       id: t
     }
   } = e;
-  h[t] = void 0, p === t && v(t)
+  h[t] = void 0, p === t && y(t)
 }
 
 function I(e) {
@@ -90,7 +90,7 @@ function S(e) {
     }
   } = e;
   if (null == t) return !1;
-  h[t] = void 0, p === t && v(t)
+  h[t] = void 0, p === t && y(t)
 }
 
 function T(e) {
@@ -100,7 +100,7 @@ function T(e) {
   for (let {
       guild_id: e
     }
-    of t) null != e && (h[e] = void 0, n = !0, p === e && v(e));
+    of t) null != e && (h[e] = void 0, n = !0, p === e && y(e));
   return n
 }
 
@@ -110,25 +110,25 @@ function N(e) {
     user: n
   } = e;
   if (l.default.getId() !== n.id) return !1;
-  h[t] = void 0, t === p && v(t)
+  h[t] = void 0, t === p && y(t)
 }
 
 function A() {
   if (null == p) return !1;
-  v(p)
+  y(p)
 }
 
 function C(e) {
   let {
     guildId: t
   } = e;
-  h[t] = void 0, t === p && v(t)
+  h[t] = void 0, t === p && y(t)
 }
 
 function R(e, t) {
   if (m = t, null == e || null == e.getGuildId()) return !1;
   let n = e.getGuildId();
-  return null != n && (h[n] = void 0, n === p && v(n), !0)
+  return null != n && (h[n] = void 0, n === p && y(n), !0)
 }
 
 function P(e) {
@@ -156,16 +156,16 @@ function D(e) {
     guildId: t
   } = e;
   if (p = null != t ? t : null, null == t || null != h[t]) return !1;
-  v(t)
+  y(t)
 }
 
 function L() {
-  v(f.I_8)
+  y(f.I_8)
 }
 
 function x(e) {
   let t = h[e];
-  return null != t ? t : v(e)
+  return null != t ? t : y(e)
 }
 class M extends(r = i.ZP.Store) {
   initialize() {
@@ -178,9 +178,9 @@ class M extends(r = i.ZP.Store) {
 _(M, "displayName", "GuildCategoryStore");
 let k = new M(o.Z, {
   CHANNEL_SELECT: D,
-  CONNECTION_OPEN: y,
-  OVERLAY_INITIALIZE: y,
-  CACHE_LOADED_LAZY: y,
+  CONNECTION_OPEN: v,
+  OVERLAY_INITIALIZE: v,
+  CACHE_LOADED_LAZY: v,
   GUILD_CREATE: O,
   GUILD_UPDATE: O,
   GUILD_DELETE: I,

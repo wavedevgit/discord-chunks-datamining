@@ -22,8 +22,8 @@ var r = n(200651),
   g = n(98278),
   E = n(741245),
   b = n(931331),
-  v = n(55935),
-  y = n(70956),
+  y = n(55935),
+  v = n(70956),
   O = n(63063),
   I = n(74538),
   S = n(272008),
@@ -32,7 +32,7 @@ var r = n(200651),
   A = n(675654),
   C = n(474936),
   R = n(388032),
-  P = n(883020),
+  P = n(639220),
   w = n(499018),
   D = n(946790);
 
@@ -43,18 +43,15 @@ function L(e) {
     onClose: h,
     quest: m,
     location: g
-  } = e, E = i.useRef(null), [b, v] = i.useState(null), y = i.useRef(new s.qA), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), I = (null === (t = m.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
+  } = e, E = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), I = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
     state: "loading"
   });
   i.useEffect(() => {
     I || (0, S.QB)(m.id, T.y$.CROSS_PLATFORM, g).then(e => {
-      if ((null == e ? void 0 : e.claimedAt) != null) {
-        C({
-          state: "claimed",
-          entitlements: e
-        });
-        return
-      }
+      if ((null == e ? void 0 : e.claimedAt) != null) return void C({
+        state: "claimed",
+        entitlements: e
+      });
       C({
         state: "error",
         errorReason: 0
@@ -71,9 +68,9 @@ function L(e) {
     D = "claimed" === N.state && null != N.entitlements && N.entitlements.items.some(e => e.consumed);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
-      ref: v,
+      ref: y,
       className: P.confettiCanvas,
-      environment: y.current
+      environment: v.current
     }), (0, r.jsx)("div", {
       ref: E,
       children: (0, r.jsx)(c.Y0X, {
@@ -89,10 +86,10 @@ function L(e) {
           errorReason: N.errorReason,
           onClose: h
         }) : D ? (0, r.jsx)(k, {
-          duration: M(null !== (u = null === (n = N.entitlements) || void 0 === n ? void 0 : n.items) && void 0 !== u ? u : []),
+          duration: M(null != (u = null == (n = N.entitlements) ? void 0 : n.items) ? u : []),
           onClose: h
         }) : (0, r.jsx)(j, {
-          duration: M(null !== (d = null === (o = N.entitlements) || void 0 === o ? void 0 : o.items) && void 0 !== d ? d : []),
+          duration: M(null != (d = null == (o = N.entitlements) ? void 0 : o.items) ? d : []),
           onClose: h
         })
       })
@@ -146,8 +143,8 @@ function M(e) {
       hours: R.t["C3RO+v"],
       minutes: R.t.r77oHR
     },
-    r = (0, v.TD)(0, t * y.Z.Millis.HOUR);
-  return (0, v.QX)(r, n)
+    r = (0, y.TD)(0, t * v.Z.Millis.HOUR);
+  return (0, y.QX)(r, n)
 }
 
 function k(e) {
@@ -158,7 +155,7 @@ function k(e) {
     theme: o
   } = (0, c.TCT)(), a = (0, _.Z)({
     forceFetch: !0
-  }), s = (0, v.vc)(a.endsAt, "L"), l = i.useCallback(() => {
+  }), s = (0, y.vc)(a.endsAt, "L"), l = i.useCallback(() => {
     (0, g.$)(n)
   }, [n]);
   return a.fractionalState === C.a$.NONE ? (0, r.jsx)("div", {
@@ -218,7 +215,7 @@ function j(e) {
     theme: o
   } = (0, c.TCT)(), s = (0, _.Z)({
     forceFetch: !0
-  }), l = (0, v.vc)(s.endsAt, "L"), d = i.useCallback(() => {
+  }), l = (0, y.vc)(s.endsAt, "L"), d = i.useCallback(() => {
     u.Z.open(N.oAB.SUBSCRIPTIONS, null, {}), n()
   }, [n]);
   return s.fetched ? s.isFractionalPremiumActive ? (0, r.jsxs)(r.Fragment, {
@@ -324,7 +321,7 @@ function U(e) {
     transitionState: a
   } = e, s = (0, d.Z)(() => {
     var e;
-    return (null === (e = t.userStatus) || void 0 === e ? void 0 : e.claimedAt) != null
+    return (null == (e = t.userStatus) ? void 0 : e.claimedAt) != null
   });
   return (i.useEffect(() => {
     s && o()

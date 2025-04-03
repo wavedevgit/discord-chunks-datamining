@@ -54,8 +54,8 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = "DELETED",
-  y = new Map,
+let y = "DELETED",
+  v = new Map,
   O = {};
 
 function I(e) {
@@ -63,7 +63,7 @@ function I(e) {
 }
 
 function S(e, t) {
-  O[e] = t, y.set(e, o()())
+  O[e] = t, v.set(e, o()())
 }
 
 function T(e, t, n) {
@@ -136,7 +136,7 @@ function B(e) {
     request: r
   } = e, i = (0, p.j)(r), o = u.default.getCurrentUser();
   if (null == o || i.userId === o.id) return !1;
-  let a = null === (t = j(i.joinRequestId)) || void 0 === t ? void 0 : t.applicationStatus;
+  let a = null == (t = j(i.joinRequestId)) ? void 0 : t.applicationStatus;
   return T(n, i.applicationStatus, a), G(i), !0
 }
 
@@ -145,7 +145,7 @@ function F(e) {
     id: t,
     guildId: n
   } = e, r = j(t);
-  null != r && (T(n, v, r.applicationStatus), U(t))
+  null != r && (T(n, y, r.applicationStatus), U(t))
 }
 
 function V(e) {
@@ -178,7 +178,7 @@ function Y(e) {
   } = e;
   if (r === W[n]) return;
   W[n] = r;
-  let i = null !== (t = Z[n]) && void 0 !== t ? t : _.wB.SUBMITTED;
+  let i = null != (t = Z[n]) ? t : _.wB.SUBMITTED;
   "REVIEW_APPLICATION" !== i && ((0, f.bk)(i) && k.clear(), (0, f.Nd)(i) && M.clear())
 }
 let K = {};
@@ -207,8 +207,8 @@ class X extends(r = a.ZP.Store) {
     return A
   }
   hasFetched(e) {
-    if (!y.has(e)) return !1;
-    let t = y.get(e);
+    if (!v.has(e)) return !1;
+    let t = v.get(e);
     return null != t && o()().diff(t, "seconds") < Q
   }
   getSelectedApplicationTab(e) {
@@ -216,11 +216,11 @@ class X extends(r = a.ZP.Store) {
     let n = c.Z.getGuild(e),
       r = this.getRequests(e, _.wB.SUBMITTED).length > 0,
       i = (null == n ? void 0 : n.hasFeature(h.oNc.CLAN)) && !r ? "REVIEW_APPLICATION" : _.wB.SUBMITTED;
-    return null !== (t = Z[e]) && void 0 !== t ? t : i
+    return null != (t = Z[e]) ? t : i
   }
   getSelectedSortOrder(e) {
     var t;
-    return null !== (t = W[e]) && void 0 !== t ? t : _.Nw.TIMESTAMP_DESC
+    return null != (t = W[e]) ? t : _.Nw.TIMESTAMP_DESC
   }
   getSelectedGuildJoinRequest(e) {
     let t = K[e];

@@ -62,7 +62,7 @@ function g(e) {
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null !== (t = h[n]) && void 0 !== t ? t : p.lastSeenNewlyAddedEmojiIds[n];
+  } = e, i = null != (t = h[n]) ? t : p.lastSeenNewlyAddedEmojiIds[n];
   null == i || 0 > l.default.compare(i.id, r) ? h[n] = {
     id: r,
     lastSeen: Date.now(),
@@ -77,7 +77,7 @@ function E(e) {
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null !== (t = h[n]) && void 0 !== t ? t : p.lastSeenNewlyAddedEmojiIds[n];
+  } = e, i = null != (t = h[n]) ? t : p.lastSeenNewlyAddedEmojiIds[n];
   (null == i || 0 > l.default.compare(i.id, r)) && (h[n] = {
     id: r,
     lastSeen: Date.now(),
@@ -89,10 +89,10 @@ function b() {
   for (let e in h) p.lastSeenNewlyAddedEmojiIds[e] = h[e]
 }
 
-function v() {
+function y() {
   p = _, b()
 }
-class y extends(r = a.ZP.PersistedStore) {
+class v extends(r = a.ZP.PersistedStore) {
   initialize(e) {
     p = null != e ? e : _
   }
@@ -112,7 +112,7 @@ class y extends(r = a.ZP.PersistedStore) {
     }
   }
 }
-c(y, "displayName", "NewlyAddedEmojiStore"), c(y, "persistKey", "NewlyAddedEmojiStore"), c(y, "migrations", [e => {
+c(v, "displayName", "NewlyAddedEmojiStore"), c(v, "persistKey", "NewlyAddedEmojiStore"), c(v, "migrations", [e => {
   let t = e.lastSeenNewlyAddedEmojiIds,
     n = {};
   for (let e in t) {
@@ -127,11 +127,11 @@ c(y, "displayName", "NewlyAddedEmojiStore"), c(y, "persistKey", "NewlyAddedEmoji
     lastSeenNewlyAddedEmojiIds: n
   }
 }]);
-let O = new y(s.Z, {
+let O = new v(s.Z, {
   LOGOUT: m,
   NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
   NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
   NEWLY_ADDED_EMOJI_SEEN_UPDATED: b,
-  CLEAR_CACHES: v,
+  CLEAR_CACHES: y,
   CONNECTION_CLOSED: b
 })

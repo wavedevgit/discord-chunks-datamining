@@ -41,7 +41,7 @@ function p(e) {
   } = e, i = l[n], o = new Date().toISOString(), s = 0, c = 0;
   if (null != i) {
     var u;
-    s = i.total_duration, c = null !== (u = i.total_discord_sku_duration) && void 0 !== u ? u : 0
+    s = i.total_duration, c = null != (u = i.total_discord_sku_duration) ? u : 0
   }
   s += t, r === a.GQo.DISCORD && (c += t), l[n] = {
     application_id: n,

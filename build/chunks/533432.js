@@ -15,7 +15,7 @@ var r = n(200651),
   f = n(149203),
   _ = n(981631),
   p = n(388032),
-  h = n(746177);
+  h = n(539490);
 let m = i.forwardRef(function(e, t) {
     let {
       emojiListRef: n,
@@ -24,11 +24,11 @@ let m = i.forwardRef(function(e, t) {
       onKeyDown: g,
       onFocus: E,
       autoFocus: b,
-      className: v,
-      defaultSearchPlaceholder: y
+      className: y,
+      defaultSearchPlaceholder: v
     } = e, O = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [S, T] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), N = i.useCallback(e => {
       var t;
-      u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null === (t = n.current) || void 0 === t || t.scrollTo(0)
+      u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null == (t = n.current) || t.scrollTo(0)
     }, [n]), A = i.useCallback(() => {
       (0, d.ql)("")
     }, []), C = e => {
@@ -44,19 +44,19 @@ let m = i.forwardRef(function(e, t) {
     return i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;
-        return null === (e = O.current) || void 0 === e ? void 0 : e.focus()
+        return null == (e = O.current) ? void 0 : e.focus()
       }
     })), (0, r.jsx)(c.E1j, {
       autoFocus: b,
       query: I,
       ref: O,
       size: c.E1j.Sizes.MEDIUM,
-      placeholder: null != T ? T : y,
+      placeholder: null != T ? T : v,
       onClear: A,
       onKeyDown: C,
       onFocus: E,
       onChange: N,
-      className: a()(v, {
+      className: a()(y, {
         [h.searchBarFullRow]: m
       }),
       inputProps: {

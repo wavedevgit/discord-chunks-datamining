@@ -13,7 +13,7 @@ let l = [s.vA.WINDOW, s.vA.SCREEN];
 function c(e, t, n) {
   var r;
   let o = window.DiscordNative;
-  i()(null != o, "Can't get desktop sources outside of native app"), t = null !== (r = null == t ? void 0 : t.filter(e => l.includes(e))) && void 0 !== r ? r : l, n = null != n ? n : {
+  i()(null != o, "Can't get desktop sources outside of native app"), t = null != (r = null == t ? void 0 : t.filter(e => l.includes(e))) ? r : l, n = null != n ? n : {
     width: 150,
     height: 150
   };

@@ -20,15 +20,15 @@ let u = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   g = '(?:[/?#][^\\s"]*)?',
   E = RegExp("(?:".concat(d, "|www\\.)").concat(f, "(?:localhost|").concat(_, "|").concat(p).concat(h, ")").concat(m).concat(g), "ig"),
   b = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]),
-  v = !1;
+  y = !1;
 
-function y(e) {
+function v(e) {
   return b.has(e.toLowerCase())
 }
 
 function O(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return null != e && (u.test(e) || t && y(e))
+  return null != e && (u.test(e) || t && v(e))
 }
 
 function I(e) {
@@ -39,7 +39,7 @@ function S(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null != e) {
     var n;
-    let r = null === (n = l.Z.toURLSafe(e)) || void 0 === n ? void 0 : n.hostname;
+    let r = null == (n = l.Z.toURLSafe(e)) ? void 0 : n.hostname;
     if (null != r && O(r, t)) return !0
   }
   return !1
@@ -88,7 +88,7 @@ let N = {
     }
   },
   makeUrl: function(e) {
-    let t = v ? window.GLOBAL_ENV.INVITE_HOST : location.host;
+    let t = y ? window.GLOBAL_ENV.INVITE_HOST : location.host;
     return "".concat(location.protocol, "//").concat(t).concat(e)
   }
 }

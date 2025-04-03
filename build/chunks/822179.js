@@ -66,10 +66,10 @@ let E = 20,
     afterCompute: () => {},
     numFrequentlyItems: E
   }),
-  v = () => {
+  y = () => {
     d.Z.isLoaded && b.compute()
   },
-  y = e => {
+  v = e => {
     let {
       stickerIds: t
     } = e;
@@ -78,15 +78,15 @@ let E = 20,
         key: e,
         timestamp: Date.now()
       })
-    }), v()
+    }), y()
   },
   O = () => {
-    v()
+    y()
   };
 
 function I() {
   var e;
-  let t = null === (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) || void 0 === e ? void 0 : e.stickers;
+  let t = null == (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? void 0 : e.stickers;
   if (null == t) return !1;
   b.overwriteHistory(o().mapValues(t, e => m(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
@@ -119,6 +119,6 @@ class T extends(r = a.ZP.PersistedStore) {
 }
 _(T, "displayName", "StickersPersistedStore"), _(T, "persistKey", "StickersPersistedStoreV2");
 let N = new T(s.Z, {
-  STICKER_TRACK_USAGE: y,
+  STICKER_TRACK_USAGE: v,
   USER_SETTINGS_PROTO_UPDATE: S
 })

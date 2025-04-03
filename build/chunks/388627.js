@@ -59,9 +59,9 @@ function p() {
     g = n.getGameForPID(m),
     E = r.getActivityForPID(m);
   return (null == g || null == g.id || null == g.name) && (null == E || null == E.application_id) ? void 0 : {
-    id: null !== (e = null == g ? void 0 : g.id) && void 0 !== e ? e : null == E ? void 0 : E.application_id,
+    id: null != (e = null == g ? void 0 : g.id) ? e : null == E ? void 0 : E.application_id,
     altId: null == E ? void 0 : E.application_id,
-    name: null !== (t = null == g ? void 0 : g.name) && void 0 !== t ? t : null == E ? void 0 : E.name
+    name: null != (t = null == g ? void 0 : g.name) ? t : null == E ? void 0 : E.name
   }
 }
 

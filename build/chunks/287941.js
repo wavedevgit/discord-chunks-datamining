@@ -97,7 +97,7 @@ let d = () => {
       a = arguments.length > 3 ? arguments[3] : void 0;
     if (!d()) return;
     let l = (0, c.Eq)(e),
-      f = (null == l ? void 0 : null === (t = l.emoji) || void 0 === t ? void 0 : t[0].id) == null,
+      f = (null == l || null == (t = l.emoji) ? void 0 : t[0].id) == null,
       {
         shouldPlay: p,
         failureReason: h

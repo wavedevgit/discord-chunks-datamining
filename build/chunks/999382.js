@@ -10,8 +10,8 @@ var _, p = n(392711),
   g = n.n(m),
   E = n(442837),
   b = n(544891),
-  v = n(433517),
-  y = n(570140),
+  y = n(433517),
+  v = n(570140),
   O = n(749210),
   I = n(314852),
   S = n(131704),
@@ -126,7 +126,7 @@ function em(e) {
   if (null == _) return eg();
   let p = I.Z.getProfile(n);
   a = s = _, l = c = p, J = X, ee = $, K = M.QZA.OPEN, z = {}, q = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, f = null, ei = d, eb({
-    section: null !== (t = null != i ? i : r) && void 0 !== t ? t : (0, x.r)(n),
+    section: null != (t = null != i ? i : r) ? t : (0, x.r)(n),
     subsection: null != o ? o : null
   })
 }
@@ -158,7 +158,7 @@ function eb(e) {
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => {
-    y.Z.dispatch({
+    v.Z.dispatch({
       type: "GUILD_SETTINGS_LOADED_INVITES",
       invites: e.body
     })
@@ -166,17 +166,17 @@ function eb(e) {
   else if (r === M.pNK.WIDGET)(0, D.R)(s.id);
   else if (r === M.pNK.INTEGRATIONS || r === M.pNK.ROLES) {
     if (u = null, t !== e.section) return eK(e)
-  } else r === M.pNK.MEMBERS ? u = s.getEveryoneRoleId() : r === M.pNK.VANITY_URL ? (0, L.U5)(s.id) : r === M.pNK.SAFETY && y.Z.dispatch({
+  } else r === M.pNK.MEMBERS ? u = s.getEveryoneRoleId() : r === M.pNK.VANITY_URL ? (0, L.U5)(s.id) : r === M.pNK.SAFETY && v.Z.dispatch({
     type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION",
     subsection: null == i ? M.KsC.SAFETY_OVERVIEW : i
   })
 }
 
-function ev(e) {
+function ey(e) {
   o = e.searchQuery
 }
 
-function ey(e) {
+function ev(e) {
   let {
     guildId: t
   } = e;
@@ -195,7 +195,7 @@ function eI() {
 
 function eS(e) {
   var t;
-  K = M.QZA.OPEN, r = null != r ? r : (0, x.r)(null == s ? void 0 : s.id), i = null, z = null !== (t = e.errors) && void 0 !== t ? t : {}
+  K = M.QZA.OPEN, r = null != r ? r : (0, x.r)(null == s ? void 0 : s.id), i = null, z = null != (t = e.errors) ? t : {}
 }
 
 function eT() {
@@ -239,7 +239,7 @@ function eC(e) {
     uses: e.uses,
     maxUses: e.max_uses,
     maxAge: e.max_age,
-    createdAt: g()(null !== (t = e.created_at) && void 0 !== t ? t : void 0),
+    createdAt: g()(null != (t = e.created_at) ? t : void 0),
     flags: e.flags
   })
 }
@@ -301,10 +301,7 @@ function ek(e) {
       n = s.toJS();
     Z.forEach(e => {
       if (!W.has(e) && ("rulesChannelId" !== e && "publicUpdatesChannelId" !== e || n[e] !== j.b4)) {
-        if ("features" === e) {
-          t.set(e, new Set(n[e]));
-          return
-        }
+        if ("features" === e) return void t.set(e, new Set(n[e]));
         t = t.set(e, n[e])
       }
     }), s = t
@@ -362,7 +359,7 @@ function eZ(e) {
 
 function eH(e) {
   var t;
-  et = null !== (t = e.code) && void 0 !== t ? t : null, en = e.uses
+  et = null != (t = e.code) ? t : null, en = e.uses
 }
 
 function eW(e) {
@@ -388,16 +385,16 @@ function ez(e) {
     metadata: _
   } = e;
   null != s && f === s.id && (!1 === ea && (ea = !0), el = es = {
-    primaryCategoryId: null !== (t = _.primaryCategoryId) && void 0 !== t ? t : k.o3,
-    secondaryCategoryIds: null !== (n = _.secondaryCategoryIds) && void 0 !== n ? n : [],
-    keywords: null !== (r = _.keywords) && void 0 !== r ? r : [],
-    emojiDiscoverabilityEnabled: null !== (i = _.emojiDiscoverabilityEnabled) && void 0 !== i ? i : V,
-    partnerActionedTimestamp: null !== (o = _.partnerActionedTimestamp) && void 0 !== o ? o : null,
-    partnerApplicationTimestamp: null !== (a = _.partnerApplicationTimestamp) && void 0 !== a ? a : null,
-    isPublished: null !== (l = _.isPublished) && void 0 !== l && l,
-    reasonsToJoin: null !== (c = _.reasonsToJoin) && void 0 !== c ? c : [],
-    socialLinks: null !== (u = _.socialLinks) && void 0 !== u ? u : [],
-    about: null !== (d = _.about) && void 0 !== d ? d : ""
+    primaryCategoryId: null != (t = _.primaryCategoryId) ? t : k.o3,
+    secondaryCategoryIds: null != (n = _.secondaryCategoryIds) ? n : [],
+    keywords: null != (r = _.keywords) ? r : [],
+    emojiDiscoverabilityEnabled: null != (i = _.emojiDiscoverabilityEnabled) ? i : V,
+    partnerActionedTimestamp: null != (o = _.partnerActionedTimestamp) ? o : null,
+    partnerApplicationTimestamp: null != (a = _.partnerApplicationTimestamp) ? a : null,
+    isPublished: null != (l = _.isPublished) && l,
+    reasonsToJoin: null != (c = _.reasonsToJoin) ? c : [],
+    socialLinks: null != (u = _.socialLinks) ? u : [],
+    about: null != (d = _.about) ? d : ""
   }, z = {})
 }
 
@@ -548,7 +545,7 @@ class e8 extends(_ = E.ZP.Store) {
     return null != s ? s.id : null
   }
   showPublicSuccessModal() {
-    return !v.K.get(j.zs)
+    return !y.K.get(j.zs)
   }
   getGuild() {
     return s
@@ -573,7 +570,7 @@ class e8 extends(_ = E.ZP.Store) {
   }
   getError(e) {
     var t;
-    return null !== (t = z[e]) && void 0 !== t ? t : null
+    return null != (t = z[e]) ? t : null
   }
   getProfileError() {
     return q
@@ -617,19 +614,19 @@ class e8 extends(_ = E.ZP.Store) {
   }
 }
 U(e8, "displayName", "GuildSettingsStore");
-let e9 = new e8(y.Z, __OVERLAY__ ? {} : {
+let e9 = new e8(v.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_INIT: em,
   GUILD_SETTINGS_OPEN: eh,
   GUILD_SETTINGS_CLOSE: eg,
   GUILD_SETTINGS_UPDATE: eN,
   GUILD_SETTINGS_PROFILE_UPDATE: eA,
-  GUILD_SETTINGS_CANCEL_CHANGES: ey,
+  GUILD_SETTINGS_CANCEL_CHANGES: ev,
   GUILD_SETTINGS_SAVE_ROUTE_STACK: eE,
   GUILD_SETTINGS_SUBMIT: eO,
   GUILD_SETTINGS_SUBMIT_SUCCESS: eI,
   GUILD_SETTINGS_SUBMIT_FAILURE: eS,
   GUILD_SETTINGS_SET_SECTION: eb,
-  GUILD_SETTINGS_SET_SEARCH_QUERY: ev,
+  GUILD_SETTINGS_SET_SEARCH_QUERY: ey,
   GUILD_SETTINGS_LOADED_BANS: eD,
   GUILD_SETTINGS_LOADED_BANS_BATCH: eL,
   GUILD_SETTINGS_LOADED_INVITES: eR,

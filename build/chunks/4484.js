@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(925994),
   E = n(436660),
   b = n(887490),
-  v = n(194625),
-  y = n(77188),
+  y = n(194625),
+  v = n(77188),
   O = n(230554),
   I = n(780748),
   S = n(464581),
@@ -31,7 +31,7 @@ var r = n(200651),
   C = n(657198),
   R = n(321127),
   P = n(981631),
-  w = n(697980);
+  w = n(117335);
 let D = i.forwardRef(function(e, t) {
   let {
     value: n,
@@ -102,26 +102,25 @@ let D = i.forwardRef(function(e, t) {
       null != t && (t.selection = o), l = !0
     }
     let d = p.cr(e);
-    if (null != d && d[0].command.id !== (null === (r = c.Z.getActiveCommand(D.id)) || void 0 === r ? void 0 : r.id) && h.T.withMergedEntry(e, () => {
+    if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(D.id)) ? void 0 : r.id) && h.T.withMergedEntry(e, () => {
         (0, N.L)(e, D.id, null, !0)
-      }), l) {
+      }), l)
       if ("parent" === t) try {
         eg.current = !1, e.onChange()
       } finally {
         eg.current = !0
       } else e.onChange()
-    }
-  }, [D.id, D.guild_id, en]), ev = i.useCallback(() => {
+  }, [D.id, D.guild_id, en]), ey = i.useCallback(() => {
     em.current = !1
-  }, []), ey = i.useCallback(() => {
+  }, []), ev = i.useCallback(() => {
     em.current = !0
-  }, []), eO = (0, y.Z)({
+  }, []), eO = (0, v.Z)({
     channel: D,
     chatInputType: o,
     canUseCommands: ee,
     canOnlyUseTextCommands: et,
-    onChangeStart: ev,
-    onChangeEnd: ey,
+    onChangeStart: ey,
+    onChangeEnd: ev,
     updateState: eb
   }), eI = i.useCallback((e, t) => {
     let n = p.tM(eO, e, D.id),
@@ -131,14 +130,13 @@ let D = i.forwardRef(function(e, t) {
       results: r
     }
   }, [D.guild_id, D.id, eO]), eS = i.useCallback(() => {
-    let e;
-    let t = ee ? c.Z.getActiveCommand(D.id) : null;
+    let e, t = ee ? c.Z.getActiveCommand(D.id) : null;
     if (null != t && null != t.options) {
       let i = eI(t, !1);
       e = i.values;
       let o = p.cu(eO).filter(e => !i.results[e].success).map(e => {
         var n;
-        return (null !== (n = t.options) && void 0 !== n ? n : []).find(t => t.name === e)
+        return (null != (n = t.options) ? n : []).find(t => t.name === e)
       });
       for (let e of t.options) !e.required || e.name in i.values || (E.Q.insertCommandOption(eO, e), o.push(e));
       if (o.length > 0) {
@@ -149,8 +147,8 @@ let D = i.forwardRef(function(e, t) {
           intensity: 2
         }), (0, l.yw)(P.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == t ? void 0 : t.applicationId,
-          command_id: null == t ? void 0 : null === (n = t.rootCommand) || void 0 === n ? void 0 : n.id,
-          argument_type: s.jw[null !== (r = null == e ? void 0 : e.type) && void 0 !== r ? r : 3],
+          command_id: null == t || null == (n = t.rootCommand) ? void 0 : n.id,
+          argument_type: s.jw[null != (r = null == e ? void 0 : e.type) ? r : 3],
           is_required: null == e ? void 0 : e.required
         });
         return
@@ -194,12 +192,12 @@ let D = i.forwardRef(function(e, t) {
   }, [eO, n, eb]), i.useEffect(() => {
     let e = () => {
       var e;
-      let t = null !== (e = c.Z.getActiveCommand(D.id)) && void 0 !== e ? e : null;
+      let t = null != (e = c.Z.getActiveCommand(D.id)) ? e : null;
       null !== t && null != t.options && eI(t, !0)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
   }, [D, eO, eI]);
-  let ew = i.useCallback((e, t) => (0, v.Z)(e, t), []),
+  let ew = i.useCallback((e, t) => (0, y.Z)(e, t), []),
     eD = i.useCallback(e => (0, C.Z)(eO, e, D.id), [D.id, eO]),
     eL = i.useCallback(e => (0, R.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {

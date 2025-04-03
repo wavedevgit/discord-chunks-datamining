@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   _ = n(74538),
   p = n(981631),
   h = n(388032),
-  m = n(546363);
+  m = n(247382);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,8 +62,8 @@ class b extends i.Component {
       checkboxClassname: d,
       checkboxLabelClassname: g,
       finePrint: b,
-      showPricingLink: v,
-      showWithdrawalWaiver: y,
+      showPricingLink: y,
+      showWithdrawalWaiver: v,
       isTrial: O,
       inReverseTrial: I,
       isDiscount: S,
@@ -73,9 +73,9 @@ class b extends i.Component {
       hasAcceptedEULA: A,
       hasAcceptedWithdrawalWaiver: C
     } = this.state;
-    return (l()(!O || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), o || null != e && !i || y) ? (0, r.jsxs)("div", {
+    return (l()(!O || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), o || null != e && !i || v) ? (0, r.jsxs)("div", {
       className: c,
-      children: [y && (0, r.jsx)(u.vwX, {
+      children: [v && (0, r.jsx)(u.vwX, {
         className: m.formTitle,
         children: h.NW.string(h.t.Ogvn5u)
       }), null != e && (o || !i) ? (0, r.jsx)(u.XZJ, {
@@ -103,7 +103,7 @@ class b extends i.Component {
       }) : null, null == b ? null : (0, r.jsx)("div", {
         className: a()(m.finePrint, N),
         children: b
-      }), y ? (0, r.jsxs)("div", {
+      }), v ? (0, r.jsxs)("div", {
         className: c,
         children: [(0, r.jsx)(u.XZJ, {
           type: u.XZJ.Types.INVERTED,
@@ -119,7 +119,7 @@ class b extends i.Component {
           className: m.finePrint,
           children: h.NW.string(h.t.jhu6zs)
         })]
-      }) : null, v && (0, r.jsxs)("div", {
+      }) : null, y && (0, r.jsxs)("div", {
         className: m.finePrint,
         children: ["*", h.NW.format(h.t["5zmY3N"], {
           documentationLink: f.Z.getArticleURL(p.BhN.LOCALIZED_PRICING)
@@ -169,7 +169,7 @@ class b extends i.Component {
     })
   }
 }
-let v = c.ZP.connectStores([d.Z], e => {
+let y = c.ZP.connectStores([d.Z], e => {
   let {
     eulaId: t
   } = e;

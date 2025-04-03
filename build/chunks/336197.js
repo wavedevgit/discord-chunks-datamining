@@ -62,20 +62,11 @@ function h(e) {
 }
 async function m(e, t) {
   let n = (0, s.Qj)(e);
-  if (null != n && !await (0, l.Z)(n)) {
-    (0, c.k)({
-      kind: "channel"
-    });
-    return
-  }
-  if (null == n) {
-    (0, i.uL)(e, t);
-    return
-  }
+  if (null != n && !await (0, l.Z)(n)) return void(0, c.k)({
+    kind: "channel"
+  });
+  if (null == n) return void(0, i.uL)(e, t);
   let r = h(n);
-  if (null == r.channelId) {
-    (0, o.X)(r.guildId);
-    return
-  }
+  if (null == r.channelId) return void(0, o.X)(r.guildId);
   null != r.threadId ? (0, i.uL)(u.Z5c.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, i.uL)(u.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId), t)
 }

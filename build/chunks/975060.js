@@ -27,8 +27,8 @@ let l = "",
   g = "",
   E = "",
   b = "",
-  v = "",
   y = "",
+  v = "",
   O = !1,
   I = null,
   S = null,
@@ -36,21 +36,18 @@ let l = "",
   N = null;
 
 function A() {
-  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", m = "", g = "", E = "", b = "", v = "", y = "", O = !1, I = null, S = null, T = null, N = null
+  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", m = "", g = "", E = "", b = "", y = "", v = "", O = !1, I = null, S = null, T = null, N = null
 }
 
 function C(e) {
-  h = e.name, p = e.country, g = e.line1, E = e.line2, b = e.city, v = e.postalCode, y = e.state, m = e.email
+  h = e.name, p = e.country, g = e.line1, E = e.line2, b = e.city, y = e.postalCode, v = e.state, m = e.email
 }
 
 function R(e) {
   let {
     stripePaymentMethod: t
   } = e;
-  if (null == t) {
-    A();
-    return
-  }
+  if (null == t) return void A();
   d = t;
   let {
     billingAddressInfo: n
@@ -96,7 +93,7 @@ function M(e) {
     info: t,
     isValid: n
   } = e;
-  null != t.name && "" !== t.name && (h = t.name), p = t.country, h = t.name, g = t.line1, E = t.line2, b = t.city, v = t.postalCode, y = t.state, m = t.email, O = n
+  null != t.name && "" !== t.name && (h = t.name), p = t.country, h = t.name, g = t.line1, E = t.line2, b = t.city, y = t.postalCode, v = t.state, m = t.email, O = n
 }
 
 function k(e) {
@@ -168,8 +165,8 @@ class F extends(r = i.ZP.Store) {
       line1: g,
       line2: E,
       city: b,
-      postalCode: v,
-      state: y
+      postalCode: y,
+      state: v
     }
   }
   get isBillingAddressInfoValid() {

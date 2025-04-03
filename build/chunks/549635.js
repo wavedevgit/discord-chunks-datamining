@@ -18,7 +18,7 @@ var r = n(200651),
   p = n(591759),
   h = n(254109),
   m = n(212459),
-  g = n(393669);
+  g = n(986261);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ function T(e) {
     {
       width: p,
       height: E,
-      url: v,
+      url: y,
       proxyUrl: I,
       alt: T,
       type: N,
@@ -105,14 +105,14 @@ function T(e) {
       zoomed: w,
       setZoomed: D
     } = (0, m.Y)(),
-    L = A(w, v, I),
+    L = A(w, y, I),
     x = null != p && 0 !== p && null != E && 0 !== E;
   if ("VIDEO" === N && x && null != I) {
     var M;
     let e = S(I);
     if (null == e) return null;
-    let t = null !== (M = n.renderLinkComponent) && void 0 !== M ? M : d.iT;
-    return (0, r.jsx)(c.Z, y(b({}, P), {
+    let t = null != (M = n.renderLinkComponent) ? M : d.iT;
+    return (0, r.jsx)(c.Z, v(b({}, P), {
       src: L,
       width: p,
       height: E,
@@ -131,7 +131,7 @@ function T(e) {
       onContextMenu: f
     }))
   }
-  return "IMAGE" === N && (t = x ? (0, r.jsx)(l.ZP, y(b({}, P), {
+  return "IMAGE" === N && (t = x ? (0, r.jsx)(l.ZP, v(b({}, P), {
     src: L,
     width: p,
     height: E,

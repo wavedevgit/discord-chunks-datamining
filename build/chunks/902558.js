@@ -35,12 +35,12 @@ function f(e) {
 
 function _(e) {
   var t;
-  s.ZP.setCrashInformation(f(e.context), null !== (t = e.mediaSessionId) && void 0 !== t ? t : null)
+  s.ZP.setCrashInformation(f(e.context), null != (t = e.mediaSessionId) ? t : null)
 }
 
 function p(e) {
   var t;
-  let n = (null !== (t = e.channelId) && void 0 !== t ? t : "unknown") + e.context;
+  let n = (null != (t = e.channelId) ? t : "unknown") + e.context;
   switch (e.state) {
     case l.hes.RTC_CONNECTED:
       u.add(n), s.ZP.setCrashInformation(r.X4.HasRTCConnection, 1);

@@ -64,10 +64,7 @@ function _(e) {
     breadcrumbSteps: [a.h8.ADD_PAYMENT_STEPS, a.h8.REVIEW, a.h8.CONFIRM],
     onReturn: () => {
       if (0 === Object.keys(i.Z.paymentSources).length) {
-        if (t) {
-          e.handleStepChange(a.h8.GIFT_CUSTOMIZATION);
-          return
-        }
+        if (t) return void e.handleStepChange(a.h8.GIFT_CUSTOMIZATION);
         e.handleClose()
       } else e.handleStepChange(a.h8.REVIEW, {
         trackedFromStep: a.h8.ADD_PAYMENT_STEPS

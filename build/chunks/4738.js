@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(481060),
   d = n(889963),
   f = n(388032),
-  _ = n(489045);
+  _ = n(578949);
 
 function p(e) {
   let {
@@ -23,10 +23,7 @@ function p(e) {
     onPageChange: s
   } = e, [d, f] = i.useState(!1), [p, h] = i.useState(null), m = null != p && p >= 1 && p <= n, g = e => {
     let t = parseInt(e);
-    if ("" === e || isNaN(t)) {
-      h(null);
-      return
-    }
+    if ("" === e || isNaN(t)) return void h(null);
     h(t)
   }, E = e => {
     "Enter" === e.key && null != p && m && (s(p), f(!1), h(null))
@@ -74,7 +71,7 @@ function h(e) {
     null != h && h(e)
   }
 
-  function v(e) {
+  function y(e) {
     let {
       key: t,
       disabled: n,
@@ -99,7 +96,7 @@ function h(e) {
     }, t)
   }
 
-  function y(e) {
+  function v(e) {
     let {
       key: t,
       disabled: n,
@@ -161,13 +158,13 @@ function h(e) {
         children: t.map(e => {
           switch (e.type) {
             case d.s.BACK:
-              return v(e);
+              return y(e);
             case d.s.PAGE:
               return O(e);
             case d.s.GAP:
               return I(e);
             case d.s.NEXT:
-              return y(e);
+              return v(e);
             default:
               return null
           }

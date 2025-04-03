@@ -22,7 +22,7 @@ let a = 60,
   f = (e, t) => null != t && null != t[e],
   _ = (e, t, n) => {
     var r, i, o;
-    return f(e, t) ? null !== (i = null !== (r = t[e]) && void 0 !== r ? r : null == n ? void 0 : n[e]) && void 0 !== i ? i : null : null !== (o = null == n ? void 0 : n[e]) && void 0 !== o ? o : null
+    return f(e, t) ? null != (i = null != (r = t[e]) ? r : null == n ? void 0 : n[e]) ? i : null : null != (o = null == n ? void 0 : n[e]) ? o : null
   },
   p = function(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],

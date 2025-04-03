@@ -21,7 +21,7 @@ var r = n(146150),
     }, e.prototype.getMilliseconds = function() {
       return this.millisecond
     }, e.prototype.getTime = function() {
-      return (3600 * this.hour + 60 * this.minute + this.second) * 1e3 + this.millisecond
+      return (60 * this.hour * 60 + 60 * this.minute + this.second) * 1e3 + this.millisecond
     }, e
   }(),
   l = function(e) {

@@ -514,13 +514,14 @@ l.cipher.aes = function(e) {
     var n, r = [];
     if ((n = this.isReady(t)) === this.u) throw new l.exception.notReady("generator isn't seeded");
     if (n & this.J) {
-      n = !(n & this.I), i = [];
-      var i, o, a = 0;
-      for (o = 0, this.Z = i[0] = (new Date).valueOf() + this.da; 16 > o; o++) i.push(0x100000000 * Math.random() | 0);
-      for (o = 0; o < this.c.length && (i = i.concat(this.c[o].finalize()), a += this.m[o], this.m[o] = 0, n || !(this.P & 1 << o)); o++);
-      for (this.P >= 1 << this.c.length && (this.c.push(new l.hash.sha256), this.m.push(0)), this.f -= a, a > this.o && (this.o = a), this.P++, this.b = l.hash.sha256.hash(this.b.concat(i)), this.L = new l.cipher.aes(this.b), n = 0; 4 > n && (this.h[n] = this.h[n] + 1 | 0, !this.h[n]); n++);
+      n = !(n & this.I);
+      var i, o = [],
+        a = 0;
+      for (i = 0, this.Z = o[0] = (new Date).valueOf() + this.da; 16 > i; i++) o.push(0x100000000 * Math.random() | 0);
+      for (i = 0; i < this.c.length && (o = o.concat(this.c[i].finalize()), a += this.m[i], this.m[i] = 0, n || !(this.P & 1 << i)); i++);
+      for (this.P >= 1 << this.c.length && (this.c.push(new l.hash.sha256), this.m.push(0)), this.f -= a, a > this.o && (this.o = a), this.P++, this.b = l.hash.sha256.hash(this.b.concat(o)), this.L = new l.cipher.aes(this.b), n = 0; 4 > n && (this.h[n] = this.h[n] + 1 | 0, !this.h[n]); n++);
     }
-    for (n = 0; n < e; n += 4) 0 == (n + 1) % this.ca && _(this), r.push((i = p(this))[0], i[1], i[2], i[3]);
+    for (n = 0; n < e; n += 4) 0 == (n + 1) % this.ca && _(this), r.push((o = p(this))[0], o[1], o[2], o[3]);
     return _(this), r.slice(0, e)
   },
   setDefaultParanoia: function(e, t) {
@@ -563,7 +564,7 @@ l.cipher.aes = function(e) {
     return e = this.T[void 0 !== e ? e : this.M], this.o && this.o >= e ? this.m[0] > this.ba && (new Date).valueOf() > this.Z ? this.J | this.I : this.I : this.f >= e ? this.J | this.u : this.u
   },
   getProgress: function(e) {
-    return e = this.T[e || this.M], this.o >= e ? 1 : this.f > e ? 1 : this.f / e
+    return e = this.T[e || this.M], this.o >= e || this.f > e ? 1 : this.f / e
   },
   startCollectors: function() {
     if (!this.D) {
@@ -656,7 +657,7 @@ l.json = {
         iv: l.random.randomWords(4, 0)
       }, o.defaults);
     if (o.g(a, n), n = a.adata, "string" == typeof a.salt && (a.salt = l.codec.base64.toBits(a.salt)), "string" == typeof a.iv && (a.iv = l.codec.base64.toBits(a.iv)), !l.mode[a.mode] || !l.cipher[a.cipher] || "string" == typeof e && 100 >= a.iter || 64 !== a.ts && 96 !== a.ts && 128 !== a.ts || 128 !== a.ks && 192 !== a.ks && 256 !== a.ks || 2 > a.iv.length || 4 < a.iv.length) throw new l.exception.invalid("json encrypt: invalid parameters");
-    return "string" == typeof e ? (e = (i = l.misc.cachedPbkdf2(e, a)).key.slice(0, a.ks / 32), a.salt = i.salt) : l.ecc && e instanceof l.ecc.elGamal.publicKey && (i = e.kem(), a.kemtag = i.tag, e = i.key.slice(0, a.ks / 32)), "string" == typeof t && (t = l.codec.utf8String.toBits(t)), "string" == typeof n && (a.adata = n = l.codec.utf8String.toBits(n)), i = new l.cipher[a.cipher](e), o.g(r, a), r.key = e, a.ct = "ccm" === a.mode && l.arrayBuffer && l.arrayBuffer.ccm && t instanceof ArrayBuffer ? l.arrayBuffer.ccm.encrypt(i, t, a.iv, n, a.ts) : l.mode[a.mode].encrypt(i, t, a.iv, n, a.ts), a
+    return "string" == typeof e ? (e = (i = l.misc.cachedPbkdf2(e, a)).key.slice(0, a.ks / 32), a.salt = i.salt) : l.ecc && e instanceof l.ecc.elGamal.publicKey && (a.kemtag = (i = e.kem()).tag, e = i.key.slice(0, a.ks / 32)), "string" == typeof t && (t = l.codec.utf8String.toBits(t)), "string" == typeof n && (a.adata = n = l.codec.utf8String.toBits(n)), i = new l.cipher[a.cipher](e), o.g(r, a), r.key = e, a.ct = "ccm" === a.mode && l.arrayBuffer && l.arrayBuffer.ccm && t instanceof ArrayBuffer ? l.arrayBuffer.ccm.encrypt(i, t, a.iv, n, a.ts) : l.mode[a.mode].encrypt(i, t, a.iv, n, a.ts), a
   },
   encrypt: function(e, t, n, r) {
     var i = l.json,

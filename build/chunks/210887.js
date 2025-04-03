@@ -40,7 +40,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ class C extends(r = i.ZP.PersistedStore) {
 }
 
 function R() {
-  return (0, c.O_)("ThemeStore") && 0 === O && (I = y(b({}, I), {
+  return (0, c.O_)("ThemeStore") && 0 === O && (I = v(b({}, I), {
     [m.zd.DARK]: g.BRd.DARKER
   }), O = 1), A()
 }
@@ -120,7 +120,7 @@ function L(e) {
 }
 E(C, "displayName", "ThemeStore"), E(C, "persistKey", "ThemeStore"), E(C, "migrations", [e => {
   let t = e.theme;
-  return "amoled" === t && (t = "midnight"), y(b({}, e), {
+  return "amoled" === t && (t = "midnight"), v(b({}, e), {
     theme: t
   })
 }, e => e]);

@@ -34,7 +34,7 @@ function g(e) {
   }).allowPlayStationStaging;
   return e => {
     var i;
-    return e.type === f.ABu.PLAYSTATION_STAGING ? r : !!(void 0 !== n && (null === (i = p[e.type]) || void 0 === i ? void 0 : i.includes(n.id))) || !!t || e.enabled
+    return e.type === f.ABu.PLAYSTATION_STAGING ? r : !!(void 0 !== n && (null == (i = p[e.type]) ? void 0 : i.includes(n.id))) || !!t || e.enabled
   }
 }
 
@@ -49,7 +49,7 @@ function E() {
     }, [e]);
   return r.useMemo(() => o().sortBy(s.Z.filter(t), [e => {
     var t;
-    return !(h.has(e.type) && Date.now() < (null !== (t = h.get(e.type)) && void 0 !== t ? t : 0) + m)
+    return !(h.has(e.type) && Date.now() < (null != (t = h.get(e.type)) ? t : 0) + m)
   }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [n, t])
 }
 

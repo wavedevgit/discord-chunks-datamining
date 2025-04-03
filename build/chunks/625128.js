@@ -30,7 +30,7 @@ function a(e) {
 let s = {
   openNativeAppModal(e, t) {
     let o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-    !i.a && (r.Z.dispatch({
+    i.a || (r.Z.dispatch({
       type: "NATIVE_APP_MODAL_OPENING",
       code: e
     }), Promise.resolve().then(n.bind(n, 536285)).then(n => {
@@ -41,7 +41,7 @@ let s = {
         code: e
       }, o)).then(t => {
         var n;
-        this.nativeModalOpened(null !== (n = null == t ? void 0 : t.code) && void 0 !== n ? n : e)
+        this.nativeModalOpened(null != (n = null == t ? void 0 : t.code) ? n : e)
       }).catch(() => this.nativeModalOpenFailed(e)).then(() => r.disconnect())
     }))
   },

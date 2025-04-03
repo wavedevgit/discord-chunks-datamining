@@ -24,10 +24,8 @@ function a(e) {
 }
 
 function s(e, t) {
-  if (t && Array.isArray(e)) {
-    e.forEach(function(e) {
-      return s(e, !1)
-    });
-    return
-  }(0, r.k)("string" == typeof e || "symbol" === i(e), t ? "Type can only be a string, a symbol, or an array of either." : "Type can only be a string or a symbol.")
+  if (t && Array.isArray(e)) return void e.forEach(function(e) {
+    return s(e, !1)
+  });
+  (0, r.k)("string" == typeof e || "symbol" === i(e), t ? "Type can only be a string, a symbol, or an array of either." : "Type can only be a string or a symbol.")
 }

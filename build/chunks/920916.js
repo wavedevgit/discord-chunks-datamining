@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(583434),
   E = n(530618),
   b = n(70097),
-  v = n(454585),
-  y = n(781320),
+  y = n(454585),
+  v = n(781320),
   O = n(732389),
   I = n(164946),
   S = n(369111),
@@ -41,7 +41,7 @@ var r = n(200651),
   j = n(675654),
   U = n(474936),
   G = n(388032),
-  B = n(217417);
+  B = n(335626);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -117,7 +117,7 @@ function z(e) {
     decoration: p,
     onUseNow: h,
     preview: m
-  } = e, g = i.useRef(null), [b, v] = i.useState(null), y = i.useRef(new s.qA), O = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([N.default], () => N.default.getCurrentUser()), S = i.useMemo(() => (0, D.fh)(l, D.eC.HERO), [l]), T = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [A, R] = i.useState(!0 === m || T ? "claimed" : "loading");
+  } = e, g = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([N.default], () => N.default.getCurrentUser()), S = i.useMemo(() => (0, D.fh)(l, D.eC.HERO), [l]), T = (null == (t = l.userStatus) ? void 0 : t.claimedAt) != null, [A, R] = i.useState(!0 === m || T ? "claimed" : "loading");
   i.useEffect(() => {
     T || !0 === m || (0, C.QB)(l.id, P.y$.CROSS_PLATFORM, d).then(() => R("claimed")).catch(() => R("error"))
   }, [l, d, T, m]);
@@ -130,9 +130,9 @@ function z(e) {
     U = !O && !T && "claimed" === A;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
-      ref: v,
+      ref: y,
       className: B.confettiCanvas,
-      environment: y.current
+      environment: v.current
     }), (0, r.jsx)("div", {
       ref: g,
       children: (0, r.jsx)(u.Y0X, {
@@ -181,7 +181,7 @@ function q(e) {
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "always-white",
-      children: v.Z.parse(o, !1, {
+      children: y.Z.parse(o, !1, {
         allowLinks: !0
       })
     })]
@@ -197,7 +197,7 @@ function Q(e) {
     isSaving: a,
     onClose: s,
     onConfirm: l
-  } = e, c = (0, D.fh)(t, D.eC.REWARD).url, d = (0, w.f$)(t.config), f = (0, y.r)({
+  } = e, c = (0, D.fh)(t, D.eC.REWARD).url, d = (0, w.f$)(t.config), f = (0, v.r)({
     location: "ClaimedModalContent"
   }).enabled, {
     fractionalState: _
@@ -275,8 +275,8 @@ function X(e) {
     onClose: s,
     transitionState: l,
     preview: c
-  } = e, u = i.useMemo(() => (0, w.xn)(o.config), [o]), [d, f] = K(null !== (n = null == u ? void 0 : u.skuId) && void 0 !== n ? n : null);
-  return null == u ? null : (null === (t = o.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? (0, r.jsx)(p.default, {
+  } = e, u = i.useMemo(() => (0, w.xn)(o.config), [o]), [d, f] = K(null != (n = null == u ? void 0 : u.skuId) ? n : null);
+  return null == u ? null : (null == (t = o.userStatus) ? void 0 : t.claimedAt) != null ? (0, r.jsx)(p.default, {
     transitionState: l,
     onCloseModal: W,
     onClose: s,

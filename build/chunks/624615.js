@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[a-zA-Z-_][^\\n{]+\\{",
     n = {
       className: "attribute",
@@ -41,4 +41,3 @@ function t(e) {
     }, e.HASH_COMMENT_MODE]
   }
 }
-e.exports = t

@@ -31,7 +31,7 @@ let p = i.memo(function(e) {
   } = a, m = n.state === s.Z.Resolving || a.state === s.Z.Resolving, g = i.useCallback(() => {
     if ((0, l.mG)(a.url) && null != a.override) {
       var e;
-      return f(null === (e = a.override) || void 0 === e ? void 0 : e.targetBuildOverride)
+      return f(null == (e = a.override) ? void 0 : e.targetBuildOverride)
     }
     return null == p ? Promise.reject(Error("Invalid override payload")) : ((0, u.Z)(a.override, p), d(p))
   }, [p, a]);

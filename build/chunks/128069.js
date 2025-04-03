@@ -48,14 +48,14 @@ let f = new Set(["cardNumber", "cvc", "expirationDate", "name"]),
 
 function p(e) {
   var t, n, i, o, a;
-  if ("string" != typeof e && (null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.code) === r.f$) {
-    if (!Array.isArray(null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.errors) && (null == e ? void 0 : null === (o = e.body) || void 0 === o ? void 0 : null === (i = o.errors) || void 0 === i ? void 0 : i.billing_address) != null) {
+  if ("string" != typeof e && (null == e || null == (t = e.body) ? void 0 : t.code) === r.f$) {
+    if (!Array.isArray(null == e || null == (n = e.body) ? void 0 : n.errors) && (null == e || null == (o = e.body) || null == (i = o.errors) ? void 0 : i.billing_address) != null) {
       for (let t in e.body.errors.billing_address) {
         let n = e.body.errors.billing_address[t];
         delete e.body.errors.billing_address[t], e.body.errors[t] = n
       }
       delete e.body.errors.billing_address
-    }(null === (a = e.body) || void 0 === a ? void 0 : a.errors) != null && (e.body = (0, r.J9)(e.body.errors))
+    }(null == (a = e.body) ? void 0 : a.errors) != null && (e.body = (0, r.J9)(e.body.errors))
   }
   return new h(e)
 }

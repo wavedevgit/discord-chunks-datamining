@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "ByRef Case Const ContinueCase ContinueLoop Dim Do Else ElseIf EndFunc EndIf EndSelect EndSwitch EndWith Enum Exit ExitLoop For Func Global If In Local Next ReDim Return Select Static Step Switch Then To Until Volatile WEnd While With",
     n = ["EndRegion", "forcedef", "forceref", "ignorefunc", "include", "include-once", "NoTrayIcon", "OnAutoItStartRegister", "pragma", "Region", "RequireAdmin", "Tidy_Off", "Tidy_On", "Tidy_Parameters"],
     r = "True False And Null Not Or Default",
@@ -101,4 +101,3 @@ function t(e) {
     contains: [o, a, s, l, c, u, d]
   }
 }
-e.exports = t

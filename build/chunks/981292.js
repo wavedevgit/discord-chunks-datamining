@@ -25,7 +25,7 @@ function s(e) {
   r.useLayoutEffect(() => () => clearTimeout(c.current));
   let [, u] = r.useState(o), d = r.useRef(null), f = r.useMemo(() => {
     var e;
-    let r = new Set(null === (e = d.current) || void 0 === e ? void 0 : e.keys()),
+    let r = new Set(null == (e = d.current) ? void 0 : e.keys()),
       o = new Map(d.current);
     for (let e of t) {
       let t = i(e),
@@ -34,8 +34,8 @@ function s(e) {
         let r = +(null != d.current),
           i = () => {
             var e, n;
-            let r = null === (e = d.current) || void 0 === e ? void 0 : e.get(t);
-            null == r || (2 === r.state ? (null === (n = d.current) || void 0 === n || n.delete(t), null != l ? (clearTimeout(c.current), c.current = setTimeout(() => u({}), l)) : u({})) : __DEV__ && console.warn("SimpleTransitionGroup.cleanUp: Attempted to remove an item that isn't yeetable: ".concat(t)))
+            let r = null == (e = d.current) ? void 0 : e.get(t);
+            null == r || (2 === r.state ? (null == (n = d.current) || n.delete(t), null != l ? (clearTimeout(c.current), c.current = setTimeout(() => u({}), l)) : u({})) : __DEV__ && console.warn("SimpleTransitionGroup.cleanUp: Attempted to remove an item that isn't yeetable: ".concat(t)))
           },
           o = n(t, e, r, i);
         a = {
@@ -61,7 +61,7 @@ function s(e) {
     }
     for (let e of r) {
       let t = o.get(e);
-      if (null != t) {
+      if (null != t)
         if (2 !== t.state || t.renderItem !== n) {
           let {
             item: r,
@@ -75,13 +75,12 @@ function s(e) {
             renderItem: n
           }).children ? o.set(e, t) : o.delete(e)
         } else o.set(e, t)
-      }
     }
     return o
   }, [t, i, n, l]);
   r.useInsertionEffect(() => (d.current = f, () => {
     var e;
-    return null === (e = d.current) || void 0 === e ? void 0 : e.clear()
+    return null == (e = d.current) ? void 0 : e.clear()
   }), [f]);
   let _ = [];
   for (let [, e] of f) _.push(e.children);

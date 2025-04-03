@@ -20,12 +20,12 @@ var r = n(200651),
   g = n(394769),
   E = n(555932),
   b = n(808189),
-  v = n(362948),
-  y = n(245004),
+  y = n(362948),
+  v = n(245004),
   O = n(383881),
   I = n(981631),
   S = n(388032),
-  T = n(459186);
+  T = n(871146);
 let N = function(e) {
   let {
     analyticsLocation: t,
@@ -110,7 +110,7 @@ let N = function(e) {
         }), (0, r.jsx)(O.O, {})]
       }), (0, r.jsxs)("div", {
         className: T.middleBodyContentWrapper,
-        children: [(0, r.jsx)(y.ZP, {
+        children: [(0, r.jsx)(v.ZP, {
           guild: e.guild
         }), k && (0, r.jsx)(f.Z, {
           ref: x,
@@ -121,7 +121,7 @@ let N = function(e) {
         className: T.lowerBody,
         children: [(0, r.jsxs)("div", {
           className: T.lowerBodyContentWrapper,
-          children: [(0, r.jsx)(v.Z, {
+          children: [(0, r.jsx)(y.Z, {
             className: T.tierComparisonTable,
             guild: n
           }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(m.Z, {})]

@@ -56,7 +56,7 @@ function g(e) {
     largeImage: u
   } = E(i, null != a ? a : o), {
     coverImageUrl: f
-  } = (0, l.$)(null === (t = null != a ? a : o) || void 0 === t ? void 0 : t.id), _ = h(n);
+  } = (0, l.$)(null == (t = null != a ? a : o) ? void 0 : t.id), _ = h(n);
   return null != s ? {
     largeImage: s,
     smallImage: c
@@ -114,15 +114,15 @@ function b(e, t) {
     largeImage: void 0,
     smallImage: void 0
   };
-  let f = null == e ? void 0 : null === (n = e.assets) || void 0 === n ? void 0 : n.large_image,
+  let f = null == e || null == (n = e.assets) ? void 0 : n.large_image,
     p = null != f ? {
       src: (0, c.xF)(e.application_id, f, [_.Si.LARGE, _.Si.LARGE]),
-      text: null === (o = e.assets) || void 0 === o ? void 0 : null === (r = o.large_text) || void 0 === r ? void 0 : r.trim()
+      text: null == (o = e.assets) || null == (r = o.large_text) ? void 0 : r.trim()
     } : void 0,
-    h = (0, i.Z)(e) ? void 0 : null == e ? void 0 : null === (a = e.assets) || void 0 === a ? void 0 : a.small_image,
+    h = (0, i.Z)(e) || null == e || null == (a = e.assets) ? void 0 : a.small_image,
     g = null != h ? {
       src: (0, c.xF)(e.application_id, h, [_.Si.LARGE, _.Si.LARGE]),
-      text: null === (u = e.assets) || void 0 === u ? void 0 : null === (l = u.small_text) || void 0 === l ? void 0 : l.trim()
+      text: null == (u = e.assets) || null == (l = u.small_text) ? void 0 : l.trim()
     } : void 0;
   return {
     largeImage: null != p ? p : m(null != t ? t : d),

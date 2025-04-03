@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = ["functions", "model", "data", "parameters", "quantities", "transformed", "generated"],
     r = ["for", "in", "if", "else", "while", "break", "continue", "return"],
@@ -77,4 +77,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

@@ -11,7 +11,7 @@ var r = n(200651),
   l = n(703656),
   c = n(769654),
   u = n(900849),
-  d = n(405222),
+  d = n(330705),
   f = n(993860),
   _ = n(981631),
   p = n(388032);
@@ -63,8 +63,8 @@ function b(e) {
   } = e, {
     guildId: g,
     validInviteKey: b,
-    ctaType: v
-  } = (0, f.ZP)(t), [y, O] = i.useState(!1), I = i.useCallback(e => {
+    ctaType: y
+  } = (0, f.ZP)(t), [v, O] = i.useState(!1), I = i.useCallback(e => {
     e.stopPropagation(), (0, c.X)(g), null == n || n()
   }, [g, n]), S = i.useCallback(e => {
     e.stopPropagation(), (0, l.uL)(_.Z5c.GUILD_MEMBER_VERIFICATION(g)), null == n || n()
@@ -89,9 +89,9 @@ function b(e) {
   }, [g, n]), C = i.useMemo(() => ({
     size: o.zxk.Sizes.SMALL,
     fullWidth: !0,
-    submitting: y || h
-  }), [y, h]);
-  switch (v) {
+    submitting: v || h
+  }), [v, h]);
+  switch (y) {
     case f.sE.IS_MEMBER:
       return (0, r.jsx)(o.zxk, E(m({}, C), {
         onClick: I,

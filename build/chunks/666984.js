@@ -13,7 +13,7 @@ var i = n(481060),
   c = n(475413),
   u = n(981631),
   d = n(388032),
-  f = n(24981);
+  f = n(227832);
 
 function _(e) {
   var t, n;
@@ -28,7 +28,7 @@ function _(e) {
       className: f.primaryButton,
       children: (0, r.jsx)(c.tG, {
         icon: () => (0, r.jsx)(l.Z, {}),
-        text: null !== (t = m.label) && void 0 !== t ? t : d.NW.string(d.t.rRffNz),
+        text: null != (t = m.label) ? t : d.NW.string(d.t.rRffNz),
         disabled: m.disabled,
         submitting: m.loading,
         wrapperClassName: f.primaryButton,
@@ -41,7 +41,7 @@ function _(e) {
       })
     }), (0, r.jsx)(c.ef, {
       icon: i.iOO,
-      tooltipText: null !== (n = g.tooltip) && void 0 !== n ? n : d.NW.string(d.t.eU3inJ),
+      tooltipText: null != (n = g.tooltip) ? n : d.NW.string(d.t.eU3inJ),
       disabled: g.disabled,
       submitting: g.loading,
       fullWidth: !0,

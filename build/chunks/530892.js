@@ -1,8 +1,6 @@
 /** Chunk was on web.js **/
 var r = n(44091),
   i = n(757647);
-
-function o(e) {
+e.exports = function(e) {
   return i(r(e).toLowerCase())
 }
-e.exports = o

@@ -36,9 +36,9 @@ function _() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
     r = RegExp("(".concat(n.join("|"), ")"), "ig"),
-    o = (null === i() || void 0 === i() ? void 0 : null === (e = i().ua) || void 0 === e ? void 0 : e.match(r)) != null,
+    o = (null === i() || void 0 === i() || null == (e = i().ua) ? void 0 : e.match(r)) != null,
     a = (null === i() || void 0 === i() ? void 0 : i().name) === "Safari" && !o;
-  return (null === i() || void 0 === i() ? void 0 : null === (t = i().os) || void 0 === t ? void 0 : t.family) !== "iOS" || a
+  return (null === i() || void 0 === i() || null == (t = i().os) ? void 0 : t.family) !== "iOS" || a
 }
 
 function p() {
@@ -55,7 +55,7 @@ function h(e) {
     let i = decodeURIComponent(r),
       o = new URL(i).searchParams,
       a = {
-        utmSource: null !== (t = n.get("utm_source")) && void 0 !== t ? t : void 0
+        utmSource: null != (t = n.get("utm_source")) ? t : void 0
       };
     for (let [e, t] of o.entries()) a[e] = t;
     return a

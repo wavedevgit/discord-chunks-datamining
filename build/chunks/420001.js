@@ -51,13 +51,13 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function v(e) {
   let t = f.X.exec(e);
   if (null != t) {
     let n = t[1],
@@ -70,17 +70,17 @@ function y(e) {
   }
   return null
 }
-let O = v(E({}, h.Z), {
+let O = y(E({}, h.Z), {
   sentinel: void 0,
   focusMode: p.QZ.MANUAL,
   matches(e, t, n, r, i) {
     if (i.commands === p.L8.DISABLED || i.commands === p.L8.OLD_BUILT_INS || n.length < 2 || !c.Xk.getSetting()) return !1;
-    let o = y(n);
+    let o = v(n);
     return null != o && o.cleanedQuery.length > 0
   },
   queryResults(e, t, n, a, l) {
     if (!c.Xk.getSetting()) return h.K;
-    let u = y(n);
+    let u = v(n);
     if (null == u) return h.K;
     let d = (0, s.hV)(e, u.cleanedQuery),
       {
@@ -151,7 +151,7 @@ let O = v(E({}, h.Z), {
         }
       },
       getQuery: e => {
-        let t = y(e);
+        let t = v(e);
         if ("mention" !== t.type) return e;
         let n = d.ZP.getName(null == r ? void 0 : r.id, i.id, t.user);
         return e.replace(f.X, "@".concat(n))
@@ -176,7 +176,7 @@ let O = v(E({}, h.Z), {
       guild: s,
       location: a.Vh.SUGGESTION
     });
-    return null == l ? null : v(E({}, l), {
+    return null == l ? null : y(E({}, l), {
       type: p.z2.COMMAND_SUGGESTION
     })
   }

@@ -11,7 +11,7 @@ var r = n(200651),
   l = n(28546),
   c = n(872635),
   u = n(185923),
-  d = n(672828);
+  d = n(763169);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,7 +58,7 @@ function m(e) {
     editorRef: n,
     options: f,
     channel: p
-  } = e, m = null === (t = n.current) || void 0 === t ? void 0 : t.getSlateEditor(), g = i.useCallback((e, t) => {
+  } = e, m = null == (t = n.current) ? void 0 : t.getSlateEditor(), g = i.useCallback((e, t) => {
     let r = n.current;
     null != e && null != r && r.insertEmoji(e, t, !1), t && (0, l._Q)()
   }, [n]), E = e => {

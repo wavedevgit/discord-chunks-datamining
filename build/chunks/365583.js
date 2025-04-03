@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => v,
+  C: () => y,
   Z: () => O
 });
 var r = n(200651);
@@ -30,7 +30,7 @@ function b(e) {
   return (0, f.Z)(t) || (0, d.Z)(t) || (0, l.Z)(t) ? E : (0, u.Z)(t) && !(0, c.Z)(t) ? n : null
 }
 
-function v(e) {
+function y(e) {
   let {
     entry: t,
     onOpenGameSettings: n
@@ -38,13 +38,13 @@ function v(e) {
   return (0, _.aA)(t) || (0, _.y0)(t) || (0, _.dU)(t) ? E : (0, _.dX)(t) ? n : null
 }
 
-function y(e) {
+function v(e) {
   let {
     activity: t,
     entry: n,
     onOpenGameSettings: r
   } = e;
-  return null != n ? v({
+  return null != n ? y({
     entry: n,
     onOpenGameSettings: r
   }) : null != t ? b({
@@ -66,9 +66,9 @@ function O(e) {
   });
   if (!(0, i.e7)([p.default], () => {
       var e;
-      return (null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === t.id
+      return (null == (e = p.default.getCurrentUser()) ? void 0 : e.id) === t.id
     })) return null;
-  let f = y({
+  let f = v({
     activity: n,
     entry: a,
     onOpenGameSettings: d

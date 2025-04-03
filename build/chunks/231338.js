@@ -4,7 +4,7 @@ n.d(t, {
   $R: () => u,
   $V: () => X,
   $w: () => es,
-  Ai: () => v,
+  Ai: () => y,
   Al: () => r.A,
   B1: () => $,
   BR: () => r.Z,
@@ -50,7 +50,7 @@ n.d(t, {
   fK: () => ec,
   fr: () => Y,
   gg: () => E,
-  i$: () => y,
+  i$: () => v,
   j8: () => C,
   j_: () => eu,
   lT: () => Q,
@@ -121,7 +121,7 @@ let b = Object.freeze({
     5: "Adyen",
     6: "Apple Partner"
   }),
-  v = Object.freeze({
+  y = Object.freeze({
     BRAINTREE: {
       KEY: window.GLOBAL_ENV.BRAINTREE_KEY,
       PAYMENT_GATEWAY: "braintree"
@@ -135,7 +135,7 @@ let b = Object.freeze({
       PAYMENT_GATEWAY: "adyen"
     }
   });
-var y = function(e) {
+var v = function(e) {
     return e.GOOGLE_PAY = "google_pay", e.APPLE_PAY = "apple_pay", e
   }({}),
   O = function(e) {

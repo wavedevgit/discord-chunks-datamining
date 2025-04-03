@@ -28,15 +28,15 @@ var r = n(399606),
   g = n(208049),
   E = n(763296),
   b = n(697426),
-  v = n(641015),
-  y = n(893663),
+  y = n(641015),
+  v = n(893663),
   O = n(710111),
   I = n(981631);
 
 function S() {
   var e;
   let t = a.kU.getSetting();
-  return null !== (e = null == t ? void 0 : t.volume) && void 0 !== e ? e : 100
+  return null != (e = null == t ? void 0 : t.volume) ? e : 100
 }
 
 function T(e, t) {
@@ -68,13 +68,13 @@ function R(e, t) {
 
 function P() {
   var e, t;
-  return Object.values(null !== (t = null === (e = l.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {}).some(e => null != e.joinSound)
+  return Object.values(null != (t = null == (e = l.Z.settings.guilds) ? void 0 : e.guilds) ? t : {}).some(e => null != e.joinSound)
 }
 async function w(e) {
   let t = _.default.getCurrentUser(),
     n = (0, o.Z)(),
-    r = (0, y.k9)(e);
-  if (null == n || d.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, v.D)()) return;
+    r = (0, v.k9)(e);
+  if (null == n || d.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, y.D)()) return;
   await (0, g.w)();
   let i = r.guildId === O.hY ? O.X8 : r.guildId,
     a = E.Z.getSound(i, r.soundId);

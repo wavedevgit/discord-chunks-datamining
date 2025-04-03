@@ -46,7 +46,7 @@ function p(e, t, n) {
   var r;
   let {
     applicationId: i
-  } = n, l = null !== (r = u[i]) && void 0 !== r ? r : {};
+  } = n, l = null != (r = u[i]) ? r : {};
   if (l[t] = e, u[i] = l, !__OVERLAY__ && e === s.OcF.FAILED) {
     null != d[i] && d[i].stop();
     let e = new o.V7;

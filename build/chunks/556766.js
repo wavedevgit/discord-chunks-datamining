@@ -21,7 +21,7 @@ var r = n(200651),
   E = n(918559),
   b = n(871465);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ function A() {
     n = (0, l.e7)([p.Z], () => p.Z.isSoundDisabled("call_ringing")),
     o = (0, l.e7)([m.Z], () => m.Z.disableSounds),
     a = (0, l.e7)([_.Z], () => _.Z.getSoundpack()),
-    v = i.useRef(!1),
+    y = i.useRef(!1),
     O = (0, s.Z)(() => {
       let e = "call_ringing";
       return a === b.YC.CLASSIC ? (0, f.tu)(N(), e) : (0, f.uk)("call_ringing", a)
@@ -92,14 +92,14 @@ function A() {
     O.stop()
   }, [O]), i.useEffect(() => {
     if (o || n) {
-      v.current && (O.stop(), v.current = !1);
+      y.current && (O.stop(), y.current = !1);
       return
     }
-    t && !v.current ? (O.loop(), v.current = !0) : !t && v.current && (O.stop(), v.current = !1)
+    t && !y.current ? (O.loop(), y.current = !0) : !t && y.current && (O.stop(), y.current = !1)
   }, [n, o, t, O]), (0, c.Yzy)(e, {
     keys: e => {
       var t;
-      return null === (t = e.channel) || void 0 === t ? void 0 : t.id
+      return null == (t = e.channel) ? void 0 : t.id
     },
     enter: {
       from: S,
@@ -112,7 +112,7 @@ function A() {
       friction: 18,
       clamp: !0
     }
-  })((e, t) => (0, r.jsx)(d.Z, I(y({}, t), {
+  })((e, t) => (0, r.jsx)(d.Z, I(v({}, t), {
     animatedStyle: e
   })))
 }

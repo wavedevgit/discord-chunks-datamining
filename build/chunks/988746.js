@@ -27,7 +27,7 @@ class l {
         return
       }
       this.framerateReductionTimeout = setTimeout(() => {
-        !this.connection.destroyed && (s.info("BaseConnection.userSpeakingChange: Reduced framerate after ".concat(o.u$, " ms.")), this.framerateReductionTimeout = void 0, this.sinkWants.isMuted = !0, this.updateRemoteWantsFramerate())
+        this.connection.destroyed || (s.info("BaseConnection.userSpeakingChange: Reduced framerate after ".concat(o.u$, " ms.")), this.framerateReductionTimeout = void 0, this.sinkWants.isMuted = !0, this.updateRemoteWantsFramerate())
       }, o.u$)
     }
   }
@@ -44,7 +44,7 @@ class l {
     a(this, "connection", void 0), a(this, "sinkWants", void 0), a(this, "framerateReductionTimeout", void 0), a(this, "handleSpeaking", void 0), a(this, "handleSelfMute", void 0), this.connection = e, this.sinkWants = t, this.handleSpeaking = (e, t) => {
       e === this.connection.userId && this.userSpeakingChange(t === o.Dg.NONE)
     }, this.handleSelfMute = e => {
-      !this.connection.hasDesktopSource() && (this.destroyFramerateScaleFactorTimers(), this.sinkWants.isMuted = e, this.updateRemoteWantsFramerate())
+      this.connection.hasDesktopSource() || (this.destroyFramerateScaleFactorTimers(), this.sinkWants.isMuted = e, this.updateRemoteWantsFramerate())
     }, s.enableNativeLogger(!0), e.on(i.Sh.Speaking, this.handleSpeaking), e.on(i.Sh.Mute, this.handleSelfMute), this.initialize()
   }
 }

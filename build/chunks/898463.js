@@ -21,9 +21,9 @@ var r = n(200651),
   g = n(956664),
   E = n(709054),
   b = n(273031),
-  v = n(859235),
-  y = n(388032),
-  O = n(806803);
+  y = n(859235),
+  v = n(388032),
+  O = n(739846);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,7 +75,7 @@ function C(e) {
   return (0, r.jsx)(p.aQ.Provider, {
     value: !n,
     children: (0, r.jsx)(p.ZP, {
-      containerStyles: a === v.q.CLIP ? {
+      containerStyles: a === y.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
@@ -89,10 +89,10 @@ function C(e) {
           className: O.tags,
           children: [null != t && "" !== t ? (0, r.jsx)("span", {
             className: O.altTag,
-            children: y.NW.string(y.t.QEW819)
+            children: v.NW.string(v.t.QEW819)
           }) : null, s && n ? (0, r.jsx)("span", {
             className: O.altTag,
-            children: y.NW.string(y.t["F+x38P"])
+            children: v.NW.string(v.t["F+x38P"])
           }) : null]
         })]
       })
@@ -105,12 +105,12 @@ function R(e) {
     file: t,
     alt: n,
     spoiler: o,
-    size: s = v.q.MEDIUM,
+    size: s = y.q.MEDIUM,
     onMouseEnter: c
   } = e, [u, d] = i.useState(), [f, _] = i.useState({
     width: 0,
     height: 0
-  }), p = s === v.q.SMALL;
+  }), p = s === y.q.SMALL;
   i.useEffect(() => {
     if (null == t || !1 === A.includes(t.type)) return;
     let e = URL.createObjectURL(t);
@@ -150,7 +150,7 @@ function R(e) {
         className: O.__invalid_modal
       }, e), {
         size: l.CgR.DYNAMIC,
-        "aria-label": y.NW.string(y.t.X4IxWF),
+        "aria-label": v.NW.string(v.t.X4IxWF),
         children: h(!1, !0)
       })))
     }, [u, h]);
@@ -177,7 +177,7 @@ function P(e) {
     file: t,
     alt: n,
     spoiler: o,
-    size: s = v.q.MEDIUM,
+    size: s = y.q.MEDIUM,
     onMouseEnter: l,
     onVideoLoadError: c
   } = e, [u, d] = i.useState(), f = i.useRef(null);
@@ -199,7 +199,7 @@ function P(e) {
         src: u,
         className: a()(O.media, {
           [O.spoiler]: e,
-          [O.sizeClip]: s === v.q.CLIP
+          [O.sizeClip]: s === y.q.CLIP
         }),
         onError: c,
         preload: "none",
@@ -213,9 +213,9 @@ function w(e) {
   var t;
   let {
     upload: n,
-    size: o = v.q.MEDIUM,
+    size: o = y.q.MEDIUM,
     onMouseEnter: s
-  } = e, [l, c] = i.useState(!1), u = o === v.q.SMALL;
+  } = e, [l, c] = i.useState(!1), u = o === y.q.SMALL;
   return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
@@ -232,14 +232,14 @@ function w(e) {
   }) : (0, r.jsx)("div", {
     onMouseEnter: s,
     className: a()(O.icon, O.__invalid_imageContainer, {
-      [O[null !== (t = n.classification) && void 0 !== t ? t : ""]]: !0,
+      [O[null != (t = n.classification) ? t : ""]]: !0,
       [O.imageSmall]: u
     }),
     children: (0, r.jsx)("div", {
       className: O.tags,
       children: n.spoiler ? (0, r.jsx)("span", {
         className: O.altTag,
-        children: y.NW.string(y.t["F+x38P"])
+        children: v.NW.string(v.t["F+x38P"])
       }) : null
     })
   })
@@ -252,13 +252,13 @@ function D(e) {
     upload: o,
     keyboardModeEnabled: d,
     label: p,
-    size: h = v.q.MEDIUM,
+    size: h = y.q.MEDIUM,
     canEdit: g = !0,
     hideFileName: I = !1,
     clip: T
-  } = e, A = null != T, C = (h = A ? v.q.CLIP : h) === v.q.SMALL, R = (0, s.e7)([m.Z], () => {
+  } = e, A = null != T, C = (h = A ? y.q.CLIP : h) === y.q.SMALL, R = (0, s.e7)([m.Z], () => {
     var e;
-    return null === (e = m.Z.getChannel(t)) || void 0 === e ? void 0 : e.guild_id
+    return null == (e = m.Z.getChannel(t)) ? void 0 : e.guild_id
   }), P = e => {
     e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, N(S({}, e), {
       draftType: n,
@@ -278,13 +278,13 @@ function D(e) {
       }
     })))
   };
-  return (0, r.jsxs)(v.Z, {
+  return (0, r.jsxs)(y.Z, {
     actions: (0, r.jsxs)(i.Fragment, {
       children: [g ? (0, r.jsx)(b.Z, {
         className: a()({
           [O.action]: C
         }),
-        tooltip: A ? y.NW.string(y.t.MYgdY2) : y.NW.string(y.t.cuurzM),
+        tooltip: A ? v.NW.string(v.t.MYgdY2) : v.NW.string(v.t.cuurzM),
         onClick: () => c.Z.update(t, o.id, n, {
           spoiler: !o.spoiler
         }),
@@ -305,7 +305,7 @@ function D(e) {
         className: a()({
           [O.action]: C
         }),
-        tooltip: y.NW.string(y.t.Y8ujqq),
+        tooltip: v.NW.string(v.t.Y8ujqq),
         onClick: P,
         children: (0, r.jsx)(l.vdY, {
           size: "xs",
@@ -318,7 +318,7 @@ function D(e) {
         className: a()({
           [O.action]: C
         }),
-        tooltip: A ? y.NW.string(y.t.MskAXV) : y.NW.string(y.t.vN7REx),
+        tooltip: A ? v.NW.string(v.t.MskAXV) : v.NW.string(v.t.vN7REx),
         onClick: () => c.Z.remove(t, o.id, n),
         dangerous: !0,
         children: (0, r.jsx)(l.XHJ, {
@@ -360,7 +360,7 @@ function D(e) {
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,
         className: O.clipsBadge,
-        text: y.NW.string(y.t.oA4afH)
+        text: v.NW.string(v.t.oA4afH)
       })]
     })]
   })

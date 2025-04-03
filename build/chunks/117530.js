@@ -27,12 +27,12 @@ let h = new Map,
 
 function g(e, t) {
   var n, r;
-  return null !== (r = null === (n = E(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : m
+  return null != (r = null == (n = E(e)) ? void 0 : n.get(t)) ? r : m
 }
 
 function E(e) {
   var t;
-  return null !== (t = h.get(e)) && void 0 !== t ? t : new Map
+  return null != (t = h.get(e)) ? t : new Map
 }
 
 function b(e, t, n) {
@@ -40,28 +40,25 @@ function b(e, t, n) {
   r.set(t, n), h.set(e, r)
 }
 
-function v(e) {
+function y(e) {
   let {
     channelId: t
   } = e, n = [...g(t, d.d.ChannelMessage)];
   n.shift(), b(t, d.d.ChannelMessage, n)
 }
-let y = e => {
+let v = e => {
   let {
     files: t,
     channelId: n,
     showLargeMessageDialog: r,
     draftType: i
   } = e, a = [...g(n, i)];
-  if (a.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) {
-    l.Z.show({
-      title: _.NW.string(_.t.wOr6hI),
-      body: _.NW.formatToPlainString(_.t["qqyp/f"], {
-        limit: f.dN1
-      })
-    });
-    return
-  }
+  if (a.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) return void l.Z.show({
+    title: _.NW.string(_.t.wOr6hI),
+    body: _.NW.formatToPlainString(_.t["qqyp/f"], {
+      limit: f.dN1
+    })
+  });
   o().forEach(t, e => {
     let t = new c.n(e, n, r, a.length);
     t.upload(), a.push(t)
@@ -145,14 +142,14 @@ class R extends(r = a.ZP.Store) {
   }
   hasAdditionalUploads(e, t) {
     var n;
-    return (null !== (n = g(e, t).length) && void 0 !== n ? n : 0) > 1
+    return (null != (n = g(e, t).length) ? n : 0) > 1
   }
   getUploads(e, t) {
     return g(e, t)
   }
   getUploadCount(e, t) {
     var n;
-    return null !== (n = g(e, t).length) && void 0 !== n ? n : 0
+    return null != (n = g(e, t).length) ? n : 0
   }
   getUpload(e, t, n) {
     return g(e, n).find(e => e.id === t)
@@ -163,8 +160,8 @@ class R extends(r = a.ZP.Store) {
 }
 p(R, "displayName", "UploadAttachmentStore");
 let P = new R(s.Z, {
-  UPLOAD_ATTACHMENT_POP_FILE: v,
-  UPLOAD_ATTACHMENT_ADD_FILES: y,
+  UPLOAD_ATTACHMENT_POP_FILE: y,
+  UPLOAD_ATTACHMENT_ADD_FILES: v,
   UPLOAD_ATTACHMENT_UPDATE_FILE: S,
   UPLOAD_ATTACHMENT_REMOVE_FILE: O,
   UPLOAD_ATTACHMENT_REMOVE_FILES: I,

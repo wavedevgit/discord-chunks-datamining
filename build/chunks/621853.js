@@ -51,12 +51,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = Symbol("NO GUILD ID"),
+let v = Symbol("NO GUILD ID"),
   O = new Map,
   I = new Set,
   S = "premium",
@@ -92,7 +92,7 @@ function U(e, t) {
   if ((null == r ? void 0 : r.profileEffectExpiresAt) == null) return;
   let i = P.get(e),
     o = 1e3 * r.profileEffectExpiresAt + h.Cm - Date.now();
-  if (o <= 0) n.set(t, v(E({}, r), {
+  if (o <= 0) n.set(t, y(E({}, r), {
     profileEffectId: void 0,
     profileEffectExpiresAt: void 0
   })), null != i && i.delete(t), eo.emitChange();
@@ -143,8 +143,8 @@ function H(e) {
   var t, n, r, i, s, l, c, d, f, h, g, b, N, M, k, G, B, F, Z, H, W, Y, K, z, q, Q, X;
   let {
     userProfile: J
-  } = e, $ = null !== (k = null === (t = J.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== k ? k : y;
-  if (null === (n = O.get(J.user.id)) || void 0 === n || n.delete($), I.delete(J.user.id), null != J.mutual_guilds) {
+  } = e, $ = null != (k = null == (t = J.guild_member_profile) ? void 0 : t.guild_id) ? k : v;
+  if (null == (n = O.get(J.user.id)) || n.delete($), I.delete(J.user.id), null != J.mutual_guilds) {
     let e = {};
     J.mutual_guilds.forEach(t => {
       let {
@@ -170,16 +170,16 @@ function H(e) {
     en = J.application;
   if (A.set(J.user.id, {
       userId: J.user.id,
-      banner: null === (r = J.user_profile) || void 0 === r ? void 0 : r.banner,
-      accentColor: null === (i = J.user_profile) || void 0 === i ? void 0 : i.accent_color,
-      themeColors: null === (s = J.user_profile) || void 0 === s ? void 0 : s.theme_colors,
-      popoutAnimationParticleType: null === (l = J.user_profile) || void 0 === l ? void 0 : l.popout_animation_particle_type,
-      bio: null !== (G = null === (c = J.user_profile) || void 0 === c ? void 0 : c.bio) && void 0 !== G ? G : "",
-      profileEffectId: null === (f = J.user_profile) || void 0 === f ? void 0 : null === (d = f.profile_effect) || void 0 === d ? void 0 : d.id,
-      profileEffectExpiresAt: null === (g = J.user_profile) || void 0 === g ? void 0 : null === (h = g.profile_effect) || void 0 === h ? void 0 : h.expires_at,
-      pronouns: null !== (B = null === (b = J.user_profile) || void 0 === b ? void 0 : b.pronouns) && void 0 !== B ? B : "",
-      connectedAccounts: null !== (F = J.connected_accounts.filter(e => a.Z.isSupported(e.type))) && void 0 !== F ? F : [],
-      applicationRoleConnections: null !== (Z = J.application_role_connections) && void 0 !== Z ? Z : [],
+      banner: null == (r = J.user_profile) ? void 0 : r.banner,
+      accentColor: null == (i = J.user_profile) ? void 0 : i.accent_color,
+      themeColors: null == (s = J.user_profile) ? void 0 : s.theme_colors,
+      popoutAnimationParticleType: null == (l = J.user_profile) ? void 0 : l.popout_animation_particle_type,
+      bio: null != (G = null == (c = J.user_profile) ? void 0 : c.bio) ? G : "",
+      profileEffectId: null == (f = J.user_profile) || null == (d = f.profile_effect) ? void 0 : d.id,
+      profileEffectExpiresAt: null == (g = J.user_profile) || null == (h = g.profile_effect) ? void 0 : h.expires_at,
+      pronouns: null != (B = null == (b = J.user_profile) ? void 0 : b.pronouns) ? B : "",
+      connectedAccounts: null != (F = J.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? F : [],
+      applicationRoleConnections: null != (Z = J.application_role_connections) ? Z : [],
       premiumSince: ee,
       premiumType: J.premium_type,
       premiumGuildSince: et,
@@ -204,17 +204,17 @@ function H(e) {
           });
           return null != t && (n = m.NW.formatToPlainString(m.t.Hu4jfn, {
             date: ee
-          })), v(E({}, e), {
+          })), y(E({}, e), {
             description: n
           })
         }
-        return e.id.startsWith(T) && null != et ? v(E({}, e), {
+        return e.id.startsWith(T) && null != et ? y(E({}, e), {
           description: m.NW.formatToPlainString(m.t.IWkAq6, {
             date: et
           })
         }) : e
       }) : J.badges
-    }), (null === (M = J.user_profile) || void 0 === M ? void 0 : null === (N = M.profile_effect) || void 0 === N ? void 0 : N.expires_at) != null) {
+    }), (null == (M = J.user_profile) || null == (N = M.profile_effect) ? void 0 : N.expires_at) != null) {
     let e = new o.V7;
     R.set(J.user.id, e), j(J.user.id)
   }
@@ -224,10 +224,10 @@ function H(e) {
         guildId: J.guild_member_profile.guild_id,
         banner: J.guild_member_profile.banner,
         accentColor: J.guild_member_profile.accent_color,
-        themeColors: null === (H = J.guild_member_profile) || void 0 === H ? void 0 : H.theme_colors,
-        popoutAnimationParticleType: null === (W = J.guild_member_profile) || void 0 === W ? void 0 : W.popout_animation_particle_type,
-        profileEffectId: null === (K = J.guild_member_profile) || void 0 === K ? void 0 : null === (Y = K.profile_effect) || void 0 === Y ? void 0 : Y.id,
-        profileEffectExpiresAt: null === (q = J.guild_member_profile) || void 0 === q ? void 0 : null === (z = q.profile_effect) || void 0 === z ? void 0 : z.expires_at,
+        themeColors: null == (H = J.guild_member_profile) ? void 0 : H.theme_colors,
+        popoutAnimationParticleType: null == (W = J.guild_member_profile) ? void 0 : W.popout_animation_particle_type,
+        profileEffectId: null == (K = J.guild_member_profile) || null == (Y = K.profile_effect) ? void 0 : Y.id,
+        profileEffectExpiresAt: null == (q = J.guild_member_profile) || null == (z = q.profile_effect) ? void 0 : z.expires_at,
         bio: J.guild_member_profile.bio,
         pronouns: J.guild_member_profile.pronouns,
         badges: J.guild_badges
@@ -238,7 +238,7 @@ function H(e) {
       let t = new Map;
       t.set(J.guild_member_profile.guild_id, e), C.set(J.user.id, t)
     }
-    if ((null === (X = J.guild_member_profile) || void 0 === X ? void 0 : null === (Q = X.profile_effect) || void 0 === Q ? void 0 : Q.expires_at) != null) {
+    if ((null == (X = J.guild_member_profile) || null == (Q = X.profile_effect) ? void 0 : Q.expires_at) != null) {
       let e = new o.V7,
         t = P.get(J.user.id);
       if (null != t) t.set(J.guild_member_profile.guild_id, e);
@@ -256,7 +256,7 @@ function W(e) {
     userId: t,
     guildId: n,
     withMutualFriends: r
-  } = e, i = null != n ? n : y, o = O.get(t);
+  } = e, i = null != n ? n : v, o = O.get(t);
   if (null != o) o.add(i);
   else {
     let e = new Set;
@@ -272,8 +272,8 @@ function Y(e) {
     guildId: i,
     apiError: o
   } = e;
-  null === (t = O.get(r)) || void 0 === t || t.delete(null != i ? i : y), I.delete(r);
-  let a = null !== (n = A.get(r)) && void 0 !== n ? n : {
+  null == (t = O.get(r)) || t.delete(null != i ? i : v), I.delete(r);
+  let a = null != (n = A.get(r)) ? n : {
     connectedAccounts: [],
     applicationRoleConnections: [],
     premiumSince: null,
@@ -305,7 +305,7 @@ function K(e) {
     profileEffectExpiresAt: u
   } = e, d = A.get(t);
   if (null == d) return !1;
-  if (A.set(t, v(E({}, d), {
+  if (A.set(t, y(E({}, d), {
       accentColor: n,
       banner: r,
       bio: i,
@@ -336,7 +336,7 @@ function z(e) {
   if (null == n || null == f) return !1;
   let _ = f.get(n);
   if (null == _) return !1;
-  if (f.set(n, v(E({}, _), {
+  if (f.set(n, y(E({}, _), {
       accentColor: r,
       banner: i,
       bio: a,
@@ -372,7 +372,7 @@ function X(e) {
 function J(e) {
   var t, n;
   let r = e.user.id;
-  return !((null !== (n = null === (t = O.get(r)) || void 0 === t ? void 0 : t.size) && void 0 !== n ? n : 0) > 0) && er(r)
+  return !((null != (n = null == (t = O.get(r)) ? void 0 : t.size) ? n : 0) > 0) && er(r)
 }
 
 function $(e) {
@@ -403,7 +403,7 @@ class ei extends f.Z {
   }
   isFetchingProfile(e, t) {
     let n = O.get(e);
-    return null != n && n.has(null != t ? t : y)
+    return null != n && n.has(null != t ? t : v)
   }
   isFetchingFriends(e) {
     return I.has(e)
@@ -416,7 +416,7 @@ class ei extends f.Z {
   }
   getGuildMemberProfile(e, t) {
     var n, r;
-    return null == t ? null : null !== (r = null === (n = C.get(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : null
+    return null == t ? null : null != (r = null == (n = C.get(e)) ? void 0 : n.get(t)) ? r : null
   }
   getMutualFriends(e) {
     return w.get(e)

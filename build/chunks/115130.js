@@ -71,14 +71,14 @@ function b(e) {
   f.lastUsedObject[t] = n
 }
 
-function v(e) {
+function y(e) {
   let {
     applications: t
   } = e;
   p = "LOADED", h = t.filter(e => null != e.flags && (0, s.yE)(e.flags, l.udG.EMBEDDED))
 }
 
-function y(e) {
+function v(e) {
   let {
     type: t
   } = e;
@@ -132,8 +132,8 @@ let S = new I(o.Z, {
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
     p = "LOADING"
   },
-  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: v,
-  DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: y,
+  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: y,
+  DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: v,
   DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: O,
   USER_SETTINGS_PROTO_UPDATE() {}
 })

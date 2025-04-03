@@ -63,19 +63,16 @@ function E(e) {
     uploads: h,
     channel: E,
     restrictMentions: b,
-    respectCooldown: v,
-    userCanUsePremiumMessageLength: y,
+    respectCooldown: y,
+    userCanUsePremiumMessageLength: v,
     resolve: O
   } = e;
-  if (0 === u.length && !(null === (t = c.submit) || void 0 === t ? void 0 : t.allowEmptyMessage) && (null == f || 0 === f.length) && (null == h || 0 === h.length)) {
-    O({
-      valid: !1,
-      failureReason: _.zYc.EMPTY_MESSAGE
-    });
-    return
-  }
-  let I = y ? _.en1 : _.J6R,
-    S = !y;
+  if (0 === u.length && !(null == (t = c.submit) ? void 0 : t.allowEmptyMessage) && (null == f || 0 === f.length) && (null == h || 0 === h.length)) return void O({
+    valid: !1,
+    failureReason: _.zYc.EMPTY_MESSAGE
+  });
+  let I = v ? _.en1 : _.J6R,
+    S = !v;
   if (u.length > I) {
     S && null != E ? o.Z.dispatch({
       type: "MESSAGE_LENGTH_UPSELL",
@@ -88,13 +85,10 @@ function E(e) {
     return
   }
   if (null != E) {
-    if (null != E.getGuildId() && v && l.Z.getSlowmodeCooldownGuess(E.id) > 0) {
-      O({
-        valid: !1,
-        failureReason: _.zYc.SLOWMODE_COOLDOWN
-      });
-      return
-    }
+    if (null != E.getGuildId() && y && l.Z.getSlowmodeCooldownGuess(E.id) > 0) return void O({
+      valid: !1,
+      failureReason: _.zYc.SLOWMODE_COOLDOWN
+    });
     if (null != n)
       for (let {
           check: e,
@@ -103,22 +97,19 @@ function E(e) {
         }
         of d.$) {
         let i = e(u, E, b);
-        if (!1 !== i) {
-          n({
-            analyticsType: t,
-            channel: E,
-            onCancel: () => O({
-              valid: !1,
-              failureReason: _.zYc.SHOUTING_CANCELLED
-            }),
-            onConfirm: () => O({
-              valid: !0
-            }),
-            popoutText: i,
-            animation: r
-          });
-          return
-        }
+        if (!1 !== i) return void n({
+          analyticsType: t,
+          channel: E,
+          onCancel: () => O({
+            valid: !1,
+            failureReason: _.zYc.SHOUTING_CANCELLED
+          }),
+          onConfirm: () => O({
+            valid: !0
+          }),
+          popoutText: i,
+          animation: r
+        })
       }
   }
   if (s.ZP.isFull()) {

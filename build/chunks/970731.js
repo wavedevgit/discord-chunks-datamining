@@ -3,7 +3,7 @@
 n.d(t, {
   BD: () => m,
   DF: () => p,
-  ZP: () => v,
+  ZP: () => y,
   _F: () => h
 });
 var r = n(200651);
@@ -13,7 +13,7 @@ var i = n(120356),
   a = n(481060),
   s = n(493773),
   l = n(921944),
-  c = n(89889);
+  c = n(519254);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,7 +75,7 @@ let g = Object.freeze({
     primary: "text-normal"
   });
 
-function v(e) {
+function y(e) {
   let {
     color: t = "brand",
     className: n,
@@ -85,8 +85,8 @@ function v(e) {
     contentClassName: p,
     buttonCTA: h,
     secondaryButtonCTA: m,
-    onClick: v,
-    onSecondaryClick: y,
+    onClick: y,
+    onSecondaryClick: v,
     buttonProps: O = {
       color: a.zxk.Colors.BRAND,
       look: a.zxk.Looks.FILLED
@@ -105,10 +105,10 @@ function v(e) {
   });
   let R = null != m,
     P = e => {
-      v(e), null == N || N(l.L.PRIMARY)
+      y(e), null == N || N(l.L.PRIMARY)
     },
     w = () => {
-      null == y || y(), null == N || N(l.L.SECONDARY)
+      null == v || v(), null == N || N(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
     className: o()(n, g[t], c.upsellTooltipWrapper, c[A]),
@@ -139,4 +139,4 @@ function v(e) {
     }) : null]
   })
 }
-v.CaretPosition = p, v.ButtonLayout = h
+y.CaretPosition = p, y.ButtonLayout = h

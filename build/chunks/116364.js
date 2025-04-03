@@ -18,20 +18,20 @@ var i = n(392711),
   p = n(590921),
   h = n(689079),
   m = n(388032),
-  g = n(202509),
+  g = n(928874),
   E = n(239840);
 let b = {
     results: {
       choices: []
     }
   },
-  v = {
+  y = {
     results: {
       choices: [],
       isLoading: !0
     }
   },
-  y = Array.from({
+  v = Array.from({
     length: 5
   }, () => ({
     name: "",
@@ -77,7 +77,7 @@ let T = {
           }
         }), l.Z.getLastErrored(e.id)) return O;
       let o = l.Z.getAutocompleteChoices(e.id, a.name, n);
-      return null == o ? v : {
+      return null == o ? y : {
         results: {
           choices: o
         }
@@ -86,7 +86,7 @@ let T = {
     return {
       results: f.ZP.queryChoiceResults({
         query: n,
-        choices: a.type === s.jw.BOOLEAN ? h.ak : null !== (o = a.choices) && void 0 !== o ? o : []
+        choices: a.type === s.jw.BOOLEAN ? h.ak : null != (o = a.choices) ? o : []
       })
     }
   },
@@ -109,7 +109,7 @@ let T = {
     }) : 0 !== t.length || n ? (0, _.HI)({
       query: s,
       selectedIndex: o,
-      autocompletes: n ? y : t,
+      autocompletes: n ? v : t,
       onHover: l,
       onClick: c,
       titleWithQuery: m.t.pg0anJ,

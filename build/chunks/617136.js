@@ -60,22 +60,22 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = Object.keys(d.jn),
+let v = Object.keys(d.jn),
   O = new Set([m.rMx.QUEST_CONTENT_VIEWED, m.rMx.QUEST_CONTENT_CLICKED]);
 
 function I(e) {
   var t;
-  return null !== (t = y.find(t => d.jn[t] === e)) && void 0 !== t ? t : ""
+  return null != (t = v.find(t => d.jn[t] === e)) ? t : ""
 }
 
 function S(e) {
   var t, n, r;
-  return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null === (n = e.userStatus) || void 0 === n ? void 0 : n.completedAt) != null ? "COMPLETED" : (null === (r = e.userStatus) || void 0 === r ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
+  return (null == (t = e.userStatus) ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? void 0 : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
 function T(e, t) {
@@ -134,7 +134,7 @@ function R(e) {
   A({
     questId: t,
     event: m.rMx.QUEST_CONTENT_CLICKED,
-    properties: v(E({}, l, N(n, i, o)), {
+    properties: y(E({}, l, N(n, i, o)), {
       cta_name: r,
       impression_id: a
     }),
@@ -153,7 +153,7 @@ function P(e) {
   A({
     questId: n,
     event: m.rMx.QUEST_BAR_MODE_CHANGED,
-    properties: v(E({}, N(t)), {
+    properties: y(E({}, N(t)), {
       mode: r,
       previous_mode: i
     })
@@ -174,7 +174,7 @@ function w() {
     A({
       questId: n,
       event: r,
-      properties: v(E({}, i), {
+      properties: y(E({}, i), {
         impression_id: null == e ? void 0 : e.getId()
       }),
       trackGuildAndChannelMetadata: o,
@@ -198,7 +198,7 @@ function D() {
     e({
       questId: n,
       event: m.rMx.QUEST_CONTENT_CLICKED,
-      properties: v(E({}, l, N(r, o, a)), {
+      properties: y(E({}, l, N(r, o, a)), {
         cta_name: i
       }),
       trackGuildAndChannelMetadata: s,

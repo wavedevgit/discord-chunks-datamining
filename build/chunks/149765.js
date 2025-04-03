@@ -151,7 +151,7 @@ let h = p ? function(e) {
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e.and(t)
   },
-  v = p ? function() {
+  y = p ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e | t
@@ -160,7 +160,7 @@ let h = p ? function(e) {
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e.or(t)
   },
-  y = p ? function() {
+  v = p ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e ^ t
@@ -185,7 +185,7 @@ let h = p ? function(e) {
 function S() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   let r = t[0];
-  for (let e = 1; e < t.length; e++) r = v(r, t[e]);
+  for (let e = 1; e < t.length; e++) r = y(r, t[e]);
   return r
 }
 
@@ -198,11 +198,11 @@ function N(e, t) {
 }
 
 function A(e, t) {
-  return t === E ? e : v(e, t)
+  return t === E ? e : y(e, t)
 }
 
 function C(e, t) {
-  return t === E ? e : y(e, b(e, t))
+  return t === E ? e : v(e, b(e, t))
 }
 let R = p ? function(e) {
     return BigInt(1) << BigInt(e)

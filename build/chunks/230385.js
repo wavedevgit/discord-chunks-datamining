@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var r = n(704215),
   i = n(147913),
@@ -55,7 +55,7 @@ function E(e, t) {
   }), e
 }
 let b = new o.Z("VoiceFilterManager");
-class v extends i.Z {
+class y extends i.Z {
   loadNativeModule() {
     (0, f.r5)()
   }
@@ -64,10 +64,7 @@ class v extends i.Z {
       newVoiceFilterId: t,
       analyticsContext: n
     } = e, r = null != t ? d.Z.getVoiceFilter(t) : void 0;
-    if (null == r && null != t) {
-      b.error("requested Voice Filter is missing in VoiceFilterStore");
-      return
-    }
+    if (null == r && null != t) return void b.error("requested Voice Filter is missing in VoiceFilterStore");
     if ((null == r ? void 0 : r.modelIds) != null) {
       let e = d.Z.getVoiceFilterModels(),
         t = Object.values(r.modelIds).map(t => ({
@@ -93,19 +90,14 @@ class v extends i.Z {
         model_id: t
       }), c && null != o) {
       let e = d.Z.getVoiceFilter(o);
-      if (null == e) {
-        b.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
-        return
-      }
+      if (null == e) return void b.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
       let n = e.modelIds,
         r = Object.values(null != n ? n : {}).filter(e => !d.Z.isModelDownloaded(e)).filter(e => e !== t);
-      if (r.length > 0) {
-        b.info("waiting for more dependencies", {
-          mostRecentlyRequestedVoiceFilter: o,
-          missingDependencies: r
-        });
-        return
-      }(0, f.rk)(o, i)
+      if (r.length > 0) return void b.info("waiting for more dependencies", {
+        mostRecentlyRequestedVoiceFilter: o,
+        missingDependencies: r
+      });
+      (0, f.rk)(o, i)
     }
   }
   handleVoiceFilterDownloadFailed(e) {
@@ -114,10 +106,10 @@ class v extends i.Z {
       modelId: r,
       voiceFilterId: i,
       error: o
-    } = e, a = "USER_CANCELED_DOWNLOAD", c = null != o && a in o, u = (null !== (t = null == o ? void 0 : o.message) && void 0 !== t ? t : String(o)).substring(0, 200);
+    } = e, a = "USER_CANCELED_DOWNLOAD", c = null != o && a in o, u = (null != (t = null == o ? void 0 : o.message) ? t : String(o)).substring(0, 200);
     c && (u = a), l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
       canceled: c,
-      active_voice_filter_id: null !== (n = s.Z.getActiveVoiceFilter()) && void 0 !== n ? n : null,
+      active_voice_filter_id: null != (n = s.Z.getActiveVoiceFilter()) ? n : null,
       success: !1,
       voice_filter_id: i,
       model_id: r,
@@ -170,4 +162,4 @@ class v extends i.Z {
     })
   }
 }
-let y = new v
+let v = new y

@@ -60,15 +60,15 @@ function E(e, t, n) {
     modViewPanel: f.k.INFO
   };
   if (!(0, d.Y)(e)) return Promise.resolve();
-  let v = null !== (p = b.modViewPanel) && void 0 !== p ? p : f.k.INFO,
-    y = null !== (m = b.sourceLocation) && void 0 !== m ? m : r.Z.MEMBER_SAFETY_PAGE,
+  let y = null != (p = b.modViewPanel) ? p : f.k.INFO,
+    v = null != (m = b.sourceLocation) ? m : r.Z.MEMBER_SAFETY_PAGE,
     O = c.Z.getCurrentlySelectedChannelId(),
     I = null != O ? s.Z.getChannel(O) : null;
   if (null == I || I.getGuildId() !== e) {
     let t = l.ZP.getDefaultChannel(e);
     null == t || t.isNSFW() || (0, i.uL)(_.Z5c.CHANNEL(e, t.id))
   }
-  return (0, u.q)(e, t, v, y), o.Z.openGuildSidebar({
+  return (0, u.q)(e, t, y, v), o.Z.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
     sidebarType: a.jL.GUILD_MEMBER_MOD_VIEW,
@@ -77,7 +77,7 @@ function E(e, t, n) {
       userId: t,
       guildId: e
     }, b), {
-      modViewPanel: null !== (E = b.modViewPanel) && void 0 !== E ? E : f.k.INFO
+      modViewPanel: null != (E = b.modViewPanel) ? E : f.k.INFO
     })
   })
 }

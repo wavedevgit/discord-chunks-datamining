@@ -26,8 +26,8 @@ var r = n(392711),
   E = n(630388),
   b = n(823379);
 n(358085);
-var v = n(709054),
-  y = n(981631);
+var y = n(709054),
+  v = n(981631);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,14 +70,13 @@ function N(e, t) {
     search: null != i ? "?store_listing_id=".concat(i) : ""
   };
   return I({
-    pathname: null != a && null != s ? y.Z5c.CHANNEL(s, a, e) : y.Z5c.APPLICATION_STORE_LISTING_SKU(e, o)
+    pathname: null != a && null != s ? v.Z5c.CHANNEL(s, a, e) : v.Z5c.APPLICATION_STORE_LISTING_SKU(e, o)
   }, l)
 }
 
 function A(e, t, n, r) {
   var i;
-  let o;
-  let a = window.GLOBAL_ENV.CDN_HOST;
+  let o, a = window.GLOBAL_ENV.CDN_HOST;
   if (null == r) switch (t.mimeType || t.mime_type) {
     case "video/quicktime":
     case "video/mp4":
@@ -91,8 +90,8 @@ function A(e, t, n, r) {
   }
   "webp" !== r || S || (r = "png");
   let s = "string" == typeof t ? t : t.id,
-    l = (i = "https:", "https:");
-  return o = null != a ? "".concat(l, "//").concat(a, "/app-assets/").concat(e, "/store/").concat(s, ".").concat(r) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(y.ANM.STORE_ASSET(e, s, r)), null != n && (o += "?size=".concat((0, f.oO)(n * (0, f.x_)()))), o
+    l = i = "https:";
+  return o = null != a ? "".concat(l, "//").concat(a, "/app-assets/").concat(e, "/store/").concat(s, ".").concat(r) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(v.ANM.STORE_ASSET(e, s, r)), null != n && (o += "?size=".concat((0, f.oO)(n * (0, f.x_)()))), o
 }
 
 function C() {
@@ -112,12 +111,12 @@ async function R(e) {
     a = _.default.isAuthenticated();
   if (o && a) {
     let e = [];
-    h.Z.hasFetchedPaymentSources || e.push(null !== (n = p.Z.paymentSourcesFetchRequest) && void 0 !== n ? n : (0, d.tZ)()), p.Z.ipCountryCodeLoaded || e.push((0, d.GE)()), e.push(C()), await Promise.race([Promise.allSettled(e), new Promise(e => setTimeout(e, 1e4))])
+    h.Z.hasFetchedPaymentSources || e.push(null != (n = p.Z.paymentSourcesFetchRequest) ? n : (0, d.tZ)()), p.Z.ipCountryCodeLoaded || e.push((0, d.GE)()), e.push(C()), await Promise.race([Promise.allSettled(e), new Promise(e => setTimeout(e, 1e4))])
   }
   let s = h.Z.getDefaultBillingCountryCode(),
-    l = null !== (r = null === (t = h.Z.defaultPaymentSource) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : null,
+    l = null != (r = null == (t = h.Z.defaultPaymentSource) ? void 0 : t.id) ? r : null,
     c = m.ZP.getPremiumTypeSubscription();
-  null != c && null != c.paymentSourceId && (l = c.paymentSourceId), null === s && (s = null !== (i = p.Z.ipCountryCode) && void 0 !== i ? i : null);
+  null != c && null != c.paymentSourceId && (l = c.paymentSourceId), null === s && (s = null != (i = p.Z.ipCountryCode) ? i : null);
   let f = {};
   if (null != s && (f.country_code = s), null != l && (f.payment_source_id = l), null != s || null != l) {
     if ("string" == typeof e && (e = {
@@ -137,8 +136,8 @@ function P(e, t, n) {
 
 function w(e, t, n) {
   var r;
-  let i = null !== (r = n.getNowPlaying(e)) && void 0 !== r ? r : {},
-    o = v.default.keys(i).map(e => {
+  let i = null != (r = n.getNowPlaying(e)) ? r : {},
+    o = y.default.keys(i).map(e => {
       let n = t.getUser(e);
       return null == n ? null : {
         user: n,
@@ -146,7 +145,7 @@ function w(e, t, n) {
       }
     }).filter(b.lm).sort((e, t) => t.startTime - e.startTime);
   return 0 === o.length ? null : {
-    type: y.AzA.NOW_PLAYING,
+    type: v.AzA.NOW_PLAYING,
     userInfo: o
   }
 }
@@ -162,7 +161,7 @@ function D(e, t, n) {
     }
   }).filter(b.lm).sort((e, t) => t.endTime - e.endTime);
   return 0 === i.length ? null : {
-    type: y.AzA.EVER_PLAYED,
+    type: v.AzA.EVER_PLAYED,
     userInfo: i
   }
 }
@@ -198,18 +197,18 @@ function k(e, t, n) {
     i = n.getForSKU(e);
   if (null == r || null == i) return M;
   let o = [];
-  (0, E.yE)(r.flags, y.l4R.HAS_FREE_PREMIUM_CONTENT) && o.push({
-    type: y.AzA.HAS_FREE_PREMIUM_CONTENT
+  (0, E.yE)(r.flags, v.l4R.HAS_FREE_PREMIUM_CONTENT) && o.push({
+    type: v.AzA.HAS_FREE_PREMIUM_CONTENT
   });
   let s = r.releaseDate;
-  return null != s && a()().diff(s, "months") < T && (r.accessType === y.kGb.EARLY_ACCESS ? o.push({
-    type: y.AzA.EARLY_ACCESS,
+  return null != s && a()().diff(s, "months") < T && (r.accessType === v.kGb.EARLY_ACCESS ? o.push({
+    type: v.AzA.EARLY_ACCESS,
     releaseDate: s
   }) : o.push({
-    type: y.AzA.RECENT_RELEASE_DATE,
+    type: v.AzA.RECENT_RELEASE_DATE,
     releaseDate: s
   })), null != i.flavorText && o.push({
-    type: y.AzA.FLAVOR_TEXT,
+    type: v.AzA.FLAVOR_TEXT,
     flavorText: i.flavorText
   }), o
 }

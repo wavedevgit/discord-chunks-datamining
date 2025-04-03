@@ -1,4 +1,3 @@
 /** Chunk was on web.js **/
-let r = n(15496),
-  i = (e, t, n) => r(t, e, n);
-e.exports = i
+let r = n(15496);
+e.exports = (e, t, n) => r(t, e, n)

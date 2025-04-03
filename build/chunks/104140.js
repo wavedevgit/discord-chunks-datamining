@@ -17,7 +17,7 @@ var r, i = n(200651),
   h = n(215569),
   m = n(481060),
   g = n(540059),
-  E = n(807077);
+  E = n(976962);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -132,7 +132,7 @@ let T = 108e5,
         throw Error("Unsupported BlobMask circle size: ".concat(e))
     }
   },
-  U = (null === (r = window.SVGPathElement) || void 0 === r ? void 0 : r.prototype.getTotalLength) != null,
+  U = (null == (r = window.SVGPathElement) ? void 0 : r.prototype.getTotalLength) != null,
   G = new Map;
 
 function B(e, t) {
@@ -210,7 +210,7 @@ function W(e) {
     u = L(l),
     d = x(u),
     f = M(s);
-  return s ? (0, i.jsx)(K, O(v({}, a), {
+  return s ? (0, i.jsx)(K, O(y({}, a), {
     rounded: o,
     isVisualRefreshEnabled: !0,
     baseViewBoxSize: c,
@@ -220,7 +220,7 @@ function W(e) {
     selected: t,
     lowerBadgeSize: n,
     highlight: r
-  })) : (0, i.jsx)(Y, O(v({}, a), {
+  })) : (0, i.jsx)(Y, O(y({}, a), {
     selected: t,
     lowerBadgeSize: n,
     highlight: r,
@@ -362,7 +362,7 @@ class Y extends o.Component {
   }
   getPathInterpolation() {
     var e;
-    return null === (e = this.state.borderRadiusMask) || void 0 === e ? void 0 : e.springs.spring.to(this.interpolator)
+    return null == (e = this.state.borderRadiusMask) ? void 0 : e.springs.spring.to(this.interpolator)
   }
   render() {
     let {
@@ -380,8 +380,8 @@ class Y extends o.Component {
       isVisualRefreshEnabled: g,
       isFolder: b
     } = this.props, {
-      maskId: v,
-      lowerBadgeMask: y,
+      maskId: y,
+      lowerBadgeMask: v,
       upperBadgeMask: O,
       focused: I,
       hasRenderedBadge: S,
@@ -411,11 +411,11 @@ class Y extends o.Component {
         }, "foreign-object")
       }, "svg")
     }, "wrapper");
-    let N = "".concat(v, "-upper_badge_masks"),
-      R = "".concat(v, "-lower_badge_masks"),
-      P = "".concat(v, "-blob_mask"),
-      w = "".concat(v, "-stroke_mask"),
-      D = "".concat(v, "-highlight_mask"),
+    let N = "".concat(y, "-upper_badge_masks"),
+      R = "".concat(y, "-lower_badge_masks"),
+      P = "".concat(y, "-blob_mask"),
+      w = "".concat(y, "-stroke_mask"),
+      D = "".concat(y, "-highlight_mask"),
       L = (null == a ? void 0 : a.width) != null ? a.width : A,
       x = (null == a ? void 0 : a.height) != null ? a.height : A,
       M = {
@@ -462,10 +462,10 @@ class Y extends o.Component {
             height: x + 2 * m,
             rx: p / 2,
             ry: p / 2,
-            transform: this.getBadgePositionInterpolation(y, 1, L + m)
+            transform: this.getBadgePositionInterpolation(v, 1, L + m)
           }) : null]
         }), (0, i.jsxs)("mask", {
-          id: v,
+          id: y,
           fill: "black",
           x: 0,
           y: 0,
@@ -526,7 +526,7 @@ class Y extends o.Component {
           className: E.highlight,
           mask: "url(#".concat(w, ")")
         }), (0, i.jsx)("foreignObject", {
-          mask: "url(#".concat(v, ")"),
+          mask: "url(#".concat(y, ")"),
           x: 0,
           y: 0,
           className: n,
@@ -585,10 +585,10 @@ function K(e) {
     upperBadge: h,
     lowerBadge: m,
     rounded: g = !1
-  } = e, [b, v] = o.useState(!1), y = () => {
-    v(!0)
+  } = e, [b, y] = o.useState(!1), v = () => {
+    y(!0)
   }, O = () => {
-    v(!1)
+    y(!1)
   }, I = null != h, S = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
     width: n + 8,
     height: n + 8,
@@ -598,7 +598,7 @@ function K(e) {
   return (0, i.jsxs)("div", {
     className: s()(r, E.wrapper),
     style: a,
-    onFocus: y,
+    onFocus: v,
     onBlur: O,
     children: [(0, i.jsxs)("svg", {
       width: M.width,

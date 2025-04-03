@@ -19,7 +19,7 @@ var i = n(512722),
   p = n(981631),
   h = n(231338),
   m = n(388032),
-  g = n(746588),
+  g = n(972478),
   E = n(74316);
 
 function b(e, t, n) {
@@ -31,7 +31,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,7 +56,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -94,7 +94,7 @@ function T(e) {
     flashLegalTerms: f,
     isSubmitting: h,
     premiumSubscription: b,
-    isGift: y,
+    isGift: v,
     planGroup: T,
     isPrepaid: N,
     isTrial: A,
@@ -114,7 +114,7 @@ function T(e) {
     purchaseType: M,
     plan: L,
     premiumSubscription: b,
-    isGift: y,
+    isGift: v,
     planGroup: T,
     isPrepaidPaymentSource: N,
     inReverseTrial: P
@@ -128,7 +128,7 @@ function T(e) {
   });
   if (R) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.L7jbQU),
-    children: e => (0, r.jsx)(a.zxk, O(v({}, e), {
+    children: e => (0, r.jsx)(a.zxk, O(y({}, e), {
       color: a.zxk.Colors.GREEN,
       type: "submit",
       "data-testid": "submitButton",
@@ -136,9 +136,9 @@ function T(e) {
       children: G
     }))
   });
-  if ((0, u.yE)(null !== (t = null == D ? void 0 : D.flags) && void 0 !== t ? t : 0, p.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(a.ua7, {
+  if ((0, u.yE)(null != (t = null == D ? void 0 : D.flags) ? t : 0, p.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.cjA5tr),
-    children: e => (0, r.jsx)(a.zxk, O(v({}, e), {
+    children: e => (0, r.jsx)(a.zxk, O(y({}, e), {
       color: a.zxk.Colors.GREEN,
       type: "submit",
       "data-testid": "submitButton",
@@ -160,7 +160,7 @@ function T(e) {
   });
   if (!x) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.XdvBLS),
-    children: e => (0, r.jsx)(a.zxk, O(v({}, e), {
+    children: e => (0, r.jsx)(a.zxk, O(y({}, e), {
       color: a.zxk.Colors.GREEN,
       type: "submit",
       onClick: () => S(n, f),

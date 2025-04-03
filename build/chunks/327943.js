@@ -38,20 +38,20 @@ let p = 2,
       var t;
       s.default.track(u.rMx.APP_ICON_UPDATED, {
         icon_id: e,
-        user_premium_tier: null === (t = a.default.getCurrentUser()) || void 0 === t ? void 0 : t.premiumType,
+        user_premium_tier: null == (t = a.default.getCurrentUser()) ? void 0 : t.premiumType,
         icon_premium_tier: e !== c.aH.DEFAULT ? f.p9.TIER_2 : null
       })
     }
   };
 
-function v(e) {
+function y(e) {
   let {
     id: t
   } = e;
   null != t && b(t)
 }
 
-function y() {
+function v() {
   m = !0
 }
 
@@ -87,13 +87,13 @@ class T extends(r = i.ZP.PersistedStore) {
   }
   getCurrentDesktopIcon() {
     var e;
-    return null == h ? void 0 : null === (e = h.client) || void 0 === e ? void 0 : e.desktop
+    return null == h || null == (e = h.client) ? void 0 : e.desktop
   }
 }
 _(T, "displayName", "AppIconPersistedStoreState"), _(T, "persistKey", "AppIconPersistedStoreState");
 let N = new T(o.Z, {
-  APP_ICON_UPDATED: v,
-  APP_ICON_EDITOR_OPEN: y,
+  APP_ICON_UPDATED: y,
+  APP_ICON_EDITOR_OPEN: v,
   APP_ICON_EDITOR_CLOSE: O,
   APP_ICON_EDITOR_RESET: I,
   APP_ICON_TRACK_IMPRESSION: S,

@@ -55,8 +55,8 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = new i.Z("Games"),
-  y = {},
+let y = new i.Z("Games"),
+  v = {},
   O = 0,
   I = null,
   S = 250,
@@ -96,30 +96,27 @@ async function P(e) {
       return t === h.GQo.BATTLENET
     }))), 0 === e.length) throw Error("No remaining launchable queries");
   let t = Date.now();
-  t > O && (O = t + N, y = {});
+  t > O && (O = t + N, v = {});
   let n = await A();
   for (let t of e) {
-    let e = y[t.id];
+    let e = v[t.id];
     if (null != e) return e;
     let r = await new Promise(e => n.findLaunchable(t, e));
-    if (null != r) return y[t.id] = r, r
+    if (null != r) return v[t.id] = r, r
   }
   throw Error("could not find launchable")
 }
 
 function w(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
-  if (e()) {
-    t();
-    return
-  }
+  if (e()) return void t();
   setTimeout(() => {
     r * S <= T ? w(e, t, n, r + 1) : n()
   }, S)
 }
 
 function D(e) {
-  return v.info("launch", e), new Promise((t, n) => {
+  return y.info("launch", e), new Promise((t, n) => {
     null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
@@ -165,7 +162,7 @@ let L = {
   },
   removeShortcuts: e => (0, f.isWindows)() ? A().then(t => {
     var n, r;
-    return null !== (r = null === (n = t.removeShortcuts) || void 0 === n ? void 0 : n.call(t, e)) && void 0 !== r && r
+    return null != (r = null == (n = t.removeShortcuts) ? void 0 : n.call(t, e)) && r
   }) : Promise.resolve(!1),
   createShortcuts(e, t, n, r, i) {
     if (null == i || !(0, f.isWindows)()) return Promise.resolve(!1);
@@ -173,19 +170,19 @@ let L = {
       a = "".concat(i, "\\icon.ico");
     return A().then(r => {
       var i, s;
-      return null !== (s = null === (i = r.createShortcuts) || void 0 === i ? void 0 : i.call(r, e, t, n, o, a)) && void 0 !== s && s
+      return null != (s = null == (i = r.createShortcuts) ? void 0 : i.call(r, e, t, n, o, a)) && s
     })
   },
   isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => !1),
   launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(D),
   isProtocolRegistered: e => A().then(t => {
     var n, r;
-    return null !== (r = null === (n = t.isProtocolSchemeRegistered) || void 0 === n ? void 0 : n.call(t, e)) && void 0 !== r && r
+    return null != (r = null == (n = t.isProtocolSchemeRegistered) ? void 0 : n.call(t, e)) && r
   }),
   setRecentGames(e) {
     A().then(t => {
       var n;
-      return null === (n = t.setRecentGames) || void 0 === n ? void 0 : n.call(t, e)
+      return null == (n = t.setRecentGames) ? void 0 : n.call(t, e)
     }).catch(() => {})
   }
 }

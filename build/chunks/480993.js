@@ -1,5 +1,6 @@
-/** Chunk was on 51231 **/
+/** Chunk was on web.js **/
 "use strict";
 e.exports = {
-  ruleNameInput: "ruleNameInput__2f210"
+  lottieIconColors: "lottieIconColors__5eb9b",
+  lottieIcon: "lottieIcon__5eb9b"
 }

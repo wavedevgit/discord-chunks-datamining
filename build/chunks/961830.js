@@ -4,7 +4,7 @@ n.d(t, {
   F7: () => O,
   WA: () => g,
   s2: () => E,
-  wo: () => y,
+  wo: () => v,
   yp: () => I
 });
 var r = n(200651);
@@ -79,14 +79,14 @@ let g = {
     key: o.h8.AWAITING_PURCHASE_TOKEN_AUTH,
     renderStep: () => (0, r.jsx)(l.Z, {})
   },
-  v = {
+  y = {
     key: o.h8.AWAITING_AUTHENTICATION,
     renderStep: () => (0, r.jsx)(s.Z, {}),
     options: {
       renderHeader: !0
     }
   },
-  y = {
+  v = {
     key: o.h8.REVIEW,
     renderStep: e => (0, r.jsx)(u.l, p({}, e)),
     options: {
@@ -97,4 +97,4 @@ let g = {
     key: o.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(c.w, p({}, e))
   },
-  I = [b, v]
+  I = [b, y]

@@ -23,7 +23,7 @@ let h = () => {
     return (0, r.useEffect)(() => {
       null == e && o(t)
     }, [e, t]), (0, r.useCallback)(() => {
-      if (null != e)(0, u.kj)(), n && (0, a.hi)(p.KW.ON)
+      null != e && ((0, u.kj)(), n && (0, a.hi)(p.KW.ON))
     }, [e, n])
   },
   m = () => {
@@ -33,7 +33,7 @@ let h = () => {
       previewPaneVariant: d.Z.isPreview ? _.h1.FREE : _.h1.PREMIUM_STANDARD
     })), t = (0, i.e7)([l.Z], () => {
       var e;
-      let t = null === (e = l.Z.settings.appearance) || void 0 === e ? void 0 : e.theme;
+      let t = null == (e = l.Z.settings.appearance) ? void 0 : e.theme;
       return "default ".concat(t === o.Q2.LIGHT ? f.BRd.LIGHT : f.BRd.DARK)
     });
     return (0, r.useCallback)(n => {

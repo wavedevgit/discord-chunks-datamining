@@ -41,8 +41,8 @@ function b(e) {
   }
   return e
 }
-let v = !1;
-class y extends f.Z {
+let y = !1;
+class v extends f.Z {
   _initialize() {
     super._initialize(), l.Z.addChangeListener(this.handlePopoutWindowUpdate)
   }
@@ -106,7 +106,7 @@ class y extends f.Z {
         application: n
       })
     }), E(this, "handlePopoutWindowUpdate", () => {
-      let e = v,
+      let e = y,
         t = l.Z.getWindowOpen(m.KJ3.ACTIVITY_POPOUT);
       if (e && !t) {
         let e = _.ZP.getCurrentEmbeddedActivity();
@@ -115,8 +115,8 @@ class y extends f.Z {
           applicationId: e.applicationId
         })
       }
-      v = t
+      y = t
     })
   }
 }
-let O = new y
+let O = new v

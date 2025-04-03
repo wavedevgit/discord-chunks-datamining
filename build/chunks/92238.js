@@ -1,8 +1,7 @@
 /** Chunk was on web.js **/
 var r = n(805100),
   i = n(580897);
-
-function o(e, t, n, o) {
+e.exports = function(e, t, n, o) {
   var a = !n;
   n || (n = {});
   for (var s = -1, l = t.length; ++s < l;) {
@@ -12,4 +11,3 @@ function o(e, t, n, o) {
   }
   return n
 }
-e.exports = o

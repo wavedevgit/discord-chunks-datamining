@@ -38,7 +38,7 @@ function b(e, t) {
   return n.length > 1 && (r = n[0] + "@", e = n[1]), r + E((e = e.replace(f, ".")).split("."), t).join(".")
 }
 
-function v(e) {
+function y(e) {
   let t = [],
     n = 0,
     r = e.length;
@@ -51,7 +51,7 @@ function v(e) {
   }
   return t
 }
-let y = function(e) {
+let v = function(e) {
     return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : n
   },
   O = function(e, t) {
@@ -75,7 +75,7 @@ let y = function(e) {
       let l = u;
       for (let o = 1, l = n;; l += n) {
         s >= a && g("invalid-input");
-        let c = y(e.charCodeAt(s++));
+        let c = v(e.charCodeAt(s++));
         (c >= n || c > h((t - u) / o)) && g("overflow"), u += c * o;
         let d = l <= f ? r : l >= f + i ? i : l - f;
         if (c < d) break;
@@ -89,7 +89,7 @@ let y = function(e) {
   },
   T = function(e) {
     let o = [],
-      a = (e = v(e)).length,
+      a = (e = y(e)).length,
       u = l,
       d = 0,
       f = s;
@@ -124,16 +124,15 @@ let y = function(e) {
     return b(e, function(e) {
       return d.test(e) ? "xn--" + T(e) : e
     })
-  },
-  C = {
-    version: "2.1.0",
-    ucs2: {
-      decode: v,
-      encode: e => String.fromCodePoint(...e)
-    },
-    decode: S,
-    encode: T,
-    toASCII: A,
-    toUnicode: N
   };
-e.exports = C
+e.exports = {
+  version: "2.1.0",
+  ucs2: {
+    decode: y,
+    encode: e => String.fromCodePoint(...e)
+  },
+  decode: S,
+  encode: T,
+  toASCII: A,
+  toUnicode: N
+}

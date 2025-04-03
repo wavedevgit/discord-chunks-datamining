@@ -17,21 +17,21 @@ e.exports = function(e, t, n, m) {
   var g = "stackTraceLimit",
     E = m ? 2 : 1,
     b = e.split("."),
-    v = b[b.length - 1],
-    y = r.apply(null, b);
-  if (y) {
-    var O = y.prototype;
-    if (!h && i(O, "cause") && delete O.cause, !n) return y;
+    y = b[b.length - 1],
+    v = r.apply(null, b);
+  if (v) {
+    var O = v.prototype;
+    if (!h && i(O, "cause") && delete O.cause, !n) return v;
     var I = r("Error"),
       S = t(function(e, t) {
         var n = d(m ? t : e, void 0),
-          r = m ? new y(e) : new y;
+          r = m ? new v(e) : new v;
         return void 0 !== n && o(r, "message", n), _(r, S, r.stack, 2), this && a(O, this) && u(r, this, S), arguments.length > E && f(r, arguments[E]), r
       });
-    if (S.prototype = O, "Error" !== v ? s ? s(S, I) : l(S, I, {
+    if (S.prototype = O, "Error" !== y ? s ? s(S, I) : l(S, I, {
         name: !0
-      }) : p && g in y && (c(S, y, g), c(S, y, "prepareStackTrace")), l(S, y), !h) try {
-      O.name !== v && o(O, "name", v), O.constructor = S
+      }) : p && g in v && (c(S, v, g), c(S, v, "prepareStackTrace")), l(S, v), !h) try {
+      O.name !== y && o(O, "name", y), O.constructor = S
     } catch (e) {}
     return S
   }

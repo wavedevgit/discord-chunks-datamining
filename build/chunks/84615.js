@@ -20,7 +20,7 @@ var r = n(200651),
   p = n(624138),
   h = n(314910),
   m = n(308569),
-  g = n(690936);
+  g = n(623876);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,7 +44,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -122,7 +122,7 @@ function A() {
       onEntered: () => {
         (0, u.j)(() => {
           I.setState({
-            fullScreenLayers: n.map(t => t.key === e.key ? y(b({}, t), {
+            fullScreenLayers: n.map(t => t.key === e.key ? v(b({}, t), {
               transitionState: 2
             }) : t)
           })

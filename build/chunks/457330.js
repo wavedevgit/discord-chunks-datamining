@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(990547),
   i = n(544891),
@@ -71,7 +71,7 @@ function b(e, t) {
     rejectWithError: !1
   })
 }
-let v = {
+let y = {
   fetch: () => i.tn.get({
     url: _.ANM.CONNECTIONS,
     oldFormErrors: !0,
@@ -121,7 +121,7 @@ let v = {
       }),
       {
         state: b
-      } = (0, a.xp)(null !== (t = E.body.url) && void 0 !== t ? t : "");
+      } = (0, a.xp)(null != (t = E.body.url) ? t : "");
     return null == b || s.g.getCurrentConfig({
       location: "ConnectedAccountsActionCreators.authorize"
     }).enabled || u.Z.addPendingAuthorizedState(b), E
@@ -133,7 +133,7 @@ let v = {
       url: _.ANM.CONNECTION(e, t),
       body: {
         name: n,
-        friend_sync: null !== (a = null == o ? void 0 : o.friend_sync) && void 0 !== a ? a : _.BFP.has(e)
+        friend_sync: null != (a = null == o ? void 0 : o.friend_sync) ? a : _.BFP.has(e)
       },
       context: {
         location: i
@@ -243,23 +243,16 @@ let v = {
     rejectWithError: !1
   }),
   async completeTwoWayLink(e, t, n, r, i) {
-    if (null == t) {
-      E.error("Two-way link: missing authorize location");
-      return
-    }
+    if (null == t) return void E.error("Two-way link: missing authorize location");
     let {
       code: o,
       error: s,
       errorDescription: l
     } = (0, a.xp)(t);
-    if (null != s) {
-      E.error("Two-way link: missing authorize code", {
-        error: s,
-        errorDescription: l
-      });
-      return
-    }
-    return await b(e, {
+    return null != s ? void E.error("Two-way link: missing authorize code", {
+      error: s,
+      errorDescription: l
+    }) : await b(e, {
       code: n,
       state: r,
       two_way_link_code: o,

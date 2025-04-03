@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /(?:(?:[a-zA-Z]|\.[._a-zA-Z])[._a-zA-Z0-9]*)|\.(?!\d)/,
     r = t.either(/0[xX][0-9a-fA-F]+\.[0-9a-fA-F]*[pP][+-]?\d+i?/, /0[xX][0-9a-fA-F]+(?:[pP][+-]?\d+)?[Li]?/, /(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?[Li]?/),
@@ -123,4 +123,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

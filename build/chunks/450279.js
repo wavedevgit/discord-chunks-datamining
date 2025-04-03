@@ -166,10 +166,10 @@ function u(e, t, n, i, a) {
       }))
     }
   }
-  let b = (null !== (u = m.currentRoundTripTime) && void 0 !== u ? u : 0) * 1e3;
+  let b = (null != (u = m.currentRoundTripTime) ? u : 0) * 1e3;
   return {
     transport: {
-      availableOutgoingBitrate: null !== (d = m.availableOutgoingBitrate) && void 0 !== d ? d : 0,
+      availableOutgoingBitrate: null != (d = m.availableOutgoingBitrate) ? d : 0,
       bytesReceived: m.bytesReceived,
       bytesSent: m.bytesSent,
       ping: b

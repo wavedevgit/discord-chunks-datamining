@@ -35,18 +35,15 @@ class g extends s.Z {
   setCodecs(e, t, n) {
     var r, i, o;
     let a;
-    (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (a = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null !== (r = null == a ? void 0 : a.payloadType) && void 0 !== r ? r : 0, a = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null !== (i = null == a ? void 0 : a.payloadType) && void 0 !== i ? i : 0, this.fpc.rtxPayloadType = null !== (o = null == a ? void 0 : a.rtxPayloadType) && void 0 !== o ? o : 0, this.pc.negotiationNeeded())
+    (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (a = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null != (r = null == a ? void 0 : a.payloadType) ? r : 0, a = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null != (i = null == a ? void 0 : a.payloadType) ? i : 0, this.fpc.rtxPayloadType = null != (o = null == a ? void 0 : a.rtxPayloadType) ? o : 0, this.pc.negotiationNeeded())
   }
   setStream(e) {
     this.fpc.direction = null != e ? d.Ns.SENDRECV : d.Ns.SENDONLY, this.pc.setStream(null != e ? e : null)
   }
   createUser(e, t, n) {
     var r;
-    if (0 === t) {
-      this.logger.warn("Attempting to create user ".concat(e, " with 0 audio SSRC"));
-      return
-    }
-    this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null !== (r = null == n ? void 0 : n.join(",")) && void 0 !== r ? r : 0));
+    if (0 === t) return void this.logger.warn("Attempting to create user ".concat(e, " with 0 audio SSRC"));
+    this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null != (r = null == n ? void 0 : n.join(",")) ? r : 0));
     let i = null != n && n.length > 0 ? n[0] : 0;
     this.fpc.addStream(e, t, i)
   }

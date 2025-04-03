@@ -11,7 +11,7 @@ var r = n(200651),
   l = n(442837),
   c = n(110924),
   u = n(819640),
-  d = n(53375);
+  d = n(513755);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,21 +88,21 @@ function g(e) {
   i.useEffect(() => {
     b()
   }, [b]);
-  let v = (0, c.Z)(h),
-    y = i.useRef(null),
+  let y = (0, c.Z)(h),
+    v = i.useRef(null),
     O = i.useRef(0),
     I = i.useCallback(() => {
-      (null === y.current || O.current >= 3) && (y.current = setInterval(() => {
+      (null === v.current || O.current >= 3) && (v.current = setInterval(() => {
         if (O.current >= 5) {
-          clearInterval(y.current), y.current = null, O.current = 0;
+          clearInterval(v.current), v.current = null, O.current = 0;
           return
         }
         b(), O.current++
       }, 200))
     }, [b]);
   i.useEffect(() => {
-    v && !h && I()
-  }, [b, I, h, v]);
+    y && !h && I()
+  }, [b, I, h, y]);
   let S = i.useMemo(() => (0, s.debounce)(() => {
     b()
   }, a), [b, a]);

@@ -40,12 +40,12 @@ let h = 10 * c.Z.Millis.SECOND,
   E = {},
   b = Object.freeze({});
 
-function v(e) {
+function y(e) {
   var t;
-  return null !== (t = E[e]) && void 0 !== t ? t : b
+  return null != (t = E[e]) ? t : b
 }
 
-function y(e) {
+function v(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
@@ -55,15 +55,15 @@ function y(e) {
     o = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + o > i)) return !1;
   let c = setTimeout(() => {
-    if (null != r && r.channelId === t && n === u.default.getId() && null != r.timeout) r.timeout = null, !(R(t) > g) && a.tn.post({
+    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, R(t) > g || a.tn.post({
       url: f.ANM.TYPING(t),
       oldFormErrors: !0,
       rejectWithError: !0
     }).then(e => {
       if (200 === e.status) {
         var n, r;
-        let i = null !== (n = e.body.message_send_cooldown_ms) && void 0 !== n ? n : 0,
-          o = null !== (r = e.body.thread_create_cooldown_ms) && void 0 !== r ? r : 0;
+        let i = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
+          o = null != (r = e.body.thread_create_cooldown_ms) ? r : 0;
         i > 0 && s.Z.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
@@ -76,7 +76,7 @@ function y(e) {
           cooldownMs: o
         })
       }
-    })
+    }))
   }, null == r || r.prevSend > i - 2 * o ? m : 0);
   return r = {
     channelId: t,
@@ -117,7 +117,7 @@ function T(e) {
   let {
     channelId: t,
     userId: n
-  } = e, r = p({}, v(t));
+  } = e, r = p({}, y(t));
   clearTimeout(r[n]), r[n] = S(t, n), E[t] = r
 }
 
@@ -150,22 +150,22 @@ function C() {
 }
 
 function R(e) {
-  let t = v(e);
+  let t = y(e);
   return t === b ? 0 : Object.keys(t).length
 }
 class P extends(i = o.ZP.Store) {
   getTypingUsers(e) {
-    return v(e)
+    return y(e)
   }
   isTyping(e, t) {
-    return null != v(e)[t]
+    return null != y(e)[t]
   }
 }
 _(P, "displayName", "TypingStore");
 let w = new P(s.Z, {
   TYPING_START: T,
   TYPING_STOP: N,
-  TYPING_START_LOCAL: y,
+  TYPING_START_LOCAL: v,
   TYPING_STOP_LOCAL: I,
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,

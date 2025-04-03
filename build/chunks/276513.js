@@ -10,9 +10,9 @@ var r = n(200651),
   s = n(84735),
   l = n(766646),
   c = n(993365),
-  u = n(712176),
+  u = n(685747),
   d = n(388032),
-  f = n(525736);
+  f = n(938647);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,8 +80,8 @@ function b(e) {
     text: h,
     icon: E,
     iconPosition: b = "end",
-    external: v,
-    focusProps: y
+    external: y,
+    focusProps: v
   } = e, O = g(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
 
   function I() {
@@ -92,7 +92,7 @@ function b(e) {
       size: e
     })
   }
-  return v && (E = a.G), (0, r.jsx)(s.t, m(p({}, y), {
+  return y && (E = a.G), (0, r.jsx)(s.t, m(p({}, v), {
     children: (0, r.jsxs)("button", m(p({
       role: t,
       className: o()(f.linkButton, f[n])
@@ -104,7 +104,7 @@ function b(e) {
         lineClamp: _,
         className: f.text,
         children: h
-      }), null != E && "end" === b && (0, r.jsx)(I, {}), v && (0, r.jsx)(l.n, {
+      }), null != E && "end" === b && (0, r.jsx)(I, {}), y && (0, r.jsx)(l.n, {
         children: d.NW.string(u.Z.cgdAs7)
       })]
     }))

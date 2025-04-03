@@ -57,8 +57,8 @@ function b(e, t) {
   let r = m[e];
   return null == r ? n : t(r)
 }
-let v = "SearchStore",
-  y = "tokenized",
+let y = "SearchStore",
+  v = "tokenized",
   O = !1,
   I = {},
   S = null;
@@ -89,12 +89,12 @@ function A(e) {
   let f = i,
     p = s.searchType,
     h = new c.ZP(f, p, a);
-  s.searchFetcher = h, s.isSearching = !0, s.rawResults = null, s.analyticsId = null, s.query = o().omit(a, "type"), s.offset = null !== (n = a.offset) && void 0 !== n ? n : 0, s.showBlockedResults = !1, C({
+  s.searchFetcher = h, s.isSearching = !0, s.rawResults = null, s.analyticsId = null, s.query = o().omit(a, "type"), s.offset = null != (n = a.offset) ? n : 0, s.showBlockedResults = !1, C({
     type: "SEARCH_ADD_HISTORY",
     searchId: i,
     query: r
   });
-  let m = i === _.I_8 ? null === (t = d.Z.getChannel(f)) || void 0 === t ? void 0 : t.guild_id : p === _.aib.GUILD ? i : null;
+  let m = i === _.I_8 ? null == (t = d.Z.getChannel(f)) ? void 0 : t.guild_id : p === _.aib.GUILD ? i : null;
   h.fetch(e => {
     var t, n;
     l.Z.dispatch({
@@ -104,8 +104,8 @@ function A(e) {
       analyticsId: e.body.analytics_id,
       totalResults: e.body.total_results,
       messages: e.body.messages,
-      threads: null !== (t = e.body.threads) && void 0 !== t ? t : [],
-      members: (null !== (n = e.body.members) && void 0 !== n ? n : []).map(e => (0, u.Z)(e)),
+      threads: null != (t = e.body.threads) ? t : [],
+      members: (null != (n = e.body.members) ? n : []).map(e => (0, u.Z)(e)),
       hasError: !1,
       doingHistoricalIndex: e.body.doing_deep_historical_index,
       documentsIndexed: e.body.documents_indexed
@@ -139,8 +139,8 @@ function C(e) {
     query: r
   } = e;
   if ("string" != typeof r || "" === (r = r.trim())) return;
-  let i = I[n] = null !== (t = I[n]) && void 0 !== t ? t : [],
-    o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), s.K.set(v, {
+  let i = I[n] = null != (t = I[n]) ? t : [],
+    o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), s.K.set(y, {
     history: I
   })
 }
@@ -191,7 +191,7 @@ function M(e) {
   let {
     searchId: t
   } = e;
-  null == t ? (s.K.remove(v), I = {}) : (delete I[t], s.K.set(v, {
+  null == t ? (s.K.remove(y), I = {}) : (delete I[t], s.K.set(y, {
     history: I
   }))
 }
@@ -201,7 +201,7 @@ function k(e) {
     searchId: t,
     query: n
   } = e;
-  null != I[t] && (I[t] = I[t].filter(e => e !== n), s.K.set(v, {
+  null != I[t] && (I[t] = I[t].filter(e => e !== n), s.K.set(y, {
     history: I
   }))
 }
@@ -227,7 +227,7 @@ function G() {
 }
 
 function B() {
-  s.K.remove(v), I = {}
+  s.K.remove(y), I = {}
 }
 
 function F() {
@@ -238,8 +238,8 @@ function F() {
 class V extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.Z, d.Z);
-    let e = s.K.get(v);
-    (null == e ? void 0 : e.history) != null && (I = j(e.history)), O = !!s.K.get(y)
+    let e = s.K.get(y);
+    (null == e ? void 0 : e.history) != null && (I = j(e.history)), O = !!s.K.get(v)
   }
   getCurrentSearchId() {
     return S
@@ -283,7 +283,7 @@ class V extends(r = a.ZP.Store) {
   }
   getTotalResults(e) {
     var t;
-    return null !== (t = b(e, e => e.totalResults)) && void 0 !== t ? t : 0
+    return null != (t = b(e, e => e.totalResults)) ? t : 0
   }
   getEditorState(e) {
     return b(e, e => e.editorState)
@@ -293,22 +293,22 @@ class V extends(r = a.ZP.Store) {
   }
   getOffset(e) {
     var t;
-    return null !== (t = b(e, e => e.offset)) && void 0 !== t ? t : 0
+    return null != (t = b(e, e => e.offset)) ? t : 0
   }
   getQuery(e) {
     return b(e, e => e.query)
   }
   hasError(e) {
     var t;
-    return null !== (t = b(e, e => e.hasError)) && void 0 !== t && t
+    return null != (t = b(e, e => e.hasError)) && t
   }
   shouldShowBlockedResults(e) {
     var t;
-    return null !== (t = b(e, e => e.showBlockedResults, !1)) && void 0 !== t && t
+    return null != (t = b(e, e => e.showBlockedResults, !1)) && t
   }
   shouldShowNoResultsAlt(e) {
     var t;
-    return null !== (t = b(e, e => e.showNoResultsAlt, !1)) && void 0 !== t && t
+    return null != (t = b(e, e => e.showNoResultsAlt, !1)) && t
   }
   getResultsState(e) {
     return {

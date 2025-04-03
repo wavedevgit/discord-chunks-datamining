@@ -13,7 +13,7 @@ var i = n(120356),
   c = n(533432),
   u = n(149203),
   d = n(185923),
-  f = n(746177);
+  f = n(539490);
 let _ = e => {
   let {
     accessory: t,
@@ -26,8 +26,8 @@ let _ = e => {
     searchBarRef: g,
     hasTabWrapper: E,
     diversitySurrogate: b,
-    isBurstReaction: v,
-    onBurstReactionToggle: y,
+    isBurstReaction: y,
+    onBurstReactionToggle: v,
     renderHeader: O
   } = e, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
@@ -39,12 +39,12 @@ let _ = e => {
       isFullRow: !1,
       onFocus: h,
       autoFocus: m,
-      defaultSearchPlaceholder: (0, s.nV)(n, v)
+      defaultSearchPlaceholder: (0, s.nV)(n, y)
     }), n === d.Hz.REACTION ? (0, r.jsx)("div", {
       className: f.burstToggle,
       children: (0, r.jsx)(a.Z, {
-        checked: v,
-        onClick: y
+        checked: y,
+        onClick: v
       })
     }) : null, null != t ? t : (0, r.jsx)(l.Z, {
       searchBarRef: g,

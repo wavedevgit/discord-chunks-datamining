@@ -24,7 +24,7 @@ function p(e, t, n) {
   let o = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
   if (e.isPrivate()) return !0;
   let a = t.getGuild(e.getGuildId()),
-    s = null !== (r = null == a ? void 0 : a.maxStageVideoChannelUsers) && void 0 !== r ? r : 0;
+    s = null != (r = null == a ? void 0 : a.maxStageVideoChannelUsers) ? r : 0;
   return (!e.isGuildStageVoice() || !(s <= 0)) && (!o || !!(0, i.Z)(e, n)) && !!n.can(f.Plq.STREAM, e) && null != a && a.afkChannelId !== e.id
 }
 

@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var o, a = n(442837),
   s = n(433517),
@@ -44,7 +44,7 @@ function b(e) {
   } = e;
   p = !0, t && (h = !0, s.K.set(f, h))
 }
-class v extends(o = a.ZP.Store) {
+class y extends(o = a.ZP.Store) {
   initialize() {
     h = s.K.get(f) || h
   }
@@ -56,11 +56,11 @@ class v extends(o = a.ZP.Store) {
   }
   shouldShowWarning() {
     var e;
-    return !(null === (e = c.Z.getChannel(i)) || void 0 === e ? void 0 : e.isGuildStageVoice()) && !p
+    return !(null == (e = c.Z.getChannel(i)) ? void 0 : e.isGuildStageVoice()) && !p
   }
 }
-d(v, "displayName", "PermissionSpeakStore");
-let y = new v(l.Z, {
+d(y, "displayName", "PermissionSpeakStore");
+let v = new y(l.Z, {
   CONNECTION_OPEN: m,
   CONNECTION_CLOSED: g,
   VOICE_STATE_UPDATES: E,

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[A-Za-z_\\u00A1-\\uFFFF][A-Za-z_0-9\\u00A1-\\uFFFF]*",
     n = {
       $pattern: t,
@@ -70,4 +70,3 @@ function t(e) {
     begin: /<:/
   }], a.contains = r.contains, r
 }
-e.exports = t

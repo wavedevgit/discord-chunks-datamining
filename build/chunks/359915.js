@@ -39,8 +39,8 @@ class u extends o.Z {
       channelId: i,
       message: o
     } = e, c = l.Z.getChannel(i);
-    if ((null === (t = o.author) || void 0 === t ? void 0 : t.id) !== s.default.getId() || !(null == c ? void 0 : c.isActiveThread())) return;
-    let u = new Date(null !== (r = null === (n = c.threadMetadata) || void 0 === n ? void 0 : n.archiveTimestamp) && void 0 !== r ? r : 0).getTime();
+    if ((null == (t = o.author) ? void 0 : t.id) !== s.default.getId() || !(null == c ? void 0 : c.isActiveThread())) return;
+    let u = new Date(null != (r = null == (n = c.threadMetadata) ? void 0 : n.archiveTimestamp) ? r : 0).getTime();
     Date.now() - u < 5e3 && a.Z.resort(c.parent_id)
   }
   constructor(...e) {

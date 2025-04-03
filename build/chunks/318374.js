@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(751688),
   f = n(5192),
   _ = n(51144),
-  p = n(734226);
+  p = n(223390);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,8 +63,8 @@ function b(e) {
     channelId: h,
     className: g,
     avatarClassName: b,
-    size: v = c.EFr.SIZE_24,
-    overflowCountVariant: y = "text-xs/medium",
+    size: y = c.EFr.SIZE_24,
+    overflowCountVariant: v = "text-xs/medium",
     overflowCountColor: O = "interactive-normal",
     overflowCountClassName: I,
     hideOverflowCount: S = !1,
@@ -94,7 +94,7 @@ function b(e) {
           onContextMenu: t => (0, u.jW)(t, async () => {
             let {
               default: t
-            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("57673")]).then(n.bind(n, 881351));
+            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
             return n => (0, r.jsx)(t, E(m({}, n), {
               user: e,
               guildId: s,
@@ -116,7 +116,7 @@ function b(e) {
           children: (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             "aria-label": t,
-            size: v
+            size: y
           })
         }, e.id) : (0, r.jsx)(c.DY3, {
           text: t,
@@ -124,7 +124,7 @@ function b(e) {
           children: (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             "aria-label": t,
-            size: v
+            size: y
           })
         }, e.id)
       }).value(),
@@ -143,7 +143,7 @@ function b(e) {
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,
         children: (0, r.jsxs)(c.Text, {
-          variant: y,
+          variant: v,
           color: O,
           children: ["+", n + 1]
         })

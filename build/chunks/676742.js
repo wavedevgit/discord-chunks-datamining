@@ -13,10 +13,7 @@ function l(e) {
   let [t, n] = r.useState(!1), l = r.useRef(null);
   return r.useEffect(() => {
     let t = () => {
-      if (null == e || !("expiresAt" in e) || null == e.expiresAt) {
-        n(!1);
-        return
-      }
+      if (null == e || !("expiresAt" in e) || null == e.expiresAt) return void n(!1);
       let r = (0, o.fO)(e);
       n(r);
       let c = 1e3 * e.expiresAt + a.Cm - Date.now();
@@ -27,12 +24,12 @@ function l(e) {
     };
     return t(), () => {
       var e;
-      return null === (e = l.current) || void 0 === e ? void 0 : e.stop()
+      return null == (e = l.current) ? void 0 : e.stop()
     }
   }, [e]), r.useEffect(() => {
     if (t) {
       var e;
-      null === (e = l.current) || void 0 === e || e.stop()
+      null == (e = l.current) || e.stop()
     }
   }, [t]), t ? void 0 : e
 }

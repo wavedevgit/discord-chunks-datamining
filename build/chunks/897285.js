@@ -21,7 +21,7 @@ let l = {},
   u = new Set,
   d = 18e5,
   f = async e => {
-    if (!(0 === o.ZP.getGuildScheduledEventsForGuild(e).length || c.has(e) || u.has(e))) try {
+    if (!(0 === o.ZP.getGuildScheduledEventsForGuild(e).length || c.has(e)) && !u.has(e)) try {
       c.add(e), await a.Z.getGuildEventsForCurrentUser(e), u.add(e)
     } catch (t) {
       c.delete(e)
@@ -62,7 +62,7 @@ class _ extends r.Z {
     var t;
     let {
       invite: n
-    } = e, r = n.guild_scheduled_event, i = null === (t = n.guild) || void 0 === t ? void 0 : t.id;
+    } = e, r = n.guild_scheduled_event, i = null == (t = n.guild) ? void 0 : t.id;
     null != r && null != i && f(i)
   }
   async handleChannelSelect(e) {

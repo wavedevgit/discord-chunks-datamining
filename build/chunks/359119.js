@@ -79,14 +79,14 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     channel: t
   } = e;
   null != p[t.id] && delete p[t.id], h.delete(t.id)
 }
 
-function y(e) {
+function v(e) {
   let {
     channelId: t,
     warningId: n,
@@ -140,11 +140,11 @@ class A extends r.ZP.Store {
   }
   getChannelSafetyWarning(e, t) {
     var n;
-    return null === (n = p[e]) || void 0 === n ? void 0 : n.find(e => e.id === t)
+    return null == (n = p[e]) ? void 0 : n.find(e => e.id === t)
   }
   getChannelSafetyWarnings(e) {
     var t;
-    return null !== (t = p[e]) && void 0 !== t ? t : _
+    return null != (t = p[e]) ? t : _
   }
   hasShownInitialTooltipForChannel(e) {
     return h.has(e)
@@ -152,11 +152,11 @@ class A extends r.ZP.Store {
 }
 let C = new A(i.Z, {
   CHANNEL_CREATE: E,
-  CHANNEL_DELETE: v,
+  CHANNEL_DELETE: y,
   CHANNEL_UPDATES: b,
   CONNECTION_OPEN: T,
   CONNECTION_OPEN_SUPPLEMENTAL: T,
-  CHANNEL_SAFETY_WARNING_FEEDBACK: y,
+  CHANNEL_SAFETY_WARNING_FEEDBACK: v,
   CLEAR_CHANNEL_SAFETY_WARNINGS: O,
   DISMISS_CHANNEL_SAFETY_WARNINGS: I,
   ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: S

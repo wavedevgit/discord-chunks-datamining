@@ -22,8 +22,8 @@ var r = n(997945),
   g = n(666475),
   E = n(591304),
   b = n(73375),
-  v = n(328664),
-  y = n(328259),
+  y = n(328664),
+  v = n(328259),
   O = n(19009),
   I = n(234912),
   S = n(405571),
@@ -49,12 +49,12 @@ function P() {
     isPremium: !0
   }, {
     id: r.Ru.MANGA,
-    iconSource: v,
+    iconSource: y,
     isPremium: !0,
     name: i.NW.string(i.t.hGBbFx)
   }, {
     id: r.Ru.MATTE_DARK,
-    iconSource: y,
+    iconSource: v,
     isPremium: !0,
     name: i.NW.string(i.t.NkshQk)
   }, {

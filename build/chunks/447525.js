@@ -7,7 +7,7 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   o = n(660199),
-  a = n(560904);
+  a = n(738286);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,9 +49,9 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  return "type" in e ? "timestamp" === e.type ? (0, r.jsx)(f, u(l({}, t), {
+  return "type" in e && "timestamp" === e.type ? (0, r.jsx)(f, u(l({}, t), {
     timestamp: e.parsed
-  })) : null : null
+  })) : null
 }
 
 function f(e) {
@@ -90,7 +90,7 @@ function f(e) {
           value: t
         }
       }),
-      value: null !== (t = n.format) && void 0 !== t ? t : o.K_,
+      value: null != (t = n.format) ? t : o.K_,
       size: i.FXm.Sizes.SMALL,
       onChange: e => {
         let {

@@ -93,7 +93,7 @@ function E(e, t, n) {
     query: d,
     name: _
   } = t.autocomplete, p = c.default.fromTimestamp(Date.now());
-  if (null != t.channel) a.Z.dispatch({
+  null != t.channel && (a.Z.dispatch({
     type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST",
     nonce: p,
     channelId: t.channel.id,
@@ -104,7 +104,7 @@ function E(e, t, n) {
     body: {
       type: s.B8.APPLICATION_COMMAND_AUTOCOMPLETE,
       application_id: e.applicationId,
-      guild_id: null === (r = t.guild) || void 0 === r ? void 0 : r.id,
+      guild_id: null == (r = t.guild) ? void 0 : r.id,
       channel_id: t.channel.id,
       session_id: l.default.getSessionId(),
       data: n,
@@ -117,5 +117,5 @@ function E(e, t, n) {
       type: "INTERACTION_FAILURE",
       nonce: p
     })
-  })
+  }))
 }

@@ -26,15 +26,15 @@ function d(e, t, n, r) {
   let s;
   return s = r ? e ? c.t.i9DXqK : c.t["Z/l+qq"] : e ? c.t.CLuzw8 : c.t.PirBBA, c.NW.formatToPlainString(s, {
     reactions: t,
-    emojiName: null !== (a = null === (o = u(n)) || void 0 === o ? void 0 : null === (i = o.replace(/[:_]/g, " ")) || void 0 === i ? void 0 : i.trim()) && void 0 !== a ? a : ""
+    emojiName: null != (a = null == (o = u(n)) || null == (i = o.replace(/[:_]/g, " ")) ? void 0 : i.trim()) ? a : ""
   })
 }
 
 function f(e) {
   var t, n, r;
   return {
-    id: null !== (t = e.id) && void 0 !== t ? t : null,
-    name: null !== (r = null !== (n = null != e.id ? e.name : e.optionallyDiverseSequence) && void 0 !== n ? n : e.name) && void 0 !== r ? r : "",
+    id: null != (t = e.id) ? t : null,
+    name: null != (r = null != (n = null != e.id ? e.name : e.optionallyDiverseSequence) ? n : e.name) ? r : "",
     animated: !!e.animated
   }
 }

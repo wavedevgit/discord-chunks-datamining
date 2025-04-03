@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  w: () => y
+  w: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -20,13 +20,13 @@ var r = n(200651),
   g = n(451478),
   E = n(998502),
   b = n(264783),
-  v = n(892071);
+  y = n(892071);
 
-function y(e) {
+function v(e) {
   let {
     windowKey: t,
     children: n
-  } = e, o = null != t, y = (0, f.Q3)("RootThemeContextProvider"), O = (0, f.R6)("RootThemeContextProvider"), [I] = i.useState(() => E.ZP.getEnableHardwareAcceleration()), {
+  } = e, o = null != t, v = (0, f.Q3)("RootThemeContextProvider"), O = (0, f.R6)("RootThemeContextProvider"), [I] = i.useState(() => E.ZP.getEnableHardwareAcceleration()), {
     locale: S,
     theme: T,
     focused: N,
@@ -47,7 +47,7 @@ function y(e) {
       locale: h.default.locale,
       theme: m.Z.theme,
       focused: o ? _.Z.getWindowFocused(t) : g.Z.isFocused(),
-      currentWindow: o && null !== (e = _.Z.getWindow(t)) && void 0 !== e ? e : window,
+      currentWindow: o && null != (e = _.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -69,8 +69,8 @@ function y(e) {
     flags: G,
     saturation: w,
     density: B,
-    children: (0, r.jsx)(v.cE, {
-      isRefreshEnabled: y,
+    children: (0, r.jsx)(y.cE, {
+      isRefreshEnabled: v,
       isRefreshChatInputEnabled: O,
       lang: S,
       theme: T,

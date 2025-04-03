@@ -70,7 +70,7 @@ let p = {
     ] = e;
     return e => {
       var n;
-      let r = null !== (n = c.Z.getGuild(e)) && void 0 !== n ? n : s.Z.getGuild(e);
+      let r = null != (n = c.Z.getGuild(e)) ? n : s.Z.getGuild(e);
       return null != r && t.some(e => r.hasFeature(e))
     }
   },
@@ -80,7 +80,7 @@ let p = {
     ] = e;
     return e => {
       var n;
-      let r = null !== (n = c.Z.getGuild(e)) && void 0 !== n ? n : s.Z.getGuild(e);
+      let r = null != (n = c.Z.getGuild(e)) ? n : s.Z.getGuild(e);
       return null != r && "number" == typeof r.hubType && t.some(e => r.hubType === e)
     }
   },
@@ -90,7 +90,7 @@ let p = {
     ] = e;
     return e => {
       var n;
-      let r = null !== (n = c.Z.getGuild(e)) && void 0 !== n ? n : s.Z.getGuild(e);
+      let r = null != (n = c.Z.getGuild(e)) ? n : s.Z.getGuild(e);
       return null != r && t === (null != r.vanityURLCode)
     }
   },
@@ -102,7 +102,7 @@ let p = {
         break;
       case a().v3("target"):
         var r;
-        n = null !== (r = parseInt(o)) && void 0 !== r ? r : 0
+        n = null != (r = parseInt(o)) ? r : 0
     }
     return e => {
       let r = a().v3("".concat(t, ":").concat(e));

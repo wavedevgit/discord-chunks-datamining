@@ -33,8 +33,8 @@ function p(e) {
     c = null == l ? void 0 : l.pid,
     u = null != l ? null != c ? r.ZP.getGameForPID(c) : null : r.ZP.getVisibleGame();
   return {
-    sourceName: null !== (t = null == l ? void 0 : l.sourceName) && void 0 !== t ? t : null == u ? void 0 : u.name,
-    sourceApplicationId: null !== (n = null == l ? void 0 : l.id) && void 0 !== n ? n : null == u ? void 0 : u.id
+    sourceName: null != (t = null == l ? void 0 : l.sourceName) ? t : null == u ? void 0 : u.name,
+    sourceApplicationId: null != (n = null == l ? void 0 : l.id) ? n : null == u ? void 0 : u.id
   }
 }
 

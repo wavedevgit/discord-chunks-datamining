@@ -88,7 +88,7 @@ function h(e, t) {
       displayed: !1
     }
   });
-  let l = null != s && (null == s ? void 0 : s.value) > 0 ? (null !== (n = null == s ? void 0 : s.multiplier) && void 0 !== n ? n : 0) + 1 : 1;
+  let l = null != s && (null == s ? void 0 : s.value) > 0 ? (null != (n = null == s ? void 0 : s.multiplier) ? n : 0) + 1 : 1;
   r.Z.dispatch({
     type: "POGGERMODE_UPDATE_COMBO",
     channelId: e,

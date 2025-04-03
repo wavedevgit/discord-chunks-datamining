@@ -35,20 +35,13 @@ class h extends o.Z {
         s = (0, u.v)("SignUpManager"),
         l = (0, c.e)("SignUpManager", !1),
         _ = (0, a.un)(r.z.GENSHIN_USER_SIGNUPS);
-      if (t && !n && !o) {
-        i.Z.dispatch({
-          type: "ENABLE_USER_SIGN_UP",
-          key: "valorant-user"
-        });
-        return
-      }
-      if (s && !l && !_) {
-        i.Z.dispatch({
-          type: "ENABLE_USER_SIGN_UP",
-          key: "genshin-user"
-        });
-        return
-      }
+      return !t || n || o ? !s || l || _ ? void 0 : void i.Z.dispatch({
+        type: "ENABLE_USER_SIGN_UP",
+        key: "genshin-user"
+      }) : void i.Z.dispatch({
+        type: "ENABLE_USER_SIGN_UP",
+        key: "valorant-user"
+      })
     }), p(this, "handleChannelSelect", e => {
       let {
         guildId: t
@@ -62,22 +55,16 @@ class h extends o.Z {
       if (!u && !f) return;
       let p = s.Z.getGuild(t);
       if (null != p) {
-        if (p.hasFeature(_.oNc.VALORANT_L30) && l.Z.can(_.Plq.MANAGE_GUILD, p) && !n) {
-          i.Z.dispatch({
-            type: "ENABLE_GUILD_SIGN_UP",
-            key: "valorant-admin",
-            guildId: t
-          });
-          return
-        }
-        if (p.hasFeature(_.oNc.GENSHIN_L30) && l.Z.can(_.Plq.MANAGE_GUILD, p) && !o) {
-          i.Z.dispatch({
-            type: "ENABLE_GUILD_SIGN_UP",
-            key: "genshin-admin",
-            guildId: t
-          });
-          return
-        }
+        if (p.hasFeature(_.oNc.VALORANT_L30) && l.Z.can(_.Plq.MANAGE_GUILD, p) && !n) return void i.Z.dispatch({
+          type: "ENABLE_GUILD_SIGN_UP",
+          key: "valorant-admin",
+          guildId: t
+        });
+        if (p.hasFeature(_.oNc.GENSHIN_L30) && l.Z.can(_.Plq.MANAGE_GUILD, p) && !o) return void i.Z.dispatch({
+          type: "ENABLE_GUILD_SIGN_UP",
+          key: "genshin-admin",
+          guildId: t
+        })
       }
     })
   }

@@ -20,7 +20,7 @@ var r, i = n(149765),
   E = n(594174),
   b = n(981631);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let y = {},
+let v = {},
   O = new Set;
 
 function I(e, t) {
@@ -78,7 +78,7 @@ function T(e, t) {
 function N(e) {
   let t = g.Z.getGuild(e);
   if (null == t) return;
-  let n = y[e] = new Set;
+  let n = v[e] = new Set;
   if (!t.hasFeature(b.oNc.ROLE_SUBSCRIPTIONS_ENABLED) || !(0, u.kT)(e) && !(0, s.Rw)(t)) return;
   let r = h.Z.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
@@ -88,7 +88,7 @@ function N(e) {
 }
 
 function A(e, t) {
-  let n = y[e];
+  let n = v[e];
   if (null == n) return !1;
   let r = h.Z.getChannel(t);
   if (null == r) return !1;
@@ -100,21 +100,21 @@ function A(e, t) {
 }
 
 function C() {
-  y = {}, O.clear()
+  v = {}, O.clear()
 }
 
 function R(e) {
   let {
     guild: t
   } = e;
-  delete y[t.id]
+  delete v[t.id]
 }
 
 function P(e) {
   let {
     guildId: t
   } = e;
-  delete y[t]
+  delete v[t]
 }
 
 function w(e) {
@@ -154,8 +154,8 @@ class M extends(r = o.ZP.Store) {
   }
   isChannelGated(e, t) {
     if (null == e) return !1;
-    let n = y[e];
-    return null == n && (N(e), n = y[e]), null != n && n.has(t)
+    let n = v[e];
+    return null == n && (N(e), n = v[e]), null != n && n.has(t)
   }
   isChannelGatedAndVisible(e, t) {
     return null != e && this.isChannelGated(e, t) && !O.has(e)
@@ -167,7 +167,7 @@ class M extends(r = o.ZP.Store) {
     return !!(null != n && null != n.parent_id && p.Ec.has(null == n ? void 0 : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-v(M, "displayName", "GatedChannelStore");
+y(M, "displayName", "GatedChannelStore");
 let k = new M(a.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,

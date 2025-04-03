@@ -20,13 +20,13 @@ var r = n(200651),
   g = n(675478),
   E = n(819758),
   b = n(626135),
-  v = n(392552),
-  y = n(784222),
+  y = n(392552),
+  v = n(784222),
   O = n(926243),
   I = n(149203),
   S = n(981631),
   T = n(388032),
-  N = n(790584);
+  N = n(139642);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,7 +109,7 @@ let L = e => {
     handleScrollUpOnSectionCollapse: z
   } = e, {
     enabled: q
-  } = v.Z.useExperiment({
+  } = y.Z.useExperiment({
     location: "EmojiPicker"
   }, {
     autoTrackExposure: !1
@@ -133,11 +133,11 @@ let L = e => {
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
             visibleRowIndex: _,
             columnIndex: p
-          } = e, h = null !== (n = x(p, U)) && void 0 !== n ? n : {}, {
+          } = e, h = null != (n = x(p, U)) ? n : {}, {
             ref: m,
             tabIndex: g,
             onFocus: E
-          } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), v = ea.rowIndex === _ && ea.columnIndex === p, y = () => {
+          } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), y = ea.rowIndex === _ && ea.columnIndex === p, v = () => {
             k.current || j.current || D(e)
           };
           return (0, i.createElement)("li", P(C({}, b), {
@@ -149,12 +149,12 @@ let L = e => {
               className: a()(N.emojiItem, {
                 [N.emojiItemLarge]: ed,
                 [N.emojiItemMedium]: ef,
-                [N.emojiItemSelected]: v && !f,
-                [null != Z ? Z : ""]: v,
+                [N.emojiItemSelected]: y && !f,
+                [null != Z ? Z : ""]: y,
                 [N.showPulse]: el === t
               }),
-              onFocus: null != E ? E : y,
-              onMouseOver: y,
+              onFocus: null != E ? E : v,
+              onMouseOver: v,
               onMouseEnter: o,
               onMouseLeave: s,
               onClick: c,
@@ -164,7 +164,7 @@ let L = e => {
           }))
         };
       switch (e.type) {
-        case y.ld.EXPAND_OR_COLLAPSE_EMOJIS: {
+        case v.ld.EXPAND_OR_COLLAPSE_EMOJIS: {
           let {
             visibleRowIndex: t,
             columnIndex: i
@@ -188,7 +188,7 @@ let L = e => {
             shouldShowRoundHighlight: !0
           })
         }
-        case y.ld.CREATE_EMOJI: {
+        case v.ld.CREATE_EMOJI: {
           let t = t => {
             t.stopPropagation(), k.current || j.current || (A(e, {
               isFinalSelection: !0,
@@ -207,7 +207,7 @@ let L = e => {
             shouldShowRoundHighlight: !1
           })
         }
-        case y.ld.EMOJI: {
+        case v.ld.EMOJI: {
           var o;
           let {
             columnIndex: n,
@@ -234,11 +234,11 @@ let L = e => {
             showEmojiFavoriteTooltip: B,
             messageId: W,
             isBurstReaction: Y,
-            rowPosition: null == eu ? void 0 : null === (o = eu.current) || void 0 === o ? void 0 : o.getBoundingClientRect(),
+            rowPosition: null == eu || null == (o = eu.current) ? void 0 : o.getBoundingClientRect(),
             inNitroLockedSection: K
           }, t)
         }
-        case y.ld.SOUNDMOJI:
+        case v.ld.SOUNDMOJI:
           return
       }
     },
@@ -260,7 +260,7 @@ let L = e => {
   });
   if (V !== I.En.TOP_GUILD_EMOJI) return ep(t);
   let eh = t.filter(e => {
-      if (q && e.type === y.ld.CREATE_EMOJI) return !0;
+      if (q && e.type === v.ld.CREATE_EMOJI) return !0;
       let t = e;
       return t.subCategory === I.t0.TOP_GUILD_EMOJI || t.subCategory === I.t0.NEWLY_ADDED_EMOJI && t.emoji.type === f.B.GUILD && !_.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     }),

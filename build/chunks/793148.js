@@ -10,7 +10,7 @@ var r, i = n(200651),
   l = n(481060),
   c = n(540026),
   u = n(388032),
-  d = n(998946);
+  d = n(24008);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,8 +52,8 @@ class p extends(r = o.PureComponent) {
       onVolumeHide: E
     } = this.props, {
       hovered: b,
-      focused: v,
-      dragging: y
+      focused: y,
+      dragging: v
     } = this.state, O = l.gj8;
     return f || m === p ? O = l.OyP : m < h / 2 && (O = l.X2j), (0, i.jsxs)("div", {
       className: s()(n, d.container),
@@ -78,7 +78,7 @@ class p extends(r = o.PureComponent) {
       onKeyDown: this.handleKeyDown,
       children: [(0, i.jsx)("div", {
         className: s()(d.volumeButtonSlider, r, {
-          [d.sliderVisible]: b || v || y
+          [d.sliderVisible]: b || y || v
         }),
         onMouseEnter: () => {
           clearTimeout(this._hoverTimeout), this.setState({

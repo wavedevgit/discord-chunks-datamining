@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120), n(757143), n(301563);
 var r, i, o = n(442837),
   a = n(433517),
@@ -21,7 +21,7 @@ function d(e, t, n) {
 let f = "MaskedLinkStore",
   _ = new Set,
   p = new Set,
-  h = null === (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === r ? void 0 : r.replace("//", "");
+  h = null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? void 0 : r.replace("//", "");
 
 function m(e) {
   let t = (0, c.F)(e);
@@ -64,10 +64,10 @@ function b(e) {
     trustedProtocols: p
   })
 }
-class v extends(i = o.ZP.Store) {
+class y extends(i = o.ZP.Store) {
   initialize() {
     var e;
-    let t = null !== (e = a.K.get(f)) && void 0 !== e ? e : {};
+    let t = null != (e = a.K.get(f)) ? e : {};
     if (Array.isArray(t)) _ = new Set(null != t ? Array.from(t) : null), p = new Set;
     else {
       let {
@@ -84,8 +84,8 @@ class v extends(i = o.ZP.Store) {
     return g(e)
   }
 }
-d(v, "displayName", "MaskedLinkStore");
-let y = new v(s.Z, {
+d(y, "displayName", "MaskedLinkStore");
+let v = new y(s.Z, {
   MASKED_LINK_ADD_TRUSTED_DOMAIN: E,
   MASKED_LINK_ADD_TRUSTED_PROTOCOL: b
 })

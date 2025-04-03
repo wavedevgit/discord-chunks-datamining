@@ -91,16 +91,16 @@ var g = function(e) {
   }(i.Component),
   E = {},
   b = 1e4,
-  v = 0;
+  y = 0;
 
-function y(e) {
+function v(e) {
   if (E[e]) return E[e];
   var t = u().compile(e);
-  return v < b && (E[e] = t, v++), t
+  return y < b && (E[e] = t, y++), t
 }
 
 function O(e, t) {
-  return void 0 === e && (e = "/"), void 0 === t && (t = {}), "/" === e ? e : y(e)(t, {
+  return void 0 === e && (e = "/"), void 0 === t && (t = {}), "/" === e ? e : v(e)(t, {
     pretty: !0
   })
 }

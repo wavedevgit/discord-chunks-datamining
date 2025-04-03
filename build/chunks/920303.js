@@ -28,8 +28,8 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 let b = 25,
-  v = !1,
-  y = !0,
+  y = !1,
+  v = !0,
   O = !1,
   I = !1,
   S = null,
@@ -38,7 +38,7 @@ let b = 25,
   A = 0;
 
 function C() {
-  v = !1, y = !0, O = !1, I = !1, S = null, T = s.z.LATEST_ACTIVITY, r = new Set, A = 0, N = []
+  y = !1, v = !0, O = !1, I = !1, S = null, T = s.z.LATEST_ACTIVITY, r = new Set, A = 0, N = []
 }
 
 function R(e, t) {
@@ -46,7 +46,7 @@ function R(e, t) {
 }
 
 function P(e) {
-  e.channelId === S && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), v = !0, y = !1
+  e.channelId === S && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), y = !0, v = !1
 }
 
 function w(e) {
@@ -61,7 +61,7 @@ function w(e) {
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), L(), O = e.hasMore, A = e.offset + b, v = !1, y = !1
+  }), L(), O = e.hasMore, A = e.offset + b, y = !1, v = !1
 }
 
 function D(e) {
@@ -75,7 +75,7 @@ function L() {
     n = null == t ? null : R(t, T);
   N = a()(_.Z.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
     var i;
-    if (0 !== r.size && (null === (i = t.appliedTags) || void 0 === i ? void 0 : i.some(e => r.has(e))) !== !0) return !1;
+    if (0 !== r.size && (null == (i = t.appliedTags) ? void 0 : i.some(e => r.has(e))) !== !0) return !1;
     if (e || null == n) return !0;
     {
       let e = null == t ? null : R(t, T);
@@ -86,7 +86,7 @@ function L() {
 
 function x(e) {
   if (e.channelId !== S || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
-  v = !1, I = !0, y = !1
+  y = !1, I = !0, v = !1
 }
 
 function M(e) {
@@ -118,16 +118,16 @@ class B extends(i = l.ZP.Store) {
     this.waitFor(_.Z, g.Z, p.ZP)
   }
   get canLoadMore() {
-    return O && !v && !I
+    return O && !y && !I
   }
   get nextOffset() {
     return A
   }
   get isInitialLoad() {
-    return y
+    return v
   }
   isLoading(e, t, n) {
-    return S === e && T === t && (0, h.OL)(r, n) ? v : (C(), !1)
+    return S === e && T === t && (0, h.OL)(r, n) ? y : (C(), !1)
   }
   getThreads(e, t, n) {
     return S === e && T === t && (0, h.OL)(r, n) ? N : G

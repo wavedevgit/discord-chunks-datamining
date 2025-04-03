@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(790527),
   E = n(474936),
   b = n(981631),
-  v = n(388032),
-  y = n(475405);
+  y = n(388032),
+  v = n(290602);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function N(e) {
     N = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
     A = T === b.BRd.LIGHT ? "light" : "dark",
     C = (0, r.jsx)("img", {
-      className: y.art,
+      className: v.art,
       alt: "File Upload Nitro Perk",
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(A, "_v2.png")
     }),
@@ -89,7 +89,7 @@ function N(e) {
       }
     }),
     w = (0, r.jsx)("div", {
-      className: y.body,
+      className: v.body,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         children: P
@@ -104,12 +104,12 @@ function N(e) {
   }
   return (0, r.jsx)(g.Z, I({
     artElement: C,
-    artContainerClassName: y.artContainer,
+    artContainerClassName: v.artContainer,
     enableArtBoxShadow: !1,
     type: E.cd.UPLOAD_ERROR_UPSELL,
-    title: v.NW.string(v.t["9C+41t"]),
+    title: y.NW.string(y.t["9C+41t"]),
     body: w,
-    context: v.NW.formatToPlainString(v.t.q5fTZm, {
+    context: y.NW.formatToPlainString(y.t.q5fTZm, {
       maxSize: R
     }),
     glowUp: P,
@@ -118,7 +118,7 @@ function N(e) {
     },
     onClose: t,
     subscriptionTier: E.Si.TIER_2,
-    secondaryCTA: v.NW.string(v.t.ZnqyZ2),
+    secondaryCTA: y.NW.string(y.t.ZnqyZ2),
     onSecondaryClick: D,
     showEnhancedUpsell: !0
   }, n))

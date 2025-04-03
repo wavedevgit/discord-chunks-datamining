@@ -82,23 +82,23 @@ function b(e) {
       type: "attachment",
       attachmentId: e.id,
       mediaIndex: t,
-      srcIsAnimated: (0, u.yE)(null !== (n = e.flags) && void 0 !== n ? n : 0, p.J0y.IS_ANIMATED)
+      srcIsAnimated: (0, u.yE)(null != (n = e.flags) ? n : 0, p.J0y.IS_ANIMATED)
     }
   }).filter(d.lm)
 }
 
-function v(e) {
+function y(e) {
   return b(e, a.x4.useSetting())
 }
 
-function y(e, t) {
+function v(e, t) {
   let n = a.RS.useSetting(),
     r = a.NA.useSetting();
   if (null == e) return [];
   let o = e.embeds;
   return n && r && null != o ? o.map((e, n) => {
     var r;
-    let o = null !== (r = e.image) && void 0 !== r ? r : e.thumbnail;
+    let o = null != (r = e.image) ? r : e.thumbnail;
     if (null == o && null != e.images && (o = e.images[0]), null != o && null != o.url) {
       let {
         height: r,
@@ -137,19 +137,19 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return [...v(e), ...y(e, t)]
+  return [...y(e), ...v(e, t)]
 }
 
 function S(e, t) {
   var n, r;
-  let i = v(e),
-    o = y(e, t);
-  return null !== (r = null !== (n = i[0]) && void 0 !== n ? n : o[0]) && void 0 !== r ? r : null
+  let i = y(e),
+    o = v(e, t);
+  return null != (r = null != (n = i[0]) ? n : o[0]) ? r : null
 }
 
 function T(e, t) {
-  let n = v(e),
-    r = y(e, t);
+  let n = y(e),
+    r = v(e, t);
   return null == n[0] && null != r[0]
 }
 
@@ -158,7 +158,7 @@ function N(e, t) {
   let r = s.Z.getChannel(t);
   if (null == r) return !1;
   let i = l.Z.getMessage(r.id, f.default.castChannelIdAsMessageId(r.id));
-  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === o.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => h(e) || m(e)))
+  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = c.default.getCurrentUser()) ? void 0 : n.id) && 0 === o.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => h(e) || m(e)))
 }
 
 function A(e) {

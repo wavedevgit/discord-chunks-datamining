@@ -32,8 +32,7 @@ function d(e) {
   return t
 }
 async function f(e) {
-  let t;
-  let {
+  let t, {
     id: n,
     name: r
   } = e;

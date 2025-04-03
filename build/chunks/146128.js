@@ -3,7 +3,7 @@
 n.d(t, {
   BV: () => b,
   Rm: () => g,
-  aO: () => y
+  aO: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -78,7 +78,7 @@ function b(e) {
   }), u.Z.emojiAnimationType) : t
 }
 
-function v(e) {
+function y(e) {
   let {
     emojiRef: t,
     channelId: n,
@@ -97,7 +97,7 @@ function v(e) {
   }, [a, t, null == s ? void 0 : s.state, r, l]), null
 }
 
-function y(e) {
+function v(e) {
   let {
     channelId: t,
     messageId: n,
@@ -105,7 +105,7 @@ function y(e) {
     disable: l,
     emojiRef: c
   } = e, u = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), f = d.Z.useIsEligible(), _ = (0, a.bp)();
-  return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(v, {
+  return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(y, {
     emojiRef: c,
     channelId: t,
     messageId: n,

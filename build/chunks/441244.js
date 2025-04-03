@@ -35,7 +35,7 @@ let c = function(e, t, n) {
 
 function u(e) {
   var t, n;
-  return null !== (n = null !== (t = e.displayName) && void 0 !== t ? t : e.name) && void 0 !== n ? n : "<Unknown>"
+  return null != (n = null != (t = e.displayName) ? t : e.name) ? n : "<Unknown>"
 }
 
 function d(e, t) {
@@ -61,7 +61,7 @@ function d(e, t) {
       constructor(...n) {
         super(...n), s(this, "memoizedGetStateFromStores", _(t)), s(this, "listener", new a.F(e, () => {
           let e = this.memoizedGetStateFromStores.getCachedResult(this.props.childProps);
-          !(null != e && (this.memoizedGetStateFromStores.clear(), (0, o.Z)(this.memoizedGetStateFromStores(this.props.childProps), e))) && this.forceUpdate()
+          null != e && (this.memoizedGetStateFromStores.clear(), (0, o.Z)(this.memoizedGetStateFromStores(this.props.childProps), e)) || this.forceUpdate()
         }))
       }
     }
@@ -92,7 +92,7 @@ function f(e, t) {
       constructor(...n) {
         super(...n), s(this, "memoizedGetStateFromStores", _(t)), s(this, "listener", new a.F(e, () => {
           let e = this.memoizedGetStateFromStores.getCachedResult(this.props);
-          !(null != e && (this.memoizedGetStateFromStores.clear(), (0, o.Z)(this.memoizedGetStateFromStores(this.props), e))) && this.forceUpdate()
+          null != e && (this.memoizedGetStateFromStores.clear(), (0, o.Z)(this.memoizedGetStateFromStores(this.props), e)) || this.forceUpdate()
         }))
       }
     }

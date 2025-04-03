@@ -21,8 +21,8 @@ var i = n(399606),
   g = n(13140),
   E = n(763296),
   b = n(981631),
-  v = n(388032),
-  y = n(151414);
+  y = n(388032),
+  v = n(127253);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,11 +55,11 @@ function S(e) {
     graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(s.Z, {
       emojiId: t.emojiId,
       emojiName: t.emojiName,
-      className: y.emoji
+      className: v.emoji
     }) : (0, r.jsx)(a.XBm, {
       size: "md",
       color: "currentColor",
-      className: y.emoji
+      className: v.emoji
     }),
     graphicSecondary: null != N ? (0, r.jsx)(u.Z, {
       guild: N,
@@ -79,7 +79,7 @@ function S(e) {
     },
     w = (0, c.un)(o.z.SOUNDBOARD_KEYBIND_TIP),
     D = () => (0, c.EW)(o.z.SOUNDBOARD_KEYBIND_TIP),
-    L = null != R && (0, m.isWindows)() && !w ? v.NW.format(v.t.udMTtr, {
+    L = null != R && (0, m.isWindows)() && !w ? y.NW.format(y.t.udMTtr, {
       keybind: (0, g.BB)(R.shortcut, !0),
       openSettingsHook: (e, t) => (0, r.jsx)(a.eee, {
         onClick: P,
@@ -87,20 +87,20 @@ function S(e) {
       }, t)
     }) : null;
   return null == L ? null : (0, r.jsxs)("div", {
-    className: y.keybindHint,
+    className: v.keybindHint,
     children: [(0, r.jsx)(a.P4T, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: y.warningIcon
+      className: v.warningIcon
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-normal",
-      className: y.keybindHintText,
+      className: v.keybindHintText,
       children: L
     }), (0, r.jsx)(a.P3F, {
-      className: y.closeButton,
+      className: v.closeButton,
       onClick: D,
       children: (0, r.jsx)(a.Dio, {
         size: "xs",

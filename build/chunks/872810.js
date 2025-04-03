@@ -31,8 +31,8 @@ var r = n(512722),
   g = n(944486),
   E = n(979651),
   b = n(934415),
-  v = n(70956),
-  y = n(557457),
+  y = n(70956),
+  v = n(557457),
   O = n(573261);
 n(26151), n(493683);
 var I = n(475179);
@@ -125,7 +125,7 @@ function x(e, t) {
   D(e, t);
   let i = d.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
     o = g.Z.getVoiceChannelId();
-  (!i || o !== r) && (0, u.Z)(e)
+  i && o === r || (0, u.Z)(e)
 }
 
 function M(e) {
@@ -173,7 +173,7 @@ async function j(e, t, n) {
     })
   } catch (t) {
     let e;
-    429 === t.status && (e = t.body.retry_after * v.Z.Millis.SECOND), s.Z.dispatch({
+    429 === t.status && (e = t.body.retry_after * y.Z.Millis.SECOND), s.Z.dispatch({
       type: "STREAM_PREVIEW_FETCH_FAIL",
       streamKey: r,
       retryAfter: e
@@ -194,7 +194,7 @@ async function U(e) {
 }
 
 function G(e) {
-  (0, y.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(A({
+  (0, v.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(A({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }

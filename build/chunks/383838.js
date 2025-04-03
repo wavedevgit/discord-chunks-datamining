@@ -13,7 +13,7 @@ var i = n(120356),
   s = n(600164),
   l = n(534542),
   c = n(512983),
-  u = n(345310);
+  u = n(13651);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,8 +69,8 @@ function g(e) {
       iconClassName: g,
       title: E,
       body: b,
-      style: v,
-      align: y = s.Z.Align.START
+      style: y,
+      align: v = s.Z.Align.START
     } = e,
     O = s.Z.Direction.HORIZONTAL;
   if (null != d) {
@@ -90,10 +90,10 @@ function g(e) {
   return i === a.Z.Types.PRIMARY && (I = !1), (0, r.jsx)(a.Z, {
     className: o()(u.formNotice, h),
     type: i,
-    style: v,
+    style: y,
     children: (0, r.jsxs)(s.Z, {
       direction: O,
-      align: y,
+      align: v,
       children: [t, (0, r.jsxs)(s.Z.Child, {
         children: [null != E && "" !== E ? (0, r.jsx)(c.v, {
           tag: c.R.H5,

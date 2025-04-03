@@ -29,8 +29,7 @@ var t = "[0-9](_*[0-9])*",
 function o(e, t, n) {
   return -1 === n ? "" : e.replace(t, r => o(e, t, n - 1))
 }
-
-function a(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = "[\xc0-ʸa-zA-Z_$][\xc0-ʸa-zA-Z_$0-9]*",
     r = n + o("(?:<" + n + "~~~(?:\\s*,\\s*" + n + "~~~)*>)?", /~~~/g, 2),
@@ -124,4 +123,3 @@ function a(e) {
     }, i, s]
   }
 }
-e.exports = a

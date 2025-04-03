@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = /([A-Za-z_][A-Za-z_0-9]*)?/,
     n = {
       scope: "params",
@@ -54,4 +54,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

@@ -52,13 +52,13 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function v(e) {
   switch (e) {
     case h.nkL.GIF.title:
     case h.nkL.TENOR.title:
@@ -75,10 +75,10 @@ let O = [...o()(h.nkL).values().map(e => ({
   inputType: _.iw.BUILT_IN_INTEGRATION,
   applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
-    return y(e.title)
+    return v(e.title)
   },
   get displayDescription() {
-    return y(e.title)
+    return v(e.title)
   },
   options: e.type === h.q9n.GIF ? [{
     name: "query",
@@ -138,7 +138,7 @@ let O = [...o()(h.nkL).values().map(e => ({
       p = m.NW.format(m.t.SSIVOj, {
         name: c
       }),
-      h = null !== (i = null === (n = e.find(e => "silent" === e.name)) || void 0 === n ? void 0 : n.value) && void 0 !== i && i;
+      h = null != (i = null == (n = e.find(e => "silent" === e.name)) ? void 0 : n.value) && i;
     async function g() {
       if (null != o) try {
         await s.Z.closePrivateChannel(o.id, void 0, h)
@@ -150,7 +150,7 @@ let O = [...o()(h.nkL).values().map(e => ({
       name: c
     }), p = m.NW.format(m.t.IK1Qvr, {
       name: c
-    })), (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(E({
+    })), (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, y(E({
       header: _,
       confirmText: m.NW.string(m.t["26C4oq"]),
       cancelText: m.NW.string(m.t["ETE/oK"]),

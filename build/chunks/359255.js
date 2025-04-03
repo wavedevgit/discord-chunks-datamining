@@ -8,7 +8,7 @@ var r = n(200651),
   o = n(120356),
   a = n.n(o),
   s = n(481060),
-  l = n(874078);
+  l = n(303835);
 
 function c(e) {
   return "" === e || "-" === e
@@ -23,13 +23,13 @@ let u = e => {
   } = e, [f, _] = i.useState(t), p = c(f) || null != u && f <= u, h = c(f) || null != d && f >= d, m = e => {
     n(c(e) ? null != u ? u : 0 : e), _(e)
   }, g = e => {
-    e.stopPropagation(), !p && m(f - 1)
+    e.stopPropagation(), p || m(f - 1)
   }, E = e => {
-    e.stopPropagation(), !h && m(f + 1)
+    e.stopPropagation(), h || m(f + 1)
   }, b = e => {
     if (c(e)) return m(e);
     let t = parseInt(e);
-    return isNaN(t) ? void 0 : null != d && t >= d ? m(d) : null != u && t <= u ? m(u) : m(t)
+    if (!isNaN(t)) return null != d && t >= d ? m(d) : null != u && t <= u ? m(u) : m(t)
   };
   return (0, r.jsx)(s.tEY, {
     within: !0,

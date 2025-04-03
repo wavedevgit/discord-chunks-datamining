@@ -27,8 +27,8 @@ var u = n(706454),
   g = n(255333),
   E = n(204298),
   b = n(981631);
-let v = 1e3,
-  y = 5e3,
+let y = 1e3,
+  v = 5e3,
   O = 10,
   I = 864e5,
   S = 6e5,
@@ -36,13 +36,13 @@ let v = 1e3,
 async function N(e) {
   var t;
   let n = Date.now(),
-    i = null !== (t = T.get(e)) && void 0 !== t ? t : 0;
+    i = null != (t = T.get(e)) ? t : 0;
   if (_.Z.getApplicationFetchState(e) === _.M.FETCHING || _.Z.isInvalidApplication(e) || n < i + S) return;
   T.set(e, n), c.Z.dispatch({
     type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
     applicationId: e
   });
-  let o = new r.Z(v, y),
+  let o = new r.Z(y, v),
     a = (e, t) => 429 === e.status && o.fails < O && (o.fail(() => {
       t(void 0, a)
     }), !0);
@@ -132,10 +132,10 @@ async function R(e) {
     guildId: r
   }), {
     lastFetchTimeMs: d
-  } = null !== (t = g.Z.getSimilarApplications({
+  } = null != (t = g.Z.getSimilarApplications({
     applicationId: n,
     guildId: r
-  })) && void 0 !== t ? t : {};
+  })) ? t : {};
   if (s !== g.M.FETCHING && (null == d || !(d + S > a))) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
@@ -188,8 +188,8 @@ async function P(e) {
     excludeAppsWithCustomInstallUrl: h,
     excludeNonEmbeddedApps: g,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-    source: v = s.F.APP_DIRECTORY
-  } = null != i ? i : {}, y = Date.now(), O = m.Z.getFetchState({
+    source: y = s.F.APP_DIRECTORY
+  } = null != i ? i : {}, v = Date.now(), O = m.Z.getFetchState({
     query: n,
     guildId: r,
     page: a,
@@ -198,15 +198,15 @@ async function P(e) {
     integrationType: _
   }), {
     lastFetchTimeMs: I
-  } = null !== (t = m.Z.getSearchResults({
+  } = null != (t = m.Z.getSearchResults({
     query: n,
     guildId: r,
     page: a,
     pageSize: d,
     categoryId: f,
     integrationType: _
-  })) && void 0 !== t ? t : {};
-  if (O !== m.M.FETCHING && (null == I || !(I + S > y))) {
+  })) ? t : {};
+  if (O !== m.M.FETCHING && (null == I || !(I + S > v))) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
       query: n,
@@ -219,7 +219,7 @@ async function P(e) {
       excludeAppsWithCustomInstallUrl: h,
       excludeNonEmbeddedApps: g,
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-      source: v
+      source: y
     });
     try {
       let e = await l.tn.get({
@@ -236,7 +236,7 @@ async function P(e) {
           exclude_apps_with_custom_install_url: h,
           exclude_non_embedded_apps: g,
           exclude_embedded_apps_without_primary_entry_point_app_command: E,
-          source: v
+          source: y
         },
         rejectWithError: !0
       });
@@ -260,7 +260,7 @@ async function P(e) {
         excludeAppsWithCustomInstallUrl: h,
         excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-        source: v
+        source: y
       }), null == o || o(e.body.result_count)
     } catch (e) {
       c.Z.dispatch({
@@ -275,7 +275,7 @@ async function P(e) {
         excludeAppsWithCustomInstallUrl: h,
         excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-        source: v
+        source: y
       })
     }
   }
@@ -353,7 +353,7 @@ async function L() {
       let e = (null == t ? void 0 : t.status) === 429;
       c.Z.dispatch({
         type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_FAILURE",
-        retryAfterSeconds: e ? null == t ? void 0 : null === (i = t.body) || void 0 === i ? void 0 : i.retry_after : void 0
+        retryAfterSeconds: e ? null == t || null == (i = t.body) ? void 0 : i.retry_after : void 0
       })
     }
   }

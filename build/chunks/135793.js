@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(937615),
   E = n(980463),
   b = n(328908),
-  v = n(992970),
-  y = n(317951),
+  y = n(992970),
+  v = n(317951),
   O = n(287941),
   I = n(235894),
   S = n(883998),
@@ -30,7 +30,7 @@ var r = n(200651),
   N = n(981631),
   A = n(921944),
   C = n(388032),
-  R = n(216826),
+  R = n(956589),
   P = n(99713);
 
 function w(e, t, n) {
@@ -140,38 +140,38 @@ function B(e) {
     price: h,
     fetchingPrice: m,
     error: g
-  } = (0, T.R2)(y.D1), {
-    entitlement: v,
+  } = (0, T.R2)(v.D1), {
+    entitlement: y,
     fetchedEntitlement: O,
     error: S
-  } = (0, T.t6)(y.D1), A = g || S, {
+  } = (0, T.t6)(v.D1), A = g || S, {
     analyticsLocations: C
-  } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != v && !v.consumed, P = m || !O;
+  } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != y && !y.consumed, P = m || !O;
   (0, i.useEffect)(() => () => {
-    A && (0, E.SN)(y.D1)
+    A && (0, E.SN)(v.D1)
   }, [A, c]);
   let w = (0, i.useCallback)(() => {
       null != _ && ((0, l.pTH)(), o(_))
     }, [_, o]),
     D = (0, i.useCallback)(() => {
       (0, p.Z)({
-        skuId: y.D1,
+        skuId: v.D1,
         analyticsLocations: C,
         onComplete: () => {
-          w(), (0, E.gA)(y.D1)
+          w(), (0, E.gA)(v.D1)
         },
         variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
     }, [w, C]),
     L = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
     x = (0, i.useMemo)(() => {
-      if (null != v) {
+      if (null != y) {
         if ("apply" === s) return 3;
-        if (v.type === N.qc2.DEVELOPER_GIFT) return 1;
+        if (y.type === N.qc2.DEVELOPER_GIFT) return 1;
         if (R) return 2
       }
       return 0
-    }, [v, R, s]),
+    }, [y, R, s]),
     M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
   return (0, r.jsx)(F, {
     channel: t,
@@ -198,7 +198,7 @@ let F = e => {
     return ((0, i.useEffect)(() => {
       var e;
       if (null == c) return;
-      let t = null === (e = d.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
+      let t = null == (e = d.current) ? void 0 : e.getBoundingClientRect();
       if (null == t) return;
       let n = (0, I.NV)(c),
         {
@@ -212,7 +212,7 @@ let F = e => {
         y: i,
         w: o,
         h: a
-      }, !0, v.LL.ConfettiPreview)
+      }, !0, y.LL.ConfettiPreview)
     }, [c]), l) ? (0, r.jsx)(z, {}) : null == a ? (0, r.jsx)(K, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: R.modal,
@@ -366,7 +366,7 @@ let F = e => {
     let {
       entitlement: e,
       numPotions: t
-    } = (0, T.t6)(y.D1);
+    } = (0, T.t6)(v.D1);
     if (null == t || 0 === t) return null;
     let n = (null == e ? void 0 : e.type) === N.qc2.DEVELOPER_GIFT ? C.t["b+P6ra"] : C.t.RiQ4cn;
     return (0, r.jsxs)("div", {
@@ -396,7 +396,7 @@ let F = e => {
     } = (0, i.useMemo)(() => {
       let e = {
           0: C.NW.formatToPlainString(C.t.POGRmp, {
-            amount: y.pe,
+            amount: v.pe,
             price: (0, g.T4)(o.amount, o.currency)
           }),
           1: C.NW.string(C.t.RrKeDw),

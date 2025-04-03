@@ -168,9 +168,9 @@ function p(e, t, n) {
     type: "folder",
     id: e.folderId,
     parentId: t,
-    name: null !== (r = e.folderName) && void 0 !== r ? r : void 0,
-    color: null !== (i = e.folderColor) && void 0 !== i ? i : void 0,
-    expanded: null != n ? n : null !== (o = e.expanded) && void 0 !== o && o,
+    name: null != (r = e.folderName) ? r : void 0,
+    color: null != (i = e.folderColor) ? i : void 0,
+    expanded: null != n ? n : null != (o = e.expanded) && o,
     children: []
   }
 }

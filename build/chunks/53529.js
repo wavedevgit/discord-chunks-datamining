@@ -10,11 +10,11 @@ let i = 250,
   s = {
     isMerging(e) {
       var t;
-      return null === (t = a.get(e)) || void 0 === t || t
+      return null == (t = a.get(e)) || t
     },
     isSaving(e) {
       var t;
-      return null === (t = o.get(e)) || void 0 === t || t
+      return null == (t = o.get(e)) || t
     },
     withoutMerging(e, t) {
       let n = this.isMerging(e);
@@ -66,7 +66,7 @@ let i = 250,
         } = e,
         i = r.bN.richValue(e),
         o = s.currentEntry(e);
-      null == o || (o.value = i, o.selection = n, t || (o.mergeable = !1))
+      null != o && (o.value = i, o.selection = n, t || (o.mergeable = !1))
     }
   };
 

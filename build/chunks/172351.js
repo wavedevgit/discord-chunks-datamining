@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(678738),
   d = n(981631),
   f = n(388032),
-  _ = n(3381);
+  _ = n(175354);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,14 +50,14 @@ function m(e) {
     channel: m,
     type: "channel"
   }), [m]), {
-    commands: v
-  } = a.Qm(b, t, n), y = i.useMemo(() => null == v ? void 0 : v.filter(e => {
+    commands: y
+  } = a.Qm(b, t, n), v = i.useMemo(() => null == y ? void 0 : y.filter(e => {
     let {
       nsfw: t
     } = e;
     return !0 !== t
-  }), [v]);
-  if (null == y || 0 === y.length) return null;
+  }), [y]);
+  if (null == v || 0 === v.length) return null;
   let O = e => {
     null == g || g(), E({
       action: "PRESS_APP_COMMAND"
@@ -71,7 +71,7 @@ function m(e) {
     heading: f.NW.string(f.t["0hKkS0"]),
     children: (0, r.jsx)("ul", {
       className: _.list,
-      children: y.map(e => (0, r.jsx)("li", {
+      children: v.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(s.wz, {
           commandId: e.id,
           commandName: e.displayName,

@@ -83,7 +83,7 @@ var m = 0,
       c = n[1];
     return (0, i.useEffect)(function() {
       if (c) {
-        var e = y();
+        var e = v();
         return ++m,
           function() {
             0 == --m && (e[g] = null)
@@ -99,11 +99,11 @@ var m = 0,
 function b(e) {
   return "manager" in e ? [{
     dragDropManager: e.manager
-  }, !1] : [v(e.backend, e.context, e.options, e.debugMode), !e.context]
+  }, !1] : [y(e.backend, e.context, e.options, e.debugMode), !e.context]
 }
 
-function v(e) {
-  var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : y(),
+function y(e) {
+  var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v(),
     n = arguments.length > 2 ? arguments[2] : void 0,
     r = arguments.length > 3 ? arguments[3] : void 0,
     i = t;
@@ -112,6 +112,6 @@ function v(e) {
   }), i[g]
 }
 
-function y() {
+function v() {
   return void 0 !== n.g ? n.g : window
 }

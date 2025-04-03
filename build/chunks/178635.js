@@ -105,17 +105,17 @@ let m = 200,
 function b(e) {
   var t, n;
   if (__OVERLAY__) return !1;
-  let r = null !== (t = u.Z.getFeedbackConfig(e)) && void 0 !== t ? t : E[e],
-    i = [O, y, v],
-    o = null !== (n = r.eligibilityChecks) && void 0 !== n ? n : [];
+  let r = null != (t = u.Z.getFeedbackConfig(e)) ? t : E[e],
+    i = [O, v, y],
+    o = null != (n = r.eligibilityChecks) ? n : [];
   return i.every(e => e(r)) && o.every(e => e(r))
 }
 
-function v(e) {
+function y(e) {
   return l.Z.hasHotspot(e.hotspot)
 }
 
-function y(e) {
+function v(e) {
   return Math.random() < e.chance
 }
 

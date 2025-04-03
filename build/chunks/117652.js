@@ -21,8 +21,8 @@ var i = n(442837),
   g = n(251660),
   E = n(594174),
   b = n(855775),
-  v = n(626135),
-  y = n(937615),
+  y = n(626135),
+  v = n(937615),
   O = n(987209),
   I = n(563132),
   S = n(409813),
@@ -30,8 +30,8 @@ var i = n(442837),
   N = n(981631),
   A = n(474936),
   C = n(388032),
-  R = n(214650),
-  P = n(570148);
+  R = n(997433),
+  P = n(651427);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -116,12 +116,12 @@ function M(e) {
     j(!0), null != m && S(), await (0, c.B1)(e.id, t) || S(C.NW.string(C.t["4kgVqa"])), j(!1)
   };
   (0, a.ZP)(() => {
-    null != U && null != D && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != U && null != D && (y.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
     }), z(D, U))
   });
   let q = e => {
-      v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      y.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != D && z(D, e), G(e)
     },
@@ -130,10 +130,10 @@ function M(e) {
         n = null;
       if (null != t) {
         var i;
-        n = null != F && null !== (i = t[F]) && void 0 !== i ? i : t[b.c]
+        n = null != F && null != (i = t[F]) ? i : t[b.c]
       }
       if (null == n) return;
-      let o = (0, y.T4)(n.amount, n.currency);
+      let o = (0, v.T4)(n.amount, n.currency);
       return (0, r.jsx)(u.Z, {
         skuId: e,
         price: o,
@@ -178,7 +178,7 @@ function M(e) {
           optionsContainerClassName: P.adjustedGiftBoxOptionContainer
         }), X()]
       });
-      let e = null != B ? (0, y.T4)(B.amount, B.currency) : void 0;
+      let e = null != B ? (0, v.T4)(B.amount, B.currency) : void 0;
       return (0, r.jsxs)("div", {
         className: R.bodyColumnRight,
         children: [(0, r.jsx)(d.Z, {

@@ -7,7 +7,7 @@ n.d(t, {
   _: () => S,
   bp: () => R,
   ef: () => O,
-  s6: () => y,
+  s6: () => v,
   sh: () => D
 }), n(653041), n(47120);
 var r = n(434179),
@@ -48,14 +48,14 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n, r;
   d.default.track(m.rMx.REMOTE_COMMAND_SENT, {
     command_type: e,
-    remote_platform: null === (r = u.Z.getSessionById(t)) || void 0 === r ? void 0 : null === (n = r.clientInfo) || void 0 === n ? void 0 : n.os
+    remote_platform: null == (r = u.Z.getSessionById(t)) || null == (n = r.clientInfo) ? void 0 : n.os
   })
 }
-async function y() {
+async function v() {
   let e = p.Z.getAwaitingRemoteSessionInfo(),
     t = null == e ? void 0 : e.nonce;
   a.Z.dispatch({
@@ -93,7 +93,7 @@ function I(e, t) {
       self_mute: n,
       self_deaf: r
     }
-  }), v("VOICE_STATE_UPDATE", e)
+  }), y("VOICE_STATE_UPDATE", e)
 }
 
 function S(e) {
@@ -103,7 +103,7 @@ function S(e) {
     payload: {
       type: "DISCONNECT"
     }
-  }), v("DISCONNECT", e), y()
+  }), y("DISCONNECT", e), v()
 }
 
 function T(e, t, n, r) {
@@ -116,7 +116,7 @@ function T(e, t, n, r) {
       context: i,
       id: t
     }, r)
-  }), v("AUDIO_SETTINGS_UPDATE", e))
+  }), y("AUDIO_SETTINGS_UPDATE", e))
 }
 async function N() {
   let e;
@@ -239,7 +239,7 @@ async function w(e, t, n) {
   })
 }
 async function D(e, t, n) {
-  await _.Z.maybeShowPTTAlert(e), await y();
+  await _.Z.maybeShowPTTAlert(e), await v();
   let r = await N();
   await P(e, t, n, r), (0, h.Z)(n.id, e)
 }

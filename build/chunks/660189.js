@@ -87,7 +87,7 @@ function b(e, t) {
   }
 }
 
-function v(e) {
+function y(e) {
   if (e.message.id !== e.message.channel_id) return !1;
   let t = p[c.default.castMessageIdAsChannelId(e.message.id)];
   if (null == t || null == t.firstMessage) return !1;
@@ -96,7 +96,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   if (e.id !== c.default.castChannelIdAsMessageId(e.channelId)) return !1;
   p[e.channelId] = {
     loaded: !0,
@@ -182,7 +182,7 @@ class C extends(r = i.ZP.Store) {
   }
   isLoading(e) {
     var t;
-    return (null === (t = p[e]) || void 0 === t ? void 0 : t.loaded) !== !0
+    return (null == (t = p[e]) ? void 0 : t.loaded) !== !0
   }
   getMessage(e) {
     return e in p || (p[e] = {
@@ -195,8 +195,8 @@ u(C, "displayName", "ForumPostMessagesStore");
 let R = new C(o.Z, {
   CONNECTION_OPEN: h,
   MESSAGE_CREATE: E,
-  MESSAGE_UPDATE: v,
-  MESSAGE_DELETE: y,
+  MESSAGE_UPDATE: y,
+  MESSAGE_DELETE: v,
   THREAD_CREATE: O,
   MESSAGE_REACTION_ADD: I,
   MESSAGE_REACTION_REMOVE: I,

@@ -21,8 +21,8 @@ var i = n(120356),
   g = n(976015),
   E = n(594174),
   b = n(626135),
-  v = n(111361),
-  y = n(291175),
+  y = n(111361),
+  v = n(291175),
   O = n(785717),
   I = n(221292),
   S = n(485341),
@@ -33,7 +33,7 @@ var i = n(120356),
   R = n(474936),
   P = n(681642),
   w = n(388032),
-  D = n(778389);
+  D = n(286020);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,7 +84,7 @@ function k(e) {
   } = (0, c.ZP)(l.Z.BADGE), {
     context: U,
     trackUserProfileAction: G
-  } = (0, O.KZ)(), B = E.default.getCurrentUser(), F = (0, v.yd)(null == B ? void 0 : B.premiumType, R.p9.TIER_2), V = (0, T.Of)(null !== (t = null == B ? void 0 : B.id) && void 0 !== t ? t : null), Z = (0, S.Z)(V).some(e => e.id === m.l.ORB_PROFILE_BADGE);
+  } = (0, O.KZ)(), B = E.default.getCurrentUser(), F = (0, y.yd)(null == B ? void 0 : B.premiumType, R.p9.TIER_2), V = (0, T.Of)(null != (t = null == B ? void 0 : B.id) ? t : null), Z = (0, S.Z)(V).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
     className: o()(D.container, i),
     "aria-label": w.NW.string(w.t.VWV0y8),
@@ -92,23 +92,20 @@ function k(e) {
     children: n.map((e, t) => {
       var n;
       let i = e.id === m.l.ORB_PROFILE_BADGE,
-        c = (0, y.fv)(e.id),
+        c = (0, v.fv)(e.id),
         E = null != c || e.id === P.a,
-        v = t => {
+        y = t => {
           if (G({
               action: "PRESS_BADGE"
             }), (0, I.NE)(x({
               badge: e.id,
               analyticsLocations: j
-            }, U)), i) {
-            (0, u.mK)({
-              openInLayer: !1,
-              tab: C.AW.ORBS,
-              analyticsLocations: j,
-              analyticsSource: l.Z.VIRTUAL_CURRENCY_ORB_PROFILE_BADGE
-            });
-            return
-          }
+            }, U)), i) return void(0, u.mK)({
+            openInLayer: !1,
+            tab: C.AW.ORBS,
+            analyticsLocations: j,
+            analyticsSource: l.Z.VIRTUAL_CURRENCY_ORB_PROFILE_BADGE
+          });
           if (E) {
             if (t.preventDefault(), b.default.track(A.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
@@ -157,13 +154,13 @@ function k(e) {
         forceOpen: null != k && k(e.id),
         delay: N.vB,
         children: (0, r.jsx)(a.eee, {
-          onClick: v,
+          onClick: y,
           onMouseEnter: O,
           href: e.link,
           children: (0, r.jsx)("img", {
             alt: " ",
             "aria-hidden": !0,
-            src: null !== (n = e.iconSrc) && void 0 !== n ? n : (0, N.Ej)(e.icon),
+            src: null != (n = e.iconSrc) ? n : (0, N.Ej)(e.icon),
             className: o()(D.badge, d)
           })
         })

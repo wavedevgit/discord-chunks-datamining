@@ -40,14 +40,11 @@ async function g(e, t) {
     rejectWithError: !1
   }).then(n => {
     let r = n.body;
-    if (0 === r.manifests.length) {
-      a.Z.dispatch({
-        type: "APPLICATION_BUILD_NOT_FOUND",
-        applicationId: e,
-        branchId: t
-      });
-      return
-    }
+    if (0 === r.manifests.length) return void a.Z.dispatch({
+      type: "APPLICATION_BUILD_NOT_FOUND",
+      applicationId: e,
+      branchId: t
+    });
     a.Z.dispatch({
       type: "APPLICATION_BUILD_FETCH_SUCCESS",
       applicationId: e,

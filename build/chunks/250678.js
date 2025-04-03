@@ -26,10 +26,9 @@
 })()({
   1: [function(e, t, n) {
     "use strict";
-    var r = (0, e("./adapter_factory.js").adapterFactory)({
+    t.exports = (0, e("./adapter_factory.js").adapterFactory)({
       window: window
-    });
-    t.exports = r
+    })
   }, {
     "./adapter_factory.js": 2
   }],
@@ -568,10 +567,7 @@
 
     function r(e, t) {
       if ((!e.navigator.mediaDevices || !("getDisplayMedia" in e.navigator.mediaDevices)) && e.navigator.mediaDevices) {
-        if ("function" != typeof t) {
-          console.error("shimGetDisplayMedia: getSourceId argument is not a function");
-          return
-        }
+        if ("function" != typeof t) return void console.error("shimGetDisplayMedia: getSourceId argument is not a function");
         e.navigator.mediaDevices.getDisplayMedia = function(n) {
           return t(n).then(function(t) {
             var r = n.video && n.video.width,
@@ -1052,7 +1048,7 @@
     }
 
     function _(e) {
-      e.RTCPeerConnection && !("removeStream" in e.RTCPeerConnection.prototype) && (e.RTCPeerConnection.prototype.removeStream = function(e) {
+      !e.RTCPeerConnection || "removeStream" in e.RTCPeerConnection.prototype || (e.RTCPeerConnection.prototype.removeStream = function(e) {
         var t = this;
         a.deprecated("removeStream", "removeTrack"), this.getSenders().forEach(function(n) {
           n.track && e.getTracks().includes(n.track) && t.removeTrack(n)
@@ -1125,7 +1121,7 @@
     "use strict";
 
     function r(e, t) {
-      (!e.navigator.mediaDevices || !("getDisplayMedia" in e.navigator.mediaDevices)) && e.navigator.mediaDevices && (e.navigator.mediaDevices.getDisplayMedia = function(n) {
+      e.navigator.mediaDevices && "getDisplayMedia" in e.navigator.mediaDevices || e.navigator.mediaDevices && (e.navigator.mediaDevices.getDisplayMedia = function(n) {
         if (!(n && n.video)) {
           var r = new DOMException("getDisplayMedia without video constraints is undefined");
           return r.name = "NotFoundError", r.code = 8, Promise.reject(r)
@@ -1449,7 +1445,7 @@
     }
 
     function d() {
-      ("undefined" == typeof window ? "undefined" : r(window)) === "object" && !o && "undefined" != typeof console && "function" == typeof console.log && console.log.apply(console, arguments)
+      ("undefined" == typeof window ? "undefined" : r(window)) === "object" && (o || "undefined" != typeof console && "function" == typeof console.log && console.log.apply(console, arguments))
     }
 
     function f(e, t) {
@@ -1479,7 +1475,7 @@
     }
 
     function m(e, t, n) {
-      !(!t || n.has(t.id)) && (n.set(t.id, t), Object.keys(t).forEach(function(r) {
+      !t || n.has(t.id) || (n.set(t.id, t), Object.keys(t).forEach(function(r) {
         r.endsWith("Id") ? m(e, e.get(t[r]), n) : r.endsWith("Ids") && t[r].forEach(function(t) {
           m(e, e.get(t), n)
         })
@@ -1525,8 +1521,8 @@
         return 0 === e.indexOf(t)
       })
     }, r.parseCandidate = function(e) {
-      for (var t, n = {
-          foundation: (t = 0 === e.indexOf("a=candidate:") ? e.substring(12).split(" ") : e.substring(10).split(" "))[0],
+      for (var t = 0 === e.indexOf("a=candidate:") ? e.substring(12).split(" ") : e.substring(10).split(" "), n = {
+          foundation: t[0],
           component: parseInt(t[1], 10),
           protocol: t[2].toLowerCase(),
           priority: parseInt(t[3], 10),
@@ -1563,7 +1559,7 @@
         n = {
           payloadType: parseInt(t.shift(), 10)
         };
-      return t = t[0].split("/"), n.name = t[0], n.clockRate = parseInt(t[1], 10), n.channels = 3 === t.length ? parseInt(t[2], 10) : 1, n.numChannels = n.channels, n
+      return n.name = (t = t[0].split("/"))[0], n.clockRate = parseInt(t[1], 10), n.channels = 3 === t.length ? parseInt(t[2], 10) : 1, n.numChannels = n.channels, n
     }, r.writeRtpMap = function(e) {
       var t = e.payloadType;
       void 0 !== e.preferredPayloadType && (t = e.preferredPayloadType);
@@ -1738,7 +1734,7 @@
         ssrc: l
       });
       var u = r.matchPrefix(e, "b=");
-      return u.length && (u = 0 === u[0].indexOf("b=TIAS:") ? parseInt(u[0].substr(7), 10) : 0 === u[0].indexOf("b=AS:") ? 950 * parseInt(u[0].substr(5), 10) - 16e3 : void 0, n.forEach(function(e) {
+      return u.length && (u = 0 === u[0].indexOf("b=TIAS:") ? parseInt(u[0].substr(7), 10) : 0 === u[0].indexOf("b=AS:") ? 1e3 * parseInt(u[0].substr(5), 10) * .95 - 16e3 : void 0, n.forEach(function(e) {
         e.maxBitrate = u
       })), n
     }, r.parseRtcpParameters = function(e) {
@@ -1750,9 +1746,7 @@
         })[0];
       n && (t.cname = n.value, t.ssrc = n.ssrc);
       var i = r.matchPrefix(e, "a=rtcp-rsize");
-      t.reducedSize = i.length > 0, t.compound = 0 === i.length;
-      var o = r.matchPrefix(e, "a=rtcp-mux");
-      return t.mux = o.length > 0, t
+      return t.reducedSize = i.length > 0, t.compound = 0 === i.length, t.mux = r.matchPrefix(e, "a=rtcp-mux").length > 0, t
     }, r.parseMsid = function(e) {
       var t, n = r.matchPrefix(e, "a=msid:");
       if (1 === n.length) return {

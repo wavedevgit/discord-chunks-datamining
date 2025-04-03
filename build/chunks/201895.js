@@ -16,7 +16,9 @@ function c(e) {
     isSubscriptionGated: t,
     needSubscriptionToAccess: n
   } = e;
-  if (t) return n ? l.NW.string(l.t["oj+HOj"]) : l.NW.string(l.t.xI3TQU)
+  if (t)
+    if (n) return l.NW.string(l.t["oj+HOj"]);
+    else return l.NW.string(l.t.xI3TQU)
 }
 
 function u(e) {
@@ -79,9 +81,9 @@ function u(e) {
       channelName: m,
       mentionCount: d
     })],
-    v = c({
+    y = c({
       isSubscriptionGated: p,
       needSubscriptionToAccess: h
     });
-  return null != v && b.push(v), b.join(", ")
+  return null != y && b.push(y), b.join(", ")
 }

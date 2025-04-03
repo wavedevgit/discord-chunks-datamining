@@ -15,7 +15,7 @@ var i = n(658722),
   d = n(430824),
   f = n(981631),
   _ = n(388032),
-  p = n(38995);
+  p = n(72903);
 let h = function(e) {
   let {
     className: t,
@@ -38,12 +38,12 @@ let h = function(e) {
         value: e.id,
         children: ["dot" === i ? (0, r.jsx)(u.FhE, {
           className: p.popoutRoleDot,
-          color: null !== (t = e.colorString) && void 0 !== t ? t : (0, l.Rf)(f.p6O),
+          color: null != (t = e.colorString) ? t : (0, l.Rf)(f.p6O),
           background: !1,
           tooltip: !1
         }) : (0, r.jsx)(u.xko, {
           className: p.popoutRoleCircle,
-          color: null !== (n = e.colorString) && void 0 !== n ? n : (0, l.Rf)(f.p6O)
+          color: null != (n = e.colorString) ? n : (0, l.Rf)(f.p6O)
         }), (0, r.jsx)(u.lo1.Label, {
           children: e.name
         })]

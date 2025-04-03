@@ -38,9 +38,9 @@ function s(e) {
   return l({
     userId: a,
     channelId: o.channel_id,
-    mentionEveryone: null !== (n = o.mention_everyone) && void 0 !== n && n,
-    mentionUsers: null !== (r = null === (t = o.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== r ? r : [],
-    mentionRoles: null !== (i = o.mention_roles) && void 0 !== i ? i : [],
+    mentionEveryone: null != (n = o.mention_everyone) && n,
+    mentionUsers: null != (r = null == (t = o.mentions) ? void 0 : t.map(e => e.id)) ? r : [],
+    mentionRoles: null != (i = o.mention_roles) ? i : [],
     suppressEveryone: s,
     suppressRoles: c
   })

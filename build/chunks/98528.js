@@ -6,8 +6,8 @@ n.d(t, {
   VO: () => b,
   Xs: () => m,
   ep: () => h,
-  t$: () => y,
-  yi: () => v
+  t$: () => v,
+  yi: () => y
 }), n(47120), n(653041);
 var r = n(192379),
   i = n(392711),
@@ -48,13 +48,13 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
     r.useLayoutEffect(() => {
       if ("" === i && "" !== o.current) {
         var e;
-        null === (e = n.current) || void 0 === e || e.scrollToSectionTop(t)
+        null == (e = n.current) || e.scrollToSectionTop(t)
       }
       o.current = i
     }, [i, t, n]), r.useLayoutEffect(() => {
       if (a.current) {
         var e;
-        null === (e = n.current) || void 0 === e || e.scrollToSectionTop(t), a.current = !1
+        null == (e = n.current) || e.scrollToSectionTop(t), a.current = !1
       }
     }, [t, n]), r.useEffect(() => {
       o.current = i
@@ -122,7 +122,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
     }, 250), [i]), _ = r.useMemo(() => o().debounce(e => {
       "" !== a && c || (window.cancelAnimationFrame(u.current), u.current = window.requestAnimationFrame(() => {
         var r;
-        let i = null === (r = n.current) || void 0 === r ? void 0 : r.getSectionDescriptors();
+        let i = null == (r = n.current) ? void 0 : r.getSectionDescriptors();
         if (null == i) return;
         let o = i.findIndex((t, n) => {
             let r = i[n + 1],
@@ -193,7 +193,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       useVirtualFocus: !0
     }), {
       gridContainerProps: b,
-      handleGridContainerKeyDown: v
+      handleGridContainerKeyDown: y
     } = r.useMemo(() => {
       let e = E();
       return {
@@ -211,12 +211,12 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       getItemProps: m,
       getRowProps: g,
       gridContainerProps: b,
-      handleGridContainerKeyDown: v,
+      handleGridContainerKeyDown: y,
       isUsingKeyboardNavigation: u
     }
   };
 
-function v(e) {
+function y(e) {
   let {
     categories: t,
     collapsedCategories: n,
@@ -257,7 +257,7 @@ function v(e) {
       for (let e of t)
         if (e.items.length > 0) {
           var p;
-          r(e.items, e.categoryInfo.type, null !== (p = null == n ? void 0 : n.has("".concat(e.key))) && void 0 !== p && p)
+          r(e.items, e.categoryInfo.type, null != (p = null == n ? void 0 : n.has("".concat(e.key))) && p)
         }
     }
     return {
@@ -270,7 +270,7 @@ function v(e) {
   }, [t, n, i, s, a, o])
 }
 
-function y(e) {
+function v(e) {
   let {
     columnCounts: t,
     expressionsGrid: n,

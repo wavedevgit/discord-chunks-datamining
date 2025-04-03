@@ -14,7 +14,7 @@ var i = n(481060),
   u = n(146078),
   d = n(228168),
   f = n(182294),
-  _ = n(288976);
+  _ = n(68646);
 let p = 3;
 
 function h(e) {
@@ -26,7 +26,7 @@ function h(e) {
     mutualGuilds: m
   } = (0, l.Z)(t), g = null != h && h.length > 0, E = null != m && m.length > 0, b = g && E ? "text-xs/normal" : "text-sm/normal";
   if (!g && !E) return null;
-  let v = () => g ? (0, r.jsxs)(i.P3F, {
+  let y = () => g ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_FRIENDS),
       children: [(0, r.jsx)(o.Z, {
@@ -47,7 +47,7 @@ function h(e) {
         children: (0, c.Z)(h.length)
       })]
     }) : null,
-    y = () => g && E ? (0, r.jsx)("div", {
+    v = () => g && E ? (0, r.jsx)("div", {
       "aria-hidden": "true",
       className: _.spacer
     }) : null,
@@ -74,6 +74,6 @@ function h(e) {
     }) : null;
   return (0, r.jsxs)("div", {
     className: _.mutuals,
-    children: [v(), y(), O()]
+    children: [y(), v(), O()]
   })
 }

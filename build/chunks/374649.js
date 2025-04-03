@@ -156,7 +156,7 @@ async function b(e) {
     throw new s.HF(e)
   }
 }
-async function v(e) {
+async function y(e) {
   let {
     paymentSourceId: t,
     skuId: n,
@@ -184,7 +184,7 @@ async function v(e) {
     throw new s.HF(e)
   }
 }
-async function y(e) {
+async function v(e) {
   let {
     subscriptionId: t,
     preventFetch: n
@@ -225,7 +225,7 @@ function I(e) {
     t.current = e
   });
   let n = JSON.stringify(e);
-  return O(e, (0, r.useCallback)(() => v(t.current), [n]))
+  return O(e, (0, r.useCallback)(() => y(t.current), [n]))
 }
 
 function S(e) {
@@ -255,7 +255,7 @@ function T(e) {
     t.current = e
   });
   let n = JSON.stringify(e);
-  return O(e, (0, r.useCallback)(() => y(t.current), [n]))
+  return O(e, (0, r.useCallback)(() => v(t.current), [n]))
 }
 
 function N(e) {

@@ -11,11 +11,11 @@ n.d(t, {
   d$: () => E,
   eE: () => S,
   ic: () => g,
-  pX: () => y,
+  pX: () => v,
   sq: () => _,
   uu: () => A,
   wk: () => N,
-  zd: () => v
+  zd: () => y
 });
 var r = n(367907),
   i = n(427679),
@@ -118,7 +118,7 @@ function E(e, t) {
   C(s.b.GUILD_SCHEDULED_EVENT, {
     guild_scheduled_event_id: e.id,
     guild_id: e.guild_id,
-    channel_id: null !== (n = e.channel_id) && void 0 !== n ? n : void 0
+    channel_id: null != (n = e.channel_id) ? n : void 0
   }), (0, c.m)({
     name: s.b.GUILD_SCHEDULED_EVENT,
     record: e
@@ -139,7 +139,7 @@ function b(e, t) {
     isEligibleForFeedback: !1
   })
 }
-async function v(e, t) {
+async function y(e, t) {
   try {
     await (0, l.ox)({
       name: s.b.FIRST_DM,
@@ -150,7 +150,7 @@ async function v(e, t) {
   } catch (e) {}
 }
 
-function y(e, t, n, r) {
+function v(e, t, n, r) {
   C(s.b.USER, {
     reported_user_id: e.id
   }), (0, c.m)({

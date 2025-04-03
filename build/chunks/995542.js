@@ -16,17 +16,16 @@ var r = n(56135),
   g = "[object Set]",
   E = "[object String]",
   b = "[object Symbol]",
-  v = "[object ArrayBuffer]",
-  y = "[object DataView]",
+  y = "[object ArrayBuffer]",
+  v = "[object DataView]",
   O = r ? r.prototype : void 0,
   I = O ? O.valueOf : void 0;
-
-function S(e, t, n, r, O, S, T) {
+e.exports = function(e, t, n, r, O, S, T) {
   switch (n) {
-    case y:
+    case v:
       if (e.byteLength != t.byteLength || e.byteOffset != t.byteOffset) break;
       e = e.buffer, t = t.buffer;
-    case v:
+    case y:
       if (e.byteLength != t.byteLength || !S(new i(e), new i(t))) break;
       return !0;
     case d:
@@ -53,4 +52,3 @@ function S(e, t, n, r, O, S, T) {
   }
   return !1
 }
-e.exports = S

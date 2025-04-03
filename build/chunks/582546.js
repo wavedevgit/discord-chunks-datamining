@@ -27,10 +27,10 @@ function h(e) {
     onClose: E
   } = e, b = (0, i.e7)([d.default], () => {
     var e;
-    return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === n.id
-  }), v = (0, i.e7)([u.Z], () => u.Z.hasConnectedAccount());
+    return (null == (e = d.default.getCurrentUser()) ? void 0 : e.id) === n.id
+  }), y = (0, i.e7)([u.Z], () => u.Z.hasConnectedAccount());
   if ("recent" !== m || !(0, c.AZ)(h)) return null;
-  if (!v) return (0, r.jsx)(o.sNh, {
+  if (!y) return (0, r.jsx)(o.sNh, {
     id: "connect-spotify",
     label: p.NW.formatToPlainString(p.t.XWSHTU, {
       platform: _.ai
@@ -42,14 +42,14 @@ function h(e) {
     }
   });
   if (b) return null;
-  let y = (0, s.dU)(h) ? null === (t = h.extra.entries[0]) || void 0 === t ? void 0 : t.media : h.extra.media;
-  return null == y ? null : (0, r.jsx)(o.sNh, {
+  let v = (0, s.dU)(h) ? null == (t = h.extra.entries[0]) ? void 0 : t.media : h.extra.media;
+  return null == v ? null : (0, r.jsx)(o.sNh, {
     id: "play-on-spotify",
     label: p.NW.string(p.t.rRffNz),
     action: () => {
       null == g || g({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
-      }), (0, l.o)(_.Hw.TRACK, y.external_id)
+      }), (0, l.o)(_.Hw.TRACK, v.external_id)
     }
   })
 }

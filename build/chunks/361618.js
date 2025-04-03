@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = ["struct", "enum", "interface", "union", "group", "import", "using", "const", "annotation", "extends", "in", "of", "on", "as", "with", "from", "fixed"],
     n = ["Void", "Bool", "Int8", "Int16", "Int32", "Int64", "UInt8", "UInt16", "UInt32", "UInt64", "Float32", "Float64", "Text", "Data", "AnyPointer", "AnyStruct", "Capability", "List"],
     r = ["true", "false"],
@@ -32,4 +32,3 @@ function t(e) {
     }, i]
   }
 }
-e.exports = t

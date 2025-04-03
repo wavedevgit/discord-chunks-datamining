@@ -32,7 +32,7 @@ function d(e, t) {
     let n = new FileReader;
     n.onload = n => {
       var r;
-      "string" == typeof(null === (r = n.target) || void 0 === r ? void 0 : r.result) && t(n.target.result, e)
+      "string" == typeof(null == (r = n.target) ? void 0 : r.result) && t(n.target.result, e)
     }, n.readAsDataURL(e)
   }
 }
@@ -54,7 +54,7 @@ class _ extends(r = o.PureComponent) {
   }
   activateUploadDialogue() {
     var e;
-    null === (e = this._ref.current) || void 0 === e || e.activateUploadDialogue()
+    null == (e = this._ref.current) || e.activateUploadDialogue()
   }
   render() {
     let {

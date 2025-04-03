@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var i = n(780384),
   u = n(197115),
   d = n(474936),
   f = n(388032),
-  _ = n(393616);
+  _ = n(534641);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,19 +74,19 @@ let E = e => {
   b = (e, t, n, r) => t || n ? f.NW.string(f.t.fkPGam) : e === d.Si.TIER_2 ? f.NW.formatToPlainString(f.t.bkQ4bG, {
     percent: r
   }) : void 0,
-  v = e => {
+  y = e => {
     var {
       forceInverted: t,
       subscriptionTier: n,
       hasActivePromotion: p = !1,
       isPersistentCTA: g = !1,
-      useShorterCTA: v = !1,
-      showGradient: y,
+      useShorterCTA: y = !1,
+      showGradient: v,
       confirmationFooter: O,
       paymentModalBanner: I
     } = e, S = m(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner"]);
     let T = (0, a.ZP)(),
-      N = !y && ((0, i.wj)(T) || t),
+      N = !v && ((0, i.wj)(T) || t),
       A = (0, c.N)(),
       C = null == A ? void 0 : A.subscription_trial,
       R = (0, s.a5)({
@@ -96,7 +96,7 @@ let E = e => {
       P = (0, l.Ng)(),
       w = null != C && n === C.sku_id,
       D = (null == A ? void 0 : A.trial_id) === d.a7,
-      L = p ? f.NW.string(f.t.J61px8) : null != P ? b(n, v, g, P.discount.amount) : E({
+      L = p ? f.NW.string(f.t.J61px8) : null != P ? b(n, y, g, P.discount.amount) : E({
         showTrialCTA: w,
         subscriptionTier: n,
         trialDurationCopy: R,
@@ -111,7 +111,7 @@ let E = e => {
       buttonTextClassName: w ? _.freeTrialText : void 0,
       onlyShineOnHover: !0,
       subscriptionTier: n,
-      showGradient: y,
+      showGradient: v,
       confirmationFooter: O,
       paymentModalBanner: I
     }, S))

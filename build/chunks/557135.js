@@ -30,7 +30,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function y(e) {
+function v(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = e.getGuildId();
   if (null == n && !t) throw Error("VoiceChannel, transitionTo: Channel does not have a guildId");
@@ -72,7 +72,7 @@ let O = {
         let {
           default: i
         } = await n.e("65045").then(n.bind(n, 143782));
-        return n => (0, r.jsx)(i, v({
+        return n => (0, r.jsx)(i, y({
           channel: t,
           onConfirm: () => e(this.handleVoiceConnect({
             channel: t,
@@ -84,11 +84,11 @@ let O = {
           }))
         }, n))
       })
-    }) : (O || s || o.default.selectVoiceChannel(t.id), !__OVERLAY__ && (s || R || b || I) && y(t, N), !0) : new Promise(e => {
+    }) : (O || s || o.default.selectVoiceChannel(t.id), !__OVERLAY__ && (s || R || b || I) && v(t, N), !0) : new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("25176"), n.e("9003")]).then(n.bind(n, 404339));
+        } = await Promise.all([n.e("25176"), n.e("64209")]).then(n.bind(n, 404339));
         return n => {
           let {
             onClose: o,

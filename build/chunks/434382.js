@@ -28,23 +28,23 @@ let p = r.v.LEAGUE_OF_LEGENDS_WEEKLY,
   g = 9e5,
   E = new Map,
   b = new Set,
-  v = new Map;
+  y = new Map;
 
-function y(e, t) {
+function v(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
 function O(e, t) {
   var n;
-  let r = y(e, t);
-  if (b.has(r) || (null !== (n = v.get(r)) && void 0 !== n ? n : 0) > h) return !1;
+  let r = v(e, t);
+  if (b.has(r) || (null != (n = y.get(r)) ? n : 0) > h) return !1;
   if (l.Z.getGuildId() !== e) return;
   if (!(0, f.NM)({
       guildId: e,
       location: "GuildLeaderboardManager"
     }) || !c.Z.isFocused() || !a.Z.isConnected()) return !1;
   let i = s.Z.getIdleSince();
-  return !(null != i && Date.now() - i > g)
+  return !(null != i && Date.now() - i > g) && !0
 }
 
 function I() {
@@ -60,8 +60,8 @@ function S() {
     r = setTimeout(() => T({
       guildId: t,
       leaderboardId: p
-    }), Math.max(0, (null !== (e = null == n ? void 0 : n.expires_at) && void 0 !== e ? e : Date.now()) - Date.now())),
-    i = y(t, p);
+    }), Math.max(0, (null != (e = null == n ? void 0 : n.expires_at) ? e : Date.now()) - Date.now())),
+    i = v(t, p);
   E.set(i, r)
 }
 async function T(e) {
@@ -71,7 +71,7 @@ async function T(e) {
     force: r = !1
   } = e;
   if (!(O(t, n) || r)) return;
-  let o = y(t, n);
+  let o = v(t, n);
   if (!b.has(o)) try {
     b.add(o);
     let e = await (0, u.pV)({
@@ -98,11 +98,11 @@ async function T(e) {
       type: "SET_GUILD_LEADERBOARD",
       leaderboardResponse: e,
       intervalOffset: 0
-    }), v.delete(o), b.delete(o), S()
+    }), y.delete(o), b.delete(o), S()
   } catch (i) {
     var a;
-    let e = (null !== (a = v.get(o)) && void 0 !== a ? a : 0) + 1;
-    if (v.set(o, e), !O(t, n)) return;
+    let e = (null != (a = y.get(o)) ? a : 0) + 1;
+    if (y.set(o, e), !O(t, n)) return;
     let r = 1e3 * Math.pow(m, e);
     E.set(o, setTimeout(() => T({
       guildId: t,
@@ -117,7 +117,7 @@ function N() {
 }
 
 function A() {
-  I(), E = new Map, b = new Set, v = new Map, N()
+  I(), E = new Map, b = new Set, y = new Map, N()
 }
 class C extends o.Z {
   fetchLeaderboard(e) {

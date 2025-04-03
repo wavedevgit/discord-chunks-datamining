@@ -428,7 +428,7 @@ let s = {
     disableAutoFocus: !0,
     showCharacterCount: !0
   },
-  v = {
+  y = {
     analyticsName: "custom_gift_type",
     drafts: {
       type: i.d.ChannelMessage
@@ -444,7 +444,7 @@ let s = {
     disableAutoFocus: !0,
     showCharacterCount: !0
   },
-  y = {
+  v = {
     analyticsName: "rules_input",
     drafts: {
       type: i.d.ChannelMessage
@@ -491,8 +491,8 @@ let s = {
     USER_PROFILE: m,
     USER_PROFILE_REPLY: E,
     PROFILE_BIO_INPUT: b,
-    CUSTOM_GIFT: v,
-    RULES_INPUT: y,
+    CUSTOM_GIFT: y,
+    RULES_INPUT: v,
     CREATE_FORUM_POST: p,
     CREATE_POLL: h,
     FORUM_CHANNEL_GUIDELINES: O,

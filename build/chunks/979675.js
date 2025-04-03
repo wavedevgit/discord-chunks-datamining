@@ -10,7 +10,7 @@ let r = (e, t) => function(n, r, i) {
       type: t,
       event: n,
       properties: r,
-      flush: null !== (a = null == i ? void 0 : i.flush) && void 0 !== a && a,
+      flush: null != (a = null == i ? void 0 : i.flush) && a,
       fingerprint: null == i ? void 0 : i.fingerprint,
       resolve: o
     })

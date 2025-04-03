@@ -50,7 +50,7 @@ function s(e) {
 let l = () => Object.keys(a).filter(e => isNaN(Number(e))).map(e => {
     var t;
     return {
-      label: null !== (t = s(a[e])) && void 0 !== t ? t : "",
+      label: null != (t = s(a[e])) ? t : "",
       value: a[e]
     }
   }),

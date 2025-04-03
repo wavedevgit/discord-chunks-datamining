@@ -41,8 +41,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = 5e3,
-  y = "UserSettingsProtoLastWriteTimes",
+let y = 5e3,
+  v = "UserSettingsProtoLastWriteTimes",
   O = Date.now();
 
 function I() {}
@@ -105,7 +105,7 @@ class S {
       partial: !0,
       local: !0
     });
-    let a = null !== (n = t.delaySeconds) && void 0 !== n ? n : 0;
+    let a = null != (n = t.delaySeconds) ? n : 0;
     if (null != o.timeout && a < r.timeoutDelay && !r.rateLimited && (clearTimeout(o.timeout), o.timeout = void 0), null == o.timeout) {
       let e = a * f.Z.Millis.SECOND;
       t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * f.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), o.timeout = setTimeout(this.persistChanges, e), o.timeoutDelay = a
@@ -123,20 +123,17 @@ class S {
   }
   saveLastSendTime() {
     var e;
-    let t = null !== (e = u.K.get(y)) && void 0 !== e ? e : {};
-    t[this.type] = Date.now(), u.K.set(y, t)
+    let t = null != (e = u.K.get(v)) ? e : {};
+    t[this.type] = Date.now(), u.K.set(v, t)
   }
   loadIfUncached(e, t) {
     h.Z.hasLoaded(e) && !0 !== t || this.loadIfNecessary(t)
   }
   async loadIfNecessary(e) {
-    if (__OVERLAY__) {
-      d.Z.dispatch({
-        type: "USER_SETTINGS_PROTO_LOAD_IF_NECESSARY",
-        settingsType: this.type
-      });
-      return
-    }
+    if (__OVERLAY__) return void d.Z.dispatch({
+      type: "USER_SETTINGS_PROTO_LOAD_IF_NECESSARY",
+      settingsType: this.type
+    });
     let {
       editInfo: t
     } = this.getEditInfo();
@@ -153,13 +150,10 @@ class S {
           url: E.ANM.USER_SETTINGS_PROTO(this.type),
           rejectWithError: !1
         }), n = (0, m.d5)(this.ProtoClass, t);
-        if (null == n) {
-          this.dispatchChanges({
-            loading: !1,
-            loaded: !0
-          });
-          return
-        }
+        if (null == n) return void this.dispatchChanges({
+          loading: !1,
+          loaded: !0
+        });
         let r = p.Z[this.type],
           {
             proto: i,
@@ -208,7 +202,7 @@ class S {
       editInfo: e
     } = this.getEditInfo();
     i()(null != e.protoToSave, "protoToSave cannot be null"), i()(null != e.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == e.timeout, "timeout must not be set already");
-    let t = v + Math.floor(Math.random() * v),
+    let t = y + Math.floor(Math.random() * y),
       n = setTimeout(this.persistChanges, t);
     this.dispatchChanges({
       timeout: n,
@@ -221,10 +215,7 @@ class S {
       let {
         editInfo: e
       } = this.getEditInfo();
-      if (null == e.protoToSave) {
-        this.logger.log("Not persisting proto because the proto was null");
-        return
-      }
+      if (null == e.protoToSave) return void this.logger.log("Not persisting proto because the proto was null");
       this.beforeSendCallbacks.forEach(t => {
         let {
           processProto: n
@@ -232,10 +223,7 @@ class S {
         return n(e.protoToSave)
       });
       let t = (0, m.xU)(this.ProtoClass, e.protoToSave);
-      if (null == t || "" === t) {
-        this.logger.log("Not persisting proto because there is nothing to change");
-        return
-      }
+      if (null == t || "" === t) return void this.logger.log("Not persisting proto because there is nothing to change");
       try {
         this.saveLastSendTime();
         let {
@@ -272,7 +260,7 @@ class S {
             rateLimited: !0,
             timeout: n
           })
-        } else if (400 === e.status && (null === (n = e.body) || void 0 === n ? void 0 : n.code) === E.evJ.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
+        } else if (400 === e.status && (null == (n = e.body) ? void 0 : n.code) === E.evJ.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
         else throw this.logger.log("Unknown user settings error"), e
       }
     }, this.logger = new o.Yd(this.ProtoClass.typeName)

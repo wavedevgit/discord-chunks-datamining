@@ -18,15 +18,13 @@ var t = "\ud800-\udfff",
   g = "(?:" + a + "(?:d|ll|m|re|s|t|ve))?",
   E = "(?:" + a + "(?:D|LL|M|RE|S|T|VE))?",
   b = "(?:[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]|\ud83c[\udffb-\udfff])?",
-  v = "[\\ufe0e\\ufe0f]?",
-  y = "(?:\\u200d(?:" + ["[^" + t + "]", f, _].join("|") + ")" + v + b + ")*",
+  y = "[\\ufe0e\\ufe0f]?",
+  v = "(?:\\u200d(?:" + ["[^" + t + "]", f, _].join("|") + ")" + y + b + ")*",
   O = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
   I = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
-  S = v + b + y,
+  S = y + b + v,
   T = "(?:" + [c, f, _].join("|") + ")" + S,
   N = RegExp([p + "?" + u + "+" + g + "(?=" + [s, p, "$"].join("|") + ")", m + "+" + E + "(?=" + [s, p + h, "$"].join("|") + ")", p + "?" + h + "+" + g, p + "+" + E, I, O, l, T].join("|"), "g");
-
-function A(e) {
+e.exports = function(e) {
   return e.match(N) || []
 }
-e.exports = A

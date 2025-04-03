@@ -29,8 +29,8 @@ var r = n(192379),
   g = n(926491),
   E = n(373228),
   b = n(378233),
-  v = n(981631),
-  y = n(388032);
+  y = n(981631),
+  v = n(388032);
 let O = e => {
     N();
     let t = (0, i.e7)([g.Z], () => g.Z.hasLoadedStickerPacks);
@@ -60,7 +60,7 @@ let O = e => {
         h = [],
         m = 0,
         g = 0,
-        v = 0;
+        y = 0;
       if (0 !== a) {
         let r = function(t, n) {
           let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -85,18 +85,18 @@ let O = e => {
                 gridSectionIndex: g,
                 rowIndex: m,
                 columnIndex: t,
-                visibleRowIndex: v,
+                visibleRowIndex: y,
                 category: n
               }));
             g > O && g > u && null != i && I > t.length && l.push({
               type: E.al.CREATE_STICKER,
               guild_id: i.id,
-              name: y.NW.string(y.t["UwF+Cw"]),
+              name: v.NW.string(v.t["UwF+Cw"]),
               gridSectionIndex: g,
               rowIndex: m,
               columnIndex: l.length,
-              visibleRowIndex: v
-            }), r || (v++, h.push(l), _.push(l.length)), m++
+              visibleRowIndex: y
+            }), r || (y++, h.push(l), _.push(l.length)), m++
           }
           g++
         };
@@ -164,7 +164,7 @@ let O = e => {
           name: t.name,
           stickers: []
         }), null == a || _.BT({
-          permission: v.Plq.USE_EXTERNAL_EMOJIS,
+          permission: y.Plq.USE_EXTERNAL_EMOJIS,
           user: a,
           context: e
         }) || (r = r.filter(t => t.id === e.getGuildId()))
@@ -176,7 +176,7 @@ let O = e => {
 
 function R() {
   var e, t;
-  return null !== (t = null === (e = (0, s.D)().favoriteStickers) || void 0 === e ? void 0 : e.stickerIds) && void 0 !== t ? t : C
+  return null != (t = null == (e = (0, s.D)().favoriteStickers) ? void 0 : e.stickerIds) ? t : C
 }
 
 function P() {
@@ -188,7 +188,7 @@ function w() {
   var e, t;
   let n = (0, s.D)(),
     r = C;
-  return (null == n ? void 0 : null === (e = n.stickerFrecency) || void 0 === e ? void 0 : e.stickers) != null && (r = Object.keys(null == n ? void 0 : null === (t = n.stickerFrecency) || void 0 === t ? void 0 : t.stickers)), r
+  return (null == n || null == (e = n.stickerFrecency) ? void 0 : e.stickers) != null && (r = Object.keys(null == n || null == (t = n.stickerFrecency) ? void 0 : t.stickers)), r
 }
 
 function D() {
@@ -212,19 +212,19 @@ let L = e => {
       return [{
         type: E.Ih.FAVORITE,
         id: E.Ih.FAVORITE,
-        name: y.NW.string(y.t.y3LQCA),
+        name: v.NW.string(v.t.y3LQCA),
         stickers: t
       }, {
         type: E.Ih.RECENT,
         id: E.Ih.RECENT,
-        name: y.NW.string(y.t["6hjpXV"]),
-        stickers: null !== (r = null == o ? void 0 : o.filter(t => {
+        name: v.NW.string(v.t["6hjpXV"]),
+        stickers: null != (r = null == o ? void 0 : o.filter(t => {
           if ((0, b.J8)(t)) {
             var r, i;
-            return null !== (i = null === (r = g.Z.getStickersByGuildId(t.guild_id)) || void 0 === r ? void 0 : r.some(e => e.id === t.id)) && void 0 !== i && i && (0, p.cO)(t, a, e) !== p.eb.NONSENDABLE
+            return null != (i = null == (r = g.Z.getStickersByGuildId(t.guild_id)) ? void 0 : r.some(e => e.id === t.id)) && i && (0, p.cO)(t, a, e) !== p.eb.NONSENDABLE
           }
           if ((0, b.jl)(t)) return n.some(e => e.id === t.pack_id)
-        })) && void 0 !== r ? r : []
+        })) ? r : []
       }, ...s, ...i]
     }, [n, t, o, s, a, e])
   },

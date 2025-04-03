@@ -4,8 +4,7 @@ var r = n(102074),
   o = n(803607),
   a = 1,
   s = 2;
-
-function l(e, t, n, l, c, u) {
+e.exports = function(e, t, n, l, c, u) {
   var d = n & a,
     f = e.length,
     _ = t.length;
@@ -18,9 +17,9 @@ function l(e, t, n, l, c, u) {
   for (u.set(e, t), u.set(t, e); ++h < f;) {
     var E = e[h],
       b = t[h];
-    if (l) var v = d ? l(b, E, h, t, e, u) : l(E, b, h, e, t, u);
-    if (void 0 !== v) {
-      if (v) continue;
+    if (l) var y = d ? l(b, E, h, t, e, u) : l(E, b, h, e, t, u);
+    if (void 0 !== y) {
+      if (y) continue;
       m = !1;
       break
     }
@@ -38,4 +37,3 @@ function l(e, t, n, l, c, u) {
   }
   return u.delete(e), u.delete(t), m
 }
-e.exports = l

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -19,22 +19,22 @@ var i = n(120356),
   h = n(5192),
   m = n(579407),
   g = n(388032),
-  E = n(490076),
+  E = n(538566),
   b = n(460400),
-  v = n(943549);
-let y = e => {
+  y = n(943549);
+let v = e => {
   let {
     user: t,
     nameplate: n,
     nameplateData: i,
-    className: y,
+    className: v,
     isHighlighted: O,
     showStatus: I,
     showWumpus: S,
     isPurchased: T = !1
   } = e, N = (0, a.e7)([_.Z], () => (0, s.wj)(_.Z.theme)), A = null != n ? (0, m.EU)(n) : i, C = (0, a.e7)([p.Z], () => p.Z.getStatus(t.id)), R = N ? "#706F74" : "#aaaab2";
   return (0, r.jsxs)("div", {
-    className: o()(y, E.nameplatePreview, {
+    className: o()(v, E.nameplatePreview, {
       [E.nameplatePurchased]: T && !O
     }),
     style: {
@@ -64,7 +64,7 @@ let y = e => {
         className: o()(E.avatarContainer, S && E.avatarVisible),
         children: (0, r.jsx)(c.Z, {
           avatar: (0, r.jsx)(l.qEK, {
-            src: N ? b : v,
+            src: N ? b : y,
             size: l.EFr.SIZE_32,
             "aria-label": g.NW.string(g.t.cqpybG),
             status: l.Skl.ONLINE,

@@ -20,8 +20,8 @@ var r = n(392711),
   g = n(984933),
   E = n(271383),
   b = n(430824),
-  v = n(496675),
-  y = n(699516),
+  y = n(496675),
+  v = n(699516),
   O = n(246946),
   I = n(594174),
   S = n(483360),
@@ -222,7 +222,7 @@ let U = u.Z.RULES,
           var s;
           return {
             type: "customEmoticon",
-            content: "<".concat(!0 === a.animated ? "a" : "", ":").concat(null !== (s = a.originalName) && void 0 !== s ? s : a.name, ":").concat(a.id, ">"),
+            content: "<".concat(!0 === a.animated ? "a" : "", ":").concat(null != (s = a.originalName) ? s : a.name, ":").concat(a.id, ">"),
             emoji: a
           }
         }
@@ -235,7 +235,7 @@ let U = u.Z.RULES,
     customEmoticons: {
       match(e, t) {
         var n, r;
-        return null !== (r = null === (n = t.customEmoticonsRegex) || void 0 === n ? void 0 : n.exec(e)) && void 0 !== r ? r : null
+        return null != (r = null == (n = t.customEmoticonsRegex) ? void 0 : n.exec(e)) ? r : null
       },
       parse(e, t, n) {
         let [r, i] = e, {
@@ -303,7 +303,7 @@ let U = u.Z.RULES,
       parse(e) {
         let t = m.Z.getChannel(e[1]);
         return {
-          content: null == t ? e[0] : (0, s.F6)(t, I.default, y.Z, !0, !0)
+          content: null == t ? e[0] : (0, s.F6)(t, I.default, v.Z, !0, !0)
         }
       }
     },
@@ -362,8 +362,7 @@ let K = a().parserFor(W),
 
 function q(e, t, n) {
   if (null != n && ("customEmoticon" === t.type && n(t.emoji, !1), "emoticon" === t.type || "text" === t.type)) {
-    let r;
-    let i = c.ZP.translateSurrogatesToInlineEmoji(t.content);
+    let r, i = c.ZP.translateSurrogatesToInlineEmoji(t.content);
     for (; null !== (r = z.exec(i));) {
       let i;
       null != r[1] && "" !== r[1] ? e.emojiContext && (i = e.emojiContext.getById(r[1])) : i = c.ZP.getByName(r[2]), i && n(i, t.isShortcut || !1)
@@ -394,10 +393,9 @@ function X(e, t, n) {
 }
 
 function J(e) {
-  let t;
-  let n = null == e ? void 0 : e.getGuildId(),
+  let t, n = null == e ? void 0 : e.getGuildId(),
     r = null != n ? b.Z.getGuild(n) : null,
-    o = v.Z.can(A.Plq.MENTION_EVERYONE, e);
+    o = y.Z.can(A.Plq.MENTION_EVERYONE, e);
   t = (null == e ? void 0 : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null

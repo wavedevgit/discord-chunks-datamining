@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(554300),
   E = n(558602),
   b = n(736144),
-  v = n(113434),
-  y = n(553393),
+  y = n(113434),
+  v = n(553393),
   O = n(518950),
   I = n(594174),
   S = n(709586),
@@ -32,7 +32,7 @@ var r = n(200651),
   C = n(674563),
   R = n(524484),
   P = n(388032),
-  w = n(133979);
+  w = n(938159);
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -112,17 +112,17 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       id: ec,
       tabIndex: eu,
       itemProps: ed
-    } = e, ef = null == G ? void 0 : G.id, e_ = N.ZP.useName(G), ep = (null === (t = I.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === ef, eh = i.useRef(null), [em, eg] = i.useState(!1), [eE, eb] = i.useState(null), {
-      voiceChannel: ev
+    } = e, ef = null == G ? void 0 : G.id, e_ = N.ZP.useName(G), ep = (null == (t = I.default.getCurrentUser()) ? void 0 : t.id) === ef, eh = i.useRef(null), [em, eg] = i.useState(!1), [eE, eb] = i.useState(null), {
+      voiceChannel: ey
     } = (0, f.Z)({
       userId: ef,
       guildId: z,
       surface: "member-list-item"
     }), {
-      voiceActivityStatusEnabled: ey
+      voiceActivityStatusEnabled: ev
     } = (0, u.U)({
       location: "MemberListItem"
-    }), eO = ey ? ev : void 0, {
+    }), eO = ev ? ey : void 0, {
       avatarDecorationSrc: eI,
       avatarSrc: eS,
       eventHandlers: eT
@@ -135,7 +135,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
     i.useEffect(() => {
       n && eA(!1)
     }, [n]);
-    let eC = (0, v.Fr)(F),
+    let eC = (0, y.Fr)(F),
       eR = null != eC && !ep && n && !eN,
       eP = () => {
         eg(!0)
@@ -244,7 +244,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           className: w.clanTag
         })]
       }),
-      eB = e => (0, r.jsx)(y.Z, M(L({
+      eB = e => (0, r.jsx)(v.Z, M(L({
         quest: eC,
         memberListItemRef: eh,
         applicationStream: V

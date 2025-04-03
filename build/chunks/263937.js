@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var r, i = n(442837),
   o = n(433517),
@@ -36,9 +36,9 @@ function f() {
   var e, t, n, r, i, o;
   let a = s.Z.settings;
   return {
-    gifAutoPlay: null === (t = a.textAndImages) || void 0 === t ? void 0 : null === (e = t.gifAutoPlay) || void 0 === e ? void 0 : e.value,
-    animateEmoji: null === (r = a.textAndImages) || void 0 === r ? void 0 : null === (n = r.animateEmoji) || void 0 === n ? void 0 : n.value,
-    animateStickers: null === (o = a.textAndImages) || void 0 === o ? void 0 : null === (i = o.animateStickers) || void 0 === i ? void 0 : i.value
+    gifAutoPlay: null == (t = a.textAndImages) || null == (e = t.gifAutoPlay) ? void 0 : e.value,
+    animateEmoji: null == (r = a.textAndImages) || null == (n = r.animateEmoji) ? void 0 : n.value,
+    animateStickers: null == (o = a.textAndImages) || null == (i = o.animateStickers) ? void 0 : i.value
   }
 }
 
@@ -86,7 +86,7 @@ class b extends(r = i.ZP.PersistedStore) {
   }
   getAppliedOverrideReasonKey(e) {
     var t;
-    return null === (t = u[e]) || void 0 === t ? void 0 : t.reasonKey
+    return null == (t = u[e]) ? void 0 : t.reasonKey
   }
   getOverride(e) {
     return u[e]
@@ -94,10 +94,10 @@ class b extends(r = i.ZP.PersistedStore) {
 }
 l(b, "displayName", "UserSettingsOverridesStore"), l(b, "persistKey", "UserSettingsOverridesStore"), l(b, "migrations", [() => {
   var e;
-  let t = null !== (e = o.K.get("UserSettingsStoreOverrides")) && void 0 !== e ? e : {};
+  let t = null != (e = o.K.get("UserSettingsStoreOverrides")) ? e : {};
   return o.K.remove("UserSettingsStoreOverrides"), t
 }]);
-let v = new b(a.Z, {
+let y = new b(a.Z, {
   USER_SETTINGS_PROTO_UPDATE: E,
   USER_SETTINGS_OVERRIDE_APPLY: m,
   USER_SETTINGS_OVERRIDE_CLEAR: g,

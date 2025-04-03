@@ -3,9 +3,9 @@
 n.d(t, {
   B_: () => R,
   MO: () => b,
-  _M: () => v,
+  _M: () => y,
   k5: () => A,
-  q5: () => y
+  q5: () => v
 }), n(301563), n(47120);
 var r, i, o, a = n(544891),
   s = n(70956),
@@ -19,8 +19,8 @@ function d(e) {
 let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
   _ = new Set(["/external/"]),
   p = +s.Z.Millis.HOUR,
-  h = new Set([window.GLOBAL_ENV.CDN_HOST, null === (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === r ? void 0 : r.substring(2)].map(u).filter(Boolean)),
-  m = new Set((null !== (o = null === (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) || void 0 === i ? void 0 : i.split(",")) && void 0 !== o ? o : []).map(e => e.substring(2)).map(u).filter(Boolean)),
+  h = new Set([window.GLOBAL_ENV.CDN_HOST, null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? void 0 : r.substring(2)].map(u).filter(Boolean)),
+  m = new Set((null != (o = null == (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? void 0 : i.split(",")) ? o : []).map(e => e.substring(2)).map(u).filter(Boolean)),
   g = !1,
   E = !1;
 
@@ -31,15 +31,15 @@ function b(e) {
   return (t || n) && r
 }
 
-function v(e) {
+function y(e) {
   var t;
   let n = m.has(e.hostname),
-    r = E && d(null !== (t = e.hostname) && void 0 !== t ? t : ""),
+    r = E && d(null != (t = e.hostname) ? t : ""),
     i = Array.from(_).some(t => e.pathname.startsWith(t));
   return (n || r) && i
 }
 
-function y(e) {
+function v(e) {
   let t = l.Z.toURLSafe(e);
   if (null == t) return e;
   for (let e of ["ex", "is", "hm"]) t.searchParams.delete(e);
@@ -65,12 +65,12 @@ function S(e) {
 function T(e) {
   if (null == e) return !1;
   let t = l.Z.toURLSafe(e.url);
-  return !!(null != t && b(t)) && I(t)
+  return null != t && !!b(t) && I(t)
 }
 
 function N(e) {
   var t;
-  return T(e.image) || (null === (t = e.images) || void 0 === t ? void 0 : t.some(T)) || T(e.video)
+  return T(e.image) || (null == (t = e.images) ? void 0 : t.some(T)) || T(e.video)
 }
 
 function A(e) {

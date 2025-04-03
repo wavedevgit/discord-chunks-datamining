@@ -17,7 +17,7 @@ var r, i = n(200651),
   p = n(598077),
   h = n(594174),
   m = n(426563),
-  g = n(734348);
+  g = n(472840);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,7 +41,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,7 +107,7 @@ class N extends(r = o.PureComponent) {
       a.push(t ? (0, i.jsx)("div", {
         className: g.avatarContainer,
         children: s
-      }, I(null !== (u = e[c]) && void 0 !== u ? u : null, c)) : (0, i.jsx)(d.ZP, {
+      }, I(null != (u = e[c]) ? u : null, c)) : (0, i.jsx)(d.ZP, {
         className: g.avatarContainerMasked,
         height: r,
         width: r,
@@ -130,7 +130,7 @@ class N extends(r = o.PureComponent) {
         if (n >= t) return (0, i.jsx)(o.Fragment, {
           children: a("".concat(t, "+"), t)
         }, "more-users");
-        if (n > s.length) {
+        else if (n > s.length) {
           let e = n - s.length;
           return (0, i.jsx)(o.Fragment, {
             children: a("+".concat(e), e)
@@ -171,7 +171,7 @@ class N extends(r = o.PureComponent) {
       }),
       shouldShow: !0 === o && null != l,
       fixed: !0,
-      renderPopout: e => (c()(null != l, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, i.jsx)(_.Z, y(b(y(b({}, this.props), {
+      renderPopout: e => (c()(null != l, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, i.jsx)(_.Z, v(b(v(b({}, this.props), {
         user: p && null != d ? d : void 0
       }), e), {
         userId: l,
@@ -181,7 +181,7 @@ class N extends(r = o.PureComponent) {
         popoutUserId: null
       }),
       clickTrap: !0,
-      children: n => (0, i.jsxs)("div", y(b({
+      children: n => (0, i.jsxs)("div", v(b({
         className: s()(e, g.container, T(t)),
         ref: this._ref
       }, n), {
@@ -198,11 +198,11 @@ class N extends(r = o.PureComponent) {
         guildId: o,
         size: a
       } = this.props;
-      if (null == e) {
+      if (null == e)
         if (!this.props.showDefaultAvatarsForNullUsers) return (0, i.jsx)("div", {
           className: g.emptyUser
         });
-        {
+        else {
           let e = (null != n ? n : 0) % m.Z.DEFAULT_AVATARS.length,
             t = m.Z.DEFAULT_AVATARS[e];
           return (0, i.jsx)("img", {
@@ -210,9 +210,7 @@ class N extends(r = o.PureComponent) {
             alt: "",
             className: g.avatar
           })
-        }
-      }
-      let s = (0, i.jsx)("img", {
+        } let s = (0, i.jsx)("img", {
         src: e.getAvatarURL(o, a),
         alt: e.username,
         className: g.avatar

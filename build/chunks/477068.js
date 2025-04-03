@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       keyword: "if then not for in while do return else elseif break continue switch and or unless when class extends super local import export from using",
       literal: "true false nil",
@@ -94,4 +94,3 @@ function t(e) {
     }])
   }
 }
-e.exports = t

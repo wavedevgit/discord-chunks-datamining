@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "string",
       contains: [e.BACKSLASH_ESCAPE],
@@ -66,4 +66,3 @@ function t(e) {
     }, t, r]
   }
 }
-e.exports = t

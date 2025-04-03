@@ -29,8 +29,7 @@ function m(e) {
 }
 
 function g() {
-  let e;
-  let t = u.Z.getChannelId();
+  let e, t = u.Z.getChannelId();
   if (null == t) e = !0;
   else {
     let n = s.Z.getChannel(t),
@@ -60,10 +59,10 @@ function b() {
   h = !0
 }
 
-function v() {
+function y() {
   h = p
 }
-class y extends(r = i.ZP.Store) {
+class v extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, l.Z, u.Z, d.Z)
   }
@@ -74,8 +73,8 @@ class y extends(r = i.ZP.Store) {
     return p
   }
 }
-_(y, "displayName", "PermissionVADStore");
-let O = new y(o.Z, {
+_(v, "displayName", "PermissionVADStore");
+let O = new v(o.Z, {
   RTC_CONNECTION_STATE: g,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: g,
   AUDIO_SET_MODE: g,
@@ -86,6 +85,6 @@ let O = new y(o.Z, {
   IMPERSONATE_UPDATE: g,
   IMPERSONATE_STOP: g,
   VOICE_STATE_UPDATES: E,
-  AUDIO_TOGGLE_SELF_MUTE: v,
+  AUDIO_TOGGLE_SELF_MUTE: y,
   PERMISSION_CLEAR_VAD_WARNING: b
 })

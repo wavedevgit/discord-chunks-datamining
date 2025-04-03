@@ -33,7 +33,7 @@ let _ = [],
   g = [],
   E = 20,
   b = 10 * c.Z.Millis.SECOND,
-  v = () => {
+  y = () => {
     let e = new Date;
     if ((g = [e, ...g].slice(0, E)).length >= E) {
       let t = g[g.length - 1],
@@ -41,7 +41,7 @@ let _ = [],
       n < b && (r = new Date(e.getTime() + b - n))
     }
   },
-  y = e => {
+  v = e => {
     let {
       cooldownEndsAtMs: t
     } = e;
@@ -97,6 +97,6 @@ let A = new N(l.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: T,
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: S,
   VOICE_CHANNEL_EFFECT_SEND: I,
-  VOICE_CHANNEL_EFFECT_SENT_LOCAL: v,
-  VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: y
+  VOICE_CHANNEL_EFFECT_SENT_LOCAL: y,
+  VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: v
 })

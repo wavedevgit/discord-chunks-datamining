@@ -46,7 +46,7 @@ function c(e) {
     channelId: l,
     joinRequestStatus: c,
     joinRequestUserId: u
-  } = e, d = r.default.getId(), f = (null === (t = i.ZP.getMember(n, d)) || void 0 === t ? void 0 : t.joinedAt) != null;
+  } = e, d = r.default.getId(), f = (null == (t = i.ZP.getMember(n, d)) ? void 0 : t.joinedAt) != null;
   o.default.track(a.rMx.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE, {
     guild_id: n,
     channel_id: l,

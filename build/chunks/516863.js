@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.COMMENT(/^\s*@?rem\b/, /$/, {
     relevance: 10
   });
@@ -29,4 +29,3 @@ function t(e) {
     }, t]
   }
 }
-e.exports = t

@@ -21,9 +21,9 @@ var i = n(120356),
   m = n(507675),
   g = n(273716),
   E = n(388032),
-  b = n(435465);
+  b = n(992955);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,14 +32,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -117,7 +117,7 @@ function T(e) {
     screenMessage: h,
     hideControls: g = !1,
     className: E,
-    innerClassName: v,
+    innerClassName: y,
     videoControlsClassName: I
   } = e, T = O(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
   return (0, r.jsxs)("div", {
@@ -130,16 +130,16 @@ function T(e) {
     onDoubleClick: i,
     children: [(0, r.jsx)(l.W, {
       children: (0, r.jsx)(_.B, {
-        className: v,
+        className: y,
         children: t
       }, s)
-    }), null != h ? (0, r.jsx)(m.Z, y({
+    }), null != h ? (0, r.jsx)(m.Z, v({
       size: "small"
     }, h)) : null, !g && (0, r.jsxs)("div", {
       className: o()(b.videoControls, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: b.topControls,
-        children: (0, r.jsx)(S, y({
+        children: (0, r.jsx)(S, v({
           idle: n,
           onJumpToChannel: i,
           onHide: a

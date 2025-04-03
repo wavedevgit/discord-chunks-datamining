@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  b: () => v
+  b: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -21,12 +21,12 @@ var r = n(200651),
   E = n(65154),
   b = n(388032);
 
-function v(e) {
+function y(e) {
   let {
     stream: t,
     handleGoLive: n,
-    showReportOption: v = !1,
-    disableChangeWindows: y = !1,
+    showReportOption: y = !1,
+    disableChangeWindows: v = !1,
     simplified: O = !1,
     appContext: I = m.IlC.APP
   } = e, {
@@ -35,7 +35,7 @@ function v(e) {
     var e;
     let {
       desktopSource: t
-    } = null !== (e = f.Z.getGoLiveSource()) && void 0 !== e ? e : {};
+    } = null != (e = f.Z.getGoLiveSource()) ? e : {};
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
@@ -88,7 +88,7 @@ function v(e) {
       checked: T,
       action: x
     }) : null,
-    j = N && !y ? (0, r.jsx)(a.sNh, {
+    j = N && !v ? (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: O ? b.NW.string(b.t.eAktHh) : b.NW.string(b.t.qntSam),
       icon: a.hGI,
@@ -103,6 +103,6 @@ function v(e) {
   return O ? (0, r.jsxs)(r.Fragment, {
     children: [U, j, M, k]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [M, v ? P : null, k, j, U]
+    children: [M, y ? P : null, k, j, U]
   })
 }

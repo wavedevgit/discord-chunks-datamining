@@ -31,9 +31,9 @@ var r = n(392711),
   g = n(668781),
   E = n(981631),
   b = n(526761),
-  v = n(388032);
+  y = n(388032);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,7 +49,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -297,12 +297,12 @@ function B(e) {
 function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
-    let r = null !== (n = i().max(Object.values(t.gifs).map(e => e.order))) && void 0 !== n ? n : 0;
+    let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0;
     if (t.gifs[B(e.url)] = S(O({}, e), {
         order: r + 1
       }), s.wK.toBinary(t).length > b.vY) return g.Z.show({
-      title: v.NW.string(v.t["+XYXtb"]),
-      body: v.NW.string(v.t.YSDH9v)
+      title: y.NW.string(y.t["+XYXtb"]),
+      body: y.NW.string(y.t.YSDH9v)
     }), !1;
     let o = i().size(t.gifs);
     o > 2 && (t.hideTooltip = !0), p.default.track(E.rMx.GIF_FAVORITED, {

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "HAML",
     case_insensitive: !0,
@@ -73,4 +73,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

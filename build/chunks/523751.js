@@ -20,15 +20,15 @@ var r = n(200651),
   g = n(210887),
   E = n(271383),
   b = n(594174),
-  v = n(665786),
-  y = n(697725),
+  y = n(665786),
+  v = n(697725),
   O = n(267642),
   I = n(284363),
   S = n(854218),
   T = n(682947),
   N = n(981631),
   A = n(388032),
-  C = n(513626);
+  C = n(90235);
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,7 +109,7 @@ let M = {
     backgroundLightColor: l.Z.unsafe_rawColors.GREEN_360.css
   },
   [I.Q.PARTNERED]: {
-    IconComponent: (0, u.GSL)(v.Z),
+    IconComponent: (0, u.GSL)(y.Z),
     foregroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.BRAND_500.css,
@@ -147,7 +147,7 @@ function k(e) {
     className: C.tooltipPremiumFooterContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(C.tooltipPremiumFooterSegment, C.tooltipPremiumFooterTierSegment),
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(v.Z, {
         width: 18,
         height: 18,
         className: C.gemIcon
@@ -204,8 +204,8 @@ function U(e) {
   let t, n;
   var o, l, {
       guild: _,
-      tooltipColor: v = u.ua7.Colors.BRAND,
-      tooltipPosition: y,
+      tooltipColor: y = u.ua7.Colors.BRAND,
+      tooltipPosition: v,
       className: O,
       flowerStarClassName: T,
       iconClassName: A,
@@ -216,7 +216,7 @@ function U(e) {
     } = e,
     U = L(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]);
   let G = (0, p.Q3)("GuildBadgeV2"),
-    B = null !== (o = U.size) && void 0 !== o ? o : G ? 18 : 16,
+    B = null != (o = U.size) ? o : G ? 18 : 16,
     F = (0, s.e7)([b.default, E.ZP], () => {
       let e = b.default.getCurrentUser();
       return E.ZP.isMember(null == _ ? void 0 : _.id, null == e ? void 0 : e.id)
@@ -236,10 +236,10 @@ function U(e) {
     }, [W, _.id]);
   if (H === I.Q.NONE) return null;
   if (H === I.Q.CLAN) {
-    let e = (0, d.ky)(_.id, null === (l = _.profile) || void 0 === l ? void 0 : l.badge, B);
+    let e = (0, d.ky)(_.id, null == (l = _.profile) ? void 0 : l.badge, B);
     return null == e ? null : (0, r.jsx)(u.ua7, {
-      color: v,
-      position: y,
+      color: y,
+      position: v,
       "aria-label": k,
       text: (0, r.jsx)(j, {
         badgeType: H,
@@ -273,8 +273,8 @@ function U(e) {
   t = null != t ? t : et, n = null != n ? n : en;
   let er = Math.floor(.75 * B) - (null != ee ? ee : 0);
   return (0, r.jsx)(u.ua7, {
-    color: v,
-    position: y,
+    color: y,
+    position: v,
     "aria-label": k,
     text: (0, r.jsx)(j, {
       badgeType: H,

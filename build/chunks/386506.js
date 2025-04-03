@@ -24,7 +24,7 @@ async function d(e) {
         version: s.Ji
       },
       headers: {
-        Authorization: null !== (t = o.default.getToken()) && void 0 !== t ? t : ""
+        Authorization: null != (t = o.default.getToken()) ? t : ""
       },
       oldFormErrors: !0,
       rejectWithError: !1
@@ -66,7 +66,7 @@ function p(e) {
     url: (0, s.pU)(c),
     body: e,
     headers: {
-      Authorization: null !== (t = o.default.getToken()) && void 0 !== t ? t : ""
+      Authorization: null != (t = o.default.getToken()) ? t : ""
     },
     oldFormErrors: !0,
     rejectWithError: !1

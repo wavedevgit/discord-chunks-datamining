@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[a-zA-Z_\\-+\\*\\/<=>&#][a-zA-Z0-9_\\-+*\\/<=>&#!]*",
     n = "\\|[^]*?\\|",
     r = "(-|\\+)?\\d+(\\.\\d+|\\/\\d+)?((d|e|f|l|s|D|E|F|L|S)(\\+|-)?\\d+)?",
@@ -93,4 +93,3 @@ function t(e) {
     contains: [o, e.SHEBANG(), i, a, s, _, p, h, u]
   }
 }
-e.exports = t

@@ -54,7 +54,7 @@ function f(e, t) {
     let {
       group: t,
       decimal: a
-    } = null !== (n = s.L[e]) && void 0 !== n ? n : s.L["en-US"];
+    } = null != (n = s.L[e]) ? n : s.L["en-US"];
     r = RegExp(l.Z.escape(t), "g"), i = RegExp(l.Z.escape(a), "g")
   }
   return t.replace(r, "").replace(i, ".")
@@ -64,8 +64,8 @@ function _(e, t) {
   let n = {};
   for (let i of t) {
     var r;
-    let t = null === (r = e.options) || void 0 === r ? void 0 : r.find(e => e.name === i.name);
-    i.type !== a.jw.ATTACHMENT && (null == t || !t.autocomplete) && (n[i.name] = i)
+    let t = null == (r = e.options) ? void 0 : r.find(e => e.name === i.name);
+    i.type !== a.jw.ATTACHMENT && (null != t && t.autocomplete || (n[i.name] = i))
   }
   return n
 }

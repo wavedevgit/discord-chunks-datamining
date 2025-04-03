@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(358221),
   E = n(703656),
   b = n(607187),
-  v = n(937995),
-  y = n(366050),
+  y = n(937995),
+  v = n(366050),
   O = n(944486),
   I = n(594174),
   S = n(566620),
@@ -37,9 +37,9 @@ var r = n(200651),
   x = n(918559),
   M = n(981631),
   k = n(354459),
-  j = n(880815),
-  U = n(435465),
-  G = n(96424);
+  j = n(672058),
+  U = n(992955),
+  G = n(20795);
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,11 +89,11 @@ function H(e) {
   } = e, [A, C] = i.useState(!1), B = (0, s.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivityForChannel(_.id)), F = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), V = (0, h.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([O.Z], () => O.Z.getChannelId() === _.id), {
     dockedRect: W,
     isHidden: Y
-  } = (0, s.cj)([y.Z], () => {
-    let e = y.Z.pipWindow;
+  } = (0, s.cj)([v.Z], () => {
+    let e = v.Z.pipWindow;
     return {
-      dockedRect: null != e ? y.Z.getDockedRect(e.id) : null,
-      isHidden: y.Z.isEmbeddedActivityHidden()
+      dockedRect: null != e ? v.Z.getDockedRect(e.id) : null,
+      isHidden: v.Z.isEmbeddedActivityHidden()
     }
   }), K = (0, N.sU)({
     channelId: _.id
@@ -108,7 +108,7 @@ function H(e) {
     })) : null,
     selectedParticipant: g.Z.getSelectedParticipant(_.id),
     participantsOpen: g.Z.getParticipantsOpen(_.id)
-  })), X = H || null != K, J = (0, P.Z)(_.id), $ = J && (null == q ? void 0 : q.type) !== k.fO.ACTIVITY, ee = !J && F === x.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != y.Z.pipVideoWindow && null != y.Z.pipActivityWindow;
+  })), X = H || null != K, J = (0, P.Z)(_.id), $ = J && (null == q ? void 0 : q.type) !== k.fO.ACTIVITY, ee = !J && F === x.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
 
   function ei() {
     var e;
@@ -116,7 +116,7 @@ function H(e) {
       applicationId: B.applicationId,
       instanceId: B.compositeInstanceId
     }));
-    let t = null !== (e = _.getGuildId()) && void 0 !== e ? e : M.ME;
+    let t = null != (e = _.getGuildId()) ? e : M.ME;
     d.Z.channelListScrollTo(t, _.id), (0, E.XU)(t, _.id), null == K && (0, f.Ou)()
   }
 
@@ -126,7 +126,7 @@ function H(e) {
 
   function ea(e, t, n, i, o) {
     var a;
-    return en && null != B && ((null == z ? void 0 : z.type) === k.fO.ACTIVITY || i) ? (null === (a = B.config) || void 0 === a ? void 0 : a.useInteractivePIP) ? (0, r.jsx)(D.of, {
+    return en && null != B && ((null == z ? void 0 : z.type) === k.fO.ACTIVITY || i) ? (null == (a = B.config) ? void 0 : a.useInteractivePIP) ? (0, r.jsx)(D.of, {
       onJumpToChannel: ei,
       applicationId: B.applicationId,
       channel: _,
@@ -182,14 +182,14 @@ function H(e) {
     }, [null == B ? void 0 : B.applicationId, en]), null == B || null == Z || null == z && (0, P.Z)(_.id) || null == V) return null;
   let es = Array.from(B.userIds).map(e => I.default.getUser(e)).filter(e => null != e),
     el = {
-      instance_id: null !== (o = null !== (n = B.compositeInstanceId) && void 0 !== n ? n : B.launchId) && void 0 !== o ? o : "",
+      instance_id: null != (o = null != (n = B.compositeInstanceId) ? n : B.launchId) ? o : "",
       channel_id: _.id,
-      location_id: null === (t = B.location) || void 0 === t ? void 0 : t.id,
+      location_id: null == (t = B.location) ? void 0 : t.id,
       launch_id: B.launchId,
       referrer_id: B.referrerId,
       custom_id: B.customId
     };
-  return null != _.guild_id && "" !== _.guild_id && (el.guild_id = _.guild_id), (0, r.jsx)(v.ZP, {
+  return null != _.guild_id && "" !== _.guild_id && (el.guild_id = _.guild_id), (0, r.jsx)(y.ZP, {
     timeout: 2e3,
     children: e => {
       var t, n;
@@ -202,7 +202,7 @@ function H(e) {
         className: a()(j.root, {
           [j.pipMode]: en,
           [G.elevationHigh]: en,
-          [U.idle]: i && !(null === (t = B.config) || void 0 === t ? void 0 : t.useInteractivePIP),
+          [U.idle]: i && !(null == (t = B.config) ? void 0 : t.useInteractivePIP),
           [j.pipModeShort]: en && !A,
           [j.pipModeTall]: en && A,
           [j.hidden]: Y,
@@ -225,7 +225,7 @@ function H(e) {
           className: a()(j.iframe, {
             [j.pipModeShort]: en && !A,
             [j.pipModeTall]: en && A,
-            [j.pipNonInteractive]: en && !(null === (n = B.config) || void 0 === n ? void 0 : n.useInteractivePIP)
+            [j.pipNonInteractive]: en && !(null == (n = B.config) ? void 0 : n.useInteractivePIP)
           }),
           shouldRefocus: !en && H
         }), !en && (0, r.jsx)(D.Ds, {

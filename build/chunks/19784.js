@@ -3,11 +3,10 @@
 n.d(t, {
   V: () => o
 });
-var r = n(239189);
-n(444675);
-var i = function(e) {
+var r = n(239189),
+  i = (n(444675), function(e) {
     return (0, r.requestAnimationFrame)(e)
-  },
+  }),
   o = function() {
     return function(e) {
       void 0 === e && (e = i);

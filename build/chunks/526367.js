@@ -17,12 +17,12 @@ var o = n(192379),
   _ = "exiting",
   p = function(e) {
     function t(t, n) {
-      r = e.call(this, t, n) || this;
-      var r, i, o = n,
+      var r, i = e.call(this, t, n) || this,
+        o = n,
         a = o && !o.isMounting ? t.enter : t.appear;
-      return r.appearStatus = null, t.in ? a ? (i = u, r.appearStatus = d) : i = f : i = t.unmountOnExit || t.mountOnEnter ? c : u, r.state = {
-        status: i
-      }, r.nextCallback = null, r
+      return i.appearStatus = null, t.in ? a ? (r = u, i.appearStatus = d) : r = f : r = t.unmountOnExit || t.mountOnEnter ? c : u, i.state = {
+        status: r
+      }, i.nextCallback = null, i
     }(0, i.Z)(t, e), t.getDerivedStateFromProps = function(e, t) {
       return e.in && t.status === c ? {
         status: u
@@ -61,14 +61,11 @@ var o = n(192379),
         i = this.context ? this.context.isMounting : t,
         o = this.getTimeouts(),
         a = i ? o.appear : o.enter;
-      if (!t && !r || s.Z.disabled) {
-        this.safeSetState({
-          status: f
-        }, function() {
-          n.props.onEntered(e)
-        });
-        return
-      }
+      if (!t && !r || s.Z.disabled) return void this.safeSetState({
+        status: f
+      }, function() {
+        n.props.onEntered(e)
+      });
       this.props.onEnter(e, i), this.safeSetState({
         status: d
       }, function() {
@@ -84,14 +81,11 @@ var o = n(192379),
       var t = this,
         n = this.props.exit,
         r = this.getTimeouts();
-      if (!n || s.Z.disabled) {
-        this.safeSetState({
-          status: u
-        }, function() {
-          t.props.onExited(e)
-        });
-        return
-      }
+      if (!n || s.Z.disabled) return void this.safeSetState({
+        status: u
+      }, function() {
+        t.props.onExited(e)
+      });
       this.props.onExit(e), this.safeSetState({
         status: _
       }, function() {
@@ -118,10 +112,7 @@ var o = n(192379),
     }, n.onTransitionEnd = function(e, t, n) {
       this.setNextCallback(n);
       var r = null == t && !this.props.addEndListener;
-      if (!e || r) {
-        setTimeout(this.nextCallback, 0);
-        return
-      }
+      if (!e || r) return void setTimeout(this.nextCallback, 0);
       this.props.addEndListener && this.props.addEndListener(e, this.nextCallback), null != t && setTimeout(this.nextCallback, t)
     }, n.render = function() {
       var e = this.state.status;

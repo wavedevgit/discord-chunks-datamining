@@ -55,11 +55,11 @@ function b(e) {
   g = t, m = Date.now(), h = !1, c.hasFetchedConsumedInboundPromotionId || (c.hasFetchedConsumedInboundPromotionId = !0, c.consumedInboundPromotionId = n)
 }
 
-function v() {
+function y() {
   h = !0
 }
 
-function y() {
+function v() {
   g = [], h = !1
 }
 
@@ -87,7 +87,7 @@ function T() {
 
 function N() {
   var e, t, n;
-  E = null !== (n = null === (t = a.Z.settings.userContent) || void 0 === t ? void 0 : null === (e = t.lastDismissedOutboundPromotionStartDate) || void 0 === e ? void 0 : e.value) && void 0 !== n ? n : null
+  E = null != (n = null == (t = a.Z.settings.userContent) || null == (e = t.lastDismissedOutboundPromotionStartDate) ? void 0 : e.value) ? n : null
 }
 class A extends(r = i.ZP.PersistedStore) {
   initialize(e) {
@@ -130,8 +130,8 @@ class A extends(r = i.ZP.PersistedStore) {
 s(A, "displayName", "PromotionsStore"), s(A, "persistKey", "PromotionsPersistedStore");
 let C = new A(o.Z, {
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: b,
-  ACTIVE_OUTBOUND_PROMOTIONS_FETCH: v,
-  ACTIVE_OUTBOUND_PROMOTIONS_FETCH_FAIL: y,
+  ACTIVE_OUTBOUND_PROMOTIONS_FETCH: y,
+  ACTIVE_OUTBOUND_PROMOTIONS_FETCH_FAIL: v,
   ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: p,
   ACTIVE_BOGO_PROMOTION_FETCH: f,
   ACTIVE_BOGO_PROMOTION_FETCH_FAIL: _,

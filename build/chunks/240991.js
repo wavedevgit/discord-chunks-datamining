@@ -4,7 +4,7 @@ n.r(t), n.d(t, {
   getOrParseBioAST: () => g,
   parseBioReact: () => h,
   parseBioReactWithCachedAST: () => E,
-  parseBioReactWithoutScrolling: () => v
+  parseBioReactWithoutScrolling: () => y
 }), n(566702);
 var r = n(392711),
   i = n.n(r),
@@ -37,7 +37,7 @@ function E(e) {
   return l().reactFor(l().ruleOutput(_, "react"))(t)
 }
 let b = ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"],
-  v = c.w4((0, f.Z)([i().omit(_, b), {
+  y = c.w4((0, f.Z)([i().omit(_, b), {
     emoji: {
       react: () => null
     }

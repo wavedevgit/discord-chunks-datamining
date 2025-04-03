@@ -1,2 +1,6 @@
-/** Chunk was on 72825 **/
-e.exports = r.p + "70d8b0a530ab8484.ttf"
+/** Chunk was on web.js **/
+"use strict";
+e.exports = {
+  unownedStickerLockContainer: "unownedStickerLockContainer_ced283",
+  unownedStickerLockIcon: "unownedStickerLockIcon_ced283"
+}

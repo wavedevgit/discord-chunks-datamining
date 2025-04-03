@@ -56,7 +56,7 @@ class m {
   }
   toJsonString(e, t) {
     var n;
-    return JSON.stringify(this.toJson(e, t), null, null !== (n = null == t ? void 0 : t.prettySpaces) && void 0 !== n ? n : 0)
+    return JSON.stringify(this.toJson(e, t), null, null != (n = null == t ? void 0 : t.prettySpaces) ? n : 0)
   }
   toBinary(e, t) {
     let n = (0, p.X)(t);

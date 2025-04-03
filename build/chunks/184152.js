@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = t.concat(/[\p{L}_]/u, t.optional(/[\p{L}0-9_.-]*:/u), /[\p{L}0-9_.-]*/u),
     r = /[\p{L}0-9._:-]+/u,
@@ -143,4 +143,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

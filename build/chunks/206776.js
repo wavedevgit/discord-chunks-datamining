@@ -17,7 +17,7 @@ function u(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let d = null !== (r = window.requestIdleCallback) && void 0 !== r ? r : e => {
+let d = null != (r = window.requestIdleCallback) ? r : e => {
     let t = Date.now();
     return setTimeout(() => {
       e({
@@ -29,7 +29,7 @@ let d = null !== (r = window.requestIdleCallback) && void 0 !== r ? r : e => {
       })
     }, 1)
   },
-  f = null !== (i = window.cancelIdleCallback) && void 0 !== i ? i : clearTimeout;
+  f = null != (i = window.cancelIdleCallback) ? i : clearTimeout;
 
 function _(e) {
   return null == e ? new c.Lj(c.HO, !0) : new c.Lj(e.timeRemaining(), e.didTimeout)
@@ -43,7 +43,7 @@ class p extends s.W {
         this.telemetry.track(l.ug.FIRED_DUE_TO_MAX_TIMEOUT), this.telemetry.clearTime(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._processWorkCallback();
         return
       }
-      if (this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), (null !== (t = null == e ? void 0 : e.timeRemaining()) && void 0 !== t ? t : c.HO) < c.HO) this.telemetry.time(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
+      if (this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), (null != (t = null == e ? void 0 : e.timeRemaining()) ? t : c.HO) < c.HO) this.telemetry.time(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
         this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK);
         let t = _(e),
           n = null == t ? void 0 : t.timeRemaining();

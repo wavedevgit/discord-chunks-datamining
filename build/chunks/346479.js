@@ -20,8 +20,8 @@ var r = n(697988),
   g = n(91159),
   E = n(952537),
   b = n(981631),
-  v = n(176505),
-  y = n(388032);
+  y = n(176505),
+  v = n(388032);
 
 function O(e, t) {
   return i.tn.patch({
@@ -77,18 +77,18 @@ let S = {
       return await O(e, n)
     } catch (e) {
       var i, o;
-      throw (null === (i = e.body) || void 0 === i ? void 0 : i.code) === b.evJ.TOO_MANY_THREADS ? a.Z.show({
-        title: r ? y.NW.string(y.t.kwyWNT) : y.NW.string(y.t["PeIE/v"]),
-        body: r ? y.NW.string(y.t.KGaiEB) : y.NW.string(y.t.P0wT5e)
-      }) : (null === (o = e.body) || void 0 === o ? void 0 : o.code) === b.evJ.TOO_MANY_ANNOUNCEMENT_THREADS ? a.Z.show({
-        title: y.NW.string(y.t["PeIE/v"]),
-        body: y.NW.string(y.t.jDMxz8)
+      throw (null == (i = e.body) ? void 0 : i.code) === b.evJ.TOO_MANY_THREADS ? a.Z.show({
+        title: r ? v.NW.string(v.t.kwyWNT) : v.NW.string(v.t["PeIE/v"]),
+        body: r ? v.NW.string(v.t.KGaiEB) : v.NW.string(v.t.P0wT5e)
+      }) : (null == (o = e.body) ? void 0 : o.code) === b.evJ.TOO_MANY_ANNOUNCEMENT_THREADS ? a.Z.show({
+        title: v.NW.string(v.t["PeIE/v"]),
+        body: v.NW.string(v.t.jDMxz8)
       }) : 429 === e.status ? a.Z.show({
-        title: r ? y.NW.string(y.t.kwyWNT) : y.NW.string(y.t["PeIE/v"]),
-        body: y.NW.string(y.t["Whhv4+"])
+        title: r ? v.NW.string(v.t.kwyWNT) : v.NW.string(v.t["PeIE/v"]),
+        body: v.NW.string(v.t["Whhv4+"])
       }) : a.Z.show({
-        title: y.NW.string(y.t.j2d6Ki),
-        body: y.NW.string(y.t.fEptJC)
+        title: v.NW.string(v.t.j2d6Ki),
+        body: v.NW.string(v.t.fEptJC)
       }), e
     }
   },
@@ -96,7 +96,7 @@ let S = {
     var t;
     let n = f.Z.getChannel(e),
       r = _.Z.can(b.Plq.MANAGE_THREADS, n);
-    null != n && n.isArchivedThread() && (r || (null === (t = n.threadMetadata) || void 0 === t ? void 0 : t.locked) !== !0) && await this.unarchiveThread(n, !1)
+    null != n && n.isArchivedThread() && (r || (null == (t = n.threadMetadata) ? void 0 : t.locked) !== !0) && await this.unarchiveThread(n, !1)
   },
   setInvitable: (e, t) => O(e, {
     invitable: t
@@ -113,15 +113,15 @@ let S = {
       })
     } catch (t) {
       var n;
-      if ((null === (n = t.body) || void 0 === n ? void 0 : n.code) === b.evJ.TOO_MANY_THREAD_MEMBERS) {
+      if ((null == (n = t.body) ? void 0 : n.code) === b.evJ.TOO_MANY_THREAD_MEMBERS) {
         let t = e.isForumPost();
         a.Z.show({
-          title: t ? y.NW.string(y.t.EMYJFh) : y.NW.string(y.t.gtdVcn),
-          body: t ? y.NW.string(y.t.QYyad3) : y.NW.string(y.t.abMwgo)
+          title: t ? v.NW.string(v.t.EMYJFh) : v.NW.string(v.t.gtdVcn),
+          body: t ? v.NW.string(v.t.QYyad3) : v.NW.string(v.t.abMwgo)
         })
       } else a.Z.show({
-        title: y.NW.string(y.t.j2d6Ki),
-        body: y.NW.string(y.t.fEptJC)
+        title: v.NW.string(v.t.j2d6Ki),
+        body: v.NW.string(v.t.fEptJC)
       });
       e.isForumPost() && I(e, !1)
     }
@@ -137,15 +137,15 @@ let S = {
       })
     } catch (t) {
       var r;
-      if ((null === (r = t.body) || void 0 === r ? void 0 : r.code) === b.evJ.TOO_MANY_THREAD_MEMBERS) {
+      if ((null == (r = t.body) ? void 0 : r.code) === b.evJ.TOO_MANY_THREAD_MEMBERS) {
         let t = e.isForumPost();
         a.Z.show({
-          title: t ? y.NW.string(y.t["0yAqqK"]) : y.NW.string(y.t.YErysL),
-          body: t ? y.NW.string(y.t.QYyad3) : y.NW.string(y.t.abMwgo)
+          title: t ? v.NW.string(v.t["0yAqqK"]) : v.NW.string(v.t.YErysL),
+          body: t ? v.NW.string(v.t.QYyad3) : v.NW.string(v.t.abMwgo)
         })
       } else a.Z.show({
-        title: y.NW.string(y.t.j2d6Ki),
-        body: y.NW.string(y.t.fEptJC)
+        title: v.NW.string(v.t.j2d6Ki),
+        body: v.NW.string(v.t.fEptJC)
       })
     }
   },
@@ -171,11 +171,11 @@ let S = {
     rejectWithError: !1
   }),
   pin(e) {
-    let t = e.flags | v.zZ.PINNED;
+    let t = e.flags | y.zZ.PINNED;
     this.updateFlags(e, t, e.isArchivedThread())
   },
   unpin(e) {
-    let t = e.flags & ~v.zZ.PINNED;
+    let t = e.flags & ~y.zZ.PINNED;
     this.updateFlags(e, t)
   },
   async updateFlags(e, t) {
@@ -205,10 +205,10 @@ let S = {
   },
   async replacePin(e, t) {
     let n = e.merge({
-        flags: e.flags & ~v.zZ.PINNED
+        flags: e.flags & ~y.zZ.PINNED
       }),
       r = t.merge({
-        flags: t.flags | v.zZ.PINNED
+        flags: t.flags | y.zZ.PINNED
       });
     o.Z.dispatch({
       type: "THREAD_UPDATE",
@@ -221,7 +221,7 @@ let S = {
       await i.tn.patch({
         url: b.ANM.CHANNEL(e.id),
         body: {
-          flags: e.flags & ~v.zZ.PINNED
+          flags: e.flags & ~y.zZ.PINNED
         },
         rejectWithError: !0
       })
@@ -239,7 +239,7 @@ let S = {
       await i.tn.patch({
         url: b.ANM.CHANNEL(t.id),
         body: {
-          flags: t.flags | v.zZ.PINNED
+          flags: t.flags | y.zZ.PINNED
         },
         rejectWithError: !0
       })

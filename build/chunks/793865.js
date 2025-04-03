@@ -27,7 +27,7 @@ function h(e) {
   } = e, g = (0, a.e7)([c.default], () => {
     let e = c.default.getCurrentUser();
     return o()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
-  }), E = (0, u.Z)(i), b = (0, d.Z)(g.id, h), v = (0, f.Z)(h);
+  }), E = (0, u.Z)(i), b = (0, d.Z)(g.id, h), y = (0, f.Z)(h);
   return (0, r.jsx)(l.Z, {
     object: _.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(s.v2r, {
@@ -37,7 +37,7 @@ function h(e) {
       onSelect: n,
       onInteraction: m,
       children: [E, (0, r.jsxs)(s.kSQ, {
-        children: [b, i ? v : null]
+        children: [b, i ? y : null]
       })]
     })
   })

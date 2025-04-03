@@ -16,7 +16,7 @@ var r, i = n(200651),
   p = n(451478),
   h = n(956664),
   m = n(153066),
-  g = n(945008);
+  g = n(812737);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -146,7 +146,7 @@ class A extends o.PureComponent {
         tooltipPosition: p,
         onClick: h,
         to: E,
-        badgeStrokeColor: v,
+        badgeStrokeColor: y,
         animate: I,
         tabIndex: S,
         iconSrc: T,
@@ -157,15 +157,15 @@ class A extends o.PureComponent {
       P = O(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
       w = N[c],
       D = null != h ? d.P3F : "div";
-    return (0, i.jsxs)(D, y(b({
+    return (0, i.jsxs)(D, v(b({
       className: s()(g.icon, o, (0, m.l)(g, "iconSize", c), {
-        [null !== (e = (0, m.l)(g, "iconActive", c)) && void 0 !== e ? e : ""]: l,
+        [null != (e = (0, m.l)(g, "iconActive", c)) ? e : ""]: l,
         [g.iconInactive]: !l,
         [g.noIcon]: null == r.icon
       }),
       "aria-hidden": A,
       style: null == r.icon ? b({
-        fontSize: (null !== (t = w[r.acronym.length]) && void 0 !== t ? t : w[w.length - 1]) * f
+        fontSize: (null != (t = w[r.acronym.length]) ? t : w[w.length - 1]) * f
       }, u) : u,
       onClick: null != E || null == h ? void 0 : h,
       tabIndex: S
@@ -219,7 +219,7 @@ let C = c.ZP.connectStores([p.Z], e => {
     lossless: s
   } = e;
   return {
-    style: y(b({}, i), {
+    style: v(b({}, i), {
       backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != a ? a : T[o], n && p.Z.isFocused(), s))
     })
   }

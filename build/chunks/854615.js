@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "variable",
       begin: /\b_+[a-zA-Z]\w*/
@@ -57,4 +57,3 @@ function t(e) {
     illegal: [/\$[^a-fA-F0-9]/, /\w\$/, /\?/, /@/, / \| /, /[a-zA-Z_]\./, /\:\=/, /\[\:/]
   }
 }
-e.exports = t

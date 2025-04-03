@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.COMMENT(/\(\*/, /\*\)/),
     n = {
       className: "attribute",
@@ -25,4 +25,3 @@ function t(e) {
     contains: [t, n, r]
   }
 }
-e.exports = t

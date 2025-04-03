@@ -43,7 +43,7 @@ function d(e, t, n) {
       break;
     case "reward": {
       var s, l;
-      let t = null !== (l = null === (s = e.userStatus) || void 0 === s ? void 0 : s.claimedTier) && void 0 !== l ? l : 0,
+      let t = null != (l = null == (s = e.userStatus) ? void 0 : s.claimedTier) ? l : 0,
         n = "rewardsConfig" in e.config ? e.config.rewardsConfig.rewards[t] : e.config.rewards[t];
       if (n.type === r.w.VIRTUAL_CURRENCY) return {
         url: o.Z,
@@ -68,7 +68,7 @@ function d(e, t, n) {
 
 function f(e) {
   var t;
-  return null !== (t = e.split("?", 1).at(0)) && void 0 !== t ? t : e
+  return null != (t = e.split("?", 1).at(0)) ? t : e
 }
 
 function _(e, t, n) {
@@ -80,10 +80,10 @@ function _(e, t, n) {
 function p(e) {
   var t, n, r;
   if (e.startsWith("blob:")) {
-    let t = null !== (r = new URL(e).searchParams.get("mimetype")) && void 0 !== r ? r : void 0;
+    let t = null != (r = new URL(e).searchParams.get("mimetype")) ? r : void 0;
     return null != t ? decodeURIComponent(t) : null
   }
-  switch (null === (n = a.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) {
+  switch (null == (n = a.exec(e)) || null == (t = n[1]) ? void 0 : t.toLowerCase()) {
     case "webm":
       return "video/webm";
     case "mp4":

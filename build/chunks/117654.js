@@ -15,8 +15,7 @@ class s {
     }], this._isolationScope = r
   }
   withScope(e) {
-    let t;
-    let n = this._pushScope();
+    let t, n = this._pushScope();
     try {
       t = e(n)
     } catch (e) {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(171368),
   f = n(981631),
   _ = n(388032),
-  p = n(776839);
+  p = n(383994);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ function E(e, t) {
   }), e
 }
 let b = 57.75,
-  v = i.memo(function(e) {
+  y = i.memo(function(e) {
     let {
       user: t,
       onClose: n,
@@ -63,15 +63,15 @@ let b = 57.75,
       hidePersonalInformation: h,
       viewFullBioDisabled: g = !1
     } = e, {
-      context: v
+      context: y
     } = (0, c.KZ)(), {
-      analyticsLocations: y
+      analyticsLocations: v
     } = (0, l.ZP)(), [O, I] = i.useState(null), [S, T] = i.useState(!1), [N, A] = i.useState(!1), C = e => {
       null != e && (I(e), T(!N && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > b && A(!0))
     }, R = () => {
-      null == n || n(), (0, d.openUserProfileModal)(E(m({}, v), {
+      null == n || n(), (0, d.openUserProfileModal)(E(m({}, y), {
         userId: t.id,
-        sourceAnalyticsLocations: y,
+        sourceAnalyticsLocations: v,
         analyticsLocation: {
           section: f.jXE.BITE_SIZE_PROFILE_POPOUT
         }

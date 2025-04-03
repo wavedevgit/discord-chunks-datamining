@@ -2,8 +2,7 @@
 function t(e, n = {}) {
   return n.variants = e, n
 }
-
-function n(e) {
+e.exports = function(e) {
   let n = e.regex,
     r = "[A-Za-z0-9_$]+",
     i = t([e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT("/\\*\\*", "\\*/", {
@@ -76,4 +75,3 @@ function n(e) {
     illegal: /#|<\//
   }
 }
-e.exports = n

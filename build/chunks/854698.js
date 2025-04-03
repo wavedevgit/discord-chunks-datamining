@@ -38,8 +38,8 @@ let p = 365,
   g = "ddd MMM Do, YYYY \xb7 LT",
   E = "LT",
   b = 4,
-  v = [a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday],
-  y = [a.Ci.SU.weekday, a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday],
+  y = [a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday],
+  v = [a.Ci.SU.weekday, a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday],
   O = [a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday, a.Ci.SA.weekday],
   I = [a.Ci.SA.weekday, a.Ci.SU.weekday],
   S = [a.Ci.FR.weekday, a.Ci.SA.weekday],
@@ -80,7 +80,7 @@ function C(e) {
         })
       })
     }];
-  return A.has(n.getDay()) ? (null === (t = s.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && o.push({
+  return A.has(n.getDay()) ? (null == (t = s.default.getCurrentUser()) ? void 0 : t.isStaff()) && o.push({
     value: d.z.WEEKEND_ONLY,
     label: _.NW.string(_.t.hRpynZ)
   }) : o.push({
@@ -139,7 +139,7 @@ function M(e, t) {
 function k(e, t) {
   var n;
   if (null == t) return e;
-  let r = null !== (n = t.scheduled_end_time) && void 0 !== n ? n : e.endDate;
+  let r = null != (n = t.scheduled_end_time) ? n : e.endDate;
   return {
     startDate: null != t.scheduled_start_time ? o()(t.scheduled_start_time) : e.startDate,
     endDate: null != r ? o()(r) : void 0
@@ -165,7 +165,7 @@ function B(e, t) {
 function F(e) {
   var t;
   let n = null != e.byWeekday ? [...e.byWeekday] : null,
-    r = null === (t = e.byNWeekday) || void 0 === t ? void 0 : t.map(e => new a.OG(e.day, e.n)),
+    r = null == (t = e.byNWeekday) ? void 0 : t.map(e => new a.OG(e.day, e.n)),
     i = new Date(e.start);
   return i.setMilliseconds(0), new a.Ci({
     dtstart: i,
@@ -217,7 +217,7 @@ function W(e, t) {
 function Y(e) {
   let t = L(e.toDate().getDay()),
     n = L(e.toDate().getUTCDay());
-  return n.weekday - t.weekday > 0 ? O : n.weekday - t.weekday < 0 ? y : v
+  return n.weekday - t.weekday > 0 ? O : n.weekday - t.weekday < 0 ? v : y
 }
 
 function K(e) {

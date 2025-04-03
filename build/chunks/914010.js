@@ -28,14 +28,14 @@ let h = -1,
   E = {};
 
 function b() {
-  null != m && null == f.Z.getGuild(m) && null == s.Z.getRequest(m) && (m = null), null != g && null == f.Z.getGuild(g) && null == s.Z.getRequest(g) && (g = null), y(m)
-}
-
-function v(e) {
-  m = e.selectedGuildId, g = void 0, b()
+  null != m && null == f.Z.getGuild(m) && null == s.Z.getRequest(m) && (m = null), null != g && null == f.Z.getGuild(g) && null == s.Z.getRequest(g) && (g = null), v(m)
 }
 
 function y(e) {
+  m = e.selectedGuildId, g = void 0, b()
+}
+
+function v(e) {
   null != e && (E[e] = Date.now())
 }
 
@@ -44,7 +44,7 @@ function O(e) {
     guildId: t
   } = e;
   if (m === t) return !1;
-  y(m), y(t), null != t && (g = t), m = t
+  v(m), v(t), null != t && (g = t), m = t
 }
 
 function I(e) {
@@ -76,12 +76,12 @@ function N() {
 class A extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r, o;
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(f.Z, u.default, d.Z), E = null !== (n = null == e ? void 0 : e.selectedGuildTimestampMillis) && void 0 !== n ? n : {}, m = null !== (r = null == e ? void 0 : e.selectedGuildId) && void 0 !== r ? r : null, g = null !== (o = null == e ? void 0 : e.lastSelectedGuildId) && void 0 !== o ? o : null;
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(f.Z, u.default, d.Z), E = null != (n = null == e ? void 0 : e.selectedGuildTimestampMillis) ? n : {}, m = null != (r = null == e ? void 0 : e.selectedGuildId) ? r : null, g = null != (o = null == e ? void 0 : e.lastSelectedGuildId) ? o : null;
     let a = d.Z.lastNonVoiceRoute,
       s = (0, i.LX)(a, {
         path: _.Z5c.CHANNEL(l.Hw.guildId())
       });
-    null == s || null === (t = s.params) || void 0 === t || t.guildId
+    null == s || null == (t = s.params) || t.guildId
   }
   getState() {
     return {
@@ -103,7 +103,7 @@ class A extends(r = o.ZP.PersistedStore) {
 p(A, "displayName", "SelectedGuildStore"), p(A, "persistKey", "SelectedGuildStore");
 let C = new A(a.Z, {
   CONNECTION_OPEN: b,
-  OVERLAY_INITIALIZE: v,
+  OVERLAY_INITIALIZE: y,
   CHANNEL_SELECT: O,
   GUILD_MEMBER_REMOVE: T,
   GUILD_DELETE: S,

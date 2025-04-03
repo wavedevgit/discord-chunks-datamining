@@ -27,8 +27,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = new Set,
-  y = {},
+let y = new Set,
+  v = {},
   O = new Set,
   I = {},
   S = new Set,
@@ -67,8 +67,8 @@ function L() {
 }
 
 function x(e, t) {
-  if (null != y[t] && h.Z.shouldBeInstalled(e, t)) {
-    let n = y[t],
+  if (null != v[t] && h.Z.shouldBeInstalled(e, t)) {
+    let n = v[t],
       r = n.manifestIds,
       i = p.Z.getState(e, t);
     null != i && i.shouldPatch && (i.buildId !== n.id || !o().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
@@ -82,7 +82,7 @@ function M(e) {
   let {
     branchId: t
   } = e;
-  v.add(t)
+  y.add(t)
 }
 
 function k(e) {
@@ -92,7 +92,7 @@ function k(e) {
     locale: r,
     build: i
   } = e;
-  v.delete(n);
+  y.delete(n);
   let o = i.manifests.map(e => {
       let {
         id: t
@@ -100,7 +100,7 @@ function k(e) {
       return t
     }),
     a = i.id;
-  O.delete(n), y[n] = {
+  O.delete(n), v[n] = {
     id: a,
     applicationId: t,
     branchId: n,
@@ -113,7 +113,7 @@ function j(e) {
   let {
     branchId: t
   } = e;
-  v.delete(t), O.add(t)
+  y.delete(t), O.add(t)
 }
 
 function U(e) {
@@ -185,16 +185,16 @@ class W extends(r = a.ZP.Store) {
     this.syncWith([_.Z], D), this.waitFor(p.Z, _.Z, f.Z)
   }
   getTargetBuildId(e, t) {
-    return null == y[t] ? null : y[t].id
+    return null == v[t] ? null : v[t].id
   }
   getTargetManifests(e, t) {
-    return null == y[t] ? null : y[t].manifestIds
+    return null == v[t] ? null : v[t].manifestIds
   }
   hasNoBuild(e, t) {
     return O.has(t)
   }
   isFetching(e, t) {
-    return v.has(t)
+    return y.has(t)
   }
   needsToFetchBuildSize(e) {
     return !I.hasOwnProperty(e)

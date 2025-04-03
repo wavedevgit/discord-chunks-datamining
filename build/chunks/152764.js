@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = {
       keyword: ["assert", "else", "if", "in", "inherit", "let", "or", "rec", "then", "with"],
@@ -117,4 +117,3 @@ function t(e) {
     }])
   }
 }
-e.exports = t

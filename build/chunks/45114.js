@@ -108,7 +108,7 @@ function E(e, t, n) {
 
 function b(e, t) {
   var n;
-  null != (null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && r.Z.dispatch({
+  null != (null == (n = l.default.getCurrentUser()) ? void 0 : n.id) && r.Z.dispatch({
     type: "USER_NON_CHANNEL_ACK",
     ackType: e,
     ackedId: t,

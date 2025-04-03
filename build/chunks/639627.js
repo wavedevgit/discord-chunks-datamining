@@ -57,7 +57,7 @@ let f = i.forwardRef(function(e, t) {
     (0, a.ZD)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("25005"), n.e("96977")]).then(n.bind(n, 73620));
+      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("25005"), n.e("43434")]).then(n.bind(n, 73620));
       return n => (0, r.jsx)(i, c({
         imageUri: e,
         file: t,
@@ -69,7 +69,7 @@ let f = i.forwardRef(function(e, t) {
     focus: () => null,
     activate: () => {
       var e;
-      return null == l || l(o.U.IMAGE_UPLOAD), null === (e = f.current) || void 0 === e || e.activateUploadDialogue(), !1
+      return null == l || l(o.U.IMAGE_UPLOAD), null == (e = f.current) || e.activateUploadDialogue(), !1
     }
   }), [l]), (0, r.jsx)("div", {
     style: {

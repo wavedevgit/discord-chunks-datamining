@@ -73,7 +73,7 @@ function l(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
     i = arguments.length > 2 ? arguments[2] : void 0,
     o = {
-      id: null !== (t = null == n ? void 0 : n.toString()) && void 0 !== t ? t : e.id
+      id: null != (t = null == n ? void 0 : n.toString()) ? t : e.id
     };
   null != e.description && (o.description = e.description);
   let a = s({
@@ -96,7 +96,7 @@ function u(e) {
   return new Promise((n, r) => {
     t.open("GET", e, !0), t.responseType = "blob", t.onabort = e => r(e), t.onerror = e => r(e), t.ontimeout = e => r(e), t.onload = () => {
       var e;
-      return n(null == t ? void 0 : null === (e = t.response) || void 0 === e ? void 0 : e.data)
+      return n(null == t || null == (e = t.response) ? void 0 : e.data)
     }, t.send()
   })
 }
@@ -123,7 +123,7 @@ function f(e) {
     } = e,
     _ = c.split("/"),
     p = _[_.length - 1];
-  p = null !== (r = null === (n = p.split("?")) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== r ? r : "";
+  p = null != (r = null == (n = p.split("?")) || null == (t = n[0]) ? void 0 : t.toLowerCase()) ? r : "";
   let h = o.find(e => e.reName.test(p));
   if (null == h && null != d && (h = o.find(e => e.reName.test(d))), null != h && null != d) {
     let e = h.name(u).split(".").pop(),
@@ -133,8 +133,8 @@ function f(e) {
   return {
     uri: c,
     filename: l,
-    type: null !== (i = null != f ? f : null == h ? void 0 : h.type) && void 0 !== i ? i : "unknown",
-    isVideo: -1 !== (null !== (a = null != f ? f : null == h ? void 0 : h.name(u)) && void 0 !== a ? a : "").indexOf("video"),
-    isImage: -1 !== (null !== (s = null != f ? f : null == h ? void 0 : h.name(u)) && void 0 !== s ? s : "").indexOf("image")
+    type: null != (i = null != f ? f : null == h ? void 0 : h.type) ? i : "unknown",
+    isVideo: -1 !== (null != (a = null != f ? f : null == h ? void 0 : h.name(u)) ? a : "").indexOf("video"),
+    isImage: -1 !== (null != (s = null != f ? f : null == h ? void 0 : h.name(u)) ? s : "").indexOf("image")
   }
 }

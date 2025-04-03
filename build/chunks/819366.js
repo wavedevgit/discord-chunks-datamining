@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(347475),
   E = n(592125),
   b = n(271383),
-  v = n(430824),
-  y = n(699516),
+  y = n(430824),
+  v = n(699516),
   O = n(594174),
   I = n(5192),
   S = n(51144),
@@ -108,7 +108,7 @@ function w(e) {
     null != x && (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("49076")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("20204")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, R(A({}, t), {
         viewingChannelId: w,
         user: L,
@@ -116,7 +116,7 @@ function w(e) {
         guildId: M
       }))
     })
-  }, j = S.ZP.useName(L), U = (0, l.e7)([E.Z, b.ZP, y.Z], () => I.ZP.getNickname(M, o, L)), G = v.Z.getGuild(M), B = (0, _.Ib)(G, x) && i === T.fL ? T.jM : null;
+  }, j = S.ZP.useName(L), U = (0, l.e7)([E.Z, b.ZP, v.Z], () => I.ZP.getNickname(M, o, L)), G = y.Z.getGuild(M), B = (0, _.Ib)(G, x) && i === T.fL ? T.jM : null;
   if (null == L) return (0, r.jsx)(P, {
     userId: p,
     className: t,

@@ -12,7 +12,7 @@ var r = n(442837),
   }({});
 
 function a(e) {
-  return null == e ? 0 : e.suppress && null != e.requestToSpeakTimestamp ? 1 : e.suppress || null == e.requestToSpeakTimestamp ? e.suppress || null != e.requestToSpeakTimestamp ? 0 : 3 : 2
+  return null == e ? 0 : e.suppress && null != e.requestToSpeakTimestamp ? 1 : e.suppress || null == e.requestToSpeakTimestamp ? 3 * (!e.suppress && null == e.requestToSpeakTimestamp) : 2
 }
 
 function s(e, t) {

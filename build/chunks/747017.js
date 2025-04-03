@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(868781),
   E = n(122943),
   b = n(556638),
-  v = n(981631),
-  y = n(727971);
+  y = n(981631),
+  v = n(843280);
 
 function O(e) {
   let {
@@ -48,10 +48,10 @@ function O(e) {
         let {
           type: t
         } = e;
-        return t === v.IIU.CUSTOM_STATUS
+        return t === y.IIU.CUSTOM_STATUS
       });
       if (null == r) return null;
-      let i = null !== (t = null === (e = r.state) || void 0 === e ? void 0 : e.trim()) && void 0 !== t ? t : null;
+      let i = null != (t = null == (e = r.state) ? void 0 : e.trim()) ? t : null;
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
     M = (0, l.e7)([f.Z], () => f.Z.isBlockedOrIgnored(null == t ? void 0 : t.id));
@@ -72,7 +72,7 @@ function O(e) {
         let {
           type: t
         } = e;
-        return t !== v.IIU.CUSTOM_STATUS && t !== v.IIU.HANG_STATUS
+        return t !== y.IIU.CUSTOM_STATUS && t !== y.IIU.HANG_STATUS
       });
       return null != e ? (0, r.jsx)(g.Z, {
         activity: e,
@@ -107,13 +107,13 @@ function O(e) {
       })
     };
   return (0, r.jsxs)("div", {
-    className: a()(y.container, {
-      [y.textXs]: "xs" === T,
-      [y.textSm]: "sm" === T
+    className: a()(v.container, {
+      [v.textXs]: "xs" === T,
+      [v.textSm]: "sm" === T
     }),
     children: [U(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(T, "/normal"),
-      className: a()(y.text, y.dot, I),
+      className: a()(v.text, v.dot, I),
       children: b.l
     }), G(), A && (0, r.jsx)(p.Z, {})]
   })

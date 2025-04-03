@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Af: () => G,
-  Am: () => ev,
+  Am: () => ey,
   Ap: () => eS,
   CY: () => B,
   Gf: () => Q,
@@ -74,8 +74,8 @@ var s = n(782568),
   g = n(55935),
   E = n(70956),
   b = n(424218),
-  v = n(358085),
-  y = n(380684),
+  y = n(358085),
+  v = n(380684),
   O = n(111361),
   I = n(937615),
   S = n(981631),
@@ -157,7 +157,7 @@ function B(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    i = null !== (t = _.Z.defaultPaymentSourceId) && void 0 !== t ? t : void 0,
+    i = null != (t = _.Z.defaultPaymentSourceId) ? t : void 0,
     o = h.ZP.getPremiumTypeSubscription();
   return null != o && null != o.paymentSourceId && (i = o.paymentSourceId), F(e, n, r, {
     paymentSourceId: i
@@ -492,10 +492,10 @@ function en(e) {
     price: m,
     includePremiumGuilds: E,
     hasDiscountApplied: b,
-    activeDiscountInfo: v,
-    renewalInvoicePreview: y,
+    activeDiscountInfo: y,
+    renewalInvoicePreview: v,
     hasFractionalPremiumWithSub: O
-  } = e, I = N.GP[h], T = tO(B(I.id), I.interval), A = eD(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), R = null != m && null == p.paymentGateway, P = p.status === S.O0b.UNPAID && null !== p.latestInvoice && (null === (n = p.latestInvoice) || void 0 === n ? void 0 : n.status) === S.hUK.OPEN, w = A ? S.O0b.CANCELED : P ? S.O0b.UNPAID : p.status, D = null === (o = null !== (i = null == y ? void 0 : y.taxInclusive) && void 0 !== i ? i : null === (r = p.latestInvoice) || void 0 === r ? void 0 : r.taxInclusive) || void 0 === o || o, L = N.cb + (E ? ed(p.additionalPlans) : 0), x = R ? D ? C.NW.format(C.t["cd+hqK"], {
+  } = e, I = N.GP[h], T = tO(B(I.id), I.interval), A = eD(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null == (t = d.default.getCurrentUser()) ? void 0 : t.hasFreePremium()), R = null != m && null == p.paymentGateway, P = p.status === S.O0b.UNPAID && null !== p.latestInvoice && (null == (n = p.latestInvoice) ? void 0 : n.status) === S.hUK.OPEN, w = A ? S.O0b.CANCELED : P ? S.O0b.UNPAID : p.status, D = null == (o = null != (i = null == v ? void 0 : v.taxInclusive) ? i : null == (r = p.latestInvoice) ? void 0 : r.taxInclusive) || o, L = N.cb + (E ? ed(p.additionalPlans) : 0), x = R ? D ? C.NW.format(C.t["cd+hqK"], {
     price: m
   }) : C.NW.format(C.t.NUkcpK, {
     price: m
@@ -648,16 +648,16 @@ function en(e) {
           });
         default:
           return b ? h === N.Xh.PREMIUM_YEAR_TIER_2 ? C.NW.format(C.t["+qqh6u"], {
-            percent: null !== (l = null == v ? void 0 : v.percentage) && void 0 !== l ? l : N.Bo,
+            percent: null != (l = null == y ? void 0 : y.percentage) ? l : N.Bo,
             regularPrice: T
           }) : D ? C.NW.formatToPlainString(C.t["3Ziutb"], {
-            percent: null !== (c = null == v ? void 0 : v.percentage) && void 0 !== c ? c : N.M_,
+            percent: null != (c = null == y ? void 0 : y.percentage) ? c : N.M_,
             regularPrice: T,
-            numMonths: null !== (u = null == v ? void 0 : v.duration) && void 0 !== u ? u : N.rt
+            numMonths: null != (u = null == y ? void 0 : y.duration) ? u : N.rt
           }) : C.NW.formatToPlainString(C.t["G6+XOT"], {
-            percent: null !== (f = null == v ? void 0 : v.percentage) && void 0 !== f ? f : N.M_,
+            percent: null != (f = null == y ? void 0 : y.percentage) ? f : N.M_,
             regularPrice: T,
-            numMonths: null !== (_ = null == v ? void 0 : v.duration) && void 0 !== _ ? _ : N.rt
+            numMonths: null != (_ = null == y ? void 0 : y.duration) ? _ : N.rt
           }) : k
       }
     default:
@@ -696,7 +696,7 @@ function ei(e) {
       planId: t
     } = e;
     return N.Z1.has(t)
-  }), o = (null == i ? void 0 : i.planId) === N.Xh.PREMIUM_MONTH_GUILD ? C.t.Pi5yMD : (null == i ? void 0 : i.planId) === N.Xh.PREMIUM_YEAR_GUILD ? C.t.Pi5yMD : null, a = null != o ? C.NW.formatToPlainString(o, {
+  }), o = (null == i ? void 0 : i.planId) === N.Xh.PREMIUM_MONTH_GUILD || (null == i ? void 0 : i.planId) === N.Xh.PREMIUM_YEAR_GUILD ? C.t.Pi5yMD : null, a = null != o ? C.NW.formatToPlainString(o, {
     num: null == i ? void 0 : i.quantity
   }) : void 0;
   if (null != r && null != a) return C.NW.formatToPlainString(C.t.FN5T9v, {
@@ -780,7 +780,7 @@ function el(e) {
 
 function ec(e) {
   var t;
-  return null == e ? k.ALL : null !== (t = k[e]) && void 0 !== t ? t : []
+  return null == e ? k.ALL : null != (t = k[e]) ? t : []
 }
 
 function eu(e) {
@@ -829,14 +829,14 @@ function em(e) {
 
 function eg(e) {
   var t, n, r, i, o;
-  if (e.isPurchasedViaApple && (null === (t = e.metadata) || void 0 === t ? void 0 : t.apple_grace_period_expires_date) != null) {
+  if (e.isPurchasedViaApple && (null == (t = e.metadata) ? void 0 : t.apple_grace_period_expires_date) != null) {
     let t = a()(e.metadata.apple_grace_period_expires_date);
     return {
       days: a().duration(t.diff(e.currentPeriodStart)).days(),
       expiresDate: t
     }
   }
-  if (e.isPurchasedViaGoogle && (null === (n = e.metadata) || void 0 === n ? void 0 : n.google_grace_period_expires_date) != null && (null === (r = e.metadata) || void 0 === r ? void 0 : r.google_original_expires_date) != null) {
+  if (e.isPurchasedViaGoogle && (null == (n = e.metadata) ? void 0 : n.google_grace_period_expires_date) != null && (null == (r = e.metadata) ? void 0 : r.google_original_expires_date) != null) {
     let t = a()(e.metadata.google_grace_period_expires_date),
       n = a()(e.metadata.google_original_expires_date);
     return {
@@ -851,8 +851,8 @@ function eg(e) {
       expiresDate: a()(e.currentPeriodStart).add(t, "days")
     }
   }
-  if ((null === (i = e.metadata) || void 0 === i ? void 0 : i.grace_period_expires_date) != null) return {
-    days: a()(null === (o = e.metadata) || void 0 === o ? void 0 : o.grace_period_expires_date).diff(e.currentPeriodStart, "days"),
+  if ((null == (i = e.metadata) ? void 0 : i.grace_period_expires_date) != null) return {
+    days: a()(null == (o = e.metadata) ? void 0 : o.grace_period_expires_date).diff(e.currentPeriodStart, "days"),
     expiresDate: a()(e.metadata.grace_period_expires_date)
   };
   {
@@ -902,7 +902,7 @@ function eE(e, t) {
   if (e.status === S.O0b.PAST_DUE) {
     var o, s;
     let t = eg(e).expiresDate;
-    return (e.isPurchasedViaGoogle && (null === (o = e.metadata) || void 0 === o ? void 0 : o.google_grace_period_expires_date) != null && (t = a()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null === (s = e.metadata) || void 0 === s ? void 0 : s.apple_grace_period_expires_date) != null && (t = a()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? C.NW.format(C.t.U2hb3d, {
+    return (e.isPurchasedViaGoogle && (null == (o = e.metadata) ? void 0 : o.google_grace_period_expires_date) != null && (t = a()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null == (s = e.metadata) ? void 0 : s.apple_grace_period_expires_date) != null && (t = a()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? C.NW.format(C.t.U2hb3d, {
       endDate: t.toDate(),
       paymentGatewayName: A.Vz[e.paymentGateway],
       paymentSourceLink: eZ(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
@@ -915,7 +915,7 @@ function eE(e, t) {
       endDate: a()(e.currentPeriodStart).add(N.A5, "days").toDate(),
       price: i
     });
-    if (e.status === S.O0b.ACCOUNT_HOLD) return e.isPurchasedViaGoogle && !(0, v.isAndroid)() ? C.NW.format(C.t.dtcxw8, {
+    if (e.status === S.O0b.ACCOUNT_HOLD) return e.isPurchasedViaGoogle && !(0, y.isAndroid)() ? C.NW.format(C.t.dtcxw8, {
       endDate: a()(e.currentPeriodStart).add(N.gh, "days").toDate(),
       paymentGatewayName: A.Vz[e.paymentGateway],
       paymentSourceLink: eZ(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
@@ -955,7 +955,7 @@ function eb(e, t) {
   return n.toDate()
 }
 
-function ev(e) {
+function ey(e) {
   let t = tC(e.unactivatedUnits);
   if (!(t > 0 && e.fractionalState === N.a$.NONE)) return "";
   let n = {
@@ -967,7 +967,7 @@ function ev(e) {
   return (0, g.QX)(r, n)
 }
 
-function ey(e) {
+function ev(e) {
   return null != e.renewalMutations || null != e.trialEndsAt || e.status === S.O0b.PAST_DUE
 }
 
@@ -1018,7 +1018,7 @@ function eA(e) {
     null != e && (_ = e.amount)
   }
   s = null != s ? s : (0, I.T4)(_, o.currency);
-  let h = null === (r = null !== (n = null == l ? void 0 : l.taxInclusive) && void 0 !== n ? n : null === (t = o.latestInvoice) || void 0 === t ? void 0 : t.taxInclusive) || void 0 === r || r;
+  let h = null == (r = null != (n = null == l ? void 0 : l.taxInclusive) ? n : null == (t = o.latestInvoice) ? void 0 : t.taxInclusive) || r;
   if (eN(o)) return o.isPurchasedViaGoogle ? C.NW.format(C.t["3/WTrK"], {
     quantity: f
   }) : h ? C.NW.format(C.t["0ozBSE"], {
@@ -1082,7 +1082,7 @@ function eP(e, t) {
     } = e;
     return e_(t)
   });
-  return null == r || (0, u.Q0)(r.subscriptionPlanId) ? e.planId : null != e.renewalMutations && e.renewalMutations.planId !== e.planId ? e.planId : r.subscriptionPlanId
+  return null == r || (0, u.Q0)(r.subscriptionPlanId) || null != e.renewalMutations && e.renewalMutations.planId !== e.planId ? e.planId : r.subscriptionPlanId
 }
 
 function ew(e, t) {
@@ -1352,7 +1352,7 @@ function eH(e, t) {
 function eW(e, t) {
   var n, r;
   let i = [],
-    o = (null !== (r = null === (n = e.renewalMutations) || void 0 === n ? void 0 : n.items) && void 0 !== r ? r : e.items).find(e => N.dJ.has(e.planId));
+    o = (null != (r = null == (n = e.renewalMutations) ? void 0 : n.items) ? r : e.items).find(e => N.dJ.has(e.planId));
   return null != o && i.push(o), i.push(...t), i.map(t => {
     for (let n of e.items)
       if (t.planId === n.planId) return P({}, n, t);
@@ -1368,7 +1368,7 @@ function eK(e, t, n, r) {
   var o, a;
   i()(r.has(t), "Expected planId in group");
   let s = !1,
-    l = (null !== (a = null === (o = e.renewalMutations) || void 0 === o ? void 0 : o.items) && void 0 !== a ? a : e.items).map(e => r.has(e.planId) ? (s = !0, D(P({}, e), {
+    l = (null != (a = null == (o = e.renewalMutations) ? void 0 : o.items) ? a : e.items).map(e => r.has(e.planId) ? (s = !0, D(P({}, e), {
       quantity: n,
       planId: t
     })) : e);
@@ -1393,7 +1393,7 @@ function eq(e, t, n) {
 
 function eQ(e) {
   var t;
-  let n = null !== (t = e.find(e => !("id" in e))) && void 0 !== t ? t : e.find(e => N.dJ.has(e.planId));
+  let n = null != (t = e.find(e => !("id" in e))) ? t : e.find(e => N.dJ.has(e.planId));
   if (null != n) {
     let t = p.Z.get(n.planId);
     i()(null != t, "Missing plan"), e = e.map(e => {
@@ -1562,11 +1562,11 @@ function tb(e) {
   return (0, c.ks)(c.hs, e)
 }
 
-function tv(e) {
+function ty(e) {
   return (0, c.ks)(c.Ry, e)
 }
 
-function ty(e) {
+function tv(e) {
   return (0, c.ks)(c.DU, e)
 }
 
@@ -1637,14 +1637,14 @@ let tP = Object.freeze({
   isPremiumSku: eo,
   getClosestUpgrade: eu,
   getIntervalMonths: $,
-  getUserMaxFileSize: y.h,
+  getUserMaxFileSize: v.h,
   getSkuIdForPlan: es,
   getSkuIdForPremiumType: el,
   getNumIncludedPremiumGuildSubscriptionSlots: em,
   getBillingInformationString: eE,
   extendDateWithUnconsumedFractionalPremium: eb,
-  getUnactivatedFractionalPremiumHoursString: ev,
-  isSwitchingPlansDisabled: ey,
+  getUnactivatedFractionalPremiumHoursString: ey,
+  isSwitchingPlansDisabled: ev,
   getSwitchingPlansDisabledMessage: eO,
   isNoneSubscription: u.Q0,
   getPlanIdFromInvoice: eP,
@@ -1689,8 +1689,8 @@ let tP = Object.freeze({
   canUseCollectibles: tg,
   canUseCustomNotificationSounds: tE,
   canUsePremiumVoiceFilters: tb,
-  canUseIncreasedRecentAvatarsLimit: tv,
-  canUseChatWallpapers: ty,
+  canUseIncreasedRecentAvatarsLimit: ty,
+  canUseChatWallpapers: tv,
   formatPriceString: tO,
   StreamQuality: U
 })

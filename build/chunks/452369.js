@@ -39,7 +39,7 @@ function p(e) {
   return t.forEach(e => {
     if (null != e.oldChannelId) {
       var t, r;
-      null != l[e.oldChannelId] && (null === (t = l[e.oldChannelId]) || void 0 === t || t.delete(e.userId), n = !0), null != c[e.oldChannelId] && (null === (r = c[e.oldChannelId]) || void 0 === r || r.delete(e.userId), n = !0)
+      null != l[e.oldChannelId] && (null == (t = l[e.oldChannelId]) || t.delete(e.userId), n = !0), null != c[e.oldChannelId] && (null == (r = c[e.oldChannelId]) || r.delete(e.userId), n = !0)
     }
     null != e.channelId && (n = h(e.channelId, e.userId) || n)
   }), n
@@ -61,11 +61,11 @@ class m extends r.ZP.Store {
   }
   getBlockedUsersForVoiceChannel(e) {
     var t;
-    return null !== (t = l[e]) && void 0 !== t ? t : u
+    return null != (t = l[e]) ? t : u
   }
   getIgnoredUsersForVoiceChannel(e) {
     var t;
-    return null !== (t = c[e]) && void 0 !== t ? t : u
+    return null != (t = c[e]) ? t : u
   }
 }
 let g = new m(i.Z, {

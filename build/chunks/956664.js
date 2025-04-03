@@ -106,21 +106,21 @@ function b(e, t, n) {
   for (let i = 0, o, a, s, l, c; i < t; i += n) a = e[(o = 4 * i) + 0], s = e[o + 1], l = e[o + 2], (void 0 === (c = e[o + 3]) || c >= 125) && !(a > 250 && s > 250 && l > 250) && r.push([a, s, l]);
   return r
 }
-let v = [
+let y = [
     [0, 0, 0]
   ],
-  y = 128;
+  v = 128;
 
 function O(e, t, n) {
   let r = document.createElement("canvas"),
     i = r.getContext("2d");
-  if (null == i) return v;
-  let o = r.width = 0 === e.width ? y : e.width,
-    a = r.height = 0 === e.height ? y : e.height;
+  if (null == i) return y;
+  let o = r.width = 0 === e.width ? v : e.width,
+    a = r.height = 0 === e.height ? v : e.height;
   i.drawImage(e, 0, 0, o, a);
   let s = b(i.getImageData(0, 0, o, a).data, o * a, n),
     c = l()(s, t);
-  return "boolean" == typeof c ? v : c.palette()
+  return "boolean" == typeof c ? y : c.palette()
 }
 let I = e => "number" == typeof e ? null : S(e),
   S = a().memoize(e => new Promise((t, n) => {
@@ -164,7 +164,7 @@ function C(e) {
 }
 async function R(e) {
   var t;
-  if ("image/png" !== (null === (t = e.type) || void 0 === t ? void 0 : t.split(";")[0])) throw Error("File is not a PNG");
+  if ("image/png" !== (null == (t = e.type) ? void 0 : t.split(";")[0])) throw Error("File is not a PNG");
   let n = await e.text(),
     r = n.indexOf("IDAT");
   return !!(r > 0) && -1 !== n.substring(0, r).indexOf("acTL")

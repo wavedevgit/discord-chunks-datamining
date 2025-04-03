@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L: () => v
+  L: () => y
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(512969),
   l = n(481060),
   c = n(624138),
-  u = n(933938);
+  u = n(284575);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ let g = [18, 18, 16, 16, 14, 12, 10];
 
 function E(e) {
   var t;
-  return null !== (t = g[e.length - 1]) && void 0 !== t ? t : g[g.length - 1]
+  return null != (t = g[e.length - 1]) ? t : g[g.length - 1]
 }
 
 function b(e, t) {
@@ -82,7 +82,7 @@ function b(e, t) {
     [u.childWrapperHoverScale]: "on-hover" === e && t
   })
 }
-let v = e => {
+let y = e => {
   let t, n;
   var {
     backgroundStyle: o = "always",
@@ -90,8 +90,8 @@ let v = e => {
     icon: _,
     name: m,
     ariaLabel: g,
-    className: v,
-    style: y,
+    className: y,
+    style: v,
     to: O,
     onClick: I,
     selected: S = !1
@@ -113,11 +113,11 @@ let v = e => {
     C = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, r.jsxs)(l.P3F, p(f({}, T), {
     onClick: A,
-    className: a()(v, u.wrapper, {
+    className: a()(y, u.wrapper, {
       [u.selected]: S
     }),
     "aria-label": null != g && "" !== g ? g : null != m ? m : "",
-    style: p(f({}, y), {
+    style: p(f({}, v), {
       fontSize: n
     }),
     focusProps: {

@@ -28,8 +28,8 @@ function _(e) {
     canAccess: b = !1
   } = e;
   if (null == c) return null;
-  let v = (0, l.EY)(c.thumbnail),
-    y = !b && c.has_media_attachment,
+  let y = (0, l.EY)(c.thumbnail),
+    v = !b && c.has_media_attachment,
     O = b ? d.NW.string(d.t.UsZEBA) : d.NW.string(d.t.ReFzYW),
     I = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : void 0,
     S = null == g ? void 0 : g.getAvatarURL(null == _ ? void 0 : _.id, f);
@@ -39,26 +39,26 @@ function _(e) {
     size: f,
     canAnimate: !1
   }));
-  let T = h(c.thumbnail) && !y,
-    N = (null === (t = c.thumbnail) || void 0 === t ? void 0 : t.filename) != null && (null === (r = c.thumbnail) || void 0 === r ? void 0 : null === (n = r.filename) || void 0 === n ? void 0 : n.startsWith(u._j));
+  let T = h(c.thumbnail) && !v,
+    N = (null == (t = c.thumbnail) ? void 0 : t.filename) != null && (null == (r = c.thumbnail) || null == (n = r.filename) ? void 0 : n.startsWith(u._j));
   return {
-    title: null !== (i = c.title) && void 0 !== i ? i : "",
+    title: null != (i = c.title) ? i : "",
     subtitle: c.description,
     ctaText: O,
-    coverImage: v,
-    coverImageOverlayText: y ? d.NW.string(d.t.YonliY) : void 0,
+    coverImage: y,
+    coverImageOverlayText: v ? d.NW.string(d.t.YonliY) : void 0,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
     postThread: m,
     messageId: c.message_id,
     canAccess: b,
     guildId: c.guild_id,
-    guildName: null !== (o = null == _ ? void 0 : _.name) && void 0 !== o ? o : c.guild_name,
+    guildName: null != (o = null == _ ? void 0 : _.name) ? o : c.guild_name,
     authorId: null == c ? void 0 : c.author_id,
     authorName: I,
     channelName: null == p ? void 0 : p.name,
     avatarUrl: S,
-    shouldShowBlurredThumbnailImage: y,
+    shouldShowBlurredThumbnailImage: v,
     shouldContainMediaWithBackground: T,
     shouldSpoiler: N,
     obscureAwaitingScan: !1,

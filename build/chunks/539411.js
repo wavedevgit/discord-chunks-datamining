@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = /[a-zA-Z@][a-zA-Z0-9_]*/,
     n = {
       "variable.language": ["this", "super"],
@@ -60,4 +60,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

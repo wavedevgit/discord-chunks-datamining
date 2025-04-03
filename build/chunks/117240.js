@@ -25,23 +25,23 @@ function g(e, t, n) {
 }
 let E = "BrowserHandoffStore",
   b = !1,
-  v = new u.V7;
+  y = new u.V7;
 
-function y() {
+function v() {
   null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), p.Z.focus(null, !0))
 }
 
 function O() {
-  i = null, v.stop(), b = !1, c.K.set(E, b)
+  i = null, y.stop(), b = !1, c.K.set(E, b)
 }
 
 function I(e) {
-  r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), y()
+  r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), v()
 }
 
 function S(e) {
   if (null != i) return !1;
-  i = (0, s.Z)(), v.start(e.timeout, () => (0, f.lx)()), y()
+  i = (0, s.Z)(), y.start(e.timeout, () => (0, f.lx)()), v()
 }
 
 function T(e) {
@@ -51,7 +51,7 @@ function T(e) {
     timeout: r
   } = e;
   if (null == t || null == n) return !1;
-  b = !0, v.start(r, () => (0, f.lx)())
+  b = !0, y.start(r, () => (0, f.lx)())
 }
 
 function N(e) {

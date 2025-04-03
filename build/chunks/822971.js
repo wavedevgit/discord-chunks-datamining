@@ -23,8 +23,7 @@ function o(e) {
 function a(...e) {
   return "(" + (o(e).capture ? "" : "?:") + e.map(e => n(e)).join("|") + ")"
 }
-
-function s(e) {
+e.exports = function(e) {
   let n = {
       scope: "keyword",
       match: /\b(yield|return|let|do|match|use)!/
@@ -61,8 +60,7 @@ function s(e) {
     p = function({
       includeEqual: e
     }) {
-      let n;
-      let o = i("[", ...Array.from(n = e ? "!%&*+-/<=>@^|~?" : "!%&*+-/<>@^|~?").map(t), "]"),
+      let n, o = i("[", ...Array.from(n = e ? "!%&*+-/<=>@^|~?" : "!%&*+-/<>@^|~?").map(t), "]"),
         s = a(o, /\./),
         l = i(s, r(s)),
         c = a(i(l, s, "*"), i(o, "+"));
@@ -94,7 +92,7 @@ function s(e) {
     },
     E = g(/:/, "operator"),
     b = g(/\bof\b/, "keyword"),
-    v = {
+    y = {
       begin: [/(^|\s+)/, /type/, /\s+/, u],
       beginScope: {
         2: "keyword",
@@ -109,7 +107,7 @@ function s(e) {
         match: /<|>/
       }, E]
     },
-    y = {
+    v = {
       scope: "computation-expression",
       match: /\b[_a-z]\w*(?=\s*\{)/
     },
@@ -186,7 +184,7 @@ function s(e) {
       scope: "string",
       match: i(/'/, a(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return A.contains = [R, C, T, S, w, n, c, d, E, y, O, I, _, h], {
+  return A.contains = [R, C, T, S, w, n, c, d, E, v, O, I, _, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -196,13 +194,12 @@ function s(e) {
     },
     contains: [n, {
       variants: [P, R, C, N, T, S, w]
-    }, c, d, v, {
+    }, c, d, y, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
       contains: [d, N, T, S, w, I]
-    }, b, E, y, O, I, _, h]
+    }, b, E, v, O, I, _, h]
   }
 }
-e.exports = s

@@ -21,8 +21,8 @@ let _ = 100,
   g = 5,
   E = 4,
   b = 3,
-  v = 2,
-  y = 1,
+  y = 2,
+  v = 1,
   O = [],
   I = 350,
   S = a()(N, I),
@@ -53,8 +53,8 @@ function C(e, t, n, r) {
     u = null != t.emojiId ? s.ZP.getCustomEmojiById(t.emojiId) : null,
     f = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, !1) : null,
     O = null != f ? l.ZP.getByName(f) : null,
-    I = null != u ? [u.name] : null !== (o = null == O ? void 0 : O.names) && void 0 !== o ? o : [];
-  return e === c && (a += p), I.includes(e) && (a += h), c.startsWith(e) && (a += m), I.some(t => t.startsWith(e)) && (a += g), c.endsWith(e) && (a += E), I.some(t => t.endsWith(e)) && (a += b), i()(e, t.name.toLocaleLowerCase()) && (a += v), I.some(t => i()(e, t)) && (a += y), a > 0 && (0, d.Nq)(n, t, r) && (a += _), a
+    I = null != u ? [u.name] : null != (o = null == O ? void 0 : O.names) ? o : [];
+  return e === c && (a += p), I.includes(e) && (a += h), c.startsWith(e) && (a += m), I.some(t => t.startsWith(e)) && (a += g), c.endsWith(e) && (a += E), I.some(t => t.endsWith(e)) && (a += b), i()(e, t.name.toLocaleLowerCase()) && (a += y), I.some(t => i()(e, t)) && (a += v), a > 0 && (0, d.Nq)(n, t, r) && (a += _), a
 }
 
 function R(e, t, n, r, i) {

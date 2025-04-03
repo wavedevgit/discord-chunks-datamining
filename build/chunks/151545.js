@@ -26,8 +26,8 @@ function E(e) {
     currentUser: n,
     activity: E,
     className: b,
-    onClose: v,
-    profileGuildId: y
+    onClose: y,
+    profileGuildId: v
   } = e, O = (0, f.T)({
     location: "UserProfileActivityCardWrapper"
   }), I = t.id === n.id, S = O && !I && !t.bot, {
@@ -36,7 +36,7 @@ function E(e) {
   } = (0, i.cj)([u.Z, d.Z, c.Z], () => {
     var e;
     if (!(0, o.Z)(E)) return {};
-    let n = null === (e = d.Z.getVoiceStateForSession(t.id, null == E ? void 0 : E.session_id)) || void 0 === e ? void 0 : e.channelId,
+    let n = null == (e = d.Z.getVoiceStateForSession(t.id, null == E ? void 0 : E.session_id)) ? void 0 : e.channelId,
       r = c.Z.getChannel(n);
     return {
       voiceGuild: u.Z.getGuild(null == r ? void 0 : r.getGuildId()),
@@ -49,15 +49,15 @@ function E(e) {
     user: t,
     currentUser: n,
     activity: E,
-    profileGuildId: y,
+    profileGuildId: v,
     className: b,
-    onClose: v
+    onClose: y
   }) : (0, r.jsx)(h.Z, {
     user: t,
     currentUser: n,
     activity: E,
     className: b,
-    onClose: v
+    onClose: y
   }) : S ? (0, r.jsx)(p.Z, {
     user: t,
     currentUser: n,
@@ -65,9 +65,9 @@ function E(e) {
     application: A,
     voiceGuild: T,
     voiceChannel: N,
-    profileGuildId: y,
+    profileGuildId: v,
     className: b,
-    onClose: v
+    onClose: y
   }) : (0, r.jsx)(_.Z, {
     user: t,
     currentUser: n,
@@ -76,6 +76,6 @@ function E(e) {
     voiceGuild: T,
     voiceChannel: N,
     className: b,
-    onClose: v
+    onClose: y
   })
 }

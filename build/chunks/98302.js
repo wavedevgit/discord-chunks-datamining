@@ -95,10 +95,7 @@ class E extends i.Z {
     super(...e), h(this, "_currentUserSpeaking", !1), h(this, "_anyoneElseSpeaking", !1), h(this, "_voiceChannelId", void 0), h(this, "_reportInterval", void 0), h(this, "_handleRTCConnectionStoreChanged", () => {
       let e = l.Z.getChannelId();
       if (this._voiceChannelId !== e) {
-        if (this._voiceChannelId = e, null == e) {
-          this._reset();
-          return
-        }
+        if (this._voiceChannelId = e, null == e) return void this._reset();
         null == this._reportInterval && (this._reportInterval = new r.Xp, this._reportInterval.start(g, () => {
           this._trackStartSpeaking(), this._trackStartListening()
         }))

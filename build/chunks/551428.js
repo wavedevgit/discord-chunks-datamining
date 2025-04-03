@@ -29,7 +29,7 @@ function m(e) {
     n = e.sku.id,
     r = d[t],
     i = l.Z.createFromServer(e);
-  !(null != r && !r.isSlimDirectoryVersion() && i.isSlimDirectoryVersion()) && (!1 === e.published ? (null == _[n] && (_[n] = new Set), _[n].add(t)) : p[n] = t, d[t] = i, h.delete(e.sku.id))
+  null != r && !r.isSlimDirectoryVersion() && i.isSlimDirectoryVersion() || (!1 === e.published ? (null == _[n] && (_[n] = new Set), _[n].add(t)) : p[n] = t, d[t] = i, h.delete(e.sku.id))
 }
 
 function g(e, t) {
@@ -54,7 +54,7 @@ function b(e) {
   } else m(t)
 }
 
-function v(e) {
+function y(e) {
   let {
     giftCode: t
   } = e;
@@ -62,7 +62,7 @@ function v(e) {
   m(t.store_listing)
 }
 
-function y(e) {
+function v(e) {
   let {
     skuId: t
   } = e;
@@ -126,11 +126,11 @@ class T extends(i = o.ZP.Store) {
 }
 u(T, "displayName", "StoreListingStore");
 let N = new T(a.Z, {
-  STORE_LISTINGS_FETCH_START: y,
+  STORE_LISTINGS_FETCH_START: v,
   STORE_LISTINGS_FETCH_FAIL: O,
   STORE_LISTINGS_FETCH_SUCCESS: E,
   STORE_LISTING_FETCH_SUCCESS: b,
   USER_SETTINGS_PROTO_UPDATE: S,
   APPLICATION_STORE_CLEAR_DATA: I,
-  GIFT_CODE_RESOLVE_SUCCESS: v
+  GIFT_CODE_RESOLVE_SUCCESS: y
 })

@@ -13,7 +13,7 @@ var i = n(120356),
   c = n(876917),
   u = n(328456),
   d = n(616066),
-  f = n(783792),
+  f = n(912397),
   _ = n(63243),
   p = n(244488);
 let h = e => {
@@ -27,7 +27,7 @@ let h = e => {
   } = e, {
     firstProfileEffect: E,
     firstAvatarDecoration: b
-  } = (0, u.R)(t), v = (0, l.ZP)(), y = (0, a.ap)(v);
+  } = (0, u.R)(t), y = (0, l.ZP)(), v = (0, a.ap)(y);
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [null != E ? (0, r.jsx)("div", {
@@ -47,7 +47,7 @@ let h = e => {
         avatarSize: s.EFr.SIZE_120,
         isPurchased: n,
         isHighlighted: i,
-        avatarPlaceholderSrc: y ? p : _
+        avatarPlaceholderSrc: v ? p : _
       })
     }) : null]
   })

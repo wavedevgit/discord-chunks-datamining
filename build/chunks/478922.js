@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(663507),
   l = n(84735),
   c = n(562701),
-  u = n(521510);
+  u = n(830424);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,15 +78,15 @@ function g(e, t, n) {
         let {
           target: n
         } = e;
-        null === (t = d.get(n)) || void 0 === t || t(e)
+        null == (t = d.get(n)) || t(e)
       })
     });
   return (0, i.forwardRef)(function(n, m) {
     var g, {
         onScroll: E,
         dir: b = "ltr",
-        sections: v,
-        columns: y,
+        sections: y,
+        columns: v,
         getItemKey: O,
         getItemHeight: I,
         getSectionHeight: S,
@@ -133,8 +133,8 @@ function g(e, t, n) {
       forceUpdate: et,
       masonryComputer: en
     } = (0, c.QB)({
-      sections: v,
-      columns: y,
+      sections: y,
+      columns: v,
       getItemKey: O,
       getItemHeight: I,
       getSectionHeight: S,
@@ -189,7 +189,7 @@ function g(e, t, n) {
       }),
       style: (0, c.uT)(j)
     }, F), {
-      children: [null !== (g = null == G ? void 0 : G(ee)) && void 0 !== g ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
+      children: [null != (g = null == G ? void 0 : G(ee)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
         containerRef: Z,
         children: (0, r.jsx)("div", {
           style: {
@@ -205,7 +205,7 @@ function g(e, t, n) {
               a = X[(0, c.DP)(n)],
               s = null == C ? void 0 : C(n);
             return null != i && null != o ? (0, r.jsxs)("div", p(f({}, s), {
-              style: f({}, i, null !== (t = null == s ? void 0 : s.style) && void 0 !== t ? t : {}),
+              style: f({}, i, null != (t = null == s ? void 0 : s.style) ? t : {}),
               children: [null != N && null != a && N(n, a, e), o.map(e => {
                 let [t, n, r] = e, i = X[t];
                 return null != i ? A(n, r, i, t, J) : null

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /([-a-zA-Z$._][\w$.-]*)/,
     r = {
@@ -75,4 +75,3 @@ function t(e) {
     }, c, o, i, l, s, a]
   }
 }
-e.exports = t

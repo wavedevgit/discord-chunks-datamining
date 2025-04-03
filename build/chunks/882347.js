@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  p: () => v
+  p: () => y
 }), n(789020);
 var r = n(252258),
   i = n(570140),
@@ -43,14 +43,11 @@ async function g(e) {
     shouldClosePopoutOnLeaveCurrentEmbeddedApplication: n,
     onConfirmActivityLaunchChecksAlertOpen: r
   } = e;
-  return !!(null == t || await new Promise(e => {
+  return (null == t || !!await new Promise(e => {
     let i = l.ZP.getSelfEmbeddedActivities().get(t.id),
       o = (0, f.pY)(null == i ? void 0 : i.location),
       s = a.Z.getChannel(o);
-    if (null == i || null == s) {
-      e(!0);
-      return
-    }
+    if (null == i || null == s) return void e(!0);
     null == r || r(), (0, u.Z)(t, s, () => {
       (0, p.Z)().leaveActivity({
         location: i.location,
@@ -58,7 +55,7 @@ async function g(e) {
         shouldClosePopout: n
       }), e(!0)
     }, () => e(!1))
-  }))
+  })) && !0
 }
 async function E(e) {
   let {
@@ -74,10 +71,10 @@ async function E(e) {
     let e = null != t ? t : await m({
       applicationId: n,
       channelId: null == r ? void 0 : r.id,
-      guildId: null !== (l = null == r ? void 0 : r.getGuildId()) && void 0 !== l ? l : void 0,
+      guildId: null != (l = null == r ? void 0 : r.getGuildId()) ? l : void 0,
       isContextless: a
     });
-    if (null == e || null !== (u = null === (s = e.embeddedActivityConfig) || void 0 === s ? void 0 : s.requires_age_gate) && void 0 !== u && u && !await new Promise(t => {
+    if (null == e || null != (u = null == (s = e.embeddedActivityConfig) ? void 0 : s.requires_age_gate) && u && !await new Promise(t => {
         null == o || o(), (0, c.V)({
           application: e,
           channelId: null == r ? void 0 : r.id,
@@ -99,7 +96,7 @@ async function b(e) {
   } = e, c = null != n ? n : await m({
     applicationId: r,
     channelId: null == i ? void 0 : i.id,
-    guildId: null !== (t = null == i ? void 0 : i.getGuildId()) && void 0 !== t ? t : void 0,
+    guildId: null != (t = null == i ? void 0 : i.getGuildId()) ? t : void 0,
     isContextless: a
   });
   return null != c && (!!((0, s.yE)(c.flags, h.udG.EMBEDDED_RELEASED) || c.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
@@ -110,10 +107,10 @@ async function b(e) {
     })
   }))
 }
-async function v(e) {
-  return !!(await g({
+async function y(e) {
+  return !!await g({
     currentEmbeddedApplication: e.currentEmbeddedApplication,
     shouldClosePopoutOnLeaveCurrentEmbeddedApplication: e.shouldClosePopoutOnLeaveCurrentEmbeddedApplication,
     onConfirmActivityLaunchChecksAlertOpen: e.onConfirmActivityLaunchChecksAlertOpen
-  }) && await E(e) && await b(e))
+  }) && !!await E(e) && !!await b(e)
 }

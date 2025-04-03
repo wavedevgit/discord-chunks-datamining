@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var r = n(147913),
   i = n(751571),
@@ -34,13 +34,13 @@ function g() {
 
 function E(e, t) {
   var n;
-  return null === (n = c.Z.getChannel(t)) || void 0 === n || !n.isListenModeCapable() || o.ZP.isSpeaker(e, t)
+  return null == (n = c.Z.getChannel(t)) || !n.isListenModeCapable() || o.ZP.isSpeaker(e, t)
 }
 
 function b(e) {
   return (0, a.gf)(e) === a.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
-class v extends r.Z {
+class y extends r.Z {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t
@@ -72,4 +72,4 @@ class v extends r.Z {
     })
   }
 }
-let y = new v
+let v = new y

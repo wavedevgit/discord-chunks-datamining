@@ -39,8 +39,8 @@ function b(e) {
   }
   return e
 }
-let v = 5,
-  y = 15,
+let y = 5,
+  v = 15,
   O = 7,
   I = 6048e5,
   S = 12096e5;
@@ -73,10 +73,7 @@ function D(e) {
 }
 
 function L() {
-  if (null != P) {
-    q(P);
-    return
-  }
+  if (null != P) return void q(P);
   if (k(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
@@ -93,7 +90,7 @@ function L() {
   });
   if (e || t) {
     for (let e of p.default.keys(_.Z.getRelationships())) {
-      if (A.length >= y) break;
+      if (A.length >= v) break;
       let t = _.Z.getSince(e),
         n = d.Z.getUserAffinity(e);
       if (_.Z.getRelationshipType(e) === g.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
@@ -108,7 +105,7 @@ function L() {
         r = d.Z.getUserAffinity(t),
         i = null != n ? n.affinity : 0;
       return (null != r ? r.affinity : 0) - i
-    }), C = new Set(A.slice(0, v))
+    }), C = new Set(A.slice(0, y))
   }
 }
 
@@ -208,7 +205,7 @@ function q(e) {
         friendsSince: n
       }
     }
-  }), C = new Set(A.slice(0, v))
+  }), C = new Set(A.slice(0, y))
 }
 class Q extends(r = l.ZP.PersistedStore) {
   initialize(e) {
@@ -234,7 +231,7 @@ class Q extends(r = l.ZP.PersistedStore) {
   }
   canShowFriendsTabBadge() {
     var e;
-    let t = null !== (e = N.friendsTabBadgeLastDismissedTime) && void 0 !== e ? e : 0;
+    let t = null != (e = N.friendsTabBadgeLastDismissedTime) ? e : 0;
     return !(Date.now() - t <= I) && M()
   }
   getFriendAnniversaryYears(e) {
@@ -251,8 +248,8 @@ class Q extends(r = l.ZP.PersistedStore) {
 E(Q, "displayName", "PremiumGiftingIntentStore"), E(Q, "persistKey", "PremiumGiftingIntentStore"), E(Q, "migrations", [e => {
   var t, n;
   return null == e ? e : {
-    friendsTabBadgeLastDismissedTime: null !== (t = e.friendsTabBadgeLastDismissedTime) && void 0 !== t ? t : null,
-    lastShownFriendsListGiftIntents: null !== (n = e.lastShownFriendsListGiftIntents) && void 0 !== n ? n : [],
+    friendsTabBadgeLastDismissedTime: null != (t = e.friendsTabBadgeLastDismissedTime) ? t : null,
+    lastShownFriendsListGiftIntents: null != (n = e.lastShownFriendsListGiftIntents) ? n : [],
     messageGiftIntentLastShownMap: {}
   }
 }]);

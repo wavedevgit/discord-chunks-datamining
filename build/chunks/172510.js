@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /\b/;
 
   function r(e, t) {
     if (0 === e.index) return;
     let n = e.input[e.index - 1];
-    (!(n >= "0") || !(n <= "9")) && "_" !== n && t.ignoreMatch()
+    n >= "0" && n <= "9" || "_" !== n && t.ignoreMatch()
   }
   let i = /[+-]?((\.\d+)|(\d+)(\.\d*)?)/,
     o = /[GM]\s*\d+(\.\d+)?/,
@@ -78,4 +78,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

@@ -29,7 +29,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,7 +54,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,7 +108,7 @@ function P() {
         modifiedAt: a,
         soundboardMuted: !1
       };
-      for (let [e, t] of Object.entries(r.localVolumes)) s[e] = O(v({
+      for (let [e, t] of Object.entries(r.localVolumes)) s[e] = O(y({
         muted: !1,
         modifiedAt: a
       }, s[e]), {
@@ -130,7 +130,7 @@ function w(e, t, n, r) {
     a = (0, m.z)(n);
   if (null == a) return !1;
   let s = e[a];
-  return s[t] = null !== (i = s[t]) && void 0 !== i ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && A(s, t, n), C(s), !0
+  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && A(s, t, n), C(s), !0
 }
 
 function D() {

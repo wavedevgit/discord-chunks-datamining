@@ -9,7 +9,7 @@ n.d(t, {
   Qj: () => S,
   Qy: () => O,
   Rg: () => h,
-  q5: () => v,
+  q5: () => y,
   t0: () => I,
   z8: () => b
 });
@@ -126,16 +126,16 @@ function E(e, t) {
 function b(e) {
   return f(t => {
     var n;
-    return null === (n = t.messageSendConfetti[e]) || void 0 === n ? void 0 : n.emoji
+    return null == (n = t.messageSendConfetti[e]) ? void 0 : n.emoji
   })
 }
 
-function v(e) {
+function y(e) {
   var t;
-  return null === (t = f.getState().messageSendConfetti[e]) || void 0 === t ? void 0 : t.emoji
+  return null == (t = f.getState().messageSendConfetti[e]) ? void 0 : t.emoji
 }
 
-function y(e) {
+function v(e) {
   return (0, i.j)(() => {
     f.setState(() => ({
       messageReactionConfetti: e
@@ -152,13 +152,13 @@ function O() {
 }
 
 function I(e, t, n) {
-  n ? y(e) : E(e, t)
+  n ? v(e) : E(e, t)
 }
 
 function S(e, t) {
   return f(n => {
     var r;
-    return t ? n.messageReactionConfetti : null === (r = n.messageSendConfetti[e]) || void 0 === r ? void 0 : r.emoji
+    return t ? n.messageReactionConfetti : null == (r = n.messageSendConfetti[e]) ? void 0 : r.emoji
   })
 }
 

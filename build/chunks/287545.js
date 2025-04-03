@@ -21,8 +21,8 @@ var i = n(772848),
   g = n(188597),
   E = n(695346),
   b = n(131704),
-  v = n(314897),
-  y = n(592125),
+  y = n(314897),
+  v = n(592125),
   O = n(19780),
   I = n(944486),
   S = n(594174),
@@ -62,7 +62,7 @@ let W = 2e3,
 function q(e) {
   var t;
   return {
-    releasePhase: null == e ? void 0 : null === (t = e.activity) || void 0 === t ? void 0 : t.client_platform_config[(0, G.Z)((0, A.getOS)())].release_phase
+    releasePhase: null == e || null == (t = e.activity) ? void 0 : t.client_platform_config[(0, G.Z)((0, A.getOS)())].release_phase
   }
 }
 
@@ -109,7 +109,7 @@ async function ee(e) {
     applicationId: n,
     location: r,
     instanceId: i
-  } = e, a = D.ZP.getEmbeddedActivityDurationMs(r.id, n), s = v.default.getSessionId();
+  } = e, a = D.ZP.getEmbeddedActivityDurationMs(r.id, n), s = y.default.getSessionId();
   null != i && null != s && await o.tn.post({
     url: V.ANM.ACTIVITY_LEAVE(n, r.id, i),
     body: {
@@ -119,7 +119,7 @@ async function ee(e) {
     rejectWithError: !1
   });
   let l = Y[n],
-    c = y.Z.getChannel((0, U.pY)(r)),
+    c = v.Z.getChannel((0, U.pY)(r)),
     u = S.default.getCurrentUser();
   if (null == l || null == u) return;
   let d = null == c ? void 0 : c.getGuildId(),
@@ -142,7 +142,7 @@ async function ee(e) {
     user_premium_tier: u.premiumType,
     raw_thermal_state: m,
     release_phase: h,
-    shelf_rank: null == _ ? void 0 : null === (t = _.activity) || void 0 === t ? void 0 : t.shelf_rank,
+    shelf_rank: null == _ || null == (t = _.activity) ? void 0 : t.shelf_rank,
     activity_user_session_id: l.activityUserSessionId,
     channel_type: null == c ? void 0 : c.type,
     media_session_ids: l.mediaSessionIds,
@@ -170,7 +170,7 @@ function et(e) {
     embeddedActivity: c,
     location: u,
     inviterUserId: f
-  } = e, h = v.default.getId(), m = l.find(e => e.userId === h), g = (0, U.pY)(u), E = y.Z.getChannel(g);
+  } = e, h = y.default.getId(), m = l.find(e => e.userId === h), g = (0, U.pY)(u), E = v.Z.getChannel(g);
   if (a && null != E && E.isPrivate() && o && null == m && s.Z.selectParticipant(E.id, null), null == m) return;
   let b = O.Z.getMediaSessionId(),
     I = c.compositeInstanceId,
@@ -214,7 +214,7 @@ function et(e) {
     n_participants: null != E ? _.Z.getUserParticipantCount(E.id) : null,
     is_activity_start: a,
     release_phase: B,
-    shelf_rank: null == j ? void 0 : null === (t = j.activity) || void 0 === t ? void 0 : t.shelf_rank,
+    shelf_rank: null == j || null == (t = j.activity) ? void 0 : t.shelf_rank,
     shelf_sorted_rank: G > 0 ? G : null,
     activity_user_session_id: A,
     channel_type: null == E ? void 0 : E.type,
@@ -234,7 +234,7 @@ function et(e) {
     activity_user_session_id: A,
     raw_thermal_state: F,
     is_activity_start: a,
-    shelf_rank: null == j ? void 0 : null === (n = j.activity) || void 0 === n ? void 0 : n.shelf_rank,
+    shelf_rank: null == j || null == (n = j.activity) ? void 0 : n.shelf_rank,
     shelf_sorted_rank: G > 0 ? G : null,
     activities_infra_version: P,
     embedded_activity_location_kind: u.kind
@@ -267,7 +267,7 @@ class er extends c.Z {
       }
       if (null != e) {
         let t = D.ZP.getEmbeddedActivitiesForChannel(e),
-          n = v.default.getId();
+          n = y.default.getId();
         t.forEach(e => {
           if (e.userIds.has(n)) {
             let t = (0, U.pY)(e.location),
@@ -317,7 +317,7 @@ class er extends c.Z {
         }
       } else if (i instanceof m.Z) {
         var f;
-        t = 1, r = i.reason, d = null !== (f = (0, g.A0)(i.reason, s)) && void 0 !== f ? f : d
+        t = 1, r = i.reason, d = null != (f = (0, g.A0)(i.reason, s)) ? f : d
       } else switch (t = 2, n = i.status, r = i.code, i.code) {
         case V.evJ.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
           d = Z.NW.string(Z.t.Gyzcra);
@@ -341,14 +341,14 @@ class er extends c.Z {
           d = Z.NW.string(Z.t.uGDCc3)
       }
       this.showLaunchErrorModal(d);
-      let _ = y.Z.getChannel(a),
+      let _ = v.Z.getChannel(a),
         b = null == _ ? void 0 : _.getGuildId(),
-        v = p.Z.getRawThermalState();
+        y = p.Z.getRawThermalState();
       T.default.track(V.rMx.ACTIVITY_SESSION_JOIN_FAILED, {
         channel_id: a,
         guild_id: b,
         application_id: s,
-        raw_thermal_state: v,
+        raw_thermal_state: y,
         is_activity_start: l,
         channel_type: null == _ ? void 0 : _.type,
         location_stack: null == u ? void 0 : u.locations,
@@ -401,20 +401,14 @@ class er extends c.Z {
         analyticsLocations: a,
         commandOrigin: s,
         inviterUserId: l
-      } = e, c = y.Z.getChannel(i);
+      } = e, c = v.Z.getChannel(i);
       if (void 0 === c || b.tx.has(null == c ? void 0 : c.type) && I.Z.getVoiceChannelId() !== i) return;
       let u = D.ZP.getSelfEmbeddedActivityForChannel(i);
       if ((null == u ? void 0 : u.applicationId) === o) return;
       let d = await f.ZP.fetchApplication(o);
-      if (!(0, j.a)(c)) {
-        this.showLaunchErrorModal(Z.NW.string(Z.t.UXoQTk));
-        return
-      }
-      if (!(0, B.Z)(null == d ? void 0 : null === (t = d.embedded_activity_config) || void 0 === t ? void 0 : t.supported_platforms)) {
-        this.showLaunchErrorModal(Z.NW.string(Z.t.uGDCc3));
-        return
-      }
-      let _ = null !== (n = null == c ? void 0 : c.getGuildId()) && void 0 !== n ? n : void 0,
+      if (!(0, j.a)(c)) return void this.showLaunchErrorModal(Z.NW.string(Z.t.UXoQTk));
+      if (!(0, B.Z)(null == d || null == (t = d.embedded_activity_config) ? void 0 : t.supported_platforms)) return void this.showLaunchErrorModal(Z.NW.string(Z.t.uGDCc3));
+      let _ = null != (n = null == c ? void 0 : c.getGuildId()) ? n : void 0,
         {
           activityConfigs: p,
           applications: h
@@ -437,7 +431,7 @@ class er extends c.Z {
         })
       }
       let m = D.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === o);
-      (null !== (r = null == m ? void 0 : m.userIds.size) && void 0 !== r ? r : 0) > 0 ? await (0, M.k)({
+      (null != (r = null == m ? void 0 : m.userIds.size) ? r : 0) > 0 ? await (0, M.k)({
         channelId: i,
         applicationId: o,
         launchId: null == m ? void 0 : m.launchId,

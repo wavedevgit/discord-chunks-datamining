@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(28546),
   E = n(285651),
   b = n(926491),
-  v = n(373228),
-  y = n(378233),
+  y = n(373228),
+  v = n(378233),
   O = n(419922),
   I = n(490095),
   S = n(652136),
@@ -31,7 +31,7 @@ var r = n(200651),
   C = n(278754),
   R = n(981631),
   P = n(388032),
-  w = n(573173);
+  w = n(813567);
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -166,10 +166,10 @@ function H(e) {
             e.preventDefault(), null == o && n && (_.focusFirstVisibleItem(), s(0));
             break;
           case "ArrowDown":
-            s(null), null === (i = t.current) || void 0 === i || i.focus();
+            s(null), null == (i = t.current) || i.focus();
             break;
           case "Escape":
-            s(null), u(!0), d(""), null === (a = t.current) || void 0 === a || a.focus()
+            s(null), u(!0), d(""), null == (a = t.current) || a.focus()
         }
         0 === o && _.containerProps.onKeyDown(e)
       }
@@ -211,7 +211,7 @@ let W = i.memo(function(e) {
         let t = "" !== e && null != e;
         if (X(t), t) {
           var r;
-          I(null), null === (r = n.current) || void 0 === r || r.focus()
+          I(null), null == (r = n.current) || r.focus()
         }
       };
     return m.addListener("text-changed", ee), m.addListener("autocomplete-visibility-change", e), m.addListener("selection-changed", t), () => {
@@ -246,8 +246,8 @@ let W = i.memo(function(e) {
         if (T.default.track(R.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
             sticker_id: e.id,
             suggestion_trigger: Y
-          }), t === E.eb.SENDABLE) x(!0), c(e, v.V0.EXPRESSION_SUGGESTIONS), et.cancel(), W("");
-        else if ((0, y.jl)(e)) {
+          }), t === E.eb.SENDABLE) x(!0), c(e, y.V0.EXPRESSION_SUGGESTIONS), et.cancel(), W("");
+        else if ((0, v.jl)(e)) {
           let t = b.Z.getStickerPack(e.pack_id);
           null != t && (0, S.Z)({
             stickerPack: t,
@@ -280,7 +280,7 @@ let W = i.memo(function(e) {
       },
       onClick: () => {
         var e;
-        return null === (e = n.current) || void 0 === e ? void 0 : e.focus()
+        return null == (e = n.current) ? void 0 : e.focus()
       },
       children: [(0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.bG, {
@@ -334,7 +334,7 @@ let W = i.memo(function(e) {
               },
               variant: "text-sm/normal",
               children: null != j ? P.NW.format(P.t["5gglIi"], {
-                stickerName: null === (t = J[+j]) || void 0 === t ? void 0 : t.sticker.name
+                stickerName: null == (t = J[+j]) ? void 0 : t.sticker.name
               }) : P.NW.format(P.t["8DjNnJ"], {
                 upHook: (e, t) => (0, r.jsx)(f.M2$, {
                   shortcut: "up",

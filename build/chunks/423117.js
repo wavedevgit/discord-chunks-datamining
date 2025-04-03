@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AE: () => y,
+  AE: () => v,
   FP: () => g,
   I1: () => O,
   O0: () => T,
   Qb: () => h,
   W2: () => m,
   Xj: () => N,
-  _d: () => v,
+  _d: () => y,
   dA: () => S,
   uw: () => E,
   vY: () => b
@@ -104,15 +104,15 @@ async function b(e) {
   for (let r of (i.Z.dispatch({
       type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS",
       groupListing: n
-    }), null !== (t = n.subscription_listings) && void 0 !== t ? t : [])) r.subscription_plans[0].id === e && await a.GZ(r.id, void 0, void 0, !0)
+    }), null != (t = n.subscription_listings) ? t : [])) r.subscription_plans[0].id === e && await a.GZ(r.id, void 0, void 0, !0)
 }
-async function v(e, t, n) {
+async function y(e, t, n) {
   await u.es(e, t, n), i.Z.dispatch({
     type: "GUILD_ROLE_SUBSCRIPTIONS_DELETE_LISTING",
     listingId: n
   })
 }
-async function y(e, t, n) {
+async function v(e, t, n) {
   let r = await u.V_(e, t, n);
   i.Z.dispatch({
     type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING",
@@ -173,13 +173,10 @@ async function N(e) {
     signal: t
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = !1;
   for (let o = 0; o < p; o++) try {
-    if (null == t ? void 0 : t.aborted) {
-      i.Z.dispatch({
-        type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_ABORTED",
-        guildId: e
-      });
-      return
-    }
+    if (null == t ? void 0 : t.aborted) return void i.Z.dispatch({
+      type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_ABORTED",
+      guildId: e
+    });
     i.Z.dispatch({
       type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS",
       guildId: e

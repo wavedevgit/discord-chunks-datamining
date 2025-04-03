@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  MS: () => v,
-  Ph: () => y,
+  MS: () => y,
+  Ph: () => v,
   _2: () => I,
   bE: () => b,
   gq: () => E,
@@ -74,7 +74,7 @@ let b = function(e) {
         return c.NW.string(c.t.DvMBkZ)
     }
   },
-  v = e => {
+  y = e => {
     switch (e) {
       case "twitch":
         return c.NW.string(c.t.AVGAk5);
@@ -84,7 +84,7 @@ let b = function(e) {
         return c.NW.string(c.t.gmCUFx)
     }
   },
-  y = e => {
+  v = e => {
     let t = a.Z.get((0, s.rR)(e)),
       n = (0, o.ZP)();
     return null != t && ["twitch", "youtube"].includes(e) ? "url('".concat((0, i.wj)(n) ? t.icon.darkSVG : t.icon.lightSVG, "')") : null

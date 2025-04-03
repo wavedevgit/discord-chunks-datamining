@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   IX: () => b,
-  Rt: () => v,
+  Rt: () => y,
   UM: () => g,
   ZP: () => E
 }), n(789020), n(610138), n(216116), n(78328), n(815648), n(47120);
@@ -161,7 +161,7 @@ let E = {
         let t = e => {
           var t, n;
           let r = c.Z.getApplication(e),
-            i = (0, l.yE)(null !== (n = null == r ? void 0 : r.flags) && void 0 !== n ? n : 0, u.udG.EMBEDDED) && ((null == r ? void 0 : null === (t = r.embeddedActivityConfig) || void 0 === t ? void 0 : t.supported_platforms) == null || (null == r ? void 0 : r.bot) == null);
+            i = (0, l.yE)(null != (n = null == r ? void 0 : r.flags) ? n : 0, u.udG.EMBEDDED) && ((null == r || null == (t = r.embeddedActivityConfig) ? void 0 : t.supported_platforms) == null || (null == r ? void 0 : r.bot) == null);
           return !(null != r && !i) && !c.Z.isFetchingApplication(e) && !c.Z.didFetchingApplicationFail(e) && e.length > 0
         };
         n = e.filter(t)
@@ -200,7 +200,7 @@ let E = {
     useStateHook: r.e7
   });
 
-function v(e) {
+function y(e) {
   let {
     data: t,
     isLoading: n,

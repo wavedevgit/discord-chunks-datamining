@@ -33,7 +33,7 @@ function h(e, t) {
 
 function m(e) {
   null != p && clearInterval(p), _ = 0;
-  let t = v();
+  let t = y();
   p = setInterval(() => {
     h(t, e)
   }, l)
@@ -41,7 +41,7 @@ function m(e) {
 
 function g() {
   null != p && clearInterval(p), d.loop(), _ = c;
-  let e = v();
+  let e = y();
   p = setInterval(() => h(e), l)
 }
 
@@ -53,10 +53,10 @@ function b() {
   m(d.stop.bind(d))
 }
 
-function v() {
+function y() {
   return l / u * (_ - f)
 }
-class y extends o.Z {
+class v extends o.Z {
   constructor(...e) {
     super(...e), s(this, "actions", {
       VIBING_WUMPUS_PLAY_MUSIC: g,
@@ -65,4 +65,4 @@ class y extends o.Z {
     })
   }
 }
-let O = new y
+let O = new v

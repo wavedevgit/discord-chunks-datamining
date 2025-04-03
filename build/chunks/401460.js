@@ -16,7 +16,7 @@ var r = n(200651),
   _ = n(441319),
   p = n(981631),
   h = n(388032),
-  m = n(825220);
+  m = n(770580);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,15 +51,15 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = () => [h.NW.string(h.t.EgWTY2), h.NW.string(h.t.umBn5e), h.NW.string(h.t.dG1wDw), h.NW.string(h.t.SesI4e), h.NW.string(h.t.RnMLvr)],
+let v = () => [h.NW.string(h.t.EgWTY2), h.NW.string(h.t.umBn5e), h.NW.string(h.t.dG1wDw), h.NW.string(h.t.SesI4e), h.NW.string(h.t.RnMLvr)],
   O = () => {
     var e;
-    return null !== (e = l().sample(y())) && void 0 !== e ? e : h.NW.string(h.t.EgWTY2)
+    return null != (e = l().sample(v())) ? e : h.NW.string(h.t.EgWTY2)
   };
 
 function I(e) {
@@ -71,16 +71,16 @@ function I(e) {
     tabIndex: l,
     children: f,
     locked: h = !1
-  } = e, [g, b] = i.useState((0, _.aW)(t).name), y = t === d.Ru.PIRATE, I = (0, c.xUy)({
+  } = e, [g, b] = i.useState((0, _.aW)(t).name), v = t === d.Ru.PIRATE, I = (0, c.xUy)({
     label: g,
     isSelected: s
   });
   return (0, r.jsx)(c.ua7, {
     text: g,
-    onTooltipShow: () => y && b(O()),
+    onTooltipShow: () => v && b(O()),
     children: e => (0, r.jsxs)("div", {
       className: m.appIconSelectionContainer,
-      children: [(0, r.jsx)(c.P3F, v(E({}, e, I), {
+      children: [(0, r.jsx)(c.P3F, y(E({}, e, I), {
         tabIndex: null != l ? l : I.tabIndex,
         className: a()(m.appIconSelection, {
           [m.selected]: s

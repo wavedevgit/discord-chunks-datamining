@@ -20,14 +20,14 @@ var r = n(200651),
   g = n(430824),
   E = n(451478),
   b = n(768581),
-  v = n(392552),
-  y = n(543241),
+  y = n(392552),
+  v = n(543241),
   O = n(199257),
   I = n(880949),
   S = n(784222),
   T = n(149203),
   N = n(388032),
-  A = n(907578);
+  A = n(466988);
 let C = 250;
 
 function R(e) {
@@ -52,7 +52,7 @@ let P = e => {
       } = e,
       {
         enabled: U
-      } = v.Z.useExperiment({
+      } = y.Z.useExperiment({
         location: "EmojiPicker"
       }, {
         autoTrackExposure: !1
@@ -64,7 +64,7 @@ let P = e => {
           rowIndex: t,
           columnIndex: n
         } = G;
-        return null === (e = x[t]) || void 0 === e ? void 0 : e[n]
+        return null == (e = x[t]) ? void 0 : e[n]
       }, [x, G]);
     switch (null == B ? void 0 : B.type) {
       case S.ld.EMOJI:
@@ -92,7 +92,7 @@ let P = e => {
       V = (0, o.e7)([E.Z], () => E.Z.isFocused()),
       Z = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
       H = m.Yk.useSetting(),
-      W = (0, y.C1)(M, R(t) ? t : null),
+      W = (0, v.C1)(M, R(t) ? t : null),
       Y = (0, o.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
@@ -101,7 +101,7 @@ let P = e => {
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
-          Date.now() - e >= C && R(t) && z !== T.t0.NONE && (z === T.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, K[0].id), null != G.source && (0, y.Gn)({
+          Date.now() - e >= C && R(t) && z !== T.t0.NONE && (z === T.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, K[0].id), null != G.source && (0, v.Gn)({
             emoji: t,
             subCategory: z,
             position: B.columnIndex + 1,
@@ -122,7 +122,7 @@ let P = e => {
         className: A.glyphEmoji,
         children: "surrogates" in t ? t.surrogates : null
       }) : (0, r.jsx)("img", {
-        alt: null !== (Q = t.allNamesString) && void 0 !== Q ? Q : "",
+        alt: null != (Q = t.allNamesString) ? Q : "",
         src: e,
         className: A.emoji
       })

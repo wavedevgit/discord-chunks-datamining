@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r, i = n(442837),
   o = n(570140),
@@ -93,27 +93,27 @@ function b(e) {
     channelId: n,
     id: r
   } = e;
-  (null === (t = p[n]) || void 0 === t ? void 0 : t.messageId) === r && (delete p[n], delete h[n])
+  (null == (t = p[n]) ? void 0 : t.messageId) === r && (delete p[n], delete h[n])
 }
-class v extends(r = i.ZP.Store) {
+class y extends(r = i.ZP.Store) {
   isEditing(e, t) {
     var n;
-    return (null === (n = p[e]) || void 0 === n ? void 0 : n.messageId) === t
+    return (null == (n = p[e]) ? void 0 : n.messageId) === t
   }
   isEditingAny(e) {
     return null != p[e]
   }
   getEditingTextValue(e) {
     var t;
-    return null === (t = p[e]) || void 0 === t ? void 0 : t.textValue
+    return null == (t = p[e]) ? void 0 : t.textValue
   }
   getEditingRichValue(e) {
     var t;
-    return null === (t = p[e]) || void 0 === t ? void 0 : t.richValue
+    return null == (t = p[e]) ? void 0 : t.richValue
   }
   getEditingMessageId(e) {
     var t;
-    return null === (t = p[e]) || void 0 === t ? void 0 : t.messageId
+    return null == (t = p[e]) ? void 0 : t.messageId
   }
   getEditingMessage(e) {
     let t = p[e];
@@ -123,8 +123,8 @@ class v extends(r = i.ZP.Store) {
     return h[e]
   }
 }
-u(v, "displayName", "EditMessageStore");
-let y = new v(o.Z, {
+u(y, "displayName", "EditMessageStore");
+let v = new y(o.Z, {
   MESSAGE_START_EDIT: m,
   MESSAGE_UPDATE_EDIT: g,
   MESSAGE_END_EDIT: E,

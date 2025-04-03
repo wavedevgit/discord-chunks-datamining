@@ -48,10 +48,7 @@ let E = {
       r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       i = c.Z.getChannel(e),
       o = null == i ? void 0 : i.getGuildId();
-    if ((null == i ? void 0 : i.isGuildVocal()) && (null == i ? void 0 : i.isNSFW()) && (!(null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.nsfwAllowed) || !u.Z.didAgree(o))) {
-      (0, s.uL)(g.Z5c.CHANNEL(o, e));
-      return
-    }
+    if ((null == i ? void 0 : i.isGuildVocal()) && (null == i ? void 0 : i.isNSFW()) && (!(null == (t = p.default.getCurrentUser()) ? void 0 : t.nsfwAllowed) || !u.Z.didAgree(o))) return void(0, s.uL)(g.Z5c.CHANNEL(o, e));
     d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, m.h)(e, o, n, r))
   },
   disconnect() {

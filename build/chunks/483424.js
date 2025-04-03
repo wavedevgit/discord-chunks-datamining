@@ -27,8 +27,8 @@ function p(e) {
   } = e, {
     live: E,
     stream: b
-  } = (0, l.Z)(t.id), [v] = E, {
-    voiceChannel: y
+  } = (0, l.Z)(t.id), [y] = E, {
+    voiceChannel: v
   } = (0, c.Z)({
     userId: t.id,
     guildId: h,
@@ -41,16 +41,16 @@ function p(e) {
   } = (0, o.U)({
     location: "UserProfileFeaturedActivity"
   });
-  return I || null == b ? I || null == v ? S && !I && null != y ? (0, r.jsx)(f.Z, {
+  return I || null == b ? I || null == y ? S && !I && null != v ? (0, r.jsx)(f.Z, {
     user: t,
     currentUser: n,
-    voiceChannel: y,
+    voiceChannel: v,
     className: m,
     onClose: g
   }) : null : (0, r.jsx)(u.Z, {
     user: t,
     currentUser: n,
-    activity: v,
+    activity: y,
     profileGuildId: null == p ? void 0 : p.guildId,
     className: m,
     onClose: g

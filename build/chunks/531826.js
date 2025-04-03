@@ -23,7 +23,7 @@ function p(e) {
     application: n,
     channelId: r
   } = e;
-  if (null != n && (0, a.yE)(null !== (t = n.flags) && void 0 !== t ? t : 0, _.udG.EMBEDDED)) {
+  if (null != n && (0, a.yE)(null != (t = n.flags) ? t : 0, _.udG.EMBEDDED)) {
     if (o.Z.getWindowOpen(_.KJ3.ACTIVITY_POPOUT) && c.ZP.getActivityPanelMode() === f.Ez.ACTIVITY_POPOUT_WINDOW) return _.KJ3.ACTIVITY_POPOUT;
     if (o.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT) && (0, d.Z)(r) && !(0, s.R)({
         isContextless: (0, l.Kb)(n)

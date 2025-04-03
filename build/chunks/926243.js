@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(430824),
   E = n(358085),
   b = n(288406),
-  v = n(388032),
-  y = n(790584);
+  y = n(388032),
+  v = n(139642);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -100,22 +100,22 @@ let C = (e, t) => "".concat(e, ":").concat(t),
     let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
       w = () => {
         let e = n.allNamesString;
-        return ((null == P ? void 0 : P.name) != null && (e = v.NW.formatToPlainString(v.t["nXv4/P"], {
+        return ((null == P ? void 0 : P.name) != null && (e = y.NW.formatToPlainString(y.t["nXv4/P"], {
           names: e,
           guildName: P.name
-        })), i) ? v.NW.formatToPlainString(v.t["9FI9Z2"], {
+        })), i) ? y.NW.formatToPlainString(y.t["9FI9Z2"], {
           names: e
         }) : e
       },
       D = d && !C;
     return (0, r.jsx)(l.tEY, {
       children: (0, r.jsx)("button", T(I({}, R), {
-        className: a()(y.emojiItem, {
-          [y.emojiItemLarge]: o,
-          [y.emojiItemMedium]: c,
-          [y.emojiItemSelected]: u,
+        className: a()(v.emojiItem, {
+          [v.emojiItemLarge]: o,
+          [v.emojiItemMedium]: c,
+          [v.emojiItemSelected]: u,
           [null != A ? A : ""]: u,
-          [y.showPulse]: _
+          [v.showPulse]: _
         }),
         "data-type": p.S.EMOJI,
         "data-id": n.id,
@@ -146,7 +146,7 @@ function P(e) {
     channelGuildId: p,
     onInspect: g,
     onSelect: b,
-    isScrolling: y,
+    isScrolling: v,
     isUsingKeyboardNavigation: O,
     showEmojiFavoriteTooltip: S,
     surrogateCodePoint: A,
@@ -167,14 +167,14 @@ function P(e) {
     isDisabled: z,
     columnIndex: q
   } = t, Q = e => {
-    if (e.stopPropagation(), y.current || O.current) return;
+    if (e.stopPropagation(), v.current || O.current) return;
     let n = e.altKey;
     n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && k(o), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
   }, X = () => {
-    y.current || O.current || g(t)
+    v.current || O.current || g(t)
   }, J = e => {
     (0, c.jW)(e, async () => {
       let {
@@ -187,7 +187,7 @@ function P(e) {
     let {
       onMouseEnter: t,
       onMouseLeave: n
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null !== (e = w(q, f)) && void 0 !== e ? e : {}, {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null != (e = w(q, f)) ? e : {}, {
       ref: l,
       tabIndex: c,
       onFocus: u
@@ -228,7 +228,7 @@ function P(e) {
     }))
   };
   return S ? (0, r.jsx)(l.ua7, {
-    text: v.NW.formatToPlainString(v.t.glqNsb, {
+    text: y.NW.formatToPlainString(y.t.glqNsb, {
       key: (0, E.isMac)() ? "Opt" : "Alt"
     }),
     position: "top",

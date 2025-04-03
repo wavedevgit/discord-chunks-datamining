@@ -78,8 +78,8 @@ function h(e, t) {
       paddingFix: g = !0,
       fade: E = !1,
       onScroll: b,
-      style: v
-    } = o, y = _(o, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
+      style: y
+    } = o, v = _(o, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
     let O = i.useRef(null),
       I = (0, l.tT)({
         paddingFix: g,
@@ -97,9 +97,9 @@ function h(e, t) {
         [e]: !0,
         [t]: E
       }),
-      style: (0, l.uT)(v, m),
+      style: (0, l.uT)(y, m),
       dir: h
-    }, y), {
+    }, v), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: O,
         children: [d, I]

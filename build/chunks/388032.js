@@ -55,7 +55,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-n(200370);
+n(120235);
 let p = function(e) {
     return [Array.isArray(navigator.languages) ? navigator.languages[0] : null, navigator.language, navigator.browserLanguage, navigator.userLanguage, e].find(e => null != e && "" !== e)
   }("en-US"),
@@ -95,7 +95,7 @@ let p = function(e) {
           case "object":
             var c;
             if (null == o) break;
-            l.onClick = null !== (c = o.onClick) && void 0 !== c ? c : o, l.onContextMenu = o.onContextMenu
+            l.onClick = null != (c = o.onClick) ? c : o, l.onContextMenu = o.onContextMenu
         }
         return (0, i.createElement)(a, _(d({}, l), {
           key: t

@@ -3,7 +3,7 @@
 n.d(t, {
   $7: () => X,
   $e: () => Y,
-  GJ: () => v,
+  GJ: () => y,
   Gy: () => A,
   RD: () => q,
   RZ: () => x,
@@ -62,32 +62,32 @@ function b(e) {
   return e
 }
 
-function v(e) {
+function y(e) {
   return r.e$(e.permissions, m.Plq.ADMINISTRATOR)
 }
 
-function y(e) {
+function v(e) {
   return r.e$(e.permissions, m.Plq.ADMINISTRATOR) ? h.aC.ADMINISTRATOR : h.aC.ROLE
 }
 
 function O(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    r = y(e);
+    r = v(e);
   return {
     rowType: r,
-    colorString: null !== (t = e.colorString) && void 0 !== t ? t : (0, i.Rf)(m.p6O),
+    colorString: null != (t = e.colorString) ? t : (0, i.Rf)(m.p6O),
     name: e.name,
     id: e.id,
-    disabled: v(e) || n,
+    disabled: y(e) || n,
     key: "".concat(r, ":").concat(e.id),
     tags: e.tags
   }
 }
 
 function I(e, t) {
-  let n = +!v(e),
-    r = +!v(t);
+  let n = +!y(e),
+    r = +!y(t);
   return n !== r ? n - r : t.position - e.position
 }
 
@@ -124,22 +124,22 @@ function C(e, t) {
 
 function R(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return Object.values(t).filter(t => !v(t) && T(n, t.id, r) && C(e, t) && i(t.name)).sort(I).map(e => O(e))
+  return Object.values(t).filter(t => !y(t) && T(n, t.id, r) && C(e, t) && i(t.name)).sort(I).map(e => O(e))
 }
 
 function P(e, t, n, i) {
   let o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return Object.values(t).filter(t => !v(t) && T(n, t.id, i) && C(e, t) && o(t.name)).sort(I).map(e => O(e, r.e$(e.permissions, i)))
+  return Object.values(t).filter(t => !y(t) && T(n, t.id, i) && C(e, t) && o(t.name)).sort(I).map(e => O(e, r.e$(e.permissions, i)))
 }
 
 function w(e, t, n, r, i) {
-  return Object.values(t).filter(t => v(t) || !T(n, t.id, r, i) && C(e, t))
+  return Object.values(t).filter(t => y(t) || !T(n, t.id, r, i) && C(e, t))
 }
 
 function D(e, t, n, i, o) {
   return Object.values(t).filter(t => {
     var a;
-    return v(t) || !T(n, t.id, i, o) && C(e, t) || r.e$(r.$e(t.permissions, null === (a = n.permissionOverwrites[t.id]) || void 0 === a ? void 0 : a.allow), i)
+    return y(t) || !T(n, t.id, i, o) && C(e, t) || r.e$(r.$e(t.permissions, null == (a = n.permissionOverwrites[t.id]) ? void 0 : a.allow), i)
   })
 }
 
@@ -155,7 +155,7 @@ function x(e, t, n, i, o) {
 
 function M(e, t) {
   var n;
-  return null !== (n = l.ZP.getNick(t.id, e.id)) && void 0 !== n ? n : p.ZP.getName(e)
+  return null != (n = l.ZP.getNick(t.id, e.id)) ? n : p.ZP.getName(e)
 }
 
 function k(e, t) {
@@ -172,7 +172,7 @@ function U(e, t) {
   return {
     rowType: r,
     name: M(e, t),
-    nickname: null !== (n = l.ZP.getNick(t.id, e.id)) && void 0 !== n ? n : null,
+    nickname: null != (n = l.ZP.getNick(t.id, e.id)) ? n : null,
     username: p.ZP.getName(e),
     id: e.id,
     avatarURL: e.getAvatarURL(t.id, 24),

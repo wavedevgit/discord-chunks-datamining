@@ -1,4 +1,3 @@
 /** Chunk was on web.js **/
 "use strict";
-var r = n(400957);
-e.exports = r && !Symbol.sham && "symbol" == typeof Symbol.iterator
+e.exports = n(400957) && !Symbol.sham && "symbol" == typeof Symbol.iterator

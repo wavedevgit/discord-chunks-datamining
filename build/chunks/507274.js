@@ -77,7 +77,7 @@ let h = i.createContext({
       impression: d,
       disableTrack: p,
       returnRef: m
-    } = e, g = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null), b = i.useRef(null), [v, y] = i.useState(!1), O = v ? b : E;
+    } = e, g = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null), b = i.useRef(null), [y, v] = i.useState(!1), O = y ? b : E;
     (0, o.T)(O, {
       returnRef: m
     }), i.useContext(l.Z)({
@@ -88,8 +88,8 @@ let h = i.createContext({
       disableTrack: p
     }), i.useImperativeHandle(t, () => E.current);
     let I = i.useCallback(e => {
-      v !== e && y(e)
-    }, [v]);
+      y !== e && v(e)
+    }, [y]);
     return (0, r.jsx)(h.Provider, {
       value: {
         inDialog: !0,

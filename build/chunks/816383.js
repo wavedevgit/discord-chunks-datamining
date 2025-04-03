@@ -42,19 +42,19 @@ var s = function() {
       else {
         i = f[m];
         var b = f[m + 1],
-          v = i + b;
-        h.push(3 * v / ((v + b) / g + (v + i) / E))
+          y = i + b;
+        h.push(3 * y / ((y + b) / g + (y + i) / E))
       }
     }
     h.push(_[_.length - 1]);
-    for (var y = [], O = [], I = 0; I < h.length - 1; I++) {
+    for (var v = [], O = [], I = 0; I < h.length - 1; I++) {
       s = _[I];
       var S = h[I],
         T = 1 / f[I],
         N = S + h[I + 1] - s - s;
-      y.push((s - S - N) * T), O.push(N * T * T)
+      v.push((s - S - N) * T), O.push(N * T * T)
     }
-    this.xs = t, this.ys = n, this.c1s = h, this.c2s = y, this.c3s = O
+    this.xs = t, this.ys = n, this.c1s = h, this.c2s = v, this.c3s = O
   }
   return o(e, [{
     key: "interpolate",

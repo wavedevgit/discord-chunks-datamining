@@ -42,11 +42,11 @@ let h = 5,
   g = /\.avif($|\?|#)/i,
   E = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
   b = 4096,
-  v = new(a())({
+  y = new(a())({
     max: 1e3
   });
 
-function y(e, t) {
+function v(e, t) {
   null == e.backoff && (e.backoff = new l.Z);
   let {
     backoff: n
@@ -60,7 +60,7 @@ function y(e, t) {
 
 function O(e) {
   let t = new Image;
-  t.onerror = y(e, t), t.onload = () => {
+  t.onerror = v(e, t), t.onload = () => {
     let {
       backoff: n
     } = e;
@@ -73,7 +73,7 @@ function I(e, t, n) {
     callbacks: r,
     url: i
   } = t;
-  if (e) v.del(i);
+  if (e) y.del(i);
   else {
     let {
       width: e,
@@ -84,18 +84,18 @@ function I(e, t, n) {
       loaded: !0,
       width: e,
       height: r
-    }, v.set(i, t)
+    }, y.set(i, t)
   }
   null != r && r.forEach(n => n(e, t))
 }
 
 function S(e) {
-  let t = v.get(e);
+  let t = y.get(e);
   return null != t && t.loaded
 }
 
 function T(e, t) {
-  let n = v.get(e);
+  let n = y.get(e);
   if (null != n && n.loaded) return null != t && u.Z.awaitOnline().then(() => {
     null != n && null != n.callbacks && n.callbacks.forEach(t => {
       null != n ? t(!1, n) : t(!0, {
@@ -109,7 +109,7 @@ function T(e, t) {
     return null == n && (n = {
       url: e,
       loaded: !1
-    }, v.set(e, n), O(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
+    }, y.set(e, n), O(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
       null != r && null != n && (null != n.callbacks && n.callbacks.delete(r), null != n.backoff && n.backoff.cancel())
     }
   }
@@ -122,7 +122,7 @@ function N(e) {
     let t = E.filter(t => t <= e).pop();
     if (null != t && e / t <= 1.25) return t
   }
-  return null !== (t = E.find(t => e <= t)) && void 0 !== t ? t : E[E.length - 1]
+  return null != (t = E.find(t => e <= t)) ? t : E[E.length - 1]
 }
 
 function A(e) {

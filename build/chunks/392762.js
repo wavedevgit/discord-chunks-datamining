@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
     begin: "`[\\s\\S]"
   };
@@ -47,4 +47,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

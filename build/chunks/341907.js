@@ -30,8 +30,8 @@ var i = n(772848),
   g = n(617136),
   E = n(569984),
   b = n(497505),
-  v = n(918701),
-  y = n(184299),
+  y = n(918701),
+  v = n(184299),
   O = n(862847),
   I = n(5881),
   S = n(492112),
@@ -93,7 +93,7 @@ function k(e) {
   (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("37447"), n.e("64838"), n.e("48923"), n.e("4605")]).then(n.bind(n, 985866));
+    } = await Promise.all([n.e("37447"), n.e("64838"), n.e("48923"), n.e("64842")]).then(n.bind(n, 985866));
     return n => (0, r.jsx)(e, L(w({}, n), {
       questId: t,
       questContentPosition: o,
@@ -106,7 +106,7 @@ function k(e) {
 
 function j(e, t) {
   var i;
-  (null === (i = e.userStatus) || void 0 === i ? void 0 : i.claimedAt) == null ? (0, s.ZDy)(async () => {
+  (null == (i = e.userStatus) ? void 0 : i.claimedAt) == null ? (0, s.ZDy)(async () => {
     let {
       default: i
     } = await Promise.resolve().then(n.bind(n, 824393));
@@ -198,7 +198,7 @@ function V(e) {
 }
 
 function Z() {
-  return Promise.all([n.e("29976"), n.e("32249"), n.e("63689")]).then(n.bind(n, 536687))
+  return Promise.all([n.e("29976"), n.e("32249"), n.e("58914")]).then(n.bind(n, 536687))
 }
 
 function H(e) {
@@ -215,15 +215,15 @@ function H(e) {
       videoSessionId: n
     }))
   }, {
-    modalKey: (0, v.u7)(e.id),
+    modalKey: (0, y.u7)(e.id),
     backdropStyle: s.fCB.IMMERSIVE,
     onCloseCallback: () => {
       var t, r;
-      let i = y.ZP.getState().getVideoProgress(e.id);
+      let i = v.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
       let o = E.Z.getQuest(e.id);
-      null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, v.FI)(o, i.maxTimestampSec);
-      let a = (0, v.bA)(i.maxTimestampSec, i.duration);
+      null != o && (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null && (null == (r = o.userStatus) ? void 0 : r.completedAt) == null && (0, y.FI)(o, i.maxTimestampSec);
+      let a = (0, y.bA)(i.maxTimestampSec, i.duration);
       (0, g.dA)({
         questId: e.id,
         event: C.rMx.QUEST_VIDEO_PROGRESSED,
@@ -247,7 +247,7 @@ function H(e) {
 
 function W(e) {
   var t;
-  let n = null === (t = platform.os) || void 0 === t ? void 0 : t.family,
+  let n = null == (t = platform.os) ? void 0 : t.family,
     r = "quest";
   if ("Android" === n || "iOS" === n) {
     let t = _.default.getFingerprint(),

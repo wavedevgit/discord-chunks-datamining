@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(390507),
   d = n(679400),
   f = n(580747),
-  _ = n(388289);
+  _ = n(480993);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,8 +46,8 @@ function m(e, t) {
     width: g,
     height: E,
     className: b,
-    initialAnimation: v,
-    markers: y
+    initialAnimation: y,
+    markers: v
   } = e, [O, I] = i.useState(null), S = i.useRef(null), T = i.useRef(null), N = i.useRef(null), A = "custom" === m ? {
     width: g,
     height: E
@@ -55,33 +55,32 @@ function m(e, t) {
     enabled: P
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), w = R || !P, D = i.useRef(v);
+  }), w = R || !P, D = i.useRef(y);
   return i.useImperativeHandle(t, () => ({
     play: e => {
-      if (null != N.current) {
+      if (null != N.current)
         if (T.current = e, w) {
-          let t = y[e];
+          let t = v[e];
           N.current.resetSegments(!0), N.current.setSegment(t.start + t.duration, t.start + t.duration), N.current.stop()
-        } else N.current.setLoop(!C && e.includes("hover")), N.current.resetSegments(!0), N.current.playSegments([y[e].start, y[e].start + y[e].duration], !0)
-      }
+        } else N.current.setLoop(!C && e.includes("hover")), N.current.resetSegments(!0), N.current.playSegments([v[e].start, v[e].start + v[e].duration], !0)
     },
     stop: () => {
       if (null == N.current || w) return
     },
     stopIfPlaying: e => {
-      null == N.current || w || T.current !== e || (N.current.resetSegments(!0), N.current.setSegment(y[e].start, y[e].start), N.current.stop())
+      null == N.current || w || T.current === e && (N.current.resetSegments(!0), N.current.setSegment(v[e].start, v[e].start), N.current.stop())
     },
     getDuration: e => null == N.current ? null : N.current.getDuration(e)
-  }), [w, C, y]), i.useEffect(() => {
+  }), [w, C, v]), i.useEffect(() => {
     null == O && p().then(e => I(e.default))
   }, [O, p]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
     var t;
     let n, {
         default: r
       } = e,
-      i = null !== (t = T.current) && void 0 !== t ? t : D.current;
-    if (null != i && null != y[i]) {
-      let e = y[i];
+      i = null != (t = T.current) ? t : D.current;
+    if (null != i && null != v[i]) {
+      let e = v[i];
       n = [e.start, e.start + e.duration]
     }
     null != S.current && (N.current = r.loadAnimation({
@@ -94,8 +93,8 @@ function m(e, t) {
     }))
   }), () => {
     var e;
-    null === (e = N.current) || void 0 === e || e.destroy()
-  }), [O, y]), (0, r.jsx)("div", {
+    null == (e = N.current) || e.destroy()
+  }), [O, v]), (0, r.jsx)("div", {
     style: h({
       "--__lottieIconColor": null != o && "string" == typeof o ? o : null == o ? void 0 : o.css,
       display: "flex"

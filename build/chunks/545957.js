@@ -35,7 +35,7 @@ function u(e, t) {
     d && null != p && s.default.track(c.rMx.USER_VOICE_ACTIVITY_VIEWED, {
       surface: t,
       activity_user_id: e,
-      discoverable: null === (r = p.discoverable) || void 0 === r || r,
+      discoverable: null == (r = p.discoverable) || r,
       relationship_type: f,
       treatment: n && !1 === p.discoverable || u && f === c.OGo.BLOCKED ? l.h9.HIDE : l.h9.SHOW
     })

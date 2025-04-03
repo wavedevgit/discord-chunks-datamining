@@ -39,12 +39,12 @@ function b(e, t) {
   return 0 === n.size && p.delete(e), r
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   var r, i, o;
-  return ((null !== (o = null === (i = p.get(e)) || void 0 === i ? void 0 : null === (r = i.get(t)) || void 0 === r ? void 0 : r.flags) && void 0 !== o ? o : f.Dg.NONE) & n) === n
+  return ((null != (o = null == (i = p.get(e)) || null == (r = i.get(t)) ? void 0 : r.flags) ? o : f.Dg.NONE) & n) === n
 }
 
-function y(e, t) {
+function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = p.get(e);
   if (null == r) return !1;
@@ -59,11 +59,11 @@ function O(e, t, n) {
   var r, i;
   let o = E(e),
     a = o.get(t),
-    s = null !== (r = null == a ? void 0 : a.flags) && void 0 !== r ? r : 0;
+    s = null != (r = null == a ? void 0 : a.flags) ? r : 0;
   if (0 === s && 0 === n) return !1;
   if (0 === n) o.delete(t), 0 === o.size && p.delete(e);
   else {
-    let e = null !== (i = null == a ? void 0 : a.since) && void 0 !== i ? i : null,
+    let e = null != (i = null == a ? void 0 : a.since) ? i : null,
       r = (s & f.Dg.VOICE) === f.Dg.VOICE,
       l = (n & f.Dg.VOICE) === f.Dg.VOICE;
     r !== l && (e = l ? Date.now() : null), o.set(t, {
@@ -119,29 +119,29 @@ class N extends(r = i.ZP.Store) {
   getSpeakingDuration(e, t) {
     var n, r;
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.Yn.DEFAULT,
-      o = null === (r = p.get(i)) || void 0 === r ? void 0 : null === (n = r.get(e)) || void 0 === n ? void 0 : n.since;
+      o = null == (r = p.get(i)) || null == (n = r.get(e)) ? void 0 : n.since;
     return null != o ? t - o : 0
   }
   getSpeakers() {
     var e, t;
     let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;
-    return Array.from(null !== (t = null === (e = p.get(n)) || void 0 === e ? void 0 : e.keys()) && void 0 !== t ? t : []).filter(e => v(n, e, f.Dg.VOICE))
+    return Array.from(null != (t = null == (e = p.get(n)) ? void 0 : e.keys()) ? t : []).filter(e => y(n, e, f.Dg.VOICE))
   }
   isSpeaking(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return v(t, e, f.Dg.VOICE)
+    return y(t, e, f.Dg.VOICE)
   }
   isPrioritySpeaker(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return v(t, e, f.Dg.PRIORITY)
+    return y(t, e, f.Dg.PRIORITY)
   }
   isSoundSharing(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return v(t, e, f.Dg.SOUNDSHARE)
+    return y(t, e, f.Dg.SOUNDSHARE)
   }
   isAnyoneElseSpeaking() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;
-    return y(e, f.Dg.VOICE, !0)
+    return v(e, f.Dg.VOICE, !0)
   }
   isCurrentUserSpeaking() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;
@@ -149,7 +149,7 @@ class N extends(r = i.ZP.Store) {
   }
   isAnyonePrioritySpeaking() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;
-    return y(e, f.Dg.VOICE | f.Dg.PRIORITY)
+    return v(e, f.Dg.VOICE | f.Dg.PRIORITY)
   }
   isCurrentUserPrioritySpeaking() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;

@@ -45,8 +45,8 @@ var r, i = n(863714),
     }
   }),
   b = f(null),
-  v = Math.random(),
-  y = f(null, {
+  y = Math.random(),
+  v = f(null, {
     narrow: {},
     short: {},
     long: {}
@@ -485,29 +485,30 @@ function k(e, t, n, r, i) {
   for (var h = "-u", m = 0, g = r.length; m < g;) {
     var E = r[m],
       b = i[a][E],
-      v = b["0"],
-      y = "",
+      y = b["0"],
+      v = "",
       O = d;
     if (void 0 !== f) {
       var I = O.call(f, E);
-      if (-1 !== I) {
+      if (-1 !== I)
         if (I + 1 < _ && f[I + 1].length > 2) {
           var S = f[I + 1],
             T = O.call(b, S);
-          if (-1 !== T) var v = S,
-            y = "-" + E + "-" + v
+          if (-1 !== T) var y = S,
+            v = "-" + E + "-" + y
         } else {
           var T = O(b, "true");
-          if (-1 !== T) var v = "true"
+          if (-1 !== T) var y = "true"
         }
-      }
     }
     if (c.call(n, "[[" + E + "]]")) {
-      var N = n["[[" + E + "]]"]; - 1 !== O.call(b, N) && N !== v && (v = N, y = "")
+      var N = n["[[" + E + "]]"]; - 1 !== O.call(b, N) && N !== y && (y = N, v = "")
     }
-    p["[[" + E + "]]"] = v, h += y, m++
+    p["[[" + E + "]]"] = y, h += v, m++
   }
-  if (h.length > 2) var a = a.substring(0, l) + h + a.substring(l);
+  if (h.length > 2) var A = a.substring(0, l),
+    C = a.substring(l),
+    a = A + h + C;
   return p["[[locale]]"] = a, p
 }
 
@@ -571,7 +572,7 @@ function Z(e, t, n) {
   if (!0 === r["[[initializedIntlObject]]"]) throw TypeError("`this` object has already been initialized as an Intl object");
   u(e, "__getInternalProperties", {
     value: function() {
-      if (arguments[0] === v) return r
+      if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = !0;
   var o = D(t);
@@ -598,8 +599,8 @@ function Z(e, t, n) {
   r["[[minimumIntegerDigits]]"] = g;
   var E = F(n, "minimumFractionDigits", 0, 20, "currency" === _ ? h : 0);
   r["[[minimumFractionDigits]]"] = E;
-  var y = "currency" === _ ? Math.max(E, h) : "percent" === _ ? Math.max(E, 0) : Math.max(E, 3),
-    O = F(n, "maximumFractionDigits", E, 20, y);
+  var v = "currency" === _ ? Math.max(E, h) : "percent" === _ ? Math.max(E, 0) : Math.max(E, 3),
+    O = F(n, "maximumFractionDigits", E, 20, v);
   r["[[maximumFractionDigits]]"] = O;
   var I = n.minimumSignificantDigits,
     S = n.maximumSignificantDigits;
@@ -650,11 +651,11 @@ function Y(e, t) {
         g = s.patterns.secondaryGroupSize || p;
       if (_.length > p) {
         var E = new e_,
-          v = _.length - p,
-          y = v % g,
-          O = _.slice(0, y);
-        for (O.length && h.call(E, O); y < v;) h.call(E, _.slice(y, y + g)), y += g;
-        h.call(E, _.slice(v)), f[0] = m.call(E, l.group)
+          y = _.length - p,
+          v = y % g,
+          O = _.slice(0, v);
+        for (O.length && h.call(E, O); v < y;) h.call(E, _.slice(v, v + g)), v += g;
+        h.call(E, _.slice(y)), f[0] = m.call(E, l.group)
       }
       n = m.call(f, l.decimal)
     }
@@ -748,7 +749,7 @@ function X(e, t, n) {
   if (!0 === r["[[initializedIntlObject]]"]) throw TypeError("`this` object has already been initialized as an Intl object");
   u(e, "__getInternalProperties", {
     value: function() {
-      if (arguments[0] === v) return r
+      if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = !0;
   var o = D(t),
@@ -767,19 +768,19 @@ function X(e, t, n) {
       var m = B(n, h, "string", J[h]);
       a["[[" + h + "]]"] = m
     } var g, E = d[_],
-    y = $(E.formats),
+    v = $(E.formats),
     O = B(n, "formatMatcher", "string", new e_("basic", "best fit"), "best fit");
-  for (var h in E.formats = y, g = "basic" === O ? et(a, y) : er(a, y), J)
+  for (var h in E.formats = v, g = "basic" === O ? et(a, v) : er(a, v), J)
     if (c.call(J, h) && c.call(g, h)) {
       var I = g[h];
       r["[[" + h + "]]"] = I
     } var S, T = B(n, "hour12", "boolean");
-  if (r["[[hour]]"]) {
+  if (r["[[hour]]"])
     if (T = void 0 === T ? E.hour12 : T, r["[[hour12]]"] = T, !0 === T) {
       var N = E.hourNo0;
       r["[[hourNo0]]"] = N, S = g.pattern12
-    } else S = g.pattern
-  } else S = g.pattern;
+    } else S = g.pattern;
+  else S = g.pattern;
   return r["[[pattern]]"] = S, r["[[boundFormat]]"] = void 0, r["[[initializedDateTimeFormat]]"] = !0, l && (e.format = ei.call(e)), i.exp.test(i.input), e
 }
 u(a.NumberFormat.prototype, "resolvedOptions", {
@@ -843,14 +844,14 @@ function en(e, t, n) {
     for (var E in J)
       if (c.call(J, E)) {
         var b = e["[[" + E + "]]"],
-          v = c.call(m, E) ? m[E] : void 0;
-        if (void 0 === b && void 0 !== v) g -= a;
-        else if (void 0 !== b && void 0 === v) g -= o;
+          y = c.call(m, E) ? m[E] : void 0;
+        if (void 0 === b && void 0 !== y) g -= a;
+        else if (void 0 !== b && void 0 === y) g -= o;
         else {
-          var y = ["2-digit", "numeric", "narrow", "short", "long"],
-            O = d.call(y, b),
-            I = Math.max(Math.min(d.call(y, v) - O, 2), -2);
-          n && (("numeric" === b || "2-digit" === b) && "numeric" !== v && "2-digit" !== v || "numeric" !== b && "2-digit" !== b && ("2-digit" === v || "numeric" === v)) && (g -= i), 2 === I ? g -= l : 1 === I ? g -= f : -1 === I ? g -= u : -2 === I && (g -= s)
+          var v = ["2-digit", "numeric", "narrow", "short", "long"],
+            O = d.call(v, b),
+            I = Math.max(Math.min(d.call(v, y) - O, 2), -2);
+          n && (("numeric" === b || "2-digit" === b) && "numeric" !== y && "2-digit" !== y || "numeric" !== b && "2-digit" !== b && ("2-digit" === y || "numeric" === y)) && (g -= i), 2 === I ? g -= l : 1 === I ? g -= f : -1 === I ? g -= u : -2 === I && (g -= s)
         }
       } g > _ && (_ = g, r = m), p++
   }
@@ -877,7 +878,7 @@ function ei() {
 
 function eo(e, t) {
   if (!isFinite(t)) throw RangeError("Invalid valid date passed to format");
-  var n = e.__getInternalProperties(v),
+  var n = e.__getInternalProperties(y),
     r = ep(),
     i = n["[[locale]]"],
     o = new a.NumberFormat([i], {
@@ -898,7 +899,7 @@ function eo(e, t) {
         E = l["[[" + p + "]]"];
       if ("year" === p && E <= 0 ? E = 1 - E : "month" === p ? E++ : "hour" === p && !0 === n["[[hour12]]"] && (E %= 12, h = E !== l["[[" + p + "]]"], 0 === E && !0 === n["[[hourNo0]]"] && (E = 12)), "numeric" === g) m = Y(o, E);
       else if ("2-digit" === g)(m = Y(s, E)).length > 2 && (m = m.slice(-2));
-      else if (g in y) switch (p) {
+      else if (g in v) switch (p) {
         case "month":
           m = ed(f, _, "months", g, l["[[" + p + "]]"]);
           break;
@@ -1043,7 +1044,7 @@ function em(e) {
 }
 
 function eg(e) {
-  return c.call(e, "__getInternalProperties") ? e.__getInternalProperties(v) : f(null)
+  return c.call(e, "__getInternalProperties") ? e.__getInternalProperties(y) : f(null)
 }
 es.Number.toLocaleString = function() {
   if ("[object Number]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a number for Number.prototype.toLocaleString()");

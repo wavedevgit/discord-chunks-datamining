@@ -3,8 +3,7 @@ var r = n(710170),
   i = n(481062),
   o = n(660326),
   a = 200;
-
-function s(e, t) {
+e.exports = function(e, t) {
   var n = this.__data__;
   if (n instanceof r) {
     var s = n.__data__;
@@ -13,4 +12,3 @@ function s(e, t) {
   }
   return n.set(e, t), this.size = n.size, this
 }
-e.exports = s

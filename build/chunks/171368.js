@@ -43,8 +43,8 @@ async function h(e) {
     showGuildProfile: g,
     analyticsLocation: E,
     sourceAnalyticsLocations: b,
-    appContext: v,
-    customStatusPrompt: y = null
+    appContext: y,
+    customStatusPrompt: v = null
   } = e, O = c.default.getUser(t);
   p(t), null == O ? await (0, a.In)(t, {
     type: "modal",
@@ -70,14 +70,14 @@ async function h(e) {
     messageId: null != i ? i : void 0,
     roleId: null != s ? s : void 0,
     sessionId: null != l ? l : void 0,
-    customStatusPrompt: y,
+    customStatusPrompt: v,
     section: _,
     subsection: h,
     friendToken: m,
     showGuildProfile: g,
     analyticsLocation: E,
     sourceAnalyticsLocations: b,
-    appContext: v
+    appContext: y
   })
 }
 

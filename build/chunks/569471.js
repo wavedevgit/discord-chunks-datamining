@@ -59,10 +59,10 @@ function E(e) {
 
 function b(e) {
   var t;
-  null === (t = e.threads) || void 0 === t || t.forEach(v)
+  null == (t = e.threads) || t.forEach(y)
 }
 
-function v(e) {
+function y(e) {
   c.AW.has(e.type) && null != e.member && (h[e.id] = {
     threadId: e.id,
     guildId: e.guild_id,
@@ -70,10 +70,10 @@ function v(e) {
     muted: e.member.muted,
     muteConfig: e.member.muteConfig,
     joinTimestamp: new Date(e.member.joinTimestamp)
-  }, y(e.id))
+  }, v(e.id))
 }
 
-function y(e) {
+function v(e) {
   let t = h[e];
   m.clearTimer(e), !0 === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
     h[e].muted = !1, (g = new Set(g)).delete(e), L.emitChange()
@@ -113,7 +113,7 @@ function N(e) {
   let {
     channel: t
   } = e;
-  v(t)
+  y(t)
 }
 
 function A(e) {
@@ -129,7 +129,7 @@ function A(e) {
       muted: e.muted,
       muteConfig: e.muteConfig,
       joinTimestamp: new Date(e.joinTimestamp)
-    }, y(e.id)
+    }, v(e.id)
   })
 }
 
@@ -150,7 +150,7 @@ function R(e) {
     muted: e.muted,
     muteConfig: e.muteConfig,
     joinTimestamp: new Date(e.joinTimestamp)
-  }, y(e.id)
+  }, v(e.id)
 }
 
 function P(e) {
@@ -176,7 +176,7 @@ function P(e) {
 function w(e) {
   var t, n;
   let r = !1;
-  return (null === (t = e.removedMemberIds) || void 0 === t ? void 0 : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = !0), null === (n = e.addedMembers) || void 0 === n || n.forEach(t => {
+  return (null == (t = e.removedMemberIds) ? void 0 : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = !0), null == (n = e.addedMembers) || n.forEach(t => {
     t.userId === u.default.getId() && ((h = f({}, h))[e.id] = {
       threadId: e.id,
       guildId: e.guildId,
@@ -184,7 +184,7 @@ function w(e) {
       muted: t.muted,
       muteConfig: t.muteConfig,
       joinTimestamp: new Date(t.joinTimestamp)
-    }, y(e.id), r = !0)
+    }, v(e.id), r = !0)
   }), r
 }
 class D extends(r = a.ZP.Store) {
@@ -193,18 +193,18 @@ class D extends(r = a.ZP.Store) {
   }
   joinTimestamp(e) {
     var t;
-    return null === (t = h[e]) || void 0 === t ? void 0 : t.joinTimestamp
+    return null == (t = h[e]) ? void 0 : t.joinTimestamp
   }
   flags(e) {
     var t;
-    return null === (t = h[e]) || void 0 === t ? void 0 : t.flags
+    return null == (t = h[e]) ? void 0 : t.flags
   }
   getInitialOverlayState() {
     return Object.values(h)
   }
   getMuteConfig(e) {
     var t;
-    return null === (t = h[e]) || void 0 === t ? void 0 : t.muteConfig
+    return null == (t = h[e]) ? void 0 : t.muteConfig
   }
   getMutedThreads() {
     return g

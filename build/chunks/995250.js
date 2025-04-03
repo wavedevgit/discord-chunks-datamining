@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var i = n(120356),
   u = n(660579),
   d = n(64621),
   f = n(228168),
-  _ = n(3209);
+  _ = n(487784);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ function b(e, t) {
   return i
 }
 
-function v(e) {
+function y(e) {
   var {
     user: t,
     profileType: n,
@@ -82,13 +82,13 @@ function v(e) {
   } = e, m = E(e, ["user", "profileType", "animateOnHover", "onOpenProfile"]);
   let b = f.n_.AVATAR,
     {
-      trackUserProfileAction: v
+      trackUserProfileAction: y
     } = (0, a.KZ)(),
     {
-      interactionSource: y
+      interactionSource: v
     } = (0, s.Xo)(),
     O = o()(_.avatar, {
-      [_.hoisted]: y === f.n_.AVATAR || y === f.n_.STATUS,
+      [_.hoisted]: v === f.n_.AVATAR || v === f.n_.STATUS,
       [_.biteSize]: n === f.y0.BITE_SIZE,
       [_.fullSize]: n === f.y0.FULL_SIZE,
       [_.panel]: n === f.y0.PANEL
@@ -101,13 +101,13 @@ function v(e) {
       className: O,
       profileType: n,
       sourceType: b,
-      onAction: v
+      onAction: y
     }, m), {
       children: () => (0, r.jsx)(u.Z, {
         className: O,
         user: t,
         sourceType: b,
-        onAction: v,
+        onAction: y,
         children: (0, r.jsx)(l.Z, h({
           user: t,
           animateOnHover: i,

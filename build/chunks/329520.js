@@ -26,7 +26,7 @@ function f(e) {
   } = e, g = (0, i.e7)([l.Z], () => l.Z.getChannel(t.channelId)), E = (0, s.ZP)(g);
   if (p && h) return null;
   let b = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name,
-    v = null != b ? d.NW.format(d.t["0wJXSk"], {
+    y = null != b ? d.NW.format(d.t["0wJXSk"], {
       name: b
     }) : d.NW.string(d.t.eXan7O);
   return (0, r.jsxs)(r.Fragment, {
@@ -39,7 +39,7 @@ function f(e) {
     }), !h && (0, r.jsx)(u.Z, {
       variant: f,
       className: _,
-      children: v
+      children: y
     })]
   })
 }

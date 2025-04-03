@@ -9,7 +9,7 @@ var r = n(200651),
   a = n.n(o),
   s = n(481060),
   l = n(600164),
-  c = n(181167);
+  c = n(360797);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,7 +127,7 @@ class m extends i.PureComponent {
           id: E,
           placeholder: b
         } = e,
-        v = _(d({}, p(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
+        y = _(d({}, p(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
           placeholder: null == b ? void 0 : b(),
           layout: c,
           error: this.getError(g),
@@ -142,7 +142,7 @@ class m extends i.PureComponent {
         className: a()(null == f ? void 0 : f(c)),
         title: m(),
         titleId: E,
-        children: h(v, u)
+        children: h(y, u)
       }, g)
     }), u(this, "renderFormRow", e => {
       let t = e.fields.map(this.renderFormSection);

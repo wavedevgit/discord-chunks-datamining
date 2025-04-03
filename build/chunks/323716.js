@@ -50,7 +50,7 @@ function E(e) {
       let i = t.getFingerprint();
       if (null != i && "" !== i && e.set("X-Fingerprint", i), u) {
         let t = [];
-        null != navigator && (t = d = [...navigator.languages]);
+        null != navigator && (t = (d = [...navigator.languages], d));
         let n = E(t);
         e.set("Accept-Language", n)
       }
@@ -60,7 +60,7 @@ function E(e) {
       let p = o.getDebugOptionsHeaderValue();
       if (null != p && "" !== p && e.set("X-Debug-Options", p), o.isTracingRequests) {
         let t = s.getCurrentUser(),
-          n = h.generate(null !== (_ = null == t ? void 0 : t.id) && void 0 !== _ ? _ : "0");
+          n = h.generate(null != (_ = null == t ? void 0 : t.id) ? _ : "0");
         e.set("x-client-trace-id", n);
         try {
           let t = new URL(e.url).pathname;
@@ -82,7 +82,7 @@ function E(e) {
         let n = "[FILTERED]";
         if (p.includes(e.url)) {
           var r, o;
-          n = null === (o = e.xhr) || void 0 === o ? void 0 : null === (r = o.responseText) || void 0 === r ? void 0 : r.slice(0, 1e3)
+          n = null == (o = e.xhr) || null == (r = o.responseText) ? void 0 : r.slice(0, 1e3)
         }
         c.Z.addBreadcrumb({
           category: "superagent",
@@ -99,7 +99,7 @@ function E(e) {
   },
   interceptResponse(e, t, r) {
     var i, l, c, u, d;
-    return 400 === e.statusCode && (null === (i = e.body) || void 0 === i ? void 0 : i.captcha_key) ? (Promise.all([n.e("36514").then(n.bind(n, 475271)), n.e("31177").then(n.bind(n, 353250))]).then(t => {
+    return 400 === e.statusCode && (null == (i = e.body) ? void 0 : i.captcha_key) ? (Promise.all([n.e("36514").then(n.bind(n, 475271)), n.e("31177").then(n.bind(n, 353250))]).then(t => {
       let [{
         default: n
       }, {
@@ -114,22 +114,22 @@ function E(e) {
         "X-Captcha-Key": n
       };
       null != r && (i["X-Captcha-Rqtoken"] = r), t(i)
-    }).catch(r), !0) : 401 === e.statusCode && (null === (l = e.body) || void 0 === l ? void 0 : l.code) === _.evJ.MFA_REQUIRED && (null === (c = e.body) || void 0 === c ? void 0 : c.mfa) ? (Promise.all([n.e("52030"), n.e("1964")]).then(n.bind(n, 24031)).then(n => {
+    }).catch(r), !0) : 401 === e.statusCode && (null == (l = e.body) ? void 0 : l.code) === _.evJ.MFA_REQUIRED && (null == (c = e.body) ? void 0 : c.mfa) ? (Promise.all([n.e("52030"), n.e("36833")]).then(n.bind(n, 24031)).then(n => {
       let {
         openMFAModal: i
       } = n;
       i(e.body.mfa, t, r)
-    }).catch(r), !0) : ((0, s.b)(e.statusCode, null === (u = e.body) || void 0 === u ? void 0 : u.code) ? Promise.resolve().then(n.bind(n, 895886)).then(e => {
+    }).catch(r), !0) : ((0, s.b)(e.statusCode, null == (u = e.body) ? void 0 : u.code) ? Promise.resolve().then(n.bind(n, 895886)).then(e => {
       let {
         default: t
       } = e;
       t()
-    }) : (0, o.b)(e.statusCode, null === (d = e.body) || void 0 === d ? void 0 : d.code) ? n.e("76731").then(n.bind(n, 626892)).then(t => {
+    }) : (0, o.b)(e.statusCode, null == (d = e.body) ? void 0 : d.code) ? n.e("76731").then(n.bind(n, 626892)).then(t => {
       var n;
       let {
         default: r
       } = t;
-      r(null === (n = e.body) || void 0 === n ? void 0 : n.guild_id)
+      r(null == (n = e.body) ? void 0 : n.guild_id)
     }) : (0, a.X)(e) && n.e("89715").then(n.bind(n, 707708)).then(e => {
       let {
         handleBlockedByProxy: t
@@ -138,5 +138,5 @@ function E(e) {
     }), !1)
   }
 }), (0, r.Jt)(async e => {
-  i.Hj("Network", "Request to ".concat(e, " failed, will retry.")), !l.Z.isOnline() && (await l.Z.awaitOnline(), i.Hj("Network", "Network detected online, retrying ".concat(e)))
+  i.Hj("Network", "Request to ".concat(e, " failed, will retry.")), l.Z.isOnline() || (await l.Z.awaitOnline(), i.Hj("Network", "Network detected online, retrying ".concat(e)))
 })

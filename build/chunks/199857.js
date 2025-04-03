@@ -27,9 +27,9 @@ function g(e, t, n) {
 }
 let E = 10,
   b = 10,
-  v = null === (r = c().name) || void 0 === r ? void 0 : r.toLowerCase().includes("firefox");
+  y = null == (r = c().name) ? void 0 : r.toLowerCase().includes("firefox");
 
-function y(e, t) {
+function v(e, t) {
   e.sender.replaceTrack(t), e.direction = null != t ? "sendrecv" : "recvonly"
 }
 class O extends f.Z {
@@ -39,19 +39,16 @@ class O extends f.Z {
   setCodecs(e, t, n) {
     var r, i, o;
     let a;
-    (this.audioCodec !== e || this.videoCodec !== t) && (a = this.codecs.find(t => t.name === e), this.audioCodec = e, this.audioPayloadType = null !== (r = null == a ? void 0 : a.payloadType) && void 0 !== r ? r : 0, a = this.codecs.find(e => e.name === t), this.videoCodec = t, this.videoPayloadType = null !== (i = null == a ? void 0 : a.payloadType) && void 0 !== i ? i : 0, this.rtxPayloadType = null !== (o = null == a ? void 0 : a.rtxPayloadType) && void 0 !== o ? o : 0, this.logger.info("Renegotiating: Codecs changed"), this.handleNegotiationNeeded())
+    (this.audioCodec !== e || this.videoCodec !== t) && (a = this.codecs.find(t => t.name === e), this.audioCodec = e, this.audioPayloadType = null != (r = null == a ? void 0 : a.payloadType) ? r : 0, a = this.codecs.find(e => e.name === t), this.videoCodec = t, this.videoPayloadType = null != (i = null == a ? void 0 : a.payloadType) ? i : 0, this.rtxPayloadType = null != (o = null == a ? void 0 : a.rtxPayloadType) ? o : 0, this.logger.info("Renegotiating: Codecs changed"), this.handleNegotiationNeeded())
   }
   setStream(e) {
     let t = "closed" === this.iceConnectionState;
-    null != e && !t && (y(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && y(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
+    null != e && !t && (v(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && v(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
   }
   createUser(e, t, n) {
     var r;
-    if (0 === t) {
-      this.logger.warn("Attempting to create user ".concat(e, " with 0 audio SSRC"));
-      return
-    }
-    this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null !== (r = null == n ? void 0 : n.join(",")) && void 0 !== r ? r : 0));
+    if (0 === t) return void this.logger.warn("Attempting to create user ".concat(e, " with 0 audio SSRC"));
+    this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null != (r = null == n ? void 0 : n.join(",")) ? r : 0));
     let i = !1,
       o = this.users.get(e);
     if (null == o && (o = {}), o.audioSSRC !== t) {
@@ -63,7 +60,7 @@ class O extends f.Z {
         r = E + this.unassignedStreams.audio.length - n;
       this.addTransceivers("audio", "recvonly", r)
     }
-    if (this.videoSupported && void 0 !== n && (!v || void 0 === o.videoSSRC)) {
+    if (this.videoSupported && void 0 !== n && (!y || void 0 === o.videoSSRC)) {
       let t = null != n && n.length > 0 ? n[0] : 0;
       if (t > 0) {
         if (o.videoSSRC !== t) {
@@ -154,10 +151,7 @@ class O extends f.Z {
       }
       of e) {
       let e = t[r];
-      if (null == e) {
-        this.logger.info('UnifiedConnection.setEncoderParameter: Unable to set parameter "'.concat(r, '"'));
-        return
-      }
+      if (null == e) return void this.logger.info('UnifiedConnection.setEncoderParameter: Unable to set parameter "'.concat(r, '"'));
       n.push({
         propertyName: e,
         value: i
@@ -178,10 +172,7 @@ class O extends f.Z {
       }
       of e) {
       let e = t[r];
-      if (null == e) {
-        this.logger.info('UnifiedConnection.setEncoderParameter: Unable to set parameter "'.concat(r, '"'));
-        return
-      }
+      if (null == e) return void this.logger.info('UnifiedConnection.setEncoderParameter: Unable to set parameter "'.concat(r, '"'));
       n.push({
         propertyName: e,
         value: i
@@ -268,7 +259,7 @@ class O extends f.Z {
       s = this.audioPayloadType,
       l = this.videoCodec,
       c = this.videoPayloadType,
-      u = this.videoSupported && (null === (o = this.videoTransceiver) || void 0 === o ? void 0 : null === (i = o.sender) || void 0 === i ? void 0 : i.track) != null,
+      u = this.videoSupported && (null == (o = this.videoTransceiver) || null == (i = o.sender) ? void 0 : i.track) != null,
       d = this.rtxPayloadType,
       f = this.sdp;
     if (null == a || null == s || null == l || null == c || null == d || null == f) throw Error("Invalid payload: audioCodec: ".concat(a, ", audioPayloadType: ").concat(null == s ? "null" : s, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == f ? "null" : f));
@@ -395,13 +386,10 @@ class O extends f.Z {
         let [e, s] = t.split("-");
         this.trackUserIds[n.id] = e;
         let l = this.users.get(e);
-        if ((null == l ? void 0 : null === (i = l.videoSSRC) || void 0 === i ? void 0 : null === (r = i.toString) || void 0 === r ? void 0 : r.call(i)) !== s && (null == l ? void 0 : null === (a = l.audioSSRC) || void 0 === a ? void 0 : null === (o = a.toString) || void 0 === o ? void 0 : o.call(a)) !== s) {
-          this.logger.info("Got stale ssrc ".concat(s, " for ").concat(n.kind, " track, user ID ").concat(e));
-          return
-        }
+        if ((null == l || null == (i = l.videoSSRC) || null == (r = i.toString) ? void 0 : r.call(i)) !== s && (null == l || null == (a = l.audioSSRC) || null == (o = a.toString) ? void 0 : o.call(a)) !== s) return void this.logger.info("Got stale ssrc ".concat(s, " for ").concat(n.kind, " track, user ID ").concat(e));
         this.createOutput(e, n), n.onunmute = () => this.createOutput(e, n), n.onmute = () => {
           var t;
-          (null === (t = this.users.get(e)) || void 0 === t ? void 0 : t.videoSSRC) == null && this.destroyOutput(e, n)
+          (null == (t = this.users.get(e)) ? void 0 : t.videoSSRC) == null && this.destroyOutput(e, n)
         }
       }
     }), this.logger = new u.Yd("UnifiedConnection(".concat(e, ")")), this.videoSupported = m.U8;

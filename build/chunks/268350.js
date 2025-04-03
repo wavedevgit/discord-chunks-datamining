@@ -39,7 +39,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -127,7 +127,7 @@ let I = async (e, t) => {
   a.Z.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
-    stickers: t.map(e => null != e.user ? O(v({}, e), {
+    stickers: t.map(e => null != e.user ? O(y({}, e), {
       user: new d.Z(e.user)
     }) : e)
   })
@@ -145,7 +145,7 @@ let I = async (e, t) => {
   return a.Z.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
     guildId: e,
-    sticker: O(v({}, n.body), {
+    sticker: O(y({}, n.body), {
       user: _.default.getCurrentUser()
     })
   }), n.body

@@ -56,8 +56,8 @@ var f = new WeakMap,
   g = new WeakMap,
   E = new WeakMap,
   b = new WeakMap,
-  v = new WeakMap,
   y = new WeakMap,
+  v = new WeakMap,
   O = new WeakMap;
 class I {
   constructor(e, t, n) {
@@ -90,9 +90,9 @@ class I {
           return {
             id: a,
             instance: o,
-            preview: null !== (r = n.preview) && void 0 !== r && r,
+            preview: null != (r = n.preview) && r,
             transition: n.transition,
-            skipDispatchOnTransition: null !== (i = n.skipDispatchOnTransition) && void 0 !== i && i
+            skipDispatchOnTransition: null != (i = n.skipDispatchOnTransition) && i
           }
         }
       }), a(this, "setup", () => {
@@ -106,17 +106,17 @@ class I {
         writable: !0,
         value: e => {
           s(this, h).forEach(t => {
-            t.transition && e.addEventListener(t.transition.event, s(this, v))
+            t.transition && e.addEventListener(t.transition.event, s(this, y))
           })
         }
       }), i(this, b, {
         writable: !0,
         value: e => {
           s(this, h).forEach(t => {
-            t.transition && e.removeEventListener(t.transition.event, s(this, v))
+            t.transition && e.removeEventListener(t.transition.event, s(this, y))
           })
         }
-      }), i(this, v, {
+      }), i(this, y, {
         writable: !0,
         value: e => {
           let t = s(this, f);
@@ -124,22 +124,22 @@ class I {
             var n;
             s(this, p)[t].instance.teardown(), Object.keys(s(this, m)).forEach(e => {
               let t = s(this, m)[e];
-              t.unsubscribe(), t.unsubscribe = s(this, y).call(this, t.func, ...t.args)
+              t.unsubscribe(), t.unsubscribe = s(this, v).call(this, t.func, ...t.args)
             }), s(this, _).backendChanged(this);
             let r = s(this, p)[s(this, f)];
             if (r.instance.setup(), r.skipDispatchOnTransition) return;
             let i = new e.constructor(e.type, e);
-            null === (n = e.target) || void 0 === n || n.dispatchEvent(i)
+            null == (n = e.target) || n.dispatchEvent(i)
           }
         }
-      }), i(this, y, {
+      }), i(this, v, {
         writable: !0,
         value: (e, t, n, r) => s(this, p)[s(this, f)].instance[e](t, n, r)
       }), i(this, O, {
         writable: !0,
         value: (e, t, n, r) => {
           let i = "".concat(e, "_").concat(t),
-            o = s(this, y).call(this, e, t, n, r);
+            o = s(this, v).call(this, e, t, n, r);
           return s(this, m)[i] = {
             func: e,
             args: [t, n, r],

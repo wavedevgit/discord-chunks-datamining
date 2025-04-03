@@ -17,11 +17,11 @@ var r = n(325008),
   g = n(936940),
   E = n(740362),
   b = n(644659).enforce,
-  v = n(930990),
-  y = n(641236),
+  y = n(930990),
+  v = n(641236),
   O = n(973326),
   I = n(440196),
-  S = y("match"),
+  S = v("match"),
   T = i.RegExp,
   N = T.prototype,
   A = i.SyntaxError,
@@ -86,4 +86,4 @@ if (a("RegExp", G)) {
     constructor: !0
   })
 }
-v("RegExp")
+y("RegExp")

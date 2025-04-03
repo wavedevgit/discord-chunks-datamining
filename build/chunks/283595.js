@@ -56,10 +56,10 @@ let E = "LibraryApplicationStore";
 
 function b() {
   var e;
-  return null !== (e = s.K.get(E)) && void 0 !== e ? e : {}
+  return null != (e = s.K.get(E)) ? e : {}
 }
-let v = !1,
-  y = {},
+let y = !1,
+  v = {},
   O = {},
   I = new Set,
   S = {},
@@ -81,19 +81,19 @@ function C() {
 function R(e) {
   for (let t of e) {
     let e = c.Z.createFromServer(t);
-    y[(0, d.Tu)(e.id, e.branchId)] = e
+    v[(0, d.Tu)(e.id, e.branchId)] = e
   }
 }
 
 function P() {
-  v = !1
+  y = !1
 }
 
 function w(e) {
   let {
     libraryApplications: t
   } = e;
-  y = {}, R(t), v = !0
+  v = {}, R(t), y = !0
 }
 
 function D(e) {
@@ -116,7 +116,7 @@ function x(e) {
   let {
     libraryApplication: t
   } = e, n = c.Z.createFromServer(t), r = (0, d.Tu)(n.id, n.branchId);
-  y[r] = n, I.delete(r)
+  v[r] = n, I.delete(r)
 }
 
 function M(e) {
@@ -158,11 +158,11 @@ function G(e) {
 function B(e, t) {
   var n;
   let r = (0, d.Tu)(e, t);
-  return null !== (n = y[r]) && void 0 !== n ? n : O[r]
+  return null != (n = v[r]) ? n : O[r]
 }
 
 function F() {
-  return h({}, O, y)
+  return h({}, O, v)
 }
 class V extends(r = a.ZP.Store) {
   initialize() {
@@ -195,7 +195,7 @@ class V extends(r = a.ZP.Store) {
     if (null != n) {
       var r;
       let i = (0, d.Tu)(e, n),
-        o = null !== (r = y[i]) && void 0 !== r ? r : O[i];
+        o = null != (r = v[i]) ? r : O[i];
       if (null != o && (0, d.Je)(o) && (t || !o.isHidden())) return o
     }
     let i = F();
@@ -212,7 +212,7 @@ class V extends(r = a.ZP.Store) {
     return T[(0, d.Tu)(e, t)]
   }
   get fetched() {
-    return v
+    return y
   }
   get entitledBranchIds() {
     return o()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
@@ -222,7 +222,7 @@ class V extends(r = a.ZP.Store) {
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (v) return setImmediate(e), !1
+      if (y) return setImmediate(e), !1
     })
   }
 }

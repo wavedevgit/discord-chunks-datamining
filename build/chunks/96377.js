@@ -27,8 +27,8 @@ let p = {
       g = n.altAxis,
       E = void 0 !== g && g,
       b = n.boundary,
-      v = n.rootBoundary,
-      y = n.altBoundary,
+      y = n.rootBoundary,
+      v = n.altBoundary,
       O = n.padding,
       I = n.tether,
       S = void 0 === I || I,
@@ -36,9 +36,9 @@ let p = {
       N = void 0 === T ? 0 : T,
       A = (0, u.Z)(t, {
         boundary: b,
-        rootBoundary: v,
+        rootBoundary: y,
         padding: O,
-        altBoundary: y
+        altBoundary: v
       }),
       C = (0, i.Z)(t.placement),
       R = (0, d.Z)(t.placement),
@@ -103,9 +103,9 @@ let p = {
           eg = -1 !== [r.we, r.t$].indexOf(C),
           eE = null != (eu = null == U ? void 0 : U[D]) ? eu : 0,
           eb = eg ? eh : e_ - x[ep] - M[ep] - eE + j.altAxis,
-          ev = eg ? e_ + x[ep] + M[ep] - eE - j.altAxis : em,
-          ey = S && eg ? (0, s.q)(eb, e_, ev) : (0, s.u)(S ? eb : eh, e_, S ? ev : em);
-        L[D] = ey, G[D] = ey - e_
+          ey = eg ? e_ + x[ep] + M[ep] - eE - j.altAxis : em,
+          ev = S && eg ? (0, s.q)(eb, e_, ey) : (0, s.u)(S ? eb : eh, e_, S ? ey : em);
+        L[D] = ev, G[D] = ev - e_
       }
       t.modifiersData[p] = G
     }

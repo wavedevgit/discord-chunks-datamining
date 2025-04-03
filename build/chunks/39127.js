@@ -10,7 +10,7 @@ var r = n(200651),
   s = n.n(a),
   l = n(963838),
   c = n(353368),
-  u = n(739639);
+  u = n(910410);
 let d = async e => {
   var t;
   let {
@@ -18,7 +18,7 @@ let d = async e => {
     animationId: r,
     url: i,
     shouldResize: a
-  } = e, s = null !== (t = l.Jw[n]) && void 0 !== t ? t : l.Jw[c.q.BASIC], u = JSON.parse(JSON.stringify(null != r && r < s.length ? s[r] : (0, o.sample)(s)));
+  } = e, s = null != (t = l.Jw[n]) ? t : l.Jw[c.q.BASIC], u = JSON.parse(JSON.stringify(null != r && r < s.length ? s[r] : (0, o.sample)(s)));
   return u.assets[0].p = a ? await (0, l.lv)(i) : i, u
 };
 
@@ -30,7 +30,7 @@ function f(e) {
   } = e, a = i.useRef(null);
   return i.useEffect(() => {
     let e;
-    return async function() {
+    return !async function() {
       if (null != a.current) {
         let t = await d(n);
         e = s().loadAnimation({

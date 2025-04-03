@@ -13,7 +13,7 @@ var i = n(481060),
   c = n(626135),
   u = n(981631),
   d = n(388032),
-  f = n(871073);
+  f = n(897384);
 
 function _(e) {
   var t;
@@ -32,7 +32,7 @@ function _(e) {
       size: "sm",
       className: f.icon,
       color: i.TVs.colors.MENTION_FOREGROUND
-    }), null !== (t = null == u ? void 0 : u.name) && void 0 !== t ? t : d.NW.string(d.t["Ij+2ra"]), (0, r.jsx)(l.Z, {})]
+    }), null != (t = null == u ? void 0 : u.name) ? t : d.NW.string(d.t["Ij+2ra"]), (0, r.jsx)(l.Z, {})]
   }, o)
 }
 

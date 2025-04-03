@@ -31,7 +31,7 @@ function b(e) {
   return i.e$(e.permissions, d.Plq.ADMINISTRATOR)
 }
 
-function v(e) {
+function y(e) {
   let t = c.default.getCurrentUser(),
     n = l.Z.getGuild(e);
   if (null == n || null == t) return !1;
@@ -41,7 +41,7 @@ function v(e) {
   if (g.set(e, n.isOwner(t)), n.hasFeature(d.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) {
     var a;
     let c = s.ZP.getMember(e, t.id),
-      d = new Set(null !== (a = null == c ? void 0 : c.roles) && void 0 !== a ? a : []),
+      d = new Set(null != (a = null == c ? void 0 : c.roles) ? a : []),
       f = l.Z.getRoles(n.id);
     for (let t in f) {
       let n = f[t];
@@ -51,7 +51,7 @@ function v(e) {
   return p.set(e, r), m.set(e, o), h.set(e, i), !0
 }
 
-function y() {
+function v() {
   let e = l.Z.getGuilds(),
     t = new Set;
   for (let n in e) e[n].hasFeature(d.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && t.add(n);
@@ -98,7 +98,7 @@ function T(e) {
   let {
     guildId: t
   } = e;
-  return !!p.has(t) && v(t)
+  return !!p.has(t) && y(t)
 }
 
 function N(e) {
@@ -106,33 +106,33 @@ function N(e) {
     guildId: t,
     user: n
   } = e, r = c.default.getCurrentUser();
-  return !!(n.id === (null == r ? void 0 : r.id) && p.has(t)) && v(t)
+  return !!(n.id === (null == r ? void 0 : r.id) && p.has(t)) && y(t)
 }
 class A extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(l.Z)
   }
   getGuildIdsWithPurchasableRoles() {
-    return null == E ? y() : E
+    return null == E ? v() : E
   }
   buildRoles(e) {
-    p.has(e) || v(e)
+    p.has(e) || y(e)
   }
   getSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null !== (t = p.get(e)) && void 0 !== t ? t : _
+    return this.buildRoles(e), null != (t = p.get(e)) ? t : _
   }
   getPurchasableSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null !== (t = h.get(e)) && void 0 !== t ? t : _
+    return this.buildRoles(e), null != (t = h.get(e)) ? t : _
   }
   getUserSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null !== (t = m.get(e)) && void 0 !== t ? t : _
+    return this.buildRoles(e), null != (t = m.get(e)) ? t : _
   }
   getUserIsAdmin(e) {
     var t;
-    return this.buildRoles(e), null !== (t = g.get(e)) && void 0 !== t && t
+    return this.buildRoles(e), null != (t = g.get(e)) && t
   }
 }
 f(A, "displayName", "SubscriptionRoleStore");

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[^\\(\\)\\[\\]\\{\\}\",'`;#|\\\\\\s]+",
     n = "(-|\\+)?\\d+([./]\\d+)?",
     r = n + "[+\\-]" + n + "i",
@@ -93,4 +93,3 @@ function t(e) {
     contains: [e.SHEBANG(), a, s, u, f, p].concat(l)
   }
 }
-e.exports = t

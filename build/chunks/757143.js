@@ -17,8 +17,8 @@ var r = n(197187),
   g = n(115726),
   E = n(651673),
   b = n(641236)("replace"),
-  v = Math.max,
-  y = Math.min,
+  y = Math.max,
+  v = Math.min,
   O = o([].concat),
   I = o([].push),
   S = o("".indexOf),
@@ -49,17 +49,18 @@ a("replace", function(e, t, n) {
     p || (i = _(i));
     var m = a.global;
     m && (P = a.unicode, a.lastIndex = 0);
-    for (var b = []; null !== (w = E(a, s)) && (I(b, w), m);) {
-      "" === _(w[0]) && (a.lastIndex = h(s, f(a.lastIndex), P))
+    for (var b = []; null !== (D = E(a, s)) && (I(b, D), m);) {
+      ;
+      "" === _(D[0]) && (a.lastIndex = h(s, f(a.lastIndex), P))
     }
     for (var A = "", C = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D, L = _((w = b[R])[0]), x = v(y(d(w.index), s.length), 0), M = [], k = 1; k < w.length; k++) I(M, N(w[k]));
-      var j = w.groups;
+      for (var P, w, D = b[R], L = _(D[0]), x = y(v(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) I(M, N(D[k]));
+      var j = D.groups;
       if (p) {
         var U = O([L], M, x, s);
-        void 0 !== j && I(U, j), D = _(r(i, void 0, U))
-      } else D = g(L, s, x, M, j, i);
-      x >= C && (A += T(s, C, x) + D, C = x + L.length)
+        void 0 !== j && I(U, j), w = _(r(i, void 0, U))
+      } else w = g(L, s, x, M, j, i);
+      x >= C && (A += T(s, C, x) + w, C = x + L.length)
     }
     return A + T(s, C)
   }]

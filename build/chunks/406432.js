@@ -3,7 +3,7 @@
 n.d(t, {
   CO: () => s,
   NU: () => b,
-  X2: () => v,
+  X2: () => y,
   cb: () => E,
   d$: () => u,
   tw: () => l
@@ -33,4 +33,4 @@ let i = (e, t) => {
   g = (0, r.isIOS)() ? p : (0, r.isAndroid)() ? h : m,
   E = e => i(e, g),
   b = e => null != e && g.test(e),
-  v = e => o(e, "video")
+  y = e => o(e, "video")

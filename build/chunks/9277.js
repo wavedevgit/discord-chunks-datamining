@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(981631),
   g = n(957825),
   E = n(388032),
-  b = n(998735);
+  b = n(302195);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -64,9 +64,9 @@ function S(e, t) {
   let {
     disabled: n,
     type: o
-  } = e, [v, O] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
+  } = e, [y, O] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
     var e, t;
-    return v && Object.values(null !== (t = null === (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) || void 0 === e ? void 0 : e.gifs) && void 0 !== t ? t : {}).length <= 2
+    return y && Object.values(null != (t = null == (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : e.gifs) ? t : {}).length <= 2
   }), [T, N, A] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
     O(!0), clearTimeout(C.current), C.current = setTimeout(() => {
       O(!1), C.current = 0
@@ -90,7 +90,7 @@ function S(e, t) {
   return (0, r.jsx)(u.ua7, {
     text: S ? E.NW.string(E.t.mE2e8P) : null,
     forceOpen: !0,
-    children: e => (0, r.jsx)("div", I(y({
+    children: e => (0, r.jsx)("div", I(v({
       ref: t,
       className: a()(g.CT, b.buttonContainer)
     }, e), {
@@ -102,7 +102,7 @@ function S(e, t) {
           P(), L()
         },
         isActive: M,
-        pulse: v,
+        pulse: y,
         "aria-label": E.NW.string(E.t.PtVpk5),
         "aria-expanded": M,
         "aria-haspopup": "dialog",

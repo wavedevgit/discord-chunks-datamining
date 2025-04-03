@@ -38,7 +38,7 @@ function _(e, t, n, o, a) {
 function p(e, t, n) {
   let l = (0, i.e7)([o.Z], () => {
       var e;
-      return null === (e = o.Z.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
+      return null == (e = o.Z.settings.userContent) ? void 0 : e.dismissedContents
     }),
     c = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
     p = (0, d.i)(e),
@@ -56,7 +56,7 @@ function p(e, t, n) {
 function h(e, t, n, s) {
   let l = (0, i.e7)([o.Z], () => {
       var t, n, r;
-      return null !== e ? null === (r = o.Z.settings.userContent) || void 0 === r ? void 0 : null === (n = r.recurringDismissibleContentStates) || void 0 === n ? void 0 : null === (t = n[e]) || void 0 === t ? void 0 : t.lastDismissedVersion : void 0
+      return null !== e ? null == (r = o.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates) || null == (t = n[e]) ? void 0 : t.lastDismissedVersion : void 0
     }),
     c = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
     p = null;
@@ -78,7 +78,7 @@ function h(e, t, n, s) {
 function m(e, t, n, s) {
   let l = (0, i.e7)([o.Z], () => {
       var t, n, r;
-      return null !== e ? null === (r = o.Z.settings.userContent) || void 0 === r ? void 0 : null === (n = r.recurringDismissibleContentStates) || void 0 === n ? void 0 : null === (t = n[e]) || void 0 === t ? void 0 : t.lastDismissedAtMs : void 0
+      return null !== e ? null == (r = o.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates) || null == (t = n[e]) ? void 0 : t.lastDismissedAtMs : void 0
     }),
     c = null != l ? Number.isNaN(Number(l)) ? void 0 : Number(l) : void 0,
     p = (0, i.e7)([a.Z], () => a.Z.getGuildId()),

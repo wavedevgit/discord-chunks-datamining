@@ -19,8 +19,8 @@ var i, o = n(442837),
   g = n(914010),
   E = n(358085),
   b = n(145597),
-  v = n(372679),
-  y = n(451478),
+  y = n(372679),
+  v = n(451478),
   O = n(981631),
   I = n(987650);
 
@@ -144,7 +144,7 @@ function Y(e) {
         });
         break;
       case "CONNECTION_OPEN_SUPPLEMENTAL":
-        e.lazyPrivateChannels = (null !== (t = e.lazyPrivateChannels) && void 0 !== t ? t : []).map(e => (0, f.kt)(e)), s.Z.dispatch(e);
+        e.lazyPrivateChannels = (null != (t = e.lazyPrivateChannels) ? t : []).map(e => (0, f.kt)(e)), s.Z.dispatch(e);
         break;
       case "THREAD_LIST_SYNC":
         s.Z.dispatch(A(T({}, e), {
@@ -154,7 +154,7 @@ function Y(e) {
       case "GUILD_CREATE":
         let l = e => (0, f.kt)(e),
           c = e.guild;
-        c.channels = null !== (i = null === (n = c.channels) || void 0 === n ? void 0 : n.map(l)) && void 0 !== i ? i : null, c.threads = null === (r = c.threads) || void 0 === r ? void 0 : r.map(l), null != c.channelUpdates && (c.channelUpdates.writes = null === (o = c.channelUpdates.writes) || void 0 === o ? void 0 : o.map(l)), s.Z.dispatch({
+        c.channels = null != (i = null == (n = c.channels) ? void 0 : n.map(l)) ? i : null, c.threads = null == (r = c.threads) ? void 0 : r.map(l), null != c.channelUpdates && (c.channelUpdates.writes = null == (o = c.channelUpdates.writes) ? void 0 : o.map(l)), s.Z.dispatch({
           type: "GUILD_CREATE",
           guild: c
         });
@@ -260,7 +260,7 @@ function ea() {
 
 function es() {
   if (__OVERLAY__) {
-    let e = y.Z.windowSize();
+    let e = v.Z.windowSize();
     (0, b.validResolution)(e) || (G = !1)
   }
 }
@@ -340,7 +340,7 @@ function eb() {
   M = !0
 }
 
-function ev() {
+function ey() {
   s.Z.addInterceptor(e => {
     if (k || !H.has(e.type)) return !1;
     if ("CHANNEL_SELECT" === e.type) {
@@ -373,7 +373,7 @@ function ev() {
   })
 }
 
-function ey(e) {
+function ev(e) {
   let t = (0, b.getPID)();
   if (null == e.pid || e.pid === t) switch (e.type) {
     case O.BmY.STORAGE_SYNC:
@@ -385,7 +385,7 @@ function ey(e) {
 }
 
 function eO() {
-  ev(), (0, c.Ty)(ey, (0, b.getRPCAuthToken)()), (0, c.$j)(), (0, c.lW)({
+  ey(), (0, c.Ty)(ev, (0, b.getRPCAuthToken)()), (0, c.$j)(), (0, c.lW)({
     type: O.BmY.CONNECT,
     pid: (0, b.getPID)(),
     token: (0, b.getRPCAuthToken)()
@@ -402,7 +402,7 @@ class eS extends(i = o.ZP.PersistedStore) {
         V = null != e ? F(e) : T({}, P)
       }), __OVERLAY__) {
       if (E.isPlatformEmbedded) {
-        let e = (0, v.M)();
+        let e = (0, y.M)();
         null == e && B.error("Overlay module failed loaded"), r = e
       }
       x.delete((0, b.getPID)())

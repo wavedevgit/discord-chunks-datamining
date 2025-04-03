@@ -58,7 +58,7 @@ class p {
   }
   getName() {
     var e;
-    return null !== (e = this.constructor.displayName) && void 0 !== e ? e : this.constructor.name
+    return null != (e = this.constructor.displayName) ? e : this.constructor.name
   }
   initializeIfNeeded() {
     if (!this._isInitialized) {

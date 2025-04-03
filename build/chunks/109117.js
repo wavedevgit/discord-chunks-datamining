@@ -37,11 +37,8 @@ let f = window.DiscordNative,
 async function p() {
   var e;
   if (__OVERLAY__) return;
-  let t = null == f ? void 0 : null === (e = f.processUtils) || void 0 === e ? void 0 : e.getLastCrash;
-  if (null == t) {
-    console.log("AppCrashedFatalReport: getLastCrash not supported.");
-    return
-  }
+  let t = null == f || null == (e = f.processUtils) ? void 0 : e.getLastCrash;
+  if (null == t) return void console.log("AppCrashedFatalReport: getLastCrash not supported.");
   let n = await t(),
     {
       didCrashReporterSeeCrash: r,
@@ -56,7 +53,7 @@ async function p() {
 function h(e, t) {
   var n;
   let r = (null == e ? void 0 : e.lastId) !== (null == t ? void 0 : t.id) && (null == t ? void 0 : t.id) != null,
-    i = null !== (n = null == t ? void 0 : t.rendererCrashExitCode) && void 0 !== n ? n : null,
+    i = null != (n = null == t ? void 0 : t.rendererCrashExitCode) ? n : null,
     o = r || null != i && 0 !== i;
   return {
     didCrashReporterSeeCrash: r,
@@ -65,7 +62,7 @@ function h(e, t) {
 }
 async function m() {
   var e, t;
-  if (null !== (t = null === (e = a.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t) try {
+  if (null != (t = null == (e = a.default.getCurrentUser()) ? void 0 : e.isStaff()) && t) try {
     await o.Z.getMediaEngine().writeAudioDebugState(), await (0, l.E)(c.GU0.RTC), console.log("Successfully uploaded debug files")
   } catch (e) {
     console.log("Failed to upload debug files")
@@ -73,7 +70,7 @@ async function m() {
 }
 
 function g(e, t, n) {
-  var i, o, a, s, l, c, u, f, _, p, h, m, g, E, b, v, y, O, I;
+  var i, o, a, s, l, c, u, f, _, p, h, m, g, E, b, y, v, O, I;
 
   function S(e) {
     return (null == n ? void 0 : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -84,8 +81,8 @@ function g(e, t, n) {
   }
   let N = {
     did_crash: t,
-    renderer_crash_reason: null !== (u = null == n ? void 0 : n.rendererCrashReason) && void 0 !== u ? u : null,
-    renderer_crash_exit_code: null !== (f = null == n ? void 0 : n.rendererCrashExitCode) && void 0 !== f ? f : null,
+    renderer_crash_reason: null != (u = null == n ? void 0 : n.rendererCrashReason) ? u : null,
+    renderer_crash_exit_code: null != (f = null == n ? void 0 : n.rendererCrashExitCode) ? f : null,
     had_rtc_connection: S(r.X4.HasRTCConnection),
     was_sending_video: S(r.X4.IsSendingVideo),
     was_sending_stream: S(r.X4.IsSendingStream),
@@ -93,12 +90,12 @@ function g(e, t, n) {
     was_receiving_stream: S(r.X4.IsReceivingStream),
     video_media_session_id: T(r.X4.VideoMediaSessionId),
     stream_media_session_id: T(r.X4.StreamMediaSessionId),
-    last_memory_usage_kb: null !== (_ = null == n ? void 0 : null === (i = n.lastMemoryInformation) || void 0 === i ? void 0 : i.memoryUsageKB) && void 0 !== _ ? _ : null,
-    last_used_js_heap_size_kb: null !== (p = null == n ? void 0 : null === (o = n.lastMemoryInformation) || void 0 === o ? void 0 : o.usedJSHeapSizeKB) && void 0 !== p ? p : null,
-    last_memory_usage_uptime: null !== (h = null == n ? void 0 : null === (a = n.lastMemoryInformation) || void 0 === a ? void 0 : a.uptimeSeconds) && void 0 !== h ? h : null,
-    highest_memory_usage_kb: null !== (m = null == n ? void 0 : null === (s = n.highestMemoryInformation) || void 0 === s ? void 0 : s.memoryUsageKB) && void 0 !== m ? m : null,
-    highest_used_js_heap_size_kb: null !== (g = null == n ? void 0 : null === (l = n.highestMemoryInformation) || void 0 === l ? void 0 : l.usedJSHeapSizeKB) && void 0 !== g ? g : null,
-    highest_memory_usage_uptime: null !== (E = null == n ? void 0 : null === (c = n.highestMemoryInformation) || void 0 === c ? void 0 : c.uptimeSeconds) && void 0 !== E ? E : null
+    last_memory_usage_kb: null != (_ = null == n || null == (i = n.lastMemoryInformation) ? void 0 : i.memoryUsageKB) ? _ : null,
+    last_used_js_heap_size_kb: null != (p = null == n || null == (o = n.lastMemoryInformation) ? void 0 : o.usedJSHeapSizeKB) ? p : null,
+    last_memory_usage_uptime: null != (h = null == n || null == (a = n.lastMemoryInformation) ? void 0 : a.uptimeSeconds) ? h : null,
+    highest_memory_usage_kb: null != (m = null == n || null == (s = n.highestMemoryInformation) ? void 0 : s.memoryUsageKB) ? m : null,
+    highest_used_js_heap_size_kb: null != (g = null == n || null == (l = n.highestMemoryInformation) ? void 0 : l.usedJSHeapSizeKB) ? g : null,
+    highest_memory_usage_uptime: null != (E = null == n || null == (c = n.highestMemoryInformation) ? void 0 : c.uptimeSeconds) ? E : null
   };
   if (!e || null == n) return d({
     electron_crash_reporter_did_crash: !1,
@@ -112,10 +109,10 @@ function g(e, t, n) {
   let A = null == n ? void 0 : n.minidumpInformation;
   return d({
     electron_crash_reporter_did_crash: e,
-    minidump_exception_type: null !== (b = null == A ? void 0 : A.exceptionString) && void 0 !== b ? b : null,
-    minidump_exception_module_name: null !== (v = null == A ? void 0 : A.exceptionModuleName) && void 0 !== v ? v : null,
-    minidump_relative_crash_address: null !== (y = null == A ? void 0 : A.relativeCrashAddress) && void 0 !== y ? y : null,
-    minidump_exception_module_version: null !== (O = null == A ? void 0 : A.exceptionModuleVersion) && void 0 !== O ? O : null,
-    minidump_exception_module_code_id: null !== (I = null == A ? void 0 : A.exceptionModuleCodeId) && void 0 !== I ? I : null
+    minidump_exception_type: null != (b = null == A ? void 0 : A.exceptionString) ? b : null,
+    minidump_exception_module_name: null != (y = null == A ? void 0 : A.exceptionModuleName) ? y : null,
+    minidump_relative_crash_address: null != (v = null == A ? void 0 : A.relativeCrashAddress) ? v : null,
+    minidump_exception_module_version: null != (O = null == A ? void 0 : A.exceptionModuleVersion) ? O : null,
+    minidump_exception_module_code_id: null != (I = null == A ? void 0 : A.exceptionModuleCodeId) ? I : null
   }, N)
 }

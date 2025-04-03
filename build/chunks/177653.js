@@ -139,7 +139,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     query: t,
     guildId: n,
@@ -169,7 +169,7 @@ function v(e) {
     [p]: 2
   })
 }
-class y extends(r = s.ZP.Store) {
+class v extends(r = s.ZP.Store) {
   getSearchResults(e) {
     let {
       query: t,
@@ -227,9 +227,9 @@ class y extends(r = s.ZP.Store) {
     })]
   }
 }
-c(y, "displayName", "ApplicationDirectorySearchStore");
-let O = new y(l.Z, {
+c(v, "displayName", "ApplicationDirectorySearchStore");
+let O = new v(l.Z, {
   APPLICATION_DIRECTORY_FETCH_SEARCH: E,
   APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS: b,
-  APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: v
+  APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: y
 })

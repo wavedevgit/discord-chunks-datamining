@@ -20,13 +20,13 @@ var r = n(200651),
   g = n(594174),
   E = n(70956),
   b = n(709054),
-  v = n(51144),
-  y = n(443603),
+  y = n(51144),
+  v = n(443603),
   O = n(981631),
   I = n(921944),
   S = n(388032),
-  T = n(415031),
-  N = n(998735);
+  T = n(767980),
+  N = n(302195);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ function P(e, t) {
 }
 
 function w(e) {
-  return (0, r.jsx)(y.Z, {
+  return (0, r.jsx)(v.Z, {
     innerClassName: N.button,
     "aria-label": S.NW.string(S.t.Z1RnTk),
     isActive: !1,
@@ -90,9 +90,9 @@ function D(e) {
     play: i
   } = (0, s.$)(), o = () => {
     var t;
-    i(), null === (t = e.onClick) || void 0 === t || t.call(e)
+    i(), null == (t = e.onClick) || t.call(e)
   };
-  return (0, r.jsx)(y.Z, P(C({
+  return (0, r.jsx)(v.Z, P(C({
     innerClassName: N.button,
     "aria-label": S.NW.string(S.t.Z1RnTk),
     isActive: !1,
@@ -126,18 +126,18 @@ function x(e) {
     disabled: s,
     channel: E
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: v
   } = (0, u.ZP)(c.Z.GIFT_BUTTON), [S, N] = i.useState(!1), A = (0, o.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? b.default.age(C.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: x
-  } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && A && R >= L, [j, U] = (0, f.XR)(k ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, F = (0, v.Ft)(E);
+  } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && A && R >= L, [j, U] = (0, f.XR)(k ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, F = (0, y.Ft)(E);
   if (s) return null;
   let V = () => {
       (0, _.Z)({
         isGift: !0,
         giftRecipient: null == F ? void 0 : F,
         initialPlanId: null,
-        analyticsLocations: y,
+        analyticsLocations: v,
         analyticsObject: {
           page: E.isPrivate() ? O.ZY5.DM_CHANNEL : O.ZY5.GUILD_CHANNEL,
           section: O.jXE.CHANNEL_TEXT_AREA,

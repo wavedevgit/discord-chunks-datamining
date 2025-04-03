@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "variable",
       variants: [{
@@ -61,4 +61,3 @@ function t(e) {
     illegal: ";$|^\\[|^=|&|\\{"
   }
 }
-e.exports = t

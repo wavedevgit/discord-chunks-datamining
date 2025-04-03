@@ -9,9 +9,9 @@ n.d(t, {
   NE: () => E,
   RG: () => D,
   Xb: () => M,
-  Xu: () => v,
+  Xu: () => y,
   Y: () => j,
-  cD: () => y,
+  cD: () => v,
   ki: () => b,
   kn: () => P,
   tM: () => g,
@@ -60,19 +60,19 @@ function b(e, t) {
   return O(_.Z.can(n, e), e, t)
 }
 
-function v(e) {
+function y(e) {
   let t = (0, a.e7)([_.Z], () => _.Z.can(o.$e(m.Plq.CREATE_PRIVATE_THREADS), e), [e]);
   return e.type === m.d4z.GUILD_TEXT && O(t, e)
 }
 
-function y(e) {
+function v(e) {
   let t = E(e),
-    n = v(e);
+    n = y(e);
   return t || n
 }
 
 function O(e, t, n) {
-  return !(__OVERLAY__ || !e || !u.uC.has(t.type) || null != n && (n.hasFlag(m.iLy.HAS_THREAD) || (0, c.Z)(n)))
+  return !(__OVERLAY__ || !e || !u.uC.has(t.type) || null != n && (n.hasFlag(m.iLy.HAS_THREAD) || (0, c.Z)(n))) && !0
 }
 
 function I(e) {
@@ -103,7 +103,7 @@ function N(e) {
   let t = (0, a.e7)([f.Z], () => f.Z.getChannel(null == e ? void 0 : e.parent_id)),
     n = (0, a.e7)([_.Z], () => null != t && _.Z.can(m.Plq.MANAGE_THREADS, t), [t]),
     r = (0, a.e7)([d.default], () => d.default.getId());
-  return !!(null != e && null != t && e.isThread()) && (!!n || !e.isLockedThread() && e.ownerId === r)
+  return null != e && null != t && !!e.isThread() && (!!n || !e.isLockedThread() && e.ownerId === r)
 }
 
 function A(e, t) {
@@ -112,7 +112,7 @@ function A(e, t) {
 
 function C(e, t, n) {
   var r;
-  return !!(null != e && e.isThread()) && ((null === (r = e.threadMetadata) || void 0 === r ? void 0 : r.locked) ? n : t)
+  return null != e && !!e.isThread() && ((null == (r = e.threadMetadata) ? void 0 : r.locked) ? n : t)
 }
 
 function R(e) {
@@ -130,12 +130,12 @@ function P(e) {
 function w(e) {
   var t;
   let n = (0, a.e7)([_.Z], () => null != e && _.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e));
-  return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null === (t = e.threadMetadata) || void 0 === t ? void 0 : t.locked) !== !0 && n)
+  return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? void 0 : t.locked) !== !0 && n)
 }
 
 function D(e) {
   var t;
-  return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null === (t = e.threadMetadata) || void 0 === t ? void 0 : t.locked) !== !0 && _.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e))
+  return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? void 0 : t.locked) !== !0 && _.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e))
 }
 
 function L(e) {

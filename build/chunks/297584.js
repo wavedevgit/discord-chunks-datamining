@@ -30,11 +30,11 @@ class s {
         case "scalar":
         case "enum":
           let u = "enum" == r.kind ? i.wx.INT32 : r.T;
-          if (l) {
+          if (l)
             if ((0, o.hu)(Array.isArray(a)), l == i.P0.PACKED) this.packed(t, u, r.no, a);
             else
-              for (let e of a) this.scalar(t, u, r.no, e, !0)
-          } else void 0 === a ? (0, o.hu)(r.opt) : this.scalar(t, u, r.no, a, s || r.opt);
+              for (let e of a) this.scalar(t, u, r.no, e, !0);
+          else void 0 === a ? (0, o.hu)(r.opt) : this.scalar(t, u, r.no, a, s || r.opt);
           break;
         case "message":
           if (l)

@@ -62,26 +62,26 @@ function m(e) {
     onIgnore: g,
     onUnblock: E,
     location: b = "ContextMenu",
-    appContext: v = u.IlC.APP
+    appContext: y = u.IlC.APP
   } = e, {
-    id: y
+    id: v
   } = t, O = (0, i.e7)([c.default], () => {
     var e;
-    return (null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === y
-  }, [y]), I = (0, i.e7)([l.Z], () => l.Z.isBlocked(y), [y]), S = I ? "default" : "danger";
+    return (null == (e = c.default.getCurrentUser()) ? void 0 : e.id) === v
+  }, [v]), I = (0, i.e7)([l.Z], () => l.Z.isBlocked(v), [v]), S = I ? "default" : "danger";
   return O ? null : (0, r.jsx)(o.sNh, {
     id: "block",
     color: null != S ? S : "default",
     label: I ? d.NW.string(d.t.XyHpKC) : d.NW.string(d.t.l4EmaW),
     action: I ? () => {
-      null == E || E(), a.Z.unblockUser(y, {
+      null == E || E(), a.Z.unblockUser(v, {
         location: b
-      }), s.Z.showUnblockSuccessToast(y, null != p ? p : void 0)
+      }), s.Z.showUnblockSuccessToast(v, null != p ? p : void 0)
     } : () => {
       (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97652"), n.e("4933")]).then(n.bind(n, 478923));
+        } = await Promise.all([n.e("97652"), n.e("25784")]).then(n.bind(n, 478923));
         return n => (0, r.jsx)(e, h(_({}, n), {
           user: t,
           guildId: f,
@@ -91,7 +91,7 @@ function m(e) {
           location: b
         }))
       }, {
-        contextKey: (0, o.VnL)(v)
+        contextKey: (0, o.VnL)(y)
       })
     }
   })

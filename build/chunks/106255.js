@@ -46,7 +46,7 @@ function p(e, t) {
 
 function h(e, t) {
   var n;
-  return null != t && (null === (n = t.avatarDecoration) || void 0 === n ? void 0 : n.skuId) === e
+  return null != t && (null == (n = t.avatarDecoration) ? void 0 : n.skuId) === e
 }
 
 function m(e) {

@@ -43,12 +43,12 @@ function E(e) {
 }
 
 function b(e) {
-  let t = y(e);
+  let t = v(e);
   I(e, t)
 }
-let v = /(?:<span class="([^"]*)">)|(?:<\/span>)/g;
+let y = /(?:<span class="([^"]*)">)|(?:<\/span>)/g;
 
-function y(e) {
+function v(e) {
   let t = [],
     n = null;
   for (let r of d.bN.blocks(e)) {
@@ -73,7 +73,7 @@ function O(e, t, n, r, i) {
     _ = r && 0 === a.length,
     p = (u ? a.slice(1) : a).length % 2 == 1,
     m = p && (null == c || "" === c || null != c.match(g)),
-    E = m && null != c && null !== (o = h.get(c.toLowerCase())) && void 0 !== o ? o : null;
+    E = m && null != c && null != (o = h.get(c.toLowerCase())) ? o : null;
   return {
     blockEntry: t,
     wasInCodeBlock: n,
@@ -121,12 +121,11 @@ function T(e) {
         if (null != r && r.length === t.length) {
           let e = [];
           for (let n = 0; n < t.length; n++) {
-            let i;
-            let o = r[n].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#x27;/g, "'"),
+            let i, o = r[n].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#x27;/g, "'"),
               a = [],
               s = 0,
               l = 0;
-            for (; null != (i = v.exec(o));) {
+            for (; null != (i = y.exec(o));) {
               let t = i.index + i[0].length,
                 n = i.index - l;
               i.index > l && (e.length > 0 && a.push({
@@ -171,8 +170,7 @@ function C(e, t) {
 }
 
 function R(e) {
-  let t;
-  let [n, r] = e;
+  let t, [n, r] = e;
   if (!_.has(n.type)) return [];
   let i = [],
     o = /\\|```/g;
@@ -210,7 +208,7 @@ function P(e, t) {
     let e = i[0].text;
     d.C0.equals(i[1], t.path) && (e = e.substring(0, t.offset));
     let o = e.match(/```/g);
-    n += null !== (r = null == o ? void 0 : o.length) && void 0 !== r ? r : 0
+    n += null != (r = null == o ? void 0 : o.length) ? r : 0
   }
   return n % 2 != 0
 }

@@ -17,10 +17,10 @@ var r = n(147018),
   g = [],
   E = i(g.sort),
   b = i(g.push),
-  v = u(function() {
+  y = u(function() {
     g.sort(void 0)
   }),
-  y = u(function() {
+  v = u(function() {
     g.sort(null)
   }),
   O = f("sort"),
@@ -64,7 +64,7 @@ var r = n(147018),
 r({
   target: "Array",
   proto: !0,
-  forced: v || !y || !O || !I
+  forced: y || !v || !O || !I
 }, {
   sort: function(e) {
     void 0 !== e && o(e);

@@ -12,8 +12,8 @@ var r = n(200651),
   c = n(520315),
   u = n(688465),
   d = n(388032),
-  f = n(276229),
-  _ = n(50398),
+  f = n(639746),
+  _ = n(73433),
   p = n(413097);
 
 function h(e, t, n) {
@@ -63,7 +63,7 @@ function E(e) {
     beta: !1
   }].filter(e => {
     var n, r;
-    return (null === (r = t.integrationTypesConfig) || void 0 === r ? void 0 : null === (n = r[e.type]) || void 0 === n ? void 0 : n.oauth2InstallParams) != null
+    return (null == (r = t.integrationTypesConfig) || null == (n = r[e.type]) ? void 0 : n.oauth2InstallParams) != null
   }), [t.integrationTypesConfig]);
   return (0, r.jsxs)("div", {
     className: f.container,
@@ -81,7 +81,7 @@ function E(e) {
         src: _,
         className: f.appIcon,
         rendersPlaceholder: !0
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(y, {
         application: t
       }), (0, r.jsx)(b, {
         application: t
@@ -135,7 +135,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     application: t
   } = e, n = t.name, i = (0, s.vJ)(t);
@@ -155,7 +155,7 @@ function v(e) {
     }) : null]
   })
 }
-let y = 3;
+let v = 3;
 
 function O(e) {
   let {
@@ -180,14 +180,14 @@ function O(e) {
       let e = p * h;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, y * p),
+        minHeightOverride: Math.min(e, v * p),
         maxHeightOverride: e
       }
     }, [h, p]),
     {
       ref: E,
       isTransitioning: b,
-      onTransitionEnd: v
+      onTransitionEnd: y
     } = (0, c.Z)(m({
       isExpanded: o
     }, g)),
@@ -197,18 +197,18 @@ function O(e) {
     children: [(0, r.jsx)("div", {
       ref: E,
       className: f.overflowHidden,
-      onTransitionEnd: v,
+      onTransitionEnd: y,
       children: (0, r.jsx)(a.Text, {
         ref: u,
         className: _.markup,
         variant: "text-sm/medium",
-        lineClamp: O ? void 0 : y,
+        lineClamp: O ? void 0 : v,
         style: {
           maxHeight: O ? void 0 : g.minHeightOverride
         },
         children: l
       })
-    }), null != h && h > y ? (0, r.jsxs)(a.P3F, {
+    }), null != h && h > v ? (0, r.jsxs)(a.P3F, {
       className: f.expandableDescriptionClickable,
       onClick: () => s(e => !e),
       children: [(0, r.jsx)(a.Text, {
@@ -234,7 +234,7 @@ function I() {
     let t = e.current;
     if (null === t || 0 === t.clientHeight) return;
     let r = parseInt(getComputedStyle(t).lineHeight);
-    !isNaN(r) && (n(r), o(Math.floor(t.clientHeight / r)))
+    isNaN(r) || (n(r), o(Math.floor(t.clientHeight / r)))
   }, []), {
     ref: e,
     lineHeight: t,

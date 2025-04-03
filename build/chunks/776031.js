@@ -21,7 +21,7 @@ var r = n(200651),
   E = n(65154),
   b = n(388032);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -65,7 +65,7 @@ function S(e, t) {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
-    return n => (0, r.jsx)(e, I(y({}, n), {
+    return n => (0, r.jsx)(e, I(v({}, n), {
       analyticsSource: t
     }))
   }, {
@@ -76,11 +76,11 @@ function S(e, t) {
 function T(e, t) {
   let {
     preset: n,
-    resolution: v,
+    resolution: y,
     fps: O
   } = (0, o.cj)([u.Z], () => u.Z.getState()), T = (0, o.e7)([_.Z], () => _.Z.getGoLiveSource()), N = (0, o.e7)([h.default], () => h.default.getCurrentUser()), A = (0, o.e7)([f.Z], () => {
     var t;
-    return null === (t = f.Z.getGuild(null == e ? void 0 : e.guildId)) || void 0 === t ? void 0 : t.premiumTier
+    return null == (t = f.Z.getGuild(null == e ? void 0 : e.guildId)) ? void 0 : t.premiumTier
   }), {
     location: C
   } = (0, l.O)(), R = (0, o.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
@@ -102,7 +102,7 @@ function T(e, t) {
           audioDeviceGuid: T.cameraSource.audioDeviceGuid
         }), s.Z.setGoLiveSource(e)
       }
-    } else S(t, I(y({}, C), {
+    } else S(t, I(v({}, C), {
       object: m.qAy.RADIO_ITEM,
       objectType: i
     }))
@@ -113,13 +113,13 @@ function T(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, v, t, N, A, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, N, A, R);
       return (0, r.jsx)(a.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === O,
-        action: () => P(i, v, t, m.Qqv.RESOLUTION)
+        action: () => P(i, y, t, m.Qqv.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
     L = g.km.map(e => {
@@ -131,7 +131,7 @@ function T(e, t) {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
-        checked: t === v,
+        checked: t === y,
         action: () => P(i, t, w, m.Qqv.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });

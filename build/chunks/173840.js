@@ -170,11 +170,11 @@ function b(e) {
   return RegExp(e.toString() + "|").exec("").length - 1
 }
 
-function v(e, t) {
+function y(e, t) {
   let n = e && e.exec(t);
   return n && 0 === n.index
 }
-let y = /\[(?:[^\\\]]|\\.)*\]|\(\??|\\([1-9][0-9]*)|\\./;
+let v = /\[(?:[^\\\]]|\\.)*\]|\(\??|\\([1-9][0-9]*)|\\./;
 
 function O(e, {
   joinWith: t
@@ -185,7 +185,7 @@ function O(e, {
       r = f(e),
       i = "";
     for (; r.length > 0;) {
-      let e = y.exec(r);
+      let e = v.exec(r);
       if (!e) {
         i += r;
         break
@@ -501,14 +501,12 @@ function ed(e) {
       let t = this.getMatcher(this.regexIndex);
       t.lastIndex = this.lastIndex;
       let n = t.exec(e);
-      if (this.resumingScanAtSamePosition()) {
+      if (this.resumingScanAtSamePosition())
         if (n && n.index === this.lastIndex);
         else {
           let t = this.getMatcher(0);
           t.lastIndex = this.lastIndex + 1, n = t.exec(e)
-        }
-      }
-      return n && (this.regexIndex += n.position + 1, this.regexIndex === this.count && this.considerAll()), n
+        } return n && (this.regexIndex += n.position + 1, this.regexIndex === this.count && this.considerAll()), n
     }
   }
 
@@ -562,7 +560,7 @@ let em = r,
   eg = i,
   eE = Symbol("nomatch"),
   eb = 7,
-  ev = function(e) {
+  ey = function(e) {
     let r = Object.create(null),
       i = Object.create(null),
       o = [],
@@ -620,10 +618,7 @@ let em = r,
       }
 
       function d() {
-        if (!w.keywords) {
-          L.addText(x);
-          return
-        }
+        if (!w.keywords) return void L.addText(x);
         let e = 0;
         w.keywordPatternRe.lastIndex = 0;
         let t = w.keywordPatternRe.exec(x),
@@ -649,10 +644,7 @@ let em = r,
         if ("" === x) return;
         let e = null;
         if ("string" == typeof w.subLanguage) {
-          if (!r[w.subLanguage]) {
-            L.addText(x);
-            return
-          }
+          if (!r[w.subLanguage]) return void L.addText(x);
           e = b(w.subLanguage, x, !0, D[w.subLanguage]), D[w.subLanguage] = e._top
         } else e = O(x, w.subLanguage.length ? w.subLanguage : null);
         w.relevance > 0 && (M += e.relevance), L.__addSublanguage(e._emitter, e.language)
@@ -689,7 +681,7 @@ let em = r,
       }
 
       function g(e, t, r) {
-        let i = v(e.endRe, r);
+        let i = y(e.endRe, r);
         if (i) {
           if (e["on:end"]) {
             let r = new n(e);
@@ -707,7 +699,7 @@ let em = r,
         return 0 === w.matcher.regexIndex ? (x += e[0], 1) : (U = !0, 0)
       }
 
-      function y(e) {
+      function v(e) {
         let t = e[0],
           r = e.rule,
           i = new n(r);
@@ -744,7 +736,7 @@ let em = r,
           }
           return 1
         }
-        if (T = r, "begin" === r.type) return y(r);
+        if (T = r, "begin" === r.type) return v(r);
         if ("illegal" !== r.type || i) {
           if ("end" === r.type) {
             let e = I(r);
@@ -820,7 +812,7 @@ let em = r,
       }
     }
 
-    function y(e) {
+    function v(e) {
       let t = {
         value: em(e),
         illegal: !1,
@@ -833,14 +825,14 @@ let em = r,
 
     function O(e, t) {
       t = t || c.languages || Object.keys(r);
-      let n = y(e),
+      let n = v(e),
         i = t.filter(P).filter(D).map(t => b(t, e, !1));
       i.unshift(n);
       let [o, a] = i.sort((e, t) => {
         if (e.relevance !== t.relevance) return t.relevance - e.relevance;
         if (e.language && t.language) {
           if (P(e.language).supersetOf === t.language) return 1;
-          if (P(t.language).supersetOf === e.language) return -1
+          else if (P(t.language).supersetOf === e.language) return -1
         }
         return 0
       }), s = o;
@@ -859,10 +851,7 @@ let em = r,
       if (x("before:highlightElement", {
           el: e,
           language: n
-        }), e.dataset.highlighted) {
-        console.log("Element previously highlighted. To highlight again, first unset `dataset.highlighted`.", e);
-        return
-      }
+        }), e.dataset.highlighted) return void console.log("Element previously highlighted. To highlight again, first unset `dataset.highlighted`.", e);
       if (e.children.length > 0 && (c.ignoreUnescapedHTML || (console.warn("One of your code blocks includes unescaped HTML. This is a potentially serious security risk."), console.warn("https://github.com/highlightjs/highlight.js/wiki/security"), console.warn("The element with unescaped HTML:"), console.warn(e)), c.throwUnescapedHTML)) throw new eh("One of your code blocks includes unescaped HTML.", e.innerHTML);
       let r = (t = e).textContent,
         i = n ? g(r, {
@@ -996,5 +985,5 @@ let em = r,
       }, V) "object" == typeof V[n] && t(V[n]);
     return Object.assign(e, V), e
   },
-  ey = ev({});
-ey.newInstance = () => ev({}), e.exports = ey, ey.HighlightJS = ey, ey.default = ey
+  ev = ey({});
+ev.newInstance = () => ey({}), e.exports = ev, ev.HighlightJS = ev, ev.default = ev

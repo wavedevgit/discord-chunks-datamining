@@ -54,8 +54,8 @@ let p = new Set([n(981631).ABu.CONTACTS]),
   g = [],
   E = {},
   b = new Set,
-  v = {},
   y = {},
+  v = {},
   O = e => {
     m = e.filter(e => !p.has(e.type) && s.Z.isSupported(e.type)), g = e.filter(e => p.has(e.type)), h = !1
   };
@@ -77,7 +77,7 @@ function T(e) {
 }
 
 function N(e) {
-  y[e.integrationId] = void 0 !== e.error ? e.error : ""
+  v[e.integrationId] = void 0 !== e.error ? e.error : ""
 }
 
 function A(e) {
@@ -109,7 +109,7 @@ class R extends(r = i.ZP.Store) {
     return E[e] || !1
   }
   joinErrorMessage(e) {
-    return y[e]
+    return v[e]
   }
   isFetching() {
     return h
@@ -127,7 +127,7 @@ class R extends(r = i.ZP.Store) {
     return g.find(t => t.type === e)
   }
   isSuggestedAccountType(e) {
-    return v[e] || !1
+    return y[e] || !1
   }
   addPendingAuthorizedState(e) {
     b.add(e)

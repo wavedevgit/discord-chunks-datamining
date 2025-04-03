@@ -21,8 +21,8 @@ var i = n(120356),
   g = n(960870),
   E = n(139793),
   b = n(994746),
-  v = n(232174),
-  y = n(652853),
+  y = n(232174),
+  v = n(652853),
   O = n(979038),
   I = n(448980),
   S = n(336383),
@@ -36,7 +36,7 @@ var i = n(120356),
   D = n(981631),
   L = n(701488),
   x = n(388032),
-  M = n(24981);
+  M = n(227832);
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,7 +92,7 @@ function B(e) {
     analyticsLocations: H
   } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     profileType: W
-  } = (0, y.z)(), Y = {
+  } = (0, v.z)(), Y = {
     [M.fullSize]: W === w.y0.FULL_SIZE
   }, K = (0, h.Z)({
     activity: i,
@@ -153,7 +153,7 @@ function B(e) {
       text: i.name
     }) : (0, r.jsx)(N.Z, {
       variant: "heading-sm/semibold",
-      text: null !== (e = i.details) && void 0 !== e ? e : i.name
+      text: null != (e = i.details) ? e : i.name
     })
   }, en = () => (0, u.Z)(i) && null != U ? (0, r.jsx)(N.Z, {
     variant: "text-xs/normal",
@@ -174,12 +174,12 @@ function B(e) {
   }), er = () => {
     var e;
     return i.type === D.IIU.WATCHING ? null : (0, c.Z)(i) ? ei() : (0, r.jsx)(N.Z, {
-      text: null === (e = i.assets) || void 0 === e ? void 0 : e.large_text,
+      text: null == (e = i.assets) ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
   }, ei = () => {
     var e, t, n, o;
-    return (null === (e = i.party) || void 0 === e ? void 0 : e.size) == null && i.application_id === L.Zc ? (0, r.jsxs)("div", {
+    return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === L.Zc ? (0, r.jsxs)("div", {
       className: M.gameState,
       children: [(0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
@@ -188,10 +188,10 @@ function B(e) {
         variant: "text-xs/normal",
         text: x.NW.formatToPlainString(x.t["u//9Bw"], {
           count: "0",
-          max: null !== (o = null == k ? void 0 : k.getMaxParticipants()) && void 0 !== o ? o : 0
+          max: null != (o = null == k ? void 0 : k.getMaxParticipants()) ? o : 0
         })
       })]
-    }) : (0, l.Z)(i) && (null === (t = i.party) || void 0 === t ? void 0 : t.size) != null && (null === (n = i.party) || void 0 === n ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
+    }) : (0, l.Z)(i) && (null == (t = i.party) ? void 0 : t.size) != null && (null == (n = i.party) ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
       className: M.gameState,
       children: [(0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
@@ -210,7 +210,7 @@ function B(e) {
       text: i.state
     }) : null
   }, eo = () => {
-    if (!(0, v.Z)(i)) return null;
+    if (!(0, y.Z)(i)) return null;
     let {
       start: e,
       end: t

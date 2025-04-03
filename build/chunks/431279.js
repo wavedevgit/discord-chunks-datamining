@@ -13,7 +13,7 @@ var r, i = n(200651),
   d = n(312097),
   f = n(506071),
   _ = n(701865),
-  p = n(181410);
+  p = n(838157);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,7 +56,7 @@ function E(e, t) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,14 +64,14 @@ function b(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class y extends(r = o.PureComponent) {
+class v extends(r = o.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -94,10 +94,8 @@ class y extends(r = o.PureComponent) {
         onMouseEnter: i,
         handlePreloadImage: o
       } = this.props;
-      if (null == i || i(e), null != o) {
-        o();
-        return
-      }(0, u.Qk)({
+      if (null == i || i(e), null != o) return void o();
+      (0, u.Qk)({
         src: t,
         width: n,
         height: r,
@@ -152,12 +150,12 @@ class y extends(r = o.PureComponent) {
 function O(e) {
   let t = (0, l.bp)(),
     n = (0, f.n)();
-  return (0, i.jsx)(y, E(m({}, e), {
+  return (0, i.jsx)(v, E(m({}, e), {
     isWindowFocused: n,
     appContext: t
   }))
 }
-h(y, "defaultProps", {
+h(v, "defaultProps", {
   shouldLink: !0,
   autoPlay: !1,
   animated: !1

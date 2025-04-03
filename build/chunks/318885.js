@@ -38,13 +38,12 @@ function p(e) {
 }
 
 function h() {
-  let e, t, n, r, o;
-  let a = s.Z.getGoLiveSource();
+  let e, t, n, r, o, a = s.Z.getGoLiveSource();
   if (null != a && (e = a.quality.resolution, t = a.quality.frameRate, null != a.desktopSource)) {
     var l, c;
     n = a.desktopSource.soundshareSession;
     let e = null != a.desktopSource.sourcePid ? i.ZP.getGameForPID(a.desktopSource.sourcePid) : null;
-    r = null !== (l = null == e ? void 0 : e.name) && void 0 !== l ? l : null, o = null !== (c = null == e ? void 0 : e.id) && void 0 !== c ? c : null
+    r = null != (l = null == e ? void 0 : e.name) ? l : null, o = null != (c = null == e ? void 0 : e.id) ? c : null
   }
   return {
     video_input_resolution: e,
@@ -60,7 +59,7 @@ function m(e, t) {
   let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     _ = __OVERLAY__ ? c.Z.getGame() : (0, a.pL)(),
     h = i.ZP.getRunningGames().find(e => e.name === (null == _ ? void 0 : _.name)),
-    m = null !== (n = o.default.getRenderMethod(null == h ? void 0 : h.pid)) && void 0 !== n ? n : null;
+    m = null != (n = o.default.getRenderMethod(null == h ? void 0 : h.pid)) ? n : null;
   switch (t = p({}, {
       overlay_game_name: null != _ ? _.name : "Unknown Game",
       overlay_app_id: null != _ ? _.id : null,

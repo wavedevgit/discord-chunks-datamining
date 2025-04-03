@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.COMMENT(/\{/, /\}/, {
     contains: ["self"]
   });
@@ -29,4 +29,3 @@ function t(e) {
     }, e.C_NUMBER_MODE]
   }
 }
-e.exports = t

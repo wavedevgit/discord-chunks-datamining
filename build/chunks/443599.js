@@ -17,8 +17,7 @@ async function a(e, t, a) {
     appContext: f
   } = a, _ = (0, i.Gwq)();
   try {
-    let a;
-    let p = u ? await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
+    let a, p = u ? await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
       h = [],
       m = e => {
         h.push(e)
@@ -29,7 +28,7 @@ async function a(e, t, a) {
     (0, i.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("25292"), n.e("95477"), n.e("11212"), n.e("6536"), n.e("28467"), n.e("92457")]).then(n.bind(n, 186023));
+      } = await Promise.all([n.e("25292"), n.e("95477"), n.e("11212"), n.e("35397"), n.e("28467"), n.e("92457")]).then(n.bind(n, 186023));
       return n => (0, r.jsx)(t, {
         menu: p,
         reportType: e,

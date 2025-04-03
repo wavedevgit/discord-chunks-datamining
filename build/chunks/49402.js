@@ -77,8 +77,8 @@ function m(e, t, n) {
       dir: g = "ltr",
       orientation: E = "vertical",
       fade: b = !1,
-      customTheme: v = !1,
-      paddingFix: y = !0,
+      customTheme: y = !1,
+      paddingFix: v = !0,
       style: O,
       gap: I,
       experimental_useStack: S
@@ -92,7 +92,7 @@ function m(e, t, n) {
       getScrollerState: A
     }, (0, c.Ue)(N, A, C, E)), [N, A, E, C]);
     let R = (0, c.tT)({
-      paddingFix: y,
+      paddingFix: v,
       orientation: E,
       dir: g,
       className: m,
@@ -105,7 +105,7 @@ function m(e, t, n) {
       className: a()(m, {
         [e]: !0,
         [t]: b,
-        [n]: v
+        [n]: y
       }),
       style: (0, c.uT)(O, E),
       dir: g
@@ -119,7 +119,7 @@ function m(e, t, n) {
       className: a()(m, {
         [e]: !0,
         [t]: b,
-        [n]: v
+        [n]: y
       }),
       style: (0, c.uT)(O, E),
       dir: g

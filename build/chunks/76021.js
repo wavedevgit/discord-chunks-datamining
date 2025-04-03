@@ -67,7 +67,7 @@ function g(e, t, _) {
   else {
     var h;
     let n = s.Z.getChannel(t),
-      r = (0, a.Z)(f.tI.PRESET_CUSTOM, f.LY.RESOLUTION_1080, f.ws.FPS_30, u.default.getCurrentUser(), null === (h = l.Z.getGuild(e)) || void 0 === h ? void 0 : h.premiumTier, n) ? {
+      r = (0, a.Z)(f.tI.PRESET_CUSTOM, f.LY.RESOLUTION_1080, f.ws.FPS_30, u.default.getCurrentUser(), null == (h = l.Z.getGuild(e)) ? void 0 : h.premiumTier, n) ? {
         width: 1920,
         height: 1080
       } : {

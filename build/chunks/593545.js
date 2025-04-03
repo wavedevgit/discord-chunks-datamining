@@ -15,8 +15,8 @@ var r = n(200651),
   f = n(259580),
   _ = n(424218),
   p = n(388032),
-  h = n(954614),
-  m = n(269918);
+  h = n(8410),
+  m = n(283574);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,16 +51,16 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function v(e) {
   var t;
   let n = "utf-8",
-    r = null !== (t = null == e ? void 0 : e.split("charset=").slice(-1)[0]) && void 0 !== t ? t : n;
+    r = null != (t = null == e ? void 0 : e.split("charset=").slice(-1)[0]) ? t : n;
   try {
     return new TextDecoder(r)
   } catch (t) {
@@ -73,7 +73,7 @@ function O(e, t) {
   let [n, r] = i.useState(!1), [o, a] = i.useState(null), [s, l] = i.useState(1);
   return i.useEffect(() => {
     let n = 5e4;
-    (async function() {
+    !async function() {
       try {
         var i, o;
         let s = await fetch(e, {
@@ -82,15 +82,15 @@ function O(e, t) {
               Accept: "text/plain"
             }
           }),
-          c = y(t).decode(await s.arrayBuffer()),
-          u = null !== (i = s.headers.get("content-range")) && void 0 !== i ? i : "0",
-          d = null !== (o = s.headers.get("content-length")) && void 0 !== o ? o : "1",
+          c = v(t).decode(await s.arrayBuffer()),
+          u = null != (i = s.headers.get("content-range")) ? i : "0",
+          d = null != (o = s.headers.get("content-length")) ? o : "1",
           f = parseInt(u.split("/")[1]) - parseInt(d);
         a(0 === f ? c : c.slice(0, -1)), l(f), r(!1)
       } catch (e) {
         l(0), r(!0)
       }
-    })()
+    }()
   }, [e, t]), {
     fileContents: o,
     bytesLeft: s,
@@ -138,7 +138,7 @@ function S(e) {
   });
   return (0, r.jsx)(l.ua7, {
     text: "".concat(t ? p.NW.string(p.t.iTcumZ) : p.NW.string(p.t.dcl9MT), " (").concat(a, ")"),
-    children: e => (0, r.jsxs)(l.P3F, v(E({}, e), {
+    children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
       className: h.toggleExpandSection,
       onClick: () => {
         n(!t)
@@ -159,19 +159,19 @@ function T(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.ua7, {
       text: o,
-      children: e => (0, r.jsx)("span", v(E({}, e), {
+      children: e => (0, r.jsx)("span", y(E({}, e), {
         className: a()(h.downloadSection, h.attachmentName),
         children: n
       }))
     }), (0, r.jsx)(l.ua7, {
       text: o,
-      children: e => (0, r.jsx)("span", v(E({}, e), {
+      children: e => (0, r.jsx)("span", y(E({}, e), {
         className: a()(h.downloadSection, h.formattedSize),
         children: (0, _.IC)(i)
       }))
     }), (0, r.jsx)(l.ua7, {
       text: "".concat(p.NW.string(p.t["1WjMbG"]), " ").concat(o),
-      children: e => (0, r.jsx)(l.eee, v(E({}, e), {
+      children: e => (0, r.jsx)(l.eee, y(E({}, e), {
         className: h.downloadSection,
         href: t,
         target: "_blank",
@@ -219,7 +219,7 @@ function N(e) {
     },
     children: e => (0, r.jsx)(l.ua7, {
       text: p.NW.string(p.t.utm4qq),
-      children: t => (0, r.jsx)(l.nF$, v(E({
+      children: t => (0, r.jsx)(l.nF$, y(E({
         size: "md",
         color: "currentColor"
       }, t, e), {
@@ -232,7 +232,7 @@ function N(e) {
 function A(e) {
   return (0, r.jsx)(l.ua7, {
     text: p.NW.string(p.t["0PQYk5"]),
-    children: t => (0, r.jsx)(l.P3F, v(E({}, t), {
+    children: t => (0, r.jsx)(l.P3F, y(E({}, t), {
       className: h.openFullPreviewSection,
       onClick: () => {
         (0, l.h7j)(t => (0, r.jsx)(R, E({}, e, t)))
@@ -258,15 +258,15 @@ function C(e) {
     setLanguage: m,
     bytesLeft: g,
     className: E
-  } = e, b = null == s ? void 0 : s.split("\n"), v = null !== (t = null == b ? void 0 : b.length) && void 0 !== t ? t : 0, y = c ? 100 : 6, O = 0 === g, C = "";
-  O && c && v > y ? C = "\n..." : O || (C = "..."), "" !== C && (O ? C += " " + p.NW.formatToPlainString(p.t.DQnFp6, {
-    lines: v - y
+  } = e, b = null == s ? void 0 : s.split("\n"), y = null != (t = null == b ? void 0 : b.length) ? t : 0, v = c ? 100 : 6, O = 0 === g, C = "";
+  O && c && y > v ? C = "\n..." : O || (C = "..."), "" !== C && (O ? C += " " + p.NW.formatToPlainString(p.t.DQnFp6, {
+    lines: y - v
   }) : C += " " + p.NW.formatToPlainString(p.t["1+gGcH"], {
     formattedBytes: (0, _.IC)(g)
   }));
-  let R = (null == b ? void 0 : b.slice(0, y).join("\n")) + C,
+  let R = (null == b ? void 0 : b.slice(0, v).join("\n")) + C,
     P = (0, u.yx)(R),
-    w = c || y < v;
+    w = c || v < y;
   return (0, r.jsxs)("div", {
     className: a()(E, h.container),
     children: [(0, r.jsx)("div", {
@@ -288,7 +288,7 @@ function C(e) {
           expanded: c,
           setExpanded: d,
           isWholeFile: O,
-          numLines: v
+          numLines: y
         }), (0, r.jsx)(A, {
           url: n,
           fileName: i,

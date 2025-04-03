@@ -302,7 +302,7 @@ var h = function(e) {
       return this.value + this.addValue * e
     }, t
   }(h),
-  v = function(e) {
+  y = function(e) {
     function t(t, n, r, i, o, a) {
       var s = e.call(this, t) || this;
       s.min = n, s.max = r, s.duration = i;
@@ -328,12 +328,12 @@ var h = function(e) {
     }, t
   }(h);
 
-function y(e, t) {
+function v(e, t) {
   return e === t ? e : Math.random() * (t - e + 1) + e
 }
 
 function O(e) {
-  var t = Math.floor(y(0, e.length - 1));
+  var t = Math.floor(v(0, e.length - 1));
   return [e[t], t]
 }
 
@@ -362,15 +362,15 @@ function N(e) {
       case "static":
         return new E(e.value);
       case "static-random":
-        return new E(y(e.minValue, e.maxValue));
+        return new E(v(e.minValue, e.maxValue));
       case "linear":
         return new b(e.value, e.addValue);
       case "linear-random":
-        return new b(y(e.minValue, e.maxValue), y(e.minAddValue, e.maxAddValue));
+        return new b(v(e.minValue, e.maxValue), v(e.minAddValue, e.maxAddValue));
       case "oscillating":
-        return new v(e.value, e.start, e.final, e.duration, e.direction, e.easingFunction);
+        return new y(e.value, e.start, e.final, e.duration, e.direction, e.easingFunction);
       case "oscillating-random":
-        return new v(y(e.minValue, e.maxValue), y(e.minStart, e.maxStart), y(e.minFinal, e.maxFinal), y(e.minDuration, e.maxDuration), I(e.minDirection, e.maxDirection), O(e.easingFunctions)[0])
+        return new y(v(e.minValue, e.maxValue), v(e.minStart, e.maxStart), v(e.minFinal, e.maxFinal), v(e.minDuration, e.maxDuration), I(e.minDirection, e.maxDirection), O(e.easingFunctions)[0])
     }
   }(f(f({}, e), {
     valueType: "number"
@@ -386,7 +386,7 @@ function A(e) {
       case "static-random":
         var n = S(e.minValue),
           r = S(e.maxValue);
-        return new m(new E(y(n.x, r.x)), new E(y(n.y, r.y)), e.uniformVectorValues);
+        return new m(new E(v(n.x, r.x)), new E(v(n.y, r.y)), e.uniformVectorValues);
       case "linear":
         t = S(e.value);
         var i = S(e.addValue);
@@ -395,14 +395,14 @@ function A(e) {
         n = S(e.minValue), r = S(e.maxValue);
         var o = S(e.minAddValue),
           a = S(e.maxAddValue);
-        return new m(new b(y(n.x, r.x), y(o.x, a.x)), new b(y(n.y, r.y), y(o.x, a.x)), e.uniformVectorValues);
+        return new m(new b(v(n.x, r.x), v(o.x, a.x)), new b(v(n.y, r.y), v(o.x, a.x)), e.uniformVectorValues);
       case "oscillating":
         t = S(e.value);
         var s = S(e.start),
           l = S(e.final),
           c = S(e.duration),
           u = S(e.direction);
-        return new m(new v(t.x, s.x, l.x, c.x, u.x, e.easingFunction), new v(t.y, s.y, l.y, c.x, u.y, e.easingFunction), e.uniformVectorValues);
+        return new m(new y(t.x, s.x, l.x, c.x, u.x, e.easingFunction), new y(t.y, s.y, l.y, c.x, u.y, e.easingFunction), e.uniformVectorValues);
       case "oscillating-random":
         n = S(e.minValue), r = S(e.maxValue);
         var d = S(e.minStart),
@@ -413,7 +413,7 @@ function A(e) {
           g = S(e.maxDuration),
           T = S(e.minDirection),
           N = S(e.maxDirection);
-        return new m(new v(y(n.x, r.x), y(d.x, f.x), y(_.x, p.x), y(h.x, g.x), I(T.x, N.x), O(e.easingFunctions)[0]), new v(y(n.y, r.y), y(d.y, f.y), y(_.y, p.y), y(h.y, g.y), I(T.y, N.y), O(e.easingFunctions)[0]), e.uniformVectorValues)
+        return new m(new y(v(n.x, r.x), v(d.x, f.x), v(_.x, p.x), v(h.x, g.x), I(T.x, N.x), O(e.easingFunctions)[0]), new y(v(n.y, r.y), v(d.y, f.y), v(_.y, p.y), v(h.y, g.y), I(T.y, N.y), O(e.easingFunctions)[0]), e.uniformVectorValues)
     }
   }(f(f({}, e), {
     valueType: "Vector2"
@@ -429,7 +429,7 @@ function C(e) {
       case "static-random":
         var n = T(e.minValue),
           r = T(e.maxValue);
-        return new g(new E(y(n.x, r.x)), new E(y(n.y, r.y)), new E(y(n.z, r.z)), e.uniformVectorValues);
+        return new g(new E(v(n.x, r.x)), new E(v(n.y, r.y)), new E(v(n.z, r.z)), e.uniformVectorValues);
       case "linear":
         t = T(e.value);
         var i = T(e.addValue);
@@ -438,14 +438,14 @@ function C(e) {
         n = T(e.minValue), r = T(e.maxValue);
         var o = T(e.minAddValue),
           a = T(e.maxAddValue);
-        return new g(new b(y(n.x, r.x), y(o.x, a.x)), new b(y(n.y, r.y), y(o.y, a.y)), new b(y(n.z, r.z), y(o.z, a.z)), e.uniformVectorValues);
+        return new g(new b(v(n.x, r.x), v(o.x, a.x)), new b(v(n.y, r.y), v(o.y, a.y)), new b(v(n.z, r.z), v(o.z, a.z)), e.uniformVectorValues);
       case "oscillating":
         t = T(e.value);
         var s = T(e.start),
           l = T(e.final),
           c = T(e.duration),
           u = T(e.direction);
-        return new g(new v(t.x, s.x, l.x, c.x, u.x, e.easingFunction), new v(t.y, s.y, l.y, c.z, u.y, e.easingFunction), new v(t.z, s.z, l.z, c.z, u.z, e.easingFunction), e.uniformVectorValues);
+        return new g(new y(t.x, s.x, l.x, c.x, u.x, e.easingFunction), new y(t.y, s.y, l.y, c.z, u.y, e.easingFunction), new y(t.z, s.z, l.z, c.z, u.z, e.easingFunction), e.uniformVectorValues);
       case "oscillating-random":
         n = T(e.minValue), r = T(e.maxValue);
         var d = T(e.minStart),
@@ -456,7 +456,7 @@ function C(e) {
           m = T(e.maxDuration),
           S = T(e.minDirection),
           N = T(e.maxDirection);
-        return new g(new v(y(n.x, r.x), y(d.x, f.x), y(_.x, p.x), y(h.x, m.x), I(S.x, N.x), O(e.easingFunctions)[0]), new v(y(n.y, r.y), y(d.y, f.y), y(_.y, p.y), y(h.y, m.y), I(S.y, N.y), O(e.easingFunctions)[0]), new v(y(n.z, r.z), y(d.z, f.z), y(_.z, p.z), y(h.z, m.z), I(S.z, N.z), O(e.easingFunctions)[0]), e.uniformVectorValues)
+        return new g(new y(v(n.x, r.x), v(d.x, f.x), v(_.x, p.x), v(h.x, m.x), I(S.x, N.x), O(e.easingFunctions)[0]), new y(v(n.y, r.y), v(d.y, f.y), v(_.y, p.y), v(h.y, m.y), I(S.y, N.y), O(e.easingFunctions)[0]), new y(v(n.z, r.z), v(d.z, f.z), v(_.z, p.z), v(h.z, m.z), I(S.z, N.z), O(e.easingFunctions)[0]), e.uniformVectorValues)
     }
   }(f(f({}, e), {
     valueType: "Vector3"
@@ -488,7 +488,7 @@ function R(e, t, n, r, i) {
       var r = null != t ? n.colors.findIndex(function(e) {
         return e === t
       }) : -1;
-      return -1 !== r ? r : Math.floor(y(0, n.colors.length - 1))
+      return -1 !== r ? r : Math.floor(v(0, n.colors.length - 1))
     }(null != r ? r : c, i, n);
   return new s({
     id: e,
@@ -554,18 +554,18 @@ var w = r.forwardRef(function(e, t) {
         }
         return n
       }(e, ["className", "environment", "onClick", "onMouseDown", "onMouseMove", "onMouseUp", "onBeforeRender", "onAfterRender", "requestAnimationFrame", "cancelAnimationFrame"]),
-      v = r.useRef(null),
-      y = P(),
-      O = y.isReady,
-      I = y.addReadyListener,
-      S = y.removeReadyListener,
-      T = y.setIsReady,
+      y = r.useRef(null),
+      v = P(),
+      O = v.isReady,
+      I = v.addReadyListener,
+      S = v.removeReadyListener,
+      T = v.setIsReady,
       N = r.useRef(new Map),
       A = r.useRef(null),
       C = r.useRef(0),
       w = r.useRef(0),
       D = r.useCallback(function() {
-        var e = v.current;
+        var e = y.current;
         if (null != e) {
           var t = e.getContext("2d");
           if (null != t) {
@@ -589,7 +589,7 @@ var w = r.forwardRef(function(e, t) {
         }), null == A.current && D()
       }, [D]),
       x = r.useCallback(function(e, t, n, r, o) {
-        var a, s = R(null !== (a = e.id) && void 0 !== a ? a : (0, i.Z)(), e, n, r, o);
+        var a, s = R(null != (a = e.id) ? a : (0, i.Z)(), e, n, r, o);
         return L(s, t), s
       }, [L]),
       M = r.useCallback(function(e) {
@@ -599,7 +599,7 @@ var w = r.forwardRef(function(e, t) {
         return N.current.clear()
       }, []),
       j = r.useCallback(function() {
-        return v.current
+        return y.current
       }, []);
     r.useImperativeHandle(t, function() {
       return {
@@ -617,7 +617,7 @@ var w = r.forwardRef(function(e, t) {
         var n, r, i = t.clickHandler,
           a = t.mouseHandler;
         if (null != i || null != a) {
-          var l = null === (n = v.current) || void 0 === n ? void 0 : n.getBoundingClientRect();
+          var l = null == (n = y.current) ? void 0 : n.getBoundingClientRect();
           if (null != l) {
             var c = function(e, t) {
               if (null == t) throw Error("element should not be null");
@@ -626,7 +626,7 @@ var w = r.forwardRef(function(e, t) {
                 x: e.clientX - n.left,
                 y: e.clientY - n.top
               }
-            }(e, v.current);
+            }(e, y.current);
             if (o(c, {
                 x: l.left,
                 y: l.top,
@@ -652,7 +652,7 @@ var w = r.forwardRef(function(e, t) {
                       height: t.height
                     })
                   });
-                i(e, null !== (r = null == d ? void 0 : d.confetti) && void 0 !== r ? r : null)
+                i(e, null != (r = null == d ? void 0 : d.confetti) ? r : null)
               }
             }
           }
@@ -687,16 +687,16 @@ var w = r.forwardRef(function(e, t) {
           window.removeEventListener("click", G), window.removeEventListener("mousedown", B), window.removeEventListener("mousemove", F), window.removeEventListener("mouseup", F)
         }
     }, [G, B, F, V, l, c, u, d]), r.useEffect(function() {
-      var e = v.current,
+      var e = y.current,
         t = new ResizeObserver(function() {
-          (function(e) {
+          ! function(e) {
             if (null != e) {
               var t = e.getBoundingClientRect(),
                 r = t.width,
                 i = t.height;
               e.width = r * n.g.devicePixelRatio, e.height = i * n.g.devicePixelRatio
             }
-          })(v.current), T(!0)
+          }(y.current), T(!0)
         });
       return null != e && t.observe(e),
         function() {
@@ -704,7 +704,7 @@ var w = r.forwardRef(function(e, t) {
         }
     }, [T]), r.createElement("canvas", f({}, b, {
       className: a,
-      ref: v
+      ref: y
     }))
   }),
   D = {
@@ -774,7 +774,7 @@ var w = r.forwardRef(function(e, t) {
           }) : r(null, 0)
         }))
       }, [s, c, l]),
-      v = r.useCallback(function() {
+      y = r.useCallback(function() {
         var e = a.map(function(e) {
           var t = new Image,
             n = "string" == typeof e ? e : e.src,
@@ -802,21 +802,21 @@ var w = r.forwardRef(function(e, t) {
           })
         })
       }, [a]),
-      y = r.useCallback(function() {
+      v = r.useCallback(function() {
         return _(void 0, void 0, void 0, function() {
           return p(this, function(e) {
             switch (e.label) {
               case 0:
-                return [4, v()];
+                return [4, y()];
               case 1:
                 return e.sent(), b(), E(!0), [2]
             }
           })
         })
-      }, [v, b, E]);
+      }, [y, b, E]);
     return r.useEffect(function() {
-      y()
-    }, [y]), r.useEffect(function() {
+      v()
+    }, [v]), r.useEffect(function() {
       null != u.current && (u.current.width = (l + 2) * Math.max(s.length, 1), u.current.height = (c + 2) * a.length)
     }, [s.length, c, l, a.length]), r.createElement("canvas", {
       ref: u,
@@ -826,10 +826,10 @@ var w = r.forwardRef(function(e, t) {
   });
 
 function x(e, t) {
-  var n, i, o = r.useState(null !== (n = null == t ? void 0 : t.isReady) && void 0 !== n && n),
+  var n, i, o = r.useState(null != (n = null == t ? void 0 : t.isReady) && n),
     a = o[0],
     s = o[1],
-    l = r.useState(null !== (i = null == e ? void 0 : e.isReady) && void 0 !== i && i),
+    l = r.useState(null != (i = null == e ? void 0 : e.isReady) && i),
     c = l[0],
     u = l[1];
   r.useEffect(function() {

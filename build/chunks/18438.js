@@ -8,8 +8,8 @@ n.d(t, {
   ID: () => h,
   IO: () => E,
   It: () => c,
-  W3: () => v,
-  b9: () => y,
+  W3: () => y,
+  b9: () => v,
   cV: () => d,
   g_: () => _,
   iq: () => a,
@@ -157,13 +157,13 @@ function b() {
   })
 }
 
-function v() {
+function y() {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function y() {
+function v() {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
   })

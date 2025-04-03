@@ -13,14 +13,14 @@ var i = n(442837),
   c = n(621853),
   u = n(228168),
   d = n(388032),
-  f = n(339740);
+  f = n(537987);
 
 function _(e) {
   let {
     userId: t
   } = e, n = (0, l.ML)(t), _ = (0, l.vh)(t), p = (0, i.e7)([c.Z], () => {
     var e;
-    return null === (e = c.Z.getUserProfile(t)) || void 0 === e ? void 0 : e.fetchError
+    return null == (e = c.Z.getUserProfile(t)) ? void 0 : e.fetchError
   });
   return n.length > 0 || _.length > 0 || null == p ? null : (0, r.jsx)(a.DY, {
     className: f.container,

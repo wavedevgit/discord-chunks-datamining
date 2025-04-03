@@ -1,9 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
-n = {
-  value: !0
-};
-for (var n, r = "undefined" != typeof window && /Mac|iPod|iPhone|iPad/.test(window.navigator.platform), i = {
+for (var n = {
+    value: !0
+  }, r = "undefined" != typeof window && /Mac|iPod|iPhone|iPad/.test(window.navigator.platform), i = {
     alt: "altKey",
     control: "ctrlKey",
     meta: "metaKey",

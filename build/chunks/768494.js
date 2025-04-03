@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Cb: () => f,
-  Hv: () => v,
+  Hv: () => y,
   JD: () => E,
   VY: () => h,
   y_: () => b,
@@ -75,14 +75,14 @@ function p(e) {
     contentType: e.content_type,
     loadingState: e.loading_state,
     contentScanMetadata: null != e.content_scan_metadata ? _(e.content_scan_metadata) : void 0,
-    srcIsAnimated: (0, o.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, s.J0y.IS_ANIMATED)
+    srcIsAnimated: (0, o.yE)(null != (t = e.flags) ? t : 0, s.J0y.IS_ANIMATED)
   }
 }
 
 function h(e) {
   var t, n;
   let i = 0;
-  return (0, o.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (i += 1), {
+  return (0, o.yE)(null != (t = e.flags) ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (i += 1), {
     url: e.url,
     proxyUrl: e.proxy_url,
     height: e.height,
@@ -95,7 +95,7 @@ function h(e) {
       version: e.content_scan_version,
       flags: i
     },
-    srcIsAnimated: (0, o.yE)(null !== (n = e.flags) && void 0 !== n ? n : 0, s.J0y.IS_ANIMATED)
+    srcIsAnimated: (0, o.yE)(null != (n = e.flags) ? n : 0, s.J0y.IS_ANIMATED)
   }
 }
 
@@ -130,7 +130,7 @@ function b(e) {
   })
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   return {
     type: n,
     url: e.url,

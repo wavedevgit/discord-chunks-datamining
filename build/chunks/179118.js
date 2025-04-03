@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(717401),
   E = n(286961),
   b = n(93127),
-  v = n(814443),
-  y = n(590783),
+  y = n(814443),
+  v = n(590783),
   O = n(699516),
   I = n(246946),
   S = n(594174),
@@ -33,7 +33,7 @@ var r = n(200651),
   P = n(981631),
   w = n(474936),
   D = n(388032),
-  L = n(99366);
+  L = n(136266);
 let x = 1500;
 
 function M(e) {
@@ -47,7 +47,7 @@ function M(e) {
     hasSentMessage: f,
     giftRecipient: h,
     giftMessageError: b,
-    isSendingMessage: v
+    isSendingMessage: y
   } = e, [O, S] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([I.Z], () => I.Z.enabled), j = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
@@ -57,7 +57,7 @@ function M(e) {
       intervalCount: s.intervalCount
     }))
   }, Y = () => null != h || f && null == b ? D.NW.string(D.t.zOmK9P) : null != b ? D.NW.string(D.t.d1lrmZ) : D.NW.string(D.t["/s1xR0"]), K = (e, t) => {
-    null != o && (0, N.dM)(new y.Z({
+    null != o && (0, N.dM)(new v.Z({
       code: t,
       maxUses: 1
     }), o);
@@ -140,7 +140,7 @@ function M(e) {
       children: W()
     })]
   });
-  return v ? (0, r.jsxs)("div", {
+  return y ? (0, r.jsxs)("div", {
     className: L.confirmation,
     children: [null != n ? (0, r.jsx)(p.Z, {
       game: n,
@@ -179,10 +179,10 @@ let k = e => {
   }, []);
   let [o, a] = i.useState(), [s, p] = i.useState(!1), [m, g] = i.useState(!1), {
     userAffinities: E,
-    isLoading: y
-  } = (0, c.cj)([v.Z], () => ({
-    userAffinities: v.Z.getUserAffinitiesUserIds(),
-    isLoading: v.Z.getFetching()
+    isLoading: v
+  } = (0, c.cj)([y.Z], () => ({
+    userAffinities: y.Z.getUserAffinitiesUserIds(),
+    isLoading: y.Z.getFetching()
   })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), N = l().difference(T, I), A = [...I, ...N], R = (0, c.e7)([S.default], () => S.default.filter(e => A.includes(e.id) && !e.bot), [A]);
   if (null == R || 0 === R.length) return null;
   let P = l().sortBy(R, e => A.indexOf(e.id));
@@ -200,7 +200,7 @@ let k = e => {
           user: e.value,
           size: u.EFr.SIZE_20
         }),
-        renderLeading: () => y ? (0, r.jsx)(u.$jN, {
+        renderLeading: () => v ? (0, r.jsx)(u.$jN, {
           type: u.RAz.PULSING_ELLIPSIS
         }) : null,
         value: o,

@@ -17,8 +17,8 @@ var r = n(147018),
   g = a.PROPER,
   E = a.CONFIGURABLE,
   b = m.IteratorPrototype,
-  v = m.BUGGY_SAFARI_ITERATORS,
-  y = p("iterator"),
+  y = m.BUGGY_SAFARI_ITERATORS,
+  v = p("iterator"),
   O = "keys",
   I = "values",
   S = "entries",
@@ -29,7 +29,7 @@ e.exports = function(e, t, n, a, p, m, N) {
   l(n, t, a);
   var A, C, R, P = function(e) {
       if (e === p && M) return M;
-      if (!v && e && e in L) return L[e];
+      if (!y && e && e in L) return L[e];
       switch (e) {
         case O:
         case I:
@@ -45,25 +45,24 @@ e.exports = function(e, t, n, a, p, m, N) {
     w = t + " Iterator",
     D = !1,
     L = e.prototype,
-    x = L[y] || L["@@iterator"] || p && L[p],
-    M = !v && x || P(p),
+    x = L[v] || L["@@iterator"] || p && L[p],
+    M = !y && x || P(p),
     k = "Array" === t && L.entries || x;
-  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === b || (u ? u(A, b) : s(A[y]) || _(A, y, T)), d(A, w, !0, !0), o && (h[w] = T)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, M = function() {
+  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (!o && c(A) !== b && (u ? u(A, b) : s(A[v]) || _(A, v, T)), d(A, w, !0, !0), o && (h[w] = T)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, M = function() {
       return i(x, this)
-    })), p) {
+    })), p)
     if (C = {
         values: P(I),
         keys: m ? M : P(O),
         entries: P(S)
       }, N)
-      for (R in C) !v && !D && R in L || _(L, R, C[R]);
+      for (R in C) !y && !D && R in L || _(L, R, C[R]);
     else r({
       target: t,
       proto: !0,
-      forced: v || D
-    }, C)
-  }
-  return (!o || N) && L[y] !== M && _(L, y, M, {
+      forced: y || D
+    }, C);
+  return (!o || N) && L[v] !== M && _(L, v, M, {
     name: p
   }), h[t] = M, C
 }

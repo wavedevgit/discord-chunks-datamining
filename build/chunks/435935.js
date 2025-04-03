@@ -7,8 +7,8 @@ var r, i, o = n(200651),
   a = n(192379),
   s = n(557533),
   l = n.n(s),
-  c = n(90477),
-  u = n(36878);
+  c = n(742421),
+  u = n(765890);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,13 +83,13 @@ let g = {
     WRAP: c.flexWrap,
     WRAP_REVERSE: c.flexWrapReverse
   },
-  v = {
+  y = {
     START: c.flexAlignStart,
     END: c.flexAlignEnd,
     CENTER: c.flexAlignCenter,
     STRETCH: c.flexAlignStretch
   },
-  y = {
+  v = {
     SMALL: u.flexGutterSmall,
     LARGE: u.flexGutterLarge
   };
@@ -158,10 +158,10 @@ class I extends(i = a.PureComponent) {
     }))
   }
 }
-d(I, "Child", O), d(I, "Direction", g), d(I, "Align", v), d(I, "Justify", E), d(I, "Wrap", b), d(I, "Gutter", y), d(I, "defaultProps", {
+d(I, "Child", O), d(I, "Direction", g), d(I, "Align", y), d(I, "Justify", E), d(I, "Wrap", b), d(I, "Gutter", v), d(I, "defaultProps", {
   direction: g.HORIZONTAL,
   justify: E.START,
-  align: v.STRETCH,
+  align: y.STRETCH,
   wrap: b.WRAP,
   shrink: 1,
   grow: 1,

@@ -18,8 +18,8 @@ var r = n(147018),
   g = n(740362),
   E = n(566885),
   b = n(974971),
-  v = n(24033),
-  y = n(622281),
+  y = n(24033),
+  v = n(622281),
   O = n(714050),
   I = n(803938),
   S = n(879),
@@ -108,7 +108,7 @@ var r = n(147018),
     return n.done || (n.value = "keys" === t ? r.key : "values" === t ? r.value : [r.key, r.value]), n
   }, !0),
   ed = function(e) {
-    this.entries = [], this.url = null, void 0 !== e && (y(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === K(e, 0) ? ee(e, 1) : e : O(e)))
+    this.entries = [], this.url = null, void 0 !== e && (v(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === K(e, 0) ? ee(e, 1) : e : O(e)))
   };
 ed.prototype = {
   type: w,
@@ -119,7 +119,7 @@ ed.prototype = {
     var t, n, r, i, a, s, l, c = N(e);
     if (c)
       for (n = (t = T(e, c)).next; !(r = o(n, t)).done;) {
-        if ((s = o(a = (i = T(v(r.value))).next, i)).done || (l = o(a, i)).done || !o(a, i).done) throw H("Expected sequence with length 2");
+        if ((s = o(a = (i = T(y(r.value))).next, i)).done || (l = o(a, i)).done || !o(a, i).done) throw H("Expected sequence with length 2");
         q(this.entries, {
           key: O(s.value),
           value: O(l.value)
@@ -243,7 +243,7 @@ if (d(e_, {
   var ep = a(V.has),
     eh = a(V.set),
     em = function(e) {
-      if (y(e)) {
+      if (v(e)) {
         var t, n = e.body;
         if (b(n) === w) return ep(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), I(e, {
           body: S(0, O(n)),

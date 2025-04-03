@@ -31,8 +31,8 @@ var r = n(392711),
   g = n(70956),
   E = n(5192),
   b = n(489887),
-  v = n(981631),
-  y = n(388032);
+  y = n(981631),
+  v = n(388032);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -97,7 +97,7 @@ function R(e) {
 }
 
 function P(e) {
-  return (0, l.e7)([h.Z], () => !!(null != e && e.id !== c.V && v.TPd.POLLS.has(e.type)) && (!!e.isPrivate() || h.Z.can(v.Plq.SEND_MESSAGES, e) && h.Z.can(v.Plq.SEND_POLLS, e)))
+  return (0, l.e7)([h.Z], () => null != e && e.id !== c.V && !!y.TPd.POLLS.has(e.type) && (!!e.isPrivate() || h.Z.can(y.Plq.SEND_MESSAGES, e) && h.Z.can(y.Plq.SEND_POLLS, e)))
 }
 
 function w() {
@@ -112,14 +112,14 @@ function L(e, t) {
   if (t === a.C.IMAGE_ONLY_ANSWERS) return null != e.image;
   {
     var n;
-    let t = null === (n = e.text) || void 0 === n ? void 0 : n.trim();
+    let t = null == (n = e.text) ? void 0 : n.trim();
     return null != t && t.length > 0
   }
 }
 
 function x(e, t) {
   var n;
-  let r = null === (n = e.text) || void 0 === n ? void 0 : n.trim();
+  let r = null == (n = e.text) ? void 0 : n.trim();
   return t === a.C.DEFAULT && null != e.image && (null == r || 0 === r.length)
 }
 
@@ -130,13 +130,13 @@ function M(e) {
 function k(e) {
   var t;
   if (null == e) return;
-  let n = null == e ? void 0 : null === (t = e.answers) || void 0 === t ? void 0 : t.map((e, t) => {
+  let n = null == e || null == (t = e.answers) ? void 0 : t.map((e, t) => {
       var n, r;
-      let i = null === (n = e.poll_media) || void 0 === n ? void 0 : n.emoji,
+      let i = null == (n = e.poll_media) ? void 0 : n.emoji,
         o = T(I({}, e.poll_media), {
           emoji: null != i ? {
             id: i.id,
-            name: null !== (r = i.name) && void 0 !== r ? r : ""
+            name: null != (r = i.name) ? r : ""
           } : void 0
         });
       return T(I({}, e), {
@@ -153,14 +153,14 @@ function k(e) {
 
 function j(e, t) {
   var n, r, i, o;
-  let a = null !== (o = null === (i = e.embeds[0]) || void 0 === i ? void 0 : null === (r = i.fields) || void 0 === r ? void 0 : null === (n = r.find(e => "poll_question_text" === e.rawName)) || void 0 === n ? void 0 : n.rawValue) && void 0 !== o ? o : "";
+  let a = null != (o = null == (i = e.embeds[0]) || null == (r = i.fields) || null == (n = r.find(e => "poll_question_text" === e.rawName)) ? void 0 : n.rawValue) ? o : "";
   return null != t ? (0, s.aF)(a, t) : a
 }
 
 function U(e) {
   let t = (0, d.ZH)(e),
     n = j(e, b.Dv);
-  return y.NW.format(y.t.Vn97KS, {
+  return v.NW.format(v.t.Vn97KS, {
     username: t.nick,
     title: n
   })
@@ -169,7 +169,7 @@ function U(e) {
 function G(e) {
   return e.reduce((e, t) => {
     var n, r;
-    return e + (null !== (r = null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== r ? r : 0)
+    return e + (null != (r = null == (n = t.count_details) ? void 0 : n.vote) ? r : 0)
   }, 0)
 }
 
@@ -188,24 +188,30 @@ function B(e, t) {
 
 function F(e, t) {
   let n = Math.max(0, t - e.length);
-  return 1 === e.length ? n > 0 ? y.NW.formatToPlainString(y.t["SV/iZm"], {
-    a: e[0],
+  if (1 === e.length)
+    if (n > 0) return v.NW.formatToPlainString(v.t["SV/iZm"], {
+      a: e[0],
+      n: n.toLocaleString()
+    });
+    else return e[0];
+  if (2 === e.length)
+    if (n > 0) return v.NW.formatToPlainString(v.t.YBnZKy, {
+      a: e[0],
+      b: e[1],
+      n: n.toLocaleString()
+    });
+    else return v.NW.formatToPlainString(v.t["O5+f5e"], {
+      a: e[0],
+      b: e[1]
+    });
+  return 3 !== e.length ? v.NW.formatToPlainString(v.t.yVX6kJ, {
     n: n.toLocaleString()
-  }) : e[0] : 2 === e.length ? n > 0 ? y.NW.formatToPlainString(y.t.YBnZKy, {
-    a: e[0],
-    b: e[1],
-    n: n.toLocaleString()
-  }) : y.NW.formatToPlainString(y.t["O5+f5e"], {
-    a: e[0],
-    b: e[1]
-  }) : 3 !== e.length ? y.NW.formatToPlainString(y.t.yVX6kJ, {
-    n: n.toLocaleString()
-  }) : n > 0 ? y.NW.formatToPlainString(y.t["ThXp+P"], {
+  }) : n > 0 ? v.NW.formatToPlainString(v.t["ThXp+P"], {
     a: e[0],
     b: e[1],
     c: e[2],
     n: n.toLocaleString()
-  }) : y.NW.formatToPlainString(y.t["0UzBMz"], {
+  }) : v.NW.formatToPlainString(v.t["0UzBMz"], {
     a: e[0],
     b: e[1],
     c: e[2]
@@ -221,7 +227,7 @@ function V(e, t, n) {
       name: "",
       animated: !1
     }),
-    s = null !== (i = null == a ? void 0 : null === (r = a.count_details) || void 0 === r ? void 0 : r.vote) && void 0 !== i ? i : 0,
+    s = null != (i = null == a || null == (r = a.count_details) ? void 0 : r.vote) ? i : 0,
     l = B(o, n);
   return 0 === l.length ? "" : F(l, s)
 }

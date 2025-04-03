@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => y,
-  T: () => v
+  D: () => v,
+  T: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -15,7 +15,7 @@ var r = n(200651),
   d = n(358085),
   f = n(998502),
   _ = n(388032),
-  p = n(746850);
+  p = n(908420);
 let h = e => f.ZP.close(e),
   m = e => f.ZP.minimize(e),
   g = e => f.ZP.maximize(e);
@@ -55,7 +55,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     leading: t,
     title: n,
@@ -88,7 +88,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     fixed: t = !1,
     show: n,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Qi: () => E,
-  R9: () => v,
+  R9: () => y,
   l_: () => g,
   t: () => b
 });
@@ -14,7 +14,7 @@ var i = n(120356),
   s = n(410030),
   l = n(325767),
   c = n(474936),
-  u = n(70066);
+  u = n(655132);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,22 +86,22 @@ function b(e) {
           [u.rimGlowVerticalTier0]: t === c.p9.TIER_0,
           [u.rimGlowVerticalTier2]: t === c.p9.TIER_2
         })
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(y, {
         foreground: u.buttonSparkleStar1
       })]
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(y, {
       foreground: u.buttonSparkleStar2
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(y, {
       foreground: u.buttonSparkleStar3
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(y, {
       foreground: u.buttonSparkleStar4
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(y, {
       foreground: u.buttonSparkleStar5
     })]
   })
 }
 
-function v(e) {
+function y(e) {
   var {
     width: t = 14,
     height: n = 13,

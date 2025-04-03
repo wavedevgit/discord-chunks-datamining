@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(686546),
   l = n(768581),
   c = n(895924),
-  u = n(790678),
+  u = n(433409),
   d = n(970952);
 
 function f(e, t, n) {
@@ -80,30 +80,27 @@ function E(e) {
     selectable: g = !1,
     isSquircle: E,
     onFocus: b,
-    onBlur: v,
-    onMouseOver: y,
+    onBlur: y,
+    onMouseOver: v,
     onMouseLeave: O
   } = e, I = m(e, ["section", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
   let [S, T] = i.useState(!1), N = i.useCallback(() => {
     T(!0), null == b || b()
   }, [b]), A = i.useCallback(() => {
-    T(!1), null == v || v()
-  }, [v]), C = i.useCallback(() => {
-    T(!0), null == y || y()
-  }, [y]), R = i.useCallback(() => {
+    T(!1), null == y || y()
+  }, [y]), C = i.useCallback(() => {
+    T(!0), null == v || v()
+  }, [v]), R = i.useCallback(() => {
     T(!1), null == O || O()
   }, [O]), P = i.useMemo(() => {
-    if (t.type === c.Qi.APPLICATION) {
-      var e;
-      return l.ZP.getApplicationIconURL({
-        id: t.id,
-        icon: t.icon,
-        bot: null === (e = t.application) || void 0 === e ? void 0 : e.bot,
-        botIconFirst: !0,
-        size: o
-      })
-    }
-    return d
+    var e;
+    return t.type !== c.Qi.APPLICATION ? d : l.ZP.getApplicationIconURL({
+      id: t.id,
+      icon: t.icon,
+      bot: null == (e = t.application) ? void 0 : e.bot,
+      botIconFirst: !0,
+      size: o
+    })
   }, [t, o]);
   return (0, r.jsx)("div", h(_({}, I), {
     className: a()(u.wrapper, p, {

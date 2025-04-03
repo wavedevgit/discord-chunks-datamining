@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ee: () => y,
+  Ee: () => v,
   L6: () => D,
   V7: () => I,
   VF: () => w,
@@ -51,16 +51,16 @@ function E(e) {
 function b(e, t) {
   var n;
   if (null == e || !e.hasFeature(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < m) return !1;
-  let r = null !== (n = t.flags) && void 0 !== n ? n : 0;
+  let r = null != (n = t.flags) ? n : 0;
   return u.yE(r, h.q.STARTED_ONBOARDING) && !u.yE(r, h.q.COMPLETED_ONBOARDING)
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   let r = new Set;
   e.forEach(e => {
     e.options.forEach(e => {
       var t;
-      null == e || null === (t = e.channelIds) || void 0 === t || t.forEach(e => {
+      null == e || null == (t = e.channelIds) || t.forEach(e => {
         r.add(e)
       })
     })
@@ -69,8 +69,8 @@ function v(e, t, n) {
   return [i.filter(e => r.has(e.id) || null != e.parent_id && r.has(e.parent_id)), i.filter(e => !r.has(e.id) && !(null != e.parent_id && r.has(e.parent_id)))]
 }
 
-function y(e, t, n) {
-  return v(t, n, s.ZP.getChannels(e)[s.sH].map(e => {
+function v(e, t, n) {
+  return y(t, n, s.ZP.getChannels(e)[s.sH].map(e => {
     let {
       channel: t
     } = e;
@@ -79,7 +79,7 @@ function y(e, t, n) {
 }
 
 function O(e, t, n) {
-  return v(t, n, (0, r.e7)([s.ZP], () => s.ZP.getChannels(e))[s.sH].map(e => {
+  return y(t, n, (0, r.e7)([s.ZP], () => s.ZP.getChannels(e))[s.sH].map(e => {
     let {
       channel: t
     } = e;
@@ -92,7 +92,7 @@ function I(e) {
 }
 
 function S(e) {
-  return !!(null != e && (0, _.s)(e.guild_id, e.id)) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
+  return null != e && !!(0, _.s)(e.guild_id, e.id) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
 }
 
 function T(e) {
@@ -108,7 +108,7 @@ function N(e, t, n) {
   return n.forEach(t => {
     var n, o;
     if (!t.required) return;
-    let a = C(e, null !== (o = null === (n = t.options[0]) || void 0 === n ? void 0 : n.channelIds) && void 0 !== o ? o : [], e => e.id),
+    let a = C(e, null != (o = null == (n = t.options[0]) ? void 0 : n.channelIds) ? o : [], e => e.id),
       s = t.options.reduce((t, n) => {
         if (null == n.channelIds) return [];
         let o = C(e, n.channelIds, e => e.id, e => r(e) && !i.includes(e));
@@ -121,7 +121,7 @@ function N(e, t, n) {
 function A(e, t) {
   return e.filter(e => {
     var n;
-    return S(null === (n = t[e]) || void 0 === n ? void 0 : n.channel)
+    return S(null == (n = t[e]) ? void 0 : n.channel)
   })
 }
 

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => v
+  J: () => y
 });
 var r = n(512722),
   i = n.n(r),
@@ -56,15 +56,15 @@ function b(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     analyticsData: t,
     initialPlanId: n,
     breadcrumbSteps: r,
     handleStepChange: m,
     referralTrialOfferId: E,
-    onReturn: v,
-    continueSessionToInitialStep: y
+    onReturn: y,
+    continueSessionToInitialStep: v
   } = e, {
     contextMetadata: O,
     step: I,
@@ -95,10 +95,10 @@ function v(e) {
     m(Object.values(S).length < 1 && null == n ? d.h8.PLAN_SELECT : d.h8.REVIEW, {
       trackedFromStep: d.h8.PAYMENT_TYPE
     })
-  }, B = null != v ? v : G;
+  }, B = null != y ? y : G;
   i()(I, "Step should be set here");
   let F = (0, o.Z)(() => Date.now(), [I]),
-    V = null != y && null == L.current ? y : d.h8.PAYMENT_TYPE;
+    V = null != v && null == L.current ? v : d.h8.PAYMENT_TYPE;
   return (0, s.vP)({
     paymentModalArgs: k,
     initialStep: V,

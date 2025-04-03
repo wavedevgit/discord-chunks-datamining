@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(302221),
   d = n(884697),
   f = n(372654),
-  _ = n(524380);
+  _ = n(534215);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,38 +55,38 @@ function g(e, t) {
 }
 let E = e => null != e && /^http/i.test(e),
   b = e => null != e && /^blob:https?:\/\/[^\/]+\//i.test(e),
-  v = e => {
+  y = e => {
     let {
       asset: t,
       size: n = f.yV,
       className: o,
       style: p,
       children: m,
-      categoryBannerOverride: v
-    } = e, y = (0, s.e7)([c.Z], () => c.Z.saturation), O = i.useMemo(() => {
+      categoryBannerOverride: y
+    } = e, v = (0, s.e7)([c.Z], () => c.Z.saturation), O = i.useMemo(() => {
       if (null == t) return p;
       let e = E(t) || b(t) ? t : (0, d.uV)(t, {
           size: n,
           format: "jpg"
         }),
-        r = (null == v ? void 0 : v.blur) ? {
+        r = (null == y ? void 0 : y.blur) ? {
           filter: "blur(2px)",
           transform: "scale(1.02)"
         } : {};
-      if (1 === y) return h(g(h({}, p), {
-        backgroundImage: (null == v ? void 0 : v.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
+      if (1 === v) return h(g(h({}, p), {
+        backgroundImage: (null == y ? void 0 : y.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
         backgroundBlendMode: "multiply",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), r);
-      let i = (0, u.aD)(l.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - y);
+      let i = (0, u.aD)(l.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - v);
       return h(g(h({}, p), {
         backgroundImage: "linear-gradient(".concat(i, ", ").concat(i, "), url(").concat(e, ")"),
         backgroundBlendMode: "saturation",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), r)
-    }, [t, n, y, p, null == v ? void 0 : v.blur, null == v ? void 0 : v.addGradient]);
+    }, [t, n, v, p, null == y ? void 0 : y.blur, null == y ? void 0 : y.addGradient]);
     return (0, r.jsx)("div", {
       className: a()(_.banner, o),
       style: O,

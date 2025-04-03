@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = {
       $pattern: /[\w.\/]+/,
@@ -52,23 +52,22 @@ function t(e) {
     g = {
       contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, m, h, _, p],
       returnEnd: !0
-    },
-    E = e.inherit(f, {
-      className: "name",
-      keywords: n,
-      starts: e.inherit(g, {
-        end: /\)/
-      })
-    });
-  p.contains = [E];
-  let b = e.inherit(f, {
+    };
+  p.contains = [e.inherit(f, {
+    className: "name",
+    keywords: n,
+    starts: e.inherit(g, {
+      end: /\)/
+    })
+  })];
+  let E = e.inherit(f, {
       keywords: n,
       className: "name",
       starts: e.inherit(g, {
         end: /\}\}/
       })
     }),
-    v = e.inherit(f, {
+    b = e.inherit(f, {
       keywords: n,
       className: "name"
     }),
@@ -94,7 +93,7 @@ function t(e) {
       className: "template-tag",
       begin: /\{\{\{\{(?!\/)/,
       end: /\}\}\}\}/,
-      contains: [b],
+      contains: [E],
       starts: {
         end: /\{\{\{\{\//,
         returnEnd: !0,
@@ -104,12 +103,12 @@ function t(e) {
       className: "template-tag",
       begin: /\{\{\{\{\//,
       end: /\}\}\}\}/,
-      contains: [v]
+      contains: [b]
     }, {
       className: "template-tag",
       begin: /\{\{#/,
       end: /\}\}/,
-      contains: [b]
+      contains: [E]
     }, {
       className: "template-tag",
       begin: /\{\{(?=else\}\})/,
@@ -124,7 +123,7 @@ function t(e) {
       className: "template-tag",
       begin: /\{\{\//,
       end: /\}\}/,
-      contains: [v]
+      contains: [b]
     }, {
       className: "template-variable",
       begin: /\{\{\{/,
@@ -138,4 +137,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

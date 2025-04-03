@@ -22,8 +22,8 @@ var r, i = n(392711),
   g = n(271383),
   E = n(430824),
   b = n(158776),
-  v = n(885110),
-  y = n(594174),
+  y = n(885110),
+  v = n(594174),
   O = n(981631),
   I = n(388032);
 
@@ -100,10 +100,10 @@ function w(e, t, n, r) {
 function D(e, t, n) {
   let r = n === p.default.getId(),
     i = b.Z.isMobileOnline(n),
-    o = r ? v.Z.getStatus() : b.Z.getStatus(n, e),
-    a = r ? v.Z.getActivities() : b.Z.getActivities(n, e),
+    o = r ? y.Z.getStatus() : b.Z.getStatus(n, e),
+    a = r ? y.Z.getActivities() : b.Z.getActivities(n, e),
     s = _.Z.getStreamForUser(n, e),
-    l = y.default.getUser(n);
+    l = v.default.getUser(n);
   return null == l ? null : A(T({
     type: "MEMBER"
   }, g.ZP.getMember(e, n)), {
@@ -143,7 +143,7 @@ class M {
     this.groups = e.map(e => {
       var n;
       let r = t,
-        i = Math.max(0, null !== (n = e.count) && void 0 !== n ? n : 0);
+        i = Math.max(0, null != (n = e.count) ? n : 0);
       return t += i + 1, w(this.guildId, e.id, i, r)
     }), this.rows.length = t
   }
@@ -312,7 +312,7 @@ function K() {
 }
 class z extends(r = c.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, E.Z, h.Z, g.ZP, b.Z, v.Z, p.default, m.Z, _.Z, d.Z), this.syncWith([v.Z], Y), this.syncWith([_.Z], W)
+    this.waitFor(v.default, E.Z, h.Z, g.ZP, b.Z, y.Z, p.default, m.Z, _.Z, d.Z), this.syncWith([y.Z], Y), this.syncWith([_.Z], W)
   }
   getProps(e, t) {
     let n = j.get(e, L(t));

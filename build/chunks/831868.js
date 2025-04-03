@@ -17,8 +17,8 @@ var f = 0,
   g = 29,
   E = 256,
   b = 286,
-  v = 30,
-  y = 19,
+  y = 30,
+  v = 19,
   O = 573,
   I = 15,
   S = 16,
@@ -34,7 +34,7 @@ var f = 0,
   x = 512,
   M = Array(576);
 d(M);
-var k = Array(2 * v);
+var k = Array(2 * y);
 d(k);
 var j = Array(x);
 d(j);
@@ -42,7 +42,7 @@ var U = Array(m - h + 1);
 d(U);
 var G = Array(g);
 d(G);
-var B = Array(v);
+var B = Array(y);
 
 function F(e, t, n, r, i) {
   this.static_tree = e, this.extra_bits = t, this.extra_base = n, this.elems = r, this.max_length = i, this.has_stree = e && e.length
@@ -115,22 +115,22 @@ function X() {
     for (e = 0, G[a] = n; e < 1 << P[a]; e++) U[n++] = a;
   for (U[n - 1] = a, s = 0, a = 0; a < 16; a++)
     for (e = 0, B[a] = s; e < 1 << w[a]; e++) j[s++] = a;
-  for (s >>= 7; a < v; a++)
+  for (s >>= 7; a < y; a++)
     for (e = 0, B[a] = s << 7; e < 1 << w[a] - 7; e++) j[256 + s++] = a;
   for (t = 0; t <= I; t++) l[t] = 0;
   for (e = 0; e <= 143;) M[2 * e + 1] = 8, e++, l[8]++;
   for (; e <= 255;) M[2 * e + 1] = 9, e++, l[9]++;
   for (; e <= 279;) M[2 * e + 1] = 7, e++, l[7]++;
   for (; e <= 287;) M[2 * e + 1] = 8, e++, l[8]++;
-  for (Q(M, b + 1, l), e = 0; e < v; e++) k[2 * e + 1] = 5, k[2 * e] = K(e, 5);
-  r = new F(M, P, E + 1, b, I), i = new F(k, w, 0, v, I), o = new F([], D, 0, y, T)
+  for (Q(M, b + 1, l), e = 0; e < y; e++) k[2 * e + 1] = 5, k[2 * e] = K(e, 5);
+  r = new F(M, P, E + 1, b, I), i = new F(k, w, 0, y, I), o = new F([], D, 0, v, T)
 }
 
 function J(e) {
   var t;
   for (t = 0; t < b; t++) e.dyn_ltree[2 * t] = 0;
-  for (t = 0; t < v; t++) e.dyn_dtree[2 * t] = 0;
-  for (t = 0; t < y; t++) e.bl_tree[2 * t] = 0;
+  for (t = 0; t < y; t++) e.dyn_dtree[2 * t] = 0;
+  for (t = 0; t < v; t++) e.bl_tree[2 * t] = 0;
   e.dyn_ltree[2 * N] = 1, e.opt_len = e.static_len = 0, e.last_lit = e.matches = 0
 }
 
@@ -180,7 +180,7 @@ function eo(e, t, n) {
     s = 0,
     l = 7,
     c = 4;
-  for (0 === a && (l = 138, c = 3), t[(n + 1) * 2 + 1] = 65535, r = 0; r <= n; r++) i = a, a = t[(r + 1) * 2 + 1], (!(++s < l) || i !== a) && (s < c ? e.bl_tree[2 * i] += s : 0 !== i ? (i !== o && e.bl_tree[2 * i]++, e.bl_tree[2 * A]++) : s <= 10 ? e.bl_tree[2 * C]++ : e.bl_tree[2 * R]++, s = 0, o = i, 0 === a ? (l = 138, c = 3) : i === a ? (l = 6, c = 3) : (l = 7, c = 4))
+  for (0 === a && (l = 138, c = 3), t[(n + 1) * 2 + 1] = 65535, r = 0; r <= n; r++) i = a, a = t[(r + 1) * 2 + 1], ++s < l && i === a || (s < c ? e.bl_tree[2 * i] += s : 0 !== i ? (i !== o && e.bl_tree[2 * i]++, e.bl_tree[2 * A]++) : s <= 10 ? e.bl_tree[2 * C]++ : e.bl_tree[2 * R]++, s = 0, o = i, 0 === a ? (l = 138, c = 3) : i === a ? (l = 6, c = 3) : (l = 7, c = 4))
 }
 
 function ea(e, t, n) {
@@ -200,7 +200,7 @@ function ea(e, t, n) {
 
 function es(e) {
   var t;
-  for (eo(e, e.dyn_ltree, e.l_desc.max_code), eo(e, e.dyn_dtree, e.d_desc.max_code), ei(e, e.bl_desc), t = y - 1; t >= 3 && 0 === e.bl_tree[2 * L[t] + 1]; t--);
+  for (eo(e, e.dyn_ltree, e.l_desc.max_code), eo(e, e.dyn_dtree, e.d_desc.max_code), ei(e, e.bl_desc), t = v - 1; t >= 3 && 0 === e.bl_tree[2 * L[t] + 1]; t--);
   return e.opt_len += 3 * (t + 1) + 5 + 5 + 4, t
 }
 
@@ -222,24 +222,22 @@ function ec(e) {
 d(B);
 var eu = !1;
 
-function ed(e) {
-  eu || (X(), eu = !0), e.l_desc = new V(e.dyn_ltree, r), e.d_desc = new V(e.dyn_dtree, i), e.bl_desc = new V(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
-}
-
-function ef(e, t, n, r) {
+function ed(e, t, n, r) {
   W(e, (f << 1) + +!!r, 3), ee(e, t, n, !0)
 }
 
-function e_(e) {
+function ef(e) {
   W(e, _ << 1, 3), Y(e, N, M), z(e)
 }
 
-function ep(e, t, n, r) {
+function e_(e, t, n, r) {
   var i, o, a = 0;
-  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== t ? ef(e, t, n, r) : e.strategy === s || o === i ? (W(e, (_ << 1) + +!!r, 3), er(e, M, k)) : (W(e, (p << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
+  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== t ? ed(e, t, n, r) : e.strategy === s || o === i ? (W(e, (_ << 1) + +!!r, 3), er(e, M, k)) : (W(e, (p << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
 }
 
-function eh(e, t, n) {
+function ep(e, t, n) {
   return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * Z(t)]++), e.last_lit === e.lit_bufsize - 1
 }
-t._tr_init = ed, t._tr_stored_block = ef, t._tr_flush_block = ep, t._tr_tally = eh, t._tr_align = e_
+t._tr_init = function(e) {
+  eu || (X(), eu = !0), e.l_desc = new V(e.dyn_ltree, r), e.d_desc = new V(e.dyn_dtree, i), e.bl_desc = new V(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
+}, t._tr_stored_block = ed, t._tr_flush_block = e_, t._tr_tally = ep, t._tr_align = ef

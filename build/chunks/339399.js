@@ -12,8 +12,9 @@ var r = n(796774),
     var t = i(e),
       n = a(e - t);
     return n > .5 || .5 === n && t % 2 != 0 ? t + r(e) : t
-  },
-  f = function(e, t, n) {
+  };
+e.exports = {
+  pack: function(e, t, n) {
     var r, i, f, _ = o(n),
       p = 8 * n - t - 1,
       h = (1 << p) - 1,
@@ -25,7 +26,7 @@ var r = n(796774),
     for (r = r << t | i, p += t; p > 0;) _[b++] = 255 & r, r /= 256, p -= 8;
     return _[--b] |= 128 * E, _
   },
-  _ = function(e, t) {
+  unpack: function(e, t) {
     var n, r = e.length,
       i = 8 * r - t - 1,
       o = (1 << i) - 1,
@@ -42,8 +43,5 @@ var r = n(796774),
       n += s(2, t), d -= a
     }
     return (u ? -1 : 1) * n * s(2, d - t)
-  };
-e.exports = {
-  pack: f,
-  unpack: _
+  }
 }

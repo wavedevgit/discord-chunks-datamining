@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[a-z'][a-zA-Z0-9_']*",
     n = "(" + t + ":" + t + "|" + t + ")",
     r = {
@@ -154,4 +154,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

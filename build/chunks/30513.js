@@ -90,12 +90,12 @@ let u = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_PINK.css,
     description: c.NW.string(c.t.QouJkp)
   }),
-  v = () => ({
+  y = () => ({
     icon: i.lZ8,
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_YELLOW.css,
     description: c.NW.string(c.t["3MpIx8"])
   }),
-  y = () => ({
+  v = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_BLUE.css,
     icon: i.EO4,
     description: c.NW.string(c.t.gAeHJS)
@@ -147,5 +147,5 @@ function P() {
 }
 
 function w() {
-  return [b(), v(), E(), y()]
+  return [b(), y(), E(), v()]
 }

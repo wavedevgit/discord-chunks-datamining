@@ -15,7 +15,7 @@ var i = n(243814),
   d = n(713938),
   f = n(981631),
   _ = n(388032),
-  p = n(158845);
+  p = n(261668);
 let h = e => {
   switch (e) {
     case s.ZC.IP_LOCATION:
@@ -34,13 +34,13 @@ function m(e) {
       scopes: m,
       redirectUri: E,
       approximateGuildCount: b,
-      isEmbeddedFlow: v,
-      disclosures: y
+      isEmbeddedFlow: y,
+      disclosures: v
     } = e,
     O = new Date(c.default.extractTimestamp(o.id)),
     I = (0, d.W3)(m),
-    S = (0, l.yE)(null !== (t = o.flags) && void 0 !== t ? t : 0, f.udG.EMBEDDED);
-  if (null != E && !S && !v) try {
+    S = (0, l.yE)(null != (t = o.flags) ? t : 0, f.udG.EMBEDDED);
+  if (null != E && !S && !y) try {
     let e = new URL(E);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
   } catch (e) {
@@ -69,7 +69,7 @@ function m(e) {
     }) : null, (0, r.jsx)(g, {
       icon: a.b7C,
       text: I
-    }), null != y ? y.map(e => {
+    }), null != v ? v.map(e => {
       let t = (0, s.PM)(e),
         n = h(e);
       return null != n && null != t ? (0, r.jsx)(g, {

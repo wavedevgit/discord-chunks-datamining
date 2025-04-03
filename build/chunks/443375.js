@@ -21,8 +21,8 @@ var i = n(120356),
   g = n(960870),
   E = n(139793),
   b = n(994746),
-  v = n(273284),
-  y = n(232174),
+  y = n(273284),
+  v = n(232174),
   O = n(510659),
   I = n(287954),
   S = n(660579),
@@ -41,7 +41,7 @@ var i = n(120356),
   j = n(981631),
   U = n(701488),
   G = n(388032),
-  B = n(24981);
+  B = n(227832);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -145,7 +145,7 @@ function Z(e) {
       text: F.name
     }) : (0, r.jsx)(w.Z, {
       variant: "heading-sm/semibold",
-      text: null !== (e = F.details) && void 0 !== e ? e : F.name
+      text: null != (e = F.details) ? e : F.name
     })
   }, ec = () => (0, u.Z)(F) && null != H ? (0, r.jsx)(w.Z, {
     variant: "text-xs/normal",
@@ -166,12 +166,12 @@ function Z(e) {
   }), eu = () => {
     var e;
     return F.type === j.IIU.WATCHING ? null : (0, c.Z)(F) ? ed() : (0, r.jsx)(w.Z, {
-      text: null === (e = F.assets) || void 0 === e ? void 0 : e.large_text,
+      text: null == (e = F.assets) ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
   }, ed = () => {
     var e, t, n, i;
-    return (null === (e = F.party) || void 0 === e ? void 0 : e.size) == null && F.application_id === U.Zc ? (0, r.jsxs)("div", {
+    return (null == (e = F.party) ? void 0 : e.size) == null && F.application_id === U.Zc ? (0, r.jsxs)("div", {
       className: B.gameState,
       children: [(0, r.jsx)(w.Z, {
         variant: "text-xs/normal",
@@ -180,10 +180,10 @@ function Z(e) {
         variant: "text-xs/normal",
         text: G.NW.formatToPlainString(G.t["u//9Bw"], {
           count: "0",
-          max: null !== (i = null == Z ? void 0 : Z.getMaxParticipants()) && void 0 !== i ? i : 0
+          max: null != (i = null == Z ? void 0 : Z.getMaxParticipants()) ? i : 0
         })
       })]
-    }) : (0, l.Z)(F) && (null === (t = F.party) || void 0 === t ? void 0 : t.size) != null && (null === (n = F.party) || void 0 === n ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
+    }) : (0, l.Z)(F) && (null == (t = F.party) ? void 0 : t.size) != null && (null == (n = F.party) ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
       className: B.gameState,
       children: [(0, r.jsx)(w.Z, {
         variant: "text-xs/normal",
@@ -202,7 +202,7 @@ function Z(e) {
       text: F.state
     }) : null
   }, ef = () => {
-    if (!(0, y.Z)(F)) return null;
+    if (!(0, v.Z)(F)) return null;
     let {
       start: e,
       end: t
@@ -237,7 +237,7 @@ function Z(e) {
     })
   });
   if (null === Q) return null;
-  let em = null !== (t = F.application_id) && void 0 !== t ? t : F.name,
+  let em = null != (t = F.application_id) ? t : F.name,
     eg = J === k.n_.ACTIVITY && $ === em;
   return (0, r.jsx)(f.Gt, {
     value: q,
@@ -249,7 +249,7 @@ function Z(e) {
         guildId: Y,
         profileType: Q,
         sourceId: em,
-        sourceDetails: null == ee ? (0, v.Z)(F) : null,
+        sourceDetails: null == ee ? (0, y.Z)(F) : null,
         entry: ee,
         onAction: et,
         sourceType: k.n_.ACTIVITY,

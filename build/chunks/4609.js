@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e, t, n) {
+e.exports = function(e, t, n) {
   switch (n.length) {
     case 0:
       return e.call(t);
@@ -12,4 +12,3 @@ function t(e, t, n) {
   }
   return e.apply(t, n)
 }
-e.exports = t

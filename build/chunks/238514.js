@@ -68,7 +68,7 @@ function h(e) {
     if (!1 === i && (p[r] = {
         shouldSync: i,
         settings: {}
-      }), (null === (n = p[r]) || void 0 === n ? void 0 : n.shouldSync) === !1)
+      }), (null == (n = p[r]) ? void 0 : n.shouldSync) === !1)
       for (let e in o) p[r].settings[e] = o[e]
   }
 }
@@ -85,21 +85,21 @@ class g extends(r = a.ZP.PersistedStore) {
   }
   shouldSync(e) {
     var t;
-    return (null === (t = p[e]) || void 0 === t ? void 0 : t.shouldSync) !== !1
+    return (null == (t = p[e]) ? void 0 : t.shouldSync) !== !1
   }
   getTextSettings() {
     var e;
-    return null === (e = p.text) || void 0 === e ? void 0 : e.settings
+    return null == (e = p.text) ? void 0 : e.settings
   }
   getAppearanceSettings() {
     var e;
-    return null === (e = p.appearance) || void 0 === e ? void 0 : e.settings
+    return null == (e = p.appearance) ? void 0 : e.settings
   }
 }
 u(g, "displayName", "SelectivelySyncedUserSettingsStore"), u(g, "persistKey", "SelectivelySyncedUserSettingsStore"), u(g, "migrations", [() => {
   var e, t;
-  let n = null !== (e = s.K.get("UserSettingsSync")) && void 0 !== e ? e : {},
-    r = null !== (t = s.K.get("UserSettingsStore")) && void 0 !== t ? t : {};
+  let n = null != (e = s.K.get("UserSettingsSync")) ? e : {},
+    r = null != (t = s.K.get("UserSettingsStore")) ? t : {};
   s.K.remove("UserSettingsSync");
   let i = {};
   return !1 === n[c.oAB.TEXT] && (i.text = {
@@ -111,7 +111,7 @@ u(g, "displayName", "SelectivelySyncedUserSettingsStore"), u(g, "persistKey", "S
   }), i
 }, e => {
   var t, n;
-  if ((null == e ? void 0 : null === (n = e.appearance) || void 0 === n ? void 0 : null === (t = n.settings) || void 0 === t ? void 0 : t.theme) === "amoled") return _(d({}, e), {
+  if ((null == e || null == (n = e.appearance) || null == (t = n.settings) ? void 0 : t.theme) === "amoled") return _(d({}, e), {
     appearance: _(d({}, e.appearance), {
       settings: _(d({}, e.appearance.settings), {
         theme: "midnight"

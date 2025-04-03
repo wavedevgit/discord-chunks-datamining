@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   Dv: () => p,
-  G2: () => y,
+  G2: () => v,
   IG: () => b,
   NG: () => g,
   OV: () => m,
   fW: () => O,
-  lB: () => v,
+  lB: () => y,
   mA: () => E
 });
 var r = n(200651);
@@ -15,7 +15,7 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   a = n(377171),
-  s = n(943650);
+  s = n(763494);
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -136,7 +136,7 @@ let E = e => {
       children: t
     }))
   },
-  v = e => {
+  y = e => {
     var {
       text: t,
       className: n
@@ -146,7 +146,7 @@ let E = e => {
       text: t
     }, i))
   },
-  y = e => {
+  v = e => {
     let {
       icon: t,
       className: n,

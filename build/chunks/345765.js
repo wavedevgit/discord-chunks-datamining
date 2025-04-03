@@ -21,7 +21,7 @@ var r = n(392711),
   E = n(206583),
   b = n(981631);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let y = 4,
+let v = 4,
   O = 2 * _.Z.Millis.MINUTE,
   I = E.YN.GLOBAL_FEED,
   S = 15 * _.Z.Millis.MINUTE,
@@ -74,8 +74,8 @@ function L(e) {
 
 function x() {
   var e;
-  let t = null !== (e = A.get(I)) && void 0 !== e ? e : 0;
-  if (t > 0 && t <= y || (L(I), !D(I))) return;
+  let t = null != (e = A.get(I)) ? e : 0;
+  if (t > 0 && t <= v || (L(I), !D(I))) return;
   let n = g.Z.getFeed(I);
   if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == n ? void 0 : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
@@ -113,8 +113,8 @@ async function M(e) {
     }), t === I && (C = null, x())
   } catch (a) {
     var i;
-    let e = null !== (i = A.get(t)) && void 0 !== i ? i : 0;
-    if (e < y) {
+    let e = null != (i = A.get(t)) ? i : 0;
+    if (e < v) {
       let i = _.Z.Millis.MINUTE * Math.pow(2, e) + P(e);
       T.set(t, setTimeout(() => M({
         feedId: t,
@@ -166,7 +166,7 @@ function F(e) {
     connectionId: n,
     track: r
   } = e;
-  null != n && (null === (t = u.Z.getAccount(n, b.ABu.SPOTIFY)) || void 0 === t ? void 0 : t.showActivity) && R(n, r)
+  null != n && (null == (t = u.Z.getAccount(n, b.ABu.SPOTIFY)) ? void 0 : t.showActivity) && R(n, r)
 }
 
 function V() {
@@ -198,7 +198,7 @@ function Z() {
 }
 class H extends a.Z {
   constructor(...e) {
-    super(...e), v(this, "actions", {
+    super(...e), y(this, "actions", {
       POST_CONNECTION_OPEN: j,
       CONNECTION_CLOSED: U,
       WINDOW_FOCUS: k,

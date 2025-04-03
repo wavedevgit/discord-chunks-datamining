@@ -24,9 +24,9 @@ var r = n(200651),
   m = n(98650),
   g = n(748585),
   E = n(388032),
-  b = n(687485);
+  b = n(142210);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,14 +35,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -114,7 +114,7 @@ function A(e) {
     },
     isSelected: e => {
       var n;
-      return null !== (n = null == t ? void 0 : t.has(e)) && void 0 !== n && n
+      return null != (n = null == t ? void 0 : t.has(e)) && n
     },
     clear: () => n(new Set),
     serialize: i
@@ -167,7 +167,7 @@ function L(e) {
     autoFocus: u = !1,
     popoutWidth: f,
     clearable: m = !1,
-    look: v = g.q.FILLED,
+    look: y = g.q.FILLED,
     onClose: O,
     onOpen: T,
     renderOptionLabel: N = w,
@@ -202,7 +202,7 @@ function L(e) {
     X = i.useCallback(e => {
       if (k(e), M) {
         var t;
-        null === (t = W.current) || void 0 === t || t.focus()
+        null == (t = W.current) || t.focus()
       }
     }, [k, M, W]),
     J = i.useCallback(e => {
@@ -212,7 +212,7 @@ function L(e) {
   return i.useLayoutEffect(() => {
     if (u) {
       var e;
-      null === (e = W.current) || void 0 === e || e.focus()
+      null == (e = W.current) || e.focus()
     }
   }, [u, W]), (0, r.jsx)(d.y, {
     targetElementRef: W,
@@ -259,7 +259,7 @@ function L(e) {
         position: f
       } = t;
       let p = d ? _.u04 : _.CJ0;
-      return (0, r.jsxs)(c.P, I(y({
+      return (0, r.jsxs)(c.P, I(v({
         role: "button",
         "aria-disabled": s,
         innerRef: e => {
@@ -276,7 +276,7 @@ function L(e) {
           [b.open]: d,
           [b.disabled]: s,
           [b.selectPositionTop]: "top" === f,
-          [b.lookFilled]: v === g.q.FILLED
+          [b.lookFilled]: y === g.q.FILLED
         }),
         "aria-haspopup": "listbox",
         "aria-expanded": d,
@@ -323,7 +323,7 @@ function x(e) {
     maxVisibleItems: h,
     renderOptionLabel: g,
     serialize: E,
-    optionClassName: v,
+    optionClassName: y,
     buttonHeight: O,
     updatePosition: T,
     popoutPosition: N
@@ -336,12 +336,12 @@ function x(e) {
   }), D = i.useRef(null);
   (0, u.T)(D), i.useLayoutEffect(() => {
     var e;
-    null === (e = D.current) || void 0 === e || e.focus()
+    null == (e = D.current) || e.focus()
   }, []), i.useEffect(() => {
     O > 0 && T()
   }, [O, T]), (0, m.Z)(T), i.useLayoutEffect(() => {
     var e, t;
-    let n = null === (t = R.current) || void 0 === t ? void 0 : null === (e = t.getBoundingClientRect()) || void 0 === e ? void 0 : e.height;
+    let n = null == (t = R.current) || null == (e = t.getBoundingClientRect()) ? void 0 : e.height;
     null != n && C(n)
   }, [h]), i.useEffect(() => {
     T()
@@ -356,11 +356,11 @@ function x(e) {
         value: e.value,
         label: g(e),
         onSelect: L,
-        className: v,
+        className: y,
         isDisabled: e.disabled,
         serialize: E
-      }, null !== (n = e.key) && void 0 !== n ? n : t)
-    }), [L, d, v, _, g, E]),
+      }, null != (n = e.key) ? n : t)
+    }), [L, d, y, _, g, E]),
     k = _.length <= h ? f.xV : f.h2;
   return (0, r.jsx)(l.bG, {
     navigator: w,
@@ -370,7 +370,7 @@ function x(e) {
           ref: n
         } = e, i = S(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(k, I(y({
+          children: [(0, r.jsx)(k, I(v({
             className: a()(b.popout, t, {
               [b.popoutPositionTop]: "top" === N
             }),
@@ -380,7 +380,7 @@ function x(e) {
             },
             ref: e => {
               var t;
-              let r = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null;
+              let r = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null;
               n.current = r, D.current = r
             }
           }, i), {
@@ -408,7 +408,7 @@ function M(e) {
     isDisabled: u,
     serialize: d
   } = e, f = (0, l.JA)(d(n));
-  return (0, r.jsxs)(c.P, I(y({
+  return (0, r.jsxs)(c.P, I(v({
     focusProps: {
       enabled: !1
     },
@@ -438,5 +438,5 @@ function k(e) {
     value: t,
     onChange: n
   });
-  return (0, r.jsx)(L, y({}, i, o))
+  return (0, r.jsx)(L, v({}, i, o))
 }

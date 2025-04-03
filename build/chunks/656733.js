@@ -68,8 +68,8 @@ let _ = {
   g = "",
   E = "",
   b = [],
-  v = [],
-  y = h,
+  y = [],
+  v = h,
   O = [],
   I = [];
 
@@ -123,7 +123,7 @@ function C(e) {
       gifSrc: A(i),
       url: a,
       id: s,
-      format: N(y) ? o.EO.VIDEO : o.EO.IMAGE
+      format: N(v) ? o.EO.VIDEO : o.EO.IMAGE
     }
   })
 }
@@ -138,7 +138,7 @@ function R(e) {
 
 function P(e) {
   let t = e.trendingCategories;
-  v = [...null != e.trendingGIFPreview ? [{
+  y = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.NW.string(l.t.H6zNFx),
     src: A(e.trendingGIFPreview.src),
@@ -177,10 +177,10 @@ class L extends(r = i.ZP.Store) {
     return b
   }
   getTrendingCategories() {
-    return v
+    return y
   }
   getSelectedFormat() {
-    return y
+    return v
   }
   getSuggestions() {
     return O

@@ -16,7 +16,7 @@ var r = n(200651),
   _ = n(474936),
   p = n(981631),
   h = n(388032),
-  m = n(146331);
+  m = n(913850);
 let g = (0, f.kt)({
   id: "1",
   type: p.d4z.DM
@@ -31,8 +31,8 @@ function E(e) {
     placeholder: p,
     currentText: E,
     className: b,
-    innerClassName: v,
-    disabled: y = !1,
+    innerClassName: y,
+    disabled: v = !1,
     disableThemedBackground: O = !1
   } = e, [I, S] = i.useState(null != f ? f : E), [T, N] = i.useState((0, c.JM)(I)), A = i.useRef(!1);
 
@@ -60,9 +60,9 @@ function E(e) {
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
-      disabled: y,
+      disabled: v,
       children: [(0, r.jsx)(u.Z, {
-        innerClassName: a()(m.textArea, v),
+        innerClassName: a()(m.textArea, y),
         editorClassName: m.editorTextArea,
         maxCharacterCount: _.$n,
         onChange: C,

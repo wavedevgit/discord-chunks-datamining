@@ -6,8 +6,7 @@ n.r(t), n.d(t, {
 var r = n(981631);
 
 function i(e, t) {
-  let n;
-  let i = new Date;
+  let n, i = new Date;
   switch (e) {
     case r.rMx.CHANNEL_OPENED_CLICKSTREAM:
       return {

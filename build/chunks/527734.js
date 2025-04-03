@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "HSP",
     case_insensitive: !0,
@@ -30,4 +30,3 @@ function t(e) {
     }, e.NUMBER_MODE, e.C_NUMBER_MODE]
   }
 }
-e.exports = t

@@ -11,7 +11,7 @@ var i = n(120356),
   s = n(129861),
   l = n(184301),
   c = n(347475),
-  u = n(740816);
+  u = n(22700);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,8 +81,8 @@ function g(e) {
     disablePopout: g,
     ignoreModalClicks: E,
     onClick: b,
-    onContextMenu: v,
-    onPopoutRequestOpen: y,
+    onContextMenu: y,
+    onPopoutRequestOpen: v,
     onPopoutRequestClose: O
   } = e;
   return (0, r.jsx)(a.yRy, {
@@ -97,7 +97,7 @@ function g(e) {
     })),
     position: "left",
     shouldShow: !g && void 0,
-    onRequestOpen: y,
+    onRequestOpen: v,
     onRequestClose: O,
     ignoreModalClicks: E,
     clickTrap: !0,
@@ -109,7 +109,7 @@ function g(e) {
         className: o()(u.userListItem, _, {
           [u.popoutDisabled]: g
         }),
-        onContextMenu: v,
+        onContextMenu: y,
         onClick: e => {
           i(e), null == b || b(e)
         },

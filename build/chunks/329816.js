@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => ev
+  Z: () => ey
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(490173),
   E = n(114250),
   b = n(735246),
-  v = n(315263),
-  y = n(40851),
+  y = n(315263),
+  v = n(40851),
   O = n(607070),
   I = n(899663),
   S = n(793903),
@@ -66,7 +66,7 @@ var r = n(200651),
   ec = n(151851),
   eu = n(981631),
   ed = n(921944),
-  ef = n(343901);
+  ef = n(325162);
 
 function e_(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,7 +109,7 @@ function em(e, t) {
 n(167666), Promise.resolve().then(n.bind(n, 62883)).then(e => {
   ee.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, !1) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, !1)
 }), (0, _.E)({
-  getDefaultLinkInterceptor: v.default
+  getDefaultLinkInterceptor: y.default
 }), (0, en.Un)({
   createPromise: () => Promise.all([n.e("77298"), n.e("80451"), n.e("30634"), n.e("33551")]).then(n.bind(n, 849493)),
   webpackId: 849493
@@ -118,7 +118,7 @@ n(167666), Promise.resolve().then(n.bind(n, 62883)).then(e => {
   webpackId: 80753
 });
 let eg = (0, en.Un)({
-    createPromise: () => n.e("70300").then(n.bind(n, 177741)),
+    createPromise: () => n.e("67110").then(n.bind(n, 177741)),
     webpackId: 177741
   }),
   eE = (0, en.Un)({
@@ -136,13 +136,13 @@ let eg = (0, en.Un)({
       focused: t
     }))
   }),
-  ev = function(e) {
+  ey = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
     } = e, {
       pathname: o
-    } = (0, l.TH)(), _ = (0, ee.getPlatform)(), v = c.tq || c.Em, Q = (0, u.e7)([z.Z], () => z.Z.darkSidebar ? eu.BRd.DARK : void 0), $ = (0, j.Q3)("AppSkeleton");
+    } = (0, l.TH)(), _ = (0, ee.getPlatform)(), y = c.tq || c.Em, Q = (0, u.e7)([z.Z], () => z.Z.darkSidebar ? eu.BRd.DARK : void 0), $ = (0, j.Q3)("AppSkeleton");
     i.useEffect(() => {
       f.K.set(j.k9, String($))
     }, [$]);
@@ -150,11 +150,11 @@ let eg = (0, en.Un)({
       [el, ec, e_] = (0, u.Wu)([D.Z], () => [D.Z.isEditorOpen, D.Z.isCoachmark, D.Z.isPreview]),
       [ep, eh] = (0, u.Wu)([C.Z], () => [C.Z.isEditorOpen, C.Z.isUpsellPreview]),
       em = (0, u.e7)([X.Z], () => X.Z.getLayers().includes(eu.S9g.USER_SETTINGS)),
-      ev = (0, u.e7)([J.default], () => et.ZP.canUseClientThemes(J.default.getCurrentUser())),
-      ey = el && !em,
+      ey = (0, u.e7)([J.default], () => et.ZP.canUseClientThemes(J.default.getCurrentUser())),
+      ev = el && !em,
       eO = ep && !em,
       eI = [];
-    em || !ec || ev || eI.push(d.z.CLIENT_THEMES_COACHMARK);
+    em || !ec || ey || eI.push(d.z.CLIENT_THEMES_COACHMARK);
     let [eS, eT] = (0, F.US)(eI, ed.R.SIDEBAR, !0);
     eI.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
     let eN = eS === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
@@ -170,7 +170,7 @@ let eg = (0, en.Un)({
       }))
     }, [eN, eA, eT, o]);
     let eC = i.useRef(document.body),
-      eR = ey || eA,
+      eR = ev || eA,
       eP = eO && !eA,
       ew = e_ || eh,
       {
@@ -190,7 +190,7 @@ let eg = (0, en.Un)({
           children: (0, r.jsx)(eo.Z, {
             children: (0, r.jsxs)(p.JcV, {
               containerRef: eC,
-              children: [(0, r.jsx)(es.Co, {}), (0, r.jsx)(ea.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
+              children: [(0, r.jsx)(es.Co, {}), (0, r.jsx)(ea.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(v.Wu, {
                 appContext: eu.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(V.yP, {
@@ -198,7 +198,7 @@ let eg = (0, en.Un)({
                     type: _,
                     themeOverride: Q
                   }) : null, (0, r.jsxs)("div", {
-                    className: a()(ef.appAsidePanelWrapper, v && ef.mobileAppAsidePanelWrapper),
+                    className: a()(ef.appAsidePanelWrapper, y && ef.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(k.K, {}), (0, r.jsx)("div", {
                       className: ef.notAppAsidePanel,
                       "data-app-not-dev-tools": !0,
@@ -208,7 +208,7 @@ let eg = (0, en.Un)({
                             value: T.Z,
                             children: (0, r.jsxs)(x.p, {
                               children: [(0, r.jsx)("div", {
-                                className: a()(v ? ef.mobileApp : ef.app),
+                                className: a()(y ? ef.mobileApp : ef.app),
                                 children: t
                               }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(W.Z, {}), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {})]
                             })
@@ -231,7 +231,7 @@ let eg = (0, en.Un)({
                       markAsDismissed: eT,
                       isCoachmark: eA
                     }), (0, r.jsx)(er.Z, {}), (0, r.jsx)(G.Z, {
-                      mobile: v
+                      mobile: y
                     })]
                   }), !1]
                 })

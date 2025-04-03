@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(74538),
   h = n(921944),
   m = n(388032),
-  g = n(454709);
+  g = n(742840);
 let E = {
     tension: 750,
     mass: 2.5,
@@ -25,7 +25,7 @@ let E = {
   },
   b = 20;
 
-function v(e) {
+function y(e) {
   let {
     tooltipText: t,
     headingText: n,
@@ -52,7 +52,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   return e ? m.NW.string(m.t["5cRA/f"]) : m.NW.string(m.t.buV4am)
 }
 
@@ -78,11 +78,11 @@ function O(e) {
     let e = T === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
     e && (N(h.L.DISMISS), setTimeout(() => C(e), 200))
   }, [T, N]);
-  let L = A ? m.NW.string(m.t["Osi/u7"]) : y(t),
+  let L = A ? m.NW.string(m.t["Osi/u7"]) : v(t),
     x = A ? m.NW.string(m.t.ORK94u) : void 0;
   return (0, r.jsxs)(u.DY3, {
     position: "top",
-    text: (0, r.jsx)(v, {
+    text: (0, r.jsx)(y, {
       textColor: "always-white",
       tooltipText: L,
       headingText: x

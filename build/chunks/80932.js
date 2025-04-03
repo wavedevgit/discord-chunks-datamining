@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   $K: () => A,
-  OQ: () => y,
+  OQ: () => v,
   RE: () => I,
   Xe: () => C,
   dv: () => S,
   rS: () => O,
-  t0: () => v
+  t0: () => y
 }), n(47120), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -27,13 +27,13 @@ var r = n(392711),
   E = n(526761),
   b = n(388032);
 
-function v(e) {
+function y(e) {
   _.hW.updateAsync("textAndImages", t => {
     t.diversitySurrogate = a.Gm.create(), t.diversitySurrogate.value = e
   }, E.fy.FREQUENT_USER_ACTION)
 }
 
-function y(e) {
+function v(e) {
   s.Z.dispatch({
     type: "EMOJI_FETCH",
     guildId: e
@@ -116,14 +116,14 @@ function T(e) {
   if (p.Z.totalUnavailableGuilds > 0 || !f.Z.isConnected()) return e;
   let t = e.map(e => {
     var t;
-    return null !== (t = c.ZP.getCustomEmojiById(e)) && void 0 !== t ? t : u.ZP.getByName(e)
+    return null != (t = c.ZP.getCustomEmojiById(e)) ? t : u.ZP.getByName(e)
   }).filter(h.lm);
   return [...(0, d.Z)(t).keys()]
 }
 
 function N(e) {
   var t, n, r;
-  return null == e ? null : null !== (r = null !== (n = e.id) && void 0 !== n ? n : null === (t = u.ZP.convertSurrogateToBase(e.surrogates)) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : e.name
+  return null == e ? null : null != (r = null != (n = e.id) ? n : null == (t = u.ZP.convertSurrogateToBase(e.surrogates)) ? void 0 : t.name) ? r : e.name
 }
 
 function A(e) {

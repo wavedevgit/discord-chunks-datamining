@@ -17,8 +17,8 @@ var r = n(161581),
   g = n(144748),
   E = n(276321),
   b = n(537443).f,
-  v = n(692994),
-  y = n(175440),
+  y = n(692994),
+  v = n(175440),
   O = n(865312),
   I = n(644659),
   S = s.PROPER,
@@ -39,7 +39,7 @@ var r = n(161581),
   G = Object.prototype,
   B = r.Array,
   F = r.RangeError,
-  V = i(v),
+  V = i(y),
   Z = i([].reverse),
   H = m.pack,
   W = m.unpack,
@@ -76,7 +76,7 @@ var r = n(161581),
     if (o + t > i.byteLength) throw F(P);
     var s = i.bytes,
       l = o + i.byteOffset,
-      c = y(s, l, l + t);
+      c = v(s, l, l + t);
     return a ? c : Z(c)
   },
   ee = function(e, t, n, r, i, o) {

@@ -40,7 +40,7 @@ var u = function() {
           var n = t.store.getState(),
             r = n.stateId;
           try {
-            r === o || r === o + 1 && !(0, a.co)(n.dirtyHandlerIds, i) || e()
+            r !== o && (r !== o + 1 || (0, a.co)(n.dirtyHandlerIds, i)) && e()
           } finally {
             o = r
           }
@@ -86,7 +86,7 @@ var u = function() {
     value: function(e) {
       if (!e) return !1;
       var t = this.registry.getSource(e, !0);
-      return (0, r.k)(t, "Expected to find a valid source. sourceId=".concat(e)), !!(this.isDragging() && this.isSourcePublic()) && this.registry.getSourceType(e) === this.getItemType() && t.isDragging(this, e)
+      return (0, r.k)(t, "Expected to find a valid source. sourceId=".concat(e)), !!this.isDragging() && !!this.isSourcePublic() && this.registry.getSourceType(e) === this.getItemType() && t.isDragging(this, e)
     }
   }, {
     key: "isOverTarget",

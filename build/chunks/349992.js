@@ -13,21 +13,20 @@ function o(e) {
       value: e
     }), e.fields)) {
     let e = n.localName;
-    if (!n.opt) {
+    if (!n.opt)
       if (n.oneof) t[n.oneof] = {
         oneofKind: void 0
       };
       else if (n.repeat) t[e] = [];
-      else switch (n.kind) {
-        case "scalar":
-          t[e] = (0, r.N)(n.T, n.L);
-          break;
-        case "enum":
-          t[e] = 0;
-          break;
-        case "map":
-          t[e] = {}
-      }
+    else switch (n.kind) {
+      case "scalar":
+        t[e] = (0, r.N)(n.T, n.L);
+        break;
+      case "enum":
+        t[e] = 0;
+        break;
+      case "map":
+        t[e] = {}
     }
   }
   return t

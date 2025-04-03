@@ -55,8 +55,8 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = ":",
-  y = /(\t|\s)/;
+let y = ":",
+  v = /(\t|\s)/;
 class O extends i.PureComponent {
   componentDidMount() {
     this.props.disableAutoFocus || (Promise.resolve().then(() => {
@@ -64,7 +64,7 @@ class O extends i.PureComponent {
       let {
         value: t
       } = this.props;
-      null === (e = this._ref) || void 0 === e || e.setSelection(t.length, t.length)
+      null == (e = this._ref) || e.setSelection(t.length, t.length)
     }), this.focus()), null != u.Z.getActiveCommand(this.props.channel.id) && c.Po({
       channelId: this.props.channel.id,
       command: null,
@@ -89,7 +89,7 @@ class O extends i.PureComponent {
     };
     let n = e.selectionStart,
       r = e.selectionEnd;
-    for (; n > 0 && !y.test(t[n - 1]);) n--;
+    for (; n > 0 && !v.test(t[n - 1]);) n--;
     return {
       word: t.slice(n, r),
       isAtStart: 0 === n
@@ -199,10 +199,10 @@ class O extends i.PureComponent {
     })
   }
   handleTabOrEnterDown(e) {
-    e.which === h.yXg.TAB && this.props.onTab() ? (e.preventDefault(), e.stopPropagation()) : e.which === h.yXg.ENTER && this.props.onEnter(e) ? (e.preventDefault(), e.stopPropagation()) : e.which === h.yXg.ESCAPE ? (e.preventDefault(), e.stopPropagation(), this.props.hideAutocomplete()) : e.which === h.yXg.TAB && this.hasOpenCodeBlock() && (e.preventDefault(), e.stopPropagation(), this.insertText("	", void 0, !1))
+    e.which === h.yXg.TAB && this.props.onTab() || e.which === h.yXg.ENTER && this.props.onEnter(e) ? (e.preventDefault(), e.stopPropagation()) : e.which === h.yXg.ESCAPE ? (e.preventDefault(), e.stopPropagation(), this.props.hideAutocomplete()) : e.which === h.yXg.TAB && this.hasOpenCodeBlock() && (e.preventDefault(), e.stopPropagation(), this.insertText("	", void 0, !1))
   }
   insertEmoji(e, t) {
-    this.insertText("".concat(v).concat(e.name).concat(v), void 0, t)
+    this.insertText("".concat(y).concat(e.name).concat(y), void 0, t)
   }
   getFirstText() {
     return this.props.value

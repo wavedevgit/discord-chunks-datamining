@@ -39,8 +39,8 @@ function s(e) {
   i.useEffect(() => () => u(), [u]);
   let d = i.useCallback(e => {
     var t;
-    let n = null !== (t = e.target.ownerDocument) && void 0 !== t ? t : document;
-    !e.currentTarget.contains(n.activeElement) && s()
+    let n = null != (t = e.target.ownerDocument) ? t : document;
+    e.currentTarget.contains(n.activeElement) || s()
   }, [s]);
   return (0, r.jsx)("div", {
     className: n,

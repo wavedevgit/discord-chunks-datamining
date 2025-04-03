@@ -47,7 +47,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = null !== (r = document.getElementById("app-mount")) && void 0 !== r ? r : document;
+let f = null != (r = document.getElementById("app-mount")) ? r : document;
 
 function _(e) {
   var t, n, r;
@@ -56,7 +56,7 @@ function _(e) {
     _ = i.useRef(!1);
   return _.current = !u, (0, o.ZP)(e, d(c({}, l), {
     disableReturnRef: _,
-    attachTo: null !== (r = null !== (n = l.attachTo) && void 0 !== n ? n : null === (t = e.current) || void 0 === t ? void 0 : t.ownerDocument) && void 0 !== r ? r : f,
+    attachTo: null != (r = null != (n = l.attachTo) ? n : null == (t = e.current) ? void 0 : t.ownerDocument) ? r : f,
     returnRef: l.returnRef
   }))
 }

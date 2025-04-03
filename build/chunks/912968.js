@@ -6,8 +6,7 @@ var r = n(484155),
   s = n(682653),
   l = n(454745),
   c = Object.prototype.hasOwnProperty;
-
-function u(e, t) {
+e.exports = function(e, t) {
   var n = o(e),
     u = !n && i(e),
     d = !n && !u && a(e),
@@ -18,4 +17,3 @@ function u(e, t) {
   for (var m in e)(t || c.call(e, m)) && !(_ && ("length" == m || d && ("offset" == m || "parent" == m) || f && ("buffer" == m || "byteLength" == m || "byteOffset" == m) || s(m, h))) && p.push(m);
   return p
 }
-e.exports = u

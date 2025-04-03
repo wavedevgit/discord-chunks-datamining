@@ -63,11 +63,11 @@ class _ {
   }
   isSubscribedToAnyMember(e) {
     var t;
-    return null !== (t = this._members.isSubscribedToAnyMember(e)) && void 0 !== t && t
+    return null != (t = this._members.isSubscribedToAnyMember(e)) && t
   }
   isSubscribedToMemberUpdates(e) {
     var t;
-    return null !== (t = this.get(e).member_updates) && void 0 !== t && t
+    return null != (t = this.get(e).member_updates) && t
   }
   forEach(e) {
     this._subscribed.forEach(e)
@@ -117,7 +117,7 @@ class _ {
     })
   }
   _subscribeToFeature(e, t, n) {
-    f(e) && !t.has(e) && (t.add(e), this._enqueue(e, n))
+    f(e) && (t.has(e) || (t.add(e), this._enqueue(e, n)))
   }
   constructor(e) {
     u(this, "_members", new s.Z((e, t) => this._enqueue(e, {

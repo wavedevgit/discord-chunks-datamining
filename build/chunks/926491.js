@@ -50,12 +50,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 2,
+let v = 2,
   O = new Map,
   I = new Map,
   S = null,
@@ -68,10 +68,10 @@ let y = 2,
   },
   P = p.Z.Millis.HOUR,
   w = async () => {
-    if (0 !== y) return;
+    if (0 !== v) return;
     let e = s.Z.database();
     if (null == e) return;
-    y = 2;
+    v = 2;
     let t = await (0, l.gs)("StickerStore.loadSavedGuildStickers", () => i.Z.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => c.Z.getAsync(e)));
     null != t && a.Z.dispatch({
       type: "CACHED_STICKERS_LOADED",
@@ -127,10 +127,7 @@ let L = function(e) {
           value: e
         })
       }
-      if (null == i) {
-        S.set(e.id, o);
-        return
-      }
+      if (null == i) return void S.set(e.id, o);
       o.push({
         type: h.MO.CORRELATED_EMOJI,
         value: i.surrogates
@@ -159,10 +156,10 @@ let L = function(e) {
     let {
       guilds: t
     } = e;
-    S = null, I = new Map, C = new Map, t.forEach(G), y = +!!t.every(e => null != e.stickers)
+    S = null, I = new Map, C = new Map, t.forEach(G), v = +!!t.every(e => null != e.stickers)
   },
   U = () => {
-    S = null, I = new Map, C = new Map, y = 0
+    S = null, I = new Map, C = new Map, v = 0
   };
 
 function G(e) {
@@ -174,7 +171,7 @@ function B(e) {
   let {
     guild: t
   } = e;
-  !d.Z.isLurking(t.id) && (G(t), 1 === y && null == t.stickers && null != t.stickerUpdates && (y = 0))
+  d.Z.isLurking(t.id) || (G(t), 1 === v && null == t.stickers && null != t.stickerUpdates && (v = 0))
 }
 
 function F(e) {
@@ -182,12 +179,12 @@ function F(e) {
   let {
     guild: n
   } = e;
-  (null !== (t = C.get(n.id)) && void 0 !== t ? t : []).forEach(e => {
+  (null != (t = C.get(n.id)) ? t : []).forEach(e => {
     null != S && S.delete(e.id), I.delete(e.id)
   }), C.delete(n.id), C = new Map(C)
 }
 let V = () => {
-    y = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), A = !1, N = null
+    v = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), A = !1, N = null
   },
   Z = () => {
     A = !0
@@ -217,8 +214,8 @@ let V = () => {
     let {
       guildId: r,
       sticker: i
-    } = e, o = null !== (t = C.get(r)) && void 0 !== t ? t : [];
-    R(r, [...null !== (n = o.filter(e => e.id !== i.id)) && void 0 !== n ? n : [], i]), L(i)
+    } = e, o = null != (t = C.get(r)) ? t : [];
+    R(r, [...null != (n = o.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
   },
   z = e => {
     let {
@@ -232,13 +229,12 @@ let V = () => {
       guildId: n,
       stickers: r
     } = e, i = e => {
-      let t;
-      let n = I.get(e.id);
-      return null != n && (0, m.J8)(n) && (t = null != n.user ? n.user : void 0), v(E({}, e), {
+      let t, n = I.get(e.id);
+      return null != n && (0, m.J8)(n) && (t = null != n.user ? n.user : void 0), y(E({}, e), {
         user: t
       })
     };
-    (null !== (t = C.get(n)) && void 0 !== t ? t : []).filter(e => null == r.find(t => t.id === e.id)).forEach(e => {
+    (null != (t = C.get(n)) ? t : []).filter(e => null == r.find(t => t.id === e.id)).forEach(e => {
       I.delete(e.id), null != S && S.delete(e.id)
     });
     let o = r.map(e => i(e));
@@ -249,10 +245,10 @@ class Q extends(r = o.ZP.Store) {
     this.waitFor(s.Z, f.Z, _.Z)
   }
   get isLoaded() {
-    return 0 !== y
+    return 0 !== v
   }
   get loadState() {
-    return y
+    return v
   }
   get stickerMetadata() {
     return w(), null == S && (S = new Map, k()), S

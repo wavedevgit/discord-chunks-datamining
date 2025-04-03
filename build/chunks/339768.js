@@ -1,10 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 var r = n(85733),
-  i = n(692538),
-  o = n(606956);
+  i = n(692538);
 e.exports = {
-  formats: o,
+  formats: n(606956),
   parse: i,
   stringify: r
 }

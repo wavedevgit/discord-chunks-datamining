@@ -1,8 +1,6 @@
 /** Chunk was on web.js **/
 var t = Object.prototype;
-
-function n(e) {
+e.exports = function(e) {
   var n = e && e.constructor;
   return e === ("function" == typeof n && n.prototype || t)
 }
-e.exports = n

@@ -31,19 +31,19 @@ let c = null,
   {
     emojis: E,
     emojisByCategory: b,
-    nameToEmoji: v,
-    surrogateToEmoji: y,
+    nameToEmoji: y,
+    surrogateToEmoji: v,
     numDiversitySprites: O,
     numNonDiversitySprites: I
   } = n(382342);
 
 function S(e) {
-  let t = v[e];
+  let t = y[e];
   return null == t ? null : E[t]
 }
 
 function T(e) {
-  let t = y[e];
+  let t = v[e];
   return null == t ? null : E[t]
 }
 class N {
@@ -55,7 +55,7 @@ class N {
   }
   get unicodeVersion() {
     var e;
-    return null !== (e = this.emojiObject.unicodeVersion) && void 0 !== e ? e : 0
+    return null != (e = this.emojiObject.unicodeVersion) ? e : 0
   }
   get hasDiversity() {
     return this.emojiObject.hasDiversity
@@ -89,7 +89,7 @@ class N {
   get name() {
     if (this.hasDiversity && null != c) {
       var e;
-      return "".concat(this.uniqueName, "::").concat(null === (e = T(c)) || void 0 === e ? void 0 : e.names[0])
+      return "".concat(this.uniqueName, "::").concat(null == (e = T(c)) ? void 0 : e.names[0])
     }
     return this.uniqueName
   }
@@ -164,7 +164,7 @@ function k(e) {
 
 function j(e) {
   var t;
-  let n = null === (t = T(e)) || void 0 === t ? void 0 : t.names[0];
+  let n = null == (t = T(e)) ? void 0 : t.names[0];
   return null != n ? {
     type: "emoji",
     surrogate: e,
@@ -186,16 +186,16 @@ function F(e, t) {
   }];
   let r = "",
     i = [],
-    o = null !== (n = e.match(g)) && void 0 !== n ? n : [];
+    o = null != (n = e.match(g)) ? n : [];
   for (let e = 0; e < o.length; e++) {
     let t = o[e];
-    if (null != r && "" !== r) {
+    if (null != r && "" !== r)
       if (t === U) t = r + t, r = "";
       else if (B.test(t)) {
-        r += t;
-        continue
-      } else i.push(j(r)), r = ""
-    } else if (t === G) {
+      r += t;
+      continue
+    } else i.push(j(r)), r = "";
+    else if (t === G) {
       r = t;
       continue
     }
@@ -225,14 +225,14 @@ function Z(e) {
 function H(e) {
   var t, n;
   let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-  return null !== (n = null === (t = S(e)) || void 0 === t ? void 0 : t.surrogates) && void 0 !== n ? n : r
+  return null != (n = null == (t = S(e)) ? void 0 : t.surrogates) ? n : r
 }
 
 function W(e) {
   var t, n;
   let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
-    o = null !== (n = null === (t = T(e)) || void 0 === t ? void 0 : t.names[0]) && void 0 !== n ? n : i;
+    o = null != (n = null == (t = T(e)) ? void 0 : t.names[0]) ? n : i;
   return r ? ":".concat(o, ":") : o
 }
 
@@ -268,6 +268,6 @@ let K = {
   EMOJI_NAME_AND_DIVERSITY_RE: _,
   EMOJI_SHORTCUT_RE: h,
   hasSurrogates: function e(e) {
-    return i().toArray(e).some(e => null != y[e])
+    return i().toArray(e).some(e => null != v[e])
   }
 }

@@ -24,7 +24,7 @@ async function p(e, t, n) {
   var r;
   let i = a.Z.getGuild(e);
   if (null == i) return !0;
-  let o = null != i && (null === (r = i.features) || void 0 === r ? void 0 : r.has(d.oNc.GUILD_ONBOARDING));
+  let o = null != i && (null == (r = i.features) ? void 0 : r.has(d.oNc.GUILD_ONBOARDING));
   if (!o) return !0;
   o && l.Z.shouldFetchPrompts(e) && await (0, s.eM)(e);
   let f = l.Z.getDefaultChannelIds(e),

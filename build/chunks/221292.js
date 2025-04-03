@@ -56,12 +56,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = e => {
+let v = e => {
     let {
       user: t,
       userProfile: n,
@@ -101,11 +101,11 @@ let y = e => {
       profile_layout: r,
       profile_session_id: l,
       source_profile_session_id: u,
-      profile_properties: y({
+      profile_properties: v({
         user: f,
         userProfile: null == p ? void 0 : p._userProfile
       }),
-      guild_profile_properties: y({
+      guild_profile_properties: v({
         guildMember: h,
         guildMemberProfile: null == p ? void 0 : p._guildMemberProfile
       }),
@@ -115,13 +115,13 @@ let y = e => {
         } = e;
         return t
       }).filter(e => void 0 !== e),
-      profile_badges: null == p ? void 0 : null === (t = p.getBadges()) || void 0 === t ? void 0 : t.map(e => {
+      profile_badges: null == p || null == (t = p.getBadges()) ? void 0 : t.map(e => {
         let {
           id: t
         } = e;
         return t
       }),
-      avatar_decoration_sku_id: null === (n = f.avatarDecoration) || void 0 === n ? void 0 : n.skuId,
+      avatar_decoration_sku_id: null == (n = f.avatarDecoration) ? void 0 : n.skuId,
       profile_effect_sku_id: null == p ? void 0 : p.profileEffectId,
       user_status: O(f.id),
       is_guild_profile: (null == p ? void 0 : p.guildId) != null,
@@ -140,7 +140,7 @@ let y = e => {
       relationship_type: l.Z.getRelationshipType(n),
       related_since: l.Z.getSince(n),
       num_mutual_friends: f.Z.getMutualFriendsCount(n),
-      num_mutual_guilds: null === (t = f.Z.getMutualGuilds(n)) || void 0 === t ? void 0 : t.length,
+      num_mutual_guilds: null == (t = f.Z.getMutualGuilds(n)) ? void 0 : t.length,
       communication_probability: null == r ? void 0 : r.communicationProbability,
       communication_rank: null == r ? void 0 : r.communicationRank
     }
@@ -155,7 +155,7 @@ let y = e => {
       action: s,
       section: l
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_ACTION, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_ACTION, y(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: a,
       profile_action: s,
       profile_section: l,
@@ -176,7 +176,7 @@ let y = e => {
       outbox: d,
       voiceChannelId: f
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_ACTIVITY_ACTION, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_ACTIVITY_ACTION, y(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       activity_action: o,
       activity_display: a,
@@ -209,7 +209,7 @@ let y = e => {
       analyticsLocations: i,
       badge: o
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_BADGE_PRESSED, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_BADGE_PRESSED, y(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       badge: o
     }))
@@ -221,7 +221,7 @@ let y = e => {
       analyticsLocations: i,
       badge: o
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_BADGE_HOVERED, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_BADGE_HOVERED, y(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       badge: o
     }))
@@ -239,7 +239,7 @@ let y = e => {
     }) : null;
     u.default.track(h.rMx.DM_PROFILE_TOGGLED, {
       is_profile_open: a,
-      has_images: !!(null !== (r = null == d ? void 0 : null === (t = d.assets) || void 0 === t ? void 0 : t.large_image) && void 0 !== r ? r : null == d ? void 0 : null === (n = d.assets) || void 0 === n ? void 0 : n.small_image),
+      has_images: !!(null != (r = null == d || null == (t = d.assets) ? void 0 : t.large_image) ? r : null == d || null == (n = d.assets) ? void 0 : n.small_image),
       is_friend: l.Z.isFriend(c),
       viewed_profile_user_id: c,
       profile_has_nitro_customization: null == i ? void 0 : i.hasPremiumCustomization(),

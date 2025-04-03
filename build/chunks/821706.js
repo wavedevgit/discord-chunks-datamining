@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PE: () => v,
-  l: () => y,
+  PE: () => y,
+  l: () => v,
   pM: () => E
 });
 var r = n(200651),
@@ -119,7 +119,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     user: t,
     relationshipType: n,
@@ -152,7 +152,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     user: t,
     gameFriends: n,

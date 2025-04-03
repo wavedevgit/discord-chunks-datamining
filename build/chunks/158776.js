@@ -28,8 +28,8 @@ let m = Object.freeze([]),
   g = {},
   E = {},
   b = {},
-  v = {},
   y = {},
+  v = {},
   O = {};
 
 function I(e, t) {
@@ -62,7 +62,7 @@ function A(e, t) {
 
 function C(e, t) {
   var n, r;
-  return (null !== (n = t.created_at) && void 0 !== n ? n : 0) - (null !== (r = e.created_at) && void 0 !== r ? r : 0)
+  return (null != (n = t.created_at) ? n : 0) - (null != (r = e.created_at) ? r : 0)
 }
 
 function R(e, t) {
@@ -70,19 +70,19 @@ function R(e, t) {
 }
 
 function P(e) {
-  if (delete E[e], delete b[e], delete v[e], delete y[e], null == g[e]) return;
+  if (delete E[e], delete b[e], delete y[e], delete v[e], null == g[e]) return;
   let t = s().sortBy(g[e], e => -e.timestamp),
     [n] = t;
-  n.status !== p.Skl.OFFLINE ? (E[e] = n.status, b[e] = n.activities, v[e] = w(Object.values(t).flatMap(e => {
+  n.status !== p.Skl.OFFLINE ? (E[e] = n.status, b[e] = n.activities, y[e] = w(Object.values(t).flatMap(e => {
     var t;
-    return null !== (t = e.hiddenActivities) && void 0 !== t ? t : []
-  })), null != n.clientStatus && (y[e] = n.clientStatus)) : s().every(g[e], e => e.status === p.Skl.OFFLINE) && delete g[e]
+    return null != (t = e.hiddenActivities) ? t : []
+  })), null != n.clientStatus && (v[e] = n.clientStatus)) : s().every(g[e], e => e.status === p.Skl.OFFLINE) && delete g[e]
 }
 
 function w(e) {
   return 0 === e.length ? e : [...new Map([...e].reverse().map(e => {
     var t;
-    return ["".concat(e.application_id, ":").concat(null === (t = e.party) || void 0 === t ? void 0 : t.id), e]
+    return ["".concat(e.application_id, ":").concat(null == (t = e.party) ? void 0 : t.id), e]
   })).values()]
 }
 
@@ -90,7 +90,7 @@ function D(e) {
   let t = g[e];
   if (null == t) return;
   let n = s().maxBy(Object.values(t), e => e.timestamp);
-  n.status !== p.Skl.OFFLINE && (E[e] = n.status, b[e] = n.activities, v[e] = n.hiddenActivities, null != n.clientStatus && (y[e] = n.clientStatus))
+  n.status !== p.Skl.OFFLINE && (E[e] = n.status, b[e] = n.activities, y[e] = n.hiddenActivities, null != n.clientStatus && (v[e] = n.clientStatus))
 }
 
 function L(e) {
@@ -188,9 +188,9 @@ function U(e) {
     [r]: E[r]
   }, b = {
     [r]: b[r]
-  }, v = {
-    [r]: v[r]
   }, y = {
+    [r]: y[r]
+  }, v = {
     [r]: {}
   };
   let i = new Set,
@@ -238,7 +238,7 @@ function G(e) {
   let {
     presences: t
   } = e;
-  g = t.presencesForGuilds, E = t.statuses, b = t.activities, v = t.hiddenActivities, O = t.activityMetadata
+  g = t.presencesForGuilds, E = t.statuses, b = t.activities, y = t.hiddenActivities, O = t.activityMetadata
 }
 
 function B(e) {
@@ -362,8 +362,8 @@ function Y(e) {
 
 function K(e) {
   let t = f.default.getId();
-  if (E[t] === e.status && b[t] === e.activities && v[t] === e.hiddenActivities) return !1;
-  E[t] = e.status, b[t] = [...e.activities].sort(R), v[t] = [...e.hiddenActivities].sort(R), delete O[t]
+  if (E[t] === e.status && b[t] === e.activities && y[t] === e.hiddenActivities) return !1;
+  E[t] = e.status, b[t] = [...e.activities].sort(R), y[t] = [...e.hiddenActivities].sort(R), delete O[t]
 }
 
 function z(e) {
@@ -386,15 +386,15 @@ class q extends(r = l.ZP.Store) {
       i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : p.Skl.OFFLINE,
       o = _.default.getUser(e);
     if (null != o && o.hasFlag(p.xW$.BOT_HTTP_INTERACTIONS) && (i = p.Skl.UNKNOWN), null == o ? void 0 : o.isClyde()) return p.Skl.ONLINE;
-    if (null == r) return null !== (t = E[e]) && void 0 !== t ? t : i;
+    if (null == r) return null != (t = E[e]) ? t : i;
     let a = I(e, r);
-    return null !== (n = null == a ? void 0 : a.status) && void 0 !== n ? n : i
+    return null != (n = null == a ? void 0 : a.status) ? n : i
   }
   getActivities(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
     if (null == t) {
       var n;
-      return null !== (n = b[e]) && void 0 !== n ? n : m
+      return null != (n = b[e]) ? n : m
     }
     let r = I(e, t);
     return null == r || null == r.activities ? m : r.activities
@@ -402,7 +402,7 @@ class q extends(r = l.ZP.Store) {
   getHiddenActivities(e) {
     var t, n, r;
     let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-    return null == i ? null !== (n = v[e]) && void 0 !== n ? n : m : null !== (r = null === (t = I(e, i)) || void 0 === t ? void 0 : t.hiddenActivities) && void 0 !== r ? r : m
+    return null == i ? null != (n = y[e]) ? n : m : null != (r = null == (t = I(e, i)) ? void 0 : t.hiddenActivities) ? r : m
   }
   getPrimaryActivity(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
@@ -435,20 +435,20 @@ class q extends(r = l.ZP.Store) {
     return d.default.keys(b)
   }
   isMobileOnline(e) {
-    let t = y[e];
+    let t = v[e];
     return null != t && t[p.X5t.MOBILE] === p.Skl.ONLINE && t[p.X5t.DESKTOP] !== p.Skl.ONLINE
   }
   getClientStatus(e) {
-    return y[e]
+    return v[e]
   }
   getState() {
     return {
       presencesForGuilds: g,
       statuses: E,
       activities: b,
-      hiddenActivities: v,
+      hiddenActivities: y,
       activityMetadata: O,
-      clientStatuses: y
+      clientStatuses: v
     }
   }
 }

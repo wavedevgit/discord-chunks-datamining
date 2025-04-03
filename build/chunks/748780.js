@@ -3,8 +3,8 @@
 n.d(t, {
   Z: () => N
 }), n(301563), n(653041), n(978209);
-var r = n(371193),
-  i = n(501501),
+var r = n(96758),
+  i = n(776465),
   o = n.n(i),
   a = n(78650),
   s = n.n(a),
@@ -83,7 +83,7 @@ function b(e) {
   return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(m).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   if (e.setNativeProps) e.setNativeProps(t);
   else {
     if (!e.nodeType || void 0 === e.setAttribute) return !1;
@@ -91,7 +91,7 @@ function v(e, t, n) {
   }
 }
 
-function y(e) {
+function v(e) {
   return e.transform = e.transform || [], e.transform.push({
     translateZ: 0
   }), e
@@ -102,30 +102,35 @@ function O(e, t, n) {
 }
 
 function I(e, t) {
-  let n;
-  let {
-    toValueMin: i,
-    toValueMax: o,
-    tension: a = 0,
-    friction: s = 0,
-    loop: l,
-    reverse: c,
-    invert: u,
-    callback: f,
-    type: h = "spring",
-    shouldLoop: m,
-    durationMin: g,
-    durationMax: E
-  } = t, b = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]), v = e._value, y = O(t.duration, g, E), S = O(t.toValue, i, o), T = r[h](e, _(d({}, b), {
-    toValue: S,
-    tension: a,
-    friction: s,
-    duration: y
-  })), N = T;
+  let n, {
+      toValueMin: i,
+      toValueMax: o,
+      tension: a = 0,
+      friction: s = 0,
+      loop: l,
+      reverse: c,
+      invert: u,
+      callback: f,
+      type: h = "spring",
+      shouldLoop: m,
+      durationMin: g,
+      durationMax: E
+    } = t,
+    b = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]),
+    y = e._value,
+    v = O(t.duration, g, E),
+    S = O(t.toValue, i, o),
+    T = r[h](e, _(d({}, b), {
+      toValue: S,
+      tension: a,
+      friction: s,
+      duration: v
+    })),
+    N = T;
   if (c || u) {
     let i = O(t.duration, g, E);
     n = r[h](e, _(d({}, b), {
-      toValue: c ? v : -S,
+      toValue: c ? y : -S,
       tension: a,
       friction: s,
       duration: i
@@ -143,13 +148,13 @@ function S(e) {
     outputRange: n
   })
 }
-r.inject.ApplyAnimatedValues(v, e => e);
+r.inject.ApplyAnimatedValues(y, e => e);
 let T = {
     CLAMP: "clamp"
   },
   N = _(d({}, r), {
     Easing: o(),
-    accelerate: y,
+    accelerate: v,
     animate: I,
     interpolate: S,
     Extrapolate: T,

@@ -52,12 +52,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = "scientist:triggered",
+let v = "scientist:triggered",
   O = "exerimentOverrides",
   I = "userExperimentOverrides",
   S = "guildExperimentOverrides",
@@ -96,7 +96,7 @@ function V(e, t) {
 
 function Z(e) {
   var t;
-  return ((null !== (t = e.flags) && void 0 !== t ? t : 0) & m.xW$.STAFF) === m.xW$.STAFF || null != e.personal_connection_id
+  return ((null != (t = e.flags) ? t : 0) & m.xW$.STAFF) === m.xW$.STAFF || null != e.personal_connection_id
 }
 
 function H(e, t, n, r) {
@@ -173,7 +173,7 @@ function Q(e) {
     null != o && (e.context_guild_id = o.guildId);
     let f = u ? m.rMx.EXPERIMENT_USER_TRIGGERED_FALLBACK : m.rMx.EXPERIMENT_USER_TRIGGERED;
     if (c) {
-      let t = v(E({}, e), {
+      let t = y(E({}, e), {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
@@ -207,7 +207,7 @@ function Q(e) {
         holdout_bucket: n.holdoutBucket
       };
     if (c) {
-      let e = v(E({}, o), {
+      let e = y(E({}, o), {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
@@ -283,7 +283,7 @@ function ee(e) {
       guildExperiments: o
     } = e,
     a = "CONNECTION_OPEN" === e.type ? "ready_payload" : "logged_out_api",
-    s = "sessionId" in e ? e.sessionId : null !== (t = d.default.getSessionId()) && void 0 !== t ? t : "",
+    s = "sessionId" in e ? e.sessionId : null != (t = d.default.getSessionId()) ? t : "",
     l = d.default.getFingerprint();
   r && et({
     rawUserExperiments: i,
@@ -400,9 +400,9 @@ function ei(e, t) {
     hashResult: -1,
     triggerDebuggingEnabled: c
   };
-  let u = G("".concat(null !== (n = o.hashKey) && void 0 !== n ? n : t, ":").concat(e)) % er,
+  let u = G("".concat(null != (n = o.hashKey) ? n : t, ":").concat(e)) % er,
     d = null;
-  for (let t of null !== (r = o.overridesFormatted) && void 0 !== r ? r : [])
+  for (let t of null != (r = o.overridesFormatted) ? r : [])
     if (null !== (d = en(e, t, u))) return {
       type: h.xY.GUILD,
       guildId: e,
@@ -443,7 +443,7 @@ function eo(e) {
     var n;
     let i = e[r];
     for (let e of (t[r] = E({}, i), t[r].populations)) e.filters = e.rawFilterData.map(X);
-    for (let e of null !== (n = t[r].overridesFormatted) && void 0 !== n ? n : [])
+    for (let e of null != (n = t[r].overridesFormatted) ? n : [])
       for (let t of e) t.filters = t.rawFilterData.map(X)
   }
   return t
@@ -454,7 +454,7 @@ function ea(e) {
     serializedExperimentStore: t,
     user: n
   } = e;
-  !j && Z(n) && (j = !0), A = t.hasLoadedExperiments, C = t.trackedExposureExperiments, D = t.loadedUserExperiments, M = t.userExperimentOverrides, k = t.guildExperimentOverrides, w = v(E({}, w), {
+  !j && Z(n) && (j = !0), A = t.hasLoadedExperiments, C = t.trackedExposureExperiments, D = t.loadedUserExperiments, M = t.userExperimentOverrides, k = t.guildExperimentOverrides, w = y(E({}, w), {
     source: t.assignmentSource,
     sessionId: t.assignmentSessionId,
     fingerprint: t.assignmentFingerprint
@@ -469,17 +469,17 @@ function el(e) {
   let {
     isSwitchingAccount: t
   } = e;
-  s.K.remove(y), t || (s.K.remove(O), s.K.remove(I), s.K.remove(S), M = {}, k = {}), D = {}, w = v(E({}, w), {
+  s.K.remove(v), t || (s.K.remove(O), s.K.remove(I), s.K.remove(S), M = {}, k = {}), D = {}, w = y(E({}, w), {
     rawUserExperiments: []
   }), C = {}, A = !1
 }
 
 function ec() {
-  A = !1, C = {}, L = {}, s.K.remove(y)
+  A = !1, C = {}, L = {}, s.K.remove(v)
 }
 
 function eu() {
-  let e = s.K.get(y);
+  let e = s.K.get(v);
   if (null == e || e.v !== T) return {};
   let t = e.e,
     n = Date.now(),
@@ -490,7 +490,7 @@ function eu() {
 
 function ed() {
   var e, t, n;
-  let r = [null !== (e = s.K.get(O)) && void 0 !== e ? e : {}, null !== (t = s.K.get(I)) && void 0 !== t ? t : {}, null !== (n = s.K.get(S)) && void 0 !== n ? n : {}];
+  let r = [null != (e = s.K.get(O)) ? e : {}, null != (t = s.K.get(I)) ? t : {}, null != (n = s.K.get(S)) ? n : {}];
   M = {}, k = {};
   let o = !i().isEmpty(r[0]);
   for (let e of r)
@@ -539,7 +539,7 @@ function ef() {
 
 function e_(e) {
   try {
-    s.K.set(y, {
+    s.K.set(v, {
       v: T,
       e: e
     })
@@ -576,9 +576,9 @@ function eh(e) {
     experimentBucket: r,
     experimentType: i,
     skipCleanup: o
-  } = e, a = null != i ? i : null === (t = P[n]) || void 0 === t ? void 0 : t.type;
+  } = e, a = null != i ? i : null == (t = P[n]) ? void 0 : t.type;
   if (null == a) return !1;
-  if (null == r ? (M = E({}, M), delete M[n], k = E({}, k), delete k[n]) : "user" === a ? M = v(E({}, M), {
+  if (null == r ? (M = E({}, M), delete M[n], k = E({}, k), delete k[n]) : "user" === a ? M = y(E({}, M), {
       [n]: {
         type: a,
         revision: 1,
@@ -586,7 +586,7 @@ function eh(e) {
         bucket: r,
         override: !0
       }
-    }) : k = v(E({}, k), {
+    }) : k = y(E({}, k), {
       [n]: {
         type: a,
         revision: 1,
@@ -685,7 +685,7 @@ class eg extends f.Z {
   }
   getExperimentOverrideDescriptor(e) {
     var t;
-    return j ? null !== (t = M[e]) && void 0 !== t ? t : k[e] : null
+    return j ? null != (t = M[e]) ? t : k[e] : null
   }
   getAllExperimentAssignments() {
     let e = {},

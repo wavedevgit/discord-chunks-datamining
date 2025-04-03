@@ -18,7 +18,7 @@ var r = n(200651),
   _ = n(506071),
   p = n(719247),
   h = n(561308),
-  m = n(837897);
+  m = n(419732);
 
 function g(e) {
   let [t, n] = i.useState(Date.now()), r = (0, _.n)(), o = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), a = !r || o && !e;
@@ -68,7 +68,7 @@ let E = e => {
       hovered: a = !1,
       bold: l = !1,
       scaleFontToUserSetting: u = !1
-    } = e, f = (0, h.Jg)(i), _ = (0, s.e7)([d.default], () => d.default.locale), m = (0, s.e7)([p.Z], () => p.Z.getMatchingActivity(i)), g = null !== (n = null == m ? void 0 : null === (t = m.timestamps) || void 0 === t ? void 0 : t.start) && void 0 !== n ? n : null == m ? void 0 : m.created_at;
+    } = e, f = (0, h.Jg)(i), _ = (0, s.e7)([d.default], () => d.default.locale), m = (0, s.e7)([p.Z], () => p.Z.getMatchingActivity(i)), g = null != (n = null == m || null == (t = m.timestamps) ? void 0 : t.start) ? n : null == m ? void 0 : m.created_at;
     return null != g ? (0, r.jsx)(E, {
       entry: {
         start: g

@@ -45,25 +45,24 @@ var r = n(728804),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   h = {},
-  m = function e(t, n, o, a, s, c, d, f, m, g, E, b, v, y, O, I) {
+  m = function e(t, n, o, a, s, c, d, f, m, g, E, b, y, v, O, I) {
     for (var S, T = t, N = I, A = 0, C = !1; void 0 !== (N = N.get(h)) && !C;) {
       var R = N.get(t);
-      if (A += 1, void 0 !== R) {
+      if (A += 1, void 0 !== R)
         if (R === A) throw RangeError("Cyclic object value");
-        C = !0
-      }
+        else C = !0;
       void 0 === N.get(h) && (A = 0)
     }
     if ("function" == typeof f ? T = f(n, T) : T instanceof Date ? T = E(T) : "comma" === o && l(T) && (T = i.maybeMap(T, function(e) {
         return e instanceof Date ? E(e) : e
       })), null === T) {
-      if (s) return d && !y ? d(n, _.encoder, O, "key", b) : n;
+      if (s) return d && !v ? d(n, _.encoder, O, "key", b) : n;
       T = ""
     }
-    if (p(T) || i.isBuffer(T)) return d ? [v(y ? n : d(n, _.encoder, O, "key", b)) + "=" + v(d(T, _.encoder, O, "value", b))] : [v(n) + "=" + v(String(T))];
+    if (p(T) || i.isBuffer(T)) return d ? [y(v ? n : d(n, _.encoder, O, "key", b)) + "=" + y(d(T, _.encoder, O, "value", b))] : [y(n) + "=" + y(String(T))];
     var P = [];
     if (void 0 === T) return P;
-    if ("comma" === o && l(T)) y && d && (T = i.maybeMap(T, d)), S = [{
+    if ("comma" === o && l(T)) v && d && (T = i.maybeMap(T, d)), S = [{
       value: T.length > 0 ? T.join(",") || null : void 0
     }];
     else if (l(f)) S = f;
@@ -78,7 +77,7 @@ var r = n(728804),
         var k = l(T) ? "function" == typeof o ? o(D, x) : D : D + (g ? "." + x : "[" + x + "]");
         I.set(t, A);
         var j = r();
-        j.set(h, I), u(P, e(M, k, o, a, s, c, "comma" === o && y && l(T) ? null : d, f, m, g, E, b, v, y, O, j))
+        j.set(h, I), u(P, e(M, k, o, a, s, c, "comma" === o && v && l(T) ? null : d, f, m, g, E, b, y, v, O, j))
       }
     }
     return P
@@ -126,9 +125,9 @@ e.exports = function(e, t) {
   n || (n = Object.keys(a)), c.sort && n.sort(c.sort);
   for (var p = r(), h = 0; h < n.length; ++h) {
     var E = n[h];
-    (!c.skipNulls || null !== a[E]) && u(d, m(a[E], E, f, _, c.strictNullHandling, c.skipNulls, c.encode ? c.encoder : null, c.filter, c.sort, c.allowDots, c.serializeDate, c.format, c.formatter, c.encodeValuesOnly, c.charset, p))
+    c.skipNulls && null === a[E] || u(d, m(a[E], E, f, _, c.strictNullHandling, c.skipNulls, c.encode ? c.encoder : null, c.filter, c.sort, c.allowDots, c.serializeDate, c.format, c.formatter, c.encodeValuesOnly, c.charset, p))
   }
   var b = d.join(c.delimiter),
-    v = !0 === c.addQueryPrefix ? "?" : "";
-  return c.charsetSentinel && ("iso-8859-1" === c.charset ? v += "utf8=%26%2310003%3B&" : v += "utf8=%E2%9C%93&"), b.length > 0 ? v + b : ""
+    y = !0 === c.addQueryPrefix ? "?" : "";
+  return c.charsetSentinel && ("iso-8859-1" === c.charset ? y += "utf8=%26%2310003%3B&" : y += "utf8=%E2%9C%93&"), b.length > 0 ? y + b : ""
 }

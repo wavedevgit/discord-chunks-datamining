@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "OCaml",
     aliases: ["ml"],
@@ -43,4 +43,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

@@ -8,7 +8,7 @@ var r = n(200651),
   o = n(539907),
   a = n(743236),
   s = n(218867),
-  l = n(428763);
+  l = n(906944);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,19 +76,19 @@ function h(e) {
     rowHeight: p,
     onScroll: h,
     listClassName: m
-  } = e, g = i.useRef(null), E = i.useRef(null), b = i.useRef(null), v = i.useRef(null), {
-    isUsingKeyboardNavigation: y,
+  } = e, g = i.useRef(null), E = i.useRef(null), b = i.useRef(null), y = i.useRef(null), {
+    isUsingKeyboardNavigation: v,
     focusIndex: O
   } = c, I = _(c, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
-    n && ((0, a.F)(g), null === (e = b.current) || void 0 === e || e.focus())
+    n && ((0, a.F)(g), null == (e = b.current) || e.focus())
   }, [n]), i.useEffect(() => {
-    if (n && O >= 0 && y) {
+    if (n && O >= 0 && v) {
       var e;
-      null === (e = v.current) || void 0 === e || e.scrollRowIntoView(O)
+      null == (e = y.current) || e.scrollRowIntoView(O)
     }
-  }, [n, y, O]);
+  }, [n, v, O]);
   let S = i.useCallback(e => d[e], [d]);
   return (0, r.jsxs)("div", {
     ref: g,
@@ -110,7 +110,7 @@ function h(e) {
         }, I), {
           ref: b,
           children: (0, r.jsx)(s.Z, {
-            ref: v,
+            ref: y,
             className: m,
             listPadding: [6, 0, 6, 8],
             onScroll: h,

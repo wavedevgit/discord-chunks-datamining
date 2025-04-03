@@ -54,15 +54,15 @@ function E(e, t) {
   }), e
 }
 let b = {},
-  v = {},
-  y = !1,
+  y = {},
+  v = !1,
   O = [];
 
 function I(e) {
-  y = !0;
-  let t = v;
-  v = {}, b = {}, r = 0, e.guilds.forEach(e => {
-    r++, v[e.id] = c.wD(e, t[e.id]), b[e.id] = e.roles instanceof Array ? u.C5(e.id, e.roles) : e.roles
+  v = !0;
+  let t = y;
+  y = {}, b = {}, r = 0, e.guilds.forEach(e => {
+    r++, y[e.id] = c.wD(e, t[e.id]), b[e.id] = e.roles instanceof Array ? u.C5(e.id, e.roles) : e.roles
   });
   let n = !1;
   if (O.length !== e.geoRestrictedGuilds.length) n = !0;
@@ -77,15 +77,15 @@ function I(e) {
 function S(e) {
   for (let n of e.guilds) {
     var t;
-    let e = v[n.id];
+    let e = y[n.id];
     if (null == e || "unavailable" === n.data_mode) return;
-    v[n.id] = c.sp(n, e), b[n.id] = "partial" === n.data_mode ? c.EO(n.id, null !== (t = b[n.id]) && void 0 !== t ? t : j, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : u.C5(n.id, n.roles)
+    y[n.id] = c.sp(n, e), b[n.id] = "partial" === n.data_mode ? c.EO(n.id, null != (t = b[n.id]) ? t : j, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : u.C5(n.id, n.roles)
   }
-  r = Object.keys(v).length
+  r = Object.keys(y).length
 }
 
 function T(e) {
-  for (let t of (v = {}, b = {}, r = 0, e)) r++, v[t.id] = c.cL(t), b[t.id] = t.roles
+  for (let t of (y = {}, b = {}, r = 0, e)) r++, y[t.id] = c.cL(t), b[t.id] = t.roles
 }
 
 function N(e) {
@@ -99,21 +99,21 @@ function A(e) {
 
 function C(e) {
   var t;
-  v = {}, b = {}, r = 0, null === (t = e.guilds) || void 0 === t || t.forEach(e => {
-    r++, v[e.id] = new l.ZP(e)
+  y = {}, b = {}, r = 0, null == (t = e.guilds) || t.forEach(e => {
+    r++, y[e.id] = new l.ZP(e)
   }), b = e.allGuildsRoles
 }
 
 function R(e) {
-  let t = c.wD(e.guild, v[e.guild.id]);
-  null == v[t.id] && r++, v = E(m({}, v), {
+  let t = c.wD(e.guild, y[e.guild.id]);
+  null == y[t.id] && r++, y = E(m({}, y), {
     [t.id]: t
   }), b[t.id] = e.guild.roles instanceof Array ? u.C5(t.id, e.guild.roles) : e.guild.roles
 }
 
 function P(e) {
-  let t = c.di(e.guild, v[e.guild.id]);
-  null == v[t.id] && r++, v = E(m({}, v), {
+  let t = c.di(e.guild, y[e.guild.id]);
+  null == y[t.id] && r++, y = E(m({}, y), {
     [t.id]: t
   }), b[t.id] = u.C5(t.id, e.guild.roles)
 }
@@ -136,8 +136,8 @@ function D(e) {
     O.splice(n, 1), O = [...O];
     return
   }
-  if (null == v[t.id] || t.unavailable) return !1;
-  v = m({}, v), delete v[t.id], b[t.id] = void 0, r--
+  if (null == y[t.id] || t.unavailable) return !1;
+  y = m({}, y), delete y[t.id], b[t.id] = void 0, r--
 }
 
 function L(e) {
@@ -165,11 +165,11 @@ function M(e) {
     guildId: t,
     joinedAt: n,
     user: r
-  } = e, i = f.default.getId(), o = v[t];
+  } = e, i = f.default.getId(), o = y[t];
   if (i !== r.id || null == o) return !1;
   let a = "string" == typeof n ? new Date(n) : n;
   if (a === o.joinedAt || null == a) return !1;
-  v = E(m({}, v), {
+  y = E(m({}, y), {
     [t]: o.updateJoinedAt(a)
   })
 }
@@ -180,19 +180,19 @@ function k() {
 let j = Object.freeze({});
 class U extends(i = o.ZP.Store) {
   getGuild(e) {
-    return null == e ? void 0 : e === _.I_8 ? p.g : v[e]
+    if (null != e) return e === _.I_8 ? p.g : y[e]
   }
   getGuilds() {
-    return v
+    return y
   }
   getGuildIds() {
-    return d.default.keys(v)
+    return d.default.keys(y)
   }
   getGuildCount() {
     return r
   }
   isLoaded() {
-    return y
+    return v
   }
   getGeoRestrictedGuilds() {
     return O
@@ -202,11 +202,11 @@ class U extends(i = o.ZP.Store) {
   }
   getRoles(e) {
     var t;
-    return null !== (t = b[e]) && void 0 !== t ? t : j
+    return null != (t = b[e]) ? t : j
   }
   getRole(e, t) {
     var n;
-    return null === (n = b[e]) || void 0 === n ? void 0 : n[t]
+    return null == (n = b[e]) ? void 0 : n[t]
   }
 }
 h(U, "displayName", "GuildStore");

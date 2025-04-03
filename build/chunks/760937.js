@@ -1,7 +1,6 @@
 /** Chunk was on web.js **/
 var r = n(565580);
-
-function i(e, t) {
+e.exports = function(e, t) {
   var n = -1,
     i = e.length,
     o = i - 1;
@@ -12,4 +11,3 @@ function i(e, t) {
   }
   return e.length = t, e
 }
-e.exports = i

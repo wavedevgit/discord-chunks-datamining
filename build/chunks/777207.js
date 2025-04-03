@@ -10,8 +10,8 @@ var r = n(200651),
   s = n(696689),
   l = n.n(s),
   c = n(692547),
-  u = n(589751),
-  d = n(929621);
+  u = n(39300),
+  d = n(954292);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,9 +80,9 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
         lineClamp: p,
         color: g,
         tabularNumbers: b = !1,
-        scaleFontToUserSetting: v = !1
+        scaleFontToUserSetting: y = !1
       } = e,
-      y = m(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
+      v = m(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
     let O = s,
       I = "",
       S = {};
@@ -100,20 +100,20 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
         n = "white";
         break;
       default:
-        n = null === (i = c.Z.colors[E[g]]) || void 0 === i ? void 0 : i.css
+        n = null == (i = c.Z.colors[E[g]]) ? void 0 : i.css
     }
     let T = _({
       color: n
-    }, S, y.style);
+    }, S, v.style);
     return (0, r.jsx)(O, h(_({
       ref: t,
       className: a()({
         [u.defaultColor]: void 0 === g,
         [u.selectable]: l,
         [u.tabularNumbers]: b,
-        [d.fontScaling]: v
+        [d.fontScaling]: y
       }, I, d[o], f)
-    }, y), {
+    }, v), {
       style: Object.values(T).filter(Boolean).length > 0 ? T : void 0,
       "data-text-variant": o
     }))

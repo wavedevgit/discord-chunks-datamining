@@ -31,7 +31,7 @@ function f(e) {
 
 function _(e) {
   var t;
-  null != e && (u = null !== (t = (0, r.Zz)(e)) && void 0 !== t ? t : (0, r.K4)())
+  null != e && (u = null != (t = (0, r.Zz)(e)) ? t : (0, r.K4)())
 }
 
 function p(e) {
@@ -75,23 +75,23 @@ function b(e) {
   t.forEach(e => s.add(e))
 }
 
-function v(e) {
+function y(e) {
   let {
     countryCode: t
   } = e;
   _(t)
 }
-class y extends o.Z {
+class v extends o.Z {
   initialize() {
     this.waitFor(i.Z)
   }
   loadCache() {
-    let e = this.readSnapshot(y.LATEST_SNAPSHOT_VERSION);
+    let e = this.readSnapshot(v.LATEST_SNAPSHOT_VERSION);
     null != e && (s = new Set(e))
   }
   takeSnapshot() {
     return {
-      version: y.LATEST_SNAPSHOT_VERSION,
+      version: v.LATEST_SNAPSHOT_VERSION,
       data: Array.from(s)
     }
   }
@@ -122,10 +122,10 @@ class y extends o.Z {
       CHANNEL_CREATE: m,
       CHANNEL_UPDATES: g,
       CHANNEL_DELETE: E,
-      SET_LOCATION_METADATA: v,
+      SET_LOCATION_METADATA: y,
       MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: h
     })
   }
 }
-a(y, "displayName", "MessageRequestStore"), a(y, "LATEST_SNAPSHOT_VERSION", 1);
-let O = new y
+a(v, "displayName", "MessageRequestStore"), a(v, "LATEST_SNAPSHOT_VERSION", 1);
+let O = new v

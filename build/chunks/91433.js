@@ -15,7 +15,7 @@ var r = n(200651),
   f = n(5192),
   _ = n(785717),
   p = n(388032),
-  h = n(454715);
+  h = n(185589);
 
 function m(e) {
   let {
@@ -26,8 +26,8 @@ function m(e) {
     friendToken: g,
     isGameRelationship: E = !1,
     className: b
-  } = e, v = f.ZP.getName(n, o, t), {
-    trackUserProfileAction: y
+  } = e, y = f.ZP.getName(n, o, t), {
+    trackUserProfileAction: v
   } = (0, _.KZ)(), {
     newestAnalyticsLocation: O
   } = (0, l.ZP)(), {
@@ -40,20 +40,20 @@ function m(e) {
     location: O,
     friendToken: g
   }), T = i.useCallback(() => {
-    I(), y({
+    I(), v({
       action: E ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [I, E, y]), N = i.useCallback(() => {
-    S(), y({
+  }, [I, E, v]), N = i.useCallback(() => {
+    S(), v({
       action: E ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [S, E, y]), A = null != m, C = (0, c.q)(m);
+  }, [S, E, v]), A = null != m, C = (0, c.q)(m);
   return A && null == C ? null : (0, r.jsxs)("div", {
     className: a()(h.container, b),
     children: [A ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.NW.format(E ? p.t.syHjLC : p.t.V15uUF, {
-        username: v,
+        username: y,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: h.gameIcon,
           game: C,
@@ -64,7 +64,7 @@ function m(e) {
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.NW.format(p.t.uIomX1, {
-        username: v
+        username: y
       })
     }), (0, r.jsxs)("div", {
       className: h.buttonContainer,

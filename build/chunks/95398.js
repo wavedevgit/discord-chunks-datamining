@@ -17,7 +17,7 @@ var r = n(200651),
   _ = n(169525),
   p = n(823379),
   h = n(388032),
-  m = n(201935);
+  m = n(703803);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,14 +52,14 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var y = function(e) {
+var v = function(e) {
   return e.TEXT = "text", e.ATTACHMENT = "attachment", e.EMBED = "embed", e
-}(y || {});
+}(v || {});
 let O = e => {
     let {
       className: t
@@ -378,10 +378,7 @@ class A extends i.PureComponent {
       } = this.props;
       null != n && n()
     }), g(this, "handleToggleObscurity", e => {
-      if (e.stopPropagation(), e.nativeEvent.stopPropagation(), this.props.shouldAgeVerify) {
-        c.Z.showAgeVerificationGetStartedModal(u.cU.OBSCURED_MEDIA);
-        return
-      }
+      if (e.stopPropagation(), e.nativeEvent.stopPropagation(), this.props.shouldAgeVerify) return void c.Z.showAgeVerificationGetStartedModal(u.cU.OBSCURED_MEDIA);
       let {
         onToggleObscurity: t
       } = this.props;
@@ -401,10 +398,10 @@ class A extends i.PureComponent {
 let C = e => {
   let t = (0, f.m8)() && e.reason === _.wk.EXPLICIT_CONTENT,
     n = (0, d.Jm)();
-  return (0, r.jsx)(A, v(E({}, e), {
+  return (0, r.jsx)(A, y(E({}, e), {
     shouldAgeVerify: t,
     isVerifiedTeen: n
   }))
 };
-C.Types = y, C.Reasons = _.wk;
+C.Types = v, C.Reasons = _.wk;
 let R = C

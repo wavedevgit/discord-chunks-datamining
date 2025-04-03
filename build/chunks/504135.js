@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(525220),
   f = n(481060),
   _ = n(939350),
-  p = n(428763);
+  p = n(906944);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,8 +63,8 @@ function b(e) {
     iconLeft: h,
     iconLeftSize: g = "md",
     hint: b,
-    subtext: v,
-    subtextLineClamp: y,
+    subtext: y,
+    subtextLineClamp: v,
     hasSubmenu: O,
     disabled: I,
     isFocused: S,
@@ -113,13 +113,13 @@ function b(e) {
       }))
     }), (0, r.jsxs)("div", {
       className: p.label,
-      children: [(0, l.I)(n, e), null != v && (0, r.jsx)(f.Text, {
+      children: [(0, l.I)(n, e), null != y && (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         className: a()(p.subtext, {
-          [p.subtextLineClamp]: null != y
+          [p.subtextLineClamp]: null != v
         }),
-        lineClamp: y,
-        children: v
+        lineClamp: v,
+        children: y
       })]
     }), null != b && (0, r.jsx)("div", {
       className: p.hintContainer,

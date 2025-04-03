@@ -4,7 +4,7 @@ n.d(t, {
   Lx: () => S,
   kq: () => I,
   vy: () => O,
-  yX: () => v
+  yX: () => y
 });
 var r = n(392711),
   i = n(544891),
@@ -23,11 +23,11 @@ var r = n(392711),
   g = n(353368),
   E = n(981631),
   b = n(710111),
-  v = function(e) {
+  y = function(e) {
     return e.EMOJI_PICKER = "emoji_picker", e.EFFECT_BAR = "effect_bar", e
   }({});
 
-function y(e) {
+function v(e) {
   let t = new AbortController,
     n = (0, r.throttle)(n => {
       d.Z.getVoiceChannelId() !== e && t.abort()
@@ -43,7 +43,7 @@ function O(e, t, n) {
   let {
     abortController: o,
     onRequestProgress: s
-  } = y(e), l = null !== (r = p.Z.getState().animationType) && void 0 !== r ? r : g.q.BASIC, d = {
+  } = v(e), l = null != (r = p.Z.getState().animationType) ? r : g.q.BASIC, d = {
     animation_type: l,
     animation_id: (0, m.Iu)(l, m.v)
   };
@@ -60,15 +60,15 @@ function O(e, t, n) {
 
 function I(e, t, n, r) {
   var o, a;
-  let s = l.ZP.getCustomEmojiById(null !== (o = t.emojiId) && void 0 !== o ? o : ""),
+  let s = l.ZP.getCustomEmojiById(null != (o = t.emojiId) ? o : ""),
     {
       abortController: d,
       onRequestProgress: f
-    } = y(e),
+    } = v(e),
     _ = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
-      emoji_name: null !== (a = t.emojiName) && void 0 !== a ? a : null == s ? void 0 : s.name
+      emoji_name: null != (a = t.emojiName) ? a : null == s ? void 0 : s.name
     };
   t.guildId !== b.X8 && (_.source_guild_id = t.guildId), i.tn.post({
     url: E.ANM.SEND_SOUNDBOARD_SOUND(e),

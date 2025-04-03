@@ -17,8 +17,8 @@ var r = n(581031),
   g = RangeError,
   E = r(p.exec),
   b = Math.floor,
-  v = String.fromCharCode,
-  y = r("".charCodeAt),
+  y = String.fromCharCode,
+  v = r("".charCodeAt),
   O = r([].join),
   I = r([].push),
   S = r("".replace),
@@ -26,9 +26,9 @@ var r = n(581031),
   N = r("".toLowerCase),
   A = function(e) {
     for (var t = [], n = 0, r = e.length; n < r;) {
-      var i = y(e, n++);
+      var i = v(e, n++);
       if (i >= 55296 && i <= 56319 && n < r) {
-        var o = y(e, n++);
+        var o = v(e, n++);
         (64512 & o) == 56320 ? I(t, ((1023 & i) << 10) + (1023 & o) + 65536) : (I(t, i), n--)
       } else I(t, i)
     }
@@ -48,15 +48,15 @@ var r = n(581031),
       c = d,
       _ = 0,
       p = u;
-    for (t = 0; t < e.length; t++)(n = e[t]) < 128 && I(r, v(n));
+    for (t = 0; t < e.length; t++)(n = e[t]) < 128 && I(r, y(n));
     var m = r.length,
       E = m;
     for (m && I(r, f); E < l;) {
-      var y = i;
-      for (t = 0; t < e.length; t++)(n = e[t]) >= c && n < y && (y = n);
+      var v = i;
+      for (t = 0; t < e.length; t++)(n = e[t]) >= c && n < v && (v = n);
       var S = E + 1;
-      if (y - c > b((i - _) / S)) throw g(h);
-      for (_ += (y - c) * S, c = y, t = 0; t < e.length; t++) {
+      if (v - c > b((i - _) / S)) throw g(h);
+      for (_ += (v - c) * S, c = v, t = 0; t < e.length; t++) {
         if ((n = e[t]) < c && ++_ > i) throw g(h);
         if (n === c) {
           for (var T = _, N = o;;) {
@@ -64,9 +64,9 @@ var r = n(581031),
             if (T < P) break;
             var w = T - P,
               D = o - P;
-            I(r, v(C(P + w % D))), T = b(w / D), N += o
+            I(r, y(C(P + w % D))), T = b(w / D), N += o
           }
-          I(r, v(C(T))), p = R(_, S, E === m), _ = 0, E++
+          I(r, y(C(T))), p = R(_, S, E === m), _ = 0, E++
         }
       }
       _++, c++

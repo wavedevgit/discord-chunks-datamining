@@ -20,8 +20,8 @@ var r = n(348327),
   g = n(944486),
   E = n(358085),
   b = n(998502),
-  v = n(981631),
-  y = n(388032);
+  y = n(981631),
+  v = n(388032);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,7 +44,7 @@ class I extends u.Z {
   constructor(...e) {
     super(...e), O(this, "callbackActions", {
       [b.tS.VIDEO]: () => {
-        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(!1) : (0, p.Z)(() => l.Z.setVideoEnabled(!0), v.IlC.APP)
+        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(!1) : (0, p.Z)(() => l.Z.setVideoEnabled(!0), y.IlC.APP)
       },
       [b.tS.MUTE]: () => l.Z.toggleSelfMute({
         location: "Thumbar"
@@ -54,17 +54,11 @@ class I extends u.Z {
       }),
       [b.tS.DISCONNECT]: () => c.default.disconnect()
     }), O(this, "isSupported", (0, E.isMac)() || (0, E.isWindows)()), O(this, "prevButtons", []), O(this, "buttonClicked", e => {
-      if (!(e.buttonName in this.callbackActions)) {
-        console.error('ThumbarButtonsManager: Unknown callback eventName: "'.concat(e.buttonName, '"'), e);
-        return
-      }
+      if (!(e.buttonName in this.callbackActions)) return void console.error('ThumbarButtonsManager: Unknown callback eventName: "'.concat(e.buttonName, '"'), e);
       this.callbackActions[e.buttonName]()
     }), O(this, "handleViewUpdate", a().debounce(() => {
       let e = g.Z.getVoiceChannelId();
-      if (null == e) {
-        this.setThumbarButtons([]);
-        return
-      }
+      if (null == e) return void this.setThumbarButtons([]);
       let t = m.Z.isSelfMute(),
         n = m.Z.isSelfDeaf(),
         r = m.Z.isVideoEnabled(),
@@ -95,15 +89,15 @@ class I extends u.Z {
       }, {
         name: b.tS.MUTE,
         active: t,
-        tooltip: t ? y.NW.string(y.t.YqAjX1) : y.NW.string(y.t["w4m94+"])
+        tooltip: t ? v.NW.string(v.t.YqAjX1) : v.NW.string(v.t["w4m94+"])
       }, {
         name: b.tS.DEAFEN,
         active: n,
-        tooltip: n ? y.NW.string(y.t["2US87+"]) : y.NW.string(y.t.wjcRFR)
+        tooltip: n ? v.NW.string(v.t["2US87+"]) : v.NW.string(v.t.wjcRFR)
       }, {
         name: b.tS.DISCONNECT,
         active: !0,
-        tooltip: y.NW.string(y.t["6vrfgo"])
+        tooltip: v.NW.string(v.t["6vrfgo"])
       }])
     }, 100))
   }

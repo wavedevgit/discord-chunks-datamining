@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Gg: () => y,
+  Gg: () => v,
   KH: () => E,
   ZP: () => g
 }), n(47120), n(978209), n(301563), n(653041);
@@ -40,14 +40,14 @@ function g(e, t, n) {
 function E(e, t, n) {
   let r = f.bN.areStylesDisabled(e);
   for (let i of f.bN.blocks(e))
-    if (h.has(i[0].type)) r ? v(e, i, !0, null) : b(e, i, t, n);
+    if (h.has(i[0].type)) r ? y(e, i, !0, null) : b(e, i, t, n);
     else {
       let [o, a] = i;
       for (let i = o.children.length - 1; i >= 0; i--) {
         let s = o.children[i];
         if (m.has(s.type)) {
           let o = [s, f.C0.child(a, i)];
-          r ? v(e, o, !0, null) : b(e, o, t, n)
+          r ? y(e, o, !0, null) : b(e, o, t, n)
         }
       }
     }
@@ -55,12 +55,12 @@ function E(e, t, n) {
 
 function b(e, t, n, r) {
   var i;
-  let o = "line" === t[0].type && (null === (i = t[0].codeBlockState) || void 0 === i ? void 0 : i.isInCodeBlock) === !0,
+  let o = "line" === t[0].type && (null == (i = t[0].codeBlockState) ? void 0 : i.isInCodeBlock) === !0,
     a = f.q.markdown(t[0], n);
-  v(e, t, o, a) && (t = f.q.updateElement(e, t), a = f.q.markdown(t[0], n)), o || (y(e, t, r, a) && (t = f.q.updateElement(e, t), a = f.q.markdown(t[0], n)), O(e, t, n, r, a))
+  y(e, t, o, a) && (t = f.q.updateElement(e, t), a = f.q.markdown(t[0], n)), o || (v(e, t, r, a) && (t = f.q.updateElement(e, t), a = f.q.markdown(t[0], n)), O(e, t, n, r, a))
 }
 
-function v(e, t, n, r) {
+function y(e, t, n, r) {
   let [i, o] = t, a = !1;
   for (let t = i.children.length - 1; t >= 0; t--) {
     let s = i.children[t],
@@ -100,13 +100,12 @@ function v(e, t, n, r) {
   return a
 }
 
-function y(e, t, n, r) {
+function v(e, t, n, r) {
   let i = t[1],
     o = !1,
     a = [...r.entries].reverse();
   for (let s = 0; s < a.length; s++) {
-    let l;
-    let u = a[s],
+    let l, u = a[s],
       f = a[s + 1];
     if (null != f && f.text.endsWith("\\") && u.start === f.start + f.text.length) continue;
     switch (u.attributes[0]) {
@@ -220,8 +219,7 @@ function y(e, t, n, r) {
 function O(e, t, n, r, i) {
   let [o, a] = t, l = !1;
   for (let c = o.children.length - 1; c >= 0; c--) {
-    let u;
-    let d = o.children[c];
+    let u, d = o.children[c];
     if (!f.LC.isText(d)) continue;
     let p = f.C0.child(a, c),
       h = [];

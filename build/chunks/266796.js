@@ -23,8 +23,8 @@ if (i && l(_) && (!("description" in p) || void 0 !== _().description)) {
   var g = "Symbol(description detection)" === String(_("description detection")),
     E = a(p.valueOf),
     b = a(p.toString),
-    v = /^Symbol\((.*)\)[^)]+$/,
-    y = a("".replace),
+    y = /^Symbol\((.*)\)[^)]+$/,
+    v = a("".replace),
     O = a("".slice);
   d(p, "description", {
     configurable: !0,
@@ -32,7 +32,7 @@ if (i && l(_) && (!("description" in p) || void 0 !== _().description)) {
       var e = E(this);
       if (s(h, e)) return "";
       var t = b(e),
-        n = g ? O(t, 7, -1) : y(t, v, "$1");
+        n = g ? O(t, 7, -1) : v(t, y, "$1");
       return "" === n ? void 0 : n
     }
   }), r({

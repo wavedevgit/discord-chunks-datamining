@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       $pattern: /[a-zA-Z][a-zA-Z0-9_?]*/,
       keyword: ["if", "then", "else", "do", "while", "until", "for", "loop", "import", "with", "is", "as", "where", "when", "by", "data", "constant", "integer", "real", "text", "name", "boolean", "symbol", "infix", "prefix", "postfix", "block", "tree"],
@@ -52,4 +52,3 @@ function t(e) {
     contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, n, r, i, s, a, o, e.NUMBER_MODE]
   }
 }
-e.exports = t

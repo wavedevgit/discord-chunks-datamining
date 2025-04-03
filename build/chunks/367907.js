@@ -28,8 +28,8 @@ var r = n(392711),
   g = n(158776),
   E = n(19780),
   b = n(306680),
-  v = n(944486),
-  y = n(914010),
+  y = n(944486),
+  v = n(914010),
   O = n(9156),
   I = n(594174),
   S = n(979651),
@@ -88,7 +88,7 @@ function x(e) {
     guild_num_voice_channels: l,
     guild_num_roles: L(r),
     guild_member_num_roles: null != o ? o.roles.length : 0,
-    guild_member_perms: String(null !== (t = m.Z.getGuildPermissions(n)) && void 0 !== t ? t : A.Hn),
+    guild_member_perms: String(null != (t = m.Z.getGuildPermissions(n)) ? t : A.Hn),
     guild_is_vip: n.hasFeature(R.oNc.VIP_REGIONS),
     is_member: null != o,
     num_voice_channels_active: L(u)
@@ -125,7 +125,7 @@ function j(e) {
     channel_id: e.id,
     channel_type: e.type,
     channel_size_total: e.isPrivate() ? e.recipients.length : 0,
-    channel_member_perms: String(null != r && null !== (t = m.Z.getChannelPermissions(e)) && void 0 !== t ? t : A.Hn),
+    channel_member_perms: String(null != r && null != (t = m.Z.getChannelPermissions(e)) ? t : A.Hn),
     channel_hidden: n
   }
 }
@@ -146,7 +146,7 @@ function U(e) {
 
 function G(e, t) {
   var n, r;
-  return null == e ? null != t ? t : null : e.isPrivate() ? null : null !== (r = null !== (n = e.getGuildId()) && void 0 !== n ? n : t) && void 0 !== r ? r : null
+  return null == e ? null != t ? t : null : e.isPrivate() ? null : null != (r = null != (n = e.getGuildId()) ? n : t) ? r : null
 }
 
 function B(e) {
@@ -154,8 +154,8 @@ function B(e) {
     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   if (T.default.isThrottled(e)) return;
   let r = !("location" in t) || t.location !== R.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
-    i = "guild_id" in t ? t.guild_id : r ? y.Z.getGuildId() : null,
-    o = "channel_id" in t ? t.channel_id : r ? v.Z.getChannelId(i) : null,
+    i = "guild_id" in t ? t.guild_id : r ? v.Z.getGuildId() : null,
+    o = "channel_id" in t ? t.channel_id : r ? y.Z.getChannelId(i) : null,
     a = u.Z.getChannel(o),
     s = D({}, t, x(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : j(a));
   T.default.track(e, s, {

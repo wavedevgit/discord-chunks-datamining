@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-var r = n(676001)({
+e.exports = n(676001)({
   À: "A",
   Á: "A",
   Â: "A",
@@ -190,5 +190,4 @@ var r = n(676001)({
   œ: "oe",
   ŉ: "'n",
   ſ: "s"
-});
-e.exports = r
+})

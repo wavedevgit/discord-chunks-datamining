@@ -40,16 +40,16 @@ function s(e, t) {
       for (var m = 0; m < 7 && (_.wnomask[E] = 1, E += 1, _.wdaymask[E] !== t.wkst); m++);
   }
   if (p) {
-    var v = void 0;
-    if ((0, o.q9)(t.byweekno, -1)) v = -1;
+    var y = void 0;
+    if ((0, o.q9)(t.byweekno, -1)) y = -1;
     else {
-      var y = (0, i.FO)((0, i.t2)(e - 1, 1, 1)),
-        O = (0, o.Vy)(7 - y.valueOf() + t.wkst, 7),
+      var v = (0, i.FO)((0, i.t2)(e - 1, 1, 1)),
+        O = (0, o.Vy)(7 - v.valueOf() + t.wkst, 7),
         I = (0, i.Eg)(e - 1) ? 366 : 365,
         S = void 0;
-      O >= 4 ? (O = 0, S = I + (0, o.Vy)(y - t.wkst, 7)) : S = c - p, v = Math.floor(52 + (0, o.Vy)(S, 7) / 4)
+      O >= 4 ? (O = 0, S = I + (0, o.Vy)(v - t.wkst, 7)) : S = c - p, y = Math.floor(52 + (0, o.Vy)(S, 7) / 4)
     }
-    if ((0, o.q9)(t.byweekno, v))
+    if ((0, o.q9)(t.byweekno, y))
       for (var E = 0; E < p; E++) _.wnomask[E] = 1
   }
   return _

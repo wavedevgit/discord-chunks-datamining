@@ -18,10 +18,10 @@ function u(e) {
     shouldAnimate: u = !0,
     defaultAnimationState: d,
     idleAnimationState: f
-  } = e, _ = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [p, h] = i.useState(d), m = i.useRef((0, l._)(t, p)), [g, E] = i.useState(null == f), [b, v] = i.useState(!1), [y, O] = i.useState(-1), I = () => {
+  } = e, _ = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [p, h] = i.useState(d), m = i.useRef((0, l._)(t, p)), [g, E] = i.useState(null == f), [b, y] = i.useState(!1), [v, O] = i.useState(-1), I = () => {
     m.current = (0, l._)(t, p), O(e => e + 1)
   }, S = () => {
-    E(!1), v(!0), O(-1), h(d)
+    E(!1), y(!0), O(-1), h(d)
   };
   i.useEffect(() => {
     null == f && h(d)
@@ -31,7 +31,7 @@ function u(e) {
       idleAnimationState: f,
       isChanging: b,
       resetAnimation: S,
-      versionKey: y
+      versionKey: v
     },
     N = i.useRef(T);
   i.useEffect(() => {
@@ -42,10 +42,7 @@ function u(e) {
       versionKey: t,
       applyAnimation: n
     } = N.current;
-    if (null != f && t >= 0) {
-      e();
-      return
-    }
+    if (null != f && t >= 0) return void e();
     n()
   }, [t, f]), i.useEffect(() => {
     let {
@@ -59,7 +56,7 @@ function u(e) {
       applyAnimation: e,
       idleAnimationState: t
     } = N.current;
-    b && (E(null == t), v(!1), e())
+    b && (E(null == t), y(!1), e())
   }, [b]);
   let A = () => {
     null != f && (h(f), E(!0))
@@ -69,7 +66,7 @@ function u(e) {
     importData: m.current,
     shouldAnimate: !_ && u,
     className: n,
-    versionKey: y,
+    versionKey: v,
     onComplete: null != f ? A : void 0,
     loop: g
   })

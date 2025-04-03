@@ -18,7 +18,7 @@ var r = n(200651),
   _ = n(993365),
   p = n(481060),
   h = n(388032),
-  m = n(854551);
+  m = n(953408);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,13 +53,13 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -167,7 +167,7 @@ function R(e) {
         var {
           ref: n,
           onKeyDown: i
-        } = e, s = y(e, ["ref", "onKeyDown"]);
+        } = e, s = v(e, ["ref", "onKeyDown"]);
         return (0, r.jsxs)("div", {
           ref: n,
           role: "combobox",
@@ -211,7 +211,7 @@ function R(e) {
                 setSelected: c,
                 itemToString: R
               },
-              children: (0, r.jsx)(W, v(E({}, s), {
+              children: (0, r.jsx)(W, y(E({}, s), {
                 style: {
                   maxHeight: N * (S + 6)
                 },
@@ -248,14 +248,14 @@ function w(e) {
       disabled: s = !1,
       selectedColor: c = T.STANDARD
     } = e,
-    d = y(e, ["value", "children", "disabled", "selectedColor"]);
+    d = v(e, ["value", "children", "disabled", "selectedColor"]);
   let {
     activeDescendant: f,
     selected: _,
     setSelected: p,
     itemToString: h
-  } = i.useContext(C), g = h(n), b = f === g, O = null !== (t = null == d ? void 0 : d.selected) && void 0 !== t ? t : _.has(n), S = (0, l.JA)(g);
-  return (0, r.jsx)(u.P, v(E({
+  } = i.useContext(C), g = h(n), b = f === g, O = null != (t = null == d ? void 0 : d.selected) ? t : _.has(n), S = (0, l.JA)(g);
+  return (0, r.jsx)(u.P, y(E({
     tag: "li",
     id: g,
     onClick: () => s ? null : p(n),

@@ -9,9 +9,9 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   a = n(887490),
-  s = n(833602),
-  l = n(502433),
-  c = n(201935);
+  s = n(227473),
+  l = n(112360),
+  c = n(703803);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,13 +72,14 @@ let p = {
 };
 
 function h(e, t) {
-  let n;
-  let {
-    attributes: i,
-    children: c,
-    leaf: u,
-    text: f
-  } = t, h = !1, [m] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
+  let n, {
+      attributes: i,
+      children: c,
+      leaf: u,
+      text: f
+    } = t,
+    h = !1,
+    [m] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
   switch (a.bN.isEditor(m) ? "editor" : m.type) {
     case "line":
     case "blockQuote": {

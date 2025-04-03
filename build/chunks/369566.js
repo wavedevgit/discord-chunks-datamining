@@ -24,8 +24,8 @@ function g(e) {
   } = (0, _.O)({
     location: "useUserProfileActivity"
   }), n = (0, o.e7)([d.default], () => d.default.getId() === e), g = (0, a.Z)(e, "use-user-profile-activity"), E = (0, o.e7)([f.Z], () => f.Z.getActivities(e)), b = (0, o.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : void 0), {
-    live: v,
-    recent: y
+    live: y,
+    recent: v
   } = (0, r.useMemo)(() => {
     let e = (0, i.uniqWith)(E.filter(e => {
         let {
@@ -40,8 +40,8 @@ function g(e) {
     }
   }, [E, null == b ? void 0 : b.entries]);
   return {
-    live: v,
-    recent: y,
+    live: y,
+    recent: v,
     stream: g,
     outbox: b
   }

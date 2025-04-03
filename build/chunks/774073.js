@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => v,
+  ZP: () => y,
   z6: () => b
 }), n(789020), n(653041);
 var r = n(192379),
@@ -33,7 +33,7 @@ let m = function(e, t) {
   },
   E = (e, t) => 0 === g(e, t).length,
   b = e => E(d.Z.getGame(e), c.Z.getApplication(e)),
-  v = e => {
+  y = e => {
     let {
       location: t,
       applicationId: n = "",
@@ -46,11 +46,11 @@ let m = function(e, t) {
     }, [n, _]);
     let h = (0, s.e7)([d.Z], () => d.Z.getGame(n)),
       b = (0, u.q)(n),
-      v = r.useMemo(() => null != h && null != b ? E(h, b) : null, [b, h]);
+      y = r.useMemo(() => null != h && null != b ? E(h, b) : null, [b, h]);
     return r.useEffect(() => {
-      !f.current && _ && c && !1 === d.Z.isFetching(n) && null != h && null != v && (o()(null != a, "Cannot track a Game Profile Entry Point Impressions without a source."), m(v, n, g(h), a), f.current = !0)
-    }, [v, n, _, h, a, c]), {
-      shouldOpenGameProfile: _ && !0 === v,
+      !f.current && _ && c && !1 === d.Z.isFetching(n) && null != h && null != y && (o()(null != a, "Cannot track a Game Profile Entry Point Impressions without a source."), m(y, n, g(h), a), f.current = !0)
+    }, [y, n, _, h, a, c]), {
+      shouldOpenGameProfile: _ && !0 === y,
       applicationId: n
     }
   }

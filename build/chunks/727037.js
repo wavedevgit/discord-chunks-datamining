@@ -14,7 +14,7 @@ class s {
   prepare() {
     var e;
     if (!this.fieldNoToField) {
-      let t = null !== (e = this.info.fields) && void 0 !== e ? e : [];
+      let t = null != (e = this.info.fields) ? e : [];
       this.fieldNoToField = new Map(t.map(e => [e.no, e]))
     }
   }

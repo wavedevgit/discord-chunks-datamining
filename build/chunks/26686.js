@@ -17,8 +17,8 @@ var r = n(147018),
   g = s("".charAt),
   E = s("".charCodeAt),
   b = s("".replace),
-  v = s(1..toString),
-  y = /[\uD800-\uDFFF]/g,
+  y = s(1..toString),
+  v = /[\uD800-\uDFFF]/g,
   O = /^[\uD800-\uDBFF]$/,
   I = /^[\uDC00-\uDFFF]$/,
   S = !_ || l(function() {
@@ -40,7 +40,7 @@ var r = n(147018),
   A = function(e, t, n) {
     var r = g(n, t - 1),
       i = g(n, t + 1);
-    return m(O, e) && !m(I, i) || m(I, e) && !m(O, r) ? "\\u" + v(E(e, 0), 16) : e
+    return m(O, e) && !m(I, i) || m(I, e) && !m(O, r) ? "\\u" + y(E(e, 0), 16) : e
   };
 h && r({
   target: "JSON",
@@ -51,6 +51,6 @@ h && r({
   stringify: function(e, t, n) {
     var r = d(arguments),
       i = o(S ? N : h, null, r);
-    return T && "string" == typeof i ? b(i, y, A) : i
+    return T && "string" == typeof i ? b(i, v, A) : i
   }
 })

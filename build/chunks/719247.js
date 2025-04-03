@@ -32,15 +32,15 @@ function b(e) {
   return "".concat(e.author_id, ":").concat(e.id)
 }
 
-function v(e) {
+function y(e) {
   return (0, p.n2)(e) ? null : (0, p.kr)(e) && e.author_type === a.i.USER ? u.Z.getActivities(e.author_id).find(t => t.type === h.IIU.PLAYING && (0, f.m9)(e) ? (0, _.cN)(e, t) : !!(t.type === h.IIU.LISTENING && (0, f.dU)(e)) && (0, _.pB)(e, t)) : void 0
 }
 
-function y(e) {
+function v(e) {
   let t = new Set,
     n = new Set;
   for (let r of e) {
-    let e = v(r.content);
+    let e = y(r.content);
     if (void 0 !== e) {
       let i = b(r.content);
       n.add(i), e !== E.get(i) && (t.add(i), E.set(i, e))
@@ -57,7 +57,7 @@ function O(e) {
     feed: t
   } = e, {
     updatedKeys: n
-  } = y(t.entries);
+  } = v(t.entries);
   return n.size > 0
 }
 
@@ -74,7 +74,7 @@ function S() {
     let {
       updatedKeys: i,
       matchedKeys: o
-    } = y(n.size > 0 ? t.entries.filter(e => !n.has(b(e.content))) : t.entries);
+    } = v(n.size > 0 ? t.entries.filter(e => !n.has(b(e.content))) : t.entries);
     for (let e of i) n.add(e);
     for (let e of o) r.add(e);
     e = e || i.size > 0

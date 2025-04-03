@@ -22,8 +22,8 @@ var r = n(200651),
   g = n(510659),
   E = n(652853),
   b = n(228168),
-  v = n(388032),
-  y = n(376099);
+  y = n(388032),
+  v = n(341969);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,14 +66,14 @@ function T(e, t) {
 let N = 2700,
   A = "> -# *",
   C = {
-    [b.n_.AVATAR]: () => v.NW.string(v.t["fEUP/v"]),
-    [b.n_.STATUS]: () => v.NW.string(v.t.TKdBCw),
-    [b.n_.ACTIVITY]: () => v.NW.string(v.t.bSe71N)
+    [b.n_.AVATAR]: () => y.NW.string(y.t["fEUP/v"]),
+    [b.n_.STATUS]: () => y.NW.string(y.t.TKdBCw),
+    [b.n_.ACTIVITY]: () => y.NW.string(y.t.bSe71N)
   },
   R = {
-    [b.n_.AVATAR]: () => v.NW.string(v.t.xvN0fX),
-    [b.n_.STATUS]: () => v.NW.string(v.t["C/vzS0"]),
-    [b.n_.ACTIVITY]: () => v.NW.string(v.t.ObfsSk)
+    [b.n_.AVATAR]: () => y.NW.string(y.t.xvN0fX),
+    [b.n_.STATUS]: () => y.NW.string(y.t["C/vzS0"]),
+    [b.n_.ACTIVITY]: () => y.NW.string(y.t.ObfsSk)
   };
 
 function P(e) {
@@ -123,62 +123,62 @@ function P(e) {
       }), D === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     F = e => {
-      e.animationName === (0, s.get)(y, "fadeInAndOut") && U(!1)
+      e.animationName === (0, s.get)(v, "fadeInAndOut") && U(!1)
     };
   return (0, r.jsxs)(f.ZP, {
-    className: a()(y.popover, {
-      [y.fadeInAndOut]: j,
-      [y.visible]: o,
-      [y.expandable]: O,
-      [y.statusPopover]: n === b.n_.STATUS,
-      [y.avatarPopover]: n === b.n_.AVATAR,
-      [y.activityPopover]: n === b.n_.ACTIVITY
+    className: a()(v.popover, {
+      [v.fadeInAndOut]: j,
+      [v.visible]: o,
+      [v.expandable]: O,
+      [v.statusPopover]: n === b.n_.STATUS,
+      [v.avatarPopover]: n === b.n_.AVATAR,
+      [v.activityPopover]: n === b.n_.ACTIVITY
     }),
     onAnimationEnd: j ? F : void 0,
     children: [(0, r.jsx)(d.DY3, {
-      text: v.NW.string(v.t.nhaI4e),
+      text: y.NW.string(y.t.nhaI4e),
       shouldShow: o,
-      className: y.tooltipContainer,
+      className: v.tooltipContainer,
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(f.zx, {
         onClick: G,
-        className: y.button,
+        className: v.button,
         "aria-label": C[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(d.EO4, {
           size: "xs",
-          className: y.icon
+          className: v.icon
         })
       })
     }), (0, r.jsx)(d.DY3, {
-      text: v.NW.string(v.t.RmDYKC),
+      text: y.NW.string(y.t.RmDYKC),
       shouldShow: o,
-      className: y.tooltipContainer,
+      className: v.tooltipContainer,
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(f.zx, {
         onClick: B,
-        className: y.button,
+        className: v.button,
         "aria-label": R[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(d.n$P, {
           size: "xs",
-          className: y.icon
+          className: v.icon
         })
       })
     }), null == A ? void 0 : A(e => (0, r.jsx)(d.DY3, {
-      text: v.NW.string(v.t.UKOtz8),
+      text: y.NW.string(y.t.UKOtz8),
       shouldShow: o,
-      className: y.tooltipContainer,
+      className: v.tooltipContainer,
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(f.zx, T(I({}, e), {
-        className: y.button,
-        "aria-label": v.NW.string(v.t.UKOtz8),
+        className: v.button,
+        "aria-label": y.NW.string(y.t.UKOtz8),
         children: (0, r.jsx)(d.xhG, {
           size: "xs",
-          className: y.icon
+          className: v.icon
         })
       }))
     }))]

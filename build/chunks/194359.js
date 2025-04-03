@@ -29,7 +29,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function y(e) {
+function v(e) {
   (0, h.Zy)(), p.Z.show(e)
 }
 
@@ -57,7 +57,7 @@ function I(e, t, n) {
   } = e, o = i && i.code;
   switch (r) {
     case 429:
-      0 === t && y({
+      0 === t && v({
         title: E.NW.string(E.t["3D5eo6"]),
         body: E.NW.string(E.t.TuJriI),
         confirmText: E.NW.string(E.t.DppXIy)
@@ -65,7 +65,7 @@ function I(e, t, n) {
       break;
     case 403:
       if (o === m.evJ.EMAIL_VERIFICATION_REQUIRED) {
-        y({
+        v({
           title: E.NW.string(E.t.Gqf33N),
           body: E.NW.string(E.t.GHOBd3),
           confirmText: E.NW.string(E.t.HbTSEx),
@@ -81,7 +81,7 @@ function I(e, t, n) {
       else if (o === m.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION) break;
       else if (0 === t) {
         let e = null != n ? (0, f.NF)(o || 0, n) : E.NW.string(E.t.paDJBA);
-        y({
+        v({
           title: E.NW.string(E.t["6moJ8v"]),
           body: e,
           confirmText: E.NW.string(E.t.BddRzc)
@@ -100,7 +100,7 @@ let S = {
       } = e, [a, s] = t.split("#");
       return r.tn.post({
         url: m.ANM.USER_RELATIONSHIPS(),
-        body: v({
+        body: y({
           username: a,
           discriminator: parseInt(s)
         }, i),
@@ -123,7 +123,7 @@ let S = {
       } = e, u = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0, f = d.default.getUser(n);
       return r.tn.put({
         url: m.ANM.USER_RELATIONSHIP(n),
-        body: v({
+        body: y({
           type: o,
           friend_token: a,
           from_friend_suggestion: s,

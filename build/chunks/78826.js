@@ -28,7 +28,7 @@ function d(e) {
 
 function f(e) {
   var t, n;
-  return (0, o.k)(e, HTMLImageElement) ? e.getAttribute("src") : (0, o.k)(e, HTMLVideoElement) ? null !== (n = null === (t = e.querySelectorAll("source")[0]) || void 0 === t ? void 0 : t.getAttribute("src")) && void 0 !== n ? n : "video" : ((0, o.k)(e, HTMLDivElement), e.tagName)
+  return (0, o.k)(e, HTMLImageElement) ? e.getAttribute("src") : (0, o.k)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? void 0 : t.getAttribute("src")) ? n : "video" : ((0, o.k)(e, HTMLDivElement), e.tagName)
 }
 
 function _(e) {
@@ -37,13 +37,13 @@ function _(e) {
     isPreview: n = !1,
     source: o,
     questId: _
-  } = e, [p, h] = i.useState(!1), [m, g] = i.useState(new Set), [E, b] = i.useState(!1), v = i.useRef(!1);
+  } = e, [p, h] = i.useState(!1), [m, g] = i.useState(new Set), [E, b] = i.useState(!1), y = i.useRef(!1);
   i.useEffect(() => {
     let e = new Set;
     for (let t of m) u(t) || e.add(t);
     e.size !== m.size && g(e)
   }, [m]);
-  let y = i.useCallback(e => {
+  let v = i.useCallback(e => {
       let {
         assetNode: t,
         nodeId: r,
@@ -79,7 +79,7 @@ function _(e) {
       }
 
       function i(n) {
-        O(e), y({
+        O(e), v({
           assetNode: e,
           nodeId: t,
           errorPrefix: "Error loading asset",
@@ -87,16 +87,16 @@ function _(e) {
         }), e.removeEventListener("error", i)
       }
       e.addEventListener(n, r), e.addEventListener("error", i)
-    }, [y, O]),
+    }, [v, O]),
     S = i.useMemo(() => m.size > 0 || !E, [E, m]);
   i.useEffect(() => {
-    S || (v.current = !0)
+    S || (y.current = !0)
   }, [S]);
   let T = i.useMemo(() => ({
     registerAsset: I,
     unregisterAsset: O,
     hasError: p,
-    isLoading: S && !v.current
+    isLoading: S && !y.current
   }), [I, O, p, S]);
   return (0, r.jsx)(c.Provider, {
     value: T,

@@ -46,7 +46,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -106,8 +106,7 @@ async function I(e) {
   }), n
 }
 async function S(e, t, n, r) {
-  let i;
-  let l = {
+  let i, l = {
     payment_source_id: n,
     gift: null == r ? void 0 : r.isGift
   };
@@ -147,7 +146,7 @@ async function N(e, t, n) {
     expectedCurrency: u,
     analyticsLoadId: h,
     isGift: E,
-    giftInfoOptions: v,
+    giftInfoOptions: y,
     subscriptionPlanId: O,
     loadId: I,
     countryCode: S
@@ -173,7 +172,7 @@ async function N(e, t, n) {
         let t = await (0, m.EH)(r.type);
         e.return_url = (0, i.K0)() + g.ANM.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(r.type, null != t ? t : "", "success")
       }
-      e.gift_info_options = v, null != S && (e.country_code = S)
+      e.gift_info_options = y, null != S && (e.country_code = S)
     }
     null != l && (e.expected_amount = l), null != u && (e.expected_currency = u), e.purchase_token = (0, p.d)();
     let n = await i.tn.post({
@@ -191,7 +190,7 @@ async function N(e, t, n) {
       libraryApplications: null != n.body.library_applications ? n.body.library_applications.filter(_.lm) : [],
       entitlements: n.body.entitlements,
       giftCode: n.body.gift_code
-    }), y(b({}, n.body), {
+    }), v(b({}, n.body), {
       redirectConfirmation: !1
     })
   } catch (i) {

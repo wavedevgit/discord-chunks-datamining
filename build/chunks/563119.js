@@ -16,7 +16,7 @@ var i = n(704215),
   f = n(927923),
   _ = n(981631),
   p = n(388032),
-  h = n(188198);
+  h = n(97800);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = "game_console_alert_modal",
-  y = "game_console_ptt_alert_modal",
+let y = "game_console_alert_modal",
+  v = "game_console_ptt_alert_modal",
   O = {
     maybeShowPTTAlert(e) {
       if (c.Z.getMode() !== _.pM4.PUSH_TO_TALK || (0, l.un)(i.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
@@ -76,8 +76,8 @@ let v = "game_console_alert_modal",
             onConfirm: n,
             titleClassName: h.title
           }));
-        (0, o.nf)(y) ? (0, o.o)(y, s) : (0, o.h7)(s, {
-          modalKey: y
+        (0, o.nf)(v) ? (0, o.o)(v, s) : (0, o.h7)(s, {
+          modalKey: v
         })
       })
     },
@@ -90,7 +90,7 @@ let v = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.t, {
         body: n,
         errorCodeMessage: i,
-        dismissCallback: () => (0, o.Mr)(v)
+        dismissCallback: () => (0, o.Mr)(y)
       });
 
       function p() {
@@ -107,8 +107,8 @@ let v = "game_console_alert_modal",
         body: c,
         onConfirm: p
       }));
-      (0, o.nf)(v) ? (0, o.o)(v, h) : (0, o.h7)(h, {
-        modalKey: v
+      (0, o.nf)(y) ? (0, o.o)(y, h) : (0, o.h7)(h, {
+        modalKey: y
       })
     }
   }

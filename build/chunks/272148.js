@@ -34,7 +34,7 @@ function i() {
   }
 
   function _(e, t, n, r) {
-    var i = Object.create((t && t.prototype instanceof v ? t : v).prototype);
+    var i = Object.create((t && t.prototype instanceof y ? t : y).prototype);
     return s(i, "_invoke", {
       value: R(e, n, new L(r || []))
     }), i
@@ -60,9 +60,9 @@ function i() {
     E = "completed",
     b = {};
 
-  function v() {}
-
   function y() {}
+
+  function v() {}
 
   function O() {}
   var I = {};
@@ -72,7 +72,7 @@ function i() {
   var S = Object.getPrototypeOf,
     T = S && S(S(x([])));
   T && T !== o && a.call(T, c) && (I = T);
-  var N = O.prototype = v.prototype = Object.create(I);
+  var N = O.prototype = y.prototype = Object.create(I);
 
   function A(e) {
     ["next", "throw", "return"].forEach(function(t) {
@@ -198,15 +198,15 @@ function i() {
     }
     throw TypeError(r(e) + " is not iterable")
   }
-  return y.prototype = O, s(N, "constructor", {
+  return v.prototype = O, s(N, "constructor", {
     value: O,
     configurable: !0
   }), s(O, "constructor", {
-    value: y,
+    value: v,
     configurable: !0
-  }), y.displayName = f(O, d, "GeneratorFunction"), n.isGeneratorFunction = function(e) {
+  }), v.displayName = f(O, d, "GeneratorFunction"), n.isGeneratorFunction = function(e) {
     var t = "function" == typeof e && e.constructor;
-    return !!t && (t === y || "GeneratorFunction" === (t.displayName || t.name))
+    return !!t && (t === v || "GeneratorFunction" === (t.displayName || t.name))
   }, n.mark = function(e) {
     return Object.setPrototypeOf ? Object.setPrototypeOf(e, O) : (e.__proto__ = O, f(e, d, "GeneratorFunction")), e.prototype = Object.create(N), e
   }, n.awrap = function(e) {

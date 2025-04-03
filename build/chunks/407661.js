@@ -19,21 +19,21 @@ var r = n(200651),
   m = n(962293),
   g = n(981631),
   E = n(388032),
-  b = n(859728);
-let v = 2,
-  y = 10;
+  b = n(453091);
+let y = 2,
+  v = 10;
 
 function O(e, t) {
   let n = e.id,
     r = t.id;
   return (0, s.e7)([h.Z], () => {
     let e = r;
-    for (let t = 0; t < y; t++) {
+    for (let t = 0; t < v; t++) {
       let r = h.Z.getMessage(n, e);
       if ((null == r ? void 0 : r.type) !== g.uaV.REPLY || null == r.messageReference) return t;
       e = r.messageReference.message_id
     }
-    return y
+    return v
   }, [n, r])
 }
 
@@ -52,7 +52,7 @@ function I(e) {
     s.current = o
   }), i.useEffect(() => {
     (0, c.yw)(g.rMx.THREAD_NUDGE_SHOWN, {
-      type: "Reply Chain (".concat(v + 1, ")"),
+      type: "Reply Chain (".concat(y + 1, ")"),
       reply_chain_length: s.current + 1,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -71,7 +71,7 @@ function I(e) {
       className: b.text,
       variant: "text-sm/normal",
       children: E.NW.format(E.t.B3V0FB, {
-        count: Math.min(y, o + 1)
+        count: Math.min(v, o + 1)
       })
     }), (0, r.jsx)(l.Text, {
       color: "text-link",
@@ -94,8 +94,8 @@ function S(e) {
   } = t, {
     nick: p,
     colorString: h,
-    colorRoleName: y
-  } = (0, u.ZP)(o), S = O(i, o), T = (0, _.NE)(i, o), N = n.showThreadPromptOnReply && S >= v && T, A = () => (0, f.uL)(g.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
+    colorRoleName: v
+  } = (0, u.ZP)(o), S = O(i, o), T = (0, _.NE)(i, o), N = n.showThreadPromptOnReply && S >= y && T, A = () => (0, f.uL)(g.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
 
   function C(e) {
     e.stopPropagation(), (0, d.qx)(i.id, !s)
@@ -129,7 +129,7 @@ function S(e) {
                 className: b.name,
                 name: p,
                 color: h,
-                roleName: y
+                roleName: v
               }, t)
             })
           })

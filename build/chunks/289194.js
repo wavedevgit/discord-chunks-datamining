@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "string",
       begin: /'(.|\\[xXuU][a-zA-Z0-9]+)'/
@@ -31,4 +31,3 @@ function t(e) {
     contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, t, n, r, e.C_NUMBER_MODE]
   }
 }
-e.exports = t

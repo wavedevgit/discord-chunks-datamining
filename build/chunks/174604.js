@@ -14,9 +14,9 @@ var r = n(200651),
   d = n(905128),
   f = n(50101),
   _ = n(535396),
-  p = n(296260),
+  p = n(680278),
   h = n(388032),
-  m = n(374068);
+  m = n(698323);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,13 +51,13 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function v(e) {
   let {
     powerup: t
   } = e;
@@ -76,7 +76,7 @@ function O(e) {
     onButtonClick: o
   } = e, g = (0, f.Ek)(t.id, "GuildBoostingMarketing"), b = (0, c.e7)([d.Z], () => {
     var e, n;
-    return null === (n = d.Z.getStateForGuild(t.id)) || void 0 === n ? void 0 : null === (e = n.catalog) || void 0 === e ? void 0 : e.get(_.Us.PERK)
+    return null == (n = d.Z.getStateForGuild(t.id)) || null == (e = n.catalog) ? void 0 : e.get(_.Us.PERK)
   }), [O, I] = i.useState(!1), [S, T] = (0, u.q_F)(() => ({
     scale: .8,
     config: {
@@ -95,24 +95,24 @@ function O(e) {
   let N = i.useMemo(() => {
     let e;
     if (null == b || 0 === b.length) return "";
-    if (1 === b.length) e = (0, r.jsx)(y, {
+    if (1 === b.length) e = (0, r.jsx)(v, {
       powerup: b[0]
     });
     else if (2 === b.length) e = h.NW.format(p.Z.MNO3sL, {
-      perk1: (0, r.jsx)(y, {
+      perk1: (0, r.jsx)(v, {
         powerup: b[0]
       }),
-      perk2: (0, r.jsx)(y, {
+      perk2: (0, r.jsx)(v, {
         powerup: b[1]
       })
     });
     else {
       let t = b.reverse();
       e = h.NW.format(p.Z.GmN3VV, {
-        perk1: (0, r.jsx)(y, {
+        perk1: (0, r.jsx)(v, {
           powerup: t[0]
         }),
-        perk2: (0, r.jsx)(y, {
+        perk2: (0, r.jsx)(v, {
           powerup: t[1]
         })
       })
@@ -125,7 +125,7 @@ function O(e) {
     className: a()(m.container, {
       [m.themeResponsiveContainer]: n
     }),
-    style: v(E({}, S), {
+    style: y(E({}, S), {
       opacity: +!!O
     }),
     children: [(0, r.jsx)(l.xv, {

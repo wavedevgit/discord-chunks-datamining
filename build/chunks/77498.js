@@ -26,8 +26,8 @@ let h = "GameStoreReportedGames",
   g = f.Z.Millis.DAY,
   E = new c.Z,
   b = {},
-  v = {},
-  y = null !== (i = s.K.get(h)) && void 0 !== i ? i : {},
+  y = {},
+  v = null != (i = s.K.get(h)) ? i : {},
   O = "",
   I = null;
 
@@ -36,14 +36,14 @@ function S(e) {
   return {
     id: e.id,
     name: e.name,
-    executables: (null !== (t = e.executables) && void 0 !== t ? t : []).map(d.BA),
-    overlay: null !== (n = e.overlay) && void 0 !== n && n,
-    overlayWarn: null !== (r = e.overlay_warn) && void 0 !== r && r,
-    overlayCompatibilityHook: null !== (i = e.overlay_compatibility_hook) && void 0 !== i && i,
-    hook: null === (o = e.hook) || void 0 === o || o,
-    aliases: null !== (a = e.aliases) && void 0 !== a ? a : [],
+    executables: (null != (t = e.executables) ? t : []).map(d.BA),
+    overlay: null != (n = e.overlay) && n,
+    overlayWarn: null != (r = e.overlay_warn) && r,
+    overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
+    hook: null == (o = e.hook) || o,
+    aliases: null != (a = e.aliases) ? a : [],
     supportsOutOfProcessOverlay: d.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
-    themes: null !== (s = e.themes) && void 0 !== s ? s : []
+    themes: null != (s = e.themes) ? s : []
   }
 }
 
@@ -66,7 +66,7 @@ function N(e) {
   let t = e instanceof d.ZP ? T(e) : e;
   for (let n of (E.set(e.id, t), b[e.name.toLowerCase()] = t, e.aliases)) b[n.toLowerCase()] = t;
   if ((0, _.isDesktop)())
-    for (let n of e.executables) v[n.name] = t
+    for (let n of e.executables) y[n.name] = t
 }
 
 function A(e) {
@@ -95,7 +95,7 @@ function P(e) {
 class w extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    null != e && (null != e.detectableGamesEtag && (O = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => N(e)))
+    null != e && (null != e.detectableGamesEtag && (O = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => N(e)))
   }
   getState() {
     return (0, _.isDesktop)() ? {
@@ -136,7 +136,7 @@ class w extends(o = a.ZP.PersistedStore) {
     return !0 !== r && (null == I || Date.now() >= I + g)
   }
   getGameByExecutable(e) {
-    return v[e]
+    return y[e]
   }
   getGameByGameData(e) {
     var t, n;
@@ -150,15 +150,15 @@ class w extends(o = a.ZP.PersistedStore) {
         if (e.includes(i) || e.includes(o)) return r
       } else if (null != r) return null
     }
-    return null !== (n = null !== (t = this.getGameByExecutable(i)) && void 0 !== t ? t : this.getGameByExecutable(o)) && void 0 !== n ? n : r
+    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(o)) ? n : r
   }
   shouldReport(e) {
     let t = null != this.getGameByName(e),
-      n = null != y[e];
+      n = null != v[e];
     return u.G6.getSetting() && !r && !(t || n)
   }
   markGameReported(e) {
-    y[e] = !0, s.K.set(h, y)
+    v[e] = !0, s.K.set(h, v)
   }
 }
 p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrations", [e => {
@@ -168,7 +168,7 @@ p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrati
     detectableGames: []
   } : {
     detectableGamesEtag: e.detectableGamesEtag,
-    detectableGames: null !== (n = null === (t = e.detectableGames) || void 0 === t ? void 0 : t.map(e => T(new d.ZP(e)))) && void 0 !== n ? n : []
+    detectableGames: null != (n = null == (t = e.detectableGames) ? void 0 : t.map(e => T(new d.ZP(e)))) ? n : []
   }
 }, e => (0, _.isDesktop)() ? e : {
   detectableGamesEtag: "",

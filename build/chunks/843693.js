@@ -57,7 +57,7 @@ function E(e, t) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,14 +65,14 @@ function b(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = 7,
+let v = 7,
   O = 1e3,
   I = new Set,
   S = new o.h(function(e) {
@@ -124,17 +124,17 @@ function C(e) {
   let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     c = S.get(A(e)),
     u = E(m({}, c, e), {
-      value: null !== (n = null !== (t = e.value) && void 0 !== t ? t : null == c ? void 0 : c.value) && void 0 !== n ? n : 0,
-      multiplier: Math.min(null !== (i = null !== (r = e.multiplier) && void 0 !== r ? r : null == c ? void 0 : c.multiplier) && void 0 !== i ? i : 1, y),
-      decayInterval: null !== (o = null == c ? void 0 : c.decayInterval) && void 0 !== o ? o : new a.Xp
+      value: null != (n = null != (t = e.value) ? t : null == c ? void 0 : c.value) ? n : 0,
+      multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? void 0 : c.multiplier) ? i : 1, v),
+      decayInterval: null != (o = null == c ? void 0 : c.decayInterval) ? o : new a.Xp
     });
-  S.set(A(e), u), l && (null === (s = u.decayInterval) || void 0 === s || s.start(O, () => {
+  S.set(A(e), u), l && (null == (s = u.decayInterval) || s.start(O, () => {
     let e = S.get(A(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
         var t;
-        null === (t = e.decayInterval) || void 0 === t || t.stop(), e.value <= 0 && (C(E(m({}, e), {
+        null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (C(E(m({}, e), {
           value: 0,
           multiplier: 1
         })), M.emitChange())
@@ -183,11 +183,11 @@ function L(e) {
   let s = l.default.getId();
   if (!D(null == o ? void 0 : o.id, s, a, I)) return !1;
   let c = S.get(A({
-    userId: null !== (t = null == o ? void 0 : o.id) && void 0 !== t ? t : "???",
+    userId: null != (t = null == o ? void 0 : o.id) ? t : "???",
     channelId: r
   }));
   if (d.Z.screenshakeEnabled && d.Z.screenshakeEnabledLocations[_.oZ.MENTION] && null != i && null != i.find(e => e.id === s)) {
-    let e = null != c ? null !== (n = (0, f.KH)(c, _.qi.LEVEL_4)) && void 0 !== n ? n : .001 : 4 * Math.random();
+    let e = null != c ? null != (n = (0, f.KH)(c, _.qi.LEVEL_4)) ? n : .001 : 4 * Math.random();
     return u.S.dispatch(p.CkL.SHAKE_APP, {
       duration: 1e3,
       intensity: e
@@ -219,7 +219,7 @@ class x extends(r = i.ZP.Store) {
   getMessageCombo(e) {
     var t;
     let n = N.get(e);
-    return null !== (t = null == n ? void 0 : n.combo) && void 0 !== t ? t : void 0
+    return null != (t = null == n ? void 0 : n.combo) ? t : void 0
   }
   getMostRecentMessageCombo(e) {
     let t = N.values(e);

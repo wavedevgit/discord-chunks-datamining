@@ -20,9 +20,9 @@ var r = n(200651),
   g = n(378233),
   E = n(419922),
   b = n(490095),
-  v = n(981631),
-  y = n(388032),
-  O = n(943261);
+  y = n(981631),
+  v = n(388032),
+  O = n(157882);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -134,19 +134,19 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             (null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0 || f || null == x || x(e)
           }, w),
           P = () => {
-            e.type === m.al.CREATE_STICKER && (p.default.track(v.rMx.OPEN_MODAL, {
-              type: v.jXE.CREATE_STICKER_MODAL,
+            e.type === m.al.CREATE_STICKER && (p.default.track(y.rMx.OPEN_MODAL, {
+              type: y.jXE.CREATE_STICKER_MODAL,
               location: Y
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("79106")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("61547")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, S({
                 guildId: e.guild_id
               }, n))
             }))
           },
-          U = null !== (d = null == l ? void 0 : l(e.columnIndex, k)) && void 0 !== d ? d : {},
+          U = null != (d = null == l ? void 0 : l(e.columnIndex, k)) ? d : {},
           {
             ref: G,
             tabIndex: K,
@@ -179,7 +179,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 }), (0, r.jsx)(c.Text, {
                   color: "interactive-active",
                   variant: "text-xs/normal",
-                  children: y.NW.string(y.t["+nEuqq"])
+                  children: v.NW.string(v.t["+nEuqq"])
                 })]
               })
             }), e.guild_id);

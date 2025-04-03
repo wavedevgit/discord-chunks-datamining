@@ -10,14 +10,14 @@ var r = n(200651),
   s = n(944486),
   l = n(745510),
   c = n(675654),
-  u = n(910396);
+  u = n(232141);
 
 function d(e) {
   let {
     children: t
   } = e, [n, d] = i.useState(null), [f, _] = i.useState(null), p = i.useRef(new Set), [h, m] = i.useState(!1), g = (0, a.e7)([s.Z], () => s.Z.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
     p.current.delete(e), m(p.current.size > 0)
-  }, []), b = i.useCallback(e => (p.current.add(e), m(!0), () => E(e)), [E]), v = i.useCallback((e, t) => {
+  }, []), b = i.useCallback(e => (p.current.add(e), m(!0), () => E(e)), [E]), y = i.useCallback((e, t) => {
     for (let n of p.current) n(e, t)
   }, []);
   return i.useEffect(() => {
@@ -34,7 +34,7 @@ function d(e) {
       ref: _,
       className: u.canvas,
       environment: c.rq,
-      onClick: h ? v : void 0
+      onClick: h ? y : void 0
     }), (0, r.jsx)(o.Ji, {
       ref: d,
       colors: c.Br,

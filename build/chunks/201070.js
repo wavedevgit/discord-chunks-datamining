@@ -43,7 +43,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -83,7 +83,7 @@ let N = (0, a.U)(e => ({}));
 function A(e, t) {
   let n = N.getState()[e];
   return null == n && (n = T(1)), n = b({}, n, t), (0, l.j)(() => {
-    N.setState(t => y(b({}, t), {
+    N.setState(t => v(b({}, t), {
       [e]: n
     }))
   }), n
@@ -111,7 +111,7 @@ function w(e, t, n, r, i) {
   let o = C(e);
   if ((null == o ? void 0 : o.requestState) === 2) {
     var a;
-    null === (a = o.abortController) || void 0 === a || a.abort()
+    null == (a = o.abortController) || a.abort()
   }
   return A(e, {
     requestState: 2,
@@ -198,7 +198,7 @@ function j(e) {
     t.guild_joined_at = {
       range: {
         gte: u.afterDate,
-        lte: null !== (d = u.beforeDate) && void 0 !== d ? d : void 0
+        lte: null != (d = u.beforeDate) ? d : void 0
       }
     }
   }
@@ -207,7 +207,7 @@ function j(e) {
   } = e;
   if (null != _.afterDate) {
     let e = t.user_id;
-    t.user_id = y(b({}, e), {
+    t.user_id = v(b({}, e), {
       range: {
         gte: f.default.fromTimestamp(_.afterDate),
         lte: null != _.beforeDate ? f.default.fromTimestamp(_.beforeDate) : void 0
@@ -231,9 +231,9 @@ function j(e) {
       and_query: t
     },
     {
-      selectedSort: v
+      selectedSort: y
     } = e;
-  return null != v && (E.sort = v), E
+  return null != y && (E.sort = y), E
 }
 
 function U(e, t) {
@@ -264,7 +264,7 @@ function F(e, t) {
     nextPageChunkNumber: o
   } = B(t), {
     previousPagination: a
-  } = R(S(e)), s = t.currentPage, l = null !== (n = null == a ? void 0 : a.currentPage) && void 0 !== n ? n : 0, c = g.Z.getElasticSearchPaginationByGuildId(e);
+  } = R(S(e)), s = t.currentPage, l = null != (n = null == a ? void 0 : a.currentPage) ? n : 0, c = g.Z.getElasticSearchPaginationByGuildId(e);
   switch (!0) {
     case null == c:
     case r === o && 0 === r:
@@ -292,19 +292,19 @@ function V(e, t, n) {
         limit: f
       }];
     case 1:
-      return [null !== (r = t.cursor) && void 0 !== r ? r : null, {
+      return [null != (r = t.cursor) ? r : null, {
         limit: f,
-        after: null !== (i = t.cursor) && void 0 !== i ? i : void 0
+        after: null != (i = t.cursor) ? i : void 0
       }];
     case 2:
-      return [null !== (o = null == u ? void 0 : u.after) && void 0 !== o ? o : null, {
+      return [null != (o = null == u ? void 0 : u.after) ? o : null, {
         limit: f,
-        after: null !== (a = null == u ? void 0 : u.after) && void 0 !== a ? a : void 0
+        after: null != (a = null == u ? void 0 : u.after) ? a : void 0
       }];
     case 3:
-      return [null !== (s = null == u ? void 0 : u.before) && void 0 !== s ? s : null, {
+      return [null != (s = null == u ? void 0 : u.before) ? s : null, {
         limit: f,
-        before: null !== (l = null == u ? void 0 : u.before) && void 0 !== l ? l : void 0
+        before: null != (l = null == u ? void 0 : u.before) ? l : void 0
       }];
     default:
       (0, d.vE)(c)
@@ -323,7 +323,7 @@ async function H(e) {
     l = R(s),
     [c, u] = V(e, l, a),
     d = U(j(i), u),
-    f = null !== (t = i.selectedSort) && void 0 !== t ? t : h.d$.ORDER_BY_GUILD_JOINED_AT_DESC;
+    f = null != (t = i.selectedSort) ? t : h.d$.ORDER_BY_GUILD_JOINED_AT_DESC;
   if (Z(s, d) && (0, o.isEqual)(c, l.cursor)) return;
   let _ = w(s, d, c, a, f);
   try {
@@ -332,7 +332,7 @@ async function H(e) {
         guildId: e
       }), null == _.query) throw Error("Query is null");
     await (0, m.D)(e, _.query, {
-      signal: null !== (r = null === (n = _.abortController) || void 0 === n ? void 0 : n.signal) && void 0 !== r ? r : void 0
+      signal: null != (r = null == (n = _.abortController) ? void 0 : n.signal) ? r : void 0
     })
   } catch (e) {
     if (O === e.code) return;
@@ -345,14 +345,14 @@ async function H(e) {
 function W(e) {
   return N(t => {
     var n;
-    return (null === (n = t[S(e)]) || void 0 === n ? void 0 : n.requestState) === 2
+    return (null == (n = t[S(e)]) ? void 0 : n.requestState) === 2
   })
 }
 
 function Y(e) {
   return N(t => {
     var n;
-    return (null === (n = t[S(e)]) || void 0 === n ? void 0 : n.requestState) === 4
+    return (null == (n = t[S(e)]) ? void 0 : n.requestState) === 4
   })
 }
 class K extends u.Z {

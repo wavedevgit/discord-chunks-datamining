@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[ \\t\\f]*",
     n = t + "[:=]" + t,
     r = "[ \\t\\f]+",
@@ -42,4 +42,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

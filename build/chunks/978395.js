@@ -20,15 +20,15 @@ var r = n(200651),
   g = n(91433),
   E = n(944043),
   b = n(502762),
-  v = n(530),
-  y = n(827313),
+  y = n(530),
+  v = n(827313),
   O = n(420654),
   I = n(116854),
   S = n(166584),
   T = n(915014),
   N = n(228168),
   A = n(981631),
-  C = n(888113);
+  C = n(200669);
 
 function R(e) {
   let {
@@ -52,7 +52,7 @@ function R(e) {
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: C.body,
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(y.Z, {
       user: t,
       profileType: N.y0.BITE_SIZE,
       onOpenProfile: D,
@@ -70,7 +70,7 @@ function R(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.Z, {
           userId: t.id
-        }), !B && (0, r.jsx)(y.Z, {
+        }), !B && (0, r.jsx)(v.Z, {
           userId: t.id,
           isHovering: w,
           onOpenProfile: D

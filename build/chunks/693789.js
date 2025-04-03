@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ph: () => y,
-  Tt: () => v,
+  Ph: () => v,
+  Tt: () => y,
   iL: () => b,
   nY: () => I,
   zx: () => S
@@ -16,7 +16,7 @@ var r = n(200651),
   c = n(84735),
   u = n(922770),
   d = n(388032),
-  f = n(420383);
+  f = n(982456);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,7 +80,7 @@ let b = {
     LINK: f.lookLink,
     BLANK: f.lookBlank
   },
-  v = {
+  y = {
     BRAND: f.colorBrand,
     BRAND_INVERTED: f.colorBrandInverted,
     RED: f.colorRed,
@@ -91,7 +91,7 @@ let b = {
     TRANSPARENT: f.colorTransparent,
     CUSTOM: ""
   },
-  y = {
+  v = {
     NONE: "",
     TINY: f.sizeTiny,
     SMALL: f.sizeSmall,
@@ -106,18 +106,18 @@ function O(e, t) {
   var n, r, i, o;
   let a = null == e ? void 0 : e.offset;
   return t === b.LINK || t === b.BLANK ? a : null == a ? -2 : "number" == typeof a ? a + 2 : {
-    top: (null !== (n = a.top) && void 0 !== n ? n : 0) - 2,
-    right: (null !== (r = a.right) && void 0 !== r ? r : 0) - 2,
-    bottom: (null !== (i = a.bottom) && void 0 !== i ? i : 0) - 2,
-    left: (null !== (o = a.left) && void 0 !== o ? o : 0) - 2
+    top: (null != (n = a.top) ? n : 0) - 2,
+    right: (null != (r = a.right) ? r : 0) - 2,
+    bottom: (null != (i = a.bottom) ? i : 0) - 2,
+    left: (null != (o = a.left) ? o : 0) - 2
   }
 }
 
 function I() {
   let {
     look: e = b.FILLED,
-    color: t = v.BRAND,
-    size: n = y.MEDIUM,
+    color: t = y.BRAND,
+    size: n = v.MEDIUM,
     fullWidth: r = !1,
     grow: i = !0,
     submitting: o = !1,
@@ -133,8 +133,8 @@ function I() {
 function S(e) {
   var {
     look: t = b.FILLED,
-    color: n = v.BRAND,
-    size: o = y.MEDIUM,
+    color: n = y.BRAND,
+    size: o = v.MEDIUM,
     fullWidth: s = !1,
     grow: _ = !0,
     disabled: h = !1,
@@ -215,12 +215,11 @@ function S(e) {
     })]
   }) : q
 }
-
-function T(e) {
+S.Looks = b, S.Colors = y, S.Sizes = v, S.Link = function(e) {
   var {
     look: t = b.FILLED,
-    color: n = v.BRAND,
-    size: i = y.MEDIUM,
+    color: n = y.BRAND,
+    size: i = v.MEDIUM,
     fullWidth: o = !1,
     grow: l = !0,
     style: c,
@@ -250,4 +249,3 @@ function T(e) {
     })
   }))
 }
-S.Looks = b, S.Colors = v, S.Sizes = y, S.Link = T

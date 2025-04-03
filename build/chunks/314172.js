@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -16,7 +16,7 @@ var i = n(442837),
   f = n(475413),
   _ = n(981631),
   p = n(388032),
-  h = n(673414);
+  h = n(645214);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,19 +57,19 @@ function b(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     guild: t,
     guildMember: n,
     numRoles: m,
     highestRole: E,
-    onAddRole: v,
-    buttonRef: y
+    onAddRole: y,
+    buttonRef: v
   } = e, O = (0, i.e7)([c.Z], () => c.Z.roleStyle);
   if (!(0, i.e7)([d.Z], () => d.Z.can(_.Plq.MANAGE_ROLES, t))) return null;
   let I = e => (0, u.Gy)(t.id, e.id) && !e.managed && d.Z.isRoleHigher(t, E, e) && -1 === n.roles.indexOf(e.id);
   return (0, r.jsx)(a.y, {
-    targetElementRef: y,
+    targetElementRef: v,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -80,7 +80,7 @@ function v(e) {
         guild: t,
         roleStyle: O,
         roleFilter: I,
-        onSelect: v,
+        onSelect: y,
         onClose: n
       })
     },
@@ -89,14 +89,14 @@ function v(e) {
       "aria-label": !1,
       shouldShow: m > 0,
       children: (0, r.jsxs)(f.kF, b(g({
-        ref: y,
+        ref: v,
         className: h.button,
         color: o.zx.Colors.CUSTOM,
         themeColor: "none",
         size: o.zx.Sizes.NONE,
         grow: !1,
         "aria-label": p.NW.string(p.t.icyMgY),
-        buttonRef: y
+        buttonRef: v
       }, e), {
         children: [(0, r.jsx)(s.qJs, {
           size: "xs",

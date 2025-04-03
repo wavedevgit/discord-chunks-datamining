@@ -12,7 +12,7 @@ var i = n(120356),
   l = n(565138),
   c = n(474936),
   u = n(388032),
-  d = n(122292);
+  d = n(235831);
 let f = {
   XXSMALL: d.xxsmall,
   XSMALL: d.xsmall,
@@ -78,7 +78,7 @@ let m = e => {
     className: g,
     guildClassName: E,
     size: b = f.MEDIUM,
-    allowUnknownGameIcon: v = !0
+    allowUnknownGameIcon: y = !0
   } = e;
   if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(b))), null == (t = (0, s.Z)(m, t)) && null != i) {
     let e = h(b);
@@ -88,14 +88,14 @@ let m = e => {
       size: e
     })
   }
-  if (null == t) return v ? (0, r.jsx)(a.IMN, {
+  if (null == t) return y ? (0, r.jsx)(a.IMN, {
     size: "md",
     color: "currentColor",
     className: o()(d.gameIcon, b, g)
   }) : null;
-  let y = null == n ? void 0 : n.name,
-    O = null != y && "" !== y ? u.NW.formatToPlainString(u.t.tiKyYm, {
-      applicationName: y
+  let v = null == n ? void 0 : n.name,
+    O = null != v && "" !== v ? u.NW.formatToPlainString(u.t.tiKyYm, {
+      applicationName: v
     }) : u.NW.string(u.t["2B/phI"]);
   return (0, r.jsx)("img", {
     alt: O,

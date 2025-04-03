@@ -239,8 +239,8 @@ class E extends(r = o.PureComponent) {
       } = this.props, {
         dragging: E,
         dragging: b,
-        verticalOrientation: v,
-        horizontalOrientation: y
+        verticalOrientation: y,
+        horizontalOrientation: v
       } = this.state, O = !1;
       if (null == r || !E && l(this._dragStart, {
           x: t,
@@ -256,15 +256,15 @@ class E extends(r = o.PureComponent) {
       }, i, o, I, S));
       if (g) {
         let e = _(T = p(T));
-        v = e[0], y = e[1]
+        y = e[0], v = e[1]
       } else T = {
         top: T.top,
         left: T.left
       };
-      2 === s && y !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, O = !0), 2 === a && v !== this.state.verticalOrientation && (this._offsetY = S - this._offsetY, O = !0), this.setDOMPositions(T), b || null == u || u(T, r), null == f || f(T, r), O && (null == h || h([v, y])), this.setState({
+      2 === s && v !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, O = !0), 2 === a && y !== this.state.verticalOrientation && (this._offsetY = S - this._offsetY, O = !0), this.setDOMPositions(T), b || null == u || u(T, r), null == f || f(T, r), O && (null == h || h([y, v])), this.setState({
         dragging: E,
-        verticalOrientation: v,
-        horizontalOrientation: y,
+        verticalOrientation: y,
+        horizontalOrientation: v,
         atTopEdge: 0 === T.top
       })
     }), s(this, "handleMouseUp", () => {
@@ -281,23 +281,23 @@ class E extends(r = o.PureComponent) {
     }), s(this, "_checkBoundsRAF", null), s(this, "checkBounds", () => {
       null != this._checkBoundsRAF && cancelAnimationFrame(this._checkBoundsRAF), this._checkBoundsRAF = requestAnimationFrame(this._performCheckBounds)
     }), s(this, "_performCheckBounds", () => {
-      let e;
-      let {
-        position: t,
-        state: n,
-        draggableRef: {
-          current: r
-        },
-        props: {
-          maxX: i,
-          maxY: o,
-          onRelocated: a,
-          snapOrientation: s
-        }
-      } = this, {
-        verticalOrientation: l,
-        horizontalOrientation: c
-      } = this.state;
+      let e, {
+          position: t,
+          state: n,
+          draggableRef: {
+            current: r
+          },
+          props: {
+            maxX: i,
+            maxY: o,
+            onRelocated: a,
+            snapOrientation: s
+          }
+        } = this,
+        {
+          verticalOrientation: l,
+          horizontalOrientation: c
+        } = this.state;
       if (null == r) return;
       let {
         clientHeight: u,

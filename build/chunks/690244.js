@@ -39,8 +39,8 @@ var p = function() {
     return e.__proto__
   } : null),
   b = {},
-  v = "undefined" != typeof Uint8Array && E ? E(Uint8Array) : r,
-  y = {
+  y = "undefined" != typeof Uint8Array && E ? E(Uint8Array) : r,
+  v = {
     __proto__: null,
     "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
     "%Array%": Array,
@@ -98,7 +98,7 @@ var p = function() {
     "%Symbol%": m ? Symbol : r,
     "%SyntaxError%": l,
     "%ThrowTypeError%": h,
-    "%TypedArray%": v,
+    "%TypedArray%": y,
     "%TypeError%": c,
     "%Uint8Array%": "undefined" == typeof Uint8Array ? r : Uint8Array,
     "%Uint8ClampedArray%": "undefined" == typeof Uint8ClampedArray ? r : Uint8ClampedArray,
@@ -113,7 +113,7 @@ if (E) try {
   null.error
 } catch (e) {
   var O = E(E(e));
-  y["%Error.prototype%"] = O
+  v["%Error.prototype%"] = O
 }
 var I = function e(t) {
     var n;
@@ -127,7 +127,7 @@ var I = function e(t) {
       var i = e("%AsyncGenerator%");
       i && E && (n = E(i.prototype))
     }
-    return y[t] = n, n
+    return v[t] = n, n
   },
   S = {
     __proto__: null,
@@ -204,8 +204,8 @@ var I = function e(t) {
   },
   M = function(e, t) {
     var n, r = e;
-    if (N(S, r) && (r = "%" + (n = S[r])[0] + "%"), N(y, r)) {
-      var i = y[r];
+    if (N(S, r) && (r = "%" + (n = S[r])[0] + "%"), N(v, r)) {
+      var i = v[r];
       if (i === b && (i = I(r)), void 0 === i && !t) throw new c("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
@@ -232,7 +232,7 @@ e.exports = function(e, t) {
       h = P(p, 0, 1),
       m = P(p, -1);
     if (('"' === h || "'" === h || "`" === h || '"' === m || "'" === m || "`" === m) && h !== m) throw new l("property names with quotes must have matching quotes");
-    if ("constructor" !== p && f || (s = !0), r += "." + p, N(y, o = "%" + r + "%")) a = y[o];
+    if ("constructor" !== p && f || (s = !0), r += "." + p, N(v, o = "%" + r + "%")) a = v[o];
     else if (null != a) {
       if (!(p in a)) {
         if (!t) throw new c("base intrinsic for " + e + " exists, but the property is not available.");
@@ -242,7 +242,7 @@ e.exports = function(e, t) {
         var g = _(a, p);
         a = (f = !!g) && "get" in g && !("originalValue" in g.get) ? g.get : a[p]
       } else f = N(a, p), a = a[p];
-      f && !s && (y[o] = a)
+      f && !s && (v[o] = a)
     }
   }
   return a

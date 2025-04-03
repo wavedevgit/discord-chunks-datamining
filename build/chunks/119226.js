@@ -18,7 +18,7 @@ var i = n(278074),
   p = n(998502),
   h = n(987209),
   m = n(388032),
-  g = n(790894),
+  g = n(563967),
   E = n(241822);
 
 function b(e, t, n) {
@@ -30,7 +30,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,7 +74,7 @@ function S(e) {
   });
   return (0, r.jsx)("div", {
     className: g.giftMainAnimationWrapper,
-    children: (0, r.jsx)(I, O(v({}, i), {
+    children: (0, r.jsx)(I, O(y({}, i), {
       avatarDecoration: n,
       src: o,
       className: g.avatar,
@@ -88,7 +88,7 @@ function T(e) {
   var t;
   let {
     id: n
-  } = e, i = null === (t = (0, f.V)(n)) || void 0 === t ? void 0 : t.config;
+  } = e, i = null == (t = (0, f.V)(n)) ? void 0 : t.config;
   return (0, r.jsxs)("div", {
     className: g.profileEffectContainer,
     children: [(0, r.jsx)("img", {

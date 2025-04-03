@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => O,
-  xm: () => v
+  xm: () => y
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -12,8 +12,8 @@ var i = n(399606),
   s = n(413335),
   l = n(50101),
   c = n(388032),
-  u = n(296260),
-  d = n(258892),
+  u = n(680278),
+  d = n(501867),
   f = n(567949),
   _ = n(552781),
   p = n(952567),
@@ -59,7 +59,7 @@ function b(e, t) {
   return i
 }
 
-function v(e) {
+function y(e) {
   let {
     heading: t,
     description: n,
@@ -100,7 +100,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   var {
     imgSrc: t
   } = e, n = E(e, ["imgSrc"]);
@@ -112,7 +112,7 @@ function y(e) {
       alt: ""
     }), (0, r.jsx)("div", {
       className: d.contentContainer,
-      children: (0, r.jsx)(v, g({}, n))
+      children: (0, r.jsx)(y, g({}, n))
     })]
   })
 }
@@ -128,17 +128,17 @@ let O = function(e) {
       children: c.NW.string(c.t.aGdB3N)
     }), (0, r.jsxs)("div", {
       className: d.topPerksCards,
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(v, {
         description: c.NW.string(c.t.wOYbTk),
         heading: c.NW.string(c.t.G6jZo6),
         imgSrc: n ? _ : f,
         label: s ? c.NW.string(u.Z.na6fmJ) : void 0
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(v, {
         description: c.NW.string(c.t.HTvLGh),
         heading: c.NW.string(c.t.IpRQw8),
         imgSrc: p,
         label: s ? c.NW.string(u.Z.dyNT9v) : void 0
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(v, {
         description: c.NW.string(c.t.yCjoUF),
         heading: c.NW.string(c.t["/bX4Ji"]),
         imgSrc: h,

@@ -29,7 +29,7 @@ let o = function(e, t) {
     "." === _ ? i(a, f) : ".." === _ ? (i(a, f), d++) : d && (i(a, f), d--)
   }
   if (!c)
-    for (; d--; d) a.unshift("..");
+    for (; d--;) a.unshift("..");
   !c || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
   var p = a.join("/");
   return n && "/" !== p.substr(-1) && (p += "/"), p

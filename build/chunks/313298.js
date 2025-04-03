@@ -26,25 +26,25 @@ let c = 75e3,
 
 function h(e) {
   var t;
-  return (null !== (t = o.Z.getMemberCount(e)) && void 0 !== t ? t : 0) >= c ? u : f
+  return (null != (t = o.Z.getMemberCount(e)) ? t : 0) >= c ? u : f
 }
 
 function m(e) {
   var t;
-  return (null !== (t = o.Z.getMemberCount(e)) && void 0 !== t ? t : 0) >= c ? d : _
+  return (null != (t = o.Z.getMemberCount(e)) ? t : 0) >= c ? d : _
 }
 let g = {},
   E = {},
   b = null;
 
-function v() {
+function y() {
   null == b && (b = setInterval(() => {
     a.default.forEachKey(g, e => {
       I(e) && O(e)
     })
   }, p))
 }
-async function y(e, t) {
+async function v(e, t) {
   null == g[e] && (g[e] = new Set), g[e].add(t), null == E[e] && (E[e] = Date.now()), I(e) && await O(e)
 }
 
@@ -76,13 +76,13 @@ function S(e) {
 }
 class T extends i.Z {
   handleInitialize() {
-    null == b && v()
+    null == b && y()
   }
   handleGuildMemberUpdate(e, t) {
-    if (s.Z.isInitialized(e)) return y(e, t)
+    if (s.Z.isInitialized(e)) return v(e, t)
   }
   handleGuildMemberRemove(e, t) {
-    if (s.Z.isInitialized(e)) return y(e, t)
+    if (s.Z.isInitialized(e)) return v(e, t)
   }
   handleGuildDelete(e) {
     let t = e.guild.id;

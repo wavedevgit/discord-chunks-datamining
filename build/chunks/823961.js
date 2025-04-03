@@ -31,10 +31,10 @@ let u = new Map,
   b = e => {
     u.set(e.skuId, e.price), d.delete(e.skuId)
   },
-  v = e => {
+  y = e => {
     d.delete(e.skuId), _.add(e.skuId)
   },
-  y = e => {
+  v = e => {
     _.delete(e.skuId)
   },
   O = e => {
@@ -107,8 +107,8 @@ c(P, "displayName", "ConsumablesStore");
 let w = new P(a.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: b,
-  CONSUMABLES_PRICE_FETCH_FAILED: v,
-  CONSUMABLES_CLEAR_ERROR: y,
+  CONSUMABLES_PRICE_FETCH_FAILED: y,
+  CONSUMABLES_CLEAR_ERROR: v,
   CONSUMABLES_ENTITLEMENT_FETCH_COMPLETED: I,
   SKU_PURCHASE_SUCCESS: O,
   CONSUMABLES_ENTITLEMENT_FETCH_FAILED: S,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(981631),
   d = n(474936),
   f = n(388032),
-  _ = n(413538);
+  _ = n(755645);
 let p = 1048576,
   h = [{
     getPerkHeading: () => f.NW.string(f.t.tIiwur),
@@ -165,8 +165,7 @@ function m(e) {
 }
 
 function g(e) {
-  let t;
-  let {
+  let t, {
     className: n,
     textVariant: i = "text-md/bold",
     value: o
@@ -225,17 +224,17 @@ function b(e) {
     })
   })
 }
-let v = function(e) {
+let y = function(e) {
   let t = (0, c.ZP)(),
     [n, o] = i.useState(null),
     {
       className: d,
       guild: p,
       hideHeading: E,
-      hideTier0: v
+      hideTier0: y
     } = e;
 
-  function y(e) {
+  function v(e) {
     o(e)
   }
 
@@ -262,7 +261,7 @@ let v = function(e) {
             children: [(0, r.jsx)(m, {
               className: _.tableRowHeading,
               children: f.NW.string(f.t.F5MY0t)
-            }), !v && (0, r.jsx)(m, {
+            }), !y && (0, r.jsx)(m, {
               tier: u.Eu4.NONE,
               children: f.NW.string(f.t.mx8j2t)
             }), (0, r.jsx)(m, {
@@ -282,7 +281,7 @@ let v = function(e) {
             let o = n === i;
 
             function c() {
-              y(i)
+              v(i)
             }
             return void 0 === e.predicate ? (0, r.jsxs)("tr", {
               className: _.__invalid_tableRow,
@@ -313,7 +312,7 @@ let v = function(e) {
                     })
                   })
                 })
-              }), !v && (0, r.jsx)(g, {
+              }), !y && (0, r.jsx)(g, {
                 textVariant: "text-md/normal",
                 value: e.getTier0Value()
               }), (0, r.jsx)(g, {

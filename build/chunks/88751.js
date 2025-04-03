@@ -35,7 +35,7 @@ function b(e, t) {
   return (0, h.gf)(n) === h.xO.ON_STAGE
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   return _.BT({
     permission: p.yP,
     user: e,
@@ -45,21 +45,21 @@ function v(e, t, n) {
   })
 }
 
-function y(e, t) {
+function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = l.Z.getChannel(t),
     i = null == r ? void 0 : r.getGuildId(),
     o = u.Z.getGuild(i);
   return null != o && null != r && r.isGuildStageVoice() ? {
     speaker: b(e, t),
-    moderator: n ? v(e, o, r) : null
+    moderator: n ? y(e, o, r) : null
   } : E
 }
 
 function O(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   null == g[t] && (g[t] = {});
-  let r = y(e, t, n);
+  let r = v(e, t, n);
   return g[t][e] = r, r
 }
 
@@ -67,7 +67,7 @@ function I(e, t) {
   var n;
   if (null == t) return !1;
   let r = l.Z.getChannel(t);
-  return !!(null != r && r.isGuildStageVoice()) && (null === (n = g[t]) || void 0 === n || delete n[e], !0)
+  return null != r && !!r.isGuildStageVoice() && (null == (n = g[t]) || delete n[e], !0)
 }
 
 function S(e, t) {
@@ -145,7 +145,7 @@ class L extends(r = a.ZP.Store) {
   }
   isModerator(e, t) {
     var n;
-    return null !== (n = this.getPermissionsForUser(e, t, !0).moderator) && void 0 !== n && n
+    return null != (n = this.getPermissionsForUser(e, t, !0).moderator) && n
   }
   isAudienceMember(e, t) {
     let n = this.getPermissionsForUser(e, t);
@@ -155,8 +155,11 @@ class L extends(r = a.ZP.Store) {
     var n;
     let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     if (null == e || null == t) return E;
-    let i = null === (n = g[t]) || void 0 === n ? void 0 : n[e];
-    return null != i ? r && null == i.moderator ? O(e, t, !0) : i : O(e, t, r)
+    let i = null == (n = g[t]) ? void 0 : n[e];
+    if (null != i)
+      if (r && null == i.moderator) return O(e, t, !0);
+      else return i;
+    return O(e, t, r)
   }
 }
 m(L, "displayName", "StageChannelRoleStore");

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /[a-zA-Z_$][a-zA-Z0-9_$]*/,
     r = t.concat(n, t.concat("(\\.", n, ")*")),
@@ -55,4 +55,3 @@ function t(e) {
     illegal: /#/
   }
 }
-e.exports = t

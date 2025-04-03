@@ -33,7 +33,7 @@ function s(e, t) {
         facing: u
       }
     });
-  return e !== a.h7.VIDEO_INPUT && !r && (null === i() || void 0 === i() ? void 0 : null === (n = i().os) || void 0 === n ? void 0 : n.family) != null && /^win/i.test(i().os.family) && o.unshift({
+  return e !== a.h7.VIDEO_INPUT && !r && (null === i() || void 0 === i() || null == (n = i().os) ? void 0 : n.family) != null && /^win/i.test(i().os.family) && o.unshift({
     id: a.w5,
     type: e,
     index: -1,

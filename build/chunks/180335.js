@@ -19,7 +19,7 @@ var r = n(423875),
 function u(e) {
   if ((0, o.dU)(e)) {
     var t, n;
-    return (null === (n = e.extra.entries[0]) || void 0 === n ? void 0 : null === (t = n.media) || void 0 === t ? void 0 : t.provider) === r.p.SPOTIFY
+    return (null == (n = e.extra.entries[0]) || null == (t = n.media) ? void 0 : t.provider) === r.p.SPOTIFY
   }
   return !!(0, o.KF)(e) && e.extra.media.provider === r.p.SPOTIFY
 }
@@ -36,7 +36,7 @@ function f(e, t) {
 function _(e, t) {
   if (u(e)) {
     var n;
-    return (0, l.Ps)(null === (n = t.party) || void 0 === n ? void 0 : n.id)
+    return (0, l.Ps)(null == (n = t.party) ? void 0 : n.id)
   }
   return !1
 }

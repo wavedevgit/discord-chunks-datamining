@@ -25,51 +25,51 @@ let d = {
       n = e.options,
       o = e.name;
     if (!t.modifiersData[o]._skip) {
-      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, v = n.flipVariations, y = void 0 === v || v, O = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I) === I, T = h || (S || !y ? [(0, r.Z)(I)] : u(I)), N = [I].concat(T).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, v = void 0 === y || y, O = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I), T = S === I, N = h || (T || !v ? [(0, r.Z)(I)] : u(I)), A = [I].concat(N).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,
             rootBoundary: E,
             padding: m,
-            flipVariations: y,
+            flipVariations: v,
             allowedAutoPlacements: O
           }) : n)
-        }, []), A = t.rects.reference, C = t.rects.popper, R = new Map, P = !0, w = N[0], D = 0; D < N.length; D++) {
-        var L = N[D],
-          x = (0, i.Z)(L),
-          M = (0, c.Z)(L) === l.BL,
-          k = [l.we, l.I].indexOf(x) >= 0,
-          j = k ? "width" : "height",
-          U = (0, a.Z)(t, {
-            placement: L,
+        }, []), C = t.rects.reference, R = t.rects.popper, P = new Map, w = !0, D = A[0], L = 0; L < A.length; L++) {
+        var x = A[L],
+          M = (0, i.Z)(x),
+          k = (0, c.Z)(x) === l.BL,
+          j = [l.we, l.I].indexOf(M) >= 0,
+          U = j ? "width" : "height",
+          G = (0, a.Z)(t, {
+            placement: x,
             boundary: g,
             rootBoundary: E,
             altBoundary: b,
             padding: m
           }),
-          G = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
-        A[j] > C[j] && (G = (0, r.Z)(G));
-        var B = (0, r.Z)(G),
-          F = [];
-        if (f && F.push(U[x] <= 0), p && F.push(U[G] <= 0, U[B] <= 0), F.every(function(e) {
+          B = j ? k ? l.F2 : l.t$ : k ? l.I : l.we;
+        C[U] > R[U] && (B = (0, r.Z)(B));
+        var F = (0, r.Z)(B),
+          V = [];
+        if (f && V.push(G[M] <= 0), p && V.push(G[B] <= 0, G[F] <= 0), V.every(function(e) {
             return e
           })) {
-          w = L, P = !1;
+          D = x, w = !1;
           break
         }
-        R.set(L, F)
+        P.set(x, V)
       }
-      if (P)
-        for (var V = y ? 3 : 1, Z = function(e) {
-            var t = N.find(function(t) {
-              var n = R.get(t);
+      if (w)
+        for (var Z = v ? 3 : 1, H = function(e) {
+            var t = A.find(function(t) {
+              var n = P.get(t);
               if (n) return n.slice(0, e).every(function(e) {
                 return e
               })
             });
-            if (t) return w = t, "break"
-          }, H = V; H > 0 && "break" !== Z(H); H--);
-      t.placement !== w && (t.modifiersData[o]._skip = !0, t.placement = w, t.reset = !0)
+            if (t) return D = t, "break"
+          }, W = Z; W > 0 && "break" !== H(W); W--);
+      t.placement !== D && (t.modifiersData[o]._skip = !0, t.placement = D, t.reset = !0)
     }
   },
   requiresIfExists: ["offset"],

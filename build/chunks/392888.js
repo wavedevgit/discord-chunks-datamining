@@ -56,13 +56,11 @@ function m(e, t) {
 }
 class g extends s.Z {
   handlePostConnectionOpen() {
-    if (!o.K.get("turnedOffNewNotifications") && l.Z.hasConsented(f.pjP.PERSONALIZATION)) {
-      if (u.xT.getCurrentConfig({
-          location: "NotificationMigrationManager"
-        }, {
-          autoTrackExposure: !1
-        }).enabled && !c.ZP.useNewNotifications) 0 > Date.now() && this.checkOldUserExperiment(), this.checkNewUserExperiment()
-    }
+    !o.K.get("turnedOffNewNotifications") && l.Z.hasConsented(f.pjP.PERSONALIZATION) && u.xT.getCurrentConfig({
+      location: "NotificationMigrationManager"
+    }, {
+      autoTrackExposure: !1
+    }).enabled && (c.ZP.useNewNotifications || (0 > Date.now() && this.checkOldUserExperiment(), this.checkNewUserExperiment()))
   }
   async checkOldUserExperiment() {
     let {
@@ -85,7 +83,7 @@ class g extends s.Z {
     }), l = (0, d._Y)(s), {
       default: c
     } = await n.e("53512").then(n.bind(n, 753521));
-    if (!(0, a.$sL)()) u.fs.trackExposure({
+    !(0, a.$sL)() && (u.fs.trackExposure({
       location: "NotificationMigrationManager"
     }), t && ((0, d.cG)(o, l) ? (0, a.h7j)(e => (0, r.jsx)(c, m(p({}, e), {
       dismissable: !1,
@@ -93,7 +91,7 @@ class g extends s.Z {
       myUsage: l
     })), {
       onCloseRequest: () => {}
-    }) : (0, d.ly)())
+    }) : (0, d.ly)()))
   }
   checkNewUserExperiment() {
     let {

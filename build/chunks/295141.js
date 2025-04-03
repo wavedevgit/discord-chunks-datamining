@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   HT: () => C,
-  K5: () => v,
+  K5: () => y,
   LB: () => N,
   MI: () => T,
   V_: () => I,
@@ -13,7 +13,7 @@ n.d(t, {
   ci: () => E,
   eI: () => S,
   es: () => O,
-  iW: () => y,
+  iW: () => v,
   j8: () => A,
   nU: () => h,
   rD: () => m
@@ -162,7 +162,7 @@ let _ = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, v = async function(e, t) {
+}, y = async function(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   try {
     return (await r.tn.get({
@@ -176,7 +176,7 @@ let _ = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, y = async e => {
+}, v = async e => {
   try {
     return (await r.tn.get({
       url: o.ANM.SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING(e),
@@ -251,7 +251,7 @@ let _ = async (e, t) => {
       url: o.ANM.GUILD_DISCOVERY_SLUG(e),
       rejectWithError: !1
     });
-    return null !== (t = n.body) && void 0 !== t ? t : JSON.parse(n.text)
+    return null != (t = n.body) ? t : JSON.parse(n.text)
   } catch (e) {
     throw new i.Hx(e)
   }

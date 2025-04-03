@@ -49,12 +49,12 @@ let d = {};
 
 function f(e) {
   let t = a.Z.getChannel(e);
-  return !!(null != t && t.isForumLikeChannel())
+  return null != t && !!t.isForumLikeChannel()
 }
 
 function _(e) {
   var t;
-  let n = null !== (t = d[e]) && void 0 !== t ? t : {
+  let n = null != (t = d[e]) ? t : {
     query: null,
     loading: !1,
     results: null
@@ -127,18 +127,18 @@ function b(e) {
   let i = d[r];
   if (null == i) return !1;
   d[r] = u(l({}, i), {
-    results: null === (t = i.results) || void 0 === t ? void 0 : t.filter(e => n.id !== e)
+    results: null == (t = i.results) ? void 0 : t.filter(e => n.id !== e)
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     channel: t
   } = e;
   return delete d[t.id]
 }
 
-function y() {
+function v() {
   d = {}
 }
 class O extends(r = i.ZP.Store) {
@@ -149,7 +149,7 @@ class O extends(r = i.ZP.Store) {
   getSearchLoading(e) {
     var t;
     let n = d[e];
-    return null !== (t = null == n ? void 0 : n.loading) && void 0 !== t && t
+    return null != (t = null == n ? void 0 : n.loading) && t
   }
   getSearchResults(e) {
     let t = d[e];
@@ -162,9 +162,9 @@ class O extends(r = i.ZP.Store) {
 }
 s(O, "displayName", "ForumSearchStore");
 let I = new O(o.Z, {
-  CONNECTION_OPEN: y,
+  CONNECTION_OPEN: v,
   THREAD_DELETE: b,
-  CHANNEL_DELETE: v,
+  CHANNEL_DELETE: y,
   FORUM_SEARCH_QUERY_UPDATED: p,
   FORUM_SEARCH_START: h,
   FORUM_SEARCH_SUCCESS: m,

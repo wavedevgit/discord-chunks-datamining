@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  ASSISTANT_WUMPUS_VOICE_USER: () => y,
+  ASSISTANT_WUMPUS_VOICE_USER: () => v,
   default: () => eP,
   mergeUser: () => A,
   transformUser: () => T,
@@ -32,8 +32,8 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 let b = {},
-  v = 0,
-  y = "47835198259242069";
+  y = 0,
+  v = "47835198259242069";
 
 function O(e, t, n) {
   let r = b[e];
@@ -41,12 +41,12 @@ function O(e, t, n) {
   let i = r;
   i = null == n ? r.removeGuildAvatarHash(t) : r.addGuildAvatarHash(t, n), b[r.id] = i;
   let o = r !== i;
-  return o && v++, o
+  return o && y++, o
 }
 
 function I(e, t) {
   let n = b[e];
-  return !(null == n || (0, m.dM)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, m.lt)(t.primary_guild), b[n.id] = n, v++, !0)
+  return !(null == n || (0, m.dM)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, m.lt)(t.primary_guild), b[n.id] = n, y++, !0)
 }
 
 function S(e, t) {
@@ -100,15 +100,15 @@ function A(e) {
   else if (n) {
     var o;
     let n = T(e);
-    void 0 !== (t = null !== (o = n.premium_type) && void 0 !== o ? o : n.premiumType) && i && (0, c.VR)(n) && (n = C(n)), n = S(r, n), r = r.merge(n)
+    void 0 !== (t = null != (o = n.premium_type) ? o : n.premiumType) && i && (0, c.VR)(n) && (n = C(n)), n = S(r, n), r = r.merge(n)
   }(0, c.jX)((0, c.QI)(r), t, r.premiumType);
   let a = b[e.id] !== r;
-  return b[e.id] = r, a && v++, a
+  return b[e.id] = r, a && y++, a
 }
 
 function C(e) {
   var t;
-  let n = null !== (t = e.premium_type) && void 0 !== t ? t : e.premiumType,
+  let n = null != (t = e.premium_type) ? t : e.premiumType,
     r = R((0, c.VR)(e), n);
   return void 0 !== e.premiumType ? e.premiumType = r : void 0 !== e.premium_type && (e.premium_type = r), e
 }
@@ -122,18 +122,18 @@ function R(e, t) {
 
 function P(e, t) {
   var n, r, i, o, a, s;
-  if (null != e.author && "SENDING" !== e.state && N(e.author) && A(e.author, t), null === (n = e.mentions) || void 0 === n || n.forEach(e => {
+  if (null != e.author && "SENDING" !== e.state && N(e.author) && A(e.author, t), null == (n = e.mentions) || n.forEach(e => {
       N(e) && A(e, t)
-    }), (null === (r = e.interaction) || void 0 === r ? void 0 : r.user) != null && N(null === (i = e.interaction) || void 0 === i ? void 0 : i.user) && A(e.interaction.user, t), null === (o = e.attachments) || void 0 === o || o.forEach(e => {
+    }), (null == (r = e.interaction) ? void 0 : r.user) != null && N(null == (i = e.interaction) ? void 0 : i.user) && A(e.interaction.user, t), null == (o = e.attachments) || o.forEach(e => {
       var n;
-      null === (n = e.clip_participants) || void 0 === n || n.forEach(e => {
+      null == (n = e.clip_participants) || n.forEach(e => {
         N(e) && A(e, t)
       })
-    }), (null === (a = e.resolved) || void 0 === a ? void 0 : a.users) != null)
+    }), (null == (a = e.resolved) ? void 0 : a.users) != null)
     for (let n in e.resolved.users) {
       let r = e.resolved.users[n];
       N(r) && A(r, t)
-    }(null === (s = e.interaction_metadata) || void 0 === s ? void 0 : s.user) != null && N(e.interaction_metadata.user) && A(e.interaction_metadata.user, t)
+    }(null == (s = e.interaction_metadata) ? void 0 : s.user) != null && N(e.interaction_metadata.user) && A(e.interaction_metadata.user, t)
 }
 
 function w(e) {
@@ -148,8 +148,8 @@ function w(e) {
     e.members.forEach(t => {
       O(t.user.id, e.id, t.avatar), I(t.user.id, t.user)
     })
-  }), null != b[_.default.getId()] && (b[y] = new u.Z({
-    id: y,
+  }), null != b[_.default.getId()] && (b[v] = new u.Z({
+    id: v,
     username: "Wumpus",
     discriminator: "0",
     globalName: "Wumpus",
@@ -168,7 +168,7 @@ function D(e) {
     })
   }), null == n || n.forEach(e => {
     var t;
-    null === (t = e.rawRecipients) || void 0 === t || t.forEach(e => {
+    null == (t = e.rawRecipients) || t.forEach(e => {
       A(e)
     })
   })
@@ -180,7 +180,7 @@ function L(e) {
 
 function x(e) {
   if (null != e.users)
-    for (let t of e.users) !(t.id in b && L(t)) && (b[t.id] = new u.Z(t))
+    for (let t of e.users) t.id in b && L(t) || (b[t.id] = new u.Z(t))
 }
 
 function M(e) {
@@ -378,7 +378,7 @@ function er(e) {
   for (let e of t)
     if ("INSERT" === e.op || "UPDATE" === e.op) {
       var n;
-      let t = null === (n = e.item.member) || void 0 === n ? void 0 : n.user;
+      let t = null == (n = e.item.member) ? void 0 : n.user;
       if (null == t) continue;
       I(t.id, t)
     } return !1
@@ -404,7 +404,7 @@ function eo(e) {
 function ea(e) {
   var t;
   let n = !1;
-  for (let r of null !== (t = e.users) && void 0 !== t ? t : []) Object.hasOwn(b, r.id) || (n = A(r) || n);
+  for (let r of null != (t = e.users) ? t : []) Object.hasOwn(b, r.id) || (n = A(r) || n);
   return n
 }
 
@@ -525,14 +525,14 @@ function eb(e) {
   return [...t, ...r].reduce((e, t) => A(t) || e, !1)
 }
 
-function ev(e) {
+function ey(e) {
   let {
     users: t
   } = e;
   return t.reduce((e, t) => A(t) || e, !1)
 }
 
-function ey(e) {
+function ev(e) {
   let {
     users: t
   } = e;
@@ -611,15 +611,15 @@ class eR extends p.Z {
     if (null != t)
       for (let e of t.users) b[e.id] = new u.Z(e);
     if (null != e.users)
-      for (let t of e.users) !(t.id in b && L(t)) && (b[t.id] = new u.Z(t));
+      for (let t of e.users) t.id in b && L(t) || (b[t.id] = new u.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
-        null === (n = e.rawRecipients) || void 0 === n || n.forEach(e => A(e, !1))
+        null == (n = e.rawRecipients) || n.forEach(e => A(e, !1))
       }
   }
   getUserStoreVersion() {
-    return v
+    return y
   }
   getUser(e) {
     if (null != e) return b[e]
@@ -704,10 +704,10 @@ class eR extends p.Z {
       PASSIVE_UPDATE_V2: eo,
       LOCAL_MESSAGES_LOADED: ea,
       FAMILY_CENTER_INITIAL_LOAD: eb,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: ev,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: ey,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eO,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eI,
-      FAMILY_CENTER_REQUEST_LINK_SUCCESS: ey,
+      FAMILY_CENTER_REQUEST_LINK_SUCCESS: ev,
       MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eS,
       LOAD_GRAVITY_HYDRATED: eT,
       EMBEDDED_ACTIVITY_UPDATE_V2: eN,

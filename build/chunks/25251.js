@@ -26,30 +26,30 @@ let u = [],
   g = 3e5,
   E = 6e4,
   b = 36e5,
-  v = e => {
+  y = e => {
     _ = (0, a.cloneDeep)(e);
     let t = {};
     _.forEach(e => {
       if (t[e.id] = e, d.length > 0) {
         var n;
-        t[e.id].config.effects = null !== (n = (0, a.sample)(d)) && void 0 !== n ? n : []
+        t[e.id].config.effects = null != (n = (0, a.sample)(d)) ? n : []
       }
     }), p = t
   },
-  y = () => {
+  v = () => {
     f = !0
   },
   O = e => {
     let {
       profileEffects: t
     } = e;
-    r = void 0, i = Date.now() + g, m = 0, v(0 === t.length ? u : t), f = !1
+    r = void 0, i = Date.now() + g, m = 0, y(0 === t.length ? u : t), f = !1
   },
   I = e => {
     let {
       error: t
     } = e;
-    r = t, i = Date.now() + Math.min(E * 2 ** m, b), ++m, v(u), f = !1
+    r = t, i = Date.now() + Math.min(E * 2 ** m, b), ++m, y(u), f = !1
   },
   S = e => {
     let {
@@ -58,7 +58,7 @@ let u = [],
     h = t
   },
   T = () => {
-    v(u), h = null, i = void 0, f = !1
+    y(u), h = null, i = void 0, f = !1
   },
   N = e => {
     T()
@@ -88,7 +88,7 @@ class A extends(o = s.ZP.Store) {
 }
 c(A, "displayName", "ProfileEffectStore");
 let C = new A(l.Z, {
-  USER_PROFILE_EFFECTS_FETCH: y,
+  USER_PROFILE_EFFECTS_FETCH: v,
   USER_PROFILE_EFFECTS_FETCH_SUCCESS: O,
   USER_PROFILE_EFFECTS_FETCH_FAILURE: I,
   PROFILE_EFFECTS_SET_TRY_IT_OUT: S,

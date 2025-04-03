@@ -43,7 +43,7 @@ let c = 2592e6,
   E = !1,
   b = 1e3;
 
-function v() {
+function y() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
   if (!e && Date.now() < m) return;
   let t = 0,
@@ -63,19 +63,19 @@ function v() {
   p = i, h = o, m = null != s ? s : 1 / 0, g = !0
 }
 
-function y(e) {
+function v(e) {
   let {
     itemIds: t
   } = e;
-  g || v();
+  g || y();
   let n = Date.now(),
     r = !1;
   for (let e of t) h.has(e) || (_.itemImpressions.push([e, n]), r = !0);
-  return v(r), r
+  return y(r), r
 }
 
 function O() {
-  _.itemImpressions = [], v(!0)
+  _.itemImpressions = [], y(!0)
 }
 
 function I() {
@@ -97,7 +97,7 @@ class N extends(r = i.ZP.PersistedStore) {
     return _
   }
   getImpressionCappedItemIds() {
-    return v(), p
+    return y(), p
   }
   getDebugFastImpressionCappingEnabled() {
     return E
@@ -111,7 +111,7 @@ class N extends(r = i.ZP.PersistedStore) {
 }
 s(N, "displayName", "ContentInventoryPersistedStore"), s(N, "persistKey", "ContentInventoryPersistedStore");
 let A = new N(o.Z, {
-  CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS: y,
+  CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS: v,
   CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS: O,
   CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS: I,
   CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING: S,

@@ -34,10 +34,10 @@ function p(e) {
     GuildStore: m
   } = e;
   if (null == i) return 8;
-  if ((null == l ? void 0 : l.nsfwAllowed) === !1 && (null == a ? void 0 : null === (t = a.embeddedActivityConfig) || void 0 === t ? void 0 : t.requires_age_gate) === !0) return 7;
+  if ((null == l ? void 0 : l.nsfwAllowed) === !1 && (null == a || null == (t = a.embeddedActivityConfig) ? void 0 : t.requires_age_gate) === !0) return 7;
   if (!u) return 5;
-  if (!(0, d.Z)(null == a ? void 0 : null === (n = a.embeddedActivityConfig) || void 0 === n ? void 0 : n.supported_platforms)) return 6;
-  let g = null != s ? s : null === (r = p.getVoiceStateForSession(i, null == o ? void 0 : o.session_id)) || void 0 === r ? void 0 : r.channelId;
+  if (!(0, d.Z)(null == a || null == (n = a.embeddedActivityConfig) ? void 0 : n.supported_platforms)) return 6;
+  let g = null != s ? s : null == (r = p.getVoiceStateForSession(i, null == o ? void 0 : o.session_id)) ? void 0 : r.channelId;
   if (null == g) return 4;
   let E = _.getChannel(s);
   if (null == E) return 4;

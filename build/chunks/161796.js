@@ -204,13 +204,11 @@ var _ = {
   yellow: 0xffff00ff,
   yellowgreen: 0x9acd32ff
 };
-
-function p(e) {
+t.rgba = function(e) {
   return {
     r: Math.round((0xff000000 & e) >>> 24),
     g: Math.round((0xff0000 & e) >>> 16),
     b: Math.round((65280 & e) >>> 8),
     a: ((255 & e) >>> 0) / 255
   }
-}
-t.rgba = p, e.exports = t
+}, e.exports = t

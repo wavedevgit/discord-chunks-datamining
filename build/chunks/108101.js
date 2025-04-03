@@ -16,8 +16,8 @@ var r = n(687249),
   g = n(292548),
   E = n(290677),
   b = n(551023),
-  v = n(118788),
-  y = n(661233),
+  y = n(118788),
+  v = n(661233),
   O = n(357361),
   I = n(438330),
   S = 1,
@@ -56,7 +56,7 @@ function ee(e, t, n, C, R, P) {
     M = t & T,
     j = t & N;
   if (n && (w = R ? n(e, C, R, P) : n(e)), void 0 !== w) return w;
-  if (!y(e)) return e;
+  if (!v(e)) return e;
   var U = E(e);
   if (U) {
     if (w = h(e), !x) return c(e, w)
@@ -76,7 +76,7 @@ function ee(e, t, n, C, R, P) {
   if (F) return F;
   P.set(e, w), O(e) ? e.forEach(function(r) {
     w.add(ee(r, t, n, r, e, P))
-  }) : v(e) && e.forEach(function(r, i) {
+  }) : y(e) && e.forEach(function(r, i) {
     w.set(i, ee(r, t, n, i, e, P))
   });
   var V = j ? M ? _ : f : M ? keysIn : I,

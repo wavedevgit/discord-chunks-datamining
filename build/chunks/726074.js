@@ -26,7 +26,7 @@ function a(e) {
       characterData: !0
     }),
     function() {
-      t = -t, r.data = t
+      r.data = t = -t
     }
 }
 let s = "function" == typeof i ? a : o

@@ -24,28 +24,28 @@ function d(e) {
     appContext: m
   } = e, [g, E] = i.useState(!1), {
     analyticsLocations: b
-  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), v = (0, l.Z)({
+  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), y = (0, l.Z)({
     display: _,
     user: n,
     activity: d,
     entry: f,
     analyticsLocations: b
-  }), y = (0, c.Z)({
+  }), v = (0, c.Z)({
     entry: f,
     activity: d,
     user: n,
     display: _,
     onClose: h,
-    onAction: v,
+    onAction: y,
     isMenuOpen: g,
     appContext: m
   });
-  return 0 === y.length || n.bot ? null : (0, r.jsx)(o.yRy, {
+  return 0 === v.length || n.bot ? null : (0, r.jsx)(o.yRy, {
     align: "top",
     position: "right",
     disablePointerEvents: !1,
     onRequestOpen: () => {
-      v({
+      y({
         action: "OPEN_MENU"
       }), E(!0)
     },
@@ -63,7 +63,7 @@ function d(e) {
           "aria-label": u.NW.string(u.t.PlAQz8),
           onSelect: p,
           children: (0, r.jsx)(o.kSQ, {
-            children: y
+            children: v
           })
         })
       })

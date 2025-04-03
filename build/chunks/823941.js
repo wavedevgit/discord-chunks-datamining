@@ -21,13 +21,13 @@ var r = n(200651),
   g = n(74538),
   E = n(884697),
   b = n(624377),
-  v = n(141011),
-  y = n(813083),
+  y = n(141011),
+  v = n(813083),
   O = n(372654),
   I = n(794324),
   S = n(474936),
   T = n(388032),
-  N = n(933433);
+  N = n(544348);
 let A = 90,
   C = 28,
   R = (0, E.IC)(A),
@@ -86,7 +86,7 @@ function D(e) {
     categoryBannerStatic: p,
     categoryBannerAnimated: g
   } = (0, I.tK)(t), S = !!(null == _ ? void 0 : _.showDarkBannerText);
-  return (0, r.jsxs)(v.Z, {
+  return (0, r.jsxs)(y.Z, {
     asset: p,
     className: a()(N.shopBanner, n),
     style: null != o ? {
@@ -130,7 +130,7 @@ function D(e) {
       children: t.skuId === s.T.DISXCORE ? (0, r.jsx)(P, {
         category: t
       }) : t.summary
-    }), !i && (0, r.jsx)(y.Z, {
+    }), !i && (0, r.jsx)(v.Z, {
       category: t,
       className: N.limitedTimeBadge,
       display: "banner"

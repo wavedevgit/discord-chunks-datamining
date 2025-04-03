@@ -5,8 +5,7 @@ var r = n(314545),
   a = parseFloat,
   s = Math.min,
   l = Math.random;
-
-function c(e, t, n) {
+e.exports = function(e, t, n) {
   if (n && "boolean" != typeof n && i(e, t, n) && (t = n = void 0), void 0 === n && ("boolean" == typeof t ? (n = t, t = void 0) : "boolean" == typeof e && (n = e, e = void 0)), void 0 === e && void 0 === t ? (e = 0, t = 1) : (e = o(e), void 0 === t ? (t = e, e = 0) : t = o(t)), e > t) {
     var c = e;
     e = t, t = c
@@ -17,4 +16,3 @@ function c(e, t, n) {
   }
   return r(e, t)
 }
-e.exports = c

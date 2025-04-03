@@ -19,8 +19,8 @@ var i, o = n(213919),
   g = n(703656),
   E = n(786213),
   b = n(626135),
-  v = n(449934),
-  y = n(960048),
+  y = n(449934),
+  v = n(960048),
   O = n(117240),
   I = n(412788),
   S = n(981631),
@@ -70,7 +70,7 @@ function Q() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   if (x = c.K.get(C), null != W) return W;
   let t = null != x ? x : o.getToken();
-  !(!(0, g.m1)() || !e && null != t || O.Z.isHandoffAvailable()) && X({
+  !(0, g.m1)() || !e && null != t || O.Z.isHandoffAvailable() || X({
     withGuildExperiments: !0
   })
 }
@@ -136,7 +136,7 @@ function en(e) {
   let {
     isMultiAccount: t
   } = e;
-  j = S.u34.NONE, B = "", F = !1, V = null, r = null, !t && (ee(), Q(!1))
+  j = S.u34.NONE, B = "", F = !1, V = null, r = null, t || (ee(), Q(!1))
 }
 
 function er() {
@@ -227,7 +227,7 @@ function em(e) {
     auth: a,
     staticAuthSessionId: s
   } = e;
-  q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, k = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
+  q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, k = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
 }
 
 function eg(e) {
@@ -238,7 +238,7 @@ function eg(e) {
     analyticsToken: i,
     token: o
   } = e;
-  y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), w = r, k = i, $(o), J(), P = n.id, c.K.set(R, n.id)
+  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, k = i, $(o), J(), P = n.id, c.K.set(R, n.id)
 }
 
 function eE(e) {
@@ -248,10 +248,7 @@ function eE(e) {
   q("handleConnectionClosed called with code ".concat(t, "."));
   let r = n(952265).nf;
   if (4004 === t) {
-    if (U || r(T.$$) || r(T.dG)) {
-      ey();
-      return
-    }
+    if (U || r(T.$$) || r(T.dG)) return void ev();
     b.default.track(S.rMx.APP_USER_DEAUTHENTICATED, {
       user_id: c.K.get(R)
     }), eO(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
@@ -266,14 +263,14 @@ function eb(e) {
   q("handleUpdateToken called"), $(t, n), J()
 }
 
-function ev(e) {
+function ey(e) {
   let {
     authSessionIdHash: t
   } = e;
   null != t && (D = t)
 }
 
-function ey() {
+function ev() {
   U = !0, eO(), u.Z.wait(() => {
     (0, g.uL)(S.Z5c.REGISTER)
   })
@@ -283,10 +280,10 @@ function eO(e) {
   var t;
   q("handleLogout called.");
   let n = ee();
-  null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t || (n && J(), Q()), s.ZP.PersistedStore.clearAll({
+  null != (t = null == e ? void 0 : e.isSwitchingAccount) && t || (n && J(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore"],
     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), I.Z.clearAll(), h.ZH(), y.Z.clearUser(), c.K.remove(R), P = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, B = "", V = null, F = !1, K = !1, z = !1
+  }), I.Z.clearAll(), h.ZH(), v.Z.clearUser(), c.K.remove(R), P = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, B = "", V = null, F = !1, K = !1, z = !1
 }
 
 function eI() {
@@ -334,10 +331,10 @@ class eC extends(i = s.ZP.Store) {
     return L
   }
   getToken() {
-    return (0, v.LP)()
+    return (0, y.LP)()
   }
   isAuthenticated() {
-    return (0, v.$8)()
+    return (0, y.$8)()
   }
   getFingerprint() {
     return x
@@ -387,7 +384,7 @@ let eR = new eC(u.Z, {
   CONNECTION_OPEN: em,
   OVERLAY_INITIALIZE: eg,
   CONNECTION_CLOSED: eE,
-  AUTH_SESSION_CHANGE: ev,
+  AUTH_SESSION_CHANGE: ey,
   LOGIN: et,
   LOGIN_SUCCESS: ei,
   LOGIN_FAILURE: eo,
@@ -408,7 +405,7 @@ let eR = new eC(u.Z, {
   UPDATE_TOKEN: eb,
   EXPERIMENTS_FETCH: X,
   CURRENT_USER_UPDATE: eT,
-  AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: ey,
+  AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: ev,
   CLOSE_SUSPENDED_USER: eA,
   PASSWORDLESS_FAILURE: es,
   PASSWORDLESS_START: ea

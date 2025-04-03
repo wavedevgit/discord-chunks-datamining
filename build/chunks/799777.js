@@ -25,7 +25,7 @@ let f = "GameLibraryViewStore",
   h = u.iEv.LAST_PLAYED,
   m = !1,
   g = a().debounce(() => {
-    m = !1, y.emitChange()
+    m = !1, v.emitChange()
   }, _);
 
 function E(e) {
@@ -46,10 +46,10 @@ function b(e) {
     sortKey: h
   })
 }
-class v extends(i = s.ZP.Store) {
+class y extends(i = s.ZP.Store) {
   initialize() {
     var e;
-    let t = null !== (e = l.K.get(f)) && void 0 !== e ? e : {};
+    let t = null != (e = l.K.get(f)) ? e : {};
     null != t.sortDirection && null != t.sortKey && (p = t.sortDirection, h = t.sortKey)
   }
   get sortDirection() {
@@ -65,9 +65,9 @@ class v extends(i = s.ZP.Store) {
     return m
   }
 }
-d(v, "displayName", "GameLibraryViewStore");
-let y = new v(c.Z, {
+d(y, "displayName", "GameLibraryViewStore");
+let v = new y(c.Z, {
     LIBRARY_TABLE_SORT_UPDATE: b,
     LIBRARY_TABLE_ACTIVE_ROW_ID_UPDATE: E
   }),
-  O = y
+  O = v

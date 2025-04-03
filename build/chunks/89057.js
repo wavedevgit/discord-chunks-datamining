@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Vq: () => v,
+  Vq: () => y,
   c8: () => b,
-  oQ: () => y
+  oQ: () => v
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(120356),
   f = n(211242),
   _ = n(981631),
   p = n(388032),
-  h = n(966524),
+  h = n(747168),
   m = n(51125),
   g = n(47268);
 
@@ -57,7 +57,7 @@ function b() {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     onClose: t
   } = e;
@@ -77,7 +77,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     className: t
   } = e;

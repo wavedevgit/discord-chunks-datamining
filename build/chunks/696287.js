@@ -58,10 +58,7 @@ class h extends i.Z {
       let {
         games: t
       } = e;
-      if (0 === t.length) {
-        this.stopHeartbeat();
-        return
-      }
+      if (0 === t.length) return void this.stopHeartbeat();
       this.maybeStartHeartbeat()
     }), f(this, "logRunningGameHeartbeats", () => {
       let e = u.ZP.getRunningGames(),
@@ -74,7 +71,7 @@ class h extends i.Z {
         var r, i;
         let a = (0, u.rH)(e),
           l = !this.runningGameKeys.has(a),
-          f = null !== (i = e.id) && void 0 !== i ? i : null === (r = o.Z.getGameByName(e.name)) || void 0 === r ? void 0 : r.id;
+          f = null != (i = e.id) ? i : null == (r = o.Z.getGameByName(e.name)) ? void 0 : r.id;
         s.default.track(d.rMx.RUNNING_GAME_HEARTBEAT, _({
           game_id: f,
           game_name: e.name,

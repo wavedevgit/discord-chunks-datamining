@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   IGNORE_CLASS_NAME: () => E,
-  default: () => v
+  default: () => y
 });
 var r, i = n(192379),
   o = n(995295);
@@ -73,25 +73,16 @@ function b(e, t) {
   var n = {};
   return -1 !== g.indexOf(t) && r && (n.passive = !e.props.preventDefault), n
 }
-let v = function(e, t) {
+let y = function(e, t) {
   var n, s, u = e.displayName || e.name || "Component";
   return s = n = function(n) {
     function s(e) {
       var i;
       return (i = n.call(this, e) || this).__outsideClickHandler = function(e) {
-        if ("function" == typeof i.__clickOutsideHandlerProp) {
-          i.__clickOutsideHandlerProp(e);
-          return
-        }
+        if ("function" == typeof i.__clickOutsideHandlerProp) return void i.__clickOutsideHandlerProp(e);
         var t = i.getInstance();
-        if ("function" == typeof t.props.handleClickOutside) {
-          t.props.handleClickOutside(e);
-          return
-        }
-        if ("function" == typeof t.handleClickOutside) {
-          t.handleClickOutside(e);
-          return
-        }
+        if ("function" == typeof t.props.handleClickOutside) return void t.props.handleClickOutside(e);
+        if ("function" == typeof t.handleClickOutside) return void t.handleClickOutside(e);
         throw Error("WrappedComponent: " + u + " lacks a handleClickOutside(event) function for processing outside click events.")
       }, i.__getComponentNode = function() {
         var e = i.getInstance();
@@ -101,10 +92,7 @@ let v = function(e, t) {
           void 0 === r && (r = _()), m[i._uid] = !0;
           var e = i.props.eventTypes;
           e.forEach || (e = [e]), h[i._uid] = function(e) {
-            if (null !== i.componentNode && (i.props.preventDefault && e.preventDefault(), i.props.stopPropagation && e.stopPropagation(), !(i.props.excludeScrollbar && f(e)))) {
-              var t = e.composed && e.composedPath && e.composedPath().shift() || e.target;
-              if (d(t, i.componentNode, i.props.outsideClickIgnoreClass) === document) i.__outsideClickHandler(e)
-            }
+            if (null !== i.componentNode) i.props.preventDefault && e.preventDefault(), i.props.stopPropagation && e.stopPropagation(), i.props.excludeScrollbar && f(e) || d(e.composed && e.composedPath && e.composedPath().shift() || e.target, i.componentNode, i.props.outsideClickIgnoreClass) === document && i.__outsideClickHandler(e)
           }, e.forEach(function(e) {
             document.addEventListener(e, h[i._uid], b(c(i), e))
           })

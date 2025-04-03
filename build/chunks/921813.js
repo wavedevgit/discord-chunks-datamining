@@ -20,14 +20,14 @@ var r = n(200651),
   g = n(25990),
   E = n(594174),
   b = n(150039),
-  v = n(450734),
-  y = n(225089),
+  y = n(450734),
+  v = n(225089),
   O = n(853726),
   I = n(165747),
   S = n(981631),
   T = n(228168),
   N = n(388032),
-  A = n(785677);
+  A = n(826938);
 
 function C(e) {
   let {
@@ -89,7 +89,7 @@ function C(e) {
       forceShowPremium: i,
       children: [(0, r.jsxs)("header", {
         className: A.header,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(v.Z, {
           user: t,
           displayProfile: W,
           guildId: null == n ? void 0 : n.id,
@@ -101,7 +101,7 @@ function C(e) {
           onUpsellClick: () => null == o ? void 0 : o({
             object: S.qAy.EDIT_PROFILE_BANNER
           })
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(y.Z, {
           user: t,
           guild: n,
           displayProfile: W,
@@ -152,8 +152,8 @@ function R() {
     n = (0, s.e7)([g.Z], () => g.Z.getPendingNameplate()),
     o = i.useMemo(() => {
       var e;
-      return null == t || null === (e = t.collectibles) || void 0 === e || e.nameplate, N.NW.string(N.t.ziaxGh)
-    }, [null == t ? void 0 : null === (e = t.collectibles) || void 0 === e ? void 0 : e.nameplate, n]);
+      return null == t || null == (e = t.collectibles) || e.nameplate, N.NW.string(N.t.ziaxGh)
+    }, [null == t || null == (e = t.collectibles) ? void 0 : e.nameplate, n]);
   return null == t ? null : (0, r.jsxs)("div", {
     className: A.nameplatePreviewSection,
     children: [(0, r.jsx)(l.Text, {

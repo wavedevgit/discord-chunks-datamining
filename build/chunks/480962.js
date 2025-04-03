@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(539907),
   l = n(743236),
   c = n(21340),
-  u = n(428763);
+  u = n(906944);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,18 +79,18 @@ function g(e) {
   } = e, {
     focusIndex: m,
     isUsingKeyboardNavigation: g
-  } = d, E = h(d, ["focusIndex", "isUsingKeyboardNavigation"]), b = i.useRef(null), v = i.useRef(null), y = i.useRef(null), [O, I] = i.useState(!1);
+  } = d, E = h(d, ["focusIndex", "isUsingKeyboardNavigation"]), b = i.useRef(null), y = i.useRef(null), v = i.useRef(null), [O, I] = i.useState(!1);
   return i.useLayoutEffect(() => {
     I(!0)
   }, []), i.useLayoutEffect(() => {
     var e;
-    o && ((0, l.F)(b), null === (e = y.current) || void 0 === e || e.focus())
+    o && ((0, l.F)(b), null == (e = v.current) || e.focus())
   }, [o]), (0, r.jsxs)("div", {
     ref: b,
     children: [(0, r.jsx)("div", {
-      ref: v
+      ref: y
     }), n, o && O ? (0, r.jsx)(s.j, {
-      targetRef: v,
+      targetRef: y,
       autoInvert: !0,
       nudgeAlignIntoViewport: !0,
       fixed: !0,
@@ -102,7 +102,7 @@ function g(e) {
         children: (0, r.jsx)("div", p(f({
           className: a()(u.submenu, t)
         }, E), {
-          ref: y,
+          ref: v,
           children: (0, r.jsx)(c.zJ, {
             className: u.scroller,
             children: _()

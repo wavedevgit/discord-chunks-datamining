@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(642128),
   l = n(481060),
   c = n(393238),
-  u = n(582331);
+  u = n(397974);
 let d = 100;
 
 function f(e) {
@@ -20,13 +20,13 @@ function f(e) {
     collapsibleContent: o,
     isExpanded: f
   } = e, [_, p] = i.useState(!1), [h, m] = i.useState(!0), [g, E] = i.useState(!1), b = null != f ? f : _, {
-    ref: v,
-    height: y = 0
+    ref: y,
+    height: v = 0
   } = (0, c.Z)(), {
     ref: O,
     height: I = 0
   } = (0, c.Z)(), S = (0, l.q_F)({
-    height: b ? y + I : I,
+    height: b ? v + I : I,
     config: s.config.stiff,
     onRest: () => E(!0)
   }, h ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
@@ -55,7 +55,7 @@ function f(e) {
           onClick: T
         })
       }), (0, r.jsx)("div", {
-        ref: v,
+        ref: y,
         children: o
       })]
     })

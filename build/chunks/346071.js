@@ -1,38 +1,44 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => s
+  n: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(388032),
-  a = n(413793);
+  o = n(886969),
+  a = n(388032),
+  s = n(429680);
 
-function s(e) {
+function l(e) {
   let {
     fractionalPremiumInfo: t
-  } = e, n = t.endsAt.toDate();
-  return (0, r.jsxs)("div", {
-    className: a.activeFractionalPremiumBannerContainer,
+  } = e, n = (0, o.Z)(t.endsAt), l = "";
+  return (n.days > 0 && n.hours > 0 ? l = a.NW.format(a.t["6r9LLi"], {
+    days: n.days,
+    hours: n.hours
+  }) : n.days > 0 ? l = a.NW.format(a.t.c2BbVF, {
+    days: n.days
+  }) : n.hours > 0 && (l = a.NW.format(a.t["8Xm6uL"], {
+    hours: n.hours
+  })), "" === l) ? null : (0, r.jsxs)("div", {
+    className: s.activeFractionalPremiumBannerContainer,
     children: [(0, r.jsxs)("div", {
-      className: a.nitroIconContainer,
+      className: s.nitroIconContainer,
       children: [(0, r.jsx)(i.SrA, {
         size: "md",
         color: "white",
-        className: a.iconFractional
+        className: s.iconFractional
       }), (0, r.jsx)(i.SrA, {
         size: "md",
         color: "currentColor",
-        className: a.iconFractionalDark
+        className: s.iconFractionalDark
       })]
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: o.NW.format(o.t.SAJ5Ag, {
-        expirationDate: n
-      })
+      children: l
     }), (0, r.jsx)("div", {
-      className: a.activeFractionalPremiumBannerBackgroundImage
+      className: s.activeFractionalPremiumBannerBackgroundImage
     })]
   })
 }

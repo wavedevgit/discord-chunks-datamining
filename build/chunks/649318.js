@@ -3,7 +3,7 @@
 n.d(t, {
   $6: () => P,
   MP: () => T,
-  Mg: () => y,
+  Mg: () => v,
   Nl: () => C,
   Ns: () => b,
   Rx: () => N,
@@ -49,9 +49,9 @@ let g = 4,
 var b = function(e) {
   return e.SENDRECV = "sendrecv", e.SENDONLY = "sendonly", e.RECVONLY = "recvonly", e.INACTIVE = "inactive", e
 }({});
-let v = "UDP/TLS/RTP/SAVPF";
+let y = "UDP/TLS/RTP/SAVPF";
 
-function y(e) {
+function v(e) {
   switch (e) {
     case "recvonly":
       return "sendonly";
@@ -128,7 +128,7 @@ function S(e) {
     extensions: h,
     rtxPayload: E,
     sendingVideo: b,
-    enableAudioNack: y
+    enableAudioNack: v
   } = e;
   if ("inactive" === o && !p.WS) return {
     connection: {
@@ -139,7 +139,7 @@ function S(e) {
     fmtp: [],
     payloads: l,
     port: 0,
-    protocol: v,
+    protocol: y,
     rtp: [{
       codec: "NULL",
       payload: l,
@@ -151,7 +151,7 @@ function S(e) {
   let {
     media: [O]
   } = d.parse(a);
-  if (O.type = n, O.protocol = v, O.payloads = l, O.setup = r, O.mid = t, O.rtcpMux = "rtcp-mux", O.direction = o, O.ssrcs = f, f.length > 0 && (null != E && (O.ssrcGroups = i()(f, g).map(e => {
+  if (O.type = n, O.protocol = y, O.payloads = l, O.setup = r, O.mid = t, O.rtcpMux = "rtcp-mux", O.direction = o, O.ssrcs = f, f.length > 0 && (null != E && (O.ssrcGroups = i()(f, g).map(e => {
       let t = e[0].id;
       return {
         semantics: "FID",
@@ -171,9 +171,9 @@ function S(e) {
       else if (O.ext = h.filter(e => "urn:ietf:params:rtp-hdrext:ssrc-audio-level" === e.uri || "http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01" === e.uri), O.rtcpFb = [{
           type: "transport-cc",
           payload: l
-        }], !0 === y) {
+        }], !0 === v) {
         var I;
-        null === (I = O.rtcpFb) || void 0 === I || I.push({
+        null == (I = O.rtcpFb) || I.push({
           type: "nack",
           payload: l
         })
@@ -337,8 +337,8 @@ function N(e) {
       mid: b
     } = e;
     "" !== m ? t = O(m, d, "audio" === g ? "a" : "v") : (t = [], "sendonly" === E ? E = "inactive" : "sendrecv" === E && (E = "recvonly"));
-    let v = "audio" === g ? r : a,
-      y = "audio" === g ? i : s,
+    let y = "audio" === g ? r : a,
+      v = "audio" === g ? i : s,
       I = "audio" === g ? null : u,
       T = "audio" === g ? o : l;
     p.push(S({
@@ -347,8 +347,8 @@ function N(e) {
       setup: h,
       direction: E,
       baseSDP: n,
-      codec: v,
-      payload: y,
+      codec: y,
+      payload: v,
       bitrate: T,
       ssrcs: t,
       extensions: f,
@@ -422,7 +422,7 @@ function R(e) {
   var t;
   let {
     codecs: n
-  } = C(e), r = n.find(e => e.name === _.ad.VP8), i = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null !== (t = null == r ? void 0 : r.rtxPayloadType) && void 0 !== t ? t : 0, " rtx"), "i");
+  } = C(e), r = n.find(e => e.name === _.ad.VP8), i = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null != (t = null == r ? void 0 : r.rtxPayloadType) ? t : 0, " rtx"), "i");
   return {
     sdp: [...new Set(e.split(/\r\n/).filter(e => i.test(e)))].join("\n"),
     codecs: n

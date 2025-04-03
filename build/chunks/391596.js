@@ -1,5 +1,4 @@
 /** Chunk was on web.js **/
-function t(e, t) {
+e.exports = function(e, t) {
   return null == e ? void 0 : e[t]
 }
-e.exports = t

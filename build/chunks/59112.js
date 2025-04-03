@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = {},
     r = {
@@ -93,4 +93,3 @@ function t(e) {
     contains: [_, e.SHEBANG(), p, d, o, a, h, s, l, c, u, n]
   }
 }
-e.exports = t

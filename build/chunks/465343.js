@@ -30,7 +30,7 @@ function g(e, t, n, r) {
     case ":":
       return O(e, t);
     case "#":
-      return y(e, t)
+      return v(e, t)
   }
   return null
 }
@@ -54,10 +54,10 @@ function b(e, t, n, r, o) {
   }
   if (r) {
     let e = null != n ? l.Z.getChannel(n) : null;
-    if (null != e) {
+    if (null != e)
       if (e.isPrivate()) {
         for (let t of e.recipients)
-          if (v(a, s, t)) return {
+          if (y(a, s, t)) return {
             type: "userMention",
             userId: t,
             children: [{
@@ -69,14 +69,14 @@ function b(e, t, n, r, o) {
             userId: e
           }
           of u.ZP.getMembers(t))
-          if (v(a, s, e)) return {
+          if (y(a, s, e)) return {
             type: "userMention",
             userId: e,
             children: [{
               text: ""
             }]
           };
-        if (f && v(a, s, m.fL)) return {
+        if (f && y(a, s, m.fL)) return {
           type: "userMention",
           userId: m.fL,
           children: [{
@@ -84,17 +84,16 @@ function b(e, t, n, r, o) {
           }]
         }
       }
-    }
   }
   return null
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   let r = f.default.getUser(n);
   return null != r && (n === m.fL && "clyde" === e.toLowerCase() || r.username === e && r.discriminator === (null != t ? t : "0"))
 }
 
-function y(e, t) {
+function v(e, t) {
   let n;
   if (null == t) return null;
   n = e.length > 3 && '"' === e[1] && '"' === e[e.length - 1] ? (0, r.mA)(e.slice(2, e.length - 1)) : e.slice(1);

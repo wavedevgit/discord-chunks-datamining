@@ -27,10 +27,10 @@ var r = n(200651),
   g = n(147479),
   E = n(481060),
   b = n(600164),
-  v = n(602091),
-  y = n(231338),
+  y = n(602091),
+  v = n(231338),
   O = n(388032),
-  I = n(482218);
+  I = n(423931);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,12 +110,12 @@ function L(e) {
       className: m,
       fullscreenOnMobile: g = !0,
       hideShadow: E = !1,
-      onAnimationEnd: b = y.dG,
+      onAnimationEnd: b = v.dG,
       returnRef: O,
       animation: S = "default"
     } = e,
     N = C(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation"]);
-  let R = n === v.Dv.ENTERING || n === v.Dv.ENTERED,
+  let R = n === y.Dv.ENTERING || n === y.Dv.ENTERED,
     {
       reducedMotion: P
     } = i.useContext(d.S),
@@ -133,12 +133,12 @@ function L(e) {
     x = null != N["aria-label"],
     M = null != N["aria-labelledby"],
     k = i.useId(),
-    j = null !== (t = N["aria-labelledby"]) && void 0 !== t ? t : k,
+    j = null != (t = N["aria-labelledby"]) ? t : k,
     U = i.useMemo(() => ({
       headerId: j,
       headerIdIsManaged: M
     }), [j, M]);
-  return (0, r.jsx)(v.zM.Provider, {
+  return (0, r.jsx)(y.zM.Provider, {
     value: U,
     children: (0, r.jsx)(_.V, A(T({
       className: I.focusLock,
@@ -168,16 +168,16 @@ function x(e) {
   let {
     headerId: c,
     headerIdIsManaged: u
-  } = i.useContext(v.zM);
+  } = i.useContext(y.zM);
   return (0, r.jsx)(b.Z, {
     grow: 0,
     shrink: 0,
-    direction: null !== (t = e.direction) && void 0 !== t ? t : b.Z.Direction.HORIZONTAL,
-    justify: null !== (n = e.justify) && void 0 !== n ? n : b.Z.Justify.START,
-    align: null !== (o = e.align) && void 0 !== o ? o : b.Z.Align.CENTER,
-    wrap: null !== (s = e.wrap) && void 0 !== s ? s : b.Z.Wrap.NO_WRAP,
+    direction: null != (t = e.direction) ? t : b.Z.Direction.HORIZONTAL,
+    justify: null != (n = e.justify) ? n : b.Z.Justify.START,
+    align: null != (o = e.align) ? o : b.Z.Align.CENTER,
+    wrap: null != (s = e.wrap) ? s : b.Z.Wrap.NO_WRAP,
     className: a()(I.header, e.className, {
-      [I.separator]: null === (l = e.separator) || void 0 === l || l
+      [I.separator]: null == (l = e.separator) || l
     }),
     id: u ? void 0 : c,
     children: e.children
@@ -217,12 +217,12 @@ function j(e) {
   return (0, r.jsx)(b.Z, {
     grow: 0,
     shrink: 0,
-    direction: null !== (t = e.direction) && void 0 !== t ? t : b.Z.Direction.HORIZONTAL_REVERSE,
-    justify: null !== (n = e.justify) && void 0 !== n ? n : b.Z.Justify.START,
-    align: null !== (i = e.align) && void 0 !== i ? i : b.Z.Align.STRETCH,
-    wrap: null !== (o = e.wrap) && void 0 !== o ? o : b.Z.Wrap.NO_WRAP,
+    direction: null != (t = e.direction) ? t : b.Z.Direction.HORIZONTAL_REVERSE,
+    justify: null != (n = e.justify) ? n : b.Z.Justify.START,
+    align: null != (i = e.align) ? i : b.Z.Align.STRETCH,
+    wrap: null != (o = e.wrap) ? o : b.Z.Wrap.NO_WRAP,
     className: a()(I.footer, e.className, {
-      [I.footerSeparator]: null === (s = e.separator) || void 0 === s || s
+      [I.footerSeparator]: null == (s = e.separator) || s
     }),
     children: (0, r.jsx)(E.y5t, {
       children: e.children

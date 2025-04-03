@@ -23,8 +23,8 @@ var r = n(913527),
   g = n(104494),
   E = n(639119),
   b = n(921022),
-  v = n(748770),
-  y = n(725727),
+  y = n(748770),
+  v = n(725727),
   O = n(1844),
   I = n(474936),
   S = n(981631),
@@ -40,12 +40,12 @@ function A(e) {
   } = e, s = !1, l = !1;
   if (null != a && a.status === S.O0b.ENDED) {
     let e = a.endedAt,
-      n = null === (t = (0, f.Af)(a)) || void 0 === t ? void 0 : t.planId,
+      n = null == (t = (0, f.Af)(a)) ? void 0 : t.planId,
       r = null != n && f.ZP.getPremiumType(n) === I.p9.TIER_2;
     l = null != e && r && i()().subtract(N, "days").isAfter(e)
   }
   if (null != o) {
-    let e = null === (n = (0, f.Af)(o)) || void 0 === n ? void 0 : n.planId,
+    let e = null == (n = (0, f.Af)(o)) ? void 0 : n.planId,
       t = null != e && f.ZP.getPremiumType(e) === I.p9.TIER_2,
       r = c.default.getCurrentUser(),
       i = (null == o ? void 0 : o.trialId) != null && f.ZP.isPremiumExactly(r, I.p9.TIER_0);
@@ -64,7 +64,7 @@ function C() {
     autoTrackExposure: !1
   }), {
     promotion: n
-  } = (0, y.mq)(), {
+  } = (0, v.mq)(), {
     enabled: r
   } = (0, m.ZP)(), {
     mostRecentSubscription: i,
@@ -72,12 +72,12 @@ function C() {
   } = (0, o.cj)([u.ZP], () => ({
     mostRecentSubscription: u.ZP.getMostRecentPremiumTypeSubscription(),
     premiumSubscription: u.ZP.getPremiumTypeSubscription()
-  })), l = (0, E.N)(), c = (0, g.Ng)(), d = new Date(null !== (e = null == n ? void 0 : n.endDate) && void 0 !== e ? e : 0).valueOf(), f = Date.now(), _ = f > d, {
-    enabled: v
+  })), l = (0, E.N)(), c = (0, g.Ng)(), d = new Date(null != (e = null == n ? void 0 : n.endDate) ? e : 0).valueOf(), f = Date.now(), _ = f > d, {
+    enabled: y
   } = (0, p.Z)();
   (0, b.Z)({
     delay: _ ? -1 : d - f,
-    disable: v
+    disable: y
   });
   let O = !A({
       experimentEnabled: r,
@@ -116,7 +116,7 @@ async function R() {
       autoTrackExposure: !1
     });
   if (n || r || !i || !o || (d.Z.shouldFetchOffer() && !(0, f.I5)(t) && await (0, _.T)("BogoPromotionUtils"), d.Z.hasFetchedOffer() && (d.Z.hasAnyUnexpiredOffer() || d.Z.hasAnyUnexpiredDiscountOffer()))) return !1;
-  !u.ZP.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasPurchasedFlag(I.in.PREMIUM_TIER_2)) && await (0, a.ou)(), u.ZP.hasFetchedSubscriptions() || await (0, a.jg)();
+  !u.ZP.hasFetchedMostRecentPremiumTypeSubscription() && (null == (e = c.default.getCurrentUser()) ? void 0 : e.hasPurchasedFlag(I.in.PREMIUM_TIER_2)) && await (0, a.ou)(), u.ZP.hasFetchedSubscriptions() || await (0, a.jg)();
   let l = u.ZP.getMostRecentPremiumTypeSubscription();
   return !A({
     experimentEnabled: i,
@@ -127,7 +127,7 @@ async function R() {
 async function P() {
   if (!await R()) return;
   let e = O.Z.bogoPromotion;
-  !(null != e && new Date(e.endDate).valueOf() >= Date.now()) && await (0, v.L9)()
+  null != e && new Date(e.endDate).valueOf() >= Date.now() || await (0, y.L9)()
 }
 async function w() {
   let e = O.Z.bogoPromotion,

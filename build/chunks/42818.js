@@ -26,14 +26,14 @@ var r = n(200651),
   g = n(74538),
   E = n(937615),
   b = n(374649),
-  v = n(591548),
-  y = n(639119),
+  y = n(591548),
+  v = n(639119),
   O = n(653798),
   I = n(585602),
   S = n(474936),
   T = n(981631),
   N = n(388032),
-  A = n(670966);
+  A = n(727750);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,11 +75,11 @@ function w(e, t) {
 }
 let D = (e, t) => {
     var n;
-    return !!(null === (n = e.discounts) || void 0 === n ? void 0 : n.some(e => e.type === t))
+    return !!(null == (n = e.discounts) ? void 0 : n.some(e => e.type === t))
   },
   L = (e, t) => {
     var n, r, i;
-    return e.subscriptionPlanPrice - (null !== (i = null === (r = e.discounts) || void 0 === r ? void 0 : null === (n = r.find(e => e.type === t)) || void 0 === n ? void 0 : n.amount) && void 0 !== i ? i : 0)
+    return e.subscriptionPlanPrice - (null != (i = null == (r = e.discounts) || null == (n = r.find(e => e.type === t)) ? void 0 : n.amount) ? i : 0)
   };
 
 function x(e, t, n, r) {
@@ -139,7 +139,7 @@ function M(e) {
     isPrepaidPaymentSource: d,
     referralTrialOfferId: f,
     inTrialPeriod: _
-  } = e, h = (0, c.e7)([p.Z], () => p.Z.get(n.subscriptionPlanId)), m = null === (t = (0, y.N)(f)) || void 0 === t ? void 0 : t.subscription_trial;
+  } = e, h = (0, c.e7)([p.Z], () => p.Z.get(n.subscriptionPlanId)), m = null == (t = (0, v.N)(f)) ? void 0 : t.subscription_trial;
   l()(null != h, "Missing subscriptionPlan");
   let b = x(n, h, d, (0, g.if)({
     intervalType: null == m ? void 0 : m.interval,
@@ -161,8 +161,8 @@ function M(e) {
       }))
     })]
   }));
-  let v = (0, E.T4)(null != i ? i : n.amount, a),
-    I = d ? v : (0, E.og)(v, h.interval, h.intervalCount);
+  let y = (0, E.T4)(null != i ? i : n.amount, a),
+    I = d ? y : (0, E.og)(y, h.interval, h.intervalCount);
   return (0, r.jsx)(O.i$, {
     label: b,
     value: I,
@@ -203,7 +203,7 @@ function j(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
-  } = e, i = (0, v.j)(t.invoiceItems), o = i.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), a = i.find(e => (0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), s = (0, c.e7)([p.Z], () => null != a ? p.Z.get(a.subscriptionPlanId) : null), l = null != a ? a.amount : 0, u = (0, E.T4)(l, t.currency), d = null != s ? (0, E.og)(u, s.interval, s.intervalCount) : 0;
+  } = e, i = (0, y.j)(t.invoiceItems), o = i.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), a = i.find(e => (0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), s = (0, c.e7)([p.Z], () => null != a ? p.Z.get(a.subscriptionPlanId) : null), l = null != a ? a.amount : 0, u = (0, E.T4)(l, t.currency), d = null != s ? (0, E.og)(u, s.interval, s.intervalCount) : 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != o ? (0, r.jsx)(M, {
       invoiceItem: o,
@@ -230,7 +230,7 @@ function U(e) {
     newPlan: n,
     isPrepaidPaymentSource: i,
     referralTrialOfferId: o
-  } = e, a = (0, v.j)(t.invoiceItems), s = a.find(e => e.subscriptionPlanId === n.id);
+  } = e, a = (0, y.j)(t.invoiceItems), s = a.find(e => e.subscriptionPlanId === n.id);
   l()(null != s, "Expected newPlanInvoiceItem");
   let c = a.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount < 0),
     u = a.find(e => null == e.subscriptionPlanId && null != e.discounts && e.discounts.find(e => e.type === d.eW.PREMIUM_LEGACY_UPGRADE_PROMOTION)),
@@ -313,7 +313,7 @@ function V(e) {
     currentInvoice: n,
     newInvoice: i,
     inTrialPeriod: o
-  } = e, s = null != n ? (0, v.j)(n.invoiceItems) : null, l = null != n ? (0, g.dn)(n) : null, {
+  } = e, s = null != n ? (0, y.j)(n.invoiceItems) : null, l = null != n ? (0, g.dn)(n) : null, {
     intervalType: c,
     intervalCount: u
   } = (0, g.dn)(i), d = null != l && (l.intervalType !== c || l.intervalCount !== u);
@@ -323,7 +323,7 @@ function V(e) {
     }), null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(O.q9, {
         children: N.NW.string(N.t.tuqjWV)
-      }), B(G((0, v.j)(n.invoiceItems))).map(e => (0, r.jsx)(M, {
+      }), B(G((0, y.j)(n.invoiceItems))).map(e => (0, r.jsx)(M, {
         invoiceItem: e,
         currency: n.currency,
         inTrialPeriod: o
@@ -332,7 +332,7 @@ function V(e) {
       })]
     }) : null, (0, r.jsx)(O.q9, {
       children: N.NW.string(N.t.qxVrh4)
-    }), B(G((0, v.j)(i.invoiceItems))).map(e => {
+    }), B(G((0, y.j)(i.invoiceItems))).map(e => {
       let n = null != s && !s.some(t => t.subscriptionPlanId === e.subscriptionPlanId && t.quantity === e.quantity);
       return (0, r.jsx)(M, {
         invoiceItem: e,
@@ -361,7 +361,7 @@ function Z(e) {
     isUpdate: a,
     overrideRenewalDate: s,
     trialFooterMessageOverride: l
-  } = e, c = null === (t = (0, y.N)()) || void 0 === t ? void 0 : t.subscription_trial, {
+  } = e, c = null == (t = (0, v.N)()) ? void 0 : t.subscription_trial, {
     intervalType: u,
     intervalCount: d
   } = (0, g.dn)(i);
@@ -410,7 +410,7 @@ function H(e) {
     preventFetch: !s,
     analyticsLocatinons: g,
     analyticsLocation: f.Z.SUBSCRIPTION_INVOICE_FOOTER
-  }, c), [v] = (0, b.ED)(E), [y, I] = i.useState(!1);
+  }, c), [y] = (0, b.ED)(E), [v, I] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [d ? null : (0, r.jsx)(O.HE, {
       children: (0, r.jsx)(Z, {
@@ -425,13 +425,13 @@ function H(e) {
       children: [(0, r.jsxs)(u.P3F, {
         onClick: () => I(e => !e),
         className: A.subscriptionDetailsToggle,
-        children: [y ? N.NW.string(N.t.aBcRbG) : N.NW.string(N.t.X6duqq), (0, r.jsx)(h.Z, {
-          direction: y ? h.Z.Directions.UP : h.Z.Directions.DOWN,
+        children: [v ? N.NW.string(N.t.aBcRbG) : N.NW.string(N.t.X6duqq), (0, r.jsx)(h.Z, {
+          direction: v ? h.Z.Directions.UP : h.Z.Directions.DOWN,
           className: A.subscriptionDetailsToggleCaret
         })]
-      }), y ? (0, r.jsx)(V, {
+      }), v ? (0, r.jsx)(V, {
         isUpdate: s,
-        currentInvoice: v,
+        currentInvoice: y,
         newInvoice: o,
         inTrialPeriod: l
       }) : null]
@@ -494,7 +494,7 @@ function Y(e) {
       invoice: n,
       plan: i
     } = e,
-    o = (0, v.j)(n.invoiceItems).find(e => e.subscriptionPlanId === i.id);
+    o = (0, y.j)(n.invoiceItems).find(e => e.subscriptionPlanId === i.id);
   return l()(null != o, "newPlanInvoiceItem can not be null"), i.interval === S.rV.MONTH ? t = n.taxInclusive ? N.t.v9QeOD : N.t.FALkOz : i.interval === S.rV.YEAR ? t = n.taxInclusive ? N.t.ECT4Aw : N.t["0HQxKS"] : l()(!1, "Invalid interval type"), (0, r.jsx)(u.Text, {
     variant: "text-md/normal",
     children: N.NW.format(t, {

@@ -42,7 +42,7 @@ function m(e) {
     var i;
     return {
       guildId: r[1],
-      channelId: null !== (i = r[2]) && void 0 !== i ? i : void 0
+      channelId: null != (i = r[2]) ? i : void 0
     }
   }
   let o = e.match(f);

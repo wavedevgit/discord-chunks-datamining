@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -20,39 +20,45 @@ var r = n(200651),
   g = n(78826),
   E = n(341907),
   b = n(388032),
-  v = n(132819);
-let y = function(e) {
-  let t;
-  let {
-    className: n,
-    quest: o,
-    autoplay: y = !0,
-    learnMoreStyle: O = null
-  } = e, I = (0, f.O5)(), S = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), T = i.useMemo(() => (0, p.fh)(o, p.eC.REWARD), [o]), N = i.useCallback(t => {
-    var n;
-    (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), I({
-      questId: o.id,
-      questContent: e.questContent,
-      questContentPosition: e.questContentPosition,
-      questContentCTA: f.jZ.REWARD_LEARN_MORE
-    }), (0, E.navigateToQuestHome)({
-      fromContent: e.questContent,
-      questId: o.id
-    }), null === (n = e.onClick) || void 0 === n || n.call(e, t)
-  }, [I, o.id, e]), A = i.useRef(null), C = i.useRef(y), R = (0, _.Bg)(o.config);
+  y = n(734506);
+let v = function(e) {
+  let t, {
+      className: n,
+      quest: o,
+      autoplay: v = !0,
+      learnMoreStyle: O = null
+    } = e,
+    I = (0, f.O5)(),
+    S = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
+    T = i.useMemo(() => (0, p.fh)(o, p.eC.REWARD), [o]),
+    N = i.useCallback(t => {
+      var n;
+      (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), I({
+        questId: o.id,
+        questContent: e.questContent,
+        questContentPosition: e.questContentPosition,
+        questContentCTA: f.jZ.REWARD_LEARN_MORE
+      }), (0, E.navigateToQuestHome)({
+        fromContent: e.questContent,
+        questId: o.id
+      }), null == (n = e.onClick) || n.call(e, t)
+    }, [I, o.id, e]),
+    A = i.useRef(null),
+    C = i.useRef(v),
+    R = (0, _.Bg)(o.config);
   return i.useEffect(() => {
     if (null != A.current) {
       if (!T.isAnimated || S) {
         A.current.currentTime = 0, A.current.pause();
         return
       }
-      y && !C.current ? A.current.play() : !y && C.current && (A.current.currentTime = 0, A.current.pause()), C.current = y
+      v && !C.current ? A.current.play() : !v && C.current && (A.current.currentTime = 0, A.current.pause()), C.current = v
     }
-  }, [y, T, S]), t = R ? (0, r.jsx)(g.Fl, {
+  }, [v, T, S]), t = R ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(m.Z, {
       ref: e,
-      className: v.questRewardTileAsset
+      className: y.questRewardTileAsset
     })
   }) : T.isAnimated ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
@@ -62,15 +68,15 @@ let y = function(e) {
         ref: t => {
           e.current = t, A.current = t
         },
-        autoPlay: !S && y,
+        autoPlay: !S && v,
         loop: !0,
         muted: !0,
         playsInline: !0,
-        className: v.questRewardTileAsset,
+        className: y.questRewardTileAsset,
         controls: !1,
         children: (0, r.jsx)("source", {
           src: T.url,
-          type: null !== (t = T.mimetype) && void 0 !== t ? t : void 0
+          type: null != (t = T.mimetype) ? t : void 0
         })
       })
     }
@@ -79,25 +85,25 @@ let y = function(e) {
     children: e => (0, r.jsx)("img", {
       ref: e,
       alt: h.r.build(o.config).defaultReward.messages.name,
-      className: a()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
+      className: a()(y.questRewardTileAsset, y.questRewardTileAssetStatic),
       src: T.url
     })
   }), null == O ? (0, r.jsx)("div", {
-    className: a()(v.questRewardTile, n),
+    className: a()(y.questRewardTile, n),
     children: t
   }) : (0, r.jsxs)(c.P3F, {
-    className: a()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
+    className: a()(y.questRewardTileInteractive, y.questRewardTile, y.rewardHighlight, n),
     onClick: N,
     children: [t, (0, r.jsx)(c.ZX5, {
-      className: v.shine,
+      className: y.shine,
       shineSize: c.rHe.SMALL
     }), "text" === O && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
-      className: v.questRewardTileDetailsLearnMore,
+      className: y.questRewardTileDetailsLearnMore,
       children: b.NW.format(b.t.DYAleX, {})
     }), "icon" === O && (0, r.jsx)("div", {
-      className: v.questRewardTileDetailsLearnMore,
+      className: y.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {
         size: "xxs",
         color: c.TVs.colors.WHITE.css

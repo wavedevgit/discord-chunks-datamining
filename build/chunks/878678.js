@@ -12,7 +12,7 @@ var r = n(200651),
   l = n(481060),
   c = n(540059),
   u = n(709692),
-  d = n(93683);
+  d = n(115589);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,8 +47,8 @@ function p(e) {
       onCancel: g,
       onClose: E,
       onCloseCallback: b,
-      bodyClassName: v,
-      transitionState: y,
+      bodyClassName: y,
+      transitionState: v,
       loading: O = !1,
       confirmButtonColor: I = s.zx.Colors.RED,
       focusCancel: S = !1,
@@ -59,7 +59,7 @@ function p(e) {
   return i.useEffect(() => {
     S || setTimeout(() => {
       var e;
-      return null === (e = N.current) || void 0 === e ? void 0 : e.focus()
+      return null == (e = N.current) ? void 0 : e.focus()
     }, 0)
   }, [S]), i.useLayoutEffect(() => () => null == b ? void 0 : b()), null != p && (t = (0, r.jsx)(s.zx, {
     type: "button",
@@ -90,7 +90,7 @@ function p(e) {
     children: _
   })), (0, r.jsxs)(u.Y0, {
     className: h,
-    transitionState: y,
+    transitionState: v,
     impression: T,
     children: [null != o ? (0, r.jsx)(u.xB, {
       separator: !1,
@@ -99,7 +99,7 @@ function p(e) {
         children: o
       })
     }) : null, (0, r.jsx)(u.hz, {
-      className: a()(d.content, v),
+      className: a()(d.content, y),
       children: f
     }), (0, r.jsxs)(u.mz, {
       children: [n, t]

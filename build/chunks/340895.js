@@ -30,8 +30,8 @@ let E = "IncomingCallStore",
     width: 232,
     height: 315
   },
-  v = 10,
-  y = new Set,
+  y = 10,
+  v = new Set,
   O = [],
   I = new Map,
   S = new Set,
@@ -63,7 +63,7 @@ function C(e) {
   if (!S.has(t) && r) {
     let e = _.Z.getChannel(t);
     if (null == e) return !1;
-    let n = v * S.size,
+    let n = y * S.size,
       {
         x: r,
         y: i
@@ -81,10 +81,10 @@ function R(e) {
   let {
     channelId: t
   } = e;
-  return !!("GUILD_RING_STOP" !== e.type || d.Z.getCurrentConfig({
+  return ("GUILD_RING_STOP" !== e.type || !!d.Z.getCurrentConfig({
     guildId: e.guildId,
     location: "IncomingCallDelete"
-  }).enabled && e.ringing.includes(f.default.getId())) && A(t)
+  }).enabled && !!e.ringing.includes(f.default.getId())) && A(t)
 }
 
 function P(e) {
@@ -121,7 +121,7 @@ function x() {
   S.forEach(t => {
     var n;
     let r = t;
-    null != (null === (n = _.Z.getChannel(r)) || void 0 === n ? void 0 : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || A(r))
+    null != (null == (n = _.Z.getChannel(r)) ? void 0 : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || A(r))
   })
 }
 class M extends(i = o.ZP.Store) {
@@ -132,7 +132,7 @@ class M extends(i = o.ZP.Store) {
     return T ? O : Array.from(I.values())
   }
   getIncomingCallChannelIds() {
-    return T ? y : S
+    return T ? v : S
   }
   getFirstIncomingCallId() {
     return T ? null : S.values().next().value

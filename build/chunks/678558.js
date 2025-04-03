@@ -20,10 +20,10 @@ var r = n(200651),
   g = n(78839),
   E = n(267642),
   b = n(879892),
-  v = n(981631),
-  y = n(474936),
+  y = n(981631),
+  v = n(474936),
   O = n(388032),
-  I = n(191477);
+  I = n(412439);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -98,7 +98,7 @@ let P = e => {
     intent: k
   } = e, j = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
     analyticsLocations: U
-  } = (0, d.ZP)(), G = (0, u.bp)() === v.IlC.POPOUT, [B, F] = i.useState(!1), V = (0, s.e7)([h.default], () => h.default.getCurrentUser()), {
+  } = (0, d.ZP)(), G = (0, u.bp)() === y.IlC.POPOUT, [B, F] = i.useState(!1), V = (0, s.e7)([h.default], () => h.default.getCurrentUser()), {
     fractionalState: Z
   } = (0, f.Z)(), H = (0, p.y)("guild_boosting_subscribe_button", V, Z);
   m.Z.hasFetched || (0, c.X8)();
@@ -125,7 +125,7 @@ let P = e => {
       className: I.button,
       children: [M, null != S ? S : O.NW.string(O.t.gKmQ1N)]
     });
-  return ((null == q ? void 0 : q.isPausedOrPausePending) && (Z === y.a$.NONE || 0 === W.length) && (Q = (0, r.jsxs)("div", {
+  return ((null == q ? void 0 : q.isPausedOrPausePending) && (Z === v.a$.NONE || 0 === W.length) && (Q = (0, r.jsxs)("div", {
     className: I.button,
     children: [(0, r.jsx)(l.mBM, {
       size: "xs",

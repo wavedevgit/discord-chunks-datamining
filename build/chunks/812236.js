@@ -17,8 +17,7 @@ var r = n(192379),
 let u = "no primary app command for application",
   d = [o.yU.PRIMARY_ENTRY_POINT];
 async function f(e, t) {
-  let n;
-  let r = a.Z.getChannel(e);
+  let n, r = a.Z.getChannel(e);
   if (null != r && null == (n = _({
       channel: r,
       type: "channel"

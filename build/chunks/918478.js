@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "number",
       relevance: 0,
@@ -58,4 +58,3 @@ function t(e) {
     }, e.QUOTE_STRING_MODE, t]
   }
 }
-e.exports = t

@@ -1,7 +1,6 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return function() {
     return e
   }
 }
-e.exports = t

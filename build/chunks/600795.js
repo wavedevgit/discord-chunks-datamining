@@ -32,7 +32,7 @@ function c(e, t) {
 function u(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return !!n && !1 === e.isTrusted || (null === (t = e.key) || void 0 === t ? void 0 : t.toLowerCase()) === "d" && (e.metaKey || e.ctrlKey) && !e.altKey
+  return !!n && !1 === e.isTrusted || (null == (t = e.key) ? void 0 : t.toLowerCase()) === "d" && (e.metaKey || e.ctrlKey) && !e.altKey
 }
 
 function d(e) {
@@ -58,19 +58,19 @@ class f {
   setup() {
     var e;
     if (f.isSetUp) throw Error("Cannot have two Keyboard backends at the same time.");
-    f.isSetUp = !0, this._handlingFirstEvent = !0, null === (e = this.context.window) || void 0 === e || e.addEventListener("keydown", this.handleGlobalKeyDown, {
+    f.isSetUp = !0, this._handlingFirstEvent = !0, null == (e = this.context.window) || e.addEventListener("keydown", this.handleGlobalKeyDown, {
       capture: !0
     })
   }
   teardown() {
     var e;
-    f.isSetUp = !1, null === (e = this.context.window) || void 0 === e || e.removeEventListener("keydown", this.handleGlobalKeyDown, {
+    f.isSetUp = !1, null == (e = this.context.window) || e.removeEventListener("keydown", this.handleGlobalKeyDown, {
       capture: !0
     }), this.endDrag()
   }
   setDndMode(e) {
     var t;
-    null === (t = this.options) || void 0 === t || t.onDndModeChanged(e)
+    null == (t = this.options) || t.onDndModeChanged(e)
   }
   profile() {
     return {
@@ -97,7 +97,7 @@ class f {
   }
   endDrag(e) {
     var t;
-    null != e && l(e), null === (t = this._navigator) || void 0 === t || t.disconnect(), this._previewer.clear(), this.monitor.isDragging() && this.actions.endDrag(), this.setDndMode(!1)
+    null != e && l(e), null == (t = this._navigator) || t.disconnect(), this._previewer.clear(), this.monitor.isDragging() && this.actions.endDrag(), this.setDndMode(!1)
   }
   constructor(e, t, n) {
     a(this, "manager", void 0), a(this, "actions", void 0), a(this, "monitor", void 0), a(this, "context", void 0), a(this, "options", void 0), a(this, "sourceNodes", void 0), a(this, "sourcePreviewNodes", void 0), a(this, "sourcePreviewNodeOptions", void 0), a(this, "targetNodes", void 0), a(this, "_navigator", void 0), a(this, "_previewer", void 0), a(this, "_announcer", void 0), a(this, "_handlingFirstEvent", !1), a(this, "handleGlobalKeyDown", e => {
@@ -105,13 +105,10 @@ class f {
     }), a(this, "getSourceClientOffset", e => d(this.sourceNodes.get(e))), a(this, "handleDragStart", (e, t) => {
       var n;
       if (!u(t, this._handlingFirstEvent) || (this._handlingFirstEvent = !1, !this.monitor.canDragSource(e))) return;
-      if (this.monitor.isDragging()) {
-        this.actions.publishDragSource();
-        return
-      }
+      if (this.monitor.isDragging()) return void this.actions.publishDragSource();
       l(t);
       let r = this.sourceNodes.get(e);
-      null != r && (this._navigator = new o.n(r, this.targetNodes, this.manager, this._previewer, this._announcer), this._previewer.createDragPreview(null !== (n = this.sourcePreviewNodes.get(e)) && void 0 !== n ? n : r), this.actions.beginDrag([e], {
+      null != r && (this._navigator = new o.n(r, this.targetNodes, this.manager, this._previewer, this._announcer), this._previewer.createDragPreview(null != (n = this.sourcePreviewNodes.get(e)) ? n : r), this.actions.beginDrag([e], {
         clientOffset: this.getSourceClientOffset(e),
         getSourceClientOffset: this.getSourceClientOffset,
         publishSource: !1

@@ -68,8 +68,7 @@ let c = e => {
     })
   },
   _ = (e, t, n) => {
-    let i;
-    let {
+    let i, {
       sticker: s
     } = e;
     s.type === o.n0.GUILD && (i = s.guild_id), r.ZP.trackWithMetadata(a.rMx.SEARCH_RESULT_SELECTED, {
@@ -83,8 +82,7 @@ let c = e => {
     })
   },
   p = e => {
-    let t;
-    let {
+    let t, {
       sticker: n,
       category: i
     } = e;

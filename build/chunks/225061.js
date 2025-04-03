@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "a-zA-Z_\\-!.?+*=<>&'",
     n = "[#]?[" + t + "][" + t + "0-9/;:$#]*",
     r = "def defonce defprotocol defstruct defmulti defmethod defn- defn defmacro deftype defrecord",
@@ -86,27 +86,25 @@ function t(e) {
       relevance: 0,
       starts: m
     },
-    E = [u, h, s, l, c, d, p, _, a, f, o],
-    b = {
-      beginKeywords: r,
-      keywords: {
-        $pattern: n,
-        keyword: r
-      },
-      end: '(\\[|#|\\d|"|:|\\{|\\)|\\(|$)',
-      contains: [{
-        className: "title",
-        begin: n,
-        relevance: 0,
-        excludeEnd: !0,
-        endsParent: !0
-      }].concat(E)
-    };
-  return h.contains = [b, g, m], m.contains = E, _.contains = E, {
+    E = [u, h, s, l, c, d, p, _, a, f, o];
+  return h.contains = [{
+    beginKeywords: r,
+    keywords: {
+      $pattern: n,
+      keyword: r
+    },
+    end: '(\\[|#|\\d|"|:|\\{|\\)|\\(|$)',
+    contains: [{
+      className: "title",
+      begin: n,
+      relevance: 0,
+      excludeEnd: !0,
+      endsParent: !0
+    }].concat(E)
+  }, g, m], m.contains = E, _.contains = E, {
     name: "Clojure",
     aliases: ["clj", "edn"],
     illegal: /\S/,
     contains: [u, h, s, l, c, d, p, _, a, f]
   }
 }
-e.exports = t

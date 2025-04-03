@@ -51,7 +51,7 @@ let c = Object.freeze({
     let t = u.getState();
     if (null == t.activeView) {
       var n;
-      d(null !== (n = t.lastActiveView) && void 0 !== n ? n : l.X1.EMOJI, e)
+      d(null != (n = t.lastActiveView) ? n : l.X1.EMOJI, e)
     } else f()
   },
   p = (e, t) => {

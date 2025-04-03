@@ -94,11 +94,11 @@ function g(e) {
   } = e, E = p(e, ["user", "guildId", "channelId", "profileType", "onClose", "children"]);
   let {
     interactionType: b,
-    interactionSource: v,
-    resetInteraction: y,
+    interactionSource: y,
+    resetInteraction: v,
     interactionSourceId: O,
     interactionPopoutTargetRef: I
-  } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = v === E.sourceType && b === c.P.REACT, N = v === E.sourceType && b === c.P.REPLY, A = (T || N) && O === E.sourceId;
+  } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, N = y === E.sourceType && b === c.P.REPLY, A = (T || N) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     targetElementRef: null != I ? I : void 0,
     renderPopout: e => {
@@ -116,7 +116,7 @@ function g(e) {
       }, E))
     },
     onRequestClose: () => {
-      y(), null == h || h()
+      v(), null == h || h()
     },
     shouldShow: A
   }, m(b, f)), {

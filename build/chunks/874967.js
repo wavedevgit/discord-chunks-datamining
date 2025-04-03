@@ -15,8 +15,8 @@ var r = n(200651),
   f = n(481060),
   _ = n(600164),
   p = n(981631),
-  h = n(868967),
-  m = n(685786);
+  h = n(812441),
+  m = n(20493);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,7 +42,7 @@ function E(e) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -50,14 +50,14 @@ function b(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = l().memoize(e => {
+let v = l().memoize(e => {
   let t = !1;
   if (null != e && (0, c.FX)(e)) {
     let n = (0, c._i)(e);
@@ -67,13 +67,13 @@ let y = l().memoize(e => {
 });
 class O extends i.PureComponent {
   render() {
-    let e;
-    let {
-      selected: t,
-      color: n,
-      className: i,
-      children: o
-    } = this.props, s = y(n);
+    let e, {
+        selected: t,
+        color: n,
+        className: i,
+        children: o
+      } = this.props,
+      s = v(n);
     return t ? e = {
       color: s,
       background: null != n ? n : u.Z.unsafe_rawColors.BRAND_500.css
@@ -113,7 +113,7 @@ class O extends i.PureComponent {
   }
   constructor(...e) {
     super(...e), g(this, "state", {
-      color: y(this.props.color)
+      color: v(this.props.color)
     }), g(this, "handleKeyUp", e => {
       if (e.which === p.yXg.ENTER || e.which === p.yXg.SPACE) {
         let e = this.props,

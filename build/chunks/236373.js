@@ -26,7 +26,7 @@ function l(e) {
     by_weekday: e.byWeekday,
     by_n_weekday: e.byNWeekday,
     by_month: e.byMonth,
-    by_month_day: (null !== (n = null === (t = e.byMonthDay) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0 ? e.byMonthDay : null,
+    by_month_day: (null != (n = null == (t = e.byMonthDay) ? void 0 : t.length) ? n : 0) > 0 ? e.byMonthDay : null,
     by_year_day: e.byYearDay,
     count: e.count
   }
@@ -109,18 +109,18 @@ function _(e, t, n) {
 function p(e, t) {
   var n, r, s, l, u, _, p;
   let h = {
-    name: null !== (n = null == e ? void 0 : e.name) && void 0 !== n ? n : "",
-    privacyLevel: null !== (r = null == e ? void 0 : e.privacy_level) && void 0 !== r ? r : a.j8.GUILD_ONLY,
-    description: null !== (s = null == e ? void 0 : e.description) && void 0 !== s ? s : "",
-    scheduledStartTime: null !== (l = null == e ? void 0 : e.scheduled_start_time) && void 0 !== l ? l : (0, o.ib)().toISOString(),
-    entityType: null !== (u = null == e ? void 0 : e.entity_type) && void 0 !== u ? u : a.WX.NONE,
-    entityMetadata: null !== (_ = null == e ? void 0 : e.entity_metadata) && void 0 !== _ ? _ : void 0,
+    name: null != (n = null == e ? void 0 : e.name) ? n : "",
+    privacyLevel: null != (r = null == e ? void 0 : e.privacy_level) ? r : a.j8.GUILD_ONLY,
+    description: null != (s = null == e ? void 0 : e.description) ? s : "",
+    scheduledStartTime: null != (l = null == e ? void 0 : e.scheduled_start_time) ? l : (0, o.ib)().toISOString(),
+    entityType: null != (u = null == e ? void 0 : e.entity_type) ? u : a.WX.NONE,
+    entityMetadata: null != (_ = null == e ? void 0 : e.entity_metadata) ? _ : void 0,
     channelId: null == e ? void 0 : e.channel_id,
     creatorId: null == e ? void 0 : e.creator_id,
     image: null == e ? void 0 : e.image,
     scheduledEndTime: null == e ? void 0 : e.scheduled_end_time,
     recurrenceRule: c(null == e ? void 0 : e.recurrence_rule),
-    eventExceptions: d(null !== (p = null == e ? void 0 : e.guild_scheduled_event_exceptions) && void 0 !== p ? p : [])
+    eventExceptions: d(null != (p = null == e ? void 0 : e.guild_scheduled_event_exceptions) ? p : [])
   };
   if (f(e) && (null == e ? void 0 : e.entity_type) === a.WX.EXTERNAL) {
     let t = (0, i.cS)(e);

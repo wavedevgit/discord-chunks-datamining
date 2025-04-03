@@ -21,9 +21,9 @@ var r = n(200651),
   g = n(585483),
   E = n(981631),
   b = n(689079),
-  v = n(665692),
-  y = n(388032),
-  O = n(621949);
+  y = n(665692),
+  v = n(388032),
+  O = n(885406);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ function A(e, t, n, i, o) {
         type: c.Qi.APPLICATION,
         id: u.id,
         icon: u.icon,
-        name: null !== (f = null == u ? void 0 : null === (d = u.bot) || void 0 === d ? void 0 : d.username) && void 0 !== f ? f : u.name,
+        name: null != (f = null == u || null == (d = u.bot) ? void 0 : d.username) ? f : u.name,
         application: u
       } : null;
       s.Po({
@@ -101,9 +101,9 @@ function A(e, t, n, i, o) {
     }
   };
   "" !== p.Z.getDraft(e, p.d.ChannelMessage) ? (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, N(S({
-    header: y.NW.string(y.t.pe26Cg),
-    confirmText: y.NW.string(y.t.VkKicX),
-    cancelText: y.NW.string(y.t["ETE/oK"]),
+    header: v.NW.string(v.t.pe26Cg),
+    confirmText: v.NW.string(v.t.VkKicX),
+    cancelText: v.NW.string(v.t["ETE/oK"]),
     onConfirm: () => u(),
     confirmButtonColor: a.zxk.Colors.BRAND,
     onCloseCallback: () => {
@@ -114,7 +114,7 @@ function A(e, t, n, i, o) {
   }, t), {
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
-      children: y.NW.string(y.t["+awCIy"])
+      children: v.NW.string(v.t["+awCIy"])
     })
   }))) : u()
 }
@@ -127,9 +127,9 @@ function C(e) {
     state: p
   } = e, g = (0, o.e7)([_.Z, m.Z], () => {
     var e;
-    return _.Z.getChannel(null !== (e = n.channelId) && void 0 !== e ? e : m.Z.getChannelId())
+    return _.Z.getChannel(null != (e = n.channelId) ? e : m.Z.getChannelId())
   }, [n.channelId]), {
-    hasSendMessagePerm: y,
+    hasSendMessagePerm: v,
     hasUseAppCommandsPerm: O
   } = (0, o.cj)([h.Z], () => ({
     hasSendMessagePerm: h.Z.can(E.Plq.SEND_MESSAGES, g),
@@ -141,13 +141,13 @@ function C(e) {
     type: "contextless"
   }, {
     command: S
-  } = l.YZ(I, null !== (t = n.commandKey) && void 0 !== t ? t : ""), T = f.dN.useSetting(), N = i.useMemo(() => {
+  } = l.YZ(I, null != (t = n.commandKey) ? t : ""), T = f.dN.useSetting(), N = i.useMemo(() => {
     if (null == S || null == g || S.untranslatedName !== n.commandName || T) return !1;
     let e = g.isPrivate();
-    if ((0, d.xl)(g) || !e && !y) return !1;
+    if ((0, d.xl)(g) || !e && !v) return !1;
     let t = (null == S ? void 0 : S.applicationId) === b.bi.BUILT_IN;
     return !!e || !!t || !!O
-  }, [g, S, y, O, n.commandName, T]), C = i.useCallback(e => {
+  }, [g, S, v, O, n.commandName, T]), C = i.useCallback(e => {
     null == e || e.stopPropagation(), null != g && null != n.commandName && null != n.commandKey && A(g.id, n.commandName, n.commandKey, c.Vh.MENTION)
   }, [g, n.commandKey, n.commandName]);
   return N ? (0, r.jsx)(a.ua7, {
@@ -163,11 +163,11 @@ function C(e) {
         onClick: C,
         onMouseEnter: t,
         onMouseLeave: i,
-        children: [v.GI, s(n.content, p)]
+        children: [y.GI, s(n.content, p)]
       }, p.key)
     }
   }, p.key) : (0, r.jsxs)("span", {
-    children: [v.GI, s(n.content, p)]
+    children: [y.GI, s(n.content, p)]
   })
 }
 

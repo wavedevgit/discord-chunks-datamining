@@ -50,7 +50,7 @@ let p = e => {
   return (0, i.ZP)(() => {
     var e;
     (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, _({
-      type: null !== (e = null == f ? void 0 : f.analyticsType) && void 0 !== e ? e : "Standard Emoji Popout",
+      type: null != (e = null == f ? void 0 : f.analyticsType) ? e : "Standard Emoji Popout",
       nonce: p
     }, m))
   }), m

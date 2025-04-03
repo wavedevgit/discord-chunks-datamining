@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(703926),
   g = n(474936),
   E = n(388032),
-  b = n(570148);
+  b = n(651427);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -65,7 +65,7 @@ let S = e => {
     className: n,
     optionsContainerClassName: o
   } = e, {
-    giftRecipient: v,
+    giftRecipient: y,
     selectedGiftStyle: O,
     setSelectedGiftStyle: S,
     emojiConfetti: T,
@@ -74,7 +74,7 @@ let S = e => {
     setSoundEffect: C
   } = (0, l.wD)(), [R, P] = i.useState(!1), w = i.useRef(null), D = (0, s.arW)({
     orientation: "horizontal"
-  }), L = (0, u.MY)(v, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, k = (0, f.rK)(), {
+  }), L = (0, u.MY)(y, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, k = (0, f.rK)(), {
     enabled: j
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
@@ -116,11 +116,11 @@ let S = e => {
           })
         })]
       })]
-    }), (0, r.jsx)("div", I(y({
+    }), (0, r.jsx)("div", I(v({
       tabIndex: null != O || R ? void 0 : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null === (t = w.current) || void 0 === t || t.focus())
+        e.target === e.currentTarget && (null == (t = w.current) || t.focus())
       },
       className: a()(b.giftBoxOptionContainer, o),
       "aria-label": E.NW.string(E.t.v54NrK)

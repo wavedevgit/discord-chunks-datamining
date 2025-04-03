@@ -40,9 +40,9 @@ let f = 30,
   g = 5,
   E = 30,
   b = 5,
-  v = 10 * o.Z.Millis.SECOND;
+  y = 10 * o.Z.Millis.SECOND;
 
-function y() {
+function v() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 30;
   return e <= 5 ? h : e <= 15 ? p : e <= 30 ? _ : f
 }
@@ -84,10 +84,10 @@ let I = (0, a.oH)((e, t, n) => ({
 function S(e, t, n) {
   if ("streamer" === e.type) {
     if (100 * e.packetLossRate > m) return I(c.NW.string(c.t["1f1LHh"]), "Packet Loss", i.u.STREAM_SEND_HIGH_PACKET_LOSS);
-    if (e.frameRate <= y(t)) return I(c.NW.string(c.t["1f1LHh"]), "Frame Rate Encode", i.u.STREAM_SEND_LOW_FPS)
+    if (e.frameRate <= v(t)) return I(c.NW.string(c.t["1f1LHh"]), "Frame Rate Encode", i.u.STREAM_SEND_LOW_FPS)
   } else if (n) {
     if (100 * e.packetLossRate > m) return I(c.NW.string(c.t.BcOif3), "Packet Loss", i.u.STREAM_VIEW_HIGH_PACKET_LOSS);
-    if (e.frameRate <= y(t)) return I(c.NW.string(c.t.BcOif3), "Frame Rate Decode", i.u.STREAM_VIEW_LOW_FPS)
+    if (e.frameRate <= v(t)) return I(c.NW.string(c.t.BcOif3), "Frame Rate Decode", i.u.STREAM_VIEW_LOW_FPS)
   }
   return null
 }
@@ -97,10 +97,10 @@ function T(e, t, n, o) {
   if (null != t) {
     let e = O(t, g),
       n = O(t, E),
-      i = r.w.isIncomingVideoEnabled() && Date.now() - r.w.lastIncomingVideoEnabledChangeTime() > v;
+      i = r.w.isIncomingVideoEnabled() && Date.now() - r.w.lastIncomingVideoEnabledChangeTime() > y;
     if (n.numDatapoints >= b) {
       var a;
-      return null !== (a = S(e, null == o ? void 0 : o.maxFrameRate, i)) && void 0 !== a ? a : S(n, null == o ? void 0 : o.maxFrameRate, i)
+      return null != (a = S(e, null == o ? void 0 : o.maxFrameRate, i)) ? a : S(n, null == o ? void 0 : o.maxFrameRate, i)
     }
   }
   return e === l.IE4.BAD ? I(c.NW.string(c.t.Ic588P), "Bad Connection", i.u.STREAM_BAD_NETWORK_QUALITY) : null

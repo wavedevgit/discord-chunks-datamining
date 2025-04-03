@@ -1,3 +1,2 @@
 /** Chunk was on web.js **/
-var r = n(325237).Uint8Array;
-e.exports = r
+e.exports = n(325237).Uint8Array

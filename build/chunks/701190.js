@@ -61,7 +61,7 @@ function h(e, t) {
       state: s.r2o.RESOLVING,
       code: r.baseCode
     };
-  t(o), (f = new Map(f)).set(e, o), (null === (n = o.guild) || void 0 === n ? void 0 : n.id) != null && (p = d(c({}, p), {
+  t(o), (f = new Map(f)).set(e, o), (null == (n = o.guild) ? void 0 : n.id) != null && (p = d(c({}, p), {
     [o.guild.id]: e
   }))
 }
@@ -79,14 +79,14 @@ function m(e) {
 function g(e) {
   return h(e.code, t => {
     var n, r;
-    t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null !== (n = e.invite.approximate_member_count) && void 0 !== n ? n : null, t.approximate_presence_count = null !== (r = e.invite.approximate_presence_count) && void 0 !== r ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.expires_at = e.invite.expires_at, t.stage_instance = e.invite.stage_instance, t.friends_count = e.invite.friends_count, t.is_contact = e.invite.is_contact, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.flags = e.invite.flags, t.is_nickname_changeable = e.invite.is_nickname_changeable, t.profile = e.invite.profile
+    t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null != (n = e.invite.approximate_member_count) ? n : null, t.approximate_presence_count = null != (r = e.invite.approximate_presence_count) ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.expires_at = e.invite.expires_at, t.stage_instance = e.invite.stage_instance, t.friends_count = e.invite.friends_count, t.is_contact = e.invite.is_contact, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.flags = e.invite.flags, t.is_nickname_changeable = e.invite.is_nickname_changeable, t.profile = e.invite.profile
   })
 }
 
 function E(e) {
   return h(e.invite.code, t => {
     var n, r;
-    t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null !== (n = e.invite.approximate_member_count) && void 0 !== n ? n : null, t.approximate_presence_count = null !== (r = e.invite.approximate_presence_count) && void 0 !== r ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.stage_instance = e.invite.stage_instance, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.is_nickname_changeable = e.invite.is_nickname_changeable
+    t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null != (n = e.invite.approximate_member_count) ? n : null, t.approximate_presence_count = null != (r = e.invite.approximate_presence_count) ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.stage_instance = e.invite.stage_instance, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.is_nickname_changeable = e.invite.is_nickname_changeable
   })
 }
 
@@ -96,13 +96,13 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   e.invites.forEach(e => h(e.code, e => {
     e.state = s.r2o.EXPIRED
   }))
 }
 
-function y(e) {
+function v(e) {
   return h(e.code, t => {
     t.state = "banned" in e && e.banned ? s.r2o.BANNED : s.r2o.EXPIRED
   })
@@ -161,10 +161,10 @@ l(C, "displayName", "InviteStore");
 let R = new C(o.Z, {
   INVITE_RESOLVE: m,
   INVITE_RESOLVE_SUCCESS: g,
-  INVITE_RESOLVE_FAILURE: y,
-  INSTANT_INVITE_REVOKE_SUCCESS: y,
+  INVITE_RESOLVE_FAILURE: v,
+  INSTANT_INVITE_REVOKE_SUCCESS: v,
   FRIEND_INVITE_CREATE_SUCCESS: b,
-  FRIEND_INVITE_REVOKE_SUCCESS: v,
+  FRIEND_INVITE_REVOKE_SUCCESS: y,
   INSTANT_INVITE_CREATE_SUCCESS: E,
   INVITE_ACCEPT: O,
   INVITE_ACCEPT_SUCCESS: I,

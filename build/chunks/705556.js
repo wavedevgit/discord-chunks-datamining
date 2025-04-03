@@ -14,7 +14,7 @@ var i = n(442837),
   u = n(785717),
   d = n(475413),
   f = n(388032),
-  _ = n(73610);
+  _ = n(206435);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -45,9 +45,9 @@ function m(e) {
     fullWidth: p,
     appContext: m,
     onClose: g
-  } = e, E = (0, i.e7)([l.default], () => l.default.getId() === t.id), b = (0, i.e7)([c.Z], () => null != n ? c.Z.getGuild(n) : null), v = (0, s.Z)({
+  } = e, E = (0, i.e7)([l.default], () => l.default.getId() === t.id), b = (0, i.e7)([c.Z], () => null != n ? c.Z.getGuild(n) : null), y = (0, s.Z)({
     guild: b
-  }), y = (0, s.Z)({}), {
+  }), v = (0, s.Z)({}), {
     trackUserProfileAction: O
   } = (0, u.KZ)();
   return E ? null == b ? (0, r.jsx)(d.tG, {
@@ -57,7 +57,7 @@ function m(e) {
     autoFocus: !0,
     fullWidth: p,
     onClick: () => {
-      null == g || g(), y(), (0, a.i)(m)
+      null == g || g(), v(), (0, a.i)(m)
     }
   }) : (0, r.jsx)(o.yRy, {
     renderPopout: e => {
@@ -79,7 +79,7 @@ function m(e) {
           action: () => {
             O({
               action: "EDIT_GUILD_PROFILE"
-            }), v(), (0, a.i)(m)
+            }), y(), (0, a.i)(m)
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
@@ -88,7 +88,7 @@ function m(e) {
           action: () => {
             O({
               action: "EDIT_PROFILE"
-            }), y(), (0, a.i)(m)
+            }), v(), (0, a.i)(m)
           }
         })]
       })

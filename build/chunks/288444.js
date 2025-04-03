@@ -45,10 +45,7 @@ class g extends a.Z {
     }), f(this, "handleEmbeddedActivityDisconnect", () => {
       h() && this.idleTimeout.start(p, m, !0)
     }), f(this, "handleVoiceStateUpdates", () => {
-      if (!h()) {
-        this.idleTimeout.stop();
-        return
-      }
+      if (!h()) return void this.idleTimeout.stop();
       this.idleTimeout.start(p, m, !1)
     }), f(this, "actions", {
       VOICE_STATE_UPDATES: this.handleVoiceStateUpdates,

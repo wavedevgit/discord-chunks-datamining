@@ -29,7 +29,7 @@ var r = n(468343),
     }
     return e.prototype.run = function(e) {
       var t = this;
-      !d && (d = !0, (0, o.p)(function() {
+      d || (d = !0, (0, o.p)(function() {
         var n = !1;
         try {
           n = (0, r.N)()

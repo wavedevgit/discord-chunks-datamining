@@ -5,8 +5,7 @@ var r = n(706627),
   a = "Expected a function",
   s = Math.max,
   l = Math.min;
-
-function c(e, t, n) {
+e.exports = function(e, t, n) {
   var c, u, d, f, _, p, h = 0,
     m = !1,
     g = !1,
@@ -19,11 +18,11 @@ function c(e, t, n) {
     return c = u = void 0, h = t, f = e.apply(r, n)
   }
 
-  function v(e) {
+  function y(e) {
     return h = e, _ = setTimeout(I, t), m ? b(e) : f
   }
 
-  function y(e) {
+  function v(e) {
     var n = e - p,
       r = e - h,
       i = t - n;
@@ -39,7 +38,7 @@ function c(e, t, n) {
   function I() {
     var e = i();
     if (O(e)) return S(e);
-    _ = setTimeout(I, y(e))
+    _ = setTimeout(I, v(e))
   }
 
   function S(e) {
@@ -47,22 +46,19 @@ function c(e, t, n) {
   }
 
   function T() {
-    void 0 !== _ && clearTimeout(_), h = 0, c = p = u = _ = void 0
-  }
-
-  function N() {
     return void 0 === _ ? f : S(i())
   }
 
-  function A() {
+  function N() {
     var e = i(),
       n = O(e);
     if (c = arguments, u = this, p = e, n) {
-      if (void 0 === _) return v(p);
+      if (void 0 === _) return y(p);
       if (g) return clearTimeout(_), _ = setTimeout(I, t), b(p)
     }
     return void 0 === _ && (_ = setTimeout(I, t)), f
   }
-  return t = o(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(o(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), A.cancel = T, A.flush = N, A
+  return t = o(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(o(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), N.cancel = function() {
+    void 0 !== _ && clearTimeout(_), h = 0, c = p = u = _ = void 0
+  }, N.flush = T, N
 }
-e.exports = c

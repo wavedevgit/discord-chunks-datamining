@@ -47,7 +47,7 @@ function _(e, t) {
     type: "text",
     content: (0, l.Z)(r, i)
   };
-  let d = null !== (n = null == u ? void 0 : u.name) && void 0 !== n ? n : i;
+  let d = null != (n = null == u ? void 0 : u.name) ? n : i;
   return {
     type: "soundboard",
     soundId: i,

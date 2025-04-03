@@ -30,7 +30,7 @@ class o extends r.FrameLoop {
         this.animations.length > 0 || this.startQueue.size > 0 || this.frameQueue.size > 0 || this.writeQueue.size > 0 || this.timeoutQueue.length > 0 ? this.id = this._requestAnimationFrame(this.loop) : (this.lastTime = 0, this.id = 0)
       }
     }), i(this, "startLoop", () => {
-      !(this.lastTime > 0) && (this.lastTime = r.Globals.now(), this.id = this._requestAnimationFrame(this.loop))
+      this.lastTime > 0 || (this.lastTime = r.Globals.now(), this.id = this._requestAnimationFrame(this.loop))
     }), i(this, "advance", () => {
       let e = r.Globals.now();
       if (this.startQueue.size > 0 && (this.startQueue.forEach(this.addAnimation), this.startQueue.clear()), this.timeoutQueue.length > 0 && r.Globals.batchedUpdates(() => {

@@ -30,7 +30,7 @@ class f extends r.ZP.Store {
   database(e) {
     if (null != e) {
       var t;
-      return null !== (t = this.databases.get(e)) && void 0 !== t ? t : null
+      return null != (t = this.databases.get(e)) ? t : null
     }
     return null
   }
@@ -71,10 +71,7 @@ class f extends r.ZP.Store {
     }
   }
   async carefullySpeculativelyOpen(e) {
-    if (this.preventWritingCachesAgainThisSession) {
-      u.verbose("Not opening database because caches have been manually cleared.");
-      return
-    }
+    if (this.preventWritingCachesAgainThisSession) return void u.verbose("Not opening database because caches have been manually cleared.");
     if (null != e) {
       let t = await m(e);
       null == t || this.databases.has(e) ? (u.verbose("discarding speculative database (".concat(e, " → ").concat(t, ")")), null == t || t.close()) : (u.verbose("added speculative database (".concat(e, " → ").concat(t, ")")), this.databases.set(e, t), this.emitChange())

@@ -19,10 +19,10 @@ var r = n(200651),
   m = n(74538),
   g = n(710111),
   E = n(231338),
-  b = n(167421);
-let v = 4;
+  b = n(681162);
+let y = 4;
 
-function y(e) {
+function v(e) {
   let t = (0, s.e7)([h.default], () => m.ZP.canUseSoundboardEverywhere(h.default.getCurrentUser())),
     n = (0, s.e7)([u.Z], () => u.Z.getSoundsForGuild(g.X8)),
     r = (0, s.Wu)([_.Z], () => _.Z.getGuildIds()),
@@ -32,22 +32,22 @@ function y(e) {
     if (t && o) {
       let e = r.flatMap(e => {
         var t, n;
-        return null !== (n = null === (t = u.Z.getSoundsForGuild(e)) || void 0 === t ? void 0 : t.filter(e => e.available)) && void 0 !== n ? n : []
+        return null != (n = null == (t = u.Z.getSoundsForGuild(e)) ? void 0 : t.filter(e => e.available)) ? n : []
       });
-      i.push(...a().sampleSize(e, v))
+      i.push(...a().sampleSize(e, y))
     } else if ((null == e ? void 0 : e.guild_id) != null) {
       var s;
-      let t = null === (s = u.Z.getSoundsForGuild(null == e ? void 0 : e.guild_id)) || void 0 === s ? void 0 : s.filter(e => e.available);
-      i.push(...a().sampleSize(t, v))
+      let t = null == (s = u.Z.getSoundsForGuild(null == e ? void 0 : e.guild_id)) ? void 0 : s.filter(e => e.available);
+      i.push(...a().sampleSize(t, y))
     }
-    return i.length < v && i.push(...a().sampleSize(null != n ? n : [], v - i.length)), i
+    return i.length < y && i.push(...a().sampleSize(null != n ? n : [], y - i.length)), i
   }, [o, null == e ? void 0 : e.guild_id, n, r, t])
 }
 let O = i.memo(function(e) {
   let {
     channelId: t,
     onSelectSoundmoji: n
-  } = e, o = (0, s.e7)([u.Z], () => !u.Z.isFetching() && !u.Z.hasFetchedAllSounds(), []), a = (0, s.e7)([f.Z], () => f.Z.getChannel(t)), _ = y(a);
+  } = e, o = (0, s.e7)([u.Z], () => !u.Z.isFetching() && !u.Z.hasFetchedAllSounds(), []), a = (0, s.e7)([f.Z], () => f.Z.getChannel(t)), _ = v(a);
   return (i.useEffect(() => {
     (0, c.w)()
   }, [o]), 0 === _.length) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)("div", {

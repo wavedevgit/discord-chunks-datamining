@@ -15,7 +15,7 @@ function s(e, t) {
   let {
     customIconSrc: r,
     unicodeEmoji: i
-  } = null !== (n = (0, a.zy)(e, t)) && void 0 !== n ? n : {};
+  } = null != (n = (0, a.zy)(e, t)) ? n : {};
   if (null != r || null != i) return {
     src: r,
     name: e.name,

@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(699516),
   d = n(594174),
   f = n(981631),
-  _ = n(46163);
+  _ = n(998587);
 let p = [];
 
 function h(e, t) {
@@ -51,13 +51,13 @@ function g(e) {
     color: E
   } = e, {
     id: b,
-    bot: v
-  } = n, y = (0, o.e7)([d.default], () => {
+    bot: y
+  } = n, v = (0, o.e7)([d.default], () => {
     var e;
-    return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === b
+    return (null == (e = d.default.getCurrentUser()) ? void 0 : e.id) === b
   }), O = (0, c.wn)({
     location: "useAcceptGameFriendRequest"
-  }), I = y || v || !O, S = I ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => S.map(e => {
+  }), I = v || y || !O, S = I ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => S.map(e => {
     let {
       applicationId: t
     } = e;

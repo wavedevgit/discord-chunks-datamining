@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "CMake",
     aliases: ["cmake.in"],
@@ -14,4 +14,3 @@ function t(e) {
     }, e.COMMENT(/#\[\[/, /]]/), e.HASH_COMMENT_MODE, e.QUOTE_STRING_MODE, e.NUMBER_MODE]
   }
 }
-e.exports = t

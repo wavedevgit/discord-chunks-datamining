@@ -7,11 +7,11 @@ n.d(t, {
   d5: () => g,
   i7: () => S,
   kI: () => m,
-  re: () => y,
+  re: () => v,
   tU: () => A,
   u0: () => I,
   uL: () => T,
-  xU: () => v,
+  xU: () => y,
   xt: () => N
 }), n(411104), n(47120), n(653041), n(978209);
 var r = n(647943),
@@ -72,14 +72,14 @@ function E(e) {
 }
 
 function b(e, t) {
-  return v(h[e], t)
+  return y(h[e], t)
 }
 
-function v(e, t) {
+function y(e, t) {
   return (0, i.m)(e.toBinary(t))
 }
 
-function y(e, t, n) {
+function v(e, t, n) {
   for (let e in t = _({}, t), n) delete t[e];
   return e.mergePartial(t, n), t
 }
@@ -113,12 +113,12 @@ function N(e, t) {
   for (let n of t) {
     var a, s;
     if (n.version <= e.versions.clientVersion) {
-      r && (null === (a = n.cleanup) || void 0 === a || a.call(n));
+      r && (null == (a = n.cleanup) || a.call(n));
       continue
     }
     let t = n.run(e);
     if (e.versions.clientVersion = n.version, !1 === t) {
-      null === (s = n.cleanup) || void 0 === s || s.call(n);
+      null == (s = n.cleanup) || s.call(n);
       continue
     }
     i = !0, null != n.cleanup && o.push(n.cleanup)

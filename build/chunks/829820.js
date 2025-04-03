@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Fe: () => y,
-  Ih: () => v,
+  Fe: () => v,
+  Ih: () => y,
   Lz: () => O
 }), n(47120);
 var r = n(192379),
@@ -47,7 +47,7 @@ function b(e, t) {
   return (0, i.cj)([u.Z, s.default], () => (0, _.Z)(u.Z, s.default, t, e), [e, t])
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   let i = b(e, t),
     {
       notPlayable: o,
@@ -72,7 +72,7 @@ function v(e, t, n) {
   }
 }
 
-function y(e, t, n, i) {
+function v(e, t, n, i) {
   let o = null != i ? i : c.ZP.getName(t),
     a = b(e, t),
     {
@@ -84,17 +84,17 @@ function y(e, t, n, i) {
     {
       loading: h,
       startLoading: g,
-      clearLoading: v
+      clearLoading: y
     } = E(a),
-    y = r.useCallback(() => {
-      g(), (0, p.Z)(a, m.kG.USER_ACTIVITY_SYNC, n).catch(v)
-    }, [a, n, g, v]);
+    v = r.useCallback(() => {
+      g(), (0, p.Z)(a, m.kG.USER_ACTIVITY_SYNC, n).catch(y)
+    }, [a, n, g, y]);
   return {
     label: (0, d.Z)(a, m.kG.USER_ACTIVITY_SYNC),
     tooltip: (0, f.Z)(a, m.kG.USER_ACTIVITY_SYNC, o),
     disabled: !h && (s || _ || l || u),
     loading: h,
-    onClick: y,
+    onClick: v,
     spotifyData: a
   }
 }

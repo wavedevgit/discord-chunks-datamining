@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  H: () => v
+  H: () => y
 }), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -55,15 +55,15 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function v(e) {
+async function y(e) {
   let {
     setPurchaseState: t,
     setHasAcceptedTerms: n,
     setIsSubmitting: r,
     setPurchaseError: m,
     hasRedirectURL: E,
-    setHasRedirectURL: v,
-    isGift: y,
+    setHasRedirectURL: y,
+    isGift: v,
     baseAnalyticsData: O,
     analyticsLocation: I,
     analyticsLocations: S,
@@ -99,12 +99,12 @@ async function v(e) {
     if (U === p.GZQ.ONE_TIME) i()(null != k, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(k.applicationId, k.id, {
       expectedAmount: j.amount,
       expectedCurrency: j.currency,
-      isGift: y,
+      isGift: v,
       paymentSource: P,
       loadId: B,
       giftInfoOptions: F
     });
-    else if (i()(null != N, "Missing subscriptionPlan"), y) {
+    else if (i()(null != N, "Missing subscriptionPlan"), v) {
       i()(null != V, "Missing invoicePreview");
       let t = V.total,
         n = V.currency;
@@ -137,10 +137,7 @@ async function v(e) {
       referralCode: G,
       loadId: B
     });
-    if (e.redirectConfirmation) {
-      v(null != e.redirectURL);
-      return
-    }
+    if (e.redirectConfirmation) return void y(null != e.redirectURL);
     t(_.A.COMPLETED), "subscription" in e ? n = null != e.subscription ? u.Z.createFromServer(e.subscription) : null : "entitlements" in e && (r = null != e.entitlements ? e.entitlements : void 0), x(n, r)
   } catch (e) {
     t(_.A.FAIL), m(e), d.default.track(p.rMx.PAYMENT_FLOW_FAILED, b(g({}, O), {

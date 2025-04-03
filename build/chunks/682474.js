@@ -53,7 +53,7 @@ function m(e) {
   let n = s.Z.getChannel(null == e ? void 0 : e.channel_id);
   if (null == n || !n.isForumPost()) return !1;
   let r = h[n.id];
-  return u.default.compare(null == e ? void 0 : e.id, null == r ? void 0 : null === (t = r.message) || void 0 === t ? void 0 : t.id) > -1
+  return u.default.compare(null == e ? void 0 : e.id, null == r || null == (t = r.message) ? void 0 : t.id) > -1
 }
 
 function g(e, t) {
@@ -65,25 +65,25 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  let n = v(e),
-    r = y(e);
+  let n = y(e),
+    r = v(e);
   return null != n && null != r && (h[e] = p(f({}, n), {
     message: (0, a.wi)(r, t)
   }), !0)
 }
 
 function b(e, t) {
-  let n = y(e);
+  let n = v(e);
   return (null == n ? void 0 : n.id) === t && (delete h[e], !0)
 }
 
-function v(e) {
+function y(e) {
   return h[e]
 }
 
-function y(e) {
+function v(e) {
   var t;
-  return null === (t = v(e)) || void 0 === t ? void 0 : t.message
+  return null == (t = y(e)) ? void 0 : t.message
 }
 
 function O() {

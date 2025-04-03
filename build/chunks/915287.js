@@ -11,7 +11,7 @@ var r = n(200651),
   l = n.n(s),
   c = n(84735),
   u = n(562701),
-  d = n(521510);
+  d = n(830424);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,7 +94,7 @@ function b(e) {
   }, [])
 }
 
-function v(e) {
+function y(e) {
   let {
     renderSection: t,
     renderRow: n,
@@ -114,7 +114,7 @@ function v(e) {
       children: a()
     }, "---sticky-header")), u.forEach(e => {
       var r;
-      switch (e.section !== p && _.length > 0 && (f.push(null != c ? c(p, _) : _), _ = []), p = null !== (r = e.section) && void 0 !== r ? r : 0, e.type) {
+      switch (e.section !== p && _.length > 0 && (f.push(null != c ? c(p, _) : _), _ = []), p = null != (r = e.section) ? r : 0, e.type) {
         case "section":
           null != t && _.push(t(e));
           break;
@@ -129,12 +129,12 @@ function v(e) {
       }
     }), _.length > 0) {
     var h;
-    f.push(null !== (h = null == c ? void 0 : c(p, _)) && void 0 !== h ? h : _)
+    f.push(null != (h = null == c ? void 0 : c(p, _)) ? h : _)
   }
   return l()(f)
 }
 
-function y(e) {
+function v(e) {
   let {
     renderSidebar: t,
     sidebarHeight: n,
@@ -153,7 +153,7 @@ function O(e, t, n, o) {
         let {
           target: n
         } = e;
-        null === (t = l.get(n)) || void 0 === t || t(e)
+        null == (t = l.get(n)) || t(e)
       })
     });
   return i.forwardRef(function(o, p) {
@@ -234,7 +234,7 @@ function O(e, t, n, o) {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
         if (e > eo.current.dirty && (eo.current.dirty = e), 2 === e) {
           var t;
-          null === (t = eh.current) || void 0 === t || t.call(eh)
+          null == (t = eh.current) || t.call(eh)
         }
         ef(e)
       }, [ef, eo]),
@@ -249,21 +249,21 @@ function O(e, t, n, o) {
       ref: et,
       onUpdate: () => {
         var e;
-        return null === (e = em.current) || void 0 === e ? void 0 : e.call(em)
+        return null == (e = em.current) ? void 0 : e.call(em)
       },
       key: "content",
       resizeObserver: f,
       listenerMap: l
     });
     let eb = E(ec),
-      ev = b(N);
+      ey = b(N);
     i.useImperativeHandle(p, () => _({
       getScrollerNode: () => ei.current,
       getScrollerState: ea,
       getItems: eb,
-      getSectionRowFromIndex: ev
-    }, (0, u.rH)(ei, ea, ed, ep)), [ei, ea, ev, eb, ed, ep]);
-    let ey = i.useCallback(e => {
+      getSectionRowFromIndex: ey
+    }, (0, u.rH)(ei, ea, ed, ep)), [ei, ea, ey, eb, ed, ep]);
+    let ev = i.useCallback(e => {
       eg(1), null == ee.current ? er(!0) : clearTimeout(ee.current), ee.current = setTimeout(() => {
         ee.current = null, er(!1)
       }, 200), null != O && O(e)
@@ -279,7 +279,7 @@ function O(e, t, n, o) {
       totalHeight: el
     }), (0, r.jsxs)("div", h(_({
       ref: ei,
-      onScroll: ey,
+      onScroll: ev,
       className: a()(g, {
         [e]: !0,
         [t]: V,
@@ -301,7 +301,7 @@ function O(e, t, n, o) {
         ref: et,
         children: (0, r.jsx)(c.J, {
           containerRef: et,
-          children: v({
+          children: y({
             items: ec,
             renderListHeader: k,
             stickyListHeader: j,
@@ -312,7 +312,7 @@ function O(e, t, n, o) {
             spacerTop: es
           })
         })
-      }), [J, Y, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => y({
+      }), [J, Y, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => v({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

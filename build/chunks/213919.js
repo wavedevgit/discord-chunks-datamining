@@ -3,11 +3,11 @@
 let r, i;
 n.r(t), n.d(t, {
   encryptAndStoreTokens: () => T,
-  getToken: () => v,
+  getToken: () => y,
   hideToken: () => O,
   init: () => b,
   removeToken: () => S,
-  setToken: () => y,
+  setToken: () => v,
   showToken: () => I
 }), n(47120);
 var o = n(433517),
@@ -73,20 +73,17 @@ function b() {
   })), h = !0
 }
 
-function v(e) {
+function y(e) {
   return (b(), null != e) ? f[e] : r
 }
 
-function y(e, t) {
-  if (null == e) {
-    S(t);
-    return
-  }
+function v(e, t) {
+  if (null == e) return void S(t);
   r = e, null != t && (f[t] = e), d ? T() : (i = r, _ = f, m())
 }
 
 function O() {
-  !p && (p = !0, m())
+  p || (p = !0, m())
 }
 
 function I() {

@@ -23,8 +23,8 @@ let f = {};
 class _ {
   static ensure(e, t, n) {
     var r, i;
-    let o = "".concat(e, ":").concat(t.name, ":").concat(null !== (r = t.id) && void 0 !== r ? r : "", ":").concat(n);
-    return f[o] = null !== (i = f[o]) && void 0 !== i ? i : new _
+    let o = "".concat(e, ":").concat(t.name, ":").concat(null != (r = t.id) ? r : "", ":").concat(n);
+    return f[o] = null != (i = f[o]) ? i : new _
   }
   constructor() {
     d(this, "users", void 0), d(this, "fetched", void 0), this.fetched = !1, this.users = {}

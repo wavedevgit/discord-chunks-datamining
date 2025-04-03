@@ -53,7 +53,7 @@ function f() {
   return (0, r.useEffect)(() => {
     g.current = f
   }, [f]), (0, r.useEffect)(() => {
-    (!0 !== e || !m.current || null != g.current) && (0, a.qg)({
+    !0 === e && m.current && null == g.current || (0, a.qg)({
       variantsReturnStyle: c,
       location: t
     })

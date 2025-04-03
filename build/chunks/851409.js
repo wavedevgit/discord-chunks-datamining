@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
-
-function n(e, t, n) {
+Object.defineProperty(t, "__esModule", {
+  value: !0
+}), t.default = function(e, t, n) {
   let r = 0,
     i = e.length;
   for (; i > 0;) {
@@ -11,6 +12,3 @@ function n(e, t, n) {
   }
   return r
 }
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.default = n

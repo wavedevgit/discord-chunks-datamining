@@ -26,14 +26,14 @@ function f(e) {
     pendingAvatar: t ? c.Z.getTryItOutAvatar() : null != f ? a.Z.getPendingAvatar() : c.Z.getPendingAvatar(),
     pendingAvatarDecoration: t ? c.Z.getTryItOutAvatarDecoration() : null != f ? a.Z.getPendingAvatarDecoration() : c.Z.getPendingAvatarDecoration(),
     pendingErrors: null != f ? a.Z.getErrors().avatarDecoration : c.Z.getErrors().avatarDecoration
-  })), v = (0, r.useCallback)(e => (0, s.Jw)(e, null == _ ? void 0 : _.avatar), [null == _ ? void 0 : _.avatar]), y = (0, r.useCallback)(e => {
+  })), y = (0, r.useCallback)(e => (0, s.Jw)(e, null == _ ? void 0 : _.avatar), [null == _ ? void 0 : _.avatar]), v = (0, r.useCallback)(e => {
     (0, s.PO)(f, e), null != e && m(e)
   }, [m, f]);
   return {
     pendingAvatar: g,
     pendingAvatarDecoration: E,
-    setPendingAvatar: t ? d.c_ : v,
-    setPendingAvatarDecoration: t ? d.Xz : y,
+    setPendingAvatar: t ? d.c_ : y,
+    setPendingAvatarDecoration: t ? d.Xz : v,
     savedAvatarDecoration: h,
     pendingErrors: b
   }

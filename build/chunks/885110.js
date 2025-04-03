@@ -19,8 +19,8 @@ var r, i = n(348327),
   g = n(517100),
   E = n(283595),
   b = n(293273),
-  v = n(158776),
-  y = n(797258),
+  y = n(158776),
+  v = n(797258),
   O = n(981631);
 
 function I(e, t, n) {
@@ -53,7 +53,7 @@ function M(e) {
 
 function k(e) {
   var t;
-  if ((0, p.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, O.xjy.CONTEXTLESS)) return !0;
+  if ((0, p.yE)(null != (t = e.flags) ? t : 0, O.xjy.CONTEXTLESS)) return !0;
   switch (e.type) {
     case O.IIU.LISTENING:
       if ((0, u.Z)(e)) return d.Z.shouldShowActivity();
@@ -74,7 +74,7 @@ function j() {
 
 function U() {
   var e;
-  if (A = null !== (e = g.Z.getIdleSince()) && void 0 !== e ? e : 0, R = g.Z.isAFK(), P) T = N;
+  if (A = null != (e = g.Z.getIdleSince()) ? e : 0, R = g.Z.isAFK(), P) T = N;
   else if (S) T = O.Skl.INVISIBLE;
   else {
     let e = f.co.getSetting();
@@ -84,10 +84,10 @@ function U() {
   let t = !1,
     n = P || T === O.Skl.INVISIBLE ? [] : b.Z.getActivities().filter(k);
   o()(C, n) || (C = n, t = !0);
-  let r = y.Z.getRemoteActivities();
+  let r = v.Z.getRemoteActivities();
   w !== r && (w = r, t = !0);
-  let i = y.Z.getHiddenActivities();
-  D !== i && (D = i), t && (L = s()([...C, ...w.filter(e => e.type !== O.IIU.CUSTOM_STATUS)].sort(v.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value())
+  let i = v.Z.getHiddenActivities();
+  D !== i && (D = i), t && (L = s()([...C, ...w.filter(e => e.type !== O.IIU.CUSTOM_STATUS)].sort(y.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value())
 }
 
 function G(e) {
@@ -99,7 +99,7 @@ function B() {
 }
 
 function F() {
-  P = !1, N = O.Skl.UNKNOWN, U(), v.Z.setCurrentUserOnConnectionOpen(T, L)
+  P = !1, N = O.Skl.UNKNOWN, U(), y.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
 function V() {
@@ -107,7 +107,7 @@ function V() {
 }
 class Z extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, _.Z, b.Z, y.Z, E.Z, m.Z), this.syncWith([b.Z], U)
+    this.waitFor(g.Z, _.Z, b.Z, v.Z, E.Z, m.Z), this.syncWith([b.Z], U)
   }
   getLocalPresence() {
     return {

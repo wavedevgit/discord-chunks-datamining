@@ -1,9 +1,7 @@
 /** Chunk was on web.js **/
 var r = n(961499);
-
-function i(e, t) {
+e.exports = function(e, t) {
   var n = r(this, e),
     i = n.size;
   return n.set(e, t), this.size += +(n.size != i), this
 }
-e.exports = i

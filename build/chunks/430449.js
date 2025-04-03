@@ -75,7 +75,7 @@ function m(e) {
   if (null != n) {
     var r;
     _[t] = {
-      assets: null !== (r = o().keyBy(n, "name")) && void 0 !== r ? r : {},
+      assets: null != (r = o().keyBy(n, "name")) ? r : {},
       lastUpdated: Date.now()
     }
   } else delete _[t]
@@ -89,7 +89,7 @@ function g(e) {
     var r;
     let i = t[e];
     n[e] = 2, _[e] = {
-      assets: null !== (r = o().keyBy(i, "name")) && void 0 !== r ? r : {},
+      assets: null != (r = o().keyBy(i, "name")) ? r : {},
       lastUpdated: Date.now()
     }
   }
@@ -98,7 +98,7 @@ function g(e) {
 class E extends(r = a.ZP.Store) {
   getApplicationAssetFetchState(e) {
     var t;
-    return null !== (t = f[e]) && void 0 !== t ? t : 0
+    return null != (t = f[e]) ? t : 0
   }
   getFetchingIds() {
     return [...Object.entries(f).filter(e => {

@@ -18,7 +18,7 @@ var r = n(200651),
   p = n(569984),
   h = n(981631),
   m = n(388032),
-  g = n(412444),
+  g = n(61942),
   E = n(677486);
 
 function b(e, t, n) {
@@ -30,7 +30,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,7 +69,7 @@ function T(e) {
     transitionState: o,
     onClose: a,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, y] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, v] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -77,7 +77,7 @@ function T(e) {
       duration: I
     }
   })), R = e => {
-    f(), y(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, O(v({}, C(p, n)), {
+    f(), v(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, O(y({}, C(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
@@ -179,7 +179,7 @@ function A(e) {
     let {
       default: i
     } = await Promise.resolve().then(n.bind(n, 61115));
-    return n => (0, r.jsx)(i, O(v({}, n, e), {
+    return n => (0, r.jsx)(i, O(y({}, n, e), {
       onSubmit: () => {
         t = !0
       }
@@ -187,7 +187,7 @@ function A(e) {
   }, {
     onCloseCallback: () => {
       let n = p.Z.getQuest(e.questId);
-      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, O(v({}, C(n, e.survey)), {
+      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, O(y({}, C(n, e.survey)), {
         submitted: t
       }))
     }

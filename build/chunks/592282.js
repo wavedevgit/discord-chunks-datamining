@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S: () => y
+  S: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   _ = n(448239),
   p = n(247442),
   h = n(939350),
-  m = n(428763);
+  m = n(906944);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,20 +51,20 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function v(e) {
   let {
     color: t = "default",
     label: n,
     checked: o,
     subtext: g,
     disabled: b,
-    isFocused: y,
+    isFocused: v,
     menuItemProps: O,
     action: I,
     className: S,
@@ -73,19 +73,19 @@ function y(e) {
     onInteraction: N
   } = i.useContext(c.p), A = i.useRef(null), C = (0, f.Q3)("MenuCheckboxItem");
   i.useEffect(() => {
-    y && (0, u.F)(A)
-  }, [y]);
+    v && (0, u.F)(A)
+  }, [v]);
   let R = i.useCallback(e => {
     I(e), null == N || N({
       type: c.U.CHECKBOX
     })
   }, [I, N]);
-  return (0, r.jsxs)(s.P, v(E({
+  return (0, r.jsxs)(s.P, y(E({
     innerRef: A,
     className: a()(m.item, m.checkboxContainer, m.labelContainer, h._[t], S, {
       [m.disabled]: b,
-      [m.focused]: y,
-      [null != T ? T : ""]: y
+      [m.focused]: v,
+      [null != T ? T : ""]: v
     }),
     onClick: b ? void 0 : R
   }, O), {

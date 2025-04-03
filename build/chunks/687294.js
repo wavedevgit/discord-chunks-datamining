@@ -57,12 +57,12 @@ class g extends l.Z {
   _fileSize() {
     return this.files.reduce((e, t) => {
       var n;
-      return e + (null !== (n = t.currentSize) && void 0 !== n ? n : 0)
+      return e + (null != (n = t.currentSize) ? n : 0)
     }, 0)
   }
   async compressAndCheckFileSize() {
     var e, t;
-    let n = (0, a.F)(null === (t = this.files[0]) || void 0 === t ? void 0 : null === (e = t.item) || void 0 === e ? void 0 : e.target);
+    let n = (0, a.F)(null == (t = this.files[0]) || null == (e = t.item) ? void 0 : e.target);
     return this.files.length > n.getMaxAttachmentsCount() ? (m.log("Too many attachments for ".concat(this.id)), this._handleError({
       code: c.evJ.TOO_MANY_ATTACHMENTS
     }), !1) : !(this._fileSize() > n.getMaxTotalAttachmentSize()) || (this._handleError({
@@ -104,7 +104,7 @@ class g extends l.Z {
     return {
       loaded: this.files.reduce((e, t) => {
         var n;
-        return e + (null !== (n = t.loaded) && void 0 !== n ? n : 0)
+        return e + (null != (n = t.loaded) ? n : 0)
       }, 0),
       total: e
     }
@@ -116,7 +116,7 @@ class g extends l.Z {
     }), e
   }
   cancel() {
-    m.log("Cancel called for ".concat(this.id)), !this._aborted && (this._aborted = !0, null != this._cancel && this._cancel(), this.files.forEach(e => e.cancel()), this._handleComplete())
+    m.log("Cancel called for ".concat(this.id)), this._aborted || (this._aborted = !0, null != this._cancel && this._cancel(), this.files.forEach(e => e.cancel()), this._handleComplete())
   }
   async cancelItem(e) {
     m.log("Cancel called for ".concat(this.id, " for item ").concat(e));

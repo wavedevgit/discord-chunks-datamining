@@ -13,7 +13,7 @@ let o = "_",
 
 function l(e) {
   var t;
-  let [, , n, l] = e.split("/"), c = null == n ? void 0 : n.toUpperCase().replace(a, o), u = null !== (t = s[c]) && void 0 !== t ? t : c, d = null == l ? void 0 : l.toUpperCase().replace(a, o);
+  let [, , n, l] = e.split("/"), c = null == n ? void 0 : n.toUpperCase().replace(a, o), u = null != (t = s[c]) ? t : c, d = null == l ? void 0 : l.toUpperCase().replace(a, o);
   if (i.oAB.hasOwnProperty(u) && (null == d || "" === d || i.oAB.hasOwnProperty(d))) {
     let {
       source: e

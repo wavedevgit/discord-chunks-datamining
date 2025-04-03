@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "true false yes no null",
     n = "[\\w#;/?:@&=+$,.~*'()[\\]]+",
     r = {
@@ -138,4 +138,3 @@ function t(e) {
     contains: f
   }
 }
-e.exports = t

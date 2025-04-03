@@ -4,7 +4,7 @@ n.d(t, {
   $U: () => p,
   Jw: () => b,
   Kg: () => m,
-  PO: () => y,
+  PO: () => v,
   Wh: () => I,
   Wx: () => T,
   ZT: () => N,
@@ -33,7 +33,7 @@ function _(e) {
       n = {};
     for (let i in t) {
       var r;
-      let o = null === (r = t[i][e]) || void 0 === r ? void 0 : r.avatar;
+      let o = null == (r = t[i][e]) ? void 0 : r.avatar;
       null != o && (null == n[o] && (n[o] = []), n[o].push(i))
     }
     return null != n ? Object.entries(n).map(e => e[1][0]) : []
@@ -82,7 +82,7 @@ function h() {
 function m(e, t) {
   return (0, i.e7)([u.Z], () => {
     var n, r;
-    return null == t ? null === (n = u.Z.getUserProfile(e.id)) || void 0 === n ? void 0 : n.profileEffectId : null === (r = u.Z.getGuildMemberProfile(e.id, t.id)) || void 0 === r ? void 0 : r.profileEffectId
+    return null == t ? null == (n = u.Z.getUserProfile(e.id)) ? void 0 : n.profileEffectId : null == (r = u.Z.getGuildMemberProfile(e.id, t.id)) ? void 0 : r.profileEffectId
   }, [e, t])
 }
 
@@ -104,12 +104,12 @@ function b(e, t) {
   (0, o.I5)((null == e ? void 0 : e.imageUri) === t ? void 0 : e)
 }
 
-function v(e) {
+function y(e) {
   return e ? s.cV : o.cV
 }
 
-function y(e, t) {
-  v(null != e)(t)
+function v(e, t) {
+  y(null != e)(t)
 }
 
 function O() {
@@ -121,10 +121,7 @@ function I(e) {
 }
 
 function S(e, t, n) {
-  if (e === t) {
-    null == n ? (0, o.xn)(void 0) : (0, s.xn)(void 0);
-    return
-  }
+  if (e === t) return void(null == n ? (0, o.xn)(void 0) : (0, s.xn)(void 0));
   null == n ? (0, o.xn)(e) : (0, s.xn)(e)
 }
 
@@ -150,7 +147,7 @@ function N(e) {
   let {
     pendingProfileEffectId: r,
     displayProfile: i
-  } = e, o = null == i ? void 0 : null === (t = i._userProfile) || void 0 === t ? void 0 : t.profileEffectId, a = null == i ? void 0 : null === (n = i._guildMemberProfile) || void 0 === n ? void 0 : n.profileEffectId, s = null === r;
+  } = e, o = null == i || null == (t = i._userProfile) ? void 0 : t.profileEffectId, a = null == i || null == (n = i._guildMemberProfile) ? void 0 : n.profileEffectId, s = null === r;
   return s && null != a ? o : s ? null : null != r ? r : null == i ? void 0 : i.profileEffectId
 }
 

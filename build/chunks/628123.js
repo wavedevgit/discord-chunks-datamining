@@ -20,11 +20,11 @@ var r = n(200651),
   g = n(797614),
   E = n(703656),
   b = n(626135),
-  v = n(960048),
-  y = n(998502),
+  y = n(960048),
+  v = n(998502),
   O = n(981631),
   I = n(388032),
-  S = n(466387);
+  S = n(804683);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ function N() {
   let [e, t] = i.useState(!1);
   if (null == (0, d.e7)([p.C], () => {
       var e;
-      return (0, h.fD)() ? null === (e = p.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
+      return (0, h.fD)() ? null == (e = p.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
     })) return null;
   let n = async () => {
     try {
@@ -75,7 +75,7 @@ class C extends i.PureComponent {
       info: t
     });
     let r = (0, u.e)(),
-      i = v.Z.captureCrash(e, {
+      i = y.Z.captureCrash(e, {
         extra: t
       });
     b.default.track(O.rMx.APP_CRASHED, {
@@ -86,7 +86,7 @@ class C extends i.PureComponent {
       sentry_issue_id: i,
       uses_client_mods: r,
       error_level: "fatal"
-    }), A(r), y.ZP.cleanupDisplaySleep()
+    }), A(r), v.ZP.cleanupDisplaySleep()
   }
   _handleSubmitReport() {
     location.reload(!0)

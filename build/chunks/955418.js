@@ -15,7 +15,7 @@ var r = n(200651),
   f = n(698305),
   _ = n(981631),
   p = n(388032),
-  h = n(660749);
+  h = n(582970);
 let m = (0, c.kt)({
   id: "1",
   type: _.d4z.DM
@@ -31,7 +31,7 @@ function g(e) {
     newestAnalyticsLocation: g
   } = (0, o.ZP)(), {
     trackUserProfileAction: E
-  } = (0, d.KZ)(), [b, v] = i.useState(""), [y, O] = i.useState((0, s.JM)(b)), I = i.useRef(!1);
+  } = (0, d.KZ)(), [b, y] = i.useState(""), [v, O] = i.useState((0, s.JM)(b)), I = i.useRef(!1);
   return (0, r.jsx)(l.Z, {
     className: h.container,
     innerClassName: h.inner,
@@ -42,9 +42,9 @@ function g(e) {
     }),
     channel: m,
     textValue: b,
-    richValue: y,
+    richValue: v,
     onChange: (e, t, n) => {
-      t !== b && (v(t), O(n))
+      t !== b && (y(t), O(n))
     },
     focused: I.current,
     onFocus: () => {

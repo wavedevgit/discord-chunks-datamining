@@ -16,15 +16,14 @@ var r = n(939793),
   g = "[object DataView]",
   E = "[object Float32Array]",
   b = "[object Float64Array]",
-  v = "[object Int8Array]",
-  y = "[object Int16Array]",
+  y = "[object Int8Array]",
+  v = "[object Int16Array]",
   O = "[object Int32Array]",
   I = "[object Uint8Array]",
   S = "[object Uint8ClampedArray]",
   T = "[object Uint16Array]",
   N = "[object Uint32Array]";
-
-function A(e, t, n) {
+e.exports = function(e, t, n) {
   var A = e.constructor;
   switch (t) {
     case m:
@@ -36,8 +35,8 @@ function A(e, t, n) {
       return i(e, n);
     case E:
     case b:
-    case v:
     case y:
+    case v:
     case O:
     case I:
     case S:
@@ -57,4 +56,3 @@ function A(e, t, n) {
       return a(e)
   }
 }
-e.exports = A

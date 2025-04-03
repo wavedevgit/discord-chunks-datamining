@@ -45,7 +45,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ function I() {
 }
 
 function S() {
-  return !l.Z.isSupported() && ((0, i.h7j)(e => (0, r.jsx)(i.ConfirmModal, y(b({
+  return !l.Z.isSupported() && ((0, i.h7j)(e => (0, r.jsx)(i.ConfirmModal, v(b({
     header: g.NW.string(g.t.ilMTy8),
     confirmText: g.NW.string(g.t.BK8LKy),
     cancelText: g.NW.string(g.t["ETE/oK"]),

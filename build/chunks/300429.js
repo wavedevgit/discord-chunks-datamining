@@ -68,14 +68,14 @@ function b(e) {
   return g(t, 0)
 }
 
-function v(e) {
+function y(e) {
   let {
     file: t
   } = e, n = l.Z.getChannel(t.channelId);
   return null != n && h(n, 0, 0)
 }
 
-function y(e) {
+function v(e) {
   let {
     channelId: t,
     slowmodeType: n
@@ -102,7 +102,7 @@ function I(e) {
       var n;
       let t = p[e][r.id],
         i = r.rateLimitPerUser;
-      null != t && t.rateLimitPerUser !== i && h(r, e, Math.min(null !== (n = null == t ? void 0 : t.cooldownMs) && void 0 !== n ? n : 0, i * s.Z.Millis.SECOND))
+      null != t && t.rateLimitPerUser !== i && h(r, e, Math.min(null != (n = null == t ? void 0 : t.cooldownMs) ? n : 0, i * s.Z.Millis.SECOND))
     }
   })
 }
@@ -126,11 +126,11 @@ class T extends(r = i.ZP.Store) {
 }
 d(T, "displayName", "SlowmodeStore");
 let N = new T(a.Z, {
-  SLOWMODE_RESET_COOLDOWN: y,
+  SLOWMODE_RESET_COOLDOWN: v,
   SLOWMODE_SET_COOLDOWN: O,
   UPLOAD_START: b,
-  UPLOAD_FAIL: v,
-  UPLOAD_CANCEL_REQUEST: v,
+  UPLOAD_FAIL: y,
+  UPLOAD_CANCEL_REQUEST: y,
   CHANNEL_UPDATES: I,
   LOGOUT: S
 })

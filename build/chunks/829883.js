@@ -38,5 +38,5 @@ let l = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/
   p = e => e.startsWith(l) || e.startsWith("".concat(c, "/roles")) && e.includes("/icons/"),
   h = (e, t) => {
     var n;
-    return (null == t ? void 0 : null === (n = t.tags) || void 0 === n ? void 0 : n.subscription_listing_id) != null || e.features.has(s.oNc.ROLE_ICONS)
+    return (null == t || null == (n = t.tags) ? void 0 : n.subscription_listing_id) != null || e.features.has(s.oNc.ROLE_ICONS)
   }

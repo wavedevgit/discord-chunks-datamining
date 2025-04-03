@@ -20,7 +20,7 @@ function l(e, t, n) {
 class c {
   static fromServer(e) {
     var t;
-    return new c(Object.fromEntries(Object.entries(null !== (t = null == e ? void 0 : e.marketings) && void 0 !== t ? t : {}).map(e => {
+    return new c(Object.fromEntries(Object.entries(null != (t = null == e ? void 0 : e.marketings) ? t : {}).map(e => {
       let [t, n] = e;
       return [t, (0, r.EQ)(n).with({
         type: i.Z.COACHTIP

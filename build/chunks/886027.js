@@ -20,14 +20,11 @@ function l(e) {
     let r = o.bN.getCurrentBlock(e);
     if ((null == r ? void 0 : r[0].type) === "blockQuote") {
       let t = o.M8.toPoint(e.selection);
-      if (null != t && o.C0.isFirstChild(r[1], t.path) && 0 === t.offset) {
-        i.Q.setNodes(e, {
-          type: "line"
-        }, {
-          at: r[1]
-        });
-        return
-      }
+      if (null != t && o.C0.isFirstChild(r[1], t.path) && 0 === t.offset) return void i.Q.setNodes(e, {
+        type: "line"
+      }, {
+        at: r[1]
+      })
     }
     t(n)
   }, e.deleteFragment = t => {
@@ -100,7 +97,7 @@ function c(e) {
         at: u
       }), !t)) {
       var n, r;
-      let a = null !== (r = null !== (n = null == p ? void 0 : p[0].length) && void 0 !== n ? n : null == _ ? void 0 : _[0].length) && void 0 !== r ? r : 0,
+      let a = null != (r = null != (n = null == p ? void 0 : p[0].length) ? n : null == _ ? void 0 : _[0].length) ? r : 0,
         s = o.C0.child(u, 0);
       i.Q.delete(e, {
         at: {
@@ -123,7 +120,7 @@ function u(e, t, n) {
   let r = o.bN.previous(e, {
     at: t[1]
   });
-  return !!(null != r && o.aj.isType(r[0], "blockQuote") && o.bN.isEmpty(e, r[0]) && o.Jz.isAtStart(n, t)) && (i.Q.setNodes(e, {
+  return null != r && !!o.aj.isType(r[0], "blockQuote") && !!o.bN.isEmpty(e, r[0]) && !!o.Jz.isAtStart(n, t) && (i.Q.setNodes(e, {
     type: "line"
   }, {
     at: t[1]

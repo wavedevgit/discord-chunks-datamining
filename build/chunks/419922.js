@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(453070),
   E = n(373228),
   b = n(378233),
-  v = n(388032),
-  y = n(442038);
+  y = n(388032),
+  v = n(161492);
 let O = e => e.preventDefault(),
   I = .7,
   S = 33,
@@ -45,7 +45,7 @@ function C(e, t) {
 
 function R(e) {
   let t = "description" in e && null != e.description ? "".concat(e.name, ", ").concat(e.description) : e.name;
-  return v.NW.formatToPlainString(v.t.rk6pOz, {
+  return y.NW.formatToPlainString(y.t.rk6pOz, {
     stickerName: t
   })
 }
@@ -59,29 +59,29 @@ let P = e => {
       withLoadingIndicator: l = !0
     } = e, c = s >= S;
     return (0, r.jsxs)("div", {
-      className: a()(y.assetWrapper, {
-        [y.assetWrapperMasked]: n || o
+      className: a()(v.assetWrapper, {
+        [v.assetWrapperMasked]: n || o
       }),
       style: {
         height: s,
         width: s
       },
       children: [n ? (0, r.jsxs)("div", {
-        className: y.error,
+        className: v.error,
         children: [(0, r.jsx)(f.r8p, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
-          className: y.errorIcon
+          className: v.errorIcon
         }), c && (0, r.jsx)(f.Text, {
-          className: y.errorText,
+          className: v.errorText,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: v.NW.string(v.t.tWYWJy)
+          children: y.NW.string(y.t.tWYWJy)
         })]
       }) : t, l && i && (0, r.jsx)("div", {
-        className: y.loadingIndicator
+        className: v.loadingIndicator
       })]
     })
   },
@@ -124,16 +124,16 @@ let P = e => {
         }), N.current && E.current.setState(!0))
       })(), () => {
         var e;
-        null === (e = E.current) || void 0 === e || e.drop(), E.current = null, t = !0
+        null == (e = E.current) || e.drop(), E.current = null, t = !0
       }
     }, [A, o, a.id, c, m]), i.useEffect(() => {
       var e;
       let n;
-      t || (n = 0), null === (e = E.current) || void 0 === e || e.setState(t && u, n)
+      t || (n = 0), null == (e = E.current) || e.setState(t && u, n)
     }, [a, t, u]), null == A) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": S ? v.NW.string(v.t.yEvsKy) : R(a),
+      "aria-label": S ? y.NW.string(y.t.yEvsKy) : R(a),
       ref: _,
       children: (0, r.jsx)(P, {
         hasError: S,
@@ -142,7 +142,7 @@ let P = e => {
         size: o,
         withLoadingIndicator: h,
         children: C((0, r.jsx)("canvas", {
-          className: y.lottieCanvas,
+          className: v.lottieCanvas,
           ref: g
         }), a.id)
       })
@@ -159,13 +159,13 @@ let P = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: _
-    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, v] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, b.Q6)(n, {
+    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, y] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, b.Q6)(n, {
       isPreview: !t || !p || !o,
       size: s
     }), A = i.useCallback(() => {
       g(!1)
     }, []), w = i.useCallback(() => {
-      v(!0)
+      y(!0)
     }, []);
     return (i.useEffect(() => {
       if (null != S.current) {
@@ -176,14 +176,14 @@ let P = e => {
       }
     }, []), i.useLayoutEffect(() => {
       var e;
-      (null === (e = T.current) || void 0 === e ? void 0 : e.complete) === !0 && g(!1)
+      (null == (e = T.current) ? void 0 : e.complete) === !0 && g(!1)
     }, []), null == N) ? null : (0, r.jsx)(d.$, {
       innerRef: u,
       ref: S,
       onChange: h,
       threshold: I,
       children: (0, r.jsx)("div", {
-        className: a()(l, y.__invalid_pngImageWrapper),
+        className: a()(l, v.__invalid_pngImageWrapper),
         ref: u,
         children: (0, r.jsx)(P, {
           hasError: E,
@@ -192,7 +192,7 @@ let P = e => {
           size: s,
           withLoadingIndicator: f,
           children: C((0, r.jsx)("img", {
-            className: y.pngImage,
+            className: v.pngImage,
             alt: R(n),
             src: N,
             draggable: !1,
@@ -226,25 +226,25 @@ let P = e => {
       },
       leave: g,
       config: N
-    }), b = i.useRef(null), v = (0, f.q_F)({
+    }), b = i.useRef(null), y = (0, f.q_F)({
       ref: b,
       transform: a || p ? "translateY(0)" : "translateY(-25px)",
       opacity: +!!a,
       config: A
     }, "animate-always");
     return (0, c.useChain)(a ? [m, b] : [b, m], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
-      className: y.positionedLayer,
+      className: v.positionedLayer,
       fixed: !0,
       align: "center",
       position: "center",
       targetRef: s,
       children: () => (0, r.jsxs)("div", {
-        className: y.overlayWrapper,
+        className: v.overlayWrapper,
         children: [(0, r.jsx)(c.animated.div, {
-          className: y.overlayStickerWrapper,
+          className: v.overlayStickerWrapper,
           style: e,
           children: (0, r.jsx)(x, {
-            className: y.__invalid_overlaySticker,
+            className: v.__invalid_overlaySticker,
             disableAnimation: t,
             enlargeOnInteraction: !1,
             isInteracting: a,
@@ -254,11 +254,11 @@ let P = e => {
             withLoadingIndicator: !1
           })
         }), o && (0, r.jsx)(c.animated.div, {
-          className: y.overlayLabelWrapper,
-          style: v,
+          className: v.overlayLabelWrapper,
+          style: y,
           children: (0, r.jsx)(f.Text, {
             variant: "text-sm/medium",
-            className: y.overlayLabel,
+            className: v.overlayLabel,
             children: d.name
           })
         })]
@@ -280,18 +280,18 @@ let P = e => {
       assetData: _,
       fileUri: p,
       onError: h
-    } = e, b = (0, m.n)(), v = (0, g.t$)(t) && !n, y = i.useRef(null);
+    } = e, b = (0, m.n)(), y = (0, g.t$)(t) && !n, v = i.useRef(null);
     if (null == u) return null;
     let O = u.format_type === E.u3.LOTTIE ? w : D;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(O, {
-        shouldAnimate: v,
+        shouldAnimate: y,
         isFocused: b,
         size: c,
         sticker: u,
         className: d,
         maskAsset: l,
-        positionRef: y,
+        positionRef: v,
         withLoadingIndicator: f,
         assetData: _,
         fileUri: p,
@@ -301,7 +301,7 @@ let P = e => {
         enlargeScaleFactor: s,
         enlargeWithName: a,
         isInteracting: t,
-        positionRef: y,
+        positionRef: v,
         size: c,
         sticker: u
       })]

@@ -25,7 +25,7 @@ function u(e) {
   return {
     selfMute: h,
     suppress: (null == p ? void 0 : p.suppress) || g,
-    mute: null !== (t = null == p ? void 0 : p.mute) && void 0 !== t && t
+    mute: null != (t = null == p ? void 0 : p.mute) && t
   }
 }
 

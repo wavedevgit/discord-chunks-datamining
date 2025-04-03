@@ -17,7 +17,7 @@ n.d(t, {
   Vn: () => S,
   ab: () => A,
   e5: () => L,
-  e7: () => y,
+  e7: () => v,
   lN: () => B,
   nE: () => G,
   nH: () => I,
@@ -25,7 +25,7 @@ n.d(t, {
   qz: () => F,
   ws: () => x,
   xI: () => M,
-  zI: () => v
+  zI: () => y
 }), n(566702);
 var r = n(367907),
   i = n(731429),
@@ -112,7 +112,7 @@ function b(e) {
   }))
 }
 
-function v(e) {
+function y(e) {
   let {
     guildId: t,
     channelId: n
@@ -125,7 +125,7 @@ function v(e) {
   }))
 }
 
-function y(e) {
+function v(e) {
   let {
     guildId: t,
     channelId: n,
@@ -180,12 +180,12 @@ function S(e) {
   } = e, u = a.Z.getChannel(c);
   if (null == u) return;
   let d = s.Z.getThreadSettings(c),
-    p = null === (t = u.template) || void 0 === t ? void 0 : t.trim(),
+    p = null == (t = u.template) ? void 0 : t.trim(),
     m = s.Z.getDraft(c, s.d.FirstThreadMessage),
     E = null == m || 0 === m.length || (null == m ? void 0 : m.trim()) === p,
-    b = (null == d ? void 0 : d.appliedTags) == null || (null == d ? void 0 : null === (n = d.appliedTags) || void 0 === n ? void 0 : n.size) === 0,
-    v = (null == d ? void 0 : d.name) == null || (null == d ? void 0 : null === (o = d.name) || void 0 === o ? void 0 : null === (i = o.trim()) || void 0 === i ? void 0 : i.length) === 0;
-  (!E || !b || !v) && r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(h({}, (0, f.xl)({
+    b = (null == d ? void 0 : d.appliedTags) == null || (null == d || null == (n = d.appliedTags) ? void 0 : n.size) === 0,
+    y = (null == d ? void 0 : d.name) == null || (null == d || null == (o = d.name) || null == (i = o.trim()) ? void 0 : i.length) === 0;
+  E && b && y || r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(h({}, (0, f.xl)({
     channelId: c
   })), {
     guild_id: l,

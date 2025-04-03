@@ -19,10 +19,10 @@ function a(e) {
   E.current = a;
   let b = r.useRef(s);
   b.current = s;
-  let v = r.useRef(l);
-  v.current = l;
-  let y = r.useRef(c);
-  y.current = c;
+  let y = r.useRef(l);
+  y.current = l;
+  let v = r.useRef(c);
+  v.current = c;
   let [O, I] = r.useState(!1), S = r.useCallback(() => I(!1), []);
   return r.useLayoutEffect(() => {
     void 0 !== t && (h.current = void 0, m.current = void 0, I(!1))
@@ -33,11 +33,11 @@ function a(e) {
       height: o
     } = d.getBoundingClientRect();
     !n && (null == h.current || o < h.current) && (h.current = o), n && (null == m.current || o > m.current) && (m.current = o);
-    let a = null !== (e = b.current) && void 0 !== e ? e : h.current,
-      s = null !== (r = v.current) && void 0 !== r ? r : m.current,
+    let a = null != (e = b.current) ? e : h.current,
+      s = null != (r = y.current) ? r : m.current,
       l = g.current !== t;
     if (g.current = t, null == a || null == s || l) return;
-    let c = Math.min(null !== (i = y.current) && void 0 !== i ? i : s, s),
+    let c = Math.min(null != (i = v.current) ? i : s, s),
       u = n ? a : c,
       f = n ? c : a;
     if (u === f) return;
@@ -47,7 +47,7 @@ function a(e) {
       _ = null, d.style.height = "".concat(f, "px"), d.style.transition = "height ".concat(E.current, "ms ease-in-out")
     }), () => null != _ ? cancelAnimationFrame(_) : void 0
   }, [t, d, n]), r.useLayoutEffect(() => {
-    null != d && !O && (d.style.height = "", d.style.transition = "")
+    null == d || O || (d.style.height = "", d.style.transition = "")
   }, [t, d, O]), {
     ref: p,
     isTransitioning: O,

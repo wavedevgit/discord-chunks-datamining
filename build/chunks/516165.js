@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "STEP Part 21",
     aliases: ["p21", "step", "stp"],
@@ -34,4 +34,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

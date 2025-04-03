@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       keyword: "actor addressof and as be break class compile_error compile_intrinsic consume continue delegate digestof do else elseif embed end error for fun if ifdef in interface is isnt lambda let match new not object or primitive recover repeat return struct then trait try type until use var where while with xor",
       meta: "iso val tag trn box ref",
@@ -41,4 +41,3 @@ function t(e) {
     }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
   }
 }
-e.exports = t

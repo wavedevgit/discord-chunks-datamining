@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Ft: () => g,
-  ML: () => y,
-  ZJ: () => v,
+  ML: () => v,
+  ZJ: () => y,
   mF: () => m
 }), n(47120);
 var r = n(512722),
@@ -56,15 +56,18 @@ function g(e, t, n) {
   }
   if (e.applicationId === p.bi.BUILT_IN) return 0;
   let L = null != l ? (0, _.ny)(l) : void 0;
-  if (null == L || a.e$(O, h.Plq.ADMINISTRATOR) || P && (null === (r = e.integration_types) || void 0 === r ? void 0 : r.includes(o.Y.USER_INSTALL))) return 0;
+  if (null == L || a.e$(O, h.Plq.ADMINISTRATOR) || P && (null == (r = e.integration_types) ? void 0 : r.includes(o.Y.USER_INSTALL))) return 0;
   if (!N && R && (null == e.integration_types || e.integration_types.includes(o.Y.GUILD_INSTALL))) return 5;
   if (l instanceof c.Sf) {
     i()(void 0 !== C, "missing applicationAllowedForChannel");
-    let t = v(e.permissions, l, L);
+    let t = y(e.permissions, l, L);
     if (b(t) || !E(t) && b(C)) return 6
   }
-  let x = y(e.permissions, L, I, S, T);
-  return E(x) ? 0 : b(x) ? 7 : b(A) || null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(O, e.defaultMemberPermissions)) ? 7 : 0
+  let x = v(e.permissions, L, I, S, T);
+  if (E(x)) return 0;
+  if (b(x) || b(A)) return 7;
+  if (null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(O, e.defaultMemberPermissions))) return 7;
+  return 0
 }
 
 function E(e) {
@@ -75,12 +78,12 @@ function b(e) {
   return !1 === e
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   if (null == e) return null;
   let r = t.id;
   if (t.isThread()) {
     var i;
-    r = null !== (i = t.parent_id) && void 0 !== i ? i : t.id
+    r = null != (i = t.parent_id) ? i : t.id
   }
   let o = e[(0, l.rE)(r, d.Kw.CHANNEL)];
   if (null != o) return o.permission;
@@ -88,7 +91,7 @@ function v(e, t, n) {
   return null != a ? a.permission : null
 }
 
-function y(e, t, n, r, i) {
+function v(e, t, n, r, i) {
   if (null == e) return null;
   if (!i) {
     let t = e[(0, l.rE)(n, d.Kw.USER)];

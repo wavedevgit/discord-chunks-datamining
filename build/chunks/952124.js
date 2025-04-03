@@ -21,7 +21,7 @@ var r = n(200651),
   E = n(475413),
   b = n(388032);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -47,7 +47,7 @@ function O(e) {
   let {
     user: t,
     guildId: n,
-    viewProfileItem: v,
+    viewProfileItem: y,
     onCloseProfile: O
   } = e, I = i.useRef(null), {
     trackUserProfileAction: S
@@ -110,7 +110,7 @@ function O(e) {
       analyticsLocations: T
     })
   }), M = [
-    [v], A ? [P] : [],
+    [y], A ? [P] : [],
     [D, w, L],
     [(0, u.Z)({
       application: R,
@@ -137,7 +137,7 @@ function O(e) {
         }, t))
       })
     },
-    children: e => (0, r.jsx)(E.oY, y({
+    children: e => (0, r.jsx)(E.oY, v({
       ref: I,
       action: "PRESS_OPTIONS",
       icon: a.xhG,

@@ -73,7 +73,7 @@ function h() {
     }),
     {
       categoryId: f
-    } = null !== (e = null == d ? void 0 : d.params) && void 0 !== e ? e : {};
+    } = null != (e = null == d ? void 0 : d.params) ? e : {};
   if (null != d && null != f) return {
     type: "category",
     categoryId: f
@@ -86,9 +86,9 @@ function h() {
       applicationId: p,
       section: h,
       skuId: m
-    } = null !== (t = null == _ ? void 0 : _.params) && void 0 !== t ? t : {};
+    } = null != (t = null == _ ? void 0 : _.params) ? t : {};
   if (null != _ && null != p) {
-    let e = null === (n = a.Z.getApplication(p)) || void 0 === n ? void 0 : n.name;
+    let e = null == (n = a.Z.getApplication(p)) ? void 0 : n.name;
     return {
       type: "application",
       applicationId: p,

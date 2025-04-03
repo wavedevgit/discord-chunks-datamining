@@ -38,8 +38,8 @@ var r = n(192379),
   g = n(626135),
   E = n(70956),
   b = n(176354),
-  v = n(111361),
-  y = n(304852),
+  y = n(111361),
+  v = n(304852),
   O = n(199257),
   I = n(149203),
   S = n(981631),
@@ -76,17 +76,17 @@ let R = function(e, t) {
       } = (0, O.Z)(n, e),
       {
         allEmojis: R
-      } = (0, y.Z)({
+      } = (0, v.Z)({
         topEmojis: N,
         newlyAddedEmojis: A
       }),
       P = (0, a.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
       w = (0, a.e7)([p.Z], () => {
         var e;
-        return null === (e = p.Z.getGuild(n)) || void 0 === e ? void 0 : e.name
+        return null == (e = p.Z.getGuild(n)) ? void 0 : e.name
       }),
       D = (0, a.e7)([m.default], () => m.default.getCurrentUser()),
-      L = (0, v.I5)(D),
+      L = (0, y.I5)(D),
       x = (0, f.g2)({
         location: "useEmojiCategories"
       });
@@ -218,7 +218,7 @@ let R = function(e, t) {
       location: u,
       intention: d,
       index: f
-    } = e, _ = null !== (r = i.uniqueName) && void 0 !== r ? r : i.name, p = (0, o.EQ)(d).with(T.Hz.REACTION, () => S.aib.EMOJI_REACTION).with(T.Hz.AUTO_SUGGESTION, () => S.aib.EMOJI_AUTO_SUGGESTION).otherwise(() => S.aib.EMOJI);
+    } = e, _ = null != (r = i.uniqueName) ? r : i.name, p = (0, o.EQ)(d).with(T.Hz.REACTION, () => S.aib.EMOJI_REACTION).with(T.Hz.AUTO_SUGGESTION, () => S.aib.EMOJI_AUTO_SUGGESTION).otherwise(() => S.aib.EMOJI);
     s.ZP.trackWithMetadata(S.rMx.SEARCH_RESULT_SELECTED, {
       search_type: p,
       location: u,
@@ -231,8 +231,8 @@ let R = function(e, t) {
       query: l,
       index_num: f,
       load_id: null == a ? void 0 : a.loadId,
-      total_results: null == a ? void 0 : null === (t = a.results) || void 0 === t ? void 0 : t.length,
-      emoji_suggestion_ids: null == a ? void 0 : null === (n = a.results) || void 0 === n ? void 0 : n.map(e => {
+      total_results: null == a || null == (t = a.results) ? void 0 : t.length,
+      emoji_suggestion_ids: null == a || null == (n = a.results) ? void 0 : n.map(e => {
         let {
           emoji: t
         } = e;
@@ -285,7 +285,7 @@ let R = function(e, t) {
       default:
         n = A.cd.EMOJI_PICKER_EMOJI_CLICKED
     }
-    let f = null !== (t = r.uniqueName) && void 0 !== t ? t : r.name;
+    let f = null != (t = r.uniqueName) ? t : r.name;
     s.ZP.trackWithMetadata(S.rMx.EXPRESSION_PICKER_EXPRESSION_SELECTED, {
       type: n,
       location: i,
@@ -306,7 +306,7 @@ let R = function(e, t) {
     let {
       emoji: n,
       location: r
-    } = e, i = null !== (t = n.uniqueName) && void 0 !== t ? t : n.name;
+    } = e, i = null != (t = n.uniqueName) ? t : n.name;
     s.ZP.trackWithMetadata(S.rMx.EXPRESSION_FAVORITED, {
       location: r,
       expression_type: N.X1.EMOJI,
@@ -338,7 +338,7 @@ let R = function(e, t) {
   leading: !1,
   trailing: !0
 });
-let U = (e, t) => e.type === I.En.GUILD ? null != t ? t.toString() : "" : e.id,
+let U = (e, t) => e.type !== I.En.GUILD ? e.id : null != t ? t.toString() : "",
   G = (e, t) => {
     switch (e) {
       case I.UX.TOP_GUILD_EMOJI:
@@ -425,7 +425,7 @@ function Y(e, t, n) {
   if (null == n) return I.t0.NONE;
   let r = e.map(e => {
       var t, n;
-      return null !== (n = null !== (t = e.id) && void 0 !== t ? t : e.uniqueName) && void 0 !== n ? n : e.name
+      return null != (n = null != (t = e.id) ? t : e.uniqueName) ? n : e.name
     }),
     i = t.map(e => e.id);
   return r.includes(n) ? I.t0.TOP_GUILD_EMOJI : i.includes(n) ? I.t0.NEWLY_ADDED_EMOJI : I.t0.NONE

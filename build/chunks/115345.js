@@ -25,8 +25,8 @@ var r = n(192379),
   g = n(430824),
   E = n(771845),
   b = n(9156),
-  v = n(626135),
-  y = n(630388),
+  y = n(626135),
+  v = n(630388),
   O = n(823379),
   I = n(960048),
   S = n(709054),
@@ -113,12 +113,12 @@ function B() {
     t = {};
   for (let i of e) {
     var n, r;
-    let e = null !== (r = (null !== (n = b.ZP.getAllSettings().userGuildSettings[i.id]) && void 0 !== n ? n : {}).flags) && void 0 !== r ? r : 0;
-    e = (0, y.mB)(e, D.vc.UNREADS_ALL_MESSAGES, !0), e = (0, y.mB)(e, D.vc.UNREADS_ONLY_MENTIONS, !1), t[i.id] = {
+    let e = null != (r = (null != (n = b.ZP.getAllSettings().userGuildSettings[i.id]) ? n : {}).flags) ? r : 0;
+    e = (0, v.mB)(e, D.vc.UNREADS_ALL_MESSAGES, !0), e = (0, v.mB)(e, D.vc.UNREADS_ONLY_MENTIONS, !1), t[i.id] = {
       flags: e
     }
   }
-  Y(t), v.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
+  Y(t), y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
     auto_migrated: !0,
     num_unread_guids_after: e.filter(e => m.default.hasUnread(e.id)).length
   })
@@ -126,7 +126,7 @@ function B() {
 
 function F(e, t, n, r, i) {
   var o;
-  let [a, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, A.q)(e, t, n, r, !0) : (0, A.A)(e, n), c = null !== (o = n.filter(t => t.guild_id === e.id)[0]) && void 0 !== o ? o : {}, u = (0, N.Z)(e, null != i ? i : a, c, r, t);
+  let [a, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, A.q)(e, t, n, r, !0) : (0, A.A)(e, n), c = null != (o = n.filter(t => t.guild_id === e.id)[0]) ? o : {}, u = (0, N.Z)(e, null != i ? i : a, c, r, t);
   return {
     guildId: e.id,
     mode: a,
@@ -142,11 +142,11 @@ function F(e, t, n, r, i) {
 function V(e, t) {
   let n = t.reduce((e, t) => {
       var n;
-      return e + Number(null !== (n = t.num_year_opens) && void 0 !== n ? n : 0)
+      return e + Number(null != (n = t.num_year_opens) ? n : 0)
     }, 0),
     r = t.reduce((e, t) => {
       var n;
-      return e + Number(null !== (n = t.num_month_opens) && void 0 !== n ? n : 0)
+      return e + Number(null != (n = t.num_month_opens) ? n : 0)
     }, 0),
     i = E.ZP.getFlattenedGuildIds(),
     a = o().sortBy(Object.values(e), e => {
@@ -159,12 +159,12 @@ function V(e, t) {
     ].map(e => {
       let [t, n] = e, r = a.filter(e => {
         var t;
-        return n.has(null !== (t = e.overrideMode) && void 0 !== t ? t : e.mode)
+        return n.has(null != (t = e.overrideMode) ? t : e.mode)
       }).map(e => {
         let t = g.Z.getGuild(e.guildId),
           n = e.actions.map(e => {
             var t;
-            return "- ".concat(e.label).concat(null !== (t = e.debug) && void 0 !== t ? t : "")
+            return "- ".concat(e.label).concat(null != (t = e.debug) ? t : "")
           }).join("\n");
         return "### ".concat(t.name, "\n**Reasoning**: ").concat(e.debugReason, "**ActionPlan**:\n").concat(n)
       });
@@ -190,21 +190,18 @@ function Z(e) {
   }
 }
 async function H(e, t) {
-  if (b.ZP.useNewNotifications) {
-    c.Z.show({
-      title: "Info",
-      body: "It looks like you are already using the new notifications system so skipping saving any changes this time because that will almost certainly mess up your account!"
-    });
-    return
-  }
+  if (b.ZP.useNewNotifications) return void c.Z.show({
+    title: "Info",
+    body: "It looks like you are already using the new notifications system so skipping saving any changes this time because that will almost certainly mess up your account!"
+  });
   let n = W(e);
   try {
     let t = {};
     for (let n of Object.values(e)) {
       var r, i;
-      let e = null !== (r = b.ZP.getAllSettings().userGuildSettings[n.guildId]) && void 0 !== r ? r : {},
+      let e = null != (r = b.ZP.getAllSettings().userGuildSettings[n.guildId]) ? r : {},
         o = {};
-      for (let t of n.actions) null === (i = t.apply) || void 0 === i || i.call(t, o, e);
+      for (let t of n.actions) null == (i = t.apply) || i.call(t, o, e);
       t[n.guildId] = o
     }
     await Y(t);
@@ -229,12 +226,12 @@ async function H(e, t) {
 function W(e) {
   let t = Object.values(e).filter(e => {
       var t;
-      return (null !== (t = e.overrideMode) && void 0 !== t ? t : e.mode) === R.AR.UseGreyDot
+      return (null != (t = e.overrideMode) ? t : e.mode) === R.AR.UseGreyDot
     }).map(e => {
       var t;
       return {
         plan: e,
-        memberCount: null !== (t = h.Z.getMemberCount(e.guildId)) && void 0 !== t ? t : 0
+        memberCount: null != (t = h.Z.getMemberCount(e.guildId)) ? t : 0
       }
     }),
     n = {
@@ -242,7 +239,7 @@ function W(e) {
       unmuted_server_ids: t.filter(e => b.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
     };
   return () => {
-    v.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
+    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
       auto_migrated: !0,
       pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),
@@ -294,7 +291,7 @@ function q() {
   })
 }
 async function Q() {
-  s.K.set("turnedOffNewNotifications", !0), v.default.track(P.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
+  s.K.set("turnedOffNewNotifications", !0), y.default.track(P.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
     num_guilds_with_new_setting: Object.values(g.Z.getGuilds()).filter(e => b.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
   });
   let e = await (0, T.Tn)(),
@@ -314,23 +311,23 @@ async function Q() {
 function X(e) {
   var t, n, r;
   if (null == e) return [];
-  let i = o().keyBy(null !== (t = e.voice_joins) && void 0 !== t ? t : [], "channel_id"),
-    a = o().keyBy(null !== (n = e.message_sends) && void 0 !== n ? n : [], "channel_id");
-  return (null !== (r = e.channel_opens) && void 0 !== r ? r : []).map(e => {
+  let i = o().keyBy(null != (t = e.voice_joins) ? t : [], "channel_id"),
+    a = o().keyBy(null != (n = e.message_sends) ? n : [], "channel_id");
+  return (null != (r = e.channel_opens) ? r : []).map(e => {
     var t, n, r, o, s, l, c, u, d, f, _;
-    let p = null !== (t = i[e.channel_id]) && void 0 !== t ? t : {},
-      h = null !== (n = a[e.channel_id]) && void 0 !== n ? n : {};
+    let p = null != (t = i[e.channel_id]) ? t : {},
+      h = null != (n = a[e.channel_id]) ? n : {};
     return {
       channel_id: e.channel_id,
-      num_year_opens: Number(null !== (r = e.year_opens) && void 0 !== r ? r : 0),
-      num_month_opens: Number(null !== (o = e.one_month_opens) && void 0 !== o ? o : 0),
-      num_three_month_opens: Number(null !== (s = e.three_month_opens) && void 0 !== s ? s : 0),
-      num_six_month_opens: Number(null !== (l = e.six_month_opens) && void 0 !== l ? l : 0),
-      num_messages: Number(null !== (c = null == h ? void 0 : h.num_messages) && void 0 !== c ? c : 0),
-      num_year_voice_joins: Number(null !== (u = null == p ? void 0 : p.year_opens) && void 0 !== u ? u : 0),
-      num_month_voice_joins: Number(null !== (d = null == p ? void 0 : p.one_month_opens) && void 0 !== d ? d : 0),
-      num_three_month_voice_joins: Number(null !== (f = null == p ? void 0 : p.three_month_opens) && void 0 !== f ? f : 0),
-      num_six_month_voice_joins: Number(null !== (_ = null == p ? void 0 : p.six_month_opens) && void 0 !== _ ? _ : 0)
+      num_year_opens: Number(null != (r = e.year_opens) ? r : 0),
+      num_month_opens: Number(null != (o = e.one_month_opens) ? o : 0),
+      num_three_month_opens: Number(null != (s = e.three_month_opens) ? s : 0),
+      num_six_month_opens: Number(null != (l = e.six_month_opens) ? l : 0),
+      num_messages: Number(null != (c = null == h ? void 0 : h.num_messages) ? c : 0),
+      num_year_voice_joins: Number(null != (u = null == p ? void 0 : p.year_opens) ? u : 0),
+      num_month_voice_joins: Number(null != (d = null == p ? void 0 : p.one_month_opens) ? d : 0),
+      num_three_month_voice_joins: Number(null != (f = null == p ? void 0 : p.three_month_opens) ? f : 0),
+      num_six_month_voice_joins: Number(null != (_ = null == p ? void 0 : p.six_month_opens) ? _ : 0)
     }
   }).filter(O.lm)
 }

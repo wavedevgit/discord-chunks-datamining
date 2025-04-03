@@ -55,12 +55,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new o.Yd("VoiceFilterActionCreators"),
+let v = new o.Yd("VoiceFilterActionCreators"),
   O = !1;
 
 function I(e) {
@@ -78,21 +78,21 @@ function I(e) {
       downloadedBytes: n,
       totalBytes: r
     } = t;
-    s.Z.dispatch(v(E({
+    s.Z.dispatch(y(E({
       type: "VOICE_FILTER_DOWNLOAD_PROGRESS"
     }, e), {
       downloadedBytes: n,
       totalBytes: r
     }))
   }).then(n => {
-    s.Z.dispatch(v(E({
+    s.Z.dispatch(y(E({
       type: "VOICE_FILTER_FILE_READY"
     }, e), {
       fetchedFromNetwork: n.fetchedFromNetwork,
       analyticsContext: t
     }))
   }).catch(t => {
-    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? y.info("User canceled the download for Voice Filter dependency", e): (y.error("Failed to fetch voice filter model", E({
+    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? v.info("User canceled the download for Voice Filter dependency", e): (v.error("Failed to fetch voice filter model", E({
       reason: t
     }, e)), f.Z.captureException(Error("Failed to fetch voice filter model", {
       cause: t
@@ -103,7 +103,7 @@ function I(e) {
       extra: {
         reason: t
       }
-    })), s.Z.dispatch(v(E({
+    })), s.Z.dispatch(y(E({
       type: "VOICE_FILTER_DOWNLOAD_FAILED"
     }, e), {
       error: t
@@ -113,10 +113,7 @@ function I(e) {
 
 function S(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-  if (!h.Z.isNativeModuleLoaded()) {
-    y.warn("Voice Filter apply ignored, module not loaded.");
-    return
-  }
+  if (!h.Z.isNativeModuleLoaded()) return void v.warn("Voice Filter apply ignored, module not loaded.");
   let n = performance.now();
   _.ZP.getVoiceFilters().setVoiceFilter({
     name: e
@@ -128,7 +125,7 @@ function S(e) {
       activationDurationMs: performance.now() - n
     })
   }, t => {
-    y.error("failed to set voice filter", t), s.Z.dispatch({
+    v.error("failed to set voice filter", t), s.Z.dispatch({
       type: "VOICE_FILTER_APPLY_FAILED",
       voiceFilterId: e,
       error: t
@@ -136,10 +133,7 @@ function S(e) {
   })
 }
 async function T() {
-  if (!h.Z.isNativeModuleLoaded()) {
-    y.info("Voice Filter catalog refresh ignored, module not loaded.");
-    return
-  }
+  if (!h.Z.isNativeModuleLoaded()) return void v.info("Voice Filter catalog refresh ignored, module not loaded.");
   if (O) return;
   let e = l.default.getToken(),
     t = u.default.getSuperPropertiesBase64();
@@ -155,7 +149,7 @@ async function T() {
       catalog: i
     })
   } catch (e) {
-    y.warn("Failed to refresh voice filters catalog: ".concat(e.message)), f.Z.captureException(e), await s.Z.dispatch({
+    v.warn("Failed to refresh voice filters catalog: ".concat(e.message)), f.Z.captureException(e), await s.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_FAILED"
     })
   } finally {
@@ -169,14 +163,11 @@ function N() {
   })
 }
 async function A() {
-  if (!(h.Z.isNativeModuleLoaded() || h.Z.isNativeModuleLoading() || __OVERLAY__)) {
-    if (!(0, d.isWindows)() && !(0, d.isMac)()) {
-      s.Z.dispatch({
-        type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
-        state: m.O.UNSUPPORTED
-      });
-      return
-    }
+  if (!(h.Z.isNativeModuleLoaded() || h.Z.isNativeModuleLoading()) && !__OVERLAY__) {
+    if (!(0, d.isWindows)() && !(0, d.isMac)()) return void s.Z.dispatch({
+      type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
+      state: m.O.UNSUPPORTED
+    });
     try {
       s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
@@ -190,15 +181,15 @@ async function A() {
       let n = c.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != n) {
         var e;
-        (null === (e = h.Z.getVoiceFilter(n)) || void 0 === e ? void 0 : e.available) !== !0 ? (0, p.v6)(null) : (0, p.v6)(n)
+        (null == (e = h.Z.getVoiceFilter(n)) ? void 0 : e.available) !== !0 ? (0, p.v6)(null) : (0, p.v6)(n)
       }
       c.Z.getMediaEngine().on(a.aB.VoiceFiltersFailed, e => {
-        y.warn("Voice Filters failed in process: ".concat(e)), f.Z.captureException(Error("Voice Filters failed in process", {
+        v.warn("Voice Filters failed in process: ".concat(e)), f.Z.captureException(Error("Voice Filters failed in process", {
           cause: e
         }))
       })
     } catch (e) {
-      y.warn("Failed to load Voice Filters module: ".concat(e.message)), f.Z.captureException(e), s.Z.dispatch({
+      v.warn("Failed to load Voice Filters module: ".concat(e.message)), f.Z.captureException(e), s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: m.O.FAILED
       })

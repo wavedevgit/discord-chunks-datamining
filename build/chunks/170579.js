@@ -21,8 +21,8 @@ var i = n(120356),
   g = n(639119),
   E = n(108989),
   b = n(474936),
-  v = n(388032),
-  y = n(698401);
+  y = n(388032),
+  v = n(790816);
 
 function O(e, t) {
   let n = p.ZP.getDefaultPrice(e),
@@ -33,11 +33,11 @@ function O(e, t) {
   if (t) return i;
   switch (r) {
     case b.rV.MONTH:
-      return v.NW.formatToPlainString(v.t.AbOLNj, {
+      return y.NW.formatToPlainString(y.t.AbOLNj, {
         price: i
       });
     case b.rV.YEAR:
-      return v.NW.formatToPlainString(v.t.rS8FAw, {
+      return y.NW.formatToPlainString(y.t.rS8FAw, {
         price: i
       })
   }
@@ -46,15 +46,15 @@ let I = e => {
     let {
       isTier0: t,
       discountAmount: n
-    } = e, i = (0, g.N)(), a = null != i && i.trial_id === b.a7, l = v.NW.string(v.t.IBYG5e);
-    return void 0 !== n ? l = v.NW.formatToPlainString(v.t.iiLbvr, {
+    } = e, i = (0, g.N)(), a = null != i && i.trial_id === b.a7, l = y.NW.string(y.t.IBYG5e);
+    return void 0 !== n ? l = y.NW.formatToPlainString(y.t.iiLbvr, {
       percent: n
-    }) : a && (l = v.NW.string(v.t.gtNqJS)), (0, r.jsx)("div", {
-      className: y.trialBadgeContainer,
+    }) : a && (l = y.NW.string(y.t.gtNqJS)), (0, r.jsx)("div", {
+      className: v.trialBadgeContainer,
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
-        className: o()(y.trialOfferText, {
-          [y.tier0TrialOffer]: t
+        className: o()(v.trialOfferText, {
+          [v.tier0TrialOffer]: t
         }),
         children: l
       })
@@ -62,44 +62,44 @@ let I = e => {
   },
   S = function(e) {
     var t;
-    let n;
-    let {
-      hideCloseButton: i = !1,
-      hideCloseOnFullScreen: p,
-      shouldShowPrice: h,
-      plan: g,
-      renderAnimation: v,
-      onClose: S,
-      isGift: T,
-      upgradeToPremiumType: N,
-      headerTheme: A = b.nL.DEFAULT,
-      className: C,
-      showTrialBadge: R = !1,
-      showDiscountBadge: P = !1
-    } = e, w = N === b.p9.TIER_2;
+    let n, {
+        hideCloseButton: i = !1,
+        hideCloseOnFullScreen: p,
+        shouldShowPrice: h,
+        plan: g,
+        renderAnimation: y,
+        onClose: S,
+        isGift: T,
+        upgradeToPremiumType: N,
+        headerTheme: A = b.nL.DEFAULT,
+        className: C,
+        showTrialBadge: R = !1,
+        showDiscountBadge: P = !1
+      } = e,
+      w = N === b.p9.TIER_2;
     n = N === b.p9.TIER_0 ? d.Z : N === b.p9.TIER_1 ? f.Z : u.Z;
     let D = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
       L = (0, m.Ng)(),
-      x = null == L ? void 0 : null === (t = L.discount) || void 0 === t ? void 0 : t.amount;
+      x = null == L || null == (t = L.discount) ? void 0 : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": !0,
       className: o()({
-        [y.headerBackground]: !w,
-        [y.tier2HeaderBackground]: w
+        [v.headerBackground]: !w,
+        [v.tier2HeaderBackground]: w
       }, C),
       children: [D || A !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
-        className: y.snow,
+        className: v.snow,
         wind: 5
       }), (R || P) && (0, r.jsx)(_.Z, {
-        className: y.trialBadgeSparkles
-      }), v(), (0, r.jsxs)(c.Z, {
+        className: v.trialBadgeSparkles
+      }), y(), (0, r.jsxs)(c.Z, {
         align: c.Z.Align.START,
         justify: c.Z.Justify.BETWEEN,
-        className: y.headerTop,
+        className: v.headerTop,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
-            className: o()(y.headerIcon, {
-              [y.nonTier2]: !w
+            className: o()(v.headerIcon, {
+              [v.nonTier2]: !w
             })
           }), (R || P) && (0, r.jsx)(I, {
             isTier0: N === b.p9.TIER_0,
@@ -108,10 +108,10 @@ let I = e => {
         }), !i && (0, r.jsx)(s.olH, {
           hideOnFullscreen: p,
           onClick: S,
-          className: y.closeButton
+          className: v.closeButton
         })]
       }), h && null != g ? (0, r.jsx)("div", {
-        className: y.price,
+        className: v.price,
         children: O(g, T)
       }) : null]
     })

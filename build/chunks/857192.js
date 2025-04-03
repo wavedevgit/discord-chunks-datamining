@@ -89,24 +89,24 @@ let m = (() => {
   },
   b = h({}, E);
 
-function v(e) {
+function y(e) {
   b = h({}, E, b, e), m.set(b.sourceMapsEnabled), l.K.set(g, b)
 }
 
-function y(e) {
+function v(e) {
   let {
     settings: t
   } = e;
-  v(t)
+  y(t)
 }
 
 function O(e) {
-  v(E)
+  y(E)
 }
 
 function I(e) {
   var t;
-  let n = ((null !== (t = e.user.flags) && void 0 !== t ? t : 0) & _.xW$.STAFF) === _.xW$.STAFF,
+  let n = ((null != (t = e.user.flags) ? t : 0) & _.xW$.STAFF) === _.xW$.STAFF,
     r = n || null != e.user.personal_connection_id;
   n && m.set(b.sourceMapsEnabled), f.Z.setTags({
     isStaff: r.toString()
@@ -173,5 +173,5 @@ p(S, "displayName", "DeveloperOptionsStore");
 let T = new S(c.Z, {
   LOGOUT: O,
   CONNECTION_OPEN: I,
-  DEVELOPER_OPTIONS_UPDATE_SETTINGS: y
+  DEVELOPER_OPTIONS_UPDATE_SETTINGS: v
 })

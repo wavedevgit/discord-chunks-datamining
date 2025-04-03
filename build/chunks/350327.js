@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   CM: () => O,
-  Cf: () => v,
-  ID: () => y,
+  Cf: () => y,
+  ID: () => v,
   Xz: () => T,
   Z: () => m,
   c_: () => S,
@@ -56,7 +56,7 @@ function h(e) {
 }
 async function m(e, t) {
   var n, c, u;
-  let f = null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
+  let f = null == (n = l.default.getCurrentUser()) ? void 0 : n.id;
   if (null == f) return;
   let _ = s.dN.getSetting();
   null != e.bio && _ && (e.bio = a.ZP.parse(void 0, e.bio).content);
@@ -71,8 +71,8 @@ async function m(e, t) {
       rejectWithError: !1
     });
     if (n.ok) {
-      let e = null === (c = n.body.profile_effect) || void 0 === c ? void 0 : c.id,
-        t = null === (u = n.body.profile_effect) || void 0 === u ? void 0 : u.expires_at;
+      let e = null == (c = n.body.profile_effect) ? void 0 : c.id,
+        t = null == (u = n.body.profile_effect) ? void 0 : u.expires_at;
       i.Z.dispatch(p({
         type: "USER_PROFILE_UPDATE_SUCCESS",
         userId: f,
@@ -115,14 +115,14 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function y(e) {
+function v(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
     pronouns: e

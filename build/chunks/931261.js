@@ -18,7 +18,7 @@ var r = n(399606),
 function _(e) {
   var t;
   let n = e.id,
-    r = (null !== (t = l.Z.getNewMemberActions(n)) && void 0 !== t ? t : []).length > 0,
+    r = (null != (t = l.Z.getNewMemberActions(n)) ? t : []).length > 0,
     i = l.Z.getEnabled(n);
   return r && e.hasFeature(d.oNc.COMMUNITY) && !(e.hasFeature(d.oNc.GUILD_ONBOARDING) && !i)
 }
@@ -35,7 +35,7 @@ function h(e) {
   return (0, r.e7)([a.Z, s.Z, o.Z], () => {
     if (__OVERLAY__ || e === d.ME || e === d.I_8) return !1;
     let n = s.Z.getGuild(e);
-    return null != n && !!n.hasFeature(d.oNc.COMMUNITY) && (o.Z.isFullServerPreview(e) ? _(n) : (0, i.wC)(e) ? t || p(e, a.Z) : !!(0, c.Z)(n) && (t || p(e, a.Z)))
+    return !!(null == n ? void 0 : n.hasFeature(d.oNc.COMMUNITY)) && (o.Z.isFullServerPreview(e) ? _(n) : (0, i.wC)(e) ? t || p(e, a.Z) : !!(0, c.Z)(n) && (t || p(e, a.Z)))
   }, [e, t])
 }
 

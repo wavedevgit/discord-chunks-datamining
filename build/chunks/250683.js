@@ -46,4 +46,4 @@ function p(e) {
   for (var t, r = e.length, i = r % 3, o = [], a = 16383, s = 0, l = r - i; s < l; s += a) o.push(_(e, s, s + a > l ? l : s + a));
   return 1 === i ? o.push(n[(t = e[r - 1]) >> 2] + n[t << 4 & 63] + "==") : 2 === i && o.push(n[(t = (e[r - 2] << 8) + e[r - 1]) >> 10] + n[t >> 4 & 63] + n[t << 2 & 63] + "="), o.join("")
 }
-r["-".charCodeAt(0)] = 62, r["_".charCodeAt(0)] = 63
+r[45] = 62, r[95] = 63

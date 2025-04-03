@@ -9,7 +9,7 @@ var r = n(200651),
   a = n.n(o),
   s = n(1561),
   l = n(993365),
-  c = n(113752);
+  c = n(964423);
 
 function u(e) {
   switch (e) {
@@ -42,7 +42,7 @@ function f(e) {
 }
 
 function _(e) {
-  if ("pill" === e) return c.pillItemText
+  return "pill" === e ? c.pillItemText : void 0
 }
 
 function p(e) {
@@ -86,7 +86,7 @@ function h(e) {
       look: s,
       onClick: o,
       className: c
-    }, null !== (t = e.key) && void 0 !== t ? t : String(e.value))
+    }, null != (t = e.key) ? t : String(e.value))
   }, [n, s, o, c]);
   return (0, r.jsx)("div", {
     className: a()(u(s), l),

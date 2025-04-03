@@ -36,5 +36,8 @@ let s = function() {
     l = e.timing && e.timing.navigationStart,
     c = "number" == typeof l ? Math.abs(l + n - o) : t,
     u = c < t;
-  return s || u ? a <= c ? (r = "timeOrigin", e.timeOrigin) : (r = "navigationStart", l) : (r = "dateNow", o)
+  if (s || u)
+    if (a <= c) return r = "timeOrigin", e.timeOrigin;
+    else return r = "navigationStart";
+  return r = "dateNow"
 })()

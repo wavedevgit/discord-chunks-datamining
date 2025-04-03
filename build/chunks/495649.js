@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120), n(789020);
 var r = n(147913),
   i = n(703656),
@@ -35,7 +35,7 @@ class b extends r.Z {
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
     }), m(this, "handleConnectionOpen", e => {
       var t;
-      null != (g = null !== (t = null != g ? g : s.Z.getGuildId()) && void 0 !== t ? t : null) && this._openOnboardingIfIncomplete(g)
+      null != (g = null != (t = null != g ? g : s.Z.getGuildId()) ? t : null) && this._openOnboardingIfIncomplete(g)
     }), m(this, "handleChannelSelect", e => {
       let {
         guildId: t,
@@ -51,17 +51,14 @@ class b extends r.Z {
       (0, f.EI)(t.id)
     }), m(this, "_openOnboardingIfIncomplete", async (e, t) => {
       var n, r;
-      if ((0, f.hz)(e)) {
-        (0, i.uL)(_.Z5c.CHANNEL(e, p.oC.GUILD_ONBOARDING));
-        return
-      }
+      if ((0, f.hz)(e)) return void(0, i.uL)(_.Z5c.CHANNEL(e, p.oC.GUILD_ONBOARDING));
       let s = a.Z.getGuild(e);
       if (null == s || !s.hasFeature(_.oNc.GUILD_ONBOARDING)) return;
       let l = o.ZP.getSelfMember(e);
-      !(null == l || (0, c.yE)(null !== (n = l.flags) && void 0 !== n ? n : 0, h.q.COMPLETED_ONBOARDING)) && (0, c.yE)(null !== (r = l.flags) && void 0 !== r ? r : 0, h.q.STARTED_ONBOARDING) && (await (0, f.default)({
+      !(null == l || (0, c.yE)(null != (n = l.flags) ? n : 0, h.q.COMPLETED_ONBOARDING)) && (0, c.yE)(null != (r = l.flags) ? r : 0, h.q.STARTED_ONBOARDING) && (await (0, f.default)({
         guildId: e
       }), (0, i.uL)(_.Z5c.CHANNEL(e, t)))
     })
   }
 }
-let v = new b
+let y = new b

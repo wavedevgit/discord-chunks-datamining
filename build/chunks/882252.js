@@ -47,5 +47,5 @@ function p(e, t) {
 
 function h(e) {
   var t;
-  return (null === (t = i.Z.getChannel(e)) || void 0 === t ? void 0 : t.hasFlag(l.zZ.PINNED)) === !0
+  return (null == (t = i.Z.getChannel(e)) ? void 0 : t.hasFlag(l.zZ.PINNED)) === !0
 }

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "Awk",
     keywords: {
@@ -41,4 +41,3 @@ function t(e) {
     }, e.REGEXP_MODE, e.HASH_COMMENT_MODE, e.NUMBER_MODE]
   }
 }
-e.exports = t

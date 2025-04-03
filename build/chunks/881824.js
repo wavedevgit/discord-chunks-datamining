@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $Q: () => y,
-  Ev: () => v,
+  $Q: () => v,
+  Ev: () => y,
   Gy: () => A,
   R5: () => N,
   T: () => E,
@@ -72,7 +72,7 @@ function E(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("82758"), n.e("93024")]).then(n.bind(n, 581355));
+    } = await Promise.all([n.e("82758"), n.e("24231")]).then(n.bind(n, 581355));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -92,7 +92,7 @@ function b(e) {
   })
 }
 
-function v(e, t) {
+function y(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
@@ -105,7 +105,7 @@ function v(e, t) {
   })
 }
 
-function y(e) {}
+function v(e) {}
 
 function O(e) {
   (0, o.Kh)(e.id)

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "string",
       variants: [e.inherit(e.QUOTE_STRING_MODE, {
@@ -98,4 +98,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

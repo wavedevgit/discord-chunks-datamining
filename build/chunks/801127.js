@@ -2,6 +2,5 @@
 "use strict";
 var r = n(161581),
   i = n(492424),
-  o = "__core-js_shared__",
-  a = r[o] || i(o, {});
-e.exports = a
+  o = "__core-js_shared__";
+e.exports = r[o] || i(o, {})

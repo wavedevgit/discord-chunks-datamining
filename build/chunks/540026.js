@@ -8,7 +8,7 @@ var r, i = n(200651),
   a = n(120356),
   s = n.n(a),
   l = n(748780),
-  c = n(732382);
+  c = n(465326);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -173,7 +173,7 @@ class h extends(r = o.Component) {
           value: r
         }
       } = this;
-      !t && null != e && (e.innerText = p(n._value * r))
+      t || null == e || (e.innerText = p(n._value * r))
     }), u(this, "handleAnimatedChange", () => {
       let {
         bubble: e,

@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var t = function(e, t, n, r, i, o, a, s) {
+e.exports = function(e, t, n, r, i, o, a, s) {
   if (!e) {
     var l;
     if (void 0 === t) l = Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
@@ -13,5 +13,4 @@ var t = function(e, t, n, r, i, o, a, s) {
     }
     throw l.framesToPop = 1, l
   }
-};
-e.exports = t
+}

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r, i = n(442837),
   o = n(570140),
@@ -89,7 +89,7 @@ function b(e) {
     return p.enabled = t, d(t, !0), !0
   }
 }
-class v extends(r = i.ZP.PersistedStore) {
+class y extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     Object.assign(_, e), this.syncWith([s.default], () => {
       let e = s.default.getId();
@@ -124,13 +124,13 @@ class v extends(r = i.ZP.PersistedStore) {
     return this.enabled && p.enableContentProtection
   }
 }
-c(v, "displayName", "StreamerModeStore"), c(v, "persistKey", "StreamerModeStore"), c(v, "migrations", [e => {
+c(y, "displayName", "StreamerModeStore"), c(y, "persistKey", "StreamerModeStore"), c(y, "migrations", [e => {
   let t = s.default.getId();
   return null == e || null == t ? {} : {
     [t]: u({}, e)
   }
 }]);
-let y = new v(o.Z, {
+let v = new y(o.Z, {
   LOGOUT: m,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: g,
   STREAMER_MODE_UPDATE: E,

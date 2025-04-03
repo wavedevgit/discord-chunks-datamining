@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /(?![A-Za-z0-9])(?![$])/,
     r = t.concat(/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/, n),
@@ -85,10 +85,10 @@ function t(e) {
       })(m),
       built_in: E
     },
-    v = e => e.map(e => e.replace(/\|\d+$/, "")),
-    y = {
+    y = e => e.map(e => e.replace(/\|\d+$/, "")),
+    v = {
       variants: [{
-        match: [/new/, t.concat(_, "+"), t.concat("(?!", v(E).join("\\b|"), "\\b)"), i],
+        match: [/new/, t.concat(_, "+"), t.concat("(?!", y(E).join("\\b|"), "\\b)"), i],
         scope: {
           1: "keyword",
           4: "title.class"
@@ -135,18 +135,18 @@ function t(e) {
       begin: /\(/,
       end: /\)/,
       keywords: b,
-      contains: [S, a, I, e.C_BLOCK_COMMENT_MODE, p, h, y]
+      contains: [S, a, I, e.C_BLOCK_COMMENT_MODE, p, h, v]
     },
     N = {
       relevance: 0,
-      match: [/\b/, t.concat("(?!fn\\b|function\\b|", v(g).join("\\b|"), "|", v(E).join("\\b|"), "\\b)"), r, t.concat(_, "*"), t.lookahead(/(?=\()/)],
+      match: [/\b/, t.concat("(?!fn\\b|function\\b|", y(g).join("\\b|"), "|", y(E).join("\\b|"), "\\b)"), r, t.concat(_, "*"), t.lookahead(/(?=\()/)],
       scope: {
         3: "title.function.invoke"
       },
       contains: [T]
     };
   T.contains.push(N);
-  let A = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, y],
+  let A = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, v],
     C = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, o)),
       beginScope: "meta",
@@ -202,7 +202,7 @@ function t(e) {
         1: "keyword",
         3: "variable.constant"
       }
-    }, y, {
+    }, v, {
       scope: "function",
       relevance: 0,
       beginKeywords: "fn function",
@@ -257,4 +257,3 @@ function t(e) {
     }, p, h]
   }
 }
-e.exports = t

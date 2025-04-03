@@ -19,7 +19,7 @@ function s(e) {
       logs: f,
       nativeLogs: _,
       serverTrace: p
-    } = r, h = 0 === c ? null !== (s = null === (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) || void 0 === o ? void 0 : o.timestamp) && void 0 !== s ? s : e : d, m = l(u(f, _, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(m);
+    } = r, h = 0 === c ? null != (s = null == (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) ? void 0 : o.timestamp) ? s : e : d, m = l(u(f, _, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(m);
     return null != p && (g += "\n Server trace for trace #".concat(c + 1).concat(p)), g
   }).join("\n\n")
 }
@@ -31,8 +31,8 @@ function l(e, t) {
       deltaTime: null == e.delta ? "" : String(Math.round(e.delta)),
       log: "".concat(e.emoji.length > 0 ? "".concat(e.emoji, " ") : "").concat(e.prefix).concat(e.log, "\n")
     })),
-    a = null !== (n = i().max(o.map(e => e.totalTime.length))) && void 0 !== n ? n : 0,
-    s = null !== (r = i().max(o.map(e => e.deltaTime.length))) && void 0 !== r ? r : 0;
+    a = null != (n = i().max(o.map(e => e.totalTime.length))) ? n : 0,
+    s = null != (r = i().max(o.map(e => e.deltaTime.length))) ? r : 0;
   return o.map(e => {
     let {
       totalTime: t,

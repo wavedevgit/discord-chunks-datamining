@@ -53,7 +53,7 @@ let m = (0, _.ad)(l.$p, h.J7),
       handleTextChange: async e => {
         var r;
         if (null == e || "" === e) f.cancel(), null == t || t(""), null == n || n(!1), null == i || i(!1), null == a || a(null), l.current = null, c.current = !1;
-        else if (!c.current && e.trim() !== (null === (r = l.current) || void 0 === r ? void 0 : r.trim())) {
+        else if (!c.current && e.trim() !== (null == (r = l.current) ? void 0 : r.trim())) {
           if (l.current = e, (0, p.wN)(e).length > h.t7) {
             c.current = !0, f.cancel(), t("");
             return

@@ -31,7 +31,7 @@ function d(e) {
 }
 
 function f(e, t) {
-  return !!(null != e && void 0 !== e && c(e) && (null == e.guild_id || t.can(s.Pl.USE_EMBEDDED_ACTIVITIES, e)))
+  return null != e && void 0 !== e && !!c(e) && (null == e.guild_id || !!t.can(s.Pl.USE_EMBEDDED_ACTIVITIES, e)) && !0
 }
 
 function _() {

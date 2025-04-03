@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(639119),
   E = n(197115),
   b = n(587446),
-  v = n(594174),
-  y = n(626135),
+  y = n(594174),
+  v = n(626135),
   O = n(74538),
   I = n(238302),
   S = n(514361),
@@ -31,7 +31,7 @@ var r = n(200651),
   C = n(921944),
   R = n(474936),
   P = n(388032),
-  w = n(951421);
+  w = n(595532);
 let D = () => (0, r.jsx)("div", {
     className: w.editorHeader,
     children: (0, r.jsxs)("div", {
@@ -74,24 +74,24 @@ let D = () => (0, r.jsx)("div", {
       markAsDismissed: a
     } = e, {
       analyticsLocations: s
-    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([v.default, S.Z], () => [S.Z.gradientPreset, O.ZP.isPremium(v.default.getCurrentUser())]), p = (0, g.N)(), b = (0, O.Rt)({
-      intervalType: null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.interval,
-      intervalCount: null == p ? void 0 : null === (n = p.subscription_trial) || void 0 === n ? void 0 : n.interval_count
-    }), y = e => {
-      if (e) null == o || o(), null != a && a(C.L.PRIMARY), null != f && ((0, N.Yk)({
+    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([y.default, S.Z], () => [S.Z.gradientPreset, O.ZP.isPremium(y.default.getCurrentUser())]), p = (0, g.N)(), b = (0, O.Rt)({
+      intervalType: null == p || null == (t = p.subscription_trial) ? void 0 : t.interval,
+      intervalCount: null == p || null == (n = p.subscription_trial) ? void 0 : n.interval_count
+    }), v = e => {
+      e && (null == o || o(), null != a && a(C.L.PRIMARY), null != f && ((0, N.Yk)({
         isPersisted: !0,
         themeName: c.Us[f.id],
         analyticsLocations: s
       }), (0, d.ZI)({
         backgroundGradientPresetId: f.id,
         theme: f.theme
-      }))
+      })))
     };
     return (0, r.jsx)(E.Z, {
       size: u.zxk.Sizes.MEDIUM,
-      buttonText: _ ? P.NW.string(P.t.IJI7ys) : (null == p ? void 0 : null === (i = p.subscription_trial) || void 0 === i ? void 0 : i.sku_id) === R.Si.TIER_2 ? b : P.NW.string(P.t.mr4K7O),
+      buttonText: _ ? P.NW.string(P.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? void 0 : i.sku_id) === R.Si.TIER_2 ? b : P.NW.string(P.t.mr4K7O),
       subscriptionTier: R.Si.TIER_2,
-      onSubscribeModalClose: y
+      onSubscribeModalClose: v
     })
   },
   M = e => {
@@ -148,7 +148,7 @@ function k(e) {
     shouldEditorAnimate: n && !p.Z.useReducedMotion
   })), f = (0, T.q)();
   i.useEffect(() => f(A.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
-    s && y.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
+    s && v.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
       type: R.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: o
     })

@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   $I: () => d,
-  Fc: () => v,
+  Fc: () => y,
   Ku: () => c,
-  VF: () => y,
+  VF: () => v,
   WX: () => f,
   X_: () => I,
   _U: () => m,
@@ -52,8 +52,8 @@ var E = function(e) {
   return e[e.EVENT_INFO = 0] = "EVENT_INFO", e[e.RSVP_LIST = 1] = "RSVP_LIST", e
 }({});
 let b = 100,
-  v = 2 * r.Z.Millis.DAY,
-  y = 12 * r.Z.Millis.HOUR,
+  y = 2 * r.Z.Millis.DAY,
+  v = 12 * r.Z.Millis.HOUR,
   O = 4;
 var I = function(e) {
     return e.NEW_EVENT = "Upcoming Event Notice", e.EVENT_STARTING_SOON = "Event Starting Soon Notice", e

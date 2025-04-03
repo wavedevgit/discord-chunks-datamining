@@ -103,16 +103,16 @@ function b(e) {
   });
   return t.count = Math.max(t.count, t.messages.length), p.setState(e => ({
     flashQueue: [...e.flashQueue, t]
-  })), () => v(t.id)
+  })), () => y(t.id)
 }
 
-function v(e) {
+function y(e) {
   p.setState(t => ({
     flashQueue: t.flashQueue.filter(t => t.id !== e)
   }))
 }
 
-function y() {
+function v() {
   p.setState({
     flashQueue: []
   })
@@ -139,12 +139,12 @@ function S() {
       return
     }
     if (document.hasFocus() && t.onlyWhenBlurred) {
-      v(t.id), o(!1);
+      y(t.id), o(!1);
       return
     }
     let e = setInterval(() => {
       if (a.current >= t.count) {
-        v(t.id), o(!1);
+        y(t.id), o(!1);
         return
       }
       o(e => !e || (a.current += 1, !1))
@@ -156,7 +156,7 @@ function S() {
 function T() {
   r.useEffect(() => {
     function e() {
-      y()
+      v()
     }
     return document.addEventListener("focusin", e, {
       capture: !0
@@ -174,6 +174,6 @@ function N() {
   let t = S();
   r.useEffect(() => {
     let n = t === d.base;
-    (!e || !n) && (document.title = t)
+    e && n || (document.title = t)
   }, [e, t])
 }

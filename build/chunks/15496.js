@@ -1,4 +1,3 @@
 /** Chunk was on web.js **/
-let r = n(40231),
-  i = (e, t, n) => new r(e, n).compare(new r(t, n));
-e.exports = i
+let r = n(40231);
+e.exports = (e, t, n) => new r(e, n).compare(new r(t, n))

@@ -20,12 +20,12 @@ var r = n(200651),
   g = n(327943),
   E = n(997945),
   b = n(401460),
-  v = n(441319),
-  y = n(981631),
+  y = n(441319),
+  v = n(981631),
   O = n(526761),
   I = n(388032),
-  S = n(788610),
-  T = n(379673);
+  S = n(888090),
+  T = n(716827);
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,21 +88,18 @@ function P(e) {
     }),
     k = (0, f.Q3)("AppIconSelectionGroup"),
     j = e => {
-      if (D && !N && e !== E.aH.DEFAULT) {
-        (0, l.ZDy)(async () => {
-          let {
-            default: e
-          } = await n.e("69052").then(n.bind(n, 184250));
-          return t => (0, r.jsx)(e, A({
-            analyticsSource: u.Z.APP_ICON_SELECTOR,
-            analyticsLocation: {
-              section: y.jXE.SETTINGS_APPEARANCE_APP_ICON_PICKER,
-              object: y.qAy.BUTTON_ICON
-            }
-          }, t))
-        });
-        return
-      }
+      if (D && !N && e !== E.aH.DEFAULT) return void(0, l.ZDy)(async () => {
+        let {
+          default: e
+        } = await n.e("69052").then(n.bind(n, 184250));
+        return t => (0, r.jsx)(e, A({
+          analyticsSource: u.Z.APP_ICON_SELECTOR,
+          analyticsLocation: {
+            section: v.jXE.SETTINGS_APPEARANCE_APP_ICON_PICKER,
+            object: v.qAy.BUTTON_ICON
+          }
+        }, t))
+      });
       c.Z.dispatch({
         type: "APP_ICON_UPDATED",
         id: e
@@ -153,7 +150,7 @@ function P(e) {
           className: a()(S.presets, {
             [S.presetsJustified]: D && N
           }),
-          children: (0, v.wu)().filter(e => {
+          children: (0, y.wu)().filter(e => {
             let {
               isHidden: t
             } = e;

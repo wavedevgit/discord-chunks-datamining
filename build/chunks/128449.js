@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AF: () => y,
+  AF: () => v,
   BP: () => E,
   Cf: () => T,
   Gj: () => O,
   Hk: () => d,
-  KL: () => v,
+  KL: () => y,
   L3: () => I,
   MU: () => m,
   Qq: () => h,
@@ -73,8 +73,8 @@ let m = new Set(["hubs"]),
   g = [],
   E = "q",
   b = "c",
-  v = "l",
-  y = 10 * r.Z.Millis.MINUTE;
+  y = "l",
+  v = 10 * r.Z.Millis.MINUTE;
 var O = function(e) {
   return e[e.Clans = _] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
 }({});

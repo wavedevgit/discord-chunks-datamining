@@ -57,7 +57,7 @@ function p(e) {
     l = (0, r.e7)([a.default], () => a.default.getCurrentUser()),
     u = (0, r.e7)([o.Z], () => o.Z.hidePersonalInformation);
   if (null == e) return [];
-  let f = null !== (t = null == e ? void 0 : e.getBadges()) && void 0 !== t ? t : [];
+  let f = null != (t = null == e ? void 0 : e.getBadges()) ? t : [];
   return null != l && l.id === e.userId && n && (f = f.filter(e => e.id !== _)), u && (f = f.map(e => d(c({}, e), {
     description: e.id === _ ? s.NW.string(s.t.Br1ls7) : e.description
   }))), f

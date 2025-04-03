@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FU: () => y,
+  FU: () => v,
   eH: () => O,
-  wG: () => v
+  wG: () => y
 }), n(66153), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298);
 var r = n(512722),
   i = n.n(r),
@@ -66,7 +66,7 @@ async function b(e, t, n) {
   if ("string" == typeof n || "number" == typeof n) {
     var a;
     let e = (0, f.Z)()[n];
-    i = null !== (a = e.isVideo) && void 0 !== a && a, r = e.source
+    i = null != (a = e.isVideo) && a, r = e.source
   } else {
     let e = n.asset;
     i = (0, s.xR)(e) || (0, s.ay)(e), r = (0, s.rI)({
@@ -84,7 +84,7 @@ async function b(e, t, n) {
     (0, c.Nm)()
   }
 }
-async function v(e, t) {
+async function y(e, t) {
   let {
     track: n = !0,
     location: r
@@ -93,7 +93,7 @@ async function v(e, t) {
     type: o.W$.INPUT_DEVICE
   }, e), n && (0, d.Bh)(e, r, "Enabled")
 }
-async function y(e, t, n) {
+async function v(e, t, n) {
   let {
     track: r = !0,
     location: i
@@ -108,7 +108,7 @@ function O() {
   let e = a.default.getCurrentUser();
   if (null == e) return;
   let t = (0, l.P)(e);
-  (0, _.Z)() && !u.Z.hasBeenApplied && null != t && v(t, {
+  (0, _.Z)() && !u.Z.hasBeenApplied && null != t && y(t, {
     track: !1
   }).catch(h.dG4)
 }

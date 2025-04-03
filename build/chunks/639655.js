@@ -74,13 +74,9 @@ d.push(class extends f {
     null != this._inflate && (this._inflate.onEnd = null, this._inflate.chunks = []), this._inflate = null
   }
   handleFlushEnd(e) {
-    let t;
-    let n = this._pako,
+    let t, n = this._pako,
       i = this._inflate;
-    if (null == i) {
-      new r.Z("GatewayCompressionHandler").error("flush end happened on closed compression adapter");
-      return
-    }
+    if (null == i) return void new r.Z("GatewayCompressionHandler").error("flush end happened on closed compression adapter");
     if (e !== n.Z_OK) throw Error("zlib error, ".concat(e, ", ").concat(i.strm.msg));
     let {
       chunks: o

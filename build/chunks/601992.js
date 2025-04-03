@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   R: () => l,
-  Z: () => v
+  Z: () => y
 });
 var r = n(442837),
   i = n(570140),
@@ -12,7 +12,7 @@ var r = n(442837),
 
 function l(e, t) {
   var n;
-  let r = null === (n = s.default.getCurrentUser()) || void 0 === n ? void 0 : n.id,
+  let r = null == (n = s.default.getCurrentUser()) ? void 0 : n.id,
     l = a.ZP.isSuppressEveryoneEnabled(t),
     c = a.ZP.isSuppressRolesEnabled(t),
     u = null != e.mentions && e.mentions.some(e => e.id === r),
@@ -76,7 +76,7 @@ class b extends r.ZP.Store {
     }
   }
 }
-let v = new b(i.Z, {
+let y = new b(i.Z, {
   CONNECTION_OPEN: g,
   MESSAGE_NOTIFICATION_SHOWN: E
 })

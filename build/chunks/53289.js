@@ -14,7 +14,7 @@ var r = n(192379),
 let d = (0, i.debounce)(e => {
   setTimeout(() => {
     var t;
-    null === (t = e.current) || void 0 === t || t.focus()
+    null == (t = e.current) || t.focus()
   }, 0)
 }, 50);
 
@@ -43,7 +43,7 @@ function f(e, t) {
         null != n && "BUTTON" !== n.tagName || a || d(e)
       }, 100)
     }
-    return null == o || o.addEventListener("focusout", s), (null === (r = n.document.activeElement) || void 0 === r ? void 0 : r.tagName) === "IFRAME" || a || null == o || o.focus(), () => {
+    return null == o || o.addEventListener("focusout", s), (null == (r = n.document.activeElement) ? void 0 : r.tagName) === "IFRAME" || a || null == o || o.focus(), () => {
       null == o || o.removeEventListener("focusout", s), a = !0
     }
   }, [t, _, i, e, n, f]), p

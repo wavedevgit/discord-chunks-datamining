@@ -16,12 +16,12 @@ function u(e) {
   var t;
   let n = (0, s.Z)(),
     u = (0, i.e7)([l.Z], () => l.Z.getVideoDeviceId()),
-    d = null === (t = Object.values(n).find(e => {
+    d = null == (t = Object.values(n).find(e => {
       let {
         id: t
       } = e;
       return t === u
-    })) || void 0 === t ? void 0 : t.name,
+    })) ? void 0 : t.name,
     f = Object.values(n).map(e => {
       let {
         id: t,

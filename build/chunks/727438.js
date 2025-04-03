@@ -61,7 +61,7 @@ class _ extends s.y {
   }
   static shouldClear(e, t) {
     var n;
-    return (null === (n = e.omit) || void 0 === n || !n.includes(t)) && ("all" === e.type || "user-data-only" === e.type && !_.userAgnosticPersistKeys.has(t))
+    return (null == (n = e.omit) || !n.includes(t)) && ("all" === e.type || "user-data-only" === e.type && !_.userAgnosticPersistKeys.has(t))
   }
   static clearPersistQueue(e) {
     _._writeResolvers.forEach((t, n) => {
@@ -74,7 +74,7 @@ class _ extends s.y {
       let e = {};
       return _.allPersistKeys.forEach(t => {
         var n;
-        e[t] = (null !== (n = a.K.get(t)) && void 0 !== n ? n : d)._state
+        e[t] = (null != (n = a.K.get(t)) ? n : d)._state
       }), e
     })
   }

@@ -80,11 +80,11 @@ function b(e) {
   return o().sortBy(e, ["position", "id"])
 }
 
-function v(e) {
+function y(e) {
   return o().sortBy(e, ["position", "id"])
 }
 
-function y(e) {
+function v(e) {
   let {
     collections: t,
     surface: n,
@@ -92,7 +92,7 @@ function y(e) {
   } = e, i = g({
     surface: n,
     activeState: r
-  }), o = b(t.map(e => (e.application_directory_collection_items = v(e.application_directory_collection_items), e)));
+  }), o = b(t.map(e => (e.application_directory_collection_items = y(e.application_directory_collection_items), e)));
   p = d(c({}, p), {
     [i]: o
   }), h = d(c({}, h), {
@@ -143,15 +143,15 @@ class I extends(r = a.ZP.Store) {
       surface: n,
       activeState: r
     } = e;
-    return null !== (t = p[g({
+    return null != (t = p[g({
       surface: n,
       activeState: r
-    })]) && void 0 !== t ? t : _
+    })]) ? t : _
   }
 }
 l(I, "displayName", void 0);
 let S = new I(s.Z, {
   APPLICATION_DIRECTORY_FETCH_COLLECTIONS: E,
-  APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS: y,
+  APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS: v,
   APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE: O
 })

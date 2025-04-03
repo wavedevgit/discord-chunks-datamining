@@ -20,8 +20,8 @@ var r = n(512722),
   g = n(384136),
   E = n(740197),
   b = n(548820),
-  v = n(579237),
-  y = n(582168),
+  y = n(579237),
+  v = n(582168),
   O = n(825040),
   I = n(65154),
   S = n(436620);
@@ -58,7 +58,7 @@ class A extends l.Z {
         return S.U8;
       case I.AN.DESKTOP_CAPTURE:
         var t;
-        return (null === (t = navigator.mediaDevices) || void 0 === t ? void 0 : t.getDisplayMedia) != null;
+        return (null == (t = navigator.mediaDevices) ? void 0 : t.getDisplayMedia) != null;
       case I.AN.VOICE_PROCESSING:
         return "Chrome" === a().name;
       case I.AN.NATIVE_PING:
@@ -127,7 +127,7 @@ class A extends l.Z {
     e.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await e.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = !0, this.eachConnection(e => e.input.enableAudioInput(), I.Yn.DEFAULT), null === (t = this.voiceActivityInput) || void 0 === t || t.enable()
+      await e.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = !0, this.eachConnection(e => e.input.enableAudioInput(), I.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
     } finally {
       e.destroy()
     }
@@ -141,14 +141,14 @@ class A extends l.Z {
   }
   setAudioInputDevice(e) {
     var t, n;
-    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), I.Yn.DEFAULT), null === (t = this.voiceActivityInput) || void 0 === t || t.setSource(e), null === (n = this.loopback) || void 0 === n || n.setAudioSource(e)
+    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), I.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e)
   }
   getAudioOutputDevices() {
     return (0, E.HS)()
   }
   setAudioOutputDevice(e) {
     var t;
-    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null === (t = this.loopback) || void 0 === t || t.setAudioSink(e)
+    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e)
   }
   getVideoInputDevices() {
     return (0, E.l0)()
@@ -219,7 +219,7 @@ class A extends l.Z {
   }
   setExperimentalAdm(e) {}
   setLoopback(e, t) {
-    e && null == this.loopback ? (this.enable(), this.loopback = new v.Z(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
+    e && null == this.loopback ? (this.enable(), this.loopback = new y.Z(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
   }
   getLoopback() {
     return null != this.loopback
@@ -265,7 +265,7 @@ class A extends l.Z {
   releaseNativeDesktopVideoSourcePickerStream() {}
   setMaybePreprocessMute(e) {}
   constructor() {
-    super(), T(this, "Video", O.Z), T(this, "Camera", y.Z), T(this, "_audioContext", null), T(this, "outputVolume", I.Qx), T(this, "sourceId", I.w5), T(this, "sinkId", I.w5), T(this, "enabled", !1), T(this, "connections", new Set), T(this, "interacted", !1), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "pendingDesktopInputs", {}), T(this, "enablePromise", null), T(this, "handleActiveSinksChange", (e, t) => {
+    super(), T(this, "Video", O.Z), T(this, "Camera", v.Z), T(this, "_audioContext", null), T(this, "outputVolume", I.Qx), T(this, "sourceId", I.w5), T(this, "sinkId", I.w5), T(this, "enabled", !1), T(this, "connections", new Set), T(this, "interacted", !1), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "pendingDesktopInputs", {}), T(this, "enablePromise", null), T(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))
     }), T(this, "handleNewListener", e => {
       switch (e) {
@@ -281,7 +281,7 @@ class A extends l.Z {
       switch (e) {
         case f.aB.DeviceChange:
           var t;
-          (null === (t = navigator.mediaDevices) || void 0 === t ? void 0 : t.ondevicechange) != null && 0 === this.listenerCount(f.aB.DeviceChange) && (navigator.mediaDevices.ondevicechange = null);
+          (null == (t = navigator.mediaDevices) ? void 0 : t.ondevicechange) != null && 0 === this.listenerCount(f.aB.DeviceChange) && (navigator.mediaDevices.ondevicechange = null);
           break;
         case f.aB.VoiceActivity:
           null != this.voiceActivityInput && 0 === this.listenerCount(f.aB.VoiceActivity) && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null)

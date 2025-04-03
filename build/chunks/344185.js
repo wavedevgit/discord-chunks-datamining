@@ -64,16 +64,16 @@ function E(e) {
 }
 
 function b(e) {
-  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => v(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
+  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => y(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
 }
 
-function v(e, t) {
+function y(e, t) {
   let n = h[e],
     r = t.parent_id;
   r in n || (n[r] = {}), h[e][r][t.id] = g(t)
 }
 
-function y(e) {
+function v(e) {
   h = {}, m.clear(), e.guilds.forEach(e => {
     b(e)
   })
@@ -84,7 +84,7 @@ function O(e) {
     channels: t
   } = e;
   h = {}, o()(t).filter(e => l.Ec.has(e.type)).groupBy("guild_id").forEach((e, t) => {
-    h[t] = {}, e.forEach(e => v(t, e))
+    h[t] = {}, e.forEach(e => y(t, e))
   })
 }
 
@@ -108,9 +108,9 @@ function T(e) {
     channel: r
   } = e;
   if (!l.AW.has(r.type)) return !1;
-  if ((null === (t = r.threadMetadata) || void 0 === t ? void 0 : t.archived) === !0) return A(r);
+  if ((null == (t = r.threadMetadata) ? void 0 : t.archived) === !0) return A(r);
   {
-    let e = null !== (n = h[r.guild_id]) && void 0 !== n ? n : {};
+    let e = null != (n = h[r.guild_id]) ? n : {};
     h[r.guild_id] = p(f({}, e), {
       [r.parent_id]: p(f({}, e[r.parent_id]), {
         [r.id]: g(r)
@@ -126,7 +126,7 @@ function N(e) {
     channelIds: r
   } = e;
   for (let e in null == r && m.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
-  n.forEach(e => v(t, e))
+  n.forEach(e => y(t, e))
 }
 
 function A(e) {
@@ -165,11 +165,11 @@ class w extends(r = a.ZP.Store) {
   }
   getThreadsForGuild(e) {
     var t;
-    return null !== (t = h[e]) && void 0 !== t ? t : P
+    return null != (t = h[e]) ? t : P
   }
   getThreadsForParent(e, t) {
     var n;
-    return null !== (n = this.getThreadsForGuild(e)[t]) && void 0 !== n ? n : P
+    return null != (n = this.getThreadsForGuild(e)[t]) ? n : P
   }
   hasThreadsForChannel(e, t) {
     return !o().isEmpty(this.getThreadsForParent(e, t))
@@ -185,7 +185,7 @@ class w extends(r = a.ZP.Store) {
 }
 d(w, "displayName", "ActiveThreadsStore");
 let D = new w(s.Z, {
-  CONNECTION_OPEN: y,
+  CONNECTION_OPEN: v,
   OVERLAY_INITIALIZE: O,
   GUILD_CREATE: I,
   GUILD_DELETE: S,

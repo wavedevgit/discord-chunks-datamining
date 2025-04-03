@@ -20,9 +20,9 @@ var r = n(200651),
   g = n(998502),
   E = n(151851),
   b = n(981631),
-  v = n(388032);
+  y = n(388032);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,7 +43,7 @@ let I = l.ZP.connectStores([_.Z], () => ({
 class S extends i.PureComponent {
   getPlatform() {
     var e;
-    let t = null === (e = a().os) || void 0 === e ? void 0 : e.family;
+    let t = null == (e = a().os) ? void 0 : e.family;
     return null != t && /^win/i.test(t) ? m.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
   }
   componentDidMount() {
@@ -52,7 +52,7 @@ class S extends i.PureComponent {
   render() {
     let e = (0, r.jsx)("div", {
         children: (0, r.jsxs)("p", {
-          children: [v.NW.string(v.t["4tRjHB"]), " ", (0, r.jsx)(d.Z, {
+          children: [y.NW.string(y.t["4tRjHB"]), " ", (0, r.jsx)(d.Z, {
             src: p.ZP.getURL(c.Z.convert.fromCodePoint("1f44c")),
             emojiName: ":ok_hand:",
             animated: !1
@@ -62,7 +62,7 @@ class S extends i.PureComponent {
       t = (0, r.jsx)(u.zxk, {
         size: u.PhG.LARGE,
         onClick: this.handleDownload,
-        children: v.NW.string(v.t["1WjMbG"])
+        children: y.NW.string(y.t["1WjMbG"])
       });
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(s.ql, {
@@ -72,14 +72,14 @@ class S extends i.PureComponent {
       }), (0, r.jsx)(I, {
         type: this.getPlatform()
       }), (0, r.jsx)(f.Z, {
-        title: v.NW.string(v.t["3h+n+/"]),
+        title: y.NW.string(y.t["3h+n+/"]),
         note: e,
         action: t
       })]
     })
   }
   constructor(...e) {
-    super(...e), y(this, "handleDownload", () => {
+    super(...e), v(this, "handleDownload", () => {
       window.open(this.getPlatform() === m.PlatformTypes.WINDOWS ? h.Z.getArticleURL(b.BhN.CORRUPT_INSTALLATION) : b.EYA.DOWNLOAD)
     })
   }

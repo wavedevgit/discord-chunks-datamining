@@ -21,7 +21,7 @@ function h(e) {
   if (e.ctrlKey || e.altKey || e.metaKey || e.keyCode !== _.yXg.TAB || null == e.target) return;
   let {
     target: n
-  } = e, r = null === (t = (0, u.uB)(e)) || void 0 === t ? void 0 : t.activeElement;
+  } = e, r = null == (t = (0, u.uB)(e)) ? void 0 : t.activeElement;
   (0, a.k)(n) && c.default.track(_.rMx.KEYBOARD_SHORTCUT_USED, {
     shortcut_name: "tab_navigation",
     source_class_list: null != r ? Array.from(r.classList) : [],

@@ -52,12 +52,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = (0, l.trackMaker)({
+let v = (0, l.trackMaker)({
   analyticEventConfigs: p.AnalyticEventConfigs,
   dispatcher: c.Z,
   TRACK_ACTION_NAME: "TRACK"
@@ -73,20 +73,17 @@ function O(e) {
     } = e;
   if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, m.Ez)().some(e => {
       var t;
-      return null === (t = e._stackContext) || void 0 === t ? void 0 : t.isSlide
+      return null == (t = e._stackContext) ? void 0 : t.isSlide
     })) return;
   (0, m.Ps)(e);
-  let s = null !== (t = null == a ? void 0 : a.guild_id) && void 0 !== t ? t : _.Z.getGuildId(),
-    c = null !== (n = null == a ? void 0 : a.channel_id) && void 0 !== n ? n : f.Z.getChannelId(s),
+  let s = null != (t = null == a ? void 0 : a.guild_id) ? t : _.Z.getGuildId(),
+    c = null != (n = null == a ? void 0 : a.channel_id) ? n : f.Z.getChannelId(s),
     u = (0, p.expandEventProperties)(E({
       impression_type: o,
       location: (0, m.k$)()
     }, (0, h.hH)(s), (0, h.v_)(d.Z.getChannel(c)), a));
-  if (r) {
-    (0, m.dT)(null, null);
-    return
-  }
-  null != i && null != o && ((0, p.debugLogEvent)(i, u), y(i, u)), (0, m.dT)(i, u)
+  if (r) return void(0, m.dT)(null, null);
+  null != i && null != o && ((0, p.debugLogEvent)(i, u), v(i, u)), (0, m.dT)(i, u)
 }
 
 function I(e) {
@@ -102,7 +99,7 @@ function I(e) {
       r && (i.current = e);
       let l = !o()(a.current, n);
       if (l && (a.current = n), !r && !l) return;
-      let c = v(E({}, e), {
+      let c = y(E({}, e), {
         sequenceId: s()("impression_")
       });
       return O(c, t.disableTrack), () => {

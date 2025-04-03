@@ -35,7 +35,7 @@ function u(e) {
     r = "";
   return [...e.normalize("NFD")].forEach(e => {
     var n;
-    r += null !== (n = t[e]) && void 0 !== n ? n : e
+    r += null != (n = t[e]) ? n : e
   }), r.normalize("NFD").toLocaleLowerCase()
 }
 let d = null == String.prototype.normalize ? e => e : u

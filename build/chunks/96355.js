@@ -68,8 +68,8 @@
   }
 
   function l(e) {
-    n = (t = e.path[e.segmentStart]).toLowerCase();
-    var t, n, r = e.data;
+    var t, n = (t = e.path[e.segmentStart]).toLowerCase(),
+      r = e.data;
     if ("m" === n && r.length > 2 && (e.result.push([t, r[0], r[1]]), r = r.slice(2), n = "l", t = "m" === t ? "l" : "L"), "r" === n) e.result.push([t].concat(r));
     else
       for (; r.length >= e3[n] && (e.result.push([t].concat(r.splice(0, e3[n]))), e3[n]););
@@ -117,15 +117,15 @@
     g < 0 && (g = 0), g /= _ * m + p * h;
     var E = (g = Math.sqrt(g) * (i === o ? -1 : 1)) * a / s * d,
       b = -(g * s) / a * u,
-      v = c * E - l * b + (e + n) / 2,
-      y = l * E + c * b + (t + r) / 2,
+      y = c * E - l * b + (e + n) / 2,
+      v = l * E + c * b + (t + r) / 2,
       O = (u - E) / a,
       I = (d - b) / s,
       S = (-u - E) / a,
       T = (-d - b) / s,
       N = f(1, 0, O, I),
       A = f(O, I, S, T);
-    return 0 === o && A > 0 && (A -= tt), 1 === o && A < 0 && (A += tt), [v, y, N, A]
+    return 0 === o && A > 0 && (A -= tt), 1 === o && A < 0 && (A += tt), [y, v, N, A]
   }
 
   function p(e, t) {
@@ -166,7 +166,7 @@
     }, this.d = {
       x: a,
       y: s
-    }, null != a && null != s ? (this.getArcLength = C, this.getPoint = I, this.getDerivative = v) : (this.getArcLength = S, this.getPoint = O, this.getDerivative = b), this.init()
+    }, null != a && null != s ? (this.getArcLength = C, this.getPoint = I, this.getDerivative = y) : (this.getArcLength = S, this.getPoint = O, this.getDerivative = b), this.init()
   }
 
   function b(e, t, n) {
@@ -176,11 +176,11 @@
     }
   }
 
-  function v(e, t, n) {
+  function y(e, t, n) {
     return O([3 * (e[1] - e[0]), 3 * (e[2] - e[1]), 3 * (e[3] - e[2])], [3 * (t[1] - t[0]), 3 * (t[2] - t[1]), 3 * (t[3] - t[2])], n)
   }
 
-  function y(e, t, n, r, i) {
+  function v(e, t, n, r, i) {
     for (var o = 1, a = e / t, s = (e - n(r, i, a)) / t; o > .001;) {
       var l = n(r, i, a + s),
         c = n(r, i, a - s),
@@ -266,14 +266,14 @@
     var g = (m = Math.sqrt(m) * (i === o ? -1 : 1)) * a / s * d,
       E = -(m * s) / a * u,
       b = c * g - l * E + (e + n) / 2,
-      v = l * g + c * E + (t + r) / 2,
-      y = (u - g) / a,
+      y = l * g + c * E + (t + r) / 2,
+      v = (u - g) / a,
       O = (d - E) / s,
       I = (-u - g) / a,
       S = (-d - E) / s,
-      T = R(1, 0, y, O),
-      N = R(y, O, I, S);
-    return 0 === o && N > 0 && (N -= tp), 1 === o && N < 0 && (N += tp), [b, v, T, N]
+      T = R(1, 0, v, O),
+      N = R(v, O, I, S);
+    return 0 === o && N > 0 && (N -= tp), 1 === o && N < 0 && (N += tp), [b, y, T, N]
   }
 
   function w(e, t) {
@@ -454,7 +454,7 @@
 
   function ee(e, t, n) {
     var r;
-    return r = e.length - t.length, Q(e, r < 0 ? -1 * r : 0), Q(t, r > 0 ? r : 0), ty(e, t), j(e, t, n)
+    return r = e.length - t.length, Q(e, r < 0 ? -1 * r : 0), Q(t, r > 0 ? r : 0), tv(e, t), j(e, t, n)
   }
 
   function et(e, t, n) {
@@ -478,7 +478,7 @@
       for (o = t; o < n; o += r) a = eN(o, e[o], e[o + 1], a);
     else
       for (o = n - r; o >= t; o -= r) a = eN(o, e[o], e[o + 1], a);
-    return a && ev(a, a.next) && (eA(a), a = a.next), a
+    return a && ey(a, a.next) && (eA(a), a = a.next), a
   }
 
   function er(e, t) {
@@ -486,7 +486,7 @@
     t || (t = e);
     var n, r = e;
     do
-      if (n = !1, r.steiner || !ev(r, r.next) && 0 !== eb(r.prev, r, r.next)) r = r.next;
+      if (n = !1, r.steiner || !ey(r, r.next) && 0 !== eb(r.prev, r, r.next)) r = r.next;
       else {
         if (eA(r), (r = t = r.prev) === r.next) return null;
         n = !0
@@ -539,7 +539,7 @@
     do {
       var i = r.prev,
         o = r.next.next;
-      !ev(i, o) && ey(i, r, r.next, o) && eI(i, o) && eI(o, i) && (t.push(i.i / n), t.push(r.i / n), t.push(o.i / n), eA(r), eA(r.next), r = e = o), r = r.next
+      !ey(i, o) && ev(i, r, r.next, o) && eI(i, o) && eI(o, i) && (t.push(i.i / n), t.push(r.i / n), t.push(o.i / n), eA(r), eA(r.next), r = e = o), r = r.next
     } while (r !== e);
     return r
   }
@@ -646,18 +646,18 @@
     return (t.y - e.y) * (n.x - t.x) - (t.x - e.x) * (n.y - t.y)
   }
 
-  function ev(e, t) {
+  function ey(e, t) {
     return e.x === t.x && e.y === t.y
   }
 
-  function ey(e, t, n, r) {
-    return !!(ev(e, t) && ev(n, r) || ev(e, r) && ev(n, t)) || eb(e, t, n) > 0 != eb(e, t, r) > 0 && eb(n, r, e) > 0 != eb(n, r, t) > 0
+  function ev(e, t, n, r) {
+    return !!(ey(e, t) && ey(n, r) || ey(e, r) && ey(n, t)) || eb(e, t, n) > 0 != eb(e, t, r) > 0 && eb(n, r, e) > 0 != eb(n, r, t) > 0
   }
 
   function eO(e, t) {
     var n = e;
     do {
-      if (n.i !== e.i && n.next.i !== e.i && n.i !== t.i && n.next.i !== t.i && ey(n, n.next, e, t)) return !0;
+      if (n.i !== e.i && n.next.i !== e.i && n.i !== t.i && n.next.i !== t.i && ev(n, n.next, e, t)) return !0;
       n = n.next
     } while (n !== e);
     return !1
@@ -996,7 +996,7 @@
     var i = n.string;
     void 0 === i && (i = !0);
     var o = n.single;
-    if (void 0 === o && (o = !1), !Array.isArray(e) || !Array.isArray(t) || e.length !== t.length || !e.length) throw TypeError(tv);
+    if (void 0 === o && (o = !1), !Array.isArray(e) || !Array.isArray(t) || e.length !== t.length || !e.length) throw TypeError(ty);
     var a, s, l = function(e) {
         return J(e, r)
       },
@@ -1241,9 +1241,9 @@
         g = [],
         E = m[2],
         b = m[3],
-        v = Math.max(Math.ceil(Math.abs(b) / (tt / 4)), 1);
-      b /= v;
-      for (var y = 0; y < v; y++) g.push(p(E, b)), E += b;
+        y = Math.max(Math.ceil(Math.abs(b) / (tt / 4)), 1);
+      b /= y;
+      for (var v = 0; v < y; v++) g.push(p(E, b)), E += b;
       return g.map(function(e) {
         for (var t = 0; t < e.length; t += 2) {
           var n = e[t + 0],
@@ -1480,11 +1480,11 @@
       return this.length
     },
     getPointAtLength: function(e) {
-      var t = y(e, this.length, this.getArcLength, [this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y]);
+      var t = v(e, this.length, this.getArcLength, [this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y]);
       return this.getPoint([this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y], t)
     },
     getTangentAtLength: function(e) {
-      var t = y(e, this.length, this.getArcLength, [this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y]),
+      var t = v(e, this.length, this.getArcLength, [this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y]),
         n = this.getDerivative([this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y], t),
         r = Math.sqrt(n.x * n.x + n.y * n.y);
       return r > 0 ? {
@@ -1496,7 +1496,7 @@
       }
     },
     getPropertiesAtLength: function(e) {
-      var t, n = y(e, this.length, this.getArcLength, [this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y]),
+      var t, n = v(e, this.length, this.getArcLength, [this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y]),
         r = this.getDerivative([this.a.x, this.b.x, this.c.x, this.d.x], [this.a.y, this.b.y, this.c.y, this.d.y], n),
         i = Math.sqrt(r.x * r.x + r.y * r.y);
       t = i > 0 ? {
@@ -1699,8 +1699,8 @@
       return t(e)
     },
     tb = 'All shapes must be supplied as arrays of [x, y] points or an SVG path string (https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d).\nExample valid ways of supplying a shape would be:\n[[0, 0], [10, 0], [10, 10]]\n"M0,0 L10,0 L10,10Z"\n',
-    tv = "flubber.all() expects two arrays of equal length as arguments. Each element in both arrays should be an array of [x, y] points or an SVG path string (https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d).",
-    ty = function(e, t) {
+    ty = "flubber.all() expects two arrays of equal length as arguments. Each element in both arrays should be an array of [x, y] points or an SVG path string (https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d).",
+    tv = function(e, t) {
       for (var n, r, i, o = e.length, a = 1 / 0, s = 0; s < o; s++) ! function(i) {
         r = 0, t.forEach(function(t, n) {
           var a = x(e[(i + n) % o], t);
@@ -1809,19 +1809,19 @@
         var t, r, i = n(e),
           s = i[0],
           l = i[1];
-        if (t = a[s]) {
+        if (t = a[s])
           if (delete a[t.end], t.push(e), t.end = l, r = o[l]) {
             delete o[r.start];
             var c = r === t ? t : t.concat(r);
             o[c.start = t.start] = a[c.end = r.end] = c
-          } else o[t.start] = a[t.end] = t
-        } else if (t = o[l]) {
+          } else o[t.start] = a[t.end] = t;
+        else if (t = o[l])
           if (delete o[t.start], t.unshift(e), t.start = s, r = a[s]) {
             delete a[r.end];
             var u = r === t ? t : r.concat(t);
             o[u.start = r.start] = a[u.end = t.end] = u
-          } else o[t.start] = a[t.end] = t
-        } else o[(t = [e]).start = s] = a[t.end = l] = t
+          } else o[t.start] = a[t.end] = t;
+        else o[(t = [e]).start = s] = a[t.end = l] = t
       }), r(a, o), r(o, a), t.forEach(function(e) {
         i[e < 0 ? ~e : e] || s.push([e])
       }), s

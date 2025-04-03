@@ -19,8 +19,8 @@ var r, i = n(392711),
   g = (n(739566), n(995774)),
   E = n(706454),
   b = n(630388),
-  v = n(709054),
-  y = n(314897),
+  y = n(709054),
+  v = n(314897),
   O = n(592125),
   I = n(796974),
   S = n(984933),
@@ -297,7 +297,7 @@ function ea(e) {
     reactionType: a
   } = e, s = c.Z.get(n);
   if (null == s || !(0, g.sm)(e)) return !1;
-  let l = y.default.getId() === i;
+  let l = v.default.getId() === i;
   s = s.update(r, n => "MESSAGE_REACTION_ADD" === t ? n.addReaction(o, l, e.colors, a) : n.removeReaction(o, l, a)), c.Z.commit(s)
 }
 
@@ -310,7 +310,7 @@ function es(e) {
   if (null == i) return !1;
   i = i.update(n, e => {
     var t;
-    return e.addReactionBatch(r, null === (t = w.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)
+    return e.addReactionBatch(r, null == (t = w.default.getCurrentUser()) ? void 0 : t.id)
   }), c.Z.commit(i)
 }
 
@@ -324,7 +324,7 @@ function el(e) {
   if (!a.has(i)) return !1;
   a = a.update(i, e => {
     var n;
-    return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, b.pj)(e.flags, D.iLy.EPHEMERAL))), e
+    return (null == (n = e.embeds) ? void 0 : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, b.pj)(e.flags, D.iLy.EPHEMERAL))), e
   }), c.Z.commit(a)
 }
 
@@ -354,7 +354,7 @@ function ed() {
 }
 
 function ef(e) {
-  for (let [t, n] of v.default.entries(e.messages)) {
+  for (let [t, n] of y.default.entries(e.messages)) {
     let e = c.Z.getOrCreate(t).addCachedMessages(n, !0);
     c.Z.commit(e)
   }
@@ -394,7 +394,7 @@ class eh extends(r = a.ZP.Store) {
     let t = w.default.getCurrentUser();
     return this.getMessages(e).toArray().reverse().find(e => {
       var n, r;
-      return (null === (n = e.interaction) || void 0 === n ? void 0 : n.type) === l.B8.APPLICATION_COMMAND && (null === (r = e.interactionData) || void 0 === r ? void 0 : r.type) === l.yU.CHAT && e.interaction.user.id === (null == t ? void 0 : t.id)
+      return (null == (n = e.interaction) ? void 0 : n.type) === l.B8.APPLICATION_COMMAND && (null == (r = e.interactionData) ? void 0 : r.type) === l.yU.CHAT && e.interaction.user.id === (null == t ? void 0 : t.id)
     })
   }
   getLastMessage(e) {

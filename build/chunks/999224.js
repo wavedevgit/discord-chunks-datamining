@@ -20,13 +20,13 @@ var r = n(771356),
   g = n(760427),
   E = n(761491),
   b = n(480586),
-  v = n(957450),
-  y = n(251315),
+  y = n(957450),
+  v = n(251315),
   O = n(830443),
   I = n(936643),
   S = n(357826),
   T = n(486527),
-  N = n(938779),
+  N = n(722565),
   A = n(711814),
   C = n(149334),
   R = n(409863),
@@ -97,7 +97,7 @@ let V = {
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(111, 134, 253, 0.50) 0%, rgba(111, 134, 253, 0.00) 100%)",
     baseColor: "#010A3C",
     styleKey: "tunes",
-    previewSoundURLs: [y.Z]
+    previewSoundURLs: [v.Z]
   },
   ghost: {
     name: N.Z.lFIyMz,
@@ -113,7 +113,7 @@ let V = {
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(100% 555.56% at 0% 100%, rgba(110, 60, 223, 0.40) 0%, rgba(110, 60, 223, 0.00) 100%)",
     baseColor: "#160935",
     styleKey: "spacebunny",
-    previewSoundURLs: [E.Z, b.Z, v.Z]
+    previewSoundURLs: [E.Z, b.Z, y.Z]
   },
   justus: {
     name: N.Z.ZVrsKC,

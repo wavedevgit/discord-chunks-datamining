@@ -27,15 +27,15 @@ let m = {},
   g = {},
   E = {},
   b = {},
-  v = !1,
   y = !1,
+  v = !1,
   O = !1,
   I = new Set,
   S = new Set,
   T = {};
 
 function N() {
-  m = {}, E = {}, b = {}, v = !1, y = !1, O = !1, I = new Set, S = new Set
+  m = {}, E = {}, b = {}, y = !1, v = !1, O = !1, I = new Set, S = new Set
 }
 
 function A(e) {
@@ -82,7 +82,7 @@ function D(e) {
 function L() {}
 
 function x() {
-  v = !0
+  y = !0
 }
 
 function M(e) {
@@ -90,11 +90,11 @@ function M(e) {
     entitlements: t,
     excludeEnded: n
   } = e;
-  for (let e of (y = !0, v = !1, O = !n, t)) A(e)
+  for (let e of (v = !0, y = !1, O = !n, t)) A(e)
 }
 
 function k() {
-  y = !1, v = !1, O = !1
+  v = !1, y = !1, O = !1
 }
 
 function j(e) {
@@ -145,10 +145,10 @@ class F extends(r = s.yh) {
     return n
   }
   get fetchingAllEntitlements() {
-    return v
+    return y
   }
   get fetchedAllEntitlements() {
-    return y
+    return v
   }
   get fetchedEndedEntitlements() {
     return O
@@ -202,7 +202,7 @@ class F extends(r = s.yh) {
     var t;
     let n = [],
       r = new Date;
-    return null === (t = this.getForApplication(p.CL)) || void 0 === t || t.forEach(t => {
+    return null == (t = this.getForApplication(p.CL)) || t.forEach(t => {
       let i = null != t.endsAt && t.endsAt < r;
       t.type === _.qc2.FRACTIONAL_REDEMPTION && (!i || e) && n.push(t)
     }), n
@@ -210,7 +210,7 @@ class F extends(r = s.yh) {
   getUnactivatedFractionalPremiumUnits() {
     var e;
     let t = [];
-    return null === (e = this.getForApplication(p.CL)) || void 0 === e || e.forEach(e => {
+    return null == (e = this.getForApplication(p.CL)) || e.forEach(e => {
       a.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
     }), t
   }

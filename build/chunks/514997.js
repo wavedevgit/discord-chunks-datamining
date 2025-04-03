@@ -1,9 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
 e.exports = function(e) {
-  if (e.stopPropagation) {
-    e.stopPropagation();
-    return
-  }
+  if (e.stopPropagation) return void e.stopPropagation();
   e.cancelBubble = !0
 }

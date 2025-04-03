@@ -3,7 +3,7 @@
 
 function r(e) {
   var t;
-  null === (t = window.DiscordSentry) || void 0 === t || t.addBreadcrumb({
+  null == (t = window.DiscordSentry) || t.addBreadcrumb({
     type: "default",
     level: "info",
     category: e.category,

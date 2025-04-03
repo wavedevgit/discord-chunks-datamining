@@ -13,5 +13,5 @@ function i(e) {
     applicationStream: o,
     voiceChannel: a
   } = e;
-  return i !== r.Sk.OFFLINE && i !== r.Sk.INVISIBLE && (null != o || null != a || (null !== (t = null == n ? void 0 : n.length) && void 0 !== t ? t : 0) > 0)
+  return i !== r.Sk.OFFLINE && i !== r.Sk.INVISIBLE && (null != o || null != a || (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0)
 }

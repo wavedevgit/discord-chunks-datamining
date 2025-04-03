@@ -27,7 +27,7 @@ var r = n(544891),
   E = n(981631),
   b = n(388032);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -102,10 +102,10 @@ function N(e, t, n, r, i) {
     type: e,
     channelId: t,
     messageId: n,
-    userId: null !== (a = null == i ? void 0 : i.userId) && void 0 !== a ? a : u.default.getId(),
+    userId: null != (a = null == i ? void 0 : i.userId) ? a : u.default.getId(),
     emoji: r,
     optimistic: !0,
-    colors: null !== (s = null == i ? void 0 : i.colors) && void 0 !== s ? s : [],
+    colors: null != (s = null == i ? void 0 : i.colors) ? s : [],
     reactionType: (null == i ? void 0 : i.burst) ? l.O.BURST : l.O.NORMAL
   })
 }
@@ -124,7 +124,7 @@ function A(e) {
 
 function C(e, t, n) {
   var r;
-  let i = null !== (r = n.id) && void 0 !== r ? r : n.name;
+  let i = null != (r = n.id) ? r : n.name;
   return E.ANM.POLL_ANSWER_VOTERS(e, t, i)
 }
 async function R(e) {
@@ -163,14 +163,11 @@ async function P(e, t, n) {
     u = arguments.length > 4 ? arguments[4] : void 0,
     f = null != u && !!u.burst,
     p = null != u && !!u.isRetry;
-  if (!p && k(e, t, n, f)) {
-    a.Z.show({
-      title: b.NW.string(b.t["uaUU/v"]),
-      body: b.NW.string(b.t.psMorq),
-      confirmText: b.NW.string(b.t["NX+WJC"])
-    });
-    return
-  }
+  if (!p && k(e, t, n, f)) return void a.Z.show({
+    title: b.NW.string(b.t["uaUU/v"]),
+    body: b.NW.string(b.t.psMorq),
+    confirmText: b.NW.string(b.t["NX+WJC"])
+  });
   let h = await M(n, f);
   return N("MESSAGE_REACTION_ADD", e, t, n, {
     burst: f,
@@ -192,11 +189,11 @@ async function P(e, t, n) {
     if ("Message Shortcut" === o) {
       var r;
       let i = d.Z.getChannel(e);
-      _.default.track(E.rMx.MESSAGE_SHORTCUT_ACTION_SENT, y({
+      _.default.track(E.rMx.MESSAGE_SHORTCUT_ACTION_SENT, v({
         channel_id: e,
         guild_id: null == i ? void 0 : i.guild_id,
         original_message_id: t,
-        emoji_id: null !== (r = n.id) && void 0 !== r ? r : n.name,
+        emoji_id: null != (r = n.id) ? r : n.name,
         action: "react"
       }, (0, s.hH)(null == i ? void 0 : i.guild_id), (0, s.v_)(i)))
     }
@@ -205,7 +202,7 @@ async function P(e, t, n) {
     })), g.Z.triggerFullscreenAnimation({
       channelId: e,
       messageId: t,
-      emoji: I(y({}, n), {
+      emoji: I(v({}, n), {
         animated: !1
       })
     })) : i.uv.announce(b.NW.formatToPlainString(b.t.ol4acH, {

@@ -79,11 +79,11 @@ function b(e) {
     let {
       id: t
     } = e;
-    y(t)
+    v(t)
   })
 }
 
-function v(e) {
+function y(e) {
   E = !!e.isSwitchingAccount, e.isSwitchingAccount || (g = g.filter(e => {
     let {
       id: t
@@ -92,7 +92,7 @@ function v(e) {
   })), r = null
 }
 
-function y(e) {
+function v(e) {
   g = g.filter(t => {
     let {
       id: n
@@ -161,7 +161,7 @@ class C extends(o = s.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;
-      g = null !== (t = e.users) && void 0 !== t ? t : [], i = e.canUseMultiAccountMobile
+      g = null != (t = e.users) ? t : [], i = e.canUseMultiAccountMobile
     }
   }
   getCanUseMultiAccountMobile() {
@@ -210,7 +210,7 @@ f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"
   if (null != e) {
     var t;
     return {
-      users: null !== (t = e.users) && void 0 !== t ? t : [],
+      users: null != (t = e.users) ? t : [],
       canUseMultiAccountMobile: !1
     }
   }
@@ -221,11 +221,11 @@ f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"
 }]);
 let R = new C(l.Z, {
   CONNECTION_OPEN: b,
-  LOGOUT: v,
+  LOGOUT: y,
   MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => I(e.userId, 1),
   MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => I(e.userId, 2),
   MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => I(e.userId, 0),
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: e => y(e.userId),
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: e => v(e.userId),
   MULTI_ACCOUNT_MOVE_ACCOUNT: S,
   CURRENT_USER_UPDATE: O,
   MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: T,

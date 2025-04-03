@@ -44,7 +44,7 @@ function _(e) {
     var r, o;
     t.push(a.ZP.getEmojiURL({
       id: n.emojiId,
-      animated: null !== (o = null === (r = i.ZP.getUsableCustomEmojiById(n.emojiId)) || void 0 === r ? void 0 : r.animated) && void 0 !== o && o,
+      animated: null != (o = null == (r = i.ZP.getUsableCustomEmojiById(n.emojiId)) ? void 0 : r.animated) && o,
       size: c.kV.reaction
     }))
   } else(null == n ? void 0 : n.emojiName) != null && t.push(s.ZP.getURL(n.emojiName));

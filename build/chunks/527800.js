@@ -10,8 +10,7 @@ e.exports = function(e, t, r, i) {
   }
 
   function s(t) {
-    var a;
-    o.fireCallback(r, t, e), "keyup" !== i && (a = n(619820), o.ignoreNextKeyup = a(t)), setTimeout(function() {
+    o.fireCallback(r, t, e), "keyup" !== i && (o.ignoreNextKeyup = n(619820)(t)), setTimeout(function() {
       o.resetSequences()
     }, 10)
   }

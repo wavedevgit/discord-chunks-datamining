@@ -29,10 +29,10 @@ class m {
     this.applications = e.map(e => {
       var t, n;
       return {
-        applicationId: null !== (t = e.id) && void 0 !== t ? t : null,
+        applicationId: null != (t = e.id) ? t : null,
         processId: e.pid,
         processPath: e.pidPath,
-        windowHandle: null !== (n = e.windowHandle) && void 0 !== n ? n : null,
+        windowHandle: null != (n = e.windowHandle) ? n : null,
         executableName: e.exeName
       }
     }), "verbatim-source" !== this.mode && this.director.onDetectionUpdate(this.applications)
@@ -60,7 +60,7 @@ class m {
         break;
       default:
         var t;
-        throw Error("unknown streaming mode: ".concat(null !== (t = this.mode) && void 0 !== t ? t : "(none)"))
+        throw Error("unknown streaming mode: ".concat(null != (t = this.mode) ? t : "(none)"))
     }
   }
   _onStreamKilled(e) {
@@ -72,7 +72,7 @@ class m {
         break;
       default:
         var t;
-        throw Error("unknown streaming mode: ".concat(null !== (t = this.mode) && void 0 !== t ? t : "(none)"))
+        throw Error("unknown streaming mode: ".concat(null != (t = this.mode) ? t : "(none)"))
     }
   }
   _onDirectorAction(e) {
@@ -99,7 +99,7 @@ class m {
           i.Z.setGoLiveSource({
             desktopSettings: {
               sourceId: e.sourceId,
-              sound: null === (r = e.sound) || void 0 === r || r
+              sound: null == (r = e.sound) || r
             },
             qualityOptions: {
               preset: n.preset,
@@ -134,7 +134,7 @@ class m {
         break;
       default:
         var e;
-        throw Error("unknown streaming mode: ".concat(null !== (e = this.mode) && void 0 !== e ? e : "(none)"))
+        throw Error("unknown streaming mode: ".concat(null != (e = this.mode) ? e : "(none)"))
     }
   }
   constructor() {
@@ -180,7 +180,7 @@ class m {
       let {
         settings: n
       } = e;
-      (null == n ? void 0 : n.context) === p.Yn.STREAM && (null == n ? void 0 : n.desktopSettings) == null && (null == n ? void 0 : n.cameraSettings) == null && this._onCaptureEnded(), (null == n ? void 0 : null === (t = n.desktopSettings) || void 0 === t ? void 0 : t.sound) != null && (this.director.sound = n.desktopSettings.sound)
+      (null == n ? void 0 : n.context) === p.Yn.STREAM && (null == n ? void 0 : n.desktopSettings) == null && (null == n ? void 0 : n.cameraSettings) == null && this._onCaptureEnded(), (null == n || null == (t = n.desktopSettings) ? void 0 : t.sound) != null && (this.director.sound = n.desktopSettings.sound)
     })
   }
 }

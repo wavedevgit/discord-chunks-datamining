@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /[_A-Za-z][_0-9A-Za-z]*/;
   return {
@@ -37,4 +37,3 @@ function t(e) {
     illegal: [/[;<']/, /BEGIN/]
   }
 }
-e.exports = t

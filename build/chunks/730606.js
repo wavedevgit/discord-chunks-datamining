@@ -22,14 +22,14 @@ var r = n(200651),
   g = n(956664),
   E = n(254109),
   b = n(212459),
-  v = n(792297),
-  y = n(369171),
+  y = n(792297),
+  v = n(369171),
   O = n(683528),
   I = n(545093),
   S = n(549635),
   T = n(981631),
   N = n(388032),
-  A = n(983811);
+  A = n(606584);
 
 function C(e) {
   let {
@@ -41,7 +41,7 @@ function C(e) {
   } = e, {
     width: a,
     height: s
-  } = (0, f.Kc)("preloadMediaViewerLazyImage") ? (0, v.p)(i, {
+  } = (0, f.Kc)("preloadMediaViewerLazyImage") ? (0, y.p)(i, {
     width: n,
     height: r
   }) : (0, g.zp)(n, r);
@@ -91,10 +91,7 @@ function P(e) {
 
 function w(e, t) {
   if ("IMAGE" === e.type) {
-    if (!(0, g._H)(e)) {
-      (0, d.po)(e.url);
-      return
-    }
+    if (!(0, g._H)(e)) return void(0, d.po)(e.url);
     C({
       src: (0, h.q)({
         proxyURL: e.proxyUrl,
@@ -138,7 +135,7 @@ function D(e) {
     } : () => (0, E.yg)(E.uG.CONTEXT_MENU_OPENED),
     x = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.ZP, {
+    children: [(0, r.jsx)(v.ZP, {
       children: e => x ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(I.Z, {
           onClick: e => {
@@ -156,7 +153,7 @@ function D(e) {
           className: a()(A.navNext, e)
         })]
       }) : void 0
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(y.Z, {
       items: t,
       currentIndex: f,
       children: (e, t) => (0, r.jsx)(P, {
@@ -170,7 +167,7 @@ function D(e) {
           onContextMenu: L
         })
       })
-    }), x && (0, r.jsx)(y.ZP, {
+    }), x && (0, r.jsx)(v.ZP, {
       children: e => (0, r.jsx)(O.Z, {
         items: t,
         currentIndex: f,

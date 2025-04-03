@@ -26,13 +26,13 @@ var r = n(200651),
   g = n(592125),
   E = n(496675),
   b = n(944486),
-  v = n(626135),
-  y = n(585483),
+  y = n(626135),
+  v = n(585483),
   O = n(591759),
   I = n(787025),
   S = n(981631),
   T = n(388032),
-  N = n(393521);
+  N = n(986335);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -131,7 +131,7 @@ function M(e) {
   } = e, o = w(e, ["guild", "application"]);
   let a = T.NW.string(T.t.se5gLi);
   i.useEffect(() => {
-    v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
+    y.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
       application_id: null == n ? void 0 : n.id
     })
   }, [null == n ? void 0 : n.id]);
@@ -163,19 +163,19 @@ function k(e) {
   let {
     onClose: o
   } = w(e, ["guild", "application"]), a = i.useCallback(() => {
-    (null == t ? void 0 : t.id) != null && ((0, m.X)(null == t ? void 0 : t.id), null == o || o(), v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
+    (null == t ? void 0 : t.id) != null && ((0, m.X)(null == t ? void 0 : t.id), null == o || o(), y.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
       application_id: null == n ? void 0 : n.id,
       guild_id: null == t ? void 0 : t.id
     }))
   }, [o, null == n ? void 0 : n.id, null == t ? void 0 : t.id]), s = p.z8.getField("entrypoint"), l = i.useCallback(() => {
-    null == o || o(), v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
+    null == o || o(), y.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
       application_id: null == n ? void 0 : n.id
     })
   }, [o, null == n ? void 0 : n.id]), u = window.location.pathname.startsWith(S.Z5c.APPLICATION_DIRECTORY), d = i.useCallback(() => {
     (null == n ? void 0 : n.id) != null && (null == o || o(), null != s && (0, h.uL)(""), setImmediate(() => {
-      y.S.dispatchToLastSubscribed(S.CkL.OPEN_APP_LAUNCHER, {
+      v.S.dispatchToLastSubscribed(S.CkL.OPEN_APP_LAUNCHER, {
         applicationId: n.id
-      }), v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
+      }), y.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
         application_id: n.id
       })
     }))
@@ -218,8 +218,8 @@ function U() {
   let n = (0, l.TH)();
   return (0, r.jsx)(I.G, {
     children: (0, r.jsx)(M, {
-      guild: null === (e = n.state) || void 0 === e ? void 0 : e.guild,
-      application: null === (t = n.state) || void 0 === t ? void 0 : t.application,
+      guild: null == (e = n.state) ? void 0 : e.guild,
+      application: null == (t = n.state) ? void 0 : t.application,
       showsCloseWindowText: !0
     })
   })
@@ -236,7 +236,7 @@ function G(e) {
     (null == e || e.host !== window.location.host || e.pathname !== S.Z5c.OAUTH2_AUTHORIZE) && (0, h.uL)(S.Z5c.INDEX)
   }, [o]);
   let a = null != o ? (0, s.parse)(o.search) : {},
-    l = null !== (n = null !== (t = a.error_description) && void 0 !== t ? t : a.error) && void 0 !== n ? n : T.NW.string(T.t["mqn87+"]);
+    l = null != (n = null != (t = a.error_description) ? t : a.error) ? n : T.NW.string(T.t["mqn87+"]);
   return (0, r.jsx)(I.G, {
     children: (0, r.jsx)(j, {
       message: l,

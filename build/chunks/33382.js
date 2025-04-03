@@ -18,9 +18,9 @@ function o(e, t) {
       g = n[4],
       E = n[5],
       b = n[6],
-      v = n[7];
+      y = n[7];
     s && (r.push(s), s = "");
-    var y = null != h && null != p && p !== h,
+    var v = null != h && null != p && p !== h,
       O = "+" === b || "*" === b,
       I = "?" === b || "*" === b,
       S = n[2] || l,
@@ -31,9 +31,9 @@ function o(e, t) {
       delimiter: S,
       optional: I,
       repeat: O,
-      partial: y,
-      asterisk: !!v,
-      pattern: T ? d(T) : v ? ".*" : "[^" + u(S) + "]+?"
+      partial: v,
+      asterisk: !!y,
+      pattern: T ? d(T) : y ? ".*" : "[^" + u(S) + "]+?"
     })
   }
   return a < e.length && (s += e.substr(a)), s && r.push(s), r
@@ -65,19 +65,16 @@ function c(e) {
         continue
       }
       var _ = a[f.name];
-      if (null == _) {
+      if (null == _)
         if (f.optional) {
           f.partial && (o += f.prefix);
           continue
-        }
-        throw TypeError('Expected "' + f.name + '" to be defined')
-      }
+        } else throw TypeError('Expected "' + f.name + '" to be defined');
       if (r(_)) {
         if (!f.repeat) throw TypeError('Expected "' + f.name + '" to not repeat, but received `' + JSON.stringify(_) + "`");
-        if (0 === _.length) {
+        if (0 === _.length)
           if (f.optional) continue;
-          throw TypeError('Expected "' + f.name + '" to not be empty')
-        }
+          else throw TypeError('Expected "' + f.name + '" to not be empty');
         for (var p = 0; p < _.length; p++) {
           if (d = c(_[p]), !t[u].test(d)) throw TypeError('Expected all "' + f.name + '" to match "' + f.pattern + '", but received `' + JSON.stringify(d) + "`");
           o += (0 === p ? f.prefix : f.delimiter) + d

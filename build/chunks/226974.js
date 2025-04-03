@@ -60,9 +60,9 @@ var u = [],
   g = !1,
   E = "function" == typeof setTimeout ? setTimeout : null,
   b = "function" == typeof clearTimeout ? clearTimeout : null,
-  v = "undefined" != typeof setImmediate ? setImmediate : null;
+  y = "undefined" != typeof setImmediate ? setImmediate : null;
 
-function y(e) {
+function v(e) {
   for (var t = r(d); null !== t;) {
     if (null === t.callback) i(d);
     else if (t.startTime <= e) i(d), t.sortIndex = t.expirationTime, n(u, t);
@@ -72,25 +72,24 @@ function y(e) {
 }
 
 function O(e) {
-  if (g = !1, y(e), !m) {
+  if (g = !1, v(e), !m)
     if (null !== r(u)) m = !0, L(I);
     else {
       var t = r(d);
       null !== t && x(O, t.startTime - e)
     }
-  }
 }
 
 function I(e, n) {
   m = !1, g && (g = !1, b(N), N = -1), h = !0;
   var o = p;
   try {
-    for (y(n), _ = r(u); null !== _ && (!(_.expirationTime > n) || e && !R());) {
+    for (v(n), _ = r(u); null !== _ && (!(_.expirationTime > n) || e && !R());) {
       var a = _.callback;
       if ("function" == typeof a) {
         _.callback = null, p = _.priorityLevel;
         var s = a(_.expirationTime <= n);
-        n = t.unstable_now(), "function" == typeof s ? _.callback = s : _ === r(u) && i(u), y(n)
+        n = t.unstable_now(), "function" == typeof s ? _.callback = s : _ === r(u) && i(u), v(n)
       } else i(u);
       _ = r(u)
     }
@@ -127,8 +126,8 @@ function P() {
     }
   } else S = !1
 }
-if ("function" == typeof v) a = function() {
-  v(P)
+if ("function" == typeof y) a = function() {
+  y(P)
 };
 else if ("undefined" != typeof MessageChannel) {
   var w = new MessageChannel,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  LU: () => v,
+  LU: () => y,
   ZP: () => N
 }), n(47120), n(301563), n(653041);
 var r, i = n(392711),
@@ -65,11 +65,16 @@ let g = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
     numFrequentlyItems: d.yP
   });
 
-function v(e, t) {
-  return e.filter(e => !e.includes(":") || (null == t ? void 0 : t.guild) != null && t.guild.id === e.split(":")[1]).map(e => e.split(":")[0])
+function y(e, t) {
+  return e.filter(e => {
+    if (e.includes(":"))
+      if ((null == t ? void 0 : t.guild) != null) return t.guild.id === e.split(":")[1];
+      else return !1;
+    return !0
+  }).map(e => e.split(":")[0])
 }
 
-function y(e, t) {
+function v(e, t) {
   return 0 > Number(t.id) ? t.id : (null == e ? void 0 : e.guild) != null && null != t.guildId ? "".concat(t.id, ":").concat(e.guild.id) : t.id
 }
 
@@ -90,7 +95,7 @@ function I(e) {
     context: n
   } = e;
   if (!g.includes(t.type)) return !1;
-  let r = y(n, t);
+  let r = v(n, t);
   E.pendingUsages.push({
     key: r,
     timestamp: Date.now()
@@ -99,7 +104,7 @@ function I(e) {
 
 function S() {
   var e, t;
-  let n = null !== (t = null === (e = u.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) || void 0 === e ? void 0 : e.applicationCommands) && void 0 !== t ? t : {};
+  let n = null != (t = null == (e = u.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? void 0 : e.applicationCommands) ? t : {};
   b.overwriteHistory(o().mapValues(n, e => m(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), E.pendingUsages)
@@ -119,7 +124,7 @@ class T extends(r = a.ZP.PersistedStore) {
   }
   getScoreWithoutLoadingLatest(e, t) {
     var n;
-    return null !== (n = b.getScore(y(e, t))) && void 0 !== n ? n : 0
+    return null != (n = b.getScore(v(e, t))) ? n : 0
   }
   getTopCommandsWithoutLoadingLatest() {
     return b.frequently

@@ -32,8 +32,8 @@ var r = n(192379),
   g = n(594174),
   E = n(451478),
   b = n(626135),
-  v = n(980463),
-  y = n(823961),
+  y = n(980463),
+  v = n(823961),
   O = n(317951),
   I = n(111810),
   S = n(896835),
@@ -47,7 +47,7 @@ let C = 35e5,
     let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
       n = (0, s.e7)([g.default], () => {
         var e;
-        return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
+        return null == (e = g.default.getCurrentUser()) ? void 0 : e.id
       }),
       i = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
       o = i.some(e => {
@@ -62,7 +62,7 @@ let C = 35e5,
           var t;
           let n = (0, d.V9)(e),
             r = m.Z.getRTCConnection(n);
-          return null == r ? void 0 : null === (t = r.getVideoStats()) || void 0 === t ? void 0 : t.inbound_bitrate_estimate_percentile99
+          return null == r || null == (t = r.getVideoStats()) ? void 0 : t.inbound_bitrate_estimate_percentile99
         });
         P.info("Setting bitrates", e), u(e), l(Date.now())
       }
@@ -73,7 +73,7 @@ let C = 35e5,
   D = (e, t) => {
     let n = (0, s.e7)([g.default], () => {
         var e;
-        return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
+        return null == (e = g.default.getCurrentUser()) ? void 0 : e.id
       }),
       r = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
       i = (0, S.j)(t),
@@ -82,9 +82,9 @@ let C = 35e5,
   };
 
 function L(e) {
-  let [t, n, i] = (0, s.Wu)([y.Z], () => [y.Z.isFetchingPrice(e), y.Z.getPrice(e), y.Z.getErrored(e)]);
+  let [t, n, i] = (0, s.Wu)([v.Z], () => [v.Z.isFetchingPrice(e), v.Z.getPrice(e), v.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
-    t || null != n || i || (0, v.Gq)(e)
+    t || null != n || i || (0, y.Gq)(e)
   }, [t, n, i, e]), {
     price: n,
     fetchingPrice: t,
@@ -94,9 +94,9 @@ function L(e) {
 
 function x(e) {
   let t = (0, I.V1)("Utils.tsx"),
-    [n, i, o, a, l] = (0, s.Wu)([y.Z], () => [y.Z.isEntitlementFetched(e), y.Z.fetchPotionCount(e), y.Z.isEntitlementFetching(e), y.Z.getEntitlement(e), y.Z.getErrored(e)]);
+    [n, i, o, a, l] = (0, s.Wu)([v.Z], () => [v.Z.isEntitlementFetched(e), v.Z.fetchPotionCount(e), v.Z.isEntitlementFetching(e), v.Z.getEntitlement(e), v.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
-    n || o || !t || (0, v.gA)(e)
+    n || o || !t || (0, y.gA)(e)
   }, [n, o, e, t]), {
     entitlement: a,
     numPotions: i,
@@ -125,7 +125,7 @@ function k(e) {
     let t = f.Z.getCurrentUserActiveStream();
     if (null != t && t.channelId === e.id) {
       let e = p.Z.getState().goLiveSource;
-      (0, v.x8)(null == e ? void 0 : e.quality);
+      (0, y.x8)(null == e ? void 0 : e.quality);
       let t = (0, u.s_)(A.LY.RESOLUTION_1440, A.ws.FPS_60, e);
       l.Z.setGoLiveSource(t)
     }
@@ -134,7 +134,7 @@ function k(e) {
 
 function j() {
   var e;
-  let t = (null !== (e = o().name) && void 0 !== e ? e : "unknown").toLowerCase(),
+  let t = (null != (e = o().name) ? e : "unknown").toLowerCase(),
     n = (0, s.e7)([E.Z], () => E.Z.isFocused()),
     r = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   return "safari" === t || !n || r
@@ -160,7 +160,7 @@ function F(e) {
   if (null != e) return {
     message_emoji: {
       id: e.emoji.id,
-      name: (0, v.zI)(e.emoji)
+      name: (0, y.zI)(e.emoji)
     }
   }
 }
@@ -169,7 +169,7 @@ function V(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;
-    if (r.type === T.B.CONFETTI && r.used_by === (null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (null === (n = r.emoji) || void 0 === n ? void 0 : n.length) > 0) return r.emoji[0]
+    if (r.type === T.B.CONFETTI && r.used_by === (null == (t = g.default.getCurrentUser()) ? void 0 : t.id) && (null == (n = r.emoji) ? void 0 : n.length) > 0) return r.emoji[0]
   }
   return null
 }

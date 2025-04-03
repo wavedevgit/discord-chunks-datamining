@@ -76,7 +76,7 @@ class u {
     }
   }
   static initialize() {
-    !this.initialized && (i.d.setCallbacks({
+    this.initialized || (i.d.setCallbacks({
       status: e => this.onStatus(e),
       response: (e, t) => this.onResponse(e, t)
     }), l && (this.addCompletionCallback(e => {

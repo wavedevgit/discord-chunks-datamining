@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(168232),
   f = n(976845),
   _ = n(48541),
-  p = n(854310);
+  p = n(718486);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function E(e, t) {
   return i
 }
 let b = new u.Z("BalanceCounter"),
-  v = (0, d.dU)(void 0) === _.C.PRODUCTION,
-  y = e => null === e ? 0 : "".concat(e.toFixed(0)).length,
+  y = (0, d.dU)(void 0) === _.C.PRODUCTION,
+  v = e => null === e ? 0 : "".concat(e.toFixed(0)).length,
   O = (e, t) => {
     let n = e > 0,
       r = t * f.eg[n ? "EARN" : "SPEND"],
@@ -90,7 +90,7 @@ let b = new u.Z("BalanceCounter"),
       }
     }, [o, c]);
     let m = null != o ? o : 0,
-      g = null !== (t = p.current) && void 0 !== t ? t : m,
+      g = null != (t = p.current) ? t : m,
       {
         duration: E,
         delay: I
@@ -99,7 +99,7 @@ let b = new u.Z("BalanceCounter"),
         number: S
       } = (0, l.q_F)({
         from: {
-          number: null !== (n = p.current) && void 0 !== n ? n : m
+          number: null != (n = p.current) ? n : m
         },
         number: m,
         config: {
@@ -110,20 +110,20 @@ let b = new u.Z("BalanceCounter"),
         },
         delay: I,
         onStart: () => {
-          a(y(g))
+          a(v(g))
         },
         onRest: () => {
-          if (_(f + 1), u(), !v && null !== h.current && null !== p.current) {
+          if (_(f + 1), u(), !y && null !== h.current && null !== p.current) {
             let e = Date.now();
             b.log("Balance Counter finished updating: ", {
               time: e - h.current.lastChangedAt,
               delta: m - p.current
             })
           }
-          a(y(m)), p.current = m
+          a(v(m)), p.current = m
         }
       }),
-      T = y(Math.max(null != o ? o : 0, S.get()));
+      T = v(Math.max(null != o ? o : 0, S.get()));
     return (0, r.jsx)(s.animated.div, {
       style: {
         width: "calc(".concat(T, "ch)")
@@ -139,8 +139,8 @@ let b = new u.Z("BalanceCounter"),
       s = g(e, ["value", "className"]);
     let u = null === n,
       [d, f] = (0, i.useState)(null),
-      _ = (0, i.useMemo)(() => y(n), [n]),
-      h = null !== (t = (0, c.Z)(_)) && void 0 !== t ? t : 0,
+      _ = (0, i.useMemo)(() => v(n), [n]),
+      h = null != (t = (0, c.Z)(_)) ? t : 0,
       E = (0, i.useMemo)(() => I(h, _, d), [h, _, d]),
       b = "".concat(u ? 0 : E, "ch");
     return (0, r.jsx)(l.Text, {

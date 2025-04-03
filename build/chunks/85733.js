@@ -48,22 +48,21 @@ var r = n(478497),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   h = {},
-  m = function e(t, n, o, a, s, c, d, f, m, g, E, b, v, y, O, I, S, T) {
+  m = function e(t, n, o, a, s, c, d, f, m, g, E, b, y, v, O, I, S, T) {
     for (var N, A = t, C = T, R = 0, P = !1; void 0 !== (C = C.get(h)) && !P;) {
       var w = C.get(t);
-      if (R += 1, void 0 !== w) {
+      if (R += 1, void 0 !== w)
         if (w === R) throw RangeError("Cyclic object value");
-        P = !0
-      }
+        else P = !0;
       void 0 === C.get(h) && (R = 0)
     }
-    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = v(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
-        return e instanceof Date ? v(e) : e
+    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = y(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
+        return e instanceof Date ? y(e) : e
       })), null === A) {
-      if (c) return m && !I ? m(n, _.encoder, S, "key", y) : n;
+      if (c) return m && !I ? m(n, _.encoder, S, "key", v) : n;
       A = ""
     }
-    if (p(A) || i.isBuffer(A)) return m ? [O(I ? n : m(n, _.encoder, S, "key", y)) + "=" + O(m(A, _.encoder, S, "value", y))] : [O(n) + "=" + O(String(A))];
+    if (p(A) || i.isBuffer(A)) return m ? [O(I ? n : m(n, _.encoder, S, "key", v)) + "=" + O(m(A, _.encoder, S, "value", v))] : [O(n) + "=" + O(String(A))];
     var D = [];
     if (void 0 === A) return D;
     if ("comma" === o && l(A)) I && m && (A = i.maybeMap(A, m)), N = [{
@@ -85,7 +84,7 @@ var r = n(478497),
           B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (b ? "." + G : "[" + G + "]");
         T.set(t, R);
         var F = r();
-        F.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && I && l(A) ? null : m, g, E, b, v, y, O, I, S, F))
+        F.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && I && l(A) ? null : m, g, E, b, y, v, O, I, S, F))
       }
     }
     return D
@@ -139,7 +138,7 @@ e.exports = function(e, t) {
   n || (n = Object.keys(o)), a.sort && n.sort(a.sort);
   for (var _ = r(), p = 0; p < n.length; ++p) {
     var h = n[p];
-    (!a.skipNulls || null !== o[h]) && u(c, m(o[h], h, d, f, a.allowEmptyArrays, a.strictNullHandling, a.skipNulls, a.encodeDotInKeys, a.encode ? a.encoder : null, a.filter, a.sort, a.allowDots, a.serializeDate, a.format, a.formatter, a.encodeValuesOnly, a.charset, _))
+    a.skipNulls && null === o[h] || u(c, m(o[h], h, d, f, a.allowEmptyArrays, a.strictNullHandling, a.skipNulls, a.encodeDotInKeys, a.encode ? a.encoder : null, a.filter, a.sort, a.allowDots, a.serializeDate, a.format, a.formatter, a.encodeValuesOnly, a.charset, _))
   }
   var E = c.join(a.delimiter),
     b = !0 === a.addQueryPrefix ? "?" : "";

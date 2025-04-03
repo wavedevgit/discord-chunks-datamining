@@ -1,5 +1,4 @@
 /** Chunk was on web.js **/
-function t() {
+e.exports = function() {
   this.__data__ = [], this.size = 0
 }
-e.exports = t

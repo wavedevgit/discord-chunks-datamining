@@ -34,11 +34,8 @@ class p extends s.Z {
       })
     }), _(this, "fetchFeaturedGuilds", async e => {
       var t;
-      if (!this.isFetchEnabled) {
-        this.queue.add(d.Hk);
-        return
-      }
-      let n = null !== (t = null == e ? void 0 : e.forceRefresh) && void 0 !== t && t,
+      if (!this.isFetchEnabled) return void this.queue.add(d.Hk);
+      let n = null != (t = null == e ? void 0 : e.forceRefresh) && t,
         s = c.Z.getLastFetchTimestamp({
           categoryId: d.Hk
         });
@@ -81,10 +78,7 @@ class p extends s.Z {
         categoryId: t,
         forceRefresh: n = !1
       } = e;
-      if (!this.isFetchEnabled) {
-        this.queue.add(t);
-        return
-      }
+      if (!this.isFetchEnabled) return void this.queue.add(t);
       let i = c.Z.getLastFetchTimestamp({
         categoryId: t
       });

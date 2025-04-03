@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -59,7 +59,7 @@ function E(e) {
   let {
     affinities: n
   } = e;
-  _.userAffinities = null !== (t = n.user_affinities) && void 0 !== t ? t : [], _.lastFetched = Date.now(), b(), u = !1
+  _.userAffinities = null != (t = n.user_affinities) ? t : [], _.lastFetched = Date.now(), b(), u = !1
 }
 
 function b() {
@@ -75,7 +75,7 @@ function b() {
     affinityUserIds: t
   }
 }
-class v extends(r = i.ZP.PersistedStore) {
+class y extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(a.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, b()), this.syncWith([a.Z], b)
   }
@@ -101,8 +101,8 @@ class v extends(r = i.ZP.PersistedStore) {
     return p.affinityUserIds
   }
 }
-s(v, "displayName", "UserAffinitiesStore"), s(v, "persistKey", "UserAffinitiesStore"), s(v, "migrations", [e => null]);
-let y = new v(o.Z, {
+s(y, "displayName", "UserAffinitiesStore"), s(y, "persistKey", "UserAffinitiesStore"), s(y, "migrations", [e => null]);
+let v = new y(o.Z, {
   LOAD_USER_AFFINITIES_SUCCESS: E,
   LOAD_USER_AFFINITIES: g,
   LOAD_USER_AFFINITIES_FAILURE: m,

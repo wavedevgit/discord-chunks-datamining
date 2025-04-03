@@ -58,11 +58,11 @@ function E(e, t) {
 }
 let b = (0, u.T)({});
 
-function v(e, t, n) {
+function y(e, t, n) {
   return n ? p.NW.formatToParts(e, t) : p.NW.formatToPlainString(e, t)
 }
 
-function y(e) {
+function v(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -77,7 +77,7 @@ function y(e) {
     u = n.config.messages.gameTitle,
     f = (0, l.f$)(n.config),
     _ = (0, l._p)(n.config);
-  return v(t = o && f ? _ ? p.t["eb/SnZ"] : p.t.ziB0HB : f || null != a ? p.t.AwuMRU : p.t.NIimTk, {
+  return y(t = o && f ? _ ? p.t["eb/SnZ"] : p.t.ziB0HB : f || null != a ? p.t.AwuMRU : p.t.NIimTk, {
     gameTitle: u,
     streamingDurationRequirement: c,
     rewardNameWithArticle: s,
@@ -101,7 +101,7 @@ function O(e) {
     u = n.config.messages.gameTitle,
     f = (0, l.f$)(n.config),
     _ = (0, l._p)(n.config);
-  return v(t = o && f ? _ ? p.t["eb/SnZ"] : p.t.ziB0HB : f || null != a ? p.t.AwuMRU : p.t.NIimTk, {
+  return y(t = o && f ? _ ? p.t["eb/SnZ"] : p.t.ziB0HB : f || null != a ? p.t.AwuMRU : p.t.NIimTk, {
     gameTitle: u,
     targetMinutes: c,
     rewardNameWithArticle: s,
@@ -125,7 +125,7 @@ function I(e) {
     u = n.config.messages.gameTitle,
     f = (0, l.f$)(n.config),
     _ = (0, l._p)(n.config);
-  return v(t = o && f ? _ ? p.t["eb/SnZ"] : p.t.ziB0HB : f || null != a ? p.t.AwuMRU : p.t.FZL5Q0, {
+  return y(t = o && f ? _ ? p.t["eb/SnZ"] : p.t.ziB0HB : f || null != a ? p.t.AwuMRU : p.t.FZL5Q0, {
     gameTitle: u,
     streamingDurationRequirement: c,
     rewardNameWithArticle: s,
@@ -142,7 +142,7 @@ function S(e) {
   } = e, {
     targetMinutes: i
   } = n, o = t.config.messages.gameTitle;
-  return v(p.t["a/ia7O"], {
+  return y(p.t["a/ia7O"], {
     gameTitle: o,
     streamingDurationRequirement: i
   }, r)
@@ -150,12 +150,11 @@ function S(e) {
 
 function T(e, t, n, r) {
   var i, o;
-  let a;
-  let s = null !== (o = null === (i = e.config.videoMetadata) || void 0 === i ? void 0 : i.messages.videoTitle) && void 0 !== o ? o : "video",
+  let a, s = null != (o = null == (i = e.config.videoMetadata) ? void 0 : i.messages.videoTitle) ? o : "video",
     c = d.r.build(e.config).defaultReward.messages.nameWithArticle,
     u = (0, l.f$)(e.config),
     _ = (0, l._p)(e.config);
-  return v(a = u && n ? _ ? p.t["xqX+r6"] : p.t["vs/xBg"] : u ? p.t["W/HkLC"] : e.id === f.V6 ? p.t.Rsd5bG : p.t.yMsQ7e, {
+  return y(a = u && n ? _ ? p.t["xqX+r6"] : p.t["vs/xBg"] : u ? p.t["W/HkLC"] : e.id === f.V6 ? p.t.Rsd5bG : p.t.yMsQ7e, {
     videoTitle: s,
     rewardNameWithArticle: c,
     duration: t
@@ -168,7 +167,7 @@ function N(e) {
     taskDetails: n,
     withoutMarkdown: r
   } = e, i = n.targetMinutes, o = d.r.build(t.config).defaultReward.messages.nameWithArticle;
-  return v(p.t.VYwSSk, {
+  return y(p.t.VYwSSk, {
     streamingDurationRequirement: i,
     questReward: o
   }, r)
@@ -189,7 +188,7 @@ function A(e) {
     u = n.config.messages.gameTitle,
     f = (0, l.f$)(n.config),
     _ = (0, l._p)(n.config);
-  return v(t = o && f ? _ ? p.t["X8Yt//"] : p.t.smG9qq : f || null != a ? p.t.BLyDvL : p.t["hkJ+Gh"], {
+  return y(t = o && f ? _ ? p.t["X8Yt//"] : p.t.smG9qq : f || null != a ? p.t.BLyDvL : p.t["hkJ+Gh"], {
     gameTitle: u,
     streamingDurationRequirement: c,
     duration: a,
@@ -208,12 +207,12 @@ function C(e) {
   } = e;
   if (o) switch (D(t)) {
     case 0:
-      return v(p.t.goA6o6, {
+      return y(p.t.goA6o6, {
         targetMinutes: n.targetMinutes,
         gameTitle: t.config.messages.gameTitle
       }, i);
     case 1:
-      return v(p.t.NmzoDg, {
+      return y(p.t.NmzoDg, {
         targetMinutes: n.targetMinutes,
         gameTitle: t.config.messages.gameTitle
       }, i);
@@ -225,7 +224,7 @@ function C(e) {
   }
   let u = (0, a.I5)(s, _.p9.TIER_2),
     f = (0, l.Kr)(t.config);
-  if ((0, l.$J)(t) && (0, l.$H)(t)) return y({
+  if ((0, l.$J)(t) && (0, l.$H)(t)) return v({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,
@@ -284,7 +283,7 @@ let R = e => {
 function P(e) {
   var t;
   let n = C(E(m({}, e), {
-    currentUser: null !== (t = e.currentUser) && void 0 !== t ? t : o.default.getCurrentUser()
+    currentUser: null != (t = e.currentUser) ? t : o.default.getCurrentUser()
   }));
   return e.withoutMarkdown ? R(n) : n
 }

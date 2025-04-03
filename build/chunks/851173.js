@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "Julia REPL",
     contains: [{
@@ -14,4 +14,3 @@ function t(e) {
     aliases: ["jldoctest"]
   }
 }
-e.exports = t

@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(666188),
   E = n(372769),
   b = n(523751),
-  v = n(246364),
-  y = n(746916),
+  y = n(246364),
+  v = n(746916),
   O = n(965638),
   I = n(160404),
   S = n(777861),
@@ -38,8 +38,8 @@ var r = n(200651),
   x = n(938475),
   M = n(981631),
   k = n(388032),
-  j = n(398057),
-  U = n(5601);
+  j = n(714509),
+  U = n(375613);
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ function Z(e) {
     d = l().flatMap(n, t => {
       var n;
       if (t === e.afkChannelId) return [];
-      let r = (null !== (n = a[t]) && void 0 !== n ? n : []).map(e => {
+      let r = (null != (n = a[t]) ? n : []).map(e => {
         let {
           user: t
         } = e;
@@ -139,11 +139,11 @@ function Z(e) {
       let e = E.map(e => L.default.getUser(e));
       return u ? (0, p.dq)(e) : e
     }, [u, E]),
-    v = (0, c.Wu)([L.default], () => g.map(e => L.default.getUser(e)), [g]),
-    y = d.filter(e => !g.includes(e.id) && !E.includes(e.id)),
-    O = u ? (0, p.dq)(y) : y,
-    I = v.filter(e => null != e && !E.includes(e.id)),
-    S = _.length > 0 || y.length > 0 || I.length > 0 || b.length > 0;
+    y = (0, c.Wu)([L.default], () => g.map(e => L.default.getUser(e)), [g]),
+    v = d.filter(e => !g.includes(e.id) && !E.includes(e.id)),
+    O = u ? (0, p.dq)(v) : v,
+    I = y.filter(e => null != e && !E.includes(e.id)),
+    S = _.length > 0 || v.length > 0 || I.length > 0 || b.length > 0;
   return {
     voiceUsersToShow: O,
     stageSpeakers: _,
@@ -231,12 +231,12 @@ function K(e) {
   } = (0, c.cj)([D.ZP], () => ({
     isMuted: D.ZP.isMuted(n),
     muteConfig: D.ZP.getMuteConfig(n)
-  }), [n]), v = null != p || null != m;
+  }), [n]), y = null != p || null != m;
   return (0, r.jsxs)(r.Fragment, {
     children: [h, p, m, g, E ? (0, r.jsx)(Y, {
       muteConfig: b,
       className: a()(j.muteText, {
-        [j.muteTextWithActivity]: v
+        [j.muteTextWithActivity]: y
       })
     }) : null]
   })
@@ -244,11 +244,11 @@ function K(e) {
 
 function z(e) {
   switch (e) {
-    case v.wB.SUBMITTED:
+    case y.wB.SUBMITTED:
       return k.NW.string(k.t["9KFC9/"]);
-    case v.wB.REJECTED:
+    case y.wB.REJECTED:
       return k.NW.string(k.t["TQY/RU"]);
-    case v.wB.APPROVED:
+    case y.wB.APPROVED:
       return k.NW.string(k.t.WXHcq6);
     default:
       return k.NW.string(k.t.fjHFCw)
@@ -271,7 +271,7 @@ function Q(e) {
   let {
     guild: t,
     includeActivity: n = !0
-  } = e, i = (0, g.Z)(t), o = (0, y.E)(t), s = null != o ? (0, r.jsx)(q, {
+  } = e, i = (0, g.Z)(t), o = (0, v.E)(t), s = null != o ? (0, r.jsx)(q, {
     guildJoinRequestStatus: o
   }) : null, l = n ? (0, r.jsx)(K, {
     guild: t

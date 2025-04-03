@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var i, o = n(442837),
   a = n(570140),
@@ -63,7 +63,7 @@ function E(e) {
 function b() {
   f = !f
 }
-class v extends(i = o.ZP.Store) {
+class y extends(i = o.ZP.Store) {
   getFeeds() {
     return c
   }
@@ -81,7 +81,7 @@ class v extends(i = o.ZP.Store) {
   }
   getFeedRequestId(e) {
     var t;
-    return null === (t = this.getFeed(e)) || void 0 === t ? void 0 : t.request_id
+    return null == (t = this.getFeed(e)) ? void 0 : t.request_id
   }
   getDebugImpressionCappingDisabled() {
     return f
@@ -97,8 +97,8 @@ class v extends(i = o.ZP.Store) {
     return (0, s.vu)(o, t)
   }
 }
-l(v, "displayName", "ContentInventoryStore");
-let y = new v(a.Z, {
+l(y, "displayName", "ContentInventoryStore");
+let v = new y(a.Z, {
   CONNECTION_OPEN: m,
   CONTENT_INVENTORY_SET_FEED: p,
   CONTENT_INVENTORY_SET_FEED_STATE: h,

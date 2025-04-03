@@ -49,17 +49,14 @@ class b {
     };
     if (e.transport === f.He.IPC) {
       let n = this.getCurrentUser();
-      if (null == n) {
-        e.close(_.$VG.CLOSE_NORMAL, "User logged out");
-        return
-      }
+      if (null == n) return void e.close(_.$VG.CLOSE_NORMAL, "User logged out");
       t.user = (0, u.Z)(n)
     }
     this.dispatch(e, null, _.Etm.DISPATCH, _.zMe.READY, t)
   }
   handleDisconnect(e, t) {
     var n;
-    this.removeSubscriptions(e), this.sockets.delete(e), null === (n = this.abortControllers.get(e)) || void 0 === n || n.abort("DISCONNECTED"), this.abortControllers.delete(e), this.onDisconnect(e, t)
+    this.removeSubscriptions(e), this.sockets.delete(e), null == (n = this.abortControllers.get(e)) || n.abort("DISCONNECTED"), this.abortControllers.delete(e), this.onDisconnect(e, t)
   }
   handleRequest(e, t) {
     new Promise(n => {
@@ -86,12 +83,9 @@ class b {
         i()(null != e.validation, "command.validation must not be null"), o.validate(t.args, e.validation(o), {
           convert: !1
         }, t => {
-          if (null != t) {
-            r(new c.Z({
-              errorCode: _.lTL.INVALID_PAYLOAD
-            }, t.message));
-            return
-          }
+          if (null != t) return void r(new c.Z({
+            errorCode: _.lTL.INVALID_PAYLOAD
+          }, t.message));
           n(e)
         })
       } else n(e)
@@ -103,9 +97,9 @@ class b {
         cmd: t.cmd,
         evt: t.evt,
         nonce: t.nonce,
-        args: null !== (i = t.args) && void 0 !== i ? i : {},
+        args: null != (i = t.args) ? i : {},
         isSocketConnected: () => this.sockets.has(e),
-        signal: null === (r = this.abortControllers.get(e)) || void 0 === r ? void 0 : r.signal
+        signal: null == (r = this.abortControllers.get(e)) ? void 0 : r.signal
       })
     }).then(n => this.dispatch(e, t.nonce, t.cmd, null, n)).catch(n => {
       let {
@@ -177,7 +171,7 @@ class b {
   dispatchToSubscriptions(e, t, n, r) {
     null != r && "" !== r && E(r) || this.subscriptions.forEach(r => {
       var i;
-      r.evt === e && ("function" != typeof t || t(r)) && ("object" != typeof t || g(t, null !== (i = r.args) && void 0 !== i ? i : {})) && ("function" == typeof n && (n = n(r)), this.dispatch(r.socket, null, _.Etm.DISPATCH, r.evt, n))
+      r.evt === e && ("function" != typeof t || t(r)) && ("object" != typeof t || g(t, null != (i = r.args) ? i : {})) && ("function" == typeof n && (n = n(r)), this.dispatch(r.socket, null, _.Etm.DISPATCH, r.evt, n))
     })
   }
   updateSubscriptions() {

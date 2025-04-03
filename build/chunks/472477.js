@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "Q",
     aliases: ["k", "kdb"],
@@ -13,4 +13,3 @@ function t(e) {
     contains: [e.C_LINE_COMMENT_MODE, e.QUOTE_STRING_MODE, e.C_NUMBER_MODE]
   }
 }
-e.exports = t

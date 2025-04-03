@@ -53,12 +53,12 @@ function h(e) {
     user: n,
     activity: h,
     entry: g
-  }))), v = (0, i.Z)(h);
-  return v && null != m ? () => {
+  }))), y = (0, i.Z)(h);
+  return y && null != m ? () => {
     null == E || E(), a.__(s._b.TEXT, l.Ie.NORMAL, {
       applicationId: m.id
     })
-  } : !v && (0, o.Z)(h) ? b : (0, r.Z)(h) && n.id !== _.id ? () => (0, d.s)({
+  } : !y && (0, o.Z)(h) ? b : (0, r.Z)(h) && n.id !== _.id ? () => (0, d.s)({
     activity: h,
     user: n,
     index: 0

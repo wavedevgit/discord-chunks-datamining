@@ -16,7 +16,7 @@ var r = n(200651),
   f = n(43085),
   _ = n(981631),
   p = n(388032),
-  h = n(568934);
+  h = n(743462);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,9 +57,9 @@ function b(e, t) {
   }), e
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,7 +67,7 @@ function v(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -89,14 +89,14 @@ function S(e, t) {
     className: o,
     children: m,
     actions: E,
-    handleEditModal: y,
+    handleEditModal: v,
     keyboardModeEnabled: O,
     onKeyDown: S,
     draftType: T,
     size: N = 1
   } = e, A = (0, s.JA)(n), {
     onFocus: C
-  } = A, R = v(A, ["onFocus"]), {
+  } = A, R = y(A, ["onFocus"]), {
     handleFocus: P,
     handleBlur: w
   } = (0, f.b)(C), D = 0 === N, L = null != E, x = e => {
@@ -106,13 +106,14 @@ function S(e, t) {
           e.preventDefault(), c.Z.remove(i, n, T);
           return;
         case _.yXg.E:
-          null != y && (e.preventDefault(), y(e));
+          null != v && (e.preventDefault(), v(e));
           return;
         case _.yXg.BACKSPACE:
           e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, T)) : (e.preventDefault(), c.Z.remove(i, n, T));
           return;
         case _.yXg.ARROW_UP:
-          if (e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
+          let t = e.shiftKey || e.altKey || e.ctrlKey || e.metaKey;
+          if (t) return;
           e.preventDefault(), d.S.dispatchToLastSubscribed(_.CkL.FOCUS_MESSAGES, {
             atEnd: !0
           })

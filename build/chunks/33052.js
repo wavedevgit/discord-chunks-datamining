@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(987209),
   l = n(286961),
   c = n(897942),
-  u = n(481361);
+  u = n(154422);
 
 function d() {
   var e;
@@ -18,7 +18,7 @@ function d() {
     {
       claimableRewards: n
     } = (0, s.wD)(),
-    d = null === (e = (0, l.Z)()) || void 0 === e ? void 0 : e.planSelection;
+    d = null == (e = (0, l.Z)()) ? void 0 : e.planSelection;
   return null == d || null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
     className: u.promotionalGiftMessage,
     children: [(0, r.jsxs)("div", {

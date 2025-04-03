@@ -55,12 +55,12 @@ let u = (0, i.F)(() => ({
   f = (e, t) => {
     var n, r, i, a;
     let s = u();
-    return (null == e ? void 0 : e.type) !== o.Z.VARIANTS_GROUP ? 0 : Math.max(0, null !== (a = null !== (i = null === (n = s.selectionStates.get(e.storeListingId)) || void 0 === n ? void 0 : n.selectedVariantIndex) && void 0 !== i ? i : null === (r = e.variants) || void 0 === r ? void 0 : r.findIndex(e => !t.has(e.skuId))) && void 0 !== a ? a : 0)
+    return (null == e ? void 0 : e.type) !== o.Z.VARIANTS_GROUP ? 0 : Math.max(0, null != (a = null != (i = null == (n = s.selectionStates.get(e.storeListingId)) ? void 0 : n.selectedVariantIndex) ? i : null == (r = e.variants) ? void 0 : r.findIndex(e => !t.has(e.skuId))) ? a : 0)
   },
   _ = (e, t) => {
     u.setState(n => {
       var r;
-      let i = null !== (r = n.selectionStates.get(e.storeListingId)) && void 0 !== r ? r : d();
+      let i = null != (r = n.selectionStates.get(e.storeListingId)) ? r : d();
       return {
         selectionStates: new Map(n.selectionStates).set(e.storeListingId, c(s({}, i), {
           selectedVariantIndex: t

@@ -20,10 +20,10 @@ var r = n(200651),
   g = n(369566),
   E = n(518950),
   b = n(652853),
-  v = n(228168),
-  y = n(981631),
+  y = n(228168),
+  v = n(981631),
   O = n(474936),
-  I = n(3209);
+  I = n(487784);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,12 +88,12 @@ function R(e) {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([_.Z], () => ({
-    status: (0, c.Z)(U) ? y.Skl.STREAMING : _.Z.getStatus(t.id),
+    status: (0, c.Z)(U) ? v.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = void 0 !== w ? w : G, V = S === v.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
-    [I.biteSize]: S === v.y0.BITE_SIZE,
-    [I.fullSize]: S === v.y0.FULL_SIZE,
-    [I.panel]: S === v.y0.PANEL
+  })), F = void 0 !== w ? w : G, V = S === y.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
+    [I.biteSize]: S === y.y0.BITE_SIZE,
+    [I.fullSize]: S === y.y0.FULL_SIZE,
+    [I.panel]: S === y.y0.PANEL
   }, P), {
     avatarDecorationSrc: H,
     avatarSrc: W,
@@ -109,11 +109,11 @@ function R(e) {
     size: V,
     "aria-label": t.username,
     imageClassName: null != R ? I.overlay : void 0,
-    status: k ? y.Skl.UNKNOWN : F,
+    status: k ? v.Skl.UNKNOWN : F,
     statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
-    statusTooltipDelay: v.vB
+    statusTooltipDelay: y.vB
   });
   return null == R ? (0, r.jsx)("div", A(T({}, Y), {
     className: Z,

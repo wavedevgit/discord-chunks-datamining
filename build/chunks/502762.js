@@ -12,7 +12,7 @@ var r = n(200651),
   c = n(213053),
   u = n(652853),
   d = n(228168),
-  f = n(746714);
+  f = n(750883);
 let _ = Object.assign(i.forwardRef(function(e, t) {
   let {
     user: n,
@@ -26,19 +26,19 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
   } = e, {
     theme: E,
     primaryColor: b,
-    secondaryColor: v
+    secondaryColor: y
   } = (0, l.Z)({
     user: n,
     displayProfile: i,
     pendingThemeColors: p,
     isPreview: g
   }), {
-    profileThemeStyle: y,
+    profileThemeStyle: v,
     profileThemeClassName: O
   } = (0, c.Z)({
     theme: null != h ? h : E,
     primaryColor: b,
-    secondaryColor: v
+    secondaryColor: y
   }), I = {
     [f.biteSize]: o === d.y0.BITE_SIZE,
     [f.fullSize]: o === d.y0.FULL_SIZE,
@@ -46,7 +46,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
   };
   return (0, r.jsx)("div", {
     className: a()(f.outer, O, I, _),
-    style: y,
+    style: v,
     ref: t,
     children: (0, r.jsx)("div", {
       className: a()(f.inner, I),
@@ -56,7 +56,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
           profileType: o,
           theme: null != h ? h : E,
           primaryColor: b,
-          secondaryColor: v,
+          secondaryColor: y,
           children: m
         })
       })

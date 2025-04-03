@@ -31,8 +31,8 @@ function c(e, t) {
     var t, n;
     let r = null != e ? a.Z.getJoinRequestGuild(e) : null,
       i = null != e ? o.Z.getInviteKeyForGuildId(e) : null,
-      l = null != i ? null === (t = o.Z.getInvite(i)) || void 0 === t ? void 0 : t.guild : null;
-    return (null == r ? void 0 : r.hasFeature(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST)) || (null == l ? void 0 : null === (n = l.features) || void 0 === n ? void 0 : n.includes(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST))
+      l = null != i ? null == (t = o.Z.getInvite(i)) ? void 0 : t.guild : null;
+    return (null == r ? void 0 : r.hasFeature(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST)) || (null == l || null == (n = l.features) ? void 0 : n.includes(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST))
   });
   return !!(l.useExperiment({
     guildId: e,
@@ -46,8 +46,8 @@ function u(e, t) {
   var n, r;
   let i = null != e ? a.Z.getJoinRequestGuild(e) : null,
     c = null != e ? o.Z.getInviteKeyForGuildId(e) : null,
-    u = null != c ? null === (n = o.Z.getInvite(c)) || void 0 === n ? void 0 : n.guild : null;
-  return !!((null == i ? void 0 : i.hasFeature(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST)) || (null == u ? void 0 : null === (r = u.features) || void 0 === r ? void 0 : r.includes(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST)) || l.getCurrentConfig({
+    u = null != c ? null == (n = o.Z.getInvite(c)) ? void 0 : n.guild : null;
+  return !!((null == i ? void 0 : i.hasFeature(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST)) || (null == u || null == (r = u.features) ? void 0 : r.includes(s.oNc.MEMBER_VERIFICATION_ROLLOUT_TEST)) || l.getCurrentConfig({
     guildId: e,
     location: t
   }, {

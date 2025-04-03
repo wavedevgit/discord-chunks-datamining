@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /[a-zA-Z]\w*/,
     r = ["as", "break", "class", "construct", "continue", "else", "for", "foreign", "if", "import", "in", "is", "return", "static", "var", "while"],
@@ -90,7 +90,7 @@ function t(e) {
       end: /\)/,
       contains: [m, h, l, p, d]
     },
-    v = {
+    y = {
       scope: "string",
       begin: /"/,
       end: /"/,
@@ -107,11 +107,11 @@ function t(e) {
         }]
       }]
     };
-  b.contains.push(v);
-  let y = [...r, ...o, ...i],
+  b.contains.push(y);
+  let v = [...r, ...o, ...i],
     O = {
       relevance: 0,
-      match: t.concat("\\b(?!", y.join("|"), "\\b)", /[a-zA-Z_]\w*(?:[?!]|\b)/),
+      match: t.concat("\\b(?!", v.join("|"), "\\b)", /[a-zA-Z_]\w*(?:[?!]|\b)/),
       className: "variable"
     },
     I = {
@@ -137,7 +137,6 @@ function t(e) {
       "variable.language": o,
       literal: i
     },
-    contains: [I, m, v, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, p, _, O]
+    contains: [I, m, y, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, p, _, O]
   }
 }
-e.exports = t

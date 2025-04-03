@@ -12,7 +12,7 @@ var i = n(481060),
   l = n(486324),
   c = n(228168),
   u = n(388032),
-  d = n(333339);
+  d = n(179168);
 
 function f(e) {
   let {
@@ -25,8 +25,8 @@ function f(e) {
     isTryItOutFlow: m,
     disabledInputs: g,
     onUpsellClick: E
-  } = e, b = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = b ? i.vdY : i.SrA, y = (0, o.M)(b), O = () => {
-    if (!b && !y) {
+  } = e, b = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, y = b ? i.vdY : i.SrA, v = (0, o.M)(b), O = () => {
+    if (!b && !v) {
       null == E || E();
       return
     }(0, s.$r)(l.pC.BANNER, f, m)
@@ -42,13 +42,13 @@ function f(e) {
     children: !g && (0, r.jsxs)(i.P3F, {
       onClick: O,
       className: d.clickable,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(y, {
         size: "xs",
         color: "white"
       }), (0, r.jsx)(i.X6q, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: b || y ? u.NW.string(u.t.N0bC3N) : u.NW.string(u.t.O1sT5u)
+        children: b || v ? u.NW.string(u.t.N0bC3N) : u.NW.string(u.t.O1sT5u)
       })]
     })
   })

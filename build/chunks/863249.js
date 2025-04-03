@@ -31,7 +31,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,7 +56,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -180,14 +180,11 @@ let T = {
   },
   submitVerificationForm: async function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 200;
-    if (u.Z.isFullServerPreview(e)) {
-      (0, c.aq)(e, {
-        memberOptions: {
-          isPending: !1
-        }
-      });
-      return
-    }
+    if (u.Z.isFullServerPreview(e)) return void(0, c.aq)(e, {
+      memberOptions: {
+        isPending: !1
+      }
+    });
     try {
       let {
         body: o
@@ -214,17 +211,17 @@ let T = {
             title: E.NW.string(E.t.MmIrpa),
             body: E.NW.string(E.t.yjpDQ0),
             confirmText: E.NW.string(E.t.XNGT1N)
-          }), O(v({}, t), {
+          }), O(y({}, t), {
             message: E.NW.string(E.t.yjpDQ0)
           });
         case 403:
-          throw O(v({}, t), {
+          throw O(y({}, t), {
             message: E.NW.string(E.t["8T1rxM"])
           });
         default:
-          var l;
-          throw O(v({}, t), {
-            message: null !== (l = new s.Hx(t).getAnyErrorMessage()) && void 0 !== l ? l : E.NW.string(E.t.R0RpRU)
+          var l, d;
+          throw O(y({}, t), {
+            message: null != (d = (l = new s.Hx(t), l.getAnyErrorMessage())) ? d : E.NW.string(E.t.R0RpRU)
           })
       }
     }

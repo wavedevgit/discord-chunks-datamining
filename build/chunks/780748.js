@@ -29,32 +29,20 @@ function c(e) {
       var r;
       switch (e.which) {
         case l.yXg.ARROW_UP:
-          if (g(-1)) {
-            e.preventDefault();
-            return
-          }
+          if (g(-1)) return void e.preventDefault();
           break;
         case l.yXg.ARROW_DOWN:
-          if (g(1)) {
-            e.preventDefault();
-            return
-          }
+          if (g(1)) return void e.preventDefault();
           break;
         case l.yXg.P:
           if ((0, s.E)(e, {
               ctrl: !0
-            }) && g(-1)) {
-            e.preventDefault();
-            return
-          }
+            }) && g(-1)) return void e.preventDefault();
           break;
         case l.yXg.N:
           if ((0, s.E)(e, {
               ctrl: !0
-            }) && g(1)) {
-            e.preventDefault();
-            return
-          }
+            }) && g(1)) return void e.preventDefault();
           break;
         case l.yXg.ESCAPE:
           null == m || m();
@@ -75,7 +63,7 @@ function c(e) {
             return
           }
       }
-      if ((null === (r = t.onKeyDown) || void 0 === r ? void 0 : r.call(t, e)) === !0) {
+      if ((null == (r = t.onKeyDown) ? void 0 : r.call(t, e)) === !0) {
         e.preventDefault(), e.stopPropagation();
         return
       }

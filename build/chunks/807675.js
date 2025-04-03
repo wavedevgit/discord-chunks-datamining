@@ -27,10 +27,10 @@ function d(e) {
     _ = o.vB(null != f.permissions && "" !== f.permissions ? f.permissions : "0")
   } catch (e) {}
   let p = f.channel_id,
-    h = null !== (c = null !== (i = null !== (n = f.guild_id) && void 0 !== n ? n : null === (t = a.Z.getChannel(p)) || void 0 === t ? void 0 : t.guild_id) && void 0 !== i ? i : s.Z.getGuildId()) && void 0 !== c ? c : void 0;
+    h = null != (c = null != (i = null != (n = f.guild_id) ? n : null == (t = a.Z.getChannel(p)) ? void 0 : t.guild_id) ? i : s.Z.getGuildId()) ? c : void 0;
   return {
-    clientId: null !== (u = f.client_id) && void 0 !== u ? u : "",
-    scopes: (null !== (d = f.scope) && void 0 !== d ? d : "").split(" ").filter(e => e.length > 0),
+    clientId: null != (u = f.client_id) ? u : "",
+    scopes: (null != (d = f.scope) ? d : "").split(" ").filter(e => e.length > 0),
     responseType: f.response_type,
     redirectUri: f.redirect_uri,
     codeChallenge: f.code_challenge,

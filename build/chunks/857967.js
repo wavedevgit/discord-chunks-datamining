@@ -71,10 +71,10 @@ var i = n(698091),
       var e = this._string;
       return null == e ? this._string = this._toString(this._value) : e
     }, n.setValue = function(t) {
-      if (i.is.num(t)) {
+      if (i.is.num(t))
         if (!e.prototype.setValue.call(this, t)) return !1;
-        this._string = null
-      } else this._string = t, this._value = 1;
+        else this._string = null;
+      else this._string = t, this._value = 1;
       return !0
     }, n.reset = function(t) {
       t && (this._toString = i.createInterpolator({
@@ -85,7 +85,7 @@ var i = n(698091),
   b = {
     current: null
   },
-  v = function(e) {
+  y = function(e) {
     function t(t) {
       var n;
       return void 0 === t && (t = null), (n = e.call(this) || this).source = void 0, n.setValue(t), n
@@ -122,7 +122,7 @@ var i = n(698091),
       })
     }, t
   }(m),
-  y = function(e) {
+  v = function(e) {
     function t(t, n) {
       var r;
       return (r = e.call(this, null) || this).source = void 0, e.prototype.setValue.call(a(r), r._makeAnimated(t, n)), r
@@ -145,7 +145,7 @@ var i = n(698091),
         return (i.isAnimatedString(e) ? E : g).create(e, t[n])
       }) : []
     }, t
-  }(v),
+  }(y),
   O = function(e) {
     function t(t) {
       var n;
@@ -170,7 +170,7 @@ var i = n(698091),
         t.dirty = !1, t.update()
       }))
     }, t
-  }(v),
+  }(y),
   I = function(e, t) {
     return c.forwardRef(function(n, r) {
       var o = c.useRef(null),
@@ -178,7 +178,10 @@ var i = n(698091),
         l = i.useForceUpdate(),
         d = new O(function() {
           var e = o.current;
-          (!a || e) && !1 === (!!e && t.applyAnimatedValues(e, d.getValue(!0))) && l()
+          if (!a || e) {
+            var n = !!e && t.applyAnimatedValues(e, d.getValue(!0));
+            !1 === n && l()
+          }
         }),
         f = new Set;
       return d.setValue(n, {
@@ -213,7 +216,7 @@ var T = Symbol.for("AnimatedComponent"),
       } : r,
       a = n.createAnimatedStyle,
       s = void 0 === a ? function(e) {
-        return new v(e)
+        return new y(e)
       } : a,
       l = n.getComponentProps,
       c = {
@@ -236,4 +239,4 @@ var T = Symbol.for("AnimatedComponent"),
   A = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-t.Animated = m, t.AnimatedArray = y, t.AnimatedObject = v, t.AnimatedProps = O, t.AnimatedString = E, t.AnimatedValue = g, t.createHost = N, t.getAnimated = _, t.getPayload = h, t.isAnimated = f, t.setAnimated = p
+t.Animated = m, t.AnimatedArray = v, t.AnimatedObject = y, t.AnimatedProps = O, t.AnimatedString = E, t.AnimatedValue = g, t.createHost = N, t.getAnimated = _, t.getPayload = h, t.isAnimated = f, t.setAnimated = p

@@ -17,7 +17,7 @@ let a = "https://media.discordapp.net",
   u = new Set(["jpg", "jpeg", "png"]),
   d = e => {
     var t, n, r, i;
-    return null === (i = o.Z.toURLSafe(e)) || void 0 === i ? void 0 : null === (r = i.pathname) || void 0 === r ? void 0 : null === (n = r.split(".")) || void 0 === n ? void 0 : null === (t = n.pop()) || void 0 === t ? void 0 : t.toLowerCase()
+    return null == (i = o.Z.toURLSafe(e)) || null == (r = i.pathname) || null == (n = r.split(".")) || null == (t = n.pop()) ? void 0 : t.toLowerCase()
   };
 
 function f(e) {
@@ -49,5 +49,5 @@ function m(e) {
 
 function g(e) {
   let t = o.Z.toURLSafe(e);
-  return null == t || t.host === l ? e : (t.origin === a ? (t.host = l, t.searchParams.delete("size"), t.searchParams.delete("width"), t.searchParams.delete("height"), t.searchParams.delete("quality")) : (t.searchParams.delete("width"), t.searchParams.delete("height"), t.searchParams.set("quality", "lossless")), t.searchParams.delete("format"), t.toString())
+  return null == t || t.host === l ? e : (t.origin === a && (t.host = l, t.searchParams.delete("size")), t.searchParams.delete("width"), t.searchParams.delete("height"), t.searchParams.delete("quality"), t.searchParams.delete("format"), t.toString())
 }

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "string",
       begin: '(~)?"',
@@ -33,4 +33,3 @@ function t(e) {
     }, t, n]
   }
 }
-e.exports = t

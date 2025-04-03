@@ -16,15 +16,14 @@ function c(e) {
   let {
     isContextless: n
   } = e;
-  return (null === (t = platform) || void 0 === t ? void 0 : t.name) !== "Firefox" && (!!n || a.ZP.getCurrentConfig({
+  return (null == (t = platform) ? void 0 : t.name) !== "Firefox" && (!!n || a.ZP.getCurrentConfig({
     location: "shouldOpenActivityInPopoutWindow"
   }).enabled || s.Z.getCurrentConfig({
     location: "shouldOpenActivityInPopoutWindow"
   }).enabled)
 }
 async function u(e, t) {
-  let n;
-  let a = i.Z.getWindowOpen(l.KJ3.ACTIVITY_POPOUT);
+  let n, a = i.Z.getWindowOpen(l.KJ3.ACTIVITY_POPOUT);
   e && !a && r.Z.wait(() => {
     r.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"

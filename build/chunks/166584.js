@@ -20,9 +20,9 @@ var r = n(200651),
   g = n(785717),
   E = n(256226),
   b = n(314172),
-  v = n(981631),
-  y = n(388032),
-  O = n(58278);
+  y = n(981631),
+  v = n(388032),
+  O = n(701991);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -133,12 +133,12 @@ function L(e) {
     Z = (0, a.ZP)({
       id: V,
       isEnabled: !0,
-      scrollToStart: v.Cyb,
-      scrollToEnd: v.Cyb,
+      scrollToStart: y.Cyb,
+      scrollToEnd: y.Cyb,
       wrap: !0
     }),
     H = d.length,
-    W = 0 === H ? y.NW.string(y.t["vR7M+/"]) : y.NW.formatToPlainString(y.t.PCs0oq, {
+    W = 0 === H ? v.NW.string(v.t["vR7M+/"]) : v.NW.formatToPlainString(v.t.PCs0oq, {
       numRoles: H
     }),
     Y = (j ? d : L).map((e, i) => {
@@ -152,7 +152,7 @@ function L(e) {
         disableBorderColor: !0,
         ref: t => C(e.id, t),
         onRemove: () => I(e),
-        canRemove: _ ? m.r6(l, n.id, f, e) : (null === (o = e.tags) || void 0 === o ? void 0 : o.guild_connections) === null && t.id === n.id
+        canRemove: _ ? m.r6(l, n.id, f, e) : (null == (o = e.tags) ? void 0 : o.guild_connections) === null && t.id === n.id
       }, e.id)
     }),
     {
@@ -181,7 +181,7 @@ function L(e) {
           ref: t
         }, n), {
           children: [Y, L.length < d.length ? j ? (0, r.jsx)(c.DY3, {
-            text: y.NW.string(y.t.XnXtCg),
+            text: v.NW.string(v.t.XnXtCg),
             children: (0, r.jsx)(c.P3F, {
               onClick: q,
               className: O.collapseButton,
@@ -192,7 +192,7 @@ function L(e) {
               })
             })
           }) : (0, r.jsx)(c.DY3, {
-            text: y.NW.string(y.t.DY6n4u),
+            text: v.NW.string(v.t.DY6n4u),
             children: (0, r.jsx)(c.P3F, {
               innerRef: G,
               onClick: z,
@@ -225,22 +225,22 @@ function x(e) {
     trackUserProfileAction: a
   } = (0, g.KZ)(), s = (0, l.e7)([f.ZP], () => f.ZP.getMember(o.id, t.id)), c = (0, l.e7)([_.Z], () => _.Z.getRoles(o.id)), h = null == s ? void 0 : s.roles, E = i.useMemo(() => null == h || 0 === h.length ? [] : Object.values(c).filter(e => h.includes(e.id)).sort((e, t) => {
     var n, r;
-    let i = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
-      o = (null === (r = t.tags) || void 0 === r ? void 0 : r.guild_connections) !== null;
+    let i = (null == (n = e.tags) ? void 0 : n.guild_connections) !== null,
+      o = (null == (r = t.tags) ? void 0 : r.guild_connections) !== null;
     return i && !o ? 1 : !i && o ? -1 : 0
-  }), [c, h]), b = m.e9(o, n.id), [y] = (0, l.Wu)([p.Z], () => [p.Z.can(v.Plq.MANAGE_ROLES, o), null != o ? p.Z.getGuildVersion(o.id) : null]), O = i.useCallback(e => {
+  }), [c, h]), b = m.e9(o, n.id), [v] = (0, l.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, o), null != o ? p.Z.getGuildVersion(o.id) : null]), O = i.useCallback(e => {
     var n, r;
     a({
       action: "REMOVE_ROLE"
     });
-    let i = null !== (r = null == h ? void 0 : h.filter(t => t !== e.id)) && void 0 !== r ? r : [];
-    (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) === null ? u.Z.unassignGuildRoleConnection(o.id, e.id) : d.Z.updateMemberRoles(o.id, t.id, i, [], [e.id])
+    let i = null != (r = null == h ? void 0 : h.filter(t => t !== e.id)) ? r : [];
+    (null == (n = e.tags) ? void 0 : n.guild_connections) === null ? u.Z.unassignGuildRoleConnection(o.id, e.id) : d.Z.updateMemberRoles(o.id, t.id, i, [], [e.id])
   }, [h, o.id, t.id, a]), I = i.useCallback(e => {
     a({
       action: "ADD_ROLE"
     });
     let n = null != h ? h : []; - 1 === n.indexOf(e) && (n = n.concat([e])), d.Z.updateMemberRoles(o.id, t.id, n, [e], [])
-  }, [h, o.id, t.id, a]), S = y && null != s;
+  }, [h, o.id, t.id, a]), S = v && null != s;
   return 0 !== E.length || S ? (0, r.jsx)(L, {
     user: t,
     currentUser: n,
@@ -248,7 +248,7 @@ function x(e) {
     guildMember: s,
     roles: E,
     highestRole: b,
-    canManageRoles: y,
+    canManageRoles: v,
     onAddRole: I,
     onRemoveRole: O
   }) : null

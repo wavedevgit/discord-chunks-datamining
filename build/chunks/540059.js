@@ -162,7 +162,7 @@ function b(e) {
     location: e
   }), n = (0, r.e7)([l.default], () => {
     var e, t;
-    return null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : null === (e = t.isStaff) || void 0 === e ? void 0 : e.call(t)
+    return null == (t = l.default.getCurrentUser()) || null == (e = t.isStaff) ? void 0 : e.call(t)
   });
   return !!(t || n)
 }

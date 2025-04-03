@@ -111,7 +111,7 @@ class h extends i.Z {
       name: e.name,
       icon: e.icon,
       description: e.description,
-      features: new Set(null !== (t = e.features) && void 0 !== t ? t : new Set)
+      features: new Set(null != (t = e.features) ? t : new Set)
     }
   }
   static createFromGuildRecord(e) {

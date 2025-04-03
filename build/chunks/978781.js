@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(207164),
   E = n(238302),
   b = n(514361),
-  v = n(572397),
-  y = n(705262),
+  y = n(572397),
+  v = n(705262),
   O = n(436774),
   I = n(768762),
   S = n(197115),
@@ -32,7 +32,7 @@ var r = n(200651),
   C = n(921944),
   R = n(474936),
   P = n(388032),
-  w = n(477489);
+  w = n(16534);
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,10 +62,10 @@ var x = function(e) {
 function M(e) {
   let {
     isCoachmark: t
-  } = e, n = (0, v.q)();
-  return i.useEffect(() => ((0, E.Kq)(), n(A.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(y.ZP, {
-    type: y.yH.EDITOR,
-    children: (0, r.jsx)(y.ZP.BasicAndGradient, {
+  } = e, n = (0, y.q)();
+  return i.useEffect(() => ((0, E.Kq)(), n(A.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(v.ZP, {
+    type: v.yH.EDITOR,
+    children: (0, r.jsx)(v.ZP.BasicAndGradient, {
       isEditor: !0,
       isCoachmark: t
     })
@@ -96,36 +96,27 @@ function j(e) {
     isCoachmark: !0
   }, () => P.NW.string(P.t.cpT0Cg)).with({
     isPreview: !0
-  }, () => P.NW.string(P.t["dqH+qq"])).otherwise(() => P.NW.string(P.t.Olc2Ky)), h = i.useCallback(() => {
-    if (1 === t) {
-      (0, c.ZDy)(async () => {
-        let {
-          default: e
-        } = await n.e("69052").then(n.bind(n, 184250));
-        return t => (0, r.jsx)(e, L({
-          analyticsSource: _.Z.APP_ICON_EDITOR,
-          analyticsLocation: {
-            section: A.jXE.SETTINGS_APP_ICONS
-          }
-        }, t))
-      });
-      return
-    }
-    if (0 === t) {
-      (0, c.ZDy)(async () => {
-        let {
-          default: e
-        } = await n.e("68192").then(n.bind(n, 742234));
-        return t => (0, r.jsx)(e, L({
-          analyticsSource: _.Z.CLIENT_THEMES_EDITOR,
-          analyticsLocation: {
-            section: A.jXE.SETTINGS_CLIENT_THEMES
-          }
-        }, t))
-      });
-      return
-    }
-  }, [t]);
+  }, () => P.NW.string(P.t["dqH+qq"])).otherwise(() => P.NW.string(P.t.Olc2Ky)), h = i.useCallback(() => 1 === t ? void(0, c.ZDy)(async () => {
+    let {
+      default: e
+    } = await n.e("69052").then(n.bind(n, 184250));
+    return t => (0, r.jsx)(e, L({
+      analyticsSource: _.Z.APP_ICON_EDITOR,
+      analyticsLocation: {
+        section: A.jXE.SETTINGS_APP_ICONS
+      }
+    }, t))
+  }) : 0 === t ? void(0, c.ZDy)(async () => {
+    let {
+      default: e
+    } = await n.e("68192").then(n.bind(n, 742234));
+    return t => (0, r.jsx)(e, L({
+      analyticsSource: _.Z.CLIENT_THEMES_EDITOR,
+      analyticsLocation: {
+        section: A.jXE.SETTINGS_CLIENT_THEMES
+      }
+    }, t))
+  }) : void 0, [t]);
   return (0, r.jsxs)("div", {
     className: w.footerContainer,
     children: [o && (0, r.jsxs)("div", {
@@ -176,13 +167,13 @@ function U(e) {
   }, {
     name: P.NW.string(P.t.RPh2oq),
     value: 1
-  }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, y = i.useMemo(() => T.Z.theme, []), O = (0, v.J)(), I = i.useCallback(() => {
+  }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, v = i.useMemo(() => T.Z.theme, []), O = (0, y.J)(), I = i.useCallback(() => {
     _ && O(), m && (0, p.O7)()
   }, [_, m, O]), S = (0, f.Z)(null, g ? I : A.dG4), R = i.useCallback(() => {
     g && (0, u.ZI)({
-      theme: y
+      theme: v
     }), (0, p.G8)(), (0, E.Mo)(), I(), null == n || n(C.L.DISMISS)
-  }, [I, n, g, y]);
+  }, [I, n, g, v]);
   return (0, r.jsx)(N.Z, {
     className: w.draggableContainer,
     children: (0, r.jsxs)("div", {

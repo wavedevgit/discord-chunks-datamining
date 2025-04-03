@@ -44,7 +44,7 @@ class h extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      c = null !== (t = e.preset) && void 0 !== t ? t : a.tI.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null === (n = e.soundshareEnabled) || void 0 === n || n
+      c = null != (t = e.preset) ? t : a.tI.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
     }
   }
   getState() {

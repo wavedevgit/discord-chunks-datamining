@@ -3,8 +3,7 @@ var r = n(620014),
   i = n(733892),
   o = 1,
   a = 2;
-
-function s(e, t, n, s) {
+e.exports = function(e, t, n, s) {
   var l = n.length,
     c = l,
     u = !s;
@@ -27,4 +26,3 @@ function s(e, t, n, s) {
   }
   return !0
 }
-e.exports = s

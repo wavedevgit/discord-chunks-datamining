@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(484459),
   f = n(695346),
   _ = n(981631),
-  p = n(514130);
+  p = n(318413);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ function E(e, t) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,21 +65,21 @@ function b(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = function(e) {
+let v = function(e) {
   var {
     style: t,
     src: n,
     backgroundSrc: h,
     userId: g,
-    pulseSpeakingIndicator: v = !1,
-    speaking: y = !1
+    pulseSpeakingIndicator: y = !1,
+    speaking: v = !1
   } = e, O = b(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
   let I = null != h ? h : n,
     S = (0, s.ZP)(I, o.Z.unsafe_rawColors.PRIMARY_800.css),
@@ -101,11 +101,11 @@ let y = function(e) {
     R = E(m({}, t), {
       backgroundColor: S
     });
-  return null != A && y && T && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
+  return null != A && v && T && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: R,
     className: p.background,
-    children: v ? (0, r.jsx)(c.Z, {
-      shouldAnimate: y,
+    children: y ? (0, r.jsx)(c.Z, {
+      shouldAnimate: v,
       children: C
     }) : C
   })

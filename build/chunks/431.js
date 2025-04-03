@@ -62,11 +62,11 @@ let m = 1728e5,
   },
   b = E;
 
-function v() {
+function y() {
   b.isFetching = !0
 }
 
-function y(e) {
+function v(e) {
   let {
     userTrialOffer: t
   } = e;
@@ -118,7 +118,7 @@ function R() {
 
 function P() {
   var e;
-  let t = null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.id;
+  let t = null == (e = l.default.getCurrentUser()) ? void 0 : e.id;
   if (null == t) return !1;
   let n = a.Z.getAllRelevantReferralTrialOffers().filter(e => e.user_id === t);
   if (n.length > 0) {
@@ -148,13 +148,13 @@ class w extends(r = i.ZP.PersistedStore) {
   shouldFetchOffer() {
     var e;
     let t = b.userOffersLastFetchedAtDate,
-      n = null !== (e = b.isFetching) && void 0 !== e && e;
+      n = null != (e = b.isFetching) && e;
     return null == t ? !n : !n && Date.now() - m > t
   }
   shouldFetchReferralOffer(e) {
     var t;
     let n = b.userOffersLastFetchedAtDate,
-      r = null !== (t = b.isFetching) && void 0 !== t && t;
+      r = null != (t = b.isFetching) && t;
     if (null == n) return !r;
     let i = Date.now() - g > n,
       o = (null != e ? e : 0) > n;
@@ -176,7 +176,7 @@ class w extends(r = i.ZP.PersistedStore) {
   getUnacknowledgedDiscountOffers() {
     var e;
     let t = l.default.getCurrentUser();
-    return (0, c.I5)(t) ? [] : Object.values(null !== (e = b.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !d.ee.includes(e.discount_id))
+    return (0, c.I5)(t) ? [] : Object.values(null != (e = b.userDiscountOffers) ? e : {}).filter(e => null == e.expires_at && !d.ee.includes(e.discount_id))
   }
   getUnacknowledgedOffers(e) {
     let t = l.default.getCurrentUser();
@@ -190,7 +190,7 @@ class w extends(r = i.ZP.PersistedStore) {
   }
   getReferrer(e) {
     var t;
-    return null == e ? null : null === (t = b.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
+    return null == e ? null : null == (t = b.userTrialOffers[e]) ? void 0 : t.referrer
   }
   getState() {
     return b
@@ -214,8 +214,8 @@ f(w, "displayName", "UserOfferStore"), f(w, "persistKey", "UserOfferStore"), f(w
   }) : e
 }]);
 let D = new w(o.Z, {
-  BILLING_USER_OFFER_FETCH_START: v,
-  BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: y,
+  BILLING_USER_OFFER_FETCH_START: y,
+  BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: v,
   BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: S,
   BILLING_USER_OFFER_FETCH_SUCCESS: O,
   BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: T,

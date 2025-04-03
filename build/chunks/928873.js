@@ -79,8 +79,7 @@ function p({
   lightness: n,
   alpha: r
 }) {
-  let i;
-  let o = (1 - Math.abs(2 * (n /= 255) - 1)) * (t /= 255),
+  let i, o = (1 - Math.abs(2 * (n /= 255) - 1)) * (t /= 255),
     a = o * (1 - Math.abs(e / 60 % 2 - 1)),
     s = n - o / 2,
     l = (i = e < 60 ? [o, a, 0] : e < 120 ? [a, o, 0] : e < 180 ? [0, o, a] : e < 240 ? [0, a, o] : e < 300 ? [a, 0, o] : [o, 0, a]).map(e => Math.round((e + s) * 255));
@@ -196,7 +195,7 @@ function b(e, t) {
   return new E(r, i, (1 - n) * t.blue + n * e.blue, e.alpha + t.alpha * (1 - e.alpha))
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return "var(--focus-primary)";
   let {
     saturation: n
@@ -204,7 +203,7 @@ function v(e, t) {
   return n <= .4 ? "var(--focus-primary)" : "u" > typeof t ? r < (t.brightnessTreshold || .2) ? "var(--focus-light, rgba(255,255,255,0.7))" : "var(--focus-dark, rgba(0, 0, 0, 0.85))" : "rgba(255,255,255,0.7)"
 }
 
-function y(e) {
+function v(e) {
   let t = [];
   for (let n of e.styles.slice(1)) {
     let e = E.parseString(n.backgroundColor);
@@ -301,11 +300,11 @@ class N {
         ...this.makePositionFromDOMRect(this.boundingBox),
         zIndex: this.zIndex
       }), null != this.targetElement && null != this.targetAncestry) {
-      let n = y(this.targetAncestry);
+      let n = v(this.targetAncestry);
       t = {
         ...this.makePositionFromDOMRect(this.targetElement.getBoundingClientRect()),
         zIndex: null != (e = this.zIndex) ? e : this.getNextZIndexForAncestry(this.targetAncestry),
-        [O]: v(n, this.themeOptions),
+        [O]: y(n, this.themeOptions),
         [I]: this.getBorderRadius(this.targetAncestry)
       }
     }
@@ -402,8 +401,8 @@ function G(e) {
     E = o.Children.only(_),
     {
       onBlur: b,
-      onFocus: v,
-      ...y
+      onFocus: y,
+      ...v
     } = E.props,
     O = o.useMemo(() => ({
       className: l,
@@ -445,11 +444,11 @@ function G(e) {
     }, [b, g]),
     S = o.useCallback(e => {
       let n = null == s ? void 0 : s.current;
-      e.currentTarget === e.target ? (p.current = !0, g.showElement(null != n ? n : e.currentTarget, O)) : (m(!0), t && g.showElement(null != n ? n : e.currentTarget, O)), null == v || v(e)
-    }, [s, t, v, g, O]);
+      e.currentTarget === e.target ? (p.current = !0, g.showElement(null != n ? n : e.currentTarget, O)) : (m(!0), t && g.showElement(null != n ? n : e.currentTarget, O)), null == y || y(e)
+    }, [s, t, y, g, O]);
   return n && null == a && null == r ? o.cloneElement(E, {
-    ...y,
-    className: d(y.className, p.current ? c : void 0, h ? u : void 0),
+    ...v,
+    className: d(v.className, p.current ? c : void 0, h ? u : void 0),
     onBlur: I,
     onFocus: S
   }) : E

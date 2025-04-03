@@ -5,7 +5,7 @@ n.d(t, {
   FK: () => eD,
   Ly: () => ek,
   MH: () => eB,
-  SZ: () => ev,
+  SZ: () => ey,
   U8: () => eO,
   VU: () => eG,
   Vx: () => eM,
@@ -19,7 +19,7 @@ n.d(t, {
   ne: () => eC,
   oK: () => eF,
   r7: () => eA,
-  tH: () => ey,
+  tH: () => ev,
   uv: () => eS,
   w2: () => eT,
   yN: () => eI
@@ -27,7 +27,7 @@ n.d(t, {
 var r = n(562858),
   i = n(702319),
   o = n(981631),
-  a = n(884479),
+  a = n(622802),
   s = n(388032),
   l = n(359527),
   c = n(277259),
@@ -41,8 +41,8 @@ var r = n(562858),
   g = n(406543),
   E = n(31316),
   b = n(187695),
-  v = n(618492),
-  y = n(306340),
+  y = n(618492),
+  v = n(306340),
   O = n(940415),
   I = n(550376),
   S = n(99321),
@@ -95,8 +95,8 @@ var r = n(562858),
   eg = n(255785),
   eE = n(429413);
 let eb = "1344176506041139230",
-  ev = [200, 500, 1e3],
-  ey = 5,
+  ey = [200, 500, 1e3],
+  ev = 5,
   eO = "https://discord.com/settings/clicker-game";
 var eI = function(e) {
     return e[e.CLICKER_BUTTON = 0] = "CLICKER_BUTTON", e[e.RAIN = 1] = "RAIN", e[e.SUN = 2] = "SUN", e[e.STATS = 3] = "STATS", e[e.RATE = 4] = "RATE", e[e.ACHIEVEMENTS = 5] = "ACHIEVEMENTS", e[e.SNEK = 6] = "SNEK", e[e.WEEDS = 7] = "WEEDS", e[e.PET_WUMPUS = 8] = "PET_WUMPUS", e[e.BOUNCING_LOGO = 9] = "BOUNCING_LOGO", e[e.NAGBAR = 10] = "NAGBAR", e[e.ANT = 11] = "ANT", e[e.SNAIL = 12] = "SNAIL", e[e.BEE = 13] = "BEE", e[e.WORM = 14] = "WORM", e[e.BUTTERFLY = 15] = "BUTTERFLY", e[e.TULIP = 16] = "TULIP", e[e.SUNFLOWER = 17] = "SUNFLOWER", e[e.ORCHID = 18] = "ORCHID", e[e.LOOTBOXES = 19] = "LOOTBOXES", e[e.MESSAGES = 20] = "MESSAGES", e[e.AT_SOMEONE = 21] = "AT_SOMEONE", e[e.CURSORS = 22] = "CURSORS", e[e.POURING_WATER = 23] = "POURING_WATER", e[e.WATERING_CAN = 24] = "WATERING_CAN", e[e.LEVELING = 25] = "LEVELING", e[e.MUSIC = 26] = "MUSIC", e[e.LAWNMOWER = 27] = "LAWNMOWER", e[e.COMPLETE_GAME = 28] = "COMPLETE_GAME", e
@@ -392,7 +392,7 @@ let eA = () => ({
           numAlreadyPurchased: t,
           lifetimePoints: n
         } = e;
-        return t < ev.length - 1 && n > 2e4
+        return t < ey.length - 1 && n > 2e4
       },
       purchaseIconSrc: U
     },
@@ -439,7 +439,7 @@ let eA = () => ({
         let {
           numAlreadyPurchased: t
         } = e;
-        return t < ey
+        return t < ev
       },
       purchaseIconSrc: e_
     },
@@ -716,7 +716,7 @@ let eL = {
       })
     },
     11: {
-      icon: v,
+      icon: y,
       name: s.NW.string(a.Z.gujDDQ),
       description: s.NW.formatToPlainString(a.Z["3RaLUF"], {
         level: eL[11]
@@ -744,7 +744,7 @@ let eL = {
       })
     },
     16: {
-      icon: y,
+      icon: v,
       name: s.NW.string(a.Z["6cJ+7+"]),
       description: s.NW.string(a.Z.SZCKXl)
     },

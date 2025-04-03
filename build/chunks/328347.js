@@ -20,7 +20,7 @@ let l = [],
   u = null,
   d = e => {
     var t, n;
-    c = null !== (t = e.analyticsLocations) && void 0 !== t ? t : l, u = null !== (n = e.analyticsSource) && void 0 !== n ? n : null, r = e.initialProductSkuId
+    c = null != (t = e.analyticsLocations) ? t : l, u = null != (n = e.analyticsSource) ? n : null, r = e.initialProductSkuId
   },
   f = e => {
     c = l, u = null

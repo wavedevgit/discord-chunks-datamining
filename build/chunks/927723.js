@@ -16,7 +16,7 @@ function l(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "1e9ccc_1",
-    i = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : a.lds;
+    i = null != (t = null == e ? void 0 : e.id) ? t : a.lds;
   return o.Z.useExperiment({
     guildId: i,
     location: r
@@ -38,7 +38,7 @@ function u(e, t, n) {
 function d(e, t) {
   var n;
   let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    i = null !== (n = null == e ? void 0 : e.id) && void 0 !== n ? n : a.lds;
+    i = null != (n = null == e ? void 0 : e.id) ? n : a.lds;
   return u(o.Z.getCurrentConfig({
     guildId: i,
     location: "1e9ccc_2"

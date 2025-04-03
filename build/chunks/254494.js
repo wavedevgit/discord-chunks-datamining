@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(218867),
   l = n(28546),
   c = n(981631),
-  u = n(326548);
+  u = n(279900);
 let d = e => {
     let {
       activeIndex: t,
@@ -21,7 +21,7 @@ let d = e => {
       null != t && t !== a.current && (o.current !== c.xAR && window.cancelAnimationFrame(o.current), o.current = window.requestAnimationFrame(() => {
         var e;
         if (null == n.current) return;
-        let i = t > (null !== (e = a.current) && void 0 !== e ? e : -1),
+        let i = t > (null != (e = a.current) ? e : -1),
           s = null != r ? r(t, i) : 0;
         n.current.scrollRowIntoView(t, {
           animate: !0,
@@ -46,8 +46,8 @@ let d = e => {
       categoryHeight: g,
       onScroll: E,
       renderCategoryListItem: b,
-      rowCountBySection: v,
-      renderSection: y
+      rowCountBySection: y,
+      renderSection: v
     } = e, O = c.useStore(e => e.activeCategoryIndex);
     d({
       activeIndex: O,
@@ -61,7 +61,7 @@ let d = e => {
         if (c.setActiveCategoryIndex(e), "" !== t)(0, l.ql)("");
         else {
           var r;
-          null === (r = n.current) || void 0 === r || r.scrollToSectionTop(e)
+          null == (r = n.current) || r.scrollToSectionTop(e)
         }
       }, [n, c]),
       S = i.useCallback(e => b(o[e], e, () => I(e), O === e), [O, o, I, b]),
@@ -76,8 +76,8 @@ let d = e => {
         rowCount: h,
         rowHeight: T,
         hideScrollbar: !0,
-        rowCountBySection: v,
-        renderSection: y
+        rowCountBySection: y,
+        renderSection: v
       }), null == f ? void 0 : f(I)]
     })
   }

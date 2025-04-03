@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "Shell Session",
     aliases: ["console", "shellsession"],
@@ -13,4 +13,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

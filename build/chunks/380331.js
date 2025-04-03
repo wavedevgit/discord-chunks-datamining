@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(593618),
   E = n(451478),
   b = n(626135),
-  v = n(624138),
-  y = n(543241),
+  y = n(624138),
+  v = n(543241),
   O = n(883661),
   I = n(880949),
   S = n(784222),
@@ -29,7 +29,7 @@ var r = n(200651),
   N = n(981631),
   A = n(957825),
   C = n(388032),
-  R = n(998413);
+  R = n(171166);
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,14 +69,14 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
-  M = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-  k = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
-  j = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
-  U = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
-  G = (0, v.Mg)(R.__invalid_unicodeCategoryShortcutHeight),
-  B = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  F = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+let x = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+  M = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
+  k = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  j = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+  U = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
+  G = (0, y.Mg)(R.__invalid_unicodeCategoryShortcutHeight),
+  B = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+  F = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
   V = k + M + 2 * U,
   Z = x + M,
   H = Z + (B + 2 * F),
@@ -93,8 +93,8 @@ function K(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, v = (0, r.jsxs)(f.P3F, L(w({}, p), {
-    "aria-label": (0, y.Nf)(l, E),
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, L(w({}, p), {
+    "aria-label": (0, v.Nf)(l, E),
     className: a()({
       [R.categoryItemGuildCategory]: null != E,
       [R.categoryItemDefaultCategory]: null == E,
@@ -126,12 +126,12 @@ function K(e) {
       guild: E,
       includeActivity: !1,
       children: (0, r.jsx)("div", {
-        children: v
+        children: y
       })
     }), C ? (0, r.jsx)("hr", {
       className: R.guildCategorySeparator
     }, "separator") : null]
-  }) : v
+  }) : y
 }
 let z = e => {
   let {
@@ -144,11 +144,11 @@ let z = e => {
   } = e, g = h.kJ.useStore(e => e.activeCategoryIndex), b = (0, S.Ni)({
     sectionDescriptors: o,
     emojiListRef: n
-  }), v = (0, _.O)(), O = (0, y.kI)(s, c, null == c ? void 0 : c.guild_id, d), I = i.useRef(null), N = (0, u.e7)([E.Z], () => E.Z.isFocused()), A = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
+  }), y = (0, _.O)(), O = (0, v.kI)(s, c, null == c ? void 0 : c.guild_id, d), I = i.useRef(null), N = (0, u.e7)([E.Z], () => E.Z.isFocused()), A = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
     let n = O[t];
     if (null != n) return (0, r.jsx)(K, {
       activeIndex: g,
-      analyticsContext: v,
+      analyticsContext: y,
       categories: O,
       category: n,
       categoryIndex: t,
@@ -156,7 +156,7 @@ let z = e => {
       isWindowFocused: N,
       useReducedMotion: A
     }, t)
-  }), [g, v, O, b, N, A]), w = i.useMemo(() => [8, 8, 0, 8], []), D = i.useCallback((e, t) => {
+  }), [g, y, O, b, N, A]), w = i.useMemo(() => [8, 8, 0, 8], []), D = i.useCallback((e, t) => {
     let n = O[t];
     if (n.type === T.En.RECENT) return V;
     if (n.type === T.En.GUILD) {
@@ -190,12 +190,12 @@ let z = e => {
   }, [L]);
   let X = i.useCallback(e => {
       var t;
-      let n = null === (t = I.current) || void 0 === t ? void 0 : t.getListDimensions();
+      let n = null == (t = I.current) ? void 0 : t.getListDimensions();
       null != n && (e + n.height - B >= U ? Q(!1) : Q(!0))
     }, [U]),
     J = i.useCallback(e => {
       var t;
-      e(x), null === (t = I.current) || void 0 === t || t.scrollTo(U)
+      e(x), null == (t = I.current) || t.scrollTo(U)
     }, [U, x]),
     $ = i.useCallback((e, t) => {
       let n = O[e];

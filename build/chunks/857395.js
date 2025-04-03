@@ -80,19 +80,19 @@ function E(e) {
   } = e, E = m(e, ["guildId", "channelId", "messageId", "name", "position"]);
   let b = (0, c.h)(),
     {
-      unavailable: v,
-      guild: y
+      unavailable: y,
+      guild: v
     } = (0, o.cj)([l.Z], () => ({
       guild: l.Z.getGuild(t),
       unavailable: l.Z.hasFetchFailed(t)
     }), [t]),
-    O = null != y,
+    O = null != v,
     I = i.useCallback(async () => {
       if (!b) try {
         O || await (0, s.P)(t)
       } catch (e) {}
     }, [b, O, t]);
-  return v ? (0, r.jsx)(a.yRy, h(_({
+  return y ? (0, r.jsx)(a.yRy, h(_({
     position: "right",
     renderPopout: e => (0, r.jsx)(u.SK, {})
   }, E), {
@@ -104,8 +104,8 @@ function E(e) {
     renderPopout: e => b ? (0, r.jsx)(d.Z, h(_({}, e), {
       guildId: t,
       name: p
-    })) : null == y ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(u.sK, h(_({}, e), {
-      guild: y,
+    })) : null == v ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(u.sK, h(_({}, e), {
+      guild: v,
       channelId: n,
       messageId: f
     }))

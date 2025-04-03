@@ -27,8 +27,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
-  y = "DispatchManagerStore",
+let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
+  v = "DispatchManagerStore",
   O = [],
   I = [],
   S = !1,
@@ -45,7 +45,7 @@ function w() {
     paused: S,
     userActions: Array.from(C)
   };
-  s.K.set(y, e)
+  s.K.set(v, e)
 }
 
 function D(e, t) {
@@ -150,7 +150,7 @@ function H(e) {
   let {
     state: t
   } = e;
-  A || (A = !0, L(), S || p.Z.resume());
+  !A && (A = !0, L(), S || p.Z.resume());
   let n = S;
   S = t.paused, T = t.currentTask, N = t.nextTask;
   let r = !1;
@@ -191,7 +191,7 @@ function Y(e) {
     code: n
   } = t;
   if (null != n) {
-    if (v.includes(n)) W();
+    if (y.includes(n)) W();
     else if (n === E.ff.APPLICATION_NOT_FOUND) {
       let {
         context: e
@@ -218,7 +218,7 @@ function z() {
 }
 
 function q() {
-  s.K.remove(y), (0, h.isDesktop)() && p.Z.pause()
+  s.K.remove(v), (0, h.isDesktop)() && p.Z.pause()
 }
 
 function Q(e) {
@@ -230,7 +230,7 @@ function Q(e) {
 class X extends(r = a.ZP.Store) {
   initialize() {
     var e;
-    let t = null !== (e = s.K.get(y)) && void 0 !== e ? e : {
+    let t = null != (e = s.K.get(v)) ? e : {
       queue: null,
       paused: null,
       userActions: null

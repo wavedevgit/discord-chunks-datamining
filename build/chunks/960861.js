@@ -22,8 +22,8 @@ var i, o = n(192379),
   g = n(692417),
   E = n(783443),
   b = n(299570),
-  v = n(65154),
-  y = n(388032);
+  y = n(65154),
+  v = n(388032);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ let S = !1,
   C = {};
 
 function R() {
-  return f.Z.supports(v.AN.NATIVE_SCREENSHARE_PICKER)
+  return f.Z.supports(y.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
 function P() {
@@ -54,7 +54,7 @@ function w() {
   let e = P() && (N > 0 || S && 0 === T);
   if (e !== A) {
     var t, n;
-    A = e, null === (n = f.Z.getMediaEngine()) || void 0 === n || null === (t = n.setNativeDesktopVideoSourcePickerActive) || void 0 === t || t.call(n, A)
+    A = e, null == (n = f.Z.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, A)
   }
 }
 
@@ -88,7 +88,7 @@ function j() {
   return {
     sourceId: "prepicked:0",
     nativePickerStyleUsed: C.lastPresentedPickerStyle,
-    sourceName: null !== (e = M()) && void 0 !== e ? e : y.NW.string(y.t["KKcy9/"])
+    sourceName: null != (e = M()) ? e : v.NW.string(v.t["KKcy9/"])
   }
 }
 class U extends(i = a.ZP.Store) {

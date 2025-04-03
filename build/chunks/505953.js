@@ -20,9 +20,9 @@ var r = n(200651),
   g = n(477291),
   E = n(478758),
   b = n(789707),
-  v = n(981631),
-  y = n(531578),
-  O = n(413762);
+  y = n(981631),
+  v = n(531578),
+  O = n(778699);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ function A(e) {
       channel: f,
       rating: n
     })
-  }, L = d.Z.can(v.Plq.MANAGE_MESSAGES, f), x = e => {
+  }, L = d.Z.can(y.Plq.MANAGE_MESSAGES, f), x = e => {
     L && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -140,14 +140,14 @@ function A(e) {
     }), C && !w && (0, r.jsxs)("div", {
       className: O.feedbackContainer,
       children: [(0, r.jsx)(a.P3F, {
-        onClick: e => D(e, y.aZ.GOOD),
+        onClick: e => D(e, v.aZ.GOOD),
         children: (0, r.jsx)(p.Z, {
           className: O.thumbIcon,
           width: 12,
           height: 12
         })
       }), (0, r.jsx)(a.P3F, {
-        onClick: e => D(e, y.aZ.BAD),
+        onClick: e => D(e, v.aZ.BAD),
         children: (0, r.jsx)(_.Z, {
           className: O.thumbIcon,
           width: 12,
@@ -181,7 +181,7 @@ function C(e) {
   return t.length < 1 ? (0, r.jsx)(b.Z, {}) : (0, r.jsx)(r.Fragment, {
     children: t.map((e, t) => {
       var i;
-      let o = null !== (i = n[t]) && void 0 !== i ? i : [];
+      let o = null != (i = n[t]) ? i : [];
       return (0, r.jsx)(A, {
         summary: e,
         channel: a,

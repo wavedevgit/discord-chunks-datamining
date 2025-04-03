@@ -63,7 +63,7 @@ class m extends(r = i.ZP.PersistedStore) {
   }
   requiredActions(e) {
     var t;
-    return null !== (t = s[e]) && void 0 !== t ? t : null
+    return null != (t = s[e]) ? t : null
   }
   requiredActionsIncludes(e, t) {
     let n = this.requiredActions(e);

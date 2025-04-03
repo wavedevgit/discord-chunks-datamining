@@ -15,7 +15,7 @@ var r = n(200651),
   f = n(171368),
   _ = n(228168),
   p = n(388032),
-  h = n(24981);
+  h = n(227832);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,9 +56,9 @@ function b(e, t) {
   }), e
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function v(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -80,7 +80,7 @@ let O = i.forwardRef(function(e, t) {
     subsection: o,
     onAction: m,
     onClose: E
-  } = e, y = v(e, ["children", "className", "subsection", "onAction", "onClose"]);
+  } = e, v = y(e, ["children", "className", "subsection", "onAction", "onClose"]);
   let {
     profileType: O
   } = (0, d.z)(), {
@@ -91,7 +91,7 @@ let O = i.forwardRef(function(e, t) {
   return O === _.y0.FULL_SIZE || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(u.Z.Overlay, b(g({
     ref: t,
     className: a()(h.card, i)
-  }, y), {
+  }, v), {
     children: n
   })) : (0, r.jsx)(s.P3F, {
     className: h.clickableContainer,
@@ -108,7 +108,7 @@ let O = i.forwardRef(function(e, t) {
     children: (0, r.jsx)(u.Z.Overlay, b(g({
       ref: t,
       className: a()(h.card, i)
-    }, y), {
+    }, v), {
       children: n
     }))
   })

@@ -13,7 +13,7 @@ n.d(t, {
   ff: () => b,
   gT: () => C,
   ov: () => w,
-  pK: () => v,
+  pK: () => y,
   pU: () => er,
   rI: () => z,
   tp: () => j,
@@ -70,8 +70,8 @@ function E(e, t) {
   }), e
 }
 let b = /^data:/,
-  v = (r = n(426563).Z).DEFAULT_AVATARS,
-  y = r.DEFAULT_PROVISIONAL_AVATARS;
+  y = (r = n(426563).Z).DEFAULT_AVATARS,
+  v = r.DEFAULT_PROVISIONAL_AVATARS;
 r.DEFAULT_GROUP_DM_AVATARS;
 let O = r.canUseWebp(),
   I = 5,
@@ -113,7 +113,7 @@ function C(e) {
 
 function R(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = n ? y : v;
+    r = n ? v : y;
   if (null == e && null == t) return r[0];
   let i = (0, c.Lk)(t, 0);
   return i > 0 ? r[i % I] : null != e ? r[o()(e).shiftRight(22).mod(r.length).toJSNumber()] : r[0]
@@ -129,7 +129,7 @@ function P(e) {
   if (o && t !== _.fL) {
     let e = r.BOT_AVATARS[n];
     if (e) return e;
-    if (null == n && "0000" === i) return v[0]
+    if (null == n && "0000" === i) return y[0]
   }
   return A({
     endpoint: f.ANM.AVATAR,
@@ -149,7 +149,7 @@ function w(e) {
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf,
     i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
     o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : O;
-  return null !== (t = P(e, n, r, i, o)) && void 0 !== t ? t : R(e.id, e.discriminator, e.isProvisional)
+  return null != (t = P(e, n, r, i, o)) ? t : R(e.id, e.discriminator, e.isProvisional)
 }
 
 function D(e) {
@@ -404,18 +404,18 @@ function Q(e) {
     applicationId: a,
     size: s
   } = e;
-  return null != a ? null !== (t = Y({
+  return null != a ? null != (t = Y({
     id: a,
     icon: o,
     size: s
-  })) && void 0 !== t ? t : r.DEFAULT_CHANNEL_ICON : null !== (n = A({
+  })) ? t : r.DEFAULT_CHANNEL_ICON : null != (n = A({
     endpoint: f.ANM.CHANNEL_ICON,
     path: "channel-icons",
     id: i,
     hash: o,
     canAnimate: !1,
     size: s
-  })) && void 0 !== n ? n : q(i)
+  })) ? n : q(i)
 }
 
 function X(e) {

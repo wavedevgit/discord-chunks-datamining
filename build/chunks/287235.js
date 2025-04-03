@@ -43,17 +43,17 @@ async function f(e) {
     getFocusableElements: () => Array.from(u.querySelectorAll("[".concat(s, '="').concat(null != d ? d : l, '"]'))),
     getActiveElement: () => u.activeElement
   });
-  if ((null === (t = (0, o.uB)(e)) || void 0 === t ? void 0 : t.activeElement) == null || null == f) {
-    null === (n = p.getFirstFocusableElement()) || void 0 === n || n.focus();
+  if ((null == (t = (0, o.uB)(e)) ? void 0 : t.activeElement) == null || null == f) {
+    null == (n = p.getFirstFocusableElement()) || n.focus();
     return
   }
-  e.getModifierState("Shift") ? null === (r = await p.getPreviousFocusableElement({
+  e.getModifierState("Shift") ? null == (r = await p.getPreviousFocusableElement({
     wrap: !0,
     from: f
-  })) || void 0 === r || r.focus() : null === (c = await p.getNextFocusableElement({
+  })) || r.focus() : null == (c = await p.getNextFocusableElement({
     wrap: !0,
     from: f
-  })) || void 0 === c || c.focus()
+  })) || c.focus()
 }
 
 function _(e) {

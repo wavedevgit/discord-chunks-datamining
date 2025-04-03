@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(981631),
   E = n(474936),
   b = n(388032),
-  v = n(909562),
-  y = n(867250);
+  y = n(397101),
+  v = n(867250);
 let O = () => (0, h.f)(!1),
   I = e => {
     var t, n, o;
@@ -39,18 +39,18 @@ let O = () => (0, h.f)(!1),
     }, [I]);
     let S = (0, d.N)(),
       T = (0, u.Ng)(),
-      N = (null == S ? void 0 : null === (t = S.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === E.Si.TIER_0,
+      N = (null == S || null == (t = S.subscription_trial) ? void 0 : t.sku_id) === E.Si.TIER_0,
       A = null != S || null != T;
     return (0, r.jsxs)("div", {
-      className: a()(v.upsellWrapper, {
-        [v.unifyTrialUpsell]: A
+      className: a()(y.upsellWrapper, {
+        [y.unifyTrialUpsell]: A
       }),
       children: [A ? (0, r.jsx)(f.ZP, {
         trialOffer: S,
         discountOffer: T,
         onClose: O,
         type: E.cd.STICKER_PICKER_UPSELL,
-        subscriptionTier: null !== (o = null == S ? void 0 : null === (n = S.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : E.Si.TIER_2,
+        subscriptionTier: null != (o = null == S || null == (n = S.subscription_trial) ? void 0 : n.sku_id) ? o : E.Si.TIER_2,
         children: N ? b.NW.format(b.t.MAGag4, {
           planName: (0, p.aq)(E.Xh.PREMIUM_MONTH_TIER_0),
           onClick: h
@@ -59,16 +59,16 @@ let O = () => (0, h.f)(!1),
         })
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
-          className: v.upsellImage,
-          src: y,
+          className: y.upsellImage,
+          src: v,
           alt: b.NW.string(b.t.do7AoK)
         }), (0, r.jsx)(s.Text, {
-          className: v.upsellTitle,
+          className: y.upsellTitle,
           color: "header-primary",
           variant: "text-lg/semibold",
           children: b.NW.string(b.t.jJG1pq)
         }), (0, r.jsx)(s.Text, {
-          className: v.upsellDescription,
+          className: y.upsellDescription,
           variant: "text-md/normal",
           children: b.NW.format(b.t.jt7JX1, {
             onClick: h
@@ -78,7 +78,7 @@ let O = () => (0, h.f)(!1),
         analyticsSection: g.jXE.EXPRESSION_PICKER,
         buttonText: A ? N ? b.NW.string(b.t.hz78hI) : b.NW.string(b.t["Gd/XHB"]) : void 0
       }), (0, r.jsx)(s.P3F, {
-        className: v.upsellClose,
+        className: y.upsellClose,
         onClick: O,
         children: (0, r.jsx)(s.Dio, {
           size: "md",

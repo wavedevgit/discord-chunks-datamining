@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => v
+  k: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -106,16 +106,16 @@ let h = 1e3 / 60,
   E = ["#FFFFFF"],
   b = [n(123353), ...(0, l.Z)(["snowflake"])];
 
-function v(e) {
+function y(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, v] = i.useState(null), {
-    confettiCanvas: y
-  } = i.useContext(s.h), O = (0, o.uR)(y, _), I = i.useMemo(() => ({
+  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, y] = i.useState(null), {
+    confettiCanvas: v
+  } = i.useContext(s.h), O = (0, o.uR)(v, _), I = i.useMemo(() => ({
     triggerAnimation: () => l(!0),
     untriggerAnimation: () => l(!1)
   }), []), S = i.useCallback(() => {
-    let e = null == y ? void 0 : y.getCanvas();
+    let e = null == v ? void 0 : v.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
     O.createConfetti(p(f({}, g), {
@@ -131,14 +131,14 @@ function v(e) {
         }
       }
     }))
-  }, [O, y]);
+  }, [O, v]);
   return (i.useEffect(() => {
     let e = n ? setInterval(S, h) : null;
     return () => clearInterval(e)
   }, [n, S]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: I,
     children: [t, (0, r.jsx)(o.Ji, {
-      ref: v,
+      ref: y,
       colors: E,
       sprites: b,
       spriteWidth: m,

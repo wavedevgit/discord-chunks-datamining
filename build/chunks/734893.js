@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  HH: () => y,
+  HH: () => v,
   O9: () => f,
   Vu: () => h,
   W4: () => l,
@@ -18,7 +18,7 @@ n.d(t, {
   oi: () => g,
   pw: () => I,
   rk: () => O,
-  tB: () => v,
+  tB: () => y,
   uo: () => T,
   vD: () => b,
   x3: () => m
@@ -53,7 +53,7 @@ function E(e) {
       name: e.emoji.name,
       animated: e.emoji.animated
     },
-    icon: null !== (t = e.icon) && void 0 !== t ? t : null
+    icon: null != (t = e.icon) ? t : null
   }
 }
 
@@ -62,17 +62,17 @@ function b(e) {
   return {
     channelId: e.channel_id,
     title: e.title,
-    description: null !== (t = e.description) && void 0 !== t ? t : "",
+    description: null != (t = e.description) ? t : "",
     emoji: null == e.emoji ? null : {
       id: e.emoji.id,
       name: e.emoji.name,
       animated: e.emoji.animated
     },
-    icon: null !== (n = e.icon) && void 0 !== n ? n : null
+    icon: null != (n = e.icon) ? n : null
   }
 }
 
-function v(e) {
+function y(e) {
   if (null == e) return null;
   let {
     welcome_message: t,
@@ -91,7 +91,7 @@ function v(e) {
   }
 }
 
-function y(e, t) {
+function v(e, t) {
   var n, o;
   if (null == t) return null;
   let {
@@ -100,8 +100,8 @@ function y(e, t) {
     resourceChannels: l,
     enabled: c
   } = t, u = {
-    author_ids: null !== (n = null == a ? void 0 : a.authorIds) && void 0 !== n ? n : [],
-    message: null !== (o = null == a ? void 0 : a.message) && void 0 !== o ? o : ""
+    author_ids: null != (n = null == a ? void 0 : a.authorIds) ? n : [],
+    message: null != (o = null == a ? void 0 : a.message) ? o : ""
   };
   return {
     guild_id: e,
@@ -114,11 +114,11 @@ function y(e, t) {
         title: e.title,
         description: e.description,
         emoji: {
-          id: null !== (i = null === (t = e.emoji) || void 0 === t ? void 0 : t.id) && void 0 !== i ? i : void 0,
-          name: null !== (o = null === (n = e.emoji) || void 0 === n ? void 0 : n.name) && void 0 !== o ? o : void 0,
-          animated: null !== (a = null === (r = e.emoji) || void 0 === r ? void 0 : r.animated) && void 0 !== a ? a : void 0
+          id: null != (i = null == (t = e.emoji) ? void 0 : t.id) ? i : void 0,
+          name: null != (o = null == (n = e.emoji) ? void 0 : n.name) ? o : void 0,
+          animated: null != (a = null == (r = e.emoji) ? void 0 : r.animated) ? a : void 0
         },
-        icon: null !== (s = e.icon) && void 0 !== s ? s : void 0
+        icon: null != (s = e.icon) ? s : void 0
       }
     }),
     resource_channels: (null != l ? l : []).filter(e => (0, i.lm)(r.Z.getChannel(e.channelId))).map(e => {
@@ -128,11 +128,11 @@ function y(e, t) {
         title: e.title,
         description: e.description,
         emoji: {
-          id: null !== (i = null === (t = e.emoji) || void 0 === t ? void 0 : t.id) && void 0 !== i ? i : void 0,
-          name: null !== (o = null === (n = e.emoji) || void 0 === n ? void 0 : n.name) && void 0 !== o ? o : void 0,
-          animated: null !== (a = null === (r = e.emoji) || void 0 === r ? void 0 : r.animated) && void 0 !== a ? a : void 0
+          id: null != (i = null == (t = e.emoji) ? void 0 : t.id) ? i : void 0,
+          name: null != (o = null == (n = e.emoji) ? void 0 : n.name) ? o : void 0,
+          animated: null != (a = null == (r = e.emoji) ? void 0 : r.animated) ? a : void 0
         },
-        icon: null !== (s = e.icon) && void 0 !== s ? s : void 0
+        icon: null != (s = e.icon) ? s : void 0
       }
     }),
     enabled: c
@@ -155,7 +155,7 @@ function S(e) {
 
 function T(e) {
   var t, n;
-  return null != e && (!!S(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < s) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < d))
+  return null != e && (!!S(e) || (null == (t = e.welcomeMessage) ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < s) && (null == (n = e.welcomeMessage) ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < d))
 }
 
 function N(e) {

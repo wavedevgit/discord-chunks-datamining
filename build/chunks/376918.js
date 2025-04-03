@@ -53,9 +53,9 @@ function d(e, t, n) {
   var i, s, c;
   o.default.track(a.rMx.CHANNEL_AUTOCOMPLETE_OPEN, u(l({}, (0, r.v_)(t), (0, r.hH)(t.guild_id)), {
     autocomplete_type: e,
-    num_emoji_results: null !== (i = null == n ? void 0 : n.numEmojiResults) && void 0 !== i ? i : 0,
-    num_locked_emoji_results: null !== (s = null == n ? void 0 : n.numLockedEmojiResults) && void 0 !== s ? s : 0,
-    num_sticker_results: null !== (c = null == n ? void 0 : n.numStickerResults) && void 0 !== c ? c : 0
+    num_emoji_results: null != (i = null == n ? void 0 : n.numEmojiResults) ? i : 0,
+    num_locked_emoji_results: null != (s = null == n ? void 0 : n.numLockedEmojiResults) ? s : 0,
+    num_sticker_results: null != (c = null == n ? void 0 : n.numStickerResults) ? c : 0
   }))
 }
 
@@ -66,11 +66,11 @@ function f(e, t, n, i) {
     selection_type: t,
     emoji_id: null == i ? void 0 : i.emojiId,
     sticker_id: null == i ? void 0 : i.stickerId,
-    num_emoji_results: null !== (s = null == i ? void 0 : i.numEmojiResults) && void 0 !== s ? s : 0,
-    num_sticker_results: null !== (c = null == i ? void 0 : i.numStickerResults) && void 0 !== c ? c : 0,
-    emoji_name: null !== (d = null == i ? void 0 : i.expressionName) && void 0 !== d ? d : "",
-    is_custom: null !== (f = null == i ? void 0 : i.isCustom) && void 0 !== f && f,
-    is_animated: null !== (_ = null == i ? void 0 : i.isAnimated) && void 0 !== _ && _
+    num_emoji_results: null != (s = null == i ? void 0 : i.numEmojiResults) ? s : 0,
+    num_sticker_results: null != (c = null == i ? void 0 : i.numStickerResults) ? c : 0,
+    emoji_name: null != (d = null == i ? void 0 : i.expressionName) ? d : "",
+    is_custom: null != (f = null == i ? void 0 : i.isCustom) && f,
+    is_animated: null != (_ = null == i ? void 0 : i.isAnimated) && _
   }))
 }
 

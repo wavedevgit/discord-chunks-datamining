@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(358085),
   E = n(981631),
   b = n(388032),
-  v = n(252347),
-  y = n(913208);
+  y = n(510946),
+  v = n(893354);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -129,13 +129,13 @@ function x(e) {
 class M extends i.PureComponent {
   componentDidMount() {
     var e;
-    (0, c.GE)(), (null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : []).length > 0 && setTimeout(() => {
+    (0, c.GE)(), (null != (e = this.props.paymentRequestWallets) ? e : []).length > 0 && setTimeout(() => {
       this.considerPaymentRequestWalletsLoaded()
     }, L)
   }
   considerPaymentRequestWalletsLoaded() {
     var e;
-    let t = null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : [];
+    let t = null != (e = this.props.paymentRequestWallets) ? e : [];
     if (0 === t.length || !this.arePaymentRequestWalletsLoading()) return;
     N.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(L, " ms"));
     let n = t.reduce((e, t) => T(I({}, e), {
@@ -146,7 +146,7 @@ class M extends i.PureComponent {
   arePaymentRequestWalletsLoading() {
     var e;
     if ((0, g.isDesktop)()) return !1;
-    let t = null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : [];
+    let t = null != (e = this.props.paymentRequestWallets) ? e : [];
     if (0 === t.length) return !1;
     for (let e of t)
       if (!this.state["".concat(e, "Loaded")]) return !0;
@@ -165,17 +165,17 @@ class M extends i.PureComponent {
       var t;
       let n = A[e],
         i = h.Wo[e](),
-        o = null === (t = this.props.localizedPromo) || void 0 === t ? void 0 : t.paymentSourceTypes.includes(e);
+        o = null == (t = this.props.localizedPromo) ? void 0 : t.paymentSourceTypes.includes(e);
       return (0, r.jsx)(l.zxk, {
         onClick: () => this.props.onChooseType(e),
         children: (0, r.jsxs)("div", {
-          className: a()(y.flex, y.alignCenter),
+          className: a()(v.flex, v.alignCenter),
           children: [(0, r.jsx)(p.ZP, {
-            className: v.buttonIcon,
+            className: y.buttonIcon,
             type: n
           }), i, o && (0, r.jsx)(l.IGR, {
             text: b.NW.string(b.t.y2b7CA),
-            className: v.newPaymentBadge,
+            className: y.newPaymentBadge,
             disableColor: !0
           })]
         })
@@ -194,8 +194,8 @@ class M extends i.PureComponent {
       ipCountryCodeHasError: c,
       paymentRequestPaymentContext: d,
       isEligibleForTrial: _ = !1
-    } = this.props, p = null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : [], h = {
-      iconClassName: v.buttonIcon,
+    } = this.props, p = null != (e = this.props.paymentRequestWallets) ? e : [], h = {
+      iconClassName: y.buttonIcon,
       paymentLabel: b.NW.string(b.t.ZURqX1),
       onStripePaymentMethodReceived: o,
       onChooseType: n,
@@ -221,40 +221,40 @@ class M extends i.PureComponent {
     }
     let S = (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: a()(y.wrap, y.horizontal, v.container),
+        className: a()(v.wrap, v.horizontal, y.container),
         children: [g, m]
       }), (0, r.jsx)("div", {
-        className: E.length > 0 ? y.flex : v.hidden,
+        className: E.length > 0 ? v.flex : y.hidden,
         children: (0, r.jsxs)(l.P3F, {
           onClick: () => this.toggleAllPayments(),
-          className: a()(y.flex, v.allPaymentsToggleButton),
+          className: a()(v.flex, y.allPaymentsToggleButton),
           children: [b.NW.string(b.t["4uiQm5"]), (0, r.jsx)(u.Z, {
             open: t
           })]
         })
       }), t && (0, r.jsx)("div", {
-        className: a()(y.wrap, y.horizontal, v.allPaymentsSection, v.container, {
-          [y.flex]: t
+        className: a()(v.wrap, v.horizontal, y.allPaymentsSection, y.container, {
+          [v.flex]: t
         }),
         children: E
       })]
     });
     return O && !c && (S = (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
-        className: v.hidden,
+        className: y.hidden,
         children: m
       }), (0, r.jsx)(l.$jN, {
         type: l.$jN.Type.SPINNING_CIRCLE
       })]
     })), (0, r.jsxs)("div", {
       children: [_ && (0, r.jsx)("hr", {
-        className: v.SeparatorUpper
+        className: y.SeparatorUpper
       }), (0, r.jsx)(l.hjN, {
         title: _ ? b.NW.string(b.t.tywMsb) : b.NW.string(b.t["8lqkf3"]),
         className: i,
         children: S
       }), _ && (0, r.jsx)("hr", {
-        className: v.SeparatorLower
+        className: y.SeparatorLower
       })]
     })
   }

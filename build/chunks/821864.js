@@ -58,15 +58,12 @@ async function d(e, t, n) {
     });
     i.ok && (o = i.body.permissions)
   } catch (r) {
-    if (404 !== r.status) {
-      i.Z.dispatch({
-        type: "INTEGRATION_PERMISSION_SETTINGS_APPLICATION_PERMISSIONS_FETCH_FAILURE",
-        applicationId: e,
-        commandId: n,
-        guildId: t
-      });
-      return
-    }
+    if (404 !== r.status) return void i.Z.dispatch({
+      type: "INTEGRATION_PERMISSION_SETTINGS_APPLICATION_PERMISSIONS_FETCH_FAILURE",
+      applicationId: e,
+      commandId: n,
+      guildId: t
+    })
   }
   i.Z.dispatch({
     type: "INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE",

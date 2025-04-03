@@ -1,7 +1,6 @@
 /** Chunk was on web.js **/
 var r = n(771701);
-
-function i(e, t) {
+e.exports = function(e, t) {
   return function(n, i) {
     if (null == n) return n;
     if (!r(n)) return e(n, i);
@@ -10,4 +9,3 @@ function i(e, t) {
     return n
   }
 }
-e.exports = i

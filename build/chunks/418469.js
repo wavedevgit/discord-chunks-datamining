@@ -42,12 +42,12 @@ function p(e, t, f) {
     simplifiedSettingsEnabled: h
   } = (0, l.Z)({
     location: "ReportProblemItem"
-  }), m = (0, s.Cf)(e), g = (0, i.e7)([c.default], () => c.default.getId()), E = null != e ? (0, a.V9)(e) : u.Z.getActiveStreamKey(), b = null !== (p = u.Z.getVideoStats(E)) && void 0 !== p ? p : {}, v = _({
+  }), m = (0, s.Cf)(e), g = (0, i.e7)([c.default], () => c.default.getId()), E = null != e ? (0, a.V9)(e) : u.Z.getActiveStreamKey(), b = null != (p = u.Z.getVideoStats(E)) ? p : {}, y = _({
     media_session_id: u.Z.getMediaSessionId(E),
     rtc_connection_id: u.Z.getRtcConnectionId(E),
     stream_region: u.Z.getRegion(E),
     max_viewers: u.Z.getMaxViewers(E)
-  }, b), y = () => {
+  }, b), v = () => {
     null == f || f(), null != e && (0, o.ZDy)(async () => {
       let {
         default: t
@@ -56,7 +56,7 @@ function p(e, t, f) {
         stream: e,
         streamApplication: m,
         isStreamer: g === (null == e ? void 0 : e.ownerId),
-        analyticsData: v
+        analyticsData: y
       }, n))
     })
   };
@@ -64,11 +64,11 @@ function p(e, t, f) {
     id: "report-stream-problem",
     color: "danger",
     label: d.NW.string(d.t.sdnCxc),
-    action: y,
+    action: v,
     icon: o.P4T
   }) : (0, r.jsx)(o.sNh, {
     id: "report-stream-problem",
     label: d.NW.string(d.t.sdnCxc),
-    action: y
+    action: v
   })
 }

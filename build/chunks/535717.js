@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
     begin: /\|[A-Za-z]+:?/,
     keywords: {
@@ -37,4 +37,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

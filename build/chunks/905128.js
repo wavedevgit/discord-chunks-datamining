@@ -53,7 +53,7 @@ let c = 864e5,
 function p(e) {
   return Array.from(e.values()).reduce((e, t) => {
     var n, r, i;
-    return e + (null !== (i = null === (r = t.sku) || void 0 === r ? void 0 : null === (n = r.powerup_metadata) || void 0 === n ? void 0 : n.boost_price) && void 0 !== i ? i : 0)
+    return e + (null != (i = null == (r = t.sku) || null == (n = r.powerup_metadata) ? void 0 : n.boost_price) ? i : 0)
   }, 0)
 }
 
@@ -108,11 +108,11 @@ function b(e) {
   E(e, !0)
 }
 
-function v(e) {
+function y(e) {
   E(e, !1)
 }
 
-function y() {
+function v() {
   d = new Map, f = {}, _ = {}
 }
 class O extends r.ZP.Store {
@@ -129,9 +129,9 @@ class O extends r.ZP.Store {
   }
 }
 let I = new O(i.Z, {
-  LOGOUT: y,
+  LOGOUT: v,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: m,
   GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: g,
   GUILD_POWERUP_ENTITLEMENTS_CREATE: b,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: v
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: y
 })

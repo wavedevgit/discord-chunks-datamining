@@ -42,9 +42,9 @@ var r = n(286379),
   g = n(704454),
   E = n(719548),
   b = n(981631),
-  v = n(973005);
+  y = n(973005);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -60,31 +60,31 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 n(388032);
 let I = {
-    [v.TI.DISABLED.valueOf()]: i.Q4.SHOW,
-    [v.TI.NON_FRIENDS.valueOf()]: i.Q4.SHOW,
-    [v.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
+    [y.TI.DISABLED.valueOf()]: i.Q4.SHOW,
+    [y.TI.NON_FRIENDS.valueOf()]: i.Q4.SHOW,
+    [y.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
   },
   S = {
-    [v.TI.DISABLED.valueOf()]: i.Q4.SHOW,
-    [v.TI.NON_FRIENDS.valueOf()]: i.Q4.BLOCK,
-    [v.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
+    [y.TI.DISABLED.valueOf()]: i.Q4.SHOW,
+    [y.TI.NON_FRIENDS.valueOf()]: i.Q4.BLOCK,
+    [y.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
   },
   T = {
-    [v.TI.DISABLED.valueOf()]: i.Q4.BLUR,
-    [v.TI.NON_FRIENDS.valueOf()]: i.Q4.BLUR,
-    [v.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
+    [y.TI.DISABLED.valueOf()]: i.Q4.BLUR,
+    [y.TI.NON_FRIENDS.valueOf()]: i.Q4.BLUR,
+    [y.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
   },
   N = {
-    [v.TI.DISABLED.valueOf()]: i.Q4.BLUR,
-    [v.TI.NON_FRIENDS.valueOf()]: i.Q4.BLOCK,
-    [v.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
+    [y.TI.DISABLED.valueOf()]: i.Q4.BLUR,
+    [y.TI.NON_FRIENDS.valueOf()]: i.Q4.BLOCK,
+    [y.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
   },
   A = 1,
   C = e => {
@@ -156,7 +156,7 @@ function L(e) {
 function x(e) {
   var t;
   let n = _.default.getCurrentUser();
-  if (null == n || (null === (t = e.author) || void 0 === t ? void 0 : t.id) === n.id) return !1;
+  if (null == n || (null == (t = e.author) ? void 0 : t.id) === n.id) return !1;
   let {
     explicitContentGuilds: r,
     explicitContentFriendDm: i,
@@ -178,11 +178,11 @@ function j(e, t) {
   if (a.ZP.get("obscure_blur_effect_enabled")) return !0;
   switch (e.type) {
     case 1:
-      return (0, h.yE)(null !== (n = e.media.flags) && void 0 !== n ? n : 0, b.xPJ.CONTAINS_EXPLICIT_MEDIA);
+      return (0, h.yE)(null != (n = e.media.flags) ? n : 0, b.xPJ.CONTAINS_EXPLICIT_MEDIA);
     case 0:
-      return (0, h.yE)(null !== (r = e.media.flags) && void 0 !== r ? r : 0, b.J0y.CONTAINS_EXPLICIT_MEDIA);
+      return (0, h.yE)(null != (r = e.media.flags) ? r : 0, b.J0y.CONTAINS_EXPLICIT_MEDIA);
     case 2:
-      return (0, h.yE)(null !== (o = null === (i = e.media.contentScanMetadata) || void 0 === i ? void 0 : i.flags) && void 0 !== o ? o : 0, s.Cb.EXPLICIT);
+      return (0, h.yE)(null != (o = null == (i = e.media.contentScanMetadata) ? void 0 : i.flags) ? o : 0, s.Cb.EXPLICIT);
     default:
       return !1
   }
@@ -256,7 +256,7 @@ function Y(e) {
     attachmentIds: u,
     embedIds: f
   } = e;
-  if (null == a || null == s || (null !== (t = null == u ? void 0 : u.length) && void 0 !== t ? t : 0) === 0 && (null !== (n = null == f ? void 0 : f.length) && void 0 !== n ? n : 0) === 0) return;
+  if (null == a || null == s || (null != (t = null == u ? void 0 : u.length) ? t : 0) === 0 && (null != (n = null == f ? void 0 : f.length) ? n : 0) === 0) return;
   let _ = d.Z.getChannel(a);
   p.default.track(b.rMx.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
     channel_id: a,
@@ -271,7 +271,7 @@ function Y(e) {
     tags: ["metricVersion:".concat(A)]
   }), l.Z.distribution({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION
-  }, (null !== (i = null == u ? void 0 : u.length) && void 0 !== i ? i : 0) + (null !== (o = null == f ? void 0 : f.length) && void 0 !== o ? o : 0))
+  }, (null != (i = null == u ? void 0 : u.length) ? i : 0) + (null != (o = null == f ? void 0 : f.length) ? o : 0))
 }
 
 function K(e) {

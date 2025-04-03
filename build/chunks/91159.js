@@ -46,7 +46,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,14 +108,14 @@ function A(e, t) {
     a = e.parent_id,
     l = (0, f.I)(o, a),
     _ = e => (0, d.yE)(e, m.iN.ALL_MESSAGES) ? f.$R[g.bL.ALL_MESSAGES] : (0, d.yE)(e, m.iN.ONLY_MENTIONS) ? f.$R[g.bL.ONLY_MENTIONS] : (0, d.yE)(e, m.iN.NO_MESSAGES) ? f.$R[g.bL.NO_MESSAGES] : f.$R[g.bL.NULL],
-    h = null !== (n = p.Z.flags(e.id)) && void 0 !== n ? n : 0,
+    h = null != (n = p.Z.flags(e.id)) ? n : 0,
     E = _(h),
-    v = p.Z.isMuted(e.id),
+    y = p.Z.isMuted(e.id),
     I = (0, f.sK)(p.Z.getMuteConfig(e.id)),
     {
       can_send_message: S
     } = i,
-    T = y(b({}, O(i, ["can_send_message"])), {
+    T = v(b({}, O(i, ["can_send_message"])), {
       channel_id: e.id,
       guild_id: o,
       parent_id: a,
@@ -125,8 +125,8 @@ function A(e, t) {
       old_thread_notification_setting: E,
       new_thread_notification_setting: null != t.flags ? _(t.flags) : E,
       parent_notification_setting: l.channel_message_notification_settings,
-      old_thread_is_muted: v,
-      new_thread_is_muted: null !== (r = t.muted) && void 0 !== r ? r : v,
+      old_thread_is_muted: y,
+      new_thread_is_muted: null != (r = t.muted) ? r : y,
       old_thread_muted_until: I,
       new_thread_muted_until: null != t.mute_config ? (0, f.sK)(t.mute_config) : I
     });
@@ -136,7 +136,7 @@ let C = e => {
   var t, n;
   let r = (0, o.e7)([l.ZP], () => l.ZP.lastMessageId(e.id)),
     a = null != r ? _.default.extractTimestamp(r) : null,
-    s = null === (t = e.threadMetadata) || void 0 === t ? void 0 : t.createTimestamp,
+    s = null == (t = e.threadMetadata) ? void 0 : t.createTimestamp,
     c = null != s ? i()(s).valueOf() : null;
-  return null !== (n = null != a ? a : c) && void 0 !== n ? n : _.default.extractTimestamp(e.id)
+  return null != (n = null != a ? a : c) ? n : _.default.extractTimestamp(e.id)
 }

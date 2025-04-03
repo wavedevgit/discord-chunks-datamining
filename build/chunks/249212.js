@@ -27,9 +27,9 @@ function p(e) {
     avErrorUIEnabled: E
   } = (0, s.JN)({
     location: "UserVideoFailed"
-  }), b = null === (t = (0, a.hp)(h)) || void 0 === t ? void 0 : t.errorCode;
+  }), b = null == (t = (0, a.hp)(h)) ? void 0 : t.errorCode;
 
-  function v() {
+  function y() {
     (0, l.w)(i.Yn.DEFAULT, n), o.Z.setDisableLocalVideo(n, d.ZUi.DISABLED, i.Yn.DEFAULT, !1), setTimeout(() => {
       o.Z.setDisableLocalVideo(n, d.ZUi.MANUAL_ENABLED, i.Yn.DEFAULT, !1)
     }, 1e3)
@@ -46,7 +46,7 @@ function p(e) {
     errorCodeMessage: E ? f.NW.formatToPlainString(f.t["ejOT9/"], {
       errorCode: b
     }) : void 0,
-    onCTAClick: v,
+    onCTAClick: y,
     callToAction: f.NW.string(f.t["hxmQ/f"])
   })
 }

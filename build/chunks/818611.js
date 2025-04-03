@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(439959),
   g = n(125988),
   E = n(388032),
-  b = n(561546);
+  b = n(725591);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ let N = 3,
       onSelect: i,
       isSelected: o = !1
     } = e, s = S(e, ["children", "className", "onSelect", "isSelected"]);
-    return (0, r.jsx)(u.P3F, I(y({
+    return (0, r.jsx)(u.P3F, I(v({
       className: a()(b.decorationGridItem, o ? b.selected : void 0, n)
     }, s), {
       onClick: i,
@@ -104,7 +104,7 @@ let N = 3,
       section: a,
       isSelected: s = !1
     } = e, h = S(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected"]);
-    let v = (0, c.e7)([f.Z], () => {
+    let y = (0, c.e7)([f.Z], () => {
         let e = f.Z.getProduct(n.skuId);
         return (0, _.G1)(e)
       }),
@@ -131,7 +131,7 @@ let N = 3,
           }), E.NW.string(E.t.y2b7CA)]
         })
       }) : (0, r.jsx)(u.G2e, {
-        icon: v ? () => (0, r.jsx)(u.SrA, {
+        icon: y ? () => (0, r.jsx)(u.SrA, {
           size: "custom",
           color: "currentColor",
           width: 14,
@@ -143,7 +143,7 @@ let N = 3,
         color: l.Z.BACKGROUND_ACCENT,
         className: b.iconBadge
       });
-    return (0, r.jsxs)(w, I(y({
+    return (0, r.jsxs)(w, I(v({
       className: N ? b.decorationGridItemChurned : void 0,
       innerRef: null != o ? o : C,
       isSelected: s
@@ -169,7 +169,7 @@ let N = 3,
         items: g
       } = c[e];
       return (0, s.EQ)(g[d]).with(m.Tm, () => (0, r.jsxs)(w, {
-        style: y({}, f),
+        style: v({}, f),
         isSelected: null === i,
         onSelect: () => a(null),
         children: [(0, r.jsx)(u.t6m, {
@@ -198,7 +198,7 @@ let N = 3,
       }, _)).otherwise(e => {
         let n = (null == i ? void 0 : i.id) === e.id;
         return (0, r.jsx)(D, {
-          style: y({}, f),
+          style: v({}, f),
           user: t,
           avatarDecoration: e,
           section: p,
@@ -213,7 +213,7 @@ let N = 3,
       } = c[e];
       return (0, r.jsx)("div", {
         className: b.headings,
-        style: I(y({}, t), {
+        style: I(v({}, t), {
           position: "absolute"
         }),
         children: (0, r.jsx)(u.vwX, {

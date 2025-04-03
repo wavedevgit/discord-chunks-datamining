@@ -17,7 +17,7 @@ var i = n(120356),
   l = n(626135),
   c = n(981631),
   u = n(388032),
-  d = n(936958);
+  d = n(240211);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,13 +108,13 @@ function b(e) {
   })
 }
 
-function v(e, t) {
+function y(e, t) {
   null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, _({
     notice_type: e
   }, t))
 }
 
-function y(e) {
+function v(e) {
   null != e && l.default.track(c.rMx.APP_NOTICE_CLOSED, {
     notice_type: e
   })
@@ -128,7 +128,7 @@ function O(e) {
   } = e, o = m(e, ["children", "noticeType", "additionalTrackingProps"]);
   return (0, r.jsx)(b, h(_({}, o), {
     onClick: e => {
-      null != o.onClick && o.onClick(e), v(n, i)
+      null != o.onClick && o.onClick(e), y(n, i)
     },
     children: t
   }))
@@ -157,7 +157,7 @@ function S(e) {
     },
     className: d.closeButton,
     onClick: () => {
-      t(), y(n)
+      t(), v(n)
     },
     "aria-label": u.NW.string(u.t.WAI6xs),
     children: (0, r.jsx)(s.Dio, {

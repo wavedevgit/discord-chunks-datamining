@@ -23,7 +23,7 @@ async function p(e) {
     excludeEnded: !1
   });
   let r = l.Z.getReverseTrialEntitlement(!0);
-  return !!(!n && null != r && null != r.endsAt && r.endsAt.getTime() < Date.now()) && !(r.endsAt.getTime() < Date.now() - _) && r.sourceType === f.kNB.REVERSE_TRIAL && (null == e && await (0, u.T)(), null != s.Z.getUserTrialOffer(d.Rt))
+  return !(!(!n && null != r && null != r.endsAt && r.endsAt.getTime() < Date.now()) || r.endsAt.getTime() < Date.now() - _) && r.sourceType === f.kNB.REVERSE_TRIAL && (null == e && await (0, u.T)(), null != s.Z.getUserTrialOffer(d.Rt)) || !1
 }
 
 function h() {

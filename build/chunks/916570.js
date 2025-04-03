@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "ReasonML",
     aliases: ["re"],
@@ -53,4 +53,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

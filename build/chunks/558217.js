@@ -16,5 +16,6 @@ function s(e) {
       topEmojisTTL: e
     } = t;
     if (null == e || Date.now() < e) return
-  }!o.Z.getIsFetching(e) && (0, a.pj)(e)
+  }
+  o.Z.getIsFetching(e) || (0, a.pj)(e)
 }

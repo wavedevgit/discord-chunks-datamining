@@ -6,12 +6,14 @@ n.d(t, {
 var r = n(512722),
   i = n.n(r);
 async function o(e) {
-  let t;
-  let {
-    default: r
-  } = await n.e("32990").then(n.t.bind(n, 735630, 19)), o = r.createFile(!1), a = new Promise(e => {
-    o.onReady = e
-  }), s = await e.arrayBuffer();
+  let t, {
+      default: r
+    } = await n.e("32990").then(n.t.bind(n, 735630, 19)),
+    o = r.createFile(!1),
+    a = new Promise(e => {
+      o.onReady = e
+    }),
+    s = await e.arrayBuffer();
   for (let e of (s.fileStart = 0, o.appendBuffer(s), o.flush(), await a, i()(null != o.boxes, "mp4boxInputFile.boxes should not be null after parsing"), o.boxes)) "uuid" === e.type && (t = e.start);
   let l = e.slice(0, t, e.type),
     c = e.slice(t + 4, t + 8 + 16, e.type);

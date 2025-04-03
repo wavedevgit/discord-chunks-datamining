@@ -6,7 +6,7 @@ n.d(t, {
   Gh: () => W,
   HR: () => D,
   K_: () => U,
-  LK: () => v,
+  LK: () => y,
   NC: () => Z,
   OH: () => j,
   Sq: () => h,
@@ -25,7 +25,7 @@ n.d(t, {
   i6: () => L,
   jK: () => N,
   lt: () => F,
-  mv: () => y,
+  mv: () => v,
   n1: () => V,
   q2: () => f,
   qC: () => x,
@@ -51,9 +51,9 @@ let u = 200,
   E = 3;
 a()("2024-01-01T00:00:00");
 let b = "",
-  v = ["cozy", "crunchy", "chaos"];
+  y = ["cozy", "crunchy", "chaos"];
 
-function y(e) {
+function v(e) {
   switch (e) {
     case l.z.SOCIAL:
       return c.NW.string(c.t.cxUHv7);
@@ -210,7 +210,7 @@ function W(e) {
     i = {};
   return null != e.game_activity && (i = Object.keys(e.game_activity).reduce((t, n) => {
     var r;
-    let i = null === (r = e.game_activity) || void 0 === r ? void 0 : r[n];
+    let i = null == (r = e.game_activity) ? void 0 : r[n];
     return null == i || (t[n] = {
       level: i.activity_level,
       score: i.activity_score
@@ -239,6 +239,6 @@ function W(e) {
     },
     wildcardDescriptors: e.wildcard_descriptors,
     gameActivity: i,
-    discoveryProfileFeatures: new Set(null !== (t = e.discovery_profile_features) && void 0 !== t ? t : [])
+    discoveryProfileFeatures: new Set(null != (t = e.discovery_profile_features) ? t : [])
   }
 }

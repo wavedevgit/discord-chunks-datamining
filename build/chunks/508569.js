@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120), n(653041), n(411104), n(733860);
 var r = n(442837),
   i = n(710845),
@@ -29,7 +29,7 @@ let f = new i.Z("GatewaySocket"),
 
 function E(e, t) {
   var n;
-  let [r, i] = null !== (n = g[e]) && void 0 !== n ? n : [0, 0];
+  let [r, i] = null != (n = g[e]) ? n : [0, 0];
   g[e] = [(r * i + t) / (i + 1), i + 1]
 }
 
@@ -39,13 +39,13 @@ function b(e, t, n) {
   let i = e[t],
     o = e.length - 1,
     a = t < o ? e[t + 1] : null,
-    s = null !== (r = null == n ? void 0 : n.timeRemaining()) && void 0 !== r ? r : 0,
+    s = null != (r = null == n ? void 0 : n.timeRemaining()) ? r : 0,
     l = null != n && s <= 0,
     c = i.type === (null == a ? void 0 : a.type),
     u = t === o;
   return !!l && !c && !u
 }
-class v {
+class y {
   hasStuffToDispatchNow() {
     return this.queue.length > 0 && 2 === this.queue[0].status
   }
@@ -74,7 +74,7 @@ class v {
     if (this.paused && !_.has(e.type)) return !1;
     if (0 === e.status) {
       var t;
-      let n = null === (t = this.getDispatchHandler(e.type)) || void 0 === t ? void 0 : t.preload(e.data);
+      let n = null == (t = this.getDispatchHandler(e.type)) ? void 0 : t.preload(e.data);
       if (e.status = null == n ? 2 : 1, e.preloadPromise = n, null != n) return n.then(t => {
         e.preloadedData = t, e.status = 2, this.scheduleFlush(e.type)
       }).catch(t => this.socket.resetSocketOnDispatchError({
@@ -145,8 +145,8 @@ class v {
     }
     if (o.Z.flush(s, i), "READY" === s) {
       let e = (0, l.vW)(i);
-      null === (t = this.getDispatchHandler(s)) || void 0 === t || t.dispatch(i, s, u), (0, l.dm)(this.socket, i, d, c, e)
-    } else "RESUMED" === s ? (null === (n = this.getDispatchHandler(s)) || void 0 === n || n.dispatch(i, s, u), (0, l.uB)(this.resumeAnalytics), this.resumeAnalytics = (0, l.zH)(), this.socket.handleResumeDispatched()) : null === (r = this.getDispatchHandler(s)) || void 0 === r || r.dispatch(i, s, u);
+      null == (t = this.getDispatchHandler(s)) || t.dispatch(i, s, u), (0, l.dm)(this.socket, i, d, c, e)
+    } else "RESUMED" === s ? (null == (n = this.getDispatchHandler(s)) || n.dispatch(i, s, u), (0, l.uB)(this.resumeAnalytics), this.resumeAnalytics = (0, l.zH)(), this.socket.handleResumeDispatched()) : null == (r = this.getDispatchHandler(s)) || r.dispatch(i, s, u);
     this.socket.connectionState === a.Z.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - d)
   }
   clear() {

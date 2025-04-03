@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ax: () => v,
+  Ax: () => y,
   FY: () => p,
   GA: () => s,
   JC: () => b,
@@ -14,7 +14,7 @@ n.d(t, {
   fy: () => E,
   gP: () => l,
   h1: () => u,
-  ic: () => y,
+  ic: () => v,
   oX: () => r,
   rP: () => f,
   u0: () => I,
@@ -76,10 +76,10 @@ function b() {
     offlineEditDataVersion: void 0
   }
 }
-var v = function(e) {
+var y = function(e) {
   return e[e.CONFIRM_START = 0] = "CONFIRM_START", e[e.CONFIRM_CODE = 1] = "CONFIRM_CODE", e[e.CHANGE_EMAIL_REASONS = 2] = "CHANGE_EMAIL_REASONS", e[e.CHANGE_EMAIL_WARNING = 3] = "CHANGE_EMAIL_WARNING", e[e.EMAIL_AND_PASSWORD = 4] = "EMAIL_AND_PASSWORD", e[e.COMPLETE = 5] = "COMPLETE", e
 }({});
-let y = {
+let v = {
     NEW_FORUM_THREADS_ON: 16384,
     NEW_FORUM_THREADS_OFF: 8192,
     OPT_IN_ENABLED: 4096,

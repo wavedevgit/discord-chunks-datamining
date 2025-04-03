@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   EB: () => I,
-  cl: () => y
+  cl: () => v
 }), n(47120);
 var r = n(392711),
   i = n.n(r),
@@ -76,16 +76,16 @@ class g {
 let E = new g,
   b = null;
 
-function v(e, t) {
+function y(e, t) {
   return !e && null == t
 }
 
-function y(e) {
+function v(e) {
   let {
     loaded: t,
     firstMessage: n
   } = (0, o.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, o.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
-  return null != r && v(t, n) && S(r, e.id), {
+  return null != r && y(t, n) && S(r, e.id), {
     loaded: t,
     firstMessage: n
   }
@@ -98,7 +98,7 @@ function O(e, t) {
       loaded: r,
       firstMessage: i
     } = d.Z.getMessage(t);
-    v(r, i) && (E.request(e.id, t), n = !0)
+    y(r, i) && (E.request(e.id, t), n = !0)
   }), n && null == b && (b = setTimeout(T, 0))
 }
 
@@ -125,7 +125,7 @@ async function N(e) {
   try {
     var n;
     if (0 === t.length) return;
-    let r = null === (n = l.Z.getChannel(e)) || void 0 === n ? void 0 : n.guild_id;
+    let r = null == (n = l.Z.getChannel(e)) ? void 0 : n.guild_id;
     if (null == r) return;
     let {
       body: {

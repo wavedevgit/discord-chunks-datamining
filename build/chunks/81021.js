@@ -176,13 +176,13 @@ var E = function e(t) {
     "%WeakMapPrototype%": ["WeakMap", "prototype"],
     "%WeakSetPrototype%": ["WeakSet", "prototype"]
   },
-  v = n(390976),
-  y = n(706165),
-  O = v.call(Function.call, Array.prototype.concat),
-  I = v.call(Function.apply, Array.prototype.splice),
-  S = v.call(Function.call, String.prototype.replace),
-  T = v.call(Function.call, String.prototype.slice),
-  N = v.call(Function.call, RegExp.prototype.exec),
+  y = n(390976),
+  v = n(706165),
+  O = y.call(Function.call, Array.prototype.concat),
+  I = y.call(Function.apply, Array.prototype.splice),
+  S = y.call(Function.call, String.prototype.replace),
+  T = y.call(Function.call, String.prototype.slice),
+  N = y.call(Function.call, RegExp.prototype.exec),
   A = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
   C = /\\(\\)?/g,
   R = function(e) {
@@ -197,7 +197,7 @@ var E = function e(t) {
   },
   P = function(e, t) {
     var n, r = e;
-    if (y(b, r) && (r = "%" + (n = b[r])[0] + "%"), y(m, r)) {
+    if (v(b, r) && (r = "%" + (n = b[r])[0] + "%"), v(m, r)) {
       var o = m[r];
       if (o === p && (o = E(r)), void 0 === o && !t) throw new a("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
@@ -225,7 +225,7 @@ e.exports = function(e, t) {
       h = T(p, 0, 1),
       g = T(p, -1);
     if (('"' === h || "'" === h || "`" === h || '"' === g || "'" === g || "`" === g) && h !== g) throw new i("property names with quotes must have matching quotes");
-    if ("constructor" !== p && _ || (u = !0), r += "." + p, y(m, s = "%" + r + "%")) c = m[s];
+    if ("constructor" !== p && _ || (u = !0), r += "." + p, v(m, s = "%" + r + "%")) c = m[s];
     else if (null != c) {
       if (!(p in c)) {
         if (!t) throw new a("base intrinsic for " + e + " exists, but the property is not available.");
@@ -234,7 +234,7 @@ e.exports = function(e, t) {
       if (l && f + 1 >= n.length) {
         var E = l(c, p);
         c = (_ = !!E) && "get" in E && !("originalValue" in E.get) ? E.get : c[p]
-      } else _ = y(c, p), c = c[p];
+      } else _ = v(c, p), c = c[p];
       _ && !u && (m[s] = c)
     }
   }

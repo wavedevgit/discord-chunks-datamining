@@ -9,7 +9,7 @@ var i = n(120356),
   o = n.n(i),
   a = n(481060),
   s = n(118012),
-  l = n(135105);
+  l = n(362560);
 
 function c(e) {
   var t;
@@ -20,7 +20,7 @@ function c(e) {
     isInline: u,
     onClick: d
   } = e, f = n + (u ? ":" : ""), _ = null, p = s.Z.Colors.HEADER_PRIMARY;
-  (null == c ? void 0 : c.isActive) && !u ? _ = l.active : (null == c ? void 0 : null === (t = c.lastValidationResult) || void 0 === t ? void 0 : t.success) === !1 ? _ = l.error : (null == c ? void 0 : c.hasValue) && !u && (_ = l.set);
+  (null == c ? void 0 : c.isActive) && !u ? _ = l.active : (null == c || null == (t = c.lastValidationResult) ? void 0 : t.success) === !1 ? _ = l.error : (null == c ? void 0 : c.hasValue) && !u && (_ = l.set);
   let h = (0, r.jsx)(s.Z, {
     size: u ? s.Z.Sizes.SIZE_16 : s.Z.Sizes.SIZE_14,
     color: p,

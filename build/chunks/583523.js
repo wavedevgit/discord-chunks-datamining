@@ -39,7 +39,7 @@ function _() {
   if (null == t) return;
   let i = s.Z.getChannel(t);
   if (null == i) return;
-  let o = null !== (e = i.videoQualityMode) && void 0 !== e ? e : u.Ucd.AUTO;
+  let o = null != (e = i.videoQualityMode) ? e : u.Ucd.AUTO;
   n !== o && r.Z.dispatch({
     type: "SET_CHANNEL_VIDEO_QUALITY_MODE",
     mode: o

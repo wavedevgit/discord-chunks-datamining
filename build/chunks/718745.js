@@ -27,7 +27,7 @@ function u(e) {
     integration: n,
     query: r
   } = e;
-  l[n] = null !== (t = l[n]) && void 0 !== t ? t : {}, l[n][r] = {
+  l[n] = null != (t = l[n]) ? t : {}, l[n][r] = {
     loading: !0,
     results: []
   }

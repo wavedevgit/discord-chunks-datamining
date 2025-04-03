@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "variable",
       variants: [{
@@ -52,4 +52,3 @@ function t(e) {
     contains: [e.HASH_COMMENT_MODE, t, n, r, i, o, a]
   }
 }
-e.exports = t

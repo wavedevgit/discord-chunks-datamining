@@ -19,9 +19,9 @@ var r, i = n(348327),
   g = n(199902),
   E = n(272053),
   b = n(77498),
-  v = n(981631);
+  y = n(981631);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -53,7 +53,7 @@ function T() {
   e.push(...n);
   let r = E.Z.getStream();
   null != r && e.push(O({
-    type: v.IIU.STREAMING
+    type: y.IIU.STREAMING
   }, r));
   let i = new Set;
   s().forEach(S, t => {
@@ -66,11 +66,11 @@ function T() {
     u = null != g.Z.getCurrentUserActiveStream(),
     m = l || c && !u;
   if (null != a && null != a.name && !m) {
-    var y, T;
+    var v, T;
     e.push({
-      type: v.IIU.PLAYING,
+      type: y.IIU.PLAYING,
       name: a.name,
-      application_id: null !== (T = a.id) && void 0 !== T ? T : null === (y = b.Z.getGameByName(a.name)) || void 0 === y ? void 0 : y.id,
+      application_id: null != (T = a.id) ? T : null == (v = b.Z.getGameByName(a.name)) ? void 0 : v.id,
       timestamps: {
         start: a.start
       }
@@ -78,7 +78,7 @@ function T() {
   }
   let N = p.Z.getActivity();
   null != N && e.push(O({
-    type: v.IIU.LISTENING
+    type: y.IIU.LISTENING
   }, N)), o()(I, e) || (I = e)
 }
 
@@ -123,7 +123,7 @@ class P extends(r = l.ZP.Store) {
     return this.findActivity(t => t.application_id === e)
   }
   getCustomStatusActivity() {
-    return this.findActivity(e => e.type === v.IIU.CUSTOM_STATUS)
+    return this.findActivity(e => e.type === y.IIU.CUSTOM_STATUS)
   }
   findActivity(e) {
     return I.find(e)
@@ -137,7 +137,7 @@ class P extends(r = l.ZP.Store) {
     return null
   }
 }
-y(P, "displayName", "LocalActivityStore");
+v(P, "displayName", "LocalActivityStore");
 let w = new P(c.Z, {
   OVERLAY_INITIALIZE: R,
   START_SESSION: N,

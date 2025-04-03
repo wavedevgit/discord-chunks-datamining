@@ -24,16 +24,16 @@ let a = "#ffffff",
     let f = r.Z.parseString(c);
     if (null == f) return null;
     let _ = (0, i.AZ)(f.red, f.blue, f.green),
-      p = null !== (t = (0, i.k8)({
+      p = null != (t = (0, i.k8)({
         colors: [(0, i.j)(f, .6, !0), u],
         ratio: 3,
         saturationFactor: l
-      })) && void 0 !== t ? t : f,
-      h = null !== (n = (0, i.k8)({
+      })) ? t : f,
+      h = null != (n = (0, i.k8)({
         colors: [(0, i.j)(f, .6, !1), d],
         ratio: 5,
         saturationFactor: l
-      })) && void 0 !== n ? n : f,
+      })) ? n : f,
       m = (0, i.k8)({
         colors: [f, u],
         ratio: 7,
@@ -91,6 +91,6 @@ let a = "#ffffff",
       backgroundColor: null == o ? void 0 : o.backgroundColor,
       accentColor: null == o ? void 0 : o.accentColor,
       highlightColor: null == o ? void 0 : o.highlightColor,
-      opacity: null !== (r = null == o ? void 0 : o.opacity) && void 0 !== r ? r : .15
+      opacity: null != (r = null == o ? void 0 : o.opacity) ? r : .15
     }
   }

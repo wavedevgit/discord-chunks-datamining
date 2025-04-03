@@ -20,8 +20,8 @@ var r = n(512722),
   g = n(607214),
   E = n(258609),
   b = n(565473),
-  v = n(444092),
-  y = n(927923),
+  y = n(444092),
+  v = n(927923),
   O = n(65154),
   I = n(388032);
 
@@ -49,7 +49,7 @@ async function R(e) {
 function P(e) {
   let t = E.Z.getAwaitingRemoteSessionInfo();
   return e.find(e => {
-    let n = y.al.has(e.clientInfo.os),
+    let n = v.al.has(e.clientInfo.os),
       r = null != p.Z.getVoiceStateForSession(u.default.getId(), e.sessionId),
       i = null == t || (0, b.y)(t.type) === e.clientInfo.os;
     return n && i && r
@@ -131,8 +131,8 @@ class w extends l.Z {
       T.info("Console command Error result:", r, i);
       let o = E.Z.getAwaitingRemoteSessionInfo();
       if ((null == o ? void 0 : o.commandId) !== n) return;
-      let a = E.Z.getDevice(o.type, null !== (t = o.deviceId) && void 0 !== t ? t : ""),
-        s = (0, v.Z)(null != a ? a : {
+      let a = E.Z.getDevice(o.type, null != (t = o.deviceId) ? t : ""),
+        s = (0, y.Z)(null != a ? a : {
           id: "id",
           platform: I.NW.string(I.t["UQMV/P"]),
           name: I.NW.string(I.t["UQMV/P"])
@@ -142,7 +142,7 @@ class w extends l.Z {
         body: s.body,
         errorCodeMessage: s.errorCodeMessage,
         reconnectPlatformType: s.isAccountLinkError ? o.type : void 0
-      }), y.e8.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(C, () => (0, m.s6)(), !0) : "failed" === r && (0, m.s6)()
+      }), v.e8.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(C, () => (0, m.s6)(), !0) : "failed" === r && (0, m.s6)()
     }), S(this, "handleRemoteSessionDisconnect", () => {
       this.awaitRemoteTimeout.stop()
     })

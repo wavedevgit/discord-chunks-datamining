@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "\\d(_|\\d)*",
     n = "[eE][-+]?" + t,
     r = t + "(\\." + t + ")?(" + n + ")?",
@@ -29,4 +29,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

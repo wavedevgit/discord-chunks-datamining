@@ -54,8 +54,8 @@ function f(e) {
     dispatch: g,
     maintainFocusPosition: E,
     enabled: b,
-    autoFocusElement: v,
-    useVirtualFocus: y
+    autoFocusElement: y,
+    useVirtualFocus: v
   } = e, O = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(!1), [N, A] = r.useState(!1), [C, R] = r.useState(!1), [P] = r.useState(() => new a.$o(e => {
     let [t, n] = e.split(",").map(Number);
     return () => {
@@ -68,9 +68,9 @@ function f(e) {
   }));
   r.useEffect(() => () => P.clean(), [P]);
   let w = r.useCallback(e => {
-      if (!O.current || !v) return !1;
+      if (!O.current || !y) return !1;
       e.focus()
-    }, [v]),
+    }, [y]),
     D = r.useCallback((e, n) => {
       let r = c(t, e, n);
       (null != h ? h(e, n, r) : Promise.resolve()).then(() => {
@@ -85,10 +85,7 @@ function f(e) {
           type: i.s.SET_FOCUSED_POSITION,
           x: n,
           y: r
-        }), !e)) {
-        R(!0);
-        return
-      }
+        }), !e)) return void R(!0);
       let o = u(c(t, n, r));
       null != o && (R(!0), w(o))
     }, [g, f, _, m, t, w]),
@@ -97,10 +94,7 @@ function f(e) {
     if (!x || !S) return;
     M(!1);
     let e = u(c(t, f, _));
-    if (null != e) {
-      w(e);
-      return
-    }
+    if (null != e) return void w(e);
     T(!1);
     let n = u(c(t));
     null != n && w(n)
@@ -115,7 +109,7 @@ function f(e) {
   }, [f, _]);
   let j = r.useCallback(e => {
       if (!O.current) return;
-      if (!y && s.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
+      if (!v && s.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
         e.preventDefault(), e.stopPropagation(), L();
         return
       }
@@ -134,12 +128,12 @@ function f(e) {
           });
           return;
         case o.Us.SELECT_FOCUSED_ITEM:
-          if (v && !d(I) || e.repeat) return;
+          if (y && !d(I) || e.repeat) return;
           e.preventDefault(), e.stopPropagation(), g({
             type: t
           }), null != p ? p(f, _, e) : null != I && I.click()
       }
-    }, [L, g, v, I, p, f, _]),
+    }, [L, g, y, I, p, f, _]),
     U = r.useCallback(e => e.currentTarget !== e.target ? (S || (T(!0), R(!0)), !1) : S ? (L(!1), !1) : void(E && null != I ? D(f, _) : L(!0)), [S, E, I, L, D, f, _]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
@@ -203,8 +197,8 @@ function _(e) {
     focusedY: s,
     columnCounts: n
   }), {
-    columnCounts: v,
-    focusedX: y,
+    columnCounts: y,
+    focusedX: v,
     focusedY: O
   } = E, [I] = r.useState(() => (0, a.P2)(b, 16));
   return r.useEffect(() => {
@@ -214,8 +208,8 @@ function _(e) {
     })
   }, [n]), f({
     navId: t,
-    columnCounts: v,
-    focusedX: y,
+    columnCounts: y,
+    focusedX: v,
     focusedY: O,
     dispatch: I,
     onSelect: l,

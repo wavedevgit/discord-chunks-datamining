@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(522811),
   h = n(763296),
   m = n(526617),
-  g = n(178770);
+  g = n(268365);
 
 function E(e) {
   let {
@@ -26,8 +26,8 @@ function E(e) {
     containerWidth: o,
     onClose: E,
     onSelect: b,
-    analyticsSource: v,
-    suppressPlaySound: y,
+    analyticsSource: y,
+    suppressPlaySound: v,
     shouldValidateSelectedSound: O,
     shouldShowUpsell: I = !0,
     gridNotice: S,
@@ -62,7 +62,7 @@ function E(e) {
         onSelect: b,
         shouldValidateSelectedSound: O,
         containerWidth: o,
-        suppressPlaySound: y,
+        suppressPlaySound: v,
         shouldShowUpsell: I,
         gridNotice: S,
         soundButtonOverlay: N,
@@ -71,7 +71,7 @@ function E(e) {
         defaultSoundsOnly: R,
         inExpressionPicker: T,
         refreshEnabled: D,
-        analyticsSource: v
+        analyticsSource: y
       })
     })
   })

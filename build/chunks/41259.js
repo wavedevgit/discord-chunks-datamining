@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(981631),
   h = n(182294),
   m = n(388032),
-  g = n(604186);
+  g = n(441533);
 
 function E(e) {
   let {
@@ -25,8 +25,8 @@ function E(e) {
     user: n,
     application: E,
     bot: b,
-    accountScopes: v,
-    showLogout: y,
+    accountScopes: y,
+    showLogout: v,
     location: O,
     scopes: I
   } = e, S = u.ZP.getApplicationIconURL({
@@ -50,7 +50,7 @@ function E(e) {
         className: g.botTag,
         verified: null != b.public_flags && (0, d.yE)(b.public_flags, p.xW$.VERIFIED_BOT)
       }) : null]
-    }), v.length > 0 ? (0, r.jsx)(l.x, {
+    }), y.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: m.NW.string(m.t.jFbDnJ)
@@ -59,7 +59,7 @@ function E(e) {
       color: "header-secondary",
       children: m.NW.string(m.t["X+Fdpq"])
     })]
-  }), [v.length, E, b, I]);
+  }), [y.length, E, b, I]);
   return (0, r.jsxs)("header", {
     id: t,
     className: g.header,
@@ -85,7 +85,7 @@ function E(e) {
         size: h.EF.SIZE_80,
         "aria-label": n.username
       })]
-    }), N, y ? (0, r.jsx)("div", {
+    }), N, v ? (0, r.jsx)("div", {
       className: g.currentUser,
       children: (0, r.jsxs)(l.x, {
         variant: "text-sm/normal",

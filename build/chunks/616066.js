@@ -13,7 +13,7 @@ var i = n(120356),
   c = n(125988),
   u = n(998502),
   d = n(388032),
-  f = n(513135);
+  f = n(614490);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,17 +64,17 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
       avatarPlaceholderSrc: h
     } = e, E = (0, l.y9)(_), {
       avatarDecorationSrc: b,
-      eventHandlers: v,
-      avatarPlaceholderSrc: y
+      eventHandlers: y,
+      avatarPlaceholderSrc: v
     } = (0, c.Z)({
       user: n,
       avatarDecorationOverride: (null == t ? void 0 : t.type) === a.Z.AVATAR_DECORATION ? t : void 0,
       size: E,
       onlyAnimateOnHover: !i
     });
-    return (0, r.jsx)(g, m(p({}, v), {
+    return (0, r.jsx)(g, m(p({}, y), {
       avatarDecoration: b,
-      src: i ? null == n ? void 0 : n.getAvatarURL(void 0, 152, !0) : null != h ? h : y,
+      src: i ? null == n ? void 0 : n.getAvatarURL(void 0, 152, !0) : null != h ? h : v,
       imageClassName: i ? f.fadeInAvatarImg : void 0,
       className: o()(f.avatar, {
         [f.avatarPurchased]: u && !i

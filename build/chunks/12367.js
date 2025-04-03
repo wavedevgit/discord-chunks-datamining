@@ -12,14 +12,14 @@ var r = n(566885),
   f = n(192291).aTypedArrayConstructor,
   _ = n(165915);
 e.exports = function(e) {
-  var t, n, p, h, m, g, E, b, v = o(this),
-    y = a(e),
+  var t, n, p, h, m, g, E, b, y = o(this),
+    v = a(e),
     O = arguments.length,
     I = O > 1 ? arguments[1] : void 0,
     S = void 0 !== I,
-    T = c(y);
+    T = c(v);
   if (T && !u(T))
-    for (b = (E = l(y, T)).next, y = []; !(g = i(b, E)).done;) y.push(g.value);
-  for (S && O > 2 && (I = r(I, arguments[2])), n = s(y), h = d(p = new(f(v))(n)), t = 0; n > t; t++) m = S ? I(y[t], t) : y[t], p[t] = h ? _(m) : +m;
+    for (b = (E = l(v, T)).next, v = []; !(g = i(b, E)).done;) v.push(g.value);
+  for (S && O > 2 && (I = r(I, arguments[2])), n = s(v), h = d(p = new(f(y))(n)), t = 0; n > t; t++) m = S ? I(v[t], t) : v[t], p[t] = h ? _(m) : +m;
   return p
 }

@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(420212),
   E = n(231338),
   b = n(388032),
-  v = n(256202);
-let y = e => {
+  y = n(366463);
+let v = e => {
   let {
     emoji: t,
     username: n,
@@ -86,7 +86,7 @@ function O(e) {
     }) : I({
       action: "SEND_REACT_ACTIVITY"
     });
-    let n = y({
+    let n = v({
       emoji: e,
       username: u.ZP.getName(t),
       sourceType: _,
@@ -106,7 +106,7 @@ function O(e) {
     N(h.P.REACT)
   };
   return (0, r.jsx)(s.Z, {
-    headerClassName: R ? v.noBoxShadowMargin : void 0,
+    headerClassName: R ? y.noBoxShadowMargin : void 0,
     guildId: null != n ? n : void 0,
     closePopout: E.dG,
     onSelectEmoji: async (e, t) => {

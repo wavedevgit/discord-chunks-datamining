@@ -56,10 +56,10 @@ function b(e, t) {
   }), e
 }
 
-function v() {
+function y() {
   window.getSelection().removeAllRanges()
 }
-let y = e => {
+let v = e => {
   let {
     children: t,
     close: n,
@@ -71,24 +71,24 @@ let y = e => {
     impressionName: m,
     impressionProperties: g,
     disableClickTrap: E = !1
-  } = e, b = i.useRef(null), y = i.useMemo(() => ({
+  } = e, b = i.useRef(null), v = i.useMemo(() => ({
     current: l
   }), [l]), O = i.useRef(n);
   i.useEffect(() => {
     O.current = n
   }), i.useEffect(() => {
     var e, t, n;
-    let r = null === (e = b.current) || void 0 === e ? void 0 : e.elementRef.current;
+    let r = null == (e = b.current) ? void 0 : e.elementRef.current;
     if (null == r) return;
     let i = e => {
       var t;
       let n = e.target,
-        r = null === (t = b.current) || void 0 === t ? void 0 : t.elementRef.current;
-      !(null != r && (0, s.ty$)(r, n)) && (v(), O.current())
+        r = null == (t = b.current) ? void 0 : t.elementRef.current;
+      null != r && (0, s.ty$)(r, n) || (y(), O.current())
     };
-    return null === (t = r.ownerDocument) || void 0 === t || t.addEventListener("click", i, !0), null === (n = r.ownerDocument) || void 0 === n || n.addEventListener("contextmenu", i, !0), () => {
+    return null == (t = r.ownerDocument) || t.addEventListener("click", i, !0), null == (n = r.ownerDocument) || n.addEventListener("contextmenu", i, !0), () => {
       var e, t;
-      null === (e = r.ownerDocument) || void 0 === e || e.removeEventListener("click", i, !0), null === (t = r.ownerDocument) || void 0 === t || t.removeEventListener("contextmenu", i, !0)
+      null == (e = r.ownerDocument) || e.removeEventListener("click", i, !0), null == (t = r.ownerDocument) || t.removeEventListener("contextmenu", i, !0)
     }
   }, []);
   let I = i.useRef(a);
@@ -96,10 +96,10 @@ let y = e => {
     I.current = a
   }), i.useEffect(() => () => {
     var e;
-    return null === (e = I.current) || void 0 === e ? void 0 : e.call(I)
+    return null == (e = I.current) ? void 0 : e.call(I)
   }, []), i.useLayoutEffect(() => {
     var e;
-    null === (e = b.current) || void 0 === e || e.updatePosition()
+    null == (e = b.current) || e.updatePosition()
   }), (0, u.Z)({
     type: o.ImpressionTypes.MENU,
     name: m,
@@ -115,7 +115,7 @@ let y = e => {
   return (0, r.jsx)(d.W5, {
     onMount: T,
     onUnmount: N,
-    targetRef: y,
+    targetRef: v,
     overrideTargetRect: f,
     position: null != _ ? _ : "right",
     align: null != p ? p : "top",
@@ -151,7 +151,7 @@ class O extends i.PureComponent {
     } = this.props;
     if (!t && e.isOpen) {
       var n, r;
-      null === (r = e.config) || void 0 === r || null === (n = r.onClose) || void 0 === n || n.call(r)
+      null == (r = e.config) || null == (n = r.onClose) || n.call(r)
     }
   }
   componentWillUnmount() {
@@ -169,8 +169,8 @@ class O extends i.PureComponent {
       theme: a,
       config: s,
       rect: l
-    } = this.props, c = null !== (e = this.state.render) && void 0 !== e ? e : this.props.render;
-    return o && null != l && null != s && null != i && null != c && s.context === n ? (0, r.jsx)(y, {
+    } = this.props, c = null != (e = this.state.render) ? e : this.props.render;
+    return o && null != l && null != s && null != i && null != c && s.context === n ? (0, r.jsx)(v, {
       target: i,
       rect: l,
       close: this.close,
@@ -179,7 +179,7 @@ class O extends i.PureComponent {
       position: s.position,
       impressionName: s.impressionName,
       impressionProperties: s.impressionProperties,
-      disableClickTrap: null !== (t = s.disableClickTrap) && void 0 !== t && t,
+      disableClickTrap: null != (t = s.disableClickTrap) && t,
       children: (e, t) => {
         let {
           position: r

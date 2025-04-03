@@ -15,13 +15,13 @@ var r = n(200651),
   f = n(328187),
   _ = n(607889),
   p = n(94432),
-  h = n(614811);
+  h = n(864595);
 let m = 40,
   g = p.e3 / 1e3,
   E = 294,
   b = 45,
-  v = 1,
-  y = 4,
+  y = 1,
+  v = 4,
   O = 6,
   I = 24,
   S = 2,
@@ -54,13 +54,13 @@ function R(e, t) {
 
 function P(e) {
   let t;
-  return Math.floor(((t = e <= g ? m : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - m) + m) + y) / O) * O - y
+  return Math.floor(((t = e <= g ? m : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - m) + m) + v) / O) * O - v
 }
 
 function w(e) {
   if (null == e) return;
-  let t = 2 * v + y;
-  return Math.floor((e + y) / t)
+  let t = 2 * y + v;
+  return Math.floor((e + v) / t)
 }
 
 function D(e, t, n, r, i) {
@@ -86,7 +86,7 @@ function x(e) {
     segmentIndex: o,
     constrainMin: a
   } = e, s = a ? (I - S) * i + S : I * i;
-  0 !== s && D(t, o * (2 * v + y) * n, (r / 2 - s / 2) * n, s * n, v * n)
+  0 !== s && D(t, o * (2 * y + v) * n, (r / 2 - s / 2) * n, s * n, y * n)
 }
 
 function M(e, t) {
@@ -94,7 +94,7 @@ function M(e, t) {
     r = i.useMemo(() => w(t), [t]);
   return i.useMemo(() => {
     var e;
-    return null !== (e = R(null != n ? n : [], r)) && void 0 !== e ? e : N
+    return null != (e = R(null != n ? n : [], r)) ? e : N
   }, [n, r])
 }
 
@@ -147,7 +147,7 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.Z)(), b = i.useMemo(() => P(s), [s]), v = i.useRef(), y = M(n, E), O = i.useRef(l), S = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
+  } = (0, c.Z)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(), v = M(n, E), O = i.useRef(l), S = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
     backgroundFillColor: w,
     lastActiveFillColor: D,
@@ -170,33 +170,33 @@ function G(e) {
       showAll: !n,
       currentTime: e,
       duration: t,
-      numSegments: y.length
+      numSegments: v.length
     });
-    v.current = y.map((e, t) => new _.Z(t < r ? e : 0))
-  }, [y]), i.useEffect(() => {
-    let e = v.current;
+    y.current = v.map((e, t) => new _.Z(t < r ? e : 0))
+  }, [v]), i.useEffect(() => {
+    let e = y.current;
     if (null == e) return;
     let t = L({
       showAll: !l,
       currentTime: o,
       duration: s,
-      numSegments: y.length
+      numSegments: v.length
     });
     for (let n = 0; n < e.length; n++) {
       let r = e[n];
       if (n < t) {
-        r.animateTo(y[n]);
+        r.animateTo(v[n]);
         continue
       }
       r.reset()
     }
-  }, [y, o, s, l]), i.useEffect(() => {
+  }, [v, o, s, l]), i.useEffect(() => {
     let e = null;
 
     function t(n) {
       let r = g.current,
         i = null == r ? void 0 : r.getContext("2d"),
-        o = v.current;
+        o = y.current;
       if (null == r || null == i || null == o) return;
       let a = !1;
       (O.current !== l || S.current !== d) && (O.current = l, S.current = d, N.current = n), null != N.current && n > N.current + A && (N.current = null);
@@ -204,11 +204,11 @@ function G(e) {
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
       let [c, u] = U(R, w, n, N.current);
       a = a || u, i.fillStyle = c;
-      for (let e = 0; e < y.length; e++) x({
+      for (let e = 0; e < v.length; e++) x({
         context: i,
         devicePixelRatio: C,
         canvasHeight: s,
-        segmentValue: y[e],
+        segmentValue: v[e],
         segmentIndex: e,
         constrainMin: !0
       });
@@ -219,7 +219,7 @@ function G(e) {
       a = a || h;
       for (let e = 0; e < o.length; e++) {
         let t = o[e],
-          n = Math.max(t.getCurrentValue(), y[e] - .1);
+          n = Math.max(t.getCurrentValue(), v[e] - .1);
         i.beginPath(), i.fillStyle = t.isReset ? f : p, x({
           context: i,
           devicePixelRatio: C,
@@ -234,7 +234,7 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, C, y, E, o, s, l, d, R, w, D, k, G, B]);
+  }, [g, C, v, E, o, s, l, d, R, w, D, k, G, B]);
   let [, Z] = (0, u.Z)({
     ref: g,
     onDrag: f,

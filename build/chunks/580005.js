@@ -55,22 +55,22 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 10,
-  y = 100,
+let y = 10,
+  v = 100,
   O = 100,
   I = new l.ZP({
-    computeBonus: () => y,
+    computeBonus: () => v,
     computeWeight: e => {
       let t = 1;
       return 0 === e ? t = 100 : e >= 1 && e < 2 ? t = 70 : e >= 2 && e < 4 ? t = 50 : e >= 4 && e < 7 ? t = 30 : e >= 7 && (t = 10), t
     },
     lookupKey: e => {
       var t, n;
-      return null !== (n = null !== (t = d.Z.getGuild(e)) && void 0 !== t ? t : u.Z.getChannel(e)) && void 0 !== n ? n : u.Z.getChannel(u.Z.getDMFromUserId(e))
+      return null != (n = null != (t = d.Z.getGuild(e)) ? t : u.Z.getChannel(e)) ? n : u.Z.getChannel(u.Z.getDMFromUserId(e))
     },
     afterCompute: () => {},
     numFrequentlyItems: O,
-    maxSamples: v
+    maxSamples: y
   }),
   S = null,
   T = null;
@@ -101,7 +101,7 @@ function A(e) {
 
 function C() {
   var e;
-  let t = null === (e = c.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) || void 0 === e ? void 0 : e.guildAndChannels;
+  let t = null == (e = c.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? void 0 : e.guildAndChannels;
   if (null == t) return !1;
   I.overwriteHistory(o().mapValues(t, e => b(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
@@ -128,17 +128,17 @@ class P extends(r = a.ZP.PersistedStore) {
   }
   getScoreWithoutFetchingLatest(e) {
     var t;
-    return null !== (t = I.getFrecency(e)) && void 0 !== t ? t : 0
+    return null != (t = I.getFrecency(e)) ? t : 0
   }
   getScoreForDMWithoutFetchingLatest(e) {
     let t = u.Z.getDMFromUserId(e);
     return null != t ? this.getScoreWithoutFetchingLatest(t) : 0
   }
   getMaxScore() {
-    return O * v
+    return O * y
   }
   getBonusScore() {
-    return y
+    return v
   }
 }
 m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");

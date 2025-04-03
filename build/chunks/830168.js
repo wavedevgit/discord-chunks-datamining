@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120), n(411104), n(26686);
 var o = n(570140),
   a = n(330516),
@@ -37,7 +37,7 @@ function b(e, t) {
   "" !== e && E(e)
 }
 
-function v(e) {
+function y(e) {
   let {
     properties: t
   } = e;
@@ -52,7 +52,7 @@ function v(e) {
       u.default.track(e.event_name, t)
   }
 }
-let y = {
+let v = {
   init(e) {
     let {
       userToken: t,
@@ -63,14 +63,13 @@ let y = {
       errorCallback: s
     } = e;
     null == i && m().then(e => {
-      var c;
-      let u = {
+      let c = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "385706"
+          build_number: "385762"
         },
-        d = l.default.getCurrentUser();
-      null != d && (u.user_id = d.id, u.user_name = d.tag, null != d.email && (u.email = d.email));
-      let f = {
+        u = l.default.getCurrentUser();
+      null != u && (c.user_id = u.id, c.user_name = u.tag, null != u.email && (c.email = u.email));
+      let d = {
         user_token: t,
         user_id: n,
         install_paths: r.map(e => {
@@ -79,12 +78,12 @@ let y = {
           } = e;
           return t
         }),
-        api_endpoint: "".concat((c = "https:", "https:")).concat(window.GLOBAL_ENV.API_ENDPOINT),
+        api_endpoint: "".concat("https:").concat(window.GLOBAL_ENV.API_ENDPOINT),
         environment: window.GLOBAL_ENV.PROJECT_ENV,
-        sentry: u,
+        sentry: c,
         platform: o
       };
-      i = new e.Dispatch(JSON.stringify(f), e => {
+      i = new e.Dispatch(JSON.stringify(d), e => {
         let t = JSON.parse(e);
         a({
           applications: t.applications,
@@ -101,7 +100,7 @@ let y = {
       }, e => {
         s(E(e))
       }, e => {
-        v(JSON.parse(e))
+        y(JSON.parse(e))
       })
     })
   },
@@ -198,10 +197,7 @@ let y = {
     type: "DISPATCH_APPLICATION_LAUNCH_SETUP_START"
   }), new Promise((n, r) => {
     let i = g();
-    if (null == i) {
-      r(Error("native dispatch instance not found"));
-      return
-    }
+    if (null == i) return void r(Error("native dispatch instance not found"));
     i.command(JSON.stringify({
       command: "RunLaunchSetup",
       application_id: e,
@@ -237,10 +233,7 @@ let y = {
   })),
   launch: (e, t, n, r) => new Promise((i, o) => {
     let a = g();
-    if (null == a) {
-      o(Error("native dispatch instance not found"));
-      return
-    }
+    if (null == a) return void o(Error("native dispatch instance not found"));
 
     function s(e, t) {
       "" !== e ? o(E(e)) : i([JSON.parse(t).pid])

@@ -24,9 +24,9 @@ function d() {
   let r = s.Z.getChannelId(),
     i = a.Z.getBasicChannel(r);
   return {
-    guild_id: null !== (e = null == i ? void 0 : i.guild_id) && void 0 !== e ? e : c,
-    channel_id: null !== (t = null == i ? void 0 : i.id) && void 0 !== t ? t : u,
-    channel_type: null !== (n = null == i ? void 0 : i.type) && void 0 !== n ? n : l.d4z.UNKNOWN
+    guild_id: null != (e = null == i ? void 0 : i.guild_id) ? e : c,
+    channel_id: null != (t = null == i ? void 0 : i.id) ? t : u,
+    channel_type: null != (n = null == i ? void 0 : i.type) ? n : l.d4z.UNKNOWN
   }
 }
 

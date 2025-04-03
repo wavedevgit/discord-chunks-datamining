@@ -54,8 +54,8 @@ let _ = "no_payment_source",
   g = null,
   E = null,
   b = {},
-  v = null,
-  y = !1,
+  y = null,
+  v = !1,
   O = null,
   I = !1,
   S = !1,
@@ -65,11 +65,11 @@ let _ = "no_payment_source",
   C = new Set;
 
 function R(e) {
-  null != r && null != v ? r(v) : null != i && i(e), r = null, i = null
+  null != r && null != y ? r(y) : null != i && i(e), r = null, i = null
 }
 
 function P(e) {
-  R(), p = e.skuId, m = e.applicationId, S = e.isIAP, g = e.analyticsLocation, A = e.context, N = e.isGift, T = !0, I = !1, r = e.resolve, i = e.reject, O = null, v = null, E = e.promotionId
+  R(), p = e.skuId, m = e.applicationId, S = e.isIAP, g = e.analyticsLocation, A = e.context, N = e.isGift, T = !0, I = !1, r = e.resolve, i = e.reject, O = null, y = null, E = e.promotionId
 }
 
 function w(e) {
@@ -107,7 +107,7 @@ function x(e) {
 }
 
 function M() {
-  y = !0
+  v = !0
 }
 
 function k(e) {
@@ -115,7 +115,7 @@ function k(e) {
     entitlements: t,
     giftCode: n
   } = e;
-  y = !1, v = t, h = n
+  v = !1, y = t, h = n
 }
 
 function j(e) {
@@ -130,7 +130,7 @@ function U(e) {
   let {
     error: t
   } = e;
-  y = !1, O = t
+  v = !1, O = t
 }
 
 function G() {
@@ -161,7 +161,7 @@ class Z extends(o = a.ZP.Store) {
     return A === e && T
   }
   get isPurchasingSKU() {
-    return y
+    return v
   }
   get forceConfirmationStepOnMount() {
     return I

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[a-zA-Z_][\\w.]*",
     n = "<\\?(lasso(script)?|=)",
     r = "\\]|\\?>",
@@ -117,4 +117,3 @@ function t(e) {
     }].concat(c)
   }
 }
-e.exports = t

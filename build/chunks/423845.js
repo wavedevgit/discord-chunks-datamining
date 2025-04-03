@@ -16,8 +16,8 @@ var r = n(620014),
   g = n(671660),
   E = n(402428),
   b = n(207757),
-  v = n(397985),
-  y = n(706627),
+  y = n(397985),
+  v = n(706627),
   O = n(822480),
   I = n(58834),
   S = n(453342),
@@ -57,7 +57,7 @@ function et(e, t, n, R, P, w) {
     k = t & N,
     U = t & A;
   if (n && (D = P ? n(e, R, P, w) : n(e)), void 0 !== D) return D;
-  if (!y(e)) return e;
+  if (!v(e)) return e;
   var G = E(e);
   if (G) {
     if (D = h(e), !M) return c(e, D)
@@ -77,7 +77,7 @@ function et(e, t, n, R, P, w) {
   if (V) return V;
   w.set(e, D), O(e) ? e.forEach(function(r) {
     D.add(et(r, t, n, r, e, w))
-  }) : v(e) && e.forEach(function(r, i) {
+  }) : y(e) && e.forEach(function(r, i) {
     D.set(i, et(r, t, n, i, e, w))
   });
   var Z = U ? k ? _ : f : k ? S : I,

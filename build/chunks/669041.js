@@ -12,7 +12,7 @@ var r = n(200651),
   l = n(594174),
   c = n(918701),
   u = n(388032),
-  d = n(736003),
+  d = n(719969),
   f = n(800010);
 
 function _(e, t, n) {
@@ -43,7 +43,7 @@ function h(e) {
     onClose: n
   } = e, _ = (0, o.e7)([l.default], () => {
     var e;
-    return null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.email
+    return null == (e = l.default.getCurrentUser()) ? void 0 : e.email
   }), [p, h] = i.useState({
     status: "unknown"
   });

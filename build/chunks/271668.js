@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(98528),
   E = n(551058),
   b = n(555573),
-  v = n(10718),
-  y = n(367790),
+  y = n(10718),
+  v = n(367790),
   O = n(895924),
   I = n(581364),
   S = n(56801),
@@ -30,7 +30,7 @@ var r = n(200651),
   A = n(689079),
   C = n(981631),
   R = n(388032),
-  P = n(613015),
+  P = n(702854),
   w = n(239840);
 let D = 512,
   L = 7,
@@ -60,14 +60,14 @@ let D = 512,
       filteredSectionId: $,
       scrollDown: ee,
       filterSection: et
-    } = v.wi({
+    } = y.wi({
       context: {
         channel: n,
         type: "channel"
       },
       filters: {
         commandTypes: [u.yU.CHAT],
-        builtIns: o ? y.D.ONLY_TEXT : y.D.ALLOW,
+        builtIns: o ? v.D.ONLY_TEXT : v.D.ALLOW,
         applicationCommands: !o
       },
       options: {
@@ -105,13 +105,13 @@ let D = 512,
     }, [W, F]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
-        null === (e = H.current) || void 0 === e || e.scrollToSectionTop(0)
+        null == (e = H.current) || e.scrollToSectionTop(0)
       }
     }, [J, $]);
     let es = i.useCallback(e => {
         if (e.id === $ || e.id === A.bi.FRECENCY) {
           var t;
-          et(null), null === (t = H.current) || void 0 === t || t.scrollToSectionTop(0)
+          et(null), null == (t = H.current) || t.scrollToSectionTop(0)
         } else et(e.id)
       }, [et, $]),
       el = i.useCallback((e, t, r) => {
@@ -187,7 +187,7 @@ let D = 512,
         var i;
         let o = Q[t.sectionIndex],
           a = o.data[t.sectionRowIndex],
-          s = "".concat(o.section.id, ":").concat(null !== (i = null == a ? void 0 : a.id) && void 0 !== i ? i : e);
+          s = "".concat(o.section.id, ":").concat(null != (i = null == a ? void 0 : a.id) ? i : e);
         if (null == a || o.section.id !== a.applicationId && o.section.id !== A.bi.FRECENCY || a.inputType === O.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
         let l = z.find(e => e.id === a.applicationId);
         return (0, r.jsx)(f.ZP.NewCommand, {

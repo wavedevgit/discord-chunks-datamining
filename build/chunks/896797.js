@@ -46,7 +46,7 @@ class p extends(r = i.ZP.PersistedStore) {
   }
   get lastNonVoiceRoute() {
     var e;
-    return null !== (e = u.lastViewedNonVoicePath) && void 0 !== e ? e : s.Z5c.ME
+    return null != (e = u.lastViewedNonVoicePath) ? e : s.Z5c.ME
   }
   get fallbackRoute() {
     return s.Z5c.ME

@@ -47,17 +47,17 @@ function m(e) {
     secondaryColor: r,
     isDarkTheme: !0
   }), {
-    base: v,
-    text: y
+    base: y,
+    text: v
   } = h({
     primaryColor: n,
     secondaryColor: r,
     isDarkTheme: !1
   });
   return {
-    [c]: g(v),
-    [s]: v.css(),
-    [l]: y.css(),
+    [c]: g(y),
+    [s]: y.css(),
+    [l]: v.css(),
     [f]: g(E),
     [u]: E.css(),
     [d]: b.css(),

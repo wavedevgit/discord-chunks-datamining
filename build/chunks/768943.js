@@ -60,10 +60,10 @@ let h = new o.h(e => {
   g = 0,
   E = new Set,
   b = new Set,
-  v = new Map;
+  y = new Map;
 
-function y(e) {
-  let t = v.get(e);
+function v(e) {
+  let t = y.get(e);
   return null != t && t.size > 0
 }
 
@@ -81,8 +81,8 @@ function I(e) {
   null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
-    o = null !== (t = v.get(i)) && void 0 !== t ? t : new Set;
-  o.add(r), v.set(i, o), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
+    o = null != (t = y.get(i)) ? t : new Set;
+  o.add(r), y.set(i, o), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
 function S(e) {
@@ -92,7 +92,7 @@ function S(e) {
   if (null == r) return !1;
   h.delete(n);
   let i = e.messageId;
-  null === (t = v.get(r.saveData.channelId)) || void 0 === t || t.delete(i), b.delete(i), E.delete(i), g = Date.now()
+  null == (t = y.get(r.saveData.channelId)) || t.delete(i), b.delete(i), E.delete(i), g = Date.now()
 }
 
 function T() {
@@ -100,14 +100,14 @@ function T() {
 }
 
 function N() {
-  m = !0, h.clear(), v.clear(), b.clear()
+  m = !0, h.clear(), y.clear(), b.clear()
 }
 
 function A(e) {
   let {
     savedMessages: t
   } = e;
-  for (let e of (m = !1, h.clear(), v.clear(), b.clear(), t)) I(e)
+  for (let e of (m = !1, h.clear(), y.clear(), b.clear(), t)) I(e)
 }
 
 function C(e) {
@@ -183,7 +183,7 @@ function M(e) {
   let {
     channel: t
   } = e;
-  if (0 === b.size || m || !y(t.id)) return !1;
+  if (0 === b.size || m || !v(t.id)) return !1;
   m = !0
 }
 
@@ -193,7 +193,7 @@ function k(e) {
   } = e;
   if (0 === b.size || m) return !1;
   let n = !1;
-  for (let e of t) y(e.id) && (m = !0, n = !0);
+  for (let e of t) v(e.id) && (m = !0, n = !0);
   return n
 }
 
@@ -201,7 +201,7 @@ function j(e) {
   let {
     channel: t
   } = e;
-  if (0 === b.size || m || !y(t.id)) return !1;
+  if (0 === b.size || m || !v(t.id)) return !1;
   m = !0
 }
 
@@ -210,7 +210,7 @@ function U(e) {
   let {
     user: n
   } = e;
-  if (0 === b.size || m || n.id !== (null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
+  if (0 === b.size || m || n.id !== (null == (t = l.default.getCurrentUser()) ? void 0 : t.id)) return !1;
   m = !0
 }
 

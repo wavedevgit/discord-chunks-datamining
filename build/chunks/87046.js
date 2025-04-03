@@ -7,5 +7,5 @@ var r = n(926515),
   s = RegExp.prototype;
 e.exports = function(e) {
   var t = e.flags;
-  return void 0 === t && !("flags" in s) && !i(e, "flags") && o(s, e) ? r(a, e) : t
+  return !(void 0 === t && !("flags" in s) && !i(e, "flags") && o(s, e)) ? t : r(a, e)
 }

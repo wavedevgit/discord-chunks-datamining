@@ -88,12 +88,12 @@ let m = e => {
 
     function g() {
       var e;
-      o && (null == m || null === (e = m.current) || void 0 === e || e.play())
+      o && (null == m || null == (e = m.current) || e.play())
     }
 
     function E() {
       var e;
-      o && (null == m || null === (e = m.current) || void 0 === e || e.pause())
+      o && (null == m || null == (e = m.current) || e.pause())
     }
 
     function b() {
@@ -102,10 +102,10 @@ let m = e => {
         height: "100%",
         maxHeight: "inherit",
         objectFit: "contain"
-      } : c ? v() : {}
+      } : c ? y() : {}
     }
 
-    function v() {
+    function y() {
       return {
         maxWidth: f.width,
         maxHeight: f.height,

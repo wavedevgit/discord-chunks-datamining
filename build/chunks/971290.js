@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = e.inherit(e.QUOTE_STRING_MODE, {
       illegal: null
@@ -45,4 +45,3 @@ function t(e) {
     illegal: /\/\/|->|=>|\[\[/
   }
 }
-e.exports = t

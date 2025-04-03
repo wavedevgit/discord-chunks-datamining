@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "Stata",
     aliases: ["do", "ado"],
@@ -27,4 +27,3 @@ function t(e) {
     }, e.COMMENT("^[ 	]*\\*.*$", !1), e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
   }
 }
-e.exports = t

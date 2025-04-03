@@ -26,7 +26,7 @@ let l = () => 0;
 class c {
   getPadding(e) {
     var t;
-    return null == this.padding ? this.itemGutter : "number" == typeof this.padding ? this.padding : null !== (t = this.padding[e]) && void 0 !== t ? t : this.itemGutter
+    return null == this.padding ? this.itemGutter : "number" == typeof this.padding ? this.padding : null != (t = this.padding[e]) ? t : this.itemGutter
   }
   getPaddingLeft() {
     return null != this.paddingHorizontal ? this.paddingHorizontal : this.getPadding("left")
@@ -82,7 +82,7 @@ class c {
       p = this.getPaddingBottom(),
       h = this.getPaddingLeft(),
       m = this.getPaddingRight(),
-      g = null !== (e = this.marginLeft) && void 0 !== e ? e : 0;
+      g = null != (e = this.marginLeft) ? e : 0;
     this.columnHeights = Array(n).fill(_), this.columnWidth = (u - m - h - l * (n - 1) - (d ? l : 0)) / n, this.itemGrid = [];
     let E = 0;
     for (; E < this.sections.length;) {
@@ -115,7 +115,7 @@ class c {
             row: this.currentRow,
             column: i
           };
-        this.coordsMap[e] = c, this.gridData.coordinates[e] = d, this.columnHeights[i] = n + o + l, this.itemGrid[i] = null !== (t = this.itemGrid[i]) && void 0 !== t ? t : [], this.itemGrid[i].push(e), u++
+        this.coordsMap[e] = c, this.gridData.coordinates[e] = d, this.columnHeights[i] = n + o + l, this.itemGrid[i] = null != (t = this.itemGrid[i]) ? t : [], this.itemGrid[i].push(e), u++
       }
       d > 0 && (this.coordsMap[o(E)] = {
         position: "sticky",

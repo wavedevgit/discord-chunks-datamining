@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(998698),
   E = n(710845),
   b = n(117530),
-  v = n(459273),
-  y = n(403182),
+  y = n(459273),
+  v = n(403182),
   O = n(541716),
   I = n(752305),
   S = n(30465),
@@ -30,7 +30,7 @@ var r = n(200651),
   A = n(925994),
   C = n(981631),
   R = n(388032),
-  P = n(998735);
+  P = n(302195);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,12 +93,12 @@ class j extends i.Component {
       let e;
       e = this.props.useSlate ? this.props.textValue : (0, A.sk)(this.props.richValue, {
         mode: "plain"
-      }), null === (t = (n = this.props).onChange) || void 0 === t || t.call(n, null, e, (0, I.JM)(e))
+      }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, I.JM)(e))
     } else this.props.textValue !== e.textValue && this.saveCurrentTextThrottled()
   }
   componentWillUnmount() {
     var e, t;
-    this.saveCurrentText(), null === (e = (t = this)._unsubscribe) || void 0 === e || e.call(t), window.removeEventListener("beforeunload", this.handleBeforeUnload), document.removeEventListener("selectionchange", this.handleSelectionChange), this._focusBlurQueue = null, this._unsubscribe = null
+    this.saveCurrentText(), null == (e = (t = this)._unsubscribe) || e.call(t), window.removeEventListener("beforeunload", this.handleBeforeUnload), document.removeEventListener("selectionchange", this.handleSelectionChange), this._focusBlurQueue = null, this._unsubscribe = null
   }
   blur() {
     let e = this.ref.current;
@@ -106,7 +106,7 @@ class j extends i.Component {
   }
   submit(e) {
     var t;
-    null === (t = this.ref.current) || void 0 === t || t.submit(e)
+    null == (t = this.ref.current) || t.submit(e)
   }
   insertEmoji(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -144,7 +144,7 @@ class j extends i.Component {
   getCurrentWord() {
     var e;
     let t = this.ref.current;
-    return null !== (e = null == t ? void 0 : t.getCurrentWord()) && void 0 !== e ? e : {
+    return null != (e = null == t ? void 0 : t.getCurrentWord()) ? e : {
       word: null,
       isAtStart: !1
     }
@@ -156,27 +156,27 @@ class j extends i.Component {
   getCurrentCommandOption() {
     var e, t;
     let n = this.ref.current;
-    return null !== (t = null == n ? void 0 : null === (e = n.getCurrentCommandOption) || void 0 === e ? void 0 : e.call(n)) && void 0 !== t ? t : null
+    return null != (t = null == n || null == (e = n.getCurrentCommandOption) ? void 0 : e.call(n)) ? t : null
   }
   getCurrentCommandOptionValue() {
     var e, t;
     let n = this.ref.current;
-    return null !== (t = null == n ? void 0 : null === (e = n.getCurrentCommandOptionValue) || void 0 === e ? void 0 : e.call(n)) && void 0 !== t ? t : []
+    return null != (t = null == n || null == (e = n.getCurrentCommandOptionValue) ? void 0 : e.call(n)) ? t : []
   }
   getCommandOptionValues() {
     var e, t;
     let n = this.ref.current;
-    return null !== (t = null == n ? void 0 : null === (e = n.getCommandOptionValues) || void 0 === e ? void 0 : e.call(n)) && void 0 !== t ? t : {}
+    return null != (t = null == n || null == (e = n.getCommandOptionValues) ? void 0 : e.call(n)) ? t : {}
   }
   getFirstText() {
     var e;
     let t = this.ref.current;
-    return null !== (e = null == t ? void 0 : t.getFirstText()) && void 0 !== e ? e : null
+    return null != (e = null == t ? void 0 : t.getFirstText()) ? e : null
   }
   getSlateEditor() {
     var e, t;
     let n = this.ref.current;
-    return null !== (t = null == n ? void 0 : null === (e = n.getSlateEditor) || void 0 === e ? void 0 : e.call(n)) && void 0 !== t ? t : null
+    return null != (t = null == n || null == (e = n.getSlateEditor) ? void 0 : e.call(n)) ? t : null
   }
   fixFocus(e) {
     e.focused && !this.props.focused ? this.blur() : !e.focused && this.props.focused && this.focus()
@@ -184,7 +184,7 @@ class j extends i.Component {
   appendText(e, t) {
     var n;
     let r = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-    null === (n = this.ref.current) || void 0 === n || n.insertText(e, t, r)
+    null == (n = this.ref.current) || n.insertText(e, t, r)
   }
   getPlaceholder() {
     let {
@@ -208,7 +208,7 @@ class j extends i.Component {
       type: g,
       fontSize: E,
       useSlate: b,
-      spellcheckEnabled: y,
+      spellcheckEnabled: v,
       useNewSlashCommands: S,
       canOnlyUseTextCommands: A,
       className: R,
@@ -255,14 +255,14 @@ class j extends i.Component {
         [P.textAreaForUserProfile]: g === O.Ie.USER_PROFILE,
         [P.textAreaForOverlayInlineReply]: g === O.Ie.OVERLAY_INLINE_REPLY
       }),
-      spellcheckEnabled: y,
+      spellcheckEnabled: v,
       useNewSlashCommands: S,
-      disableAutoFocus: f.tq || null !== (n = g.disableAutoFocus) && void 0 !== n && n,
-      disableEnterToSubmit: null !== (i = null === (e = g.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
-      "aria-controls": null !== (o = V.id) && void 0 !== o ? o : void 0,
+      disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
+      disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
+      "aria-controls": null != (o = V.id) ? o : void 0,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== V.id || void 0,
-      "aria-activedescendant": null !== (s = V.activeDescendant) && void 0 !== s ? s : void 0,
+      "aria-activedescendant": null != (s = V.activeDescendant) ? s : void 0,
       "aria-invalid": l.length > M,
       "aria-describedby": U,
       "aria-labelledby": G,
@@ -272,7 +272,7 @@ class j extends i.Component {
     }, Z), {
       type: g,
       value: u ? (0, I.JM)("") : c,
-      canUseCommands: null === (t = g.commands) || void 0 === t ? void 0 : t.enabled,
+      canUseCommands: null == (t = g.commands) ? void 0 : t.enabled,
       canOnlyUseTextCommands: A
     })) : (0, r.jsx)(T.Z, x(D({
       ref: this.ref
@@ -280,10 +280,10 @@ class j extends i.Component {
       value: u ? "" : l
     }));
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(v.d9, {
+      children: [(0, r.jsx)(y.d9, {
         event: C.CkL.INSERT_TEXT,
         handler: this.handleInsertText
-      }), (0, r.jsx)(v.d9, {
+      }), (0, r.jsx)(y.d9, {
         event: C.CkL.CLEAR_TEXT,
         handler: this.handleClearText
       }), H]
@@ -294,11 +294,11 @@ class j extends i.Component {
     super(e), t = this, w(this, "ref", i.createRef()), w(this, "_focusBlurQueue", Promise.resolve()), w(this, "_unsubscribe", void 0), w(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
-        this.props.onSelectionChanged(null === (t = (n = document).getSelection) || void 0 === t ? void 0 : null === (e = t.call(n)) || void 0 === e ? void 0 : e.toString())
+        this.props.onSelectionChanged(null == (t = (n = document).getSelection) || null == (e = t.call(n)) ? void 0 : e.toString())
       }
     }), w(this, "focus", () => {
       var e;
-      null === (e = this._focusBlurQueue) || void 0 === e || e.then(() => {
+      null == (e = this._focusBlurQueue) || e.then(() => {
         this.setState({
           focused: !0
         }, () => {
@@ -315,24 +315,24 @@ class j extends i.Component {
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
     }), w(this, "handleBeforeUnload", () => this.saveCurrentText()), w(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, !1), 500)), w(this, "handleEnter", e => {
       var t, n;
-      return null === (t = (n = this.props).onEnter) || void 0 === t ? void 0 : t.call(n, e)
+      return null == (t = (n = this.props).onEnter) ? void 0 : t.call(n, e)
     }), w(this, "handleTab", () => {
       var e, t;
-      return null === (e = (t = this.props).onTab) || void 0 === e ? void 0 : e.call(t)
+      return null == (e = (t = this.props).onTab) ? void 0 : e.call(t)
     }), w(this, "handleMoveSelection", e => {
       var t, n;
-      return null === (t = (n = this.props).onMoveSelection) || void 0 === t ? void 0 : t.call(n, e)
+      return null == (t = (n = this.props).onMoveSelection) ? void 0 : t.call(n, e)
     }), w(this, "maybeShowAutocomplete", () => {
       var e, t;
-      return null === (e = (t = this.props).onMaybeShowAutocomplete) || void 0 === e ? void 0 : e.call(t)
+      return null == (e = (t = this.props).onMaybeShowAutocomplete) ? void 0 : e.call(t)
     }), w(this, "hideAutocomplete", () => {
       var e, t;
-      return null === (e = (t = this.props).onHideAutocomplete) || void 0 === e ? void 0 : e.call(t)
+      return null == (e = (t = this.props).onHideAutocomplete) ? void 0 : e.call(t)
     }), w(this, "handleSaveCurrentText", e => {
       _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
     }), w(this, "handleClearText", () => {
       var e, t;
-      null === (e = (t = this.props).onChange) || void 0 === e || e.call(t, null, "", (0, I.JM)(""))
+      null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, I.JM)(""))
     }), w(this, "handleInsertText", e => {
       let {
         plainText: t,
@@ -375,10 +375,10 @@ class j extends i.Component {
             requireConfirm: !0,
             showLargeMessageDialog: n
           });
-          let l = null !== (r = a.drafts.commandType) && void 0 !== r ? r : a.drafts.type,
+          let l = null != (r = a.drafts.commandType) ? r : a.drafts.type,
             c = null,
             u = g.Z.getActiveOption(t.id);
-          null != (c = (null == u ? void 0 : u.type) === h.jw.ATTACHMENT ? u : null === (o = s.options) || void 0 === o ? void 0 : o.find(e => {
+          null != (c = (null == u ? void 0 : u.type) === h.jw.ATTACHMENT ? u : null == (o = s.options) ? void 0 : o.find(e => {
             if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(t.id, e.name, l)
           })) && p.Z.setFile({
             channelId: t.id,
@@ -442,9 +442,9 @@ function U(e, t) {
     if (1 === r.length && "image/png" === r[0].type && null != o) {
       var a;
       let t = r[0],
-        n = null !== (a = G(e.getData(o.type))) && void 0 !== a ? a : t.name;
+        n = null != (a = G(e.getData(o.type))) ? a : t.name;
       return {
-        files: [(0, y.dp)(t, n, t.type)]
+        files: [(0, v.dp)(t, n, t.type)]
       }
     }
     return {
@@ -458,7 +458,7 @@ function U(e, t) {
         type: "text/plain"
       });
       return {
-        files: [(0, y.dp)(e, "message.txt", "text/plain")],
+        files: [(0, v.dp)(e, "message.txt", "text/plain")],
         convertedStringToFile: !0
       }
     }

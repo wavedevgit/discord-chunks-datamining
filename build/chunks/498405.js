@@ -88,13 +88,13 @@ function m(e) {
   r.useLayoutEffect(() => {
     E.current = m
   }, [m]);
-  let [b, v] = r.useReducer(i.Z, {
+  let [b, y] = r.useReducer(i.Z, {
     items: n,
     focusPath: s,
     focusIndex: -1
-  }), y = r.useMemo(() => (0, a.P2)(v, 30), [v]);
+  }), v = r.useMemo(() => (0, a.P2)(y, 30), [y]);
   r.useEffect(() => {
-    v({
+    y({
       type: i.B.UPDATE_ITEMS,
       items: n
     })
@@ -106,13 +106,13 @@ function m(e) {
     onItemMouseEnterMemoizer: C
   }] = r.useState(() => ({
     onItemFocusMemoizer: new a.$o(e => () => {
-      S(!0), v({
+      S(!0), y({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
     }),
     onItemMouseEnterMemoizer: new a.$o(e => () => {
-      N(!1), v({
+      N(!1), y({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -126,28 +126,25 @@ function m(e) {
       case o.Us.NAVIGATE_DOWN:
       case o.Us.NAVIGATE_IN:
       case o.Us.NAVIGATE_OUT:
-        e.preventDefault(), e.stopPropagation(), N(!0), y({
+        e.preventDefault(), e.stopPropagation(), N(!0), v({
           type: n
         });
         return;
       case o.Us.SELECT_FOCUSED_ITEM:
         var r;
         if (e.repeat || h(e.target)) return;
-        if (e.preventDefault(), e.stopPropagation(), N(!1), y({
+        if (e.preventDefault(), e.stopPropagation(), N(!1), v({
             type: n
-          }), null != c) {
-          c(O);
-          return
-        }
-        let i = p(null !== (r = e.target.ownerDocument) && void 0 !== r ? r : document, _(t, O));
+          }), null != c) return void c(O);
+        let i = p(null != (r = e.target.ownerDocument) ? r : document, _(t, O));
         null == i || i.click()
     }
-  }, [y, t, O, c, g]), P = r.useCallback(() => {
+  }, [v, t, O, c, g]), P = r.useCallback(() => {
     I || S(!0)
   }, [I]), w = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && S(!1)
   }, [I]), D = r.useCallback(() => {
-    v({
+    y({
       type: i.B.SET_FOCUS_PATH,
       path: []
     }), S(!1)
@@ -190,11 +187,11 @@ function m(e) {
     })
   }, [t, L, A, C]);
   return r.useMemo(() => ({
-    dispatch: y,
+    dispatch: v,
     getContainerProps: x,
     getSubmenuProps: M,
     getItemProps: k,
     isFocused: L,
     isUsingKeyboardNavigation: T
-  }), [y, x, M, k, L, T])
+  }), [v, x, M, k, L, T])
 }

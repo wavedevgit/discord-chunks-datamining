@@ -19,10 +19,10 @@ var r = n(200651),
   m = n(998502),
   g = n(981631),
   E = n(388032),
-  b = n(421957),
-  v = n(685786);
+  b = n(948979),
+  y = n(20493);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,7 +38,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -91,7 +91,7 @@ function A(e) {
     })
   }, []);
   let m = (0, c.Z)(h),
-    g = Math.max(16, (N + T - (null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : 0)) / 2);
+    g = Math.max(16, (N + T - (null != (t = null == m ? void 0 : m.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -101,8 +101,8 @@ function A(e) {
     "aria-hidden": !0,
     alt: "",
     style: {
-      width: null !== (n = _.width) && void 0 !== n ? n : "initial",
-      height: null !== (o = _.height) && void 0 !== o ? o : T,
+      width: null != (n = _.width) ? n : "initial",
+      height: null != (o = _.height) ? o : T,
       marginLeft: g,
       marginRight: g,
       marginTop: null != _.height ? T - _.height - 33 : -33
@@ -116,7 +116,7 @@ class C extends i.Component {
       file: this.props.upload.item.file
     }) : (0, r.jsx)("div", {
       className: a()(b.icon, {
-        [b[null !== (e = this.props.upload.classification) && void 0 !== e ? e : ""]]: !0
+        [b[null != (e = this.props.upload.classification) ? e : ""]]: !0
       })
     })
   }
@@ -124,7 +124,7 @@ class C extends i.Component {
 class R extends i.Component {
   componentDidMount() {
     var e;
-    (null === (e = this.props.upload) || void 0 === e ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === u.ow.WEB && p.default.track(g.rMx.OPEN_MODAL, {
+    (null == (e = this.props.upload) ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === u.ow.WEB && p.default.track(g.rMx.OPEN_MODAL, {
       type: "Upload Large Message",
       message_content_length: this.props.upload.item.file.size
     }), h.isPlatformEmbedded && m.ZP.focus()
@@ -134,8 +134,8 @@ class R extends i.Component {
   }
   componentDidUpdate(e) {
     var t, n, r, i;
-    (null === (t = e.upload) || void 0 === t ? void 0 : t.filename) !== (null === (n = this.props.upload) || void 0 === n ? void 0 : n.filename) && this.setState({
-      filename: null !== (i = null === (r = this.props.upload) || void 0 === r ? void 0 : r.filename) && void 0 !== i ? i : ""
+    (null == (t = e.upload) ? void 0 : t.filename) !== (null == (n = this.props.upload) ? void 0 : n.filename) && this.setState({
+      filename: null != (i = null == (r = this.props.upload) ? void 0 : r.filename) ? i : ""
     })
   }
   render() {
@@ -180,7 +180,7 @@ class R extends i.Component {
               children: E.NW.string(E.t.ILJuBg)
             })
           }), (0, r.jsx)(s.oil, {
-            className: a()(b.channelTextAreaUpload, v.marginTop8),
+            className: a()(b.channelTextAreaUpload, y.marginTop8),
             value: this.state.filename,
             onChange: e => this.setState({
               filename: e
@@ -195,7 +195,7 @@ class R extends i.Component {
                 children: E.NW.string(E.t.eOB2eX)
               })
             }), (0, r.jsx)(s.oil, {
-              className: a()(b.channelTextAreaUpload, v.marginTop8),
+              className: a()(b.channelTextAreaUpload, y.marginTop8),
               placeholder: E.NW.string(E.t.RNH1jo),
               value: this.state.description,
               onChange: e => this.setState({
@@ -206,7 +206,7 @@ class R extends i.Component {
               }
             })]
           }) : null, !0 !== o && (0, r.jsx)(s.XZJ, {
-            className: v.marginBottom20,
+            className: y.marginBottom20,
             value: l,
             onChange: (e, t) => this.setState({
               hasSpoiler: t
@@ -242,16 +242,16 @@ class R extends i.Component {
   }
   constructor(e) {
     var t, n, r, i, o, a;
-    super(e), y(this, "cancelAll", () => {
+    super(e), v(this, "cancelAll", () => {
       l.Z.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
-    }), y(this, "cancel", () => {
+    }), v(this, "cancel", () => {
       this.props.onClose()
-    }), y(this, "handleTextChange", (e, t, n) => {
+    }), v(this, "handleTextChange", (e, t, n) => {
       this.setState({
         textValue: t,
         richValue: n
       })
-    }), y(this, "handleSubmit", () => {
+    }), v(this, "handleSubmit", () => {
       let {
         upload: e,
         onClose: t,
@@ -271,10 +271,10 @@ class R extends i.Component {
     let s = e.ignoreDraft ? "" : _.Z.getDraft(this.props.channelId, e.draftType);
     this.state = S(O({}, (0, d.eK)(s)), {
       textFocused: !0,
-      hasSpoiler: null !== (i = null === (t = e.upload) || void 0 === t ? void 0 : t.spoiler) && void 0 !== i && i,
-      filename: null !== (o = null === (n = e.upload) || void 0 === n ? void 0 : n.filename) && void 0 !== o ? o : "",
+      hasSpoiler: null != (i = null == (t = e.upload) ? void 0 : t.spoiler) && i,
+      filename: null != (o = null == (n = e.upload) ? void 0 : n.filename) ? o : "",
       contentWarningProps: null,
-      description: null !== (a = null === (r = e.upload) || void 0 === r ? void 0 : r.description) && void 0 !== a ? a : ""
+      description: null != (a = null == (r = e.upload) ? void 0 : r.description) ? a : ""
     })
   }
 }

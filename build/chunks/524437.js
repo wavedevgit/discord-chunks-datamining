@@ -12,7 +12,7 @@ n.d(t, {
   Pi: () => E,
   Q2: () => b,
   Q4: () => f,
-  Us: () => v,
+  Us: () => y,
   X: () => u,
   Xr: () => _,
   aV: () => eP,
@@ -21,7 +21,7 @@ n.d(t, {
   c$: () => e2,
   dp: () => e0,
   f9: () => P,
-  hg: () => y,
+  hg: () => v,
   l1: () => O,
   n9: () => I,
   nI: () => d,
@@ -70,10 +70,10 @@ var r = n(230367),
   b = function(e) {
     return e[e.UNSET = 0] = "UNSET", e[e.DARK = 1] = "DARK", e[e.LIGHT = 2] = "LIGHT", e[e.DARKER = 3] = "DARKER", e[e.MIDNIGHT = 4] = "MIDNIGHT", e
   }({}),
-  v = function(e) {
+  y = function(e) {
     return e[e.MINT_APPLE = 0] = "MINT_APPLE", e[e.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", e[e.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", e[e.HANAMI = 3] = "HANAMI", e[e.SUNRISE = 4] = "SUNRISE", e[e.COTTON_CANDY = 5] = "COTTON_CANDY", e[e.LOFI_VIBES = 6] = "LOFI_VIBES", e[e.DESERT_KHAKI = 7] = "DESERT_KHAKI", e[e.SUNSET = 8] = "SUNSET", e[e.CHROMA_GLOW = 9] = "CHROMA_GLOW", e[e.FOREST = 10] = "FOREST", e[e.CRIMSON_MOON = 11] = "CRIMSON_MOON", e[e.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", e[e.MARS = 13] = "MARS", e[e.DUSK = 14] = "DUSK", e[e.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", e[e.EASTER_EGG = 16] = "EASTER_EGG", e[e.RETRO_STORM = 17] = "RETRO_STORM", e[e.NEON_NIGHTS = 18] = "NEON_NIGHTS", e[e.SEPIA = 19] = "SEPIA", e[e.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", e[e.AURORA = 21] = "AURORA", e[e.BLURPLE_TWILIGHT = 22] = "BLURPLE_TWILIGHT", e
   }({}),
-  y = function(e) {
+  v = function(e) {
     return e[e.AUTO = 0] = "AUTO", e[e.H12 = 1] = "H12", e[e.H23 = 2] = "H23", e
   }({}),
   O = function(e) {
@@ -142,7 +142,7 @@ class A extends a.C {
           o.localization = em.internalBinaryRead(e, e.uint32(), n, o.localization);
           break;
         case 13:
-          o.appearance = ev.internalBinaryRead(e, e.uint32(), n, o.appearance);
+          o.appearance = ey.internalBinaryRead(e, e.uint32(), n, o.appearance);
           break;
         case 14:
           o.guildFolders = eS.internalBinaryRead(e, e.uint32(), n, o.guildFolders);
@@ -187,7 +187,7 @@ class A extends a.C {
     return o
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && P.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && D.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && H.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && en.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ei.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && ea.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && el.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eu.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ef.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && em.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && ev.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eS.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eC.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && ex.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ek.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eV.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && eH.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && ez.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && eY.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && eQ.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && eJ.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && e4.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && P.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && D.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && H.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && en.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ei.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && ea.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && el.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eu.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ef.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && em.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && ey.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eS.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eC.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && ex.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ek.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eV.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && eH.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && ez.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && eY.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && eQ.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && eJ.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && e4.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -256,7 +256,7 @@ class A extends a.C {
       no: 13,
       name: "appearance",
       kind: "message",
-      T: () => ev
+      T: () => ey
     }, {
       no: 14,
       name: "guild_folders",
@@ -2366,7 +2366,7 @@ class eb extends a.C {
       no: 9,
       name: "timestamp_hour_cycle",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", y]
+      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", v]
     }, {
       no: 10,
       name: "happening_now_cards_disabled",
@@ -2390,8 +2390,8 @@ class eb extends a.C {
     }])
   }
 }
-let ev = new eb;
-class ey extends a.C {
+let ey = new eb;
+class ev extends a.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, o.C, {
@@ -2428,7 +2428,7 @@ class ey extends a.C {
     }])
   }
 }
-let eO = new ey;
+let eO = new ev;
 class eI extends a.C {
   create(e) {
     let t = {

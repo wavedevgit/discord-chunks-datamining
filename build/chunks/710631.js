@@ -21,7 +21,7 @@ var r = n(200651),
   E = n(981631),
   b = n(388032);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -81,17 +81,14 @@ function C(e) {
       let r = _.Z.getGuild(e);
       null != r && (0, u.b)(p.Z, r) && r.id !== n && t.push(r)
     }), t
-  }, [n]), [v, O] = i.useState({});
+  }, [n]), [y, O] = i.useState({});
 
   function N(e, t) {
     let n = f.ZP.getDefaultChannel(e.id, !0, E.Plq.CREATE_INSTANT_INVITE);
     if (null != n) {
-      if (O(I(y({}, v), {
+      if (O(I(v({}, y), {
           [e.id]: !0
-        })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) {
-        A(t, e.vanityURLCode);
-        return
-      }
+        })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void A(t, e.vanityURLCode);
       l.ZP.createInvite(n.id, {
         [S]: 1,
         unique: !0
@@ -101,7 +98,7 @@ function C(e) {
   return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(a.sNh, {
     id: "invite-to-server",
     label: b.NW.string(b.t.Sd8Ix8),
-    children: d.map(e => v[e.id] ? (0, r.jsx)(a.sNh, {
+    children: d.map(e => y[e.id] ? (0, r.jsx)(a.sNh, {
       id: e.id,
       disabled: !0,
       label: b.NW.string(b.t.PuLLzM)

@@ -5,8 +5,7 @@ var r = n(196322),
   a = n(830911),
   s = n(406705),
   l = n(828091);
-
-function c(e, t, n) {
+e.exports = function(e, t, n) {
   t = r(t, e);
   for (var c = -1, u = t.length, d = !1; ++c < u;) {
     var f = l(t[c]);
@@ -15,4 +14,3 @@ function c(e, t, n) {
   }
   return d || ++c != u ? d : !!(u = null == e ? 0 : e.length) && s(u) && a(f, u) && (o(e) || i(e))
 }
-e.exports = c

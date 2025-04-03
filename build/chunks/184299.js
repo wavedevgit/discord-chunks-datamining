@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => v,
+  ZP: () => y,
   iF: () => E,
   iw: () => g,
   km: () => b
@@ -114,7 +114,7 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
     },
     setVideoProgress: (n, r, i) => {
       var a, s;
-      let c = Math.max(null !== (s = null === (a = t().videoProgress[n]) || void 0 === a ? void 0 : a.maxTimestampSec) && void 0 !== s ? s : 0, Math.floor(r));
+      let c = Math.max(null != (s = null == (a = t().videoProgress[n]) ? void 0 : a.maxTimestampSec) ? s : 0, Math.floor(r));
       (0, o.j)(() => e({
         videoProgress: u(l({}, t().videoProgress), {
           [n]: {
@@ -168,7 +168,7 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
     storage: (0, r.FL)(() => ({
       getItem: e => {
         var t;
-        return null !== (t = a.K.get(e)) && void 0 !== t ? t : null
+        return null != (t = a.K.get(e)) ? t : null
       },
       setItem: (e, t) => a.K.set(e, t),
       removeItem: e => a.K.remove(e)
@@ -180,4 +180,4 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
     }),
     version: 0
   })),
-  v = b
+  y = b

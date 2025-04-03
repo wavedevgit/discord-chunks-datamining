@@ -73,10 +73,11 @@ var r = n(192379),
       m.current && m.current.setOptions(h)
     }, [h]), (0, l.LI)(function() {
       if (null != e && null != t) {
-        var r = (n.createPopper || o.fi)(e, t, h);
-        return m.current = r,
+        var r = n.createPopper || o.fi,
+          i = r(e, t, h);
+        return m.current = i,
           function() {
-            r.destroy(), m.current = null
+            i.destroy(), m.current = null
           }
       }
     }, [e, t, n.createPopper]), {

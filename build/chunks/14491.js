@@ -50,7 +50,7 @@ function p(e) {
   function E() {
     var e;
     if (null == t) return;
-    let n = (0, c.yE)(null !== (e = t.flags) && void 0 !== e ? e : 0, d.udG.EMBEDDED) ? (0, u.H)({
+    let n = (0, c.yE)(null != (e = t.flags) ? e : 0, d.udG.EMBEDDED) ? (0, u.H)({
       applicationId: t.id,
       referrerId: null == m ? void 0 : m.id
     }) : (0, u.J)(_({

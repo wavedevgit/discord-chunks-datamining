@@ -22,7 +22,7 @@ let c = s.IWh.UNKNOWN,
 
 function f(e) {
   var t;
-  c = null != e.type ? e.type : s.IWh.UNKNOWN, u = null !== (t = e.effectiveSpeed) && void 0 !== t ? t : s.IyS.UNKNOWN, d = e.serviceProvider, p.emitChange()
+  c = null != e.type ? e.type : s.IWh.UNKNOWN, u = null != (t = e.effectiveSpeed) ? t : s.IyS.UNKNOWN, d = e.serviceProvider, p.emitChange()
 }
 class _ extends(r = i.ZP.Store) {
   initialize() {

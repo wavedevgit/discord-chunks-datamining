@@ -72,25 +72,28 @@ function E(e, t) {
   return i
 }
 let b = "payment-modal",
-  v = "gift-payment-modal",
-  y = new Set([u.h8.REVIEW, u.h8.CONFIRM, u.h8.GIFT_CUSTOMIZATION]);
+  y = "gift-payment-modal",
+  v = new Set([u.h8.REVIEW, u.h8.CONFIRM, u.h8.GIFT_CUSTOMIZATION]);
 
 function O(e) {
-  let t;
-  let {
-    skuId: n,
-    isGift: u = !1,
-    giftMessage: _,
-    giftingOrigin: h,
-    onClose: E,
-    onComplete: O,
-    analyticsLocations: I,
-    analyticsObject: S,
-    giftRecipient: T,
-    variantsReturnStyle: N
-  } = e, A = !1, C = (0, i.Z)(), R = e => {
-    t = e
-  }, P = u ? v : b;
+  let t, {
+      skuId: n,
+      isGift: u = !1,
+      giftMessage: _,
+      giftingOrigin: h,
+      onClose: E,
+      onComplete: O,
+      analyticsLocations: I,
+      analyticsObject: S,
+      giftRecipient: T,
+      variantsReturnStyle: N
+    } = e,
+    A = !1,
+    C = (0, i.Z)(),
+    R = e => {
+      t = e
+    },
+    P = u ? y : b;
   (0, o.ZDy)(async () => e => {
     var {
       onClose: t,
@@ -129,7 +132,7 @@ function O(e) {
       })
     },
     onCloseRequest: () => {
-      null != t && y.has(t) && (0, o.Mr3)(P)
+      null != t && v.has(t) && (0, o.Mr3)(P)
     }
   })
 }

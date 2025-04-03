@@ -26,7 +26,7 @@ function s(e, t) {
         case a.oC.GUILD_BOOSTS:
           return
       }
-      let u = null !== (l = null === (s = r.Z.getChannel(c)) || void 0 === s ? void 0 : s.type) && void 0 !== l ? l : o.d4z.UNKNOWN;
+      let u = null != (l = null == (s = r.Z.getChannel(c)) ? void 0 : s.type) ? l : o.d4z.UNKNOWN;
       return {
         timestamp: new Date, rtc_state: i.Z.getState(), channelId: c, channelType: u
       };

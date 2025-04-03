@@ -21,8 +21,8 @@ var r = n(526167),
   g = n(910826),
   E = n(307244),
   b = n(669730),
-  v = n(666828),
-  y = n(131999),
+  y = n(666828),
+  v = n(131999),
   O = n(649272),
   I = n(241372),
   S = n(538387),
@@ -42,8 +42,8 @@ let w = {
   DEFAULT_GROUP_DM_AVATARS: [d, f, _, p, h, m, g, E],
   BOT_AVATARS: {
     clyde: C,
-    nitro: v,
-    nitro_wumpus: y
+    nitro: y,
+    nitro_wumpus: v
   },
   DEFAULT_CHANNEL_ICON: b,
   canUseWebp: function() {

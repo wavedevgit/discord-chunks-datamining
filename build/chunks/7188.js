@@ -20,10 +20,10 @@ var r = n(200651),
   g = n(618158),
   E = n(871499),
   b = n(981631),
-  v = n(354459),
-  y = n(474936),
+  y = n(354459),
+  v = n(474936),
   O = n(388032),
-  I = n(319747);
+  I = n(71922);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -116,7 +116,7 @@ function D(e) {
   } = e, h = C(e, ["hideBadges", "stream", "location"]);
   let {
     parentAnalyticsLocation: I
-  } = (0, s.ZP)(), S = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)), N = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
+  } = (0, s.ZP)(), S = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), v.p9.TIER_1)), N = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
     null != N && (0, f.Z)(N.getGuildId(), N.id, b.jXE.STREAM_SETTINGS)
   }, [N]);
   if (null == n || null == N) return null;
@@ -136,7 +136,7 @@ function D(e) {
           showReportOption: !0,
           handleGoLive: D,
           onInteraction: (0, c.u)("ManageStreamsButton", null != I ? I : u, {
-            entrypoint: v.A5.OTHER_BUTTON
+            entrypoint: y.A5.OTHER_BUTTON
           })
         })
       })

@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(722300),
   h = n(910200),
   m = n(323220),
-  g = n(924485);
+  g = n(595732);
 let E = 50001;
 
 function b(e) {
@@ -28,15 +28,15 @@ function b(e) {
   } = e, {
     analyticsLocations: b
   } = (0, u.ZP)(c.Z.GUILD_PROFILE), {
-    guildProfile: v,
-    fetchGuildProfile: y,
+    guildProfile: y,
+    fetchGuildProfile: v,
     fetchStatus: O
   } = (0, _.u)(t), I = (0, s.e7)([f.Z], () => f.Z.getErrorCode(t)), S = i.useRef(null), T = i.useCallback(() => {
-    y(!0)
-  }, [y]);
+    v(!0)
+  }, [v]);
   i.useEffect(() => {
-    y()
-  }, [y]), i.useEffect(() => {
+    v()
+  }, [v]), i.useEffect(() => {
     (0, d.vb)(t, b)
   }, [t, b]), i.useEffect(() => {
     null == o || o(null == S ? void 0 : S.current)
@@ -44,13 +44,13 @@ function b(e) {
   let N = i.useMemo(() => O === f.a.NOT_FETCHED || O === f.a.FETCHING ? (0, r.jsx)("div", {
     className: a()(g.container, g.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
-  }) : null == v && I === E ? (0, r.jsx)("div", {
+  }) : null == y && I === E ? (0, r.jsx)("div", {
     className: g.container,
     children: (0, r.jsx)(m.Z, {
       guildId: t,
       name: n
     })
-  }) : null == v ? (0, r.jsx)("div", {
+  }) : null == y ? (0, r.jsx)("div", {
     className: g.container,
     children: (0, r.jsx)(p.Z, {
       name: n,
@@ -59,12 +59,12 @@ function b(e) {
   }) : (0, r.jsx)("div", {
     className: g.container,
     children: (0, r.jsx)(h.ZP, {
-      profile: v
+      profile: y
     })
-  }), [O, v, I, t, n, T]);
+  }), [O, y, I, t, n, T]);
   return (0, r.jsx)(l.VqE, {
     ref: S,
-    "aria-label": null == v ? void 0 : v.name,
+    "aria-label": null == y ? void 0 : y.name,
     children: N
   })
 }

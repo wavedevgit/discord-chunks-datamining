@@ -17,26 +17,26 @@ var r = n(926515),
   g = i("".indexOf),
   E = i("".replace),
   b = i("".slice),
-  v = function() {
+  y = function() {
     var e = /a/,
       t = /b*/g;
     return r(p, e, "a"), r(p, t, "a"), 0 !== e.lastIndex || 0 !== t.lastIndex
   }(),
-  y = s.BROKEN_CARET,
+  v = s.BROKEN_CARET,
   O = void 0 !== /()??/.exec("")[1];
-(v || O || y || d || f) && (h = function(e) {
+(y || O || v || d || f) && (h = function(e) {
   var t, n, i, s, l, d, f, I = this,
     S = u(I),
     T = o(e),
     N = S.raw;
   if (N) return N.lastIndex = I.lastIndex, t = r(h, N, T), I.lastIndex = N.lastIndex, t;
   var A = S.groups,
-    C = y && I.sticky,
+    C = v && I.sticky,
     R = r(a, I),
     P = I.source,
     w = 0,
     D = T;
-  if (C && (-1 === g(R = E(R, "y", ""), "g") && (R += "g"), D = b(T, I.lastIndex), I.lastIndex > 0 && (!I.multiline || I.multiline && "\n" !== m(T, I.lastIndex - 1)) && (P = "(?: " + P + ")", D = " " + D, w++), n = RegExp("^(?:" + P + ")", R)), O && (n = RegExp("^" + P + "$(?!\\s)", R)), v && (i = I.lastIndex), s = r(p, C ? n : I, D), C ? s ? (s.input = b(s.input, w), s[0] = b(s[0], w), s.index = I.lastIndex, I.lastIndex += s[0].length) : I.lastIndex = 0 : v && s && (I.lastIndex = I.global ? s.index + s[0].length : i), O && s && s.length > 1 && r(_, s[0], n, function() {
+  if (C && (-1 === g(R = E(R, "y", ""), "g") && (R += "g"), D = b(T, I.lastIndex), I.lastIndex > 0 && (!I.multiline || I.multiline && "\n" !== m(T, I.lastIndex - 1)) && (P = "(?: " + P + ")", D = " " + D, w++), n = RegExp("^(?:" + P + ")", R)), O && (n = RegExp("^" + P + "$(?!\\s)", R)), y && (i = I.lastIndex), s = r(p, C ? n : I, D), C ? s ? (s.input = b(s.input, w), s[0] = b(s[0], w), s.index = I.lastIndex, I.lastIndex += s[0].length) : I.lastIndex = 0 : y && s && (I.lastIndex = I.global ? s.index + s[0].length : i), O && s && s.length > 1 && r(_, s[0], n, function() {
       for (l = 1; l < arguments.length - 2; l++) void 0 === arguments[l] && (s[l] = void 0)
     }), s && A)
     for (l = 0, s.groups = d = c(null); l < A.length; l++) d[(f = A[l])[0]] = s[f[1]];

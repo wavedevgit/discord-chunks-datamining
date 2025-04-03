@@ -13,7 +13,7 @@ function s() {
 }
 
 function l() {
-  !s() && (a.forEach(e => c(e)), a = [])
+  s() || (a.forEach(e => c(e)), a = [])
 }
 
 function c(e) {

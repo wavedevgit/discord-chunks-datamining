@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(345332),
   l = n(417153),
   c = n(561466),
-  u = n(369624);
+  u = n(940649);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,22 +109,22 @@ let h = {
 function g() {
   var e, t, n, u;
   let d = (0, l.Es)(e => e.currentToast),
-    _ = i.useRef(null !== (n = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== n ? n : c.si.position),
-    p = i.useRef(null !== (u = null == d ? void 0 : null === (t = d.options) || void 0 === t ? void 0 : t.duration) && void 0 !== u ? u : c.si.duration);
+    _ = i.useRef(null != (n = null == d || null == (e = d.options) ? void 0 : e.position) ? n : c.si.position),
+    p = i.useRef(null != (u = null == d || null == (t = d.options) ? void 0 : t.duration) ? u : c.si.duration);
   i.useEffect(() => {
     if (null != d) {
       var e, t, n, r;
-      _.current = null !== (n = null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== n ? n : c.si.position, p.current = null !== (r = null === (t = d.options) || void 0 === t ? void 0 : t.duration) && void 0 !== r ? r : c.si.duration
+      _.current = null != (n = null == (e = d.options) ? void 0 : e.position) ? n : c.si.position, p.current = null != (r = null == (t = d.options) ? void 0 : t.duration) ? r : c.si.duration
     }
   }, [d]);
   let h = i.useMemo(() => {
       var e, t;
-      return m[null !== (t = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== t ? t : _.current]
+      return m[null != (t = null == d || null == (e = d.options) ? void 0 : e.position) ? t : _.current]
     }, [d]),
     g = (0, a.Yzy)(d, f({
       keys: e => {
         var t;
-        return null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : ""
+        return null != (t = null == e ? void 0 : e.id) ? t : ""
       }
     }, h.transition));
   return i.useEffect(() => {

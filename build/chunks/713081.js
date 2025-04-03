@@ -60,7 +60,7 @@ function _(e, t) {
         powerups: i,
         catalog: o
       } = e;
-      return i.set(t.skuId, t), null == o.get(t.type) && o.set(t.type, []), null === (r = o.get(t.type)) || void 0 === r || null === (n = r.push) || void 0 === n || n.call(r, t), e
+      return i.set(t.skuId, t), null == o.get(t.type) && o.set(t.type, []), null == (r = o.get(t.type)) || null == (n = r.push) || n.call(r, t), e
     }, {
       powerups: new Map,
       catalog: new Map

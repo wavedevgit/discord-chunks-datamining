@@ -47,7 +47,7 @@ function f() {
 
 function _(e) {
   var t;
-  return null === i ? null : null !== (t = i.BlockedDomainsStore.isBlockedDomain(e)) && void 0 !== t ? t : null
+  return null === i ? null : null != (t = i.BlockedDomainsStore.isBlockedDomain(e)) ? t : null
 }
 
 function p() {

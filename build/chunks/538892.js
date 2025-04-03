@@ -11,8 +11,6 @@ var t = "\ud800-\udfff",
   u = "(?:\\u200d(?:" + [o, a, s].join("|") + ")" + c + l + ")*",
   d = c + l + u,
   f = RegExp(i + "(?=" + i + ")|" + ("(?:" + [o + r + "?", r, a, s, n].join("|")) + ")" + d, "g");
-
-function _(e) {
+e.exports = function(e) {
   return e.match(f) || []
 }
-e.exports = _

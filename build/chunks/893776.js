@@ -21,9 +21,9 @@ var i = n(990547),
   g = n(573261),
   E = n(572691),
   b = n(981631),
-  v = n(792101);
+  y = n(792101);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -74,7 +74,7 @@ function R(e) {
   }, e);
   l.Z.dispatch(t).catch(e => {
     var t;
-    throw T.error("Error while dispatching LOGOUT", e), null === (t = window.DiscordErrors) || void 0 === t || t.softCrash(e), e
+    throw T.error("Error while dispatching LOGOUT", e), null == (t = window.DiscordErrors) || t.softCrash(e), e
   })
 }
 
@@ -82,10 +82,7 @@ function P() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b.Z5c.DEFAULT_LOGGED_OUT;
   if (R(), null == e) return;
   let t = (0, f.D)();
-  if (null == t) {
-    (0, _.uL)(e);
-    return
-  }
+  if (null == t) return void(0, _.uL)(e);
   E.Z.popAll(), t.reset({
     index: 0,
     routes: [{
@@ -171,11 +168,11 @@ let w = {
     }, e => {
       var r, i, o;
       let a = new c.yZ(e);
-      if (null != e.body && (null === (r = e.body) || void 0 === r ? void 0 : r.suspended_user_token) != null) throw l.Z.dispatch({
+      if (null != e.body && (null == (r = e.body) ? void 0 : r.suspended_user_token) != null) throw l.Z.dispatch({
         type: "LOGIN_SUSPENDED_USER",
-        suspendedUserToken: null === (o = e.body) || void 0 === o ? void 0 : o.suspended_user_token
+        suspendedUserToken: null == (o = e.body) ? void 0 : o.suspended_user_token
       }), a;
-      let s = null === (i = e.body) || void 0 === i ? void 0 : i.code;
+      let s = null == (i = e.body) ? void 0 : i.code;
       throw s === b.evJ.ACCOUNT_SCHEDULED_FOR_DELETION && null != n && "" !== n ? l.Z.dispatch({
         type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
         credentials: {
@@ -230,14 +227,11 @@ let w = {
       })
     }).catch(e => {
       var t;
-      if (null != e.body && null != e.body.suspended_user_token) {
-        l.Z.dispatch({
-          type: "LOGIN_SUSPENDED_USER",
-          suspendedUserToken: e.body.suspended_user_token
-        });
-        return
-      }
-      if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === b.evJ.MFA_INVALID_CODE) throw Error(e.body.message);
+      if (null != e.body && null != e.body.suspended_user_token) return void l.Z.dispatch({
+        type: "LOGIN_SUSPENDED_USER",
+        suspendedUserToken: e.body.suspended_user_token
+      });
+      if ((null == (t = e.body) ? void 0 : t.code) === b.evJ.MFA_INVALID_CODE) throw Error(e.body.message);
       throw e
     })
   },
@@ -305,13 +299,10 @@ let w = {
         token: t
       })
     }).catch(e => {
-      if (null != e.body && null != e.body.suspended_user_token) {
-        l.Z.dispatch({
-          type: "LOGIN_SUSPENDED_USER",
-          suspendedUserToken: e.body.suspended_user_token
-        });
-        return
-      }
+      if (null != e.body && null != e.body.suspended_user_token) return void l.Z.dispatch({
+        type: "LOGIN_SUSPENDED_USER",
+        suspendedUserToken: e.body.suspended_user_token
+      });
       throw l.Z.dispatch({
         type: "PASSWORDLESS_FAILURE",
         error: e
@@ -352,9 +343,9 @@ let w = {
     return g.Z.post(S(O({
       url: b.ANM.LOGOUT,
       body: {
-        provider: (0, v.xJ)(),
+        provider: (0, y.xJ)(),
         token: s.K.get(b.JkL),
-        voip_provider: v.mv,
+        voip_provider: y.mv,
         voip_token: s.K.get(b.scU)
       },
       oldFormErrors: !0,
@@ -363,7 +354,7 @@ let w = {
       }
     }, null != n && {
       headers: {
-        authorization: null !== (e = o.getToken(n)) && void 0 !== e ? e : ""
+        authorization: null != (e = o.getToken(n)) ? e : ""
       }
     }), {
       rejectWithError: !1
@@ -449,10 +440,10 @@ let w = {
         source: n
       },
       o = s.K.get(b.JkL),
-      a = (0, v.xJ)();
+      a = (0, y.xJ)();
     null != a && null != o && (r.push_provider = a, r.push_token = o);
     let u = s.K.get(b.scU);
-    null != v.mv && null != u && (r.push_voip_provider = v.mv, r.push_voip_token = u);
+    null != y.mv && null != u && (r.push_voip_provider = y.mv, r.push_voip_token = u);
     try {
       let {
         body: {
@@ -578,7 +569,7 @@ let w = {
   }).then(e => {
     var t, n, i, o, a;
     if (clearTimeout(r), null == m.Z.getAuthenticationConsentRequired()) {
-      let t = null === (o = null == e ? void 0 : null === (i = e.body) || void 0 === i ? void 0 : i.consent_required) || void 0 === o || o;
+      let t = null == (o = null == e || null == (i = e.body) ? void 0 : i.consent_required) || o;
       l.Z.dispatch({
         type: "SET_CONSENT_REQUIRED",
         consentRequired: t
@@ -586,8 +577,8 @@ let w = {
     }
     if (l.Z.dispatch({
         type: "SET_LOCATION_METADATA",
-        countryCode: null !== (a = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.country_code) && void 0 !== a ? a : void 0
-      }), A = null, (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.promotional_email_opt_in) != null) {
+        countryCode: null != (a = null == e || null == (t = e.body) ? void 0 : t.country_code) ? a : void 0
+      }), A = null, (null == e || null == (n = e.body) ? void 0 : n.promotional_email_opt_in) != null) {
       let t = e.body.promotional_email_opt_in;
       (0, u.K4)({
         required: t.required,

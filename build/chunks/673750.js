@@ -23,9 +23,9 @@ var r = n(512722),
   g = n(861990),
   E = n(141795),
   b = n(981631),
-  v = n(959517);
+  y = n(959517);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -106,7 +106,7 @@ class D extends m.Z {
   }
   cancelRequest(e) {
     var t;
-    this.logger.log("Cancel message send: ", e), null === (t = this.requests.get(e)) || void 0 === t || t.abort(), this.requests.delete(e), this.cancelQueueMetricTimers(e)
+    this.logger.log("Cancel message send: ", e), null == (t = this.requests.get(e)) || t.abort(), this.requests.delete(e), this.cancelQueueMetricTimers(e)
   }
   cancelPendingSendRequests(e) {
     let t = [],
@@ -130,7 +130,7 @@ class D extends m.Z {
   }
   cancelQueueMetricTimers(e) {
     var t;
-    null === (t = this.analyticsTimeouts.get(e)) || void 0 === t || t.forEach(clearTimeout), this.analyticsTimeouts.delete(e)
+    null == (t = this.analyticsTimeouts.get(e)) || t.forEach(clearTimeout), this.analyticsTimeouts.delete(e)
   }
   createResponseHandler(e, t) {
     return n => {
@@ -145,14 +145,16 @@ class D extends m.Z {
     }
   }
   handleSend(e, t) {
-    let n;
-    let {
-      channelId: r
-    } = e, i = T(e, ["channelId"]), a = (0, u.d)(), s = O({
-      mobile_network_type: _.Z.getType()
-    }, i, null != a && {
-      signal_strength: a
-    });
+    let n, {
+        channelId: r
+      } = e,
+      i = T(e, ["channelId"]),
+      a = (0, u.d)(),
+      s = O({
+        mobile_network_type: _.Z.getType()
+      }, i, null != a && {
+        signal_strength: a
+      });
     if (c.ZP.get("send_fail_100")) {
       this.logger.log("Skipping message send because send_fail_100 is enabled"), t(null, {
         ok: !1,
@@ -175,7 +177,7 @@ class D extends m.Z {
       body: s,
       context: n,
       oldFormErrors: !0
-    }, v.hs), {
+    }, y.hs), {
       signal: p.signal,
       rejectWithError: !0,
       onRequestCreated: () => {
@@ -212,9 +214,9 @@ class D extends m.Z {
         maxSizeCallback: _,
         analytics_location: p,
         sectionName: m,
-        source: v
+        source: y
       } = e,
-      y = {
+      v = {
         type: a.B8.APPLICATION_COMMAND,
         application_id: r,
         guild_id: s,
@@ -224,19 +226,19 @@ class D extends m.Z {
         nonce: u,
         analytics_location: p,
         section_name: m,
-        source: v
+        source: y
       };
     if (null != d) {
-      y.data.attachments = [], n = [];
+      v.data.attachments = [], n = [];
       let e = d;
-      y.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
+      v.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
     }
     let O = new AbortController;
     o.tn.post({
       url: b.ANM.INTERACTIONS,
       fields: [{
         name: "payload_json",
-        value: JSON.stringify(y)
+        value: JSON.stringify(v)
       }],
       attachments: n,
       signal: O.signal,
@@ -252,7 +254,7 @@ class D extends m.Z {
     }, this.createResponseHandler(u, t))
   }
   constructor(e = 5) {
-    super(new l.Z("MessageQueue")), y(this, "maxSize", void 0), y(this, "requests", void 0), y(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
+    super(new l.Z("MessageQueue")), v(this, "maxSize", void 0), v(this, "requests", void 0), v(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
   }
 }
 let L = new D

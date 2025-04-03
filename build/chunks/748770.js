@@ -38,7 +38,7 @@ async function p() {
     if (!d.Z.hasFetchedConsumedInboundPromotionId) {
       var e;
       let t = (await (0, a.yD)(f.CL, !1)).find(e => null != e.promotion_id && !0 === e.consumed);
-      i = null !== (e = null == t ? void 0 : t.promotion_id) && void 0 !== e ? e : null
+      i = null != (e = null == t ? void 0 : t.promotion_id) ? e : null
     }
     o.Z.dispatch({
       type: "ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS",

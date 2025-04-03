@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FI: () => v,
+  FI: () => y,
   O1: () => h,
   SJ: () => p,
   Ur: () => b,
@@ -33,7 +33,7 @@ function m(e) {
   var t;
   let {
     searchParams: n
-  } = null !== (t = u.Z.toURLSafe(e)) && void 0 !== t ? t : {
+  } = null != (t = u.Z.toURLSafe(e)) ? t : {
     searchParams: new URLSearchParams
   }, {
     code: r,
@@ -269,7 +269,7 @@ function g(e) {
 function E(e, t) {
   return Object.values(t).some(e => {
     var t;
-    return (null === (t = e.tags) || void 0 === t ? void 0 : t.guild_connections) === null
+    return (null == (t = e.tags) ? void 0 : t.guild_connections) === null
   })
 }
 
@@ -289,13 +289,13 @@ function b(e) {
   null == s && (s = c.Z.getRoles(f));
   let _ = r.roles.map(e => s[e]).filter(e => {
       var t;
-      return (null == e ? void 0 : null === (t = e.tags) || void 0 === t ? void 0 : t.guild_connections) === null
+      return (null == e || null == (t = e.tags) ? void 0 : t.guild_connections) === null
     }).sort((e, t) => (i()(null != e && null != t, "roleA or roleB is null"), t.position - e.position)),
     p = a().intersection(_, (0, l.Z)(u));
-  return p.length > 0 ? null !== (t = p[0]) && void 0 !== t ? t : null : d ? null : null !== (n = _[0]) && void 0 !== n ? n : null
+  return p.length > 0 ? null != (t = p[0]) ? t : null : d ? null : null != (n = _[0]) ? n : null
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e || "" === e) return null;
   let n = new Date(e);
   return !(n instanceof Date) || isNaN(n.getTime()) ? null : n.toLocaleDateString(t, {

@@ -24,11 +24,11 @@ let _ = !1,
   g = !1,
   E = null,
   b = null,
-  v = !1,
-  y = !1;
+  y = !1,
+  v = !1;
 
 function O() {
-  r = void 0, o = void 0, i = void 0, v = !1, a = null, b = null, E = null
+  r = void 0, o = void 0, i = void 0, y = !1, a = null, b = null, E = null
 }
 
 function I() {
@@ -119,7 +119,7 @@ function B(e) {
 }
 
 function F() {
-  i = null, v = !0
+  i = null, y = !0
 }
 
 function V(e) {
@@ -130,7 +130,7 @@ function V(e) {
 }
 
 function Z() {
-  a = null, y = !0
+  a = null, v = !0
 }
 let H = e => {
   let {
@@ -176,7 +176,7 @@ class W extends(s = l.ZP.Store) {
     return null != i ? i : d.OMz
   }
   get ipCountryCodeHasError() {
-    return v
+    return y
   }
   get paymentSourcesFetchRequest() {
     return r
@@ -185,7 +185,7 @@ class W extends(s = l.ZP.Store) {
     return a
   }
   get localizedPricingPromoHasError() {
-    return y
+    return v
   }
   get isLocalizedPromoEnabled() {
     return null != a

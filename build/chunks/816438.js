@@ -51,7 +51,7 @@ function _(e) {
         state: p,
         setOptions: function(n) {
           var r = "function" == typeof n ? n(p.options) : n;
-          v(), p.options = Object.assign({}, h, p.options, r), p.scrollParents = {
+          y(), p.options = Object.assign({}, h, p.options, r), p.scrollParents = {
             reference: (0, u.kK)(e) ? (0, o.Z)(e) : e.contextElement ? (0, o.Z)(e.contextElement) : [],
             popper: (0, o.Z)(t)
           };
@@ -98,7 +98,7 @@ function _(e) {
           })
         }),
         destroy: function() {
-          v(), g = !0
+          y(), g = !0
         }
       };
     if (!f(e, t)) return E;
@@ -122,7 +122,7 @@ function _(e) {
       })
     }
 
-    function v() {
+    function y() {
       m.forEach(function(e) {
         return e()
       }), m = []

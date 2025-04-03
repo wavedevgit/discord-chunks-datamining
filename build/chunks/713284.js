@@ -28,7 +28,7 @@ let l = !0,
       eventType: t,
       dismissibleContent: n
     } = e;
-    !l && c.push({
+    l || c.push({
       eventType: t,
       dismissibleContent: n
     })

@@ -55,14 +55,14 @@ let d = /\n{2,}$/,
   g = / *\n$/,
   E = RegExp("^( *)(" + _ + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + _ + " )|$)"),
   b = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/,
-  v = 10,
-  y = 1,
+  y = 10,
+  v = 1,
   O = 1e9,
   I = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
   S = u(l({}, a().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
-      if (!t.allowList || t._listLevel >= v + 1) return null;
+      if (!t.allowList || t._listLevel >= y + 1) return null;
       let n = null == t.prevCapture ? "" : t.prevCapture[0],
         r = f.exec(n);
       return null == r || b.test(r[0]) ? null : E.exec(e)
@@ -70,7 +70,7 @@ let d = /\n{2,}$/,
     parse: (e, t, n) => {
       let r = e[2],
         o = r.length > 1,
-        a = o ? Math.min(O, Math.max(y, +r)) : void 0,
+        a = o ? Math.min(O, Math.max(v, +r)) : void 0,
         s = e[0].replace(d, "\n"),
         c = h.exec(s),
         f = null != c ? c[0].length : 0,
@@ -78,16 +78,15 @@ let d = /\n{2,}$/,
         p = " {".concat(_, ",").concat(_ + 1, "}"),
         E = RegExp(m.replaceAll("%INDENT_CAPTURE_PATTERN%", p), "gm"),
         b = RegExp("^ {1," + f + "}", "gm"),
-        v = s.match(E);
-      i()(null != v, "markup list items can not be parsed.");
+        y = s.match(E);
+      i()(null != y, "markup list items can not be parsed.");
       let S = !1;
       return {
         ordered: o,
         start: a,
-        items: v.map((e, r) => {
-          let i;
-          let o = e.replace(h, "").replace(b, ""),
-            a = r === v.length - 1,
+        items: y.map((e, r) => {
+          let i, o = e.replace(h, "").replace(b, ""),
+            a = r === y.length - 1,
             s = -1 !== o.indexOf("\n\n") || a && S;
           S = s;
           let c = n.inline,

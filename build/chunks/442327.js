@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "primitive rsc_template",
     n = "group clone ms master location colocation order fencing_topology rsc_ticket acl_target acl_group user role tag xml",
     r = "property rsc_defaults op_defaults";
@@ -66,4 +66,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

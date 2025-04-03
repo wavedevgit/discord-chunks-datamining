@@ -30,8 +30,8 @@ let d = e => {
         bannerOverrides: d,
         bannerStyleOverrides: f ? void 0 : o,
         heroLogo: null != t ? t : e.logoUrl,
-        heroBannerStatic: null !== (l = null != n ? n : null === (r = e.bannerAsset) || void 0 === r ? void 0 : r.static) && void 0 !== l ? l : e.fallbackBannerUrl,
-        heroBannerAnimated: null !== (c = null != i ? i : null == d ? void 0 : null === (a = d.heroBanner) || void 0 === a ? void 0 : a.animationSource) && void 0 !== c ? c : null === (s = e.bannerAsset) || void 0 === s ? void 0 : s.animated
+        heroBannerStatic: null != (l = null != n ? n : null == (r = e.bannerAsset) ? void 0 : r.static) ? l : e.fallbackBannerUrl,
+        heroBannerAnimated: null != (c = null != i ? i : null == d || null == (a = d.heroBanner) ? void 0 : a.animationSource) ? c : null == (s = e.bannerAsset) ? void 0 : s.animated
       }
     }, [o, t, n, i, e])
   },
@@ -45,7 +45,7 @@ let d = e => {
           format: "png"
         }) : void 0;
       return {
-        featuredBlockBanner: null !== (r = null != n ? n : null == t ? void 0 : t.bannerUrl) && void 0 !== r ? r : a
+        featuredBlockBanner: null != (r = null != n ? n : null == t ? void 0 : t.bannerUrl) ? r : a
       }
     }, [n, e, t])
   },
@@ -57,8 +57,8 @@ let d = e => {
       let c = (0, u.ZS)(e.skuId);
       return {
         bannerOverrides: c,
-        categoryBannerStatic: null !== (a = null !== (o = null != t ? t : n) && void 0 !== o ? o : null === (r = e.bannerAsset) || void 0 === r ? void 0 : r.static) && void 0 !== a ? a : e.banner,
-        categoryBannerAnimated: null !== (l = null !== (s = null != n ? n : t) && void 0 !== s ? s : null == c ? void 0 : c.animatedBanner) && void 0 !== l ? l : null === (i = e.bannerAsset) || void 0 === i ? void 0 : i.animated
+        categoryBannerStatic: null != (a = null != (o = null != t ? t : n) ? o : null == (r = e.bannerAsset) ? void 0 : r.static) ? a : e.banner,
+        categoryBannerAnimated: null != (l = null != (s = null != n ? n : t) ? s : null == c ? void 0 : c.animatedBanner) ? l : null == (i = e.bannerAsset) ? void 0 : i.animated
       }
     }, [t, n, e])
   },
@@ -68,7 +68,7 @@ let d = e => {
     return r.useMemo(() => {
       var r;
       return {
-        pdpBackground: null !== (r = null != n ? n : e.pdpBg) && void 0 !== r ? r : t.banner,
+        pdpBackground: null != (r = null != n ? n : e.pdpBg) ? r : t.banner,
         logo: null != o ? o : (0, i.uV)(e.logo, {
           size: a.n
         })
@@ -82,7 +82,7 @@ let d = e => {
     return r.useMemo(() => {
       var r;
       return {
-        collectedModalBackground: null !== (r = null != n ? n : null == t ? void 0 : t.successModalBg) && void 0 !== r ? r : e.banner
+        collectedModalBackground: null != (r = null != n ? n : null == t ? void 0 : t.successModalBg) ? r : e.banner
       }
     }, [n, t, e])
   },
@@ -97,15 +97,15 @@ let d = e => {
     return r.useMemo(() => {
       var r, l, c, d, f;
       let _ = [t, n, i, o, a, s, u].some(e => null != e),
-        p = null == e ? void 0 : null === (r = e.refTargetBackground) || void 0 === r ? void 0 : r.asset,
+        p = null == e || null == (r = e.refTargetBackground) ? void 0 : r.asset,
         h = null == p ? void 0 : p.resting,
         m = null == p ? void 0 : p.hovered;
       return {
         hasPreviewAssets: _,
-        buttonBGHoverDark: null !== (l = null != n ? n : t) && void 0 !== l ? l : null == m ? void 0 : m.dark,
-        buttonBGHoverLight: null !== (c = null != i ? i : t) && void 0 !== c ? c : null == m ? void 0 : m.light,
-        buttonBGRestingDark: null !== (d = null != a ? a : o) && void 0 !== d ? d : null == h ? void 0 : h.dark,
-        buttonBGRestingLight: null !== (f = null != s ? s : o) && void 0 !== f ? f : null == h ? void 0 : h.light,
+        buttonBGHoverDark: null != (l = null != n ? n : t) ? l : null == m ? void 0 : m.dark,
+        buttonBGHoverLight: null != (c = null != i ? i : t) ? c : null == m ? void 0 : m.light,
+        buttonBGRestingDark: null != (d = null != a ? a : o) ? d : null == h ? void 0 : h.dark,
+        buttonBGRestingLight: null != (f = null != s ? s : o) ? f : null == h ? void 0 : h.light,
         coachtipAvatar: null != u ? u : null == e ? void 0 : e.avatar
       }
     }, [t, n, i, o, a, s, u, e])

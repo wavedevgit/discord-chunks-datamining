@@ -22,13 +22,13 @@ var r = n(200651),
   g = n(271383),
   E = n(768581),
   b = n(900849),
-  v = n(249842),
-  y = n(838367),
+  y = n(249842),
+  v = n(838367),
   O = n(576306),
   I = n(914620),
   S = n(981631),
   T = n(388032),
-  N = n(401233),
+  N = n(13647),
   A = n(892561),
   C = n(494536);
 
@@ -140,15 +140,15 @@ function B(e) {
     channelId: c,
     messageId: d
   } = e, {
-    name: v,
-    id: y,
+    name: y,
+    id: v,
     discoverySplash: O,
     icon: I,
     description: A,
     presenceCount: C,
     memberCount: R,
     emojis: w
-  } = o, U = y, G = (0, s.e7)([m.default], () => m.default.getId()), B = (0, s.e7)([g.ZP], () => g.ZP.isMember(U, G), [U, G]), [F, V] = i.useState(!1), Z = e => {
+  } = o, U = v, G = (0, s.e7)([m.default], () => m.default.getId()), B = (0, s.e7)([g.ZP], () => g.ZP.isMember(U, G), [U, G]), [F, V] = i.useState(!1), Z = e => {
     if (e.stopPropagation(), B)(0, h.XU)(U, c, d);
     else {
       let e = {
@@ -160,16 +160,16 @@ function B(e) {
     }
     V(!0)
   }, H = E.ZP.getGuildDiscoverySplashURL({
-    id: y,
+    id: v,
     splash: O,
     size: M * (0, p.x_)()
-  }), W = null !== (t = E.ZP.getGuildIconURL({
-    id: y,
+  }), W = null != (t = E.ZP.getGuildIconURL({
+    id: v,
     icon: I,
     size: L
-  })) && void 0 !== t ? t : void 0, Y = w, K = null;
-  return null != Y && Y.length > k && null != w && (Y = null !== (n = null == w ? void 0 : w.slice(Math.max((null == w ? void 0 : w.length) - k, 0))) && void 0 !== n ? n : [], K = w.length - k), (0, r.jsxs)(u.VqE, {
-    "aria-label": v,
+  })) ? t : void 0, Y = w, K = null;
+  return null != Y && Y.length > k && null != w && (Y = null != (n = null == w ? void 0 : w.slice(Math.max((null == w ? void 0 : w.length) - k, 0))) ? n : [], K = w.length - k), (0, r.jsxs)(u.VqE, {
+    "aria-label": y,
     className: N.guildPopout,
     children: [null != H ? (0, r.jsx)("img", {
       src: H,
@@ -204,7 +204,7 @@ function B(e) {
             })
           })
         })
-      }), null != v ? (0, r.jsxs)("div", {
+      }), null != y ? (0, r.jsxs)("div", {
         className: N.guildNameWrapper,
         children: [(0, r.jsx)(_.Z, {
           className: N.badge,
@@ -215,7 +215,7 @@ function B(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
           className: N.guildName,
-          children: v
+          children: y
         })]
       }) : null, null != A ? (0, r.jsx)(u.Text, {
         color: "header-secondary",
@@ -307,13 +307,13 @@ function F(e) {
     loading: a,
     unavailable: l,
     guild: c
-  } = (0, s.cj)([y.Z], () => ({
-    guild: y.Z.getGuild(t),
-    loading: y.Z.isFetchingGuild(t),
-    unavailable: y.Z.hasFetchFailed(t)
+  } = (0, s.cj)([v.Z], () => ({
+    guild: v.Z.getGuild(t),
+    loading: v.Z.isFetchingGuild(t),
+    unavailable: v.Z.hasFetchFailed(t)
   }), [t]);
   return (i.useEffect(() => {
-    null != c || a || l || (0, v.P)(t)
+    null != c || a || l || (0, y.P)(t)
   }, [c, t, a, l]), a) ? (0, r.jsx)(u.VqE, {
     "aria-label": T.NW.string(T.t.ZTNur6),
     className: N.guildPopout,

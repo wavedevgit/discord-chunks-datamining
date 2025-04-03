@@ -64,7 +64,7 @@ function p(e) {
     source: p,
     commandOrigin: h
   } = e, m = _(n);
-  if ((null == r ? void 0 : r.id) === (null === (t = m.activeCommand) || void 0 === t ? void 0 : t.id)) return !1;
+  if ((null == r ? void 0 : r.id) === (null == (t = m.activeCommand) ? void 0 : t.id)) return !1;
   m.activeCommand = r, m.activeCommandSection = i, m.activeOptionName = null, m.preferredCommandId = null, m.initialValues = null != o ? o : {}, m.commandOrigin = null != h ? h : null, m.source = p;
   let g = {};
   return (null == r ? void 0 : r.options) != null && r.options.forEach(e => {
@@ -92,7 +92,7 @@ function h(e) {
     channelId: r,
     commandId: i
   } = e, o = _(r);
-  return i !== o.preferredCommandId && (null !== o.preferredCommandId || i !== (null !== (n = null === (t = o.activeCommand) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null)) && (o.activeCommand = null, o.activeOptionName = null, o.preferredCommandId = i, o.optionStates = {}, !0)
+  return i !== o.preferredCommandId && (null !== o.preferredCommandId || i !== (null != (n = null == (t = o.activeCommand) ? void 0 : t.id) ? n : null)) && (o.activeCommand = null, o.activeOptionName = null, o.preferredCommandId = i, o.optionStates = {}, !0)
 }
 
 function m(e) {
@@ -119,9 +119,9 @@ function m(e) {
       hasValue: !0,
       isActive: void 0 !== t.isActive ? t.isActive : n.isActive,
       lastValidationResult: void 0 !== t.lastValidationResult ? t.lastValidationResult : n.lastValidationResult,
-      optionValue: null !== (o = t.optionValue) && void 0 !== o ? o : n.optionValue,
-      location: null !== (a = t.location) && void 0 !== a ? a : n.location,
-      length: null !== (s = t.length) && void 0 !== s ? s : n.length
+      optionValue: null != (o = t.optionValue) ? o : n.optionValue,
+      location: null != (a = t.location) ? a : n.location,
+      length: null != (s = t.length) ? s : n.length
     }, void 0 !== t.isActive && (t.isActive ? (null != r.activeOptionName && r.activeOptionName !== e && (i[r.activeOptionName] = u({}, i[r.activeOptionName]), i[r.activeOptionName].isActive = !1), r.activeOptionName = e) : e === r.activeOptionName && (r.activeOptionName = null))
   }
   return r.optionStates = i, !0
@@ -176,7 +176,7 @@ class E extends(r = i.ZP.Store) {
   getActiveOption(e) {
     var t, n, r;
     let i = _(e);
-    return null !== (r = null === (n = i.activeCommand) || void 0 === n ? void 0 : null === (t = n.options) || void 0 === t ? void 0 : t.find(e => e.name === i.activeOptionName)) && void 0 !== r ? r : null
+    return null != (r = null == (n = i.activeCommand) || null == (t = n.options) ? void 0 : t.find(e => e.name === i.activeOptionName)) ? r : null
   }
   getPreferredCommandId(e) {
     return _(e).preferredCommandId
@@ -195,7 +195,7 @@ class E extends(r = i.ZP.Store) {
   }
   getOption(e, t) {
     var n, r;
-    return null === (r = _(e).activeCommand) || void 0 === r ? void 0 : null === (n = r.options) || void 0 === n ? void 0 : n.find(e => e.name === t)
+    return null == (r = _(e).activeCommand) || null == (n = r.options) ? void 0 : n.find(e => e.name === t)
   }
   getState(e) {
     return u({}, _(e))

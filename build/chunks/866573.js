@@ -17,8 +17,8 @@ var r = n(147018),
   g = n(33995),
   E = n(905145),
   b = n(644659),
-  v = n(325008),
-  y = n(992051),
+  y = n(325008),
+  v = n(992051),
   O = "DOMException",
   I = "DATA_CLONE_ERR",
   S = o("Error"),
@@ -48,7 +48,7 @@ var r = n(147018),
         name: n,
         message: t,
         code: r
-      }), v || (this.name = n, this.message = t, this.code = r), P) {
+      }), y || (this.name = n, this.message = t, this.code = r), P) {
       var i = S(t);
       i.name = O, c(this, "stack", l(1, E(i.stack, 1)))
     }
@@ -66,7 +66,7 @@ var r = n(147018),
       return R(this)[e]
     })
   };
-v && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
+y && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
 var k = a(function() {
     return !(new T instanceof S)
   }),
@@ -77,7 +77,7 @@ var k = a(function() {
     return 25 !== new T(1, "DataCloneError").code
   }),
   G = k || 25 !== T[I] || 25 !== N[I],
-  B = y ? j || U || G : k;
+  B = v ? j || U || G : k;
 r({
   global: !0,
   constructor: !0,
@@ -87,7 +87,7 @@ r({
 });
 var F = o(O),
   V = F.prototype;
-for (var Z in j && (y || T === F) && u(V, "toString", h), U && v && T === F && d(V, "code", x(function() {
+for (var Z in j && (v || T === F) && u(V, "toString", h), U && y && T === F && d(V, "code", x(function() {
     return w(p(this).name)
   })), g)
   if (f(g, Z)) {

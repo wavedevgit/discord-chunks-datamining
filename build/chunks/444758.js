@@ -20,9 +20,9 @@ var r = n(477660),
   g = n(699450),
   E = n(594199),
   b = n(981631),
-  v = n(388032);
+  y = n(388032);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,7 +38,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -79,8 +79,7 @@ function N(e) {
 }
 
 function A(e, t) {
-  let n;
-  let r = D((0, m.aF)(e.name, 32));
+  let n, r = D((0, m.aF)(e.name, 32));
   return {
     type: "channel",
     content: [n = "italics" === t ? {
@@ -95,7 +94,7 @@ function A(e, t) {
 function C(e, t) {
   let n = {
     type: "channel",
-    content: [D(e.roleSubscriptionGated ? e.name : v.NW.string(v.t["/YzI6+"]))],
+    content: [D(e.roleSubscriptionGated ? e.name : y.NW.string(y.t["/YzI6+"]))],
     channelType: e.roleSubscriptionGated ? e.type : b.d4z.UNKNOWN,
     iconType: "locked"
   };
@@ -121,7 +120,7 @@ function P(e, t) {
   var n;
   let r = c.Z.getChannel(e),
     i = (0, s.$)(e, c.Z, o.Z, d.Z).isSubscriptionGated,
-    u = null !== (n = (0, h.wl)(r)) && void 0 !== n ? n : "text";
+    u = null != (n = (0, h.wl)(r)) ? n : "text";
   if (null != t) {
     let n = t.find(t => t.id === e);
     if (null != n) return {
@@ -173,12 +172,12 @@ function D(e) {
 }
 
 function L(e) {
-  return null != e ? w(e) : D("#".concat(v.NW.string(v.t.J90oLS)))
+  return null != e ? w(e) : D("#".concat(y.NW.string(y.t.J90oLS)))
 }
 
 function x() {
   return A({
-    name: v.NW.string(v.t.zLZPmp).toLowerCase(),
+    name: y.NW.string(y.t.zLZPmp).toLowerCase(),
     type: b.d4z.UNKNOWN,
     iconType: "text"
   }, "italics")
@@ -211,7 +210,7 @@ function k(e, t, n, r) {
           inContent: [A({
             name: e.name,
             type: e.type,
-            iconType: null !== (s = (0, h.wl)(e)) && void 0 !== s ? s : "forum"
+            iconType: null != (s = (0, h.wl)(e)) ? s : "forum"
           })],
           content: [o]
         }
@@ -245,11 +244,13 @@ function j(e, t, n, r) {
       originalLink: r
     },
     o = u.Z.getGuild(e.guildId);
-  if (null == o) return e.isDm ? S(O({}, i), {
-    guildId: b.ME,
-    inContent: [A(e)],
-    content: [R(!1)]
-  }) : L(r);
+  if (null == o)
+    if (e.isDm) return S(O({}, i), {
+      guildId: b.ME,
+      inContent: [A(e)],
+      content: [R(!1)]
+    });
+    else return L(r);
   let a = e.guildId === n;
   return O({}, i, k(o, e, a, null != t))
 }

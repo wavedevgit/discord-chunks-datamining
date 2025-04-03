@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(981631),
   g = n(474936),
   E = n(388032),
-  b = n(928006);
-let v = "premiumRetentionEmojiPickerNotice",
-  y = l.K.get(v),
+  b = n(400641);
+let y = "premiumRetentionEmojiPickerNotice",
+  v = l.K.get(y),
   O = e => {
     let {
       closePopout: t,
@@ -38,7 +38,7 @@ let v = "premiumRetentionEmojiPickerNotice",
       }, [S]), null == I || !(0, p.zV)(I.status) || o) return null;
     let T = I.status === m.O0b.PAST_DUE ? (0, p.lY)(I).expiresDate : a()(I.currentPeriodStart).add(g.gh),
       N = "".concat(I.id, ":").concat(T.toISOString());
-    if (y === N) return null;
+    if (v === N) return null;
     let A = p.ZP.getPremiumType(I.planId) === g.p9.TIER_0 ? f.JX.PREMIUM_TIER_0 : p.ZP.getPremiumType(I.planId) === g.p9.TIER_1 ? f.JX.PREMIUM_TIER_1 : f.JX.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
       className: b.premiumRetentionNotice,
@@ -64,7 +64,7 @@ let v = "premiumRetentionEmojiPickerNotice",
         })]
       }), (0, r.jsx)(c.P3F, {
         onClick: () => {
-          l.K.set(v, N), y = N, O(!0)
+          l.K.set(y, N), v = N, O(!0)
         },
         children: (0, r.jsx)(c.Dio, {
           size: "md",

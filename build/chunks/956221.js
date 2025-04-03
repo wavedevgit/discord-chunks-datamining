@@ -28,17 +28,17 @@ function _(e) {
     h && null != g && u.default.track(d.rMx.USER_VOICE_ACTIVITY_VIEWED, {
       surface: _,
       activity_user_id: t,
-      discoverable: null === (e = g.discoverable) || void 0 === e || e,
+      discoverable: null == (e = g.discoverable) || e,
       relationship_type: E,
       treatment: p && !1 === g.discoverable ? o.h9.HIDE : o.h9.SHOW
     })
   }, [g, h, p, E, _, t]);
   let b = null == m ? void 0 : m.channelId,
-    v = (0, i.e7)([a.Z], () => {
+    y = (0, i.e7)([a.Z], () => {
       if (null != b) return a.Z.getChannel(b)
     });
-  return (0, i.e7)([s.Z], () => (null == v ? void 0 : v.isPrivate()) || s.Z.can(f.Pl.VIEW_CHANNEL, v)) ? {
+  return (0, i.e7)([s.Z], () => (null == y ? void 0 : y.isPrivate()) || s.Z.can(f.Pl.VIEW_CHANNEL, y)) ? {
     voiceState: m,
-    voiceChannel: v
+    voiceChannel: y
   } : {}
 }

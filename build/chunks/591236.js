@@ -20,7 +20,7 @@ let _ = {
   sentinel: l.a4,
   matches(e, t, n, r, o) {
     var a, s;
-    return r && null !== (s = null === (a = o.chatInputType.autocomplete) || void 0 === a ? void 0 : a.addReactionShortcut) && void 0 !== s && s && (i.Z.can(c.Plq.ADD_REACTIONS, e) || e.isPrivate())
+    return r && null != (s = null == (a = o.chatInputType.autocomplete) ? void 0 : a.addReactionShortcut) && s && (i.Z.can(c.Plq.ADD_REACTIONS, e) || e.isPrivate())
   },
   queryResults(e, t, n, r, i) {
     let {

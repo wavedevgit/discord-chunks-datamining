@@ -9,7 +9,7 @@ var r = n(250327),
 
 function a(e, t) {
   (0, i.Z)(1, arguments);
-  var n, r, a, s = (0, o.Z)(null !== (n = null == t ? void 0 : t.additionalDigits) && void 0 !== n ? n : 2);
+  var n, r, a, s = (0, o.Z)(null != (n = null == t ? void 0 : t.additionalDigits) ? n : 2);
   if (2 !== s && 1 !== s && 0 !== s) throw RangeError("additionalDigits must be 0, 1 or 2");
   if ("string" != typeof e && "[object String]" !== Object.prototype.toString.call(e)) return new Date(NaN);
   var l = d(e);
@@ -77,7 +77,7 @@ function _(e, t) {
     c = p(n[5]) - 1;
   if (r) return I(t, s, c) ? E(t, s, c) : new Date(NaN);
   var u = new Date(0);
-  return y(t, o, a) && O(t, i) ? (u.setUTCFullYear(t, o, Math.max(i, a)), u) : new Date(NaN)
+  return v(t, o, a) && O(t, i) ? (u.setUTCFullYear(t, o, Math.max(i, a)), u) : new Date(NaN)
 }
 
 function p(e) {
@@ -115,16 +115,16 @@ function E(e, t, n) {
 }
 var b = [31, null, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-function v(e) {
+function y(e) {
   return e % 400 == 0 || e % 4 == 0 && e % 100 != 0
 }
 
-function y(e, t, n) {
-  return t >= 0 && t <= 11 && n >= 1 && n <= (b[t] || (v(e) ? 29 : 28))
+function v(e, t, n) {
+  return t >= 0 && t <= 11 && n >= 1 && n <= (b[t] || (y(e) ? 29 : 28))
 }
 
 function O(e, t) {
-  return t >= 1 && t <= (v(e) ? 366 : 365)
+  return t >= 1 && t <= (y(e) ? 366 : 365)
 }
 
 function I(e, t, n) {

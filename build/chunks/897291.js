@@ -16,7 +16,7 @@ var r = n(200651),
   _ = n(443603),
   p = n(981631),
   h = n(388032),
-  m = n(998735);
+  m = n(302195);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,20 +51,20 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function v(e) {
   let {
     disabled: t,
     channel: i
   } = e, {
     analyticsLocations: g
   } = (0, l.ZP)(s.Z.GIFT_BUTTON), b = (0, f.Ft)(i), {
-    Component: y,
+    Component: v,
     events: O,
     play: I
   } = (0, o.$)(), {
@@ -105,7 +105,7 @@ function y(e) {
   };
   return (0, r.jsx)(a.ua7, {
     text: h.NW.string(h.t.sWtWDQ),
-    children: e => (0, r.jsx)(_.Z, v(E(v(E({}, e), {
+    children: e => (0, r.jsx)(_.Z, y(E(y(E({}, e), {
       innerClassName: m.button,
       isActive: !1,
       "aria-label": h.NW.string(h.t.Z1RnTk),
@@ -114,11 +114,11 @@ function y(e) {
         A(), I()
       }
     }), O), {
-      children: (0, r.jsx)(y, {
+      children: (0, r.jsx)(v, {
         size: T ? "refresh_sm" : void 0,
         color: "currentColor"
       })
     }))
   })
 }
-let O = i.memo(y)
+let O = i.memo(v)

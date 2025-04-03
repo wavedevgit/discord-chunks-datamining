@@ -25,10 +25,7 @@ function h(e, t) {
       application: h,
       channelId: m
     });
-  if (null != g) {
-    (0, a.Z)(g);
-    return
-  }
+  if (null != g) return void(0, a.Z)(g);
   null != m && ((0, s.uL)(p.Z5c.CHANNEL(e, m)), (0, f.Z)(m) ? (r.Z.selectParticipant(m, (0, o.gN)({
     applicationId: n.applicationId,
     instanceId: null == n ? void 0 : n.compositeInstanceId

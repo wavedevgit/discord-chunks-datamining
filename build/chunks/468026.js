@@ -16,15 +16,15 @@ var i = n(120356),
   f = n(600164),
   _ = n(540059),
   p = n(388032),
-  h = n(64916);
+  h = n(551988);
 let m = e => {
   let t, n, i, {
       body: m,
       cancelText: g,
       className: E,
       confirmColor: b,
-      confirmText: v = p.NW.string(p.t.BddRzc),
-      secondaryConfirmText: y,
+      confirmText: y = p.NW.string(p.t.BddRzc),
+      secondaryConfirmText: v,
       onCancel: O,
       onClose: I,
       onConfirm: S,
@@ -51,20 +51,20 @@ let m = e => {
     onClick: w,
     className: h.secondaryButton,
     children: g
-  })), null != v && "" !== v && (n = (0, r.jsx)(a.zx, {
+  })), null != y && "" !== y && (n = (0, r.jsx)(a.zx, {
     type: "submit",
     color: b,
     size: P,
     className: o()(h.primaryButton, null != t ? h.gutter : null),
     autoFocus: !0,
-    children: v
-  })), null != y && "" !== y && (i = (0, r.jsx)(s.P, {
+    children: y
+  })), null != v && "" !== v && (i = (0, r.jsx)(s.P, {
     onClick: L,
     className: h.minorContainer,
     children: (0, r.jsx)(u.x, {
       className: h.secondaryAction,
       variant: "text-xs/normal",
-      children: y
+      children: v
     })
   })), (0, r.jsx)(c.Y0, {
     transitionState: A,

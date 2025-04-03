@@ -21,8 +21,8 @@ var o = n(442837),
   g = n(48481),
   E = n(131704),
   b = n(209747),
-  v = n(598077),
-  y = n(592125),
+  y = n(598077),
+  v = n(592125),
   O = n(271383),
   I = n(819640),
   S = n(594174),
@@ -98,10 +98,10 @@ let U = new d.Z("ConnectionStore"),
       channels: []
     };
     let r = (0, E.q_)(t),
-      i = y.Z.getChannel(t.id),
+      i = v.Z.getChannel(t.id),
       o = null == i ? void 0 : i.merge(M(L({}, r), {
         recipients: i.recipients,
-        bitrate: null !== (n = r.bitrate) && void 0 !== n ? n : i.bitrate
+        bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
     return e.channels.push(null != o ? o : r), e
   }, e => "CHANNEL_UPDATE" !== e),
@@ -170,7 +170,7 @@ function z(e, t, n) {
     communication_disabled_until: h,
     unusual_dm_activity_until: m
   } = n, g = O.ZP.getMember(e, t.id);
-  (!(null != g && g.nick === s && g.avatar === l && i().isEqual(g.roles, a) && (0, u.sr)(null !== (r = g.avatarDecoration) && void 0 !== r ? r : null, null != c ? c : null)) || g.premiumSince !== f || g.isPending !== _ || g.joinedAt !== p || g.communicationDisabledUntil !== h || g.flags !== d || (null !== (o = g.unusualDMActivityUntil) && void 0 !== o ? o : null) !== (null != m ? m : null)) && K({
+  null != g && g.nick === s && g.avatar === l && i().isEqual(g.roles, a) && (0, u.sr)(null != (r = g.avatarDecoration) ? r : null, null != c ? c : null) && g.premiumSince === f && g.isPending === _ && g.joinedAt === p && g.communicationDisabledUntil === h && g.flags === d && (null != (o = g.unusualDMActivityUntil) ? o : null) === (null != m ? m : null) || K({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -212,7 +212,7 @@ function Q(e) {
       lastModified: e.last_modified,
       status: e.status,
       activities: e.activities,
-      hiddenActivities: null !== (t = e.hidden_activities) && void 0 !== t ? t : [],
+      hiddenActivities: null != (t = e.hidden_activities) ? t : [],
       active: !!e.active,
       clientInfo: e.client_info
     }
@@ -237,7 +237,7 @@ function X(e) {
     hiddenActivities: o
   })
 }
-W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id]), e => {
+W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id]), e => {
   m.Z.initialGuild.measure(() => {
     o.ZP.Emitter.batched(() => {
       let t = R.Fx(e, w.Wb.identifyStartTime);
@@ -260,8 +260,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
             selfVideo: e.self_video || !1,
             suppress: e.suppress,
             selfStream: e.self_stream || !1,
-            requestToSpeakTimestamp: null !== (n = e.request_to_speak_timestamp) && void 0 !== n ? n : null,
-            discoverable: null === (r = e.discoverable) || void 0 === r || r
+            requestToSpeakTimestamp: null != (n = e.request_to_speak_timestamp) ? n : null,
+            discoverable: null == (r = e.discoverable) || r
           }
         })
       }), U.log("Dispatched INITIAL_GUILD ".concat(e.id)))
@@ -284,8 +284,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
         e.presences = r(e.presences || [])
       });
       let o = e.presences ? r(e.presences) : [],
-        a = (null !== (t = e.lazy_private_channels) && void 0 !== t ? t : []).map(e => (0, E.q_)(e)),
-        s = null !== (n = e.game_invites) && void 0 !== n ? n : [];
+        a = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, E.q_)(e)),
+        s = null != (n = e.game_invites) ? n : [];
       m.Z.dispatchReadySupplemental.measure(() => {
         K({
           type: "CONNECTION_OPEN_SUPPLEMENTAL",
@@ -311,8 +311,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
             selfVideo: t.self_video || !1,
             suppress: t.suppress,
             selfStream: t.self_stream || !1,
-            requestToSpeakTimestamp: null !== (n = t.request_to_speak_timestamp) && void 0 !== n ? n : null,
-            discoverable: null === (r = t.discoverable) || void 0 === r || r
+            requestToSpeakTimestamp: null != (n = t.request_to_speak_timestamp) ? n : null,
+            discoverable: null == (r = t.discoverable) || r
           })
         })
       }), K({
@@ -329,19 +329,16 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
   let n = R.Eb(),
     r = e.guilds.filter(e => {
       var t, n;
-      return !e.unavailable && "partial" === e.data_mode && ((null !== (t = e.partial_updates.channels) && void 0 !== t ? t : []).length > 0 || (null !== (n = e.partial_updates.deleted_channel_ids) && void 0 !== n ? n : []).length > 0 || void 0)
+      return !e.unavailable && "partial" === e.data_mode && ((null != (t = e.partial_updates.channels) ? t : []).length > 0 || (null != (n = e.partial_updates.deleted_channel_ids) ? n : []).length > 0 || void 0)
     }).map(e => e.id);
-  return Promise.all([n, null !== (t = y.o.loadGuildIds(r)) && void 0 !== t ? t : Promise.resolve()]).then(e => {
+  return Promise.all([n, null != (t = v.o.loadGuildIds(r)) ? t : Promise.resolve()]).then(e => {
     let [t] = e;
     return t
   })
 }, (e, t, n) => {
-  if (e.user.bot) {
-    K({
-      type: "LOGOUT"
-    });
-    return
-  }
+  if (e.user.bot) return void K({
+    type: "LOGOUT"
+  });
   m.Z.ready.measure(() => {
     o.ZP.Emitter.batched(() => {
       let t = (e = m.Z.hydrateReady.measure(() => R.IM(e, w.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
@@ -379,7 +376,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
           consents: e.consents,
           sessions: Q(e.sessions || []),
           pendingPayments: e.pending_payments,
-          countryCode: null !== (n = e.country_code) && void 0 !== n ? n : void 0,
+          countryCode: null != (n = e.country_code) ? n : void 0,
           guildJoinRequests: e.guild_join_requests || [],
           userSettingsProto: a,
           apiCodeVersion: e.api_code_version,
@@ -441,7 +438,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     channelId: e.channel_id,
     messageId: e.message_id
   })
-}), W(["MESSAGE_CREATE"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["MESSAGE_CREATE"], e => v.o.loadGuildIds([e.guild_id]), e => {
   q(e), null != e.author && K({
     type: "MESSAGE_CREATE",
     guildId: e.guild_id,
@@ -450,27 +447,27 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     optimistic: !1,
     isPushNotification: !1
   })
-}), W(["MESSAGE_UPDATE"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["MESSAGE_UPDATE"], e => v.o.loadGuildIds([e.guild_id]), e => {
   q(e), K({
     type: "MESSAGE_UPDATE",
     guildId: e.guild_id,
     message: e
   })
-}), W(["MESSAGE_DELETE"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["MESSAGE_DELETE"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "MESSAGE_DELETE",
     guildId: e.guild_id,
     id: e.id,
     channelId: e.channel_id
   })
-}), W(["MESSAGE_DELETE_BULK"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["MESSAGE_DELETE_BULK"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "MESSAGE_DELETE_BULK",
     guildId: e.guild_id,
     ids: e.ids,
     channelId: e.channel_id
   })
-}), W(["MESSAGE_ACK"], e => y.o.loadGuildFromChannelId(e.channel_id), e => {
+}), W(["MESSAGE_ACK"], e => v.o.loadGuildFromChannelId(e.channel_id), e => {
   K({
     type: "MESSAGE_ACK",
     channelId: e.channel_id,
@@ -492,20 +489,20 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     ackType: e.ack_type,
     ackedId: e.entity_id
   })
-}), W(["CHANNEL_PINS_ACK"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["CHANNEL_PINS_ACK"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "CHANNEL_PINS_ACK",
     channelId: e.channel_id,
     timestamp: e.timestamp,
     version: e.version
   })
-}), W(["CHANNEL_PINS_UPDATE"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["CHANNEL_PINS_UPDATE"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "CHANNEL_PINS_UPDATE",
     channelId: e.channel_id,
     lastPinTimestamp: e.last_pin_timestamp
   })
-}), W(["CHANNEL_CREATE", "CHANNEL_DELETE"], e => y.o.loadGuildIds([e.guild_id]), (e, t) => {
+}), W(["CHANNEL_CREATE", "CHANNEL_DELETE"], e => v.o.loadGuildIds([e.guild_id]), (e, t) => {
   K({
     type: t,
     channel: (0, E.q_)(e)
@@ -531,9 +528,9 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     online: e.presence_count,
     total: e.member_count
   })
-}), W(["CHANNEL_UPDATE"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["CHANNEL_UPDATE"], e => v.o.loadGuildIds([e.guild_id]), e => {
   G.add(e)
-}), W(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => y.o.loadGuildIds([e.guild_id]), (e, t) => {
+}), W(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => v.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
   } = e, r = k(e, ["newly_created"]);
@@ -542,12 +539,12 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     isNewlyCreated: n,
     channel: (0, E.q_)(r)
   })
-}), W(["THREAD_LIST_SYNC"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["THREAD_LIST_SYNC"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "THREAD_LIST_SYNC",
     guildId: e.guild_id,
     threads: e.threads.map(e => {
-      let t = y.Z.getChannel(e.parent_id);
+      let t = v.Z.getChannel(e.parent_id);
       return null != t && (e.nsfw = t.nsfw, e.parentChannelThreadType = t.type), (0, E.q_)(e)
     }),
     mostRecentMessages: e.most_recent_messages,
@@ -572,7 +569,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     id: e.id,
     guildId: e.guild_id,
     memberCount: e.member_count,
-    addedMembers: null === (t = e.added_members) || void 0 === t ? void 0 : t.map(t => ({
+    addedMembers: null == (t = e.added_members) ? void 0 : t.map(t => ({
       id: t.id,
       guildId: e.guild_id,
       userId: t.user_id,
@@ -595,7 +592,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
 }), H(["SOUNDBOARD_SOUNDS"], e => {
   B.add(e)
 }), H(["CHANNEL_RECIPIENT_ADD", "CHANNEL_RECIPIENT_REMOVE"], (e, t) => {
-  let n = y.Z.getBasicChannel(e.channel_id);
+  let n = v.Z.getBasicChannel(e.channel_id);
   K({
     type: t,
     channelId: e.channel_id,
@@ -603,7 +600,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     nick: e.nick,
     isMember: null != n
   })
-}), W(["GUILD_CREATE"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id]), e => {
+}), W(["GUILD_CREATE"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id]), e => {
   if (e.unavailable) K({
     type: "GUILD_UNAVAILABLE",
     guildId: e.id
@@ -626,8 +623,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
           selfVideo: e.self_video || !1,
           suppress: e.suppress,
           selfStream: e.self_stream || !1,
-          requestToSpeakTimestamp: null !== (n = e.request_to_speak_timestamp) && void 0 !== n ? n : null,
-          discoverable: null === (r = e.discoverable) || void 0 === r || r
+          requestToSpeakTimestamp: null != (n = e.request_to_speak_timestamp) ? n : null,
+          discoverable: null == (r = e.discoverable) || r
         }
       })
     })
@@ -718,13 +715,13 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     unusualDMActivityUntil: e.unusual_dm_activity_until,
     flags: e.flags
   })
-}), W(["GUILD_ROLE_CREATE", "GUILD_ROLE_UPDATE"], e => y.o.loadGuildIds([e.guild_id]), (e, t) => {
+}), W(["GUILD_ROLE_CREATE", "GUILD_ROLE_UPDATE"], e => v.o.loadGuildIds([e.guild_id]), (e, t) => {
   K({
     type: t,
     guildId: e.guild_id,
     role: e.role
   })
-}), W(["GUILD_ROLE_DELETE"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["GUILD_ROLE_DELETE"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "GUILD_ROLE_DELETE",
     guildId: e.guild_id,
@@ -889,8 +886,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       selfVideo: e.self_video || !1,
       suppress: e.suppress,
       selfStream: e.self_stream || !1,
-      requestToSpeakTimestamp: null !== (t = e.request_to_speak_timestamp) && void 0 !== t ? t : null,
-      discoverable: null === (n = e.discoverable) || void 0 === n || n,
+      requestToSpeakTimestamp: null != (t = e.request_to_speak_timestamp) ? t : null,
+      discoverable: null == (n = e.discoverable) || n,
       oldChannelId: T.Z.getUserVoiceChannelId(e.guild_id, e.user_id)
     }]
   })
@@ -927,8 +924,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
         selfVideo: e.self_video || !1,
         suppress: e.suppress,
         selfStream: e.self_stream || !1,
-        requestToSpeakTimestamp: null !== (t = e.request_to_speak_timestamp) && void 0 !== t ? t : null,
-        discoverable: null === (n = e.discoverable) || void 0 === n || n
+        requestToSpeakTimestamp: null != (t = e.request_to_speak_timestamp) ? t : null,
+        discoverable: null == (n = e.discoverable) || n
       }
     })
   })
@@ -1402,7 +1399,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       guildId: e.guild_id,
       name: e.name,
       soundId: e.sound_id,
-      user: new v.Z(e.user),
+      user: new y.Z(e.user),
       userId: e.user_id,
       volume: e.volume,
       emojiId: e.emoji_id,
@@ -1417,7 +1414,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       guildId: e.guild_id,
       name: e.name,
       soundId: e.sound_id,
-      user: new v.Z(e.user),
+      user: new y.Z(e.user),
       userId: e.user_id,
       volume: e.volume,
       emojiId: e.emoji_id,
@@ -1446,7 +1443,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       guildId: e.guild_id
     }))
   })
-}), W(["EMBEDDED_ACTIVITY_UPDATE_V2"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["EMBEDDED_ACTIVITY_UPDATE_V2"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "EMBEDDED_ACTIVITY_UPDATE_V2",
     applicationId: e.application_id,
@@ -1479,7 +1476,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
   K(L({
     type: "DELETED_ENTITY_IDS"
   }, e))
-}), W(["CHANNEL_SYNC"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["CHANNEL_SYNC"], e => v.o.loadGuildIds([e.guild_id]), e => {
   e.channels.forEach(e => {
     G.add(e)
   }), K({
@@ -1495,7 +1492,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     result: e.result,
     error: e.error
   })
-}), W(["PASSIVE_UPDATE_V2"], e => y.o.loadGuildIds([e.guild_id]), e => {
+}), W(["PASSIVE_UPDATE_V2"], e => v.o.loadGuildIds([e.guild_id]), e => {
   K({
     type: "PASSIVE_UPDATE_V2",
     guildId: e.guild_id,
@@ -1511,7 +1508,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
         channelId: e.channel_id,
         deaf: e.deaf || !1,
         mute: e.mute || !1,
-        requestToSpeakTimestamp: null !== (t = e.request_to_speak_timestamp) && void 0 !== t ? t : null,
+        requestToSpeakTimestamp: null != (t = e.request_to_speak_timestamp) ? t : null,
         selfDeaf: e.self_deaf || !1,
         selfMute: e.self_mute || !1,
         selfStream: e.self_stream || !1,
@@ -1519,7 +1516,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
         sessionId: e.session_id,
         suppress: e.suppress,
         userId: e.user_id,
-        discoverable: null === (n = e.discoverable) || void 0 === n || n
+        discoverable: null == (n = e.discoverable) || n
       }
     }),
     removedVoiceStateUsers: e.removed_voice_states

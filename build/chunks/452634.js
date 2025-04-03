@@ -13,6 +13,6 @@ function a(e) {
     channelId: n,
     userId: a,
     activity: s
-  } = e, l = i.Z.getChannel(n), c = (null == s ? void 0 : s.session_id) == null || null != l && (0, r.Qm)(l.type) ? n : null === (t = o.Z.getVoiceStateForSession(a, null == s ? void 0 : s.session_id)) || void 0 === t ? void 0 : t.channelId;
+  } = e, l = i.Z.getChannel(n), c = (null == s ? void 0 : s.session_id) == null || null != l && (0, r.Qm)(l.type) ? n : null == (t = o.Z.getVoiceStateForSession(a, null == s ? void 0 : s.session_id)) ? void 0 : t.channelId;
   return null != c ? c : void 0
 }

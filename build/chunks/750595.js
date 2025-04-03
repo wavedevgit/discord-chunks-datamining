@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       match: [/^\s*(?=\S)/, /[^:]+/, /:\s*/, /$/],
       className: {
@@ -42,4 +42,3 @@ function t(e) {
     }), i, r, t, n]
   }
 }
-e.exports = t

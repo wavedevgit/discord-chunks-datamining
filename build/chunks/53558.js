@@ -76,15 +76,15 @@ function m(e) {
     u = _(e, ["user", "guildId"]);
   let d = (0, i.e7)([l.Z], () => {
       var e;
-      return null === (e = l.Z.getUserProfile(s.id)) || void 0 === e ? void 0 : e.application
+      return null == (e = l.Z.getUserProfile(s.id)) ? void 0 : e.application
     }),
-    p = (0, a.R)(null !== (t = null == d ? void 0 : d.id) && void 0 !== t ? t : "");
+    p = (0, a.R)(null != (t = null == d ? void 0 : d.id) ? t : "");
   if (null == d || !p) return null;
   let m = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("74891"), n.e("77803"), n.e("65057")]).then(n.bind(n, 7225));
+      } = await Promise.all([n.e("74891"), n.e("77803"), n.e("53458")]).then(n.bind(n, 7225));
       return t => (0, r.jsx)(e, f({
         appId: d.id,
         guildId: c

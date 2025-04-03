@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => y,
+  V: () => v,
   e: () => b
 }), n(47120);
 var r, i = n(200651);
@@ -15,7 +15,7 @@ var o = n(442837),
   d = n(944486),
   f = n(594174),
   _ = n(388032),
-  p = n(488483);
+  p = n(951535);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,18 +47,18 @@ let E = new g(s.Z, {}),
     let r = u.ZP.getNicknames(n.id).some(e => e.endsWith("[PTO]") || e.endsWith("[OOO]"));
     return r ? !E.hasId(n.id) && r : (m.delete(n.id) && E.emitChange(), !1)
   }),
-  v = () => {
+  y = () => {
     let e = d.Z.getChannelId();
     if (null == e) return;
     let t = c.Z.getChannel(e);
-    null != t && t.isPrivate() && !m.has(t.getRecipientId()) && (m.add(t.getRecipientId()), E.emitChange())
+    null != t && t.isPrivate() && (m.has(t.getRecipientId()) || (m.add(t.getRecipientId()), E.emitChange()))
   },
-  y = () => (0, i.jsxs)("div", {
+  v = () => (0, i.jsxs)("div", {
     className: p.bar,
     children: [(0, i.jsx)(a.Text, {
       variant: "text-sm/medium",
       children: _.NW.string(_.t["2UvR1N"])
     }), (0, i.jsx)(l.B, {
-      onClick: v
+      onClick: y
     })]
   })

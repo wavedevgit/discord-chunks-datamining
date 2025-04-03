@@ -1,5 +1,4 @@
 /** Chunk was on web.js **/
-function t() {
+e.exports = function() {
   return !1
 }
-e.exports = t

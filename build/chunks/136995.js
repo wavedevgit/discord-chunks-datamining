@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -72,7 +72,7 @@ function b(e, t) {
   return i
 }
 
-function v(e) {
+function y(e) {
   var {
     channel: t,
     centerButton: n = !1,
@@ -80,16 +80,16 @@ function v(e) {
   } = e, m = E(e, ["channel", "centerButton", "onCallJoined"]);
   let {
     parentAnalyticsLocation: b
-  } = (0, s.ZP)(), v = n ? d.d : d.Z, y = t.isManaged() || !t.isPrivate() ? _.NW.string(_.t.S0W8Z2) : _.NW.string(_.t["0D/6R0"]), O = (0, c.Z)({
+  } = (0, s.ZP)(), y = n ? d.d : d.Z, v = t.isManaged() || !t.isPrivate() ? _.NW.string(_.t.S0W8Z2) : _.NW.string(_.t["0D/6R0"]), O = (0, c.Z)({
     location: "JoinCallButton"
   }), I = i.useCallback(() => {
     null == p || p(), (0, l.v)(b, l.d.JOIN_CALL), a.default.selectVoiceChannel(t.id)
   }, [t.id, p, b]);
   return i.useEffect(() => (u.S.subscribe(f.CkL.CALL_ACCEPT, I), () => {
     u.S.unsubscribe(f.CkL.CALL_ACCEPT, I)
-  }), [I]), (0, r.jsx)(v, g(h({}, m), {
+  }), [I]), (0, r.jsx)(y, g(h({}, m), {
     iconComponent: o.Csw,
-    label: y,
+    label: v,
     onClick: I,
     fullRegionButton: O
   }))

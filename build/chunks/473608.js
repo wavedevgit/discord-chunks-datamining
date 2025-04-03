@@ -19,10 +19,10 @@ var r = n(200651),
   m = n(597688),
   g = n(579407),
   E = n(755419),
-  b = n(409101),
-  v = n(223223);
+  b = n(643158),
+  y = n(223223);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,7 +38,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -73,11 +73,11 @@ let I = e => {
       accessibilityLabel: a,
       thumbnailPreviewSrc: s,
       title: l
-    } = null !== (t = null == o ? void 0 : o.config) && void 0 !== t ? t : {};
+    } = null != (t = null == o ? void 0 : o.config) ? t : {};
     return (0, r.jsxs)("div", {
       className: b.profileEffectContainer,
       children: [(0, r.jsx)("img", {
-        src: v,
+        src: y,
         alt: a,
         className: b.profileEffectBackground
       }), (0, r.jsx)("img", {
@@ -107,7 +107,7 @@ let I = e => {
       product: n,
       sku: i,
       fallbackLabel: c
-    } = e, u = null == i ? void 0 : i.id, d = (0, l.e7)([m.Z], () => m.Z.getProduct(null == i ? void 0 : i.id)), f = null != n ? n : d, [_] = null !== (t = null == f ? void 0 : f.items) && void 0 !== t ? t : [];
+    } = e, u = null == i ? void 0 : i.id, d = (0, l.e7)([m.Z], () => m.Z.getProduct(null == i ? void 0 : i.id)), f = null != n ? n : d, [_] = null != (t = null == f ? void 0 : f.items) ? t : [];
     return void 0 !== u && u in E.KO ? E.KO[u].render({
       animationState: "on_hover",
       className: b.externalProductAsset

@@ -17,7 +17,7 @@ function u(e) {
     [u, d, f, _] = (0, i.Wu)([s.Z], () => [s.Z.isFetchingProduct(e), s.Z.getProduct(e), s.Z.getProductFetchError(e), s.Z.getProductFetchErrorTimestamp(e)]),
     p = null != f && null != _ && Date.now() - _ < c;
   return (0, r.useEffect)(() => {
-    null != e && null == d && !n && !u && !p && (0, a.jr)(e)
+    null == e || null != d || n || u || p || (0, a.jr)(e)
   }, [e, d, n, u, p]), {
     product: d,
     isFetching: u

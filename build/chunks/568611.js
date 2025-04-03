@@ -85,7 +85,7 @@ var m = p(function(e, t) {
   },
   b = o.forwardRef;
 
-function v() {
+function y() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.filter(function(e) {
     return e
@@ -100,7 +100,7 @@ void 0 === b && (b = E), b(function(e, t) {
     p = e.className,
     h = e.exact,
     m = e.isActive,
-    y = e.location,
+    v = e.location,
     O = e.sensitive,
     I = e.strict,
     S = e.style,
@@ -109,7 +109,7 @@ void 0 === b && (b = E), b(function(e, t) {
     A = (0, l.Z)(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
   return o.createElement(r.s6.Consumer, null, function(e) {
     e || (0, c.Z)(!1);
-    var n = y || e.location,
+    var n = v || e.location,
       a = f(d(T, n), n),
       l = a.pathname,
       C = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
@@ -120,7 +120,7 @@ void 0 === b && (b = E), b(function(e, t) {
         strict: I
       }) : null,
       P = !!(m ? m(R, n) : R),
-      w = P ? v(p, u) : p,
+      w = P ? y(p, u) : p,
       D = P ? (0, s.Z)({}, S, {}, _) : S,
       L = (0, s.Z)({
         "aria-current": P && i || null,

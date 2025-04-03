@@ -14,7 +14,7 @@ var i = n(120356),
   u = n(979264),
   d = n(228168),
   f = n(388032),
-  _ = n(838544);
+  _ = n(438361);
 
 function p(e) {
   let {
@@ -27,15 +27,15 @@ function p(e) {
     pronouns: g,
     className: E,
     isTryItOut: b,
-    onOpenProfile: v,
-    nicknameVariant: y = "heading-lg/bold",
+    onOpenProfile: y,
+    nicknameVariant: v = "heading-lg/bold",
     pronounsVariant: O = "text-sm/medium"
   } = e, I = {
     [_.biteSize]: n === d.y0.BITE_SIZE,
     [_.fullSize]: n === d.y0.FULL_SIZE,
     [_.panel]: n === d.y0.PANEL
-  }, S = e => null == v ? e : (0, r.jsx)(a.P3F, {
-    onClick: v,
+  }, S = e => null == y ? e : (0, r.jsx)(a.P3F, {
+    onClick: y,
     className: _.clickableUsername,
     children: e
   }), T = null != g && g.length > 0, N = (0, l.D)(t);
@@ -47,7 +47,7 @@ function p(e) {
       className: _.usernameRow,
       children: [S((0, r.jsx)(a.X6q, {
         className: o()(_.nickname, I),
-        variant: y,
+        variant: v,
         children: h
       })), null != N && (0, r.jsx)(c.Z, {
         type: N,

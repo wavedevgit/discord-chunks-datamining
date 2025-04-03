@@ -149,7 +149,7 @@ function b(e) {
   }
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   return _(E(e, t, n))
 }
 d(c({}, {
@@ -177,7 +177,7 @@ d(c({}, {
 }), {
   "#5865f2": () => s.NW.string(s.t["Cn/LJy"])
 });
-let y = 30,
+let v = 30,
   O = 80,
   I = 20,
   S = 30,
@@ -195,7 +195,7 @@ function A(e) {
     a = r,
     s = i,
     l = o;
-  s < y && (s += S), l > O && (l -= T), l < I && (l += N);
+  s < v && (s += S), l > O && (l -= T), l < I && (l += N);
   let c = 360 / (t + 1);
   for (; n.length < t;) {
     (a -= c) < 0 && (a += 360);
@@ -203,7 +203,7 @@ function A(e) {
       r: e,
       g: t,
       b: r
-    } = v(a, s, l);
+    } = y(a, s, l);
     n.push([e, t, r])
   }
   return n
@@ -227,8 +227,7 @@ function R(e) {
 }
 
 function P(e, t, n) {
-  let r, i;
-  let o = Math.max(e /= 255, t /= 255, n /= 255),
+  let r, i, o = Math.max(e /= 255, t /= 255, n /= 255),
     a = Math.min(e, t, n),
     s = (o + a) / 2;
   if (o === a) r = i = 0;
@@ -289,10 +288,10 @@ function L(e) {
     c = R([i, a]),
     u = P(i.red, i.green, i.blue);
   for (u.saturation *= r; c < n && null != u;) {
-    if (l) {
+    if (l)
       if (u.lightness < .95) u.lightness += .05;
-      else break
-    } else if (u.lightness > .05) u.lightness -= .05;
+      else break;
+    else if (u.lightness > .05) u.lightness -= .05;
     else break;
     c = R([w(u.hue, u.saturation, u.lightness), t[1]])
   }
@@ -304,7 +303,7 @@ function x(e) {
     var t;
     return {
       hex: e,
-      hsv: null !== (t = b(e)) && void 0 !== t ? t : {
+      hsv: null != (t = b(e)) ? t : {
         h: 0,
         s: 0,
         v: 0
@@ -327,7 +326,7 @@ function k(e) {
   } = e;
   if (null == n) return n;
   let i = P(n.red, n.green, n.blue);
-  return null == i ? null == n ? void 0 : n.toHexString() : null === (t = w(i.hue, i.saturation * r, i.lightness)) || void 0 === t ? void 0 : t.toHexString()
+  return null == i ? null == n ? void 0 : n.toHexString() : null == (t = w(i.hue, i.saturation * r, i.lightness)) ? void 0 : t.toHexString()
 }
 
 function j(e, t, n) {

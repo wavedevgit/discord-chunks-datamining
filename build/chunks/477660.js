@@ -29,7 +29,7 @@
         if (o !== a) return o - a;
         var s = +!r.quality,
           l = +!i.quality;
-        return s !== l ? s - l : t < n ? -1 : +!!(t > n)
+        return s !== l ? s - l : t < n ? -1 : 1 * !!(t > n)
       });
       for (var a = new Map, s = [], l = 0; l < o.length; l++) {
         var c = o[l],
@@ -48,13 +48,13 @@
                 for (var g = 0; g < m.length; g++) {
                   var E = m[g],
                     b = e[E],
-                    v = b.order;
-                  if (v > _) break;
-                  var y = null == r.prevCapture ? "" : r.prevCapture[0],
-                    O = b.match(t, r, y);
+                    y = b.order;
+                  if (y > _) break;
+                  var v = null == r.prevCapture ? "" : r.prevCapture[0],
+                    O = b.match(t, r, v);
                   if (O) {
-                    var I = b.quality ? b.quality(O, r, y) : 0;
-                    (v < _ || I > f) && (l = E, c = b, u = O, f = I, _ = v)
+                    var I = b.quality ? b.quality(O, r, v) : 0;
+                    (y < _ || I > f) && (l = E, c = b, u = O, f = I, _ = y)
                   }
                 }
             }
@@ -145,13 +145,13 @@
       var i = e(t, n);
       return n.inline = r, i
     },
-    v = function(e, t, n) {
+    y = function(e, t, n) {
       var r = n.inline || !1;
       n.inline = !1;
       var i = e(t + "\n\n", n);
       return n.inline = r, i
     },
-    y = function(e, t, n) {
+    v = function(e, t, n) {
       return {
         content: b(t, e[1], n)
       }
@@ -519,7 +519,7 @@
       paragraph: {
         order: G++,
         match: s(/^((?:[^\n]|\n(?! *\n))+)(?:\n *)+\n/),
-        parse: y,
+        parse: v,
         react: function(e, t, n) {
           return u("div", n.key, {
             className: "paragraph",
@@ -718,7 +718,7 @@
         quality: function(e) {
           return e[0].length + .1
         },
-        parse: y,
+        parse: v,
         react: function(e, t, n) {
           return u("strong", n.key, {
             children: t(e.content, n)
@@ -735,7 +735,7 @@
         quality: function(e) {
           return e[0].length
         },
-        parse: y,
+        parse: v,
         react: function(e, t, n) {
           return u("u", n.key, {
             children: t(e.content, n)
@@ -749,7 +749,7 @@
         order: G++,
         requiredFirstCharacters: ["~"],
         match: a(/^~~(?=\S)((?:\\[\s\S]|~(?!~)|[^\s~]|\s(?!~~))+?)~~/),
-        parse: y,
+        parse: v,
         react: function(e, t, n) {
           return u("del", n.key, {
             children: t(e.content, n)
@@ -872,7 +872,7 @@
     blockRegex: s,
     anyScopeRegex: l,
     parseInline: b,
-    parseBlock: v,
+    parseBlock: y,
     markdownToReact: X,
     markdownToHtml: function(e, t) {
       return Q(Y(e, t), t)

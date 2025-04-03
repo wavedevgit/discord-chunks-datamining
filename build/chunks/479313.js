@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $l: () => w,
-  G1: () => y,
+  G1: () => v,
   JR: () => N,
   U$: () => A,
   ZP: () => D,
@@ -27,7 +27,7 @@ let m = 75,
   g = 50,
   E = 30 * _.Z.Millis.SECOND,
   b = null;
-async function v(e, t) {
+async function y(e, t) {
   let n, r;
   if (!p.Z.shouldFetch(e, t)) return;
   let i = Date.now();
@@ -55,7 +55,7 @@ async function v(e, t) {
     receivedAt: Date.now()
   })
 }
-async function y(e) {
+async function v(e) {
   var t, n;
   let r, i;
   if (!p.Z.shouldFetch(e)) return;
@@ -73,7 +73,7 @@ async function y(e) {
   } catch (e) {
     r = new c.Hx(e)
   }
-  let u = (null == i ? void 0 : null === (t = i.body) || void 0 === t ? void 0 : t.summaries) instanceof Array ? i.body.summaries : null !== (n = null == i ? void 0 : i.body) && void 0 !== n ? n : [];
+  let u = (null == i || null == (t = i.body) ? void 0 : t.summaries) instanceof Array ? i.body.summaries : null != (n = null == i ? void 0 : i.body) ? n : [];
   u = o().takeRight(u, m), l.Z.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES",
     channelId: e,
@@ -99,7 +99,7 @@ function I() {
 }
 
 function S(e, t) {
-  null != e && null != t && v(e, t), l.Z.dispatch({
+  null != e && null != t && y(e, t), l.Z.dispatch({
     type: "SET_SELECTED_SUMMARY",
     channelId: e,
     summaryId: null != t ? t : null
@@ -146,7 +146,7 @@ async function C() {
   } catch (e) {
     t = new c.Hx(e)
   }
-  let i = null == n ? void 0 : null === (e = n.body) || void 0 === e ? void 0 : e.channel_affinities;
+  let i = null == n || null == (e = n.body) ? void 0 : e.channel_affinities;
   l.Z.dispatch({
     type: "RECEIVE_CHANNEL_AFFINITIES",
     affinities: i,
@@ -237,7 +237,7 @@ let D = {
   setSelectedSummary: S,
   setGravitySelectedSummary: T,
   setHighlightedSummary: O,
-  fetchSummaries: y,
+  fetchSummaries: v,
   fetchSummariesBulk: R,
   useChannelSummaries: function(e) {
     let {

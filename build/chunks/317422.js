@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "\\[",
     n = "\\]";
   return {
@@ -38,4 +38,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

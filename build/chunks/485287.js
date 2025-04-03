@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U5: () => y,
+  U5: () => v,
   ZP: () => I,
-  pp: () => v
+  pp: () => y
 }), n(47120);
 var r = n(442837),
   i = n(147913),
@@ -57,14 +57,14 @@ function b() {
   n || g ? n && (E.pause(), g = !1) : (E.volume = m(s.Z.getOutputVolume()), E.loop(), g = !0)
 }
 
-function v(e) {
+function y(e) {
   let t = (0, r.e7)([l.Z], () => l.Z.getVoiceChannelId() === e),
     n = null != (0, d.w8)(e, f.pV.SPEAKER).find(e => !e.voiceState.isVoiceMuted()),
     i = (0, r.e7)([_.Z], () => _.Z.getStageInstanceByChannel(e));
   return t && null == i && !n
 }
 
-function y(e) {
+function v(e) {
   let t = l.Z.getVoiceChannelId() === e,
     n = null != u.Z.getMutableParticipants(e, f.pV.SPEAKER).find(e => !e.voiceState.isVoiceMuted()),
     r = _.Z.getStageInstanceByChannel(e);

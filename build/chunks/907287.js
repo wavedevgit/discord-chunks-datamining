@@ -2,8 +2,7 @@
 var r = n(990393),
   i = 1,
   o = Object.prototype.hasOwnProperty;
-
-function a(e, t, n, a, s, l) {
+e.exports = function(e, t, n, a, s, l) {
   var c = n & i,
     u = r(e),
     d = u.length;
@@ -20,18 +19,17 @@ function a(e, t, n, a, s, l) {
   for (var g = c; ++f < d;) {
     var E = e[_ = u[f]],
       b = t[_];
-    if (a) var v = c ? a(b, E, _, t, e, l) : a(E, b, _, e, t, l);
-    if (!(void 0 === v ? E === b || s(E, b, n, a, l) : v)) {
+    if (a) var y = c ? a(b, E, _, t, e, l) : a(E, b, _, e, t, l);
+    if (!(void 0 === y ? E === b || s(E, b, n, a, l) : y)) {
       m = !1;
       break
     }
     g || (g = "constructor" == _)
   }
   if (m && !g) {
-    var y = e.constructor,
+    var v = e.constructor,
       O = t.constructor;
-    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (m = !1)
+    v != O && "constructor" in e && "constructor" in t && !("function" == typeof v && v instanceof v && "function" == typeof O && O instanceof O) && (m = !1)
   }
   return l.delete(e), l.delete(t), m
 }
-e.exports = a

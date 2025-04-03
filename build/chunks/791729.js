@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = e.COMMENT("--", "$"),
     r = {
@@ -77,4 +77,3 @@ function t(e) {
     }, g, h, _, r, i, e.C_NUMBER_MODE, e.C_BLOCK_COMMENT_MODE, n, p]
   }
 }
-e.exports = t

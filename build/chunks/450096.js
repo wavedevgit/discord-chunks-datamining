@@ -32,7 +32,7 @@ function s(e, t, n) {
   return r.useEffect(() => {
     let t = !1;
     return i && a(e).then(e => {
-      !t && s(e)
+      t || s(e)
     }), () => {
       t = !0
     }

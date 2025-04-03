@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r, i = n(442837),
   o = n(570140),
@@ -69,7 +69,7 @@ function E(e) {
 function b(e) {
   e.isGift && (u = e.skuId)
 }
-class v extends(r = i.ZP.Store) {
+class y extends(r = i.ZP.Store) {
   get paymentError() {
     return l
   }
@@ -77,8 +77,8 @@ class v extends(r = i.ZP.Store) {
     return e === u ? c : null
   }
 }
-s(v, "displayName", "PremiumPaymentModalStore");
-let y = new v(o.Z, {
+s(y, "displayName", "PremiumPaymentModalStore");
+let v = new y(o.Z, {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
   PREMIUM_PAYMENT_UPDATE_FAIL: d,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: f,

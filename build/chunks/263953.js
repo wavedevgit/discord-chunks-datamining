@@ -10,7 +10,7 @@ var r, i, o = n(200651),
   c = n(748780),
   u = n(215569),
   d = n(186325),
-  f = n(884546);
+  f = n(576525);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -165,7 +165,7 @@ class g extends(r = a.PureComponent) {
       animationState: i,
       baseHeight: o,
       targetHeight: a
-    } = this.state, s = null !== (e = this.props.sideMargin) && void 0 !== e ? e : 0, l = null !== (t = this.props.verticalMargin) && void 0 !== t ? t : 0, u = 1 === i, d = 0 === i;
+    } = this.state, s = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
     return m(p({}, {
       overflow: d || u ? "hidden" : "visible",
       position: u ? "absolute" : void 0,

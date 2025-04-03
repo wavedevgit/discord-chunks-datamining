@@ -57,7 +57,7 @@ class f extends(r = i.ZP.DeviceSettingsStore) {
   }
   get lastOpenTabId() {
     var e;
-    return null !== (e = u.lastOpenTabId) && void 0 !== e ? e : null
+    return null != (e = u.lastOpenTabId) ? e : null
   }
   get displayTools() {
     return a.Z.isDeveloper && u.displayTools

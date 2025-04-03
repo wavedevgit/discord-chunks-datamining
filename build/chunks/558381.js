@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hq: () => v,
+  Hq: () => y,
   M9: () => O,
   Oj: () => I,
-  cj: () => y,
+  cj: () => v,
   km: () => E,
   oJ: () => g,
   rV: () => b,
@@ -132,7 +132,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   return (0, c.Kb)({
     url: u.ANM.STORE_PUBLISHED_LISTINGS_APPLICATION(e),
     rejectWithError: !1
@@ -144,7 +144,7 @@ function v(e) {
   })
 }
 
-function y() {
+function v() {
   i.Z.dispatch({
     type: "APPLICATION_STORE_MATURE_AGREE"
   })

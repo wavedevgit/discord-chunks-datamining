@@ -20,7 +20,7 @@ var r, i = n(200651),
   h = n(186523),
   m = n(553826),
   g = n(981631),
-  E = n(973719);
+  E = n(339707);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,7 +31,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,7 +56,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -136,8 +136,8 @@ function T(e) {
     hasSelection: m,
     radioPosition: g = "left",
     icon: b,
-    withTransparentBackground: v
-  } = e, y = null !== (t = o.color) && void 0 !== t ? t : "", O = r || !m, I = (0, i.jsx)(S, {
+    withTransparentBackground: y
+  } = e, v = null != (t = o.color) ? t : "", O = r || !m, I = (0, i.jsx)(S, {
     checked: r,
     disabled: n,
     radioItemIconClassName: p,
@@ -150,11 +150,11 @@ function T(e) {
     tabIndex: !n && O ? 0 : -1,
     className: s()(null != o.collapsibleContent ? E.collapsibleItem : E.item, {
       [E.disabled]: n,
-      [E.itemFilled]: !v
+      [E.itemFilled]: !y
     }, _),
     children: (0, i.jsxs)("div", {
       style: {
-        "--radio-bar-accent-color": y,
+        "--radio-bar-accent-color": v,
         padding: a
       },
       className: s()(E.radioBar, {
@@ -196,7 +196,7 @@ class N extends(r = o.PureComponent) {
     } = this.props, m = t || n.disabled, {
       tooltipText: g,
       tooltipPosition: b,
-      icon: y
+      icon: v
     } = n, I = null != n.collapsibleContent ? (0, i.jsx)(u.z, {
       className: f,
       isExpanded: e,
@@ -220,7 +220,7 @@ class N extends(r = o.PureComponent) {
           radioItemIconClassName: c,
           radioBarClassName: d,
           radioPosition: h,
-          icon: y,
+          icon: v,
           withTransparentBackground: p
         })
       }
@@ -237,13 +237,13 @@ class N extends(r = o.PureComponent) {
       radioItemIconClassName: c,
       radioBarClassName: d,
       radioPosition: h,
-      icon: y,
+      icon: v,
       withTransparentBackground: p
     });
     return null != g ? (0, i.jsx)(_.u, {
       text: g,
       position: null != b ? b : "top",
-      children: e => (0, i.jsx)("div", O(v({}, e), {
+      children: e => (0, i.jsx)("div", O(y({}, e), {
         className: E.tooltipWrapper,
         children: I
       }))
@@ -273,7 +273,7 @@ function A() {
     },
     getActiveElement() {
       var e;
-      return null === (e = r.current) || void 0 === e ? void 0 : e.ownerDocument.activeElement
+      return null == (e = r.current) ? void 0 : e.ownerDocument.activeElement
     }
   }), []);
   return {
@@ -339,11 +339,11 @@ function R(e) {
     labelledBy: null != p ? p : E.titleId,
     orientation: h,
     isDisabled: f
-  }), y = _.some(e => e.value === s);
-  return (0, i.jsx)("div", O(v({}, b), {
+  }), v = _.some(e => e.value === s);
+  return (0, i.jsx)("div", O(y({}, b), {
     className: a,
     children: _.map(e => (0, i.jsx)(N, {
-      hasSelection: y,
+      hasSelection: v,
       disabled: f,
       checked: s === e.value,
       option: e,

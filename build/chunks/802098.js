@@ -27,22 +27,22 @@ let f = {},
   g = "lastChangeLogDate",
   E = null,
   b = null,
-  v = new Set;
+  y = new Set;
 
-function y(e) {
+function v(e) {
   let {
     key: t
   } = e;
-  if (v.has(t)) return !1;
-  (v = new Set(v)).add(t)
+  if (y.has(t)) return !1;
+  (y = new Set(y)).add(t)
 }
 
 function O(e) {
   let {
     key: t
   } = e;
-  if (!v.has(t)) return !1;
-  (v = new Set(v)).delete(t)
+  if (!y.has(t)) return !1;
+  (y = new Set(y)).delete(t)
 }
 
 function I(e) {
@@ -106,14 +106,14 @@ class R extends(r = i.ZP.Store) {
   }
   getChangelog(e, t) {
     var n, r;
-    return null !== (r = null === (n = f[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : null
+    return null != (r = null == (n = f[e]) ? void 0 : n[t]) ? r : null
   }
   latestChangelogId() {
     return p
   }
   getChangelogLoadStatus(e, t) {
     var n, r;
-    return null !== (r = null === (n = _[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : u.LU.NOT_LOADED
+    return null != (r = null == (n = _[e]) ? void 0 : n[t]) ? r : u.LU.NOT_LOADED
   }
   hasLoadedConfig() {
     return null != m
@@ -139,12 +139,12 @@ class R extends(r = i.ZP.Store) {
     }
   }
   isLocked() {
-    return v.size > 0
+    return y.size > 0
   }
 }
 d(R, "displayName", "ChangelogStore");
 let P = new R(a.Z, {
-  CHANGE_LOG_LOCK: y,
+  CHANGE_LOG_LOCK: v,
   CHANGE_LOG_UNLOCK: O,
   CHANGE_LOG_SET_CONFIG: I,
   CHANGE_LOG_FETCH_SUCCESS: S,

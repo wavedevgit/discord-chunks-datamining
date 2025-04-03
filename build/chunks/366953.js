@@ -9,7 +9,7 @@ let i = "recentBuildOverrides";
 
 function o() {
   var e;
-  return (null !== (e = r.K.get(i)) && void 0 !== e ? e : []).filter(e => null == e.exp || e.exp > Date.now())
+  return (null != (e = r.K.get(i)) ? e : []).filter(e => null == e.exp || e.exp > Date.now())
 }
 
 function a(e, t) {

@@ -20,7 +20,7 @@ let p = {};
 
 function h(e) {
   var t;
-  null === (t = p[e]) || void 0 === t || t.call(p), p[e] = null
+  null == (t = p[e]) || t.call(p), p[e] = null
 }
 
 function m(e) {

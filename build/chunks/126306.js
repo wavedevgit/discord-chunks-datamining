@@ -9,7 +9,7 @@ var r = n(200651),
   a = n.n(o),
   s = n(846519),
   l = n(186325),
-  c = n(171115);
+  c = n(954332);
 let u = 200;
 var d = function(e) {
   return e[e.TRANSLATE = 1] = "TRANSLATE", e[e.SCALE = 2] = "SCALE", e[e.FADE = 3] = "FADE", e
@@ -35,10 +35,10 @@ function p(e) {
     children: o
   } = e, {
     reducedMotion: d
-  } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, b] = i.useState(!0), v = i.useRef(null);
+  } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, b] = i.useState(!0), y = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
-    null === (e = v.current) || void 0 === e || e.addEventListener("transitionend", () => {
+    null == (e = y.current) || e.addEventListener("transitionend", () => {
       b(!1)
     }), setTimeout(() => {
       b(!1)

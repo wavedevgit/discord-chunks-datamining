@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r, i = n(442837),
   o = n(570140),
@@ -33,7 +33,7 @@ let c = {},
 
 function d(e, t) {
   var n;
-  let r = l({}, null !== (n = c[e]) && void 0 !== n ? n : {});
+  let r = l({}, null != (n = c[e]) ? n : {});
   null == t || t.forEach(e => {
     u[e.channel_id] = e, r[e.channel_id] = e
   }), c[e] = r
@@ -57,7 +57,7 @@ function p(e) {
   var t;
   let {
     guild: n
-  } = e, r = null !== (t = c[n.id]) && void 0 !== t ? t : {};
+  } = e, r = null != (t = c[n.id]) ? t : {};
   delete c[n.id], Object.keys(r).forEach(e => {
     delete u[e]
   })
@@ -73,7 +73,7 @@ function h(e) {
 function m(e, t) {
   var n;
   if (delete u[t], null == e) return;
-  let r = l({}, null !== (n = c[e]) && void 0 !== n ? n : {});
+  let r = l({}, null != (n = c[e]) ? n : {});
   delete r[t], c[e] = r
 }
 
@@ -94,7 +94,7 @@ function E(e) {
 function b() {
   u = {}, c = {}
 }
-class v extends(r = i.ZP.Store) {
+class y extends(r = i.ZP.Store) {
   getStageInstanceByChannel(e) {
     if (null != e) return u[e]
   }
@@ -103,18 +103,18 @@ class v extends(r = i.ZP.Store) {
   }
   isPublic(e) {
     var t;
-    return (null === (t = this.getStageInstanceByChannel(e)) || void 0 === t ? void 0 : t.privacy_level) === a.j8.PUBLIC
+    return (null == (t = this.getStageInstanceByChannel(e)) ? void 0 : t.privacy_level) === a.j8.PUBLIC
   }
   getStageInstancesByGuild(e) {
     var t;
-    return null == e ? {} : null !== (t = c[e]) && void 0 !== t ? t : {}
+    return null == e ? {} : null != (t = c[e]) ? t : {}
   }
   getAllStageInstances() {
     return Object.values(u)
   }
 }
-s(v, "displayName", "StageInstanceStore");
-let y = new v(o.Z, {
+s(y, "displayName", "StageInstanceStore");
+let v = new y(o.Z, {
   CONNECTION_OPEN: f,
   GUILD_CREATE: _,
   GUILD_DELETE: p,

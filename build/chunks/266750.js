@@ -45,7 +45,7 @@ class f {
       }), !(0, o.O)()) return;
     s.Z.addChangeListener(i().throttle(() => {
       var e;
-      null === (e = c.Z.database()) || void 0 === e || e.transaction(e => {
+      null == (e = c.Z.database()) || e.transaction(e => {
         let t = s.Z.getGuildId();
         null == t || isNaN(Number(t)) ? c.Z.nonGuildVersionsTransaction(e).delete("initial_guild_id") : c.Z.nonGuildVersionsTransaction(e).put({
           id: "initial_guild_id",

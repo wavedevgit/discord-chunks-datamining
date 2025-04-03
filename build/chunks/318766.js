@@ -21,11 +21,11 @@ var r = n(200651),
   g = n(546424),
   E = n(626135),
   b = n(153066),
-  v = n(981631),
-  y = n(921944),
+  y = n(981631),
+  v = n(921944),
   O = n(185923),
   I = n(388032),
-  S = n(891450);
+  S = n(3974);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -146,17 +146,17 @@ function k(e, t) {
         className: a()(V, o),
         onMouseEnter: () => {
           var e;
-          H(), null === (e = i.onMouseEnter) || void 0 === e || e.call(i), E.default.track(v.rMx.EMOJI_PICKER_BUTTON_HOVERED)
+          H(), null == (e = i.onMouseEnter) || e.call(i), E.default.track(y.rMx.EMOJI_PICKER_BUTTON_HOVERED)
         },
         onMouseOver: H,
         onMouseLeave: () => {
           var e;
-          W(), null === (e = i.onMouseLeave) || void 0 === e || e.call(i), Q && q(y.L.USER_DISMISS)
+          W(), null == (e = i.onMouseLeave) || e.call(i), Q && q(v.L.USER_DISMISS)
         },
         onFocus: Y,
         onClick: e => {
           var t;
-          null == R || R(e), null === (t = i.onClick) || void 0 === t || t.call(i)
+          null == R || R(e), null == (t = i.onClick) || t.call(i)
         },
         "aria-label": I.NW.string(I.t["59QgaG"]),
         "aria-controls": P,

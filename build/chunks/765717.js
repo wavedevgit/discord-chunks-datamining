@@ -63,5 +63,5 @@ function d(e) {
     properties: f
   }, {
     disableTrack: u
-  }, [null === (t = d.location) || void 0 === t ? void 0 : t.pathname]), (0, r.jsx)(i.AW, l({}, d))
+  }, [null == (t = d.location) ? void 0 : t.pathname]), (0, r.jsx)(i.AW, l({}, d))
 }

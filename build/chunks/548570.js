@@ -20,8 +20,8 @@ var r = n(512722),
   g = n(797614),
   E = n(218543),
   b = n(857192),
-  v = n(626135),
-  y = n(12647),
+  y = n(626135),
+  v = n(12647),
   O = n(70956),
   I = n(358085),
   S = n(960048),
@@ -92,7 +92,7 @@ function F(e) {
     u = !1,
     d = null,
     f = null;
-  if (window._ws = null, null != l) {
+  if (window._ws = null, null != l)
     if (t = l.ws, l.state.gateway !== n) G.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
     else {
       var _;
@@ -100,11 +100,9 @@ function F(e) {
       null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? U(k({}, e), {
         data: e.data.substring(0, 100)
       }) : e)), G.log("[FAST CONNECT] successfully took over websocket, state:", U(k({}, e), {
-        messages: null === (_ = e.messages) || void 0 === _ ? void 0 : _.length
+        messages: null == (_ = e.messages) ? void 0 : _.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
-    }
-  }
-  null == t && ((t = (0, L.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(o), t.onopen = () => i(u, f), t.onmessage = o, t.onclose = s, t.onerror = a
+    } null == t && ((t = (0, L.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(o), t.onopen = () => i(u, f), t.onmessage = o, t.onclose = s, t.onerror = a
 }
 
 function V() {}
@@ -155,14 +153,8 @@ class $ extends w.Z {
     null != e && e.endsWith("/") && (e = e.substring(0, e.length - 1)), null !== e && G.verbose("Updating resume url to ".concat(e)), this.resumeUrl = e
   }
   _connect() {
-    if (!this.willReconnect()) {
-      G.verbose("Skipping _connect because willReconnect is false");
-      return
-    }
-    if (D.a()) {
-      G.info("Skipping _connect because socket is paused");
-      return
-    }
+    if (!this.willReconnect()) return void G.verbose("Skipping _connect because willReconnect is false");
+    if (D.a()) return void G.info("Skipping _connect because socket is paused");
     this.connectionState = T.Z.CONNECTING, this.nextReconnectIsImmediate = !1;
     let e = this.compressionHandler.getAlgorithm(),
       t = B.getName(),
@@ -227,7 +219,7 @@ class $ extends w.Z {
         this._sendHeartbeatIfDue()
       }),
       onError: () => {
-        this.setResumeUrl(null), y.Z.flushDNSCache(), this._handleClose(!1, 0, "An error with the websocket occurred")
+        this.setResumeUrl(null), v.Z.flushDNSCache(), this._handleClose(!1, 0, "An error with the websocket occurred")
       },
       onClose: e => {
         let {
@@ -303,14 +295,14 @@ class $ extends w.Z {
       let {
         status: t
       } = e;
-      v.default.track(x.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      y.default.track(x.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }, e => {
       let {
         status: t
       } = e;
-      401 === t && (this.connectionState = T.Z.CLOSED, G.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, Y, "invalid token manually detected")), v.default.track(x.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      401 === t && (this.connectionState = T.Z.CLOSED, G.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, Y, "invalid token manually detected")), y.default.track(x.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }))
@@ -351,7 +343,7 @@ class $ extends w.Z {
   }
   _doResume() {
     var e;
-    this.connectionState = T.Z.RESUMING, this.dispatcher.resumeAnalytics = (0, R.zH)(Date.now() - this.connectionStartTime), G.info("[RESUME] resuming session ".concat(null !== (e = this.sessionId) && void 0 !== e ? e : "", ", seq: ").concat(this.seq)), this.send(w.j.RESUME, {
+    this.connectionState = T.Z.RESUMING, this.dispatcher.resumeAnalytics = (0, R.zH)(Date.now() - this.connectionStartTime), G.info("[RESUME] resuming session ".concat(null != (e = this.sessionId) ? e : "", ", seq: ").concat(this.seq)), this.send(w.j.RESUME, {
       token: this.token,
       session_id: this.sessionId,
       seq: this.seq
@@ -360,10 +352,7 @@ class $ extends w.Z {
   async _doIdentify() {
     this.seq = 0, this.sessionId = null;
     let e = this.handleIdentify();
-    if (null === e) {
-      this._handleClose(!0, Y, "No connection info provided");
-      return
-    }
+    if (null === e) return void this._handleClose(!0, Y, "No connection info provided");
     this.connectionState = T.Z.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = t;
@@ -379,10 +368,7 @@ class $ extends w.Z {
     } : {
       guild_versions: {}
     };
-    if (this.connectionState !== T.Z.IDENTIFYING || this.identifyStartTime !== t) {
-      G.warn("Skipping identify because connectionState or identifyStartTime has changed");
-      return
-    }
+    if (this.connectionState !== T.Z.IDENTIFYING || this.identifyStartTime !== t) return void G.warn("Skipping identify because connectionState or identifyStartTime has changed");
     let {
       token: s,
       properties: l = {},
@@ -398,15 +384,12 @@ class $ extends w.Z {
         client_state: a
       },
       d = JSON.stringify(u);
-    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = o.deflate(d).length, this.identifyCount += 1, this.send(w.j.IDENTIFY, u, !1), v.default.track(x.rMx.SESSION_START_CLIENT, {})
+    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = o.deflate(d).length, this.identifyCount += 1, this.send(w.j.IDENTIFY, u, !1), y.default.track(x.rMx.SESSION_START_CLIENT, {})
   }
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;
     let e = this.handleIdentify();
-    if (null === e) {
-      this._handleClose(!0, Y, "No connection info provided");
-      return
-    }
+    if (null === e) return void this._handleClose(!0, Y, "No connection info provided");
     let {
       token: t
     } = e;
@@ -453,7 +436,7 @@ class $ extends w.Z {
       tags: {
         socketCrashedAction: t
       }
-    }), v.default.track(x.rMx.GATEWAY_SOCKET_RESET, {
+    }), y.default.track(x.rMx.GATEWAY_SOCKET_RESET, {
       error_message: n.message,
       error_stack: n.stack,
       action: t
@@ -473,10 +456,7 @@ class $ extends w.Z {
   }
   close() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    if (this.isClosed()) {
-      G.verbose("close() called, but socket is already closed.");
-      return
-    }
+    if (this.isClosed()) return void G.verbose("close() called, but socket is already closed.");
     G.info("Closing connection, current state is ".concat(this.connectionState));
     let t = e ? 4e3 : void 0;
     this._cleanup(e => e.close(t)), this.connectionState = T.Z.CLOSED, e || setImmediate(() => {

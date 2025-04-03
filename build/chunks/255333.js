@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => _,
-  Z: () => y
+  Z: () => v
 });
 var r, i = n(31775),
   o = n.n(i),
@@ -118,7 +118,7 @@ function b(e) {
     [i]: 3
   })
 }
-class v extends(r = a.ZP.Store) {
+class y extends(r = a.ZP.Store) {
   getSimilarApplications(e) {
     let {
       applicationId: t,
@@ -146,8 +146,8 @@ class v extends(r = a.ZP.Store) {
     })]
   }
 }
-l(v, "displayName", "ApplicationDirectorySimilarApplicationsStore");
-let y = new v(s.Z, {
+l(y, "displayName", "ApplicationDirectorySimilarApplicationsStore");
+let v = new y(s.Z, {
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: g,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: E,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: b

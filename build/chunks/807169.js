@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Hs: () => g,
-  Vh: () => v,
+  Vh: () => y,
   k: () => m,
-  ny: () => y
+  ny: () => v
 });
 var r = n(192379),
   i = n(149765),
@@ -22,12 +22,11 @@ var r = n(192379),
 
 function m(e, t) {
   var n, r, i, o, a;
-  let _;
-  let h = null != (_ = e instanceof c.Sf && e.isThread() && null !== (i = d.Z.getChannel(e.parent_id)) && void 0 !== i ? i : e) ? y(_) : void 0,
+  let _, h = null != (_ = e instanceof c.Sf && e.isThread() && null != (i = d.Z.getChannel(e.parent_id)) ? i : e) ? v(_) : void 0,
     m = l.xM.getSetting(),
     g = u.default.getId(),
-    v = null !== (o = null === (n = p.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) && void 0 !== o && o,
-    O = null != h && null !== (a = null === (r = f.ZP.getMember(h, g)) || void 0 === r ? void 0 : r.roles) && void 0 !== a ? a : [],
+    y = null != (o = null == (n = p.default.getCurrentUser()) ? void 0 : n.nsfwAllowed) && o,
+    O = null != h && null != (a = null == (r = f.ZP.getMember(h, g)) ? void 0 : r.roles) ? a : [],
     I = s.Z.isViewingRoles(h),
     {
       computedPermissions: S,
@@ -43,7 +42,7 @@ function m(e, t) {
     computedPermissions: S,
     hasBaseAccessPermissions: T,
     hasSendMessagesPermission: N,
-    allowNsfw: E(_, v, m)
+    allowNsfw: E(_, y, m)
   }
 }
 
@@ -51,20 +50,20 @@ function g(e, t) {
   let n = r.useMemo(() => {
       if (e instanceof c.Sf && e.isThread()) {
         var t;
-        return null !== (t = d.Z.getChannel(e.parent_id)) && void 0 !== t ? t : e
+        return null != (t = d.Z.getChannel(e.parent_id)) ? t : e
       }
       return e
     }, [e]),
-    i = null != n ? y(n) : void 0,
+    i = null != n ? v(n) : void 0,
     a = l.xM.useSetting(),
     _ = (0, o.e7)([u.default], () => u.default.getId()),
     h = (0, o.e7)([p.default], () => {
       var e, t;
-      return null !== (t = null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed) && void 0 !== t && t
+      return null != (t = null == (e = p.default.getCurrentUser()) ? void 0 : e.nsfwAllowed) && t
     }),
     m = (0, o.Wu)([f.ZP], () => {
       var e, t;
-      return null != i && null !== (t = null === (e = f.ZP.getMember(i, _)) || void 0 === e ? void 0 : e.roles) && void 0 !== t ? t : []
+      return null != i && null != (t = null == (e = f.ZP.getMember(i, _)) ? void 0 : e.roles) ? t : []
     }),
     g = (0, o.e7)([s.Z], () => s.Z.isViewingRoles(i));
   return r.useMemo(() => {
@@ -106,10 +105,10 @@ function b(e, t) {
   }
 }
 
-function v(e, t) {
+function y(e, t) {
   return e instanceof c.Sf && (null == e ? void 0 : e.guild_id) == null ? (null == e ? void 0 : e.type) === h.d4z.DM && (null == e ? void 0 : e.getRecipientId()) === t ? a.D.BOT_DM : a.D.PRIVATE_CHANNEL : a.D.GUILD
 }
 
-function y(e) {
+function v(e) {
   return e instanceof c.Sf ? e.guild_id : e.id
 }

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "('|\\.')+",
     n = {
       relevance: 0,
@@ -63,4 +63,3 @@ function t(e) {
     }, e.COMMENT("^\\s*%\\{\\s*$", "^\\s*%\\}\\s*$"), e.COMMENT("%", "$")]
   }
 }
-e.exports = t

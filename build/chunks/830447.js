@@ -19,7 +19,7 @@ var r = n(200651),
   h = n(828214),
   m = n(670596),
   g = n(788314),
-  E = n(428763);
+  E = n(906944);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,7 +30,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,7 +63,7 @@ function O(e, t) {
 function I(e) {
   return null == e ? [] : i.Children.toArray(e).flatMap(e => {
     var t;
-    return null == e ? [] : Array.isArray(e) ? I(e) : e.type === i.Fragment ? null !== (t = I(e.props.children)) && void 0 !== t ? t : [] : [e]
+    return null == e ? [] : Array.isArray(e) ? I(e) : e.type === i.Fragment ? null != (t = I(e.props.children)) ? t : [] : [e]
   })
 }
 
@@ -130,7 +130,7 @@ function S(e) {
       children: t.props.children,
       props: t.props
     }), e;
-    throw Error("Menu API only allows Items and groups of Items as children. Received ".concat(null !== (r = null !== (n = null == t ? void 0 : t.type) && void 0 !== n ? n : t) && void 0 !== r ? r : typeof t, " (").concat(typeof t, ") instead"))
+    throw Error("Menu API only allows Items and groups of Items as children. Received ".concat(null != (r = null != (n = null == t ? void 0 : t.type) ? n : t) ? r : typeof t, " (").concat(typeof t, ") instead"))
   }, [])
 }
 
@@ -154,7 +154,7 @@ function N(e, t, n, i) {
         o > 0 && s.length > 0 && (c.push((0, r.jsx)(g.Z0, {}, "separator-".concat(l))), o = 0), a.push([]);
         break;
       case "groupend":
-        a.length > 0 && e.push((0, r.jsx)(g.ZA, v({
+        a.length > 0 && e.push((0, r.jsx)(g.ZA, y({
           contents: a.pop()
         }, s.props), "group-".concat(l)));
         break;
@@ -167,17 +167,17 @@ function N(e, t, n, i) {
           subMenuClassName: d
         } = s, f = null != e, _ = [...n, s.key], p = t.isFocused(_), h = null != e ? {
           "aria-haspopup": !0
-        } : {}, m = (0, r.jsx)(g.ck, O(v({}, s.props), {
+        } : {}, m = (0, r.jsx)(g.ck, O(y({}, s.props), {
           label: s.label,
           hasSubmenu: null != e,
           isFocused: p,
-          menuItemProps: v({}, t.getItemProps({
+          menuItemProps: y({}, t.getItemProps({
             path: _,
             hasSubmenu: f
           }), h),
           onClose: i
         }), s.key);
-        f ? null != a ? c.push((0, r.jsx)(g.P2, O(v({}, s.props), {
+        f ? null != a ? c.push((0, r.jsx)(g.P2, O(y({}, s.props), {
           parentItem: m,
           isFocused: p,
           menuSubmenuProps: t.getSubmenuProps({
@@ -187,7 +187,7 @@ function N(e, t, n, i) {
           rowHeight: a,
           onScroll: l,
           listClassName: u
-        }), "".concat(s.key, "-submenu"))) : c.push((0, r.jsx)(g.LY, O(v({}, s.props), {
+        }), "".concat(s.key, "-submenu"))) : c.push((0, r.jsx)(g.LY, O(y({}, s.props), {
           subMenuClassName: d,
           parentItem: m,
           isFocused: p,
@@ -200,7 +200,7 @@ function N(e, t, n, i) {
       }
       case "customitem": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(g.kq, O(v({}, s.props), {
+        c.push((0, r.jsx)(g.kq, O(y({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e,
@@ -213,7 +213,7 @@ function N(e, t, n, i) {
       }
       case "checkbox": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(g.oC, O(v({}, s.props), {
+        c.push((0, r.jsx)(g.oC, O(y({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e,
@@ -224,7 +224,7 @@ function N(e, t, n, i) {
       }
       case "radio": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(g.Rk, O(v({}, s.props), {
+        c.push((0, r.jsx)(g.Rk, O(y({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e,
@@ -235,7 +235,7 @@ function N(e, t, n, i) {
       }
       case "control": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(g.lc, O(v({}, s.props), {
+        c.push((0, r.jsx)(g.lc, O(y({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e
@@ -246,7 +246,7 @@ function N(e, t, n, i) {
       }
       case "compositecontrol": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(g.$I, O(v({}, s.props), {
+        c.push((0, r.jsx)(g.$I, O(y({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e
@@ -269,11 +269,11 @@ function A(e) {
     className: f,
     children: h,
     onClose: b,
-    onSelect: y,
+    onSelect: v,
     onInteraction: I
   } = e, A = S(h), C = T(A), P = i.useRef([]);
   l()(P.current, C) || (P.current = C);
-  let w = null === (t = A.find(e => null != e.key)) || void 0 === t ? void 0 : t.key,
+  let w = null == (t = A.find(e => null != e.key)) ? void 0 : t.key,
     D = (0, c.ZP)({
       navId: n,
       items: P.current,
@@ -287,12 +287,12 @@ function A(e) {
   (0, u.T)(L);
   let x = s ? d.u2 : d.zJ,
     M = i.useMemo(() => ({
-      onSelect: y,
+      onSelect: v,
       onInteraction: I
-    }), [y, I]);
+    }), [v, I]);
   return (0, r.jsx)(m.p.Provider, {
     value: M,
-    children: (0, r.jsx)("div", O(v({
+    children: (0, r.jsx)("div", O(y({
       className: a()(E.menu, E[o], f)
     }, D.getContainerProps()), {
       ref: L,

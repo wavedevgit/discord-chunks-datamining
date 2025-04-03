@@ -11,7 +11,7 @@ var r = n(200651),
   l = n(481060),
   c = n(607070),
   u = n(956664),
-  d = n(907648);
+  d = n(592697);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,12 +82,12 @@ function E(e) {
     className: f,
     width: E,
     height: b,
-    maxWidth: v,
-    maxHeight: y
-  } = e, O = i.useRef(null), I = (0, u.vV)(E, b, v, y), {
+    maxWidth: y,
+    maxHeight: v
+  } = e, O = i.useRef(null), I = (0, u.vV)(E, b, y, v), {
     width: S,
     height: T
-  } = g(E, b, v, y, n), [N, A] = (0, l.q_F)(() => ({
+  } = g(E, b, y, v, n), [N, A] = (0, l.q_F)(() => ({
     scale: 1,
     config: h
   })), [C, R] = (0, l.q_F)(() => ({
@@ -114,7 +114,7 @@ function E(e) {
   }, [n, A, I, C, R]);
   let M = (e, t) => {
       var n;
-      let r = null == S ? null === (n = O.current) || void 0 === n ? void 0 : n.getBoundingClientRect() : null,
+      let r = null == S ? null == (n = O.current) ? void 0 : n.getBoundingClientRect() : null,
         i = m({
           width: null != S ? S : r.width,
           height: null != T ? T : r.height,

@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(194082),
   E = n(318374),
   b = n(449605),
-  v = n(102172),
-  y = n(359110),
+  y = n(102172),
+  v = n(359110),
   O = n(769654),
   I = n(922482),
   S = n(592125),
@@ -48,8 +48,8 @@ var r = n(200651),
   W = n(228168),
   Y = n(981631),
   K = n(388032),
-  z = n(24981),
-  q = n(135986),
+  z = n(227832),
+  q = n(162509),
   Q = n(924482),
   X = n(774797);
 
@@ -89,24 +89,24 @@ function J(e) {
   }), ep = (0, D.Z)({
     userId: t.id,
     onAction: e_
-  }), [eh, em] = (0, v.wq)(ec), {
+  }), [eh, em] = (0, y.wq)(ec), {
     previewUrl: eg,
     isLoading: eE
-  } = (0, b.Z)(o.guildId, o.channelId, o.ownerId), eb = (0, s.e7)([N.Z], () => null != ec && N.Z.canBasicChannel(Y.S7T.CONNECT, ec)), ev = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, b.Z)(o.guildId, o.channelId, o.ownerId), eb = (0, s.e7)([N.Z], () => null != ec && N.Z.canBasicChannel(Y.S7T.CONNECT, ec)), ey = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (es) {
       var e;
       P.default.track(Y.rMx.USER_VOICE_ACTIVITY_VIEWED, {
         activity_user_id: t.id,
-        discoverable: null === (e = o.discoverable) || void 0 === e || e,
+        discoverable: null == (e = o.discoverable) || e,
         surface: "user-profile-stream-activity-card",
-        relationship_type: ev,
+        relationship_type: ey,
         treatment: ea && !1 === o.discoverable ? m.h9.HIDE : m.h9.SHOW
       })
     }
-  }, [t, ev, ea, es, o]);
-  let ey = (0, d.Z)(eE ? null : eg),
-    eO = eE || null == eg ? ey : eg;
+  }, [t, ey, ea, es, o]);
+  let ev = (0, d.Z)(eE ? null : eg),
+    eO = eE || null == eg ? ev : eg;
   if (null == el || null == ec || ea && !1 === o.discoverable || null === et) return null;
   let eI = () => {
       let e = a()(q.preview, eo),
@@ -131,7 +131,7 @@ function J(e) {
             className: q.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, v.P9)(em)
+            children: (0, y.P9)(em)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             children: eb ? K.NW.string(K.t.uQZTBQ) : K.NW.string(K.t.pgUTZG)
@@ -151,7 +151,7 @@ function J(e) {
             className: q.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, v.P9)(em)
+            children: (0, y.P9)(em)
           }), (0, r.jsx)(l.gw7, {
             size: "xs",
             color: "currentColor",
@@ -165,7 +165,7 @@ function J(e) {
       let e = e => {
           e.stopPropagation(), null == e_ || e_({
             action: "OPEN_VOICE_CHANNEL"
-          }), ec.isGuildStageVoice() ? (0, I.Cq)(ec) : (c.default.selectVoiceChannel(ec.id), (0, y.Kh)(ec.id)), null == $ || $()
+          }), ec.isGuildStageVoice() ? (0, I.Cq)(ec) : (c.default.selectVoiceChannel(ec.id), (0, v.Kh)(ec.id)), null == $ || $()
         },
         n = e => {
           e.stopPropagation(), e_({

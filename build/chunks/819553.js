@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => y,
+  ZP: () => v,
   kp: () => c,
   uX: () => l
 });
@@ -79,9 +79,9 @@ function E(e) {
 function b() {
   d = {}
 }
-class v extends(r = i.ZP.Store) {
+class y extends(r = i.ZP.Store) {
   shouldShowOnboarding(e) {
-    return !!(e !== a.ME && e !== a.I_8 && c(u[e]))
+    return e !== a.ME && e !== a.I_8 && !!c(u[e])
   }
   getOnboardingStatus(e) {
     return u[e]
@@ -91,11 +91,11 @@ class v extends(r = i.ZP.Store) {
   }
   getCurrentOnboardingStep(e) {
     var t;
-    return null !== (t = d[e]) && void 0 !== t ? t : "cover"
+    return null != (t = d[e]) ? t : "cover"
   }
 }
-s(v, "displayName", "GuildOnboardingStore");
-let y = new v(o.Z, {
+s(y, "displayName", "GuildOnboardingStore");
+let v = new y(o.Z, {
   LOGOUT: f,
   GUILD_DELETE: g,
   GUILD_ONBOARDING_START: _,

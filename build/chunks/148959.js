@@ -44,8 +44,8 @@ class E extends o.Z {
       r = this.videoStreams.length !== n.length;
     if (this.audioSSRC = e, this.videoStreams = n, this.videoStreams.length > 1) {
       var o, a, s, l;
-      let e = null !== (s = null === (o = i().minBy(this.videoStreams, e => e.quality)) || void 0 === o ? void 0 : o.ssrc) && void 0 !== s ? s : 0,
-        t = null !== (l = null === (a = i().maxBy(this.videoStreams, e => e.quality)) || void 0 === a ? void 0 : a.ssrc) && void 0 !== l ? l : 0;
+      let e = null != (s = null == (o = i().minBy(this.videoStreams, e => e.quality)) ? void 0 : o.ssrc) ? s : 0,
+        t = null != (l = null == (a = i().maxBy(this.videoStreams, e => e.quality)) ? void 0 : a.ssrc) ? l : 0;
       (e !== this.lqSSRC || t !== this.hqSSRC || r) && (this.lqSSRC = e, this.hqSSRC = t, this.reset(), this.update())
     } else r && this.reset(), this.update()
   }
@@ -60,10 +60,7 @@ class E extends o.Z {
   }
   setFirstFrameReceived(e) {
     if (this.currentSSRC = e, this.senderSupportsSimulcast()) {
-      if (1 !== this.switchState && 2 !== this.switchState) {
-        this.logger.warn("Received the first frame of ssrc ".concat(e, " while switchState is ").concat(this.switchState));
-        return
-      }
+      if (1 !== this.switchState && 2 !== this.switchState) return void this.logger.warn("Received the first frame of ssrc ".concat(e, " while switchState is ").concat(this.switchState));
       this.pendingSSRC === e ? (this.pendingSSRC = -1, 2 === this.switchState ? (this.switchState = 3, this.update()) : this.switchState = 0) : this.logger.warn("Pending to switch to ssrc: ".concat(this.pendingSSRC, " but received the first frame of ").concat(e, ", noop"))
     }
   }

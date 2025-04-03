@@ -28,7 +28,7 @@ class d {
       if (200 === i.status) e(i);
       else if (202 === i.status) {
         var r;
-        if (this.query.attempts = (null !== (r = this.query.attempts) && void 0 !== r ? r : 0) + 1, this.query.attempts > u) return;
+        if (this.query.attempts = (null != (r = this.query.attempts) ? r : 0) + 1, this.query.attempts > u) return;
         let o = parseInt(i.headers["retry-after"]);
         this.retryDelay = isNaN(o) || 0 === o ? c : o * a.Z.Millis.SECOND, this.retryLater(e, t, n), t(i)
       }

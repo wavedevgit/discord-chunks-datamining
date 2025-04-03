@@ -32,14 +32,14 @@ if (a || d.state) {
     return b.has(e)
   }
 } else {
-  var v = f("state");
-  _[v] = !0, r = function(e, t) {
-    if (u(e, v)) throw h(p);
-    return t.facade = e, c(e, v, t), t
+  var y = f("state");
+  _[y] = !0, r = function(e, t) {
+    if (u(e, y)) throw h(p);
+    return t.facade = e, c(e, y, t), t
   }, i = function(e) {
-    return u(e, v) ? e[v] : {}
+    return u(e, y) ? e[y] : {}
   }, o = function(e) {
-    return u(e, v)
+    return u(e, y)
   }
 }
 e.exports = {

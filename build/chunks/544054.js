@@ -2,8 +2,7 @@
 var r = n(524556),
   i = "__lodash_hash_undefined__",
   o = Object.prototype.hasOwnProperty;
-
-function a(e) {
+e.exports = function(e) {
   var t = this.__data__;
   if (r) {
     var n = t[e];
@@ -11,4 +10,3 @@ function a(e) {
   }
   return o.call(t, e) ? t[e] : void 0
 }
-e.exports = a

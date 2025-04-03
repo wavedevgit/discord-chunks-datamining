@@ -58,11 +58,11 @@ class g extends(r = i.ZP.Store) {
   }
   getStoreLayout(e) {
     var t;
-    return null !== (t = u.get(e)) && void 0 !== t ? t : _
+    return null != (t = u.get(e)) ? t : _
   }
   getFetchStatus(e) {
     var t;
-    return u.has(e) ? 2 : null !== (t = d.get(e)) && void 0 !== t ? t : 0
+    return u.has(e) ? 2 : null != (t = d.get(e)) ? t : 0
   }
 }
 c(g, "displayName", "ApplicationStoreDirectoryStore");

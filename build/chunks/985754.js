@@ -58,11 +58,11 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
       amount: g,
       currency: E,
       paymentSourceTypes: b
-    } = t, v = 0 !== b.length, y = m(h), O = (0, a.T4)(g, E, {
+    } = t, y = 0 !== b.length, v = m(h), O = (0, a.T4)(g, E, {
       style: "currency",
       currency: E,
       currencyDisplay: "symbol",
-      localeOverride: y
+      localeOverride: v
     }), I = c.NW.format(c.t["4cHbQ0"], {
       helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING),
       currencyISOCode: E.toUpperCase(),
@@ -85,10 +85,10 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
       }) : c.NW.format(c.t["N1xw/f"], {
         currencyISOCode: E.toUpperCase(),
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING)
-      })), v) {
+      })), y && 1) {
       let e = [..._.filter(e => b.includes(e)), ...b.filter(e => !_.includes(e))].slice(0, 2).map(e => {
         var t, n;
-        return null !== (n = null === (t = f[e]) || void 0 === t ? void 0 : t.call(f)) && void 0 !== n ? n : c.NW.string(c.t.jdPblp)
+        return null != (n = null == (t = f[e]) ? void 0 : t.call(f)) ? n : c.NW.string(c.t.jdPblp)
       });
       b.length >= 3 && e.push(c.NW.string(c.t.Tp5NkZ));
       let t = new Intl.ListFormat(p, {
@@ -108,7 +108,7 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
       localizedPricingBannerLinkOnly: c.NW.format(c.t.XufWPj, {
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING)
       }),
-      localizedPricingBannerSubNotif: v ? void 0 : c.NW.string(c.t.YDdBe3)
+      localizedPricingBannerSubNotif: y ? void 0 : c.NW.string(c.t.YDdBe3)
     }
   },
   m = e => {

@@ -26,26 +26,18 @@ function p(e) {
     hasFetchedPaymentSources: g,
     application: E,
     skusById: b,
-    selectedSkuId: v
+    selectedSkuId: y
   } = (0, c.JL)(), {
-    isGift: y
+    isGift: v
   } = (0, l.wD)(), [O, I] = i.useState(!0), [S, T] = (0, o.Wu)([s.Z], () => [s.Z.isFetchingCategories, s.Z.error]);
   return (i.useEffect(() => {
     let e = null != E;
     h && g && e && I(S)
   }, [h, g, E, S]), i.useEffect(() => {
-    if (O || p || null == v) return;
-    let e = b[v];
-    if (y && (null == e ? void 0 : e.productLine) === _.POd.COLLECTIBLES) {
-      t(u.h8.GIFT_CUSTOMIZATION);
-      return
-    }
-    if (0 === Object.keys(m).length) {
-      t(u.h8.ADD_PAYMENT_STEPS);
-      return
-    }
-    t(u.h8.REVIEW)
-  }, [O, p, t, m, y, b, v]), O) ? (0, r.jsx)(f.Z, {}) : p ? (0, r.jsx)(a.Vq, {
+    if (O || p || null == y) return;
+    let e = b[y];
+    return v && (null == e ? void 0 : e.productLine) === _.POd.COLLECTIBLES ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(m).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
+  }, [O, p, t, m, v, b, y]), O) ? (0, r.jsx)(f.Z, {}) : p ? (0, r.jsx)(a.Vq, {
     onClose: n
   }) : null != T ? (0, r.jsx)(d.Z, {
     onClose: n

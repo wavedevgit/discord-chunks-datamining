@@ -28,9 +28,9 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = 10;
+let y = 10;
 
-function y(e) {
+function v(e) {
   if (null == e || d.Z.isBlockedOrIgnored(e.id)) return null;
   let t = {
     id: e.id,
@@ -39,7 +39,7 @@ function y(e) {
   if (null != g.ZP.getGlobalName(e) && (t.globalName = e.globalName), e.bot && (t.isBot = !0), e instanceof l.Z) t.isProvisional = e.isProvisional;
   else if ("flags" in e) {
     var n;
-    t.isProvisional = _.yE(null !== (n = e.flags) && void 0 !== n ? n : 0, E.xW$.PROVISIONAL_ACCOUNT)
+    t.isProvisional = _.yE(null != (n = e.flags) ? n : 0, E.xW$.PROVISIONAL_ACCOUNT)
   } else t.isProvisional = !1;
   return d.Z.isFriend(e.id) && (t.isFriend = !0, t.friendNickname = d.Z.getNickname(e.id)), t
 }
@@ -55,7 +55,7 @@ function I(e) {
     recipients: n = []
   } = e;
   return n.forEach(n => {
-    let r = y(f.default.getUser(n));
+    let r = v(f.default.getUser(n));
     null != e && O(r, e.id), t.push(r)
   }), t
 }
@@ -63,7 +63,7 @@ function I(e) {
 function S(e, t) {
   let n = [];
   return e.forEach(e => {
-    let r = y(e.user);
+    let r = v(e.user);
     null != r && (O(r, t, e.nick), n.push(r))
   }), n
 }
@@ -102,7 +102,7 @@ class T {
       payload: this._currentQuery
     })) : this._subscribed || this.subscribe())
   }
-  constructor(e, t, n = v) {
+  constructor(e, t, n = y) {
     b(this, "_worker", void 0), b(this, "_uuid", void 0), b(this, "_callback", void 0), b(this, "_limit", void 0), b(this, "_currentQuery", void 0), b(this, "_nextQuery", void 0), b(this, "_subscribed", void 0), b(this, "handleMessages", e => {
       let t = e.data;
       null != t && "USER_RESULTS" === t.type && t.uuid === this._uuid && (!1 !== this._currentQuery && this._callback(t.payload), null != this._currentQuery && (this._currentQuery = null), this._setNextQuery())
@@ -148,7 +148,7 @@ class N extends a.Z {
     }
   }
   getSearchContext(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v;
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : y;
     this.initialize();
     let {
       _worker: n
@@ -180,19 +180,19 @@ class N extends a.Z {
       setTimeout(() => {
         let e = f.default.getCurrentUser();
         if (null == e) return;
-        let t = y(e),
+        let t = v(e),
           n = {
             [t.id]: t
           };
         Object.values(f.default.getUsers()).forEach(e => {
-          n[e.id] = y(e)
+          n[e.id] = v(e)
         });
         let r = u.ZP.getMutableAllGuildsAndMembers();
         for (let e in r)
           for (let t in r[e]) {
             var i, o;
             let a = n[t],
-              s = null !== (o = null === (i = r[e][t]) || void 0 === i ? void 0 : i.nick) && void 0 !== o ? o : g.ZP.getGlobalName(a);
+              s = null != (o = null == (i = r[e][t]) ? void 0 : i.nick) ? o : g.ZP.getGlobalName(a);
             null != a && (a[e] = null != s && "" !== s ? s : null)
           }
         this.updateUsers(Object.values(n), "connection_open")
@@ -206,11 +206,11 @@ class N extends a.Z {
           n = i().flatMap(t, e => {
             var t;
             let n = [];
-            return null === (t = e.activity_instances) || void 0 === t || t.forEach(t => {
+            return null == (t = e.activity_instances) || t.forEach(t => {
               t.participants.forEach(t => {
                 let r = t.member;
                 if (null != r) {
-                  let t = y(r.user);
+                  let t = v(r.user);
                   null != t && (O(t, e.id, r.nick), n.push(t))
                 }
               })
@@ -223,7 +223,7 @@ class N extends a.Z {
         users: t,
         guildMembers: n
       } = e, r = new Map;
-      for (let e of t) r.set(e.id, y(e));
+      for (let e of t) r.set(e.id, v(e));
       for (let e of m.default.keys(n)) {
         let t = n[e];
         if (null != t)
@@ -237,7 +237,7 @@ class N extends a.Z {
     }), b(this, "_handleCurrentUserUpdate", e => {
       let {
         user: t
-      } = e, n = y(t);
+      } = e, n = v(t);
       null != n && this.updateUsers([n], "current_user_update")
     }), b(this, "_handleGuildCreate", e => {
       let {
@@ -257,18 +257,18 @@ class N extends a.Z {
         guildId: t,
         user: n,
         nick: r
-      } = e, i = y(n);
+      } = e, i = v(n);
       null != i && (O(i, t, r), this.updateUsers([i], "guild_member_update"))
     }), b(this, "_handlePassiveUpdateV2", e => {
       this.updateUsers(S(e.members, e.guildId), "passive_update_v2")
     }), b(this, "_handleRelationshipAdd", e => {
-      let t = y(e.relationship.user);
+      let t = v(e.relationship.user);
       this.updateUsers([t], "relationship_add")
     }), b(this, "_handleRelationshipUpdate", e => {
-      let t = y(f.default.getUser(e.relationship.id));
+      let t = v(f.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_update")
     }), b(this, "_handleRelationshipRemove", e => {
-      let t = y(f.default.getUser(e.relationship.id));
+      let t = v(f.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_remove")
     }), b(this, "_handleDMCreate", e => {
       let {
@@ -277,7 +277,7 @@ class N extends a.Z {
         }
       } = e, n = I(c.Z.getChannel(t));
       if (0 === n.length) return;
-      let r = y(f.default.getCurrentUser());
+      let r = v(f.default.getCurrentUser());
       O(r, t), n.push(r), this.updateUsers(n, "dm_create")
     }), b(this, "_handleDMUpdates", e => {
       let {
@@ -286,7 +286,7 @@ class N extends a.Z {
       for (let e of t) {
         let t = I(c.Z.getChannel(e.id));
         if (0 === t.length) continue;
-        let n = y(f.default.getCurrentUser());
+        let n = v(f.default.getCurrentUser());
         O(n, e.id), t.push(n), this.updateUsers(t, "dm_updates")
       }
     }), b(this, "_handleRecipientChanges", e => {
@@ -296,7 +296,7 @@ class N extends a.Z {
         isMember: r
       } = e;
       if (!r) return;
-      let i = y(n);
+      let i = v(n);
       O(i, t), this.updateUsers([i], "recipient_changes")
     })
   }

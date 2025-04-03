@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   B: () => l,
-  Z: () => v
+  Z: () => y
 }), n(653041), n(47120), n(411104);
 var r = n(536895);
 
@@ -139,7 +139,7 @@ function g(e, t) {
     i = d(e);
   if (null == i) return e;
   let a = i[c(i, r)],
-    l = null == a ? void 0 : null === (n = a.children) || void 0 === n ? void 0 : n[0];
+    l = null == a || null == (n = a.children) ? void 0 : n[0];
   if (null == l) return e;
   let f = s(o({}, e), {
     focusPath: [...e.focusPath, l.key]
@@ -165,7 +165,7 @@ function b(e) {
   return null == n ? -1 : c(n, t)
 }
 
-function v(e, t) {
+function y(e, t) {
   switch (t.type) {
     case r.Us.NAVIGATE_UP:
       return h(e, t);
@@ -180,9 +180,8 @@ function v(e, t) {
     case "SET_FOCUS_PATH":
       return p(e, t);
     case r.Us.SELECT_FOCUSED_ITEM:
-      break;
+      return e;
     default:
       throw Error("Menu navigator was given an unhandled action ".concat(t.type))
   }
-  return e
 }

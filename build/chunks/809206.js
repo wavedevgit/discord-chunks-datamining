@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   FD: () => h,
-  I5: () => y,
+  I5: () => v,
   KP: () => S,
   Mn: () => b,
   P6: () => R,
   S2: () => E,
-  V3: () => v,
+  V3: () => y,
   W0: () => O,
   W3: () => C,
   Zy: () => m,
@@ -120,7 +120,7 @@ function b(e) {
     avatarDecoration: m,
     newPassword: g,
     globalName: b,
-    nameplate: v
+    nameplate: y
   } = e;
   return a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
@@ -137,12 +137,12 @@ function b(e) {
       global_name: b,
       new_password: g
     }, e);
-    null === m && (a.avatar_decoration_id = null), null != m && (a.avatar_decoration_id = m.id, a.avatar_decoration_sku_id = m.skuId), null === v && (a.nameplate_id = null), null != v && (a.nameplate_id = v.id, a.nameplate_sku_id = v.skuId);
+    null === m && (a.avatar_decoration_id = null), null != m && (a.avatar_decoration_id = m.id, a.avatar_decoration_sku_id = m.skuId), null === y && (a.nameplate_id = null), null != y && (a.nameplate_id = y.id, a.nameplate_sku_id = y.skuId);
     let l = i.K.get(u.JkL),
       f = (0, d.xJ)();
     null != f && null != l && (a.push_provider = f, a.push_token = l);
-    let y = i.K.get(u.scU);
-    return null != d.mv && null != y && (a.push_voip_provider = d.mv, a.push_voip_token = y), E(a)
+    let v = i.K.get(u.scU);
+    return null != d.mv && null != v && (a.push_voip_provider = d.mv, a.push_voip_token = v), E(a)
   }, {
     checkEnabled: !1,
     modalProps: {
@@ -164,7 +164,7 @@ function b(e) {
   }), e))
 }
 
-function v(e) {
+function y(e) {
   return r.tn.post({
     url: u.ANM.USER_HARVEST,
     body: {
@@ -175,7 +175,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e

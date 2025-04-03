@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(585483),
   d = n(981631),
   f = n(388032),
-  _ = n(48107);
+  _ = n(54816);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,16 +61,16 @@ let E = i.memo(function(e) {
     url: p,
     format: m,
     className: E
-  } = e, [b, v] = i.useState(!1), y = (0, c.hb)((0, l.iy)(p)), O = y ? f.NW.string(f.t["5/NS7+"]) : f.NW.string(f.t.nIH0v7), I = y ? s.r7p : s.vxU;
+  } = e, [b, y] = i.useState(!1), v = (0, c.hb)((0, l.iy)(p)), O = v ? f.NW.string(f.t["5/NS7+"]) : f.NW.string(f.t.nIH0v7), I = v ? s.r7p : s.vxU;
   i.useEffect(() => {
     if (!b) return;
     let e = setTimeout(() => {
-      v(!1)
+      y(!1)
     }, 500);
     return () => clearTimeout(e)
   }, [b]);
   let S = e => {
-    e.preventDefault(), e.stopPropagation(), v(!0), y ? (0, l.PF)(p) : ((0, l.uL)({
+    e.preventDefault(), e.stopPropagation(), y(!0), v ? (0, l.PF)(p) : ((0, l.uL)({
       url: p,
       src: o,
       width: t,
@@ -82,7 +82,7 @@ let E = i.memo(function(e) {
     text: O,
     children: e => (0, r.jsx)(s.P3F, g(h({}, e), {
       className: a()(E, _.gifFavoriteButton, {
-        [_.selected]: y,
+        [_.selected]: v,
         [_.showPulse]: b
       }),
       onMouseDown: e => e.preventDefault(),

@@ -14,7 +14,7 @@ var r, i = n(200651),
   f = n(436774),
   _ = n(302221),
   p = n(474936),
-  h = n(590837);
+  h = n(970612);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,9 +55,9 @@ function b(e, t) {
   }), e
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,7 +65,7 @@ function v(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -347,7 +347,7 @@ class S extends(r = o.PureComponent) {
 function T(e) {
   var {
     theme: t
-  } = e, n = v(e, ["theme"]);
+  } = e, n = y(e, ["theme"]);
   let r = (0, d.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(),
     o = (0, d.dQu)(c.Z.unsafe_rawColors.BRAND_500).hex(),
     a = (0, u.wj)(t) ? r : o;

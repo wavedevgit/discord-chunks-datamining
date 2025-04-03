@@ -33,7 +33,7 @@ function a(e) {
   }
   if (void 0 !== e.pendingNickname) {
     var n;
-    t.nick = null !== (n = e.pendingNickname) && void 0 !== n ? n : ""
+    t.nick = null != (n = e.pendingNickname) ? n : ""
   }
   return void 0 !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), t
 }

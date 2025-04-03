@@ -5,10 +5,8 @@ var r = n(657398),
   a = "[object Function]",
   s = "[object GeneratorFunction]",
   l = "[object Proxy]";
-
-function c(e) {
+e.exports = function(e) {
   if (!i(e)) return !1;
   var t = r(e);
   return t == a || t == s || t == o || t == l
 }
-e.exports = c

@@ -181,13 +181,13 @@ function h(e, t, n, r, i) {
         maximum: g(t.maxValue)
       })
     };
-    if (null != t.minValue) return {
+    else if (null != t.minValue) return {
       success: !1,
       error: f.NW.formatToPlainString(r, {
         minimum: g(t.minValue)
       })
     };
-    if (null != t.maxValue) return {
+    else if (null != t.maxValue) return {
       success: !1,
       error: f.NW.formatToPlainString(i, {
         maximum: g(t.maxValue)
@@ -207,14 +207,14 @@ function m(e, t, n) {
         value: g(t.minLength)
       })
     };
-    if (void 0 !== t.maxLength && void 0 !== t.minLength) return {
+    else if (void 0 !== t.maxLength && void 0 !== t.minLength) return {
       success: !1,
       error: f.NW.formatToPlainString(n.rangeErrorMessage, {
         minimum: g(t.minLength),
         maximum: g(t.maxLength)
       })
     };
-    if (void 0 !== t.minLength) return {
+    else if (void 0 !== t.minLength) return {
       success: !1,
       error: f.NW.formatToPlainString(n.minErrorMessage, {
         minimum: g(t.minLength)

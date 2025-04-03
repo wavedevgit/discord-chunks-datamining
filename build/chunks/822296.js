@@ -17,7 +17,7 @@ var i = n(120356),
   _ = n(112560),
   p = n(231338),
   h = n(388032),
-  m = n(888433);
+  m = n(65558);
 let g = n(340109);
 
 function E(e) {
@@ -26,17 +26,17 @@ function E(e) {
     width: n,
     noArt: i = !1,
     selected: E = !1
-  } = e, b = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), v = (0, u.Q3)("StreamEnded");
+  } = e, b = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), y = (0, u.Q3)("StreamEnded");
 
-  function y(e) {
+  function v(e) {
     return e < 550 ? "small" : e < 1e3 ? "medium" : "large"
   }(0, c.ZP)(() => {
     (null == b ? void 0 : b.isGuildStageVoice()) && (0, l.aP)((0, d.V9)(t), !1)
   });
   let O = () => (0, l.aP)((0, d.V9)(t)),
     I = h.NW.string(h.t["4EGMWF"]),
-    S = y(n);
-  return v ? (0, r.jsx)(s.f6W, {
+    S = v(n);
+  return y ? (0, r.jsx)(s.f6W, {
     disableAdaptiveTheme: !0,
     theme: p.BR.MIDNIGHT,
     children: e => (0, r.jsx)("div", {

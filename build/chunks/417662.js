@@ -61,7 +61,7 @@ function p(e) {
           })) {
           let [r, i] = u.M8.edges(e.selection), o = u.bN.blocks(e).slice(r.path[0], i.path[0] + 1), a = !0;
           for (let [e] of o)
-            if ("line" !== e.type || !(null === (n = e.codeBlockState) || void 0 === n ? void 0 : n.isInCodeBlock)) {
+            if ("line" !== e.type || !(null == (n = e.codeBlockState) ? void 0 : n.isInCodeBlock)) {
               a = !1;
               break
             } if (a) {
@@ -69,8 +69,8 @@ function p(e) {
             let n = !t.shiftKey;
             return s.T.withSingleEntry(e, () => {
               var t, r, i, a;
-              let s = null !== (i = null === (t = e.selection) || void 0 === t ? void 0 : t.anchor) && void 0 !== i ? i : u.bN.start(e, []),
-                l = null !== (a = null === (r = e.selection) || void 0 === r ? void 0 : r.focus) && void 0 !== a ? a : u.bN.end(e, []);
+              let s = null != (i = null == (t = e.selection) ? void 0 : t.anchor) ? i : u.bN.start(e, []),
+                l = null != (a = null == (r = e.selection) ? void 0 : r.focus) ? a : u.bN.end(e, []);
               for (let [t, r] of o) {
                 let i = t.children[0];
                 if (!u.LC.isText(t.children[0])) continue;
@@ -132,7 +132,7 @@ function p(e) {
           })) return !1;
         else return !1;
         t.shiftKey && (a = "focus");
-        let s = e.children[null !== (p = null === (o = e.selection) || void 0 === o ? void 0 : null === (r = o.focus) || void 0 === r ? void 0 : r.path[0]) && void 0 !== p ? p : 0],
+        let s = e.children[null != (p = null == (o = e.selection) || null == (r = o.focus) ? void 0 : r.path[0]) ? p : 0],
           l = "rtl" === i()(u.aj.string(s)),
           f = t.which === d.yXg.ARROW_LEFT == !l;
         return c.Q.keyboardMove(e, {

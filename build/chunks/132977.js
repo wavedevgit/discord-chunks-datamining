@@ -13,7 +13,7 @@ var r, i = n(200651),
   c = n(481060),
   u = n(727637),
   d = n(600164),
-  f = n(124837);
+  f = n(270180);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,11 +74,11 @@ function E(e, t) {
 var b = function(e) {
   return e.DEFAULT = "default", e.SMALL = "small", e
 }({});
-let v = {
+let y = {
     default: f.shineDefault,
     small: f.shineSmall
   },
-  y = {
+  v = {
     default: f.shineInnerDefault,
     small: f.shineInnerSmall
   };
@@ -98,9 +98,9 @@ class O extends(r = o.PureComponent) {
       children: (0, i.jsx)(d.Z, {
         align: d.Z.Align.CENTER,
         justify: d.Z.Justify.CENTER,
-        className: v[n],
+        className: y[n],
         children: (0, i.jsx)("div", {
-          className: y[n]
+          className: v[n]
         })
       })
     }))
@@ -121,11 +121,11 @@ let I = e => {
     buttonShineClassName: h,
     onlyShineOnHover: E
   } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
-  let v = o.createRef(),
-    y = (0, u.Z)(v),
-    I = !r && !a && !0 !== l && (!E || y);
+  let y = o.createRef(),
+    v = (0, u.Z)(y),
+    I = !r && !a && !0 !== l && (!E || v);
   return (0, i.jsxs)(c.zxk, m(p({
-    buttonRef: v
+    buttonRef: y
   }, b), {
     className: s()(f.shinyButton, n),
     disabled: r,

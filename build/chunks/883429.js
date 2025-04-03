@@ -18,10 +18,10 @@ async function _(e, t, n) {
     return await e()
   } catch (e) {
     var r, i, a;
-    (null === (r = e.body) || void 0 === r ? void 0 : r.code) === d.evJ.NON_MODERATED_TAG_REQUIRED ? o.Z.show({
+    (null == (r = e.body) ? void 0 : r.code) === d.evJ.NON_MODERATED_TAG_REQUIRED ? o.Z.show({
       title: t,
       body: n
-    }) : (null === (i = e.body) || void 0 === i ? void 0 : i.code) === d.evJ.INVALID_FORM_BODY && (null === (a = e.body) || void 0 === a ? void 0 : a.errors.emoji) && o.Z.show({
+    }) : (null == (i = e.body) ? void 0 : i.code) === d.evJ.INVALID_FORM_BODY && (null == (a = e.body) ? void 0 : a.errors.emoji) && o.Z.show({
       title: f.NW.string(f.t.T8sBLC),
       body: f.NW.string(f.t.aHt1BQ)
     })

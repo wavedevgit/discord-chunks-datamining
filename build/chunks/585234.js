@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /(r#)?/,
     r = t.concat(n, e.UNDERSCORE_IDENT_RE),
@@ -112,4 +112,3 @@ function t(e) {
     }, o]
   }
 }
-e.exports = t

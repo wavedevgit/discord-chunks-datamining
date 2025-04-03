@@ -31,8 +31,8 @@ let p = 15 * c.Z.Millis.SECOND,
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     return "".concat(e, ":").concat(t, ":").concat(n)
   },
-  v = new o.V7,
-  y = [],
+  y = new o.V7,
+  v = [],
   O = {},
   I = (0, s.tu)("highfive_whistle", "highfive_whistle", .6),
   S = (0, s.tu)("highfive_clap", "highfive_clap", .6);
@@ -45,7 +45,7 @@ function T(e) {
   } = e, o = l.default.getId(), a = d.Z.getEnabled();
   if (null != t) {
     if (a && (0, f.Z)(t.name)) return A(t.name, r, n);
-    r === o && (y = [...y, t.name].slice(-1 * E), i().isEqual(y, g) ? (I.play(), v.stop(), y = [], (0, u.ME)(!a)) : v.start(p, () => y = []))
+    r === o && (v = [...v, t.name].slice(-1 * E), i().isEqual(v, g) ? (I.play(), y.stop(), v = [], (0, u.ME)(!a)) : y.start(p, () => v = []))
   }
 }
 
@@ -64,10 +64,10 @@ function A(e, t, n) {
   var r;
   let i = b(t, n);
   if (null != d.Z.getWaitingHighFive(n, t)) return;
-  let [a, s] = null !== (r = Object.entries(O).find(e => {
+  let [a, s] = null != (r = Object.entries(O).find(e => {
     let [t] = e;
     return t !== i
-  })) && void 0 !== r ? r : [];
+  })) ? r : [];
   if (null != a && null != s) s.cancel(), S.play(), delete O[a], (0, u.Ym)(a.split(":")[0], t, n, e);
   else {
     (0, u._g)(e, t, n), I.play();

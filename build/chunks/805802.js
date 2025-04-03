@@ -38,7 +38,7 @@ function u(e, t) {
           n.push((0, l.B)(e));
           break;
         case "RDATE":
-          var f = null !== (t = /RDATE(?:;TZID=([^:=]+))?/i.exec(e)) && void 0 !== t ? t : [],
+          var f = null != (t = /RDATE(?:;TZID=([^:=]+))?/i.exec(e)) ? t : [],
             _ = f[1];
           _ && !c && (c = _), r = r.concat(b(d, u));
           break;

@@ -16,7 +16,7 @@ function s(e) {
     s = r.useRef(null),
     [l, c] = r.useState(() => {
       var e;
-      return null != t.soundId && (null === (e = n.current) || void 0 === e ? void 0 : e.dataset.soundId) === t.soundId && !n.current.paused
+      return null != t.soundId && (null == (e = n.current) ? void 0 : e.dataset.soundId) === t.soundId && !n.current.paused
     });
   (0, i.ZP)(() => {
     let {
@@ -42,7 +42,7 @@ function s(e) {
       let {
         volume: r
       } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      u(), null === (e = n.current) || void 0 === e || e.pause();
+      u(), null == (e = n.current) || e.pause();
       let {
         current: i
       } = s;

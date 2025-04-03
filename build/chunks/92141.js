@@ -2,8 +2,7 @@
 var r = n(821164),
   i = 1,
   o = Object.prototype.hasOwnProperty;
-
-function a(e, t, n, a, s, l) {
+e.exports = function(e, t, n, a, s, l) {
   var c = n & i,
     u = r(e),
     d = u.length;
@@ -27,10 +26,9 @@ function a(e, t, n, a, s, l) {
     m || (m = "constructor" == _)
   }
   if (h && !m) {
-    var v = e.constructor,
-      y = t.constructor;
-    v != y && "constructor" in e && "constructor" in t && !("function" == typeof v && v instanceof v && "function" == typeof y && y instanceof y) && (h = !1)
+    var y = e.constructor,
+      v = t.constructor;
+    y != v && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof v && v instanceof v) && (h = !1)
   }
   return l.delete(e), l.delete(t), h
 }
-e.exports = a

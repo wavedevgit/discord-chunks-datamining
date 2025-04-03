@@ -45,8 +45,8 @@ var r = n(505388),
     for (m = 0; m < _.length; ++m)
       if (m !== p) {
         var m, g, E, b = _[m],
-          v = b.indexOf("]="),
-          y = -1 === v ? b.indexOf("=") : v + 1; - 1 === y ? (g = t.decoder(b, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(b.slice(0, y), a.decoder, h, "key"), E = r.maybeMap(l(b.slice(y + 1), t), function(e) {
+          y = b.indexOf("]="),
+          v = -1 === y ? b.indexOf("=") : y + 1; - 1 === v ? (g = t.decoder(b, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(b.slice(0, v), a.decoder, h, "key"), E = r.maybeMap(l(b.slice(v + 1), t), function(e) {
           return t.decoder(e, a.decoder, h, "value")
         })), E && t.interpretNumericEntities && "iso-8859-1" === h && (E = s(E)), b.indexOf("[]=") > -1 && (E = o(E) ? [E] : E), i.call(n, g) ? n[g] = r.combine(n[g], E) : n[g] = E
       } return n

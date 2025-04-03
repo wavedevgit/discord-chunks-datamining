@@ -25,7 +25,7 @@ function _(e) {
   var t;
   return (0, l.kt)({
     id: e.id,
-    name: null !== (t = e.nickname) && void 0 !== t ? t : "",
+    name: null != (t = e.nickname) ? t : "",
     type: c.d4z.GUILD_CATEGORY,
     position: e.order,
     guild_id: c.I_8
@@ -34,8 +34,8 @@ function _(e) {
 
 function p() {
   var e, t, n;
-  f = null !== (n = null === (e = s.Z.settings.favorites) || void 0 === e ? void 0 : e.muted) && void 0 !== n && n, d = {};
-  let r = null === (t = s.Z.settings.favorites) || void 0 === t ? void 0 : t.favoriteChannels;
+  f = null != (n = null == (e = s.Z.settings.favorites) ? void 0 : e.muted) && n, d = {};
+  let r = null == (t = s.Z.settings.favorites) ? void 0 : t.favoriteChannels;
   if (null == r) return !1;
   for (let e in r) {
     let t = r[e];
@@ -70,7 +70,7 @@ class h extends(r = i.ZP.Store) {
   getNickname(e) {
     var t;
     let n = this.getFavorite(e);
-    return null !== (t = null == n ? void 0 : n.nickname) && void 0 !== t ? t : void 0
+    return null != (t = null == n ? void 0 : n.nickname) ? t : void 0
   }
 }
 u(h, "displayName", "FavoriteStore");

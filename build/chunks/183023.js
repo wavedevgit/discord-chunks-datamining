@@ -24,8 +24,8 @@ var r = n(200651),
   g = n(686546),
   E = n(111028),
   b = n(738774),
-  v = n(785896),
-  y = n(231053),
+  y = n(785896),
+  v = n(231053),
   O = n(944386),
   I = n(565138),
   S = n(372769),
@@ -49,7 +49,7 @@ var r = n(200651),
   V = n(176505),
   Z = n(474936),
   H = n(388032),
-  W = n(642318);
+  W = n(239594);
 
 function Y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -176,7 +176,7 @@ let Q = 32,
       children: (0, r.jsx)(E.Z, {
         children: l
       })
-    }), b = t.isDiscoverable() && null != t.presenceCount, v = () => {
+    }), b = t.isDiscoverable() && null != t.presenceCount, y = () => {
       let e = !i && !n;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.Text, {
@@ -201,7 +201,7 @@ let Q = 32,
           children: H.NW.string(H.t.inyJqK)
         })]
       })
-    }, y = () => b ? v() : (0, r.jsx)(u.Text, {
+    }, v = () => b ? y() : (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
       children: H.NW.string(H.t.H29mx8)
@@ -225,7 +225,7 @@ let Q = 32,
           }), h()]
         }), (0, r.jsx)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: y()
+          children: v()
         })]
       })]
     })
@@ -243,7 +243,7 @@ let Q = 32,
       joinedEmojiSourceGuildRecord: u,
       emoji: d,
       isFetching: f
-    } = (0, v.i)({
+    } = (0, y.i)({
       emojiId: t.emojiId,
       refreshPositionKey: i
     });
@@ -268,7 +268,7 @@ let Q = 32,
     let {
       node: c,
       sourceType: g,
-      expressionSourceApplication: v,
+      expressionSourceApplication: y,
       expressionSourceGuild: I,
       joinedEmojiSourceGuildRecord: S,
       closePopout: C,
@@ -276,7 +276,7 @@ let Q = 32,
       guildEmoji: D,
       demoMode: k = !1,
       nonce: j
-    } = e, Y = (0, l.e7)([x.default], () => x.default.getCurrentUser()), K = (0, l.e7)([L.Z], () => L.Z.getGuildId()), z = U.ZP.isPremium(Y), q = null != K && (K === (null == I ? void 0 : I.id) || K === (null == S ? void 0 : S.id)), Q = null != S, X = null !== (t = null == I ? void 0 : I.isDiscoverable()) && void 0 !== t && t;
+    } = e, Y = (0, l.e7)([x.default], () => x.default.getCurrentUser()), K = (0, l.e7)([L.Z], () => L.Z.getGuildId()), z = U.ZP.isPremium(Y), q = null != K && (K === (null == I ? void 0 : I.id) || K === (null == S ? void 0 : S.id)), Q = null != S, X = null != (t = null == I ? void 0 : I.isDiscoverable()) && t;
     k && (z = !0, X = !0, Q = !1, q = !1);
     let $ = J(),
       {
@@ -301,8 +301,8 @@ let Q = 32,
       name: s.ImpressionNames.ROLE_SUBSCRIPTION_EMOJI_UPSELL,
       properties: {
         location_stack: ea,
-        emoji_guild_id: null !== (n = null == D ? void 0 : D.guildId) && void 0 !== n ? n : null,
-        emoji_id: null !== (o = null == D ? void 0 : D.id) && void 0 !== o ? o : null
+        emoji_guild_id: null != (n = null == D ? void 0 : D.guildId) ? n : null,
+        emoji_id: null != (o = null == D ? void 0 : D.id) ? o : null
       }
     }, {
       disableTrack: !et
@@ -310,7 +310,7 @@ let Q = 32,
     let es = L.Z.getGuildId(),
       el = (0, G.a)({
         sourceType: g,
-        expressionSourceApplication: v,
+        expressionSourceApplication: y,
         isPremium: z,
         hasJoinedEmojiSourceGuild: Q,
         isRoleSubscriptionEmoji: et,
@@ -402,7 +402,7 @@ let Q = 32,
       [eh, em] = i.useState(!1),
       eg = () => {
         var e, t;
-        let n = null != I && !Q && X && (null !== (t = null == I ? void 0 : null === (e = I.emojis) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0) > 1,
+        let n = null != I && !Q && X && (null != (t = null == I || null == (e = I.emojis) ? void 0 : e.length) ? t : 0) > 1,
           i = () => {
             n && (null == w || w(), eh || k || M.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ed), em(!eh))
           },
@@ -434,7 +434,7 @@ let Q = 32,
             className: W.guildTitle,
             children: Q ? H.NW.string(H.t.ohTzZG) : H.NW.string(H.t["eLfh+f"])
           }), (0, r.jsx)(ee, {
-            expressionSourceGuild: null != I ? I : y.JO.createFromGuildRecord(S),
+            expressionSourceGuild: null != I ? I : v.JO.createFromGuildRecord(S),
             hasJoinedExpressionSourceGuild: Q,
             isDisplayingJoinGuildButtonInPopout: ef
           }), n && (0, r.jsxs)(r.Fragment, {
@@ -464,7 +464,7 @@ let Q = 32,
       popoutData: a,
       onClose: s,
       isDisplayingButtonInTopSection: l
-    } = e, c = (null !== (t = null == i ? void 0 : i.emojis) && void 0 !== t ? t : []).slice(0, X + 1).filter(e => e.id !== n).slice(0, X), d = () => o ? null : c.map(e => (0, r.jsx)(u.ua7, q(K({
+    } = e, c = (null != (t = null == i ? void 0 : i.emojis) ? t : []).slice(0, X + 1).filter(e => e.id !== n).slice(0, X), d = () => o ? null : c.map(e => (0, r.jsx)(u.ua7, q(K({
       text: e.require_colons ? ":".concat(e.name, ":") : e.name
     }, B.b_), {
       children: t => (0, r.jsx)(f.Z, K({

@@ -5,11 +5,11 @@ n.d(t, {
   OC: () => A,
   dg: () => I,
   dp: () => E,
-  f3: () => v,
+  f3: () => y,
   iL: () => C,
   nA: () => S,
   qF: () => g,
-  uV: () => y,
+  uV: () => v,
   vY: () => N
 }), n(301563), n(47120), n(757143);
 var r = n(200651),
@@ -80,13 +80,13 @@ let b = [{
   klass: "audio"
 }];
 
-function v(e) {
-  return y(e.name, e.type)
+function y(e) {
+  return v(e.name, e.type)
 }
 
-function y(e, t) {
+function v(e, t) {
   var n;
-  e = null !== (n = null == e ? void 0 : e.toLowerCase()) && void 0 !== n ? n : "";
+  e = null != (n = null == e ? void 0 : e.toLowerCase()) ? n : "";
   let r = s().find(b, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
   return null != r ? r.klass : "unknown"
 }

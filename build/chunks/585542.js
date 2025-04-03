@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = e.COMMENT("//", "$", {
       contains: [{
@@ -159,4 +159,3 @@ function t(e) {
     }
   }
 }
-e.exports = t

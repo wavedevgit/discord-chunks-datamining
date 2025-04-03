@@ -38,7 +38,7 @@ let p = {},
 
 function m() {
   var e;
-  let t = null !== (e = s.Z.getGuildsProto()) && void 0 !== e ? e : {},
+  let t = null != (e = s.Z.getGuildsProto()) ? e : {},
     n = l.Z.getGuilds(),
     r = u.default.keys(n);
   for (let e of (h = {}, r)) h[e] = _({
@@ -59,7 +59,7 @@ function g(e) {
 function E(e) {
   for (let n of (p = {}, e.guilds)) {
     var t;
-    let e = g(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
+    let e = g(null == (t = n.properties) ? void 0 : t.incidents_data);
     null != e && ((0, d.i9)(e) || (0, d.ur)(e)) && (p[n.id] = e)
   }
 }
@@ -68,18 +68,18 @@ function b(e) {
   var t;
   let {
     guild: n
-  } = e, r = g(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
+  } = e, r = g(null == (t = n.properties) ? void 0 : t.incidents_data);
   null != r && ((0, d.i9)(r) || (0, d.ur)(r)) && (p[n.id] = r)
 }
 
-function v(e) {
+function y(e) {
   let {
     guild: t
   } = e, n = g(t.incidents_data);
   null != n && ((0, d.i9)(n) || (0, d.ur)(n)) ? p[t.id] = n : delete p[t.id]
 }
 
-function y(e) {
+function v(e) {
   let {
     guild: t
   } = e;
@@ -107,7 +107,7 @@ f(I, "displayName", "GuildIncidentsStore");
 let S = new I(o.Z, {
   CONNECTION_OPEN: E,
   GUILD_CREATE: b,
-  GUILD_UPDATE: v,
-  GUILD_DELETE: y,
+  GUILD_UPDATE: y,
+  GUILD_DELETE: v,
   LOGOUT: O
 })

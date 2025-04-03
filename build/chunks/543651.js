@@ -17,7 +17,7 @@ var i = n(120356),
   _ = n(594174),
   p = n(823379),
   h = n(388032),
-  m = n(498078);
+  m = n(352665);
 let g = function(e) {
   let {
     createdAt: t,
@@ -26,10 +26,10 @@ let g = function(e) {
     title: a,
     guildId: g,
     className: E
-  } = e, b = (0, u.q)(i), v = (0, l.Wu)([_.default], () => {
+  } = e, b = (0, u.q)(i), y = (0, l.Wu)([_.default], () => {
     var e;
-    return null !== (e = n.map(e => _.default.getUser(e)).filter(p.lm)) && void 0 !== e ? e : []
-  }), y = null == b ? void 0 : b.name, O = s()(t).fromNow();
+    return null != (e = n.map(e => _.default.getUser(e)).filter(p.lm)) ? e : []
+  }), v = null == b ? void 0 : b.name, O = s()(t).fromNow();
   return null == t ? null : (0, r.jsxs)("div", {
     className: o()(E, m.container),
     children: [(0, r.jsx)(f.Z, {
@@ -48,15 +48,15 @@ let g = function(e) {
         variant: "text-xs/medium",
         color: "text-muted",
         className: m.__invalid_subtitle,
-        children: [null != y ? "".concat(y, " • ") : null, O]
+        children: [null != v ? "".concat(v, " • ") : null, O]
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
         className: m.__invalid_subtitle
       })]
-    }), null != v && v.length > 0 && (0, r.jsx)(d.Z, {
+    }), null != y && y.length > 0 && (0, r.jsx)(d.Z, {
       maxUsers: 4,
-      users: v,
+      users: y,
       className: m.__invalid_facePile,
       guildId: g
     })]

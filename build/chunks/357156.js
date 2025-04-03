@@ -28,7 +28,7 @@ let d = {
     if ("userId" in e) return r && null != t && e.userId === t.id;
     if ("user" in e) {
       var i;
-      return r && null != t && (null === (i = e.user) || void 0 === i ? void 0 : i.id) === t.id
+      return r && null != t && (null == (i = e.user) ? void 0 : i.id) === t.id
     }
     return !1
   },

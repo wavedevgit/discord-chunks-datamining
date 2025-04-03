@@ -60,7 +60,7 @@ function b() {
     n = c.Z.getChannel(t);
   if (null != n && null == n.getGuildId() && null != t && (null == g[t] || e)) {
     var r;
-    return g[t] = null !== (r = g[t]) && void 0 !== r ? r : {
+    return g[t] = null != (r = g[t]) ? r : {
       channelId: t,
       ringing: []
     }, l.Z.dispatch({
@@ -71,11 +71,11 @@ function b() {
   return !1
 }
 
-function v() {
+function y() {
   return b(!0)
 }
 
-function y(e) {
+function v(e) {
   let {
     callStoreInternalState: t
   } = e;
@@ -138,7 +138,7 @@ function A(e) {
     channelId: n,
     recipients: r
   } = e;
-  E[n] = o().union(null !== (t = E[n]) && void 0 !== t ? t : [], null != r ? r : ["all"])
+  E[n] = o().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
 }
 
 function C(e) {
@@ -210,9 +210,9 @@ class w extends(r = a.ZP.Store) {
 }
 _(w, "displayName", "CallStore");
 let D = new w(l.Z, {
-  CONNECTION_OPEN: v,
+  CONNECTION_OPEN: y,
   CONNECTION_CLOSED: O,
-  OVERLAY_INITIALIZE: y,
+  OVERLAY_INITIALIZE: v,
   CONNECTION_RESUMED: I,
   CHANNEL_SELECT: S,
   CHANNEL_DELETE: T,

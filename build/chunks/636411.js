@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -18,15 +18,15 @@ var i = n(120356),
   p = n(981631),
   h = n(474936),
   m = n(388032),
-  g = n(814664);
+  g = n(645885);
 let E = "https://cdn.discordapp.com/assets/22_211_SuperReactions_GTM_Hero_v09.mp4",
   b = 32;
 
-function v(e) {
+function y(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, v = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), y = m.NW.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
+  } = e, y = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), v = m.NW.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
     object: p.qAy.BUTTON_CTA,
     section: p.jXE.SUPER_REACTION_PICKER
   };
@@ -50,18 +50,18 @@ function v(e) {
           }),
           src: E,
           loop: !0,
-          autoPlay: !v,
+          autoPlay: !y,
           muted: !0,
           controls: !0
         })
       }), S ? (0, r.jsx)(f.ZP, {
         type: h.cd.BURST_REACTION_QUICK_ACTION_UPSELL,
-        subscriptionTier: null !== (n = null == O ? void 0 : null === (t = O.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : h.Si.TIER_2,
+        subscriptionTier: null != (n = null == O || null == (t = O.subscription_trial) ? void 0 : t.sku_id) ? n : h.Si.TIER_2,
         headingText: m.NW.string(m.t.Wfl5zs),
         analyticsLocationObject: T,
         discountOffer: I,
         trialOffer: O,
-        children: y
+        children: v
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: g.header,
@@ -79,7 +79,7 @@ function v(e) {
         }), (0, r.jsx)(s.Text, {
           className: g.subheaderText,
           variant: "text-md/normal",
-          children: y
+          children: v
         }), (0, r.jsx)("div", {
           className: g.ctaActionWrapper,
           children: (0, r.jsx)(_.Z, {

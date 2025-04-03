@@ -35,7 +35,7 @@ function o(e, t, n = !1) {
       for (let e in n) l["$+/-$placeholder." + e] = n[e];
       return i.dataFormatterCache.getListFormatter(e, a(s)).formatToParts(Object.keys(l)).map(e => {
         var t;
-        return e.value = null !== (t = l[e.value]) && void 0 !== t ? t : e.value
+        return e.value = null != (t = l[e.value]) ? t : e.value
       })
     },
     formatRelativeTime(n, o, s) {

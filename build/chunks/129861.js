@@ -14,7 +14,7 @@ var i = n(120356),
   u = n(246946),
   d = n(51144),
   f = n(388032),
-  _ = n(346791);
+  _ = n(350651);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,10 +73,10 @@ function b(e, t) {
   return i
 }
 
-function v(e) {
+function y(e) {
   return e.isSystemUser() ? c.J.SYSTEM_DM : e.isClyde() ? c.J.AI : e.bot ? c.J.BOT : null
 }
-let y = e => {
+let v = e => {
     let {
       primary: t,
       secondary: n,
@@ -126,7 +126,7 @@ let y = e => {
     let m = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation),
       g = m || _ || t.isNonUserBot(),
       b = t.toString(),
-      O = f ? null : v(t),
+      O = f ? null : y(t),
       I = t.isVerifiedBot(),
       S = d.ZP.getName(t),
       T = i ? b : null != n ? n : S,
@@ -136,7 +136,7 @@ let y = e => {
           forcePomelo: l
         }) : T,
         n = o && e !== "@".concat(b) ? d.ZP.getUserTag(t) : void 0;
-      return (0, r.jsx)(y, h({
+      return (0, r.jsx)(v, h({
         primary: e,
         secondary: n,
         botType: O,

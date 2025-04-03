@@ -20,9 +20,9 @@ var r = n(200651),
   g = n(526617),
   E = n(474936),
   b = n(388032),
-  v = n(913521);
+  y = n(865006);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,7 +38,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -90,11 +90,11 @@ function R(e) {
   } = e, s = T(e, ["icon", "isSelected", "onClick", "listItemProps"]);
   return (0, r.jsx)(c.P3F, S(O({}, o, s), {
     onClick: i,
-    className: a()(v.categoryIcon, {
-      [v.selected]: n
+    className: a()(y.categoryIcon, {
+      [y.selected]: n
     }),
     children: (0, r.jsx)(t, {
-      className: v.categoryIconIcon,
+      className: y.categoryIconIcon,
       color: "currentColor"
     })
   }))
@@ -125,7 +125,7 @@ function P(e, t, n, i, o, a) {
       }), e.key);
     case m.bg.GUILD:
       return (0, r.jsx)(c.P3F, S(O({}, o, i), {
-        className: v.category,
+        className: y.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
           guild: e.categoryInfo.guild,
@@ -213,7 +213,7 @@ function x(e) {
     })
   }, [s, o, m]);
   return (0, r.jsx)(f.Z, {
-    className: c ? v.expressionPickerCategoryList : v.categoryList,
+    className: c ? y.expressionPickerCategoryList : y.categoryList,
     categoryListRef: u,
     expressionsListRef: t,
     store: d.Wq,

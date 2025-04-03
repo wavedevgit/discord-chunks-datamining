@@ -21,7 +21,7 @@ if (!t) var t = {
     return Math.max.apply(null, n ? t.map(e, n) : e)
   }
 };
-var n = function() {
+e.exports = function() {
   var e = 5,
     n = 3,
     r = 1e3,
@@ -244,5 +244,4 @@ var n = function() {
       return m
     }
   }
-}();
-e.exports = n.quantize
+}().quantize

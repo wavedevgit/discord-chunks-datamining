@@ -79,16 +79,16 @@ let g = 1,
       messageId: m,
       channelId: E
     } = e, b = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
-      analyticsLocations: v
-    } = (0, c.ZP)(l.Z.MASKED_LINK), y = i.useCallback(t => (0, u.q)(e, t, v), [v, e]), O = i.useCallback(e => {
-      e.button === g && y(e)
-    }, [y]), I = a().sanitizeUrl(d);
+      analyticsLocations: y
+    } = (0, c.ZP)(l.Z.MASKED_LINK), v = i.useCallback(t => (0, u.q)(e, t, y), [y, e]), O = i.useCallback(e => {
+      e.button === g && v(e)
+    }, [v]), I = a().sanitizeUrl(d);
     return (0, r.jsx)(s.eee, p(f({}, b), {
       title: o,
       target: "_blank",
       rel: "noreferrer noopener",
       href: I,
-      onClick: y,
+      onClick: v,
       onAuxClick: O,
       children: null != _ ? _ : o
     }))

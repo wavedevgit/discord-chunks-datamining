@@ -75,8 +75,7 @@ function p(e) {
       else throw (0, o.SQ)("Cash App Pay setup attempt is not valid.")
     },
     onError: e => {
-      let t;
-      let n = !0;
+      let t, n = !0;
       if ("CANCEL" !== e.name) {
         switch (e.message) {
           case "Payment declined by CashAppPay":
@@ -97,12 +96,12 @@ function p(e) {
 function h() {
   var e;
   if (null == c.Z.cashAppPayComponent) throw Error("Adyen CashAppPay component must be created before mounting.");
-  null === (e = c.Z.cashAppPayComponent) || void 0 === e || e.mount("#".concat(s.F))
+  null == (e = c.Z.cashAppPayComponent) || e.mount("#".concat(s.F))
 }
 
 function m() {
   var e;
-  null === (e = c.Z.cashAppPayComponent) || void 0 === e || e.unmount()
+  null == (e = c.Z.cashAppPayComponent) || e.unmount()
 }
 
 function g() {

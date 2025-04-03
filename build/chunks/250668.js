@@ -17,8 +17,8 @@ var r = n(147018),
   g = n(712560),
   E = n(966606),
   b = n(740362),
-  v = n(974971),
-  y = n(622281),
+  y = n(974971),
+  v = n(622281),
   O = n(323979),
   I = n(803938),
   S = n(838957),
@@ -64,7 +64,7 @@ var r = n(147018),
   },
   ee = function(e) {
     var t;
-    return S(V, e) || "ArrayBuffer" === (t = v(e)) || "SharedArrayBuffer" === t
+    return S(V, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
   },
   et = function(e, t) {
     return q(e) && !O(t) && t in e && _(+t) && t >= 0
@@ -73,7 +73,7 @@ var r = n(147018),
     return et(e, t = E(t)) ? d(2, e[t]) : G(e, t)
   },
   er = function(e, t, n) {
-    return et(e, t = E(t)) && y(n) && b(n, "value") && !b(n, "get") && !b(n, "set") && !n.configurable && (!b(n, "writable") || n.writable) && (!b(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : U(e, t, n)
+    return et(e, t = E(t)) && v(n) && b(n, "value") && !b(n, "get") && !b(n, "set") && !n.configurable && (!b(n, "writable") || n.writable) && (!b(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : U(e, t, n)
   };
 a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLength"), $(K, "length")), r({
   target: "Object",
@@ -90,7 +90,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
     _ = i[l],
     E = _,
     b = E && E.prototype,
-    v = {},
+    y = {},
     O = function(e, t) {
       var n = M(e);
       return n.view[c](t * a + n.byteOffset, !0)
@@ -112,7 +112,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
     };
   H ? s && (E = t(function(e, t, n, r) {
     return u(e, b), x(function() {
-      return y(t) ? ee(t) ? void 0 !== r ? new _(t, m(n, a), r) : void 0 !== n ? new _(t, m(n, a)) : new _(t) : q(t) ? J(E, t) : o(A, E, t) : new _(h(t))
+      return v(t) ? ee(t) ? void 0 !== r ? new _(t, m(n, a), r) : void 0 !== n ? new _(t, m(n, a)) : new _(t) : q(t) ? J(E, t) : o(A, E, t) : new _(h(t))
     }(), e, E)
   }), T && T(E, Y), C(N(_), function(e) {
     e in E || f(E, e, _[e])
@@ -120,7 +120,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
     u(e, b);
     var i, s, l, c = 0,
       d = 0;
-    if (y(t)) {
+    if (v(t))
       if (ee(t)) {
         i = t, d = m(n, a);
         var f = t.byteLength;
@@ -129,8 +129,8 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
         } else if ((s = p(r) * a) + d > f) throw B(X);
         l = s / a
       } else if (q(t)) return J(E, t);
-      else return o(A, E, t)
-    } else i = new F(s = (l = h(t)) * a);
+    else return o(A, E, t);
+    else i = new F(s = (l = h(t)) * a);
     for (k(e, {
         buffer: i,
         byteOffset: d,
@@ -140,10 +140,10 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
       }); c < l;) P(e, c++)
   }), T && T(E, Y), b = E.prototype = I(K)), b.constructor !== E && f(b, "constructor", E), j(b).TypedArrayConstructor = E, W && f(b, W, l);
   var w = E !== _;
-  v[l] = E, r({
+  y[l] = E, r({
     global: !0,
     constructor: !0,
     forced: w,
     sham: !H
-  }, v), Q in E || f(E, Q, a), Q in b || f(b, Q, a), R(l)
+  }, y), Q in E || f(E, Q, a), Q in b || f(b, Q, a), R(l)
 }) : e.exports = function() {}

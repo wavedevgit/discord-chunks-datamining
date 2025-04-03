@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DW: () => v,
+  DW: () => y,
   Gn: () => O,
-  t3: () => y,
+  t3: () => v,
   w4: () => E
 });
 var r = n(525654),
@@ -33,12 +33,12 @@ function E(e) {
 function b() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (() => {
     var e;
-    return null === (e = i().os) || void 0 === e ? void 0 : e.family
+    return null == (e = i().os) ? void 0 : e.family
   })();
   return null == e ? h : -1 !== e.indexOf(l) || -1 !== e.indexOf(c) || -1 !== e.indexOf(u) || -1 !== e.indexOf(d) || -1 !== e.indexOf(f) || -1 !== e.indexOf(_) ? g : -1 !== e.indexOf(p) ? m : h
 }
 
-function v(e) {
+function y(e) {
   return ({
     [h]: "Windows",
     [m]: "Mac",
@@ -46,7 +46,7 @@ function v(e) {
   })[b(e)]
 }
 
-function y() {
+function v() {
   let e = b(),
     t = e === g ? "tar.gz" : null;
   return E(e, !1, t)

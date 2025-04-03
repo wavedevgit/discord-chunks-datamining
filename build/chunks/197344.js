@@ -51,7 +51,7 @@ let l = {
   },
   getLoadingTips: function() {
     var e;
-    return a() ? null === (e = r.Z.getLoadingTips) || void 0 === e ? void 0 : e.call(r.Z) : null
+    return a() ? null == (e = r.Z.getLoadingTips) ? void 0 : e.call(r.Z) : null
   },
   getHolidaySoundpack: s
 }

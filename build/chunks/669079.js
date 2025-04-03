@@ -57,9 +57,9 @@ function b(e) {
   }
   return e
 }
-let v = ["discordapp.com/gifts", "discord.com/gifts"],
-  y = 3,
-  O = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...v.map(e => _.Z.escape(e))].join("|"),
+let y = ["discordapp.com/gifts", "discord.com/gifts"],
+  v = 3,
+  O = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => _.Z.escape(e))].join("|"),
   I = RegExp("(?: |^|https?://)(?:".concat(O, ")/([a-z0-9-]+)"), "gi"),
   S = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
   T = RegExp("(?: |^|https?://)(?:".concat(S, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
@@ -101,8 +101,8 @@ let F = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ?
     let t;
     if (null == e) return [];
     let n = new Set;
-    for (; null != (t = I.exec(e)) && n.size < y;) n.add(B(t[1]));
-    for (; null != (t = T.exec(e)) && n.size < y;) n.add(B(t[t.length - 1]));
+    for (; null != (t = I.exec(e)) && n.size < v;) n.add(B(t[1]));
+    for (; null != (t = T.exec(e)) && n.size < v;) n.add(B(t[t.length - 1]));
     return Array.from(n)
   };
 

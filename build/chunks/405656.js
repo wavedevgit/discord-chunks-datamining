@@ -12,8 +12,8 @@ n.d(t, {
   g9: () => b,
   jW: () => g,
   kG: () => T,
-  qc: () => v,
-  zV: () => y
+  qc: () => y,
+  zV: () => v
 }), n(301563), n(47120), n(566702);
 var r = n(392711),
   i = n.n(r),
@@ -133,8 +133,7 @@ function E(e) {
 }
 
 function b(e, t, n) {
-  let r, i;
-  let o = e.find((o, a) => t >= o.start && t <= o.end && n >= o.start && n <= o.end ? (null != e[a + 1] && (i = e[a + 1]), !0) : (r = o, !1));
+  let r, i, o = e.find((o, a) => t >= o.start && t <= o.end && n >= o.start && n <= o.end ? (null != e[a + 1] && (i = e[a + 1]), !0) : (r = o, !1));
   return null == o ? null : {
     previousToken: r,
     currentToken: o,
@@ -144,9 +143,8 @@ function b(e, t, n) {
   }
 }
 
-function v(e, t) {
-  let n;
-  let {
+function y(e, t) {
+  let n, {
     currentToken: r,
     nextToken: i,
     previousToken: a
@@ -184,7 +182,7 @@ function v(e, t) {
   })
 }
 
-function y(e, t) {
+function v(e, t) {
   let n = [];
   return i()(e).forEach(e => {
     if (null == e || 0 === e.results.length) return;
@@ -193,7 +191,7 @@ function y(e, t) {
       let n = e.text;
       if (t === u.Sap.FILTER_ALL) {
         var i;
-        r = null !== (i = e.group) && void 0 !== i ? i : r;
+        r = null != (i = e.group) ? i : r;
         let t = a.ZP[r];
         (null == t ? void 0 : t.key) != null && (null == t ? void 0 : t.key) !== "" && (n = "".concat(t.key, " ").concat(n))
       }

@@ -52,7 +52,7 @@ function c() {
   let e;
   if (null != window.getSelection) {
     var t;
-    e = null === (t = window.getSelection()) || void 0 === t ? void 0 : t.toString()
+    e = null == (t = window.getSelection()) ? void 0 : t.toString()
   } else null != document.selection && "Control" !== document.selection.type && (e = document.selection.createRange().text);
   return null != e ? e : ""
 }
@@ -71,27 +71,25 @@ function u(e) {
     }, {
       enableSpellCheck: !0
     })
-  } else if ("none" === window.getComputedStyle(o).getPropertyValue("-webkit-user-select")) {
-    e.preventDefault();
-    return
   } else {
-    let o, s, c, u = e.target;
-    for (; null != u;) "src" in u && null != u.src && (s = u.src), "href" in u && null != u.href && (o = u.href, c = u.textContent), u = null == u ? void 0 : u.parentNode;
-    if (null != s) return (0, i.jW)(e, async () => {
+    if ("none" === window.getComputedStyle(o).getPropertyValue("-webkit-user-select")) return void e.preventDefault();
+    let s, c, u, d = e.target;
+    for (; null != d;) "src" in d && null != d.src && (c = d.src), "href" in d && null != d.href && (s = d.href, u = d.textContent), d = null == d ? void 0 : d.parentNode;
+    if (null != c) return (0, i.jW)(e, async () => {
       let {
         default: e
       } = await n.e("12241").then(n.bind(n, 115512));
       return t => (0, r.jsx)(e, l(a({}, t), {
-        src: null != s ? s : ""
+        src: null != c ? c : ""
       }))
     });
-    if (null != o) return (0, i.jW)(e, async () => {
+    if (null != s) return (0, i.jW)(e, async () => {
       let {
         default: e
       } = await n.e("96473").then(n.bind(n, 805362));
       return t => (0, r.jsx)(e, l(a({}, t), {
-        href: o,
-        textContent: c
+        href: s,
+        textContent: u
       }))
     });
     if (null != t && "" !== t) return (0, i.jW)(e, async () => {

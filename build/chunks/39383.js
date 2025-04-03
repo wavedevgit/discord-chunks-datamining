@@ -1,9 +1,7 @@
 /** Chunk was on web.js **/
 var r = n(44091),
   i = 0;
-
-function o(e) {
+e.exports = function(e) {
   var t = ++i;
   return r(e) + t
 }
-e.exports = o

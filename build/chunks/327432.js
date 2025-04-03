@@ -8,7 +8,7 @@ n.d(t, {
   W_: () => K,
   YR: () => eW,
   e6: () => eg,
-  o4: () => ev,
+  o4: () => ey,
   xv: () => eN,
   y$: () => el
 });
@@ -209,7 +209,7 @@ var m = () => {
               voids: !0
             }), a--;
             else if (K.isElement(c)) {
-              if (e.isInline(c)) {
+              if (e.isInline(c))
                 if (null != u && eN.isText(u)) {
                   if (d) {
                     var _ = {
@@ -229,7 +229,6 @@ var m = () => {
                     voids: !0
                   }), a++
                 }
-              }
             } else null != u && eN.isText(u) && (eN.equals(c, u, {
               loose: !0
             }) ? (eW.mergeNodes(e, {
@@ -377,8 +376,8 @@ var b = function(e) {
     }
     return s || 1
   },
-  v = /\s/,
-  y = /[\u0021-\u0023\u0025-\u002A\u002C-\u002F\u003A\u003B\u003F\u0040\u005B-\u005D\u005F\u007B\u007D\u00A1\u00A7\u00AB\u00B6\u00B7\u00BB\u00BF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u0AF0\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166D\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E3B\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/,
+  y = /\s/,
+  v = /[\u0021-\u0023\u0025-\u002A\u002C-\u002F\u003A\u003B\u003F\u0040\u005B-\u005D\u005F\u007B\u007D\u00A1\u00A7\u00AB\u00B6\u00B7\u00BB\u00BF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u0AF0\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166D\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E3B\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/,
   O = /['\u2018\u2019]/,
   I = function(e) {
     for (var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], n = 0, r = !1; e.length > 0;) {
@@ -400,13 +399,13 @@ var b = function(e) {
   },
   T = function e(t, n) {
     var r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-    if (v.test(t)) return !1;
+    if (y.test(t)) return !1;
     if (O.test(t)) {
       var i = b(n, r),
         [o, a] = S(n, i, r);
       if (e(o, a, r)) return !0
     }
-    return !y.test(t)
+    return !v.test(t)
   },
   N = function*(e) {
     for (var t = e.length - 1, n = 0; n < e.length; n++) {
@@ -743,12 +742,11 @@ var J = new WeakMap,
         if (a) {
           var [, s] = $.last(e, []), l = [a.path, s];
           if (el.isPath(o) && 0 === o.length) throw Error("Cannot get the next node from the root node!");
-          if (null == i) {
+          if (null == i)
             if (el.isPath(o)) {
               var [c] = $.parent(e, o);
               i = e => c.children.includes(e)
-            } else i = () => !0
-          }
+            } else i = () => !0;
           var [u] = $.nodes(e, {
             at: l,
             match: i,
@@ -800,10 +798,9 @@ var J = new WeakMap,
         for (var [h, m] of _) {
           var g = r && 0 === el.compare(m, r[1]);
           if ("highest" !== a || !g) {
-            if (!u(h, m)) {
+            if (!u(h, m))
               if (s && !g && eN.isText(h)) return;
-              continue
-            }
+              else continue;
             if ("lowest" === a && g) {
               r = [h, m];
               continue
@@ -996,14 +993,14 @@ var J = new WeakMap,
             }
           }
           if (eN.isText(h)) {
-            var v = el.equals(m, c.path);
-            for (v ? (_ = i ? c.offset : h.text.length - c.offset, p = c.offset) : (_ = h.text.length, p = i ? _ : 0), (v || u || "offset" === r) && (yield {
+            var y = el.equals(m, c.path);
+            for (y ? (_ = i ? c.offset : h.text.length - c.offset, p = c.offset) : (_ = h.text.length, p = i ? _ : 0), (y || u || "offset" === r) && (yield {
                 path: m,
                 offset: p
               }, u = !1);;) {
               if (0 === f) {
                 if ("" === d) break;
-                f = y(d, r, i), d = S(d, f, i)[1]
+                f = v(d, r, i), d = S(d, f, i)[1]
               }
               if (p = i ? p - f : p + f, (_ -= f) < 0) {
                 f = -_;
@@ -1018,7 +1015,7 @@ var J = new WeakMap,
         }
       }
 
-      function y(e, t, n) {
+      function v(e, t, n) {
         return "character" === t ? b(e, n) : "word" === t ? I(e, n) : "line" === t || "block" === t ? e.length : 1
       }
     },
@@ -1039,12 +1036,11 @@ var J = new WeakMap,
         if (a) {
           var [, s] = $.first(e, []), l = [a.path, s];
           if (el.isPath(o) && 0 === o.length) throw Error("Cannot get the previous node from the root node!");
-          if (null == i) {
+          if (null == i)
             if (el.isPath(o)) {
               var [c] = $.parent(e, o);
               i = e => c.children.includes(e)
-            } else i = () => !0
-          }
+            } else i = () => !0;
           var [u] = $.nodes(e, {
             reverse: !0,
             at: l,
@@ -1175,7 +1171,7 @@ var J = new WeakMap,
   ei = {
     ancestor(e, t) {
       var n = ei.get(e, t);
-      if (eN.isText(n)) throw Error("Cannot get the ancestor node at path [".concat(t, "] because it refers to a text node instead: ").concat(ev.stringify(n)));
+      if (eN.isText(n)) throw Error("Cannot get the ancestor node at path [".concat(t, "] because it refers to a text node instead: ").concat(ey.stringify(n)));
       return n
     },
     * ancestors(e, t) {
@@ -1186,9 +1182,9 @@ var J = new WeakMap,
       }
     },
     child(e, t) {
-      if (eN.isText(e)) throw Error("Cannot get the child of a text node: ".concat(ev.stringify(e)));
+      if (eN.isText(e)) throw Error("Cannot get the child of a text node: ".concat(ey.stringify(e)));
       var n = e.children[t];
-      if (null == n) throw Error("Cannot get child at index `".concat(t, "` in node: ").concat(ev.stringify(e)));
+      if (null == n) throw Error("Cannot get child at index `".concat(t, "` in node: ").concat(ey.stringify(e)));
       return n
     },
     * children(e, t) {
@@ -1208,7 +1204,7 @@ var J = new WeakMap,
     },
     descendant(e, t) {
       var n = ei.get(e, t);
-      if ($.isEditor(n)) throw Error("Cannot get the descendant node at path [".concat(t, "] because it refers to the root editor node instead: ").concat(ev.stringify(n)));
+      if ($.isEditor(n)) throw Error("Cannot get the descendant node at path [".concat(t, "] because it refers to the root editor node instead: ").concat(ey.stringify(n)));
       return n
     },
     * descendants(e) {
@@ -1228,11 +1224,13 @@ var J = new WeakMap,
       return t
     },
     first(e, t) {
-      for (var n = t.slice(), r = ei.get(e, n); r && !eN.isText(r) && 0 !== r.children.length;) r = r.children[0], n.push(0);
+      for (var n = t.slice(), r = ei.get(e, n); r;)
+        if (eN.isText(r) || 0 === r.children.length) break;
+        else r = r.children[0], n.push(0);
       return [r, n]
     },
     fragment(e, t) {
-      if (eN.isText(e)) throw Error("Cannot get a fragment starting from a root text node: ".concat(ev.stringify(e)));
+      if (eN.isText(e)) throw Error("Cannot get a fragment starting from a root text node: ".concat(ey.stringify(e)));
       return (0, o.Uy)({
         children: e.children
       }, e => {
@@ -1264,7 +1262,7 @@ var J = new WeakMap,
     get(e, t) {
       for (var n = e, r = 0; r < t.length; r++) {
         var i = t[r];
-        if (eN.isText(n) || !n.children[i]) throw Error("Cannot find a descendant at path [".concat(t, "] in node: ").concat(ev.stringify(e)));
+        if (eN.isText(n) || !n.children[i]) throw Error("Cannot find a descendant at path [".concat(t, "] in node: ").concat(ey.stringify(e)));
         n = n.children[i]
       }
       return n
@@ -1286,15 +1284,16 @@ var J = new WeakMap,
       return er.set(e, n), n
     },
     last(e, t) {
-      for (var n = t.slice(), r = ei.get(e, n); r && !eN.isText(r) && 0 !== r.children.length;) {
-        var i = r.children.length - 1;
-        r = r.children[i], n.push(i)
-      }
-      return [r, n]
+      for (var n = t.slice(), r = ei.get(e, n); r;)
+        if (eN.isText(r) || 0 === r.children.length) break;
+        else {
+          var i = r.children.length - 1;
+          r = r.children[i], n.push(i)
+        } return [r, n]
     },
     leaf(e, t) {
       var n = ei.get(e, t);
-      if (!eN.isText(n)) throw Error("Cannot get the leaf node at path [".concat(t, "] because it refers to a non-leaf node: ").concat(ev.stringify(n)));
+      if (!eN.isText(n)) throw Error("Cannot get the leaf node at path [".concat(t, "] because it refers to a non-leaf node: ").concat(ey.stringify(n)));
       return n
     },
     * levels(e, t) {
@@ -1692,12 +1691,12 @@ var ef = {
             e.path = el.transform(i, t, n);
             break;
           case "split_node":
-            if (el.equals(t.path, i)) {
+            if (el.equals(t.path, i))
               if (t.position === o && null == r) return null;
-              (t.position < o || t.position === o && "forward" === r) && (e.offset -= t.position, e.path = el.transform(i, t, ed(ed({}, n), {}, {
+              else(t.position < o || t.position === o && "forward" === r) && (e.offset -= t.position, e.path = el.transform(i, t, ed(ed({}, n), {}, {
                 affinity: "forward"
-              })))
-            } else e.path = el.transform(i, t, n)
+              })));
+            else e.path = el.transform(i, t, n)
         }
       })
     }
@@ -1838,18 +1837,18 @@ var eg = {
     }
   },
   eb = void 0,
-  ev = {
+  ey = {
     setScrubber(e) {
       eb = e
     },
     stringify: e => JSON.stringify(e, eb)
   },
-  ey = (e, t) => {
+  ev = (e, t) => {
     for (var n in e) {
       var r = e[n],
         o = t[n];
       if ((0, i.P)(r) && (0, i.P)(o)) {
-        if (!ey(r, o)) return !1
+        if (!ev(r, o)) return !1
       } else if (Array.isArray(r) && Array.isArray(o)) {
         if (r.length !== o.length) return !1;
         for (var a = 0; a < r.length; a++)
@@ -1895,7 +1894,7 @@ var eN = {
     function i(e) {
       return E(e, eO)
     }
-    return ey(r ? i(e) : e, r ? i(t) : t)
+    return ev(r ? i(e) : e, r ? i(t) : t)
   },
   isText: e => (0, i.P)(e) && "string" == typeof e.text,
   isTextList: e => Array.isArray(e) && e.every(e => eN.isText(e)),
@@ -1999,11 +1998,11 @@ var eR = (e, t, n) => {
       case "merge_node":
         var {
           path: g
-        } = n, E = ei.get(e, g), b = el.previous(g), v = ei.get(e, b), y = ei.parent(e, g), O = g[g.length - 1];
-        if (eN.isText(E) && eN.isText(v)) v.text += E.text;
-        else if (eN.isText(E) || eN.isText(v)) throw Error('Cannot apply a "merge_node" operation at path ['.concat(g, "] to nodes of different interfaces: ").concat(ev.stringify(E), " ").concat(ev.stringify(v)));
-        else v.children.push(...E.children);
-        if (y.children.splice(O, 1), t)
+        } = n, E = ei.get(e, g), b = el.previous(g), y = ei.get(e, b), v = ei.parent(e, g), O = g[g.length - 1];
+        if (eN.isText(E) && eN.isText(y)) y.text += E.text;
+        else if (eN.isText(E) || eN.isText(y)) throw Error('Cannot apply a "merge_node" operation at path ['.concat(g, "] to nodes of different interfaces: ").concat(ey.stringify(E), " ").concat(ey.stringify(y)));
+        else y.children.push(...E.children);
+        if (v.children.splice(O, 1), t)
           for (var [I, S] of eg.points(t)) t[S] = ef.transform(I, n);
         break;
       case "move_node":
@@ -2073,7 +2072,7 @@ var eR = (e, t, n) => {
         if (null == es) t = es;
         else {
           if (null == t) {
-            if (!eg.isRange(es)) throw Error('Cannot apply an incomplete "set_selection" operation properties '.concat(ev.stringify(es), " when there is no current selection."));
+            if (!eg.isRange(es)) throw Error('Cannot apply an incomplete "set_selection" operation properties '.concat(ey.stringify(es), " when there is no current selection."));
             t = eC({}, es)
           }
           for (var ec in es) {
@@ -2096,9 +2095,9 @@ var eR = (e, t, n) => {
           eE = ei.parent(e, e_),
           eb = e_[e_.length - 1];
         if (eN.isText(em)) {
-          var ey = em.text.slice(0, ep),
+          var ev = em.text.slice(0, ep),
             eO = em.text.slice(ep);
-          em.text = ey, ed = eC(eC({}, eh), {}, {
+          em.text = ev, ed = eC(eC({}, eh), {}, {
             text: eO
           })
         } else {
@@ -2164,7 +2163,7 @@ var eM = {
         } = n;
         if (ei.isNode(t) && (t = [t]), 0 !== t.length) {
           var [c] = t;
-          if (a || (a = e.selection ? e.selection : e.children.length > 0 ? $.end(e, []) : [0], l = !0), null == l && (l = !1), eg.isRange(a)) {
+          if (a || (a = e.selection ? e.selection : e.children.length > 0 ? $.end(e, []) : [0], l = !0), null == l && (l = !1), eg.isRange(a))
             if (r || (a = $.unhangRange(e, a, {
                 voids: i
               })), eg.isCollapsed(a)) a = a.anchor;
@@ -2173,9 +2172,7 @@ var eM = {
               eW.delete(e, {
                 at: a
               }), a = d.unref()
-            }
-          }
-          if (ef.isPoint(a)) {
+            } if (ef.isPoint(a)) {
             null == s && (s = eN.isText(c) ? e => eN.isText(e) : e.isInline(c) ? t => eN.isText(t) || $.isInline(e, t) : t => K.isElement(t) && $.isBlock(e, t));
             var [f] = $.nodes(e, {
               at: a.path,
@@ -2200,16 +2197,16 @@ var eM = {
               at: g
             }))) {
             for (var b of t) {
-              var v = g.concat(E);
+              var y = g.concat(E);
               E++, e.apply({
                 type: "insert_node",
-                path: v,
+                path: y,
                 node: b
               }), a = el.next(a)
             }
             if (a = el.previous(a), l) {
-              var y = $.end(e, a);
-              y && eW.select(e, y)
+              var v = $.end(e, a);
+              v && eW.select(e, v)
             }
           }
         }
@@ -2225,56 +2222,59 @@ var eM = {
         } = t, {
           match: o
         } = t;
-        if (null == o && (o = el.isPath(n) ? eU(e, n) : t => K.isElement(t) && $.isBlock(e, t)), n)
-          for (var a of Array.from($.nodes(e, {
+        if (null == o && (o = el.isPath(n) ? eU(e, n) : t => K.isElement(t) && $.isBlock(e, t)), n) {
+          var a = $.nodes(e, {
               at: n,
               match: o,
               mode: r,
               voids: i
-            }), t => {
+            }),
+            s = Array.from(a, t => {
               var [, n] = t;
               return $.pathRef(e, n)
-            })) {
-            var s = a.unref();
-            if (s.length < 2) throw Error("Cannot lift node at a path [".concat(s, "] because it has a depth of less than `2`."));
-            var [l, c] = $.node(e, el.parent(s)), u = s[s.length - 1], {
-              length: d
-            } = l.children;
-            if (1 === d) {
-              var f = el.next(c);
+            });
+          for (var l of s) {
+            var c = l.unref();
+            if (c.length < 2) throw Error("Cannot lift node at a path [".concat(c, "] because it has a depth of less than `2`."));
+            var [u, d] = $.node(e, el.parent(c)), f = c[c.length - 1], {
+              length: _
+            } = u.children;
+            if (1 === _) {
+              var p = el.next(d);
               eW.moveNodes(e, {
-                at: s,
-                to: f,
+                at: c,
+                to: p,
                 voids: i
               }), eW.removeNodes(e, {
-                at: c,
+                at: d,
                 voids: i
               })
-            } else if (0 === u) eW.moveNodes(e, {
-              at: s,
-              to: c,
+            } else if (0 === f) eW.moveNodes(e, {
+              at: c,
+              to: d,
               voids: i
             });
-            else if (u === d - 1) {
-              var _ = el.next(c);
+            else if (f === _ - 1) {
+              var h = el.next(d);
               eW.moveNodes(e, {
-                at: s,
-                to: _,
+                at: c,
+                to: h,
                 voids: i
               })
             } else {
-              var p = el.next(s),
-                h = el.next(c);
+              var m = el.next(c),
+                g = el.next(d);
               eW.splitNodes(e, {
-                at: p,
+                at: m,
                 voids: i
               }), eW.moveNodes(e, {
-                at: s,
-                to: h,
+                at: c,
+                to: g,
                 voids: i
               })
             }
           }
+        }
       })
     },
     mergeNodes(e) {
@@ -2289,25 +2289,22 @@ var eM = {
             voids: s = !1,
             mode: l = "lowest"
           } = t;
-        if (!!o) {
-          if (null == i) {
+        if (o) {
+          if (null == i)
             if (el.isPath(o)) {
               var [c] = $.parent(e, o);
               i = e => c.children.includes(e)
-            } else i = t => K.isElement(t) && $.isBlock(e, t)
-          }
+            } else i = t => K.isElement(t) && $.isBlock(e, t);
           if (!a && eg.isRange(o) && (o = $.unhangRange(e, o, {
               voids: s
-            })), eg.isRange(o)) {
+            })), eg.isRange(o))
             if (eg.isCollapsed(o)) o = o.anchor;
             else {
               var [, u] = eg.edges(o), d = $.pointRef(e, u);
               eW.delete(e, {
                 at: o
               }), o = d.unref(), null == t.at && eW.select(e, o)
-            }
-          }
-          var [f] = $.nodes(e, {
+            } var [f] = $.nodes(e, {
             at: o,
             match: i,
             voids: s,
@@ -2322,14 +2319,14 @@ var eM = {
             var [p, h] = f, [m, g] = _;
             if (0 !== h.length && 0 !== g.length) {
               var b = el.next(g),
-                v = el.common(h, g),
-                y = el.isSibling(h, g),
+                y = el.common(h, g),
+                v = el.isSibling(h, g),
                 O = Array.from($.levels(e, {
                   at: h
                 }), e => {
                   var [t] = e;
                   return t
-                }).slice(v.length).slice(0, -1),
+                }).slice(y.length).slice(0, -1),
                 I = $.above(e, {
                   at: h,
                   mode: "highest",
@@ -2342,8 +2339,8 @@ var eM = {
               } else if (K.isElement(p) && K.isElement(m)) {
                 var T = E(p, eD);
                 r = m.children.length, n = T
-              } else throw Error("Cannot merge the node at path [".concat(h, "] with the previous sibling because it is not the same kind: ").concat(ev.stringify(p), " ").concat(ev.stringify(m)));
-              y || eW.moveNodes(e, {
+              } else throw Error("Cannot merge the node at path [".concat(h, "] with the previous sibling because it is not the same kind: ").concat(ey.stringify(p), " ").concat(ey.stringify(m)));
+              v || eW.moveNodes(e, {
                 at: h,
                 to: b,
                 voids: s
@@ -2376,23 +2373,25 @@ var eM = {
         } = t;
         if (r) {
           null == a && (a = el.isPath(r) ? eU(e, r) : t => K.isElement(t) && $.isBlock(e, t));
-          var s = $.pathRef(e, n);
-          for (var l of Array.from($.nodes(e, {
+          var s = $.pathRef(e, n),
+            l = $.nodes(e, {
               at: r,
               match: a,
               mode: i,
               voids: o
-            }), t => {
+            }),
+            c = Array.from(l, t => {
               var [, n] = t;
               return $.pathRef(e, n)
-            })) {
-            var c = l.unref(),
-              u = s.current;
-            0 !== c.length && e.apply({
+            });
+          for (var u of c) {
+            var d = u.unref(),
+              f = s.current;
+            0 !== d.length && e.apply({
               type: "move_node",
-              path: c,
-              newPath: u
-            }), s.current && el.isSibling(u, c) && el.isAfter(u, c) && (s.current = el.next(s.current))
+              path: d,
+              newPath: f
+            }), s.current && el.isSibling(f, d) && el.isAfter(f, d) && (s.current = el.next(s.current))
           }
           s.unref()
         }
@@ -2409,28 +2408,32 @@ var eM = {
           at: o = e.selection,
           match: a
         } = t;
-        if (o)
-          for (var s of (null == a && (a = el.isPath(o) ? eU(e, o) : t => K.isElement(t) && $.isBlock(e, t)), !n && eg.isRange(o) && (o = $.unhangRange(e, o, {
-              voids: r
-            })), Array.from($.nodes(e, {
+        if (o) {
+          null == a && (a = el.isPath(o) ? eU(e, o) : t => K.isElement(t) && $.isBlock(e, t)), !n && eg.isRange(o) && (o = $.unhangRange(e, o, {
+            voids: r
+          }));
+          var s = $.nodes(e, {
               at: o,
               match: a,
               mode: i,
               voids: r
-            }), t => {
+            }),
+            l = Array.from(s, t => {
               var [, n] = t;
               return $.pathRef(e, n)
-            }))) {
-            var l = s.unref();
-            if (l) {
-              var [c] = $.node(e, l);
+            });
+          for (var c of l) {
+            var u = c.unref();
+            if (u) {
+              var [d] = $.node(e, u);
               e.apply({
                 type: "remove_node",
-                path: l,
-                node: c
+                path: u,
+                node: d
               })
             }
           }
+        }
       })
     },
     setNodes(e, t) {
@@ -2481,15 +2484,15 @@ var eM = {
               voids: u
             }))) {
             var b = {},
-              v = {};
+              y = {};
             if (0 !== E.length) {
-              var y = !1;
-              for (var O in t) "children" !== O && "text" !== O && o(t[O], g[O]) && (y = !0, g.hasOwnProperty(O) && (b[O] = g[O]), a ? null != t[O] && (v[O] = a(g[O], t[O])) : null != t[O] && (v[O] = t[O]));
-              y && e.apply({
+              var v = !1;
+              for (var O in t) "children" !== O && "text" !== O && o(t[O], g[O]) && (v = !0, g.hasOwnProperty(O) && (b[O] = g[O]), a ? null != t[O] && (y[O] = a(g[O], t[O])) : null != t[O] && (y[O] = t[O]));
+              v && e.apply({
                 type: "set_node",
                 path: E,
                 properties: b,
-                newProperties: v
+                newProperties: y
               })
             }
           }
@@ -2537,14 +2540,14 @@ var eM = {
               if (K.isElement(g) && e.isInline(g)) {
                 var b = $.after(e, E);
                 if (!b) {
-                  var v = {
+                  var y = {
                       text: ""
                     },
-                    y = el.next(E);
-                  eW.insertNodes(e, v, {
-                    at: y,
+                    v = el.next(E);
+                  eW.insertNodes(e, y, {
+                    at: v,
                     voids: o
-                  }), b = $.point(e, y)
+                  }), b = $.point(e, v)
                 }
                 s = b, c = !0
               }
@@ -2581,7 +2584,7 @@ var eM = {
               eW.select(e, D)
             }
           } finally {
-            _.unref(), null === (r = n) || void 0 === r || r.unref()
+            _.unref(), null == (r = n) || r.unref()
           }
         }
       })
@@ -2607,16 +2610,17 @@ var eM = {
         if (o) {
           null == a && (a = el.isPath(o) ? eU(e, o) : t => K.isElement(t) && $.isBlock(e, t)), el.isPath(o) && (o = $.range(e, o));
           var s = eg.isRange(o) ? $.rangeRef(e, o) : null,
-            l = Array.from($.nodes(e, {
+            l = $.nodes(e, {
               at: o,
               match: a,
               mode: n,
               voids: i
-            }), t => {
+            }),
+            c = Array.from(l, t => {
               var [, n] = t;
               return $.pathRef(e, n)
             }).reverse(),
-            c = function(t) {
+            u = function(t) {
               var n = t.unref(),
                 [o] = $.node(e, n),
                 a = $.range(e, n);
@@ -2626,7 +2630,7 @@ var eM = {
                 voids: i
               })
             };
-          for (var u of l) c(u);
+          for (var d of c) u(d);
           s && s.unref()
         }
       })
@@ -2657,22 +2661,23 @@ var eM = {
               voids: o
             }), s = u.unref(), null == n.at && eW.select(e, s)
           }
-          for (var [, d] of Array.from($.nodes(e, {
-              at: s,
-              match: e.isInline(t) ? t => K.isElement(t) && $.isBlock(e, t) : e => $.isEditor(e),
-              mode: "lowest",
-              voids: o
-            }))) {
-            var f = eg.isRange(s) ? eg.intersection(s, $.range(e, d)) : s;
-            if (f) {
-              var _ = Array.from($.nodes(e, {
-                at: f,
+          var d = Array.from($.nodes(e, {
+            at: s,
+            match: e.isInline(t) ? t => K.isElement(t) && $.isBlock(e, t) : e => $.isEditor(e),
+            mode: "lowest",
+            voids: o
+          }));
+          for (var [, f] of d) {
+            var _ = eg.isRange(s) ? eg.intersection(s, $.range(e, f)) : s;
+            if (_) {
+              var p = Array.from($.nodes(e, {
+                at: _,
                 match: a,
                 mode: r,
                 voids: o
               }));
-              if (_.length > 0 && "continue" === function() {
-                  var [n] = _, r = _[_.length - 1], [, i] = n, [, a] = r;
+              if (p.length > 0 && "continue" === function() {
+                  var [n] = p, r = p[p.length - 1], [, i] = n, [, a] = r;
                   if (0 === i.length && 0 === a.length) return "continue";
                   var s = el.equals(i, a) ? el.parent(i) : el.common(i, a),
                     l = $.range(e, i, a),
@@ -2703,7 +2708,7 @@ var eM = {
       var n = t;
       return !!$.isVoid(e, t) || 1 === n.children.length && ek(e, n.children[0])
     }
-    return !$.isEditor(t)
+    return !$.isEditor(t) && !0
   },
   ej = (e, t) => {
     if (eg.isCollapsed(t)) return t.anchor;
@@ -2807,11 +2812,8 @@ var eF = {
       var {
         selection: n
       } = e;
-      if (t = $.range(e, t), n) {
-        eW.setSelection(e, t);
-        return
-      }
-      if (!eg.isRange(t)) throw Error("When setting the selection and the current selection is `null` you must provide at least an `anchor` and `focus`, but you passed: ".concat(ev.stringify(t)));
+      if (t = $.range(e, t), n) return void eW.setSelection(e, t);
+      if (!eg.isRange(t)) throw Error("When setting the selection and the current selection is `null` you must provide at least an `anchor` and `focus`, but you passed: ".concat(ey.stringify(t)));
       e.apply({
         type: "set_selection",
         properties: n,
@@ -2887,13 +2889,10 @@ var eF = {
               }, l = !0
             }
           }
-          if (el.isPath(s)) {
-            eW.removeNodes(e, {
-              at: s,
-              voids: a
-            });
-            return
-          }
+          if (el.isPath(s)) return void eW.removeNodes(e, {
+            at: s,
+            voids: a
+          });
           if (!eg.isCollapsed(s)) {
             if (!l) {
               var [, p] = eg.edges(s), h = $.end(e, []);
@@ -2909,7 +2908,7 @@ var eF = {
               match: t => K.isElement(t) && $.isBlock(e, t),
               at: g,
               voids: a
-            }), v = E && b && !el.equals(E[1], b[1]), y = el.equals(m.path, g.path), O = a ? null : $.void(e, {
+            }), y = E && b && !el.equals(E[1], b[1]), v = el.equals(m.path, g.path), O = a ? null : $.void(e, {
               at: m,
               mode: "highest"
             }), I = a ? null : $.void(e, {
@@ -2939,7 +2938,7 @@ var eF = {
               w = $.pointRef(e, m),
               D = $.pointRef(e, g),
               L = "";
-            if (!y && !O) {
+            if (!v && !O) {
               var x = w.current,
                 [M] = $.leaf(e, x),
                 {
@@ -2965,7 +2964,7 @@ var eF = {
                 {
                   path: F
                 } = G,
-                V = y ? m.offset : 0,
+                V = v ? m.offset : 0,
                 Z = B.text.slice(V, g.offset);
               Z.length > 0 && (e.apply({
                 type: "remove_text",
@@ -2973,7 +2972,7 @@ var eF = {
                 offset: V,
                 text: Z
               }), L = Z)
-            }!y && v && D.current && w.current && eW.mergeNodes(e, {
+            }!v && y && D.current && w.current && eW.mergeNodes(e, {
               at: D.current,
               hanging: !0,
               voids: a
@@ -2996,95 +2995,107 @@ var eF = {
           {
             at: a = e.selection
           } = n;
-        if (t.length && a) {
-          if (eg.isRange(a)) {
-            if (i || (a = $.unhangRange(e, a, {
-                voids: o
-              })), eg.isCollapsed(a)) a = a.anchor;
-            else {
-              var [, s] = eg.edges(a);
-              if (!o && $.void(e, {
-                  at: s
-                })) return;
-              var l = $.pointRef(e, s);
-              eW.delete(e, {
+        if (t.length) {
+          if (a) {
+            if (eg.isRange(a))
+              if (i || (a = $.unhangRange(e, a, {
+                  voids: o
+                })), eg.isCollapsed(a)) a = a.anchor;
+              else {
+                var [, s] = eg.edges(a);
+                if (!o && $.void(e, {
+                    at: s
+                  })) return;
+                var l = $.pointRef(e, s);
+                eW.delete(e, {
+                  at: a
+                }), a = l.unref()
+              }
+            else el.isPath(a) && (a = $.start(e, a));
+            if (!(!o && $.void(e, {
                 at: a
-              }), a = l.unref()
-            }
-          } else el.isPath(a) && (a = $.start(e, a));
-          if (!(!o && $.void(e, {
-              at: a
-            }))) {
-            var c = $.above(e, {
-              at: a,
-              match: t => K.isElement(t) && $.isInline(e, t),
-              mode: "highest",
-              voids: o
-            });
-            if (c) {
-              var [, u] = c;
-              $.isEnd(e, a, u) ? a = $.after(e, u) : $.isStart(e, a, u) && (a = $.before(e, u))
-            }
-            var [, d] = $.above(e, {
-              match: t => K.isElement(t) && $.isBlock(e, t),
-              at: a,
-              voids: o
-            }), f = $.isStart(e, a, d), _ = $.isEnd(e, a, d), p = f && _, h = !f || f && _, m = !_, [, g] = ei.first({
-              children: t
-            }, []), [, E] = ei.last({
-              children: t
-            }, []), b = [], v = t => {
-              var [n, r] = t;
-              return 0 !== r.length && (!!p || !(h && el.isAncestor(r, g) && K.isElement(n) && !e.isVoid(n) && !e.isInline(n) || m && el.isAncestor(r, E) && K.isElement(n) && !e.isVoid(n) && !e.isInline(n)))
-            };
-            for (var y of ei.nodes({
-                children: t
-              }, {
-                pass: v
-              })) v(y) && b.push(y);
-            var O = [],
-              I = [],
-              S = [],
-              T = !0,
-              N = !1;
-            for (var [A] of b) K.isElement(A) && !e.isInline(A) ? (T = !1, N = !0, I.push(A)) : T ? O.push(A) : S.push(A);
-            var [C] = $.nodes(e, {
-              at: a,
-              match: t => eN.isText(t) || $.isInline(e, t),
-              mode: "highest",
-              voids: o
-            }), [, R] = C, P = $.isStart(e, a, R), w = $.isEnd(e, a, R), D = $.pathRef(e, _ && !S.length ? el.next(d) : d), L = $.pathRef(e, w ? el.next(R) : R);
-            eW.splitNodes(e, {
-              at: a,
-              match: t => N ? K.isElement(t) && $.isBlock(e, t) : eN.isText(t) || $.isInline(e, t),
-              mode: N ? "lowest" : "highest",
-              always: N && (!f || O.length > 0) && (!_ || S.length > 0),
-              voids: o
-            });
-            var x = $.pathRef(e, !P || P && w ? el.next(R) : R);
-            if (eW.insertNodes(e, O, {
-                at: x.current,
+              }))) {
+              var c = $.above(e, {
+                at: a,
+                match: t => K.isElement(t) && $.isInline(e, t),
+                mode: "highest",
+                voids: o
+              });
+              if (c) {
+                var [, u] = c;
+                $.isEnd(e, a, u) ? a = $.after(e, u) : $.isStart(e, a, u) && (a = $.before(e, u))
+              }
+              var d = $.above(e, {
+                  match: t => K.isElement(t) && $.isBlock(e, t),
+                  at: a,
+                  voids: o
+                }),
+                [, f] = d,
+                _ = $.isStart(e, a, f),
+                p = $.isEnd(e, a, f),
+                h = _ && p,
+                m = !_ || _ && p,
+                g = !p,
+                [, E] = ei.first({
+                  children: t
+                }, []),
+                [, b] = ei.last({
+                  children: t
+                }, []),
+                y = [],
+                v = t => {
+                  var [n, r] = t;
+                  return 0 !== r.length && (!!h || !(m && el.isAncestor(r, E) && K.isElement(n) && !e.isVoid(n) && !e.isInline(n) || g && el.isAncestor(r, b) && K.isElement(n) && !e.isVoid(n) && !e.isInline(n)))
+                };
+              for (var O of ei.nodes({
+                  children: t
+                }, {
+                  pass: v
+                })) v(O) && y.push(O);
+              var I = [],
+                S = [],
+                T = [],
+                N = !0,
+                A = !1;
+              for (var [C] of y) K.isElement(C) && !e.isInline(C) ? (N = !1, A = !0, S.push(C)) : N ? I.push(C) : T.push(C);
+              var [R] = $.nodes(e, {
+                at: a,
                 match: t => eN.isText(t) || $.isInline(e, t),
                 mode: "highest",
                 voids: o
-              }), p && !O.length && I.length && !S.length && eW.delete(e, {
-                at: d,
+              }), [, P] = R, w = $.isStart(e, a, P), D = $.isEnd(e, a, P), L = $.pathRef(e, p && !T.length ? el.next(f) : f), x = $.pathRef(e, D ? el.next(P) : P);
+              eW.splitNodes(e, {
+                at: a,
+                match: t => A ? K.isElement(t) && $.isBlock(e, t) : eN.isText(t) || $.isInline(e, t),
+                mode: A ? "lowest" : "highest",
+                always: A && (!_ || I.length > 0) && (!p || T.length > 0),
                 voids: o
-              }), eW.insertNodes(e, I, {
-                at: D.current,
-                match: t => K.isElement(t) && $.isBlock(e, t),
-                mode: "lowest",
-                voids: o
-              }), eW.insertNodes(e, S, {
-                at: L.current,
-                match: t => eN.isText(t) || $.isInline(e, t),
-                mode: "highest",
-                voids: o
-              }), !n.at && (S.length > 0 && L.current ? r = el.previous(L.current) : I.length > 0 && D.current ? r = el.previous(D.current) : x.current && (r = el.previous(x.current)), r)) {
-              var M = $.end(e, r);
-              eW.select(e, M)
+              });
+              var M = $.pathRef(e, !w || w && D ? el.next(P) : P);
+              if (eW.insertNodes(e, I, {
+                  at: M.current,
+                  match: t => eN.isText(t) || $.isInline(e, t),
+                  mode: "highest",
+                  voids: o
+                }), h && !I.length && S.length && !T.length && eW.delete(e, {
+                  at: f,
+                  voids: o
+                }), eW.insertNodes(e, S, {
+                  at: L.current,
+                  match: t => K.isElement(t) && $.isBlock(e, t),
+                  mode: "lowest",
+                  voids: o
+                }), eW.insertNodes(e, T, {
+                  at: x.current,
+                  match: t => eN.isText(t) || $.isInline(e, t),
+                  mode: "highest",
+                  voids: o
+                }), !n.at && (T.length > 0 && x.current ? r = el.previous(x.current) : S.length > 0 && L.current ? r = el.previous(L.current) : M.current && (r = el.previous(M.current)), r)) {
+                var k = $.end(e, r);
+                eW.select(e, k)
+              }
+              M.unref(), L.unref(), x.unref()
             }
-            x.unref(), D.unref(), L.unref()
           }
         }
       })
@@ -3098,7 +3109,7 @@ var eF = {
           at: i = e.selection
         } = n;
         if (i) {
-          if (el.isPath(i) && (i = $.range(e, i)), eg.isRange(i)) {
+          if (el.isPath(i) && (i = $.range(e, i)), eg.isRange(i))
             if (eg.isCollapsed(i)) i = i.anchor;
             else {
               var o = eg.end(i);
@@ -3118,9 +3129,7 @@ var eF = {
                 anchor: i,
                 focus: i
               })
-            }
-          }
-          if (!(!r && $.void(e, {
+            } if (!(!r && $.void(e, {
               at: i
             }))) {
             var {

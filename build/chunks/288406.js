@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(334920),
   f = n(768581),
   _ = n(185923),
-  p = n(406709);
+  p = n(385491);
 let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numNonDiversitySprites / _.DC.NonDiversityPerRow), "px")),
   m = l().memoize(e => "".concat(e * _.DC.DiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numDiversitySprites / _.DC.DiversityPerRow), "px")),
   g = (e, t, r) => {
@@ -53,7 +53,7 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
           "aria-label": l,
           src: i,
           size: n,
-          alt: null !== (e = t.allNamesString) && void 0 !== e ? e : ""
+          alt: null != (e = t.allNamesString) ? e : ""
         }) : null
       }
       return (0, r.jsx)("div", {

@@ -86,8 +86,8 @@ function E(e, t) {
   return r
 }
 var b = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g,
-  v = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g,
-  y = /^'([^]*?)'?$/,
+  y = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g,
+  v = /^'([^]*?)'?$/,
   O = /''/g,
   I = /\S/,
   S = /[a-zA-Z]/;
@@ -95,22 +95,24 @@ var b = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g,
 function T(e, t, n, g) {
   (0, d.Z)(3, arguments);
   var E = String(e),
-    y = String(t),
+    v = String(t),
     O = (0, p.j)(),
-    T = null !== (R = null !== (P = null == g ? void 0 : g.locale) && void 0 !== P ? P : O.locale) && void 0 !== R ? R : r.Z;
+    T = null != (R = null != (P = null == g ? void 0 : g.locale) ? P : O.locale) ? R : r.Z;
   if (!T.match) throw RangeError("locale must contain match property");
-  var A = (0, u.Z)(null !== (w = null !== (D = null !== (L = null !== (x = null == g ? void 0 : g.firstWeekContainsDate) && void 0 !== x ? x : null == g ? void 0 : null === (M = g.locale) || void 0 === M ? void 0 : null === (k = M.options) || void 0 === k ? void 0 : k.firstWeekContainsDate) && void 0 !== L ? L : O.firstWeekContainsDate) && void 0 !== D ? D : null === (j = O.locale) || void 0 === j ? void 0 : null === (U = j.options) || void 0 === U ? void 0 : U.firstWeekContainsDate) && void 0 !== w ? w : 1);
+  var A = (0, u.Z)(null != (w = null != (D = null != (L = null != (x = null == g ? void 0 : g.firstWeekContainsDate) ? x : null == g || null == (M = g.locale) || null == (k = M.options) ? void 0 : k.firstWeekContainsDate) ? L : O.firstWeekContainsDate) ? D : null == (j = O.locale) || null == (U = j.options) ? void 0 : U.firstWeekContainsDate) ? w : 1);
   if (!(A >= 1 && A <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  var C = (0, u.Z)(null !== (G = null !== (B = null !== (F = null !== (V = null == g ? void 0 : g.weekStartsOn) && void 0 !== V ? V : null == g ? void 0 : null === (Z = g.locale) || void 0 === Z ? void 0 : null === (H = Z.options) || void 0 === H ? void 0 : H.weekStartsOn) && void 0 !== F ? F : O.weekStartsOn) && void 0 !== B ? B : null === (W = O.locale) || void 0 === W ? void 0 : null === (Y = W.options) || void 0 === Y ? void 0 : Y.weekStartsOn) && void 0 !== G ? G : 0);
+  var C = (0, u.Z)(null != (G = null != (B = null != (F = null != (V = null == g ? void 0 : g.weekStartsOn) ? V : null == g || null == (Z = g.locale) || null == (H = Z.options) ? void 0 : H.weekStartsOn) ? F : O.weekStartsOn) ? B : null == (W = O.locale) || null == (Y = W.options) ? void 0 : Y.weekStartsOn) ? G : 0);
   if (!(C >= 0 && C <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
-  if ("" === y) return "" === E ? (0, o.default)(n) : new Date(NaN);
+  if ("" === v)
+    if ("" === E) return (0, o.default)(n);
+    else return new Date(NaN);
   var R, P, w, D, L, x, M, k, j, U, G, B, F, V, Z, H, W, Y, K, z = {
       firstWeekContainsDate: A,
       weekStartsOn: C,
       locale: T
     },
     q = [new f.GT],
-    Q = y.match(v).map(function(e) {
+    Q = v.match(y).map(function(e) {
       var t = e[0];
       return t in s.Z ? (0, s.Z[t])(e, T.formatLong) : e
     }).join("").match(b),
@@ -119,7 +121,7 @@ function T(e, t, n, g) {
   try {
     var $ = function() {
       var t = K.value;
-      !(null != g && g.useAdditionalWeekYearTokens) && (0, c.Do)(t) && (0, c.qp)(t, y, e), !(null != g && g.useAdditionalDayOfYearTokens) && (0, c.Iu)(t) && (0, c.qp)(t, y, e);
+      !(null != g && g.useAdditionalWeekYearTokens) && (0, c.Do)(t) && (0, c.qp)(t, v, e), !(null != g && g.useAdditionalDayOfYearTokens) && (0, c.Iu)(t) && (0, c.qp)(t, v, e);
       var n = t[0],
         r = _.f[n];
       if (r) {
@@ -193,5 +195,5 @@ function T(e, t, n, g) {
 }
 
 function N(e) {
-  return e.match(y)[1].replace(O, "'")
+  return e.match(v)[1].replace(O, "'")
 }

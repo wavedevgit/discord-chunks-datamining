@@ -20,10 +20,10 @@ var i = n(120356),
   h = n(981631),
   m = n(474936),
   g = n(388032),
-  E = n(296260),
-  b = n(400837);
+  E = n(680278),
+  b = n(910307);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,14 +32,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -85,7 +85,7 @@ let T = {
       children: t,
       confettiTriggerRef: n,
       guild: i,
-      isProgressBarAnimationComplete: v,
+      isProgressBarAnimationComplete: y,
       setConfettiCount: O,
       setShouldFireConfetti: N,
       tier: A,
@@ -93,14 +93,14 @@ let T = {
       totalAvailableBoostsCount: R
     } = e, {
       analyticsLocations: P
-    } = (0, l.ZP)(), w = (0, c.Z)(), D = (0, u.Z)(i.id).available, L = h.oCV[A], x = L - D, M = A <= C || v, k = M && A <= i.premiumTier, j = M && A < i.premiumTier, U = M && A === i.premiumTier, G = i.premiumTier < A && R >= L, {
+    } = (0, l.ZP)(), w = (0, c.Z)(), D = (0, u.Z)(i.id).available, L = h.oCV[A], x = L - D, M = A <= C || y, k = M && A <= i.premiumTier, j = M && A < i.premiumTier, U = M && A === i.premiumTier, G = i.premiumTier < A && R >= L, {
       scaleFactor: B
     } = (0, s.q_F)({
       from: {
         scaleFactor: 0
       },
       to: {
-        scaleFactor: C >= A || v && C + 1 === A || v && -1 === C && A === h.Eu4.NONE ? 1 : 0
+        scaleFactor: C >= A || y && C + 1 === A || y && -1 === C && A === h.Eu4.NONE ? 1 : 0
       },
       config: {
         tension: 360,
@@ -124,7 +124,7 @@ let T = {
     });
 
     function V() {
-      M && !G && (0, _.u)({
+      M && (G || (0, _.u)({
         analyticsLocations: P,
         analyticsLocation: {
           page: h.ZY5.PREMIUM_GUILD_USER_MODAL,
@@ -134,7 +134,7 @@ let T = {
         },
         numberOfBoostsToAdd: x,
         guild: i
-      })
+      }))
     }
     let Z = !k && w.fractionalState === m.a$.NONE,
       H = Z ? s.P3F : "div",
@@ -158,7 +158,7 @@ let T = {
         })
       }),
       shouldShow: A !== h.Eu4.NONE,
-      children: e => (0, r.jsxs)(H, I(y({
+      children: e => (0, r.jsxs)(H, I(v({
         className: o()(b.progressBarMarker, {
           [b.progressBarMarkerUnlocked]: k,
           [b.progressBarMarkerLocked]: Z,

@@ -72,7 +72,7 @@ let u = i.createContext(null),
       roleId: c,
       sourceSessionId: d,
       showGuildProfile: f = !0
-    } = e, _ = null === (t = i.useContext(u)) || void 0 === t ? void 0 : t.sessionId;
+    } = e, _ = null == (t = i.useContext(u)) ? void 0 : t.sessionId;
     return i.useMemo(() => ({
       sessionId: (0, o.Z)(),
       sourceSessionId: null != d ? d : _,

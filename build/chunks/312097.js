@@ -59,25 +59,25 @@ function h(e) {
     } = e,
     g = _(e, ["location", "contextKey"]);
   let E = (0, o.Kc)(h),
-    b = null === (d = g.items[null !== (p = g.startingIndex) && void 0 !== p ? p : 0]) || void 0 === d ? void 0 : null === (t = d.sourceMetadata) || void 0 === t ? void 0 : t.message,
-    v = a.Z.getChannel(null == b ? void 0 : b.channel_id);
+    b = null == (d = g.items[null != (p = g.startingIndex) ? p : 0]) || null == (t = d.sourceMetadata) ? void 0 : t.message,
+    y = a.Z.getChannel(null == b ? void 0 : b.channel_id);
   (0, l.fS)({
-    guildId: null == v ? void 0 : v.guild_id,
-    channelId: null == v ? void 0 : v.id,
-    channelType: null == v ? void 0 : v.type,
+    guildId: null == y ? void 0 : y.guild_id,
+    channelId: null == y ? void 0 : y.id,
+    channelType: null == y ? void 0 : y.type,
     numMediaItems: g.items.length,
     source: h,
     hasMediaOptions: !g.shouldHideMediaOptions
   }), s.default.track(c.rMx.OPEN_MODAL, {
     type: c.jXE.MEDIA_VIEWER,
     source: h,
-    guild_id: null == v ? void 0 : v.guild_id,
-    channel_id: null == v ? void 0 : v.id,
-    channel_type: null == v ? void 0 : v.type
+    guild_id: null == y ? void 0 : y.guild_id,
+    channel_id: null == y ? void 0 : y.id,
+    channel_type: null == y ? void 0 : y.type
   }), (0, i.ZDy)(async () => {
     let {
       default: e
-    } = E ? await Promise.all([n.e("95477"), n.e("89590")]).then(n.bind(n, 97594)) : await n.e("87267").then(n.bind(n, 950120));
+    } = E ? await Promise.all([n.e("95477"), n.e("15820")]).then(n.bind(n, 97594)) : await n.e("87267").then(n.bind(n, 950120));
     return t => (0, r.jsx)(e, f({}, t, g))
   }, {
     modalKey: u.U,

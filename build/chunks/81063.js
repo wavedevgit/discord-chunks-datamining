@@ -47,10 +47,10 @@ let d = "mp",
   },
   b = {};
 
-function v(e) {
+function y(e) {
   return Date.now() - e > f
 }
-async function y(e) {
+async function v(e) {
   let {
     body: t
   } = await o.tn.get({
@@ -67,7 +67,7 @@ async function y(e) {
 
 function O(e) {
   let t = s.Z.getApplicationAssets(e);
-  return null == t || v(t.lastUpdated) ? y(e) : Promise.resolve(t)
+  return null == t || y(t.lastUpdated) ? v(e) : Promise.resolve(t)
 }
 
 function I(e, t) {
@@ -78,14 +78,7 @@ function I(e, t) {
 function S(e, t, n) {
   if (null != t && t.includes(":")) {
     let [e, r] = t.split(":");
-    if (e === u.ABu.TWITCH) {
-      if (null == n || "number" == typeof n) {
-        new l.Z("ApplicationAssetUtils").warn("getAssetImage: size must === [number, number] for Twitch");
-        return
-      }
-      return E[u.ABu.TWITCH].deserialize(r, n)
-    }
-    return Object.prototype.hasOwnProperty.call(E, e) ? E[e].deserialize(r) : void 0
+    return e === u.ABu.TWITCH ? null == n || "number" == typeof n ? void new l.Z("ApplicationAssetUtils").warn("getAssetImage: size must === [number, number] for Twitch") : E[u.ABu.TWITCH].deserialize(r, n) : Object.prototype.hasOwnProperty.call(E, e) ? E[e].deserialize(r) : void 0
   }
   if (null == e || null == t) return;
   let r = Array.isArray(n) ? Math.max(...n) : n,
@@ -162,7 +155,7 @@ async function R(e, t) {
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
     assets: o
-  }), C(t, r, o, n)) ? y(e).then(() => R(e, t, n - 1)) : (a.Z.dispatch({
+  }), C(t, r, o, n)) ? v(e).then(() => R(e, t, n - 1)) : (a.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r)

@@ -21,8 +21,8 @@ var i = n(40851),
   g = n(715547),
   E = n(981631),
   b = n(477839),
-  v = n(388032),
-  y = n(884479);
+  y = n(388032),
+  v = n(622802);
 let O = e => {
   let {
     user: t,
@@ -50,7 +50,7 @@ function I(e) {
     onAction: i,
     onClose: f
   } = e;
-  return null != n && n.application_id === b.bO ? (n.buttons = [v.NW.string(y.Z["Fv/2Oz"])], n.metadata = {
+  return null != n && n.application_id === b.bO ? (n.buttons = [y.NW.string(v.Z["Fv/2Oz"])], n.metadata = {
     button_urls: [b.U8]
   }, (0, r.jsx)(O, {
     user: t,

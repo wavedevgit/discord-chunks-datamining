@@ -60,10 +60,7 @@ function E(e) {
 
 function b(e) {
   let t = l.Z.getBasicChannel(e.channelId);
-  if (null == t) {
-    g.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
-    return
-  }
+  if (null == t) return void g.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
   if (Math.random() > .1) return;
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
@@ -81,14 +78,14 @@ function b(e) {
   }))
 }
 
-function v(e) {
+function y(e) {
   let {
     optimistic: t,
     message: n
   } = e, r = n.nonce;
-  !t && null != r && O.recordGatewayResponse(r)
+  t || null == r || O.recordGatewayResponse(r)
 }
-class y extends i.ZP.Store {
+class v extends i.ZP.Store {
   recordMessageSendAttempt(e, t) {
     let n = {
       initialSendTimestamp: Date.now(),
@@ -123,7 +120,7 @@ class y extends i.ZP.Store {
     super(...e), _(this, "pendingMessages", new Map)
   }
 }
-let O = new y(o.Z, {
-    MESSAGE_CREATE: v
+let O = new v(o.Z, {
+    MESSAGE_CREATE: y
   }),
   I = O

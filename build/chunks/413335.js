@@ -74,8 +74,8 @@ function f(e) {
     } = e,
     _ = u(e, ["size", "color", "width", "height"]);
   let p = (0, o.m)(a),
-    h = null !== (t = null == p ? void 0 : p.width) && void 0 !== t ? t : d,
-    m = null !== (n = null == p ? void 0 : p.height) && void 0 !== n ? n : f;
+    h = null != (t = null == p ? void 0 : p.width) ? t : d,
+    m = null != (n = null == p ? void 0 : p.height) ? n : f;
   return (0, r.jsxs)("svg", c(s({
     width: h,
     height: m,

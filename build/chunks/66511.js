@@ -72,20 +72,16 @@ let h = () => {
       (0, i.ZD)(async () => {
         let {
           default: t
-        } = d ? await Promise.all([n.e("99916"), n.e("66921"), n.e("56936")]).then(n.bind(n, 309135)) : await Promise.all([n.e("99916"), n.e("80026"), n.e("92531"), n.e("99840")]).then(n.bind(n, 645264));
+        } = d ? await Promise.all([n.e("99916"), n.e("66921"), n.e("12492")]).then(n.bind(n, 309135)) : await Promise.all([n.e("99916"), n.e("80026"), n.e("92531"), n.e("16350")]).then(n.bind(n, 645264));
         return n => (0, r.jsx)(t, p(f({}, n), {
           guildId: e,
           inviteKey: o,
           onComplete: u,
           onClose: function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            if (!e) {
-              if (l.rb.getState().hasUnsubmittedChanges) {
-                (0, l.PE)(!0);
-                return
-              }
-              h()
-            }
+            if (!e)
+              if (l.rb.getState().hasUnsubmittedChanges) return void(0, l.PE)(!0);
+              else h();
             n.onClose()
           }
         }))
@@ -106,7 +102,7 @@ let h = () => {
       (0, i.ZD)(async () => {
         let {
           default: i
-        } = t ? await Promise.all([n.e("99916"), n.e("66921"), n.e("56936")]).then(n.bind(n, 309135)) : await Promise.all([n.e("99916"), n.e("80026"), n.e("92531"), n.e("99840")]).then(n.bind(n, 645264));
+        } = t ? await Promise.all([n.e("99916"), n.e("66921"), n.e("12492")]).then(n.bind(n, 309135)) : await Promise.all([n.e("99916"), n.e("80026"), n.e("92531"), n.e("16350")]).then(n.bind(n, 645264));
         return t => (0, r.jsx)(i, p(f({}, t), {
           guildId: e,
           isPreview: !0

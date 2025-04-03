@@ -30,7 +30,7 @@ function b(e) {
     pngLight: s = g,
     webmDark: c = p,
     webmLight: b = E
-  } = e, v = (0, l.vu)(), y = [(0, r.jsx)("source", {
+  } = e, y = (0, l.vu)(), v = [(0, r.jsx)("source", {
     src: i,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
@@ -43,25 +43,25 @@ function b(e) {
     alt: "",
     src: s
   }, "png")];
-  return (v > 52 || -1 === v) && (y.unshift((0, r.jsx)("source", {
+  return (y > 52 || -1 === y) && (v.unshift((0, r.jsx)("source", {
     src: c,
     type: "video/webm"
   }, "webm")), O.unshift((0, r.jsx)("source", {
     src: b,
     type: "video/webm"
-  }, "webm"))), (0, l.rO)() && (y.unshift((0, r.jsx)("source", {
+  }, "webm"))), (0, l.rO)() && (v.unshift((0, r.jsx)("source", {
     src: t,
     type: "video/mp4"
   }, "hevc")), O.unshift((0, r.jsx)("source", {
     src: n,
     type: "video/mp4"
   }, "hevc"))), {
-    [u.BRd.DARK]: y,
+    [u.BRd.DARK]: v,
     [u.BRd.LIGHT]: O
   }
 }
-let v = s.Z.getAppSpinnerSources(),
-  y = null != v ? b(v) : null,
+let y = s.Z.getAppSpinnerSources(),
+  v = null != y ? b(y) : null,
   O = b({}),
   I = e => {
     var t;
@@ -76,8 +76,8 @@ let v = s.Z.getAppSpinnerSources(),
     } = (0, a.TCT)(), {
       reducedMotion: p
     } = i.useContext(a.Sfi), h = O;
-    null != y && (h = y);
-    let m = null !== (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) && void 0 !== t ? t : h[u.BRd.DARK];
+    null != v && (h = v);
+    let m = null != (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,

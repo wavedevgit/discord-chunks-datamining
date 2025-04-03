@@ -67,7 +67,7 @@ function f(e) {
     paddingBottom: m = 0,
     getScrollerState: g,
     getAnchorId: E
-  } = e, b = (0, o.Z)(), v = (0, r.useRef)(d), [y] = (0, r.useState)(() => new i.Z), {
+  } = e, b = (0, o.Z)(), y = (0, r.useRef)(d), [v] = (0, r.useState)(() => new i.Z), {
     dirty: O,
     chunkStart: I,
     chunkEnd: S,
@@ -78,7 +78,7 @@ function f(e) {
     forceUpdate: b
   }), {
     items: N
-  } = v.current, A = null, {
+  } = y.current, A = null, {
     scrollTop: C
   } = g();
   for (let e of N) {
@@ -99,7 +99,7 @@ function f(e) {
       let e = Math.max(0, I * p);
       return null != f && e < f
     }, [p, I, f]),
-    P = (0, r.useMemo)(() => O > 0 ? v.current : (y.mergeProps({
+    P = (0, r.useMemo)(() => O > 0 ? y.current : (v.mergeProps({
       sectionHeight: n,
       rowHeight: s,
       footerHeight: c,
@@ -108,9 +108,9 @@ function f(e) {
       paddingTop: h,
       sections: t,
       getAnchorId: E
-    }), y.compute(Math.max(0, I * p), S * p)), [O, I, S, n, s, c, _, m, h, t, y, p, E]);
-  return (0, r.useLayoutEffect)(() => void(v.current = P)), u(l({}, P), {
-    listComputer: y,
+    }), v.compute(Math.max(0, I * p), S * p)), [O, I, S, n, s, c, _, m, h, t, v, p, E]);
+  return (0, r.useLayoutEffect)(() => void(y.current = P)), u(l({}, P), {
+    listComputer: v,
     forceUpdateOnChunkChange: T,
     anchor: A,
     isSidebarVisible: R

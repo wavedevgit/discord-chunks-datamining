@@ -42,10 +42,7 @@ class s {
   }
   process(e) {
     this._processing || (this._processing = !0, requestIdleCallback(t => {
-      if (t.timeRemaining() <= this._minimumTimeRemaining) {
-        this._processEnd();
-        return
-      }
+      if (t.timeRemaining() <= this._minimumTimeRemaining) return void this._processEnd();
       e.length > o && (e = e.slice(0, o)), a(e, this._languageHint).then(e => {
         this.language = e, this._processEnd(t.didTimeout)
       }, () => {

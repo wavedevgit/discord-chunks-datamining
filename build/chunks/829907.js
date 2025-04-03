@@ -31,7 +31,7 @@ function p(e) {
     return null == n ? c.ZP.GetWindowFullscreenTypeByPid(e) : c.ZP.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
   } catch (t) {
     var r;
-    return u.error("Error getting overlay fullscreen type for pid ".concat(e, ": ").concat(t)), null !== (r = null == n ? void 0 : n.fullscreenType) && void 0 !== r ? r : i.Jx.UNKNOWN
+    return u.error("Error getting overlay fullscreen type for pid ".concat(e, ": ").concat(t)), null != (r = null == n ? void 0 : n.fullscreenType) ? r : i.Jx.UNKNOWN
   }
 }
 
@@ -84,19 +84,19 @@ function E(e, t) {
 let b = {
     "1314682894106497096": (e, t, n) => E(e, t) ? i.Jx.FULLSCREEN : n
   },
-  v = {
+  y = {
     "762434991303950386": e => !0,
     "367827983903490050": e => !0
   },
-  y = 16,
+  v = 16,
   O = !0;
 async function I(e) {
   var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : y,
+  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v,
     r = await h(e, n),
     i = a.ZP.getGameForPID(e);
   if (null == i || null == i.name) return r;
-  let o = null === (t = l.Z.getGameByName(i.name)) || void 0 === t ? void 0 : t.id;
+  let o = null == (t = l.Z.getGameByName(i.name)) ? void 0 : t.id;
   if (null == o) return r;
   let s = b[o];
   return null != s ? s(e, i, r) : r
@@ -104,9 +104,9 @@ async function I(e) {
 
 function S(e) {
   var t;
-  let n = null === (t = l.Z.getGameByName(e.name)) || void 0 === t ? void 0 : t.id;
+  let n = null == (t = l.Z.getGameByName(e.name)) ? void 0 : t.id;
   if (null == n) return !1;
-  let r = v[n];
+  let r = y[n];
   return null != r && r(e)
 }
 

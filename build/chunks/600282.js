@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = {
       className: "string",
@@ -89,4 +89,3 @@ function t(e) {
     contains: [n, r, l, c, u, d, f, _]
   }
 }
-e.exports = t

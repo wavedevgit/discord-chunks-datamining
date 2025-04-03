@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = {
       begin: /<\/?[A-Za-z_]/,
@@ -163,4 +163,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

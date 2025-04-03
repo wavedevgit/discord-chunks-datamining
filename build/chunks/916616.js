@@ -17,11 +17,11 @@ var r = n(200651),
   p = n(981631),
   h = n(217702),
   m = n(388032),
-  g = n(114400),
+  g = n(402187),
   E = n(167969),
   b = n(557256);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -87,9 +87,9 @@ let N = i.forwardRef((e, t) => {
     placeholder: h,
     placeholderVersion: E,
     alt: b,
-    width: v,
+    width: y,
     height: O,
-    maxWidth: T = v,
+    maxWidth: T = y,
     maxHeight: N = O,
     minWidth: P = 0,
     minHeight: w = 0,
@@ -121,9 +121,9 @@ let N = i.forwardRef((e, t) => {
   } = e, Z = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
   let H = i.useRef(null),
     W = i.useRef(null);
-  if (1 === v && 1 === O) return null;
+  if (1 === y && 1 === O) return null;
   let Y = (0, d.Tj)({
-      width: v,
+      width: y,
       height: O,
       maxWidth: T,
       maxHeight: N,
@@ -153,7 +153,7 @@ let N = i.forwardRef((e, t) => {
   return z = null != z ? z : x, (0, r.jsx)(l.tEY, {
     ringTarget: H,
     focusTarget: W,
-    children: (0, r.jsxs)("div", I(y({
+    children: (0, r.jsxs)("div", I(v({
       ref: t,
       className: a()(g.imageWrapper, {
         [g.imageZoom]: M,
@@ -241,7 +241,7 @@ function P(e, t) {
         width: "100%", height: "100%", aspectRatio: "".concat(e.width, " / ").concat(e.height), display: "flex", maxHeight: "inherit"
       };
     case h.hV.RESPONSIVE:
-      return I(y({}, w(e)), {
+      return I(v({}, w(e)), {
         display: "flex"
       });
     default:

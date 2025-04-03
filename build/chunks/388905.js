@@ -31,7 +31,7 @@ var i = n(120356),
   _ = n(63063),
   p = n(981631),
   h = n(388032),
-  m = n(656288);
+  m = n(270313);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ function E(e) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,15 +65,15 @@ function b(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = a.qEK;
-null == y && (y = () => null);
+let v = a.qEK;
+null == v && (v = () => null);
 let O = e => {
     let {
       className: t,
@@ -132,7 +132,7 @@ let N = e => {
       src: n,
       size: i
     } = e;
-    return (0, r.jsx)(y, {
+    return (0, r.jsx)(v, {
       src: n,
       size: i,
       className: o()(m.inviteLargeIcon, t),
@@ -161,7 +161,7 @@ let C = e => {
     channel: n,
     size: i
   } = e;
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(v, {
     src: (0, s.x)(n),
     size: i,
     className: o()(m.inviteIcon, t),
@@ -185,8 +185,8 @@ let R = e => {
       maxLength: g,
       spellCheck: E,
       name: b,
-      description: v,
-      required: y,
+      description: y,
+      required: v,
       onFocus: O,
       onBlur: I
     } = e, S = (0, u.Dt)();
@@ -194,7 +194,7 @@ let R = e => {
       title: t,
       error: n,
       className: l,
-      required: y,
+      required: v,
       tag: "label",
       htmlFor: S,
       children: [(0, r.jsx)(a.oil, {
@@ -215,10 +215,10 @@ let R = e => {
         id: S,
         onFocus: O,
         onBlur: I
-      }), null != v ? (0, r.jsx)(a.R94, {
+      }), null != y ? (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
         className: m.description,
-        children: v
+        children: y
       }) : null]
     })
   },

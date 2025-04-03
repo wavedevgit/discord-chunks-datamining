@@ -29,28 +29,28 @@ let g = 2e3,
   E = new c.Z("EntityVersionsManager");
 class b extends s.Z {
   _initialize() {
-    a.Z.subscribe("CONNECTION_OPEN", y)
+    a.Z.subscribe("CONNECTION_OPEN", v)
   }
   _terminate() {
-    a.Z.unsubscribe("CONNECTION_OPEN", y)
+    a.Z.unsubscribe("CONNECTION_OPEN", v)
   }
   constructor(...e) {
     super(...e), m(this, "actions", {
       GUILD_CREATE: O,
-      DELETED_ENTITY_IDS: v
+      DELETED_ENTITY_IDS: y
     })
   }
 }
 
-function v(e) {
+function y(e) {
   var t;
-  let n = null === (t = _.Z.getGuild(e.guild_id)) || void 0 === t ? void 0 : t.name;
+  let n = null == (t = _.Z.getGuild(e.guild_id)) ? void 0 : t.name;
   E.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), o.ZP.Emitter.batched(() => {
     null != e.channels && N(e.guild_id, new Set(e.channels)), null != e.roles && A(e.guild_id, new Set(e.roles)), null != e.emojis && C(e.guild_id, new Set(e.emojis)), null != e.stickers && R(e.guild_id, new Set(e.stickers))
   })
 }
 
-function y() {
+function v() {
   l.Z.getAll().then(e => {
     e.forEach(e => I(e))
   })
@@ -69,12 +69,12 @@ function I(e) {
 
 function S(e) {
   var t, n, r;
-  let i = null === (t = _.Z.getGuild(e)) || void 0 === t ? void 0 : t.name;
+  let i = null == (t = _.Z.getGuild(e)) ? void 0 : t.name;
   E.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));
   let o = T(Object.keys(f.Z.getMutableBasicGuildChannelsForGuild(e))),
     a = T(Object.keys(_.Z.getRoles(e))),
     s = T(u.ZP.getGuildEmoji(e).map(e => e.id)),
-    l = T(null !== (r = null === (n = d.Z.getStickersByGuildId(e)) || void 0 === n ? void 0 : n.map(e => e.id)) && void 0 !== r ? r : []);
+    l = T(null != (r = null == (n = d.Z.getStickersByGuildId(e)) ? void 0 : n.map(e => e.id)) ? r : []);
   h.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, o, a, s, l)
 }
 
@@ -121,7 +121,7 @@ function C(e, t) {
 
 function R(e, t) {
   var n;
-  let r = null !== (n = d.Z.getStickersByGuildId(e)) && void 0 !== n ? n : [],
+  let r = null != (n = d.Z.getStickersByGuildId(e)) ? n : [],
     i = r.filter(e => t.has(e.id));
   r.length !== i.length && a.Z.dispatch({
     type: "GUILD_STICKERS_UPDATE",

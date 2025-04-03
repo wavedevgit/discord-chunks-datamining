@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -16,7 +16,7 @@ var i = n(120356),
   f = n(445924),
   _ = n(654904),
   p = n(486324),
-  h = n(132694);
+  h = n(305566);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,9 +56,9 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = d.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK;
+let y = d.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK;
 
-function y(e) {
+function v(e) {
   let {
     user: t,
     guild: n,
@@ -66,7 +66,7 @@ function y(e) {
     canUsePremiumCustomization: d,
     previewAvatar: m,
     previewAvatarDecoration: E,
-    previewTheme: y,
+    previewTheme: v,
     previewPrimaryColor: O,
     className: I,
     disabledInputs: S,
@@ -74,7 +74,7 @@ function y(e) {
     onUpsellClick: N
   } = e, {
     analyticsLocations: A
-  } = (0, l.ZP)(), C = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, P = (0, r.jsx)(v, {
+  } = (0, l.ZP)(), C = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, P = (0, r.jsx)(y, {
     src: m,
     avatarDecoration: E,
     imageClassName: o()(I, {
@@ -84,7 +84,7 @@ function y(e) {
     "aria-label": t.username,
     status: C,
     statusTooltip: !1,
-    statusBackdropColor: null != O ? (0, s.QFD)(y) : void 0
+    statusBackdropColor: null != O ? (0, s.QFD)(v) : void 0
   });
   return S ? (0, r.jsx)("div", {
     className: h.avatar,

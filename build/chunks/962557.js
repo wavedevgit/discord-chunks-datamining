@@ -1,7 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r = n(936940);
-e.exports = !r(function() {
+e.exports = !n(936940)(function() {
   var e = (function() {}).bind();
   return "function" != typeof e || e.hasOwnProperty("prototype")
 })

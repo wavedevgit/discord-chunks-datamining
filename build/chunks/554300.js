@@ -11,7 +11,7 @@ var r = n(200651),
   l = n(481060),
   c = n(359135),
   u = n(516817),
-  d = n(662669);
+  d = n(241072);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,8 +77,8 @@ let E = i.forwardRef(function(e, t) {
       children: g,
       subText: E,
       decorators: b,
-      onClick: v,
-      hovered: y,
+      onClick: y,
+      hovered: v,
       selected: O,
       muted: I,
       to: S,
@@ -95,9 +95,9 @@ let E = i.forwardRef(function(e, t) {
     [d.highlighted]: R,
     [d.active]: O,
     [null != N ? N : ""]: O,
-    [d.clickable]: !O && (null != S || null != v),
+    [d.clickable]: !O && (null != S || null != y),
     [d.wrapperPlated]: null != p
-  }), w["aria-selected"] = null !== (n = w["aria-selected"]) && void 0 !== n ? n : O;
+  }), w["aria-selected"] = null != (n = w["aria-selected"]) ? n : O;
   let D = i.useRef(null),
     L = (0, r.jsxs)("div", {
       className: a()(d.childContainer, {
@@ -105,7 +105,7 @@ let E = i.forwardRef(function(e, t) {
       }),
       children: [(0, r.jsx)(u.Z, {
         nameplate: p,
-        hovered: y,
+        hovered: v,
         selected: O,
         content: D,
         placement: c.i.MEMBER_LIST
@@ -141,14 +141,14 @@ let E = i.forwardRef(function(e, t) {
   return null != S ? (0, r.jsx)(l.tEY, h(_({}, P), {
     children: (0, r.jsx)(s.rU, h(_({
       to: S,
-      onClick: v
+      onClick: y
     }, w), {
       role: "listitem",
       ref: t,
       children: L
     }))
-  })) : null != v ? (0, r.jsx)(l.P3F, h(_({
-    onClick: v,
+  })) : null != y ? (0, r.jsx)(l.P3F, h(_({
+    onClick: y,
     focusProps: P
   }, w), {
     role: "listitem",

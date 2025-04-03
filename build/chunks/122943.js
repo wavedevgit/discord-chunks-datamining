@@ -13,7 +13,7 @@ var i = n(692547),
   c = n(788858),
   u = n(170187),
   d = n(388032),
-  f = n(727971);
+  f = n(843280);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,11 +61,11 @@ function g(e) {
     textClassName: _,
     hideText: h = !1,
     hideTooltip: g = !1
-  } = e, E = (0, o.vjg)(o.Skl.ONLINE), b = (0, s.ZP)(t), v = t.isDM() || t.isGroupDM(), {
-    enabled: y
+  } = e, E = (0, o.vjg)(o.Skl.ONLINE), b = (0, s.ZP)(t), y = t.isDM() || t.isGroupDM(), {
+    enabled: v
   } = (0, l.C)({
     location: "VoiceActivityStatus"
-  }), O = () => g || v ? (0, r.jsx)(c.Z, {
+  }), O = () => g || y ? (0, r.jsx)(c.Z, {
     size: "custom",
     color: E,
     channel: t,
@@ -81,11 +81,11 @@ function g(e) {
       channel: t,
       className: f.icon
     }))
-  }), I = () => y ? (0, r.jsx)(u.Z, {
+  }), I = () => v ? (0, r.jsx)(u.Z, {
     variant: n,
     className: _,
     children: b
-  }) : v ? (0, r.jsx)(u.Z, {
+  }) : y ? (0, r.jsx)(u.Z, {
     variant: n,
     className: _,
     children: d.NW.string(d.t["9FaEzs"])

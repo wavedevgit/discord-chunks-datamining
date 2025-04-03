@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(481060),
   l = n(806966),
   c = n(28546),
-  u = n(163812);
+  u = n(368020);
 let d = i.forwardRef(function(e, t) {
   let {
     store: n,
@@ -20,24 +20,24 @@ let d = i.forwardRef(function(e, t) {
     expressionsListRef: p,
     defaultSearchPlaceholder: h,
     emptySearchPlaceholder: m
-  } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), v = n.useStore(e => e.searchPlaceholder), y = n.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
+  } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), y = n.useStore(e => e.searchPlaceholder), v = n.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
     var t;
-    n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null === (t = p.current) || void 0 === t || t.scrollTo(0)
+    n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = p.current) || t.scrollTo(0)
   }, [p, n]), I = i.useCallback(() => {
     (0, c.ql)("")
   }, []);
   i.useImperativeHandle(t, () => ({
     focus: () => {
       var e;
-      return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
+      return null == (e = g.current) ? void 0 : e.focus()
     }
   })), i.useLayoutEffect(() => {
     if (b) {
       var e;
-      null === (e = g.current) || void 0 === e || e.focus()
+      null == (e = g.current) || e.focus()
     }
   }, [b]);
-  let S = () => null != v ? v : d || null == m ? h : m;
+  let S = () => null != y ? y : d || null == m ? h : m;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsx)(s.E1j, {
@@ -55,7 +55,7 @@ let d = i.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": _,
         "aria-expanded": !0,
-        "aria-activedescendant": (0, a.NE)(_, y.columnIndex, y.rowIndex)
+        "aria-activedescendant": (0, a.NE)(_, v.columnIndex, v.rowIndex)
       }
     })
   })

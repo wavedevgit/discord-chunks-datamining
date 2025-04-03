@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AJ: () => v,
+  AJ: () => y,
   Ep: () => O,
   te: () => b,
   zP: () => E
@@ -12,7 +12,7 @@ var r = n(200651),
   a = n.n(o),
   s = n(481060),
   l = n(388032),
-  c = n(211478);
+  c = n(831704);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -101,7 +101,7 @@ function g() {
       let {
         target: n
       } = e;
-      null === (t = r.get(n)) || void 0 === t || t(e)
+      null == (t = r.get(n)) || t(e)
     })
   });
   return (0, s.znF)({
@@ -109,7 +109,7 @@ function g() {
     key: "horizontal-overflow-list",
     onUpdate: e => {
       var n;
-      let r = null === (n = e.target) || void 0 === n ? void 0 : n.getBoundingClientRect();
+      let r = null == (n = e.target) ? void 0 : n.getBoundingClientRect();
       null != r && t(r.width)
     },
     resizeObserver: o,
@@ -132,7 +132,7 @@ function E(e) {
   return i.useLayoutEffect(() => {
     var e;
     if (null == d.current) return;
-    l.current.length = n.length, c.current = null !== (e = d.current.getBoundingClientRect().width) && void 0 !== e ? e : 0;
+    l.current.length = n.length, c.current = null != (e = d.current.getBoundingClientRect().width) ? e : 0;
     let i = m({
       items: n,
       maxLines: r,
@@ -170,7 +170,7 @@ function b(e) {
   }))
 }
 
-function v(e) {
+function y(e) {
   let {
     onItemLayout: t,
     index: n,
@@ -184,7 +184,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   return "string" == typeof e ? e : e.key
 }
 
@@ -220,11 +220,11 @@ function O(e) {
       className: c.measurements,
       children: [(0, r.jsx)("div", {
         className: c.itemMeasurements,
-        children: n.map((e, t) => (0, r.jsx)(v, {
+        children: n.map((e, t) => (0, r.jsx)(y, {
           index: t,
           onItemLayout: h,
           children: o(e)
-        }, y(e)))
+        }, v(e)))
       }), (0, r.jsx)("div", {
         className: c.overflowMeasurement,
         ref: m,

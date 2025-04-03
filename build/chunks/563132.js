@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(551428),
   E = n(975104),
   b = n(630388),
-  v = n(74538),
-  y = n(960048),
+  y = n(74538),
+  v = n(960048),
   O = n(735521),
   I = n(583046),
   S = n(897829),
@@ -122,8 +122,8 @@ function Z(e) {
   } = (0, w.Z)({
     stepConfigs: F,
     breadcrumbs: V
-  }), [eb, ev] = (0, C.Z)(ep), {
-    paymentError: ey,
+  }), [eb, ey] = (0, C.Z)(ep), {
+    paymentError: ev,
     paymentAuthenticationState: eO
   } = (0, N.Z)(), {
     purchaseError: eI,
@@ -131,7 +131,7 @@ function Z(e) {
     setPurchaseError: eT
   } = (0, A.Z)(), eN = (0, l.Z)(() => {
     let e = null != k ? k : (0, a.Z)();
-    return y.Z.addBreadcrumb({
+    return v.Z.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
     }), {
       loadId: e,
@@ -144,7 +144,7 @@ function Z(e) {
     setSelectedSkuId: eP,
     setSelectedPlanId: ew,
     setSelectedPlanNotification: eD
-  } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eF, eV] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, v.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
+  } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eF, eV] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, y.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
   i.useEffect(() => {
     null == e0.current && null != U && (e0.current = U.planId)
   }, [U]);
@@ -168,7 +168,7 @@ function Z(e) {
   i.useEffect(() => {
     null != e9 && (0, b.yE)(e9.flags, x.udG.EMBEDDED) && te && null == tt && (0, u.$h)()
   }, [e9, te, tt]);
-  let tn = (0, b.yE)(null !== (t = null == e9 ? void 0 : e9.flags) && void 0 !== t ? t : 0, x.udG.EMBEDDED) && (0, b.yE)(null !== (n = null == e9 ? void 0 : e9.flags) && void 0 !== n ? n : 0, x.udG.EMBEDDED_IAP),
+  let tn = (0, b.yE)(null != (t = null == e9 ? void 0 : e9.flags) ? t : 0, x.udG.EMBEDDED) && (0, b.yE)(null != (n = null == e9 ? void 0 : e9.flags) ? n : 0, x.udG.EMBEDDED_IAP),
     tr = (0, s.e7)([d.ZP], () => Array.from(d.ZP.getSelfEmbeddedActivities().values()).find(e => {
       let {
         applicationId: t
@@ -179,7 +179,7 @@ function Z(e) {
     to = (0, s.e7)([g.Z], () => null != eA ? g.Z.getForSKU(eA) : null, [eA]),
     ta = e1[null != eA ? eA : ""],
     [ts, tl] = i.useState(null),
-    tc = null !== (E = null == U ? void 0 : U.inReverseTrial) && void 0 !== E && E && !H;
+    tc = null != (E = null == U ? void 0 : U.inReverseTrial) && E && !H;
   return (0, r.jsx)(B.Provider, {
     value: G(j({
       stripe: X,
@@ -211,9 +211,9 @@ function Z(e) {
       breadcrumbs: eg,
       previousStepRef: eE,
       purchaseState: eb,
-      setPurchaseState: ev,
+      setPurchaseState: ey,
       paymentAuthenticationState: eO,
-      paymentError: ey,
+      paymentError: ev,
       purchaseError: eI,
       setPurchaseError: eT,
       purchasePreviewError: e5,

@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,10 +74,8 @@ async function O(e, t, n) {
     } catch (e) {}
   }
   let r = _.Z.getChannel(t);
-  if (null != r && null == n && (0, f.bw)(r.type) && (0, l.YO)(r)) {
-    a.default.selectVoiceChannel(r.id);
-    return
-  }(0, c.Z)(g.Z5c.CHANNEL(e, t, n))
+  if (null != r && null == n && (0, f.bw)(r.type) && (0, l.YO)(r)) return void a.default.selectVoiceChannel(r.id);
+  (0, c.Z)(g.Z5c.CHANNEL(e, t, n))
 }
 
 function I(e) {
@@ -94,9 +92,9 @@ function I(e) {
             } = await n.e("9573").then(n.bind(n, 546649));
             return n => {
               var i;
-              return (0, r.jsx)(e, y(b({}, n), {
+              return (0, r.jsx)(e, v(b({}, n), {
                 channel: l,
-                channelId: null !== (i = null == l ? void 0 : l.id) && void 0 !== i ? i : t.channelId,
+                channelId: null != (i = null == l ? void 0 : l.id) ? i : t.channelId,
                 originalLink: t.originalLink,
                 messageId: t.messageId
               }))

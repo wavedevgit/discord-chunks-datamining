@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(576645),
   h = n(981631),
   m = n(388032),
-  g = n(754374);
+  g = n(842321);
 
 function E(e) {
   let {
@@ -37,18 +37,18 @@ let b = function(e) {
     channel: t
   } = e, n = (0, c.z8)(t.id), s = (0, c.OG)(t.id), {
     entitlement: b,
-    numPotions: v
-  } = (0, p.t6)(d.D1), y = i.useCallback(e => {
+    numPotions: y
+  } = (0, p.t6)(d.D1), v = i.useCallback(e => {
     (0, c.Hi)(e, t.id)
   }, [t.id]), O = i.useCallback(() => {
     (0, c.GA)(t.id)
   }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), S = i.useCallback(() => {
     (0, c.Hb)(t.id)
-  }, [t.id]), T = i.useMemo(() => null != v && v > 0 ? (null == b ? void 0 : b.type) === h.qc2.DEVELOPER_GIFT ? m.NW.format(m.t["b+P6ra"], {
-    numPotions: v
+  }, [t.id]), T = i.useMemo(() => null != y && y > 0 ? (null == b ? void 0 : b.type) === h.qc2.DEVELOPER_GIFT ? m.NW.format(m.t["b+P6ra"], {
+    numPotions: y
   }) : m.NW.format(m.t.RiQ4cn, {
-    numPotions: v
-  }) : m.NW.string(m.t.hvVgAQ), [v, b]), [N, A] = i.useState(!1 === s);
+    numPotions: y
+  }) : m.NW.string(m.t.hvVgAQ), [y, b]), [N, A] = i.useState(!1 === s);
   i.useEffect(() => {
     !1 === s && O()
   }, [s, O]);
@@ -56,8 +56,8 @@ let b = function(e) {
       A(!1)
     }, []),
     R = i.useCallback(e => {
-      y(e), A(!1)
-    }, [y]),
+      v(e), A(!1)
+    }, [v]),
     P = i.useCallback(() => {
       (0, f.s)({
         channelId: t.id,

@@ -314,7 +314,7 @@ function h(e, t) {
         continue;
       case "L":
         var d, f;
-        let t = null !== (f = null === (d = /^L(?:TS?|L*(?: LTS?)?)/.exec(s)) || void 0 === d ? void 0 : d[0]) && void 0 !== f ? f : "L";
+        let t = null != (f = null == (d = /^L(?:TS?|L*(?: LTS?)?)/.exec(s)) ? void 0 : d[0]) ? f : "L";
         r.longFormatters.push(c(t)), l("localeData.longFormatters[".concat(r.longFormatters.length - 1, "](d)")), u(t.length);
         continue;
       case "[":

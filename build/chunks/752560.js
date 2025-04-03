@@ -69,14 +69,14 @@ class g {
   reset() {
     var e, t, n;
     let r = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    this._initialized && (null === (e = this._members) || void 0 === e || e.reset(), null === (t = this._pagination) || void 0 === t || t.reset(), null === (n = this._search) || void 0 === n || n.reset(), r && this.initialize())
+    this._initialized && (null == (e = this._members) || e.reset(), null == (t = this._pagination) || t.reset(), null == (n = this._search) || n.reset(), r && this.initialize())
   }
   get searchChunkSize() {
     return null != this._pagination && this._initialized ? (0, c.t3)(this._pagination.getPaginationState()) : 0
   }
   getMember(e) {
     var t;
-    return null != this._members && this._initialized && null !== (t = this._members.getMemberByUserId(e)) && void 0 !== t ? t : null
+    return null != this._members && this._initialized && null != (t = this._members.getMemberByUserId(e)) ? t : null
   }
   getMembersByIndex(e) {
     return null != this._members && this._initialized ? [this._members.values(e), this._members.version] : [
@@ -190,8 +190,8 @@ class g {
       [...(0, r.cloneDeep)(this.getMembersByIndex(l.R_.CURRENT_GUILD_MEMBER)[0]), ...(0, r.cloneDeep)(this.getMembersByIndex(l.R_.NEW_GUILD_MEMBER)[0])].forEach(t => {
         var n, r, i;
         let o = (0, d.b)(t, e),
-          a = null !== (i = null === (n = this._search) || void 0 === n ? void 0 : n.isMemberIncludedInSearchResults(t)) && void 0 !== i && i;
-        null === (r = this._members) || void 0 === r || r.updateMember(t, {
+          a = null != (i = null == (n = this._search) ? void 0 : n.isMemberIncludedInSearchResults(t)) && i;
+        null == (r = this._members) || r.updateMember(t, {
           sort: o,
           isIncludedInSearchResults: a
         })
@@ -269,7 +269,7 @@ class g {
     return null == this._search || !this._initialized || this._search.hasDefaultQuery
   }
   resetSearchState() {
-    return !!(null != this._search && this._initialized && this._search.resetSearchState()) && this.updatePaginationChunks()
+    return null != this._search && !!this._initialized && !!this._search.resetSearchState() && this.updatePaginationChunks()
   }
   getTotalResultsCount() {
     return null != this._search && null != this._pagination && this._initialized ? this._search.hasDefaultQuery && null != this._defaultSearchTotalResultsCount ? this._defaultSearchTotalResultsCount : this._pagination.getPaginationState().totalResultsCount : 0
@@ -280,7 +280,7 @@ class g {
   }
   clearPaginationState() {
     var e;
-    null === (e = this._pagination) || void 0 === e || e.reset()
+    null == (e = this._pagination) || e.reset()
   }
   getPaginationState() {
     return null != this._pagination && this._initialized ? this._pagination.getPaginationState() : (0, c.IF)()

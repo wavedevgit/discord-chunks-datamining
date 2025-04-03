@@ -9,8 +9,6 @@ var r = n(807419),
   u = Function.prototype.toString,
   d = c.hasOwnProperty,
   f = RegExp("^" + u.call(d).replace(s, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
-
-function _(e) {
+e.exports = function(e) {
   return !(!o(e) || i(e)) && (r(e) ? f : l).test(a(e))
 }
-e.exports = _

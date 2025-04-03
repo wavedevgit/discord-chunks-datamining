@@ -16,7 +16,7 @@ var r = n(566885),
   },
   h = p.prototype;
 e.exports = function(e, t, n) {
-  var m, g, E, b, v, y, O, I = n && n.that,
+  var m, g, E, b, y, v, O, I = n && n.that,
     S = !!(n && n.AS_ENTRIES),
     T = !!(n && n.IS_RECORD),
     N = !!(n && n.IS_ITERATOR),
@@ -34,18 +34,18 @@ e.exports = function(e, t, n) {
     if (!(g = d(e))) throw _(a(e) + " is not iterable");
     if (s(g)) {
       for (E = 0, b = l(e); b > E; E++)
-        if ((v = P(e[E])) && c(h, v)) return v;
+        if ((y = P(e[E])) && c(h, y)) return y;
       return new p(!1)
     }
     m = u(e, g)
   }
-  for (y = T ? e.next : m.next; !(O = i(y, m)).done;) {
+  for (v = T ? e.next : m.next; !(O = i(v, m)).done;) {
     try {
-      v = P(O.value)
+      y = P(O.value)
     } catch (e) {
       f(m, "throw", e)
     }
-    if ("object" == typeof v && v && c(h, v)) return v
+    if ("object" == typeof y && y && c(h, y)) return y
   }
   return new p(!1)
 }

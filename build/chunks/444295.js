@@ -38,14 +38,14 @@ function d(e, t, r) {
     {
       default: _
     } = n(371651),
-    p = null !== (a = null == _ ? void 0 : _.getMostRecentOverlayRenderMethod()) && void 0 !== a ? a : void 0,
+    p = null != (a = null == _ ? void 0 : _.getMostRecentOverlayRenderMethod()) ? a : void 0,
     h = null != p ? i.gl[p] : void 0;
   s.default.track(l.rMx.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: u(t),
     client_setting_type: t,
-    application_id: null !== (c = null == f ? void 0 : f.id) && void 0 !== c ? c : void 0,
-    application_name: null !== (d = null == f ? void 0 : f.name) && void 0 !== d ? d : void 0,
+    application_id: null != (c = null == f ? void 0 : f.id) ? c : void 0,
+    application_name: null != (d = null == f ? void 0 : f.name) ? d : void 0,
     most_recent_overlay_render_method: h
   })
 }
@@ -75,7 +75,7 @@ function _(e, t) {
     liveUserIds: u,
     contentInventoryIds: d
   } = t;
-  ((null !== (n = null == c ? void 0 : c.length) && void 0 !== n ? n : 0) !== 0 || (null !== (r = null == u ? void 0 : u.length) && void 0 !== r ? r : 0) !== 0 || (null !== (i = null == d ? void 0 : d.length) && void 0 !== i ? i : 0) !== 0) && s.default.track(l.rMx.WIDGET_CONTENT_SHOWN, {
+  ((null != (n = null == c ? void 0 : c.length) ? n : 0) !== 0 || (null != (r = null == u ? void 0 : u.length) ? r : 0) !== 0 || (null != (i = null == d ? void 0 : d.length) ? i : 0) !== 0) && s.default.track(l.rMx.WIDGET_CONTENT_SHOWN, {
     overlay_locked: o,
     widget_type: e,
     shown_user_ids: c,

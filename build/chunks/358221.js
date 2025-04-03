@@ -19,8 +19,8 @@ var r, i = n(512722),
   g = n(523746),
   E = n(592125),
   b = n(158776),
-  v = n(944486),
-  y = n(606304),
+  y = n(944486),
+  v = n(606304),
   O = n(594174),
   I = n(33039),
   S = n(979651),
@@ -93,9 +93,9 @@ function K() {
 
 function z() {
   let e = [],
-    t = v.Z.getChannelId();
+    t = y.Z.getChannelId();
   null != t && e.push(t);
-  let n = v.Z.getVoiceChannelId();
+  let n = y.Z.getVoiceChannelId();
   null == n || e.includes(n) || e.push(n);
   let r = f.Z.getRemoteSessionId(),
     i = S.Z.getVoiceStateForSession(m.default.getId(), r);
@@ -117,8 +117,8 @@ function Q(e) {
 function X(e) {
   var t;
   let n = E.Z.getChannel(e),
-    r = (null == n ? void 0 : n.isDM()) ? N.dF.AUTO : N.dF.NONE;
-  return null !== (t = k[e]) && void 0 !== t ? t : [r, N.dF.NONE]
+    r = (null == n ? void 0 : n.isDM()) && 1 ? N.dF.AUTO : N.dF.NONE;
+  return null != (t = k[e]) ? t : [r, N.dF.NONE]
 }
 
 function J(e) {
@@ -157,10 +157,7 @@ function et(e) {
 function en(e) {
   let t = m.default.getId(),
     n = Y(e);
-  if (0 === n.size() || v.Z.getVoiceChannelId() !== e) {
-    ee(e, null);
-    return
-  }
+  if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
   let r = N.dF.NONE,
     i = n.toArray(T.sI.STREAM).find(e => e.type === N.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
   if (null != i) o()(i.type === N.fO.STREAM, "Impossible condition"), r = i.id;
@@ -171,7 +168,7 @@ function en(e) {
   } else {
     var a;
     let e = n.toArray().find(e => e.type === N.fO.USER && e.id !== t && !e.ringing);
-    r = null !== (a = null == e ? void 0 : e.id) && void 0 !== a ? a : t
+    r = null != (a = null == e ? void 0 : e.id) ? a : t
   }
   let [s] = X(e);
   if (s !== N.dF.AUTO && s !== N.dF.NONE) {
@@ -315,7 +312,7 @@ function eb(e) {
   H[t] = n
 }
 
-function ev(e) {
+function ey(e) {
   let {
     channelId: t,
     dismissed: n
@@ -323,7 +320,7 @@ function ev(e) {
   W[t] = n
 }
 
-function ey(e) {
+function ev(e) {
   let {
     channelId: t,
     chatOpen: n
@@ -370,7 +367,7 @@ function eS(e) {
     if (null != e) {
       var n, r;
       return G[t.id] = {
-        [A.IlC.APP]: null !== (r = null === (n = G[e]) || void 0 === n ? void 0 : n[A.IlC.APP]) && void 0 !== r ? r : A.AEg.NORMAL
+        [A.IlC.APP]: null != (r = null == (n = G[e]) ? void 0 : n[A.IlC.APP]) ? r : A.AEg.NORMAL
       }, !0
     }
   }
@@ -480,11 +477,11 @@ function ex(e) {
 
 function eM(e) {
   var t;
-  return !!(null === (t = E.Z.getChannel(e)) || void 0 === t ? void 0 : t.isGuildVocal())
+  return !!(null == (t = E.Z.getChannel(e)) ? void 0 : t.isGuildVocal())
 }
 class ek extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, v.Z, y.Z, O.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, v.Z, O.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -496,26 +493,26 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray()) && void 0 !== t ? t : L
+    return null != (t = Y(e).toArray()) ? t : L
   }
   getSpeakingParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.SPEAKING)) && void 0 !== t ? t : L
+    return null != (t = Y(e).toArray(T.sI.SPEAKING)) ? t : L
   }
   getFilteredParticipants(e) {
     return F[e] ? Y(e).toArray(T.sI.FILTERED) : Y(e).toArray()
   }
   getVideoParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.VIDEO)) && void 0 !== t ? t : L
+    return null != (t = Y(e).toArray(T.sI.VIDEO)) ? t : L
   }
   getStreamParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.STREAM)) && void 0 !== t ? t : L
+    return null != (t = Y(e).toArray(T.sI.STREAM)) ? t : L
   }
   getActivityParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.ACTIVITY)) && void 0 !== t ? t : L
+    return null != (t = Y(e).toArray(T.sI.ACTIVITY)) ? t : L
   }
   getParticipant(e, t) {
     return Y(e).getParticipant(t)
@@ -526,11 +523,11 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getParticipantsOpen(e) {
     var t;
-    return null === (t = B[e]) || void 0 === t || t
+    return null == (t = B[e]) || t
   }
   getVoiceParticipantsHidden(e) {
     var t;
-    return null !== (t = F[e]) && void 0 !== t && t
+    return null != (t = F[e]) && t
   }
   getSelectedParticipantId(e) {
     let [t, n] = X(e);
@@ -553,25 +550,25 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getMode(e) {
     var t;
-    return null !== (t = U[e]) && void 0 !== t ? t : eM(e) ? A.WtW.VIDEO : A.WtW.VOICE
+    return null != (t = U[e]) ? t : eM(e) ? A.WtW.VIDEO : A.WtW.VOICE
   }
   getLayout(e) {
     var t, n;
     let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : A.IlC.APP;
     if (__OVERLAY__) return A.AEg.NORMAL;
     let i = eM(e);
-    return null !== (n = null === (t = G[e]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : i ? A.AEg.NO_CHAT : A.AEg.NORMAL
+    return null != (n = null == (t = G[e]) ? void 0 : t[r]) ? n : i ? A.AEg.NO_CHAT : A.AEg.NORMAL
   }
   getChatOpen(e) {
     var t;
-    return null !== (t = V[e]) && void 0 !== t && t
+    return null != (t = V[e]) && t
   }
   getAllChatOpen() {
     return V
   }
   getParticipantsListOpen(e) {
     var t;
-    return null !== (t = Z[e]) && void 0 !== t && t
+    return null != (t = Z[e]) && t
   }
   isFullscreenInContext() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A.IlC.APP;
@@ -605,9 +602,9 @@ let ej = new ek(c.Z, {
   CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: em,
   CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eg,
   CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: eb,
-  CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: ev,
+  CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: ey,
   STREAM_UPDATE_SELF_HIDDEN: eE,
-  CHANNEL_RTC_UPDATE_CHAT_OPEN: ey,
+  CHANNEL_RTC_UPDATE_CHAT_OPEN: ev,
   CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: eO,
   RTC_CONNECTION_VIDEO: eR,
   RTC_CONNECTION_PLATFORM: eP,

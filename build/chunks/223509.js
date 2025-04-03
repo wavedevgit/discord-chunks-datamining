@@ -15,8 +15,8 @@ var r, i, o = n(754793),
   g = 1,
   E = 2,
   b = -2,
-  v = -3,
-  y = -4,
+  y = -3,
+  v = -4,
   O = -5,
   I = 8,
   S = 1,
@@ -79,7 +79,7 @@ function el(e, t) {
 
 function ec(e, t) {
   var n, r;
-  return e ? (r = new eo, e.state = r, r.window = null, (n = el(e, t)) !== m && (e.state = null), n) : b
+  return e ? (e.state = r = new eo, r.window = null, (n = el(e, t)) !== m && (e.state = null), n) : b
 }
 
 function eu(e) {
@@ -110,7 +110,7 @@ function e_(e, t, n, r) {
 }
 
 function ep(e, t) {
-  var n, r, i, et, en, er, eo, ea, es, el, ec, eu, ed, ep, eh, em, eg, eE, eb, ev, ey, eO, eI, eS, eT = 0,
+  var n, r, i, et, en, er, eo, ea, es, el, ec, eu, ed, ep, eh, em, eg, eE, eb, ey, ev, eO, eI, eS, eT = 0,
     eN = new o.Buf8(4),
     eA = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
   if (!e || !e.state || !e.output || !e.input && 0 !== e.avail_in) return b;
@@ -137,12 +137,12 @@ function ep(e, t) {
         e.msg = "unknown compression method", n.mode = $;
         break
       }
-      if (ea >>>= 4, es -= 4, ey = (15 & ea) + 8, 0 === n.wbits) n.wbits = ey;
-      else if (ey > n.wbits) {
+      if (ea >>>= 4, es -= 4, ev = (15 & ea) + 8, 0 === n.wbits) n.wbits = ev;
+      else if (ev > n.wbits) {
         e.msg = "invalid window size", n.mode = $;
         break
       }
-      n.dmax = 1 << ey, e.adler = n.check = 1, n.mode = 512 & ea ? L : M, ea = 0, es = 0;
+      n.dmax = 1 << ev, e.adler = n.check = 1, n.mode = 512 & ea ? L : M, ea = 0, es = 0;
       break;
     case T:
       for (; es < 16;) {
@@ -180,22 +180,22 @@ function ep(e, t) {
       } else n.head && (n.head.extra = null);
       n.mode = R;
     case R:
-      if (1024 & n.flags && ((eu = n.length) > er && (eu = er), eu && (n.head && (ey = n.head.extra_len - n.length, n.head.extra || (n.head.extra = Array(n.head.extra_len)), o.arraySet(n.head.extra, r, et, eu, ey)), 512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, n.length -= eu), n.length)) break i;
+      if (1024 & n.flags && ((eu = n.length) > er && (eu = er), eu && (n.head && (ev = n.head.extra_len - n.length, n.head.extra || (n.head.extra = Array(n.head.extra_len)), o.arraySet(n.head.extra, r, et, eu, ev)), 512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, n.length -= eu), n.length)) break i;
       n.length = 0, n.mode = P;
     case P:
       if (2048 & n.flags) {
         if (0 === er) break i;
         eu = 0;
-        do ey = r[et + eu++], n.head && ey && n.length < 65536 && (n.head.name += String.fromCharCode(ey)); while (ey && eu < er);
-        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break i
+        do ev = r[et + eu++], n.head && ev && n.length < 65536 && (n.head.name += String.fromCharCode(ev)); while (ev && eu < er);
+        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ev) break i
       } else n.head && (n.head.name = null);
       n.length = 0, n.mode = w;
     case w:
       if (4096 & n.flags) {
         if (0 === er) break i;
         eu = 0;
-        do ey = r[et + eu++], n.head && ey && n.length < 65536 && (n.head.comment += String.fromCharCode(ey)); while (ey && eu < er);
-        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break i
+        do ev = r[et + eu++], n.head && ev && n.length < 65536 && (n.head.comment += String.fromCharCode(ev)); while (ev && eu < er);
+        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ev) break i
       } else n.head && (n.head.comment = null);
       n.mode = D;
     case D:
@@ -275,7 +275,7 @@ function ep(e, t) {
         if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
-      if (n.nlen = (31 & ea) + 257, ea >>>= 5, es -= 5, n.ndist = (31 & ea) + 1, ea >>>= 5, es -= 5, n.ncode = (15 & ea) + 4, ea >>>= 4, es -= 4, n.nlen > 286 || n.ndist > 30) {
+      if (n.nlen = (31 & ea) + 257, es -= 5, n.ndist = (31 & (ea >>>= 5)) + 1, es -= 5, n.ncode = (15 & (ea >>>= 5)) + 4, ea >>>= 4, es -= 4, n.nlen > 286 || n.ndist > 30) {
         e.msg = "too many length or distance symbols", n.mode = $;
         break
       }
@@ -313,25 +313,25 @@ function ep(e, t) {
               e.msg = "invalid bit length repeat", n.mode = $;
               break
             }
-            ey = n.lens[n.have - 1], eu = 3 + (3 & ea), ea >>>= 2, es -= 2
+            ev = n.lens[n.have - 1], eu = 3 + (3 & ea), ea >>>= 2, es -= 2
           } else if (17 === eg) {
             for (eS = eh + 3; es < eS;) {
               if (0 === er) break i;
               er--, ea += r[et++] << es, es += 8
             }
-            ea >>>= eh, es -= eh, ey = 0, eu = 3 + (7 & ea), ea >>>= 3, es -= 3
+            ea >>>= eh, es -= eh, ev = 0, eu = 3 + (7 & ea), ea >>>= 3, es -= 3
           } else {
             for (eS = eh + 7; es < eS;) {
               if (0 === er) break i;
               er--, ea += r[et++] << es, es += 8
             }
-            ea >>>= eh, es -= eh, ey = 0, eu = 11 + (127 & ea), ea >>>= 7, es -= 7
+            ea >>>= eh, es -= eh, ev = 0, eu = 11 + (127 & ea), ea >>>= 7, es -= 7
           }
           if (n.have + eu > n.nlen + n.ndist) {
             e.msg = "invalid bit length repeat", n.mode = $;
             break
           }
-          for (; eu--;) n.lens[n.have++] = ey
+          for (; eu--;) n.lens[n.have++] = ev
         }
       }
       if (n.mode === $) break;
@@ -364,7 +364,7 @@ function ep(e, t) {
         er--, ea += r[et++] << es, es += 8
       }
       if (em && (240 & em) == 0) {
-        for (eE = eh, eb = em, ev = eg; eh = (eT = n.lencode[ev + ((ea & (1 << eE + eb) - 1) >> eE)]) >>> 24, em = eT >>> 16 & 255, eg = 65535 & eT, !(eE + eh <= es);) {
+        for (eE = eh, eb = em, ey = eg; eh = (eT = n.lencode[ey + ((ea & (1 << eE + eb) - 1) >> eE)]) >>> 24, em = eT >>> 16 & 255, eg = 65535 & eT, !(eE + eh <= es);) {
           if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
@@ -398,7 +398,7 @@ function ep(e, t) {
         er--, ea += r[et++] << es, es += 8
       }
       if ((240 & em) == 0) {
-        for (eE = eh, eb = em, ev = eg; eh = (eT = n.distcode[ev + ((ea & (1 << eE + eb) - 1) >> eE)]) >>> 24, em = eT >>> 16 & 255, eg = 65535 & eT, !(eE + eh <= es);) {
+        for (eE = eh, eb = em, ey = eg; eh = (eT = n.distcode[ey + ((ea & (1 << eE + eb) - 1) >> eE)]) >>> 24, em = eT >>> 16 & 255, eg = 65535 & eT, !(eE + eh <= es);) {
           if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
@@ -469,14 +469,14 @@ function ep(e, t) {
       eO = g;
       break i;
     case $:
-      eO = v;
+      eO = y;
       break i;
     case ee:
-      return y;
+      return v;
     default:
       return b
   }
-  return (e.next_out = en, e.avail_out = eo, e.next_in = et, e.avail_in = er, n.hold = ea, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < Q || t !== _)) && e_(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, y) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : a(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === M) + 256 * (n.mode === Z || n.mode === U), (0 === el && 0 === ec || t === _) && eO === m && (eO = O), eO)
+  return (e.next_out = en, e.avail_out = eo, e.next_in = et, e.avail_in = er, n.hold = ea, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < Q || t !== _)) && e_(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, v) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : a(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === M) + 256 * (n.mode === Z || n.mode === U), (0 === el && 0 === ec || t === _) && eO === m && (eO = O), eO)
 }
 
 function eh(e) {
@@ -492,6 +492,6 @@ function em(e, t) {
 
 function eg(e, t) {
   var n, r, i = t.length;
-  return e && e.state && (0 === (n = e.state).wrap || n.mode === x) ? n.mode === x && (r = a(r = 1, t, i, 0)) !== n.check ? v : e_(e, t, i, i) ? (n.mode = ee, y) : (n.havedict = 1, m) : b
+  return e && e.state && (0 === (n = e.state).wrap || n.mode === x) ? n.mode === x && (r = a(r = 1, t, i, 0)) !== n.check ? y : e_(e, t, i, i) ? (n.mode = ee, v) : (n.havedict = 1, m) : b
 }
 t.inflateReset = es, t.inflateReset2 = el, t.inflateResetKeep = ea, t.inflateInit = eu, t.inflateInit2 = ec, t.inflate = ep, t.inflateEnd = eh, t.inflateGetHeader = em, t.inflateSetDictionary = eg, t.inflateInfo = "pako inflate (from Nodeca project)"

@@ -10,7 +10,7 @@ var r, i, o, a, s, l, c = n(553813),
   d = n(65154);
 let f = [{
   name: "H265",
-  encode: "undefined" == typeof window || (null === (i = window) || void 0 === i ? void 0 : null === (r = i.DiscordNative) || void 0 === r ? void 0 : r.process.platform) !== "darwin" || (null === (a = window) || void 0 === a ? void 0 : null === (o = a.DiscordNative) || void 0 === o ? void 0 : o.os.arch) === "arm64" && u().satisfies(null === (l = window) || void 0 === l ? void 0 : null === (s = l.DiscordNative) || void 0 === s ? void 0 : s.os.release, d.n4),
+  encode: "undefined" == typeof window || (null == (i = window) || null == (r = i.DiscordNative) ? void 0 : r.process.platform) !== "darwin" || (null == (a = window) || null == (o = a.DiscordNative) ? void 0 : o.os.arch) === "arm64" && u().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? void 0 : s.os.release, d.n4),
   decode: !0
 }, {
   name: "H264",

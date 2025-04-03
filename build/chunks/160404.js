@@ -71,7 +71,7 @@ function b(e) {
   delete g[t]
 }
 
-function v(e) {
+function y(e) {
   let {
     guildId: t,
     roleId: n
@@ -80,7 +80,7 @@ function v(e) {
   delete g[t].roles[n]
 }
 
-function y(e) {
+function v(e) {
   var t;
   let {
     guildId: n,
@@ -89,11 +89,11 @@ function y(e) {
   if (null == n || null == g[n]) return !1;
   let i = g[n];
   if (null == i || i.type !== u.z.NEW_MEMBER) return !1;
-  let o = null !== (t = i.optInChannels) && void 0 !== t ? t : new Set;
+  let o = null != (t = i.optInChannels) ? t : new Set;
   return c.default.keys(r).forEach(e => {
     var t;
     let n = r[e];
-    s.yE(null !== (t = n.flags) && void 0 !== t ? t : 0, f.ic.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
+    s.yE(null != (t = n.flags) ? t : 0, f.ic.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
   }), i.optInChannels = o, !0
 }
 
@@ -108,7 +108,7 @@ function O(e) {
   if (null == n || null == g[n]) return !1;
   let a = g[n];
   if (null == a || a.type !== u.z.NEW_MEMBER) return !1;
-  let s = null !== (t = a.onboardingResponses) && void 0 !== t ? t : new Set;
+  let s = null != (t = a.onboardingResponses) ? t : new Set;
   return null != o && o.length > 0 && o.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), a.onboardingResponses = s, !0
 }
 
@@ -134,18 +134,18 @@ class S extends(r = i.ZP.Store) {
   }
   getViewingRoles(e) {
     var t;
-    return null === (t = g[e]) || void 0 === t ? void 0 : t.roles
+    return null == (t = g[e]) ? void 0 : t.roles
   }
   getViewingRolesTimestamp(e) {
     var t;
-    return null != e ? null === (t = g[e]) || void 0 === t ? void 0 : t.timestamp : null
+    return null != e ? null == (t = g[e]) ? void 0 : t.timestamp : null
   }
   getData(e) {
     return g[e]
   }
   isFullServerPreview(e) {
     var t;
-    return (null === (t = g[e]) || void 0 === t ? void 0 : t.type) === u.z.NEW_MEMBER
+    return (null == (t = g[e]) ? void 0 : t.type) === u.z.NEW_MEMBER
   }
   isOptInEnabled(e) {
     let t = g[e];
@@ -173,7 +173,7 @@ class S extends(r = i.ZP.Store) {
   }
   isViewingServerShop(e) {
     var t;
-    return null != e && (null === (t = g[e]) || void 0 === t ? void 0 : t.type) === u.z.SERVER_SHOP
+    return null != e && (null == (t = g[e]) ? void 0 : t.type) === u.z.SERVER_SHOP
   }
   getImpersonateType(e) {
     if (null == e) return null;
@@ -199,8 +199,8 @@ _(S, "displayName", "ImpersonateStore");
 let T = new S(o.Z, {
   IMPERSONATE_UPDATE: E,
   IMPERSONATE_STOP: b,
-  GUILD_ROLE_DELETE: v,
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: y,
+  GUILD_ROLE_DELETE: y,
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: v,
   GUILD_ONBOARDING_SELECT_OPTION: O,
   GUILD_MEMBER_UPDATE_LOCAL: I
 })

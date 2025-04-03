@@ -55,8 +55,8 @@ function m(e, t) {
 let g = null,
   E = null,
   b = null,
-  v = null,
   y = null,
+  v = null,
   O = !1,
   I = !1,
   S = null,
@@ -82,7 +82,7 @@ function R(e) {
     }
     let t = l.Q.createFromServer(e);
     n[t.id] = t, U(t) && (r[t.id] = t, t.type === d.NYc.GUILD && t.status !== d.O0b.ENDED && i.push(t), t.type === d.NYc.APPLICATION && t.status !== d.O0b.ENDED && o.push(t))
-  }), g = n, E = r, v = i, y = o
+  }), g = n, E = r, y = i, v = o
 }
 
 function P(e) {
@@ -105,11 +105,11 @@ function w(e) {
     [n.id]: n
   }), U(n) && (E = m(p({}, E), {
     [n.id]: n
-  })), null != v && n.type === d.NYc.GUILD && (v = P({
-    activeSubscriptions: v,
-    record: n
-  })), null != y && n.type === d.NYc.APPLICATION && (v = P({
+  })), null != y && n.type === d.NYc.GUILD && (y = P({
     activeSubscriptions: y,
+    record: n
+  })), null != v && n.type === d.NYc.APPLICATION && (y = P({
+    activeSubscriptions: v,
     record: n
   }))
 }
@@ -171,7 +171,7 @@ function k(e) {
 }
 
 function j() {
-  g = null, E = null, b = null, v = null, y = null, O = !1, I = !1, S = null, T = !1, N = !1
+  g = null, E = null, b = null, y = null, v = null, O = !1, I = !1, S = null, T = !1, N = !1
 }
 
 function U(e) {
@@ -226,7 +226,7 @@ class F extends(r = i.ZP.Store) {
   }
   inReverseTrial() {
     let e = B(d.NYc.PREMIUM, void 0, !0);
-    return !!(null != e && null != e.trialId && f.h8.includes(e.trialId)) && null == e.paymentSourceId
+    return null != e && null != e.trialId && !!f.h8.includes(e.trialId) && null == e.paymentSourceId
   }
   getSubscriptions() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
@@ -234,20 +234,20 @@ class F extends(r = i.ZP.Store) {
   }
   getSubscriptionById(e) {
     var t;
-    return null !== (t = null == g ? void 0 : g[e]) && void 0 !== t ? t : void 0
+    return null != (t = null == g ? void 0 : g[e]) ? t : void 0
   }
   getActiveGuildSubscriptions() {
-    return v
+    return y
   }
   getActiveApplicationSubscriptions() {
-    return y
+    return v
   }
   getSubscriptionForPlanIds(e) {
     var t;
     let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       r = new Set(e),
       i = n ? E : g;
-    return null == i ? null : null !== (t = Object.values(i).find(e => e.items.some(e => r.has(e.planId)))) && void 0 !== t ? t : null
+    return null == i ? null : null != (t = Object.values(i).find(e => e.items.some(e => r.has(e.planId)))) ? t : null
   }
   getMostRecentPremiumTypeSubscription() {
     return b

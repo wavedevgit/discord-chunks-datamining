@@ -15,7 +15,7 @@ var r, i = n(200651),
   f = n(699682),
   _ = n(540059),
   p = n(388032),
-  h = n(48974);
+  h = n(953100);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,9 +56,9 @@ function b(e, t) {
   }), e
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function v(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -111,7 +111,7 @@ function I(e) {
         key: s
       } = a, {
         transform: c
-      } = e, u = v(e, ["transform"]);
+      } = e, u = y(e, ["transform"]);
       return null != r && "" !== r ? (0, i.jsx)(l.animated.div, {
         style: b(g({}, u), {
           overflow: "hidden"
@@ -137,12 +137,12 @@ function I(e) {
 class S extends(r = o.Component) {
   componentDidMount() {
     var e, t, n, r;
-    null === (e = (t = this.context).setHasValue) || void 0 === e || e.call(t, null != this.props.defaultValue && "" !== this.props.defaultValue || null != this.props.value && "" !== this.props.value), null === (n = (r = this.context).setIsFocused) || void 0 === n || n.call(r, !1)
+    null == (e = (t = this.context).setHasValue) || e.call(t, null != this.props.defaultValue && "" !== this.props.defaultValue || null != this.props.value && "" !== this.props.value), null == (n = (r = this.context).setIsFocused) || n.call(r, !1)
   }
   componentDidUpdate() {
     if (null != this.props.value && "" !== this.props.value) {
       var e, t;
-      null === (e = (t = this.context).setHasValue) || void 0 === e || e.call(t, !0)
+      null == (e = (t = this.context).setHasValue) || e.call(t, !0)
     }
   }
   render() {
@@ -159,8 +159,8 @@ class S extends(r = o.Component) {
         prefixElement: _,
         focusProps: p
       } = n,
-      m = v(n, ["className", "inputClassName", "inputPrefix", "disabled", "size", "editable", "inputRef", "prefixElement", "focusProps"]),
-      E = null !== (t = m["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId;
+      m = y(n, ["className", "inputClassName", "inputPrefix", "disabled", "size", "editable", "inputRef", "prefixElement", "focusProps"]),
+      E = null != (t = m["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId;
     return (0, i.jsxs)("div", {
       className: s()(h.inputWrapper, r),
       children: [null != _ && _, null != a ? (0, i.jsx)("span", {
@@ -206,27 +206,27 @@ class S extends(r = o.Component) {
         value: t,
         minLength: n
       } = this.props;
-      return null != n && (null !== (e = null == t ? void 0 : t.length) && void 0 !== e ? e : 0) < n
+      return null != n && (null != (e = null == t ? void 0 : t.length) ? e : 0) < n
     }), m(this, "getIsOverFlowing", () => {
       var e;
       let {
         value: t,
         maxLength: n
       } = this.props;
-      return null != n && (null !== (e = null == t ? void 0 : t.length) && void 0 !== e ? e : 0) > n
+      return null != n && (null != (e = null == t ? void 0 : t.length) ? e : 0) > n
     }), m(this, "onChange", e => {
       var t, n, r, i;
-      null === (t = (n = this.props).onChange) || void 0 === t || t.call(n, e.currentTarget.value, this.props.name), this.setState({
+      null == (t = (n = this.props).onChange) || t.call(n, e.currentTarget.value, this.props.name), this.setState({
         dirty: !0
-      }), null === (r = (i = this.context).setHasValue) || void 0 === r || r.call(i, "" !== e.currentTarget.value)
+      }), null == (r = (i = this.context).setHasValue) || r.call(i, "" !== e.currentTarget.value)
     }), m(this, "onFocus", e => {
       var t, n, r, i;
-      null === (t = (n = this.props).onFocus) || void 0 === t || t.call(n, e, this.props.name), null === (r = (i = this.context).setIsFocused) || void 0 === r || r.call(i, !0)
+      null == (t = (n = this.props).onFocus) || t.call(n, e, this.props.name), null == (r = (i = this.context).setIsFocused) || r.call(i, !0)
     }), m(this, "onBlur", e => {
       var t, n, r, i;
-      null === (t = (n = this.props).onBlur) || void 0 === t || t.call(n, e, this.props.name), null === (r = (i = this.context).setIsFocused) || void 0 === r || r.call(i, !1)
+      null == (t = (n = this.props).onBlur) || t.call(n, e, this.props.name), null == (r = (i = this.context).setIsFocused) || r.call(i, !1)
     }), this.state = {
-      dirty: null !== (t = e.defaultDirty) && void 0 !== t && t
+      dirty: null != (t = e.defaultDirty) && t
     }
   }
 }

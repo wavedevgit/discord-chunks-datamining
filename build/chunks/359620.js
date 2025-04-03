@@ -7,8 +7,7 @@ let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   a = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
   s = ["arguments", "this", "super", "console", "window", "document", "localStorage", "sessionStorage", "module", "global"],
   l = [].concat(a, i, o);
-
-function c(e) {
+e.exports = function(e) {
   let c = e.regex,
     u = (e, {
       after: t
@@ -23,21 +22,14 @@ function c(e) {
     h = /<[A-Za-z0-9\\._:-]+/,
     m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
     g = (e, t) => {
-      let n;
-      let r = e[0].length + e.index,
+      let n, r = e[0].length + e.index,
         i = e.input[r];
-      if ("<" === i || "," === i) {
-        t.ignoreMatch();
-        return
-      }
+      if ("<" === i || "," === i) return void t.ignoreMatch();
       ">" !== i || u(e, {
         after: r
       }) || t.ignoreMatch();
       let o = e.input.substring(r);
-      if ((n = o.match(/^\s*=/)) || (n = o.match(/^\s+extends\s+/)) && 0 === n.index) {
-        t.ignoreMatch();
-        return
-      }
+      if ((n = o.match(/^\s*=/)) || (n = o.match(/^\s+extends\s+/)) && 0 === n.index) return void t.ignoreMatch()
     },
     E = {
       $pattern: t,
@@ -47,14 +39,14 @@ function c(e) {
       "variable.language": s
     },
     b = "[0-9](_?[0-9])*",
-    v = `\\.(${b})`,
-    y = "0|[1-9](_?[0-9])*|0[0-7]*[89][0-9]*",
+    y = `\\.(${b})`,
+    v = "0|[1-9](_?[0-9])*|0[0-7]*[89][0-9]*",
     O = {
       className: "number",
       variants: [{
-        begin: `(\\b(${y})((${v})|\\.)?|(${v}))[eE][+-]?(${b})\\b`
+        begin: `(\\b(${v})((${y})|\\.)?|(${y}))[eE][+-]?(${b})\\b`
       }, {
-        begin: `\\b(${y})\\b((${v})\\b|\\.)?|(${v})\\b`
+        begin: `\\b(${v})\\b((${y})\\b|\\.)?|(${y})\\b`
       }, {
         begin: "\\b(0|[1-9](_?[0-9])*)n\\b"
       }, {
@@ -350,4 +342,3 @@ function c(e) {
     }]
   }
 }
-e.exports = c

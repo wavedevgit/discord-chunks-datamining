@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(55935),
   E = n(74538),
   b = n(204418),
-  v = n(388032),
-  y = n(84722);
+  y = n(388032),
+  v = n(520271);
 let O = [{
     avatarSize: c.EFr.SIZE_40,
     showStatus: !1
@@ -43,7 +43,7 @@ let O = [{
       year: "numeric"
     });
     return (0, r.jsxs)("div", {
-      className: y.purchaseInfo,
+      className: v.purchaseInfo,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: "header-primary",
@@ -54,18 +54,18 @@ let O = [{
       }), null != o && (0, r.jsx)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: v.NW.format(v.t.Io7ozs, {
+        children: y.NW.format(y.t.Io7ozs, {
           days: o.days.toString()
         })
       }), (0, r.jsxs)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: [i ? v.NW.format(v.t.LFVi6O, {
+        children: [i ? y.NW.format(y.t.LFVi6O, {
           dateAcquired: s
-        }) : v.NW.format(v.t.gW9R4O, {
+        }) : y.NW.format(y.t.gW9R4O, {
           date: s
         }), null != t.expiresAt && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("br", {}), v.NW.format(v.t.eZSTa2, {
+          children: [(0, r.jsx)("br", {}), y.NW.format(y.t.eZSTa2, {
             date: t.expiresAt.toLocaleDateString(n, {
               minute: "numeric",
               hour: "numeric",
@@ -78,7 +78,7 @@ let O = [{
       }), i && (0, r.jsx)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: v.NW.string(v.t.UewH9P)
+        children: y.NW.string(y.t.UewH9P)
       })]
     })
   },
@@ -91,18 +91,18 @@ let O = [{
     } = e, h = (0, l.e7)([m.Z], () => m.Z.getStatus(t.id)), {
       product: g,
       purchase: S
-    } = (0, d.Z)(null == o ? void 0 : o.skuId), T = E.ZP.canUseCollectibles(t), N = (0, u.qS)(S), A = (0, u.G1)(g), C = !T && N, R = (0, p.M)(!A || T), P = (0, f.k)(g), w = i.useMemo(() => C ? v.NW.string(v.t.zrBmQE) : (0, s.EQ)([A, T, R]).with([!0, !0, !1], () => v.NW.string(v.t.L5hyz8)).with([!0, !1, !0], () => v.NW.string(v.t.q0PlFh)).with([!0, !1, !1], () => v.NW.string(v.t.ucqOV1)).otherwise(() => v.NW.string(v.t.UROtt7)), [C, A, T, R]);
+    } = (0, d.Z)(null == o ? void 0 : o.skuId), T = E.ZP.canUseCollectibles(t), N = (0, u.qS)(S), A = (0, u.G1)(g), C = !T && N, R = (0, p.M)(!A || T), P = (0, f.k)(g), w = i.useMemo(() => C ? y.NW.string(y.t.zrBmQE) : (0, s.EQ)([A, T, R]).with([!0, !0, !1], () => y.NW.string(y.t.L5hyz8)).with([!0, !1, !0], () => y.NW.string(y.t.q0PlFh)).with([!0, !1, !1], () => y.NW.string(y.t.ucqOV1)).otherwise(() => y.NW.string(y.t.UROtt7)), [C, A, T, R]);
     return null != g && (null == S || C) ? (0, r.jsxs)("div", {
-      className: a()(y.modalPreview, y.shopPreviewContainer, _),
+      className: a()(v.modalPreview, v.shopPreviewContainer, _),
       children: [(0, r.jsx)("div", {
-        className: y.shopPreviewBanner,
+        className: v.shopPreviewBanner,
         children: (0, r.jsx)(b.Z, {
           user: t,
           guildId: n,
           avatarDecorationOverride: o
         })
       }), (0, r.jsxs)("div", {
-        className: y.shopPreviewTextContainer,
+        className: v.shopPreviewTextContainer,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           children: P
@@ -112,25 +112,25 @@ let O = [{
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: a()(y.modalPreview, _),
+      className: a()(v.modalPreview, _),
       children: [(0, r.jsxs)("div", {
-        className: y.previewSections,
+        className: v.previewSections,
         children: [(0, r.jsx)("div", {
-          className: y.decorationPreview,
+          className: v.decorationPreview,
           children: (0, r.jsx)(b.Z, {
             user: t,
             guildId: n,
             avatarDecorationOverride: o
           })
         }), (0, r.jsx)("div", {
-          className: y.smallDecorationPreviewsContainer,
+          className: v.smallDecorationPreviewsContainer,
           children: O.map(e => {
             let {
               avatarSize: i,
               showStatus: a
             } = e;
             return (0, r.jsx)("div", {
-              className: y.smallDecorationPreview,
+              className: v.smallDecorationPreview,
               children: (0, r.jsx)(b.Z, {
                 user: t,
                 guildId: n,

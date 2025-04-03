@@ -13,8 +13,8 @@ var r, i, o, a, s = n(161581),
   g = n(531460),
   E = n(391673),
   b = s.setImmediate,
-  v = s.clearImmediate,
-  y = s.process,
+  y = s.clearImmediate,
+  v = s.process,
   O = s.Dispatch,
   I = s.Function,
   S = s.MessageChannel,
@@ -42,17 +42,17 @@ var R = function(e) {
   D = function(e) {
     s.postMessage(T(e), r.protocol + "//" + r.host)
   };
-b && v || (b = function(e) {
+b && y || (b = function(e) {
   m(arguments.length, 1);
   var t = u(e) ? e : I(e),
     n = p(arguments, 1);
   return A[++N] = function() {
     l(t, void 0, n)
   }, i(N), N
-}, v = function(e) {
+}, y = function(e) {
   delete A[e]
 }, E ? i = function(e) {
-  y.nextTick(P(e))
+  v.nextTick(P(e))
 } : O && O.now ? i = function(e) {
   O.now(P(e))
 } : S && !g ? (a = (o = new S).port2, o.port1.onmessage = w, i = c(a.postMessage, a)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(D) ? (i = D, s.addEventListener("message", w, !1)) : i = C in h("script") ? function(e) {
@@ -63,5 +63,5 @@ b && v || (b = function(e) {
   setTimeout(P(e), 0)
 }), e.exports = {
   set: b,
-  clear: v
+  clear: y
 }

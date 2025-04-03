@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(626135),
   h = n(981631),
   m = n(388032),
-  g = n(901491);
+  g = n(714745);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,7 +41,7 @@ function b(e) {
   return e
 }
 
-function v() {
+function y() {
   (0, l.ZDy)(async () => {
     let {
       default: e
@@ -52,7 +52,7 @@ function v() {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     className: t,
     iconOnly: n
@@ -72,7 +72,7 @@ function y(e) {
       location_stack: E
     })
   }, [o, E]);
-  let y = () => (0, r.jsxs)("div", {
+  let v = () => (0, r.jsxs)("div", {
       className: a()(g.root, t),
       children: [(0, r.jsx)(l.SrA, {
         size: "md",
@@ -82,13 +82,13 @@ function y(e) {
         className: g.text,
         variant: "text-sm/normal",
         children: m.NW.format(m.t.BNAIBQ, {
-          onLearnMore: v
+          onLearnMore: y
         })
       })]
     }),
     O = () => (0, r.jsx)(l.P3F, {
       className: g.iconOnly,
-      onClick: () => v(),
+      onClick: () => y(),
       children: (0, r.jsx)(l.ua7, {
         text: m.NW.string(m.t["+eFIjY"]),
         position: "top",
@@ -99,5 +99,5 @@ function y(e) {
         }, e))
       })
     });
-  return n ? O() : y()
+  return n ? O() : v()
 }

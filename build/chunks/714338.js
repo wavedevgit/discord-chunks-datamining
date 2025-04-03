@@ -20,11 +20,11 @@ let d = {},
   g = (0, c.isMac)() || (0, c.isMacWeb)() ? "return" : "enter",
   E = [...o.u.binds, "mod+shift+[", "mod+shift+]", "mod+[", "mod+]", "alt+[", "alt+]", "ctrl+shift+tab", "ctrl+tab", "mod+n", "mod+t", "mod+shift+t", "mod+plus", "mod+minus", "mod+0"].map(e => e.replace("mod", h)),
   b = () => [],
-  v = [];
+  y = [];
 
-function y(e, t) {
+function v(e, t) {
   let n = e => t(e, e.key);
-  document.addEventListener(e, n), v.push(() => document.removeEventListener(e, n))
+  document.addEventListener(e, n), y.push(() => document.removeEventListener(e, n))
 }
 
 function O(e) {
@@ -48,7 +48,7 @@ function S(e) {
     if (0 === r.length) continue;
     let i = n.comboKeysBindGlobal ? p.bindGlobal : p.bind;
     if (null != n.action && i.call(p, r, I(t, n.action)), null != n.keyup && i.call(p, r, I(t, n.keyup), "keyup"), null != n.keydown) {
-      let e = r.indexOf("any-character"); - 1 !== e && (y("keydown", n.keydown), r.splice(e, 1)), r.length > 0 && i.call(p, r, I(t, n.keydown), "keydown")
+      let e = r.indexOf("any-character"); - 1 !== e && (v("keydown", n.keydown), r.splice(e, 1)), r.length > 0 && i.call(p, r, I(t, n.keydown), "keydown")
     }
     null != n.keypress && i.call(p, r, I(t, n.keypress), "keypress")
   }
@@ -71,7 +71,7 @@ let T = {
     d = e
   },
   enable() {
-    !_ && (_ = !0, this.checkDupes(d), S(d))
+    _ || (_ = !0, this.checkDupes(d), S(d))
   },
   enableTemp(e) {
     f.push(d), d = e, S(e), _ = !0
@@ -81,7 +81,7 @@ let T = {
     null != e && (d = e), this.disable(), this.enable()
   },
   disable() {
-    _ && (_ = !1, v.forEach(e => e()), v = [], p.reset())
+    _ && (_ = !1, y.forEach(e => e()), y = [], p.reset())
   },
   validateKeybind(e) {
     _ && this.hasBind(e) && p.unbind(e)

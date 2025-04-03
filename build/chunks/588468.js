@@ -21,8 +21,8 @@ var r, i = n(200651),
   g = n(471445),
   E = n(511618),
   b = n(887120),
-  v = n(926491),
-  y = n(378233),
+  y = n(926491),
+  v = n(378233),
   O = n(695346),
   I = n(430824),
   S = n(699516),
@@ -33,7 +33,7 @@ var r, i = n(200651),
   R = n(981631),
   P = n(185923),
   w = n(388032),
-  D = n(13982);
+  D = n(256965);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -119,7 +119,7 @@ class V extends o.PureComponent {
     } = this, l = this.isSelectable();
     return (0, i.jsx)(d.P3F, k(x({}, e), {
       className: s()(D.clickable, r, n),
-      id: null !== (t = G(o)) && void 0 !== t ? t : void 0,
+      id: null != (t = G(o)) ? t : void 0,
       onClick: l ? this.handleClick : void 0,
       onMouseMove: l ? () => {
         this.setState({
@@ -253,7 +253,7 @@ class K extends V {
         })
       }), (0, i.jsx)(C.z5, {
         children: (0, i.jsx)(C.BR, {
-          children: null !== (e = null != n ? n : s) && void 0 !== e ? e : A.ZP.getName(t)
+          children: null != (e = null != n ? n : s) ? e : A.ZP.getName(t)
         })
       }), (0, i.jsxs)(C.dY, {
         children: [A.ZP.getUserTag(t, {
@@ -400,16 +400,16 @@ class J extends V {
 class $ extends V {
   renderContent() {
     var e, t;
-    let n;
-    let {
-      queryMatch: r,
-      renderSticker: o,
-      selected: a,
-      sticker: s
-    } = this.props, {
-      hovered: l
-    } = this.state;
-    return (0, y.jl)(s) ? n = null === (e = v.Z.getStickerPack(s.pack_id)) || void 0 === e ? void 0 : e.name : (0, y.J8)(s) && (n = null === (t = I.Z.getGuild(s.guild_id)) || void 0 === t ? void 0 : t.name), (0, i.jsxs)(C.RX, {
+    let n, {
+        queryMatch: r,
+        renderSticker: o,
+        selected: a,
+        sticker: s
+      } = this.props,
+      {
+        hovered: l
+      } = this.state;
+    return (0, v.jl)(s) ? n = null == (e = y.Z.getStickerPack(s.pack_id)) ? void 0 : e.name : (0, v.J8)(s) && (n = null == (t = I.Z.getGuild(s.guild_id)) ? void 0 : t.name), (0, i.jsxs)(C.RX, {
       children: [(0, i.jsx)(C.Tw, {
         children: o(s, l || !0 === a)
       }), (0, i.jsxs)(C.z5, {

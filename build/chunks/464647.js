@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   l = n(481060),
   c = n(686546),
   u = n(562558),
-  d = n(830135);
+  d = n(1376);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -119,7 +119,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     game: t,
     activityLevel: n
@@ -138,7 +138,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     profile: t
   } = e, n = t.gameActivity, {
@@ -182,7 +182,7 @@ function y(e) {
   }, [s, c, n]);
   return null == o || 0 === o.length ? null : 1 === o.length ? (0, r.jsx)("div", {
     className: d.container,
-    children: (0, r.jsx)(v, {
+    children: (0, r.jsx)(y, {
       game: o[0],
       activityLevel: n[o[0].id]
     })

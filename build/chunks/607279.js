@@ -9,7 +9,7 @@ var r, i = n(200651),
   s = n.n(a),
   l = n(481060),
   c = n(388032),
-  u = n(693009);
+  u = n(449101);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,8 +50,8 @@ class h extends(r = o.Component) {
       autoComplete: g,
       forwardedRef: E,
       closeIconClassName: b,
-      searchIconClassName: v,
-      cta: y
+      searchIconClassName: y,
+      cta: v
     } = this.props, O = null != r && r.length > 0, I = null != E ? E : this._textInputRef;
     return (0, i.jsx)(l.tEY, {
       focusTarget: I,
@@ -77,11 +77,11 @@ class h extends(r = o.Component) {
           autoFocus: e,
           "aria-label": t,
           autoComplete: g ? "on" : "off"
-        }), null != y ? (0, i.jsx)(l.Text, {
+        }), null != v ? (0, i.jsx)(l.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
           className: u.cta,
-          children: y
+          children: v
         }) : null, O ? (0, i.jsx)(l.P3F, {
           onClick: this.handleClear,
           className: u.clear,
@@ -94,7 +94,7 @@ class h extends(r = o.Component) {
         }) : (0, i.jsx)(l._Ve, {
           size: "md",
           color: "currentColor",
-          className: s()(u.searchIcon, v),
+          className: s()(u.searchIcon, y),
           "aria-label": c.NW.string(c.t["5h0QOD"])
         })]
       })

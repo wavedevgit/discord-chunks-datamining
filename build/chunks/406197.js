@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "[a-zA-Z_$][a-zA-Z0-9_$]*",
     n = /(-?)(\b0[xX][a-fA-F0-9_]+|(\b\d+(\.[\d_]*)?|\.[\d_]+)(([eE][-+]?\d+)|i32|u32|i64|f64)?)/;
   return {
@@ -119,4 +119,3 @@ function t(e) {
     illegal: /<\//
   }
 }
-e.exports = t

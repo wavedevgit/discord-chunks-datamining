@@ -5,8 +5,7 @@ var r = n(369529),
   a = n(484155),
   s = n(246209),
   l = Math.max;
-
-function c(e) {
+e.exports = function(e) {
   if (!(e && e.length)) return [];
   var t = 0;
   return e = r(e, function(e) {
@@ -15,4 +14,3 @@ function c(e) {
     return i(e, o(t))
   })
 }
-e.exports = c

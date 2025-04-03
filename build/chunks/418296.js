@@ -6,8 +6,7 @@ var r = n(425561),
   s = n(833295),
   l = n(433005),
   c = 200;
-
-function u(e, t, n) {
+e.exports = function(e, t, n) {
   var u = -1,
     d = i,
     f = e.length,
@@ -31,4 +30,3 @@ function u(e, t, n) {
   }
   return p
 }
-e.exports = u

@@ -97,15 +97,15 @@ class p extends(r = i.ZP.Store) {
   }
   getLocalizedName(e) {
     var t;
-    return null === (t = s.get(e)) || void 0 === t ? void 0 : t.name
+    return null == (t = s.get(e)) ? void 0 : t.name
   }
   getThemes(e) {
     var t;
-    return null === (t = s.get(e)) || void 0 === t ? void 0 : t.themes
+    return null == (t = s.get(e)) ? void 0 : t.themes
   }
   getCoverImageUrl(e, t) {
     var n;
-    let r = null === (n = s.get(e)) || void 0 === n ? void 0 : n.coverImageUrl;
+    let r = null == (n = s.get(e)) ? void 0 : n.coverImageUrl;
     return null == r ? null : null == t ? r : "".concat(r, "?width=").concat(t.width, "&height=").concat(t.height)
   }
 }

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v,
-  q: () => y
+  Z: () => y,
+  q: () => v
 }), n(627341), n(653041);
 var r = n(278074),
   i = n(979554),
@@ -81,7 +81,7 @@ let E = e => (0, r.EQ)(e).with({
     let n = E(t);
     return null != n && e.push(n), e
   }, []) : [];
-class v extends l.Z {
+class y extends l.Z {
   static fromServer(e) {
     var {
       type: t,
@@ -91,14 +91,14 @@ class v extends l.Z {
       bundled_products: o,
       variants: l
     } = e, c = m(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
-    return new v(h(_({}, super.fromServer(c)), {
+    return new y(h(_({}, super.fromServer(c)), {
       type: t,
       premiumType: n === d.WND ? null : n,
       categorySkuId: r,
       prices: (0, s.l)(i),
       items: b(c.items),
       bundledProducts: null == o ? void 0 : o.map(a.Z.fromServer),
-      variants: null == l ? void 0 : l.map(y.fromServer),
+      variants: null == l ? void 0 : l.map(v.fromServer),
       googleSkuIds: c.google_sku_ids
     }))
   }
@@ -106,7 +106,7 @@ class v extends l.Z {
     super(e), f(this, "prices", void 0), f(this, "type", void 0), f(this, "premiumType", void 0), f(this, "items", void 0), f(this, "categorySkuId", void 0), f(this, "bundledProducts", void 0), f(this, "variants", void 0), f(this, "variantGroupStoreListingId", void 0), f(this, "googleSkuIds", void 0), this.summary = e.summary, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.prices = e.prices, this.bundledProducts = e.bundledProducts, this.googleSkuIds = e.googleSkuIds, this.variants = e.variants
   }
 }
-class y extends v {
+class v extends y {
   static fromServer(e) {
     var {
       base_variant_name: t,
@@ -114,7 +114,7 @@ class y extends v {
       variant_label: r,
       variant_value: i
     } = e, o = m(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
-    return new y(h(_({}, super.fromServer(o)), {
+    return new v(h(_({}, super.fromServer(o)), {
       baseVariantName: t,
       baseVariantSkuId: n,
       variantLabel: r,

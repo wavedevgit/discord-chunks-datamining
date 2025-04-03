@@ -20,8 +20,8 @@ var r = n(392711),
   g = n(581025),
   E = n(795448),
   b = n(441623),
-  v = n(474936),
-  y = n(981631);
+  y = n(474936),
+  v = n(981631);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,9 +89,9 @@ class N extends a.Z {
         o = b.Z.getFriendAnniversaries().filter(e => t.has(e));
       if (r && o.length > 0) {
         let e = o[0];
-        this.maybeSendGiftingPromptSystemMessageDebounced(i.id, v.hX.FRIEND_ANNIVERSARY, e, o.length > 1 ? v.X2.VIEW_ALL : v.X2.SEND_MESSAGE)
+        this.maybeSendGiftingPromptSystemMessageDebounced(i.id, y.hX.FRIEND_ANNIVERSARY, e, o.length > 1 ? y.X2.VIEW_ALL : y.X2.SEND_MESSAGE)
       }
-      n && h.default.track(y.rMx.FRIEND_ANNIVERSARIES_CHANNEL_VIEWED, I({
+      n && h.default.track(v.rMx.FRIEND_ANNIVERSARIES_CHANNEL_VIEWED, I({
         friend_anniversaries_count: o.length
       }, (0, s.v_)(i)))
     }

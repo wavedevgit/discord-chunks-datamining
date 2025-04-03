@@ -3,8 +3,7 @@ var r = n(42848),
   i = 0xfffffffe,
   o = Math.floor,
   a = Math.min;
-
-function s(e, t, n, s) {
+e.exports = function(e, t, n, s) {
   var l = 0,
     c = null == e ? 0 : e.length;
   if (0 === c) return 0;
@@ -15,10 +14,9 @@ function s(e, t, n, s) {
       g = null === h,
       E = h == h,
       b = r(h);
-    if (u) var v = s || E;
-    else v = _ ? E && (s || m) : d ? E && m && (s || !g) : f ? E && m && !g && (s || !b) : !g && !b && (s ? h <= t : h < t);
-    v ? l = p + 1 : c = p
+    if (u) var y = s || E;
+    else y = _ ? E && (s || m) : d ? E && m && (s || !g) : f ? E && m && !g && (s || !b) : !g && !b && (s ? h <= t : h < t);
+    y ? l = p + 1 : c = p
   }
   return a(c, i)
 }
-e.exports = s

@@ -86,10 +86,7 @@ function g(e) {
       } = this.state, {
         style: i
       } = this.props, o = null != i ? h(i.backgroundImage) : null;
-      null == o && o !== n ? this.setState({
-        loaded: !0,
-        cached: o
-      }) : this.cachedURLs.indexOf(o) >= 0 ? this.setState({
+      null == o && o !== n || this.cachedURLs.indexOf(o) >= 0 ? this.setState({
         loaded: !0,
         cached: o
       }) : null != o && o !== n && !0 === r && this.setState({

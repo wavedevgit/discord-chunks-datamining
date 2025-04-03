@@ -39,21 +39,21 @@ function u(e) {
       autoplay: n
     }), E.setupRiveListeners())
   }, [E, n, m]);
-  let v = i.useRef(0);
+  let y = i.useRef(0);
   i.useEffect(() => {
     if (null == E) return;
     E.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (v.current = t.data, t.data > 0 && (p.reducedMotion.enabled && E.isPlaying && E.pause(), E.off(a.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (y.current = t.data, t.data > 0 && (p.reducedMotion.enabled && E.isPlaying && E.pause(), E.off(a.EventType.Advance, e)))
     };
     return E.on(a.EventType.Advance, e), () => {
       E.off(a.EventType.Advance, e)
     }
   }, [E, p.reducedMotion.enabled]);
-  let y = i.useRef(!1);
+  let v = i.useRef(!1);
   return i.useEffect(() => {
-    if (null != E) return !h && y.current && E.isPlaying && v.current > 0 ? E.pause() : h && !E.isPlaying && y.current && E.play(), () => {
-      null != E && h && (y.current = null != E.frameRequestId)
+    if (null != E) return !h && v.current && E.isPlaying && y.current > 0 ? E.pause() : h && !E.isPlaying && v.current && E.play(), () => {
+      null != E && h && (v.current = null != E.frameRequestId)
     }
   }, [E, h]), (0, r.jsx)(b, {
     className: o,

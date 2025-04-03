@@ -7,7 +7,7 @@ n.d(t, {
   _I: () => p,
   _S: () => m,
   fD: () => h,
-  mG: () => v,
+  mG: () => y,
   pU: () => f,
   r4: () => T
 }), n(301563), n(866573), n(642549), n(787622), n(474991), n(398202), n(47120);
@@ -36,7 +36,7 @@ function _() {
 }
 
 function p(e) {
-  if (v(e)) return Promise.resolve(y(e));
+  if (y(e)) return Promise.resolve(v(e));
   let t = s.Z.safeParseWithQuery(e);
   return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, o.tn.get({
     url: i.format(t),
@@ -54,8 +54,7 @@ function m() {
     var e;
     let t = r.parse(window.document.cookie)[l.ZF];
     if (null == t) return {};
-    let n = JSON.parse(atob(t.substring(t.indexOf(".") + 1)));
-    return null !== (e = n.$meta.experiments) && void 0 !== e ? e : {}
+    return null != (e = JSON.parse(atob(t.substring(t.indexOf(".") + 1))).$meta.experiments) ? e : {}
   } catch (e) {
     return {}
   }
@@ -67,11 +66,11 @@ function E(e) {
 }
 let b = RegExp("^dev://branch/([\\w-./]+)$", "i");
 
-function v(e) {
+function y(e) {
   return null != e && b.test(e)
 }
 
-function y(e) {
+function v(e) {
   let t = e.match(b);
   if (null == t || 2 !== t.length) return null;
   let n = (0, a.getNativePlatform)(),
@@ -92,7 +91,7 @@ let O = "s",
   S = new Set(["/__development/link", "/__development/link/"]);
 
 function T(e) {
-  if (v(e)) return {
+  if (y(e)) return {
     payload: null,
     url: e
   };

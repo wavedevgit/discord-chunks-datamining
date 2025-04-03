@@ -20,8 +20,8 @@ var r = n(544891),
 let g = 9437184,
   E = 0xe00000,
   b = new d.Z("DebugUploadManager"),
-  v = null,
-  y = null;
+  y = null,
+  v = null;
 
 function O(e) {
   switch (e.code) {
@@ -60,7 +60,7 @@ async function S(e) {
       n = "Logs failed: ".concat(e)
     }
     try {
-      o = (null == v ? void 0 : v.getSystemLog) != null ? await new Promise(e => v.getSystemLog(e)) : ""
+      o = (null == y ? void 0 : y.getSystemLog) != null ? await new Promise(e => y.getSystemLog(e)) : ""
     } catch (e) {
       o = "System Logs failed ".concat(e)
     }
@@ -71,7 +71,7 @@ async function S(e) {
     }
     try {
       var t;
-      s = null !== (t = (0, i.AG)()) && void 0 !== t ? t : ""
+      s = null != (t = (0, i.AG)()) ? t : ""
     } catch (e) {
       s = "LibDiscore logs failed: ".concat(e)
     }
@@ -80,7 +80,7 @@ async function S(e) {
       let e = 1 - g / d;
       n = n.slice(n.length - Math.floor(n.length * e)), o = o.slice(o.length - Math.floor(o.length * e)), a = a.slice(a.length - Math.floor(a.length * e)), s = s.slice(s.length - Math.floor(s.length * e))
     }
-    let E = (null == y ? void 0 : y.AppOpenedTimestamp) != null ? y.AppOpenedTimestamp : null,
+    let E = (null == v ? void 0 : v.AppOpenedTimestamp) != null ? v.AppOpenedTimestamp : null,
       b = "\n    ".concat((0, p.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(o, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(a, "\n    ");
     u.ZH();
     let O = m.ANM.DEBUG_LOG(e, "discord_app_logs");

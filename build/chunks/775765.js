@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = /[dualxmsipngr]{0,12}/,
     r = {
@@ -172,4 +172,3 @@ function t(e) {
     contains: _
   }
 }
-e.exports = t

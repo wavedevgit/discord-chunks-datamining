@@ -3,7 +3,7 @@
 n.d(t, {
   C3: () => E,
   Fg: () => g,
-  Oh: () => v,
+  Oh: () => y,
   cP: () => m,
   gp: () => b
 }), n(47120);
@@ -104,7 +104,7 @@ let m = async e => {
     server_guide_channel_type: "member action",
     channel_action_type: r.actionType
   }), (0, l.Kh)(t)
-}, v = (e, t) => {
+}, y = (e, t) => {
   if (i.Z.dispatch({
       type: "COMPLETE_NEW_MEMBER_ACTION",
       guildId: e,
@@ -114,8 +114,8 @@ let m = async e => {
     o = f.Z.getActionForChannel(e, t);
   if (null != n && null != o) {
     var a, l;
-    let t = d.default.keys(null !== (a = p.Z.getCompletedActions(e)) && void 0 !== a ? a : {}),
-      r = null !== (l = f.Z.getNewMemberActions(e)) && void 0 !== l ? l : [];
+    let t = d.default.keys(null != (a = p.Z.getCompletedActions(e)) ? a : {}),
+      r = null != (l = f.Z.getNewMemberActions(e)) ? l : [];
     u.default.track(h.rMx.SERVER_GUIDE_ACTION_COMPLETED, {
       guild_id: n.guild_id,
       channel_id: n.id,

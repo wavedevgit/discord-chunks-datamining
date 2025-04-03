@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -15,8 +15,8 @@ var i = n(120356),
   d = n(198620),
   f = n(746878),
   _ = n(981631),
-  p = n(289104),
-  h = n(732358);
+  p = n(833845),
+  h = n(606629);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,13 +57,13 @@ function b(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   return {
     react(t, i, m) {
       let E = m.noStyleAndInteraction ? void 0 : async n => {
         let r = await (0, d.B_)(t.attachmentUrl);
         e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, a.pTH)(), (0, l.Z)(r)
-      }, v = m.noStyleAndInteraction ? _.dG4 : e => {
+      }, y = m.noStyleAndInteraction ? _.dG4 : e => {
         (0, s.jW)(e, async () => {
           let {
             default: e
@@ -78,7 +78,7 @@ function v(e) {
         role: "link",
         href: t.attachmentUrl,
         onClick: E,
-        onContextMenu: v,
+        onContextMenu: y,
         className: "attachmentLink",
         children: [(0, r.jsx)(a.Ujz, {
           size: "xs",

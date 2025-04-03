@@ -29,7 +29,7 @@ function s(e) {
 
 function l(e) {
   var t;
-  return "IMG" === e.nodeName && ((0, r.v)() || !(null !== (t = document.documentElement) && void 0 !== t && t.contains(e)))
+  return "IMG" === e.nodeName && ((0, r.v)() || !(null != (t = document.documentElement) && t.contains(e)))
 }
 
 function c(e, t, n, i) {
@@ -55,18 +55,18 @@ function u(e, t, n, o, s) {
     g = c(u, t, _, p),
     E = g.dragPreviewWidth,
     b = g.dragPreviewHeight,
-    v = function() {
+    y = function() {
       var e = new i.I([0, .5, 1], [f.y, f.y / p * b, f.y + b - p]).interpolate(m);
       return (0, r.G)() && u && (e += (window.devicePixelRatio - 1) * b), e
     },
-    y = function() {
+    v = function() {
       return new i.I([0, .5, 1], [f.x, f.x / _ * E, f.x + E - _]).interpolate(h)
     },
     O = s.offsetX,
     I = s.offsetY,
     S = 0 === I || I;
   return {
-    x: 0 === O || O ? O : y(),
-    y: S ? I : v()
+    x: 0 === O || O ? O : v(),
+    y: S ? I : y()
   }
 }

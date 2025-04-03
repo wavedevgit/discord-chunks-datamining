@@ -27,7 +27,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,7 +52,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,7 +62,7 @@ let I = window.DiscordNative,
   N = null,
   A = null,
   C = {};
-null != I && (T = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), A = null === (r = (i = I.remoteApp).getModuleVersions) || void 0 === r ? void 0 : r.call(i), N = null === (o = (a = I.remoteApp).getBuildNumber) || void 0 === o ? void 0 : o.call(a));
+null != I && (T = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), A = null == (r = (i = I.remoteApp).getModuleVersions) ? void 0 : r.call(i), N = null == (o = (a = I.remoteApp).getBuildNumber) ? void 0 : o.call(a));
 let R = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   P = !1,
   w = "lastImageSaveDirectory";
@@ -90,13 +90,13 @@ var x = function(e) {
 function k(e) {
   var t, n, r, i, o, a, s, l, c;
   return {
-    id: C[null !== (t = e.id) && void 0 !== t ? t : ""],
-    nativeProcessObserverId: parseInt(null !== (n = e.id) && void 0 !== n ? n : "", 10),
-    name: null !== (r = e.gameName) && void 0 !== r ? r : e.name,
-    processName: null !== (i = e.name) && void 0 !== i ? i : "",
+    id: C[null != (t = e.id) ? t : ""],
+    nativeProcessObserverId: parseInt(null != (n = e.id) ? n : "", 10),
+    name: null != (r = e.gameName) ? r : e.name,
+    processName: null != (i = e.name) ? i : "",
     hidden: e.hidden,
     elevated: e.elevated,
-    sandboxed: null !== (o = e.sandboxed) && void 0 !== o && o,
+    sandboxed: null != (o = e.sandboxed) && o,
     lastFocused: e.lastFocused,
     exePath: e.exePath,
     exeName: e.exeName,
@@ -104,10 +104,10 @@ function k(e) {
     distributor: e.distributor,
     sku: e.sku,
     pid: e.pid,
-    pidPath: null !== (a = e.pidPath) && void 0 !== a ? a : [],
-    windowHandle: null !== (s = e.windowHandle) && void 0 !== s ? s : null,
-    fullscreenType: null !== (l = e.fullscreenType) && void 0 !== l ? l : _.Jx.UNKNOWN,
-    isLauncher: null !== (c = e.isLauncher) && void 0 !== c && c
+    pidPath: null != (a = e.pidPath) ? a : [],
+    windowHandle: null != (s = e.windowHandle) ? s : null,
+    fullscreenType: null != (l = e.fullscreenType) ? l : _.Jx.UNKNOWN,
+    isLauncher: null != (c = e.isLauncher) && c
   }
 }
 let j = {
@@ -124,7 +124,7 @@ let j = {
     try {
       n = this.requireModule("discord_overlay2")
     } catch (e) {}
-    n && n.reset && n.reset(), n && n.disconnectAllProcesses && n.destroyHostProcess && (n.disconnectAllProcesses(), n.destroyHostProcess()), I.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(u.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && I.userDataCache.cacheUserData(f.K.stringify()), null == I || null === (t = I.window) || void 0 === t || t.close(null == I ? void 0 : null === (e = I.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
+    n && n.reset && n.reset(), n && n.disconnectAllProcesses && n.destroyHostProcess && (n.disconnectAllProcesses(), n.destroyHostProcess()), I.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(u.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && I.userDataCache.cacheUserData(f.K.stringify()), null == I || null == (t = I.window) || t.close(null == I || null == (e = I.globalOverlay) ? void 0 : e.WINDOW_KEY)
   },
   inputEventRegister(e, t, n, r) {
     Array.isArray(t) || (t = t.toJS()), this.getDiscordUtils().inputEventRegister(parseInt(e), t.map(e => {
@@ -147,7 +147,7 @@ let j = {
       let n = 0;
       this.getDiscordUtils().setObservedGamesCallback(e.map(e => {
         let t = ++n;
-        return null != e.id && (C[t] = e.id), O(v({}, e), {
+        return null != e.id && (C[t] = e.id), O(y({}, e), {
           cmdline: e.cmdLine,
           id: t
         })
@@ -161,7 +161,7 @@ let j = {
     this.getDiscordUtils().clearCandidateGamesCallback()
   },
   setGameCandidateOverrides(e) {
-    this.getDiscordUtils().setGameCandidateOverrides(e.map(e => O(v({}, e), {
+    this.getDiscordUtils().setGameCandidateOverrides(e.map(e => O(y({}, e), {
       gameId: e.id,
       gameName: e.name
     })))
@@ -190,7 +190,7 @@ let j = {
   },
   isSystemDarkMode() {
     var e, t, n;
-    return !!(0, h.isWindows)() && (null === (n = null === (e = (t = this.getDiscordUtils()).isSystemDarkMode) || void 0 === e ? void 0 : e.call(t)) || void 0 === n || n)
+    return !!(0, h.isWindows)() && (null == (n = null == (e = (t = this.getDiscordUtils()).isSystemDarkMode) ? void 0 : e.call(t)) || n)
   },
   getVoiceFilters() {
     return this.requireModule("discord_voice_filters")
@@ -214,7 +214,7 @@ let j = {
   },
   setThumbarButtons(e) {
     var t, n;
-    h.isPlatformEmbedded && (null === (n = I.thumbar) || void 0 === n || null === (t = n.setThumbarButtons) || void 0 === t || t.call(n, e, this.isSystemDarkMode()))
+    h.isPlatformEmbedded && (null == (n = I.thumbar) || null == (t = n.setThumbarButtons) || t.call(n, e, this.isSystemDarkMode()))
   },
   bounceDock(e) {
     if (h.isPlatformEmbedded) {
@@ -270,7 +270,7 @@ let j = {
     l()(h.isPlatformEmbedded, "Save image method called outside native app");
     let n = m.Z.toURLSafe(e);
     if (null == n) return;
-    let r = null !== (t = n.pathname.split("/").pop()) && void 0 !== t ? t : "unknown",
+    let r = null != (t = n.pathname.split("/").pop()) ? t : "unknown",
       i = f.K.get(w),
       o = await L(e),
       a = E.from(o),
@@ -282,7 +282,7 @@ let j = {
     l()(h.isPlatformEmbedded, "Save file method called outside native app");
     let r = m.Z.toURLSafe(e);
     if (null == r) return null;
-    let i = null !== (n = null != t ? t : r.pathname.split("/").pop()) && void 0 !== n ? n : "unknown",
+    let i = null != (n = null != t ? t : r.pathname.split("/").pop()) ? n : "unknown",
       o = await D(e),
       a = E.from(o);
     return I.fileManager.saveWithDialog(a, i)
@@ -299,9 +299,9 @@ let j = {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : void 0;
     if (null != e) {
       var t, n;
-      let r = null === (t = m.Z.toURLSafe(e)) || void 0 === t ? void 0 : t.pathname;
+      let r = null == (t = m.Z.toURLSafe(e)) ? void 0 : t.pathname;
       if (null == r) return !1;
-      let i = null === (n = r.split(".").pop()) || void 0 === n ? void 0 : n.toLowerCase();
+      let i = null == (n = r.split(".").pop()) ? void 0 : n.toLowerCase();
       if (null != i && !S.includes(i)) return !1
     }
     return "function" == typeof I.clipboard.copyImage
@@ -363,7 +363,7 @@ let j = {
   },
   setMinimumSize(e, t) {
     var n, r;
-    null == I || null === (r = I.window) || void 0 === r || null === (n = r.setMinimumSize) || void 0 === n || n.call(r, e, t)
+    null == I || null == (r = I.window) || null == (n = r.setMinimumSize) || n.call(r, e, t)
   },
   purgeMemory() {
     h.isPlatformEmbedded && I.processUtils.purgeMemory()
@@ -397,11 +397,11 @@ let j = {
   },
   pauseFrameEvictor() {
     var e, t;
-    null === (e = (t = I.app).pauseFrameEvictor) || void 0 === e || e.call(t)
+    null == (e = (t = I.app).pauseFrameEvictor) || e.call(t)
   },
   unpauseFrameEvictor() {
     var e, t;
-    null === (e = (t = I.app).pauseFrameEvictor) || void 0 === e || e.call(t)
+    null == (e = (t = I.app).pauseFrameEvictor) || e.call(t)
   },
   getPidFromDesktopSource(e) {
     if (!(0, h.isDesktop)() || null == this.getDiscordUtils().getPidFromWindowHandle) return null;
@@ -409,7 +409,7 @@ let j = {
       n = null == t ? void 0 : t[0];
     if ("window" === n) {
       var r;
-      let e = null !== (r = null == t ? void 0 : t[1]) && void 0 !== r ? r : "",
+      let e = null != (r = null == t ? void 0 : t[1]) ? r : "",
         n = this.getDiscordUtils().getPidFromWindowHandle(e);
       return null == n || 0 === n ? null : n
     }
@@ -455,7 +455,7 @@ let j = {
   }) : Promise.resolve(),
   setCrashInformation(e, t) {
     var n;
-    h.isPlatformEmbedded && (null == I ? void 0 : null === (n = I.processUtils) || void 0 === n ? void 0 : n.setCrashInformation) != null && I.processUtils.setCrashInformation(e, t)
+    h.isPlatformEmbedded && (null == I || null == (n = I.processUtils) ? void 0 : n.setCrashInformation) != null && I.processUtils.setCrashInformation(e, t)
   },
   blockDisplaySleep: () => h.isPlatformEmbedded && null != I.powerSaveBlocker ? I.powerSaveBlocker.blockDisplaySleep() : null,
   unblockDisplaySleep(e) {
@@ -477,7 +477,7 @@ let j = {
       token: a,
       chunkInterval: s,
       contentType: l
-    } = v({
+    } = y({
       maxBps: 8e3,
       chunkInterval: 50,
       contentType: "application/json"
@@ -504,7 +504,7 @@ let j = {
     let t = this.getCrashReporterMetadata(),
       n = I.app.getReleaseChannel(),
       r = null == t ? void 0 : t.sentry;
-    return this.getDiscordUtils().submitLiveCrashReport(n, v({}, r, e))
+    return this.getDiscordUtils().submitLiveCrashReport(n, y({}, r, e))
   },
   crash(e) {
     let t = this.getDiscordUtils().crash;
@@ -551,7 +551,7 @@ let j = {
     let {
       getWindowFullscreenTypeByPid: i
     } = this.getDiscordUtils(), o = 0 !== e && null != i && null != t ? i(e, t) : null;
-    return -1 === o && (o = null), null !== (r = null != o ? o : n) && void 0 !== r ? r : _.Jx.UNKNOWN
+    return -1 === o && (o = null), null != (r = null != o ? o : n) ? r : _.Jx.UNKNOWN
   },
   GetWindowFullscreenTypeExtraByPid(e, t) {
     let {
@@ -582,12 +582,11 @@ let j = {
   isModuleVersionAtLeast(e, t) {
     var n, r, i;
     let o = [...null != T ? T : [0, 0, 0]];
-    o.push(null !== (r = null === (n = this.moduleVersions) || void 0 === n ? void 0 : n[e]) && void 0 !== r ? r : 0);
-    let a = null !== (i = t[this.releaseChannel]) && void 0 !== i ? i : t.stable;
-    for (let [e, t] of o.entries()) {
+    o.push(null != (r = null == (n = this.moduleVersions) ? void 0 : n[e]) ? r : 0);
+    let a = null != (i = t[this.releaseChannel]) ? i : t.stable;
+    for (let [e, t] of o.entries())
       if (t > a[e]) break;
-      if (t < a[e]) return !1
-    }
+      else if (t < a[e]) return !1;
     return !0
   },
   fetchRiotGamesLiveClientData: (e, t) => h.isPlatformEmbedded ? null == I.riotGames ? Promise.reject(Error("Riot Games module not available")) : I.riotGames.fetchLiveClientData(e, t) : Promise.reject(Error("Not embedded!")),

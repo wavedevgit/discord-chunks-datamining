@@ -58,11 +58,11 @@ var E = function(e) {
 }({});
 let b = {};
 
-function v(e) {
+function y(e) {
   return e.length > g && (e = e.substr(0, g)), e
 }
 
-function y(e) {
+function v(e) {
   let t = b[e];
   return null == t && (t = b[e] = {}), t
 }
@@ -78,9 +78,9 @@ function O(e) {
   let a = u.default.getId();
   if (null != a && null != r && "" !== r) {
     var s;
-    let e = y(a),
+    let e = v(a),
       t = e[n];
-    if (null == t && (t = e[n] = {}), (r = v(r)) === (null === (s = t[i]) || void 0 === s ? void 0 : s.draft)) return !1;
+    if (null == t && (t = e[n] = {}), (r = y(r)) === (null == (s = t[i]) ? void 0 : s.draft)) return !1;
     t[i] = {
       timestamp: Date.now(),
       draft: r
@@ -103,7 +103,7 @@ function S(e) {
     draft: n
   } = e, r = u.default.getId();
   if (null == r) return;
-  let i = y(r),
+  let i = v(r),
     o = i[t];
   null == o && (o = i[t] = {}), o[1] = m(p({
     timestamp: Date.now()
@@ -115,7 +115,7 @@ function S(e) {
 function T(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.default.getId();
   if (null == n) return !1;
-  let r = y(n),
+  let r = v(n),
     i = r[e];
   if (null == i) return !1;
   delete i[t], o().isEmpty(i) && delete r[e]
@@ -124,7 +124,7 @@ function T(e, t) {
 function N() {
   let e = u.default.getId();
   if (null == e || f.Z.totalUnavailableGuilds > 0) return;
-  let t = y(e);
+  let t = v(e);
   for (let e in t) null == d.Z.getChannel(e) && delete t[e]
 }
 
@@ -144,7 +144,7 @@ function R(e) {
     }
   } = e, n = u.default.getId();
   if (null == n) return !1;
-  let r = y(n);
+  let r = v(n);
   return delete r[t], !1
 }
 
@@ -153,7 +153,7 @@ function P(e) {
     channel: t
   } = e, n = u.default.getId();
   if (null == n || t.ownerId === n) return !1;
-  let r = y(n),
+  let r = v(n),
     i = r[t.parent_id];
   if (null == i) return !1;
   let o = i[1];
@@ -162,7 +162,7 @@ function P(e) {
     var a, s;
     let e = r[t.parent_id];
     if (null == e) return !1;
-    let n = null !== (s = null === (a = e[2]) || void 0 === a ? void 0 : a.draft) && void 0 !== s ? s : "";
+    let n = null != (s = null == (a = e[2]) ? void 0 : a.draft) ? s : "";
     "" !== n && (r[t.id] = {
       0: {
         timestamp: Date.now(),
@@ -197,7 +197,7 @@ class x extends(r = a.ZP.PersistedStore) {
   getThreadDraftWithParentMessageId(e) {
     let t = u.default.getId();
     if (null == t) return;
-    let n = y(t),
+    let n = v(t),
       r = c.default.keys(n).find(t => {
         let n = this.getThreadSettings(t);
         return (null == n ? void 0 : n.parentMessageId) === e
@@ -207,7 +207,7 @@ class x extends(r = a.ZP.PersistedStore) {
   getRecentlyEditedDrafts(e) {
     let t = u.default.getId();
     if (null == t) return [];
-    let n = y(t);
+    let n = v(t);
     return o()(n).mapValues(t => null == t ? void 0 : t[e]).pickBy(l.lm).toPairs().map(e => {
       let [t, {
         timestamp: n,
@@ -228,7 +228,7 @@ class x extends(r = a.ZP.PersistedStore) {
   getDraft(e, t) {
     let n = u.default.getId();
     if (null == n) return "";
-    let r = y(n)[e];
+    let r = v(n)[e];
     if (null != r) {
       let e = r[t];
       if (null != e) return e.draft
@@ -238,7 +238,7 @@ class x extends(r = a.ZP.PersistedStore) {
   getThreadSettings(e) {
     let t = u.default.getId();
     if (null == t) return null;
-    let n = y(t)[e];
+    let n = v(t)[e];
     return null == n ? null : n[1]
   }
 }

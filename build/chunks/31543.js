@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(453070),
   d = n(611480),
   f = n(388032),
-  _ = n(642016);
+  _ = n(419028);
 let p = i.forwardRef(function(e, t) {
   let {
     onKeyDown: n,
@@ -25,21 +25,21 @@ let p = i.forwardRef(function(e, t) {
   } = (0, c.Iu)(e => ({
     searchQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), o.X), v = l.ZN.useStore(e => e.searchPlaceholder), y = l.ZN.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
+  }), o.X), y = l.ZN.useStore(e => e.searchPlaceholder), v = l.ZN.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
     var t;
-    l.ZN.setActiveCategoryIndex("" === e ? 0 : d.c), l.ZN.setInspectedExpressionPosition(0, 0), l.ZN.setSearchPlaceholder(null), (0, c.ql)(e), null === (t = p.current) || void 0 === t || t.scrollTo(0)
+    l.ZN.setActiveCategoryIndex("" === e ? 0 : d.c), l.ZN.setInspectedExpressionPosition(0, 0), l.ZN.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = p.current) || t.scrollTo(0)
   }, [p]), I = i.useCallback(() => {
     (0, c.ql)("")
   }, []);
   return i.useImperativeHandle(t, () => ({
     focus: () => {
       var e;
-      return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
+      return null == (e = g.current) ? void 0 : e.focus()
     }
   })), i.useLayoutEffect(() => {
     if (b) {
       var e;
-      null === (e = g.current) || void 0 === e || e.focus()
+      null == (e = g.current) || e.focus()
     }
   }, [b]), (0, r.jsx)("div", {
     className: _.wrapper,
@@ -49,7 +49,7 @@ let p = i.forwardRef(function(e, t) {
       query: E,
       ref: g,
       size: s.E1j.Sizes.MEDIUM,
-      placeholder: null != v ? v : m ? f.NW.string(f.t.dt5h1N) : f.NW.string(f.t["Pck/4e"]),
+      placeholder: null != y ? y : m ? f.NW.string(f.t.dt5h1N) : f.NW.string(f.t["Pck/4e"]),
       onClear: I,
       onKeyDown: n,
       onChange: O,
@@ -58,7 +58,7 @@ let p = i.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": d.Vr,
         "aria-expanded": !0,
-        "aria-activedescendant": (0, a.NE)(d.Vr, y.columnIndex, y.rowIndex)
+        "aria-activedescendant": (0, a.NE)(d.Vr, v.columnIndex, v.rowIndex)
       }
     })
   })

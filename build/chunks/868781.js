@@ -46,10 +46,10 @@ function p(e) {
   let {
     text: E,
     tooltip: b
-  } = (0, c.Z)(t, m || g), v = _(t, h);
+  } = (0, c.Z)(t, m || g), y = _(t, h);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!a && null != v && (0, r.jsx)(u.Z, {
-      icon: v,
+    children: [!a && null != y && (0, r.jsx)(u.Z, {
+      icon: y,
       tooltipText: f && !p ? b : void 0
     }), !f && (0, r.jsx)(d.Z, {
       variant: n,

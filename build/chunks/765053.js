@@ -65,10 +65,10 @@ var m = {
     name: ["robots", "description"],
     property: ["og:type", "og:title", "og:url", "og:image", "og:image:alt", "og:description", "twitter:url", "twitter:title", "twitter:description", "twitter:image", "twitter:image:alt", "twitter:card", "twitter:site"]
   },
-  v = Object.keys(m).map(function(e) {
+  y = Object.keys(m).map(function(e) {
     return m[e]
   }),
-  y = {
+  v = {
     accesskey: "accessKey",
     charset: "charSet",
     class: "className",
@@ -78,8 +78,8 @@ var m = {
     itemprop: "itemProp",
     tabindex: "tabIndex"
   },
-  O = Object.keys(y).reduce(function(e, t) {
-    return e[y[t]] = t, e
+  O = Object.keys(v).reduce(function(e, t) {
+    return e[v[t]] = t, e
   }, {}),
   I = function(e, t) {
     for (var n = e.length - 1; n >= 0; n -= 1) {
@@ -190,7 +190,7 @@ var m = {
   },
   k = function(e, t) {
     return void 0 === t && (t = {}), Object.keys(e).reduce(function(t, n) {
-      return t[y[n] || n] = e[n], t
+      return t[v[n] || n] = e[n], t
     }, t)
   },
   j = function(e, t) {
@@ -199,7 +199,7 @@ var m = {
         key: n
       })["data-rh"] = !0, i);
       return Object.keys(t).forEach(function(e) {
-        var n = y[e] || e;
+        var n = v[e] || e;
         "innerHTML" === n || "cssText" === n ? o.dangerouslySetInnerHTML = {
           __html: t.innerHTML || t.cssText
         } : o[n] = t[e]
@@ -546,9 +546,9 @@ var X = ["children"],
         n = f({}, n, ((r = {})[t] = e[t], r))
       }), n
     }, n.warnOnInvalidChildren = function(e, t) {
-      return c()(v.some(function(t) {
+      return c()(y.some(function(t) {
         return e.type === t
-      }), "function" == typeof e.type ? "You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information." : "Only elements types " + v.join(", ") + " are allowed. Helmet does not support rendering <" + e.type + "> elements. Refer to our API for more information."), c()(!t || "string" == typeof t || Array.isArray(t) && !t.some(function(e) {
+      }), "function" == typeof e.type ? "You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information." : "Only elements types " + y.join(", ") + " are allowed. Helmet does not support rendering <" + e.type + "> elements. Refer to our API for more information."), c()(!t || "string" == typeof t || Array.isArray(t) && !t.some(function(e) {
         return "string" != typeof e
       }), "Helmet expects a string as a child of <" + e.type + ">. Did you forget to wrap your children in braces? ( <" + e.type + ">{``}</" + e.type + "> ) Refer to our API for more information."), !0
     }, n.mapChildrenToProps = function(e, t) {

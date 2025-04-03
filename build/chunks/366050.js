@@ -66,9 +66,9 @@ function E(e) {
   let c = {
     id: o,
     component: a,
-    position: null !== (t = s.position) && void 0 !== t ? t : m,
+    position: null != (t = s.position) ? t : m,
     props: s,
-    docked: null !== (n = s.docked) && void 0 !== n && n
+    docked: null != (n = s.docked) && n
   };
   p.set(o, c), a === l.NYg.VIDEO ? null == r && (r = o) : a === l.NYg.EMBED_IFRAME && null == i && (i = o)
 }
@@ -91,7 +91,7 @@ function b(e) {
   }
 }
 
-function v(e) {
+function y(e) {
   let {
     id: t,
     position: n
@@ -107,7 +107,7 @@ function v(e) {
   }
 }
 
-function y(e) {
+function v(e) {
   let {
     width: t,
     pipType: n
@@ -174,7 +174,7 @@ class A extends(o = a.ZP.PersistedStore) {
   }
   get pipWindow() {
     var e;
-    return null == r && null == i ? null : p.get(null !== (e = null != r ? r : i) && void 0 !== e ? e : "")
+    return null == r && null == i ? null : p.get(null != (e = null != r ? r : i) ? e : "")
   }
   get pipVideoWindow() {
     return null == r ? null : p.get(r)
@@ -208,17 +208,17 @@ u(A, "displayName", "PictureInPictureStore"), u(A, "persistKey", "PictureInPictu
   var t, n;
   return {
     pipWidths: {
-      [c.cL.VIDEO]: null !== (t = e.pipWidth) && void 0 !== t ? t : c.l8[c.cL.VIDEO],
+      [c.cL.VIDEO]: null != (t = e.pipWidth) ? t : c.l8[c.cL.VIDEO],
       [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
     },
-    openPosition: null !== (n = e.openPosition) && void 0 !== n ? n : l.VD2.BOTTOM_RIGHT
+    openPosition: null != (n = e.openPosition) ? n : l.VD2.BOTTOM_RIGHT
   }
 }]);
 let C = new A(s.Z, {
   PICTURE_IN_PICTURE_OPEN: E,
   PICTURE_IN_PICTURE_CLOSE: b,
-  PICTURE_IN_PICTURE_MOVE: v,
-  PICTURE_IN_PICTURE_RESIZE: y,
+  PICTURE_IN_PICTURE_MOVE: y,
+  PICTURE_IN_PICTURE_RESIZE: v,
   PICTURE_IN_PICTURE_HIDE: I,
   PICTURE_IN_PICTURE_SHOW: S,
   PICTURE_IN_PICTURE_UPDATE_RECT: O,

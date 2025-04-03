@@ -22,7 +22,7 @@ var i = n(97613),
   E = n(981631),
   b = n(474936);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,14 +31,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ function N(e) {
   let {
     initialPlanId: t,
     followupSKUInfo: i,
-    onClose: v,
+    onClose: y,
     onComplete: O,
     onSubscriptionConfirmation: T,
     analyticsLocations: N,
@@ -111,12 +111,12 @@ function N(e) {
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("17938"), n.e("57301")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("17938"), n.e("8854")]).then(n.bind(n, 7305));
     return n => {
       var {
         onClose: o
       } = n, a = S(n, ["onClose"]);
-      return (0, r.jsx)(e, I(y({}, a), {
+      return (0, r.jsx)(e, I(v({}, a), {
         loadId: z,
         subscriptionTier: k,
         skuId: J,
@@ -128,7 +128,7 @@ function N(e) {
         initialPlanId: t,
         followupSKUInfo: i,
         onClose: (e, t) => {
-          o(), null == v || v(e), e && (null == T || T(), (0, _.I)(D, Q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+          o(), null == y || y(e), e && (null == T || T(), (0, _.I)(D, Q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
@@ -169,7 +169,7 @@ function N(e) {
         eligible_for_trial: null != j,
         application_id: B,
         location_stack: N
-      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == v || v(K), K && (null == T || T())
+      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == y || y(K), K && (null == T || T())
     }
   })
 }

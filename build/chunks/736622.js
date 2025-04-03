@@ -237,9 +237,9 @@ function b(e) {
       height: 0,
       width: 0
     }),
-    v = b[0],
-    y = v.height,
-    O = v.width,
+    y = b[0],
+    v = y.height,
+    O = y.width,
     I = b[1],
     S = r.useState(!0),
     T = S[0],
@@ -254,8 +254,8 @@ function b(e) {
     x = L.maxX,
     M = L.maxY,
     k = r.useCallback(function() {
-      var e, t, n, r, i = null !== (t = null === (e = o.current) || void 0 === e ? void 0 : e.clientWidth) && void 0 !== t ? t : 0,
-        a = null !== (r = null === (n = o.current) || void 0 === n ? void 0 : n.clientHeight) && void 0 !== r ? r : 0;
+      var e, t, n, r, i = null != (t = null == (e = o.current) ? void 0 : e.clientWidth) ? t : 0,
+        a = null != (r = null == (n = o.current) ? void 0 : n.clientHeight) ? r : 0;
       return A && c ? {
         width: i,
         height: i * (c.maxY / c.maxX)
@@ -273,7 +273,7 @@ function b(e) {
       if (i) {
         var s = t !== h || r !== p;
         if (d.fitCanvasToArtboardHeight && s && (o.current.style.height = r + "px", a = !0), d.useDevicePixelRatio) {
-          if (s || t * D !== O || r * D !== y) {
+          if (s || t * D !== O || r * D !== v) {
             var c = D * t,
               u = D * r;
             i.width = c, i.height = u, i.style.width = t + "px", i.style.height = r + "px", I({
@@ -292,18 +292,18 @@ function b(e) {
       }
       l && (T || a) && l && l(), T && N(!1)
     }
-  }, [i, o, w, D, k, T, N, y, O, p, h, l, C, A, R, n]), r.useEffect(function() {
+  }, [i, o, w, D, k, T, N, v, O, p, h, l, C, A, R, n]), r.useEffect(function() {
     I({
       width: 0,
       height: 0
     })
   }, [i])
 }
-var v, y = function() {
+var y, v = function() {
     function e() {}
     return e.prototype.observe = function() {}, e.prototype.unobserve = function() {}, e.prototype.disconnect = function() {}, e
   }(),
-  O = globalThis.IntersectionObserver || y,
+  O = globalThis.IntersectionObserver || v,
   I = function() {
     function e() {
       var e = this;
@@ -321,7 +321,7 @@ var v, y = function() {
     }, e
   }(),
   S = function() {
-    return v || (v = new I), v
+    return y || (y = new I), y
   };
 
 function T(e) {
@@ -380,7 +380,7 @@ function N(e, t) {
     onCanvasHasResized: g,
     artboardBounds: null == f ? void 0 : f.bounds
   });
-  var v = r.useCallback(function(e) {
+  var y = r.useCallback(function(e) {
     null === e && s && (s.height = 0, s.width = 0), l(e)
   }, []);
   r.useEffect(function() {
@@ -401,7 +401,7 @@ function N(e, t) {
       }
     }
   }, [s, p, f]);
-  var y = r.useCallback(function(e) {
+  var v = r.useCallback(function(e) {
       c.current = e
     }, []),
     O = {
@@ -439,15 +439,15 @@ function N(e, t) {
   }, [A, f]);
   var C = r.useCallback(function(e) {
     return o.default.createElement(T, a({
-      setContainerRef: y,
-      setCanvasRef: v
+      setContainerRef: v,
+      setCanvasRef: y
     }, e))
-  }, [v, y]);
+  }, [y, v]);
   return {
     canvas: s,
     container: c.current,
-    setCanvasRef: v,
-    setContainerRef: y,
+    setCanvasRef: y,
+    setContainerRef: v,
     rive: f,
     RiveComponent: C
   }

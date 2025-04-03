@@ -3,7 +3,7 @@
 n.d(t, {
   D5: () => C,
   ZP: () => W,
-  uZ: () => v
+  uZ: () => y
 });
 var r, i = n(873546),
   o = n(442837),
@@ -29,8 +29,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = "message_requests",
-  y = !1,
+let y = "message_requests",
+  v = !1,
   O = !1,
   I = !0,
   S = !1,
@@ -58,11 +58,11 @@ function R(e) {
 }
 
 function P() {
-  O && (O = R(O)), y = R(y)
+  O && (O = R(O)), v = R(v)
 }
 
 function w() {
-  y && (y = R(y)), O = R(O)
+  v && (v = R(v)), O = R(O)
 }
 
 function D() {
@@ -151,7 +151,7 @@ function G(e) {
   let {
     channel: n
   } = e;
-  if (n.ownerId === (null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
+  if (n.ownerId === (null == (t = h.default.getCurrentUser()) ? void 0 : t.id)) return !1;
   let r = T[n.parent_id];
   null != r && r.type === s.tI.CREATE_THREAD && r.parentMessageId === c.default.castChannelIdAsMessageId(n.id) && (T[n.parent_id] = {
     type: s.tI.VIEW_THREAD,
@@ -184,19 +184,19 @@ function V() {
 }
 
 function Z() {
-  i.tq && y && (y = !1, O = !1)
+  i.tq && v && (v = !1, O = !1)
 }
 class H extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, o;
-      y = null !== (t = e.isMembersOpen) && void 0 !== t && t, O = null !== (n = e.isSummariesOpen) && void 0 !== n && n, I = null === (r = e.isProfileOpen) || void 0 === r || r, T = null !== (i = e.sidebars) && void 0 !== i ? i : {}, N = null !== (o = e.guildSidebars) && void 0 !== o ? o : {}
+      v = null != (t = e.isMembersOpen) && t, O = null != (n = e.isSummariesOpen) && n, I = null == (r = e.isProfileOpen) || r, T = null != (i = e.sidebars) ? i : {}, N = null != (o = e.guildSidebars) ? o : {}
     }
     this.syncWith([f.Z], V), this.syncWith([d.Z], B)
   }
   getState() {
     return {
-      isMembersOpen: y,
+      isMembersOpen: v,
       isSummariesOpen: O,
       isProfileOpen: I,
       sidebars: T,
@@ -206,7 +206,7 @@ class H extends(r = o.ZP.PersistedStore) {
   getSection(e, t) {
     if (S) return m.ULH.SEARCH;
     let n = A(e);
-    return null != n && null != T[n] ? m.ULH.SIDEBAR_CHAT : t && I ? m.ULH.PROFILE : O ? m.ULH.SUMMARIES : y ? m.ULH.MEMBERS : m.ULH.NONE
+    return null != n && null != T[n] ? m.ULH.SIDEBAR_CHAT : t && I ? m.ULH.PROFILE : O ? m.ULH.SUMMARIES : v ? m.ULH.MEMBERS : m.ULH.NONE
   }
   getSidebarState(e) {
     let t = A(e);
@@ -226,7 +226,7 @@ class H extends(r = o.ZP.PersistedStore) {
     let n = A(e);
     if (null == n || S) return null;
     let r = T[n];
-    return null == r ? null : r.type === s.tI.VIEW_THREAD || r.type === s.tI.VIEW_CHANNEL ? null === (t = r.details) || void 0 === t ? void 0 : t.initialMessageId : null
+    return null == r ? null : r.type === s.tI.VIEW_THREAD || r.type === s.tI.VIEW_CHANNEL ? null == (t = r.details) ? void 0 : t.initialMessageId : null
   }
 }
 b(H, "displayName", "ChannelSectionStore"), b(H, "persistKey", "ChannelSectionStore2");

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex;
   return {
     name: "Erlang REPL",
@@ -32,4 +32,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

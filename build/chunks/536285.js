@@ -57,18 +57,14 @@ class m extends r.EventEmitter {
           data: o
         } = t;
         if (n === u.Etm.DISPATCH) {
-          if (r === u.zMe.READY) {
-            this.emit("connected");
-            return
-          }
+          if (r === u.zMe.READY) return void this.emit("connected");
           if (r === u.zMe.ERROR) {
             this.emit("error", new c.Z({
               errorCode: o.code
             }, o.message)), this.disconnect();
             return
           }
-          this.emit(f(n, r), o);
-          return
+          return void this.emit(f(n, r), o)
         }
         let a = null;
         r === u.zMe.ERROR && (a = new c.Z({

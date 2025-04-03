@@ -68,7 +68,7 @@ function u(e) {
     onFocus: _,
     onBlur: e => {
       var t;
-      (null === (t = u.current) || void 0 === t ? void 0 : t.contains(e.relatedTarget)) || p()
+      (null == (t = u.current) ? void 0 : t.contains(e.relatedTarget)) || p()
     },
     ref: u,
     children: [t, (0, r.jsx)(o.ZP, s({

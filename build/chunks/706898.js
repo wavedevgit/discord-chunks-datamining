@@ -13,7 +13,7 @@ var r, i, o = n(200651),
   f = n(1561),
   _ = n(993365),
   p = n(981631),
-  h = n(878231);
+  h = n(619552);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,9 +54,9 @@ function b(e, t) {
   }), e
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,7 +64,7 @@ function v(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -118,7 +118,7 @@ let T = a.forwardRef(function(e, t) {
   var {
     children: n,
     id: r
-  } = e, i = v(e, ["children", "id"]);
+  } = e, i = y(e, ["children", "id"]);
   return (0, o.jsx)("div", b(g({}, i), {
     ref: t,
     role: "tabpanel",
@@ -150,23 +150,28 @@ class C extends(r = a.Component) {
     } = this.state;
     if (null != e) {
       if ("side" === r) return null != t && n === t || o ? A(e, "Selected") : i ? A(e, "Hover") : A(e);
-      if ("top" === r) return n === t ? {
-        borderColor: e,
-        color: e
-      } : i ? {
+      if ("top" === r)
+        if (n === t) return {
+          borderColor: e,
+          color: e
+        };
+        else if (i) return {
         borderColor: (0, u.wK)(e, .1),
         color: (0, u.wK)(e, .6)
-      } : {
+      };
+      else return {
         borderColor: "transparent",
         color: (0, u.wK)(e, .4)
       };
-      if ("top-pill" === r) return n === t ? {
-        backgroundColor: (0, u.wK)(e, .2),
-        color: e
-      } : {
-        backgroundColor: e,
-        color: d.Z.unsafe_rawColors.WHITE_500.css
-      }
+      if ("top-pill" === r)
+        if (n === t) return {
+          backgroundColor: (0, u.wK)(e, .2),
+          color: e
+        };
+        else return {
+          backgroundColor: e,
+          color: d.Z.unsafe_rawColors.WHITE_500.css
+        }
     }
   }
   render() {
@@ -218,7 +223,7 @@ class C extends(r = a.Component) {
         id: r,
         onItemSelect: i
       } = this.props;
-      !t && (null != n ? n(e) : null != i && i(r))
+      t || (null != n ? n(e) : null != i && i(r))
     }), m(this, "handleMouseDown", () => {
       let {
         color: e
@@ -276,7 +281,7 @@ class R extends(i = a.Component) {
       },
       getActiveElement: () => {
         var e;
-        return null === (e = this.tabBarRef.current) || void 0 === e ? void 0 : e.ownerDocument.activeElement
+        return null == (e = this.tabBarRef.current) ? void 0 : e.ownerDocument.activeElement
       }
     })), m(this, "renderChildren", e => {
       let {

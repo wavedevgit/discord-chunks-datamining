@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(267642),
   E = n(981631),
   b = n(30513),
-  v = n(388032),
-  y = n(734417);
+  y = n(388032),
+  v = n(427774);
 let O = e => {
   let {
     className: t,
@@ -55,23 +55,23 @@ let O = e => {
       })
     };
     return (0, r.jsxs)("div", {
-      className: a()(y.upsell, t),
+      className: a()(v.upsell, t),
       children: [(0, r.jsx)(l.$zw, {
         size: "md",
         color: "currentColor",
-        className: y.icon
+        className: v.icon
       }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
-        className: y.body,
+        className: v.body,
         variant: "text-sm/normal",
-        children: v.NW.format(v.t.AXWla2, {
+        children: y.NW.format(y.t.AXWla2, {
           count: (0, g.A3)(E.Eu4.TIER_1)
         })
       }), (0, r.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,
         color: l.zxk.Colors.LINK,
         onClick: e,
-        children: v.NW.string(v.t["Gb+BJC"])
+        children: y.NW.string(y.t["Gb+BJC"])
       })]
     })
   } {
@@ -79,23 +79,23 @@ let O = e => {
       (0, f._Q)(), p.Z.open(n, E.pNK.STICKERS, S)
     };
     return (0, r.jsxs)("div", {
-      className: a()(y.upsell, t),
+      className: a()(v.upsell, t),
       children: [(0, r.jsx)(l.SlE, {
         size: "custom",
         color: "currentColor",
-        className: y.icon,
+        className: v.icon,
         width: 20,
         height: 20
       }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
-        className: y.body,
+        className: v.body,
         variant: "text-sm/normal",
-        children: v.NW.string(v.t.S83wgo)
+        children: y.NW.string(y.t.S83wgo)
       }), (0, r.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,
         color: l.zxk.Colors.LINK,
         onClick: e,
-        children: v.NW.string(v.t.bwNjur)
+        children: y.NW.string(y.t.bwNjur)
       })]
     })
   }

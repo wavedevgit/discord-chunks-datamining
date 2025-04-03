@@ -29,7 +29,7 @@ class f extends r.ZP.Store {
   }
   async refresh() {
     var e, t;
-    let n = await (null === (t = s.Z.database()) || void 0 === t ? void 0 : null === (e = t.fsInfo()) || void 0 === e ? void 0 : e.catch(e => c.warn("couldn't get fs info", e)));
+    let n = await (null == (t = s.Z.database()) || null == (e = t.fsInfo()) ? void 0 : e.catch(e => c.warn("couldn't get fs info", e)));
     if (null != n) {
       let e = n.fs.available < 256 * u || n.fs.available < 3 * n.database.used || n.fs.available < 2 * n.database.total,
         t = n.fs.available > 768 * u && n.fs.available > 4 * n.database.used && n.fs.available > 4 * n.database.total,

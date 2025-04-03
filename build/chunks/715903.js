@@ -23,7 +23,7 @@ function c(e) {
 function u(e) {
   return null != e && null != e.flags && s.some(t => {
     var n;
-    return (0, o.yE)(null !== (n = e.flags) && void 0 !== n ? n : 0, t)
+    return (0, o.yE)(null != (n = e.flags) ? n : 0, t)
   })
 }
 

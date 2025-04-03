@@ -50,12 +50,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new Set,
+let v = new Set,
   O = {},
   I = {};
 
@@ -76,13 +76,13 @@ function N(e, t) {
 
 function A(e, t) {
   var n;
-  let r = (null !== (n = I[e.parentId]) && void 0 !== n ? n : 0) + 1;
+  let r = (null != (n = I[e.parentId]) ? n : 0) + 1;
   I[e.parentId] = r, t(e)
 }
 
 function C(e) {
   var t;
-  null === (t = e.threads) || void 0 === t || t.forEach(P)
+  null == (t = e.threads) || t.forEach(P)
 }
 
 function R(e) {
@@ -91,7 +91,7 @@ function R(e) {
     O[e.id] = {
       guildId: e.guild_id,
       parentId: e.parent_id,
-      count: null !== (t = e.messageCount) && void 0 !== t ? t : 0,
+      count: null != (t = e.messageCount) ? t : 0,
       mostRecentRawMessage: null,
       mostRecentMessage: null
     }
@@ -103,7 +103,7 @@ function P(e) {
   N(e, t => {
     var n;
     null != e.messageCount && (t.count = e.messageCount);
-    let r = null !== (n = t.mostRecentRawMessage) && void 0 !== n ? n : t.mostRecentMessage;
+    let r = null != (n = t.mostRecentRawMessage) ? n : t.mostRecentMessage;
     null != e.lastMessageId && (null == r ? void 0 : r.id) !== e.lastMessageId && (t.mostRecentRawMessage = null, t.mostRecentMessage = null)
   })
 }
@@ -117,7 +117,7 @@ function w(e) {
 }
 
 function D(e) {
-  I = {}, y.clear(), e.guilds.forEach(C)
+  I = {}, v.clear(), e.guilds.forEach(C)
 }
 
 function L(e) {
@@ -126,7 +126,7 @@ function L(e) {
   } = e;
   for (let e in O = E({}, t)) {
     let n = t[e].mostRecentMessage;
-    null != n && (t[e].mostRecentMessage = new u.ZP(v(E({}, n), {
+    null != n && (t[e].mostRecentMessage = new u.ZP(y(E({}, n), {
       author: new d.Z(n.author)
     })))
   }
@@ -220,7 +220,7 @@ function H(e) {
   var t;
   let {
     message: n
-  } = e, r = O[n.channel_id], i = null !== (t = null == r ? void 0 : r.mostRecentRawMessage) && void 0 !== t ? t : null == r ? void 0 : r.mostRecentMessage;
+  } = e, r = O[n.channel_id], i = null != (t = null == r ? void 0 : r.mostRecentRawMessage) ? t : null == r ? void 0 : r.mostRecentMessage;
   if (null == r || null == i || i.id !== n.id) return !1;
   A(r, e => {
     null != e.mostRecentMessage && (e.mostRecentMessage = (0, l.wi)(e.mostRecentMessage, n)), null != e.mostRecentRawMessage && (e.mostRecentRawMessage = (0, l.gx)(e.mostRecentRawMessage, n))
@@ -234,11 +234,11 @@ function W(e) {
   } = e, r = O[n];
   if (null == r) return !1;
   let i = p.default.castChannelIdAsMessageId(n) !== t,
-    o = !y.has(t);
+    o = !v.has(t);
   A(r, e => {
     var n;
-    let r = null !== (n = e.mostRecentRawMessage) && void 0 !== n ? n : e.mostRecentMessage;
-    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && o ? Math.max(e.count - 1, 0) : e.count, y.add(t)
+    let r = null != (n = e.mostRecentRawMessage) ? n : e.mostRecentMessage;
+    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && o ? Math.max(e.count - 1, 0) : e.count, v.add(t)
   })
 }
 
@@ -250,13 +250,13 @@ function Y(e) {
   if (null == r) return !1;
   let i = t.filter(e => {
     let t = p.default.castChannelIdAsMessageId(n) !== e,
-      r = !y.has(e);
+      r = !v.has(e);
     return t && r
   }).length;
   i > 0 && A(r, e => {
     var n;
-    let r = null !== (n = e.mostRecentRawMessage) && void 0 !== n ? n : e.mostRecentMessage;
-    null != r && t.includes(r.id) && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count -= i, t.forEach(e => y.add(e))
+    let r = null != (n = e.mostRecentRawMessage) ? n : e.mostRecentMessage;
+    null != r && t.includes(r.id) && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count -= i, t.forEach(e => v.add(e))
   })
 }
 
@@ -270,7 +270,7 @@ function K(e) {
     if (0 === e.messages.length) t.mostRecentRawMessage = null, t.mostRecentMessage = null, t.count = 0;
     else {
       var n;
-      let r = null !== (n = e.messages[0]) && void 0 !== n ? n : null;
+      let r = null != (n = e.messages[0]) ? n : null;
       t.count = e.messages.length >= h.M3 ? h.M3 : t.count, (null == r ? void 0 : r.type) !== m.uaV.THREAD_STARTER_MESSAGE && (t.mostRecentRawMessage = r, t.mostRecentMessage = null)
     }
   })
@@ -292,12 +292,12 @@ class q extends(r = a.ZP.Store) {
   }
   getCount(e) {
     var t, n;
-    return null !== (n = null === (t = O[e]) || void 0 === t ? void 0 : t.count) && void 0 !== n ? n : null
+    return null != (n = null == (t = O[e]) ? void 0 : t.count) ? n : null
   }
   getMostRecentMessage(e) {
     var t, n;
     let r = O[e];
-    return null == r ? null : (null == r.mostRecentMessage && null != r.mostRecentRawMessage && (r.mostRecentMessage = null !== (t = _.Z.getMessage(e, r.mostRecentRawMessage.id)) && void 0 !== t ? t : (0, l.e5)(r.mostRecentRawMessage), r.mostRecentRawMessage = null), null !== (n = r.mostRecentMessage) && void 0 !== n ? n : null)
+    return null == r ? null : (null == r.mostRecentMessage && null != r.mostRecentRawMessage && (r.mostRecentMessage = null != (t = _.Z.getMessage(e, r.mostRecentRawMessage.id)) ? t : (0, l.e5)(r.mostRecentRawMessage), r.mostRecentRawMessage = null), null != (n = r.mostRecentMessage) ? n : null)
   }
   getChannelThreadsVersion(e) {
     return I[e]

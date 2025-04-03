@@ -71,8 +71,8 @@ async function b(e) {
     inputApplication: a,
     analyticsLocations: g,
     launchingComponentId: b,
-    sectionName: v,
-    inviterUserId: y
+    sectionName: y,
+    inviterUserId: v
   } = e, O = _.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == i || e.launchId === i)), I = a;
   if (null == I) {
     let e = await o.ZP.fetchApplication(n);
@@ -88,8 +88,8 @@ async function b(e) {
       locationObject: {},
       analyticsLocations: g,
       componentId: b,
-      sectionName: v,
-      inviterUserId: y,
+      sectionName: y,
+      inviterUserId: v,
       instanceId: O.compositeInstanceId,
       isContextlessActivity: O.location.kind === r.E.CONTEXTLESS
     })

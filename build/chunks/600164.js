@@ -7,8 +7,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(403687),
-  l = n(913208);
+  s = n(794913),
+  l = n(893354);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,32 +94,6 @@ let h = {
     var {
       children: t,
       className: n,
-      shrink: o = 1,
-      grow: l = 1,
-      basis: c = "auto",
-      style: d,
-      wrap: p = !1
-    } = e, h = _(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]);
-    let m = u({
-      className: n = null != n ? n : s.flexChild,
-      style: u({
-        flexGrow: l,
-        flexShrink: o,
-        flexBasis: c
-      }, d)
-    }, h);
-    if (!p && "string" != typeof t && 1 === i.Children.count(t)) {
-      let e = i.Children.only(t);
-      return m.style = u({}, m.style, e.props.style), m.className = a()(e.props.className, n), i.cloneElement(e, m)
-    }
-    return (0, r.jsx)("div", f(u({}, m), {
-      children: t
-    }))
-  },
-  v = e => {
-    var {
-      children: t,
-      className: n,
       direction: i = h.HORIZONTAL,
       justify: o = m.START,
       align: l = g.STRETCH,
@@ -127,18 +101,43 @@ let h = {
       shrink: d = 1,
       grow: p = 1,
       basis: b = "auto",
-      style: v
-    } = e, y = _(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style"]);
+      style: y
+    } = e, v = _(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style"]);
     return (0, r.jsx)("div", f(u({
       style: u({
         flexShrink: d,
         flexGrow: p,
         flexBasis: b
-      }, v),
+      }, y),
       className: a()(s.flex, i, o, l, c, n)
-    }, y), {
+    }, v), {
       children: t
     }))
   };
-v.Child = b, v.Direction = h, v.Align = g, v.Justify = m, v.Wrap = E;
-let y = v
+b.Child = e => {
+  var {
+    children: t,
+    className: n,
+    shrink: o = 1,
+    grow: l = 1,
+    basis: c = "auto",
+    style: d,
+    wrap: p = !1
+  } = e, h = _(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]);
+  let m = u({
+    className: n = null != n ? n : s.flexChild,
+    style: u({
+      flexGrow: l,
+      flexShrink: o,
+      flexBasis: c
+    }, d)
+  }, h);
+  if (!p && "string" != typeof t && 1 === i.Children.count(t)) {
+    let e = i.Children.only(t);
+    return m.style = u({}, m.style, e.props.style), m.className = a()(e.props.className, n), i.cloneElement(e, m)
+  }
+  return (0, r.jsx)("div", f(u({}, m), {
+    children: t
+  }))
+}, b.Direction = h, b.Align = g, b.Justify = m, b.Wrap = E;
+let y = b

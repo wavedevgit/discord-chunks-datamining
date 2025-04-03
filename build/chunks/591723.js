@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => y
+  V: () => v
 });
 var r = n(573654),
   i = n(40284),
@@ -96,7 +96,7 @@ function b(e) {
   }
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = e.entries(),
     r = !1;
   do {
@@ -107,7 +107,7 @@ function v(e, t) {
   } while (!r);
   return !1
 }
-var y = function() {
+var v = function() {
   function e(t) {
     c(this, e), this.types = new Map, this.dragSources = new Map, this.dropTargets = new Map, this.pinnedSourceId = null, this.pinnedSource = null, this.store = t
   }
@@ -128,7 +128,7 @@ var y = function() {
   }, {
     key: "containsHandler",
     value: function(e) {
-      return v(this.dragSources, e) || v(this.dropTargets, e)
+      return y(this.dragSources, e) || y(this.dropTargets, e)
     }
   }, {
     key: "getSource",

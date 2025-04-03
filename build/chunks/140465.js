@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B4: () => y,
+  B4: () => v,
   Nx: () => h,
-  UV: () => v,
+  UV: () => y,
   WR: () => b,
   lr: () => g,
   t7: () => m
@@ -31,13 +31,13 @@ function h() {
 let m = () => {
     var e;
     let t = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
-      n = null == t ? void 0 : null === (e = t.metadata) || void 0 === e ? void 0 : e.active_discount_expires_at;
+      n = null == t || null == (e = t.metadata) ? void 0 : e.active_discount_expires_at;
     return null != n && o()(Date.now()) <= o()(n)
   },
   g = () => {
     var e;
     let t = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription());
-    switch (null == t ? void 0 : null === (e = t.metadata) || void 0 === e ? void 0 : e.active_discount_id) {
+    switch (null == t || null == (e = t.metadata) ? void 0 : e.active_discount_id) {
       case _.dT:
       case _.rB:
         return {
@@ -69,11 +69,10 @@ let m = () => {
     let e = null;
     try {
       var t;
-      let n = await s.tn.post({
+      e = null != (t = (await s.tn.post({
         url: p.ANM.CHURN_USER_OFFER,
         rejectWithError: !0
-      });
-      e = null !== (t = n.body.offer) && void 0 !== t ? t : null
+      })).body.offer) ? t : null
     } catch (e) {}
     return e
   }, b = e => {
@@ -93,10 +92,10 @@ let m = () => {
       churnUserDiscountOffer: a,
       isFetchingChurnDiscountOffer: i
     }
-  }, v = () => {
+  }, y = () => {
     let e = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
       t = m(),
       n = null !== e && e.hasPremiumNitroMonthly,
       r = null != e && null != e.trialId;
     return n && !r && !t
-  }, y = () => (0, u.W)()
+  }, v = () => (0, u.W)()

@@ -34,25 +34,25 @@ let _ = {
       var g = f(c.padding, n),
         E = (0, i.Z)(u),
         b = "y" === h ? d.we : d.t$,
-        v = "y" === h ? d.I : d.F2,
-        y = n.rects.reference[m] + n.rects.reference[h] - _[h] - n.rects.popper[m],
+        y = "y" === h ? d.I : d.F2,
+        v = n.rects.reference[m] + n.rects.reference[h] - _[h] - n.rects.popper[m],
         O = _[h] - n.rects.reference[h],
         I = (0, a.Z)(u),
         S = I ? "y" === h ? I.clientHeight || 0 : I.clientWidth || 0 : 0,
-        T = y / 2 - O / 2,
+        T = v / 2 - O / 2,
         N = g[b],
-        A = S - E[m] - g[v],
+        A = S - E[m] - g[y],
         C = S / 2 - E[m] / 2 + T,
         R = (0, l.u)(N, C, A),
         P = h;
-      n.modifiersData[o] = ((t = {})[P] = R, t.centerOffset = R - C, t)
+      n.modifiersData[o] = (t = {}, t[P] = R, t.centerOffset = R - C, t)
     }
   },
   effect: function(e) {
     var t = e.state,
       n = e.options.element,
       r = void 0 === n ? "[data-popper-arrow]" : n;
-    null != r && ("string" != typeof r || (r = t.elements.popper.querySelector(r))) && (0, o.Z)(t.elements.popper, r) && (t.elements.arrow = r)
+    if (null != r)("string" != typeof r || (r = t.elements.popper.querySelector(r))) && (0, o.Z)(t.elements.popper, r) && (t.elements.arrow = r)
   },
   requires: ["popperOffsets"],
   requiresIfExists: ["preventOverflow"]

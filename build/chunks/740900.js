@@ -11,7 +11,7 @@ var r = n(498607),
   s = n(594174),
   l = n(815790),
   c = n(588215),
-  u = n(374523),
+  u = n(44715),
   d = n(331551);
 
 function f(e, t, n) {
@@ -66,16 +66,16 @@ function b(e) {
   return e.sort
 }
 
-function v() {
+function y() {
   return new o.h(E, b)
 }
 
-function y(e) {
+function v(e) {
   return null != e && new Date(e).getTime() >= m - c.rL
 }
 class O {
   reset() {
-    this._membersMap.clear(), this._membersMap = v(), this.resetNewMemberTimestamp()
+    this._membersMap.clear(), this._membersMap = y(), this.resetNewMemberTimestamp()
   }
   resetNewMemberTimestamp() {
     this.newMemberTimestamp = Date.now()
@@ -104,7 +104,7 @@ class O {
       isCurrentGuildMemberByTimestamp: i <= this.newMemberTimestamp,
       isIncludedInSearchResults: !1,
       user: g,
-      sort: (0, d.b)(e, null !== (n = t.selectedSort) && void 0 !== n ? n : c.d$.ORDER_BY_UNSPECIFIED),
+      sort: (0, d.b)(e, null != (n = t.selectedSort) ? n : c.d$.ORDER_BY_UNSPECIFIED),
       joinedAtTimestamp: i
     }), r)
   }
@@ -115,13 +115,13 @@ class O {
       joinSourceType: i,
       inviterId: o,
       integrationType: s
-    } = null !== (n = (0, u.W2)(this.guildId)[e]) && void 0 !== n ? n : {};
+    } = null != (n = (0, u.W2)(this.guildId)[e]) ? n : {};
     return {
       sourceInviteCode: null != r ? r : null,
       joinSourceType: null != i ? i : null,
       inviterId: null != o ? o : null,
       integrationType: null != s ? s : null,
-      hasUnusualDmActivity: y(t),
+      hasUnusualDmActivity: v(t),
       hasUnusualAccountActivity: (0, a.He)(e)
     }
   }
@@ -141,7 +141,7 @@ class O {
         joinSourceType: u,
         inviterId: d,
         integrationType: f
-      } = this._computeMemberSupplementals(r.userId, null !== (n = o.unusualDMActivityUntil) && void 0 !== n ? n : r.unusualDMActivityUntil);
+      } = this._computeMemberSupplementals(r.userId, null != (n = o.unusualDMActivityUntil) ? n : r.unusualDMActivityUntil);
     for (let e in r.sourceInviteCode !== s && (o.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (o.hasUnusualDmActivity = l), r.hasUnusualAccountActivity !== c && (o.hasUnusualAccountActivity = c), r.joinSourceType !== u && (o.joinSourceType = u), r.inviterId !== d && (o.inviterId = d), r.integrationType !== f && (o.integrationType = f), o) {
       let t = e,
         n = o[t],
@@ -166,6 +166,6 @@ class O {
     return this._membersMap.version
   }
   constructor(e) {
-    f(this, "guildId", void 0), f(this, "_membersMap", void 0), f(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = v()
+    f(this, "guildId", void 0), f(this, "_membersMap", void 0), f(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = y()
   }
 }

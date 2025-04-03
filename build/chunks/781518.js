@@ -4,8 +4,8 @@ n.d(t, {
   Ai: () => O,
   PW: () => I,
   Tu: () => A,
-  am: () => y,
-  hP: () => v,
+  am: () => v,
+  hP: () => y,
   hY: () => S,
   k1: () => N,
   rC: () => b,
@@ -70,7 +70,7 @@ function E(e, t, n, r) {
     }
   })).then(e => 202 === e.status ? Promise.reject(e) : e).catch(n => {
     let a = !0 !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
-    return (401 === n.status || a) && o > 0 ? (202 === n.status ? (0, i.GR)(m) : Promise.resolve()).then(() => v(t)).then(n => {
+    return (401 === n.status || a) && o > 0 ? (202 === n.status ? (0, i.GR)(m) : Promise.resolve()).then(() => y(t)).then(n => {
       let {
         body: {
           access_token: i
@@ -85,21 +85,21 @@ let b = {
   put: E.bind(null, r.tn.put)
 };
 
-function v(e) {
+function y(e) {
   return r.tn.get({
     url: d.ANM.CONNECTION_ACCESS_TOKEN(d.ABu.SPOTIFY, e),
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(t => {
     var n;
-    if ((null === (n = t.body) || void 0 === n ? void 0 : n.code) === d.evJ.CONNECTION_REVOKED) o.Z.dispatch({
+    if ((null == (n = t.body) ? void 0 : n.code) === d.evJ.CONNECTION_REVOKED) o.Z.dispatch({
       type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE",
       accountId: e
     });
     else if (429 === t.status) {
       let n = t.headers["retry-after"] * a.Z.Millis.SECOND,
         r = isNaN(n) || 0 === n ? g : n;
-      return (0, i.GR)(r).then(() => v(e))
+      return (0, i.GR)(r).then(() => y(e))
     }
     return Promise.reject(t)
   }).then(t => {
@@ -114,14 +114,14 @@ function v(e) {
   })
 }
 
-function y(e, t, n) {
+function v(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2;
   return b.put(e, t, {
     url: u.C7.NOTIFICATIONS_PLAYER,
     query: {
       connection_id: n
     }
-  }).catch(o => r <= 0 ? Promise.reject(o) : (0, i.GR)(m).then(() => y(e, t, n, r - 1)))
+  }).catch(o => r <= 0 ? Promise.reject(o) : (0, i.GR)(m).then(() => v(e, t, n, r - 1)))
 }
 
 function O(e, t) {

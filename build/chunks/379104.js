@@ -63,14 +63,13 @@ i.prototype.get_child = function(e) {
         r.set_child(d, _), r = _
       } else if (!a(n.get_child(!u))) {
         var p = r.get_child(!d);
-        if (null !== p) {
+        if (null !== p)
           if (a(p.get_child(!d)) || a(p.get_child(d))) {
             var h = o.right === r;
             a(p.get_child(d)) ? o.set_child(h, l(r, d)) : a(p.get_child(!d)) && o.set_child(h, s(r, d));
             var m = o.get_child(h);
             m.red = !0, n.red = !0, m.left.red = !1, m.right.red = !1
           } else r.red = !1, p.red = !0, n.red = !0
-        }
       }
     }
   }

@@ -38,9 +38,9 @@ class g extends r.Z {
       d = c.tU.getSetting();
     r = (0, p.mB)(r, h.BVn.ALLOW_VOICE_RECORDING, d);
     let _ = (0, a.Z)(f.Z),
-      m = (0, i.ln)() && o.Z.getSettings().clipsEnabled && ((null === (e = u.Z.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.jm8.ACTIVE || (null === (t = u.Z.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.jm8.PAUSED),
+      m = (0, i.ln)() && o.Z.getSettings().clipsEnabled && ((null == (e = u.Z.getCurrentUserActiveStream()) ? void 0 : e.state) === h.jm8.ACTIVE || (null == (t = u.Z.getCurrentUserActiveStream()) ? void 0 : t.state) === h.jm8.PAUSED),
       g = o.Z.isDecoupledGameClippingEnabled(),
-      E = _ && o.Z.getSettings().decoupledClipsEnabled && (null === (n = s.ZP.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && g;
+      E = _ && o.Z.getSettings().decoupledClipsEnabled && (null == (n = s.ZP.getVisibleGame()) ? void 0 : n.windowHandle) != null && g;
     r = (0, p.mB)(r, h.BVn.CLIPS_ENABLED, m || E);
     let {
       enableViewerClipping: b
@@ -48,8 +48,8 @@ class g extends r.Z {
       location: "computeVoiceFlags"
     }, {
       autoTrackExposure: !1
-    }), v = b && _ && o.Z.getSettings().viewerClipsEnabled;
-    return (0, p.mB)(r, h.BVn.ALLOW_ANY_VIEWER_CLIPS, v)
+    }), y = b && _ && o.Z.getSettings().viewerClipsEnabled;
+    return (0, p.mB)(r, h.BVn.ALLOW_ANY_VIEWER_CLIPS, y)
   }
   getInitialState() {
     return {
@@ -97,7 +97,7 @@ class g extends r.Z {
       videoStreamParameters: c,
       flags: u = 0
     } = e;
-    a && (null === (t = d.Z.getChannel(r)) || void 0 === t ? void 0 : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+    a && (null == (t = d.Z.getChannel(r)) ? void 0 : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
       guildId: n,
       channelId: r,
       selfMute: i,

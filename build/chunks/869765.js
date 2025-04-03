@@ -55,11 +55,11 @@ class g {
 class E {
   has(e, t) {
     var n, r;
-    return null !== (r = null === (n = this._channelCaches.get(e)) || void 0 === n ? void 0 : n.has(t)) && void 0 !== r && r
+    return null != (r = null == (n = this._channelCaches.get(e)) ? void 0 : n.has(t)) && r
   }
   get(e, t) {
     var n;
-    return null === (n = this._channelCaches.get(e)) || void 0 === n ? void 0 : n.get(t)
+    return null == (n = this._channelCaches.get(e)) ? void 0 : n.get(t)
   }
   set(e, t, n) {
     let r = this._channelCaches.get(e);
@@ -67,7 +67,7 @@ class E {
   }
   updateExistingMessageIfCached(e) {
     let t = this._channelCaches.get(e.channel_id);
-    return !!(null != t && t.has(e.id)) && (t.set(e.id, {
+    return null != t && !!t.has(e.id) && (t.set(e.id, {
       state: 0,
       message: (0, c.e5)(e)
     }), !0)
@@ -94,7 +94,7 @@ class E {
 }
 let b = new E;
 
-function v(e) {
+function y(e) {
   let t = !1;
   if (b.updateExistingMessageIfCached(e) && (t = !0), f.OBS.has(e.type)) {
     let n = e.message_reference;
@@ -106,7 +106,7 @@ function v(e) {
       null != t ? (b.set(t.channel_id, t.id, {
         state: 0,
         message: (0, c.e5)(t)
-      }), e.type === f.uaV.THREAD_STARTER_MESSAGE && v(t)) : b.set(e.channel_id, r, {
+      }), e.type === f.uaV.THREAD_STARTER_MESSAGE && y(t)) : b.set(e.channel_id, r, {
         state: 2
       })
     } else {
@@ -121,7 +121,7 @@ function v(e) {
   return t
 }
 
-function y(e, t) {
+function v(e, t) {
   let n = !1;
   for (let r of e) n = !1 !== t(r) || n;
   return n
@@ -131,28 +131,28 @@ function O(e) {
   let {
     messages: t
   } = e;
-  return y(t, e => v(e))
+  return v(t, e => y(e))
 }
 
 function I(e) {
   let {
     messages: t
   } = e;
-  return y(Object.values(t), e => y(Object.values(e), e => v(e)))
+  return v(Object.values(t), e => v(Object.values(e), e => y(e)))
 }
 
 function S(e) {
   let {
     messages: t
   } = e;
-  return y(t, e => y(e, e => v(e)))
+  return v(t, e => v(e, e => y(e)))
 }
 
 function T(e) {
   let {
     message: t
   } = e;
-  return !!d.Z.getMessages(t.channel_id).ready && v(t)
+  return !!d.Z.getMessages(t.channel_id).ready && y(t)
 }
 
 function N(e) {
@@ -210,7 +210,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  return y(t, e => P(n, e))
+  return v(t, e => P(n, e))
 }
 
 function L(e) {
@@ -231,18 +231,18 @@ function M(e) {
   let {
     firstMessages: t
   } = e;
-  return null != t && y(t, e => v(e))
+  return null != t && v(t, e => y(e))
 }
 
 function k(e) {
   let {
     threads: t
   } = e;
-  return y(Object.values(t), e => {
+  return v(Object.values(t), e => {
     let {
       first_message: t
     } = e;
-    return null != t && v(t)
+    return null != t && y(t)
   })
 }
 class j extends(r = a.ZP.Store) {
@@ -255,7 +255,7 @@ class j extends(r = a.ZP.Store) {
   }
   getMessage(e, t) {
     var n;
-    return null !== (n = b.get(e, t)) && void 0 !== n ? n : h
+    return null != (n = b.get(e, t)) ? n : h
   }
   getReplyIdsForChannel(e) {
     let t;

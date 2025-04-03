@@ -1,8 +1,7 @@
 /** Chunk was on web.js **/
 var r = n(4609),
   i = Math.max;
-
-function o(e, t, n) {
+e.exports = function(e, t, n) {
   return t = i(void 0 === t ? e.length - 1 : t, 0),
     function() {
       for (var o = arguments, a = -1, s = i(o.length - t, 0), l = Array(s); ++a < s;) l[a] = o[t + a];
@@ -11,4 +10,3 @@ function o(e, t, n) {
       return c[t] = n(l), r(e, this, c)
     }
 }
-e.exports = o

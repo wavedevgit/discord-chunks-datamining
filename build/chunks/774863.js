@@ -63,7 +63,7 @@ function g(e) {
     channelId: r,
     attachments: i,
     reportSubmit: !1
-  }, a = null !== (t = m[r]) && void 0 !== t ? t : p;
+  }, a = null != (t = m[r]) ? t : p;
   m[r] = [...a, o], h[n] = o
 }
 
@@ -80,17 +80,17 @@ function E(e) {
 }
 
 function b() {
-  y()
+  v()
 }
 
-function v(e) {
+function y(e) {
   let {
     explicitContentScanVersion: t
   } = e;
-  r = t, y()
+  r = t, v()
 }
 
-function y() {
+function v() {
   h = {}, m = {}
 }
 class O extends(i = o.ZP.Store) {
@@ -99,7 +99,7 @@ class O extends(i = o.ZP.Store) {
   }
   getChannelFpInfo(e) {
     var t;
-    return null !== (t = m[e]) && void 0 !== t ? t : p
+    return null != (t = m[e]) ? t : p
   }
   canSubmitFpReport(e) {
     let t = h[e];
@@ -112,7 +112,7 @@ class O extends(i = o.ZP.Store) {
 c(O, "displayName", "FalsePositiveStore");
 let I = new O(a.Z, {
   LOGOUT: b,
-  CONNECTION_OPEN: v,
+  CONNECTION_OPEN: y,
   MESSAGE_EXPLICIT_CONTENT_FP_CREATE: g,
   MESSAGE_EXPLICIT_CONTENT_FP_SUBMIT: E
 })

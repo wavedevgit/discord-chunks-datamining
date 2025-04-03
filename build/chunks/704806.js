@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => v
+  q: () => y
 }), n(26686), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -68,7 +68,7 @@ async function m() {
       of t) {
       var e;
       let t = _(d({}, i), {
-        gpus: null === (e = i.gpus) || void 0 === e ? void 0 : e.map(e => JSON.stringify(e))
+        gpus: null == (e = i.gpus) ? void 0 : e.map(e => JSON.stringify(e))
       });
       s.default.track(n, t), (p = {
         hashes: d({}, p.hashes)
@@ -103,6 +103,6 @@ let b = new E(o.Z, {
   START_SESSION: g
 });
 
-function v() {
+function y() {
   return b.info()
 }

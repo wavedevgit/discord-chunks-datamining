@@ -19,7 +19,7 @@ let s = !1;
 
 function l() {
   var e;
-  let t = null === i.Z || void 0 === i.Z ? void 0 : null === (e = i.Z.window) || void 0 === e ? void 0 : e.setContentProtection;
+  let t = null === i.Z || void 0 === i.Z || null == (e = i.Z.window) ? void 0 : e.setContentProtection;
   if (null == t) return;
   let n = o.Z.enableContentProtection;
   n !== s && (t(n), s = n)

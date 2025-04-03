@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   W: () => b,
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -20,27 +20,27 @@ var i = n(442837),
   h = n(788858),
   m = n(228168),
   g = n(981631),
-  E = n(24981);
+  E = n(227832);
 let b = 3;
 
-function v(e) {
+function y(e) {
   let {
     user: t,
     guild: n,
-    channel: v,
-    onAction: y,
+    channel: y,
+    onAction: v,
     onClose: O
   } = e, {
     profileType: I
-  } = (0, p.z)(), S = (0, _.Z)(v);
-  if (!(0, i.e7)([f.Z], () => f.Z.can(g.Plq.VIEW_CHANNEL, v))) return null;
+  } = (0, p.z)(), S = (0, _.Z)(y);
+  if (!(0, i.e7)([f.Z], () => f.Z.can(g.Plq.VIEW_CHANNEL, y))) return null;
   let T = e => {
-      e.stopPropagation(), (0, d.X)(n.id), null == y || y({
+      e.stopPropagation(), (0, d.X)(n.id), null == v || v({
         action: "OPEN_VOICE_GUILD"
       }), null == O || O()
     },
     N = e => {
-      e.stopPropagation(), a.default.selectVoiceChannel(v.id), (0, u.Kh)(v.id), null == y || y({
+      e.stopPropagation(), a.default.selectVoiceChannel(y.id), (0, u.Kh)(y.id), null == v || v({
         action: "OPEN_VOICE_CHANNEL"
       }), null == O || O()
     },
@@ -67,7 +67,7 @@ function v(e) {
       }), (0, r.jsxs)("div", {
         className: E.voiceChannelText,
         children: [(0, r.jsx)(h.Z, {
-          channel: v,
+          channel: y,
           size: "xxs",
           color: o.TVs.colors.INTERACTIVE_NORMAL,
           className: E.voiceIcon
@@ -79,18 +79,18 @@ function v(e) {
             color: "interactive-normal",
             lineClamp: 1,
             children: (0, r.jsx)(s.Z, {
-              children: v.name
+              children: y.name
             })
           })
         })]
       }), (0, r.jsx)(l.Z, {
         users: S,
         guildId: n.id,
-        channelId: v.id,
+        channelId: y.id,
         maxUsers: b,
         size: o.EFr.SIZE_16,
         onClick: e => {
-          e.stopPropagation(), null == y || y({
+          e.stopPropagation(), null == v || v({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },

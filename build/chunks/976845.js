@@ -11,7 +11,7 @@ var r = n(200651),
   a = n(934248),
   s = n(780384),
   l = n(410030),
-  c = n(341570);
+  c = n(738134);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,7 +92,7 @@ let m = {
       r(l)
     }, [r, l])
   },
-  v = e => {
+  y = e => {
     var {
       currentAnimationType: t
     } = e, n = p(e, ["currentAnimationType"]);
@@ -108,7 +108,7 @@ let m = {
       useLottieDefaultColors: !0
     }))
   },
-  y = e => {
+  v = e => {
     var {
       currentAnimationType: t
     } = e, n = p(e, ["currentAnimationType"]);
@@ -126,5 +126,5 @@ let m = {
   },
   O = e => {
     let t = (0, l.ZP)();
-    return (0, s.ap)(t) ? (0, r.jsx)(y, d({}, e)) : (0, r.jsx)(v, d({}, e))
+    return (0, s.ap)(t) ? (0, r.jsx)(v, d({}, e)) : (0, r.jsx)(y, d({}, e))
   }

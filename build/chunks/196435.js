@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "Nim",
     keywords: {
@@ -43,4 +43,3 @@ function t(e) {
     }, e.HASH_COMMENT_MODE]
   }
 }
-e.exports = t

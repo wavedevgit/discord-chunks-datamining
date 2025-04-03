@@ -20,14 +20,14 @@ var r = n(200651),
   g = n(648052),
   E = n(867176),
   b = n(280885),
-  v = n(502762),
-  y = n(530),
+  y = n(502762),
+  v = n(530),
   O = n(679332),
   I = n(544989),
   S = n(171368),
   T = n(228168),
   N = n(388032),
-  A = n(888113);
+  A = n(200669);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -98,7 +98,7 @@ function P(e) {
       children: (0, r.jsxs)(o.VqE, {
         ref: G,
         "aria-label": t.username,
-        children: [(0, r.jsxs)(v.Z, {
+        children: [(0, r.jsxs)(y.Z, {
           user: t,
           displayProfile: k,
           profileType: T.y0.BITE_SIZE,
@@ -128,7 +128,7 @@ function P(e) {
           }), (0, r.jsxs)(o.Ttm, {
             fade: !0,
             className: A.body,
-            children: [(0, r.jsx)(y.Z, {
+            children: [(0, r.jsx)(v.Z, {
               user: t,
               profileType: T.y0.BITE_SIZE,
               nickname: f.ZP.getName(n, C, t),

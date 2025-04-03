@@ -12,7 +12,7 @@ var r = n(200651),
   c = n(981729),
   u = n(770102),
   d = n(534542),
-  f = n(125414);
+  f = n(538285);
 
 function _(e) {
   let {
@@ -26,8 +26,8 @@ function _(e) {
     note: g,
     children: E,
     disabledText: b,
-    containerRef: v
-  } = e, y = i.useRef(null), O = i.useRef(null), I = i.useId(), S = (0, r.jsx)(l.r, {
+    containerRef: y
+  } = e, v = i.useRef(null), O = i.useRef(null), I = i.useId(), S = (0, r.jsx)(l.r, {
     id: I,
     checked: t,
     onChange: p,
@@ -35,10 +35,10 @@ function _(e) {
     focusProps: {
       enabled: !1
     },
-    innerRef: y
+    innerRef: v
   });
   return (0, r.jsxs)("div", {
-    ref: v,
+    ref: y,
     style: m,
     className: a()(f.container, h, {
       [f.disabled]: n
@@ -46,7 +46,7 @@ function _(e) {
     children: [(0, r.jsx)(s.t, {
       within: !0,
       offset: -4,
-      focusTarget: y,
+      focusTarget: v,
       ringTarget: O,
       children: (0, r.jsxs)("div", {
         className: f.labelRow,

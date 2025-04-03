@@ -24,9 +24,9 @@ function l(e) {
 function c(e) {
   var t, n, r;
   let c = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-    u = null !== (t = c.contrastRatio) && void 0 !== t ? t : s.NonText,
-    d = null !== (n = c.tolerance) && void 0 !== n ? n : o,
-    f = i()(null !== (r = c.base) && void 0 !== r ? r : e),
+    u = null != (t = c.contrastRatio) ? t : s.NonText,
+    d = null != (n = c.tolerance) ? n : o,
+    f = i()(null != (r = c.base) ? r : e),
     _ = i()(e),
     p = f.luminance(),
     h = _,

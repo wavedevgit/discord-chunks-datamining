@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120), n(852437), n(653041), n(733860), n(757143), n(301563), n(230036), n(978209);
 var r = n(392711),
   i = n.n(r),
@@ -41,7 +41,7 @@ let h = new l.Z("ChannelMessages"),
 function g(e, t) {
   var n, r;
   let i = null != e.editedTimestamp ? +e.editedTimestamp : 0;
-  return (null != t.edited_timestamp ? +new Date(t.edited_timestamp) : 0) > i || e.embeds.length < (null !== (r = null === (n = t.embeds) || void 0 === n ? void 0 : n.length) && void 0 !== r ? r : 0) || e.content !== t.content
+  return (null != t.edited_timestamp ? +new Date(t.edited_timestamp) : 0) > i || e.embeds.length < (null != (r = null == (n = t.embeds) ? void 0 : n.length) ? r : 0) || e.content !== t.content
 }
 
 function E(e, t) {
@@ -130,34 +130,34 @@ class b {
     _(this, "_messages", void 0), _(this, "_map", void 0), _(this, "_wasAtEdge", void 0), _(this, "_isCacheBefore", void 0), this._messages = [], this._map = {}, this._wasAtEdge = !1, this._isCacheBefore = e
   }
 }
-class v {
+class y {
   static forEach(e) {
-    i().forEach(v._channelMessages, e)
+    i().forEach(y._channelMessages, e)
   }
   static get(e) {
-    return v._channelMessages[e]
+    return y._channelMessages[e]
   }
   static hasPresent(e) {
-    let t = v.get(e);
+    let t = y.get(e);
     return null != t && t.hasPresent()
   }
   static getOrCreate(e) {
-    let t = v._channelMessages[e];
-    return null == t && (t = new v(e), v._channelMessages[e] = t), t
+    let t = y._channelMessages[e];
+    return null == t && (t = new y(e), y._channelMessages[e] = t), t
   }
   static clear(e) {
-    delete v._channelMessages[e]
+    delete y._channelMessages[e]
   }
   static clearCache(e) {
-    let t = v._channelMessages[e];
+    let t = y._channelMessages[e];
     null != t && (t._before.clear(), t._after.clear(), this.commit(t))
   }
   static commit(e) {
-    v._channelMessages[e.channelId] = e
+    y._channelMessages[e.channelId] = e
   }
   mutate(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = new v(this.channelId);
+      n = new y(this.channelId);
     return n._array = t ? [...this._array] : this._array, n._map = t ? p({}, this._map) : this._map, n._after = t ? this._after.clone() : this._after, n._before = t ? this._before.clone() : this._before, e instanceof Function ? (n.ready = this.ready, n.jumpType = this.jumpType, n.jumpTargetId = this.jumpTargetId, n.jumpTargetOffset = this.jumpTargetOffset, n.jumpSequenceId = this.jumpSequenceId, n.jumped = this.jumped, n.jumpedToPresent = this.jumpedToPresent, n.jumpFlash = this.jumpFlash, n.jumpReturnTargetId = this.jumpReturnTargetId, n.focusTargetId = this.focusTargetId, n.hasMoreBefore = this.hasMoreBefore, n.hasMoreAfter = this.hasMoreAfter, n.loadingMore = this.loadingMore, n.revealedMessageId = this.revealedMessageId, n.cached = this.cached, n.hasFetched = this.hasFetched, n.error = this.error, e(n)) : "object" == typeof e && (n.ready = void 0 !== e.ready ? !0 === e.ready : this.ready, n.jumpType = void 0 !== e.jumpType ? e.jumpType : this.jumpType, n.jumpTargetId = void 0 !== e.jumpTargetId ? e.jumpTargetId : this.jumpTargetId, n.jumpTargetOffset = void 0 !== e.jumpTargetOffset ? e.jumpTargetOffset : this.jumpTargetOffset, n.jumpSequenceId = void 0 !== e.jumpSequenceId ? e.jumpSequenceId : this.jumpSequenceId, n.jumped = void 0 !== e.jumped ? !0 === e.jumped : this.jumped, n.jumpedToPresent = void 0 !== e.jumpedToPresent ? !0 === e.jumpedToPresent : this.jumpedToPresent, n.jumpFlash = void 0 !== e.jumpFlash ? !0 === e.jumpFlash : this.jumpFlash, n.jumpReturnTargetId = void 0 !== e.jumpReturnTargetId ? e.jumpReturnTargetId : this.jumpReturnTargetId, n.focusTargetId = void 0 !== e.focusTargetId ? e.focusTargetId : this.focusTargetId, n.hasMoreBefore = void 0 !== e.hasMoreBefore ? !0 === e.hasMoreBefore : this.hasMoreBefore, n.hasMoreAfter = void 0 !== e.hasMoreAfter ? !0 === e.hasMoreAfter : this.hasMoreAfter, n.loadingMore = void 0 !== e.loadingMore ? e.loadingMore : this.loadingMore, n.revealedMessageId = void 0 !== e.revealedMessageId ? e.revealedMessageId : this.revealedMessageId, n.cached = void 0 !== e.cached ? e.cached : this.cached, n.hasFetched = void 0 !== e.hasFetched ? e.hasFetched : this.hasFetched, n.error = void 0 !== e.error ? e.error : this.error), n
   }
   get length() {
@@ -187,11 +187,11 @@ class v {
   }
   findOldest(e) {
     var t, n;
-    return null !== (n = null !== (t = i().find(this._before._messages, e)) && void 0 !== t ? t : i().find(this._array, e)) && void 0 !== n ? n : i().find(this._after._messages, e)
+    return null != (n = null != (t = i().find(this._before._messages, e)) ? t : i().find(this._array, e)) ? n : i().find(this._after._messages, e)
   }
   findNewest(e) {
     var t, n;
-    return null !== (n = null !== (t = i().findLast(this._after._messages, e)) && void 0 !== t ? t : i().findLast(this._array, e)) && void 0 !== n ? n : i().findLast(this._before._messages, e)
+    return null != (n = null != (t = i().findLast(this._after._messages, e)) ? t : i().findLast(this._array, e)) ? n : i().findLast(this._before._messages, e)
   }
   map(e, t) {
     return this._array.map(e, t)
@@ -206,7 +206,7 @@ class v {
     var t;
     let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
       r = this._map[e];
-    return null == r && n ? null !== (t = this._before.get(e)) && void 0 !== t ? t : this._after.get(e) : r
+    return null == r && n ? null != (t = this._before.get(e)) ? t : this._after.get(e) : r
   }
   getByIndex(e) {
     return this._array[e]
@@ -372,7 +372,7 @@ class v {
     var t, n;
     let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       i = null == e.nonce ? null : this.get(e.nonce, !0);
-    if (null != i && ((null === (t = e.author) || void 0 === t ? void 0 : t.id) === (null === (n = i.author) || void 0 === n ? void 0 : n.id) || null != e.interaction && e.interaction.user.id === i.author.id) && null != e.nonce && i.id === e.nonce) {
+    if (null != i && ((null == (t = e.author) ? void 0 : t.id) === (null == (n = i.author) ? void 0 : n.id) || null != e.interaction && e.interaction.user.id === i.author.id) && null != e.nonce && i.id === e.nonce) {
       let t = (0, c.e5)(e);
       return null != i.interactionData && (t.interactionData = i.interactionData), this.replace(e.nonce, t)
     }
@@ -405,48 +405,48 @@ class v {
     return this.mutate({
       loadingMore: !0,
       jumped: null != e,
-      jumpedToPresent: null !== (t = null == e ? void 0 : e.present) && void 0 !== t && t,
-      jumpTargetId: null !== (n = null == e ? void 0 : e.messageId) && void 0 !== n ? n : null,
-      jumpTargetOffset: null !== (r = null == e ? void 0 : e.offset) && void 0 !== r ? r : 0,
-      jumpReturnTargetId: null !== (i = null == e ? void 0 : e.returnMessageId) && void 0 !== i ? i : null,
+      jumpedToPresent: null != (t = null == e ? void 0 : e.present) && t,
+      jumpTargetId: null != (n = null == e ? void 0 : e.messageId) ? n : null,
+      jumpTargetOffset: null != (r = null == e ? void 0 : e.offset) ? r : 0,
+      jumpReturnTargetId: null != (i = null == e ? void 0 : e.returnMessageId) ? i : null,
       ready: null == e && this.ready
     })
   }
   loadComplete(e) {
     var t, n, r, s, l, u, d, _, p, m, g;
     let b = [...e.newMessages],
-      v = null !== (t = e.isBefore) && void 0 !== t && t,
-      y = null !== (n = e.isAfter) && void 0 !== n && n,
-      O = null !== (r = e.jump) && void 0 !== r ? r : null,
-      I = null !== (s = e.hasMoreBefore) && void 0 !== s && s,
-      S = null !== (l = e.hasMoreAfter) && void 0 !== l && l,
-      T = null !== (u = e.cached) && void 0 !== u && u,
+      y = null != (t = e.isBefore) && t,
+      v = null != (n = e.isAfter) && n,
+      O = null != (r = e.jump) ? r : null,
+      I = null != (s = e.hasMoreBefore) && s,
+      S = null != (l = e.hasMoreAfter) && l,
+      T = null != (u = e.cached) && u,
       N = i()(b).reverse().map(o.Z.getCurrentConfig({
         location: "2ecb25_2"
       }, {
         autoTrackExposure: !1
       }).enabled ? e => (0, c.e5)(e) : e => E(this, e)).value(),
       A = null;
-    if ((v || y) && null == O && this.ready) A = this.merge(N, v, !0);
+    if ((y || v) && null == O && this.ready) A = this.merge(N, y, !0);
     else {
       let e = this._array.filter(e => e.state === f.yb.SENDING),
         t = this._array.filter(e => e.state === f.yb.SEND_FAILED),
         n = e.length > 0 || t.length > 0;
-      A = this.reset(N), !n || v || y || (null == O ? void 0 : O.messageId) != null || (null == O ? void 0 : O.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), A = A.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), A = A.merge(e)))
+      A = this.reset(N), !n || y || v || (null == O ? void 0 : O.messageId) != null || (null == O ? void 0 : O.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), A = A.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), A = A.merge(e)))
     }
     return A.mutate({
       ready: !0,
       loadingMore: !1,
-      jumpType: null !== (d = null == O ? void 0 : O.jumpType) && void 0 !== d ? d : a.SR.ANIMATED,
-      jumpFlash: null !== (_ = null == O ? void 0 : O.flash) && void 0 !== _ && _,
+      jumpType: null != (d = null == O ? void 0 : O.jumpType) ? d : a.SR.ANIMATED,
+      jumpFlash: null != (_ = null == O ? void 0 : O.flash) && _,
       jumped: null != O,
-      jumpedToPresent: null !== (p = null == O ? void 0 : O.present) && void 0 !== p && p,
-      jumpTargetId: null !== (m = null == O ? void 0 : O.messageId) && void 0 !== m ? m : null,
+      jumpedToPresent: null != (p = null == O ? void 0 : O.present) && p,
+      jumpTargetId: null != (m = null == O ? void 0 : O.messageId) ? m : null,
       jumpTargetOffset: null != O && null != O.messageId && null != O.offset ? O.offset : 0,
       jumpSequenceId: null != O ? A.jumpSequenceId + 1 : A.jumpSequenceId,
-      jumpReturnTargetId: null !== (g = null == O ? void 0 : O.returnMessageId) && void 0 !== g ? g : null,
-      hasMoreBefore: null == O && y ? A.hasMoreBefore : I,
-      hasMoreAfter: null == O && v ? A.hasMoreAfter : S,
+      jumpReturnTargetId: null != (g = null == O ? void 0 : O.returnMessageId) ? g : null,
+      hasMoreBefore: null == O && v ? A.hasMoreBefore : I,
+      hasMoreAfter: null == O && y ? A.hasMoreAfter : S,
       cached: T,
       hasFetched: e.hasFetched,
       error: !1
@@ -465,5 +465,5 @@ class v {
     _(this, "channelId", void 0), _(this, "ready", void 0), _(this, "jumpType", void 0), _(this, "jumpTargetId", void 0), _(this, "jumpTargetOffset", void 0), _(this, "jumpSequenceId", void 0), _(this, "jumped", void 0), _(this, "jumpedToPresent", void 0), _(this, "jumpFlash", void 0), _(this, "jumpReturnTargetId", void 0), _(this, "focusTargetId", void 0), _(this, "hasMoreBefore", void 0), _(this, "hasMoreAfter", void 0), _(this, "loadingMore", void 0), _(this, "revealedMessageId", void 0), _(this, "cached", void 0), _(this, "hasFetched", void 0), _(this, "error", void 0), _(this, "_array", []), _(this, "_before", void 0), _(this, "_after", void 0), _(this, "_map", {}), this.channelId = e, this.ready = !1, this.jumpTargetId = null, this.jumpTargetOffset = 0, this.jumpSequenceId = 1, this.jumped = !1, this.jumpedToPresent = !1, this.jumpType = a.SR.ANIMATED, this.jumpFlash = !0, this.jumpReturnTargetId = null, this.focusTargetId = null, this.hasMoreBefore = !0, this.hasMoreAfter = !1, this.loadingMore = !1, this.revealedMessageId = null, this._clearMessages(), this._before = new b(!0), this._after = new b(!1), this.cached = !1, this.hasFetched = !1, this.error = !1
   }
 }
-_(v, "_channelMessages", {});
-let y = v
+_(y, "_channelMessages", {});
+let v = y

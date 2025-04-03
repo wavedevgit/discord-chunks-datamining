@@ -7,8 +7,8 @@ n.d(t, {
   cu: () => m,
   lk: () => b,
   tM: () => g,
-  xi: () => v,
-  zb: () => y
+  xi: () => y,
+  zb: () => v
 }), n(474991), n(398202), n(301563), n(653041), n(47120), n(977457), n(566702);
 var r = n(911969),
   i = n(555573),
@@ -30,14 +30,14 @@ function p(e) {
 function h(e) {
   var t, n;
   if (null == e.selection) return null;
-  let r = null !== (t = d.bN.above(e, {
+  let r = null != (t = d.bN.above(e, {
     at: e.selection.focus,
     match: e => d.aj.isType(e, "applicationCommandOption")
-  })) && void 0 !== t ? t : null;
-  return null != r || d.M8.isCollapsed(e.selection) ? r : null !== (n = d.bN.above(e, {
+  })) ? t : null;
+  return null != r || d.M8.isCollapsed(e.selection) ? r : null != (n = d.bN.above(e, {
     at: e.selection.anchor,
     match: e => d.aj.isType(e, "applicationCommandOption")
-  })) && void 0 !== n ? n : null
+  })) ? n : null
 }
 
 function m(e) {
@@ -73,7 +73,7 @@ function E(e, t, n, i) {
         var o;
         return {
           type: "text",
-          text: null !== (o = e.filename) && void 0 !== o ? o : ""
+          text: null != (o = e.filename) ? o : ""
         }
       }
     }
@@ -105,7 +105,7 @@ function b(e, t, n, r, o) {
     var i;
     return [e.name, a.f({
       option: e,
-      content: null !== (i = r[e.name]) && void 0 !== i ? i : null,
+      content: null != (i = r[e.name]) ? i : null,
       guildId: t,
       channelId: n,
       allowEmptyValues: o
@@ -114,9 +114,9 @@ function b(e, t, n, r, o) {
   return i.VP(n, s), s
 }
 
-function v(e, t, n, r, s) {
+function y(e, t, n, r, s) {
   var l;
-  let [c] = r, u = o.Z.getActiveCommand(n), d = null == u ? void 0 : null === (l = u.options) || void 0 === l ? void 0 : l.find(e => e.name === c.optionName);
+  let [c] = r, u = o.Z.getActiveCommand(n), d = null == u || null == (l = u.options) ? void 0 : l.find(e => e.name === c.optionName);
   if (null == d) return;
   let f = E(e, d, c, n),
     _ = a.f({
@@ -133,7 +133,7 @@ function v(e, t, n, r, s) {
   }), _
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == t.options || 0 === t.options.length) return [];
   let n = d.bN.richValue(e),
     r = [],
@@ -146,13 +146,12 @@ function y(e, t) {
     let i = n[t];
     if ("line" === i.type || "applicationCommand" === i.type)
       for (let c = 0; c < i.children.length; c++) {
-        let f;
-        let p = i.children[c],
+        let f, p = i.children[c],
           h = [t, c];
         if (d.aj.isType(p, "applicationCommandOption")) {
           if (null != s) {
             var l;
-            s.valueRange.focus = null !== (l = d.bN.before(e, h)) && void 0 !== l ? l : d.bN.start(e, []), s.text = (0, u.sk)(n, {
+            s.valueRange.focus = null != (l = d.bN.before(e, h)) ? l : d.bN.start(e, []), s.text = (0, u.sk)(n, {
               mode: "raw",
               range: s.valueRange
             }).trim(), r.push(s), s = null

@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(818083),
   E = n(14263),
   b = n(480608),
-  v = n(124072),
-  y = n(184301),
+  y = n(124072),
+  v = n(184301),
   O = n(347475),
   I = n(592125),
   S = n(271383),
@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(594174),
   A = n(51144),
   C = n(388032),
-  R = n(50398),
-  P = n(849067);
+  R = n(73433),
+  P = n(83902);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,10 +94,10 @@ function k(e) {
     role: a
   } = e, s = (0, l.e7)([T.Z], () => {
     var e;
-    return null === (e = T.Z.getGuild(i)) || void 0 === e ? void 0 : e.ownerId
+    return null == (e = T.Z.getGuild(i)) ? void 0 : e.ownerId
   }, [i]), f = (0, l.e7)([N.default], () => N.default.getUser(t.userId), [t.userId]), _ = (0, l.e7)([I.Z], () => I.Z.getChannel(o), [o]);
   return null == f || null == _ ? null : (0, r.jsx)(c.yRy, {
-    preload: () => (0, y.Z)(t.userId, f.getAvatarURL(i, 80), {
+    preload: () => (0, v.Z)(t.userId, f.getAvatarURL(i, 80), {
       guildId: i,
       channelId: o
     }),
@@ -127,7 +127,7 @@ function k(e) {
           (0, u.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("49076")]).then(n.bind(n, 757387));
+            } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("20204")]).then(n.bind(n, 757387));
             return t => (0, r.jsx)(e, x(D({}, t), {
               user: f,
               guildId: i,
@@ -150,22 +150,22 @@ function j(e) {
   } = e, u = i.useRef(null);
   (0, f.ZP)(() => {
     var e;
-    return null === (e = t.setPopoutRef) || void 0 === e || e.call(t, u.current), () => {
+    return null == (e = t.setPopoutRef) || e.call(t, u.current), () => {
       var e;
-      return null === (e = t.setPopoutRef) || void 0 === e ? void 0 : e.call(t, null)
+      return null == (e = t.setPopoutRef) ? void 0 : e.call(t, null)
     }
   });
   let d = (0, E.Z)(o),
     _ = (0, l.e7)([T.Z], () => {
       var e;
-      return null === (e = T.Z.getGuild(o)) || void 0 === e ? void 0 : e.getEveryoneRoleId()
+      return null == (e = T.Z.getGuild(o)) ? void 0 : e.getEveryoneRoleId()
     }, [o]),
     p = (0, l.Wu)([S.ZP, N.default], () => {
       let e = S.ZP.getMembers(o),
         t = null == n || n === _ ? e : e.filter(e => e.roles.includes(n));
       return a()(t).filter(e => null != N.default.getUser(e.userId)).sortBy(e => {
         var t;
-        return null !== (t = e.nick) && void 0 !== t ? t : A.ZP.getName(N.default.getUser(e.userId))
+        return null != (t = e.nick) ? t : A.ZP.getName(N.default.getUser(e.userId))
       }).value()
     }, [o, n, _]),
     h = (0, l.e7)([T.Z], () => {
@@ -180,7 +180,7 @@ function j(e) {
       role: h
     }, e.userId)) : [], [s, o, h, p]);
   if (null == h) return null;
-  let v = null == g ? h.name : C.NW.formatToPlainString(C.t.CuAQkJ, {
+  let y = null == g ? h.name : C.NW.formatToPlainString(C.t.CuAQkJ, {
     title: h.name,
     count: g
   });
@@ -198,7 +198,7 @@ function j(e) {
         }),
         children: (0, r.jsx)("span", {
           "aria-hidden": !0,
-          children: v
+          children: y
         })
       }), b, null == g || g <= b.length ? null : (0, r.jsx)(m.Z, {
         className: R.roleHeader,
@@ -221,7 +221,7 @@ function U(e) {
     inlinePreview: d = !1
   } = e, {
     analyticsLocations: f
-  } = (0, h.ZP)(p.Z.ROLE_MENTION), m = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = null != t && 0 !== t && !d, E = g && "dot" === m, y = e => (0, r.jsxs)(v.Z, x(D({
+  } = (0, h.ZP)(p.Z.ROLE_MENTION), m = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = null != t && 0 !== t && !d, E = g && "dot" === m, v = e => (0, r.jsxs)(y.Z, x(D({
     className: R.roleMention,
     color: "username" === m && g ? t : null
   }, e), {
@@ -240,7 +240,7 @@ function U(e) {
   });
   return !O || d || null == i || null == a || null == n && "@everyone" !== o ? (0, r.jsx)(h.Gt, {
     value: f,
-    children: y()
+    children: v()
   }) : (0, r.jsx)(h.Gt, {
     value: f,
     children: (0, r.jsx)(c.yRy, {
@@ -254,7 +254,7 @@ function U(e) {
         popoutProps: e
       }),
       position: "right",
-      children: y
+      children: v
     })
   })
 }

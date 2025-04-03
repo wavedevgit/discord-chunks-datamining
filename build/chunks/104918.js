@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "CSP",
     case_insensitive: !1,
@@ -19,4 +19,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

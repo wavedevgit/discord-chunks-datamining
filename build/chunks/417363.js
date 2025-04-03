@@ -20,7 +20,7 @@ var r, i = n(392711),
   E = n(391690),
   b = n(981631);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -100,9 +100,8 @@ function B(e) {
   } = e;
   switch (null == g && (g = !0), e.state.type) {
     case b.DJE.COMPLETE: {
-      let e;
-      let E = {},
-        v = null;
+      let e, E = {},
+        y = null;
       if (m) e = b.vxO.REPAIRING;
       else if (null == t) e = b.vxO.INSTALL_REQUIRED;
       else if (g && (t !== n || null != r && 0 !== o().difference(r, i).length)) e = b.vxO.UPDATE_REQUIRED;
@@ -112,17 +111,18 @@ function B(e) {
         if (null != u && 0 !== u.length) {
           for (let n of (t !== b.QR$.WIN64 || G(t, u) || (t = b.QR$.WIN32), u))
             if (n.platforms.includes(t)) {
-              let t;
-              let {
-                executable: r,
-                name: i,
-                working_dir: o
-              } = n, a = i, s = l.Z.fileManager.join(e, r);
-              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != o ? l.Z.fileManager.join(e, o) : l.Z.fileManager.dirname(s), E[a] = I(y({}, n), {
+              let t, {
+                  executable: r,
+                  name: i,
+                  working_dir: o
+                } = n,
+                a = i,
+                s = l.Z.fileManager.join(e, r);
+              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != o ? l.Z.fileManager.join(e, o) : l.Z.fileManager.dirname(s), E[a] = I(v({}, n), {
                 id: a,
                 fullExecutablePath: s,
                 fullWorkingDir: t
-              }), null == v && (v = a)
+              }), null == y && (y = a)
             }
         } else if (null != c) {
           t === b.QR$.WIN64 && null == c[t] && (t = b.QR$.WIN32);
@@ -131,13 +131,13 @@ function B(e) {
             let {
               executable: r
             } = n, i = "Default", o = i;
-            E[o] = I(y({}, n), {
+            E[o] = I(v({}, n), {
               name: i,
               id: o,
               fullExecutablePath: l.Z.fileManager.join(e, r),
               fullWorkingDir: e,
               platforms: [t]
-            }), v = o
+            }), y = o
           }
         }
       }
@@ -152,25 +152,25 @@ function B(e) {
         installPath: _,
         installedSize: p,
         launchOptions: E,
-        defaultLaunchOptionId: v,
+        defaultLaunchOptionId: y,
         shouldPatch: g,
         storage: d
       }
     }
     case b.DJE.TRANSITION: {
-      let o;
-      let {
-        stage: l,
-        disk_progress: c,
-        network_progress: u,
-        reader_progress: d,
-        progress: f,
-        total: h,
-        paused: E
-      } = e.state, v = l.type;
+      let o, {
+          stage: l,
+          disk_progress: c,
+          network_progress: u,
+          reader_progress: d,
+          progress: f,
+          total: h,
+          paused: E
+        } = e.state,
+        y = l.type;
       return {
-        type: o = v === b.f07.UNINSTALLING ? b.vxO.UNINSTALLING : m ? b.vxO.REPAIRING : null == t ? b.vxO.INSTALLING : b.vxO.UPDATING,
-        stage: v,
+        type: o = y === b.f07.UNINSTALLING ? b.vxO.UNINSTALLING : m ? b.vxO.REPAIRING : null == t ? b.vxO.INSTALLING : b.vxO.UPDATING,
+        stage: y,
         applicationId: a,
         branchId: s,
         buildId: t,
@@ -349,7 +349,7 @@ class J extends(r = a.ZP.Store) {
     })
   }
 }
-v(J, "displayName", "DispatchApplicationStore");
+y(J, "displayName", "DispatchApplicationStore");
 let $ = new J(s.Z, {
   CONNECTION_OPEN: U,
   DISPATCH_APPLICATION_STATE_UPDATE: X

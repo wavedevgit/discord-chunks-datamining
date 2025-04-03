@@ -13,7 +13,7 @@ function o() {
   var e;
   let {
     volume: t
-  } = null !== (e = r.K.get(i)) && void 0 !== e ? e : {};
+  } = null != (e = r.K.get(i)) ? e : {};
   return "number" != typeof t && (t = 1), t = Math.min(1, Math.max(0, t))
 }
 
@@ -28,7 +28,7 @@ function s() {
   var e;
   let {
     muted: t
-  } = null !== (e = r.K.get(i)) && void 0 !== e ? e : {};
+  } = null != (e = r.K.get(i)) ? e : {};
   return "boolean" != typeof t && (t = !1), t
 }
 

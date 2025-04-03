@@ -22,7 +22,7 @@ var r = function(e) {
     return !(a || s || e.getClientRects().length)
   },
   o = function(e) {
-    var t, n, r = null === (n = null === (t = e) || void 0 === t ? void 0 : t.ownerDocument) || void 0 === n ? void 0 : n.defaultView;
+    var t, n, r = null == (n = null == (t = e) ? void 0 : t.ownerDocument) ? void 0 : n.defaultView;
     return !!(r && e instanceof r.Element)
   },
   a = function(e) {

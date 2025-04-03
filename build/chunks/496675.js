@@ -19,8 +19,8 @@ var r, i = n(392711),
   g = n(386438),
   E = n(700785),
   b = n(592125),
-  v = n(271383),
-  y = n(430824),
+  y = n(271383),
+  v = n(430824),
   O = n(594174),
   I = n(981631),
   S = n(478743);
@@ -44,7 +44,7 @@ function P(e) {
   if (null != n) return n;
   let r = O.default.getCurrentUser();
   if (null == r) return E.Hn;
-  let i = y.Z.getGuild(e);
+  let i = v.Z.getGuild(e);
   return null == i ? E.Hn : N[e] = E.uB({
     user: r,
     context: i,
@@ -60,7 +60,7 @@ function w(e) {
   let i = b.Z.getChannel(e);
   if (null == i) return E.Hn;
   let a = i.getGuildId(),
-    s = null != a && (u.Z.isLurking(a) || (null === (t = v.ZP.getMember(a, r.id)) || void 0 === t ? void 0 : t.isPending));
+    s = null != a && (u.Z.isLurking(a) || (null == (t = y.ZP.getMember(a, r.id)) ? void 0 : t.isPending));
   return !i.isScheduledForDeletion() && !s && o().isEmpty(i.permissionOverwrites) && null != a ? P(a) : E.uB({
     user: r,
     context: i,
@@ -77,7 +77,7 @@ function D(e) {
 function L(e) {
   if (null != e) {
     var t;
-    C[e] = (null !== (t = C[e]) && void 0 !== t ? t : 0) + 1
+    C[e] = (null != (t = C[e]) ? t : 0) + 1
   }
 }
 
@@ -103,7 +103,7 @@ function U(e) {
   let {
     user: n
   } = e;
-  if (n.id !== (null === (t = O.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
+  if (n.id !== (null == (t = O.default.getCurrentUser()) ? void 0 : t.id)) return !1;
   x()
 }
 
@@ -149,7 +149,7 @@ function F() {
 
 function V(e) {
   var t;
-  return (null === (t = O.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
+  return (null == (t = O.default.getCurrentUser()) ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
 }
 
 function Z(e) {
@@ -234,7 +234,7 @@ function Q(e, t, n, r) {
 }
 class X extends(r = s.ZP.Store) {
   initialize() {
-    this.waitFor(O.default, y.Z, b.Z, v.ZP, f.Z, d.Z, c.Z)
+    this.waitFor(O.default, v.Z, b.Z, y.ZP, f.Z, d.Z, c.Z)
   }
   getChannelPermissions(e) {
     return p.Ec.has(e.type) ? w(e.id) : D(e.id)
@@ -269,7 +269,7 @@ class X extends(r = s.ZP.Store) {
     return a.Db(P(e.id), E.ym)
   }
   canWithPartialContext(e, t) {
-    return "channelId" in t && "string" == typeof t.channelId ? this.can(e, b.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, y.Z.getGuild(t.guildId))
+    return "channelId" in t && "string" == typeof t.channelId ? this.can(e, b.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.Z.getGuild(t.guildId))
   }
   can(e, t, n, r, i) {
     let o = Q(t, n, r, i);
@@ -300,7 +300,7 @@ class X extends(r = s.ZP.Store) {
   isRoleHigher(e, t, n) {
     let r = O.default.getCurrentUser(),
       i = c.Z.isViewingRoles(e.id);
-    return E.r6(e, i ? void 0 : null == r ? void 0 : r.id, t, n)
+    return E.r6(e, i || null == r ? void 0 : r.id, t, n)
   }
   canImpersonateRole(e, t) {
     let n = this.getHighestRole(e),
@@ -310,7 +310,7 @@ class X extends(r = s.ZP.Store) {
   }
   getGuildVersion(e) {
     var t;
-    return null !== (t = C[e]) && void 0 !== t ? t : 0
+    return null != (t = C[e]) ? t : 0
   }
   getChannelsVersion() {
     return R

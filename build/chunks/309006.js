@@ -14,12 +14,12 @@ var r = n(200651),
   u = n(39127),
   d = n(594174),
   f = n(353368),
-  _ = n(944097);
+  _ = n(297928);
 let p = 50;
 
 function h(e) {
   var t;
-  let n = null == e ? void 0 : null === (t = e.parentElement) || void 0 === t ? void 0 : t.getBoundingClientRect();
+  let n = null == e || null == (t = e.parentElement) ? void 0 : t.getBoundingClientRect();
   return null == n ? {
     width: 0,
     height: 0
@@ -32,12 +32,12 @@ let m = i.forwardRef(function(e, t) {
   let {
     sound: n,
     containerDimensions: h
-  } = e, m = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), v = E.length < p, y = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, O = i.useCallback(() => {
-    if (!g && v && y && null != m) {
+  } = e, m = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < p, v = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, O = i.useCallback(() => {
+    if (!g && y && v && null != m) {
       var e;
       let t = (0, c._r)({
           id: n.emojiId,
-          name: null !== (e = n.emojiName) && void 0 !== e ? e : "",
+          name: null != (e = n.emojiName) ? e : "",
           animated: !1
         }),
         r = null != n.emojiId,
@@ -53,7 +53,7 @@ let m = i.forwardRef(function(e, t) {
         };
       b(e => [...e, l])
     }
-  }, [g, v, y, m, n]);
+  }, [g, y, v, m, n]);
   i.useImperativeHandle(t, () => ({
     addAnimation: O
   }));
@@ -64,7 +64,7 @@ let m = i.forwardRef(function(e, t) {
       return n.splice(r, 1), n
     })
   }, []);
-  return g || !y ? null : (0, r.jsx)("div", {
+  return g || !v ? null : (0, r.jsx)("div", {
     className: _.effects,
     style: {
       width: h.width,

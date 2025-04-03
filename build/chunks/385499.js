@@ -11,7 +11,7 @@ var i = n(120356),
   s = n(481060),
   l = n(674563),
   c = n(388032),
-  u = n(174402);
+  u = n(575302);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,8 +87,8 @@ let h = e => {
     default:
       E = c.NW.string(c.t["9RNkeH"])
   }
-  let v = i === l.Hb.ORIGINAL_POSTER,
-    y = i === l.Hb.REMIX,
+  let y = i === l.Hb.ORIGINAL_POSTER,
+    v = i === l.Hb.REMIX,
     O = null;
   _ && (O = (0, r.jsx)(a.u, {
     text: b,
@@ -101,8 +101,8 @@ let h = e => {
   })), t = i === l.Hb.AI ? u.botTagAI : n ? u.botTagInvert : u.botTagRegular;
   let I = e => (0, r.jsxs)("span", p(f({}, e), {
     className: o()(d, t, m ? u.rem : u.px, {
-      [u.botTagOP]: v,
-      [u.botTagRemix]: y
+      [u.botTagOP]: y,
+      [u.botTagRemix]: v
     }),
     children: [h ? null : O, g, (0, r.jsx)("span", {
       className: u.botText,

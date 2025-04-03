@@ -29,14 +29,12 @@ var r = n(239189),
 
 function a(e, t, n, r, i, o, a, s, l) {
   var c = l ? l(e) : e;
-  if (c < t) {
+  if (c < t)
     if ("identity" === a) return c;
-    "clamp" === a && (c = t)
-  }
-  if (c > n) {
+    else "clamp" === a && (c = t);
+  if (c > n)
     if ("identity" === s) return c;
-    "clamp" === s && (c = n)
-  }
+    else "clamp" === s && (c = n);
   return r === i ? r : t === n ? e <= t ? r : i : (t === -1 / 0 ? c = -c : n === 1 / 0 ? c -= t : c = (c - t) / (n - t), c = o(c), r === -1 / 0 ? c = -c : i === 1 / 0 ? c += r : c = c * (i - r) + r, c)
 }
 

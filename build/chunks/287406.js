@@ -46,7 +46,7 @@ function b(e, t) {
   return (t = t || {}).raw = !0, E(e, t)
 }
 
-function v(e, t) {
+function y(e, t) {
   return (t = t || {}).gzip = !0, E(e, t)
 }
 g.prototype.push = function(e, t) {
@@ -63,4 +63,4 @@ g.prototype.push = function(e, t) {
   this.chunks.push(e)
 }, g.prototype.onEnd = function(e) {
   e === d && ("string" === this.options.to ? this.result = this.chunks.join("") : this.result = i.flattenChunks(this.chunks)), this.chunks = [], this.err = e, this.msg = this.strm.msg
-}, t.Deflate = g, t.deflate = E, t.deflateRaw = b, t.gzip = v
+}, t.Deflate = g, t.deflate = E, t.deflateRaw = b, t.gzip = y

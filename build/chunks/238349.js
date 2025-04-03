@@ -28,8 +28,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = [],
-  y = null,
+let y = [],
+  v = null,
   O = null,
   I = new Set,
   S = s.z.LATEST_ACTIVITY,
@@ -37,14 +37,14 @@ let v = [],
   N = [],
   A = !1,
   C = [],
-  R = a().chain(v),
-  P = a().chain(v),
+  R = a().chain(y),
+  P = a().chain(y),
   w = new Set,
   D = new Set;
 
 function L(e) {
   var t;
-  return null !== (t = p.ZP.lastMessageId(e)) && void 0 !== t ? t : e
+  return null != (t = p.ZP.lastMessageId(e)) ? t : e
 }
 
 function x(e) {
@@ -61,19 +61,19 @@ function M(e) {
 function k(e) {
   return function(t) {
     var n;
-    let r = null === (n = _.Z.getChannel(t)) || void 0 === n ? void 0 : n.appliedTags;
+    let r = null == (n = _.Z.getChannel(t)) ? void 0 : n.appliedTags;
     return null != r && 0 !== r.length && r.some(t => e.has(t))
   }
 }
 
 function j() {
-  N = [], r = null, O = null, I = new Set, S = s.z.LATEST_ACTIVITY, T = 0, C = [], R = a().chain(v), P = a().chain(v), D.clear(), w.clear()
+  N = [], r = null, O = null, I = new Set, S = s.z.LATEST_ACTIVITY, T = 0, C = [], R = a().chain(y), P = a().chain(y), D.clear(), w.clear()
 }
 
 function U() {
   var e;
   let t = h.Z.getChannelId();
-  if (null == t || !(null === (e = _.Z.getChannel(t)) || void 0 === e ? void 0 : e.isForumLikeChannel())) return j(), !1;
+  if (null == t || !(null == (e = _.Z.getChannel(t)) ? void 0 : e.isForumLikeChannel())) return j(), !1;
   B({
     refreshThreadIds: !0
   })
@@ -108,7 +108,7 @@ function F(e) {
   let {
     guildId: n
   } = e;
-  if (null == O || n !== (null === (t = _.Z.getChannel(O)) || void 0 === t ? void 0 : t.guild_id)) return !1;
+  if (null == O || n !== (null == (t = _.Z.getChannel(O)) ? void 0 : t.guild_id)) return !1;
   B({
     refreshThreadIds: !0
   })
@@ -138,7 +138,7 @@ function Z(e) {
     isNewlyCreated: n
   } = e;
   if (null == t.parent_id || t.parent_id !== O || !n) return !1;
-  t.ownerId !== f.default.getId() ? T++ : y = t.id
+  t.ownerId !== f.default.getId() ? T++ : v = t.id
 }
 
 function H(e) {
@@ -200,8 +200,8 @@ class z extends(i = l.ZP.Store) {
     return N
   }
   getAndDeleteMostRecentUserCreatedThreadId() {
-    let e = y;
-    return y = null, e
+    let e = v;
+    return v = null, e
   }
   getFirstNoReplyThreadId() {
     return r

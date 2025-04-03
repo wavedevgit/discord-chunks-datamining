@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(252618),
   h = n(587061),
   m = n(981631);
-n(670247);
+n(294346);
 let g = new Set([m.Z5c.LOGIN, m.Z5c.REGISTER]);
 
 function E(e) {
@@ -57,7 +57,7 @@ function b() {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     children: t,
     skipsSettingDefaultPageTitle: n
@@ -75,4 +75,4 @@ function v(e) {
     children: [E(o), b(), l, t]
   })
 }
-let y = i.memo(v)
+let v = i.memo(y)

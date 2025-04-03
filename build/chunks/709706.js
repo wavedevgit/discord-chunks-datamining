@@ -89,21 +89,18 @@ function E(e) {
 }
 
 function b(e) {
-  if (null == m.limitedTimeVoices) {
-    h.warn("No limited time voices available to update");
-    return
-  }
+  if (null == m.limitedTimeVoices) return void h.warn("No limited time voices available to update");
   m.limitedTimeVoices.current_set_end = e.toISOString(), m.limitedTimeVoices.next_set_start = e.toISOString(), m.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), S()
 }
 
-function v(e) {
+function y(e) {
   return Object.entries(e).sort((e, t) => g(e[1]) - g(t[1])).map(e => {
     let [t] = e;
     return t
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     catalog: t
   } = e;
@@ -121,7 +118,7 @@ function y(e) {
     available: o,
     temporarilyAvailable: r.currentSet.includes(e)
   }));
-  return m.voiceFilters = n, m.sortedVoiceFilters = v(m.voiceFilters), m.catalogLastFetchTime = new Date, !0
+  return m.voiceFilters = n, m.sortedVoiceFilters = y(m.voiceFilters), m.catalogLastFetchTime = new Date, !0
 }
 
 function O() {
@@ -142,7 +139,7 @@ class I extends(r = s.ZP.Store) {
   }
   isModelDownloaded(e) {
     var t;
-    return (null === (t = m.modelState[e]) || void 0 === t ? void 0 : t.status) === c.L.DOWNLOADED
+    return (null == (t = m.modelState[e]) ? void 0 : t.status) === c.L.DOWNLOADED
   }
   getSortedVoiceFilters() {
     return m.sortedVoiceFilters.map(e => m.voiceFilters[e])
@@ -174,7 +171,7 @@ function S() {
   let e = E(m.limitedTimeVoices);
   m.catalogUpdateTime = e.catalogUpdateTime, Object.keys(m.voiceFilters).forEach(t => {
     m.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
-  }), m.sortedVoiceFilters = v(m.voiceFilters)
+  }), m.sortedVoiceFilters = y(m.voiceFilters)
 }
 
 function T(e) {
@@ -204,7 +201,7 @@ function A(e) {
   let {
     modelId: n
   } = e;
-  (null === (t = m.modelState[n]) || void 0 === t ? void 0 : t.status) !== c.L.DOWNLOADED && (m.modelState[n] = p(f({}, m.modelState[n]), {
+  (null == (t = m.modelState[n]) ? void 0 : t.status) !== c.L.DOWNLOADED && (m.modelState[n] = p(f({}, m.modelState[n]), {
     status: c.L.MISSING
   }))
 }
@@ -235,7 +232,7 @@ let w = new I(l.Z, {
   VOICE_FILTER_DOWNLOAD_PROGRESS: N,
   VOICE_FILTER_DOWNLOAD_FAILED: A,
   VOICE_FILTER_FILE_READY: C,
-  VOICE_FILTER_CATALOG_FETCH_SUCCESS: y,
+  VOICE_FILTER_CATALOG_FETCH_SUCCESS: v,
   VOICE_FILTER_CATALOG_FETCH_FAILED: O,
   VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: S,
   VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: R,

@@ -28,8 +28,8 @@ let h = 750,
   g = 500,
   E = 25,
   b = 25,
-  v = 1,
-  y = null,
+  y = 1,
+  v = null,
   O = new l.b(h, g),
   I = new c.S(m),
   S = !1;
@@ -46,14 +46,14 @@ class T extends a.Z {
   }
   saveLimit(e) {
     let t = r.Z.getBasicChannel(e);
-    return null != t && (0, d.p)(t) ? E : null != t && O.has(e) ? b : v
+    return null != t && (0, d.p)(t) ? E : null != t && O.has(e) ? b : y
   }
   getSaveableChannels() {
     let e = r.Z.getChannelIds(null).map(e => ({
       guildId: null,
       channelId: e
     }));
-    return s.Z.isLowDisk ? null != y ? [...e, y] : e : [...e, ...O.values()]
+    return s.Z.isLowDisk ? null != v ? [...e, v] : e : [...e, ...O.values()]
   }
   takeSnapshot() {
     return {
@@ -61,14 +61,14 @@ class T extends a.Z {
       data: {
         channels: [...O.allValues()].filter(e => !e.fallback),
         penalized: [...I.keys()],
-        lastChannel: y
+        lastChannel: v
       }
     }
   }
   static mergeSnapshot(e) {
     let t = O,
       n = I;
-    for (let n of (O = new l.b(O.primaryCapacity, O.extendedCapacity), I = new c.S(I.capacity), y = null != y ? y : e.lastChannel, [e.channels, t.values()]))
+    for (let n of (O = new l.b(O.primaryCapacity, O.extendedCapacity), I = new c.S(I.capacity), v = null != v ? v : e.lastChannel, [e.channels, t.values()]))
       for (let e of n) e.fallback || O.put(e.channelId, e);
     for (let t of [e.penalized, n.keys()])
       for (let e of t) I.put(e, null)
@@ -78,11 +78,11 @@ class T extends a.Z {
     if (null != t && (0, f.v)(t)) {
       var n;
       let r = {
-        guildId: null !== (n = t.guild_id) && void 0 !== n ? n : null,
+        guildId: null != (n = t.guild_id) ? n : null,
         channelId: e,
         channelType: t.type
       };
-      y = r, O.put(e, r), (0, u.Hr)(t) && null != I.put(e, null) && O.delete(e)
+      v = r, O.put(e, r), (0, u.Hr)(t) && null != I.put(e, null) && O.delete(e)
     }
   }
   static deleteChannel(e) {

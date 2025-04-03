@@ -20,12 +20,12 @@ var r = n(200651),
   g = n(661824),
   E = n(703558),
   b = n(117530),
-  v = n(459273),
-  y = n(444282),
+  y = n(459273),
+  v = n(444282),
   O = n(898463),
   I = n(981631),
-  S = n(422685),
-  T = n(269918);
+  S = n(650514),
+  T = n(283574);
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,10 +108,10 @@ function L(e) {
     }
   }), M = i.useMemo(() => {
     var e;
-    return null !== (e = null == L ? void 0 : L.filter(e => {
+    return null != (e = null == L ? void 0 : L.filter(e => {
       var t;
-      return e.type === f.jw.ATTACHMENT && (null == x ? void 0 : null === (t = x[e.name]) || void 0 === t ? void 0 : t.hasValue)
-    })) && void 0 !== e ? e : []
+      return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
+    })) ? e : []
   }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
@@ -122,7 +122,7 @@ function L(e) {
   let U = i.useCallback(() => {
     N.focusFirstVisibleItem()
   }, [N]);
-  (0, v.yp)({
+  (0, y.yp)({
     event: I.CkL.FOCUS_ATTACHMENT_AREA,
     handler: U
   });
@@ -162,7 +162,7 @@ function L(e) {
             ref: i
           }, s), {
             className: a()(S.channelAttachmentArea, T.scrollbarGhost),
-            children: w ? M.map(e => (0, r.jsx)(y.Z, {
+            children: w ? M.map(e => (0, r.jsx)(v.Z, {
               channelId: t,
               keyboardModeEnabled: o,
               option: e

@@ -18,8 +18,8 @@ var o, a = n(442837),
   g = n(592125),
   E = n(594174),
   b = n(74538),
-  v = n(51144),
-  y = n(47760),
+  y = n(51144),
+  v = n(47760),
   O = n(469115),
   I = n(874893);
 
@@ -68,7 +68,7 @@ let T = !1,
       channelId: t,
       guildId: n
     } = e, r = E.default.getCurrentUser();
-    if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, v.Fc)(r)) return;
+    if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, y.Fc)(r)) return;
     let i = g.Z.getChannel(t);
     null != i && (0, m.zi)(i.type) && (A = !0)
   };
@@ -110,7 +110,7 @@ let j = () => {
     }
     let t = O.qt[e],
       n = (null == r ? void 0 : r.id) === (null == t ? void 0 : t.id);
-    null != t && !n && (r = t)
+    null == t || n || (r = t)
   };
 class B extends(o = a.ZP.PersistedStore) {
   initialize(e) {
@@ -125,7 +125,7 @@ class B extends(o = a.ZP.PersistedStore) {
     return r
   }
   getLinearGradient() {
-    return null == this.gradientPreset ? null : (0, y.VK)(this.gradientPreset)
+    return null == this.gradientPreset ? null : (0, v.VK)(this.gradientPreset)
   }
   get isEditorOpen() {
     return T
@@ -143,7 +143,7 @@ class B extends(o = a.ZP.PersistedStore) {
     super(...e), S(this, "migrations", [e => {
       var t;
       return {
-        gradientPresetId: null == e ? void 0 : null === (t = e.gradientPreset) || void 0 === t ? void 0 : t.id
+        gradientPresetId: null == e || null == (t = e.gradientPreset) ? void 0 : t.id
       }
     }])
   }

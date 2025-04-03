@@ -31,7 +31,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,7 +56,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,7 +77,7 @@ function T(e) {
     connectedOn: s,
     voiceState: l,
     type: c
-  } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", _ = l.selfVideo ? "\0" : "\x01", p = "".concat(null !== (t = null == r ? void 0 : r.position) && void 0 !== t ? t : 999).padStart(3, "0");
+  } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", _ = l.selfVideo ? "\0" : "\x01", p = "".concat(null != (t = null == r ? void 0 : r.position) ? t : 999).padStart(3, "0");
   return "".concat(u).concat(d).concat(f).concat(_).concat(p).concat(s).concat((0, i.Z)(a, o))
 }
 
@@ -107,39 +107,38 @@ function C(e) {
 class R {
   _getParticipantsForUser(e, t) {
     var n, r, i;
-    let s;
-    let b = [],
-      y = f.Z.getVoiceStateForChannel(this.channelId, e);
-    if (null == y) return b;
+    let s, b = [],
+      v = f.Z.getVoiceStateForChannel(this.channelId, e);
+    if (null == v) return b;
     let I = d.default.getUser(e);
     if (null == I) return null != this.guildId && m.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), b;
     let S = null != t ? t[0] : null,
       T = null != this.guildId ? c.ZP.getMember(this.guildId, e) : null,
-      N = null !== (n = null == T ? void 0 : T.nick) && void 0 !== n ? n : p.ZP.getName(this.guildId, this.channelId, I),
+      N = null != (n = null == T ? void 0 : T.nick) ? n : p.ZP.getName(this.guildId, this.channelId, I),
       A = {
         user: I,
         userNick: p.ZP.getName(this.guildId, this.channelId, I),
         nick: N,
-        comparator: (0, _.sQ)(y, N),
-        voiceState: y,
+        comparator: (0, _.sQ)(v, N),
+        voiceState: v,
         role: (0, E.H)(this.guildId, e),
         speaker: h.ZP.isSpeaker(e, this.channelId),
         member: T,
         blocked: u.Z.isBlocked(I.id),
         ignored: u.Z.isIgnored(I.id),
         isFriend: u.Z.isFriend(I.id),
-        connectedOn: null !== (r = null == S ? void 0 : S.connectedOn) && void 0 !== r ? r : Date.now()
+        connectedOn: null != (r = null == S ? void 0 : S.connectedOn) ? r : Date.now()
       },
-      C = O(v({}, A), {
+      C = O(y({}, A), {
         type: "VOICE",
         id: I.id,
-        rtsState: (0, g.gf)(y)
+        rtsState: (0, g.gf)(v)
       });
     b.push(C);
-    let R = null !== (i = a.Z.getStreamForUser(e, this.guildId)) && void 0 !== i ? i : a.Z.getActiveStreamForUser(e, this.guildId);
+    let R = null != (i = a.Z.getStreamForUser(e, this.guildId)) ? i : a.Z.getActiveStreamForUser(e, this.guildId);
     if (null != R && R.channelId === this.channelId) {
       let e = (0, o.V9)(R);
-      s = O(v({}, A), {
+      s = O(y({}, A), {
         id: e,
         type: "STREAM",
         rtsState: g.xO.NONE
@@ -173,7 +172,7 @@ class R {
   }
   getParticipant(e) {
     var t;
-    return null !== (t = this._participantsIndex.get(e)) && void 0 !== t ? t : null
+    return null != (t = this._participantsIndex.get(e)) ? t : null
   }
   get requestToSpeakVersion() {
     return this._requestToSpeakIndex.version
@@ -183,6 +182,6 @@ class R {
   }
   constructor(e) {
     var t;
-    b(this, "channelId", void 0), b(this, "guildId", void 0), b(this, "participants", {}), b(this, "_participantsIndex", new r.h(C, T)), b(this, "_requestToSpeakIndex", new r.h(() => [], N)), this.channelId = e, this.guildId = null === (t = s.Z.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
+    b(this, "channelId", void 0), b(this, "guildId", void 0), b(this, "participants", {}), b(this, "_participantsIndex", new r.h(C, T)), b(this, "_requestToSpeakIndex", new r.h(() => [], N)), this.channelId = e, this.guildId = null == (t = s.Z.getChannel(e)) ? void 0 : t.getGuildId()
   }
 }

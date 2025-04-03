@@ -69,7 +69,7 @@ function g(e, t) {
 function E(e, t, n, r) {
   var i;
   e in p || (p[e] = {});
-  let o = null !== (i = p[e][null != t ? t : a.kod]) && void 0 !== i ? i : {};
+  let o = null != (i = p[e][null != t ? t : a.kod]) ? i : {};
   p[e][null != t ? t : a.kod] = d(c({}, o), {
     [r]: {
       streamId: n
@@ -85,7 +85,7 @@ function b(e) {
   f = t.id, _ = n
 }
 
-function v(e) {
+function y(e) {
   let {
     user: t,
     sessionId: n
@@ -93,7 +93,7 @@ function v(e) {
   f = t.id, _ = n
 }
 
-function y(e) {
+function v(e) {
   let {
     userId: t,
     guildId: n,
@@ -115,11 +115,11 @@ function O(e) {
       channelId: o,
       guildId: s
     } = t;
-    if (null == o && r === f) {
+    if (null == o && r === f)
       if (i !== _) return e;
-      p = {}, h = {}
-    } else {
-      if (null != o || (null === (n = p[r]) || void 0 === n ? void 0 : n[null != s ? s : a.kod]) == null) return e;
+      else p = {}, h = {};
+    else {
+      if (null != o || (null == (n = p[r]) ? void 0 : n[null != s ? s : a.kod]) == null) return e;
       g(r, s)
     }
     return !0
@@ -153,12 +153,12 @@ class T extends(r = i.ZP.Store) {
   getStreamId(e, t) {
     var n, r, i;
     let o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null === (i = p[e]) || void 0 === i ? void 0 : null === (r = i[null != t ? t : a.kod]) || void 0 === r ? void 0 : null === (n = r[o]) || void 0 === n ? void 0 : n.streamId
+    return null == (i = p[e]) || null == (r = i[null != t ? t : a.kod]) || null == (n = r[o]) ? void 0 : n.streamId
   }
   getUserStreamData(e, t) {
     var n, r;
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null === (r = p[e]) || void 0 === r ? void 0 : null === (n = r[null != t ? t : a.kod]) || void 0 === n ? void 0 : n[i]
+    return null == (r = p[e]) || null == (n = r[null != t ? t : a.kod]) ? void 0 : n[i]
   }
   getTimedoutVideos() {
     return h
@@ -170,8 +170,8 @@ class T extends(r = i.ZP.Store) {
 l(T, "displayName", "VideoStreamStore");
 let N = new T(o.Z, {
   CONNECTION_OPEN: b,
-  OVERLAY_INITIALIZE: v,
-  RTC_CONNECTION_VIDEO: y,
+  OVERLAY_INITIALIZE: y,
+  RTC_CONNECTION_VIDEO: v,
   VOICE_STATE_UPDATES: O,
   VIDEO_STREAM_READY_TIMEOUT: I,
   CLEAR_VIDEO_STREAM_READY_TIMEOUT: S

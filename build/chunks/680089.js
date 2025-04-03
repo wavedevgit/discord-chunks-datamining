@@ -64,7 +64,7 @@ function b(e) {
     for (let t of e.channel_overrides) t.collapsed && (f[t.channel_id] = !0)
 }
 
-function v(e) {
+function y(e) {
   let {
     channel: {
       id: t
@@ -73,7 +73,7 @@ function v(e) {
   return h(t)
 }
 
-function y(e) {
+function v(e) {
   let {
     guildId: t
   } = e;
@@ -119,7 +119,7 @@ let S = new I(o.Z, {
   USER_GUILD_SETTINGS_FULL_UPDATE: b,
   CATEGORY_COLLAPSE: m,
   CATEGORY_EXPAND: g,
-  CATEGORY_COLLAPSE_ALL: y,
+  CATEGORY_COLLAPSE_ALL: v,
   CATEGORY_EXPAND_ALL: O,
-  CHANNEL_DELETE: v
+  CHANNEL_DELETE: y
 })

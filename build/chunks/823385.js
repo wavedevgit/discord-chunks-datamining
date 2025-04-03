@@ -19,8 +19,8 @@ var i, o = n(392711),
   g = n(703558),
   E = n(984933),
   b = n(271383),
-  v = n(430824),
-  y = n(496675),
+  y = n(430824),
+  v = n(496675),
   O = n(306680),
   I = n(944486),
   S = n(914010),
@@ -53,7 +53,7 @@ let w = "seenQSTutorial",
   Z = [];
 
 function H() {
-  j = v.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, V = []
+  j = y.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, V = []
 }
 
 function W(e) {
@@ -75,8 +75,8 @@ function Y(e) {
 
 function K() {
   var e, t;
-  let n = null !== (e = S.Z.getGuildId()) && void 0 !== e ? e : void 0,
-    r = null !== (t = I.Z.getChannelId()) && void 0 !== t ? t : void 0;
+  let n = null != (e = S.Z.getGuildId()) ? e : void 0,
+    r = null != (t = I.Z.getChannelId()) ? t : void 0;
   switch (U) {
     case u.h8.USER: {
       let e = h.default.getId();
@@ -120,7 +120,7 @@ function K() {
     o = [];
   for (let e = 1; e < Z.length; e += 1) {
     let t = Y(Z[e]);
-    null != t && (t.type !== u.h8.TEXT_CHANNEL && t.type !== u.h8.VOICE_CHANNEL || y.Z.can(C.Plq.VIEW_CHANNEL, t.record)) && o.push(t)
+    null != t && (t.type !== u.h8.TEXT_CHANNEL && t.type !== u.h8.VOICE_CHANNEL || v.Z.can(C.Plq.VIEW_CHANNEL, t.record)) && o.push(t)
   }
   o.length > 0 && i.push((0, u.o6)(R.NW.string(R.t["80lOZ2"])), ...o);
   let s = W(e => e === r || Z.includes(e));
@@ -144,7 +144,7 @@ function K() {
 function z(e, t) {
   switch (U) {
     case u.h8.USER: {
-      let t = v.Z.getGuild(S.Z.getGuildId());
+      let t = y.Z.getGuild(S.Z.getGuildId());
       e.unshift((0, u.o6)(null != t ? R.NW.formatToPlainString(R.t.FREzQk, {
         name: t.name
       }) : R.NW.string(R.t.XFYW1t))), G = e;
@@ -178,7 +178,7 @@ function q(e) {
   let {
     query: n,
     queryMode: i
-  } = e, o = null !== (t = S.Z.getGuildId()) && void 0 !== t ? t : void 0, a = new Set(["user:".concat(h.default.getId())]);
+  } = e, o = null != (t = S.Z.getGuildId()) ? t : void 0, a = new Set(["user:".concat(h.default.getId())]);
   null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, x, null != i ? L : D, {
     frecencyBoosters: !0,
     blacklist: a
@@ -204,7 +204,7 @@ function X(e, t) {
 }
 
 function J(e, t) {
-  !X(e = "" === (t = t.trim()).trim() ? K() : e, V) && (V = e, z(e, t))
+  X(e = "" === (t = t.trim()).trim() ? K() : e, V) || (V = e, z(e, t))
 }
 
 function $() {
@@ -218,10 +218,10 @@ function ee(e) {
     queryMode: o
   } = e;
   if (null == r) return !1;
-  let a = null !== (t = S.Z.getGuildId()) && void 0 !== t ? t : null;
+  let a = null != (t = S.Z.getGuildId()) ? t : null;
   if (U !== o) {
     r.setResultTypes(null != o ? [o] : x), r.setLimit(null != o ? L : D);
-    let e = null !== (n = S.Z.getGuildId()) && void 0 !== n ? n : void 0;
+    let e = null != (n = S.Z.getGuildId()) ? n : void 0;
     o === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
         guild: e,
@@ -248,7 +248,7 @@ function en() {
 class er extends(i = s.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(b.ZP, v.Z, m.Z), this.syncWith([p.Z], () => !0), k = l.K.get(w) || !1, Z = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+    this.waitFor(b.ZP, y.Z, m.Z), this.syncWith([p.Z], () => !0), k = l.K.get(w) || !1, Z = null != (t = null == e ? void 0 : e.channelHistory) ? t : []
   }
   getState() {
     return {

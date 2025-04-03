@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(540059),
   d = n(855981),
   f = n(55543),
-  _ = n(139240);
+  _ = n(504684);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,8 +58,8 @@ var E = function(e) {
   return e[e.UPDATE = 0] = "UPDATE", e[e.NEW = 1] = "NEW", e
 }({});
 let b = 24,
-  v = 20,
-  y = {
+  y = 20,
+  v = {
     config: {
       friction: 26,
       tension: 700,
@@ -105,7 +105,7 @@ function O(e) {
     "aria-expanded": D,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, y), {
+  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, v), {
     keys: e => e ? "children" : "icon"
   })), j = e => {
     let {
@@ -116,8 +116,8 @@ function O(e) {
       children: [(0, r.jsx)(c.ZP, {
         className: _.iconMask,
         mask: c.QS.CHAT_INPUT_BUTTON_NOTIFICATION,
-        width: M ? v : b,
-        height: M ? v : b,
+        width: M ? y : b,
+        height: M ? y : b,
         children: t
       }), (0, r.jsx)("span", {
         className: _.notificationDot

@@ -60,7 +60,7 @@ let p = (e, t, n) => ({
   },
   getFirstText() {
     var t, n;
-    return null !== (n = null === (t = u.bN.getFirstText(e)) || void 0 === t ? void 0 : t.text) && void 0 !== n ? n : ""
+    return null != (n = null == (t = u.bN.getFirstText(e)) ? void 0 : t.text) ? n : ""
   },
   getCurrentCommandOption() {
     let t = s.HZ(e);
@@ -71,7 +71,7 @@ let p = (e, t, n) => ({
     let r = s.HZ(e);
     if (null == r) return [];
     let i = a.Z.getActiveCommand(t.id),
-      o = null == i ? void 0 : null === (n = i.options) || void 0 === n ? void 0 : n.find(e => e.name === r[0].optionName);
+      o = null == i || null == (n = i.options) ? void 0 : n.find(e => e.name === r[0].optionName);
     return null == o ? [] : s.IB(e, o, r[0], t.id)
   },
   getCommandOptionValues() {
@@ -119,7 +119,7 @@ let p = (e, t, n) => ({
     l.T.withSingleEntry(e, () => {
       var r, i;
       let o = t.animated ? "a" : "",
-        a = null !== (i = null !== (r = t.originalName) && void 0 !== r ? r : t.name) && void 0 !== i ? i : "";
+        a = null != (i = null != (r = t.originalName) ? r : t.name) ? i : "";
       m(e, ":".concat(t.name, ":"), null != t.id ? "<".concat(o, ":").concat(a.replace(/:/g, ""), ":").concat(t.id, ">") : null, n)
     })
   }
@@ -128,7 +128,7 @@ let p = (e, t, n) => ({
 function h(e, t) {
   var n;
   let r = a.Z.getActiveCommand(e.id),
-    i = null == r ? void 0 : null === (n = r.options) || void 0 === n ? void 0 : n.find(e => e.name === t.optionName);
+    i = null == r || null == (n = r.options) ? void 0 : n.find(e => e.name === t.optionName);
   return null != i && (i.type !== o.jw.STRING || (null == i ? void 0 : i.choices) != null || (null == i ? void 0 : i.autocomplete))
 }
 

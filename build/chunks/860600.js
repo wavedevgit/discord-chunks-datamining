@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "variable",
       begin: /\$[\w\d#@][\w\d_]*/,
@@ -22,4 +22,3 @@ function t(e) {
     contains: [e.HASH_COMMENT_MODE, e.NUMBER_MODE, e.QUOTE_STRING_MODE, t, n]
   }
 }
-e.exports = t

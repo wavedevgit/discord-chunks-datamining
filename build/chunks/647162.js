@@ -84,7 +84,7 @@ function g(e) {
 async function E(e, t) {
   var n;
   let i = await (0, r.sd)(e, t),
-    o = (0, u.c8)(g(null !== (n = i.type) && void 0 !== n ? n : u.Hw.TRACK));
+    o = (0, u.c8)(g(null != (n = i.type) ? n : u.Hw.TRACK));
   if (null === o) throw Error("invalid type ".concat(i.type));
   return {
     context_uri: "string" == typeof i.context_uri ? i.context_uri : void 0,

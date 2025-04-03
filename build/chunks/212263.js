@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(165583),
   E = n(197115),
   b = n(631771),
-  v = n(609218),
-  y = n(210887),
+  y = n(609218),
+  v = n(210887),
   O = n(626135),
   I = n(176354),
   S = n(74538),
@@ -31,7 +31,7 @@ var r = n(200651),
   C = n(185923),
   R = n(474936),
   P = n(388032),
-  w = n(359421);
+  w = n(938585);
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ let k = e => {
       analyticsLocation: U,
       containerContext: G
     } = e,
-    B = (0, s.e7)([y.Z], () => y.Z.theme) === A.BRd.LIGHT ? "light" : "dark",
+    B = (0, s.e7)([v.Z], () => v.Z.theme) === A.BRd.LIGHT ? "light" : "dark",
     [F, V] = i.useState(!1),
     Z = () => {
       (0, T.A3)(x), (0, p.z)(), o()
@@ -128,7 +128,7 @@ let k = e => {
     ea || c.MH()
   }, [ea]);
   let es = eo.length > 1 && $,
-    el = () => (0, r.jsx)(v.Z, {
+    el = () => (0, r.jsx)(y.Z, {
       containerContext: G,
       image: {
         url: W,

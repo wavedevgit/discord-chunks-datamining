@@ -21,8 +21,8 @@ var i = n(952265),
   g = n(590921),
   E = n(665692),
   b = n(981631),
-  v = n(388032),
-  y = n(952728);
+  y = n(388032),
+  v = n(212206);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ function P(e) {
 function w(e) {
   var t;
   let n = e.animated ? "a" : "";
-  return e.managed || null == e.id ? "".concat(E.Iv).concat(e.name).concat(E.Iv) : "<".concat(n, ":").concat(null !== (t = e.originalName) && void 0 !== t ? t : e.name, ":").concat(e.id, ">")
+  return e.managed || null == e.id ? "".concat(E.Iv).concat(e.name).concat(E.Iv) : "<".concat(n, ":").concat(null != (t = e.originalName) ? t : e.name, ":").concat(e.id, ">")
 }
 let D = {
   sentinel: E.Iv,
@@ -91,7 +91,7 @@ let D = {
     if ("-" === n[0]) {
       let e = e => {
         var t;
-        return null === (t = e.names) || void 0 === t ? void 0 : t.includes(n)
+        return null == (t = e.names) ? void 0 : t.includes(n)
       };
       d = d.filter(e)
     }
@@ -149,8 +149,8 @@ let D = {
         autocompletes: t,
         onHover: d,
         onClick: f,
-        titleWithQuery: v.t.ksAVYm,
-        titleWithoutQuery: v.NW.string(v.t.sMOuub),
+        titleWithQuery: y.t.ksAVYm,
+        titleWithoutQuery: y.NW.string(y.t.sMOuub),
         Component: o.ZP.Emoji,
         getProps: e => ({
           emoji: e,
@@ -166,8 +166,8 @@ let D = {
         autocompletes: l,
         onHover: d,
         onClick: p,
-        titleWithQuery: 0 === t.length ? v.t.ksAVYm : null,
-        titleWithoutQuery: 0 === t.length ? v.NW.string(v.t.sMOuub) : null,
+        titleWithQuery: 0 === t.length ? y.t.ksAVYm : null,
+        titleWithoutQuery: 0 === t.length ? y.NW.string(y.t.sMOuub) : null,
         Component: o.ZP.EmojiUpsell,
         getProps: e => {
           let {
@@ -182,15 +182,15 @@ let D = {
         key: "emoji-upsell",
         indexOffset: t.length
       }) : null, h && g && (0, r.jsx)(o.ZP.Divider, {
-        className: y.divider
+        className: v.divider
       }), (0, m.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: a,
         onHover: d,
         onClick: f,
-        titleWithQuery: v.t.uferGB,
-        titleWithoutQuery: v.NW.string(v.t["fT+Yjo"]),
+        titleWithQuery: y.t.uferGB,
+        titleWithoutQuery: y.NW.string(y.t["fT+Yjo"]),
         Component: o.ZP.Sticker,
         getProps: e => {
           let {
@@ -207,17 +207,17 @@ let D = {
         getQuery: e => e,
         key: "stickers",
         indexOffset: t.length + l.length,
-        headerClassName: h ? y.secondarySection : void 0
+        headerClassName: h ? v.secondarySection : void 0
       }), (h || g) && s.length > 0 && (0, r.jsx)(o.ZP.Divider, {
-        className: y.divider
+        className: v.divider
       }), (0, m.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: s,
         onHover: d,
         onClick: f,
-        titleWithQuery: v.t["0cKBGB"],
-        titleWithoutQuery: v.NW.string(v.t.EHlAMT),
+        titleWithQuery: y.t["0cKBGB"],
+        titleWithoutQuery: y.NW.string(y.t.EHlAMT),
         Component: o.ZP.Soundmoji,
         getProps: e => {
           let {
@@ -231,7 +231,7 @@ let D = {
         getQuery: e => e,
         key: "soundmoji",
         indexOffset: t.length + l.length + a.length,
-        headerClassName: h || g ? y.secondarySection : void 0
+        headerClassName: h || g ? v.secondarySection : void 0
       })]
     })
   },

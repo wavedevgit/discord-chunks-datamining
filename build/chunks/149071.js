@@ -72,7 +72,7 @@ async function b(e) {
   clearTimeout(p);
   let t = 0 !== Object.keys(e).length,
     n = o.Z.getCollapsedCategories(),
-    i = v();
+    i = y();
   for (let r in i) {
     let i = a.Z.getChannel(r);
     null != i && null != i.guild_id && (i.guild_id in e || (e[i.guild_id] = {}), null == e[i.guild_id].channel_overrides && (e[i.guild_id].channel_overrides = {}), e[i.guild_id].channel_overrides[i.id] = f(u({}, e[i.guild_id].channel_overrides[i.id]), {
@@ -88,7 +88,7 @@ async function b(e) {
   })).body) : []
 }
 
-function v() {
+function y() {
   let e = {},
     t = o.Z.getCollapsedCategories();
   for (let n in t) t[n] !== _[n] && (e[n] = !0);
@@ -96,7 +96,7 @@ function v() {
   return e
 }
 
-function y() {
+function v() {
   _ = u({}, o.Z.getCollapsedCategories())
 }
 class O extends i.Z {
@@ -107,7 +107,7 @@ class O extends i.Z {
       CATEGORY_COLLAPSE_ALL: g,
       CATEGORY_EXPAND_ALL: g,
       POST_CONNECTION_OPEN: m,
-      USER_GUILD_SETTINGS_FULL_UPDATE: y
+      USER_GUILD_SETTINGS_FULL_UPDATE: v
     }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", b)
   }
 }

@@ -67,5 +67,5 @@ e.exports = i ? function(e) {
   if (h) return s(e);
   if (a(e)) return !1;
   var t = l.call(e);
-  return !!(t === u || t === d || /^\[object HTML/.test(t)) && s(e)
+  return (t === u || t === d || !!/^\[object HTML/.test(t)) && s(e)
 }

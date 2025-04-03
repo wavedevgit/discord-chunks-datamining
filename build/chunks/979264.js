@@ -16,7 +16,7 @@ var r = n(200651),
   d = n(353093),
   f = n(308083),
   _ = n(388032),
-  p = n(785181);
+  p = n(194776);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,9 +106,9 @@ let g = i.memo(function(e) {
       textColor: h,
       badgeSize: g,
       disableGuildProfile: b = !1,
-      inline: v = !0,
-      onShowProfile: y
-    } = e, O = (0, s.e7)([u.default], () => u.default.getUser(i), [i]), I = null !== (t = null == O ? void 0 : O.primaryGuild) && void 0 !== t ? t : n, {
+      inline: y = !0,
+      onShowProfile: v
+    } = e, O = (0, s.e7)([u.default], () => u.default.getUser(i), [i]), I = null != (t = null == O ? void 0 : O.primaryGuild) ? t : n, {
       tag: S,
       badge: T,
       guildId: N
@@ -121,10 +121,10 @@ let g = i.memo(function(e) {
       textVariant: _,
       textColor: h,
       badgeSize: g,
-      inline: v
+      inline: y
     }) : (0, r.jsx)(c.Z, {
       guildId: N,
-      onRequestOpen: y,
+      onRequestOpen: v,
       children: e => (0, r.jsx)("span", {
         className: f,
         children: (0, r.jsx)(E, m({
@@ -135,7 +135,7 @@ let g = i.memo(function(e) {
           textVariant: _,
           textColor: h,
           badgeSize: g,
-          inline: v
+          inline: y
         }, e))
       })
     }) : null

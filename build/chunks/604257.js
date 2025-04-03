@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return function(t, n, r) {
     for (var i = -1, o = Object(t), a = r(t), s = a.length; s--;) {
       var l = a[e ? s : ++i];
@@ -8,4 +8,3 @@ function t(e) {
     return t
   }
 }
-e.exports = t

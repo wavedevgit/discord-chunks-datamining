@@ -44,11 +44,11 @@ function b() {
   o = null
 }
 
-function v() {
+function y() {
   r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, b()
 }
 
-function y(e) {
+function v(e) {
   let {
     applicationId: t
   } = e;
@@ -121,11 +121,11 @@ class T extends(a = s.ZP.PersistedStore) {
 }
 _(T, "displayName", "TestModeStore"), _(T, "persistKey", "TestModeStore");
 let N = new T(l.Z, {
-  DEVELOPER_TEST_MODE_AUTHORIZATION_START: y,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_START: v,
   DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: O,
   DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: I,
   OVERLAY_INITIALIZE: S,
   DEVELOPER_TEST_MODE_RESET_ERROR: b,
-  LOGOUT: v,
-  DEVELOPER_TEST_MODE_RESET: v
+  LOGOUT: y,
+  DEVELOPER_TEST_MODE_RESET: y
 })

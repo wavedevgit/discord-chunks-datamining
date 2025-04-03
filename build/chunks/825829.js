@@ -39,7 +39,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ function I(e) {
 
 function S(e) {
   var t;
-  return null === (t = e.embeds) || void 0 === t ? void 0 : t.some(e => {
+  return null == (t = e.embeds) ? void 0 : t.some(e => {
     let {
       type: t
     } = e;
@@ -93,24 +93,27 @@ function N(e) {
 
 function A(e, t) {
   var n, r, i, o, a;
-  let [s] = null !== (n = e.embeds) && void 0 !== n ? n : [];
-  return null == s ? void 0 : N(s) ? null == s ? void 0 : null === (i = s.fields) || void 0 === i ? void 0 : null === (r = i.find(e => {
-    let {
-      rawName: n
-    } = e;
-    return n === t
-  })) || void 0 === r ? void 0 : r.rawValue : T(s) ? null == s ? void 0 : null === (a = s.fields) || void 0 === a ? void 0 : null === (o = a.find(e => {
-    let {
-      rawName: n
-    } = e;
-    return n === t
-  })) || void 0 === o ? void 0 : o.rawValue : void 0
+  let [s] = null != (n = e.embeds) ? n : [];
+  if (null != s) {
+    if (N(s)) return null == s || null == (i = s.fields) || null == (r = i.find(e => {
+      let {
+        rawName: n
+      } = e;
+      return n === t
+    })) ? void 0 : r.rawValue;
+    if (T(s)) return null == s || null == (a = s.fields) || null == (o = a.find(e => {
+      let {
+        rawName: n
+      } = e;
+      return n === t
+    })) ? void 0 : o.rawValue
+  }
 }
 
 function C(e) {
   var t, n;
-  let [r] = null !== (t = e.embeds) && void 0 !== t ? t : [];
-  return null !== (n = null == r ? void 0 : r.rawDescription) && void 0 !== n ? n : ""
+  let [r] = null != (t = e.embeds) ? t : [];
+  return null != (n = null == r ? void 0 : r.rawDescription) ? n : ""
 }
 
 function R(e) {
@@ -181,7 +184,7 @@ function x(e, t, n) {
 
 function M(e, t) {
   var n;
-  return t ? null !== (n = null == e ? void 0 : e.name) && void 0 !== n ? n : E.NW.string(E.t.J90oLS) : E.NW.string(E.t["/YzI6+"])
+  return t ? null != (n = null == e ? void 0 : e.name) ? n : E.NW.string(E.t.J90oLS) : E.NW.string(E.t["/YzI6+"])
 }
 
 function k(e, t, n) {
@@ -211,9 +214,9 @@ function j(e, t) {
   }
   let m = p.Z.can(g.Plq.VIEW_CHANNEL, t),
     b = M(t, m),
-    v = null != t && m ? n : g.VqG,
-    y = k(e, b, n);
-  return null != y ? y : null != h ? _ === a.y.MODAL && null != i ? f !== o.P.BLOCKED ? E.NW.format(E.t["4xL9Sk"], {
+    y = null != t && m ? n : g.VqG,
+    v = k(e, b, n);
+  return null != v ? v : null != h ? _ === a.y.MODAL && null != i ? f !== o.P.BLOCKED ? E.NW.format(E.t["4xL9Sk"], {
     applicationName: h,
     interactionUserHook: i,
     integrationOwnerHook: r
@@ -224,19 +227,19 @@ function j(e, t) {
   }) : f !== o.P.BLOCKED ? E.NW.format(E.t.AXQufH, {
     applicationName: h,
     channelName: b,
-    channelHook: v,
+    channelHook: y,
     integrationOwnerHook: r
   }) : E.NW.format(E.t.s3tjMD, {
     applicationName: h,
     channelName: b,
-    channelHook: v,
+    channelHook: y,
     integrationOwnerHook: r
   }) : f !== o.P.BLOCKED ? E.NW.format(E.t.IZg0VV, {
     channelName: b,
-    channelHook: v
+    channelHook: y
   }) : E.NW.format(E.t.lOIOSE, {
     channelName: b,
-    channelHook: v
+    channelHook: y
   })
 }
 
@@ -270,7 +273,7 @@ function B(e) {
     c = A(e, l.D.DECISION_ID),
     u = A(e, l.D.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
   return {
-    notificationType: null !== (t = G(n)) && void 0 !== t ? t : void 0,
+    notificationType: null != (t = G(n)) ? t : void 0,
     joinAttempts: null != r ? parseInt(r) : void 0,
     raidDatetime: null != i ? new Date(i) : void 0,
     dmsSent: null != o ? parseInt(o) : void 0,
@@ -308,7 +311,7 @@ function F(e) {
 function V(e) {
   let t = r.useMemo(() => F(e), [e]),
     n = (0, f.e7)([_.Z], () => _.Z.getChannel(t.embedChannelId), [t.embedChannelId]);
-  return O(v({}, t), {
+  return O(y({}, t), {
     embedChannel: n
   })
 }

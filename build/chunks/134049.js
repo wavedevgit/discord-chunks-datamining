@@ -13,7 +13,7 @@ var r = n(788347),
 
 function c() {
   var e;
-  return new Set(null !== (e = s.K.get(l.hL)) && void 0 !== e ? e : [])
+  return new Set(null != (e = s.K.get(l.hL)) ? e : [])
 }
 let u = (0, o.M)((e, t) => ({
   notificationDismissedInGuilds: c(),

@@ -20,8 +20,8 @@ var r = n(392711),
   g = n(630388),
   E = n(823379),
   b = n(960048),
-  v = n(709054),
-  y = n(45966),
+  y = n(709054),
+  v = n(45966),
   O = n(637853),
   I = n(816436),
   S = n(981631),
@@ -70,8 +70,8 @@ function P(e, t) {
 function w(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (d.Z.isFullServerPreview(e)) return;
-  let n = t ? y.Z.getOnboardingPromptsForOnboarding(e) : y.Z.getOnboardingPrompts(e),
-    r = y.Z.getOnboardingResponses(e),
+  let n = t ? v.Z.getOnboardingPromptsForOnboarding(e) : v.Z.getOnboardingPrompts(e),
+    r = v.Z.getOnboardingResponses(e),
     i = n.map(e => e.options.filter(e => r.includes(e.id))).flat(),
     s = {},
     l = {};
@@ -118,11 +118,9 @@ function w(e) {
 
 function D(e, t, n) {
   var r, o;
-  let s = null !== (o = null === (r = p.ZP.getSelfMember(e)) || void 0 === r ? void 0 : r.roles) && void 0 !== o ? o : [];
-  if (d.Z.isViewingRoles(e)) {
-    (0, u.og)(e, i().difference(i().union(s, t), n));
-    return
-  }(t.length > 0 || n.length > 0) && a.Z.dispatch({
+  let s = null != (o = null == (r = p.ZP.getSelfMember(e)) ? void 0 : r.roles) ? o : [];
+  if (d.Z.isViewingRoles(e)) return void(0, u.og)(e, i().difference(i().union(s, t), n));
+  (t.length > 0 || n.length > 0) && a.Z.dispatch({
     type: "GUILD_MEMBER_UPDATE_LOCAL",
     guildId: e,
     roles: i().difference(i().union(s, t), n),
@@ -132,7 +130,7 @@ function D(e, t, n) {
 }
 let L = {
   selectOption(e, t, n, r) {
-    let o = y.Z.getOnboardingPrompt(t);
+    let o = v.Z.getOnboardingPrompt(t);
     if (null == o) return;
     let s = o.singleSelect ? i().without(i().map(o.options, "id"), n) : [];
     a.Z.dispatch({
@@ -148,10 +146,10 @@ let L = {
   updateRolesLocal: D,
   completeOnboarding(e, t) {
     let n = t.length > 0 ? t[t.length - 1] : null,
-      r = y.Z.getSelectedOptions(e),
+      r = v.Z.getSelectedOptions(e),
       i = (0, O.L6)(r),
       o = (0, O.dX)(r),
-      a = y.Z.getEnabled(e) ? y.Z.getDefaultChannelIds(e) : [],
+      a = v.Z.getEnabled(e) ? v.Z.getDefaultChannelIds(e) : [],
       [c, f] = (0, O.Ee)(e, t, a),
       b = [...o, ...a],
       A = b.map(e => _.Z.getChannel(e)).filter(E.lm),
@@ -168,14 +166,14 @@ let L = {
         channels_granted: R,
         guild_onboarding_covered_channel_ids: c.map(e => e.id),
         guild_onboarding_uncovered_channel_ids: f.map(e => e.id)
-      })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, v.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
+      })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
       (0, u.zS)(e, b, []), (0, u.aq)(e, {
         optInEnabled: !0
       }), (0, u.og)(e, Array.from(i));
       let t = h.default.getCurrentUser();
       if (null != t) {
         var L, x;
-        let n = null !== (x = null === (L = p.ZP.getMember(e, t.id)) || void 0 === L ? void 0 : L.flags) && void 0 !== x ? x : 0;
+        let n = null != (x = null == (L = p.ZP.getMember(e, t.id)) ? void 0 : L.flags) ? x : 0;
         (0, u.aq)(e, {
           memberOptions: {
             flags: (0, g.mB)(n, T.q.COMPLETED_ONBOARDING, !0)
@@ -186,7 +184,7 @@ let L = {
   },
   onboardExistingMember(e, t) {
     let n = new Set(t);
-    (y.Z.getEnabled(e) ? y.Z.getDefaultChannelIds(e) : []).forEach(e => n.add(e)), n.size > 0 && (0, f.Mo)(e, Array.from(n), !0, {
+    (v.Z.getEnabled(e) ? v.Z.getDefaultChannelIds(e) : []).forEach(e => n.add(e)), n.size > 0 && (0, f.Mo)(e, Array.from(n), !0, {
       page: S.ZY5.GUILD_ONBOARDING
     })
   },
@@ -207,7 +205,7 @@ let L = {
     let t = h.default.getCurrentUser();
     if (null != t) {
       var n, r;
-      let i = null !== (r = null === (n = p.ZP.getMember(e, t.id)) || void 0 === n ? void 0 : n.flags) && void 0 !== r ? r : 0;
+      let i = null != (r = null == (n = p.ZP.getMember(e, t.id)) ? void 0 : n.flags) ? r : 0;
       await (0, c.e)(e, {
         flags: (0, g.mB)(i, T.q.COMPLETED_ONBOARDING, !1)
       })

@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(180035),
   f = n(481060),
   _ = n(540059),
-  p = n(702776);
+  p = n(333903);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,7 +58,7 @@ let b = {
     mass: 1,
     tension: 250
   },
-  v = {
+  y = {
     X: {
       TOP: "M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z",
       BOTTOM: "M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z"
@@ -73,12 +73,12 @@ let b = {
     }
   };
 
-function y(e, t, n, i) {
+function v(e, t, n, i) {
   let o = e.to({
       output: [t, n]
     }),
-    a = i ? [v.X.TOP, v.X.TOP, v.CHECK.TOP, v.CHECK.TOP] : [v.X.TOP, v.BAR.TOP, v.BAR.TOP, v.CHECK.TOP],
-    l = i ? [v.X.BOTTOM, v.X.BOTTOM, v.CHECK.BOTTOM, v.CHECK.BOTTOM] : [v.X.BOTTOM, v.BAR.BOTTOM, v.BAR.BOTTOM, v.CHECK.BOTTOM];
+    a = i ? [y.X.TOP, y.X.TOP, y.CHECK.TOP, y.CHECK.TOP] : [y.X.TOP, y.BAR.TOP, y.BAR.TOP, y.CHECK.TOP],
+    l = i ? [y.X.BOTTOM, y.X.BOTTOM, y.CHECK.BOTTOM, y.CHECK.BOTTOM] : [y.X.BOTTOM, y.BAR.BOTTOM, y.BAR.BOTTOM, y.CHECK.BOTTOM];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
@@ -104,7 +104,7 @@ let O = function(e) {
     checked: o,
     disabled: h,
     className: g,
-    focusProps: v,
+    focusProps: y,
     innerRef: O
   } = e, {
     reducedMotion: I
@@ -122,14 +122,14 @@ let O = function(e) {
   }
 
   function L(e) {
-    !h && !e.repeat && (" " === e.key || "Enter" === e.key) && N(!0)
+    h || e.repeat || (" " === e.key || "Enter" === e.key) && N(!0)
   }
 
   function x(e) {
     var t;
-    !h && T && !e.repeat && (N(!1), "Enter" === e.key && (null === (t = S.current) || void 0 === t || t.click()))
+    h || !T || e.repeat || (N(!1), "Enter" === e.key && (null == (t = S.current) || t.click()))
   }
-  return (0, r.jsx)(u.t, E(m({}, v), {
+  return (0, r.jsx)(u.t, E(m({}, y), {
     within: !0,
     offset: -2,
     children: (0, r.jsxs)(s.animated.div, {
@@ -176,7 +176,7 @@ let O = function(e) {
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), y(P, C, R, I.enabled)]
+        }), v(P, C, R, I.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",

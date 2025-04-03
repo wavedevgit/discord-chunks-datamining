@@ -21,13 +21,13 @@ var i = n(442837),
   g = n(871604),
   E = n(53558),
   b = n(827313),
-  v = n(420654),
-  y = n(166584),
+  y = n(420654),
+  v = n(166584),
   O = n(915014),
   I = n(228168),
   S = n(388032),
-  T = n(775778),
-  N = n(888113);
+  T = n(773714),
+  N = n(200669);
 
 function A(e) {
   let {
@@ -41,7 +41,7 @@ function A(e) {
     onClose: D
   } = e, L = c.ZP.getName(null == C ? void 0 : C.id, w, t), x = (0, i.e7)([u.Z], () => {
     var e;
-    return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
+    return null == (e = u.Z.getUserProfile(t.id)) ? void 0 : e.application
   }), M = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
@@ -82,7 +82,7 @@ function A(e) {
         guildId: null == C ? void 0 : C.id,
         className: T.button
       })]
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(y.Z, {
       user: t,
       bio: null == A ? void 0 : A.bio,
       hidePersonalInformation: k,
@@ -102,7 +102,7 @@ function A(e) {
       onClick: D
     }), null != C && (0, r.jsx)(h.Z, {
       heading: S.NW.string(S.t.LPJmLy),
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         currentUser: n,
         guild: C

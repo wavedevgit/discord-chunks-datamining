@@ -62,7 +62,7 @@ function E(e) {
   if (null == e) return;
   let n = o.Z.hidePersonalInformation,
     r = g(e);
-  return n && r.toLocaleLowerCase() === (null === (t = e.username) || void 0 === t ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = _(r)), r
+  return n && r.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = _(r)), r
 }
 
 function b(e) {
@@ -70,19 +70,22 @@ function b(e) {
   let n = (0, r.e7)([o.Z], () => o.Z.hidePersonalInformation);
   if (null == e) return;
   let i = g(e);
-  return n && i.toLocaleLowerCase() === (null === (t = e.username) || void 0 === t ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (i = _(i)), i
-}
-
-function v(e) {
-  if (null != e) return m(e.globalName) ? e.globalName : m(e.global_name) ? e.global_name : void 0
+  return n && i.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (i = _(i)), i
 }
 
 function y(e) {
+  if (null != e)
+    if (m(e.globalName)) return e.globalName;
+    else if (m(e.global_name)) return e.global_name;
+  else return
+}
+
+function v(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null == e) return f;
-  let r = v(e),
-    i = n ? A(e) : null !== (t = e.username) && void 0 !== t ? t : f;
+  let r = y(e),
+    i = n ? A(e) : null != (t = e.username) ? t : f;
   return r === i ? r : null != r ? "".concat(r, " (").concat(i, ")") : i
 }
 
@@ -144,7 +147,7 @@ function N(e, t, n) {
   if (null == e) return l.NW.string(l.t.sKdZ6e);
   if (!m(e.username)) return f;
   let r = n;
-  if ("always" === t.identifiable ? r = !1 : "never" === t.identifiable && (r = !0), "0" !== e.discriminator && e.discriminator !== s.fo$ && !t.forcePomelo) return "username" === t.mode ? e.username : r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
+  if ("always" === t.identifiable ? r = !1 : "never" === t.identifiable && (r = !0), "0" !== e.discriminator && e.discriminator !== s.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
   let i = r ? _(e.username) : e.username;
   return "never" !== t.decoration ? p(i) : i
 }
@@ -168,8 +171,8 @@ let R = {
   useUserTag: function(e, t) {
     return N(e, u({}, h, t), (0, r.e7)([o.Z], () => o.Z.hidePersonalInformation))
   },
-  getFormattedName: y,
-  getGlobalName: v,
+  getFormattedName: v,
+  getGlobalName: y,
   humanizeStatus: O,
   useDirectMessageRecipient: C
 }

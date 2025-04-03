@@ -12,7 +12,7 @@ var r, i = n(200651),
   u = n(922770),
   d = n(481060),
   f = n(388032),
-  _ = n(560083);
+  _ = n(559122);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,18 +70,18 @@ function b(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = Object.freeze({
+let y = Object.freeze({
     SMALL: _.small,
     MEDIUM: _.medium,
     LARGE: _.large
   }),
-  y = e => {
+  v = e => {
     let {
       hasContent: t,
       onClear: n,
       className: r,
       isLoading: a,
-      size: c = v.SMALL
+      size: c = y.SMALL
     } = e;
     return (0, i.jsx)(l.P, {
       className: s()(r, _.iconLayout, c, {
@@ -120,7 +120,7 @@ let v = Object.freeze({
       })
     })
   };
-y.Sizes = v;
+v.Sizes = y;
 class O extends(r = o.PureComponent) {
   focus() {
     let {
@@ -148,7 +148,7 @@ class O extends(r = o.PureComponent) {
         onKeyPress: p,
         isLoading: m,
         size: b,
-        disabled: v,
+        disabled: y,
         onChange: O,
         onBlur: I,
         onFocus: S,
@@ -163,7 +163,7 @@ class O extends(r = o.PureComponent) {
       ringTarget: this.containerRef,
       children: (0, i.jsx)("div", g(h({
         className: s()(o, _.container, b, {
-          [_.disabled]: v
+          [_.disabled]: y
         }),
         ref: this.containerRef
       }, R), {
@@ -179,12 +179,12 @@ class O extends(r = o.PureComponent) {
             onKeyUp: d,
             onKeyPress: p,
             placeholder: a,
-            disabled: v,
+            disabled: y,
             autoFocus: n,
             autoComplete: T,
             "aria-label": C,
             ref: this.inputRef
-          })), !A && (0, i.jsx)(y, {
+          })), !A && (0, i.jsx)(v, {
             size: b,
             hasContent: t.length > 0,
             onClear: r,
@@ -204,8 +204,8 @@ class O extends(r = o.PureComponent) {
     })
   }
 }
-p(O, "Sizes", v), p(O, "defaultProps", {
-  size: v.SMALL,
+p(O, "Sizes", y), p(O, "defaultProps", {
+  size: y.SMALL,
   isLoading: !1,
   disabled: !1
 })

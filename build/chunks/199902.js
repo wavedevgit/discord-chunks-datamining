@@ -14,8 +14,8 @@ var c, u = n(442837),
   g = n(783443),
   E = n(855403),
   b = n(314897),
-  v = n(592125),
-  y = n(430824),
+  y = n(592125),
+  v = n(430824),
   O = n(131951),
   I = n(496675),
   S = n(19780),
@@ -72,13 +72,13 @@ function k() {
 
 function j(e) {
   var t;
-  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null !== (t = e.guildId) && void 0 !== t ? t : A.kod] = e
+  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null != (t = e.guildId) ? t : A.kod] = e
 }
 
 function U(e, t) {
   var n;
   let r = null != t ? t : A.kod;
-  return (null === (n = i[e]) || void 0 === n ? void 0 : n[r]) != null && (delete i[e][r], !0)
+  return (null == (n = i[e]) ? void 0 : n[r]) != null && (delete i[e][r], !0)
 }
 
 function G(e) {
@@ -155,7 +155,7 @@ function H(e) {
     ownerId: b.default.getId()
   });
   (null == d ? void 0 : d.startsWith("prepicked:")) && null == c && (c = s);
-  let g = null !== (t = (null == d ? void 0 : d.startsWith("prepicked:")) && null != l ? l : null != c ? _.ZP.getGameForPID(c) : null != d ? _.ZP.getRunningGames().find(e => (0, E.Z)(d, e.windowHandle)) : null) && void 0 !== t ? t : null;
+  let g = null != (t = (null == d ? void 0 : d.startsWith("prepicked:")) && null != l ? l : null != c ? _.ZP.getGameForPID(c) : null != d ? _.ZP.getRunningGames().find(e => (0, E.Z)(d, e.windowHandle)) : null) ? t : null;
   a[m] = {
     id: null == g ? void 0 : g.id,
     pid: c,
@@ -199,7 +199,7 @@ function Y(e) {
   let o = !1;
   for (let e in a) {
     var c, u;
-    (null === (u = a[e]) || void 0 === u ? void 0 : null === (c = u.sourceId) || void 0 === c ? void 0 : c.startsWith("prepicked:")) && (a[e] = P({}, a[e], i), o = !0)
+    (null == (u = a[e]) || null == (c = u.sourceId) ? void 0 : c.startsWith("prepicked:")) && (a[e] = P({}, a[e], i), o = !0)
   }
   return o
 }
@@ -320,14 +320,14 @@ function et(e) {
 }
 
 function en(e, t) {
-  let n = v.Z.getBasicChannel(t);
+  let n = y.Z.getBasicChannel(t);
   return e === C.lo.CALL || null != n && I.Z.canBasicChannel(A.S7T.VIEW_CHANNEL, n)
 }
 
 function er(e) {
   if (en(e.streamType, e.channelId)) return !0;
-  let t = v.Z.getBasicChannel(e.channelId);
-  return null != t && (0, h.p9)(t, N.Z, y.Z, I.Z, f.Z)[0]
+  let t = y.Z.getBasicChannel(e.channelId);
+  return null != t && (0, h.p9)(t, N.Z, v.Z, I.Z, f.Z)[0]
 }
 k();
 class ei extends(c = u.ZP.PersistedStore) {
@@ -341,11 +341,11 @@ class ei extends(c = u.ZP.PersistedStore) {
   }
   isSelfStreamHidden(e) {
     var t;
-    return null !== (t = x[e]) && void 0 !== t && t
+    return null != (t = x[e]) && t
   }
   getLastActiveStream() {
     var e;
-    return (0, m.Z)(O.Z) && null !== (e = Array.from(r.values()).pop()) && void 0 !== e ? e : null
+    return (0, m.Z)(O.Z) && null != (e = Array.from(r.values()).pop()) ? e : null
   }
   getAllActiveStreams() {
     return (0, m.Z)(O.Z) ? Array.from(r.values()) : []
@@ -355,62 +355,62 @@ class ei extends(c = u.ZP.PersistedStore) {
   }
   getActiveStreamForStreamKey(e) {
     var t;
-    return (0, m.Z)(O.Z) && null !== (t = r.get(e)) && void 0 !== t ? t : null
+    return (0, m.Z)(O.Z) && null != (t = r.get(e)) ? t : null
   }
   getActiveStreamForApplicationStream(e) {
     var t;
     if (!(0, m.Z)(O.Z) || null == e) return null;
     let n = (0, p.V9)(e);
-    return null !== (t = this.getActiveStreamForStreamKey(n)) && void 0 !== t ? t : null
+    return null != (t = this.getActiveStreamForStreamKey(n)) ? t : null
   }
   getCurrentUserActiveStream() {
     let e = T.Z.getVoiceChannelId(),
-      t = v.Z.getChannel(e);
+      t = y.Z.getChannel(e);
     return null == t ? null : this.getActiveStreamForUser(b.default.getId(), t.getGuildId())
   }
   getActiveStreamForUser(e, t) {
     var n;
     let r = this.getStreamForUser(e, t);
-    return null != r ? this.getActiveStreamForApplicationStream(r) : null !== (n = this.getAllActiveStreams().find(t => t.ownerId === e)) && void 0 !== n ? n : null
+    return null != r ? this.getActiveStreamForApplicationStream(r) : null != (n = this.getAllActiveStreams().find(t => t.ownerId === e)) ? n : null
   }
   getStreamerActiveStreamMetadata() {
     var e;
     let t = T.Z.getVoiceChannelId(),
-      n = v.Z.getChannel(t);
+      n = y.Z.getChannel(t);
     if (null == n) return null;
     let r = this.getActiveStreamForUser(b.default.getId(), n.getGuildId());
-    return null == r ? null : null !== (e = a[(0, p.V9)(r)]) && void 0 !== e ? e : null
+    return null == r ? null : null != (e = a[(0, p.V9)(r)]) ? e : null
   }
   getStreamerActiveStreamMetadataForStream(e) {
     var t;
-    return null !== (t = a[e]) && void 0 !== t ? t : null
+    return null != (t = a[e]) ? t : null
   }
   getIsActiveStreamPreviewDisabled(e) {
     var t;
     let n = a[e];
-    return null !== (t = null == n ? void 0 : n.previewDisabled) && void 0 !== t && t
+    return null != (t = null == n ? void 0 : n.previewDisabled) && t
   }
   getAnyStreamForUser(e) {
     var t;
     if (!(0, m.Z)(O.Z)) return null;
     let n = i[e];
-    return null == n ? null : null !== (t = Object.values(n).find(e => er(e))) && void 0 !== t ? t : null
+    return null == n ? null : null != (t = Object.values(n).find(e => er(e))) ? t : null
   }
   getAnyDiscoverableStreamForUser(e) {
     var t;
     if (!(0, m.Z)(O.Z)) return null;
     let n = i[e];
-    return null == n ? null : null !== (t = Object.values(n).find(e => er(e) && !1 !== e.discoverable)) && void 0 !== t ? t : null
+    return null == n ? null : null != (t = Object.values(n).find(e => er(e) && !1 !== e.discoverable)) ? t : null
   }
   getStreamForUser(e, t) {
     var n;
     if (!(0, m.Z)(O.Z)) return null;
-    let r = null === (n = i[e]) || void 0 === n ? void 0 : n[null != t ? t : A.kod];
+    let r = null == (n = i[e]) ? void 0 : n[null != t ? t : A.kod];
     return null != r && er(r) ? r : null
   }
   getRTCStream(e) {
     var t;
-    return (0, m.Z)(O.Z) && null !== (t = o[e]) && void 0 !== t ? t : null
+    return (0, m.Z)(O.Z) && null != (t = o[e]) ? t : null
   }
   getAllApplicationStreams() {
     return (0, m.Z)(O.Z) ? B().filter(e => null != e && en(e.streamType, e.channelId)) : []

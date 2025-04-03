@@ -44,20 +44,20 @@ function E(e) {
     handleGoLive: _,
     onClose: E,
     onSelect: b,
-    appContext: v = h.IlC.APP,
-    disableChangeWindows: y = !1,
+    appContext: y = h.IlC.APP,
+    disableChangeWindows: v = !1,
     onInteraction: O
-  } = e, I = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, S = g(n, i, s), T = (0, l.Z)(I, v), {
+  } = e, I = null != (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) ? t : null, S = g(n, i, s), T = (0, l.Z)(I, y), {
     simplifiedSettingsEnabled: N
   } = (0, p.Z)({
     location: "ManageStreamsMenu"
   }), A = (0, c.b)({
-    disableChangeWindows: y,
+    disableChangeWindows: v,
     stream: I,
     showReportOption: f,
     handleGoLive: _,
     simplified: N,
-    appContext: v
+    appContext: y
   });
   return (0, r.jsx)(a.Z, {
     section: h.jXE.CONTEXT_MENU,

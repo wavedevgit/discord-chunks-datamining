@@ -28,8 +28,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = 10 + Math.random() * (10 * _.Z.Millis.SECOND),
-  y = 2 * _.Z.Millis.HOUR + Math.floor(Math.random() * (10 * _.Z.Millis.MINUTE)),
+let y = 10 + Math.random() * (10 * _.Z.Millis.SECOND),
+  v = 2 * _.Z.Millis.HOUR + Math.floor(Math.random() * (10 * _.Z.Millis.MINUTE)),
   O = null,
   I = !1;
 class S extends a.Z {
@@ -37,7 +37,7 @@ class S extends a.Z {
     p.DZ.beforeSendCallbacks.push({
       hasChanges: () => !1,
       processProto: () => {
-        R(y, !1)
+        R(v, !1)
       }
     }), p.DZ.beforeSendCallbacks.push({
       hasChanges: () => d.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -52,7 +52,7 @@ class S extends a.Z {
     }), p.DZ.beforeSendCallbacks.push({
       hasChanges: () => u.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
-        u.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && !i().isEmpty(u.Z.playedSoundHistory) && (e.playedSoundFrecency = o.pL.create(), e.playedSoundFrecency.playedSounds = (0, m.tU)(u.Z.playedSoundHistory, 100))
+        u.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (i().isEmpty(u.Z.playedSoundHistory) || (e.playedSoundFrecency = o.pL.create(), e.playedSoundFrecency.playedSounds = (0, m.tU)(u.Z.playedSoundHistory, 100)))
       }
     }), p.DZ.beforeSendCallbacks.push({
       hasChanges: () => s.ZP.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -82,7 +82,7 @@ class S extends a.Z {
 }
 
 function T() {
-  I = !0, R(v, !0)
+  I = !0, R(y, !0)
 }
 
 function N(e) {
@@ -93,7 +93,7 @@ function A() {
   I && (clearTimeout(O), O = null, C(!1))
 }
 async function C(e) {
-  R(y, !1), !h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (d.Z.hasPendingUsage() || c.ZP.hasPendingUsage() || s.ZP.hasPendingUsage() || l.Z.hasPendingUsage() || f.Z.hasPendingUsage() && !e) && ((0, p.T6)(), await p.DZ.loadIfNecessary()), i().forEach(p.aj, e => {
+  R(v, !1), !h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (d.Z.hasPendingUsage() || c.ZP.hasPendingUsage() || s.ZP.hasPendingUsage() || l.Z.hasPendingUsage() || f.Z.hasPendingUsage() && !e) && ((0, p.T6)(), await p.DZ.loadIfNecessary()), i().forEach(p.aj, e => {
     e.markDirtyIfHasPendingChange()
   })
 }

@@ -9,7 +9,7 @@ var r = n(200651),
   a = n.n(o),
   s = n(84735),
   l = n(780900),
-  c = n(112360);
+  c = n(789304);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ function m(e, t) {
         let {
           target: r
         } = e;
-        null === (t = n.get(r)) || void 0 === t || t(e)
+        null == (t = n.get(r)) || t(e)
       })
     });
   return i.forwardRef(function(t, u) {
@@ -87,8 +87,8 @@ function m(e, t) {
       contentClassName: g,
       onScroll: E,
       dir: b = "ltr",
-      fade: v = !1,
-      customTheme: y = !1,
+      fade: y = !1,
+      customTheme: v = !1,
       style: O
     } = t, I = p(t, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]);
     let S = i.useRef(null),
@@ -124,11 +124,11 @@ function m(e, t) {
     }), (0, r.jsx)("div", _(d({
       ref: C,
       className: a()(h, {
-        [c.fade]: v,
-        [c.customTheme]: y,
+        [c.fade]: y,
+        [c.customTheme]: v,
         [e]: !0,
         [c.managedReactiveScroller]: !0,
-        [c.scrolling]: N && v
+        [c.scrolling]: N && y
       }),
       style: O,
       dir: b,

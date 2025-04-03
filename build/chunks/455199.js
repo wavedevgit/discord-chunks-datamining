@@ -19,8 +19,8 @@ var r, i = n(392711),
   g = n(375954),
   E = n(306680),
   b = n(699516),
-  v = n(914010),
-  y = n(9156),
+  y = n(914010),
+  v = n(9156),
   O = n(594174),
   I = n(981631);
 
@@ -115,7 +115,7 @@ function V(e) {
   if ((0, f.Z)(e) && !I.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
   let n = m.Z.getChannel(t);
-  if (null == n || n.type === I.d4z.DM || D.guildFilter === I.NgX.THIS_SERVER && n.getGuildId() !== v.Z.getGuildId()) return null;
+  if (null == n || n.type === I.d4z.DM || D.guildFilter === I.NgX.THIS_SERVER && n.getGuildId() !== y.Z.getGuildId()) return null;
   let r = h.default.getId();
   if (b.Z.isBlockedOrIgnoredForMessage(e) || (0, _.Z)(e, r)) return null;
   e = G(e);
@@ -129,8 +129,8 @@ function V(e) {
   }) ? (M && E.ZP.ackMessageId(n.id) !== e.id && (0, d.ZP)({
     message: e,
     userId: r,
-    suppressEveryone: y.ZP.isSuppressEveryoneEnabled(n.getGuildId()),
-    suppressRoles: y.ZP.isSuppressRolesEnabled(n.getGuildId())
+    suppressEveryone: v.ZP.isSuppressEveryoneEnabled(n.getGuildId()),
+    suppressRoles: v.ZP.isSuppressRolesEnabled(n.getGuildId())
   }) && (M = !1), e) : null
 }
 
@@ -302,7 +302,7 @@ class er extends(r = a.ZP.Store) {
   }
   getMentionCountForChannel(e) {
     var t;
-    return null !== (t = C[e]) && void 0 !== t ? t : 0
+    return null != (t = C[e]) ? t : 0
   }
 }
 S(er, "displayName", "RecentMentionsStore");

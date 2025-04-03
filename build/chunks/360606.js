@@ -38,8 +38,8 @@ function m(e) {
 let g = [],
   E = [],
   b = null,
-  v = null,
   y = null,
+  v = null,
   O = !1,
   I = !1,
   S = p.QZA.CLOSED,
@@ -71,38 +71,38 @@ function P(e) {
     let e = _.Z.getProps().integrations;
     null == e && (I = !0), g = null != e ? e : []
   } else g = [];
-  if (E = null != r && d.Z.can(p.Plq.MANAGE_WEBHOOKS, r) ? f.Z.getWebhooksForGuild(r.id) : [], !e && null != v) {
-    let e = K(v.id);
-    null != e && (v = e)
-  }
-  if (null != y) {
-    let e = z(y.id);
+  if (E = null != r && d.Z.can(p.Plq.MANAGE_WEBHOOKS, r) ? f.Z.getWebhooksForGuild(r.id) : [], !e && null != y) {
+    let e = K(y.id);
     null != e && (y = e)
+  }
+  if (null != v) {
+    let e = z(v.id);
+    null != e && (v = e)
   }
   b = null, S = p.QZA.OPEN, T = {}, N = !1
 }
 
 function w() {
-  r = null, g = [], E = [], b = null, v = null, y = null, S = p.QZA.CLOSED, N = !1
+  r = null, g = [], E = [], b = null, y = null, v = null, S = p.QZA.CLOSED, N = !1
 }
 let D = s().debounce(() => {
-  N && (null != v ? s().isEqual(v, K(v.id)) && (N = !1) : null != y && s().isEqual(y, z(y.id)) && (N = !1), N || Q.emitChange())
+  N && (null != y ? s().isEqual(y, K(y.id)) && (N = !1) : null != v && s().isEqual(v, z(v.id)) && (N = !1), N || Q.emitChange())
 }, 500);
 
 function L(e) {
   let {
     settings: t
   } = e;
-  if (null == v) return !1;
-  v = m({}, v), null != t.enableEmoticons && v.enable_emoticons !== t.enableEmoticons && (v.enable_emoticons = t.enableEmoticons, N = !0), null != t.expireBehavior && v.expire_behavior !== t.expireBehavior && (v.expire_behavior = t.expireBehavior, N = !0), null != t.expireGracePeriod && v.expire_grace_period !== t.expireGracePeriod && (v.expire_grace_period = t.expireGracePeriod, N = !0), N && D()
+  if (null == y) return !1;
+  y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, N = !0), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, N = !0), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, N = !0), N && D()
 }
 
 function x(e) {
   let {
     settings: t
   } = e;
-  if (null == y) return !1;
-  y = m({}, y), null != t.name && y.name !== t.name && (y.name = t.name, N = !0), void 0 !== t.avatar && y.avatar !== t.avatar && (y.avatar = t.avatar, N = !0), null != t.channelId && y.channel_id !== t.channelId && (y.channel_id = t.channelId, N = !0), N && D()
+  if (null == v) return !1;
+  v = m({}, v), null != t.name && v.name !== t.name && (v.name = t.name, N = !0), void 0 !== t.avatar && v.avatar !== t.avatar && (v.avatar = t.avatar, N = !0), null != t.channelId && v.channel_id !== t.channelId && (v.channel_id = t.channelId, N = !0), N && D()
 }
 
 function M() {
@@ -112,7 +112,7 @@ function M() {
 function k(e) {
   var t;
   if (S !== p.QZA.SUBMITTING) return !1;
-  S = p.QZA.OPEN, T = null !== (t = e.errors) && void 0 !== t ? t : {}
+  S = p.QZA.OPEN, T = null != (t = e.errors) ? t : {}
 }
 
 function j(e) {
@@ -129,7 +129,7 @@ function j(e) {
         if (n === e.id) return !0
       })) {
       var i, o;
-      g.push(e), e.type === (null == v ? void 0 : v.type) && (null === (i = e.account) || void 0 === i ? void 0 : i.id) === (null === (o = v.account) || void 0 === o ? void 0 : o.id) && (v = e)
+      g.push(e), e.type === (null == y ? void 0 : y.type) && (null == (i = e.account) ? void 0 : i.id) === (null == (o = y.account) ? void 0 : o.id) && (y = e)
     } for (let e = g.length - 1; e >= 0; e--) {
     let t = g[e],
       r = n.find(e => {
@@ -140,8 +140,8 @@ function j(e) {
       });
     if (null != r) {
       let n = m({}, t, r);
-      (null == v ? void 0 : v.id) !== n.id || (!1 === n.enabled ? v = null : N || (v = n)), g[e] = n
-    } else(null == v ? void 0 : v.id) === t.id && (v = null), g.splice(e, 1)
+      (null == y ? void 0 : y.id) === n.id && (!1 === n.enabled ? y = null : N || (y = n)), g[e] = n
+    } else(null == y ? void 0 : y.id) === t.id && (y = null), g.splice(e, 1)
   }
   g = [...g], D()
 }
@@ -164,8 +164,8 @@ function U(e) {
       });
       if (null != r) {
         let n = m({}, t, r);
-        E[e] = n, N || (null == y ? void 0 : y.id) !== n.id || (y = n)
-      } else(null == y ? void 0 : y.id) === t.id && (y = null), E.splice(e, 1)
+        E[e] = n, N || (null == v ? void 0 : v.id) !== n.id || (v = n)
+      } else(null == v ? void 0 : v.id) === t.id && (v = null), E.splice(e, 1)
     }
     for (let e of i) null == E.find(t => {
       let {
@@ -181,7 +181,7 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, v = null, y = null, T = {}, N = !0
+  b = t, y = null, v = null, T = {}, N = !0
 }
 
 function B(e) {
@@ -197,11 +197,11 @@ function F(e) {
     integrationId: t
   } = e, n = K(t);
   if (null == n) return !1;
-  v = n, b = null, y = null, T = {}, N = !1
+  y = n, b = null, v = null, T = {}, N = !1
 }
 
 function V() {
-  v = null, T = {}, N = !1
+  y = null, T = {}, N = !1
 }
 
 function Z(e) {
@@ -209,11 +209,11 @@ function Z(e) {
     webhookId: t
   } = e, n = z(t);
   if (null == n) return !1;
-  y = n, b = null, v = null, T = {}, N = !1
+  v = n, b = null, y = null, T = {}, N = !1
 }
 
 function H() {
-  y = null, T = {}, N = !1
+  v = null, T = {}, N = !1
 }
 
 function W() {
@@ -261,10 +261,10 @@ class q extends(o = l.ZP.Store) {
     return b
   }
   get editedIntegration() {
-    return v
+    return y
   }
   get editedWebhook() {
-    return y
+    return v
   }
   get formState() {
     return S
@@ -292,10 +292,10 @@ class q extends(o = l.ZP.Store) {
   }
   getApplication(e) {
     var t;
-    return null === (t = g.find(t => {
+    return null == (t = g.find(t => {
       var n;
-      return (null === (n = t.application) || void 0 === n ? void 0 : n.id) === e
-    })) || void 0 === t ? void 0 : t.application
+      return (null == (n = t.application) ? void 0 : n.id) === e
+    })) ? void 0 : t.application
   }
 }
 h(q, "displayName", "GuildSettingsIntegrationsStore");

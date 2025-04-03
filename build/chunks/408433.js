@@ -35,13 +35,13 @@ function b(e) {
   return t > 0 && n > 0
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   if (null != t && f.test(t.name) || _.test(n.url)) return !1;
   let r = null != n.proxy_url || /^https:/i.test(n.url);
   return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && p.test(t.name)), r
 }
 
-function y(e) {
+function v(e) {
   let {
     url: t,
     proxy_url: n,
@@ -89,21 +89,20 @@ function O(e, t, n) {
     }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
     case u.hBH.ARTICLE:
     case u.hBH.IMAGE:
-      r.image = y(n.thumbnail);
+      r.image = v(n.thumbnail);
       break;
     default:
-      r.thumbnail = y(n.thumbnail)
+      r.thumbnail = v(n.thumbnail)
   }
-  if (null != n.image && b(n.image) && (r.image = y(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && b(n.video) && (r.thumbnail = {
+  if (null != n.image && b(n.image) && (r.image = v(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && b(n.video) && (r.thumbnail = {
       width: n.video.width,
       height: n.video.height,
       url: I(n.video.proxy_url, {
         format: "webp"
       })
-    }), null != r.thumbnail && b(n.video) && v(t, n.provider, n.video) && (r.video = y(n.video))), d.k.has(r.type)) {
+    }), null != r.thumbnail && b(n.video) && y(t, n.provider, n.video) && (r.video = v(n.video))), d.k.has(r.type)) {
     var o;
-    let e = null !== (o = n.fields) && void 0 !== o ? o : [];
-    r.fields = e.map(e => {
+    r.fields = (null != (o = n.fields) ? o : []).map(e => {
       let {
         name: t,
         value: n,
@@ -130,10 +129,7 @@ function S(e) {
   let t = new Map,
     n = [];
   return e.forEach(e => {
-    if (null == e.url) {
-      n.push(e);
-      return
-    }
+    if (null == e.url) return void n.push(e);
     let r = t.get(e.url);
     if (null == r) {
       n.push(e), t.set(e.url, e);
@@ -167,7 +163,7 @@ function C(e, t, n) {
   return null != t && null != n ? {
     maxMediaWidth: t,
     maxMediaHeight: n
-  } : (null === (r = e.provider) || void 0 === r ? void 0 : r.name) === "TikTok" ? {
+  } : (null == (r = e.provider) ? void 0 : r.name) === "TikTok" ? {
     maxMediaWidth: 400,
     maxMediaHeight: 450
   } : {

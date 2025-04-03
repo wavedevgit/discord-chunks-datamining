@@ -22,10 +22,10 @@ var r = n(200651),
   g = n(198620),
   E = n(29909),
   b = n(591759),
-  v = n(132748),
-  y = n(981631),
+  y = n(132748),
+  v = n(981631),
   O = n(388032),
-  I = n(942760);
+  I = n(171341);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,7 +60,7 @@ let N = [d.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, d.Z.unsafe_rawColors.PR
 
 function P(e) {
   var t;
-  return null !== (t = e.id) && void 0 !== t ? t : e.src
+  return null != (t = e.id) ? t : e.src
 }
 
 function w(e, t) {
@@ -79,7 +79,7 @@ function D(e, t, n, i) {
 
 function L(e, t) {
   var n, r;
-  return e > 0 ? "" : null !== (r = null === (n = R[t]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : ""
+  return e > 0 ? "" : null != (r = null == (n = R[t]) ? void 0 : n.id) ? r : ""
 }
 
 function x(e) {
@@ -205,7 +205,7 @@ class U extends i.PureComponent {
       resultType: e,
       data: t
     } = this.props;
-    e === y.wI2.FAVORITES && ((0, _.t1)(y.wI2.FAVORITES), (0, _.hM)(t, y.wI2.FAVORITES, {
+    e === v.wI2.FAVORITES && ((0, _.t1)(v.wI2.FAVORITES), (0, _.hM)(t, v.wI2.FAVORITES, {
       limit: null
     }))
   }
@@ -274,7 +274,7 @@ class U extends i.PureComponent {
       query: n,
       resultType: i
     } = this.props;
-    return 0 === e.length && t === n && i !== y.wI2.TRENDING_GIFS ? i === y.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, r.jsx)(h.Z, {
+    return 0 === e.length && t === n && i !== v.wI2.TRENDING_GIFS ? i === v.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, r.jsx)(h.Z, {
       message: O.NW.string(O.t["5dX4UF"]),
       className: I.noResults
     }) : (0, r.jsx)(p.Z, {
@@ -282,7 +282,7 @@ class U extends i.PureComponent {
       getCoordsMap: this.getCoordsMap,
       onFocus: this.handleFocus,
       onSelect: this.handleSelect,
-      children: (0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(y.Z, {
         desiredItemWidth: 200,
         maxColumns: 8,
         children: this.renderContent
@@ -305,10 +305,10 @@ class U extends i.PureComponent {
         focusedId: e
       }))
     }), S(this, "handleSelect", e => {
-      let t;
-      let {
-        data: n
-      } = this.props, r = n.findIndex(t => P(t) === e); - 1 !== r && (t = n[r]), null != t && this.selectItem(t, r)
+      let t, {
+          data: n
+        } = this.props,
+        r = n.findIndex(t => P(t) === e); - 1 !== r && (t = n[r]), null != t && this.selectItem(t, r)
     }), S(this, "handleClickItem", (e, t) => {
       this.selectItem(e, t)
     }), S(this, "handleScroll", () => {
@@ -350,7 +350,7 @@ class U extends i.PureComponent {
       var n;
       if (e > 0) return null;
       let r = this.props.data[t];
-      return null != r ? null !== (n = r.id) && void 0 !== n ? n : r.src : null
+      return null != r ? null != (n = r.id) ? n : r.src : null
     }), S(this, "renderSection", (e, t, n) => {
       let {
         onSelectSuggestion: o,
@@ -386,7 +386,7 @@ class U extends i.PureComponent {
         query: l,
         resultType: c
       } = this.props;
-      return 0 === o.length && (s !== l || c === y.wI2.TRENDING_GIFS) ? (0, r.jsx)(f.GMG, {
+      return 0 === o.length && (s !== l || c === v.wI2.TRENDING_GIFS) ? (0, r.jsx)(f.GMG, {
         fade: !0,
         className: a()(I.results, i),
         sections: [R.length],

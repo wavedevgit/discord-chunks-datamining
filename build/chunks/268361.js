@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  d: () => v
+  d: () => y
 });
 var r = n(717029),
   i = n(25487),
@@ -90,7 +90,7 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var v = function(e) {
+var y = function(e) {
   f(n, e);
   var t = p(n);
 

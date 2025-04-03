@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(243778),
   E = n(843693),
   b = n(246642),
-  v = n(921227),
-  y = n(314897),
+  y = n(921227),
+  v = n(314897),
   O = n(430824),
   I = n(699516),
   S = n(885110),
@@ -33,7 +33,7 @@ var r = n(200651),
   P = n(5192),
   w = n(981631),
   D = n(388032),
-  L = n(83425);
+  L = n(486850);
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -179,14 +179,14 @@ function Z(e) {
     isComboing: g
   } = e, {
     rateLimitPerUser: E
-  } = u, v = N.default.getCurrentUser(), y = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == v ? void 0 : v.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
+  } = u, y = N.default.getCurrentUser(), v = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
   if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
   }) : (0, r.jsx)(V, {
     channel: u,
-    guild: y
+    guild: v
   });
   let [C, w, x] = T, M = "";
   return 1 === T.length ? M = D.NW.format(D.t.lJ9sZW, {
@@ -230,8 +230,8 @@ function H(e) {
     isThreadCreation: n = !1
   } = e, i = U(e, ["channel", "isThreadCreation"]);
   let o = (0, c.e7)([S.Z], () => S.Z.findActivity(e => null != e.application_id)),
-    a = (0, c.e7)([E.ZP, y.default], () => E.ZP.getUserCombo(y.default.getId(), t.id)),
-    s = (0, c.e7)([v.Z, p.Z], () => (0, _.Z)(t, o, v.Z, p.Z)),
+    a = (0, c.e7)([E.ZP, v.default], () => E.ZP.getUserCombo(v.default.getId(), t.id)),
+    s = (0, c.e7)([y.Z, p.Z], () => (0, _.Z)(t, o, y.Z, p.Z)),
     l = j(M({}, i), {
       baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),

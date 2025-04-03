@@ -69,7 +69,7 @@ function f(e) {
     optional: () => p(e),
     and: t => g(e, t),
     or: t => E(e, t),
-    select: t => void 0 === t ? v(e) : v(t, e)
+    select: t => void 0 === t ? y(e) : y(t, e)
   })
 }
 
@@ -83,7 +83,7 @@ function _(e) {
     }
   }), {
     optional: () => _(p(e)),
-    select: t => _(void 0 === t ? v(e) : v(t, e))
+    select: t => _(void 0 === t ? y(e) : y(t, e))
   })
 }
 
@@ -167,7 +167,7 @@ function b(e) {
   }
 }
 
-function v(...e) {
+function y(...e) {
   let t = "string" == typeof e[0] ? e[0] : void 0,
     n = 2 === e.length ? e[1] : "string" == typeof e[0] ? void 0 : e[0];
   return f({
@@ -188,7 +188,7 @@ function v(...e) {
   })
 }
 
-function y(e) {
+function v(e) {
   return "number" == typeof e
 }
 
@@ -230,15 +230,15 @@ let S = f(b(function(e) {
     }
   }),
   A = N(b(O)),
-  C = (e, t) => b(n => y(n) && e <= n && t >= n),
-  R = e => b(t => y(t) && t < e),
-  P = e => b(t => y(t) && t > e),
-  w = e => b(t => y(t) && t <= e),
-  D = e => b(t => y(t) && t >= e),
-  L = () => b(e => y(e) && Number.isInteger(e)),
-  x = () => b(e => y(e) && Number.isFinite(e)),
-  M = () => b(e => y(e) && e > 0),
-  k = () => b(e => y(e) && e < 0),
+  C = (e, t) => b(n => v(n) && e <= n && t >= n),
+  R = e => b(t => v(t) && t < e),
+  P = e => b(t => v(t) && t > e),
+  w = e => b(t => v(t) && t <= e),
+  D = e => b(t => v(t) && t >= e),
+  L = () => b(e => v(e) && Number.isInteger(e)),
+  x = () => b(e => v(e) && Number.isFinite(e)),
+  M = () => b(e => v(e) && e > 0),
+  k = () => b(e => v(e) && e < 0),
   j = e => Object.assign(f(e), {
     between: (t, n) => j(g(e, C(t, n))),
     lt: t => j(g(e, R(t))),
@@ -250,7 +250,7 @@ let S = f(b(function(e) {
     positive: () => j(g(e, M())),
     negative: () => j(g(e, k()))
   }),
-  U = j(b(y)),
+  U = j(b(v)),
   G = (e, t) => b(n => I(n) && e <= n && t >= n),
   B = e => b(t => I(t) && t < e),
   F = e => b(t => I(t) && t > e),
@@ -387,7 +387,7 @@ var X = {
     })
   },
   when: b,
-  select: v,
+  select: y,
   any: S,
   _: T,
   string: A,

@@ -29,10 +29,7 @@ function l(e) {
       h = e.getRegistry();
     e.dispatch((0, i.T)(l)), c(t, p, h);
     var m = f(t, p);
-    if (null === m) {
-      e.dispatch(s);
-      return
-    }
+    if (null === m) return void e.dispatch(s);
     var g = null;
     if (l) {
       if (!_) throw Error("getSourceClientOffset must be defined");

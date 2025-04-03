@@ -27,14 +27,14 @@ let h = Date.now(),
   g = !1,
   E = !1,
   b = !1,
-  v = !1;
+  y = !1;
 
-function y() {
-  return E || b || (0, u.isAndroid)() && v
+function v() {
+  return E || b || (0, u.isAndroid)() && y
 }
 
 function O() {
-  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || y() ? g || o.Z.dispatch({
+  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || v() ? g || o.Z.dispatch({
     type: "AFK",
     afk: !0
   }) : g && o.Z.dispatch({
@@ -44,7 +44,7 @@ function O() {
 }
 
 function I() {
-  Date.now() - h > f.OSm || y() ? m || o.Z.dispatch({
+  Date.now() - h > f.OSm || v() ? m || o.Z.dispatch({
     type: "IDLE",
     idle: !0,
     idleSince: h
@@ -63,7 +63,7 @@ function T() {
   let t = e => {
     h = Math.max(Date.now() - e, h), S(), setTimeout(T, 10 * c.Z.Millis.SECOND)
   };
-  if ((null === s.Z || void 0 === s.Z ? void 0 : null === (e = s.Z.remotePowerMonitor) || void 0 === e ? void 0 : e.getSystemIdleTimeMs) != null) {
+  if ((null === s.Z || void 0 === s.Z || null == (e = s.Z.remotePowerMonitor) ? void 0 : e.getSystemIdleTimeMs) != null) {
     let e = s.Z.remotePowerMonitor.getSystemIdleTimeMs();
     e instanceof Promise ? e.then(t) : t(e)
   }
@@ -89,7 +89,7 @@ function R(e) {
   let {
     state: t
   } = e;
-  return v = t === f.$7l.BACKGROUND, h = Date.now(), S(), !1
+  return y = t === f.$7l.BACKGROUND, h = Date.now(), S(), !1
 }
 
 function P(e) {

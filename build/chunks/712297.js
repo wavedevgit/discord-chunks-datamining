@@ -77,18 +77,18 @@ function g(e) {
     let e = {};
     for (let n of p) {
       var t;
-      e[n] = null !== (t = u.Z.get(n)) && void 0 !== t ? t : void 0
+      e[n] = null != (t = u.Z.get(n)) ? t : void 0
     }
     return e
-  }, [p]), v = (0, l.hv)("useSkus");
+  }, [p]), y = (0, l.hv)("useSkus");
   r.useEffect(() => {
-    for (let e of p) u.Z.isFetching(e) || null != u.Z.get(e) || (0, o.$N)(t, e, v)
-  }, [t, p, v]);
-  let y = (0, i.cj)([c.Z], () => {
+    for (let e of p) u.Z.isFetching(e) || null != u.Z.get(e) || (0, o.$N)(t, e, y)
+  }, [t, p, y]);
+  let v = (0, i.cj)([c.Z], () => {
     let e = {};
     for (let n of p) {
       var t;
-      e[n] = null !== (t = c.Z.getPricesForSku(n)) && void 0 !== t ? t : void 0
+      e[n] = null != (t = c.Z.getPricesForSku(n)) ? t : void 0
     }
     return e
   }, [p]);
@@ -101,7 +101,7 @@ function g(e) {
   }, [t, p, f, _, E]), {
     hasFetchedSkus: h,
     skusById: b,
-    skuPricePreviewsById: y,
+    skuPricePreviewsById: v,
     previewErrorsById: g
   }
 }

@@ -64,11 +64,11 @@ function b(e) {
   delete m[e.id]
 }
 
-function v() {
+function y() {
   f = {}, _ = {}, p = {}, h = {}, m = {}
 }
 
-function y(e) {
+function v(e) {
   let {
     applications: t
   } = e;
@@ -224,7 +224,7 @@ function j(e) {
   } = e, n = new Set;
   for (let e of t) {
     var r;
-    let t = null === (r = e.sku) || void 0 === r ? void 0 : r.application;
+    let t = null == (r = e.sku) ? void 0 : r.application;
     null == t || n.has(t.id) || b(a.ZP.createFromServer(t))
   }
   return n.size > 0
@@ -235,7 +235,7 @@ function U(e) {
   let {
     payment: n
   } = e;
-  if ((null === (t = n.sku) || void 0 === t ? void 0 : t.application) == null) return !1;
+  if ((null == (t = n.sku) ? void 0 : t.application) == null) return !1;
   b(a.ZP.createFromServer(n.sku.application))
 }
 
@@ -244,7 +244,7 @@ function G(e) {
   let {
     giftCode: n
   } = e;
-  if ((null === (t = n.store_listing) || void 0 === t ? void 0 : t.sku.application) == null) return !1;
+  if ((null == (t = n.store_listing) ? void 0 : t.sku.application) == null) return !1;
   b(a.ZP.createFromServer(n.store_listing.sku.application))
 }
 
@@ -273,7 +273,7 @@ function V(e) {
 
 function Z(e) {
   var t;
-  null === (t = e.attachments) || void 0 === t || t.forEach(e => {
+  null == (t = e.attachments) || t.forEach(e => {
     null != e.application && b(a.ZP.createFromServer(e.application))
   })
 }
@@ -324,7 +324,7 @@ class Y extends(r = i.ZP.PersistedStore) {
   }
   getGuildApplicationIds(e) {
     var t;
-    return null == e ? d : null !== (t = _[e]) && void 0 !== t ? t : d
+    return null == e ? d : null != (t = _[e]) ? t : d
   }
   getApplication(e) {
     if (null != e) return f[e]
@@ -348,13 +348,13 @@ class Y extends(r = i.ZP.PersistedStore) {
   }
   getAppIdForBotUserId(e) {
     var t;
-    if (null != e) return null === (t = g.botUserIdToAppUsage[e]) || void 0 === t ? void 0 : t.applicationId
+    if (null != e) return null == (t = g.botUserIdToAppUsage[e]) ? void 0 : t.applicationId
   }
 }
 s(Y, "displayName", "ApplicationStore"), s(Y, "persistKey", "ApplicationStore");
 let K = new Y(o.Z, {
-  LOGOUT: v,
-  OVERLAY_INITIALIZE: y,
+  LOGOUT: y,
+  OVERLAY_INITIALIZE: v,
   APPLICATION_FETCH: O,
   APPLICATION_FETCH_SUCCESS: S,
   APPLICATION_FETCH_FAIL: A,

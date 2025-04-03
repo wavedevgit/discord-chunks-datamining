@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -15,7 +15,7 @@ var r = n(200651),
   f = n(443603),
   _ = n(957825),
   p = n(388032),
-  h = n(998735);
+  h = n(302195);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,11 +56,11 @@ function b(e, t) {
   }), e
 }
 
-function v(e, t) {
+function y(e, t) {
   let {
     disabled: n,
     type: o
-  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), v = i.useContext(c.ZP), y = !1, [O, I] = i.useState(!1), S = m === _.X1.STICKER, T = !1, N = i.useCallback(() => {
+  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), y = i.useContext(c.ZP), v = !1, [O, I] = i.useState(!1), S = m === _.X1.STICKER, T = !1, N = i.useCallback(() => {
     (0, d.RO)(_.X1.STICKER, o)
   }, [o]);
   i.useEffect(() => {
@@ -74,10 +74,10 @@ function v(e, t) {
           I(!1)
         })
       };
-    return v.addListener("sticker-suggestions-shown", e), v.addListener("sticker-suggestions-hidden", t), () => {
-      v.removeListener("sticker-suggestions-shown", e), v.removeListener("sticker-suggestions-hidden", t)
+    return y.addListener("sticker-suggestions-shown", e), y.addListener("sticker-suggestions-hidden", t), () => {
+      y.removeListener("sticker-suggestions-shown", e), y.removeListener("sticker-suggestions-hidden", t)
     }
-  }, [v]);
+  }, [y]);
   let {
     Component: A,
     events: C,
@@ -101,7 +101,7 @@ function v(e, t) {
       "aria-expanded": S,
       "aria-haspopup": "dialog",
       "aria-controls": E,
-      sparkle: y,
+      sparkle: v,
       notification: T ? f.j.UPDATE : null,
       children: (0, r.jsx)(A, {
         size: P ? "refresh_sm" : void 0,
@@ -110,4 +110,4 @@ function v(e, t) {
     }))
   })
 }
-let y = i.memo(i.forwardRef(v))
+let v = i.memo(i.forwardRef(y))

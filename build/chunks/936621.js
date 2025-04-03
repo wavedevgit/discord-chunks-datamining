@@ -81,7 +81,7 @@ class h extends i.Component {
     this._animationCleanup()
   }
   shake(e, t) {
-    this.animProps = this.getDefaultAnimProps(e, t), !this.state.shaking && this.setState({
+    this.animProps = this.getDefaultAnimProps(e, t), this.state.shaking || this.setState({
       shaking: !0
     }, this._animate)
   }
@@ -111,10 +111,7 @@ class h extends i.Component {
       let {
         animProps: e
       } = this;
-      if (!this.state.shaking || e.progress > e.duration || null == this.ref.current) {
-        this._animationComplete();
-        return
-      }
+      if (!this.state.shaking || e.progress > e.duration || null == this.ref.current) return void this._animationComplete();
       let t = Date.now();
       if (e.progress += t - e.last, e.last = t, e.frameCount % 2 != 0) {
         let t = e.lastDirection * e.intensity,

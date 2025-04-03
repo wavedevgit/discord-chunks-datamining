@@ -28,8 +28,8 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 let b = null,
-  v = !1,
-  y = 12096e5,
+  y = !1,
+  v = 12096e5,
   O = 864e5;
 
 function I(e) {
@@ -61,7 +61,7 @@ function S() {
   }
   if ((0, p.dR)({
       location: "tenure_reward_manager"
-    })) {
+    }))
     if (!0 === e || A(r)) R();
     else {
       let e = d.Z.getForApplication(g.CL);
@@ -72,12 +72,11 @@ function S() {
         tenureRewardIds: t
       })
     }
-  }
 }
 
 function T() {
   let e = h.Z.getState();
-  return null != e.lastFetchTimeMs && Date.now() - e.lastFetchTimeMs > y
+  return null != e.lastFetchTimeMs && Date.now() - e.lastFetchTimeMs > v
 }
 
 function N() {
@@ -92,14 +91,14 @@ function A(e) {
 }
 
 function C() {
-  if (P(), h.Z.getFetchState() !== h.M.FETCHED || v) return;
+  if (P(), h.Z.getFetchState() !== h.M.FETCHED || y) return;
   let e = (0, m.GT)();
   if ((null == e ? void 0 : e.redeemable_at) == null) return;
   let t = (null == e ? void 0 : e.redeemable_at) != null ? new Date(e.redeemable_at).getTime() - Date.now() : null;
   null != t && t > 0 && (b = setTimeout(S, t))
 }
 async function R() {
-  !v && (v = !0, await _.V(), v = !1, o.Z.wait(() => C()))
+  y || (y = !0, await _.V(), y = !1, o.Z.wait(() => C()))
 }
 
 function P() {

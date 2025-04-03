@@ -35,18 +35,18 @@ var g = n(981631),
   E = n(474936),
   b = n(388032);
 let {
-  GUILD_VOICE: v,
-  GUILD_CATEGORY: y,
+  GUILD_VOICE: y,
+  GUILD_CATEGORY: v,
   GUILD_STAGE_VOICE: O
 } = g.d4z;
 
 function I(e, t) {
-  return e === t || e === y
+  return e === t || e === v
 }
 
 function S(e, t, n) {
   let i = h.Hn;
-  return ((0, c.r8)(t) || t === y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), I(t, v) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
+  return ((0, c.r8)(t) || t === v) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), I(t, y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
     type: n,
     allow: h.Hn,
@@ -56,7 +56,7 @@ function S(e, t, n) {
 
 function T(e, t, n) {
   let i = h.Hn;
-  return ((0, c.r8)(t) || t === y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), (I(t, v) || I(t, O)) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
+  return ((0, c.r8)(t) || t === v) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), (I(t, y) || I(t, O)) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
     type: n,
     deny: h.Hn,
@@ -93,8 +93,8 @@ function P(e, t, n) {
   var r, i;
   let o = e.getGuildId(),
     s = n.getGuild(o),
-    l = null !== (r = null == s ? void 0 : s.maxVideoChannelUsers) && void 0 !== r ? r : -1,
-    c = null !== (i = null == s ? void 0 : s.maxStageVideoChannelUsers) && void 0 !== i ? i : -1,
+    l = null != (r = null == s ? void 0 : s.maxVideoChannelUsers) ? r : -1,
+    c = null != (i = null == s ? void 0 : s.maxStageVideoChannelUsers) ? i : -1,
     u = p.ZP.countVoiceStatesForChannel(e.id),
     d = p.ZP.getVoiceStatesForChannel(e),
     _ = f.Z.can(g.Plq.MOVE_MEMBERS, e) && f.Z.can(g.Plq.CONNECT, e),
@@ -181,8 +181,7 @@ function M(e) {
 }
 
 function k(e) {
-  let t;
-  let n = u.Z.getChannel(_.Z.getLastSelectedChannelId());
+  let t, n = u.Z.getChannel(_.Z.getLastSelectedChannelId());
   if (null != n && n.getGuildId() === e && n.type === g.d4z.GUILD_TEXT) t = n.id;
   else {
     let n = d.ZP.getDefaultChannel(e);
@@ -201,8 +200,7 @@ function U(e, t, n, r) {
 }
 
 function G(e, t, n, r) {
-  let i;
-  let o = e.getGuildId(),
+  let i, o = e.getGuildId(),
     a = (0, s.BC)(o, t);
   return null != t && a ? U(o, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : j(o, e.id, n)
 }

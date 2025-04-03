@@ -27,8 +27,8 @@ var r = n(200651),
   g = n(272008),
   E = n(113434),
   b = n(569984),
-  v = n(497505),
-  y = n(918701),
+  y = n(497505),
+  v = n(918701),
   O = n(977156),
   I = n(920916),
   S = n(669041),
@@ -85,7 +85,7 @@ function x(e) {
     questContentRowIndex: o
   } = e, s = (0, a.e7)([_.default], () => {
     var e;
-    return null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasVerifiedEmailOrPhone()
+    return null == (e = _.default.getCurrentUser()) ? void 0 : e.hasVerifiedEmailOrPhone()
   }), l = (0, h.O5)();
   return i.useCallback(() => {
     null != t && (l({
@@ -94,7 +94,7 @@ function x(e) {
       questContentCTA: h.jZ.CLAIM_REWARD,
       questContentPosition: r,
       questContentRowIndex: o
-    }), s ? (0, y.Bg)(t.config) ? (0, T.openQuestsNitroRewardModal)(t, n) : (0, y.Xv)(t.config) ? (0, I.m)(t, n) : (0, y.vQ)(t.config) ? (0, T.openQuestInGameRewardModal)(t, n) : (0, y.xN)(t.config) ? (0, T.openQuestOrbsRewardModal)(t, n) : (0, T.openQuestsRewardCodeModal)({
+    }), s ? (0, v.Bg)(t.config) ? (0, T.openQuestsNitroRewardModal)(t, n) : (0, v.Xv)(t.config) ? (0, I.m)(t, n) : (0, v.vQ)(t.config) ? (0, T.openQuestInGameRewardModal)(t, n) : (0, v.xN)(t.config) ? (0, T.openQuestOrbsRewardModal)(t, n) : (0, T.openQuestsRewardCodeModal)({
       questId: t.id,
       location: n,
       questContentPosition: r
@@ -105,7 +105,7 @@ function x(e) {
 function M(e) {
   var t;
   let n = (0, a.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
-  return null != n && Date.now() - 2592e7 <= (null !== (t = n.lastLaunched) && void 0 !== t ? t : 0)
+  return null != n && Date.now() - 2592e7 <= (null != (t = n.lastLaunched) ? t : 0)
 }
 let k = e => {
     let {
@@ -148,7 +148,7 @@ let k = e => {
     } = (0, E.KX)(), o = (0, h.O5)(), a = n => {
       var r;
       let a = n.target;
-      (null == a ? void 0 : null === (r = a.tagName) || void 0 === r ? void 0 : r.toLowerCase()) === "a" && o({
+      (null == a || null == (r = a.tagName) ? void 0 : r.toLowerCase()) === "a" && o({
         questId: e,
         questContent: t,
         questContentCTA: a.getAttribute("href") === i ? h.jZ.HOW_TO_HELP_ARTICLE_XBOX : h.jZ.HOW_TO_HELP_ARTICLE_PLAYSTATION
@@ -172,7 +172,7 @@ function U(e) {
     inGiftInventory: _,
     isVideoQuest: p,
     inGameQuest: b
-  } = e, v = x({
+  } = e, y = x({
     quest: n,
     location: a,
     questContentPosition: s,
@@ -188,7 +188,7 @@ function U(e) {
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
-  }, []), D = null === (t = (0, m.WD)()) || void 0 === t ? void 0 : t.getId();
+  }, []), D = null == (t = (0, m.WD)()) ? void 0 : t.getId();
   return i.useMemo(() => {
     switch (r) {
       case E.OH.UNACCEPTED:
@@ -211,7 +211,7 @@ function U(e) {
         if (O && _) return {
           text: R.NW.string(R.t.Cfye4u),
           tooltipText: null,
-          onClick: () => (0, y.gI)({
+          onClick: () => (0, v.gI)({
             quest: n
           }, {
             content: a,
@@ -222,7 +222,7 @@ function U(e) {
           })
         };
         if (p) return {
-          text: (0, y.F9)(I),
+          text: (0, v.F9)(I),
           tooltipText: R.NW.string(R.t.hsbwjo),
           onClick: () => (0, T.openVideoQuestModal)(n)
         };
@@ -231,25 +231,25 @@ function U(e) {
         };
       case E.OH.COMPLETED:
         return {
-          text: R.NW.string(R.t.cfY4PD), tooltipText: null, onClick: v
+          text: R.NW.string(R.t.cfY4PD), tooltipText: null, onClick: y
         };
       case E.OH.CLAIMED:
         let i = {
           tooltipText: null,
-          onClick: v
+          onClick: y
         };
         if (o) return L(w({}, i), {
           text: R.NW.string(R.t.MAS7uL)
         });
-        if ((0, y.vQ)(n.config)) return L(w({}, i), {
+        if ((0, v.vQ)(n.config)) return L(w({}, i), {
           text: R.NW.string(R.t.vTgCW1)
         });
-        if ((0, y.Bg)(n.config)) return {
+        if ((0, v.Bg)(n.config)) return {
           tooltipText: null,
           onClick: S,
           text: R.NW.string(R.t["eQX+go"])
         };
-        else if ((0, y.xN)(n.config)) return {
+        else if ((0, v.xN)(n.config)) return {
           tooltipText: null,
           text: R.NW.string(R.t.WYchdX),
           onClick: P
@@ -258,13 +258,13 @@ function U(e) {
           text: R.NW.string(R.t.bAGFz8)
         })
     }
-  }, [r, p, O, _, v, o, n, a, s, u, D, I, S, P, b])
+  }, [r, p, O, _, y, o, n, a, s, u, D, I, S, P, b])
 }
 
 function G() {
   return (0, a.e7)([b.Z], () => {
     var e, t;
-    return null !== (t = null !== (e = b.Z.questDeliveryOverride) && void 0 !== e ? e : (0, y.PM)(b.Z.quests, b.Z.questToDeliverForPlacement, v.Ok.DESKTOP_ACCOUNT_PANEL_AREA)) && void 0 !== t ? t : null
+    return null != (t = null != (e = b.Z.questDeliveryOverride) ? e : (0, v.PM)(b.Z.quests, b.Z.questToDeliverForPlacement, y.Ok.DESKTOP_ACCOUNT_PANEL_AREA)) ? t : null
   })
 }
 
@@ -282,9 +282,9 @@ function B(e) {
     premiumSubscription: p.ZP.getPremiumSubscription(),
     hasFetchedSubscriptions: p.ZP.hasFetchedSubscriptions()
   })), c = (0, a.e7)([b.Z], () => null != b.Z.questDeliveryOverride);
-  if (null == r || (0, y.Bg)(r.config) && (!l || (null == s ? void 0 : s.isPurchasedExternally))) return !1;
-  let u = (null === (t = r.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null,
-    d = !c && null != r.userStatus && (0, y.zE)(r.userStatus, v.jn.QUEST_BAR);
+  if (null == r || (0, v.Bg)(r.config) && (!l || (null == s ? void 0 : s.isPurchasedExternally))) return !1;
+  let u = (null == (t = r.userStatus) ? void 0 : t.claimedAt) != null,
+    d = !c && null != r.userStatus && (0, v.zE)(r.userStatus, y.jn.QUEST_BAR);
   return i && !d && !u && !o
 }
 

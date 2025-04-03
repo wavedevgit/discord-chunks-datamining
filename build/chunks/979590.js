@@ -152,13 +152,13 @@
     return n.s -= t / 100, n.s = j(n.s), c(n)
   }
 
-  function v(e, t) {
+  function y(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.s += t / 100, n.s = j(n.s), c(n)
   }
 
-  function y(e) {
+  function v(e) {
     return c(e).desaturate(100)
   }
 
@@ -391,10 +391,10 @@
       return this._applyModification(b, arguments)
     },
     saturate: function() {
-      return this._applyModification(v, arguments)
+      return this._applyModification(y, arguments)
     },
     greyscale: function() {
-      return this._applyModification(y, arguments)
+      return this._applyModification(v, arguments)
     },
     spin: function() {
       return this._applyModification(T, arguments)

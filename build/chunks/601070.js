@@ -40,7 +40,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -159,10 +159,8 @@ function U(e) {
     channels: t
   } = e;
   for (let e of t)
-    if (e.isNSFW() !== G(e.guild_id, e.parent_id)) {
-      P();
-      return
-    } return !1
+    if (e.isNSFW() !== G(e.guild_id, e.parent_id)) return void P();
+  return !1
 }
 
 function G(e, t) {
@@ -191,7 +189,7 @@ function B(e) {
 
 function F(e) {
   let t = c.Z.getChannel(e.id);
-  return !!(null != t && p.Z.isActive(e.guildId, t.parent_id, e.id)) && k(t.guild_id, t.parent_id, t.id)
+  return null != t && !!p.Z.isActive(e.guildId, t.parent_id, e.id) && k(t.guild_id, t.parent_id, t.id)
 }
 
 function V(e) {
@@ -204,7 +202,7 @@ function V(e) {
     } = t;
     if (!l.Ec.has(t.type)) {
       var n;
-      return Number(null === (n = A[e]) || void 0 === n ? void 0 : n[t.id]) > 0 && (M(e, t.id), !0)
+      return Number(null == (n = A[e]) ? void 0 : n[t.id]) > 0 && (M(e, t.id), !0)
     }
     if (null == r) return !1;
     if (et(O, t)) {
@@ -316,13 +314,13 @@ function $(e, t, n, r) {
     parent_id: a,
     id: s
   } = t;
-  null != i && null != a && null != s && (i in e || (e[i] = {}), a in e[i] || (e[i][a] = {}), r && (e[i] = y(b({}, e[i]), {
+  null != i && null != a && null != s && (i in e || (e[i] = {}), a in e[i] || (e[i][a] = {}), r && (e[i] = v(b({}, e[i]), {
     [a]: b({}, e[i][a])
   })), null === n ? (delete e[i][a][s], o().isEmpty(e[i][a]) && delete e[i][a]) : e[i][a][s] = n)
 }
 
 function ee(e, t, n, r) {
-  null != t && null != n && null != r && en(e, t, n, r) && (e[t] = y(b({}, e[t]), {
+  null != t && null != n && null != r && en(e, t, n, r) && (e[t] = v(b({}, e[t]), {
     [n]: b({}, e[t][n])
   }), delete e[t][n][r], o().isEmpty(e[t][n]) && delete e[t][n])
 }
@@ -348,47 +346,47 @@ class el extends(r = a.ZP.Store) {
   }
   getActiveUnjoinedThreadsForParent(e, t) {
     var n;
-    return e in S && null !== (n = S[e][t]) && void 0 !== n ? n : ea
+    return e in S && null != (n = S[e][t]) ? n : ea
   }
   getActiveJoinedThreadsForParent(e, t) {
     var n;
-    return e in O && null !== (n = O[e][t]) && void 0 !== n ? n : eo
+    return e in O && null != (n = O[e][t]) ? n : eo
   }
   getActiveJoinedThreadsForGuild(e) {
     var t;
-    return null !== (t = O[e]) && void 0 !== t ? t : er
+    return null != (t = O[e]) ? t : er
   }
   getActiveJoinedUnreadThreadsForGuild(e) {
     var t;
-    return null !== (t = I[e]) && void 0 !== t ? t : er
+    return null != (t = I[e]) ? t : er
   }
   getActiveJoinedUnreadThreadsForParent(e, t) {
     var n;
-    return null !== (n = this.getActiveJoinedUnreadThreadsForGuild(e)[t]) && void 0 !== n ? n : eo
+    return null != (n = this.getActiveJoinedUnreadThreadsForGuild(e)[t]) ? n : eo
   }
   getActiveJoinedRelevantThreadsForGuild(e) {
     var t;
-    return null !== (t = N[e]) && void 0 !== t ? t : er
+    return null != (t = N[e]) ? t : er
   }
   getActiveJoinedRelevantThreadsForParent(e, t) {
     var n;
-    return null !== (n = this.getActiveJoinedRelevantThreadsForGuild(e)[t]) && void 0 !== n ? n : eo
+    return null != (n = this.getActiveJoinedRelevantThreadsForGuild(e)[t]) ? n : eo
   }
   getActiveUnjoinedThreadsForGuild(e) {
     var t;
-    return null !== (t = S[e]) && void 0 !== t ? t : ei
+    return null != (t = S[e]) ? t : ei
   }
   getActiveUnjoinedUnreadThreadsForGuild(e) {
     var t;
-    return null !== (t = T[e]) && void 0 !== t ? t : er
+    return null != (t = T[e]) ? t : er
   }
   getActiveUnjoinedUnreadThreadsForParent(e, t) {
     var n;
-    return null !== (n = this.getActiveUnjoinedUnreadThreadsForGuild(e)[t]) && void 0 !== n ? n : eo
+    return null != (n = this.getActiveUnjoinedUnreadThreadsForGuild(e)[t]) ? n : eo
   }
   getNewThreadCountsForGuild(e) {
     var t;
-    return null !== (t = A[e]) && void 0 !== t ? t : es
+    return null != (t = A[e]) ? t : es
   }
   computeAllActiveJoinedThreads(e) {
     let t = [];
@@ -400,11 +398,11 @@ class el extends(r = a.ZP.Store) {
   }
   getNewThreadCount(e, t) {
     var n, r;
-    return null !== (r = null === (n = A[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : 0
+    return null != (r = null == (n = A[e]) ? void 0 : n[t]) ? r : 0
   }
   getActiveThreadCount(e, t) {
     var n, r, i, a;
-    return o().size(null !== (i = null === (n = O[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== i ? i : {}) + o().size(null !== (a = null === (r = S[e]) || void 0 === r ? void 0 : r[t]) && void 0 !== a ? a : {})
+    return o().size(null != (i = null == (n = O[e]) ? void 0 : n[t]) ? i : {}) + o().size(null != (a = null == (r = S[e]) ? void 0 : r[t]) ? a : {})
   }
 }
 E(el, "displayName", "ActiveJoinedThreadsStore");

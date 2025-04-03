@@ -21,14 +21,14 @@ var i = n(570140),
   g = n(981631),
   E = n(388032);
 let b = 8,
-  v = {
+  y = {
     results: {
       command: null,
       stickers: []
     }
   };
 
-function y(e, t) {
+function v(e, t) {
   return (0, r.jsx)(_.Z, {
     sticker: e,
     isInteracting: t,
@@ -39,12 +39,12 @@ let O = {
   stores: [d.Z],
   matches(e, t, n, r, i) {
     var o;
-    return i.commands !== m.L8.DISABLED && i.commands !== m.L8.OLD_BUILT_INS && (null === (o = a.Z.getActiveCommand(e.id)) || void 0 === o ? void 0 : o.integrationType) === g.q9n.STICKER && a.Z.getOptionStates(e.id).query.hasValue
+    return i.commands !== m.L8.DISABLED && i.commands !== m.L8.OLD_BUILT_INS && (null == (o = a.Z.getActiveCommand(e.id)) ? void 0 : o.integrationType) === g.q9n.STICKER && a.Z.getOptionStates(e.id).query.hasValue
   },
   queryResults(e, t, n, r) {
     var i;
-    let o = null === (i = a.Z.getActiveCommand(e.id)) || void 0 === i ? void 0 : i.untranslatedName;
-    if (null == o) return v;
+    let o = null == (i = a.Z.getActiveCommand(e.id)) ? void 0 : i.untranslatedName;
+    if (null == o) return y;
     let s = [];
     (0, u.$p)();
     let l = p.ZP.queryStickers([n], !0, [e, (e, t) => t === c.eb.SENDABLE]),
@@ -85,7 +85,7 @@ let O = {
             sticker: n
           } = e;
           return {
-            renderSticker: y,
+            renderSticker: v,
             queryMatch: t !== n.name.toLocaleLowerCase() ? t : void 0,
             sticker: n,
             key: n.id

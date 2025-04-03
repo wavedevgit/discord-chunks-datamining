@@ -87,25 +87,22 @@ t.Request = N, E.getXHR = () => {
 };
 let b = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
 
-function v(e) {
+function y(e) {
   if (!f(e)) return e;
   let t = [];
-  for (let n in e) p(e, n) && y(t, n, e[n]);
+  for (let n in e) p(e, n) && v(t, n, e[n]);
   return t.join("&")
 }
 
-function y(e, t, n) {
+function v(e, t, n) {
   if (void 0 !== n) {
-    if (null === n) {
-      e.push(encodeURI(t));
-      return
-    }
+    if (null === n) return void e.push(encodeURI(t));
     if (Array.isArray(n)) {
       var r, o = i(n);
       try {
         for (o.s(); !(r = o.n()).done;) {
           let n = r.value;
-          y(e, t, n)
+          v(e, t, n)
         }
       } catch (e) {
         o.e(e)
@@ -113,22 +110,20 @@ function y(e, t, n) {
         o.f()
       }
     } else if (f(n))
-      for (let r in n) p(n, r) && y(e, `${t}[${r}]`, n[r]);
+      for (let r in n) p(n, r) && v(e, `${t}[${r}]`, n[r]);
     else e.push(encodeURI(t) + "=" + encodeURIComponent(n))
   }
 }
 
 function O(e) {
-  let t, n;
-  let r = {},
+  let t, n, r = {},
     i = e.split("&");
   for (let e = 0, o = i.length; e < o; ++e) - 1 === (n = (t = i[e]).indexOf("=")) ? r[decodeURIComponent(t)] = "" : r[decodeURIComponent(t.slice(0, n))] = decodeURIComponent(t.slice(n + 1));
   return r
 }
 
 function I(e) {
-  let t, n, r, i;
-  let o = e.split(/\r?\n/),
+  let t, n, r, i, o = e.split(/\r?\n/),
     a = {};
   for (let e = 0, s = o.length; e < s; ++e) - 1 !== (t = (n = o[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = b(n.slice(t + 1)), a[r] = i);
   return a
@@ -163,7 +158,7 @@ function N(e, t) {
     e ? (e.original = t, e.response = r, e.status = e.status || r.status, n.callback(e, r)) : n.callback(null, r)
   })
 }
-E.serializeObject = v, E.parseString = O, E.types = {
+E.serializeObject = y, E.parseString = O, E.types = {
   html: "text/html",
   json: "application/json",
   xml: "text/xml",
@@ -199,7 +194,7 @@ E.serializeObject = v, E.parseString = O, E.types = {
   };
   return this._auth(e, t, n, r)
 }, N.prototype.query = function(e) {
-  return "string" != typeof e && (e = v(e)), e && this._query.push(e), this
+  return "string" != typeof e && (e = y(e)), e && this._query.push(e), this
 }, N.prototype.attach = function(e, t, n) {
   if (t) {
     if (this._data) throw Error("superagent can't mix .send() and .attach()");
@@ -235,8 +230,7 @@ E.serializeObject = v, E.parseString = O, E.types = {
   let t = this.xhr,
     n = this._formData || this._data;
   this._setTimeouts(), t.addEventListener("readystatechange", () => {
-    let n;
-    let r = t.readyState;
+    let n, r = t.readyState;
     if (r >= 2 && e._responseTimeoutTimer && clearTimeout(e._responseTimeoutTimer), 4 === r) {
       try {
         n = t.status

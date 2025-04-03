@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = "([0-9]_*)+",
     n = "([0-9a-fA-F]_*)+",
     r = "([01]_*)+",
@@ -120,4 +120,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

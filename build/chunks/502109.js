@@ -17,7 +17,7 @@ var r = n(200651),
   _ = n(622999),
   p = n(981631),
   h = n(388032),
-  m = n(598053);
+  m = n(844424);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,13 +52,13 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -85,10 +85,7 @@ let I = new l.Z("PaymentRequest"),
 class T extends i.Component {
   componentDidMount() {
     if (!(0, f.isDesktop)()) {
-      if (!this.isBrowserCompatible()) {
-        this.onPaymentRequestFailure();
-        return
-      }
+      if (!this.isBrowserCompatible()) return void this.onPaymentRequestFailure();
       this.disableWallets = S.filter(e => e !== this.paymentRequestWallet).sort(), (0, _.d2)().then(e => {
         this.initPaymentRequest(e)
       })
@@ -149,9 +146,9 @@ class T extends i.Component {
     var e, t;
     let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s.zxk.Colors.BRAND,
       i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.zxk.Looks.FILLED;
-    return null !== (t = this.props.loadingComponent) && void 0 !== t ? t : (0, r.jsx)(s.zxk, {
+    return null != (t = this.props.loadingComponent) ? t : (0, r.jsx)(s.zxk, {
       color: n,
-      className: null !== (e = this.props.className) && void 0 !== e ? e : m.button,
+      className: null != (e = this.props.className) ? e : m.button,
       submitting: !0,
       look: i
     })
@@ -161,16 +158,16 @@ class T extends i.Component {
         iconType: i,
         buttonText: o
       } = e,
-      a = y(e, ["iconType", "buttonText"]);
-    return (0, r.jsx)(s.zxk, v(E({
+      a = v(e, ["iconType", "buttonText"]);
+    return (0, r.jsx)(s.zxk, y(E({
       onClick: this.attemptPaymentRequest,
-      className: null !== (t = this.props.className) && void 0 !== t ? t : m.button,
+      className: null != (t = this.props.className) ? t : m.button,
       submitting: this.state.submitting
     }, a), {
       children: (0, r.jsxs)("div", {
         className: m.centerContainer,
         children: [(0, r.jsx)(c.ZP, {
-          className: null !== (n = this.props.iconClassName) && void 0 !== n ? n : m.buttonIcon,
+          className: null != (n = this.props.iconClassName) ? n : m.buttonIcon,
           type: i
         }), o]
       })
@@ -250,17 +247,11 @@ class T extends i.Component {
         this.initPaymentRequestCallback(r)
       }), r
     }), g(this, "attemptPaymentRequest", () => {
-      if ((0, f.isDesktop)()) {
-        this.props.onChooseType(p.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
-        return
-      }
+      if ((0, f.isDesktop)()) return void this.props.onChooseType(p.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
       let {
         available: e
       } = this.validatePaymentRequest();
-      if (!e) {
-        this.onPaymentRequestFailure();
-        return
-      }
+      if (!e) return void this.onPaymentRequestFailure();
       let {
         paymentRequest: t
       } = this.state;

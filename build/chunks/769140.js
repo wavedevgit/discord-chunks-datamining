@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(194082),
   E = n(318374),
   b = n(449605),
-  v = n(102172),
-  y = n(359110),
+  y = n(102172),
+  v = n(359110),
   O = n(769654),
   I = n(922482),
   S = n(592125),
@@ -44,8 +44,8 @@ var r = n(200651),
   F = n(228168),
   V = n(981631),
   Z = n(388032),
-  H = n(24981),
-  W = n(135986),
+  H = n(227832),
+  W = n(162509),
   Y = n(924482),
   K = n(774797);
 
@@ -84,13 +84,13 @@ function z(e) {
   }), {
     previewUrl: el,
     isLoading: ec
-  } = (0, b.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, v.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(V.S7T.CONNECT, en)), e_ = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, b.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, y.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(V.S7T.CONNECT, en)), e_ = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (ee) {
       var e;
       P.default.track(V.rMx.USER_VOICE_ACTIVITY_VIEWED, {
         activity_user_id: t.id,
-        discoverable: null === (e = o.discoverable) || void 0 === e || e,
+        discoverable: null == (e = o.discoverable) || e,
         surface: "user-profile-stream-activity-card",
         relationship_type: e_,
         treatment: $ && !1 === o.discoverable ? m.h9.HIDE : m.h9.SHOW
@@ -123,7 +123,7 @@ function z(e) {
             className: W.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, v.P9)(ed)
+            children: (0, y.P9)(ed)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             children: ef ? Z.NW.string(Z.t.uQZTBQ) : Z.NW.string(Z.t.pgUTZG)
@@ -143,7 +143,7 @@ function z(e) {
             className: W.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, v.P9)(ed)
+            children: (0, y.P9)(ed)
           }), (0, r.jsx)(l.gw7, {
             size: "xs",
             color: "currentColor",
@@ -157,7 +157,7 @@ function z(e) {
       let e = e => {
           e.stopPropagation(), null == ea || ea({
             action: "OPEN_VOICE_CHANNEL"
-          }), en.isGuildStageVoice() ? (0, I.Cq)(en) : (c.default.selectVoiceChannel(en.id), (0, y.Kh)(en.id)), null == q || q()
+          }), en.isGuildStageVoice() ? (0, I.Cq)(en) : (c.default.selectVoiceChannel(en.id), (0, v.Kh)(en.id)), null == q || q()
         },
         n = e => {
           e.stopPropagation(), ea({

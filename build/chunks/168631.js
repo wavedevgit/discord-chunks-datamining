@@ -6,7 +6,7 @@ n.d(t, {
   ZB: () => E,
   e4: () => b,
   fq: () => _,
-  lM: () => v,
+  lM: () => y,
   wu: () => g
 }), n(47120);
 var r = n(192379),
@@ -82,7 +82,7 @@ function b(e, t) {
   return null != n && null != t ? m(t, null == n ? void 0 : n.messageInputBorder) : null
 }
 
-function v(e, t) {
+function y(e, t) {
   let n = (0, u.Sl)(f.Ilk.WHITE_500).hex;
   return (0, l.wj)(e) ? (0, o._i)(n) : null != t ? E(t) : null
 }

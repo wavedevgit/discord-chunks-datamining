@@ -5,8 +5,8 @@ n.d(t, {
   Z: () => er
 });
 var E, b = n(979554),
-  v = n(442837),
-  y = n(570140),
+  y = n(442837),
+  v = n(570140),
   O = n(981631);
 
 function I(e, t, n) {
@@ -35,7 +35,7 @@ function C() {
 function R(e) {
   var t;
   if (S !== O.QZA.SUBMITTING) return !1;
-  S = O.QZA.OPEN, T = null !== (t = e.errors) && void 0 !== t ? t : {}
+  S = O.QZA.OPEN, T = null != (t = e.errors) ? t : {}
 }
 
 function P(e) {
@@ -197,7 +197,7 @@ function ee() {
 function et() {
   Q(), $(), A()
 }
-class en extends(E = v.ZP.Store) {
+class en extends(E = y.ZP.Store) {
   getFormState() {
     return S
   }
@@ -280,7 +280,7 @@ class en extends(E = v.ZP.Store) {
   }
 }
 I(en, "displayName", "UserSettingsAccountStore");
-let er = new en(y.Z, {
+let er = new en(v.Z, {
   USER_SETTINGS_ACCOUNT_INIT: N,
   USER_SETTINGS_MODAL_INIT: N,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: N,

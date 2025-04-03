@@ -55,7 +55,7 @@ let h = {},
 function g(e, t) {
   var n;
   h = p(f({}, h), {
-    [e]: f({}, null !== (n = h[e]) && void 0 !== n ? n : {}, t)
+    [e]: f({}, null != (n = h[e]) ? n : {}, t)
   })
 }
 
@@ -69,12 +69,12 @@ function b(e, t) {
   })
 }
 
-function v(e) {
+function y(e) {
   if (null == r.pathLabels[e]) return !1;
   r.pathLabels = f({}, r.pathLabels), delete r.pathLabels[e]
 }
 
-function y(e) {
+function v(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -121,7 +121,7 @@ function T(e) {
   } = e;
   if (!r.installationPaths.has(t) || r.defaultInstallationPath === t) return !1;
   let n = new Set(r.installationPaths);
-  n.delete(t), r.installationPaths = n, E(t), v(t)
+  n.delete(t), r.installationPaths = n, E(t), y(t)
 }
 
 function N(e) {
@@ -177,17 +177,17 @@ class C extends(i = o.ZP.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === m ? u.NW.string(u.t.VdDrjo) : null !== (n = null !== (t = s.Z.fileManager.basename(e)) && void 0 !== t ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) && void 0 !== n ? n : "?"
+    return e === m ? u.NW.string(u.t.VdDrjo) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) ? n : "?"
   }
 }
 d(C, "displayName", "InstallationManagerStore"), d(C, "persistKey", "InstallationManagerStore");
 let R = new C(a.Z, {
-  DISPATCH_APPLICATION_INSTALL: y,
+  DISPATCH_APPLICATION_INSTALL: v,
   DISPATCH_APPLICATION_UNINSTALL: I,
   DISPATCH_APPLICATION_CANCEL: O,
   INSTALLATION_LOCATION_ADD: S,
   INSTALLATION_LOCATION_REMOVE: T,
   INSTALLATION_LOCATION_UPDATE: N,
   INSTALLATION_LOCATION_FETCH_METADATA: A,
-  DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: y
+  DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: v
 })

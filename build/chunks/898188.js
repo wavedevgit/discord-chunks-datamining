@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(655359),
   E = n(931261),
   b = n(216701),
-  v = n(388032),
-  y = n(754888);
+  y = n(388032),
+  v = n(402765);
 let O = 60;
 
 function I(e) {
@@ -31,13 +31,13 @@ function I(e) {
   return null == n ? (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: v.NW.format(v.t.MkzlDA, {
-      channelName: v.NW.string(v.t.J90oLS)
+    children: y.NW.format(y.t.MkzlDA, {
+      channelName: y.NW.string(y.t.J90oLS)
     })
   }) : (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: v.NW.format(v.t.MkzlDA, {
+    children: y.NW.format(y.t.MkzlDA, {
       channelName: i
     })
   })
@@ -51,13 +51,13 @@ function S(e) {
     emojiName: o
   } = e, a = (0, l.e7)([_.Z], () => _.Z.getChannel(n));
   if (null == a) return null;
-  let s = null !== (t = (0, f.KS)(a)) && void 0 !== t ? t : c.VL1;
+  let s = null != (t = (0, f.KS)(a)) ? t : c.VL1;
   return (0, r.jsx)(b.Z, {
     emojiId: i,
     emojiName: o,
     size: b.R.MEDIUM,
     defaultComponent: (0, r.jsx)(s, {
-      className: y.channelIcon
+      className: v.channelIcon
     })
   })
 }
@@ -96,7 +96,7 @@ function T(e) {
     null != T && (0, h.gp)(f, T.channelId)
   }, [f, T]);
   return null == E || A && !R ? null : (0, r.jsx)("div", {
-    className: a()(y.container, p),
+    className: a()(v.container, p),
     children: R && null != T ? (0, r.jsx)(s.Z.div, {
       style: {
         marginBottom: D.interpolate({
@@ -105,34 +105,34 @@ function T(e) {
         })
       },
       children: (0, r.jsxs)(c.P3F, {
-        className: a()(y.banner, y.clickable),
+        className: a()(v.banner, v.clickable),
         onClick: L,
         children: [(0, r.jsx)(S, {
           channelId: T.channelId,
-          emojiId: null === (t = T.emoji) || void 0 === t ? void 0 : t.id,
-          emojiName: null == T ? void 0 : null === (n = T.emoji) || void 0 === n ? void 0 : n.name
+          emojiId: null == (t = T.emoji) ? void 0 : t.id,
+          emojiName: null == T || null == (n = T.emoji) ? void 0 : n.name
         }), (0, r.jsxs)("div", {
-          className: y.text,
+          className: v.text,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: v.NW.format(v.t["/beONz"], {
+            children: y.NW.format(y.t["/beONz"], {
               step: T.title
             })
           }), (0, r.jsx)(I, {
             action: T
           })]
         }), (0, r.jsx)("div", {
-          className: y.iconCircle,
+          className: v.iconCircle,
           children: (0, r.jsx)(c.ZSh, {
             size: "xs",
             color: C.hex(),
-            className: y.nextIcon
+            className: v.nextIcon
           })
         })]
       })
     }) : (0, r.jsxs)(s.Z.div, {
-      className: y.banner,
+      className: v.banner,
       style: {
         marginBottom: w.interpolate({
           inputRange: [0, 1],
@@ -141,10 +141,10 @@ function T(e) {
       },
       children: [(0, r.jsx)(S, {
         channelId: E.channelId,
-        emojiId: null === (o = E.emoji) || void 0 === o ? void 0 : o.id,
-        emojiName: null == E ? void 0 : null === (d = E.emoji) || void 0 === d ? void 0 : d.name
+        emojiId: null == (o = E.emoji) ? void 0 : o.id,
+        emojiName: null == E || null == (d = E.emoji) ? void 0 : d.name
       }), (0, r.jsxs)("div", {
-        className: y.text,
+        className: v.text,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -152,12 +152,12 @@ function T(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          children: v.NW.string(v.t["ElGg8/"])
+          children: y.NW.string(y.t["ElGg8/"])
         })]
       }), b ? (0, r.jsx)(c.owK, {
         size: "custom",
         color: "currentColor",
-        className: y.completed,
+        className: v.completed,
         secondaryColor: C.hex(),
         width: 20,
         height: 20
@@ -173,7 +173,7 @@ function N(e) {
     className: i
   } = e, o = (0, E.g)(t), a = (0, l.e7)([p.ZP], () => {
     var e;
-    return (null === (e = p.ZP.getSelfMember(t)) || void 0 === e ? void 0 : e.isPending) === !0
+    return (null == (e = p.ZP.getSelfMember(t)) ? void 0 : e.isPending) === !0
   });
   return (0, g.PE)(t) || a || !o ? null : (0, r.jsx)(T, {
     guildId: t,

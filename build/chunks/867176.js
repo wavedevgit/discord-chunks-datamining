@@ -21,9 +21,9 @@ var r = n(200651),
   g = n(768581),
   E = n(28660),
   b = n(462997),
-  v = n(356025);
+  y = n(738861);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -93,7 +93,7 @@ function C(e) {
     user: n,
     displayProfile: o,
     guildId: b,
-    pendingBanner: y,
+    pendingBanner: v,
     children: O,
     className: I,
     avatarSize: S,
@@ -109,12 +109,12 @@ function C(e) {
     status: G
   } = (0, E.Z)({
     displayProfile: o,
-    pendingBanner: y,
+    pendingBanner: v,
     size: C,
     canAnimate: D || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.pxk)(S)), V = (0, s._i)((0, d.ZP)(F, B, !1)), Z = (0, f.Z)(null !== (t = null != w ? w : null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : V).hex, H = A(S), W = H + T - P, Y = R - N - P;
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.pxk)(S)), V = (0, s._i)((0, d.ZP)(F, B, !1)), Z = (0, f.Z)(null != (t = null != w ? w : null == o ? void 0 : o.primaryColor) ? t : V).hex, H = A(S), W = H + T - P, Y = R - N - P;
   return (0, r.jsxs)("svg", {
-    className: v.mask,
+    className: y.mask,
     viewBox: "0 0 ".concat(C, " ").concat(R),
     style: {
       minWidth: C,
@@ -142,7 +142,7 @@ function C(e) {
       overflow: "visible",
       mask: "url(#".concat(L, ")"),
       children: [O, (0, r.jsxs)("div", {
-        className: a()(v.banner, I),
+        className: a()(y.banner, I),
         onMouseMove: () => M(!0),
         onMouseLeave: () => M(!1),
         style: {
@@ -152,7 +152,7 @@ function C(e) {
           backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : Z
         },
         children: [!j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
-          className: v.gifTag
+          className: y.gifTag
         }), O]
       })]
     })]

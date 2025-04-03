@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(146128),
   f = n(981631),
   _ = n(675654),
-  p = n(496547);
+  p = n(776280);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,8 +55,8 @@ function E(e, t) {
   }), e
 }
 let b = [],
-  v = -5,
-  y = -40,
+  y = -5,
+  v = -40,
   O = -40,
   I = -100,
   S = 11,
@@ -135,11 +135,11 @@ let k = i.forwardRef(function(e, t) {
         velocity: {
           type: "static-random",
           minValue: {
-            x: v,
+            x: y,
             y: O
           },
           maxValue: {
-            x: y,
+            x: v,
             y: I
           }
         },
@@ -171,10 +171,10 @@ function j(e) {
       let t = D(e);
       null != t && (g.current = t, m(!0), l(null))
     }
-  }, [h]), v = i.useMemo(() => ({
+  }, [h]), y = i.useMemo(() => ({
     triggerAnimation: b,
     untriggerAnimation: () => {}
-  }), [b]), y = i.useCallback(e => {
+  }), [b]), v = i.useCallback(e => {
     l(e)
   }, []), O = i.useCallback(e => {
     "exit" === e && m(!1)
@@ -191,7 +191,7 @@ function j(e) {
       null == i || i.fireConfetti(t, r)
     }
   }, [o]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
-    value: v,
+    value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
       return (0, r.jsx)(k, {
@@ -208,7 +208,7 @@ function j(e) {
           className: p.lottieAnimation,
           nextScene: c,
           sceneSegments: L,
-          onScenePlay: y,
+          onScenePlay: v,
           onSceneComplete: O,
           importData: x,
           pauseWhileUnfocused: !1

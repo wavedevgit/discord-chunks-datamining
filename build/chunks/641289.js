@@ -33,12 +33,11 @@ let a = e => r(/\b/, e, /\w$/.test(e) ? /\b/ : /\B/),
   g = r(h, m, "*"),
   E = o(/[a-zA-Z_]/, /[\u00A8\u00AA\u00AD\u00AF\u00B2-\u00B5\u00B7-\u00BA]/, /[\u00BC-\u00BE\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u00FF]/, /[\u0100-\u02FF\u0370-\u167F\u1681-\u180D\u180F-\u1DBF]/, /[\u1E00-\u1FFF]/, /[\u200B-\u200D\u202A-\u202E\u203F-\u2040\u2054\u2060-\u206F]/, /[\u2070-\u20CF\u2100-\u218F\u2460-\u24FF\u2776-\u2793]/, /[\u2C00-\u2DFF\u2E80-\u2FFF]/, /[\u3004-\u3007\u3021-\u302F\u3031-\u303F\u3040-\uD7FF]/, /[\uF900-\uFD3D\uFD40-\uFDCF\uFDF0-\uFE1F\uFE30-\uFE44]/, /[\uFE47-\uFEFE\uFF00-\uFFFD]/),
   b = o(E, /\d/, /[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]/),
-  v = r(E, b, "*"),
-  y = r(/[A-Z]/, b, "*"),
-  O = ["attached", "autoclosure", r(/convention\(/, o("swift", "block", "c"), /\)/), "discardableResult", "dynamicCallable", "dynamicMemberLookup", "escaping", "freestanding", "frozen", "GKInspectable", "IBAction", "IBDesignable", "IBInspectable", "IBOutlet", "IBSegueAction", "inlinable", "main", "nonobjc", "NSApplicationMain", "NSCopying", "NSManaged", r(/objc\(/, v, /\)/), "objc", "objcMembers", "propertyWrapper", "requires_stored_property_inits", "resultBuilder", "Sendable", "testable", "UIApplicationMain", "unchecked", "unknown", "usableFromInline", "warn_unqualified_access"],
+  y = r(E, b, "*"),
+  v = r(/[A-Z]/, b, "*"),
+  O = ["attached", "autoclosure", r(/convention\(/, o("swift", "block", "c"), /\)/), "discardableResult", "dynamicCallable", "dynamicMemberLookup", "escaping", "freestanding", "frozen", "GKInspectable", "IBAction", "IBDesignable", "IBInspectable", "IBOutlet", "IBSegueAction", "inlinable", "main", "nonobjc", "NSApplicationMain", "NSCopying", "NSManaged", r(/objc\(/, y, /\)/), "objc", "objcMembers", "propertyWrapper", "requires_stored_property_inits", "resultBuilder", "Sendable", "testable", "UIApplicationMain", "unchecked", "unknown", "usableFromInline", "warn_unqualified_access"],
   I = ["iOS", "iOSApplicationExtension", "macOS", "macOSApplicationExtension", "macCatalyst", "macCatalystApplicationExtension", "watchOS", "watchOSApplicationExtension", "tvOS", "tvOSApplicationExtension", "swift"];
-
-function S(e) {
+e.exports = function(e) {
   let t = {
       match: /\s+/,
       relevance: 0
@@ -166,7 +165,7 @@ function S(e) {
       variants: [Z("###"), Z("##"), Z("#"), V]
     },
     W = {
-      match: r(/`/, v, /`/)
+      match: r(/`/, y, /`/)
     },
     Y = [W, {
       className: "variable",
@@ -191,7 +190,7 @@ function S(e) {
       match: r(/@/, o(...O), n(o(/\(/, /\s+/)))
     }, {
       scope: "meta",
-      match: r(/@/, v)
+      match: r(/@/, y)
     }],
     z = {
       match: n(/\b[A-Z]/),
@@ -201,7 +200,7 @@ function S(e) {
         match: r(/(AV|CA|CF|CG|CI|CL|CM|CN|CT|MK|MP|MTK|MTL|NS|SCN|SK|UI|WK|XC)/, b, "+")
       }, {
         className: "type",
-        match: y,
+        match: v,
         relevance: 0
       }, {
         match: /[?!]+/,
@@ -210,7 +209,7 @@ function S(e) {
         match: /\.\.\./,
         relevance: 0
       }, {
-        match: r(/\s+&\s+/, n(y)),
+        match: r(/\s+&\s+/, n(v)),
         relevance: 0
       }]
     },
@@ -227,7 +226,7 @@ function S(e) {
       relevance: 0,
       keywords: A,
       contains: ["self", {
-        match: r(v, /\s*:/),
+        match: r(y, /\s*:/),
         keywords: "_|0",
         relevance: 0
       }, ...h, H, ...C, ...R, ...w, x, B, ...Y, ...K, z]
@@ -243,7 +242,7 @@ function S(e) {
       end: /\)/,
       keywords: A,
       contains: [{
-        begin: o(n(r(v, /\s*:/)), n(r(v, /\s+/, v, /\s*:/))),
+        begin: o(n(r(y, /\s*:/)), n(r(y, /\s+/, y, /\s*:/))),
         end: /:/,
         relevance: 0,
         contains: [{
@@ -251,14 +250,14 @@ function S(e) {
           match: /\b_\b/
         }, {
           className: "params",
-          match: v
+          match: y
         }]
       }, ...h, ...C, ...w, x, B, ...K, z, Q],
       endsParent: !0,
       illegal: /["']/
     },
     $ = {
-      match: [/(func|macro)/, /\s+/, o(W.match, v, g)],
+      match: [/(func|macro)/, /\s+/, o(W.match, y, g)],
       className: {
         1: "keyword",
         3: "title.function"
@@ -282,7 +281,7 @@ function S(e) {
       }
     },
     en = {
-      begin: [/precedencegroup/, /\s+/, y],
+      begin: [/precedencegroup/, /\s+/, v],
       className: {
         1: "keyword",
         3: "title"
@@ -307,7 +306,7 @@ function S(e) {
       }
     },
     eo = {
-      begin: [/(struct|protocol|class|extension|enum|actor)/, /\s+/, v, /\s*/],
+      begin: [/(struct|protocol|class|extension|enum|actor)/, /\s+/, y, /\s*/],
       beginScope: {
         1: "keyword",
         3: "title.class"
@@ -319,7 +318,7 @@ function S(e) {
         keywords: A,
         contains: [{
           scope: "title.class.inherited",
-          match: y
+          match: v
         }, ...C],
         relevance: 0
       }]
@@ -345,4 +344,3 @@ function S(e) {
     }, H, ...C, ...R, ...w, x, B, ...Y, ...K, z, Q]
   }
 }
-e.exports = S

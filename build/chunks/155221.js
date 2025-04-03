@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(554608),
   E = n(83949),
   b = n(137412),
-  v = n(893607),
-  y = n(314897),
+  y = n(893607),
+  v = n(314897),
   O = n(626135),
   I = n(361207),
   S = n(690032),
@@ -117,14 +117,14 @@ let x = (0, h.Un)({
     name: "ActivateDevice"
   }),
   Z = (0, h.Un)({
-    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("35535"), n.e("34981"), n.e("25292"), n.e("95477"), n.e("90508"), n.e("11212"), n.e("22878"), n.e("13351"), n.e("6536"), n.e("74891"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("86282"), n.e("18895"), n.e("30243"), n.e("37447"), n.e("53937"), n.e("76540"), n.e("6208"), n.e("80284"), n.e("20875"), n.e("85574"), n.e("83379"), n.e("17938"), n.e("9710"), n.e("93602"), n.e("24967"), n.e("62117"), n.e("49508"), n.e("22646"), n.e("60691"), n.e("64838"), n.e("3940"), n.e("25183"), n.e("48923"), n.e("76607"), n.e("69787"), n.e("88712"), n.e("30419"), n.e("18824"), n.e("42743"), n.e("10451"), n.e("49522"), n.e("70205"), n.e("49049"), n.e("7590"), n.e("91689"), n.e("3589"), n.e("93375"), n.e("64679"), n.e("78447"), n.e("98254"), n.e("22356"), n.e("37865"), n.e("35755"), n.e("94458"), n.e("21881"), n.e("94989"), n.e("75862"), n.e("37220"), n.e("82158"), n.e("84181"), n.e("91315"), n.e("86331"), n.e("38542"), n.e("24920"), n.e("77803"), n.e("73181"), n.e("86383"), n.e("84414"), n.e("29709"), n.e("85086"), n.e("97231"), n.e("95468"), n.e("1272")]).then(n.bind(n, 457094)),
+    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("35535"), n.e("34981"), n.e("25292"), n.e("95477"), n.e("90508"), n.e("11212"), n.e("22878"), n.e("13351"), n.e("35397"), n.e("74891"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("86282"), n.e("18895"), n.e("30243"), n.e("37447"), n.e("53937"), n.e("76540"), n.e("6208"), n.e("80284"), n.e("20875"), n.e("85574"), n.e("68631"), n.e("17938"), n.e("9710"), n.e("93602"), n.e("24967"), n.e("62117"), n.e("49508"), n.e("22646"), n.e("60691"), n.e("64838"), n.e("3940"), n.e("25183"), n.e("48923"), n.e("76607"), n.e("69606"), n.e("88712"), n.e("30419"), n.e("18824"), n.e("42743"), n.e("74669"), n.e("32"), n.e("70205"), n.e("49049"), n.e("7590"), n.e("91689"), n.e("3589"), n.e("93375"), n.e("64679"), n.e("78447"), n.e("98254"), n.e("22356"), n.e("15327"), n.e("35755"), n.e("94458"), n.e("21881"), n.e("94989"), n.e("75862"), n.e("37220"), n.e("82158"), n.e("84181"), n.e("91315"), n.e("89107"), n.e("38542"), n.e("24920"), n.e("77803"), n.e("73567"), n.e("86383"), n.e("84414"), n.e("29709"), n.e("70536"), n.e("88934"), n.e("95468"), n.e("1272")]).then(n.bind(n, 457094)),
     webpackId: 457094,
     name: "ViewsWithMainInterface",
     memo: !0,
     id: 457094
   }),
   H = (0, h.Un)({
-    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("84605"), n.e("53419"), n.e("63288"), n.e("75492"), n.e("25292"), n.e("95477"), n.e("90508"), n.e("11212"), n.e("22878"), n.e("13351"), n.e("6536"), n.e("74891"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("86282"), n.e("18895"), n.e("30243"), n.e("37447"), n.e("53937"), n.e("76540"), n.e("6208"), n.e("80284"), n.e("20875"), n.e("85574"), n.e("83379"), n.e("17938"), n.e("9710"), n.e("93602"), n.e("24967"), n.e("62117"), n.e("49508"), n.e("22646"), n.e("60691"), n.e("64838"), n.e("3940"), n.e("25183"), n.e("48923"), n.e("76607"), n.e("69787"), n.e("88712"), n.e("30419"), n.e("18824"), n.e("10451"), n.e("49522"), n.e("19948"), n.e("87185"), n.e("50150"), n.e("52030"), n.e("1337"), n.e("86383"), n.e("10778"), n.e("56782"), n.e("84956"), n.e("27978")]).then(n.bind(n, 822699)),
+    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("84605"), n.e("53419"), n.e("63288"), n.e("75492"), n.e("25292"), n.e("95477"), n.e("90508"), n.e("11212"), n.e("22878"), n.e("13351"), n.e("35397"), n.e("74891"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("86282"), n.e("18895"), n.e("30243"), n.e("37447"), n.e("53937"), n.e("76540"), n.e("6208"), n.e("80284"), n.e("20875"), n.e("85574"), n.e("68631"), n.e("17938"), n.e("9710"), n.e("93602"), n.e("24967"), n.e("62117"), n.e("49508"), n.e("22646"), n.e("60691"), n.e("64838"), n.e("3940"), n.e("25183"), n.e("48923"), n.e("76607"), n.e("69606"), n.e("88712"), n.e("30419"), n.e("18824"), n.e("74669"), n.e("32"), n.e("19948"), n.e("87185"), n.e("50150"), n.e("52030"), n.e("1337"), n.e("86383"), n.e("10778"), n.e("56782"), n.e("84956"), n.e("27978")]).then(n.bind(n, 822699)),
     webpackId: 822699,
     name: "ViewsWithAuth"
   }),
@@ -144,7 +144,7 @@ let x = (0, h.Un)({
     name: "MobileWebHandoffFallback"
   }),
   z = (0, h.Un)({
-    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("35535"), n.e("25292"), n.e("95477"), n.e("90508"), n.e("11212"), n.e("22878"), n.e("13351"), n.e("6536"), n.e("74891"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("86282"), n.e("18895"), n.e("30243"), n.e("37447"), n.e("53937"), n.e("76540"), n.e("6208"), n.e("80284"), n.e("20875"), n.e("85574"), n.e("83379"), n.e("17938"), n.e("9710"), n.e("93602"), n.e("24967"), n.e("62117"), n.e("49508"), n.e("22646"), n.e("60691"), n.e("64838"), n.e("3940"), n.e("25183"), n.e("48923"), n.e("76607"), n.e("69787"), n.e("88712"), n.e("30419"), n.e("18824"), n.e("42743"), n.e("10451"), n.e("49522"), n.e("70205"), n.e("49049"), n.e("7590"), n.e("3589"), n.e("93375"), n.e("64679"), n.e("78447"), n.e("98254"), n.e("22356"), n.e("37865"), n.e("35755"), n.e("94458"), n.e("94989"), n.e("75862"), n.e("37220"), n.e("82158"), n.e("84181"), n.e("91315"), n.e("86331"), n.e("38542"), n.e("24920"), n.e("73181"), n.e("84414"), n.e("85086"), n.e("45585"), n.e("63141")]).then(n.bind(n, 290161)),
+    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("35535"), n.e("25292"), n.e("95477"), n.e("90508"), n.e("11212"), n.e("22878"), n.e("13351"), n.e("35397"), n.e("74891"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("86282"), n.e("18895"), n.e("30243"), n.e("37447"), n.e("53937"), n.e("76540"), n.e("6208"), n.e("80284"), n.e("20875"), n.e("85574"), n.e("68631"), n.e("17938"), n.e("9710"), n.e("93602"), n.e("24967"), n.e("62117"), n.e("49508"), n.e("22646"), n.e("60691"), n.e("64838"), n.e("3940"), n.e("25183"), n.e("48923"), n.e("76607"), n.e("69606"), n.e("88712"), n.e("30419"), n.e("18824"), n.e("42743"), n.e("74669"), n.e("32"), n.e("70205"), n.e("49049"), n.e("7590"), n.e("3589"), n.e("93375"), n.e("64679"), n.e("78447"), n.e("98254"), n.e("22356"), n.e("15327"), n.e("35755"), n.e("94458"), n.e("94989"), n.e("75862"), n.e("37220"), n.e("82158"), n.e("84181"), n.e("91315"), n.e("89107"), n.e("38542"), n.e("24920"), n.e("73567"), n.e("84414"), n.e("70536"), n.e("45585"), n.e("63141")]).then(n.bind(n, 290161)),
     webpackId: 290161,
     name: "Overlay"
   }),
@@ -159,7 +159,7 @@ let x = (0, h.Un)({
     name: "QuestsLandingPage"
   }),
   X = (0, h.Un)({
-    createPromise: () => n.e("58131").then(n.bind(n, 531338)),
+    createPromise: () => n.e("89515").then(n.bind(n, 531338)),
     webpackId: 531338,
     name: "ConnectionsAuthorizeContinue"
   }),
@@ -187,8 +187,7 @@ class er extends i.Component {
     b.Z.terminate()
   }
   render() {
-    let e;
-    let {
+    let e, {
       isAuthenticated: t,
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
@@ -209,7 +208,7 @@ class er extends i.Component {
         path: en([A.Z5c.LOGIN, A.Z5c.REGISTER, A.Z5c.INVITE(":inviteCode"), A.Z5c.INVITE_LOGIN(":inviteCode"), A.Z5c.GIFT_CODE(":giftCode"), A.Z5c.GIFT_CODE_LOGIN(":giftCode"), A.Z5c.RESET], C.a),
         component: H
       }), (0, r.jsx)(p.Z, {
-        path: A.Z5c.INVITE_PROXY(v.Hw.channelId()),
+        path: A.Z5c.INVITE_PROXY(y.Hw.channelId()),
         component: k
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.INVITE(""),
@@ -232,7 +231,7 @@ class er extends i.Component {
         path: A.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         component: H
       }), t ? null : (0, r.jsx)(a.AW, {
-        path: A.Z5c.CHANNEL(v.Hw.guildId(), v.Hw.channelId({
+        path: A.Z5c.CHANNEL(y.Hw.guildId(), y.Hw.channelId({
           optional: !0
         }), ":messageId?"),
         component: H
@@ -240,7 +239,7 @@ class er extends i.Component {
         from: A.Z5c.INVITE(""),
         to: A.Z5c.LOGIN
       }), (0, r.jsx)(p.Z, {
-        path: A.Z5c.INVITE_PROXY(v.Hw.channelId()),
+        path: A.Z5c.INVITE_PROXY(y.Hw.channelId()),
         component: k
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.GIFT_CODE(""),
@@ -291,9 +290,9 @@ class er extends i.Component {
         path: A.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
         render: () => {
           var e, t, n;
-          let r = null === (e = O.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
-            i = (0, o.parse)((null !== (n = window.location.search) && void 0 !== n ? n : "").substr(1)),
-            a = null === (t = i.referring_location) || void 0 === t ? void 0 : t.toString();
+          let r = null == (e = O.default.getSuperProperties()) ? void 0 : e.os,
+            i = (0, o.parse)((null != (n = window.location.search) ? n : "").substr(1)),
+            a = null == (t = i.referring_location) ? void 0 : t.toString();
           return ("iOS" === r || "Android" === r) && O.default.track(A.rMx.DOWNLOAD_APP, {
             platform: r,
             ptb: !1,
@@ -307,8 +306,8 @@ class er extends i.Component {
         path: A.Z5c.OPEN_APP_FROM_EMAIL,
         render: () => {
           var e, t;
-          let n = null === (e = O.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
-            i = (0, S.o)(null !== (t = window.location.search) && void 0 !== t ? t : "");
+          let n = null == (e = O.default.getSuperProperties()) ? void 0 : e.os,
+            i = (0, S.o)(null != (t = window.location.search) ? t : "");
           if ("iOS" !== n && "Android" !== n) return (0, r.jsx)(a.l_, {
             to: null != i.desktop ? "".concat(i.desktop.pathname).concat(i.desktop.search) : A.Z5c.APP
           });
@@ -372,8 +371,8 @@ function eo(e) {
     skipsSettingDefaultPageTitle: t
   }))
 }
-let ea = d.ZP.connectStores([y.default, g.Z], () => ({
-  isAuthenticated: y.default.isAuthenticated(),
+let ea = d.ZP.connectStores([v.default, g.Z], () => ({
+  isAuthenticated: v.default.isAuthenticated(),
   migrationStatus: g.Z.getMigrationStatus()
 }), {
   forwardRef: !0

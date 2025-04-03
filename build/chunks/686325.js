@@ -8,7 +8,7 @@ n.d(t, {
 let r = 30;
 
 function i(e) {
-  return 6e4 * r + e.lastUsed - Date.now() <= 0
+  return 60 * r * 1e3 + e.lastUsed - Date.now() <= 0
 }
 
 function o(e) {

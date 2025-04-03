@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var i, o = n(392711),
   a = n.n(o),
@@ -36,10 +36,7 @@ function h(e) {
     webhooks: i,
     error: o
   } = e;
-  if (null == i) {
-    null != o ? (r = o, delete f[_(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n));
-    return
-  }
+  if (null == i) return void(null != o ? (r = o, delete f[_(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n)));
   r = null;
   let s = [];
   null != n && (s = a()(p(t)).values().filter(e => e.channel_id !== n).value());
@@ -85,7 +82,7 @@ class b extends(i = s.ZP.Store) {
   }
 }
 u(b, "displayName", "WebhooksStore");
-let v = new b(l.Z, {
+let y = new b(l.Z, {
   WEBHOOKS_UPDATE: h,
   WEBHOOKS_FETCHING: m,
   WEBHOOK_CREATE: g,

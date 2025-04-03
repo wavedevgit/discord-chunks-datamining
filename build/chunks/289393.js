@@ -42,8 +42,8 @@ let m = new s.h(e => [f(e.guild_id), ...e.subscription_listings_ids.map(_)], e =
   g = new s.h(e => [p(e.application_id), h(e.subscription_plans[0].id)], e => e.id),
   E = {},
   b = new Set,
-  v = {},
   y = {},
+  v = {},
   O = {},
   I = {},
   S = new Map;
@@ -54,7 +54,7 @@ function T(e) {
 
 function N(e) {
   var t;
-  for (let n of (m.set(e.id, e), S.set(e.guild_id, e.application_id), null !== (t = e.subscription_listings) && void 0 !== t ? t : [])) A(n)
+  for (let n of (m.set(e.id, e), S.set(e.guild_id, e.application_id), null != (t = e.subscription_listings) ? t : [])) A(n)
 }
 
 function A(e) {
@@ -62,14 +62,14 @@ function A(e) {
 }
 
 function C() {
-  m.clear(), g.clear(), E = {}, b.clear(), v = {}, y = {}, O = {}, I = {}, S.clear()
+  m.clear(), g.clear(), E = {}, b.clear(), y = {}, v = {}, O = {}, I = {}, S.clear()
 }
 
 function R(e) {
   let {
     settings: t
   } = e;
-  v[t.guild_id] = t
+  y[t.guild_id] = t
 }
 
 function P(e) {
@@ -88,7 +88,7 @@ function w(e) {
     subscriptionTrials: i
   } = e;
   for (let e of (E[t] = 2, n)) N(e);
-  for (let e of (v[t] = r, i)) y[e.id] = e
+  for (let e of (y[t] = r, i)) v[e.id] = e
 }
 
 function D(e) {
@@ -152,7 +152,7 @@ function B(e) {
   let {
     subscriptionTrial: t
   } = e;
-  y[t.id] = t
+  v[t.id] = t
 }
 
 function F(e) {
@@ -187,7 +187,7 @@ let W = [];
 class Y extends(r = a.ZP.Store) {
   getSubscriptionGroupListingsForGuildFetchState(e) {
     var t;
-    return null !== (t = E[e]) && void 0 !== t ? t : 0
+    return null != (t = E[e]) ? t : 0
   }
   getDidFetchListingForSubscriptionPlanId(e) {
     return b.has(e)
@@ -207,7 +207,7 @@ class Y extends(r = a.ZP.Store) {
   }
   getSubscriptionListingsForGuild(e) {
     var t;
-    let n = null === (t = this.getSubscriptionGroupListingsForGuild(e)[0]) || void 0 === t ? void 0 : t.application_id;
+    let n = null == (t = this.getSubscriptionGroupListingsForGuild(e)[0]) ? void 0 : t.application_id;
     return null != n ? g.values(p(n)) : W
   }
   getSubscriptionListingForPlan(e) {
@@ -215,17 +215,17 @@ class Y extends(r = a.ZP.Store) {
     return o()(t.length <= 1, "Found multiple listings for plan"), t[0]
   }
   getSubscriptionSettings(e) {
-    return v[e]
+    return y[e]
   }
   getSubscriptionTrial(e) {
-    return y[e]
+    return v[e]
   }
   getMonetizationRestrictions(e) {
     return O[e]
   }
   getMonetizationRestrictionsFetchState(e) {
     var t;
-    return null !== (t = I[e]) && void 0 !== t ? t : 0
+    return null != (t = I[e]) ? t : 0
   }
   getApplicationIdForGuild(e) {
     return S.get(e)

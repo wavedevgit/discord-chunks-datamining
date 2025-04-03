@@ -99,7 +99,7 @@ class c {
   }
   static parseColorFnString(e) {
     var t;
-    let [, n, r] = null !== (t = e.match(l)) && void 0 !== t ? t : [];
+    let [, n, r] = null != (t = e.match(l)) ? t : [];
     if (null == n || null == r) return;
     let a = r.split(/\s*[,/\s]\s*/).map(e => e.replace(",", "").trim()).filter(e => "" !== e).map((e, t) => i(n, e, t));
     if ("hsl" === n.substr(0, 3)) {

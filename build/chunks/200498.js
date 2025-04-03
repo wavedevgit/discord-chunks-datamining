@@ -25,8 +25,8 @@ function _(e, t, n) {
   return {
     id: e,
     type: t,
-    deny: null !== (i = null == a ? void 0 : a.deny) && void 0 !== i ? i : c.Hn,
-    allow: r.Od(null !== (o = null == a ? void 0 : a.allow) && void 0 !== o ? o : c.Hn, u.yP)
+    deny: null != (i = null == a ? void 0 : a.deny) ? i : c.Hn,
+    allow: r.Od(null != (o = null == a ? void 0 : a.allow) ? o : c.Hn, u.yP)
   }
 }
 
@@ -51,5 +51,5 @@ function m(e) {
 }
 
 function g(e) {
-  return !!(null != e && e.isGuildStageVoice() && o.Z.isLurking(e.guild_id) && d.Z.isPublic(e.id)) && l.Z.can(u.gl, e)
+  return null != e && !!e.isGuildStageVoice() && !!o.Z.isLurking(e.guild_id) && !!d.Z.isPublic(e.id) && l.Z.can(u.gl, e)
 }

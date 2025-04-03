@@ -58,7 +58,7 @@ function E(e, t) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,14 +66,14 @@ function b(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = {
+let v = {
   mass: 1,
   tension: 300,
   friction: 28,
@@ -101,7 +101,7 @@ function S(e) {
 function T(e) {
   var t, n, h, {
       contentDisplay: g,
-      fadeInOut: v = !1
+      fadeInOut: y = !1
     } = e,
     S = b(e, ["contentDisplay", "fadeInOut"]);
   let T = {},
@@ -118,7 +118,7 @@ function T(e) {
   });
   let A = S.activeSlide,
     C = (0, d.Z)(S.activeSlide),
-    R = null !== (t = S.directionOverride) && void 0 !== t ? t : O(null != C ? T[C] : null, T[A]),
+    R = null != (t = S.directionOverride) ? t : O(null != C ? T[C] : null, T[A]),
     {
       reducedMotion: P
     } = i.useContext(l.S),
@@ -139,10 +139,10 @@ function T(e) {
     ref: x,
     width: M = 0,
     height: k = 0
-  } = (0, u.Z)(A), j = m({}, y, S.springConfig, P.enabled ? {
+  } = (0, u.Z)(A), j = m({}, v, S.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
-    width: null !== (n = S.width) && void 0 !== n ? n : M,
+    width: null != (n = S.width) ? n : M,
     height: k,
     config: j
   }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(A, {
@@ -172,7 +172,7 @@ function T(e) {
   } : {
     transform: "scale(1.0, 1.0)"
   }, Y = s.tq ? {} : {
-    overflow: null !== (h = S.overflow) && void 0 !== h ? h : "hidden"
+    overflow: null != (h = S.overflow) ? h : "hidden"
   };
   return (0, r.jsx)(o.animated.div, {
     style: m({
@@ -197,7 +197,7 @@ function T(e) {
         }, W, P.enabled ? a : m({
           left: e.value.to(I("left", B)),
           right: e.value.to(I("right", B))
-        }, v && a)),
+        }, y && a)),
         children: T[t].children
       }, i)
     })

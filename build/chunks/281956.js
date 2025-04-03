@@ -22,7 +22,7 @@ function c(e) {
     _ = !1;
   if (null != f) {
     var p, h;
-    _ = null !== (h = null === (p = c.getMember(e, f.id)) || void 0 === p ? void 0 : p.isPending) && void 0 !== h && h
+    _ = null != (h = null == (p = c.getMember(e, f.id)) ? void 0 : p.isPending) && h
   }
   return (_ || d) && !!(0, l.Dc)(u)
 }

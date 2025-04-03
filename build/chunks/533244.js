@@ -65,7 +65,7 @@ function g(e) {
 
 function E(e, t) {
   var n;
-  let r = null !== (n = e.dmsDisabledUntil) && void 0 !== n ? n : e.invitesDisabledUntil;
+  let r = null != (n = e.dmsDisabledUntil) ? n : e.invitesDisabledUntil;
   if (null == r) return "";
   let i = null != e.dmsDisabledUntil,
     o = null != e.invitesDisabledUntil;

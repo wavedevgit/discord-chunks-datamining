@@ -127,11 +127,15 @@ var p = function() {
       }
     }), _(this, "handleTopDragEnter", function(e) {
       var t = l.dragEnterTargetIds;
-      l.dragEnterTargetIds = [], l.monitor.isDragging() && (l.altKeyPressed = e.altKey, t.length > 0 && l.actions.hover(t, {
-        clientOffset: (0, i.K5)(e)
-      }), t.some(function(e) {
-        return l.monitor.canDropOnTarget(e)
-      }) && (e.preventDefault(), e.dataTransfer && (e.dataTransfer.dropEffect = l.getCurrentDropEffect())))
+      if (l.dragEnterTargetIds = [], l.monitor.isDragging()) {
+        l.altKeyPressed = e.altKey, t.length > 0 && l.actions.hover(t, {
+          clientOffset: (0, i.K5)(e)
+        });
+        var n = t.some(function(e) {
+          return l.monitor.canDropOnTarget(e)
+        });
+        n && (e.preventDefault(), e.dataTransfer && (e.dataTransfer.dropEffect = l.getCurrentDropEffect()))
+      }
     }), _(this, "handleTopDragOverCapture", function() {
       l.dragOverTargetIds = []
     }), _(this, "handleTopDragOver", function(e) {
@@ -152,7 +156,7 @@ var p = function() {
     }), _(this, "handleTopDropCapture", function(e) {
       if (l.dropTargetIds = [], l.isDraggingNativeItem()) {
         var t;
-        e.preventDefault(), null === (t = l.currentNativeSource) || void 0 === t || t.loadDataTransfer(e.dataTransfer)
+        e.preventDefault(), null == (t = l.currentNativeSource) || t.loadDataTransfer(e.dataTransfer)
       } else(0, o.w)(e.dataTransfer) && e.preventDefault();
       l.enterLeaveCounter.reset()
     }), _(this, "handleTopDrop", function(e) {
@@ -164,7 +168,7 @@ var p = function() {
       }), l.isDraggingNativeItem() ? l.endDragNativeItem() : l.monitor.isDragging() && l.actions.endDrag()
     }), _(this, "handleSelectStart", function(e) {
       var t = e.target;
-      "function" == typeof t.dragDrop && "INPUT" !== t.tagName && "SELECT" !== t.tagName && "TEXTAREA" !== t.tagName && !t.isContentEditable && (e.preventDefault(), t.dragDrop())
+      "function" == typeof t.dragDrop && ("INPUT" === t.tagName || "SELECT" === t.tagName || "TEXTAREA" === t.tagName || t.isContentEditable || (e.preventDefault(), t.dragDrop()))
     }), this.options = new s.r(n, a), this.actions = t.getActions(), this.monitor = t.getMonitor(), this.registry = t.getRegistry(), this.enterLeaveCounter = new r.e(this.isNodeInDocument)
   }
   return f(e, [{
@@ -176,10 +180,10 @@ var p = function() {
         sourcePreviewNodeOptions: this.sourcePreviewNodeOptions.size,
         sourceNodeOptions: this.sourceNodeOptions.size,
         sourceNodes: this.sourceNodes.size,
-        dragStartSourceIds: (null === (e = this.dragStartSourceIds) || void 0 === e ? void 0 : e.length) || 0,
+        dragStartSourceIds: (null == (e = this.dragStartSourceIds) ? void 0 : e.length) || 0,
         dropTargetIds: this.dropTargetIds.length,
         dragEnterTargetIds: this.dragEnterTargetIds.length,
-        dragOverTargetIds: (null === (t = this.dragOverTargetIds) || void 0 === t ? void 0 : t.length) || 0
+        dragOverTargetIds: (null == (t = this.dragOverTargetIds) ? void 0 : t.length) || 0
       }
     }
   }, {
@@ -210,7 +214,7 @@ var p = function() {
     key: "teardown",
     value: function() {
       var e, t = this.rootElement;
-      void 0 !== t && (t.__isReactDndBackendSetUp = !1, this.removeEventListeners(this.rootElement), this.clearCurrentDragSourceNode(), this.asyncEndDragFrameId && (null === (e = this.window) || void 0 === e || e.cancelAnimationFrame(this.asyncEndDragFrameId)))
+      void 0 !== t && (t.__isReactDndBackendSetUp = !1, this.removeEventListeners(this.rootElement), this.clearCurrentDragSourceNode(), this.asyncEndDragFrameId && (null == (e = this.window) || e.cancelAnimationFrame(this.asyncEndDragFrameId)))
     }
   }, {
     key: "connectDragPreview",
@@ -310,7 +314,7 @@ var p = function() {
       var n = 1e3;
       this.mouseMoveTimeoutTimer = setTimeout(function() {
         var e;
-        return null === (e = t.rootElement) || void 0 === e ? void 0 : e.addEventListener("mousemove", t.endDragIfSourceWasRemovedFromDOM, !0)
+        return null == (e = t.rootElement) ? void 0 : e.addEventListener("mousemove", t.endDragIfSourceWasRemovedFromDOM, !0)
       }, n)
     }
   }, {
@@ -319,7 +323,7 @@ var p = function() {
       if (this.currentDragSourceNode) {
         if (this.currentDragSourceNode = null, this.rootElement) {
           var e;
-          null === (e = this.window) || void 0 === e || e.clearTimeout(this.mouseMoveTimeoutTimer || void 0), this.rootElement.removeEventListener("mousemove", this.endDragIfSourceWasRemovedFromDOM, !0)
+          null == (e = this.window) || e.clearTimeout(this.mouseMoveTimeoutTimer || void 0), this.rootElement.removeEventListener("mousemove", this.endDragIfSourceWasRemovedFromDOM, !0)
         }
         return this.mouseMoveTimeoutTimer = null, !0
       }
@@ -328,7 +332,7 @@ var p = function() {
   }, {
     key: "handleDragStart",
     value: function(e, t) {
-      !e.defaultPrevented && (this.dragStartSourceIds || (this.dragStartSourceIds = []), this.dragStartSourceIds.unshift(t))
+      e.defaultPrevented || (this.dragStartSourceIds || (this.dragStartSourceIds = []), this.dragStartSourceIds.unshift(t))
     }
   }, {
     key: "handleDragEnter",

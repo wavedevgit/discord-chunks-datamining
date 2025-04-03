@@ -20,11 +20,11 @@ var r = n(200651),
   g = n(251625),
   E = n(985375),
   b = n(132748),
-  v = n(353903),
-  y = n(215016),
+  y = n(353903),
+  v = n(215016),
   O = n(981631),
   I = n(388032),
-  S = n(816563);
+  S = n(49633);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,7 +64,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = (e, t) => (0, r.jsx)(v.G0, {
+let R = (e, t) => (0, r.jsx)(y.G0, {
   columns: e
 }, t);
 
@@ -76,7 +76,7 @@ function P(e) {
     name: I.NW.string(I.t.y3LQCA),
     icon: _.r7p,
     src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
-    format: null !== (t = null == n ? void 0 : n.format) && void 0 !== t ? t : u.EO.IMAGE
+    format: null != (t = null == n ? void 0 : n.format) ? t : u.EO.IMAGE
   }
 }
 class w extends i.PureComponent {
@@ -162,7 +162,7 @@ class w extends i.PureComponent {
       } = this.props, {
         focusedId: c
       } = this.state;
-      return (0, r.jsx)(y.iR, {
+      return (0, r.jsx)(v.iR, {
         format: o.format,
         color: d.Z.unsafe_rawColors.PRIMARY_800.css,
         src: o.src,
@@ -180,7 +180,7 @@ class w extends i.PureComponent {
         className: i,
         trendingCategories: o
       } = this.props;
-      return 0 === o.length ? (0, r.jsx)(v.u$, {
+      return 0 === o.length ? (0, r.jsx)(y.u$, {
         columns: e,
         width: t,
         renderColumn: R
@@ -213,7 +213,7 @@ class w extends i.PureComponent {
 function D(e) {
   let t = (0, c.e7)([m.Z], () => m.Z.getTrendingCategories()),
     n = (0, E.gG)(),
-    i = (0, y.PY)();
+    i = (0, v.PY)();
   return (0, r.jsx)(w, C(N({}, e, i), {
     trendingCategories: t,
     favorites: n

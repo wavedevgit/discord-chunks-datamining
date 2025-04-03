@@ -7,7 +7,7 @@ var r = n(200651);
 n(192379);
 var i = n(119837),
   o = n(802433),
-  a = n(44715);
+  a = n(422786);
 let s = e => {
   var t, n, s, l;
   let {
@@ -22,18 +22,18 @@ let s = e => {
     maxLoops: g,
     loopEnd: E,
     bannerAdjustment: b
-  } = e, v = !0;
-  if (d || (v = !1), f < c.start && (v = !1), !c.loop && f > c.duration + c.start && (v = !1), u === o.Q.PERSISTENT && !p && null != g && f >= E && h(!0), c.loop && void 0 !== c.loopDelay && c.loopDelay > 0) {
+  } = e, y = !0;
+  if (d || (y = !1), f < c.start && (y = !1), !c.loop && f > c.duration + c.start && (y = !1), u === o.Q.PERSISTENT && !p && null != g && f >= E && h(!0), c.loop && void 0 !== c.loopDelay && c.loopDelay > 0) {
     let e = c.duration + c.loopDelay,
       t = Math.floor((f - c.start) / e);
-    f - c.start - t * e > c.duration && (u === o.Q.INTERMITTENT && !p && null != g && t >= g && h(!0), v = !1)
+    f - c.start - t * e > c.duration && (u === o.Q.INTERMITTENT && !p && null != g && t >= g && h(!0), y = !1)
   }
-  return v ? (0, r.jsx)("img", {
+  return y ? (0, r.jsx)("img", {
     src: null != m ? "".concat(c.src, "?query=").concat(m) : c.src,
     className: a.effect,
     style: {
-      top: (null !== (s = null === (t = c.position) || void 0 === t ? void 0 : t.y) && void 0 !== s ? s : 0) - b,
-      left: null !== (l = null === (n = c.position) || void 0 === n ? void 0 : n.x) && void 0 !== l ? l : 0
+      top: (null != (s = null == (t = c.position) ? void 0 : t.y) ? s : 0) - b,
+      left: null != (l = null == (n = c.position) ? void 0 : n.x) ? l : 0
     },
     alt: _
   }) : (0, r.jsx)("img", {

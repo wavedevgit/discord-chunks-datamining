@@ -3,7 +3,7 @@
 n.r(t), n.d(t, {
   PlatformTypes: () => r,
   getNativePlatform: () => b,
-  getOS: () => v,
+  getOS: () => y,
   getPlatform: () => g,
   getPlatformName: () => E,
   isAndroid: () => h,
@@ -51,12 +51,12 @@ function f() {
 
 function _() {
   var e;
-  return (null === (e = navigator.userAgent) || void 0 === e ? void 0 : e.match(/android/i)) != null
+  return (null == (e = navigator.userAgent) ? void 0 : e.match(/android/i)) != null
 }
 
 function p() {
   var e;
-  return (null === (e = navigator.userAgent) || void 0 === e ? void 0 : e.match(/Macintosh/i)) != null
+  return (null == (e = navigator.userAgent) ? void 0 : e.match(/Macintosh/i)) != null
 }
 
 function h() {
@@ -85,7 +85,7 @@ function b() {
   }
 }
 
-function v() {
+function y() {
   let {
     userAgent: e
   } = window.navigator;

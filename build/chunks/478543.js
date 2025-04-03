@@ -19,17 +19,17 @@ var r = n(200651),
   m = n(145022),
   g = n(981631),
   E = n(388032),
-  b = n(64039);
+  b = n(176396);
 
-function v(e, t) {
+function y(e, t) {
   return null != t && null != t.discord_web && e.id === t.discord_web.id && e.type === t.discord_web.type
 }
 
-function y(e) {
+function v(e) {
   let {
     url: t
   } = e, [n, o] = i.useState(!1), s = i.useRef(void 0), l = i.useCallback(() => {
-    !n && ((0, _.JG)(t) && o(!0), s.current = setTimeout(() => o(!1), 2e3))
+    n || ((0, _.JG)(t) && o(!0), s.current = setTimeout(() => o(!1), 2e3))
   }, [t, n]);
   return i.useEffect(() => () => clearTimeout(s.current), []), _.wS ? (0, r.jsxs)(c.P3F, {
     className: a()(b.copyLink, n ? b.copied : null),
@@ -106,8 +106,8 @@ function S(e) {
   let {
     discord_web: g,
     discord_developers: b
-  } = o.targetBuildOverride, y = null != g ? g : b;
-  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), v(y, i) ? (n = E.NW.string(E.t.tX4xrq), t = s, r = c.zxk.Colors.RED) : (n = E.NW.string(E.t.nOunHB), t = a, r = c.zxk.Colors.GREEN);
+  } = o.targetBuildOverride, v = null != g ? g : b;
+  l()(null != v, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(v, i) ? (n = E.NW.string(E.t.tX4xrq), t = s, r = c.zxk.Colors.RED) : (n = E.NW.string(E.t.nOunHB), t = a, r = c.zxk.Colors.GREEN);
   let O = () => {
     d.Z.isConnected() ? u.Z.show({
       title: E.NW.string(E.t.tiu1l5),
@@ -119,7 +119,7 @@ function S(e) {
   };
   return I({
     subHead: E.NW.string(E.t.RCYGoq),
-    buildDetails: y.id,
+    buildDetails: v.id,
     buttonClick: O,
     buttonText: n,
     buttonColor: r,
@@ -155,7 +155,7 @@ function N(e, t, n) {
         color: "currentColor",
         className: b.infoIcon
       })
-    }), n ? null : (0, r.jsx)(y, {
+    }), n ? null : (0, r.jsx)(v, {
       url: t
     })]
   })
@@ -169,9 +169,9 @@ let A = e => {
     applyBuildOverride: s,
     clearBuildOverride: l
   } = e, [c, u] = i.useState(!1), d = i.useCallback(() => {
-    !c && (u(!0), s().catch(() => u(!1)))
+    c || (u(!0), s().catch(() => u(!1)))
   }, [s, c]), _ = i.useCallback(() => {
-    !c && (u(!0), l().catch(() => u(!1)))
+    c || (u(!0), l().catch(() => u(!1)))
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: b.wrapper,

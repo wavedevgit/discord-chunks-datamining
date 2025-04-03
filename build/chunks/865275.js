@@ -92,7 +92,7 @@ class p extends r.EventEmitter {
         o = Math.floor((e - this._loaded) / ((r - this._lastUpdate) / 1e3));
       if (null != n) {
         var a;
-        null === (a = this._file.items) || void 0 === a || a.forEach(e => {
+        null == (a = this._file.items) || a.forEach(e => {
           e.item.progress = n[e.id]
         })
       }
@@ -116,9 +116,9 @@ class p extends r.EventEmitter {
         reason: n,
         body: r
       } = e;
-      this.clearProcessingMessageInterval(), !this._aborted && (this._errored = !0, _.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
+      this.clearProcessingMessageInterval(), this._aborted || (this._errored = !0, _.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
     }), c(this, "_handleComplete", e => {
       this.clearProcessingMessageInterval(), _.log("_handleComplete for ".concat(this.id)), this.emit("complete", this._file, e), this.removeAllListeners()
-    }), this.id = o().uniqueId("Uploader"), this._url = e, this._method = t, this._raiseEndpointErrors = null !== (r = null == n ? void 0 : n.raiseEndpointErrors) && void 0 !== r && r
+    }), this.id = o().uniqueId("Uploader"), this._url = e, this._method = t, this._raiseEndpointErrors = null != (r = null == n ? void 0 : n.raiseEndpointErrors) && r
   }
 }

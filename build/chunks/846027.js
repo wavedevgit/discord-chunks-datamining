@@ -44,12 +44,12 @@ function b() {
   (0, i.GN)("mention3", void 0, void 0, void 0, h.w.VOICE)
 }
 
-function v() {
+function y() {
   let e = u.Z.getInputDevices()[u.Z.getInputDeviceId()];
   return null != e ? e.name : ""
 }
 
-function y(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     location: i,
     analyticsLocations: o
@@ -203,7 +203,7 @@ let O = {
           n = u.Z.getMediaEngine().getAudioLayer(),
           r = d.Z.getVoiceChannelId(),
           o = null != r ? c.Z.getChannel(r) : null,
-          a = v();
+          a = y();
         f.default.track(p.rMx.VOICE_ACTIVATION_MODE_CHANGED, {
           mode: e,
           location_stack: i,
@@ -217,7 +217,7 @@ let O = {
           n = u.Z.getMediaEngine().getAudioLayer(),
           r = d.Z.getVoiceChannelId(),
           o = null != r ? c.Z.getChannel(r) : null,
-          s = v();
+          s = y();
         f.default.track(p.rMx.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
           location_stack: i,
           voice_channel_type: null == o ? void 0 : o.type,
@@ -270,7 +270,7 @@ let O = {
         location: t,
         analyticsLocations: n
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-      !S() && ((null != t || null != n) && y(u.Z.getInputDevices(), u.Z.getInputDeviceId(), e, "Audio Input", {
+      S() || ((null != t || null != n) && v(u.Z.getInputDevices(), u.Z.getInputDeviceId(), e, "Audio Input", {
         location: t,
         analyticsLocations: n
       }), r.Z.dispatch({
@@ -283,7 +283,7 @@ let O = {
         location: t,
         analyticsLocations: n
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-      !S() && ((null != t || null != n) && y(u.Z.getOutputDevices(), u.Z.getOutputDeviceId(), e, "Audio Output", {
+      S() || ((null != t || null != n) && v(u.Z.getOutputDevices(), u.Z.getOutputDeviceId(), e, "Audio Output", {
         location: t,
         analyticsLocations: n
       }), r.Z.dispatch({
@@ -296,7 +296,7 @@ let O = {
         location: t,
         analyticsLocations: n
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-      !S() && ((null != t || null != n) && y(u.Z.getVideoDevices(), u.Z.getVideoDeviceId(), e, "Video", {
+      S() || ((null != t || null != n) && v(u.Z.getVideoDevices(), u.Z.getVideoDeviceId(), e, "Video", {
         location: t,
         analyticsLocations: n
       }), r.Z.dispatch({
@@ -378,7 +378,7 @@ let O = {
         let r = u.Z.getAttenuation(),
           i = u.Z.getAttenuateWhileSpeakingSelf(),
           o = u.Z.getAttenuateWhileSpeakingOthers();
-        return r !== e ? (0, a.Z)("global_attenuation_strength", e, r) : i !== t ? (0, a.Z)("global_attenuation_for_self_speak_enabled", t, i) : o !== n ? (0, a.Z)("global_attenuation_for_other_speak_enabled", n, o) : void 0
+        return r !== e ? (0, a.Z)("global_attenuation_strength", e, r) : i !== t ? (0, a.Z)("global_attenuation_for_self_speak_enabled", t, i) : o !== n && (0, a.Z)("global_attenuation_for_other_speak_enabled", n, o)
       })(), r.Z.dispatch({
         type: "AUDIO_SET_ATTENUATION",
         attenuation: e,

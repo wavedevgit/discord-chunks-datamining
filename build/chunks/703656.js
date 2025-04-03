@@ -6,14 +6,14 @@ n.d(t, {
   DB: () => C,
   DR: () => T,
   Wf: () => A,
-  XU: () => v,
+  XU: () => y,
   dL: () => O,
   eH: () => P,
   m1: () => N,
   op: () => R,
   s1: () => I,
   uL: () => b,
-  uv: () => y
+  uv: () => v
 }), n(653041), n(26686), n(757143), n(301563);
 var a = n(539528),
   s = n(710845),
@@ -69,7 +69,7 @@ function b(e, t) {
   }, t)), i = n, o = a
 }
 
-function v(e, t, n, r) {
+function y(e, t, n, r) {
   _.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
     guildId: e,
     channelId: t,
@@ -77,7 +77,7 @@ function v(e, t, n, r) {
   }))), b(u.Z5c.CHANNEL(e, t, n), r)
 }
 
-function y() {
+function v() {
   return null != i && c.H.has(i)
 }
 
@@ -100,7 +100,7 @@ function T() {
 function N(e) {
   if (null == e) {
     var t;
-    e = null !== (t = r.location.pathname) && void 0 !== t ? t : ""
+    e = null != (t = r.location.pathname) ? t : ""
   }
   return !e.startsWith(u.Z5c.HANDOFF)
 }
@@ -108,7 +108,7 @@ function N(e) {
 function A(e) {
   if (null == e) {
     var t;
-    e = null !== (t = r.location.pathname) && void 0 !== t ? t : ""
+    e = null != (t = r.location.pathname) ? t : ""
   }
   if (e.startsWith(u.Z5c.LOGIN)) return u.Usc.LOGIN;
   if (e.startsWith(u.Z5c.REGISTER)) return u.Usc.REGISTER;

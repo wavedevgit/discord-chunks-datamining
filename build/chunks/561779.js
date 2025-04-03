@@ -16,7 +16,7 @@ var r, i = n(200651),
   p = n(981729),
   h = n(607070),
   m = n(540059),
-  g = n(426527);
+  g = n(251574);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -116,7 +116,7 @@ function S(e) {
 }
 class T extends(r = o.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return e.initialValue !== t.initialValueProp ? y(b({}, S(e)), {
+    return e.initialValue !== t.initialValueProp ? v(b({}, S(e)), {
       active: t.active
     }) : null
   }
@@ -144,7 +144,7 @@ class T extends(r = o.PureComponent) {
     } = this.state, {
       disabled: m,
       stickToMarkers: E,
-      className: v,
+      className: y,
       children: O,
       barStyles: I,
       fillStyles: S,
@@ -190,7 +190,7 @@ class T extends(r = o.PureComponent) {
         }, t)
       }) : null,
       H = null != P ? P(t) : "".concat(F.toFixed(0), "%"),
-      W = null !== (e = null == D ? void 0 : D(t)) && void 0 !== e ? e : void 0;
+      W = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
     return (0, i.jsx)(N, {
       active: n,
       keyboardFocused: r && h.Z.keyboardModeEnabled,
@@ -200,8 +200,8 @@ class T extends(r = o.PureComponent) {
           focusTarget: this.containerRef,
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
-            className: s()(g.slider, v, {
-              [g.hasMarks]: (null !== (o = null == Z ? void 0 : Z.length) && void 0 !== o ? o : 0) > 0,
+            className: s()(g.slider, y, {
+              [g.hasMarks]: (null != (o = null == Z ? void 0 : Z.length) ? o : 0) > 0,
               [g.disabled]: m,
               [g.mini]: T
             }),
@@ -237,7 +237,7 @@ class T extends(r = o.PureComponent) {
               style: I,
               children: (0, i.jsx)("div", {
                 className: g.barFill,
-                style: y(b({}, S), {
+                style: v(b({}, S), {
                   width: V
                 })
               })
@@ -248,9 +248,9 @@ class T extends(r = o.PureComponent) {
                 hideOnClick: !1,
                 text: A || E ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
-                children: e => (0, i.jsx)("div", y(b({}, e), {
+                children: e => (0, i.jsx)("div", v(b({}, e), {
                   className: s()(g.grabber, x),
-                  style: y(b({}, M), {
+                  style: v(b({}, M), {
                     left: V
                   }),
                   onMouseDown: this.handleMouseDown,
@@ -265,7 +265,7 @@ class T extends(r = o.PureComponent) {
   }
   reset() {
     var e, t, n, r;
-    null === (t = this.containerRef.current) || void 0 === t || null === (e = t.ownerDocument) || void 0 === e || e.removeEventListener("mousemove", this.handleMouseMove, !0), null === (r = this.containerRef.current) || void 0 === r || null === (n = r.ownerDocument) || void 0 === n || n.removeEventListener("mouseup", this.handleMouseUp, !0)
+    null == (t = this.containerRef.current) || null == (e = t.ownerDocument) || e.removeEventListener("mousemove", this.handleMouseMove, !0), null == (r = this.containerRef.current) || null == (n = r.ownerDocument) || n.removeEventListener("mouseup", this.handleMouseUp, !0)
   }
   scaleValue(e) {
     return 100 * (e - this.state.min) / this.state.range
@@ -275,23 +275,23 @@ class T extends(r = o.PureComponent) {
   }
   focus() {
     var e;
-    null === (e = this.containerRef.current) || void 0 === e || e.focus()
+    null == (e = this.containerRef.current) || e.focus()
   }
   blur() {
     var e;
-    null === (e = this.containerRef.current) || void 0 === e || e.blur()
+    null == (e = this.containerRef.current) || e.blur()
   }
   moveStaggered(e) {
-    let t;
-    let {
-      boundingRect: n,
-      x: r = 0,
-      closestMarkerIndex: i,
-      markerPositions: o,
-      sortedMarkers: a
-    } = this.state, {
-      asValueChanges: s
-    } = this.props;
+    let t, {
+        boundingRect: n,
+        x: r = 0,
+        closestMarkerIndex: i,
+        markerPositions: o,
+        sortedMarkers: a
+      } = this.state,
+      {
+        asValueChanges: s
+      } = this.props;
     if (null == n) return;
     let {
       left: l,
@@ -327,18 +327,18 @@ class T extends(r = o.PureComponent) {
       } else l.value = c().clamp(n + e, r, i);
       this.setState(l), l.value !== this.state.value && (null == o || o(l.value), null == a || a(l.value))
     }), E(this, "handleContainerMouseDown", e => {
-      let t;
-      let {
-        disabled: n,
-        maxValue: r,
-        minValue: i,
-        asValueChanges: o,
-        onValueChange: a,
-        stickToMarkers: s
-      } = this.props, {
-        sortedMarkers: l,
-        markerPositions: c
-      } = this.state;
+      let t, {
+          disabled: n,
+          maxValue: r,
+          minValue: i,
+          asValueChanges: o,
+          onValueChange: a,
+          stickToMarkers: s
+        } = this.props,
+        {
+          sortedMarkers: l,
+          markerPositions: c
+        } = this.state;
       if (n) return;
       let {
         clientX: u,
@@ -402,7 +402,7 @@ class T extends(r = o.PureComponent) {
       let {
         current: r
       } = this.containerRef;
-      if (null == r || null === (t = r.ownerDocument) || void 0 === t || t.addEventListener("mousemove", this.handleMouseMove, !0), null == r || null === (n = r.ownerDocument) || void 0 === n || n.addEventListener("mouseup", this.handleMouseUp, !0), !(0, d.k)(r)) throw Error("[UIKit]Slider.handleMouseDown(): assert failed: domNode nodeType !== Element");
+      if (null == r || null == (t = r.ownerDocument) || t.addEventListener("mousemove", this.handleMouseMove, !0), null == r || null == (n = r.ownerDocument) || n.addEventListener("mouseup", this.handleMouseUp, !0), !(0, d.k)(r)) throw Error("[UIKit]Slider.handleMouseDown(): assert failed: domNode nodeType !== Element");
       this.setState({
         x: e.clientX,
         active: !0,
@@ -466,7 +466,7 @@ function N(e) {
   } = e, i = (0, m.Q3)("Slider"), [a, s] = o.useState(!1), l = (0, f.q)({
     "--grabber-size": n || t || a ? "20px" : "16px",
     "--bar-size": n || t || a ? "6px" : "4px",
-    config: y(b({}, u.config.stiff), {
+    config: v(b({}, u.config.stiff), {
       duration: 100
     })
   });

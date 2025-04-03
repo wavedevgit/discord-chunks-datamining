@@ -38,12 +38,12 @@
     }
   }
 
-  function v() {
+  function y() {
     u && (i && s(i), r && clearTimeout(r), u = !1)
   }
 
-  function y() {
-    125 != _ && (d = 7, _ = 125, f = 35, u && (v(), S())), E()
+  function v() {
+    125 != _ && (d = 7, _ = 125, f = 35, u && (y(), S())), E()
   }
 
   function O() {
@@ -55,7 +55,7 @@
   }
 
   function S() {
-    !u && (t = _ - (Date.now() - h), e = Date.now(), u = !0, f && t < f && (t = f), t > 9 ? r = setTimeout(I, t) : (t = 0, I()))
+    u || (t = _ - (Date.now() - h), e = Date.now(), u = !0, f && t < f && (t = f), t > 9 ? r = setTimeout(I, t) : (t = 0, I()))
   }
 
   function T() {
@@ -93,12 +93,12 @@
         })
       }
     }(o.requestIdleCallback)
-  } else o.requestIdleCallback = N, o.cancelIdleCallback = A, o.document && document.addEventListener && (o.addEventListener("scroll", y, !0), o.addEventListener("resize", y), document.addEventListener("focus", y, !0), document.addEventListener("mouseover", y, !0), ["click", "keypress", "touchstart", "mousedown"].forEach(function(e) {
-    document.addEventListener(e, y, {
+  } else o.requestIdleCallback = N, o.cancelIdleCallback = A, o.document && document.addEventListener && (o.addEventListener("scroll", v, !0), o.addEventListener("resize", v), document.addEventListener("focus", v, !0), document.addEventListener("mouseover", v, !0), ["click", "keypress", "touchstart", "mousedown"].forEach(function(e) {
+    document.addEventListener(e, v, {
       capture: !0,
       passive: !0
     })
-  }), o.MutationObserver && new MutationObserver(y).observe(document.documentElement, {
+  }), o.MutationObserver && new MutationObserver(v).observe(document.documentElement, {
     childList: !0,
     subtree: !0,
     attributes: !0

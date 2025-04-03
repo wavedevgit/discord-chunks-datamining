@@ -46,16 +46,16 @@ function E(e) {
     viewProfileItem: m,
     appContext: E
   } = e, b = i.useRef(null), {
-    trackUserProfileAction: v
+    trackUserProfileAction: y
   } = (0, _.KZ)(), {
-    analyticsLocations: y,
+    analyticsLocations: v,
     newestAnalyticsLocation: O
   } = (0, s.ZP)(a.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, d.Z)({
     user: t,
     guildId: n,
-    onAction: () => v({
+    onAction: () => y({
       action: "PRESS_INVITE_TO_SERVER",
-      analyticsLocations: y
+      analyticsLocations: v
     })
   }), S = (0, c.Z)({
     user: t,
@@ -63,34 +63,34 @@ function E(e) {
     location: O,
     color: "danger",
     appContext: E,
-    onBlock: () => v({
+    onBlock: () => y({
       action: "BLOCK",
-      analyticsLocations: y
+      analyticsLocations: v
     }),
-    onIgnore: () => v({
+    onIgnore: () => y({
       action: "IGNORE",
-      analyticsLocations: y
+      analyticsLocations: v
     }),
-    onUnblock: () => v({
+    onUnblock: () => y({
       action: "UNBLOCK",
-      analyticsLocations: y
+      analyticsLocations: v
     })
   }), T = (0, u.Z)({
     user: t,
     guildId: n,
     location: O,
     appContext: E,
-    onBlock: () => v({
+    onBlock: () => y({
       action: "BLOCK",
-      analyticsLocations: y
+      analyticsLocations: v
     }),
-    onIgnore: () => v({
+    onIgnore: () => y({
       action: "IGNORE",
-      analyticsLocations: y
+      analyticsLocations: v
     }),
-    onUnignore: () => v({
+    onUnignore: () => y({
       action: "UNIGNORE",
-      analyticsLocations: y
+      analyticsLocations: v
     })
   }), N = (0, f.Z)({
     user: t,
@@ -98,9 +98,9 @@ function E(e) {
     location: O,
     appContext: E,
     color: "danger",
-    onAction: () => v({
+    onAction: () => y({
       action: "REPORT",
-      analyticsLocations: y
+      analyticsLocations: v
     })
   }), A = [
     [m, I],
@@ -110,22 +110,22 @@ function E(e) {
       location: O,
       appContext: E,
       color: "danger",
-      onAction: () => v({
+      onAction: () => y({
         action: "REPORT",
-        analyticsLocations: y
+        analyticsLocations: v
       })
     })],
     [(0, l.Z)({
       id: t.id,
       label: h.NW.string(h.t["/AXYnJ"]),
-      onSuccess: () => v({
+      onSuccess: () => y({
         action: "COPY_USER_ID",
-        analyticsLocations: y
+        analyticsLocations: v
       })
     })]
   ];
   return A.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
-    value: y,
+    value: v,
     children: (0, r.jsx)(o.yRy, {
       targetElementRef: b,
       renderPopout: e => {

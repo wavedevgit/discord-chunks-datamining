@@ -7,7 +7,7 @@ var r = n(200651),
   i = n(192379),
   o = n(921349),
   a = n(563040),
-  s = n(479855);
+  s = n(963075);
 
 function l(e) {
   let {
@@ -26,7 +26,7 @@ function l(e) {
       let e = (0, a.tj)(t, f);
       if (null != e) {
         var n;
-        p(e), null === (n = u.current) || void 0 === n || n.close()
+        p(e), null == (n = u.current) || n.close()
       }
     }
   }

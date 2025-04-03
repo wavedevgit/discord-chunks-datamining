@@ -10,7 +10,7 @@ var i = n(481060),
   o = n(600164),
   a = n(612853),
   s = n(388032),
-  l = n(365932);
+  l = n(240150);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,8 +66,8 @@ let p = e => {
     primarySubmitting: g,
     onPrimary: E,
     secondaryText: b,
-    onSecondary: v
-  } = e, y = () => {
+    onSecondary: y
+  } = e, v = () => {
     if (null == d || null == p) return null;
     let e = 2 === d ? i.gtL : i.zxk,
       t = {
@@ -95,7 +95,7 @@ let p = e => {
   }, O = () => null == b ? null : (0, r.jsx)(i.zxk, {
     color: i.zxk.Colors.PRIMARY,
     look: i.zxk.Looks.LINK,
-    onClick: v,
+    onClick: y,
     children: b
   }), I = () => null == t ? null : (0, r.jsx)(i.zxk, {
     className: l.back,
@@ -107,7 +107,7 @@ let p = e => {
   return (0, r.jsxs)(i.mzw, {
     justify: o.Z.Justify.BETWEEN,
     align: o.Z.Align.CENTER,
-    children: [y(), O(), (0, r.jsx)(a.Z, {}), I()]
+    children: [v(), O(), (0, r.jsx)(a.Z, {}), I()]
   })
 };
 p.CTAType = _;

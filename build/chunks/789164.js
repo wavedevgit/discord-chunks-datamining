@@ -8,7 +8,7 @@ var r = n(200651),
   o = n(481060),
   a = n(15127),
   s = n(512983),
-  l = n(263253);
+  l = n(377747);
 
 function c(e, t) {
   if (null == e) return {};
@@ -40,7 +40,7 @@ let d = i.forwardRef(function(e, t) {
     } = e,
     E = c(e, ["children", "className", "titleClassName", "title", "icon", "disabled", "htmlFor", "tag"]);
   let b = i.useId(),
-    v = null !== (n = E.titleId) && void 0 !== n ? n : b;
+    y = null != (n = E.titleId) ? n : b;
   return (0, r.jsx)("div", {
     ref: t,
     className: d,
@@ -49,7 +49,7 @@ let d = i.forwardRef(function(e, t) {
         className: l.sectionTitle,
         children: [p, null != _ ? (0, r.jsx)(s.v, {
           tag: g,
-          id: v,
+          id: y,
           htmlFor: m,
           disabled: h,
           className: f,
@@ -59,7 +59,7 @@ let d = i.forwardRef(function(e, t) {
       children: (0, r.jsx)("div", {
         className: l.children,
         children: (0, r.jsx)(a.ol, {
-          titleId: v,
+          titleId: y,
           children: u
         })
       })

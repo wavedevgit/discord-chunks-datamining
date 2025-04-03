@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y,
+  Z: () => v,
   s: () => l
 });
 var r = n(536895);
@@ -133,7 +133,7 @@ function b(e, t) {
   })
 }
 
-function v(e, t) {
+function y(e, t) {
   let n = e.columnCounts.length - 1;
   return s(o({}, e), {
     focusedX: e.columnCounts[n] - 1,
@@ -141,7 +141,7 @@ function v(e, t) {
   })
 }
 
-function y(e, t) {
+function v(e, t) {
   switch (t.type) {
     case r.Us.NAVIGATE_UP:
       return _(e, t);
@@ -158,7 +158,7 @@ function y(e, t) {
     case r.Us.NAVIGATE_START:
       return b(e, t);
     case r.Us.NAVIGATE_END:
-      return v(e, t);
+      return y(e, t);
     case "UPDATE_COLUMN_COUNTS":
       return d(e, t);
     case "SET_FOCUSED_POSITION":

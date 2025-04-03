@@ -20,8 +20,8 @@ var r = n(664751),
   g = n(283595),
   E = n(417363),
   b = n(626135),
-  v = n(630388),
-  y = n(877481),
+  y = n(630388),
+  v = n(877481),
   O = n(358085),
   I = n(573261),
   S = n(278323),
@@ -60,7 +60,7 @@ function D(e) {
     joinSessionId: f,
     secret: n,
     activity: _
-  }).then(e => 0 === e ? null : y.Z.waitConnected(t).then(() => Promise.race([y.Z.waitSubscribed(t, A.zMe.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : v.Z.waitConnected(t).then(() => Promise.race([v.Z.waitSubscribed(t, A.zMe.ACTIVITY_JOIN)]))).then(() => {
     l.Z.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -101,7 +101,7 @@ function x(e) {
     if ("invalid_request" === n.error) return null;
     if (null != n.error) {
       var i;
-      throw Error("OAuth2 Error: ".concat(n.error, ": ").concat(null !== (i = n.error_description) && void 0 !== i ? i : "unknown error"))
+      throw Error("OAuth2 Error: ".concat(n.error, ": ").concat(null != (i = n.error_description) ? i : "unknown error"))
     }
     return n.access_token
   }, e => {
@@ -122,7 +122,7 @@ async function M(e) {
     joinUserId: _,
     joinSessionId: m,
     secret: b,
-    activity: v
+    activity: y
   } = e;
   if (i) return await (0, c.Z)({
     applicationId: t,
@@ -135,7 +135,7 @@ async function M(e) {
     joinSessionId: m,
     secret: b,
     instanceId: void 0,
-    isContextlessActivity: (0, u.Z)(v, A.xjy.EMBEDDED) && (0, u.Z)(v, A.xjy.CONTEXTLESS)
+    isContextlessActivity: (0, u.Z)(y, A.xjy.EMBEDDED) && (0, u.Z)(y, A.xjy.CONTEXTLESS)
   }) ? 0 : Promise.resolve();
   if (h.Z.isConnected(t)) return Promise.resolve();
   let O = null;
@@ -149,10 +149,10 @@ async function M(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = g.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    O = x(t).then(t => y.Z.launchDispatchApplication(e, t, p.default.locale, i.getBranchName(), r))
+    O = x(t).then(t => v.Z.launchDispatchApplication(e, t, p.default.locale, i.getBranchName(), r))
   } else {
     let e = d.Z.getApplication(t);
-    O = null != e ? y.Z.launch(e) : y.Z.launchGame(t)
+    O = null != e ? v.Z.launch(e) : v.Z.launchGame(t)
   }
   let I = Error("game not found");
   return null != O ? (l.Z.dispatch({
@@ -195,10 +195,10 @@ let k = {
       let e = g.Z.getActiveLibraryApplication(r.id);
       if (null != e) {
         let r = e.getFlags(),
-          i = v.yE(r, A.eHb.OVERLAY_DISABLED);
-        t && i !== t && (r = v.x9(r, A.eHb.OVERLAY_DISABLED));
-        let o = v.yE(r, A.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== o && (r = v.x9(r, A.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
+          i = y.yE(r, A.eHb.OVERLAY_DISABLED);
+        t && i !== t && (r = y.x9(r, A.eHb.OVERLAY_DISABLED));
+        let o = y.yE(r, A.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== o && (r = y.x9(r, A.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
         return
       }
     }
@@ -223,25 +223,12 @@ let k = {
     })
   },
   identifyGame: (e, t) => (0, f.Z)().then(t => new Promise((n, r) => {
-    if (null == t) {
-      r(Error("Game utils module not loaded"));
-      return
-    }
-    t.identifyGame(e, (t, i) => {
-      if (0 !== t) {
-        r(Error("Error ".concat(t, " when fetching info on ").concat(e)));
-        return
-      }
-      if (null == i.icon || "" === i.icon || null == i.name || "" === i.name) {
-        r(Error("Did not find data on ".concat(e)));
-        return
-      }
-      l.Z.dispatch({
-        type: "GAME_ICON_UPDATE",
-        gameName: i.name,
-        icon: "data:image/png;base64,".concat(i.icon)
-      }), n(i)
-    })
+    if (null == t) return void r(Error("Game utils module not loaded"));
+    t.identifyGame(e, (t, i) => 0 !== t ? void r(Error("Error ".concat(t, " when fetching info on ").concat(e))) : null == i.icon || "" === i.icon || null == i.name || "" === i.name ? void r(Error("Did not find data on ".concat(e))) : void(l.Z.dispatch({
+      type: "GAME_ICON_UPDATE",
+      gameName: i.name,
+      icon: "data:image/png;base64,".concat(i.icon)
+    }), n(i)))
   })),
   getDetectableGamesSupplemental(e) {
     let {
@@ -296,7 +283,7 @@ let k = {
             var n;
             return (0, s.iG)({
               sent_etag: e,
-              received_etag: null == t ? void 0 : null === (n = t.headers) || void 0 === n ? void 0 : n.etag
+              received_etag: null == t || null == (n = t.headers) ? void 0 : n.etag
             })
           }
         },

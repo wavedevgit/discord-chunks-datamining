@@ -7,7 +7,7 @@ var r, i = n(200651),
   o = n(192379),
   a = n(120356),
   s = n.n(a),
-  l = n(627468);
+  l = n(640103);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,24 +36,28 @@ class d extends(r = o.PureComponent) {
       streamId: n
     } = e;
     if (t.aReady) {
-      if (n !== t.aStreamId) return null == n ? {
-        bStreamId: n,
-        bReady: !0,
-        aStreamId: null,
-        aReady: !1
-      } : {
-        bStreamId: n,
+      if (n !== t.aStreamId)
+        if (null == n) return {
+          bStreamId: n,
+          bReady: !0,
+          aStreamId: null,
+          aReady: !1
+        };
+        else return {
+          bStreamId: n,
+          bReady: !1
+        }
+    } else if (n !== t.bStreamId)
+      if (null == n) return {
+        aStreamId: n,
+        aReady: !0,
+        bStreamId: null,
         bReady: !1
-      }
-    } else if (n !== t.bStreamId) return null == n ? {
-      aStreamId: n,
-      aReady: !0,
-      bStreamId: null,
-      bReady: !1
-    } : {
-      aStreamId: n,
-      aReady: !1
-    };
+      };
+      else return {
+        aStreamId: n,
+        aReady: !1
+      };
     return null
   }
   renderVideo(e, t) {

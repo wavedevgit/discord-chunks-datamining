@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -17,10 +17,10 @@ var r = n(200651),
   p = n(378233),
   h = n(419922),
   m = n(388032),
-  g = n(454853);
+  g = n(271536);
 let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_PRIMARY_DIMENSIONS),
   b = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS),
-  v = e => {
+  y = e => {
     let t = null,
       n = null;
     if (!(0, p.jl)(e) && !(0, p.J8)(e) || (0, p.J8)(e)) {
@@ -45,7 +45,7 @@ let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BA
       graphic: n
     }
   },
-  y = i.memo(function(e) {
+  v = i.memo(function(e) {
     let {
       stickersGrid: t
     } = e, n = l.ZN.useStore(e => e.inspectedExpressionPosition), o = i.useMemo(() => {
@@ -53,7 +53,7 @@ let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BA
       let {
         rowIndex: r,
         columnIndex: i
-      } = n, o = null === (e = t[r]) || void 0 === e ? void 0 : e[i];
+      } = n, o = null == (e = t[r]) ? void 0 : e[i];
       return (null == o ? void 0 : o.type) === _.al.CREATE_STICKER ? {
         guild_id: o.guild_id,
         name: o.name
@@ -63,7 +63,7 @@ let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BA
     let {
       graphic: s,
       title: u
-    } = v(o), d = (0, p.jl)(o) || (0, p.J8)(o) ? (0, r.jsx)(h.Z, {
+    } = y(o), d = (0, p.jl)(o) || (0, p.J8)(o) ? (0, r.jsx)(h.Z, {
       isInteracting: !0,
       size: E,
       sticker: o,

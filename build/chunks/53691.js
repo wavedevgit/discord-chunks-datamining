@@ -12,7 +12,7 @@ var i = n(120356),
   l = n(436774),
   c = n(197115),
   u = n(474936),
-  d = n(697357);
+  d = n(888358);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,8 +48,8 @@ function p(e) {
     onSubscribeModalClose: g,
     showShadow: E = !0,
     position: b = "floating",
-    buttonSize: v = "md",
-    useLockIcon: y = !1
+    buttonSize: y = "md",
+    useLockIcon: v = !1
   } = e, O = (0, s.q_F)({
     transform: t ? "translateY(0%)" : "translateY(120%)",
     opacity: +!!t,
@@ -65,7 +65,7 @@ function p(e) {
       [d.upsellContainerFloating]: "floating" === b,
       [d.upsellContainerInline]: "inline" === b
     }, h),
-    children: [y ? (0, r.jsx)(s.d$P, {
+    children: [v ? (0, r.jsx)(s.d$P, {
       size: "custom",
       height: 20,
       width: 20,
@@ -80,7 +80,7 @@ function p(e) {
       className: d.upsellText,
       children: n
     }), "string" == typeof f ? (0, r.jsx)(c.Z, {
-      size: v,
+      size: y,
       className: d.upsellButton,
       shinyButtonClassName: null != m ? m : d.upsellButton,
       subscriptionTier: u.Si.TIER_2,

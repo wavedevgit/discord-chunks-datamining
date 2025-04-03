@@ -66,7 +66,7 @@ function _(e, t) {
         return this.props.children
       }, n
     }(r.Component);
-  _.childContextTypes = ((n = {})[l] = a().object.isRequired, n);
+  (n = {})[l] = a().object.isRequired, _.childContextTypes = n;
   var p = function(t) {
     function n() {
       var e;
@@ -94,7 +94,7 @@ function _(e, t) {
       return f(this.props.children)(this.state.value)
     }, n
   }(r.Component);
-  return p.contextTypes = ((o = {})[l] = a().object, o), {
+  return (o = {})[l] = a().object, p.contextTypes = o, {
     Provider: _,
     Consumer: p
   }

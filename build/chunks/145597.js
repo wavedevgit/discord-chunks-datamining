@@ -13,7 +13,7 @@ n.r(t), n.d(t, {
   log: () => g,
   setOutOfProcessSupport: () => b,
   setPID: () => h,
-  supportsOutOfProcess: () => v,
+  supportsOutOfProcess: () => y,
   validResolution: () => E
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
 var i = n(490029),
@@ -36,7 +36,7 @@ let s = 2,
 function p() {
   var e;
   if (void 0 !== r && r !== f) return r;
-  let t = parseInt(null !== (e = new URLSearchParams(window.location.search).get("pid")) && void 0 !== e ? e : "", 10);
+  let t = parseInt(null != (e = new URLSearchParams(window.location.search).get("pid")) ? e : "", 10);
   return isNaN(t) && (t = f), r = t
 }
 
@@ -65,6 +65,6 @@ function b(e) {
   _ = e
 }
 
-function v() {
+function y() {
   return _
 }

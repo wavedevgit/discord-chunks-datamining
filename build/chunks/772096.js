@@ -71,8 +71,8 @@ function E(e) {
   return g.set(t, o), o
 }
 let b = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
-  v = [d.b.TEXT, d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP],
-  y = [...v, d.b.EMOJI, d.b.CUSTOM_EMOJI],
+  y = [d.b.TEXT, d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP],
+  v = [...y, d.b.EMOJI, d.b.CUSTOM_EMOJI],
   O = [d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT],
   I = [d.b.TEXT],
   S = [d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP, d.b.EMOJI, d.b.CUSTOM_EMOJI, d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT];
@@ -132,7 +132,7 @@ function A(e) {
   try {
     var t;
     let n = new URL(e),
-      r = null !== (t = n.protocol) && void 0 !== t ? t : "";
+      r = null != (t = n.protocol) ? t : "";
     if (!b.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
     if (("http:" === r || "https:" === r) && (null == n.hostname || 0 === n.hostname.length)) throw Error("no hostname");
     let i = (0, f.MO)(n);
@@ -162,7 +162,7 @@ let C = m(p({}, l().defaultRules.link), {
         allowEscape: !1,
         parseInlineCodeChildContent: !0
       }),
-      x = n.allowEmojiLinks ? y : v,
+      x = n.allowEmojiLinks ? v : y,
       M = [...x, ...O],
       k = [...I, ...S],
       j = T(t(b, L), M, [d.b.EMOJI]),

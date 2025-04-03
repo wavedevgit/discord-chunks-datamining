@@ -76,22 +76,19 @@ function b() {
   }))
 }
 
-function v(e) {
+function y(e) {
   s.default.track(u.rMx.LEAGUE_OF_LEGENDS_MATCH_DATA_NOT_FETCHING, {
     reason: e
   })
 }
-class y extends i.Z {
+class v extends i.Z {
   handleRunningGameChange(e) {
     let {
       removed: t
     } = e;
     if (b() && m(t)) {
       let e = g();
-      if ("string" == typeof e) {
-        v(e);
-        return
-      }
+      if ("string" == typeof e) return void y(e);
       E({
         riotConnectionId: e.riotConnection.id,
         lolConnectionId: e.lolConnection.id
@@ -114,4 +111,4 @@ class y extends i.Z {
     }), d(this, "stores", new Map().set(a.Z, this.handleDependantStoreChanges).set(o.Z, this.handleDependantStoreChanges))
   }
 }
-let O = new y
+let O = new v

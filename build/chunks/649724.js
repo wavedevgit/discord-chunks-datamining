@@ -12,7 +12,7 @@ var r, i = n(200651),
   c = n(600164),
   u = n(153066),
   d = n(388032),
-  f = n(880078);
+  f = n(159485);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,7 +30,7 @@ let p = {
 class h extends(r = o.PureComponent) {
   select() {
     var e;
-    null === (e = this.inputRef.current) || void 0 === e || e.select()
+    null == (e = this.inputRef.current) || e.select()
   }
   renderInput(e) {
     var t;
@@ -41,7 +41,7 @@ class h extends(r = o.PureComponent) {
       spellCheck: a,
       inputClassName: l,
       placeholder: c
-    } = this.props, d = null === (t = this.context) || void 0 === t ? void 0 : t.titleId;
+    } = this.props, d = null == (t = this.context) ? void 0 : t.titleId;
     return (0, i.jsx)("input", {
       className: s()((0, u.l)(f, "input", r), l, {
         [f.inputHidden]: e
@@ -58,16 +58,16 @@ class h extends(r = o.PureComponent) {
     })
   }
   render() {
-    let e;
-    let {
-      text: t = d.NW.string(d.t.OpuAlJ),
-      mode: n,
-      hideMessage: r,
-      className: o,
-      buttonLook: a,
-      supportsCopy: _,
-      disabled: h
-    } = this.props, m = null != r;
+    let e, {
+        text: t = d.NW.string(d.t.OpuAlJ),
+        mode: n,
+        hideMessage: r,
+        className: o,
+        buttonLook: a,
+        supportsCopy: _,
+        disabled: h
+      } = this.props,
+      m = null != r;
     switch (n) {
       case p.SUCCESS:
         e = l.Ttl.GREEN;

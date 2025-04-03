@@ -7,9 +7,9 @@ n.d(t, {
   L5: () => m,
   WD: () => I,
   g0: () => E,
-  kJ: () => y,
+  kJ: () => v,
   l6: () => O,
-  pY: () => v,
+  pY: () => y,
   sf: () => h
 }), n(301563), n(47120);
 var r = n(192379),
@@ -46,14 +46,14 @@ var E = function(e) {
     return e.VERIFIED_ADULT = "verified_adult", e.VERIFIED_TEEN = "verified_teen", e.ERROR = "error", e
   }({});
 
-function v(e, t) {
+function y(e, t) {
   let n = c.Z.getMessage(e, t);
   if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== _.hBH.AGE_VERIFICATION_SYSTEM_NOTIFICATION) return !1;
   let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
   return null == r ? void 0 : r.rawValue.split(",").includes("retry")
 }
 
-function y() {
+function v() {
   let e = u.default.getCurrentUser();
   return (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.CLIENT_ONLY_PENDING
 }
@@ -99,7 +99,7 @@ function I(e) {
 function S(e) {
   let t = (0, i.e7)([u.default], () => {
       var e;
-      return null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.ageVerificationStatus
+      return null == (e = u.default.getCurrentUser()) ? void 0 : e.ageVerificationStatus
     }),
     n = (0, s.Z)(t);
   r.useEffect(() => {

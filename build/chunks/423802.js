@@ -151,12 +151,11 @@ function m(e, t) {
   for (var n = e.split("."), r = [t], i = 0, o = n.length; i < o; i++) {
     for (var a = n[i], s = [], l = 0, c = r.length; l < c; l++) {
       var u = r[l];
-      if (null != u) {
+      if (null != u)
         if (Object.hasOwnProperty.call(u, a)) {
           var d = u[a];
           null != d && s.push(d)
         } else "*" === a && (s = s.concat(u))
-      }
     }
     r = s
   }

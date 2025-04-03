@@ -37,7 +37,7 @@ function f() {
 class _ extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    l = null !== (t = null == e ? void 0 : e.persistentCodesEnabled) && void 0 !== t && t, c = null !== (n = null == e ? void 0 : e.uploadedKeyVersions) && void 0 !== n ? n : s
+    l = null != (t = null == e ? void 0 : e.persistentCodesEnabled) && t, c = null != (n = null == e ? void 0 : e.uploadedKeyVersions) ? n : s
   }
   getState() {
     return {

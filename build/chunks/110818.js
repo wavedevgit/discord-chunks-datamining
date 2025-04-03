@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Db: () => A,
-  HC: () => y,
+  HC: () => v,
   NQ: () => E,
   fe: () => x
 }), n(47120);
@@ -13,7 +13,7 @@ var r, i, o, a, s = n(200651),
   d = n(642128),
   f = n(748780),
   _ = n(481060),
-  p = n(920606);
+  p = n(800929);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,7 +93,7 @@ h(E, "Scenes", m);
 var b = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
 }(b || {});
-let v = {
+let y = {
   normal: {
     BEG: 0,
     END: 600,
@@ -116,13 +116,13 @@ let v = {
     END: 878
   }
 };
-class y extends(i = l.PureComponent) {
+class v extends(i = l.PureComponent) {
   static getNextScene(e) {
     switch (e) {
-      case y.Scenes.SPEED_START:
-        return y.Scenes.SPEED_LOOP;
-      case y.Scenes.FINISH:
-        return y.Scenes.IDLE;
+      case v.Scenes.SPEED_START:
+        return v.Scenes.SPEED_LOOP;
+      case v.Scenes.FINISH:
+        return v.Scenes.IDLE;
       default:
         return e
     }
@@ -148,7 +148,7 @@ class y extends(i = l.PureComponent) {
       className: u()(p.sequencedAnimation, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
-      sceneSegments: v,
+      sceneSegments: y,
       onScenePlay: n,
       onSceneComplete: r,
       pauseWhileUnfocused: o,
@@ -156,7 +156,7 @@ class y extends(i = l.PureComponent) {
     })
   }
 }
-h(y, "Scenes", b);
+h(v, "Scenes", b);
 var O = function(e) {
   return e.IDLE_ENTRY = "idle_entry", e.IDLE_LOOP = "idle_loop", e.BOOST_START = "boost_start", e.BOOST_LOOP = "boost_loop", e.BOOST_END = "boost_end", e.VICTORY = "victory", e.ERROR = "error", e
 }(O || {});
@@ -351,13 +351,13 @@ class A extends(o = l.PureComponent) {
       x: 0,
       y: 0
     })), h(this, "didUnmount", !1), h(this, "animateIdleLoopBackground", () => {
-      !this.didUnmount && (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
+      this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
         toValue: T.IDLE_LOOP.toValue,
         duration: T.IDLE_LOOP.duration * N,
         easing: f.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
     }), h(this, "animateIdleLoopForeground", () => {
-      !this.didUnmount && (this.foregroundAnimation.x.setValue(0), f.Z.timing(this.foregroundAnimation.x, {
+      this.didUnmount || (this.foregroundAnimation.x.setValue(0), f.Z.timing(this.foregroundAnimation.x, {
         toValue: T.IDLE_LOOP.toValue,
         duration: T.IDLE_LOOP.duration,
         easing: T.IDLE_LOOP.easing

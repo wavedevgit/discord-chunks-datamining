@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(91218),
   g = n(518738),
   E = n(388032),
-  b = n(72282);
+  b = n(577604);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -78,33 +78,44 @@ function T(e, t) {
   return i
 }
 let N = i.forwardRef(function(e, t) {
-  var o, v, O;
-  let T;
-  let {
-    canRemove: N,
-    className: A,
-    role: C,
-    onRemove: R,
-    guildId: P,
-    disableBorderColor: w,
-    onMouseDown: D
-  } = e, L = (0, s.JA)(C.id), {
-    tabIndex: x
-  } = L, M = S(L, ["tabIndex"]), k = (0, g.p9)({
-    roleId: C.id,
-    size: 16,
-    guildId: P
-  }), j = (0, c.e7)([_.Z], () => _.Z.roleStyle), U = (null === (o = C.tags) || void 0 === o ? void 0 : o.guild_connections) === null, G = i.useCallback(e => {
-    (0, f.jW)(e, async () => {
-      let {
-        default: e
-      } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, r.jsx)(e, I(y({}, t), {
-        id: C.id,
-        label: E.NW.string(E.t.sMsaLi)
-      }))
-    })
-  }, [C.id]), B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(), F = null !== (v = C.colorString) && void 0 !== v ? v : B, V = null !== (O = (0, l.wK)(F, .6)) && void 0 !== O ? O : void 0, Z = u.Z.unsafe_rawColors.WHITE_500.css, H = (0, l._i)(F);
+  var o, y, O;
+  let T, {
+      canRemove: N,
+      className: A,
+      role: C,
+      onRemove: R,
+      guildId: P,
+      disableBorderColor: w,
+      onMouseDown: D
+    } = e,
+    L = (0, s.JA)(C.id),
+    {
+      tabIndex: x
+    } = L,
+    M = S(L, ["tabIndex"]),
+    k = (0, g.p9)({
+      roleId: C.id,
+      size: 16,
+      guildId: P
+    }),
+    j = (0, c.e7)([_.Z], () => _.Z.roleStyle),
+    U = (null == (o = C.tags) ? void 0 : o.guild_connections) === null,
+    G = i.useCallback(e => {
+      (0, f.jW)(e, async () => {
+        let {
+          default: e
+        } = await n.e("5396").then(n.bind(n, 731646));
+        return t => (0, r.jsx)(e, I(v({}, t), {
+          id: C.id,
+          label: E.NW.string(E.t.sMsaLi)
+        }))
+      })
+    }, [C.id]),
+    B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
+    F = null != (y = C.colorString) ? y : B,
+    V = null != (O = (0, l.wK)(F, .6)) ? O : void 0,
+    Z = u.Z.unsafe_rawColors.WHITE_500.css,
+    H = (0, l._i)(F);
   null != H && .3 > (0, l.Bd)(H) && (Z = u.Z.unsafe_rawColors.PRIMARY_630.css), T = U ? (0, r.jsx)(p.Z, {
     className: b.roleFlowerStar,
     iconClassName: N ? b.roleVerifiedIcon : void 0,
@@ -121,9 +132,9 @@ let N = i.forwardRef(function(e, t) {
   });
   let W = i.useMemo(() => {
       var t;
-      return y({
+      return v({
         borderColor: w ? void 0 : V
-      }, null !== (t = e.style) && void 0 !== t ? t : {})
+      }, null != (t = e.style) ? t : {})
     }, [V, w, e.style]),
     Y = () => N ? (0, r.jsx)(d.DY3, {
       text: E.NW.string(E.t.u3RVsL),
@@ -158,7 +169,7 @@ let N = i.forwardRef(function(e, t) {
       children: T
     });
   return (0, r.jsx)(d.tEY, {
-    children: (0, r.jsxs)("div", I(y({
+    children: (0, r.jsxs)("div", I(v({
       ref: t,
       className: a()(b.role, A),
       style: W,
@@ -167,7 +178,7 @@ let N = i.forwardRef(function(e, t) {
       "aria-label": C.name,
       tabIndex: x
     }, M), {
-      children: [Y(), null != k ? (0, r.jsx)(m.Z, I(y({
+      children: [Y(), null != k ? (0, r.jsx)(m.Z, I(v({
         className: b.roleIcon
       }, k), {
         enableTooltip: !1

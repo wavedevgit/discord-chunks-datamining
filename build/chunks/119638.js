@@ -11,7 +11,7 @@ var r, i, o = n(200651),
   u = n(770102),
   d = n(326452),
   f = n(874967),
-  _ = n(855331);
+  _ = n(115128);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,10 +69,10 @@ function b(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = () => (0, o.jsx)(u.$, {
+let y = () => (0, o.jsx)(u.$, {
     className: _.divider
   }),
-  y = e => {
+  v = e => {
     let {
       children: t
     } = e;
@@ -109,4 +109,4 @@ class I extends(i = a.PureComponent) {
     })
   }
 }
-p(I, "SearchBar", O), p(I, "Item", f.Z), p(I, "Divider", v), p(I, "Empty", y)
+p(I, "SearchBar", O), p(I, "Item", f.Z), p(I, "Divider", y), p(I, "Empty", v)

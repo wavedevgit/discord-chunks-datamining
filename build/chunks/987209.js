@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   KB: () => O,
-  wD: () => v
+  wD: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -20,15 +20,15 @@ var r = n(200651),
   m = n(388032);
 let g = h.Cj.STANDARD_BOX,
   E = void 0,
-  [b, v, y] = (0, f.Z)();
+  [b, y, v] = (0, f.Z)();
 
 function O(e) {
   let {
     isGift: t = !1,
     giftRecipient: n,
     giftMessage: f,
-    giftStyle: v,
-    giftingOrigin: y,
+    giftStyle: y,
+    giftingOrigin: v,
     children: O
   } = e, {
     selectedSkuId: I
@@ -37,7 +37,7 @@ function O(e) {
   } = c.O.useExperiment({
     location: "gift card"
   }), L = E;
-  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != v ? v : g, D && (L = h.Cj.NITROWEEN_STANDARD));
+  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != y ? y : g, D && (L = h.Cj.NITROWEEN_STANDARD));
   let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(S) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(I, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
@@ -73,7 +73,7 @@ function O(e) {
       giftMessageError: Q,
       alreadyHasHalloweenDeco: $,
       recommendedGiftSkuIds: ee,
-      giftingOrigin: y,
+      giftingOrigin: v,
       claimableRewards: k,
       selectedGiftingPromotionReward: j,
       setSelectedGiftingPromotionReward: U

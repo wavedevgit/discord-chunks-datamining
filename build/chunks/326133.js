@@ -20,11 +20,11 @@ var r = n(200651),
   g = n(549006),
   E = n(430824),
   b = n(436896),
-  v = n(590921),
-  y = n(606992),
+  y = n(590921),
+  v = n(606992),
   O = n(51062),
   I = n(918559),
-  S = n(860533);
+  S = n(504573);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,10 +96,10 @@ let w = 490,
       onVisibilityChange: G
     } = e, B = (0, h.Dt)(), F = (0, l.e7)([E.Z], () => {
       var e;
-      return null !== (e = E.Z.getGuild(k.guild_id)) && void 0 !== e ? e : null
+      return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
     }, [k.guild_id]), V = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
       guild: F
-    }), t, V), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
+    }), t, V), Y = (null == (n = j.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
     (0, p.KR)(B, Z.isVisible, K), b.Z.trackExposure({
       location: "6e9811_1"
     });
@@ -109,7 +109,7 @@ let w = 490,
       location: "6e9811_2"
     }, {
       autoTrackExposure: !1
-    }), q = (0, y.Z)({
+    }), q = (0, v.Z)({
       editorHeight: U,
       type: j,
       state: Z,
@@ -122,7 +122,7 @@ let w = 490,
     if (i.useEffect(() => {
         G(Z.isVisible)
       }, [G, Z.isVisible]), !Z.isVisible || null == Z.query || void 0 === q) return null;
-    let J = null !== (o = Z.query.typeInfo.renderResults({
+    let J = null != (o = Z.query.typeInfo.renderResults({
       results: Z.query.results,
       selectedIndex: Z.selectedIndex,
       channel: k,
@@ -131,7 +131,7 @@ let w = 490,
       options: Z.query.options,
       onHover: e => H.onResultHover(e),
       onClick: e => H.onResultClick(e)
-    })) && void 0 !== o ? o : null;
+    })) ? o : null;
     if (null == J) return null;
     let $ = {
         [S.autocompleteAttached]: null == q,
@@ -140,7 +140,7 @@ let w = 490,
         [S.autocompleteTop]: Q
       },
       ee = w;
-    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === v.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
+    null != q && (ee = (null == (T = j.autocomplete) ? void 0 : T.small) ? x : (null == (A = Z.query) ? void 0 : A.type) === y.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(_.ZP, {
       id: B,
       className: a()(S.autocomplete, $),
@@ -157,7 +157,7 @@ let w = 490,
               id: B,
               ref: e => {
                 var n;
-                t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, V.current = e
+                t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null, V.current = e
               }
             }, n), {
               className: S.scroller,
@@ -177,7 +177,7 @@ let w = 490,
         targetRef: e.targetRef,
         overrideTargetRect: q,
         positionKey: X,
-        position: null !== (P = e.position) && void 0 !== P ? P : "top",
+        position: null != (P = e.position) ? P : "top",
         align: "left",
         spacing: 8,
         autoInvert: !0,

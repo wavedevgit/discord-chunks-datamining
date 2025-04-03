@@ -85,7 +85,7 @@ let E = {
         status: e.status,
         hidePersonalInformation: m.hidePersonalInformation
       }, e.user.id)),
-      v = s.map((e, t) => (0, r.jsx)(o.ZP.Generic, {
+      y = s.map((e, t) => (0, r.jsx)(o.ZP.Generic, {
         onClick: E,
         onHover: g,
         selected: _ === t + a.length,
@@ -94,7 +94,7 @@ let E = {
         description: m.hideMentionDescription ? null : e.description,
         "aria-label": e.text
       }, e.text)),
-      y = l.map((e, t) => (0, r.jsx)(o.ZP.Role, {
+      v = l.map((e, t) => (0, r.jsx)(o.ZP.Role, {
         onClick: E,
         onHover: g,
         selected: _ === t + a.length + s.length,
@@ -108,7 +108,7 @@ let E = {
         titleWithoutQuery: n,
         query: h,
         getQuery: e => "".concat(d.ME).concat(e)
-      }), b, a.length > 0 && s.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, v, a.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, y]
+      }), b, a.length > 0 && s.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, y, a.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, v]
     }, "mentions")
   },
   onSelect(e) {

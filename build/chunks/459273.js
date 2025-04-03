@@ -68,7 +68,7 @@ function _(e) {
     if (a) return;
     let e = function() {
       for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-      null === (e = o.current) || void 0 === e || e.call(o, ...n)
+      null == (e = o.current) || e.call(o, ...n)
     };
     return r.subscribe(t, e), () => {
       r.unsubscribe(t, e)

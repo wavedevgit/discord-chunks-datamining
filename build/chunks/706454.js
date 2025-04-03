@@ -20,7 +20,7 @@ let c = n(388032).NW.currentLocale;
 
 function u() {
   var e, t;
-  let n = null === (t = s.Z.settings.localization) || void 0 === t ? void 0 : null === (e = t.locale) || void 0 === e ? void 0 : e.value;
+  let n = null == (t = s.Z.settings.localization) || null == (e = t.locale) ? void 0 : e.value;
   return null != n && "" !== n && n !== c && (c = n, (0, a._2)(c), !0)
 }
 

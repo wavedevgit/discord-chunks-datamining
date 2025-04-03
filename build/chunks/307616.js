@@ -19,7 +19,7 @@ var r = n(200651),
   h = n(952265),
   m = n(602091),
   g = n(981631),
-  E = n(25672);
+  E = n(776022);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,8 +29,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = [f.ZP, _.ZP];
-class y extends i.PureComponent {
+let y = [f.ZP, _.ZP];
+class v extends i.PureComponent {
   render() {
     let {
       render: e,
@@ -120,15 +120,15 @@ function S() {
     s = i.useCallback(t => {
       (0, h.Mr)(t, e)
     }, [e]),
-    d = v.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
+    d = y.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
   return (0, r.jsxs)(c.W, {
     component: i.Fragment,
-    children: [v.map((e, n) => {
+    children: [y.map((e, n) => {
       var i;
       let o = l().findLast(t, t => t.Layer === e || null == t.Layer && e === f.ZP);
       return (0, r.jsx)(u.YMn, {
         isVisible: d[n],
-        backdropStyle: null !== (i = null == o ? void 0 : o.backdropStyle) && void 0 !== i ? i : u.fCB.DARK,
+        backdropStyle: null != (i = null == o ? void 0 : o.backdropStyle) ? i : u.fCB.DARK,
         onClose: a,
         LayerComponent: e,
         backdropInstant: null == o ? void 0 : o.instant
@@ -140,7 +140,7 @@ function S() {
         render: a,
         instant: l
       } = e;
-      return (0, r.jsx)(y, {
+      return (0, r.jsx)(v, {
         modalKey: i,
         LayerComponent: null != o ? o : f.ZP,
         isTopModal: n === t.length - 1,

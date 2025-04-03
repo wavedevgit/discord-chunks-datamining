@@ -46,7 +46,7 @@ l.prototype._shouldRetry = function(e, t) {
   } catch (e) {
     console.error(e)
   }
-  return !!(t && t.status && u.has(t.status) || e && (e.code && c.has(e.code) || e.timeout && "ECONNABORTED" === e.code || e.crossDomain))
+  return !!(t && t.status && u.has(t.status) || e && (e.code && c.has(e.code) || e.timeout && "ECONNABORTED" === e.code || e.crossDomain)) || !1
 }, l.prototype._retry = function() {
   return this.clearTimeout(), this.req && (this.req = null, this.req = this.request()), this._aborted = !1, this.timedout = !1, this.timedoutError = null, this._end()
 }, l.prototype.then = function(e, t) {
@@ -55,10 +55,7 @@ l.prototype._shouldRetry = function(e, t) {
     this._endCalled && console.warn("Warning: superagent request was sent twice, because both .end() and .then() were called. Never call .end() if you use promises"), this._fullfilledPromise = new Promise((t, n) => {
       e.on("abort", () => {
         if (this._maxRetries && this._maxRetries > this._retries) return;
-        if (this.timedout && this.timedoutError) {
-          n(this.timedoutError);
-          return
-        }
+        if (this.timedout && this.timedoutError) return void n(this.timedoutError);
         let e = Error("Aborted");
         e.code = "ABORTED", e.status = this.status, e.method = this.method, e.url = this.url, n(e)
       }), e.end((e, r) => {

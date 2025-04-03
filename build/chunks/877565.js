@@ -83,10 +83,10 @@ function f(e) {
     indexOffset: g = 0,
     headerClassName: E,
     headerTrailingContent: b,
-    footer: v
+    footer: y
   } = e;
-  if (null == v && (null == o || 0 === o.length)) return null;
-  let y = null == o ? void 0 : o.map((e, t) => {
+  if (null == y && (null == o || 0 === o.length)) return null;
+  let v = null == o ? void 0 : o.map((e, t) => {
     let r = t + g,
       o = p(e, r);
     return (0, i.createElement)(_, u(l({
@@ -106,6 +106,6 @@ function f(e) {
       getQuery: h,
       headerClassName: E,
       headerTrailingContent: b
-    }) : null, y, v]
+    }) : null, v, y]
   }, m)
 }

@@ -49,11 +49,11 @@ let E = {
     lazyLoaded: !0,
     editInfo: (0, h.JC)()
   },
-  v = {
+  y = {
     [h.yP.PRELOADED_USER_SETTINGS]: E,
     [h.yP.FRECENCY_AND_FAVORITES_SETTINGS]: b
   },
-  y = !1;
+  v = !1;
 
 function O(e) {
   let {
@@ -65,7 +65,7 @@ function O(e) {
     isDirty: r,
     cleanupFuncs: i
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
-  r && N(E), E.proto = n, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(v).forEach(e => {
+  r && N(E), E.proto = n, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = !1, e.editInfo.loading = !1)
   }), T()
 }
@@ -75,16 +75,16 @@ function I() {
 }
 
 function S() {
-  T(), Object.values(v).forEach(e => {
+  T(), Object.values(y).forEach(e => {
     e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
   })
 }
 
 function T() {
-  Object.values(v).forEach(e => {
+  Object.values(y).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
-      clearTimeout(e.editInfo.timeout), e.editInfo.timeout = void 0, e.editInfo.timeoutDelay = Number.MAX_SAFE_INTEGER, e.editInfo.rateLimited = !1, e.editInfo.offlineEditDataVersion = null !== (n = null === (t = e.proto.versions) || void 0 === t ? void 0 : t.dataVersion) && void 0 !== n ? n : 0
+      clearTimeout(e.editInfo.timeout), e.editInfo.timeout = void 0, e.editInfo.timeoutDelay = Number.MAX_SAFE_INTEGER, e.editInfo.rateLimited = !1, e.editInfo.offlineEditDataVersion = null != (n = null == (t = e.proto.versions) ? void 0 : t.dataVersion) ? n : 0
     }
   })
 }
@@ -110,8 +110,8 @@ function C(e) {
     resetEditInfo: i,
     local: a
   } = e;
-  y = !a;
-  let s = v[n];
+  v = !a;
+  let s = y[n];
   i && N(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), o()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, o()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
 }
 
@@ -123,7 +123,7 @@ function R(e) {
     }
   } = e;
   o()(!__OVERLAY__, "this cannot run in the overlay");
-  let r = v[t];
+  let r = y[t];
   return r.editInfo = g({}, r.editInfo, n), !1
 }
 
@@ -135,15 +135,15 @@ function P(e) {
 }
 
 function w(e) {
-  null != e && s().forEach(v, (t, n) => {
+  null != e && s().forEach(y, (t, n) => {
     var r, i;
     let a = e[Number(n)];
     if (null == a) return;
-    let s = null !== (r = null == a ? void 0 : a.proto) && void 0 !== r ? r : "",
+    let s = null != (r = null == a ? void 0 : a.proto) ? r : "",
       l = (0, p.d5)(t.ProtoClass, s);
     if (null == l) return;
     t.proto = l, o()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
-    let c = null !== (i = null == a ? void 0 : a.protoToSave) && void 0 !== i ? i : null;
+    let c = null != (i = null == a ? void 0 : a.protoToSave) ? i : null;
     if (null == c || null == a.offlineEditDataVersion) return;
     let u = (0, p.d5)(t.ProtoClass, c);
     null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = a.offlineEditDataVersion)
@@ -157,7 +157,7 @@ class D extends(r = l.ZP.PersistedStore) {
     return this.computeState()
   }
   computeState() {
-    return s().mapValues(v, e => {
+    return s().mapValues(y, e => {
       let t = {
         proto: (0, p.xU)(e.ProtoClass, e.proto)
       };
@@ -165,7 +165,7 @@ class D extends(r = l.ZP.PersistedStore) {
     })
   }
   hasLoaded(e) {
-    return v[e].editInfo.loaded
+    return y[e].editInfo.loaded
   }
   get settings() {
     return E.proto
@@ -174,22 +174,22 @@ class D extends(r = l.ZP.PersistedStore) {
     return b.proto
   }
   get wasMostRecentUpdateFromServer() {
-    return y
+    return v
   }
   getFullState() {
-    return v
+    return y
   }
   getGuildFolders() {
     var e;
-    let t = null === (e = E.proto.guildFolders) || void 0 === e ? void 0 : e.folders;
+    let t = null == (e = E.proto.guildFolders) ? void 0 : e.folders;
     return null == t ? null : t.map(e => {
       var t, n, r;
-      let i = null === (t = e.id) || void 0 === t ? void 0 : t.value,
-        o = null === (n = e.color) || void 0 === n ? void 0 : n.value;
+      let i = null == (t = e.id) ? void 0 : t.value,
+        o = null == (n = e.color) ? void 0 : n.value;
       return {
         guildIds: e.guildIds,
         folderId: null == i ? void 0 : Number(i),
-        folderName: null === (r = e.name) || void 0 === r ? void 0 : r.value,
+        folderName: null == (r = e.name) ? void 0 : r.value,
         folderColor: null == o ? void 0 : Number(o)
       }
     })
@@ -197,16 +197,16 @@ class D extends(r = l.ZP.PersistedStore) {
   getGuildRecentsDismissedAt(e) {
     var t, n;
     if (null == e) return 0;
-    let r = null === (n = this.settings.guilds) || void 0 === n ? void 0 : null === (t = n.guilds[e]) || void 0 === t ? void 0 : t.guildRecentsDismissedAt;
+    let r = null == (n = this.settings.guilds) || null == (t = n.guilds[e]) ? void 0 : t.guildRecentsDismissedAt;
     return null == r ? 0 : d.E.toDate(r).getTime()
   }
   getDismissedGuildContent(e) {
     var t, n, r;
-    return null == e ? null : null === (r = this.settings.guilds) || void 0 === r ? void 0 : null === (n = r.guilds) || void 0 === n ? void 0 : null === (t = n[e]) || void 0 === t ? void 0 : t.dismissedGuildContent
+    return null == e ? null : null == (r = this.settings.guilds) || null == (n = r.guilds) || null == (t = n[e]) ? void 0 : t.dismissedGuildContent
   }
   getGuildsProto() {
     var e, t;
-    return null !== (t = null === (e = this.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : null
+    return null != (t = null == (e = this.settings.guilds) ? void 0 : e.guilds) ? t : null
   }
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");

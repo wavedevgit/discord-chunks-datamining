@@ -55,12 +55,12 @@ let c = function(e) {
       _ = s(n, ["color"]);
     let p = "currentColor";
     null != f && (p = "string" != typeof f && "css" in f ? f.css : f);
-    let h = null !== (o = _.size) && void 0 !== o ? o : "md",
+    let h = null != (o = _.size) ? o : "md",
       m = (0, i.m)(h),
       g = {
         color: p,
-        width: null !== (c = null !== (l = null == m ? void 0 : m.width) && void 0 !== l ? l : _.width) && void 0 !== c ? c : 24,
-        height: null !== (d = null !== (u = null == m ? void 0 : m.height) && void 0 !== u ? u : _.height) && void 0 !== d ? d : 24,
+        width: null != (c = null != (l = null == m ? void 0 : m.width) ? l : _.width) ? c : 24,
+        height: null != (d = null != (u = null == m ? void 0 : m.height) ? u : _.height) ? d : 24,
         foreground: _.colorClass
       };
     for (let [e, n] of Object.entries(t)) null != _[e] && (g[n] = _[e]);

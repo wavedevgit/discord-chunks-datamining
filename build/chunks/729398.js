@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = {
       className: "params",
@@ -55,4 +55,3 @@ function t(e) {
     }, r, a]
   }
 }
-e.exports = t

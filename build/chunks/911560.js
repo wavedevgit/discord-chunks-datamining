@@ -29,7 +29,9 @@ function m() {
 function g(e) {
   if (null == e || e === a.V || (0, _.AB)(e) || null != u.Z.getChannel(e) || (m(), !s.Z.isConnected())) return Promise.resolve();
   let t = p[e];
-  if (null != t) return "LOADING" === t.type ? t.promise : Promise.resolve();
+  if (null != t)
+    if ("LOADING" === t.type) return t.promise;
+    else return Promise.resolve();
   let n = (0, r.LX)(location.pathname, {
       path: f.Z5c.CHANNEL(l.Hw.guildId(), l.Hw.channelId(), ":messageId"),
       exact: !0
@@ -48,7 +50,7 @@ function g(e) {
         o.Z.dispatch({
           type: "THREAD_CREATE",
           channel: (0, c.q_)(r),
-          messageId: null == n ? void 0 : null === (i = n.params) || void 0 === i ? void 0 : i.messageId
+          messageId: null == n || null == (i = n.params) ? void 0 : i.messageId
         })
       }
     }).catch(() => {
@@ -59,7 +61,7 @@ function g(e) {
         type: "CHANNEL_DELETE",
         channel: {
           id: e,
-          guild_id: null == n ? void 0 : null === (t = n.params) || void 0 === t ? void 0 : t.guildId,
+          guild_id: null == n || null == (t = n.params) ? void 0 : t.guildId,
           parent_id: void 0
         }
       })

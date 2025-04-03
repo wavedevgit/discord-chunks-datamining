@@ -58,7 +58,7 @@ class i {
     if (null != e.requestId) {
       var t, n;
       let r = 0;
-      null === (t = (n = this).callback) || void 0 === t || t.call(n, {
+      null == (t = (n = this).callback) || t.call(n, {
         id: e.requestId,
         ok: e.ok,
         data: e.data,

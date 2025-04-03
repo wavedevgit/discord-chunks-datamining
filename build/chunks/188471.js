@@ -15,15 +15,12 @@ function a(e, t) {
   } = n(15379), i = r(e, t);
   if (null != i) {
     var a;
-    null === (a = o.get(e)) || void 0 === a || a.push(i)
+    null == (a = o.get(e)) || a.push(i)
   }
 }
 
 function s() {
-  if (!(0, i.A)()) {
-    o.clear();
-    return
-  }
+  if (!(0, i.A)()) return void o.clear();
   let {
     default: e
   } = n(672513);

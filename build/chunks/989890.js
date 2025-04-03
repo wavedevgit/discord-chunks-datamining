@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "DNS Zone",
     aliases: ["bind", "zone"],
@@ -20,4 +20,3 @@ function t(e) {
     })]
   }
 }
-e.exports = t

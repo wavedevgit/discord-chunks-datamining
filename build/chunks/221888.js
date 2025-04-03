@@ -20,10 +20,10 @@ var r = n(200651),
   g = n(594174),
   E = n(823379),
   b = n(5192),
-  v = n(354459),
-  y = n(981631),
+  y = n(354459),
+  v = n(981631),
   O = n(388032),
-  I = n(808477);
+  I = n(233628);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,11 +67,11 @@ let C = 150;
 
 function R(e, t) {
   switch (e) {
-    case v.fO.ACTIVITY:
+    case y.fO.ACTIVITY:
       return O.NW.formatToPlainString(O.t.TCM94e, {
         numUsers: t
       });
-    case v.fO.STREAM:
+    case y.fO.STREAM:
       return O.NW.formatToPlainString(O.t.BR7Tnp, {
         numViewers: t
       });
@@ -156,11 +156,11 @@ function L(e) {
     disableInteraction: O = !1,
     maxVisibleUsers: S = 3
   } = e, N = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(!1), M = i.useRef(new u.sW(C, () => x(!1))), k = (0, c.Wu)([m.Z, g.default], () => {
-    if (s.type === v.fO.STREAM) {
+    if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
     }
-    return s.type === v.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
+    return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
     R && (M.current.cancel(), x(!1))
@@ -175,7 +175,7 @@ function L(e) {
       j(), (0, f.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("57673")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, A(T({}, n), {
           user: t
         }))
@@ -202,7 +202,7 @@ function L(e) {
     className: I.overflow,
     children: ["+", k.length - S + 1]
   }, "overflow")), (0, r.jsx)(_.Z, {
-    section: y.jXE.STREAM_VIEWER_POPOUT,
+    section: v.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
       onMouseEnter: j,
       onMouseLeave: U,

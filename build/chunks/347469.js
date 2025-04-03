@@ -27,7 +27,7 @@ let l = e => {
     orientation: _,
     usePointerEvents: p = !1,
     getClampedValue: h = i.clamp
-  } = e, [m, g] = r.useState(!1), E = r.useRef(0), b = r.useRef(!1), v = r.useRef(null == t ? 0 : t);
+  } = e, [m, g] = r.useState(!1), E = r.useRef(0), b = r.useRef(!1), y = r.useRef(null == t ? 0 : t);
   return r.useLayoutEffect(() => {
     if (!m || null == n.current) return;
 
@@ -35,7 +35,7 @@ let l = e => {
       let t = 1 === s(_) ? e.screenX : e.screenY,
         n = 0 === _ || 2 === _,
         r = (t - E.current) * (n ? -1 : 1);
-      return v.current + r
+      return y.current + r
     }
 
     function t(e) {
@@ -49,7 +49,7 @@ let l = e => {
           l = 1 === s(_) ? "width" : "height";
         n.current.style[l] = "".concat(a, "px"), b.current || (b.current = !0, null == u || u(a)), r(a, o)
       },
-      y = n => {
+      v = n => {
         g(!1);
         let r = e(n),
           i = t(r);
@@ -58,11 +58,11 @@ let l = e => {
       O = p ? "pointerup" : "mouseup",
       I = p ? "pointermove" : "mousemove",
       S = n.current.ownerDocument;
-    return S.addEventListener(O, y), S.addEventListener(I, o), () => {
-      S.removeEventListener(O, y), S.removeEventListener(I, o), r.cancel()
+    return S.addEventListener(O, v), S.addEventListener(I, o), () => {
+      S.removeEventListener(O, v), S.removeEventListener(I, o), r.cancel()
     }
   }, [m, c, l, a, _, n, f, d, p, h, u]), r.useCallback(e => {
     let t = 1 === s(_);
-    null != n.current && (v.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
+    null != n.current && (y.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
   }, [_, n])
 }

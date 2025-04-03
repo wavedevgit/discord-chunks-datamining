@@ -37,13 +37,8 @@ function s(e, t, n, o) {
 function l(e, r, i, o, a, c, u) {
   if (c += 1, "object" == typeof e && null !== e) {
     for (d = 0; d < o.length; d++)
-      if (o[d] === e) {
-        s(n, e, r, a);
-        return
-      } if (void 0 !== u.depthLimit && c > u.depthLimit || void 0 !== u.edgesLimit && i + 1 > u.edgesLimit) {
-      s(t, e, r, a);
-      return
-    }
+      if (o[d] === e) return void s(n, e, r, a);
+    if (void 0 !== u.depthLimit && c > u.depthLimit || void 0 !== u.edgesLimit && i + 1 > u.edgesLimit) return void s(t, e, r, a);
     if (o.push(e), Array.isArray(e))
       for (d = 0; d < e.length; d++) l(e[d], d, d, o, e, c, u);
     else {
@@ -80,18 +75,13 @@ function u(e, t, n, a) {
 function d(e, i, o, a, l, u, f) {
   if (u += 1, "object" == typeof e && null !== e) {
     for (_ = 0; _ < a.length; _++)
-      if (a[_] === e) {
-        s(n, e, i, l);
-        return
-      } try {
+      if (a[_] === e) return void s(n, e, i, l);
+    try {
       if ("function" == typeof e.toJSON) return
     } catch (e) {
       return
     }
-    if (void 0 !== f.depthLimit && u > f.depthLimit || void 0 !== f.edgesLimit && o + 1 > f.edgesLimit) {
-      s(t, e, i, l);
-      return
-    }
+    if (void 0 !== f.depthLimit && u > f.depthLimit || void 0 !== f.edgesLimit && o + 1 > f.edgesLimit) return void s(t, e, i, l);
     if (a.push(e), Array.isArray(e))
       for (_ = 0; _ < e.length; _++) d(e[_], _, _, a, e, u, f);
     else {

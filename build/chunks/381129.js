@@ -16,7 +16,7 @@ function d(e, t) {
   let n = 0;
   if (t.isThread()) {
     var r;
-    return null !== (r = t.memberCount) && void 0 !== r ? r : 0
+    return null != (r = t.memberCount) ? r : 0
   }
   return a.ZP.getProps(t.getGuildId(), t.id).groups.forEach(t => {
     ("@everyone" === e || t.id !== l.Skl.OFFLINE) && (n += t.count)
@@ -27,7 +27,7 @@ function f(e) {
   if ("string" == typeof e.content) {
     var t;
     if ("inlineCode" === e.type || "codeBlock" === e.type) return null;
-    let n = null === (t = e.content) || void 0 === t ? void 0 : t.match(c);
+    let n = null == (t = e.content) ? void 0 : t.match(c);
     if (null != n) {
       let [e] = n;
       return e

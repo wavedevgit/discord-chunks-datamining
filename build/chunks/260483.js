@@ -43,7 +43,7 @@ function p(e) {
 
 function h(e) {
   var t;
-  null === (t = e.threads) || void 0 === t || t.forEach(g)
+  null == (t = e.threads) || t.forEach(g)
 }
 
 function m(e) {
@@ -52,8 +52,8 @@ function m(e) {
     f[e.id] = {
       guildId: e.guild_id,
       parentId: e.parent_id,
-      memberCount: null !== (t = e.memberCount) && void 0 !== t ? t : 0,
-      memberIdsPreview: null !== (n = e.memberIdsPreview) && void 0 !== n ? n : []
+      memberCount: null != (t = e.memberCount) ? t : 0,
+      memberIdsPreview: null != (n = e.memberIdsPreview) ? n : []
     }
   }
   return f[e.id]
@@ -76,14 +76,14 @@ function b(e) {
   f = d({}, t)
 }
 
-function v(e) {
+function y(e) {
   let {
     guild: t
   } = e;
   h(t)
 }
 
-function y(e) {
+function v(e) {
   let {
     guild: t
   } = e;
@@ -159,11 +159,11 @@ class w extends(r = a.ZP.Store) {
   }
   getMemberCount(e) {
     var t, n;
-    return null !== (n = null === (t = f[e]) || void 0 === t ? void 0 : t.memberCount) && void 0 !== n ? n : null
+    return null != (n = null == (t = f[e]) ? void 0 : t.memberCount) ? n : null
   }
   getMemberIdsPreview(e) {
     var t, n;
-    return null !== (n = null === (t = f[e]) || void 0 === t ? void 0 : t.memberIdsPreview) && void 0 !== n ? n : null
+    return null != (n = null == (t = f[e]) ? void 0 : t.memberIdsPreview) ? n : null
   }
   getInitialOverlayState() {
     return f
@@ -173,8 +173,8 @@ u(w, "displayName", "ThreadMembersStore");
 let D = new w(s.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: b,
-  GUILD_CREATE: v,
-  GUILD_DELETE: y,
+  GUILD_CREATE: y,
+  GUILD_DELETE: v,
   CHANNEL_DELETE: T,
   THREAD_CREATE: O,
   THREAD_UPDATE: O,

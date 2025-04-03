@@ -12,14 +12,14 @@ var i = n(442837),
   l = n(517100),
   c = n(594174),
   u = n(231338),
-  d = n(881698);
+  d = n(113024);
 
 function f() {
   var e;
   let t = (0, i.e7)([s.default], () => s.default.isIdleStatusIndicatorEnabled),
     n = (0, i.e7)([c.default], () => {
       var e, t;
-      return null !== (t = null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
+      return null != (t = null == (e = c.default.getCurrentUser()) ? void 0 : e.isStaff()) && t
     }),
     [f, _] = (0, i.Wu)([l.Z], () => [l.Z.isIdle(), l.Z.isAFK()]),
     p = [];
@@ -43,7 +43,7 @@ function f() {
         })]
       }), f && (0, r.jsxs)(o.Text, {
         variant: "text-md/normal",
-        children: ["Idle since:", " ", new Date(null !== (e = l.Z.getIdleSince()) && void 0 !== e ? e : 0).toLocaleDateString(void 0, {
+        children: ["Idle since:", " ", new Date(null != (e = l.Z.getIdleSince()) ? e : 0).toLocaleDateString(void 0, {
           year: "numeric",
           day: "numeric",
           month: "numeric",

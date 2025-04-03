@@ -66,14 +66,14 @@ let f = 1e4,
     if (null == p || null == h || (0, s.b)(p)) return;
     let m = d(c({}, p), {
       guildId: e,
-      nick: null !== (n = p.nick) && void 0 !== n ? n : h.username,
-      avatar: null !== (i = p.avatar) && void 0 !== i ? i : void 0,
+      nick: null != (n = p.nick) ? n : h.username,
+      avatar: null != (i = p.avatar) ? i : void 0,
       avatarDecoration: null != p.avatarDecoration ? c({}, p.avatarDecoration) : void 0,
-      premiumSince: null !== (l = p.premiumSince) && void 0 !== l ? l : void 0,
-      isPending: null !== (u = p.isPending) && void 0 !== u && u,
+      premiumSince: null != (l = p.premiumSince) ? l : void 0,
+      isPending: null != (u = p.isPending) && u,
       user: d(c({}, h), {
-        email: null !== (f = h.email) && void 0 !== f ? f : void 0,
-        phone: null !== (_ = h.phone) && void 0 !== _ ? _ : void 0
+        email: null != (f = h.email) ? f : void 0,
+        phone: null != (_ = h.phone) ? _ : void 0
       }),
       communicationDisabledUntil: null
     });

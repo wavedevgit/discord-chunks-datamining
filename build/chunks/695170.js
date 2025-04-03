@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $e: () => v,
+  $e: () => y,
   DY: () => I,
   Eg: () => u,
   FO: () => E,
@@ -10,7 +10,7 @@ n.d(t, {
   Od: () => S,
   VQ: () => s,
   ZY: () => A,
-  d9: () => y,
+  d9: () => v,
   fv: () => h,
   gE: () => T,
   qb: () => f,
@@ -37,7 +37,7 @@ var r = n(686942),
     return d(e) && !isNaN(e.getTime())
   },
   _ = function(e) {
-    return 6e4 * e.getTimezoneOffset()
+    return 60 * e.getTimezoneOffset() * 1e3
   },
   p = function(e, t) {
     return Math.round((e.getTime() - _(e) - (t.getTime() - _(t))) / a)
@@ -59,14 +59,14 @@ var r = n(686942),
     var n = i(e, t + 1, 1);
     return [E(n), g(n)]
   },
-  v = function(e, t) {
+  y = function(e, t) {
     return t = t || e, new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate(), t.getHours(), t.getMinutes(), t.getSeconds(), t.getMilliseconds()))
   },
-  y = function(e) {
+  v = function(e) {
     return new Date(e.getTime())
   },
   O = function(e) {
-    for (var t = [], n = 0; n < e.length; n++) t.push(y(e[n]));
+    for (var t = [], n = 0; n < e.length; n++) t.push(v(e[n]));
     return t
   },
   I = function(e) {

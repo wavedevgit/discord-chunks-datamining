@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(880949),
   E = n(806966),
   b = n(28546),
-  v = n(468954),
-  y = n(409700),
+  y = n(468954),
+  v = n(409700),
   O = n(53691),
   I = n(75145),
   S = n(609218),
@@ -48,7 +48,7 @@ var r = n(200651),
   H = n(981631),
   W = n(474936),
   Y = n(388032),
-  K = n(285493);
+  K = n(316443);
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -231,16 +231,16 @@ function ef(e) {
   } = e, {
     audioRef: eb
   } = i.useContext(T.Z), {
-    analyticsLocations: ev
-  } = (0, p.ZP)(), {
     analyticsLocations: ey
+  } = (0, p.ZP)(), {
+    analyticsLocations: ev
   } = (0, p.ZP)(_.Z.PREMIUM_UPSELL), {
     location: eO
   } = (0, f.O)(), eI = i.useMemo(() => X(q({}, eO), {
     section: H.jXE.SOUNDBOARD_SOUND_PICKER
   }), [eO]), [eS, eT] = i.useState(null), eN = (0, l.e7)([C.default], () => C.default.getCurrentUser()), eA = (0, D.I5)(eN, W.p9.TIER_2), eC = (0, l.e7)([R.Z], () => {
     var e;
-    return R.Z.getVoiceState(t, null !== (e = null == eN ? void 0 : eN.id) && void 0 !== e ? e : H.lds)
+    return R.Z.getVoiceState(t, null != (e = null == eN ? void 0 : eN.id) ? e : H.lds)
   }), eR = (null == eC ? void 0 : eC.selfDeaf) || (null == eC ? void 0 : eC.mute) || (null == eC ? void 0 : eC.suppress), eP = (0, b.Iu)(e => e.searchQuery), ew = null != eP && "" !== eP, eD = (0, m.Dt)(), eL = (0, l.Wu)([L.Z], () => L.Z.getShownAllGuildIds()), {
     categories: ex,
     soundCounts: eM
@@ -254,7 +254,7 @@ function ef(e) {
     if (null != I && P && r) I(e, n);
     else if (!z && r && (0, M.C0)(o)) {
       var i;
-      (0, M.GN)(e, null !== (i = null == o ? void 0 : o.id) && void 0 !== i ? i : H.lds, t), ew && w.default.track(H.rMx.SEARCH_RESULT_SELECTED, {
+      (0, M.GN)(e, null != (i = null == o ? void 0 : o.id) ? i : H.lds, t), ew && w.default.track(H.rMx.SEARCH_RESULT_SELECTED, {
         search_type: H.aib.SOUNDBOARD,
         channel_id: null == o ? void 0 : o.id,
         query: eP,
@@ -267,11 +267,11 @@ function ef(e) {
   }, [z, eN, o, Q, ew, eP, I, P]), eq = i.useCallback((e, t) => {
     switch (e.item.type) {
       case x.vB.SOUND:
-        return ez(e.item.sound, ev, (null == t ? void 0 : t.shiftKey) !== !0);
+        return ez(e.item.sound, ey, (null == t ? void 0 : t.shiftKey) !== !0);
       case x.vB.ADD_SOUND:
         return g(), (0, Z.Z)(e.item.guild.id)
     }
-  }, [ev, ez, g]), eQ = i.useCallback((e, n, i, s, l) => {
+  }, [ey, ez, g]), eQ = i.useCallback((e, n, i, s, l) => {
     let c = eB[i.sectionIndex],
       u = Q && ec(c.categoryInfo, eA, t) && eV,
       d = i.sectionIndex === eB.length - 1 && i.rowIndex === i.totalRowCount - 1;
@@ -286,7 +286,7 @@ function ef(e) {
           channel: o,
           interactive: eW ? eY : !eR,
           forceSecondaryActions: !0,
-          analyticsLocations: ev
+          analyticsLocations: ey
         },
         rowIndex: i.rowIndex,
         columnIndex: t,
@@ -302,7 +302,7 @@ function ef(e) {
         inExpressionPicker: em
       }, t))
     }), "row-".concat(n["aria-rowindex"]))
-  }, [eB, Q, eA, t, z, eq, o, eW, eY, eR, ev, ef, eV, eg, em]), eX = i.useCallback((e, t) => {
+  }, [eB, Q, eA, t, z, eq, o, eW, eY, eR, ey, ef, eV, eg, em]), eX = i.useCallback((e, t) => {
     if (e <= 0 || !Q) return !1;
     let n = eB[e],
       r = eB[e - 1],
@@ -329,17 +329,17 @@ function ef(e) {
     return eV && n ? (0, r.jsx)("div", {
       className: K.sectionFooter
     }) : null
-  }, [eB, eV]), e2 = i.useCallback(e => ej((0, U.YM)(e, ex, eN, o, ev)), [o, eN, ex, ev]), e3 = i.useCallback(e => {
+  }, [eB, eV]), e2 = i.useCallback(e => ej((0, U.YM)(e, ex, eN, o, ey)), [o, eN, ex, ey]), e3 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => (0, r.jsx)(e, q({
-        sourceAnalyticsLocations: ev
+        sourceAnalyticsLocations: ey
       }, t))
     })
-  }, [ev]), e4 = i.useCallback(() => em ? (0, r.jsx)(y.Hh, {
-    renderPopout: () => (0, r.jsx)(y.hq, {}),
+  }, [ey]), e4 = i.useCallback(() => em ? (0, r.jsx)(v.Hh, {
+    renderPopout: () => (0, r.jsx)(v.hq, {}),
     tooltipText: Y.NW.string(Y.t["19lt29"]),
     position: "top",
     clickableClassName: a()(K.settingsClickArea, K.settingsSoundmojiClickArea),
@@ -382,19 +382,16 @@ function ef(e) {
       section: H.jXE.SOUND_PICKER_FLOATING_UPSELL
     }
   }) : null, [e7, eU, eV]), e9 = i.useCallback(e => {
-    if ((null == e ? void 0 : e.item.type) === x.vB.SOUND) {
-      var t;
-      return (0, r.jsx)(F.Z, {
-        closePicker: g,
-        soundboardSound: null !== (t = null == e ? void 0 : e.item.sound) && void 0 !== t ? t : null
-      })
-    }
-    return null
+    var t;
+    return (null == e ? void 0 : e.item.type) !== x.vB.SOUND ? null : (0, r.jsx)(F.Z, {
+      closePicker: g,
+      soundboardSound: null != (t = null == e ? void 0 : e.item.sound) ? t : null
+    })
   }, [g]), te = "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_dark.png", tt = i.useCallback(() => {
     var e;
     let t = L.Z.getSoundById(el),
       n = new Audio((0, k.Z)(el));
-    null != eb.current && eb.current.pause(), eb.current = n, n.currentTime = 0, n.volume = (0, j.Z)(null !== (e = null == t ? void 0 : t.volume) && void 0 !== e ? e : 1), n.play()
+    null != eb.current && eb.current.pause(), eb.current = n, n.currentTime = 0, n.volume = (0, j.Z)(null != (e = null == t ? void 0 : t.volume) ? e : 1), n.play()
   }, [eb]), tn = (0, l.e7)([A.Z], () => A.Z.getMediaSessionId());
   return (0, h.Z)({
     type: s.ImpressionTypes.POPOUT,
@@ -425,12 +422,12 @@ function ef(e) {
         location: X(q({}, eI), {
           object: H.qAy.SOUNDBOARD_SOUND
         }),
-        location_stack: ey,
+        location_stack: ev,
         sku_id: D.ZP.getSkuIdForPremiumType(W.p9.TIER_2)
       },
       onClose: () => eT(null),
       onDisplay: tt
-    }) : void 0, (0, r.jsx)(v.Z, {
+    }) : void 0, (0, r.jsx)(y.Z, {
       categories: eB,
       collapsedCategories: eH,
       containerWidth: d,

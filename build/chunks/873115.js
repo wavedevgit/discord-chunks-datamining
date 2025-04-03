@@ -3,11 +3,11 @@
 n.d(t, {
   Dz: () => h,
   Nj: () => b,
-  RS: () => v,
+  RS: () => y,
   by: () => g,
   eI: () => _,
   f6: () => m,
-  i0: () => y,
+  i0: () => v,
   ib: () => p,
   og: () => O
 }), n(411104), n(47120);
@@ -188,13 +188,13 @@ function b() {
   })
 }
 
-function v() {
+function y() {
   return E(o.Z.getVenmoClient(), {
     type: "BRAINTREE_TEARDOWN_VENMO_CLIENT"
   })
 }
 
-function y() {
+function v() {
   let e = o.Z.getLastURL();
   null == e ? m() : (i.Z.dispatch({
     type: "BRAINTREE_TOKENIZE_PAYPAL_START"

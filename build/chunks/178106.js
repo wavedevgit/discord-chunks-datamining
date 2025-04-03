@@ -40,7 +40,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ function N(e) {
   } = e;
   if (!L()) return;
   let i = n.toString();
-  r !== (null === (t = f.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && R(i) && A(i)
+  r !== (null == (t = f.default.getCurrentUser()) ? void 0 : t.id) && R(i) && A(i)
 }
 
 function A(e) {
@@ -110,7 +110,7 @@ function R(e) {
 }
 
 function P(e) {
-  return o().mapValues(e, e => y(b({}, e), {
+  return o().mapValues(e, e => v(b({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   }))
 }
@@ -118,7 +118,7 @@ function P(e) {
 function w() {
   var e;
   if (!x()) return;
-  let t = null === (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) || void 0 === e ? void 0 : e.playedSounds;
+  let t = null == (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? void 0 : e.playedSounds;
   S.overwriteHistory(P(null != t ? t : {}), O)
 }
 

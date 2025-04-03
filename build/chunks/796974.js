@@ -101,7 +101,7 @@ class g extends(r = i.ZP.Store) {
   }
   getGuildDimensions(e) {
     var t;
-    return null !== (t = c[e]) && void 0 !== t ? t : d(e)
+    return null != (t = c[e]) ? t : d(e)
   }
   getGuildListDimensions() {
     return u

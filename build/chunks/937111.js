@@ -62,10 +62,7 @@ function E(e) {
     request: t,
     guildId: n
   } = e;
-  if (null == t) {
-    m(n);
-    return
-  }
+  if (null == t) return void m(n);
   let r = h(t);
   (0, l.d3)(r) ? m(n): d[n] = r
 }
@@ -82,14 +79,14 @@ function b(e) {
   (0, l.d3)(r) ? m(t): d[t] = r
 }
 
-function v(e) {
+function y(e) {
   let {
     guildId: t
   } = e;
   m(t)
 }
 
-function y(e) {
+function v(e) {
   let {
     guild: t
   } = e;
@@ -220,9 +217,9 @@ let P = new R(o.Z, {
   CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: b,
   GUILD_JOIN_REQUEST_CREATE: b,
-  GUILD_JOIN_REQUEST_DELETE: v,
+  GUILD_JOIN_REQUEST_DELETE: y,
   USER_GUILD_JOIN_REQUEST_UPDATE: E,
-  GUILD_DELETE: y,
+  GUILD_DELETE: v,
   USER_JOIN_REQUEST_GUILDS_FETCH: I,
   MEMBER_VERIFICATION_FORM_UPDATE: T,
   INVITE_ACCEPT_SUCCESS: O,

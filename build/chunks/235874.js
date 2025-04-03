@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => y,
-  y: () => v
+  K: () => v,
+  y: () => y
 }), n(411104), n(47120), n(26686);
 var r, i = n(200651),
   o = n(192379),
@@ -10,7 +10,7 @@ var r, i = n(200651),
   s = n(493773),
   l = n(930295),
   c = n(126306),
-  u = n(274122);
+  u = n(697375);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,7 +91,7 @@ function b(e) {
   }
   throw Error("Unexpected position: ".concat(e))
 }
-class v extends(r = o.Component) {
+class y extends(r = o.Component) {
   render() {
     let {
       children: e,
@@ -111,8 +111,8 @@ class v extends(r = o.Component) {
       preload: m,
       disablePointerEvents: g,
       ignoreModalClicks: E,
-      closeOnScroll: v,
-      useMouseEnter: y,
+      closeOnScroll: y,
+      useMouseEnter: v,
       renderPopout: O,
       layerContext: I,
       clickTrap: S = !1
@@ -137,8 +137,8 @@ class v extends(r = o.Component) {
       positionKey: p,
       disablePointerEvents: g,
       ignoreModalClicks: E,
-      closeOnScroll: v,
-      useMouseEnter: y,
+      closeOnScroll: y,
+      useMouseEnter: v,
       layerContext: I,
       clickTrap: S,
       children: e
@@ -168,7 +168,7 @@ class v extends(r = o.Component) {
   }
 }
 
-function y(e) {
+function v(e) {
   var {
     renderPopout: t
   } = e, n = h(e, ["renderPopout"]);
@@ -181,7 +181,7 @@ function y(e) {
   o.useLayoutEffect(() => {
     if (l > 0) {
       var e, t, n, i, o;
-      null === (o = r.current) || void 0 === o || null === (i = o.ref) || void 0 === i || null === (n = i.current) || void 0 === n || null === (t = n.layerRef) || void 0 === t || null === (e = t.current) || void 0 === e || e.updatePosition()
+      null == (o = r.current) || null == (i = o.ref) || null == (n = i.current) || null == (t = n.layerRef) || null == (e = t.current) || e.updatePosition()
     }
   }, [l]), (0, s.ZP)(() => {
     let e = setTimeout(t, 20 + 20 * Math.random());
@@ -201,7 +201,7 @@ function y(e) {
 
   function g() {
     var e, t, n, o;
-    let s = null === (o = r.current) || void 0 === o ? void 0 : null === (n = o.ref) || void 0 === n ? void 0 : null === (t = n.current) || void 0 === t ? void 0 : null === (e = t.domElementRef) || void 0 === e ? void 0 : e.current,
+    let s = null == (o = r.current) || null == (n = o.ref) || null == (t = n.current) || null == (e = t.domElementRef) ? void 0 : e.current,
       l = Math.max(100, null == s ? 100 : s.offsetWidth - 20);
     return (0, i.jsx)("div", {
       className: u.loader,
@@ -211,24 +211,24 @@ function y(e) {
       children: (0, i.jsx)(a.$, {})
     })
   }
-  let [E, b] = o.useState(() => d), y = o.useRef(d);
+  let [E, b] = o.useState(() => d), v = o.useRef(d);
   return o.useEffect(() => {
-    y.current = d
+    v.current = d
   }), o.useEffect(() => {
     _.current ? t().then(e => {
       b(() => e), c(e => e + 1)
-    }) : b(y.current)
-  }, [t]), (0, i.jsx)(v, p(f({
+    }) : b(v.current)
+  }, [t]), (0, i.jsx)(y, p(f({
     ref: r
   }, n), {
     renderPopout: E
   }))
 }
-d(v, "Animation", g), d(v, "defaultProps", {
+d(y, "Animation", g), d(y, "defaultProps", {
   position: "right",
   autoInvert: !0,
   nudgeAlignIntoViewport: !0,
   spacing: 8,
   animation: "2",
   positionKey: void 0
-}), y.Animation = g
+}), v.Animation = g

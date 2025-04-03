@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(826298),
   f = n(665692),
   _ = n(388032),
-  p = n(347688);
+  p = n(893541);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,7 +56,7 @@ function E(e, t) {
 }
 let b = 200;
 
-function v(e, t, n) {
+function y(e, t, n) {
   return (0, r.jsx)(u.Z, {
     className: p.option,
     name: e.displayName,
@@ -65,7 +65,7 @@ function v(e, t, n) {
   }, e.name)
 }
 
-function y(e) {
+function v(e) {
   let {
     command: t,
     optionStates: n,
@@ -76,17 +76,17 @@ function y(e) {
     unsetOptionalOptions: u
   } = i.useMemo(() => {
     var e, r, i, o;
-    let a = null !== (i = null === (e = t.options) || void 0 === e ? void 0 : e.filter(e => e.required)) && void 0 !== i ? i : [],
-      s = null !== (o = null === (r = t.options) || void 0 === r ? void 0 : r.filter(e => !e.required)) && void 0 !== o ? o : [];
+    let a = null != (i = null == (e = t.options) ? void 0 : e.filter(e => e.required)) ? i : [],
+      s = null != (o = null == (r = t.options) ? void 0 : r.filter(e => !e.required)) ? o : [];
     return {
       requiredOptions: a,
       setOptionalOptions: s.filter(e => {
         var t;
-        return null == n ? void 0 : null === (t = n[e.name]) || void 0 === t ? void 0 : t.hasValue
+        return null == n || null == (t = n[e.name]) ? void 0 : t.hasValue
       }),
       unsetOptionalOptions: s.filter(e => {
         var t;
-        return !(null == n ? void 0 : null === (t = n[e.name]) || void 0 === t ? void 0 : t.hasValue)
+        return !(null == n || null == (t = n[e.name]) ? void 0 : t.hasValue)
       })
     }
   }, [t.options, n]), d = (0, r.jsx)("div", {
@@ -95,12 +95,12 @@ function y(e) {
       variant: "text-sm/normal",
       children: e.displayName
     }, e.name))
-  }), f = a.map(e => v(e, null == n ? void 0 : n[e.name], o)), h = l.length > 0 ? (0, r.jsxs)(r.Fragment, {
+  }), f = a.map(e => y(e, null == n ? void 0 : n[e.name], o)), h = l.length > 0 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6q, {
       className: p.optionalHeader,
       variant: "heading-deprecated-12/semibold",
       children: _.NW.string(_.t["5C107O"])
-    }), l.map(e => v(e, null == n ? void 0 : n[e.name], o))]
+    }), l.map(e => y(e, null == n ? void 0 : n[e.name], o))]
   }) : null, g = u.length > 0 ? (0, r.jsx)(s.ua7, {
     text: d,
     "aria-label": !1,
@@ -135,17 +135,17 @@ function O(e) {
       optionStates: g,
       onOptionClick: E,
       section: b,
-      isSelectable: v = !0
+      isSelectable: y = !0
     } = e,
     O = i.useMemo(() => {
       var e;
-      return null == c ? void 0 : null === (e = c.options) || void 0 === e ? void 0 : e.find(e => e.name === u)
+      return null == c || null == (e = c.options) ? void 0 : e.find(e => e.name === u)
     }, [u, c]),
     I = null != u ? null == g ? void 0 : g[u] : null;
-  s = null != I && (null === (t = I.lastValidationResult) || void 0 === t ? void 0 : t.success) === !1 ? null !== (n = I.lastValidationResult.error) && void 0 !== n ? n : "" : null;
+  s = null != I && (null == (t = I.lastValidationResult) ? void 0 : t.success) === !1 ? null != (n = I.lastValidationResult.error) ? n : "" : null;
   let S = m && null != b ? (0, d.ky)(b) : null;
   return (0, r.jsxs)("div", {
-    className: a()(p.wrapper, v ? null : p.disabled),
+    className: a()(p.wrapper, y ? null : p.disabled),
     children: [null != S ? (0, r.jsx)(S, {
       className: p.image,
       channel: _,
@@ -159,14 +159,14 @@ function O(e) {
         children: [(0, r.jsx)(l.BR, {
           className: p.title,
           children: f.GI + c.displayName
-        }), h ? (0, r.jsx)(y, {
+        }), h ? (0, r.jsx)(v, {
           command: c,
           optionStates: g,
           onOptionClick: E
         }) : null]
       }), (0, r.jsx)(l.wL, {
         className: a()(p.description, null != s ? p.error : null),
-        children: null !== (o = null != s ? s : null == O ? void 0 : O.displayDescription) && void 0 !== o ? o : c.displayDescription
+        children: null != (o = null != s ? s : null == O ? void 0 : O.displayDescription) ? o : c.displayDescription
       })]
     }), (0, r.jsx)(l.dY, {
       className: p.source,

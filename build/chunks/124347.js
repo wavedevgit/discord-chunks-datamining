@@ -22,9 +22,9 @@ var r, i = n(200651),
   g = n(768581),
   E = n(956664),
   b = n(981631),
-  v = n(217702);
+  y = n(217702);
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,7 +40,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -183,8 +183,8 @@ class w extends(r = o.Component) {
         src: f,
         height: g,
         width: E,
-        original: v,
-        sourceMetadata: y
+        original: y,
+        sourceMetadata: v
       }
     } = e;
     if (i && _.Z.increment({
@@ -193,7 +193,7 @@ class w extends(r = o.Component) {
         location: "lazy_image"
       }).enabled) return;
     let O = await fetch(o.url).catch(() => void 0),
-      I = null == O ? void 0 : null === (t = O.headers) || void 0 === t ? void 0 : t.get("content-length"),
+      I = null == O || null == (t = O.headers) ? void 0 : t.get("content-length"),
       S = null != I ? Number(I) : null,
       T = Date.now() - l;
     m.default.track(b.rMx.IMAGE_LOADING_COMPLETED, {
@@ -202,7 +202,7 @@ class w extends(r = o.Component) {
       requested_width: o.width,
       height: g,
       width: E,
-      original_url: v,
+      original_url: y,
       url: f,
       requested_url: o.url,
       format: u,
@@ -212,8 +212,8 @@ class w extends(r = o.Component) {
       low_quality_image_mode: p.ZP.dataSavingMode,
       trigger: a,
       size: S,
-      message_id: null == y ? void 0 : null === (n = y.message) || void 0 === n ? void 0 : n.id,
-      message_sent_timestamp: null == y ? void 0 : null === (r = y.message) || void 0 === r ? void 0 : r.timestamp.getTime(),
+      message_id: null == v || null == (n = v.message) ? void 0 : n.id,
+      message_sent_timestamp: null == v || null == (r = v.message) ? void 0 : r.timestamp.getTime(),
       connection_type: h.Z.getType(),
       effective_connection_speed: h.Z.getEffectiveConnectionSpeed(),
       service_provider: h.Z.getServiceProvider()
@@ -253,8 +253,8 @@ class w extends(r = o.Component) {
       width: r,
       height: i,
       ratio: e,
-      maxWidth: s === v.hV.MOSAIC ? o : void 0,
-      maxHeight: s === v.hV.MOSAIC ? a : void 0,
+      maxWidth: s === y.hV.MOSAIC ? o : void 0,
+      maxHeight: s === y.hV.MOSAIC ? a : void 0,
       format: l,
       quality: c,
       animated: !t,
@@ -270,7 +270,7 @@ class w extends(r = o.Component) {
       mediaLayoutType: i,
       useFullWidth: o
     } = this.props;
-    return i === v.hV.MOSAIC && o ? (0, E.rn)({
+    return i === y.hV.MOSAIC && o ? (0, E.rn)({
       width: e,
       height: t,
       maxWidth: n,
@@ -287,7 +287,7 @@ class w extends(r = o.Component) {
       mediaLayoutType: e,
       responsive: t
     } = this.props;
-    return null != e ? e : t ? v.hV.RESPONSIVE : v.hV.STATIC
+    return null != e ? e : t ? y.hV.RESPONSIVE : y.hV.STATIC
   }
   loadImage(e, t) {
     let {
@@ -318,8 +318,8 @@ class w extends(r = o.Component) {
       height: m,
       minWidth: g,
       minHeight: E,
-      maxWidth: v,
-      maxHeight: y,
+      maxWidth: y,
+      maxHeight: v,
       onClick: I,
       renderAccessory: S,
       tabIndex: T,
@@ -333,7 +333,7 @@ class w extends(r = o.Component) {
       readyState: L,
       hasMouseOver: x,
       hasFocus: M
-    } = this.state, k = null != n, j = this.getRatio(), U = (0, a.clamp)(Math.round(h * j), null != g ? g : 0, null != v ? v : 1 / 0), G = (0, a.clamp)(Math.round(m * j), null != E ? E : 0, null != y ? y : 1 / 0), B = {
+    } = this.state, k = null != n, j = this.getRatio(), U = (0, a.clamp)(Math.round(h * j), null != g ? g : 0, null != y ? y : 1 / 0), G = (0, a.clamp)(Math.round(m * j), null != E ? E : 0, null != v ? v : 1 / 0), B = {
       alt: e,
       readyState: L,
       onContextMenu: null != o ? o : void 0,
@@ -403,15 +403,15 @@ class w extends(r = o.Component) {
     }, B))
   }
   constructor(e) {
-    super(e), y(this, "state", {
+    super(e), v(this, "state", {
       readyState: b.zo9.LOADING,
       hasMouseOver: !1,
       hasFocus: !1
-    }), y(this, "startLoadingTime", Date.now()), y(this, "_cancellers", new Set), y(this, "_imageRef", o.createRef()), y(this, "observeVisibility", () => {
+    }), v(this, "startLoadingTime", Date.now()), v(this, "_cancellers", new Set), v(this, "_imageRef", o.createRef()), v(this, "observeVisibility", () => {
       w.visibilityObserver.observe(this, this._imageRef)
-    }), y(this, "unobserveVisibility", () => {
+    }), v(this, "unobserveVisibility", () => {
       w.visibilityObserver.unobserve(this)
-    }), y(this, "handleImageLoad", (e, t) => {
+    }), v(this, "handleImageLoad", (e, t) => {
       this.setState({
         readyState: e ? b.zo9.ERROR : b.zo9.READY
       }, () => {
@@ -423,7 +423,7 @@ class w extends(r = o.Component) {
         w.trackLoadingCompleted({
           error: e,
           imageData: t,
-          trigger: null !== (n = this.props.trigger) && void 0 !== n ? n : "LOAD",
+          trigger: null != (n = this.props.trigger) ? n : "LOAD",
           startLoadingTime: this.startLoadingTime,
           readyState: this.state.readyState,
           format: r,
@@ -431,7 +431,7 @@ class w extends(r = o.Component) {
           imageProps: this.props
         })
       })
-    }), y(this, "onMouseEnter", e => {
+    }), v(this, "onMouseEnter", e => {
       w.isAnimated(this.props) && this.setState({
         hasMouseOver: !0
       });
@@ -439,7 +439,7 @@ class w extends(r = o.Component) {
         onMouseEnter: t
       } = this.props;
       null == t || t(e)
-    }), y(this, "onMouseLeave", e => {
+    }), v(this, "onMouseLeave", e => {
       w.isAnimated(this.props) && this.setState({
         hasMouseOver: !1
       });
@@ -447,11 +447,11 @@ class w extends(r = o.Component) {
         onMouseLeave: t
       } = this.props;
       null == t || t(e)
-    }), y(this, "onFocus", e => {
+    }), v(this, "onFocus", e => {
       w.isAnimated(this.props) && this.setState({
         hasFocus: !0
       })
-    }), y(this, "onBlur", e => {
+    }), v(this, "onBlur", e => {
       let {
         currentTarget: t,
         relatedTarget: n
@@ -459,7 +459,7 @@ class w extends(r = o.Component) {
       t.contains(n) || this.setState({
         hasFocus: !1
       })
-    }), y(this, "onClick", e => {
+    }), v(this, "onClick", e => {
       let {
         onZoom: t,
         onClick: n
@@ -468,7 +468,7 @@ class w extends(r = o.Component) {
         zoomThumbnailPlaceholder: this.getSrc(this.getRatio()),
         trigger: "CLICK"
       }))
-    }), y(this, "renderAccessory", () => {
+    }), v(this, "renderAccessory", () => {
       let {
         hasMouseOver: e,
         hasFocus: t
@@ -477,9 +477,9 @@ class w extends(r = o.Component) {
     }), (0, f.Vv)(this.getSrc(this.getRatio(), w.isAnimated(this.props))) && (this.state.readyState = b.zo9.READY)
   }
 }
-y(w, "visibilityObserver", new l.Z({
+v(w, "visibilityObserver", new l.Z({
   threshold: .6
-})), y(w, "defaultProps", {
+})), v(w, "defaultProps", {
   shouldLink: !1,
   autoPlay: !1,
   animated: !1,

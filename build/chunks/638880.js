@@ -20,8 +20,8 @@ var r = n(252258),
   g = n(574952),
   E = n(917107),
   b = n(89425),
-  v = n(197386),
-  y = n(701488);
+  y = n(197386),
+  v = n(701488);
 
 function O(e) {
   return (0, c.C)((0, c.R)({
@@ -57,7 +57,7 @@ async function I(e) {
   let F = f.ZP.getCurrentEmbeddedActivity();
   (null == F ? void 0 : F.applicationId) != null && (t = i.Z.getApplication(null == F ? void 0 : F.applicationId));
   let V = (null == F ? void 0 : F.location.kind) === r.E.CONTEXTLESS;
-  if ((V || a.Z.getVoiceChannelId() === c) && null != F && F.applicationId === n && (V || (0, h.pY)(F.location) === a.Z.getVoiceChannelId())) return (0, v.Z)(U, F.location), Promise.resolve(!0);
+  if ((V || a.Z.getVoiceChannelId() === c) && null != F && F.applicationId === n && (V || (0, h.pY)(F.location) === a.Z.getVoiceChannelId())) return (0, y.Z)(U, F.location), Promise.resolve(!0);
   let Z = await (0, m.Z)(n, c),
     H = (0, u.Kb)(Z);
   if (L && (H ? (c = void 0, j = void 0) : L = !1), !await (0, p.p)({
@@ -71,7 +71,7 @@ async function I(e) {
     })) return !1;
   if (null != j) {
     let e = (0, E.Z)(j.id),
-      n = y.wP.includes(j.type);
+      n = v.wP.includes(j.type);
     if (e) {
       if (!await (0, b.Z)({
           channelId: j.id,

@@ -74,7 +74,7 @@ let p = 60008;
 
 function h() {
   var e, t;
-  return null !== (t = null === (e = o.default.getCurrentUser()) || void 0 === e ? void 0 : e.mfaEnabled) && void 0 !== t && t
+  return null != (t = null == (e = o.default.getCurrentUser()) ? void 0 : e.mfaEnabled) && t
 }
 
 function m(e, t) {

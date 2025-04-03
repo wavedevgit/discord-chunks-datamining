@@ -71,14 +71,14 @@ function b(e) {
   _ = i
 }
 
-function v(e) {
+function y(e) {
   let {
     platform: t
   } = e;
   p.delete(t)
 }
 
-function y(e) {
+function v(e) {
   let {
     platform: t,
     deviceId: n
@@ -97,14 +97,14 @@ class I extends(r = i.ZP.DeviceSettingsStore) {
   }
   getDevicesForPlatform(e) {
     var t;
-    return null !== (t = f[e]) && void 0 !== t ? t : O
+    return null != (t = f[e]) ? t : O
   }
   getLastSelectedDeviceByPlatform(e) {
     return _[e]
   }
   getDevice(e, t) {
     var n;
-    return null === (n = f[e]) || void 0 === n ? void 0 : n[t]
+    return null == (n = f[e]) ? void 0 : n[t]
   }
   getFetchingDevices(e) {
     return p.has(e)
@@ -126,6 +126,6 @@ let S = new I(o.Z, {
   WAIT_FOR_REMOTE_SESSION: g,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
   GAME_CONSOLE_FETCH_DEVICES_SUCCESS: b,
-  GAME_CONSOLE_FETCH_DEVICES_FAIL: v,
-  GAME_CONSOLE_SELECT_DEVICE: y
+  GAME_CONSOLE_FETCH_DEVICES_FAIL: y,
+  GAME_CONSOLE_SELECT_DEVICE: v
 })

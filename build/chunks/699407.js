@@ -51,7 +51,7 @@ function _(e, t) {
 let p = 1500,
   h = 1e4,
   m = 1500,
-  g = null !== (o = window.requestIdleCallback) && void 0 !== o ? o : e => setImmediate(() => e()),
+  g = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e()),
   E = new c.R,
   b = {
     handleConnectionOpen: () => {},
@@ -59,8 +59,8 @@ let p = 1500,
     handleFingerprint: () => {},
     handleTrack: () => {}
   },
-  v = [],
-  y = null,
+  y = [],
+  v = null,
   O = () => Promise.resolve({
     sessionId: void 0
   }),
@@ -83,28 +83,28 @@ let p = 1500,
     }
 
     function A() {
-      return 0 !== v.length && (null != i ? null != r : null != c())
+      return 0 !== y.length && (null != i ? null != r : null != c())
     }
 
     function C(e) {
       let {
         shouldFlushOnNextTick: t = !1
       } = e;
-      null == y && A() && (y = t ? setTimeout(R, 0) : g(R, {
+      null == v && A() && (v = t ? setTimeout(R, 0) : g(R, {
         timeout: m
       }))
     }
 
     function R() {
-      if (y = null, !A()) return;
-      let e = v.slice();
-      v = [], P(e).then(() => {
+      if (v = null, !A()) return;
+      let e = y.slice();
+      y = [], P(e).then(() => {
         e.forEach(e => {
           var t;
-          null === (t = e.resolve) || void 0 === t || t.call(e)
+          null == (t = e.resolve) || t.call(e)
         })
       }, t => {
-        v.unshift(...e);
+        y.unshift(...e);
         let {
           message: n
         } = t.body || t;
@@ -161,7 +161,7 @@ let p = 1500,
           }, n),
           resolve: o
         }, l = N(s);
-        null != l && (s.properties.client_uuid = E.generate(l)), v.push(s), v.length > h && (v = v.slice(-h)), r ? C({
+        null != l && (s.properties.client_uuid = E.generate(l)), y.push(s), y.length > h && (y = y.slice(-h)), r ? C({
           shouldFlushOnNextTick: !0
         }) : C({
           shouldFlushOnNextTick: !1

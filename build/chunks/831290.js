@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   return {
     name: "Python profiler",
     contains: [e.C_NUMBER_MODE, {
@@ -26,4 +26,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

@@ -9,7 +9,7 @@ var r = n(200651),
   a = n(98528),
   s = n(429155),
   l = n(810462),
-  c = n(833762);
+  c = n(783459);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,8 +62,8 @@ function p(e) {
     defaultSearchPlaceholder: g,
     emptySearchPlaceholder: E,
     renderEmptyState: b,
-    renderRow: v,
-    renderSection: y,
+    renderRow: y,
+    renderSection: v,
     renderSectionHeader: O,
     renderSectionFooter: I,
     renderInspector: S,
@@ -112,24 +112,24 @@ function p(e) {
     onSelectItem: p,
     store: f,
     gridNavigatorId: M
-  }), er = i.useCallback((e, t) => v(K[e], $(e), {
+  }), er = i.useCallback((e, t) => y(K[e], $(e), {
     isUsingKeyboardNavigation: en.current,
     gutterWidth: X,
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, v, f, z]), ei = i.useCallback(e => null == y ? void 0 : y(t[e]), [t, y]), eo = i.useCallback(e => null == O ? void 0 : O(t[e], e), [t, O]), ea = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, y, f, z]), ei = i.useCallback(e => null == v ? void 0 : v(t[e]), [t, v]), eo = i.useCallback(e => null == O ? void 0 : O(t[e], e), [t, O]), ea = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), es = i.useCallback(() => {
     var e;
-    return null == S ? void 0 : S(null == K ? void 0 : null === (e = K[W.rowIndex]) || void 0 === e ? void 0 : e[W.columnIndex])
+    return null == S ? void 0 : S(null == K || null == (e = K[W.rowIndex]) ? void 0 : e[W.columnIndex])
   }, [K, W.columnIndex, W.rowIndex, S]);
   i.useEffect(() => {
     h(H)
   }, [h, H]), i.useEffect(() => {
     var e, t;
-    f.setBottomPosition(null !== (t = null === (e = B.current) || void 0 === e ? void 0 : e.getBoundingClientRect().bottom) && void 0 !== t ? t : null)
+    f.setBottomPosition(null != (t = null == (e = B.current) ? void 0 : e.getBoundingClientRect().bottom) ? t : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
     var e;
-    null === (e = V.current) || void 0 === e || e.focus()
+    null == (e = V.current) || e.focus()
   }, []);
   let el = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Z, {
@@ -163,7 +163,7 @@ function p(e) {
           hasSearchResults: m,
           listPadding: x,
           renderRow: er,
-          renderSection: null != y ? ei : void 0,
+          renderSection: null != v ? ei : void 0,
           renderSectionHeader: null != O ? eo : void 0,
           renderSectionFooter: null != I ? ea : void 0,
           renderInspector: null != S ? es : void 0,

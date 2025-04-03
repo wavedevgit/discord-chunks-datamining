@@ -4,7 +4,7 @@ n.d(t, {
   $s: () => C,
   A0: () => R,
   Sg: () => T,
-  ow: () => v,
+  ow: () => y,
   rQ: () => N,
   t$: () => A,
   tM: () => O
@@ -47,11 +47,11 @@ function b(e) {
   return e
 }
 
-function v(e) {
+function y(e) {
   return null == e || "" === e || Number.isNaN(e) ? Date.now() : d.default.extractTimestamp(e) + 9e5
 }
 
-function y(e) {
+function v(e) {
   return null == e || "" === e || Number.isNaN(e) ? Date.now() : d.default.extractTimestamp(e) + 3e3
 }
 let O = async e => {
@@ -77,7 +77,7 @@ let O = async e => {
     },
     onFailure: (e, t) => S(p, e, t)
   }), null != g && (0, f.B0)(n, E, g, s);
-  let v = {
+  let y = {
     type: a.B8.MESSAGE_COMPONENT,
     nonce: E,
     guild_id: h,
@@ -93,7 +93,7 @@ let O = async e => {
   };
   await r.tn.post({
     url: m.ANM.INTERACTIONS,
-    body: v,
+    body: y,
     timeout: 3e3,
     rejectWithError: !1
   }, e => {
@@ -115,10 +115,10 @@ let S = (e, t, n) => {
   },
   T = (e, t, n, r, o) => {
     if (!t.ok) {
-      if (!t.hasErr) {
-        var a;
-        if (t.status >= 400 && t.status < 500 && t.body) {
-          if (t.body.code === m.evJ.INVALID_FORM_BODY && t.body.errors) {
+      if (!t.hasErr)
+        if (t.status >= 400 && t.status < 500 && t.body)
+          if (t.body.code !== m.evJ.INVALID_FORM_BODY || !t.body.errors) return void(0, f.yr)(e, t.body.code, t.body.message, t.status);
+          else {
             let a = (0, h.e)(t.body.errors);
             null != a && ("INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" === a.code || "INTERACTION_APPLICATION_COMMAND_INVALID" === a.code) && i.Z.dispatch({
               type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION",
@@ -127,9 +127,10 @@ let S = (e, t, n) => {
               guildId: null != o ? o : null
             }), (0, f.yr)(e, void 0, null == a ? void 0 : a.message);
             return
-          }(0, f.yr)(e, t.body.code, t.body.message, t.status);
-          return
-        }(0, f.yr)(e, null === (a = t.body) || void 0 === a ? void 0 : a.code);
+          }
+      else {
+        var a;
+        (0, f.yr)(e, null == (a = t.body) ? void 0 : a.code);
         return
       }(0, f.yr)(e)
     }
@@ -139,8 +140,8 @@ var N = function(e) {
 }({});
 let A = (e, t) => {
   let n = null == t ? void 0 : t.state,
-    r = e.state === m.yb.SENT && v(e.id) < Date.now(),
-    i = e.state === m.yb.SEND_FAILED && y(e.id) < Date.now(),
+    r = e.state === m.yb.SENT && y(e.id) < Date.now(),
+    i = e.state === m.yb.SEND_FAILED && v(e.id) < Date.now(),
     o = (null == t ? void 0 : t.data.interactionType) === a.B8.APPLICATION_COMMAND,
     s = e.isCommandType();
   if (o && n === p.F.QUEUED || s && e.state === m.yb.SENDING && null != t) return 0;

@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(228168),
   g = n(981631),
   E = n(388032),
-  b = n(386031),
-  v = n(425637),
-  y = n(685741);
+  b = n(185467),
+  y = n(425637),
+  v = n(685741);
 let O = 200,
   I = 32,
   S = 30;
@@ -37,7 +37,7 @@ function T(e) {
     location: "UserProfilePopoutInteractionCoachmark"
   }), C = (0, o.e7)([_.default], () => {
     var e;
-    return (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === T.id
+    return (null == (e = _.default.getCurrentUser()) ? void 0 : e.id) === T.id
   }), R = (0, o.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
     let {
       type: t
@@ -54,7 +54,7 @@ function T(e) {
     spacing: U,
     dismissibleContentType: G
   } = A ? {
-    asset: y,
+    asset: v,
     assetClassName: b.profileImage,
     className: b.profileCoachmark,
     content: E.NW.string(E.t.HEGlIC),
@@ -62,7 +62,7 @@ function T(e) {
     spacing: S,
     dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
   } : {
-    asset: v,
+    asset: y,
     assetClassName: void 0,
     className: b.activityCoachmark,
     content: E.NW.string(E.t.LQ32TU),

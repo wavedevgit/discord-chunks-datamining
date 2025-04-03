@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = "HTTP/([32]|1\\.[01])",
     r = /[A-Za-z][A-Za-z0-9-]*/,
@@ -70,4 +70,3 @@ function t(e) {
     })]
   }
 }
-e.exports = t

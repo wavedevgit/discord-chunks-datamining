@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = ["package", "import", "option", "optional", "required", "repeated", "group", "oneof"],
     n = ["double", "float", "int32", "int64", "uint32", "uint64", "sint32", "sint64", "fixed32", "fixed64", "sfixed32", "sfixed64", "bool", "string", "bytes"],
     r = {
@@ -28,4 +28,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

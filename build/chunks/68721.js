@@ -25,7 +25,7 @@ let f = new i.Yd("Output"),
 class p extends r.EventEmitter {
   destroy() {
     var e, t, n;
-    this.removeAllListeners(), null === (e = (t = this).cleanup) || void 0 === e || e.call(t), this.reset(), null != this.stream && (_.release(this.stream), this.stream = void 0), null === (n = this._audioFilter) || void 0 === n || n.dispose(), this._audioFilter = void 0, this.destroyed = !0
+    this.removeAllListeners(), null == (e = (t = this).cleanup) || e.call(t), this.reset(), null != this.stream && (_.release(this.stream), this.stream = void 0), null == (n = this._audioFilter) || n.dispose(), this._audioFilter = void 0, this.destroyed = !0
   }
   reset() {
     this.setSpeaking(!1)
@@ -93,7 +93,7 @@ class p extends r.EventEmitter {
         let t = await (0, s.n)();
         this._audioFilter = await t.createNoiseFilter(this.context), this._audioFilter.addEventListener("ready", e => {
           var t;
-          null === (t = this._audioFilter) || void 0 === t || t.enable()
+          null == (t = this._audioFilter) || t.enable()
         }), this._audioFilter.addEventListener("dispose", t => {
           _.release(e)
         });
@@ -124,7 +124,7 @@ class p extends r.EventEmitter {
     this.sourceId !== e && (this.sourceId = e, null != this.stream && this.enable())
   }
   setPTTActive(e) {
-    !this.mute && this.speaking !== e && (null != this.pttReleaseDelayTimeout && (window.clearTimeout(this.pttReleaseDelayTimeout), this.pttReleaseDelayTimeout = void 0), e ? this.setSpeaking(e) : this.pttReleaseDelayTimeout = window.setTimeout(() => {
+    this.mute || this.speaking !== e && (null != this.pttReleaseDelayTimeout && (window.clearTimeout(this.pttReleaseDelayTimeout), this.pttReleaseDelayTimeout = void 0), e ? this.setSpeaking(e) : this.pttReleaseDelayTimeout = window.setTimeout(() => {
       this.setSpeaking(!1), this.pttReleaseDelayTimeout = void 0
     }, this.modeOptions.delay))
   }

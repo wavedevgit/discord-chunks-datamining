@@ -16,9 +16,9 @@ var r = n(135839),
   g = c(i),
   E = c(o),
   b = c(a),
-  v = c(s),
-  y = l;
-(r && y(new r(new ArrayBuffer(1))) != h || i && y(new i) != u || o && y(o.resolve()) != f || a && y(new a) != _ || s && y(new s) != p) && (y = function(e) {
+  y = c(s),
+  v = l;
+(r && v(new r(new ArrayBuffer(1))) != h || i && v(new i) != u || o && v(o.resolve()) != f || a && v(new a) != _ || s && v(new s) != p) && (v = function(e) {
   var t = l(e),
     n = t == d ? e.constructor : void 0,
     r = n ? c(n) : "";
@@ -31,8 +31,8 @@ var r = n(135839),
       return f;
     case b:
       return _;
-    case v:
+    case y:
       return p
   }
   return t
-}), e.exports = y
+}), e.exports = v

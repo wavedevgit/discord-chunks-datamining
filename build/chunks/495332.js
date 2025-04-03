@@ -62,8 +62,8 @@ function _(e) {
     onItemMouseEnter: g,
     buttonOverlay: E,
     isNitroLocked: b,
-    shouldShowUpsell: v,
-    refreshEnabled: y,
+    shouldShowUpsell: y,
+    refreshEnabled: v,
     inExpressionPicker: O
   } = e, I = i.Wq.useStore(e => e.inspectedExpressionPosition), S = "".concat(c, "-").concat(d), T = _ && I.rowIndex === c && I.columnIndex === d;
   switch (t.item.type) {
@@ -78,8 +78,8 @@ function _(e) {
         enableSecondaryActions: !0,
         buttonOverlay: E,
         inNitroLockedSection: b,
-        showLockForDisabledSound: v,
-        refreshEnabled: y,
+        showLockForDisabledSound: y,
+        refreshEnabled: v,
         isSoundmoji: !0 === O
       }));
     case o.vB.ADD_SOUND:
@@ -88,7 +88,7 @@ function _(e) {
         guild: t.item.guild,
         focused: T,
         onSelectItem: () => m(t),
-        refreshEnabled: y
+        refreshEnabled: v
       }));
     case o.vB.SHOW_ALL:
       return (0, r.createElement)(s.Z, f(u({}, h(d)), {

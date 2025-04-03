@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   e.regex;
   let t = e.COMMENT(/\(;/, /;\)/);
   t.contains.push("self");
@@ -45,4 +45,3 @@ function t(e) {
     }, e.QUOTE_STRING_MODE, i, o, r]
   }
 }
-e.exports = t

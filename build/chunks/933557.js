@@ -19,7 +19,7 @@ var r = n(442837),
 function d(e, t, n) {
   let r = e.recipients.map(t.getUser).filter(s.lm).map(e => {
     var t;
-    return null !== (t = n.getNickname(e.id)) && void 0 !== t ? t : l.ZP.getName(e)
+    return null != (t = n.getNickname(e.id)) ? t : l.ZP.getName(e)
   });
   return r.length > 0 ? r.join(", ") : u.NW.formatToPlainString(u.t["9Uk8PD"], {
     name: l.ZP.getName(t.getCurrentUser())
@@ -40,7 +40,7 @@ function _(e, t, n) {
       if (null == a) return "???";
       if (a.isProvisional && null != a.globalName) return a.globalName;
       let u = n.getNickname(a.id),
-        f = null !== (o = null != u ? u : l.ZP.getName(a)) && void 0 !== o ? o : "???";
+        f = null != (o = null != u ? u : l.ZP.getName(a)) ? o : "???";
       return r ? "@".concat(f) : f;
     case c.d4z.GROUP_DM:
       if ("" !== e.name) return e.name;

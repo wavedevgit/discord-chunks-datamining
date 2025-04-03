@@ -11,13 +11,9 @@ var r = n(544891),
 
 function l(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-  if (a.Z.isFullServerPreview(e)) {
-    (0, o.aq)(e, {
-      memberOptions: t
-    });
-    return
-  }
-  return i.Z.dispatch({
+  return a.Z.isFullServerPreview(e) ? void(0, o.aq)(e, {
+    memberOptions: t
+  }) : (i.Z.dispatch({
     type: "GUILD_MEMBER_UPDATE_LOCAL",
     guildId: e,
     roles: t.roles,
@@ -27,5 +23,5 @@ function l(e, t) {
     body: t,
     oldFormErrors: !!n || void 0,
     rejectWithError: !1
-  })
+  }))
 }

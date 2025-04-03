@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = e.regex,
     n = "[a-zA-Z_][a-zA-Z0-9_.]*(!|\\?)?",
     r = "[a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?",
@@ -160,4 +160,3 @@ function t(e) {
     contains: g
   }
 }
-e.exports = t

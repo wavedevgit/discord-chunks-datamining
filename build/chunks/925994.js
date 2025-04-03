@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  sg: () => y,
+  sg: () => v,
   sk: () => b
 }), n(47120), n(653041), n(757143), n(301563);
 var r = n(512722),
@@ -62,7 +62,7 @@ function b(e, t) {
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
   } = null != t ? t : {}, [o, a] = (null == t ? void 0 : t.range) != null ? p.M8.edges(t.range) : [void 0, void 0];
-  return v(e, {
+  return y(e, {
     mode: n,
     start: o,
     end: a,
@@ -71,7 +71,7 @@ function b(e, t) {
   })
 }
 
-function v(e, t) {
+function y(e, t) {
   var n, r;
   let {
     mode: i,
@@ -83,8 +83,8 @@ function v(e, t) {
     preventEmojiSurrogates: u
   } = null != t ? t : {}, d = e.length > 0 && !p.LC.isText(e[0]);
   null == s && (s = d ? "\n" : "");
-  let f = null !== (n = null == o ? void 0 : o.path[0]) && void 0 !== n ? n : 0,
-    _ = null !== (r = null == a ? void 0 : a.path[0]) && void 0 !== r ? r : e.length - 1;
+  let f = null != (n = null == o ? void 0 : o.path[0]) ? n : 0,
+    _ = null != (r = null == a ? void 0 : a.path[0]) ? r : e.length - 1;
   if (c)
     for (let t = _; t >= f; t--) {
       let n = e[t];
@@ -110,7 +110,7 @@ function v(e, t) {
         path: o.path.slice(1),
         offset: o.offset
       } : void 0,
-      s = y(n, {
+      s = v(n, {
         mode: i,
         start: r,
         end: null != a && t === _ ? {
@@ -125,7 +125,7 @@ function v(e, t) {
   return E.join(s)
 }
 
-function y(e, t) {
+function v(e, t) {
   let {
     mode: n,
     start: r,
@@ -136,11 +136,11 @@ function y(e, t) {
   switch (e.type) {
     case "line":
     case "testInline":
-      return v(e.children, t);
+      return y(e.children, t);
     case "testInlineVoid":
       return "";
     case "blockQuote": {
-      let n = v(e.children, t),
+      let n = y(e.children, t),
         o = null != r && 1 === r.path.length && 0 === r.path[0] && 0 === r.offset;
       if (i && (null == r || o)) return "> ".concat(n);
       return n
@@ -199,12 +199,12 @@ function y(e, t) {
     case "timestamp":
       return (0, a.He)(e.parsed.timestamp, e.parsed.format);
     case "applicationCommand":
-      return v(e.children, E(m({}, t), {
+      return y(e.children, E(m({}, t), {
         separator: " ",
         ignoreEmptyNodes: !0
       }));
     case "applicationCommandOption": {
-      let n = v(e.children, t);
+      let n = y(e.children, t);
       if (null == r) return "".concat(e.optionDisplayName, ":").concat(n);
       return n
     }
@@ -217,5 +217,5 @@ function O(e, t) {
     start: o,
     end: a
   } = null != t ? t : {};
-  return i()(null == o || 0 === o.path.length, "Invalid start provided to serializeText"), i()(null == a || 0 === a.path.length, "Invalid end provided to serializeText"), e.substring(null !== (n = null == o ? void 0 : o.offset) && void 0 !== n ? n : 0, null !== (r = null == a ? void 0 : a.offset) && void 0 !== r ? r : e.length)
+  return i()(null == o || 0 === o.path.length, "Invalid start provided to serializeText"), i()(null == a || 0 === a.path.length, "Invalid end provided to serializeText"), e.substring(null != (n = null == o ? void 0 : o.offset) ? n : 0, null != (r = null == a ? void 0 : a.offset) ? r : e.length)
 }

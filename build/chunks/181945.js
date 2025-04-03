@@ -22,7 +22,7 @@ function p(e, t, n) {
       r = s.Z.getActiveJoinedThreadsForGuild(e);
     for (let e of t) {
       var i;
-      let t = null !== (i = r[e]) && void 0 !== i ? i : {};
+      let t = null != (i = r[e]) ? i : {};
       for (let e in t) n.push(e)
     }
     return n

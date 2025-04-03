@@ -51,12 +51,12 @@ function b(e, t) {
   return n
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = {
+let v = {
     link: {
       type: "skip"
     },
@@ -223,15 +223,15 @@ let y = {
   I = {},
   S = {};
 for (let e in d.Z.RULES) {
-  if (!(e in y)) throw Error("Slate: Unknown markdown rule: ".concat(e, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
-  let t = y[e];
+  if (!(e in v)) throw Error("Slate: Unknown markdown rule: ".concat(e, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
+  let t = v[e];
   "skip" !== t.type && (I[e] = T(d.Z.RULES[e])), "skip" !== t.type && "inlineObject" !== t.type && (S[e] = T("text" === e ? f.ZP : d.Z.RULES[e]))
 }
 
 function T(e) {
   i()(null != e.parse, "Slate: rule must have a parse function");
   let t = e.parse;
-  return v(E({}, e), {
+  return y(E({}, e), {
     parse(e, n, r) {
       let i = t.call(this, e, n, r);
       return i instanceof Array || (i.originalMatch = e), i
@@ -348,7 +348,7 @@ function j(e, t) {
       n += 3 + (null != a.match(m.Q2) ? a : "").length;
       let l = e.substring(o, n);
       "" !== l && k(l, t, r).forEach(e => {
-        s.push(v(E({}, e), {
+        s.push(y(E({}, e), {
           start: e.start + o
         }))
       })
@@ -508,7 +508,7 @@ function B(e, t, n, r) {
     before: C.exec(r.input)[1],
     after: ""
   };
-  let i = y["link" === t ? "url" : t];
+  let i = v["link" === t ? "url" : t];
   if ("inlineStyle" === i.type) return i;
   throw Error("Slate: rule must be an inlineStyle")
 }

@@ -16,7 +16,7 @@ function a(e) {
   let {
     pathname: a,
     hostname: s
-  } = null !== (n = r.Z.toURLSafe(e)) && void 0 !== n ? n : {};
+  } = null != (n = r.Z.toURLSafe(e)) ? n : {};
   if (null == s) return null;
   let l = o[s];
   if (null != l && null != a && !l.test(a) || null == a) return null;
@@ -42,6 +42,6 @@ function a(e) {
   if (null == d) return null;
   let _ = d.split(".");
   if (_.length < 2) return null;
-  let p = null === (t = _.pop()) || void 0 === t ? void 0 : t.toLowerCase();
+  let p = null == (t = _.pop()) ? void 0 : t.toLowerCase();
   return null != p && i.has(p) ? p : null
 }

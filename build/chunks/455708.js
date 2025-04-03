@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(215016),
   E = n(981631),
   b = n(149203),
-  v = n(388032),
-  y = n(264723);
+  y = n(388032),
+  v = n(386683);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,24 +89,24 @@ class A extends i.PureComponent {
       case E.wI2.FAVORITES:
         return (0, r.jsx)(c.vwX, {
           tag: "h5",
-          className: y.searchHeader,
-          children: v.NW.string(v.t.y3LQCA)
+          className: v.searchHeader,
+          children: y.NW.string(y.t.y3LQCA)
         });
       case E.wI2.TRENDING_GIFS:
         return (0, r.jsx)(c.vwX, {
           tag: "h5",
-          className: y.searchHeader,
-          children: v.NW.string(v.t.H6zNFx)
+          className: v.searchHeader,
+          children: y.NW.string(y.t.H6zNFx)
         });
       default:
         return (0, r.jsx)(c.E1j, {
-          className: y.searchBar,
+          className: v.searchBar,
           size: c.E1j.Sizes.MEDIUM,
           query: e,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
-          placeholder: v.NW.string(v.t.TnYqkZ),
-          "aria-label": v.NW.string(v.t.TnYqkZ),
+          placeholder: y.NW.string(y.t.TnYqkZ),
+          "aria-label": y.NW.string(y.t.TnYqkZ),
           ref: this.props.searchBarRef,
           autoFocus: !0
         })
@@ -118,8 +118,8 @@ class A extends i.PureComponent {
     } = this.state, t = null;
     return null != e && (t = (0, r.jsx)(c.P3F, {
       onClick: this.handleClearQuery,
-      className: y.backButton,
-      "aria-label": v.NW.string(v.t["13/7kZ"]),
+      className: v.backButton,
+      "aria-label": y.NW.string(y.t["13/7kZ"]),
       children: (0, r.jsx)(c.whL, {
         size: "md",
         color: "currentColor"
@@ -171,14 +171,14 @@ class A extends i.PureComponent {
       id: b.vO,
       role: "tabpanel",
       "aria-labelledby": b._3,
-      className: a()(y.container, e),
+      className: a()(v.container, e),
       onClick: N,
       ref: t,
       children: [(0, r.jsx)("div", {
-        className: y.header,
+        className: v.header,
         children: this.renderHeader()
       }), (0, r.jsx)("div", {
-        className: y.content,
+        className: v.content,
         children: this.renderContent()
       })]
     })
@@ -246,7 +246,7 @@ let C = i.forwardRef((e, t) => {
   return i.useLayoutEffect(() => {
     if (d) {
       var e;
-      null === (e = g.current) || void 0 === e || e.focus()
+      null == (e = g.current) || e.focus()
     }
   }, [d, g]), (0, r.jsx)(A, T(I({}, e), {
     forwardedRef: t,

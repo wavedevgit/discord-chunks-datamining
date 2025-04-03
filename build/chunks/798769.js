@@ -14,7 +14,7 @@ var i = n(442837),
   u = n(616030),
   d = n(474936),
   f = n(388032),
-  _ = n(306359);
+  _ = n(451316);
 
 function p(e) {
   let {
@@ -26,8 +26,8 @@ function p(e) {
     onClose: g,
     hideCloseButton: E,
     showTrialBadge: b,
-    showDiscountBadge: v,
-    isGift: y,
+    showDiscountBadge: y,
+    isGift: v,
     giftRecipient: O
   } = e, I = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), S = m ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
     switch (t) {
@@ -41,7 +41,7 @@ function p(e) {
         return f.NW.string(f.t["7YWj6+"])
     }
   };
-  return y && (0, l.pO)(O) && t !== s.h8.CONFIRM ? (0, r.jsxs)(o.xBx, {
+  return v && (0, l.pO)(O) && t !== s.h8.CONFIRM ? (0, r.jsxs)(o.xBx, {
     className: _.modalHeaderCustomGift,
     separator: !1,
     children: [(0, r.jsx)(o.X6q, {
@@ -81,7 +81,7 @@ function p(e) {
       onClose: g,
       headerTheme: S,
       showTrialBadge: b,
-      showDiscountBadge: v
+      showDiscountBadge: y
     })
   })
 }

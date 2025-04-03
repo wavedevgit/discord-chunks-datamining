@@ -10,7 +10,7 @@ n.d(t, {
 });
 var r, i = n(264344),
   o = n.n(i);
-let a = parseInt(null !== (r = o().version) && void 0 !== r ? r : "0", 10),
+let a = parseInt(null != (r = o().version) ? r : "0", 10),
   s = void 0 !== o().ua && o().ua.indexOf("OculusBrowser") > -1,
   l = (() => {
     if (null == window.WebSocket) return !1;

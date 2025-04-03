@@ -16,8 +16,7 @@ let c = 5e3,
   f = 1001,
   _ = 1002;
 async function p(e, t) {
-  let n;
-  let s = performance.now(),
+  let n, s = performance.now(),
     p = 0,
     m = [];
   switch (e.type) {
@@ -58,7 +57,7 @@ async function p(e, t) {
       });
       return
     }
-    return 429 === n.status ? (m.push(429), g(n.body.retry_after * a.Z.Millis.SECOND)) : (m.push(null !== (r = n.status) && void 0 !== r ? r : d), b({
+    return 429 === n.status ? (m.push(429), g(n.body.retry_after * a.Z.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), b({
       error: !0
     }), i.Z.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",

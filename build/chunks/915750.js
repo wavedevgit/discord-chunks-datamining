@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   B5: () => T,
-  PI: () => y,
+  PI: () => v,
   WD: () => C,
   aM: () => R,
   ui: () => P
@@ -59,8 +59,8 @@ function E(e, t) {
   }), e
 }
 let b = 60,
-  v = 1,
-  y = .5,
+  y = 1,
+  v = .5,
   O = new Set;
 
 function I(e, t) {
@@ -81,7 +81,7 @@ class S {
     trackGuildAndChannelMetadata: i,
     questContentPosition: s,
     questContentRowIndex: u,
-    minViewTimeSeconds: g = v
+    minViewTimeSeconds: g = y
   }) {
     var T = this;
     h(this, "id", void 0), h(this, "quests", void 0), h(this, "questContent", void 0), h(this, "triggeredByStatusChange", void 0), h(this, "trackGuildAndChannelMetadata", void 0), h(this, "questContentPosition", void 0), h(this, "questContentRowIndex", void 0), h(this, "adDecisionData", void 0), h(this, "heartbeatTimeoutId", void 0), h(this, "lastBeatTime", void 0), h(this, "minViewTimeReachedTimeoutId", void 0), h(this, "minViewTimeSeconds", void 0), h(this, "minViewportPercentage", void 0), h(this, "isRunning", !1), h(this, "onMinViewTimeReached", () => {
@@ -161,7 +161,7 @@ class S {
     }), h(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
       e && T.beat(!0), T.lastBeatTime = void 0, clearInterval(T.heartbeatTimeoutId), clearTimeout(T.minViewTimeReachedTimeoutId), T.isRunning = !1
-    }), this.id = (0, o.Z)(), this.adDecisionData = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = g, this.minViewportPercentage = y, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = u
+    }), this.id = (0, o.Z)(), this.adDecisionData = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = g, this.minViewportPercentage = v, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = u
   }
 }
 let T = (e, t) => {
@@ -182,7 +182,7 @@ function C() {
 
 function R() {
   var e;
-  return null === (e = C()) || void 0 === e ? void 0 : e.getId()
+  return null == (e = C()) ? void 0 : e.getId()
 }
 
 function P(e) {

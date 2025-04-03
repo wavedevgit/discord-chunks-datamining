@@ -93,8 +93,8 @@ let b = {
     syncProfileThemeWithUserTheme: !1,
     hideGuildTags: !1
   },
-  v = b,
-  y = {
+  y = b,
+  v = {
     12: "font-size-12",
     14: "font-size-14",
     15: "font-size-15",
@@ -110,111 +110,111 @@ function O(e) {
 
 function I(e) {
   let t = O(e.fontSize);
-  if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || v.fontSize === t) return !1;
-  (v = p({}, v)).fontSize = t
+  if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || y.fontSize === t) return !1;
+  (y = p({}, y)).fontSize = t
 }
 
 function S(e) {
-  if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || v.zoom === e.zoom) return !1;
-  (v = p({}, v)).zoom = e.zoom, u.Z.setZoomFactor(v.zoom)
+  if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || y.zoom === e.zoom) return !1;
+  (y = p({}, y)).zoom = e.zoom, u.Z.setZoomFactor(y.zoom)
 }
 
 function T() {
-  let e = v.fontSize !== d.yqN.FONT_SIZE_DEFAULT,
-    t = v.zoom !== d.yqN.ZOOM_DEFAULT;
+  let e = y.fontSize !== d.yqN.FONT_SIZE_DEFAULT,
+    t = y.zoom !== d.yqN.ZOOM_DEFAULT;
   if (!e && !t) return !1;
-  (v = p({}, v)).fontSize !== d.yqN.FONT_SIZE_DEFAULT && (v.fontSize = d.yqN.FONT_SIZE_DEFAULT), v.zoom !== d.yqN.ZOOM_DEFAULT && (v.zoom = d.yqN.ZOOM_DEFAULT, u.Z.setZoomFactor(v.zoom))
+  (y = p({}, y)).fontSize !== d.yqN.FONT_SIZE_DEFAULT && (y.fontSize = d.yqN.FONT_SIZE_DEFAULT), y.zoom !== d.yqN.ZOOM_DEFAULT && (y.zoom = d.yqN.ZOOM_DEFAULT, u.Z.setZoomFactor(y.zoom))
 }
 
 function N() {
-  if (v.keyboardModeEnabled) return !1;
-  (v = p({}, v)).keyboardModeEnabled = !0
+  if (y.keyboardModeEnabled) return !1;
+  (y = p({}, y)).keyboardModeEnabled = !0
 }
 
 function A() {
-  if (!v.keyboardModeEnabled) return !1;
-  (v = p({}, v)).keyboardModeEnabled = !1
+  if (!y.keyboardModeEnabled) return !1;
+  (y = p({}, y)).keyboardModeEnabled = !1
 }
 
 function C() {
-  (v = p({}, v)).colorblindMode = !v.colorblindMode
+  (y = p({}, y)).colorblindMode = !y.colorblindMode
 }
 
 function R() {
-  (v = p({}, v)).lowContrastMode = !v.lowContrastMode
+  (y = p({}, y)).lowContrastMode = !y.lowContrastMode
 }
 
 function P(e) {
-  v.syncForcedColors = e.syncForcedColors
+  y.syncForcedColors = e.syncForcedColors
 }
 
 function w(e) {
-  (v = p({}, v)).saturation = e.saturation
+  (y = p({}, y)).saturation = e.saturation
 }
 
 function D() {
-  (v = p({}, v)).desaturateUserColors = !v.desaturateUserColors
+  (y = p({}, y)).desaturateUserColors = !y.desaturateUserColors
 }
 
 function L(e) {
-  v.roleStyle = e.roleStyle
+  y.roleStyle = e.roleStyle
 }
 
 function x() {
-  (v = p({}, v)).submitButtonEnabled = !v.submitButtonEnabled
+  (y = p({}, y)).submitButtonEnabled = !y.submitButtonEnabled
 }
 
 function M() {
-  (v = p({}, v)).syncProfileThemeWithUserTheme = !v.syncProfileThemeWithUserTheme
+  (y = p({}, y)).syncProfileThemeWithUserTheme = !y.syncProfileThemeWithUserTheme
 }
 
 function k(e) {
-  if (v.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
-  v = m(p({}, v), {
+  if (y.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
+  y = m(p({}, y), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
   })
 }
 
 function j(e) {
-  if (v.systemPrefersCrossfades === e.systemPrefersCrossfades) return !1;
-  v = m(p({}, v), {
+  if (y.systemPrefersCrossfades === e.systemPrefersCrossfades) return !1;
+  y = m(p({}, y), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
   })
 }
 
 function U(e) {
-  if (v.prefersReducedMotion === e.prefersReducedMotion) return !1;
-  v = m(p({}, v), {
+  if (y.prefersReducedMotion === e.prefersReducedMotion) return !1;
+  y = m(p({}, y), {
     prefersReducedMotion: e.prefersReducedMotion
   })
 }
 
 function G(e) {
-  if (v.systemPrefersContrast === e.systemPrefersContrast) return !1;
-  v = m(p({}, v), {
+  if (y.systemPrefersContrast === e.systemPrefersContrast) return !1;
+  y = m(p({}, y), {
     systemPrefersContrast: e.systemPrefersContrast
   })
 }
 
 function B(e) {
-  v = m(p({}, v), {
+  y = m(p({}, y), {
     alwaysShowLinkDecorations: e.alwaysShowLinkDecorations
   })
 }
 
 function F(e) {
   var t;
-  return v = m(p({}, v), {
-    systemForcedColors: null !== (t = e.systemForcedColors) && void 0 !== t ? t : "none"
+  return y = m(p({}, y), {
+    systemForcedColors: null != (t = e.systemForcedColors) ? t : "none"
   }), !0
 }
 
 function V() {
-  v.forcedColorsModalSeen = !0
+  y.forcedColorsModalSeen = !0
 }
 
 function Z() {
-  v = m(p({}, v), {
+  y = m(p({}, y), {
     keyboardNavigationExplainerModalSeen: !0
   })
 }
@@ -223,7 +223,7 @@ function H(e) {
   let {
     messageGroupSpacing: t
   } = e;
-  v = m(p({}, v), {
+  y = m(p({}, y), {
     messageGroupSpacing: t
   })
 }
@@ -232,7 +232,7 @@ function W(e) {
   let {
     contrast: t
   } = e;
-  v = m(p({}, v), {
+  y = m(p({}, y), {
     contrast: t
   })
 }
@@ -241,66 +241,66 @@ function Y(e) {
   let {
     hideTags: t
   } = e;
-  v = m(p({}, v), {
+  y = m(p({}, y), {
     hideGuildTags: t
   })
 }
 class K extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(c.Z), isNaN((v = p({}, b, null != e ? e : null)).fontSize) && (v.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != v.messageGroupSpacing ? v.messageGroupSpacing : -1) && (v.messageGroupSpacing = null)
+    this.waitFor(c.Z), isNaN((y = p({}, b, null != e ? e : null)).fontSize) && (y.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != y.messageGroupSpacing ? y.messageGroupSpacing : -1) && (y.messageGroupSpacing = null)
   }
   get fontScale() {
-    return v.fontSize / d.yqN.FONT_SIZE_DEFAULT * 100
+    return y.fontSize / d.yqN.FONT_SIZE_DEFAULT * 100
   }
   get fontSize() {
-    return v.fontSize
+    return y.fontSize
   }
   get isFontScaledUp() {
-    return v.fontSize > d.yqN.FONT_SIZE_DEFAULT
+    return y.fontSize > d.yqN.FONT_SIZE_DEFAULT
   }
   get isFontScaledDown() {
-    return v.fontSize < d.yqN.FONT_SIZE_DEFAULT
+    return y.fontSize < d.yqN.FONT_SIZE_DEFAULT
   }
   get fontScaleClass() {
     var e;
-    let t = null !== (e = y[this.fontSize]) && void 0 !== e ? e : "";
+    let t = null != (e = v[this.fontSize]) ? e : "";
     return this.isFontScaledUp ? "a11y-font-scaled-up ".concat(t) : this.isFontScaledDown ? "a11y-font-scaled-down ".concat(t) : "".concat(t)
   }
   get zoom() {
-    return v.zoom
+    return y.zoom
   }
   get isZoomedIn() {
-    return v.zoom > d.yqN.ZOOM_DEFAULT
+    return y.zoom > d.yqN.ZOOM_DEFAULT
   }
   get isZoomedOut() {
-    return v.zoom < d.yqN.ZOOM_DEFAULT
+    return y.zoom < d.yqN.ZOOM_DEFAULT
   }
   get keyboardModeEnabled() {
-    return v.keyboardModeEnabled
+    return y.keyboardModeEnabled
   }
   get colorblindMode() {
-    return v.colorblindMode
+    return y.colorblindMode
   }
   get lowContrastMode() {
-    return v.lowContrastMode
+    return y.lowContrastMode
   }
   get saturation() {
-    return v.saturation
+    return y.saturation
   }
   get contrast() {
-    return v.contrast
+    return y.contrast
   }
   get desaturateUserColors() {
-    return v.desaturateUserColors
+    return y.desaturateUserColors
   }
   get forcedColorsModalSeen() {
-    return v.forcedColorsModalSeen
+    return y.forcedColorsModalSeen
   }
   get keyboardNavigationExplainerModalSeen() {
-    return v.keyboardNavigationExplainerModalSeen
+    return y.keyboardNavigationExplainerModalSeen
   }
   get messageGroupSpacing() {
-    return null != v.messageGroupSpacing ? v.messageGroupSpacing : l.jU.getSetting() ? f.c8 : f.pq
+    return null != y.messageGroupSpacing ? y.messageGroupSpacing : l.jU.getSetting() ? f.c8 : f.pq
   }
   get isMessageGroupSpacingIncreased() {
     let e = l.jU.getSetting() ? f.c8 : f.pq;
@@ -311,53 +311,53 @@ class K extends(r = i.ZP.DeviceSettingsStore) {
     return this.messageGroupSpacing < e
   }
   get isSubmitButtonEnabled() {
-    return v.submitButtonEnabled
+    return y.submitButtonEnabled
   }
   get syncProfileThemeWithUserTheme() {
-    return v.syncProfileThemeWithUserTheme
+    return y.syncProfileThemeWithUserTheme
   }
   get systemPrefersReducedMotion() {
-    return v.systemPrefersReducedMotion
+    return y.systemPrefersReducedMotion
   }
   get rawPrefersReducedMotion() {
-    return v.prefersReducedMotion
+    return y.prefersReducedMotion
   }
   get useReducedMotion() {
-    switch (v.prefersReducedMotion) {
+    switch (y.prefersReducedMotion) {
       case "no-preference":
         return !1;
       case "reduce":
         return !0;
       default:
-        return "reduce" === v.systemPrefersReducedMotion
+        return "reduce" === y.systemPrefersReducedMotion
     }
   }
   get systemForcedColors() {
-    return v.systemForcedColors
+    return y.systemForcedColors
   }
   get syncForcedColors() {
-    return v.syncForcedColors
+    return y.syncForcedColors
   }
   get useForcedColors() {
-    return !!v.syncForcedColors && "active" === v.systemForcedColors
+    return !!y.syncForcedColors && "active" === y.systemForcedColors
   }
   get systemPrefersContrast() {
-    return v.systemPrefersContrast
+    return y.systemPrefersContrast
   }
   get systemPrefersCrossfades() {
-    return v.systemPrefersCrossfades
+    return y.systemPrefersCrossfades
   }
   get alwaysShowLinkDecorations() {
-    return v.alwaysShowLinkDecorations
+    return y.alwaysShowLinkDecorations
   }
   get roleStyle() {
-    return v.roleStyle
+    return y.roleStyle
   }
   get hideTags() {
-    return v.hideGuildTags
+    return y.hideGuildTags
   }
   getUserAgnosticState() {
-    return v
+    return y
   }
 }
 _(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStore"), _(K, "migrations", [() => {

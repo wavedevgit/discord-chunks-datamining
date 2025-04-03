@@ -39,7 +39,7 @@ function l(e, t) {
       r = c(t.rootedPath.map(e => i.get(e)).filter(e => null != e && null != e.windowHandle), n);
     return 0 !== r ? r : c(t.rootedPath, e.rootedPath)
   });
-  let u = null !== (n = l.find(e => null != e.application.windowHandle)) && void 0 !== n ? n : l[0];
+  let u = null != (n = l.find(e => null != e.application.windowHandle)) ? n : l[0];
   return null == u ? null : u.application
 }
 

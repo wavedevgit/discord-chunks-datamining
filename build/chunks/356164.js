@@ -78,7 +78,7 @@ class h {
 function m(e) {
   var t;
   let n = p(e),
-    r = null !== (t = f.get(n)) && void 0 !== t ? t : new h({
+    r = null != (t = f.get(n)) ? t : new h({
       query: e.query
     });
   return f.set(n, r), r
@@ -112,7 +112,7 @@ function b(e) {
   }).handleSearchStart()
 }
 
-function v(e) {
+function y(e) {
   let {
     query: t,
     categoryId: n,
@@ -132,7 +132,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     query: t,
     categoryId: n,
@@ -163,8 +163,8 @@ function I(e) {
   } = e, o = _.get(r);
   if (null == o) return !1;
   _.set(r, d(c({}, o), {
-    memberCount: null !== (t = i.memberCount) && void 0 !== t ? t : o.memberCount,
-    presenceCount: null !== (n = i.onlineCount) && void 0 !== n ? n : o.presenceCount
+    memberCount: null != (t = i.memberCount) ? t : o.memberCount,
+    presenceCount: null != (n = i.onlineCount) ? n : o.presenceCount
   }))
 }
 class S extends(r = i.ZP.Store) {
@@ -195,7 +195,7 @@ class S extends(r = i.ZP.Store) {
   getErrorMessage(e) {
     return g(e, e => {
       var t;
-      return null === (t = e.error) || void 0 === t ? void 0 : t.getAnyErrorMessage()
+      return null == (t = e.error) ? void 0 : t.getAnyErrorMessage()
     })
   }
 }
@@ -203,8 +203,8 @@ l(S, "displayName", "GlobalDiscoveryServersSearchResultsStore");
 let T = new S(o.Z, {
   CONNECTION_OPEN: E,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_START: b,
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: v,
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE: y,
+  GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: y,
+  GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE: v,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR: O,
   GUILD_PROFILE_FETCH_SUCCESS: I
 })

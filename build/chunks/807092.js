@@ -105,9 +105,9 @@ function E(e) {
     id: i,
     channelId: o
   } = e;
-  if ((null === (n = d[o]) || void 0 === n ? void 0 : null === (t = n.message) || void 0 === t ? void 0 : t.id) === i) delete d[o], delete _[o];
+  if ((null == (n = d[o]) || null == (t = n.message) ? void 0 : t.id) === i) delete d[o], delete _[o];
   else {
-    if ((null === (r = f[o]) || void 0 === r ? void 0 : r.messageId) !== i) return !1;
+    if ((null == (r = f[o]) ? void 0 : r.messageId) !== i) return !1;
     delete f[o], delete _[o]
   }
 }
@@ -126,14 +126,14 @@ function b(e) {
   }, delete f[e]
 }
 
-function v(e) {
+function y(e) {
   let {
     channelId: t
   } = e;
   b(t)
 }
 
-function y(e) {
+function v(e) {
   let {
     channelId: t
   } = e;
@@ -163,6 +163,6 @@ let S = new I(o.Z, {
   CONNECTION_OPEN: O,
   LOGOUT: O,
   MESSAGE_DELETE: E,
-  CHANNEL_SELECT: v,
-  LOAD_MESSAGES_SUCCESS: y
+  CHANNEL_SELECT: y,
+  LOAD_MESSAGES_SUCCESS: v
 })

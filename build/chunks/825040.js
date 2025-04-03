@@ -70,7 +70,7 @@ function _(e) {
     }
   }, [t]), i.useEffect(() => {
     var e, r;
-    return n ? (null === (e = p.current) || void 0 === e || e.pause(), (0, s.Bw)(t)) : null === (r = p.current) || void 0 === r || r.play().catch(() => {}), () => {
+    return n ? (null == (e = p.current) || e.pause(), (0, s.Bw)(t)) : null == (r = p.current) || r.play().catch(() => {}), () => {
       n && (0, s.rY)(t)
     }
   }, [n]);
@@ -79,7 +79,7 @@ function _(e) {
     let {
       width: i,
       height: o
-    } = h.current, a = null !== (n = null === (e = p.current) || void 0 === e ? void 0 : e.videoWidth) && void 0 !== n ? n : 0, s = null !== (r = null === (t = p.current) || void 0 === t ? void 0 : t.videoHeight) && void 0 !== r ? r : 0;
+    } = h.current, a = null != (n = null == (e = p.current) ? void 0 : e.videoWidth) ? n : 0, s = null != (r = null == (t = p.current) ? void 0 : t.videoHeight) ? r : 0;
     if (i !== a || o !== s) {
       let e = {
         width: a,

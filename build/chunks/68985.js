@@ -84,7 +84,7 @@ function b(e) {
   let {
     dismissibleContent: t
   } = e, n = new Date;
-  if (h.renderedAtTimestamps.set(t, n.getTime()), !(s.O.has(t) || h.dailyCapOverridden || h.dismissibleContentSeenDuringSession.has(t))) {
+  if ((h.renderedAtTimestamps.set(t, n.getTime()), !s.O.has(t) && !h.dailyCapOverridden) && !h.dismissibleContentSeenDuringSession.has(t)) {
     if (h.dismissibleContentSeenDuringSession.add(t), null == h.dailyCapPeriodStart) {
       let e = new Date;
       e.setHours(0, 0, 0, 0), h.dailyCapPeriodStart = e.getTime()
@@ -97,21 +97,21 @@ function b(e) {
   }
 }
 
-function v(e) {
+function y(e) {
   let {
     dismissibleContent: t
   } = e;
   h.lastDCDismissed = t, h.renderedAtTimestamps.delete(t)
 }
 
-function y() {
+function v() {
   h.dailyCapPeriodStart = null, h.numberOfDCsShownToday = 0, h.dismissibleContentSeenDuringSession = new Set, h.lastDCDismissed = null
 }
 class O extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r;
-      h.numberOfDCsShownToday = null !== (t = e.numberOfDCsShownToday) && void 0 !== t ? t : 0, h.dailyCapPeriodStart = e.dailyCapPeriodStart, h.dailyCapOverridden = null !== (n = e.dailyCapOverridden) && void 0 !== n && n, h.newUserMinAgeRequiredOverridden = null !== (r = e.newUserMinAgeRequiredOverridden) && void 0 !== r && r
+      h.numberOfDCsShownToday = null != (t = e.numberOfDCsShownToday) ? t : 0, h.dailyCapPeriodStart = e.dailyCapPeriodStart, h.dailyCapOverridden = null != (n = e.dailyCapOverridden) && n, h.newUserMinAgeRequiredOverridden = null != (r = e.newUserMinAgeRequiredOverridden) && r
     }
     h.dismissibleContentSeenDuringSession = new Set, h.lastDCDismissed = null
   }
@@ -142,6 +142,6 @@ let I = new O(o.Z, {
   DCF_DAILY_CAP_OVERRIDE: g,
   DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE: E,
   DCF_HANDLE_DC_SHOWN: b,
-  DCF_HANDLE_DC_DISMISSED: v,
-  DCF_RESET: y
+  DCF_HANDLE_DC_DISMISSED: y,
+  DCF_RESET: v
 })

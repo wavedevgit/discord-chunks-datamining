@@ -24,17 +24,16 @@ let r = n(889658),
   d = (e, t, n) => {
     let r, i, l, d, p, h, m;
     if (e === t) return !0;
-    if (1 === e.length && e[0].semver === o) {
+    if (1 === e.length && e[0].semver === o)
       if (1 === t.length && t[0].semver === o) return !0;
-      e = n.includePrerelease ? c : u
-    }
-    if (1 === t.length && t[0].semver === o) {
+      else e = n.includePrerelease ? c : u;
+    if (1 === t.length && t[0].semver === o)
       if (n.includePrerelease) return !0;
-      t = u
-    }
+      else t = u;
     let g = new Set;
     for (let t of e) ">" === t.operator || ">=" === t.operator ? r = f(r, t, n) : "<" === t.operator || "<=" === t.operator ? i = _(i, t, n) : g.add(t.semver);
-    if (g.size > 1 || r && i && ((l = s(r.semver, i.semver, n)) > 0 || 0 === l && (">=" !== r.operator || "<=" !== i.operator))) return null;
+    if (g.size > 1) return null;
+    if (r && i && ((l = s(r.semver, i.semver, n)) > 0 || 0 === l && (">=" !== r.operator || "<=" !== i.operator))) return null;
     for (let e of g) {
       if (r && !a(e, String(r), n) || i && !a(e, String(i), n)) return null;
       for (let r of t)
@@ -61,11 +60,11 @@ let r = n(889658),
   f = (e, t, n) => {
     if (!e) return t;
     let r = s(e.semver, t.semver, n);
-    return r > 0 ? e : r < 0 ? t : ">" === t.operator && ">=" === e.operator ? t : e
+    return r > 0 ? e : r < 0 || ">" === t.operator && ">=" === e.operator ? t : e
   },
   _ = (e, t, n) => {
     if (!e) return t;
     let r = s(e.semver, t.semver, n);
-    return r < 0 ? e : r > 0 ? t : "<" === t.operator && "<=" === e.operator ? t : e
+    return r < 0 ? e : r > 0 || "<" === t.operator && "<=" === e.operator ? t : e
   };
 e.exports = l

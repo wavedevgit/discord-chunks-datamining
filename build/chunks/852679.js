@@ -24,8 +24,8 @@ async function p(e) {
     closeLayer: g,
     onCloseModal: E,
     totalNumberOfSlotsToAssign: b = 1,
-    disablePremiumUpsell: v,
-    onSubscribeComplete: y,
+    disablePremiumUpsell: y,
+    onSubscribeComplete: v,
     onSubscriptionConfirmation: O,
     inPopout: I,
     applicationId: S,
@@ -53,7 +53,7 @@ async function p(e) {
   await (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("22646"), n.e("24920"), n.e("84122")]).then(n.bind(n, 343649));
+    } = await Promise.all([n.e("22646"), n.e("24920"), n.e("29922")]).then(n.bind(n, 343649));
     return n => {
       let {
         transitionState: i,
@@ -70,9 +70,9 @@ async function p(e) {
         guildId: m,
         totalNumberOfSlotsToAssign: b,
         closeGuildPerksModal: g,
-        disablePremiumUpsell: v,
+        disablePremiumUpsell: y,
         onSubscriptionConfirmation: O,
-        onSubscribeComplete: y,
+        onSubscribeComplete: v,
         applicationId: S,
         intent: T
       })

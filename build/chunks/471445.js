@@ -79,11 +79,10 @@ function p(e, t) {
   if ((null == e ? void 0 : e.id) === (null == t ? void 0 : t.rulesChannelId)) return r.snC;
   switch (e.type) {
     case d.d4z.GUILD_ANNOUNCEMENT:
-      if (h) {
+      if (h)
         if (e.isNSFW()) return r.ToS;
-        if ((0, c.Z)(e)) return r.Fv2;
-        return r.MqZ
-      }
+        else if ((0, c.Z)(e)) return r.Fv2;
+      else return r.MqZ;
       if (e.isNSFW()) return r.ToS;
       if ((0, c.Z)(e)) return r.Fv2;
       return r.MqZ;
@@ -117,18 +116,17 @@ function p(e, t) {
       if (g) return (0, c.Z)(e) ? r.mBM : r.pki;
       if (f) return r.mBM;
       if ((0, c.Z)(e)) return r.pki;
-      return r.ewx;
+      else return r.ewx;
     case d.d4z.GUILD_VOICE:
       if (m) return r.kBi;
       if (e.isNSFW()) return r.BVY;
       if (p) return r.hGI;
-      if (g) {
+      if (g)
         if ((0, c.Z)(e)) return r.mBM;
-        return _ ? r.TLW : r.gjC
-      }
+        else return _ ? r.TLW : r.gjC;
       if (f) return r.mBM;
       if ((0, c.Z)(e)) return _ ? r.TLW : r.gjC;
-      return _ ? r.Odl : r.gj8;
+      else return _ ? r.Odl : r.gj8;
     case d.d4z.GUILD_DIRECTORY:
       return r.aVH;
     case d.d4z.GUILD_CATEGORY:
@@ -136,7 +134,7 @@ function p(e, t) {
     default:
       if (u.EC.has(e.id)) {
         if (e.id === u.HY.GUILD_HOME || e.id === u.HY.SERVER_GUIDE) return r.Vy8;
-        if (e.id === u.HY.CHANNEL_BROWSER || e.id === u.HY.CUSTOMIZE_COMMUNITY) return r.H$4
+        else if (e.id === u.HY.CHANNEL_BROWSER || e.id === u.HY.CUSTOMIZE_COMMUNITY) return r.H$4
       }
       return null
   }

@@ -20,13 +20,13 @@ var r = n(200651),
   g = n(502762),
   E = n(952124),
   b = n(544989),
-  v = n(4517),
-  y = n(171368),
+  y = n(4517),
+  v = n(171368),
   O = n(895697),
   I = n(161572),
   S = n(228168),
   T = n(388032),
-  N = n(888113);
+  N = n(200669);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ function R(e) {
     null == L || L(null == F ? void 0 : F.current)
   }, [F, L]);
   let Z = e => {
-      null == D || D(), (0, y.openUserProfileModal)(C({
+      null == D || D(), (0, v.openUserProfileModal)(C({
         sourceAnalyticsLocations: k
       }, j, e))
     },
@@ -124,7 +124,7 @@ function R(e) {
               channelId: R,
               profileType: S.y0.BITE_SIZE,
               onOpenProfile: x ? void 0 : Z
-            }), (0, r.jsx)(v.Z, {
+            }), (0, r.jsx)(y.Z, {
               location: "BotUserProfilePopout",
               user: t,
               profileType: S.y0.BITE_SIZE,

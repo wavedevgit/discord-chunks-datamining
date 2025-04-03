@@ -20,12 +20,12 @@ var r = n(200651),
   g = n(453070),
   E = n(926491),
   b = n(373228),
-  v = n(378233),
-  y = n(419922),
+  y = n(378233),
+  v = n(419922),
   O = n(981631),
   I = n(957825),
   S = n(388032),
-  T = n(957696);
+  T = n(619333);
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,10 +84,9 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       setShouldRenderShortcut: d
     } = e, _ = (0, c.O)(), m = (0, f.Iu)(e => "" !== e.searchQuery), g = i.useCallback((e, o, s) => {
       var c, d;
-      let f;
-      let g = (null === (c = n[0]) || void 0 === c ? void 0 : c.type) === b.Ih.FAVORITE,
+      let f, g = (null == (c = n[0]) ? void 0 : c.type) === b.Ih.FAVORITE,
         N = +!!g,
-        C = (null === (d = n[N]) || void 0 === d ? void 0 : d.type) === b.Ih.RECENT,
+        C = (null == (d = n[N]) ? void 0 : d.type) === b.Ih.RECENT,
         P = n.length > 0,
         D = n.length;
       if (0 === o && g) return (0, r.jsx)("div", {
@@ -145,10 +144,10 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
         }))
       } else if (U) {
         let e = E.Z.getStickerPack(M.id);
-        null != e && (G = e.name, B = (0, r.jsx)(y.Z, {
+        null != e && (G = e.name, B = (0, r.jsx)(v.Z, {
           disableAnimation: !x || m,
           size: w,
-          sticker: (0, v.Zt)(e)
+          sticker: (0, y.Zt)(e)
         }))
       }
       return (0, r.jsxs)(i.Fragment, {
@@ -192,7 +191,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       }, [n]),
       onScroll: i.useCallback(e => {
         var t;
-        let n = null === (t = o.current) || void 0 === t ? void 0 : t.getListDimensions();
+        let n = null == (t = o.current) ? void 0 : t.getListDimensions();
         null != n && d(e + n.height - x < s)
       }, [s, o, d])
     }
@@ -209,7 +208,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
     } = i.useMemo(() => {
       var e, t;
       let n = f.filter(e => e.type === b.Ih.GUILD).length,
-        r = n + +((null === (e = f[0]) || void 0 === e ? void 0 : e.type) === b.Ih.RECENT) + +((null === (t = f[0]) || void 0 === t ? void 0 : t.type) === b.Ih.FAVORITE),
+        r = n + +((null == (e = f[0]) ? void 0 : e.type) === b.Ih.RECENT) + +((null == (t = f[0]) ? void 0 : t.type) === b.Ih.FAVORITE),
         i = r * (w + D) - D + U;
       return {
         firstStandardStickerCategoryIndex: r + 1,
@@ -222,8 +221,8 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       c(m >= G)
     }, [m]);
     let {
-      renderCategoryListItem: v,
-      rowHeight: y,
+      renderCategoryListItem: y,
+      rowHeight: v,
       onScroll: O
     } = B({
       activeIndex: u,
@@ -233,7 +232,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       setShouldRenderShortcut: c
     }), I = i.useCallback(e => {
       var t;
-      e(p), null === (t = o.current) || void 0 === t || t.scrollTo(h)
+      e(p), null == (t = o.current) || t.scrollTo(h)
     }, [p, h]);
     return (0, r.jsx)(_.Z, {
       className: T.categoryList,
@@ -242,10 +241,10 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       store: d.ZN,
       listPadding: k,
       onScroll: O,
-      renderCategoryListItem: v,
+      renderCategoryListItem: y,
       rowCount: f.length,
       categories: f,
-      categoryHeight: y,
+      categoryHeight: v,
       children: e => E && s && (0, r.jsx)(l.P3F, {
         className: a()(T.standardStickerShortcut, {
           [T.invisibleShortcut]: !s

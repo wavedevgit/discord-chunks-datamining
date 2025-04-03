@@ -49,7 +49,7 @@ async function p(e) {
   if (e.length > 0) {
     var t;
     let n = i().sum(e.map(e => e.length)),
-      r = null !== (t = i().max(e.map(e => e.length))) && void 0 !== t ? t : 0;
+      r = null != (t = i().max(e.map(e => e.length))) ? t : 0;
     if (e.length >= s || n + r > l) {
       let t = i().sortBy(e, e => new Date(e.recorded_at).getTime());
       await f(t[0].id)

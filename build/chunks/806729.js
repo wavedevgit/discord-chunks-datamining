@@ -17,7 +17,7 @@ function u(e) {
     let {
       user: r
     } = e;
-    return -((null !== (n = null === (t = _.get(r.id)) || void 0 === t ? void 0 : t.communicationProbability) && void 0 !== n ? n : -1) * 1)
+    return -((null != (n = null == (t = _.get(r.id)) ? void 0 : t.communicationProbability) ? n : -1) * 1)
   }), [n, _]), m = (0, r.useMemo)(() => {
     if (null == u || u.length < 2) return u;
     let e = Object.fromEntries(p.map((e, t) => [e, t]));
@@ -26,7 +26,7 @@ function u(e) {
       let {
         guild: r
       } = t;
-      return null !== (n = e[r.id]) && void 0 !== n ? n : p.length
+      return null != (n = e[r.id]) ? n : p.length
     })
   }, [u, p]), g = (0, a.Z)(t), E = (0, a.Z)(h), b = (0, a.Z)(m);
   return {

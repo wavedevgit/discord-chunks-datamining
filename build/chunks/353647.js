@@ -79,7 +79,7 @@ function b() {
   _ = null, p = !0
 }
 
-function v(e) {
+function y(e) {
   let {
     entry: t,
     userId: n
@@ -93,7 +93,7 @@ function v(e) {
   })), p = !1
 }
 
-function y(e) {
+function v(e) {
   let {
     error: t
   } = e;
@@ -147,7 +147,7 @@ let A = new N(o.Z, {
   CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: g,
   CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE: E,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: b,
-  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: v,
-  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_FAILURE: y,
+  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: y,
+  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_FAILURE: v,
   CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR: O
 })

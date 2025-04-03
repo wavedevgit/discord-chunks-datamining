@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -57,7 +57,7 @@ function E(e, t) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,7 +65,7 @@ function b(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -73,7 +73,7 @@ function v(e, t) {
   return i
 }
 
-function y(e) {
+function v(e) {
   var {
     userId: t,
     user: n
@@ -81,27 +81,27 @@ function y(e) {
   let h = (0, s.e7)([u.default], () => u.default.getUser(t), [t]),
     g = null != n ? n : h;
   a()(null != g, "UserProfilePopoutWrapper: user cannot be undefined");
-  let v = (0, s.e7)([u.default], () => u.default.getCurrentUser());
-  a()(null != v, "UserProfilePopoutWrapper: currentUser cannot be undefined");
+  let y = (0, s.e7)([u.default], () => u.default.getCurrentUser());
+  a()(null != y, "UserProfilePopoutWrapper: currentUser cannot be undefined");
   let {
-    isBlocked: y,
+    isBlocked: v,
     isIgnored: O
   } = (0, s.cj)([c.Z], () => ({
     isBlocked: c.Z.isBlocked(g.id),
     isIgnored: c.Z.isIgnored(g.id)
-  })), [I, S] = i.useState(y || O || y), T = l.Rt.useSetting();
+  })), [I, S] = i.useState(v || O || v), T = l.Rt.useSetting();
   return I && !(O && T) ? (0, r.jsx)(d.Z, E(m({}, o), {
     user: g,
-    currentUser: v,
+    currentUser: y,
     onViewBlockedProfileClick: () => S(!1)
   })) : g.isNonUserBot() ? (0, r.jsx)(_.Z, E(m({}, o), {
     user: g,
-    currentUser: v
+    currentUser: y
   })) : g.bot ? (0, r.jsx)(f.Z, E(m({}, o), {
     user: g,
-    currentUser: v
+    currentUser: y
   })) : (0, r.jsx)(p.Z, E(m({}, o), {
     user: g,
-    currentUser: v
+    currentUser: y
   }))
 }

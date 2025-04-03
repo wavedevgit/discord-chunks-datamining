@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
     variants: [e.COMMENT("^[ \\t]*(?=#)", "$", {
       relevance: 0,
@@ -56,4 +56,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

@@ -35,7 +35,7 @@ function c(e, t) {
     s = arguments.length > 3 ? arguments[3] : void 0,
     c = r.useContext(o.Sfi).reducedMotion.enabled,
     u = t;
-  "animate-always" === n || "respect-motion-settings" === n && !c || (u = l({}, t, a.F));
+  "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = l({}, t, a.F));
   let [d, f, _] = (0, i.useTransition)(e, u, s);
   return 4 == arguments.length ? [d, f, _] : d
 }

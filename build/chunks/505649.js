@@ -54,14 +54,14 @@ async function b(e) {
   }
 }
 
-function v(e) {
+function y(e) {
   let {
     error: t
   } = e;
   m = t, p = !1
 }
 
-function y(e) {
+function v(e) {
   let {
     payment: t
   } = e, n = [d.PyE.COMPLETED, d.PyE.FAILED, d.PyE.CANCELED];
@@ -69,7 +69,7 @@ function y(e) {
   if (p = !1, h = null, t.status === d.PyE.FAILED) {
     var r;
     let e = null;
-    (null === (r = t.metadata) || void 0 === r ? void 0 : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), m = new l.ZP(f.NW.string(f.t.khEaRE), e)
+    (null == (r = t.metadata) ? void 0 : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), m = new l.ZP(f.NW.string(f.t.khEaRE), e)
   } else m = null, o.Z.wait(a.fw), o.Z.wait(s.pB)
 }
 class O extends(r = i.ZP.Store) {
@@ -102,7 +102,7 @@ let I = new O(o.Z, {
   PREMIUM_PAYMENT_UPDATE_FAIL: E,
   SKU_PURCHASE_FAIL: E,
   GIFT_CODE_REDEEM_FAILURE: E,
-  PAYMENT_AUTHENTICATION_ERROR: v,
-  PAYMENT_UPDATE: y,
-  BILLING_PAYMENT_FETCH_SUCCESS: y
+  PAYMENT_AUTHENTICATION_ERROR: y,
+  PAYMENT_UPDATE: v,
+  BILLING_PAYMENT_FETCH_SUCCESS: v
 })

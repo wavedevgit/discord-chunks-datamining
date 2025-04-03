@@ -10,7 +10,7 @@ var r = n(192379),
   i = n(164484);
 
 function o() {
-  let e = n(954750).Z;
+  let e = n(274304).Z;
   return a().filter(e => {
     let {
       enabled: t
@@ -55,7 +55,7 @@ function s(e, t) {
   });
   if (i.includes(e)) return e;
   let o = e.split("-");
-  return i.includes(o[0]) ? o[0] : "zh" === o[0] && o.length > 1 && "Hant" === o[1] ? null !== (n = i.find(e => "zh-TW" === e)) && void 0 !== n ? n : t : null !== (r = i.find(e => e.split("-")[0] === o[0])) && void 0 !== r ? r : t
+  return i.includes(o[0]) ? o[0] : "zh" === o[0] && o.length > 1 && "Hant" === o[1] ? null != (n = i.find(e => "zh-TW" === e)) ? n : t : null != (r = i.find(e => e.split("-")[0] === o[0])) ? r : t
 }
 
 function l(e, t) {

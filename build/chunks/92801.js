@@ -1,7 +1,5 @@
 /** Chunk was on web.js **/
 var r = n(706627);
-
-function i(e) {
+e.exports = function(e) {
   return e == e && !r(e)
 }
-e.exports = i

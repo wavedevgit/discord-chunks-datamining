@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-function t(e) {
+e.exports = function(e) {
   let t = {
       className: "number",
       begin: "[1-9][0-9]*",
@@ -48,4 +48,3 @@ function t(e) {
     }]
   }
 }
-e.exports = t

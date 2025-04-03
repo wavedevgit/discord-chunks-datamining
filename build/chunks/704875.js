@@ -10,9 +10,9 @@ var i = n(120356),
   a = n(628692),
   s = n(845537),
   l = n(653309),
-  c = n(833602),
-  u = n(502433),
-  d = n(50398);
+  c = n(227473),
+  u = n(112360),
+  d = n(73433);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,10 +60,10 @@ function m(e, t, n) {
     children: f,
     element: p,
     decorations: m
-  } = e, b = E(null !== (i = null == m ? void 0 : m[0]) && void 0 !== i ? i : {});
+  } = e, b = E(null != (i = null == m ? void 0 : m[0]) ? i : {});
   switch (p.type) {
     case "line":
-      if (null === (l = p.codeBlockState) || void 0 === l ? void 0 : l.isInCodeBlock) return (0, r.jsx)("div", h(_({
+      if (null == (l = p.codeBlockState) ? void 0 : l.isInCodeBlock) return (0, r.jsx)("div", h(_({
         className: c.codeLine,
         spellCheck: null == p.codeBlockState || null == p.codeBlockState.lang
       }, u), {

@@ -70,7 +70,7 @@ let g = (e, t) => {
     var e;
     let t = (0, o.P)(f.default.getCurrentUser());
     return {
-      video_device_name: null === (e = c.Z.getVideoDevices()[c.Z.getVideoDeviceId()]) || void 0 === e ? void 0 : e.name,
+      video_device_name: null == (e = c.Z.getVideoDevices()[c.Z.getVideoDeviceId()]) ? void 0 : e.name,
       video_hardware_scaling_enabled: c.Z.getHardwareEncoding(),
       video_effect_type: (0, s.TA)(t),
       video_effect_detail: (0, s.V$)(t)

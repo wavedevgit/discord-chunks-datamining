@@ -21,12 +21,12 @@ var i = n(120356),
   g = n(451478),
   E = n(74538),
   b = n(502087),
-  v = n(404380),
-  y = n(639119),
+  y = n(404380),
+  v = n(639119),
   O = n(474936),
   I = n(981631),
   S = n(388032),
-  T = n(853389);
+  T = n(627268);
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -135,7 +135,7 @@ let L = function(e) {
     {
       analyticsLocations: ee
     } = (0, c.ZP)(),
-    et = (0, y.N)(),
+    et = (0, v.N)(),
     en = !t && null != et && null != i && O.nG[et.trial_id].skus.includes(i),
     {
       fractionalState: er
@@ -145,47 +145,38 @@ let L = function(e) {
     ei = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeOverride()),
     eo = e => {
       var o;
-      if (e.preventDefault(), null == X) {
-        (0, _.uL)(I.Z5c.LOGIN);
-        return
-      }
+      if (e.preventDefault(), null == X) return void(0, _.uL)(I.Z5c.LOGIN);
       if (null == N || N(e), (null == $ ? void 0 : $.status) === I.O0b.ACCOUNT_HOLD) {
         (0, d.A3)(), l.Z.open(I.oAB.PREMIUM), null == G || G(!1);
         return
       }
-      if (!X.isClaimed()) {
-        (0, s.ZDy)(async () => {
-          let {
-            default: e
-          } = await n.e("69417").then(n.bind(n, 918995));
-          return t => {
-            var {
-              onClose: n
-            } = t, i = P(t, ["onClose"]);
-            return (0, r.jsx)(e, R(A({}, i), {
-              onClose: n
-            }))
-          }
-        });
-        return
-      }
-      if (!X.verified) {
-        (0, s.ZDy)(async () => {
-          let {
-            default: e
-          } = await n.e("20102").then(n.bind(n, 444688));
-          return t => {
-            var {
-              onClose: n
-            } = t, i = P(t, ["onClose"]);
-            return (0, r.jsx)(e, R(A({}, i), {
-              onClose: n
-            }))
-          }
-        });
-        return
-      }
-      let a = en ? null === (o = et.subscription_trial) || void 0 === o ? void 0 : o.id : null,
+      if (!X.isClaimed()) return void(0, s.ZDy)(async () => {
+        let {
+          default: e
+        } = await n.e("69417").then(n.bind(n, 918995));
+        return t => {
+          var {
+            onClose: n
+          } = t, i = P(t, ["onClose"]);
+          return (0, r.jsx)(e, R(A({}, i), {
+            onClose: n
+          }))
+        }
+      });
+      if (!X.verified) return void(0, s.ZDy)(async () => {
+        let {
+          default: e
+        } = await n.e("20102").then(n.bind(n, 444688));
+        return t => {
+          var {
+            onClose: n
+          } = t, i = P(t, ["onClose"]);
+          return (0, r.jsx)(e, R(A({}, i), {
+            onClose: n
+          }))
+        }
+      });
+      let a = en ? null == (o = et.subscription_trial) ? void 0 : o.id : null,
         c = I.Qqv.BUY;
       null != a ? c = I.Qqv.TRIAL : t && (c = I.Qqv.GIFT), (0, f.Z)({
         isGift: t,
@@ -242,7 +233,7 @@ let L = function(e) {
     el = void 0 !== ei ? ei : null != es ? E.ZP.getPremiumType(es.planId) : null == X ? void 0 : X.premiumType,
     ec = i === O.Si.TIER_2 && null != el && [O.p9.TIER_0, O.p9.TIER_1].includes(el);
   ec && (ea = S.NW.string(S.t.IJI7ys));
-  let eu = null != $ && E.ZP.isSwitchingPlansDisabled($) || null != $ && (0, v.o)("PremiumSubscribeButton", X, er),
+  let eu = null != $ && E.ZP.isSwitchingPlansDisabled($) || null != $ && (0, y.o)("PremiumSubscribeButton", X, er),
     ed = null != $ && $.status !== I.O0b.ACCOUNT_HOLD && !(0, p.Q0)($.planId) && !ec && void 0 === ei || eu,
     ef = ed ? null != W ? W : D({
       ctaSubscriptionSkuId: i,
@@ -272,7 +263,7 @@ let L = function(e) {
         className: o()(T.premiumIcon, j)
       }), (0, r.jsx)("span", {
         className: o()(T.buttonText, M),
-        children: null !== (n = null !== (t = null == ef ? void 0 : ef.disabledButtonText) && void 0 !== t ? t : x) && void 0 !== n ? n : ea
+        children: null != (n = null != (t = null == ef ? void 0 : ef.disabledButtonText) ? t : x) ? n : ea
       })]
     }))
   }

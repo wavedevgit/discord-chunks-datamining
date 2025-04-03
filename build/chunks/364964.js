@@ -36,7 +36,7 @@ function d(e, t) {
   if (l.has(t)) {
     var r;
     let t = e.replace(/\s*/g, "").match(s);
-    if ((null !== (r = null == t ? void 0 : t.length) && void 0 !== r ? r : 0) > 10) return !1
+    if ((null != (r = null == t ? void 0 : t.length) ? r : 0) > 10) return !1
   }
   return !0
 }

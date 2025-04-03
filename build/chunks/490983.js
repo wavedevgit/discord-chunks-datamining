@@ -19,8 +19,8 @@ var r, i = n(658722),
   g = n(77498),
   E = n(283595),
   b = n(246946),
-  v = n(230307),
-  y = n(799777),
+  y = n(230307),
+  v = n(799777),
   O = n(417363),
   I = n(941128),
   S = n(70956),
@@ -78,7 +78,7 @@ let F = {
   Y = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
 function K(e, t) {
-  let n = v.Z.getCurrentUserStatisticsForApplication(e.id);
+  let n = y.Z.getCurrentUserStatisticsForApplication(e.id);
   if (null != n) return new Date(n.last_played_at).getTime();
   let r = t[e.id];
   return null != r ? r : 0
@@ -160,7 +160,7 @@ function X() {
 }
 class J extends(r = u.ZP.Store) {
   initialize() {
-    this.syncWith([f.Z, g.Z, p.Z, _.ZP, O.Z, I.Z, E.Z, v.Z, b.Z, m.Z], X, 200), this.syncWith([y.Z, h.default], () => !0)
+    this.syncWith([f.Z, g.Z, p.Z, _.ZP, O.Z, I.Z, E.Z, y.Z, b.Z, m.Z], X, 200), this.syncWith([v.Z, h.default], () => !0)
   }
   get applicationFilterQuery() {
     return j
@@ -178,7 +178,7 @@ class J extends(r = u.ZP.Store) {
     return H(this.libraryApplicationViewItems, j)
   }
   get sortedFilteredLibraryApplicationViewItems() {
-    return W(this.filteredLibraryApplicationViewItems, y.Z.sortKey, y.Z.sortDirection, h.default.locale)
+    return W(this.filteredLibraryApplicationViewItems, v.Z.sortKey, v.Z.sortDirection, h.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
     return Y(k)

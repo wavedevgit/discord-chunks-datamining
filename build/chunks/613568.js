@@ -35,7 +35,7 @@ class E {
     return new Promise((t, n) => {
       this._waitQueue.push(() => {
         try {
-          null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), v(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), t()
+          null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), y(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), t()
         } catch (e) {
           n(e)
         }
@@ -50,7 +50,7 @@ class E {
         if (++t > 100) {
           var e;
           let t = u.qC();
-          throw p.error("LastFewActions", t), null === (e = this._sentryUtils) || void 0 === e || e.addBreadcrumb({
+          throw p.error("LastFewActions", t), null == (e = this._sentryUtils) || e.addBreadcrumb({
             message: "Dispatcher: Dispatch loop detected",
             data: {
               lastFewActions: t
@@ -122,7 +122,7 @@ class E {
     this._actionHandlers.addDependencies(e, t)
   }
   constructor(e = 0, t, n) {
-    (f(this, "_defaultBand", void 0), f(this, "_interceptors", []), f(this, "_subscriptions", {}), f(this, "_waitQueue", []), f(this, "_processingWaitQueue", !1), f(this, "_currentDispatchActionType", null), f(this, "_actionHandlers", new b), f(this, "_sentryUtils", void 0), f(this, "actionLogger", void 0), f(this, "functionCache", {}), this._defaultBand = e, this._sentryUtils = n, null != t) ? this.actionLogger = t: this.actionLogger = new d.Z, this.actionLogger.on("trace", (e, t, n) => {
+    (f(this, "_defaultBand", void 0), f(this, "_interceptors", []), f(this, "_subscriptions", {}), f(this, "_waitQueue", []), f(this, "_processingWaitQueue", !1), f(this, "_currentDispatchActionType", null), f(this, "_actionHandlers", new b), f(this, "_sentryUtils", void 0), f(this, "actionLogger", void 0), f(this, "functionCache", {}), this._defaultBand = e, this._sentryUtils = n, null != t) ? this.actionLogger = t: ("undefined" == typeof window || 1, this.actionLogger = new d.Z), this.actionLogger.on("trace", (e, t, n) => {
       a.Z.isTracing && n >= m && a.Z.mark("\uD83E\uDDA5", t, n)
     })
   }
@@ -130,7 +130,7 @@ class E {
 class b {
   getOrderedActionHandlers(e) {
     var t;
-    return null !== (t = this._orderedActionHandlers[e.type]) && void 0 !== t ? t : this._computeOrderedActionHandlers(e.type)
+    return null != (t = this._orderedActionHandlers[e.type]) ? t : this._computeOrderedActionHandlers(e.type)
   }
   register(e, t, n, r) {
     let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : this.createToken();
@@ -139,7 +139,7 @@ class b {
     for (let n in t) {
       let r = t[n],
         i = e => r(e);
-      v(i, "".concat(e, "_").concat(n)), a[n] = i
+      y(i, "".concat(e, "_").concat(n)), a[n] = i
     }
     return this._dependencyGraph.addNode(i, {
       name: e,
@@ -173,7 +173,7 @@ class b {
   }
   _computeOrderedActionHandlers(e) {
     var t;
-    let n = null !== (t = this._orderedCallbackTokens) && void 0 !== t ? t : this._computeOrderedCallbackTokens(),
+    let n = null != (t = this._orderedCallbackTokens) ? t : this._computeOrderedCallbackTokens(),
       r = [];
     for (let t = 0, i = n.length; t < i; t++) {
       let {
@@ -206,7 +206,7 @@ class b {
   }
 }
 
-function v(e, t) {
+function y(e, t) {
   Object.defineProperty(e, "name", {
     value: t
   })

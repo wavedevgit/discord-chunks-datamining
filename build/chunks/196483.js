@@ -65,10 +65,12 @@ function a(e, t) {
 }
 
 function s(e, t, n) {
-  let i;
-  let {
-    selection: o
-  } = e, a = r.T.currentEntry(e), s = !0, c = !0;
+  let i, {
+      selection: o
+    } = e,
+    a = r.T.currentEntry(e),
+    s = !0,
+    c = !0;
   if ("insert_text" === t.type && 1 === t.text.length ? (i = "insert", c = !(("" === t.text || t.text.endsWith(" ")) && (null == n ? void 0 : n.type) === "insert_text" && !("" === n.text && n.text.endsWith(" ")))) : "split_node" === t.type ? i = "insert" : "remove_text" === t.type && 1 === t.text.length ? i = "delete" : (i = "other", s = !1, c = !1), "set_selection" === t.type && null != a) {
     a.selection = o;
     return

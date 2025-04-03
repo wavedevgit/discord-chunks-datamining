@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(294206),
   E = n(695346),
   b = n(592125),
-  v = n(388032),
-  y = n(725712);
+  y = n(388032),
+  v = n(71979);
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,11 +71,11 @@ function N(e) {
     title: "Risky Click",
     tag: "span",
     onClick: t,
-    className: y.inlineContainer,
+    className: v.inlineContainer,
     children: [(0, r.jsx)(l.gj8, {
       size: "md",
       color: "currentColor",
-      className: y.unknownSound
+      className: v.unknownSound
     }), (0, r.jsx)("span", {
       children: "Unknown"
     })]
@@ -92,7 +92,7 @@ function A(e) {
     playSound: a
   } = (0, p.Z)(n);
   return i ? null == n ? (0, r.jsx)(N, {}) : (0, r.jsx)(C, {
-    className: y.inlineTextArea,
+    className: v.inlineTextArea,
     isPlaying: o,
     playSound: a,
     sound: n
@@ -105,7 +105,7 @@ function C(e) {
     sound: n,
     playSound: i,
     isPlaying: o
-  } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = v.NW.formatToPlainString(v.t.tuMUJy, {
+  } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = y.NW.formatToPlainString(y.t.tuMUJy, {
     emojiName: null == n ? void 0 : n.emojiName,
     soundName: null == n ? void 0 : n.name
   });
@@ -115,13 +115,13 @@ function C(e) {
     "aria-label": d,
     tag: "span",
     onClick: i,
-    className: a()(y.inlineContainer, y.inlineButton, {
-      [y.playing]: !0 === o
+    className: a()(v.inlineContainer, v.inlineButton, {
+      [v.playing]: !0 === o
     }, t),
     children: [s && (0, r.jsx)(c.Z, {
       emojiId: null == n ? void 0 : n.emojiId,
       emojiName: null == n ? void 0 : n.emojiName,
-      className: y.soundmojiEmoji
+      className: v.soundmojiEmoji
     }), (0, r.jsx)("span", {
       children: " ".concat(null == n ? void 0 : n.name, " ")
     })]
@@ -134,10 +134,10 @@ let R = function(e) {
     soundId: o,
     messageSounds: a,
     jumbo: c = !1
-  } = e, d = E.jU.useSetting(), v = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), O = i.useMemo(() => {
+  } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), O = i.useMemo(() => {
     var e;
-    return null !== (e = (0, f.Z)(t, n, o, a)) && void 0 !== e ? e : v
-  }, [t, n, o, a, v]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), A = (0, u.X0)({
+    return null != (e = (0, f.Z)(t, n, o, a)) ? e : y
+  }, [t, n, o, a, y]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), A = (0, u.X0)({
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,
@@ -145,14 +145,14 @@ let R = function(e) {
   } = (0, p.Z)(O, S), D = i.useCallback(async () => {
     if (await w()) {
       var e;
-      null === (e = R.current) || void 0 === e || e.addAnimation()
+      null == (e = R.current) || e.addAnimation()
     }
   }, [w]);
   return A ? null == O ? (0, r.jsx)(N, {
     playSound: D
   }) : c && !d ? (0, r.jsx)(g.ZP, {
-    containerClassName: y.jumboContainer,
-    className: y.jumboButton,
+    containerClassName: v.jumboContainer,
+    className: v.jumboButton,
     sound: O,
     channel: S,
     refreshEnabled: !0,
@@ -160,8 +160,8 @@ let R = function(e) {
     isPlayingSoundOverride: P,
     isSoundmoji: !0,
     buttonOverlay: m.Pb.SOUNDMOJI,
-    tooltipClassName: y.tooltip,
-    tooltipContentClassName: y.tooltipContainer,
+    tooltipClassName: v.tooltip,
+    tooltipContentClassName: v.tooltipContainer,
     tooltipOverride: (0, r.jsx)(_.Dp, {
       sound: O
     }),
@@ -171,8 +171,8 @@ let R = function(e) {
     text: (0, r.jsx)(_.Dp, {
       sound: O
     }),
-    tooltipClassName: y.tooltip,
-    tooltipContentClassName: y.tooltipContainer,
+    tooltipClassName: v.tooltip,
+    tooltipContentClassName: v.tooltipContainer,
     position: "top",
     delay: 500,
     children: e => (0, r.jsx)("span", T(I({}, e), {

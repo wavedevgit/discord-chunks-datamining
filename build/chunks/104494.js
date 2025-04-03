@@ -19,7 +19,7 @@ function u(e) {
 
 function d(e, t) {
   var n;
-  return null != e && new Set(null === (n = e.discount) || void 0 === n ? void 0 : n.plan_ids.map(e => c.GP[e].skuId)).has(t)
+  return null != e && new Set(null == (n = e.discount) ? void 0 : n.plan_ids.map(e => c.GP[e].skuId)).has(t)
 }
 
 function f(e, t) {
@@ -45,5 +45,5 @@ function _() {
     r = f(c.RU),
     i = f(c.rB),
     o = f(c.ih);
-  return null !== (t = null !== (e = null != n ? n : r) && void 0 !== e ? e : i) && void 0 !== t ? t : o
+  return null != (t = null != (e = null != n ? n : r) ? e : i) ? t : o
 }

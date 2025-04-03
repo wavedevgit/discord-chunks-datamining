@@ -14,9 +14,8 @@
   }
 
   function d(e, t, n, r) {
-    var i = Object.create((t && t.prototype instanceof E ? t : E).prototype),
-      o = new w(r || []);
-    return i._invoke = A(e, n, o), i
+    var i = Object.create((t && t.prototype instanceof E ? t : E).prototype);
+    return i._invoke = A(e, n, new w(r || [])), i
   }
 
   function f(e, t, n) {
@@ -42,15 +41,15 @@
 
   function b() {}
 
-  function v() {}
-  var y = {};
-  y[a] = function() {
+  function y() {}
+  var v = {};
+  v[a] = function() {
     return this
   };
   var O = Object.getPrototypeOf,
     I = O && O(O(D([])));
-  I && I !== r && i.call(I, a) && (y = I);
-  var S = v.prototype = E.prototype = Object.create(y);
+  I && I !== r && i.call(I, a) && (v = I);
+  var S = y.prototype = E.prototype = Object.create(v);
 
   function T(e) {
     ["next", "throw", "return"].forEach(function(t) {
@@ -187,11 +186,11 @@
       done: !0
     }
   }
-  b.prototype = S.constructor = v, v.constructor = b, v[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
+  b.prototype = S.constructor = y, y.constructor = b, y[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
     var t = "function" == typeof e && e.constructor;
     return !!t && (t === b || "GeneratorFunction" === (t.displayName || t.name))
   }, u.mark = function(e) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(e, v) : (e.__proto__ = v, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(S), e
+    return Object.setPrototypeOf ? Object.setPrototypeOf(e, y) : (e.__proto__ = y, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(S), e
   }, u.awrap = function(e) {
     return {
       __await: e
@@ -246,7 +245,7 @@
             c = i.call(a, "finallyLoc");
           if (l && c) {
             if (this.prev < a.catchLoc) return r(a.catchLoc, !0);
-            if (this.prev < a.finallyLoc) return r(a.finallyLoc)
+            else if (this.prev < a.finallyLoc) return r(a.finallyLoc)
           } else if (l) {
             if (this.prev < a.catchLoc) return r(a.catchLoc, !0)
           } else if (c) {

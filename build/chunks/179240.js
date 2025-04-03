@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  l: () => v
+  l: () => y
 });
 var i, o = n(200651),
   a = n(192379),
@@ -10,7 +10,7 @@ var i, o = n(200651),
   l = n.n(s),
   c = n(58654),
   u = n(84735),
-  d = n(269918);
+  d = n(283574);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,10 +70,10 @@ function g(e, t) {
 }
 let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-index:-1000;\n  top:0;\n  right:0;\n",
   b = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
-class v extends(i = a.PureComponent) {
+class y extends(i = a.PureComponent) {
   componentDidMount() {
     var e, t;
-    null === (e = (t = this.props).onResize) || void 0 === e || e.call(t, void 0), Promise.resolve().then(() => this.calculateSize())
+    null == (e = (t = this.props).onResize) || e.call(t, void 0), Promise.resolve().then(() => this.calculateSize())
   }
   componentDidUpdate(e, t) {
     if (this.state.height !== t.height) {
@@ -91,13 +91,10 @@ class v extends(i = a.PureComponent) {
     let {
       fontWidthEstimate: n,
       rows: i
-    } = this.props, o = null !== (e = this.props.value) && void 0 !== e ? e : t.value;
-    if (null != n && -1 === o.indexOf("\n") && o.length * n < .8 * t.offsetWidth) {
-      this.setState({
-        height: void 0
-      });
-      return
-    }
+    } = this.props, o = null != (e = this.props.value) ? e : t.value;
+    if (null != n && -1 === o.indexOf("\n") && o.length * n < .8 * t.offsetWidth) return void this.setState({
+      height: void 0
+    });
     null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
     let {
       paddingSize: a,
@@ -143,15 +140,15 @@ class v extends(i = a.PureComponent) {
   }
   get selectionStart() {
     var e, t;
-    return null !== (t = null === (e = this._textArea) || void 0 === e ? void 0 : e.selectionStart) && void 0 !== t ? t : 0
+    return null != (t = null == (e = this._textArea) ? void 0 : e.selectionStart) ? t : 0
   }
   get selectionEnd() {
     var e, t;
-    return null !== (t = null === (e = this._textArea) || void 0 === e ? void 0 : e.selectionEnd) && void 0 !== t ? t : 0
+    return null != (t = null == (e = this._textArea) ? void 0 : e.selectionEnd) ? t : 0
   }
   get value() {
     var e, t;
-    return null !== (t = null === (e = this._textArea) || void 0 === e ? void 0 : e.value) && void 0 !== t ? t : ""
+    return null != (t = null == (e = this._textArea) ? void 0 : e.value) ? t : ""
   }
   render() {
     let e = this.props,
@@ -185,7 +182,7 @@ class v extends(i = a.PureComponent) {
     }
   }
 }
-f(v, "defaultProps", {
+f(y, "defaultProps", {
   autoFocus: !1,
   disabled: !1,
   autoCorrect: "off"

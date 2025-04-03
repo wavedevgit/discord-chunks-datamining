@@ -53,14 +53,14 @@ let E = async e => {
     a.Z.unsubscribe(e, n), setTimeout(t, 0)
   };
   a.Z.subscribe(e, n)
-}), v = e => {
+}), y = e => {
   if (!d.Z.shouldFetchDefaultSounds()) return Promise.resolve();
   a.Z.dispatch({
     type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
   });
   let t = b("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
   return E(e), t
-}, y = () => {
+}, v = () => {
   let e = (0, _.D)();
   if (0 === e.length) return Promise.resolve();
   let t = b("SOUNDBOARD_SOUNDS_RECEIVED");
@@ -72,7 +72,7 @@ let E = async e => {
   }), t
 }, O = () => __OVERLAY__ ? (a.Z.dispatch({
   type: "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST"
-}), Promise.all([])) : Promise.all([v(), y()]);
+}), Promise.all([])) : Promise.all([y(), v()]);
 async function I(e) {
   let {
     guildId: t,

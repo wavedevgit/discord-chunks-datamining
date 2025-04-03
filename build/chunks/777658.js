@@ -62,14 +62,14 @@ function m(e) {
   } = e, {
     id: E,
     username: b,
-    bot: v
-  } = t, y = (0, o.e7)([u.default], () => {
+    bot: y
+  } = t, v = (0, o.e7)([u.default], () => {
     var e;
-    return (null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === E
+    return (null == (e = u.default.getCurrentUser()) ? void 0 : e.id) === E
   }, [E]), O = (0, l.n)({
     userId: E
   }), [I, S] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
-  if (v || y) return null;
+  if (y || v) return null;
 
   function A() {
     (0, a.ZDy)(async () => {

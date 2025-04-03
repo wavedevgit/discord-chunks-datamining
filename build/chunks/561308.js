@@ -4,7 +4,7 @@ n.d(t, {
   GE: () => N,
   GL: () => h,
   Jd: () => R,
-  Jg: () => y,
+  Jg: () => v,
   Nq: () => I,
   Ol: () => b,
   PJ: () => g,
@@ -15,7 +15,7 @@ n.d(t, {
   dw: () => T,
   ig: () => L,
   kr: () => E,
-  n2: () => v,
+  n2: () => y,
   q_: () => w,
   vU: () => P,
   yA: () => O,
@@ -118,35 +118,35 @@ function g(e, t) {
 
 function E(e) {
   var t, n;
-  return null !== (n = null === (t = g(e, a.N.IS_LIVE)) || void 0 === t ? void 0 : t.is_live) && void 0 !== n && n
+  return null != (n = null == (t = g(e, a.N.IS_LIVE)) ? void 0 : t.is_live) && n
 }
 
 function b(e) {
   var t, n;
-  return null !== (n = null === (t = g(e, a.N.FIRST_TIME)) || void 0 === t ? void 0 : t.first_time) && void 0 !== n && n
-}
-
-function v(e) {
-  return null != e.expires_at && new Date(e.expires_at) < new Date
+  return null != (n = null == (t = g(e, a.N.FIRST_TIME)) ? void 0 : t.first_time) && n
 }
 
 function y(e) {
-  return E(e) && !v(e)
+  return null != e.expires_at && new Date(e.expires_at) < new Date
+}
+
+function v(e) {
+  return E(e) && !y(e)
 }
 
 function O(e) {
   var t;
-  return null === (t = g(e, a.N.DURATION_SECONDS)) || void 0 === t ? void 0 : t.duration_seconds
+  return null == (t = g(e, a.N.DURATION_SECONDS)) ? void 0 : t.duration_seconds
 }
 
 function I(e) {
   var t;
-  return null === (t = g(e, a.N.AGGREGATE_RANGE)) || void 0 === t ? void 0 : t.range
+  return null == (t = g(e, a.N.AGGREGATE_RANGE)) ? void 0 : t.range
 }
 
 function S(e) {
   var t;
-  return null === (t = g(e, a.N.MARATHON)) || void 0 === t ? void 0 : t.marathon
+  return null == (t = g(e, a.N.MARATHON)) ? void 0 : t.marathon
 }
 
 function T(e) {
@@ -181,9 +181,8 @@ function A(e) {
 
 function C(e, t) {
   var n, r, i, o;
-  let a;
-  let s = null !== (i = null == t ? void 0 : null === (n = t.size) || void 0 === n ? void 0 : n[0]) && void 0 !== i ? i : void 0,
-    l = null !== (o = null == t ? void 0 : null === (r = t.size) || void 0 === r ? void 0 : r[1]) && void 0 !== o ? o : void 0;
+  let a, s = null != (i = null == t || null == (n = t.size) ? void 0 : n[0]) ? i : void 0,
+    l = null != (o = null == t || null == (r = t.size) ? void 0 : r[1]) ? o : void 0;
   return null != s && null != l && s > 0 && l > 0 ? a = u.NW.formatToPlainString(u.t.wmUSi4, {
     count: s,
     max: l
@@ -198,7 +197,7 @@ function R(e) {
 
 function P(e) {
   var t;
-  return null === (t = g(e, a.N.STREAK_DAYS)) || void 0 === t ? void 0 : t.streak_count_days
+  return null == (t = g(e, a.N.STREAK_DAYS)) ? void 0 : t.streak_count_days
 }
 
 function w(e) {
@@ -230,5 +229,5 @@ function D(e) {
 
 function L(e) {
   var t;
-  return null === (t = g(e, a.N.TRENDING_CONTENT)) || void 0 === t ? void 0 : t.trending
+  return null == (t = g(e, a.N.TRENDING_CONTENT)) ? void 0 : t.trending
 }

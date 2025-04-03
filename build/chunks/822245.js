@@ -56,7 +56,7 @@ let E = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
   b = {
     pendingUsages: []
   },
-  v = new c.ZP({
+  y = new c.ZP({
     computeBonus: () => 100,
     computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
     lookupKey: e => e,
@@ -64,7 +64,7 @@ let E = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
     numFrequentlyItems: f.yP
   });
 
-function y(e) {
+function v(e) {
   let {
     settings: {
       type: t
@@ -80,7 +80,7 @@ function O(e) {
   let {
     command: n
   } = e;
-  if (!E.includes(n.type) || (null === (t = u.ZP.getLaunchState(n.applicationId)) || void 0 === t ? void 0 : t.isLaunching)) return !1;
+  if (!E.includes(n.type) || (null == (t = u.ZP.getLaunchState(n.applicationId)) ? void 0 : t.isLaunching)) return !1;
   S(n.applicationId)
 }
 
@@ -95,13 +95,13 @@ function S(e) {
   b.pendingUsages.push({
     key: e,
     timestamp: Date.now()
-  }), v.track(e), v.compute()
+  }), y.track(e), y.compute()
 }
 
 function T() {
   var e, t;
-  let n = null !== (t = null === (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) || void 0 === e ? void 0 : e.applications) && void 0 !== t ? t : {};
-  v.overwriteHistory(o().mapValues(n, e => g(h({}, e), {
+  let n = null != (t = null == (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) ? void 0 : e.applications) ? t : {};
+  y.overwriteHistory(o().mapValues(n, e => g(h({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), b.pendingUsages)
 }
@@ -116,19 +116,19 @@ class N extends(r = a.ZP.PersistedStore) {
     return b.pendingUsages.length > 0
   }
   getApplicationFrecencyWithoutLoadingLatest() {
-    return v
+    return y
   }
   getScoreWithoutLoadingLatest(e) {
     var t;
-    return null !== (t = v.getScore(e)) && void 0 !== t ? t : 0
+    return null != (t = y.getScore(e)) ? t : 0
   }
   getTopApplicationsWithoutLoadingLatest() {
-    return v.frequently
+    return y.frequently
   }
 }
 p(N, "displayName", "ApplicationFrecencyStore"), p(N, "persistKey", "ApplicationFrecency");
 let A = new N(s.Z, {
   APPLICATION_COMMAND_USED: O,
   EMBEDDED_ACTIVITY_OPEN: I,
-  USER_SETTINGS_PROTO_UPDATE: y
+  USER_SETTINGS_PROTO_UPDATE: v
 })

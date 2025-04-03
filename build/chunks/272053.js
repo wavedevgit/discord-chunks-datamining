@@ -27,8 +27,8 @@ function m(e, t, n) {
 let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   E = +f.Z.Millis.MINUTE,
   b = e => "https://youtube.com/watch?v=".concat(e),
-  v = 5 * f.Z.Millis.MINUTE,
-  y = "https://api.twitch.tv/helix",
+  y = 5 * f.Z.Millis.MINUTE,
+  v = "https://api.twitch.tv/helix",
   O = /live_user_(.*)-\{width\}/,
   I = 128,
   S = null,
@@ -39,12 +39,12 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
 
 function R(e) {
   var t;
-  return null === (t = O.exec(e)) || void 0 === t ? void 0 : t[1]
+  return null == (t = O.exec(e)) ? void 0 : t[1]
 }
 
 function P(e, t, n) {
   return s.tn.get({
-    url: "".concat(y).concat(e),
+    url: "".concat(v).concat(e),
     query: t,
     headers: {
       "Client-ID": g,
@@ -63,7 +63,7 @@ async function w(e, t) {
     }
   } = await P("/games", {
     id: e
-  }, t), o = null === (n = i[0]) || void 0 === n ? void 0 : n.name;
+  }, t), o = null == (n = i[0]) ? void 0 : n.name;
   return C[e] = o, o
 }
 class D {
@@ -95,10 +95,10 @@ class D {
         game_id: l,
         title: c
       } = a, f = {
-        large_image: null != s && null !== (r = (0, d.f)(h.ABu.TWITCH, s)) && void 0 !== r ? r : void 0
-      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null !== (i = R(s)) && void 0 !== i ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
+        large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : void 0
+      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
       return {
-        url: null === (n = p.getPlatformUserUrl) || void 0 === n ? void 0 : n.call(p, {
+        url: null == (n = p.getPlatformUserUrl) ? void 0 : n.call(p, {
           id: e.id,
           name: m
         }),
@@ -142,7 +142,7 @@ class D {
           thumbnails: a
         }
       } = r[0], l = {
-        large_image: null !== (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) && void 0 !== n ? n : void 0
+        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) ? n : void 0
       }, c = null != o && "" !== o ? o.slice(0, I) : void 0;
       return N = {
         url: b(i),
@@ -162,10 +162,10 @@ class D {
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [h.ABu.TWITCH],
       n = Date.now();
-    T <= n && (t.push(h.ABu.YOUTUBE), T = n + v), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    T <= n && (t.push(h.ABu.YOUTUBE), T = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
-        let n = null === (t = e.find(e => "fulfilled" === e.status && null != e.value)) || void 0 === t ? void 0 : t.value;
+        let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? void 0 : t.value;
         null == n && null != N && (n = N), l.Z.dispatch({
           type: "STREAMING_UPDATE",
           stream: n
@@ -190,7 +190,7 @@ function x() {
 function M(e) {
   var t;
   if (o()(e.stream, S)) return !1;
-  S = null !== (t = e.stream) && void 0 !== t ? t : null
+  S = null != (t = e.stream) ? t : null
 }
 class k extends(r = a.ZP.Store) {
   initialize() {

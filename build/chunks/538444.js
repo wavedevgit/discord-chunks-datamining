@@ -1,7 +1,5 @@
 /** Chunk was on web.js **/
 var r = n(961499);
-
-function i(e) {
+e.exports = function(e) {
   return r(this, e).get(e)
 }
-e.exports = i

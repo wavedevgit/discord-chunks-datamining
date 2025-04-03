@@ -44,7 +44,7 @@ class d {
   }
   cleanup() {
     var e, t, n, r;
-    null === (e = (t = this).unlistenHistory) || void 0 === e || e.call(t), this.unlistenHistory = void 0, null === (n = (r = this).unlistenKeyboardChange) || void 0 === n || n.call(r), this.unlistenKeyboardChange = void 0, i.Z.removeChangeListener(this.handleConnectionChange)
+    null == (e = (t = this).unlistenHistory) || e.call(t), this.unlistenHistory = void 0, null == (n = (r = this).unlistenKeyboardChange) || n.call(r), this.unlistenKeyboardChange = void 0, i.Z.removeChangeListener(this.handleConnectionChange)
   }
   addRouteChangeListener(e) {
     return null != this.unlistenHistory && e((0, s.s1)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
@@ -72,10 +72,7 @@ class d {
       this.connected = e, t && (this.routeChangeCount = 0, this.executeRouteRewrites((0, s.s1)().location, "REPLACE"))
     }), c(this, "handleRouteChange", (e, t) => {
       if (this.executeRouteRewrites(e, t)) return;
-      if (!(0, a.r)(e)) {
-        (0, s.dL)(l.Z5c.ME);
-        return
-      }
+      if (!(0, a.r)(e)) return void(0, s.dL)(l.Z5c.ME);
       let n = o.Z.getState();
       for (let r of (n.basePath !== e.pathname && n.resetPath(e.pathname), this.listeners)) try {
         r(e, t)

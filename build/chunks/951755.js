@@ -26,7 +26,7 @@ class f extends r.Z {
   }
   _terminate() {
     var e, t;
-    null === (e = (t = this).subscription) || void 0 === e || e.call(t), this.subscription = void 0
+    null == (e = (t = this).subscription) || e.call(t), this.subscription = void 0
   }
   updateSoundpack() {
     let e = o.Z.getSoundpack(),

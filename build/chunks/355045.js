@@ -20,12 +20,12 @@ var r = n(200651),
   g = n(314884),
   E = n(709586),
   b = n(267642),
-  v = n(74538),
-  y = n(678558),
+  y = n(74538),
+  v = n(678558),
   O = n(981631),
   I = n(474936),
   S = n(388032),
-  T = n(866231);
+  T = n(491503);
 let N = function(e) {
   let {
     closeLayer: t,
@@ -117,7 +117,7 @@ let N = function(e) {
         children: (0, r.jsx)("div", {
           ref: N,
           className: a()(T.guildBoostCta, T.guildBoostCtaBoostWrapper),
-          children: (0, r.jsx)(y.Z, {
+          children: (0, r.jsx)(v.Z, {
             className: T.guildBoostCtaBoost,
             innerClassName: a()(T.__invalid_guildBoostCtaContent, T.guildBoostCtaBoostContent),
             buttonShineClassName: T.guildBoostCtaBoostShine,
@@ -134,7 +134,7 @@ let N = function(e) {
             fullWidth: !0
           })
         })
-      }), v.ZP.hasFreeBoosts(A, P) || v.ZP.isPremium(A, I.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
+      }), y.ZP.hasFreeBoosts(A, P) || y.ZP.isPremium(A, I.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
         className: a()(T.guildBoostCta, T.guildBoostCtaSecondary),
         innerClassName: a()(T.__invalid_guildBoostCtaContent, T.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,

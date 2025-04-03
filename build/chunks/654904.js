@@ -46,7 +46,7 @@ function h(e, t, i, s) {
   (0, o.ZDy)(async () => {
     let {
       default: o
-    } = await Promise.all([n.e("91689"), n.e("55849"), n.e("46003")]).then(n.bind(n, 192277));
+    } = await Promise.all([n.e("91689"), n.e("55849"), n.e("90851")]).then(n.bind(n, 192277));
     return n => (0, r.jsx)(o, p({
       filters: s,
       maxFileSizeBytes: u.B,
@@ -98,7 +98,7 @@ function g(e) {
     user: i,
     guildMember: o
   } = e, a = "" === n ? null : null != n ? n : null == o ? void 0 : o.nick, s = "" === r ? i.username : r;
-  return null !== (t = null != a ? a : s) && void 0 !== t ? t : l.ZP.getName(i)
+  return null != (t = null != a ? a : s) ? t : l.ZP.getName(i)
 }
 
 function E(e) {
